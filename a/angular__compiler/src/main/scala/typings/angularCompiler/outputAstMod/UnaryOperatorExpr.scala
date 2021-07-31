@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "UnaryOperatorExpr")
@@ -11,43 +10,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class UnaryOperatorExpr protected () extends Expression {
   def this(operator: UnaryOperator, expr: Expression) = this()
   def this(operator: UnaryOperator, expr: Expression, `type`: Type) = this()
-  def this(
-    operator: UnaryOperator,
-    expr: Expression,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan
-  ) = this()
   def this(operator: UnaryOperator, expr: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(operator: UnaryOperator, expr: Expression, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
   def this(operator: UnaryOperator, expr: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
-  def this(
-    operator: UnaryOperator,
-    expr: Expression,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: js.UndefOr[scala.Nothing],
-    parens: Boolean
-  ) = this()
-  def this(
-    operator: UnaryOperator,
-    expr: Expression,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: Null,
-    parens: Boolean
-  ) = this()
-  def this(
-    operator: UnaryOperator,
-    expr: Expression,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan,
-    parens: Boolean
-  ) = this()
-  def this(
-    operator: UnaryOperator,
-    expr: Expression,
-    `type`: Null,
-    sourceSpan: js.UndefOr[scala.Nothing],
-    parens: Boolean
-  ) = this()
   def this(operator: UnaryOperator, expr: Expression, `type`: Null, sourceSpan: Null, parens: Boolean) = this()
+  def this(operator: UnaryOperator, expr: Expression, `type`: Null, sourceSpan: Unit, parens: Boolean) = this()
   def this(
     operator: UnaryOperator,
     expr: Expression,
@@ -55,14 +22,17 @@ class UnaryOperatorExpr protected () extends Expression {
     sourceSpan: ParseSourceSpan,
     parens: Boolean
   ) = this()
+  def this(operator: UnaryOperator, expr: Expression, `type`: Unit, sourceSpan: Null, parens: Boolean) = this()
+  def this(operator: UnaryOperator, expr: Expression, `type`: Unit, sourceSpan: Unit, parens: Boolean) = this()
   def this(
     operator: UnaryOperator,
     expr: Expression,
-    `type`: Type,
-    sourceSpan: js.UndefOr[scala.Nothing],
+    `type`: Unit,
+    sourceSpan: ParseSourceSpan,
     parens: Boolean
   ) = this()
   def this(operator: UnaryOperator, expr: Expression, `type`: Type, sourceSpan: Null, parens: Boolean) = this()
+  def this(operator: UnaryOperator, expr: Expression, `type`: Type, sourceSpan: Unit, parens: Boolean) = this()
   def this(
     operator: UnaryOperator,
     expr: Expression,

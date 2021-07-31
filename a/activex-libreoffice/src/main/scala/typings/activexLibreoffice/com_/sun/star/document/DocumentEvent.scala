@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.frame.XController2
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,30 +15,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDocumentEventBroadcaster
   * @since OOo 3.1
   */
-@js.native
 trait DocumentEvent
-  extends typings.activexLibreoffice.com_.sun.star.lang.EventObject {
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.lang.EventObject {
   
   /**
     * specifies the name of the event.
     *
     * It's the responsibility of the component supporting the {@link XDocumentEventBroadcaster} interface to specify which events it supports.
     */
-  var EventName: String = js.native
+  var EventName: String
   
   /**
     * contains supplemental information about the event which is being notified
     *
     * The semantics of this additional information needs to be specified by the broadcaster of the event.
     */
-  var Supplement: js.Any = js.native
+  var Supplement: js.Any
   
   /**
     * denotes the view respectively controller which the event applies to.
     *
     * Might be `NULL` if the event is not related to a concrete view of the document.
     */
-  var ViewController: XController2 = js.native
+  var ViewController: XController2
 }
 object DocumentEvent {
   

@@ -4,15 +4,15 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.TreeListModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeListEditEvent extends TreeListEvent {
+trait TreeListEditEvent
+  extends StObject
+     with TreeListEvent {
   
-  var container: js.UndefOr[JQuery] = js.native
+  var container: js.UndefOr[JQuery] = js.undefined
   
-  var model: js.UndefOr[TreeListModel] = js.native
+  var model: js.UndefOr[TreeListModel] = js.undefined
 }
 object TreeListEditEvent {
   

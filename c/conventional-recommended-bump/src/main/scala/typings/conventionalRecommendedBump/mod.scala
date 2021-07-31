@@ -7,7 +7,6 @@ import typings.conventionalRecommendedBump.mod.Options.WhatBump
 import typings.conventionalRecommendedBump.mod.Options.WhatBump.Result
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,9 +20,8 @@ object mod {
     *                 * `whatBump`
     * @param callback
     */
-  @JSImport("conventional-recommended-bump", JSImport.Namespace)
-  @js.native
-  def apply(options: Options, callback: Callback): Unit = js.native
+  @scala.inline
+  def apply(options: Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     *
     * @param options    `options` is an object with the following properties:
@@ -36,9 +34,12 @@ object mod {
     *                   documentation for available options.
     * @param callback
     */
+  @scala.inline
+  def apply(options: Options, parserOpts: typings.conventionalCommitsParser.mod.Options, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("conventional-recommended-bump", JSImport.Namespace)
   @js.native
-  def apply(options: Options, parserOpts: typings.conventionalCommitsParser.mod.Options, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   object Callback {
     
@@ -49,15 +50,16 @@ object mod {
       * or `undefined` if `whatBump` does not return a valid `level` property, or
       * the `level` property is not set by `whatBump`.
       */
-    @js.native
-    trait Recommendation extends Result {
+    trait Recommendation
+      extends StObject
+         with Result {
       
       /**
         * `releaseType` is a `string`: Possible values: `major`, `minor` and `patch`,
         * or `undefined` if `whatBump` does not return a valid `level` property, or
         * the `level` property is not set by `whatBump`.
         */
-      var releaseType: js.UndefOr[ReleaseType] = js.native
+      var releaseType: js.UndefOr[ReleaseType] = js.undefined
     }
     object Recommendation {
       
@@ -112,7 +114,6 @@ object mod {
     * * `config`
     * * `whatBump`
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -126,7 +127,7 @@ object mod {
       */
     var config: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CoreOptions.Config<Commit, WriterContext> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If `true`, reverted commits will be ignored.
@@ -134,7 +135,7 @@ object mod {
       * @default
       * true
       */
-    var ignoreReverted: js.UndefOr[Boolean] = js.native
+    var ignoreReverted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify the name of a package in a [Lerna](https://lernajs.io/)-managed
@@ -147,7 +148,7 @@ object mod {
       * specifying `--lernaPackage=conventional-changelog` using the CLI, or
       * `conventional-changelog` as the value of the `lernaPackage` option.
       */
-    var lernaPackage: js.UndefOr[String] = js.native
+    var lernaPackage: js.UndefOr[String] = js.undefined
     
     /**
       * It's recommended to use a preset so you don't have to define everything
@@ -155,7 +156,7 @@ object mod {
       *
       * The value is passed to [`conventional-changelog-preset-loader`](https://www.npmjs.com/package/conventional-changelog-preset-loader).
       */
-    var preset: js.UndefOr[String] = js.native
+    var preset: js.UndefOr[String] = js.undefined
     
     /**
       * Specify a prefix for the git tag that will be taken into account during the
@@ -165,7 +166,7 @@ object mod {
       * would specifying `--tagPrefix=version/` using the CLI, or `version/` as the
       * value of the `tagPrefix` option.
       */
-    var tagPrefix: js.UndefOr[String] = js.native
+    var tagPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * A function that takes parsed commits as an argument.
@@ -181,7 +182,7 @@ object mod {
       * `level` is a `number` indicating what bump it should be and `reason` is the
       * reason of such release.
       */
-    var whatBump: js.UndefOr[WhatBump] = js.native
+    var whatBump: js.UndefOr[WhatBump] = js.undefined
   }
   object Options {
     
@@ -235,12 +236,11 @@ object mod {
     
     object WhatBump {
       
-      @js.native
       trait Result extends StObject {
         
-        var level: js.UndefOr[Double] = js.native
+        var level: js.UndefOr[Double] = js.undefined
         
-        var reason: js.UndefOr[String] = js.native
+        var reason: js.UndefOr[String] = js.undefined
       }
       object Result {
         

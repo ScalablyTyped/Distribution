@@ -18,15 +18,13 @@ import typings.typedGithubApi.userMod.OrganizationSummary
 import typings.typedGithubApi.userMod.UserSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webHooksMod {
   
-  @js.native
   trait Event extends StObject {
     
-    var action: String = js.native
+    var action: String
   }
   object Event {
     
@@ -44,13 +42,14 @@ object webHooksMod {
     }
   }
   
-  @js.native
-  trait IssueAssignedEvent extends IssueEvent {
+  trait IssueAssignedEvent
+    extends StObject
+       with IssueEvent {
     
     @JSName("action")
-    var action_IssueAssignedEvent: assigned | unassigned = js.native
+    var action_IssueAssignedEvent: assigned | unassigned
     
-    var assignee: UserSummary = js.native
+    var assignee: UserSummary
   }
   object IssueAssignedEvent {
     
@@ -71,19 +70,20 @@ object webHooksMod {
     }
   }
   
-  @js.native
-  trait IssueEditedEvent extends IssueEvent {
+  trait IssueEditedEvent
+    extends StObject
+       with IssueEvent {
     
     @JSName("action")
-    var action_IssueEditedEvent: edited = js.native
+    var action_IssueEditedEvent: edited
     
-    var changes: Body = js.native
+    var changes: Body
   }
   object IssueEditedEvent {
     
     @scala.inline
-    def apply(action: edited, changes: Body, issue: Issue): IssueEditedEvent = {
-      val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any], changes = changes.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
+    def apply(changes: Body, issue: Issue): IssueEditedEvent = {
+      val __obj = js.Dynamic.literal(action = "edited", changes = changes.asInstanceOf[js.Any], issue = issue.asInstanceOf[js.Any])
       __obj.asInstanceOf[IssueEditedEvent]
     }
     
@@ -98,13 +98,14 @@ object webHooksMod {
     }
   }
   
-  @js.native
-  trait IssueEvent extends Event {
+  trait IssueEvent
+    extends StObject
+       with Event {
     
     @JSName("action")
-    var action_IssueEvent: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened = js.native
+    var action_IssueEvent: assigned | unassigned | labeled | unlabeled | opened | edited | milestoned | demilestoned | closed | reopened
     
-    var issue: Issue = js.native
+    var issue: Issue
   }
   object IssueEvent {
     
@@ -130,13 +131,14 @@ object webHooksMod {
     }
   }
   
-  @js.native
-  trait IssueLabeledEvent extends IssueEvent {
+  trait IssueLabeledEvent
+    extends StObject
+       with IssueEvent {
     
     @JSName("action")
-    var action_IssueLabeledEvent: labeled | unlabeled = js.native
+    var action_IssueLabeledEvent: labeled | unlabeled
     
-    var label: Label = js.native
+    var label: Label
   }
   object IssueLabeledEvent {
     
@@ -159,14 +161,15 @@ object webHooksMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
   - typings.typedGithubApi.webHooksMod.Event because Already inherited
-  - typings.typedGithubApi.webHooksMod.WebHookData because var conflicts: action. Inlined sender, organization, repository */ @js.native
-  trait IssueWebHookData extends IssueEvent {
+  - typings.typedGithubApi.webHooksMod.WebHookData because var conflicts: action. Inlined sender, organization, repository */ trait IssueWebHookData
+    extends StObject
+       with IssueEvent {
     
-    var organization: js.UndefOr[OrganizationSummary] = js.native
+    var organization: js.UndefOr[OrganizationSummary] = js.undefined
     
-    var repository: js.UndefOr[Repository] = js.native
+    var repository: js.UndefOr[Repository] = js.undefined
     
-    var sender: UserSummary = js.native
+    var sender: UserSummary
   }
   object IssueWebHookData {
     
@@ -200,14 +203,15 @@ object webHooksMod {
     }
   }
   
-  @js.native
-  trait WebHookData extends Event {
+  trait WebHookData
+    extends StObject
+       with Event {
     
-    var organization: js.UndefOr[OrganizationSummary] = js.native
+    var organization: js.UndefOr[OrganizationSummary] = js.undefined
     
-    var repository: js.UndefOr[Repository] = js.native
+    var repository: js.UndefOr[Repository] = js.undefined
     
-    var sender: UserSummary = js.native
+    var sender: UserSummary
   }
   object WebHookData {
     

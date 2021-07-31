@@ -2,21 +2,19 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disputeexplanation extends StObject {
   
   /**
     * Brief freeform text explaining why you are disputing this transaction.
     */
-  var dispute_explanation: String = js.native
+  var dispute_explanation: String
   
   /**
     * (ID of a file upload) Additional file evidence supporting your dispute.
     */
-  var uncategorized_file: String = js.native
+  var uncategorized_file: String
 }
 object Disputeexplanation {
   

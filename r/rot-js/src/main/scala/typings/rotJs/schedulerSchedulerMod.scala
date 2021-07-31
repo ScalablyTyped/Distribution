@@ -2,7 +2,6 @@ package typings.rotJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schedulerSchedulerMod {
@@ -12,52 +11,105 @@ object schedulerSchedulerMod {
   /**
     * @class Abstract scheduler
     */
-  class default[T] () extends Scheduler[T]
-  
-  @js.native
-  trait Scheduler[T] extends StObject {
+  class default[T] ()
+    extends StObject
+       with Scheduler[T] {
     
+    /* CompleteClass */
     var _current: js.Any = js.native
     
+    /* CompleteClass */
     var _queue: typings.rotJs.eventqueueMod.default[T] = js.native
     
+    /* CompleteClass */
     var _repeat: js.Array[T] = js.native
     
     /**
       * @param {?} item
       * @param {bool} repeat
       */
-    def add(item: T, repeat: Boolean): this.type = js.native
+    /* CompleteClass */
+    override def add(item: T, repeat: Boolean): this.type = js.native
     
     /**
       * Clear all items
       */
-    def clear(): this.type = js.native
+    /* CompleteClass */
+    override def clear(): this.type = js.native
     
     /**
       * @see ROT.EventQueue#getTime
       */
-    def getTime(): Double = js.native
+    /* CompleteClass */
+    override def getTime(): Double = js.native
     
     /**
       * Get the time the given item is scheduled for
       * @param {?} item
       * @returns {number} time
       */
-    def getTimeOf(item: T): js.UndefOr[Double] = js.native
+    /* CompleteClass */
+    override def getTimeOf(item: T): js.UndefOr[Double] = js.native
     
     /**
       * Schedule next item
       * @returns {?}
       */
-    def next(): js.Any = js.native
+    /* CompleteClass */
+    override def next(): js.Any = js.native
     
     /**
       * Remove a previously added item
       * @param {?} item
       * @returns {bool} successful?
       */
-    def remove(item: js.Any): Boolean = js.native
+    /* CompleteClass */
+    override def remove(item: js.Any): Boolean = js.native
+  }
+  
+  trait Scheduler[T] extends StObject {
+    
+    var _current: js.Any
+    
+    var _queue: typings.rotJs.eventqueueMod.default[T]
+    
+    var _repeat: js.Array[T]
+    
+    /**
+      * @param {?} item
+      * @param {bool} repeat
+      */
+    def add(item: T, repeat: Boolean): this.type
+    
+    /**
+      * Clear all items
+      */
+    def clear(): this.type
+    
+    /**
+      * @see ROT.EventQueue#getTime
+      */
+    def getTime(): Double
+    
+    /**
+      * Get the time the given item is scheduled for
+      * @param {?} item
+      * @returns {number} time
+      */
+    def getTimeOf(item: T): js.UndefOr[Double]
+    
+    /**
+      * Schedule next item
+      * @returns {?}
+      */
+    def next(): js.Any
+    
+    /**
+      * Remove a previously added item
+      * @param {?} item
+      * @returns {bool} successful?
+      */
+    def remove(item: js.Any): Boolean
   }
   object Scheduler {
     
@@ -78,7 +130,7 @@ object schedulerSchedulerMod {
     }
     
     @scala.inline
-    implicit class SchedulerMutableBuilder[Self <: Scheduler[_], T] (val x: Self with Scheduler[T]) extends AnyVal {
+    implicit class SchedulerMutableBuilder[Self <: Scheduler[?], T] (val x: Self & Scheduler[T]) extends AnyVal {
       
       @scala.inline
       def setAdd(value: (T, Boolean) => Scheduler[T]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))

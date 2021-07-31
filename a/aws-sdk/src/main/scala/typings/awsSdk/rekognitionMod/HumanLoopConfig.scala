@@ -2,26 +2,24 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HumanLoopConfig extends StObject {
   
   /**
     * Sets attributes of the input data.
     */
-  var DataAttributes: js.UndefOr[HumanLoopDataAttributes] = js.native
+  var DataAttributes: js.UndefOr[HumanLoopDataAttributes] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the flow definition. You can create a flow definition by using the Amazon Sagemaker CreateFlowDefinition Operation. 
     */
-  var FlowDefinitionArn: typings.awsSdk.rekognitionMod.FlowDefinitionArn = js.native
+  var FlowDefinitionArn: typings.awsSdk.rekognitionMod.FlowDefinitionArn
   
   /**
     * The name of the human review used for this image. This should be kept unique within a region.
     */
-  var HumanLoopName: typings.awsSdk.rekognitionMod.HumanLoopName = js.native
+  var HumanLoopName: typings.awsSdk.rekognitionMod.HumanLoopName
 }
 object HumanLoopConfig {
   

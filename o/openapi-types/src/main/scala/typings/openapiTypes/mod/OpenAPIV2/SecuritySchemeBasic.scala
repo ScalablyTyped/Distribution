@@ -3,23 +3,22 @@ package typings.openapiTypes.mod.OpenAPIV2
 import typings.openapiTypes.openapiTypesStrings.basic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecuritySchemeBasic
-  extends SecuritySchemeObjectBase
+  extends StObject
+     with SecuritySchemeObjectBase
      with SecuritySchemeObject {
   
   @JSName("type")
-  var type_SecuritySchemeBasic: basic = js.native
+  var type_SecuritySchemeBasic: basic
 }
 object SecuritySchemeBasic {
   
   @scala.inline
-  def apply(`type`: basic): SecuritySchemeBasic = {
+  def apply(): SecuritySchemeBasic = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("basic")
     __obj.asInstanceOf[SecuritySchemeBasic]
   }
   

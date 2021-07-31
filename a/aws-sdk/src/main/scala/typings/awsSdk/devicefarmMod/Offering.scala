@@ -2,36 +2,34 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Offering extends StObject {
   
   /**
     * A string that describes the offering.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * The ID that corresponds to a device offering.
     */
-  var id: js.UndefOr[OfferingIdentifier] = js.native
+  var id: js.UndefOr[OfferingIdentifier] = js.undefined
   
   /**
     * The platform of the device (for example, ANDROID or IOS).
     */
-  var platform: js.UndefOr[DevicePlatform] = js.native
+  var platform: js.UndefOr[DevicePlatform] = js.undefined
   
   /**
     * Specifies whether there are recurring charges for the offering.
     */
-  var recurringCharges: js.UndefOr[RecurringCharges] = js.native
+  var recurringCharges: js.UndefOr[RecurringCharges] = js.undefined
   
   /**
     * The type of offering (for example, RECURRING) for a device.
     */
-  var `type`: js.UndefOr[OfferingType] = js.native
+  var `type`: js.UndefOr[OfferingType] = js.undefined
 }
 object Offering {
   

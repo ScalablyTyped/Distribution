@@ -3,13 +3,11 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.GraphColorsType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `9` extends StObject {
   
-  var colors: js.UndefOr[GraphColorsType] = js.native
+  var colors: js.UndefOr[GraphColorsType] = js.undefined
 }
 object `9` {
   

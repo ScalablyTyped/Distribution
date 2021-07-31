@@ -6,7 +6,6 @@ import typings.node.processMod.global.NodeJS.ProcessEnv
 import typings.node.processMod.global.NodeJS.WriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -43,24 +42,23 @@ object mod extends Shortcut {
     def `3`: typings.colorSupport.colorSupportNumbers.`3` = 3.asInstanceOf[typings.colorSupport.colorSupportNumbers.`3`]
   }
   
-  @js.native
   trait ColorSupportOptions extends StObject {
     
-    var alwaysReturn: js.UndefOr[Boolean] = js.native
+    var alwaysReturn: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
     
-    var ignoreCI: js.UndefOr[Boolean] = js.native
+    var ignoreCI: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreDumb: js.UndefOr[Boolean] = js.native
+    var ignoreDumb: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreTTY: js.UndefOr[Boolean] = js.native
+    var ignoreTTY: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[ColorSupportLevel] = js.native
+    var level: js.UndefOr[ColorSupportLevel] = js.undefined
     
-    var stream: js.UndefOr[WriteStream] = js.native
+    var stream: js.UndefOr[WriteStream] = js.undefined
     
-    var term: js.UndefOr[String] = js.native
+    var term: js.UndefOr[String] = js.undefined
   }
   object ColorSupportOptions {
     
@@ -123,16 +121,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ColorSupportResult extends StObject {
     
-    var has16m: Boolean = js.native
+    var has16m: Boolean
     
-    var has256: Boolean = js.native
+    var has256: Boolean
     
-    var hasBasic: Boolean = js.native
+    var hasBasic: Boolean
     
-    var level: ColorSupportLevel = js.native
+    var level: ColorSupportLevel
   }
   object ColorSupportResult {
     

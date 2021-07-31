@@ -2,7 +2,6 @@ package typings.hexo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("hexo", JSImport.Namespace)
@@ -14,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class ^ () extends Hexo {
   def this(base: String) = this()
-  def this(base: js.UndefOr[scala.Nothing], args: InstanceOptions) = this()
   def this(base: String, args: InstanceOptions) = this()
+  def this(base: Unit, args: InstanceOptions) = this()
 }

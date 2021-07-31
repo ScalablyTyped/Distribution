@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableFastSnapshotRestoreStateErrorItem extends StObject {
   
   /**
     * The Availability Zone.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The error.
     */
-  var Error: js.UndefOr[EnableFastSnapshotRestoreStateError] = js.native
+  var Error: js.UndefOr[EnableFastSnapshotRestoreStateError] = js.undefined
 }
 object EnableFastSnapshotRestoreStateErrorItem {
   

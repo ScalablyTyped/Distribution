@@ -15,7 +15,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -136,7 +135,7 @@ trait RDS extends Service {
   ): Request[ExportTask, AWSError] = js.native
   
   @JSName("config")
-  var config_RDS: ConfigBase with ClientConfiguration = js.native
+  var config_RDS: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Copies the specified DB cluster parameter group.  This action only applies to Aurora DB clusters. 

@@ -2,7 +2,6 @@ package typings.googleAppsScript.global.GoogleAppsScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Script {
@@ -39,15 +38,15 @@ object Script {
   object AuthMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.AuthMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.AuthMode & Double] = js.native
     
-    /* 1 */ val CUSTOM_FUNCTION: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.CUSTOM_FUNCTION with Double = js.native
+    /* 1 */ val CUSTOM_FUNCTION: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.CUSTOM_FUNCTION & Double = js.native
     
-    /* 3 */ val FULL: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.FULL with Double = js.native
+    /* 3 */ val FULL: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.FULL & Double = js.native
     
-    /* 2 */ val LIMITED: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.LIMITED with Double = js.native
+    /* 2 */ val LIMITED: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.LIMITED & Double = js.native
     
-    /* 0 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.NONE with Double = js.native
+    /* 0 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Script.AuthMode.NONE & Double = js.native
   }
   
   /**
@@ -58,11 +57,11 @@ object Script {
   object AuthorizationStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.AuthorizationStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.AuthorizationStatus & Double] = js.native
     
-    /* 1 */ val NOT_REQUIRED: typings.googleAppsScript.GoogleAppsScript.Script.AuthorizationStatus.NOT_REQUIRED with Double = js.native
+    /* 1 */ val NOT_REQUIRED: typings.googleAppsScript.GoogleAppsScript.Script.AuthorizationStatus.NOT_REQUIRED & Double = js.native
     
-    /* 0 */ val REQUIRED: typings.googleAppsScript.GoogleAppsScript.Script.AuthorizationStatus.REQUIRED with Double = js.native
+    /* 0 */ val REQUIRED: typings.googleAppsScript.GoogleAppsScript.Script.AuthorizationStatus.REQUIRED & Double = js.native
   }
   
   /**
@@ -73,19 +72,19 @@ object Script {
   object EventType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.EventType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.EventType & Double] = js.native
     
-    /* 0 */ val CLOCK: typings.googleAppsScript.GoogleAppsScript.Script.EventType.CLOCK with Double = js.native
+    /* 0 */ val CLOCK: typings.googleAppsScript.GoogleAppsScript.Script.EventType.CLOCK & Double = js.native
     
-    /* 4 */ val ON_CHANGE: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_CHANGE with Double = js.native
+    /* 4 */ val ON_CHANGE: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_CHANGE & Double = js.native
     
-    /* 2 */ val ON_EDIT: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_EDIT with Double = js.native
+    /* 2 */ val ON_EDIT: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_EDIT & Double = js.native
     
-    /* 5 */ val ON_EVENT_UPDATED: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_EVENT_UPDATED with Double = js.native
+    /* 5 */ val ON_EVENT_UPDATED: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_EVENT_UPDATED & Double = js.native
     
-    /* 3 */ val ON_FORM_SUBMIT: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_FORM_SUBMIT with Double = js.native
+    /* 3 */ val ON_FORM_SUBMIT: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_FORM_SUBMIT & Double = js.native
     
-    /* 1 */ val ON_OPEN: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_OPEN with Double = js.native
+    /* 1 */ val ON_OPEN: typings.googleAppsScript.GoogleAppsScript.Script.EventType.ON_OPEN & Double = js.native
   }
   
   /**
@@ -97,13 +96,13 @@ object Script {
   object InstallationSource extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource & Double] = js.native
     
-    /* 0 */ val APPS_MARKETPLACE_DOMAIN_ADD_ON: typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource.APPS_MARKETPLACE_DOMAIN_ADD_ON with Double = js.native
+    /* 0 */ val APPS_MARKETPLACE_DOMAIN_ADD_ON: typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource.APPS_MARKETPLACE_DOMAIN_ADD_ON & Double = js.native
     
-    /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource.NONE with Double = js.native
+    /* 1 */ val NONE: typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource.NONE & Double = js.native
     
-    /* 2 */ val WEB_STORE_ADD_ON: typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource.WEB_STORE_ADD_ON with Double = js.native
+    /* 2 */ val WEB_STORE_ADD_ON: typings.googleAppsScript.GoogleAppsScript.Script.InstallationSource.WEB_STORE_ADD_ON & Double = js.native
   }
   
   /**
@@ -114,16 +113,16 @@ object Script {
   object TriggerSource extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource & Double] = js.native
     
-    /* 4 */ val CALENDAR: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.CALENDAR with Double = js.native
+    /* 4 */ val CALENDAR: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.CALENDAR & Double = js.native
     
-    /* 1 */ val CLOCK: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.CLOCK with Double = js.native
+    /* 1 */ val CLOCK: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.CLOCK & Double = js.native
     
-    /* 3 */ val DOCUMENTS: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.DOCUMENTS with Double = js.native
+    /* 3 */ val DOCUMENTS: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.DOCUMENTS & Double = js.native
     
-    /* 2 */ val FORMS: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.FORMS with Double = js.native
+    /* 2 */ val FORMS: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.FORMS & Double = js.native
     
-    /* 0 */ val SPREADSHEETS: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.SPREADSHEETS with Double = js.native
+    /* 0 */ val SPREADSHEETS: typings.googleAppsScript.GoogleAppsScript.Script.TriggerSource.SPREADSHEETS & Double = js.native
   }
 }

@@ -13,7 +13,6 @@ import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -156,9 +155,8 @@ object ConsumedODataService {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService.createIn")
-  @js.native
-  def createIn(container: IFolderBase): ConsumedODataService = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): ConsumedODataService = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ConsumedODataService]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ConsumedODataService.structureTypeName")

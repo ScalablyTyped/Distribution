@@ -2,50 +2,48 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TickLabels extends StObject {
   
-  var Alignment: Double = js.native
+  var Alignment: Double
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoScaleFont: js.Any = js.native
+  var AutoScaleFont: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  val Depth: Double = js.native
+  val Depth: Double
   
-  val Font: ChartFont = js.native
+  val Font: ChartFont
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var MultiLevel: Boolean = js.native
+  var MultiLevel: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  var NumberFormat: String = js.native
+  var NumberFormat: String
   
-  var NumberFormatLinked: Boolean = js.native
+  var NumberFormatLinked: Boolean
   
-  var NumberFormatLocal: js.Any = js.native
+  var NumberFormatLocal: js.Any
   
-  var Offset: Double = js.native
+  var Offset: Double
   
-  var Orientation: XlTickLabelOrientation = js.native
+  var Orientation: XlTickLabelOrientation
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.TickLabels_typekey")
-  var PowerPointDotTickLabels_typekey: TickLabels = js.native
+  var PowerPointDotTickLabels_typekey: TickLabels
   
-  var ReadingOrder: Double = js.native
+  var ReadingOrder: Double
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
 }
 object TickLabels {
   

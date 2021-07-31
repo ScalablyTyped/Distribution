@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detectorMod {
@@ -25,7 +24,7 @@ object detectorMod {
       */
     def this(name: String) = this()
     def this(name: String, args: DetectorArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DetectorArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -56,6 +55,10 @@ object detectorMod {
   /* static members */
   object Detector {
     
+    @JSImport("@pulumi/aws/guardduty/detector", "Detector")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Detector resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -65,45 +68,39 @@ object detectorMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/guardduty/detector", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Detector = js.native
-    @JSImport("@pulumi/aws/guardduty/detector", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Detector = js.native
-    @JSImport("@pulumi/aws/guardduty/detector", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DetectorState): Detector = js.native
-    @JSImport("@pulumi/aws/guardduty/detector", "Detector.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DetectorState, opts: CustomResourceOptions): Detector = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Detector]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Detector]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DetectorState): Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Detector]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DetectorState, opts: CustomResourceOptions): Detector = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Detector]
     
     /**
       * Returns true if the given object is an instance of Detector.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/guardduty/detector", "Detector.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/detector.Detector */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/guardduty/detector.Detector */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/guardduty/detector.Detector */ Boolean]
   }
   
-  @js.native
   trait DetectorArgs extends StObject {
     
     /**
       * Enable monitoring and feedback reporting. Setting to `false` is equivalent to "suspending" GuardDuty. Defaults to `true`.
       */
-    val enable: js.UndefOr[Input[Boolean]] = js.native
+    val enable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies the frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to `SIX_HOURS`. For standalone and GuardDuty primary accounts, it must be configured in this provider to enable drift detection. Valid values for standalone and primary accounts: `FIFTEEN_MINUTES`, `ONE_HOUR`, `SIX_HOURS`. See [AWS Documentation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html#guardduty_findings_cloudwatch_notification_frequency) for more information.
       */
-    val findingPublishingFrequency: js.UndefOr[Input[String]] = js.native
+    val findingPublishingFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DetectorArgs {
     
@@ -136,33 +133,32 @@ object detectorMod {
     }
   }
   
-  @js.native
   trait DetectorState extends StObject {
     
     /**
       * The AWS account ID of the GuardDuty detector
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the GuardDuty detector
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Enable monitoring and feedback reporting. Setting to `false` is equivalent to "suspending" GuardDuty. Defaults to `true`.
       */
-    val enable: js.UndefOr[Input[Boolean]] = js.native
+    val enable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Specifies the frequency of notifications sent for subsequent finding occurrences. If the detector is a GuardDuty member account, the value is determined by the GuardDuty primary account and cannot be modified, otherwise defaults to `SIX_HOURS`. For standalone and GuardDuty primary accounts, it must be configured in this provider to enable drift detection. Valid values for standalone and primary accounts: `FIFTEEN_MINUTES`, `ONE_HOUR`, `SIX_HOURS`. See [AWS Documentation](https://docs.aws.amazon.com/guardduty/latest/ug/guardduty_findings_cloudwatch.html#guardduty_findings_cloudwatch_notification_frequency) for more information.
       */
-    val findingPublishingFrequency: js.UndefOr[Input[String]] = js.native
+    val findingPublishingFrequency: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object DetectorState {
     

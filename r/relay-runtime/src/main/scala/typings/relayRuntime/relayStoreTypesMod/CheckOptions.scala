@@ -2,15 +2,13 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckOptions extends StObject {
   
-  var handlers: js.Array[MissingFieldHandler] = js.native
+  var handlers: js.Array[MissingFieldHandler]
   
-  var target: MutableRecordSource = js.native
+  var target: MutableRecordSource
 }
 object CheckOptions {
   

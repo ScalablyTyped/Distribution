@@ -2,26 +2,24 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmitJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the job.
     */
-  var jobArn: js.UndefOr[String] = js.native
+  var jobArn: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier for the job.
     */
-  var jobId: String = js.native
+  var jobId: String
   
   /**
     * The name of the job.
     */
-  var jobName: String = js.native
+  var jobName: String
 }
 object SubmitJobResponse {
   

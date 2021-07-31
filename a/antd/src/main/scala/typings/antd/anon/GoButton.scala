@@ -3,13 +3,11 @@ package typings.antd.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoButton extends StObject {
   
-  var goButton: js.UndefOr[ReactNode] = js.native
+  var goButton: js.UndefOr[ReactNode] = js.undefined
 }
 object GoButton {
   

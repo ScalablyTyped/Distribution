@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApprovalRuleTemplateNameInput extends StObject {
   
   /**
     * The new name you want to apply to the approval rule template.
     */
-  var newApprovalRuleTemplateName: ApprovalRuleTemplateName = js.native
+  var newApprovalRuleTemplateName: ApprovalRuleTemplateName
   
   /**
     * The current name of the approval rule template.
     */
-  var oldApprovalRuleTemplateName: ApprovalRuleTemplateName = js.native
+  var oldApprovalRuleTemplateName: ApprovalRuleTemplateName
 }
 object UpdateApprovalRuleTemplateNameInput {
   

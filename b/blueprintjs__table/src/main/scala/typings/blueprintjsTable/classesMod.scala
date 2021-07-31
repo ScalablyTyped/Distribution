@@ -2,10 +2,13 @@ package typings.blueprintjsTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classesMod {
+  
+  @JSImport("@blueprintjs/table/lib/esm/common/classes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/table/lib/esm/common/classes", "TABLE_BODY")
   @js.native
@@ -351,31 +354,23 @@ object classesMod {
   @js.native
   val TABLE_VERTICAL_GUIDE: String = js.native
   
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "columnCellIndexClass")
-  @js.native
-  def columnCellIndexClass(columnIndex: String): String = js.native
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "columnCellIndexClass")
-  @js.native
-  def columnCellIndexClass(columnIndex: Double): String = js.native
+  @scala.inline
+  def columnCellIndexClass(columnIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnCellIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def columnCellIndexClass(columnIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnCellIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "columnIndexClass")
-  @js.native
-  def columnIndexClass(columnIndex: String): String = js.native
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "columnIndexClass")
-  @js.native
-  def columnIndexClass(columnIndex: Double): String = js.native
+  @scala.inline
+  def columnIndexClass(columnIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def columnIndexClass(columnIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("columnIndexClass")(columnIndex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "rowCellIndexClass")
-  @js.native
-  def rowCellIndexClass(rowIndex: String): String = js.native
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "rowCellIndexClass")
-  @js.native
-  def rowCellIndexClass(rowIndex: Double): String = js.native
+  @scala.inline
+  def rowCellIndexClass(rowIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowCellIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rowCellIndexClass(rowIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowCellIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "rowIndexClass")
-  @js.native
-  def rowIndexClass(rowIndex: String): String = js.native
-  @JSImport("@blueprintjs/table/lib/esm/common/classes", "rowIndexClass")
-  @js.native
-  def rowIndexClass(rowIndex: Double): String = js.native
+  @scala.inline
+  def rowIndexClass(rowIndex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def rowIndexClass(rowIndex: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("rowIndexClass")(rowIndex.asInstanceOf[js.Any]).asInstanceOf[String]
 }

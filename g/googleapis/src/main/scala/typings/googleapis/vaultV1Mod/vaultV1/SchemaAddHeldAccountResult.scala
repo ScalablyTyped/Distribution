@@ -2,25 +2,23 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A status detailing the status of each account creation, and the
   * HeldAccount, if successful.
   */
-@js.native
 trait SchemaAddHeldAccountResult extends StObject {
   
   /**
     * If present, this account was successfully created.
     */
-  var account: js.UndefOr[SchemaHeldAccount] = js.native
+  var account: js.UndefOr[SchemaHeldAccount] = js.undefined
   
   /**
     * This represents the success status. If failed, check message.
     */
-  var status: js.UndefOr[SchemaStatus] = js.native
+  var status: js.UndefOr[SchemaStatus] = js.undefined
 }
 object SchemaAddHeldAccountResult {
   

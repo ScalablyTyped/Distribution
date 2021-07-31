@@ -2,7 +2,6 @@ package typings.prettyjson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,31 +10,23 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("prettyjson", "render")
-  @js.native
-  def render(data: js.Any): String = js.native
-  @JSImport("prettyjson", "render")
-  @js.native
-  def render(data: js.Any, options: js.UndefOr[scala.Nothing], indentation: Double): String = js.native
-  @JSImport("prettyjson", "render")
-  @js.native
-  def render(data: js.Any, options: RendererOptions): String = js.native
-  @JSImport("prettyjson", "render")
-  @js.native
-  def render(data: js.Any, options: RendererOptions, indentation: Double): String = js.native
+  @scala.inline
+  def render(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def render(data: js.Any, options: Unit, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(data: js.Any, options: RendererOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def render(data: js.Any, options: RendererOptions, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("prettyjson", "renderString")
-  @js.native
-  def renderString(data: String): String = js.native
-  @JSImport("prettyjson", "renderString")
-  @js.native
-  def renderString(data: String, options: js.UndefOr[scala.Nothing], indentation: Double): String = js.native
-  @JSImport("prettyjson", "renderString")
-  @js.native
-  def renderString(data: String, options: RendererOptions): String = js.native
-  @JSImport("prettyjson", "renderString")
-  @js.native
-  def renderString(data: String, options: RendererOptions, indentation: Double): String = js.native
+  @scala.inline
+  def renderString(data: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def renderString(data: String, options: Unit, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def renderString(data: String, options: RendererOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def renderString(data: String, options: RendererOptions, indentation: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderString")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], indentation.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("prettyjson", "version")
   @js.native
@@ -43,33 +34,32 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait RendererOptions extends StObject {
     
-    var dashColor: js.UndefOr[String] = js.native
+    var dashColor: js.UndefOr[String] = js.undefined
     
-    var defaultIndentation: js.UndefOr[Double] = js.native
+    var defaultIndentation: js.UndefOr[Double] = js.undefined
     
     /**
       * Define behavior for Array objects
       */
-    var emptyArrayMsg: js.UndefOr[String] = js.native
+    var emptyArrayMsg: js.UndefOr[String] = js.undefined
     
     // default: (empty)
-    var inlineArrays: js.UndefOr[Boolean] = js.native
+    var inlineArrays: js.UndefOr[Boolean] = js.undefined
     
-    var keysColor: js.UndefOr[String] = js.native
+    var keysColor: js.UndefOr[String] = js.undefined
     
-    var noAlign: js.UndefOr[Boolean] = js.native
+    var noAlign: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Color definition
       */
-    var noColor: js.UndefOr[Boolean] = js.native
+    var noColor: js.UndefOr[Boolean] = js.undefined
     
-    var numberColor: js.UndefOr[String] = js.native
+    var numberColor: js.UndefOr[String] = js.undefined
     
-    var stringColor: js.UndefOr[String] = js.native
+    var stringColor: js.UndefOr[String] = js.undefined
   }
   object RendererOptions {
     

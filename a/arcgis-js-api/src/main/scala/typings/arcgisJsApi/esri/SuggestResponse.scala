@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SuggestResponse extends Object {
+trait SuggestResponse
+  extends StObject
+     with Object {
   
   /**
     * The index of the source from which suggestions are obtained.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SuggestResponse)
     */
-  var activeSourceIndex: Double = js.native
+  var activeSourceIndex: Double
   
   /**
     * An array of error objects returned from the suggest results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SuggestResponse)
     */
-  var errors: js.Array[Error] = js.native
+  var errors: js.Array[Error]
   
   /**
     * The number of suggest results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SuggestResponse)
     */
-  var numResults: Double = js.native
+  var numResults: Double
   
   /**
     * An array of objects representing the results of suggest.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SuggestResponse)
     */
-  var results: js.Array[SuggestResponseResults] = js.native
+  var results: js.Array[SuggestResponseResults]
   
   /**
     * The search expression used for the suggest.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SuggestResponse)
     */
-  var searchTerm: String = js.native
+  var searchTerm: String
 }
 object SuggestResponse {
   

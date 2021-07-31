@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsUpdateSettings extends StObject {
   
   /** Only apply updates of these windows update classifications. If empty, all updates are applied. */
-  var classifications: js.UndefOr[js.Array[String]] = js.native
+  var classifications: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of KBs to exclude from update. */
-  var excludes: js.UndefOr[js.Array[String]] = js.native
+  var excludes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** An exclusive list of kbs to be updated. These are the only patches that will be updated. This field must not be used with other patch configurations. */
-  var exclusivePatches: js.UndefOr[js.Array[String]] = js.native
+  var exclusivePatches: js.UndefOr[js.Array[String]] = js.undefined
 }
 object WindowsUpdateSettings {
   

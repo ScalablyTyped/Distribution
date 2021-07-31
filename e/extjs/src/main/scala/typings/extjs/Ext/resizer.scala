@@ -4,13 +4,13 @@ import typings.extjs.Ext.dd.IDragTracker
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizer {
   
-  @js.native
-  trait IBorderSplitter extends ISplitter
+  trait IBorderSplitter
+    extends StObject
+       with ISplitter
   object IBorderSplitter {
     
     @scala.inline
@@ -20,8 +20,9 @@ object resizer {
     }
   }
   
-  @js.native
-  trait IBorderSplitterTracker extends ISplitterTracker
+  trait IBorderSplitterTracker
+    extends StObject
+       with ISplitterTracker
   object IBorderSplitterTracker {
     
     @scala.inline
@@ -31,8 +32,9 @@ object resizer {
     }
   }
   
-  @js.native
-  trait IHandle extends IComponent
+  trait IHandle
+    extends StObject
+       with IComponent
   object IHandle {
     
     @scala.inline
@@ -42,38 +44,39 @@ object resizer {
     }
   }
   
-  @js.native
-  trait IResizeTracker extends IDragTracker {
+  trait IResizeTracker
+    extends StObject
+       with IDragTracker {
     
     /** [Method] Create a proxy for this resizer
       * @param target Ext.Component/Ext.Element The target
       * @returns Ext.Element A proxy element
       */
-    var createProxy: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], IElement]] = js.native
+    var createProxy: js.UndefOr[js.Function1[/* target */ js.UndefOr[js.Any], IElement]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onBeforeStart")
-    var onBeforeStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onBeforeStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onDrag")
-    var onDrag_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onDrag_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onEnd")
-    var onEnd_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onEnd_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Template method which should be overridden by each DragTracker instance
       * @param e Object
       */
     @JSName("onStart")
-    var onStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onStart_IResizeTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IResizeTracker {
     
@@ -118,57 +121,58 @@ object resizer {
     }
   }
   
-  @js.native
-  trait IResizer extends IObservable {
+  trait IResizer
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (Ext.Element/Ext.util.Region) */
-    var constrainTo: js.UndefOr[js.Any] = js.native
+    var constrainTo: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var dynamic: js.UndefOr[Boolean] = js.native
+    var dynamic: js.UndefOr[Boolean] = js.undefined
     
     /** [Property] (Ext.Element) */
-    var el: js.UndefOr[IElement] = js.native
+    var el: js.UndefOr[IElement] = js.undefined
     
     /** [Method] Returns the element that was configured with the el or target config property
       * @returns Ext.Element element
       */
-    var getEl: js.UndefOr[js.Function0[IElement]] = js.native
+    var getEl: js.UndefOr[js.Function0[IElement]] = js.undefined
     
     /** [Method] Returns the element or component that was configured with the target config property
       * @returns Ext.Element/Ext.Component
       */
-    var getTarget: js.UndefOr[js.Function0[_]] = js.native
+    var getTarget: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (String) */
-    var handles: js.UndefOr[java.lang.String] = js.native
+    var handles: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var heightIncrement: js.UndefOr[Double] = js.native
+    var heightIncrement: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /** [Property] (Ext.Element/Ext.Component) */
-    var originalTarget: js.UndefOr[js.Any] = js.native
+    var originalTarget: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var pinned: js.UndefOr[Boolean] = js.native
+    var pinned: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var preserveRatio: js.UndefOr[Boolean] = js.native
+    var preserveRatio: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Perform a manual resize and fires the resize event
       * @param width Number
@@ -176,22 +180,22 @@ object resizer {
       */
     var resizeTo: js.UndefOr[
         js.Function2[/* width */ js.UndefOr[Double], /* height */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Property] (Ext.resizer.ResizeTracker) */
-    var resizeTracker: js.UndefOr[IResizeTracker] = js.native
+    var resizeTracker: js.UndefOr[IResizeTracker] = js.undefined
     
     /** [Config Option] (Ext.Element/Ext.Component) */
-    var target: js.UndefOr[js.Any] = js.native
+    var target: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var transparent: js.UndefOr[Boolean] = js.native
+    var transparent: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var widthIncrement: js.UndefOr[Double] = js.native
+    var widthIncrement: js.UndefOr[Double] = js.undefined
   }
   object IResizer {
     
@@ -229,7 +233,7 @@ object resizer {
       def setGetElUndefined: Self = StObject.set(x, "getEl", js.undefined)
       
       @scala.inline
-      def setGetTarget(value: () => _): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
+      def setGetTarget(value: () => js.Any): Self = StObject.set(x, "getTarget", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTargetUndefined: Self = StObject.set(x, "getTarget", js.undefined)
@@ -332,48 +336,49 @@ object resizer {
     }
   }
   
-  @js.native
-  trait ISplitter extends IComponent {
+  trait ISplitter
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (Boolean) */
-    var collapseOnDblClick: js.UndefOr[Boolean] = js.native
+    var collapseOnDblClick: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/Ext.panel.Panel) */
-    var collapseTarget: js.UndefOr[js.Any] = js.native
+    var collapseTarget: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var collapsedCls: js.UndefOr[java.lang.String] = js.native
+    var collapsedCls: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var collapsible: js.UndefOr[Boolean] = js.native
+    var collapsible: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Number) */
-    var defaultSplitMax: js.UndefOr[Double] = js.native
+    var defaultSplitMax: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Number) */
-    var defaultSplitMin: js.UndefOr[Double] = js.native
+    var defaultSplitMin: js.UndefOr[Double] = js.undefined
     
     /** [Method] Returns the config object with an xclass property for the splitter tracker  */
-    var getTrackerConfig: js.UndefOr[js.Function0[Unit]] = js.native
+    var getTrackerConfig: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Template method called when this Component s DOM structure is created  */
     @JSName("onRender")
-    var onRender_ISplitter: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRender_ISplitter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (String) */
-    var orientation: js.UndefOr[java.lang.String] = js.native
+    var orientation: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var performCollapse: js.UndefOr[Boolean] = js.native
+    var performCollapse: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Work around IE bug
       * @returns Ext.Component this
       */
     @JSName("setSize")
-    var setSize_ISplitter: js.UndefOr[js.Function0[IComponent]] = js.native
+    var setSize_ISplitter: js.UndefOr[js.Function0[IComponent]] = js.undefined
     
     /** [Config Option] (Number) */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object ISplitter {
     
@@ -460,32 +465,33 @@ object resizer {
     }
   }
   
-  @js.native
-  trait ISplitterTracker extends IDragTracker {
+  trait ISplitterTracker
+    extends StObject
+       with IDragTracker {
     
     /** [Method] ensure the tracker is enabled store boxes of previous and next components and calculate the constrain region
       * @param e Object
       */
     @JSName("onBeforeStart")
-    var onBeforeStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onBeforeStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Track the proxy and set the proper XY coordinates while constraining the drag
       * @param e Object
       */
     @JSName("onDrag")
-    var onDrag_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onDrag_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] perform the resize and remove the proxy class from the splitter el
       * @param e Object
       */
     @JSName("onEnd")
-    var onEnd_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onEnd_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] We move the splitter el
       * @param e Object
       */
     @JSName("onStart")
-    var onStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.native
+    var onStart_ISplitterTracker: js.UndefOr[js.Function1[/* e */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ISplitterTracker {
     

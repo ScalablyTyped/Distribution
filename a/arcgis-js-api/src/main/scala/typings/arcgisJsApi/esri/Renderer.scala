@@ -7,12 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.dictionary
 import typings.arcgisJsApi.arcgisJsApiStrings.simple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Renderer
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

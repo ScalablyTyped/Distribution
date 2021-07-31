@@ -8,7 +8,6 @@ import typings.materialTextfield.anon.PartialMDCTextFieldIconAd
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,7 +23,7 @@ object mod {
   @js.native
   class MDCTextField protected ()
     extends typings.materialTextfield.materialTextfieldMod.MDCTextField {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation,
@@ -34,16 +33,19 @@ object mod {
   /* static members */
   object MDCTextField {
     
-    @JSImport("@material/textfield", "MDCTextField.attachTo")
+    @JSImport("@material/textfield", "MDCTextField")
     @js.native
-    def attachTo(root: Element): typings.materialTextfield.materialTextfieldMod.MDCTextField = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTextfield.materialTextfieldMod.MDCTextField = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.materialTextfieldMod.MDCTextField]
   }
   
   @JSImport("@material/textfield", "MDCTextFieldCharacterCounter")
   @js.native
   class MDCTextFieldCharacterCounter protected ()
     extends typings.materialTextfield.indexMod.MDCTextFieldCharacterCounter {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.foundationMod.MDCTextFieldCharacterCounterFoundation,
@@ -53,9 +55,12 @@ object mod {
   /* static members */
   object MDCTextFieldCharacterCounter {
     
-    @JSImport("@material/textfield", "MDCTextFieldCharacterCounter.attachTo")
+    @JSImport("@material/textfield", "MDCTextFieldCharacterCounter")
     @js.native
-    def attachTo(root: Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.componentMod.MDCTextFieldCharacterCounter]
   }
   
   @JSImport("@material/textfield", "MDCTextFieldCharacterCounterFoundation")
@@ -74,7 +79,7 @@ object mod {
   class MDCTextFieldFoundation ()
     extends typings.materialTextfield.materialTextfieldFoundationMod.MDCTextFieldFoundation {
     def this(adapter: PartialMDCTextFieldAdapte) = this()
-    def this(adapter: js.UndefOr[scala.Nothing], foundationMap: PartialMDCTextFieldFounda) = this()
+    def this(adapter: Unit, foundationMap: PartialMDCTextFieldFounda) = this()
     def this(adapter: PartialMDCTextFieldAdapte, foundationMap: PartialMDCTextFieldFounda) = this()
   }
   
@@ -82,7 +87,7 @@ object mod {
   @js.native
   class MDCTextFieldHelperText protected ()
     extends typings.materialTextfield.helperTextIndexMod.MDCTextFieldHelperText {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.helperTextFoundationMod.MDCTextFieldHelperTextFoundation,
@@ -92,9 +97,12 @@ object mod {
   /* static members */
   object MDCTextFieldHelperText {
     
-    @JSImport("@material/textfield", "MDCTextFieldHelperText.attachTo")
+    @JSImport("@material/textfield", "MDCTextFieldHelperText")
     @js.native
-    def attachTo(root: Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.helperTextComponentMod.MDCTextFieldHelperText]
   }
   
   @JSImport("@material/textfield", "MDCTextFieldHelperTextFoundation")
@@ -108,7 +116,7 @@ object mod {
   @js.native
   class MDCTextFieldIcon protected ()
     extends typings.materialTextfield.iconIndexMod.MDCTextFieldIcon {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialTextfield.iconFoundationMod.MDCTextFieldIconFoundation,
@@ -118,9 +126,12 @@ object mod {
   /* static members */
   object MDCTextFieldIcon {
     
-    @JSImport("@material/textfield", "MDCTextFieldIcon.attachTo")
+    @JSImport("@material/textfield", "MDCTextFieldIcon")
     @js.native
-    def attachTo(root: Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialTextfield.iconComponentMod.MDCTextFieldIcon = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialTextfield.iconComponentMod.MDCTextFieldIcon]
   }
   
   @JSImport("@material/textfield", "MDCTextFieldIconFoundation")

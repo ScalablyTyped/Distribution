@@ -2,15 +2,13 @@ package typings.fuseJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object Id {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name[T] extends StObject {
     
-    var name: /* keyof T */ String = js.native
+    var name: /* keyof T */ String
     
-    var weight: Double = js.native
+    var weight: Double
   }
   object Name {
     
@@ -44,7 +41,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class NameMutableBuilder[Self <: Name[_], T] (val x: Self with Name[T]) extends AnyVal {
+    implicit class NameMutableBuilder[Self <: Name[?], T] (val x: Self & Name[T]) extends AnyVal {
       
       @scala.inline
       def setName(value: /* keyof T */ String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
@@ -54,10 +51,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Score extends StObject {
     
-    var score: Double = js.native
+    var score: Double
   }
   object Score {
     

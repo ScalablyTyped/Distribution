@@ -2,10 +2,13 @@ package typings.seleniumWebdriver
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
+  
+  @JSImport("selenium-webdriver/http", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("selenium-webdriver/http", "Executor")
   @js.native
@@ -49,8 +52,8 @@ object httpMod {
       */
     def this(serverUrl: String) = this()
     def this(serverUrl: String, opt_agent: js.Any) = this()
-    def this(serverUrl: String, opt_agent: js.UndefOr[scala.Nothing], opt_proxy: String) = this()
     def this(serverUrl: String, opt_agent: js.Any, opt_proxy: String) = this()
+    def this(serverUrl: String, opt_agent: Unit, opt_proxy: String) = this()
     
     /**
       * Sends a request to the server. The client will automatically follow any
@@ -88,54 +91,36 @@ object httpMod {
     def this(status: Double, headers: js.Object, body: String) = this()
   }
   
-  @JSImport("selenium-webdriver/http", "buildPath")
-  @js.native
-  def buildPath(path: String, parameters: js.Object): String = js.native
+  @scala.inline
+  def buildPath(path: String, parameters: js.Object): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPath")(path.asInstanceOf[js.Any], parameters.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("selenium-webdriver/http", "del")
-  @js.native
-  def del(path: String): js.Any = js.native
+  @scala.inline
+  def del(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/http", "get")
-  @js.native
-  def get(path: String): js.Any = js.native
+  @scala.inline
+  def get(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/http", "headersToString")
-  @js.native
-  def headersToString(headers: js.Any): String = js.native
+  @scala.inline
+  def headersToString(headers: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("headersToString")(headers.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("selenium-webdriver/http", "parseHttpResponse")
-  @js.native
-  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = js.native
+  @scala.inline
+  def parseHttpResponse(httpResponse: Response, w3c: Boolean): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseHttpResponse")(httpResponse.asInstanceOf[js.Any], w3c.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/http", "post")
-  @js.native
-  def post(path: String): js.Any = js.native
+  @scala.inline
+  def post(path: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(path.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/http", "resource")
-  @js.native
-  def resource(method: String, path: String): js.Any = js.native
+  @scala.inline
+  def resource(method: String, path: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("resource")(method.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/http", "sendRequest")
-  @js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = js.native
-  @JSImport("selenium-webdriver/http", "sendRequest")
-  @js.native
-  def sendRequest(
-    options: js.Object,
-    onOk: js.Any,
-    onError: js.Any,
-    opt_data: js.UndefOr[scala.Nothing],
-    opt_proxy: String
-  ): js.Any = js.native
-  @JSImport("selenium-webdriver/http", "sendRequest")
-  @js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = js.native
-  @JSImport("selenium-webdriver/http", "sendRequest")
-  @js.native
-  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = js.native
+  @scala.inline
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: String, opt_proxy: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def sendRequest(options: js.Object, onOk: js.Any, onError: js.Any, opt_data: Unit, opt_proxy: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("sendRequest")(options.asInstanceOf[js.Any], onOk.asInstanceOf[js.Any], onError.asInstanceOf[js.Any], opt_data.asInstanceOf[js.Any], opt_proxy.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("selenium-webdriver/http", "tryParse")
-  @js.native
-  def tryParse(str: String): js.Any = js.native
+  @scala.inline
+  def tryParse(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("tryParse")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

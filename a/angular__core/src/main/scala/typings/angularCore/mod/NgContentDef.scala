@@ -2,10 +2,8 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NgContentDef extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait NgContentDef extends StObject {
     * Note that a NodeDef with an ng-content can be reprojected, i.e.
     * have a ngContentIndex on its own.
     */
-  var index: Double = js.native
+  var index: Double
 }
 object NgContentDef {
   

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemActionStat extends StObject {
   
   // The number of times the action took place. Read-only.
-  var actionCount: js.UndefOr[NullableOption[Double]] = js.native
+  var actionCount: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The number of distinct actors that performed the action. Read-only.
-  var actorCount: js.UndefOr[NullableOption[Double]] = js.native
+  var actorCount: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object ItemActionStat {
   

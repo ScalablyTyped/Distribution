@@ -37,14 +37,14 @@ import typings.std.Intl.DateTimeFormatPartTypes
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateTimeMod {
   
   @js.native
   trait DateTimeFormat
-    extends typings.std.Intl.DateTimeFormat {
+    extends StObject
+       with typings.std.Intl.DateTimeFormat {
     
     def formatRange(startDate: Double, endDate: Double): String = js.native
     def formatRange(startDate: Double, endDate: Date): String = js.native
@@ -57,46 +57,45 @@ object dateTimeMod {
     def formatRangeToParts(startDate: Date, endDate: Date): js.Array[IntlDateTimeFormatPart] = js.native
   }
   
-  @js.native
   trait DateTimeFormatLocaleInternalData extends StObject {
     
-    var am: String = js.native
+    var am: String
     
-    var ca: js.Array[String] = js.native
+    var ca: js.Array[String]
     
-    var dateFormat: Full = js.native
+    var dateFormat: Full
     
-    var dateTimeFormat: Medium = js.native
+    var dateTimeFormat: Medium
     
-    var era: Short = js.native
+    var era: Short
     
-    var formats: Record[String, js.Array[Formats]] = js.native
-    
-    /**
-      * So we can construct GMT+08:00
-      */
-    var gmtFormat: String = js.native
-    
-    var hc: js.Array[String] = js.native
-    
-    var hourCycle: String = js.native
+    var formats: Record[String, js.Array[Formats]]
     
     /**
       * So we can construct GMT+08:00
       */
-    var hourFormat: String = js.native
+    var gmtFormat: String
     
-    var month: Narrow = js.native
+    var hc: js.Array[String]
     
-    var nu: js.Array[String] = js.native
+    var hourCycle: String
     
-    var pm: String = js.native
+    /**
+      * So we can construct GMT+08:00
+      */
+    var hourFormat: String
     
-    var timeFormat: Full = js.native
+    var month: Narrow
     
-    var timeZoneName: TimeZoneNameData = js.native
+    var nu: js.Array[String]
     
-    var weekday: Narrow = js.native
+    var pm: String
+    
+    var timeFormat: Full
+    
+    var timeZoneName: TimeZoneNameData
+    
+    var weekday: Narrow
   }
   object DateTimeFormatLocaleInternalData {
     
@@ -185,23 +184,23 @@ object dateTimeMod {
     }
   }
   
-  @js.native
   trait DateTimeFormatOptions
-    extends typings.std.Intl.DateTimeFormatOptions {
+    extends StObject
+       with typings.std.Intl.DateTimeFormatOptions {
     
     var calendar: js.UndefOr[
         buddhist | chinese | coptic | ethiopia | ethiopic | gregory | hebrew | indian | islamic | iso8601 | japanese | persian | roc
-      ] = js.native
+      ] = js.undefined
     
-    var dateStyle: js.UndefOr[full | long | medium | short] = js.native
+    var dateStyle: js.UndefOr[full | long | medium | short] = js.undefined
     
-    var fractionalSecondDigits: js.UndefOr[Double] = js.native
+    var fractionalSecondDigits: js.UndefOr[Double] = js.undefined
     
-    var hourCycle: js.UndefOr[h11 | h12 | h23 | h24] = js.native
+    var hourCycle: js.UndefOr[h11 | h12 | h23 | h24] = js.undefined
     
-    var numberingSystem: js.UndefOr[String] = js.native
+    var numberingSystem: js.UndefOr[String] = js.undefined
     
-    var timeStyle: js.UndefOr[full | long | medium | short] = js.native
+    var timeStyle: js.UndefOr[full | long | medium | short] = js.undefined
   }
   object DateTimeFormatOptions {
     
@@ -254,12 +253,11 @@ object dateTimeMod {
     }
   }
   
-  @js.native
   trait EraData extends StObject {
     
-    var AD: String = js.native
+    var AD: String
     
-    var BC: String = js.native
+    var BC: String
   }
   object EraData {
     
@@ -281,40 +279,39 @@ object dateTimeMod {
   }
   
   /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  hour12 :boolean | undefined,   pattern :string,   pattern12 :string,   skeleton :string,   rawPattern :string,   rangePatterns :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>,   rangePatterns12 :std.Record<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.TABLE_2 | 'default', @formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatterns>} */
-  @js.native
   trait Formats extends StObject {
     
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
-    var era: js.UndefOr[String] = js.native
+    var era: js.UndefOr[String] = js.undefined
     
-    var hour: js.UndefOr[String] = js.native
+    var hour: js.UndefOr[String] = js.undefined
     
-    var hour12: js.UndefOr[Boolean] = js.native
+    var hour12: js.UndefOr[Boolean] = js.undefined
     
-    var minute: js.UndefOr[String] = js.native
+    var minute: js.UndefOr[String] = js.undefined
     
-    var month: js.UndefOr[String] = js.native
+    var month: js.UndefOr[String] = js.undefined
     
-    var pattern: String = js.native
+    var pattern: String
     
-    var pattern12: String = js.native
+    var pattern12: String
     
-    var rangePatterns: RecordTABLE2defaultRangeP = js.native
+    var rangePatterns: RecordTABLE2defaultRangeP
     
-    var rangePatterns12: RecordTABLE2defaultRangeP = js.native
+    var rangePatterns12: RecordTABLE2defaultRangeP
     
-    var rawPattern: String = js.native
+    var rawPattern: String
     
-    var second: js.UndefOr[String] = js.native
+    var second: js.UndefOr[String] = js.undefined
     
-    var skeleton: String = js.native
+    var skeleton: String
     
-    var timeZoneName: js.UndefOr[String] = js.native
+    var timeZoneName: js.UndefOr[String] = js.undefined
     
-    var weekday: js.UndefOr[String] = js.native
+    var weekday: js.UndefOr[String] = js.undefined
     
-    var year: js.UndefOr[String] = js.native
+    var year: js.UndefOr[String] = js.undefined
   }
   object Formats {
     
@@ -414,52 +411,51 @@ object dateTimeMod {
     }
   }
   
-  type IntervalFormatsData = IntervalFormatFallback with (Record[String, Record[String, String]])
+  type IntervalFormatsData = IntervalFormatFallback & (Record[String, Record[String, String]])
   
-  @js.native
   trait IntlDateTimeFormatInternal extends StObject {
     
-    var boundFormat: js.UndefOr[FnCall] = js.native
+    var boundFormat: js.UndefOr[FnCall] = js.undefined
     
-    var calendar: js.UndefOr[String] = js.native
+    var calendar: js.UndefOr[String] = js.undefined
     
-    var dataLocale: String = js.native
+    var dataLocale: String
     
-    var dateStyle: js.UndefOr[full | long | medium | short] = js.native
+    var dateStyle: js.UndefOr[full | long | medium | short] = js.undefined
     
-    var day: `2-digit` | numeric = js.native
+    var day: `2-digit` | numeric
     
-    var era: narrow | short | long = js.native
+    var era: narrow | short | long
     
-    var format: Formats = js.native
+    var format: Formats
     
-    var hour: `2-digit` | numeric = js.native
+    var hour: `2-digit` | numeric
     
-    var hourCycle: String = js.native
+    var hourCycle: String
     
-    var locale: String = js.native
+    var locale: String
     
-    var minute: `2-digit` | numeric = js.native
+    var minute: `2-digit` | numeric
     
-    var month: `2-digit` | numeric | narrow | short | long = js.native
+    var month: `2-digit` | numeric | narrow | short | long
     
-    var numberingSystem: String = js.native
+    var numberingSystem: String
     
-    var pattern: String = js.native
+    var pattern: String
     
-    var rangePatterns: RecordTABLE2defaultRangeP = js.native
+    var rangePatterns: RecordTABLE2defaultRangeP
     
-    var second: `2-digit` | numeric = js.native
+    var second: `2-digit` | numeric
     
-    var timeStyle: js.UndefOr[full | long | medium | short] = js.native
+    var timeStyle: js.UndefOr[full | long | medium | short] = js.undefined
     
-    var timeZone: String = js.native
+    var timeZone: String
     
-    var timeZoneName: short | long = js.native
+    var timeZoneName: short | long
     
-    var weekday: narrow | short | long = js.native
+    var weekday: narrow | short | long
     
-    var year: `2-digit` | numeric = js.native
+    var year: `2-digit` | numeric
   }
   object IntlDateTimeFormatInternal {
     
@@ -567,14 +563,13 @@ object dateTimeMod {
     }
   }
   
-  @js.native
   trait IntlDateTimeFormatPart extends StObject {
     
-    var source: js.UndefOr[RangePatternType] = js.native
+    var source: js.UndefOr[RangePatternType] = js.undefined
     
-    var `type`: IntlDateTimeFormatPartType = js.native
+    var `type`: IntlDateTimeFormatPartType
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object IntlDateTimeFormatPart {
     
@@ -614,12 +609,11 @@ object dateTimeMod {
   */
   type IntlDateTimeFormatPartType = _IntlDateTimeFormatPartType | DateTimeFormatPartTypes
   
-  @js.native
   trait RangePatternPart[T /* <: RangePatternType */] extends StObject {
     
-    var pattern: String = js.native
+    var pattern: String
     
-    var source: T = js.native
+    var source: T
   }
   object RangePatternPart {
     
@@ -630,7 +624,7 @@ object dateTimeMod {
     }
     
     @scala.inline
-    implicit class RangePatternPartMutableBuilder[Self <: RangePatternPart[_], T /* <: RangePatternType */] (val x: Self with RangePatternPart[T]) extends AnyVal {
+    implicit class RangePatternPartMutableBuilder[Self <: RangePatternPart[?], T /* <: RangePatternType */] (val x: Self & RangePatternPart[T]) extends AnyVal {
       
       @scala.inline
       def setPattern(value: String): Self = StObject.set(x, "pattern", value.asInstanceOf[js.Any])
@@ -659,30 +653,29 @@ object dateTimeMod {
   }
   
   /* Inlined std.Pick<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.DateTimeFormatOptions, 'weekday' | 'era' | 'year' | 'month' | 'day' | 'hour' | 'minute' | 'second' | 'timeZoneName'> & {  hour12 :boolean | undefined,   patternParts :std.Array<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatternPart<@formatjs/ecma402-abstract.@formatjs/ecma402-abstract/lib/types/date-time.RangePatternType>>} */
-  @js.native
   trait RangePatterns extends StObject {
     
-    var day: js.UndefOr[String] = js.native
+    var day: js.UndefOr[String] = js.undefined
     
-    var era: js.UndefOr[String] = js.native
+    var era: js.UndefOr[String] = js.undefined
     
-    var hour: js.UndefOr[String] = js.native
+    var hour: js.UndefOr[String] = js.undefined
     
-    var hour12: js.UndefOr[Boolean] = js.native
+    var hour12: js.UndefOr[Boolean] = js.undefined
     
-    var minute: js.UndefOr[String] = js.native
+    var minute: js.UndefOr[String] = js.undefined
     
-    var month: js.UndefOr[String] = js.native
+    var month: js.UndefOr[String] = js.undefined
     
-    var patternParts: js.Array[RangePatternPart[RangePatternType]] = js.native
+    var patternParts: js.Array[RangePatternPart[RangePatternType]]
     
-    var second: js.UndefOr[String] = js.native
+    var second: js.UndefOr[String] = js.undefined
     
-    var timeZoneName: js.UndefOr[String] = js.native
+    var timeZoneName: js.UndefOr[String] = js.undefined
     
-    var weekday: js.UndefOr[String] = js.native
+    var weekday: js.UndefOr[String] = js.undefined
     
-    var year: js.UndefOr[String] = js.native
+    var year: js.UndefOr[String] = js.undefined
   }
   object RangePatterns {
     
@@ -763,15 +756,15 @@ object dateTimeMod {
     }
   }
   
-  @js.native
   trait ResolvedDateTimeFormatOptions
-    extends typings.std.Intl.ResolvedDateTimeFormatOptions {
+    extends StObject
+       with typings.std.Intl.ResolvedDateTimeFormatOptions {
     
-    var dateStyle: js.UndefOr[full | long | medium | short] = js.native
+    var dateStyle: js.UndefOr[full | long | medium | short] = js.undefined
     
-    var hourCycle: String = js.native
+    var hourCycle: String
     
-    var timeStyle: js.UndefOr[full | long | medium | short] = js.native
+    var timeStyle: js.UndefOr[full | long | medium | short] = js.undefined
   }
   object ResolvedDateTimeFormatOptions {
     

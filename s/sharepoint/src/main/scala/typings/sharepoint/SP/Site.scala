@@ -4,17 +4,18 @@ import typings.sharepoint.SP.SiteHealth.SiteHealthSummary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Site extends ClientObject {
+trait Site
+  extends StObject
+     with ClientObject {
   
   def createPreviewSPSite(upgrade: Boolean, sendemail: Boolean): Unit = js.native
   
   def extendUpgradeReminderDate(): Unit = js.native
   
-  def getCatalog(typeCatalog: Double): List[_] = js.native
+  def getCatalog(typeCatalog: Double): List[js.Any] = js.native
   
   def getChanges(query: ChangeQuery): ChangeCollection = js.native
   

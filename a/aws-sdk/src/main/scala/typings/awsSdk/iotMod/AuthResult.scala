@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthResult extends StObject {
   
   /**
     * The policies and statements that allowed the specified action.
     */
-  var allowed: js.UndefOr[Allowed] = js.native
+  var allowed: js.UndefOr[Allowed] = js.undefined
   
   /**
     * The final authorization decision of this scenario. Multiple statements are taken into account when determining the authorization decision. An explicit deny statement can override multiple allow statements.
     */
-  var authDecision: js.UndefOr[AuthDecision] = js.native
+  var authDecision: js.UndefOr[AuthDecision] = js.undefined
   
   /**
     * Authorization information.
     */
-  var authInfo: js.UndefOr[AuthInfo] = js.native
+  var authInfo: js.UndefOr[AuthInfo] = js.undefined
   
   /**
     * The policies and statements that denied the specified action.
     */
-  var denied: js.UndefOr[Denied] = js.native
+  var denied: js.UndefOr[Denied] = js.undefined
   
   /**
     * Contains any missing context values found while evaluating policy.
     */
-  var missingContextValues: js.UndefOr[MissingContextValues] = js.native
+  var missingContextValues: js.UndefOr[MissingContextValues] = js.undefined
 }
 object AuthResult {
   

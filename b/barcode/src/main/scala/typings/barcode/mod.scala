@@ -4,23 +4,24 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(`type`: String, options: BarcodeOptions): BarcodeResult = (^.asInstanceOf[js.Dynamic].apply(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BarcodeResult]
+  
   @JSImport("barcode", JSImport.Namespace)
   @js.native
-  def apply(`type`: String, options: BarcodeOptions): BarcodeResult = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait BarcodeOptions extends StObject {
     
-    var data: String | Double = js.native
+    var data: String | Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object BarcodeOptions {
     
@@ -44,14 +45,13 @@ object mod {
     }
   }
   
-  @js.native
   trait BarcodeResult extends StObject {
     
-    def getBase64(callback: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit]): Unit = js.native
+    def getBase64(callback: js.Function2[/* err */ ErrnoException, /* base64String */ String, Unit]): Unit
     
-    def getStream(callback: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit]): Unit = js.native
+    def getStream(callback: js.Function2[/* err */ ErrnoException, /* stream */ ReadableStream, Unit]): Unit
     
-    def saveImage(outputfilePath: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit = js.native
+    def saveImage(outputfilePath: String, callback: js.Function1[/* err */ ErrnoException, Unit]): Unit
   }
   object BarcodeResult {
     

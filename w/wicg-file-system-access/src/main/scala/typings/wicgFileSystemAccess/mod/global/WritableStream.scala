@@ -2,15 +2,13 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: remove this once https://github.com/microsoft/TSJS-lib-generator/issues/881 is fixed.
 // Native File System API especially needs this method.
-@js.native
 trait WritableStream extends StObject {
   
-  def close(): js.Promise[Unit] = js.native
+  def close(): js.Promise[Unit]
 }
 object WritableStream {
   

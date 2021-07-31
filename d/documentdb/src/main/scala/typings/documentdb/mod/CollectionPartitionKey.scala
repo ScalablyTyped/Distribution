@@ -2,16 +2,14 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionPartitionKey extends StObject {
   
   /**
     * The algorithm used for partitioning. Only Hash is supported.
     */
-  var kind: PartitionKind = js.native
+  var kind: PartitionKind
   
   /**
     * An array of paths using which data within the collection can be partitioned.
@@ -20,7 +18,7 @@ trait CollectionPartitionKey extends StObject {
     *
     * The array must contain only a single value.
     */
-  var paths: js.Array[String] = js.native
+  var paths: js.Array[String]
 }
 object CollectionPartitionKey {
   

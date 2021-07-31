@@ -20,29 +20,26 @@ import typings.polished.polishedNumbers.`3`
 import typings.polished.polishedNumbers.`4`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modularScaleMod {
   
-  @JSImport("polished/lib/helpers/modularScale", JSImport.Default)
+  @JSImport("polished/lib/helpers/modularScale", JSImport.Namespace)
   @js.native
-  def default(steps: Double): String = js.native
-  @JSImport("polished/lib/helpers/modularScale", JSImport.Default)
-  @js.native
-  def default(steps: Double, base: js.UndefOr[scala.Nothing], ratio: ModularScaleRatio): String = js.native
-  @JSImport("polished/lib/helpers/modularScale", JSImport.Default)
-  @js.native
-  def default(steps: Double, base: String): String = js.native
-  @JSImport("polished/lib/helpers/modularScale", JSImport.Default)
-  @js.native
-  def default(steps: Double, base: String, ratio: ModularScaleRatio): String = js.native
-  @JSImport("polished/lib/helpers/modularScale", JSImport.Default)
-  @js.native
-  def default(steps: Double, base: Double): String = js.native
-  @JSImport("polished/lib/helpers/modularScale", JSImport.Default)
-  @js.native
-  def default(steps: Double, base: Double, ratio: ModularScaleRatio): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(steps: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(steps: Double, base: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(steps: Double, base: String, ratio: ModularScaleRatio): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(steps: Double, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(steps: Double, base: Double, ratio: ModularScaleRatio): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def default(steps: Double, base: Unit, ratio: ModularScaleRatio): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(steps.asInstanceOf[js.Any], base.asInstanceOf[js.Any], ratio.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object ratioNames {
     

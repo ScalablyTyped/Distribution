@@ -12,35 +12,33 @@ import typings.devextreme.devextremeStrings.right
 import typings.devextreme.devextremeStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileName extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[GIF | JPEG | PDF | PNG | SVG] = js.native
+  var format: js.UndefOr[GIF | JPEG | PDF | PNG | SVG] = js.undefined
   
-  var gridLayout: js.UndefOr[Boolean] = js.native
+  var gridLayout: js.UndefOr[Boolean] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[center | left | right] = js.native
+  var horizontalAlignment: js.UndefOr[center | left | right] = js.undefined
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var onExported: js.UndefOr[js.Function] = js.native
+  var onExported: js.UndefOr[js.Function] = js.undefined
   
-  var onExporting: js.UndefOr[js.Function] = js.native
+  var onExporting: js.UndefOr[js.Function] = js.undefined
   
-  var onFileSaving: js.UndefOr[js.Function] = js.native
+  var onFileSaving: js.UndefOr[js.Function] = js.undefined
   
-  var proxyUrl: js.UndefOr[String] = js.native
+  var proxyUrl: js.UndefOr[String] = js.undefined
   
-  var svgToCanvas: js.UndefOr[js.Function] = js.native
+  var svgToCanvas: js.UndefOr[js.Function] = js.undefined
   
-  var verticalAlignment: js.UndefOr[bottom | center | top] = js.native
+  var verticalAlignment: js.UndefOr[bottom | center | top] = js.undefined
 }
 object FileName {
   

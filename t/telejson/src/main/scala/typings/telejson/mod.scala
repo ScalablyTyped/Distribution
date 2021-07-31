@@ -5,57 +5,52 @@ import typings.std.RegExpMatchArray
 import typings.telejson.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("telejson", "isJSON")
+  @JSImport("telejson", JSImport.Namespace)
   @js.native
-  def isJSON(input: String): RegExpMatchArray | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("telejson", "parse")
-  @js.native
-  def parse(data: String): js.Any = js.native
-  @JSImport("telejson", "parse")
-  @js.native
-  def parse(data: String, options: PartialOptions): js.Any = js.native
+  @scala.inline
+  def isJSON(input: String): RegExpMatchArray | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isJSON")(input.asInstanceOf[js.Any]).asInstanceOf[RegExpMatchArray | Null]
   
-  @JSImport("telejson", "replacer")
-  @js.native
-  def replacer(options: Options): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, _] = js.native
+  @scala.inline
+  def parse(data: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(data: String, options: PartialOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("telejson", "reviver")
-  @js.native
-  def reviver(options: Options): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ ValueContainer | String, _] = js.native
+  @scala.inline
+  def replacer(options: Options): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("replacer")(options.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ js.Any, js.Any]]
   
-  @JSImport("telejson", "stringify")
-  @js.native
-  def stringify(data: js.Any): String = js.native
-  @JSImport("telejson", "stringify")
-  @js.native
-  def stringify(data: js.Any, options: PartialOptions): String = js.native
+  @scala.inline
+  def reviver(options: Options): js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ ValueContainer | String, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("reviver")(options.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction2[/* this */ js.Any, /* key */ String, /* value */ ValueContainer | String, js.Any]]
   
-  @js.native
+  @scala.inline
+  def stringify(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(data: js.Any, options: PartialOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var allowClass: Boolean = js.native
+    var allowClass: Boolean
     
-    var allowDate: Boolean = js.native
+    var allowDate: Boolean
     
-    var allowFunction: Boolean = js.native
+    var allowFunction: Boolean
     
-    var allowRegExp: Boolean = js.native
+    var allowRegExp: Boolean
     
-    var allowSymbol: Boolean = js.native
+    var allowSymbol: Boolean
     
-    var allowUndefined: Boolean = js.native
+    var allowUndefined: Boolean
     
-    var lazyEval: Boolean = js.native
+    var lazyEval: Boolean
     
-    var maxDepth: Double = js.native
+    var maxDepth: Double
     
-    var space: js.UndefOr[Double] = js.native
+    var space: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -109,11 +104,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ValueContainer
-    extends /* keys */ StringDictionary[js.Any] {
+    extends StObject
+       with /* keys */ StringDictionary[js.Any] {
     
-    var `_constructor-name_`: js.UndefOr[String] = js.native
+    var `_constructor-name_`: js.UndefOr[String] = js.undefined
   }
   object ValueContainer {
     

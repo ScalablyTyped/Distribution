@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContentIdentifier
   * @version 1.0
   */
-@js.native
-trait XContentProvider extends XInterface {
+trait XContentProvider
+  extends StObject
+     with XInterface {
   
   /**
     * compares two XContentIdentifiers.
@@ -23,7 +23,7 @@ trait XContentProvider extends XInterface {
     * @param Id2 second content identifier.
     * @returns `0` is returned, if the identifiers are equal. A value less than `0` indicates, that the Id1 is less than Id2. A value greater than `0` is return
     */
-  def compareContentIds(Id1: XContentIdentifier, Id2: XContentIdentifier): Double = js.native
+  def compareContentIds(Id1: XContentIdentifier, Id2: XContentIdentifier): Double
   
   /**
     * creates a new {@link XContent} instance, if the given {@link XContentIdentifier} matches a content provided by the implementation of this interface.
@@ -31,7 +31,7 @@ trait XContentProvider extends XInterface {
     * @returns the content.
     * @throws IllegalIdentifierException if the given identifier does not match a content provided by the implementation of this interface
     */
-  def queryContent(Identifier: XContentIdentifier): XContent = js.native
+  def queryContent(Identifier: XContentIdentifier): XContent
 }
 object XContentProvider {
   

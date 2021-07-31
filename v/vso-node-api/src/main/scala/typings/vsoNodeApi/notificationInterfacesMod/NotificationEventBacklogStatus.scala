@@ -2,15 +2,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventBacklogStatus extends StObject {
   
-  var eventBacklogStatus: js.Array[EventBacklogStatus] = js.native
+  var eventBacklogStatus: js.Array[EventBacklogStatus]
   
-  var notificationBacklogStatus: js.Array[NotificationBacklogStatus] = js.native
+  var notificationBacklogStatus: js.Array[NotificationBacklogStatus]
 }
 object NotificationEventBacklogStatus {
   

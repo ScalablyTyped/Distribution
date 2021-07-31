@@ -2,21 +2,19 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyStringNameRouteName[RouteName /* <: String */] extends StObject {
   
   /**
     * Unique key for the route.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * User-provided name for the route.
     */
-  var name: RouteName = js.native
+  var name: RouteName
 }
 object KeyStringNameRouteName {
   
@@ -27,7 +25,7 @@ object KeyStringNameRouteName {
   }
   
   @scala.inline
-  implicit class KeyStringNameRouteNameMutableBuilder[Self <: KeyStringNameRouteName[_], RouteName /* <: String */] (val x: Self with KeyStringNameRouteName[RouteName]) extends AnyVal {
+  implicit class KeyStringNameRouteNameMutableBuilder[Self <: KeyStringNameRouteName[?], RouteName /* <: String */] (val x: Self & KeyStringNameRouteName[RouteName]) extends AnyVal {
     
     @scala.inline
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])

@@ -4,19 +4,18 @@ import typings.hermesProfileTransformer.anon.Issuets
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.CLOCK_SYNC_EVENTS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClockSyncEvent
-  extends SharedEventProperties
+  extends StObject
+     with SharedEventProperties
      with Event {
   
   @JSName("args")
-  var args_ClockSyncEvent: Issuets = js.native
+  var args_ClockSyncEvent: Issuets
   
   @JSName("ph")
-  var ph_ClockSyncEvent: CLOCK_SYNC_EVENTS = js.native
+  var ph_ClockSyncEvent: CLOCK_SYNC_EVENTS
 }
 object ClockSyncEvent {
   

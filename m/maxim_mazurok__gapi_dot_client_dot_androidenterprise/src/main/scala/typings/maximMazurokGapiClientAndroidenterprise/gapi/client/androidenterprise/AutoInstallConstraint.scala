@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoInstallConstraint extends StObject {
   
   /** Charging state constraint. */
-  var chargingStateConstraint: js.UndefOr[String] = js.native
+  var chargingStateConstraint: js.UndefOr[String] = js.undefined
   
   /** Device idle state constraint. */
-  var deviceIdleStateConstraint: js.UndefOr[String] = js.native
+  var deviceIdleStateConstraint: js.UndefOr[String] = js.undefined
   
   /** Network type constraint. */
-  var networkTypeConstraint: js.UndefOr[String] = js.native
+  var networkTypeConstraint: js.UndefOr[String] = js.undefined
 }
 object AutoInstallConstraint {
   

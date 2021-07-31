@@ -10,7 +10,6 @@ import typings.dygraphs.dygraphsStrings.y
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -188,7 +187,7 @@ trait Dygraph extends StObject {
     *
     * This is a good place to call setAnnotations().
     */
-  def ready(callback: js.Function1[/* g */ this.type, _]): Unit = js.native
+  def ready(callback: js.Function1[/* g */ this.type, js.Any]): Unit = js.native
   
   /**
     * Reset the zoom to the original view coordinates. This is the same as
@@ -224,9 +223,9 @@ trait Dygraph extends StObject {
   def setAnnotations(ann: js.Array[Annotation], suppressDraw: Boolean): Unit = js.native
   
   def setSelection(row: Boolean): Unit = js.native
-  def setSelection(row: Boolean, seriesName: js.UndefOr[scala.Nothing], locked: Boolean): Unit = js.native
   def setSelection(row: Boolean, seriesName: String): Unit = js.native
   def setSelection(row: Boolean, seriesName: String, locked: Boolean): Unit = js.native
+  def setSelection(row: Boolean, seriesName: Unit, locked: Boolean): Unit = js.native
   /**
     * Manually set the selected points and display information about them in the
     * legend. The selection can be cleared using clearSelection() and queried
@@ -240,9 +239,9 @@ trait Dygraph extends StObject {
     * to unlock it.
     */
   def setSelection(row: Double): Unit = js.native
-  def setSelection(row: Double, seriesName: js.UndefOr[scala.Nothing], locked: Boolean): Unit = js.native
   def setSelection(row: Double, seriesName: String): Unit = js.native
   def setSelection(row: Double, seriesName: String, locked: Boolean): Unit = js.native
+  def setSelection(row: Double, seriesName: Unit, locked: Boolean): Unit = js.native
   
   /**
     * Changes the visiblity of a series.

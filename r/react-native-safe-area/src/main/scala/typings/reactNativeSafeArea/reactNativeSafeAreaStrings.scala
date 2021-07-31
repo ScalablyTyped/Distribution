@@ -3,7 +3,6 @@ package typings.reactNativeSafeArea
 import typings.reactNativeSafeArea.mod.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNativeSafeAreaStrings {
@@ -14,32 +13,44 @@ object reactNativeSafeAreaStrings {
   def absolutePosition: absolutePosition = "absolutePosition".asInstanceOf[absolutePosition]
   
   @js.native
-  sealed trait all extends Direction
+  sealed trait all
+    extends StObject
+       with Direction
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait bottom extends Direction
+  sealed trait bottom
+    extends StObject
+       with Direction
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait bottomAndLeft extends Direction
+  sealed trait bottomAndLeft
+    extends StObject
+       with Direction
   @scala.inline
   def bottomAndLeft: bottomAndLeft = "bottomAndLeft".asInstanceOf[bottomAndLeft]
   
   @js.native
-  sealed trait bottomAndRight extends Direction
+  sealed trait bottomAndRight
+    extends StObject
+       with Direction
   @scala.inline
   def bottomAndRight: bottomAndRight = "bottomAndRight".asInstanceOf[bottomAndRight]
   
   @js.native
-  sealed trait bottomLeft extends Direction
+  sealed trait bottomLeft
+    extends StObject
+       with Direction
   @scala.inline
   def bottomLeft: bottomLeft = "bottomLeft".asInstanceOf[bottomLeft]
   
   @js.native
-  sealed trait bottomRight extends Direction
+  sealed trait bottomRight
+    extends StObject
+       with Direction
   @scala.inline
   def bottomRight: bottomRight = "bottomRight".asInstanceOf[bottomRight]
   
@@ -49,22 +60,30 @@ object reactNativeSafeAreaStrings {
   def contentInset: contentInset = "contentInset".asInstanceOf[contentInset]
   
   @js.native
-  sealed trait horizontal extends Direction
+  sealed trait horizontal
+    extends StObject
+       with Direction
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait horizontalAndBottom extends Direction
+  sealed trait horizontalAndBottom
+    extends StObject
+       with Direction
   @scala.inline
   def horizontalAndBottom: horizontalAndBottom = "horizontalAndBottom".asInstanceOf[horizontalAndBottom]
   
   @js.native
-  sealed trait horizontalAndTop extends Direction
+  sealed trait horizontalAndTop
+    extends StObject
+       with Direction
   @scala.inline
   def horizontalAndTop: horizontalAndTop = "horizontalAndTop".asInstanceOf[horizontalAndTop]
   
   @js.native
-  sealed trait left extends Direction
+  sealed trait left
+    extends StObject
+       with Direction
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -79,7 +98,9 @@ object reactNativeSafeAreaStrings {
   def padding: padding = "padding".asInstanceOf[padding]
   
   @js.native
-  sealed trait right extends Direction
+  sealed trait right
+    extends StObject
+       with Direction
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -89,42 +110,58 @@ object reactNativeSafeAreaStrings {
   def safeAreaInsetsForRootViewDidChange: safeAreaInsetsForRootViewDidChange = "safeAreaInsetsForRootViewDidChange".asInstanceOf[safeAreaInsetsForRootViewDidChange]
   
   @js.native
-  sealed trait top extends Direction
+  sealed trait top
+    extends StObject
+       with Direction
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait topAndLeft extends Direction
+  sealed trait topAndLeft
+    extends StObject
+       with Direction
   @scala.inline
   def topAndLeft: topAndLeft = "topAndLeft".asInstanceOf[topAndLeft]
   
   @js.native
-  sealed trait topAndRight extends Direction
+  sealed trait topAndRight
+    extends StObject
+       with Direction
   @scala.inline
   def topAndRight: topAndRight = "topAndRight".asInstanceOf[topAndRight]
   
   @js.native
-  sealed trait topLeft extends Direction
+  sealed trait topLeft
+    extends StObject
+       with Direction
   @scala.inline
   def topLeft: topLeft = "topLeft".asInstanceOf[topLeft]
   
   @js.native
-  sealed trait topRight extends Direction
+  sealed trait topRight
+    extends StObject
+       with Direction
   @scala.inline
   def topRight: topRight = "topRight".asInstanceOf[topRight]
   
   @js.native
-  sealed trait vertical extends Direction
+  sealed trait vertical
+    extends StObject
+       with Direction
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait verticalAndLeft extends Direction
+  sealed trait verticalAndLeft
+    extends StObject
+       with Direction
   @scala.inline
   def verticalAndLeft: verticalAndLeft = "verticalAndLeft".asInstanceOf[verticalAndLeft]
   
   @js.native
-  sealed trait verticalAndRight extends Direction
+  sealed trait verticalAndRight
+    extends StObject
+       with Direction
   @scala.inline
   def verticalAndRight: verticalAndRight = "verticalAndRight".asInstanceOf[verticalAndRight]
 }

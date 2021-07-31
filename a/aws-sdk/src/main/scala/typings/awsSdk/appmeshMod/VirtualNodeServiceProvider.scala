@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualNodeServiceProvider extends StObject {
   
   /**
     * The name of the virtual node that is acting as a service provider.
     */
-  var virtualNodeName: ResourceName = js.native
+  var virtualNodeName: ResourceName
 }
 object VirtualNodeServiceProvider {
   

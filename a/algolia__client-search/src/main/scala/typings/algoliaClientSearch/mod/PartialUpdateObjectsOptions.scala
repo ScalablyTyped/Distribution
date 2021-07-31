@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialUpdateObjectsOptions extends StObject {
   
   /**
     * If the object should be created when does not exist.
     */
-  val createIfNotExists: js.UndefOr[Boolean] = js.native
+  val createIfNotExists: js.UndefOr[Boolean] = js.undefined
 }
 object PartialUpdateObjectsOptions {
   

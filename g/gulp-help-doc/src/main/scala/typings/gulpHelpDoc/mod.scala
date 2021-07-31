@@ -5,7 +5,6 @@ import typings.gulp.mod.Gulp
 import typings.gulpHelpDoc.anon.Log
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,7 +15,6 @@ object mod extends Shortcut {
   
   type Usage = js.Function2[/* gulp */ Gulp, /* options */ js.UndefOr[UsageOptions], js.Promise[js.Any]]
   
-  @js.native
   trait UsageOptions extends StObject {
     
     /**
@@ -24,30 +22,30 @@ object mod extends Shortcut {
       * Normally, there is no need to change this option. It may be used
       * for some special cases, like mocking gulpfile for testing.
       */
-    var gulpfile: js.UndefOr[String] = js.native
+    var gulpfile: js.UndefOr[String] = js.undefined
     
     /**
       * Defines max width of the column width tasks or args names
       * (by default is 20 characters long)
       */
-    var keysColumnWidth: js.UndefOr[Double] = js.native
+    var keysColumnWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Defines  max line width for the printed output lines
       * (by default is 80 characters long)
       */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * Printing engine (by default is console). Accepted any device
       * which has log() function defined to do output.
       */
-    var logger: js.UndefOr[Log] = js.native
+    var logger: js.UndefOr[Log] = js.undefined
     
     /**
       * Defines number of empty characters for left-padding of the output
       */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
   }
   object UsageOptions {
     

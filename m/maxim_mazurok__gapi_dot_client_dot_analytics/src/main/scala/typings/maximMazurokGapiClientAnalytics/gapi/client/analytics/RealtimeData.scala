@@ -5,35 +5,33 @@ import typings.maximMazurokGapiClientAnalytics.anon.AccountId
 import typings.maximMazurokGapiClientAnalytics.anon.ColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RealtimeData extends StObject {
   
   /** Column headers that list dimension names followed by the metric names. The order of dimensions and metrics is same as specified in the request. */
-  var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.native
+  var columnHeaders: js.UndefOr[js.Array[ColumnType]] = js.undefined
   
   /** Unique ID for this data response. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Information for the view (profile), for which the real time data was requested. */
-  var profileInfo: js.UndefOr[AccountId] = js.native
+  var profileInfo: js.UndefOr[AccountId] = js.undefined
   
   /** Real time data request query parameters. */
-  var query: js.UndefOr[typings.maximMazurokGapiClientAnalytics.anon.Filters] = js.native
+  var query: js.UndefOr[typings.maximMazurokGapiClientAnalytics.anon.Filters] = js.undefined
   
   /** Real time data rows, where each row contains a list of dimension values followed by the metric values. The order of dimensions and metrics is same as specified in the request. */
-  var rows: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /** Link to this page. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** The total number of rows for the query, regardless of the number of rows in the response. */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Total values for the requested metrics over all the results, not just the results returned in this response. The order of the metric totals is same as the metric order specified in
@@ -42,8 +40,8 @@ trait RealtimeData extends StObject {
   var totalsForAllResults: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData & TopLevel[js.Any]
+  ] = js.undefined
 }
 object RealtimeData {
   
@@ -114,7 +112,7 @@ object RealtimeData {
     def setTotalsForAllResults(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAnalytics.maximMazurokGapiClientAnalyticsStrings.RealtimeData & TopLevel[js.Any]
     ): Self = StObject.set(x, "totalsForAllResults", value.asInstanceOf[js.Any])
     
     @scala.inline

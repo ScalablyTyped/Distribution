@@ -14,37 +14,35 @@ import typings.plotlyJs.plotlyJsStrings.stretch
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var layer: above | below = js.native
+  var layer: above | below
   
-  var opacity: Double = js.native
+  var opacity: Double
   
-  var sizex: Double = js.native
+  var sizex: Double
   
-  var sizey: Double = js.native
+  var sizey: Double
   
-  var sizing: fill | contain | stretch = js.native
+  var sizing: fill | contain | stretch
   
-  var source: String = js.native
+  var source: String
   
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  var x: Double | String = js.native
+  var x: Double | String
   
-  var xanchor: left | center | right = js.native
+  var xanchor: left | center | right
   
-  var xref: paper | XAxisName = js.native
+  var xref: paper | XAxisName
   
-  var y: Double | String = js.native
+  var y: Double | String
   
-  var yanchor: top | middle | bottom = js.native
+  var yanchor: top | middle | bottom
   
-  var yref: paper | YAxisName = js.native
+  var yref: paper | YAxisName
 }
 object Image {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Account extends StObject {
   
   /** An automatic google login account. */
-  var googleAuto: js.UndefOr[js.Any] = js.native
+  var googleAuto: js.UndefOr[js.Any] = js.undefined
 }
 object Account {
   

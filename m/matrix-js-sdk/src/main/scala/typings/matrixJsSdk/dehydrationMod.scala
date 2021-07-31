@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dehydrationMod {
@@ -33,9 +32,9 @@ object dehydrationMod {
     var keyInfo: js.Any = js.native
     
     def setDehydrationKey(key: Uint8Array): js.Promise[Unit] = js.native
-    def setDehydrationKey(key: Uint8Array, keyInfo: js.UndefOr[scala.Nothing], deviceDisplayName: String): js.Promise[Unit] = js.native
     def setDehydrationKey(key: Uint8Array, keyInfo: StringDictionary[js.Any]): js.Promise[Unit] = js.native
     def setDehydrationKey(key: Uint8Array, keyInfo: StringDictionary[js.Any], deviceDisplayName: String): js.Promise[Unit] = js.native
+    def setDehydrationKey(key: Uint8Array, keyInfo: Unit, deviceDisplayName: String): js.Promise[Unit] = js.native
     
     var timeoutId: js.Any = js.native
   }

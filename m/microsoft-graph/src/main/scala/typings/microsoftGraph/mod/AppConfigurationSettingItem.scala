@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppConfigurationSettingItem extends StObject {
   
   // app configuration key.
-  var appConfigKey: js.UndefOr[String] = js.native
+  var appConfigKey: js.UndefOr[String] = js.undefined
   
   // app configuration key type. Possible values are: stringType, integerType, realType, booleanType, tokenType.
-  var appConfigKeyType: js.UndefOr[MdmAppConfigKeyType] = js.native
+  var appConfigKeyType: js.UndefOr[MdmAppConfigKeyType] = js.undefined
   
   // app configuration key value.
-  var appConfigKeyValue: js.UndefOr[String] = js.native
+  var appConfigKeyValue: js.UndefOr[String] = js.undefined
 }
 object AppConfigurationSettingItem {
   

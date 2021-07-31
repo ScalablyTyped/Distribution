@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StepExecutionFilter extends StObject {
   
   /**
     * One or more keys to limit the results. Valid filter keys include the following: StepName, Action, StepExecutionId, StepExecutionStatus, StartTimeBefore, StartTimeAfter.
     */
-  var Key: StepExecutionFilterKey = js.native
+  var Key: StepExecutionFilterKey
   
   /**
     * The values of the filter key.
     */
-  var Values: StepExecutionFilterValueList = js.native
+  var Values: StepExecutionFilterValueList
 }
 object StepExecutionFilter {
   

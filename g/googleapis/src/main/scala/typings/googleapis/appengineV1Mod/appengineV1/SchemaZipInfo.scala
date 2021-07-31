@@ -2,13 +2,11 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The zip file information for a zip deployment.
   */
-@js.native
 trait SchemaZipInfo extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaZipInfo extends StObject {
     * must be greater than or equal to the actual number of files. Used for
     * optimizing performance; if not provided, deployment may be slow.
     */
-  var filesCount: js.UndefOr[Double] = js.native
+  var filesCount: js.UndefOr[Double] = js.undefined
   
   /**
     * URL of the zip file to deploy from. Must be a URL to a resource in Google
     * Cloud Storage in the form
     * &#39;http(s)://storage.googleapis.com/&lt;bucket&gt;/&lt;object&gt;&#39;.
     */
-  var sourceUrl: js.UndefOr[String] = js.native
+  var sourceUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaZipInfo {
   

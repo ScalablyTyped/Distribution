@@ -5,7 +5,6 @@ import typings.d3Selection.mod.Selection_
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,28 +25,28 @@ trait Utils extends StObject {
   
   def appendOrSelect(
     parent: Selection_[
-      _, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any, 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     selector: String,
     tag: String
   ): Selection_[
-    _, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+    js.Any, 
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
     BaseType, 
-    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+    /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
   ] = js.native
   
   def arraysEqual(): Boolean = js.native
-  def arraysEqual(a1: js.Array[_]): Boolean = js.native
-  def arraysEqual(a1: js.Array[_], a2: js.Array[_]): Boolean = js.native
-  def arraysEqual(a1: Null, a2: js.Array[_]): Boolean = js.native
+  def arraysEqual(a1: js.Array[js.Any]): Boolean = js.native
+  def arraysEqual(a1: js.Array[js.Any], a2: js.Array[js.Any]): Boolean = js.native
+  def arraysEqual(a1: Null, a2: js.Array[js.Any]): Boolean = js.native
   
   def clamp(`val`: Double, min: Double, max: Double): Double = js.native
   
-  def constant(x: js.Any): js.Function0[_] = js.native
+  def constant(x: js.Any): js.Function0[js.Any] = js.native
   
   def isFloat(n: js.Any): Boolean = js.native
   

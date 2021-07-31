@@ -2,37 +2,35 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdjustmentParams extends StObject {
   
-  var bri: js.UndefOr[ImgixParamType] = js.native
+  var bri: js.UndefOr[ImgixParamType] = js.undefined
   
-  var con: js.UndefOr[ImgixParamType] = js.native
+  var con: js.UndefOr[ImgixParamType] = js.undefined
   
-  var exp: js.UndefOr[ImgixParamType] = js.native
+  var exp: js.UndefOr[ImgixParamType] = js.undefined
   
-  var gam: js.UndefOr[ImgixParamType] = js.native
+  var gam: js.UndefOr[ImgixParamType] = js.undefined
   
-  var high: js.UndefOr[ImgixParamType] = js.native
+  var high: js.UndefOr[ImgixParamType] = js.undefined
   
-  var hue: js.UndefOr[ImgixParamType] = js.native
+  var hue: js.UndefOr[ImgixParamType] = js.undefined
   
-  var invert: js.UndefOr[ImgixParamType] = js.native
+  var invert: js.UndefOr[ImgixParamType] = js.undefined
   
-  var sat: js.UndefOr[ImgixParamType] = js.native
+  var sat: js.UndefOr[ImgixParamType] = js.undefined
   
-  var shad: js.UndefOr[ImgixParamType] = js.native
+  var shad: js.UndefOr[ImgixParamType] = js.undefined
   
-  var sharp: js.UndefOr[ImgixParamType] = js.native
+  var sharp: js.UndefOr[ImgixParamType] = js.undefined
   
-  var usm: js.UndefOr[ImgixParamType] = js.native
+  var usm: js.UndefOr[ImgixParamType] = js.undefined
   
-  var usmrad: js.UndefOr[ImgixParamType] = js.native
+  var usmrad: js.UndefOr[ImgixParamType] = js.undefined
   
-  var vib: js.UndefOr[ImgixParamType] = js.native
+  var vib: js.UndefOr[ImgixParamType] = js.undefined
 }
 object AdjustmentParams {
   

@@ -14,7 +14,6 @@ import typings.ionicCore.virtualScrollInterfaceMod.HeaderHeightFn
 import typings.ionicCore.virtualScrollInterfaceMod.ItemHeightFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object virtualScrollMod {
@@ -22,7 +21,7 @@ object virtualScrollMod {
   @JSImport("@ionic/angular/directives/virtual-scroll/virtual-scroll", "IonVirtualScroll")
   @js.native
   class IonVirtualScroll protected () extends StObject {
-    def this(z: NgZone, iterableDiffers: IterableDiffers, elementRef: ElementRef[_]) = this()
+    def this(z: NgZone, iterableDiffers: IterableDiffers, elementRef: ElementRef[js.Any]) = this()
     
     /**
       * The approximate width of each footer template's cell.
@@ -127,7 +126,7 @@ object virtualScrollMod {
       * entire virtual scroll is reset, which is an expensive operation and
       * should be avoided if possible.
       */
-    var items: js.UndefOr[js.Array[_]] = js.native
+    var items: js.UndefOr[js.Array[js.Any]] = js.native
     
     var iterableDiffers: js.Any = js.native
     
@@ -154,7 +153,7 @@ object virtualScrollMod {
       * Same as `ngForTrackBy` which can be used on `ngFor`.
       */
     @JSName("trackBy")
-    var trackBy_Original: TrackByFunction[_] = js.native
+    var trackBy_Original: TrackByFunction[js.Any] = js.native
     
     var z: js.Any = js.native
   }

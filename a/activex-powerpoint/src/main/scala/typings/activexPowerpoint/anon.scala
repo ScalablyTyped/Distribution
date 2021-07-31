@@ -12,17 +12,15 @@ import typings.activexPowerpoint.PowerPoint.SlideRange
 import typings.activexPowerpoint.PowerPoint.SlideShowWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancel extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Pres: Presentation = js.native
+    val Pres: Presentation
   }
   object Cancel {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CancelProtViewWindow extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val ProtViewWindow: ProtectedViewWindow = js.native
+    val ProtViewWindow: ProtectedViewWindow
   }
   object CancelProtViewWindow {
     
@@ -69,12 +66,11 @@ object anon {
     }
   }
   
-  @js.native
   trait NEffect extends StObject {
     
-    val Wn: SlideShowWindow = js.native
+    val Wn: SlideShowWindow
     
-    val nEffect: Effect = js.native
+    val nEffect: Effect
   }
   object NEffect {
     
@@ -95,10 +91,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Pres extends StObject {
     
-    val Pres: Presentation = js.native
+    val Pres: Presentation
   }
   object Pres {
     
@@ -116,12 +111,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PresWn extends StObject {
     
-    val Pres: Presentation = js.native
+    val Pres: Presentation
     
-    val Wn: DocumentWindow = js.native
+    val Wn: DocumentWindow
   }
   object PresWn {
     
@@ -142,10 +136,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ProtViewWindow extends StObject {
     
-    val ProtViewWindow: ProtectedViewWindow = js.native
+    val ProtViewWindow: ProtectedViewWindow
   }
   object ProtViewWindow {
     
@@ -163,14 +156,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ProtectedViewCloseReason extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val ProtViewWindow: ProtectedViewWindow = js.native
+    val ProtViewWindow: ProtectedViewWindow
     
-    val ProtectedViewCloseReason: PpProtectedViewCloseReason = js.native
+    val ProtectedViewCloseReason: PpProtectedViewCloseReason
   }
   object ProtectedViewCloseReason {
     
@@ -198,12 +190,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Sel extends StObject {
     
-    var Cancel: Boolean = js.native
+    var Cancel: Boolean
     
-    val Sel: Selection = js.native
+    val Sel: Selection
   }
   object Sel {
     
@@ -224,10 +215,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SelSelection extends StObject {
     
-    val Sel: Selection = js.native
+    val Sel: Selection
   }
   object SelSelection {
     
@@ -245,10 +235,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Sld extends StObject {
     
-    val Sld: Slide = js.native
+    val Sld: Slide
   }
   object Sld {
     
@@ -266,10 +255,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SldRange extends StObject {
     
-    val SldRange: SlideRange = js.native
+    val SldRange: SlideRange
   }
   object SldRange {
     
@@ -287,12 +275,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SyncEventType extends StObject {
     
-    val Pres: Presentation = js.native
+    val Pres: Presentation
     
-    val SyncEventType: MsoSyncEventType = js.native
+    val SyncEventType: MsoSyncEventType
   }
   object SyncEventType {
     
@@ -313,10 +300,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Wn extends StObject {
     
-    val Wn: SlideShowWindow = js.native
+    val Wn: SlideShowWindow
   }
   object Wn {
     

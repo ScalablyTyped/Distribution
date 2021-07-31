@@ -2,21 +2,19 @@ package typings.awsSdk.braketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelQuantumTaskResponse extends StObject {
   
   /**
     * The status of the cancellation request.
     */
-  var cancellationStatus: CancellationStatus = js.native
+  var cancellationStatus: CancellationStatus
   
   /**
     * The ARN of the task.
     */
-  var quantumTaskArn: QuantumTaskArn = js.native
+  var quantumTaskArn: QuantumTaskArn
 }
 object CancelQuantumTaskResponse {
   

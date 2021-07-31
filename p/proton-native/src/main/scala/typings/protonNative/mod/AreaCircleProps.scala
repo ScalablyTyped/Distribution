@@ -2,26 +2,26 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaCircleProps extends AreaBaseProps {
+trait AreaCircleProps
+  extends StObject
+     with AreaBaseProps {
   
   /**
     * The circle's radius. Percentage values use the Area's width.
     */
-  var r: Double | String = js.native
+  var r: Double | String
   
   /**
     * The x coordinate of the center of the cirle.
     */
-  var x: Double | String = js.native
+  var x: Double | String
   
   /**
     * The y coordinate of the center of the cirle.
     */
-  var y: Double | String = js.native
+  var y: Double | String
 }
 object AreaCircleProps {
   

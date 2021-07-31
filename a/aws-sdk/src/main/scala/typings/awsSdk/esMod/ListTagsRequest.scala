@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsRequest extends StObject {
   
   /**
     *  Specify the ARN for the Elasticsearch domain to which the tags are attached that you want to view.
     */
-  var ARN: typings.awsSdk.esMod.ARN = js.native
+  var ARN: typings.awsSdk.esMod.ARN
 }
 object ListTagsRequest {
   

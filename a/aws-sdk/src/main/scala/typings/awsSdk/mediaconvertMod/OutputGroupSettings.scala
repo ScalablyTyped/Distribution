@@ -2,41 +2,39 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputGroupSettings extends StObject {
   
   /**
     * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to CMAF_GROUP_SETTINGS. Each output in a CMAF Output Group may only contain a single video, audio, or caption output.
     */
-  var CmafGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.CmafGroupSettings] = js.native
+  var CmafGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.CmafGroupSettings] = js.undefined
   
   /**
     * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to DASH_ISO_GROUP_SETTINGS.
     */
-  var DashIsoGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DashIsoGroupSettings] = js.native
+  var DashIsoGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DashIsoGroupSettings] = js.undefined
   
   /**
     * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to FILE_GROUP_SETTINGS.
     */
-  var FileGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.FileGroupSettings] = js.native
+  var FileGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.FileGroupSettings] = js.undefined
   
   /**
     * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to HLS_GROUP_SETTINGS.
     */
-  var HlsGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.HlsGroupSettings] = js.native
+  var HlsGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.HlsGroupSettings] = js.undefined
   
   /**
     * Required when you set (Type) under (OutputGroups)>(OutputGroupSettings) to MS_SMOOTH_GROUP_SETTINGS.
     */
-  var MsSmoothGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MsSmoothGroupSettings] = js.native
+  var MsSmoothGroupSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.MsSmoothGroupSettings] = js.undefined
   
   /**
     * Type of output group (File group, Apple HLS, DASH ISO, Microsoft Smooth Streaming, CMAF)
     */
-  var Type: js.UndefOr[OutputGroupType] = js.native
+  var Type: js.UndefOr[OutputGroupType] = js.undefined
 }
 object OutputGroupSettings {
   

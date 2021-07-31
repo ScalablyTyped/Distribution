@@ -3,7 +3,6 @@ package typings.durandal
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,33 +21,14 @@ object compositionMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("durandal/composition", "addBindingHandler")
-  @js.native
-  def addBindingHandler(name: String): Unit = js.native
-  @JSImport("durandal/composition", "addBindingHandler")
-  @js.native
-  def addBindingHandler(
-    name: String,
-    config: js.UndefOr[scala.Nothing],
-    initOptionsFactory: js.Function5[
-      /* element */ js.UndefOr[HTMLElement], 
-      /* valueAccessor */ js.UndefOr[js.Any], 
-      /* allBindingsAccessor */ js.UndefOr[js.Any], 
-      /* viewModel */ js.UndefOr[js.Any], 
-      /* bindingContext */ js.UndefOr[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
-      ], 
-      _
-    ]
-  ): Unit = js.native
-  @JSImport("durandal/composition", "addBindingHandler")
-  @js.native
+  @scala.inline
+  def addBindingHandler(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def addBindingHandler(
     name: String,
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
-  ): Unit = js.native
-  @JSImport("durandal/composition", "addBindingHandler")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def addBindingHandler(
     name: String,
     config: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any,
@@ -60,21 +40,34 @@ object compositionMod {
       /* bindingContext */ js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
       ], 
-      _
+      js.Any
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any], initOptionsFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addBindingHandler(
+    name: String,
+    config: Unit,
+    initOptionsFactory: js.Function5[
+      /* element */ js.UndefOr[HTMLElement], 
+      /* valueAccessor */ js.UndefOr[js.Any], 
+      /* allBindingsAccessor */ js.UndefOr[js.Any], 
+      /* viewModel */ js.UndefOr[js.Any], 
+      /* bindingContext */ js.UndefOr[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
+      ], 
+      js.Any
+    ]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBindingHandler")(name.asInstanceOf[js.Any], config.asInstanceOf[js.Any], initOptionsFactory.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("durandal/composition", "compose")
-  @js.native
+  @scala.inline
   def compose(
     element: HTMLElement,
     settings: CompositionContext,
     bindingContext: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(element.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], bindingContext.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("durandal/composition", "convertTransitionToModuleId")
-  @js.native
-  def convertTransitionToModuleId(name: String): String = js.native
+  @scala.inline
+  def convertTransitionToModuleId(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTransitionToModuleId")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("durandal/composition", "current")
   @js.native
@@ -94,61 +87,58 @@ object compositionMod {
   @scala.inline
   def defaultTransitionName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultTransitionName")(x.asInstanceOf[js.Any])
   
-  @JSImport("durandal/composition", "getParts")
-  @js.native
-  def getParts(elements: js.Array[HTMLElement]): js.Any = js.native
-  @JSImport("durandal/composition", "getParts")
-  @js.native
-  def getParts(element: HTMLElement): js.Any = js.native
+  @scala.inline
+  def getParts(elements: js.Array[HTMLElement]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(elements.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getParts(element: HTMLElement): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(element.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
   trait CompositionContext extends StObject {
     
-    var activate: js.UndefOr[Boolean] = js.native
+    var activate: js.UndefOr[Boolean] = js.undefined
     
-    var activeView: HTMLElement = js.native
+    var activeView: HTMLElement
     
-    var area: js.UndefOr[String] = js.native
+    var area: js.UndefOr[String] = js.undefined
     
     var attached: js.UndefOr[
         js.Function3[/* child */ HTMLElement, /* parent */ HTMLElement, /* context */ this.type, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var binding: js.UndefOr[
         js.Function3[/* child */ HTMLElement, /* parent */ HTMLElement, /* context */ this.type, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var bindingContext: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingContext */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var cacheViews: js.UndefOr[Boolean] = js.native
+    var cacheViews: js.UndefOr[Boolean] = js.undefined
     
-    var child: HTMLElement = js.native
+    var child: HTMLElement
     
-    var composingNewView: Boolean = js.native
+    var composingNewView: Boolean
     
     var compositionComplete: js.UndefOr[
         js.Function3[/* child */ HTMLElement, /* parent */ HTMLElement, /* context */ this.type, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var mode: String = js.native
+    var mode: String
     
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
-    var parent: HTMLElement = js.native
+    var parent: HTMLElement
     
-    var preserveContext: js.UndefOr[Boolean] = js.native
+    var preserveContext: js.UndefOr[Boolean] = js.undefined
     
-    var strategy: js.UndefOr[js.Function1[/* context */ this.type, DurandalPromise[HTMLElement]]] = js.native
+    var strategy: js.UndefOr[js.Function1[/* context */ this.type, DurandalPromise[HTMLElement]]] = js.undefined
     
-    var transition: js.UndefOr[String] = js.native
+    var transition: js.UndefOr[String] = js.undefined
     
-    def triggerAttach(): Unit = js.native
+    def triggerAttach(): Unit
     
-    var view: js.UndefOr[js.Any] = js.native
+    var view: js.UndefOr[js.Any] = js.undefined
     
-    var viewElements: js.UndefOr[js.Array[HTMLElement]] = js.native
+    var viewElements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
   }
   object CompositionContext {
     
@@ -271,14 +261,13 @@ object compositionMod {
     }
   }
   
-  @js.native
   trait CompositionTransation extends StObject {
     
     /**
       * Registers a callback which will be invoked when the current composition transaction has completed. The transaction includes all parent and children compositions.
       * @param {function} callback The callback to be invoked when composition is complete.
       */
-    def complete(callback: js.Function): Unit = js.native
+    def complete(callback: js.Function): Unit
   }
   object CompositionTransation {
     

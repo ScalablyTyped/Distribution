@@ -2,36 +2,34 @@ package typings.awsSdk.dlmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLifecyclePolicyRequest extends StObject {
   
   /**
     * A description of the lifecycle policy. The characters ^[0-9A-Za-z _-]+$ are supported.
     */
-  var Description: PolicyDescription = js.native
+  var Description: PolicyDescription
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role used to run the operations specified by the lifecycle policy.
     */
-  var ExecutionRoleArn: typings.awsSdk.dlmMod.ExecutionRoleArn = js.native
+  var ExecutionRoleArn: typings.awsSdk.dlmMod.ExecutionRoleArn
   
   /**
     * The configuration details of the lifecycle policy.
     */
-  var PolicyDetails: typings.awsSdk.dlmMod.PolicyDetails = js.native
+  var PolicyDetails: typings.awsSdk.dlmMod.PolicyDetails
   
   /**
     * The desired activation state of the lifecycle policy after creation.
     */
-  var State: SettablePolicyStateValues = js.native
+  var State: SettablePolicyStateValues
   
   /**
     * The tags to apply to the lifecycle policy during creation.
     */
-  var Tags: js.UndefOr[TagMap] = js.native
+  var Tags: js.UndefOr[TagMap] = js.undefined
 }
 object CreateLifecyclePolicyRequest {
   

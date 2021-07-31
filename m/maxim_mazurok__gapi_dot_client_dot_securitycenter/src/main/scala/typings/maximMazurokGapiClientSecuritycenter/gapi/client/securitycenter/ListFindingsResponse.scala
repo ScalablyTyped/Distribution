@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFindingsResponse extends StObject {
   
   /** Findings matching the list request. */
-  var listFindingsResults: js.UndefOr[js.Array[ListFindingsResult]] = js.native
+  var listFindingsResults: js.UndefOr[js.Array[ListFindingsResult]] = js.undefined
   
   /** Token to retrieve the next page of results, or empty if there are no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Time used for executing the list request. */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /** The total number of findings matching the query. */
-  var totalSize: js.UndefOr[Double] = js.native
+  var totalSize: js.UndefOr[Double] = js.undefined
 }
 object ListFindingsResponse {
   

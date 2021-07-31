@@ -22,7 +22,6 @@ import typings.std.HTMLInputElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagInputMod {
@@ -100,14 +99,13 @@ object tagInputMod {
     @scala.inline
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
     
-    @JSImport("@blueprintjs/core/lib/esm/components/tag-input/tagInput", "TagInput.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(props: ReadonlyITagInputProps, state: ReadonlyITagInputState): PartialITagInputState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(props.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PartialITagInputState | Null]
   }
   
-  @js.native
   trait ITagInputProps
-    extends IIntentProps
+    extends StObject
+       with IIntentProps
        with IProps {
     
     /**
@@ -115,7 +113,7 @@ object tagInputMod {
       * Otherwise, `onAdd` is only invoked when `enter` is pressed.
       * @default false
       */
-    var addOnBlur: js.UndefOr[Boolean] = js.native
+    var addOnBlur: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, `onAdd` will be invoked when the user pastes text containing the `separator`
@@ -128,7 +126,7 @@ object tagInputMod {
       *
       * @default true
       */
-    var addOnPaste: js.UndefOr[Boolean] = js.native
+    var addOnPaste: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the component is non-interactive.
@@ -136,28 +134,28 @@ object tagInputMod {
       * if appropriate.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the tag input should take up the full width of its container. */
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
     /**
       * React props to pass to the `<input>` element.
       * Note that `ref` and `key` are not supported here; use `inputRef` below.
       */
-    var inputProps: js.UndefOr[HTMLInputProps] = js.native
+    var inputProps: js.UndefOr[HTMLInputProps] = js.undefined
     
     /** Ref handler for the `<input>` element. */
-    var inputRef: js.UndefOr[js.Function1[/* input */ HTMLInputElement | Null, Unit]] = js.native
+    var inputRef: js.UndefOr[js.Function1[/* input */ HTMLInputElement | Null, Unit]] = js.undefined
     
     /** Controlled value of the `<input>` element. This is shorthand for `inputProps={{ value }}`. */
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
     /** Whether the tag input should use a large size. */
-    var large: js.UndefOr[Boolean] = js.native
+    var large: js.UndefOr[Boolean] = js.undefined
     
     /** Name of a Blueprint UI icon (or an icon element) to render on the left side of the input. */
-    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.native
+    var leftIcon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /**
       * Callback invoked when new tags are added by the user pressing `enter` on the input.
@@ -170,7 +168,7 @@ object tagInputMod {
       */
     var onAdd: js.UndefOr[
         js.Function2[/* values */ js.Array[String], /* method */ TagInputAddMethod, Boolean | Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback invoked when new tags are added or removed. Receives the updated list of `values`:
@@ -183,13 +181,13 @@ object tagInputMod {
       * the two handlers into one to simplify controlled usage.
       * ```
       */
-    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], Boolean | Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* values */ js.Array[ReactNode], Boolean | Unit]] = js.undefined
     
     /**
       * Callback invoked when the value of `<input>` element is changed.
       * This is shorthand for `inputProps={{ onChange }}`.
       */
-    var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.native
+    var onInputChange: js.UndefOr[FormEventHandler[HTMLInputElement]] = js.undefined
     
     /**
       * Callback invoked when the user depresses a keyboard key.
@@ -198,7 +196,7 @@ object tagInputMod {
       */
     var onKeyDown: js.UndefOr[
         js.Function2[/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback invoked when the user releases a keyboard key.
@@ -207,13 +205,13 @@ object tagInputMod {
       */
     var onKeyUp: js.UndefOr[
         js.Function2[/* event */ KeyboardEvent[HTMLElement], /* index */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback invoked when the user clicks the X button on a tag.
       * Receives value and index of removed tag.
       */
-    var onRemove: js.UndefOr[js.Function2[/* value */ ReactNode, /* index */ Double, Unit]] = js.native
+    var onRemove: js.UndefOr[js.Function2[/* value */ ReactNode, /* index */ Double, Unit]] = js.undefined
     
     /**
       * Input placeholder text which will not appear if `values` contains any items
@@ -223,21 +221,21 @@ object tagInputMod {
       * If you define both `placeholder` and `inputProps.placeholder`, then the former will appear
       * when `values` is empty and the latter at all other times.
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * Element to render on right side of input.
       * For best results, use a small spinner or minimal button (button height will adjust if `TagInput` uses large styles).
       * Other elements will likely require custom styles for correct positioning.
       */
-    var rightElement: js.UndefOr[Element] = js.native
+    var rightElement: js.UndefOr[Element] = js.undefined
     
     /**
       * Separator pattern used to split input text into multiple values. Default value splits on commas and newlines.
       * Explicit `false` value disables splitting (note that `onAdd` will still receive an array of length 1).
       * @default /[,\n\r]/
       */
-    var separator: js.UndefOr[String | RegExp | `false`] = js.native
+    var separator: js.UndefOr[String | RegExp | `false`] = js.undefined
     
     /**
       * React props to pass to each `Tag`. Provide an object to pass the same props to every tag,
@@ -246,7 +244,7 @@ object tagInputMod {
       * If you define `onRemove` here then you will have to implement your own tag removal
       * handling as `TagInput`'s own `onRemove` handler will never be invoked.
       */
-    var tagProps: js.UndefOr[ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])] = js.native
+    var tagProps: js.UndefOr[ITagProps | (js.Function2[/* value */ ReactNode, /* index */ Double, ITagProps])] = js.undefined
     
     /**
       * Controlled tag values. Each value will be rendered inside a `Tag`, which can be customized
@@ -257,7 +255,7 @@ object tagInputMod {
       * subtype, such as `string` or `ReactChild`, you can use that type on all your handlers
       * to simplify type logic.
       */
-    var values: js.Array[ReactNode] = js.native
+    var values: js.Array[ReactNode]
   }
   object ITagInputProps {
     
@@ -398,16 +396,15 @@ object tagInputMod {
     }
   }
   
-  @js.native
   trait ITagInputState extends StObject {
     
-    var activeIndex: Double = js.native
+    var activeIndex: Double
     
-    var inputValue: String = js.native
+    var inputValue: String
     
-    var isInputFocused: Boolean = js.native
+    var isInputFocused: Boolean
     
-    var prevInputValueProp: js.UndefOr[String] = js.native
+    var prevInputValueProp: js.UndefOr[String] = js.undefined
   }
   object ITagInputState {
     

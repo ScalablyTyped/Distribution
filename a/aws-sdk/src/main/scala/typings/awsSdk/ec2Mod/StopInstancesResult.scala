@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopInstancesResult extends StObject {
   
   /**
     * Information about the stopped instances.
     */
-  var StoppingInstances: js.UndefOr[InstanceStateChangeList] = js.native
+  var StoppingInstances: js.UndefOr[InstanceStateChangeList] = js.undefined
 }
 object StopInstancesResult {
   

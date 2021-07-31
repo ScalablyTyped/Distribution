@@ -15,25 +15,23 @@ import typings.dwt.anon.IfResize
 import typings.dwt.webTwainAcquireMod.WebTwainAcquire
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webTwainViewerMod {
   
-  @js.native
   trait BasicViewerConfig extends StObject {
     
     /**
       * Specify the size of the viewer.
       */
-    var Height: Double | String = js.native
+    var Height: Double | String
     
-    var Width: Double | String = js.native
+    var Width: Double | String
     
     /**
       * Set up the content view.
       */
-    var view: ContentView = js.native
+    var view: ContentView
   }
   object BasicViewerConfig {
     
@@ -57,19 +55,18 @@ object webTwainViewerMod {
     }
   }
   
-  @js.native
   trait ContentView extends StObject {
     
     /**
       * Specify the width of the major content view.
       */
-    var Width: Double | String = js.native
+    var Width: Double | String
     
     /**
       * Whether to show the content view or not.
       * If set to false, then only thumbnails view is shown.
       */
-    var bShow: Boolean = js.native
+    var bShow: Boolean
   }
   object ContentView {
     
@@ -183,9 +180,9 @@ object webTwainViewerMod {
       * @param resolution Specify the initial resolution.
       */
     def showVideo(): js.Promise[Resolution] = js.native
-    def showVideo(deviceId: js.UndefOr[scala.Nothing], resolution: Resolution): js.Promise[Resolution] = js.native
     def showVideo(deviceId: String): js.Promise[Resolution] = js.native
     def showVideo(deviceId: String, resolution: Resolution): js.Promise[Resolution] = js.native
+    def showVideo(deviceId: Unit, resolution: Resolution): js.Promise[Resolution] = js.native
     
     /**
       * Show or hide the custom element.
@@ -216,38 +213,37 @@ object webTwainViewerMod {
     def zoomOut(): Boolean = js.native
   }
   
-  @js.native
   trait ViewerConfig extends StObject {
     
-    var buttonResize: js.UndefOr[IfResize] = js.native
+    var buttonResize: js.UndefOr[IfResize] = js.undefined
     
-    var buttons: js.UndefOr[AutoFit] = js.native
+    var buttons: js.UndefOr[AutoFit] = js.undefined
     
     /**
       * Specify which components are shown.
       */
-    var component: js.UndefOr[AsideMenu] = js.native
+    var component: js.UndefOr[AsideMenu] = js.undefined
     
-    var content: js.UndefOr[AllImage] = js.native
+    var content: js.UndefOr[AllImage] = js.undefined
     
-    var cropStyle: js.UndefOr[CropBar] = js.native
+    var cropStyle: js.UndefOr[CropBar] = js.undefined
     
-    var group: js.UndefOr[Global] = js.native
+    var group: js.UndefOr[Global] = js.undefined
     
-    var presetMode: js.UndefOr[String] = js.native
+    var presetMode: js.UndefOr[String] = js.undefined
     
-    var skinColor: js.UndefOr[AsideBackground] = js.native
+    var skinColor: js.UndefOr[AsideBackground] = js.undefined
     
-    var tag: js.UndefOr[DisplayMode] = js.native
+    var tag: js.UndefOr[DisplayMode] = js.undefined
     
     // Example: 'basic'
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var thumbnail: js.UndefOr[BackgroundColor] = js.native
+    var thumbnail: js.UndefOr[BackgroundColor] = js.undefined
     
-    var tipsConfig: js.UndefOr[Crop] = js.native
+    var tipsConfig: js.UndefOr[Crop] = js.undefined
     
-    var tree: js.UndefOr[GoToThumbnail] = js.native
+    var tree: js.UndefOr[GoToThumbnail] = js.undefined
   }
   object ViewerConfig {
     
@@ -341,7 +337,9 @@ object webTwainViewerMod {
   }
   
   @js.native
-  trait WebTwainViewer extends WebTwainAcquire {
+  trait WebTwainViewer
+    extends StObject
+       with WebTwainAcquire {
     
     /**
       * Return or set the background colour of the viewer.

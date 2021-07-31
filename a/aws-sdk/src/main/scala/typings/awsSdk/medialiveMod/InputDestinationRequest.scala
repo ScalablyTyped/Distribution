@@ -2,17 +2,15 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputDestinationRequest extends StObject {
   
   /**
     * A unique name for the location the RTMP stream is being pushed
   to.
     */
-  var StreamName: js.UndefOr[string] = js.native
+  var StreamName: js.UndefOr[string] = js.undefined
 }
 object InputDestinationRequest {
   

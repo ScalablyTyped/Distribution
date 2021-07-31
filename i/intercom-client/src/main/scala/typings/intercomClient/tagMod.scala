@@ -7,28 +7,26 @@ import typings.intercomClient.intercomClientStrings.tagDotlist
 import typings.intercomClient.userMod.UserIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
   
-  @js.native
   trait List extends StObject {
     
-    var pages: Next = js.native
+    var pages: Next
     
-    var tags: js.Array[Tag] = js.native
+    var tags: js.Array[Tag]
     
-    var total_count: Double = js.native
+    var total_count: Double
     
-    var `type`: tagDotlist = js.native
+    var `type`: tagDotlist
   }
   object List {
     
     @scala.inline
-    def apply(pages: Next, tags: js.Array[Tag], total_count: Double, `type`: tagDotlist): List = {
+    def apply(pages: Next, tags: js.Array[Tag], total_count: Double): List = {
       val __obj = js.Dynamic.literal(pages = pages.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], total_count = total_count.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("tag.list")
       __obj.asInstanceOf[List]
     }
     
@@ -53,21 +51,20 @@ object tagMod {
   }
   
   /* Inlined parent std.Partial<intercom-client.intercom-client/Tag.TagIdentifier> */
-  @js.native
   trait Tag extends StObject {
     
-    val id: String = js.native
+    val id: String
     
-    var name: String = js.native
+    var name: String
     
-    val `type`: tag = js.native
+    val `type`: tag
   }
   object Tag {
     
     @scala.inline
-    def apply(id: String, name: String, `type`: tag): Tag = {
+    def apply(id: String, name: String): Tag = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("tag")
       __obj.asInstanceOf[Tag]
     }
     
@@ -85,12 +82,13 @@ object tagMod {
     }
   }
   
-  @js.native
-  trait TagCompanies extends TagOper {
+  trait TagCompanies
+    extends StObject
+       with TagOper {
     
-    var name: String = js.native
+    var name: String
     
-    var users: js.Array[Id] = js.native
+    var users: js.Array[Id]
   }
   object TagCompanies {
     
@@ -114,10 +112,9 @@ object tagMod {
     }
   }
   
-  @js.native
   trait TagIdentifier extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object TagIdentifier {
     
@@ -155,12 +152,13 @@ object tagMod {
     }
   }
   
-  @js.native
-  trait TagUsers extends TagOper {
+  trait TagUsers
+    extends StObject
+       with TagOper {
     
-    var name: String = js.native
+    var name: String
     
-    var users: js.Array[UserIdentifier] = js.native
+    var users: js.Array[UserIdentifier]
   }
   object TagUsers {
     

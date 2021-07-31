@@ -3,19 +3,19 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollViewChangeEvent extends ScrollViewEvent {
+trait ScrollViewChangeEvent
+  extends StObject
+     with ScrollViewEvent {
   
-  var currentPage: js.UndefOr[Double] = js.native
+  var currentPage: js.UndefOr[Double] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[JQuery] = js.native
+  var element: js.UndefOr[JQuery] = js.undefined
   
-  var nextPage: js.UndefOr[Double] = js.native
+  var nextPage: js.UndefOr[Double] = js.undefined
 }
 object ScrollViewChangeEvent {
   

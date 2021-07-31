@@ -5,15 +5,13 @@ import typings.history.mod.Location
 import typings.history.mod.LocationState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PromptProps extends StObject {
   
-  var message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean]) = js.native
+  var message: String | (js.Function2[/* location */ Location[LocationState], /* action */ Action, String | Boolean])
   
-  var when: js.UndefOr[Boolean] = js.native
+  var when: js.UndefOr[Boolean] = js.undefined
 }
 object PromptProps {
   

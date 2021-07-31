@@ -3,11 +3,12 @@ package typings.googleCloudFirestore.FirebaseFirestore
 import typings.std.AsyncIterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CollectionGroup[T] extends Query[T] {
+trait CollectionGroup[T]
+  extends StObject
+     with Query[T] {
   
   /**
     * Partitions a query by returning partition cursors that can be used to run

@@ -9,15 +9,13 @@ import typings.actionsOnGoogle.actionsOnGoogleStrings.telegram_
 import typings.actionsOnGoogle.actionsOnGoogleStrings.viber_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1BaseMessage[TType /* <: Double */] extends StObject {
   
-  var platform: js.UndefOr[facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_] = js.native
+  var platform: js.UndefOr[facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_] = js.undefined
   
-  var `type`: js.UndefOr[TType] = js.native
+  var `type`: js.UndefOr[TType] = js.undefined
 }
 object DialogflowV1BaseMessage {
   
@@ -28,7 +26,7 @@ object DialogflowV1BaseMessage {
   }
   
   @scala.inline
-  implicit class DialogflowV1BaseMessageMutableBuilder[Self <: DialogflowV1BaseMessage[_], TType /* <: Double */] (val x: Self with DialogflowV1BaseMessage[TType]) extends AnyVal {
+  implicit class DialogflowV1BaseMessageMutableBuilder[Self <: DialogflowV1BaseMessage[?], TType /* <: Double */] (val x: Self & DialogflowV1BaseMessage[TType]) extends AnyVal {
     
     @scala.inline
     def setPlatform(value: facebook_ | kik_ | line_ | skype_ | slack_ | telegram_ | viber_): Self = StObject.set(x, "platform", value.asInstanceOf[js.Any])

@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Tokenization options. */
-@js.native
 trait SyntaxOptionsTokens extends StObject {
   
   /** Set this to `true` to return the lemma for each token. */
-  var lemma: js.UndefOr[Boolean] = js.native
+  var lemma: js.UndefOr[Boolean] = js.undefined
   
   /** Set this to `true` to return the part of speech for each token. */
-  var part_of_speech: js.UndefOr[Boolean] = js.native
+  var part_of_speech: js.UndefOr[Boolean] = js.undefined
 }
 object SyntaxOptionsTokens {
   

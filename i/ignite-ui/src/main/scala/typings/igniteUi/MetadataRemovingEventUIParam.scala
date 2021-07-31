@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataRemovingEventUIParam extends StObject {
   
   /**
     * Gets a reference to the data.
     */
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A reference to the dragged element.
     */
-  var targetElement: js.UndefOr[String] = js.native
+  var targetElement: js.UndefOr[String] = js.undefined
 }
 object MetadataRemovingEventUIParam {
   

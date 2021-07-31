@@ -11,45 +11,33 @@ import typings.flowdoc.flowdocStrings.RECT
 import typings.flowdoc.flowdocStrings.SCREEN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Types extends StObject {
   
-  var DIAMOND: typings.flowdoc.flowdocStrings.DIAMOND = js.native
+  var DIAMOND: typings.flowdoc.flowdocStrings.DIAMOND
   
-  var DOCUMENT: typings.flowdoc.flowdocStrings.DOCUMENT = js.native
+  var DOCUMENT: typings.flowdoc.flowdocStrings.DOCUMENT
   
-  var ELLIPSE: typings.flowdoc.flowdocStrings.ELLIPSE = js.native
+  var ELLIPSE: typings.flowdoc.flowdocStrings.ELLIPSE
   
-  var HOTSPOT: typings.flowdoc.flowdocStrings.HOTSPOT = js.native
+  var HOTSPOT: typings.flowdoc.flowdocStrings.HOTSPOT
   
-  var IMAGE: typings.flowdoc.flowdocStrings.IMAGE = js.native
+  var IMAGE: typings.flowdoc.flowdocStrings.IMAGE
   
-  var LAYER: typings.flowdoc.flowdocStrings.LAYER = js.native
+  var LAYER: typings.flowdoc.flowdocStrings.LAYER
   
-  var PAGE: typings.flowdoc.flowdocStrings.PAGE = js.native
+  var PAGE: typings.flowdoc.flowdocStrings.PAGE
   
-  var RECTANGLE: RECT = js.native
+  var RECTANGLE: RECT
   
-  var SCREEN: typings.flowdoc.flowdocStrings.SCREEN = js.native
+  var SCREEN: typings.flowdoc.flowdocStrings.SCREEN
 }
 object Types {
   
   @scala.inline
-  def apply(
-    DIAMOND: DIAMOND,
-    DOCUMENT: DOCUMENT,
-    ELLIPSE: ELLIPSE,
-    HOTSPOT: HOTSPOT,
-    IMAGE: IMAGE,
-    LAYER: LAYER,
-    PAGE: PAGE,
-    RECTANGLE: RECT,
-    SCREEN: SCREEN
-  ): Types = {
-    val __obj = js.Dynamic.literal(DIAMOND = DIAMOND.asInstanceOf[js.Any], DOCUMENT = DOCUMENT.asInstanceOf[js.Any], ELLIPSE = ELLIPSE.asInstanceOf[js.Any], HOTSPOT = HOTSPOT.asInstanceOf[js.Any], IMAGE = IMAGE.asInstanceOf[js.Any], LAYER = LAYER.asInstanceOf[js.Any], PAGE = PAGE.asInstanceOf[js.Any], RECTANGLE = RECTANGLE.asInstanceOf[js.Any], SCREEN = SCREEN.asInstanceOf[js.Any])
+  def apply(): Types = {
+    val __obj = js.Dynamic.literal(DIAMOND = "DIAMOND", DOCUMENT = "DOCUMENT", ELLIPSE = "ELLIPSE", HOTSPOT = "HOTSPOT", IMAGE = "IMAGE", LAYER = "LAYER", PAGE = "PAGE", RECTANGLE = "RECT", SCREEN = "SCREEN")
     __obj.asInstanceOf[Types]
   }
   

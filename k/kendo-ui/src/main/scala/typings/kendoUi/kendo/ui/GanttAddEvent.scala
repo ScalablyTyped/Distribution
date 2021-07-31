@@ -4,15 +4,15 @@ import typings.kendoUi.kendo.data.GanttDependency
 import typings.kendoUi.kendo.data.GanttTask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GanttAddEvent extends GanttEvent {
+trait GanttAddEvent
+  extends StObject
+     with GanttEvent {
   
-  var dependency: js.UndefOr[GanttDependency] = js.native
+  var dependency: js.UndefOr[GanttDependency] = js.undefined
   
-  var task: js.UndefOr[GanttTask] = js.native
+  var task: js.UndefOr[GanttTask] = js.undefined
 }
 object GanttAddEvent {
   

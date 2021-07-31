@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Updates the position of slides in the presentation.
   */
-@js.native
 trait SchemaUpdateSlidesPositionRequest extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaUpdateSlidesPositionRequest extends StObject {
     * arrangement before the move takes place. Must be between zero and the
     * number of slides in the presentation, inclusive.
     */
-  var insertionIndex: js.UndefOr[Double] = js.native
+  var insertionIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The IDs of the slides in the presentation that should be moved. The
     * slides in this list must be in existing presentation order, without
     * duplicates.
     */
-  var slideObjectIds: js.UndefOr[js.Array[String]] = js.native
+  var slideObjectIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaUpdateSlidesPositionRequest {
   

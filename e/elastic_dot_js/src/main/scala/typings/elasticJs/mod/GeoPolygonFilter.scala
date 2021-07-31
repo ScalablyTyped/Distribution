@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoPolygonFilter")
@@ -53,7 +52,7 @@ class GeoPolygonFilter protected () extends StObject {
     list of points.  If passed an array of GeoPoint
     objects it replaces all current values.
     */
-  def points(pointsArray: js.Array[_]): GeoPolygonFilter = js.native
+  def points(pointsArray: js.Array[js.Any]): GeoPolygonFilter = js.native
   
   /*
     Returns the filter object.

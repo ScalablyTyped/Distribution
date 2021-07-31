@@ -7,25 +7,23 @@ import typings.zumly.zumlyStrings.sepia
 import typings.zumly.zumlyStrings.width
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cover extends StObject {
     
     // How new injected view is adapted. String. Default 'width'
-    var cover: height | width = js.native
+    var cover: height | width
     
     // Transition duration. Default '1s'
-    var duration: String = js.native
+    var duration: String
     
     // Transition ease. Default 'ease-in-out'
-    var ease: String = js.native
+    var ease: String
     
     // Effects for background views
-    var effects: js.Array[blur | sepia | saturate] = js.native
+    var effects: js.Array[blur | sepia | saturate]
   }
   object Cover {
     
@@ -55,10 +53,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Render extends StObject {
     
-    def render(): js.Promise[String] = js.native
+    def render(): js.Promise[String]
   }
   object Render {
     

@@ -7,7 +7,6 @@ import typings.officeUiFabricReact.detailsHeaderTypesMod.IDetailsHeaderState
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsHeaderBaseMod {
@@ -137,6 +136,10 @@ object detailsHeaderBaseMod {
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MDetailsHeaderBase(): Unit = js.native
+    
+    /** sets focus into the header */
+    /* CompleteClass */
+    override def focus(): Boolean = js.native
   }
   /* static members */
   object DetailsHeaderBase {

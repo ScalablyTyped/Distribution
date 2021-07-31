@@ -2,20 +2,20 @@ package typings.makeupKeyboardTrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("makeup-keyboard-trap", "refresh")
+  @JSImport("makeup-keyboard-trap", JSImport.Namespace)
   @js.native
-  def refresh(): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("makeup-keyboard-trap", "trap")
-  @js.native
-  def trap(el: js.Any): js.Any = js.native
+  @scala.inline
+  def refresh(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("refresh")().asInstanceOf[js.Any]
   
-  @JSImport("makeup-keyboard-trap", "untrap")
-  @js.native
-  def untrap(): js.Any = js.native
+  @scala.inline
+  def trap(el: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("trap")(el.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def untrap(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("untrap")().asInstanceOf[js.Any]
 }

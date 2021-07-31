@@ -4,20 +4,18 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an input report. */
-@js.native
 trait HidInputReport extends StObject {
   
   /** Retrieves the currently activated Boolean controls for the given HID device. */
-  var activatedBooleanControls: IVectorView[HidBooleanControl] = js.native
+  var activatedBooleanControls: IVectorView[HidBooleanControl]
   
   /** Retrieves the data associated with a given input report. */
-  var data: IBuffer = js.native
+  var data: IBuffer
   
-  var getBooleanControl: js.Any = js.native
+  var getBooleanControl: js.Any
   
   /* unmapped type */
   /**
@@ -25,9 +23,9 @@ trait HidInputReport extends StObject {
     * @param controlDescription A HidBooleanControlDescription object.
     * @return A HidBooleanControl object.
     */
-  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl = js.native
+  def getBooleanControlByDescription(controlDescription: HidBooleanControlDescription): HidBooleanControl
   
-  var getNumericControl: js.Any = js.native
+  var getNumericControl: js.Any
   
   /* unmapped type */
   /**
@@ -35,13 +33,13 @@ trait HidInputReport extends StObject {
     * @param controlDescription A HidNumericControlDescription object.
     * @return A HidNumericControl object.
     */
-  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl = js.native
+  def getNumericControlByDescription(controlDescription: HidNumericControlDescription): HidNumericControl
   
   /** Retrieves the identifier associated with a given input report. */
-  var id: Double = js.native
+  var id: Double
   
   /** Retrieves the recently transitioned Boolean controls for the given HID device. */
-  var transitionedBooleanControls: IVectorView[HidBooleanControl] = js.native
+  var transitionedBooleanControls: IVectorView[HidBooleanControl]
 }
 object HidInputReport {
   

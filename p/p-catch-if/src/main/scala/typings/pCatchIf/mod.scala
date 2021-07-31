@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,9 +34,8 @@ object mod {
   	getData().catch(pCatchIf(UnicornError, pCatchIf(validateMessage, console.error)));
   	```
   	*/
-  @JSImport("p-catch-if", JSImport.Namespace)
-  @js.native
-  def apply[T](predicate: Predicate, catchHandler: js.Function1[/* error */ Error, T]): js.Function1[/* error */ Error, T] = js.native
+  @scala.inline
+  def apply[T](predicate: Predicate, catchHandler: js.Function1[/* error */ Error, T]): js.Function1[/* error */ Error, T] = (^.asInstanceOf[js.Dynamic].apply(predicate.asInstanceOf[js.Any], catchHandler.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* error */ Error, T]]
   
   @JSImport("p-catch-if", JSImport.Namespace)
   @js.native
@@ -57,7 +55,8 @@ object mod {
   
   @js.native
   trait ErrorConstructor
-    extends Instantiable0[Error]
+    extends StObject
+       with Instantiable0[Error]
        with Instantiable1[/* message */ String, Error]
   
   type Predicate = ErrorConstructor | js.Array[ErrorConstructor] | Boolean | (js.Function1[/* error */ Error, Boolean | js.Thenable[Boolean]])

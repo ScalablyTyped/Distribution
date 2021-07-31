@@ -6,7 +6,6 @@ import typings.node.streamMod.Readable
 import typings.oja.anon.Next
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,7 +50,7 @@ object mod {
     
     def `catch`(callback: js.Function1[/* err */ js.Any, Unit]): this.type = js.native
     
-    def consume(topic: String): js.Promise[_] = js.native
+    def consume(topic: String): js.Promise[js.Any] = js.native
     def consume(topic: String, callback: ConsumerCallback): this.type = js.native
     def consume(topic: js.Array[String], callback: ConsumerCallback): this.type = js.native
     def consume(topics: js.Array[String]): js.Promise[StringDictionary[String]] = js.native
@@ -77,7 +76,7 @@ object mod {
   @JSImport("oja", "FunctionAction")
   @js.native
   class FunctionAction protected () extends Action {
-    def this(callback: js.Function1[/* runtime */ FunctionAction, _]) = this()
+    def this(callback: js.Function1[/* runtime */ FunctionAction, js.Any]) = this()
   }
   
   @JSImport("oja", "ReadableStream")
@@ -105,12 +104,11 @@ object mod {
   
   type Primitive = js.UndefOr[Boolean | Double | String | js.Symbol | Null]
   
-  @js.native
   trait State extends StObject {
     
-    var pending: js.Array[String] = js.native
+    var pending: js.Array[String]
     
-    var queue: js.Array[String] = js.native
+    var queue: js.Array[String]
   }
   object State {
     

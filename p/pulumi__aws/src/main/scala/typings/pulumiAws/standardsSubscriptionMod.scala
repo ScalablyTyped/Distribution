@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object standardsSubscriptionMod {
@@ -33,6 +32,10 @@ object standardsSubscriptionMod {
   /* static members */
   object StandardsSubscription {
     
+    @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing StandardsSubscription resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,35 +45,29 @@ object standardsSubscriptionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID]): StandardsSubscription = js.native
-    @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): StandardsSubscription = js.native
-    @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StandardsSubscriptionState): StandardsSubscription = js.native
-    @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: StandardsSubscriptionState, opts: CustomResourceOptions): StandardsSubscription = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StandardsSubscriptionState): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: StandardsSubscriptionState, opts: CustomResourceOptions): StandardsSubscription = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[StandardsSubscription]
     
     /**
       * Returns true if the given object is an instance of StandardsSubscription.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/securityhub/standardsSubscription", "StandardsSubscription.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/standardsSubscription.StandardsSubscription */ Boolean]
   }
   
-  @js.native
   trait StandardsSubscriptionArgs extends StObject {
     
     /**
       * The ARN of a standard - see below.
       */
-    val standardsArn: Input[String] = js.native
+    val standardsArn: Input[String]
   }
   object StandardsSubscriptionArgs {
     
@@ -88,13 +85,12 @@ object standardsSubscriptionMod {
     }
   }
   
-  @js.native
   trait StandardsSubscriptionState extends StObject {
     
     /**
       * The ARN of a standard - see below.
       */
-    val standardsArn: js.UndefOr[Input[String]] = js.native
+    val standardsArn: js.UndefOr[Input[String]] = js.undefined
   }
   object StandardsSubscriptionState {
     

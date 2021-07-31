@@ -8,7 +8,6 @@ import typings.cordovaPluginCamera.anon.DATAURL
 import typings.cordovaPluginCamera.anon.JPEG
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -65,108 +64,68 @@ object global {
   @JSGlobal("CameraPopoverOptions")
   @js.native
   class CameraPopoverOptions ()
-    extends typings.cordovaPluginCamera.CameraPopoverOptions {
+    extends StObject
+       with typings.cordovaPluginCamera.CameraPopoverOptions {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, width: Double) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], width: js.UndefOr[scala.Nothing], height: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double) = this()
-    def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double) = this()
+    def this(x: Double, y: Unit, width: Double) = this()
+    def this(x: Unit, y: Double, width: Double) = this()
+    def this(x: Unit, y: Unit, width: Double) = this()
     def this(x: Double, y: Double, width: Double, height: Double) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double,
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: Double,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: Double,
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: js.UndefOr[scala.Nothing],
-      y: Double,
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      arrowDir: Double
-    ) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double, arrowDir: Double) = this()
-    def this(
-      x: Double,
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: Double,
-      y: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      arrowDir: Double
-    ) = this()
-    def this(
-      x: Double,
-      y: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      arrowDir: Double
-    ) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double, arrowDir: Double) = this()
-    def this(
-      x: Double,
-      y: Double,
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      arrowDir: Double
-    ) = this()
-    def this(x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double, arrowDir: Double) = this()
-    def this(x: Double, y: Double, width: Double, height: js.UndefOr[scala.Nothing], arrowDir: Double) = this()
+    def this(x: Double, y: Double, width: Unit, height: Double) = this()
+    def this(x: Double, y: Unit, width: Double, height: Double) = this()
+    def this(x: Double, y: Unit, width: Unit, height: Double) = this()
+    def this(x: Unit, y: Double, width: Double, height: Double) = this()
+    def this(x: Unit, y: Double, width: Unit, height: Double) = this()
+    def this(x: Unit, y: Unit, width: Double, height: Double) = this()
+    def this(x: Unit, y: Unit, width: Unit, height: Double) = this()
     def this(x: Double, y: Double, width: Double, height: Double, arrowDir: Double) = this()
+    def this(x: Double, y: Double, width: Double, height: Unit, arrowDir: Double) = this()
+    def this(x: Double, y: Double, width: Unit, height: Double, arrowDir: Double) = this()
+    def this(x: Double, y: Double, width: Unit, height: Unit, arrowDir: Double) = this()
+    def this(x: Double, y: Unit, width: Double, height: Double, arrowDir: Double) = this()
+    def this(x: Double, y: Unit, width: Double, height: Unit, arrowDir: Double) = this()
+    def this(x: Double, y: Unit, width: Unit, height: Double, arrowDir: Double) = this()
+    def this(x: Double, y: Unit, width: Unit, height: Unit, arrowDir: Double) = this()
+    def this(x: Unit, y: Double, width: Double, height: Double, arrowDir: Double) = this()
+    def this(x: Unit, y: Double, width: Double, height: Unit, arrowDir: Double) = this()
+    def this(x: Unit, y: Double, width: Unit, height: Double, arrowDir: Double) = this()
+    def this(x: Unit, y: Double, width: Unit, height: Unit, arrowDir: Double) = this()
+    def this(x: Unit, y: Unit, width: Double, height: Double, arrowDir: Double) = this()
+    def this(x: Unit, y: Unit, width: Double, height: Unit, arrowDir: Double) = this()
+    def this(x: Unit, y: Unit, width: Unit, height: Double, arrowDir: Double) = this()
+    def this(x: Unit, y: Unit, width: Unit, height: Unit, arrowDir: Double) = this()
+    
+    /**
+      * Direction the arrow on the popover should point. Defined in Camera.PopoverArrowDirection
+      * Matches iOS UIPopoverArrowDirection constants.
+      *      ARROW_UP : 1,        
+      *      ARROW_DOWN : 2,
+      *      ARROW_LEFT : 4,
+      *      ARROW_RIGHT : 8,
+      *      ARROW_ANY : 15
+      */
+    /* CompleteClass */
+    var arrowDir: Double = js.native
+    
+    /* CompleteClass */
+    var height: Double = js.native
+    
+    /* CompleteClass */
+    var popoverHeight: Double = js.native
+    
+    /* CompleteClass */
+    var popoverWidth: Double = js.native
+    
+    /* CompleteClass */
+    var width: Double = js.native
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
   }
 }

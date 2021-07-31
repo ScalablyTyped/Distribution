@@ -2,95 +2,93 @@ package typings.xmlbuilder.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the options used while creating an XML document with the `create`
   * function.
   */
-@js.native
 trait CreateOptions extends StObject {
   
   /**
     * Encoding declaration, e.g. `UTF-8`
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * Whether XML declaration and doctype will be included
     */
-  var headless: js.UndefOr[Boolean] = js.native
+  var headless: js.UndefOr[Boolean] = js.undefined
   
   /** 
     * Whether decorator strings will be ignored when converting JS 
     * objects
     */
-  var ignoreDecorators: js.UndefOr[Boolean] = js.native
+  var ignoreDecorators: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A character to replace invalid characters in all values. This also
     * disables character validation.
     */
-  var invalidCharReplacement: js.UndefOr[String] = js.native
+  var invalidCharReplacement: js.UndefOr[String] = js.undefined
   
   /**
     * Whether attributes with `null` values will be kept or ignored
     */
-  var keepNullAttributes: js.UndefOr[Boolean] = js.native
+  var keepNullAttributes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether nodes with `null` values will be kept or ignored
     */
-  var keepNullNodes: js.UndefOr[Boolean] = js.native
+  var keepNullNodes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether existing html entities are encoded
     */
-  var noDoubleEncoding: js.UndefOr[Boolean] = js.native
+  var noDoubleEncoding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether values will be validated and escaped or returned as is
     */
-  var noValidation: js.UndefOr[Boolean] = js.native
+  var noValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Public identifier of the DTD
     */
-  var pubID: js.UndefOr[String] = js.native
+  var pubID: js.UndefOr[String] = js.undefined
   
   /** 
     * Whether array items are created as separate nodes when passed 
     * as an object value
     */
-  var separateArrayItems: js.UndefOr[Boolean] = js.native
+  var separateArrayItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Standalone document declaration: `true` or `false`
     */
-  var standalone: js.UndefOr[Boolean] = js.native
+  var standalone: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A set of functions to use for converting values to strings
     */
-  var stringify: js.UndefOr[XMLStringifier] = js.native
+  var stringify: js.UndefOr[XMLStringifier] = js.undefined
   
   /**
     * System identifier of the DTD
     */
-  var sysID: js.UndefOr[String] = js.native
+  var sysID: js.UndefOr[String] = js.undefined
   
   /**
     * A version number string, e.g. `1.0`
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /** 
     * The default XML writer to use for converting nodes to string. 
     * If the default writer is not set, the built-in `XMLStringWriter` 
     * will be used instead. 
     */
-  var writer: js.UndefOr[XMLWriter] = js.native
+  var writer: js.UndefOr[XMLWriter] = js.undefined
 }
 object CreateOptions {
   

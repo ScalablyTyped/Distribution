@@ -11,8 +11,8 @@ The lodash method `_.includes` exported as a module.
 | Full name          | lodash.includes |
 | Keywords           | lodash-modularized, includes |
 | # releases         | 0 |
-| # dependents       | 250 |
-| # downloads        | 149374679 |
+| # dependents       | 261 |
+| # downloads        | 195989842 |
 | # stars            | 0 |
 
 ## Links

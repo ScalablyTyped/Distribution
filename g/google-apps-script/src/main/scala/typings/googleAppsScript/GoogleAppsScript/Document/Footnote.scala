@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,10 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * document structure, see the guide to
   * extending Google Docs.
   */
-@js.native
-trait Footnote extends Element {
+trait Footnote
+  extends StObject
+     with Element {
   
-  def getFootnoteContents(): FootnoteSection = js.native
+  def getFootnoteContents(): FootnoteSection
 }
 object Footnote {
   

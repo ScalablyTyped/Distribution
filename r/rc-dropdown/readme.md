@@ -10,9 +10,9 @@ dropdown ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-dropdown |
 | Keywords           | react, react-dropdown |
-| # releases         | 12 |
-| # dependents       | 223 |
-| # downloads        | 16209897 |
+| # releases         | 10 |
+| # dependents       | 237 |
+| # downloads        | 21123403 |
 | # stars            | 2 |
 
 ## Links

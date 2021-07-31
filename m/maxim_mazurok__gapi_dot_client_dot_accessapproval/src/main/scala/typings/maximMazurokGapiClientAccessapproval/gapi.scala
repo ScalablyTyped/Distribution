@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientAccessapproval.anon.Key
 import typings.maximMazurokGapiClientAccessapproval.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -18,14 +17,13 @@ object gapi {
     
     object accessapproval {
       
-      @js.native
       trait AccessApprovalSettings extends StObject {
         
         /**
           * Output only. This field is read only (not settable via UpdateAccessAccessApprovalSettings method). If the field is true, that indicates that at least one service is enrolled for
           * Access Approval in one or more ancestors of the Project or Folder (this field will always be unset for the organization since organizations do not have ancestors).
           */
-        var enrolledAncestor: js.UndefOr[Boolean] = js.native
+        var enrolledAncestor: js.UndefOr[Boolean] = js.undefined
         
         /**
           * A list of Google Cloud Services for which the given resource has Access Approval enrolled. Access requests for the resource given by name against any of these services contained
@@ -33,19 +31,19 @@ object gapi {
           * can only be done on an all or nothing basis. If a cloud_product is repeated in this list, the first entry will be honored and all following entries will be discarded. A maximum of
           * 10 enrolled services will be enforced, to be expanded as the set of supported services is expanded.
           */
-        var enrolledServices: js.UndefOr[js.Array[EnrolledService]] = js.native
+        var enrolledServices: js.UndefOr[js.Array[EnrolledService]] = js.undefined
         
         /**
           * The resource name of the settings. Format is one of: * "projects/{project}/accessApprovalSettings" * "folders/{folder}/accessApprovalSettings" *
           * "organizations/{organization}/accessApprovalSettings"
           */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /**
           * A list of email addresses to which notifications relating to approval requests should be sent. Notifications relating to a resource will be sent to all emails in the settings of
           * ancestor resources of that resource. A maximum of 50 email addresses are allowed.
           */
-        var notificationEmails: js.UndefOr[js.Array[String]] = js.native
+        var notificationEmails: js.UndefOr[js.Array[String]] = js.undefined
       }
       object AccessApprovalSettings {
         
@@ -90,7 +88,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait AccessLocations extends StObject {
         
         /**
@@ -98,14 +95,14 @@ object gapi {
           * may refer refer to a region code instead of a country code. Possible Region Codes: * ASI: Asia * EUR: Europe * OCE: Oceania * AFR: Africa * NAM: North America * SAM: South America *
           * ANT: Antarctica * ANY: Any location
           */
-        var principalOfficeCountry: js.UndefOr[String] = js.native
+        var principalOfficeCountry: js.UndefOr[String] = js.undefined
         
         /**
           * Physical location of the principal at the time of the access. A two-letter country code (ISO 3166-1 alpha-2), such as "US", "DE" or "GB" or a region code. In some limited situations
           * Google systems may refer refer to a region code instead of a country code. Possible Region Codes: * ASI: Asia * EUR: Europe * OCE: Oceania * AFR: Africa * NAM: North America * SAM:
           * South America * ANT: Antarctica * ANY: Any location
           */
-        var principalPhysicalLocationCountry: js.UndefOr[String] = js.native
+        var principalPhysicalLocationCountry: js.UndefOr[String] = js.undefined
       }
       object AccessLocations {
         
@@ -132,14 +129,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait AccessReason extends StObject {
         
         /** More detail about certain reason types. See comments for each type above. */
-        var detail: js.UndefOr[String] = js.native
+        var detail: js.UndefOr[String] = js.undefined
         
         /** Type of access justification. */
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
       }
       object AccessReason {
         
@@ -166,39 +162,38 @@ object gapi {
         }
       }
       
-      @js.native
       trait ApprovalRequest extends StObject {
         
         /** Access was approved. */
-        var approve: js.UndefOr[ApproveDecision] = js.native
+        var approve: js.UndefOr[ApproveDecision] = js.undefined
         
         /** The request was dismissed. */
-        var dismiss: js.UndefOr[DismissDecision] = js.native
+        var dismiss: js.UndefOr[DismissDecision] = js.undefined
         
         /** The resource name of the request. Format is "{projects|folders|organizations}/{id}/approvalRequests/{approval_request}". */
-        var name: js.UndefOr[String] = js.native
+        var name: js.UndefOr[String] = js.undefined
         
         /** The time at which approval was requested. */
-        var requestTime: js.UndefOr[String] = js.native
+        var requestTime: js.UndefOr[String] = js.undefined
         
         /** The requested expiration for the approval. If the request is approved, access will be granted from the time of approval until the expiration time. */
-        var requestedExpiration: js.UndefOr[String] = js.native
+        var requestedExpiration: js.UndefOr[String] = js.undefined
         
         /** The locations for which approval is being requested. */
-        var requestedLocations: js.UndefOr[AccessLocations] = js.native
+        var requestedLocations: js.UndefOr[AccessLocations] = js.undefined
         
         /** The justification for which approval is being requested. */
-        var requestedReason: js.UndefOr[AccessReason] = js.native
+        var requestedReason: js.UndefOr[AccessReason] = js.undefined
         
         /**
           * The resource for which approval is being requested. The format of the resource name is defined at https://cloud.google.com/apis/design/resource_names. The resource name here may
           * either be a "full" resource name (e.g. "//library.googleapis.com/shelves/shelf1/books/book2") or a "relative" resource name (e.g. "shelves/shelf1/books/book2") as described in the
           * resource name specification.
           */
-        var requestedResourceName: js.UndefOr[String] = js.native
+        var requestedResourceName: js.UndefOr[String] = js.undefined
         
         /** Properties related to the resource represented by requested_resource_name. */
-        var requestedResourceProperties: js.UndefOr[ResourceProperties] = js.native
+        var requestedResourceProperties: js.UndefOr[ResourceProperties] = js.undefined
       }
       object ApprovalRequest {
         
@@ -296,11 +291,10 @@ object gapi {
         def list(request: Fields): Request[ListApprovalRequestsResponse] = js.native
       }
       
-      @js.native
       trait ApproveApprovalRequestMessage extends StObject {
         
         /** The expiration time of this approval. */
-        var expireTime: js.UndefOr[String] = js.native
+        var expireTime: js.UndefOr[String] = js.undefined
       }
       object ApproveApprovalRequestMessage {
         
@@ -321,14 +315,13 @@ object gapi {
         }
       }
       
-      @js.native
       trait ApproveDecision extends StObject {
         
         /** The time at which approval was granted. */
-        var approveTime: js.UndefOr[String] = js.native
+        var approveTime: js.UndefOr[String] = js.undefined
         
         /** The time at which the approval expires. */
-        var expireTime: js.UndefOr[String] = js.native
+        var expireTime: js.UndefOr[String] = js.undefined
       }
       object ApproveDecision {
         
@@ -356,20 +349,18 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait DismissApprovalRequestMessage extends StObject
       
-      @js.native
       trait DismissDecision extends StObject {
         
         /** The time at which the approval request was dismissed. */
-        var dismissTime: js.UndefOr[String] = js.native
+        var dismissTime: js.UndefOr[String] = js.undefined
         
         /**
           * This field will be true if the ApprovalRequest was implcitly dismissed due to inaction by the access approval approvers (the request is not acted on by the approvers before the
           * exiration time).
           */
-        var `implicit`: js.UndefOr[Boolean] = js.native
+        var `implicit`: js.UndefOr[Boolean] = js.undefined
       }
       object DismissDecision {
         
@@ -397,10 +388,8 @@ object gapi {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait Empty extends StObject
       
-      @js.native
       trait EnrolledService extends StObject {
         
         /**
@@ -411,10 +400,10 @@ object gapi {
           * the XXX.googleapis.com will be translated to the associated product name ('all', 'App Engine', etc.). Note: 'all' will enroll the resource in all products supported at both 'GA' and
           * 'Preview' levels. More information about levels of support is available at https://cloud.google.com/access-approval/docs/supported-services
           */
-        var cloudProduct: js.UndefOr[String] = js.native
+        var cloudProduct: js.UndefOr[String] = js.undefined
         
         /** The enrollment level of the service. */
-        var enrollmentLevel: js.UndefOr[String] = js.native
+        var enrollmentLevel: js.UndefOr[String] = js.undefined
       }
       object EnrolledService {
         
@@ -463,14 +452,13 @@ object gapi {
         def updateAccessApprovalSettings(request: Name, body: AccessApprovalSettings): Request[AccessApprovalSettings] = js.native
       }
       
-      @js.native
       trait ListApprovalRequestsResponse extends StObject {
         
         /** Approval request details. */
-        var approvalRequests: js.UndefOr[js.Array[ApprovalRequest]] = js.native
+        var approvalRequests: js.UndefOr[js.Array[ApprovalRequest]] = js.undefined
         
         /** Token to retrieve the next page of results, or empty if there are no more. */
-        var nextPageToken: js.UndefOr[String] = js.native
+        var nextPageToken: js.UndefOr[String] = js.undefined
       }
       object ListApprovalRequestsResponse {
         
@@ -544,11 +532,10 @@ object gapi {
         def updateAccessApprovalSettings(request: Name, body: AccessApprovalSettings): Request[AccessApprovalSettings] = js.native
       }
       
-      @js.native
       trait ResourceProperties extends StObject {
         
         /** Whether an approval will exclude the descendants of the resource being requested. */
-        var excludesDescendants: js.UndefOr[Boolean] = js.native
+        var excludesDescendants: js.UndefOr[Boolean] = js.undefined
       }
       object ResourceProperties {
         

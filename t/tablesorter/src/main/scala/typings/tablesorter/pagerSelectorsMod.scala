@@ -5,53 +5,51 @@ import typings.tablesorter.mod.global.HTMLElement
 import typings.tablesorter.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagerSelectorsMod {
   
-  @js.native
   trait PagerSelectors extends StObject {
     
     /**
       * The selector for querying the pager-container.
       */
-    var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var container: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to jump to the first page.
       */
-    var first: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var first: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the dropdown-control to jump to a specific page.
       */
-    var gotoPage: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var gotoPage: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to jump to the last page.
       */
-    var last: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var last: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to jump to the next page.
       */
-    var next: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var next: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the container to print the output to.
       */
-    var pageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var pageDisplay: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to set the page-size.
       */
-    var pageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var pageSize: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
     
     /**
       * The selector for querying the control to jump to the previous page.
       */
-    var prev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.native
+    var prev: js.UndefOr[Selector | JQuery[HTMLElement]] = js.undefined
   }
   object PagerSelectors {
     

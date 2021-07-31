@@ -5,29 +5,27 @@ import typings.node.streamMod.Transform
 import typings.through.mod.ThroughStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ndjson", "parse")
+  @JSImport("ndjson", JSImport.Namespace)
   @js.native
-  def parse(): ThroughStream = js.native
-  @JSImport("ndjson", "parse")
-  @js.native
-  def parse(opts: ParseOptions): ThroughStream = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ndjson", "stringify")
-  @js.native
-  def stringify(): Transform = js.native
-  @JSImport("ndjson", "stringify")
-  @js.native
-  def stringify(opts: DuplexOptions): Transform = js.native
+  @scala.inline
+  def parse(): ThroughStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")().asInstanceOf[ThroughStream]
+  @scala.inline
+  def parse(opts: ParseOptions): ThroughStream = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(opts.asInstanceOf[js.Any]).asInstanceOf[ThroughStream]
   
-  @js.native
+  @scala.inline
+  def stringify(): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")().asInstanceOf[Transform]
+  @scala.inline
+  def stringify(opts: DuplexOptions): Transform = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(opts.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   trait ParseOptions extends StObject {
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object ParseOptions {
     

@@ -2,13 +2,11 @@ package typings.minappEnv.WXNS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRequestTask extends StObject {
   
-  def abort(): Unit = js.native
+  def abort(): Unit
 }
 object IRequestTask {
   

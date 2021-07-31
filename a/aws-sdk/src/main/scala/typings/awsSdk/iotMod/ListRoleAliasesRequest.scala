@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRoleAliasesRequest extends StObject {
   
   /**
     * Return the list of role aliases in ascending alphabetical order.
     */
-  var ascendingOrder: js.UndefOr[AscendingOrder] = js.native
+  var ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined
   
   /**
     * A marker used to get the next set of results.
     */
-  var marker: js.UndefOr[Marker] = js.native
+  var marker: js.UndefOr[Marker] = js.undefined
   
   /**
     * The maximum number of results to return at one time.
     */
-  var pageSize: js.UndefOr[PageSize] = js.native
+  var pageSize: js.UndefOr[PageSize] = js.undefined
 }
 object ListRoleAliasesRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDevicesRequest extends StObject {
   
   /**
     * The access tokens for the request to list devices.
     */
-  var AccessToken: TokenModelType = js.native
+  var AccessToken: TokenModelType
   
   /**
     * The limit of the device request.
     */
-  var Limit: js.UndefOr[QueryLimitType] = js.native
+  var Limit: js.UndefOr[QueryLimitType] = js.undefined
   
   /**
     * The pagination token for the list request.
     */
-  var PaginationToken: js.UndefOr[SearchPaginationTokenType] = js.native
+  var PaginationToken: js.UndefOr[SearchPaginationTokenType] = js.undefined
 }
 object ListDevicesRequest {
   

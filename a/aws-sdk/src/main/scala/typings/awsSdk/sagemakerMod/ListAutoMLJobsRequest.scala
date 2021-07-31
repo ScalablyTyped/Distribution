@@ -2,61 +2,59 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAutoMLJobsRequest extends StObject {
   
   /**
     * Request a list of jobs, using a filter for time.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Request a list of jobs, using a filter for time.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Request a list of jobs, using a filter for time.
     */
-  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Request a list of jobs, using a filter for time.
     */
-  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.native
+  var LastModifiedTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Request a list of jobs up to a specified limit.
     */
-  var MaxResults: js.UndefOr[AutoMLMaxResults] = js.native
+  var MaxResults: js.UndefOr[AutoMLMaxResults] = js.undefined
   
   /**
     * Request a list of jobs, using a search filter for name.
     */
-  var NameContains: js.UndefOr[AutoMLNameContains] = js.native
+  var NameContains: js.UndefOr[AutoMLNameContains] = js.undefined
   
   /**
     * If the previous response was truncated, you receive this token. Use it in your next request to receive the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The parameter by which to sort the results. The default is AutoMLJobName.
     */
-  var SortBy: js.UndefOr[AutoMLSortBy] = js.native
+  var SortBy: js.UndefOr[AutoMLSortBy] = js.undefined
   
   /**
     * The sort order for the results. The default is Descending.
     */
-  var SortOrder: js.UndefOr[AutoMLSortOrder] = js.native
+  var SortOrder: js.UndefOr[AutoMLSortOrder] = js.undefined
   
   /**
     * Request a list of jobs, using a filter for status.
     */
-  var StatusEquals: js.UndefOr[AutoMLJobStatus] = js.native
+  var StatusEquals: js.UndefOr[AutoMLJobStatus] = js.undefined
 }
 object ListAutoMLJobsRequest {
   

@@ -3,29 +3,29 @@ package typings.awsSdkCredentialProviderImds
 import typings.awsSdkTypes.credentialsMod.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imdsCredentialsMod {
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials", "fromImdsCredentials")
+  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials", JSImport.Namespace)
   @js.native
-  def fromImdsCredentials(creds: ImdsCredentials): Credentials = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials", "isImdsCredentials")
-  @js.native
-  def isImdsCredentials(arg: js.Any): /* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean = js.native
+  @scala.inline
+  def fromImdsCredentials(creds: ImdsCredentials): Credentials = ^.asInstanceOf[js.Dynamic].applyDynamic("fromImdsCredentials")(creds.asInstanceOf[js.Any]).asInstanceOf[Credentials]
   
-  @js.native
+  @scala.inline
+  def isImdsCredentials(arg: js.Any): /* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isImdsCredentials")(arg.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/ImdsCredentials.ImdsCredentials */ Boolean]
+  
   trait ImdsCredentials extends StObject {
     
-    var AccessKeyId: String = js.native
+    var AccessKeyId: String
     
-    var Expiration: String = js.native
+    var Expiration: String
     
-    var SecretAccessKey: String = js.native
+    var SecretAccessKey: String
     
-    var Token: String = js.native
+    var Token: String
   }
   object ImdsCredentials {
     

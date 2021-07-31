@@ -2,46 +2,44 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableMetadata extends StObject {
   
   /**
     * A list of the columns in the table.
     */
-  var Columns: js.UndefOr[ColumnList] = js.native
+  var Columns: js.UndefOr[ColumnList] = js.undefined
   
   /**
     * The time that the table was created.
     */
-  var CreateTime: js.UndefOr[Timestamp] = js.native
+  var CreateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time the table was accessed.
     */
-  var LastAccessTime: js.UndefOr[Timestamp] = js.native
+  var LastAccessTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The name of the table.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * A set of custom key/value pairs for table properties.
     */
-  var Parameters: js.UndefOr[ParametersMap] = js.native
+  var Parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * A list of the partition keys in the table.
     */
-  var PartitionKeys: js.UndefOr[ColumnList] = js.native
+  var PartitionKeys: js.UndefOr[ColumnList] = js.undefined
   
   /**
     * The type of table. In Athena, only EXTERNAL_TABLE is supported.
     */
-  var TableType: js.UndefOr[TableTypeString] = js.native
+  var TableType: js.UndefOr[TableTypeString] = js.undefined
 }
 object TableMetadata {
   

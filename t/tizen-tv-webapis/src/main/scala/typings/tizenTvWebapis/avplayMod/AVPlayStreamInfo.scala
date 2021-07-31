@@ -5,17 +5,15 @@ import typings.tizenTvWebapis.tizenTvWebapisStrings.TEXT
 import typings.tizenTvWebapis.tizenTvWebapisStrings.VIDEO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AVPlayStreamInfo extends StObject {
   
-  var extra_info: String = js.native
+  var extra_info: String
   
-  var index: Double = js.native
+  var index: Double
   
-  var `type`: AVPlayStreamType | VIDEO | AUDIO | TEXT = js.native
+  var `type`: AVPlayStreamType | VIDEO | AUDIO | TEXT
 }
 object AVPlayStreamInfo {
   

@@ -10,8 +10,8 @@ ECMAScript code generator
 | Full name          | escodegen |
 | Keywords           | - |
 | # releases         | 10 |
-| # dependents       | 1200 |
-| # downloads        | 577609652 |
+| # dependents       | 1251 |
+| # downloads        | 696992974 |
 | # stars            | 19 |
 
 ## Links

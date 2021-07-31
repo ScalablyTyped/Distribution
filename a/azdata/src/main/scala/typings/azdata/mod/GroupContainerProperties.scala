@@ -2,13 +2,11 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupContainerProperties extends StObject {
   
-  var collapsed: Boolean = js.native
+  var collapsed: Boolean
 }
 object GroupContainerProperties {
   

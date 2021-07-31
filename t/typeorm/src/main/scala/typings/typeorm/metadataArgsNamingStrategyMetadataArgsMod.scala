@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsNamingStrategyMetadataArgsMod {
   
-  @js.native
   trait NamingStrategyMetadataArgs extends StObject {
     
     /**
       * Strategy name.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * Class to which this column is applied.
       */
-    val target: js.Function = js.native
+    val target: js.Function
   }
   object NamingStrategyMetadataArgs {
     

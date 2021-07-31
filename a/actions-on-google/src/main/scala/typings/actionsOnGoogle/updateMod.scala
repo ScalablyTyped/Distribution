@@ -4,7 +4,6 @@ import typings.actionsOnGoogle.permissionPermissionMod.Permission
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2Argument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateMod {
@@ -19,7 +18,6 @@ object updateMod {
     def this(options: UpdatePermissionOptions) = this()
   }
   
-  @js.native
   trait UpdatePermissionOptions extends StObject {
     
     /**
@@ -27,13 +25,13 @@ object updateMod {
       * These can be retrieved using {@link Arguments#get|conv.arguments.get}.
       * @public
       */
-    var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.native
+    var arguments: js.UndefOr[js.Array[GoogleActionsV2Argument]] = js.undefined
     
     /**
       * The Dialogflow/Actions SDK intent name to be triggered when the update is received.
       * @public
       */
-    var intent: String = js.native
+    var intent: String
   }
   object UpdatePermissionOptions {
     

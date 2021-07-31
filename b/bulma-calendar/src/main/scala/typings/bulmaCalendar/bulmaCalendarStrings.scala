@@ -3,7 +3,6 @@ package typings.bulmaCalendar
 import typings.bulmaCalendar.mod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bulmaCalendarStrings {
@@ -34,7 +33,9 @@ object bulmaCalendarStrings {
   def dialog: dialog = "dialog".asInstanceOf[dialog]
   
   @js.native
-  sealed trait hide extends EventType
+  sealed trait hide
+    extends StObject
+       with EventType
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   
@@ -44,17 +45,23 @@ object bulmaCalendarStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait select extends EventType
+  sealed trait select
+    extends StObject
+       with EventType
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait selectColonstart extends EventType
+  sealed trait selectColonstart
+    extends StObject
+       with EventType
   @scala.inline
   def selectColonstart: selectColonstart = "select:start".asInstanceOf[selectColonstart]
   
   @js.native
-  sealed trait show extends EventType
+  sealed trait show
+    extends StObject
+       with EventType
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   

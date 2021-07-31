@@ -2,41 +2,39 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Maneuver extends StObject {
   
   /**
     * Number between 0 and 360 indicating the clockwise angle from true north to the direction of travel right after the maneuver
     */
-  var bearing_after: Double = js.native
+  var bearing_after: Double
   
   /**
     * Number between 0 and 360 indicating the clockwise angle from true north to the direction of travel right before the maneuver
     */
-  var bearing_before: Double = js.native
+  var bearing_before: Double
   
   /**
     * A human-readable instruction of how to execute the returned maneuver
     */
-  var instruction: String = js.native
+  var instruction: String
   
   /**
     * Array of [ longitude, latitude ] coordinates for the point of the maneuver
     */
-  var location: js.Array[Double] = js.native
+  var location: js.Array[Double]
   
   /**
     * Optional String indicating the direction change of the maneuver
     */
-  var modifier: js.UndefOr[ManeuverModifier] = js.native
+  var modifier: js.UndefOr[ManeuverModifier] = js.undefined
   
   /**
     * String indicating the type of maneuver
     */
-  var `type`: ManeuverType = js.native
+  var `type`: ManeuverType
 }
 object Maneuver {
   

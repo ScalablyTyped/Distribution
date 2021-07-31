@@ -2,12 +2,13 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Overlay
 @js.native
-trait OverlayView extends KVO {
+trait OverlayView
+  extends StObject
+     with KVO {
   
   def draw(): Unit = js.native
   

@@ -10,9 +10,9 @@ Remote debugging for mobx.
 | ------------------ | :-------------: |
 | Full name          | mobx-remotedev |
 | Keywords           | mobx, devtools, flux, react, hot reloading, time travel, live edit |
-| # releases         | 8 |
+| # releases         | 7 |
 | # dependents       | 3 |
-| # downloads        | 107659 |
+| # downloads        | 104124 |
 | # stars            | 0 |
 
 ## Links

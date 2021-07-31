@@ -5,23 +5,21 @@ import typings.rtpParser.rtpParserStrings.JPEG
 import typings.rtpParser.rtpParserStrings.V
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var clockRate: `90000` = js.native
+  var clockRate: `90000`
   
-  var mediaType: V = js.native
+  var mediaType: V
   
-  var name: JPEG = js.native
+  var name: JPEG
 }
 object `2` {
   
   @scala.inline
-  def apply(clockRate: `90000`, mediaType: V, name: JPEG): `2` = {
-    val __obj = js.Dynamic.literal(clockRate = clockRate.asInstanceOf[js.Any], mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(): `2` = {
+    val __obj = js.Dynamic.literal(clockRate = 90000, mediaType = "V", name = "JPEG")
     __obj.asInstanceOf[`2`]
   }
   

@@ -2,13 +2,13 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ASPxDesignerElementSerializationInfoWithBindings extends ASPxDesignerElementSerializationInfo {
+trait ASPxDesignerElementSerializationInfoWithBindings
+  extends StObject
+     with ASPxDesignerElementSerializationInfo {
   
-  var bindingName: String = js.native
+  var bindingName: String
 }
 object ASPxDesignerElementSerializationInfoWithBindings {
   
@@ -24,7 +24,7 @@ object ASPxDesignerElementSerializationInfoWithBindings {
     link: Boolean,
     modelName: String,
     propertyName: String,
-    validationRules: js.Array[_],
+    validationRules: js.Array[js.Any],
     valuesArray: js.Array[ASPxDesignerElementEditorItem],
     visible: js.Any
   ): ASPxDesignerElementSerializationInfoWithBindings = {

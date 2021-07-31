@@ -4,7 +4,6 @@ import typings.std.CSSStyleDeclaration
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object attrMod {
@@ -19,21 +18,18 @@ object attrMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.changeElementStyleAttribute")
-    @js.native
-    def changeElementStyleAttribute(obj: HTMLElement, attrName: String, newValue: String): Unit = js.native
+    @scala.inline
+    def changeElementStyleAttribute(obj: HTMLElement, attrName: String, newValue: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changeElementStyleAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.emptyObject")
     @js.native
     val emptyObject: js.Any = js.native
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.getElementAttribute")
-    @js.native
-    def getElementAttribute(obj: HTMLElement, attrName: String): String | Null = js.native
+    @scala.inline
+    def getElementAttribute(obj: HTMLElement, attrName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.getStyleAttribute")
-    @js.native
-    def getStyleAttribute(obj: CSSStyleDeclaration, attrName: String): String | Null = js.native
+    @scala.inline
+    def getStyleAttribute(obj: CSSStyleDeclaration, attrName: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyleAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[String | Null]
     
     @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.isAttributeExists")
     @js.native
@@ -47,17 +43,14 @@ object attrMod {
     @scala.inline
     def isExistsAttributeInElement_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isExistsAttributeInElement")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.removeElementAttribute")
-    @js.native
-    def removeElementAttribute(obj: HTMLElement, attrName: String): Unit = js.native
+    @scala.inline
+    def removeElementAttribute(obj: HTMLElement, attrName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeElementAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.removeStyleAttribute")
-    @js.native
-    def removeStyleAttribute(obj: CSSStyleDeclaration, attrName: String): Unit = js.native
+    @scala.inline
+    def removeStyleAttribute(obj: CSSStyleDeclaration, attrName: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeStyleAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.restoreElementStyleAttribute")
-    @js.native
-    def restoreElementStyleAttribute(obj: HTMLElement, attrName: String): Boolean = js.native
+    @scala.inline
+    def restoreElementStyleAttribute(obj: HTMLElement, attrName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreElementStyleAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.saveStyleAttributeInElement")
     @js.native
@@ -65,12 +58,10 @@ object attrMod {
     @scala.inline
     def saveStyleAttributeInElement_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("saveStyleAttributeInElement")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.setElementAttribute")
-    @js.native
-    def setElementAttribute(obj: HTMLElement, attrName: String, value: String): Unit = js.native
+    @scala.inline
+    def setElementAttribute(obj: HTMLElement, attrName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setElementAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("@devexpress/utils/lib/utils/attr", "AttrUtils.setStyleAttribute")
-    @js.native
-    def setStyleAttribute(obj: CSSStyleDeclaration, attrName: String, value: String): Unit = js.native
+    @scala.inline
+    def setStyleAttribute(obj: CSSStyleDeclaration, attrName: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStyleAttribute")(obj.asInstanceOf[js.Any], attrName.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

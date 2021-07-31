@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -68,21 +67,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * invoked. Thus, when deploying a custom interaction handler, ensure that the types you specify are general enough to cover all requests you want to
   * handle, but also specific enough to not cover requests which other handlers might be interested in.
   */
-@js.native
-trait InteractionHandler extends XInteractionHandler2 {
+trait InteractionHandler
+  extends StObject
+     with XInteractionHandler2 {
   
   /**
     * Creates an instance.
     * @param parent denotes the parent window for any GUI dialogs the interaction handler pops up; may be null.
     */
-  def createWithParent(parent: XWindow): Unit = js.native
+  def createWithParent(parent: XWindow): Unit
   
   /**
     * Creates an instance with an additional context.
     * @param parent denotes the parent window for any GUI dialogs the interaction handler pops up; may be null.
     * @param context is a textual description of the current context (used, e.g., as a first line of text in error boxes).
     */
-  def createWithParentAndContext(parent: XWindow, context: String): Unit = js.native
+  def createWithParentAndContext(parent: XWindow, context: String): Unit
 }
 object InteractionHandler {
   

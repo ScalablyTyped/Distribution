@@ -2,17 +2,15 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellStats extends StObject {
   
-  var loaded: Double = js.native
+  var loaded: Double
   
-  var nonEmpty: Double = js.native
+  var nonEmpty: Double
   
-  var total: Double = js.native
+  var total: Double
 }
 object CellStats {
   

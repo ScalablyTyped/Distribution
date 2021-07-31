@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/slides/v1", "slides_v1.Resource$Presentations")
@@ -42,7 +41,7 @@ class ResourcePresentations protected () extends StObject {
     */
   def batchUpdate(): GaxiosPromise[SchemaBatchUpdatePresentationResponse] = js.native
   def batchUpdate(callback: BodyResponseCallback[SchemaBatchUpdatePresentationResponse]): Unit = js.native
-  def batchUpdate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchUpdatePresentationResponse] = js.native
+  def batchUpdate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchUpdatePresentationResponse] = js.native
   def batchUpdate(params: ParamsResourcePresentationsBatchupdate): GaxiosPromise[SchemaBatchUpdatePresentationResponse] = js.native
   def batchUpdate(
     params: ParamsResourcePresentationsBatchupdate,
@@ -80,7 +79,7 @@ class ResourcePresentations protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaPresentation] = js.native
   def create(callback: BodyResponseCallback[SchemaPresentation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPresentation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPresentation] = js.native
   def create(params: ParamsResourcePresentationsCreate): GaxiosPromise[SchemaPresentation] = js.native
   def create(params: ParamsResourcePresentationsCreate, callback: BodyResponseCallback[SchemaPresentation]): Unit = js.native
   def create(
@@ -109,7 +108,7 @@ class ResourcePresentations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPresentation] = js.native
   def get(callback: BodyResponseCallback[SchemaPresentation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPresentation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPresentation] = js.native
   def get(params: ParamsResourcePresentationsGet): GaxiosPromise[SchemaPresentation] = js.native
   def get(params: ParamsResourcePresentationsGet, callback: BodyResponseCallback[SchemaPresentation]): Unit = js.native
   def get(

@@ -2,30 +2,28 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The auditDetails object encapsulates channel data that is relevant for
   * YouTube Partners during the audit process.
   */
-@js.native
 trait SchemaChannelAuditDetails extends StObject {
   
   /**
     * Whether or not the channel respects the community guidelines.
     */
-  var communityGuidelinesGoodStanding: js.UndefOr[Boolean] = js.native
+  var communityGuidelinesGoodStanding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the channel has any unresolved claims.
     */
-  var contentIdClaimsGoodStanding: js.UndefOr[Boolean] = js.native
+  var contentIdClaimsGoodStanding: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the channel has any copyright strikes.
     */
-  var copyrightStrikesGoodStanding: js.UndefOr[Boolean] = js.native
+  var copyrightStrikesGoodStanding: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaChannelAuditDetails {
   

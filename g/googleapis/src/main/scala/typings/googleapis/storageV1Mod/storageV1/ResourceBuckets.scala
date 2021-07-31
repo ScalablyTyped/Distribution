@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/storage/v1", "storage_v1.Resource$Buckets")
@@ -83,7 +82,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceBucketsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceBucketsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -165,7 +164,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaBucket] = js.native
   def get(callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
   def get(params: ParamsResourceBucketsGet): GaxiosPromise[SchemaBucket] = js.native
   def get(params: ParamsResourceBucketsGet, callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
   def get(
@@ -248,7 +247,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def getIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def getIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def getIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceBucketsGetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def getIamPolicy(params: ParamsResourceBucketsGetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def getIamPolicy(
@@ -339,7 +338,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaBucket] = js.native
   def insert(callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
   def insert(params: ParamsResourceBucketsInsert): GaxiosPromise[SchemaBucket] = js.native
   def insert(params: ParamsResourceBucketsInsert, callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
   def insert(
@@ -439,7 +438,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBuckets] = js.native
   def list(callback: BodyResponseCallback[SchemaBuckets]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBuckets] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBuckets] = js.native
   def list(params: ParamsResourceBucketsList): GaxiosPromise[SchemaBuckets] = js.native
   def list(params: ParamsResourceBucketsList, callback: BodyResponseCallback[SchemaBuckets]): Unit = js.native
   def list(
@@ -470,7 +469,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def lockRetentionPolicy(): GaxiosPromise[SchemaBucket] = js.native
   def lockRetentionPolicy(callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
-  def lockRetentionPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
+  def lockRetentionPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
   def lockRetentionPolicy(params: ParamsResourceBucketsLockretentionpolicy): GaxiosPromise[SchemaBucket] = js.native
   def lockRetentionPolicy(params: ParamsResourceBucketsLockretentionpolicy, callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
   def lockRetentionPolicy(
@@ -567,7 +566,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaBucket] = js.native
   def patch(callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
   def patch(params: ParamsResourceBucketsPatch): GaxiosPromise[SchemaBucket] = js.native
   def patch(params: ParamsResourceBucketsPatch, callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
   def patch(
@@ -657,7 +656,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def setIamPolicy(): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
-  def setIamPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
+  def setIamPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceBucketsSetiampolicy): GaxiosPromise[SchemaPolicy] = js.native
   def setIamPolicy(params: ParamsResourceBucketsSetiampolicy, callback: BodyResponseCallback[SchemaPolicy]): Unit = js.native
   def setIamPolicy(
@@ -745,7 +744,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestIamPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceBucketsTestiampermissions): GaxiosPromise[SchemaTestIamPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceBucketsTestiampermissions,
@@ -845,7 +844,7 @@ class ResourceBuckets protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaBucket] = js.native
   def update(callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBucket] = js.native
   def update(params: ParamsResourceBucketsUpdate): GaxiosPromise[SchemaBucket] = js.native
   def update(params: ParamsResourceBucketsUpdate, callback: BodyResponseCallback[SchemaBucket]): Unit = js.native
   def update(

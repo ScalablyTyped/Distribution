@@ -2,17 +2,15 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaProjectsGetXpnResources extends StObject {
   
   /**
     * [Output Only] Type of resource. Always compute#projectsGetXpnResources
     * for lists of service resources (a.k.a service projects)
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] This token allows you to get the next page of results for
@@ -21,13 +19,13 @@ trait SchemaProjectsGetXpnResources extends StObject {
     * next list request. Subsequent list requests will have their own
     * nextPageToken to continue paging through the results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Service resources (a.k.a service projects) attached to this project as
     * their shared VPC host.
     */
-  var resources: js.UndefOr[js.Array[SchemaXpnResourceId]] = js.native
+  var resources: js.UndefOr[js.Array[SchemaXpnResourceId]] = js.undefined
 }
 object SchemaProjectsGetXpnResources {
   

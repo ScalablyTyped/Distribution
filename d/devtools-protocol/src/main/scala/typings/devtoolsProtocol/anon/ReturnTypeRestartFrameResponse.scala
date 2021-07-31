@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.RestartFrameRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.RestartFrameResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeRestartFrameResponse extends StObject {
   
-  var paramsType: js.Array[RestartFrameRequest] = js.native
+  var paramsType: js.Array[RestartFrameRequest]
   
-  var returnType: RestartFrameResponse = js.native
+  var returnType: RestartFrameResponse
 }
 object ReturnTypeRestartFrameResponse {
   

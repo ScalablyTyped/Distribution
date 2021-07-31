@@ -13,12 +13,12 @@ import typings.std.stdStrings.NFKC
 import typings.std.stdStrings.NFKD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait String
-  extends /* index */ NumberDictionary[java.lang.String] {
+  extends StObject
+     with /* index */ NumberDictionary[java.lang.String] {
   
   /**
     * Returns an `<a>` HTML anchor element and sets the name attribute to the text value
@@ -125,11 +125,11 @@ trait String
     * @param that String to compare to target string
     */
   def localeCompare(that: java.lang.String): Double = js.native
-  def localeCompare(that: java.lang.String, locales: js.UndefOr[scala.Nothing], options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: java.lang.String): Double = js.native
   def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): Double = js.native
   def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String], options: CollatorOptions): Double = js.native
+  def localeCompare(that: java.lang.String, locales: Unit, options: CollatorOptions): Double = js.native
   
   /**
     * Matches a string or an object that supports being matched against, and returns an array
@@ -285,9 +285,9 @@ trait String
     * If this value is not specified, the substring continues to the end of stringObj.
     */
   def slice(): java.lang.String = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): java.lang.String = js.native
   def slice(start: Double): java.lang.String = js.native
   def slice(start: Double, end: Double): java.lang.String = js.native
+  def slice(start: Unit, end: Double): java.lang.String = js.native
   
   /** Returns a `<small>` HTML element */
   def small(): java.lang.String = js.native

@@ -2,25 +2,23 @@ package typings.ractive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MacroOpts extends StObject {
   
-  var attributes: js.UndefOr[js.Array[String]] = js.native
+  var attributes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var css: js.UndefOr[String | CssFn] = js.native
+  var css: js.UndefOr[String | CssFn] = js.undefined
   
-  var cssData: js.UndefOr[ValueMap] = js.native
+  var cssData: js.UndefOr[ValueMap] = js.undefined
   
-  var cssId: js.UndefOr[String] = js.native
+  var cssId: js.UndefOr[String] = js.undefined
   
-  var noCssTransform: js.UndefOr[Boolean] = js.native
+  var noCssTransform: js.UndefOr[Boolean] = js.undefined
   
-  var partials: js.UndefOr[PartialMap] = js.native
+  var partials: js.UndefOr[PartialMap] = js.undefined
   
-  var template: js.UndefOr[Template] = js.native
+  var template: js.UndefOr[Template] = js.undefined
 }
 object MacroOpts {
   

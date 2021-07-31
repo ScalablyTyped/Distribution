@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object onScreenKeyboardMod {
@@ -83,7 +82,6 @@ object onScreenKeyboardMod {
     * implied, and may have multiple Guacamole.OnScreenKeyboard.Key if behavior
     * depends on modifier states.
     */
-  @js.native
   trait Key extends StObject {
     
     /**
@@ -91,7 +89,7 @@ object onScreenKeyboardMod {
       * not provided, this will be derived from the title if the title is a
       * single character.
       */
-    var keysym: Double = js.native
+    var keysym: Double
     
     /**
       * The name of the modifier set when the key is pressed and cleared when
@@ -100,12 +98,12 @@ object onScreenKeyboardMod {
       * the "shift" modifier, for example. By default, the key will affect no
       * modifiers.
       */
-    var modifier: String = js.native
+    var modifier: String
     
     /**
       * The unique name identifying this key within the keyboard layout.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * An array containing the names of each modifier required for this key to
@@ -114,13 +112,13 @@ object onScreenKeyboardMod {
       * is named "shift" within the layout. By default, the key will require
       * no modifiers.
       */
-    var requires: js.Array[String] = js.native
+    var requires: js.Array[String]
     
     /**
       * The human-readable title that will be displayed to the user within the
       * key. If not provided, this will be derived from the key name.
       */
-    var title: String = js.native
+    var title: String
   }
   object Key {
     
@@ -160,7 +158,6 @@ object onScreenKeyboardMod {
     *     The object whose identically-named properties will be used to initialize
     *     the properties of this layout.
     */
-  @js.native
   trait Layout extends StObject {
     
     /**
@@ -169,7 +166,7 @@ object onScreenKeyboardMod {
       * overall size of the keyboard. If not defined here, the width of each
       * key will default to 1.
       */
-    var keyWidths: Record[String, Double] = js.native
+    var keyWidths: Record[String, Double]
     
     /**
       * Map of key name to corresponding keysym, title, or key object. If only
@@ -177,14 +174,14 @@ object onScreenKeyboardMod {
       * implicitly. In all cases, the name property of the key object will be
       * taken from the name given in the mapping.
       */
-    var keys: Record[String, Double | String | Key | js.Array[Key]] = js.native
+    var keys: Record[String, Double | String | Key | js.Array[Key]]
     
     /**
       * The language of keyboard layout, such as "en_US". This property is for
       * informational purposes only, but it is recommend to conform to the
       * [language code]_[country code] format.
       */
-    var language: String = js.native
+    var language: String
     
     /**
       * Arbitrarily nested, arbitrarily grouped key names. The contents of the
@@ -195,13 +192,13 @@ object onScreenKeyboardMod {
       * numbers present will be transformed into gaps of that size, scaled
       * according to the same units as each key.
       */
-    var layout: Layout = js.native
+    var layout: Layout
     
     /**
       * The type of keyboard layout, such as "qwerty". This property is for
       * informational purposes only, and does not conform to any standard.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * The width of the entire keyboard, in arbitrary units. The width of each
@@ -209,7 +206,7 @@ object onScreenKeyboardMod {
       * the same units. The conversion factor between these units and pixels is
       * derived later via a call to resize() on the Guacamole.OnScreenKeyboard.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object Layout {
     

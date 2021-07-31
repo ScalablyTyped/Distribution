@@ -9,25 +9,23 @@ import typings.playable.rootContainerTypesMod.IRootContainer
 import typings.playable.themeTypesMod.IThemeService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Loader extends StObject {
   
-  var config: IPlayerConfig = js.native
+  var config: IPlayerConfig
   
-  var engine: IPlaybackEngine = js.native
+  var engine: IPlaybackEngine
   
-  var eventEmitter: IEventEmitter = js.native
+  var eventEmitter: IEventEmitter
   
-  var loader: ILoader = js.native
+  var loader: ILoader
   
-  var mainUIBlock: IMainUIBlock = js.native
+  var mainUIBlock: IMainUIBlock
   
-  var rootContainer: IRootContainer = js.native
+  var rootContainer: IRootContainer
   
-  var theme: IThemeService = js.native
+  var theme: IThemeService
 }
 object Loader {
   

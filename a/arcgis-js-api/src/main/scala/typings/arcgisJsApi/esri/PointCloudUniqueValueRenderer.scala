@@ -8,12 +8,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`point-cloud-unique-value`
 import typings.arcgisJsApi.arcgisJsApiStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PointCloudUniqueValueRenderer
-  extends PointCloudRenderer
+  extends StObject
+     with PointCloudRenderer
      with typings.arcgisJsApi.esri.pointCloudRenderers.PointCloudRenderer
      with pointCloudRenderersPointCloudRenderer {
   

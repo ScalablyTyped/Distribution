@@ -7,7 +7,6 @@ import typings.nodeFetch.mod.Response
 import typings.turistFetch.fetchRetryErrorMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -20,22 +19,23 @@ object typesMod {
     js.Promise[Response]
   ]
   
-  @js.native
-  trait FetchOptions extends RequestInit {
+  trait FetchOptions
+    extends StObject
+       with RequestInit {
     
     @JSName("agent")
-    var agent_FetchOptions: js.UndefOr[Agent] = js.native
+    var agent_FetchOptions: js.UndefOr[Agent] = js.undefined
     
     @JSName("body")
-    var body_FetchOptions: js.UndefOr[js.Any] = js.native
+    var body_FetchOptions: js.UndefOr[js.Any] = js.undefined
     
-    var onRedirect: js.UndefOr[js.Function2[/* res */ Response, /* redirectOpts */ this.type, Unit]] = js.native
+    var onRedirect: js.UndefOr[js.Function2[/* res */ Response, /* redirectOpts */ this.type, Unit]] = js.undefined
     
-    var onRetry: js.UndefOr[js.Function2[/* error */ default, /* opts */ this.type, Unit]] = js.native
+    var onRetry: js.UndefOr[js.Function2[/* error */ default, /* opts */ this.type, Unit]] = js.undefined
     
     var retry: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify RetryOptions */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object FetchOptions {
     

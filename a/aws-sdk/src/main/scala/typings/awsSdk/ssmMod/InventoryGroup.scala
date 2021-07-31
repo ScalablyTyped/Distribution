@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryGroup extends StObject {
   
   /**
     * Filters define the criteria for the group. The matchingCount field displays the number of resources that match the criteria. The notMatchingCount field displays the number of resources that don't match the criteria. 
     */
-  var Filters: InventoryFilterList = js.native
+  var Filters: InventoryFilterList
   
   /**
     * The name of the group.
     */
-  var Name: InventoryGroupName = js.native
+  var Name: InventoryGroupName
 }
 object InventoryGroup {
   

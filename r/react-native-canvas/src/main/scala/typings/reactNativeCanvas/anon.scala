@@ -2,25 +2,23 @@ package typings.reactNativeCanvas
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var c: Double = js.native
+    var c: Double
     
-    var d: Double = js.native
+    var d: Double
     
-    var e: Double = js.native
+    var e: Double
     
-    var f: Double = js.native
+    var f: Double
   }
   object A {
     

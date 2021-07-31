@@ -2,20 +2,18 @@ package typings.plotlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotNumber> */
-@js.native
 trait PartialPlotNumberFont extends StObject {
   
-  var font: js.UndefOr[PartialFont] = js.native
+  var font: js.UndefOr[PartialFont] = js.undefined
   
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
-  var suffix: js.UndefOr[String] = js.native
+  var suffix: js.UndefOr[String] = js.undefined
   
-  var valueformat: js.UndefOr[String] = js.native
+  var valueformat: js.UndefOr[String] = js.undefined
 }
 object PartialPlotNumberFont {
   

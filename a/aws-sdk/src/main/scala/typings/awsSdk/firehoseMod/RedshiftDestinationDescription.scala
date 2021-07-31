@@ -2,61 +2,59 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftDestinationDescription extends StObject {
   
   /**
     * The Amazon CloudWatch logging options for your delivery stream.
     */
-  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.native
+  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.undefined
   
   /**
     * The database connection string.
     */
-  var ClusterJDBCURL: typings.awsSdk.firehoseMod.ClusterJDBCURL = js.native
+  var ClusterJDBCURL: typings.awsSdk.firehoseMod.ClusterJDBCURL
   
   /**
     * The COPY command.
     */
-  var CopyCommand: typings.awsSdk.firehoseMod.CopyCommand = js.native
+  var CopyCommand: typings.awsSdk.firehoseMod.CopyCommand
   
   /**
     * The data processing configuration.
     */
-  var ProcessingConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.ProcessingConfiguration] = js.native
+  var ProcessingConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.ProcessingConfiguration] = js.undefined
   
   /**
     * The retry behavior in case Kinesis Data Firehose is unable to deliver documents to Amazon Redshift. Default value is 3600 (60 minutes).
     */
-  var RetryOptions: js.UndefOr[RedshiftRetryOptions] = js.native
+  var RetryOptions: js.UndefOr[RedshiftRetryOptions] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var RoleARN: typings.awsSdk.firehoseMod.RoleARN = js.native
+  var RoleARN: typings.awsSdk.firehoseMod.RoleARN
   
   /**
     * The configuration for backup in Amazon S3.
     */
-  var S3BackupDescription: js.UndefOr[S3DestinationDescription] = js.native
+  var S3BackupDescription: js.UndefOr[S3DestinationDescription] = js.undefined
   
   /**
     * The Amazon S3 backup mode.
     */
-  var S3BackupMode: js.UndefOr[RedshiftS3BackupMode] = js.native
+  var S3BackupMode: js.UndefOr[RedshiftS3BackupMode] = js.undefined
   
   /**
     * The Amazon S3 destination.
     */
-  var S3DestinationDescription: typings.awsSdk.firehoseMod.S3DestinationDescription = js.native
+  var S3DestinationDescription: typings.awsSdk.firehoseMod.S3DestinationDescription
   
   /**
     * The name of the user.
     */
-  var Username: typings.awsSdk.firehoseMod.Username = js.native
+  var Username: typings.awsSdk.firehoseMod.Username
 }
 object RedshiftDestinationDescription {
   

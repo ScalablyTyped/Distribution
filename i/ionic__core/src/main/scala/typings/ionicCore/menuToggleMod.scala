@@ -3,14 +3,15 @@ package typings.ionicCore
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuToggleMod {
   
   @JSImport("@ionic/core/dist/types/components/menu-toggle/menu-toggle", "MenuToggle")
   @js.native
-  class MenuToggle () extends ComponentInterface {
+  class MenuToggle ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * Automatically hides the content when the corresponding menu is not active.

@@ -2,16 +2,14 @@ package typings.ionicCore.componentsMod.LocalJSX
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonGrid extends StObject {
   
   /**
     * If `true`, the grid will have a fixed width based on the screen size.
     */
-  var fixed: js.UndefOr[Boolean] = js.native
+  var fixed: js.UndefOr[Boolean] = js.undefined
 }
 object IonGrid {
   

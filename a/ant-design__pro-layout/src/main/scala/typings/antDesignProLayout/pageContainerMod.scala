@@ -19,7 +19,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pageContainerMod extends Shortcut {
@@ -30,100 +29,99 @@ object pageContainerMod extends Shortcut {
   
   /* Inlined parent @ant-design/pro-layout.@ant-design/pro-layout/lib/PageContainer.PageHeaderTabConfig */
   /* Inlined parent std.Omit<antd.antd/lib/page-header.PageHeaderProps, 'title'> */
-  @js.native
   trait PageContainerProps extends StObject {
     
     /**
       * @name 固钉的配置
       * @description 与 antd 完全相同
       */
-    var affixProps: js.UndefOr[AffixProps] = js.native
+    var affixProps: js.UndefOr[AffixProps] = js.undefined
     
-    var avatar: js.UndefOr[AvatarProps] = js.native
+    var avatar: js.UndefOr[AvatarProps] = js.undefined
     
-    var backIcon: js.UndefOr[ReactNode] = js.native
+    var backIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var breadcrumb: js.UndefOr[BreadcrumbProps] = js.native
+    var breadcrumb: js.UndefOr[BreadcrumbProps] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var extra: js.UndefOr[ReactNode] = js.native
+    var extra: js.UndefOr[ReactNode] = js.undefined
     
-    var extraContent: js.UndefOr[ReactNode] = js.native
+    var extraContent: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * @name 固定 PageHeader 到页面顶部
       * @deprecated 请使用 fixedHeader
       */
-    var fixHeader: js.UndefOr[Boolean] = js.native
+    var fixHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 固定 PageHeader 到页面顶部
       */
-    var fixedHeader: js.UndefOr[Boolean] = js.native
+    var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
-    var footer: js.UndefOr[js.Array[ReactNode]] = js.native
+    var footer: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
     /**
       * @name 是否显示背景色
       */
-    var ghost: js.UndefOr[Boolean] = js.native
+    var ghost: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name PageHeader 的配置
       * @description 与 antd 完全相同
       */
-    var header: js.UndefOr[PageHeaderPropschildrenRe] = js.native
+    var header: js.UndefOr[PageHeaderPropschildrenRe] = js.undefined
     
     /**
       * @name 是否加载
       * @description 只加载内容区域
       */
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var onBack: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
+    var onBack: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
     
     /**
       * @name tab 修改时触发
       */
-    var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
     
     /**
       * @name 自定义 pageHeader
       */
-    var pageHeaderRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.native
+    var pageHeaderRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var subTitle: js.UndefOr[ReactNode] = js.native
+    var subTitle: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * @name 当前选中 tab 的 key
       */
-    var tabActiveKey: js.UndefOr[String] = js.native
+    var tabActiveKey: js.UndefOr[String] = js.undefined
     
     /**
       * @name tab 上多余的区域
       */
-    var tabBarExtraContent: js.UndefOr[TabBarExtraContent] = js.native
+    var tabBarExtraContent: js.UndefOr[TabBarExtraContent] = js.undefined
     
     /**
       * @name tabs 的列表
       */
-    var tabList: js.UndefOr[js.Array[TabPanePropskeyReactTextu]] = js.native
+    var tabList: js.UndefOr[js.Array[TabPanePropskeyReactTextu]] = js.undefined
     
     /**
       * @name tabs 的其他配置
       */
-    var tabProps: js.UndefOr[TabsProps] = js.native
+    var tabProps: js.UndefOr[TabsProps] = js.undefined
     
-    var tags: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.native
+    var tags: js.UndefOr[ReactElement | js.Array[ReactElement]] = js.undefined
     
-    var title: js.UndefOr[ReactNode | `false`] = js.native
+    var title: js.UndefOr[ReactNode | `false`] = js.undefined
   }
   object PageContainerProps {
     
@@ -306,44 +304,43 @@ object pageContainerMod extends Shortcut {
     }
   }
   
-  @js.native
   trait PageHeaderTabConfig extends StObject {
     
     /**
       * @name 固定 PageHeader 到页面顶部
       * @deprecated 请使用 fixedHeader
       */
-    var fixHeader: js.UndefOr[Boolean] = js.native
+    var fixHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name 固定 PageHeader 到页面顶部
       */
-    var fixedHeader: js.UndefOr[Boolean] = js.native
+    var fixedHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @name tab 修改时触发
       */
-    var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.native
+    var onTabChange: js.UndefOr[js.Function1[/* activeKey */ String, Unit]] = js.undefined
     
     /**
       * @name 当前选中 tab 的 key
       */
-    var tabActiveKey: js.UndefOr[String] = js.native
+    var tabActiveKey: js.UndefOr[String] = js.undefined
     
     /**
       * @name tab 上多余的区域
       */
-    var tabBarExtraContent: js.UndefOr[TabBarExtraContent] = js.native
+    var tabBarExtraContent: js.UndefOr[TabBarExtraContent] = js.undefined
     
     /**
       * @name tabs 的列表
       */
-    var tabList: js.UndefOr[js.Array[TabPanePropskeyReactTextu]] = js.native
+    var tabList: js.UndefOr[js.Array[TabPanePropskeyReactTextu]] = js.undefined
     
     /**
       * @name tabs 的其他配置
       */
-    var tabProps: js.UndefOr[TabsProps] = js.native
+    var tabProps: js.UndefOr[TabsProps] = js.undefined
   }
   object PageHeaderTabConfig {
     

@@ -3,51 +3,49 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListViewOptions extends StObject {
   
-  var appendOnRefresh: js.UndefOr[Boolean] = js.native
+  var appendOnRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var click: js.UndefOr[js.Function1[/* e */ ListViewClickEvent, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* e */ ListViewClickEvent, Unit]] = js.undefined
   
-  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataBinding: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
   
-  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var dataBound: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.native
+  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
   
-  var endlessScroll: js.UndefOr[Boolean] = js.native
+  var endlessScroll: js.UndefOr[Boolean] = js.undefined
   
-  var filterable: js.UndefOr[Boolean | ListViewFilterable] = js.native
+  var filterable: js.UndefOr[Boolean | ListViewFilterable] = js.undefined
   
-  var fixedHeaders: js.UndefOr[Boolean] = js.native
+  var fixedHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var headerTemplate: js.UndefOr[String | js.Function] = js.native
+  var headerTemplate: js.UndefOr[String | js.Function] = js.undefined
   
-  var itemChange: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.native
+  var itemChange: js.UndefOr[js.Function1[/* e */ ListViewEvent, Unit]] = js.undefined
   
-  var loadMore: js.UndefOr[Boolean] = js.native
+  var loadMore: js.UndefOr[Boolean] = js.undefined
   
-  var messages: js.UndefOr[ListViewMessages] = js.native
+  var messages: js.UndefOr[ListViewMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pullParameters: js.UndefOr[js.Function] = js.native
+  var pullParameters: js.UndefOr[js.Function] = js.undefined
   
-  var pullToRefresh: js.UndefOr[Boolean] = js.native
+  var pullToRefresh: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var virtualViewSize: js.UndefOr[Double] = js.native
+  var virtualViewSize: js.UndefOr[Double] = js.undefined
 }
 object ListViewOptions {
   

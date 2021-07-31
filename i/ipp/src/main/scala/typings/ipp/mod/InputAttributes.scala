@@ -2,47 +2,45 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputAttributes extends StObject {
   
-  var `input-auto-scaling`: js.UndefOr[Boolean] = js.native
+  var `input-auto-scaling`: js.UndefOr[Boolean] = js.undefined
   
-  var `input-auto-skew-correction`: js.UndefOr[Boolean] = js.native
+  var `input-auto-skew-correction`: js.UndefOr[Boolean] = js.undefined
   
-  var `input-brightness`: js.UndefOr[Double] = js.native
+  var `input-brightness`: js.UndefOr[Double] = js.undefined
   
-  var `input-color-mode`: js.UndefOr[InputColorMode] = js.native
+  var `input-color-mode`: js.UndefOr[InputColorMode] = js.undefined
   
-  var `input-content-type`: js.UndefOr[InputContentType] = js.native
+  var `input-content-type`: js.UndefOr[InputContentType] = js.undefined
   
-  var `input-contrast`: js.UndefOr[Double] = js.native
+  var `input-contrast`: js.UndefOr[Double] = js.undefined
   
-  var `input-film-scan-mode`: js.UndefOr[InputFilmScanMode] = js.native
+  var `input-film-scan-mode`: js.UndefOr[InputFilmScanMode] = js.undefined
   
-  var `input-images-to-transfer`: js.UndefOr[Double] = js.native
+  var `input-images-to-transfer`: js.UndefOr[Double] = js.undefined
   
-  var `input-media`: js.UndefOr[MediaName | MediaSizeName] = js.native
+  var `input-media`: js.UndefOr[MediaName | MediaSizeName] = js.undefined
   
-  var `input-orientation-requested`: js.UndefOr[OrientationRequested] = js.native
+  var `input-orientation-requested`: js.UndefOr[OrientationRequested] = js.undefined
   
-  var `input-quality`: js.UndefOr[PrintQuality] = js.native
+  var `input-quality`: js.UndefOr[PrintQuality] = js.undefined
   
-  var `input-resolution`: js.UndefOr[Resolution] = js.native
+  var `input-resolution`: js.UndefOr[Resolution] = js.undefined
   
-  var `input-scaling-height`: js.UndefOr[Double] = js.native
+  var `input-scaling-height`: js.UndefOr[Double] = js.undefined
   
-  var `input-scaling-width`: js.UndefOr[Double] = js.native
+  var `input-scaling-width`: js.UndefOr[Double] = js.undefined
   
-  var `input-scan-regions`: js.UndefOr[js.Array[PPScanRegions]] = js.native
+  var `input-scan-regions`: js.UndefOr[js.Array[PPScanRegions]] = js.undefined
   
-  var `input-sharpness`: js.UndefOr[Double] = js.native
+  var `input-sharpness`: js.UndefOr[Double] = js.undefined
   
-  var `input-sides`: js.UndefOr[Sides] = js.native
+  var `input-sides`: js.UndefOr[Sides] = js.undefined
   
-  var `input-source`: js.UndefOr[InputSource] = js.native
+  var `input-source`: js.UndefOr[InputSource] = js.undefined
 }
 object InputAttributes {
   

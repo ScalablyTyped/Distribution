@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientAdsense.gapi.client.adsense
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetadataResource extends StObject {
   
-  var dimensions: DimensionsResource = js.native
+  var dimensions: DimensionsResource
   
-  var metrics: MetricsResource = js.native
+  var metrics: MetricsResource
 }
 object MetadataResource {
   

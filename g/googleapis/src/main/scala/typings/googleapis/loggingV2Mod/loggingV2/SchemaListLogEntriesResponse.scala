@@ -2,13 +2,11 @@ package typings.googleapis.loggingV2Mod.loggingV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result returned from ListLogEntries.
   */
-@js.native
 trait SchemaListLogEntriesResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaListLogEntriesResponse extends StObject {
     * returned, indicating that more entries may exist. See nextPageToken for
     * more information.
     */
-  var entries: js.UndefOr[js.Array[SchemaLogEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaLogEntry]] = js.undefined
   
   /**
     * If there might be more results than those appearing in this response,
@@ -29,7 +27,7 @@ trait SchemaListLogEntriesResponse extends StObject {
     * changing your filter to specify a single log name or resource type, or to
     * narrow the time range of the search.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListLogEntriesResponse {
   

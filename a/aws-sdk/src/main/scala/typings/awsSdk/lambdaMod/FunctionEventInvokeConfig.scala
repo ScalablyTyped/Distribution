@@ -2,36 +2,34 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionEventInvokeConfig extends StObject {
   
   /**
     * A destination for events after they have been sent to a function for processing.  Destinations     Function - The Amazon Resource Name (ARN) of a Lambda function.    Queue - The ARN of an SQS queue.    Topic - The ARN of an SNS topic.    Event Bus - The ARN of an Amazon EventBridge event bus.  
     */
-  var DestinationConfig: js.UndefOr[typings.awsSdk.lambdaMod.DestinationConfig] = js.native
+  var DestinationConfig: js.UndefOr[typings.awsSdk.lambdaMod.DestinationConfig] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the function.
     */
-  var FunctionArn: js.UndefOr[typings.awsSdk.lambdaMod.FunctionArn] = js.native
+  var FunctionArn: js.UndefOr[typings.awsSdk.lambdaMod.FunctionArn] = js.undefined
   
   /**
     * The date and time that the configuration was last updated.
     */
-  var LastModified: js.UndefOr[Date] = js.native
+  var LastModified: js.UndefOr[Date] = js.undefined
   
   /**
     * The maximum age of a request that Lambda sends to a function for processing.
     */
-  var MaximumEventAgeInSeconds: js.UndefOr[typings.awsSdk.lambdaMod.MaximumEventAgeInSeconds] = js.native
+  var MaximumEventAgeInSeconds: js.UndefOr[typings.awsSdk.lambdaMod.MaximumEventAgeInSeconds] = js.undefined
   
   /**
     * The maximum number of times to retry when the function returns an error.
     */
-  var MaximumRetryAttempts: js.UndefOr[typings.awsSdk.lambdaMod.MaximumRetryAttempts] = js.native
+  var MaximumRetryAttempts: js.UndefOr[typings.awsSdk.lambdaMod.MaximumRetryAttempts] = js.undefined
 }
 object FunctionEventInvokeConfig {
   

@@ -5,7 +5,6 @@ import typings.forgeApis.anon.FilterRefType
 import typings.forgeApis.anon.FilterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("forge-apis", "ItemsApi")

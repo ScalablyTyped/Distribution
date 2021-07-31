@@ -2,21 +2,19 @@ package typings.jqueryPnotify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PNotifyLabel extends StObject {
   
-  var all: js.UndefOr[String] = js.native
+  var all: js.UndefOr[String] = js.undefined
   
-  var close: js.UndefOr[String] = js.native
+  var close: js.UndefOr[String] = js.undefined
   
-  var last: js.UndefOr[String] = js.native
+  var last: js.UndefOr[String] = js.undefined
   
-  var redisplay: js.UndefOr[String] = js.native
+  var redisplay: js.UndefOr[String] = js.undefined
   
-  var stick: js.UndefOr[String] = js.native
+  var stick: js.UndefOr[String] = js.undefined
 }
 object PNotifyLabel {
   

@@ -3,28 +3,26 @@ package typings.arcgisJsApi.esri
 import typings.arcgisJsApi.arcgisJsApiStrings.`key-up`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapViewKeyUpEvent extends StObject {
   
-  var key: String = js.native
+  var key: String
   
-  var native: js.Any = js.native
+  var native: js.Any
   
-  var stopPropagation: js.Function = js.native
+  var stopPropagation: js.Function
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var `type`: `key-up` = js.native
+  var `type`: `key-up`
 }
 object MapViewKeyUpEvent {
   
   @scala.inline
-  def apply(key: String, native: js.Any, stopPropagation: js.Function, timestamp: Double, `type`: `key-up`): MapViewKeyUpEvent = {
+  def apply(key: String, native: js.Any, stopPropagation: js.Function, timestamp: Double): MapViewKeyUpEvent = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], native = native.asInstanceOf[js.Any], stopPropagation = stopPropagation.asInstanceOf[js.Any], timestamp = timestamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("key-up")
     __obj.asInstanceOf[MapViewKeyUpEvent]
   }
   

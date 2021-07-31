@@ -2,21 +2,19 @@ package typings.zchatBrowser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Department extends StObject {
   
-  var department: js.UndefOr[Double] = js.native
+  var department: js.UndefOr[Double] = js.undefined
   
-  var email: String = js.native
+  var email: String
   
-  var message: String = js.native
+  var message: String
   
-  var name: String = js.native
+  var name: String
   
-  var phone: js.UndefOr[String] = js.native
+  var phone: js.UndefOr[String] = js.undefined
 }
 object Department {
   

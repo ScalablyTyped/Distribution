@@ -2,21 +2,19 @@ package typings.kafkaNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPartitionAssignmentProtocol extends StObject {
   
   def assign(
     topicPattern: js.Any,
     groupMembers: js.Any,
     cb: js.Function2[/* error */ js.Any, /* result */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  var name: String = js.native
+  var name: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object CustomPartitionAssignmentProtocol {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceConfigurationType extends StObject {
   
   /**
     * Indicates whether a challenge is required on a new device. Only applicable to a new device.
     */
-  var ChallengeRequiredOnNewDevice: js.UndefOr[BooleanType] = js.native
+  var ChallengeRequiredOnNewDevice: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * If true, a device is only remembered on user prompt.
     */
-  var DeviceOnlyRememberedOnUserPrompt: js.UndefOr[BooleanType] = js.native
+  var DeviceOnlyRememberedOnUserPrompt: js.UndefOr[BooleanType] = js.undefined
 }
 object DeviceConfigurationType {
   

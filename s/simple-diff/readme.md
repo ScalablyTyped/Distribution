@@ -12,7 +12,7 @@ simple diff for object and arrays with options
 | Keywords           | diff |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 13000 |
+| # downloads        | 24838 |
 | # stars            | 0 |
 
 ## Links

@@ -75,7 +75,6 @@ import typings.std.SVGElement
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -130,6 +129,10 @@ object mod {
   
   object BdApi {
     
+    @JSImport("@bandagedbd/bdapi", "BdApi")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * An instance of AddonAPI to access plugins.
       */
@@ -156,34 +159,30 @@ object mod {
       * @param title The title to show on the modal.
       * @param content Content to show in the modal (can be html string).
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.alert")
-    @js.native
-    def alert(title: String, content: String): Unit = js.native
+    @scala.inline
+    def alert(title: String, content: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a style added with `injectCSS` below.
       * @param id ID of the node to remove.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.clearCSS")
-    @js.native
-    def clearCSS(id: String): Unit = js.native
+    @scala.inline
+    def clearCSS(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCSS")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Deletes some saved data for plugin `pluginName` with key `key`.
       * @param pluginName Which plugin this is being used for.
       * @param key Key for which data should be deleted.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.deleteData")
-    @js.native
-    def deleteData(pluginName: String, key: String): Unit = js.native
+    @scala.inline
+    def deleteData(pluginName: String, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Disables a BBD setting by id.
       * @param id Id for the setting.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.disableSetting")
-    @js.native
-    def disableSetting(id: String): Unit = js.native
+    @scala.inline
+    def disableSetting(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableSetting")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gives access to BBD's internal emotes object and is therefore subject to change.
@@ -196,63 +195,56 @@ object mod {
       * Enables a BBD setting by id.
       * @param id Id for the setting.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.enableSetting")
-    @js.native
-    def enableSetting(id: String): Unit = js.native
+    @scala.inline
+    def enableSetting(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableSetting")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Searches for multiple internal Discord webpack module based on `filter`. It's the same as `findModule` but will return all matches.
       * @param filter A function to use to filter modules.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.findAllModules")
-    @js.native
-    def findAllModules(filter: js.Function0[Unit]): js.Array[_] = js.native
+    @scala.inline
+    def findAllModules(filter: js.Function0[Unit]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllModules")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Searches for an internal Discord webpack module based on `filter`.
       * @param filter A function to use to filter modules.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.findModule")
-    @js.native
-    def findModule(filter: js.Function0[Unit]): js.Any = js.native
+    @scala.inline
+    def findModule(filter: js.Function0[Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModule")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Searches for an internal Discord webpack module with a specific `displayName` value.
       * @param name The `displayName` to look for.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.findModuleByDisplayName")
-    @js.native
-    def findModuleByDisplayName(name: String): js.Any = js.native
+    @scala.inline
+    def findModuleByDisplayName(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByDisplayName")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Searches for an internal Discord webpack module that has every property passed.
       * @param props A series of properties to check for.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.findModuleByProps")
-    @js.native
-    def findModuleByProps(props: String*): js.Any = js.native
+    @scala.inline
+    def findModuleByProps(props: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Searches for an internal Discord webpack module that has every property passed on its prototype.
       * @param props A series of prototype properties to check for
       * @returns The modules found or null if none were found..
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.findModuleByPrototypes")
-    @js.native
-    def findModuleByPrototypes(props: String*): js.Any = js.native
+    @scala.inline
+    def findModuleByPrototypes(props: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByPrototypes")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Returns BandagedBD's instance of the core module. Only use this if you know what you are doing.
       * @deprecated since 2020.3.27
       * @returns BBD's instantiated core module.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.getCore")
-    @js.native
-    def getCore(): js.Any = js.native
+    @scala.inline
+    def getCore(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")().asInstanceOf[js.Any]
     
     // TODO: This should not return 'any' but instead 'Core'
     // Not worth it in my opinion because it's deprecated (commit caf3406e0a22a24dc5ad76d9c51edb3330d379b7)
@@ -262,18 +254,16 @@ object mod {
       * @param key Key for which data should be returned.
       * @returns The information that was saved previously, or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.getData")
-    @js.native
-    def getData(pluginName: String, key: String): js.Any = js.native
+    @scala.inline
+    def getData(pluginName: String, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Gets the internal react instance for a particular node.
       * @param node jQuery
       * @returns The instance if found or undefined otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.getInternalInstance")
-    @js.native
-    def getInternalInstance(node: HTMLElement): js.UndefOr[js.Object] = js.native
+    @scala.inline
+    def getInternalInstance(node: HTMLElement): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternalInstance")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
     
     /**
       * Gets the instance of another plugin with the name `name`.
@@ -281,9 +271,8 @@ object mod {
       * @param name Name of the plugin to retreive.
       * @returns The plugin if found or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.getPlugin")
-    @js.native
-    def getPlugin(name: String): js.Object | Null = js.native
+    @scala.inline
+    def getPlugin(name: String): js.Object | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[js.Object | Null]
     
     /**
       * Adds a block of css to the current document's `head`.
@@ -291,18 +280,16 @@ object mod {
       * @param css String of css to be added.
       * @returns The plugin if found or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.injectCSS")
-    @js.native
-    def injectCSS(id: String, css: String): js.Object | Null = js.native
+    @scala.inline
+    def injectCSS(id: String, css: String): js.Object | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("injectCSS")(id.asInstanceOf[js.Any], css.asInstanceOf[js.Any])).asInstanceOf[js.Object | Null]
     
     /**
       * Links some remote JavaScript to be added to the page. Useful for libraries like `Sortable.js`.
       * @param id Identifier for the node to be added. Can be used later with `unlinkJS` below.
       * @param url URL of the js.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.linkJS")
-    @js.native
-    def linkJS(id: String, url: String): Unit = js.native
+    @scala.inline
+    def linkJS(id: String, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkJS")(id.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets some saved data for plugin `pluginName` with key `key`. Data can be saved with `saveData`.
@@ -310,9 +297,8 @@ object mod {
       * @param key Key for which data should be returned.
       * @returns The information that was saved previously, or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.loadData")
-    @js.native
-    def loadData(pluginName: String, key: String): js.Any = js.native
+    @scala.inline
+    def loadData(pluginName: String, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("loadData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * This function monkey-patches a method on an object. The patching callback may be run before, after or instead of target method.
@@ -337,18 +323,16 @@ object mod {
       * Can't be combined with `before` and `after`.
       * @returns A cancel function which allows you to undo the patch.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.monkeyPatch")
-    @js.native
-    def monkeyPatch(module: js.Object, methodName: String, options: MonkeyPatchOptions): CancelPatch = js.native
+    @scala.inline
+    def monkeyPatch(module: js.Object, methodName: String, options: MonkeyPatchOptions): CancelPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("monkeyPatch")(module.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelPatch]
     
     /**
       * Adds a listener for when the node is removed from the document body.
       * @param node Node to wait for.
       * @param callback Function to be performed on event.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.onRemoved")
-    @js.native
-    def onRemoved(node: HTMLElement, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onRemoved(node: HTMLElement, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onRemoved")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Saved some `data` for plugin `pluginName` under `key` key. Gets saved in the plugins folder under `pluginName.config.json`. Data can be saved with `loadData`.
@@ -356,9 +340,8 @@ object mod {
       * @param key Key for the data should be saved under.
       * @param data Data to save.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.saveData")
-    @js.native
-    def saveData(pluginName: String, key: String, data: js.Any): Unit = js.native
+    @scala.inline
+    def saveData(pluginName: String, key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Yields the total active height of the application.
@@ -380,9 +363,8 @@ object mod {
       * @param key Key for the data should be saved under.
       * @param data Data to save.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.setData")
-    @js.native
-    def setData(pluginName: String, key: String, data: js.Any): Unit = js.native
+    @scala.inline
+    def setData(pluginName: String, key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gives access to BBD's internal settings object and is therefore subject to change.
@@ -402,12 +384,10 @@ object mod {
       * @param options.onConfirm Callback to occur when clicking the submit button.
       * @param options.onCancel Callback to occur when clicking the cancel button.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.showConfirmationModal")
-    @js.native
-    def showConfirmationModal(title: String, content: String): Unit = js.native
-    @JSImport("@bandagedbd/bdapi", "BdApi.showConfirmationModal")
-    @js.native
-    def showConfirmationModal(title: String, content: String, options: ConfirmationModalOptions): Unit = js.native
+    @scala.inline
+    def showConfirmationModal(title: String, content: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showConfirmationModal")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def showConfirmationModal(title: String, content: String, options: ConfirmationModalOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showConfirmationModal")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Shows a simple toast message similar to on Android. An example of the `success` toast can be seen [here](https://i.zackrauen.com/zIagVa.png).
@@ -417,52 +397,49 @@ object mod {
       * @param options.icon Determines whether the icon should show corresponding to the type. A toast without type will always have no icon. Default: true
       * @param options.timeout Adjusts the time (in ms) the toast should be shown for before disappearing automatically. Default: 3000
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.showToast")
-    @js.native
-    def showToast(content: String): Unit = js.native
-    @JSImport("@bandagedbd/bdapi", "BdApi.showToast")
-    @js.native
-    def showToast(content: String, options: ToastOptions): Unit = js.native
+    @scala.inline
+    def showToast(content: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showToast")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def showToast(content: String, options: ToastOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showToast")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wraps a function in a try catch block.
       * @param method Function to wrap.
       * @param message Additional info for any errors.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.suppressErrors")
-    @js.native
-    def suppressErrors(method: js.Function0[Unit]): js.Function0[Unit] = js.native
-    @JSImport("@bandagedbd/bdapi", "BdApi.suppressErrors")
-    @js.native
-    def suppressErrors(method: js.Function0[Unit], message: String): js.Function0[Unit] = js.native
+    @scala.inline
+    def suppressErrors(method: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressErrors")(method.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def suppressErrors(method: js.Function0[Unit], message: String): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("suppressErrors")(method.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
     /**
       * Determines if the input is valid and parseable JSON.
       * @param data Data to test.
       * @returns True if the data is valid, false otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.testJSON")
-    @js.native
-    def testJSON(data: String): Boolean = js.native
+    @scala.inline
+    def testJSON(data: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("testJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Toggles a BBD setting by id.
       * @param id Id for the setting.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.toggleOption")
-    @js.native
-    def toggleOption(id: String): Unit = js.native
+    @scala.inline
+    def toggleOption(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleOption")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes some previously linked JS by `linkJS`.
       * @param id ID of the node to remove.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApi.unlinkJS")
-    @js.native
-    def unlinkJS(id: String): Unit = js.native
+    @scala.inline
+    def unlinkJS(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkJS")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object BdApiModule {
+    
+    @JSImport("@bandagedbd/bdapi", "BdApiModule")
+    @js.native
+    val ^ : js.Any = js.native
     
     /* was `typeof AddonAPI` */
     @JSImport("@bandagedbd/bdapi", "BdApiModule.Plugins")
@@ -471,6 +448,10 @@ object mod {
     
     /* was `typeof ReactInstance` */
     object React {
+      
+      @JSImport("@bandagedbd/bdapi", "BdApiModule.React")
+      @js.native
+      val ^ : js.Any = js.native
       
       @JSImport("@bandagedbd/bdapi", "BdApiModule.React.Children")
       @js.native
@@ -556,286 +537,228 @@ object mod {
       val Suspense: ExoticComponent[SuspenseProps] = js.native
       
       // Custom components
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] with Attributes, children: ReactNode*): FunctionComponentElement[P] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P](element: FunctionComponentElement[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): FunctionComponentElement[P] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P](element: ReactElement, props: Partial[P] with Attributes, children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P](element: ReactElement, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P, T /* <: typings.react.mod.Component[P, ComponentState, _] */](element: CElement[P, T], props: Partial[P] with ClassAttributes[T], children: ReactNode*): CElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P, T /* <: typings.react.mod.Component[P, ComponentState, _] */](element: CElement[P, T], props: js.UndefOr[scala.Nothing], children: ReactNode*): CElement[P, T] = js.native
+      @scala.inline
+      def cloneElement[P](element: FunctionComponentElement[P], props: Partial[P] & Attributes, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+      @scala.inline
+      def cloneElement[P](element: FunctionComponentElement[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+      @scala.inline
+      def cloneElement[P](element: ReactElement, props: Partial[P] & Attributes, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def cloneElement[P](element: ReactElement, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def cloneElement[P, T /* <: typings.react.mod.Component[P, ComponentState, js.Any] */](element: CElement[P, T], props: Partial[P] & ClassAttributes[T], children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+      @scala.inline
+      def cloneElement[P, T /* <: typings.react.mod.Component[P, ComponentState, js.Any] */](element: CElement[P, T], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
       // DOM Element (has to be the last, because type checking stops at first overload that fits)
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: js.UndefOr[scala.Nothing], children: ReactNode*): DOMElement[P, T] = js.native
+      @scala.inline
+      def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: DOMAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+      @scala.inline
+      def cloneElement[P /* <: DOMAttributes[T] */, T /* <: Element */](element: DOMElement[P, T], props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
       // DOM Elements
       // ReactHTMLElement
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[P, T] = js.native
+      @scala.inline
+      def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: P, children: ReactNode*): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+      @scala.inline
+      def cloneElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: DetailedReactHTMLElement[P, T], props: Unit, children: ReactNode*): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
       // SVGElement
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: P, children: ReactNode*): ReactSVGElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactSVGElement = js.native
-      // ReactHTMLElement, less specific
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.cloneElement")
-      @js.native
-      def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactHTMLElement[T] = js.native
+      @scala.inline
+      def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: P, children: ReactNode*): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+      @scala.inline
+      def cloneElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](element: ReactSVGElement, props: Unit, children: ReactNode*): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createContext")
-      @js.native
+      // ReactHTMLElement, less specific
+      @scala.inline
+      def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: P, children: ReactNode*): ReactHTMLElement[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactHTMLElement[T]]
+      @scala.inline
+      def cloneElement_P_HTMLAttributesTT_HTMLElement_ReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](element: ReactHTMLElement[T], props: Unit, children: ReactNode*): ReactHTMLElement[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("cloneElement")(element.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactHTMLElement[T]]
+      
+      @scala.inline
       def createContext[T](
         // If you thought this should be optional, see
       // https://github.com/DefinitelyTyped/DefinitelyTyped/pull/24509#issuecomment-382213106
       defaultValue: T
-      ): Context[T] = js.native
+      ): Context[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[Context[T]]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: String, props: Attributes with P, children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: String, props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: String, props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: String, props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
       def createElement[P /* <: js.Object */](
         `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-        props: (ClassAttributes[ClassicComponent[P, ComponentState]]) with P,
+        props: (ClassAttributes[ClassicComponent[P, ComponentState]]) & P,
         children: ReactNode*
-      ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](
-        `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
-        props: js.UndefOr[scala.Nothing],
-        children: ReactNode*
-      ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
+      ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+      @scala.inline
       def createElement[P /* <: js.Object */](
         `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
         props: Null,
         children: ReactNode*
-      ): CElement[P, ClassicComponent[P, ComponentState]] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes with P, children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = js.native
+      ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+      @scala.inline
+      def createElement[P /* <: js.Object */](
+        `type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]],
+        props: Unit,
+        children: ReactNode*
+      ): CElement[P, ClassicComponent[P, ComponentState]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, ClassicComponent[P, ComponentState]]]
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: ComponentClass[P, ComponentState], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
       // Custom components
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): FunctionComponentElement[P] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): FunctionComponentElement[P] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] with P, children: ReactNode*): DOMElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+      @scala.inline
+      def createElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): FunctionComponentElement[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[FunctionComponentElement[P]]
+      @scala.inline
       def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
         `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-        props: ClassAttributes[T] with P,
+        props: ClassAttributes[T] & P,
         children: ReactNode*
-      ): ReactSVGElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
-        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
-        props: js.UndefOr[scala.Nothing],
-        children: ReactNode*
-      ): ReactSVGElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
+      ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+      @scala.inline
       def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
         `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
         props: Null,
         children: ReactNode*
-      ): ReactSVGElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */, T /* <: typings.react.mod.Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] with P, children: ReactNode*): CElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */, T /* <: typings.react.mod.Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: js.UndefOr[scala.Nothing], children: ReactNode*): CElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement[P /* <: js.Object */, T /* <: typings.react.mod.Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: js.UndefOr[scala.Nothing], children: ReactNode*): DOMElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
+      ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+      @scala.inline
+      def createElement[P /* <: SVGAttributes[T] */, T /* <: SVGElement */](
+        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any,
+        props: Unit,
+        children: ReactNode*
+      ): ReactSVGElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactSVGElement]
+      @scala.inline
+      def createElement[P /* <: js.Object */, T /* <: typings.react.mod.Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: ClassAttributes[T] & P, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+      @scala.inline
+      def createElement[P /* <: js.Object */, T /* <: typings.react.mod.Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Null, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+      @scala.inline
+      def createElement[P /* <: js.Object */, T /* <: typings.react.mod.Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C], props: Unit, children: ReactNode*): CElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[CElement[P, T]]
+      
+      @scala.inline
+      def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: ClassAttributes[T] & P, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+      @scala.inline
+      def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Null, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+      @scala.inline
+      def createElement_P_DOMAttributesTT_Element_DOMElement[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String, props: Unit, children: ReactNode*): DOMElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DOMElement[P, T]]
+      
+      @scala.inline
       def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
         `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-        props: ClassAttributes[T] with P,
+        props: ClassAttributes[T] & P,
         children: ReactNode*
-      ): DetailedReactHTMLElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
-        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
-        props: js.UndefOr[scala.Nothing],
-        children: ReactNode*
-      ): DetailedReactHTMLElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
+      ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+      @scala.inline
       def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
         `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
         props: Null,
         children: ReactNode*
-      ): DetailedReactHTMLElement[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes with P, children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: js.UndefOr[scala.Nothing], children: ReactNode*): ReactElement = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = js.native
+      ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+      @scala.inline
+      def createElement_P_HTMLAttributesTT_HTMLElement_DetailedReactHTMLElement[P /* <: HTMLAttributes[T] */, T /* <: HTMLElement */](
+        `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any,
+        props: Unit,
+        children: ReactNode*
+      ): DetailedReactHTMLElement[P, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[P, T]]
+      
+      @scala.inline
+      def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Attributes & P, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Null, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      @scala.inline
+      def createElement_P_Object_ReactElement[P /* <: js.Object */](`type`: FunctionComponent[P], props: Unit, children: ReactNode*): ReactElement = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[ReactElement]
+      
       // DOM Elements
       // TODO: generalize this to everything in `keyof ReactHTML`, not just "input"
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
+      @scala.inline
       def createElement_input(
         `type`: input,
-        props: InputHTMLAttributes[HTMLInputElement] with ClassAttributes[HTMLInputElement],
+        props: InputHTMLAttributes[HTMLInputElement] & ClassAttributes[HTMLInputElement],
         children: ReactNode*
-      ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_input(`type`: input, props: js.UndefOr[scala.Nothing], children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createElement")
-      @js.native
-      def createElement_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = js.native
+      ): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+      @scala.inline
+      def createElement_input(`type`: input, props: Null, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
+      @scala.inline
+      def createElement_input(`type`: input, props: Unit, children: ReactNode*): DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(`type`.asInstanceOf[js.Any], props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[DetailedReactHTMLElement[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createFactory")
-      @js.native
-      def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): SVGFactory = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createFactory")
-      @js.native
-      def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createFactory")
-      @js.native
-      def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = js.native
+      @scala.inline
+      def createFactory(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 55 */ js.Any): SVGFactory = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[SVGFactory]
+      @scala.inline
+      def createFactory[P](`type`: ClassType[P, ClassicComponent[P, ComponentState], ClassicComponentClass[P]]): CFactory[P, ClassicComponent[P, ComponentState]] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, ClassicComponent[P, ComponentState]]]
+      @scala.inline
+      def createFactory[P](`type`: ComponentClass[P, ComponentState]): Factory[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[Factory[P]]
       // Custom components
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createFactory")
-      @js.native
-      def createFactory[P](`type`: FunctionComponent[P]): FunctionComponentFactory[P] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createFactory")
-      @js.native
-      def createFactory[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMFactory[P, T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createFactory")
-      @js.native
-      def createFactory[P, T /* <: typings.react.mod.Component[P, ComponentState, _] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = js.native
+      @scala.inline
+      def createFactory[P](`type`: FunctionComponent[P]): FunctionComponentFactory[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[FunctionComponentFactory[P]]
+      @scala.inline
+      def createFactory[P /* <: DOMAttributes[T] */, T /* <: Element */](`type`: String): DOMFactory[P, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[DOMFactory[P, T]]
+      @scala.inline
+      def createFactory[P, T /* <: typings.react.mod.Component[P, ComponentState, js.Any] */, C /* <: ComponentClass[P, ComponentState] */](`type`: ClassType[P, T, C]): CFactory[P, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[CFactory[P, T]]
+      
       //
       // Top Level API
       // ----------------------------------------------------------------------
       // DOM Elements
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createFactory")
-      @js.native
-      def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any): HTMLFactory[T] = js.native
+      @scala.inline
+      def createFactory_T_HTMLElement_HTMLFactory[T /* <: HTMLElement */](`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 116 */ js.Any): HTMLFactory[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createFactory")(`type`.asInstanceOf[js.Any]).asInstanceOf[HTMLFactory[T]]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.createRef")
-      @js.native
-      def createRef[T](): RefObject[T] = js.native
+      @scala.inline
+      def createRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createRef")().asInstanceOf[RefObject[T]]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.forwardRef")
-      @js.native
-      def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] with RefAttributes[T]] = js.native
+      @scala.inline
+      def forwardRef[T, P](render: ForwardRefRenderFunction[T, P]): ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("forwardRef")(render.asInstanceOf[js.Any]).asInstanceOf[ForwardRefExoticComponent[PropsWithoutRef[P] & RefAttributes[T]]]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.isValidElement")
-      @js.native
-      def isValidElement[P](): /* is react.react.ReactElement */ Boolean = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.isValidElement")
-      @js.native
-      def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = js.native
+      @scala.inline
+      def isValidElement[P](): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")().asInstanceOf[/* is react.react.ReactElement */ Boolean]
+      @scala.inline
+      def isValidElement[P](`object`: js.Object): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidElement")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.memo")
-      @js.native
-      def memo[T /* <: ComponentType[_] */](Component: T): MemoExoticComponent[T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.memo")
-      @js.native
-      def memo[T /* <: ComponentType[_] */](
+      @scala.inline
+      def `lazy`[T /* <: ComponentType[js.Any] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("lazy")(factory.asInstanceOf[js.Any]).asInstanceOf[LazyExoticComponent[T]]
+      
+      @scala.inline
+      def memo[T /* <: ComponentType[js.Any] */](Component: T): MemoExoticComponent[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any]).asInstanceOf[MemoExoticComponent[T]]
+      @scala.inline
+      def memo[T /* <: ComponentType[js.Any] */](
         Component: T,
         propsAreEqual: js.Function2[/* prevProps */ ComponentProps[T], /* nextProps */ ComponentProps[T], Boolean]
-      ): MemoExoticComponent[T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.memo")
-      @js.native
-      def memo[P /* <: js.Object */](Component: SFC[P]): NamedExoticComponent[P] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.memo")
-      @js.native
+      ): MemoExoticComponent[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[MemoExoticComponent[T]]
+      @scala.inline
+      def memo[P /* <: js.Object */](Component: SFC[P]): NamedExoticComponent[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any]).asInstanceOf[NamedExoticComponent[P]]
+      @scala.inline
       def memo[P /* <: js.Object */](
         Component: SFC[P],
         propsAreEqual: js.Function2[/* prevProps */ PropsWithChildren[P], /* nextProps */ PropsWithChildren[P], Boolean]
-      ): NamedExoticComponent[P] = js.native
+      ): NamedExoticComponent[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("memo")(Component.asInstanceOf[js.Any], propsAreEqual.asInstanceOf[js.Any])).asInstanceOf[NamedExoticComponent[P]]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_startTransition")
-      @js.native
-      def unstableStartTransition(scope: TransitionFunction): Unit = js.native
+      @scala.inline
+      def unstableStartTransition(scope: TransitionFunction): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_startTransition")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
       @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_SuspenseList")
       @js.native
       val unstableSuspenseList: ExoticComponent[SuspenseListProps] = js.native
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_useDeferredValue")
-      @js.native
-      def unstableUseDeferredValue[T](value: T): T = js.native
+      @scala.inline
+      def unstableUseDeferredValue[T](value: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useDeferredValue")(value.asInstanceOf[js.Any]).asInstanceOf[T]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_useOpaqueIdentifier")
-      @js.native
-      def unstableUseOpaqueIdentifier(): OpaqueIdentifier = js.native
+      @scala.inline
+      def unstableUseOpaqueIdentifier(): OpaqueIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useOpaqueIdentifier")().asInstanceOf[OpaqueIdentifier]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_useTransition")
-      @js.native
-      def unstableUseTransition(): js.Tuple2[TransitionStartFunction, Boolean] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_useTransition")
-      @js.native
-      def unstableUseTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = js.native
+      @scala.inline
+      def unstableUseTransition(): js.Tuple2[TransitionStartFunction, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useTransition")().asInstanceOf[js.Tuple2[TransitionStartFunction, Boolean]]
+      @scala.inline
+      def unstableUseTransition(config: SuspenseConfig): js.Tuple2[TransitionStartFunction, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_useTransition")(config.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[TransitionStartFunction, Boolean]]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_withSuspenseConfig")
-      @js.native
-      def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.unstable_withSuspenseConfig")
-      @js.native
-      def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: SuspenseConfig): Unit = js.native
+      @scala.inline
+      def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def unstableWithSuspenseConfig(scope: js.Function0[js.UndefOr[Unit]], config: SuspenseConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_withSuspenseConfig")(scope.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       // I made 'inputs' required here and in useMemo as there's no point to memoizing without the memoization key
       // useCallback(X) is identical to just using X, useMemo(() => Y) is identical to just using Y.
@@ -847,9 +770,8 @@ object mod {
         * @see https://reactjs.org/docs/hooks-reference.html#usecallback
         */
       // TODO (TypeScript 3.0): <T extends (...args: never[]) => unknown>
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useCallback")
-      @js.native
-      def useCallback[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T, deps: DependencyList): T = js.native
+      @scala.inline
+      def useCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T, deps: DependencyList): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useCallback")(callback.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
       
       // This will technically work if you give a Consumer<T> or Provider<T> but it's deprecated and warns
       /**
@@ -859,9 +781,8 @@ object mod {
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#usecontext
         */
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useContext")
-      @js.native
-      def useContext[T](context: Context[T]): T = js.native
+      @scala.inline
+      def useContext[T](context: Context[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useContext")(context.asInstanceOf[js.Any]).asInstanceOf[T]
       
       /**
         * `useDebugValue` can be used to display a label for custom hooks in React DevTools.
@@ -874,12 +795,10 @@ object mod {
         */
       // the name of the custom hook is itself derived from the function name at runtime:
       // it's just the function name without the "use" prefix.
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useDebugValue")
-      @js.native
-      def useDebugValue[T](value: T): Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useDebugValue")
-      @js.native
-      def useDebugValue[T](value: T, format: js.Function1[/* value */ T, _]): Unit = js.native
+      @scala.inline
+      def useDebugValue[T](value: T): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def useDebugValue[T](value: T, format: js.Function1[/* value */ T, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useDebugValue")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * Accepts a function that contains imperative, possibly effectful code.
@@ -890,13 +809,15 @@ object mod {
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#useeffect
         */
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useEffect")
-      @js.native
-      def useEffect(effect: EffectCallback): Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useEffect")
-      @js.native
-      def useEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
+      @scala.inline
+      def useEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def useEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
+      @scala.inline
+      def useImperativeHandle[T, R /* <: T */](ref: Unit, init: js.Function0[R]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def useImperativeHandle[T, R /* <: T */](ref: Unit, init: js.Function0[R], deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
       // NOTE: this does not accept strings, but this will have to be fixed by removing strings from type Ref<T>
       /**
         * `useImperativeHandle` customizes the instance value that is exposed to parent components when using
@@ -907,12 +828,10 @@ object mod {
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#useimperativehandle
         */
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useImperativeHandle")
-      @js.native
-      def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R]): Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useImperativeHandle")
-      @js.native
-      def useImperativeHandle[T, R /* <: T */](ref: js.UndefOr[Ref[T]], init: js.Function0[R], deps: DependencyList): Unit = js.native
+      @scala.inline
+      def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def useImperativeHandle[T, R /* <: T */](ref: Ref[T], init: js.Function0[R], deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useImperativeHandle")(ref.asInstanceOf[js.Any], init.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * The signature is identical to `useEffect`, but it fires synchronously after all DOM mutations.
@@ -927,12 +846,10 @@ object mod {
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#uselayouteffect
         */
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useLayoutEffect")
-      @js.native
-      def useLayoutEffect(effect: EffectCallback): Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useLayoutEffect")
-      @js.native
-      def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = js.native
+      @scala.inline
+      def useLayoutEffect(effect: EffectCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def useLayoutEffect(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("useLayoutEffect")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /**
         * `useMemo` will only recompute the memoized value when one of the `deps` has changed.
@@ -953,12 +870,10 @@ object mod {
         * @see https://reactjs.org/docs/hooks-reference.html#usememo
         */
       // allow undefined, but don't make it optional as that is very likely a mistake
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useMemo")
-      @js.native
-      def useMemo[T](factory: js.Function0[T]): T = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useMemo")
-      @js.native
-      def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = js.native
+      @scala.inline
+      def useMemo[T](factory: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any]).asInstanceOf[T]
+      @scala.inline
+      def useMemo[T](factory: js.Function0[T], deps: DependencyList): T = (^.asInstanceOf[js.Dynamic].applyDynamic("useMemo")(factory.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[T]
       
       /**
         * An alternative to `useState`.
@@ -971,9 +886,8 @@ object mod {
         * @see https://reactjs.org/docs/hooks-reference.html#usereducer
         */
       // overload where dispatch could accept 0 arguments.
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useReducer")
-      @js.native
-      def useReducer[R /* <: ReducerWithoutAction[_] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+      @scala.inline
+      def useReducer[R /* <: ReducerWithoutAction[js.Any] */](reducer: R, initializerArg: ReducerStateWithoutAction[R], initializer: Unit): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
       /**
         * An alternative to `useState`.
         *
@@ -984,17 +898,14 @@ object mod {
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#usereducer
         */
-      // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
-      // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
-      // the last overload effectively behaves as if the identity function (x => x) is the initializer.
-      // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useReducer")
-      @js.native
-      def useReducer[R /* <: Reducer[_, _] */, I](
+      // overload where dispatch could accept 0 arguments.
+      @scala.inline
+      def useReducer[R /* <: ReducerWithoutAction[js.Any] */, I](
         reducer: R,
-        initializerArg: (I with ReducerState[R]) | I,
-        initializer: js.Function1[(/* arg */ I with ReducerState[R]) | (/* arg */ I), ReducerState[R]]
-      ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+        initializerArg: I,
+        initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
+      ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction]]
+      
       /**
         * An alternative to `useState`.
         *
@@ -1012,9 +923,9 @@ object mod {
       // which would prevent autocompletion from ever working.
       // TODO: double-check if this weird overload logic is necessary. It is possible it's either a bug
       // in older versions, or a regression in newer versions of the typescript completion service.
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useReducer")
-      @js.native
-      def useReducer_R_ReducerWildcardWildcard[R /* <: Reducer[_, _] */](reducer: R, initialState: ReducerState[R], initializer: js.UndefOr[scala.Nothing]): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = js.native
+      @scala.inline
+      def useReducer_R_ReducerAnyAny[R /* <: Reducer[js.Any, js.Any] */](reducer: R, initialState: ReducerState[R], initializer: Unit): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initialState.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]]]
+      
       /**
         * An alternative to `useState`.
         *
@@ -1025,14 +936,16 @@ object mod {
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#usereducer
         */
-      // overload where dispatch could accept 0 arguments.
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useReducer")
-      @js.native
-      def useReducer_R_ReducerWithoutActionWildcardI[R /* <: ReducerWithoutAction[_] */, I](
+      // overload where "I" may be a subset of ReducerState<R>; used to provide autocompletion.
+      // If "I" matches ReducerState<R> exactly then the last overload will allow initializer to be omitted.
+      // the last overload effectively behaves as if the identity function (x => x) is the initializer.
+      // overload for free "I"; all goes as long as initializer converts it into "ReducerState<R>".
+      @scala.inline
+      def useReducer_R_ReducerAnyAnyI[R /* <: Reducer[js.Any, js.Any] */, I](
         reducer: R,
-        initializerArg: I,
-        initializer: js.Function1[/* arg */ I, ReducerStateWithoutAction[R]]
-      ): js.Tuple2[ReducerStateWithoutAction[R], DispatchWithoutAction] = js.native
+        initializerArg: (I & ReducerState[R]) | I,
+        initializer: js.Function1[(/* arg */ I & ReducerState[R]) | (/* arg */ I), ReducerState[R]]
+      ): js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useReducer")(reducer.asInstanceOf[js.Any], initializerArg.asInstanceOf[js.Any], initializer.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[ReducerState[R], Dispatch[ReducerAction[R]]]]
       
       // convenience overload for refs given as a ref prop as they typically start with a null value
       /**
@@ -1049,12 +962,11 @@ object mod {
         * @see https://reactjs.org/docs/hooks-reference.html#useref
         */
       // TODO (TypeScript 3.0): <T extends unknown>
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useRef")
-      @js.native
-      def useRef[T](): RefObject[T] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useRef")
-      @js.native
-      def useRef[T](initialValue: T): RefObject[T] = js.native
+      @scala.inline
+      def useRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[RefObject[T]]
+      @scala.inline
+      def useRef[T](initialValue: T): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[RefObject[T]]
+      
       // convenience overload for potentially undefined initialValue / call with 0 arguments
       // has a default to stop it from defaulting to {} instead
       /**
@@ -1068,9 +980,8 @@ object mod {
         * @see https://reactjs.org/docs/hooks-reference.html#useref
         */
       // TODO (TypeScript 3.0): <T extends unknown>
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useRef")
-      @js.native
-      def useRef_T_MutableRefObject[T](): MutableRefObject[js.UndefOr[T]] = js.native
+      @scala.inline
+      def useRef_T_MutableRefObject[T](): MutableRefObject[js.UndefOr[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")().asInstanceOf[MutableRefObject[js.UndefOr[T]]]
       /**
         * `useRef` returns a mutable ref object whose `.current` property is initialized to the passed argument
         * (`initialValue`). The returned object will persist for the full lifetime of the component.
@@ -1082,9 +993,8 @@ object mod {
         * @see https://reactjs.org/docs/hooks-reference.html#useref
         */
       // TODO (TypeScript 3.0): <T extends unknown>
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useRef")
-      @js.native
-      def useRef_T_MutableRefObject[T](initialValue: T): MutableRefObject[T] = js.native
+      @scala.inline
+      def useRef_T_MutableRefObject[T](initialValue: T): MutableRefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRef")(initialValue.asInstanceOf[js.Any]).asInstanceOf[MutableRefObject[T]]
       
       // convenience overload when first argument is omitted
       /**
@@ -1093,47 +1003,40 @@ object mod {
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#usestate
         */
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useState")
-      @js.native
-      def useState[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = js.native
+      @scala.inline
+      def useState[S](): js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")().asInstanceOf[js.Tuple2[js.UndefOr[S], Dispatch[SetStateAction[js.UndefOr[S]]]]]
       /**
         * Returns a stateful value, and a function to update it.
         *
         * @version 16.8.0
         * @see https://reactjs.org/docs/hooks-reference.html#usestate
         */
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useState")
-      @js.native
-      def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.useState")
-      @js.native
-      def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = js.native
+      @scala.inline
+      def useState[S](initialState: S): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
+      @scala.inline
+      def useState[S](initialState: js.Function0[S]): js.Tuple2[S, Dispatch[SetStateAction[S]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useState")(initialState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[S, Dispatch[SetStateAction[S]]]]
       
       @JSImport("@bandagedbd/bdapi", "BdApiModule.React.version")
       @js.native
       val version: String = js.native
-      
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.React.lazy")
-      @js.native
-      def `lazy`[T /* <: ComponentType[_] */](factory: js.Function0[js.Promise[Default[T]]]): LazyExoticComponent[T] = js.native
     }
     
     /* was `typeof ReactDOMInstance` */
     object ReactDOM {
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.createPortal")
+      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM")
       @js.native
-      def createPortal(children: ReactNode, container: Element): ReactPortal = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.createPortal")
-      @js.native
-      def createPortal(children: ReactNode, container: Element, key: String): ReactPortal = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.findDOMNode")
-      @js.native
-      def findDOMNode(): Element | Null | Text = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.findDOMNode")
-      @js.native
-      def findDOMNode(instance: ReactInstance): Element | Null | Text = js.native
+      @scala.inline
+      def createPortal(children: ReactNode, container: Element): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
+      @scala.inline
+      def createPortal(children: ReactNode, container: Element, key: String): ReactPortal = (^.asInstanceOf[js.Dynamic].applyDynamic("createPortal")(children.asInstanceOf[js.Any], container.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactPortal]
+      
+      @scala.inline
+      def findDOMNode(): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")().asInstanceOf[Element | Null | Text]
+      @scala.inline
+      def findDOMNode(instance: ReactInstance): Element | Null | Text = ^.asInstanceOf[js.Dynamic].applyDynamic("findDOMNode")(instance.asInstanceOf[js.Any]).asInstanceOf[Element | Null | Text]
       
       @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.hydrate")
       @js.native
@@ -1143,60 +1046,52 @@ object mod {
       @js.native
       val render: Renderer = js.native
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unmountComponentAtNode")
-      @js.native
-      def unmountComponentAtNode(container: DocumentFragment): Boolean = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unmountComponentAtNode")
-      @js.native
-      def unmountComponentAtNode(container: Element): Boolean = js.native
+      @scala.inline
+      def unmountComponentAtNode(container: DocumentFragment): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+      @scala.inline
+      def unmountComponentAtNode(container: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("unmountComponentAtNode")(container.asInstanceOf[js.Any]).asInstanceOf[Boolean]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_batchedUpdates")
-      @js.native
-      def unstableBatchedUpdates(callback: js.Function0[_]): Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_batchedUpdates")
-      @js.native
-      def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, _], a: A): Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_batchedUpdates")
-      @js.native
-      def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, _], a: A, b: B): Unit = js.native
+      @scala.inline
+      def unstableBatchedUpdates(callback: js.Function0[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def unstableBatchedUpdates[A](callback: js.Function1[/* a */ A, js.Any], a: A): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def unstableBatchedUpdates[A, B](callback: js.Function2[/* a */ A, /* b */ B, js.Any], a: A, b: B): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_batchedUpdates")(callback.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_renderSubtreeIntoContainer")
-      @js.native
+      @scala.inline
       def unstableRenderSubtreeIntoContainer[T /* <: Element */](
-        parentComponent: Component[_, js.Object, _],
+        parentComponent: Component[js.Any, js.Object, js.Any],
         element: DOMElement[DOMAttributes[T], T],
         container: Element
-      ): T = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_renderSubtreeIntoContainer")
-      @js.native
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
       def unstableRenderSubtreeIntoContainer[T /* <: Element */](
-        parentComponent: Component[_, js.Object, _],
+        parentComponent: Component[js.Any, js.Object, js.Any],
         element: DOMElement[DOMAttributes[T], T],
         container: Element,
-        callback: js.Function1[/* element */ T, _]
-      ): T = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_renderSubtreeIntoContainer")
-      @js.native
-      def unstableRenderSubtreeIntoContainer[P](parentComponent: Component[_, js.Object, _], element: ReactElement, container: Element): (Component[P, ComponentState, _]) | Element | Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_renderSubtreeIntoContainer")
-      @js.native
+        callback: js.Function1[/* element */ T, js.Any]
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
+      def unstableRenderSubtreeIntoContainer[P](parentComponent: Component[js.Any, js.Object, js.Any], element: ReactElement, container: Element): (Component[P, ComponentState, js.Any]) | Element | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[(Component[P, ComponentState, js.Any]) | Element | Unit]
+      @scala.inline
       def unstableRenderSubtreeIntoContainer[P](
-        parentComponent: Component[_, js.Object, _],
+        parentComponent: Component[js.Any, js.Object, js.Any],
         element: ReactElement,
         container: Element,
-        callback: js.Function1[/* component */ js.UndefOr[(Component[P, ComponentState, _]) | Element], _]
-      ): (Component[P, ComponentState, _]) | Element | Unit = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_renderSubtreeIntoContainer")
-      @js.native
-      def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, _] */](parentComponent: Component[_, js.Object, _], element: CElement[P, T], container: Element): T = js.native
-      @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.unstable_renderSubtreeIntoContainer")
-      @js.native
-      def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, _] */](
-        parentComponent: Component[_, js.Object, _],
+        callback: js.Function1[
+              /* component */ js.UndefOr[(Component[P, ComponentState, js.Any]) | Element], 
+              js.Any
+            ]
+      ): (Component[P, ComponentState, js.Any]) | Element | Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[(Component[P, ComponentState, js.Any]) | Element | Unit]
+      @scala.inline
+      def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](parentComponent: Component[js.Any, js.Object, js.Any], element: CElement[P, T], container: Element): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
+      def unstableRenderSubtreeIntoContainer[P, T /* <: Component[P, ComponentState, js.Any] */](
+        parentComponent: Component[js.Any, js.Object, js.Any],
         element: CElement[P, T],
         container: Element,
-        callback: js.Function1[/* component */ T, _]
-      ): T = js.native
+        callback: js.Function1[/* component */ T, js.Any]
+      ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("unstable_renderSubtreeIntoContainer")(parentComponent.asInstanceOf[js.Any], element.asInstanceOf[js.Any], container.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
       
       @JSImport("@bandagedbd/bdapi", "BdApiModule.ReactDOM.version")
       @js.native
@@ -1208,34 +1103,30 @@ object mod {
       * @param title The title to show on the modal.
       * @param content Content to show in the modal (can be html string).
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.alert")
-    @js.native
-    def alert(title: String, content: String): Unit = js.native
+    @scala.inline
+    def alert(title: String, content: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Removes a style added with `injectCSS` below.
       * @param id ID of the node to remove.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.clearCSS")
-    @js.native
-    def clearCSS(id: String): Unit = js.native
+    @scala.inline
+    def clearCSS(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearCSS")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Deletes some saved data for plugin `pluginName` with key `key`.
       * @param pluginName Which plugin this is being used for.
       * @param key Key for which data should be deleted.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.deleteData")
-    @js.native
-    def deleteData(pluginName: String, key: String): Unit = js.native
+    @scala.inline
+    def deleteData(pluginName: String, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Disables a BBD setting by id.
       * @param id Id for the setting.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.disableSetting")
-    @js.native
-    def disableSetting(id: String): Unit = js.native
+    @scala.inline
+    def disableSetting(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableSetting")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Gives access to BBD's internal emotes object and is therefore subject to change.
@@ -1248,63 +1139,56 @@ object mod {
       * Enables a BBD setting by id.
       * @param id Id for the setting.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.enableSetting")
-    @js.native
-    def enableSetting(id: String): Unit = js.native
+    @scala.inline
+    def enableSetting(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableSetting")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Searches for multiple internal Discord webpack module based on `filter`. It's the same as `findModule` but will return all matches.
       * @param filter A function to use to filter modules.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.findAllModules")
-    @js.native
-    def findAllModules(filter: js.Function0[Unit]): js.Array[_] = js.native
+    @scala.inline
+    def findAllModules(filter: js.Function0[Unit]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("findAllModules")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
     
     /**
       * Searches for an internal Discord webpack module based on `filter`.
       * @param filter A function to use to filter modules.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.findModule")
-    @js.native
-    def findModule(filter: js.Function0[Unit]): js.Any = js.native
+    @scala.inline
+    def findModule(filter: js.Function0[Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModule")(filter.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Searches for an internal Discord webpack module with a specific `displayName` value.
       * @param name The `displayName` to look for.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.findModuleByDisplayName")
-    @js.native
-    def findModuleByDisplayName(name: String): js.Any = js.native
+    @scala.inline
+    def findModuleByDisplayName(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByDisplayName")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Searches for an internal Discord webpack module that has every property passed.
       * @param props A series of properties to check for.
       * @returns The modules found or null if none were found.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.findModuleByProps")
-    @js.native
-    def findModuleByProps(props: String*): js.Any = js.native
+    @scala.inline
+    def findModuleByProps(props: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Searches for an internal Discord webpack module that has every property passed on its prototype.
       * @param props A series of prototype properties to check for
       * @returns The modules found or null if none were found..
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.findModuleByPrototypes")
-    @js.native
-    def findModuleByPrototypes(props: String*): js.Any = js.native
+    @scala.inline
+    def findModuleByPrototypes(props: String*): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("findModuleByPrototypes")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Returns BandagedBD's instance of the core module. Only use this if you know what you are doing.
       * @deprecated since 2020.3.27
       * @returns BBD's instantiated core module.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.getCore")
-    @js.native
-    def getCore(): js.Any = js.native
+    @scala.inline
+    def getCore(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getCore")().asInstanceOf[js.Any]
     
     // TODO: This should not return 'any' but instead 'Core'
     // Not worth it in my opinion because it's deprecated (commit caf3406e0a22a24dc5ad76d9c51edb3330d379b7)
@@ -1314,18 +1198,16 @@ object mod {
       * @param key Key for which data should be returned.
       * @returns The information that was saved previously, or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.getData")
-    @js.native
-    def getData(pluginName: String, key: String): js.Any = js.native
+    @scala.inline
+    def getData(pluginName: String, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Gets the internal react instance for a particular node.
       * @param node jQuery
       * @returns The instance if found or undefined otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.getInternalInstance")
-    @js.native
-    def getInternalInstance(node: HTMLElement): js.UndefOr[js.Object] = js.native
+    @scala.inline
+    def getInternalInstance(node: HTMLElement): js.UndefOr[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInternalInstance")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Object]]
     
     /**
       * Gets the instance of another plugin with the name `name`.
@@ -1333,9 +1215,8 @@ object mod {
       * @param name Name of the plugin to retreive.
       * @returns The plugin if found or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.getPlugin")
-    @js.native
-    def getPlugin(name: String): js.Object | Null = js.native
+    @scala.inline
+    def getPlugin(name: String): js.Object | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlugin")(name.asInstanceOf[js.Any]).asInstanceOf[js.Object | Null]
     
     /**
       * Adds a block of css to the current document's `head`.
@@ -1343,18 +1224,16 @@ object mod {
       * @param css String of css to be added.
       * @returns The plugin if found or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.injectCSS")
-    @js.native
-    def injectCSS(id: String, css: String): js.Object | Null = js.native
+    @scala.inline
+    def injectCSS(id: String, css: String): js.Object | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("injectCSS")(id.asInstanceOf[js.Any], css.asInstanceOf[js.Any])).asInstanceOf[js.Object | Null]
     
     /**
       * Links some remote JavaScript to be added to the page. Useful for libraries like `Sortable.js`.
       * @param id Identifier for the node to be added. Can be used later with `unlinkJS` below.
       * @param url URL of the js.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.linkJS")
-    @js.native
-    def linkJS(id: String, url: String): Unit = js.native
+    @scala.inline
+    def linkJS(id: String, url: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkJS")(id.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets some saved data for plugin `pluginName` with key `key`. Data can be saved with `saveData`.
@@ -1362,9 +1241,8 @@ object mod {
       * @param key Key for which data should be returned.
       * @returns The information that was saved previously, or null otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.loadData")
-    @js.native
-    def loadData(pluginName: String, key: String): js.Any = js.native
+    @scala.inline
+    def loadData(pluginName: String, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("loadData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * This function monkey-patches a method on an object. The patching callback may be run before, after or instead of target method.
@@ -1389,18 +1267,16 @@ object mod {
       * Can't be combined with `before` and `after`.
       * @returns A cancel function which allows you to undo the patch.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.monkeyPatch")
-    @js.native
-    def monkeyPatch(module: js.Object, methodName: String, options: MonkeyPatchOptions): CancelPatch = js.native
+    @scala.inline
+    def monkeyPatch(module: js.Object, methodName: String, options: MonkeyPatchOptions): CancelPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("monkeyPatch")(module.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelPatch]
     
     /**
       * Adds a listener for when the node is removed from the document body.
       * @param node Node to wait for.
       * @param callback Function to be performed on event.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.onRemoved")
-    @js.native
-    def onRemoved(node: HTMLElement, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onRemoved(node: HTMLElement, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("onRemoved")(node.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Saved some `data` for plugin `pluginName` under `key` key. Gets saved in the plugins folder under `pluginName.config.json`. Data can be saved with `loadData`.
@@ -1408,9 +1284,8 @@ object mod {
       * @param key Key for the data should be saved under.
       * @param data Data to save.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.saveData")
-    @js.native
-    def saveData(pluginName: String, key: String, data: js.Any): Unit = js.native
+    @scala.inline
+    def saveData(pluginName: String, key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("saveData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Yields the total active height of the application.
@@ -1432,9 +1307,8 @@ object mod {
       * @param key Key for the data should be saved under.
       * @param data Data to save.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.setData")
-    @js.native
-    def setData(pluginName: String, key: String, data: js.Any): Unit = js.native
+    @scala.inline
+    def setData(pluginName: String, key: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setData")(pluginName.asInstanceOf[js.Any], key.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gives access to BBD's internal settings object and is therefore subject to change.
@@ -1454,12 +1328,10 @@ object mod {
       * @param options.onConfirm Callback to occur when clicking the submit button.
       * @param options.onCancel Callback to occur when clicking the cancel button.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.showConfirmationModal")
-    @js.native
-    def showConfirmationModal(title: String, content: String): Unit = js.native
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.showConfirmationModal")
-    @js.native
-    def showConfirmationModal(title: String, content: String, options: ConfirmationModalOptions): Unit = js.native
+    @scala.inline
+    def showConfirmationModal(title: String, content: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showConfirmationModal")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def showConfirmationModal(title: String, content: String, options: ConfirmationModalOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showConfirmationModal")(title.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Shows a simple toast message similar to on Android. An example of the `success` toast can be seen [here](https://i.zackrauen.com/zIagVa.png).
@@ -1469,65 +1341,57 @@ object mod {
       * @param options.icon Determines whether the icon should show corresponding to the type. A toast without type will always have no icon. Default: true
       * @param options.timeout Adjusts the time (in ms) the toast should be shown for before disappearing automatically. Default: 3000
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.showToast")
-    @js.native
-    def showToast(content: String): Unit = js.native
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.showToast")
-    @js.native
-    def showToast(content: String, options: ToastOptions): Unit = js.native
+    @scala.inline
+    def showToast(content: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showToast")(content.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def showToast(content: String, options: ToastOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showToast")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Wraps a function in a try catch block.
       * @param method Function to wrap.
       * @param message Additional info for any errors.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.suppressErrors")
-    @js.native
-    def suppressErrors(method: js.Function0[Unit]): js.Function0[Unit] = js.native
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.suppressErrors")
-    @js.native
-    def suppressErrors(method: js.Function0[Unit], message: String): js.Function0[Unit] = js.native
+    @scala.inline
+    def suppressErrors(method: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressErrors")(method.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
+    @scala.inline
+    def suppressErrors(method: js.Function0[Unit], message: String): js.Function0[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("suppressErrors")(method.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Function0[Unit]]
     
     /**
       * Determines if the input is valid and parseable JSON.
       * @param data Data to test.
       * @returns True if the data is valid, false otherwise.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.testJSON")
-    @js.native
-    def testJSON(data: String): Boolean = js.native
+    @scala.inline
+    def testJSON(data: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("testJSON")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Toggles a BBD setting by id.
       * @param id Id for the setting.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.toggleOption")
-    @js.native
-    def toggleOption(id: String): Unit = js.native
+    @scala.inline
+    def toggleOption(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleOption")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Removes some previously linked JS by `linkJS`.
       * @param id ID of the node to remove.
       */
-    @JSImport("@bandagedbd/bdapi", "BdApiModule.unlinkJS")
-    @js.native
-    def unlinkJS(id: String): Unit = js.native
+    @scala.inline
+    def unlinkJS(id: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkJS")(id.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type CancelPatch = js.Function0[Unit]
   
-  @js.native
   trait ConfirmationModalOptions extends StObject {
     
-    var cancelText: js.UndefOr[String] = js.native
+    var cancelText: js.UndefOr[String] = js.undefined
     
-    var confirmText: js.UndefOr[String] = js.native
+    var confirmText: js.UndefOr[String] = js.undefined
     
-    var danger: js.UndefOr[Boolean] = js.native
+    var danger: js.UndefOr[Boolean] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function0[_]] = js.native
+    var onCancel: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onConfirm: js.UndefOr[js.Function0[_]] = js.native
+    var onConfirm: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object ConfirmationModalOptions {
     
@@ -1559,33 +1423,32 @@ object mod {
       def setDangerUndefined: Self = StObject.set(x, "danger", js.undefined)
       
       @scala.inline
-      def setOnCancel(value: () => _): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
+      def setOnCancel(value: () => js.Any): Self = StObject.set(x, "onCancel", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
       @scala.inline
-      def setOnConfirm(value: () => _): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
+      def setOnConfirm(value: () => js.Any): Self = StObject.set(x, "onConfirm", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnConfirmUndefined: Self = StObject.set(x, "onConfirm", js.undefined)
     }
   }
   
-  @js.native
   trait MonkeyPatchOptions extends StObject {
     
-    var after: js.UndefOr[PatchFunction] = js.native
+    var after: js.UndefOr[PatchFunction] = js.undefined
     
-    var before: js.UndefOr[PatchFunction] = js.native
+    var before: js.UndefOr[PatchFunction] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var instead: js.UndefOr[PatchFunction] = js.native
+    var instead: js.UndefOr[PatchFunction] = js.undefined
     
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object MonkeyPatchOptions {
     
@@ -1636,20 +1499,19 @@ object mod {
     }
   }
   
-  @js.native
   trait PatchData extends StObject {
     
-    var CancelPatch: typings.bandagedbdBdapi.mod.CancelPatch = js.native
+    var CancelPatch: typings.bandagedbdBdapi.mod.CancelPatch
     
-    def callOriginalMethod(): Unit = js.native
+    def callOriginalMethod(): Unit
     
-    var methodArguments: js.Array[_] = js.native
+    var methodArguments: js.Array[js.Any]
     
-    def originalMethod(): Unit = js.native
+    def originalMethod(): Unit
     
-    var returnValue: js.Any = js.native
+    var returnValue: js.Any
     
-    var thisObject: js.Object = js.native
+    var thisObject: js.Object
   }
   object PatchData {
     
@@ -1657,7 +1519,7 @@ object mod {
     def apply(
       CancelPatch: () => Unit,
       callOriginalMethod: () => Unit,
-      methodArguments: js.Array[_],
+      methodArguments: js.Array[js.Any],
       originalMethod: () => Unit,
       returnValue: js.Any,
       thisObject: js.Object
@@ -1676,7 +1538,7 @@ object mod {
       def setCancelPatch(value: () => Unit): Self = StObject.set(x, "CancelPatch", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setMethodArguments(value: js.Array[_]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+      def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
@@ -1694,14 +1556,13 @@ object mod {
   
   type PatchFunction = js.Function1[/* data */ PatchData, js.Any]
   
-  @js.native
   trait ToastOptions extends StObject {
     
-    var icon: js.UndefOr[Boolean] = js.native
+    var icon: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ToastOptions {
     

@@ -3,19 +3,17 @@ package typings.baseui.datepickerMod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatepickerState extends StObject {
   
-  var calendarFocused: Boolean = js.native
+  var calendarFocused: Boolean
   
-  var isOpen: Boolean = js.native
+  var isOpen: Boolean
   
-  var isPseudoFocused: Boolean = js.native
+  var isPseudoFocused: Boolean
   
-  var lastActiveElm: js.UndefOr[HTMLElement] = js.native
+  var lastActiveElm: js.UndefOr[HTMLElement] = js.undefined
 }
 object DatepickerState {
   

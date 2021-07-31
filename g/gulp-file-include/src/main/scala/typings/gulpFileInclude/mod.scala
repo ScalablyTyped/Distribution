@@ -6,49 +6,49 @@ import typings.gulpFileInclude.gulpFileIncludeStrings.`@root`
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-file-include", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): ReadWriteStream = js.native
-  @JSImport("gulp-file-include", JSImport.Namespace)
-  @js.native
-  def apply(prefix: String): ReadWriteStream = js.native
+  @scala.inline
+  def apply(opts: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(prefix: String): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(prefix.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-file-include", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * Can be "@file" or "@root" or some base path.
       * default: "@file"
       */
-    var basepath: js.UndefOr[`@file` | `@root` | String] = js.native
+    var basepath: js.UndefOr[`@file` | `@root` | String] = js.undefined
     
     /**
       * Effectively a context for variables used in 'if' statements.
       */
-    var context: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var context: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * Filters basically look like functions that get passed into '@@include'.
       * When one of these functions is called, something of that name is looked
       * up in this object and called to get the contents of that include.
       */
-    var filters: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, String]]] = js.native
+    var filters: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, String]]] = js.undefined
     
     /**
       * default: false
       */
-    var indent: js.UndefOr[Boolean] = js.native
+    var indent: js.UndefOr[Boolean] = js.undefined
     
     /** default: "@@" */
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     /** default: "" */
-    var suffix: js.UndefOr[String] = js.native
+    var suffix: js.UndefOr[String] = js.undefined
   }
   object Options {
     

@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupColumn extends StObject {
   
   // Indicates whether multiple values can be selected from the source.
-  var allowMultipleValues: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowMultipleValues: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether values in the column should be able to exceed the standard limit of 255 characters.
-  var allowUnlimitedLength: js.UndefOr[NullableOption[Boolean]] = js.native
+  var allowUnlimitedLength: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The name of the lookup source column.
-  var columnName: js.UndefOr[NullableOption[String]] = js.native
+  var columnName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier of the lookup source list.
-  var listId: js.UndefOr[NullableOption[String]] = js.native
+  var listId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * If specified, this column is a secondary lookup, pulling an additional field from the list item looked up by the
     * primary lookup. Use the list item looked up by the primary as the source for the column named here.
     */
-  var primaryLookupColumnId: js.UndefOr[NullableOption[String]] = js.native
+  var primaryLookupColumnId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object LookupColumn {
   

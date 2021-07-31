@@ -2,16 +2,14 @@ package typings.awsSdk.cloud9Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEnvironmentsRequest extends StObject {
   
   /**
     * The IDs of individual environments to get information about.
     */
-  var environmentIds: BoundedEnvironmentIdList = js.native
+  var environmentIds: BoundedEnvironmentIdList
 }
 object DescribeEnvironmentsRequest {
   

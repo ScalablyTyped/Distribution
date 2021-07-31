@@ -2,46 +2,44 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MsSmoothGroupSettings extends StObject {
   
   /**
     * By default, the service creates one .ism Microsoft Smooth Streaming manifest for each Microsoft Smooth Streaming output group in your job. This default manifest references every output in the output group. To create additional manifests that reference a subset of the outputs in the output group, specify a list of them here.
     */
-  var AdditionalManifests: js.UndefOr[listOfMsSmoothAdditionalManifest] = js.native
+  var AdditionalManifests: js.UndefOr[listOfMsSmoothAdditionalManifest] = js.undefined
   
   /**
     * COMBINE_DUPLICATE_STREAMS combines identical audio encoding settings across a Microsoft Smooth output group into a single audio stream.
     */
-  var AudioDeduplication: js.UndefOr[MsSmoothAudioDeduplication] = js.native
+  var AudioDeduplication: js.UndefOr[MsSmoothAudioDeduplication] = js.undefined
   
   /**
     * Use Destination (Destination) to specify the S3 output location and the output filename base. Destination accepts format identifiers. If you do not specify the base filename in the URI, the service will use the filename of the input file. If your job has multiple inputs, the service uses the filename of the first input file.
     */
-  var Destination: js.UndefOr[stringPatternS3] = js.native
+  var Destination: js.UndefOr[stringPatternS3] = js.undefined
   
   /**
     * Settings associated with the destination. Will vary based on the type of destination
     */
-  var DestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DestinationSettings] = js.native
+  var DestinationSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.DestinationSettings] = js.undefined
   
   /**
     * If you are using DRM, set DRM System (MsSmoothEncryptionSettings) to specify the value SpekeKeyProvider.
     */
-  var Encryption: js.UndefOr[MsSmoothEncryptionSettings] = js.native
+  var Encryption: js.UndefOr[MsSmoothEncryptionSettings] = js.undefined
   
   /**
     * Use Fragment length (FragmentLength) to specify the mp4 fragment sizes in seconds. Fragment length must be compatible with GOP size and frame rate.
     */
-  var FragmentLength: js.UndefOr[integerMin1Max2147483647] = js.native
+  var FragmentLength: js.UndefOr[integerMin1Max2147483647] = js.undefined
   
   /**
     * Use Manifest encoding (MsSmoothManifestEncoding) to specify the encoding format for the server and client manifest. Valid options are utf8 and utf16.
     */
-  var ManifestEncoding: js.UndefOr[MsSmoothManifestEncoding] = js.native
+  var ManifestEncoding: js.UndefOr[MsSmoothManifestEncoding] = js.undefined
 }
 object MsSmoothGroupSettings {
   

@@ -5,18 +5,18 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface offers access to the written bytes */
-@js.native
-trait XSequenceOutputStream extends XOutputStream {
+trait XSequenceOutputStream
+  extends StObject
+     with XOutputStream {
   
   /** allows to get access to the written data */
-  val WrittenBytes: SafeArray[Double] = js.native
+  val WrittenBytes: SafeArray[Double]
   
   /** allows to get access to the written data */
-  def getWrittenBytes(): SafeArray[Double] = js.native
+  def getWrittenBytes(): SafeArray[Double]
 }
 object XSequenceOutputStream {
   

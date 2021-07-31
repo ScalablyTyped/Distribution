@@ -2,16 +2,14 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPlaylistPlayer extends StObject {
   
   /**
     * An &lt;iframe&gt; tag that embeds a player that will play the playlist.
     */
-  var embedHtml: js.UndefOr[String] = js.native
+  var embedHtml: js.UndefOr[String] = js.undefined
 }
 object SchemaPlaylistPlayer {
   

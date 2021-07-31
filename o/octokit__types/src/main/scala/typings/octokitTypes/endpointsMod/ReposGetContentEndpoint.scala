@@ -2,22 +2,20 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetContentEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
-  var path: String = js.native
+  var path: String
   
   /**
     * The name of the commit/branch/tag. Default: the repository’s default branch (usually `master`)
     */
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposGetContentEndpoint {
   

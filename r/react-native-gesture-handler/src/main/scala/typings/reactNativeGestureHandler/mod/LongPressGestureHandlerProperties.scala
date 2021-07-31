@@ -2,19 +2,19 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LongPressGestureHandlerProperties extends GestureHandlerProperties {
+trait LongPressGestureHandlerProperties
+  extends StObject
+     with GestureHandlerProperties {
   
-  var maxDist: js.UndefOr[Double] = js.native
+  var maxDist: js.UndefOr[Double] = js.undefined
   
-  var minDurationMs: js.UndefOr[Double] = js.native
+  var minDurationMs: js.UndefOr[Double] = js.undefined
   
-  var onGestureEvent: js.UndefOr[js.Function1[/* event */ LongPressGestureHandlerGestureEvent, Unit]] = js.native
+  var onGestureEvent: js.UndefOr[js.Function1[/* event */ LongPressGestureHandlerGestureEvent, Unit]] = js.undefined
   
-  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ LongPressGestureHandlerStateChangeEvent, Unit]] = js.native
+  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ LongPressGestureHandlerStateChangeEvent, Unit]] = js.undefined
 }
 object LongPressGestureHandlerProperties {
   

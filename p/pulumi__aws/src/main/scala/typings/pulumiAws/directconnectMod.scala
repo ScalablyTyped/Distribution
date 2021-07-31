@@ -40,10 +40,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directconnectMod {
+  
+  @JSImport("@pulumi/aws/directconnect", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/directconnect", "BgpPeer")
   @js.native
@@ -62,6 +65,10 @@ object directconnectMod {
   /* static members */
   object BgpPeer {
     
+    @JSImport("@pulumi/aws/directconnect", "BgpPeer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BgpPeer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,26 +78,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.bgpPeerMod.BgpPeer = js.native
-    @JSImport("@pulumi/aws/directconnect", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.bgpPeerMod.BgpPeer = js.native
-    @JSImport("@pulumi/aws/directconnect", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BgpPeerState): typings.pulumiAws.bgpPeerMod.BgpPeer = js.native
-    @JSImport("@pulumi/aws/directconnect", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BgpPeerState, opts: CustomResourceOptions): typings.pulumiAws.bgpPeerMod.BgpPeer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.bgpPeerMod.BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bgpPeerMod.BgpPeer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.bgpPeerMod.BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bgpPeerMod.BgpPeer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BgpPeerState): typings.pulumiAws.bgpPeerMod.BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bgpPeerMod.BgpPeer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BgpPeerState, opts: CustomResourceOptions): typings.pulumiAws.bgpPeerMod.BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.bgpPeerMod.BgpPeer]
     
     /**
       * Returns true if the given object is an instance of BgpPeer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "BgpPeer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "Connection")
@@ -110,6 +112,10 @@ object directconnectMod {
   /* static members */
   object Connection {
     
+    @JSImport("@pulumi/aws/directconnect", "Connection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Connection resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -119,26 +125,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.connectionMod.Connection = js.native
-    @JSImport("@pulumi/aws/directconnect", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.connectionMod.Connection = js.native
-    @JSImport("@pulumi/aws/directconnect", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionState): typings.pulumiAws.connectionMod.Connection = js.native
-    @JSImport("@pulumi/aws/directconnect", "Connection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): typings.pulumiAws.connectionMod.Connection = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.connectionMod.Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionMod.Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.connectionMod.Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionMod.Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionState): typings.pulumiAws.connectionMod.Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionMod.Connection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionState, opts: CustomResourceOptions): typings.pulumiAws.connectionMod.Connection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionMod.Connection]
     
     /**
       * Returns true if the given object is an instance of Connection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "Connection.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connection.Connection */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation")
@@ -158,6 +159,10 @@ object directconnectMod {
   /* static members */
   object ConnectionAssociation {
     
+    @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ConnectionAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -167,26 +172,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionAssociationState): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConnectionAssociationState, opts: CustomResourceOptions): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionAssociationMod.ConnectionAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionAssociationMod.ConnectionAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionAssociationState): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionAssociationMod.ConnectionAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConnectionAssociationState, opts: CustomResourceOptions): typings.pulumiAws.connectionAssociationMod.ConnectionAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.connectionAssociationMod.ConnectionAssociation]
     
     /**
       * Returns true if the given object is an instance of ConnectionAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "ConnectionAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/connectionAssociation.ConnectionAssociation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "Gateway")
@@ -206,6 +206,10 @@ object directconnectMod {
   /* static members */
   object Gateway {
     
+    @JSImport("@pulumi/aws/directconnect", "Gateway")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Gateway resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -215,26 +219,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayMod.Gateway = js.native
-    @JSImport("@pulumi/aws/directconnect", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.gatewayMod.Gateway = js.native
-    @JSImport("@pulumi/aws/directconnect", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayState): typings.pulumiAws.gatewayMod.Gateway = js.native
-    @JSImport("@pulumi/aws/directconnect", "Gateway.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): typings.pulumiAws.gatewayMod.Gateway = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayMod.Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.gatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayMod.Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayState): typings.pulumiAws.gatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayMod.Gateway]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayState, opts: CustomResourceOptions): typings.pulumiAws.gatewayMod.Gateway = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayMod.Gateway]
     
     /**
       * Returns true if the given object is an instance of Gateway.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "Gateway.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/gateway.Gateway */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "GatewayAssociation")
@@ -254,6 +253,10 @@ object directconnectMod {
   /* static members */
   object GatewayAssociation {
     
+    @JSImport("@pulumi/aws/directconnect", "GatewayAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GatewayAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -263,26 +266,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayAssociationState): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = js.native
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayAssociationState, opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationMod.GatewayAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationMod.GatewayAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayAssociationState): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationMod.GatewayAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayAssociationState, opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationMod.GatewayAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationMod.GatewayAssociation]
     
     /**
       * Returns true if the given object is an instance of GatewayAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociation.GatewayAssociation */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "GatewayAssociationProposal")
@@ -302,6 +300,10 @@ object directconnectMod {
   /* static members */
   object GatewayAssociationProposal {
     
+    @JSImport("@pulumi/aws/directconnect", "GatewayAssociationProposal")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GatewayAssociationProposal resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -311,26 +313,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociationProposal.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = js.native
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociationProposal.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = js.native
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociationProposal.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayAssociationProposalState): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = js.native
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociationProposal.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GatewayAssociationProposalState, opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayAssociationProposalState): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GatewayAssociationProposalState, opts: CustomResourceOptions): typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.gatewayAssociationProposalMod.GatewayAssociationProposal]
     
     /**
       * Returns true if the given object is an instance of GatewayAssociationProposal.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "GatewayAssociationProposal.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociationProposal.GatewayAssociationProposal */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociationProposal.GatewayAssociationProposal */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/gatewayAssociationProposal.GatewayAssociationProposal */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterface")
@@ -350,6 +347,10 @@ object directconnectMod {
   /* static members */
   object HostedPrivateVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedPrivateVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -359,31 +360,26 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPrivateVirtualInterfaceState): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterface.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPrivateVirtualInterfaceState): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedPrivateVirtualInterfaceState,
       opts: CustomResourceOptions
-    ): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = js.native
+    ): typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceMod.HostedPrivateVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of HostedPrivateVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterface.HostedPrivateVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterface.HostedPrivateVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterface.HostedPrivateVirtualInterface */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterfaceAccepter")
@@ -403,6 +399,10 @@ object directconnectMod {
   /* static members */
   object HostedPrivateVirtualInterfaceAccepter {
     
+    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterfaceAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedPrivateVirtualInterfaceAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -412,31 +412,26 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPrivateVirtualInterfaceAccepterState): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterfaceAccepter.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPrivateVirtualInterfaceAccepterState): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedPrivateVirtualInterfaceAccepterState,
       opts: CustomResourceOptions
-    ): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = js.native
+    ): typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPrivateVirtualInterfaceAccepterMod.HostedPrivateVirtualInterfaceAccepter]
     
     /**
       * Returns true if the given object is an instance of HostedPrivateVirtualInterfaceAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPrivateVirtualInterfaceAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter.HostedPrivateVirtualInterfaceAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter.HostedPrivateVirtualInterfaceAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPrivateVirtualInterfaceAccepter.HostedPrivateVirtualInterfaceAccepter */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterface")
@@ -456,6 +451,10 @@ object directconnectMod {
   /* static members */
   object HostedPublicVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedPublicVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -465,26 +464,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceMod.HostedPublicVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of HostedPublicVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterface.HostedPublicVirtualInterface */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter")
@@ -504,6 +498,10 @@ object directconnectMod {
   /* static members */
   object HostedPublicVirtualInterfaceAccepter {
     
+    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedPublicVirtualInterfaceAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -513,31 +511,26 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceAccepterState): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedPublicVirtualInterfaceAccepterState): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedPublicVirtualInterfaceAccepterState,
       opts: CustomResourceOptions
-    ): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = js.native
+    ): typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedPublicVirtualInterfaceAccepterMod.HostedPublicVirtualInterfaceAccepter]
     
     /**
       * Returns true if the given object is an instance of HostedPublicVirtualInterfaceAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedPublicVirtualInterfaceAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedPublicVirtualInterfaceAccepter.HostedPublicVirtualInterfaceAccepter */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterface")
@@ -557,6 +550,10 @@ object directconnectMod {
   /* static members */
   object HostedTransitVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedTransitVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -566,31 +563,26 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceState): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterface.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceState): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedTransitVirtualInterfaceState,
       opts: CustomResourceOptions
-    ): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = js.native
+    ): typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceMod.HostedTransitVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of HostedTransitVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterface.HostedTransitVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterface.HostedTransitVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterface.HostedTransitVirtualInterface */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterfaceAcceptor")
@@ -610,6 +602,10 @@ object directconnectMod {
   /* static members */
   object HostedTransitVirtualInterfaceAcceptor {
     
+    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterfaceAcceptor")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing HostedTransitVirtualInterfaceAcceptor resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -619,31 +615,26 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceAcceptorState): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = js.native
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterfaceAcceptor.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: HostedTransitVirtualInterfaceAcceptorState): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: HostedTransitVirtualInterfaceAcceptorState,
       opts: CustomResourceOptions
-    ): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = js.native
+    ): typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.hostedTransitVirtualInterfaceAcceptorMod.HostedTransitVirtualInterfaceAcceptor]
     
     /**
       * Returns true if the given object is an instance of HostedTransitVirtualInterfaceAcceptor.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "HostedTransitVirtualInterfaceAcceptor.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/hostedTransitVirtualInterfaceAcceptor.HostedTransitVirtualInterfaceAcceptor */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup")
@@ -663,6 +654,10 @@ object directconnectMod {
   /* static members */
   object LinkAggregationGroup {
     
+    @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing LinkAggregationGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -672,26 +667,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = js.native
-    @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = js.native
-    @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LinkAggregationGroupState): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = js.native
-    @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: LinkAggregationGroupState, opts: CustomResourceOptions): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LinkAggregationGroupState): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: LinkAggregationGroupState, opts: CustomResourceOptions): typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.linkAggregationGroupMod.LinkAggregationGroup]
     
     /**
       * Returns true if the given object is an instance of LinkAggregationGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "LinkAggregationGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/linkAggregationGroup.LinkAggregationGroup */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface")
@@ -711,6 +701,10 @@ object directconnectMod {
   /* static members */
   object PrivateVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PrivateVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -720,26 +714,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrivateVirtualInterfaceState): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PrivateVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrivateVirtualInterfaceState): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PrivateVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.privateVirtualInterfaceMod.PrivateVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of PrivateVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "PrivateVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/privateVirtualInterface.PrivateVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/privateVirtualInterface.PrivateVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/privateVirtualInterface.PrivateVirtualInterface */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "PublicVirtualInterface")
@@ -759,6 +748,10 @@ object directconnectMod {
   /* static members */
   object PublicVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect", "PublicVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PublicVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -768,26 +761,21 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "PublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "PublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "PublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublicVirtualInterfaceState): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "PublicVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PublicVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublicVirtualInterfaceState): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PublicVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.publicVirtualInterfaceMod.PublicVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of PublicVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "PublicVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/publicVirtualInterface.PublicVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/publicVirtualInterface.PublicVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/publicVirtualInterface.PublicVirtualInterface */ Boolean]
   }
   
   @JSImport("@pulumi/aws/directconnect", "TransitVirtualInterface")
@@ -807,6 +795,10 @@ object directconnectMod {
   /* static members */
   object TransitVirtualInterface {
     
+    @JSImport("@pulumi/aws/directconnect", "TransitVirtualInterface")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TransitVirtualInterface resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -816,32 +808,25 @@ object directconnectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect", "TransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "TransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "TransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = js.native
-    @JSImport("@pulumi/aws/directconnect", "TransitVirtualInterface.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TransitVirtualInterfaceState, opts: CustomResourceOptions): typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.transitVirtualInterfaceMod.TransitVirtualInterface]
     
     /**
       * Returns true if the given object is an instance of TransitVirtualInterface.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect", "TransitVirtualInterface.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/transitVirtualInterface.TransitVirtualInterface */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/transitVirtualInterface.TransitVirtualInterface */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/transitVirtualInterface.TransitVirtualInterface */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/directconnect", "getGateway")
-  @js.native
-  def getGateway(args: GetGatewayArgs): js.Promise[GetGatewayResult] = js.native
-  @JSImport("@pulumi/aws/directconnect", "getGateway")
-  @js.native
-  def getGateway(args: GetGatewayArgs, opts: InvokeOptions): js.Promise[GetGatewayResult] = js.native
+  @scala.inline
+  def getGateway(args: GetGatewayArgs): js.Promise[GetGatewayResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getGateway")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetGatewayResult]]
+  @scala.inline
+  def getGateway(args: GetGatewayArgs, opts: InvokeOptions): js.Promise[GetGatewayResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getGateway")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetGatewayResult]]
 }

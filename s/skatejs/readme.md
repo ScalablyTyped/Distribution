@@ -10,9 +10,9 @@ Skate is a library built on top of the W3C web component specs that enables you 
 | ------------------ | :-------------: |
 | Full name          | skatejs |
 | Keywords           | components, custom, dom, elements, web, vdom, virtual |
-| # releases         | 2 |
-| # dependents       | 37 |
-| # downloads        | 909726 |
+| # releases         | 0 |
+| # dependents       | 36 |
+| # downloads        | 749831 |
 | # stars            | 3 |
 
 ## Links

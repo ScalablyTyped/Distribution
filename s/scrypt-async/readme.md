@@ -10,9 +10,9 @@ Fast "async" scrypt implementation in JavaScript.
 | ------------------ | :-------------: |
 | Full name          | scrypt-async |
 | Keywords           | crypto, cryptography, scrypt, password |
-| # releases         | 2 |
-| # dependents       | 56 |
-| # downloads        | 316463 |
+| # releases         | 0 |
+| # dependents       | 57 |
+| # downloads        | 293009 |
 | # stars            | 2 |
 
 ## Links

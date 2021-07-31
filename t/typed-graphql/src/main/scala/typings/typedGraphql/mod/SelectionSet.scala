@@ -2,17 +2,17 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SelectionSet extends Node {
+trait SelectionSet
+  extends StObject
+     with Node {
   
-  var kind: String = js.native
+  var kind: String
   
-  var loc: js.UndefOr[Location] = js.native
+  var loc: js.UndefOr[Location] = js.undefined
   
-  var selections: js.Array[Selection] = js.native
+  var selections: js.Array[Selection]
 }
 object SelectionSet {
   

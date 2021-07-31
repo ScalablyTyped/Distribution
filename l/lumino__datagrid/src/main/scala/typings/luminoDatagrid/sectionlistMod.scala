@@ -3,7 +3,6 @@ package typings.luminoDatagrid
 import typings.luminoDatagrid.sectionlistMod.SectionList.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sectionlistMod {
@@ -209,13 +208,12 @@ object sectionlistMod {
     /**
       * An options object for initializing a section list.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The size of new sections added to the list.
         */
-      var defaultSize: Double = js.native
+      var defaultSize: Double
     }
     object IOptions {
       

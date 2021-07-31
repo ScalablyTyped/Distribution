@@ -8,17 +8,15 @@ import typings.request.mod.NameValuePair
 import typings.request.mod.PoolOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: MultipartBody = js.native
+    var body: MultipartBody
     
-    var `content-type`: js.UndefOr[String] = js.native
+    var `content-type`: js.UndefOr[String] = js.undefined
   }
   object Body {
     
@@ -42,18 +40,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Connect extends StObject {
     
-    var connect: Double = js.native
+    var connect: Double
     
-    var end: Double = js.native
+    var end: Double
     
-    var lookup: Double = js.native
+    var lookup: Double
     
-    var response: Double = js.native
+    var response: Double
     
-    var socket: Double = js.native
+    var socket: Double
   }
   object Connect {
     
@@ -83,21 +80,20 @@ object anon {
     }
   }
   
-  @js.native
   trait Dns extends StObject {
     
-    var dns: Double = js.native
+    var dns: Double
     
-    var download: Double = js.native
+    var download: Double
     
-    var firstByte: Double = js.native
+    var firstByte: Double
     
-    var tcp: Double = js.native
+    var tcp: Double
     
-    var total: Double = js.native
+    var total: Double
     
     @JSName("wait")
-    var wait_FDns: Double = js.native
+    var wait_FDns: Double
   }
   object Dns {
     
@@ -131,12 +127,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MimeType extends StObject {
     
-    var mimeType: js.UndefOr[String] = js.native
+    var mimeType: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Array[NameValuePair]] = js.native
+    var params: js.UndefOr[js.Array[NameValuePair]] = js.undefined
   }
   object MimeType {
     
@@ -167,38 +162,37 @@ object anon {
   }
   
   /* Inlined node.url.Url & {  href :string,   pathname :string} */
-  @js.native
   trait Urlhrefstringpathnamestri extends StObject {
     
-    var auth: String | Null = js.native
+    var auth: String | Null
     
-    var hash: String | Null = js.native
+    var hash: String | Null
     
-    var host: String | Null = js.native
+    var host: String | Null
     
-    var hostname: String | Null = js.native
+    var hostname: String | Null
     
-    var href: String = js.native
+    var href: String
     
-    var path: String | Null = js.native
+    var path: String | Null
     
-    var pathname: (String | Null) with String = js.native
+    var pathname: (String | Null) & String
     
-    var port: String | Null = js.native
+    var port: String | Null
     
-    var protocol: String | Null = js.native
+    var protocol: String | Null
     
-    var query: String | Null | ParsedUrlQuery = js.native
+    var query: String | Null | ParsedUrlQuery
     
-    var search: String | Null = js.native
+    var search: String | Null
     
-    var slashes: Boolean | Null = js.native
+    var slashes: Boolean | Null
   }
   object Urlhrefstringpathnamestri {
     
     @scala.inline
-    def apply(href: String, pathname: (String | Null) with String): Urlhrefstringpathnamestri = {
-      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any])
+    def apply(href: String, pathname: (String | Null) & String): Urlhrefstringpathnamestri = {
+      val __obj = js.Dynamic.literal(href = href.asInstanceOf[js.Any], pathname = pathname.asInstanceOf[js.Any], auth = null, hash = null, host = null, hostname = null, path = null, port = null, protocol = null, query = null, search = null, slashes = null)
       __obj.asInstanceOf[Urlhrefstringpathnamestri]
     }
     
@@ -239,7 +233,7 @@ object anon {
       def setPathNull: Self = StObject.set(x, "path", null)
       
       @scala.inline
-      def setPathname(value: (String | Null) with String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
+      def setPathname(value: (String | Null) & String): Self = StObject.set(x, "pathname", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPort(value: String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
@@ -274,12 +268,12 @@ object anon {
   }
   
   /* Inlined {[key: string] : node.http.Agent | node.https.Agent} & request.request.ExtraPoolOptions */
-  @js.native
   trait keystringAgentAgentExtraP
-    extends /* key */ StringDictionary[Agent | typings.node.httpsMod.Agent]
+    extends StObject
+       with /* key */ StringDictionary[Agent | typings.node.httpsMod.Agent]
        with PoolOptions {
     
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
   }
   object keystringAgentAgentExtraP {
     

@@ -2,20 +2,18 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Member group picker dialog options object
   */
-@js.native
 trait IMemberGroupPickerOptions extends StObject {
   
   /*callback function*/
-  var callback: js.Function = js.native
+  var callback: js.Function
   
   /*should the tree pick one or multiple members before returning*/
-  var multiPicker: Boolean = js.native
+  var multiPicker: Boolean
 }
 object IMemberGroupPickerOptions {
   

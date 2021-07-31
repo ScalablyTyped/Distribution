@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudAuditOptions extends StObject {
   
   /** Information used by the Cloud Audit Logging pipeline. */
-  var authorizationLoggingOptions: js.UndefOr[AuthorizationLoggingOptions] = js.native
+  var authorizationLoggingOptions: js.UndefOr[AuthorizationLoggingOptions] = js.undefined
   
   /** The log_name to populate in the Cloud Audit Record. */
-  var logName: js.UndefOr[String] = js.native
+  var logName: js.UndefOr[String] = js.undefined
 }
 object CloudAuditOptions {
   

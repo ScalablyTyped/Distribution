@@ -7,15 +7,13 @@ import typings.ionicCore.pickerInterfaceMod.PickerButton
 import typings.ionicCore.pickerInterfaceMod.PickerColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datetimeInterfaceMod {
   
-  @js.native
   trait DatetimeChangeEventDetail extends StObject {
     
-    var value: js.UndefOr[String | Null] = js.native
+    var value: js.UndefOr[String | Null] = js.undefined
   }
   object DatetimeChangeEventDetail {
     
@@ -40,30 +38,29 @@ object datetimeInterfaceMod {
   }
   
   /* Inlined std.Partial<@ionic/core.@ionic/core.PickerOptions> */
-  @js.native
   trait DatetimeOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var backdropDismiss: js.UndefOr[Boolean] = js.native
+    var backdropDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[PickerButton]] = js.native
+    var buttons: js.UndefOr[js.Array[PickerButton]] = js.undefined
     
-    var columns: js.UndefOr[js.Array[PickerColumn]] = js.native
+    var columns: js.UndefOr[js.Array[PickerColumn]] = js.undefined
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var showBackdrop: js.UndefOr[Boolean] = js.native
+    var showBackdrop: js.UndefOr[Boolean] = js.undefined
   }
   object DatetimeOptions {
     

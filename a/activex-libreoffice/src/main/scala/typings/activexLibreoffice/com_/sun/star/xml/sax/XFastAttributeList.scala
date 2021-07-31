@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.FastAttribute
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,24 +18,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * containing this attributes. If an attribute also has a namespace, that must be registered at the {@link XFastParser} , else this attribute is also
   * unknown even if the local name is known.
   */
-@js.native
-trait XFastAttributeList extends XInterface {
+trait XFastAttributeList
+  extends StObject
+     with XInterface {
   
   /** returns a sequence of attributes which names and or namespaces URLS are translated to tokens. */
-  val FastAttributes: SafeArray[FastAttribute] = js.native
+  val FastAttributes: SafeArray[FastAttribute]
   
   /** returns a sequence of attributes which names and or namespaces URLS can not be translated to tokens. */
-  val UnknownAttributes: SafeArray[Attribute] = js.native
+  val UnknownAttributes: SafeArray[Attribute]
   
   /** returns a sequence of attributes which names and or namespaces URLS are translated to tokens. */
-  def getFastAttributes(): SafeArray[FastAttribute] = js.native
+  def getFastAttributes(): SafeArray[FastAttribute]
   
   /**
     * retrieves the value of an attribute. ;
     * @param Token contains the integer token from the {@link XFastTokenHandler} registered at the {@link XFastParser} . ;  If the attribute name has a namesp
     * @returns The string value from the attribute or an empty string if the attribute is not available.
     */
-  def getOptionalValue(Token: Double): String = js.native
+  def getOptionalValue(Token: Double): String
   
   /**
     * retrieves the token of an attribute value. ;
@@ -44,10 +44,10 @@ trait XFastAttributeList extends XInterface {
     * @param Default This value will be returned if the attribute is not available
     * @returns If the attribute is available it returns the integer token of the value from the attribute or FastToken::Invalid. If not the value of `Default` i
     */
-  def getOptionalValueToken(Token: Double, Default: Double): Double = js.native
+  def getOptionalValueToken(Token: Double, Default: Double): Double
   
   /** returns a sequence of attributes which names and or namespaces URLS can not be translated to tokens. */
-  def getUnknownAttributes(): SafeArray[Attribute] = js.native
+  def getUnknownAttributes(): SafeArray[Attribute]
   
   /**
     * retrieves the value of an attribute. ;
@@ -55,7 +55,7 @@ trait XFastAttributeList extends XInterface {
     * @returns The string value from the attribute.
     * @throws SAXEXception if the attribute is not available
     */
-  def getValue(Token: Double): String = js.native
+  def getValue(Token: Double): String
   
   /**
     * retrieves the token of an attribute value. ;
@@ -63,14 +63,14 @@ trait XFastAttributeList extends XInterface {
     * @returns The integer token of the value from the attribute or FastToken::Invalid
     * @throws SAXEXception if the attribute is not available
     */
-  def getValueToken(Token: Double): Double = js.native
+  def getValueToken(Token: Double): Double
   
   /**
     * checks if an attribute is available. ;
     * @param Token contains the integer token from the {@link XFastTokenHandler} registered at the {@link XFastParser} . ;  If the attribute name has a namesp
     * @returns `TRUE` , if the attribute is available
     */
-  def hasAttribute(Token: Double): Boolean = js.native
+  def hasAttribute(Token: Double): Boolean
 }
 object XFastAttributeList {
   

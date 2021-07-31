@@ -8,7 +8,6 @@ import typings.bugsnag.bugsnagStrings.warning
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -36,8 +35,8 @@ object mod extends Shortcut {
     @JSName("errorHandler")
     var errorHandler_Original: ErrorHandler = js.native
     
-    def intercept[T](): js.Function2[/* error */ js.Any, /* repeated */ js.Any, T with Unit] = js.native
-    def intercept[T](cb: js.Function1[/* repeated */ js.Any, T]): js.Function2[/* error */ js.Any, /* repeated */ js.Any, T with Unit] = js.native
+    def intercept[T](): js.Function2[/* error */ js.Any, /* repeated */ js.Any, T & Unit] = js.native
+    def intercept[T](cb: js.Function1[/* repeated */ js.Any, T]): js.Function2[/* error */ js.Any, /* repeated */ js.Any, T & Unit] = js.native
     
     def koaHandler(err: Error, ctx: js.Any): Unit = js.native
     
@@ -77,56 +76,55 @@ object mod extends Shortcut {
     def shouldNotify(): Boolean = js.native
   }
   
-  @js.native
   trait ConfigurationOptions extends StObject {
     
-    var appType: js.UndefOr[String] = js.native
+    var appType: js.UndefOr[String] = js.undefined
     
-    var appVersion: js.UndefOr[String] = js.native
+    var appVersion: js.UndefOr[String] = js.undefined
     
-    var autoCaptureSessions: js.UndefOr[Boolean] = js.native
+    var autoCaptureSessions: js.UndefOr[Boolean] = js.undefined
     
-    var autoNotify: js.UndefOr[Boolean] = js.native
+    var autoNotify: js.UndefOr[Boolean] = js.undefined
     
-    var autoNotifyUnhandledRejection: js.UndefOr[Boolean] = js.native
+    var autoNotifyUnhandledRejection: js.UndefOr[Boolean] = js.undefined
     
-    var endpoints: js.UndefOr[Endpoints] = js.native
+    var endpoints: js.UndefOr[Endpoints] = js.undefined
     
-    var filters: js.UndefOr[js.Array[String]] = js.native
+    var filters: js.UndefOr[js.Array[String]] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var metaData: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var metaData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var notifyHost: js.UndefOr[String] = js.native
+    var notifyHost: js.UndefOr[String] = js.undefined
     
-    var notifyPath: js.UndefOr[String] = js.native
+    var notifyPath: js.UndefOr[String] = js.undefined
     
-    var notifyPort: js.UndefOr[Double] = js.native
+    var notifyPort: js.UndefOr[Double] = js.undefined
     
-    var notifyReleaseStages: js.UndefOr[js.Array[String]] = js.native
+    var notifyReleaseStages: js.UndefOr[js.Array[String]] = js.undefined
     
-    var onUncaughtError: js.UndefOr[js.Function1[/* error */ String | Error, Unit]] = js.native
+    var onUncaughtError: js.UndefOr[js.Function1[/* error */ String | Error, Unit]] = js.undefined
     
-    var packageJSON: js.UndefOr[String] = js.native
+    var packageJSON: js.UndefOr[String] = js.undefined
     
-    var projectRoot: js.UndefOr[String] = js.native
+    var projectRoot: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var releaseStage: js.UndefOr[String] = js.native
+    var releaseStage: js.UndefOr[String] = js.undefined
     
-    var sendCode: js.UndefOr[Boolean] = js.native
+    var sendCode: js.UndefOr[Boolean] = js.undefined
     
-    var sessionEndpoint: js.UndefOr[String] = js.native
+    var sessionEndpoint: js.UndefOr[String] = js.undefined
     
-    var useSSL: js.UndefOr[Boolean] = js.native
+    var useSSL: js.UndefOr[Boolean] = js.undefined
   }
   object ConfigurationOptions {
     
@@ -291,13 +289,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Endpoints extends StObject {
     
     @JSName("notify")
-    var notify_FEndpoints: String = js.native
+    var notify_FEndpoints: String
     
-    var sessions: js.UndefOr[String] = js.native
+    var sessions: js.UndefOr[String] = js.undefined
   }
   object Endpoints {
     
@@ -330,16 +327,15 @@ object mod extends Shortcut {
     Unit
   ]
   
-  @js.native
   trait Logger extends StObject {
     
-    def debug(): Unit = js.native
+    def debug(): Unit
     
-    def error(): Unit = js.native
+    def error(): Unit
     
-    def info(): Unit = js.native
+    def info(): Unit
     
-    def warn(): Unit = js.native
+    def warn(): Unit
   }
   object Logger {
     
@@ -368,25 +364,25 @@ object mod extends Shortcut {
   
   type NextFunction = js.Function1[/* err */ js.UndefOr[js.Any], Unit]
   
-  @js.native
   trait NotifyOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var errorName: js.UndefOr[String] = js.native
+    var errorName: js.UndefOr[String] = js.undefined
     
-    var groupingHash: js.UndefOr[String] = js.native
+    var groupingHash: js.UndefOr[String] = js.undefined
     
-    var req: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var req: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var severity: js.UndefOr[error | warning | info] = js.native
+    var severity: js.UndefOr[error | warning | info] = js.undefined
     
-    var user: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var user: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var userId: js.UndefOr[String | Double] = js.native
+    var userId: js.UndefOr[String | Double] = js.undefined
   }
   object NotifyOptions {
     

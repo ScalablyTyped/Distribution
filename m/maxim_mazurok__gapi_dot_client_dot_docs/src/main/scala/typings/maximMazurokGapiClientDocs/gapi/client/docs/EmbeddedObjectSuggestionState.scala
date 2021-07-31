@@ -2,44 +2,42 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmbeddedObjectSuggestionState extends StObject {
   
   /** Indicates if there was a suggested change to description. */
-  var descriptionSuggested: js.UndefOr[Boolean] = js.native
+  var descriptionSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** A mask that indicates which of the fields in embedded_drawing_properties have been changed in this suggestion. */
-  var embeddedDrawingPropertiesSuggestionState: js.UndefOr[js.Any] = js.native
+  var embeddedDrawingPropertiesSuggestionState: js.UndefOr[js.Any] = js.undefined
   
   /** A mask that indicates which of the fields in embedded_object_border have been changed in this suggestion. */
-  var embeddedObjectBorderSuggestionState: js.UndefOr[EmbeddedObjectBorderSuggestionState] = js.native
+  var embeddedObjectBorderSuggestionState: js.UndefOr[EmbeddedObjectBorderSuggestionState] = js.undefined
   
   /** A mask that indicates which of the fields in image_properties have been changed in this suggestion. */
-  var imagePropertiesSuggestionState: js.UndefOr[ImagePropertiesSuggestionState] = js.native
+  var imagePropertiesSuggestionState: js.UndefOr[ImagePropertiesSuggestionState] = js.undefined
   
   /** A mask that indicates which of the fields in linked_content_reference have been changed in this suggestion. */
-  var linkedContentReferenceSuggestionState: js.UndefOr[LinkedContentReferenceSuggestionState] = js.native
+  var linkedContentReferenceSuggestionState: js.UndefOr[LinkedContentReferenceSuggestionState] = js.undefined
   
   /** Indicates if there was a suggested change to margin_bottom. */
-  var marginBottomSuggested: js.UndefOr[Boolean] = js.native
+  var marginBottomSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_left. */
-  var marginLeftSuggested: js.UndefOr[Boolean] = js.native
+  var marginLeftSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_right. */
-  var marginRightSuggested: js.UndefOr[Boolean] = js.native
+  var marginRightSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates if there was a suggested change to margin_top. */
-  var marginTopSuggested: js.UndefOr[Boolean] = js.native
+  var marginTopSuggested: js.UndefOr[Boolean] = js.undefined
   
   /** A mask that indicates which of the fields in size have been changed in this suggestion. */
-  var sizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.native
+  var sizeSuggestionState: js.UndefOr[SizeSuggestionState] = js.undefined
   
   /** Indicates if there was a suggested change to title. */
-  var titleSuggested: js.UndefOr[Boolean] = js.native
+  var titleSuggested: js.UndefOr[Boolean] = js.undefined
 }
 object EmbeddedObjectSuggestionState {
   

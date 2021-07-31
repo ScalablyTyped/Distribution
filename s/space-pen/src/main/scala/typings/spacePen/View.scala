@@ -2,28 +2,26 @@ package typings.spacePen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait View extends StObject {
   
-  def bindEventHandlers(view: View): Unit = js.native
+  def bindEventHandlers(view: View): Unit
   
-  def buildHtml(params: js.Any): js.Any = js.native
+  def buildHtml(params: js.Any): js.Any
   
-  def command(commandName: js.Any, selector: js.Any, options: js.Any, handler: js.Any): js.Any = js.native
+  def command(commandName: js.Any, selector: js.Any, options: js.Any, handler: js.Any): js.Any
   
-  def end(): js.Any = js.native
+  def end(): js.Any
   
   // tag end
-  def initialize(view: View, args: js.Any): Unit = js.native
+  def initialize(view: View, args: js.Any): Unit
   
-  def preempt(eventName: js.Any, handler: js.Any): js.Any = js.native
+  def preempt(eventName: js.Any, handler: js.Any): js.Any
   
-  def pushStack(elems: js.Any): js.Any = js.native
+  def pushStack(elems: js.Any): js.Any
   
-  def wireOutlets(view: View): Unit = js.native
+  def wireOutlets(view: View): Unit
 }
 object View {
   

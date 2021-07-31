@@ -8,7 +8,6 @@ import typings.three.vector4Mod.Vector4
 import typings.three.webGLRenderListsMod.RenderTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lightShadowMod {

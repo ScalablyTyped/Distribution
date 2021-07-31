@@ -10,28 +10,42 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.backboneMarionette.mod.ViewMixin because var conflicts: delegateEvents. Inlined supportsRenderLifecycle, supportsDestroyLifecycle, isDestroyed, isRendered, isAttached, getTriggers, delegateEntityEvents, undelegateEntityEvents, destroy, bindUIElements, unbindUIElements, childViewEventPrefix, triggerMethod */ @JSImport("backbone.marionette", "View")
 @js.native
-class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
+class View[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] ()
   extends typings.backbone.mod.View[TModel]
      with RegionsMixin
      with DomMixin
      with CommonMixin {
   def this(options: ViewOptions[TModel]) = this()
   
+  /* CompleteClass */
+  var addRegion: js.Any = js.native
+  
+  /* CompleteClass */
+  var addRegions: js.Any = js.native
+  
+  /* CompleteClass */
+  var appendChildren: js.Any = js.native
+  
   /**
     * Used to attached the rendered template to this View's element.
     */
   def attachElContent(html: String): View[TModel] = js.native
   
+  /* CompleteClass */
+  var beforeEl: js.Any = js.native
+  
   /**
     * Behavior objects to assign to this View.
     */
   var behaviors: (js.Array[Behavior | Dictindex]) | (StringDictionary[Instantiable1[/* options */ js.UndefOr[js.Any], Behavior]]) = js.native
+  
+  /* CompleteClass */
+  var bindEvents: js.Any = js.native
   
   /**
     * Bind UI elements to this view. By default this is called in the
@@ -44,6 +58,9 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     * collection view.
     */
   var childViewEventPrefix: js.Any | String | `false` = js.native
+  
+  /* CompleteClass */
+  var createBuffer: js.Any = js.native
   
   /**
     * Delegate entity events. (undocumented)
@@ -64,6 +81,33 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     */
   def destroy(args: js.Any*): View[TModel] = js.native
   
+  /* CompleteClass */
+  var detachChildView: js.Any = js.native
+  
+  /* CompleteClass */
+  var detachContents: js.Any = js.native
+  
+  /* CompleteClass */
+  var detachEl: js.Any = js.native
+  
+  /* CompleteClass */
+  var emptyRegions: js.Any = js.native
+  
+  /* CompleteClass */
+  var findEls: js.Any = js.native
+  
+  /* CompleteClass */
+  var getChildView: js.Any = js.native
+  
+  /* CompleteClass */
+  var getOption: js.Any = js.native
+  
+  /* CompleteClass */
+  var getRegion: js.Any = js.native
+  
+  /* CompleteClass */
+  var getRegions: js.Any = js.native
+  
   /**
     * Used to determine which template to use. Override this method to add
     * logic for using multiple templates.
@@ -81,6 +125,9 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     */
   def getUI(ui: String): JQuery[HTMLElement] = js.native
   
+  /* CompleteClass */
+  var hasRegion: js.Any = js.native
+  
   /**
     * Check if this View is attached to the DOM.
     */
@@ -96,6 +143,9 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     */
   def isRendered(): Boolean = js.native
   
+  /* CompleteClass */
+  var mergeOptions: js.Any = js.native
+  
   /**
     * Mix in template context methods. Looks for a templateContext
     * attribute, which can either be an object literal, or a function that
@@ -108,6 +158,9 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     * Bind to events that occur on attached models.
     */
   var modelEvents: EventsHash = js.native
+  
+  /* CompleteClass */
+  var normalizeMethods: js.Any = js.native
   
   /**
     * Event that is triggered after a Region has been added.
@@ -184,6 +237,21 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     */
   def onRender(view: View[TModel]): Unit = js.native
   
+  /* CompleteClass */
+  var regionClass: js.Any = js.native
+  
+  /* CompleteClass */
+  var removeEl: js.Any = js.native
+  
+  /* CompleteClass */
+  var removeRegion: js.Any = js.native
+  
+  /* CompleteClass */
+  var removeRegions: js.Any = js.native
+  
+  /* CompleteClass */
+  var replaceEl: js.Any = js.native
+  
   /**
     * Method used by this.serializeData to serialize this View's collection
     * data.
@@ -203,12 +271,18 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     */
   def serializeModel(): js.Any = js.native
   
+  /* CompleteClass */
+  var setInnerContent: js.Any = js.native
+  
   /**
     * Used to set the renderer for this View. The rendere function is
     * passed the template and the data and is expected to return an html
     * string. By default this is set to use Renderer.
     */
   def setRenderer(renderer: js.Function2[/* template */ js.Any, /* data */ js.Any, String]): Unit = js.native
+  
+  /* CompleteClass */
+  var showChildView: js.Any = js.native
   
   /**
     * Internal property. (undocumented)
@@ -240,6 +314,9 @@ class View[TModel /* <: Model[_, ModelSetOptions, js.Object] */] ()
     * throughout the view with the ui attribute.
     */
   var ui: js.Any = js.native
+  
+  /* CompleteClass */
+  var unbindEvents: js.Any = js.native
   
   /**
     * Bind UI elements from this view. (undocumented)

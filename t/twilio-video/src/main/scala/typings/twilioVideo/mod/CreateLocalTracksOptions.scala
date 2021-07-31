@@ -2,17 +2,15 @@ package typings.twilioVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLocalTracksOptions extends StObject {
   
-  var audio: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.native
+  var audio: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.undefined
   
-  var logLevel: js.UndefOr[LogLevel | LogLevels] = js.native
+  var logLevel: js.UndefOr[LogLevel | LogLevels] = js.undefined
   
-  var video: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.native
+  var video: js.UndefOr[Boolean | CreateLocalTrackOptions] = js.undefined
 }
 object CreateLocalTracksOptions {
   

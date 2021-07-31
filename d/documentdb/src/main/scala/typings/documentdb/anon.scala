@@ -2,19 +2,17 @@ package typings.documentdb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Condition extends StObject {
     
     /** Conditional HTTP method header value. */
-    var condition: String = js.native
+    var condition: String
     
     /** Conditional HTTP method header type. */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Condition {
     

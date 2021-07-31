@@ -11,8 +11,8 @@ A simple in-memory cache. put(), get() and del()
 | Full name          | memory-cache |
 | Keywords           | cache, ram, simple, storage |
 | # releases         | 0 |
-| # dependents       | 352 |
-| # downloads        | 7638718 |
+| # dependents       | 367 |
+| # downloads        | 9428025 |
 | # stars            | 63 |
 
 ## Links

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPublisherProfilesByAccountIdResponse extends StObject {
   
   /** Profiles for the requested publisher */
-  var profiles: js.UndefOr[js.Array[PublisherProfileApiProto]] = js.native
+  var profiles: js.UndefOr[js.Array[PublisherProfileApiProto]] = js.undefined
 }
 object GetPublisherProfilesByAccountIdResponse {
   

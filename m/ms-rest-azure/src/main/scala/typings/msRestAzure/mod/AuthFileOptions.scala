@@ -2,23 +2,21 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthFileOptions extends StObject {
   
   /**
     * @prop {string} [filePath] Absolute file path to the auth file. If not provided 
     * then please set the environment variable 'AZURE_AUTH_LOCATION'.
     */
-  var filePath: js.UndefOr[String] = js.native
+  var filePath: js.UndefOr[String] = js.undefined
   
   /**
     * @prop {string} [subscriptionEnvVariableName] The subscriptionId environment variable 
     * name. Default is 'AZURE_SUBSCRIPTION_ID'.
     */
-  var subscriptionEnvVariableName: js.UndefOr[String] = js.native
+  var subscriptionEnvVariableName: js.UndefOr[String] = js.undefined
 }
 object AuthFileOptions {
   

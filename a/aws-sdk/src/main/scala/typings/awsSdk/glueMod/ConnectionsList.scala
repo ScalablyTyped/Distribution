@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionsList extends StObject {
   
   /**
     * A list of connections used by the job.
     */
-  var Connections: js.UndefOr[OrchestrationStringList] = js.native
+  var Connections: js.UndefOr[OrchestrationStringList] = js.undefined
 }
 object ConnectionsList {
   

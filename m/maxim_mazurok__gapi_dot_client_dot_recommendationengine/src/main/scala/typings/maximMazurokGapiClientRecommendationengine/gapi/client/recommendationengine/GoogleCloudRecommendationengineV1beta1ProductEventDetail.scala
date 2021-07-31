@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ProductEventDetail extends StObject {
   
   /**
     * Optional. The id or name of the associated shopping cart. This id is used to associate multiple items added or present in the cart before purchase. This can only be set for
     * `add-to-cart`, `remove-from-cart`, `checkout-start`, `purchase-complete`, or `shopping-cart-page-view` events.
     */
-  var cartId: js.UndefOr[String] = js.native
+  var cartId: js.UndefOr[String] = js.undefined
   
   /** Required for `add-to-list` and `remove-from-list` events. The id or name of the list that the item is being added to or removed from. Other event types should not set this field. */
-  var listId: js.UndefOr[String] = js.native
+  var listId: js.UndefOr[String] = js.undefined
   
   /**
     * Required for `category-page-view` events. Other event types should not set this field. The categories associated with a category page. Category pages include special pages such as
     * sales or promotions. For instance, a special sale page may have the category hierarchy: categories : ["Sales", "2017 Black Friday Deals"].
     */
-  var pageCategories: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]] = js.native
+  var pageCategories: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1CatalogItemCategoryHierarchy]] = js.undefined
   
   /**
     * The main product details related to the event. This field is required for the following event types: * `add-to-cart` * `add-to-list` * `checkout-start` * `detail-page-view` *
@@ -31,16 +29,16 @@ trait GoogleCloudRecommendationengineV1beta1ProductEventDetail extends StObject 
     * for the same query, a new SEARCH event with different product_details is desired. The end user may have not finished broswing the whole page yet. This field is not allowed for the
     * following event types: * `category-page-view` * `home-page-view`
     */
-  var productDetails: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1ProductDetail]] = js.native
+  var productDetails: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1ProductDetail]] = js.undefined
   
   /**
     * Optional. A transaction represents the entire purchase transaction. Required for `purchase-complete` events. Optional for `checkout-start` events. Other event types should not set
     * this field.
     */
-  var purchaseTransaction: js.UndefOr[GoogleCloudRecommendationengineV1beta1PurchaseTransaction] = js.native
+  var purchaseTransaction: js.UndefOr[GoogleCloudRecommendationengineV1beta1PurchaseTransaction] = js.undefined
   
   /** Required for `search` events. Other event types should not set this field. The user's search query as UTF-8 encoded text with a length limit of 5 KiB. */
-  var searchQuery: js.UndefOr[String] = js.native
+  var searchQuery: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ProductEventDetail {
   

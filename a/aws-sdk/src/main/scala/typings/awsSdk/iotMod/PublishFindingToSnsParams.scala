@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublishFindingToSnsParams extends StObject {
   
   /**
     * The ARN of the topic to which you want to publish the findings.
     */
-  var topicArn: SnsTopicArn = js.native
+  var topicArn: SnsTopicArn
 }
 object PublishFindingToSnsParams {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,16 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * You can use Sheet.setConditionalFormatRules(rules) to set the
   * rules for a given sheet.
   */
-@js.native
 trait ConditionalFormatRule extends StObject {
   
-  def copy(): ConditionalFormatRuleBuilder = js.native
+  def copy(): ConditionalFormatRuleBuilder
   
-  def getBooleanCondition(): BooleanCondition | Null = js.native
+  def getBooleanCondition(): BooleanCondition | Null
   
-  def getGradientCondition(): GradientCondition | Null = js.native
+  def getGradientCondition(): GradientCondition | Null
   
-  def getRanges(): js.Array[Range] = js.native
+  def getRanges(): js.Array[Range]
 }
 object ConditionalFormatRule {
   

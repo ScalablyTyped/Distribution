@@ -2,24 +2,22 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Firestore.ListDocuments.
   */
-@js.native
 trait SchemaListDocumentsResponse extends StObject {
   
   /**
     * The Documents found.
     */
-  var documents: js.UndefOr[js.Array[SchemaDocument]] = js.native
+  var documents: js.UndefOr[js.Array[SchemaDocument]] = js.undefined
   
   /**
     * The next page token.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListDocumentsResponse {
   

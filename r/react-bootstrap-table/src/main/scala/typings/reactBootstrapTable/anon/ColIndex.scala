@@ -2,15 +2,13 @@ package typings.reactBootstrapTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColIndex extends StObject {
   
-  var colIndex: Double = js.native
+  var colIndex: Double
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
 }
 object ColIndex {
   

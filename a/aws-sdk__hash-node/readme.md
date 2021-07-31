@@ -4,19 +4,19 @@
 Typings are for version 1.0.0-rc.7
 
 ## Library description:
-[![NPM version](https://img.shields.io/npm/v/@aws-sdk/hash-node/rc.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/hash-node.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node)
+[![NPM version](https://img.shields.io/npm/v/@aws-sdk/hash-node/latest.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node) [![NPM downloads](https://img.shields.io/npm/dm/@aws-sdk/hash-node.svg)](https://www.npmjs.com/package/@aws-sdk/hash-node)
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/hash-node |
 | Keywords           | - |
-| # releases         | 29 |
-| # dependents       | 423 |
-| # downloads        | 3766463 |
+| # releases         | 39 |
+| # dependents       | 250 |
+| # downloads        | 7001779 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/hash-node)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/hash-node)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Fhash-node)

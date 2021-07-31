@@ -26,19 +26,26 @@ import typings.react.mod.Ref
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withFormsyMod {
   
-  @JSImport("formsy-react/dist/withFormsy", JSImport.Default)
+  @JSImport("formsy-react/dist/withFormsy", JSImport.Namespace)
   @js.native
-  def default[T, V](WrappedComponent: ComponentType[T with PassDownProps[V]]): ComponentType[
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T, V](WrappedComponent: ComponentType[T & PassDownProps[V]]): ComponentType[
     Omit[
-      T with WrapperProps[V], 
+      T & WrapperProps[V], 
       /* keyof formsy-react.formsy-react/dist/withFormsy.InjectedProps<V> */ errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
     ]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(WrappedComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    Omit[
+      T & WrapperProps[V], 
+      /* keyof formsy-react.formsy-react/dist/withFormsy.InjectedProps<V> */ errorMessage | errorMessages | hasValue | isFormDisabled | isFormSubmitted | isPristine | isRequired | isValid | isValidValue | ref | resetValue | setValidations | setValue | showError | showRequired
+    ]
+  ]]
   
   object propTypes {
     
@@ -98,7 +105,7 @@ object withFormsyMod {
     
     def isValidValue(value: V): Boolean = js.native
     
-    var ref: js.UndefOr[Ref[_]] = js.native
+    var ref: js.UndefOr[Ref[js.Any]] = js.native
     
     def resetValue(): Unit = js.native
     
@@ -112,7 +119,11 @@ object withFormsyMod {
     var showRequired: Boolean = js.native
   }
   
-  type PassDownProps[V] = WrapperProps[V] with InjectedProps[V]
+  @js.native
+  trait PassDownProps[V]
+    extends StObject
+       with WrapperProps[V]
+       with InjectedProps[V]
   
   @js.native
   trait WrapperInstanceMethods[V] extends StObject {
@@ -135,22 +146,21 @@ object withFormsyMod {
     def setValue(value: V, validate: Boolean): Unit = js.native
   }
   
-  @js.native
   trait WrapperProps[V] extends StObject {
     
-    var innerRef: js.UndefOr[js.Function1[/* ref */ Ref[_], Unit]] = js.native
+    var innerRef: js.UndefOr[js.Function1[/* ref */ Ref[js.Any], Unit]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var required: js.UndefOr[RequiredValidation[V]] = js.native
+    var required: js.UndefOr[RequiredValidation[V]] = js.undefined
     
-    var validationError: js.UndefOr[ValidationError] = js.native
+    var validationError: js.UndefOr[ValidationError] = js.undefined
     
-    var validationErrors: js.UndefOr[StringDictionary[ValidationError]] = js.native
+    var validationErrors: js.UndefOr[StringDictionary[ValidationError]] = js.undefined
     
-    var validations: js.UndefOr[Validations[V]] = js.native
+    var validations: js.UndefOr[Validations[V]] = js.undefined
     
-    var value: js.UndefOr[V] = js.native
+    var value: js.UndefOr[V] = js.undefined
   }
   object WrapperProps {
     
@@ -161,10 +171,10 @@ object withFormsyMod {
     }
     
     @scala.inline
-    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps[_], V] (val x: Self with WrapperProps[V]) extends AnyVal {
+    implicit class WrapperPropsMutableBuilder[Self <: WrapperProps[?], V] (val x: Self & WrapperProps[V]) extends AnyVal {
       
       @scala.inline
-      def setInnerRef(value: /* ref */ Ref[_] => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRef(value: /* ref */ Ref[js.Any] => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
@@ -204,23 +214,23 @@ object withFormsyMod {
     }
   }
   
-  @js.native
   trait WrapperState[V]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var formSubmitted: Boolean = js.native
+    var formSubmitted: Boolean
     
-    var isPristine: Boolean = js.native
+    var isPristine: Boolean
     
-    var isRequired: Boolean = js.native
+    var isRequired: Boolean
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var pristineValue: V = js.native
+    var pristineValue: V
     
-    var validationError: js.Array[ValidationError] = js.native
+    var validationError: js.Array[ValidationError]
     
-    var value: V = js.native
+    var value: V
   }
   object WrapperState {
     
@@ -239,7 +249,7 @@ object withFormsyMod {
     }
     
     @scala.inline
-    implicit class WrapperStateMutableBuilder[Self <: WrapperState[_], V] (val x: Self with WrapperState[V]) extends AnyVal {
+    implicit class WrapperStateMutableBuilder[Self <: WrapperState[?], V] (val x: Self & WrapperState[V]) extends AnyVal {
       
       @scala.inline
       def setFormSubmitted(value: Boolean): Self = StObject.set(x, "formSubmitted", value.asInstanceOf[js.Any])

@@ -4,13 +4,11 @@ import typings.winrt.Windows.Foundation.IAsyncAction
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICertificateEnrollmentManagerStatics extends StObject {
   
-  def createRequestAsync(request: CertificateRequestProperties): IAsyncOperation[String] = js.native
+  def createRequestAsync(request: CertificateRequestProperties): IAsyncOperation[String]
   
   def importPfxDataAsync(
     pfxData: String,
@@ -19,9 +17,9 @@ trait ICertificateEnrollmentManagerStatics extends StObject {
     keyProtectionLevel: KeyProtectionLevel,
     installOption: InstallOptions,
     friendlyName: String
-  ): IAsyncAction = js.native
+  ): IAsyncAction
   
-  def installCertificateAsync(certificate: String, installOption: InstallOptions): IAsyncAction = js.native
+  def installCertificateAsync(certificate: String, installOption: InstallOptions): IAsyncAction
 }
 object ICertificateEnrollmentManagerStatics {
   

@@ -17,24 +17,34 @@ import typings.reduxForm.reduxFormStrings.values
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formValuesMod {
   
-  @JSImport("redux-form/lib/formValues", "formValues")
+  @JSImport("redux-form/lib/formValues", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def formValues[Values, P](obj: Values): js.Function1[
-    /* component */ ComponentType[P with typings.reduxForm.reduxFormStrings.formValues with TopLevel[js.Any]], 
+    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any]], 
     ComponentClass[
-      P with typings.reduxForm.reduxFormStrings.formValues with TopLevel[js.Any], 
+      P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any], 
       ComponentState
     ]
-  ] = js.native
-  @JSImport("redux-form/lib/formValues", "formValues")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValues")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any]], 
+    ComponentClass[
+      P & typings.reduxForm.reduxFormStrings.formValues & TopLevel[js.Any], 
+      ComponentState
+    ]
+  ]]
+  @scala.inline
   def formValues[FormData, K /* <: /* keyof FormData */ append | delete | get | getAll | has | set | forEach | entries | keys | values */, P](names: K*): js.Function1[
-    /* component */ ComponentType[P with (Pick[FormData, K])], 
-    ComponentClass[P with (Pick[FormData, K]), ComponentState]
-  ] = js.native
+    /* component */ ComponentType[P & (Pick[FormData, K])], 
+    ComponentClass[P & (Pick[FormData, K]), ComponentState]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("formValues")(names.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[P & (Pick[FormData, K])], 
+    ComponentClass[P & (Pick[FormData, K]), ComponentState]
+  ]]
 }

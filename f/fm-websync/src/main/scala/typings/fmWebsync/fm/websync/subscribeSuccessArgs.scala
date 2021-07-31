@@ -3,31 +3,31 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait subscribeSuccessArgs extends baseResponseArgs {
+trait subscribeSuccessArgs
+  extends StObject
+     with baseResponseArgs {
   
   /**
     * The channel to which the client was subscribed. Must start with a forward slash (/).
     */
-  var channel: String = js.native
+  var channel: String
   
   /**
     * The channels to which the client was subscribed. Each must start with a forward slash (/).
     */
-  var channels: js.Array[String] = js.native
+  var channels: js.Array[String]
   
   /**
     * Whether the call to client.subscribe was triggered by a reconnection after network failure.
     */
-  var isResubscribe: Boolean = js.native
+  var isResubscribe: Boolean
   
   /**
     * Subscribers extension. The active subscribed clients on the just-subscribed channel(s).
     */
-  var subscribedClients: js.Array[subscribedClient] = js.native
+  var subscribedClients: js.Array[subscribedClient]
 }
 object subscribeSuccessArgs {
   

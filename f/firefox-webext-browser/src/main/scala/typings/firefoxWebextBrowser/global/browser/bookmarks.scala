@@ -12,7 +12,6 @@ import typings.firefoxWebextBrowser.browser.bookmarks.OnRemovedRemoveInfo
 import typings.firefoxWebextBrowser.browser.bookmarks.UpdateChanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -24,55 +23,51 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bookmarks {
   
+  @JSGlobal("browser.bookmarks")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a bookmark or folder under the specified parentId. If url is NULL or missing, it will be a folder.
     */
-  @JSGlobal("browser.bookmarks.create")
-  @js.native
-  def create(bookmark: CreateDetails): js.Promise[BookmarkTreeNode] = js.native
+  @scala.inline
+  def create(bookmark: CreateDetails): js.Promise[BookmarkTreeNode] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(bookmark.asInstanceOf[js.Any]).asInstanceOf[js.Promise[BookmarkTreeNode]]
   
   /* bookmarks functions */
   /**
     * Retrieves the specified BookmarkTreeNode(s).
     * @param idOrIdList A single string-valued id, or an array of string-valued ids
     */
-  @JSGlobal("browser.bookmarks.get")
-  @js.native
-  def get(idOrIdList: String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
-  @JSGlobal("browser.bookmarks.get")
-  @js.native
-  def get(idOrIdList: js.Array[String]): js.Promise[js.Array[BookmarkTreeNode]] = js.native
+  @scala.inline
+  def get(idOrIdList: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(idOrIdList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
+  @scala.inline
+  def get(idOrIdList: js.Array[String]): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(idOrIdList.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   
   /** Retrieves the children of the specified BookmarkTreeNode id. */
-  @JSGlobal("browser.bookmarks.getChildren")
-  @js.native
-  def getChildren(id: String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
+  @scala.inline
+  def getChildren(id: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getChildren")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   
   /**
     * Retrieves the recently added bookmarks.
     * @param numberOfItems The maximum number of items to return.
     */
-  @JSGlobal("browser.bookmarks.getRecent")
-  @js.native
-  def getRecent(numberOfItems: Double): js.Promise[js.Array[BookmarkTreeNode]] = js.native
+  @scala.inline
+  def getRecent(numberOfItems: Double): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRecent")(numberOfItems.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   
   /**
     * Retrieves part of the Bookmarks hierarchy, starting at the specified node.
     * @param id The ID of the root of the subtree to retrieve.
     */
-  @JSGlobal("browser.bookmarks.getSubTree")
-  @js.native
-  def getSubTree(id: String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
+  @scala.inline
+  def getSubTree(id: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSubTree")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   
   /** Retrieves the entire Bookmarks hierarchy. */
-  @JSGlobal("browser.bookmarks.getTree")
-  @js.native
-  def getTree(): js.Promise[js.Array[BookmarkTreeNode]] = js.native
+  @scala.inline
+  def getTree(): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTree")().asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   
   /** Moves the specified BookmarkTreeNode to the provided location. */
-  @JSGlobal("browser.bookmarks.move")
-  @js.native
-  def move(id: String, destination: MoveDestination): js.Promise[BookmarkTreeNode] = js.native
+  @scala.inline
+  def move(id: String, destination: MoveDestination): js.Promise[BookmarkTreeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(id.asInstanceOf[js.Any], destination.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BookmarkTreeNode]]
   
   /**
     * Fired when a bookmark or folder changes. **Note:** Currently, only title and url changes trigger this.
@@ -112,30 +107,25 @@ object bookmarks {
   val onRemoved: WebExtEvent[js.Function2[/* id */ String, /* removeInfo */ OnRemovedRemoveInfo, Unit]] = js.native
   
   /** Removes a bookmark or an empty bookmark folder. */
-  @JSGlobal("browser.bookmarks.remove")
-  @js.native
-  def remove(id: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def remove(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /** Recursively removes a bookmark folder. */
-  @JSGlobal("browser.bookmarks.removeTree")
-  @js.native
-  def removeTree(id: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def removeTree(id: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Searches for BookmarkTreeNodes matching the given query. Queries specified with an object produce BookmarkTreeNodes matching all specified properties.
     * @param query Either a string of words that are matched against bookmark URLs and titles, or an object. If an object, the properties `query`, `url`, and `title` may be specified and bookmarks matching all specified properties will be produced.
     */
-  @JSGlobal("browser.bookmarks.search")
-  @js.native
-  def search(query: String): js.Promise[js.Array[BookmarkTreeNode]] = js.native
-  @JSGlobal("browser.bookmarks.search")
-  @js.native
-  def search(query: Query): js.Promise[js.Array[BookmarkTreeNode]] = js.native
+  @scala.inline
+  def search(query: String): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
+  @scala.inline
+  def search(query: Query): js.Promise[js.Array[BookmarkTreeNode]] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[BookmarkTreeNode]]]
   
   /**
     * Updates the properties of a bookmark or folder. Specify only the properties that you want to change; unspecified properties will be left unchanged. **Note:** Currently, only 'title' and 'url' are supported.
     */
-  @JSGlobal("browser.bookmarks.update")
-  @js.native
-  def update(id: String, changes: UpdateChanges): js.Promise[BookmarkTreeNode] = js.native
+  @scala.inline
+  def update(id: String, changes: UpdateChanges): js.Promise[BookmarkTreeNode] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], changes.asInstanceOf[js.Any])).asInstanceOf[js.Promise[BookmarkTreeNode]]
 }

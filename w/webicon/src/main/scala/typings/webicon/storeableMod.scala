@@ -3,14 +3,13 @@ package typings.webicon
 import typings.webicon.downloadableMod.Downloadable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storeableMod {
   
-  @js.native
   trait Storeable
-    extends Downloadable[scala.Nothing] {
+    extends StObject
+       with Downloadable[scala.Nothing] {
     
     /**
       * Resolves the id of the underlying source.
@@ -21,12 +20,12 @@ object storeableMod {
       * @return
       * The resolved id of the source.
       */
-    var iconIdResolver: js.UndefOr[js.Function1[/* id */ String, String]] = js.native
+    var iconIdResolver: js.UndefOr[js.Function1[/* id */ String, String]] = js.undefined
     
     /**
       * A value indicating whether the source is preloadable.
       */
-    var preloadable: js.UndefOr[Boolean] = js.native
+    var preloadable: js.UndefOr[Boolean] = js.undefined
   }
   object Storeable {
     

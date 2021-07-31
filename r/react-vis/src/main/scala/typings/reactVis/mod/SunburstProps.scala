@@ -9,42 +9,40 @@ import typings.reactVis.reactVisStrings.size
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SunburstProps extends StObject {
   
-  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.native
+  var animation: js.UndefOr[String | AnimationParam | Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // default: ''
-  var colorType: js.UndefOr[String] = js.native
+  var colorType: js.UndefOr[String] = js.undefined
   
   // default: 'literal'
-  var data: SunburstPoint = js.native
+  var data: SunburstPoint
   
-  var getAngle: js.UndefOr[RVGet[SunburstPoint, angle]] = js.native
+  var getAngle: js.UndefOr[RVGet[SunburstPoint, angle]] = js.undefined
   
-  var getAngle0: js.UndefOr[RVGet[SunburstPoint, angle0]] = js.native
+  var getAngle0: js.UndefOr[RVGet[SunburstPoint, angle0]] = js.undefined
   
   // default: false
-  var getLabel: js.UndefOr[RVGet[SunburstPoint, label]] = js.native
+  var getLabel: js.UndefOr[RVGet[SunburstPoint, label]] = js.undefined
   
-  var getSize: js.UndefOr[RVGet[SunburstPoint, size]] = js.native
+  var getSize: js.UndefOr[RVGet[SunburstPoint, size]] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var hideRootNode: js.UndefOr[Boolean] = js.native
+  var hideRootNode: js.UndefOr[Boolean] = js.undefined
   
-  var onValueClick: js.UndefOr[RVValueEventHandler[SunburstPoint]] = js.native
+  var onValueClick: js.UndefOr[RVValueEventHandler[SunburstPoint]] = js.undefined
   
-  var onValueMouseOut: js.UndefOr[RVValueEventHandler[SunburstPoint]] = js.native
+  var onValueMouseOut: js.UndefOr[RVValueEventHandler[SunburstPoint]] = js.undefined
   
-  var onValueMouseOver: js.UndefOr[RVValueEventHandler[SunburstPoint]] = js.native
+  var onValueMouseOver: js.UndefOr[RVValueEventHandler[SunburstPoint]] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object SunburstProps {
   

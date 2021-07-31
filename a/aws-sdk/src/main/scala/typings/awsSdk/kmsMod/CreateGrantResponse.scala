@@ -2,21 +2,19 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGrantResponse extends StObject {
   
   /**
     * The unique identifier for the grant. You can use the GrantId in a subsequent RetireGrant or RevokeGrant operation.
     */
-  var GrantId: js.UndefOr[GrantIdType] = js.native
+  var GrantId: js.UndefOr[GrantIdType] = js.undefined
   
   /**
     * The grant token. For more information, see Grant Tokens in the AWS Key Management Service Developer Guide.
     */
-  var GrantToken: js.UndefOr[GrantTokenType] = js.native
+  var GrantToken: js.UndefOr[GrantTokenType] = js.undefined
 }
 object CreateGrantResponse {
   

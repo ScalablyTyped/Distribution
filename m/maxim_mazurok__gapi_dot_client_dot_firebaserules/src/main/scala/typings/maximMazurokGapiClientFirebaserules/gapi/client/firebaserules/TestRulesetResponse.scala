@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestRulesetResponse extends StObject {
   
   /** Syntactic and semantic `Source` issues of varying severity. Issues of `ERROR` severity will prevent tests from executing. */
-  var issues: js.UndefOr[js.Array[Issue]] = js.native
+  var issues: js.UndefOr[js.Array[Issue]] = js.undefined
   
   /** The set of test results given the test cases in the `TestSuite`. The results will appear in the same order as the test cases appear in the `TestSuite`. */
-  var testResults: js.UndefOr[js.Array[TestResult]] = js.native
+  var testResults: js.UndefOr[js.Array[TestResult]] = js.undefined
 }
 object TestRulesetResponse {
   

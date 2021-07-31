@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortItem")
@@ -37,9 +36,8 @@ object GridSortItem {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortItem.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem]
   
   /**
     * Creates and returns a new GridSortItem instance in the SDK and on the server.
@@ -47,9 +45,8 @@ object GridSortItem {
     * of the parent GridSortBar element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortItem.createIn")
-  @js.native
-  def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortBar): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = js.native
+  @scala.inline
+  def createIn(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortBar): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.GridSortItem]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/all-model-classes", "documenttemplates.GridSortItem.structureTypeName")

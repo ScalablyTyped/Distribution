@@ -5,7 +5,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // interface IPool, as per the following implementation:
@@ -14,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 trait IPool extends EventEmitter {
   
-  def end(): js.Promise[js.UndefOr[scala.Nothing]] = js.native
-  def end(cb: js.Function1[/* err */ Error, _]): js.Any = js.native
+  def end(): js.Promise[Unit] = js.native
+  def end(cb: js.Function1[/* err */ Error, js.Any]): js.Any = js.native
   
   // connection options
   val ended: Boolean = js.native

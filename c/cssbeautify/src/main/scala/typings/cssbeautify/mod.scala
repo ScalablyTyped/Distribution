@@ -4,37 +4,37 @@ import typings.cssbeautify.cssbeautifyStrings.`end-of-line`
 import typings.cssbeautify.cssbeautifyStrings.`separate-line`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cssbeautify", JSImport.Namespace)
-  @js.native
-  def apply(cssText: String): String = js.native
-  @JSImport("cssbeautify", JSImport.Namespace)
-  @js.native
-  def apply(cssText: String, options: Options): String = js.native
+  @scala.inline
+  def apply(cssText: String): String = ^.asInstanceOf[js.Dynamic].apply(cssText.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(cssText: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(cssText.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("cssbeautify", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * Always inserts a semicolon after the last ruleset(default is false)
       */
-    var autosemicolon: js.UndefOr[Boolean] = js.native
+    var autosemicolon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string used for the indentation of the declaration (default is 4
       * spaces).
       */
-    var indent: js.UndefOr[String] = js.native
+    var indent: js.UndefOr[String] = js.undefined
     
     /**
       * Defines the placement of open curly brace, either end-of-line (default)
       * or separate-line
       */
-    var openbrace: js.UndefOr[`end-of-line` | `separate-line`] = js.native
+    var openbrace: js.UndefOr[`end-of-line` | `separate-line`] = js.undefined
   }
   object Options {
     

@@ -2,19 +2,17 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for EntityTypes.BatchUpdateEntities.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest extends StObject {
   
   /**
     * Required. The entities to update or create.
     */
-  var entities: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2EntityTypeEntity]] = js.native
+  var entities: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2EntityTypeEntity]] = js.undefined
   
   /**
     * Optional. The language of entity synonyms defined in `entities`. If not
@@ -23,12 +21,12 @@ trait SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest extends StObject {
     * are supported. Note: languages must be enabled in the agent before they
     * can be used.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The mask to control which fields get updated.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2BatchUpdateEntitiesRequest {
   

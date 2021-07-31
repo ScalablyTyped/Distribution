@@ -2,27 +2,25 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StridedSliceAttrs extends StObject {
   
-  var begin: js.Array[Double] = js.native
+  var begin: js.Array[Double]
   
-  var beginMask: Double = js.native
+  var beginMask: Double
   
-  var ellipsisMask: Double = js.native
+  var ellipsisMask: Double
   
-  var end: js.Array[Double] = js.native
+  var end: js.Array[Double]
   
-  var endMask: Double = js.native
+  var endMask: Double
   
-  var newAxisMask: Double = js.native
+  var newAxisMask: Double
   
-  var shrinkAxisMask: Double = js.native
+  var shrinkAxisMask: Double
   
-  var strides: js.Array[Double] = js.native
+  var strides: js.Array[Double]
 }
 object StridedSliceAttrs {
   

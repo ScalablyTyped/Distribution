@@ -6,29 +6,27 @@ import typings.evernote.mod.Types.Timestamp
 import typings.evernote.mod.Types.UserID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Joined extends StObject {
   
-  var attributes: js.UndefOr[BusinessUserAttributes] = js.native
+  var attributes: js.UndefOr[BusinessUserAttributes] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[UserID] = js.native
+  var id: js.UndefOr[UserID] = js.undefined
   
-  var joined: js.UndefOr[Timestamp] = js.native
+  var joined: js.UndefOr[Timestamp] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var photoLastUpdated: js.UndefOr[Timestamp] = js.native
+  var photoLastUpdated: js.UndefOr[Timestamp] = js.undefined
   
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
-  var role: js.UndefOr[BusinessUserRole] = js.native
+  var role: js.UndefOr[BusinessUserRole] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object Joined {
   

@@ -6,23 +6,21 @@ import typings.vkOpenapi.vkOpenapiStrings.not_authorized
 import typings.vkOpenapi.vkOpenapiStrings.unknown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Auth {
   
-  @js.native
   trait API extends StObject {
     
-    def getLoginStatus(cb: js.Function1[/* status */ LoginStatus, Unit]): Unit = js.native
+    def getLoginStatus(cb: js.Function1[/* status */ LoginStatus, Unit]): Unit
     
-    def getSession(cb: js.Function1[/* session */ Session, Unit]): Unit = js.native
+    def getSession(cb: js.Function1[/* session */ Session, Unit]): Unit
     
-    def login(cb: js.Function1[/* status */ LoginStatus, Unit], settings: Double): Unit = js.native
+    def login(cb: js.Function1[/* status */ LoginStatus, Unit], settings: Double): Unit
     
-    def logout(cb: js.Function1[/* status */ EmptyLoginStatus, Unit]): Unit = js.native
+    def logout(cb: js.Function1[/* status */ EmptyLoginStatus, Unit]): Unit
     
-    def revokeGrants(cb: js.Function1[/* status */ EmptyLoginStatus, Unit]): Unit = js.native
+    def revokeGrants(cb: js.Function1[/* status */ EmptyLoginStatus, Unit]): Unit
   }
   object API {
     
@@ -58,20 +56,19 @@ object Auth {
     }
   }
   
-  @js.native
   trait EmptyLoginStatus extends StObject {
     
-    var session: Null = js.native
+    var session: Null
     
-    var settings: js.UndefOr[scala.Nothing] = js.native
+    var settings: Unit
     
-    var status: unknown = js.native
+    var status: unknown
   }
   object EmptyLoginStatus {
     
     @scala.inline
-    def apply(session: Null, status: unknown): EmptyLoginStatus = {
-      val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(session: Null, settings: Unit): EmptyLoginStatus = {
+      val __obj = js.Dynamic.literal(session = session.asInstanceOf[js.Any], settings = settings.asInstanceOf[js.Any], status = "unknown")
       __obj.asInstanceOf[EmptyLoginStatus]
     }
     
@@ -82,16 +79,18 @@ object Auth {
       def setSession(value: Null): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
       
       @scala.inline
+      def setSettings(value: Unit): Self = StObject.set(x, "settings", value.asInstanceOf[js.Any])
+      
+      @scala.inline
       def setStatus(value: unknown): Self = StObject.set(x, "status", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait LoginStatus extends StObject {
     
-    var session: Session = js.native
+    var session: Session
     
-    var status: connected | not_authorized | unknown = js.native
+    var status: connected | not_authorized | unknown
   }
   object LoginStatus {
     
@@ -112,20 +111,19 @@ object Auth {
     }
   }
   
-  @js.native
   trait Session extends StObject {
     
-    var expire: Double = js.native
+    var expire: Double
     
-    var mid: Double = js.native
+    var mid: Double
     
-    var secret: String = js.native
+    var secret: String
     
-    var sid: String = js.native
+    var sid: String
     
-    var sig: String = js.native
+    var sig: String
     
-    var user: Domain = js.native
+    var user: Domain
   }
   object Session {
     

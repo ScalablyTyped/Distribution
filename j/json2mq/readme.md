@@ -11,8 +11,8 @@ Generate media query string from JSON or javascript object
 | Full name          | json2mq |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 230 |
-| # downloads        | 38607637 |
+| # dependents       | 256 |
+| # downloads        | 49202960 |
 | # stars            | 1 |
 
 ## Links

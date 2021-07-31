@@ -2,24 +2,22 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedTsconfig extends StObject {
   
   /**
     * Note that the case of the config path has not yet been normalized, as no files have been imported into the project yet
     */
-  var extendedConfigPath: js.UndefOr[java.lang.String] = js.native
+  var extendedConfigPath: js.UndefOr[java.lang.String] = js.undefined
   
-  var options: js.UndefOr[CompilerOptions] = js.native
+  var options: js.UndefOr[CompilerOptions] = js.undefined
   
-  var raw: js.Any = js.native
+  var raw: js.Any
   
-  var typeAcquisition: js.UndefOr[TypeAcquisition] = js.native
+  var typeAcquisition: js.UndefOr[TypeAcquisition] = js.undefined
   
-  var watchOptions: js.UndefOr[WatchOptions] = js.native
+  var watchOptions: js.UndefOr[WatchOptions] = js.undefined
 }
 object ParsedTsconfig {
   

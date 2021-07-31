@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.anglePickerControlMod.AnglePickerControl.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anglePickerControlMod {
@@ -24,23 +23,22 @@ object anglePickerControlMod {
   
   object AnglePickerControl {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * Label to use for the angle picker. If not set the a translated label "Angle" is used.
         */
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
       /**
         * A function that receives the new value of the input.
         */
-      def onChange(value: Double): Unit = js.native
+      def onChange(value: Double): Unit
       
       /**
         * The current value of the input. The value represents an angle in degrees and should be a value between 0 and 360.
         */
-      var value: Double = js.native
+      var value: Double
     }
     object Props {
       

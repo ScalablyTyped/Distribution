@@ -6,25 +6,26 @@ import typings.reactNavigationStack.vendorTypesMod.StackNavigationConfig
 import typings.reactNavigationStack.vendorTypesMod.StackNavigationHelpers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewsStackViewMod {
   
-  @JSImport("react-navigation-stack/lib/typescript/src/views/StackView", JSImport.Default)
+  @JSImport("react-navigation-stack/lib/typescript/src/views/StackView", JSImport.Namespace)
   @js.native
-  def default(hasNavigationDescriptorsNavigationConfigRest: Props): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasNavigationOriginalDescriptorsNavigationConfigRest: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasNavigationOriginalDescriptorsNavigationConfigRest.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait Props extends StObject {
     
-    var descriptors: StackDescriptorMap = js.native
+    var descriptors: StackDescriptorMap
     
-    var navigation: StackNavigationHelpers = js.native
+    var navigation: StackNavigationHelpers
     
-    var navigationConfig: StackNavigationConfig = js.native
+    var navigationConfig: StackNavigationConfig
     
-    var screenProps: js.Any = js.native
+    var screenProps: js.Any
   }
   object Props {
     

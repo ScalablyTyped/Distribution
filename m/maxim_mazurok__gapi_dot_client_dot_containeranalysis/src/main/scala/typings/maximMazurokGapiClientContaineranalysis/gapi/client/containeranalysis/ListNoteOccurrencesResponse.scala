@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListNoteOccurrencesResponse extends StObject {
   
   /** Token to provide to skip to a particular spot in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The occurrences attached to the specified note. */
-  var occurrences: js.UndefOr[js.Array[Occurrence]] = js.native
+  var occurrences: js.UndefOr[js.Array[Occurrence]] = js.undefined
 }
 object ListNoteOccurrencesResponse {
   

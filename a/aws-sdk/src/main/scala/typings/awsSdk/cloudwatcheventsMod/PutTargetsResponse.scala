@@ -2,21 +2,19 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutTargetsResponse extends StObject {
   
   /**
     * The failed target entries.
     */
-  var FailedEntries: js.UndefOr[PutTargetsResultEntryList] = js.native
+  var FailedEntries: js.UndefOr[PutTargetsResultEntryList] = js.undefined
   
   /**
     * The number of failed entries.
     */
-  var FailedEntryCount: js.UndefOr[Integer] = js.native
+  var FailedEntryCount: js.UndefOr[Integer] = js.undefined
 }
 object PutTargetsResponse {
   

@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceRange extends StObject {
   
   /**
     * End column of range (exclusive).
     */
-  var endColumn: integer = js.native
+  var endColumn: integer
   
   /**
     * End line of range
     */
-  var endLine: integer = js.native
+  var endLine: integer
   
   /**
     * Start column of range (inclusive).
     */
-  var startColumn: integer = js.native
+  var startColumn: integer
   
   /**
     * Start line of range.
     */
-  var startLine: integer = js.native
+  var startLine: integer
 }
 object SourceRange {
   

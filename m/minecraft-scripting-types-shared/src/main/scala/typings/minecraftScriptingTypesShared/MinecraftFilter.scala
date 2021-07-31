@@ -17,27 +17,25 @@ import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedString
 import typings.minecraftScriptingTypesShared.minecraftScriptingTypesSharedStrings.target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinecraftFilter extends StObject {
   
-  var all_of: js.UndefOr[js.Array[MinecraftFilter]] = js.native
+  var all_of: js.UndefOr[js.Array[MinecraftFilter]] = js.undefined
   
-  var any_of: js.UndefOr[js.Array[MinecraftFilter]] = js.native
+  var any_of: js.UndefOr[js.Array[MinecraftFilter]] = js.undefined
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
   var operator: js.UndefOr[
     ExclamationmarkEqualssign | Lessthansign | LessthansignEqualssign | LessthansignGreaterthansign | Equalssign | EqualssignEqualssign | Greaterthansign | GreaterthansignEqualssign | equals | not
-  ] = js.native
+  ] = js.undefined
   
-  var subject: js.UndefOr[other | parent | player | self | target] = js.native
+  var subject: js.UndefOr[other | parent | player | self | target] = js.undefined
   
-  var test: js.UndefOr[String] = js.native
+  var test: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object MinecraftFilter {
   

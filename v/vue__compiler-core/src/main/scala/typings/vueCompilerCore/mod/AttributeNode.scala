@@ -3,25 +3,25 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttributeNode extends Node2 {
+trait AttributeNode
+  extends StObject
+     with Node2 {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_AttributeNode: `6` = js.native
+  var type_AttributeNode: `6`
   
-  var value: js.UndefOr[TextNode] = js.native
+  var value: js.UndefOr[TextNode] = js.undefined
 }
 object AttributeNode {
   
   @scala.inline
-  def apply(loc: SourceLocation, name: String, `type`: `6`): AttributeNode = {
+  def apply(loc: SourceLocation, name: String): AttributeNode = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(6)
     __obj.asInstanceOf[AttributeNode]
   }
   

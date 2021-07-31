@@ -4,7 +4,6 @@ import typings.std.CustomEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -65,7 +64,7 @@ trait SemanticZoom extends StObject {
     * Occurs when the control zooms in or out.
     * @param eventInfo An object that contains information about the event. The detail property of this object is true when the control is zoomed out. Otherwise, it's false.
     **/
-  def onzoomchanged(eventInfo: CustomEvent[_]): Unit = js.native
+  def onzoomchanged(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Unregisters an event handler for the specified event.

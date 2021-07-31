@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntegerParameterRangeSpecification extends StObject {
   
   /**
     * The maximum integer value allowed.
     */
-  var MaxValue: ParameterValue = js.native
+  var MaxValue: ParameterValue
   
   /**
     * The minimum integer value allowed.
     */
-  var MinValue: ParameterValue = js.native
+  var MinValue: ParameterValue
 }
 object IntegerParameterRangeSpecification {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.marketplacemeteringMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageRecord extends StObject {
   
   /**
     * The CustomerIdentifier is obtained through the ResolveCustomer operation and represents an individual buyer in your application.
     */
-  var CustomerIdentifier: typings.awsSdk.marketplacemeteringMod.CustomerIdentifier = js.native
+  var CustomerIdentifier: typings.awsSdk.marketplacemeteringMod.CustomerIdentifier
   
   /**
     * During the process of registering a product on AWS Marketplace, up to eight dimensions are specified. These represent different units of value in your application.
     */
-  var Dimension: UsageDimension = js.native
+  var Dimension: UsageDimension
   
   /**
     * The quantity of usage consumed by the customer for the given dimension and time. Defaults to 0 if not specified.
     */
-  var Quantity: js.UndefOr[UsageQuantity] = js.native
+  var Quantity: js.UndefOr[UsageQuantity] = js.undefined
   
   /**
     * Timestamp, in UTC, for which the usage is being reported. Your application can meter usage for up to one hour in the past. Make sure the timestamp value is not before the start of the software usage.
     */
-  var Timestamp: typings.awsSdk.marketplacemeteringMod.Timestamp = js.native
+  var Timestamp: typings.awsSdk.marketplacemeteringMod.Timestamp
   
   /**
     * The set of UsageAllocations to submit. The sum of all UsageAllocation quantities must equal the Quantity of the UsageRecord.
     */
-  var UsageAllocations: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageAllocations] = js.native
+  var UsageAllocations: js.UndefOr[typings.awsSdk.marketplacemeteringMod.UsageAllocations] = js.undefined
 }
 object UsageRecord {
   

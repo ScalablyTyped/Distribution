@@ -4,7 +4,6 @@ import typings.blueprintjsCore.anon.PartialIBreadcrumbsProps
 import typings.blueprintjsCore.breadcrumbsMod.IBreadcrumbsProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core", "Breadcrumbs")

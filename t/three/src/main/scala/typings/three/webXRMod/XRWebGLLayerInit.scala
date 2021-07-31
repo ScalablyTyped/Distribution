@@ -2,23 +2,21 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRWebGLLayerInit extends StObject {
   
-  var alpha: js.UndefOr[Boolean] = js.native
+  var alpha: js.UndefOr[Boolean] = js.undefined
   
-  var antialias: js.UndefOr[Boolean] = js.native
+  var antialias: js.UndefOr[Boolean] = js.undefined
   
-  var depth: js.UndefOr[Boolean] = js.native
+  var depth: js.UndefOr[Boolean] = js.undefined
   
-  var framebufferScaleFactor: js.UndefOr[Double] = js.native
+  var framebufferScaleFactor: js.UndefOr[Double] = js.undefined
   
-  var ignoreDepthValues: js.UndefOr[Boolean] = js.native
+  var ignoreDepthValues: js.UndefOr[Boolean] = js.undefined
   
-  var stencil: js.UndefOr[Boolean] = js.native
+  var stencil: js.UndefOr[Boolean] = js.undefined
 }
 object XRWebGLLayerInit {
   

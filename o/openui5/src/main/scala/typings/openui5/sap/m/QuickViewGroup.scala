@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.core.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait QuickViewGroup extends Element {
+trait QuickViewGroup
+  extends StObject
+     with Element {
   
   /**
     * Adds some element to the aggregation <code>elements</code>.

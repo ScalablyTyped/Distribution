@@ -1,10 +1,10 @@
 package typings.webix.mod
 
 import typings.std.HTMLElement
+import typings.webix.mod.^
 import typings.webix.webix.ui.baseview
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,4 +18,9 @@ trait CustomScroll extends StObject {
   def resize(): Unit = js.native
   
   var scrollStep: Double = js.native
+}
+object CustomScroll {
+  
+  @scala.inline
+  def apply: CustomScroll = ^.asInstanceOf[js.Dynamic].selectDynamic("CustomScroll").asInstanceOf[CustomScroll]
 }

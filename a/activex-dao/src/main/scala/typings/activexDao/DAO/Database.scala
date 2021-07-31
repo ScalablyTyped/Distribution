@@ -2,7 +2,6 @@ package typings.activexDao.DAO
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,135 +21,60 @@ trait Database extends StObject {
   val Containers_Original: Containers = js.native
   
   def CreateProperty(): Property = js.native
-  def CreateProperty(
-    Name: js.UndefOr[scala.Nothing],
-    Type: js.UndefOr[scala.Nothing],
-    Value: js.UndefOr[scala.Nothing],
-    DDL: Boolean
-  ): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum): Property = js.native
-  def CreateProperty(
-    Name: js.UndefOr[scala.Nothing],
-    Type: DataTypeEnum,
-    Value: js.UndefOr[scala.Nothing],
-    DDL: Boolean
-  ): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any): Property = js.native
-  def CreateProperty(Name: js.UndefOr[scala.Nothing], Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String): Property = js.native
-  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
-  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any): Property = js.native
-  def CreateProperty(Name: String, Type: js.UndefOr[scala.Nothing], Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: js.Any): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum): Property = js.native
-  def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.UndefOr[scala.Nothing], DDL: Boolean): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any): Property = js.native
   def CreateProperty(Name: String, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: String, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: Unit, Value: Unit, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: js.Any, DDL: Boolean): Property = js.native
+  def CreateProperty(Name: Unit, Type: DataTypeEnum, Value: Unit, DDL: Boolean): Property = js.native
   
   def CreateQueryDef(): QueryDef = js.native
-  def CreateQueryDef(Name: js.UndefOr[scala.Nothing], SQLText: String): QueryDef = js.native
   def CreateQueryDef(Name: String): QueryDef = js.native
   def CreateQueryDef(Name: String, SQLText: String): QueryDef = js.native
+  def CreateQueryDef(Name: Unit, SQLText: String): QueryDef = js.native
   
   def CreateRelation(): Relation = js.native
-  def CreateRelation(
-    Name: js.UndefOr[scala.Nothing],
-    Table: js.UndefOr[scala.Nothing],
-    ForeignTable: js.UndefOr[scala.Nothing],
-    Attributes: RelationAttributeEnum
-  ): Relation = js.native
-  def CreateRelation(Name: js.UndefOr[scala.Nothing], Table: js.UndefOr[scala.Nothing], ForeignTable: String): Relation = js.native
-  def CreateRelation(
-    Name: js.UndefOr[scala.Nothing],
-    Table: js.UndefOr[scala.Nothing],
-    ForeignTable: String,
-    Attributes: RelationAttributeEnum
-  ): Relation = js.native
-  def CreateRelation(Name: js.UndefOr[scala.Nothing], Table: String): Relation = js.native
-  def CreateRelation(
-    Name: js.UndefOr[scala.Nothing],
-    Table: String,
-    ForeignTable: js.UndefOr[scala.Nothing],
-    Attributes: RelationAttributeEnum
-  ): Relation = js.native
-  def CreateRelation(Name: js.UndefOr[scala.Nothing], Table: String, ForeignTable: String): Relation = js.native
-  def CreateRelation(
-    Name: js.UndefOr[scala.Nothing],
-    Table: String,
-    ForeignTable: String,
-    Attributes: RelationAttributeEnum
-  ): Relation = js.native
   def CreateRelation(Name: String): Relation = js.native
-  def CreateRelation(
-    Name: String,
-    Table: js.UndefOr[scala.Nothing],
-    ForeignTable: js.UndefOr[scala.Nothing],
-    Attributes: RelationAttributeEnum
-  ): Relation = js.native
-  def CreateRelation(Name: String, Table: js.UndefOr[scala.Nothing], ForeignTable: String): Relation = js.native
-  def CreateRelation(
-    Name: String,
-    Table: js.UndefOr[scala.Nothing],
-    ForeignTable: String,
-    Attributes: RelationAttributeEnum
-  ): Relation = js.native
   def CreateRelation(Name: String, Table: String): Relation = js.native
-  def CreateRelation(
-    Name: String,
-    Table: String,
-    ForeignTable: js.UndefOr[scala.Nothing],
-    Attributes: RelationAttributeEnum
-  ): Relation = js.native
   def CreateRelation(Name: String, Table: String, ForeignTable: String): Relation = js.native
   def CreateRelation(Name: String, Table: String, ForeignTable: String, Attributes: RelationAttributeEnum): Relation = js.native
+  def CreateRelation(Name: String, Table: String, ForeignTable: Unit, Attributes: RelationAttributeEnum): Relation = js.native
+  def CreateRelation(Name: String, Table: Unit, ForeignTable: String): Relation = js.native
+  def CreateRelation(Name: String, Table: Unit, ForeignTable: String, Attributes: RelationAttributeEnum): Relation = js.native
+  def CreateRelation(Name: String, Table: Unit, ForeignTable: Unit, Attributes: RelationAttributeEnum): Relation = js.native
+  def CreateRelation(Name: Unit, Table: String): Relation = js.native
+  def CreateRelation(Name: Unit, Table: String, ForeignTable: String): Relation = js.native
+  def CreateRelation(Name: Unit, Table: String, ForeignTable: String, Attributes: RelationAttributeEnum): Relation = js.native
+  def CreateRelation(Name: Unit, Table: String, ForeignTable: Unit, Attributes: RelationAttributeEnum): Relation = js.native
+  def CreateRelation(Name: Unit, Table: Unit, ForeignTable: String): Relation = js.native
+  def CreateRelation(Name: Unit, Table: Unit, ForeignTable: String, Attributes: RelationAttributeEnum): Relation = js.native
+  def CreateRelation(Name: Unit, Table: Unit, ForeignTable: Unit, Attributes: RelationAttributeEnum): Relation = js.native
   
   def CreateTableDef(): TableDef = js.native
-  def CreateTableDef(
-    Name: js.UndefOr[scala.Nothing],
-    Attributes: js.UndefOr[scala.Nothing],
-    SourceTableName: js.UndefOr[scala.Nothing],
-    Connect: String
-  ): TableDef = js.native
-  def CreateTableDef(Name: js.UndefOr[scala.Nothing], Attributes: js.UndefOr[scala.Nothing], SourceTableName: String): TableDef = js.native
-  def CreateTableDef(
-    Name: js.UndefOr[scala.Nothing],
-    Attributes: js.UndefOr[scala.Nothing],
-    SourceTableName: String,
-    Connect: String
-  ): TableDef = js.native
-  def CreateTableDef(Name: js.UndefOr[scala.Nothing], Attributes: TableDefAttributeEnum): TableDef = js.native
-  def CreateTableDef(
-    Name: js.UndefOr[scala.Nothing],
-    Attributes: TableDefAttributeEnum,
-    SourceTableName: js.UndefOr[scala.Nothing],
-    Connect: String
-  ): TableDef = js.native
-  def CreateTableDef(Name: js.UndefOr[scala.Nothing], Attributes: TableDefAttributeEnum, SourceTableName: String): TableDef = js.native
-  def CreateTableDef(
-    Name: js.UndefOr[scala.Nothing],
-    Attributes: TableDefAttributeEnum,
-    SourceTableName: String,
-    Connect: String
-  ): TableDef = js.native
   def CreateTableDef(Name: String): TableDef = js.native
-  def CreateTableDef(
-    Name: String,
-    Attributes: js.UndefOr[scala.Nothing],
-    SourceTableName: js.UndefOr[scala.Nothing],
-    Connect: String
-  ): TableDef = js.native
-  def CreateTableDef(Name: String, Attributes: js.UndefOr[scala.Nothing], SourceTableName: String): TableDef = js.native
-  def CreateTableDef(Name: String, Attributes: js.UndefOr[scala.Nothing], SourceTableName: String, Connect: String): TableDef = js.native
+  def CreateTableDef(Name: String, Attributes: Unit, SourceTableName: String): TableDef = js.native
+  def CreateTableDef(Name: String, Attributes: Unit, SourceTableName: String, Connect: String): TableDef = js.native
+  def CreateTableDef(Name: String, Attributes: Unit, SourceTableName: Unit, Connect: String): TableDef = js.native
   def CreateTableDef(Name: String, Attributes: TableDefAttributeEnum): TableDef = js.native
-  def CreateTableDef(
-    Name: String,
-    Attributes: TableDefAttributeEnum,
-    SourceTableName: js.UndefOr[scala.Nothing],
-    Connect: String
-  ): TableDef = js.native
   def CreateTableDef(Name: String, Attributes: TableDefAttributeEnum, SourceTableName: String): TableDef = js.native
   def CreateTableDef(Name: String, Attributes: TableDefAttributeEnum, SourceTableName: String, Connect: String): TableDef = js.native
+  def CreateTableDef(Name: String, Attributes: TableDefAttributeEnum, SourceTableName: Unit, Connect: String): TableDef = js.native
+  def CreateTableDef(Name: Unit, Attributes: Unit, SourceTableName: String): TableDef = js.native
+  def CreateTableDef(Name: Unit, Attributes: Unit, SourceTableName: String, Connect: String): TableDef = js.native
+  def CreateTableDef(Name: Unit, Attributes: Unit, SourceTableName: Unit, Connect: String): TableDef = js.native
+  def CreateTableDef(Name: Unit, Attributes: TableDefAttributeEnum): TableDef = js.native
+  def CreateTableDef(Name: Unit, Attributes: TableDefAttributeEnum, SourceTableName: String): TableDef = js.native
+  def CreateTableDef(Name: Unit, Attributes: TableDefAttributeEnum, SourceTableName: String, Connect: String): TableDef = js.native
+  def CreateTableDef(Name: Unit, Attributes: TableDefAttributeEnum, SourceTableName: Unit, Connect: String): TableDef = js.native
   
   @JSName("DAO.Database_typekey")
   var DAODotDatabase_typekey: Database = js.native
@@ -168,21 +92,11 @@ trait Database extends StObject {
   def NewPassword(bstrOld: String, bstrNew: String): Unit = js.native
   
   def OpenRecordset(Name: String): Recordset = js.native
-  def OpenRecordset(
-    Name: String,
-    Type: js.UndefOr[scala.Nothing],
-    Options: js.UndefOr[scala.Nothing],
-    LockEdit: LockTypeEnum
-  ): Recordset = js.native
-  def OpenRecordset(Name: String, Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
-  def OpenRecordset(
-    Name: String,
-    Type: js.UndefOr[scala.Nothing],
-    Options: RecordsetOptionEnum,
-    LockEdit: LockTypeEnum
-  ): Recordset = js.native
+  def OpenRecordset(Name: String, Type: Unit, Options: Unit, LockEdit: LockTypeEnum): Recordset = js.native
+  def OpenRecordset(Name: String, Type: Unit, Options: RecordsetOptionEnum): Recordset = js.native
+  def OpenRecordset(Name: String, Type: Unit, Options: RecordsetOptionEnum, LockEdit: LockTypeEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum): Recordset = js.native
-  def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: js.UndefOr[scala.Nothing], LockEdit: LockTypeEnum): Recordset = js.native
+  def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: Unit, LockEdit: LockTypeEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Name: String, Type: RecordsetTypeEnum, Options: RecordsetOptionEnum, LockEdit: LockTypeEnum): Recordset = js.native
   

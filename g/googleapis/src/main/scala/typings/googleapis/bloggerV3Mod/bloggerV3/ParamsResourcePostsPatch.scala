@@ -6,60 +6,60 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePostsPatch extends StandardParameters {
+trait ParamsResourcePostsPatch
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the Blog.
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the body content of the post is included with the result
     * (default: true).
     */
-  var fetchBody: js.UndefOr[Boolean] = js.native
+  var fetchBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether image URL metadata for each post is included in the returned
     * result (default: false).
     */
-  var fetchImages: js.UndefOr[Boolean] = js.native
+  var fetchImages: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of comments to retrieve with the returned post.
     */
-  var maxComments: js.UndefOr[Double] = js.native
+  var maxComments: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the Post.
     */
-  var postId: js.UndefOr[String] = js.native
+  var postId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether a publish action should be performed when the post is updated
     * (default: false).
     */
-  var publish: js.UndefOr[Boolean] = js.native
+  var publish: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaPost] = js.native
+  var requestBody: js.UndefOr[SchemaPost] = js.undefined
   
   /**
     * Whether a revert action should be performed when the post is updated
     * (default: false).
     */
-  var revert: js.UndefOr[Boolean] = js.native
+  var revert: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourcePostsPatch {
   

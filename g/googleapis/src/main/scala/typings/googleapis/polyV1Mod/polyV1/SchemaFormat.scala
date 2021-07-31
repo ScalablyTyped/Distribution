@@ -2,7 +2,6 @@ package typings.googleapis.polyV1Mod.polyV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,25 +12,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * representation of an asset and contains all information needed to retrieve
   * and describe this representation.
   */
-@js.native
 trait SchemaFormat extends StObject {
   
   /**
     * Complexity stats about this representation of the asset.
     */
-  var formatComplexity: js.UndefOr[SchemaFormatComplexity] = js.native
+  var formatComplexity: js.UndefOr[SchemaFormatComplexity] = js.undefined
   
   /**
     * A short string that identifies the format type of this representation.
     * Possible values are: `FBX`, `GLTF`, `GLTF2`, `OBJ`, and `TILT`.
     */
-  var formatType: js.UndefOr[String] = js.native
+  var formatType: js.UndefOr[String] = js.undefined
   
   /**
     * A list of dependencies of the root element. May include, but is not
     * limited to, materials, textures, and shader programs.
     */
-  var resources: js.UndefOr[js.Array[SchemaFile]] = js.native
+  var resources: js.UndefOr[js.Array[SchemaFile]] = js.undefined
   
   /**
     * The root of the file hierarchy. This will always be populated. For some
@@ -39,7 +37,7 @@ trait SchemaFormat extends StObject {
     * the data.  Other types - such as `OBJ` - often reference other data
     * elements. These are contained in the resources field.
     */
-  var root: js.UndefOr[SchemaFile] = js.native
+  var root: js.UndefOr[SchemaFile] = js.undefined
 }
 object SchemaFormat {
   

@@ -5,7 +5,6 @@ import typings.grammarkdown.anon.`0`
 import typings.std.Generator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "DiagnosticMessages")
@@ -36,7 +35,7 @@ class DiagnosticMessages () extends StObject {
   
   def getDiagnostic(diagnosticIndex: Double): js.UndefOr[Diagnostic] = js.native
   
-  def getDiagnosticArguments(diagnosticIndex: Double): js.UndefOr[js.Array[_]] = js.native
+  def getDiagnosticArguments(diagnosticIndex: Double): js.UndefOr[js.Array[js.Any]] = js.native
   
   var getDiagnosticCode: js.Any = js.native
   
@@ -67,13 +66,13 @@ class DiagnosticMessages () extends StObject {
   var getSortedAndDeduplicatedDiagnosticIndices: js.Any = js.native
   
   @JSName(js.Symbol.iterator)
-  var iterator: js.Function0[Generator[js.UndefOr[DiagnosticInfo], Unit, _]] = js.native
+  var iterator: js.Function0[Generator[js.UndefOr[DiagnosticInfo], Unit, js.Any]] = js.native
   
   def report(pos: Double, message: Diagnostic, args: js.Any*): Unit = js.native
   
   var reportDiagnostic: js.Any = js.native
   
-  def reportNode(sourceFile: js.UndefOr[scala.Nothing], node: Node2[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
+  def reportNode(sourceFile: Unit, node: Node2[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
   def reportNode(sourceFile: SourceFile, node: Node2[SyntaxKind], message: Diagnostic, args: js.Any*): Unit = js.native
   
   def setSourceFile(sourceFile: SourceFile): Unit = js.native
@@ -90,5 +89,5 @@ class DiagnosticMessages () extends StObject {
   
   var sourceFilesDiagnosticOffset: js.Any = js.native
   
-  def values(): Generator[js.UndefOr[DiagnosticInfo], Unit, _] = js.native
+  def values(): Generator[js.UndefOr[DiagnosticInfo], Unit, js.Any] = js.native
 }

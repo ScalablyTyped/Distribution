@@ -4,15 +4,15 @@
 Typings are for version 1.0
 
 ## Library description:
-A helper utility to apply combineReducers functionality in react useReducer hook for large scale applications
+A helper utility to apply combineReducers functionality in React useReducer hook for large scale applications
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-combine-reducers |
 | Keywords           | react, react-hooks, reducer, combine, reducers, hooks |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 0 |
-| # downloads        | 14916 |
+| # downloads        | 45830 |
 | # stars            | 0 |
 
 ## Links

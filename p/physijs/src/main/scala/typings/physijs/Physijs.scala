@@ -10,7 +10,6 @@ import typings.three.mod.Object3D
 import typings.three.mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Physijs {
@@ -24,7 +23,9 @@ object Physijs {
   type ConeMesh = Mesh
   
   @js.native
-  trait ConeTwistConstraint extends Constraint {
+  trait ConeTwistConstraint
+    extends StObject
+       with Constraint {
     
     def disableMotor(): Unit = js.native
     
@@ -39,24 +40,23 @@ object Physijs {
     def setMotorTarget(target: Vector3): Unit = js.native
   }
   
-  @js.native
   trait ConeTwistConstraintDefinition extends StObject {
     
-    var axisa: Vector3 = js.native
+    var axisa: Vector3
     
-    var axisb: Vector3 = js.native
+    var axisb: Vector3
     
-    var id: Double = js.native
+    var id: Double
     
-    var objecta: Object3D = js.native
+    var objecta: Object3D
     
-    var objectb: Object3D = js.native
+    var objectb: Object3D
     
-    var positiona: Vector3 = js.native
+    var positiona: Vector3
     
-    var positionb: Vector3 = js.native
+    var positionb: Vector3
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object ConeTwistConstraintDefinition {
     
@@ -105,10 +105,9 @@ object Physijs {
     }
   }
   
-  @js.native
   trait Constraint extends StObject {
     
-    def getDefinition(): js.Any = js.native
+    def getDefinition(): js.Any
   }
   object Constraint {
     
@@ -130,22 +129,23 @@ object Physijs {
   
   type CylinderMesh = Mesh
   
-  @js.native
-  trait DOFConstraint extends Constraint {
+  trait DOFConstraint
+    extends StObject
+       with Constraint {
     
-    def configureAngularMotor(which: Double, low_angle: Double, high_angle: Double, velocity: Double, max_force: Double): Unit = js.native
+    def configureAngularMotor(which: Double, low_angle: Double, high_angle: Double, velocity: Double, max_force: Double): Unit
     
-    def disableAngularMotor(which: Double): Unit = js.native
+    def disableAngularMotor(which: Double): Unit
     
-    def enableAngularMotor(which: Double): Unit = js.native
+    def enableAngularMotor(which: Double): Unit
     
-    def setAngularLowerLimit(limit: Vector3): Unit = js.native
+    def setAngularLowerLimit(limit: Vector3): Unit
     
-    def setAngularUpperLimit(limit: Vector3): Unit = js.native
+    def setAngularUpperLimit(limit: Vector3): Unit
     
-    def setLinearLowerLimit(limit: Vector3): Unit = js.native
+    def setLinearLowerLimit(limit: Vector3): Unit
     
-    def setLinearUpperLimit(limit: Vector3): Unit = js.native
+    def setLinearUpperLimit(limit: Vector3): Unit
   }
   object DOFConstraint {
     
@@ -190,24 +190,23 @@ object Physijs {
     }
   }
   
-  @js.native
   trait DOFConstraintDefinition extends StObject {
     
-    var axisa: Vector3 = js.native
+    var axisa: Vector3
     
-    var axisb: Vector3 = js.native
+    var axisb: Vector3
     
-    var id: Double = js.native
+    var id: Double
     
-    var objecta: Object3D = js.native
+    var objecta: Object3D
     
-    var objectb: Object3D = js.native
+    var objectb: Object3D
     
-    var positiona: Vector3 = js.native
+    var positiona: Vector3
     
-    var positionb: Vector3 = js.native
+    var positionb: Vector3
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object DOFConstraintDefinition {
     
@@ -258,14 +257,15 @@ object Physijs {
   
   type HeightfieldMesh = Mesh
   
-  @js.native
-  trait HingeConstraint extends Constraint {
+  trait HingeConstraint
+    extends StObject
+       with Constraint {
     
-    def disableMotor(): Unit = js.native
+    def disableMotor(): Unit
     
-    def enableAngularMotor(velocity: Double, acceleration: Double): Unit = js.native
+    def enableAngularMotor(velocity: Double, acceleration: Double): Unit
     
-    def setLimits(low: Double, high: Double, bias_factor: Double, relaxation_factor: Double): Unit = js.native
+    def setLimits(low: Double, high: Double, bias_factor: Double, relaxation_factor: Double): Unit
   }
   object HingeConstraint {
     
@@ -294,22 +294,21 @@ object Physijs {
     }
   }
   
-  @js.native
   trait HingeConstraintDefinition extends StObject {
     
-    var axis: Vector3 = js.native
+    var axis: Vector3
     
-    var id: Double = js.native
+    var id: Double
     
-    var objecta: Object3D = js.native
+    var objecta: Object3D
     
-    var objectb: Object3D = js.native
+    var objectb: Object3D
     
-    var positiona: Vector3 = js.native
+    var positiona: Vector3
     
-    var positionb: Vector3 = js.native
+    var positionb: Vector3
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object HingeConstraintDefinition {
     
@@ -401,8 +400,9 @@ object Physijs {
   
   type PlaneMesh = Mesh
   
-  @js.native
-  trait PointConstraint extends Constraint
+  trait PointConstraint
+    extends StObject
+       with Constraint
   object PointConstraint {
     
     @scala.inline
@@ -412,20 +412,19 @@ object Physijs {
     }
   }
   
-  @js.native
   trait PointConstraintDefinition extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var objecta: Object3D = js.native
+    var objecta: Object3D
     
-    var objectb: Object3D = js.native
+    var objectb: Object3D
     
-    var positiona: Vector3 = js.native
+    var positiona: Vector3
     
-    var positionb: Vector3 = js.native
+    var positionb: Vector3
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object PointConstraintDefinition {
     
@@ -492,19 +491,18 @@ object Physijs {
     def setGravity(gravity: Vector3): Unit = js.native
     
     def simulate(): Boolean = js.native
-    def simulate(timeStep: js.UndefOr[scala.Nothing], maxSubSteps: Double): Boolean = js.native
     def simulate(timeStep: Double): Boolean = js.native
     def simulate(timeStep: Double, maxSubSteps: Double): Boolean = js.native
+    def simulate(timeStep: Unit, maxSubSteps: Double): Boolean = js.native
   }
   
-  @js.native
   trait SceneParameters extends StObject {
     
-    var ammo: js.UndefOr[String] = js.native
+    var ammo: js.UndefOr[String] = js.undefined
     
-    var fixedTimeStep: js.UndefOr[Double] = js.native
+    var fixedTimeStep: js.UndefOr[Double] = js.undefined
     
-    var rateLimit: js.UndefOr[Boolean] = js.native
+    var rateLimit: js.UndefOr[Boolean] = js.undefined
   }
   object SceneParameters {
     
@@ -537,20 +535,21 @@ object Physijs {
     }
   }
   
-  @js.native
-  trait SliderConstraint extends Constraint {
+  trait SliderConstraint
+    extends StObject
+       with Constraint {
     
-    def disableAngularMotor(): Unit = js.native
+    def disableAngularMotor(): Unit
     
-    def disableLinearMotor(): Unit = js.native
+    def disableLinearMotor(): Unit
     
-    def enableAngularMotor(velocity: Double, acceleration: Double): Unit = js.native
+    def enableAngularMotor(velocity: Double, acceleration: Double): Unit
     
-    def enableLinearMotor(velocity: Double, acceleration: Double): Unit = js.native
+    def enableLinearMotor(velocity: Double, acceleration: Double): Unit
     
-    def setLimits(lin_lower: Double, lin_upper: Double, ang_lower: Double, ang_upper: Double): Unit = js.native
+    def setLimits(lin_lower: Double, lin_upper: Double, ang_lower: Double, ang_upper: Double): Unit
     
-    def setRestitution(linear: Double, angular: Double): Unit = js.native
+    def setRestitution(linear: Double, angular: Double): Unit
   }
   object SliderConstraint {
     
@@ -591,22 +590,21 @@ object Physijs {
     }
   }
   
-  @js.native
   trait SliderConstraintDefinition extends StObject {
     
-    var axis: Vector3 = js.native
+    var axis: Vector3
     
-    var id: Double = js.native
+    var id: Double
     
-    var objecta: Object3D = js.native
+    var objecta: Object3D
     
-    var objectb: Object3D = js.native
+    var objectb: Object3D
     
-    var positiona: Vector3 = js.native
+    var positiona: Vector3
     
-    var positionb: Vector3 = js.native
+    var positionb: Vector3
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SliderConstraintDefinition {
     
@@ -718,20 +716,19 @@ object Physijs {
       ] = js.native
   }
   
-  @js.native
   trait VehicleTuning extends StObject {
     
-    var friction_slip: Double = js.native
+    var friction_slip: Double
     
-    var max_suspension_force: Double = js.native
+    var max_suspension_force: Double
     
-    var max_suspension_travel: Double = js.native
+    var max_suspension_travel: Double
     
-    var suspension_compression: Double = js.native
+    var suspension_compression: Double
     
-    var suspension_damping: Double = js.native
+    var suspension_damping: Double
     
-    var suspension_stiffness: Double = js.native
+    var suspension_stiffness: Double
   }
   object VehicleTuning {
     

@@ -3,25 +3,24 @@ package typings.ccap
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ccap", JSImport.Namespace)
-  @js.native
-  def apply(): Captcha = js.native
-  @JSImport("ccap", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Captcha = js.native
-  @JSImport("ccap", JSImport.Namespace)
-  @js.native
-  def apply(width: Double, height: Double, offset: Double): Captcha = js.native
+  @scala.inline
+  def apply(): Captcha = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Captcha]
+  @scala.inline
+  def apply(options: Options): Captcha = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Captcha]
+  @scala.inline
+  def apply(width: Double, height: Double, offset: Double): Captcha = (^.asInstanceOf[js.Dynamic].apply(width.asInstanceOf[js.Any], height.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Captcha]
   
+  @JSImport("ccap", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Captcha extends StObject {
     
-    def get(): js.Tuple2[String, Buffer] = js.native
+    def get(): js.Tuple2[String, Buffer]
   }
   object Captcha {
     
@@ -39,26 +38,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     // set pic quality,default is 50
-    var fontsize: js.UndefOr[Double] = js.native
+    var fontsize: js.UndefOr[Double] = js.undefined
     
     // set font size,default is 57
     // Custom the function to generate captcha text
-    var generate: js.UndefOr[js.Function0[String]] = js.native
+    var generate: js.UndefOr[js.Function0[String]] = js.undefined
     
     // set width,default is 256
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     // set height,default is 60
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     // set text spacing,default is 40
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

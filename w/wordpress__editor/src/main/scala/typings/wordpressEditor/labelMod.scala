@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressEditor.labelMod.PostPublishButtonLabel.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelMod {
@@ -24,12 +23,11 @@ object labelMod {
   
   object PostPublishButtonLabel {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      var forceIsSaving: js.UndefOr[Boolean] = js.native
+      var forceIsSaving: js.UndefOr[Boolean] = js.undefined
     }
     object Props {
       

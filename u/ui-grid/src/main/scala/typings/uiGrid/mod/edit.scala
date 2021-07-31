@@ -7,28 +7,26 @@ import typings.uiGrid.anon.AfterCellEdit
 import typings.uiGrid.anon.BEGINCELLEDIT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object edit {
   
-  @js.native
   trait IColumnDef[TEntity] extends StObject {
     
     /**
       * If specified, either a value or function evaluated before editing cell.
       * If falsy, then editing of cell is not allowed.
       */
-    var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.native
+    var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
     
     /** A filter that you would like to apply to the values in the options list of the dropdown */
-    var editDropdownFilter: js.UndefOr[String] = js.native
+    var editDropdownFilter: js.UndefOr[String] = js.undefined
     
     /** the label for the "id" field in the editDropdownOptionsArray. Defaults to 'id' */
-    var editDropdownIdLabel: js.UndefOr[String] = js.native
+    var editDropdownIdLabel: js.UndefOr[String] = js.undefined
     
     /** an array of values in the format [ {id: xxx, value: xxx} ], which is populated into the edit dropdown */
-    var editDropdownOptionsArray: js.UndefOr[js.Array[IEditDropdown]] = js.native
+    var editDropdownOptionsArray: js.UndefOr[js.Array[IEditDropdown]] = js.undefined
     
     /**
       * a path to a property on row.entity containing an array of values in the format `[{id: xxx, value:
@@ -37,10 +35,10 @@ object edit {
       * dependent on the backing row entity.  If this property is set then editDropdownOptionsArray will be
       * ignored.
       */
-    var editDropdownRowEntityOptionsArrayPath: js.UndefOr[String] = js.native
+    var editDropdownRowEntityOptionsArrayPath: js.UndefOr[String] = js.undefined
     
     /** the label of the 'value' field in the editDropdownOptionsArray.  Defaults to 'value' */
-    var editDropdownValueLabel: js.UndefOr[String] = js.native
+    var editDropdownValueLabel: js.UndefOr[String] = js.undefined
     
     /**
       * A function that should be called when any files have been chosen by the user.
@@ -78,7 +76,7 @@ object edit {
           /* files */ FileList, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A bindable string value that is used when binding to edit controls instead of colDef.field
@@ -92,21 +90,21 @@ object edit {
       colDef.field = 'state.name';
       colDef.editModelField = 'state';
       */
-    var editModelField: js.UndefOr[String] = js.native
+    var editModelField: js.UndefOr[String] = js.undefined
     
     /**
       * Cell template to be used when editing this column. Can be Url or text template.
       * Defaults to gridOptions.editableCellTemplate
       */
-    var editableCellTemplate: js.UndefOr[String] = js.native
+    var editableCellTemplate: js.UndefOr[String] = js.undefined
     
     /** Enable editing on a column */
-    var enableCellEdit: js.UndefOr[Boolean] = js.native
+    var enableCellEdit: js.UndefOr[Boolean] = js.undefined
     
     /** If true, then editor is invoked as soon as cell receives focus. Default false.
       * _Requires both the cellNav feature and the edit feature to be enabled_
       */
-    var enableCellEditOnFocus: js.UndefOr[Boolean] = js.native
+    var enableCellEditOnFocus: js.UndefOr[Boolean] = js.undefined
   }
   object IColumnDef {
     
@@ -117,7 +115,7 @@ object edit {
     }
     
     @scala.inline
-    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.edit.IColumnDef[_], TEntity] (val x: Self with typings.uiGrid.mod.edit.IColumnDef[TEntity]) extends AnyVal {
+    implicit class IColumnDefMutableBuilder[Self <: typings.uiGrid.mod.edit.IColumnDef[?], TEntity] (val x: Self & typings.uiGrid.mod.edit.IColumnDef[TEntity]) extends AnyVal {
       
       @scala.inline
       def setCellEditableCondition(value: js.Any | (js.Function1[/* $scope */ IScope, Boolean])): Self = StObject.set(x, "cellEditableCondition", value.asInstanceOf[js.Any])
@@ -195,12 +193,11 @@ object edit {
     }
   }
   
-  @js.native
   trait IEditDropdown extends StObject {
     
-    var id: Double | String = js.native
+    var id: Double | String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object IEditDropdown {
     
@@ -221,10 +218,9 @@ object edit {
     }
   }
   
-  @js.native
   trait IGridEditApi[TEntity] extends StObject {
     
-    var on: AfterCellEdit[TEntity] = js.native
+    var on: AfterCellEdit[TEntity]
   }
   object IGridEditApi {
     
@@ -235,28 +231,27 @@ object edit {
     }
     
     @scala.inline
-    implicit class IGridEditApiMutableBuilder[Self <: IGridEditApi[_], TEntity] (val x: Self with IGridEditApi[TEntity]) extends AnyVal {
+    implicit class IGridEditApiMutableBuilder[Self <: IGridEditApi[?], TEntity] (val x: Self & IGridEditApi[TEntity]) extends AnyVal {
       
       @scala.inline
       def setOn(value: AfterCellEdit[TEntity]): Self = StObject.set(x, "on", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait IGridOptions extends StObject {
     
     /**
       * If specified, either a value or function to be used by all columns before editing.
       * If falsy, then editing of cell is not allowed
       */
-    var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.native
+    var cellEditableCondition: js.UndefOr[js.Any | (js.Function1[/* $scope */ IScope, Boolean])] = js.undefined
     
     /**
       * If specified, cellTemplate to use as the editor for all columns.
       * defaults to 'ui-grid/cellTextEditor'
       * @default 'ui-grid/cellTextEditor'
       */
-    var editableCellTemplate: js.UndefOr[String] = js.native
+    var editableCellTemplate: js.UndefOr[String] = js.undefined
     
     /**
       * If defined, sets the default value for the editable flag on each individual colDefs if their individual
@@ -264,7 +259,7 @@ object edit {
       * Defaults to undefined.
       * @default undefined
       */
-    var enableCellEdit: js.UndefOr[Boolean] = js.native
+    var enableCellEdit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, then editor is invoked as soon as cell receives focus.
@@ -272,7 +267,7 @@ object edit {
       * _requires cellNav feature and the edit feature to be enabled_
       * @default false
       */
-    var enableCellEditOnFocus: js.UndefOr[Boolean] = js.native
+    var enableCellEditOnFocus: js.UndefOr[Boolean] = js.undefined
   }
   object IGridOptions {
     
@@ -314,11 +309,10 @@ object edit {
     }
   }
   
-  @js.native
   trait IGridRow extends StObject {
     
     /** enable editing on row, grouping for example might disable editing on group header rows */
-    var enableCellEdit: js.UndefOr[Boolean] = js.native
+    var enableCellEdit: js.UndefOr[Boolean] = js.undefined
   }
   object IGridRow {
     
@@ -339,14 +333,13 @@ object edit {
     }
   }
   
-  @js.native
   trait IUiGridEditConstants extends StObject {
     
-    var EDITABLE_CELL_DIRECTIVE: String = js.native
+    var EDITABLE_CELL_DIRECTIVE: String
     
-    var EDITABLE_CELL_TEMPLATE: String = js.native
+    var EDITABLE_CELL_TEMPLATE: String
     
-    var events: BEGINCELLEDIT = js.native
+    var events: BEGINCELLEDIT
   }
   object IUiGridEditConstants {
     

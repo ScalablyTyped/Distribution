@@ -2,26 +2,26 @@ package typings.emailCheck
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("email-check", JSImport.Namespace)
-  @js.native
-  def apply(email: String): js.Promise[Boolean] = js.native
-  @JSImport("email-check", JSImport.Namespace)
-  @js.native
-  def apply(email: String, options: EmailCheckOptions): js.Promise[Boolean] = js.native
+  @scala.inline
+  def apply(email: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].apply(email.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+  @scala.inline
+  def apply(email: String, options: EmailCheckOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].apply(email.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
+  @JSImport("email-check", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait EmailCheckOptions extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object EmailCheckOptions {
     

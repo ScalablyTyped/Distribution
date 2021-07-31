@@ -37,7 +37,6 @@ import typings.expressValidator.optionsMod.UUIDVersion
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validatorsMod {
@@ -157,7 +156,7 @@ object validatorsMod {
     def isIdentityCard(): Return = js.native
     def isIdentityCard(locale: IdentityCard): Return = js.native
     
-    def isIn(values: js.Array[_]): Return = js.native
+    def isIn(values: js.Array[js.Any]): Return = js.native
     
     def isInt(): Return = js.native
     def isInt(options: IsIntOptions): Return = js.native

@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventoryItemAttribute extends StObject {
   
   /**
     * The data type of the inventory item attribute. 
     */
-  var DataType: InventoryAttributeDataType = js.native
+  var DataType: InventoryAttributeDataType
   
   /**
     * Name of the inventory item attribute.
     */
-  var Name: InventoryItemAttributeName = js.native
+  var Name: InventoryItemAttributeName
 }
 object InventoryItemAttribute {
   

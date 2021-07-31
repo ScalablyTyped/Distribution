@@ -2,31 +2,29 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddPermissionInput extends StObject {
   
   /**
     * The AWS account IDs of the users (principals) who will be given access to the specified actions. The users must have AWS accounts, but do not need to be signed up for this service.
     */
-  var AWSAccountId: DelegatesList = js.native
+  var AWSAccountId: DelegatesList
   
   /**
     * The action you want to allow for the specified principal(s). Valid values: Any Amazon SNS action name, for example Publish.
     */
-  var ActionName: ActionsList = js.native
+  var ActionName: ActionsList
   
   /**
     * A unique identifier for the new policy statement.
     */
-  var Label: label = js.native
+  var Label: label
   
   /**
     * The ARN of the topic whose access control policy you wish to modify.
     */
-  var TopicArn: topicARN = js.native
+  var TopicArn: topicARN
 }
 object AddPermissionInput {
   

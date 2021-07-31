@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MSFIDOSignatureAssertion extends MSAssertion {
+trait MSFIDOSignatureAssertion
+  extends StObject
+     with MSAssertion {
   
-  val signature: MSFIDOSignature = js.native
+  val signature: MSFIDOSignature
 }
 object MSFIDOSignatureAssertion {
   

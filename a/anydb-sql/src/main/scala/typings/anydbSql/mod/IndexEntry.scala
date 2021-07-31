@@ -2,35 +2,33 @@ package typings.anydbSql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexEntry extends StObject {
   
-  var Cardinality: Double = js.native
+  var Cardinality: Double
   
-  var Collation: String = js.native
+  var Collation: String
   
-  var Column_name: String = js.native
+  var Column_name: String
   
-  var Comment: String = js.native
+  var Comment: String
   
-  var Index_comment: String = js.native
+  var Index_comment: String
   
-  var Index_type: String = js.native
+  var Index_type: String
   
-  var Key_name: String = js.native
+  var Key_name: String
   
-  var Non_unique: Boolean = js.native
+  var Non_unique: Boolean
   
-  var Packed: Boolean = js.native
+  var Packed: Boolean
   
-  var Seq_in_index: Double = js.native
+  var Seq_in_index: Double
   
-  var Sub_part: String = js.native
+  var Sub_part: String
   
-  var Table: String = js.native
+  var Table: String
 }
 object IndexEntry {
   

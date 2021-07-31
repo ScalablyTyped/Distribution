@@ -2,24 +2,22 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pair mapping a theme color type to the concrete color it represents.
   */
-@js.native
 trait SchemaThemeColorPair extends StObject {
   
   /**
     * The concrete color corresponding to the theme color type above.
     */
-  var color: js.UndefOr[SchemaRgbColor] = js.native
+  var color: js.UndefOr[SchemaRgbColor] = js.undefined
   
   /**
     * The type of the theme color.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaThemeColorPair {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViolationEvent extends StObject {
   
   /**
     * The behavior which was violated.
     */
-  var behavior: js.UndefOr[Behavior] = js.native
+  var behavior: js.UndefOr[Behavior] = js.undefined
   
   /**
     * The value of the metric (the measurement).
     */
-  var metricValue: js.UndefOr[MetricValue] = js.native
+  var metricValue: js.UndefOr[MetricValue] = js.undefined
   
   /**
     * The name of the security profile whose behavior was violated.
     */
-  var securityProfileName: js.UndefOr[SecurityProfileName] = js.native
+  var securityProfileName: js.UndefOr[SecurityProfileName] = js.undefined
   
   /**
     * The name of the thing responsible for the violation event.
     */
-  var thingName: js.UndefOr[DeviceDefenderThingName] = js.native
+  var thingName: js.UndefOr[DeviceDefenderThingName] = js.undefined
   
   /**
     * The time the violation event occurred.
     */
-  var violationEventTime: js.UndefOr[Timestamp] = js.native
+  var violationEventTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The type of violation event.
     */
-  var violationEventType: js.UndefOr[ViolationEventType] = js.native
+  var violationEventType: js.UndefOr[ViolationEventType] = js.undefined
   
   /**
     * The ID of the violation event.
     */
-  var violationId: js.UndefOr[ViolationId] = js.native
+  var violationId: js.UndefOr[ViolationId] = js.undefined
 }
 object ViolationEvent {
   

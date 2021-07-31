@@ -2,23 +2,21 @@ package typings.googleapis.plusV1Mod.plusV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPlusAclentryResource extends StObject {
   
   /**
     * A descriptive name for this entry. Suitable for display.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the entry. For entries of type &quot;person&quot; or
     * &quot;circle&quot;, this is the ID of the resource. For other types, this
     * property is not set.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The type of entry describing to whom access is granted. Possible values
@@ -30,7 +28,7 @@ trait SchemaPlusAclentryResource extends StObject {
     * &quot;domain&quot; - Access to members of the person&#39;s Google Apps
     * domain.  - &quot;public&quot; - Access to anyone on the web.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaPlusAclentryResource {
   

@@ -2,18 +2,16 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAmiFilter extends StObject {
   
   /**
     * The name of the AMI that was provided during image creation.
     */
-  var name: String = js.native
+  var name: String
   
-  var values: js.Array[String] = js.native
+  var values: js.Array[String]
 }
 object GetAmiFilter {
   

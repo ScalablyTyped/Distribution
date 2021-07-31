@@ -2,26 +2,26 @@ package typings.globBase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("glob-base", JSImport.Namespace)
-  @js.native
-  def apply(): GlobBaseResult = js.native
-  @JSImport("glob-base", JSImport.Namespace)
-  @js.native
-  def apply(basePath: String): GlobBaseResult = js.native
+  @scala.inline
+  def apply(): GlobBaseResult = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[GlobBaseResult]
+  @scala.inline
+  def apply(basePath: String): GlobBaseResult = ^.asInstanceOf[js.Dynamic].apply(basePath.asInstanceOf[js.Any]).asInstanceOf[GlobBaseResult]
   
+  @JSImport("glob-base", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait GlobBaseResult extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var glob: String = js.native
+    var glob: String
     
-    var isGlob: Boolean = js.native
+    var isGlob: Boolean
   }
   object GlobBaseResult {
     

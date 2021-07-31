@@ -15,23 +15,21 @@ import typings.tensorflowTfjsCore.typesMod.WeightsManifestConfig
 import typings.tensorflowTfjsCore.typesMod.WeightsManifestEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DateSaved extends StObject {
     
-    var dateSaved: Date = js.native
+    var dateSaved: Date
     
-    var modelTopologyBytes: Double = js.native
+    var modelTopologyBytes: Double
     
-    var modelTopologyType: String = js.native
+    var modelTopologyType: String
     
-    var weightDataBytes: Double = js.native
+    var weightDataBytes: Double
     
-    var weightSpecsBytes: Double = js.native
+    var weightSpecsBytes: Double
   }
   object DateSaved {
     
@@ -78,30 +76,7 @@ object anon {
   trait FnCallManifestFilePathPrefixWeightNamesRequestInit extends StObject {
     
     def apply(manifest: WeightsManifestConfig): js.Promise[NamedTensorMap] = js.native
-    def apply(
-      manifest: WeightsManifestConfig,
-      filePathPrefix: js.UndefOr[scala.Nothing],
-      weightNames: js.UndefOr[scala.Nothing],
-      requestInit: RequestInit
-    ): js.Promise[NamedTensorMap] = js.native
-    def apply(
-      manifest: WeightsManifestConfig,
-      filePathPrefix: js.UndefOr[scala.Nothing],
-      weightNames: js.Array[String]
-    ): js.Promise[NamedTensorMap] = js.native
-    def apply(
-      manifest: WeightsManifestConfig,
-      filePathPrefix: js.UndefOr[scala.Nothing],
-      weightNames: js.Array[String],
-      requestInit: RequestInit
-    ): js.Promise[NamedTensorMap] = js.native
     def apply(manifest: WeightsManifestConfig, filePathPrefix: String): js.Promise[NamedTensorMap] = js.native
-    def apply(
-      manifest: WeightsManifestConfig,
-      filePathPrefix: String,
-      weightNames: js.UndefOr[scala.Nothing],
-      requestInit: RequestInit
-    ): js.Promise[NamedTensorMap] = js.native
     def apply(manifest: WeightsManifestConfig, filePathPrefix: String, weightNames: js.Array[String]): js.Promise[NamedTensorMap] = js.native
     def apply(
       manifest: WeightsManifestConfig,
@@ -109,30 +84,31 @@ object anon {
       weightNames: js.Array[String],
       requestInit: RequestInit
     ): js.Promise[NamedTensorMap] = js.native
+    def apply(
+      manifest: WeightsManifestConfig,
+      filePathPrefix: String,
+      weightNames: Unit,
+      requestInit: RequestInit
+    ): js.Promise[NamedTensorMap] = js.native
+    def apply(manifest: WeightsManifestConfig, filePathPrefix: Unit, weightNames: js.Array[String]): js.Promise[NamedTensorMap] = js.native
+    def apply(
+      manifest: WeightsManifestConfig,
+      filePathPrefix: Unit,
+      weightNames: js.Array[String],
+      requestInit: RequestInit
+    ): js.Promise[NamedTensorMap] = js.native
+    def apply(manifest: WeightsManifestConfig, filePathPrefix: Unit, weightNames: Unit, requestInit: RequestInit): js.Promise[NamedTensorMap] = js.native
   }
   
   @js.native
   trait FnCallModelArtifactsWeightSpecsWeightDataTrainingConfig extends StObject {
     
     def apply(modelArtifacts: js.Object): IOHandler = js.native
-    def apply(
-      modelArtifacts: js.Object,
-      weightSpecs: js.UndefOr[scala.Nothing],
-      weightData: js.UndefOr[scala.Nothing],
-      trainingConfig: TrainingConfig
-    ): IOHandler = js.native
-    def apply(modelArtifacts: js.Object, weightSpecs: js.UndefOr[scala.Nothing], weightData: ArrayBuffer): IOHandler = js.native
-    def apply(
-      modelArtifacts: js.Object,
-      weightSpecs: js.UndefOr[scala.Nothing],
-      weightData: ArrayBuffer,
-      trainingConfig: TrainingConfig
-    ): IOHandler = js.native
     def apply(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
     def apply(
       modelArtifacts: js.Object,
       weightSpecs: js.Array[WeightsManifestEntry],
-      weightData: js.UndefOr[scala.Nothing],
+      weightData: Unit,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
     def apply(modelArtifacts: js.Object, weightSpecs: js.Array[WeightsManifestEntry], weightData: ArrayBuffer): IOHandler = js.native
@@ -142,25 +118,20 @@ object anon {
       weightData: ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
-    def apply(modelArtifacts: ModelArtifacts): IOHandler = js.native
+    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: Unit, trainingConfig: TrainingConfig): IOHandler = js.native
+    def apply(modelArtifacts: js.Object, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = js.native
     def apply(
-      modelArtifacts: ModelArtifacts,
-      weightSpecs: js.UndefOr[scala.Nothing],
-      weightData: js.UndefOr[scala.Nothing],
-      trainingConfig: TrainingConfig
-    ): IOHandler = js.native
-    def apply(modelArtifacts: ModelArtifacts, weightSpecs: js.UndefOr[scala.Nothing], weightData: ArrayBuffer): IOHandler = js.native
-    def apply(
-      modelArtifacts: ModelArtifacts,
-      weightSpecs: js.UndefOr[scala.Nothing],
+      modelArtifacts: js.Object,
+      weightSpecs: Unit,
       weightData: ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
+    def apply(modelArtifacts: ModelArtifacts): IOHandler = js.native
     def apply(modelArtifacts: ModelArtifacts, weightSpecs: js.Array[WeightsManifestEntry]): IOHandler = js.native
     def apply(
       modelArtifacts: ModelArtifacts,
       weightSpecs: js.Array[WeightsManifestEntry],
-      weightData: js.UndefOr[scala.Nothing],
+      weightData: Unit,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
     def apply(
@@ -171,6 +142,19 @@ object anon {
     def apply(
       modelArtifacts: ModelArtifacts,
       weightSpecs: js.Array[WeightsManifestEntry],
+      weightData: ArrayBuffer,
+      trainingConfig: TrainingConfig
+    ): IOHandler = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: Unit,
+      weightData: Unit,
+      trainingConfig: TrainingConfig
+    ): IOHandler = js.native
+    def apply(modelArtifacts: ModelArtifacts, weightSpecs: Unit, weightData: ArrayBuffer): IOHandler = js.native
+    def apply(
+      modelArtifacts: ModelArtifacts,
+      weightSpecs: Unit,
       weightData: ArrayBuffer,
       trainingConfig: TrainingConfig
     ): IOHandler = js.native
@@ -185,10 +169,9 @@ object anon {
     def apply(tensors: NamedTensorMap, group: WeightGroup): js.Promise[Data] = js.native
   }
   
-  @js.native
   trait Unreliable extends StObject {
     
-    var unreliable: Boolean = js.native
+    var unreliable: Boolean
   }
   object Unreliable {
     

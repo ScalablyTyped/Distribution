@@ -4,25 +4,23 @@ import typings.nodal.nodalNumbers.`0`
 import typings.nodal.nodalNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumnProperties extends StObject {
   
-  var array: js.UndefOr[Boolean] = js.native
+  var array: js.UndefOr[Boolean] = js.undefined
   
-  var auto_increment: js.UndefOr[Boolean] = js.native
+  var auto_increment: js.UndefOr[Boolean] = js.undefined
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var length: js.UndefOr[Double | Null] = js.native
+  var length: js.UndefOr[Double | Null] = js.undefined
   
-  var nullable: js.UndefOr[Boolean] = js.native
+  var nullable: js.UndefOr[Boolean] = js.undefined
   
-  var primary_key: js.UndefOr[`0` | `1` | Boolean] = js.native
+  var primary_key: js.UndefOr[`0` | `1` | Boolean] = js.undefined
   
-  var unique: js.UndefOr[`0` | `1` | Boolean] = js.native
+  var unique: js.UndefOr[`0` | `1` | Boolean] = js.undefined
 }
 object IColumnProperties {
   

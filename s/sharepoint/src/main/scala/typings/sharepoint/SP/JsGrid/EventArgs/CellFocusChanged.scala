@@ -3,19 +3,19 @@ package typings.sharepoint.SP.JsGrid.EventArgs
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CellFocusChanged extends IEventArgs {
+trait CellFocusChanged
+  extends StObject
+     with IEventArgs {
   
-  var newFieldKey: String = js.native
+  var newFieldKey: String
   
-  var newRecordKey: Double = js.native
+  var newRecordKey: Double
   
-  var oldFieldKey: String = js.native
+  var oldFieldKey: String
   
-  var oldRecordKey: Double = js.native
+  var oldRecordKey: Double
 }
 object CellFocusChanged {
   

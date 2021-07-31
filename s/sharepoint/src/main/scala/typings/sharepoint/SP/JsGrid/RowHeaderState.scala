@@ -3,21 +3,19 @@ package typings.sharepoint.SP.JsGrid
 import typings.microsoftAjax.Sys.UI.DomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowHeaderState extends StObject {
   
-  def GetId(): String = js.native
+  def GetId(): String
   
-  def GetImg(): Image = js.native
+  def GetImg(): Image
   
-  def GetOnClick(): js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit] = js.native
+  def GetOnClick(): js.Function2[/* eventInfo */ DomEvent, /* recordKey */ Double, Unit]
   
-  def GetPriority(): RowHeaderStatePriorities = js.native
+  def GetPriority(): RowHeaderStatePriorities
   
-  def GetTooltip(): String = js.native
+  def GetTooltip(): String
 }
 object RowHeaderState {
   

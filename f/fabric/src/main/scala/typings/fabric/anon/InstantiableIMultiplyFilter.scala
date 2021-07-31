@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.fabric.fabricImplMod.IMultiplyFilter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait InstantiableIMultiplyFilter
-  extends Instantiable0[IMultiplyFilter]
+  extends StObject
+     with Instantiable0[IMultiplyFilter]
      with Instantiable1[/* options */ ColorString, IMultiplyFilter] {
   
   /**

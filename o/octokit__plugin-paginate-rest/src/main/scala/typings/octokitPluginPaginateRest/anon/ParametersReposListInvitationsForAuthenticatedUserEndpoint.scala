@@ -5,15 +5,13 @@ import typings.octokitTypes.endpointsMod.ReposListInvitationsForAuthenticatedUse
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposListInvitationsForAuthenticatedUserEndpoint extends StObject {
   
-  var parameters: ReposListInvitationsForAuthenticatedUserEndpoint = js.native
+  var parameters: ReposListInvitationsForAuthenticatedUserEndpoint
   
-  var response: OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData] = js.native
+  var response: OctokitResponse[ReposListInvitationsForAuthenticatedUserResponseData]
 }
 object ParametersReposListInvitationsForAuthenticatedUserEndpoint {
   

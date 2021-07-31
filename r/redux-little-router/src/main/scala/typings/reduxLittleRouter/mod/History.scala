@@ -2,7 +2,6 @@ package typings.reduxLittleRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,9 +26,9 @@ trait History extends StObject {
   
   def push(location: Location): Unit = js.native
   def push(path: String): Unit = js.native
-  def push(path: String, state: ObjectLiteral[_]): Unit = js.native
+  def push(path: String, state: ObjectLiteral[js.Any]): Unit = js.native
   
   def replace(location: Location): Unit = js.native
   def replace(path: String): Unit = js.native
-  def replace(path: String, state: ObjectLiteral[_]): Unit = js.native
+  def replace(path: String, state: ObjectLiteral[js.Any]): Unit = js.native
 }

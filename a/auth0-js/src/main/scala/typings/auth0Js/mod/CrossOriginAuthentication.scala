@@ -2,7 +2,6 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("auth0-js", "CrossOriginAuthentication")
@@ -26,5 +25,5 @@ class CrossOriginAuthentication protected () extends StObject {
     * @param cb Callback function called only when an authentication error, like invalid username or password, occurs.
     * For other types of errors, there will be a redirect to the `redirectUri`.
     */
-  def login(options: CrossOriginLoginOptions, callback: Auth0Callback[_, Auth0Error]): Unit = js.native
+  def login(options: CrossOriginLoginOptions, callback: Auth0Callback[js.Any, Auth0Error]): Unit = js.native
 }

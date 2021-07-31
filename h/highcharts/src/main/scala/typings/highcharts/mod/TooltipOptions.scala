@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable animation of
     * the tooltip.
     */
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The background color or gradient
@@ -21,20 +19,20 @@ trait TooltipOptions extends StObject {
     * In styled mode, the stroke width is set in the `.highcharts-tooltip-box`
     * class.
     */
-  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var backgroundColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The color of the tooltip border.
     * When `undefined`, the border takes the color of the corresponding series
     * or point.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The radius of the rounded border
     * corners.
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The pixel width of the tooltip
@@ -43,20 +41,20 @@ trait TooltipOptions extends StObject {
     * In styled mode, the stroke width is set in the `.highcharts-tooltip-box`
     * class.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) How many decimals to show for the `point.change` value when
     * the `series.compare` option is set. This is overridable in each series'
     * tooltip options object. The default is to preserve all decimals.
     */
-  var changeDecimals: js.UndefOr[Double] = js.native
+  var changeDecimals: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A CSS class name to apply to the
     * tooltip's container div, allowing unique CSS styling for each chart.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the cluster point's
@@ -66,7 +64,7 @@ trait TooltipOptions extends StObject {
     * The cluster tooltip can be also formatted using `tooltip.formatter`
     * callback function and `point.isCluster` flag.
     */
-  var clusterFormat: js.UndefOr[js.Object] = js.native
+  var clusterFormat: js.UndefOr[js.Object] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) For series on a datetime axes, the date
@@ -75,18 +73,18 @@ trait TooltipOptions extends StObject {
     * used for each unit. For an overview of the replacement codes, see
     * dateFormat.
     */
-  var dateTimeLabelFormats: js.UndefOr[Dictionary[String]] = js.native
+  var dateTimeLabelFormats: js.UndefOr[Dictionary[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Distance from point to tooltip
     * in pixels.
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enable or disable the tooltip.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the tooltip should
@@ -98,7 +96,7 @@ trait TooltipOptions extends StObject {
     * For touch moves to behave the same way, followTouchMove must be `true`
     * also.
     */
-  var followPointer: js.UndefOr[Boolean] = js.native
+  var followPointer: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the tooltip should
@@ -112,13 +110,13 @@ trait TooltipOptions extends StObject {
     * is true, the tooltip will jump from column to column as the user swipes
     * across the plot area.
     */
-  var followTouchMove: js.UndefOr[Boolean] = js.native
+  var followTouchMove: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A string to append to the
     * tooltip format.
     */
-  var footerFormat: js.UndefOr[String] = js.native
+  var footerFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback function to format the
@@ -163,7 +161,7 @@ trait TooltipOptions extends StObject {
     *
     * - **this.y (not shared) / this.points[i].y (shared)**: The y value.
     */
-  var formatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.native
+  var formatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the tooltip header
@@ -174,7 +172,7 @@ trait TooltipOptions extends StObject {
     * For datetime axes, the `point.key` date format can be set using
     * `tooltip.xDateFormat`.
     */
-  var headerFormat: js.UndefOr[String] = js.native
+  var headerFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
@@ -185,26 +183,26 @@ trait TooltipOptions extends StObject {
     * `Highcharts.SVGRenderer.prototype.symbols` the same way as for
     * series.marker.symbol.
     */
-  var headerShape: js.UndefOr[OptionsHeaderShapeValue] = js.native
+  var headerShape: js.UndefOr[OptionsHeaderShapeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The number of milliseconds to
     * wait until the tooltip is hidden when mouse out from a point or chart.
     */
-  var hideDelay: js.UndefOr[Double] = js.native
+  var hideDelay: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the null point's
     * line in the tooltip. Works analogously to pointFormat.
     */
-  var nullFormat: js.UndefOr[String] = js.native
+  var nullFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Callback function to format the
     * text of the tooltip for visible null points. Works analogously to
     * formatter.
     */
-  var nullFormatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.native
+  var nullFormatter: js.UndefOr[TooltipFormatterCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to allow the tooltip to
@@ -218,13 +216,13 @@ trait TooltipOptions extends StObject {
     * Defaults to `true` if `chart.scrollablePlotArea` is activated, otherwise
     * `false`.
     */
-  var outside: js.UndefOr[Boolean] = js.native
+  var outside: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Padding inside the tooltip, in
     * pixels.
     */
-  var padding: js.UndefOr[Double] = js.native
+  var padding: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The HTML of the point's line in
@@ -238,14 +236,14 @@ trait TooltipOptions extends StObject {
     * In styled mode, the dot is colored by a class name rather than the point
     * color.
     */
-  var pointFormat: js.UndefOr[String] = js.native
+  var pointFormat: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function for
     * formatting the HTML output for a single point in the tooltip. Like the
     * `pointFormat` string, but with more flexibility.
     */
-  var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.native
+  var pointFormatter: js.UndefOr[FormatterCallbackFunction[Point]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to place the
@@ -263,13 +261,13 @@ trait TooltipOptions extends StObject {
     * The return should be an object containing x and y values, for example `{
     * x: 100, y: 100 }`.
     */
-  var positioner: js.UndefOr[TooltipPositionerCallbackFunction] = js.native
+  var positioner: js.UndefOr[TooltipPositionerCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to apply a drop shadow
     * to the tooltip.
     */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.native
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of a symbol to use for
@@ -281,7 +279,7 @@ trait TooltipOptions extends StObject {
     * `Highcharts.SVGRenderer.prototype.symbols` the same way as for
     * series.marker.symbol.
     */
-  var shape: js.UndefOr[TooltipShapeValue] = js.native
+  var shape: js.UndefOr[TooltipShapeValue] = js.undefined
   
   /**
     * (Highcharts, Highstock) When the tooltip is shared, the entire plot area
@@ -294,7 +292,7 @@ trait TooltipOptions extends StObject {
     * series, especially line-type series. The `tooltip.split` option takes
     * precedence over `tooltip.shared`.
     */
-  var shared: js.UndefOr[Boolean] = js.native
+  var shared: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) Proximity snap for graphs or single points. It
@@ -305,7 +303,7 @@ trait TooltipOptions extends StObject {
     * stickyTracking is `true` (default) and when the tooltip is shared or
     * split.
     */
-  var snap: js.UndefOr[Double] = js.native
+  var snap: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Split the tooltip into one label per series, with
@@ -313,13 +311,13 @@ trait TooltipOptions extends StObject {
     * for charts with multiple line series, generally making them easier to
     * read. This option takes precedence over `tooltip.shared`.
     */
-  var split: js.UndefOr[Boolean] = js.native
+  var split: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Prevents the tooltip from
     * switching or closing, when touched or pointed.
     */
-  var stickOnContact: js.UndefOr[Boolean] = js.native
+  var stickOnContact: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the tooltip. The
@@ -329,7 +327,7 @@ trait TooltipOptions extends StObject {
     * mouse events, so in order to use clickable tooltips, this value must be
     * set to `auto`.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Use HTML to render the contents
@@ -337,33 +335,33 @@ trait TooltipOptions extends StObject {
     * tables and images in the tooltip. It is also recommended for rtl
     * languages as it works around rtl bugs in early Firefox.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) How many decimals to show in
     * each series' y value. This is overridable in each series' tooltip options
     * object. The default is to preserve all decimals.
     */
-  var valueDecimals: js.UndefOr[Double] = js.native
+  var valueDecimals: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A string to prepend to each
     * series' y value. Overridable in each series' tooltip options object.
     */
-  var valuePrefix: js.UndefOr[String] = js.native
+  var valuePrefix: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A string to append to each
     * series' y value. Overridable in each series' tooltip options object.
     */
-  var valueSuffix: js.UndefOr[String] = js.native
+  var valueSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The format for the date in the tooltip
     * header if the X axis is a datetime axis. The default is a best guess
     * based on the smallest distance between points in the chart.
     */
-  var xDateFormat: js.UndefOr[String] = js.native
+  var xDateFormat: js.UndefOr[String] = js.undefined
 }
 object TooltipOptions {
   

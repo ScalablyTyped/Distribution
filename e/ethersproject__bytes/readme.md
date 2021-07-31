@@ -10,9 +10,9 @@ Bytes utility functions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/bytes |
 | Keywords           | Ethereum, ethers |
-| # releases         | 29 |
-| # dependents       | 68 |
-| # downloads        | 1848158 |
+| # releases         | 33 |
+| # dependents       | 74 |
+| # downloads        | 3031135 |
 | # stars            | 0 |
 
 ## Links

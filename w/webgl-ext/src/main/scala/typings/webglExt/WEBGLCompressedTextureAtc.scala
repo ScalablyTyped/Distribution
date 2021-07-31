@@ -2,17 +2,15 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WEBGLCompressedTextureAtc extends StObject {
   
-  val COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL: Double = js.native
+  val COMPRESSED_RGBA_ATC_EXPLICIT_ALPHA_WEBGL: Double
   
-  val COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL: Double = js.native
+  val COMPRESSED_RGBA_ATC_INTERPOLATED_ALPHA_WEBGL: Double
   
-  val COMPRESSED_RGB_ATC_WEBGL: Double = js.native
+  val COMPRESSED_RGB_ATC_WEBGL: Double
 }
 object WEBGLCompressedTextureAtc {
   

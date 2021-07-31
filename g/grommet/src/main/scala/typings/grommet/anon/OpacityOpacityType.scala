@@ -3,13 +3,11 @@ package typings.grommet.anon
 import typings.grommet.utilsMod.OpacityType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpacityOpacityType extends StObject {
   
-  var opacity: OpacityType = js.native
+  var opacity: OpacityType
 }
 object OpacityOpacityType {
   

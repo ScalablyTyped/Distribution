@@ -3,15 +3,15 @@ package typings.atom.mod
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ContextualBufferScanResult extends BufferScanResult {
+trait ContextualBufferScanResult
+  extends StObject
+     with BufferScanResult {
   
-  var leadingContextLines: js.Array[String] = js.native
+  var leadingContextLines: js.Array[String]
   
-  var trailingContextLines: js.Array[String] = js.native
+  var trailingContextLines: js.Array[String]
 }
 object ContextualBufferScanResult {
   

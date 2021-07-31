@@ -2,23 +2,21 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User extends StObject {
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var is_bot: Boolean = js.native
+  var is_bot: Boolean
   
-  var language_code: js.UndefOr[String] = js.native
+  var language_code: js.UndefOr[String] = js.undefined
   
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object User {
   

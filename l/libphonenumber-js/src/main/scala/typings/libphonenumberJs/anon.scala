@@ -5,15 +5,13 @@ import typings.libphonenumberJs.typesMod.CountryCode
 import typings.libphonenumberJs.typesMod.NationalNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var defaultCountry: js.UndefOr[CountryCode] = js.native
+    var defaultCountry: js.UndefOr[CountryCode] = js.undefined
   }
   object `0` {
     
@@ -34,12 +32,11 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultCallingCode extends StObject {
     
-    var defaultCallingCode: js.UndefOr[String] = js.native
+    var defaultCallingCode: js.UndefOr[String] = js.undefined
     
-    var defaultCountry: js.UndefOr[CountryCode] = js.native
+    var defaultCountry: js.UndefOr[CountryCode] = js.undefined
   }
   object DefaultCallingCode {
     
@@ -66,18 +63,17 @@ object anon {
     }
   }
   
-  @js.native
   trait DefaultCountry extends StObject {
     
-    var defaultCountry: js.UndefOr[CountryCode] = js.native
+    var defaultCountry: js.UndefOr[CountryCode] = js.undefined
     
-    var v2: `true` = js.native
+    var v2: `true`
   }
   object DefaultCountry {
     
     @scala.inline
-    def apply(v2: `true`): DefaultCountry = {
-      val __obj = js.Dynamic.literal(v2 = v2.asInstanceOf[js.Any])
+    def apply(): DefaultCountry = {
+      val __obj = js.Dynamic.literal(v2 = true)
       __obj.asInstanceOf[DefaultCountry]
     }
     
@@ -96,500 +92,499 @@ object anon {
   }
   
   /* Inlined {[ country in libphonenumber-js.libphonenumber-js/types.CountryCode ]: libphonenumber-js.libphonenumber-js/types.NationalNumber} */
-  @js.native
   trait countryinCountryCodeNatio extends StObject {
     
-    var `001`: NationalNumber = js.native
+    var `001`: NationalNumber
     
-    var AC: NationalNumber = js.native
+    var AC: NationalNumber
     
-    var AD: NationalNumber = js.native
+    var AD: NationalNumber
     
-    var AE: NationalNumber = js.native
+    var AE: NationalNumber
     
-    var AF: NationalNumber = js.native
+    var AF: NationalNumber
     
-    var AG: NationalNumber = js.native
+    var AG: NationalNumber
     
-    var AI: NationalNumber = js.native
+    var AI: NationalNumber
     
-    var AL: NationalNumber = js.native
+    var AL: NationalNumber
     
-    var AM: NationalNumber = js.native
+    var AM: NationalNumber
     
-    var AO: NationalNumber = js.native
+    var AO: NationalNumber
     
-    var AR: NationalNumber = js.native
+    var AR: NationalNumber
     
-    var AS: NationalNumber = js.native
+    var AS: NationalNumber
     
-    var AT: NationalNumber = js.native
+    var AT: NationalNumber
     
-    var AU: NationalNumber = js.native
+    var AU: NationalNumber
     
-    var AW: NationalNumber = js.native
+    var AW: NationalNumber
     
-    var AX: NationalNumber = js.native
+    var AX: NationalNumber
     
-    var AZ: NationalNumber = js.native
+    var AZ: NationalNumber
     
-    var BA: NationalNumber = js.native
+    var BA: NationalNumber
     
-    var BB: NationalNumber = js.native
+    var BB: NationalNumber
     
-    var BD: NationalNumber = js.native
+    var BD: NationalNumber
     
-    var BE: NationalNumber = js.native
+    var BE: NationalNumber
     
-    var BF: NationalNumber = js.native
+    var BF: NationalNumber
     
-    var BG: NationalNumber = js.native
+    var BG: NationalNumber
     
-    var BH: NationalNumber = js.native
+    var BH: NationalNumber
     
-    var BI: NationalNumber = js.native
+    var BI: NationalNumber
     
-    var BJ: NationalNumber = js.native
+    var BJ: NationalNumber
     
-    var BL: NationalNumber = js.native
+    var BL: NationalNumber
     
-    var BM: NationalNumber = js.native
+    var BM: NationalNumber
     
-    var BN: NationalNumber = js.native
+    var BN: NationalNumber
     
-    var BO: NationalNumber = js.native
+    var BO: NationalNumber
     
-    var BQ: NationalNumber = js.native
+    var BQ: NationalNumber
     
-    var BR: NationalNumber = js.native
+    var BR: NationalNumber
     
-    var BS: NationalNumber = js.native
+    var BS: NationalNumber
     
-    var BT: NationalNumber = js.native
+    var BT: NationalNumber
     
-    var BW: NationalNumber = js.native
+    var BW: NationalNumber
     
-    var BY: NationalNumber = js.native
+    var BY: NationalNumber
     
-    var BZ: NationalNumber = js.native
+    var BZ: NationalNumber
     
-    var CA: NationalNumber = js.native
+    var CA: NationalNumber
     
-    var CC: NationalNumber = js.native
+    var CC: NationalNumber
     
-    var CD: NationalNumber = js.native
+    var CD: NationalNumber
     
-    var CF: NationalNumber = js.native
+    var CF: NationalNumber
     
-    var CG: NationalNumber = js.native
+    var CG: NationalNumber
     
-    var CH: NationalNumber = js.native
+    var CH: NationalNumber
     
-    var CI: NationalNumber = js.native
+    var CI: NationalNumber
     
-    var CK: NationalNumber = js.native
+    var CK: NationalNumber
     
-    var CL: NationalNumber = js.native
+    var CL: NationalNumber
     
-    var CM: NationalNumber = js.native
+    var CM: NationalNumber
     
-    var CN: NationalNumber = js.native
+    var CN: NationalNumber
     
-    var CO: NationalNumber = js.native
+    var CO: NationalNumber
     
-    var CR: NationalNumber = js.native
+    var CR: NationalNumber
     
-    var CU: NationalNumber = js.native
+    var CU: NationalNumber
     
-    var CV: NationalNumber = js.native
+    var CV: NationalNumber
     
-    var CW: NationalNumber = js.native
+    var CW: NationalNumber
     
-    var CX: NationalNumber = js.native
+    var CX: NationalNumber
     
-    var CY: NationalNumber = js.native
+    var CY: NationalNumber
     
-    var CZ: NationalNumber = js.native
+    var CZ: NationalNumber
     
-    var DE: NationalNumber = js.native
+    var DE: NationalNumber
     
-    var DJ: NationalNumber = js.native
+    var DJ: NationalNumber
     
-    var DK: NationalNumber = js.native
+    var DK: NationalNumber
     
-    var DM: NationalNumber = js.native
+    var DM: NationalNumber
     
-    var DO: NationalNumber = js.native
+    var DO: NationalNumber
     
-    var DZ: NationalNumber = js.native
+    var DZ: NationalNumber
     
-    var EC: NationalNumber = js.native
+    var EC: NationalNumber
     
-    var EE: NationalNumber = js.native
+    var EE: NationalNumber
     
-    var EG: NationalNumber = js.native
+    var EG: NationalNumber
     
-    var EH: NationalNumber = js.native
+    var EH: NationalNumber
     
-    var ER: NationalNumber = js.native
+    var ER: NationalNumber
     
-    var ES: NationalNumber = js.native
+    var ES: NationalNumber
     
-    var ET: NationalNumber = js.native
+    var ET: NationalNumber
     
-    var FI: NationalNumber = js.native
+    var FI: NationalNumber
     
-    var FJ: NationalNumber = js.native
+    var FJ: NationalNumber
     
-    var FK: NationalNumber = js.native
+    var FK: NationalNumber
     
-    var FM: NationalNumber = js.native
+    var FM: NationalNumber
     
-    var FO: NationalNumber = js.native
+    var FO: NationalNumber
     
-    var FR: NationalNumber = js.native
+    var FR: NationalNumber
     
-    var GA: NationalNumber = js.native
+    var GA: NationalNumber
     
-    var GB: NationalNumber = js.native
+    var GB: NationalNumber
     
-    var GD: NationalNumber = js.native
+    var GD: NationalNumber
     
-    var GE: NationalNumber = js.native
+    var GE: NationalNumber
     
-    var GF: NationalNumber = js.native
+    var GF: NationalNumber
     
-    var GG: NationalNumber = js.native
+    var GG: NationalNumber
     
-    var GH: NationalNumber = js.native
+    var GH: NationalNumber
     
-    var GI: NationalNumber = js.native
+    var GI: NationalNumber
     
-    var GL: NationalNumber = js.native
+    var GL: NationalNumber
     
-    var GM: NationalNumber = js.native
+    var GM: NationalNumber
     
-    var GN: NationalNumber = js.native
+    var GN: NationalNumber
     
-    var GP: NationalNumber = js.native
+    var GP: NationalNumber
     
-    var GQ: NationalNumber = js.native
+    var GQ: NationalNumber
     
-    var GR: NationalNumber = js.native
+    var GR: NationalNumber
     
-    var GT: NationalNumber = js.native
+    var GT: NationalNumber
     
-    var GU: NationalNumber = js.native
+    var GU: NationalNumber
     
-    var GW: NationalNumber = js.native
+    var GW: NationalNumber
     
-    var GY: NationalNumber = js.native
+    var GY: NationalNumber
     
-    var HK: NationalNumber = js.native
+    var HK: NationalNumber
     
-    var HN: NationalNumber = js.native
+    var HN: NationalNumber
     
-    var HR: NationalNumber = js.native
+    var HR: NationalNumber
     
-    var HT: NationalNumber = js.native
+    var HT: NationalNumber
     
-    var HU: NationalNumber = js.native
+    var HU: NationalNumber
     
-    var ID: NationalNumber = js.native
+    var ID: NationalNumber
     
-    var IE: NationalNumber = js.native
+    var IE: NationalNumber
     
-    var IL: NationalNumber = js.native
+    var IL: NationalNumber
     
-    var IM: NationalNumber = js.native
+    var IM: NationalNumber
     
-    var IN: NationalNumber = js.native
+    var IN: NationalNumber
     
-    var IO: NationalNumber = js.native
+    var IO: NationalNumber
     
-    var IQ: NationalNumber = js.native
+    var IQ: NationalNumber
     
-    var IR: NationalNumber = js.native
+    var IR: NationalNumber
     
-    var IS: NationalNumber = js.native
+    var IS: NationalNumber
     
-    var IT: NationalNumber = js.native
+    var IT: NationalNumber
     
-    var JE: NationalNumber = js.native
+    var JE: NationalNumber
     
-    var JM: NationalNumber = js.native
+    var JM: NationalNumber
     
-    var JO: NationalNumber = js.native
+    var JO: NationalNumber
     
-    var JP: NationalNumber = js.native
+    var JP: NationalNumber
     
-    var KE: NationalNumber = js.native
+    var KE: NationalNumber
     
-    var KG: NationalNumber = js.native
+    var KG: NationalNumber
     
-    var KH: NationalNumber = js.native
+    var KH: NationalNumber
     
-    var KI: NationalNumber = js.native
+    var KI: NationalNumber
     
-    var KM: NationalNumber = js.native
+    var KM: NationalNumber
     
-    var KN: NationalNumber = js.native
+    var KN: NationalNumber
     
-    var KP: NationalNumber = js.native
+    var KP: NationalNumber
     
-    var KR: NationalNumber = js.native
+    var KR: NationalNumber
     
-    var KW: NationalNumber = js.native
+    var KW: NationalNumber
     
-    var KY: NationalNumber = js.native
+    var KY: NationalNumber
     
-    var KZ: NationalNumber = js.native
+    var KZ: NationalNumber
     
-    var LA: NationalNumber = js.native
+    var LA: NationalNumber
     
-    var LB: NationalNumber = js.native
+    var LB: NationalNumber
     
-    var LC: NationalNumber = js.native
+    var LC: NationalNumber
     
-    var LI: NationalNumber = js.native
+    var LI: NationalNumber
     
-    var LK: NationalNumber = js.native
+    var LK: NationalNumber
     
-    var LR: NationalNumber = js.native
+    var LR: NationalNumber
     
-    var LS: NationalNumber = js.native
+    var LS: NationalNumber
     
-    var LT: NationalNumber = js.native
+    var LT: NationalNumber
     
-    var LU: NationalNumber = js.native
+    var LU: NationalNumber
     
-    var LV: NationalNumber = js.native
+    var LV: NationalNumber
     
-    var LY: NationalNumber = js.native
+    var LY: NationalNumber
     
-    var MA: NationalNumber = js.native
+    var MA: NationalNumber
     
-    var MC: NationalNumber = js.native
+    var MC: NationalNumber
     
-    var MD: NationalNumber = js.native
+    var MD: NationalNumber
     
-    var ME: NationalNumber = js.native
+    var ME: NationalNumber
     
-    var MF: NationalNumber = js.native
+    var MF: NationalNumber
     
-    var MG: NationalNumber = js.native
+    var MG: NationalNumber
     
-    var MH: NationalNumber = js.native
+    var MH: NationalNumber
     
-    var MK: NationalNumber = js.native
+    var MK: NationalNumber
     
-    var ML: NationalNumber = js.native
+    var ML: NationalNumber
     
-    var MM: NationalNumber = js.native
+    var MM: NationalNumber
     
-    var MN: NationalNumber = js.native
+    var MN: NationalNumber
     
-    var MO: NationalNumber = js.native
+    var MO: NationalNumber
     
-    var MP: NationalNumber = js.native
+    var MP: NationalNumber
     
-    var MQ: NationalNumber = js.native
+    var MQ: NationalNumber
     
-    var MR: NationalNumber = js.native
+    var MR: NationalNumber
     
-    var MS: NationalNumber = js.native
+    var MS: NationalNumber
     
-    var MT: NationalNumber = js.native
+    var MT: NationalNumber
     
-    var MU: NationalNumber = js.native
+    var MU: NationalNumber
     
-    var MV: NationalNumber = js.native
+    var MV: NationalNumber
     
-    var MW: NationalNumber = js.native
+    var MW: NationalNumber
     
-    var MX: NationalNumber = js.native
+    var MX: NationalNumber
     
-    var MY: NationalNumber = js.native
+    var MY: NationalNumber
     
-    var MZ: NationalNumber = js.native
+    var MZ: NationalNumber
     
-    var NA: NationalNumber = js.native
+    var NA: NationalNumber
     
-    var NC: NationalNumber = js.native
+    var NC: NationalNumber
     
-    var NE: NationalNumber = js.native
+    var NE: NationalNumber
     
-    var NF: NationalNumber = js.native
+    var NF: NationalNumber
     
-    var NG: NationalNumber = js.native
+    var NG: NationalNumber
     
-    var NI: NationalNumber = js.native
+    var NI: NationalNumber
     
-    var NL: NationalNumber = js.native
+    var NL: NationalNumber
     
-    var NO: NationalNumber = js.native
+    var NO: NationalNumber
     
-    var NP: NationalNumber = js.native
+    var NP: NationalNumber
     
-    var NR: NationalNumber = js.native
+    var NR: NationalNumber
     
-    var NU: NationalNumber = js.native
+    var NU: NationalNumber
     
-    var NZ: NationalNumber = js.native
+    var NZ: NationalNumber
     
-    var OM: NationalNumber = js.native
+    var OM: NationalNumber
     
-    var PA: NationalNumber = js.native
+    var PA: NationalNumber
     
-    var PE: NationalNumber = js.native
+    var PE: NationalNumber
     
-    var PF: NationalNumber = js.native
+    var PF: NationalNumber
     
-    var PG: NationalNumber = js.native
+    var PG: NationalNumber
     
-    var PH: NationalNumber = js.native
+    var PH: NationalNumber
     
-    var PK: NationalNumber = js.native
+    var PK: NationalNumber
     
-    var PL: NationalNumber = js.native
+    var PL: NationalNumber
     
-    var PM: NationalNumber = js.native
+    var PM: NationalNumber
     
-    var PR: NationalNumber = js.native
+    var PR: NationalNumber
     
-    var PS: NationalNumber = js.native
+    var PS: NationalNumber
     
-    var PT: NationalNumber = js.native
+    var PT: NationalNumber
     
-    var PW: NationalNumber = js.native
+    var PW: NationalNumber
     
-    var PY: NationalNumber = js.native
+    var PY: NationalNumber
     
-    var QA: NationalNumber = js.native
+    var QA: NationalNumber
     
-    var RE: NationalNumber = js.native
+    var RE: NationalNumber
     
-    var RO: NationalNumber = js.native
+    var RO: NationalNumber
     
-    var RS: NationalNumber = js.native
+    var RS: NationalNumber
     
-    var RU: NationalNumber = js.native
+    var RU: NationalNumber
     
-    var RW: NationalNumber = js.native
+    var RW: NationalNumber
     
-    var SA: NationalNumber = js.native
+    var SA: NationalNumber
     
-    var SB: NationalNumber = js.native
+    var SB: NationalNumber
     
-    var SC: NationalNumber = js.native
+    var SC: NationalNumber
     
-    var SD: NationalNumber = js.native
+    var SD: NationalNumber
     
-    var SE: NationalNumber = js.native
+    var SE: NationalNumber
     
-    var SG: NationalNumber = js.native
+    var SG: NationalNumber
     
-    var SH: NationalNumber = js.native
+    var SH: NationalNumber
     
-    var SI: NationalNumber = js.native
+    var SI: NationalNumber
     
-    var SJ: NationalNumber = js.native
+    var SJ: NationalNumber
     
-    var SK: NationalNumber = js.native
+    var SK: NationalNumber
     
-    var SL: NationalNumber = js.native
+    var SL: NationalNumber
     
-    var SM: NationalNumber = js.native
+    var SM: NationalNumber
     
-    var SN: NationalNumber = js.native
+    var SN: NationalNumber
     
-    var SO: NationalNumber = js.native
+    var SO: NationalNumber
     
-    var SR: NationalNumber = js.native
+    var SR: NationalNumber
     
-    var SS: NationalNumber = js.native
+    var SS: NationalNumber
     
-    var ST: NationalNumber = js.native
+    var ST: NationalNumber
     
-    var SV: NationalNumber = js.native
+    var SV: NationalNumber
     
-    var SX: NationalNumber = js.native
+    var SX: NationalNumber
     
-    var SY: NationalNumber = js.native
+    var SY: NationalNumber
     
-    var SZ: NationalNumber = js.native
+    var SZ: NationalNumber
     
-    var TA: NationalNumber = js.native
+    var TA: NationalNumber
     
-    var TC: NationalNumber = js.native
+    var TC: NationalNumber
     
-    var TD: NationalNumber = js.native
+    var TD: NationalNumber
     
-    var TG: NationalNumber = js.native
+    var TG: NationalNumber
     
-    var TH: NationalNumber = js.native
+    var TH: NationalNumber
     
-    var TJ: NationalNumber = js.native
+    var TJ: NationalNumber
     
-    var TK: NationalNumber = js.native
+    var TK: NationalNumber
     
-    var TL: NationalNumber = js.native
+    var TL: NationalNumber
     
-    var TM: NationalNumber = js.native
+    var TM: NationalNumber
     
-    var TN: NationalNumber = js.native
+    var TN: NationalNumber
     
-    var TO: NationalNumber = js.native
+    var TO: NationalNumber
     
-    var TR: NationalNumber = js.native
+    var TR: NationalNumber
     
-    var TT: NationalNumber = js.native
+    var TT: NationalNumber
     
-    var TV: NationalNumber = js.native
+    var TV: NationalNumber
     
-    var TW: NationalNumber = js.native
+    var TW: NationalNumber
     
-    var TZ: NationalNumber = js.native
+    var TZ: NationalNumber
     
-    var UA: NationalNumber = js.native
+    var UA: NationalNumber
     
-    var UG: NationalNumber = js.native
+    var UG: NationalNumber
     
-    var US: NationalNumber = js.native
+    var US: NationalNumber
     
-    var UY: NationalNumber = js.native
+    var UY: NationalNumber
     
-    var UZ: NationalNumber = js.native
+    var UZ: NationalNumber
     
-    var VA: NationalNumber = js.native
+    var VA: NationalNumber
     
-    var VC: NationalNumber = js.native
+    var VC: NationalNumber
     
-    var VE: NationalNumber = js.native
+    var VE: NationalNumber
     
-    var VG: NationalNumber = js.native
+    var VG: NationalNumber
     
-    var VI: NationalNumber = js.native
+    var VI: NationalNumber
     
-    var VN: NationalNumber = js.native
+    var VN: NationalNumber
     
-    var VU: NationalNumber = js.native
+    var VU: NationalNumber
     
-    var WF: NationalNumber = js.native
+    var WF: NationalNumber
     
-    var WS: NationalNumber = js.native
+    var WS: NationalNumber
     
-    var XK: NationalNumber = js.native
+    var XK: NationalNumber
     
-    var YE: NationalNumber = js.native
+    var YE: NationalNumber
     
-    var YT: NationalNumber = js.native
+    var YT: NationalNumber
     
-    var ZA: NationalNumber = js.native
+    var ZA: NationalNumber
     
-    var ZM: NationalNumber = js.native
+    var ZM: NationalNumber
     
-    var ZW: NationalNumber = js.native
+    var ZW: NationalNumber
   }
   object countryinCountryCodeNatio {
     

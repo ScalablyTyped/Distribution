@@ -2,49 +2,47 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s instant messaging client.
   */
-@js.native
 trait SchemaImClient extends StObject {
   
   /**
     * The read-only protocol of the IM client formatted in the viewer&#39;s
     * account locale or the `Accept-Language` HTTP header locale.
     */
-  var formattedProtocol: js.UndefOr[String] = js.native
+  var formattedProtocol: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only type of the IM client translated and formatted in the
     * viewer&#39;s account locale or the `Accept-Language` HTTP header locale.
     */
-  var formattedType: js.UndefOr[String] = js.native
+  var formattedType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the IM client.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The protocol of the IM client. The protocol can be custom or one of these
     * predefined values:  * `aim` * `msn` * `yahoo` * `skype` * `qq` *
     * `googleTalk` * `icq` * `jabber` * `netMeeting`
     */
-  var protocol: js.UndefOr[String] = js.native
+  var protocol: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the IM client. The type can be custom or one of these
     * predefined values:  * `home` * `work` * `other`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The user name used in the IM client.
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SchemaImClient {
   

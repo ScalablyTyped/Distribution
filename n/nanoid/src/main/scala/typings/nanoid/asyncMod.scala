@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMod extends Shortcut {
@@ -18,8 +17,8 @@ object asyncMod extends Shortcut {
     
     def apply(): js.Promise[String] = js.native
     def apply(size: Double): js.Promise[String] = js.native
-    def apply(size: Double, callback: js.Function2[/* error */ Error | Null, /* id */ String, _]): Unit = js.native
-    def apply(size: Null, callback: js.Function2[/* error */ Error | Null, /* id */ String, _]): Unit = js.native
+    def apply(size: Double, callback: js.Function2[/* error */ Error | Null, /* id */ String, js.Any]): Unit = js.native
+    def apply(size: Null, callback: js.Function2[/* error */ Error | Null, /* id */ String, js.Any]): Unit = js.native
   }
   
   type _To = NanoidAsync

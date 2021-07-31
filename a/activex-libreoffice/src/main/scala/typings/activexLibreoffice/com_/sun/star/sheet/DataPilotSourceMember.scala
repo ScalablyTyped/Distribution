@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,22 +18,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSourceLevel
   * @see com.sun.star.sheet.DataPilotSource
   */
-@js.native
 trait DataPilotSourceMember
-  extends XNamed
+  extends StObject
+     with XNamed
      with XPropertySet {
   
   /** specifies whether the member is visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /**
     * specifies the member's position in its hierarchy level if sorting is manual.
     * @since OOo 2.4
     */
-  var Position: Boolean = js.native
+  var Position: Boolean
   
   /** specifies whether details for the member are shown. */
-  var ShowDetails: Boolean = js.native
+  var ShowDetails: Boolean
 }
 object DataPilotSourceMember {
   

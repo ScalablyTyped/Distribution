@@ -2,18 +2,16 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogPublishingOption extends StObject {
   
-  var CloudWatchLogsLogGroupArn: js.UndefOr[typings.awsSdk.esMod.CloudWatchLogsLogGroupArn] = js.native
+  var CloudWatchLogsLogGroupArn: js.UndefOr[typings.awsSdk.esMod.CloudWatchLogsLogGroupArn] = js.undefined
   
   /**
     *  Specifies whether given log publishing option is enabled or not.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
 }
 object LogPublishingOption {
   

@@ -5,27 +5,25 @@ import typings.devextreme.mod.DevExpress.ui.dxPivotGrid
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridPivotGridCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cell extends StObject {
   
-  var area: js.UndefOr[String] = js.native
+  var area: js.UndefOr[String] = js.undefined
   
-  var cell: js.UndefOr[dxPivotGridPivotGridCell] = js.native
+  var cell: js.UndefOr[dxPivotGridPivotGridCell] = js.undefined
   
-  var cellElement: js.UndefOr[dxElement] = js.native
+  var cellElement: js.UndefOr[dxElement] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxPivotGrid] = js.native
+  var component: js.UndefOr[dxPivotGrid] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
 }
 object Cell {
   

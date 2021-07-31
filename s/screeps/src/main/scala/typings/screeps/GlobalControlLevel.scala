@@ -2,26 +2,24 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalControlLevel extends StObject {
   
   /**
     * The current level.
     */
-  var level: Double = js.native
+  var level: Double
   
   /**
     * The current progress to the next level.
     */
-  var progress: Double = js.native
+  var progress: Double
   
   /**
     * The progress required to reach the next level.
     */
-  var progressTotal: Double = js.native
+  var progressTotal: Double
 }
 object GlobalControlLevel {
   

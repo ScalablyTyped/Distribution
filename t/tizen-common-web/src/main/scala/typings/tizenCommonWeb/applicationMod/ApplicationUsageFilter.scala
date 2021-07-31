@@ -3,10 +3,8 @@ package typings.tizenCommonWeb.applicationMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationUsageFilter extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ApplicationUsageFilter extends StObject {
     *
     * If only `endTime` attribute is given, data will be accumulated from 90 days ago to `endTime` date.
     */
-  var endTime: js.UndefOr[Date] = js.native
+  var endTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The attribute to store the date, which is used as a lower bound for selecting data.
@@ -22,7 +20,7 @@ trait ApplicationUsageFilter extends StObject {
     * If only `startTime` attribute is given, by default `endTime` is equal to the current date.
     * If `startTime` date predates the 90 days from the current time, data will be accumulated from last 90 days.
     */
-  var startTime: js.UndefOr[Date] = js.native
+  var startTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The attribute to store period of time, from which data is accumulated, in days.
@@ -31,7 +29,7 @@ trait ApplicationUsageFilter extends StObject {
     * If the attribute is given, the attributes `startTime` and `endTime` of this interface are not taken into an account.
     * If `timeSpan` is greater than ***90***, ***90*** will be used instead.
     */
-  var timeSpan: js.UndefOr[Double] = js.native
+  var timeSpan: js.UndefOr[Double] = js.undefined
 }
 object ApplicationUsageFilter {
   

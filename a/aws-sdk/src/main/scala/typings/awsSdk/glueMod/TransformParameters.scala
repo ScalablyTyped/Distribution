@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformParameters extends StObject {
   
   /**
     * The parameters for the find matches algorithm.
     */
-  var FindMatchesParameters: js.UndefOr[typings.awsSdk.glueMod.FindMatchesParameters] = js.native
+  var FindMatchesParameters: js.UndefOr[typings.awsSdk.glueMod.FindMatchesParameters] = js.undefined
   
   /**
     * The type of machine learning transform. For information about the types of machine learning transforms, see Creating Machine Learning Transforms.
     */
-  var TransformType: typings.awsSdk.glueMod.TransformType = js.native
+  var TransformType: typings.awsSdk.glueMod.TransformType
 }
 object TransformParameters {
   

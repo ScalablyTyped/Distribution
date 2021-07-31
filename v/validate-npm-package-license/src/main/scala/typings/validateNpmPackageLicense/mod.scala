@@ -3,29 +3,30 @@ package typings.validateNpmPackageLicense
 import typings.validateNpmPackageLicense.validateNpmPackageLicenseBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(license: String): Result = ^.asInstanceOf[js.Dynamic].apply(license.asInstanceOf[js.Any]).asInstanceOf[Result]
+  
   @JSImport("validate-npm-package-license", JSImport.Namespace)
   @js.native
-  def apply(license: String): Result = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Result extends StObject {
     
-    var inFile: js.UndefOr[String] = js.native
+    var inFile: js.UndefOr[String] = js.undefined
     
-    var spdx: js.UndefOr[`true`] = js.native
+    var spdx: js.UndefOr[`true`] = js.undefined
     
-    var unlicensed: js.UndefOr[`true`] = js.native
+    var unlicensed: js.UndefOr[`true`] = js.undefined
     
-    var validForNewPackages: Boolean = js.native
+    var validForNewPackages: Boolean
     
-    var validForOldPackages: Boolean = js.native
+    var validForOldPackages: Boolean
     
-    var warnings: js.UndefOr[js.Array[String]] = js.native
+    var warnings: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Result {
     

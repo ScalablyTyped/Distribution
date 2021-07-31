@@ -13,17 +13,18 @@ import typings.node.Buffer
 import typings.node.NodeJS.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Reporter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Reporter]
+  @scala.inline
+  def apply(config: PartialConfiguration): Reporter = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[Reporter]
+  
   @JSImport("jsreport-core", JSImport.Namespace)
   @js.native
-  def apply(): Reporter = js.native
-  @JSImport("jsreport-core", JSImport.Namespace)
-  @js.native
-  def apply(config: PartialConfiguration): Reporter = js.native
+  val ^ : js.Any = js.native
   
   @js.native
   trait Collection extends StObject {
@@ -32,32 +33,31 @@ object mod {
     
     def insert(obj: js.Object): js.Promise[js.Object] = js.native
     
-    def remove(query: StringDictionary[js.Any]): js.Promise[_] = js.native
+    def remove(query: StringDictionary[js.Any]): js.Promise[js.Any] = js.native
     
-    def update(query: StringDictionary[js.Any], update: js.Object): js.Promise[_] = js.native
-    def update(query: StringDictionary[js.Any], update: js.Object, options: js.Object): js.Promise[_] = js.native
+    def update(query: StringDictionary[js.Any], update: js.Object): js.Promise[js.Any] = js.native
+    def update(query: StringDictionary[js.Any], update: js.Object, options: js.Object): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait Configuration extends StObject {
     
-    var autoTempCleanup: Boolean = js.native
+    var autoTempCleanup: Boolean
     
-    var dataDirectory: String = js.native
+    var dataDirectory: String
     
-    var extensionsLocationCache: Boolean = js.native
+    var extensionsLocationCache: Boolean
     
-    var loadConfig: Boolean = js.native
+    var loadConfig: Boolean
     
-    var logger: Silent = js.native
+    var logger: Silent
     
-    var rootDirectory: String = js.native
+    var rootDirectory: String
     
-    var scripts: AllowedModules = js.native
+    var scripts: AllowedModules
     
-    var tasks: PartialallowedModulesArra = js.native
+    var tasks: PartialallowedModulesArra
     
-    var tempDirectory: String = js.native
+    var tempDirectory: String
   }
   object Configuration {
     
@@ -109,10 +109,9 @@ object mod {
     }
   }
   
-  @js.native
   trait DocumentStore extends StObject {
     
-    def collection(name: String): Collection = js.native
+    def collection(name: String): Collection
   }
   object DocumentStore {
     
@@ -134,14 +133,13 @@ object mod {
   
   type Extension = js.Function2[/* reporter */ Reporter, /* definition */ js.Object, Unit]
   
-  @js.native
   trait ExtensionDefinition extends StObject {
     
-    var directory: String = js.native
+    var directory: String
     
-    var main: js.Any = js.native
+    var main: js.Any
     
-    var options: js.Any = js.native
+    var options: js.Any
   }
   object ExtensionDefinition {
     
@@ -167,7 +165,6 @@ object mod {
   
   type Helpers = String | (StringDictionary[js.Function1[/* repeated */ js.Any, js.Any]])
   
-  @js.native
   trait ListenerCollection extends StObject {
     
     def add(
@@ -176,9 +173,9 @@ object mod {
           /* req */ Request, 
           /* res */ Response, 
           /* err */ js.UndefOr[js.Any], 
-          js.Promise[_] | Unit
+          js.Promise[js.Any] | Unit
         ]
-    ): Unit = js.native
+    ): Unit
   }
   object ListenerCollection {
     
@@ -188,7 +185,7 @@ object mod {
           /* req */ Request, 
           /* res */ Response, 
           /* err */ js.UndefOr[js.Any], 
-          js.Promise[_] | Unit
+          js.Promise[js.Any] | Unit
         ]) => Unit
     ): ListenerCollection = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add))
@@ -204,16 +201,15 @@ object mod {
               /* req */ Request, 
               /* res */ Response, 
               /* err */ js.UndefOr[js.Any], 
-              js.Promise[_] | Unit
+              js.Promise[js.Any] | Unit
             ]) => Unit
       ): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -263,22 +259,21 @@ object mod {
     
     def render(options: PartialRequest): js.Promise[Response] = js.native
     
-    def use(extension: Extension): Reporter = js.native
-    def use(extension: ExtensionDefinition): Reporter = js.native
+    def use(`extension`: Extension): Reporter = js.native
+    def use(`extension`: ExtensionDefinition): Reporter = js.native
     
     var validateRenderListeners: ListenerCollection = js.native
     
     var version: String = js.native
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var template: PartialTemplate = js.native
+    var template: PartialTemplate
   }
   object Request {
     
@@ -305,14 +300,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var content: Buffer = js.native
+    var content: Buffer
     
-    var headers: StringDictionary[String | Double | Boolean] = js.native
+    var headers: StringDictionary[String | Double | Boolean]
     
-    var stream: ReadableStream = js.native
+    var stream: ReadableStream
   }
   object Response {
     
@@ -336,16 +330,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Template extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var engine: Engine | String = js.native
+    var engine: Engine | String
     
-    var helpers: Helpers = js.native
+    var helpers: Helpers
     
-    var recipe: Recipe | String = js.native
+    var recipe: Recipe | String
   }
   object Template {
     

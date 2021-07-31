@@ -4,19 +4,17 @@ import typings.dockerode.dockerodeStrings.global
 import typings.dockerode.dockerodeStrings.replicated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
-  var id: js.UndefOr[js.Array[String]] = js.native
+  var id: js.UndefOr[js.Array[String]] = js.undefined
   
-  var label: js.UndefOr[js.Array[String]] = js.native
+  var label: js.UndefOr[js.Array[String]] = js.undefined
   
-  var mode: js.UndefOr[js.Array[replicated | global]] = js.native
+  var mode: js.UndefOr[js.Array[replicated | global]] = js.undefined
   
-  var name: js.UndefOr[js.Array[String]] = js.native
+  var name: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Id {
   

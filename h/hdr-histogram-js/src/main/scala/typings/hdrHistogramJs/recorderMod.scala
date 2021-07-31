@@ -3,7 +3,6 @@ package typings.hdrHistogramJs
 import typings.hdrHistogramJs.abstractHistogramMod.AbstractHistogram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recorderMod {
@@ -33,26 +32,16 @@ object recorderMod {
     * @param packed Specifies whether the recorder will uses a packed internal representation or not.
     * @param clock (for testing purpose) an action that give current time in ms since 1970
     */
-  class default () extends Recorder {
+  class default ()
+    extends StObject
+       with Recorder {
     def this(numberOfSignificantValueDigits: Double) = this()
-    def this(numberOfSignificantValueDigits: js.UndefOr[scala.Nothing], packed: Boolean) = this()
     def this(numberOfSignificantValueDigits: Double, packed: Boolean) = this()
-    def this(
-      numberOfSignificantValueDigits: js.UndefOr[scala.Nothing],
-      packed: js.UndefOr[scala.Nothing],
-      clock: js.Function0[Double]
-    ) = this()
-    def this(
-      numberOfSignificantValueDigits: js.UndefOr[scala.Nothing],
-      packed: Boolean,
-      clock: js.Function0[Double]
-    ) = this()
-    def this(
-      numberOfSignificantValueDigits: Double,
-      packed: js.UndefOr[scala.Nothing],
-      clock: js.Function0[Double]
-    ) = this()
+    def this(numberOfSignificantValueDigits: Unit, packed: Boolean) = this()
     def this(numberOfSignificantValueDigits: Double, packed: Boolean, clock: js.Function0[Double]) = this()
+    def this(numberOfSignificantValueDigits: Double, packed: Unit, clock: js.Function0[Double]) = this()
+    def this(numberOfSignificantValueDigits: Unit, packed: Boolean, clock: js.Function0[Double]) = this()
+    def this(numberOfSignificantValueDigits: Unit, packed: Unit, clock: js.Function0[Double]) = this()
   }
   object default {
     

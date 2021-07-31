@@ -4,21 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.easyRbac.anon.Can
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("easy-rbac", JSImport.Namespace)
   @js.native
-  class ^ protected () extends RBAC {
+  class ^ protected ()
+    extends StObject
+       with RBAC {
     def this(opts: Options) = this()
   }
+  @JSImport("easy-rbac", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("easy-rbac", "create")
-  @js.native
-  def create(opts: Options): RBAC = js.native
+  @scala.inline
+  def create(opts: Options): RBAC = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[RBAC]
   
   type Options = Roles | js.Function0[js.Promise[Roles]] | js.Promise[Roles]
   
@@ -31,12 +34,11 @@ object mod {
     def can(role: js.Array[Roles | String], operation: String, params: js.Object): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait RoleObject extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    def when(params: js.Object): js.Promise[Boolean] = js.native
+    def when(params: js.Object): js.Promise[Boolean]
   }
   object RoleObject {
     

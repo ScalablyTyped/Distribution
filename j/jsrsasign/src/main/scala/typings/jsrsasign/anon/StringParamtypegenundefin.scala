@@ -3,16 +3,14 @@ package typings.jsrsasign.anon
 import typings.jsrsasign.jsrsasignStrings.gen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined jsrsasign.jsrsasign.KJUR.asn1.StringParam & {  type :'gen' | undefined} */
-@js.native
 trait StringParamtypegenundefin extends StObject {
   
-  var str: String = js.native
+  var str: String
   
-  var `type`: js.UndefOr[gen] = js.native
+  var `type`: js.UndefOr[gen] = js.undefined
 }
 object StringParamtypegenundefin {
   

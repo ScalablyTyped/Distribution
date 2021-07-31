@@ -11,7 +11,6 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.string
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,14 +54,13 @@ trait Query extends StObject {
 }
 object Query {
   
-  @js.native
   trait FieldFilter extends StObject {
     
-    var fieldPath: NativeFieldPath = js.native
+    var fieldPath: NativeFieldPath
     
-    var operator: String = js.native
+    var operator: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object FieldFilter {
     
@@ -86,12 +84,11 @@ object Query {
     }
   }
   
-  @js.native
   trait FieldOrder extends StObject {
     
-    var direction: String = js.native
+    var direction: String
     
-    var fieldPath: NativeFieldPath = js.native
+    var fieldPath: NativeFieldPath
   }
   object FieldOrder {
     
@@ -112,14 +109,15 @@ object Query {
     }
   }
   
-  @js.native
-  trait NativeError extends Error {
+  trait NativeError
+    extends StObject
+       with Error {
     
-    var code: String = js.native
+    var code: String
     
-    var nativeErrorCode: js.UndefOr[String] = js.native
+    var nativeErrorCode: js.UndefOr[String] = js.undefined
     
-    var nativeErrorMessage: js.UndefOr[String] = js.native
+    var nativeErrorMessage: js.UndefOr[String] = js.undefined
   }
   object NativeError {
     
@@ -149,14 +147,13 @@ object Query {
     }
   }
   
-  @js.native
   trait NativeFieldPath extends StObject {
     
-    var elements: js.UndefOr[js.Array[String]] = js.native
+    var elements: js.UndefOr[js.Array[String]] = js.undefined
     
-    var string: js.UndefOr[String] = js.native
+    var string: js.UndefOr[String] = js.undefined
     
-    var `type`: fieldpath | string = js.native
+    var `type`: fieldpath | string
   }
   object NativeFieldPath {
     
@@ -190,12 +187,11 @@ object Query {
     }
   }
   
-  @js.native
   trait Observer extends StObject {
     
-    var error: js.UndefOr[ObserverOnError] = js.native
+    var error: js.UndefOr[ObserverOnError] = js.undefined
     
-    var next: ObserverOnNext = js.native
+    var next: ObserverOnNext
   }
   object Observer {
     
@@ -223,22 +219,21 @@ object Query {
   
   type ObserverOnNext = js.Function1[/* querySnapshot */ QuerySnapshot, Unit]
   
-  @js.native
   trait QueryOptions extends StObject {
     
-    var endAt: js.UndefOr[js.Array[_]] = js.native
+    var endAt: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var endBefore: js.UndefOr[js.Array[_]] = js.native
+    var endBefore: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
-    var selectFields: js.UndefOr[js.Array[String]] = js.native
+    var selectFields: js.UndefOr[js.Array[String]] = js.undefined
     
-    var startAfter: js.UndefOr[js.Array[_]] = js.native
+    var startAfter: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var startAt: js.UndefOr[js.Array[_]] = js.native
+    var startAt: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object QueryOptions {
     
@@ -252,7 +247,7 @@ object Query {
     implicit class QueryOptionsMutableBuilder[Self <: QueryOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setEndAt(value: js.Array[_]): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
+      def setEndAt(value: js.Array[js.Any]): Self = StObject.set(x, "endAt", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEndAtUndefined: Self = StObject.set(x, "endAt", js.undefined)
@@ -261,7 +256,7 @@ object Query {
       def setEndAtVarargs(value: js.Any*): Self = StObject.set(x, "endAt", js.Array(value :_*))
       
       @scala.inline
-      def setEndBefore(value: js.Array[_]): Self = StObject.set(x, "endBefore", value.asInstanceOf[js.Any])
+      def setEndBefore(value: js.Array[js.Any]): Self = StObject.set(x, "endBefore", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEndBeforeUndefined: Self = StObject.set(x, "endBefore", js.undefined)
@@ -291,7 +286,7 @@ object Query {
       def setSelectFieldsVarargs(value: String*): Self = StObject.set(x, "selectFields", js.Array(value :_*))
       
       @scala.inline
-      def setStartAfter(value: js.Array[_]): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
+      def setStartAfter(value: js.Array[js.Any]): Self = StObject.set(x, "startAfter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStartAfterUndefined: Self = StObject.set(x, "startAfter", js.undefined)
@@ -300,7 +295,7 @@ object Query {
       def setStartAfterVarargs(value: js.Any*): Self = StObject.set(x, "startAfter", js.Array(value :_*))
       
       @scala.inline
-      def setStartAt(value: js.Array[_]): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
+      def setStartAt(value: js.Array[js.Any]): Self = StObject.set(x, "startAt", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStartAtUndefined: Self = StObject.set(x, "startAt", js.undefined)
@@ -310,12 +305,13 @@ object Query {
     }
   }
   
-  @js.native
-  trait SnapshotError extends NativeError {
+  trait SnapshotError
+    extends StObject
+       with NativeError {
     
-    var appName: String = js.native
+    var appName: String
     
-    var path: String = js.native
+    var path: String
   }
   object SnapshotError {
     

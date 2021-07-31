@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YAxisStackLabelsOptions extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait YAxisStackLabelsOptions extends StObject {
     * calculated at runtime and depends on orientation and whether the stack is
     * positive or negative.
     */
-  var align: js.UndefOr[AlignValue] = js.native
+  var align: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts) Allow the stack labels to overlap.
     */
-  var allowOverlap: js.UndefOr[Boolean] = js.native
+  var allowOverlap: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the initial animation when a series is
@@ -32,52 +30,52 @@ trait YAxisStackLabelsOptions extends StObject {
     *
     * - `defer`: The animation delay time in milliseconds.
     */
-  var animation: js.UndefOr[Boolean | YAxisStackLabelsAnimationOptions | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | YAxisStackLabelsAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts) The background color or gradient for the stack label.
     */
-  var backgroundColor: js.UndefOr[ColorType] = js.native
+  var backgroundColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts) The border color for the stack label. Defaults to
     * `undefined`.
     */
-  var borderColor: js.UndefOr[ColorType] = js.native
+  var borderColor: js.UndefOr[ColorType] = js.undefined
   
   /**
     * (Highcharts) The border radius in pixels for the stack label.
     */
-  var borderRadius: js.UndefOr[Double] = js.native
+  var borderRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The border width in pixels for the stack label.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Whether to hide stack labels that are outside the plot area.
     * By default, the stack label is moved inside the plot area according to
     * the overflow option.
     */
-  var crop: js.UndefOr[Boolean] = js.native
+  var crop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the stack total labels.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) A format string for the data label. Available
     * variables are the same as for `formatter`.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Callback JavaScript function to format the label. The value
     * is given by `this.total`.
     */
-  var formatter: js.UndefOr[FormatterCallbackFunction[StackItemObject]] = js.native
+  var formatter: js.UndefOr[FormatterCallbackFunction[StackItemObject]] = js.undefined
   
   /**
     * (Highcharts) How to handle stack total labels that flow outside the plot
@@ -86,12 +84,12 @@ trait YAxisStackLabelsOptions extends StObject {
     * bar. To display stack labels outside the plot area, set `crop` to `false`
     * and `overflow` to `"allow"`.
     */
-  var overflow: js.UndefOr[DataLabelsOverflowValue] = js.native
+  var overflow: js.UndefOr[DataLabelsOverflowValue] = js.undefined
   
   /**
     * (Highcharts) Rotation of the labels in degrees.
     */
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) CSS styles for the label.
@@ -99,7 +97,7 @@ trait YAxisStackLabelsOptions extends StObject {
     * In styled mode, the styles are set in the `.highcharts-stack-label`
     * class.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts) The text alignment for the label. While `align` determines
@@ -109,12 +107,12 @@ trait YAxisStackLabelsOptions extends StObject {
     * is calculated at runtime and depends on orientation and whether the stack
     * is positive or negative.
     */
-  var textAlign: js.UndefOr[AlignValue] = js.native
+  var textAlign: js.UndefOr[AlignValue] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether to use HTML to render the labels.
     */
-  var useHTML: js.UndefOr[Boolean] = js.native
+  var useHTML: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Defines the vertical alignment of the stack total label. Can
@@ -122,21 +120,21 @@ trait YAxisStackLabelsOptions extends StObject {
     * calculated at runtime and depends on orientation and whether the stack is
     * positive or negative.
     */
-  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.native
+  var verticalAlign: js.UndefOr[VerticalAlignValue] = js.undefined
   
   /**
     * (Highcharts) The x position offset of the label relative to the left of
     * the stacked bar. The default value is calculated at runtime and depends
     * on orientation and whether the stack is positive or negative.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The y position offset of the label relative to the tick
     * position on the axis. The default value is calculated at runtime and
     * depends on orientation and whether the stack is positive or negative.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object YAxisStackLabelsOptions {
   

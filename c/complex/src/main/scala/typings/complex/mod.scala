@@ -2,14 +2,15 @@ package typings.complex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("complex", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Complex {
+  class ^ protected ()
+    extends StObject
+       with Complex {
     /**
       * @param real The real part of the number
       * @param im The imaginary part of the number
@@ -31,21 +32,18 @@ object mod {
     * @param real A string representation of the number, for example 1+4i
     */
   /* static member */
-  @JSImport("complex", "from")
-  @js.native
-  def from(real: String): Complex = js.native
+  @scala.inline
+  def from(real: String): Complex = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(real.asInstanceOf[js.Any]).asInstanceOf[Complex]
   /**
     * A in line function like Number.from.
     * @param real The real part of the number
     * @param im The imaginary part of the number
     */
   /* static member */
-  @JSImport("complex", "from")
-  @js.native
-  def from(real: Double): Complex = js.native
-  @JSImport("complex", "from")
-  @js.native
-  def from(real: Double, im: Double): Complex = js.native
+  @scala.inline
+  def from(real: Double): Complex = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(real.asInstanceOf[js.Any]).asInstanceOf[Complex]
+  @scala.inline
+  def from(real: Double, im: Double): Complex = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(real.asInstanceOf[js.Any], im.asInstanceOf[js.Any])).asInstanceOf[Complex]
   
   /**
     * Creates a complex instance from a polar representation
@@ -53,9 +51,8 @@ object mod {
     * @param phi The angle/phase of the number
     */
   /* static member */
-  @JSImport("complex", "fromPolar")
-  @js.native
-  def fromPolar(r: Double, phi: Double): Complex = js.native
+  @scala.inline
+  def fromPolar(r: Double, phi: Double): Complex = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPolar")(r.asInstanceOf[js.Any], phi.asInstanceOf[js.Any])).asInstanceOf[Complex]
   
   /**
     * A instance of the imaginary unit

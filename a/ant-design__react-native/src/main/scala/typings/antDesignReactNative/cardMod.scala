@@ -11,7 +11,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod {
@@ -55,12 +54,13 @@ object cardMod {
   trait Card
     extends Component[CardNativeProps, js.Any, js.Any]
   
-  @js.native
-  trait CardNativeProps extends WithThemeStyles[CardStyle] {
+  trait CardNativeProps
+    extends StObject
+       with WithThemeStyles[CardStyle] {
     
-    var full: js.UndefOr[Boolean] = js.native
+    var full: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CardNativeProps {
     

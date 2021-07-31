@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkHeader extends StObject {
   
   /**
     * Information about the destination of the component.
     */
-  var Destination: js.UndefOr[NetworkPathComponentDetails] = js.native
+  var Destination: js.UndefOr[NetworkPathComponentDetails] = js.undefined
   
   /**
     * The protocol used for the component.
     */
-  var Protocol: js.UndefOr[NonEmptyString] = js.native
+  var Protocol: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about the origin of the component.
     */
-  var Source: js.UndefOr[NetworkPathComponentDetails] = js.native
+  var Source: js.UndefOr[NetworkPathComponentDetails] = js.undefined
 }
 object NetworkHeader {
   

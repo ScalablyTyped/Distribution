@@ -2,19 +2,17 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SafeProtocols extends StObject {
   
-  var file: js.UndefOr[Boolean] = js.native
+  var file: js.UndefOr[Boolean] = js.undefined
   
-  var http: js.UndefOr[Boolean] = js.native
+  var http: js.UndefOr[Boolean] = js.undefined
   
-  var https: js.UndefOr[Boolean] = js.native
+  var https: js.UndefOr[Boolean] = js.undefined
   
-  var javascript: js.UndefOr[Boolean] = js.native
+  var javascript: js.UndefOr[Boolean] = js.undefined
 }
 object SafeProtocols {
   

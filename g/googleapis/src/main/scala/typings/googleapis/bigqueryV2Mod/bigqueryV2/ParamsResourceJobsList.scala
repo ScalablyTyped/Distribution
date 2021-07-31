@@ -6,59 +6,59 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceJobsList extends StandardParameters {
+trait ParamsResourceJobsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Whether to display jobs owned by all users in the project. Default false
     */
-  var allUsers: js.UndefOr[Boolean] = js.native
+  var allUsers: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Max value for job creation time, in milliseconds since the POSIX epoch.
     * If set, only jobs created before or at this timestamp are returned
     */
-  var maxCreationTime: js.UndefOr[String] = js.native
+  var maxCreationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of results to return
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Min value for job creation time, in milliseconds since the POSIX epoch.
     * If set, only jobs created after or at this timestamp are returned
     */
-  var minCreationTime: js.UndefOr[String] = js.native
+  var minCreationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Page token, returned by a previous call, to request the next page of
     * results
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Project ID of the jobs to list
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Restrict information returned to a set of selected fields
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Filter for job state
     */
-  var stateFilter: js.UndefOr[js.Array[String]] = js.native
+  var stateFilter: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ParamsResourceJobsList {
   

@@ -2,33 +2,31 @@ package typings.koaCacheControl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait MaxAge extends StObject {
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var mustRevalidate: js.UndefOr[Boolean] = js.native
+    var mustRevalidate: js.UndefOr[Boolean] = js.undefined
     
-    var noCache: js.UndefOr[Boolean] = js.native
+    var noCache: js.UndefOr[Boolean] = js.undefined
     
-    var noStore: js.UndefOr[Boolean] = js.native
+    var noStore: js.UndefOr[Boolean] = js.undefined
     
-    var noTransform: js.UndefOr[Boolean] = js.native
+    var noTransform: js.UndefOr[Boolean] = js.undefined
     
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
-    var public: js.UndefOr[Boolean] = js.native
+    var public: js.UndefOr[Boolean] = js.undefined
     
-    var sMaxAge: js.UndefOr[Double] = js.native
+    var sMaxAge: js.UndefOr[Double] = js.undefined
     
-    var staleIfError: js.UndefOr[Double] = js.native
+    var staleIfError: js.UndefOr[Double] = js.undefined
     
-    var staleWhileRevalidate: js.UndefOr[Double] = js.native
+    var staleWhileRevalidate: js.UndefOr[Double] = js.undefined
   }
   object MaxAge {
     

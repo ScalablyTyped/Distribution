@@ -2,36 +2,34 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rule extends StObject {
   
   /**
     * The actions. Each rule must include exactly one of the following types of actions: forward, redirect, or fixed-response, and it must be the last action to be performed.
     */
-  var Actions: js.UndefOr[typings.awsSdk.elbv2Mod.Actions] = js.native
+  var Actions: js.UndefOr[typings.awsSdk.elbv2Mod.Actions] = js.undefined
   
   /**
     * The conditions. Each rule can include zero or one of the following conditions: http-request-method, host-header, path-pattern, and source-ip, and zero or more of the following conditions: http-header and query-string.
     */
-  var Conditions: js.UndefOr[RuleConditionList] = js.native
+  var Conditions: js.UndefOr[RuleConditionList] = js.undefined
   
   /**
     * Indicates whether this is the default rule.
     */
-  var IsDefault: js.UndefOr[typings.awsSdk.elbv2Mod.IsDefault] = js.native
+  var IsDefault: js.UndefOr[typings.awsSdk.elbv2Mod.IsDefault] = js.undefined
   
   /**
     * The priority.
     */
-  var Priority: js.UndefOr[String] = js.native
+  var Priority: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the rule.
     */
-  var RuleArn: js.UndefOr[typings.awsSdk.elbv2Mod.RuleArn] = js.native
+  var RuleArn: js.UndefOr[typings.awsSdk.elbv2Mod.RuleArn] = js.undefined
 }
 object Rule {
   

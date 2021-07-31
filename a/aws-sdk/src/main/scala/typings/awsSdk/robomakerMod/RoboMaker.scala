@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -111,7 +110,7 @@ trait RoboMaker extends Service {
   ): Request[CancelWorldGenerationJobResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_RoboMaker: ConfigBase with ClientConfiguration = js.native
+  var config_RoboMaker: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Deploys a specific version of a robot application to robots in a fleet. The robot application must have a numbered applicationVersion for consistency reasons. To create a new version, use CreateRobotApplicationVersion or see Creating a Robot Application Version.   After 90 days, deployment jobs expire and will be deleted. They will no longer be accessible.  

@@ -3,27 +3,24 @@ package typings.dndCore
 import typings.dndCore.interfacesMod.Identifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchesTypeMod {
   
-  @JSImport("dnd-core/lib/utils/matchesType", "matchesType")
+  @JSImport("dnd-core/lib/utils/matchesType", JSImport.Namespace)
   @js.native
-  def matchesType(): Boolean = js.native
-  @JSImport("dnd-core/lib/utils/matchesType", "matchesType")
-  @js.native
-  def matchesType(targetType: js.Array[Identifier]): Boolean = js.native
-  @JSImport("dnd-core/lib/utils/matchesType", "matchesType")
-  @js.native
-  def matchesType(targetType: js.Array[Identifier], draggedItemType: Identifier): Boolean = js.native
-  @JSImport("dnd-core/lib/utils/matchesType", "matchesType")
-  @js.native
-  def matchesType(targetType: Null, draggedItemType: Identifier): Boolean = js.native
-  @JSImport("dnd-core/lib/utils/matchesType", "matchesType")
-  @js.native
-  def matchesType(targetType: Identifier): Boolean = js.native
-  @JSImport("dnd-core/lib/utils/matchesType", "matchesType")
-  @js.native
-  def matchesType(targetType: Identifier, draggedItemType: Identifier): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def matchesType(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchesType")().asInstanceOf[Boolean]
+  @scala.inline
+  def matchesType(targetType: js.Array[Identifier]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchesType")(targetType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def matchesType(targetType: js.Array[Identifier], draggedItemType: Identifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesType")(targetType.asInstanceOf[js.Any], draggedItemType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchesType(targetType: Null, draggedItemType: Identifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesType")(targetType.asInstanceOf[js.Any], draggedItemType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def matchesType(targetType: Identifier): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("matchesType")(targetType.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def matchesType(targetType: Identifier, draggedItemType: Identifier): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesType")(targetType.asInstanceOf[js.Any], draggedItemType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

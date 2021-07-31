@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceSecretVerifierConfigType extends StObject {
   
   /**
     * The password verifier.
     */
-  var PasswordVerifier: js.UndefOr[StringType] = js.native
+  var PasswordVerifier: js.UndefOr[StringType] = js.undefined
   
   /**
     * The salt.
     */
-  var Salt: js.UndefOr[StringType] = js.native
+  var Salt: js.UndefOr[StringType] = js.undefined
 }
 object DeviceSecretVerifierConfigType {
   

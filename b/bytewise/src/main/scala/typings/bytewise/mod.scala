@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,13 +13,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : Bytewise = js.native
   
-  @js.native
   trait Bytewise
-    extends /* k */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
-    def decode(value: Buffer): js.Any = js.native
+    def decode(value: Buffer): js.Any
     
-    def encode(value: js.Any): Buffer = js.native
+    def encode(value: js.Any): Buffer
   }
   object Bytewise {
     

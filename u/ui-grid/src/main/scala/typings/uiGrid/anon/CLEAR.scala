@@ -2,17 +2,15 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CLEAR extends StObject {
   
-  var CLEAR: Double = js.native
+  var CLEAR: Double
   
-  var CLICK: Double = js.native
+  var CLICK: Double
   
-  var KEYDOWN: Double = js.native
+  var KEYDOWN: Double
 }
 object CLEAR {
   

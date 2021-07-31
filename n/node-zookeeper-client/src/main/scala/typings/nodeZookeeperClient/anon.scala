@@ -2,20 +2,18 @@ package typings.nodeZookeeperClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<node-zookeeper-client.node-zookeeper-client.Option> */
-  @js.native
   trait PartialOption extends StObject {
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
     
-    var sessionTimeout: js.UndefOr[Double] = js.native
+    var sessionTimeout: js.UndefOr[Double] = js.undefined
     
-    var spinDelay: js.UndefOr[Double] = js.native
+    var spinDelay: js.UndefOr[Double] = js.undefined
   }
   object PartialOption {
     

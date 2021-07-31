@@ -2,13 +2,11 @@ package typings.persona
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
-  var id: typings.persona.Persona.Persona = js.native
+  var id: typings.persona.Persona.Persona
 }
 object Navigator {
   

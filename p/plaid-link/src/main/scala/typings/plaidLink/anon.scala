@@ -4,17 +4,15 @@ import typings.plaidLink.mod.Plaid.CreateConfig
 import typings.plaidLink.mod.Plaid.LinkHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Create extends StObject {
     
-    def create(params: CreateConfig): LinkHandler = js.native
+    def create(params: CreateConfig): LinkHandler
     
-    var version: String = js.native
+    var version: String
   }
   object Create {
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Institutionid extends StObject {
     
-    var institution_id: String = js.native
+    var institution_id: String
     
-    var name: String = js.native
+    var name: String
   }
   object Institutionid {
     

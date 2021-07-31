@@ -2,10 +2,8 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataGroupingOptionsObject extends StObject {
   
   /**
@@ -36,7 +34,7 @@ trait DataGroupingOptionsObject extends StObject {
     * Defaults to `average` for line-type series, `sum` for columns, `range`
     * for range series and `ohlc` for OHLC and candlestick.
     */
-  var approximation: js.UndefOr[String | DataGroupingApproximationValue | js.Function] = js.native
+  var approximation: js.UndefOr[String | DataGroupingApproximationValue | js.Function] = js.undefined
   
   /**
     * (Highstock) Datetime formats for the header of the tooltip in a stock
@@ -53,19 +51,19 @@ trait DataGroupingOptionsObject extends StObject {
     * and third item of the week array are used, and applied to the start and
     * end date of the time span.
     */
-  var dateTimeLabelFormats: js.UndefOr[js.Object] = js.native
+  var dateTimeLabelFormats: js.UndefOr[js.Object] = js.undefined
   
   /**
     * (Highstock) Enable or disable data grouping.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) When data grouping is forced, it runs no matter how small the
     * intervals are. This can be handy for example when the sum should be
     * calculated for values appearing at random times within each hour.
     */
-  var forced: js.UndefOr[Boolean] = js.native
+  var forced: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) By default only points within the visible range are grouped.
@@ -74,7 +72,7 @@ trait DataGroupingOptionsObject extends StObject {
     * series from calculating a grouped point partially. The effect is similar
     * to Series.getExtremesFromAll but does not affect yAxis extremes.
     */
-  var groupAll: js.UndefOr[Boolean] = js.native
+  var groupAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) The approximate pixel width of each group. If for example a
@@ -87,7 +85,7 @@ trait DataGroupingOptionsObject extends StObject {
     * line series have 2px default group width, while column series have 10px.
     * If combined, both the line and the column will have 10px by default.
     */
-  var groupPixelWidth: js.UndefOr[Double] = js.native
+  var groupPixelWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Normally, a group is indexed by the start of that group, so
@@ -97,7 +95,7 @@ trait DataGroupingOptionsObject extends StObject {
     * data is shifted to the middle of the group, and min and max values are
     * preserved. Internally, this is used in the Navigator series.
     */
-  var smoothed: js.UndefOr[Boolean] = js.native
+  var smoothed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) An array determining what time intervals the data is allowed
@@ -106,7 +104,7 @@ trait DataGroupingOptionsObject extends StObject {
     *
     * Defaults to: (see online documentation for example)
     */
-  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.native
+  var units: js.UndefOr[js.Array[js.Tuple2[String, js.Array[Double] | Null]]] = js.undefined
 }
 object DataGroupingOptionsObject {
   

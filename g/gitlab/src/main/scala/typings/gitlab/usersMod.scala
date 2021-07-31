@@ -10,7 +10,6 @@ import typings.gitlab.requestHelperMod.Sudo
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usersMod {
@@ -39,7 +38,7 @@ object usersMod {
     def edit(userId: Double, options: BaseRequestOptions): js.Promise[js.Object] = js.native
     
     def events(userId: Double): js.Promise[GetResponse] = js.native
-    def events(userId: Double, options: BaseRequestOptions with EventOptions): js.Promise[GetResponse] = js.native
+    def events(userId: Double, options: BaseRequestOptions & EventOptions): js.Promise[GetResponse] = js.native
     
     def projects(userId: Double): js.Promise[GetResponse] = js.native
     def projects(userId: Double, options: Sudo): js.Promise[GetResponse] = js.native
@@ -57,26 +56,27 @@ object usersMod {
     def unblock(userId: Double, options: Sudo): js.Promise[js.Object] = js.native
   }
   
-  @js.native
-  trait UserDetailSchema extends UserSchema {
+  trait UserDetailSchema
+    extends StObject
+       with UserSchema {
     
-    var bio: js.UndefOr[String] = js.native
+    var bio: js.UndefOr[String] = js.undefined
     
-    var created_at: Date = js.native
+    var created_at: Date
     
-    var linkedin: String = js.native
+    var linkedin: String
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var organization: js.UndefOr[String] = js.native
+    var organization: js.UndefOr[String] = js.undefined
     
-    var public_email: String = js.native
+    var public_email: String
     
-    var skype: String = js.native
+    var skype: String
     
-    var twitter: String = js.native
+    var twitter: String
     
-    var website_url: js.UndefOr[String] = js.native
+    var website_url: js.UndefOr[String] = js.undefined
   }
   object UserDetailSchema {
     
@@ -142,20 +142,19 @@ object usersMod {
     }
   }
   
-  @js.native
   trait UserSchema extends StObject {
     
-    var avatar_url: String = js.native
+    var avatar_url: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var state: String = js.native
+    var state: String
     
-    var username: String = js.native
+    var username: String
     
-    var web_url: String = js.native
+    var web_url: String
   }
   object UserSchema {
     

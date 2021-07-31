@@ -3,15 +3,16 @@ package typings.gunzipMaybe
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Transform = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Transform]
+  @scala.inline
+  def apply(maxRecursion: Double): Transform = ^.asInstanceOf[js.Dynamic].apply(maxRecursion.asInstanceOf[js.Any]).asInstanceOf[Transform]
+  
   @JSImport("gunzip-maybe", JSImport.Namespace)
   @js.native
-  def apply(): Transform = js.native
-  @JSImport("gunzip-maybe", JSImport.Namespace)
-  @js.native
-  def apply(maxRecursion: Double): Transform = js.native
+  val ^ : js.Any = js.native
 }

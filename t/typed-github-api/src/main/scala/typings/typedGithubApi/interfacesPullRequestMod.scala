@@ -16,53 +16,53 @@ import typings.typedGithubApi.typedGithubApiStrings.closed
 import typings.typedGithubApi.typedGithubApiStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesPullRequestMod {
   
-  @js.native
-  trait PullRequest extends PullRequestRef {
+  trait PullRequest
+    extends StObject
+       with PullRequestRef {
     
-    var assignee: UserSummary | Null = js.native
+    var assignee: UserSummary | Null
     
-    var assignees: js.Array[UserSummary] = js.native
+    var assignees: js.Array[UserSummary]
     
-    var base: BranchSummaryWithRepository = js.native
+    var base: BranchSummaryWithRepository
     
-    var body: String = js.native
+    var body: String
     
-    var closedAt: js.UndefOr[Moment] = js.native
+    var closedAt: js.UndefOr[Moment] = js.undefined
     
-    var createdAt: Moment = js.native
+    var createdAt: Moment
     
-    var createdBy: UserSummary = js.native
+    var createdBy: UserSummary
     
-    var head: BranchSummary = js.native
+    var head: BranchSummary
     
-    var htmlUri: String = js.native
+    var htmlUri: String
     
-    var id: Double = js.native
+    var id: Double
     
-    def loadIssueAsync(): js.Promise[Issue] = js.native
+    def loadIssueAsync(): js.Promise[Issue]
     
-    def loadReviewCommentsAsync(): js.Promise[js.Array[ReviewComment]] = js.native
+    def loadReviewCommentsAsync(): js.Promise[js.Array[ReviewComment]]
     
-    def loadReviewRequestsAsync(): js.Promise[ReviewRequests] = js.native
+    def loadReviewRequestsAsync(): js.Promise[ReviewRequests]
     
-    def loadReviewsAsync(): js.Promise[js.Array[Review]] = js.native
+    def loadReviewsAsync(): js.Promise[js.Array[Review]]
     
-    var locked: Boolean = js.native
+    var locked: Boolean
     
-    var mergedAt: js.UndefOr[Moment] = js.native
+    var mergedAt: js.UndefOr[Moment] = js.undefined
     
-    var milestone: Milestone | Null = js.native
+    var milestone: Milestone | Null
     
-    var state: open | closed = js.native
+    var state: open | closed
     
-    var title: String = js.native
+    var title: String
     
-    var updatedAt: Moment = js.native
+    var updatedAt: Moment
   }
   object PullRequest {
     
@@ -87,7 +87,7 @@ object interfacesPullRequestMod {
       title: String,
       updatedAt: Moment
     ): PullRequest = {
-      val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], htmlUri = htmlUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loadAsync = js.Any.fromFunction0(loadAsync), loadIssueAsync = js.Any.fromFunction0(loadIssueAsync), loadReviewCommentsAsync = js.Any.fromFunction0(loadReviewCommentsAsync), loadReviewRequestsAsync = js.Any.fromFunction0(loadReviewRequestsAsync), loadReviewsAsync = js.Any.fromFunction0(loadReviewsAsync), locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(assignees = assignees.asInstanceOf[js.Any], base = base.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], createdAt = createdAt.asInstanceOf[js.Any], createdBy = createdBy.asInstanceOf[js.Any], head = head.asInstanceOf[js.Any], htmlUri = htmlUri.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], loadAsync = js.Any.fromFunction0(loadAsync), loadIssueAsync = js.Any.fromFunction0(loadIssueAsync), loadReviewCommentsAsync = js.Any.fromFunction0(loadReviewCommentsAsync), loadReviewRequestsAsync = js.Any.fromFunction0(loadReviewRequestsAsync), loadReviewsAsync = js.Any.fromFunction0(loadReviewsAsync), locked = locked.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], updatedAt = updatedAt.asInstanceOf[js.Any], assignee = null, milestone = null)
       __obj.asInstanceOf[PullRequest]
     }
     
@@ -171,12 +171,11 @@ object interfacesPullRequestMod {
     }
   }
   
-  @js.native
   trait PullRequestRef extends StObject {
     
-    def loadAsync(): js.Promise[PullRequest | Null] = js.native
+    def loadAsync(): js.Promise[PullRequest | Null]
     
-    val number: Double = js.native
+    val number: Double
   }
   object PullRequestRef {
     
@@ -197,20 +196,19 @@ object interfacesPullRequestMod {
     }
   }
   
-  @js.native
   trait Review extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var commitSha: String = js.native
+    var commitSha: String
     
-    var createdBy: UserSummary = js.native
+    var createdBy: UserSummary
     
-    var htmlUri: String = js.native
+    var htmlUri: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var state: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED = js.native
+    var state: APPROVED | CHANGES_REQUESTED | COMMENTED | DISMISSED
   }
   object Review {
     
@@ -250,12 +248,13 @@ object interfacesPullRequestMod {
     }
   }
   
-  @js.native
-  trait ReviewComment extends IssueComment {
+  trait ReviewComment
+    extends StObject
+       with IssueComment {
     
-    var diffHunk: String = js.native
+    var diffHunk: String
     
-    var position: Double = js.native
+    var position: Double
   }
   object ReviewComment {
     
@@ -285,12 +284,11 @@ object interfacesPullRequestMod {
     }
   }
   
-  @js.native
   trait ReviewRequests extends StObject {
     
-    var teams: js.Array[Team] = js.native
+    var teams: js.Array[Team]
     
-    var users: js.Array[UserSummary] = js.native
+    var users: js.Array[UserSummary]
   }
   object ReviewRequests {
     
@@ -317,26 +315,25 @@ object interfacesPullRequestMod {
     }
   }
   
-  @js.native
   trait Team extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var name: String = js.native
+    var name: String
     
-    var permission: admin = js.native
+    var permission: admin
     
-    var privacy: closed = js.native
+    var privacy: closed
     
-    var slug: String = js.native
+    var slug: String
   }
   object Team {
     
     @scala.inline
-    def apply(description: String, id: Double, name: String, permission: admin, privacy: closed, slug: String): Team = {
-      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permission = permission.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+    def apply(description: String, id: Double, name: String, slug: String): Team = {
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], permission = "admin", privacy = "closed", slug = slug.asInstanceOf[js.Any])
       __obj.asInstanceOf[Team]
     }
     

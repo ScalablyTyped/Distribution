@@ -9,38 +9,37 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentCardDetailsTypesMod {
   
-  @js.native
   trait IDocumentCardDetails extends StObject
   
-  @js.native
-  trait IDocumentCardDetailsProps extends Props[DocumentCardDetailsBase] {
+  trait IDocumentCardDetailsProps
+    extends StObject
+       with Props[DocumentCardDetailsBase] {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IDocumentCardDetails]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDocumentCardDetails]] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules
       */
     var styles: js.UndefOr[
         IStyleFunctionOrObject[IDocumentCardDetailsStyleProps, IDocumentCardDetailsStyles]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Theme provided by HOC.
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IDocumentCardDetailsProps {
     
@@ -85,18 +84,17 @@ object documentCardDetailsTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardDetailsStyleProps extends StObject {
     
     /**
       * Optional override class name
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Accept theme prop.
       */
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDocumentCardDetailsStyleProps {
     
@@ -120,10 +118,9 @@ object documentCardDetailsTypesMod {
     }
   }
   
-  @js.native
   trait IDocumentCardDetailsStyles extends StObject {
     
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object IDocumentCardDetailsStyles {
     

@@ -4,21 +4,19 @@ import typings.devextreme.devextremeStrings.driving
 import typings.devextreme.devextremeStrings.walking
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var locations: js.UndefOr[js.Array[_]] = js.native
+  var locations: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var mode: js.UndefOr[driving | walking] = js.native
+  var mode: js.UndefOr[driving | walking] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var weight: js.UndefOr[Double] = js.native
+  var weight: js.UndefOr[Double] = js.undefined
 }
 object Color {
   
@@ -38,7 +36,7 @@ object Color {
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setLocations(value: js.Array[_]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
+    def setLocations(value: js.Array[js.Any]): Self = StObject.set(x, "locations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLocationsUndefined: Self = StObject.set(x, "locations", js.undefined)

@@ -2,7 +2,6 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://oracle.github.io/node-oracledb/doc/api.html#cqn
   * @since 4.0
   */
-@js.native
 trait Subscription extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait Subscription extends StObject {
     * 
     * For advanced queue SUBSCR_NAMESPACE_AQ subscriptions, regId is undefined.
     */
-  var regId: js.UndefOr[String] = js.native
+  var regId: js.UndefOr[String] = js.undefined
 }
 object Subscription {
   

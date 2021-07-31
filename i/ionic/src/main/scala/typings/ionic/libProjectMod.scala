@@ -33,14 +33,19 @@ import typings.minimist.mod.ParsedArgs
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libProjectMod {
   
+  @JSImport("ionic/lib/project", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ionic/lib/project", "Project")
   @js.native
-  abstract class Project protected () extends IProject {
+  abstract class Project protected ()
+    extends StObject
+       with IProject {
     def this(details: ProjectDetailsResult, e: ProjectDeps) = this()
     
     @JSName("config")
@@ -100,7 +105,7 @@ object libProjectMod {
     
     def processResult(result: ProjectDetailsResult): Unit = js.native
     
-    def readConfig(p: String): js.Promise[StringDictionary[_]] = js.native
+    def readConfig(p: String): js.Promise[StringDictionary[js.Any]] = js.native
     
     /**
       * Gather project details from specified configuration.
@@ -139,41 +144,33 @@ object libProjectMod {
     val code_ProjectDetailsError: ProjectDetailsErrorCode = js.native
   }
   
-  @JSImport("ionic/lib/project", "createProjectFromDetails")
-  @js.native
-  def createProjectFromDetails(details: ProjectDetailsResult, deps: ProjectDeps): js.Promise[IProject] = js.native
+  @scala.inline
+  def createProjectFromDetails(details: ProjectDetailsResult, deps: ProjectDeps): js.Promise[IProject] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjectFromDetails")(details.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[IProject]]
   
-  @JSImport("ionic/lib/project", "createProjectFromDirectory")
-  @js.native
-  def createProjectFromDirectory(rootDirectory: String, args: ParsedArgs, deps: ProjectDeps): js.Promise[js.UndefOr[IProject]] = js.native
-  @JSImport("ionic/lib/project", "createProjectFromDirectory")
-  @js.native
+  @scala.inline
+  def createProjectFromDirectory(rootDirectory: String, args: ParsedArgs, deps: ProjectDeps): js.Promise[js.UndefOr[IProject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjectFromDirectory")(rootDirectory.asInstanceOf[js.Any], args.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IProject]]]
+  @scala.inline
   def createProjectFromDirectory(
     rootDirectory: String,
     args: ParsedArgs,
     deps: ProjectDeps,
     hasLogErrors: CreateProjectFromDirectoryOptions
-  ): js.Promise[js.UndefOr[IProject]] = js.native
+  ): js.Promise[js.UndefOr[IProject]] = (^.asInstanceOf[js.Dynamic].applyDynamic("createProjectFromDirectory")(rootDirectory.asInstanceOf[js.Any], args.asInstanceOf[js.Any], deps.asInstanceOf[js.Any], hasLogErrors.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[IProject]]]
   
-  @JSImport("ionic/lib/project", "findProjectDirectory")
-  @js.native
-  def findProjectDirectory(cwd: String): js.Promise[js.UndefOr[String]] = js.native
+  @scala.inline
+  def findProjectDirectory(cwd: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findProjectDirectory")(cwd.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
-  @JSImport("ionic/lib/project", "isValidProjectId")
-  @js.native
-  def isValidProjectId(projectId: String): Boolean = js.native
+  @scala.inline
+  def isValidProjectId(projectId: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidProjectId")(projectId.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ionic/lib/project", "prettyProjectName")
-  @js.native
-  def prettyProjectName(): String = js.native
-  @JSImport("ionic/lib/project", "prettyProjectName")
-  @js.native
-  def prettyProjectName(`type`: String): String = js.native
+  @scala.inline
+  def prettyProjectName(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyProjectName")().asInstanceOf[String]
+  @scala.inline
+  def prettyProjectName(`type`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyProjectName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
   trait CreateProjectFromDirectoryOptions extends StObject {
     
-    var logErrors: js.UndefOr[Boolean] = js.native
+    var logErrors: js.UndefOr[Boolean] = js.undefined
   }
   object CreateProjectFromDirectoryOptions {
     
@@ -194,10 +191,11 @@ object libProjectMod {
     }
   }
   
-  @js.native
-  trait ProjectConfigOptions extends BaseConfigOptions {
+  trait ProjectConfigOptions
+    extends StObject
+       with BaseConfigOptions {
     
-    val `type`: js.UndefOr[ProjectType] = js.native
+    val `type`: js.UndefOr[ProjectType] = js.undefined
   }
   object ProjectConfigOptions {
     
@@ -218,38 +216,81 @@ object libProjectMod {
     }
   }
   
-  @js.native
   trait ProjectDeps extends StObject {
     
-    val client: IClient = js.native
+    val client: IClient
     
-    val config: IConfig = js.native
+    val config: IConfig
     
-    val ctx: IonicContext = js.native
+    val ctx: IonicContext
     
-    val flags: IonicEnvironmentFlags = js.native
+    val flags: IonicEnvironmentFlags
     
-    val log: ILogger = js.native
+    val log: ILogger
     
-    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox] = js.native
-    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm] = js.native
-    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther] = js.native
+    def prompt(question: PromptQuestionCheckbox): js.Promise[PromptValueCheckbox]
+    def prompt(question: PromptQuestionConfirm): js.Promise[PromptValueConfirm]
+    def prompt(question: PromptQuestionOther): js.Promise[PromptValueOther]
     @JSName("prompt")
-    val prompt_Original: PromptModule = js.native
+    val prompt_Original: PromptModule
     
-    val session: ISession = js.native
+    val session: ISession
     
-    val shell: IShell = js.native
+    val shell: IShell
+  }
+  object ProjectDeps {
+    
+    @scala.inline
+    def apply(
+      client: IClient,
+      config: IConfig,
+      ctx: IonicContext,
+      flags: IonicEnvironmentFlags,
+      log: ILogger,
+      prompt: PromptModule,
+      session: ISession,
+      shell: IShell
+    ): ProjectDeps = {
+      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], ctx = ctx.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], prompt = prompt.asInstanceOf[js.Any], session = session.asInstanceOf[js.Any], shell = shell.asInstanceOf[js.Any])
+      __obj.asInstanceOf[ProjectDeps]
+    }
+    
+    @scala.inline
+    implicit class ProjectDepsMutableBuilder[Self <: ProjectDeps] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setClient(value: IClient): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setConfig(value: IConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCtx(value: IonicContext): Self = StObject.set(x, "ctx", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFlags(value: IonicEnvironmentFlags): Self = StObject.set(x, "flags", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setLog(value: ILogger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPrompt(value: PromptModule): Self = StObject.set(x, "prompt", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSession(value: ISession): Self = StObject.set(x, "session", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setShell(value: IShell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait ProjectDetailsDeps extends StObject {
     
-    val args: js.UndefOr[ParsedArgs] = js.native
+    val args: js.UndefOr[ParsedArgs] = js.undefined
     
-    val e: ProjectDeps = js.native
+    val e: ProjectDeps
     
-    val rootDirectory: String = js.native
+    val rootDirectory: String
   }
   object ProjectDetailsDeps {
     
@@ -302,18 +343,19 @@ object libProjectMod {
     def ERR_MULTI_MISSING_ID: typings.ionic.ionicStrings.ERR_MULTI_MISSING_ID = "ERR_MULTI_MISSING_ID".asInstanceOf[typings.ionic.ionicStrings.ERR_MULTI_MISSING_ID]
   }
   
-  @js.native
-  trait ProjectDetailsMultiAppResult extends ProjectDetailsResultBase {
+  trait ProjectDetailsMultiAppResult
+    extends StObject
+       with ProjectDetailsResultBase {
     
-    val context: multiapp = js.native
+    val context: multiapp
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
   }
   object ProjectDetailsMultiAppResult {
     
     @scala.inline
-    def apply(context: multiapp, errors: js.Array[ProjectDetailsError]): ProjectDetailsMultiAppResult = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
+    def apply(errors: js.Array[ProjectDetailsError]): ProjectDetailsMultiAppResult = {
+      val __obj = js.Dynamic.literal(context = "multiapp", errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProjectDetailsMultiAppResult]
     }
     
@@ -331,14 +373,13 @@ object libProjectMod {
     }
   }
   
-  type ProjectDetailsResult = (ProjectDetailsSingleAppResult | ProjectDetailsMultiAppResult | ProjectDetailsUnknownResult) with ConfigPath
+  type ProjectDetailsResult = (ProjectDetailsSingleAppResult | ProjectDetailsMultiAppResult | ProjectDetailsUnknownResult) & ConfigPath
   
-  @js.native
   trait ProjectDetailsResultBase extends StObject {
     
-    val errors: js.Array[ProjectDetailsError] = js.native
+    val errors: js.Array[ProjectDetailsError]
     
-    val `type`: js.UndefOr[ProjectType] = js.native
+    val `type`: js.UndefOr[ProjectType] = js.undefined
   }
   object ProjectDetailsResultBase {
     
@@ -365,16 +406,17 @@ object libProjectMod {
     }
   }
   
-  @js.native
-  trait ProjectDetailsSingleAppResult extends ProjectDetailsResultBase {
+  trait ProjectDetailsSingleAppResult
+    extends StObject
+       with ProjectDetailsResultBase {
     
-    val context: app = js.native
+    val context: app
   }
   object ProjectDetailsSingleAppResult {
     
     @scala.inline
-    def apply(context: app, errors: js.Array[ProjectDetailsError]): ProjectDetailsSingleAppResult = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
+    def apply(errors: js.Array[ProjectDetailsError]): ProjectDetailsSingleAppResult = {
+      val __obj = js.Dynamic.literal(context = "app", errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProjectDetailsSingleAppResult]
     }
     
@@ -386,16 +428,17 @@ object libProjectMod {
     }
   }
   
-  @js.native
-  trait ProjectDetailsUnknownResult extends ProjectDetailsResultBase {
+  trait ProjectDetailsUnknownResult
+    extends StObject
+       with ProjectDetailsResultBase {
     
-    val context: unknown = js.native
+    val context: unknown
   }
   object ProjectDetailsUnknownResult {
     
     @scala.inline
-    def apply(context: unknown, errors: js.Array[ProjectDetailsError]): ProjectDetailsUnknownResult = {
-      val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], errors = errors.asInstanceOf[js.Any])
+    def apply(errors: js.Array[ProjectDetailsError]): ProjectDetailsUnknownResult = {
+      val __obj = js.Dynamic.literal(context = "unknown", errors = errors.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProjectDetailsUnknownResult]
     }
     

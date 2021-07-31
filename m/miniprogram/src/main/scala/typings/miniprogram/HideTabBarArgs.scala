@@ -2,16 +2,16 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HideTabBarArgs extends AsyncCallback[Unit] {
+trait HideTabBarArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Need animation effect or not, none by default.
     */
-  var animation: js.UndefOr[Boolean] = js.native
+  var animation: js.UndefOr[Boolean] = js.undefined
 }
 object HideTabBarArgs {
   

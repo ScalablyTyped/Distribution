@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/replicapool/v1beta1", "replicapool_v1beta1.Resource$Pools")
@@ -33,7 +32,7 @@ class ResourcePools protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePoolsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePoolsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -60,7 +59,7 @@ class ResourcePools protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPool] = js.native
   def get(callback: BodyResponseCallback[SchemaPool]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPool] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPool] = js.native
   def get(params: ParamsResourcePoolsGet): GaxiosPromise[SchemaPool] = js.native
   def get(params: ParamsResourcePoolsGet, callback: BodyResponseCallback[SchemaPool]): Unit = js.native
   def get(
@@ -87,7 +86,7 @@ class ResourcePools protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaPool] = js.native
   def insert(callback: BodyResponseCallback[SchemaPool]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPool] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPool] = js.native
   def insert(params: ParamsResourcePoolsInsert): GaxiosPromise[SchemaPool] = js.native
   def insert(params: ParamsResourcePoolsInsert, callback: BodyResponseCallback[SchemaPool]): Unit = js.native
   def insert(
@@ -119,7 +118,7 @@ class ResourcePools protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPoolsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPoolsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPoolsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPoolsListResponse] = js.native
   def list(params: ParamsResourcePoolsList): GaxiosPromise[SchemaPoolsListResponse] = js.native
   def list(params: ParamsResourcePoolsList, callback: BodyResponseCallback[SchemaPoolsListResponse]): Unit = js.native
   def list(
@@ -153,7 +152,7 @@ class ResourcePools protected () extends StObject {
     */
   def resize(): GaxiosPromise[SchemaPool] = js.native
   def resize(callback: BodyResponseCallback[SchemaPool]): Unit = js.native
-  def resize(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPool] = js.native
+  def resize(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPool] = js.native
   def resize(params: ParamsResourcePoolsResize): GaxiosPromise[SchemaPool] = js.native
   def resize(params: ParamsResourcePoolsResize, callback: BodyResponseCallback[SchemaPool]): Unit = js.native
   def resize(
@@ -185,7 +184,7 @@ class ResourcePools protected () extends StObject {
     */
   def updatetemplate(): GaxiosPromise[Unit] = js.native
   def updatetemplate(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def updatetemplate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def updatetemplate(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def updatetemplate(params: ParamsResourcePoolsUpdatetemplate): GaxiosPromise[Unit] = js.native
   def updatetemplate(params: ParamsResourcePoolsUpdatetemplate, callback: BodyResponseCallback[Unit]): Unit = js.native
   def updatetemplate(

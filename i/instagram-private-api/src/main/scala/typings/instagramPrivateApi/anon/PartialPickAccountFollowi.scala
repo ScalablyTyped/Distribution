@@ -5,24 +5,22 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.date_followed_late
 import typings.instagramPrivateApi.instagramPrivateApiStrings.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<instagram-private-api.instagram-private-api/dist/feeds.AccountFollowingFeed, 'searchSurface' | 'order' | 'query' | 'enableGroups' | 'includesHashtags' | 'id'>> */
-@js.native
 trait PartialPickAccountFollowi extends StObject {
   
-  var enableGroups: js.UndefOr[Boolean] = js.native
+  var enableGroups: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[Double | String] = js.native
+  var id: js.UndefOr[Double | String] = js.undefined
   
-  var includesHashtags: js.UndefOr[Boolean] = js.native
+  var includesHashtags: js.UndefOr[Boolean] = js.undefined
   
-  var order: js.UndefOr[default | date_followed_latest | date_followed_earliest] = js.native
+  var order: js.UndefOr[default | date_followed_latest | date_followed_earliest] = js.undefined
   
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
-  var searchSurface: js.UndefOr[String] = js.native
+  var searchSurface: js.UndefOr[String] = js.undefined
 }
 object PartialPickAccountFollowi {
   

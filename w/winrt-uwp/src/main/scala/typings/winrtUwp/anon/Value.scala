@@ -2,15 +2,13 @@ package typings.winrtUwp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  /** Returns true if the method succeeds, or false otherwise. */ var returnValue: Boolean = js.native
+  /** Returns true if the method succeeds, or false otherwise. */ var returnValue: Boolean
   
-  /** True if automatic adjustment is enabled; false otherwise. */ var value: Boolean = js.native
+  /** True if automatic adjustment is enabled; false otherwise. */ var value: Boolean
 }
 object Value {
   

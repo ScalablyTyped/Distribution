@@ -2,15 +2,13 @@ package typings.cadesplugin.CAdESCOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CPSigners extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(index: Double): CPSigner = js.native
+  def Item(index: Double): CPSigner
 }
 object CPSigners {
   

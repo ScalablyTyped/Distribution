@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationRevisionRequest extends StObject {
   
   /**
     * The unique ID that Amazon MQ generates for the configuration.
     */
-  var ConfigurationId: string = js.native
+  var ConfigurationId: string
   
   /**
     * The revision of the configuration.
     */
-  var ConfigurationRevision: string = js.native
+  var ConfigurationRevision: string
 }
 object DescribeConfigurationRevisionRequest {
   

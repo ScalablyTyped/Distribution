@@ -2,15 +2,13 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Padding extends StObject {
   
-  var deep: js.UndefOr[Boolean] = js.native
+  var deep: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[typings.jointjs.mod.dia.Padding] = js.native
+  var padding: js.UndefOr[typings.jointjs.mod.dia.Padding] = js.undefined
 }
 object Padding {
   

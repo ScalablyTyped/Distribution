@@ -24,7 +24,6 @@ import typings.std.stdStrings.WEBGL_draw_buffers
 import typings.std.stdStrings.WEBGL_lose_context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

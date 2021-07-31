@@ -2,26 +2,24 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An instance-attached disk resource.
   */
-@js.native
 trait SchemaSavedAttachedDisk extends StObject {
   
   /**
     * Specifies whether the disk will be auto-deleted when the instance is
     * deleted (but not when the disk is detached from the instance).
     */
-  var autoDelete: js.UndefOr[Boolean] = js.native
+  var autoDelete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that this is a boot disk. The virtual machine will use the
     * first partition of the disk for its root filesystem.
     */
-  var boot: js.UndefOr[Boolean] = js.native
+  var boot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies a unique device name of your choice that is reflected into the
@@ -32,7 +30,7 @@ trait SchemaSavedAttachedDisk extends StObject {
     * persistent-disks-x, where x is a number assigned by Google Compute
     * Engine. This field is only applicable for persistent disks.
     */
-  var deviceName: js.UndefOr[String] = js.native
+  var deviceName: js.UndefOr[String] = js.undefined
   
   /**
     * Encrypts or decrypts a disk using a customer-supplied encryption key.  If
@@ -50,27 +48,27 @@ trait SchemaSavedAttachedDisk extends StObject {
     * keys, so you cannot use your own keys to encrypt disks in a managed
     * instance group.
     */
-  var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * The size of the disk in base-2 GB. This supersedes disk_size_gb in
     * InitializeParams.
     */
-  var diskSizeGb: js.UndefOr[String] = js.native
+  var diskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * A list of features to enable on the guest operating system. Applicable
     * only for bootable images. Read  Enabling guest operating system features
     * to see a list of available options.
     */
-  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.undefined
   
   /**
     * [Output Only] A zero-based index to this disk, where 0 is reserved for
     * the boot disk. If you have many disks attached to an instance, each disk
     * would have a unique index number.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * [Input Only] Specifies the parameters for a new disk that will be created
@@ -79,7 +77,7 @@ trait SchemaSavedAttachedDisk extends StObject {
     * mutually exclusive with the source property; you can only define one or
     * the other, but not both.
     */
-  var initializeParams: js.UndefOr[SchemaAttachedDiskInitializeParams] = js.native
+  var initializeParams: js.UndefOr[SchemaAttachedDiskInitializeParams] = js.undefined
   
   /**
     * Specifies the disk interface to use for attaching this disk, which is
@@ -89,24 +87,24 @@ trait SchemaSavedAttachedDisk extends StObject {
     * SCSI. For performance characteristics of SCSI over NVMe, see Local SSD
     * performance.
     */
-  var interface: js.UndefOr[String] = js.native
+  var interface: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#attachedDisk for
     * attached disks.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Any valid publicly visible licenses.
     */
-  var licenses: js.UndefOr[js.Array[String]] = js.native
+  var licenses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The mode in which to attach this disk, either READ_WRITE or READ_ONLY. If
     * not specified, the default is to attach the disk in READ_WRITE mode.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * For LocalSSD disks on VM Instances in STOPPED or SUSPENDED state, this
@@ -114,7 +112,7 @@ trait SchemaSavedAttachedDisk extends StObject {
     * persistent location by customer request. (see the discard_local_ssd
     * option on Stop/Suspend). Read-only in the api.
     */
-  var savedState: js.UndefOr[String] = js.native
+  var savedState: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a valid partial or full URL to an existing Persistent Disk
@@ -125,12 +123,12 @@ trait SchemaSavedAttachedDisk extends StObject {
     * Note that for sourceMachineImage, specify the disk name, not the URL for
     * the disk.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A size of the storage used by the disk&#39;s snapshot.
     */
-  var storageBytes: js.UndefOr[String] = js.native
+  var storageBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] An indicator whether storageBytes is in a stable state or
@@ -138,13 +136,13 @@ trait SchemaSavedAttachedDisk extends StObject {
     * status can either be UPDATING, meaning the size of the snapshot is being
     * updated, or UP_TO_DATE, meaning the size of the snapshot is up-to-date.
     */
-  var storageBytesStatus: js.UndefOr[String] = js.native
+  var storageBytesStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the type of the disk, either SCRATCH or PERSISTENT. If not
     * specified, the default is PERSISTENT.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaSavedAttachedDisk {
   

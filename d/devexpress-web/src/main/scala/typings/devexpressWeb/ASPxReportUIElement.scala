@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about a UI element of the Web Report Designer or Web Document Viewer.
   */
-@js.native
 trait ASPxReportUIElement extends StObject {
   
   /**
     * Provides access to an element model.
     */
-  var model: js.Any = js.native
+  var model: js.Any
   
   /**
     * Provides access to the name of an HTML template used by an element.
     */
-  var templateName: String = js.native
+  var templateName: String
 }
 object ASPxReportUIElement {
   

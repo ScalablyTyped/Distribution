@@ -2,18 +2,16 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 参数列表 */
-@js.native
 trait UpdatableMessageFrontEndParameter extends StObject {
   
   /** 参数名 */
-  var name: String = js.native
+  var name: String
   
   /** 参数值 */
-  var value: String = js.native
+  var value: String
 }
 object UpdatableMessageFrontEndParameter {
   

@@ -3,21 +3,19 @@ package typings.awsLambda.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldName extends StObject {
   
-  var fieldName: String = js.native
+  var fieldName: String
   
-  var parentTypeName: String = js.native
+  var parentTypeName: String
   
-  var selectionSetGraphQL: String = js.native
+  var selectionSetGraphQL: String
   
-  var selectionSetList: js.Array[String] = js.native
+  var selectionSetList: js.Array[String]
   
-  var variables: StringDictionary[js.Any] = js.native
+  var variables: StringDictionary[js.Any]
 }
 object FieldName {
   

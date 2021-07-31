@@ -2,15 +2,13 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** SpeechModels. */
-@js.native
 trait SpeechModels extends StObject {
   
   /** An array of `SpeechModel` objects that provides information about each available model. */
-  var models: js.Array[SpeechModel] = js.native
+  var models: js.Array[SpeechModel]
 }
 object SpeechModels {
   

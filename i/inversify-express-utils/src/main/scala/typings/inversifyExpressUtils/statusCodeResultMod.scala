@@ -5,23 +5,34 @@ import typings.inversifyExpressUtils.httpResponseMessageMod.HttpResponseMessage
 import typings.inversifyExpressUtils.interfacesMod.interfaces.IHttpActionResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusCodeResultMod {
   
   @JSImport("inversify-express-utils/dts/results/StatusCodeResult", JSImport.Default)
   @js.native
-  class default protected () extends StatusCodeResult {
+  class default protected ()
+    extends StObject
+       with StatusCodeResult {
     def this(statusCode: Double, apiController: BaseHttpController) = this()
-  }
-  
-  @js.native
-  trait StatusCodeResult extends IHttpActionResult {
     
+    /* CompleteClass */
     var apiController: js.Any = js.native
     
+    /* CompleteClass */
+    override def executeAsync(): js.Promise[HttpResponseMessage] = js.native
+    
+    /* CompleteClass */
     var statusCode: js.Any = js.native
+  }
+  
+  trait StatusCodeResult
+    extends StObject
+       with IHttpActionResult {
+    
+    var apiController: js.Any
+    
+    var statusCode: js.Any
   }
   object StatusCodeResult {
     

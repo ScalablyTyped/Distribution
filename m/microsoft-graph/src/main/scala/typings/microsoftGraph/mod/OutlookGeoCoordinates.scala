@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlookGeoCoordinates extends StObject {
   
   /**
     * The accuracy of the latitude and longitude. As an example, the accuracy can be measured in meters, such as the latitude
     * and longitude are accurate to within 50 meters.
     */
-  var accuracy: js.UndefOr[NullableOption[Double]] = js.native
+  var accuracy: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The altitude of the location.
-  var altitude: js.UndefOr[NullableOption[Double]] = js.native
+  var altitude: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The accuracy of the altitude.
-  var altitudeAccuracy: js.UndefOr[NullableOption[Double]] = js.native
+  var altitudeAccuracy: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The latitude of the location.
-  var latitude: js.UndefOr[NullableOption[Double]] = js.native
+  var latitude: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The longitude of the location.
-  var longitude: js.UndefOr[NullableOption[Double]] = js.native
+  var longitude: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object OutlookGeoCoordinates {
   

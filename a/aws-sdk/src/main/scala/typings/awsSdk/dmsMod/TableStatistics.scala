@@ -2,106 +2,104 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableStatistics extends StObject {
   
   /**
     * The data definition language (DDL) used to build and modify the structure of your tables.
     */
-  var Ddls: js.UndefOr[Long] = js.native
+  var Ddls: js.UndefOr[Long] = js.undefined
   
   /**
     * The number of delete actions performed on a table.
     */
-  var Deletes: js.UndefOr[Long] = js.native
+  var Deletes: js.UndefOr[Long] = js.undefined
   
   /**
     * The number of rows that failed conditional checks during the full load operation (valid only for migrations where DynamoDB is the target).
     */
-  var FullLoadCondtnlChkFailedRows: js.UndefOr[Long] = js.native
+  var FullLoadCondtnlChkFailedRows: js.UndefOr[Long] = js.undefined
   
   /**
     * The time when the full load operation completed.
     */
-  var FullLoadEndTime: js.UndefOr[TStamp] = js.native
+  var FullLoadEndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The number of rows that failed to load during the full load operation (valid only for migrations where DynamoDB is the target).
     */
-  var FullLoadErrorRows: js.UndefOr[Long] = js.native
+  var FullLoadErrorRows: js.UndefOr[Long] = js.undefined
   
   /**
     * A value that indicates if the table was reloaded (true) or loaded as part of a new full load operation (false).
     */
-  var FullLoadReloaded: js.UndefOr[BooleanOptional] = js.native
+  var FullLoadReloaded: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The number of rows added during the full load operation.
     */
-  var FullLoadRows: js.UndefOr[Long] = js.native
+  var FullLoadRows: js.UndefOr[Long] = js.undefined
   
   /**
     * The time when the full load operation started.
     */
-  var FullLoadStartTime: js.UndefOr[TStamp] = js.native
+  var FullLoadStartTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The number of insert actions performed on a table.
     */
-  var Inserts: js.UndefOr[Long] = js.native
+  var Inserts: js.UndefOr[Long] = js.undefined
   
   /**
     * The last time a table was updated.
     */
-  var LastUpdateTime: js.UndefOr[TStamp] = js.native
+  var LastUpdateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The schema name.
     */
-  var SchemaName: js.UndefOr[String] = js.native
+  var SchemaName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the table.
     */
-  var TableName: js.UndefOr[String] = js.native
+  var TableName: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the tables described. Valid states: Table does not exist | Before load | Full load | Table completed | Table cancelled | Table error | Table all | Table updates | Table is being reloaded
     */
-  var TableState: js.UndefOr[String] = js.native
+  var TableState: js.UndefOr[String] = js.undefined
   
   /**
     * The number of update actions performed on a table.
     */
-  var Updates: js.UndefOr[Long] = js.native
+  var Updates: js.UndefOr[Long] = js.undefined
   
   /**
     * The number of records that failed validation.
     */
-  var ValidationFailedRecords: js.UndefOr[Long] = js.native
+  var ValidationFailedRecords: js.UndefOr[Long] = js.undefined
   
   /**
     * The number of records that have yet to be validated.
     */
-  var ValidationPendingRecords: js.UndefOr[Long] = js.native
+  var ValidationPendingRecords: js.UndefOr[Long] = js.undefined
   
   /**
     * The validation state of the table. This parameter can have the following values:   Not enabled – Validation isn't enabled for the table in the migration task.   Pending records – Some records in the table are waiting for validation.   Mismatched records – Some records in the table don't match between the source and target.   Suspended records – Some records in the table couldn't be validated.   No primary key –The table couldn't be validated because it has no primary key.   Table error – The table wasn't validated because it's in an error state and some data wasn't migrated.   Validated – All rows in the table are validated. If the table is updated, the status can change from Validated.   Error – The table couldn't be validated because of an unexpected error.   Pending validation – The table is waiting validation.   Preparing table – Preparing the table enabled in the migration task for validation.   Pending revalidation – All rows in the table are pending validation after the table was updated.  
     */
-  var ValidationState: js.UndefOr[String] = js.native
+  var ValidationState: js.UndefOr[String] = js.undefined
   
   /**
     * Additional details about the state of validation.
     */
-  var ValidationStateDetails: js.UndefOr[String] = js.native
+  var ValidationStateDetails: js.UndefOr[String] = js.undefined
   
   /**
     * The number of records that couldn't be validated.
     */
-  var ValidationSuspendedRecords: js.UndefOr[Long] = js.native
+  var ValidationSuspendedRecords: js.UndefOr[Long] = js.undefined
 }
 object TableStatistics {
   

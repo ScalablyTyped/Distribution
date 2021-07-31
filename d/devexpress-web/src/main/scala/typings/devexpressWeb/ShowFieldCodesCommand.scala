@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to display the selected field's field codes.
   */
 @js.native
-trait ShowFieldCodesCommand extends CommandWithSimpleStateBase {
+trait ShowFieldCodesCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the ShowFieldCodesCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.

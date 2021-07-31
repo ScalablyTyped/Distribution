@@ -2,37 +2,35 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableViewSaveInfo...
   */
-@js.native
 trait ITableViewSaveInfo extends StObject {
   
   /**
     * List of the broom points in the database model viewer.
     * Not used in Qlik Sense.
     */
-  var qBroomPoints: js.Array[ITableViewBroomPointSaveInfo] = js.native
+  var qBroomPoints: js.Array[ITableViewBroomPointSaveInfo]
   
   /**
     * List of connection points in the database model viewer.
     * Not used in Qlik Sense.
     */
-  var qConnectionPoints: js.Array[ITableViewConnectionPointSaveInfo] = js.native
+  var qConnectionPoints: js.Array[ITableViewConnectionPointSaveInfo]
   
   /**
     * List of the tables in the database model viewer.
     */
-  var qTables: js.Array[ITableViewTableWinSaveInfo] = js.native
+  var qTables: js.Array[ITableViewTableWinSaveInfo]
   
   /**
     * Zoom factor in the database model viewer.
     * The default value is 1.0.
     */
-  var qZoomFactor: Double = js.native
+  var qZoomFactor: Double
 }
 object ITableViewSaveInfo {
   

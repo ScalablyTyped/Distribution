@@ -3,20 +3,18 @@ package typings.openpgp.anon
 import typings.openpgp.mod.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined openpgp.openpgp.EncryptResult & {  data :string | openpgp.openpgp.ReadableStream<std.String>,   message :openpgp.openpgp.message.Message,   signature :string | openpgp.openpgp.ReadableStream<std.String> | openpgp.openpgp.signature.Signature} */
-@js.native
 trait EncryptResultdatastringRe extends StObject {
   
-  var data: String | ReadableStream[String] = js.native
+  var data: String | ReadableStream[String]
   
-  var message: typings.openpgp.mod.message.Message = js.native
+  var message: typings.openpgp.mod.message.Message
   
-  var sessionKey: AeadAlgorithm = js.native
+  var sessionKey: AeadAlgorithm
   
-  var signature: String | ReadableStream[String] | typings.openpgp.mod.signature.Signature = js.native
+  var signature: String | ReadableStream[String] | typings.openpgp.mod.signature.Signature
 }
 object EncryptResultdatastringRe {
   

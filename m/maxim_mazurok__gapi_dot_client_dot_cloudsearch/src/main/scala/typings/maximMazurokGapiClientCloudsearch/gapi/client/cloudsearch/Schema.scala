@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schema extends StObject {
   
   /** The list of top-level objects for the data source. The maximum number of elements is 10. */
-  var objectDefinitions: js.UndefOr[js.Array[ObjectDefinition]] = js.native
+  var objectDefinitions: js.UndefOr[js.Array[ObjectDefinition]] = js.undefined
   
   /** IDs of the Long Running Operations (LROs) currently running for this schema. After modifying the schema, wait for operations to complete before indexing additional content. */
-  var operationIds: js.UndefOr[js.Array[String]] = js.native
+  var operationIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Schema {
   

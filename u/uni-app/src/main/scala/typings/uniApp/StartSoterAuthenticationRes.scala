@@ -2,31 +2,29 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartSoterAuthenticationRes extends StObject {
   
   /**
     * 生物认证方式
     */
-  var authMode: js.UndefOr[String] = js.native
+  var authMode: js.UndefOr[String] = js.undefined
   
   /**
     * 错误码
     */
-  var errCode: js.UndefOr[Double] = js.native
+  var errCode: js.UndefOr[Double] = js.undefined
   
   /**
     * 接口调用结果
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
   
   /**
     * 在设备安全区域（TEE）内获得的本机安全信息以及本次认证信息
     */
-  var resultJSON: js.UndefOr[String] = js.native
+  var resultJSON: js.UndefOr[String] = js.undefined
 }
 object StartSoterAuthenticationRes {
   

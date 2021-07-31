@@ -2,25 +2,23 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of stack frames, which can be truncated.
   */
-@js.native
 trait SchemaStackFrames extends StObject {
   
   /**
     * The number of stack frames that were dropped because there were too many
     * stack frames. If this value is 0, then no stack frames were dropped.
     */
-  var droppedFramesCount: js.UndefOr[Double] = js.native
+  var droppedFramesCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Stack frames in this call stack.
     */
-  var frame: js.UndefOr[js.Array[SchemaStackFrame]] = js.native
+  var frame: js.UndefOr[js.Array[SchemaStackFrame]] = js.undefined
 }
 object SchemaStackFrames {
   

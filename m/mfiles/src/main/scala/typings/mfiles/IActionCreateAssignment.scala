@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionCreateAssignment extends StObject {
   
-  var AssignedTo: IUserOrUserGroupIDExs = js.native
+  var AssignedTo: IUserOrUserGroupIDExs
   
-  def Clone(): IActionCreateAssignment = js.native
+  def Clone(): IActionCreateAssignment
   
-  var Deadline: Boolean = js.native
+  var Deadline: Boolean
   
-  var DeadlineInDays: Double = js.native
+  var DeadlineInDays: Double
   
-  var Description: String = js.native
+  var Description: String
   
-  var MonitoredBy: IUserOrUserGroupIDExs = js.native
+  var MonitoredBy: IUserOrUserGroupIDExs
   
-  var Title: String = js.native
+  var Title: String
 }
 object IActionCreateAssignment {
   

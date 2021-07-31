@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestionQuery extends StObject {
   
   /**
     * Defines a property name hint. Only property names that begin with the specified hint are included in the response.
     */
-  var PropertyNameQuery: js.UndefOr[typings.awsSdk.sagemakerMod.PropertyNameQuery] = js.native
+  var PropertyNameQuery: js.UndefOr[typings.awsSdk.sagemakerMod.PropertyNameQuery] = js.undefined
 }
 object SuggestionQuery {
   

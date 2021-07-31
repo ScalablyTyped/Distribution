@@ -5,18 +5,42 @@ import typings.ionicCore.animationInterfaceMod.AnimationBuilder
 import typings.ionicCore.mod.ComponentProps
 import typings.ionicCore.routeInterfaceMod.NavigationHookCallback
 import typings.ionicCore.routeInterfaceMod.NavigationHookResult
+import typings.std.AddEventListenerOptions
+import typings.std.DocumentAndElementEventHandlers
+import typings.std.Element
+import typings.std.ElementCSSInlineStyle
+import typings.std.ElementContentEditable
+import typings.std.EventListenerOptions
+import typings.std.EventListenerOrEventListenerObject
+import typings.std.GlobalEventHandlers
 import typings.std.HTMLElement
+import typings.std.HTMLOrSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfaceMod {
   
   @js.native
-  trait HTMLStencilElement extends HTMLElement {
+  trait HTMLStencilElement
+    extends StObject
+       with HTMLElement {
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     
     def componentOnReady(): js.Promise[this.type] = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
   }
   
   @js.native
@@ -24,33 +48,93 @@ object interfaceMod {
     
     def getRouteId(): js.Promise[js.UndefOr[RouteID]] = js.native
     
-    def setRouteId(id: String, params: js.UndefOr[scala.Nothing], direction: RouterDirection): js.Promise[RouteWrite] = js.native
-    def setRouteId(
-      id: String,
-      params: js.UndefOr[scala.Nothing],
-      direction: RouterDirection,
-      animation: AnimationBuilder
-    ): js.Promise[RouteWrite] = js.native
+    def setRouteId(id: String, params: Unit, direction: RouterDirection): js.Promise[RouteWrite] = js.native
+    def setRouteId(id: String, params: Unit, direction: RouterDirection, animation: AnimationBuilder): js.Promise[RouteWrite] = js.native
     def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection): js.Promise[RouteWrite] = js.native
     def setRouteId(id: String, params: ComponentProps[Null], direction: RouterDirection, animation: AnimationBuilder): js.Promise[RouteWrite] = js.native
   }
   
-  type NavOutletElement = NavOutlet with HTMLStencilElement
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - typings.std.HTMLElement because Inheritance from two classes. Inlined accessKeyLabel, offsetWidth, accessKey, spellcheck, offsetTop, innerText, offsetLeft, offsetParent, lang, translate, autocapitalize, dir, draggable, hidden, title, offsetHeight, click, addEventListener, addEventListener, removeEventListener, removeEventListener, addEventListener, removeEventListener
+  - typings.ionicCore.interfaceMod.HTMLStencilElement because Inheritance from two classes. Inlined componentOnReady */ @js.native
+  trait NavOutletElement
+    extends StObject
+       with NavOutlet
+       with Element
+       with DocumentAndElementEventHandlers
+       with ElementCSSInlineStyle
+       with ElementContentEditable
+       with GlobalEventHandlers
+       with HTMLOrSVGElement {
+    
+    var accessKey: String = js.native
+    
+    val accessKeyLabel: String = js.native
+    
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def addEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
+    
+    var autocapitalize: String = js.native
+    
+    def click(): Unit = js.native
+    
+    def componentOnReady(): js.Promise[this.type] = js.native
+    
+    var dir: String = js.native
+    
+    var draggable: Boolean = js.native
+    
+    var hidden: Boolean = js.native
+    
+    var innerText: String = js.native
+    
+    var lang: String = js.native
+    
+    val offsetHeight: Double = js.native
+    
+    val offsetLeft: Double = js.native
+    
+    val offsetParent: Element | Null = js.native
+    
+    val offsetTop: Double = js.native
+    
+    val offsetWidth: Double = js.native
+    
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: Boolean): Unit = js.native
+    /* InferMemberOverrides */
+    override def removeEventListener(`type`: String, callback: EventListenerOrEventListenerObject, options: EventListenerOptions): Unit = js.native
+    
+    var spellcheck: Boolean = js.native
+    
+    var title: String = js.native
+    
+    var translate: Boolean = js.native
+  }
   
   type RouteChain = js.Array[RouteEntry]
   
-  @js.native
   trait RouteEntry extends StObject {
     
-    var beforeEnter: js.UndefOr[NavigationHookCallback] = js.native
+    var beforeEnter: js.UndefOr[NavigationHookCallback] = js.undefined
     
-    var beforeLeave: js.UndefOr[NavigationHookCallback] = js.native
+    var beforeLeave: js.UndefOr[NavigationHookCallback] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var path: js.Array[String] = js.native
+    var path: js.Array[String]
   }
   object RouteEntry {
     
@@ -92,14 +176,13 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait RouteID extends StObject {
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object RouteID {
     
@@ -129,10 +212,11 @@ object interfaceMod {
     }
   }
   
-  @js.native
-  trait RouteNode extends RouteEntry {
+  trait RouteNode
+    extends StObject
+       with RouteEntry {
     
-    var children: RouteTree = js.native
+    var children: RouteTree
   }
   object RouteNode {
     
@@ -153,12 +237,11 @@ object interfaceMod {
     }
   }
   
-  @js.native
   trait RouteRedirect extends StObject {
     
-    var from: js.Array[String] = js.native
+    var from: js.Array[String]
     
-    var to: js.UndefOr[js.Array[String]] = js.native
+    var to: js.UndefOr[js.Array[String]] = js.undefined
   }
   object RouteRedirect {
     
@@ -190,14 +273,13 @@ object interfaceMod {
   
   type RouteTree = js.Array[RouteNode]
   
-  @js.native
   trait RouteWrite extends StObject {
     
-    var changed: Boolean = js.native
+    var changed: Boolean
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var markVisible: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.native
+    var markVisible: js.UndefOr[js.Function0[Unit | js.Promise[Unit]]] = js.undefined
   }
   object RouteWrite {
     
@@ -245,20 +327,19 @@ object interfaceMod {
     def root: typings.ionicCore.ionicCoreStrings.root = "root".asInstanceOf[typings.ionicCore.ionicCoreStrings.root]
   }
   
-  @js.native
   trait RouterEventDetail extends StObject {
     
-    var from: String | Null = js.native
+    var from: String | Null
     
-    var redirectedFrom: String | Null = js.native
+    var redirectedFrom: String | Null
     
-    var to: String = js.native
+    var to: String
   }
   object RouterEventDetail {
     
     @scala.inline
     def apply(to: String): RouterEventDetail = {
-      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(to = to.asInstanceOf[js.Any], from = null, redirectedFrom = null)
       __obj.asInstanceOf[RouterEventDetail]
     }
     

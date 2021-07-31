@@ -2,25 +2,24 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThrowStatement
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Statement {
   
-  var argument: Expression = js.native
+  var argument: Expression
   
   @JSName("type")
-  var type_ThrowStatement: typings.estree.estreeStrings.ThrowStatement = js.native
+  var type_ThrowStatement: typings.estree.estreeStrings.ThrowStatement
 }
 object ThrowStatement {
   
   @scala.inline
-  def apply(argument: Expression, `type`: typings.estree.estreeStrings.ThrowStatement): ThrowStatement = {
+  def apply(argument: Expression): ThrowStatement = {
     val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ThrowStatement")
     __obj.asInstanceOf[ThrowStatement]
   }
   

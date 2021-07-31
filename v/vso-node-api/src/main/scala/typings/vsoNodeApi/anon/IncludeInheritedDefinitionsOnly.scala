@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IncludeInheritedDefinitionsOnly extends StObject {
   
-  var includeInheritedDefinitionsOnly: scala.Double = js.native
+  var includeInheritedDefinitionsOnly: scala.Double
   
-  var includeLastUserAccess: scala.Double = js.native
+  var includeLastUserAccess: scala.Double
   
-  var includeNonInheritedDefinitionsOnly: scala.Double = js.native
+  var includeNonInheritedDefinitionsOnly: scala.Double
   
-  var includeServices: scala.Double = js.native
+  var includeServices: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
 }
 object IncludeInheritedDefinitionsOnly {
   

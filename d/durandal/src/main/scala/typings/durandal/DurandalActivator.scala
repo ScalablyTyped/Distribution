@@ -2,7 +2,6 @@ package typings.durandal
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -70,7 +69,7 @@ trait DurandalActivator[T] extends StObject {
   /**
     * Sets up a collection representing a pool of objects which the activator will activate. See below for details. Activators without an item bool always close their values on deactivate. Activators with an items pool only deactivate, but do not close them.
     */
-  def forItems(items: js.Array[_]): DurandalActivator[T] = js.native
+  def forItems(items: js.Array[js.Any]): DurandalActivator[T] = js.native
   
   /**
     * Adds canActivate, activate, canDeactivate and deactivate functions to the provided model which pass through to the corresponding functions on the activator.

@@ -5,42 +5,40 @@ import typings.pulumiAws.inputMod.ec2.GetNetworkAclsFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getNetworkAclsMod {
   
-  @JSImport("@pulumi/aws/ec2/getNetworkAcls", "getNetworkAcls")
+  @JSImport("@pulumi/aws/ec2/getNetworkAcls", JSImport.Namespace)
   @js.native
-  def getNetworkAcls(): js.Promise[GetNetworkAclsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkAcls", "getNetworkAcls")
-  @js.native
-  def getNetworkAcls(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetNetworkAclsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkAcls", "getNetworkAcls")
-  @js.native
-  def getNetworkAcls(args: GetNetworkAclsArgs): js.Promise[GetNetworkAclsResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkAcls", "getNetworkAcls")
-  @js.native
-  def getNetworkAcls(args: GetNetworkAclsArgs, opts: InvokeOptions): js.Promise[GetNetworkAclsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getNetworkAcls(): js.Promise[GetNetworkAclsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkAcls")().asInstanceOf[js.Promise[GetNetworkAclsResult]]
+  @scala.inline
+  def getNetworkAcls(args: Unit, opts: InvokeOptions): js.Promise[GetNetworkAclsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkAcls")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkAclsResult]]
+  @scala.inline
+  def getNetworkAcls(args: GetNetworkAclsArgs): js.Promise[GetNetworkAclsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkAcls")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNetworkAclsResult]]
+  @scala.inline
+  def getNetworkAcls(args: GetNetworkAclsArgs, opts: InvokeOptions): js.Promise[GetNetworkAclsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkAcls")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkAclsResult]]
+  
   trait GetNetworkAclsArgs extends StObject {
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetNetworkAclsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetNetworkAclsFilter]] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired network ACLs.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The VPC ID that you want to filter from.
       */
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetNetworkAclsArgs {
     
@@ -76,24 +74,23 @@ object getNetworkAclsMod {
     }
   }
   
-  @js.native
   trait GetNetworkAclsResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkAclsFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkAclsFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * A list of all the network ACL ids found. This data source will fail if none are found.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: js.UndefOr[String] = js.native
+    val vpcId: js.UndefOr[String] = js.undefined
   }
   object GetNetworkAclsResult {
     

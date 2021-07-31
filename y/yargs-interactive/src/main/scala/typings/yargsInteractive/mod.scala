@@ -17,31 +17,32 @@ import typings.yargsInteractive.yargsInteractiveStrings.password
 import typings.yargsInteractive.yargsInteractiveStrings.rawlist
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Interactive = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Interactive]
+  
   @JSImport("yargs-interactive", JSImport.Namespace)
   @js.native
-  def apply(): Interactive = js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv * / any */ @js.native
-  trait Interactive extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Argv * / any */ trait Interactive extends StObject {
     
-    def interactive(options: Option): Interactive = js.native
+    def interactive(options: Option): Interactive
     
-    def `then`(callback: js.Function1[/* result */ js.Any, _]): Interactive = js.native
+    def `then`(callback: js.Function1[/* result */ js.Any, js.Any]): Interactive
     
-    def usage(usage: String): Interactive = js.native
+    def usage(usage: String): Interactive
   }
   object Interactive {
     
     @scala.inline
     def apply(
       interactive: Option => Interactive,
-      `then`: js.Function1[/* result */ js.Any, _] => Interactive,
+      `then`: js.Function1[/* result */ js.Any, js.Any] => Interactive,
       usage: String => Interactive
     ): Interactive = {
       val __obj = js.Dynamic.literal(interactive = js.Any.fromFunction1(interactive), usage = js.Any.fromFunction1(usage))
@@ -56,7 +57,7 @@ object mod {
       def setInteractive(value: Option => Interactive): Self = StObject.set(x, "interactive", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setThen(value: js.Function1[/* result */ js.Any, _] => Interactive): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      def setThen(value: js.Function1[/* result */ js.Any, js.Any] => Interactive): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
       
       @scala.inline
       def setUsage(value: String => Interactive): Self = StObject.set(x, "usage", js.Any.fromFunction1(value))
@@ -65,18 +66,17 @@ object mod {
   
   type Option = StringDictionary[OptionData | Default]
   
-  @js.native
   trait OptionData extends StObject {
     
-    var default: js.UndefOr[String | Double | Boolean | js.Array[_]] = js.native
+    var default: js.UndefOr[String | Double | Boolean | js.Array[js.Any]] = js.undefined
     
-    var choices: js.UndefOr[js.Array[String]] = js.native
+    var choices: js.UndefOr[js.Array[String]] = js.undefined
     
-    var describe: String = js.native
+    var describe: String
     
-    var prompt: js.UndefOr[always | never | `if-no-arg` | `if-empty`] = js.native
+    var prompt: js.UndefOr[always | never | `if-no-arg` | `if-empty`] = js.undefined
     
-    var `type`: input | number | confirm | list | rawlist | expand | checkbox | password | editor = js.native
+    var `type`: input | number | confirm | list | rawlist | expand | checkbox | password | editor
   }
   object OptionData {
     
@@ -103,7 +103,7 @@ object mod {
       def setChoicesVarargs(value: String*): Self = StObject.set(x, "choices", js.Array(value :_*))
       
       @scala.inline
-      def setDefault(value: String | Double | Boolean | js.Array[_]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      def setDefault(value: String | Double | Boolean | js.Array[js.Any]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)

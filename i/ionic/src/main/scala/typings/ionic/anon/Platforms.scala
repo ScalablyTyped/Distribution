@@ -3,15 +3,13 @@ package typings.ionic.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Platforms extends StObject {
   
-  var platforms: js.Array[String] = js.native
+  var platforms: js.Array[String]
   
-  var plugins: StringDictionary[js.Any] = js.native
+  var plugins: StringDictionary[js.Any]
 }
 object Platforms {
   

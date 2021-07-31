@@ -3,39 +3,38 @@ package typings.reactLeaflet.mod
 import typings.leaflet.mod.CrossOrigin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.leaflet.mod.GridLayerOptions because Already inherited
-- typings.leaflet.mod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined minNativeZoom, zoomOffset, errorTileUrl, maxNativeZoom, zoomReverse, subdomains, id, tms, accessToken, crossOrigin, detectRetina */ @js.native
-trait TileLayerProps
-  extends GridLayerProps
+- typings.leaflet.mod.TileLayerOptions because var conflicts: attribution, bounds, className, keepBuffer, maxZoom, minZoom, noWrap, opacity, pane, tileSize, updateInterval, updateWhenIdle, updateWhenZooming, zIndex. Inlined minNativeZoom, zoomOffset, errorTileUrl, maxNativeZoom, zoomReverse, subdomains, id, tms, accessToken, crossOrigin, detectRetina */ trait TileLayerProps
+  extends StObject
+     with GridLayerProps
      with TileLayerEvents {
   
-  var accessToken: js.UndefOr[String] = js.native
+  var accessToken: js.UndefOr[String] = js.undefined
   
-  var crossOrigin: js.UndefOr[CrossOrigin] = js.native
+  var crossOrigin: js.UndefOr[CrossOrigin] = js.undefined
   
-  var detectRetina: js.UndefOr[Boolean] = js.native
+  var detectRetina: js.UndefOr[Boolean] = js.undefined
   
-  var errorTileUrl: js.UndefOr[String] = js.native
+  var errorTileUrl: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var maxNativeZoom: js.UndefOr[Double] = js.native
+  var maxNativeZoom: js.UndefOr[Double] = js.undefined
   
-  var minNativeZoom: js.UndefOr[Double] = js.native
+  var minNativeZoom: js.UndefOr[Double] = js.undefined
   
-  var subdomains: js.UndefOr[String | js.Array[String]] = js.native
+  var subdomains: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var tms: js.UndefOr[Boolean] = js.native
+  var tms: js.UndefOr[Boolean] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var zoomOffset: js.UndefOr[Double] = js.native
+  var zoomOffset: js.UndefOr[Double] = js.undefined
   
-  var zoomReverse: js.UndefOr[Boolean] = js.native
+  var zoomReverse: js.UndefOr[Boolean] = js.undefined
 }
 object TileLayerProps {
   

@@ -2,16 +2,14 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionInfo extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/extension-info
-  var name: String = js.native
+  var name: String
   
-  var version: String = js.native
+  var version: String
 }
 object ExtensionInfo {
   

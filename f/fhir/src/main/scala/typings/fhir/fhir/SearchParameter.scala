@@ -2,235 +2,235 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Search Parameter for a resource
   */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fhir.fhir.Resource because Already inherited */ @js.native
-trait SearchParameter extends DomainResource {
+- typings.fhir.fhir.Resource because Already inherited */ trait SearchParameter
+  extends StObject
+     with DomainResource {
   
   /**
     * Contains extended information for property 'base'.
     */
-  var _base: js.UndefOr[js.Array[Element]] = js.native
+  var _base: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'chain'.
     */
-  var _chain: js.UndefOr[js.Array[Element]] = js.native
+  var _chain: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'code'.
     */
-  var _code: js.UndefOr[Element] = js.native
+  var _code: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'comparator'.
     */
-  var _comparator: js.UndefOr[js.Array[Element]] = js.native
+  var _comparator: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'date'.
     */
-  var _date: js.UndefOr[Element] = js.native
+  var _date: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'derivedFrom'.
     */
-  var _derivedFrom: js.UndefOr[Element] = js.native
+  var _derivedFrom: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'experimental'.
     */
-  var _experimental: js.UndefOr[Element] = js.native
+  var _experimental: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'expression'.
     */
-  var _expression: js.UndefOr[Element] = js.native
+  var _expression: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'modifier'.
     */
-  var _modifier: js.UndefOr[js.Array[Element]] = js.native
+  var _modifier: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'publisher'.
     */
-  var _publisher: js.UndefOr[Element] = js.native
+  var _publisher: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'purpose'.
     */
-  var _purpose: js.UndefOr[Element] = js.native
+  var _purpose: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'target'.
     */
-  var _target: js.UndefOr[js.Array[Element]] = js.native
+  var _target: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'xpath'.
     */
-  var _xpath: js.UndefOr[Element] = js.native
+  var _xpath: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'xpathUsage'.
     */
-  var _xpathUsage: js.UndefOr[Element] = js.native
+  var _xpathUsage: js.UndefOr[Element] = js.undefined
   
   /**
     * The resource type(s) this search parameter applies to
     */
-  var base: js.Array[code] = js.native
+  var base: js.Array[code]
   
   /**
     * Chained names supported
     */
-  var chain: js.UndefOr[js.Array[String]] = js.native
+  var chain: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Code used in URL
     */
-  var code: typings.fhir.fhir.code = js.native
+  var code: typings.fhir.fhir.code
   
   /**
     * eq | ne | gt | lt | ge | le | sa | eb | ap
     */
-  var comparator: js.UndefOr[js.Array[code]] = js.native
+  var comparator: js.UndefOr[js.Array[code]] = js.undefined
   
   /**
     * For Composite resources to define the parts
     */
-  var component: js.UndefOr[js.Array[SearchParameterComponent]] = js.native
+  var component: js.UndefOr[js.Array[SearchParameterComponent]] = js.undefined
   
   /**
     * Contact details for the publisher
     */
-  var contact: js.UndefOr[js.Array[ContactDetail]] = js.native
+  var contact: js.UndefOr[js.Array[ContactDetail]] = js.undefined
   
   /**
     * Date this was last changed
     */
-  var date: js.UndefOr[dateTime] = js.native
+  var date: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Original Definition for the search parameter
     */
-  var derivedFrom: js.UndefOr[uri] = js.native
+  var derivedFrom: js.UndefOr[uri] = js.undefined
   
   /**
     * Natural language description of the search parameter
     */
-  var description: markdown = js.native
+  var description: markdown
   
   /**
     * For testing purposes, not real usage
     */
-  var experimental: js.UndefOr[Boolean] = js.native
+  var experimental: js.UndefOr[Boolean] = js.undefined
   
   /**
     * FHIRPath expression that extracts the values
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /**
     * Intended jurisdiction for search parameter (if applicable)
     */
-  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var jurisdiction: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * missing | exact | contains | not | text | in | not-in | below | above | type
     */
-  var modifier: js.UndefOr[js.Array[code]] = js.native
+  var modifier: js.UndefOr[js.Array[code]] = js.undefined
   
   /**
     * Name for this search parameter (computer friendly)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Name of the publisher (organization or individual)
     */
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
   /**
     * Why this search parameter is defined
     */
-  var purpose: js.UndefOr[markdown] = js.native
+  var purpose: js.UndefOr[markdown] = js.undefined
   
   /**
     * draft | active | retired | unknown
     */
-  var status: code = js.native
+  var status: code
   
   /**
     * Types of resource (if a resource reference)
     */
-  var target: js.UndefOr[js.Array[code]] = js.native
+  var target: js.UndefOr[js.Array[code]] = js.undefined
   
   /**
     * number | date | string | token | reference | composite | quantity | uri
     */
-  var `type`: code = js.native
+  var `type`: code
   
   /**
     * Logical URI to reference this search parameter (globally unique)
     */
-  var url: uri = js.native
+  var url: uri
   
   /**
     * Context the content is intended to support
     */
-  var useContext: js.UndefOr[js.Array[UsageContext]] = js.native
+  var useContext: js.UndefOr[js.Array[UsageContext]] = js.undefined
   
   /**
     * Business version of the search parameter
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   /**
     * XPath that extracts the values
     */
-  var xpath: js.UndefOr[String] = js.native
+  var xpath: js.UndefOr[String] = js.undefined
   
   /**
     * normal | phonetic | nearby | distance | other
     */
-  var xpathUsage: js.UndefOr[code] = js.native
+  var xpathUsage: js.UndefOr[code] = js.undefined
 }
 object SearchParameter {
   

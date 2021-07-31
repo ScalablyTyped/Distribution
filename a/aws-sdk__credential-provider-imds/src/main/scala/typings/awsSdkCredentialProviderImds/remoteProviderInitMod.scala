@@ -2,10 +2,13 @@ package typings.awsSdkCredentialProviderImds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object remoteProviderInitMod {
+  
+  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit", "DEFAULT_MAX_RETRIES")
   @js.native
@@ -15,22 +18,20 @@ object remoteProviderInitMod {
   @js.native
   val DEFAULT_TIMEOUT: /* 1000 */ Double = js.native
   
-  @JSImport("@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit", "providerConfigFromInit")
-  @js.native
-  def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = js.native
+  @scala.inline
+  def providerConfigFromInit(hasMaxRetriesTimeout: RemoteProviderInit): RemoteProviderConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("providerConfigFromInit")(hasMaxRetriesTimeout.asInstanceOf[js.Any]).asInstanceOf[RemoteProviderConfig]
   
-  @js.native
   trait RemoteProviderConfig extends StObject {
     
     /**
       * The maximum number of times the HTTP connection should be retried
       */
-    var maxRetries: Double = js.native
+    var maxRetries: Double
     
     /**
       * The connection timeout (in milliseconds)
       */
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object RemoteProviderConfig {
     
@@ -52,12 +53,11 @@ object remoteProviderInitMod {
   }
   
   /* Inlined std.Partial<@aws-sdk/credential-provider-imds.@aws-sdk/credential-provider-imds/dist/cjs/remoteProvider/RemoteProviderInit.RemoteProviderConfig> */
-  @js.native
   trait RemoteProviderInit extends StObject {
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object RemoteProviderInit {
     

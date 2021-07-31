@@ -2,21 +2,19 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentFilter extends StObject {
   
   /**
     * The detailed health state of the agent. Values can be set to IDLE, RUNNING, SHUTDOWN, UNHEALTHY, THROTTLED, and UNKNOWN. 
     */
-  var agentHealthCodes: AgentHealthCodeList = js.native
+  var agentHealthCodes: AgentHealthCodeList
   
   /**
     * The current health state of the agent. Values can be set to HEALTHY or UNHEALTHY.
     */
-  var agentHealths: AgentHealthList = js.native
+  var agentHealths: AgentHealthList
 }
 object AgentFilter {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.CellAreaLinks
   * @see com.sun.star.sheet.CellAreaLink
   */
-@js.native
-trait XAreaLinks extends XIndexAccess {
+trait XAreaLinks
+  extends StObject
+     with XIndexAccess {
   
   /**
     * creates an area link and adds it to the collection.
@@ -30,10 +30,10 @@ trait XAreaLinks extends XIndexAccess {
     aSourceArea: String,
     aFilter: String,
     aFilterOptions: String
-  ): Unit = js.native
+  ): Unit
   
   /** removes an area link from the collection. */
-  def removeByIndex(nIndex: Double): Unit = js.native
+  def removeByIndex(nIndex: Double): Unit
 }
 object XAreaLinks {
   

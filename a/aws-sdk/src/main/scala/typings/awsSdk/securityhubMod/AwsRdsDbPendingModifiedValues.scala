@@ -2,86 +2,84 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsDbPendingModifiedValues extends StObject {
   
   /**
     * 
     */
-  var AllocatedStorage: js.UndefOr[Integer] = js.native
+  var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var BackupRetentionPeriod: js.UndefOr[Integer] = js.native
+  var BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var CaCertificateIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var CaCertificateIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var DbInstanceClass: js.UndefOr[NonEmptyString] = js.native
+  var DbInstanceClass: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.native
+  var DbInstanceIdentifier: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var DbSubnetGroupName: js.UndefOr[NonEmptyString] = js.native
+  var DbSubnetGroupName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var EngineVersion: js.UndefOr[NonEmptyString] = js.native
+  var EngineVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var Iops: js.UndefOr[Integer] = js.native
+  var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var LicenseModel: js.UndefOr[NonEmptyString] = js.native
+  var LicenseModel: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var MasterUserPassword: js.UndefOr[NonEmptyString] = js.native
+  var MasterUserPassword: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * 
     */
-  var MultiAZ: js.UndefOr[Boolean] = js.native
+  var MultiAZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 
     */
-  var PendingCloudWatchLogsExports: js.UndefOr[AwsRdsPendingCloudWatchLogsExports] = js.native
+  var PendingCloudWatchLogsExports: js.UndefOr[AwsRdsPendingCloudWatchLogsExports] = js.undefined
   
   /**
     * 
     */
-  var Port: js.UndefOr[Integer] = js.native
+  var Port: js.UndefOr[Integer] = js.undefined
   
   /**
     * 
     */
-  var ProcessorFeatures: js.UndefOr[AwsRdsDbProcessorFeatures] = js.native
+  var ProcessorFeatures: js.UndefOr[AwsRdsDbProcessorFeatures] = js.undefined
   
   /**
     * 
     */
-  var StorageType: js.UndefOr[NonEmptyString] = js.native
+  var StorageType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRdsDbPendingModifiedValues {
   

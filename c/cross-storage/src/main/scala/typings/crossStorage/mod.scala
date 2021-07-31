@@ -3,7 +3,6 @@ package typings.crossStorage
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,8 +42,8 @@ object mod {
       * single argument. Otherwise it's resolved with an array of values. On failure, it is rejected with 
       * the corresponding error message.
       */
-    def get(key: String): js.Promise[_] = js.native
-    def get(keys: String*): js.Promise[js.Array[_]] = js.native
+    def get(key: String): js.Promise[js.Any] = js.native
+    def get(keys: String*): js.Promise[js.Array[js.Any]] = js.native
     
     /**
       * Returns a promise that, when resolved, passes an array of keys currently in storage.
@@ -72,6 +71,10 @@ object mod {
   /* static members */
   object CrossStorageHub {
     
+    @JSImport("cross-storage", "CrossStorageHub")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Accepts an array of objects with two keys: origin and allow. The value of origin is expected to be 
       * a RegExp, and allow, an array of strings. The cross storage hub is then initialized to accept requests 
@@ -79,19 +82,17 @@ object mod {
       * include any of: get, set, del, getKeys and clear. A 'ready' message is sent to the parent window once 
       * complete.
       */
-    @JSImport("cross-storage", "CrossStorageHub.init")
-    @js.native
-    def init(subdomains: js.Array[SubDomain]): Unit = js.native
+    @scala.inline
+    def init(subdomains: js.Array[SubDomain]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(subdomains.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait CrossStorageClientOptions extends StObject {
     
-    var frameId: js.UndefOr[String] = js.native
+    var frameId: js.UndefOr[String] = js.undefined
     
-    var promise: js.UndefOr[js.Any] = js.native
+    var promise: js.UndefOr[js.Any] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object CrossStorageClientOptions {
     
@@ -150,12 +151,11 @@ object mod {
     def set: typings.crossStorage.crossStorageStrings.set = "set".asInstanceOf[typings.crossStorage.crossStorageStrings.set]
   }
   
-  @js.native
   trait SubDomain extends StObject {
     
-    var allow: js.Array[CrossStorageMethod] = js.native
+    var allow: js.Array[CrossStorageMethod]
     
-    var origin: RegExp = js.native
+    var origin: RegExp
   }
   object SubDomain {
     

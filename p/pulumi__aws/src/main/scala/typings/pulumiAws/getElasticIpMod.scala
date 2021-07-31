@@ -5,46 +5,44 @@ import typings.pulumiAws.inputMod.GetElasticIpFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getElasticIpMod {
   
-  @JSImport("@pulumi/aws/getElasticIp", "getElasticIp")
+  @JSImport("@pulumi/aws/getElasticIp", JSImport.Namespace)
   @js.native
-  def getElasticIp(): js.Promise[GetElasticIpResult] = js.native
-  @JSImport("@pulumi/aws/getElasticIp", "getElasticIp")
-  @js.native
-  def getElasticIp(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetElasticIpResult] = js.native
-  @JSImport("@pulumi/aws/getElasticIp", "getElasticIp")
-  @js.native
-  def getElasticIp(args: GetElasticIpArgs): js.Promise[GetElasticIpResult] = js.native
-  @JSImport("@pulumi/aws/getElasticIp", "getElasticIp")
-  @js.native
-  def getElasticIp(args: GetElasticIpArgs, opts: InvokeOptions): js.Promise[GetElasticIpResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getElasticIp(): js.Promise[GetElasticIpResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")().asInstanceOf[js.Promise[GetElasticIpResult]]
+  @scala.inline
+  def getElasticIp(args: Unit, opts: InvokeOptions): js.Promise[GetElasticIpResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetElasticIpResult]]
+  @scala.inline
+  def getElasticIp(args: GetElasticIpArgs): js.Promise[GetElasticIpResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetElasticIpResult]]
+  @scala.inline
+  def getElasticIp(args: GetElasticIpArgs, opts: InvokeOptions): js.Promise[GetElasticIpResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getElasticIp")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetElasticIpResult]]
+  
   trait GetElasticIpArgs extends StObject {
     
     /**
       * One or more name/value pairs to use as filters. There are several valid keys, for a full reference, check out the [EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeAddresses.html).
       */
-    val filters: js.UndefOr[js.Array[GetElasticIpFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetElasticIpFilter]] = js.undefined
     
     /**
       * The allocation id of the specific VPC EIP to retrieve. If a classic EIP is required, do NOT set `id`, only set `publicIp`
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The public IP of the specific EIP to retrieve.
       */
-    val publicIp: js.UndefOr[String] = js.native
+    val publicIp: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match a pair on the desired Elastic IP
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetElasticIpArgs {
     
@@ -86,80 +84,79 @@ object getElasticIpMod {
     }
   }
   
-  @js.native
   trait GetElasticIpResult extends StObject {
     
     /**
       * The ID representing the association of the address with an instance in a VPC.
       */
-    val associationId: String = js.native
+    val associationId: String
     
     /**
       * Customer Owned IP.
       */
-    val customerOwnedIp: String = js.native
+    val customerOwnedIp: String
     
     /**
       * The ID of a Customer Owned IP Pool. For more on customer owned IP addressed check out [Customer-owned IP addresses guide](https://docs.aws.amazon.com/outposts/latest/userguide/outposts-networking-components.html#ip-addressing)
       */
-    val customerOwnedIpv4Pool: String = js.native
+    val customerOwnedIpv4Pool: String
     
     /**
       * Indicates whether the address is for use in EC2-Classic (standard) or in a VPC (vpc).
       */
-    val domain: String = js.native
+    val domain: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetElasticIpFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.GetElasticIpFilter]] = js.undefined
     
     /**
       * If VPC Elastic IP, the allocation identifier. If EC2-Classic Elastic IP, the public IP address.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ID of the instance that the address is associated with (if any).
       */
-    val instanceId: String = js.native
+    val instanceId: String
     
     /**
       * The ID of the network interface.
       */
-    val networkInterfaceId: String = js.native
+    val networkInterfaceId: String
     
     /**
       * The ID of the AWS account that owns the network interface.
       */
-    val networkInterfaceOwnerId: String = js.native
+    val networkInterfaceOwnerId: String
     
     /**
       * The Private DNS associated with the Elastic IP address.
       */
-    val privateDns: String = js.native
+    val privateDns: String
     
     /**
       * The private IP address associated with the Elastic IP address.
       */
-    val privateIp: String = js.native
+    val privateIp: String
     
     /**
       * Public DNS associated with the Elastic IP address.
       */
-    val publicDns: String = js.native
+    val publicDns: String
     
     /**
       * Public IP address of Elastic IP.
       */
-    val publicIp: String = js.native
+    val publicIp: String
     
     /**
       * The ID of an address pool.
       */
-    val publicIpv4Pool: String = js.native
+    val publicIpv4Pool: String
     
     /**
       * Key-value map of tags associated with Elastic IP.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetElasticIpResult {
     

@@ -3,24 +3,22 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.Datum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.RangeSlider> */
-@js.native
 trait PartialRangeSlider extends StObject {
   
-  var bgcolor: js.UndefOr[String] = js.native
+  var bgcolor: js.UndefOr[String] = js.undefined
   
-  var bordercolor: js.UndefOr[String] = js.native
+  var bordercolor: js.UndefOr[String] = js.undefined
   
-  var borderwidth: js.UndefOr[Double] = js.native
+  var borderwidth: js.UndefOr[Double] = js.undefined
   
-  var range: js.UndefOr[js.Tuple2[Datum, Datum]] = js.native
+  var range: js.UndefOr[js.Tuple2[Datum, Datum]] = js.undefined
   
-  var thickness: js.UndefOr[Double] = js.native
+  var thickness: js.UndefOr[Double] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object PartialRangeSlider {
   

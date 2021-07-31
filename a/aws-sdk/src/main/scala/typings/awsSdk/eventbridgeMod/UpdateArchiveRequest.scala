@@ -2,31 +2,29 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateArchiveRequest extends StObject {
   
   /**
     * The name of the archive to update.
     */
-  var ArchiveName: typings.awsSdk.eventbridgeMod.ArchiveName = js.native
+  var ArchiveName: typings.awsSdk.eventbridgeMod.ArchiveName
   
   /**
     * The description for the archive.
     */
-  var Description: js.UndefOr[ArchiveDescription] = js.native
+  var Description: js.UndefOr[ArchiveDescription] = js.undefined
   
   /**
     * The event pattern to use to filter events sent to the archive.
     */
-  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.native
+  var EventPattern: js.UndefOr[typings.awsSdk.eventbridgeMod.EventPattern] = js.undefined
   
   /**
     * The number of days to retain events in the archive.
     */
-  var RetentionDays: js.UndefOr[typings.awsSdk.eventbridgeMod.RetentionDays] = js.native
+  var RetentionDays: js.UndefOr[typings.awsSdk.eventbridgeMod.RetentionDays] = js.undefined
 }
 object UpdateArchiveRequest {
   

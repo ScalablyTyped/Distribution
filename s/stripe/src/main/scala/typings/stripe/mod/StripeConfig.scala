@@ -3,25 +3,23 @@ package typings.stripe.mod
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StripeConfig extends StObject {
   
-  var apiVersion: js.UndefOr[String | Null] = js.native
+  var apiVersion: js.UndefOr[String | Null] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var httpAgent: js.UndefOr[Agent | Null] = js.native
+  var httpAgent: js.UndefOr[Agent | Null] = js.undefined
   
-  var maxNetworkRetries: js.UndefOr[Double] = js.native
+  var maxNetworkRetries: js.UndefOr[Double] = js.undefined
   
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
-  var telemetry: js.UndefOr[Boolean] = js.native
+  var telemetry: js.UndefOr[Boolean] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object StripeConfig {
   

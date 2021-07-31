@@ -2,30 +2,28 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about a new playlist item.
   */
-@js.native
 trait SchemaActivityContentDetailsPlaylistItem extends StObject {
   
   /**
     * The value that YouTube uses to uniquely identify the playlist.
     */
-  var playlistId: js.UndefOr[String] = js.native
+  var playlistId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the item within the playlist.
     */
-  var playlistItemId: js.UndefOr[String] = js.native
+  var playlistItemId: js.UndefOr[String] = js.undefined
   
   /**
     * The resourceId object contains information about the resource that was
     * added to the playlist.
     */
-  var resourceId: js.UndefOr[SchemaResourceId] = js.native
+  var resourceId: js.UndefOr[SchemaResourceId] = js.undefined
 }
 object SchemaActivityContentDetailsPlaylistItem {
   

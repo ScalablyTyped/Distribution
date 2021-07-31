@@ -3,28 +3,26 @@ package typings.plotlyJs.anon
 import typings.plotlyJs.mod.ColorScale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.ScatterMarkerLine> */
-@js.native
 trait PartialScatterMarkerLine extends StObject {
   
-  var autocolorscale: js.UndefOr[Boolean] = js.native
+  var autocolorscale: js.UndefOr[Boolean] = js.undefined
   
-  var cauto: js.UndefOr[Boolean] = js.native
+  var cauto: js.UndefOr[Boolean] = js.undefined
   
-  var cmax: js.UndefOr[Double] = js.native
+  var cmax: js.UndefOr[Double] = js.undefined
   
-  var cmin: js.UndefOr[Double] = js.native
+  var cmin: js.UndefOr[Double] = js.undefined
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var colorscale: js.UndefOr[ColorScale] = js.native
+  var colorscale: js.UndefOr[ColorScale] = js.undefined
   
-  var reversescale: js.UndefOr[Boolean] = js.native
+  var reversescale: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double | js.Array[Double]] = js.native
+  var width: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object PartialScatterMarkerLine {
   

@@ -2,19 +2,17 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetGridRange extends StObject {
   
-  var endColumnIndex: Double = js.native
+  var endColumnIndex: Double
   
-  var endRowIndex: Double = js.native
+  var endRowIndex: Double
   
-  var startColumnIndex: Double = js.native
+  var startColumnIndex: Double
   
-  var startRowIndex: Double = js.native
+  var startRowIndex: Double
 }
 object WorksheetGridRange {
   

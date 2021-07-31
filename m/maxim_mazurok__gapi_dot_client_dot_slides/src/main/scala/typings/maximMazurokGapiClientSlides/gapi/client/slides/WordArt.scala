@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSlides.gapi.client.slides
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WordArt extends StObject {
   
   /** The text rendered as word art. */
-  var renderedText: js.UndefOr[String] = js.native
+  var renderedText: js.UndefOr[String] = js.undefined
 }
 object WordArt {
   

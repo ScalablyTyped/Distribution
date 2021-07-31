@@ -2,17 +2,15 @@ package typings.winrt.Windows.Media.MediaProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IImageEncodingPropertiesStatics extends StObject {
   
-  def createJpeg(): ImageEncodingProperties = js.native
+  def createJpeg(): ImageEncodingProperties
   
-  def createJpegXR(): ImageEncodingProperties = js.native
+  def createJpegXR(): ImageEncodingProperties
   
-  def createPng(): ImageEncodingProperties = js.native
+  def createPng(): ImageEncodingProperties
 }
 object IImageEncodingPropertiesStatics {
   

@@ -4,21 +4,19 @@ import typings.three.curveMod.Curve
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Closed extends StObject {
   
-  var closed: Boolean = js.native
+  var closed: Boolean
   
-  var path: Curve[Vector3] = js.native
+  var path: Curve[Vector3]
   
-  var radialSegments: Double = js.native
+  var radialSegments: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var tubularSegments: Double = js.native
+  var tubularSegments: Double
 }
 object Closed {
   

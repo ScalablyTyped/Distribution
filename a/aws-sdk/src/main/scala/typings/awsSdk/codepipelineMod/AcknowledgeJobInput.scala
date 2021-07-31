@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AcknowledgeJobInput extends StObject {
   
   /**
     * The unique system-generated ID of the job for which you want to confirm receipt.
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
   
   /**
     * A system-generated random number that AWS CodePipeline uses to ensure that the job is being worked on by only one job worker. Get this number from the response of the PollForJobs request that returned this job.
     */
-  var nonce: Nonce = js.native
+  var nonce: Nonce
 }
 object AcknowledgeJobInput {
   

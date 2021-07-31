@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Header extends StObject {
   
   /** The contents of the header. The indexes for a header's content begin at zero. */
-  var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+  var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
   
   /** The ID of the header. */
-  var headerId: js.UndefOr[String] = js.native
+  var headerId: js.UndefOr[String] = js.undefined
 }
 object Header {
   

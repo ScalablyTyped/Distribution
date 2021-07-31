@@ -4,26 +4,24 @@ import typings.grumblerScripts.anon.Version
 import typings.grumblerScripts.typesMod.WebpackConfigOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webpackConfigMod {
   
-  @JSImport("grumbler-scripts/config/webpack.config", "getCurrentVersion")
+  @JSImport("grumbler-scripts/config/webpack.config", JSImport.Namespace)
   @js.native
-  def getCurrentVersion(pkg: Version): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("grumbler-scripts/config/webpack.config", "getNextVersion")
-  @js.native
-  def getNextVersion(pkg: Version): String = js.native
-  @JSImport("grumbler-scripts/config/webpack.config", "getNextVersion")
-  @js.native
-  def getNextVersion(pkg: Version, level: String): String = js.native
+  @scala.inline
+  def getCurrentVersion(pkg: Version): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentVersion")(pkg.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("grumbler-scripts/config/webpack.config", "getWebpackConfig")
-  @js.native
-  def getWebpackConfig(): js.Object = js.native
-  @JSImport("grumbler-scripts/config/webpack.config", "getWebpackConfig")
-  @js.native
-  def getWebpackConfig(options: WebpackConfigOptions): js.Object = js.native
+  @scala.inline
+  def getNextVersion(pkg: Version): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextVersion")(pkg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getNextVersion(pkg: Version, level: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextVersion")(pkg.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def getWebpackConfig(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebpackConfig")().asInstanceOf[js.Object]
+  @scala.inline
+  def getWebpackConfig(options: WebpackConfigOptions): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getWebpackConfig")(options.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

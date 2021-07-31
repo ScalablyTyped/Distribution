@@ -5,23 +5,21 @@ import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentPullCre
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildEnvironmentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Computetype extends StObject {
   
-  var `compute-type`: CodeBuildEnvironmentComputeType = js.native
+  var `compute-type`: CodeBuildEnvironmentComputeType
   
-  var `environment-variables`: js.Array[Name] = js.native
+  var `environment-variables`: js.Array[Name]
   
-  var image: String = js.native
+  var image: String
   
-  var `image-pull-credentials-type`: js.UndefOr[CodeBuildEnvironmentPullCredentialsType] = js.native
+  var `image-pull-credentials-type`: js.UndefOr[CodeBuildEnvironmentPullCredentialsType] = js.undefined
   
-  var `privileged-mode`: Boolean = js.native
+  var `privileged-mode`: Boolean
   
-  var `type`: CodeBuildEnvironmentType = js.native
+  var `type`: CodeBuildEnvironmentType
 }
 object Computetype {
   

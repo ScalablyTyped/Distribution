@@ -2,7 +2,6 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -158,7 +157,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * map the request or response body to a repeated field. However, some gRPC
   * Transcoding implementations may not support this feature.
   */
-@js.native
 trait SchemaHttpRule extends StObject {
   
   /**
@@ -166,7 +164,7 @@ trait SchemaHttpRule extends StObject {
     * contain an `additional_bindings` field themselves (that is, the nesting
     * may only be one level deep).
     */
-  var additionalBindings: js.UndefOr[js.Array[SchemaHttpRule]] = js.native
+  var additionalBindings: js.UndefOr[js.Array[SchemaHttpRule]] = js.undefined
   
   /**
     * The name of the request field whose value is mapped to the HTTP request
@@ -175,7 +173,7 @@ trait SchemaHttpRule extends StObject {
     * body.  NOTE: the referred field must be present at the top-level of the
     * request message type.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * The custom pattern is used for specifying an HTTP method that is not
@@ -183,33 +181,33 @@ trait SchemaHttpRule extends StObject {
     * the HTTP method unspecified for this rule. The wild-card rule is useful
     * for services that provide content to Web (HTML) clients.
     */
-  var custom: js.UndefOr[SchemaCustomHttpPattern] = js.native
+  var custom: js.UndefOr[SchemaCustomHttpPattern] = js.undefined
   
   /**
     * Maps to HTTP DELETE. Used for deleting a resource.
     */
-  var delete: js.UndefOr[String] = js.native
+  var delete: js.UndefOr[String] = js.undefined
   
   /**
     * Maps to HTTP GET. Used for listing and getting information about
     * resources.
     */
-  var get: js.UndefOr[String] = js.native
+  var get: js.UndefOr[String] = js.undefined
   
   /**
     * Maps to HTTP PATCH. Used for updating a resource.
     */
-  var patch: js.UndefOr[String] = js.native
+  var patch: js.UndefOr[String] = js.undefined
   
   /**
     * Maps to HTTP POST. Used for creating a resource or performing an action.
     */
-  var post: js.UndefOr[String] = js.native
+  var post: js.UndefOr[String] = js.undefined
   
   /**
     * Maps to HTTP PUT. Used for replacing a resource.
     */
-  var put: js.UndefOr[String] = js.native
+  var put: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The name of the response field whose value is mapped to the
@@ -217,13 +215,13 @@ trait SchemaHttpRule extends StObject {
     * used as the HTTP response body.  NOTE: The referred field must be present
     * at the top-level of the response message type.
     */
-  var responseBody: js.UndefOr[String] = js.native
+  var responseBody: js.UndefOr[String] = js.undefined
   
   /**
     * Selects a method to which this rule applies.  Refer to selector for
     * syntax details.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpRule {
   

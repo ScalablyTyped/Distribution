@@ -2,21 +2,19 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobDependency extends StObject {
   
   /**
     * The job ID of the AWS Batch job associated with this dependency.
     */
-  var jobId: js.UndefOr[String] = js.native
+  var jobId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the job dependency.
     */
-  var `type`: js.UndefOr[ArrayJobDependency] = js.native
+  var `type`: js.UndefOr[ArrayJobDependency] = js.undefined
 }
 object JobDependency {
   

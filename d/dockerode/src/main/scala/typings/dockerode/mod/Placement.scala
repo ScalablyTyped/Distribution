@@ -4,19 +4,17 @@ import typings.dockerode.anon.Architecture
 import typings.dockerode.anon.Spread
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placement extends StObject {
   
-  var Constraints: js.UndefOr[js.Array[String]] = js.native
+  var Constraints: js.UndefOr[js.Array[String]] = js.undefined
   
-  var MaxReplicas: js.UndefOr[Double] = js.native
+  var MaxReplicas: js.UndefOr[Double] = js.undefined
   
-  var Platforms: js.UndefOr[js.Array[Architecture]] = js.native
+  var Platforms: js.UndefOr[js.Array[Architecture]] = js.undefined
   
-  var Preferences: js.UndefOr[js.Array[Spread]] = js.native
+  var Preferences: js.UndefOr[js.Array[Spread]] = js.undefined
 }
 object Placement {
   

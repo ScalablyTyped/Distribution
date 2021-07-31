@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,20 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * A hatch is a texture made of straight lines.
   */
-@js.native
 trait Hatch extends StObject {
   
   /** You can rotate the lines of the hatch with this angle. */
-  var Angle: Double = js.native
+  var Angle: Double
   
   /** This is the color of the hatch lines. */
-  var Color: typings.activexLibreoffice.com_.sun.star.util.Color = js.native
+  var Color: typings.activexLibreoffice.com_.sun.star.util.Color
   
   /** This is the distance between the lines in the hatch. */
-  var Distance: Double = js.native
+  var Distance: Double
   
   /** The HatchStyle defines the kind of lines used to draw this hatch. */
-  var Style: HatchStyle = js.native
+  var Style: HatchStyle
 }
 object Hatch {
   

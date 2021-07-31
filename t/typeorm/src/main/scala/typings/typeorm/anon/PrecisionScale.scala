@@ -3,19 +3,17 @@ package typings.typeorm.anon
 import typings.typeorm.typesColumnTypesMod.ColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrecisionScale extends StObject {
   
-  var length: js.UndefOr[Double | String] = js.native
+  var length: js.UndefOr[Double | String] = js.undefined
   
-  var precision: js.UndefOr[Double | Null] = js.native
+  var precision: js.UndefOr[Double | Null] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var `type`: ColumnType = js.native
+  var `type`: ColumnType
 }
 object PrecisionScale {
   

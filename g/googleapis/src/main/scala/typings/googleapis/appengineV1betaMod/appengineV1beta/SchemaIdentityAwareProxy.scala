@@ -2,13 +2,11 @@ package typings.googleapis.appengineV1betaMod.appengineV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identity-Aware Proxy
   */
-@js.native
 trait SchemaIdentityAwareProxy extends StObject {
   
   /**
@@ -16,18 +14,18 @@ trait SchemaIdentityAwareProxy extends StObject {
     * incoming requests.If true, the oauth2_client_id and oauth2_client_secret
     * fields must be non-empty.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * OAuth2 client ID to use for the authentication flow.
     */
-  var oauth2ClientId: js.UndefOr[String] = js.native
+  var oauth2ClientId: js.UndefOr[String] = js.undefined
   
   /**
     * InputOnly OAuth client info required to generate client id to be used for
     * IAP.
     */
-  var oauth2ClientInfo: js.UndefOr[SchemaOAuth2ClientInfo] = js.native
+  var oauth2ClientInfo: js.UndefOr[SchemaOAuth2ClientInfo] = js.undefined
   
   /**
     * OAuth2 client secret to use for the authentication flow.For security
@@ -35,12 +33,12 @@ trait SchemaIdentityAwareProxy extends StObject {
     * hash of the value is returned in the oauth2_client_secret_sha256
     * field.@InputOnly
     */
-  var oauth2ClientSecret: js.UndefOr[String] = js.native
+  var oauth2ClientSecret: js.UndefOr[String] = js.undefined
   
   /**
     * Hex-encoded SHA-256 hash of the client secret.@OutputOnly
     */
-  var oauth2ClientSecretSha256: js.UndefOr[String] = js.native
+  var oauth2ClientSecretSha256: js.UndefOr[String] = js.undefined
 }
 object SchemaIdentityAwareProxy {
   

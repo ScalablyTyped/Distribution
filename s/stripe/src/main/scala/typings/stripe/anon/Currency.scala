@@ -8,21 +8,19 @@ import typings.stripe.stripeStrings.scheduled
 import typings.stripe.stripeStrings.variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Currency extends StObject {
   
-  var acceptance: js.UndefOr[Online] = js.native
+  var acceptance: js.UndefOr[Online] = js.undefined
   
-  var amount: js.UndefOr[Double | Null] = js.native
+  var amount: js.UndefOr[Double | Null] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var interval: js.UndefOr[one_time | scheduled | variable] = js.native
+  var interval: js.UndefOr[one_time | scheduled | variable] = js.undefined
   
-  var notification_method: js.UndefOr[email | manual | none] = js.native
+  var notification_method: js.UndefOr[email | manual | none] = js.undefined
 }
 object Currency {
   

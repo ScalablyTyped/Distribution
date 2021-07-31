@@ -2,26 +2,24 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdatePlacementRequest extends StObject {
   
   /**
     * The user-defined object of attributes used to update the placement. The maximum number of key/value pairs is 50.
     */
-  var attributes: js.UndefOr[PlacementAttributeMap] = js.native
+  var attributes: js.UndefOr[PlacementAttributeMap] = js.undefined
   
   /**
     * The name of the placement to update.
     */
-  var placementName: PlacementName = js.native
+  var placementName: PlacementName
   
   /**
     * The name of the project containing the placement to be updated.
     */
-  var projectName: ProjectName = js.native
+  var projectName: ProjectName
 }
 object UpdatePlacementRequest {
   

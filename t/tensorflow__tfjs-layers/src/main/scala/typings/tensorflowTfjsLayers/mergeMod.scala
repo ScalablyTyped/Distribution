@@ -7,10 +7,13 @@ import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import typings.tensorflowTfjsLayers.topologyMod.SymbolicTensor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeMod {
+  
+  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "Add")
   @js.native
@@ -188,73 +191,56 @@ object mergeMod {
     def className_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("className")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "add")
-  @js.native
-  def add(): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "add")
-  @js.native
-  def add(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "add")
-  @js.native
-  def add(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = js.native
+  @scala.inline
+  def add(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def add(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def add(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("add")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "average")
-  @js.native
-  def average(): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "average")
-  @js.native
-  def average(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "average")
-  @js.native
-  def average(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = js.native
+  @scala.inline
+  def average(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def average(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def average(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("average")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "concatenate")
-  @js.native
-  def concatenate(): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "concatenate")
-  @js.native
-  def concatenate(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "concatenate")
-  @js.native
-  def concatenate(config: ConcatenateLayerArgs): Layer | SymbolicTensor | Tensor[Rank] = js.native
+  @scala.inline
+  def concatenate(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def concatenate(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def concatenate(config: ConcatenateLayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenate")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "maximum")
-  @js.native
-  def maximum(): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "maximum")
-  @js.native
-  def maximum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "maximum")
-  @js.native
-  def maximum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = js.native
+  @scala.inline
+  def maximum(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def maximum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def maximum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("maximum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "minimum")
-  @js.native
-  def minimum(): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "minimum")
-  @js.native
-  def minimum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "minimum")
-  @js.native
-  def minimum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = js.native
+  @scala.inline
+  def minimum(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def minimum(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def minimum(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("minimum")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "multiply")
-  @js.native
-  def multiply(): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "multiply")
-  @js.native
-  def multiply(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = js.native
-  @JSImport("@tensorflow/tfjs-layers/dist/layers/merge", "multiply")
-  @js.native
-  def multiply(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = js.native
+  @scala.inline
+  def multiply(): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")().asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def multiply(config: js.Array[SymbolicTensor | Tensor[Rank]]): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
+  @scala.inline
+  def multiply(config: LayerArgs): Layer | SymbolicTensor | Tensor[Rank] = ^.asInstanceOf[js.Dynamic].applyDynamic("multiply")(config.asInstanceOf[js.Any]).asInstanceOf[Layer | SymbolicTensor | Tensor[Rank]]
   
-  @js.native
-  trait ConcatenateLayerArgs extends LayerArgs {
+  trait ConcatenateLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Axis along which to concatenate.
       */
-    var axis: js.UndefOr[Double] = js.native
+    var axis: js.UndefOr[Double] = js.undefined
   }
   object ConcatenateLayerArgs {
     
@@ -275,15 +261,16 @@ object mergeMod {
     }
   }
   
-  @js.native
-  trait DotLayerArgs extends LayerArgs {
+  trait DotLayerArgs
+    extends StObject
+       with LayerArgs {
     
     /**
       * Axis or axes along which the dot product will be taken.
       *
       * Integer or an Array of integers.
       */
-    var axes: Double | (js.Tuple2[Double, Double]) = js.native
+    var axes: Double | (js.Tuple2[Double, Double])
     
     /**
       * Whether to L2-normalize samples along the dot product axis
@@ -292,7 +279,7 @@ object mergeMod {
       * If set to `true`, the output of the dot product isthe cosine
       * proximity between the two samples.
       */
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
   }
   object DotLayerArgs {
     

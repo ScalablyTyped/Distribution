@@ -2,41 +2,39 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetCustomDataIdentifierSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the custom data identifier.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The date and time, in UTC and extended ISO 8601 format, when the custom data identifier was created.
     */
-  var createdAt: js.UndefOr[timestampIso8601] = js.native
+  var createdAt: js.UndefOr[timestampIso8601] = js.undefined
   
   /**
     * Specifies whether the custom data identifier was deleted. If you delete a custom data identifier, Amazon Macie doesn't delete it permanently. Instead, it soft deletes the identifier.
     */
-  var deleted: js.UndefOr[boolean] = js.native
+  var deleted: js.UndefOr[boolean] = js.undefined
   
   /**
     * The custom description of the custom data identifier.
     */
-  var description: js.UndefOr[string] = js.native
+  var description: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the custom data identifier.
     */
-  var id: js.UndefOr[string] = js.native
+  var id: js.UndefOr[string] = js.undefined
   
   /**
     * The custom name of the custom data identifier.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
 }
 object BatchGetCustomDataIdentifierSummary {
   

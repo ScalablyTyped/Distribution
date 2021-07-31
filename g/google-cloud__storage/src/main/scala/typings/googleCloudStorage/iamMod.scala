@@ -6,7 +6,6 @@ import typings.googleCloudStorage.bucketMod.Bucket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iamMod {
@@ -61,14 +60,13 @@ object iamMod {
     ): Unit = js.native
   }
   
-  @js.native
   trait Expr extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var expression: String = js.native
+    var expression: String
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Expr {
     
@@ -105,12 +103,11 @@ object iamMod {
     Unit
   ]
   
-  @js.native
   trait GetPolicyOptions extends StObject {
     
-    var requestedPolicyVersion: js.UndefOr[Double] = js.native
+    var requestedPolicyVersion: js.UndefOr[Double] = js.undefined
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object GetPolicyOptions {
     
@@ -139,14 +136,13 @@ object iamMod {
   
   type GetPolicyResponse = js.Tuple2[Policy, Metadata]
   
-  @js.native
   trait Policy extends StObject {
     
-    var bindings: js.Array[PolicyBinding] = js.native
+    var bindings: js.Array[PolicyBinding]
     
-    var etag: js.UndefOr[String] = js.native
+    var etag: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object Policy {
     
@@ -179,14 +175,13 @@ object iamMod {
     }
   }
   
-  @js.native
   trait PolicyBinding extends StObject {
     
-    var condition: js.UndefOr[Expr] = js.native
+    var condition: js.UndefOr[Expr] = js.undefined
     
-    var members: js.Array[String] = js.native
+    var members: js.Array[String]
     
-    var role: String = js.native
+    var role: String
   }
   object PolicyBinding {
     
@@ -223,10 +218,9 @@ object iamMod {
     Unit
   ]
   
-  @js.native
   trait SetPolicyOptions extends StObject {
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object SetPolicyOptions {
     
@@ -256,10 +250,9 @@ object iamMod {
     Unit
   ]
   
-  @js.native
   trait TestIamPermissionsOptions extends StObject {
     
-    var userProject: js.UndefOr[String] = js.native
+    var userProject: js.UndefOr[String] = js.undefined
   }
   object TestIamPermissionsOptions {
     

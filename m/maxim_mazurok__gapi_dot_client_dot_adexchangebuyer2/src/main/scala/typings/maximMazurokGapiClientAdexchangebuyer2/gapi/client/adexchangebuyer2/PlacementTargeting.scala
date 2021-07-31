@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementTargeting extends StObject {
   
   /** Mobile application targeting information in a deal. This doesn't apply to Auction Packages. */
-  var mobileApplicationTargeting: js.UndefOr[MobileApplicationTargeting] = js.native
+  var mobileApplicationTargeting: js.UndefOr[MobileApplicationTargeting] = js.undefined
   
   /** URLs to be included/excluded. */
-  var urlTargeting: js.UndefOr[UrlTargeting] = js.native
+  var urlTargeting: js.UndefOr[UrlTargeting] = js.undefined
 }
 object PlacementTargeting {
   

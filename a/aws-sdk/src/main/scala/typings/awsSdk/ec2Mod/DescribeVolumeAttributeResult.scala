@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeVolumeAttributeResult extends StObject {
   
   /**
     * The state of autoEnableIO attribute.
     */
-  var AutoEnableIO: js.UndefOr[AttributeBooleanValue] = js.native
+  var AutoEnableIO: js.UndefOr[AttributeBooleanValue] = js.undefined
   
   /**
     * A list of product codes.
     */
-  var ProductCodes: js.UndefOr[ProductCodeList] = js.native
+  var ProductCodes: js.UndefOr[ProductCodeList] = js.undefined
   
   /**
     * The ID of the volume.
     */
-  var VolumeId: js.UndefOr[String] = js.native
+  var VolumeId: js.UndefOr[String] = js.undefined
 }
 object DescribeVolumeAttributeResult {
   

@@ -3,110 +3,110 @@ package typings.azdata.mod
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentServicesProvider extends DataProvider {
+trait AgentServicesProvider
+  extends StObject
+     with DataProvider {
   
-  def createAlert(ownerUri: String, alertInfo: AgentAlertInfo): Thenable[CreateAgentAlertResult] = js.native
+  def createAlert(ownerUri: String, alertInfo: AgentAlertInfo): Thenable[CreateAgentAlertResult]
   
-  def createJob(ownerUri: String, jobInfo: AgentJobInfo): Thenable[CreateAgentJobResult] = js.native
+  def createJob(ownerUri: String, jobInfo: AgentJobInfo): Thenable[CreateAgentJobResult]
   
-  def createJobSchedule(ownerUri: String, scheduleInfo: AgentJobScheduleInfo): Thenable[CreateAgentJobScheduleResult] = js.native
+  def createJobSchedule(ownerUri: String, scheduleInfo: AgentJobScheduleInfo): Thenable[CreateAgentJobScheduleResult]
   
   // Job Step management methods
-  def createJobStep(ownerUri: String, stepInfo: AgentJobStepInfo): Thenable[CreateAgentJobStepResult] = js.native
+  def createJobStep(ownerUri: String, stepInfo: AgentJobStepInfo): Thenable[CreateAgentJobStepResult]
   
-  def createNotebook(ownerUri: String, notebook: AgentNotebookInfo, templateFilePath: String): Thenable[CreateAgentNotebookResult] = js.native
+  def createNotebook(ownerUri: String, notebook: AgentNotebookInfo, templateFilePath: String): Thenable[CreateAgentNotebookResult]
   
-  def createOperator(ownerUri: String, operatorInfo: AgentOperatorInfo): Thenable[CreateAgentOperatorResult] = js.native
+  def createOperator(ownerUri: String, operatorInfo: AgentOperatorInfo): Thenable[CreateAgentOperatorResult]
   
-  def createProxy(ownerUri: String, proxyInfo: AgentProxyInfo): Thenable[CreateAgentOperatorResult] = js.native
+  def createProxy(ownerUri: String, proxyInfo: AgentProxyInfo): Thenable[CreateAgentOperatorResult]
   
-  def deleteAlert(ownerUri: String, alertInfo: AgentAlertInfo): Thenable[ResultStatus] = js.native
+  def deleteAlert(ownerUri: String, alertInfo: AgentAlertInfo): Thenable[ResultStatus]
   
-  def deleteJob(ownerUri: String, jobInfo: AgentJobInfo): Thenable[ResultStatus] = js.native
+  def deleteJob(ownerUri: String, jobInfo: AgentJobInfo): Thenable[ResultStatus]
   
-  def deleteJobSchedule(ownerUri: String, scheduleInfo: AgentJobScheduleInfo): Thenable[ResultStatus] = js.native
+  def deleteJobSchedule(ownerUri: String, scheduleInfo: AgentJobScheduleInfo): Thenable[ResultStatus]
   
-  def deleteJobStep(ownerUri: String, stepInfo: AgentJobStepInfo): Thenable[ResultStatus] = js.native
+  def deleteJobStep(ownerUri: String, stepInfo: AgentJobStepInfo): Thenable[ResultStatus]
   
-  def deleteMaterializedNotebook(ownerUri: String, agentNotebookHistory: AgentNotebookHistoryInfo, targetDatabase: String): Thenable[ResultStatus] = js.native
+  def deleteMaterializedNotebook(ownerUri: String, agentNotebookHistory: AgentNotebookHistoryInfo, targetDatabase: String): Thenable[ResultStatus]
   
-  def deleteNotebook(ownerUri: String, notebook: AgentNotebookInfo): Thenable[ResultStatus] = js.native
+  def deleteNotebook(ownerUri: String, notebook: AgentNotebookInfo): Thenable[ResultStatus]
   
-  def deleteOperator(ownerUri: String, operatorInfo: AgentOperatorInfo): Thenable[ResultStatus] = js.native
+  def deleteOperator(ownerUri: String, operatorInfo: AgentOperatorInfo): Thenable[ResultStatus]
   
-  def deleteProxy(ownerUri: String, proxyInfo: AgentProxyInfo): Thenable[ResultStatus] = js.native
+  def deleteProxy(ownerUri: String, proxyInfo: AgentProxyInfo): Thenable[ResultStatus]
   
   // Alert management methods
-  def getAlerts(ownerUri: String): Thenable[AgentAlertsResult] = js.native
+  def getAlerts(ownerUri: String): Thenable[AgentAlertsResult]
   
   // Credential method
-  def getCredentials(ownerUri: String): Thenable[GetCredentialsResult] = js.native
+  def getCredentials(ownerUri: String): Thenable[GetCredentialsResult]
   
-  def getJobDefaults(ownerUri: String): Thenable[AgentJobDefaultsResult] = js.native
+  def getJobDefaults(ownerUri: String): Thenable[AgentJobDefaultsResult]
   
-  def getJobHistory(ownerUri: String, jobId: String, jobName: String): Thenable[AgentJobHistoryResult] = js.native
+  def getJobHistory(ownerUri: String, jobId: String, jobName: String): Thenable[AgentJobHistoryResult]
   
   // Job Schedule management methods
-  def getJobSchedules(ownerUri: String): Thenable[AgentJobSchedulesResult] = js.native
+  def getJobSchedules(ownerUri: String): Thenable[AgentJobSchedulesResult]
   
   // Job management methods
-  def getJobs(ownerUri: String): Thenable[AgentJobsResult] = js.native
+  def getJobs(ownerUri: String): Thenable[AgentJobsResult]
   
-  def getMaterializedNotebook(ownerUri: String, targetDatabase: String, notebookMaterializedId: Double): Thenable[AgentNotebookMaterializedResult] = js.native
+  def getMaterializedNotebook(ownerUri: String, targetDatabase: String, notebookMaterializedId: Double): Thenable[AgentNotebookMaterializedResult]
   
-  def getNotebookHistory(ownerUri: String, jobId: String, jobName: String, targetDatabase: String): Thenable[AgentNotebookHistoryResult] = js.native
+  def getNotebookHistory(ownerUri: String, jobId: String, jobName: String, targetDatabase: String): Thenable[AgentNotebookHistoryResult]
   
   // Notebook management methods
-  def getNotebooks(ownerUri: String): Thenable[AgentNotebooksResult] = js.native
+  def getNotebooks(ownerUri: String): Thenable[AgentNotebooksResult]
   
   // Operator management methods
-  def getOperators(ownerUri: String): Thenable[AgentOperatorsResult] = js.native
+  def getOperators(ownerUri: String): Thenable[AgentOperatorsResult]
   
   // Proxy management methods
-  def getProxies(ownerUri: String): Thenable[AgentProxiesResult] = js.native
+  def getProxies(ownerUri: String): Thenable[AgentProxiesResult]
   
-  def getTemplateNotebook(ownerUri: String, targetDatabase: String, jobId: String): Thenable[AgentNotebookTemplateResult] = js.native
+  def getTemplateNotebook(ownerUri: String, targetDatabase: String, jobId: String): Thenable[AgentNotebookTemplateResult]
   
-  def jobAction(ownerUri: String, jobName: String, action: String): Thenable[ResultStatus] = js.native
+  def jobAction(ownerUri: String, jobName: String, action: String): Thenable[ResultStatus]
   
-  def registerOnUpdated(handler: js.Function0[_]): Unit = js.native
+  def registerOnUpdated(handler: js.Function0[js.Any]): Unit
   
-  def updateAlert(ownerUri: String, originalAlertName: String, alertInfo: AgentAlertInfo): Thenable[UpdateAgentAlertResult] = js.native
+  def updateAlert(ownerUri: String, originalAlertName: String, alertInfo: AgentAlertInfo): Thenable[UpdateAgentAlertResult]
   
-  def updateJob(ownerUri: String, originalJobName: String, jobInfo: AgentJobInfo): Thenable[UpdateAgentJobResult] = js.native
+  def updateJob(ownerUri: String, originalJobName: String, jobInfo: AgentJobInfo): Thenable[UpdateAgentJobResult]
   
-  def updateJobSchedule(ownerUri: String, originalScheduleName: String, scheduleInfo: AgentJobScheduleInfo): Thenable[UpdateAgentJobScheduleResult] = js.native
+  def updateJobSchedule(ownerUri: String, originalScheduleName: String, scheduleInfo: AgentJobScheduleInfo): Thenable[UpdateAgentJobScheduleResult]
   
-  def updateJobStep(ownerUri: String, originalJobStepName: String, stepInfo: AgentJobStepInfo): Thenable[UpdateAgentJobStepResult] = js.native
+  def updateJobStep(ownerUri: String, originalJobStepName: String, stepInfo: AgentJobStepInfo): Thenable[UpdateAgentJobStepResult]
   
   def updateNotebook(
     ownerUri: String,
     originialNotebookName: String,
     notebook: AgentNotebookInfo,
     templateFilePath: String
-  ): Thenable[UpdateAgentNotebookResult] = js.native
+  ): Thenable[UpdateAgentNotebookResult]
   
   def updateNotebookMaterializedName(
     ownerUri: String,
     agentNotebookHistory: AgentNotebookHistoryInfo,
     targetDatabase: String,
     name: String
-  ): Thenable[ResultStatus] = js.native
+  ): Thenable[ResultStatus]
   
   def updateNotebookMaterializedPin(
     ownerUri: String,
     agentNotebookHistory: AgentNotebookHistoryInfo,
     targetDatabase: String,
     pin: Boolean
-  ): Thenable[ResultStatus] = js.native
+  ): Thenable[ResultStatus]
   
-  def updateOperator(ownerUri: String, originalOperatorName: String, operatorInfo: AgentOperatorInfo): Thenable[UpdateAgentOperatorResult] = js.native
+  def updateOperator(ownerUri: String, originalOperatorName: String, operatorInfo: AgentOperatorInfo): Thenable[UpdateAgentOperatorResult]
   
-  def updateProxy(ownerUri: String, originalProxyName: String, proxyInfo: AgentProxyInfo): Thenable[UpdateAgentOperatorResult] = js.native
+  def updateProxy(ownerUri: String, originalProxyName: String, proxyInfo: AgentProxyInfo): Thenable[UpdateAgentOperatorResult]
 }
 object AgentServicesProvider {
   
@@ -141,7 +141,7 @@ object AgentServicesProvider {
     getTemplateNotebook: (String, String, String) => Thenable[AgentNotebookTemplateResult],
     jobAction: (String, String, String) => Thenable[ResultStatus],
     providerId: String,
-    registerOnUpdated: js.Function0[_] => Unit,
+    registerOnUpdated: js.Function0[js.Any] => Unit,
     updateAlert: (String, String, AgentAlertInfo) => Thenable[UpdateAgentAlertResult],
     updateJob: (String, String, AgentJobInfo) => Thenable[UpdateAgentJobResult],
     updateJobSchedule: (String, String, AgentJobScheduleInfo) => Thenable[UpdateAgentJobScheduleResult],
@@ -244,7 +244,7 @@ object AgentServicesProvider {
     def setJobAction(value: (String, String, String) => Thenable[ResultStatus]): Self = StObject.set(x, "jobAction", js.Any.fromFunction3(value))
     
     @scala.inline
-    def setRegisterOnUpdated(value: js.Function0[_] => Unit): Self = StObject.set(x, "registerOnUpdated", js.Any.fromFunction1(value))
+    def setRegisterOnUpdated(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "registerOnUpdated", js.Any.fromFunction1(value))
     
     @scala.inline
     def setUpdateAlert(value: (String, String, AgentAlertInfo) => Thenable[UpdateAgentAlertResult]): Self = StObject.set(x, "updateAlert", js.Any.fromFunction3(value))

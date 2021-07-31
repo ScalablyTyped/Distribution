@@ -10,32 +10,29 @@ import typings.typedRestClient.interfacesMod.IRequestHandler
 import typings.typedRestClient.interfacesMod.IRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpClientMod {
   
+  @JSImport("typed-rest-client/HttpClient", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("typed-rest-client/HttpClient", "HttpClient")
   @js.native
-  class HttpClient () extends IHttpClient {
+  class HttpClient ()
+    extends StObject
+       with IHttpClient {
     def this(userAgent: String) = this()
-    def this(userAgent: js.UndefOr[scala.Nothing], handlers: js.Array[IRequestHandler]) = this()
     def this(userAgent: String, handlers: js.Array[IRequestHandler]) = this()
     def this(userAgent: Null, handlers: js.Array[IRequestHandler]) = this()
-    def this(
-      userAgent: js.UndefOr[scala.Nothing],
-      handlers: js.UndefOr[scala.Nothing],
-      requestOptions: IRequestOptions
-    ) = this()
-    def this(
-      userAgent: js.UndefOr[scala.Nothing],
-      handlers: js.Array[IRequestHandler],
-      requestOptions: IRequestOptions
-    ) = this()
-    def this(userAgent: String, handlers: js.UndefOr[scala.Nothing], requestOptions: IRequestOptions) = this()
+    def this(userAgent: Unit, handlers: js.Array[IRequestHandler]) = this()
     def this(userAgent: String, handlers: js.Array[IRequestHandler], requestOptions: IRequestOptions) = this()
-    def this(userAgent: Null, handlers: js.UndefOr[scala.Nothing], requestOptions: IRequestOptions) = this()
+    def this(userAgent: String, handlers: Unit, requestOptions: IRequestOptions) = this()
     def this(userAgent: Null, handlers: js.Array[IRequestHandler], requestOptions: IRequestOptions) = this()
+    def this(userAgent: Null, handlers: Unit, requestOptions: IRequestOptions) = this()
+    def this(userAgent: Unit, handlers: js.Array[IRequestHandler], requestOptions: IRequestOptions) = this()
+    def this(userAgent: Unit, handlers: Unit, requestOptions: IRequestOptions) = this()
     
     var _agent: js.Any = js.native
     
@@ -102,8 +99,16 @@ object httpClientMod {
   
   @JSImport("typed-rest-client/HttpClient", "HttpClientResponse")
   @js.native
-  class HttpClientResponse protected () extends IHttpClientResponse {
+  class HttpClientResponse protected ()
+    extends StObject
+       with IHttpClientResponse {
     def this(message: IncomingMessage) = this()
+    
+    /* CompleteClass */
+    var message: IncomingMessage = js.native
+    
+    /* CompleteClass */
+    override def readBody(): js.Promise[String] = js.native
   }
   
   @js.native
@@ -113,129 +118,181 @@ object httpClientMod {
   object HttpCodes extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[HttpCodes with Double] = js.native
+    def apply(value: Double): js.UndefOr[HttpCodes & Double] = js.native
     
     @js.native
-    sealed trait BadGateway extends HttpCodes
-    /* 502 */ val BadGateway: typings.typedRestClient.httpClientMod.HttpCodes.BadGateway with Double = js.native
+    sealed trait BadGateway
+      extends StObject
+         with HttpCodes
+    /* 502 */ val BadGateway: typings.typedRestClient.httpClientMod.HttpCodes.BadGateway & Double = js.native
     
     @js.native
-    sealed trait BadRequest extends HttpCodes
-    /* 400 */ val BadRequest: typings.typedRestClient.httpClientMod.HttpCodes.BadRequest with Double = js.native
+    sealed trait BadRequest
+      extends StObject
+         with HttpCodes
+    /* 400 */ val BadRequest: typings.typedRestClient.httpClientMod.HttpCodes.BadRequest & Double = js.native
     
     @js.native
-    sealed trait Conflict extends HttpCodes
-    /* 409 */ val Conflict: typings.typedRestClient.httpClientMod.HttpCodes.Conflict with Double = js.native
+    sealed trait Conflict
+      extends StObject
+         with HttpCodes
+    /* 409 */ val Conflict: typings.typedRestClient.httpClientMod.HttpCodes.Conflict & Double = js.native
     
     @js.native
-    sealed trait Forbidden extends HttpCodes
-    /* 403 */ val Forbidden: typings.typedRestClient.httpClientMod.HttpCodes.Forbidden with Double = js.native
+    sealed trait Forbidden
+      extends StObject
+         with HttpCodes
+    /* 403 */ val Forbidden: typings.typedRestClient.httpClientMod.HttpCodes.Forbidden & Double = js.native
     
     @js.native
-    sealed trait GatewayTimeout extends HttpCodes
-    /* 504 */ val GatewayTimeout: typings.typedRestClient.httpClientMod.HttpCodes.GatewayTimeout with Double = js.native
+    sealed trait GatewayTimeout
+      extends StObject
+         with HttpCodes
+    /* 504 */ val GatewayTimeout: typings.typedRestClient.httpClientMod.HttpCodes.GatewayTimeout & Double = js.native
     
     @js.native
-    sealed trait Gone extends HttpCodes
-    /* 410 */ val Gone: typings.typedRestClient.httpClientMod.HttpCodes.Gone with Double = js.native
+    sealed trait Gone
+      extends StObject
+         with HttpCodes
+    /* 410 */ val Gone: typings.typedRestClient.httpClientMod.HttpCodes.Gone & Double = js.native
     
     @js.native
-    sealed trait InternalServerError extends HttpCodes
-    /* 500 */ val InternalServerError: typings.typedRestClient.httpClientMod.HttpCodes.InternalServerError with Double = js.native
+    sealed trait InternalServerError
+      extends StObject
+         with HttpCodes
+    /* 500 */ val InternalServerError: typings.typedRestClient.httpClientMod.HttpCodes.InternalServerError & Double = js.native
     
     @js.native
-    sealed trait MethodNotAllowed extends HttpCodes
-    /* 405 */ val MethodNotAllowed: typings.typedRestClient.httpClientMod.HttpCodes.MethodNotAllowed with Double = js.native
+    sealed trait MethodNotAllowed
+      extends StObject
+         with HttpCodes
+    /* 405 */ val MethodNotAllowed: typings.typedRestClient.httpClientMod.HttpCodes.MethodNotAllowed & Double = js.native
     
     @js.native
-    sealed trait MovedPermanently extends HttpCodes
-    /* 301 */ val MovedPermanently: typings.typedRestClient.httpClientMod.HttpCodes.MovedPermanently with Double = js.native
+    sealed trait MovedPermanently
+      extends StObject
+         with HttpCodes
+    /* 301 */ val MovedPermanently: typings.typedRestClient.httpClientMod.HttpCodes.MovedPermanently & Double = js.native
     
     @js.native
-    sealed trait MultipleChoices extends HttpCodes
-    /* 300 */ val MultipleChoices: typings.typedRestClient.httpClientMod.HttpCodes.MultipleChoices with Double = js.native
+    sealed trait MultipleChoices
+      extends StObject
+         with HttpCodes
+    /* 300 */ val MultipleChoices: typings.typedRestClient.httpClientMod.HttpCodes.MultipleChoices & Double = js.native
     
     @js.native
-    sealed trait NotAcceptable extends HttpCodes
-    /* 406 */ val NotAcceptable: typings.typedRestClient.httpClientMod.HttpCodes.NotAcceptable with Double = js.native
+    sealed trait NotAcceptable
+      extends StObject
+         with HttpCodes
+    /* 406 */ val NotAcceptable: typings.typedRestClient.httpClientMod.HttpCodes.NotAcceptable & Double = js.native
     
     @js.native
-    sealed trait NotFound extends HttpCodes
-    /* 404 */ val NotFound: typings.typedRestClient.httpClientMod.HttpCodes.NotFound with Double = js.native
+    sealed trait NotFound
+      extends StObject
+         with HttpCodes
+    /* 404 */ val NotFound: typings.typedRestClient.httpClientMod.HttpCodes.NotFound & Double = js.native
     
     @js.native
-    sealed trait NotImplemented extends HttpCodes
-    /* 501 */ val NotImplemented: typings.typedRestClient.httpClientMod.HttpCodes.NotImplemented with Double = js.native
+    sealed trait NotImplemented
+      extends StObject
+         with HttpCodes
+    /* 501 */ val NotImplemented: typings.typedRestClient.httpClientMod.HttpCodes.NotImplemented & Double = js.native
     
     @js.native
-    sealed trait NotModified extends HttpCodes
-    /* 304 */ val NotModified: typings.typedRestClient.httpClientMod.HttpCodes.NotModified with Double = js.native
+    sealed trait NotModified
+      extends StObject
+         with HttpCodes
+    /* 304 */ val NotModified: typings.typedRestClient.httpClientMod.HttpCodes.NotModified & Double = js.native
     
     @js.native
-    sealed trait OK extends HttpCodes
-    /* 200 */ val OK: typings.typedRestClient.httpClientMod.HttpCodes.OK with Double = js.native
+    sealed trait OK
+      extends StObject
+         with HttpCodes
+    /* 200 */ val OK: typings.typedRestClient.httpClientMod.HttpCodes.OK & Double = js.native
     
     @js.native
-    sealed trait PaymentRequired extends HttpCodes
-    /* 402 */ val PaymentRequired: typings.typedRestClient.httpClientMod.HttpCodes.PaymentRequired with Double = js.native
+    sealed trait PaymentRequired
+      extends StObject
+         with HttpCodes
+    /* 402 */ val PaymentRequired: typings.typedRestClient.httpClientMod.HttpCodes.PaymentRequired & Double = js.native
     
     @js.native
-    sealed trait PermanentRedirect extends HttpCodes
-    /* 308 */ val PermanentRedirect: typings.typedRestClient.httpClientMod.HttpCodes.PermanentRedirect with Double = js.native
+    sealed trait PermanentRedirect
+      extends StObject
+         with HttpCodes
+    /* 308 */ val PermanentRedirect: typings.typedRestClient.httpClientMod.HttpCodes.PermanentRedirect & Double = js.native
     
     @js.native
-    sealed trait ProxyAuthenticationRequired extends HttpCodes
-    /* 407 */ val ProxyAuthenticationRequired: typings.typedRestClient.httpClientMod.HttpCodes.ProxyAuthenticationRequired with Double = js.native
+    sealed trait ProxyAuthenticationRequired
+      extends StObject
+         with HttpCodes
+    /* 407 */ val ProxyAuthenticationRequired: typings.typedRestClient.httpClientMod.HttpCodes.ProxyAuthenticationRequired & Double = js.native
     
     @js.native
-    sealed trait RequestTimeout extends HttpCodes
-    /* 408 */ val RequestTimeout: typings.typedRestClient.httpClientMod.HttpCodes.RequestTimeout with Double = js.native
+    sealed trait RequestTimeout
+      extends StObject
+         with HttpCodes
+    /* 408 */ val RequestTimeout: typings.typedRestClient.httpClientMod.HttpCodes.RequestTimeout & Double = js.native
     
     @js.native
-    sealed trait ResourceMoved extends HttpCodes
-    /* 302 */ val ResourceMoved: typings.typedRestClient.httpClientMod.HttpCodes.ResourceMoved with Double = js.native
+    sealed trait ResourceMoved
+      extends StObject
+         with HttpCodes
+    /* 302 */ val ResourceMoved: typings.typedRestClient.httpClientMod.HttpCodes.ResourceMoved & Double = js.native
     
     @js.native
-    sealed trait SeeOther extends HttpCodes
-    /* 303 */ val SeeOther: typings.typedRestClient.httpClientMod.HttpCodes.SeeOther with Double = js.native
+    sealed trait SeeOther
+      extends StObject
+         with HttpCodes
+    /* 303 */ val SeeOther: typings.typedRestClient.httpClientMod.HttpCodes.SeeOther & Double = js.native
     
     @js.native
-    sealed trait ServiceUnavailable extends HttpCodes
-    /* 503 */ val ServiceUnavailable: typings.typedRestClient.httpClientMod.HttpCodes.ServiceUnavailable with Double = js.native
+    sealed trait ServiceUnavailable
+      extends StObject
+         with HttpCodes
+    /* 503 */ val ServiceUnavailable: typings.typedRestClient.httpClientMod.HttpCodes.ServiceUnavailable & Double = js.native
     
     @js.native
-    sealed trait SwitchProxy extends HttpCodes
-    /* 306 */ val SwitchProxy: typings.typedRestClient.httpClientMod.HttpCodes.SwitchProxy with Double = js.native
+    sealed trait SwitchProxy
+      extends StObject
+         with HttpCodes
+    /* 306 */ val SwitchProxy: typings.typedRestClient.httpClientMod.HttpCodes.SwitchProxy & Double = js.native
     
     @js.native
-    sealed trait TemporaryRedirect extends HttpCodes
-    /* 307 */ val TemporaryRedirect: typings.typedRestClient.httpClientMod.HttpCodes.TemporaryRedirect with Double = js.native
+    sealed trait TemporaryRedirect
+      extends StObject
+         with HttpCodes
+    /* 307 */ val TemporaryRedirect: typings.typedRestClient.httpClientMod.HttpCodes.TemporaryRedirect & Double = js.native
     
     @js.native
-    sealed trait TooManyRequests extends HttpCodes
-    /* 429 */ val TooManyRequests: typings.typedRestClient.httpClientMod.HttpCodes.TooManyRequests with Double = js.native
+    sealed trait TooManyRequests
+      extends StObject
+         with HttpCodes
+    /* 429 */ val TooManyRequests: typings.typedRestClient.httpClientMod.HttpCodes.TooManyRequests & Double = js.native
     
     @js.native
-    sealed trait Unauthorized extends HttpCodes
-    /* 401 */ val Unauthorized: typings.typedRestClient.httpClientMod.HttpCodes.Unauthorized with Double = js.native
+    sealed trait Unauthorized
+      extends StObject
+         with HttpCodes
+    /* 401 */ val Unauthorized: typings.typedRestClient.httpClientMod.HttpCodes.Unauthorized & Double = js.native
     
     @js.native
-    sealed trait UseProxy extends HttpCodes
-    /* 305 */ val UseProxy: typings.typedRestClient.httpClientMod.HttpCodes.UseProxy with Double = js.native
+    sealed trait UseProxy
+      extends StObject
+         with HttpCodes
+    /* 305 */ val UseProxy: typings.typedRestClient.httpClientMod.HttpCodes.UseProxy & Double = js.native
   }
   
-  @JSImport("typed-rest-client/HttpClient", "isHttps")
-  @js.native
-  def isHttps(requestUrl: String): Boolean = js.native
+  @scala.inline
+  def isHttps(requestUrl: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isHttps")(requestUrl.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
   trait RequestInfo extends StObject {
     
-    var httpModule: js.Any = js.native
+    var httpModule: js.Any
     
-    var options: RequestOptions = js.native
+    var options: RequestOptions
     
-    var parsedUrl: Url = js.native
+    var parsedUrl: Url
   }
   object RequestInfo {
     

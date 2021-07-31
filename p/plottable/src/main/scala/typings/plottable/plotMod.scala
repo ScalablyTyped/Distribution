@@ -28,7 +28,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.SVGGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plotMod {
@@ -75,15 +74,25 @@ object plotMod {
       */
     var _attrExtents: js.Any = js.native
     
-    /* protected */ def _bindAttr(attr: String, valueOrFn: js.Any, scale: Scale[_, _]): Unit = js.native
-    /* protected */ def _bindAttr(attr: String, valueOrFn: js.Function, scale: Scale[_, _]): Unit = js.native
+    /* protected */ def _bindAttr(attr: String, valueOrFn: js.Any, scale: Scale[js.Any, js.Any]): Unit = js.native
+    /* protected */ def _bindAttr(attr: String, valueOrFn: js.Function, scale: Scale[js.Any, js.Any]): Unit = js.native
     
-    /* protected */ def _bindProperty(property: String, valueOrFn: js.Any, scale: Scale[_, _]): Unit = js.native
-    /* protected */ def _bindProperty(property: String, valueOrFn: js.Any, scale: Scale[_, _], postScale: IRangeProjector[_]): Unit = js.native
-    /* protected */ def _bindProperty(property: String, valueOrFn: js.Function, scale: Scale[_, _]): Unit = js.native
-    /* protected */ def _bindProperty(property: String, valueOrFn: js.Function, scale: Scale[_, _], postScale: IRangeProjector[_]): Unit = js.native
+    /* protected */ def _bindProperty(property: String, valueOrFn: js.Any, scale: Scale[js.Any, js.Any]): Unit = js.native
+    /* protected */ def _bindProperty(
+      property: String,
+      valueOrFn: js.Any,
+      scale: Scale[js.Any, js.Any],
+      postScale: IRangeProjector[js.Any]
+    ): Unit = js.native
+    /* protected */ def _bindProperty(property: String, valueOrFn: js.Function, scale: Scale[js.Any, js.Any]): Unit = js.native
+    /* protected */ def _bindProperty(
+      property: String,
+      valueOrFn: js.Function,
+      scale: Scale[js.Any, js.Any],
+      postScale: IRangeProjector[js.Any]
+    ): Unit = js.native
     
-    var _bufferCanvas: Selection_[HTMLCanvasElement, _, _, _] = js.native
+    var _bufferCanvas: Selection_[HTMLCanvasElement, js.Any, js.Any, js.Any] = js.native
     
     var _bufferCanvasValid: Boolean = js.native
     
@@ -109,7 +118,7 @@ object plotMod {
       * parent-less (which means that the plot isn't setup yet but is still using
       * the canvas renderer).
       */
-    var _canvas: Selection_[HTMLCanvasElement, _, _, _] = js.native
+    var _canvas: Selection_[HTMLCanvasElement, js.Any, js.Any, js.Any] = js.native
     
     /* protected */ def _clearAttrToProjectorCache(): Unit = js.native
     
@@ -153,7 +162,7 @@ object plotMod {
     
     /* protected */ def _getAttrToProjector(): AttributeToProjector = js.native
     
-    /* protected */ def _getDataToDraw(): Map[Dataset, js.Array[_]] = js.native
+    /* protected */ def _getDataToDraw(): Map[Dataset, js.Array[js.Any]] = js.native
     
     /**
       * _getEntityStore returns the store of all Entities associated with the specified dataset
@@ -173,7 +182,7 @@ object plotMod {
       */
     var _includedValuesProvider: js.Any = js.native
     
-    /* protected */ def _installScaleForKey(scale: Scale[_, _], key: String): Unit = js.native
+    /* protected */ def _installScaleForKey(scale: Scale[js.Any, js.Any], key: String): Unit = js.native
     
     /* protected */ def _lightweightPlotEntityToPlotEntity(entity: ILightweightPlotEntity): IPlotEntity = js.native
     
@@ -209,8 +218,8 @@ object plotMod {
       * _generateDrawStep's attrToProjector; properties are not.
       */
     var _propertyBindings: typings.std.Map[
-        IAccessorScaleBinding[_, _], 
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ _
+        IAccessorScaleBinding[js.Any, js.Any], 
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for V */ js.Any
       ] = js.native
     
     /**
@@ -228,7 +237,7 @@ object plotMod {
     /**
       * The _renderArea is the main SVG drawing area upon which this plot should draw to.
       */
-    var _renderArea: Selection_[SVGGElement, _, _, _] = js.native
+    var _renderArea: Selection_[SVGGElement, js.Any, js.Any, js.Any] = js.native
     
     /**
       * Callback that triggers when any scale that's bound to this plot Updates.
@@ -245,7 +254,7 @@ object plotMod {
       */
     /* private */ def _scales(): js.Any = js.native
     
-    /* protected */ def _uninstallScaleForKey(scale: Scale[_, _], key: String): Unit = js.native
+    /* protected */ def _uninstallScaleForKey(scale: Scale[js.Any, js.Any], key: String): Unit = js.native
     
     /**
       * Updates the extents associated with each attribute, then autodomains all scales the Plot uses.
@@ -402,12 +411,12 @@ object plotMod {
       */
     def filterEntities(where: js.Function2[/* entity */ ILightweightPlotEntity, /* index */ Double, Boolean]): js.Array[IPlotEntity] = js.native
     
-    /* protected */ def getExtentsForAttr(attr: String): js.Array[js.Array[_]] = js.native
+    /* protected */ def getExtentsForAttr(attr: String): js.Array[js.Array[js.Any]] = js.native
     
     /**
       * Override in subclass to add special extents, such as included values
       */
-    /* protected */ def getExtentsForProperty(property: String): js.Array[js.Array[_]] = js.native
+    /* protected */ def getExtentsForProperty(property: String): js.Array[js.Array[js.Any]] = js.native
     
     /**
       * Removes a Dataset from the Plot.
@@ -435,8 +444,8 @@ object plotMod {
       *   If not provided, Selections will be retrieved for all Datasets on the Plot.
       * @returns {d3.Selection}
       */
-    def selections(): SimpleSelection[_] = js.native
-    def selections(datasets: js.Array[Dataset]): SimpleSelection[_] = js.native
+    def selections(): SimpleSelection[js.Any] = js.native
+    def selections(datasets: js.Array[Dataset]): SimpleSelection[js.Any] = js.native
   }
   /* static members */
   object Plot {
@@ -457,17 +466,14 @@ object plotMod {
     @scala.inline
     def _ANIMATION_MAX_DURATION_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_ANIMATION_MAX_DURATION")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/plots/plot", "Plot._scaledAccessor")
-    @js.native
-    def _scaledAccessor[D, R](binding: IAccessorScaleBinding[D, R]): IAccessor[_] = js.native
+    @scala.inline
+    def _scaledAccessor[D, R](binding: IAccessorScaleBinding[D, R]): IAccessor[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("_scaledAccessor")(binding.asInstanceOf[js.Any]).asInstanceOf[IAccessor[js.Any]]
     
-    @JSImport("plottable/build/src/plots/plot", "Plot.applyDrawSteps")
-    @js.native
-    def applyDrawSteps(drawSteps: js.Array[DrawStep], dataset: Dataset): js.Array[AppliedDrawStep] = js.native
+    @scala.inline
+    def applyDrawSteps(drawSteps: js.Array[DrawStep], dataset: Dataset): js.Array[AppliedDrawStep] = (^.asInstanceOf[js.Dynamic].applyDynamic("applyDrawSteps")(drawSteps.asInstanceOf[js.Any], dataset.asInstanceOf[js.Any])).asInstanceOf[js.Array[AppliedDrawStep]]
     
-    @JSImport("plottable/build/src/plots/plot", "Plot.getTotalDrawTime")
-    @js.native
-    def getTotalDrawTime(data: js.Array[_], drawSteps: js.Array[DrawStep]): Double = js.native
+    @scala.inline
+    def getTotalDrawTime(data: js.Array[js.Any], drawSteps: js.Array[DrawStep]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTotalDrawTime")(data.asInstanceOf[js.Any], drawSteps.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /* keyof plottable.anon.Canvas */ /* Rewritten from type alias, can be one of: 

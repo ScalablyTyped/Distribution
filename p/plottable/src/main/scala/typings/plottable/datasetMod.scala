@@ -2,7 +2,6 @@ package typings.plottable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datasetMod {
@@ -18,9 +17,9 @@ object datasetMod {
     * @param {any} [metadata={}] An object containing additional information.
     */
   class Dataset () extends StObject {
-    def this(data: js.Array[_]) = this()
-    def this(data: js.UndefOr[scala.Nothing], metadata: js.Any) = this()
-    def this(data: js.Array[_], metadata: js.Any) = this()
+    def this(data: js.Array[js.Any]) = this()
+    def this(data: js.Array[js.Any], metadata: js.Any) = this()
+    def this(data: Unit, metadata: js.Any) = this()
     
     var _callbacks: js.Any = js.native
     
@@ -42,14 +41,14 @@ object datasetMod {
       *
       * @returns {any[]}
       */
-    def data(): js.Array[_] = js.native
+    def data(): js.Array[js.Any] = js.native
     /**
       * Sets the data.
       *
       * @param {any[]} data
       * @returns {Dataset} The calling Dataset.
       */
-    def data(data: js.Array[_]): this.type = js.native
+    def data(data: js.Array[js.Any]): this.type = js.native
     
     /**
       * Gets the metadata.

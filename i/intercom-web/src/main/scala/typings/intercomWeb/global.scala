@@ -4,7 +4,6 @@ import typings.intercomWeb.Intercom.IntercomSettings
 import typings.intercomWeb.Intercom.IntercomStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {

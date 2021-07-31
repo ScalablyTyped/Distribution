@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddApplicationCloudWatchLoggingOptionRequest extends StObject {
   
   /**
     * The Kinesis Data Analytics application name.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * Provides the Amazon CloudWatch log stream Amazon Resource Name (ARN). 
     */
-  var CloudWatchLoggingOption: typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOption = js.native
+  var CloudWatchLoggingOption: typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOption
   
   /**
     * The version ID of the Kinesis Data Analytics application. You can retrieve the application version ID using DescribeApplication.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
 }
 object AddApplicationCloudWatchLoggingOptionRequest {
   

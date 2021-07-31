@@ -2,37 +2,35 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the properties of the footnote area of a page or a page style. */
-@js.native
 trait PageFootnoteInfo extends StObject {
   
   /** contains the distance between the separator line and the footnote section. */
-  var FootnoteBottomDistance: Double = js.native
+  var FootnoteBottomDistance: Double
   
   /**
     * contains the maximum height of the footnote section.
     *
     * If 0, the maximum is the height of the page.
     */
-  var FootnoteHeight: Double = js.native
+  var FootnoteHeight: Double
   
   /** contains the adjustment of the footnote separator line. */
-  var FootnoteSeparatorLineAdjust: HorizontalAdjust = js.native
+  var FootnoteSeparatorLineAdjust: HorizontalAdjust
   
   /** contains the width of the pen for the footnote separator line. */
-  var FootnoteSeparatorLinePenWidth: Double = js.native
+  var FootnoteSeparatorLinePenWidth: Double
   
   /** contains the relative width of the footnote separator line. */
-  var FootnoteSeparatorLineWidth: Double = js.native
+  var FootnoteSeparatorLineWidth: Double
   
   /** contains the relative width of the footnote separator line. */
-  var FootnoteSeparatorLineWidthPercent: Double = js.native
+  var FootnoteSeparatorLineWidthPercent: Double
   
   /** contains the distance between the text and footnote section. */
-  var FootnoteTopDistance: Double = js.native
+  var FootnoteTopDistance: Double
 }
 object PageFootnoteInfo {
   

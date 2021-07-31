@@ -2,17 +2,15 @@ package typings.reactNativeFirebase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthCredential extends StObject {
   
-  var providerId: String = js.native
+  var providerId: String
   
-  var secret: String = js.native
+  var secret: String
   
-  var token: String = js.native
+  var token: String
 }
 object AuthCredential {
   

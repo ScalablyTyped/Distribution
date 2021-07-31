@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localesLocalesMod {
@@ -31,10 +30,9 @@ object localesLocalesMod {
     def preferredLocales(): String = js.native
   }
   
-  @js.native
   trait LocalesProps extends StObject {
     
-    var locale: String = js.native
+    var locale: String
   }
   object LocalesProps {
     

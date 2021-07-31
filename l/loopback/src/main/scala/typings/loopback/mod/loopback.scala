@@ -4,7 +4,6 @@ import typings.loopback.anon.Connector
 import typings.loopback.anon.Relations
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // interface CookieOptions extends core.CookieOptions { }
@@ -69,6 +68,10 @@ class loopback () extends StObject {
 }
 object loopback {
   
+  @JSImport("loopback", "loopback")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Alter an existing Model class.
     * @param {Model} ModelCtor The model constructor to alter.
@@ -78,9 +81,8 @@ object loopback {
     * @header loopback.configureModel(ModelCtor, config
     */
   /* static member */
-  @JSImport("loopback", "loopback.configureModel")
-  @js.native
-  def configureModel(ModelCtor: Model, config: Relations): Unit = js.native
+  @scala.inline
+  def configureModel(ModelCtor: Model, config: Relations): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureModel")(ModelCtor.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a data source with passing the provided options to the connector
@@ -91,9 +93,8 @@ object loopback {
     * See the relevant connector documentation
     */
   /* static member */
-  @JSImport("loopback", "loopback.createDataSource")
-  @js.native
-  def createDataSource(name: String, options: Connector): Unit = js.native
+  @scala.inline
+  def createDataSource(name: String, options: Connector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDataSource")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a named vanilla JavaScript class constructor with an attached
@@ -150,9 +151,8 @@ object loopback {
     * @header loopback.createMode
     */
   /* static member */
-  @JSImport("loopback", "loopback.createModel")
-  @js.native
-  def createModel(name: String, properties: js.Any, options: js.Any): Unit = js.native
+  @scala.inline
+  def createModel(name: String, properties: js.Any, options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createModel")(name.asInstanceOf[js.Any], properties.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Look up a model class by name from all models created by
@@ -162,9 +162,8 @@ object loopback {
     * @header loopback.findModel(modelName
     */
   /* static member */
-  @JSImport("loopback", "loopback.findModel")
-  @js.native
-  def findModel(modelName: String): Model = js.native
+  @scala.inline
+  def findModel(modelName: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("findModel")(modelName.asInstanceOf[js.Any]).asInstanceOf[Model]
   
   /**
     * Look up a model class by name from all models created by
@@ -174,9 +173,8 @@ object loopback {
     * @header loopback.getModel(modelName
     */
   /* static member */
-  @JSImport("loopback", "loopback.getModel")
-  @js.native
-  def getModel(modelName: String): Model = js.native
+  @scala.inline
+  def getModel(modelName: String): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("getModel")(modelName.asInstanceOf[js.Any]).asInstanceOf[Model]
   
   /**
     * Look up a model class by the base model class.
@@ -187,9 +185,8 @@ object loopback {
     * @header loopback.getModelByType(modelType
     */
   /* static member */
-  @JSImport("loopback", "loopback.getModelByType")
-  @js.native
-  def getModelByType(modelType: Model): Model = js.native
+  @scala.inline
+  def getModelByType(modelType: Model): Model = ^.asInstanceOf[js.Dynamic].applyDynamic("getModelByType")(modelType.asInstanceOf[js.Any]).asInstanceOf[Model]
   
   /**
     * Get an in-memory data source. Use one if it already exists
@@ -197,12 +194,10 @@ object loopback {
     * If not provided, the `'default'` is used
     */
   /* static member */
-  @JSImport("loopback", "loopback.memory")
-  @js.native
-  def memory(): Unit = js.native
-  @JSImport("loopback", "loopback.memory")
-  @js.native
-  def memory(name: String): Unit = js.native
+  @scala.inline
+  def memory(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")().asInstanceOf[Unit]
+  @scala.inline
+  def memory(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Add a remote method to a model.
@@ -210,9 +205,8 @@ object loopback {
     * @param {any} options (optional
     */
   /* static member */
-  @JSImport("loopback", "loopback.remoteMethod")
-  @js.native
-  def remoteMethod(fn: js.Function0[Unit], options: js.Any): Unit = js.native
+  @scala.inline
+  def remoteMethod(fn: js.Function0[Unit], options: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remoteMethod")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a template helper
@@ -222,7 +216,6 @@ object loopback {
     * @returns {() => void
     */
   /* static member */
-  @JSImport("loopback", "loopback.template")
-  @js.native
-  def template(path: String): Unit = js.native
+  @scala.inline
+  def template(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("template")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

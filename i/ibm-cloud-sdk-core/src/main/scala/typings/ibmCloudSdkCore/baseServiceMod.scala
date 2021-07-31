@@ -3,7 +3,6 @@ package typings.ibmCloudSdkCore
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseServiceMod {
@@ -126,18 +125,19 @@ object baseServiceMod {
     def URL_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("URL")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait BaseServiceOptions extends UserOptions {
+  trait BaseServiceOptions
+    extends StObject
+       with UserOptions {
     
     @JSName("headers")
-    var headers_BaseServiceOptions: HeaderOptions = js.native
+    var headers_BaseServiceOptions: HeaderOptions
     
-    var qs: js.Any = js.native
+    var qs: js.Any
     
-    var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+    var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
     
     @JSName("url")
-    var url_BaseServiceOptions: String = js.native
+    var url_BaseServiceOptions: String
   }
   object BaseServiceOptions {
     
@@ -167,20 +167,19 @@ object baseServiceMod {
     }
   }
   
-  @js.native
   trait Credentials extends StObject {
     
-    var iam_access_token: js.UndefOr[String] = js.native
+    var iam_access_token: js.UndefOr[String] = js.undefined
     
-    var iam_apikey: js.UndefOr[String] = js.native
+    var iam_apikey: js.UndefOr[String] = js.undefined
     
-    var iam_url: js.UndefOr[String] = js.native
+    var iam_url: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Credentials {
     
@@ -231,11 +230,11 @@ object baseServiceMod {
     }
   }
   
-  @js.native
   trait HeaderOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var `X-Watson-Learning-Opt-Out`: js.UndefOr[Boolean] = js.native
+    var `X-Watson-Learning-Opt-Out`: js.UndefOr[Boolean] = js.undefined
   }
   object HeaderOptions {
     
@@ -256,32 +255,31 @@ object baseServiceMod {
     }
   }
   
-  @js.native
   trait UserOptions extends StObject {
     
-    var apikey: js.UndefOr[String] = js.native
+    var apikey: js.UndefOr[String] = js.undefined
     
-    var disable_ssl_verification: js.UndefOr[Boolean] = js.native
+    var disable_ssl_verification: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[HeaderOptions] = js.native
+    var headers: js.UndefOr[HeaderOptions] = js.undefined
     
-    var iam_access_token: js.UndefOr[String] = js.native
+    var iam_access_token: js.UndefOr[String] = js.undefined
     
-    var iam_apikey: js.UndefOr[String] = js.native
+    var iam_apikey: js.UndefOr[String] = js.undefined
     
-    var iam_url: js.UndefOr[String] = js.native
+    var iam_url: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var use_unauthenticated: js.UndefOr[Boolean] = js.native
+    var use_unauthenticated: js.UndefOr[Boolean] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object UserOptions {
     

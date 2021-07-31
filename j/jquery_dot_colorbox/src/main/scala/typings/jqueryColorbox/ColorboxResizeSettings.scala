@@ -2,19 +2,17 @@ package typings.jqueryColorbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorboxResizeSettings extends StObject {
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var innerHeight: js.UndefOr[Double | String] = js.native
+  var innerHeight: js.UndefOr[Double | String] = js.undefined
   
-  var innerWidth: js.UndefOr[Double | String] = js.native
+  var innerWidth: js.UndefOr[Double | String] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object ColorboxResizeSettings {
   

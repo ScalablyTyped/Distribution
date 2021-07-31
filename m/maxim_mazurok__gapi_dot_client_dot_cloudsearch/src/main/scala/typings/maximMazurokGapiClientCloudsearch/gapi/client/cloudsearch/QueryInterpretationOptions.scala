@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryInterpretationOptions extends StObject {
   
   /**
     * Flag to disable natural language (NL) interpretation of queries. Default is false, Set to true to disable natural language interpretation. NL interpretation only applies to
     * predefined datasources.
     */
-  var disableNlInterpretation: js.UndefOr[Boolean] = js.native
+  var disableNlInterpretation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable this flag to turn off all internal optimizations like natural language (NL) interpretation of queries, supplemental result retrieval, and usage of synonyms including custom
     * ones. Nl interpretation will be disabled if either one of the two flags is true.
     */
-  var enableVerbatimMode: js.UndefOr[Boolean] = js.native
+  var enableVerbatimMode: js.UndefOr[Boolean] = js.undefined
 }
 object QueryInterpretationOptions {
   

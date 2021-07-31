@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilteredEventUIParam extends StObject {
   
   /**
     * Used to obtain a jquery reference to the rendered filtered elements.
     */
-  var elements: js.UndefOr[js.Any] = js.native
+  var elements: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to igCombo.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object FilteredEventUIParam {
   

@@ -3,38 +3,39 @@ package typings.wordpressBlockSerializationSpecParser
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/block-serialization-spec-parser", "parse")
+  @JSImport("@wordpress/block-serialization-spec-parser", JSImport.Namespace)
   @js.native
-  def parse(rawHtml: String): js.Array[Block] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def parse(rawHtml: String): js.Array[Block] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(rawHtml.asInstanceOf[js.Any]).asInstanceOf[js.Array[Block]]
+  
   trait Block extends StObject {
     
-    var attrs: Record[String, _] = js.native
+    var attrs: Record[String, js.Any]
     
-    var blockName: String | Null = js.native
+    var blockName: String | Null
     
-    var innerBlocks: js.Array[Block] = js.native
+    var innerBlocks: js.Array[Block]
     
-    var innerContent: js.Array[String] = js.native
+    var innerContent: js.Array[String]
     
-    var innerHTML: String = js.native
+    var innerHTML: String
   }
   object Block {
     
     @scala.inline
     def apply(
-      attrs: Record[String, _],
+      attrs: Record[String, js.Any],
       innerBlocks: js.Array[Block],
       innerContent: js.Array[String],
       innerHTML: String
     ): Block = {
-      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], innerBlocks = innerBlocks.asInstanceOf[js.Any], innerContent = innerContent.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(attrs = attrs.asInstanceOf[js.Any], innerBlocks = innerBlocks.asInstanceOf[js.Any], innerContent = innerContent.asInstanceOf[js.Any], innerHTML = innerHTML.asInstanceOf[js.Any], blockName = null)
       __obj.asInstanceOf[Block]
     }
     
@@ -42,7 +43,7 @@ object mod {
     implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttrs(value: Record[String, _]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
+      def setAttrs(value: Record[String, js.Any]): Self = StObject.set(x, "attrs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBlockName(value: String): Self = StObject.set(x, "blockName", value.asInstanceOf[js.Any])

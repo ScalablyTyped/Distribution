@@ -15,7 +15,6 @@ import typings.nsqjs.nsqjsStrings.respond
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,9 +42,9 @@ object mod {
     def on_respond(event: respond, listener: js.Function2[/* responseType */ Double, /* wireData */ Buffer, Unit]): this.type = js.native
     
     def requeue(): Unit = js.native
-    def requeue(delay: js.UndefOr[scala.Nothing], backoff: Boolean): Unit = js.native
     def requeue(delay: Double): Unit = js.native
     def requeue(delay: Double, backoff: Boolean): Unit = js.native
+    def requeue(delay: Unit, backoff: Boolean): Unit = js.native
     
     def respond(responseType: Double, wireData: Buffer): Unit = js.native
     
@@ -270,38 +269,37 @@ object mod {
     def READY_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("READY")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ConnectionConfigOptions extends StObject {
     
-    var authSecret: js.UndefOr[String] = js.native
+    var authSecret: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var deflate: js.UndefOr[Boolean] = js.native
+    var deflate: js.UndefOr[Boolean] = js.undefined
     
-    var deflateLevel: js.UndefOr[Double] = js.native
+    var deflateLevel: js.UndefOr[Double] = js.undefined
     
-    var heartbeatInterval: js.UndefOr[Double] = js.native
+    var heartbeatInterval: js.UndefOr[Double] = js.undefined
     
-    var idleTimeout: js.UndefOr[Double] = js.native
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
-    var maxInFlight: js.UndefOr[Double] = js.native
+    var maxInFlight: js.UndefOr[Double] = js.undefined
     
-    var messageTimeout: js.UndefOr[Double] = js.native
+    var messageTimeout: js.UndefOr[Double] = js.undefined
     
-    var outputBufferSize: js.UndefOr[Double] = js.native
+    var outputBufferSize: js.UndefOr[Double] = js.undefined
     
-    var outputBufferTimeout: js.UndefOr[Double] = js.native
+    var outputBufferTimeout: js.UndefOr[Double] = js.undefined
     
-    var requeueDelay: js.UndefOr[Double] = js.native
+    var requeueDelay: js.UndefOr[Double] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
     
-    var snappy: js.UndefOr[Boolean] = js.native
+    var snappy: js.UndefOr[Boolean] = js.undefined
     
-    var tls: js.UndefOr[Boolean] = js.native
+    var tls: js.UndefOr[Boolean] = js.undefined
     
-    var tlsVerification: js.UndefOr[Boolean] = js.native
+    var tlsVerification: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectionConfigOptions {
     
@@ -406,24 +404,25 @@ object mod {
     }
   }
   
-  @js.native
-  trait ReaderConnectionConfigOptions extends ConnectionConfigOptions {
+  trait ReaderConnectionConfigOptions
+    extends StObject
+       with ConnectionConfigOptions {
     
-    var lookupdHTTPAddresses: js.UndefOr[String | js.Array[String]] = js.native
+    var lookupdHTTPAddresses: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var lookupdPollInterval: js.UndefOr[Double] = js.native
+    var lookupdPollInterval: js.UndefOr[Double] = js.undefined
     
-    var lookupdPollJitter: js.UndefOr[Double] = js.native
+    var lookupdPollJitter: js.UndefOr[Double] = js.undefined
     
-    var lowRdyTimeout: js.UndefOr[Double] = js.native
+    var lowRdyTimeout: js.UndefOr[Double] = js.undefined
     
-    var maxAttempts: js.UndefOr[Double] = js.native
+    var maxAttempts: js.UndefOr[Double] = js.undefined
     
-    var maxBackoffDuration: js.UndefOr[Double] = js.native
+    var maxBackoffDuration: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nsqdTCPAddresses: js.UndefOr[String | js.Array[String]] = js.native
+    var nsqdTCPAddresses: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object ReaderConnectionConfigOptions {
     

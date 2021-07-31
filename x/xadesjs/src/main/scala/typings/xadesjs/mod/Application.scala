@@ -3,7 +3,6 @@ package typings.xadesjs.mod
 import typings.std.Crypto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("xadesjs", "Application")
@@ -13,9 +12,12 @@ class Application ()
 /* static members */
 object Application {
   
-  @JSImport("xadesjs", "Application.isNodePlugin")
+  @JSImport("xadesjs", "Application")
   @js.native
-  def isNodePlugin(): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isNodePlugin(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodePlugin")().asInstanceOf[Boolean]
   
   /**
     * Sets crypto engine for the current Application
@@ -23,7 +25,6 @@ object Application {
     * @param  {Crypto} crypto
     * @returns void
     */
-  @JSImport("xadesjs", "Application.setEngine")
-  @js.native
-  def setEngine(name: String, crypto: Crypto): Unit = js.native
+  @scala.inline
+  def setEngine(name: String, crypto: Crypto): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setEngine")(name.asInstanceOf[js.Any], crypto.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

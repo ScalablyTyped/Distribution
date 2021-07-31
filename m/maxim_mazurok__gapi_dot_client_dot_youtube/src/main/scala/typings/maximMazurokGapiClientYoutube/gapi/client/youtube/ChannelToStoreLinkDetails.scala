@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelToStoreLinkDetails extends StObject {
   
   /** Name of the store. */
-  var storeName: js.UndefOr[String] = js.native
+  var storeName: js.UndefOr[String] = js.undefined
   
   /** Landing page of the store. */
-  var storeUrl: js.UndefOr[String] = js.native
+  var storeUrl: js.UndefOr[String] = js.undefined
 }
 object ChannelToStoreLinkDetails {
   

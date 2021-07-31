@@ -2,16 +2,14 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDealTermsNonGuaranteedFixedPriceTerms extends StObject {
   
   /**
     * Fixed price for the specified buyer.
     */
-  var fixedPrices: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.native
+  var fixedPrices: js.UndefOr[js.Array[SchemaPricePerBuyer]] = js.undefined
 }
 object SchemaDealTermsNonGuaranteedFixedPriceTerms {
   

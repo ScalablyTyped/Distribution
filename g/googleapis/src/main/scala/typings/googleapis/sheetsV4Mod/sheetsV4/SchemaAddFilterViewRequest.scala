@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds a filter view.
   */
-@js.native
 trait SchemaAddFilterViewRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaAddFilterViewRequest extends StObject {
     * an id will be randomly generated. (It is an error to specify the ID of a
     * filter that already exists.)
     */
-  var filter: js.UndefOr[SchemaFilterView] = js.native
+  var filter: js.UndefOr[SchemaFilterView] = js.undefined
 }
 object SchemaAddFilterViewRequest {
   

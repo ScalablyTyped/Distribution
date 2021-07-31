@@ -30,93 +30,72 @@ import typings.leafletRoutingMachine.mod.Routing_.Waypoint_
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routing {
   
-  @JSImport("leaflet", "routing.autocomplete")
+  @JSImport("leaflet", "routing")
   @js.native
-  def autocomplete(element: HTMLElement, callback: js.Any, context: js.Any, options: AutoCompleteOptions): AutoComplete_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("leaflet", "routing.control")
-  @js.native
-  def control(): Control_ = js.native
-  @JSImport("leaflet", "routing.control")
-  @js.native
-  def control(options: RoutingControlOptions): Control_ = js.native
+  @scala.inline
+  def autocomplete(element: HTMLElement, callback: js.Any, context: js.Any, options: AutoCompleteOptions): AutoComplete_ = (^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AutoComplete_]
   
-  @JSImport("leaflet", "routing.errorControl")
-  @js.native
-  def errorControl(routingControl: Control_, options: ErrorControlOptions): ErrorControl_ = js.native
+  @scala.inline
+  def control(): Control_ = ^.asInstanceOf[js.Dynamic].applyDynamic("control")().asInstanceOf[Control_]
+  @scala.inline
+  def control(options: RoutingControlOptions): Control_ = ^.asInstanceOf[js.Dynamic].applyDynamic("control")(options.asInstanceOf[js.Any]).asInstanceOf[Control_]
   
-  @JSImport("leaflet", "routing.formatter")
-  @js.native
-  def formatter(): Formatter_ = js.native
-  @JSImport("leaflet", "routing.formatter")
-  @js.native
-  def formatter(options: FormatterOptions): Formatter_ = js.native
+  @scala.inline
+  def errorControl(routingControl: Control_, options: ErrorControlOptions): ErrorControl_ = (^.asInstanceOf[js.Dynamic].applyDynamic("errorControl")(routingControl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ErrorControl_]
   
-  @JSImport("leaflet", "routing.geocoderElement")
-  @js.native
-  def geocoderElement(waypoint: Waypoint_, i: Double, numberWaypoints: Double, options: GeocoderElementOptions): GeocoderElement_ = js.native
+  @scala.inline
+  def formatter(): Formatter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatter")().asInstanceOf[Formatter_]
+  @scala.inline
+  def formatter(options: FormatterOptions): Formatter_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formatter")(options.asInstanceOf[js.Any]).asInstanceOf[Formatter_]
   
-  @JSImport("leaflet", "routing.itinerary")
-  @js.native
-  def itinerary(): Itinerary_ = js.native
-  @JSImport("leaflet", "routing.itinerary")
-  @js.native
-  def itinerary(options: ItineraryOptions): Itinerary_ = js.native
+  @scala.inline
+  def geocoderElement(waypoint: Waypoint_, i: Double, numberWaypoints: Double, options: GeocoderElementOptions): GeocoderElement_ = (^.asInstanceOf[js.Dynamic].applyDynamic("geocoderElement")(waypoint.asInstanceOf[js.Any], i.asInstanceOf[js.Any], numberWaypoints.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[GeocoderElement_]
   
-  @JSImport("leaflet", "routing.itineraryBuilder")
-  @js.native
-  def itineraryBuilder(): ItineraryBuilder_ = js.native
-  @JSImport("leaflet", "routing.itineraryBuilder")
-  @js.native
-  def itineraryBuilder(options: ItineraryBuilderOptions): ItineraryBuilder_ = js.native
+  @scala.inline
+  def itinerary(): Itinerary_ = ^.asInstanceOf[js.Dynamic].applyDynamic("itinerary")().asInstanceOf[Itinerary_]
+  @scala.inline
+  def itinerary(options: ItineraryOptions): Itinerary_ = ^.asInstanceOf[js.Dynamic].applyDynamic("itinerary")(options.asInstanceOf[js.Any]).asInstanceOf[Itinerary_]
   
-  @JSImport("leaflet", "routing.line")
-  @js.native
-  def line(route: IRoute): Line_ = js.native
-  @JSImport("leaflet", "routing.line")
-  @js.native
-  def line(route: IRoute, options: LineOptions): Line_ = js.native
+  @scala.inline
+  def itineraryBuilder(): ItineraryBuilder_ = ^.asInstanceOf[js.Dynamic].applyDynamic("itineraryBuilder")().asInstanceOf[ItineraryBuilder_]
+  @scala.inline
+  def itineraryBuilder(options: ItineraryBuilderOptions): ItineraryBuilder_ = ^.asInstanceOf[js.Dynamic].applyDynamic("itineraryBuilder")(options.asInstanceOf[js.Any]).asInstanceOf[ItineraryBuilder_]
   
-  @JSImport("leaflet", "routing.localization")
-  @js.native
-  def localization(): Localization_ = js.native
-  @JSImport("leaflet", "routing.localization")
-  @js.native
-  def localization(options: LocalizationOptions): Localization_ = js.native
+  @scala.inline
+  def line(route: IRoute): Line_ = ^.asInstanceOf[js.Dynamic].applyDynamic("line")(route.asInstanceOf[js.Any]).asInstanceOf[Line_]
+  @scala.inline
+  def line(route: IRoute, options: LineOptions): Line_ = (^.asInstanceOf[js.Dynamic].applyDynamic("line")(route.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Line_]
   
-  @JSImport("leaflet", "routing.mapbox")
-  @js.native
-  def mapbox(accessToken: String, options: OSRMOptions): MapBox_ = js.native
+  @scala.inline
+  def localization(): Localization_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localization")().asInstanceOf[Localization_]
+  @scala.inline
+  def localization(options: LocalizationOptions): Localization_ = ^.asInstanceOf[js.Dynamic].applyDynamic("localization")(options.asInstanceOf[js.Any]).asInstanceOf[Localization_]
   
-  @JSImport("leaflet", "routing.osrmv1")
-  @js.native
-  def osrmv1(): OSRMv1_ = js.native
-  @JSImport("leaflet", "routing.osrmv1")
-  @js.native
-  def osrmv1(options: OSRMOptions): OSRMv1_ = js.native
+  @scala.inline
+  def mapbox(accessToken: String, options: OSRMOptions): MapBox_ = (^.asInstanceOf[js.Dynamic].applyDynamic("mapbox")(accessToken.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MapBox_]
   
-  @JSImport("leaflet", "routing.plan")
-  @js.native
-  def plan(waypoints: js.Array[LatLng_ | Waypoint_]): Plan_ = js.native
-  @JSImport("leaflet", "routing.plan")
-  @js.native
-  def plan(waypoints: js.Array[LatLng_ | Waypoint_], options: PlanOptions): Plan_ = js.native
+  @scala.inline
+  def osrmv1(): OSRMv1_ = ^.asInstanceOf[js.Dynamic].applyDynamic("osrmv1")().asInstanceOf[OSRMv1_]
+  @scala.inline
+  def osrmv1(options: OSRMOptions): OSRMv1_ = ^.asInstanceOf[js.Dynamic].applyDynamic("osrmv1")(options.asInstanceOf[js.Any]).asInstanceOf[OSRMv1_]
   
-  @JSImport("leaflet", "routing.waypoint")
-  @js.native
-  def waypoint(latLng: LatLng_): Waypoint_ = js.native
-  @JSImport("leaflet", "routing.waypoint")
-  @js.native
-  def waypoint(latLng: LatLng_, name: js.UndefOr[scala.Nothing], options: WaypointOptions): Waypoint_ = js.native
-  @JSImport("leaflet", "routing.waypoint")
-  @js.native
-  def waypoint(latLng: LatLng_, name: String): Waypoint_ = js.native
-  @JSImport("leaflet", "routing.waypoint")
-  @js.native
-  def waypoint(latLng: LatLng_, name: String, options: WaypointOptions): Waypoint_ = js.native
+  @scala.inline
+  def plan(waypoints: js.Array[LatLng_ | Waypoint_]): Plan_ = ^.asInstanceOf[js.Dynamic].applyDynamic("plan")(waypoints.asInstanceOf[js.Any]).asInstanceOf[Plan_]
+  @scala.inline
+  def plan(waypoints: js.Array[LatLng_ | Waypoint_], options: PlanOptions): Plan_ = (^.asInstanceOf[js.Dynamic].applyDynamic("plan")(waypoints.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Plan_]
+  
+  @scala.inline
+  def waypoint(latLng: LatLng_): Waypoint_ = ^.asInstanceOf[js.Dynamic].applyDynamic("waypoint")(latLng.asInstanceOf[js.Any]).asInstanceOf[Waypoint_]
+  @scala.inline
+  def waypoint(latLng: LatLng_, name: String): Waypoint_ = (^.asInstanceOf[js.Dynamic].applyDynamic("waypoint")(latLng.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[Waypoint_]
+  @scala.inline
+  def waypoint(latLng: LatLng_, name: String, options: WaypointOptions): Waypoint_ = (^.asInstanceOf[js.Dynamic].applyDynamic("waypoint")(latLng.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Waypoint_]
+  @scala.inline
+  def waypoint(latLng: LatLng_, name: Unit, options: WaypointOptions): Waypoint_ = (^.asInstanceOf[js.Dynamic].applyDynamic("waypoint")(latLng.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Waypoint_]
 }

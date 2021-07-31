@@ -3,11 +3,12 @@ package typings.p5.mod
 import typings.std.AudioNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Distortion extends Effect {
+trait Distortion
+  extends StObject
+     with Effect {
   
   /**
     *   The p5.Distortion is built with a  Web Audio
@@ -38,9 +39,9 @@ trait Distortion extends Effect {
     *   @param [oversample] 'none', '2x', or '4x'.
     */
   def process(): Unit = js.native
-  def process(amount: js.UndefOr[scala.Nothing], oversample: String): Unit = js.native
   def process(amount: Double): Unit = js.native
   def process(amount: Double, oversample: String): Unit = js.native
+  def process(amount: Unit, oversample: String): Unit = js.native
   
   /**
     *   Set the amount and oversample of the waveshaper
@@ -50,7 +51,7 @@ trait Distortion extends Effect {
     *   @param [oversample] 'none', '2x', or '4x'.
     */
   def set(): Unit = js.native
-  def set(amount: js.UndefOr[scala.Nothing], oversample: String): Unit = js.native
   def set(amount: Double): Unit = js.native
   def set(amount: Double, oversample: String): Unit = js.native
+  def set(amount: Unit, oversample: String): Unit = js.native
 }

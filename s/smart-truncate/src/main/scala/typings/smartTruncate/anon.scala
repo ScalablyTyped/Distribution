@@ -2,17 +2,15 @@ package typings.smartTruncate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Mark extends StObject {
     
-    var mark: js.UndefOr[String] = js.native
+    var mark: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
   }
   object Mark {
     

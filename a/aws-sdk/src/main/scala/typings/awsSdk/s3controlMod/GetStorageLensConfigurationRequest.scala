@@ -2,21 +2,19 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStorageLensConfigurationRequest extends StObject {
   
   /**
     * The account ID of the requester.
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The ID of the Amazon S3 Storage Lens configuration.
     */
-  var ConfigId: typings.awsSdk.s3controlMod.ConfigId = js.native
+  var ConfigId: typings.awsSdk.s3controlMod.ConfigId
 }
 object GetStorageLensConfigurationRequest {
   

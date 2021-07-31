@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,82 +24,67 @@ trait Research extends StObject {
     * @param boolean [LaunchQuery=true]
     */
   def Query(ServiceID: String): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.UndefOr[scala.Nothing],
-    QueryLanguage: js.UndefOr[scala.Nothing],
-    UseSelection: js.UndefOr[scala.Nothing],
-    LaunchQuery: Boolean
-  ): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.UndefOr[scala.Nothing],
-    QueryLanguage: js.UndefOr[scala.Nothing],
-    UseSelection: Boolean
-  ): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.UndefOr[scala.Nothing],
-    QueryLanguage: js.UndefOr[scala.Nothing],
-    UseSelection: Boolean,
-    LaunchQuery: Boolean
-  ): js.Any = js.native
-  def Query(ServiceID: String, QueryString: js.UndefOr[scala.Nothing], QueryLanguage: WdLanguageID): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.UndefOr[scala.Nothing],
-    QueryLanguage: WdLanguageID,
-    UseSelection: js.UndefOr[scala.Nothing],
-    LaunchQuery: Boolean
-  ): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.UndefOr[scala.Nothing],
-    QueryLanguage: WdLanguageID,
-    UseSelection: Boolean
-  ): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: js.UndefOr[scala.Nothing],
-    QueryLanguage: WdLanguageID,
-    UseSelection: Boolean,
-    LaunchQuery: Boolean
-  ): js.Any = js.native
   def Query(ServiceID: String, QueryString: String): js.Any = js.native
+  def Query(ServiceID: String, QueryString: String, QueryLanguage: Unit, UseSelection: Boolean): js.Any = js.native
   def Query(
     ServiceID: String,
     QueryString: String,
-    QueryLanguage: js.UndefOr[scala.Nothing],
-    UseSelection: js.UndefOr[scala.Nothing],
+    QueryLanguage: Unit,
+    UseSelection: Boolean,
     LaunchQuery: Boolean
   ): js.Any = js.native
   def Query(
     ServiceID: String,
     QueryString: String,
-    QueryLanguage: js.UndefOr[scala.Nothing],
-    UseSelection: Boolean
-  ): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: String,
-    QueryLanguage: js.UndefOr[scala.Nothing],
-    UseSelection: Boolean,
+    QueryLanguage: Unit,
+    UseSelection: Unit,
     LaunchQuery: Boolean
   ): js.Any = js.native
   def Query(ServiceID: String, QueryString: String, QueryLanguage: WdLanguageID): js.Any = js.native
-  def Query(
-    ServiceID: String,
-    QueryString: String,
-    QueryLanguage: WdLanguageID,
-    UseSelection: js.UndefOr[scala.Nothing],
-    LaunchQuery: Boolean
-  ): js.Any = js.native
   def Query(ServiceID: String, QueryString: String, QueryLanguage: WdLanguageID, UseSelection: Boolean): js.Any = js.native
   def Query(
     ServiceID: String,
     QueryString: String,
     QueryLanguage: WdLanguageID,
     UseSelection: Boolean,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: String,
+    QueryLanguage: WdLanguageID,
+    UseSelection: Unit,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: Unit, UseSelection: Boolean): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: Unit,
+    QueryLanguage: Unit,
+    UseSelection: Boolean,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: Unit,
+    QueryLanguage: Unit,
+    UseSelection: Unit,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: WdLanguageID): js.Any = js.native
+  def Query(ServiceID: String, QueryString: Unit, QueryLanguage: WdLanguageID, UseSelection: Boolean): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: Unit,
+    QueryLanguage: WdLanguageID,
+    UseSelection: Boolean,
+    LaunchQuery: Boolean
+  ): js.Any = js.native
+  def Query(
+    ServiceID: String,
+    QueryString: Unit,
+    QueryLanguage: WdLanguageID,
+    UseSelection: Unit,
     LaunchQuery: Boolean
   ): js.Any = js.native
   

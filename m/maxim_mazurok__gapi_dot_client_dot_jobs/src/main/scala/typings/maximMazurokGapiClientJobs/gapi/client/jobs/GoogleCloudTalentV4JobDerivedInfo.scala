@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudTalentV4JobDerivedInfo extends StObject {
   
   /** Job categories derived from Job.title and Job.description. */
-  var jobCategories: js.UndefOr[js.Array[String]] = js.native
+  var jobCategories: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Structured locations of the job, resolved from Job.addresses. locations are exactly matched to Job.addresses in the same order. */
-  var locations: js.UndefOr[js.Array[GoogleCloudTalentV4Location]] = js.native
+  var locations: js.UndefOr[js.Array[GoogleCloudTalentV4Location]] = js.undefined
 }
 object GoogleCloudTalentV4JobDerivedInfo {
   

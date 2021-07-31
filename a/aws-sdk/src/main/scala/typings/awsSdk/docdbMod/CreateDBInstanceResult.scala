@@ -2,13 +2,11 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBInstanceResult extends StObject {
   
-  var DBInstance: js.UndefOr[typings.awsSdk.docdbMod.DBInstance] = js.native
+  var DBInstance: js.UndefOr[typings.awsSdk.docdbMod.DBInstance] = js.undefined
 }
 object CreateDBInstanceResult {
   

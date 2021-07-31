@@ -2,53 +2,51 @@ package typings.steamLogin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Avatar extends StObject {
     
-    var avatar: String = js.native
+    var avatar: String
     
-    var avatarfull: String = js.native
+    var avatarfull: String
     
-    var avatarmedium: String = js.native
+    var avatarmedium: String
     
-    var commentpermission: js.UndefOr[Double] = js.native
+    var commentpermission: js.UndefOr[Double] = js.undefined
     
-    var communityvisibilitystate: Double = js.native
+    var communityvisibilitystate: Double
     
-    var gameextrainfo: js.UndefOr[String] = js.native
+    var gameextrainfo: js.UndefOr[String] = js.undefined
     
-    var gameid: js.UndefOr[String] = js.native
+    var gameid: js.UndefOr[String] = js.undefined
     
-    var gameserverip: js.UndefOr[String] = js.native
+    var gameserverip: js.UndefOr[String] = js.undefined
     
-    var lastlogoff: Double = js.native
+    var lastlogoff: Double
     
-    var loccityid: js.UndefOr[Double] = js.native
+    var loccityid: js.UndefOr[Double] = js.undefined
     
-    var loccountrycode: js.UndefOr[String] = js.native
+    var loccountrycode: js.UndefOr[String] = js.undefined
     
-    var locstatecode: js.UndefOr[String] = js.native
+    var locstatecode: js.UndefOr[String] = js.undefined
     
-    var personaname: String = js.native
+    var personaname: String
     
-    var personastate: Double = js.native
+    var personastate: Double
     
-    var primaryclanid: js.UndefOr[String] = js.native
+    var primaryclanid: js.UndefOr[String] = js.undefined
     
-    var profilestate: js.UndefOr[Double] = js.native
+    var profilestate: js.UndefOr[Double] = js.undefined
     
-    var profileurl: String = js.native
+    var profileurl: String
     
-    var realname: js.UndefOr[String] = js.native
+    var realname: js.UndefOr[String] = js.undefined
     
-    var steamid: String = js.native
+    var steamid: String
     
-    var timecreated: js.UndefOr[Double] = js.native
+    var timecreated: js.UndefOr[Double] = js.undefined
   }
   object Avatar {
     
@@ -166,14 +164,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Large extends StObject {
     
-    var large: String = js.native
+    var large: String
     
-    var medium: String = js.native
+    var medium: String
     
-    var small: String = js.native
+    var small: String
   }
   object Large {
     

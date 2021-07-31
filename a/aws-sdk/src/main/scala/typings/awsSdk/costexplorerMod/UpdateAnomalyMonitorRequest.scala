@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAnomalyMonitorRequest extends StObject {
   
   /**
     *  Cost anomaly monitor Amazon Resource Names (ARNs). 
     */
-  var MonitorArn: GenericString = js.native
+  var MonitorArn: GenericString
   
   /**
     *  The new name for the cost anomaly monitor. 
     */
-  var MonitorName: js.UndefOr[GenericString] = js.native
+  var MonitorName: js.UndefOr[GenericString] = js.undefined
 }
 object UpdateAnomalyMonitorRequest {
   

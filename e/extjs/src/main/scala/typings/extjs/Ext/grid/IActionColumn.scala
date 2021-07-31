@@ -4,15 +4,14 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IActionColumn
-  extends typings.extjs.Ext.grid.column.IColumn {
+  extends StObject
+     with typings.extjs.Ext.grid.column.IColumn {
   
   /** [Config Option] (String) */
-  var altText: js.UndefOr[String] = js.native
+  var altText: js.UndefOr[String] = js.undefined
   
   /** [Method] Cascades down the component container heirarchy from this component passed in the first call  calling the specified
     * @param fn Object
@@ -22,7 +21,7 @@ trait IActionColumn
   @JSName("cascade")
   var cascade_IActionColumn: js.UndefOr[
     js.Function2[/* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any], IContainer]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Renderer closure iterates through items creating an element for each and tagging with an identifying class name x ac
     * @param v Object
@@ -45,7 +44,7 @@ trait IActionColumn
       /* view */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Disables this ActionColumn s action at the specified index
     * @param index Number/Ext.grid.column.Action
@@ -53,7 +52,7 @@ trait IActionColumn
     */
   var disableAction: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Enables this ActionColumn s action at the specified index
     * @param index Number/Ext.grid.column.Action
@@ -61,34 +60,34 @@ trait IActionColumn
     */
   var enableAction: js.UndefOr[
     js.Function2[/* index */ js.UndefOr[js.Any], /* silent */ js.UndefOr[Boolean], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Function) */
   @JSName("getClass")
-  var getClass_FIActionColumn: js.UndefOr[js.Any] = js.native
+  var getClass_FIActionColumn: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Private override because this cannot function as a Container and it has an items property which is an Array NOT a M  */
   @JSName("getRefItems")
-  var getRefItems_IActionColumn: js.UndefOr[js.Function0[Unit]] = js.native
+  var getRefItems_IActionColumn: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var getTip: js.UndefOr[js.Any] = js.native
+  var getTip: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Function) */
-  var handler: js.UndefOr[js.Any] = js.native
+  var handler: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var iconCls: js.UndefOr[String] = js.native
+  var iconCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Object[]) */
   @JSName("items")
-  var items_IActionColumn: js.UndefOr[Array] = js.native
+  var items_IActionColumn: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var stopSelection: js.UndefOr[Boolean] = js.native
+  var stopSelection: js.UndefOr[Boolean] = js.undefined
 }
 object IActionColumn {
   

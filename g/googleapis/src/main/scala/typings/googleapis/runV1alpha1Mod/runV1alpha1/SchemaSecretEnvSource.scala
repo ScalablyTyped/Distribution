@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with.  The contents of the target Secret&#39;s Data field will represent
   * the key-value pairs as environment variables.
   */
-@js.native
 trait SchemaSecretEnvSource extends StObject {
   
   /**
     * The Secret to select from.
     */
-  var localObjectReference: js.UndefOr[SchemaLocalObjectReference] = js.native
+  var localObjectReference: js.UndefOr[SchemaLocalObjectReference] = js.undefined
   
   /**
     * Specify whether the Secret must be defined +optional
     */
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaSecretEnvSource {
   

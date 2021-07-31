@@ -3,10 +3,8 @@ package typings.pulumiAws.inputMod.kinesis
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat extends StObjec
     */
   var mappingParameters: js.UndefOr[
     Input[AnalyticsApplicationReferenceDataSourcesSchemaRecordFormatMappingParameters]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The type of Record Format. Can be `CSV` or `JSON`.
     */
-  var recordFormatType: js.UndefOr[Input[String]] = js.native
+  var recordFormatType: js.UndefOr[Input[String]] = js.undefined
 }
 object AnalyticsApplicationReferenceDataSourcesSchemaRecordFormat {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreTableRequest extends StObject {
   
   /** Name of the backup from which to restore. Values are of the form `projects//instances//clusters//backups/`. */
-  var backup: js.UndefOr[String] = js.native
+  var backup: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The id of the table to create and restore to. This table must not already exist. The `table_id` appended to `parent` forms the full table name of the form
     * `projects//instances//tables/`.
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object RestoreTableRequest {
   

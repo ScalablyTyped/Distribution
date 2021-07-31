@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeHierarchicalDataSourceSettingsTreeDSPaging
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -22,7 +21,7 @@ trait TreeHierarchicalDataSourceSettingsTreeDSPaging
     * "parent" Renders a read-only representation of the immediate parent row
     * "breadcrumb" Renders a read-only breadcrumb trail representing the full path through all ancestors
     */
-  var contextRowMode: js.UndefOr[String] = js.native
+  var contextRowMode: js.UndefOr[String] = js.undefined
   
   /**
     * Sets gets paging mode.
@@ -30,7 +29,7 @@ trait TreeHierarchicalDataSourceSettingsTreeDSPaging
     * Valid values:
     * "allLevels" includes all visible records in paging.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
 }
 object TreeHierarchicalDataSourceSettingsTreeDSPaging {
   

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("BootstrapClientTreeViewNodeEventArgs")
 @js.native
 class BootstrapClientTreeViewNodeEventArgs protected ()
-  extends typings.devexpressWeb.BootstrapClientTreeViewNodeEventArgs {
+  extends StObject
+     with typings.devexpressWeb.BootstrapClientTreeViewNodeEventArgs {
   /**
     * Initializes a new object of the BootstrapClientTreeViewNodeEventArgs type with the specified value.
     * @param node An BootstrapClientTreeViewNode object representing the node related to the event.
     */
   def this(node: typings.devexpressWeb.BootstrapClientTreeViewNode) = this()
+  
+  /**
+    * Gets a node object related to the event.
+    */
+  /* CompleteClass */
+  var node: typings.devexpressWeb.BootstrapClientTreeViewNode = js.native
 }

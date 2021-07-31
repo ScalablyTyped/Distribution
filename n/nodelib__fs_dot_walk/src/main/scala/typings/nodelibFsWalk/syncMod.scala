@@ -3,27 +3,39 @@ package typings.nodelibFsWalk
 import typings.nodelibFsWalk.typesMod.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syncMod {
   
   @JSImport("@nodelib/fs.walk/out/providers/sync", JSImport.Default)
   @js.native
-  class default protected () extends SyncProvider {
+  class default protected ()
+    extends StObject
+       with SyncProvider {
     def this(_root: String, _settings: typings.nodelibFsWalk.settingsMod.default) = this()
+    
+    /* CompleteClass */
+    override val _reader: typings.nodelibFsWalk.readersSyncMod.default = js.native
+    
+    /* CompleteClass */
+    override val _root: js.Any = js.native
+    
+    /* CompleteClass */
+    override val _settings: js.Any = js.native
+    
+    /* CompleteClass */
+    override def read(): js.Array[Entry] = js.native
   }
   
-  @js.native
   trait SyncProvider extends StObject {
     
-    val _reader: typings.nodelibFsWalk.readersSyncMod.default = js.native
+    val _reader: typings.nodelibFsWalk.readersSyncMod.default
     
-    val _root: js.Any = js.native
+    val _root: js.Any
     
-    val _settings: js.Any = js.native
+    val _settings: js.Any
     
-    def read(): js.Array[Entry] = js.native
+    def read(): js.Array[Entry]
   }
   object SyncProvider {
     

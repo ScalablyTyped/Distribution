@@ -2,17 +2,15 @@ package typings.monacoEditor.mod.editor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDiffNavigatorOptions extends StObject {
   
-  val alwaysRevealFirst: js.UndefOr[Boolean] = js.native
+  val alwaysRevealFirst: js.UndefOr[Boolean] = js.undefined
   
-  val followsCaret: js.UndefOr[Boolean] = js.native
+  val followsCaret: js.UndefOr[Boolean] = js.undefined
   
-  val ignoreCharChanges: js.UndefOr[Boolean] = js.native
+  val ignoreCharChanges: js.UndefOr[Boolean] = js.undefined
 }
 object IDiffNavigatorOptions {
   

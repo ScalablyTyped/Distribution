@@ -4,7 +4,6 @@ import typings.xrm.Xrm.Collection.StringIndexableItemCollection
 import typings.xrm.XrmEnum.AttributeTypeCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,26 +14,25 @@ object Metadata {
   /**
     * Type to hold the Attribute metadata as part of the EntityMetadata
     */
-  @js.native
   trait AttributeMetadata extends StObject {
     
-    var AttributeType: AttributeTypeCode = js.native
+    var AttributeType: AttributeTypeCode
     
-    var DefaultFormValue: Double = js.native
+    var DefaultFormValue: Double
     
-    var DisplayName: String = js.native
+    var DisplayName: String
     
-    var EntityLogicalName: String = js.native
-    
-    /**
-      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
-      */
-    var LogicalName: String = js.native
+    var EntityLogicalName: String
     
     /**
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    var OptionSet: js.Array[OptionMetadata] = js.native
+    var LogicalName: String
+    
+    /**
+      * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
+      */
+    var OptionSet: js.Array[OptionMetadata]
   }
   object AttributeMetadata {
     
@@ -80,121 +78,120 @@ object Metadata {
   /**
     * Types returned by a call to getEntityMetadata
     */
-  @js.native
   trait EntityMetadata extends StObject {
     
-    var ActivityTypeMask: Double = js.native
+    var ActivityTypeMask: Double
     
     /**
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    var Attributes: StringIndexableItemCollection[AttributeMetadata] = js.native
+    var Attributes: StringIndexableItemCollection[AttributeMetadata]
     
-    var AutoRouteToOwnerQueue: Boolean = js.native
+    var AutoRouteToOwnerQueue: Boolean
     
-    var CanBeInManyToMany: Boolean = js.native
+    var CanBeInManyToMany: Boolean
     
-    var CanBePrimaryEntityInRelationship: Boolean = js.native
+    var CanBePrimaryEntityInRelationship: Boolean
     
-    var CanBeRelatedEntityInRelationship: Boolean = js.native
+    var CanBeRelatedEntityInRelationship: Boolean
     
-    var CanCreateAttributes: Boolean = js.native
+    var CanCreateAttributes: Boolean
     
-    var CanCreateCharts: Boolean = js.native
+    var CanCreateCharts: Boolean
     
-    var CanCreateForms: Boolean = js.native
+    var CanCreateForms: Boolean
     
-    var CanCreateViews: Boolean = js.native
+    var CanCreateViews: Boolean
     
-    var CanEnableSyncToExternalSearchIndex: Boolean = js.native
+    var CanEnableSyncToExternalSearchIndex: Boolean
     
-    var CanModifyAdditionalSettings: Boolean = js.native
+    var CanModifyAdditionalSettings: Boolean
     
-    var CanTriggerWorkflow: Boolean = js.native
+    var CanTriggerWorkflow: Boolean
     
-    var Description: Label = js.native
+    var Description: Label
     
-    var DisplayCollectionName: Label = js.native
+    var DisplayCollectionName: Label
     
-    var DisplayName: Label = js.native
+    var DisplayName: Label
     
-    var EntityColor: String = js.native
+    var EntityColor: String
     
-    var EntitySetName: String = js.native
+    var EntitySetName: String
     
-    var IconLargeName: String = js.native
+    var IconLargeName: String
     
-    var IconMediumName: String = js.native
+    var IconMediumName: String
     
-    var IconSmallName: String = js.native
+    var IconSmallName: String
     
-    var IsActivity: Boolean = js.native
+    var IsActivity: Boolean
     
-    var IsActivityParty: Boolean = js.native
+    var IsActivityParty: Boolean
     
-    var IsAuditEnabled: Boolean = js.native
+    var IsAuditEnabled: Boolean
     
-    var IsAvailableOffline: Boolean = js.native
+    var IsAvailableOffline: Boolean
     
-    var IsBPFEntity: Boolean = js.native
+    var IsBPFEntity: Boolean
     
-    var IsChildEntity: Boolean = js.native
+    var IsChildEntity: Boolean
     
-    var IsConnectionsEnabled: Boolean = js.native
+    var IsConnectionsEnabled: Boolean
     
-    var IsCustomEntity: Boolean = js.native
+    var IsCustomEntity: Boolean
     
-    var IsCustomizable: Boolean = js.native
+    var IsCustomizable: Boolean
     
-    var IsDocumentManagementEnabled: Boolean = js.native
+    var IsDocumentManagementEnabled: Boolean
     
-    var IsDuplicateDetectionEnabled: Boolean = js.native
+    var IsDuplicateDetectionEnabled: Boolean
     
-    var IsEnabledForCharts: Boolean = js.native
+    var IsEnabledForCharts: Boolean
     
-    var IsImportable: Boolean = js.native
+    var IsImportable: Boolean
     
-    var IsIntersect: Boolean = js.native
+    var IsIntersect: Boolean
     
-    var IsMailMergeEnabled: Boolean = js.native
+    var IsMailMergeEnabled: Boolean
     
-    var IsManaged: Boolean = js.native
+    var IsManaged: Boolean
     
-    var IsMappable: Boolean = js.native
+    var IsMappable: Boolean
     
-    var IsOneNotIntegrationEnabled: Boolean = js.native
+    var IsOneNotIntegrationEnabled: Boolean
     
-    var IsOptimisitcConcurrencyEnabled: Boolean = js.native
+    var IsOptimisitcConcurrencyEnabled: Boolean
     
-    var IsQuickCreateEnabled: Boolean = js.native
+    var IsQuickCreateEnabled: Boolean
     
-    var IsReadingPaneEnabled: Boolean = js.native
+    var IsReadingPaneEnabled: Boolean
     
-    var IsRenameable: Boolean = js.native
+    var IsRenameable: Boolean
     
-    var IsStateModelAware: Boolean = js.native
+    var IsStateModelAware: Boolean
     
-    var IsValidForAdvancedFind: Boolean = js.native
+    var IsValidForAdvancedFind: Boolean
     
-    var IsValidForQueue: Boolean = js.native
+    var IsValidForQueue: Boolean
     
-    var IsVisibleInMobileClient: Boolean = js.native
+    var IsVisibleInMobileClient: Boolean
     
-    var LogicalCollectionName: String = js.native
+    var LogicalCollectionName: String
     
-    var LogicalName: String = js.native
+    var LogicalName: String
     
-    var ObjectTypeCode: Double = js.native
+    var ObjectTypeCode: Double
     
-    var OwnershipTypeCode: Double = js.native
+    var OwnershipTypeCode: Double
     
-    var PrimaryIdAttribute: String = js.native
+    var PrimaryIdAttribute: String
     
-    var PrimaryImageAttribute: String = js.native
+    var PrimaryImageAttribute: String
     
-    var PrimaryNameAttribute: String = js.native
+    var PrimaryNameAttribute: String
     
-    var RecurrenceBaseEntityLogicalName: String = js.native
+    var RecurrenceBaseEntityLogicalName: String
   }
   object EntityMetadata {
     
@@ -433,15 +430,14 @@ object Metadata {
   /**
     * Type to hold Labels as part of the EntityMetadata
     */
-  @js.native
   trait Label extends StObject {
     
     /**
       * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
       */
-    var LocalizedLabels: js.Array[LocalizedLabel] = js.native
+    var LocalizedLabels: js.Array[LocalizedLabel]
     
-    var UserLocalizedLabel: LocalizedLabel = js.native
+    var UserLocalizedLabel: LocalizedLabel
   }
   object Label {
     
@@ -468,12 +464,11 @@ object Metadata {
   /**
     * Type to hold a Label as part of the EntityMetadata
     */
-  @js.native
   trait LocalizedLabel extends StObject {
     
-    var Label: String = js.native
+    var Label: String
     
-    var LanguageCode: Double = js.native
+    var LanguageCode: Double
   }
   object LocalizedLabel {
     
@@ -497,28 +492,27 @@ object Metadata {
   /**
     * Type to hold the optionset metadata as part of the EntityMetadata
     */
-  @js.native
   trait OptionMetadata extends StObject {
     
-    var Color: String = js.native
+    var Color: String
     
-    var Description: Label = js.native
+    var Description: Label
     
-    var ExternalValue: js.Any = js.native
+    var ExternalValue: js.Any
     
-    var HasChanged: Boolean = js.native
+    var HasChanged: Boolean
     
-    var IsManaged: Boolean = js.native
+    var IsManaged: Boolean
     
-    var Label: typings.xrm.Xrm.Metadata.Label = js.native
+    var Label: typings.xrm.Xrm.Metadata.Label
     
-    var MetadataId: String = js.native
+    var MetadataId: String
     
-    var State: Double = js.native
+    var State: Double
     
-    var TransitionData: js.Any = js.native
+    var TransitionData: js.Any
     
-    var Value: Double = js.native
+    var Value: Double
   }
   object OptionMetadata {
     

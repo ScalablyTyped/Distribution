@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rascal.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Redelivery extends StObject {
   
-  var counters: js.UndefOr[StringDictionary[Size]] = js.native
+  var counters: js.UndefOr[StringDictionary[Size]] = js.undefined
 }
 object Redelivery {
   

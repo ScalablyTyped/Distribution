@@ -5,47 +5,48 @@ import typings.vcardsJs.vcardsJsStrings.F
 import typings.vcardsJs.vcardsJsStrings.M
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): vCard = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[vCard]
+  
   @JSImport("vcards-js", JSImport.Namespace)
   @js.native
-  def apply(): vCard = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Address extends StObject {
     
     /**
       * City
       */
-    var city: String = js.native
+    var city: String
     
     /**
       * Country or region
       */
-    var countryRegion: String = js.native
+    var countryRegion: String
     
     /**
       * Represents the actual text that should be put on the mailing label when delivering a physical package
       */
-    var label: String = js.native
+    var label: String
     
     /**
       * Postal code
       */
-    var postalCode: String = js.native
+    var postalCode: String
     
     /**
       * State or province
       */
-    var stateProvince: String = js.native
+    var stateProvince: String
     
     /**
       * Street address
       */
-    var street: String = js.native
+    var street: String
   }
   object Address {
     
@@ -85,7 +86,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Photo extends StObject {
     
     /**
@@ -93,26 +93,26 @@ object mod {
       * @param   url       URL where photo can be found
       * @param  mediaType Media type of photo (JPEG, PNG, GIF)
       */
-    def attachFromUrl(url: String, mediaType: String): Unit = js.native
+    def attachFromUrl(url: String, mediaType: String): Unit
     
-    var base64: Boolean = js.native
+    var base64: Boolean
     
     /**
       * Embed a photo from a file using base-64 encoding (not implemented yet)
       * @param  fileLocation - filename
       */
-    def embedFromFile(fileLocation: String): Unit = js.native
+    def embedFromFile(fileLocation: String): Unit
     
     /**
       * Embed a photo from a base-64 string
       * @param  base64String - the base64 string
       * @param  mediaType - the media type
       */
-    def embedFromString(base64String: String, mediaType: String): Unit = js.native
+    def embedFromString(base64String: String, mediaType: String): Unit
     
-    var mediaType: String = js.native
+    var mediaType: String
     
-    var url: String = js.native
+    var url: String
   }
   object Photo {
     
@@ -152,16 +152,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SocialUrls extends StObject {
     
-    var facebook: String = js.native
+    var facebook: String
     
-    var flickr: String = js.native
+    var flickr: String
     
-    var linkedIn: String = js.native
+    var linkedIn: String
     
-    var twitter: String = js.native
+    var twitter: String
   }
   object SocialUrls {
     
@@ -188,190 +187,189 @@ object mod {
     }
   }
   
-  @js.native
   trait vCard extends StObject {
     
     /**
       * Anniversary
       */
-    var anniversary: Date = js.native
+    var anniversary: Date
     
     /**
       * Date of birth
       */
-    var birthday: Date = js.native
+    var birthday: Date
     
     /**
       * Cell phone number
       */
-    var cellPhone: String = js.native
+    var cellPhone: String
     
     /**
       * The address for private electronic mail communication
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * First name
       */
-    var firstName: String = js.native
+    var firstName: String
     
     /**
       * Formatted name string associated with the vCard object (will automatically populate if not set)
       */
-    var formattedName: String = js.native
+    var formattedName: String
     
     /**
       * Gender.
       */
-    var gender: M | F = js.native
+    var gender: M | F
     
     /**
       * Get formatted vCard
       * @return Formatted vCard in VCF format
       */
-    def getFormattedString(): String = js.native
+    def getFormattedString(): String
     
     /**
       * Get major version of the vCard format
       */
-    def getMajorVersion(): Double = js.native
+    def getMajorVersion(): Double
     
     /**
       * Home mailing address
       */
-    var homeAddress: Address = js.native
+    var homeAddress: Address
     
     /**
       * Home facsimile
       */
-    var homeFax: String = js.native
+    var homeFax: String
     
     /**
       * Home phone
       */
-    var homePhone: String = js.native
+    var homePhone: String
     
     /**
       * Whether or not this contact should be shown as a company
       */
-    var isOrganization: Boolean = js.native
+    var isOrganization: Boolean
     
     /**
       * Last name
       */
-    var lastName: String = js.native
+    var lastName: String
     
     /**
       * Logo
       */
-    var logo: Photo = js.native
+    var logo: Photo
     
     /**
       * Middle name
       */
-    var middleName: String = js.native
+    var middleName: String
     
     /**
       * Prefix for individual's name
       */
-    var namePrefix: String = js.native
+    var namePrefix: String
     
     /**
       * Suffix for individual's name
       */
-    var nameSuffix: String = js.native
+    var nameSuffix: String
     
     /**
       * Nickname of individual
       */
-    var nickname: String = js.native
+    var nickname: String
     
     /**
       * Specifies supplemental information or a comment that is associated with the vCard
       */
-    var note: String = js.native
+    var note: String
     
     /**
       * The name and optionally the unit(s) of the organization associated with the vCard object
       */
-    var organization: String = js.native
+    var organization: String
     
     /**
       * Other cell phone number or pager
       */
-    var pagerPhone: String = js.native
+    var pagerPhone: String
     
     /**
       * Individual's photo
       */
-    var photo: Photo = js.native
+    var photo: Photo
     
     /**
       * The role, occupation, or business category of the vCard object within an organization
       */
-    var role: String = js.native
+    var role: String
     
     /**
       * Save formatted vCard to file
       * @param filename - The file path
       */
-    def saveToFile(filename: String): Unit = js.native
+    def saveToFile(filename: String): Unit
     
     /**
       * Social URLs attached to the vCard object (ex: Facebook, Twitter, LinkedIn)
       */
-    var socialUrls: SocialUrls = js.native
+    var socialUrls: SocialUrls
     
     /**
       * A URL that can be used to get the latest version of this vCard
       */
-    var source: String = js.native
+    var source: String
     
     /**
       * Specifies the job title, functional position or function of the individual within an organization
       */
-    var title: String = js.native
+    var title: String
     
     /**
       * Specifies a value that represents a persistent, globally unique identifier associated with the vCard
       */
-    var uid: String = js.native
+    var uid: String
     
     /**
       * URL pointing to a website that represents the person in some way
       */
-    var url: String = js.native
+    var url: String
     
     /**
       * vCard version
       */
-    var version: String = js.native
+    var version: String
     
     /**
       * Work mailing address
       */
-    var workAddress: Address = js.native
+    var workAddress: Address
     
     /**
       * The address for work-related electronic mail communication
       */
-    var workEmail: String = js.native
+    var workEmail: String
     
     /**
       * Work facsimile
       */
-    var workFax: String = js.native
+    var workFax: String
     
     /**
       * Work phone
       */
-    var workPhone: String = js.native
+    var workPhone: String
     
     /**
       * URL pointing to a website that represents the person's work in some way
       */
-    var workUrl: String = js.native
+    var workUrl: String
   }
   object vCard {
     

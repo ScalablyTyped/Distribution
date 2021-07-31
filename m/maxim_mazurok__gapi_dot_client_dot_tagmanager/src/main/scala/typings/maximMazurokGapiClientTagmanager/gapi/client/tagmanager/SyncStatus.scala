@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncStatus extends StObject {
   
   /** Synchornization operation detected a merge conflict. */
-  var mergeConflict: js.UndefOr[Boolean] = js.native
+  var mergeConflict: js.UndefOr[Boolean] = js.undefined
   
   /** An error occurred during the synchronization operation. */
-  var syncError: js.UndefOr[Boolean] = js.native
+  var syncError: js.UndefOr[Boolean] = js.undefined
 }
 object SyncStatus {
   

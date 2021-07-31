@@ -29,129 +29,127 @@ import typings.typeorm.typeormStrings.select
 import typings.typeorm.typeormStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typeorm.typeorm/query-builder/QueryExpressionMap.QueryExpressionMap> */
-@js.native
 trait PartialQueryExpressionMapAliasNamePrefixingEnabled extends StObject {
   
-  var aliasNamePrefixingEnabled: js.UndefOr[Boolean] = js.native
+  var aliasNamePrefixingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var aliases: js.UndefOr[js.Array[Alias]] = js.native
+  var aliases: js.UndefOr[js.Array[Alias]] = js.undefined
   
-  var allOrderBys: js.UndefOr[OrderByCondition] = js.native
+  var allOrderBys: js.UndefOr[OrderByCondition] = js.undefined
   
-  var cache: js.UndefOr[Boolean] = js.native
+  var cache: js.UndefOr[Boolean] = js.undefined
   
-  var cacheDuration: js.UndefOr[Double] = js.native
+  var cacheDuration: js.UndefOr[Double] = js.undefined
   
-  var cacheId: js.UndefOr[String] = js.native
+  var cacheId: js.UndefOr[String] = js.undefined
   
-  var callListeners: js.UndefOr[Boolean] = js.native
+  var callListeners: js.UndefOr[Boolean] = js.undefined
   
   @JSName("clone")
-  var clone_FPartialQueryExpressionMapAliasNamePrefixingEnabled: js.UndefOr[js.Function0[QueryExpressionMap]] = js.native
+  var clone_FPartialQueryExpressionMapAliasNamePrefixingEnabled: js.UndefOr[js.Function0[QueryExpressionMap]] = js.undefined
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var connection: js.UndefOr[typings.typeorm.connectionConnectionMod.Connection] = js.native
+  var connection: js.UndefOr[typings.typeorm.connectionConnectionMod.Connection] = js.undefined
   
   var constructor: js.UndefOr[
     js.Function1[/* connection */ typings.typeorm.connectionConnectionMod.Connection, js.Any]
-  ] = js.native
+  ] = js.undefined
   
-  var createAlias: js.UndefOr[js.Function1[/* options */ SubQuery, Alias]] = js.native
+  var createAlias: js.UndefOr[js.Function1[/* options */ SubQuery, Alias]] = js.undefined
   
-  var disableEscaping: js.UndefOr[Boolean] = js.native
+  var disableEscaping: js.UndefOr[Boolean] = js.undefined
   
-  var enableRelationIdValues: js.UndefOr[Boolean] = js.native
+  var enableRelationIdValues: js.UndefOr[Boolean] = js.undefined
   
-  var extraAppendedAndWhereCondition: js.UndefOr[String] = js.native
+  var extraAppendedAndWhereCondition: js.UndefOr[String] = js.undefined
   
-  var extraReturningColumns: js.UndefOr[js.Array[ColumnMetadata]] = js.native
+  var extraReturningColumns: js.UndefOr[js.Array[ColumnMetadata]] = js.undefined
   
-  var findAliasByName: js.UndefOr[js.Function1[/* aliasName */ String, Alias]] = js.native
+  var findAliasByName: js.UndefOr[js.Function1[/* aliasName */ String, Alias]] = js.undefined
   
-  var findColumnByAliasExpression: js.UndefOr[js.Function1[/* aliasExpression */ String, js.UndefOr[ColumnMetadata]]] = js.native
+  var findColumnByAliasExpression: js.UndefOr[js.Function1[/* aliasExpression */ String, js.UndefOr[ColumnMetadata]]] = js.undefined
   
-  var groupBys: js.UndefOr[js.Array[String]] = js.native
+  var groupBys: js.UndefOr[js.Array[String]] = js.undefined
   
-  var havings: js.UndefOr[js.Array[Condition]] = js.native
+  var havings: js.UndefOr[js.Array[Condition]] = js.undefined
   
-  var insertColumns: js.UndefOr[js.Array[String]] = js.native
+  var insertColumns: js.UndefOr[js.Array[String]] = js.undefined
   
-  var joinAttributes: js.UndefOr[js.Array[JoinAttribute]] = js.native
+  var joinAttributes: js.UndefOr[js.Array[JoinAttribute]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   var lockMode: js.UndefOr[
     optimistic | pessimistic_read | pessimistic_write | dirty_read | pessimistic_partial_write | pessimistic_write_or_fail | for_no_key_update
-  ] = js.native
+  ] = js.undefined
   
-  var lockVersion: js.UndefOr[Double | Date] = js.native
+  var lockVersion: js.UndefOr[Double | Date] = js.undefined
   
-  var mainAlias: js.UndefOr[Alias] = js.native
+  var mainAlias: js.UndefOr[Alias] = js.undefined
   
-  var nativeParameters: js.UndefOr[ObjectLiteral] = js.native
+  var nativeParameters: js.UndefOr[ObjectLiteral] = js.undefined
   
-  var of: js.UndefOr[js.Any | js.Array[_]] = js.native
+  var of: js.UndefOr[js.Any | js.Array[js.Any]] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var onConflict: js.UndefOr[String] = js.native
+  var onConflict: js.UndefOr[String] = js.undefined
   
-  var onIgnore: js.UndefOr[String | Boolean] = js.native
+  var onIgnore: js.UndefOr[String | Boolean] = js.undefined
   
-  var onUpdate: js.UndefOr[Conflict] = js.native
+  var onUpdate: js.UndefOr[Conflict] = js.undefined
   
-  var options: js.UndefOr[js.Array[SelectQueryBuilderOption]] = js.native
+  var options: js.UndefOr[js.Array[SelectQueryBuilderOption]] = js.undefined
   
-  var orderBys: js.UndefOr[OrderByCondition] = js.native
+  var orderBys: js.UndefOr[OrderByCondition] = js.undefined
   
-  var parameters: js.UndefOr[ObjectLiteral] = js.native
+  var parameters: js.UndefOr[ObjectLiteral] = js.undefined
   
-  var parentQueryBuilder: js.UndefOr[QueryBuilder[_]] = js.native
+  var parentQueryBuilder: js.UndefOr[QueryBuilder[js.Any]] = js.undefined
   
-  var queryEntity: js.UndefOr[Boolean] = js.native
+  var queryEntity: js.UndefOr[Boolean] = js.undefined
   
-  var queryType: js.UndefOr[select | update | delete | insert | relation | `soft-delete` | restore] = js.native
+  var queryType: js.UndefOr[select | update | delete | insert | relation | `soft-delete` | restore] = js.undefined
   
-  var relationCountAttributes: js.UndefOr[js.Array[RelationCountAttribute]] = js.native
+  var relationCountAttributes: js.UndefOr[js.Array[RelationCountAttribute]] = js.undefined
   
-  var relationIdAttributes: js.UndefOr[js.Array[RelationIdAttribute]] = js.native
+  var relationIdAttributes: js.UndefOr[js.Array[RelationIdAttribute]] = js.undefined
   
-  var relationMetadata: js.UndefOr[RelationMetadata] = js.native
+  var relationMetadata: js.UndefOr[RelationMetadata] = js.undefined
   
-  var relationPropertyPath: js.UndefOr[String] = js.native
+  var relationPropertyPath: js.UndefOr[String] = js.undefined
   
-  var returning: js.UndefOr[String | js.Array[String]] = js.native
+  var returning: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var selectDistinct: js.UndefOr[Boolean] = js.native
+  var selectDistinct: js.UndefOr[Boolean] = js.undefined
   
-  var selectDistinctOn: js.UndefOr[js.Array[String]] = js.native
+  var selectDistinctOn: js.UndefOr[js.Array[String]] = js.undefined
   
-  var selects: js.UndefOr[js.Array[SelectQuery]] = js.native
+  var selects: js.UndefOr[js.Array[SelectQuery]] = js.undefined
   
-  var setMainAlias: js.UndefOr[js.Function1[/* alias */ Alias, Alias]] = js.native
+  var setMainAlias: js.UndefOr[js.Function1[/* alias */ Alias, Alias]] = js.undefined
   
-  var skip: js.UndefOr[Double] = js.native
+  var skip: js.UndefOr[Double] = js.undefined
   
-  var subQuery: js.UndefOr[Boolean] = js.native
+  var subQuery: js.UndefOr[Boolean] = js.undefined
   
-  var take: js.UndefOr[Double] = js.native
+  var take: js.UndefOr[Double] = js.undefined
   
-  var updateEntity: js.UndefOr[Boolean] = js.native
+  var updateEntity: js.UndefOr[Boolean] = js.undefined
   
-  var useTransaction: js.UndefOr[Boolean] = js.native
+  var useTransaction: js.UndefOr[Boolean] = js.undefined
   
-  var valuesSet: js.UndefOr[ObjectLiteral | js.Array[ObjectLiteral]] = js.native
+  var valuesSet: js.UndefOr[ObjectLiteral | js.Array[ObjectLiteral]] = js.undefined
   
-  var whereEntities: js.UndefOr[js.Array[ObjectLiteral]] = js.native
+  var whereEntities: js.UndefOr[js.Array[ObjectLiteral]] = js.undefined
   
-  var wheres: js.UndefOr[js.Array[Condition]] = js.native
+  var wheres: js.UndefOr[js.Array[Condition]] = js.undefined
   
-  var withDeleted: js.UndefOr[Boolean] = js.native
+  var withDeleted: js.UndefOr[Boolean] = js.undefined
 }
 object PartialQueryExpressionMapAliasNamePrefixingEnabled {
   
@@ -347,7 +345,7 @@ object PartialQueryExpressionMapAliasNamePrefixingEnabled {
     def setNativeParametersUndefined: Self = StObject.set(x, "nativeParameters", js.undefined)
     
     @scala.inline
-    def setOf(value: js.Any | js.Array[_]): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
+    def setOf(value: js.Any | js.Array[js.Any]): Self = StObject.set(x, "of", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOfUndefined: Self = StObject.set(x, "of", js.undefined)
@@ -401,7 +399,7 @@ object PartialQueryExpressionMapAliasNamePrefixingEnabled {
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
     
     @scala.inline
-    def setParentQueryBuilder(value: QueryBuilder[_]): Self = StObject.set(x, "parentQueryBuilder", value.asInstanceOf[js.Any])
+    def setParentQueryBuilder(value: QueryBuilder[js.Any]): Self = StObject.set(x, "parentQueryBuilder", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentQueryBuilderUndefined: Self = StObject.set(x, "parentQueryBuilder", js.undefined)

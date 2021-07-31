@@ -2,7 +2,6 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* Rewritten from type alias, can be one of: 
   - typings.scrivito.scrivitoStrings.date
   - typings.scrivito.scrivitoStrings.datetime
-  - typings.scrivito.scrivitoStrings.enum
+  - typings.scrivito.scrivitoStrings.`enum`
   - typings.scrivito.scrivitoStrings.multienum
   - typings.scrivito.scrivitoStrings.html
   - typings.scrivito.scrivitoStrings.string
@@ -38,7 +37,7 @@ object Attribute {
   def datetime: typings.scrivito.scrivitoStrings.datetime = "datetime".asInstanceOf[typings.scrivito.scrivitoStrings.datetime]
   
   @scala.inline
-  def enum: typings.scrivito.scrivitoStrings.enum = "enum".asInstanceOf[typings.scrivito.scrivitoStrings.enum]
+  def `enum`: typings.scrivito.scrivitoStrings.`enum` = "enum".asInstanceOf[typings.scrivito.scrivitoStrings.`enum`]
   
   @scala.inline
   def float: typings.scrivito.scrivitoStrings.float = "float".asInstanceOf[typings.scrivito.scrivitoStrings.float]

@@ -4,7 +4,6 @@ import typings.officeUiFabricReact.personaTypesMod.IPersonaCoinProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object personaCoinBaseMod {
@@ -43,12 +42,11 @@ object personaCoinBaseMod {
     def defaultProps_=(x: IPersonaCoinProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPersonaState extends StObject {
     
-    var isImageError: js.UndefOr[Boolean] = js.native
+    var isImageError: js.UndefOr[Boolean] = js.undefined
     
-    var isImageLoaded: js.UndefOr[Boolean] = js.native
+    var isImageLoaded: js.UndefOr[Boolean] = js.undefined
   }
   object IPersonaState {
     

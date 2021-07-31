@@ -2,31 +2,29 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDetectorRequest extends StObject {
   
   /**
     * An object that describes which data sources will be updated.
     */
-  var DataSources: js.UndefOr[DataSourceConfigurations] = js.native
+  var DataSources: js.UndefOr[DataSourceConfigurations] = js.undefined
   
   /**
     * The unique ID of the detector to update.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * Specifies whether the detector is enabled or not enabled.
     */
-  var Enable: js.UndefOr[Boolean] = js.native
+  var Enable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An enum value that specifies how frequently findings are exported, such as to CloudWatch Events.
     */
-  var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.guarddutyMod.FindingPublishingFrequency] = js.native
+  var FindingPublishingFrequency: js.UndefOr[typings.awsSdk.guarddutyMod.FindingPublishingFrequency] = js.undefined
 }
 object UpdateDetectorRequest {
   

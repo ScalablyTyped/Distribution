@@ -2,31 +2,29 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutFileEntry extends StObject {
   
   /**
     * The content of the file, if a source file is not specified.
     */
-  var fileContent: js.UndefOr[FileContent] = js.native
+  var fileContent: js.UndefOr[FileContent] = js.undefined
   
   /**
     * The extrapolated file mode permissions for the file. Valid values include EXECUTABLE and NORMAL.
     */
-  var fileMode: js.UndefOr[FileModeTypeEnum] = js.native
+  var fileMode: js.UndefOr[FileModeTypeEnum] = js.undefined
   
   /**
     * The full path to the file in the repository, including the name of the file.
     */
-  var filePath: Path = js.native
+  var filePath: Path
   
   /**
     * The name and full path of the file that contains the changes you want to make as part of the commit, if you are not providing the file content directly.
     */
-  var sourceFile: js.UndefOr[SourceFileSpecifier] = js.native
+  var sourceFile: js.UndefOr[SourceFileSpecifier] = js.undefined
 }
 object PutFileEntry {
   

@@ -2,21 +2,19 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadioMixin extends StObject {
   
-  var bindEvents: js.Any = js.native
+  var bindEvents: js.Any
   
-  var bindRequests: js.Any = js.native
+  var bindRequests: js.Any
   
-  var getChannel: js.Any = js.native
+  var getChannel: js.Any
   
-  var unbindEvents: js.Any = js.native
+  var unbindEvents: js.Any
   
-  var unbindRequests: js.Any = js.native
+  var unbindRequests: js.Any
 }
 object RadioMixin {
   

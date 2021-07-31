@@ -1,6 +1,8 @@
 package typings.phaser.global.Phaser
 
+import typings.phaser.Phaser.Cache.BaseCache
 import typings.phaser.Phaser.Loader.FileTypes.SpineFileConfig
+import typings.phaser.Phaser.Textures.TextureManager
 import typings.phaser.Phaser.Types.Loader.FileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasJSONFileConfig
 import typings.phaser.Phaser.Types.Loader.FileTypes.AtlasXMLFileConfig
@@ -36,12 +38,13 @@ import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import typings.phaser.integer
 import typings.std.AudioContext
 import typings.std.Blob
+import typings.std.EventTarget
 import typings.std.HTMLImageElement
+import typings.std.ProgressEvent
 import typings.std.XMLHttpRequest
 import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Loader {
@@ -291,15 +294,220 @@ object Loader {
   @JSGlobal("Phaser.Loader.File")
   @js.native
   class File protected ()
-    extends typings.phaser.Phaser.Loader.File {
+    extends StObject
+       with typings.phaser.Phaser.Loader.File {
     /**
       * 
       * @param loader The Loader that is going to load this File.
       * @param fileConfig The file configuration object, as created by the file type.
       */
     def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, fileConfig: FileConfig) = this()
+    
+    /**
+      * Adds this file to its target cache upon successful loading and processing.
+      * This method is often overridden by specific file types.
+      */
+    /* CompleteClass */
+    override def addToCache(): Unit = js.native
+    
+    /**
+      * Updated as the file loads.
+      * Only set if loading via XHR.
+      */
+    /* CompleteClass */
+    var bytesLoaded: Double = js.native
+    
+    /**
+      * The total size of this file.
+      * Set by onProgress and only if loading via XHR.
+      */
+    /* CompleteClass */
+    var bytesTotal: Double = js.native
+    
+    /**
+      * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+      */
+    /* CompleteClass */
+    var cache: BaseCache | TextureManager = js.native
+    
+    /**
+      * A config object that can be used by file types to store transitional data.
+      */
+    /* CompleteClass */
+    var config: js.Any = js.native
+    
+    /**
+      * The processed file data, stored here after the file has loaded.
+      */
+    /* CompleteClass */
+    var data: js.Any = js.native
+    
+    /**
+      * Destroy this File and any references it holds.
+      */
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /**
+      * Checks if a key matching the one used by this file exists in the target Cache or not.
+      * This is called automatically by the LoaderPlugin to decide if the file can be safely
+      * loaded or will conflict.
+      */
+    /* CompleteClass */
+    override def hasCacheConflict(): Boolean = js.native
+    
+    /**
+      * Unique cache key (unique within its file type)
+      */
+    /* CompleteClass */
+    var key: String = js.native
+    
+    /**
+      * Does this file have an associated linked file? Such as an image and a normal map.
+      * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+      * actually bound by data, where-as a linkFile is.
+      */
+    /* CompleteClass */
+    var linkFile: typings.phaser.Phaser.Loader.File = js.native
+    
+    /**
+      * Called by the Loader, starts the actual file downloading.
+      * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+      * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+      */
+    /* CompleteClass */
+    override def load(): Unit = js.native
+    
+    /**
+      * A reference to the Loader that is going to load this file.
+      */
+    /* CompleteClass */
+    var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+    
+    /**
+      * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+      * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+      */
+    /* CompleteClass */
+    var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+    
+    /**
+      * Called if the file errors while loading, is sent a DOM ProgressEvent.
+      * @param xhr The XMLHttpRequest that caused this onload event.
+      * @param event The DOM ProgressEvent that resulted from this error.
+      */
+    /* CompleteClass */
+    override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+    
+    /**
+      * Called when the file finishes loading, is sent a DOM ProgressEvent.
+      * @param xhr The XMLHttpRequest that caused this onload event.
+      * @param event The DOM ProgressEvent that resulted from this load.
+      */
+    /* CompleteClass */
+    override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+    
+    /**
+      * Usually overridden by the FileTypes and is called by Loader.nextFile.
+      * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+      */
+    /* CompleteClass */
+    override def onProcess(): Unit = js.native
+    
+    /**
+      * Called when the File has completed processing.
+      * Checks on the state of its multifile, if set.
+      */
+    /* CompleteClass */
+    override def onProcessComplete(): Unit = js.native
+    
+    /**
+      * Called when the File has completed processing but it generated an error.
+      * Checks on the state of its multifile, if set.
+      */
+    /* CompleteClass */
+    override def onProcessError(): Unit = js.native
+    
+    /**
+      * Called during the file load progress. Is sent a DOM ProgressEvent.
+      * @param event The DOM ProgressEvent.
+      */
+    /* CompleteClass */
+    override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+    
+    /**
+      * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+      * It will emit a `filecomplete` event from the LoaderPlugin.
+      */
+    /* CompleteClass */
+    override def pendingDestroy(): Unit = js.native
+    
+    /**
+      * A percentage value between 0 and 1 indicating how much of this file has loaded.
+      * Only set if loading via XHR.
+      */
+    /* CompleteClass */
+    var percentComplete: Double = js.native
+    
+    /**
+      * Resets the XHRLoader instance this file is using.
+      */
+    /* CompleteClass */
+    override def resetXHR(): Unit = js.native
+    
+    /**
+      * Links this File with another, so they depend upon each other for loading and processing.
+      * @param fileB The file to link to this one.
+      */
+    /* CompleteClass */
+    override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+    
+    /**
+      * The final URL this file will load from, including baseURL and path.
+      * Set automatically when the Loader calls 'load' on this file.
+      */
+    /* CompleteClass */
+    var src: String = js.native
+    
+    /**
+      * The current state of the file. One of the FILE_CONST values.
+      */
+    /* CompleteClass */
+    var state: integer = js.native
+    
+    /**
+      * The file type string (image, json, etc) for sorting within the Loader.
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
+    
+    /**
+      * The URL of the file, not including baseURL.
+      * 
+      * Automatically has Loader.path prepended to it if a string.
+      * 
+      * Can also be a JavaScript Object, such as the results of parsing JSON data.
+      */
+    /* CompleteClass */
+    var url: js.Object | String = js.native
+    
+    /**
+      * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+      */
+    /* CompleteClass */
+    var xhrLoader: XMLHttpRequest = js.native
+    
+    /**
+      * The merged XHRSettings for this file.
+      */
+    /* CompleteClass */
+    var xhrSettings: XHRSettingsObject = js.native
   }
   object File {
+    
+    @JSGlobal("Phaser.Loader.File")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Static method for creating object URL using URL API and setting it as image 'src' attribute.
@@ -309,9 +517,8 @@ object Loader {
       * @param defaultType Default mime type used if blob type is not available.
       */
     /* static member */
-    @JSGlobal("Phaser.Loader.File.createObjectURL")
-    @js.native
-    def createObjectURL(image: HTMLImageElement, blob: Blob, defaultType: String): Unit = js.native
+    @scala.inline
+    def createObjectURL(image: HTMLImageElement, blob: Blob, defaultType: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createObjectURL")(image.asInstanceOf[js.Any], blob.asInstanceOf[js.Any], defaultType.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Static method for releasing an existing object URL which was previously created
@@ -319,9 +526,8 @@ object Loader {
       * @param image Image object which 'src' attribute should be revoked.
       */
     /* static member */
-    @JSGlobal("Phaser.Loader.File.revokeObjectURL")
-    @js.native
-    def revokeObjectURL(image: HTMLImageElement): Unit = js.native
+    @scala.inline
+    def revokeObjectURL(image: HTMLImageElement): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("revokeObjectURL")(image.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object FileTypes {
@@ -336,7 +542,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.AnimationJSONFile")
     @js.native
     class AnimationJSONFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.AnimationJSONFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.AnimationJSONFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -352,19 +559,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: JSONFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -375,23 +576,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
-        dataKey: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject,
-        dataKey: String
+        key: JSONFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -403,15 +596,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: JSONFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: JSONFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject,
         dataKey: String
       ) = this()
@@ -419,7 +612,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: JSONFileConfig,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -429,6 +622,226 @@ object Loader {
         xhrSettings: XHRSettingsObject,
         dataKey: String
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: JSONFileConfig,
+        url: Unit,
+        xhrSettings: Unit,
+        dataKey: String
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: JSONFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject,
+        dataKey: String
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called at the end of the load process, after the Loader has finished all files in its queue.
+        */
+      /* CompleteClass */
+      override def onLoadComplete(): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -443,7 +856,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.AtlasJSONFile")
     @js.native
     class AtlasJSONFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.AtlasJSONFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.AtlasJSONFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -461,6 +875,108 @@ object Loader {
         textureXhrSettings: js.UndefOr[XHRSettingsObject],
         atlasXhrSettings: js.UndefOr[XHRSettingsObject]
       ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -473,7 +989,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.AtlasXMLFile")
     @js.native
     class AtlasXMLFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.AtlasXMLFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.AtlasXMLFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -496,12 +1013,6 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         textureURL: String,
         atlasURL: String
       ) = this()
@@ -511,12 +1022,7 @@ object Loader {
         textureURL: js.Array[String],
         atlasURL: String
       ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String
-      ) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, textureURL: Unit, atlasURL: String) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
@@ -531,24 +1037,9 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String,
-        textureXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject
+        key: AtlasXMLFileConfig,
+        textureURL: Unit,
+        atlasURL: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -560,8 +1051,8 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -573,15 +1064,29 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
+        key: String,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
@@ -589,13 +1094,13 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
         textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
-        textureURL: String,
+        textureURL: js.Array[String],
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
@@ -603,70 +1108,29 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
         textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
-        textureURL: js.Array[String],
+        textureURL: Unit,
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String,
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
+        key: AtlasXMLFileConfig,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         textureURL: String,
         atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -680,25 +1144,17 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.Array[String],
-        atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -706,37 +1162,77 @@ object Loader {
         key: String,
         textureURL: js.Array[String],
         atlasURL: String,
-        textureXhrSettings: XHRSettingsObject,
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        key: String,
+        textureURL: js.Array[String],
         atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: String,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AtlasXMLFileConfig,
+        textureURL: String,
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
@@ -745,47 +1241,15 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
         textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AtlasXMLFileConfig,
         textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: String,
-        atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: String,
-        atlasURL: String,
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AtlasXMLFileConfig,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
@@ -794,7 +1258,7 @@ object Loader {
         key: AtlasXMLFileConfig,
         textureURL: js.Array[String],
         atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -805,6 +1269,156 @@ object Loader {
         textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AtlasXMLFileConfig,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AtlasXMLFileConfig,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AtlasXMLFileConfig,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AtlasXMLFileConfig,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AtlasXMLFileConfig,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AtlasXMLFileConfig,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -817,7 +1431,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.AudioFile")
     @js.native
     class AudioFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.AudioFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.AudioFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -833,19 +1448,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        urlConfig: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         urlConfig: js.Any,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioFileConfig,
-        urlConfig: js.UndefOr[scala.Nothing],
+        key: String,
+        urlConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -856,23 +1465,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        urlConfig: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
-        audioContext: AudioContext
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        urlConfig: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject,
-        audioContext: AudioContext
+        key: AudioFileConfig,
+        urlConfig: Unit,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         urlConfig: js.Any,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         audioContext: AudioContext
       ) = this()
       def this(
@@ -884,15 +1485,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioFileConfig,
-        urlConfig: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        key: String,
+        urlConfig: Unit,
+        xhrSettings: Unit,
         audioContext: AudioContext
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioFileConfig,
-        urlConfig: js.UndefOr[scala.Nothing],
+        key: String,
+        urlConfig: Unit,
         xhrSettings: XHRSettingsObject,
         audioContext: AudioContext
       ) = this()
@@ -900,7 +1501,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioFileConfig,
         urlConfig: js.Any,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         audioContext: AudioContext
       ) = this()
       def this(
@@ -910,6 +1511,220 @@ object Loader {
         xhrSettings: XHRSettingsObject,
         audioContext: AudioContext
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AudioFileConfig,
+        urlConfig: Unit,
+        xhrSettings: Unit,
+        audioContext: AudioContext
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AudioFileConfig,
+        urlConfig: Unit,
+        xhrSettings: XHRSettingsObject,
+        audioContext: AudioContext
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -922,7 +1737,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.AudioSpriteFile")
     @js.native
     class AudioSpriteFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.AudioSpriteFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.AudioSpriteFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -951,21 +1767,14 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
+        audioURL: js.Object,
         audioConfig: js.Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         jsonURL: String,
-        audioURL: js.Object,
-        audioConfig: js.Any
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioSpriteFileConfig,
-        jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
+        audioURL: Unit,
         audioConfig: js.Any
       ) = this()
       def this(
@@ -977,27 +1786,10 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
+        key: AudioSpriteFileConfig,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.Any,
-        audioXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        jsonURL: String,
-        audioURL: js.Object,
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: XHRSettingsObject
+        audioURL: Unit,
+        audioConfig: js.Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -1009,26 +1801,26 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioSpriteFileConfig,
+        key: String,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.UndefOr[scala.Nothing],
+        audioURL: js.Object,
+        audioConfig: Unit,
         audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioSpriteFileConfig,
+        key: String,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
+        audioURL: Unit,
         audioConfig: js.Any,
         audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioSpriteFileConfig,
+        key: String,
         jsonURL: String,
-        audioURL: js.Object,
-        audioConfig: js.UndefOr[scala.Nothing],
+        audioURL: Unit,
+        audioConfig: Unit,
         audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1041,57 +1833,27 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: js.UndefOr[scala.Nothing],
-        jsonXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: XHRSettingsObject,
-        jsonXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.Any,
-        audioXhrSettings: js.UndefOr[scala.Nothing],
-        jsonXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.Any,
-        audioXhrSettings: XHRSettingsObject,
-        jsonXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
+        key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: js.UndefOr[scala.Nothing],
-        jsonXhrSettings: XHRSettingsObject
+        audioConfig: Unit,
+        audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
+        key: AudioSpriteFileConfig,
         jsonURL: String,
-        audioURL: js.Object,
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: XHRSettingsObject,
-        jsonXhrSettings: XHRSettingsObject
+        audioURL: Unit,
+        audioConfig: js.Any,
+        audioXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AudioSpriteFileConfig,
+        jsonURL: String,
+        audioURL: Unit,
+        audioConfig: Unit,
+        audioXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -1099,7 +1861,7 @@ object Loader {
         jsonURL: String,
         audioURL: js.Object,
         audioConfig: js.Any,
-        audioXhrSettings: js.UndefOr[scala.Nothing],
+        audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1113,19 +1875,55 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioSpriteFileConfig,
+        key: String,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: js.UndefOr[scala.Nothing],
+        audioURL: js.Object,
+        audioConfig: Unit,
+        audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioSpriteFileConfig,
+        key: String,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
-        audioConfig: js.UndefOr[scala.Nothing],
+        audioURL: js.Object,
+        audioConfig: Unit,
+        audioXhrSettings: XHRSettingsObject,
+        jsonXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        jsonURL: String,
+        audioURL: Unit,
+        audioConfig: js.Any,
+        audioXhrSettings: Unit,
+        jsonXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        jsonURL: String,
+        audioURL: Unit,
+        audioConfig: js.Any,
+        audioXhrSettings: XHRSettingsObject,
+        jsonXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        jsonURL: String,
+        audioURL: Unit,
+        audioConfig: Unit,
+        audioXhrSettings: Unit,
+        jsonXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        jsonURL: String,
+        audioURL: Unit,
+        audioConfig: Unit,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1133,16 +1931,16 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioSpriteFileConfig,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
+        audioURL: js.Object,
         audioConfig: js.Any,
-        audioXhrSettings: js.UndefOr[scala.Nothing],
+        audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioSpriteFileConfig,
         jsonURL: String,
-        audioURL: js.UndefOr[scala.Nothing],
+        audioURL: js.Object,
         audioConfig: js.Any,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
@@ -1152,8 +1950,8 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.UndefOr[scala.Nothing],
-        audioXhrSettings: js.UndefOr[scala.Nothing],
+        audioConfig: Unit,
+        audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1161,7 +1959,7 @@ object Loader {
         key: AudioSpriteFileConfig,
         jsonURL: String,
         audioURL: js.Object,
-        audioConfig: js.UndefOr[scala.Nothing],
+        audioConfig: Unit,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
@@ -1169,20 +1967,140 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioSpriteFileConfig,
         jsonURL: String,
-        audioURL: js.Object,
+        audioURL: Unit,
         audioConfig: js.Any,
-        audioXhrSettings: js.UndefOr[scala.Nothing],
+        audioXhrSettings: Unit,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: AudioSpriteFileConfig,
         jsonURL: String,
-        audioURL: js.Object,
+        audioURL: Unit,
         audioConfig: js.Any,
         audioXhrSettings: XHRSettingsObject,
         jsonXhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AudioSpriteFileConfig,
+        jsonURL: String,
+        audioURL: Unit,
+        audioConfig: Unit,
+        audioXhrSettings: Unit,
+        jsonXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AudioSpriteFileConfig,
+        jsonURL: String,
+        audioURL: Unit,
+        audioConfig: Unit,
+        audioXhrSettings: XHRSettingsObject,
+        jsonXhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -1195,7 +2113,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.BinaryFile")
     @js.native
     class BinaryFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.BinaryFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.BinaryFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -1211,19 +2130,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BinaryFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1234,23 +2147,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
-        dataType: js.Any
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject,
-        dataType: js.Any
+        key: BinaryFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataType: js.Any
       ) = this()
       def this(
@@ -1262,15 +2167,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BinaryFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        xhrSettings: Unit,
         dataType: js.Any
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BinaryFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject,
         dataType: js.Any
       ) = this()
@@ -1278,7 +2183,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BinaryFileConfig,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataType: js.Any
       ) = this()
       def this(
@@ -1288,6 +2193,220 @@ object Loader {
         xhrSettings: XHRSettingsObject,
         dataType: js.Any
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BinaryFileConfig,
+        url: Unit,
+        xhrSettings: Unit,
+        dataType: js.Any
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BinaryFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject,
+        dataType: js.Any
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -1300,7 +2419,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.BitmapFontFile")
     @js.native
     class BitmapFontFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.BitmapFontFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.BitmapFontFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -1323,12 +2443,6 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         textureURL: String,
         fontDataURL: String
       ) = this()
@@ -1340,8 +2454,8 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        key: String,
+        textureURL: Unit,
         fontDataURL: String
       ) = this()
       def this(
@@ -1358,24 +2472,9 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: String,
-        textureXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject
+        key: BitmapFontFileConfig,
+        textureURL: Unit,
+        fontDataURL: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -1387,8 +2486,8 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        fontDataURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        fontDataURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1400,15 +2499,29 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: js.UndefOr[scala.Nothing],
+        key: String,
+        textureURL: js.Array[String],
+        fontDataURL: Unit,
+        textureXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        fontDataURL: String,
+        textureXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        fontDataURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
         fontDataURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
@@ -1416,13 +2529,13 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
         textureURL: String,
-        fontDataURL: js.UndefOr[scala.Nothing],
+        fontDataURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
-        textureURL: String,
+        textureURL: js.Array[String],
         fontDataURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
@@ -1430,70 +2543,29 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
         textureURL: js.Array[String],
-        fontDataURL: js.UndefOr[scala.Nothing],
+        fontDataURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
-        textureURL: js.Array[String],
+        textureURL: Unit,
         fontDataURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: String,
-        textureXhrSettings: XHRSettingsObject,
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        fontDataXhrSettings: XHRSettingsObject
+        key: BitmapFontFileConfig,
+        textureURL: Unit,
+        fontDataURL: Unit,
+        textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         textureURL: String,
         fontDataURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: Unit,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1507,25 +2579,17 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        fontDataURL: Unit,
+        textureXhrSettings: Unit,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        fontDataURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        fontDataURL: Unit,
         textureXhrSettings: XHRSettingsObject,
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.Array[String],
-        fontDataURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1533,37 +2597,77 @@ object Loader {
         key: String,
         textureURL: js.Array[String],
         fontDataURL: String,
-        textureXhrSettings: XHRSettingsObject,
+        textureXhrSettings: Unit,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        key: String,
+        textureURL: js.Array[String],
         fontDataURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: XHRSettingsObject,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: js.Array[String],
+        fontDataURL: Unit,
+        textureXhrSettings: Unit,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: js.Array[String],
+        fontDataURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        fontDataURL: String,
+        textureXhrSettings: Unit,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        fontDataURL: String,
+        textureXhrSettings: XHRSettingsObject,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        fontDataURL: Unit,
+        textureXhrSettings: Unit,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        fontDataURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        fontDataURL: String,
+        textureXhrSettings: Unit,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BitmapFontFileConfig,
+        textureURL: String,
         fontDataURL: String,
         textureXhrSettings: XHRSettingsObject,
         fontDataXhrSettings: XHRSettingsObject
@@ -1572,47 +2676,15 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
         textureURL: String,
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        fontDataURL: Unit,
+        textureXhrSettings: Unit,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: BitmapFontFileConfig,
         textureURL: String,
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: String,
-        fontDataURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: String,
-        fontDataURL: String,
-        textureXhrSettings: XHRSettingsObject,
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: js.Array[String],
-        fontDataURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        fontDataXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: BitmapFontFileConfig,
-        textureURL: js.Array[String],
-        fontDataURL: js.UndefOr[scala.Nothing],
+        fontDataURL: Unit,
         textureXhrSettings: XHRSettingsObject,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
@@ -1621,7 +2693,7 @@ object Loader {
         key: BitmapFontFileConfig,
         textureURL: js.Array[String],
         fontDataURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: Unit,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1632,6 +2704,156 @@ object Loader {
         textureXhrSettings: XHRSettingsObject,
         fontDataXhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BitmapFontFileConfig,
+        textureURL: js.Array[String],
+        fontDataURL: Unit,
+        textureXhrSettings: Unit,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BitmapFontFileConfig,
+        textureURL: js.Array[String],
+        fontDataURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BitmapFontFileConfig,
+        textureURL: Unit,
+        fontDataURL: String,
+        textureXhrSettings: Unit,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BitmapFontFileConfig,
+        textureURL: Unit,
+        fontDataURL: String,
+        textureXhrSettings: XHRSettingsObject,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BitmapFontFileConfig,
+        textureURL: Unit,
+        fontDataURL: Unit,
+        textureXhrSettings: Unit,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: BitmapFontFileConfig,
+        textureURL: Unit,
+        fontDataURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        fontDataXhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -1644,7 +2866,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.CSSFile")
     @js.native
     class CSSFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.CSSFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.CSSFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -1659,19 +2882,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: CSSFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1680,6 +2897,212 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: CSSFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -1692,7 +3115,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.GLSLFile")
     @js.native
     class GLSLFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.GLSLFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.GLSLFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -1705,19 +3129,8 @@ object Loader {
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: GLSLFileConfig) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: GLSLFileConfig, url: String) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        shaderType: String
-      ) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, shaderType: String) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: GLSLFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        shaderType: String
-      ) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: Unit, shaderType: String) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: GLSLFileConfig,
@@ -1726,24 +3139,9 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        shaderType: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        shaderType: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        shaderType: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
+        key: GLSLFileConfig,
+        url: Unit,
+        shaderType: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -1754,15 +3152,29 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: GLSLFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        shaderType: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        shaderType: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        shaderType: String,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        shaderType: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: GLSLFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         shaderType: String,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -1770,16 +3182,244 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: GLSLFileConfig,
         url: String,
-        shaderType: js.UndefOr[scala.Nothing],
+        shaderType: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: GLSLFileConfig,
-        url: String,
+        url: Unit,
         shaderType: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: GLSLFileConfig,
+        url: Unit,
+        shaderType: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Returns the name of the shader from the header block.
+        * @param headerSource The header data.
+        */
+      /* CompleteClass */
+      override def getShaderName(headerSource: js.Array[String]): String = js.native
+      
+      /**
+        * Returns the type of the shader from the header block.
+        * @param headerSource The header data.
+        */
+      /* CompleteClass */
+      override def getShaderType(headerSource: js.Array[String]): String = js.native
+      
+      /**
+        * Returns the shader uniforms from the header block.
+        * @param headerSource The header data.
+        */
+      /* CompleteClass */
+      override def getShaderUniforms(headerSource: js.Array[String]): js.Any = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -1792,7 +3432,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.HTML5AudioFile")
     @js.native
     class HTML5AudioFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.HTML5AudioFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.HTML5AudioFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -1807,19 +3448,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        urlConfig: js.UndefOr[scala.Nothing],
+        urlConfig: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        urlConfig: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: AudioFileConfig,
-        urlConfig: js.UndefOr[scala.Nothing],
+        urlConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1828,6 +3463,227 @@ object Loader {
         urlConfig: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: AudioFileConfig,
+        urlConfig: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading.
+        */
+      /* CompleteClass */
+      override def onError(): Unit = js.native
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading.
+        */
+      /* CompleteClass */
+      override def onLoad(): Unit = js.native
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(): Unit = js.native
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -1840,7 +3696,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.HTMLFile")
     @js.native
     class HTMLFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.HTMLFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.HTMLFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -1855,19 +3712,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -1876,6 +3727,212 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -1888,7 +3945,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.HTMLTextureFile")
     @js.native
     class HTMLTextureFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.HTMLTextureFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.HTMLTextureFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -1902,19 +3960,8 @@ object Loader {
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: HTMLTextureFileConfig) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: HTMLTextureFileConfig, url: String) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        width: integer
-      ) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, width: integer) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        width: integer
-      ) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: Unit, width: integer) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
@@ -1923,23 +3970,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        width: js.UndefOr[scala.Nothing],
-        height: integer
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        width: integer,
-        height: integer
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: integer
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        width: js.UndefOr[scala.Nothing],
+        width: Unit,
         height: integer
       ) = this()
       def this(
@@ -1951,15 +3990,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        width: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        width: Unit,
         height: integer
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         width: integer,
         height: integer
       ) = this()
@@ -1967,7 +4006,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
         url: String,
-        width: js.UndefOr[scala.Nothing],
+        width: Unit,
         height: integer
       ) = this()
       def this(
@@ -1979,49 +4018,31 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        width: js.UndefOr[scala.Nothing],
-        height: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: Unit,
+        height: integer
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        width: js.UndefOr[scala.Nothing],
-        height: integer,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
+        key: HTMLTextureFileConfig,
+        url: Unit,
         width: integer,
-        height: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
+        height: integer
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        width: integer,
-        height: integer,
+        url: String,
+        width: Unit,
+        height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        width: js.UndefOr[scala.Nothing],
-        height: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        width: js.UndefOr[scala.Nothing],
+        width: Unit,
         height: integer,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -2030,7 +4051,7 @@ object Loader {
         key: String,
         url: String,
         width: integer,
-        height: js.UndefOr[scala.Nothing],
+        height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2043,32 +4064,32 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        width: js.UndefOr[scala.Nothing],
-        height: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        width: Unit,
+        height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        width: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        width: Unit,
         height: integer,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         width: integer,
-        height: js.UndefOr[scala.Nothing],
+        height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: HTMLTextureFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         width: integer,
         height: integer,
         xhrSettings: XHRSettingsObject
@@ -2077,15 +4098,15 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
         url: String,
-        width: js.UndefOr[scala.Nothing],
-        height: js.UndefOr[scala.Nothing],
+        width: Unit,
+        height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: HTMLTextureFileConfig,
         url: String,
-        width: js.UndefOr[scala.Nothing],
+        width: Unit,
         height: integer,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -2094,7 +4115,7 @@ object Loader {
         key: HTMLTextureFileConfig,
         url: String,
         width: integer,
-        height: js.UndefOr[scala.Nothing],
+        height: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2105,6 +4126,238 @@ object Loader {
         height: integer,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: Unit,
+        height: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: Unit,
+        height: integer,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: integer,
+        height: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: HTMLTextureFileConfig,
+        url: Unit,
+        width: integer,
+        height: integer,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -2117,7 +4370,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.ImageFile")
     @js.native
     class ImageFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.ImageFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.ImageFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2135,12 +4389,6 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -2152,8 +4400,8 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ImageFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2170,23 +4418,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
-        frameConfig: ImageFrameConfig
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject,
-        frameConfig: ImageFrameConfig
+        key: ImageFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         frameConfig: ImageFrameConfig
       ) = this()
       def this(
@@ -2200,7 +4440,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: js.Array[String],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         frameConfig: ImageFrameConfig
       ) = this()
       def this(
@@ -2212,15 +4452,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ImageFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        xhrSettings: Unit,
         frameConfig: ImageFrameConfig
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ImageFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject,
         frameConfig: ImageFrameConfig
       ) = this()
@@ -2228,7 +4468,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ImageFileConfig,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         frameConfig: ImageFrameConfig
       ) = this()
       def this(
@@ -2242,7 +4482,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ImageFileConfig,
         url: js.Array[String],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         frameConfig: ImageFrameConfig
       ) = this()
       def this(
@@ -2252,6 +4492,220 @@ object Loader {
         xhrSettings: XHRSettingsObject,
         frameConfig: ImageFrameConfig
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: ImageFileConfig,
+        url: Unit,
+        xhrSettings: Unit,
+        frameConfig: ImageFrameConfig
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: ImageFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject,
+        frameConfig: ImageFrameConfig
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -2264,7 +4718,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.JSONFile")
     @js.native
     class JSONFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.JSONFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.JSONFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2282,12 +4737,6 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -2299,8 +4748,8 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: JSONFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2317,23 +4766,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
-        dataKey: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject,
-        dataKey: String
+        key: JSONFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -2347,7 +4788,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: js.Object,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -2359,15 +4800,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: JSONFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: JSONFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject,
         dataKey: String
       ) = this()
@@ -2375,7 +4816,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: JSONFileConfig,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -2389,7 +4830,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: JSONFileConfig,
         url: js.Object,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -2399,6 +4840,220 @@ object Loader {
         xhrSettings: XHRSettingsObject,
         dataKey: String
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: JSONFileConfig,
+        url: Unit,
+        xhrSettings: Unit,
+        dataKey: String
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: JSONFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject,
+        dataKey: String
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -2411,7 +5066,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.MultiAtlasFile")
     @js.native
     class MultiAtlasFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.MultiAtlasFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.MultiAtlasFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2431,6 +5087,108 @@ object Loader {
         atlasXhrSettings: js.UndefOr[XHRSettingsObject],
         textureXhrSettings: js.UndefOr[XHRSettingsObject]
       ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -2443,7 +5201,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.MultiScriptFile")
     @js.native
     class MultiScriptFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.MultiScriptFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.MultiScriptFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2462,19 +5221,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: js.Array[String],
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.Array[String],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: MultiScriptFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2483,6 +5236,114 @@ object Loader {
         url: js.Array[String],
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: MultiScriptFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -2495,7 +5356,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.PackFile")
     @js.native
     class PackFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.PackFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.PackFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2511,19 +5373,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PackFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2534,23 +5390,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
-        dataKey: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject,
-        dataKey: String
+        key: PackFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -2562,15 +5410,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PackFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PackFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject,
         dataKey: String
       ) = this()
@@ -2578,7 +5426,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: PackFileConfig,
         url: String,
-        xhrSettings: js.UndefOr[scala.Nothing],
+        xhrSettings: Unit,
         dataKey: String
       ) = this()
       def this(
@@ -2588,6 +5436,220 @@ object Loader {
         xhrSettings: XHRSettingsObject,
         dataKey: String
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: PackFileConfig,
+        url: Unit,
+        xhrSettings: Unit,
+        dataKey: String
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: PackFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject,
+        dataKey: String
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -2600,7 +5662,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.PluginFile")
     @js.native
     class PluginFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.PluginFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.PluginFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2614,19 +5677,8 @@ object Loader {
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: PluginFileConfig) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: PluginFileConfig, url: String) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        start: Boolean
-      ) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, start: Boolean) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        start: Boolean
-      ) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: Unit, start: Boolean) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: PluginFileConfig,
@@ -2635,24 +5687,9 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        start: js.UndefOr[scala.Nothing],
-        mapping: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        start: Boolean,
-        mapping: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        start: js.UndefOr[scala.Nothing],
-        mapping: String
+        key: PluginFileConfig,
+        url: Unit,
+        start: Boolean
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -2663,23 +5700,23 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        start: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        start: Unit,
         mapping: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         start: Boolean,
         mapping: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PluginFileConfig,
-        url: String,
-        start: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        start: Unit,
         mapping: String
       ) = this()
       def this(
@@ -2691,59 +5728,24 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        start: js.UndefOr[scala.Nothing],
-        mapping: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        start: js.UndefOr[scala.Nothing],
-        mapping: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        start: Boolean,
-        mapping: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        start: Boolean,
-        mapping: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
+        key: PluginFileConfig,
         url: String,
-        start: js.UndefOr[scala.Nothing],
-        mapping: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
+        start: Unit,
+        mapping: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        start: js.UndefOr[scala.Nothing],
-        mapping: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
+        key: PluginFileConfig,
+        url: Unit,
         start: Boolean,
-        mapping: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
+        mapping: String
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: PluginFileConfig,
+        url: Unit,
+        start: Unit,
+        mapping: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -2755,32 +5757,64 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        start: js.UndefOr[scala.Nothing],
-        mapping: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        start: Boolean,
+        mapping: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        start: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        start: Unit,
         mapping: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: PluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        start: Unit,
+        mapping: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
         start: Boolean,
-        mapping: js.UndefOr[scala.Nothing],
+        mapping: String,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        start: Boolean,
+        mapping: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        start: Unit,
+        mapping: String,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        start: Unit,
+        mapping: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: PluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         start: Boolean,
         mapping: String,
         xhrSettings: XHRSettingsObject
@@ -2789,15 +5823,15 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: PluginFileConfig,
         url: String,
-        start: js.UndefOr[scala.Nothing],
-        mapping: js.UndefOr[scala.Nothing],
+        start: Boolean,
+        mapping: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: PluginFileConfig,
         url: String,
-        start: js.UndefOr[scala.Nothing],
+        start: Unit,
         mapping: String,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -2805,18 +5839,242 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: PluginFileConfig,
         url: String,
-        start: Boolean,
-        mapping: js.UndefOr[scala.Nothing],
+        start: Unit,
+        mapping: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: PluginFileConfig,
-        url: String,
+        url: Unit,
         start: Boolean,
         mapping: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: PluginFileConfig,
+        url: Unit,
+        start: Boolean,
+        mapping: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: PluginFileConfig,
+        url: Unit,
+        start: Unit,
+        mapping: String,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: PluginFileConfig,
+        url: Unit,
+        start: Unit,
+        mapping: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -2829,7 +6087,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.SVGFile")
     @js.native
     class SVGFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.SVGFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.SVGFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2845,19 +6104,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        svgConfig: SVGSizeConfig
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         svgConfig: SVGSizeConfig
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: SVGFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         svgConfig: SVGSizeConfig
       ) = this()
       def this(
@@ -2868,23 +6121,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        svgConfig: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        svgConfig: SVGSizeConfig,
-        xhrSettings: XHRSettingsObject
+        key: SVGFileConfig,
+        url: Unit,
+        svgConfig: SVGSizeConfig
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        svgConfig: js.UndefOr[scala.Nothing],
+        svgConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2896,15 +6141,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: SVGFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        svgConfig: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        svgConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: SVGFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         svgConfig: SVGSizeConfig,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -2912,7 +6157,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: SVGFileConfig,
         url: String,
-        svgConfig: js.UndefOr[scala.Nothing],
+        svgConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2922,6 +6167,220 @@ object Loader {
         svgConfig: SVGSizeConfig,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: SVGFileConfig,
+        url: Unit,
+        svgConfig: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: SVGFileConfig,
+        url: Unit,
+        svgConfig: SVGSizeConfig,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -2934,7 +6393,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.SceneFile")
     @js.native
     class SceneFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.SceneFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.SceneFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2949,19 +6409,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: SceneFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -2970,6 +6424,212 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: SceneFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -2982,7 +6642,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.ScenePluginFile")
     @js.native
     class ScenePluginFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.ScenePluginFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.ScenePluginFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -2996,19 +6657,8 @@ object Loader {
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: ScenePluginFileConfig) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: ScenePluginFileConfig, url: String) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: String
-      ) = this()
       def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: String, systemKey: String) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScenePluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: String
-      ) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, url: Unit, systemKey: String) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ScenePluginFileConfig,
@@ -3017,24 +6667,9 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: String,
-        sceneKey: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: String
+        key: ScenePluginFileConfig,
+        url: Unit,
+        systemKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -3045,23 +6680,23 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScenePluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        systemKey: Unit,
         sceneKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScenePluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         systemKey: String,
         sceneKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScenePluginFileConfig,
-        url: String,
-        systemKey: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        systemKey: Unit,
         sceneKey: String
       ) = this()
       def this(
@@ -3073,59 +6708,24 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: String,
-        sceneKey: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: String,
-        sceneKey: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
+        key: ScenePluginFileConfig,
         url: String,
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
+        systemKey: Unit,
+        sceneKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: String,
+        key: ScenePluginFileConfig,
+        url: Unit,
         systemKey: String,
-        sceneKey: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
+        sceneKey: String
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: ScenePluginFileConfig,
+        url: Unit,
+        systemKey: Unit,
+        sceneKey: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -3137,32 +6737,64 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScenePluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        systemKey: String,
+        sceneKey: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScenePluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        systemKey: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        systemKey: Unit,
         sceneKey: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScenePluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: String,
+        systemKey: Unit,
+        sceneKey: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
         systemKey: String,
-        sceneKey: js.UndefOr[scala.Nothing],
+        sceneKey: String,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        systemKey: String,
+        sceneKey: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        systemKey: Unit,
+        sceneKey: String,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        url: Unit,
+        systemKey: Unit,
+        sceneKey: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ScenePluginFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         systemKey: String,
         sceneKey: String,
         xhrSettings: XHRSettingsObject
@@ -3171,15 +6803,15 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ScenePluginFileConfig,
         url: String,
-        systemKey: js.UndefOr[scala.Nothing],
-        sceneKey: js.UndefOr[scala.Nothing],
+        systemKey: String,
+        sceneKey: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ScenePluginFileConfig,
         url: String,
-        systemKey: js.UndefOr[scala.Nothing],
+        systemKey: Unit,
         sceneKey: String,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -3187,18 +6819,242 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ScenePluginFileConfig,
         url: String,
-        systemKey: String,
-        sceneKey: js.UndefOr[scala.Nothing],
+        systemKey: Unit,
+        sceneKey: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: ScenePluginFileConfig,
-        url: String,
+        url: Unit,
         systemKey: String,
         sceneKey: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: ScenePluginFileConfig,
+        url: Unit,
+        systemKey: String,
+        sceneKey: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: ScenePluginFileConfig,
+        url: Unit,
+        systemKey: Unit,
+        sceneKey: String,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: ScenePluginFileConfig,
+        url: Unit,
+        systemKey: Unit,
+        sceneKey: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -3211,7 +7067,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.ScriptFile")
     @js.native
     class ScriptFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.ScriptFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.ScriptFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -3226,19 +7083,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: ScriptFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3247,12 +7098,219 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: ScriptFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     @JSGlobal("Phaser.Loader.FileTypes.SpineFile")
     @js.native
     class SpineFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.SpineFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.SpineFile {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
@@ -3289,6 +7347,105 @@ object Loader {
         jsonXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
+      
+      /* CompleteClass */
+      override def addToCache(): js.Any = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -3301,7 +7458,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.SpriteSheetFile")
     @js.native
     class SpriteSheetFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.SpriteSheetFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.SpriteSheetFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -3323,12 +7481,6 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        frameConfig: ImageFrameConfig
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         frameConfig: ImageFrameConfig
       ) = this()
@@ -3340,8 +7492,8 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: SpriteSheetFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         frameConfig: ImageFrameConfig
       ) = this()
       def this(
@@ -3358,23 +7510,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        frameConfig: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        url: js.UndefOr[scala.Nothing],
-        frameConfig: ImageFrameConfig,
-        xhrSettings: XHRSettingsObject
+        key: SpriteSheetFileConfig,
+        url: Unit,
+        frameConfig: ImageFrameConfig
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: String,
-        frameConfig: js.UndefOr[scala.Nothing],
+        frameConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3388,7 +7532,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         url: js.Array[String],
-        frameConfig: js.UndefOr[scala.Nothing],
+        frameConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3400,15 +7544,15 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: SpriteSheetFileConfig,
-        url: js.UndefOr[scala.Nothing],
-        frameConfig: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
+        frameConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: SpriteSheetFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         frameConfig: ImageFrameConfig,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -3416,7 +7560,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: SpriteSheetFileConfig,
         url: String,
-        frameConfig: js.UndefOr[scala.Nothing],
+        frameConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3430,7 +7574,7 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: SpriteSheetFileConfig,
         url: js.Array[String],
-        frameConfig: js.UndefOr[scala.Nothing],
+        frameConfig: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3440,6 +7584,220 @@ object Loader {
         frameConfig: ImageFrameConfig,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: SpriteSheetFileConfig,
+        url: Unit,
+        frameConfig: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: SpriteSheetFileConfig,
+        url: Unit,
+        frameConfig: ImageFrameConfig,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -3452,7 +7810,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.TextFile")
     @js.native
     class TextFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.TextFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.TextFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -3467,19 +7826,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: TextFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3488,6 +7841,212 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: TextFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -3500,7 +8059,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.TilemapCSVFile")
     @js.native
     class TilemapCSVFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.TilemapCSVFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.TilemapCSVFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -3515,19 +8075,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: TilemapCSVFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3536,6 +8090,212 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: TilemapCSVFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -3548,7 +8308,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.TilemapImpactFile")
     @js.native
     class TilemapImpactFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.TilemapImpactFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.TilemapImpactFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -3563,19 +8324,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: TilemapImpactFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3584,6 +8339,212 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: TilemapImpactFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -3596,7 +8557,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.TilemapJSONFile")
     @js.native
     class TilemapJSONFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.TilemapJSONFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.TilemapJSONFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -3613,12 +8575,6 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
@@ -3630,8 +8586,8 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: TilemapJSONFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        key: String,
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3646,6 +8602,212 @@ object Loader {
         url: js.Object,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: TilemapJSONFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -3658,7 +8820,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.UnityAtlasFile")
     @js.native
     class UnityAtlasFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.UnityAtlasFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.UnityAtlasFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -3681,12 +8844,6 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
         textureURL: String,
         atlasURL: String
       ) = this()
@@ -3696,12 +8853,7 @@ object Loader {
         textureURL: js.Array[String],
         atlasURL: String
       ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String
-      ) = this()
+      def this(loader: typings.phaser.Phaser.Loader.LoaderPlugin, key: String, textureURL: Unit, atlasURL: String) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
@@ -3716,24 +8868,9 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String,
-        textureXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject
+        key: UnityAtlasFileConfig,
+        textureURL: Unit,
+        atlasURL: String
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
@@ -3745,8 +8882,8 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3758,15 +8895,29 @@ object Loader {
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
+        key: String,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
@@ -3774,13 +8925,13 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
         textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
-        textureURL: String,
+        textureURL: js.Array[String],
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
@@ -3788,70 +8939,29 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
         textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
-        textureURL: js.Array[String],
+        textureURL: Unit,
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: String,
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
+        key: UnityAtlasFileConfig,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
         textureURL: String,
         atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3865,25 +8975,17 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: String,
-        textureURL: js.Array[String],
-        atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3891,37 +8993,77 @@ object Loader {
         key: String,
         textureURL: js.Array[String],
         atlasURL: String,
-        textureXhrSettings: XHRSettingsObject,
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        key: String,
+        textureURL: js.Array[String],
         atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: String,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
-        textureURL: js.UndefOr[scala.Nothing],
+        textureURL: String,
+        atlasURL: String,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: UnityAtlasFileConfig,
+        textureURL: String,
         atlasURL: String,
         textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
@@ -3930,47 +9072,15 @@ object Loader {
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
         textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: UnityAtlasFileConfig,
         textureURL: String,
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: String,
-        atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: String,
-        atlasURL: String,
-        textureXhrSettings: XHRSettingsObject,
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
-        textureXhrSettings: js.UndefOr[scala.Nothing],
-        atlasXhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: UnityAtlasFileConfig,
-        textureURL: js.Array[String],
-        atlasURL: js.UndefOr[scala.Nothing],
+        atlasURL: Unit,
         textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
@@ -3979,7 +9089,7 @@ object Loader {
         key: UnityAtlasFileConfig,
         textureURL: js.Array[String],
         atlasURL: String,
-        textureXhrSettings: js.UndefOr[scala.Nothing],
+        textureXhrSettings: Unit,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -3990,6 +9100,156 @@ object Loader {
         textureXhrSettings: XHRSettingsObject,
         atlasXhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: UnityAtlasFileConfig,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: UnityAtlasFileConfig,
+        textureURL: js.Array[String],
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: UnityAtlasFileConfig,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: UnityAtlasFileConfig,
+        textureURL: Unit,
+        atlasURL: String,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: UnityAtlasFileConfig,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: Unit,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: UnityAtlasFileConfig,
+        textureURL: Unit,
+        atlasURL: Unit,
+        textureXhrSettings: XHRSettingsObject,
+        atlasXhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+        * @param files The File to add to this MultiFile.
+        */
+      /* CompleteClass */
+      override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * A reference to the Loaders baseURL at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var baseURL: String = js.native
+      
+      /**
+        * The completion status of this MultiFile.
+        */
+      /* CompleteClass */
+      var complete: Boolean = js.native
+      
+      /**
+        * A storage container for transient data that the loading files need.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The number of files that failed to load.
+        */
+      /* CompleteClass */
+      var failed: integer = js.native
+      
+      /**
+        * Array of files that make up this MultiFile.
+        */
+      /* CompleteClass */
+      var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+      
+      /**
+        * Checks if this MultiFile is ready to process its children or not.
+        */
+      /* CompleteClass */
+      override def isReadyToProcess(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * Called by each File when it finishes loading.
+        * @param file The File that has completed processing.
+        */
+      /* CompleteClass */
+      override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * Called by each File that fails to load.
+        * @param file The File that has failed to load.
+        */
+      /* CompleteClass */
+      override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * A reference to the Loaders path at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var path: String = js.native
+      
+      /**
+        * The number of files to load.
+        */
+      /* CompleteClass */
+      var pending: integer = js.native
+      
+      /**
+        * A reference to the Loaders prefix at the time this MultiFile was created.
+        * Used to populate child-files.
+        */
+      /* CompleteClass */
+      var prefix: String = js.native
+      
+      /**
+        * The file type string for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
     }
     
     /**
@@ -4002,7 +9262,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.VideoFile")
     @js.native
     class VideoFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.VideoFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.VideoFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -4022,6 +9283,206 @@ object Loader {
         noAudio: js.UndefOr[Boolean],
         xhrSettings: js.UndefOr[XHRSettingsObject]
       ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
     
     /**
@@ -4034,7 +9495,8 @@ object Loader {
     @JSGlobal("Phaser.Loader.FileTypes.XMLFile")
     @js.native
     class XMLFile protected ()
-      extends typings.phaser.Phaser.Loader.FileTypes.XMLFile {
+      extends StObject
+         with typings.phaser.Phaser.Loader.FileTypes.XMLFile {
       /**
         * 
         * @param loader A reference to the Loader that is responsible for this file.
@@ -4049,19 +9511,13 @@ object Loader {
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: js.UndefOr[scala.Nothing],
+        url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
         loader: typings.phaser.Phaser.Loader.LoaderPlugin,
         key: String,
-        url: String,
-        xhrSettings: XHRSettingsObject
-      ) = this()
-      def this(
-        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
-        key: XMLFileConfig,
-        url: js.UndefOr[scala.Nothing],
+        url: Unit,
         xhrSettings: XHRSettingsObject
       ) = this()
       def this(
@@ -4070,17 +9526,226 @@ object Loader {
         url: String,
         xhrSettings: XHRSettingsObject
       ) = this()
+      def this(
+        loader: typings.phaser.Phaser.Loader.LoaderPlugin,
+        key: XMLFileConfig,
+        url: Unit,
+        xhrSettings: XHRSettingsObject
+      ) = this()
+      
+      /**
+        * Adds this file to its target cache upon successful loading and processing.
+        * This method is often overridden by specific file types.
+        */
+      /* CompleteClass */
+      override def addToCache(): Unit = js.native
+      
+      /**
+        * Updated as the file loads.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesLoaded: Double = js.native
+      
+      /**
+        * The total size of this file.
+        * Set by onProgress and only if loading via XHR.
+        */
+      /* CompleteClass */
+      var bytesTotal: Double = js.native
+      
+      /**
+        * A reference to the Cache, or Texture Manager, that is going to store this file if it loads.
+        */
+      /* CompleteClass */
+      var cache: BaseCache | TextureManager = js.native
+      
+      /**
+        * A config object that can be used by file types to store transitional data.
+        */
+      /* CompleteClass */
+      var config: js.Any = js.native
+      
+      /**
+        * The processed file data, stored here after the file has loaded.
+        */
+      /* CompleteClass */
+      var data: js.Any = js.native
+      
+      /**
+        * Destroy this File and any references it holds.
+        */
+      /* CompleteClass */
+      override def destroy(): Unit = js.native
+      
+      /**
+        * Checks if a key matching the one used by this file exists in the target Cache or not.
+        * This is called automatically by the LoaderPlugin to decide if the file can be safely
+        * loaded or will conflict.
+        */
+      /* CompleteClass */
+      override def hasCacheConflict(): Boolean = js.native
+      
+      /**
+        * Unique cache key (unique within its file type)
+        */
+      /* CompleteClass */
+      var key: String = js.native
+      
+      /**
+        * Does this file have an associated linked file? Such as an image and a normal map.
+        * Atlases and Bitmap Fonts use the multiFile, because those files need loading together but aren't
+        * actually bound by data, where-as a linkFile is.
+        */
+      /* CompleteClass */
+      var linkFile: typings.phaser.Phaser.Loader.File = js.native
+      
+      /**
+        * Called by the Loader, starts the actual file downloading.
+        * During the load the methods onLoad, onError and onProgress are called, based on the XHR events.
+        * You shouldn't normally call this method directly, it's meant to be invoked by the Loader.
+        */
+      /* CompleteClass */
+      override def load(): Unit = js.native
+      
+      /**
+        * A reference to the Loader that is going to load this file.
+        */
+      /* CompleteClass */
+      var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+      
+      /**
+        * If this is a multipart file, i.e. an atlas and its json together, then this is a reference
+        * to the parent MultiFile. Set and used internally by the Loader or specific file types.
+        */
+      /* CompleteClass */
+      var multiFile: typings.phaser.Phaser.Loader.MultiFile = js.native
+      
+      /**
+        * Called if the file errors while loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this error.
+        */
+      /* CompleteClass */
+      override def onError(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called when the file finishes loading, is sent a DOM ProgressEvent.
+        * @param xhr The XMLHttpRequest that caused this onload event.
+        * @param event The DOM ProgressEvent that resulted from this load.
+        */
+      /* CompleteClass */
+      override def onLoad(xhr: XMLHttpRequest, event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Usually overridden by the FileTypes and is called by Loader.nextFile.
+        * This method controls what extra work this File does with its loaded data, for example a JSON file will parse itself during this stage.
+        */
+      /* CompleteClass */
+      override def onProcess(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessComplete(): Unit = js.native
+      
+      /**
+        * Called when the File has completed processing but it generated an error.
+        * Checks on the state of its multifile, if set.
+        */
+      /* CompleteClass */
+      override def onProcessError(): Unit = js.native
+      
+      /**
+        * Called during the file load progress. Is sent a DOM ProgressEvent.
+        * @param event The DOM ProgressEvent.
+        */
+      /* CompleteClass */
+      override def onProgress(event: ProgressEvent[EventTarget]): Unit = js.native
+      
+      /**
+        * Called once the file has been added to its cache and is now ready for deletion from the Loader.
+        * It will emit a `filecomplete` event from the LoaderPlugin.
+        */
+      /* CompleteClass */
+      override def pendingDestroy(): Unit = js.native
+      
+      /**
+        * A percentage value between 0 and 1 indicating how much of this file has loaded.
+        * Only set if loading via XHR.
+        */
+      /* CompleteClass */
+      var percentComplete: Double = js.native
+      
+      /**
+        * Resets the XHRLoader instance this file is using.
+        */
+      /* CompleteClass */
+      override def resetXHR(): Unit = js.native
+      
+      /**
+        * Links this File with another, so they depend upon each other for loading and processing.
+        * @param fileB The file to link to this one.
+        */
+      /* CompleteClass */
+      override def setLink(fileB: typings.phaser.Phaser.Loader.File): Unit = js.native
+      
+      /**
+        * The final URL this file will load from, including baseURL and path.
+        * Set automatically when the Loader calls 'load' on this file.
+        */
+      /* CompleteClass */
+      var src: String = js.native
+      
+      /**
+        * The current state of the file. One of the FILE_CONST values.
+        */
+      /* CompleteClass */
+      var state: integer = js.native
+      
+      /**
+        * The file type string (image, json, etc) for sorting within the Loader.
+        */
+      /* CompleteClass */
+      var `type`: String = js.native
+      
+      /**
+        * The URL of the file, not including baseURL.
+        * 
+        * Automatically has Loader.path prepended to it if a string.
+        * 
+        * Can also be a JavaScript Object, such as the results of parsing JSON data.
+        */
+      /* CompleteClass */
+      var url: js.Object | String = js.native
+      
+      /**
+        * The XMLHttpRequest instance (as created by XHR Loader) that is loading this File.
+        */
+      /* CompleteClass */
+      var xhrLoader: XMLHttpRequest = js.native
+      
+      /**
+        * The merged XHRSettings for this file.
+        */
+      /* CompleteClass */
+      var xhrSettings: XHRSettingsObject = js.native
     }
   }
   
   object FileTypesManager {
     
+    @JSGlobal("Phaser.Loader.FileTypesManager")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Removed all associated file types.
       */
-    @JSGlobal("Phaser.Loader.FileTypesManager.destroy")
-    @js.native
-    def destroy(): Unit = js.native
+    @scala.inline
+    def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
     
     /**
       * Static method called when a LoaderPlugin is created.
@@ -4089,9 +9754,8 @@ object Loader {
       * properties into the LoaderPlugin instance.
       * @param loader The LoaderPlugin to install the types into.
       */
-    @JSGlobal("Phaser.Loader.FileTypesManager.install")
-    @js.native
-    def install(loader: typings.phaser.Phaser.Loader.LoaderPlugin): Unit = js.native
+    @scala.inline
+    def install(loader: typings.phaser.Phaser.Loader.LoaderPlugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(loader.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Static method called directly by the File Types.
@@ -4100,9 +9764,8 @@ object Loader {
       * @param key The key that will be used as the method name in the LoaderPlugin.
       * @param factoryFunction The function that will be called when LoaderPlugin.key is invoked.
       */
-    @JSGlobal("Phaser.Loader.FileTypesManager.register")
-    @js.native
-    def register(key: String, factoryFunction: js.Function): Unit = js.native
+    @scala.inline
+    def register(key: String, factoryFunction: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(key.asInstanceOf[js.Any], factoryFunction.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   /**
@@ -4110,9 +9773,8 @@ object Loader {
     * @param file The File object.
     * @param baseURL A default base URL.
     */
-  @JSGlobal("Phaser.Loader.GetURL")
-  @js.native
-  def GetURL(file: typings.phaser.Phaser.Loader.File, baseURL: String): String = js.native
+  @scala.inline
+  def GetURL(file: typings.phaser.Phaser.Loader.File, baseURL: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("GetURL")(file.asInstanceOf[js.Any], baseURL.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * The Loader has completed loading and processing.
@@ -4196,7 +9858,8 @@ object Loader {
   @JSGlobal("Phaser.Loader.LoaderPlugin")
   @js.native
   class LoaderPlugin protected ()
-    extends typings.phaser.Phaser.Loader.LoaderPlugin {
+    extends StObject
+       with typings.phaser.Phaser.Loader.LoaderPlugin {
     /**
       * 
       * @param scene The Scene which owns this Loader instance.
@@ -4212,9 +9875,8 @@ object Loader {
     * @param global The global XHRSettings object.
     * @param local The local XHRSettings object.
     */
-  @JSGlobal("Phaser.Loader.MergeXHRSettings")
-  @js.native
-  def MergeXHRSettings(global: XHRSettingsObject, local: XHRSettingsObject): XHRSettingsObject = js.native
+  @scala.inline
+  def MergeXHRSettings(global: XHRSettingsObject, local: XHRSettingsObject): XHRSettingsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("MergeXHRSettings")(global.asInstanceOf[js.Any], local.asInstanceOf[js.Any])).asInstanceOf[XHRSettingsObject]
   
   /**
     * A MultiFile is a special kind of parent that contains two, or more, Files as children and looks after
@@ -4225,7 +9887,8 @@ object Loader {
   @JSGlobal("Phaser.Loader.MultiFile")
   @js.native
   class MultiFile protected ()
-    extends typings.phaser.Phaser.Loader.MultiFile {
+    extends StObject
+       with typings.phaser.Phaser.Loader.MultiFile {
     /**
       * 
       * @param loader The Loader that is going to load this File.
@@ -4239,6 +9902,102 @@ object Loader {
       key: String,
       files: js.Array[typings.phaser.Phaser.Loader.File]
     ) = this()
+    
+    /**
+      * Adds another child to this MultiFile, increases the pending count and resets the completion status.
+      * @param files The File to add to this MultiFile.
+      */
+    /* CompleteClass */
+    override def addToMultiFile(files: typings.phaser.Phaser.Loader.File): typings.phaser.Phaser.Loader.MultiFile = js.native
+    
+    /**
+      * A reference to the Loaders baseURL at the time this MultiFile was created.
+      * Used to populate child-files.
+      */
+    /* CompleteClass */
+    var baseURL: String = js.native
+    
+    /**
+      * The completion status of this MultiFile.
+      */
+    /* CompleteClass */
+    var complete: Boolean = js.native
+    
+    /**
+      * A storage container for transient data that the loading files need.
+      */
+    /* CompleteClass */
+    var config: js.Any = js.native
+    
+    /**
+      * The number of files that failed to load.
+      */
+    /* CompleteClass */
+    var failed: integer = js.native
+    
+    /**
+      * Array of files that make up this MultiFile.
+      */
+    /* CompleteClass */
+    var files: js.Array[typings.phaser.Phaser.Loader.File] = js.native
+    
+    /**
+      * Checks if this MultiFile is ready to process its children or not.
+      */
+    /* CompleteClass */
+    override def isReadyToProcess(): Boolean = js.native
+    
+    /**
+      * Unique cache key (unique within its file type)
+      */
+    /* CompleteClass */
+    var key: String = js.native
+    
+    /**
+      * A reference to the Loader that is going to load this file.
+      */
+    /* CompleteClass */
+    var loader: typings.phaser.Phaser.Loader.LoaderPlugin = js.native
+    
+    /**
+      * Called by each File when it finishes loading.
+      * @param file The File that has completed processing.
+      */
+    /* CompleteClass */
+    override def onFileComplete(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+    
+    /**
+      * Called by each File that fails to load.
+      * @param file The File that has failed to load.
+      */
+    /* CompleteClass */
+    override def onFileFailed(file: typings.phaser.Phaser.Loader.File): Unit = js.native
+    
+    /**
+      * A reference to the Loaders path at the time this MultiFile was created.
+      * Used to populate child-files.
+      */
+    /* CompleteClass */
+    var path: String = js.native
+    
+    /**
+      * The number of files to load.
+      */
+    /* CompleteClass */
+    var pending: integer = js.native
+    
+    /**
+      * A reference to the Loaders prefix at the time this MultiFile was created.
+      * Used to populate child-files.
+      */
+    /* CompleteClass */
+    var prefix: String = js.native
+    
+    /**
+      * The file type string for sorting within the Loader.
+      */
+    /* CompleteClass */
+    var `type`: String = js.native
   }
   
   /**
@@ -4248,9 +10007,8 @@ object Loader {
     * @param file The File to download.
     * @param globalXHRSettings The global XHRSettings object.
     */
-  @JSGlobal("Phaser.Loader.XHRLoader")
-  @js.native
-  def XHRLoader(file: typings.phaser.Phaser.Loader.File, globalXHRSettings: XHRSettingsObject): XMLHttpRequest = js.native
+  @scala.inline
+  def XHRLoader(file: typings.phaser.Phaser.Loader.File, globalXHRSettings: XHRSettingsObject): XMLHttpRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("XHRLoader")(file.asInstanceOf[js.Any], globalXHRSettings.asInstanceOf[js.Any])).asInstanceOf[XMLHttpRequest]
   
   /**
     * Creates an XHRSettings Object with default values.
@@ -4261,8 +10019,7 @@ object Loader {
     * @param timeout Optional XHR timeout value. Default 0.
     * @param withCredentials Optional XHR withCredentials value. Default false.
     */
-  @JSGlobal("Phaser.Loader.XHRSettings")
-  @js.native
+  @scala.inline
   def XHRSettings(
     responseType: js.UndefOr[XMLHttpRequestResponseType],
     async: js.UndefOr[Boolean],
@@ -4270,5 +10027,5 @@ object Loader {
     password: js.UndefOr[String],
     timeout: js.UndefOr[integer],
     withCredentials: js.UndefOr[Boolean]
-  ): XHRSettingsObject = js.native
+  ): XHRSettingsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("XHRSettings")(responseType.asInstanceOf[js.Any], async.asInstanceOf[js.Any], user.asInstanceOf[js.Any], password.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], withCredentials.asInstanceOf[js.Any])).asInstanceOf[XHRSettingsObject]
 }

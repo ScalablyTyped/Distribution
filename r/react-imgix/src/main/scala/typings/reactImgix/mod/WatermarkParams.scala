@@ -2,33 +2,31 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatermarkParams extends StObject {
   
-  var mark: js.UndefOr[ImgixParamType] = js.native
+  var mark: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-align`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-align`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-alpha`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-alpha`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-base`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-base`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-fit`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-fit`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-h`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-h`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-pad`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-pad`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-scale`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-scale`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-w`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-w`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-x`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-x`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `mark-y`: js.UndefOr[ImgixParamType] = js.native
+  var `mark-y`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object WatermarkParams {
   

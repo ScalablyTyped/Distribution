@@ -5,13 +5,14 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.IntResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides properties and methods for managing a user's list of followed actors.
   Actors can be users, documents, sites, and tags. */
 @js.native
-trait SocialFollowingManager extends ClientObject {
+trait SocialFollowingManager
+  extends StObject
+     with ClientObject {
   
   /** Adds the specified actor to the current user's list of followed items.
     Returns one of the following values, wrapped into the SP.IntResult object:

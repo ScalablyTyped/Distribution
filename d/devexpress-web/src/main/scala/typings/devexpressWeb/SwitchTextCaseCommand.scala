@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to switch the text case at the current position in the document.
   */
-@js.native
-trait SwitchTextCaseCommand extends CommandWithSimpleStateBase {
+trait SwitchTextCaseCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the SwitchTextCaseCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object SwitchTextCaseCommand {
   

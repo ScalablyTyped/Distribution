@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Gives access to a single diagram. This interface is needed by the wrapper for the old API (namespace {@link com.sun.star.chart} ). */
-@js.native
-trait XDiagramProvider extends XInterface {
+trait XDiagramProvider
+  extends StObject
+     with XInterface {
   
-  var Diagram: XDiagram = js.native
+  var Diagram: XDiagram
   
-  def getDiagram(): XDiagram = js.native
+  def getDiagram(): XDiagram
   
-  def setDiagram(xDiagram: XDiagram): Unit = js.native
+  def setDiagram(xDiagram: XDiagram): Unit
 }
 object XDiagramProvider {
   

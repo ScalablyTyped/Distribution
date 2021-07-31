@@ -2,71 +2,69 @@ package typings.xssFilters
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XSSFilters extends StObject {
   
-  def inDoubleQuotedAttr(s: String): String = js.native
+  def inDoubleQuotedAttr(s: String): String
   
-  def inHTMLComment(s: String): String = js.native
+  def inHTMLComment(s: String): String
   
-  def inHTMLData(s: String): String = js.native
+  def inHTMLData(s: String): String
   
-  def inSingleQuotedAttr(s: String): String = js.native
+  def inSingleQuotedAttr(s: String): String
   
-  def inUnQuotedAttr(s: String): String = js.native
+  def inUnQuotedAttr(s: String): String
   
-  def uriComponentInDoubleQuotedAttr(s: String): String = js.native
+  def uriComponentInDoubleQuotedAttr(s: String): String
   
-  def uriComponentInHTMLComment(s: String): String = js.native
+  def uriComponentInHTMLComment(s: String): String
   
-  def uriComponentInHTMLData(s: String): String = js.native
+  def uriComponentInHTMLData(s: String): String
   
-  def uriComponentInSingleQuotedAttr(s: String): String = js.native
+  def uriComponentInSingleQuotedAttr(s: String): String
   
-  def uriComponentInUnQuotedAttr(s: String): String = js.native
+  def uriComponentInUnQuotedAttr(s: String): String
   
-  def uriFragmentInDoubleQuotedAttr(s: String): String = js.native
+  def uriFragmentInDoubleQuotedAttr(s: String): String
   
-  def uriFragmentInHTMLComment(s: String): String = js.native
+  def uriFragmentInHTMLComment(s: String): String
   
-  def uriFragmentInHTMLData(s: String): String = js.native
+  def uriFragmentInHTMLData(s: String): String
   
-  def uriFragmentInSingleQuotedAttr(s: String): String = js.native
+  def uriFragmentInSingleQuotedAttr(s: String): String
   
-  def uriFragmentInUnQuotedAttr(s: String): String = js.native
+  def uriFragmentInUnQuotedAttr(s: String): String
   
-  def uriInDoubleQuotedAttr(s: String): String = js.native
+  def uriInDoubleQuotedAttr(s: String): String
   
-  def uriInHTMLComment(s: String): String = js.native
+  def uriInHTMLComment(s: String): String
   
-  def uriInHTMLData(s: String): String = js.native
+  def uriInHTMLData(s: String): String
   
-  def uriInSingleQuotedAttr(s: String): String = js.native
+  def uriInSingleQuotedAttr(s: String): String
   
-  def uriInUnQuotedAttr(s: String): String = js.native
+  def uriInUnQuotedAttr(s: String): String
   
-  def uriPathInDoubleQuotedAttr(s: String): String = js.native
+  def uriPathInDoubleQuotedAttr(s: String): String
   
-  def uriPathInHTMLComment(s: String): String = js.native
+  def uriPathInHTMLComment(s: String): String
   
-  def uriPathInHTMLData(s: String): String = js.native
+  def uriPathInHTMLData(s: String): String
   
-  def uriPathInSingleQuotedAttr(s: String): String = js.native
+  def uriPathInSingleQuotedAttr(s: String): String
   
-  def uriPathInUnQuotedAttr(s: String): String = js.native
+  def uriPathInUnQuotedAttr(s: String): String
   
-  def uriQueryInDoubleQuotedAttr(s: String): String = js.native
+  def uriQueryInDoubleQuotedAttr(s: String): String
   
-  def uriQueryInHTMLComment(s: String): String = js.native
+  def uriQueryInHTMLComment(s: String): String
   
-  def uriQueryInHTMLData(s: String): String = js.native
+  def uriQueryInHTMLData(s: String): String
   
-  def uriQueryInSingleQuotedAttr(s: String): String = js.native
+  def uriQueryInSingleQuotedAttr(s: String): String
   
-  def uriQueryInUnQuotedAttr(s: String): String = js.native
+  def uriQueryInUnQuotedAttr(s: String): String
 }
 object XSSFilters {
   

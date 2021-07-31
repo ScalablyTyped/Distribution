@@ -2,26 +2,24 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakpointsChangeEvent extends StObject {
   
   /**
     * Added breakpoints.
     */
-  val added: js.Array[Breakpoint] = js.native
+  val added: js.Array[Breakpoint]
   
   /**
     * Changed breakpoints.
     */
-  val changed: js.Array[Breakpoint] = js.native
+  val changed: js.Array[Breakpoint]
   
   /**
     * Removed breakpoints.
     */
-  val removed: js.Array[Breakpoint] = js.native
+  val removed: js.Array[Breakpoint]
 }
 object BreakpointsChangeEvent {
   

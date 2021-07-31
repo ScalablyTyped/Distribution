@@ -2,15 +2,13 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteAuditSuppressionRequest extends StObject {
   
-  var checkName: AuditCheckName = js.native
+  var checkName: AuditCheckName
   
-  var resourceIdentifier: ResourceIdentifier = js.native
+  var resourceIdentifier: ResourceIdentifier
 }
 object DeleteAuditSuppressionRequest {
   

@@ -3,19 +3,17 @@ package typings.cathoQuantum.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var content: js.UndefOr[ReactNode] = js.native
+  var content: js.UndefOr[ReactNode] = js.undefined
   
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var opened: js.UndefOr[Boolean] = js.native
+  var opened: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Content {
   

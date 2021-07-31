@@ -4,14 +4,12 @@ import typings.mongodb.mongodbStrings.snappy
 import typings.mongodb.mongodbStrings.zlib
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Compressors extends StObject {
   
   /** The selected compressors in preference order */
-  var compressors: js.UndefOr[js.Array[snappy | zlib]] = js.native
+  var compressors: js.UndefOr[js.Array[snappy | zlib]] = js.undefined
 }
 object Compressors {
   

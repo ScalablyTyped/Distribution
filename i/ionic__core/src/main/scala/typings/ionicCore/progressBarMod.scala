@@ -6,14 +6,15 @@ import typings.ionicCore.mod.Color
 import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object progressBarMod {
   
   @JSImport("@ionic/core/dist/types/components/progress-bar/progress-bar", "ProgressBar")
   @js.native
-  class ProgressBar () extends ComponentInterface {
+  class ProgressBar ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * If the buffer and value are smaller than 1, the buffer circles will show.

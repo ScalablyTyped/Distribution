@@ -5,39 +5,39 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * use {@link XFramesSupplier} instead of that
   * @deprecated Deprecated
   */
-@js.native
-trait XTasksSupplier extends XInterface {
+trait XTasksSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * use {@link XFramesSupplier.getActiveFrame()} instead of this one
     * @deprecated Deprecated
     */
-  val ActiveTask: XTask = js.native
+  val ActiveTask: XTask
   
   /**
     * use {@link XFramesSupplier.getFrames()} instead of this one
     * @deprecated Deprecated
     */
-  val Tasks: XEnumerationAccess = js.native
+  val Tasks: XEnumerationAccess
   
   /**
     * use {@link XFramesSupplier.getActiveFrame()} instead of this one
     * @deprecated Deprecated
     */
-  def getActiveTask(): XTask = js.native
+  def getActiveTask(): XTask
   
   /**
     * use {@link XFramesSupplier.getFrames()} instead of this one
     * @deprecated Deprecated
     */
-  def getTasks(): XEnumerationAccess = js.native
+  def getTasks(): XEnumerationAccess
 }
 object XTasksSupplier {
   

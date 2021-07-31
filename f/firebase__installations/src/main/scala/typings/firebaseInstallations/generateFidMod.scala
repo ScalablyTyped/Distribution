@@ -3,10 +3,13 @@ package typings.firebaseInstallations
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object generateFidMod {
+  
+  @JSImport("@firebase/installations/dist/src/helpers/generate-fid", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/installations/dist/src/helpers/generate-fid", "INVALID_FID")
   @js.native
@@ -16,7 +19,6 @@ object generateFidMod {
   @js.native
   val VALID_FID_PATTERN: RegExp = js.native
   
-  @JSImport("@firebase/installations/dist/src/helpers/generate-fid", "generateFid")
-  @js.native
-  def generateFid(): String = js.native
+  @scala.inline
+  def generateFid(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generateFid")().asInstanceOf[String]
 }

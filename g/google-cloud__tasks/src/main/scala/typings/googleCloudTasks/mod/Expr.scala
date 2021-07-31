@@ -2,19 +2,17 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expr extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var expression: String = js.native
+  var expression: String
   
-  var location: String = js.native
+  var location: String
   
-  var title: String = js.native
+  var title: String
 }
 object Expr {
   

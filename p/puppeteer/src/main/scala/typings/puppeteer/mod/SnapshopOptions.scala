@@ -3,23 +3,21 @@ package typings.puppeteer.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshopOptions extends StObject {
   
   /**
     * Prune uninteresting nodes from the tree.
     * @default true
     */
-  var interestingOnly: js.UndefOr[Boolean] = js.native
+  var interestingOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The root DOM element for the snapshot.
     * @default document.body
     */
-  var root: js.UndefOr[ElementHandle[Element]] = js.native
+  var root: js.UndefOr[ElementHandle[Element]] = js.undefined
 }
 object SnapshopOptions {
   

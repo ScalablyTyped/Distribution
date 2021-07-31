@@ -11,7 +11,6 @@ import typings.spectrum.JQuery
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chatMod {
@@ -185,12 +184,11 @@ object chatMod {
       def faction: typings.iitc.iitcStrings.faction = "faction".asInstanceOf[typings.iitc.iitcStrings.faction]
     }
     
-    @js.native
     trait chatStorage extends StObject {
       
-      var newestTimestamp: Double = js.native
+      var newestTimestamp: Double
       
-      var oldestTimestamp: Double = js.native
+      var oldestTimestamp: Double
     }
     object chatStorage {
       

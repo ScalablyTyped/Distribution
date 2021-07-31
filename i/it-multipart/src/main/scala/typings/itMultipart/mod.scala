@@ -6,7 +6,6 @@ import typings.std.AsyncIterable
 import typings.std.AsyncIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,21 +23,26 @@ object mod {
     * @param {string} [boundary]
     * @returns {AsyncIterable<{headers:IncomingHttpHeaders, body:It<Buffer>}>}
     */
+  @scala.inline
+  def apply(source: IncomingMessage): AsyncIterable[Body] = ^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[Body]]
+  @scala.inline
+  def apply(source: IncomingMessage, boundary: String): AsyncIterable[Body] = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], boundary.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[Body]]
+  
   @JSImport("it-multipart/dist", JSImport.Namespace)
   @js.native
-  def apply(source: IncomingMessage): AsyncIterable[Body] = js.native
-  @JSImport("it-multipart/dist", JSImport.Namespace)
-  @js.native
-  def apply(source: IncomingMessage, boundary: String): AsyncIterable[Body] = js.native
+  val ^ : js.Any = js.native
   
   type IncomingHttpHeaders = typings.node.httpMod.IncomingHttpHeaders
   
-  type It[T] = AsyncIterable[T] with (AsyncIterator[T, _, js.UndefOr[scala.Nothing]])
-  
   @js.native
+  trait It[T]
+    extends StObject
+       with AsyncIterable[T]
+       with AsyncIterator[T, js.Any, Unit]
+  
   trait PrefixPush[T] extends StObject {
     
-    def push(arg0: T): Unit = js.native
+    def push(arg0: T): Unit
   }
   object PrefixPush {
     
@@ -49,14 +53,19 @@ object mod {
     }
     
     @scala.inline
-    implicit class PrefixPushMutableBuilder[Self <: PrefixPush[_], T] (val x: Self with PrefixPush[T]) extends AnyVal {
+    implicit class PrefixPushMutableBuilder[Self <: PrefixPush[?], T] (val x: Self & PrefixPush[T]) extends AnyVal {
       
       @scala.inline
       def setPush(value: T => Unit): Self = StObject.set(x, "push", js.Any.fromFunction1(value))
     }
   }
   
-  type PrefixStream[T] = AsyncIterable[T] with (AsyncIterator[T, _, js.UndefOr[scala.Nothing]]) with PrefixPush[T]
+  @js.native
+  trait PrefixStream[T]
+    extends StObject
+       with AsyncIterable[T]
+       with AsyncIterator[T, js.Any, Unit]
+       with PrefixPush[T]
   
   type parseHeaders = js.Function1[/* arg0 */ String, IncomingHttpHeaders]
 }

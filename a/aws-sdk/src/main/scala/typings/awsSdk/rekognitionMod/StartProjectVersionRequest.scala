@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartProjectVersionRequest extends StObject {
   
   /**
     * The minimum number of inference units to use. A single inference unit represents 1 hour of processing and can support up to 5 Transaction Pers Second (TPS). Use a higher number to increase the TPS throughput of your model. You are charged for the number of inference units that you use. 
     */
-  var MinInferenceUnits: InferenceUnits = js.native
+  var MinInferenceUnits: InferenceUnits
   
   /**
     * The Amazon Resource Name(ARN) of the model version that you want to start.
     */
-  var ProjectVersionArn: typings.awsSdk.rekognitionMod.ProjectVersionArn = js.native
+  var ProjectVersionArn: typings.awsSdk.rekognitionMod.ProjectVersionArn
 }
 object StartProjectVersionRequest {
   

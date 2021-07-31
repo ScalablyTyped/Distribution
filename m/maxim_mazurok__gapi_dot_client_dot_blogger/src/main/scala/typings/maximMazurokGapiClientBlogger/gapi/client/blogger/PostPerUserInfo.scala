@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientBlogger.gapi.client.blogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostPerUserInfo extends StObject {
   
   /** ID of the Blog that the post resource belongs to. */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /** True if the user has Author level access to the post. */
-  var hasEditAccess: js.UndefOr[Boolean] = js.native
+  var hasEditAccess: js.UndefOr[Boolean] = js.undefined
   
   /** The kind of this entity. Always blogger#postPerUserInfo. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** ID of the Post resource. */
-  var postId: js.UndefOr[String] = js.native
+  var postId: js.UndefOr[String] = js.undefined
   
   /** ID of the User. */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object PostPerUserInfo {
   

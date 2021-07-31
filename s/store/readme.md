@@ -11,8 +11,8 @@ A localStorage wrapper for all browsers without using cookies or flash. Uses loc
 | Full name          | store |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 415 |
-| # downloads        | 7088873 |
+| # dependents       | 476 |
+| # downloads        | 7797336 |
 | # stars            | 43 |
 
 ## Links

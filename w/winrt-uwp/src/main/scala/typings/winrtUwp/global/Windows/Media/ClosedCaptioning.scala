@@ -8,7 +8,6 @@ import typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle
 import typings.winrtUwp.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides APIs for retrieving the closed caption formatting settings that the user can set through the system's closed captioning settings page. */
@@ -20,25 +19,25 @@ object ClosedCaptioning {
   object ClosedCaptionColor extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor & Double] = js.native
     
-    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.default with Double = js.native
+    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.default & Double = js.native
     
-    /* 2 */ val black: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.black with Double = js.native
+    /* 2 */ val black: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.black & Double = js.native
     
-    /* 5 */ val blue: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.blue with Double = js.native
+    /* 5 */ val blue: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.blue & Double = js.native
     
-    /* 8 */ val cyan: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.cyan with Double = js.native
+    /* 8 */ val cyan: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.cyan & Double = js.native
     
-    /* 4 */ val green: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.green with Double = js.native
+    /* 4 */ val green: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.green & Double = js.native
     
-    /* 7 */ val magenta: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.magenta with Double = js.native
+    /* 7 */ val magenta: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.magenta & Double = js.native
     
-    /* 3 */ val red: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.red with Double = js.native
+    /* 3 */ val red: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.red & Double = js.native
     
-    /* 1 */ val white: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.white with Double = js.native
+    /* 1 */ val white: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.white & Double = js.native
     
-    /* 6 */ val yellow: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.yellow with Double = js.native
+    /* 6 */ val yellow: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionColor.yellow & Double = js.native
   }
   
   /** Specifies the edge effect of closed caption text. */
@@ -47,21 +46,19 @@ object ClosedCaptioning {
   object ClosedCaptionEdgeEffect extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[
-        typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect with Double
-      ] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect & Double] = js.native
     
-    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.default with Double = js.native
+    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.default & Double = js.native
     
-    /* 3 */ val depressed: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.depressed with Double = js.native
+    /* 3 */ val depressed: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.depressed & Double = js.native
     
-    /* 5 */ val dropShadow: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.dropShadow with Double = js.native
+    /* 5 */ val dropShadow: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.dropShadow & Double = js.native
     
-    /* 1 */ val none: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.none with Double = js.native
+    /* 1 */ val none: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.none & Double = js.native
     
-    /* 2 */ val raised: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.raised with Double = js.native
+    /* 2 */ val raised: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.raised & Double = js.native
     
-    /* 4 */ val uniform: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.uniform with Double = js.native
+    /* 4 */ val uniform: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionEdgeEffect.uniform & Double = js.native
   }
   
   /** Specifies the opacity of closed caption text. */
@@ -70,24 +67,25 @@ object ClosedCaptioning {
   object ClosedCaptionOpacity extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity & Double] = js.native
     
-    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.default with Double = js.native
+    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.default & Double = js.native
     
-    /* 1 */ val oneHundredPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.oneHundredPercent with Double = js.native
+    /* 1 */ val oneHundredPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.oneHundredPercent & Double = js.native
     
-    /* 2 */ val seventyFivePercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.seventyFivePercent with Double = js.native
+    /* 2 */ val seventyFivePercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.seventyFivePercent & Double = js.native
     
-    /* 3 */ val twentyFivePercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.twentyFivePercent with Double = js.native
+    /* 3 */ val twentyFivePercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.twentyFivePercent & Double = js.native
     
-    /* 4 */ val zeroPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.zeroPercent with Double = js.native
+    /* 4 */ val zeroPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionOpacity.zeroPercent & Double = js.native
   }
   
   /** Exposes properties for retrieving the closed caption formatting settings that the user can set through the system's closed captioning settings page. */
   @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionProperties")
   @js.native
   abstract class ClosedCaptionProperties ()
-    extends typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionProperties
+    extends StObject
+       with typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionProperties
   object ClosedCaptionProperties {
     
     @JSGlobal("Windows.Media.ClosedCaptioning.ClosedCaptionProperties")
@@ -197,17 +195,17 @@ object ClosedCaptioning {
   object ClosedCaptionSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize & Double] = js.native
     
-    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.default with Double = js.native
+    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.default & Double = js.native
     
-    /* 1 */ val fiftyPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.fiftyPercent with Double = js.native
+    /* 1 */ val fiftyPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.fiftyPercent & Double = js.native
     
-    /* 3 */ val oneHundredFiftyPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredFiftyPercent with Double = js.native
+    /* 3 */ val oneHundredFiftyPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredFiftyPercent & Double = js.native
     
-    /* 2 */ val oneHundredPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredPercent with Double = js.native
+    /* 2 */ val oneHundredPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.oneHundredPercent & Double = js.native
     
-    /* 4 */ val twoHundredPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.twoHundredPercent with Double = js.native
+    /* 4 */ val twoHundredPercent: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionSize.twoHundredPercent & Double = js.native
   }
   
   /** Specifies the style of closed caption text. */
@@ -216,22 +214,22 @@ object ClosedCaptioning {
   object ClosedCaptionStyle extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle & Double] = js.native
     
-    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.default with Double = js.native
+    /* 0 */ val default: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.default & Double = js.native
     
-    /* 5 */ val casual: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.casual with Double = js.native
+    /* 5 */ val casual: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.casual & Double = js.native
     
-    /* 6 */ val cursive: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.cursive with Double = js.native
+    /* 6 */ val cursive: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.cursive & Double = js.native
     
-    /* 1 */ val monospacedWithSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.monospacedWithSerifs with Double = js.native
+    /* 1 */ val monospacedWithSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.monospacedWithSerifs & Double = js.native
     
-    /* 3 */ val monospacedWithoutSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.monospacedWithoutSerifs with Double = js.native
+    /* 3 */ val monospacedWithoutSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.monospacedWithoutSerifs & Double = js.native
     
-    /* 2 */ val proportionalWithSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.proportionalWithSerifs with Double = js.native
+    /* 2 */ val proportionalWithSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.proportionalWithSerifs & Double = js.native
     
-    /* 4 */ val proportionalWithoutSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.proportionalWithoutSerifs with Double = js.native
+    /* 4 */ val proportionalWithoutSerifs: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.proportionalWithoutSerifs & Double = js.native
     
-    /* 7 */ val smallCapitals: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.smallCapitals with Double = js.native
+    /* 7 */ val smallCapitals: typings.winrtUwp.Windows.Media.ClosedCaptioning.ClosedCaptionStyle.smallCapitals & Double = js.native
   }
 }

@@ -2,13 +2,11 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for privilege resource in Directory API.
   */
-@js.native
 trait SchemaPrivilege extends StObject {
   
   /**
@@ -16,37 +14,37 @@ trait SchemaPrivilege extends StObject {
     * privilege can have a list of child privileges; this list is empty for a
     * leaf privilege.
     */
-  var childPrivileges: js.UndefOr[js.Array[SchemaPrivilege]] = js.native
+  var childPrivileges: js.UndefOr[js.Array[SchemaPrivilege]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * If the privilege can be restricted to an organization unit.
     */
-  var isOuScopable: js.UndefOr[Boolean] = js.native
+  var isOuScopable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of the API resource. This is always admin#directory#privilege.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the privilege.
     */
-  var privilegeName: js.UndefOr[String] = js.native
+  var privilegeName: js.UndefOr[String] = js.undefined
   
   /**
     * The obfuscated ID of the service this privilege is for.
     */
-  var serviceId: js.UndefOr[String] = js.native
+  var serviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service this privilege is for.
     */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
 }
 object SchemaPrivilege {
   

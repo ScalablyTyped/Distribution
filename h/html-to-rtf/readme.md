@@ -12,7 +12,7 @@ Convert html to rtf format in the server
 | Keywords           | html, rtf, convert, server, node, javascript |
 | # releases         | 4 |
 | # dependents       | 0 |
-| # downloads        | 20670 |
+| # downloads        | 42312 |
 | # stars            | 0 |
 
 ## Links

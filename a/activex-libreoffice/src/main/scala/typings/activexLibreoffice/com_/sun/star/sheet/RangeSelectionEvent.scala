@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,11 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.XRangeSelectionListener
   * @see com.sun.star.sheet.XRangeSelectionChangeListener
   */
-@js.native
-trait RangeSelectionEvent extends EventObject {
+trait RangeSelectionEvent
+  extends StObject
+     with EventObject {
   
   /** contains a textual representation of the selected range. */
-  var RangeDescriptor: String = js.native
+  var RangeDescriptor: String
 }
 object RangeSelectionEvent {
   

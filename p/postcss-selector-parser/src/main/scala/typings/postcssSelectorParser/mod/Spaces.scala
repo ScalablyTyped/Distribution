@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.postcssSelectorParser.anon.PartialSpaceAround
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spaces
-  extends SpaceAround
+  extends StObject
+     with SpaceAround
      with /* spaceType */ StringDictionary[js.UndefOr[String | PartialSpaceAround]]
 object Spaces {
   

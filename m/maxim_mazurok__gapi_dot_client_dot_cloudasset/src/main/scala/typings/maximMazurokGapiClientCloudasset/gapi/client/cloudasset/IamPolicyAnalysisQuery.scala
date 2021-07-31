@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IamPolicyAnalysisQuery extends StObject {
   
   /** Optional. Specifies roles or permissions for analysis. This is optional. */
-  var accessSelector: js.UndefOr[AccessSelector] = js.native
+  var accessSelector: js.UndefOr[AccessSelector] = js.undefined
   
   /** Optional. Specifies an identity for analysis. */
-  var identitySelector: js.UndefOr[IdentitySelector] = js.native
+  var identitySelector: js.UndefOr[IdentitySelector] = js.undefined
   
   /** Optional. The query options. */
-  var options: js.UndefOr[Options] = js.native
+  var options: js.UndefOr[Options] = js.undefined
   
   /** Optional. Specifies a resource for analysis. */
-  var resourceSelector: js.UndefOr[ResourceSelector] = js.native
+  var resourceSelector: js.UndefOr[ResourceSelector] = js.undefined
   
   /**
     * Required. The relative name of the root asset. Only resources and IAM policies within the scope will be analyzed. This can only be an organization number (such as
@@ -26,7 +24,7 @@ trait IamPolicyAnalysisQuery extends StObject {
     * organization id, visit [here ](https://cloud.google.com/resource-manager/docs/creating-managing-organization#retrieving_your_organization_id). To know how to get folder or project
     * id, visit [here ](https://cloud.google.com/resource-manager/docs/creating-managing-folders#viewing_or_listing_folders_and_projects).
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object IamPolicyAnalysisQuery {
   

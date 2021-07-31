@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.storybookComponents.anon.Href
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipMessageMod {
@@ -14,14 +13,13 @@ object tooltipMessageMod {
   @js.native
   val TooltipMessage: FunctionComponent[TooltipMessageProps] = js.native
   
-  @js.native
   trait TooltipMessageProps extends StObject {
     
-    var desc: js.UndefOr[ReactNode] = js.native
+    var desc: js.UndefOr[ReactNode] = js.undefined
     
-    var links: js.UndefOr[js.Array[Href]] = js.native
+    var links: js.UndefOr[js.Array[Href]] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object TooltipMessageProps {
     

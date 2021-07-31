@@ -2,7 +2,6 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,19 +11,23 @@ sealed trait ExtensionFlags extends StObject
 object ExtensionFlags extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[ExtensionFlags with Double] = js.native
+  def apply(value: Double): js.UndefOr[ExtensionFlags & Double] = js.native
   
   /**
     * A built-in extension is installed for all VSTS accounts by default
     */
   @js.native
-  sealed trait BuiltIn extends ExtensionFlags
-  /* 1 */ val BuiltIn: typings.vsoNodeApi.extensionManagementInterfacesMod.ExtensionFlags.BuiltIn with Double = js.native
+  sealed trait BuiltIn
+    extends StObject
+       with ExtensionFlags
+  /* 1 */ val BuiltIn: typings.vsoNodeApi.extensionManagementInterfacesMod.ExtensionFlags.BuiltIn & Double = js.native
   
   /**
     * The extension comes from a fully-trusted publisher
     */
   @js.native
-  sealed trait Trusted extends ExtensionFlags
-  /* 2 */ val Trusted: typings.vsoNodeApi.extensionManagementInterfacesMod.ExtensionFlags.Trusted with Double = js.native
+  sealed trait Trusted
+    extends StObject
+       with ExtensionFlags
+  /* 2 */ val Trusted: typings.vsoNodeApi.extensionManagementInterfacesMod.ExtensionFlags.Trusted & Double = js.native
 }

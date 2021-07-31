@@ -7,25 +7,23 @@ import typings.activexLibreoffice.com_.sun.star.xml.dom.XElement
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects implementing this interface provide access to the xml root of one or more update information files for a given set of URLs.
   * @since OOo 2.2
   */
-@js.native
 trait XUpdateInformationProvider extends StObject {
   
   /** interrupts a getUpdateInformation call and let's it return immediately. */
-  def cancel(): Unit = js.native
+  def cancel(): Unit
   
   /**
     * get update information for a specific extension or all available information from a repository.
     * @param repositories a repository and its mirrors.
     * @param extensionId the unique identifier of an extension. If it is not empty and the update document is an atom feed, only items whose "term" attribute
     */
-  def getUpdateInformation(repositories: SeqEquiv[String], extensionId: String): SafeArray[XElement] = js.native
+  def getUpdateInformation(repositories: SeqEquiv[String], extensionId: String): SafeArray[XElement]
   
   /**
     * get update information for a specific extension or all available information from a repository.
@@ -33,7 +31,7 @@ trait XUpdateInformationProvider extends StObject {
     * @param extensionId the unique identifier of an extension. If it is not empty and the update document is an atom feed, only items whose "term" attribute
     * @returns an enumeration of {@link UpdateInformationEntry} .
     */
-  def getUpdateInformationEnumeration(repositories: SeqEquiv[String], extensionId: String): XEnumeration = js.native
+  def getUpdateInformationEnumeration(repositories: SeqEquiv[String], extensionId: String): XEnumeration
   
   /**
     * Sets an interaction handler to be used for further operations.
@@ -43,7 +41,7 @@ trait XUpdateInformationProvider extends StObject {
     * @param handler The interaction handler to be set
     * @see com.sun.star.task.InteractionHandler
     */
-  def setInteractionHandler(handler: XInteractionHandler): Unit = js.native
+  def setInteractionHandler(handler: XInteractionHandler): Unit
 }
 object XUpdateInformationProvider {
   

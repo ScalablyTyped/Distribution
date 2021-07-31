@@ -2,31 +2,29 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoipAddressUsage extends StObject {
   
   /**
     * The allocation ID of the address.
     */
-  var AllocationId: js.UndefOr[String] = js.native
+  var AllocationId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: js.UndefOr[String] = js.native
+  var AwsAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS service.
     */
-  var AwsService: js.UndefOr[String] = js.native
+  var AwsService: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-owned IP address.
     */
-  var CoIp: js.UndefOr[String] = js.native
+  var CoIp: js.UndefOr[String] = js.undefined
 }
 object CoipAddressUsage {
   

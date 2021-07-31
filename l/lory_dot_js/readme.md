@@ -10,9 +10,9 @@ Touch enabled minimalistic slider written in vanilla JavaScript.
 | ------------------ | :-------------: |
 | Full name          | lory.js |
 | Keywords           | responsive, lightweight, minimalistic, carousel, slider, touch, slideshow, jQuery, mobile |
-| # releases         | 3 |
+| # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 222745 |
+| # downloads        | 229005 |
 | # stars            | 14 |
 
 ## Links

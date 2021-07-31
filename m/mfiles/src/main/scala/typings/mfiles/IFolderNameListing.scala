@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFolderNameListing extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): ITypedValue = js.native
+  def Item(Index: Double): ITypedValue
   
-  val MoreValues: Boolean = js.native
+  val MoreValues: Boolean
   
-  def SortWithExpression(Expression: IExpression, Locale: Double): Unit = js.native
+  def SortWithExpression(Expression: IExpression, Locale: Double): Unit
 }
 object IFolderNameListing {
   

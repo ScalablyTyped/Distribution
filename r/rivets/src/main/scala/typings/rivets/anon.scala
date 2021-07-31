@@ -3,28 +3,26 @@ package typings.rivets
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Handler extends StObject {
     
     // Augment the event handler of the on-* binder
-    var handler: js.UndefOr[js.Function3[/* context */ js.Any, /* ev */ Event, /* biding */ js.Any, Unit]] = js.native
+    var handler: js.UndefOr[js.Function3[/* context */ js.Any, /* ev */ Event, /* biding */ js.Any, Unit]] = js.undefined
     
     // Attribute prefix in templates
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
     // Preload templates with initial data on bind
-    var preloadData: js.UndefOr[Boolean] = js.native
+    var preloadData: js.UndefOr[Boolean] = js.undefined
     
     // Root sightglass interface for keypaths
-    var rootInterface: js.UndefOr[String] = js.native
+    var rootInterface: js.UndefOr[String] = js.undefined
     
     // Template delimiters for text bindings
-    var templateDelimiters: js.UndefOr[js.Array[String]] = js.native
+    var templateDelimiters: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Handler {
     

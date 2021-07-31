@@ -2,23 +2,21 @@ package typings.officeUiFabricReact.detailsListTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColumnDragDropDetails extends StObject {
   
   /**
     * Specifies the source column index
     * @defaultvalue -1
     */
-  var draggedIndex: Double = js.native
+  var draggedIndex: Double
   
   /**
     * Specifies the target column index
     * @defaultvalue -1
     */
-  var targetIndex: Double = js.native
+  var targetIndex: Double
 }
 object IColumnDragDropDetails {
   

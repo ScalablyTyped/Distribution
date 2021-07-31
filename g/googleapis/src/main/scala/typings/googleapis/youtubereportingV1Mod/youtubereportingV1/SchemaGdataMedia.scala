@@ -2,164 +2,162 @@ package typings.googleapis.youtubereportingV1Mod.youtubereportingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gdata
   */
-@js.native
 trait SchemaGdataMedia extends StObject {
   
   /**
     * gdata
     */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var bigstoreObjectRef: js.UndefOr[String] = js.native
+  var bigstoreObjectRef: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var blobRef: js.UndefOr[String] = js.native
+  var blobRef: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var blobstore2Info: js.UndefOr[SchemaGdataBlobstore2Info] = js.native
+  var blobstore2Info: js.UndefOr[SchemaGdataBlobstore2Info] = js.undefined
   
   /**
     * gdata
     */
-  var compositeMedia: js.UndefOr[js.Array[SchemaGdataCompositeMedia]] = js.native
+  var compositeMedia: js.UndefOr[js.Array[SchemaGdataCompositeMedia]] = js.undefined
   
   /**
     * gdata
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var contentTypeInfo: js.UndefOr[SchemaGdataContentTypeInfo] = js.native
+  var contentTypeInfo: js.UndefOr[SchemaGdataContentTypeInfo] = js.undefined
   
   /**
     * gdata
     */
-  var cosmoBinaryReference: js.UndefOr[String] = js.native
+  var cosmoBinaryReference: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var crc32cHash: js.UndefOr[Double] = js.native
+  var crc32cHash: js.UndefOr[Double] = js.undefined
   
   /**
     * gdata
     */
-  var diffChecksumsResponse: js.UndefOr[SchemaGdataDiffChecksumsResponse] = js.native
+  var diffChecksumsResponse: js.UndefOr[SchemaGdataDiffChecksumsResponse] = js.undefined
   
   /**
     * gdata
     */
-  var diffDownloadResponse: js.UndefOr[SchemaGdataDiffDownloadResponse] = js.native
+  var diffDownloadResponse: js.UndefOr[SchemaGdataDiffDownloadResponse] = js.undefined
   
   /**
     * gdata
     */
-  var diffUploadRequest: js.UndefOr[SchemaGdataDiffUploadRequest] = js.native
+  var diffUploadRequest: js.UndefOr[SchemaGdataDiffUploadRequest] = js.undefined
   
   /**
     * gdata
     */
-  var diffUploadResponse: js.UndefOr[SchemaGdataDiffUploadResponse] = js.native
+  var diffUploadResponse: js.UndefOr[SchemaGdataDiffUploadResponse] = js.undefined
   
   /**
     * gdata
     */
-  var diffVersionResponse: js.UndefOr[SchemaGdataDiffVersionResponse] = js.native
+  var diffVersionResponse: js.UndefOr[SchemaGdataDiffVersionResponse] = js.undefined
   
   /**
     * gdata
     */
-  var downloadParameters: js.UndefOr[SchemaGdataDownloadParameters] = js.native
+  var downloadParameters: js.UndefOr[SchemaGdataDownloadParameters] = js.undefined
   
   /**
     * gdata
     */
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var hashVerified: js.UndefOr[Boolean] = js.native
+  var hashVerified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * gdata
     */
-  var `inline`: js.UndefOr[String] = js.native
+  var `inline`: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var isPotentialRetry: js.UndefOr[Boolean] = js.native
+  var isPotentialRetry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * gdata
     */
-  var length: js.UndefOr[String] = js.native
+  var length: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var md5Hash: js.UndefOr[String] = js.native
+  var md5Hash: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var mediaId: js.UndefOr[String] = js.native
+  var mediaId: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var objectId: js.UndefOr[SchemaGdataObjectId] = js.native
+  var objectId: js.UndefOr[SchemaGdataObjectId] = js.undefined
   
   /**
     * gdata
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var referenceType: js.UndefOr[String] = js.native
+  var referenceType: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var sha1Hash: js.UndefOr[String] = js.native
+  var sha1Hash: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var sha256Hash: js.UndefOr[String] = js.native
+  var sha256Hash: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * gdata
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object SchemaGdataMedia {
   

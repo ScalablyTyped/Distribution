@@ -2,35 +2,33 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoHeight extends StObject {
   
-  var autoHeight: Boolean = js.native
+  var autoHeight: Boolean
   
-  var clear: Boolean = js.native
+  var clear: Boolean
   
-  var count: Double = js.native
+  var count: Double
   
-  var editable: Boolean = js.native
+  var editable: Boolean
   
-  var error: Boolean = js.native
+  var error: Boolean
   
-  var keyboardType: String = js.native
+  var keyboardType: String
   
-  var last: Boolean = js.native
+  var last: Boolean
   
-  def onBlur(): Unit = js.native
+  def onBlur(): Unit
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  def onErrorClick(): Unit = js.native
+  def onErrorClick(): Unit
   
-  def onFocus(): Unit = js.native
+  def onFocus(): Unit
   
-  var rows: Double = js.native
+  var rows: Double
 }
 object AutoHeight {
   

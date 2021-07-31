@@ -2,24 +2,22 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The retry policy associates with HttpRouteRule
   */
-@js.native
 trait SchemaHttpRetryPolicy extends StObject {
   
   /**
     * Specifies the allowed number retries. This number must be &gt; 0.
     */
-  var numRetries: js.UndefOr[Double] = js.native
+  var numRetries: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies a non-zero timeout per retry attempt.
     */
-  var perTryTimeout: js.UndefOr[SchemaDuration] = js.native
+  var perTryTimeout: js.UndefOr[SchemaDuration] = js.undefined
   
   /**
     * Specfies one or more conditions when this retry rule applies. Valid
@@ -42,7 +40,7 @@ trait SchemaHttpRetryPolicy extends StObject {
     * set to resource-exhausted  - unavailable: Loadbalancer will retry if the
     * gRPC status code in the response header is set to unavailable
     */
-  var retryConditions: js.UndefOr[js.Array[String]] = js.native
+  var retryConditions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaHttpRetryPolicy {
   

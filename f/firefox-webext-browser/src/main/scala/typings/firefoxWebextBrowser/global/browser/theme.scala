@@ -5,7 +5,6 @@ import typings.firefoxWebextBrowser.browser.manifest.ThemeType
 import typings.firefoxWebextBrowser.browser.theme.ThemeUpdateInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object theme {
   
+  @JSGlobal("browser.theme")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* theme functions */
   /**
     * Returns the current theme for the specified window or the last focused window.
     * @param [windowId] The window for which we want the theme.
     */
-  @JSGlobal("browser.theme.getCurrent")
-  @js.native
-  def getCurrent(): js.Promise[ThemeType] = js.native
-  @JSGlobal("browser.theme.getCurrent")
-  @js.native
-  def getCurrent(windowId: Double): js.Promise[ThemeType] = js.native
+  @scala.inline
+  def getCurrent(): js.Promise[ThemeType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")().asInstanceOf[js.Promise[ThemeType]]
+  @scala.inline
+  def getCurrent(windowId: Double): js.Promise[ThemeType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrent")(windowId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ThemeType]]
   
   /* theme events */
   /**
@@ -40,26 +41,22 @@ object theme {
     * Removes the updates made to the theme.
     * @param [windowId] The id of the window to reset. No id resets all windows.
     */
-  @JSGlobal("browser.theme.reset")
-  @js.native
-  def reset(): Unit = js.native
-  @JSGlobal("browser.theme.reset")
-  @js.native
-  def reset(windowId: Double): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  @scala.inline
+  def reset(windowId: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(windowId.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Make complete updates to the theme. Resolves when the update has completed.
     * @param details The properties of the theme to update.
     */
-  @JSGlobal("browser.theme.update")
-  @js.native
-  def update(details: ThemeType): Unit = js.native
+  @scala.inline
+  def update(details: ThemeType): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(details.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Make complete updates to the theme. Resolves when the update has completed.
     * @param windowId The id of the window to update. No id updates all windows.
     * @param details The properties of the theme to update.
     */
-  @JSGlobal("browser.theme.update")
-  @js.native
-  def update(windowId: Double, details: ThemeType): Unit = js.native
+  @scala.inline
+  def update(windowId: Double, details: ThemeType): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(windowId.asInstanceOf[js.Any], details.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,20 +2,18 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLPerformanceNavigation extends StObject {
   
   @JSName("MSHTML.HTMLPerformanceNavigation_typekey")
-  var MSHTMLDotHTMLPerformanceNavigation_typekey: HTMLPerformanceNavigation = js.native
+  var MSHTMLDotHTMLPerformanceNavigation_typekey: HTMLPerformanceNavigation
   
-  val redirectCount: Double = js.native
+  val redirectCount: Double
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object HTMLPerformanceNavigation {
   

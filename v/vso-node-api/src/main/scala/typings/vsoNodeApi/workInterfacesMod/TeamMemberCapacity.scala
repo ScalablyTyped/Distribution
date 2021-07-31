@@ -2,26 +2,26 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeamMemberCapacity extends TeamSettingsDataContractBase {
+trait TeamMemberCapacity
+  extends StObject
+     with TeamSettingsDataContractBase {
   
   /**
     * Collection of capacities associated with the team member
     */
-  var activities: js.Array[Activity] = js.native
+  var activities: js.Array[Activity]
   
   /**
     * The days off associated with the team member
     */
-  var daysOff: js.Array[DateRange] = js.native
+  var daysOff: js.Array[DateRange]
   
   /**
     * Shallow Ref to the associated team member
     */
-  var teamMember: Member = js.native
+  var teamMember: Member
 }
 object TeamMemberCapacity {
   

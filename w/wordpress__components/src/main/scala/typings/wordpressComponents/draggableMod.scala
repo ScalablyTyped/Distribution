@@ -7,7 +7,6 @@ import typings.wordpressComponents.anon.OnDraggableEnd
 import typings.wordpressComponents.draggableMod.Draggable.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object draggableMod {
@@ -26,34 +25,33 @@ object draggableMod {
   
   object Draggable {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * Render prop providing `onDragStart` and `onDragEnd` for the
         * draggable element.
         */
-      def children(props: OnDraggableEnd): ReactNode = js.native
+      def children(props: OnDraggableEnd): ReactNode
       
       /**
         * The HTML id of the element to clone on drag.
         */
-      var elementId: String = js.native
+      var elementId: String
       
       /**
         * A function to be called when dragging ends.
         */
-      var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.native
+      var onDragEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * A function to be called when dragging starts.
         */
-      var onDragStart: js.UndefOr[js.Function0[Unit]] = js.native
+      var onDragStart: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * Arbitrary data object attached to the drag and drop event.
         */
-      var transferData: js.Any = js.native
+      var transferData: js.Any
     }
     object Props {
       

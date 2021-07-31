@@ -11,70 +11,68 @@ import typings.vegas.mod.TransitionType
 import typings.vegas.vegasStrings.repeat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<vegas.vegas.Settings> */
-  @js.native
   trait ReadonlySettings extends StObject {
     
-    val align: js.UndefOr[AlignType] = js.native
+    val align: js.UndefOr[AlignType] = js.undefined
     
-    val animation: js.UndefOr[AnimationType] = js.native
+    val animation: js.UndefOr[AnimationType] = js.undefined
     
-    val animationDuration: js.UndefOr[Duration] = js.native
+    val animationDuration: js.UndefOr[Duration] = js.undefined
     
-    val animationRegister: js.UndefOr[js.Array[String]] = js.native
+    val animationRegister: js.UndefOr[js.Array[String]] = js.undefined
     
-    val autoplay: js.UndefOr[Boolean] = js.native
+    val autoplay: js.UndefOr[Boolean] = js.undefined
     
-    val color: js.UndefOr[String] = js.native
+    val color: js.UndefOr[String] = js.undefined
     
-    val cover: js.UndefOr[Boolean | repeat] = js.native
+    val cover: js.UndefOr[Boolean | repeat] = js.undefined
     
-    val delay: js.UndefOr[Double] = js.native
+    val delay: js.UndefOr[Double] = js.undefined
     
-    val end: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    val end: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
     
-    val firstTransition: js.UndefOr[TransitionType] = js.native
+    val firstTransition: js.UndefOr[TransitionType] = js.undefined
     
-    val firstTransitionDuration: js.UndefOr[Duration] = js.native
+    val firstTransitionDuration: js.UndefOr[Duration] = js.undefined
     
-    val init: js.UndefOr[js.Function1[/* settings */ Settings, Unit]] = js.native
+    val init: js.UndefOr[js.Function1[/* settings */ Settings, Unit]] = js.undefined
     
-    val loop: js.UndefOr[Boolean] = js.native
+    val loop: js.UndefOr[Boolean] = js.undefined
     
-    val overlay: js.UndefOr[Boolean | String] = js.native
+    val overlay: js.UndefOr[Boolean | String] = js.undefined
     
-    val pause: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    val pause: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
     
-    val play: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    val play: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
     
-    val preload: js.UndefOr[Boolean] = js.native
+    val preload: js.UndefOr[Boolean] = js.undefined
     
-    val preloadImage: js.UndefOr[Boolean] = js.native
+    val preloadImage: js.UndefOr[Boolean] = js.undefined
     
-    val shuffle: js.UndefOr[Boolean] = js.native
+    val shuffle: js.UndefOr[Boolean] = js.undefined
     
-    val slide: js.UndefOr[Double] = js.native
+    val slide: js.UndefOr[Double] = js.undefined
     
-    val slides: js.UndefOr[js.Array[Slide]] = js.native
+    val slides: js.UndefOr[js.Array[Slide]] = js.undefined
     
-    val slidesToKeep: js.UndefOr[Double] = js.native
+    val slidesToKeep: js.UndefOr[Double] = js.undefined
     
-    val timer: js.UndefOr[Boolean] = js.native
+    val timer: js.UndefOr[Boolean] = js.undefined
     
-    val transition: js.UndefOr[TransitionType] = js.native
+    val transition: js.UndefOr[TransitionType] = js.undefined
     
-    val transitionDuration: js.UndefOr[Duration] = js.native
+    val transitionDuration: js.UndefOr[Duration] = js.undefined
     
-    val transitionRegister: js.UndefOr[js.Array[String]] = js.native
+    val transitionRegister: js.UndefOr[js.Array[String]] = js.undefined
     
-    val valign: js.UndefOr[AlignType] = js.native
+    val valign: js.UndefOr[AlignType] = js.undefined
     
-    val walk: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.native
+    val walk: js.UndefOr[js.Function2[/* index */ Double, /* slide */ Slide, Unit]] = js.undefined
   }
   object ReadonlySettings {
     

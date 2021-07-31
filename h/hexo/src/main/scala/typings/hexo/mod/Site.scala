@@ -6,21 +6,19 @@ import typings.hexo.mod.Locals.Page
 import typings.hexo.mod.Locals.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Site extends StObject {
   
-  var categories: Model[Category] = js.native
+  var categories: Model[Category]
   
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
-  var pages: Model[Page] = js.native
+  var pages: Model[Page]
   
-  var posts: Model[typings.hexo.mod.Locals.Post] = js.native
+  var posts: Model[typings.hexo.mod.Locals.Post]
   
-  var tags: Model[Tag] = js.native
+  var tags: Model[Tag]
 }
 object Site {
   

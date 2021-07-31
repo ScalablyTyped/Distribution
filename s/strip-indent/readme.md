@@ -11,8 +11,8 @@ Strip leading whitespace from each line in a string
 | Full name          | strip-indent |
 | Keywords           | strip, indent, indentation, normalize, remove, delete, whitespace, space, tab, string |
 | # releases         | 2 |
-| # dependents       | 294 |
-| # downloads        | 545517225 |
+| # dependents       | 345 |
+| # downloads        | 690266977 |
 | # stars            | 1 |
 
 ## Links

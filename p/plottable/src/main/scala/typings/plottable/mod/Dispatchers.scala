@@ -2,7 +2,6 @@ package typings.plottable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Dispatchers {
@@ -47,9 +46,8 @@ object Dispatchers {
       *
       * @return {Dispatchers.Key}
       */
-    @JSImport("plottable", "Dispatchers.Key.getDispatcher")
-    @js.native
-    def getDispatcher(): typings.plottable.dispatchersMod.Key = js.native
+    @scala.inline
+    def getDispatcher(): typings.plottable.dispatchersMod.Key = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")().asInstanceOf[typings.plottable.dispatchersMod.Key]
   }
   
   @JSImport("plottable", "Dispatchers.Mouse")
@@ -123,9 +121,8 @@ object Dispatchers {
       * @param {SVGElement} elem
       * @return {Dispatchers.Mouse}
       */
-    @JSImport("plottable", "Dispatchers.Mouse.getDispatcher")
-    @js.native
-    def getDispatcher(component: typings.plottable.componentMod.Component): typings.plottable.dispatchersMod.Mouse = js.native
+    @scala.inline
+    def getDispatcher(component: typings.plottable.componentMod.Component): typings.plottable.dispatchersMod.Mouse = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.dispatchersMod.Mouse]
   }
   
   @JSImport("plottable", "Dispatchers.Touch")
@@ -183,8 +180,7 @@ object Dispatchers {
       * @param component
       * @return {Dispatchers.Touch}
       */
-    @JSImport("plottable", "Dispatchers.Touch.getDispatcher")
-    @js.native
-    def getDispatcher(component: typings.plottable.componentMod.Component): typings.plottable.dispatchersMod.Touch = js.native
+    @scala.inline
+    def getDispatcher(component: typings.plottable.componentMod.Component): typings.plottable.dispatchersMod.Touch = ^.asInstanceOf[js.Dynamic].applyDynamic("getDispatcher")(component.asInstanceOf[js.Any]).asInstanceOf[typings.plottable.dispatchersMod.Touch]
   }
 }

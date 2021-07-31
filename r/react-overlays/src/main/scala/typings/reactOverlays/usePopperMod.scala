@@ -8,10 +8,13 @@ import typings.std.HTMLElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object usePopperMod {
+  
+  @JSImport("react-overlays/cjs/usePopper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Position an element relative some reference element using Popper.js
@@ -29,84 +32,70 @@ object usePopperMod {
     *
     * @returns {UsePopperState} The popper state
     */
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(
-    referenceElement: js.UndefOr[scala.Nothing],
-    popperElement: js.UndefOr[scala.Nothing],
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(
-    referenceElement: js.UndefOr[scala.Nothing],
-    popperElement: Null,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(referenceElement: js.UndefOr[scala.Nothing], popperElement: HTMLElement): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(
-    referenceElement: js.UndefOr[scala.Nothing],
-    popperElement: HTMLElement,
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(
-    referenceElement: Null,
-    popperElement: js.UndefOr[scala.Nothing],
-    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
+  @scala.inline
+  def default(): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[UsePopperState]
+  @scala.inline
   def default(
     referenceElement: Null,
     popperElement: Null,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(referenceElement: Null, popperElement: HTMLElement): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(
+    referenceElement: Null,
+    popperElement: Unit,
+    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(referenceElement: Null, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
   def default(
     referenceElement: Null,
     popperElement: HTMLElement,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(referenceElement: VirtualElement): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
   def default(
-    referenceElement: VirtualElement,
-    popperElement: js.UndefOr[scala.Nothing],
+    referenceElement: Unit,
+    popperElement: Null,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(
+    referenceElement: Unit,
+    popperElement: Unit,
+    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(referenceElement: Unit, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(
+    referenceElement: Unit,
+    popperElement: HTMLElement,
+    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(referenceElement: VirtualElement): UsePopperState = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any]).asInstanceOf[UsePopperState]
+  @scala.inline
   def default(
     referenceElement: VirtualElement,
     popperElement: Null,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
-  def default(referenceElement: VirtualElement, popperElement: HTMLElement): UsePopperState = js.native
-  @JSImport("react-overlays/cjs/usePopper", JSImport.Default)
-  @js.native
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(
+    referenceElement: VirtualElement,
+    popperElement: Unit,
+    hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
+  def default(referenceElement: VirtualElement, popperElement: HTMLElement): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
+  @scala.inline
   def default(
     referenceElement: VirtualElement,
     popperElement: HTMLElement,
     hasEnabledPlacementStrategyModifiersConfig: UsePopperOptions
-  ): UsePopperState = js.native
+  ): UsePopperState = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(referenceElement.asInstanceOf[js.Any], popperElement.asInstanceOf[js.Any], hasEnabledPlacementStrategyModifiersConfig.asInstanceOf[js.Any])).asInstanceOf[UsePopperState]
   
   type Instance = typings.popperjsCore.typesMod.Instance
   
@@ -256,18 +245,17 @@ object usePopperMod {
   type State = typings.popperjsCore.typesMod.State
   
   /* Inlined std.Omit<react-overlays.react-overlays/cjs/usePopper.Options, 'modifiers' | 'placement' | 'strategy'> & {  enabled :boolean | undefined,   placement :react-overlays.react-overlays/cjs/usePopper.Options['placement'] | undefined,   strategy :react-overlays.react-overlays/cjs/usePopper.Options['strategy'] | undefined,   modifiers :react-overlays.react-overlays/cjs/usePopper.Options['modifiers'] | undefined} */
-  @js.native
   trait UsePopperOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[js.Array[typings.popperjsCore.anon.PartialModifieranyany]] = js.native
+    var modifiers: js.UndefOr[js.Array[typings.popperjsCore.anon.PartialModifieranyany]] = js.undefined
     
-    var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.native
+    var onFirstUpdate: js.UndefOr[js.Function1[/* arg0 */ PartialState, Unit]] = js.undefined
     
-    var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.native
+    var placement: js.UndefOr[typings.popperjsCore.enumsMod.Placement] = js.undefined
     
-    var strategy: js.UndefOr[PositioningStrategy] = js.native
+    var strategy: js.UndefOr[PositioningStrategy] = js.undefined
   }
   object UsePopperOptions {
     
@@ -315,26 +303,25 @@ object usePopperMod {
     }
   }
   
-  @js.native
   trait UsePopperState extends StObject {
     
-    var attributes: Record[String, Record[String, _]] = js.native
+    var attributes: Record[String, Record[String, js.Any]]
     
-    def forceUpdate(): Unit = js.native
+    def forceUpdate(): Unit
     
-    var placement: Placement = js.native
+    var placement: Placement
     
-    var state: js.UndefOr[State] = js.native
+    var state: js.UndefOr[State] = js.undefined
     
-    var styles: Record[String, PartialCSSStyleDeclaratio] = js.native
+    var styles: Record[String, PartialCSSStyleDeclaratio]
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object UsePopperState {
     
     @scala.inline
     def apply(
-      attributes: Record[String, Record[String, _]],
+      attributes: Record[String, Record[String, js.Any]],
       forceUpdate: () => Unit,
       placement: Placement,
       styles: Record[String, PartialCSSStyleDeclaratio],
@@ -348,7 +335,7 @@ object usePopperMod {
     implicit class UsePopperStateMutableBuilder[Self <: UsePopperState] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttributes(value: Record[String, Record[String, _]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
+      def setAttributes(value: Record[String, Record[String, js.Any]]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))

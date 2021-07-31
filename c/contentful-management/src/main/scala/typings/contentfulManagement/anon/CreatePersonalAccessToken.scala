@@ -16,7 +16,6 @@ import typings.contentfulManagement.usageMod.UsageQuery
 import typings.contentfulManagement.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -265,5 +264,5 @@ trait CreatePersonalAccessToken extends StObject {
     * .catch(console.error)
     * ```
     */
-  def rawRequest(opts: AxiosRequestConfig): js.Promise[_] = js.native
+  def rawRequest(opts: AxiosRequestConfig): js.Promise[js.Any] = js.native
 }

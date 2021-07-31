@@ -6,22 +6,29 @@ import typings.openui5.sap.ui.core.Item
 import typings.openui5.sap.ui.core.TitleLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object semantic {
   
   @js.native
-  trait AddAction extends SemanticButton
+  trait AddAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait CancelAction extends SemanticButton
+  trait CancelAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait DeleteAction extends SemanticButton
+  trait DeleteAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait DetailPage extends ShareMenuPage {
+  trait DetailPage
+    extends StObject
+       with ShareMenuPage {
     
     /**
       * Destroys the addAction in the aggregation <code>addAction</code>.
@@ -403,28 +410,44 @@ object semantic {
   }
   
   @js.native
-  trait DiscussInJamAction extends SemanticButton
+  trait DiscussInJamAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait EditAction extends SemanticButton
+  trait EditAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait FavoriteAction extends SemanticToggleButton
+  trait FavoriteAction
+    extends StObject
+       with SemanticToggleButton
   
   @js.native
-  trait FilterAction extends SemanticButton
+  trait FilterAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait FilterSelect extends SemanticSelect
+  trait FilterSelect
+    extends StObject
+       with SemanticSelect
   
   @js.native
-  trait FlagAction extends SemanticToggleButton
+  trait FlagAction
+    extends StObject
+       with SemanticToggleButton
   
   @js.native
-  trait ForwardAction extends SemanticButton
+  trait ForwardAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait FullscreenPage extends ShareMenuPage {
+  trait FullscreenPage
+    extends StObject
+       with ShareMenuPage {
     
     /**
       * Destroys the addAction in the aggregation <code>addAction</code>.
@@ -806,17 +829,20 @@ object semantic {
   }
   
   @js.native
-  trait GroupAction extends SemanticButton
+  trait GroupAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait GroupSelect extends SemanticSelect
+  trait GroupSelect
+    extends StObject
+       with SemanticSelect
   
   /**
     *   Marker interface for controls which are suitable as items of the filter aggregation of
     * sap.m.Semantic.MasterPage.
     * @resource sap/m/library.js
     */
-  @js.native
   trait IFilter extends StObject
   
   /**
@@ -824,7 +850,6 @@ object semantic {
     * sap.m.Semantic.MasterPage.
     * @resource sap/m/library.js
     */
-  @js.native
   trait IGroup extends StObject
   
   /**
@@ -832,11 +857,12 @@ object semantic {
     * sap.m.Semantic.MasterPage.
     * @resource sap/m/library.js
     */
-  @js.native
   trait ISort extends StObject
   
   @js.native
-  trait MainAction extends SemanticButton {
+  trait MainAction
+    extends StObject
+       with SemanticButton {
     
     /**
       * Gets current value of property <code>text</code>.Button text
@@ -854,7 +880,9 @@ object semantic {
   }
   
   @js.native
-  trait MasterPage extends SemanticPage {
+  trait MasterPage
+    extends StObject
+       with SemanticPage {
     
     /**
       * Destroys the addAction in the aggregation <code>addAction</code>.
@@ -1110,13 +1138,19 @@ object semantic {
   }
   
   @js.native
-  trait MessagesIndicator extends SemanticButton
+  trait MessagesIndicator
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait MultiSelectAction extends SemanticToggleButton
+  trait MultiSelectAction
+    extends StObject
+       with SemanticToggleButton
   
   @js.native
-  trait NegativeAction extends SemanticButton {
+  trait NegativeAction
+    extends StObject
+       with SemanticButton {
     
     /**
       * Gets current value of property <code>text</code>.Button text
@@ -1134,10 +1168,14 @@ object semantic {
   }
   
   @js.native
-  trait OpenInAction extends SemanticButton
+  trait OpenInAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait PositiveAction extends SemanticButton {
+  trait PositiveAction
+    extends StObject
+       with SemanticButton {
     
     /**
       * Gets current value of property <code>text</code>.Button text
@@ -1155,13 +1193,19 @@ object semantic {
   }
   
   @js.native
-  trait PrintAction extends SemanticButton
+  trait PrintAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait SaveAction extends SemanticButton
+  trait SaveAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait SemanticButton extends SemanticControl {
+  trait SemanticButton
+    extends StObject
+       with SemanticControl {
     
     /**
       * Attaches event handler <code>fnFunction</code> to the <code>press</code> event of this
@@ -1213,7 +1257,9 @@ object semantic {
   }
   
   @js.native
-  trait SemanticControl extends Element {
+  trait SemanticControl
+    extends StObject
+       with Element {
     
     /**
       * Gets current value of property <code>visible</code>.See {@link sap.ui.core.Control#visible}Default
@@ -1233,7 +1279,9 @@ object semantic {
   }
   
   @js.native
-  trait SemanticPage extends Control {
+  trait SemanticPage
+    extends StObject
+       with Control {
     
     /**
       * Adds some content to the aggregation <code>content</code>.
@@ -1580,7 +1628,9 @@ object semantic {
   }
   
   @js.native
-  trait SemanticSelect extends SemanticControl {
+  trait SemanticSelect
+    extends StObject
+       with SemanticControl {
     
     /**
       * Adds some item to the aggregation <code>items</code>.
@@ -1733,7 +1783,9 @@ object semantic {
   }
   
   @js.native
-  trait SemanticToggleButton extends SemanticButton {
+  trait SemanticToggleButton
+    extends StObject
+       with SemanticButton {
     
     /**
       * Gets current value of property <code>pressed</code>.The property is “true” when the control is
@@ -1754,16 +1806,24 @@ object semantic {
   }
   
   @js.native
-  trait SendEmailAction extends SemanticButton
+  trait SendEmailAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait SendMessageAction extends SemanticButton
+  trait SendMessageAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait ShareInJamAction extends SemanticButton
+  trait ShareInJamAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait ShareMenuPage extends SemanticPage {
+  trait ShareMenuPage
+    extends StObject
+       with SemanticPage {
     
     /**
       * Adds some customShareMenuContent to the aggregation <code>customShareMenuContent</code>.
@@ -1820,8 +1880,12 @@ object semantic {
   }
   
   @js.native
-  trait SortAction extends SemanticButton
+  trait SortAction
+    extends StObject
+       with SemanticButton
   
   @js.native
-  trait SortSelect extends SemanticSelect
+  trait SortSelect
+    extends StObject
+       with SemanticSelect
 }

@@ -2,17 +2,15 @@ package typings.casperjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenSettings extends StObject {
   
-  var data: js.Any = js.native
+  var data: js.Any
   
-  var headers: js.Any = js.native
+  var headers: js.Any
   
-  var method: String = js.native
+  var method: String
 }
 object OpenSettings {
   

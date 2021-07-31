@@ -2,17 +2,15 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OneHotAttrs extends StObject {
   
-  var depth: Double = js.native
+  var depth: Double
   
-  var offValue: Double = js.native
+  var offValue: Double
   
-  var onValue: Double = js.native
+  var onValue: Double
 }
 object OneHotAttrs {
   

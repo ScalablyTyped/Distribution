@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddHeapSnapshotChunkEvent extends StObject {
   
-  var chunk: String = js.native
+  var chunk: String
 }
 object AddHeapSnapshotChunkEvent {
   

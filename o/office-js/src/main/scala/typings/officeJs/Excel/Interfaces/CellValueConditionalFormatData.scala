@@ -3,11 +3,9 @@ package typings.officeJs.Excel.Interfaces
 import typings.officeJs.Excel.ConditionalCellValueRule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `cellValueConditionalFormat.toJSON()`. */
-@js.native
 trait CellValueConditionalFormatData extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait CellValueConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var format: js.UndefOr[ConditionalRangeFormatData] = js.native
+  var format: js.UndefOr[ConditionalRangeFormatData] = js.undefined
   
   /**
     *
@@ -24,7 +22,7 @@ trait CellValueConditionalFormatData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var rule: js.UndefOr[ConditionalCellValueRule] = js.native
+  var rule: js.UndefOr[ConditionalCellValueRule] = js.undefined
 }
 object CellValueConditionalFormatData {
   

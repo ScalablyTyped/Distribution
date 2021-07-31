@@ -2,17 +2,17 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDrawingManagerOptions extends IDrawingToolOptions {
+trait IDrawingManagerOptions
+  extends StObject
+     with IDrawingToolOptions {
   
   /** The fill color used for pushpins and polygons. */
-  var fillColor: js.UndefOr[String | Color] = js.native
+  var fillColor: js.UndefOr[String | Color] = js.undefined
   
   /** The stroke color used for polylines and polygons. */
-  var strokeColor: js.UndefOr[String | Color] = js.native
+  var strokeColor: js.UndefOr[String | Color] = js.undefined
 }
 object IDrawingManagerOptions {
   

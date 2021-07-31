@@ -7,22 +7,23 @@ import typings.contentfulManagement.commonTypesMod.DefaultElements
 import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userMod {
   
-  @JSImport("contentful-management/dist/typings/entities/user", "wrapUser")
+  @JSImport("contentful-management/dist/typings/entities/user", JSImport.Namespace)
   @js.native
-  def wrapUser(http: AxiosInstance, data: UserProps): User = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/user", "wrapUserCollection")
-  @js.native
-  def wrapUserCollection(http: AxiosInstance, data: CollectionProp[UserProps]): Collection[User, UserProps] = js.native
+  @scala.inline
+  def wrapUser(http: AxiosInstance, data: UserProps): User = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUser")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[User]
   
-  @js.native
+  @scala.inline
+  def wrapUserCollection(http: AxiosInstance, data: CollectionProp[UserProps]): Collection[User, UserProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapUserCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[User, UserProps]]
+  
   trait User
-    extends UserProps
+    extends StObject
+       with UserProps
        with DefaultElements[UserProps]
   object User {
     
@@ -43,48 +44,47 @@ object userMod {
     }
   }
   
-  @js.native
   trait UserProps extends StObject {
     
     /**
       * Activation flag
       */
-    var activated: Boolean = js.native
+    var activated: Boolean
     
     /**
       * Url to the users avatar
       */
-    var avatarUrl: String = js.native
+    var avatarUrl: String
     
     /**
       * User confirmation flag
       */
-    var confirmed: Boolean = js.native
+    var confirmed: Boolean
     
     /**
       * Email address of the user
       */
-    var email: String = js.native
+    var email: String
     
     /**
       * First name of the user
       */
-    var firstName: String = js.native
+    var firstName: String
     
     /**
       * Last name of the user
       */
-    var lastName: String = js.native
+    var lastName: String
     
     /**
       * Number of sign ins
       */
-    var signInCount: Double = js.native
+    var signInCount: Double
     
     /**
       * System metadata
       */
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object UserProps {
     

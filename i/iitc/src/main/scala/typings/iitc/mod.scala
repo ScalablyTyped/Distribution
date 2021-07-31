@@ -5,7 +5,6 @@ import typings.leaflet.mod.LatLngExpression
 import typings.leaflet.mod.PolylineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

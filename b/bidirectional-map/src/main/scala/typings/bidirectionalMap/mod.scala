@@ -4,43 +4,79 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("bidirectional-map", JSImport.Default)
   @js.native
-  class default[TValue] () extends BiMap[TValue] {
+  class default[TValue] ()
+    extends StObject
+       with BiMap[TValue] {
     def this(`object`: StringDictionary[TValue]) = this()
-  }
-  
-  @js.native
-  trait BiMap[TValue] extends StObject {
     
-    def clear(): Unit = js.native
+    /* CompleteClass */
+    override def clear(): Unit = js.native
     
-    def delete(key: String): Unit = js.native
+    /* CompleteClass */
+    override def delete(key: String): Unit = js.native
     
-    def deleteValue(value: TValue): Unit = js.native
+    /* CompleteClass */
+    override def deleteValue(value: TValue): Unit = js.native
     
-    def entries(): IterableIterator[js.Tuple2[String, TValue]] = js.native
+    /* CompleteClass */
+    override def entries(): IterableIterator[js.Tuple2[String, TValue]] = js.native
     
-    def get(key: String): TValue = js.native
+    /* CompleteClass */
+    override def get(key: String): TValue = js.native
     
-    def getKey(value: TValue): String = js.native
+    /* CompleteClass */
+    override def getKey(value: TValue): String = js.native
     
-    def has(key: String): Boolean = js.native
+    /* CompleteClass */
+    override def has(key: String): Boolean = js.native
     
-    def hasValue(value: TValue): Boolean = js.native
+    /* CompleteClass */
+    override def hasValue(value: TValue): Boolean = js.native
     
-    def keys(): IterableIterator[String] = js.native
+    /* CompleteClass */
+    override def keys(): IterableIterator[String] = js.native
     
-    def set(key: String, value: TValue): Unit = js.native
+    /* CompleteClass */
+    override def set(key: String, value: TValue): Unit = js.native
     
+    /* CompleteClass */
     var size: Double = js.native
     
-    def values(): IterableIterator[TValue] = js.native
+    /* CompleteClass */
+    override def values(): IterableIterator[TValue] = js.native
+  }
+  
+  trait BiMap[TValue] extends StObject {
+    
+    def clear(): Unit
+    
+    def delete(key: String): Unit
+    
+    def deleteValue(value: TValue): Unit
+    
+    def entries(): IterableIterator[js.Tuple2[String, TValue]]
+    
+    def get(key: String): TValue
+    
+    def getKey(value: TValue): String
+    
+    def has(key: String): Boolean
+    
+    def hasValue(value: TValue): Boolean
+    
+    def keys(): IterableIterator[String]
+    
+    def set(key: String, value: TValue): Unit
+    
+    var size: Double
+    
+    def values(): IterableIterator[TValue]
   }
   object BiMap {
     
@@ -64,7 +100,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BiMapMutableBuilder[Self <: BiMap[_], TValue] (val x: Self with BiMap[TValue]) extends AnyVal {
+    implicit class BiMapMutableBuilder[Self <: BiMap[?], TValue] (val x: Self & BiMap[TValue]) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))

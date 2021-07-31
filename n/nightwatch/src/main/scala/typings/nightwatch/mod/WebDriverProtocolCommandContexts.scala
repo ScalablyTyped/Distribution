@@ -4,7 +4,6 @@ import typings.nightwatch.anon.Height
 import typings.nightwatch.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,10 +20,6 @@ trait WebDriverProtocolCommandContexts extends StObject {
     * }
     */
   def frame(): this.type = js.native
-  def frame(
-    frameId: js.UndefOr[scala.Nothing],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
   def frame(frameId: String): this.type = js.native
   def frame(
     frameId: String,
@@ -32,6 +27,10 @@ trait WebDriverProtocolCommandContexts extends StObject {
   ): this.type = js.native
   def frame(
     frameId: Null,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def frame(
+    frameId: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   
@@ -56,15 +55,15 @@ trait WebDriverProtocolCommandContexts extends StObject {
     * Change focus to another window or close the current window. Shouldn't normally be used directly, instead `.switchWindow()` and `.closeWindow()` should be used.
     */
   def window(method: String): this.type = js.native
-  def window(
-    method: String,
-    handleOrName: js.UndefOr[scala.Nothing],
-    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
-  ): this.type = js.native
   def window(method: String, handleOrName: String): this.type = js.native
   def window(
     method: String,
     handleOrName: String,
+    callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
+  ): this.type = js.native
+  def window(
+    method: String,
+    handleOrName: Unit,
     callback: js.ThisFunction1[/* this */ NightwatchAPI, /* result */ NightwatchCallbackResult[Unit], Unit]
   ): this.type = js.native
   

@@ -2,7 +2,6 @@ package typings.sindresorhusTransliterate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,14 +22,15 @@ object mod {
   //=> 'toi yeu nhung chu ky lan'
   ```
   */
-  @JSImport("@sindresorhus/transliterate", JSImport.Namespace)
-  @js.native
-  def apply(string: String): String = js.native
-  @JSImport("@sindresorhus/transliterate", JSImport.Namespace)
-  @js.native
-  def apply(string: String, options: Options): String = js.native
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("@sindresorhus/transliterate", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
@@ -49,7 +49,7 @@ object mod {
     		//=> 'Ya lyublyu 🦄'
     		```
     		*/
-    val customReplacements: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.native
+    val customReplacements: js.UndefOr[js.Array[js.Tuple2[String, String]]] = js.undefined
   }
   object Options {
     

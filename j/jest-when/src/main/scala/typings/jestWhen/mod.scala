@@ -2,18 +2,19 @@ package typings.jestWhen
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-when", "resetAllWhenMocks")
+  @JSImport("jest-when", JSImport.Namespace)
   @js.native
-  def resetAllWhenMocks(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jest-when", "verifyAllWhenMocksCalled")
-  @js.native
-  def verifyAllWhenMocksCalled(): Unit = js.native
+  @scala.inline
+  def resetAllWhenMocks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAllWhenMocks")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def verifyAllWhenMocksCalled(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyAllWhenMocksCalled")().asInstanceOf[Unit]
   
   @JSImport("jest-when", "when")
   @js.native
@@ -21,7 +22,7 @@ object mod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify jest.MockInstance<T, Y> * / any */ @js.native
-  trait WhenMock[T, Y /* <: js.Array[_] */] extends StObject {
+  trait WhenMock[T, Y /* <: js.Array[js.Any] */] extends StObject {
     
     def calledWith(
       /* import warning: parser.TsParser#functionParam Dropping repeated marker of param matchers because its type Y is not an array type */ matchers: Y

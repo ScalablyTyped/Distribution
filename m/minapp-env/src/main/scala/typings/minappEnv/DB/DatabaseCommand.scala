@@ -3,47 +3,45 @@ package typings.minappEnv.DB
 import typings.minappEnv.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseCommand extends StObject {
   
-  def and(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand = js.native
+  def and(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
   
-  def eq(`val`: js.Any): DatabaseQueryCommand = js.native
+  def eq(`val`: js.Any): DatabaseQueryCommand
   
-  def gt(`val`: js.Any): DatabaseQueryCommand = js.native
+  def gt(`val`: js.Any): DatabaseQueryCommand
   
-  def gte(`val`: js.Any): DatabaseQueryCommand = js.native
+  def gte(`val`: js.Any): DatabaseQueryCommand
   
-  def in(`val`: Array[_]): DatabaseQueryCommand = js.native
+  def in(`val`: Array[js.Any]): DatabaseQueryCommand
   
-  def inc(`val`: Double): DatabaseUpdateCommand = js.native
+  def inc(`val`: Double): DatabaseUpdateCommand
   
-  def lt(`val`: js.Any): DatabaseQueryCommand = js.native
+  def lt(`val`: js.Any): DatabaseQueryCommand
   
-  def lte(`val`: js.Any): DatabaseQueryCommand = js.native
+  def lte(`val`: js.Any): DatabaseQueryCommand
   
-  def mul(`val`: Double): DatabaseUpdateCommand = js.native
+  def mul(`val`: Double): DatabaseUpdateCommand
   
-  def neq(`val`: js.Any): DatabaseQueryCommand = js.native
+  def neq(`val`: js.Any): DatabaseQueryCommand
   
-  def nin(`val`: Array[_]): DatabaseQueryCommand = js.native
+  def nin(`val`: Array[js.Any]): DatabaseQueryCommand
   
-  def or(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand = js.native
+  def or(expressions: (DatabaseLogicCommand | IQueryCondition)*): DatabaseLogicCommand
   
-  def pop(): DatabaseUpdateCommand = js.native
+  def pop(): DatabaseUpdateCommand
   
-  def push(values: js.Any*): DatabaseUpdateCommand = js.native
+  def push(values: js.Any*): DatabaseUpdateCommand
   
-  def remove(): DatabaseUpdateCommand = js.native
+  def remove(): DatabaseUpdateCommand
   
-  def set(`val`: js.Any): DatabaseUpdateCommand = js.native
+  def set(`val`: js.Any): DatabaseUpdateCommand
   
-  def shift(): DatabaseUpdateCommand = js.native
+  def shift(): DatabaseUpdateCommand
   
-  def unshift(values: js.Any*): DatabaseUpdateCommand = js.native
+  def unshift(values: js.Any*): DatabaseUpdateCommand
 }
 object DatabaseCommand {
   
@@ -53,13 +51,13 @@ object DatabaseCommand {
     eq_ : js.Any => DatabaseQueryCommand,
     gt: js.Any => DatabaseQueryCommand,
     gte: js.Any => DatabaseQueryCommand,
-    in: Array[_] => DatabaseQueryCommand,
+    in: Array[js.Any] => DatabaseQueryCommand,
     inc: Double => DatabaseUpdateCommand,
     lt: js.Any => DatabaseQueryCommand,
     lte: js.Any => DatabaseQueryCommand,
     mul: Double => DatabaseUpdateCommand,
     neq: js.Any => DatabaseQueryCommand,
-    nin: Array[_] => DatabaseQueryCommand,
+    nin: Array[js.Any] => DatabaseQueryCommand,
     or: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand,
     pop: () => DatabaseUpdateCommand,
     push: /* repeated */ js.Any => DatabaseUpdateCommand,
@@ -89,7 +87,7 @@ object DatabaseCommand {
     def setGte(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "gte", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIn(value: Array[_] => DatabaseQueryCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    def setIn(value: Array[js.Any] => DatabaseQueryCommand): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInc(value: Double => DatabaseUpdateCommand): Self = StObject.set(x, "inc", js.Any.fromFunction1(value))
@@ -107,7 +105,7 @@ object DatabaseCommand {
     def setNeq(value: js.Any => DatabaseQueryCommand): Self = StObject.set(x, "neq", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setNin(value: Array[_] => DatabaseQueryCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
+    def setNin(value: Array[js.Any] => DatabaseQueryCommand): Self = StObject.set(x, "nin", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOr(value: /* repeated */ DatabaseLogicCommand | IQueryCondition => DatabaseLogicCommand): Self = StObject.set(x, "or", js.Any.fromFunction1(value))

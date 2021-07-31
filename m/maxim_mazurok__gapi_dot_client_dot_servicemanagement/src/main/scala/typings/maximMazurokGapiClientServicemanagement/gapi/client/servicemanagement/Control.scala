@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Control extends StObject {
   
   /** The service control environment to use. If empty, no control plane feature (like quota and billing) will be enabled. */
-  var environment: js.UndefOr[String] = js.native
+  var environment: js.UndefOr[String] = js.undefined
 }
 object Control {
   

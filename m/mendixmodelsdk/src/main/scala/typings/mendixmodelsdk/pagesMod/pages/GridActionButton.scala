@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,9 +44,8 @@ object GridActionButton {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton.create")
-  @js.native
-  def create(model: IModel): GridActionButton = js.native
+  @scala.inline
+  def create(model: IModel): GridActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GridActionButton]
   
   /**
     * Creates and returns a new GridActionButton instance in the SDK and on the server.
@@ -55,9 +53,8 @@ object GridActionButton {
     * of the parent ControlBar element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton.createIn")
-  @js.native
-  def createIn(container: ControlBar): GridActionButton = js.native
+  @scala.inline
+  def createIn(container: ControlBar): GridActionButton = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GridActionButton]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/pages", "pages.GridActionButton.structureTypeName")

@@ -3,7 +3,6 @@ package typings.azureSb
 import typings.azureSb.mod.Azure.ServiceBus.BrokerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queuemessageresultMod {
@@ -14,20 +13,19 @@ object queuemessageresultMod {
       
       object Results {
         
-        @js.native
         trait QueueMessageResponse extends StObject {
           
-          var body: js.Any = js.native
+          var body: js.Any
           
-          var brokerProperties: js.UndefOr[BrokerProperties] = js.native
+          var brokerProperties: js.UndefOr[BrokerProperties] = js.undefined
           
-          var contentType: js.UndefOr[String] = js.native
+          var contentType: js.UndefOr[String] = js.undefined
           
           var customProperties: js.UndefOr[
                     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<any> */ js.Any
-                  ] = js.native
+                  ] = js.undefined
           
-          var location: js.UndefOr[String] = js.native
+          var location: js.UndefOr[String] = js.undefined
         }
         object QueueMessageResponse {
           
@@ -80,12 +78,11 @@ object queuemessageresultMod {
           def parse(responseObject: js.Object): QueueMessageResponse = js.native
         }
         
-        @js.native
         trait QueueResponse extends StObject {
           
-          var body: js.Any = js.native
+          var body: js.Any
           
-          var headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any = js.native
+          var headers: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Dictionary<string> */ js.Any
         }
         object QueueResponse {
           

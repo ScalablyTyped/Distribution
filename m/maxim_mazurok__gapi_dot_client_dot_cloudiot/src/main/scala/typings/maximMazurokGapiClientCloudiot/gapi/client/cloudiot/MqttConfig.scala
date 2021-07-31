@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudiot.gapi.client.cloudiot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MqttConfig extends StObject {
   
   /** If enabled, allows connections using the MQTT protocol. Otherwise, MQTT connections to this registry will fail. */
-  var mqttEnabledState: js.UndefOr[String] = js.native
+  var mqttEnabledState: js.UndefOr[String] = js.undefined
 }
 object MqttConfig {
   

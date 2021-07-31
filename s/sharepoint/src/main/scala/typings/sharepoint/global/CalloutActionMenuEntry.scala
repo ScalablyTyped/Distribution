@@ -2,14 +2,14 @@ package typings.sharepoint.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines a callout action menu entry */
 @JSGlobal("CalloutActionMenuEntry")
 @js.native
 class CalloutActionMenuEntry protected ()
-  extends typings.sharepoint.CalloutActionMenuEntry {
+  extends StObject
+     with typings.sharepoint.CalloutActionMenuEntry {
   /** Creates a callout action menu entry
     @param text Text to be displayed as the menu item text
     @param onClickCallback Callback that will be fired when the item is clicked

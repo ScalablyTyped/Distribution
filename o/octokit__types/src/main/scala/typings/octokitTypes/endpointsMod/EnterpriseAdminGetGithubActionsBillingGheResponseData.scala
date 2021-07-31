@@ -3,28 +3,26 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.WINDOWS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminGetGithubActionsBillingGheResponseData extends StObject {
   
   /**
     * The amount of free GitHub Actions minutes available.
     */
-  var included_minutes: Double = js.native
+  var included_minutes: Double
   
-  var minutes_used_breakdown: WINDOWS = js.native
+  var minutes_used_breakdown: WINDOWS
   
   /**
     * The sum of the free and paid GitHub Actions minutes used.
     */
-  var total_minutes_used: Double = js.native
+  var total_minutes_used: Double
   
   /**
     * The total paid GitHub Actions minutes used.
     */
-  var total_paid_minutes_used: Double = js.native
+  var total_paid_minutes_used: Double
 }
 object EnterpriseAdminGetGithubActionsBillingGheResponseData {
   

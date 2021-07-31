@@ -2,19 +2,17 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the IP ranges that want to use NAT for a subnetwork.
   */
-@js.native
 trait SchemaRouterNatSubnetworkToNat extends StObject {
   
   /**
     * URL for the subnetwork resource to use NAT.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the secondary ranges of the Subnetwork that are allowed to use
@@ -22,7 +20,7 @@ trait SchemaRouterNatSubnetworkToNat extends StObject {
     * &quot;LIST_OF_SECONDARY_IP_RANGES&quot; is one of the values in
     * source_ip_ranges_to_nat.
     */
-  var secondaryIpRangeNames: js.UndefOr[js.Array[String]] = js.native
+  var secondaryIpRangeNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specify the options for NAT ranges in the Subnetwork. All usages of
@@ -30,7 +28,7 @@ trait SchemaRouterNatSubnetworkToNat extends StObject {
     * valid option with multiple values is: [&quot;PRIMARY_IP_RANGE&quot;,
     * &quot;LIST_OF_SECONDARY_IP_RANGES&quot;] Default: [ALL_IP_RANGES]
     */
-  var sourceIpRangesToNat: js.UndefOr[js.Array[String]] = js.native
+  var sourceIpRangesToNat: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRouterNatSubnetworkToNat {
   

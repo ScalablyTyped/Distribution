@@ -13,7 +13,6 @@ import typings.xrm.Xrm.Utility.OpenParameters
 import typings.xrm.Xrm.Utility.WindowOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,7 +52,7 @@ trait Utility extends StObject {
     * @param entityName    The logical name of the entity.
     * @param stateCode     The state code to find out the allowed status transition values.
     */
-  def getAllowedStatusTransitions(entityName: String, stateCode: Double): PromiseLike[_] = js.native
+  def getAllowedStatusTransitions(entityName: String, stateCode: Double): PromiseLike[js.Any] = js.native
   
   /**
     * Returns the entity metadata for the specified entity.
@@ -85,7 +84,7 @@ trait Utility extends StObject {
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/customize/actions External Link: Actions overview}
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/create-own-actions External Link: Create your own actions}
     */
-  def invokeProcessAction(name: String, parameters: Dictionary[_]): PromiseLike[_] = js.native
+  def invokeProcessAction(name: String, parameters: Dictionary[js.Any]): PromiseLike[js.Any] = js.native
   
   /**
     * Query if 'entityType' is an Activity entity.
@@ -114,23 +113,13 @@ trait Utility extends StObject {
     * @param windowOptions (Optional) Options for controlling the window.
     */
   def openEntityForm(name: String): Unit = js.native
-  def openEntityForm(
-    name: String,
-    id: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
-    windowOptions: WindowOptions
-  ): Unit = js.native
-  def openEntityForm(name: String, id: js.UndefOr[scala.Nothing], parameters: FormOpenParameters): Unit = js.native
-  def openEntityForm(
-    name: String,
-    id: js.UndefOr[scala.Nothing],
-    parameters: FormOpenParameters,
-    windowOptions: WindowOptions
-  ): Unit = js.native
   def openEntityForm(name: String, id: String): Unit = js.native
-  def openEntityForm(name: String, id: String, parameters: js.UndefOr[scala.Nothing], windowOptions: WindowOptions): Unit = js.native
+  def openEntityForm(name: String, id: String, parameters: Unit, windowOptions: WindowOptions): Unit = js.native
   def openEntityForm(name: String, id: String, parameters: FormOpenParameters): Unit = js.native
   def openEntityForm(name: String, id: String, parameters: FormOpenParameters, windowOptions: WindowOptions): Unit = js.native
+  def openEntityForm(name: String, id: Unit, parameters: Unit, windowOptions: WindowOptions): Unit = js.native
+  def openEntityForm(name: String, id: Unit, parameters: FormOpenParameters): Unit = js.native
+  def openEntityForm(name: String, id: Unit, parameters: FormOpenParameters, windowOptions: WindowOptions): Unit = js.native
   
   /**
     * Opens quick create.
@@ -142,7 +131,7 @@ trait Utility extends StObject {
     * @returns Returns an asynchronous promise.
     */
   def openQuickCreate(entityLogicalName: String): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
-  def openQuickCreate(entityLogicalName: String, createFromEntity: js.UndefOr[scala.Nothing], parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
+  def openQuickCreate(entityLogicalName: String, createFromEntity: Unit, parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   def openQuickCreate(entityLogicalName: String, createFromEntity: LookupValue, parameters: OpenParameters): PromiseLike[OpenQuickCreateSuccessCallbackObject] = js.native
   
@@ -166,18 +155,13 @@ trait Utility extends StObject {
     * * formid
     */
   def openWebResource(webResourceName: String): Window = js.native
-  def openWebResource(
-    webResourceName: String,
-    webResourceData: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): Window = js.native
-  def openWebResource(webResourceName: String, webResourceData: js.UndefOr[scala.Nothing], width: Double): Window = js.native
-  def openWebResource(webResourceName: String, webResourceData: js.UndefOr[scala.Nothing], width: Double, height: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String): Window = js.native
-  def openWebResource(webResourceName: String, webResourceData: String, width: js.UndefOr[scala.Nothing], height: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String, width: Double): Window = js.native
   def openWebResource(webResourceName: String, webResourceData: String, width: Double, height: Double): Window = js.native
+  def openWebResource(webResourceName: String, webResourceData: String, width: Unit, height: Double): Window = js.native
+  def openWebResource(webResourceName: String, webResourceData: Unit, width: Double): Window = js.native
+  def openWebResource(webResourceName: String, webResourceData: Unit, width: Double, height: Double): Window = js.native
+  def openWebResource(webResourceName: String, webResourceData: Unit, width: Unit, height: Double): Window = js.native
   
   /**
     * Refreshes the parent grid containing the specified record.
@@ -202,8 +186,9 @@ object Utility {
   /**
     * Interface for defining parameters on a Xrm.Utility.openEntityForm() request.
     */
-  @js.native
-  trait FormOpenParameters extends OpenParameters {
+  trait FormOpenParameters
+    extends StObject
+       with OpenParameters {
     
     /**
       * Controls whether the command bar is displayed.
@@ -211,12 +196,12 @@ object Utility {
       * * "true"    (The command bar is displayed.)
       * * "false"   (The command bar is not displayed.)
       */
-    var cmdbar: js.UndefOr[CmdBarDisplay] = js.native
+    var cmdbar: js.UndefOr[CmdBarDisplay] = js.undefined
     
     /**
       * The identifier of the form to use, when several are available.
       */
-    var formid: js.UndefOr[String] = js.native
+    var formid: js.UndefOr[String] = js.undefined
     
     /**
       * Controls whether the Navigation bar is displayed on the form.
@@ -225,7 +210,7 @@ object Utility {
       * * "off"     (The navigation bar is not displayed.)
       * * "entity"  (On an entity form, only the navigation options for related entities are available.)
       */
-    var navbar: js.UndefOr[NavBarDisplay] = js.native
+    var navbar: js.UndefOr[NavBarDisplay] = js.undefined
   }
   object FormOpenParameters {
     
@@ -272,13 +257,12 @@ object Utility {
   /**
     * Interface for window options.
     */
-  @js.native
   trait WindowOptions extends StObject {
     
     /**
       * Direct the form to open in a new window.
       */
-    var openInNewWindow: Boolean = js.native
+    var openInNewWindow: Boolean
   }
   object WindowOptions {
     

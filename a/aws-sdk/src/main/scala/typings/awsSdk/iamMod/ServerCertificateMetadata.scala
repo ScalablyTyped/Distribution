@@ -2,41 +2,39 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerCertificateMetadata extends StObject {
   
   /**
     *  The Amazon Resource Name (ARN) specifying the server certificate. For more information about ARNs and how to use them in policies, see IAM Identifiers in the IAM User Guide. 
     */
-  var Arn: arnType = js.native
+  var Arn: arnType
   
   /**
     * The date on which the certificate is set to expire.
     */
-  var Expiration: js.UndefOr[dateType] = js.native
+  var Expiration: js.UndefOr[dateType] = js.undefined
   
   /**
     *  The path to the server certificate. For more information about paths, see IAM Identifiers in the IAM User Guide. 
     */
-  var Path: pathType = js.native
+  var Path: pathType
   
   /**
     *  The stable and unique string identifying the server certificate. For more information about IDs, see IAM Identifiers in the IAM User Guide. 
     */
-  var ServerCertificateId: idType = js.native
+  var ServerCertificateId: idType
   
   /**
     * The name that identifies the server certificate.
     */
-  var ServerCertificateName: serverCertificateNameType = js.native
+  var ServerCertificateName: serverCertificateNameType
   
   /**
     * The date when the server certificate was uploaded.
     */
-  var UploadDate: js.UndefOr[dateType] = js.native
+  var UploadDate: js.UndefOr[dateType] = js.undefined
 }
 object ServerCertificateMetadata {
   

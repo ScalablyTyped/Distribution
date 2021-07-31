@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExceptionRevokedEvent extends StObject {
   
   /**
     * The id of revoked exception, as reported in `exceptionThrown`.
     */
-  var exceptionId: integer = js.native
+  var exceptionId: integer
   
   /**
     * Reason describing why exception was revoked.
     */
-  var reason: String = js.native
+  var reason: String
 }
 object ExceptionRevokedEvent {
   

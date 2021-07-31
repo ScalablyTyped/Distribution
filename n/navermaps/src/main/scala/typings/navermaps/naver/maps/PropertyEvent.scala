@@ -2,19 +2,17 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyEvent extends StObject {
   
-  var feature: Feature = js.native
+  var feature: Feature
   
-  var name: String = js.native
+  var name: String
   
-  var newValue: js.Any = js.native
+  var newValue: js.Any
   
-  var oldValue: js.Any = js.native
+  var oldValue: js.Any
 }
 object PropertyEvent {
   

@@ -2,17 +2,15 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartAction extends StObject {
   
-  def action(): Unit = js.native
+  def action(): Unit
   
-  var id: String | Double = js.native
+  var id: String | Double
   
-  var text: String = js.native
+  var text: String
 }
 object ChartAction {
   

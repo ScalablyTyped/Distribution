@@ -2,23 +2,21 @@ package typings.activexMsxml2.MSXML2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait tagXHRCOOKIE extends StObject {
   
-  val dwFlags: Double = js.native
+  val dwFlags: Double
   
-  val ftExpires: _FILETIME = js.native
+  val ftExpires: _FILETIME
   
-  val pwszName: String = js.native
+  val pwszName: String
   
-  val pwszP3PPolicy: String = js.native
+  val pwszP3PPolicy: String
   
-  val pwszUrl: String = js.native
+  val pwszUrl: String
   
-  val pwszValue: String = js.native
+  val pwszValue: String
 }
 object tagXHRCOOKIE {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recorderMod {
@@ -44,6 +43,10 @@ object recorderMod {
   /* static members */
   object Recorder {
     
+    @JSImport("@pulumi/aws/cfg/recorder", "Recorder")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Recorder resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -53,45 +56,39 @@ object recorderMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/cfg/recorder", "Recorder.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Recorder = js.native
-    @JSImport("@pulumi/aws/cfg/recorder", "Recorder.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Recorder = js.native
-    @JSImport("@pulumi/aws/cfg/recorder", "Recorder.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecorderState): Recorder = js.native
-    @JSImport("@pulumi/aws/cfg/recorder", "Recorder.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RecorderState, opts: CustomResourceOptions): Recorder = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Recorder]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Recorder]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecorderState): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Recorder]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RecorderState, opts: CustomResourceOptions): Recorder = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Recorder]
     
     /**
       * Returns true if the given object is an instance of Recorder.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/cfg/recorder", "Recorder.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/cfg/recorder.Recorder */ Boolean]
   }
   
-  @js.native
   trait RecorderArgs extends StObject {
     
     /**
       * The name of the recorder. Defaults to `default`. Changing it recreates the resource.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Recording group - see below.
       */
-    val recordingGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]] = js.native
+    val recordingGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See [AWS Docs](http://docs.aws.amazon.com/config/latest/developerguide/iamrole-permissions.html) for more details.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
   }
   object RecorderArgs {
     
@@ -121,23 +118,22 @@ object recorderMod {
     }
   }
   
-  @js.native
   trait RecorderState extends StObject {
     
     /**
       * The name of the recorder. Defaults to `default`. Changing it recreates the resource.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Recording group - see below.
       */
-    val recordingGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]] = js.native
+    val recordingGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.cfg.RecorderRecordingGroup]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the IAM role. Used to make read or write requests to the delivery channel and to describe the AWS resources associated with the account. See [AWS Docs](http://docs.aws.amazon.com/config/latest/developerguide/iamrole-permissions.html) for more details.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
   }
   object RecorderState {
     

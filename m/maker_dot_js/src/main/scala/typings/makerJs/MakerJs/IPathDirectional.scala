@@ -2,24 +2,24 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A path that may be indicated to "flow" in either direction between its endpoints.
   */
-@js.native
-trait IPathDirectional extends IPath {
+trait IPathDirectional
+  extends StObject
+     with IPath {
   
   /**
     * The endpoints of the path.
     */
-  var endPoints: js.Array[IPoint] = js.native
+  var endPoints: js.Array[IPoint]
   
   /**
     * Path flows forwards or reverse.
     */
-  var reversed: js.UndefOr[Boolean] = js.native
+  var reversed: js.UndefOr[Boolean] = js.undefined
 }
 object IPathDirectional {
   

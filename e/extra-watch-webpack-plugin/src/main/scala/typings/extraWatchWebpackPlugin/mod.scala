@@ -3,14 +3,15 @@ package typings.extraWatchWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("extra-watch-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
@@ -42,20 +43,19 @@ object mod {
   
   type ExtraWatchWebpackPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * attach extra dirs to webpack's watch system
       * @default []
       */
-    var dirs: js.UndefOr[String | js.Array[String]] = js.native
+    var dirs: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * (absolute path or glob pattern), attach extra files to webpack's watch system
       * @default []
       */
-    var files: js.UndefOr[String | js.Array[String]] = js.native
+    var files: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Options {
     

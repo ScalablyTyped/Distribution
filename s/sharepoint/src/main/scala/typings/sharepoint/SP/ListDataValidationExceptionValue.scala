@@ -2,15 +2,15 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ListDataValidationExceptionValue extends ClientValueObject {
+trait ListDataValidationExceptionValue
+  extends StObject
+     with ClientValueObject {
   
-  def get_fieldFailures(): js.Array[ListDataValidationFailure] = js.native
+  def get_fieldFailures(): js.Array[ListDataValidationFailure]
   
-  def get_itemFailure(): ListDataValidationFailure = js.native
+  def get_itemFailure(): ListDataValidationFailure
 }
 object ListDataValidationExceptionValue {
   

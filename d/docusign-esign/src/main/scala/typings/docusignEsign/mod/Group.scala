@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Group extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait Group extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The DocuSign group ID for the group.
     */
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the group.
     */
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
   /**
     * The group type. Possible values include:
@@ -35,7 +33,7 @@ trait Group extends StObject {
     *
     * <!-- More? To do -->
     */
-  var groupType: js.UndefOr[String] = js.native
+  var groupType: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the permission profile associated with the group. Possible values include:
@@ -44,17 +42,17 @@ trait Group extends StObject {
     * - `2301415` (for the `DocuSign Sender` profile)
     * - `2301414` (for the `Account Administrator` profile)
     */
-  var permissionProfileId: js.UndefOr[String] = js.native
+  var permissionProfileId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of the users in the group.
     */
-  var users: js.UndefOr[js.Array[UserInfo]] = js.native
+  var users: js.UndefOr[js.Array[UserInfo]] = js.undefined
   
   /**
     * The total number of users in the group.
     */
-  var usersCount: js.UndefOr[String] = js.native
+  var usersCount: js.UndefOr[String] = js.undefined
 }
 object Group {
   

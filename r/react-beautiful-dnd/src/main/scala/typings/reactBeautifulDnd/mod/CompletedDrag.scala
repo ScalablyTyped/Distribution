@@ -2,19 +2,17 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletedDrag extends StObject {
   
-  var afterCritical: LiftEffect = js.native
+  var afterCritical: LiftEffect
   
-  var critical: Critical = js.native
+  var critical: Critical
   
-  var impact: DragImpact = js.native
+  var impact: DragImpact
   
-  var result: DropResult = js.native
+  var result: DropResult
 }
 object CompletedDrag {
   

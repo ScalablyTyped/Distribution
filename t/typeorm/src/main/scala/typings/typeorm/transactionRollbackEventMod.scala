@@ -5,30 +5,28 @@ import typings.typeorm.entityManagerMod.EntityManager
 import typings.typeorm.queryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionRollbackEventMod {
   
-  @js.native
   trait TransactionRollbackEvent extends StObject {
     
     /**
       * Connection used in the event.
       */
-    var connection: Connection = js.native
+    var connection: Connection
     
     /**
       * EntityManager used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this entity manager instance.
       */
-    var manager: EntityManager = js.native
+    var manager: EntityManager
     
     /**
       * QueryRunner used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this query runner instance.
       */
-    var queryRunner: QueryRunner = js.native
+    var queryRunner: QueryRunner
   }
   object TransactionRollbackEvent {
     

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,20 +15,32 @@ sealed trait RelativeDate extends StObject
 object RelativeDate extends StObject {
   
   @js.native
-  sealed trait PAST_MONTH extends RelativeDate
+  sealed trait PAST_MONTH
+    extends StObject
+       with RelativeDate
   
   @js.native
-  sealed trait PAST_WEEK extends RelativeDate
+  sealed trait PAST_WEEK
+    extends StObject
+       with RelativeDate
   
   @js.native
-  sealed trait PAST_YEAR extends RelativeDate
+  sealed trait PAST_YEAR
+    extends StObject
+       with RelativeDate
   
   @js.native
-  sealed trait TODAY extends RelativeDate
+  sealed trait TODAY
+    extends StObject
+       with RelativeDate
   
   @js.native
-  sealed trait TOMORROW extends RelativeDate
+  sealed trait TOMORROW
+    extends StObject
+       with RelativeDate
   
   @js.native
-  sealed trait YESTERDAY extends RelativeDate
+  sealed trait YESTERDAY
+    extends StObject
+       with RelativeDate
 }

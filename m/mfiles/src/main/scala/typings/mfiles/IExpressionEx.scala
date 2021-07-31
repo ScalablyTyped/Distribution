@@ -3,31 +3,29 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFFolderListingAlgorithm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExpressionEx extends StObject {
   
-  def Clone(): IExpressionEx = js.native
+  def Clone(): IExpressionEx
   
-  var Conditions: ISearchConditions = js.native
+  var Conditions: ISearchConditions
   
-  var Expression: IExpression = js.native
+  var Expression: IExpression
   
-  var FolderListingAlgorithm: MFFolderListingAlgorithm = js.native
+  var FolderListingAlgorithm: MFFolderListingAlgorithm
   
-  var NULLFolderName: String = js.native
+  var NULLFolderName: String
   
-  var ShowContentsAsJITFolders: Boolean = js.native
+  var ShowContentsAsJITFolders: Boolean
   
-  var ShowEmptyFolders: Boolean = js.native
+  var ShowEmptyFolders: Boolean
   
-  var ShowMatchingObjectsOnThisLevel: Boolean = js.native
+  var ShowMatchingObjectsOnThisLevel: Boolean
   
-  var ShowNULLFolder: Boolean = js.native
+  var ShowNULLFolder: Boolean
   
-  var ShowNULLFolderContentsOnThisLevel: Boolean = js.native
+  var ShowNULLFolderContentsOnThisLevel: Boolean
 }
 object IExpressionEx {
   

@@ -2,19 +2,17 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Scan schedule configuration.
   */
-@js.native
 trait SchemaSchedule extends StObject {
   
   /**
     * Required. The duration of time between executions in days.
     */
-  var intervalDurationDays: js.UndefOr[Double] = js.native
+  var intervalDurationDays: js.UndefOr[Double] = js.undefined
   
   /**
     * A timestamp indicates when the next run will be scheduled. The value is
@@ -22,7 +20,7 @@ trait SchemaSchedule extends StObject {
     * to current server time, which means the scan will be scheduled to start
     * immediately.
     */
-  var scheduleTime: js.UndefOr[String] = js.native
+  var scheduleTime: js.UndefOr[String] = js.undefined
 }
 object SchemaSchedule {
   

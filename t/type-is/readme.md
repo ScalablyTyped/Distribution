@@ -11,8 +11,8 @@ Infer the content-type of a request.
 | Full name          | type-is |
 | Keywords           | content, type, checking |
 | # releases         | 3 |
-| # dependents       | 512 |
-| # downloads        | 605668679 |
+| # dependents       | 554 |
+| # downloads        | 700056402 |
 | # stars            | 25 |
 
 ## Links

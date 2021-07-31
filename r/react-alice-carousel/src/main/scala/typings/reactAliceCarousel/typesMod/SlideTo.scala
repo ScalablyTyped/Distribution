@@ -2,17 +2,15 @@ package typings.reactAliceCarousel.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlideTo extends StObject {
   
-  var activeIndex: Double = js.native
+  var activeIndex: Double
   
-  var fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.native
+  var fadeoutAnimationIndex: js.UndefOr[Double | Null] = js.undefined
   
-  var fadeoutAnimationPosition: js.UndefOr[Double | Null] = js.native
+  var fadeoutAnimationPosition: js.UndefOr[Double | Null] = js.undefined
 }
 object SlideTo {
   

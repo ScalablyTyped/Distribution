@@ -3,33 +3,33 @@ package typings.xrm.Xrm.Controls
 import typings.xrm.Xrm.Collection.ItemCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for a form section.
   * @see {@link UiElement}
   */
-@js.native
-trait Section extends UiStandardElement {
+trait Section
+  extends StObject
+     with UiStandardElement {
   
   /**
     * A reference to the collection of controls within this tab.
     * @see {@link https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/clientapi/reference/collections External Link: Collections (Client API reference)}
     */
-  var controls: ItemCollection[Control] = js.native
+  var controls: ItemCollection[Control]
   
   /**
     * Gets the name of the section.
     * @returns The name.
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Gets a reference to the parent {@link Tab}.
     * @returns The parent.
     */
-  def getParent(): Tab = js.native
+  def getParent(): Tab
 }
 object Section {
   

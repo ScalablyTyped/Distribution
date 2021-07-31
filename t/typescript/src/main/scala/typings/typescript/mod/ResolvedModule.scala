@@ -2,17 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolvedModule extends StObject {
   
   /** True if `resolvedFileName` comes from `node_modules`. */
-  var isExternalLibraryImport: js.UndefOr[Boolean] = js.native
+  var isExternalLibraryImport: js.UndefOr[Boolean] = js.undefined
   
   /** Path of the file the module was resolved to. */
-  var resolvedFileName: java.lang.String = js.native
+  var resolvedFileName: java.lang.String
 }
 object ResolvedModule {
   

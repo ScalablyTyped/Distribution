@@ -2,39 +2,37 @@ package typings.gamequery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameQuery extends StObject {
   
-  var ANIMATION_CALLBACK: Double = js.native
+  var ANIMATION_CALLBACK: Double
   
-  var ANIMATION_HORIZONTAL: Double = js.native
+  var ANIMATION_HORIZONTAL: Double
   
-  var ANIMATION_MULTI: Double = js.native
+  var ANIMATION_MULTI: Double
   
-  var ANIMATION_ONCE: Double = js.native
+  var ANIMATION_ONCE: Double
   
-  var ANIMATION_PINGPONG: Double = js.native
+  var ANIMATION_PINGPONG: Double
   
-  var ANIMATION_VERTICAL: Double = js.native
+  var ANIMATION_VERTICAL: Double
   
-  var Animation: typings.gamequery.Animation = js.native
+  var Animation: typings.gamequery.Animation
   
-  var groupCssClass: String = js.native
+  var groupCssClass: String
   
-  var keyTracker: js.Array[Boolean] = js.native
+  var keyTracker: js.Array[Boolean]
   
-  var spriteCssClass: String = js.native
+  var spriteCssClass: String
   
-  var tileCssClass: String = js.native
+  var tileCssClass: String
   
-  var tileIdPrefix: String = js.native
+  var tileIdPrefix: String
   
-  var tileTypePrefix: String = js.native
+  var tileTypePrefix: String
   
-  var tilemapCssClass: String = js.native
+  var tilemapCssClass: String
 }
 object GameQuery {
   

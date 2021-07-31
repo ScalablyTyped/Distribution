@@ -6,7 +6,6 @@ import typings.antlr4.treeMod.ParseTreeVisitor
 import typings.antlr4.treeMod.RuleNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruleContextMod {

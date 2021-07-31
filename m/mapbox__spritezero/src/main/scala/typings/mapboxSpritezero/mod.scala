@@ -6,33 +6,30 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@mapbox/spritezero", "extractMetadata")
+  @JSImport("@mapbox/spritezero", JSImport.Namespace)
   @js.native
-  def extractMetadata(img: ImageObject, callback: ExtractCallback): Metadata = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@mapbox/spritezero", "generateImage")
-  @js.native
-  def generateImage(layout: ImgLayout, callback: GenerateImageCallback): Unit = js.native
+  @scala.inline
+  def extractMetadata(img: ImageObject, callback: ExtractCallback): Metadata = (^.asInstanceOf[js.Dynamic].applyDynamic("extractMetadata")(img.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Metadata]
   
-  @JSImport("@mapbox/spritezero", "generateLayout")
-  @js.native
-  def generateLayout(options: GenerateLayoutOptions, callback: GenerateLayoutCallback): DataLayout | ImgLayout = js.native
+  @scala.inline
+  def generateImage(layout: ImgLayout, callback: GenerateImageCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generateImage")(layout.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@mapbox/spritezero", "strongRound")
-  @js.native
-  def strongRound(value: Double): Double = js.native
-  @JSImport("@mapbox/spritezero", "strongRound")
-  @js.native
-  def strongRound(value: Double, precision: Double): Double = js.native
+  @scala.inline
+  def generateLayout(options: GenerateLayoutOptions, callback: GenerateLayoutCallback): DataLayout | ImgLayout = (^.asInstanceOf[js.Dynamic].applyDynamic("generateLayout")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[DataLayout | ImgLayout]
   
-  @JSImport("@mapbox/spritezero", "validateMetadata")
-  @js.native
-  def validateMetadata(img: ImageSize, metadata: Metadata): Null | Error = js.native
+  @scala.inline
+  def strongRound(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("strongRound")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def strongRound(value: Double, precision: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("strongRound")(value.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def validateMetadata(img: ImageSize, metadata: Metadata): Null | Error = (^.asInstanceOf[js.Dynamic].applyDynamic("validateMetadata")(img.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[Null | Error]
   
   type DataLayout = StringDictionary[StructuredData]
   
@@ -42,22 +39,21 @@ object mod {
   
   type GenerateLayoutCallback = js.Function2[/* err */ Error | Null, /* layout */ DataLayout | ImgLayout, Unit]
   
-  @js.native
   trait GenerateLayoutOptions extends StObject {
     
     /** If true, generate DataLayout ; if false, generate ImgLayout */
-    var format: Boolean = js.native
+    var format: Boolean
     
-    var imgs: js.Array[Id] = js.native
+    var imgs: js.Array[Id]
     
     /** overrides the max_size in mapnik */
-    var maxIconSize: js.UndefOr[Double] = js.native
+    var maxIconSize: js.UndefOr[Double] = js.undefined
     
     /** Ratio of a 72dpi screen pixel to the destination pixel density */
-    var pixelRatio: Double = js.native
+    var pixelRatio: Double
     
     /** filters out icons that mapnik says are too big */
-    var removeOversizedIcons: js.UndefOr[Boolean] = js.native
+    var removeOversizedIcons: js.UndefOr[Boolean] = js.undefined
   }
   object GenerateLayoutOptions {
     
@@ -96,14 +92,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ImageItem extends ImageSize {
+  trait ImageItem
+    extends StObject
+       with ImageSize {
     
-    var buffer: String = js.native
+    var buffer: String
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ImageItem {
     
@@ -127,14 +124,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageObject extends StObject {
     
     /** Ratio of a 72dpi screen pixel to the destination pixel density */
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
     /** A string of the SVG. */
-    var svg: js.UndefOr[Buffer | String] = js.native
+    var svg: js.UndefOr[Buffer | String] = js.undefined
   }
   object ImageObject {
     
@@ -161,12 +157,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ImageSize extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object ImageSize {
     
@@ -187,14 +182,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ImgLayout extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var items: js.Array[ImageItem] = js.native
+    var items: js.Array[ImageItem]
     
-    var width: Double = js.native
+    var width: Double
   }
   object ImgLayout {
     
@@ -223,18 +217,17 @@ object mod {
   
   type Metadata = StringDictionary[js.Array[Double | js.Array[Double]]]
   
-  @js.native
   trait StructuredData extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var pixelRatio: Double = js.native
+    var pixelRatio: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object StructuredData {
     

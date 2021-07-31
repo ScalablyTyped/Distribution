@@ -5,7 +5,6 @@ import typings.styleValueTypes.typesMod.RGBA
 import typings.styleValueTypes.typesMod.ValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,21 +19,21 @@ object mod {
   
   object complex {
     
-    @JSImport("style-value-types", "complex.createTransformer")
+    @JSImport("style-value-types", "complex")
     @js.native
-    def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("style-value-types", "complex.getAnimatableNone")
-    @js.native
-    def getAnimatableNone(target: String): String = js.native
+    @scala.inline
+    def createTransformer(prop: String): js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createTransformer")(prop.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* v */ js.Array[Double | RGBA | HSLA], String]]
     
-    @JSImport("style-value-types", "complex.parse")
-    @js.native
-    def parse(v: js.Any): js.Array[Double | RGBA | HSLA] = js.native
+    @scala.inline
+    def getAnimatableNone(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAnimatableNone")(target.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("style-value-types", "complex.test")
-    @js.native
-    def test(v: js.Any): Boolean = js.native
+    @scala.inline
+    def parse(v: js.Any): js.Array[Double | RGBA | HSLA] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double | RGBA | HSLA]]
+    
+    @scala.inline
+    def test(v: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("test")(v.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSImport("style-value-types", "degrees")

@@ -2,10 +2,8 @@ package typings.themeUi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SxProps extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait SxProps extends StObject {
     * import { jsx } from 'theme-ui'
     * ```
     */
-  var sx: js.UndefOr[SxStyleProp] = js.native
+  var sx: js.UndefOr[SxStyleProp] = js.undefined
 }
 object SxProps {
   

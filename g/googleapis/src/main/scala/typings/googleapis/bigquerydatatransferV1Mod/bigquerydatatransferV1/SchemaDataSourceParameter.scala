@@ -2,7 +2,6 @@ package typings.googleapis.bigquerydatatransferV1Mod.bigquerydatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,84 +11,83 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and validation. Thus, whoever uses this api can decide to generate either
   * generic ui, or custom data source specific forms.
   */
-@js.native
 trait SchemaDataSourceParameter extends StObject {
   
   /**
     * All possible values for the parameter.
     */
-  var allowedValues: js.UndefOr[js.Array[String]] = js.native
+  var allowedValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Parameter description.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Parameter display name in the user interface.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. This field has no effect.
     */
-  var fields: js.UndefOr[js.Array[SchemaDataSourceParameter]] = js.native
+  var fields: js.UndefOr[js.Array[SchemaDataSourceParameter]] = js.undefined
   
   /**
     * Cannot be changed after initial creation.
     */
-  var immutable: js.UndefOr[Boolean] = js.native
+  var immutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For integer and double values specifies maxminum allowed value.
     */
-  var maxValue: js.UndefOr[Double] = js.native
+  var maxValue: js.UndefOr[Double] = js.undefined
   
   /**
     * For integer and double values specifies minimum allowed value.
     */
-  var minValue: js.UndefOr[Double] = js.native
+  var minValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Parameter identifier.
     */
-  var paramId: js.UndefOr[String] = js.native
+  var paramId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. This field has no effect.
     */
-  var recurse: js.UndefOr[Boolean] = js.native
+  var recurse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Deprecated. This field has no effect.
     */
-  var repeated: js.UndefOr[Boolean] = js.native
+  var repeated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is parameter required.
     */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Parameter type.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the requirements for this field, in case the user input
     * does not fulfill the regex pattern or min/max values.
     */
-  var validationDescription: js.UndefOr[String] = js.native
+  var validationDescription: js.UndefOr[String] = js.undefined
   
   /**
     * URL to a help document to further explain the naming requirements.
     */
-  var validationHelpUrl: js.UndefOr[String] = js.native
+  var validationHelpUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Regular expression which can be used for parameter validation.
     */
-  var validationRegex: js.UndefOr[String] = js.native
+  var validationRegex: js.UndefOr[String] = js.undefined
 }
 object SchemaDataSourceParameter {
   

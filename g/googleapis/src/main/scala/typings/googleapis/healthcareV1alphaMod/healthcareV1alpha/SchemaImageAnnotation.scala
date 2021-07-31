@@ -2,19 +2,17 @@ package typings.googleapis.healthcareV1alphaMod.healthcareV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Image annotation.
   */
-@js.native
 trait SchemaImageAnnotation extends StObject {
   
   /**
     * The list of polygons outlining the sensitive regions in the image.
     */
-  var boundingPolys: js.UndefOr[js.Array[SchemaBoundingPoly]] = js.native
+  var boundingPolys: js.UndefOr[js.Array[SchemaBoundingPoly]] = js.undefined
 }
 object SchemaImageAnnotation {
   

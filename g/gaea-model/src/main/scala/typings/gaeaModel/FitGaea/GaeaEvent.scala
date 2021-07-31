@@ -2,15 +2,13 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GaeaEvent extends StObject {
   
-  var effects: js.Array[EventAction] = js.native
+  var effects: js.Array[EventAction]
   
-  var triggers: js.Array[EventTriggerCondition] = js.native
+  var triggers: js.Array[EventTriggerCondition]
 }
 object GaeaEvent {
   

@@ -5,16 +5,15 @@ import typings.activexExcel.activexExcelNumbers.`2`
 import typings.activexExcel.activexExcelNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Names extends StObject {
   
-  def apply(Index: js.UndefOr[scala.Nothing], IndexLocal: js.UndefOr[scala.Nothing], RefersTo: String): Name = js.native
-  def apply(Index: js.UndefOr[scala.Nothing], IndexLocal: String): Name = js.native
   def apply(Index: String): Name = js.native
   def apply(Index: Double): Name = js.native
+  def apply(Index: Unit, IndexLocal: String): Name = js.native
+  def apply(Index: Unit, IndexLocal: Unit, RefersTo: String): Name = js.native
   
   def Add(
     Name: js.UndefOr[String],
@@ -36,19 +35,19 @@ trait Names extends StObject {
   
   val Creator: XlCreator = js.native
   
-  def Item(Index: js.UndefOr[scala.Nothing], IndexLocal: js.UndefOr[scala.Nothing], RefersTo: String): Name = js.native
-  def Item(Index: js.UndefOr[scala.Nothing], IndexLocal: String): Name = js.native
   def Item(Index: String): Name = js.native
   def Item(Index: Double): Name = js.native
+  def Item(Index: Unit, IndexLocal: String): Name = js.native
+  def Item(Index: Unit, IndexLocal: Unit, RefersTo: String): Name = js.native
   
   val Parent: js.Any = js.native
   
   def _Default(): Name = js.native
-  def _Default(Index: js.UndefOr[scala.Nothing], IndexLocal: js.UndefOr[scala.Nothing], RefersTo: js.Any): Name = js.native
-  def _Default(Index: js.UndefOr[scala.Nothing], IndexLocal: js.Any): Name = js.native
-  def _Default(Index: js.UndefOr[scala.Nothing], IndexLocal: js.Any, RefersTo: js.Any): Name = js.native
   def _Default(Index: js.Any): Name = js.native
-  def _Default(Index: js.Any, IndexLocal: js.UndefOr[scala.Nothing], RefersTo: js.Any): Name = js.native
   def _Default(Index: js.Any, IndexLocal: js.Any): Name = js.native
   def _Default(Index: js.Any, IndexLocal: js.Any, RefersTo: js.Any): Name = js.native
+  def _Default(Index: js.Any, IndexLocal: Unit, RefersTo: js.Any): Name = js.native
+  def _Default(Index: Unit, IndexLocal: js.Any): Name = js.native
+  def _Default(Index: Unit, IndexLocal: js.Any, RefersTo: js.Any): Name = js.native
+  def _Default(Index: Unit, IndexLocal: Unit, RefersTo: js.Any): Name = js.native
 }

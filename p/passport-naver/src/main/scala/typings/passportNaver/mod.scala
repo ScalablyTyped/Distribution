@@ -6,7 +6,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.passportNaver.anon.Age
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,8 @@ object mod {
   @JSImport("passport-naver", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(options: StrategyOptionWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOption, verify: VerifyFunction) = this()
     
@@ -23,11 +23,11 @@ object mod {
     def userProfile(accessToken: String, done: js.Function2[/* error */ js.Any, /* user */ js.UndefOr[js.Any], Unit]): Unit = js.native
   }
   
-  @js.native
   trait Profile
-    extends typings.passport.mod.Profile {
+    extends StObject
+       with typings.passport.mod.Profile {
     
-    var _json: Age = js.native
+    var _json: Age
   }
   object Profile {
     
@@ -45,24 +45,23 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOption extends StObject {
     
-    var authType: js.UndefOr[String] = js.native
+    var authType: js.UndefOr[String] = js.undefined
     
-    var authorizationURL: js.UndefOr[String] = js.native
+    var authorizationURL: js.UndefOr[String] = js.undefined
     
-    var callbackURL: String = js.native
+    var callbackURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var profileURL: js.UndefOr[String] = js.native
+    var profileURL: js.UndefOr[String] = js.undefined
     
-    var svcType: js.UndefOr[Double] = js.native
+    var svcType: js.UndefOr[Double] = js.undefined
     
-    var tokenURL: js.UndefOr[String] = js.native
+    var tokenURL: js.UndefOr[String] = js.undefined
   }
   object StrategyOption {
     
@@ -116,10 +115,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionWithRequest extends StrategyOption {
+  trait StrategyOptionWithRequest
+    extends StObject
+       with StrategyOption {
     
-    var passReqToCallback: Boolean = js.native
+    var passReqToCallback: Boolean
   }
   object StrategyOptionWithRequest {
     

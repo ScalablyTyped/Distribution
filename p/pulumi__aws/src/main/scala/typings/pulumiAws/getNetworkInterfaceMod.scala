@@ -7,41 +7,39 @@ import typings.pulumiAws.outputMod.ec2.GetNetworkInterfaceAttachment
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getNetworkInterfaceMod {
   
-  @JSImport("@pulumi/aws/ec2/getNetworkInterface", "getNetworkInterface")
+  @JSImport("@pulumi/aws/ec2/getNetworkInterface", JSImport.Namespace)
   @js.native
-  def getNetworkInterface(): js.Promise[GetNetworkInterfaceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkInterface", "getNetworkInterface")
-  @js.native
-  def getNetworkInterface(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkInterface", "getNetworkInterface")
-  @js.native
-  def getNetworkInterface(args: GetNetworkInterfaceArgs): js.Promise[GetNetworkInterfaceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getNetworkInterface", "getNetworkInterface")
-  @js.native
-  def getNetworkInterface(args: GetNetworkInterfaceArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getNetworkInterface(): js.Promise[GetNetworkInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")().asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  @scala.inline
+  def getNetworkInterface(args: Unit, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  @scala.inline
+  def getNetworkInterface(args: GetNetworkInterfaceArgs): js.Promise[GetNetworkInterfaceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  @scala.inline
+  def getNetworkInterface(args: GetNetworkInterfaceArgs, opts: InvokeOptions): js.Promise[GetNetworkInterfaceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getNetworkInterface")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetNetworkInterfaceResult]]
+  
   trait GetNetworkInterfaceArgs extends StObject {
     
     /**
       * One or more name/value pairs to filter off of. There are several valid keys, for a full reference, check out [describe-network-interfaces](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-network-interfaces.html) in the AWS CLI reference.
       */
-    val filters: js.UndefOr[js.Array[GetNetworkInterfaceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetNetworkInterfaceFilter]] = js.undefined
     
     /**
       * The identifier for the network interface.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * Any tags assigned to the network interface.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetNetworkInterfaceArgs {
     
@@ -77,94 +75,93 @@ object getNetworkInterfaceMod {
     }
   }
   
-  @js.native
   trait GetNetworkInterfaceResult extends StObject {
     
     /**
       * The association information for an Elastic IP address (IPv4) associated with the network interface. See supported fields below.
       */
-    val associations: js.Array[GetNetworkInterfaceAssociation] = js.native
+    val associations: js.Array[GetNetworkInterfaceAssociation]
     
-    val attachments: js.Array[GetNetworkInterfaceAttachment] = js.native
+    val attachments: js.Array[GetNetworkInterfaceAttachment]
     
     /**
       * The Availability Zone.
       */
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
     /**
       * Description of the network interface.
       */
-    val description: String = js.native
+    val description: String
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkInterfaceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetNetworkInterfaceFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
     /**
       * The type of interface.
       */
-    val interfaceType: String = js.native
+    val interfaceType: String
     
     /**
       * List of IPv6 addresses to assign to the ENI.
       */
-    val ipv6Addresses: js.Array[String] = js.native
+    val ipv6Addresses: js.Array[String]
     
     /**
       * The MAC address.
       */
-    val macAddress: String = js.native
+    val macAddress: String
     
     /**
       * The Amazon Resource Name (ARN) of the Outpost.
       */
-    val outpostArn: String = js.native
+    val outpostArn: String
     
     /**
       * The AWS account ID of the owner of the network interface.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * The private DNS name.
       */
-    val privateDnsName: String = js.native
+    val privateDnsName: String
     
     /**
       * The private IPv4 address of the network interface within the subnet.
       */
-    val privateIp: String = js.native
+    val privateIp: String
     
     /**
       * The private IPv4 addresses associated with the network interface.
       */
-    val privateIps: js.Array[String] = js.native
+    val privateIps: js.Array[String]
     
     /**
       * The ID of the entity that launched the instance on your behalf.
       */
-    val requesterId: String = js.native
+    val requesterId: String
     
     /**
       * The list of security groups for the network interface.
       */
-    val securityGroups: js.Array[String] = js.native
+    val securityGroups: js.Array[String]
     
     /**
       * The ID of the subnet.
       */
-    val subnetId: String = js.native
+    val subnetId: String
     
     /**
       * Any tags assigned to the network interface.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The ID of the VPC.
       */
-    val vpcId: String = js.native
+    val vpcId: String
   }
   object GetNetworkInterfaceResult {
     

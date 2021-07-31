@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMLModelInput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the MLModel.
     */
-  var MLModelId: EntityId = js.native
+  var MLModelId: EntityId
 }
 object DeleteMLModelInput {
   

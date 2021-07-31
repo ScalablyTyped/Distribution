@@ -1,0 +1,49 @@
+package typings.forgeViewer.Autodesk.Viewing
+
+import typings.forgeViewer.Autodesk.Viewing.UI.DockingPanel
+import typings.forgeViewer.anon.Height
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait ResizePanelOptions extends StObject {
+  
+  var dimensions: js.UndefOr[Height] = js.undefined
+  
+  var dockingPanels: js.UndefOr[js.Array[DockingPanel]] = js.undefined
+  
+  var viewer: js.UndefOr[Viewer3D] = js.undefined
+}
+object ResizePanelOptions {
+  
+  @scala.inline
+  def apply(): ResizePanelOptions = {
+    val __obj = js.Dynamic.literal()
+    __obj.asInstanceOf[ResizePanelOptions]
+  }
+  
+  @scala.inline
+  implicit class ResizePanelOptionsMutableBuilder[Self <: ResizePanelOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDimensions(value: Height): Self = StObject.set(x, "dimensions", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDimensionsUndefined: Self = StObject.set(x, "dimensions", js.undefined)
+    
+    @scala.inline
+    def setDockingPanels(value: js.Array[DockingPanel]): Self = StObject.set(x, "dockingPanels", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDockingPanelsUndefined: Self = StObject.set(x, "dockingPanels", js.undefined)
+    
+    @scala.inline
+    def setDockingPanelsVarargs(value: DockingPanel*): Self = StObject.set(x, "dockingPanels", js.Array(value :_*))
+    
+    @scala.inline
+    def setViewer(value: Viewer3D): Self = StObject.set(x, "viewer", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setViewerUndefined: Self = StObject.set(x, "viewer", js.undefined)
+  }
+}

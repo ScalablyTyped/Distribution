@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GqlQuery extends StObject {
   
   /**
     * When false, the query string must not contain any literals and instead must bind all values. For example, `SELECT * FROM Kind WHERE a = 'string literal'` is not allowed, while
     * `SELECT * FROM Kind WHERE a = @value` is.
     */
-  var allowLiterals: js.UndefOr[Boolean] = js.native
+  var allowLiterals: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For each non-reserved named binding site in the query string, there must be a named parameter with that name, but not necessarily the inverse. Key must match regex `A-Za-z_$*`, must
@@ -22,17 +20,17 @@ trait GqlQuery extends StObject {
   var namedBindings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
-    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Numbered binding site @1 references the first numbered parameter, effectively using 1-based indexing, rather than the usual 0. For each binding site numbered i in `query_string`,
     * there must be an i-th numbered parameter. The inverse must also be true.
     */
-  var positionalBindings: js.UndefOr[js.Array[GqlQueryParameter]] = js.native
+  var positionalBindings: js.UndefOr[js.Array[GqlQueryParameter]] = js.undefined
   
   /** A string of the format described [here](https://cloud.google.com/datastore/docs/apis/gql/gql_reference). */
-  var queryString: js.UndefOr[String] = js.native
+  var queryString: js.UndefOr[String] = js.undefined
 }
 object GqlQuery {
   
@@ -55,7 +53,7 @@ object GqlQuery {
     def setNamedBindings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.datastore.gapi.client.datastore.GqlQueryParameter}
-      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDatastore.maximMazurokGapiClientDatastoreStrings.GqlQuery & TopLevel[js.Any]
     ): Self = StObject.set(x, "namedBindings", value.asInstanceOf[js.Any])
     
     @scala.inline

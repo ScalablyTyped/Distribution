@@ -8,35 +8,34 @@ import typings.relayRuntime.relayStoreTypesMod.OperationAvailability
 import typings.relayRuntime.relayStoreTypesMod.OperationDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<{  name :'queryresource.fetch',   resourceID :number,   operation :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.OperationDescriptor,   profilerContext :any,   fetchPolicy :relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.FetchPolicy,   renderPolicy :relay-runtime.relay-runtime/lib/util/RelayRuntimeTypes.RenderPolicy,   queryAvailability :relay-runtime.relay-runtime/lib/store/RelayStoreTypes.OperationAvailability,   shouldFetch :boolean}> */
-@js.native
-trait Readonlynamequeryresource extends LogEvent {
+trait Readonlynamequeryresource
+  extends StObject
+     with LogEvent {
   
-  val fetchPolicy: FetchPolicy = js.native
+  val fetchPolicy: FetchPolicy
   
-  val name: queryresourceDotfetch = js.native
+  val name: queryresourceDotfetch
   
-  val operation: OperationDescriptor = js.native
+  val operation: OperationDescriptor
   
-  val profilerContext: js.Any = js.native
+  val profilerContext: js.Any
   
-  val queryAvailability: OperationAvailability = js.native
+  val queryAvailability: OperationAvailability
   
-  val renderPolicy: RenderPolicy = js.native
+  val renderPolicy: RenderPolicy
   
-  val resourceID: Double = js.native
+  val resourceID: Double
   
-  val shouldFetch: Boolean = js.native
+  val shouldFetch: Boolean
 }
 object Readonlynamequeryresource {
   
   @scala.inline
   def apply(
     fetchPolicy: FetchPolicy,
-    name: queryresourceDotfetch,
     operation: OperationDescriptor,
     profilerContext: js.Any,
     queryAvailability: OperationAvailability,
@@ -44,7 +43,7 @@ object Readonlynamequeryresource {
     resourceID: Double,
     shouldFetch: Boolean
   ): Readonlynamequeryresource = {
-    val __obj = js.Dynamic.literal(fetchPolicy = fetchPolicy.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], operation = operation.asInstanceOf[js.Any], profilerContext = profilerContext.asInstanceOf[js.Any], queryAvailability = queryAvailability.asInstanceOf[js.Any], renderPolicy = renderPolicy.asInstanceOf[js.Any], resourceID = resourceID.asInstanceOf[js.Any], shouldFetch = shouldFetch.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fetchPolicy = fetchPolicy.asInstanceOf[js.Any], name = "queryresource.fetch", operation = operation.asInstanceOf[js.Any], profilerContext = profilerContext.asInstanceOf[js.Any], queryAvailability = queryAvailability.asInstanceOf[js.Any], renderPolicy = renderPolicy.asInstanceOf[js.Any], resourceID = resourceID.asInstanceOf[js.Any], shouldFetch = shouldFetch.asInstanceOf[js.Any])
     __obj.asInstanceOf[Readonlynamequeryresource]
   }
   

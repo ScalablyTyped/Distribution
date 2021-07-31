@@ -2,40 +2,42 @@ package typings.xregexp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Value names for recursive matching parts.
   */
-@js.native
 trait MatchRecursiveValueNames extends StObject {
   
   /**
     * Name for the unmatched portion of string leading up to `left` delimiter.
     */
-  var `0`: String | Null = js.native
+  var `0`: String | Null
   
   /**
     * Name for the `left` delimiter.
     */
-  var `1`: String | Null = js.native
+  var `1`: String | Null
   
   /**
     * Name for the portion of the string inside the `left` and `right` delimiters.
     */
-  var `2`: String | Null = js.native
+  var `2`: String | Null
   
   /**
     * Name for the `right` delimiter.
     */
-  var `3`: String | Null = js.native
+  var `3`: String | Null
 }
 object MatchRecursiveValueNames {
   
   @scala.inline
   def apply(): MatchRecursiveValueNames = {
     val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("0")(null)
+    __obj.updateDynamic("1")(null)
+    __obj.updateDynamic("2")(null)
+    __obj.updateDynamic("3")(null)
     __obj.asInstanceOf[MatchRecursiveValueNames]
   }
   

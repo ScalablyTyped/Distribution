@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceReport extends StObject {
   
   /** List of app states set by managed apps on the device. App states are defined by the app's developers. This field will always be present. */
-  var appState: js.UndefOr[js.Array[AppState]] = js.native
+  var appState: js.UndefOr[js.Array[AppState]] = js.undefined
   
   /** The timestamp of the last report update in milliseconds since epoch. This field will always be present. */
-  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.native
+  var lastUpdatedTimestampMillis: js.UndefOr[String] = js.undefined
 }
 object DeviceReport {
   

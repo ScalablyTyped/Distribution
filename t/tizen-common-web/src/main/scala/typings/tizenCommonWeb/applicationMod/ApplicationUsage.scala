@@ -3,31 +3,29 @@ package typings.tizenCommonWeb.applicationMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationUsage extends StObject {
   
   /**
     * An attribute to store the ID of an application.
     */
-  val appId: ApplicationId = js.native
+  val appId: ApplicationId
   
   /**
     * An attribute to store the last time when the application was used.
     */
-  val lastTime: Date = js.native
+  val lastTime: Date
   
   /**
     * An attribute to store the total number of times the application was in the foreground.
     */
-  val totalCount: Double = js.native
+  val totalCount: Double
   
   /**
     * An attribute to store the total time of application usage in seconds.
     */
-  val totalDuration: Double = js.native
+  val totalDuration: Double
 }
 object ApplicationUsage {
   

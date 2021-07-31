@@ -2,26 +2,24 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultipleGetObject extends StObject {
   
   /**
     * The attributes that should be returned with the object.
     */
-  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.native
+  val attributesToRetrieve: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The index name.
     */
-  val indexName: String = js.native
+  val indexName: String
   
   /**
     * The object id.
     */
-  val objectID: String = js.native
+  val objectID: String
 }
 object MultipleGetObject {
   

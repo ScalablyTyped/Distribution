@@ -2,31 +2,31 @@ package typings.reactNativeCustomTabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object CustomTabs {
     
-    @JSImport("react-native-custom-tabs", "CustomTabs.openURL")
+    @JSImport("react-native-custom-tabs", "CustomTabs")
     @js.native
-    def openURL(url: String): js.Promise[Boolean] = js.native
-    @JSImport("react-native-custom-tabs", "CustomTabs.openURL")
-    @js.native
-    def openURL(url: String, options: CustomTabsOptions): js.Promise[Boolean] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def openURL(url: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def openURL(url: String, options: CustomTabsOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("openURL")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   }
   
-  @js.native
   trait Animations extends StObject {
     
-    var endEnter: String = js.native
+    var endEnter: String
     
-    var endExit: String = js.native
+    var endExit: String
     
-    var startEnter: String = js.native
+    var startEnter: String
     
-    var startExit: String = js.native
+    var startExit: String
   }
   object Animations {
     
@@ -53,20 +53,19 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomTabsOptions extends StObject {
     
-    var animations: js.UndefOr[Animations] = js.native
+    var animations: js.UndefOr[Animations] = js.undefined
     
-    var enableDefaultShare: js.UndefOr[Boolean] = js.native
+    var enableDefaultShare: js.UndefOr[Boolean] = js.undefined
     
-    var enableUrlBarHiding: js.UndefOr[Boolean] = js.native
+    var enableUrlBarHiding: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var showPageTitle: js.UndefOr[Boolean] = js.native
+    var showPageTitle: js.UndefOr[Boolean] = js.undefined
     
-    var toolbarColor: js.UndefOr[String] = js.native
+    var toolbarColor: js.UndefOr[String] = js.undefined
   }
   object CustomTabsOptions {
     

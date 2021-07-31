@@ -5,26 +5,26 @@ import typings.mendixmodelsdk.mendixmodelsdkStrings.deltas
 import typings.mendixmodelsdk.mendixmodelsdkStrings.fileChanges
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imodeleventMod {
   
-  @js.native
-  trait IDeltaEvent extends IModelEvent {
+  trait IDeltaEvent
+    extends StObject
+       with IModelEvent {
     
-    var deltas: js.Array[Delta] = js.native
+    var deltas: js.Array[Delta]
     
-    var id: Double = js.native
+    var id: Double
     
-    var `type`: deltas = js.native
+    var `type`: deltas
   }
   object IDeltaEvent {
     
     @scala.inline
-    def apply(deltas: js.Array[Delta], id: Double, `type`: deltas): IDeltaEvent = {
+    def apply(deltas: js.Array[Delta], id: Double): IDeltaEvent = {
       val __obj = js.Dynamic.literal(deltas = deltas.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("deltas")
       __obj.asInstanceOf[IDeltaEvent]
     }
     
@@ -45,21 +45,22 @@ object imodeleventMod {
     }
   }
   
-  @js.native
-  trait IFileEvent extends IModelEvent {
+  trait IFileEvent
+    extends StObject
+       with IModelEvent {
     
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
     
-    var id: Double = js.native
+    var id: Double
     
-    var `type`: fileChanges = js.native
+    var `type`: fileChanges
   }
   object IFileEvent {
     
     @scala.inline
-    def apply(files: js.Array[String], id: Double, `type`: fileChanges): IFileEvent = {
+    def apply(files: js.Array[String], id: Double): IFileEvent = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("fileChanges")
       __obj.asInstanceOf[IFileEvent]
     }
     
@@ -88,16 +89,16 @@ object imodeleventMod {
   object IModelEvent {
     
     @scala.inline
-    def IDeltaEvent(deltas: js.Array[Delta], id: Double, `type`: deltas): typings.mendixmodelsdk.imodeleventMod.IDeltaEvent = {
+    def IDeltaEvent(deltas: js.Array[Delta], id: Double): typings.mendixmodelsdk.imodeleventMod.IDeltaEvent = {
       val __obj = js.Dynamic.literal(deltas = deltas.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("deltas")
       __obj.asInstanceOf[typings.mendixmodelsdk.imodeleventMod.IDeltaEvent]
     }
     
     @scala.inline
-    def IFileEvent(files: js.Array[String], id: Double, `type`: fileChanges): typings.mendixmodelsdk.imodeleventMod.IFileEvent = {
+    def IFileEvent(files: js.Array[String], id: Double): typings.mendixmodelsdk.imodeleventMod.IFileEvent = {
       val __obj = js.Dynamic.literal(files = files.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("fileChanges")
       __obj.asInstanceOf[typings.mendixmodelsdk.imodeleventMod.IFileEvent]
     }
   }

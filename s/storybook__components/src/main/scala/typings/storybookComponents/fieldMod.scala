@@ -4,7 +4,6 @@ import typings.react.mod.FunctionComponent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fieldMod {
@@ -13,10 +12,9 @@ object fieldMod {
   @js.native
   val Field: FunctionComponent[FieldProps] = js.native
   
-  @js.native
   trait FieldProps extends StObject {
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
   }
   object FieldProps {
     

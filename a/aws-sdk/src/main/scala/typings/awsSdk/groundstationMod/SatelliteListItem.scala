@@ -2,31 +2,29 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SatelliteListItem extends StObject {
   
   /**
     * A list of ground stations to which the satellite is on-boarded.
     */
-  var groundStations: js.UndefOr[GroundStationIdList] = js.native
+  var groundStations: js.UndefOr[GroundStationIdList] = js.undefined
   
   /**
     * NORAD satellite ID number.
     */
-  var noradSatelliteID: js.UndefOr[typings.awsSdk.groundstationMod.noradSatelliteID] = js.native
+  var noradSatelliteID: js.UndefOr[typings.awsSdk.groundstationMod.noradSatelliteID] = js.undefined
   
   /**
     * ARN of a satellite.
     */
-  var satelliteArn: js.UndefOr[typings.awsSdk.groundstationMod.satelliteArn] = js.native
+  var satelliteArn: js.UndefOr[typings.awsSdk.groundstationMod.satelliteArn] = js.undefined
   
   /**
     * UUID of a satellite.
     */
-  var satelliteId: js.UndefOr[Uuid] = js.native
+  var satelliteId: js.UndefOr[Uuid] = js.undefined
 }
 object SatelliteListItem {
   

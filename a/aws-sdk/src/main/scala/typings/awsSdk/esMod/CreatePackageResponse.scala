@@ -2,16 +2,14 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePackageResponse extends StObject {
   
   /**
     * Information about the package PackageDetails.
     */
-  var PackageDetails: js.UndefOr[typings.awsSdk.esMod.PackageDetails] = js.native
+  var PackageDetails: js.UndefOr[typings.awsSdk.esMod.PackageDetails] = js.undefined
 }
 object CreatePackageResponse {
   

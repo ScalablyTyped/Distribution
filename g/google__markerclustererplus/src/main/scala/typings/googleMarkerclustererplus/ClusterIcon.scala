@@ -5,11 +5,12 @@ import typings.googlemaps.google.maps.OverlayView
 import typings.googlemaps.google.maps.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ClusterIcon extends OverlayView {
+trait ClusterIcon
+  extends StObject
+     with OverlayView {
   
   /**
     * Creates the cssText style parameter based on the position of the icon.

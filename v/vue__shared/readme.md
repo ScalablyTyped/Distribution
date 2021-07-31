@@ -10,9 +10,9 @@ internal utils shared across @vue packages
 | ------------------ | :-------------: |
 | Full name          | @vue/shared |
 | Keywords           | vue |
-| # releases         | 43 |
-| # dependents       | 22 |
-| # downloads        | 1091258 |
+| # releases         | 50 |
+| # dependents       | 36 |
+| # downloads        | 8386782 |
 | # stars            | 0 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscriber extends StObject {
   
   /**
     * The address that AWS sends budget notifications to, either an SNS topic or an email. When you create a subscriber, the value of Address can't contain line breaks.
     */
-  var Address: SubscriberAddress = js.native
+  var Address: SubscriberAddress
   
   /**
     * The type of notification that AWS sends to a subscriber.
     */
-  var SubscriptionType: typings.awsSdk.budgetsMod.SubscriptionType = js.native
+  var SubscriptionType: typings.awsSdk.budgetsMod.SubscriptionType
 }
 object Subscriber {
   

@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchCase
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var consequent: js.Array[Statement] = js.native
+  var consequent: js.Array[Statement]
   
-  var test: js.UndefOr[Expression | Null] = js.native
+  var test: js.UndefOr[Expression | Null] = js.undefined
   
   @JSName("type")
-  var type_SwitchCase: typings.estree.estreeStrings.SwitchCase = js.native
+  var type_SwitchCase: typings.estree.estreeStrings.SwitchCase
 }
 object SwitchCase {
   
   @scala.inline
-  def apply(consequent: js.Array[Statement], `type`: typings.estree.estreeStrings.SwitchCase): SwitchCase = {
+  def apply(consequent: js.Array[Statement]): SwitchCase = {
     val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("SwitchCase")
     __obj.asInstanceOf[SwitchCase]
   }
   

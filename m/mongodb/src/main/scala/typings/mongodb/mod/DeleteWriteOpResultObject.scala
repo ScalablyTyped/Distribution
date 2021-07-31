@@ -3,20 +3,18 @@ package typings.mongodb.mod
 import typings.mongodb.anon.N
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteWriteOpResultObject extends StObject {
   
   //The connection object used for the operation.
-  var connection: js.UndefOr[js.Any] = js.native
+  var connection: js.UndefOr[js.Any] = js.undefined
   
   //The number of documents deleted.
-  var deletedCount: js.UndefOr[scala.Double] = js.native
+  var deletedCount: js.UndefOr[scala.Double] = js.undefined
   
   //The raw result returned from MongoDB, field will vary depending on server version.
-  var result: N = js.native
+  var result: N
 }
 object DeleteWriteOpResultObject {
   

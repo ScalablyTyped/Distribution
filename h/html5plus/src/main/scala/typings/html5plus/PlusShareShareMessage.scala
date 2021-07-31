@@ -5,7 +5,6 @@ import typings.html5plus.html5plusStrings.editable
 import typings.html5plus.html5plusStrings.slient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
   */
-@js.native
 trait PlusShareShareMessage extends StObject {
   
   /**
@@ -22,21 +20,21 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * 分享消息扩展参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var extra: js.UndefOr[PlusShareShareMessageExtra] = js.native
+  var extra: js.UndefOr[PlusShareShareMessageExtra] = js.undefined
   
   /**
     * 分享消息中包含的用户地理信息数据
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var geo: js.UndefOr[PlusShareGeoPosition] = js.native
+  var geo: js.UndefOr[PlusShareGeoPosition] = js.undefined
   
   /**
     * 分享独立的链接
@@ -45,7 +43,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
   /**
     * 分享消息的模式
@@ -67,7 +65,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var interface: js.UndefOr[auto | slient | editable] = js.native
+  var interface: js.UndefOr[auto | slient | editable] = js.undefined
   
   /**
     * 分享的多媒体资源
@@ -79,7 +77,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var media: js.UndefOr[String] = js.native
+  var media: js.UndefOr[String] = js.undefined
   
   /**
     * 分享微信小程序参数
@@ -87,7 +85,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var miniProgram: js.UndefOr[PlusShareWeixinMiniProgramOptions] = js.native
+  var miniProgram: js.UndefOr[PlusShareWeixinMiniProgramOptions] = js.undefined
   
   /**
     * 分享消息的图片
@@ -97,7 +95,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var pictures: js.UndefOr[js.Array[_]] = js.native
+  var pictures: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 分享消息的缩略图
@@ -108,7 +106,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var thumbs: js.UndefOr[js.Array[_]] = js.native
+  var thumbs: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 分享消息的标题
@@ -116,7 +114,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * 分享消息的类型
@@ -124,7 +122,7 @@ trait PlusShareShareMessage extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PlusShareShareMessage {
   
@@ -180,7 +178,7 @@ object PlusShareShareMessage {
     def setMiniProgramUndefined: Self = StObject.set(x, "miniProgram", js.undefined)
     
     @scala.inline
-    def setPictures(value: js.Array[_]): Self = StObject.set(x, "pictures", value.asInstanceOf[js.Any])
+    def setPictures(value: js.Array[js.Any]): Self = StObject.set(x, "pictures", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPicturesUndefined: Self = StObject.set(x, "pictures", js.undefined)
@@ -189,7 +187,7 @@ object PlusShareShareMessage {
     def setPicturesVarargs(value: js.Any*): Self = StObject.set(x, "pictures", js.Array(value :_*))
     
     @scala.inline
-    def setThumbs(value: js.Array[_]): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
+    def setThumbs(value: js.Array[js.Any]): Self = StObject.set(x, "thumbs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setThumbsUndefined: Self = StObject.set(x, "thumbs", js.undefined)

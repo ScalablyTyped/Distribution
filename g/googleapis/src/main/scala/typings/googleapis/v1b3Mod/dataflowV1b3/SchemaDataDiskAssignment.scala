@@ -2,13 +2,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data disk assignment for a given VM instance.
   */
-@js.native
 trait SchemaDataDiskAssignment extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaDataDiskAssignment extends StObject {
     * &quot;myproject-1014-104817-4c2-harness-0-disk-0&quot; }, {
     * &quot;myproject-1014-104817-4c2-harness-0-disk-1&quot; }.
     */
-  var dataDisks: js.UndefOr[js.Array[String]] = js.native
+  var dataDisks: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * VM instance name the data disks mounted to, for example
     * &quot;myproject-1014-104817-4c2-harness-0&quot;.
     */
-  var vmInstance: js.UndefOr[String] = js.native
+  var vmInstance: js.UndefOr[String] = js.undefined
 }
 object SchemaDataDiskAssignment {
   

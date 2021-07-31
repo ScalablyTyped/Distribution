@@ -16,106 +16,104 @@ import typings.semanticUiPopup.semanticUiPopupStrings.manual
 import typings.semanticUiPopup.semanticUiPopupStrings.opposite
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-popup.SemanticUI.PopupSettings._Impl, keyof semantic-ui-popup.SemanticUI.PopupSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImpl extends StObject {
   
-  var addTouchEvents: js.UndefOr[Boolean] = js.native
+  var addTouchEvents: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[String | JQuery] = js.native
+  var boundary: js.UndefOr[String | JQuery] = js.undefined
   
-  var className: js.UndefOr[ClassNameSettings] = js.native
+  var className: js.UndefOr[ClassNameSettings] = js.undefined
   
-  var closable: js.UndefOr[Boolean] = js.native
+  var closable: js.UndefOr[Boolean] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var context: js.UndefOr[String | JQuery] = js.native
+  var context: js.UndefOr[String | JQuery] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var delay: js.UndefOr[DelaySettings] = js.native
+  var delay: js.UndefOr[DelaySettings] = js.undefined
   
-  var distanceAway: js.UndefOr[Double] = js.native
+  var distanceAway: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var error: js.UndefOr[ErrorSettings] = js.native
+  var error: js.UndefOr[ErrorSettings] = js.undefined
   
-  var exclusive: js.UndefOr[Boolean] = js.native
+  var exclusive: js.UndefOr[Boolean] = js.undefined
   
-  var hideOnScroll: js.UndefOr[auto | `false`] = js.native
+  var hideOnScroll: js.UndefOr[auto | `false`] = js.undefined
   
-  var hoverable: js.UndefOr[Boolean] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.undefined
   
-  var html: js.UndefOr[String | JQuery] = js.native
+  var html: js.UndefOr[String | JQuery] = js.undefined
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
   
-  var jitter: js.UndefOr[Double] = js.native
+  var jitter: js.UndefOr[Double] = js.undefined
   
-  var lastResort: js.UndefOr[Boolean | String] = js.native
+  var lastResort: js.UndefOr[Boolean | String] = js.undefined
   
-  var maxSearchDepth: js.UndefOr[Double] = js.native
+  var maxSearchDepth: js.UndefOr[Double] = js.undefined
   
-  var metadata: js.UndefOr[MetadataSettings] = js.native
+  var metadata: js.UndefOr[MetadataSettings] = js.undefined
   
-  var movePopup: js.UndefOr[Boolean] = js.native
+  var movePopup: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
-  var observeChanges: js.UndefOr[Boolean] = js.native
+  var observeChanges: js.UndefOr[Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[focus | click | hover | manual] = js.native
+  var on: js.UndefOr[focus | click | hover | manual] = js.undefined
   
-  var onCreate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onCreate: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
   
-  var onHidden: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onHidden: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
   
-  var onHide: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.native
+  var onHide: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.undefined
   
-  var onRemove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onRemove: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
   
-  var onShow: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.native
+  var onShow: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, `false` | Unit]] = js.undefined
   
-  var onUnplaceable: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onUnplaceable: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
   
-  var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.native
+  var onVisible: js.UndefOr[js.ThisFunction1[/* this */ JQuery, /* $module */ JQuery, Unit]] = js.undefined
   
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
-  var popup: js.UndefOr[`false` | String | JQuery] = js.native
+  var popup: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var prefer: js.UndefOr[adjacent | opposite] = js.native
+  var prefer: js.UndefOr[adjacent | opposite] = js.undefined
   
-  var preserve: js.UndefOr[Boolean] = js.native
+  var preserve: js.UndefOr[Boolean] = js.undefined
   
-  var scrollContext: js.UndefOr[String | JQuery] = js.native
+  var scrollContext: js.UndefOr[String | JQuery] = js.undefined
   
-  var selector: js.UndefOr[SelectorSettings] = js.native
+  var selector: js.UndefOr[SelectorSettings] = js.undefined
   
-  var setFluidWidth: js.UndefOr[Boolean] = js.native
+  var setFluidWidth: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var target: js.UndefOr[`false` | String | JQuery] = js.native
+  var target: js.UndefOr[`false` | String | JQuery] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var transition: js.UndefOr[String] = js.native
+  var transition: js.UndefOr[String] = js.undefined
   
-  var variation: js.UndefOr[String] = js.native
+  var variation: js.UndefOr[String] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object PartialPickImplkeyofImpl {
   

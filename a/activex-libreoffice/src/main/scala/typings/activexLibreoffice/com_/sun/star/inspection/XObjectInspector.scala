@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.util.URL
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see ObjectInspector
   * @since OOo 2.0.3
   */
-@js.native
 trait XObjectInspector
-  extends XController
+  extends StObject
+     with XController
      with XDispatchProvider {
   
   /**
@@ -40,7 +39,7 @@ trait XObjectInspector
     * If a new model is set at the inspector, the complete UI will be rebuilt to reflect the change, using the new property handlers provided by the new
     * model.
     */
-  var InspectorModel: XObjectInspectorModel = js.native
+  var InspectorModel: XObjectInspectorModel
   
   /**
     * provides access to the user interface of the object inspector.
@@ -49,7 +48,7 @@ trait XObjectInspector
     * controls (or parts thereof), or register observers for all property controls.
     * @since OOo 2.2
     */
-  var InspectorUI: XObjectInspectorUI = js.native
+  var InspectorUI: XObjectInspectorUI
   
   /**
     * inspects a new collection of one or more objects.
@@ -63,7 +62,7 @@ trait XObjectInspector
     * @see XPropertyHandler.suspend
     * @throws com::sun::star::util::VetoException if the inspector cannot switch to another object set. This typically happens if one of the active {@link XPro
     */
-  def inspect(Objects: SeqEquiv[XInterface]): Unit = js.native
+  def inspect(Objects: SeqEquiv[XInterface]): Unit
 }
 object XObjectInspector {
   

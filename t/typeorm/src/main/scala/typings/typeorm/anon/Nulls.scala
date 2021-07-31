@@ -6,15 +6,13 @@ import typings.typeorm.typeormStrings.`NULLS FIRST`
 import typings.typeorm.typeormStrings.`NULLS LAST`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Nulls extends StObject {
   
-  var nulls: js.UndefOr[(`NULLS FIRST`) | (`NULLS LAST`)] = js.native
+  var nulls: js.UndefOr[(`NULLS FIRST`) | (`NULLS LAST`)] = js.undefined
   
-  var order: ASC | DESC = js.native
+  var order: ASC | DESC
 }
 object Nulls {
   

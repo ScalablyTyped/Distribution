@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncSourceWithState extends StObject {
   
   /**
     * The field name in SyncSource for the ResourceDataSyncAwsOrganizationsSource type.
     */
-  var AwsOrganizationsSource: js.UndefOr[ResourceDataSyncAwsOrganizationsSource] = js.native
+  var AwsOrganizationsSource: js.UndefOr[ResourceDataSyncAwsOrganizationsSource] = js.undefined
   
   /**
     * Whether to automatically synchronize and aggregate data from new AWS Regions when those Regions come online.
     */
-  var IncludeFutureRegions: js.UndefOr[ResourceDataSyncIncludeFutureRegions] = js.native
+  var IncludeFutureRegions: js.UndefOr[ResourceDataSyncIncludeFutureRegions] = js.undefined
   
   /**
     * The SyncSource AWS Regions included in the resource data sync.
     */
-  var SourceRegions: js.UndefOr[ResourceDataSyncSourceRegionList] = js.native
+  var SourceRegions: js.UndefOr[ResourceDataSyncSourceRegionList] = js.undefined
   
   /**
     * The type of data source for the resource data sync. SourceType is either AwsOrganizations (if an organization is present in AWS Organizations) or singleAccountMultiRegions.
     */
-  var SourceType: js.UndefOr[ResourceDataSyncSourceType] = js.native
+  var SourceType: js.UndefOr[ResourceDataSyncSourceType] = js.undefined
   
   /**
     * The data type name for including resource data sync state. There are four sync states:  OrganizationNotExists: Your organization doesn't exist.  NoPermissions: The system can't locate the service-linked role. This role is automatically created when a user creates a resource data sync in Explorer.  InvalidOrganizationalUnit: You specified or selected an invalid unit in the resource data sync configuration.  TrustedAccessDisabled: You disabled Systems Manager access in the organization in AWS Organizations.
     */
-  var State: js.UndefOr[ResourceDataSyncState] = js.native
+  var State: js.UndefOr[ResourceDataSyncState] = js.undefined
 }
 object ResourceDataSyncSourceWithState {
   

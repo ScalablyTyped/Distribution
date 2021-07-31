@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -31,36 +30,37 @@ object mod {
     def vertical: typings.reactFontawesome.reactFontawesomeStrings.vertical = "vertical".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.vertical]
   }
   
-  @js.native
-  trait FontAwesomeProps extends Intermediate {
+  trait FontAwesomeProps
+    extends StObject
+       with Intermediate {
     
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
-    var border: js.UndefOr[Boolean] = js.native
+    var border: js.UndefOr[Boolean] = js.undefined
     
-    var cssModule: js.UndefOr[js.Any] = js.native
+    var cssModule: js.UndefOr[js.Any] = js.undefined
     
-    var fixedWidth: js.UndefOr[Boolean] = js.native
+    var fixedWidth: js.UndefOr[Boolean] = js.undefined
     
-    var flip: js.UndefOr[FontAwesomeFlip] = js.native
+    var flip: js.UndefOr[FontAwesomeFlip] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
     @JSName("name")
-    var name_FontAwesomeProps: String = js.native
+    var name_FontAwesomeProps: String
     
-    var pulse: js.UndefOr[Boolean] = js.native
+    var pulse: js.UndefOr[Boolean] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
     @JSName("size")
-    var size_FontAwesomeProps: js.UndefOr[FontAwesomeSize] = js.native
+    var size_FontAwesomeProps: js.UndefOr[FontAwesomeSize] = js.undefined
     
-    var spin: js.UndefOr[Boolean] = js.native
+    var spin: js.UndefOr[Boolean] = js.undefined
     
-    var stack: js.UndefOr[FontAwesomeStack] = js.native
+    var stack: js.UndefOr[FontAwesomeStack] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
   }
   object FontAwesomeProps {
     
@@ -190,11 +190,12 @@ object mod {
     def `2x`: typings.reactFontawesome.reactFontawesomeStrings.`2x` = "2x".asInstanceOf[typings.reactFontawesome.reactFontawesomeStrings.`2x`]
   }
   
-  @js.native
-  trait Intermediate extends AllHTMLAttributes[HTMLElement] {
+  trait Intermediate
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     @JSName("size")
-    var size_Intermediate: js.UndefOr[js.Any] = js.native
+    var size_Intermediate: js.UndefOr[js.Any] = js.undefined
   }
   object Intermediate {
     

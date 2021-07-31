@@ -2,10 +2,8 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPlaylistItemContentDetails extends StObject {
   
   /**
@@ -15,12 +13,12 @@ trait SchemaPlaylistItemContentDetails extends StObject {
     * context of the playlist.) By default, assume that the video.endTime is
     * the end of the video.
     */
-  var endAt: js.UndefOr[String] = js.native
+  var endAt: js.UndefOr[String] = js.undefined
   
   /**
     * A user-generated note for this item.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * The time, measured in seconds from the start of the video, when the video
@@ -28,20 +26,20 @@ trait SchemaPlaylistItemContentDetails extends StObject {
     * video should start and stop playing when the video is played in the
     * context of the playlist.) The default value is 0.
     */
-  var startAt: js.UndefOr[String] = js.native
+  var startAt: js.UndefOr[String] = js.undefined
   
   /**
     * The ID that YouTube uses to uniquely identify a video. To retrieve the
     * video resource, set the id query parameter to this value in your API
     * request.
     */
-  var videoId: js.UndefOr[String] = js.native
+  var videoId: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the video was published to YouTube. The value is
     * specified in ISO 8601 (YYYY-MM-DDThh:mm:ss.sZ) format.
     */
-  var videoPublishedAt: js.UndefOr[String] = js.native
+  var videoPublishedAt: js.UndefOr[String] = js.undefined
 }
 object SchemaPlaylistItemContentDetails {
   

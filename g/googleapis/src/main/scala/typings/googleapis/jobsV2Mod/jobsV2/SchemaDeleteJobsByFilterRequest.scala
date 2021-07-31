@@ -2,7 +2,6 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * filter request.  The job typically becomes unsearchable within 10 seconds,
   * but it may take up to 5 minutes.
   */
-@js.native
 trait SchemaDeleteJobsByFilterRequest extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaDeleteJobsByFilterRequest extends StObject {
     * complete before the job is cleaned up. Otherwise, the call returns while
     * some steps are still taking place asynchronously, hence faster.
     */
-  var disableFastProcess: js.UndefOr[Boolean] = js.native
+  var disableFastProcess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required.  Restrictions on the scope of the delete request.
     */
-  var filter: js.UndefOr[SchemaFilter] = js.native
+  var filter: js.UndefOr[SchemaFilter] = js.undefined
 }
 object SchemaDeleteJobsByFilterRequest {
   

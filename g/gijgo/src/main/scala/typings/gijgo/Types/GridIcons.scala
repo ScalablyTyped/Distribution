@@ -2,19 +2,17 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridIcons extends StObject {
   
-  var collapseGroup: js.UndefOr[String] = js.native
+  var collapseGroup: js.UndefOr[String] = js.undefined
   
-  var collapseRow: js.UndefOr[String] = js.native
+  var collapseRow: js.UndefOr[String] = js.undefined
   
-  var expandGroup: js.UndefOr[String] = js.native
+  var expandGroup: js.UndefOr[String] = js.undefined
   
-  var expandRow: js.UndefOr[String] = js.native
+  var expandRow: js.UndefOr[String] = js.undefined
 }
 object GridIcons {
   

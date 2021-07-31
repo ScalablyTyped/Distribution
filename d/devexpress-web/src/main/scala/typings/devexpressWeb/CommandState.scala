@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the state of a command.
   */
-@js.native
-trait CommandState[T] extends SimpleCommandState {
+trait CommandState[T]
+  extends StObject
+     with SimpleCommandState {
   
   /**
     * Specifies a command value.
     */
-  var value: T = js.native
+  var value: T
 }
 object CommandState {
   
@@ -25,7 +25,7 @@ object CommandState {
   }
   
   @scala.inline
-  implicit class CommandStateMutableBuilder[Self <: CommandState[_], T] (val x: Self with CommandState[T]) extends AnyVal {
+  implicit class CommandStateMutableBuilder[Self <: CommandState[?], T] (val x: Self & CommandState[T]) extends AnyVal {
     
     @scala.inline
     def setValue(value: T): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])

@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceContributorCount extends StObject {
   
   /**
     * Indicates whether the maximum count is reached.
     */
-  var CapExceeded: js.UndefOr[Boolean] = js.native
+  var CapExceeded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of AWS resources or AWS Config rules responsible for the current compliance of the item.
     */
-  var CappedCount: js.UndefOr[Integer] = js.native
+  var CappedCount: js.UndefOr[Integer] = js.undefined
 }
 object ComplianceContributorCount {
   

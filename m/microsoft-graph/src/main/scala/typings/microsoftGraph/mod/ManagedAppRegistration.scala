@@ -2,59 +2,59 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedAppRegistration extends Entity {
+trait ManagedAppRegistration
+  extends StObject
+     with Entity {
   
   // The app package Identifier
-  var appIdentifier: js.UndefOr[NullableOption[MobileAppIdentifier]] = js.native
+  var appIdentifier: js.UndefOr[NullableOption[MobileAppIdentifier]] = js.undefined
   
   // App version
-  var applicationVersion: js.UndefOr[NullableOption[String]] = js.native
+  var applicationVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Zero or more policys already applied on the registered app when it last synchronized with managment service.
-  var appliedPolicies: js.UndefOr[NullableOption[js.Array[ManagedAppPolicy]]] = js.native
+  var appliedPolicies: js.UndefOr[NullableOption[js.Array[ManagedAppPolicy]]] = js.undefined
   
   // Date and time of creation
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Host device name
-  var deviceName: js.UndefOr[NullableOption[String]] = js.native
+  var deviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * App management SDK generated tag, which helps relate apps hosted on the same device. Not guaranteed to relate apps in
     * all conditions.
     */
-  var deviceTag: js.UndefOr[NullableOption[String]] = js.native
+  var deviceTag: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Host device type
-  var deviceType: js.UndefOr[NullableOption[String]] = js.native
+  var deviceType: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Zero or more reasons an app registration is flagged. E.g. app running on rooted device
-  var flaggedReasons: js.UndefOr[js.Array[ManagedAppFlaggedReason]] = js.native
+  var flaggedReasons: js.UndefOr[js.Array[ManagedAppFlaggedReason]] = js.undefined
   
   // Zero or more policies admin intended for the app as of now.
-  var intendedPolicies: js.UndefOr[NullableOption[js.Array[ManagedAppPolicy]]] = js.native
+  var intendedPolicies: js.UndefOr[NullableOption[js.Array[ManagedAppPolicy]]] = js.undefined
   
   // Date and time of last the app synced with management service.
-  var lastSyncDateTime: js.UndefOr[String] = js.native
+  var lastSyncDateTime: js.UndefOr[String] = js.undefined
   
   // App management SDK version
-  var managementSdkVersion: js.UndefOr[NullableOption[String]] = js.native
+  var managementSdkVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Zero or more long running operations triggered on the app registration.
-  var operations: js.UndefOr[NullableOption[js.Array[ManagedAppOperation]]] = js.native
+  var operations: js.UndefOr[NullableOption[js.Array[ManagedAppOperation]]] = js.undefined
   
   // Operating System version
-  var platformVersion: js.UndefOr[NullableOption[String]] = js.native
+  var platformVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The user Id to who this app registration belongs.
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Version of the entity.
-  var version: js.UndefOr[NullableOption[String]] = js.native
+  var version: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedAppRegistration {
   

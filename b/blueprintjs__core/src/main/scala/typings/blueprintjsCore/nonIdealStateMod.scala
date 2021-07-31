@@ -9,7 +9,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nonIdealStateMod {
@@ -37,29 +36,30 @@ object nonIdealStateMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait INonIdealStateProps extends IProps {
+  trait INonIdealStateProps
+    extends StObject
+       with IProps {
     
     /** An action to resolve the non-ideal state which appears after `description`. */
-    var action: js.UndefOr[Element] = js.native
+    var action: js.UndefOr[Element] = js.undefined
     
     /**
       * Advanced usage: React `children` will appear last (after `action`).
       * Avoid passing raw strings as they will not receive margins and disrupt the layout flow.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * A longer description of the non-ideal state.
       * A string or number value will be wrapped in a `<div>` to preserve margins.
       */
-    var description: js.UndefOr[ReactChild] = js.native
+    var description: js.UndefOr[ReactChild] = js.undefined
     
     /** The name of a Blueprint icon or a JSX Element (such as `<Spinner/>`) to render above the title. */
-    var icon: js.UndefOr[IconName | MaybeElement] = js.native
+    var icon: js.UndefOr[IconName | MaybeElement] = js.undefined
     
     /** The title of the non-ideal state. */
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
   }
   object INonIdealStateProps {
     

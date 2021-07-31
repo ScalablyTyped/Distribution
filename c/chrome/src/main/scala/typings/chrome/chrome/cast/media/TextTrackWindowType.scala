@@ -2,7 +2,6 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait TextTrackWindowType extends StObject
 object TextTrackWindowType extends StObject {
   
   @js.native
-  sealed trait NONE extends TextTrackWindowType
+  sealed trait NONE
+    extends StObject
+       with TextTrackWindowType
   
   @js.native
-  sealed trait NORMAL extends TextTrackWindowType
+  sealed trait NORMAL
+    extends StObject
+       with TextTrackWindowType
   
   @js.native
-  sealed trait ROUNDED_CORNERS extends TextTrackWindowType
+  sealed trait ROUNDED_CORNERS
+    extends StObject
+       with TextTrackWindowType
 }

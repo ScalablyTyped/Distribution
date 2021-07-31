@@ -13,18 +13,16 @@ import typings.inquirer.mod.prompts.PromptCollection
 import typings.inquirer.mod.ui.BottomBarOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BottomBar extends StObject {
     
     /**
       * Represents the bottom-bar UI.
       */
-    var BottomBar: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^] = js.native
+    var BottomBar: Instantiable1[/* options */ js.UndefOr[BottomBarOptions], ^]
     
     /**
       * Represents the prompt ui.
@@ -33,7 +31,7 @@ object anon {
         /* prompts */ PromptCollection, 
         /* options */ js.UndefOr[StreamOptions], 
         typings.inquirer.promptMod.^
-      ] = js.native
+      ]
   }
   object BottomBar {
     
@@ -67,13 +65,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Choices extends StObject {
     
     /**
       * The choices of the prompt.
       */
-    var choices: typings.inquirer.choicesMod.^[Answers] = js.native
+    var choices: typings.inquirer.choicesMod.^[Answers]
   }
   object Choices {
     
@@ -91,28 +88,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Default[T /* <: Answers */] extends StObject {
     
     /**
       * The default value of the question.
       */
-    var default: js.Any = js.native
+    var default: js.Any
     
     /**
       * The choices of the question.
       */
-    var choices: ChoiceCollection[T] = js.native
+    var choices: ChoiceCollection[T]
     
     /**
       * The message to show to the user.
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * The type of the question.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Default {
     
@@ -124,7 +120,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DefaultMutableBuilder[Self <: Default[_], T /* <: Answers */] (val x: Self with Default[T]) extends AnyVal {
+    implicit class DefaultMutableBuilder[Self <: Default[?], T /* <: Answers */] (val x: Self & Default[T]) extends AnyVal {
       
       @scala.inline
       def setChoices(value: ChoiceCollection[T]): Self = StObject.set(x, "choices", value.asInstanceOf[js.Any])
@@ -143,10 +139,9 @@ object anon {
     }
   }
   
-  @js.native
   trait IsFinal extends StObject {
     
-    var isFinal: js.UndefOr[Boolean] = js.native
+    var isFinal: js.UndefOr[Boolean] = js.undefined
   }
   object IsFinal {
     
@@ -167,17 +162,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: separator = js.native
+    var `type`: separator
   }
   object Type {
     
     @scala.inline
-    def apply(`type`: separator): Type = {
+    def apply(): Type = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("separator")
       __obj.asInstanceOf[Type]
     }
     
@@ -189,7 +183,6 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofSeparator extends StObject {
     
     /**
@@ -202,7 +195,7 @@ object anon {
       * A value indicating whether the item is not a separator.
       */
     /* static member */
-    def exclude(item: js.Any): Boolean = js.native
+    def exclude(item: js.Any): Boolean
   }
   object TypeofSeparator {
     
@@ -220,10 +213,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Ui extends StObject {
     
-    var ui: typings.inquirer.promptMod.^ = js.native
+    var ui: typings.inquirer.promptMod.^
   }
   object Ui {
     

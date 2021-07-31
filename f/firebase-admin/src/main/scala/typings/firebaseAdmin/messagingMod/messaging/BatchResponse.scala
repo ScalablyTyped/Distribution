@@ -2,26 +2,24 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchResponse extends StObject {
   
   /**
     * The number of messages that resulted in errors when sending.
     */
-  var failureCount: Double = js.native
+  var failureCount: Double
   
   /**
     * An array of responses, each corresponding to a message.
     */
-  var responses: js.Array[SendResponse] = js.native
+  var responses: js.Array[SendResponse]
   
   /**
     * The number of messages that were successfully handed off for sending.
     */
-  var successCount: Double = js.native
+  var successCount: Double
 }
 object BatchResponse {
   

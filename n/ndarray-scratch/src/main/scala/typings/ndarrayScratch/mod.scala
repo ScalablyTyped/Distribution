@@ -3,44 +3,37 @@ package typings.ndarrayScratch
 import typings.ndarray.mod.ndarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ndarray-scratch", "clone")
+  @JSImport("ndarray-scratch", JSImport.Namespace)
   @js.native
-  def clone_(array: ndarray[Double]): ndarray[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ndarray-scratch", "eye")
-  @js.native
-  def eye(shape: js.Array[Double]): ndarray[Double] = js.native
-  @JSImport("ndarray-scratch", "eye")
-  @js.native
-  def eye(shape: js.Array[Double], dtype: String): ndarray[Double] = js.native
+  @scala.inline
+  def clone_(array: ndarray[Double]): ndarray[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(array.asInstanceOf[js.Any]).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-scratch", "free")
-  @js.native
-  def free(array: ndarray[Double]): Unit = js.native
+  @scala.inline
+  def eye(shape: js.Array[Double]): ndarray[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("eye")(shape.asInstanceOf[js.Any]).asInstanceOf[ndarray[Double]]
+  @scala.inline
+  def eye(shape: js.Array[Double], dtype: String): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("eye")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-scratch", "malloc")
-  @js.native
-  def malloc(shape: js.Array[Double]): ndarray[Double] = js.native
-  @JSImport("ndarray-scratch", "malloc")
-  @js.native
-  def malloc(shape: js.Array[Double], dtype: String): ndarray[Double] = js.native
+  @scala.inline
+  def free(array: ndarray[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("free")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ndarray-scratch", "ones")
-  @js.native
-  def ones(shape: js.Array[Double]): ndarray[Double] = js.native
-  @JSImport("ndarray-scratch", "ones")
-  @js.native
-  def ones(shape: js.Array[Double], dtype: String): ndarray[Double] = js.native
+  @scala.inline
+  def malloc(shape: js.Array[Double]): ndarray[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("malloc")(shape.asInstanceOf[js.Any]).asInstanceOf[ndarray[Double]]
+  @scala.inline
+  def malloc(shape: js.Array[Double], dtype: String): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("malloc")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
   
-  @JSImport("ndarray-scratch", "zeros")
-  @js.native
-  def zeros(shape: js.Array[Double]): ndarray[Double] = js.native
-  @JSImport("ndarray-scratch", "zeros")
-  @js.native
-  def zeros(shape: js.Array[Double], dtype: String): ndarray[Double] = js.native
+  @scala.inline
+  def ones(shape: js.Array[Double]): ndarray[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any]).asInstanceOf[ndarray[Double]]
+  @scala.inline
+  def ones(shape: js.Array[Double], dtype: String): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("ones")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
+  
+  @scala.inline
+  def zeros(shape: js.Array[Double]): ndarray[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any]).asInstanceOf[ndarray[Double]]
+  @scala.inline
+  def zeros(shape: js.Array[Double], dtype: String): ndarray[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("zeros")(shape.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[ndarray[Double]]
 }

@@ -3,67 +3,65 @@ package typings.googleapis.anon
 import typings.googleapis.booksV1Mod.booksV1.SchemaVolumeseriesinfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowAnonLogging extends StObject {
   
-  var allowAnonLogging: js.UndefOr[Boolean] = js.native
+  var allowAnonLogging: js.UndefOr[Boolean] = js.undefined
   
-  var authors: js.UndefOr[js.Array[String]] = js.native
+  var authors: js.UndefOr[js.Array[String]] = js.undefined
   
-  var averageRating: js.UndefOr[Double] = js.native
+  var averageRating: js.UndefOr[Double] = js.undefined
   
-  var canonicalVolumeLink: js.UndefOr[String] = js.native
+  var canonicalVolumeLink: js.UndefOr[String] = js.undefined
   
-  var categories: js.UndefOr[js.Array[String]] = js.native
+  var categories: js.UndefOr[js.Array[String]] = js.undefined
   
-  var comicsContent: js.UndefOr[Boolean] = js.native
+  var comicsContent: js.UndefOr[Boolean] = js.undefined
   
-  var contentVersion: js.UndefOr[String] = js.native
+  var contentVersion: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var dimensions: js.UndefOr[Thickness] = js.native
+  var dimensions: js.UndefOr[Thickness] = js.undefined
   
-  var imageLinks: js.UndefOr[ExtraLarge] = js.native
+  var imageLinks: js.UndefOr[ExtraLarge] = js.undefined
   
-  var industryIdentifiers: js.UndefOr[js.Array[Identifier]] = js.native
+  var industryIdentifiers: js.UndefOr[js.Array[Identifier]] = js.undefined
   
-  var infoLink: js.UndefOr[String] = js.native
+  var infoLink: js.UndefOr[String] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var mainCategory: js.UndefOr[String] = js.native
+  var mainCategory: js.UndefOr[String] = js.undefined
   
-  var maturityRating: js.UndefOr[String] = js.native
+  var maturityRating: js.UndefOr[String] = js.undefined
   
-  var pageCount: js.UndefOr[Double] = js.native
+  var pageCount: js.UndefOr[Double] = js.undefined
   
-  var panelizationSummary: js.UndefOr[ContainsEpubBubbles] = js.native
+  var panelizationSummary: js.UndefOr[ContainsEpubBubbles] = js.undefined
   
-  var previewLink: js.UndefOr[String] = js.native
+  var previewLink: js.UndefOr[String] = js.undefined
   
-  var printType: js.UndefOr[String] = js.native
+  var printType: js.UndefOr[String] = js.undefined
   
-  var printedPageCount: js.UndefOr[Double] = js.native
+  var printedPageCount: js.UndefOr[Double] = js.undefined
   
-  var publishedDate: js.UndefOr[String] = js.native
+  var publishedDate: js.UndefOr[String] = js.undefined
   
-  var publisher: js.UndefOr[String] = js.native
+  var publisher: js.UndefOr[String] = js.undefined
   
-  var ratingsCount: js.UndefOr[Double] = js.native
+  var ratingsCount: js.UndefOr[Double] = js.undefined
   
-  var readingModes: js.UndefOr[js.Any] = js.native
+  var readingModes: js.UndefOr[js.Any] = js.undefined
   
-  var samplePageCount: js.UndefOr[Double] = js.native
+  var samplePageCount: js.UndefOr[Double] = js.undefined
   
-  var seriesInfo: js.UndefOr[SchemaVolumeseriesinfo] = js.native
+  var seriesInfo: js.UndefOr[SchemaVolumeseriesinfo] = js.undefined
   
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object AllowAnonLogging {
   

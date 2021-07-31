@@ -7,14 +7,16 @@ import typings.storybookApi.storybookApiStrings.control
 import typings.storybookApi.storybookApiStrings.meta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shortcutsMod {
   
-  @JSImport("@storybook/api/dist/modules/shortcuts", "controlOrMetaKey")
+  @JSImport("@storybook/api/dist/modules/shortcuts", JSImport.Namespace)
   @js.native
-  def controlOrMetaKey(): meta | control = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def controlOrMetaKey(): meta | control = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaKey")().asInstanceOf[meta | control]
   
   @JSImport("@storybook/api/dist/modules/shortcuts", "defaultShortcuts")
   @js.native
@@ -24,13 +26,11 @@ object shortcutsMod {
   @js.native
   val init: ModuleFn = js.native
   
-  @JSImport("@storybook/api/dist/modules/shortcuts", "isMacLike")
-  @js.native
-  def isMacLike(): Boolean = js.native
+  @scala.inline
+  def isMacLike(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacLike")().asInstanceOf[Boolean]
   
-  @JSImport("@storybook/api/dist/modules/shortcuts", "keys")
-  @js.native
-  def keys[O](o: O): js.Array[/* keyof O */ String] = js.native
+  @scala.inline
+  def keys[O](o: O): js.Array[/* keyof O */ String] = ^.asInstanceOf[js.Dynamic].applyDynamic("keys")(o.asInstanceOf[js.Any]).asInstanceOf[js.Array[/* keyof O */ String]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.storybookApi.storybookApiStrings.fullScreen
@@ -55,7 +55,9 @@ object shortcutsMod {
   trait Action extends StObject
   
   @js.native
-  trait Event extends KeyboardEvent {
+  trait Event
+    extends StObject
+       with KeyboardEvent {
     
     @JSName("target")
     var target_Event: AddEventListener = js.native
@@ -63,44 +65,43 @@ object shortcutsMod {
   
   type KeyCollection = js.Array[String]
   
-  @js.native
   trait Shortcuts extends StObject {
     
-    var aboutPage: KeyCollection = js.native
+    var aboutPage: KeyCollection
     
-    var collapseAll: KeyCollection = js.native
+    var collapseAll: KeyCollection
     
-    var escape: KeyCollection = js.native
+    var escape: KeyCollection
     
-    var expandAll: KeyCollection = js.native
+    var expandAll: KeyCollection
     
-    var focusIframe: KeyCollection = js.native
+    var focusIframe: KeyCollection
     
-    var focusNav: KeyCollection = js.native
+    var focusNav: KeyCollection
     
-    var focusPanel: KeyCollection = js.native
+    var focusPanel: KeyCollection
     
-    var fullScreen: KeyCollection = js.native
+    var fullScreen: KeyCollection
     
-    var nextComponent: KeyCollection = js.native
+    var nextComponent: KeyCollection
     
-    var nextStory: KeyCollection = js.native
+    var nextStory: KeyCollection
     
-    var panelPosition: KeyCollection = js.native
+    var panelPosition: KeyCollection
     
-    var prevComponent: KeyCollection = js.native
+    var prevComponent: KeyCollection
     
-    var prevStory: KeyCollection = js.native
+    var prevStory: KeyCollection
     
-    var search: KeyCollection = js.native
+    var search: KeyCollection
     
-    var shortcutsPage: KeyCollection = js.native
+    var shortcutsPage: KeyCollection
     
-    var toggleNav: KeyCollection = js.native
+    var toggleNav: KeyCollection
     
-    var togglePanel: KeyCollection = js.native
+    var togglePanel: KeyCollection
     
-    var toolbar: KeyCollection = js.native
+    var toolbar: KeyCollection
   }
   object Shortcuts {
     
@@ -242,22 +243,21 @@ object shortcutsMod {
     }
   }
   
-  @js.native
   trait SubAPI extends StObject {
     
-    def getShortcutKeys(): Shortcuts = js.native
+    def getShortcutKeys(): Shortcuts
     
-    def handleKeydownEvent(event: Event): Unit = js.native
+    def handleKeydownEvent(event: Event): Unit
     
-    def handleShortcutFeature(feature: Action): Unit = js.native
+    def handleShortcutFeature(feature: Action): Unit
     
-    def restoreAllDefaultShortcuts(): js.Promise[Shortcuts] = js.native
+    def restoreAllDefaultShortcuts(): js.Promise[Shortcuts]
     
-    def restoreDefaultShortcut(action: Action): js.Promise[KeyCollection] = js.native
+    def restoreDefaultShortcut(action: Action): js.Promise[KeyCollection]
     
-    def setShortcut(action: Action, value: KeyCollection): js.Promise[KeyCollection] = js.native
+    def setShortcut(action: Action, value: KeyCollection): js.Promise[KeyCollection]
     
-    def setShortcuts(shortcuts: Shortcuts): js.Promise[Shortcuts] = js.native
+    def setShortcuts(shortcuts: Shortcuts): js.Promise[Shortcuts]
   }
   object SubAPI {
     
@@ -301,10 +301,9 @@ object shortcutsMod {
     }
   }
   
-  @js.native
   trait SubState extends StObject {
     
-    var shortcuts: Shortcuts = js.native
+    var shortcuts: Shortcuts
   }
   object SubState {
     

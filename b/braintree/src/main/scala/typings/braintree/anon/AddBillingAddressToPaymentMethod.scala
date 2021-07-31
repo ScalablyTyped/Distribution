@@ -2,35 +2,33 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddBillingAddressToPaymentMethod extends StObject {
   
-  var addBillingAddressToPaymentMethod: js.UndefOr[Boolean] = js.native
+  var addBillingAddressToPaymentMethod: js.UndefOr[Boolean] = js.undefined
   
-  var holdInEscrow: js.UndefOr[Boolean] = js.native
+  var holdInEscrow: js.UndefOr[Boolean] = js.undefined
   
-  var paypal: js.UndefOr[CustomField] = js.native
+  var paypal: js.UndefOr[CustomField] = js.undefined
   
-  var skipAdvancedFraudChecking: js.UndefOr[Boolean] = js.native
+  var skipAdvancedFraudChecking: js.UndefOr[Boolean] = js.undefined
   
-  var skipAvs: js.UndefOr[Boolean] = js.native
+  var skipAvs: js.UndefOr[Boolean] = js.undefined
   
-  var skipCvv: js.UndefOr[Boolean] = js.native
+  var skipCvv: js.UndefOr[Boolean] = js.undefined
   
-  var storeInVault: js.UndefOr[Boolean] = js.native
+  var storeInVault: js.UndefOr[Boolean] = js.undefined
   
-  var storeInVaultOnSuccess: js.UndefOr[Boolean] = js.native
+  var storeInVaultOnSuccess: js.UndefOr[Boolean] = js.undefined
   
-  var storeShippingAddressInVault: js.UndefOr[Boolean] = js.native
+  var storeShippingAddressInVault: js.UndefOr[Boolean] = js.undefined
   
-  var submitForSettlement: js.UndefOr[Boolean] = js.native
+  var submitForSettlement: js.UndefOr[Boolean] = js.undefined
   
-  var threeDSecure: js.UndefOr[Required] = js.native
+  var threeDSecure: js.UndefOr[Required] = js.undefined
   
-  var venmo: js.UndefOr[ProfileId] = js.native
+  var venmo: js.UndefOr[ProfileId] = js.undefined
 }
 object AddBillingAddressToPaymentMethod {
   

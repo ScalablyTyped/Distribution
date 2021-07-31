@@ -4,31 +4,28 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-postcss", JSImport.Namespace)
-  @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-postcss", JSImport.Namespace)
-  @js.native
-  def apply(callback: js.Function1[/* file */ File, typings.gulpPostcss.anon.Options]): ReadWriteStream = js.native
-  @JSImport("gulp-postcss", JSImport.Namespace)
-  @js.native
-  def apply(plugins: js.UndefOr[scala.Nothing], options: Options): ReadWriteStream = js.native
-  @JSImport("gulp-postcss", JSImport.Namespace)
-  @js.native
-  def apply(plugins: js.Array[_]): ReadWriteStream = js.native
-  @JSImport("gulp-postcss", JSImport.Namespace)
-  @js.native
-  def apply(plugins: js.Array[_], options: Options): ReadWriteStream = js.native
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(callback: js.Function1[/* file */ File, typings.gulpPostcss.anon.Options]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(callback.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(plugins: js.Array[js.Any]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(plugins: js.Array[js.Any], options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(plugins: Unit, options: Options): ReadWriteStream = (^.asInstanceOf[js.Dynamic].apply(plugins.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadWriteStream]
   
+  @JSImport("gulp-postcss", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var parser: js.UndefOr[js.Any] = js.native
+    var parser: js.UndefOr[js.Any] = js.undefined
   }
   object Options {
     

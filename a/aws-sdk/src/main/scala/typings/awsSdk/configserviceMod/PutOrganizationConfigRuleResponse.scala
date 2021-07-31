@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutOrganizationConfigRuleResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an organization config rule.
     */
-  var OrganizationConfigRuleArn: js.UndefOr[StringWithCharLimit256] = js.native
+  var OrganizationConfigRuleArn: js.UndefOr[StringWithCharLimit256] = js.undefined
 }
 object PutOrganizationConfigRuleResponse {
   

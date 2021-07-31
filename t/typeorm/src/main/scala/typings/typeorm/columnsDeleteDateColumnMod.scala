@@ -4,15 +4,16 @@ import typings.std.PropertyDecorator
 import typings.typeorm.optionsColumnOptionsMod.ColumnOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnsDeleteDateColumnMod {
   
-  @JSImport("typeorm/decorator/columns/DeleteDateColumn", "DeleteDateColumn")
+  @JSImport("typeorm/decorator/columns/DeleteDateColumn", JSImport.Namespace)
   @js.native
-  def DeleteDateColumn(): PropertyDecorator = js.native
-  @JSImport("typeorm/decorator/columns/DeleteDateColumn", "DeleteDateColumn")
-  @js.native
-  def DeleteDateColumn(options: ColumnOptions): PropertyDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def DeleteDateColumn(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteDateColumn")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def DeleteDateColumn(options: ColumnOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("DeleteDateColumn")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
 }

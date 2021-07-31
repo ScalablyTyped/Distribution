@@ -2,41 +2,39 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpotFleetRequestLaunchTemplateConfigOverride extends StObject {
   
   /**
     * The availability zone in which to place the request.
     */
-  var availabilityZone: js.UndefOr[String] = js.native
+  var availabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The type of instance to request.
     */
-  var instanceType: js.UndefOr[String] = js.native
+  var instanceType: js.UndefOr[String] = js.undefined
   
   /**
     * The priority for the launch template override. The lower the number, the higher the priority. If no number is set, the launch template override has the lowest priority.
     */
-  var priority: Double = js.native
+  var priority: Double
   
   /**
     * The maximum spot bid for this override request.
     */
-  var spotPrice: String = js.native
+  var spotPrice: String
   
   /**
     * The subnet in which to launch the requested instance.
     */
-  var subnetId: String = js.native
+  var subnetId: String
   
   /**
     * The capacity added to the fleet by a fulfilled request.
     */
-  var weightedCapacity: Double = js.native
+  var weightedCapacity: Double
 }
 object SpotFleetRequestLaunchTemplateConfigOverride {
   

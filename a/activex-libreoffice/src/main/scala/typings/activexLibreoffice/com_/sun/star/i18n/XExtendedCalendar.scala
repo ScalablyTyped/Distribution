@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * calendar.
   * @since OOo 1.1.2
   */
-@js.native
-trait XExtendedCalendar extends XCalendar {
+trait XExtendedCalendar
+  extends StObject
+     with XCalendar {
   
   /**
     * Returns a string (number or name to display) matching the given code constant.
@@ -27,7 +27,7 @@ trait XExtendedCalendar extends XCalendar {
     * @param nCalendarDisplayCode One of {@link CalendarDisplayCode}
     * @param nNativeNumberMode One of {@link NativeNumberMode} . ;  This argument designates the basic transliteration mode as if specified for the year repre
     */
-  def getDisplayString(nCalendarDisplayCode: Double, nNativeNumberMode: Double): String = js.native
+  def getDisplayString(nCalendarDisplayCode: Double, nNativeNumberMode: Double): String
 }
 object XExtendedCalendar {
   

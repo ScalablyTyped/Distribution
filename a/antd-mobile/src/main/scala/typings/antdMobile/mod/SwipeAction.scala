@@ -3,7 +3,6 @@ package typings.antdMobile.mod
 import typings.antdMobile.swipeActionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "SwipeAction")
@@ -36,13 +35,11 @@ object SwipeAction {
     @scala.inline
     def left_=(x: js.Array[scala.Nothing]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("left")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd-mobile", "SwipeAction.defaultProps.onClose")
-    @js.native
-    def onClose(): Unit = js.native
+    @scala.inline
+    def onClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onClose")().asInstanceOf[Unit]
     
-    @JSImport("antd-mobile", "SwipeAction.defaultProps.onOpen")
-    @js.native
-    def onOpen(): Unit = js.native
+    @scala.inline
+    def onOpen(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onOpen")().asInstanceOf[Unit]
     
     @JSImport("antd-mobile", "SwipeAction.defaultProps.prefixCls")
     @js.native

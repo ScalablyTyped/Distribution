@@ -2,23 +2,23 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object plugin {
   
-  @js.native
-  trait IBufferedList extends IBase {
+  trait IBufferedList
+    extends StObject
+       with IBase {
     
     /** [Method] Returns the value of list
       * @returns Object
       */
-    var getList: js.UndefOr[js.Function0[_]] = js.native
+    var getList: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of list
       * @param list Object The new value.
       */
-    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[js.Any], Unit]] = js.native
+    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IBufferedList {
     
@@ -32,7 +32,7 @@ object plugin {
     implicit class IBufferedListMutableBuilder[Self <: IBufferedList] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetList(value: () => _): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
+      def setGetList(value: () => js.Any): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetListUndefined: Self = StObject.set(x, "getList", js.undefined)
@@ -45,47 +45,48 @@ object plugin {
     }
   }
   
-  @js.native
-  trait IListPaging extends IComponent {
+  trait IListPaging
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (Boolean) */
-    var autoPaging: js.UndefOr[Boolean] = js.native
+    var autoPaging: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of autoPaging
       * @returns Boolean
       */
-    var getAutoPaging: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoPaging: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of loadMoreText
       * @returns String
       */
-    var getLoadMoreText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getLoadMoreText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of noMoreRecordsText
       * @returns String
       */
-    var getNoMoreRecordsText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getNoMoreRecordsText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (String) */
-    var loadMoreText: js.UndefOr[java.lang.String] = js.native
+    var loadMoreText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var noMoreRecordsText: js.UndefOr[java.lang.String] = js.native
+    var noMoreRecordsText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets the value of autoPaging
       * @param autoPaging Boolean The new value.
       */
-    var setAutoPaging: js.UndefOr[js.Function1[/* autoPaging */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAutoPaging: js.UndefOr[js.Function1[/* autoPaging */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of loadMoreText
       * @param loadMoreText String The new value.
       */
-    var setLoadMoreText: js.UndefOr[js.Function1[/* loadMoreText */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setLoadMoreText: js.UndefOr[js.Function1[/* loadMoreText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of noMoreRecordsText
       * @param noMoreRecordsText String The new value.
       */
-    var setNoMoreRecordsText: js.UndefOr[js.Function1[/* noMoreRecordsText */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setNoMoreRecordsText: js.UndefOr[js.Function1[/* noMoreRecordsText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   }
   object IListPaging {
     
@@ -154,197 +155,198 @@ object plugin {
     }
   }
   
-  @js.native
-  trait IPullRefresh extends IComponent {
+  trait IPullRefresh
+    extends StObject
+       with IComponent {
     
     /** [Config Option] (Boolean) */
-    var autoSnapBack: js.UndefOr[Boolean] = js.native
+    var autoSnapBack: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the value of autoSnapBack
       * @returns Boolean
       */
-    var getAutoSnapBack: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getAutoSnapBack: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of lastUpdatedDateFormat
       * @returns String
       */
-    var getLastUpdatedDateFormat: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getLastUpdatedDateFormat: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of lastUpdatedText
       * @returns String
       */
-    var getLastUpdatedText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getLastUpdatedText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of list
       * @returns Ext.dataview.List
       */
-    var getList: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dataview.IList]] = js.native
+    var getList: js.UndefOr[js.Function0[typings.senchaTouch.Ext.dataview.IList]] = js.undefined
     
     /** [Method] Returns the value of loadedText
       * @returns String
       */
-    var getLoadedText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getLoadedText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of loadingText
       * @returns String
       */
-    var getLoadingText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getLoadingText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of overpullSnapBackDuration
       * @returns Number
       */
-    var getOverpullSnapBackDuration: js.UndefOr[js.Function0[Double]] = js.native
+    var getOverpullSnapBackDuration: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of pullText
       * @returns String
       */
-    var getPullText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getPullText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of pullTpl
       * @returns Ext.XTemplate/String/Array
       */
-    var getPullTpl: js.UndefOr[js.Function0[_]] = js.native
+    var getPullTpl: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of releaseText
       * @returns String
       */
-    var getReleaseText: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getReleaseText: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of scrollerAutoRefresh
       * @returns Boolean
       */
-    var getScrollerAutoRefresh: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getScrollerAutoRefresh: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of snappingAnimationDuration
       * @returns Number
       */
-    var getSnappingAnimationDuration: js.UndefOr[js.Function0[Double]] = js.native
+    var getSnappingAnimationDuration: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of translatable
       * @returns Boolean
       */
-    var getTranslatable: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getTranslatable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (String) */
-    var lastUpdatedDateFormat: js.UndefOr[java.lang.String] = js.native
+    var lastUpdatedDateFormat: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var lastUpdatedText: js.UndefOr[java.lang.String] = js.native
+    var lastUpdatedText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.dataview.List) */
-    var list: js.UndefOr[typings.senchaTouch.Ext.dataview.IList] = js.native
+    var list: js.UndefOr[typings.senchaTouch.Ext.dataview.IList] = js.undefined
     
     /** [Config Option] (String) */
-    var loadedText: js.UndefOr[java.lang.String] = js.native
+    var loadedText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var loadingText: js.UndefOr[java.lang.String] = js.native
+    var loadingText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Number) */
-    var overpullSnapBackDuration: js.UndefOr[Double] = js.native
+    var overpullSnapBackDuration: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (String) */
-    var pullRefreshText: js.UndefOr[java.lang.String] = js.native
+    var pullRefreshText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var pullReleaseText: js.UndefOr[java.lang.String] = js.native
+    var pullReleaseText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var pullText: js.UndefOr[java.lang.String] = js.native
+    var pullText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.XTemplate/String/Array) */
-    var pullTpl: js.UndefOr[js.Any] = js.native
+    var pullTpl: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var releaseText: js.UndefOr[java.lang.String] = js.native
+    var releaseText: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var scrollerAutoRefresh: js.UndefOr[Boolean] = js.native
+    var scrollerAutoRefresh: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of autoSnapBack
       * @param autoSnapBack Boolean The new value.
       */
-    var setAutoSnapBack: js.UndefOr[js.Function1[/* autoSnapBack */ js.UndefOr[Boolean], Unit]] = js.native
+    var setAutoSnapBack: js.UndefOr[js.Function1[/* autoSnapBack */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of lastUpdatedDateFormat
       * @param lastUpdatedDateFormat String The new value.
       */
-    var setLastUpdatedDateFormat: js.UndefOr[js.Function1[/* lastUpdatedDateFormat */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setLastUpdatedDateFormat: js.UndefOr[js.Function1[/* lastUpdatedDateFormat */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of lastUpdatedText
       * @param lastUpdatedText String The new value.
       */
-    var setLastUpdatedText: js.UndefOr[js.Function1[/* lastUpdatedText */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setLastUpdatedText: js.UndefOr[js.Function1[/* lastUpdatedText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of list
       * @param list Ext.dataview.List The new value.
       */
     var setList: js.UndefOr[
         js.Function1[/* list */ js.UndefOr[typings.senchaTouch.Ext.dataview.IList], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of loadedText
       * @param loadedText String The new value.
       */
-    var setLoadedText: js.UndefOr[js.Function1[/* loadedText */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setLoadedText: js.UndefOr[js.Function1[/* loadedText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of loadingText
       * @param loadingText String The new value.
       */
-    var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setLoadingText: js.UndefOr[js.Function1[/* loadingText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of overpullSnapBackDuration
       * @param overpullSnapBackDuration Number The new value.
       */
-    var setOverpullSnapBackDuration: js.UndefOr[js.Function1[/* overpullSnapBackDuration */ js.UndefOr[Double], Unit]] = js.native
+    var setOverpullSnapBackDuration: js.UndefOr[js.Function1[/* overpullSnapBackDuration */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Updates the PullRefreshText
       * @param text String
       */
-    var setPullRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setPullRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of pullText
       * @param pullText String The new value.
       */
-    var setPullText: js.UndefOr[js.Function1[/* pullText */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setPullText: js.UndefOr[js.Function1[/* pullText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of pullTpl
       * @param pullTpl Ext.XTemplate/String/Array The new value.
       */
-    var setPullTpl: js.UndefOr[js.Function1[/* pullTpl */ js.UndefOr[js.Any], Unit]] = js.native
+    var setPullTpl: js.UndefOr[js.Function1[/* pullTpl */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Updates the ReleaseRefreshText
       * @param text String
       */
-    var setReleaseRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setReleaseRefreshText: js.UndefOr[js.Function1[/* text */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of releaseText
       * @param releaseText String The new value.
       */
-    var setReleaseText: js.UndefOr[js.Function1[/* releaseText */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setReleaseText: js.UndefOr[js.Function1[/* releaseText */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of scrollerAutoRefresh
       * @param scrollerAutoRefresh Boolean The new value.
       */
-    var setScrollerAutoRefresh: js.UndefOr[js.Function1[/* scrollerAutoRefresh */ js.UndefOr[Boolean], Unit]] = js.native
+    var setScrollerAutoRefresh: js.UndefOr[js.Function1[/* scrollerAutoRefresh */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of snappingAnimationDuration
       * @param snappingAnimationDuration Number The new value.
       */
-    var setSnappingAnimationDuration: js.UndefOr[js.Function1[/* snappingAnimationDuration */ js.UndefOr[Double], Unit]] = js.native
+    var setSnappingAnimationDuration: js.UndefOr[js.Function1[/* snappingAnimationDuration */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of translatable
       * @param translatable Boolean The new value.
       */
-    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Boolean], Unit]] = js.native
+    var setTranslatable: js.UndefOr[js.Function1[/* translatable */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Snaps the List back to the top after a pullrefresh is complete
       * @param force Boolean Force the snapback to occur regardless of state {optional}
       */
-    var snapBack: js.UndefOr[js.Function1[/* force */ js.UndefOr[Boolean], Unit]] = js.native
+    var snapBack: js.UndefOr[js.Function1[/* force */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (Number) */
-    var snappingAnimationDuration: js.UndefOr[Double] = js.native
+    var snappingAnimationDuration: js.UndefOr[Double] = js.undefined
   }
   object IPullRefresh {
     
@@ -412,7 +414,7 @@ object plugin {
       def setGetPullTextUndefined: Self = StObject.set(x, "getPullText", js.undefined)
       
       @scala.inline
-      def setGetPullTpl(value: () => _): Self = StObject.set(x, "getPullTpl", js.Any.fromFunction0(value))
+      def setGetPullTpl(value: () => js.Any): Self = StObject.set(x, "getPullTpl", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetPullTplUndefined: Self = StObject.set(x, "getPullTpl", js.undefined)
@@ -617,28 +619,29 @@ object plugin {
     }
   }
   
-  @js.native
-  trait ISortableList extends IComponent {
+  trait ISortableList
+    extends StObject
+       with IComponent {
     
     /** [Method] Returns the value of handleSelector
       * @returns String
       */
-    var getHandleSelector: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getHandleSelector: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of list
       * @returns Object
       */
-    var getList: js.UndefOr[js.Function0[_]] = js.native
+    var getList: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of handleSelector
       * @param handleSelector String The new value.
       */
-    var setHandleSelector: js.UndefOr[js.Function1[/* handleSelector */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setHandleSelector: js.UndefOr[js.Function1[/* handleSelector */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of list
       * @param list Object The new value.
       */
-    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[js.Any], Unit]] = js.native
+    var setList: js.UndefOr[js.Function1[/* list */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object ISortableList {
     
@@ -658,7 +661,7 @@ object plugin {
       def setGetHandleSelectorUndefined: Self = StObject.set(x, "getHandleSelector", js.undefined)
       
       @scala.inline
-      def setGetList(value: () => _): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
+      def setGetList(value: () => js.Any): Self = StObject.set(x, "getList", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetListUndefined: Self = StObject.set(x, "getList", js.undefined)

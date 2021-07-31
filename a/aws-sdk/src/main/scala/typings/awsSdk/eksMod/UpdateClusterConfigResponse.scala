@@ -2,13 +2,11 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateClusterConfigResponse extends StObject {
   
-  var update: js.UndefOr[Update] = js.native
+  var update: js.UndefOr[Update] = js.undefined
 }
 object UpdateClusterConfigResponse {
   

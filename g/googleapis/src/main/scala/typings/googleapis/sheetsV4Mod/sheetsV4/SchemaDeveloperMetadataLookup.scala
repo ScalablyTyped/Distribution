@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * matches the intersection of all the specified fields; any field or
   * combination of fields may be specified.
   */
-@js.native
 trait SchemaDeveloperMetadataLookup extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait SchemaDeveloperMetadataLookup extends StObject {
     * INTERSECTING. If this field is specified, a metadataLocation must also be
     * specified.
     */
-  var locationMatchingStrategy: js.UndefOr[String] = js.native
+  var locationMatchingStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * Limits the selected developer metadata to those entries which are
@@ -42,39 +40,39 @@ trait SchemaDeveloperMetadataLookup extends StObject {
     * field also must be left unspecified when the locationMatchingStrategy is
     * specified as EXACT.
     */
-  var locationType: js.UndefOr[String] = js.native
+  var locationType: js.UndefOr[String] = js.undefined
   
   /**
     * Limits the selected developer metadata to that which has a matching
     * DeveloperMetadata.metadata_id.
     */
-  var metadataId: js.UndefOr[Double] = js.native
+  var metadataId: js.UndefOr[Double] = js.undefined
   
   /**
     * Limits the selected developer metadata to that which has a matching
     * DeveloperMetadata.metadata_key.
     */
-  var metadataKey: js.UndefOr[String] = js.native
+  var metadataKey: js.UndefOr[String] = js.undefined
   
   /**
     * Limits the selected developer metadata to those entries associated with
     * the specified location.  This field either matches exact locations or all
     * intersecting locations according the specified locationMatchingStrategy.
     */
-  var metadataLocation: js.UndefOr[SchemaDeveloperMetadataLocation] = js.native
+  var metadataLocation: js.UndefOr[SchemaDeveloperMetadataLocation] = js.undefined
   
   /**
     * Limits the selected developer metadata to that which has a matching
     * DeveloperMetadata.metadata_value.
     */
-  var metadataValue: js.UndefOr[String] = js.native
+  var metadataValue: js.UndefOr[String] = js.undefined
   
   /**
     * Limits the selected developer metadata to that which has a matching
     * DeveloperMetadata.visibility.  If left unspecified, all developer
     * metadata visibile to the requesting project is considered.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaDeveloperMetadataLookup {
   

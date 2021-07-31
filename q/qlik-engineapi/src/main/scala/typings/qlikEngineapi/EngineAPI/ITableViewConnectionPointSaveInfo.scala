@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * TableViewConnectionPointSaveInfo...
   */
-@js.native
 trait ITableViewConnectionPointSaveInfo extends StObject {
   
   /**
     * List of the fields in the table.
     */
-  var qFields: js.Array[String] = js.native
+  var qFields: js.Array[String]
   
   /**
     * Information about the position of the connection point.
     */
-  var qPos: IPoint = js.native
+  var qPos: IPoint
 }
 object ITableViewConnectionPointSaveInfo {
   

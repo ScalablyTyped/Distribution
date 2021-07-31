@@ -2,16 +2,14 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthenticationSessionsChangeEvent extends StObject {
   
   /**
     * The [authenticationProvider](#AuthenticationProvider) that has had its sessions change.
     */
-  val provider: AuthenticationProviderInformation = js.native
+  val provider: AuthenticationProviderInformation
 }
 object AuthenticationSessionsChangeEvent {
   

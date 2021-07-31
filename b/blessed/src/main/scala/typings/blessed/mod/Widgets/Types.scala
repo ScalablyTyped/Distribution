@@ -8,33 +8,31 @@ import typings.blessed.blessedStrings.line
 import typings.blessed.blessedStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Types {
   
-  @js.native
   trait Cursor extends StObject {
     
     /**
       * Have blessed draw a custom cursor and hide the terminal cursor (experimental).
       */
-    var artificial: Boolean = js.native
+    var artificial: Boolean
     
     /**
       * Whether the cursor blinks.
       */
-    var blink: Boolean = js.native
+    var blink: Boolean
     
     /**
       * Color of the color. Accepts any valid color value (null is default).
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * Shape of the cursor. Can be: block, underline, or line.
       */
-    var shape: Boolean = js.native
+    var shape: Boolean
   }
   object Cursor {
     
@@ -61,12 +59,11 @@ object Types {
     }
   }
   
-  @js.native
   trait ListbarCommand extends StObject {
     
-    def callback(): Unit = js.native
+    def callback(): Unit
     
-    var key: String = js.native
+    var key: String
   }
   object ListbarCommand {
     
@@ -105,32 +102,31 @@ object Types {
     def right: typings.blessed.blessedStrings.right = "right".asInstanceOf[typings.blessed.blessedStrings.right]
   }
   
-  @js.native
   trait TBorder extends StObject {
     
     /**
       * Border foreground and background, must be numbers (-1 for default).
       */
-    var bg: js.UndefOr[Double] = js.native
+    var bg: js.UndefOr[Double] = js.undefined
     
     /**
       * Border attributes.
       */
-    var bold: js.UndefOr[String] = js.native
+    var bold: js.UndefOr[String] = js.undefined
     
     /**
       * Character to use if bg type, default is space.
       */
-    var ch: js.UndefOr[String] = js.native
+    var ch: js.UndefOr[String] = js.undefined
     
-    var fg: js.UndefOr[Double] = js.native
+    var fg: js.UndefOr[Double] = js.undefined
     
     /**
       * Type of border (line or bg). bg by default.
       */
-    var `type`: js.UndefOr[line | bg] = js.native
+    var `type`: js.UndefOr[line | bg] = js.undefined
     
-    var underline: js.UndefOr[String] = js.native
+    var underline: js.UndefOr[String] = js.undefined
   }
   object TBorder {
     
@@ -181,28 +177,27 @@ object Types {
     }
   }
   
-  @js.native
   trait TCursor extends StObject {
     
     /**
       * Have blessed draw a custom cursor and hide the terminal cursor (experimental).
       */
-    var artificial: Boolean = js.native
+    var artificial: Boolean
     
     /**
       * Whether the cursor blinks.
       */
-    var blink: Boolean = js.native
+    var blink: Boolean
     
     /**
       * Color of the color. Accepts any valid color value (null is default).
       */
-    var color: String = js.native
+    var color: String
     
     /**
       * Shape of the cursor. Can be: block, underline, or line.
       */
-    var shape: block | underline | line = js.native
+    var shape: block | underline | line
   }
   object TCursor {
     
@@ -229,28 +224,27 @@ object Types {
     }
   }
   
-  @js.native
   trait TImage extends StObject {
     
     /**
       * Image bitmap.
       */
-    var bmp: js.Any = js.native
+    var bmp: js.Any
     
     /**
       * Image cellmap (bitmap scaled down to cell size).
       */
-    var cellmap: js.Any = js.native
+    var cellmap: js.Any
     
     /**
       * Pixel height.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Pixel width.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object TImage {
     
@@ -297,40 +291,39 @@ object Types {
   
   type TPosition = String | Double
   
-  @js.native
   trait TStyle extends StObject {
     
-    var bg: js.UndefOr[String] = js.native
+    var bg: js.UndefOr[String] = js.undefined
     
-    var blink: js.UndefOr[Boolean] = js.native
+    var blink: js.UndefOr[Boolean] = js.undefined
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var border: js.UndefOr[line | bg | TBorder] = js.native
+    var border: js.UndefOr[line | bg | TBorder] = js.undefined
     
-    var ch: js.UndefOr[String] = js.native
+    var ch: js.UndefOr[String] = js.undefined
     
-    var fg: js.UndefOr[String] = js.native
+    var fg: js.UndefOr[String] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var hover: js.UndefOr[Boolean] = js.native
+    var hover: js.UndefOr[Boolean] = js.undefined
     
-    var inverse: js.UndefOr[Boolean] = js.native
+    var inverse: js.UndefOr[Boolean] = js.undefined
     
-    var invisible: js.UndefOr[Boolean] = js.native
+    var invisible: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var scrollbar: js.UndefOr[Bg] = js.native
+    var scrollbar: js.UndefOr[Bg] = js.undefined
     
-    var track: js.UndefOr[Bg] = js.native
+    var track: js.UndefOr[Bg] = js.undefined
     
-    var transparent: js.UndefOr[Boolean] = js.native
+    var transparent: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var underline: js.UndefOr[Boolean] = js.native
+    var underline: js.UndefOr[Boolean] = js.undefined
   }
   object TStyle {
     

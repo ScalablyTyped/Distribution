@@ -8,10 +8,13 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabTitleMod {
+  
+  @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabTitle", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabTitle", "TabTitle")
   @js.native
@@ -36,25 +39,24 @@ object tabTitleMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabTitle", "generateTabPanelId")
-  @js.native
-  def generateTabPanelId(parentId: TabId, tabId: TabId): String = js.native
+  @scala.inline
+  def generateTabPanelId(parentId: TabId, tabId: TabId): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateTabPanelId")(parentId.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/core/lib/esm/components/tabs/tabTitle", "generateTabTitleId")
-  @js.native
-  def generateTabTitleId(parentId: TabId, tabId: TabId): String = js.native
+  @scala.inline
+  def generateTabTitleId(parentId: TabId, tabId: TabId): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateTabTitleId")(parentId.asInstanceOf[js.Any], tabId.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
-  trait ITabTitleProps extends ITabProps {
+  trait ITabTitleProps
+    extends StObject
+       with ITabProps {
     
     /** Handler invoked when this tab is clicked. */
-    def onClick(id: TabId, event: MouseEvent[HTMLElement, NativeMouseEvent]): Unit = js.native
+    def onClick(id: TabId, event: MouseEvent[HTMLElement, NativeMouseEvent]): Unit
     
     /** ID of the parent `Tabs` to which this tab belongs. Used to generate ID for ARIA attributes. */
-    var parentId: TabId = js.native
+    var parentId: TabId
     
     /** Whether the tab is currently selected. */
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object ITabTitleProps {
     

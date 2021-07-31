@@ -4,15 +4,15 @@ import typings.opentelemetryApi.eventMod.Event
 import typings.opentelemetryApi.timeMod.HrTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object timedEventMod {
   
-  @js.native
-  trait TimedEvent extends Event {
+  trait TimedEvent
+    extends StObject
+       with Event {
     
-    var time: HrTime = js.native
+    var time: HrTime
   }
   object TimedEvent {
     

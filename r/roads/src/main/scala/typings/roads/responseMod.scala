@@ -6,14 +6,19 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responseMod {
   
+  @JSImport("roads/types/core/response", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("roads/types/core/response", JSImport.Default)
   @js.native
-  class default protected () extends Response {
+  class default protected ()
+    extends StObject
+       with Response {
     /**
       * Creates a new Response object.
       *
@@ -23,22 +28,29 @@ object responseMod {
       */
     def this(body: String) = this()
     def this(body: String, status: Double) = this()
-    def this(body: String, status: js.UndefOr[scala.Nothing], headers: js.Object) = this()
     def this(body: String, status: Double, headers: js.Object) = this()
-  }
-  
-  @JSImport("roads/types/core/response", "wrap")
-  @js.native
-  def wrap(promise: js.Promise[_]): js.Promise[_] = js.native
-  
-  @js.native
-  trait Response extends StObject {
+    def this(body: String, status: Unit, headers: js.Object) = this()
     
+    /* CompleteClass */
     var body: String = js.native
     
+    /* CompleteClass */
     var headers: StringDictionary[js.Any] = js.native
     
+    /* CompleteClass */
     var status: Double = js.native
+  }
+  
+  @scala.inline
+  def wrap(promise: js.Promise[js.Any]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(promise.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  
+  trait Response extends StObject {
+    
+    var body: String
+    
+    var headers: StringDictionary[js.Any]
+    
+    var status: Double
   }
   object Response {
     
@@ -64,7 +76,13 @@ object responseMod {
   
   @js.native
   trait ResponseConstructor
-    extends Instantiable1[/* body */ String, Response]
+    extends StObject
+       with Instantiable1[/* body */ String, Response]
        with Instantiable2[/* body */ String, /* status */ Double, Response]
-       with Instantiable3[/* body */ String, js.UndefOr[/* status */ Double], /* headers */ js.Object, Response]
+       with Instantiable3[
+          /* body */ String, 
+          (/* status */ Double) | (/* status */ Unit), 
+          /* headers */ js.Object, 
+          Response
+        ]
 }

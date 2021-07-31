@@ -3,17 +3,15 @@ package typings.cassanknex.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamParams extends StObject {
   
-  def end(): js.Any = js.native
+  def end(): js.Any
   
-  def error(err: Error): js.Any = js.native
+  def error(err: Error): js.Any
   
-  def readable(): js.Any = js.native
+  def readable(): js.Any
 }
 object StreamParams {
   

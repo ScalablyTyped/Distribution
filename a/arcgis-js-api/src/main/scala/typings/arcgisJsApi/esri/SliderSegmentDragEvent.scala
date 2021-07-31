@@ -5,26 +5,24 @@ import typings.arcgisJsApi.arcgisJsApiStrings.drag
 import typings.arcgisJsApi.arcgisJsApiStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderSegmentDragEvent extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var state: start | drag = js.native
+  var state: start | drag
   
-  var thumbIndices: js.Array[Double] = js.native
+  var thumbIndices: js.Array[Double]
   
-  var `type`: `segment-drag` = js.native
+  var `type`: `segment-drag`
 }
 object SliderSegmentDragEvent {
   
   @scala.inline
-  def apply(index: Double, state: start | drag, thumbIndices: js.Array[Double], `type`: `segment-drag`): SliderSegmentDragEvent = {
+  def apply(index: Double, state: start | drag, thumbIndices: js.Array[Double]): SliderSegmentDragEvent = {
     val __obj = js.Dynamic.literal(index = index.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any], thumbIndices = thumbIndices.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("segment-drag")
     __obj.asInstanceOf[SliderSegmentDragEvent]
   }
   

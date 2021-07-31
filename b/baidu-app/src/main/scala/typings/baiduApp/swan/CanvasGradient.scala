@@ -2,13 +2,11 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasGradient extends StObject {
   
-  def addColorStop(index: Double, color: String): Unit = js.native
+  def addColorStop(index: Double, color: String): Unit
 }
 object CanvasGradient {
   

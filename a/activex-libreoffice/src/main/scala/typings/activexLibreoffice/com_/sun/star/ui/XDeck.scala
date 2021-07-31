@@ -2,72 +2,70 @@ package typings.activexLibreoffice.com_.sun.star.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to Deck
   * @since LibreOffice 5.1
   */
-@js.native
 trait XDeck extends StObject {
   
   /** The deck identifier */
-  val Id: String = js.native
+  val Id: String
   
   /** Get the ordering index of the deck button in sidebar */
-  var OrderIndex: Double = js.native
+  var OrderIndex: Double
   
   /** Panels collection attached to the deck */
-  val Panels: XPanels = js.native
+  val Panels: XPanels
   
   /** Get the deck title string */
-  var Title: String = js.native
+  var Title: String
   
   /**
     * Activate the deck and display its content
     * @param bActivate The requested state for the deck TRUE sets the deck as the active oneFALSE hide the deck and defaults to the first deck of the sidebar
     */
-  def activate(bActivate: Boolean): Unit = js.native
+  def activate(bActivate: Boolean): Unit
   
   /** The deck identifier */
-  def getId(): String = js.native
+  def getId(): String
   
   /** Get the ordering index of the deck button in sidebar */
-  def getOrderIndex(): Double = js.native
+  def getOrderIndex(): Double
   
   /** Panels collection attached to the deck */
-  def getPanels(): XPanels = js.native
+  def getPanels(): XPanels
   
   /** Get the deck title string */
-  def getTitle(): String = js.native
+  def getTitle(): String
   
   /** Is the deck the active one */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /** Move deck one step down in the sidebar */
-  def moveDown(): Unit = js.native
+  def moveDown(): Unit
   
   /** Move deck button at first position in sidebar */
-  def moveFirst(): Unit = js.native
+  def moveFirst(): Unit
   
   /** Move deck button at last position in sidebar */
-  def moveLast(): Unit = js.native
+  def moveLast(): Unit
   
   /** Move deck one step up in the sidebar */
-  def moveUp(): Unit = js.native
+  def moveUp(): Unit
   
   /**
     * Set the ordering index of the deck button in sidebar
     * @param newOrderIndex The new position
     */
-  def setOrderIndex(newOrderIndex: Double): Unit = js.native
+  def setOrderIndex(newOrderIndex: Double): Unit
   
   /**
     * Set the deck title string
     * @param newTitle The new title string
     */
-  def setTitle(newTitle: String): Unit = js.native
+  def setTitle(newTitle: String): Unit
 }
 object XDeck {
   

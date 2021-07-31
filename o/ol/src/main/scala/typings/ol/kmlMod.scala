@@ -7,10 +7,13 @@ import typings.std.Element
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kmlMod {
+  
+  @JSImport("ol/format/KML", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/format/KML", JSImport.Default)
   @js.native
@@ -18,40 +21,32 @@ object kmlMod {
     def this(opt_options: Options) = this()
   }
   
-  @JSImport("ol/format/KML", "getDefaultFillStyle")
-  @js.native
-  def getDefaultFillStyle(): typings.ol.fillMod.default = js.native
+  @scala.inline
+  def getDefaultFillStyle(): typings.ol.fillMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultFillStyle")().asInstanceOf[typings.ol.fillMod.default]
   
-  @JSImport("ol/format/KML", "getDefaultImageStyle")
-  @js.native
-  def getDefaultImageStyle(): typings.ol.styleImageMod.default = js.native
+  @scala.inline
+  def getDefaultImageStyle(): typings.ol.styleImageMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultImageStyle")().asInstanceOf[typings.ol.styleImageMod.default]
   
-  @JSImport("ol/format/KML", "getDefaultStrokeStyle")
-  @js.native
-  def getDefaultStrokeStyle(): typings.ol.strokeMod.default = js.native
+  @scala.inline
+  def getDefaultStrokeStyle(): typings.ol.strokeMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStrokeStyle")().asInstanceOf[typings.ol.strokeMod.default]
   
-  @JSImport("ol/format/KML", "getDefaultStyle")
-  @js.native
-  def getDefaultStyle(): typings.ol.styleStyleMod.default = js.native
+  @scala.inline
+  def getDefaultStyle(): typings.ol.styleStyleMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyle")().asInstanceOf[typings.ol.styleStyleMod.default]
   
-  @JSImport("ol/format/KML", "getDefaultStyleArray")
-  @js.native
-  def getDefaultStyleArray(): js.Array[typings.ol.styleStyleMod.default] = js.native
+  @scala.inline
+  def getDefaultStyleArray(): js.Array[typings.ol.styleStyleMod.default] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultStyleArray")().asInstanceOf[js.Array[typings.ol.styleStyleMod.default]]
   
-  @JSImport("ol/format/KML", "getDefaultTextStyle")
-  @js.native
-  def getDefaultTextStyle(): typings.ol.textMod.default = js.native
+  @scala.inline
+  def getDefaultTextStyle(): typings.ol.textMod.default = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultTextStyle")().asInstanceOf[typings.ol.textMod.default]
   
-  @JSImport("ol/format/KML", "readFlatCoordinates")
-  @js.native
-  def readFlatCoordinates(node: Node): js.UndefOr[js.Array[Double]] = js.native
+  @scala.inline
+  def readFlatCoordinates(node: Node): js.UndefOr[js.Array[Double]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFlatCoordinates")(node.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[Double]]]
   
-  @js.native
   trait GxTrackObject extends StObject {
     
-    var flatCoordinates: js.Array[Double] = js.native
+    var flatCoordinates: js.Array[Double]
     
-    var whens: js.Array[Double] = js.native
+    var whens: js.Array[Double]
   }
   object GxTrackObject {
     
@@ -116,18 +111,17 @@ object kmlMod {
     def readRegionFromNode(node: Element): js.Array[js.Object] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var defaultStyle: js.UndefOr[js.Array[typings.ol.styleStyleMod.default]] = js.native
+    var defaultStyle: js.UndefOr[js.Array[typings.ol.styleStyleMod.default]] = js.undefined
     
-    var extractStyles: js.UndefOr[Boolean] = js.native
+    var extractStyles: js.UndefOr[Boolean] = js.undefined
     
-    var showPointNames: js.UndefOr[Boolean] = js.native
+    var showPointNames: js.UndefOr[Boolean] = js.undefined
     
-    var writeStyles: js.UndefOr[Boolean] = js.native
+    var writeStyles: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -175,18 +169,17 @@ object kmlMod {
     }
   }
   
-  @js.native
   trait Vec2 extends StObject {
     
-    var origin: IconOrigin = js.native
+    var origin: IconOrigin
     
-    var x: Double = js.native
+    var x: Double
     
-    var xunits: IconAnchorUnits = js.native
+    var xunits: IconAnchorUnits
     
-    var y: Double = js.native
+    var y: Double
     
-    var yunits: IconAnchorUnits = js.native
+    var yunits: IconAnchorUnits
   }
   object Vec2 {
     

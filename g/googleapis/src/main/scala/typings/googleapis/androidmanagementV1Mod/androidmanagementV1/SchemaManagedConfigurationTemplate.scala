@@ -3,26 +3,24 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The managed configurations template for the app, saved from the managed
   * configurations iframe.
   */
-@js.native
 trait SchemaManagedConfigurationTemplate extends StObject {
   
   /**
     * Optional, a map containing &lt;key, value&gt; configuration variables
     * defined for the configuration.
     */
-  var configurationVariables: js.UndefOr[StringDictionary[String]] = js.native
+  var configurationVariables: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The ID of the managed configurations template.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedConfigurationTemplate {
   

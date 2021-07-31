@@ -3,15 +3,13 @@ package typings.sharedb.sharedbMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Types extends StObject {
   
-  var map: StringDictionary[Type] = js.native
+  var map: StringDictionary[Type]
   
-  def register(`type`: Type): Unit = js.native
+  def register(`type`: Type): Unit
 }
 object Types {
   

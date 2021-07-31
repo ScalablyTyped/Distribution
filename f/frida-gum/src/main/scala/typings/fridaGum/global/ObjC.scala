@@ -1,10 +1,12 @@
 package typings.fridaGum.global
 
+import org.scalablytyped.runtime.StringDictionary
 import typings.fridaGum.AnyFunction
 import typings.fridaGum.EnumerateCallbacks
 import typings.fridaGum.NativeFunctionOptions
 import typings.fridaGum.NativePointerValue
 import typings.fridaGum.ObjC.BlockImplementation
+import typings.fridaGum.ObjC.BlockSignature
 import typings.fridaGum.ObjC.ChooseSpecifier
 import typings.fridaGum.ObjC.ClassSpec
 import typings.fridaGum.ObjC.EnumerateLoadedClassesCallbacks
@@ -13,16 +15,21 @@ import typings.fridaGum.ObjC.EnumerateLoadedClassesResult
 import typings.fridaGum.ObjC.InstanceData
 import typings.fridaGum.ObjC.MethodSpec
 import typings.fridaGum.ObjC.ObjectMethod
+import typings.fridaGum.ObjC.ProtocolMethodDescription
+import typings.fridaGum.ObjC.ProtocolPropertyAttributes
 import typings.fridaGum.ObjC.ProtocolSpec
 import typings.fridaGum.ObjC.ProxyConstructor
 import typings.fridaGum.ObjC.ProxyData
 import typings.fridaGum.ObjC.ProxySpec
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ObjC {
+  
+  @JSGlobal("ObjC")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Dynamically generated language binding for any Objective-C block.
@@ -33,11 +40,37 @@ object ObjC {
   @JSGlobal("ObjC.Block")
   @js.native
   class Block protected ()
-    extends typings.fridaGum.ObjC.Block {
+    extends StObject
+       with typings.fridaGum.ObjC.Block {
     def this(target: typings.fridaGum.NativePointer) = this()
     def this(target: MethodSpec[BlockImplementation]) = this()
     def this(target: typings.fridaGum.NativePointer, options: NativeFunctionOptions) = this()
     def this(target: MethodSpec[BlockImplementation], options: NativeFunctionOptions) = this()
+    
+    /**
+      * Declares the signature of an externally defined block. This is needed
+      * when working with blocks without signature metadata, i.e. when
+      * `block.types === undefined`.
+      *
+      * @param signature Signature to use.
+      */
+    /* CompleteClass */
+    override def declare(signature: BlockSignature): Unit = js.native
+    
+    /* CompleteClass */
+    var handle: typings.fridaGum.NativePointer = js.native
+    
+    /**
+      * Current implementation. You may replace it by assigning to this property.
+      */
+    /* CompleteClass */
+    override def implementation(args: js.Any*): js.Any = js.native
+    /**
+      * Current implementation. You may replace it by assigning to this property.
+      */
+    /* CompleteClass */
+    @JSName("implementation")
+    var implementation_Original: AnyFunction = js.native
   }
   
   /**
@@ -46,9 +79,13 @@ object ObjC {
   @JSGlobal("ObjC.Object")
   @js.native
   class Object protected ()
-    extends typings.fridaGum.ObjC.Object {
+    extends StObject
+       with typings.fridaGum.ObjC.Object {
     def this(handle: typings.fridaGum.NativePointer) = this()
     def this(handle: typings.fridaGum.NativePointer, protocol: typings.fridaGum.ObjC.Protocol) = this()
+    
+    /* CompleteClass */
+    var handle: typings.fridaGum.NativePointer = js.native
   }
   
   /**
@@ -57,8 +94,36 @@ object ObjC {
   @JSGlobal("ObjC.Protocol")
   @js.native
   class Protocol protected ()
-    extends typings.fridaGum.ObjC.Protocol {
+    extends StObject
+       with typings.fridaGum.ObjC.Protocol {
     def this(handle: typings.fridaGum.NativePointer) = this()
+    
+    /* CompleteClass */
+    var handle: typings.fridaGum.NativePointer = js.native
+    
+    /**
+      * Methods declared by this protocol.
+      */
+    /* CompleteClass */
+    var methods: StringDictionary[ProtocolMethodDescription] = js.native
+    
+    /**
+      * Name visible to the Objective-C runtime.
+      */
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /**
+      * Properties declared by this protocol.
+      */
+    /* CompleteClass */
+    var properties: StringDictionary[ProtocolPropertyAttributes] = js.native
+    
+    /**
+      * Protocols that this protocol conforms to.
+      */
+    /* CompleteClass */
+    var protocols: StringDictionary[typings.fridaGum.ObjC.Protocol] = js.native
   }
   
   // tslint:disable:no-unnecessary-qualifier
@@ -70,73 +135,63 @@ object ObjC {
   @js.native
   val available: Boolean = js.native
   
-  @JSGlobal("ObjC.bind")
-  @js.native
-  def bind(obj: typings.fridaGum.NativePointer, data: InstanceData): Unit = js.native
+  @scala.inline
+  def bind(obj: typings.fridaGum.NativePointer, data: InstanceData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Binds some JavaScript data to an Objective-C instance.
     *
     * @param obj Objective-C instance to bind data to.
     * @param data Data to bind.
     */
-  @JSGlobal("ObjC.bind")
-  @js.native
-  def bind(obj: typings.fridaGum.ObjC.Object, data: InstanceData): Unit = js.native
+  @scala.inline
+  def bind(obj: typings.fridaGum.ObjC.Object, data: InstanceData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(obj.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("ObjC.choose")
-  @js.native
-  def choose(specifier: ChooseSpecifier, callbacks: EnumerateCallbacks[typings.fridaGum.ObjC.Object]): Unit = js.native
+  @scala.inline
+  def choose(specifier: ChooseSpecifier, callbacks: EnumerateCallbacks[typings.fridaGum.ObjC.Object]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("choose")(specifier.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Synchronous version of `choose()`.
     *
     * @param specifier What kind of objects to look for.
     */
-  @JSGlobal("ObjC.chooseSync")
-  @js.native
-  def chooseSync(specifier: ChooseSpecifier): js.Array[typings.fridaGum.ObjC.Object] = js.native
+  @scala.inline
+  def chooseSync(specifier: ChooseSpecifier): js.Array[typings.fridaGum.ObjC.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseSync")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.fridaGum.ObjC.Object]]
   
   /**
     * Enumerates loaded classes.
     *
     * @param callbacks Object with callbacks.
     */
-  @JSGlobal("ObjC.enumerateLoadedClasses")
-  @js.native
-  def enumerateLoadedClasses(callbacks: EnumerateLoadedClassesCallbacks): Unit = js.native
+  @scala.inline
+  def enumerateLoadedClasses(callbacks: EnumerateLoadedClassesCallbacks): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClasses")(callbacks.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Enumerates loaded classes.
     *
     * @param options Options customizing the enumeration.
     * @param callbacks Object with callbacks.
     */
-  @JSGlobal("ObjC.enumerateLoadedClasses")
-  @js.native
-  def enumerateLoadedClasses(options: EnumerateLoadedClassesOptions, callbacks: EnumerateLoadedClassesCallbacks): Unit = js.native
+  @scala.inline
+  def enumerateLoadedClasses(options: EnumerateLoadedClassesOptions, callbacks: EnumerateLoadedClassesCallbacks): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClasses")(options.asInstanceOf[js.Any], callbacks.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Synchronous version of `enumerateLoadedClasses()`.
     *
     * @param options Options customizing the enumeration.
     */
-  @JSGlobal("ObjC.enumerateLoadedClassesSync")
-  @js.native
-  def enumerateLoadedClassesSync(): EnumerateLoadedClassesResult = js.native
-  @JSGlobal("ObjC.enumerateLoadedClassesSync")
-  @js.native
-  def enumerateLoadedClassesSync(options: EnumerateLoadedClassesOptions): EnumerateLoadedClassesResult = js.native
+  @scala.inline
+  def enumerateLoadedClassesSync(): EnumerateLoadedClassesResult = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClassesSync")().asInstanceOf[EnumerateLoadedClassesResult]
+  @scala.inline
+  def enumerateLoadedClassesSync(options: EnumerateLoadedClassesOptions): EnumerateLoadedClassesResult = ^.asInstanceOf[js.Dynamic].applyDynamic("enumerateLoadedClassesSync")(options.asInstanceOf[js.Any]).asInstanceOf[EnumerateLoadedClassesResult]
   
-  @JSGlobal("ObjC.getBoundData")
-  @js.native
-  def getBoundData(obj: typings.fridaGum.NativePointer): js.Any = js.native
+  @scala.inline
+  def getBoundData(obj: typings.fridaGum.NativePointer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundData")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   /**
     * Looks up previously bound data from an Objective-C object.
     *
     * @param obj Objective-C instance to look up data for.
     */
-  @JSGlobal("ObjC.getBoundData")
-  @js.native
-  def getBoundData(obj: typings.fridaGum.ObjC.Object): js.Any = js.native
+  @scala.inline
+  def getBoundData(obj: typings.fridaGum.ObjC.Object): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoundData")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * Creates a JavaScript implementation compatible with the signature of `method`, where `fn` is used as the
@@ -145,9 +200,8 @@ object ObjC {
     * @param method Method to implement.
     * @param fn Implementation.
     */
-  @JSGlobal("ObjC.implement")
-  @js.native
-  def implement(method: ObjectMethod, fn: AnyFunction): typings.fridaGum.NativeCallback = js.native
+  @scala.inline
+  def implement(method: ObjectMethod, fn: AnyFunction): typings.fridaGum.NativeCallback = (^.asInstanceOf[js.Dynamic].applyDynamic("implement")(method.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[typings.fridaGum.NativeCallback]
   
   /**
     * GCD queue of the main thread.
@@ -161,27 +215,24 @@ object ObjC {
     *
     * @param spec Class specification.
     */
-  @JSGlobal("ObjC.registerClass")
-  @js.native
-  def registerClass(spec: ClassSpec[InstanceData, typings.fridaGum.ObjC.Object, typings.fridaGum.ObjC.Object]): typings.fridaGum.ObjC.Object = js.native
+  @scala.inline
+  def registerClass(spec: ClassSpec[InstanceData, typings.fridaGum.ObjC.Object, typings.fridaGum.ObjC.Object]): typings.fridaGum.ObjC.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("registerClass")(spec.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.ObjC.Object]
   
   /**
     * Creates a new Objective-C protocol.
     *
     * @param spec Protocol specification.
     */
-  @JSGlobal("ObjC.registerProtocol")
-  @js.native
-  def registerProtocol(spec: ProtocolSpec): typings.fridaGum.ObjC.Protocol = js.native
+  @scala.inline
+  def registerProtocol(spec: ProtocolSpec): typings.fridaGum.ObjC.Protocol = ^.asInstanceOf[js.Dynamic].applyDynamic("registerProtocol")(spec.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.ObjC.Protocol]
   
   /**
     * Creates a new class designed to act as a proxy for a target object.
     *
     * @param spec Proxy specification.
     */
-  @JSGlobal("ObjC.registerProxy")
-  @js.native
-  def registerProxy(spec: ProxySpec[ProxyData, typings.fridaGum.ObjC.Object, typings.fridaGum.ObjC.Object]): ProxyConstructor = js.native
+  @scala.inline
+  def registerProxy(spec: ProxySpec[ProxyData, typings.fridaGum.ObjC.Object, typings.fridaGum.ObjC.Object]): ProxyConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("registerProxy")(spec.asInstanceOf[js.Any]).asInstanceOf[ProxyConstructor]
   
   /**
     * Schedule the JavaScript function `work` on the GCD queue specified by `queue`. An NSAutoreleasePool is created
@@ -199,39 +250,34 @@ object ObjC {
     * @param queue GCD queue to schedule `work` on.
     * @param work Function to call on the specified `queue`.
     */
-  @JSGlobal("ObjC.schedule")
-  @js.native
-  def schedule(queue: NativePointerValue, work: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def schedule(queue: NativePointerValue, work: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("schedule")(queue.asInstanceOf[js.Any], work.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Converts the JavaScript string `name` to a selector.
     *
     * @param name Name to turn into a selector.
     */
-  @JSGlobal("ObjC.selector")
-  @js.native
-  def selector(name: String): typings.fridaGum.NativePointer = js.native
+  @scala.inline
+  def selector(name: String): typings.fridaGum.NativePointer = ^.asInstanceOf[js.Dynamic].applyDynamic("selector")(name.asInstanceOf[js.Any]).asInstanceOf[typings.fridaGum.NativePointer]
   
   /**
     * Converts the selector `sel` to a JavaScript string.
     *
     * @param sel Selector to turn into a string.
     */
-  @JSGlobal("ObjC.selectorAsString")
-  @js.native
-  def selectorAsString(sel: NativePointerValue): String = js.native
+  @scala.inline
+  def selectorAsString(sel: NativePointerValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorAsString")(sel.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("ObjC.unbind")
-  @js.native
-  def unbind(obj: typings.fridaGum.NativePointer): Unit = js.native
+  @scala.inline
+  def unbind(obj: typings.fridaGum.NativePointer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   /**
     * Unbinds previously associated JavaScript data from an Objective-C instance.
     *
     * @param obj Objective-C instance to unbind data from.
     */
-  @JSGlobal("ObjC.unbind")
-  @js.native
-  def unbind(obj: typings.fridaGum.ObjC.Object): Unit = js.native
+  @scala.inline
+  def unbind(obj: typings.fridaGum.ObjC.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Direct access to a big portion of the Objective-C runtime API.

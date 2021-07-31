@@ -1,12 +1,9 @@
 package typings.babelTypes.ts36Mod
 
-import typings.babelTypes.babelTypesStrings.BlockStatement
-import typings.babelTypes.babelTypesStrings.Program
 import typings.babelTypes.babelTypesStrings.module
 import typings.babelTypes.babelTypesStrings.script
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -17,9 +14,9 @@ trait Block extends StObject
 object Block {
   
   @scala.inline
-  def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double, `type`: BlockStatement): typings.babelTypes.ts36Mod.BlockStatement_ = {
+  def BlockStatement_(body: js.Array[Statement], end: Double, loc: SourceLocation, start: Double): typings.babelTypes.ts36Mod.BlockStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BlockStatement")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.BlockStatement_]
   }
   
@@ -29,11 +26,10 @@ object Block {
     end: Double,
     loc: SourceLocation,
     sourceType: script | module,
-    start: Double,
-    `type`: Program
+    start: Double
   ): typings.babelTypes.ts36Mod.Program_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], sourceType = sourceType.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Program")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.Program_]
   }
 }

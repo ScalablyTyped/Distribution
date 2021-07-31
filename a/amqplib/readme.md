@@ -10,9 +10,9 @@ An AMQP 0-9-1 (e.g., RabbitMQ) library and client.
 | ------------------ | :-------------: |
 | Full name          | amqplib |
 | Keywords           | AMQP, AMQP 0-9-1, RabbitMQ |
-| # releases         | 6 |
-| # dependents       | 1483 |
-| # downloads        | 36803473 |
+| # releases         | 4 |
+| # dependents       | 1624 |
+| # downloads        | 29499026 |
 | # stars            | 62 |
 
 ## Links

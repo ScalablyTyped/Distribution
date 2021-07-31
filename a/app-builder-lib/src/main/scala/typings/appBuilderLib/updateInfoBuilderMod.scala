@@ -6,25 +6,26 @@ import typings.builderUtilRuntime.publishOptionsMod.PublishConfiguration
 import typings.builderUtilRuntime.updateInfoMod.UpdateInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateInfoBuilderMod {
   
-  @JSImport("app-builder-lib/out/publish/updateInfoBuilder", "writeUpdateInfoFiles")
+  @JSImport("app-builder-lib/out/publish/updateInfoBuilder", JSImport.Namespace)
   @js.native
-  def writeUpdateInfoFiles(updateInfoFileTasks: js.Array[UpdateInfoFileTask], packager: Packager): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def writeUpdateInfoFiles(updateInfoFileTasks: js.Array[UpdateInfoFileTask], packager: Packager): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUpdateInfoFiles")(updateInfoFileTasks.asInstanceOf[js.Any], packager.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait UpdateInfoFileTask extends StObject {
     
-    val file: String = js.native
+    val file: String
     
-    val info: UpdateInfo = js.native
+    val info: UpdateInfo
     
-    val packager: PlatformPackager[_] = js.native
+    val packager: PlatformPackager[js.Any]
     
-    val publishConfiguration: PublishConfiguration = js.native
+    val publishConfiguration: PublishConfiguration
   }
   object UpdateInfoFileTask {
     
@@ -32,7 +33,7 @@ object updateInfoBuilderMod {
     def apply(
       file: String,
       info: UpdateInfo,
-      packager: PlatformPackager[_],
+      packager: PlatformPackager[js.Any],
       publishConfiguration: PublishConfiguration
     ): UpdateInfoFileTask = {
       val __obj = js.Dynamic.literal(file = file.asInstanceOf[js.Any], info = info.asInstanceOf[js.Any], packager = packager.asInstanceOf[js.Any], publishConfiguration = publishConfiguration.asInstanceOf[js.Any])
@@ -49,7 +50,7 @@ object updateInfoBuilderMod {
       def setInfo(value: UpdateInfo): Self = StObject.set(x, "info", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPackager(value: PlatformPackager[_]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
+      def setPackager(value: PlatformPackager[js.Any]): Self = StObject.set(x, "packager", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPublishConfiguration(value: PublishConfiguration): Self = StObject.set(x, "publishConfiguration", value.asInstanceOf[js.Any])

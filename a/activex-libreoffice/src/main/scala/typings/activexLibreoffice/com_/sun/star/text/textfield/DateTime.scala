@@ -12,18 +12,18 @@ import typings.activexLibreoffice.com_.sun.star.text.XTextRange
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of a date or time text field.
   * @see com.sun.star.text.TextField
   */
-@js.native
-trait DateTime extends TextField_ {
+trait DateTime
+  extends StObject
+     with TextField_ {
   
   /** contains an offset to the date or time value in minutes. */
-  var Adjust: Double = js.native
+  var Adjust: Double
   
   /**
     * this is the display format for this field. Depending on {@link IsDate} , this is either a {@link com.sun.star.text.DateDisplayFormat} or {@link
@@ -34,31 +34,31 @@ trait DateTime extends TextField_ {
     * @see com.sun.star.text.DateDisplayFormat
     * @see com.sun.star.text.TimeDisplayFormat
     */
-  var DateTimeFormat: Double = js.native
+  var DateTimeFormat: Double
   
   /** the is the content of this field. */
-  var DateTimeValue: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+  var DateTimeValue: typings.activexLibreoffice.com_.sun.star.util.DateTime
   
   /** If this flag is set to `TRUE` this field represents a date with an optional time. If it is set to `FALSE` only the time is used here. */
-  var IsDate: Boolean = js.native
+  var IsDate: Boolean
   
   /**
     * If this flag is set to `FALSE` the date or time is always displayed as the current date or time.
     * @since OOo 1.1.2
     */
-  var IsFixed: Boolean = js.native
+  var IsFixed: Boolean
   
   /**
     * determines whether changes in language attributes at the position the text field is located also change the number format as appropriate for this
     * language.
     */
-  var IsFixedLanguage: Boolean = js.native
+  var IsFixedLanguage: Boolean
   
   /**
     * this is the number format for this field
     * @see com.sun.star.util.NumberFormatter
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
 }
 object DateTime {
   

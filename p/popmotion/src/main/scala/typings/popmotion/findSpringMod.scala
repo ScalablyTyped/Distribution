@@ -4,18 +4,19 @@ import typings.popmotion.anon.Damping
 import typings.popmotion.typesMod.SpringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object findSpringMod {
   
-  @JSImport("popmotion/lib/animations/utils/find-spring", "calcAngularFreq")
+  @JSImport("popmotion/lib/animations/utils/find-spring", JSImport.Namespace)
   @js.native
-  def calcAngularFreq(undampedFreq: Double, dampingRatio: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("popmotion/lib/animations/utils/find-spring", "findSpring")
-  @js.native
-  def findSpring(hasDurationBounceVelocityMass: SpringOptions): Damping = js.native
+  @scala.inline
+  def calcAngularFreq(undampedFreq: Double, dampingRatio: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcAngularFreq")(undampedFreq.asInstanceOf[js.Any], dampingRatio.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def findSpring(hasDurationBounceVelocityMass: SpringOptions): Damping = ^.asInstanceOf[js.Dynamic].applyDynamic("findSpring")(hasDurationBounceVelocityMass.asInstanceOf[js.Any]).asInstanceOf[Damping]
   
   @JSImport("popmotion/lib/animations/utils/find-spring", "maxDamping")
   @js.native

@@ -3,28 +3,26 @@ package typings.pulumiAws.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudwatch {
   
-  @js.native
   trait EventPermissionCondition extends StObject {
     
     /**
       * Key for the condition. Valid values: `aws:PrincipalOrgID`.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * Type of condition. Value values: `StringEquals`.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Value for the key.
       */
-    var value: String = js.native
+    var value: String
   }
   object EventPermissionCondition {
     
@@ -49,28 +47,27 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait EventTargetBatchTarget extends StObject {
     
     /**
       * The size of the array, if this is an array batch job. Valid values are integers between 2 and 10,000.
       */
-    var arraySize: js.UndefOr[Double] = js.native
+    var arraySize: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of times to attempt to retry, if the job fails. Valid values are 1 to 10.
       */
-    var jobAttempts: js.UndefOr[Double] = js.native
+    var jobAttempts: js.UndefOr[Double] = js.undefined
     
     /**
       * The ARN or name of the job definition to use if the event target is an AWS Batch job. This job definition must already exist.
       */
-    var jobDefinition: String = js.native
+    var jobDefinition: String
     
     /**
       * The name to use for this execution of the job, if the target is an AWS Batch job.
       */
-    var jobName: String = js.native
+    var jobName: String
   }
   object EventTargetBatchTarget {
     
@@ -103,38 +100,37 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait EventTargetEcsTarget extends StObject {
     
     /**
       * Specifies an ECS task group for the task. The maximum length is 255 characters.
       */
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the launch type on which your task is running. The launch type that you specify here must match one of the launch type (compatibilities) of the target task. Valid values are `EC2` or `FARGATE`.
       */
-    var launchType: js.UndefOr[String] = js.native
+    var launchType: js.UndefOr[String] = js.undefined
     
     /**
       * Use this if the ECS task uses the awsvpc network mode. This specifies the VPC subnets and security groups associated with the task, and whether a public IP address is to be used. Required if launchType is FARGATE because the awsvpc mode is required for Fargate tasks.
       */
-    var networkConfiguration: js.UndefOr[EventTargetEcsTargetNetworkConfiguration] = js.native
+    var networkConfiguration: js.UndefOr[EventTargetEcsTargetNetworkConfiguration] = js.undefined
     
     /**
       * Specifies the platform version for the task. Specify only the numeric portion of the platform version, such as 1.1.0. This is used only if LaunchType is FARGATE. For more information about valid platform versions, see [AWS Fargate Platform Versions](http://docs.aws.amazon.com/AmazonECS/latest/developerguide/platform_versions.html).
       */
-    var platformVersion: js.UndefOr[String] = js.native
+    var platformVersion: js.UndefOr[String] = js.undefined
     
     /**
       * The number of tasks to create based on the TaskDefinition. The default is 1.
       */
-    var taskCount: js.UndefOr[Double] = js.native
+    var taskCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The ARN of the task definition to use if the event target is an Amazon ECS cluster.
       */
-    var taskDefinitionArn: String = js.native
+    var taskDefinitionArn: String
   }
   object EventTargetEcsTarget {
     
@@ -182,23 +178,22 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait EventTargetEcsTargetNetworkConfiguration extends StObject {
     
     /**
       * Assign a public IP address to the ENI (Fargate launch type only). Valid values are `true` or `false`. Default `false`.
       */
-    var assignPublicIp: js.UndefOr[Boolean] = js.native
+    var assignPublicIp: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The security groups associated with the task or service. If you do not specify a security group, the default security group for the VPC is used.
       */
-    var securityGroups: js.UndefOr[js.Array[String]] = js.native
+    var securityGroups: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The subnets associated with the task or service.
       */
-    var subnets: js.Array[String] = js.native
+    var subnets: js.Array[String]
   }
   object EventTargetEcsTargetNetworkConfiguration {
     
@@ -234,7 +229,6 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait EventTargetInputTransformer extends StObject {
     
     /**
@@ -243,9 +237,9 @@ object cloudwatch {
       * * You must use JSON dot notation, not bracket notation.
       * * The keys can't start with "AWS".
       */
-    var inputPaths: js.UndefOr[StringDictionary[String]] = js.native
+    var inputPaths: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var inputTemplate: String = js.native
+    var inputTemplate: String
   }
   object EventTargetInputTransformer {
     
@@ -269,13 +263,12 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait EventTargetKinesisTarget extends StObject {
     
     /**
       * The JSON path to be extracted from the event and used as the partition key.
       */
-    var partitionKeyPath: js.UndefOr[String] = js.native
+    var partitionKeyPath: js.UndefOr[String] = js.undefined
   }
   object EventTargetKinesisTarget {
     
@@ -296,18 +289,17 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait EventTargetRunCommandTarget extends StObject {
     
     /**
       * Can be either `tag:tag-key` or `InstanceIds`.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * If Key is `tag:tag-key`, Values is a list of tag values. If Key is `InstanceIds`, Values is a list of Amazon EC2 instance IDs.
       */
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object EventTargetRunCommandTarget {
     
@@ -331,13 +323,12 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait EventTargetSqsTarget extends StObject {
     
     /**
       * The FIFO message group ID to use as the target.
       */
-    var messageGroupId: js.UndefOr[String] = js.native
+    var messageGroupId: js.UndefOr[String] = js.undefined
   }
   object EventTargetSqsTarget {
     
@@ -358,28 +349,27 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait LogMetricFilterMetricTransformation extends StObject {
     
     /**
       * The value to emit when a filter pattern does not match a log event.
       */
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the CloudWatch metric to which the monitored log information should be published (e.g. `ErrorCount`)
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The destination namespace of the CloudWatch metric.
       */
-    var namespace: String = js.native
+    var namespace: String
     
     /**
       * What to publish to the metric. For example, if you're counting the occurrences of a particular term like "Error", the value will be "1" for each occurrence. If you're counting the bytes transferred the published value will be the value in the log event.
       */
-    var value: String = js.native
+    var value: String
   }
   object LogMetricFilterMetricTransformation {
     
@@ -409,33 +399,32 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait MetricAlarmMetricQuery extends StObject {
     
     /**
       * The math expression to be performed on the returned data, if this object is performing a math expression. This expression can use the id of the other metrics to refer to those metrics, and can also use the id of other expressions to use the result of those expressions. For more information about metric math expressions, see Metric Math Syntax and Functions in the [Amazon CloudWatch User Guide](https://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/using-metric-math.html#metric-math-syntax).
       */
-    var expression: js.UndefOr[String] = js.native
+    var expression: js.UndefOr[String] = js.undefined
     
     /**
       * A short name used to tie this object to the results in the response. If you are performing math expressions on this set of data, this name represents that data and can serve as a variable in the mathematical expression. The valid characters are letters, numbers, and underscore. The first character must be a lowercase letter.
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * A human-readable label for this metric or expression. This is especially useful if this is an expression, so that you know what the value represents.
       */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /**
       * The metric to be returned, along with statistics, period, and units. Use this parameter only if this object is retrieving a metric and not performing a math expression on returned data.
       */
-    var metric: js.UndefOr[MetricAlarmMetricQueryMetric] = js.native
+    var metric: js.UndefOr[MetricAlarmMetricQueryMetric] = js.undefined
     
     /**
       * Specify exactly one `metricQuery` to be `true` to use that `metricQuery` result as the alarm.
       */
-    var returnData: js.UndefOr[Boolean] = js.native
+    var returnData: js.UndefOr[Boolean] = js.undefined
   }
   object MetricAlarmMetricQuery {
     
@@ -477,41 +466,40 @@ object cloudwatch {
     }
   }
   
-  @js.native
   trait MetricAlarmMetricQueryMetric extends StObject {
     
     /**
       * The dimensions for this metric.  For the list of available dimensions see the AWS documentation [here](http://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    var dimensions: js.UndefOr[StringDictionary[String]] = js.native
+    var dimensions: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The name for this metric.
       * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    var metricName: String = js.native
+    var metricName: String
     
     /**
       * The namespace for this metric. See docs for the [list of namespaces](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/aws-namespaces.html).
       * See docs for [supported metrics](https://docs.aws.amazon.com/AmazonCloudWatch/latest/DeveloperGuide/CW_Support_For_AWS.html).
       */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
       * The period in seconds over which the specified `stat` is applied.
       */
-    var period: Double = js.native
+    var period: Double
     
     /**
       * The statistic to apply to this metric.
       * Either of the following is supported: `SampleCount`, `Average`, `Sum`, `Minimum`, `Maximum`
       */
-    var stat: String = js.native
+    var stat: String
     
     /**
       * The unit for this metric.
       */
-    var unit: js.UndefOr[String] = js.native
+    var unit: js.UndefOr[String] = js.undefined
   }
   object MetricAlarmMetricQueryMetric {
     

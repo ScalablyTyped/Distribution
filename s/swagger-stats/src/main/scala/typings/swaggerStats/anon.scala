@@ -17,27 +17,25 @@ import typings.swaggerStats.mod.APIOperationStats
 import typings.swaggerStats.mod.ReqResStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var clength: js.UndefOr[Double] = js.native
+    var clength: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[IncomingHttpHeaders] = js.native
+    var headers: js.UndefOr[IncomingHttpHeaders] = js.undefined
     
-    var params: js.UndefOr[Record[String, _]] = js.native
+    var params: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var query: js.UndefOr[Record[String, _]] = js.native
+    var query: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var route_path: js.UndefOr[String] = js.native
+    var route_path: js.UndefOr[String] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object Body {
     
@@ -69,13 +67,13 @@ object anon {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setParams(value: Record[String, _]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: Record[String, js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
       
       @scala.inline
-      def setQuery(value: Record[String, _]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+      def setQuery(value: Record[String, js.Any]): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)
@@ -91,14 +89,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Bucketcurrent extends StObject {
     
-    var bucket_current: Double = js.native
+    var bucket_current: Double
     
-    var bucket_duration: Double = js.native
+    var bucket_duration: Double
     
-    var length: Double = js.native
+    var length: Double
   }
   object Bucketcurrent {
     
@@ -122,18 +119,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Class extends StObject {
     
-    var `class`: String = js.native
+    var `class`: String
     
-    var clength: js.UndefOr[Double] = js.native
+    var clength: js.UndefOr[Double] = js.undefined
     
-    var code: String = js.native
+    var code: String
     
-    var headers: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var headers: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var phrase: String = js.native
+    var phrase: String
   }
   object Class {
     
@@ -170,22 +166,21 @@ object anon {
     }
   }
   
-  @js.native
   trait Deprecated extends StObject {
     
-    var deprecated: js.UndefOr[String] = js.native
+    var deprecated: js.UndefOr[String] = js.undefined
     
-    var operationId: js.UndefOr[String] = js.native
+    var operationId: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[String] = js.native
+    var params: js.UndefOr[String] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var query: String = js.native
+    var query: String
     
-    var swagger: js.UndefOr[String] = js.native
+    var swagger: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[String] = js.native
+    var tags: js.UndefOr[String] = js.undefined
   }
   object Deprecated {
     
@@ -236,16 +231,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Hostname extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var ip: String = js.native
+    var ip: String
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object Hostname {
     
@@ -273,24 +267,23 @@ object anon {
   }
   
   /* Inlined std.Record<swagger-stats.swagger-stats.HTTPMethod, swagger-stats.swagger-stats.APIOperationDefinition> */
-  @js.native
   trait RecordHTTPMethodAPIOperat extends StObject {
     
-    var DELETE: APIOperationDefinition = js.native
+    var DELETE: APIOperationDefinition
     
-    var GET: APIOperationDefinition = js.native
+    var GET: APIOperationDefinition
     
-    var HEAD: APIOperationDefinition = js.native
+    var HEAD: APIOperationDefinition
     
-    var OPTIONS: APIOperationDefinition = js.native
+    var OPTIONS: APIOperationDefinition
     
-    var PATCH: APIOperationDefinition = js.native
+    var PATCH: APIOperationDefinition
     
-    var POST: APIOperationDefinition = js.native
+    var POST: APIOperationDefinition
     
-    var PUT: APIOperationDefinition = js.native
+    var PUT: APIOperationDefinition
     
-    var TRACE: APIOperationDefinition = js.native
+    var TRACE: APIOperationDefinition
   }
   object RecordHTTPMethodAPIOperat {
     
@@ -339,24 +332,23 @@ object anon {
   }
   
   /* Inlined std.Record<swagger-stats.swagger-stats.HTTPMethod, swagger-stats.swagger-stats.APIOperationStats> */
-  @js.native
   trait RecordHTTPMethodAPIOperatDELETE extends StObject {
     
-    var DELETE: APIOperationStats = js.native
+    var DELETE: APIOperationStats
     
-    var GET: APIOperationStats = js.native
+    var GET: APIOperationStats
     
-    var HEAD: APIOperationStats = js.native
+    var HEAD: APIOperationStats
     
-    var OPTIONS: APIOperationStats = js.native
+    var OPTIONS: APIOperationStats
     
-    var PATCH: APIOperationStats = js.native
+    var PATCH: APIOperationStats
     
-    var POST: APIOperationStats = js.native
+    var POST: APIOperationStats
     
-    var PUT: APIOperationStats = js.native
+    var PUT: APIOperationStats
     
-    var TRACE: APIOperationStats = js.native
+    var TRACE: APIOperationStats
   }
   object RecordHTTPMethodAPIOperatDELETE {
     
@@ -405,24 +397,23 @@ object anon {
   }
   
   /* Inlined std.Record<swagger-stats.swagger-stats.HTTPMethod, swagger-stats.swagger-stats.ReqResStats> */
-  @js.native
   trait RecordHTTPMethodReqResSta extends StObject {
     
-    var DELETE: ReqResStats = js.native
+    var DELETE: ReqResStats
     
-    var GET: ReqResStats = js.native
+    var GET: ReqResStats
     
-    var HEAD: ReqResStats = js.native
+    var HEAD: ReqResStats
     
-    var OPTIONS: ReqResStats = js.native
+    var OPTIONS: ReqResStats
     
-    var PATCH: ReqResStats = js.native
+    var PATCH: ReqResStats
     
-    var POST: ReqResStats = js.native
+    var POST: ReqResStats
     
-    var PUT: ReqResStats = js.native
+    var PUT: ReqResStats
     
-    var TRACE: ReqResStats = js.native
+    var TRACE: ReqResStats
   }
   object RecordHTTPMethodReqResSta {
     
@@ -471,16 +462,15 @@ object anon {
   }
   
   /* Inlined std.Record<swagger-stats.swagger-stats.HTTPMethodSubset, swagger-stats.swagger-stats.ReqResStats> */
-  @js.native
   trait RecordHTTPMethodSubsetReq extends StObject {
     
-    var DELETE: ReqResStats = js.native
+    var DELETE: ReqResStats
     
-    var GET: ReqResStats = js.native
+    var GET: ReqResStats
     
-    var POST: ReqResStats = js.native
+    var POST: ReqResStats
     
-    var PUT: ReqResStats = js.native
+    var PUT: ReqResStats
   }
   object RecordHTTPMethodSubsetReq {
     
@@ -507,12 +497,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var request: Body = js.native
+    var request: Body
     
-    var response: Class = js.native
+    var response: Class
   }
   object Request {
     
@@ -534,7 +523,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofAggregatorRegistry extends Instantiable0[AggregatorRegistry] {
+  trait TypeofAggregatorRegistry
+    extends StObject
+       with Instantiable0[AggregatorRegistry] {
     
     /**
     	 * Creates a new Registry instance from an array of metrics that were
@@ -600,7 +591,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofRegistry extends Instantiable0[Registry] {
+  trait TypeofRegistry
+    extends StObject
+       with Instantiable0[Registry] {
     
     /**
     	 * Merge registers

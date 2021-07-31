@@ -3,17 +3,15 @@ package typings.zipkinInstrumentationExpress
 import typings.zipkin.mod.Tracer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Port extends StObject {
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var tracer: Tracer = js.native
+    var tracer: Tracer
   }
   object Port {
     
@@ -37,12 +35,11 @@ object anon {
     }
   }
   
-  @js.native
   trait RemoteServiceName extends StObject {
     
-    var remoteServiceName: js.UndefOr[String] = js.native
+    var remoteServiceName: js.UndefOr[String] = js.undefined
     
-    var tracer: Tracer = js.native
+    var tracer: Tracer
   }
   object RemoteServiceName {
     

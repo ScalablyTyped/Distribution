@@ -6,7 +6,6 @@ import typings.jqueryui.JQueryUI.SliderEvent
 import typings.jqueryui.JQueryUI.SliderUIParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uislideroptionsMod {
@@ -19,80 +18,79 @@ object uislideroptionsMod {
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/PreviewableOptions.PreviewableOptions */
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/DelayableOptions.DelayableOptions */
   /* Inlined parent tablesorter.tablesorter/Filtering/Formatter/Options/StrictOptions.StrictOptions */
-  @js.native
   trait UISliderOptions extends StObject {
     
     /**
       * The text indicating the whole range.
       */
-    var allText: js.UndefOr[String] = js.native
+    var allText: js.UndefOr[String] = js.undefined
     
-    var animate: js.UndefOr[js.Any] = js.native
+    var animate: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The label of the control.
       */
-    var cellText: js.UndefOr[String] = js.native
+    var cellText: js.UndefOr[String] = js.undefined
     
-    var change: js.UndefOr[SliderEvent] = js.native
+    var change: js.UndefOr[SliderEvent] = js.undefined
     
-    var classes: js.UndefOr[SliderClasses] = js.native
+    var classes: js.UndefOr[SliderClasses] = js.undefined
     
     /**
       * The compare-operators supported by the control.
       */
-    var compare: js.UndefOr[String | js.Array[String]] = js.native
+    var compare: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var create: js.UndefOr[SliderEvent] = js.native
+    var create: js.UndefOr[SliderEvent] = js.undefined
     
     /**
       * A value indicating whether the value of the filter should be set delayed.
       */
-    var delayed: js.UndefOr[Boolean] = js.native
+    var delayed: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicatin whether only exact matching values should be included.
       */
-    var exactMatch: js.UndefOr[Boolean] = js.native
+    var exactMatch: js.UndefOr[Boolean] = js.undefined
     
-    var highlight: js.UndefOr[Boolean] = js.native
+    var highlight: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The maximum value of the control.
       */
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum value of the control.
       */
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var range: js.UndefOr[js.Any] = js.native
+    var range: js.UndefOr[js.Any] = js.undefined
     
-    var slide: js.UndefOr[SliderEvent] = js.native
+    var slide: js.UndefOr[SliderEvent] = js.undefined
     
-    var start: js.UndefOr[SliderEvent] = js.native
+    var start: js.UndefOr[SliderEvent] = js.undefined
     
     /**
       * The interval of the control.
       */
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var stop: js.UndefOr[SliderEvent] = js.native
+    var stop: js.UndefOr[SliderEvent] = js.undefined
     
     /**
       * The default value of the control.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /**
       * A value indicating whether the value should be visible in the table header.
       */
-    var valueToHeader: js.UndefOr[Boolean] = js.native
+    var valueToHeader: js.UndefOr[Boolean] = js.undefined
   }
   object UISliderOptions {
     

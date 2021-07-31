@@ -5,14 +5,16 @@ import typings.materialUiCore.spacingMod.Spacing
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createMixinsMod {
   
-  @JSImport("@material-ui/core/styles/createMixins", JSImport.Default)
+  @JSImport("@material-ui/core/styles/createMixins", JSImport.Namespace)
   @js.native
-  def default(breakpoints: Breakpoints, spacing: Spacing, mixins: MixinsOptions): Mixins = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(breakpoints: Breakpoints, spacing: Spacing, mixins: MixinsOptions): Mixins = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(breakpoints.asInstanceOf[js.Any], spacing.asInstanceOf[js.Any], mixins.asInstanceOf[js.Any])).asInstanceOf[Mixins]
   
   @js.native
   trait Mixins extends StObject {
@@ -24,12 +26,11 @@ object createMixinsMod {
   }
   
   /* Inlined parent std.Partial<@material-ui/core.@material-ui/core/styles/createMixins.Mixins> */
-  @js.native
   trait MixinsOptions extends StObject {
     
-    var gutters: js.UndefOr[js.Function1[/* styles */ js.UndefOr[CSSProperties], CSSProperties]] = js.native
+    var gutters: js.UndefOr[js.Function1[/* styles */ js.UndefOr[CSSProperties], CSSProperties]] = js.undefined
     
-    var toolbar: js.UndefOr[CSSProperties] = js.native
+    var toolbar: js.UndefOr[CSSProperties] = js.undefined
   }
   object MixinsOptions {
     

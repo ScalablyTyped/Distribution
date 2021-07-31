@@ -12,7 +12,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object countdownMod {
@@ -168,15 +167,16 @@ object countdownMod {
     def valueRender(node: ReactElement): ReactElement = js.native
   }
   
-  @js.native
-  trait CountdownProps extends StatisticProps {
+  trait CountdownProps
+    extends StObject
+       with StatisticProps {
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var onFinish: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     @JSName("value")
-    var value_CountdownProps: js.UndefOr[countdownValueType] = js.native
+    var value_CountdownProps: js.UndefOr[countdownValueType] = js.undefined
   }
   object CountdownProps {
     

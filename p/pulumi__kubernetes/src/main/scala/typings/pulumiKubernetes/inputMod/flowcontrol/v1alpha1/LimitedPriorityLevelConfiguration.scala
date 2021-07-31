@@ -3,7 +3,6 @@ package typings.pulumiKubernetes.inputMod.flowcontrol.v1alpha1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *  * How are requests for this priority level limited?
   *  * What should be done with requests that exceed the limit?
   */
-@js.native
 trait LimitedPriorityLevelConfiguration extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait LimitedPriorityLevelConfiguration extends StObject {
     *
     * bigger numbers of ACS mean more reserved concurrent requests (at the expense of every other PL). This field has a default value of 30.
     */
-  var assuredConcurrencyShares: js.UndefOr[Input[Double]] = js.native
+  var assuredConcurrencyShares: js.UndefOr[Input[Double]] = js.undefined
   
   /**
     * `limitResponse` indicates what to do with requests that can not be executed right now
     */
-  var limitResponse: js.UndefOr[Input[LimitResponse]] = js.native
+  var limitResponse: js.UndefOr[Input[LimitResponse]] = js.undefined
 }
 object LimitedPriorityLevelConfiguration {
   

@@ -2,7 +2,6 @@ package typings.grpcGrpcJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object backoffTimeoutMod {
@@ -48,16 +47,15 @@ object backoffTimeoutMod {
     var timerId: js.Any = js.native
   }
   
-  @js.native
   trait BackoffOptions extends StObject {
     
-    var initialDelay: js.UndefOr[Double] = js.native
+    var initialDelay: js.UndefOr[Double] = js.undefined
     
-    var jitter: js.UndefOr[Double] = js.native
+    var jitter: js.UndefOr[Double] = js.undefined
     
-    var maxDelay: js.UndefOr[Double] = js.native
+    var maxDelay: js.UndefOr[Double] = js.undefined
     
-    var multiplier: js.UndefOr[Double] = js.native
+    var multiplier: js.UndefOr[Double] = js.undefined
   }
   object BackoffOptions {
     

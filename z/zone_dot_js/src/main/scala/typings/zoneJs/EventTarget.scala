@@ -3,7 +3,6 @@ package typings.zoneJs
 import typings.std.EventListenerOrEventListenerObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,7 +18,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 1. removeAllListeners, remove all event listeners of the given event name.
   * 2. eventListeners, get all event listeners of the given event name.
   */
-@js.native
 trait EventTarget extends StObject {
   
   /**
@@ -37,7 +35,7 @@ trait EventTarget extends StObject {
     */
   var eventListeners: js.UndefOr[
     js.Function1[/* eventName */ js.UndefOr[String], js.Array[EventListenerOrEventListenerObject]]
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait EventTarget extends StObject {
     *
     * @param eventName the name of the event, such as `click`. This parameter is optional.
     */
-  var removeAllListeners: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[String], Unit]] = js.native
+  var removeAllListeners: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[String], Unit]] = js.undefined
 }
 object EventTarget {
   

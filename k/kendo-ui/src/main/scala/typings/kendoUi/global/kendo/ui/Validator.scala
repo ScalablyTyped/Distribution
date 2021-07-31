@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.ValidatorOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Validator")
 @js.native
 class Validator protected ()
-  extends typings.kendoUi.kendo.ui.Validator {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Validator {
   def this(element: Element) = this()
   def this(element: Element, options: ValidatorOptions) = this()
 }
@@ -21,9 +21,8 @@ object Validator {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Validator.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Validator = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Validator = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Validator]
   
   /* static member */
   @JSGlobal("kendo.ui.Validator.fn")

@@ -2,7 +2,6 @@ package typings.pTap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -29,7 +28,7 @@ object anon {
     		});
     	```
     	*/
-    def apply[ValueType](tapHandler: js.Function1[/* value */ ValueType, _]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
+    def apply[ValueType](tapHandler: js.Function1[/* value */ ValueType, js.Any]): js.Function1[/* value */ ValueType, js.Promise[ValueType]] = js.native
     
     /**
     	Tap into a promise chain without affecting its value or state. Use this in a `.catch()` method.
@@ -44,6 +43,6 @@ object anon {
     		.catch(handleError);
     	```
     	*/
-    def `catch`[ErrorType](tapHandler: js.Function1[/* error */ ErrorType, _]): js.Function1[/* error */ ErrorType, js.Promise[scala.Nothing]] = js.native
+    def `catch`[ErrorType](tapHandler: js.Function1[/* error */ ErrorType, js.Any]): js.Function1[/* error */ ErrorType, js.Promise[scala.Nothing]] = js.native
   }
 }

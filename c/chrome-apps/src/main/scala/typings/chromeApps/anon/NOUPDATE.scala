@@ -5,23 +5,21 @@ import typings.chromeApps.chromeAppsStrings.throttled_
 import typings.chromeApps.chromeAppsStrings.update_available_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NOUPDATE extends StObject {
   
-  var NO_UPDATE: no_update_ = js.native
+  var NO_UPDATE: no_update_
   
-  var THROTTLED: throttled_ = js.native
+  var THROTTLED: throttled_
   
-  var UPDATE_AVAILABLE: update_available_ = js.native
+  var UPDATE_AVAILABLE: update_available_
 }
 object NOUPDATE {
   
   @scala.inline
-  def apply(NO_UPDATE: no_update_, THROTTLED: throttled_, UPDATE_AVAILABLE: update_available_): NOUPDATE = {
-    val __obj = js.Dynamic.literal(NO_UPDATE = NO_UPDATE.asInstanceOf[js.Any], THROTTLED = THROTTLED.asInstanceOf[js.Any], UPDATE_AVAILABLE = UPDATE_AVAILABLE.asInstanceOf[js.Any])
+  def apply(): NOUPDATE = {
+    val __obj = js.Dynamic.literal(NO_UPDATE = "no_update", THROTTLED = "throttled", UPDATE_AVAILABLE = "update_available")
     __obj.asInstanceOf[NOUPDATE]
   }
   

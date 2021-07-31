@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
   */
-@js.native
 trait PlusBluetoothBluetoothDeviceInfo extends StObject {
   
   /**
@@ -19,35 +17,35 @@ trait PlusBluetoothBluetoothDeviceInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var RSSI: js.UndefOr[String] = js.native
+  var RSSI: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙设备的广播数据段中的ManufacturerData数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var advertisData: js.UndefOr[ArrayBuffer] = js.native
+  var advertisData: js.UndefOr[ArrayBuffer] = js.undefined
   
   /**
     * 蓝牙设备的广播数据段中的ServiceUUIDs数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var advertisServiceUUIDs: js.UndefOr[js.Array[_]] = js.native
+  var advertisServiceUUIDs: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 蓝牙设备的id
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var deviceId: js.UndefOr[String] = js.native
+  var deviceId: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙设备的广播数据段中的LocalName数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var localName: js.UndefOr[String] = js.native
+  var localName: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙设备名称
@@ -55,14 +53,14 @@ trait PlusBluetoothBluetoothDeviceInfo extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙设备的广播数据段中的ServiceData数据段
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/bluetooth.html](http://www.html5plus.org/doc/zh_cn/bluetooth.html)
     */
-  var serviceData: js.UndefOr[js.Any] = js.native
+  var serviceData: js.UndefOr[js.Any] = js.undefined
 }
 object PlusBluetoothBluetoothDeviceInfo {
   
@@ -82,7 +80,7 @@ object PlusBluetoothBluetoothDeviceInfo {
     def setAdvertisDataUndefined: Self = StObject.set(x, "advertisData", js.undefined)
     
     @scala.inline
-    def setAdvertisServiceUUIDs(value: js.Array[_]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
+    def setAdvertisServiceUUIDs(value: js.Array[js.Any]): Self = StObject.set(x, "advertisServiceUUIDs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAdvertisServiceUUIDsUndefined: Self = StObject.set(x, "advertisServiceUUIDs", js.undefined)

@@ -4,11 +4,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait suggest extends baseview {
+trait suggest
+  extends StObject
+     with baseview {
   
   @JSName("$enterKey")
   def $enterKey(args: js.Any*): js.Any = js.native
@@ -23,7 +24,7 @@ trait suggest extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   @JSName("config")
   var config_suggest: suggestConfig = js.native
@@ -63,9 +64,9 @@ trait suggest extends baseview {
   def setValue(value: Double): Unit = js.native
   
   def show(node: HTMLElement): Unit = js.native
-  def show(node: HTMLElement, position: js.UndefOr[scala.Nothing], point: String): Unit = js.native
   def show(node: HTMLElement, position: js.Any): Unit = js.native
   def show(node: HTMLElement, position: js.Any, point: String): Unit = js.native
+  def show(node: HTMLElement, position: Unit, point: String): Unit = js.native
   
   def unblockEvent(): Unit = js.native
 }

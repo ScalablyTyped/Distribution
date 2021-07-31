@@ -3,15 +3,13 @@ package typings.divaJs.anon
 import typings.divaJs.interfacesMod.SourceProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAllZoomLevelsForPage extends StObject {
   
-  var getAllZoomLevelsForPage: Double | js.Array[SourceProvider] = js.native
+  var getAllZoomLevelsForPage: Double | js.Array[SourceProvider]
   
-  var getBestZoomLevelForPage: Double | SourceProvider = js.native
+  var getBestZoomLevelForPage: Double | SourceProvider
 }
 object GetAllZoomLevelsForPage {
   

@@ -5,13 +5,13 @@ import typings.sharepoint.ISPClientPeoplePickerSchema
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SPClientPeoplePicker")
 @js.native
 class SPClientPeoplePicker ()
-  extends typings.sharepoint.SPClientPeoplePicker
+  extends StObject
+     with typings.sharepoint.SPClientPeoplePicker
 object SPClientPeoplePicker {
   
   @JSGlobal("SPClientPeoplePicker")
@@ -19,48 +19,41 @@ object SPClientPeoplePicker {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.AddAutoFillMetaData")
-  @js.native
+  @scala.inline
   def AddAutoFillMetaData(
     pickerObj: typings.sharepoint.SPClientPeoplePicker,
     options: js.Array[ISPClientPeoplePickerEntity],
     numOpts: Double
-  ): js.Array[ISPClientPeoplePickerEntity] = js.native
+  ): js.Array[ISPClientPeoplePickerEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("AddAutoFillMetaData")(pickerObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any], numOpts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ISPClientPeoplePickerEntity]]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.AugmentEntity")
-  @js.native
-  def AugmentEntity(entity: ISPClientPeoplePickerEntity): ISPClientPeoplePickerEntity = js.native
+  @scala.inline
+  def AugmentEntity(entity: ISPClientPeoplePickerEntity): ISPClientPeoplePickerEntity = ^.asInstanceOf[js.Dynamic].applyDynamic("AugmentEntity")(entity.asInstanceOf[js.Any]).asInstanceOf[ISPClientPeoplePickerEntity]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.AugmentEntitySuggestions")
-  @js.native
+  @scala.inline
   def AugmentEntitySuggestions(
     pickerObj: typings.sharepoint.SPClientPeoplePicker,
     allEntities: js.Array[ISPClientPeoplePickerEntity]
-  ): js.Array[ISPClientPeoplePickerEntity] = js.native
-  @JSGlobal("SPClientPeoplePicker.AugmentEntitySuggestions")
-  @js.native
+  ): js.Array[ISPClientPeoplePickerEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("AugmentEntitySuggestions")(pickerObj.asInstanceOf[js.Any], allEntities.asInstanceOf[js.Any])).asInstanceOf[js.Array[ISPClientPeoplePickerEntity]]
+  @scala.inline
   def AugmentEntitySuggestions(
     pickerObj: typings.sharepoint.SPClientPeoplePicker,
     allEntities: js.Array[ISPClientPeoplePickerEntity],
     mergeLocal: Boolean
-  ): js.Array[ISPClientPeoplePickerEntity] = js.native
+  ): js.Array[ISPClientPeoplePickerEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("AugmentEntitySuggestions")(pickerObj.asInstanceOf[js.Any], allEntities.asInstanceOf[js.Any], mergeLocal.asInstanceOf[js.Any])).asInstanceOf[js.Array[ISPClientPeoplePickerEntity]]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.BuildAutoFillMenuItems")
-  @js.native
-  def BuildAutoFillMenuItems(pickerObj: typings.sharepoint.SPClientPeoplePicker, options: js.Array[ISPClientPeoplePickerEntity]): js.Array[ISPClientPeoplePickerEntity] = js.native
+  @scala.inline
+  def BuildAutoFillMenuItems(pickerObj: typings.sharepoint.SPClientPeoplePicker, options: js.Array[ISPClientPeoplePickerEntity]): js.Array[ISPClientPeoplePickerEntity] = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildAutoFillMenuItems")(pickerObj.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[ISPClientPeoplePickerEntity]]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.BuildUnresolvedEntity")
-  @js.native
-  def BuildUnresolvedEntity(key: String, dispText: String): ISPClientPeoplePickerEntity = js.native
+  @scala.inline
+  def BuildUnresolvedEntity(key: String, dispText: String): ISPClientPeoplePickerEntity = (^.asInstanceOf[js.Dynamic].applyDynamic("BuildUnresolvedEntity")(key.asInstanceOf[js.Any], dispText.asInstanceOf[js.Any])).asInstanceOf[ISPClientPeoplePickerEntity]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.CreateSPPrincipalType")
-  @js.native
-  def CreateSPPrincipalType(acctStr: String): Double = js.native
+  @scala.inline
+  def CreateSPPrincipalType(acctStr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateSPPrincipalType")(acctStr.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   // = 'Title';
   /* static member */
@@ -95,23 +88,20 @@ object SPClientPeoplePicker {
   def DomainProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DomainProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.GetTopLevelControl")
-  @js.native
-  def GetTopLevelControl(elmChild: HTMLElement): HTMLElement = js.native
+  @scala.inline
+  def GetTopLevelControl(elmChild: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetTopLevelControl")(elmChild.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.InitializeStandalonePeoplePicker")
-  @js.native
+  @scala.inline
   def InitializeStandalonePeoplePicker(
     clientId: String,
     value: js.Array[ISPClientPeoplePickerEntity],
     schema: ISPClientPeoplePickerSchema
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("InitializeStandalonePeoplePicker")(clientId.asInstanceOf[js.Any], value.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.IsUserEntity")
-  @js.native
-  def IsUserEntity(entity: ISPClientPeoplePickerEntity): Boolean = js.native
+  @scala.inline
+  def IsUserEntity(entity: ISPClientPeoplePickerEntity): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("IsUserEntity")(entity.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   // = "UNVALIDATED_EMAIL_ADDRESS";
   /* static member */
@@ -122,14 +112,12 @@ object SPClientPeoplePicker {
   def KeyProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("KeyProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.ParseUserKeyPaste")
-  @js.native
-  def ParseUserKeyPaste(userKey: String): String = js.native
+  @scala.inline
+  def ParseUserKeyPaste(userKey: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseUserKeyPaste")(userKey.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.PickerObjectFromSubElement")
-  @js.native
-  def PickerObjectFromSubElement(elmSubElement: HTMLElement): typings.sharepoint.SPClientPeoplePicker = js.native
+  @scala.inline
+  def PickerObjectFromSubElement(elmSubElement: HTMLElement): typings.sharepoint.SPClientPeoplePicker = ^.asInstanceOf[js.Dynamic].applyDynamic("PickerObjectFromSubElement")(elmSubElement.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientPeoplePicker]
   
   // = 'Description';
   /* static member */
@@ -164,9 +152,8 @@ object SPClientPeoplePicker {
   def SuggestionsName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SuggestionsName")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("SPClientPeoplePicker.TestLocalMatch")
-  @js.native
-  def TestLocalMatch(strSearchLower: String, dataEntity: ISPClientPeoplePickerEntity): Boolean = js.native
+  @scala.inline
+  def TestLocalMatch(strSearchLower: String, dataEntity: ISPClientPeoplePickerEntity): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("TestLocalMatch")(strSearchLower.asInstanceOf[js.Any], dataEntity.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   // = 'AutoFillSubDisplayText';
   /* static member */

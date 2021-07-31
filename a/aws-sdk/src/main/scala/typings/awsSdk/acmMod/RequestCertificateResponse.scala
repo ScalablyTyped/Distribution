@@ -2,16 +2,14 @@ package typings.awsSdk.acmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestCertificateResponse extends StObject {
   
   /**
     * String that contains the ARN of the issued certificate. This must be of the form:  arn:aws:acm:us-east-1:123456789012:certificate/12345678-1234-1234-1234-123456789012 
     */
-  var CertificateArn: js.UndefOr[Arn] = js.native
+  var CertificateArn: js.UndefOr[Arn] = js.undefined
 }
 object RequestCertificateResponse {
   

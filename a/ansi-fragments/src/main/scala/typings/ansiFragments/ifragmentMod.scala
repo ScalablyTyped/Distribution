@@ -2,15 +2,13 @@ package typings.ansiFragments
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ifragmentMod {
   
-  @js.native
   trait IFragment extends StObject {
     
-    def build(): String = js.native
+    def build(): String
   }
   object IFragment {
     

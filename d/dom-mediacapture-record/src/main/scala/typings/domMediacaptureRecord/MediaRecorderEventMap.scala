@@ -3,23 +3,21 @@ package typings.domMediacaptureRecord
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaRecorderEventMap extends StObject {
   
-  var dataavailable: BlobEvent = js.native
+  var dataavailable: BlobEvent
   
-  var error: MediaRecorderErrorEvent = js.native
+  var error: MediaRecorderErrorEvent
   
-  var pause: Event = js.native
+  var pause: Event
   
-  var resume: Event = js.native
+  var resume: Event
   
-  var start: Event = js.native
+  var start: Event
   
-  var stop: Event = js.native
+  var stop: Event
 }
 object MediaRecorderEventMap {
   

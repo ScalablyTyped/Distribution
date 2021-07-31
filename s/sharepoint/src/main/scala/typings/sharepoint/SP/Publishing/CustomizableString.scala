@@ -3,11 +3,12 @@ package typings.sharepoint.SP.Publishing
 import typings.sharepoint.SP.ClientObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CustomizableString extends ClientObject {
+trait CustomizableString
+  extends StObject
+     with ClientObject {
   
   def get_defaultValue(): String = js.native
   

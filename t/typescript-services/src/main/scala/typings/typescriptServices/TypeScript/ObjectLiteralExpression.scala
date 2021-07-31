@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ObjectLiteralExpression extends AST {
+trait ObjectLiteralExpression
+  extends StObject
+     with AST {
   
-  var propertyAssignments: ISeparatedSyntaxList2 = js.native
+  var propertyAssignments: ISeparatedSyntaxList2
   
-  def structuralEquals(ast: ObjectLiteralExpression, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ObjectLiteralExpression, includingPosition: Boolean): Boolean
 }
 object ObjectLiteralExpression {
   

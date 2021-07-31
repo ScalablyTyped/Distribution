@@ -4,31 +4,29 @@ import typings.gapiCalendar.anon.Method
 import typings.gapiCalendar.anon.Notifications
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarListInput extends StObject {
   
   // Optional Properties
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var colorId: js.UndefOr[String] = js.native
+  var colorId: js.UndefOr[String] = js.undefined
   
-  var defaultReminders: js.UndefOr[js.Array[Method]] = js.native
+  var defaultReminders: js.UndefOr[js.Array[Method]] = js.undefined
   
-  var foregroundColor: js.UndefOr[String] = js.native
+  var foregroundColor: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   // Required Properties
-  var id: String = js.native
+  var id: String
   
-  var notificationSettings: js.UndefOr[Notifications] = js.native
+  var notificationSettings: js.UndefOr[Notifications] = js.undefined
   
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
-  var summaryOverride: js.UndefOr[String] = js.native
+  var summaryOverride: js.UndefOr[String] = js.undefined
 }
 object CalendarListInput {
   

@@ -5,24 +5,22 @@ import typings.antd.cascaderMod.CascaderProps
 import typings.antd.cascaderMod.CascaderValueType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd.antd/lib/cascader.CascaderState> */
-@js.native
 trait PartialCascaderState extends StObject {
   
-  var flattenOptions: js.UndefOr[js.Array[js.Array[CascaderOptionType]]] = js.native
+  var flattenOptions: js.UndefOr[js.Array[js.Array[CascaderOptionType]]] = js.undefined
   
-  var inputFocused: js.UndefOr[Boolean] = js.native
+  var inputFocused: js.UndefOr[Boolean] = js.undefined
   
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
-  var popupVisible: js.UndefOr[Boolean] = js.native
+  var popupVisible: js.UndefOr[Boolean] = js.undefined
   
-  var prevProps: js.UndefOr[CascaderProps] = js.native
+  var prevProps: js.UndefOr[CascaderProps] = js.undefined
   
-  var value: js.UndefOr[CascaderValueType] = js.native
+  var value: js.UndefOr[CascaderValueType] = js.undefined
 }
 object PartialCascaderState {
   

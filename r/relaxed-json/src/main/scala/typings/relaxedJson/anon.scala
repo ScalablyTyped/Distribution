@@ -3,23 +3,21 @@ package typings.relaxedJson
 import typings.relaxedJson.mod.Reviver
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Duplicate extends StObject {
     
-    var duplicate: js.UndefOr[Boolean] = js.native
+    var duplicate: js.UndefOr[Boolean] = js.undefined
     
-    var relaxed: js.UndefOr[Boolean] = js.native
+    var relaxed: js.UndefOr[Boolean] = js.undefined
     
-    var reviver: js.UndefOr[Reviver] = js.native
+    var reviver: js.UndefOr[Reviver] = js.undefined
     
-    var tolerant: js.UndefOr[Boolean] = js.native
+    var tolerant: js.UndefOr[Boolean] = js.undefined
     
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
   }
   object Duplicate {
     

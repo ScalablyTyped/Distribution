@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersEnvironmentsAuthorize extends StandardParameters {
+trait ParamsResourceUsersEnvironmentsAuthorize
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the resource that should receive the credentials, for example
     * `users/me/environments/default` or
     * `users/someone@example.com/environments/default`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaAuthorizeEnvironmentRequest] = js.native
+  var requestBody: js.UndefOr[SchemaAuthorizeEnvironmentRequest] = js.undefined
 }
 object ParamsResourceUsersEnvironmentsAuthorize {
   

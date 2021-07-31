@@ -4,27 +4,27 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * allows to retrieve the user interface configuration manager related to an object.
   * @since OOo 2.0
   */
-@js.native
-trait XUIConfigurationManagerSupplier extends XInterface {
+trait XUIConfigurationManagerSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the user interface configuration manager related to the object.
     * @returns an object implementing {@link com.sun.star.ui.UIConfigurationManager} service.
     */
-  val UIConfigurationManager: XUIConfigurationManager = js.native
+  val UIConfigurationManager: XUIConfigurationManager
   
   /**
     * returns the user interface configuration manager related to the object.
     * @returns an object implementing {@link com.sun.star.ui.UIConfigurationManager} service.
     */
-  def getUIConfigurationManager(): XUIConfigurationManager = js.native
+  def getUIConfigurationManager(): XUIConfigurationManager
 }
 object XUIConfigurationManagerSupplier {
   

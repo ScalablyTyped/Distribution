@@ -2,16 +2,14 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetThirdPartyJobDetailsOutput extends StObject {
   
   /**
     * The details of the job, including any protected values defined for the job.
     */
-  var jobDetails: js.UndefOr[ThirdPartyJobDetails] = js.native
+  var jobDetails: js.UndefOr[ThirdPartyJobDetails] = js.undefined
 }
 object GetThirdPartyJobDetailsOutput {
   

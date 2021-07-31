@@ -2,15 +2,13 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBeaconsSuccess extends StObject {
   
-  var beacons: js.Array[Beacon] = js.native
+  var beacons: js.Array[Beacon]
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object GetBeaconsSuccess {
   

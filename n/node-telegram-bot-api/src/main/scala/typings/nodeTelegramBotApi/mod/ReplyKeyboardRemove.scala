@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplyKeyboardRemove extends StObject {
   
-  var remove_keyboard: Boolean = js.native
+  var remove_keyboard: Boolean
   
-  var selective: js.UndefOr[Boolean] = js.native
+  var selective: js.UndefOr[Boolean] = js.undefined
 }
 object ReplyKeyboardRemove {
   

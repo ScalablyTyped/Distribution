@@ -8,33 +8,29 @@ import typings.routeNode.routeNodeMod.RouteNodeStateMeta
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpersMod {
   
-  @JSImport("route-node/dist/helpers", "buildPathFromSegments")
+  @JSImport("route-node/dist/helpers", JSImport.Namespace)
   @js.native
-  def buildPathFromSegments(segments: js.Array[RouteNode]): String = js.native
-  @JSImport("route-node/dist/helpers", "buildPathFromSegments")
-  @js.native
-  def buildPathFromSegments(segments: js.Array[RouteNode], params: js.UndefOr[scala.Nothing], options: BuildOptions): String = js.native
-  @JSImport("route-node/dist/helpers", "buildPathFromSegments")
-  @js.native
-  def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, _]): String = js.native
-  @JSImport("route-node/dist/helpers", "buildPathFromSegments")
-  @js.native
-  def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, _], options: BuildOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("route-node/dist/helpers", "buildStateFromMatch")
-  @js.native
-  def buildStateFromMatch(`match`: MatchResponse): RouteNodeState | Null = js.native
+  @scala.inline
+  def buildPathFromSegments(segments: js.Array[RouteNode]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildPathFromSegments")(segments.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def buildPathFromSegments(segments: js.Array[RouteNode], params: Unit, options: BuildOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPathFromSegments")(segments.asInstanceOf[js.Any], params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPathFromSegments")(segments.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def buildPathFromSegments(segments: js.Array[RouteNode], params: Record[String, js.Any], options: BuildOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildPathFromSegments")(segments.asInstanceOf[js.Any], params.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("route-node/dist/helpers", "getMetaFromSegments")
-  @js.native
-  def getMetaFromSegments(segments: js.Array[RouteNode]): RouteNodeStateMeta = js.native
+  @scala.inline
+  def buildStateFromMatch(`match`: MatchResponse): RouteNodeState | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("buildStateFromMatch")(`match`.asInstanceOf[js.Any]).asInstanceOf[RouteNodeState | Null]
   
-  @JSImport("route-node/dist/helpers", "getPathFromSegments")
-  @js.native
-  def getPathFromSegments(segments: js.Array[RouteNode]): String | Null = js.native
+  @scala.inline
+  def getMetaFromSegments(segments: js.Array[RouteNode]): RouteNodeStateMeta = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetaFromSegments")(segments.asInstanceOf[js.Any]).asInstanceOf[RouteNodeStateMeta]
+  
+  @scala.inline
+  def getPathFromSegments(segments: js.Array[RouteNode]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPathFromSegments")(segments.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

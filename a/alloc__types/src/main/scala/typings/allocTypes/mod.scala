@@ -8,7 +8,6 @@ import typings.std.Exclude
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,12 +16,11 @@ object mod {
   @js.native
   class Any () extends StObject
   
-  type AnyFn[In /* <: js.Array[_] */, Out] = js.Function1[/* args */ In, Out]
+  type AnyFn[In /* <: js.Array[js.Any] */, Out] = js.Function1[/* args */ In, Out]
   
-  @js.native
   trait Disposable extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object Disposable {
     
@@ -40,9 +38,7 @@ object mod {
     }
   }
   
-  type Exclusive[T] = Remap[
-    typings.allocTypes.allocTypesStrings.Exclusive with TopLevel[T] with TopLevel[js.Any]
-  ]
+  type Exclusive[T] = Remap[typings.allocTypes.allocTypesStrings.Exclusive & TopLevel[T] & TopLevel[js.Any]]
   
   type Falsy = js.UndefOr[`false` | Null]
   
@@ -52,17 +48,17 @@ object mod {
   type Lookup[T] = StringDictionary[T]
   
   type MergeDefaults[T /* <: js.Object */, U /* <: Partial[T] */] = Remap[
-    (Omit[T, /* keyof U */ String]) with (Partial[Pick[T, Extract[/* keyof U */ String, /* keyof T */ String]]])
+    (Omit[T, /* keyof U */ String]) & (Partial[Pick[T, Extract[/* keyof U */ String, /* keyof T */ String]]])
   ]
   
-  type MergeUnknown[T, U] = Remap[T with (Omit[U, /* keyof T */ String])]
+  type MergeUnknown[T, U] = Remap[T & (Omit[U, /* keyof T */ String])]
   
   type NoInfer[T] = /* import warning: importer.ImportType#apply Failed type conversion: [T][T extends any ? 0 : never] */ js.Any
   
   type ObjectFromUnion[T /* <: js.Object */] = Remap[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof @alloc/types.@alloc/types.Intersect<T> ]: T extends infer U? P extends keyof any? any[P] : never : never}
-    */ typings.allocTypes.allocTypesStrings.ObjectFromUnion with TopLevel[js.Any]
+    */ typings.allocTypes.allocTypesStrings.ObjectFromUnion & TopLevel[js.Any]
   ]
   
   type ObjectType[T] = js.Object | T
@@ -71,17 +67,17 @@ object mod {
   
   type OneOrMore[T] = T | js.Array[T]
   
-  type Overwrite[T, U] = Remap[(Omit[T, /* keyof U */ String]) with U]
+  type Overwrite[T, U] = Remap[(Omit[T, /* keyof U */ String]) & U]
   
-  type Partial[T] = js.Object with typings.allocTypes.allocTypesStrings.Partial with TopLevel[T]
+  type Partial[T] = js.Object & typings.allocTypes.allocTypesStrings.Partial & TopLevel[T]
   
-  type Pick[T, K /* <: /* keyof T */ String */] = js.Object with typings.allocTypes.allocTypesStrings.Pick with TopLevel[T]
+  type Pick[T, K /* <: /* keyof T */ String */] = js.Object & typings.allocTypes.allocTypesStrings.Pick & TopLevel[T]
   
-  type Remap[T] = js.Object with typings.allocTypes.allocTypesStrings.Remap with TopLevel[T]
+  type Remap[T] = js.Object & typings.allocTypes.allocTypesStrings.Remap & TopLevel[T]
   
   type Solve[T] = T
   
-  type StaticProps[T] = Omit[T, (/* keyof T */ String) with prototype]
+  type StaticProps[T] = Omit[T, (/* keyof T */ String) & prototype]
   
   type UnknownProps = Lookup[js.Any]
 }

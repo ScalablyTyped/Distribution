@@ -4,62 +4,62 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Dialog //////////////////////////////////////////////////
-@js.native
-trait DialogOptions extends DialogEvents {
+trait DialogOptions
+  extends StObject
+     with DialogEvents {
   
-  var appendTo: js.UndefOr[String] = js.native
+  var appendTo: js.UndefOr[String] = js.undefined
   
-  var autoOpen: js.UndefOr[Boolean] = js.native
+  var autoOpen: js.UndefOr[Boolean] = js.undefined
   
   var buttons: js.UndefOr[
     (StringDictionary[js.Function1[/* event */ js.UndefOr[Event], Unit]]) | js.Array[DialogButtonOptions]
-  ] = js.native
+  ] = js.undefined
   
-  var classes: js.UndefOr[DialogClasses] = js.native
+  var classes: js.UndefOr[DialogClasses] = js.undefined
   
-  var closeOnEscape: js.UndefOr[Boolean] = js.native
+  var closeOnEscape: js.UndefOr[Boolean] = js.undefined
   
-  var closeText: js.UndefOr[String] = js.native
+  var closeText: js.UndefOr[String] = js.undefined
   
-  var dialogClass: js.UndefOr[String] = js.native
+  var dialogClass: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var hide: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.native
+  var hide: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var position: js.UndefOr[js.Any] = js.native
+  var position: js.UndefOr[js.Any] = js.undefined
   
   // object, string or []
-  var resizable: js.UndefOr[Boolean] = js.native
+  var resizable: js.UndefOr[Boolean] = js.undefined
   
-  var show: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.native
+  var show: js.UndefOr[Boolean | Double | String | DialogShowHideOptions] = js.undefined
   
-  var stack: js.UndefOr[Boolean] = js.native
+  var stack: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   // number or string
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object DialogOptions {
   

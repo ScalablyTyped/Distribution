@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * "ENTITY", or "ENTITIES", it can use the information that it obtained through this interface to find the entity and/or notation that corresponds with
   * the attribute value.
   */
-@js.native
-trait XDTDHandler extends XInterface {
+trait XDTDHandler
+  extends StObject
+     with XInterface {
   
   /** receives notification of a notation declaration event. */
-  def notationDecl(sName: String, sPublicId: String, sSystemId: String): Unit = js.native
+  def notationDecl(sName: String, sPublicId: String, sSystemId: String): Unit
   
   /** receives notification of an unparsed entity declaration event. */
-  def unparsedEntityDecl(sName: String, sPublicId: String, sSystemId: String, sNotationName: String): Unit = js.native
+  def unparsedEntityDecl(sName: String, sPublicId: String, sSystemId: String, sNotationName: String): Unit
 }
 object XDTDHandler {
   

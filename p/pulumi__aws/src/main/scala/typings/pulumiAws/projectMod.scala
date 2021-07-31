@@ -16,7 +16,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object projectMod {
@@ -132,6 +131,10 @@ object projectMod {
   /* static members */
   object Project {
     
+    @JSImport("@pulumi/aws/codebuild/project", "Project")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Project resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -141,119 +144,113 @@ object projectMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codebuild/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Project = js.native
-    @JSImport("@pulumi/aws/codebuild/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Project = js.native
-    @JSImport("@pulumi/aws/codebuild/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProjectState): Project = js.native
-    @JSImport("@pulumi/aws/codebuild/project", "Project.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ProjectState, opts: CustomResourceOptions): Project = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Project]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProjectState): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Project]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ProjectState, opts: CustomResourceOptions): Project = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Project]
     
     /**
       * Returns true if the given object is an instance of Project.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codebuild/project", "Project.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codebuild/project.Project */ Boolean]
   }
   
-  @js.native
   trait ProjectArgs extends StObject {
     
     /**
       * Information about the project's build output artifacts. Artifact blocks are documented below.
       */
-    val artifacts: Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts] = js.native
+    val artifacts: Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts]
     
     /**
       * Generates a publicly-accessible URL for the projects build badge. Available as `badgeUrl` attribute when enabled.
       */
-    val badgeEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val badgeEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * How long in minutes, from 5 to 480 (8 hours), for AWS CodeBuild to wait until timing out any related build that does not get marked as completed. The default is 60 minutes.
       */
-    val buildTimeout: js.UndefOr[Input[Double]] = js.native
+    val buildTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Information about the cache storage for the project. Cache blocks are documented below.
       */
-    val cache: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]] = js.native
+    val cache: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]] = js.undefined
     
     /**
       * A short description of the project.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build project's build output artifacts.
       */
-    val encryptionKey: js.UndefOr[Input[String]] = js.native
+    val encryptionKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the project's build environment. Environment blocks are documented below.
       */
-    val environment: Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment] = js.native
+    val environment: Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment]
     
     /**
       * Configuration for the builds to store log data to CloudWatch or S3.
       */
-    val logsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]] = js.native
+    val logsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]] = js.undefined
     
     /**
       * The projects name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * How long in minutes, from 5 to 480 (8 hours), a build is allowed to be queued before it times out. The default is 8 hours.
       */
-    val queuedTimeout: js.UndefOr[Input[Double]] = js.native
+    val queuedTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A set of secondary artifacts to be used inside the build. Secondary artifacts blocks are documented below.
       */
     val secondaryArtifacts: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
       */
     val secondarySources: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
       */
-    val serviceRole: Input[String] = js.native
+    val serviceRole: Input[String]
     
     /**
       * Information about the project's input source code. Source blocks are documented below.
       */
-    val source: Input[typings.pulumiAws.inputMod.codebuild.ProjectSource] = js.native
+    val source: Input[typings.pulumiAws.inputMod.codebuild.ProjectSource]
     
     /**
       * A version of the build input to be built for this project. If not specified, the latest version is used.
       */
-    val sourceVersion: js.UndefOr[Input[String]] = js.native
+    val sourceVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration for the builds to run inside a VPC. VPC config blocks are documented below.
       */
-    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]] = js.native
+    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]] = js.undefined
   }
   object ProjectArgs {
     
@@ -369,107 +366,106 @@ object projectMod {
     }
   }
   
-  @js.native
   trait ProjectState extends StObject {
     
     /**
       * The ARN of the CodeBuild project.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the project's build output artifacts. Artifact blocks are documented below.
       */
-    val artifacts: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts]] = js.native
+    val artifacts: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectArtifacts]] = js.undefined
     
     /**
       * Generates a publicly-accessible URL for the projects build badge. Available as `badgeUrl` attribute when enabled.
       */
-    val badgeEnabled: js.UndefOr[Input[Boolean]] = js.native
+    val badgeEnabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The URL of the build badge when `badgeEnabled` is enabled.
       */
-    val badgeUrl: js.UndefOr[Input[String]] = js.native
+    val badgeUrl: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * How long in minutes, from 5 to 480 (8 hours), for AWS CodeBuild to wait until timing out any related build that does not get marked as completed. The default is 60 minutes.
       */
-    val buildTimeout: js.UndefOr[Input[Double]] = js.native
+    val buildTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Information about the cache storage for the project. Cache blocks are documented below.
       */
-    val cache: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]] = js.native
+    val cache: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectCache]] = js.undefined
     
     /**
       * A short description of the project.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the build project's build output artifacts.
       */
-    val encryptionKey: js.UndefOr[Input[String]] = js.native
+    val encryptionKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the project's build environment. Environment blocks are documented below.
       */
-    val environment: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment]] = js.native
+    val environment: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectEnvironment]] = js.undefined
     
     /**
       * Configuration for the builds to store log data to CloudWatch or S3.
       */
-    val logsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]] = js.native
+    val logsConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectLogsConfig]] = js.undefined
     
     /**
       * The projects name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * How long in minutes, from 5 to 480 (8 hours), a build is allowed to be queued before it times out. The default is 8 hours.
       */
-    val queuedTimeout: js.UndefOr[Input[Double]] = js.native
+    val queuedTimeout: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A set of secondary artifacts to be used inside the build. Secondary artifacts blocks are documented below.
       */
     val secondaryArtifacts: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondaryArtifact]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A set of secondary sources to be used inside the build. Secondary sources blocks are documented below.
       */
     val secondarySources: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.codebuild.ProjectSecondarySource]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that enables AWS CodeBuild to interact with dependent AWS services on behalf of the AWS account.
       */
-    val serviceRole: js.UndefOr[Input[String]] = js.native
+    val serviceRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Information about the project's input source code. Source blocks are documented below.
       */
-    val source: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectSource]] = js.native
+    val source: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectSource]] = js.undefined
     
     /**
       * A version of the build input to be built for this project. If not specified, the latest version is used.
       */
-    val sourceVersion: js.UndefOr[Input[String]] = js.native
+    val sourceVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Configuration for the builds to run inside a VPC. VPC config blocks are documented below.
       */
-    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]] = js.native
+    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.codebuild.ProjectVpcConfig]] = js.undefined
   }
   object ProjectState {
     

@@ -3,10 +3,8 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPopulateVersionFilesRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaPopulateVersionFilesRequest extends StObject {
     * the path from the version. Calculate a hash by Gzipping the file then
     * taking the SHA256 hash of the newly compressed file.
     */
-  var files: js.UndefOr[StringDictionary[String]] = js.native
+  var files: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaPopulateVersionFilesRequest {
   

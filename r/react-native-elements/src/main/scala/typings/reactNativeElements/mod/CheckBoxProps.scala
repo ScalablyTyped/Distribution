@@ -9,141 +9,139 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeElements.anon.PartialTextProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckBoxProps extends StObject {
   
   /**
     *  Specify React Native component for main button
     */
-  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+  var Component: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
   
   /**
     * Aligns checkbox to center
     *
     *  @default false
     */
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag for checking the icon
     *
     * @default false
     */
-  var checked: Boolean = js.native
+  var checked: Boolean
   
   /**
     * Default checked color
     *
     * @default 'green'
     */
-  var checkedColor: js.UndefOr[String] = js.native
+  var checkedColor: js.UndefOr[String] = js.undefined
   
   /**
     * Default checked icon (Font Awesome Icon)
     *
     * @default 'check-square-o'
     */
-  var checkedIcon: js.UndefOr[String | ReactElement] = js.native
+  var checkedIcon: js.UndefOr[String | ReactElement] = js.undefined
   
   /**
     * Specify a custom checked message
     */
-  var checkedTitle: js.UndefOr[String] = js.native
+  var checkedTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Style of main container
     */
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
   /**
     * Specify different font family
     * @default 'System font bold (iOS)'
     * @default 'Sans Serif Bold (android)'
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * Moves icon to right of text.
     *
     * @default false
     */
-  var iconRight: js.UndefOr[Boolean] = js.native
+  var iconRight: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Icon family, can be one of the following
     * (required only if specifying an icon that is not from font-awesome)
     */
-  var iconType: js.UndefOr[IconType] = js.native
+  var iconType: js.UndefOr[IconType] = js.undefined
   
   /**
     * onPress function for checkbox
     */
-  var onIconPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onIconPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * onLongPress function for checkbox
     */
-  var onLongIconPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongIconPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * onLongPress function for checkbox
     */
-  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * onPress function for container
     */
-  var onPress: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPress: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Aligns checkbox to right
     *
     * @default false
     */
-  var right: js.UndefOr[Boolean] = js.native
+  var right: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Size of the checkbox
     *
     * @default 24
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * style of text
     */
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Title of checkbox
     */
-  var title: js.UndefOr[String | ReactElement] = js.native
+  var title: js.UndefOr[String | ReactElement] = js.undefined
   
   /**
     * Additional props for the title
     */
-  var titleProps: js.UndefOr[PartialTextProperties] = js.native
+  var titleProps: js.UndefOr[PartialTextProperties] = js.undefined
   
   /**
     * Default unchecked color
     * @default '#bfbfbf'
     */
-  var uncheckedColor: js.UndefOr[String] = js.native
+  var uncheckedColor: js.UndefOr[String] = js.undefined
   
   /**
     * Default checked icon (Font Awesome Icon)
     *
     * @default 'square-o'
     */
-  var uncheckedIcon: js.UndefOr[String | ReactElement] = js.native
+  var uncheckedIcon: js.UndefOr[String | ReactElement] = js.undefined
   
   /**
     * Style of container that wraps the check box and text
     */
-  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var wrapperStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object CheckBoxProps {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowLevelSecurityStatistics extends StObject {
   
   /** [Output-only] [Preview] Whether any accessed data was protected by row access policies. */
-  var rowLevelSecurityApplied: js.UndefOr[Boolean] = js.native
+  var rowLevelSecurityApplied: js.UndefOr[Boolean] = js.undefined
 }
 object RowLevelSecurityStatistics {
   

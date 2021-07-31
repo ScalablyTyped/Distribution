@@ -2,21 +2,19 @@ package typings.swipeview
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwipeViewOptions extends StObject {
   
-  var hastyPageFlip: js.UndefOr[Boolean] = js.native
+  var hastyPageFlip: js.UndefOr[Boolean] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var numberOfPages: js.UndefOr[Double] = js.native
+  var numberOfPages: js.UndefOr[Double] = js.undefined
   
-  var snapThreshold: js.UndefOr[Double] = js.native
+  var snapThreshold: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object SwipeViewOptions {
   

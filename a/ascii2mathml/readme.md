@@ -12,7 +12,7 @@ The second AsciiMath – MathML converter
 | Keywords           | mathml, asciimath, asciimathml |
 | # releases         | 5 |
 | # dependents       | 6 |
-| # downloads        | 13509 |
+| # downloads        | 14414 |
 | # stars            | 0 |
 
 ## Links

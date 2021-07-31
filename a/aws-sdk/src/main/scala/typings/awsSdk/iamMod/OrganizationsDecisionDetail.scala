@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationsDecisionDetail extends StObject {
   
   /**
     * Specifies whether the simulated operation is allowed by the Organizations service control policies that impact the simulated user's account.
     */
-  var AllowedByOrganizations: js.UndefOr[booleanType] = js.native
+  var AllowedByOrganizations: js.UndefOr[booleanType] = js.undefined
 }
 object OrganizationsDecisionDetail {
   

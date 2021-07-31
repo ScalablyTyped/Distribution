@@ -2,23 +2,23 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AbstractMeta extends UniqueId {
+trait AbstractMeta
+  extends StObject
+     with UniqueId {
   
-  var _attachments: js.UndefOr[String] = js.native
+  var _attachments: js.UndefOr[String] = js.undefined
   
-  var _etag: js.UndefOr[String] = js.native
+  var _etag: js.UndefOr[String] = js.undefined
   
-  var _rid: js.UndefOr[String] = js.native
+  var _rid: js.UndefOr[String] = js.undefined
   
   /** The self link. */
-  var _self: String = js.native
+  var _self: String
   
   /** The time the object was created. */
-  var _ts: Double = js.native
+  var _ts: Double
 }
 object AbstractMeta {
   

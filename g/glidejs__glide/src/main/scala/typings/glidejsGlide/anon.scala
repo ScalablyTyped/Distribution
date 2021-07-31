@@ -2,55 +2,53 @@ package typings.glidejsGlide
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActiveNav extends StObject {
     
     /**
       * @default 'glide__bullet--active'
       */
-    var activeNav: js.UndefOr[String] = js.native
+    var activeNav: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'glide__slide--active'
       */
-    var activeSlide: js.UndefOr[String] = js.native
+    var activeSlide: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'glide--carousel'
       */
-    var carousel: js.UndefOr[String] = js.native
+    var carousel: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'glide__slide--clone'
       */
-    var cloneSlide: js.UndefOr[String] = js.native
+    var cloneSlide: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[Ltr] = js.native
+    var direction: js.UndefOr[Ltr] = js.undefined
     
     /**
       * @default 'glide__arrow--disabled'
       */
-    var disabledArrow: js.UndefOr[String] = js.native
+    var disabledArrow: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'glide--dragging'
       */
-    var dragging: js.UndefOr[String] = js.native
+    var dragging: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'glide--slider'
       */
-    var slider: js.UndefOr[String] = js.native
+    var slider: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'glide--swipeable'
       */
-    var swipeable: js.UndefOr[String] = js.native
+    var swipeable: js.UndefOr[String] = js.undefined
   }
   object ActiveNav {
     
@@ -119,12 +117,11 @@ object anon {
     }
   }
   
-  @js.native
   trait After extends StObject {
     
-    var after: js.UndefOr[Double] = js.native
+    var after: js.UndefOr[Double] = js.undefined
     
-    var before: js.UndefOr[Double] = js.native
+    var before: js.UndefOr[Double] = js.undefined
   }
   object After {
     
@@ -151,18 +148,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Ltr extends StObject {
     
     /**
       * @default 'glide--ltr'
       */
-    var ltr: js.UndefOr[String] = js.native
+    var ltr: js.UndefOr[String] = js.undefined
     
     /**
       * @default 'glide--rtl'
       */
-    var rtl: js.UndefOr[String] = js.native
+    var rtl: js.UndefOr[String] = js.undefined
   }
   object Ltr {
     
@@ -189,13 +185,12 @@ object anon {
     }
   }
   
-  @js.native
   trait Modify extends StObject {
     
     /**
       * Modifies passed translate value by 100 pixels.
       */
-    def modify(translate: Double): Double = js.native
+    def modify(translate: Double): Double
   }
   object Modify {
     
@@ -213,10 +208,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Mount extends StObject {
     
-    def mount(): Unit = js.native
+    def mount(): Unit
   }
   object Mount {
     

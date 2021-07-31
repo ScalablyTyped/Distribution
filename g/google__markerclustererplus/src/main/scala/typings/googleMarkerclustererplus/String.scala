@@ -2,13 +2,11 @@ package typings.googleMarkerclustererplus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait String extends StObject {
   
-  def trim(): java.lang.String = js.native
+  def trim(): java.lang.String
 }
 object String {
   

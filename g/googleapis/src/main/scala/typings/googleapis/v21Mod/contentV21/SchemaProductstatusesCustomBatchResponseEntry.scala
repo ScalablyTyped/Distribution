@@ -2,35 +2,33 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A batch entry encoding a single non-batch productstatuses response.
   */
-@js.native
 trait SchemaProductstatusesCustomBatchResponseEntry extends StObject {
   
   /**
     * The ID of the request entry this entry responds to.
     */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of errors, if the request failed.
     */
-  var errors: js.UndefOr[SchemaErrors] = js.native
+  var errors: js.UndefOr[SchemaErrors] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#productstatusesCustomBatchResponseEntry&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The requested product status. Only defined if the request was successful.
     */
-  var productStatus: js.UndefOr[SchemaProductStatus] = js.native
+  var productStatus: js.UndefOr[SchemaProductStatus] = js.undefined
 }
 object SchemaProductstatusesCustomBatchResponseEntry {
   

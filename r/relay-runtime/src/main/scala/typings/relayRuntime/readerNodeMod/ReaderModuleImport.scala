@@ -2,19 +2,17 @@ package typings.relayRuntime.readerNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReaderModuleImport extends StObject {
   
-  val documentName: String = js.native
+  val documentName: String
   
-  val fragmentName: String = js.native
+  val fragmentName: String
   
-  val fragmentPropName: String = js.native
+  val fragmentPropName: String
   
-  val kind: String = js.native
+  val kind: String
 }
 object ReaderModuleImport {
   

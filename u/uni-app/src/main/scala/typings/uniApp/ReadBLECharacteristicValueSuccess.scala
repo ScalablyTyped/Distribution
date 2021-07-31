@@ -2,21 +2,19 @@ package typings.uniApp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadBLECharacteristicValueSuccess extends StObject {
   
   /**
     * 错误码
     */
-  var errCode: js.UndefOr[String] = js.native
+  var errCode: js.UndefOr[String] = js.undefined
   
   /**
     * 成功：ok，错误：详细信息
     */
-  var errMsg: js.UndefOr[String] = js.native
+  var errMsg: js.UndefOr[String] = js.undefined
 }
 object ReadBLECharacteristicValueSuccess {
   

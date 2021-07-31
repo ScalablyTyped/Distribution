@@ -7,7 +7,6 @@ import typings.node.streamMod.Transform
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -39,30 +38,29 @@ object mod extends Shortcut {
     var compareSha1Digest: IComparator = js.native
   }
   
-  @js.native
   trait IOptions extends StObject {
     
     /**
       * The working directory the folder is relative to.
       * @default process.cwd()
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * Extension of the destination files.
       */
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
     /**
       * Function that determines whether the source file is different from the destination file.
       * @default changed.compareLastModifiedTime
       */
-    var hasChanged: js.UndefOr[IComparator] = js.native
+    var hasChanged: js.UndefOr[IComparator] = js.undefined
     
     /**
       * Function to transform the path to the destination file. Should return the absolute path to the (renamed) destination file.
       */
-    var transformPath: js.UndefOr[js.Function1[/* destPath */ String, String]] = js.native
+    var transformPath: js.UndefOr[js.Function1[/* destPath */ String, String]] = js.undefined
   }
   object IOptions {
     

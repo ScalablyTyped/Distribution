@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifySoftwareTokenResponse extends StObject {
   
   /**
     * The session which should be passed both ways in challenge-response calls to the service.
     */
-  var Session: js.UndefOr[SessionType] = js.native
+  var Session: js.UndefOr[SessionType] = js.undefined
   
   /**
     * The status of the verify software token.
     */
-  var Status: js.UndefOr[VerifySoftwareTokenResponseType] = js.native
+  var Status: js.UndefOr[VerifySoftwareTokenResponseType] = js.undefined
 }
 object VerifySoftwareTokenResponse {
   

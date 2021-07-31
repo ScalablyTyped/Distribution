@@ -12,7 +12,7 @@ The lodash method `_.isArrayLike` exported as a module.
 | Keywords           | lodash-modularized, isarraylike |
 | # releases         | 0 |
 | # dependents       | 14 |
-| # downloads        | 18910 |
+| # downloads        | 25830 |
 | # stars            | 0 |
 
 ## Links

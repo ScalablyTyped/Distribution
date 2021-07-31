@@ -2,23 +2,21 @@ package typings.awsSdkClientLambdaNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesEnvironmentErrorMod {
   
-  @js.native
   trait EnvironmentError extends StObject {
     
     /**
       * <p>The error code.</p>
       */
-    var ErrorCode: js.UndefOr[String] = js.native
+    var ErrorCode: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The error message.</p>
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
   }
   object EnvironmentError {
     

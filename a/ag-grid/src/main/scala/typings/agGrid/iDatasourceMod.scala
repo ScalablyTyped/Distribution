@@ -2,21 +2,19 @@ package typings.agGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iDatasourceMod {
   
-  @js.native
   trait IDatasource extends StObject {
     
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Callback the grid calls that you implement to fetch rows from the server. See below for params.*/
-    def getRows(params: IGetRowsParams): Unit = js.native
+    def getRows(params: IGetRowsParams): Unit
     
     /** If you know up front how many rows are in the dataset, set it here. Otherwise leave blank.*/
-    var rowCount: js.UndefOr[Double] = js.native
+    var rowCount: js.UndefOr[Double] = js.undefined
   }
   object IDatasource {
     
@@ -68,7 +66,7 @@ object iDatasourceMod {
     var startRow: Double = js.native
     
     /** Callback to call for the result when successful. */
-    def successCallback(rowsThisBlock: js.Array[_]): Unit = js.native
-    def successCallback(rowsThisBlock: js.Array[_], lastRow: Double): Unit = js.native
+    def successCallback(rowsThisBlock: js.Array[js.Any]): Unit = js.native
+    def successCallback(rowsThisBlock: js.Array[js.Any], lastRow: Double): Unit = js.native
   }
 }

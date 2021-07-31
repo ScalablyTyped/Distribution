@@ -2,29 +2,27 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResult extends StObject {
   
   /** EntityManager that executed the query */
-  var entityManager: js.UndefOr[EntityManager] = js.native
+  var entityManager: js.UndefOr[EntityManager] = js.undefined
   
   /** Raw response from the server */
-  var httpResponse: HttpResponse = js.native
+  var httpResponse: HttpResponse
   
   /** Total number of results available on the server */
-  var inlineCount: js.UndefOr[Double] = js.native
+  var inlineCount: js.UndefOr[Double] = js.undefined
   
   /** Query that was executed */
-  var query: EntityQuery = js.native
+  var query: EntityQuery
   
   /** Top level entities returned */
-  var results: js.Array[Entity] = js.native
+  var results: js.Array[Entity]
   
   /** All entities returned by the query.  Differs from results when an expand is used. */
-  var retrievedEntities: js.UndefOr[js.Array[Entity]] = js.native
+  var retrievedEntities: js.UndefOr[js.Array[Entity]] = js.undefined
 }
 object QueryResult {
   

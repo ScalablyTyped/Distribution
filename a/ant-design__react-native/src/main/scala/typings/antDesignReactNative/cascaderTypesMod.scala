@@ -5,19 +5,17 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cascaderTypesMod {
   
-  @js.native
   trait CascaderDataItem extends StObject {
     
-    var children: js.UndefOr[js.Array[CascaderDataItem]] = js.native
+    var children: js.UndefOr[js.Array[CascaderDataItem]] = js.undefined
     
-    var label: ReactNode = js.native
+    var label: ReactNode
     
-    var value: CascaderOneValue = js.native
+    var value: CascaderOneValue
   }
   object CascaderDataItem {
     
@@ -52,30 +50,29 @@ object cascaderTypesMod {
   
   type CascaderOneValue = String | Double
   
-  @js.native
   trait CascaderProps extends StObject {
     
-    var cols: js.UndefOr[Double] = js.native
+    var cols: js.UndefOr[Double] = js.undefined
     
-    var data: js.Array[CascaderDataItem] = js.native
+    var data: js.Array[CascaderDataItem]
     
-    var defaultValue: js.UndefOr[CascaderValue] = js.native
+    var defaultValue: js.UndefOr[CascaderValue] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var indicatorStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
     
-    var onScrollChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.native
+    var onScrollChange: js.UndefOr[js.Function1[/* value */ CascaderValue, Unit]] = js.undefined
     
-    var pickerItemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var pickerItemStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var rootNativeProps: js.UndefOr[js.Object] = js.native
+    var rootNativeProps: js.UndefOr[js.Object] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var value: js.UndefOr[CascaderValue] = js.native
+    var value: js.UndefOr[CascaderValue] = js.undefined
   }
   object CascaderProps {
     

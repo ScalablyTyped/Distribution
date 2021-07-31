@@ -4,19 +4,17 @@ import typings.playable.lifetimeMod.Lifetime
 import typings.playable.typesMod.IOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scoped extends StObject {
   
-  def scoped(): IOptions = js.native
+  def scoped(): IOptions
   
-  def setLifetime(value: Lifetime): IOptions = js.native
+  def setLifetime(value: Lifetime): IOptions
   
-  def singleton(): IOptions = js.native
+  def singleton(): IOptions
   
-  def transient(): IOptions = js.native
+  def transient(): IOptions
 }
 object Scoped {
   

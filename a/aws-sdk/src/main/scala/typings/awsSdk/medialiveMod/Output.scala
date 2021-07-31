@@ -2,36 +2,34 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
   /**
     * The names of the AudioDescriptions used as audio sources for this output.
     */
-  var AudioDescriptionNames: js.UndefOr[listOfString] = js.native
+  var AudioDescriptionNames: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The names of the CaptionDescriptions used as caption sources for this output.
     */
-  var CaptionDescriptionNames: js.UndefOr[listOfString] = js.native
+  var CaptionDescriptionNames: js.UndefOr[listOfString] = js.undefined
   
   /**
     * The name used to identify an output.
     */
-  var OutputName: js.UndefOr[stringMin1Max255] = js.native
+  var OutputName: js.UndefOr[stringMin1Max255] = js.undefined
   
   /**
     * Output type-specific settings.
     */
-  var OutputSettings: typings.awsSdk.medialiveMod.OutputSettings = js.native
+  var OutputSettings: typings.awsSdk.medialiveMod.OutputSettings
   
   /**
     * The name of the VideoDescription used as the source for this output.
     */
-  var VideoDescriptionName: js.UndefOr[string] = js.native
+  var VideoDescriptionName: js.UndefOr[string] = js.undefined
 }
 object Output {
   

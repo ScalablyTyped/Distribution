@@ -3,7 +3,6 @@ package typings.chrome.chrome
 import typings.chrome.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -52,20 +51,19 @@ object omnibox {
     def newForegroundTab: typings.chrome.chromeStrings.newForegroundTab = "newForegroundTab".asInstanceOf[typings.chrome.chromeStrings.newForegroundTab]
   }
   
-  @js.native
   trait SuggestResult extends StObject {
     
     /** The text that is put into the URL bar, and that is sent to the extension when the user chooses this entry. */
-    var content: String = js.native
+    var content: String
     
     /**
       * Whether the suggest result can be deleted by the user.
       * @since Chrome 63.
       */
-    var deletable: js.UndefOr[Boolean] = js.native
+    var deletable: js.UndefOr[Boolean] = js.undefined
     
     /** The text that is displayed in the URL dropdown. Can contain XML-style markup for styling. The supported tags are 'url' (for a literal URL), 'match' (for highlighting text that matched what the user's query), and 'dim' (for dim helper text). The styles can be nested, eg. dimmed match. You must escape the five predefined entities to display them as text: stackoverflow.com/a/1091953/89484 */
-    var description: String = js.native
+    var description: String
   }
   object SuggestResult {
     
@@ -92,11 +90,10 @@ object omnibox {
     }
   }
   
-  @js.native
   trait Suggestion extends StObject {
     
     /** The text that is displayed in the URL dropdown. Can contain XML-style markup for styling. The supported tags are 'url' (for a literal URL), 'match' (for highlighting text that matched what the user's query), and 'dim' (for dim helper text). The styles can be nested, eg. dimmed match. */
-    var description: String = js.native
+    var description: String
   }
   object Suggestion {
     

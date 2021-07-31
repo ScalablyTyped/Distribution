@@ -2,7 +2,6 @@ package typings.bases
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,19 +34,15 @@ object mod {
   @scala.inline
   def NUMERALS_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NUMERALS")(x.asInstanceOf[js.Any])
   
-  @JSImport("bases", "fromAlphabet")
-  @js.native
-  def fromAlphabet(str: String, alphabet: String): Double = js.native
+  @scala.inline
+  def fromAlphabet(str: String, alphabet: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fromAlphabet")(str.asInstanceOf[js.Any], alphabet.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bases", "fromBase")
-  @js.native
-  def fromBase(str: String, base: Double): Double = js.native
+  @scala.inline
+  def fromBase(str: String, base: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBase")(str.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("bases", "toAlphabet")
-  @js.native
-  def toAlphabet(num: Double, alphabet: String): String = js.native
+  @scala.inline
+  def toAlphabet(num: Double, alphabet: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toAlphabet")(num.asInstanceOf[js.Any], alphabet.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("bases", "toBase")
-  @js.native
-  def toBase(num: Double, base: Double): String = js.native
+  @scala.inline
+  def toBase(num: Double, base: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBase")(num.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[String]
 }

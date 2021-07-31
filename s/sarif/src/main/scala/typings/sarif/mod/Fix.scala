@@ -2,26 +2,24 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fix extends StObject {
   
   /**
     * One or more artifact changes that comprise a fix for a result.
     */
-  var artifactChanges: js.Array[ArtifactChange] = js.native
+  var artifactChanges: js.Array[ArtifactChange]
   
   /**
     * A message that describes the proposed fix, enabling viewers to present the proposed change to an end user.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the fix.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
 }
 object Fix {
   

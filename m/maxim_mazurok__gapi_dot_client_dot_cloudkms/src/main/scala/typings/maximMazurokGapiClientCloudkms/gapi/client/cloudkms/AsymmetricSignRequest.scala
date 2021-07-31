@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsymmetricSignRequest extends StObject {
   
   /** Required. The digest of the data to sign. The digest must be produced with the same digest algorithm as specified by the key version's algorithm. */
-  var digest: js.UndefOr[Digest] = js.native
+  var digest: js.UndefOr[Digest] = js.undefined
   
   /**
     * Optional. An optional CRC32C checksum of the AsymmetricSignRequest.digest. If specified, KeyManagementService will verify the integrity of the received AsymmetricSignRequest.digest
@@ -18,7 +16,7 @@ trait AsymmetricSignRequest extends StObject {
     * your computation of the CRC32C checksum. Note: This field is defined as int64 for reasons of compatibility across different languages. However, it is a non-negative integer, which
     * will never exceed 2^32-1, and can be safely downconverted to uint32 in languages that support this type. NOTE: This field is in Beta.
     */
-  var digestCrc32c: js.UndefOr[String] = js.native
+  var digestCrc32c: js.UndefOr[String] = js.undefined
 }
 object AsymmetricSignRequest {
   

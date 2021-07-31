@@ -5,143 +5,290 @@ import typings.antvGBase.typesMod.LooseObject
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object graphEventMod {
   
   @JSImport("@antv/g-base/lib/event/graph-event", JSImport.Default)
   @js.native
-  class default protected () extends GraphEvent {
+  class default protected ()
+    extends StObject
+       with GraphEvent {
     def this(`type`: js.Any, event: js.Any) = this()
-  }
-  
-  @js.native
-  trait GraphEvent extends StObject {
     
     /**
       * 是否允许冒泡
       * @type {boolean}
       */
+    /* CompleteClass */
     var bubbles: Boolean = js.native
     
     /**
       * 窗口上的位置 x
       * @type {number}
       */
+    /* CompleteClass */
     var clientX: Double = js.native
     
     /**
       * 窗口上的位置 y
       * @type {number}
       */
+    /* CompleteClass */
     var clientY: Double = js.native
     
     /**
       * 监听对象
       * @type {object}
       */
+    /* CompleteClass */
     var currentTarget: LooseObject = js.native
     
     /**
       * 是否阻止了原生事件
       * @type {boolean}
       */
+    /* CompleteClass */
     var defaultPrevented: Boolean = js.native
     
     /**
       * 委托事件监听对象的代理对象，即 ev.delegateObject = ev.currentTarget.get('delegateObject')
       * @type {object}
       */
+    /* CompleteClass */
     var delegateObject: js.Object = js.native
     
     /**
       * 委托对象
       * @type {object}
       */
+    /* CompleteClass */
     var delegateTarget: LooseObject = js.native
     
     /**
       * 开始触发事件的图形
       * @type {IShape}
       */
+    /* CompleteClass */
     var fromShape: IShape = js.native
     
     /**
       * 事件名称
       * @type {string}
       */
+    /* CompleteClass */
     var name: String = js.native
     
     /**
       * 触发时的对象
       * @type {object}
       */
+    /* CompleteClass */
     var originalEvent: Event = js.native
     
     /**
       * 阻止浏览器默认的行为
       */
-    def preventDefault(): Unit = js.native
+    /* CompleteClass */
+    override def preventDefault(): Unit = js.native
     
-    var propagationPath: js.Array[_] = js.native
+    /* CompleteClass */
+    var propagationPath: js.Array[js.Any] = js.native
     
     /**
       * 是否阻止传播（向上冒泡）
       * @type {boolean}
       */
+    /* CompleteClass */
     var propagationStopped: Boolean = js.native
     
-    def restore(): Unit = js.native
+    /* CompleteClass */
+    override def restore(): Unit = js.native
     
-    def save(): Unit = js.native
+    /* CompleteClass */
+    override def save(): Unit = js.native
     
     /**
       * 触发事件的图形
       * @type {IShape}
       */
+    /* CompleteClass */
     var shape: IShape = js.native
     
     /**
       * 阻止冒泡
       */
-    def stopPropagation(): Unit = js.native
+    /* CompleteClass */
+    override def stopPropagation(): Unit = js.native
     
     /**
       * 触发对象
       * @type {object}
       */
+    /* CompleteClass */
     var target: LooseObject = js.native
     
     /**
       * 触发时的时间
       * @type {number}
       */
+    /* CompleteClass */
     var timeStamp: Double = js.native
     
     /**
       * 事件结束时的触发图形
       * @type {IShape}
       */
+    /* CompleteClass */
     var toShape: IShape = js.native
     
     /**
       * 事件类型
       * @type {string}
       */
+    /* CompleteClass */
     var `type`: String = js.native
     
     /**
       * 画布上的位置 x
       * @type {number}
       */
+    /* CompleteClass */
     var x: Double = js.native
     
     /**
       * 画布上的位置 y
       * @type {number}
       */
+    /* CompleteClass */
     var y: Double = js.native
+  }
+  
+  trait GraphEvent extends StObject {
+    
+    /**
+      * 是否允许冒泡
+      * @type {boolean}
+      */
+    var bubbles: Boolean
+    
+    /**
+      * 窗口上的位置 x
+      * @type {number}
+      */
+    var clientX: Double
+    
+    /**
+      * 窗口上的位置 y
+      * @type {number}
+      */
+    var clientY: Double
+    
+    /**
+      * 监听对象
+      * @type {object}
+      */
+    var currentTarget: LooseObject
+    
+    /**
+      * 是否阻止了原生事件
+      * @type {boolean}
+      */
+    var defaultPrevented: Boolean
+    
+    /**
+      * 委托事件监听对象的代理对象，即 ev.delegateObject = ev.currentTarget.get('delegateObject')
+      * @type {object}
+      */
+    var delegateObject: js.Object
+    
+    /**
+      * 委托对象
+      * @type {object}
+      */
+    var delegateTarget: LooseObject
+    
+    /**
+      * 开始触发事件的图形
+      * @type {IShape}
+      */
+    var fromShape: IShape
+    
+    /**
+      * 事件名称
+      * @type {string}
+      */
+    var name: String
+    
+    /**
+      * 触发时的对象
+      * @type {object}
+      */
+    var originalEvent: Event
+    
+    /**
+      * 阻止浏览器默认的行为
+      */
+    def preventDefault(): Unit
+    
+    var propagationPath: js.Array[js.Any]
+    
+    /**
+      * 是否阻止传播（向上冒泡）
+      * @type {boolean}
+      */
+    var propagationStopped: Boolean
+    
+    def restore(): Unit
+    
+    def save(): Unit
+    
+    /**
+      * 触发事件的图形
+      * @type {IShape}
+      */
+    var shape: IShape
+    
+    /**
+      * 阻止冒泡
+      */
+    def stopPropagation(): Unit
+    
+    /**
+      * 触发对象
+      * @type {object}
+      */
+    var target: LooseObject
+    
+    /**
+      * 触发时的时间
+      * @type {number}
+      */
+    var timeStamp: Double
+    
+    /**
+      * 事件结束时的触发图形
+      * @type {IShape}
+      */
+    var toShape: IShape
+    
+    /**
+      * 事件类型
+      * @type {string}
+      */
+    var `type`: String
+    
+    /**
+      * 画布上的位置 x
+      * @type {number}
+      */
+    var x: Double
+    
+    /**
+      * 画布上的位置 y
+      * @type {number}
+      */
+    var y: Double
   }
   object GraphEvent {
     
@@ -158,7 +305,7 @@ object graphEventMod {
       name: String,
       originalEvent: Event,
       preventDefault: () => Unit,
-      propagationPath: js.Array[_],
+      propagationPath: js.Array[js.Any],
       propagationStopped: Boolean,
       restore: () => Unit,
       save: () => Unit,
@@ -213,7 +360,7 @@ object graphEventMod {
       def setPreventDefault(value: () => Unit): Self = StObject.set(x, "preventDefault", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setPropagationPath(value: js.Array[_]): Self = StObject.set(x, "propagationPath", value.asInstanceOf[js.Any])
+      def setPropagationPath(value: js.Array[js.Any]): Self = StObject.set(x, "propagationPath", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPropagationPathVarargs(value: js.Any*): Self = StObject.set(x, "propagationPath", js.Array(value :_*))

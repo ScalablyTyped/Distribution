@@ -3,25 +3,25 @@ package typings.ionic.definitionsMod
 import typings.ionic.ionicStrings.`ionic-angular`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IonicAngularBuildOptions extends BuildOptions[`ionic-angular`] {
+trait IonicAngularBuildOptions
+  extends StObject
+     with BuildOptions[`ionic-angular`] {
   
-  var aot: Boolean = js.native
+  var aot: Boolean
   
-  var env: js.UndefOr[String] = js.native
+  var env: js.UndefOr[String] = js.undefined
   
-  var minifycss: Boolean = js.native
+  var minifycss: Boolean
   
-  var minifyjs: Boolean = js.native
+  var minifyjs: Boolean
   
-  var optimizejs: Boolean = js.native
+  var optimizejs: Boolean
   
-  var prod: Boolean = js.native
+  var prod: Boolean
   
-  var sourcemaps: js.UndefOr[Boolean] = js.native
+  var sourcemaps: js.UndefOr[Boolean] = js.undefined
 }
 object IonicAngularBuildOptions {
   
@@ -33,12 +33,11 @@ object IonicAngularBuildOptions {
     minifycss: Boolean,
     minifyjs: Boolean,
     optimizejs: Boolean,
-    prod: Boolean,
-    `type`: `ionic-angular`
+    prod: Boolean
   ): IonicAngularBuildOptions = {
     val __obj = js.Dynamic.literal(aot = aot.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], minifycss = minifycss.asInstanceOf[js.Any], minifyjs = minifyjs.asInstanceOf[js.Any], optimizejs = optimizejs.asInstanceOf[js.Any], prod = prod.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ionic-angular")
     __obj.asInstanceOf[IonicAngularBuildOptions]
   }
   

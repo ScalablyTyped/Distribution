@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveAvailabilityZonesInput extends StObject {
   
   /**
     * The Availability Zones.
     */
-  var AvailabilityZones: typings.awsSdk.elbMod.AvailabilityZones = js.native
+  var AvailabilityZones: typings.awsSdk.elbMod.AvailabilityZones
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
 }
 object RemoveAvailabilityZonesInput {
   

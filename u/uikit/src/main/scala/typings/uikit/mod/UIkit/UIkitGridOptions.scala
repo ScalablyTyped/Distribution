@@ -2,19 +2,17 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitGridOptions extends StObject {
   
-  var `first-column`: js.UndefOr[String] = js.native
+  var `first-column`: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[String] = js.undefined
   
-  var masonry: js.UndefOr[Boolean] = js.native
+  var masonry: js.UndefOr[Boolean] = js.undefined
   
-  var parallax: js.UndefOr[Double] = js.native
+  var parallax: js.UndefOr[Double] = js.undefined
 }
 object UIkitGridOptions {
   

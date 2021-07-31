@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Edits$Bundles")
@@ -30,7 +29,7 @@ class ResourceEditsBundles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaBundlesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaBundlesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBundlesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBundlesListResponse] = js.native
   def list(params: ParamsResourceEditsBundlesList): GaxiosPromise[SchemaBundlesListResponse] = js.native
   def list(params: ParamsResourceEditsBundlesList, callback: BodyResponseCallback[SchemaBundlesListResponse]): Unit = js.native
   def list(
@@ -69,7 +68,7 @@ class ResourceEditsBundles protected () extends StObject {
     */
   def upload(): GaxiosPromise[SchemaBundle] = js.native
   def upload(callback: BodyResponseCallback[SchemaBundle]): Unit = js.native
-  def upload(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBundle] = js.native
+  def upload(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBundle] = js.native
   def upload(params: ParamsResourceEditsBundlesUpload): GaxiosPromise[SchemaBundle] = js.native
   def upload(params: ParamsResourceEditsBundlesUpload, callback: BodyResponseCallback[SchemaBundle]): Unit = js.native
   def upload(

@@ -2,24 +2,22 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * State family configuration.
   */
-@js.native
 trait SchemaStateFamilyConfig extends StObject {
   
   /**
     * If true, this family corresponds to a read operation.
     */
-  var isRead: js.UndefOr[Boolean] = js.native
+  var isRead: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The state family value.
     */
-  var stateFamily: js.UndefOr[String] = js.native
+  var stateFamily: js.UndefOr[String] = js.undefined
 }
 object SchemaStateFamilyConfig {
   

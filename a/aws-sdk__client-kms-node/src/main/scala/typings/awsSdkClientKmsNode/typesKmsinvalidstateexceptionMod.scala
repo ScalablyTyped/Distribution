@@ -30,15 +30,14 @@ import typings.awsSdkClientKmsNode.updateAliasExceptionsUnionMod.UpdateAliasExce
 import typings.awsSdkClientKmsNode.updateKeyDescriptionExceptionsUnionMod.UpdateKeyDescriptionExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesKmsinvalidstateexceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSInvalidStateExceptionDetails> * / any */ @js.native
-  trait KMSInvalidStateException
-    extends CancelKeyDeletionExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_KMSInvalidStateExceptionDetails> * / any */ trait KMSInvalidStateException
+    extends StObject
+       with CancelKeyDeletionExceptionsUnion
        with CreateAliasExceptionsUnion
        with CreateGrantExceptionsUnion
        with DecryptExceptionsUnion
@@ -67,13 +66,13 @@ object typesKmsinvalidstateexceptionMod {
        with UpdateAliasExceptionsUnion
        with UpdateKeyDescriptionExceptionsUnion {
     
-    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInvalidStateException = js.native
+    var name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInvalidStateException
   }
   object KMSInvalidStateException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientKmsNode.awsSdkClientKmsNodeStrings.KMSInvalidStateException): KMSInvalidStateException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): KMSInvalidStateException = {
+      val __obj = js.Dynamic.literal(name = "KMSInvalidStateException")
       __obj.asInstanceOf[KMSInvalidStateException]
     }
     
@@ -85,13 +84,12 @@ object typesKmsinvalidstateexceptionMod {
     }
   }
   
-  @js.native
   trait KMSInvalidStateExceptionDetails extends StObject {
     
     /**
       * _ErrorMessageType shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object KMSInvalidStateExceptionDetails {
     

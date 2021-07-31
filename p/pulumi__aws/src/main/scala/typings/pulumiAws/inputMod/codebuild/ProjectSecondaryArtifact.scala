@@ -3,56 +3,54 @@ package typings.pulumiAws.inputMod.codebuild
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSecondaryArtifact extends StObject {
   
   /**
     * The artifact identifier. Must be the same specified inside AWS CodeBuild buildspec.
     */
-  var artifactIdentifier: Input[String] = js.native
+  var artifactIdentifier: Input[String]
   
   /**
     * If set to true, output artifacts will not be encrypted. If `type` is set to `NO_ARTIFACTS` then this value will be ignored. Defaults to `false`.
     */
-  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.native
+  var encryptionDisabled: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Information about the build output artifact location. If `type` is set to `CODEPIPELINE` or `NO_ARTIFACTS` then this value will be ignored. If `type` is set to `S3`, this is the name of the output bucket. If `path` is not also specified, then `location` can also specify the path of the output artifact in the output bucket.
     */
-  var location: js.UndefOr[Input[String]] = js.native
+  var location: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The name of the project. If `type` is set to `S3`, this is the name of the output artifact object
     */
-  var name: js.UndefOr[Input[String]] = js.native
+  var name: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The namespace to use in storing build artifacts. If `type` is set to `S3`, then valid values for this parameter are: `BUILD_ID` or `NONE`.
     */
-  var namespaceType: js.UndefOr[Input[String]] = js.native
+  var namespaceType: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * If set to true, a name specified in the build spec file overrides the artifact name.
     */
-  var overrideArtifactName: js.UndefOr[Input[Boolean]] = js.native
+  var overrideArtifactName: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The type of build output artifact to create. If `type` is set to `S3`, valid values for this parameter are: `NONE` or `ZIP`
     */
-  var packaging: js.UndefOr[Input[String]] = js.native
+  var packaging: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * If `type` is set to `S3`, this is the path to the output artifact
     */
-  var path: js.UndefOr[Input[String]] = js.native
+  var path: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The build output artifact's type. Valid values for this parameter are: `CODEPIPELINE`, `NO_ARTIFACTS` or `S3`.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
 }
 object ProjectSecondaryArtifact {
   

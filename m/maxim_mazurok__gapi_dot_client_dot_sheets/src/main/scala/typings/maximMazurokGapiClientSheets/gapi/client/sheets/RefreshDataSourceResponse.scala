@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefreshDataSourceResponse extends StObject {
   
   /** All the refresh status for the data source object references specified in the request. If is_all is specified, the field contains only those in failure status. */
-  var statuses: js.UndefOr[js.Array[RefreshDataSourceObjectExecutionStatus]] = js.native
+  var statuses: js.UndefOr[js.Array[RefreshDataSourceObjectExecutionStatus]] = js.undefined
 }
 object RefreshDataSourceResponse {
   

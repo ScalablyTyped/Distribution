@@ -4,7 +4,6 @@ import typings.fabric.fabricImplMod.ILineOptions
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric", "fabric.Line")
@@ -17,8 +16,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Line ()
   extends typings.fabric.fabricImplMod.Line {
   def this(points: js.Array[Double]) = this()
-  def this(points: js.UndefOr[scala.Nothing], objObjects: ILineOptions) = this()
   def this(points: js.Array[Double], objObjects: ILineOptions) = this()
+  def this(points: Unit, objObjects: ILineOptions) = this()
 }
 /* static members */
 object Line {
@@ -41,24 +40,19 @@ object Line {
     * @param {Object} [options] Options object
     * @param {Function} [callback] callback function invoked after parsing
     */
-  @JSImport("fabric", "fabric.Line.fromElement")
-  @js.native
-  def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Line = js.native
-  @JSImport("fabric", "fabric.Line.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.UndefOr[scala.Nothing], options: ILineOptions): typings.fabric.fabricImplMod.Line = js.native
-  @JSImport("fabric", "fabric.Line.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Line = js.native
-  @JSImport("fabric", "fabric.Line.fromElement")
-  @js.native
-  def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): typings.fabric.fabricImplMod.Line = js.native
+  @scala.inline
+  def fromElement(element: SVGElement): typings.fabric.fabricImplMod.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Line]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function): typings.fabric.fabricImplMod.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Line]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: js.Function, options: ILineOptions): typings.fabric.fabricImplMod.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Line]
+  @scala.inline
+  def fromElement(element: SVGElement, callback: Unit, options: ILineOptions): typings.fabric.fabricImplMod.Line = (^.asInstanceOf[js.Dynamic].applyDynamic("fromElement")(element.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.fabric.fabricImplMod.Line]
   
   /**
     * Returns fabric.Line instance from an object representation
     * @param object Object to create an instance from
     */
-  @JSImport("fabric", "fabric.Line.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Line = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any): typings.fabric.fabricImplMod.Line = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[typings.fabric.fabricImplMod.Line]
 }

@@ -2,10 +2,8 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFileOptions extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait DeleteFileOptions extends StObject {
     *
     * @default `{}`
     */
-  var customHeaders: js.UndefOr[js.Any] = js.native
+  var customHeaders: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Enable or disable deletion of uploaded files
     *
     * @default `false`
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The endpoint to which delete file requests are sent.
     *
     * @default `'/server/upload'`
     */
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * Set the method to use for delete requests.
@@ -36,14 +34,14 @@ trait DeleteFileOptions extends StObject {
     *
     * @default `'DELETE'`
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * Any additional parameters to attach to delete file requests
     *
     * @default `{}`
     */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
 }
 object DeleteFileOptions {
   

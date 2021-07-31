@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,12 +25,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .addOption(option1)
   *       .addOption(option2);
   */
-@js.native
 trait OptionBuilder extends StObject {
   
-  def setLabel(label: String): OptionBuilder = js.native
+  def setLabel(label: String): OptionBuilder
   
-  def setValue(value: String): OptionBuilder = js.native
+  def setValue(value: String): OptionBuilder
 }
 object OptionBuilder {
   

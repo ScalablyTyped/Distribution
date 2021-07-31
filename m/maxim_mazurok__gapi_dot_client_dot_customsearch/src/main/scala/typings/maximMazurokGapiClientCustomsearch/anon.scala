@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientCustomsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accesstoken extends StObject {
     
     /** V1 error format. */
     @JSName("$.xgafv")
-    var $Dotxgafv: js.UndefOr[String] = js.native
+    var $Dotxgafv: js.UndefOr[String] = js.undefined
     
     /** OAuth access token. */
-    var access_token: js.UndefOr[String] = js.native
+    var access_token: js.UndefOr[String] = js.undefined
     
     /** Data format for response. */
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
     /**
       * Enables or disables [Simplified and Traditional Chinese Search](https://developers.google.com/custom-search/docs/xml_results#chineseSearch). The default value for this parameter
       * is 0 (zero), meaning that the feature is enabled. Supported values are: * `1`: Disabled * `0`: Enabled (default)
       */
-    var c2coff: js.UndefOr[String] = js.native
+    var c2coff: js.UndefOr[String] = js.undefined
     
     /** JSONP */
-    var callback: js.UndefOr[String] = js.native
+    var callback: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts search results to documents originating in a particular country. You may use [Boolean
@@ -35,39 +33,39 @@ object anon {
       * document by analyzing: * the top-level domain (TLD) of the document's URL * the geographic location of the Web server's IP address See the [Country Parameter
       * Values](https://developers.google.com/custom-search/docs/xml_results_appendices#countryCollections) page for a list of valid values for this parameter.
       */
-    var cr: js.UndefOr[String] = js.native
+    var cr: js.UndefOr[String] = js.undefined
     
     /** The Programmable Search Engine ID to use for this request. */
-    var cx: js.UndefOr[String] = js.native
+    var cx: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts results to URLs based on date. Supported values include: * `d[number]`: requests results from the specified number of past days. * `w[number]`: requests results from
       * the specified number of past weeks. * `m[number]`: requests results from the specified number of past months. * `y[number]`: requests results from the specified number of past
       * years.
       */
-    var dateRestrict: js.UndefOr[String] = js.native
+    var dateRestrict: js.UndefOr[String] = js.undefined
     
     /** Identifies a phrase that all documents in the search results must contain. */
-    var exactTerms: js.UndefOr[String] = js.native
+    var exactTerms: js.UndefOr[String] = js.undefined
     
     /** Identifies a word or phrase that should not appear in any documents in the search results. */
-    var excludeTerms: js.UndefOr[String] = js.native
+    var excludeTerms: js.UndefOr[String] = js.undefined
     
     /** Selector specifying which fields to include in a partial response. */
-    var fields: js.UndefOr[String] = js.native
+    var fields: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts results to files of a specified extension. A list of file types indexable by Google can be found in Search Console [Help
       * Center](https://support.google.com/webmasters/answer/35287).
       */
-    var fileType: js.UndefOr[String] = js.native
+    var fileType: js.UndefOr[String] = js.undefined
     
     /**
       * Controls turning on or off the duplicate content filter. * See [Automatic Filtering](https://developers.google.com/custom-search/docs/xml_results#automaticFiltering) for more
       * information about Google's search results filters. Note that host crowding filtering applies only to multi-site searches. * By default, Google applies filtering to all search
       * results to improve the quality of those results. Acceptable values are: * `0`: Turns off duplicate content filter. * `1`: Turns on duplicate content filter.
       */
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
     /**
       * Geolocation of end user. * The `gl` parameter value is a two-letter country code. The `gl` parameter boosts search results whose country of origin matches the parameter value.
@@ -75,13 +73,13 @@ object anon {
       * value should lead to more relevant results. This is particularly true for international customers and, even more specifically, for customers in English- speaking countries other
       * than the United States.
       */
-    var gl: js.UndefOr[String] = js.native
+    var gl: js.UndefOr[String] = js.undefined
     
     /** **Deprecated**. Use the `gl` parameter for a similar effect. The local Google domain (for example, google.com, google.de, or google.fr) to use to perform the search. */
-    var googlehost: js.UndefOr[String] = js.native
+    var googlehost: js.UndefOr[String] = js.undefined
     
     /** Specifies the ending value for a search range. * Use `lowRange` and `highRange` to append an inclusive search range of `lowRange...highRange` to the query. */
-    var highRange: js.UndefOr[String] = js.native
+    var highRange: js.UndefOr[String] = js.undefined
     
     /**
       * Sets the user interface language. * Explicitly setting this parameter improves the performance and the quality of your search results. * See the [Interface
@@ -89,34 +87,34 @@ object anon {
       * Presentation](https://developers.google.com/custom-search/docs/xml_results#wsInternationalizing) for more information, and (Supported Interface
       * Languages)[https://developers.google.com/custom-search/docs/xml_results_appendices#interfaceLanguages] for a list of supported languages.
       */
-    var hl: js.UndefOr[String] = js.native
+    var hl: js.UndefOr[String] = js.undefined
     
     /** Appends the specified query terms to the query, as if they were combined with a logical AND operator. */
-    var hq: js.UndefOr[String] = js.native
+    var hq: js.UndefOr[String] = js.undefined
     
     /** Returns black and white, grayscale, transparent, or color images. Acceptable values are: * `"color"` * `"gray"` * `"mono"`: black and white * `"trans"`: transparent background */
-    var imgColorType: js.UndefOr[String] = js.native
+    var imgColorType: js.UndefOr[String] = js.undefined
     
     /**
       * Returns images of a specific dominant color. Acceptable values are: * `"black"` * `"blue"` * `"brown"` * `"gray"` * `"green"` * `"orange"` * `"pink"` * `"purple"` * `"red"` *
       * `"teal"` * `"white"` * `"yellow"`
       */
-    var imgDominantColor: js.UndefOr[String] = js.native
+    var imgDominantColor: js.UndefOr[String] = js.undefined
     
     /** Returns images of a specified size. Acceptable values are: * `"huge"` * `"icon"` * `"large"` * `"medium"` * `"small"` * `"xlarge"` * `"xxlarge"` */
-    var imgSize: js.UndefOr[String] = js.native
+    var imgSize: js.UndefOr[String] = js.undefined
     
     /** Returns images of a type. Acceptable values are: * `"clipart"` * `"face"` * `"lineart"` * `"stock"` * `"photo"` * `"animated"` */
-    var imgType: js.UndefOr[String] = js.native
+    var imgType: js.UndefOr[String] = js.undefined
     
     /** API key. Your API key identifies your project and provides you with API access, quota, and reports. Required unless you provide an OAuth 2.0 token. */
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
     /** Specifies that all search results should contain a link to a particular URL. */
-    var linkSite: js.UndefOr[String] = js.native
+    var linkSite: js.UndefOr[String] = js.undefined
     
     /** Specifies the starting value for a search range. Use `lowRange` and `highRange` to append an inclusive search range of `lowRange...highRange` to the query. */
-    var lowRange: js.UndefOr[String] = js.native
+    var lowRange: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts the search to documents written in a particular language (e.g., `lr=lang_ja`). Acceptable values are: * `"lang_ar"`: Arabic * `"lang_bg"`: Bulgarian * `"lang_ca"`:
@@ -126,65 +124,65 @@ object anon {
       * Polish * `"lang_pt"`: Portuguese * `"lang_ro"`: Romanian * `"lang_ru"`: Russian * `"lang_sk"`: Slovak * `"lang_sl"`: Slovenian * `"lang_sr"`: Serbian * `"lang_sv"`: Swedish *
       * `"lang_tr"`: Turkish * `"lang_zh-CN"`: Chinese (Simplified) * `"lang_zh-TW"`: Chinese (Traditional)
       */
-    var lr: js.UndefOr[String] = js.native
+    var lr: js.UndefOr[String] = js.undefined
     
     /** Number of search results to return. * Valid values are integers between 1 and 10, inclusive. */
-    var num: js.UndefOr[Double] = js.native
+    var num: js.UndefOr[Double] = js.undefined
     
     /** OAuth 2.0 token for the current user. */
-    var oauth_token: js.UndefOr[String] = js.native
+    var oauth_token: js.UndefOr[String] = js.undefined
     
     /** Provides additional search terms to check for in a document, where each document in the search results must contain at least one of the additional search terms. */
-    var orTerms: js.UndefOr[String] = js.native
+    var orTerms: js.UndefOr[String] = js.undefined
     
     /** Returns response with indentations and line breaks. */
-    var prettyPrint: js.UndefOr[Boolean] = js.native
+    var prettyPrint: js.UndefOr[Boolean] = js.undefined
     
     /** Query */
-    var q: js.UndefOr[String] = js.native
+    var q: js.UndefOr[String] = js.undefined
     
     /** Available to use for quota purposes for server-side applications. Can be any arbitrary string assigned to a user, but should not exceed 40 characters. */
-    var quotaUser: js.UndefOr[String] = js.native
+    var quotaUser: js.UndefOr[String] = js.undefined
     
     /** Specifies that all search results should be pages that are related to the specified URL. */
-    var relatedSite: js.UndefOr[String] = js.native
+    var relatedSite: js.UndefOr[String] = js.undefined
     
     /**
       * Filters based on licensing. Supported values include: `cc_publicdomain`, `cc_attribute`, `cc_sharealike`, `cc_noncommercial`, `cc_nonderived` and combinations of these. See
       * [typical combinations](https://wiki.creativecommons.org/wiki/CC_Search_integration).
       */
-    var rights: js.UndefOr[String] = js.native
+    var rights: js.UndefOr[String] = js.undefined
     
     /** Search safety level. Acceptable values are: * `"active"`: Enables SafeSearch filtering. * `"off"`: Disables SafeSearch filtering. (default) */
-    var safe: js.UndefOr[String] = js.native
+    var safe: js.UndefOr[String] = js.undefined
     
     /** Specifies the search type: `image`. If unspecified, results are limited to webpages. Acceptable values are: * `"image"`: custom image search. */
-    var searchType: js.UndefOr[String] = js.native
+    var searchType: js.UndefOr[String] = js.undefined
     
     /** Specifies a given site which should always be included or excluded from results (see `siteSearchFilter` parameter, below). */
-    var siteSearch: js.UndefOr[String] = js.native
+    var siteSearch: js.UndefOr[String] = js.undefined
     
     /** Controls whether to include or exclude results from the site named in the `siteSearch` parameter. Acceptable values are: * `"e"`: exclude * `"i"`: include */
-    var siteSearchFilter: js.UndefOr[String] = js.native
+    var siteSearchFilter: js.UndefOr[String] = js.undefined
     
     /**
       * The sort expression to apply to the results. The sort parameter specifies that the results be sorted according to the specified expression i.e. sort by date. [Example:
       * sort=date](https://developers.google.com/custom-search/docs/structured_search#sort-by-attribute).
       */
-    var sort: js.UndefOr[String] = js.native
+    var sort: js.UndefOr[String] = js.undefined
     
     /**
       * The index of the first result to return. The default number of results per page is 10, so `&start=11` would start at the top of the second page of results. **Note**: The JSON
       * API will never return more than 100 results, even if more than 100 documents match the query, so setting the sum of `start + num` to a number greater than 100 will produce an
       * error. Also note that the maximum value for `num` is 10.
       */
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
     
     /** Legacy upload protocol for media (e.g. "media", "multipart"). */
-    var uploadType: js.UndefOr[String] = js.native
+    var uploadType: js.UndefOr[String] = js.undefined
     
     /** Upload protocol for media (e.g. "raw", "multipart"). */
-    var upload_protocol: js.UndefOr[String] = js.native
+    var upload_protocol: js.UndefOr[String] = js.undefined
   }
   object Accesstoken {
     
@@ -451,29 +449,28 @@ object anon {
     }
   }
   
-  @js.native
   trait ByteSize extends StObject {
     
     /** The size of the image, in pixels. */
-    var byteSize: js.UndefOr[Double] = js.native
+    var byteSize: js.UndefOr[Double] = js.undefined
     
     /** A URL pointing to the webpage hosting the image. */
-    var contextLink: js.UndefOr[String] = js.native
+    var contextLink: js.UndefOr[String] = js.undefined
     
     /** The height of the image, in pixels. */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** The height of the thumbnail image, in pixels. */
-    var thumbnailHeight: js.UndefOr[Double] = js.native
+    var thumbnailHeight: js.UndefOr[Double] = js.undefined
     
     /** A URL to the thumbnail image. */
-    var thumbnailLink: js.UndefOr[String] = js.native
+    var thumbnailLink: js.UndefOr[String] = js.undefined
     
     /** The width of the thumbnail image, in pixels. */
-    var thumbnailWidth: js.UndefOr[Double] = js.native
+    var thumbnailWidth: js.UndefOr[Double] = js.undefined
     
     /** The width of the image, in pixels. */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ByteSize {
     
@@ -530,14 +527,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CorrectedQuery extends StObject {
     
     /** The corrected query. */
-    var correctedQuery: js.UndefOr[String] = js.native
+    var correctedQuery: js.UndefOr[String] = js.undefined
     
     /** The corrected query, formatted in HTML. */
-    var htmlCorrectedQuery: js.UndefOr[String] = js.native
+    var htmlCorrectedQuery: js.UndefOr[String] = js.undefined
   }
   object CorrectedQuery {
     
@@ -564,11 +560,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
     /** Number of search results returned in this set. */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /**
       * Restricts search results to documents originating in a particular country. You may use [Boolean
@@ -576,32 +571,32 @@ object anon {
       * document by analyzing the following: * The top-level domain (TLD) of the document's URL. * The geographic location of the web server's IP address. See [Country (cr)
       * Parameter Values](https://developers.google.com/custom-search/docs/xml_results#countryCollections) for a list of valid values for this parameter.
       */
-    var cr: js.UndefOr[String] = js.native
+    var cr: js.UndefOr[String] = js.undefined
     
     /**
       * The identifier of an engine created using the Programmable Search Engine [Control Panel](https://programmablesearchengine.google.com/). This is a custom property not defined
       * in the OpenSearch spec. This parameter is **required**.
       */
-    var cx: js.UndefOr[String] = js.native
+    var cx: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts results to URLs based on date. Supported values include: * `d[number]`: requests results from the specified number of past days. * `w[number]`: requests results
       * from the specified number of past weeks. * `m[number]`: requests results from the specified number of past months. * `y[number]`: requests results from the specified number
       * of past years.
       */
-    var dateRestrict: js.UndefOr[String] = js.native
+    var dateRestrict: js.UndefOr[String] = js.undefined
     
     /**
       * Enables or disables the [Simplified and Traditional Chinese Search](https://developers.google.com/custom-search/docs/xml_results#chineseSearch) feature. Supported values
       * are: * `0`: enabled (default) * `1`: disabled
       */
-    var disableCnTwTranslation: js.UndefOr[String] = js.native
+    var disableCnTwTranslation: js.UndefOr[String] = js.undefined
     
     /** Identifies a phrase that all documents in the search results must contain. */
-    var exactTerms: js.UndefOr[String] = js.native
+    var exactTerms: js.UndefOr[String] = js.undefined
     
     /** Identifies a word or phrase that should not appear in any documents in the search results. */
-    var excludeTerms: js.UndefOr[String] = js.native
+    var excludeTerms: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts results to files of a specified extension. Filetypes supported by Google include: * Adobe Portable Document Format (`pdf`) * Adobe PostScript (`ps`) * Lotus 1-2-3
@@ -609,27 +604,27 @@ object anon {
       * (`doc`) * Microsoft Works (`wks`, `wps`, `wdb`) * Microsoft Write (`wri`) * Rich Text Format (`rtf`) * Shockwave Flash (`swf`) * Text (`ans`, `txt`). Additional filetypes
       * may be added in the future. An up-to-date list can always be found in Google's [file type FAQ](https://support.google.com/webmasters/answer/35287).
       */
-    var fileType: js.UndefOr[String] = js.native
+    var fileType: js.UndefOr[String] = js.undefined
     
     /**
       * Activates or deactivates the automatic filtering of Google search results. See [Automatic
       * Filtering](https://developers.google.com/custom-search/docs/xml_results#automaticFiltering) for more information about Google's search results filters. Valid values for this
       * parameter are: * `0`: Disabled * `1`: Enabled (default) **Note**: By default, Google applies filtering to all search results to improve the quality of those results.
       */
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
     /**
       * Boosts search results whose country of origin matches the parameter value. See [Country Codes](https://developers.google.com/custom-search/docs/xml_results#countryCodes) for
       * a list of valid values. Specifying a `gl` parameter value in WebSearch requests should improve the relevance of results. This is particularly true for international
       * customers and, even more specifically, for customers in English-speaking countries other than the United States.
       */
-    var gl: js.UndefOr[String] = js.native
+    var gl: js.UndefOr[String] = js.undefined
     
     /** Specifies the Google domain (for example, google.com, google.de, or google.fr) to which the search should be limited. */
-    var googleHost: js.UndefOr[String] = js.native
+    var googleHost: js.UndefOr[String] = js.undefined
     
     /** Specifies the ending value for a search range. Use `cse:lowRange` and `cse:highrange` to append an inclusive search range of `lowRange...highRange` to the query. */
-    var highRange: js.UndefOr[String] = js.native
+    var highRange: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the interface language (host language) of your user interface. Explicitly setting this parameter improves the performance and the quality of your search results.
@@ -637,94 +632,94 @@ object anon {
       * Presentation](https://developers.google.com/custom-search/docs/xml_results#wsInternationalizing) for more information, and [Supported Interface
       * Languages](https://developers.google.com/custom-search/docs/xml_results_appendices#interfaceLanguages) for a list of supported languages.
       */
-    var hl: js.UndefOr[String] = js.native
+    var hl: js.UndefOr[String] = js.undefined
     
     /** Appends the specified query terms to the query, as if they were combined with a logical `AND` operator. */
-    var hq: js.UndefOr[String] = js.native
+    var hq: js.UndefOr[String] = js.undefined
     
     /** Restricts results to images of a specified color type. Supported values are: * `mono` (black and white) * `gray` (grayscale) * `color` (color) */
-    var imgColorType: js.UndefOr[String] = js.native
+    var imgColorType: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts results to images with a specific dominant color. Supported values are: * `red` * `orange` * `yellow` * `green` * `teal` * `blue` * `purple` * `pink` * `white` *
       * `gray` * `black` * `brown`
       */
-    var imgDominantColor: js.UndefOr[String] = js.native
+    var imgDominantColor: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts results to images of a specified size. Supported values are: * `icon` (small) * `small | medium | large | xlarge` (medium) * `xxlarge` (large) * `huge`
       * (extra-large)
       */
-    var imgSize: js.UndefOr[String] = js.native
+    var imgSize: js.UndefOr[String] = js.undefined
     
     /**
       * Restricts results to images of a specified type. Supported values are: * `clipart` (Clip art) * `face` (Face) * `lineart` (Line drawing) * `photo` (Photo) * `animated`
       * (Animated) * `stock` (Stock)
       */
-    var imgType: js.UndefOr[String] = js.native
+    var imgType: js.UndefOr[String] = js.undefined
     
     /** The character encoding supported for search requests. */
-    var inputEncoding: js.UndefOr[String] = js.native
+    var inputEncoding: js.UndefOr[String] = js.undefined
     
     /** The language of the search results. */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /** Specifies that all results should contain a link to a specific URL. */
-    var linkSite: js.UndefOr[String] = js.native
+    var linkSite: js.UndefOr[String] = js.undefined
     
     /** Specifies the starting value for a search range. Use `cse:lowRange` and `cse:highrange` to append an inclusive search range of `lowRange...highRange` to the query. */
-    var lowRange: js.UndefOr[String] = js.native
+    var lowRange: js.UndefOr[String] = js.undefined
     
     /**
       * Provides additional search terms to check for in a document, where each document in the search results must contain at least one of the additional search terms. You can also
       * use the [Boolean OR](https://developers.google.com/custom-search/docs/xml_results#BooleanOrqt) query term for this type of query.
       */
-    var orTerms: js.UndefOr[String] = js.native
+    var orTerms: js.UndefOr[String] = js.undefined
     
     /** The character encoding supported for search results. */
-    var outputEncoding: js.UndefOr[String] = js.native
+    var outputEncoding: js.UndefOr[String] = js.undefined
     
     /** Specifies that all search results should be pages that are related to the specified URL. The parameter value should be a URL. */
-    var relatedSite: js.UndefOr[String] = js.native
+    var relatedSite: js.UndefOr[String] = js.undefined
     
     /** Filters based on licensing. Supported values include: * `cc_publicdomain` * `cc_attribute` * `cc_sharealike` * `cc_noncommercial` * `cc_nonderived` */
-    var rights: js.UndefOr[String] = js.native
+    var rights: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies the [SafeSearch level](https://developers.google.com/custom-search/docs/xml_results#safeSearchLevels) used for filtering out adult results. This is a custom
       * property not defined in the OpenSearch spec. Valid parameter values are: * `"off"`: Disable SafeSearch * `"active"`: Enable SafeSearch
       */
-    var safe: js.UndefOr[String] = js.native
+    var safe: js.UndefOr[String] = js.undefined
     
     /** The search terms entered by the user. */
-    var searchTerms: js.UndefOr[String] = js.native
+    var searchTerms: js.UndefOr[String] = js.undefined
     
     /** Allowed values are `web` or `image`. If unspecified, results are limited to webpages. */
-    var searchType: js.UndefOr[String] = js.native
+    var searchType: js.UndefOr[String] = js.undefined
     
     /** Restricts results to URLs from a specified site. */
-    var siteSearch: js.UndefOr[String] = js.native
+    var siteSearch: js.UndefOr[String] = js.undefined
     
     /**
       * Specifies whether to include or exclude results from the site named in the `sitesearch` parameter. Supported values are: * `i`: include content from site * `e`: exclude
       * content from site
       */
-    var siteSearchFilter: js.UndefOr[String] = js.native
+    var siteSearchFilter: js.UndefOr[String] = js.undefined
     
     /** Specifies that results should be sorted according to the specified expression. For example, sort by date. */
-    var sort: js.UndefOr[String] = js.native
+    var sort: js.UndefOr[String] = js.undefined
     
     /** The index of the current set of search results into the total set of results, where the index of the first result is 1. */
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
     /** The page number of this set of results, where the page length is set by the `count` property. */
-    var startPage: js.UndefOr[Double] = js.native
+    var startPage: js.UndefOr[Double] = js.undefined
     
     /** A description of the query. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** Estimated number of total search results. May not be accurate. */
-    var totalResults: js.UndefOr[String] = js.native
+    var totalResults: js.UndefOr[String] = js.undefined
   }
   object Count {
     
@@ -955,17 +950,16 @@ object anon {
     }
   }
   
-  @js.native
   trait DisplayName extends StObject {
     
     /** The display name of a refinement label. This is the name you should display in your user interface. */
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
     /** Refinement label and the associated refinement operation. */
-    var label_with_op: js.UndefOr[String] = js.native
+    var label_with_op: js.UndefOr[String] = js.undefined
     
     /** The name of a refinement label, which you can use to refine searches. Don't display this in your user interface; instead, use displayName. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object DisplayName {
     
@@ -998,20 +992,19 @@ object anon {
     }
   }
   
-  @js.native
   trait FormattedSearchTime extends StObject {
     
     /** The time taken for the server to return search results, formatted according to locale style. */
-    var formattedSearchTime: js.UndefOr[String] = js.native
+    var formattedSearchTime: js.UndefOr[String] = js.undefined
     
     /** The total number of search results, formatted according to locale style. */
-    var formattedTotalResults: js.UndefOr[String] = js.native
+    var formattedTotalResults: js.UndefOr[String] = js.undefined
     
     /** The time taken for the server to return search results. */
-    var searchTime: js.UndefOr[Double] = js.native
+    var searchTime: js.UndefOr[Double] = js.undefined
     
     /** The total number of search results returned by the query. */
-    var totalResults: js.UndefOr[String] = js.native
+    var totalResults: js.UndefOr[String] = js.undefined
   }
   object FormattedSearchTime {
     
@@ -1050,17 +1043,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
     /** Image height in pixels. */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** URL of the image for this promotion link. */
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
     /** Image width in pixels. */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Height {
     
@@ -1093,20 +1085,19 @@ object anon {
     }
   }
   
-  @js.native
   trait HtmlTitle extends StObject {
     
     /** The block object's text in HTML, if it has text. */
-    var htmlTitle: js.UndefOr[String] = js.native
+    var htmlTitle: js.UndefOr[String] = js.undefined
     
     /** The anchor text of the block object's link, if it has a link. */
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
     /** The block object's text, if it has text. */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** The URL of the block object's link, if it has one. */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object HtmlTitle {
     
@@ -1145,17 +1136,16 @@ object anon {
     }
   }
   
-  @js.native
   trait NextPage extends StObject {
     
     /** Metadata representing the next page of results, if applicable. */
-    var nextPage: js.UndefOr[js.Array[Count]] = js.native
+    var nextPage: js.UndefOr[js.Array[Count]] = js.undefined
     
     /** Metadata representing the previous page of results, if applicable. */
-    var previousPage: js.UndefOr[js.Array[Count]] = js.native
+    var previousPage: js.UndefOr[js.Array[Count]] = js.undefined
     
     /** Metadata representing the current request. */
-    var request: js.UndefOr[js.Array[Count]] = js.native
+    var request: js.UndefOr[js.Array[Count]] = js.undefined
   }
   object NextPage {
     
@@ -1197,14 +1187,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Template extends StObject {
     
     /** The actual [OpenSearch template](http://www.opensearch.org/specifications/opensearch/1.1#opensearch_url_template_syntax) for this API. */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /** The MIME type of the OpenSearch URL template for the Custom Search JSON API. */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Template {
     

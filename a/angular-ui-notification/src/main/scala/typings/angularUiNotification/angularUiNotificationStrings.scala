@@ -5,58 +5,77 @@ import typings.angularUiNotification.mod.uiNotification.XPosition
 import typings.angularUiNotification.mod.uiNotification.YPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object angularUiNotificationStrings {
   
   @js.native
-  sealed trait bottom extends YPosition
+  sealed trait bottom
+    extends StObject
+       with YPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait center extends XPosition
+  sealed trait center
+    extends StObject
+       with XPosition
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait error extends MessageType
+  sealed trait error
+    extends StObject
+       with MessageType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait info extends MessageType
+  sealed trait info
+    extends StObject
+       with MessageType
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait left extends XPosition
+  sealed trait left
+    extends StObject
+       with XPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
   @js.native
-  sealed trait primary extends MessageType
+  sealed trait primary
+    extends StObject
+       with MessageType
   @scala.inline
   def primary: primary = "primary".asInstanceOf[primary]
   
   @js.native
-  sealed trait right extends XPosition
+  sealed trait right
+    extends StObject
+       with XPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait success extends MessageType
+  sealed trait success
+    extends StObject
+       with MessageType
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
   @js.native
-  sealed trait top extends YPosition
+  sealed trait top
+    extends StObject
+       with YPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
   @js.native
-  sealed trait warning extends MessageType
+  sealed trait warning
+    extends StObject
+       with MessageType
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
 }

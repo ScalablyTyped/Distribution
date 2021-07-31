@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryStringNames extends StObject {
   
   /**
     * A list of query string names.
     */
-  var Items: js.UndefOr[QueryStringNamesList] = js.native
+  var Items: js.UndefOr[QueryStringNamesList] = js.undefined
   
   /**
     * The number of query string names in the Items list.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object QueryStringNames {
   

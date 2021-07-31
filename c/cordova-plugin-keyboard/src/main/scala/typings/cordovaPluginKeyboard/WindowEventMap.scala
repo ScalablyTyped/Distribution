@@ -3,36 +3,34 @@ package typings.cordovaPluginKeyboard
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowEventMap extends StObject {
   
   /**
     * This event is fired when the keyboard is fully closed.
     */
-  var keyboardDidHide: Event = js.native
+  var keyboardDidHide: Event
   
   /**
     * This event is fired when keyboard fully shown.
     */
-  var keyboardDidShow: Event = js.native
+  var keyboardDidShow: Event
   
   /**
     * This event is fired when the keyboard is fully closed.
     */
-  var keyboardHeightWillChange: CordovaKeyboardEvent = js.native
+  var keyboardHeightWillChange: CordovaKeyboardEvent
   
   /**
     * This event is fired when the keyboard is fully closed.
     */
-  var keyboardWillHide: Event = js.native
+  var keyboardWillHide: Event
   
   /**
     * This event fires before keyboard will be shown.
     */
-  var keyboardWillShow: Event = js.native
+  var keyboardWillShow: Event
 }
 object WindowEventMap {
   

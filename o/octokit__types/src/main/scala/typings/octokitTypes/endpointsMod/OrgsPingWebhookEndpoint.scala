@@ -2,16 +2,14 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrgsPingWebhookEndpoint extends StObject {
   
-  var hook_id: Double = js.native
+  var hook_id: Double
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
 }
 object OrgsPingWebhookEndpoint {
   

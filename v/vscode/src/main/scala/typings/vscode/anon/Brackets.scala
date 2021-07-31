@@ -2,10 +2,8 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Brackets extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait Brackets extends StObject {
     * the editor.
     * @deprecated
     */
-  var brackets: js.UndefOr[js.Any] = js.native
+  var brackets: js.UndefOr[js.Any] = js.undefined
   
   /**
     * This property is deprecated and not fully supported anymore by
@@ -21,7 +19,7 @@ trait Brackets extends StObject {
     * Use the autoClosingPairs property in the language configuration file instead.
     * @deprecated
     */
-  var docComment: js.UndefOr[Close] = js.native
+  var docComment: js.UndefOr[Close] = js.undefined
 }
 object Brackets {
   

@@ -2,25 +2,23 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IZoom extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var direction: String = js.native
+  var direction: String
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var mouseButton: Double = js.native
+  var mouseButton: Double
   
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object IZoom {
   

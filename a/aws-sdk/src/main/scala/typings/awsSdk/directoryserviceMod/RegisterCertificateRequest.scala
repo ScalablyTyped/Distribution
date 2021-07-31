@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterCertificateRequest extends StObject {
   
   /**
     * The certificate PEM string that needs to be registered.
     */
-  var CertificateData: typings.awsSdk.directoryserviceMod.CertificateData = js.native
+  var CertificateData: typings.awsSdk.directoryserviceMod.CertificateData
   
   /**
     * The identifier of the directory.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
 }
 object RegisterCertificateRequest {
   

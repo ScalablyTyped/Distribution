@@ -30,7 +30,6 @@ import typings.ssh2Streams.ssh2StreamsStrings.ready
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ssh2-streams", "SFTPStream")
@@ -44,7 +43,7 @@ class SFTPStream () extends Transform {
     * Creates and returns a new SFTPStream instance.
     */
   def this(remoteIdentRaw: String) = this()
-  def this(cfg: js.UndefOr[scala.Nothing], remoteIdentRaw: String) = this()
+  def this(cfg: Unit, remoteIdentRaw: String) = this()
   def this(cfg: SFTPStreamConfig, remoteIdentRaw: String) = this()
   
   /**
@@ -683,6 +682,10 @@ class SFTPStream () extends Transform {
 /* static members */
 object SFTPStream {
   
+  @JSImport("ssh2-streams", "SFTPStream")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait OPEN_MODE extends StObject
   @JSImport("ssh2-streams", "SFTPStream.OPEN_MODE")
@@ -690,31 +693,43 @@ object SFTPStream {
   object OPEN_MODE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OPEN_MODE with Double] = js.native
+    def apply(value: Double): js.UndefOr[OPEN_MODE & Double] = js.native
     
     @js.native
-    sealed trait APPEND extends OPEN_MODE
-    /* 0x00000004 */ val APPEND: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.APPEND with Double = js.native
+    sealed trait APPEND
+      extends StObject
+         with OPEN_MODE
+    /* 0x00000004 */ val APPEND: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.APPEND & Double = js.native
     
     @js.native
-    sealed trait CREAT extends OPEN_MODE
-    /* 0x00000008 */ val CREAT: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.CREAT with Double = js.native
+    sealed trait CREAT
+      extends StObject
+         with OPEN_MODE
+    /* 0x00000008 */ val CREAT: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.CREAT & Double = js.native
     
     @js.native
-    sealed trait EXCL extends OPEN_MODE
-    /* 0x00000020 */ val EXCL: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.EXCL with Double = js.native
+    sealed trait EXCL
+      extends StObject
+         with OPEN_MODE
+    /* 0x00000020 */ val EXCL: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.EXCL & Double = js.native
     
     @js.native
-    sealed trait READ extends OPEN_MODE
-    /* 0x00000001 */ val READ: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.READ with Double = js.native
+    sealed trait READ
+      extends StObject
+         with OPEN_MODE
+    /* 0x00000001 */ val READ: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.READ & Double = js.native
     
     @js.native
-    sealed trait TRUNC extends OPEN_MODE
-    /* 0x00000010 */ val TRUNC: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.TRUNC with Double = js.native
+    sealed trait TRUNC
+      extends StObject
+         with OPEN_MODE
+    /* 0x00000010 */ val TRUNC: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.TRUNC & Double = js.native
     
     @js.native
-    sealed trait WRITE extends OPEN_MODE
-    /* 0x00000002 */ val WRITE: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.WRITE with Double = js.native
+    sealed trait WRITE
+      extends StObject
+         with OPEN_MODE
+    /* 0x00000002 */ val WRITE: typings.ssh2Streams.mod.SFTPStream.OPEN_MODE.WRITE & Double = js.native
   }
   
   @js.native
@@ -724,43 +739,61 @@ object SFTPStream {
   object STATUS_CODE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[STATUS_CODE with Double] = js.native
+    def apply(value: Double): js.UndefOr[STATUS_CODE & Double] = js.native
     
     @js.native
-    sealed trait BAD_MESSAGE extends STATUS_CODE
-    /* 5 */ val BAD_MESSAGE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.BAD_MESSAGE with Double = js.native
+    sealed trait BAD_MESSAGE
+      extends StObject
+         with STATUS_CODE
+    /* 5 */ val BAD_MESSAGE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.BAD_MESSAGE & Double = js.native
     
     @js.native
-    sealed trait CONNECTION_LOST extends STATUS_CODE
-    /* 7 */ val CONNECTION_LOST: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.CONNECTION_LOST with Double = js.native
+    sealed trait CONNECTION_LOST
+      extends StObject
+         with STATUS_CODE
+    /* 7 */ val CONNECTION_LOST: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.CONNECTION_LOST & Double = js.native
     
     @js.native
-    sealed trait EOF extends STATUS_CODE
-    /* 1 */ val EOF: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.EOF with Double = js.native
+    sealed trait EOF
+      extends StObject
+         with STATUS_CODE
+    /* 1 */ val EOF: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.EOF & Double = js.native
     
     @js.native
-    sealed trait FAILURE extends STATUS_CODE
-    /* 4 */ val FAILURE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.FAILURE with Double = js.native
+    sealed trait FAILURE
+      extends StObject
+         with STATUS_CODE
+    /* 4 */ val FAILURE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.FAILURE & Double = js.native
     
     @js.native
-    sealed trait NO_CONNECTION extends STATUS_CODE
-    /* 6 */ val NO_CONNECTION: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.NO_CONNECTION with Double = js.native
+    sealed trait NO_CONNECTION
+      extends StObject
+         with STATUS_CODE
+    /* 6 */ val NO_CONNECTION: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.NO_CONNECTION & Double = js.native
     
     @js.native
-    sealed trait NO_SUCH_FILE extends STATUS_CODE
-    /* 2 */ val NO_SUCH_FILE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.NO_SUCH_FILE with Double = js.native
+    sealed trait NO_SUCH_FILE
+      extends StObject
+         with STATUS_CODE
+    /* 2 */ val NO_SUCH_FILE: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.NO_SUCH_FILE & Double = js.native
     
     @js.native
-    sealed trait OK extends STATUS_CODE
-    /* 0 */ val OK: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.OK with Double = js.native
+    sealed trait OK
+      extends StObject
+         with STATUS_CODE
+    /* 0 */ val OK: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.OK & Double = js.native
     
     @js.native
-    sealed trait OP_UNSUPPORTED extends STATUS_CODE
-    /* 8 */ val OP_UNSUPPORTED: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.OP_UNSUPPORTED with Double = js.native
+    sealed trait OP_UNSUPPORTED
+      extends StObject
+         with STATUS_CODE
+    /* 8 */ val OP_UNSUPPORTED: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.OP_UNSUPPORTED & Double = js.native
     
     @js.native
-    sealed trait PERMISSION_DENIED extends STATUS_CODE
-    /* 3 */ val PERMISSION_DENIED: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.PERMISSION_DENIED with Double = js.native
+    sealed trait PERMISSION_DENIED
+      extends StObject
+         with STATUS_CODE
+    /* 3 */ val PERMISSION_DENIED: typings.ssh2Streams.mod.SFTPStream.STATUS_CODE.PERMISSION_DENIED & Double = js.native
   }
   
   /**
@@ -769,9 +802,8 @@ object SFTPStream {
     *
     * Returns `null` if conversion failed.
     */
-  @JSImport("ssh2-streams", "SFTPStream.flagsToString")
-  @js.native
-  def flagsToString(flagsMask: Double): String = js.native
+  @scala.inline
+  def flagsToString(flagsMask: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("flagsToString")(flagsMask.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * Converts string flags (e.g. `'r'`, `'a+'`, etc.) to the appropriate
@@ -779,7 +811,6 @@ object SFTPStream {
     *
     * Returns `null` if conversion failed.
     */
-  @JSImport("ssh2-streams", "SFTPStream.stringToFlags")
-  @js.native
-  def stringToFlags(flagsStr: String): Double = js.native
+  @scala.inline
+  def stringToFlags(flagsStr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToFlags")(flagsStr.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

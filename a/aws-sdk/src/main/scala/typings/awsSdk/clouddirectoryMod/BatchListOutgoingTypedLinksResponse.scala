@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchListOutgoingTypedLinksResponse extends StObject {
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * Returns a typed link specifier as output.
     */
-  var TypedLinkSpecifiers: js.UndefOr[TypedLinkSpecifierList] = js.native
+  var TypedLinkSpecifiers: js.UndefOr[TypedLinkSpecifierList] = js.undefined
 }
 object BatchListOutgoingTypedLinksResponse {
   

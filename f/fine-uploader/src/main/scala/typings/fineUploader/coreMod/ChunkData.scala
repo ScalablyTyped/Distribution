@@ -2,31 +2,29 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChunkData extends StObject {
   
   /**
     * the last byte of the current chunk
     */
-  var endByte: Double = js.native
+  var endByte: Double
   
   /**
     * the 0-based index of the associated partition
     */
-  var partIndex: Double = js.native
+  var partIndex: Double
   
   /**
     * the byte offset of the current chunk
     */
-  var startByte: Double = js.native
+  var startByte: Double
   
   /**
     * the total number of partitions associated with the `File` or `Blob`
     */
-  var totalParts: Double = js.native
+  var totalParts: Double
 }
 object ChunkData {
   

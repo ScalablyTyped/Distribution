@@ -9,7 +9,6 @@ import typings.std.ClientRect
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridPanelMod {
@@ -396,32 +395,31 @@ object gridPanelMod {
   }
   
   /* Inlined {[ K in ag-grid.ag-grid/dist/lib/gridPanel/gridPanel.RowContainerComponentNames ]: ag-grid.ag-grid/dist/lib/rendering/rowContainerComponent.RowContainerComponent} */
-  @js.native
   trait RowContainerComponents extends StObject {
     
-    var body: RowContainerComponent = js.native
+    var body: RowContainerComponent
     
-    var floatingBottom: RowContainerComponent = js.native
+    var floatingBottom: RowContainerComponent
     
-    var floatingBottomFullWith: RowContainerComponent = js.native
+    var floatingBottomFullWith: RowContainerComponent
     
-    var floatingBottomPinnedLeft: RowContainerComponent = js.native
+    var floatingBottomPinnedLeft: RowContainerComponent
     
-    var floatingBottomPinnedRight: RowContainerComponent = js.native
+    var floatingBottomPinnedRight: RowContainerComponent
     
-    var floatingTop: RowContainerComponent = js.native
+    var floatingTop: RowContainerComponent
     
-    var floatingTopFullWidth: RowContainerComponent = js.native
+    var floatingTopFullWidth: RowContainerComponent
     
-    var floatingTopPinnedLeft: RowContainerComponent = js.native
+    var floatingTopPinnedLeft: RowContainerComponent
     
-    var floatingTopPinnedRight: RowContainerComponent = js.native
+    var floatingTopPinnedRight: RowContainerComponent
     
-    var fullWidth: RowContainerComponent = js.native
+    var fullWidth: RowContainerComponent
     
-    var pinnedLeft: RowContainerComponent = js.native
+    var pinnedLeft: RowContainerComponent
     
-    var pinnedRight: RowContainerComponent = js.native
+    var pinnedRight: RowContainerComponent
   }
   object RowContainerComponents {
     

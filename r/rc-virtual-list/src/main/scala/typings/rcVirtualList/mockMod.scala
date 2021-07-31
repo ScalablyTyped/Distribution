@@ -5,12 +5,14 @@ import typings.rcVirtualList.listMod.ListProps
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockMod {
   
-  @JSImport("rc-virtual-list/es/mock", JSImport.Default)
+  @JSImport("rc-virtual-list/es/mock", JSImport.Namespace)
   @js.native
-  def default[Item](props: Children with ListProps[Item]): ReactElement = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Item](props: Children & ListProps[Item]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
 }

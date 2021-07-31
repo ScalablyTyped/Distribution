@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dns/v1", "dns_v1.Resource$Dnskeys")
@@ -33,7 +32,7 @@ class ResourceDnskeys protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDnsKey] = js.native
   def get(callback: BodyResponseCallback[SchemaDnsKey]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDnsKey] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDnsKey] = js.native
   def get(params: ParamsResourceDnskeysGet): GaxiosPromise[SchemaDnsKey] = js.native
   def get(params: ParamsResourceDnskeysGet, callback: BodyResponseCallback[SchemaDnsKey]): Unit = js.native
   def get(
@@ -65,7 +64,7 @@ class ResourceDnskeys protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDnsKeysListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDnsKeysListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDnsKeysListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDnsKeysListResponse] = js.native
   def list(params: ParamsResourceDnskeysList): GaxiosPromise[SchemaDnsKeysListResponse] = js.native
   def list(params: ParamsResourceDnskeysList, callback: BodyResponseCallback[SchemaDnsKeysListResponse]): Unit = js.native
   def list(

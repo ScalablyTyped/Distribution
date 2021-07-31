@@ -3,23 +3,21 @@ package typings.auth0.mod
 import typings.auth0.anon.Email
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Identity extends StObject {
   
-  var access_token: js.UndefOr[String] = js.native
+  var access_token: js.UndefOr[String] = js.undefined
   
-  var connection: String = js.native
+  var connection: String
   
-  var isSocial: Boolean = js.native
+  var isSocial: Boolean
   
-  var profileData: js.UndefOr[Email] = js.native
+  var profileData: js.UndefOr[Email] = js.undefined
   
-  var provider: String = js.native
+  var provider: String
   
-  var user_id: String = js.native
+  var user_id: String
 }
 object Identity {
   

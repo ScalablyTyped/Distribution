@@ -2,17 +2,15 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompactCardHeight extends StObject {
   
-  var compactCardHeight: Double = js.native
+  var compactCardHeight: Double
   
-  var directionalHintFixed: Boolean = js.native
+  var directionalHintFixed: Boolean
   
-  var expandedCardHeight: Double = js.native
+  var expandedCardHeight: Double
 }
 object CompactCardHeight {
   

@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InspectorIssue extends StObject {
   
-  var code: InspectorIssueCode = js.native
+  var code: InspectorIssueCode
   
-  var details: InspectorIssueDetails = js.native
+  var details: InspectorIssueDetails
 }
 object InspectorIssue {
   

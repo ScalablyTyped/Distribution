@@ -12,7 +12,7 @@ The lodash method `_.assignInWith` exported as a module.
 | Keywords           | lodash-modularized, assigninwith |
 | # releases         | 0 |
 | # dependents       | 4 |
-| # downloads        | 1223930 |
+| # downloads        | 1208108 |
 | # stars            | 0 |
 
 ## Links

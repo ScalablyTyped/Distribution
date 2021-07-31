@@ -3,178 +3,178 @@ package typings.httpErrors.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[code: string] : http-errors.http-errors.HttpErrorConstructor,   HttpError :http-errors.http-errors.HttpErrorConstructor} & std.Record<'BadRequest' | 'Unauthorized' | 'PaymentRequired' | 'Forbidden' | 'NotFound' | 'MethodNotAllowed' | 'NotAcceptable' | 'ProxyAuthenticationRequired' | 'RequestTimeout' | 'Conflict' | 'Gone' | 'LengthRequired' | 'PreconditionFailed' | 'PayloadTooLarge' | 'URITooLong' | 'UnsupportedMediaType' | 'RangeNotSatisfiable' | 'ExpectationFailed' | 'ImATeapot' | 'MisdirectedRequest' | 'UnprocessableEntity' | 'Locked' | 'FailedDependency' | 'UnorderedCollection' | 'UpgradeRequired' | 'PreconditionRequired' | 'TooManyRequests' | 'RequestHeaderFieldsTooLarge' | 'UnavailableForLegalReasons' | 'InternalServerError' | 'NotImplemented' | 'BadGateway' | 'ServiceUnavailable' | 'GatewayTimeout' | 'HTTPVersionNotSupported' | 'VariantAlsoNegotiates' | 'InsufficientStorage' | 'LoopDetected' | 'BandwidthLimitExceeded' | 'NotExtended' | 'NetworkAuthenticationRequire' | '400' | '401' | '402' | '403' | '404' | '405' | '406' | '407' | '408' | '409' | '410' | '411' | '412' | '413' | '414' | '415' | '416' | '417' | '418' | '421' | '422' | '423' | '424' | '425' | '426' | '428' | '429' | '431' | '451' | '500' | '501' | '502' | '503' | '504' | '505' | '506' | '507' | '508' | '509' | '510' | '511', http-errors.http-errors.HttpErrorConstructor> */
-@js.native
-trait NamedConstructors extends /* code */ StringDictionary[HttpErrorConstructor] {
+trait NamedConstructors
+  extends StObject
+     with /* code */ StringDictionary[HttpErrorConstructor] {
   
-  var `400`: HttpErrorConstructor = js.native
+  var `400`: HttpErrorConstructor
   
-  var `401`: HttpErrorConstructor = js.native
+  var `401`: HttpErrorConstructor
   
-  var `402`: HttpErrorConstructor = js.native
+  var `402`: HttpErrorConstructor
   
-  var `403`: HttpErrorConstructor = js.native
+  var `403`: HttpErrorConstructor
   
-  var `404`: HttpErrorConstructor = js.native
+  var `404`: HttpErrorConstructor
   
-  var `405`: HttpErrorConstructor = js.native
+  var `405`: HttpErrorConstructor
   
-  var `406`: HttpErrorConstructor = js.native
+  var `406`: HttpErrorConstructor
   
-  var `407`: HttpErrorConstructor = js.native
+  var `407`: HttpErrorConstructor
   
-  var `408`: HttpErrorConstructor = js.native
+  var `408`: HttpErrorConstructor
   
-  var `409`: HttpErrorConstructor = js.native
+  var `409`: HttpErrorConstructor
   
-  var `410`: HttpErrorConstructor = js.native
+  var `410`: HttpErrorConstructor
   
-  var `411`: HttpErrorConstructor = js.native
+  var `411`: HttpErrorConstructor
   
-  var `412`: HttpErrorConstructor = js.native
+  var `412`: HttpErrorConstructor
   
-  var `413`: HttpErrorConstructor = js.native
+  var `413`: HttpErrorConstructor
   
-  var `414`: HttpErrorConstructor = js.native
+  var `414`: HttpErrorConstructor
   
-  var `415`: HttpErrorConstructor = js.native
+  var `415`: HttpErrorConstructor
   
-  var `416`: HttpErrorConstructor = js.native
+  var `416`: HttpErrorConstructor
   
-  var `417`: HttpErrorConstructor = js.native
+  var `417`: HttpErrorConstructor
   
-  var `418`: HttpErrorConstructor = js.native
+  var `418`: HttpErrorConstructor
   
-  var `421`: HttpErrorConstructor = js.native
+  var `421`: HttpErrorConstructor
   
-  var `422`: HttpErrorConstructor = js.native
+  var `422`: HttpErrorConstructor
   
-  var `423`: HttpErrorConstructor = js.native
+  var `423`: HttpErrorConstructor
   
-  var `424`: HttpErrorConstructor = js.native
+  var `424`: HttpErrorConstructor
   
-  var `425`: HttpErrorConstructor = js.native
+  var `425`: HttpErrorConstructor
   
-  var `426`: HttpErrorConstructor = js.native
+  var `426`: HttpErrorConstructor
   
-  var `428`: HttpErrorConstructor = js.native
+  var `428`: HttpErrorConstructor
   
-  var `429`: HttpErrorConstructor = js.native
+  var `429`: HttpErrorConstructor
   
-  var `431`: HttpErrorConstructor = js.native
+  var `431`: HttpErrorConstructor
   
-  var `451`: HttpErrorConstructor = js.native
+  var `451`: HttpErrorConstructor
   
-  var `500`: HttpErrorConstructor = js.native
+  var `500`: HttpErrorConstructor
   
-  var `501`: HttpErrorConstructor = js.native
+  var `501`: HttpErrorConstructor
   
-  var `502`: HttpErrorConstructor = js.native
+  var `502`: HttpErrorConstructor
   
-  var `503`: HttpErrorConstructor = js.native
+  var `503`: HttpErrorConstructor
   
-  var `504`: HttpErrorConstructor = js.native
+  var `504`: HttpErrorConstructor
   
-  var `505`: HttpErrorConstructor = js.native
+  var `505`: HttpErrorConstructor
   
-  var `506`: HttpErrorConstructor = js.native
+  var `506`: HttpErrorConstructor
   
-  var `507`: HttpErrorConstructor = js.native
+  var `507`: HttpErrorConstructor
   
-  var `508`: HttpErrorConstructor = js.native
+  var `508`: HttpErrorConstructor
   
-  var `509`: HttpErrorConstructor = js.native
+  var `509`: HttpErrorConstructor
   
-  var `510`: HttpErrorConstructor = js.native
+  var `510`: HttpErrorConstructor
   
-  var `511`: HttpErrorConstructor = js.native
+  var `511`: HttpErrorConstructor
   
-  var BadGateway: HttpErrorConstructor = js.native
+  var BadGateway: HttpErrorConstructor
   
-  var BadRequest: HttpErrorConstructor = js.native
+  var BadRequest: HttpErrorConstructor
   
-  var BandwidthLimitExceeded: HttpErrorConstructor = js.native
+  var BandwidthLimitExceeded: HttpErrorConstructor
   
-  var Conflict: HttpErrorConstructor = js.native
+  var Conflict: HttpErrorConstructor
   
-  var ExpectationFailed: HttpErrorConstructor = js.native
+  var ExpectationFailed: HttpErrorConstructor
   
-  var FailedDependency: HttpErrorConstructor = js.native
+  var FailedDependency: HttpErrorConstructor
   
-  var Forbidden: HttpErrorConstructor = js.native
+  var Forbidden: HttpErrorConstructor
   
-  var GatewayTimeout: HttpErrorConstructor = js.native
+  var GatewayTimeout: HttpErrorConstructor
   
-  var Gone: HttpErrorConstructor = js.native
+  var Gone: HttpErrorConstructor
   
-  var HTTPVersionNotSupported: HttpErrorConstructor = js.native
+  var HTTPVersionNotSupported: HttpErrorConstructor
   
-  var HttpError: HttpErrorConstructor = js.native
+  var HttpError: HttpErrorConstructor
   
-  var ImATeapot: HttpErrorConstructor = js.native
+  var ImATeapot: HttpErrorConstructor
   
-  var InsufficientStorage: HttpErrorConstructor = js.native
+  var InsufficientStorage: HttpErrorConstructor
   
-  var InternalServerError: HttpErrorConstructor = js.native
+  var InternalServerError: HttpErrorConstructor
   
-  var LengthRequired: HttpErrorConstructor = js.native
+  var LengthRequired: HttpErrorConstructor
   
-  var Locked: HttpErrorConstructor = js.native
+  var Locked: HttpErrorConstructor
   
-  var LoopDetected: HttpErrorConstructor = js.native
+  var LoopDetected: HttpErrorConstructor
   
-  var MethodNotAllowed: HttpErrorConstructor = js.native
+  var MethodNotAllowed: HttpErrorConstructor
   
-  var MisdirectedRequest: HttpErrorConstructor = js.native
+  var MisdirectedRequest: HttpErrorConstructor
   
-  var NetworkAuthenticationRequire: HttpErrorConstructor = js.native
+  var NetworkAuthenticationRequire: HttpErrorConstructor
   
-  var NotAcceptable: HttpErrorConstructor = js.native
+  var NotAcceptable: HttpErrorConstructor
   
-  var NotExtended: HttpErrorConstructor = js.native
+  var NotExtended: HttpErrorConstructor
   
-  var NotFound: HttpErrorConstructor = js.native
+  var NotFound: HttpErrorConstructor
   
-  var NotImplemented: HttpErrorConstructor = js.native
+  var NotImplemented: HttpErrorConstructor
   
-  var PayloadTooLarge: HttpErrorConstructor = js.native
+  var PayloadTooLarge: HttpErrorConstructor
   
-  var PaymentRequired: HttpErrorConstructor = js.native
+  var PaymentRequired: HttpErrorConstructor
   
-  var PreconditionFailed: HttpErrorConstructor = js.native
+  var PreconditionFailed: HttpErrorConstructor
   
-  var PreconditionRequired: HttpErrorConstructor = js.native
+  var PreconditionRequired: HttpErrorConstructor
   
-  var ProxyAuthenticationRequired: HttpErrorConstructor = js.native
+  var ProxyAuthenticationRequired: HttpErrorConstructor
   
-  var RangeNotSatisfiable: HttpErrorConstructor = js.native
+  var RangeNotSatisfiable: HttpErrorConstructor
   
-  var RequestHeaderFieldsTooLarge: HttpErrorConstructor = js.native
+  var RequestHeaderFieldsTooLarge: HttpErrorConstructor
   
-  var RequestTimeout: HttpErrorConstructor = js.native
+  var RequestTimeout: HttpErrorConstructor
   
-  var ServiceUnavailable: HttpErrorConstructor = js.native
+  var ServiceUnavailable: HttpErrorConstructor
   
-  var TooManyRequests: HttpErrorConstructor = js.native
+  var TooManyRequests: HttpErrorConstructor
   
-  var URITooLong: HttpErrorConstructor = js.native
+  var URITooLong: HttpErrorConstructor
   
-  var Unauthorized: HttpErrorConstructor = js.native
+  var Unauthorized: HttpErrorConstructor
   
-  var UnavailableForLegalReasons: HttpErrorConstructor = js.native
+  var UnavailableForLegalReasons: HttpErrorConstructor
   
-  var UnorderedCollection: HttpErrorConstructor = js.native
+  var UnorderedCollection: HttpErrorConstructor
   
-  var UnprocessableEntity: HttpErrorConstructor = js.native
+  var UnprocessableEntity: HttpErrorConstructor
   
-  var UnsupportedMediaType: HttpErrorConstructor = js.native
+  var UnsupportedMediaType: HttpErrorConstructor
   
-  var UpgradeRequired: HttpErrorConstructor = js.native
+  var UpgradeRequired: HttpErrorConstructor
   
-  var VariantAlsoNegotiates: HttpErrorConstructor = js.native
+  var VariantAlsoNegotiates: HttpErrorConstructor
 }
 object NamedConstructors {
   

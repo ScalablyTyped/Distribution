@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Footnote extends StObject {
   
   /** The contents of the footnote. The indexes for a footnote's content begin at zero. */
-  var content: js.UndefOr[js.Array[StructuralElement]] = js.native
+  var content: js.UndefOr[js.Array[StructuralElement]] = js.undefined
   
   /** The ID of the footnote. */
-  var footnoteId: js.UndefOr[String] = js.native
+  var footnoteId: js.UndefOr[String] = js.undefined
 }
 object Footnote {
   

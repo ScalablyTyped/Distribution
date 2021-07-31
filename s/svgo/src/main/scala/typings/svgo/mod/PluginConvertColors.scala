@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginConvertColors extends PluginConfig {
+trait PluginConvertColors
+  extends StObject
+     with PluginConfig {
   
-  var convertColors: Boolean | js.Object = js.native
+  var convertColors: Boolean | js.Object
 }
 object PluginConvertColors {
   

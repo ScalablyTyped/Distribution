@@ -5,25 +5,23 @@ import typings.reactMdUtils.anon.PartialPositionAnchor
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait Coords extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Coords {
     
@@ -74,7 +72,6 @@ object typesMod {
     }
   }
   
-  @js.native
   trait FixedPosition extends StObject {
     
     /**
@@ -82,14 +79,14 @@ object typesMod {
       * provided horizontal position anchor if additional manual updates should be
       * applied.
       */
-    var actualX: HorizontalPosition = js.native
+    var actualX: HorizontalPosition
     
     /**
       * The calculated vertical position that can be used to compare to the
       * provided horizontal position anchor if additional manual updates should be
       * applied.
       */
-    var actualY: VerticalPosition = js.native
+    var actualY: VerticalPosition
     
     /**
       * The style object that should be applied to the fixed element so it will be
@@ -99,7 +96,7 @@ object typesMod {
       * Note: The fixed element styles **will not** contain styles for `z-index` or
       * `background-color` so you'll need to add that manually.
       */
-    var style: js.UndefOr[Coordspositionfixedabsolu] = js.native
+    var style: js.UndefOr[Coordspositionfixedabsolu] = js.undefined
   }
   object FixedPosition {
     
@@ -126,37 +123,38 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait FixedPositionOptions extends InitialCoords {
+  trait FixedPositionOptions
+    extends StObject
+       with InitialCoords {
     
     /**
       * The configuration to anchor the fixed element to the container element.
       */
-    var anchor: js.UndefOr[PartialPositionAnchor] = js.native
+    var anchor: js.UndefOr[PartialPositionAnchor] = js.undefined
     
     /**
       * The container element that the `element` should be fixed to.
       */
-    var container: HTMLElement | Null = js.native
+    var container: HTMLElement | Null
     
     /**
       * Boolean if the auto-swapping behavior should be disabled. It's normally
       * recommended to not disable this since it'll allow elements to appear off
       * screen.
       */
-    var disableSwapping: js.UndefOr[Boolean] = js.native
+    var disableSwapping: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the fixed positioning should no longer prevent the fixed element
       * to be positioned within the viewport. This is nice if you want to allow for
       * full page scrolling instead and manually set a max-height on your element.
       */
-    var disableVHBounds: js.UndefOr[Boolean] = js.native
+    var disableVHBounds: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The element that is fixed to a `container` element.
       */
-    var element: HTMLElement | Null = js.native
+    var element: HTMLElement | Null
     
     /**
       * Boolean if the fixed element should no longer be able to overlap the
@@ -164,48 +162,48 @@ object typesMod {
       * components that retain focus on the container element while the fixed
       * element becomes visible.
       */
-    var preventOverlap: js.UndefOr[Boolean] = js.native
+    var preventOverlap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the style object should include the `transformOrigin` value
       * based on the x and y positions.
       */
-    var transformOrigin: js.UndefOr[Boolean] = js.native
+    var transformOrigin: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The viewwidth margin to apply so that the element doesn't need to be
       * directly on the screen edge.
       */
-    var vhMargin: js.UndefOr[Double] = js.native
+    var vhMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * The viewwidth margin to apply so that the element doesn't need to be
       * directly on the screen edge.
       */
-    var vwMargin: js.UndefOr[Double] = js.native
+    var vwMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * @see PositionWidth
       */
-    var width: js.UndefOr[PositionWidth] = js.native
+    var width: js.UndefOr[PositionWidth] = js.undefined
     
     /**
       * The container width margin to apply so that the element doesn't need to be
       * directly on the container's edge.
       */
-    var xMargin: js.UndefOr[Double] = js.native
+    var xMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * The container height margin to apply so that the element doesn't need to be
       * directly on the container's edge
       */
-    var yMargin: js.UndefOr[Double] = js.native
+    var yMargin: js.UndefOr[Double] = js.undefined
   }
   object FixedPositionOptions {
     
     @scala.inline
     def apply(): FixedPositionOptions = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(container = null, element = null)
       __obj.asInstanceOf[FixedPositionOptions]
     }
     
@@ -312,7 +310,6 @@ object typesMod {
     def right: typings.reactMdUtils.reactMdUtilsStrings.right = "right".asInstanceOf[typings.reactMdUtils.reactMdUtilsStrings.right]
   }
   
-  @js.native
   trait InitialCoords extends StObject {
     
     /**
@@ -321,7 +318,7 @@ object typesMod {
       * the other positioning logic will still be in effect to ensure the element
       * will be visible within the viewport.
       */
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
     /**
       * The initial y value to use when calculating the position instead of
@@ -329,7 +326,7 @@ object typesMod {
       * the other positioning logic will still be in effect to ensure the element
       * will be visible within the viewport.
       */
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
   }
   object InitialCoords {
     
@@ -356,12 +353,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait PositionAnchor extends StObject {
     
-    var x: HorizontalPosition = js.native
+    var x: HorizontalPosition
     
-    var y: VerticalPosition = js.native
+    var y: VerticalPosition
   }
   object PositionAnchor {
     

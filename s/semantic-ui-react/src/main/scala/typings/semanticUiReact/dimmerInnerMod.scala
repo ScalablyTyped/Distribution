@@ -11,7 +11,6 @@ import typings.semanticUiReact.semanticUiReactStrings.top
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dimmerInnerMod {
@@ -23,9 +22,9 @@ object dimmerInnerMod {
   
   type DimmerInner = Component[DimmerInnerProps, js.Object, js.Any]
   
-  @js.native
   trait DimmerInnerProps
-    extends StrictDimmerInnerProps
+    extends StObject
+       with StrictDimmerInnerProps
        with /* key */ StringDictionary[js.Any]
   object DimmerInnerProps {
     
@@ -36,29 +35,28 @@ object dimmerInnerMod {
     }
   }
   
-  @js.native
   trait StrictDimmerInnerProps extends StObject {
     
     /** An active dimmer will dim its parent container. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A disabled dimmer cannot be activated */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** A dimmer can be formatted to have its colors inverted. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Called when the dimmer is clicked.
@@ -72,7 +70,7 @@ object dimmerInnerMod {
           /* data */ DimmerInnerProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Handles click outside Dimmer's content, but inside Dimmer area.
@@ -86,16 +84,16 @@ object dimmerInnerMod {
           /* data */ DimmerInnerProps, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** A dimmer can be formatted to be fixed to the page. */
-    var page: js.UndefOr[Boolean] = js.native
+    var page: js.UndefOr[Boolean] = js.undefined
     
     /** A dimmer can be controlled with simple prop. */
-    var simple: js.UndefOr[Boolean] = js.native
+    var simple: js.UndefOr[Boolean] = js.undefined
     
     /** A dimmer can have its content top or bottom aligned. */
-    var verticalAlign: js.UndefOr[bottom | top] = js.native
+    var verticalAlign: js.UndefOr[bottom | top] = js.undefined
   }
   object StrictDimmerInnerProps {
     

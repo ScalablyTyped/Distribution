@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamDriveInfo extends StObject {
   
   /** List of Team Drive IDs, as provided by Drive API. */
-  var teamDriveIds: js.UndefOr[js.Array[String]] = js.native
+  var teamDriveIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TeamDriveInfo {
   

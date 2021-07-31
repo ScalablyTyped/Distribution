@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Form
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofForm extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Form = js.native
+  def extend(proto: js.Object): Form
   
   /* static member */
-  var fn: Form = js.native
+  var fn: Form
 }
 object TypeofForm {
   

@@ -2,24 +2,22 @@ package typings.googleapis.securitycenterV1beta1Mod.securitycenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Result containing the Asset and its State.
   */
-@js.native
 trait SchemaListAssetsResult extends StObject {
   
   /**
     * Asset matching the search request.
     */
-  var asset: js.UndefOr[SchemaAsset] = js.native
+  var asset: js.UndefOr[SchemaAsset] = js.undefined
   
   /**
     * State of the asset.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaListAssetsResult {
   

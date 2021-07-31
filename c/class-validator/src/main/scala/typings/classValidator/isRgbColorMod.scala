@@ -4,32 +4,29 @@ import typings.classValidator.validationOptionsMod.ValidationOptions
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isRgbColorMod {
+  
+  @JSImport("class-validator/types/decorator/string/IsRgbColor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/decorator/string/IsRgbColor", "IS_RGB_COLOR")
   @js.native
   val IS_RGB_COLOR: /* "isRgbColor" */ String = js.native
   
-  @JSImport("class-validator/types/decorator/string/IsRgbColor", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsRgbColor", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(includePercentValues: js.UndefOr[scala.Nothing], validationOptions: ValidationOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsRgbColor", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(includePercentValues: Boolean): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/string/IsRgbColor", "IsRgbColor")
-  @js.native
-  def IsRgbColor_(includePercentValues: Boolean, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  @scala.inline
+  def IsRgbColor_(): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")().asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsRgbColor_(includePercentValues: Boolean): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")(includePercentValues.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsRgbColor_(includePercentValues: Boolean, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")(includePercentValues.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def IsRgbColor_(includePercentValues: Unit, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("IsRgbColor")(includePercentValues.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
   
-  @JSImport("class-validator/types/decorator/string/IsRgbColor", "isRgbColor")
-  @js.native
-  def isRgbColor(value: js.Any): Boolean = js.native
-  @JSImport("class-validator/types/decorator/string/IsRgbColor", "isRgbColor")
-  @js.native
-  def isRgbColor(value: js.Any, includePercentValues: Boolean): Boolean = js.native
+  @scala.inline
+  def isRgbColor(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRgbColor")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isRgbColor(value: js.Any, includePercentValues: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRgbColor")(value.asInstanceOf[js.Any], includePercentValues.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

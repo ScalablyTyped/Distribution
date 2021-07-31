@@ -2,24 +2,22 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGridMessagesFieldMenuOperators extends StObject {
   
-  var contains: js.UndefOr[String] = js.native
+  var contains: js.UndefOr[String] = js.undefined
   
-  var doesnotcontain: js.UndefOr[String] = js.native
+  var doesnotcontain: js.UndefOr[String] = js.undefined
   
-  var endswith: js.UndefOr[String] = js.native
+  var endswith: js.UndefOr[String] = js.undefined
   
   @JSName("eq")
-  var eq_FPivotGridMessagesFieldMenuOperators: js.UndefOr[String] = js.native
+  var eq_FPivotGridMessagesFieldMenuOperators: js.UndefOr[String] = js.undefined
   
-  var neq: js.UndefOr[String] = js.native
+  var neq: js.UndefOr[String] = js.undefined
   
-  var startswith: js.UndefOr[String] = js.native
+  var startswith: js.UndefOr[String] = js.undefined
 }
 object PivotGridMessagesFieldMenuOperators {
   

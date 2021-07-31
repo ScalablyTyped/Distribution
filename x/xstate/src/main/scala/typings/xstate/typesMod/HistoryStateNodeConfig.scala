@@ -5,27 +5,27 @@ import typings.xstate.xstateStrings.deep
 import typings.xstate.xstateStrings.shallow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistoryStateNodeConfig[TContext, TEvent /* <: EventObject */] extends AtomicStateNodeConfig[TContext, TEvent] {
+trait HistoryStateNodeConfig[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with AtomicStateNodeConfig[TContext, TEvent] {
   
   @JSName("history")
-  var history_HistoryStateNodeConfig: shallow | deep | `true` = js.native
+  var history_HistoryStateNodeConfig: shallow | deep | `true`
   
-  var target: js.UndefOr[StateValue] = js.native
+  var target: js.UndefOr[StateValue] = js.undefined
 }
 object HistoryStateNodeConfig {
   
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](history: shallow | deep | `true`): HistoryStateNodeConfig[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any])
+  def apply[TContext, TEvent /* <: EventObject */](history: shallow | deep | `true`, initial: Unit, onDone: Unit, states: Unit): HistoryStateNodeConfig[TContext, TEvent] = {
+    val __obj = js.Dynamic.literal(history = history.asInstanceOf[js.Any], initial = initial.asInstanceOf[js.Any], onDone = onDone.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
     __obj.asInstanceOf[HistoryStateNodeConfig[TContext, TEvent]]
   }
   
   @scala.inline
-  implicit class HistoryStateNodeConfigMutableBuilder[Self <: HistoryStateNodeConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (HistoryStateNodeConfig[TContext, TEvent])) extends AnyVal {
+  implicit class HistoryStateNodeConfigMutableBuilder[Self <: HistoryStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (HistoryStateNodeConfig[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setHistory(value: shallow | deep | `true`): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])

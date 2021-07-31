@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Testers extends StObject {
   
   /** All testing Google Groups, as email addresses. */
-  var googleGroups: js.UndefOr[js.Array[String]] = js.native
+  var googleGroups: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Testers {
   

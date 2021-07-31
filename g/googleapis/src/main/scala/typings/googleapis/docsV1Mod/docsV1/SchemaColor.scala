@@ -2,19 +2,17 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A solid color.
   */
-@js.native
 trait SchemaColor extends StObject {
   
   /**
     * The RGB color value.
     */
-  var rgbColor: js.UndefOr[SchemaRgbColor] = js.native
+  var rgbColor: js.UndefOr[SchemaRgbColor] = js.undefined
 }
 object SchemaColor {
   

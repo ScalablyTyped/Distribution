@@ -2,15 +2,13 @@ package typings.angularFormly.AngularFormly
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITemplateManipulators extends StObject {
   
-  var postWrapper: js.UndefOr[js.Array[ITemplateManipulator]] = js.native
+  var postWrapper: js.UndefOr[js.Array[ITemplateManipulator]] = js.undefined
   
-  var preWrapper: js.UndefOr[js.Array[ITemplateManipulator]] = js.native
+  var preWrapper: js.UndefOr[js.Array[ITemplateManipulator]] = js.undefined
 }
 object ITemplateManipulators {
   

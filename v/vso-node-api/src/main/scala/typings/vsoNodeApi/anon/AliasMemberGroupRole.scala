@@ -2,35 +2,33 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AliasMemberGroupRole extends StObject {
   
-  var aliasMemberGroupRole: scala.Double = js.native
+  var aliasMemberGroupRole: scala.Double
   
-  var directMember: scala.Double = js.native
+  var directMember: scala.Double
   
-  var directMemberGroupRole: scala.Double = js.native
+  var directMemberGroupRole: scala.Double
   
-  var follows: scala.Double = js.native
+  var follows: scala.Double
   
-  var groupAlias: scala.Double = js.native
+  var groupAlias: scala.Double
   
-  var inDirectMemberGroupRole: scala.Double = js.native
+  var inDirectMemberGroupRole: scala.Double
   
-  var indirectMember: scala.Double = js.native
+  var indirectMember: scala.Double
   
-  var personal: scala.Double = js.native
+  var personal: scala.Double
   
-  var personalAlias: scala.Double = js.native
+  var personalAlias: scala.Double
   
-  var singleRole: scala.Double = js.native
+  var singleRole: scala.Double
   
-  var subscriptionAlias: scala.Double = js.native
+  var subscriptionAlias: scala.Double
   
-  var unknown: scala.Double = js.native
+  var unknown: scala.Double
 }
 object AliasMemberGroupRole {
   

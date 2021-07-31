@@ -5,7 +5,6 @@ import typings.typeorm.anon.DbName
 import typings.typeorm.platformPlatformToolsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/driver/mongodb/typings", "MongoClient")
@@ -77,9 +76,9 @@ class MongoClient protected () extends EventEmitter {
     * @see http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#db
     */
   def db(): Db = js.native
-  def db(dbName: js.UndefOr[scala.Nothing], options: MongoClientCommonOption): Db = js.native
   def db(dbName: String): Db = js.native
   def db(dbName: String, options: MongoClientCommonOption): Db = js.native
+  def db(dbName: Unit, options: MongoClientCommonOption): Db = js.native
   
   /**
     * Check if MongoClient is connected.
@@ -89,15 +88,15 @@ class MongoClient protected () extends EventEmitter {
   def isConnected(): Boolean = js.native
   def isConnected(options: MongoClientCommonOption): Boolean = js.native
   
-  def logout(): js.Promise[_] = js.native
+  def logout(): js.Promise[js.Any] = js.native
   /**
     * Logout user from server, fire off on all connections and remove all auth info.
     * @param callback The result callback.
     * @see http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#logout
     */
-  def logout(callback: MongoCallback[_]): Unit = js.native
-  def logout(options: DbName): js.Promise[_] = js.native
-  def logout(options: DbName, callback: MongoCallback[_]): Unit = js.native
+  def logout(callback: MongoCallback[js.Any]): Unit = js.native
+  def logout(options: DbName): js.Promise[js.Any] = js.native
+  def logout(options: DbName, callback: MongoCallback[js.Any]): Unit = js.native
   
   /**
     * Starts a new session on the server.
@@ -115,26 +114,30 @@ class MongoClient protected () extends EventEmitter {
     * @see http://mongodb.github.io/node-mongodb-native/3.1/api/Collection.html#watch
     */
   def watch(): ChangeStream = js.native
-  def watch(pipeline: js.UndefOr[scala.Nothing], options: ChangeStreamOptionsstartABatchSize): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object]): ChangeStream = js.native
   def watch(pipeline: js.Array[js.Object], options: ChangeStreamOptionsstartABatchSize): ChangeStream = js.native
+  def watch(pipeline: Unit, options: ChangeStreamOptionsstartABatchSize): ChangeStream = js.native
   
   /**
     * Runs a given operation with an implicitly created session. The lifetime of the session will be handled without the need for user interaction.
     * @param operation An operation to execute with an implicitly created session. The signature of this MUST be `(session) => {}`
     * @see http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#withSession
     */
-  def withSession(operation: js.Function1[/* session */ ClientSession, js.Promise[_]]): js.Promise[Unit] = js.native
+  def withSession(operation: js.Function1[/* session */ ClientSession, js.Promise[js.Any]]): js.Promise[Unit] = js.native
   /**
     * Runs a given operation with an implicitly created session. The lifetime of the session will be handled without the need for user interaction.
     * @param options Optional settings to be appled to implicitly created session.
     * @param operation An operation to execute with an implicitly created session. The signature of this MUST be `(session) => {}`
     * @see http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html#withSession
     */
-  def withSession(options: SessionOptions, operation: js.Function1[/* session */ ClientSession, js.Promise[_]]): js.Promise[Unit] = js.native
+  def withSession(options: SessionOptions, operation: js.Function1[/* session */ ClientSession, js.Promise[js.Any]]): js.Promise[Unit] = js.native
 }
 /* static members */
 object MongoClient {
+  
+  @JSImport("typeorm/driver/mongodb/typings", "MongoClient")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
@@ -143,9 +146,8 @@ object MongoClient {
     * @param url The connection URI string.
     * @param options Optional settings.
     */
-  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
-  @js.native
-  def connect(url: String): js.Promise[Db] = js.native
+  @scala.inline
+  def connect(url: String): js.Promise[Db] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Db]]
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
     * Note that for replicasets the replicaSet query parameter is required in the 2.0 driver.
@@ -153,12 +155,10 @@ object MongoClient {
     * @param url The connection URI string.
     * @param callback The command result callback.
     */
-  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
-  @js.native
-  def connect(url: String, callback: MongoCallback[Db]): Unit = js.native
-  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
-  @js.native
-  def connect(url: String, options: MongoClientOptions): js.Promise[Db] = js.native
+  @scala.inline
+  def connect(url: String, callback: MongoCallback[Db]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def connect(url: String, options: MongoClientOptions): js.Promise[Db] = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Db]]
   /**
     * Connect to MongoDB using a url as documented at docs.mongodb.org/manual/reference/connection-string/
     * Note that for replicasets the replicaSet query parameter is required in the 2.0 driver.
@@ -167,7 +167,6 @@ object MongoClient {
     * @param options Optional settings.
     * @param callback The command result callback.
     */
-  @JSImport("typeorm/driver/mongodb/typings", "MongoClient.connect")
-  @js.native
-  def connect(url: String, options: MongoClientOptions, callback: MongoCallback[Db]): Unit = js.native
+  @scala.inline
+  def connect(url: String, options: MongoClientOptions, callback: MongoCallback[Db]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

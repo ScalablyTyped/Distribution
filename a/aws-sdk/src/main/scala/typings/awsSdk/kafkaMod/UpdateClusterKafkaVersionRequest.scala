@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateClusterKafkaVersionRequest extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait UpdateClusterKafkaVersionRequest extends StObject {
     The Amazon Resource Name (ARN) of the cluster to be updated.
     
     */
-  var ClusterArn: string = js.native
+  var ClusterArn: string
   
   /**
     * 
     The custom configuration that should be applied on the new version of cluster.
     
     */
-  var ConfigurationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConfigurationInfo] = js.native
+  var ConfigurationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConfigurationInfo] = js.undefined
   
   /**
     * 
     Current cluster version.
     
     */
-  var CurrentVersion: string = js.native
+  var CurrentVersion: string
   
   /**
     * 
     Target Kafka version.
     
     */
-  var TargetKafkaVersion: string = js.native
+  var TargetKafkaVersion: string
 }
 object UpdateClusterKafkaVersionRequest {
   

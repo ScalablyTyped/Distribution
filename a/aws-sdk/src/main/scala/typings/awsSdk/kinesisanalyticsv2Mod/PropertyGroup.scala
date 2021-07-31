@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyGroup extends StObject {
   
   /**
     * Describes the key of an application execution property key-value pair.
     */
-  var PropertyGroupId: Id = js.native
+  var PropertyGroupId: Id
   
   /**
     * Describes the value of an application execution property key-value pair.
     */
-  var PropertyMap: typings.awsSdk.kinesisanalyticsv2Mod.PropertyMap = js.native
+  var PropertyMap: typings.awsSdk.kinesisanalyticsv2Mod.PropertyMap
 }
 object PropertyGroup {
   

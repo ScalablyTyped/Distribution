@@ -2,19 +2,17 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PoolStateType extends StObject {
   
-  var activeConnectionCount: Double = js.native
+  var activeConnectionCount: Double
   
-  var ended: Boolean = js.native
+  var ended: Boolean
   
-  var idleConnectionCount: Double = js.native
+  var idleConnectionCount: Double
   
-  var waitingClientCount: Double = js.native
+  var waitingClientCount: Double
 }
 object PoolStateType {
   

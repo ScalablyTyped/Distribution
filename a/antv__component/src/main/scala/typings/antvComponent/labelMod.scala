@@ -3,27 +3,25 @@ package typings.antvComponent
 import typings.antvGBase.interfacesMod.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelMod {
   
-  @JSImport("@antv/component/lib/util/label", "ellipsisLabel")
+  @JSImport("@antv/component/lib/util/label", JSImport.Namespace)
   @js.native
-  def ellipsisLabel(isVertical: Boolean, label: IElement, limitLength: Double): Boolean = js.native
-  @JSImport("@antv/component/lib/util/label", "ellipsisLabel")
-  @js.native
-  def ellipsisLabel(isVertical: Boolean, label: IElement, limitLength: Double, position: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@antv/component/lib/util/label", "getLabelLength")
-  @js.native
-  def getLabelLength(isVertical: Boolean, label: js.Any): js.Any = js.native
+  @scala.inline
+  def ellipsisLabel(isVertical: Boolean, label: IElement, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisLabel")(isVertical.asInstanceOf[js.Any], label.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def ellipsisLabel(isVertical: Boolean, label: IElement, limitLength: Double, position: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ellipsisLabel")(isVertical.asInstanceOf[js.Any], label.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@antv/component/lib/util/label", "getMaxLabelWidth")
-  @js.native
-  def getMaxLabelWidth(labels: js.Array[IElement]): Double = js.native
+  @scala.inline
+  def getLabelLength(isVertical: Boolean, label: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getLabelLength")(isVertical.asInstanceOf[js.Any], label.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@antv/component/lib/util/label", "testLabel")
-  @js.native
-  def testLabel(label: IElement, limitLength: Double): Boolean = js.native
+  @scala.inline
+  def getMaxLabelWidth(labels: js.Array[IElement]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getMaxLabelWidth")(labels.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def testLabel(label: IElement, limitLength: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("testLabel")(label.asInstanceOf[js.Any], limitLength.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

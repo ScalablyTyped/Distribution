@@ -2,7 +2,6 @@ package typings.ipfsHttpServer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routesShutdownMod {
@@ -11,9 +10,8 @@ object routesShutdownMod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("ipfs-http-server/dist/src/api/routes/shutdown", "handler")
-  @js.native
-  def handler(_request: js.Any, h: js.Any): js.Any = js.native
+  @scala.inline
+  def handler(_request: js.Any, h: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("handler")(_request.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("ipfs-http-server/dist/src/api/routes/shutdown", "method")
   @js.native

@@ -2,37 +2,37 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyntaxToken extends IPrimaryExpressionSyntax {
+trait ISyntaxToken
+  extends StObject
+     with IPrimaryExpressionSyntax {
   
-  def hasLeadingComment(): Boolean = js.native
+  def hasLeadingComment(): Boolean
   
-  def hasLeadingNewLine(): Boolean = js.native
+  def hasLeadingNewLine(): Boolean
   
-  def hasLeadingSkippedText(): Boolean = js.native
+  def hasLeadingSkippedText(): Boolean
   
-  def hasLeadingTrivia(): Boolean = js.native
+  def hasLeadingTrivia(): Boolean
   
-  def hasSkippedToken(): Boolean = js.native
+  def hasSkippedToken(): Boolean
   
-  def hasTrailingComment(): Boolean = js.native
+  def hasTrailingComment(): Boolean
   
-  def hasTrailingNewLine(): Boolean = js.native
+  def hasTrailingNewLine(): Boolean
   
-  def hasTrailingSkippedText(): Boolean = js.native
+  def hasTrailingSkippedText(): Boolean
   
-  def hasTrailingTrivia(): Boolean = js.native
+  def hasTrailingTrivia(): Boolean
   
-  def text(): String = js.native
+  def text(): String
   
-  var tokenKind: SyntaxKind = js.native
+  var tokenKind: SyntaxKind
   
-  def value(): js.Any = js.native
+  def value(): js.Any
   
-  def valueText(): String = js.native
+  def valueText(): String
 }
 object ISyntaxToken {
   

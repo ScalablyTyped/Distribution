@@ -6,7 +6,6 @@ import typings.johnnyFive.johnnyFiveStrings.motionend
 import typings.johnnyFive.johnnyFiveStrings.motionstart
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("johnny-five", "Motion")

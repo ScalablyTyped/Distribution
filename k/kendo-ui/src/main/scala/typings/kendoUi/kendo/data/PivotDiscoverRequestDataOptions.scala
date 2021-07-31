@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotDiscoverRequestDataOptions extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var restrictions: PivotDiscoverRequestRestrictionOptions = js.native
+  var restrictions: PivotDiscoverRequestRestrictionOptions
 }
 object PivotDiscoverRequestDataOptions {
   

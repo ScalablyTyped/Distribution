@@ -2,26 +2,24 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpRouteHeader extends StObject {
   
   /**
     * Specify True to match anything except the match criteria. The default value is False.
     */
-  var invert: js.UndefOr[Boolean] = js.native
+  var invert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The HeaderMatchMethod object.
     */
-  var `match`: js.UndefOr[HeaderMatchMethod] = js.native
+  var `match`: js.UndefOr[HeaderMatchMethod] = js.undefined
   
   /**
     * A name for the HTTP header in the client request that will be matched on.
     */
-  var name: HeaderName = js.native
+  var name: HeaderName
 }
 object HttpRouteHeader {
   

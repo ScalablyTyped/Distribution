@@ -2,13 +2,11 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceCreditSpecification extends StObject {
   
-  var cpuCredits: String = js.native
+  var cpuCredits: String
 }
 object GetInstanceCreditSpecification {
   

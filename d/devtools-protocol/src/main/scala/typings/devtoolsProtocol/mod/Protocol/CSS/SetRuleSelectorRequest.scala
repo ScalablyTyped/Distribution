@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetRuleSelectorRequest extends StObject {
   
-  var range: SourceRange = js.native
+  var range: SourceRange
   
-  var selector: String = js.native
+  var selector: String
   
-  var styleSheetId: StyleSheetId = js.native
+  var styleSheetId: StyleSheetId
 }
 object SetRuleSelectorRequest {
   

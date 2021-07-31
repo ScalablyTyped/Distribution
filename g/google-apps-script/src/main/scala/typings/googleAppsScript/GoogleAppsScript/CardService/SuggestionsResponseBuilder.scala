@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for SuggestionsResponse objects.
   */
-@js.native
 trait SuggestionsResponseBuilder extends StObject {
   
-  def build(): SuggestionsResponse = js.native
+  def build(): SuggestionsResponse
   
-  def setSuggestions(suggestions: Suggestions): SuggestionsResponseBuilder = js.native
+  def setSuggestions(suggestions: Suggestions): SuggestionsResponseBuilder
 }
 object SuggestionsResponseBuilder {
   

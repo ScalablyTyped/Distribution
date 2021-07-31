@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MSFIDOCredentialAssertion extends MSAssertion {
+trait MSFIDOCredentialAssertion
+  extends StObject
+     with MSAssertion {
   
-  val algorithm: java.lang.String | Algorithm = js.native
+  val algorithm: java.lang.String | Algorithm
   
-  val attestation: js.Any = js.native
+  val attestation: js.Any
   
-  val publicKey: java.lang.String = js.native
+  val publicKey: java.lang.String
   
-  val transportHints: js.Array[MSTransportType] = js.native
+  val transportHints: js.Array[MSTransportType]
 }
 object MSFIDOCredentialAssertion {
   

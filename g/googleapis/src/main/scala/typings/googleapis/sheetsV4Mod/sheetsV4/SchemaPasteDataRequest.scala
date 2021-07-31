@@ -2,39 +2,37 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Inserts data into the spreadsheet starting at the specified coordinate.
   */
-@js.native
 trait SchemaPasteDataRequest extends StObject {
   
   /**
     * The coordinate at which the data should start being inserted.
     */
-  var coordinate: js.UndefOr[SchemaGridCoordinate] = js.native
+  var coordinate: js.UndefOr[SchemaGridCoordinate] = js.undefined
   
   /**
     * The data to insert.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * The delimiter in the data.
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /**
     * True if the data is HTML.
     */
-  var html: js.UndefOr[Boolean] = js.native
+  var html: js.UndefOr[Boolean] = js.undefined
   
   /**
     * How the data should be pasted.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaPasteDataRequest {
   

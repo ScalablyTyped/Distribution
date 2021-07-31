@@ -3,29 +3,29 @@ package typings.vueTemplateCompiler.mod
 import typings.vueTemplateCompiler.vueTemplateCompilerNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ASTText extends ASTNode {
+trait ASTText
+  extends StObject
+     with ASTNode {
   
-  var isComment: js.UndefOr[Boolean] = js.native
+  var isComment: js.UndefOr[Boolean] = js.undefined
   
   // 2.4 ssr optimization
-  var ssrOptimizability: js.UndefOr[SSROptimizability] = js.native
+  var ssrOptimizability: js.UndefOr[SSROptimizability] = js.undefined
   
-  var static: js.UndefOr[Boolean] = js.native
+  var static: js.UndefOr[Boolean] = js.undefined
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: `3` = js.native
+  var `type`: `3`
 }
 object ASTText {
   
   @scala.inline
-  def apply(text: String, `type`: `3`): ASTText = {
+  def apply(text: String): ASTText = {
     val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(3)
     __obj.asInstanceOf[ASTText]
   }
   

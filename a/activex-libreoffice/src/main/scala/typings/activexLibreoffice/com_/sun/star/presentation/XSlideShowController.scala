@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.presentation
 import typings.activexLibreoffice.com_.sun.star.drawing.XDrawPage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,68 +10,67 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPresentation2
   * @since OOo 3.0
   */
-@js.native
 trait XSlideShowController extends StObject {
   
   /** If this attribute is set to `TRUE` , the window of the slide show is always on top of all other windows. */
-  var AlwaysOnTop: Boolean = js.native
+  var AlwaysOnTop: Boolean
   
   /** returns slide that is currently displayed */
-  val CurrentSlide: XDrawPage = js.native
+  val CurrentSlide: XDrawPage
   
   /** returns the index of the current slide. */
-  val CurrentSlideIndex: Double = js.native
+  val CurrentSlideIndex: Double
   
   /** If this attribute is `TRUE` , the mouse is visible during the slide show. */
-  var MouseVisible: Boolean = js.native
+  var MouseVisible: Boolean
   
   /** the index for the slide that is displayed next. */
-  val NextSlideIndex: Double = js.native
+  val NextSlideIndex: Double
   
   /** This attribute changes the color of the pen. */
-  var PenColor: Double = js.native
+  var PenColor: Double
   
   /**
     * This attribute changes the width of the pen.
     * @since LibreOffice 4.2
     */
-  var PenWidth: Double = js.native
+  var PenWidth: Double
   
   /**
     * @returns the number of slides in this slide show.
     * @see getSlideByIndex
     */
-  val SlideCount: Double = js.native
+  val SlideCount: Double
   
   /**
     * returns the actual {@link XSlideShow} instance that runs the slide show. ;  Normally all navigation should be done using this controller and not the
     * {@link XSlideShow} itself.
     */
-  val SlideShow: XSlideShow = js.native
+  val SlideShow: XSlideShow
   
   /**
     * If this is `TRUE` , a pen is shown during presentation.
     *
     * You can draw on the presentation with this pen.
     */
-  var UsePen: Boolean = js.native
+  var UsePen: Boolean
   
   /**
     * activates the user interface of this slide show.
     * @see deactivate()
     * @see isActive()
     */
-  def activate(): Unit = js.native
+  def activate(): Unit
   
   /** adds a listener that receives events while the slide show is running. */
-  def addSlideShowListener(Listener: XSlideShowListener): Unit = js.native
+  def addSlideShowListener(Listener: XSlideShowListener): Unit
   
   /**
     * pauses the slide show and blanks the screen in the given color.
     *
     * Change attribute Pause to false to unpause the slide show.
     */
-  def blankScreen(Color: Double): Unit = js.native
+  def blankScreen(Color: Double): Unit
   
   /**
     * can be called to deactivate the user interface of this slide show.
@@ -81,16 +79,16 @@ trait XSlideShowController extends StObject {
     * @see activate()
     * @see isActive()
     */
-  def deactivate(): Unit = js.native
+  def deactivate(): Unit
   
   /** returns slide that is currently displayed */
-  def getCurrentSlide(): XDrawPage = js.native
+  def getCurrentSlide(): XDrawPage
   
   /** returns the index of the current slide. */
-  def getCurrentSlideIndex(): Double = js.native
+  def getCurrentSlideIndex(): Double
   
   /** the index for the slide that is displayed next. */
-  def getNextSlideIndex(): Double = js.native
+  def getNextSlideIndex(): Double
   
   /**
     * gives access to the slides that will be shown in this slide show.
@@ -101,60 +99,60 @@ trait XSlideShowController extends StObject {
     * @returns the slide at the specified index.
     * @throws com::sun::star::lang::IndexOutOfBoundException if the index is not valid.
     */
-  def getSlideByIndex(Index: Double): XDrawPage = js.native
+  def getSlideByIndex(Index: Double): XDrawPage
   
   /**
     * @returns the number of slides in this slide show.
     * @see getSlideByIndex
     */
-  def getSlideCount(): Double = js.native
+  def getSlideCount(): Double
   
   /**
     * returns the actual {@link XSlideShow} instance that runs the slide show. ;  Normally all navigation should be done using this controller and not the
     * {@link XSlideShow} itself.
     */
-  def getSlideShow(): XSlideShow = js.native
+  def getSlideShow(): XSlideShow
   
   /** goto the given textual bookmark */
-  def gotoBookmark(Bookmark: String): Unit = js.native
+  def gotoBookmark(Bookmark: String): Unit
   
   /** goto and display first slide */
-  def gotoFirstSlide(): Unit = js.native
+  def gotoFirstSlide(): Unit
   
   /**
     * goto and display last slide.
     *
     * Remaining effects on the current slide will be skipped.
     */
-  def gotoLastSlide(): Unit = js.native
+  def gotoLastSlide(): Unit
   
   /**
     * start next effects that wait on a generic trigger.
     *
     * If no generic triggers are waiting the next slide will be displayed.
     */
-  def gotoNextEffect(): Unit = js.native
+  def gotoNextEffect(): Unit
   
   /**
     * goto and display next slide.
     *
     * Remaining effects on the current slide will be skipped.
     */
-  def gotoNextSlide(): Unit = js.native
+  def gotoNextSlide(): Unit
   
   /**
     * undo the last effects that where triggered by a generic trigger.
     *
     * If there is no previous effect that can be undone then the previous slide will be displayed.
     */
-  def gotoPreviousEffect(): Unit = js.native
+  def gotoPreviousEffect(): Unit
   
   /**
     * goto and display previous slide.
     *
     * Remaining effects on the current slide will be skipped.
     */
-  def gotoPreviousSlide(): Unit = js.native
+  def gotoPreviousSlide(): Unit
   
   /**
     * jumps to the given slide.
@@ -162,51 +160,51 @@ trait XSlideShowController extends StObject {
     * The slide can also be a slide that would normally not be shown during the current slide show.
     * @throws com::sun::star::lang::IllegalArgumentException if the given page is not a valid slide of the document for which this slide show is started. Also
     */
-  def gotoSlide(Page: XDrawPage): Unit = js.native
+  def gotoSlide(Page: XDrawPage): Unit
   
   /** jumps to the slide at the given index. */
-  def gotoSlideIndex(Index: Double): Unit = js.native
+  def gotoSlideIndex(Index: Double): Unit
   
   /**
     * determines if the slide show is active.
     * @returns `TRUE` for UI active slide show ; `FALSE` otherwise
     */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /** returns `TRUE` if the slide show was started to run endlessly. */
-  def isEndless(): Boolean = js.native
+  def isEndless(): Boolean
   
   /** Returns `TRUE` if the slide show was started in full-screen mode. */
-  def isFullScreen(): Boolean = js.native
+  def isFullScreen(): Boolean
   
   /**
     * returns `TRUE` if the slide show is currently paused.
     * @see pause()
     * @see resume()
     */
-  def isPaused(): Boolean = js.native
+  def isPaused(): Boolean
   
   /**
     * returns true if the slide show is still running. If this returns false, this component is already disposed. You can start a new slide show and get a
     * new instance of {@link XSlideShowController} from {@link XPresentation2}
     */
-  def isRunning(): Boolean = js.native
+  def isRunning(): Boolean
   
   /**
     * pauses the slide show. All effects are paused.
     *
     * The slide show continues on next user input or if {@link resume()} is called.
     */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** removes a listener. */
-  def removeSlideShowListener(Listener: XSlideShowListener): Unit = js.native
+  def removeSlideShowListener(Listener: XSlideShowListener): Unit
   
   /** resumes a paused slide show. */
-  def resume(): Unit = js.native
+  def resume(): Unit
   
   /** stop all currently played sounds */
-  def stopSound(): Unit = js.native
+  def stopSound(): Unit
 }
 object XSlideShowController {
   

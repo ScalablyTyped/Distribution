@@ -2,17 +2,15 @@ package typings.reactAsync.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Persist extends StObject {
   
-  var children: js.Any = js.native
+  var children: js.Any
   
-  var persist: js.Any = js.native
+  var persist: js.Any
   
-  var state: js.Any = js.native
+  var state: js.Any
 }
 object Persist {
   

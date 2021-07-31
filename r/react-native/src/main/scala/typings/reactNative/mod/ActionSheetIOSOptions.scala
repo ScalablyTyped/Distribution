@@ -2,25 +2,23 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionSheetIOSOptions extends StObject {
   
-  var anchor: js.UndefOr[Double] = js.native
+  var anchor: js.UndefOr[Double] = js.undefined
   
-  var cancelButtonIndex: js.UndefOr[Double] = js.native
+  var cancelButtonIndex: js.UndefOr[Double] = js.undefined
   
-  var destructiveButtonIndex: js.UndefOr[Double] = js.native
+  var destructiveButtonIndex: js.UndefOr[Double] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var options: js.Array[String] = js.native
+  var options: js.Array[String]
   
-  var tintColor: js.UndefOr[ColorValue | ProcessedColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue | ProcessedColorValue] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ActionSheetIOSOptions {
   

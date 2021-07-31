@@ -2,21 +2,19 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildRepair extends StObject {
   
-  var build: typings.screeps.screepsNumbers.`2` = js.native
+  var build: typings.screeps.screepsNumbers.`2`
   
-  var repair: typings.screeps.screepsNumbers.`2` = js.native
+  var repair: typings.screeps.screepsNumbers.`2`
 }
 object BuildRepair {
   
   @scala.inline
-  def apply(build: typings.screeps.screepsNumbers.`2`, repair: typings.screeps.screepsNumbers.`2`): BuildRepair = {
-    val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], repair = repair.asInstanceOf[js.Any])
+  def apply(): BuildRepair = {
+    val __obj = js.Dynamic.literal(build = 2, repair = 2)
     __obj.asInstanceOf[BuildRepair]
   }
   

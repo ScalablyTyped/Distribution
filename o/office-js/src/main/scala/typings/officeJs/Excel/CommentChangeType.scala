@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,40 +21,52 @@ object CommentChangeType extends StObject {
     *
     */
   @js.native
-  sealed trait commentEdited extends CommentChangeType
+  sealed trait commentEdited
+    extends StObject
+       with CommentChangeType
   
   /**
     * Comments were reopened.
     *
     */
   @js.native
-  sealed trait commentReopened extends CommentChangeType
+  sealed trait commentReopened
+    extends StObject
+       with CommentChangeType
   
   /**
     * Comments were resolved.
     *
     */
   @js.native
-  sealed trait commentResolved extends CommentChangeType
+  sealed trait commentResolved
+    extends StObject
+       with CommentChangeType
   
   /**
     * Replies were added.
     *
     */
   @js.native
-  sealed trait replyAdded extends CommentChangeType
+  sealed trait replyAdded
+    extends StObject
+       with CommentChangeType
   
   /**
     * Replies were deleted.
     *
     */
   @js.native
-  sealed trait replyDeleted extends CommentChangeType
+  sealed trait replyDeleted
+    extends StObject
+       with CommentChangeType
   
   /**
     * Replies were edited.
     *
     */
   @js.native
-  sealed trait replyEdited extends CommentChangeType
+  sealed trait replyEdited
+    extends StObject
+       with CommentChangeType
 }

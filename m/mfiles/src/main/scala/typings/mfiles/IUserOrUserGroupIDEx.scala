@@ -3,29 +3,27 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFUserOrUserGroupType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserOrUserGroupIDEx extends StObject {
   
-  def Clone(): IUserOrUserGroupIDEx = js.native
+  def Clone(): IUserOrUserGroupIDEx
   
-  val IndirectProperty: IIndirectPropertyID = js.native
+  val IndirectProperty: IIndirectPropertyID
   
-  def SetIndirectPropertyPseudoUser(PseudoUserID: IIndirectPropertyID): Unit = js.native
+  def SetIndirectPropertyPseudoUser(PseudoUserID: IIndirectPropertyID): Unit
   
-  def SetUserAccount(UserAccount: Double): Unit = js.native
+  def SetUserAccount(UserAccount: Double): Unit
   
-  def SetUserGroup(UserGroup: Double): Unit = js.native
+  def SetUserGroup(UserGroup: Double): Unit
   
-  def SetWorkflowStatePseudoUser(WorkflowState: Double): Unit = js.native
+  def SetWorkflowStatePseudoUser(WorkflowState: Double): Unit
   
-  val UserOrGroupID: Double = js.native
+  val UserOrGroupID: Double
   
-  val UserOrGroupType: MFUserOrUserGroupType = js.native
+  val UserOrGroupType: MFUserOrUserGroupType
   
-  val WorkflowState: Double = js.native
+  val WorkflowState: Double
 }
 object IUserOrUserGroupIDEx {
   

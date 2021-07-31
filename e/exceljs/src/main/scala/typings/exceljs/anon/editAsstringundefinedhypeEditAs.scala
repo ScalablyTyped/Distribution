@@ -3,20 +3,18 @@ package typings.exceljs.anon
 import typings.exceljs.mod.ImageHyperlinkValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  editAs :string | undefined,   hyperlinks :exceljs.exceljs.ImageHyperlinkValue | undefined} & exceljs.exceljs.ImagePosition */
-@js.native
 trait editAsstringundefinedhypeEditAs extends StObject {
   
-  var editAs: js.UndefOr[String] = js.native
+  var editAs: js.UndefOr[String] = js.undefined
   
-  var ext: Height = js.native
+  var ext: Height
   
-  var hyperlinks: js.UndefOr[ImageHyperlinkValue] = js.native
+  var hyperlinks: js.UndefOr[ImageHyperlinkValue] = js.undefined
   
-  var tl: Col = js.native
+  var tl: Col
 }
 object editAsstringundefinedhypeEditAs {
   

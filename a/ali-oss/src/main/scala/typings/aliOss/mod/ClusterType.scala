@@ -2,17 +2,15 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterType extends StObject {
   
-  var accessKeyId: String = js.native
+  var accessKeyId: String
   
-  var accessKeySecret: String = js.native
+  var accessKeySecret: String
   
-  var host: String = js.native
+  var host: String
 }
 object ClusterType {
   

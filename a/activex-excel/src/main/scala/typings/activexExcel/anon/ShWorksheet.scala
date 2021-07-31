@@ -4,15 +4,13 @@ import typings.activexExcel.Excel.Hyperlink
 import typings.activexExcel.Excel.Worksheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShWorksheet extends StObject {
   
-  val Sh: Worksheet = js.native
+  val Sh: Worksheet
   
-  val Target: Hyperlink = js.native
+  val Target: Hyperlink
 }
 object ShWorksheet {
   

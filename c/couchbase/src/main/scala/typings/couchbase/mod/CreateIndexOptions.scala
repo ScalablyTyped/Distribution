@@ -2,21 +2,19 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateIndexOptions extends StObject {
   
   /**
     * True to defer building of the index until buildDeferredIndexes is called (or a direct call to the corresponding query service API).
     */
-  var deferred: js.UndefOr[Boolean] = js.native
+  var deferred: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If a secondary index already exists, an error will be thrown unless this is set to true.
     */
-  var ignoreIfExists: js.UndefOr[Boolean] = js.native
+  var ignoreIfExists: js.UndefOr[Boolean] = js.undefined
 }
 object CreateIndexOptions {
   

@@ -2,15 +2,13 @@ package typings.slonik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldType extends StObject {
   
-  var dataTypeId: Double = js.native
+  var dataTypeId: Double
   
-  var name: String = js.native
+  var name: String
 }
 object FieldType {
   

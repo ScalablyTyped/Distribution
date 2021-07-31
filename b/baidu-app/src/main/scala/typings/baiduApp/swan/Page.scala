@@ -2,11 +2,12 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Page[D, P] extends Component[D, P] {
+trait Page[D, P]
+  extends StObject
+     with Component[D, P] {
   
   def createCanvasContext(selector: String): CanvasContext = js.native
   

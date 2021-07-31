@@ -5,23 +5,21 @@ import typings.awsSdkClientDynamodbNode.typesReplicaMod.UnmarshalledReplica
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGlobalTableMod {
   
-  @js.native
   trait GlobalTable extends StObject {
     
     /**
       * <p>The global table name.</p>
       */
-    var GlobalTableName: js.UndefOr[String] = js.native
+    var GlobalTableName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The regions where the global table has replicas.</p>
       */
-    var ReplicationGroup: js.UndefOr[js.Array[Replica] | Iterable[Replica]] = js.native
+    var ReplicationGroup: js.UndefOr[js.Array[Replica] | Iterable[Replica]] = js.undefined
   }
   object GlobalTable {
     
@@ -51,14 +49,15 @@ object typesGlobalTableMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledGlobalTable extends GlobalTable {
+  trait UnmarshalledGlobalTable
+    extends StObject
+       with GlobalTable {
     
     /**
       * <p>The regions where the global table has replicas.</p>
       */
     @JSName("ReplicationGroup")
-    var ReplicationGroup_UnmarshalledGlobalTable: js.UndefOr[js.Array[UnmarshalledReplica]] = js.native
+    var ReplicationGroup_UnmarshalledGlobalTable: js.UndefOr[js.Array[UnmarshalledReplica]] = js.undefined
   }
   object UnmarshalledGlobalTable {
     

@@ -3,40 +3,38 @@ package typings.ionicCore.stencilPublicRuntimeMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentOptions extends StObject {
   
   /**
     * Array of relative links to folders of assets required by the component.
     */
-  var assetsDirs: js.UndefOr[js.Array[String]] = js.native
+  var assetsDirs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If `true`, the component will use scoped stylesheets. Similar to shadow-dom,
     * but without native isolation. Defaults to `false`.
     */
-  var scoped: js.UndefOr[Boolean] = js.native
+  var scoped: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the component will use native shadow-dom encapsulation, it will fallback to
     * `scoped` if the browser does not support shadow-dom natively. Defaults to `false`.
     * Additionally, `shadow` can also be given options when attaching the shadow root.
     */
-  var shadow: js.UndefOr[Boolean | ShadowRootOptions] = js.native
+  var shadow: js.UndefOr[Boolean | ShadowRootOptions] = js.undefined
   
   /**
     * Relative URL to some external stylesheet file. It should be a `.css` file unless some
     * external plugin is installed like `@stencil/sass`.
     */
-  var styleUrl: js.UndefOr[String] = js.native
+  var styleUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Similar as `styleUrl` but allows to specify different stylesheets for different modes.
     */
-  var styleUrls: js.UndefOr[js.Array[String] | ModeStyles] = js.native
+  var styleUrls: js.UndefOr[js.Array[String] | ModeStyles] = js.undefined
   
   /**
     * String that contains inlined CSS instead of using an external stylesheet.
@@ -44,7 +42,7 @@ trait ComponentOptions extends StObject {
     *
     * Notice, you can't use sass, or less, only `css` is allowed using `styles`, use `styleUrl` is you need more advanced features.
     */
-  var styles: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+  var styles: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
   
   /**
     * Tag name of the web component. Ideally, the tag name must be globally unique,
@@ -52,7 +50,7 @@ trait ComponentOptions extends StObject {
     *
     * In addition, tag name must contain a '-'
     */
-  var tag: String = js.native
+  var tag: String
 }
 object ComponentOptions {
   

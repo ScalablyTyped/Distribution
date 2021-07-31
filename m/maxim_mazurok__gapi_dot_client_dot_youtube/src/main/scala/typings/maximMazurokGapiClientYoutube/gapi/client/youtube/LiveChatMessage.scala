@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiveChatMessage extends StObject {
   
   /** The authorDetails object contains basic details about the user that posted this message. */
-  var authorDetails: js.UndefOr[LiveChatMessageAuthorDetails] = js.native
+  var authorDetails: js.UndefOr[LiveChatMessageAuthorDetails] = js.undefined
   
   /** Etag of this resource. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The ID that YouTube assigns to uniquely identify the message. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "youtube#liveChatMessage". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The snippet object contains basic details about the message. */
-  var snippet: js.UndefOr[LiveChatMessageSnippet] = js.native
+  var snippet: js.UndefOr[LiveChatMessageSnippet] = js.undefined
 }
 object LiveChatMessage {
   

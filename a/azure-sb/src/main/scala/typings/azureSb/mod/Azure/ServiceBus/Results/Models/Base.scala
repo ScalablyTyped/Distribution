@@ -4,16 +4,14 @@ import typings.azureSb.anon.Author
 import typings.azureSb.mod.Azure.ServiceBus.DateString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Base extends StObject {
   
-  var CreatedAt: DateString = js.native
+  var CreatedAt: DateString
   
   @JSName("_")
-  var _underscore: Author = js.native
+  var _underscore: Author
 }
 object Base {
   

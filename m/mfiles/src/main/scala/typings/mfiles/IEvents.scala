@@ -3,16 +3,14 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEvents extends StObject {
   
   // tslint:disable-next-line ban-types
-  def Register(eventToListen: Event, eventSink: js.Function): Double = js.native
+  def Register(eventToListen: Event, eventSink: js.Function): Double
   
-  def Unregister(sinkHandle: Double): Unit = js.native
+  def Unregister(sinkHandle: Double): Unit
 }
 object IEvents {
   

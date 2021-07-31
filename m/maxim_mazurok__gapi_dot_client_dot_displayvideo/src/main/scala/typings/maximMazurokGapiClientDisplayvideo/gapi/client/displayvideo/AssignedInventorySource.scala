@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignedInventorySource extends StObject {
   
   /** Output only. The unique ID of the assigned inventory source. The ID is only unique within a given inventory source group. It may be reused in other contexts. */
-  var assignedInventorySourceId: js.UndefOr[String] = js.native
+  var assignedInventorySourceId: js.UndefOr[String] = js.undefined
   
   /** Required. The ID of the inventory source entity being targeted. */
-  var inventorySourceId: js.UndefOr[String] = js.native
+  var inventorySourceId: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the assigned inventory source. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object AssignedInventorySource {
   

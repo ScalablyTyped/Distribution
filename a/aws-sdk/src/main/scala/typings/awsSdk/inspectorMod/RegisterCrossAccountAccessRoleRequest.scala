@@ -2,16 +2,14 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterCrossAccountAccessRoleRequest extends StObject {
   
   /**
     * The ARN of the IAM role that grants Amazon Inspector access to AWS Services needed to perform security assessments. 
     */
-  var roleArn: Arn = js.native
+  var roleArn: Arn
 }
 object RegisterCrossAccountAccessRoleRequest {
   

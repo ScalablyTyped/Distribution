@@ -2,21 +2,19 @@ package typings.awsSdk.syntheticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanaryLastRun extends StObject {
   
   /**
     * The name of the canary.
     */
-  var CanaryName: js.UndefOr[typings.awsSdk.syntheticsMod.CanaryName] = js.native
+  var CanaryName: js.UndefOr[typings.awsSdk.syntheticsMod.CanaryName] = js.undefined
   
   /**
     * The results from this canary's most recent run.
     */
-  var LastRun: js.UndefOr[CanaryRun] = js.native
+  var LastRun: js.UndefOr[CanaryRun] = js.undefined
 }
 object CanaryLastRun {
   

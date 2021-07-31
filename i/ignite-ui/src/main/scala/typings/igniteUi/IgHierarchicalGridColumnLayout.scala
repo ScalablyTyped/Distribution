@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgHierarchicalGridColumnLayout
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,17 +15,17 @@ trait IgHierarchicalGridColumnLayout
   /**
     * Specifies the foreignKey of the columnLayout. This is also the column key of the parent grid.
     */
-  var foreignKey: js.UndefOr[String] = js.native
+  var foreignKey: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the columnLayout key. This is the property that holds the data records for the current column layout.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the primaryKey of the columnLayout. This also serves as the column key for the current column layout.
     */
-  var primaryKey: js.UndefOr[String] = js.native
+  var primaryKey: js.UndefOr[String] = js.undefined
 }
 object IgHierarchicalGridColumnLayout {
   

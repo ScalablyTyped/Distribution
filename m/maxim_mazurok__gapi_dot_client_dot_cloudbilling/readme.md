@@ -3,6 +3,24 @@
 
 Typings are for version 1.0.20201017
 
+## Library description:
+TypeScript typings for Cloud Billing API v1
+
+|                    |                 |
+| ------------------ | :-------------: |
+| Full name          | @maxim_mazurok/gapi.client.cloudbilling |
+| Keywords           | - |
+| # releases         | 4 |
+| # dependents       | 1 |
+| # downloads        | 2405 |
+| # stars            | 0 |
+
+## Links
+- [Homepage](https://github.com/Maxim-Mazurok/google-api-typings-generator#readme)
+- [Bugs](https://github.com/Maxim-Mazurok/google-api-typings-generator/issues)
+- [Repository](https://github.com/Maxim-Mazurok/google-api-typings-generator)
+- [Npm](https://www.npmjs.com/package/%40maxim_mazurok%2Fgapi.client.cloudbilling)
+    
 
 
 ## Note

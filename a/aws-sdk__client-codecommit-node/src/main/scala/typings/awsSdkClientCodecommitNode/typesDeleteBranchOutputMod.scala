@@ -5,24 +5,24 @@ import typings.awsSdkClientCodecommitNode.typesBranchInfoMod.UnmarshalledBranchI
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDeleteBranchOutputMod {
   
-  @js.native
-  trait DeleteBranchOutput extends OutputTypesUnion {
+  trait DeleteBranchOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Information about the branch deleted by the operation, including the branch name and the commit ID that was the tip of the branch.</p>
       */
-    var deletedBranch: js.UndefOr[UnmarshalledBranchInfo] = js.native
+    var deletedBranch: js.UndefOr[UnmarshalledBranchInfo] = js.undefined
   }
   object DeleteBranchOutput {
     

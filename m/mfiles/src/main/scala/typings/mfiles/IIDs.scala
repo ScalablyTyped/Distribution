@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IIDs extends StObject {
   
-  def Add(Index: Double, ID: Double): Unit = js.native
+  def Add(Index: Double, ID: Double): Unit
   
-  def Clone(): IIDs = js.native
+  def Clone(): IIDs
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def IndexOf(ID: Double): Double = js.native
+  def IndexOf(ID: Double): Double
   
-  def Item(Index: Double): Double = js.native
+  def Item(Index: Double): Double
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
   
-  def RemoveAll(ID: Double): Double = js.native
+  def RemoveAll(ID: Double): Double
 }
 object IIDs {
   

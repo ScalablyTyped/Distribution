@@ -7,17 +7,15 @@ import typings.libp2pNoise.basicMod.uint64
 import typings.libp2pNoise.libp2pMod.KeyPair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object handshakeMod {
   
-  @js.native
   trait CipherState extends StObject {
     
-    var k: bytes32 = js.native
+    var k: bytes32
     
-    var n: uint32 = js.native
+    var n: uint32
   }
   object CipherState {
     
@@ -38,20 +36,19 @@ object handshakeMod {
     }
   }
   
-  @js.native
   trait HandshakeState extends StObject {
     
-    var e: js.UndefOr[KeyPair] = js.native
+    var e: js.UndefOr[KeyPair] = js.undefined
     
-    var psk: bytes32 = js.native
+    var psk: bytes32
     
-    var re: bytes32 = js.native
+    var re: bytes32
     
-    var rs: bytes32 = js.native
+    var rs: bytes32
     
-    var s: KeyPair = js.native
+    var s: KeyPair
     
-    var ss: SymmetricState = js.native
+    var ss: SymmetricState
   }
   object HandshakeState {
     
@@ -89,14 +86,13 @@ object handshakeMod {
   
   type Hkdf = js.Tuple3[bytes, bytes, bytes]
   
-  @js.native
   trait INoisePayload extends StObject {
     
-    var data: bytes = js.native
+    var data: bytes
     
-    var identityKey: bytes = js.native
+    var identityKey: bytes
     
-    var identitySig: bytes = js.native
+    var identitySig: bytes
   }
   object INoisePayload {
     
@@ -120,15 +116,14 @@ object handshakeMod {
     }
   }
   
-  @js.native
   trait MessageBuffer extends StObject {
     
-    var ciphertext: bytes = js.native
+    var ciphertext: bytes
     
     @JSName("ne")
-    var ne_FMessageBuffer: bytes32 = js.native
+    var ne_FMessageBuffer: bytes32
     
-    var ns: bytes = js.native
+    var ns: bytes
   }
   object MessageBuffer {
     
@@ -153,20 +148,19 @@ object handshakeMod {
     }
   }
   
-  @js.native
   trait NoiseSession extends StObject {
     
-    var cs1: js.UndefOr[CipherState] = js.native
+    var cs1: js.UndefOr[CipherState] = js.undefined
     
-    var cs2: js.UndefOr[CipherState] = js.native
+    var cs2: js.UndefOr[CipherState] = js.undefined
     
-    var h: js.UndefOr[bytes32] = js.native
+    var h: js.UndefOr[bytes32] = js.undefined
     
-    var hs: HandshakeState = js.native
+    var hs: HandshakeState
     
-    var i: Boolean = js.native
+    var i: Boolean
     
-    var mc: uint64 = js.native
+    var mc: uint64
   }
   object NoiseSession {
     
@@ -208,15 +202,14 @@ object handshakeMod {
     }
   }
   
-  @js.native
   trait SymmetricState extends StObject {
     
-    var ck: bytes32 = js.native
+    var ck: bytes32
     
-    var cs: CipherState = js.native
+    var cs: CipherState
     
     // chaining key
-    var h: bytes32 = js.native
+    var h: bytes32
   }
   object SymmetricState {
     

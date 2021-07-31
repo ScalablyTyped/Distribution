@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestorePlanDetailInfo extends StObject {
   
-  var currentValue: js.Any = js.native
+  var currentValue: js.Any
   
-  var defaultValue: js.Any = js.native
+  var defaultValue: js.Any
   
-  var isReadOnly: Boolean = js.native
+  var isReadOnly: Boolean
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  var name: String = js.native
+  var name: String
 }
 object RestorePlanDetailInfo {
   

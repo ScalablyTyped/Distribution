@@ -2,15 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextDirectionEnumValues extends EmbindEnum {
+trait TextDirectionEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var LTR: TextDirection = js.native
+  var LTR: TextDirection
   
-  var RTL: TextDirection = js.native
+  var RTL: TextDirection
 }
 object TextDirectionEnumValues {
   

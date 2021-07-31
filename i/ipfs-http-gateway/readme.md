@@ -10,13 +10,13 @@ JavaScript implementation of the IPFS specification
 | ------------------ | :-------------: |
 | Full name          | ipfs-http-gateway |
 | Keywords           | IPFS |
-| # releases         | 35 |
+| # releases         | 58 |
 | # dependents       | 2 |
-| # downloads        | 3825 |
+| # downloads        | 23208 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs#readme)
+- [Homepage](https://github.com/ipfs/js-ipfs/tree/master/packages/ipfs-http-gateway#readme)
 - [Bugs](https://github.com/ipfs/js-ipfs/issues)
 - [Repository](https://github.com/ipfs/js-ipfs)
 - [Npm](https://www.npmjs.com/package/ipfs-http-gateway)

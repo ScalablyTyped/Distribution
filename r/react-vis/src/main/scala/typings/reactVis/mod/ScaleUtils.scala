@@ -2,221 +2,144 @@ package typings.reactVis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ScaleUtils {
   
-  @JSImport("react-vis", "ScaleUtils.extractScalePropsFromProps")
+  @JSImport("react-vis", "ScaleUtils")
   @js.native
-  def extractScalePropsFromProps(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.extractScalePropsFromProps")
-  @js.native
-  def extractScalePropsFromProps(props: js.UndefOr[scala.Nothing], attributes: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.extractScalePropsFromProps")
-  @js.native
-  def extractScalePropsFromProps(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.extractScalePropsFromProps")
-  @js.native
-  def extractScalePropsFromProps(props: js.Any, attributes: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-vis", "ScaleUtils.getAttr0Functor")
-  @js.native
-  def getAttr0Functor(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttr0Functor")
-  @js.native
-  def getAttr0Functor(props: js.UndefOr[scala.Nothing], attr: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttr0Functor")
-  @js.native
-  def getAttr0Functor(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttr0Functor")
-  @js.native
-  def getAttr0Functor(props: js.Any, attr: js.Any): js.Any = js.native
+  @scala.inline
+  def extractScalePropsFromProps(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractScalePropsFromProps")().asInstanceOf[js.Any]
+  @scala.inline
+  def extractScalePropsFromProps(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("extractScalePropsFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def extractScalePropsFromProps(props: js.Any, attributes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extractScalePropsFromProps")(props.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def extractScalePropsFromProps(props: Unit, attributes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("extractScalePropsFromProps")(props.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getAttributeFunctor")
-  @js.native
-  def getAttributeFunctor(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeFunctor")
-  @js.native
-  def getAttributeFunctor(props: js.UndefOr[scala.Nothing], attr: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeFunctor")
-  @js.native
-  def getAttributeFunctor(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeFunctor")
-  @js.native
-  def getAttributeFunctor(props: js.Any, attr: js.Any): js.Any = js.native
+  @scala.inline
+  def getAttr0Functor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttr0Functor")().asInstanceOf[js.Any]
+  @scala.inline
+  def getAttr0Functor(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttr0Functor")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttr0Functor(props: js.Any, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttr0Functor")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttr0Functor(props: Unit, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttr0Functor")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getAttributeScale")
-  @js.native
-  def getAttributeScale(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeScale")
-  @js.native
-  def getAttributeScale(props: js.UndefOr[scala.Nothing], attr: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeScale")
-  @js.native
-  def getAttributeScale(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeScale")
-  @js.native
-  def getAttributeScale(props: js.Any, attr: js.Any): js.Any = js.native
+  @scala.inline
+  def getAttributeFunctor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeFunctor")().asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeFunctor(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeFunctor")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeFunctor(props: js.Any, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeFunctor")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeFunctor(props: Unit, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeFunctor")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getAttributeValue")
-  @js.native
-  def getAttributeValue(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeValue")
-  @js.native
-  def getAttributeValue(props: js.UndefOr[scala.Nothing], attr: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeValue")
-  @js.native
-  def getAttributeValue(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getAttributeValue")
-  @js.native
-  def getAttributeValue(props: js.Any, attr: js.Any): js.Any = js.native
+  @scala.inline
+  def getAttributeScale(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeScale")().asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeScale(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeScale")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeScale(props: js.Any, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeScale")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeScale(props: Unit, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeScale")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(
-    allData: js.UndefOr[scala.Nothing],
-    accessor: js.UndefOr[scala.Nothing],
-    accessor0: js.UndefOr[scala.Nothing],
-    `type`: js.Any
-  ): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.UndefOr[scala.Nothing], accessor: js.UndefOr[scala.Nothing], accessor0: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(
-    allData: js.UndefOr[scala.Nothing],
-    accessor: js.UndefOr[scala.Nothing],
-    accessor0: js.Any,
-    `type`: js.Any
-  ): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.UndefOr[scala.Nothing], accessor: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(
-    allData: js.UndefOr[scala.Nothing],
-    accessor: js.Any,
-    accessor0: js.UndefOr[scala.Nothing],
-    `type`: js.Any
-  ): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.UndefOr[scala.Nothing], accessor: js.Any, accessor0: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.UndefOr[scala.Nothing], accessor: js.Any, accessor0: js.Any, `type`: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(
-    allData: js.Any,
-    accessor: js.UndefOr[scala.Nothing],
-    accessor0: js.UndefOr[scala.Nothing],
-    `type`: js.Any
-  ): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.Any, accessor: js.UndefOr[scala.Nothing], accessor0: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.Any, accessor: js.UndefOr[scala.Nothing], accessor0: js.Any, `type`: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.Any, accessor: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.Any, accessor: js.Any, accessor0: js.UndefOr[scala.Nothing], `type`: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.Any, accessor: js.Any, accessor0: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getDomainByAccessor")
-  @js.native
-  def getDomainByAccessor(allData: js.Any, accessor: js.Any, accessor0: js.Any, `type`: js.Any): js.Any = js.native
+  @scala.inline
+  def getAttributeValue(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeValue")().asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeValue(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeValue")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeValue(props: js.Any, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeValue")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getAttributeValue(props: Unit, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getAttributeValue")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getFontColorFromBackground")
-  @js.native
-  def getFontColorFromBackground(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getFontColorFromBackground")
-  @js.native
-  def getFontColorFromBackground(background: js.Any): js.Any = js.native
+  @scala.inline
+  def getDomainByAccessor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")().asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any, accessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any, accessor: js.Any, accessor0: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any, accessor: js.Any, accessor0: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any, accessor: js.Any, accessor0: Unit, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any, accessor: Unit, accessor0: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any, accessor: Unit, accessor0: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: js.Any, accessor: Unit, accessor0: Unit, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: Unit, accessor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: Unit, accessor: js.Any, accessor0: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: Unit, accessor: js.Any, accessor0: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: Unit, accessor: js.Any, accessor0: Unit, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: Unit, accessor: Unit, accessor0: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: Unit, accessor: Unit, accessor0: js.Any, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getDomainByAccessor(allData: Unit, accessor: Unit, accessor0: Unit, `type`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomainByAccessor")(allData.asInstanceOf[js.Any], accessor.asInstanceOf[js.Any], accessor0.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(props: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], attributes: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(props: js.UndefOr[scala.Nothing], data: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(props: js.UndefOr[scala.Nothing], data: js.Any, attributes: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(props: js.Any, data: js.UndefOr[scala.Nothing], attributes: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(props: js.Any, data: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getMissingScaleProps")
-  @js.native
-  def getMissingScaleProps(props: js.Any, data: js.Any, attributes: js.Any): js.Any = js.native
+  @scala.inline
+  def getFontColorFromBackground(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontColorFromBackground")().asInstanceOf[js.Any]
+  @scala.inline
+  def getFontColorFromBackground(background: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontColorFromBackground")(background.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getOptionalScaleProps")
-  @js.native
-  def getOptionalScaleProps(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getOptionalScaleProps")
-  @js.native
-  def getOptionalScaleProps(props: js.Any): js.Any = js.native
+  @scala.inline
+  def getMissingScaleProps(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")().asInstanceOf[js.Any]
+  @scala.inline
+  def getMissingScaleProps(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getMissingScaleProps(props: js.Any, data: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")(props.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getMissingScaleProps(props: js.Any, data: js.Any, attributes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")(props.asInstanceOf[js.Any], data.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getMissingScaleProps(props: js.Any, data: Unit, attributes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")(props.asInstanceOf[js.Any], data.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getMissingScaleProps(props: Unit, data: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")(props.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getMissingScaleProps(props: Unit, data: js.Any, attributes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")(props.asInstanceOf[js.Any], data.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getMissingScaleProps(props: Unit, data: Unit, attributes: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getMissingScaleProps")(props.asInstanceOf[js.Any], data.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getScaleObjectFromProps")
-  @js.native
-  def getScaleObjectFromProps(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getScaleObjectFromProps")
-  @js.native
-  def getScaleObjectFromProps(props: js.UndefOr[scala.Nothing], attr: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getScaleObjectFromProps")
-  @js.native
-  def getScaleObjectFromProps(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getScaleObjectFromProps")
-  @js.native
-  def getScaleObjectFromProps(props: js.Any, attr: js.Any): js.Any = js.native
+  @scala.inline
+  def getOptionalScaleProps(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionalScaleProps")().asInstanceOf[js.Any]
+  @scala.inline
+  def getOptionalScaleProps(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionalScaleProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getScalePropTypesByAttribute")
-  @js.native
-  def getScalePropTypesByAttribute(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getScalePropTypesByAttribute")
-  @js.native
-  def getScalePropTypesByAttribute(attr: js.Any): js.Any = js.native
+  @scala.inline
+  def getScaleObjectFromProps(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getScaleObjectFromProps")().asInstanceOf[js.Any]
+  @scala.inline
+  def getScaleObjectFromProps(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getScaleObjectFromProps")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getScaleObjectFromProps(props: js.Any, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getScaleObjectFromProps")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getScaleObjectFromProps(props: Unit, attr: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getScaleObjectFromProps")(props.asInstanceOf[js.Any], attr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.getXYPlotValues")
-  @js.native
-  def getXYPlotValues(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getXYPlotValues")
-  @js.native
-  def getXYPlotValues(props: js.UndefOr[scala.Nothing], children: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getXYPlotValues")
-  @js.native
-  def getXYPlotValues(props: js.Any): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.getXYPlotValues")
-  @js.native
-  def getXYPlotValues(props: js.Any, children: js.Any): js.Any = js.native
+  @scala.inline
+  def getScalePropTypesByAttribute(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getScalePropTypesByAttribute")().asInstanceOf[js.Any]
+  @scala.inline
+  def getScalePropTypesByAttribute(attr: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getScalePropTypesByAttribute")(attr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("react-vis", "ScaleUtils.literalScale")
-  @js.native
-  def literalScale(): js.Any = js.native
-  @JSImport("react-vis", "ScaleUtils.literalScale")
-  @js.native
-  def literalScale(defaultValue: js.Any): js.Any = js.native
+  @scala.inline
+  def getXYPlotValues(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getXYPlotValues")().asInstanceOf[js.Any]
+  @scala.inline
+  def getXYPlotValues(props: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getXYPlotValues")(props.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getXYPlotValues(props: js.Any, children: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getXYPlotValues")(props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getXYPlotValues(props: Unit, children: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getXYPlotValues")(props.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def literalScale(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("literalScale")().asInstanceOf[js.Any]
+  @scala.inline
+  def literalScale(defaultValue: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("literalScale")(defaultValue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

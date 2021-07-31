@@ -2,11 +2,12 @@ package typings.kendoUi.kendo.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Group extends Element {
+trait Group
+  extends StObject
+     with Element {
   
   def append(elements: Element*): Unit = js.native
   

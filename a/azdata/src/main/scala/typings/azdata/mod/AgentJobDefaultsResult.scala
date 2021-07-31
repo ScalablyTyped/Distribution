@@ -2,15 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AgentJobDefaultsResult extends ResultStatus {
+trait AgentJobDefaultsResult
+  extends StObject
+     with ResultStatus {
   
-  var categories: js.Array[AgentJobCategory] = js.native
+  var categories: js.Array[AgentJobCategory]
   
-  var owner: String = js.native
+  var owner: String
 }
 object AgentJobDefaultsResult {
   

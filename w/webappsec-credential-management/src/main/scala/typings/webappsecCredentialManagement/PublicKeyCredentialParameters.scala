@@ -3,25 +3,23 @@ package typings.webappsecCredentialManagement
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.`public-key`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#dictdef-publickeycredentialparameters}
   */
-@js.native
 trait PublicKeyCredentialParameters extends StObject {
   
-  var alg: Double = js.native
+  var alg: Double
   
-  var `type`: `public-key` = js.native
+  var `type`: `public-key`
 }
 object PublicKeyCredentialParameters {
   
   @scala.inline
-  def apply(alg: Double, `type`: `public-key`): PublicKeyCredentialParameters = {
+  def apply(alg: Double): PublicKeyCredentialParameters = {
     val __obj = js.Dynamic.literal(alg = alg.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public-key")
     __obj.asInstanceOf[PublicKeyCredentialParameters]
   }
   

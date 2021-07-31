@@ -3,7 +3,6 @@ package typings.linqsharp
 import typings.linqsharp.mod.LinqSharp.IEqualityComparer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,26 +20,29 @@ object mod {
     *
     * @param {Array} a Array.
     */
-  class default[T] () extends Linq[T] {
+  class default[T] ()
+    extends StObject
+       with Linq[T] {
     def this(a: js.Array[T]) = this()
   }
   
   object LinqSharp {
     
-    @JSImport("linqsharp", "LinqSharp.GetHashCode")
+    @JSImport("linqsharp", "LinqSharp")
     @js.native
-    def GetHashCode(e: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("linqsharp", "LinqSharp.StringifyNonCircular")
-    @js.native
-    def StringifyNonCircular(obj: js.Any): String = js.native
+    @scala.inline
+    def GetHashCode(e: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("GetHashCode")(e.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @js.native
+    @scala.inline
+    def StringifyNonCircular(obj: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("StringifyNonCircular")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+    
     trait IEqualityComparer[T] extends StObject {
       
-      def Equals(x: T, y: T): Boolean = js.native
+      def Equals(x: T, y: T): Boolean
       
-      def GetHashCode(obj: T): Double = js.native
+      def GetHashCode(obj: T): Double
     }
     object IEqualityComparer {
       
@@ -51,7 +53,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class IEqualityComparerMutableBuilder[Self <: IEqualityComparer[_], T] (val x: Self with IEqualityComparer[T]) extends AnyVal {
+      implicit class IEqualityComparerMutableBuilder[Self <: IEqualityComparer[?], T] (val x: Self & IEqualityComparer[T]) extends AnyVal {
         
         @scala.inline
         def setEquals(value: (T, T) => Boolean): Self = StObject.set(x, "Equals", js.Any.fromFunction2(value))
@@ -61,12 +63,11 @@ object mod {
       }
     }
     
-    @js.native
     trait IGrouping[TKey, T] extends StObject {
       
-      var Elements: js.Array[T] = js.native
+      var Elements: js.Array[T]
       
-      var Key: TKey = js.native
+      var Key: TKey
     }
     object IGrouping {
       
@@ -77,7 +78,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class IGroupingMutableBuilder[Self <: IGrouping[_, _], TKey, T] (val x: Self with (IGrouping[TKey, T])) extends AnyVal {
+      implicit class IGroupingMutableBuilder[Self <: IGrouping[?, ?], TKey, T] (val x: Self & (IGrouping[TKey, T])) extends AnyVal {
         
         @scala.inline
         def setElements(value: js.Array[T]): Self = StObject.set(x, "Elements", value.asInstanceOf[js.Any])
@@ -259,16 +260,16 @@ object mod {
       * otherwise, the first element in source that passes the test specified by predicate.
       */
     def FirstOrDefault(): T = js.native
-    def FirstOrDefault(selector: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
     def FirstOrDefault(selector: js.Function1[/* e */ T, Boolean]): T = js.native
     def FirstOrDefault(selector: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
+    def FirstOrDefault(selector: Unit, defaultValue: T): T = js.native
     
     /**
       * Performs the specified action on each element of the array.
       *
       * @param callback The function delegate to perform on each element of the array.
       */
-    def ForEach(callback: js.Function2[/* e */ T, /* index */ Double, _]): Unit = js.native
+    def ForEach(callback: js.Function2[/* e */ T, /* index */ Double, js.Any]): Unit = js.native
     
     /**
       * Groups the elements of a sequence according to a specified key selector function.
@@ -280,18 +281,18 @@ object mod {
       * @returns A collection of elements of type TResult where each element represents a projection
       * over a group and its key.
       */
-    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey]): Linq[_] = js.native
-    def GroupBy[TKey, TElement](
-      keySelector: js.Function1[/* e */ T, TKey],
-      elementSelector: js.UndefOr[scala.Nothing],
-      comparer: IEqualityComparer[TKey]
-    ): Linq[_] = js.native
-    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey], elementSelector: js.Function1[/* e */ T, TElement]): Linq[_] = js.native
+    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey]): Linq[js.Any] = js.native
+    def GroupBy[TKey, TElement](keySelector: js.Function1[/* e */ T, TKey], elementSelector: js.Function1[/* e */ T, TElement]): Linq[js.Any] = js.native
     def GroupBy[TKey, TElement](
       keySelector: js.Function1[/* e */ T, TKey],
       elementSelector: js.Function1[/* e */ T, TElement],
       comparer: IEqualityComparer[TKey]
-    ): Linq[_] = js.native
+    ): Linq[js.Any] = js.native
+    def GroupBy[TKey, TElement](
+      keySelector: js.Function1[/* e */ T, TKey],
+      elementSelector: Unit,
+      comparer: IEqualityComparer[TKey]
+    ): Linq[js.Any] = js.native
     
     /**
       * Searches for the specified object and returns the zero-based index of the first
@@ -367,9 +368,9 @@ object mod {
       * predicate function.
       */
     def LastOrDefault(): T = js.native
-    def LastOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
     def LastOrDefault(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
     def LastOrDefault(predicate: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
+    def LastOrDefault(predicate: Unit, defaultValue: T): T = js.native
     
     /**
       * Returns the maximum value in a sequence of System.Double values.
@@ -489,9 +490,9 @@ object mod {
       * or defaultValue if no such element is found.
       */
     def SingleOrDefault(): T = js.native
-    def SingleOrDefault(predicate: js.UndefOr[scala.Nothing], defaultValue: T): T = js.native
     def SingleOrDefault(predicate: js.Function1[/* e */ T, Boolean]): T = js.native
     def SingleOrDefault(predicate: js.Function1[/* e */ T, Boolean], defaultValue: T): T = js.native
+    def SingleOrDefault(predicate: Unit, defaultValue: T): T = js.native
     
     /**
       * Bypasses a specified number of elements in a sequence and then returns the remaining

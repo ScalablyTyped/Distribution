@@ -11,8 +11,8 @@ url safe base64 en- and decoding
 | Full name          | url-safe-base64 |
 | Keywords           | base64, safe, url |
 | # releases         | 2 |
-| # dependents       | 4 |
-| # downloads        | 67171 |
+| # dependents       | 6 |
+| # downloads        | 94500 |
 | # stars            | 0 |
 
 ## Links

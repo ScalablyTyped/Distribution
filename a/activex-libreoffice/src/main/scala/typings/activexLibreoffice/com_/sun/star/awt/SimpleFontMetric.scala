@@ -2,11 +2,9 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the general metrics of a certain font. */
-@js.native
 trait SimpleFontMetric extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SimpleFontMetric extends StObject {
     *
     * The ascent is measured in pixels, thus the font metric is device dependent.
     */
-  var Ascent: Double = js.native
+  var Ascent: Double
   
   /**
     * specifies the portion of a letter falling below the baseline.
@@ -25,27 +23,27 @@ trait SimpleFontMetric extends StObject {
     *
     * The descent is measured in pixels, thus the font metric is device dependent.
     */
-  var Descent: Double = js.native
+  var Descent: Double
   
   /** specifies the code of the first printable character in the font. */
-  var FirstChar: String = js.native
+  var FirstChar: String
   
   /** specifies the code of the last printable character in the font. */
-  var LastChar: String = js.native
+  var LastChar: String
   
   /**
     * specifies the vertical space between lines of this font; it is also called internal line spacing.
     *
     * The leading is measured in pixels, thus the font metric is device dependent.
     */
-  var Leading: Double = js.native
+  var Leading: Double
   
   /**
     * specifies the slant of the characters (italic).
     *
     * The slant is measured in degrees from 0 to 359.
     */
-  var Slant: Double = js.native
+  var Slant: Double
 }
 object SimpleFontMetric {
   

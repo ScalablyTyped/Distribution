@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v2", "androidpublisher_v2.Resource$Purchases$Voidedpurchases")
@@ -35,7 +34,7 @@ class ResourcePurchasesVoidedpurchases protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaVoidedPurchasesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaVoidedPurchasesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVoidedPurchasesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVoidedPurchasesListResponse] = js.native
   def list(params: ParamsResourcePurchasesVoidedpurchasesList): GaxiosPromise[SchemaVoidedPurchasesListResponse] = js.native
   def list(
     params: ParamsResourcePurchasesVoidedpurchasesList,

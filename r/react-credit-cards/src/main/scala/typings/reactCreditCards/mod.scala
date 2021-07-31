@@ -5,7 +5,6 @@ import typings.reactCreditCards.anon.Name
 import typings.reactCreditCards.anon.Valid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,12 +14,11 @@ object mod {
   class default ()
     extends Component[ReactCreditCardProps, scala.Nothing, js.Any]
   
-  @js.native
   trait CallbackArgument extends StObject {
     
-    var issuer: String = js.native
+    var issuer: String
     
-    var maxLength: Double = js.native
+    var maxLength: Double
   }
   object CallbackArgument {
     
@@ -65,30 +63,29 @@ object mod {
   
   type ReactCreditCard = Component[ReactCreditCardProps, scala.Nothing, js.Any]
   
-  @js.native
   trait ReactCreditCardProps extends StObject {
     
-    var acceptedCards: js.UndefOr[js.Array[String]] = js.native
+    var acceptedCards: js.UndefOr[js.Array[String]] = js.undefined
     
-    var callback: js.UndefOr[js.Function2[/* type */ CallbackArgument, /* isValid */ Boolean, Unit]] = js.native
+    var callback: js.UndefOr[js.Function2[/* type */ CallbackArgument, /* isValid */ Boolean, Unit]] = js.undefined
     
-    var cvc: String | Double = js.native
+    var cvc: String | Double
     
-    var expiry: String | Double = js.native
+    var expiry: String | Double
     
-    var focused: js.UndefOr[Focused] = js.native
+    var focused: js.UndefOr[Focused] = js.undefined
     
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[Valid] = js.native
+    var locale: js.UndefOr[Valid] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var number: String | Double = js.native
+    var number: String | Double
     
-    var placeholders: js.UndefOr[Name] = js.native
+    var placeholders: js.UndefOr[Name] = js.undefined
     
-    var preview: js.UndefOr[Boolean] = js.native
+    var preview: js.UndefOr[Boolean] = js.undefined
   }
   object ReactCreditCardProps {
     

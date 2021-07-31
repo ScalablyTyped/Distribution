@@ -2,16 +2,14 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** WordHeadingDetection. */
-@js.native
 trait WordHeadingDetection extends StObject {
   
-  var fonts: js.UndefOr[js.Array[FontSetting]] = js.native
+  var fonts: js.UndefOr[js.Array[FontSetting]] = js.undefined
   
-  var styles: js.UndefOr[js.Array[WordStyle]] = js.native
+  var styles: js.UndefOr[js.Array[WordStyle]] = js.undefined
 }
 object WordHeadingDetection {
   

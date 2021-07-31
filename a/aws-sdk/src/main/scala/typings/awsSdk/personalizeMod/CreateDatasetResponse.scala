@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatasetResponse extends StObject {
   
   /**
     * The ARN of the dataset.
     */
-  var datasetArn: js.UndefOr[Arn] = js.native
+  var datasetArn: js.UndefOr[Arn] = js.undefined
 }
 object CreateDatasetResponse {
   

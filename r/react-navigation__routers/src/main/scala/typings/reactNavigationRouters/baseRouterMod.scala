@@ -5,7 +5,6 @@ import typings.reactNavigationRouters.typesMod.CommonNavigationAction
 import typings.reactNavigationRouters.typesMod.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseRouterMod {
@@ -16,12 +15,14 @@ object baseRouterMod {
     */
   object default {
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/BaseRouter", "default.getStateForAction")
+    @JSImport("@react-navigation/routers/lib/typescript/src/BaseRouter", JSImport.Default)
     @js.native
-    def getStateForAction[State /* <: Readonlykeystringindexnum */](state: State, action: CommonNavigationAction): State | PartialState[State] | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@react-navigation/routers/lib/typescript/src/BaseRouter", "default.shouldActionChangeFocus")
-    @js.native
-    def shouldActionChangeFocus(action: CommonNavigationAction): Boolean = js.native
+    @scala.inline
+    def getStateForAction[State /* <: Readonlykeystringindexnum */](state: State, action: CommonNavigationAction): State | PartialState[State] | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getStateForAction")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State | PartialState[State] | Null]
+    
+    @scala.inline
+    def shouldActionChangeFocus(action: CommonNavigationAction): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldActionChangeFocus")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

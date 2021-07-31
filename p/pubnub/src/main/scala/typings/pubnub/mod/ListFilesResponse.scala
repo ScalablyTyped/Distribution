@@ -3,19 +3,17 @@ package typings.pubnub.mod
 import typings.pubnub.anon.Created
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFilesResponse extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var data: js.Array[Created] = js.native
+  var data: js.Array[Created]
   
-  var next: String = js.native
+  var next: String
   
-  var status: Double = js.native
+  var status: Double
 }
 object ListFilesResponse {
   

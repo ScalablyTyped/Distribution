@@ -2,14 +2,12 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the $onInit lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IOnInit extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait IOnInit extends StObject {
     * place to put initialization code for your controller.
     */
   @JSName("$onInit")
-  def $onInit(): Unit = js.native
+  def $onInit(): Unit
 }
 object IOnInit {
   

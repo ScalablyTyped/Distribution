@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.networkfirewall
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort extends StObject {
   
   /**
     * The lower limit of the port range. This must be less than or equal to the `toPort`.
     */
-  var fromPort: Double = js.native
+  var fromPort: Double
   
   /**
     * The upper limit of the port range. This must be greater than or equal to the `fromPort`.
     */
-  var toPort: js.UndefOr[Double] = js.native
+  var toPort: js.UndefOr[Double] = js.undefined
 }
 object RuleGroupRuleGroupRulesSourceStatelessRulesAndCustomActionsStatelessRuleRuleDefinitionMatchAttributesSourcePort {
   

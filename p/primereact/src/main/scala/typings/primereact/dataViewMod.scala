@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataViewMod {
@@ -37,18 +36,17 @@ object dataViewMod {
     def this(props: DataViewLayoutOptionsProps, context: js.Any) = this()
   }
   
-  @js.native
   trait DataViewLayoutOptionsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
-    def onChange(e: OriginalEventEvent): Unit = js.native
+    def onChange(e: OriginalEventEvent): Unit
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
   }
   object DataViewLayoutOptionsProps {
     
@@ -90,64 +88,63 @@ object dataViewMod {
     }
   }
   
-  @js.native
   trait DataViewProps extends StObject {
     
-    var alwaysShowPaginator: js.UndefOr[Boolean] = js.native
+    var alwaysShowPaginator: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var currentPageReportTemplate: js.UndefOr[String] = js.native
+    var currentPageReportTemplate: js.UndefOr[String] = js.undefined
     
-    var emptyMessage: js.UndefOr[String] = js.native
+    var emptyMessage: js.UndefOr[String] = js.undefined
     
-    var first: js.UndefOr[Double] = js.native
+    var first: js.UndefOr[Double] = js.undefined
     
-    var footer: js.UndefOr[Element | String] = js.native
+    var footer: js.UndefOr[Element | String] = js.undefined
     
-    var header: js.UndefOr[Element | String] = js.native
+    var header: js.UndefOr[Element | String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function2[/* item */ js.Any, /* layout */ grid | list, js.UndefOr[Element]]] = js.native
+    var itemTemplate: js.UndefOr[js.Function2[/* item */ js.Any, /* layout */ grid | list, js.UndefOr[Element]]] = js.undefined
     
-    var layout: js.UndefOr[String] = js.native
+    var layout: js.UndefOr[String] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var loadingIcon: js.UndefOr[String] = js.native
+    var loadingIcon: js.UndefOr[String] = js.undefined
     
-    var onPage: js.UndefOr[js.Function1[/* e */ Rows, Unit]] = js.native
+    var onPage: js.UndefOr[js.Function1[/* e */ Rows, Unit]] = js.undefined
     
-    var pageLinkSize: js.UndefOr[Double] = js.native
+    var pageLinkSize: js.UndefOr[Double] = js.undefined
     
-    var paginator: js.UndefOr[Boolean] = js.native
+    var paginator: js.UndefOr[Boolean] = js.undefined
     
-    var paginatorDropdownAppendTo: js.UndefOr[js.Any] = js.native
+    var paginatorDropdownAppendTo: js.UndefOr[js.Any] = js.undefined
     
-    var paginatorLeft: js.UndefOr[js.Any] = js.native
+    var paginatorLeft: js.UndefOr[js.Any] = js.undefined
     
-    var paginatorPosition: js.UndefOr[String] = js.native
+    var paginatorPosition: js.UndefOr[String] = js.undefined
     
-    var paginatorRight: js.UndefOr[js.Any] = js.native
+    var paginatorRight: js.UndefOr[js.Any] = js.undefined
     
-    var paginatorTemplate: js.UndefOr[String] = js.native
+    var paginatorTemplate: js.UndefOr[String] = js.undefined
     
-    var rows: js.UndefOr[Double] = js.native
+    var rows: js.UndefOr[Double] = js.undefined
     
-    var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.native
+    var rowsPerPageOptions: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var sortField: js.UndefOr[String] = js.native
+    var sortField: js.UndefOr[String] = js.undefined
     
-    var sortOrder: js.UndefOr[Double] = js.native
+    var sortOrder: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var totalRecords: js.UndefOr[Double] = js.native
+    var totalRecords: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[js.Array[_]] = js.native
+    var value: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataViewProps {
     
@@ -326,7 +323,7 @@ object dataViewMod {
       def setTotalRecordsUndefined: Self = StObject.set(x, "totalRecords", js.undefined)
       
       @scala.inline
-      def setValue(value: js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+      def setValue(value: js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)

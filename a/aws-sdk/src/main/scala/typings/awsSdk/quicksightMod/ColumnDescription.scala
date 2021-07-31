@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnDescription extends StObject {
   
   /**
     * The text of a description for a column.
     */
-  var Text: js.UndefOr[ColumnDescriptiveText] = js.native
+  var Text: js.UndefOr[ColumnDescriptiveText] = js.undefined
 }
 object ColumnDescription {
   

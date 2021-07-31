@@ -7,15 +7,13 @@ import typings.sentryTypes.clientMod.Client
 import typings.sentryTypes.optionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesMod {
   
-  @js.native
   trait Carrier extends StObject {
     
-    var __SENTRY__ : js.UndefOr[Extensions] = js.native
+    var __SENTRY__ : js.UndefOr[Extensions] = js.undefined
   }
   object Carrier {
     
@@ -36,15 +34,16 @@ object interfacesMod {
     }
   }
   
-  @js.native
-  trait DomainAsCarrier extends Carrier {
+  trait DomainAsCarrier
+    extends StObject
+       with Carrier {
     
-    var members: js.Array[StringDictionary[_]] = js.native
+    var members: js.Array[StringDictionary[js.Any]]
   }
   object DomainAsCarrier {
     
     @scala.inline
-    def apply(members: js.Array[StringDictionary[_]]): DomainAsCarrier = {
+    def apply(members: js.Array[StringDictionary[js.Any]]): DomainAsCarrier = {
       val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
       __obj.asInstanceOf[DomainAsCarrier]
     }
@@ -53,19 +52,18 @@ object interfacesMod {
     implicit class DomainAsCarrierMutableBuilder[Self <: DomainAsCarrier] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setMembers(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+      def setMembers(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMembersVarargs(value: StringDictionary[js.Any]*): Self = StObject.set(x, "members", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait Layer extends StObject {
     
-    var client: js.UndefOr[Client[Options]] = js.native
+    var client: js.UndefOr[Client[Options]] = js.undefined
     
-    var scope: js.UndefOr[Scope] = js.native
+    var scope: js.UndefOr[Scope] = js.undefined
   }
   object Layer {
     

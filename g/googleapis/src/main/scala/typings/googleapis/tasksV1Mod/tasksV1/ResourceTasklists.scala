@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/tasks/v1", "tasks_v1.Resource$Tasklists")
@@ -30,7 +29,7 @@ class ResourceTasklists protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTasklistsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceTasklistsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -59,7 +58,7 @@ class ResourceTasklists protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaTaskList] = js.native
   def get(callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
   def get(params: ParamsResourceTasklistsGet): GaxiosPromise[SchemaTaskList] = js.native
   def get(params: ParamsResourceTasklistsGet, callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
   def get(
@@ -89,7 +88,7 @@ class ResourceTasklists protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaTaskList] = js.native
   def insert(callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
   def insert(params: ParamsResourceTasklistsInsert): GaxiosPromise[SchemaTaskList] = js.native
   def insert(params: ParamsResourceTasklistsInsert, callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
   def insert(
@@ -119,7 +118,7 @@ class ResourceTasklists protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaTaskLists] = js.native
   def list(callback: BodyResponseCallback[SchemaTaskLists]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTaskLists] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTaskLists] = js.native
   def list(params: ParamsResourceTasklistsList): GaxiosPromise[SchemaTaskLists] = js.native
   def list(params: ParamsResourceTasklistsList, callback: BodyResponseCallback[SchemaTaskLists]): Unit = js.native
   def list(
@@ -150,7 +149,7 @@ class ResourceTasklists protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaTaskList] = js.native
   def patch(callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
   def patch(params: ParamsResourceTasklistsPatch): GaxiosPromise[SchemaTaskList] = js.native
   def patch(params: ParamsResourceTasklistsPatch, callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
   def patch(
@@ -180,7 +179,7 @@ class ResourceTasklists protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaTaskList] = js.native
   def update(callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTaskList] = js.native
   def update(params: ParamsResourceTasklistsUpdate): GaxiosPromise[SchemaTaskList] = js.native
   def update(params: ParamsResourceTasklistsUpdate, callback: BodyResponseCallback[SchemaTaskList]): Unit = js.native
   def update(

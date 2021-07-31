@@ -8,21 +8,19 @@ import typings.awsSdk.dynamodbMod.ProjectionExpression
 import typings.awsSdk.dynamodbMod.ReturnConsumedCapacity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetItemOptions extends StObject {
   
-  var AttributesToGet: js.UndefOr[AttributeNameList] = js.native
+  var AttributesToGet: js.UndefOr[AttributeNameList] = js.undefined
   
-  var ConsistentRead: js.UndefOr[typings.awsSdk.dynamodbMod.ConsistentRead] = js.native
+  var ConsistentRead: js.UndefOr[typings.awsSdk.dynamodbMod.ConsistentRead] = js.undefined
   
-  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.native
+  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
   
-  var ProjectionExpression: js.UndefOr[typings.awsSdk.dynamodbMod.ProjectionExpression] = js.native
+  var ProjectionExpression: js.UndefOr[typings.awsSdk.dynamodbMod.ProjectionExpression] = js.undefined
   
-  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.native
+  var ReturnConsumedCapacity: js.UndefOr[typings.awsSdk.dynamodbMod.ReturnConsumedCapacity] = js.undefined
 }
 object GetItemOptions {
   

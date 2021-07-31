@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceFork extends StObject {
   
   /** DEPRECATED */
-  var primary: js.UndefOr[SourceSplitShard] = js.native
+  var primary: js.UndefOr[SourceSplitShard] = js.undefined
   
   /** DEPRECATED */
-  var primarySource: js.UndefOr[DerivedSource] = js.native
+  var primarySource: js.UndefOr[DerivedSource] = js.undefined
   
   /** DEPRECATED */
-  var residual: js.UndefOr[SourceSplitShard] = js.native
+  var residual: js.UndefOr[SourceSplitShard] = js.undefined
   
   /** DEPRECATED */
-  var residualSource: js.UndefOr[DerivedSource] = js.native
+  var residualSource: js.UndefOr[DerivedSource] = js.undefined
 }
 object SourceFork {
   

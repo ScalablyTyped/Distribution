@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteImagePermissionsRequest extends StObject {
   
   /**
     * The name of the private image.
     */
-  var Name: typings.awsSdk.appstreamMod.Name = js.native
+  var Name: typings.awsSdk.appstreamMod.Name
   
   /**
     * The 12-digit identifier of the AWS account for which to delete image permissions.
     */
-  var SharedAccountId: AwsAccountId = js.native
+  var SharedAccountId: AwsAccountId
 }
 object DeleteImagePermissionsRequest {
   

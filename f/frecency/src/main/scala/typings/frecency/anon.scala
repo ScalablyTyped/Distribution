@@ -3,29 +3,27 @@ package typings.frecency
 import typings.frecency.mod.idAttrFn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ExactQueryMatchWeight extends StObject {
     
-    var exactQueryMatchWeight: js.UndefOr[Double] = js.native
+    var exactQueryMatchWeight: js.UndefOr[Double] = js.undefined
     
-    var idAttribute: js.UndefOr[String | idAttrFn] = js.native
+    var idAttribute: js.UndefOr[String | idAttrFn] = js.undefined
     
-    var key: String = js.native
+    var key: String
     
-    var recentSelectionsLimit: js.UndefOr[Double] = js.native
+    var recentSelectionsLimit: js.UndefOr[Double] = js.undefined
     
-    var recentSelectionsMatchWeight: js.UndefOr[Double] = js.native
+    var recentSelectionsMatchWeight: js.UndefOr[Double] = js.undefined
     
-    var storageProvider: js.UndefOr[js.Object] = js.native
+    var storageProvider: js.UndefOr[js.Object] = js.undefined
     
-    var subQueryMatchWeight: js.UndefOr[Double] = js.native
+    var subQueryMatchWeight: js.UndefOr[Double] = js.undefined
     
-    var timeStampsLimit: js.UndefOr[Double] = js.native
+    var timeStampsLimit: js.UndefOr[Double] = js.undefined
   }
   object ExactQueryMatchWeight {
     
@@ -88,10 +86,9 @@ object anon {
     }
   }
   
-  @js.native
   trait FrecencyScore extends StObject {
     
-    var _frecencyScore: js.UndefOr[Double] = js.native
+    var _frecencyScore: js.UndefOr[Double] = js.undefined
   }
   object FrecencyScore {
     
@@ -112,14 +109,13 @@ object anon {
     }
   }
   
-  @js.native
   trait KeepScores[T] extends StObject {
     
-    var keepScores: js.UndefOr[Boolean] = js.native
+    var keepScores: js.UndefOr[Boolean] = js.undefined
     
-    var searchQuery: T = js.native
+    var searchQuery: T
     
-    var searchResults: js.Array[T] = js.native
+    var searchResults: js.Array[T]
   }
   object KeepScores {
     
@@ -130,7 +126,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class KeepScoresMutableBuilder[Self <: KeepScores[_], T] (val x: Self with KeepScores[T]) extends AnyVal {
+    implicit class KeepScoresMutableBuilder[Self <: KeepScores[?], T] (val x: Self & KeepScores[T]) extends AnyVal {
       
       @scala.inline
       def setKeepScores(value: Boolean): Self = StObject.set(x, "keepScores", value.asInstanceOf[js.Any])
@@ -149,12 +145,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SearchQuery[T] extends StObject {
     
-    var searchQuery: T = js.native
+    var searchQuery: T
     
-    var selectedId: String = js.native
+    var selectedId: String
   }
   object SearchQuery {
     
@@ -165,7 +160,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class SearchQueryMutableBuilder[Self <: SearchQuery[_], T] (val x: Self with SearchQuery[T]) extends AnyVal {
+    implicit class SearchQueryMutableBuilder[Self <: SearchQuery[?], T] (val x: Self & SearchQuery[T]) extends AnyVal {
       
       @scala.inline
       def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])
@@ -175,12 +170,11 @@ object anon {
     }
   }
   
-  @js.native
   trait SearchResults[T] extends StObject {
     
-    var searchQuery: T = js.native
+    var searchQuery: T
     
-    var searchResults: js.Array[T] = js.native
+    var searchResults: js.Array[T]
   }
   object SearchResults {
     
@@ -191,7 +185,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class SearchResultsMutableBuilder[Self <: SearchResults[_], T] (val x: Self with SearchResults[T]) extends AnyVal {
+    implicit class SearchResultsMutableBuilder[Self <: SearchResults[?], T] (val x: Self & SearchResults[T]) extends AnyVal {
       
       @scala.inline
       def setSearchQuery(value: T): Self = StObject.set(x, "searchQuery", value.asInstanceOf[js.Any])

@@ -4,13 +4,13 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MtfRenderer extends XMtfRenderer {
+trait MtfRenderer
+  extends StObject
+     with XMtfRenderer {
   
-  def createWithBitmapCanvas(Canvas: XBitmapCanvas): Unit = js.native
+  def createWithBitmapCanvas(Canvas: XBitmapCanvas): Unit
 }
 object MtfRenderer {
   

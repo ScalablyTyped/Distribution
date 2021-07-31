@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.RowClick event.
   */
-@js.native
-trait ASPxClientGridViewRowClickEventArgs extends ASPxClientGridViewRowCancelEventArgs {
+trait ASPxClientGridViewRowClickEventArgs
+  extends StObject
+     with ASPxClientGridViewRowCancelEventArgs {
   
   /**
     * Provides access to the parameters associated with the ASPxClientGridView.RowClick event.
     */
-  var htmlEvent: js.Any = js.native
+  var htmlEvent: js.Any
 }
 object ASPxClientGridViewRowClickEventArgs {
   

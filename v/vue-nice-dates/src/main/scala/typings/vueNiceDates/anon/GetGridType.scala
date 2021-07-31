@@ -2,23 +2,21 @@ package typings.vueNiceDates.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGridType extends StObject {
   
-  def getGridType(`type`: String, isReverse: Boolean): String = js.native
+  def getGridType(`type`: String, isReverse: Boolean): String
   
-  def handleClickDate(date: typings.std.Date, `type`: String): Unit = js.native
+  def handleClickDate(date: typings.std.Date, `type`: String): Unit
   
-  def handleClickTitle(): Unit = js.native
+  def handleClickTitle(): Unit
   
-  def handleMouseEnterDate(date: typings.std.Date): Unit = js.native
+  def handleMouseEnterDate(date: typings.std.Date): Unit
   
-  def handleMouseLeaveDates(): Unit = js.native
+  def handleMouseLeaveDates(): Unit
   
-  def handleNavigate(date: typings.std.Date): Unit = js.native
+  def handleNavigate(date: typings.std.Date): Unit
 }
 object GetGridType {
   

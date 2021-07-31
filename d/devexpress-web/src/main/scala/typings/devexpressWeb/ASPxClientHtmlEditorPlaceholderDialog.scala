@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Placeholder dialog within the ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorPlaceholderDialog extends ASPxClientHtmlEditorDialogBase {
+trait ASPxClientHtmlEditorPlaceholderDialog
+  extends StObject
+     with ASPxClientHtmlEditorDialogBase {
   
   /**
     * Provides access to the ASPxListBox client object that lists placeholder names in the Html Editor's Placeholder dialog.
     */
-  def GetPlaceholderNameListBox(): ASPxClientListBox = js.native
+  def GetPlaceholderNameListBox(): ASPxClientListBox
 }
 object ASPxClientHtmlEditorPlaceholderDialog {
   

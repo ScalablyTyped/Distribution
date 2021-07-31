@@ -7,14 +7,15 @@ import typings.typeorm.typeormStrings.ioredisSlashcluster
 import typings.typeorm.typeormStrings.redis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheRedisQueryResultCacheMod {
   
   @JSImport("typeorm/cache/RedisQueryResultCache", "RedisQueryResultCache")
   @js.native
-  class RedisQueryResultCache protected () extends QueryResultCache {
+  class RedisQueryResultCache protected ()
+    extends StObject
+       with QueryResultCache {
     def this(connection: Connection, clientType: ioredis) = this()
     def this(connection: Connection, clientType: ioredisSlashcluster) = this()
     def this(connection: Connection, clientType: redis) = this()

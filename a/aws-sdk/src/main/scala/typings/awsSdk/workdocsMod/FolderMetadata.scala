@@ -2,66 +2,64 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderMetadata extends StObject {
   
   /**
     * The time when the folder was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the creator.
     */
-  var CreatorId: js.UndefOr[IdType] = js.native
+  var CreatorId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The ID of the folder.
     */
-  var Id: js.UndefOr[ResourceIdType] = js.native
+  var Id: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * List of labels on the folder.
     */
-  var Labels: js.UndefOr[SharedLabels] = js.native
+  var Labels: js.UndefOr[SharedLabels] = js.undefined
   
   /**
     * The size of the latest version of the folder metadata.
     */
-  var LatestVersionSize: js.UndefOr[SizeType] = js.native
+  var LatestVersionSize: js.UndefOr[SizeType] = js.undefined
   
   /**
     * The time when the folder was updated.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The name of the folder.
     */
-  var Name: js.UndefOr[ResourceNameType] = js.native
+  var Name: js.UndefOr[ResourceNameType] = js.undefined
   
   /**
     * The ID of the parent folder.
     */
-  var ParentFolderId: js.UndefOr[ResourceIdType] = js.native
+  var ParentFolderId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The resource state of the folder.
     */
-  var ResourceState: js.UndefOr[ResourceStateType] = js.native
+  var ResourceState: js.UndefOr[ResourceStateType] = js.undefined
   
   /**
     * The unique identifier created from the subfolders and documents of the folder.
     */
-  var Signature: js.UndefOr[HashType] = js.native
+  var Signature: js.UndefOr[HashType] = js.undefined
   
   /**
     * The size of the folder metadata.
     */
-  var Size: js.UndefOr[SizeType] = js.native
+  var Size: js.UndefOr[SizeType] = js.undefined
 }
 object FolderMetadata {
   

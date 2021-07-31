@@ -2,13 +2,13 @@ package typings.ajv.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormatParams extends ErrorParameters {
+trait FormatParams
+  extends StObject
+     with ErrorParameters {
   
-  var format: String = js.native
+  var format: String
 }
 object FormatParams {
   

@@ -3,17 +3,36 @@ package typings.javascriptAstar
 import typings.javascriptAstar.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Heuristics extends StObject {
   
-  def diagonal(pos0: X, pos1: X): Double = js.native
+  def diagonal(pos0: X, pos1: X): Double
   @JSName("diagonal")
-  var diagonal_Original: Heuristic = js.native
+  var diagonal_Original: Heuristic
   
-  def manhattan(pos0: X, pos1: X): Double = js.native
+  def manhattan(pos0: X, pos1: X): Double
   @JSName("manhattan")
-  var manhattan_Original: Heuristic = js.native
+  var manhattan_Original: Heuristic
+}
+object Heuristics {
+  
+  @scala.inline
+  def apply(
+    diagonal: (/* pos0 */ X, /* pos1 */ X) => Double,
+    manhattan: (/* pos0 */ X, /* pos1 */ X) => Double
+  ): Heuristics = {
+    val __obj = js.Dynamic.literal(diagonal = js.Any.fromFunction2(diagonal), manhattan = js.Any.fromFunction2(manhattan))
+    __obj.asInstanceOf[Heuristics]
+  }
+  
+  @scala.inline
+  implicit class HeuristicsMutableBuilder[Self <: Heuristics] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDiagonal(value: (/* pos0 */ X, /* pos1 */ X) => Double): Self = StObject.set(x, "diagonal", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setManhattan(value: (/* pos0 */ X, /* pos1 */ X) => Double): Self = StObject.set(x, "manhattan", js.Any.fromFunction2(value))
+  }
 }

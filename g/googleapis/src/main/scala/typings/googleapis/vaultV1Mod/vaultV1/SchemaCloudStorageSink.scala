@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Export sink for cloud storage files.
   */
-@js.native
 trait SchemaCloudStorageSink extends StObject {
   
   /**
     * Output only. The exported files on cloud storage.
     */
-  var files: js.UndefOr[js.Array[SchemaCloudStorageFile]] = js.native
+  var files: js.UndefOr[js.Array[SchemaCloudStorageFile]] = js.undefined
 }
 object SchemaCloudStorageSink {
   

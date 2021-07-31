@@ -84,22 +84,20 @@ import typings.node.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<electron.Electron.Rectangle> */
-  @js.native
   trait PartialRectangle extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object PartialRectangle {
     
@@ -138,7 +136,6 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofBrowserWindow extends StObject {
     
     /**
@@ -160,7 +157,7 @@ object anon {
       * @deprecated
       */
     /* static member */
-    def addDevToolsExtension(path: String): Unit = js.native
+    def addDevToolsExtension(path: String): Unit
     
     /**
       * Adds Chrome extension located at `path`, and returns extension's name.
@@ -176,33 +173,33 @@ object anon {
       * @deprecated
       */
     /* static member */
-    def addExtension(path: String): Unit = js.native
+    def addExtension(path: String): Unit
     
     /**
       * The window that owns the given `browserView`. If the given view is not attached
       * to any window, returns `null`.
       */
     /* static member */
-    def fromBrowserView(browserView: BrowserView): BrowserWindow | Null = js.native
+    def fromBrowserView(browserView: BrowserView): BrowserWindow | Null
     
     /**
       * The window with the given `id`.
       */
     /* static member */
-    def fromId(id: Double): BrowserWindow | Null = js.native
+    def fromId(id: Double): BrowserWindow | Null
     
     /**
       * The window that owns the given `webContents` or `null` if the contents are not
       * owned by a window.
       */
     /* static member */
-    def fromWebContents(webContents: WebContents_): BrowserWindow | Null = js.native
+    def fromWebContents(webContents: WebContents_): BrowserWindow | Null
     
     /**
       * An array of all opened browser windows.
       */
     /* static member */
-    def getAllWindows(): js.Array[BrowserWindow] = js.native
+    def getAllWindows(): js.Array[BrowserWindow]
     
     /**
       * The keys are the extension names and each value is an Object containing `name`
@@ -218,7 +215,7 @@ object anon {
       * @deprecated
       */
     /* static member */
-    def getDevToolsExtensions(): Record[String, ExtensionInfo] = js.native
+    def getDevToolsExtensions(): Record[String, ExtensionInfo]
     
     /**
       * The keys are the extension names and each value is an Object containing `name`
@@ -232,13 +229,13 @@ object anon {
       * @deprecated
       */
     /* static member */
-    def getExtensions(): Record[String, ExtensionInfo] = js.native
+    def getExtensions(): Record[String, ExtensionInfo]
     
     /**
       * The window that is focused in this application, otherwise returns `null`.
       */
     /* static member */
-    def getFocusedWindow(): BrowserWindow | Null = js.native
+    def getFocusedWindow(): BrowserWindow | Null
     
     /**
       * Remove a DevTools extension by name.
@@ -252,7 +249,7 @@ object anon {
       * @deprecated
       */
     /* static member */
-    def removeDevToolsExtension(name: String): Unit = js.native
+    def removeDevToolsExtension(name: String): Unit
     
     /**
       * Remove a Chrome extension by name.
@@ -266,7 +263,7 @@ object anon {
       * @deprecated
       */
     /* static member */
-    def removeExtension(name: String): Unit = js.native
+    def removeExtension(name: String): Unit
   }
   object TypeofBrowserWindow {
     
@@ -326,18 +323,17 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofCommon extends StObject {
     
-    var NativeImage: Instantiable0[NativeImage_] = js.native
+    var NativeImage: Instantiable0[NativeImage_]
     
-    val clipboard: Clipboard = js.native
+    val clipboard: Clipboard
     
-    val crashReporter: CrashReporter = js.native
+    val crashReporter: CrashReporter
     
-    val desktopCapturer: DesktopCapturer = js.native
+    val desktopCapturer: DesktopCapturer
     
-    val shell: Shell = js.native
+    val shell: Shell
   }
   object TypeofCommon {
     
@@ -373,171 +369,170 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofElectron extends StObject {
     
-    var Accelerator: Instantiable0[typings.electron.Electron.Accelerator] = js.native
+    var Accelerator: Instantiable0[typings.electron.Electron.Accelerator]
     
     var BrowserView: Instantiable1[
         /* options */ js.UndefOr[BrowserViewConstructorOptions], 
         typings.electron.Electron.BrowserView
-      ] = js.native
+      ]
     
     var BrowserWindow: (Instantiable1[
         /* options */ js.UndefOr[BrowserWindowConstructorOptions], 
         typings.electron.Electron.BrowserWindow
-      ]) with TypeofBrowserWindow = js.native
+      ]) & TypeofBrowserWindow
     
-    var BrowserWindowProxy: Instantiable0[typings.electron.Electron.BrowserWindowProxy] = js.native
+    var BrowserWindowProxy: Instantiable0[typings.electron.Electron.BrowserWindowProxy]
     
     var ClientRequest: Instantiable1[
         /* options */ ClientRequestConstructorOptions | String, 
         typings.electron.Electron.ClientRequest
-      ] = js.native
+      ]
     
-    var CommandLine: Instantiable0[typings.electron.Electron.CommandLine] = js.native
+    var CommandLine: Instantiable0[typings.electron.Electron.CommandLine]
     
-    val Common: TypeofCommon = js.native
+    val Common: TypeofCommon
     
-    var Cookies: Instantiable0[typings.electron.Electron.Cookies] = js.native
+    var Cookies: Instantiable0[typings.electron.Electron.Cookies]
     
-    var Debugger: Instantiable0[typings.electron.Electron.Debugger] = js.native
+    var Debugger: Instantiable0[typings.electron.Electron.Debugger]
     
-    var Dock: Instantiable0[typings.electron.Electron.Dock] = js.native
+    var Dock: Instantiable0[typings.electron.Electron.Dock]
     
-    var DownloadItem: Instantiable0[typings.electron.Electron.DownloadItem] = js.native
+    var DownloadItem: Instantiable0[typings.electron.Electron.DownloadItem]
     
-    var IncomingMessage: Instantiable0[typings.electron.Electron.IncomingMessage] = js.native
+    var IncomingMessage: Instantiable0[typings.electron.Electron.IncomingMessage]
     
-    val Main: TypeofMain = js.native
+    val Main: TypeofMain
     
-    var Menu: Instantiable0[typings.electron.Electron.Menu] with TypeofMenu = js.native
+    var Menu: Instantiable0[typings.electron.Electron.Menu] & TypeofMenu
     
-    var MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, typings.electron.Electron.MenuItem] = js.native
+    var MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, typings.electron.Electron.MenuItem]
     
-    var MessageChannelMain: Instantiable0[typings.electron.Electron.MessageChannelMain] = js.native
+    var MessageChannelMain: Instantiable0[typings.electron.Electron.MessageChannelMain]
     
-    var MessagePortMain: Instantiable0[typings.electron.Electron.MessagePortMain] = js.native
+    var MessagePortMain: Instantiable0[typings.electron.Electron.MessagePortMain]
     
-    var NativeImage: Instantiable0[typings.electron.Electron.NativeImage_] with TypeofNativeImage = js.native
+    var NativeImage: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage
     
     var Notification: (Instantiable1[
         /* options */ js.UndefOr[NotificationConstructorOptions], 
         typings.electron.Electron.Notification
-      ]) with TypeofNotification = js.native
+      ]) & TypeofNotification
     
-    val Renderer: TypeofRenderer = js.native
+    val Renderer: TypeofRenderer
     
-    var ServiceWorkers: Instantiable0[typings.electron.Electron.ServiceWorkers] = js.native
+    var ServiceWorkers: Instantiable0[typings.electron.Electron.ServiceWorkers]
     
-    var Session: Instantiable0[Session_] with TypeofSession = js.native
+    var Session: Instantiable0[Session_] & TypeofSession
     
-    var TouchBar: (Instantiable1[/* options */ TouchBarConstructorOptions, typings.electron.Electron.TouchBar]) with TypeofTouchBar = js.native
+    var TouchBar: (Instantiable1[/* options */ TouchBarConstructorOptions, typings.electron.Electron.TouchBar]) & TypeofTouchBar
     
     var TouchBarButton: Instantiable1[
         /* options */ TouchBarButtonConstructorOptions, 
         typings.electron.Electron.TouchBarButton
-      ] = js.native
+      ]
     
     var TouchBarColorPicker: Instantiable1[
         /* options */ TouchBarColorPickerConstructorOptions, 
         typings.electron.Electron.TouchBarColorPicker
-      ] = js.native
+      ]
     
     var TouchBarGroup: Instantiable1[
         /* options */ TouchBarGroupConstructorOptions, 
         typings.electron.Electron.TouchBarGroup
-      ] = js.native
+      ]
     
     var TouchBarLabel: Instantiable1[
         /* options */ TouchBarLabelConstructorOptions, 
         typings.electron.Electron.TouchBarLabel
-      ] = js.native
+      ]
     
-    var TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.TouchBarOtherItemsProxy] = js.native
+    var TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.TouchBarOtherItemsProxy]
     
     var TouchBarPopover: Instantiable1[
         /* options */ TouchBarPopoverConstructorOptions, 
         typings.electron.Electron.TouchBarPopover
-      ] = js.native
+      ]
     
     var TouchBarScrubber: Instantiable1[
         /* options */ TouchBarScrubberConstructorOptions, 
         typings.electron.Electron.TouchBarScrubber
-      ] = js.native
+      ]
     
     var TouchBarSegmentedControl: Instantiable1[
         /* options */ TouchBarSegmentedControlConstructorOptions, 
         typings.electron.Electron.TouchBarSegmentedControl
-      ] = js.native
+      ]
     
     var TouchBarSlider: Instantiable1[
         /* options */ TouchBarSliderConstructorOptions, 
         typings.electron.Electron.TouchBarSlider
-      ] = js.native
+      ]
     
     var TouchBarSpacer: Instantiable1[
         /* options */ TouchBarSpacerConstructorOptions, 
         typings.electron.Electron.TouchBarSpacer
-      ] = js.native
+      ]
     
     var Tray: Instantiable2[
         /* image */ typings.electron.Electron.NativeImage_ | String, 
         /* guid */ js.UndefOr[String], 
         typings.electron.Electron.Tray
-      ] = js.native
+      ]
     
-    var WebContents: Instantiable0[WebContents_] with TypeofWebContents = js.native
+    var WebContents: Instantiable0[WebContents_] & TypeofWebContents
     
-    var WebRequest: Instantiable0[typings.electron.Electron.WebRequest] = js.native
+    var WebRequest: Instantiable0[typings.electron.Electron.WebRequest]
     
-    val app: App = js.native
+    val app: App
     
-    val autoUpdater: AutoUpdater = js.native
+    val autoUpdater: AutoUpdater
     
-    val clipboard: Clipboard = js.native
+    val clipboard: Clipboard
     
-    val contentTracing: ContentTracing = js.native
+    val contentTracing: ContentTracing
     
-    val contextBridge: ContextBridge = js.native
+    val contextBridge: ContextBridge
     
-    val crashReporter: CrashReporter = js.native
+    val crashReporter: CrashReporter
     
-    val desktopCapturer: DesktopCapturer = js.native
+    val desktopCapturer: DesktopCapturer
     
-    val dialog: Dialog = js.native
+    val dialog: Dialog
     
-    val globalShortcut: GlobalShortcut = js.native
+    val globalShortcut: GlobalShortcut
     
-    val inAppPurchase: InAppPurchase = js.native
+    val inAppPurchase: InAppPurchase
     
-    val ipcMain: IpcMain = js.native
+    val ipcMain: IpcMain
     
-    val ipcRenderer: IpcRenderer = js.native
+    val ipcRenderer: IpcRenderer
     
-    val nativeTheme: NativeTheme = js.native
+    val nativeTheme: NativeTheme
     
-    val net: Net = js.native
+    val net: Net
     
-    val netLog: NetLog = js.native
+    val netLog: NetLog
     
-    val powerMonitor: PowerMonitor = js.native
+    val powerMonitor: PowerMonitor
     
-    val powerSaveBlocker: PowerSaveBlocker = js.native
+    val powerSaveBlocker: PowerSaveBlocker
     
-    val protocol: Protocol = js.native
+    val protocol: Protocol
     
-    val remote: Remote = js.native
+    val remote: Remote
     
-    val screen: Screen = js.native
+    val screen: Screen
     
-    val shell: Shell = js.native
+    val shell: Shell
     
-    val systemPreferences: SystemPreferences = js.native
+    val systemPreferences: SystemPreferences
     
-    val webFrame: WebFrame = js.native
+    val webFrame: WebFrame
     
-    val webviewTag: WebviewTag = js.native
+    val webviewTag: WebviewTag
   }
   object TypeofElectron {
     
@@ -545,7 +540,7 @@ object anon {
     def apply(
       Accelerator: Instantiable0[Accelerator],
       BrowserView: Instantiable1[/* options */ js.UndefOr[BrowserViewConstructorOptions], BrowserView],
-      BrowserWindow: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) with TypeofBrowserWindow,
+      BrowserWindow: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) & TypeofBrowserWindow,
       BrowserWindowProxy: Instantiable0[BrowserWindowProxy],
       ClientRequest: Instantiable1[/* options */ ClientRequestConstructorOptions | String, ClientRequest],
       CommandLine: Instantiable0[CommandLine],
@@ -556,16 +551,16 @@ object anon {
       DownloadItem: Instantiable0[DownloadItem],
       IncomingMessage: Instantiable0[IncomingMessage],
       Main: TypeofMain,
-      Menu: Instantiable0[Menu] with TypeofMenu,
+      Menu: Instantiable0[Menu] & TypeofMenu,
       MenuItem: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem],
       MessageChannelMain: Instantiable0[MessageChannelMain],
       MessagePortMain: Instantiable0[MessagePortMain],
-      NativeImage: Instantiable0[typings.electron.Electron.NativeImage_] with TypeofNativeImage,
-      Notification: (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]) with TypeofNotification,
+      NativeImage: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage,
+      Notification: (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]) & TypeofNotification,
       Renderer: TypeofRenderer,
       ServiceWorkers: Instantiable0[ServiceWorkers],
-      Session: Instantiable0[Session_] with TypeofSession,
-      TouchBar: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) with TypeofTouchBar,
+      Session: Instantiable0[Session_] & TypeofSession,
+      TouchBar: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) & TypeofTouchBar,
       TouchBarButton: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton],
       TouchBarColorPicker: Instantiable1[/* options */ TouchBarColorPickerConstructorOptions, TouchBarColorPicker],
       TouchBarGroup: Instantiable1[/* options */ TouchBarGroupConstructorOptions, TouchBarGroup],
@@ -581,7 +576,7 @@ object anon {
           /* guid */ js.UndefOr[String], 
           Tray
         ],
-      WebContents: Instantiable0[WebContents_] with TypeofWebContents,
+      WebContents: Instantiable0[WebContents_] & TypeofWebContents,
       WebRequest: Instantiable0[WebRequest],
       app: App,
       autoUpdater: AutoUpdater,
@@ -629,7 +624,7 @@ object anon {
       
       @scala.inline
       def setBrowserWindow(
-        value: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) with TypeofBrowserWindow
+        value: (Instantiable1[/* options */ js.UndefOr[BrowserWindowConstructorOptions], BrowserWindow]) & TypeofBrowserWindow
       ): Self = StObject.set(x, "BrowserWindow", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -693,7 +688,7 @@ object anon {
       def setMain(value: TypeofMain): Self = StObject.set(x, "Main", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMenu(value: Instantiable0[Menu] with TypeofMenu): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
+      def setMenu(value: Instantiable0[Menu] & TypeofMenu): Self = StObject.set(x, "Menu", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMenuItem(value: Instantiable1[/* options */ MenuItemConstructorOptions, MenuItem]): Self = StObject.set(x, "MenuItem", value.asInstanceOf[js.Any])
@@ -705,7 +700,7 @@ object anon {
       def setMessagePortMain(value: Instantiable0[MessagePortMain]): Self = StObject.set(x, "MessagePortMain", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNativeImage(value: Instantiable0[typings.electron.Electron.NativeImage_] with TypeofNativeImage): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
+      def setNativeImage(value: Instantiable0[typings.electron.Electron.NativeImage_] & TypeofNativeImage): Self = StObject.set(x, "NativeImage", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNativeTheme(value: NativeTheme): Self = StObject.set(x, "nativeTheme", value.asInstanceOf[js.Any])
@@ -718,7 +713,7 @@ object anon {
       
       @scala.inline
       def setNotification(
-        value: (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]) with TypeofNotification
+        value: (Instantiable1[/* options */ js.UndefOr[NotificationConstructorOptions], Notification]) & TypeofNotification
       ): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -743,7 +738,7 @@ object anon {
       def setServiceWorkers(value: Instantiable0[ServiceWorkers]): Self = StObject.set(x, "ServiceWorkers", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSession(value: Instantiable0[Session_] with TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
+      def setSession(value: Instantiable0[Session_] & TypeofSession): Self = StObject.set(x, "Session", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setShell(value: Shell): Self = StObject.set(x, "shell", value.asInstanceOf[js.Any])
@@ -752,7 +747,7 @@ object anon {
       def setSystemPreferences(value: SystemPreferences): Self = StObject.set(x, "systemPreferences", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTouchBar(value: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) with TypeofTouchBar): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
+      def setTouchBar(value: (Instantiable1[/* options */ TouchBarConstructorOptions, TouchBar]) & TypeofTouchBar): Self = StObject.set(x, "TouchBar", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTouchBarButton(value: Instantiable1[/* options */ TouchBarButtonConstructorOptions, TouchBarButton]): Self = StObject.set(x, "TouchBarButton", value.asInstanceOf[js.Any])
@@ -796,7 +791,7 @@ object anon {
       ): Self = StObject.set(x, "Tray", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setWebContents(value: Instantiable0[WebContents_] with TypeofWebContents): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
+      def setWebContents(value: Instantiable0[WebContents_] & TypeofWebContents): Self = StObject.set(x, "WebContents", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWebFrame(value: WebFrame): Self = StObject.set(x, "webFrame", value.asInstanceOf[js.Any])
@@ -809,98 +804,97 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofMain extends StObject {
     
-    var BrowserView: Instantiable0[typings.electron.Electron.Main.BrowserView] = js.native
+    var BrowserView: Instantiable0[typings.electron.Electron.Main.BrowserView]
     
-    var BrowserWindow: Instantiable0[typings.electron.Electron.Main.BrowserWindow] = js.native
+    var BrowserWindow: Instantiable0[typings.electron.Electron.Main.BrowserWindow]
     
-    var ClientRequest: Instantiable0[typings.electron.Electron.Main.ClientRequest] = js.native
+    var ClientRequest: Instantiable0[typings.electron.Electron.Main.ClientRequest]
     
-    var CommandLine: Instantiable0[typings.electron.Electron.Main.CommandLine] = js.native
+    var CommandLine: Instantiable0[typings.electron.Electron.Main.CommandLine]
     
-    var Cookies: Instantiable0[typings.electron.Electron.Main.Cookies] = js.native
+    var Cookies: Instantiable0[typings.electron.Electron.Main.Cookies]
     
-    var Debugger: Instantiable0[typings.electron.Electron.Main.Debugger] = js.native
+    var Debugger: Instantiable0[typings.electron.Electron.Main.Debugger]
     
-    var Dock: Instantiable0[typings.electron.Electron.Main.Dock] = js.native
+    var Dock: Instantiable0[typings.electron.Electron.Main.Dock]
     
-    var DownloadItem: Instantiable0[typings.electron.Electron.Main.DownloadItem] = js.native
+    var DownloadItem: Instantiable0[typings.electron.Electron.Main.DownloadItem]
     
-    var IncomingMessage: Instantiable0[typings.electron.Electron.Main.IncomingMessage] = js.native
+    var IncomingMessage: Instantiable0[typings.electron.Electron.Main.IncomingMessage]
     
-    var Menu: Instantiable0[typings.electron.Electron.Main.Menu] = js.native
+    var Menu: Instantiable0[typings.electron.Electron.Main.Menu]
     
-    var MenuItem: Instantiable0[typings.electron.Electron.Main.MenuItem] = js.native
+    var MenuItem: Instantiable0[typings.electron.Electron.Main.MenuItem]
     
-    var MessageChannelMain: Instantiable0[typings.electron.Electron.Main.MessageChannelMain] = js.native
+    var MessageChannelMain: Instantiable0[typings.electron.Electron.Main.MessageChannelMain]
     
-    var MessagePortMain: Instantiable0[typings.electron.Electron.Main.MessagePortMain] = js.native
+    var MessagePortMain: Instantiable0[typings.electron.Electron.Main.MessagePortMain]
     
-    var Notification: Instantiable0[typings.electron.Electron.Main.Notification] = js.native
+    var Notification: Instantiable0[typings.electron.Electron.Main.Notification]
     
-    var ServiceWorkers: Instantiable0[typings.electron.Electron.Main.ServiceWorkers] = js.native
+    var ServiceWorkers: Instantiable0[typings.electron.Electron.Main.ServiceWorkers]
     
-    var Session: Instantiable0[typings.electron.Electron.Main.Session_] = js.native
+    var Session: Instantiable0[typings.electron.Electron.Main.Session_]
     
-    var TouchBar: Instantiable0[typings.electron.Electron.Main.TouchBar] = js.native
+    var TouchBar: Instantiable0[typings.electron.Electron.Main.TouchBar]
     
-    var TouchBarButton: Instantiable0[typings.electron.Electron.Main.TouchBarButton] = js.native
+    var TouchBarButton: Instantiable0[typings.electron.Electron.Main.TouchBarButton]
     
-    var TouchBarColorPicker: Instantiable0[typings.electron.Electron.Main.TouchBarColorPicker] = js.native
+    var TouchBarColorPicker: Instantiable0[typings.electron.Electron.Main.TouchBarColorPicker]
     
-    var TouchBarGroup: Instantiable0[typings.electron.Electron.Main.TouchBarGroup] = js.native
+    var TouchBarGroup: Instantiable0[typings.electron.Electron.Main.TouchBarGroup]
     
-    var TouchBarLabel: Instantiable0[typings.electron.Electron.Main.TouchBarLabel] = js.native
+    var TouchBarLabel: Instantiable0[typings.electron.Electron.Main.TouchBarLabel]
     
-    var TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.Main.TouchBarOtherItemsProxy] = js.native
+    var TouchBarOtherItemsProxy: Instantiable0[typings.electron.Electron.Main.TouchBarOtherItemsProxy]
     
-    var TouchBarPopover: Instantiable0[typings.electron.Electron.Main.TouchBarPopover] = js.native
+    var TouchBarPopover: Instantiable0[typings.electron.Electron.Main.TouchBarPopover]
     
-    var TouchBarScrubber: Instantiable0[typings.electron.Electron.Main.TouchBarScrubber] = js.native
+    var TouchBarScrubber: Instantiable0[typings.electron.Electron.Main.TouchBarScrubber]
     
-    var TouchBarSegmentedControl: Instantiable0[typings.electron.Electron.Main.TouchBarSegmentedControl] = js.native
+    var TouchBarSegmentedControl: Instantiable0[typings.electron.Electron.Main.TouchBarSegmentedControl]
     
-    var TouchBarSlider: Instantiable0[typings.electron.Electron.Main.TouchBarSlider] = js.native
+    var TouchBarSlider: Instantiable0[typings.electron.Electron.Main.TouchBarSlider]
     
-    var TouchBarSpacer: Instantiable0[typings.electron.Electron.Main.TouchBarSpacer] = js.native
+    var TouchBarSpacer: Instantiable0[typings.electron.Electron.Main.TouchBarSpacer]
     
-    var Tray: Instantiable0[typings.electron.Electron.Main.Tray] = js.native
+    var Tray: Instantiable0[typings.electron.Electron.Main.Tray]
     
-    var WebContents: Instantiable0[typings.electron.Electron.Main.WebContents_] = js.native
+    var WebContents: Instantiable0[typings.electron.Electron.Main.WebContents_]
     
-    var WebRequest: Instantiable0[typings.electron.Electron.Main.WebRequest] = js.native
+    var WebRequest: Instantiable0[typings.electron.Electron.Main.WebRequest]
     
-    val app: App = js.native
+    val app: App
     
-    val autoUpdater: AutoUpdater = js.native
+    val autoUpdater: AutoUpdater
     
-    val contentTracing: ContentTracing = js.native
+    val contentTracing: ContentTracing
     
-    val dialog: Dialog = js.native
+    val dialog: Dialog
     
-    val globalShortcut: GlobalShortcut = js.native
+    val globalShortcut: GlobalShortcut
     
-    val inAppPurchase: InAppPurchase = js.native
+    val inAppPurchase: InAppPurchase
     
-    val ipcMain: IpcMain = js.native
+    val ipcMain: IpcMain
     
-    val nativeTheme: NativeTheme = js.native
+    val nativeTheme: NativeTheme
     
-    val net: Net = js.native
+    val net: Net
     
-    val netLog: NetLog = js.native
+    val netLog: NetLog
     
-    val powerMonitor: PowerMonitor = js.native
+    val powerMonitor: PowerMonitor
     
-    val powerSaveBlocker: PowerSaveBlocker = js.native
+    val powerSaveBlocker: PowerSaveBlocker
     
-    val protocol: Protocol = js.native
+    val protocol: Protocol
     
-    val screen: Screen = js.native
+    val screen: Screen
     
-    val systemPreferences: SystemPreferences = js.native
+    val systemPreferences: SystemPreferences
   }
   object TypeofMain {
     
@@ -1236,14 +1230,13 @@ object anon {
     def createThumbnailFromPath(path: String, maxSize: Size): js.Promise[typings.electron.Electron.NativeImage_] = js.native
   }
   
-  @js.native
   trait TypeofNotification extends StObject {
     
     /**
       * Whether or not desktop notifications are supported on the current system
       */
     /* static member */
-    def isSupported(): Boolean = js.native
+    def isSupported(): Boolean
   }
   object TypeofNotification {
     
@@ -1261,20 +1254,19 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofRenderer extends StObject {
     
-    var BrowserWindowProxy: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy] = js.native
+    var BrowserWindowProxy: Instantiable0[typings.electron.Electron.Renderer.BrowserWindowProxy]
     
-    val contextBridge: ContextBridge = js.native
+    val contextBridge: ContextBridge
     
-    val ipcRenderer: IpcRenderer = js.native
+    val ipcRenderer: IpcRenderer
     
-    val remote: Remote = js.native
+    val remote: Remote
     
-    val webFrame: WebFrame = js.native
+    val webFrame: WebFrame
     
-    val webviewTag: WebviewTag = js.native
+    val webviewTag: WebviewTag
   }
   object TypeofRenderer {
     
@@ -1343,10 +1335,8 @@ object anon {
     def fromPartition(partition: String, options: FromPartitionOptions): Session_ = js.native
   }
   
-  @js.native
   trait TypeofTouchBar extends StObject
   
-  @js.native
   trait TypeofWebContents extends StObject {
     
     // Docs: https://electronjs.org/docs/api/web-contents
@@ -1354,20 +1344,20 @@ object anon {
       * A WebContents instance with the given ID.
       */
     /* static member */
-    def fromId(id: Double): WebContents_ = js.native
+    def fromId(id: Double): WebContents_
     
     /**
       * An array of all `WebContents` instances. This will contain web contents for all
       * windows, webviews, opened devtools, and devtools extension background pages.
       */
     /* static member */
-    def getAllWebContents(): js.Array[WebContents_] = js.native
+    def getAllWebContents(): js.Array[WebContents_]
     
     /**
       * The web contents that is focused in this application, otherwise returns `null`.
       */
     /* static member */
-    def getFocusedWebContents(): WebContents_ = js.native
+    def getFocusedWebContents(): WebContents_
   }
   object TypeofWebContents {
     

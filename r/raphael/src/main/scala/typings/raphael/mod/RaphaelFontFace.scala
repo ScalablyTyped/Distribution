@@ -2,10 +2,8 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelFontFace extends StObject {
   
   /**
@@ -13,39 +11,39 @@ trait RaphaelFontFace extends StObject {
     *
     * The ascent is the recommended distance above the baseline for singled spaced text.
     */
-  var ascent: Double | String = js.native
+  var ascent: Double | String
   
   /**
     * The axis aligned bounding box of all glyphs, such as `-11 -274 322 94` (top left corner and width and height).
     */
-  var bbox: String = js.native
+  var bbox: String
   
   /**
     * The descent property of this font, such as `-90`.
     *
     * The ascent is the recommended distance below the baseline for singled spaced text
     */
-  var descent: Double | String = js.native
+  var descent: Double | String
   
   /**
     * The font family property of this font.
     */
-  var `font-family`: String = js.native
+  var `font-family`: String
   
   /**
     * The font stretch property of this font, such as `normal`.
     */
-  var `font-stretch`: String = js.native
+  var `font-stretch`: String
   
   /**
     * The font style property of this font.
     */
-  var `font-style`: String = js.native
+  var `font-style`: String
   
   /**
     * The weight of this font, such as `200`.
     */
-  var `font-weight`: Double | String = js.native
+  var `font-weight`: Double | String
   
   /**
     * The panose-1 classification of this font.
@@ -55,22 +53,22 @@ trait RaphaelFontFace extends StObject {
     * thus becomes a vector in a 10-dimensional space, and one can calculate the distance between two fonts as a
     * Cartesian distance.
     */
-  var `panose-1`: String = js.native
+  var `panose-1`: String
   
   /**
     * When an underline is drawn below a glyph, the vertical offset of that underline. Usually negative, such as `36`.
     */
-  var `underline-position`: Double | String = js.native
+  var `underline-position`: Double | String
   
   /**
     * The thickness of the underline, when a glyph is underlined, such as `18`.
     */
-  var `underline-thickness`: Double | String = js.native
+  var `underline-thickness`: Double | String
   
   /**
     * The range of characters this font contains, such as `U+0020-U+00F3`.
     */
-  var `unicode-range`: String = js.native
+  var `unicode-range`: String
   
   /**
     * The units-per-em property of this font.
@@ -78,14 +76,14 @@ trait RaphaelFontFace extends StObject {
     * The units-per-em attribute specifies the number of coordinate units on the "em square", an abstract square whose
     * height is the intended distance between lines of type in the same type size.
     */
-  var `units-per-em`: Double | String = js.native
+  var `units-per-em`: Double | String
   
   /**
     * The x-height property of this font.
     *
     * The x-height, or corpus size, is the distance between the baseline and the mean line of lower-case letters.
     */
-  var `x-height`: Double | String = js.native
+  var `x-height`: Double | String
 }
 object RaphaelFontFace {
   

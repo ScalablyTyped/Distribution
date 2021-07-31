@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mskConfigurationMod {
@@ -58,6 +57,10 @@ object mskConfigurationMod {
   /* static members */
   object Configuration {
     
+    @JSImport("@pulumi/aws/msk/configuration", "Configuration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Configuration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,50 +70,44 @@ object mskConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/msk/configuration", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Configuration = js.native
-    @JSImport("@pulumi/aws/msk/configuration", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Configuration = js.native
-    @JSImport("@pulumi/aws/msk/configuration", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationState): Configuration = js.native
-    @JSImport("@pulumi/aws/msk/configuration", "Configuration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): Configuration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Configuration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Configuration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationState): Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Configuration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ConfigurationState, opts: CustomResourceOptions): Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Configuration]
     
     /**
       * Returns true if the given object is an instance of Configuration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/msk/configuration", "Configuration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/configuration.Configuration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/msk/configuration.Configuration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/msk/configuration.Configuration */ Boolean]
   }
   
-  @js.native
   trait ConfigurationArgs extends StObject {
     
     /**
       * Description of the configuration.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of Apache Kafka versions which can use this configuration.
       */
-    val kafkaVersions: Input[js.Array[Input[String]]] = js.native
+    val kafkaVersions: Input[js.Array[Input[String]]]
     
     /**
       * Name of the configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Contents of the server.properties file. Supported properties are documented in the [MSK Developer Guide](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html).
       */
-    val serverProperties: Input[String] = js.native
+    val serverProperties: Input[String]
   }
   object ConfigurationArgs {
     
@@ -146,38 +143,37 @@ object mskConfigurationMod {
     }
   }
   
-  @js.native
   trait ConfigurationState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the configuration.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the configuration.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of Apache Kafka versions which can use this configuration.
       */
-    val kafkaVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val kafkaVersions: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Latest revision of the configuration.
       */
-    val latestRevision: js.UndefOr[Input[Double]] = js.native
+    val latestRevision: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Name of the configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Contents of the server.properties file. Supported properties are documented in the [MSK Developer Guide](https://docs.aws.amazon.com/msk/latest/developerguide/msk-configuration-properties.html).
       */
-    val serverProperties: js.UndefOr[Input[String]] = js.native
+    val serverProperties: js.UndefOr[Input[String]] = js.undefined
   }
   object ConfigurationState {
     

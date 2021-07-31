@@ -3,36 +3,34 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** information needed to (recursively) search an object. */
-@js.native
 trait SearchInfo extends StObject {
   
   /** the search criteria. */
-  var Criteria: SafeArray[SearchCriterium] = js.native
+  var Criteria: SafeArray[SearchCriterium]
   
   /** whether to follow indirections (link objects) and search through their respective targets also. */
-  var FollowIndirections: Boolean = js.native
+  var FollowIndirections: Boolean
   
   /** whether to include the object itself in the search or only (some of) its sub-objects. */
-  var IncludeBase: Boolean = js.native
+  var IncludeBase: Boolean
   
   /** the mode of recursion to use. */
-  var Recursion: SearchRecursion = js.native
+  var Recursion: SearchRecursion
   
   /**
     * whether to respect the "view restrictions" specified for the documents hierarchically contained within an object (e.g., only searches through marked
     * documents).
     */
-  var RespectDocViewRestrictions: Boolean = js.native
+  var RespectDocViewRestrictions: Boolean
   
   /**
     * whether to respect the "view restrictions" specified for the folders hierarchically contained within an object (e.g., only searches through subscribed
     * folders).
     */
-  var RespectFolderViewRestrictions: Boolean = js.native
+  var RespectFolderViewRestrictions: Boolean
 }
 object SearchInfo {
   

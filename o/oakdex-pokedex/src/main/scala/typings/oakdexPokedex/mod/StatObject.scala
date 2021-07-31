@@ -2,23 +2,21 @@ package typings.oakdexPokedex.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatObject extends StObject {
   
-  var atk: Double = js.native
+  var atk: Double
   
-  var `def`: Double = js.native
+  var `def`: Double
   
-  var hp: Double = js.native
+  var hp: Double
   
-  var sp_atk: Double = js.native
+  var sp_atk: Double
   
-  var sp_def: Double = js.native
+  var sp_def: Double
   
-  var speed: Double = js.native
+  var speed: Double
 }
 object StatObject {
   

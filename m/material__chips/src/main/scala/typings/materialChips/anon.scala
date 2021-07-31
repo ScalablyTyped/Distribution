@@ -6,73 +6,71 @@ import typings.std.ClientRect
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ADDEDANNOUNCEMENTATTRIBUTE extends StObject {
     
-    var ADDED_ANNOUNCEMENT_ATTRIBUTE: String = js.native
+    var ADDED_ANNOUNCEMENT_ATTRIBUTE: String
     
-    var ARIA_CHECKED: String = js.native
+    var ARIA_CHECKED: String
     
-    var ARROW_DOWN_KEY: String = js.native
+    var ARROW_DOWN_KEY: String
     
-    var ARROW_LEFT_KEY: String = js.native
+    var ARROW_LEFT_KEY: String
     
-    var ARROW_RIGHT_KEY: String = js.native
+    var ARROW_RIGHT_KEY: String
     
-    var ARROW_UP_KEY: String = js.native
+    var ARROW_UP_KEY: String
     
-    var BACKSPACE_KEY: String = js.native
+    var BACKSPACE_KEY: String
     
-    var CHECKMARK_SELECTOR: String = js.native
+    var CHECKMARK_SELECTOR: String
     
-    var DELETE_KEY: String = js.native
+    var DELETE_KEY: String
     
-    var END_KEY: String = js.native
+    var END_KEY: String
     
-    var ENTER_KEY: String = js.native
+    var ENTER_KEY: String
     
-    var ENTRY_ANIMATION_NAME: String = js.native
+    var ENTRY_ANIMATION_NAME: String
     
-    var HOME_KEY: String = js.native
+    var HOME_KEY: String
     
-    var IE_ARROW_DOWN_KEY: String = js.native
+    var IE_ARROW_DOWN_KEY: String
     
-    var IE_ARROW_LEFT_KEY: String = js.native
+    var IE_ARROW_LEFT_KEY: String
     
-    var IE_ARROW_RIGHT_KEY: String = js.native
+    var IE_ARROW_RIGHT_KEY: String
     
-    var IE_ARROW_UP_KEY: String = js.native
+    var IE_ARROW_UP_KEY: String
     
-    var IE_DELETE_KEY: String = js.native
+    var IE_DELETE_KEY: String
     
-    var INTERACTION_EVENT: String = js.native
+    var INTERACTION_EVENT: String
     
-    var LEADING_ICON_SELECTOR: String = js.native
+    var LEADING_ICON_SELECTOR: String
     
-    var NAVIGATION_EVENT: String = js.native
+    var NAVIGATION_EVENT: String
     
-    var PRIMARY_ACTION_SELECTOR: String = js.native
+    var PRIMARY_ACTION_SELECTOR: String
     
-    var REMOVAL_EVENT: String = js.native
+    var REMOVAL_EVENT: String
     
-    var REMOVED_ANNOUNCEMENT_ATTRIBUTE: String = js.native
+    var REMOVED_ANNOUNCEMENT_ATTRIBUTE: String
     
-    var SELECTION_EVENT: String = js.native
+    var SELECTION_EVENT: String
     
-    var SPACEBAR_KEY: String = js.native
+    var SPACEBAR_KEY: String
     
-    var TAB_INDEX: String = js.native
+    var TAB_INDEX: String
     
-    var TRAILING_ACTION_SELECTOR: String = js.native
+    var TRAILING_ACTION_SELECTOR: String
     
-    var TRAILING_ICON_INTERACTION_EVENT: String = js.native
+    var TRAILING_ICON_INTERACTION_EVENT: String
     
-    var TRAILING_ICON_SELECTOR: String = js.native
+    var TRAILING_ICON_SELECTOR: String
   }
   object ADDEDANNOUNCEMENTATTRIBUTE {
     
@@ -208,16 +206,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ARIAHIDDEN extends StObject {
     
-    var ARIA_HIDDEN: String = js.native
+    var ARIA_HIDDEN: String
     
-    var INTERACTION_EVENT: String = js.native
+    var INTERACTION_EVENT: String
     
-    var NAVIGATION_EVENT: String = js.native
+    var NAVIGATION_EVENT: String
     
-    var TAB_INDEX: String = js.native
+    var TAB_INDEX: String
   }
   object ARIAHIDDEN {
     
@@ -244,34 +241,33 @@ object anon {
     }
   }
   
-  @js.native
   trait CHECKMARK extends StObject {
     
-    var CHECKMARK: String = js.native
+    var CHECKMARK: String
     
-    var CHIP_EXIT: String = js.native
+    var CHIP_EXIT: String
     
-    var DELETABLE: String = js.native
+    var DELETABLE: String
     
-    var EDITABLE: String = js.native
+    var EDITABLE: String
     
-    var EDITING: String = js.native
+    var EDITING: String
     
-    var HIDDEN_LEADING_ICON: String = js.native
+    var HIDDEN_LEADING_ICON: String
     
-    var LEADING_ICON: String = js.native
+    var LEADING_ICON: String
     
-    var PRIMARY_ACTION: String = js.native
+    var PRIMARY_ACTION: String
     
-    var PRIMARY_ACTION_FOCUSED: String = js.native
+    var PRIMARY_ACTION_FOCUSED: String
     
-    var SELECTED: String = js.native
+    var SELECTED: String
     
-    var TEXT: String = js.native
+    var TEXT: String
     
-    var TRAILING_ACTION: String = js.native
+    var TRAILING_ACTION: String
     
-    var TRAILING_ICON: String = js.native
+    var TRAILING_ICON: String
   }
   object CHECKMARK {
     
@@ -339,10 +335,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CHIPSELECTOR extends StObject {
     
-    var CHIP_SELECTOR: String = js.native
+    var CHIP_SELECTOR: String
   }
   object CHIPSELECTOR {
     
@@ -360,12 +355,11 @@ object anon {
     }
   }
   
-  @js.native
   trait CHOICE extends StObject {
     
-    var CHOICE: String = js.native
+    var CHOICE: String
     
-    var FILTER: String = js.native
+    var FILTER: String
   }
   object CHOICE {
     
@@ -387,58 +381,57 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/chips.@material/chips/chip/adapter.MDCChipAdapter> */
-  @js.native
   trait PartialMDCChipAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var addClassToLeadingIcon: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClassToLeadingIcon: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var eventTargetHasClass: js.UndefOr[js.Function2[/* target */ EventTarget | Null, /* className */ String, Boolean]] = js.native
+    var eventTargetHasClass: js.UndefOr[js.Function2[/* target */ EventTarget | Null, /* className */ String, Boolean]] = js.undefined
     
-    var focusPrimaryAction: js.UndefOr[js.Function0[Unit]] = js.native
+    var focusPrimaryAction: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var focusTrailingAction: js.UndefOr[js.Function0[Unit]] = js.native
+    var focusTrailingAction: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+    var getAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var getCheckmarkBoundingClientRect: js.UndefOr[js.Function0[ClientRect | Null]] = js.native
+    var getCheckmarkBoundingClientRect: js.UndefOr[js.Function0[ClientRect | Null]] = js.undefined
     
-    var getComputedStyleValue: js.UndefOr[js.Function1[/* propertyName */ String, String]] = js.native
+    var getComputedStyleValue: js.UndefOr[js.Function1[/* propertyName */ String, String]] = js.undefined
     
-    var getRootBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.native
+    var getRootBoundingClientRect: js.UndefOr[js.Function0[ClientRect]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var hasLeadingIcon: js.UndefOr[js.Function0[Boolean]] = js.native
+    var hasLeadingIcon: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var isTrailingActionNavigable: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isTrailingActionNavigable: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var notifyEditFinish: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyEditFinish: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyEditStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyEditStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyInteraction: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyInteraction: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var notifyNavigation: js.UndefOr[js.Function2[/* key */ String, /* source */ EventSource, Unit]] = js.native
+    var notifyNavigation: js.UndefOr[js.Function2[/* key */ String, /* source */ EventSource, Unit]] = js.undefined
     
-    var notifyRemoval: js.UndefOr[js.Function1[/* removedAnnouncement */ String | Null, Unit]] = js.native
+    var notifyRemoval: js.UndefOr[js.Function1[/* removedAnnouncement */ String | Null, Unit]] = js.undefined
     
-    var notifySelection: js.UndefOr[js.Function2[/* selected */ Boolean, /* chipSetShouldIgnore */ Boolean, Unit]] = js.native
+    var notifySelection: js.UndefOr[js.Function2[/* selected */ Boolean, /* chipSetShouldIgnore */ Boolean, Unit]] = js.undefined
     
-    var notifyTrailingIconInteraction: js.UndefOr[js.Function0[Unit]] = js.native
+    var notifyTrailingIconInteraction: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeClassFromLeadingIcon: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClassFromLeadingIcon: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var removeTrailingActionFocus: js.UndefOr[js.Function0[Unit]] = js.native
+    var removeTrailingActionFocus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setPrimaryActionAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setPrimaryActionAttr: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var setStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.native
+    var setStyleProperty: js.UndefOr[js.Function2[/* propertyName */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCChipAdapter {
     
@@ -604,30 +597,29 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/chips.@material/chips/chip-set/adapter.MDCChipSetAdapter> */
-  @js.native
   trait PartialMDCChipSetAdapter extends StObject {
     
-    var announceMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.native
+    var announceMessage: js.UndefOr[js.Function1[/* message */ String, Unit]] = js.undefined
     
-    var focusChipPrimaryActionAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var focusChipPrimaryActionAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var focusChipTrailingActionAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var focusChipTrailingActionAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var getChipListCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getChipListCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getIndexOfChipById: js.UndefOr[js.Function1[/* chipId */ String, Double]] = js.native
+    var getIndexOfChipById: js.UndefOr[js.Function1[/* chipId */ String, Double]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isRTL: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
-    var removeChipAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var removeChipAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var removeFocusFromChipAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var removeFocusFromChipAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
     var selectChipAtIndex: js.UndefOr[
         js.Function3[/* index */ Double, /* isSelected */ Boolean, /* shouldNotifyClients */ Boolean, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object PartialMDCChipSetAdapter {
     
@@ -703,18 +695,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/chips.@material/chips/trailingaction/adapter.MDCChipTrailingActionAdapter> */
-  @js.native
   trait PartialMDCChipTrailingAct extends StObject {
     
-    var focus: js.UndefOr[js.Function0[Unit]] = js.native
+    var focus: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.native
+    var getAttribute: js.UndefOr[js.Function1[/* attr */ String, String | Null]] = js.undefined
     
-    var notifyInteraction: js.UndefOr[js.Function1[/* trigger */ InteractionTrigger, Unit]] = js.native
+    var notifyInteraction: js.UndefOr[js.Function1[/* trigger */ InteractionTrigger, Unit]] = js.undefined
     
-    var notifyNavigation: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.native
+    var notifyNavigation: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
-    var setAttribute: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.native
+    var setAttribute: js.UndefOr[js.Function2[/* attr */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCChipTrailingAct {
     

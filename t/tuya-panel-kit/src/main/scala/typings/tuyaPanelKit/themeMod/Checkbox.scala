@@ -2,24 +2,22 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  light :tuya-panel-kit.tuya-panel-kit/theme.CheckboxTheme,   dark :tuya-panel-kit.tuya-panel-kit/theme.CheckboxTheme} & std.Partial<tuya-panel-kit.tuya-panel-kit/theme.CheckboxTheme> */
-@js.native
 trait Checkbox extends StObject {
   
-  var activeColor: js.UndefOr[String] = js.native
+  var activeColor: js.UndefOr[String] = js.undefined
   
-  var dark: CheckboxTheme = js.native
+  var dark: CheckboxTheme
   
-  var disabledColor: js.UndefOr[String] = js.native
+  var disabledColor: js.UndefOr[String] = js.undefined
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var light: CheckboxTheme = js.native
+  var light: CheckboxTheme
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object Checkbox {
   

@@ -5,7 +5,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,20 +12,20 @@ object mod {
   @JSImport("passport-cognito", "Strategy")
   @js.native
   class Strategy protected ()
-    extends typings.passport.mod.Strategy {
+    extends StObject
+       with typings.passport.mod.Strategy {
     def this(options: CognitoStrategyOptions, verify: CognitoVerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
   }
   
-  @js.native
   trait CognitoStrategyOptions extends StObject {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var region: String = js.native
+    var region: String
     
-    var userPoolId: String = js.native
+    var userPoolId: String
   }
   object CognitoStrategyOptions {
     

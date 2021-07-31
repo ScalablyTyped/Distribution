@@ -2,41 +2,39 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTransformConstraint extends StObject {
   
   /* static member */
-  var ENTRIES: Double = js.native
+  var ENTRIES: Double
   
   /* static member */
-  var PREV_ROTATE: Double = js.native
+  var PREV_ROTATE: Double
   
   /* static member */
-  var PREV_SCALE: Double = js.native
+  var PREV_SCALE: Double
   
   /* static member */
-  var PREV_SHEAR: Double = js.native
+  var PREV_SHEAR: Double
   
   /* static member */
-  var PREV_TIME: Double = js.native
+  var PREV_TIME: Double
   
   /* static member */
-  var PREV_TRANSLATE: Double = js.native
+  var PREV_TRANSLATE: Double
   
   /* static member */
-  var ROTATE: Double = js.native
+  var ROTATE: Double
   
   /* static member */
-  var SCALE: Double = js.native
+  var SCALE: Double
   
   /* static member */
-  var SHEAR: Double = js.native
+  var SHEAR: Double
   
   /* static member */
-  var TRANSLATE: Double = js.native
+  var TRANSLATE: Double
 }
 object TypeofTransformConstraint {
   

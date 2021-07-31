@@ -3,15 +3,15 @@ package typings.nodeRsa.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyComponentsPublic extends _Key {
+trait KeyComponentsPublic
+  extends StObject
+     with _Key {
   
-  var e: Buffer | Double = js.native
+  var e: Buffer | Double
   
-  var n: Buffer = js.native
+  var n: Buffer
 }
 object KeyComponentsPublic {
   

@@ -10,12 +10,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`before-remove`
 import typings.arcgisJsApi.arcgisJsApiStrings.change
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Collection[T]
-  extends Accessor
+  extends StObject
+     with Accessor
      with Evented {
   
   def add(item: T): Unit = js.native
@@ -103,9 +103,9 @@ trait Collection[T]
   def shift(): T = js.native
   
   def slice(): Collection[T] = js.native
-  def slice(begin: js.UndefOr[scala.Nothing], end: Double): Collection[T] = js.native
   def slice(begin: Double): Collection[T] = js.native
   def slice(begin: Double, end: Double): Collection[T] = js.native
+  def slice(begin: Unit, end: Double): Collection[T] = js.native
   
   def some(callback: ItemCallback[T]): Boolean = js.native
   

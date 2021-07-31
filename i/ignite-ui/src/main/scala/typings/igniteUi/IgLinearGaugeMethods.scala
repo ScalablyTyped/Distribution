@@ -2,10 +2,8 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLinearGaugeMethods extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait IgLinearGaugeMethods extends StObject {
     *
     * @param value The range object to be added.
     */
-  def addRange(value: js.Object): Unit = js.native
+  def addRange(value: js.Object): Unit
   
   /**
     * Changes the widget language to global language. Global language is the value in $.ig.util.language
     */
-  def changeGlobalLanguage(): Unit = js.native
+  def changeGlobalLanguage(): Unit
   
   /**
     * Changes the widget regional settins to global regional settings. Global regional settings are container in $.ig.util.regional
     */
-  def changeGlobalRegional(): Unit = js.native
+  def changeGlobalRegional(): Unit
   
   /**
     * Changes the all locales contained into a specified container to the language specified in [options.language](ui.igwidget#options:language)
@@ -31,27 +29,27 @@ trait IgLinearGaugeMethods extends StObject {
     *
     * @param $container Optional parameter - if not set it would use the element of the widget as $container
     */
-  def changeLocale($container: js.Object): Unit = js.native
+  def changeLocale($container: js.Object): Unit
   
   /**
     * Destroys widget.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns information about how the linear gauge is rendered.
     */
-  def exportVisualData(): js.Object = js.native
+  def exportVisualData(): js.Object
   
   /**
     * Causes all pending changes of the linear gauge e.g. by changed property values to be rendered immediately.
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /**
     * Returns a string containing the names of all the ranges delimited with a \n symbol.
     */
-  def getRangeNames(): String = js.native
+  def getRangeNames(): String
   
   /**
     * Gets the value for the main scale of the gauge for a given point within the bounds of the gauge.
@@ -59,7 +57,7 @@ trait IgLinearGaugeMethods extends StObject {
     * @param x
     * @param y
     */
-  def getValueForPoint(x: js.Object, y: js.Object): Double = js.native
+  def getValueForPoint(x: js.Object, y: js.Object): Double
   
   /**
     * Returns true if the main gauge needle bounding box contains the point provided, otherwise false.
@@ -67,26 +65,26 @@ trait IgLinearGaugeMethods extends StObject {
     * @param x The x coordinate of the point.
     * @param y The y coordinate of the point.
     */
-  def needleContainsPoint(x: Double, y: Double): Boolean = js.native
+  def needleContainsPoint(x: Double, y: Double): Boolean
   
   /**
     * Removes a range from the linear gauge.
     *
     * @param value A JS object with properties set as follows: name: nameOfTheRangeToRemove, remove: true
     */
-  def removeRange(value: js.Object): Unit = js.native
+  def removeRange(value: js.Object): Unit
   
   /**
     * Re-polls the css styles for the widget. Use this method when the css styles have been modified.
     */
-  def styleUpdated(): Unit = js.native
+  def styleUpdated(): Unit
   
   /**
     * Updates the specified range of the linear gauge.
     *
     * @param value The range object to be updated.
     */
-  def updateRange(value: js.Object): Unit = js.native
+  def updateRange(value: js.Object): Unit
 }
 object IgLinearGaugeMethods {
   

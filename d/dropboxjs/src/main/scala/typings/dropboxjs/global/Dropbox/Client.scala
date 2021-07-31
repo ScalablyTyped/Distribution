@@ -3,13 +3,13 @@ package typings.dropboxjs.global.Dropbox
 import typings.dropboxjs.Dropbox.Credentials
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Dropbox.Client")
 @js.native
 class Client protected ()
-  extends typings.dropboxjs.Dropbox.Client {
+  extends StObject
+     with typings.dropboxjs.Dropbox.Client {
   def this(options: Credentials) = this()
 }
 object Client {

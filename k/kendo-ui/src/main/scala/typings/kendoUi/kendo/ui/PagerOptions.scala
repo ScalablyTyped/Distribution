@@ -3,41 +3,39 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PagerOptions extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var buttonCount: js.UndefOr[Double] = js.native
+  var buttonCount: js.UndefOr[Double] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ PagerChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ PagerChangeEvent, Unit]] = js.undefined
   
-  var dataSource: js.UndefOr[js.Any | DataSource] = js.native
+  var dataSource: js.UndefOr[js.Any | DataSource] = js.undefined
   
-  var info: js.UndefOr[Boolean] = js.native
+  var info: js.UndefOr[Boolean] = js.undefined
   
-  var input: js.UndefOr[Boolean] = js.native
+  var input: js.UndefOr[Boolean] = js.undefined
   
-  var linkTemplate: js.UndefOr[String] = js.native
+  var linkTemplate: js.UndefOr[String] = js.undefined
   
-  var messages: js.UndefOr[PagerMessages] = js.native
+  var messages: js.UndefOr[PagerMessages] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var numeric: js.UndefOr[Boolean] = js.native
+  var numeric: js.UndefOr[Boolean] = js.undefined
   
-  var pageSizes: js.UndefOr[Boolean | js.Any] = js.native
+  var pageSizes: js.UndefOr[Boolean | js.Any] = js.undefined
   
-  var previousNext: js.UndefOr[Boolean] = js.native
+  var previousNext: js.UndefOr[Boolean] = js.undefined
   
-  var refresh: js.UndefOr[Boolean] = js.native
+  var refresh: js.UndefOr[Boolean] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
-  var selectTemplate: js.UndefOr[String] = js.native
+  var selectTemplate: js.UndefOr[String] = js.undefined
 }
 object PagerOptions {
   

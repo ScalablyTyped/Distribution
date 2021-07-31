@@ -2,20 +2,18 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait seriesTypeBase extends StObject {
   
-  var fill: js.UndefOr[js.Any] = js.native
+  var fill: js.UndefOr[js.Any] = js.undefined
   
   //boolean or number
-  var fillColor: js.UndefOr[js.Any] = js.native
+  var fillColor: js.UndefOr[js.Any] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object seriesTypeBase {
   

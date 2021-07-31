@@ -2,19 +2,17 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `LogFile` is a log stored in the CAS.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2LogFile extends StObject {
   
   /**
     * The digest of the log contents.
     */
-  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.native
+  var digest: js.UndefOr[SchemaBuildBazelRemoteExecutionV2Digest] = js.undefined
   
   /**
     * This is a hint as to the purpose of the log, and is set to true if the
@@ -23,7 +21,7 @@ trait SchemaBuildBazelRemoteExecutionV2LogFile extends StObject {
     * the server logs to the terminal for a failed action, this allows it to
     * avoid displaying a binary file.
     */
-  var humanReadable: js.UndefOr[Boolean] = js.native
+  var humanReadable: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2LogFile {
   

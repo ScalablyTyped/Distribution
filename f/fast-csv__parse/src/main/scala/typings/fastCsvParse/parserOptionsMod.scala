@@ -6,7 +6,6 @@ import typings.node.BufferEncoding
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserOptionsMod {
@@ -63,42 +62,41 @@ object parserOptionsMod {
     val trim: Boolean = js.native
   }
   
-  @js.native
   trait ParserOptionsArgs extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var discardUnmappedColumns: js.UndefOr[Boolean] = js.native
+    var discardUnmappedColumns: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var escape: js.UndefOr[String] = js.native
+    var escape: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[Boolean | HeaderTransformFunction | HeaderArray] = js.native
+    var headers: js.UndefOr[Boolean | HeaderTransformFunction | HeaderArray] = js.undefined
     
-    var ignoreEmpty: js.UndefOr[Boolean] = js.native
+    var ignoreEmpty: js.UndefOr[Boolean] = js.undefined
     
-    var ltrim: js.UndefOr[Boolean] = js.native
+    var ltrim: js.UndefOr[Boolean] = js.undefined
     
-    var maxRows: js.UndefOr[Double] = js.native
+    var maxRows: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var quote: js.UndefOr[String | Null] = js.native
+    var quote: js.UndefOr[String | Null] = js.undefined
     
-    var renameHeaders: js.UndefOr[Boolean] = js.native
+    var renameHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var rtrim: js.UndefOr[Boolean] = js.native
+    var rtrim: js.UndefOr[Boolean] = js.undefined
     
-    var skipLines: js.UndefOr[Double] = js.native
+    var skipLines: js.UndefOr[Double] = js.undefined
     
-    var skipRows: js.UndefOr[Double] = js.native
+    var skipRows: js.UndefOr[Double] = js.undefined
     
-    var strictColumnHandling: js.UndefOr[Boolean] = js.native
+    var strictColumnHandling: js.UndefOr[Boolean] = js.undefined
     
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
   }
   object ParserOptionsArgs {
     

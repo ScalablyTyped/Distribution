@@ -2,25 +2,23 @@ package typings.expressHandlebars
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExphbsOptions extends StObject {
   
-  var compilerOptions: js.UndefOr[js.Any] = js.native
+  var compilerOptions: js.UndefOr[js.Any] = js.undefined
   
-  var defaultLayout: js.UndefOr[String] = js.native
+  var defaultLayout: js.UndefOr[String] = js.undefined
   
-  var extname: js.UndefOr[String] = js.native
+  var extname: js.UndefOr[String] = js.undefined
   
-  var handlebars: js.UndefOr[js.Any] = js.native
+  var handlebars: js.UndefOr[js.Any] = js.undefined
   
-  var helpers: js.UndefOr[js.Any] = js.native
+  var helpers: js.UndefOr[js.Any] = js.undefined
   
-  var layoutsDir: js.UndefOr[String] = js.native
+  var layoutsDir: js.UndefOr[String] = js.undefined
   
-  var partialsDir: js.UndefOr[js.Any] = js.native
+  var partialsDir: js.UndefOr[js.Any] = js.undefined
 }
 object ExphbsOptions {
   

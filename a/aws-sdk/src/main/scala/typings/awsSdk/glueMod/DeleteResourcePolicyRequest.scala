@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourcePolicyRequest extends StObject {
   
   /**
     * The hash value returned when this policy was set.
     */
-  var PolicyHashCondition: js.UndefOr[HashString] = js.native
+  var PolicyHashCondition: js.UndefOr[HashString] = js.undefined
   
   /**
     * The ARN of the AWS Glue resource for the resource policy to be deleted.
     */
-  var ResourceArn: js.UndefOr[GlueResourceArn] = js.native
+  var ResourceArn: js.UndefOr[GlueResourceArn] = js.undefined
 }
 object DeleteResourcePolicyRequest {
   

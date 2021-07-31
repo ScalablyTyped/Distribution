@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApplicationsResponse extends StObject {
   
   /**
     * A list of ApplicationSummary objects.
     */
-  var ApplicationSummaries: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSummaries = js.native
+  var ApplicationSummaries: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationSummaries
   
   /**
     * The pagination token for the next set of results, or null if there are no additional results. Pass this token into a subsequent command to retrieve the next set of items For more information about pagination, see Using the AWS Command Line Interface's Pagination Options.
     */
-  var NextToken: js.UndefOr[ApplicationName] = js.native
+  var NextToken: js.UndefOr[ApplicationName] = js.undefined
 }
 object ListApplicationsResponse {
   

@@ -1,14 +1,16 @@
 package typings.srp
 
-import typings.bignum.mod.^
 import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("srp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("srp", "Client")
   @js.native
@@ -40,32 +42,28 @@ object mod {
     def setA(A: Buffer): Unit = js.native
   }
   
-  @JSImport("srp", "computeVerifier")
-  @js.native
-  def computeVerifier(params: Params_, salt: Buffer, I: Buffer, P: Buffer): Buffer = js.native
+  @scala.inline
+  def computeVerifier(params: Params_, salt: Buffer, I: Buffer, P: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("computeVerifier")(params.asInstanceOf[js.Any], salt.asInstanceOf[js.Any], I.asInstanceOf[js.Any], P.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("srp", "genKey")
-  @js.native
-  def genKey(bytes: Double, callback: js.Function2[/* error */ Error, /* key */ Buffer, Unit]): Unit = js.native
-  @JSImport("srp", "genKey")
-  @js.native
-  def genKey(callback: js.Function2[/* error */ Error, /* key */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def genKey(bytes: Double, callback: js.Function2[/* error */ Error, /* key */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("genKey")(bytes.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def genKey(callback: js.Function2[/* error */ Error, /* key */ Buffer, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("genKey")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Params_ extends StObject {
     
-    var N: ^ = js.native
+    var N: typings.bignum.mod.^
     
-    var N_length_bits: Double = js.native
+    var N_length_bits: Double
     
-    var g: ^ = js.native
+    var g: typings.bignum.mod.^
     
-    var hash: String = js.native
+    var hash: String
   }
   object Params_ {
     
     @scala.inline
-    def apply(N: ^, N_length_bits: Double, g: ^, hash: String): Params_ = {
+    def apply(N: typings.bignum.mod.^, N_length_bits: Double, g: typings.bignum.mod.^, hash: String): Params_ = {
       val __obj = js.Dynamic.literal(N = N.asInstanceOf[js.Any], N_length_bits = N_length_bits.asInstanceOf[js.Any], g = g.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any])
       __obj.asInstanceOf[Params_]
     }
@@ -74,13 +72,13 @@ object mod {
     implicit class Params_MutableBuilder[Self <: Params_] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setG(value: ^): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
+      def setG(value: typings.bignum.mod.^): Self = StObject.set(x, "g", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHash(value: String): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setN(value: ^): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
+      def setN(value: typings.bignum.mod.^): Self = StObject.set(x, "N", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setN_length_bits(value: Double): Self = StObject.set(x, "N_length_bits", value.asInstanceOf[js.Any])

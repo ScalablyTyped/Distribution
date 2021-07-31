@@ -11,33 +11,31 @@ import typings.vegaTypings.signalMod.Signal
 import typings.vegaTypings.titleMod.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scopeMod {
   
-  @js.native
   trait Scope extends StObject {
     
-    var axes: js.UndefOr[js.Array[Axis]] = js.native
+    var axes: js.UndefOr[js.Array[Axis]] = js.undefined
     
-    var data: js.UndefOr[js.Array[Data]] = js.native
+    var data: js.UndefOr[js.Array[Data]] = js.undefined
     
-    var layout: js.UndefOr[Layout] = js.native
+    var layout: js.UndefOr[Layout] = js.undefined
     
-    var legends: js.UndefOr[js.Array[Legend]] = js.native
+    var legends: js.UndefOr[js.Array[Legend]] = js.undefined
     
-    var marks: js.UndefOr[js.Array[Mark]] = js.native
+    var marks: js.UndefOr[js.Array[Mark]] = js.undefined
     
-    var projections: js.UndefOr[js.Array[Projection]] = js.native
+    var projections: js.UndefOr[js.Array[Projection]] = js.undefined
     
-    var scales: js.UndefOr[js.Array[Scale]] = js.native
+    var scales: js.UndefOr[js.Array[Scale]] = js.undefined
     
-    var signals: js.UndefOr[js.Array[Signal]] = js.native
+    var signals: js.UndefOr[js.Array[Signal]] = js.undefined
     
-    var title: js.UndefOr[String | Title] = js.native
+    var title: js.UndefOr[String | Title] = js.undefined
     
-    var usermeta: js.UndefOr[js.Object] = js.native
+    var usermeta: js.UndefOr[js.Object] = js.undefined
   }
   object Scope {
     

@@ -5,10 +5,13 @@ import typings.reactMovable.listMod.default
 import typings.reactMovable.typesMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-movable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-movable", "List")
   @js.native
@@ -50,11 +53,9 @@ object mod {
     }
   }
   
-  @JSImport("react-movable", "arrayMove")
-  @js.native
-  def arrayMove[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = js.native
+  @scala.inline
+  def arrayMove[T](array: js.Array[T], from: Double, to: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayMove")(array.asInstanceOf[js.Any], from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("react-movable", "arrayRemove")
-  @js.native
-  def arrayRemove[T](array: js.Array[T], index: Double): js.Array[T] = js.native
+  @scala.inline
+  def arrayRemove[T](array: js.Array[T], index: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(array.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
 }

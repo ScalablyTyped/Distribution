@@ -2,7 +2,6 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,36 +10,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * handled as if it were to the destination path specified in the
   * configuration.
   */
-@js.native
 trait SchemaRewrite extends StObject {
   
   /**
     * The request will be forwarded to Firebase Dynamic Links.
     */
-  var dynamicLinks: js.UndefOr[Boolean] = js.native
+  var dynamicLinks: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The function to proxy requests to. Must match the exported function name
     * exactly.
     */
-  var function: js.UndefOr[String] = js.native
+  var function: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The user-supplied [glob
     * pattern](/docs/hosting/full-config#glob_pattern_matching) to match
     * against the request URL path.
     */
-  var glob: js.UndefOr[String] = js.native
+  var glob: js.UndefOr[String] = js.undefined
   
   /**
     * The URL path to rewrite the request to.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The request will be forwarded to Cloud Run.
     */
-  var run: js.UndefOr[SchemaCloudRunRewrite] = js.native
+  var run: js.UndefOr[SchemaCloudRunRewrite] = js.undefined
 }
 object SchemaRewrite {
   

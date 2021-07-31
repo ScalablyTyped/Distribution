@@ -2,39 +2,37 @@ package typings.moment.momentMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentRelativeTime extends StObject {
   
-  var M: js.Any = js.native
+  var M: js.Any
   
-  var MM: js.Any = js.native
+  var MM: js.Any
   
-  var d: js.Any = js.native
+  var d: js.Any
   
-  var dd: js.Any = js.native
+  var dd: js.Any
   
-  var future: js.Any = js.native
+  var future: js.Any
   
-  var h: js.Any = js.native
+  var h: js.Any
   
-  var hh: js.Any = js.native
+  var hh: js.Any
   
-  var m: js.Any = js.native
+  var m: js.Any
   
-  var mm: js.Any = js.native
+  var mm: js.Any
   
-  var past: js.Any = js.native
+  var past: js.Any
   
-  var s: js.Any = js.native
+  var s: js.Any
   
-  var ss: js.Any = js.native
+  var ss: js.Any
   
-  var y: js.Any = js.native
+  var y: js.Any
   
-  var yy: js.Any = js.native
+  var yy: js.Any
 }
 object MomentRelativeTime {
   

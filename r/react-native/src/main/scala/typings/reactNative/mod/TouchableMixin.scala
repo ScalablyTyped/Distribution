@@ -2,39 +2,37 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see https://github.com/facebook/react-native/blob/0.34-stable\Libraries\Components\Touchable\Touchable.js
   */
-@js.native
 trait TouchableMixin extends StObject {
   
   /**
     * Returns the number of millis to wait before triggering a highlight.
     */
-  def touchableGetHighlightDelayMS(): Double = js.native
+  def touchableGetHighlightDelayMS(): Double
   
-  def touchableGetHitSlop(): Insets = js.native
+  def touchableGetHitSlop(): Insets
   
   // These methods are undocumented but still being used by TouchableMixin internals
-  def touchableGetLongPressDelayMS(): Double = js.native
+  def touchableGetLongPressDelayMS(): Double
   
-  def touchableGetPressOutDelayMS(): Double = js.native
+  def touchableGetPressOutDelayMS(): Double
   
   /**
     * Returns the amount to extend the `HitRect` into the `PressRect`. Positive
     * numbers mean the size expands outwards.
     */
-  def touchableGetPressRectOffset(): Insets = js.native
+  def touchableGetPressRectOffset(): Insets
   
   /**
     * Invoked when the item should be highlighted. Mixers should implement this
     * to visually distinguish the `VisualRect` so that the user knows that
     * releasing a touch will result in a "selection" (analog to click).
     */
-  def touchableHandleActivePressIn(e: GestureResponderEvent): Unit = js.native
+  def touchableHandleActivePressIn(e: GestureResponderEvent): Unit
   
   /**
     * Invoked when the item is "active" (in that it is still eligible to become
@@ -45,7 +43,7 @@ trait TouchableMixin extends StObject {
     * event will not fire on an `touchEnd/mouseUp` event, only move events while
     * the user is depressing the mouse/touch.
     */
-  def touchableHandleActivePressOut(e: GestureResponderEvent): Unit = js.native
+  def touchableHandleActivePressOut(e: GestureResponderEvent): Unit
   
   /**
     * Invoked when the item is long pressed - meaning the interaction ended by
@@ -57,14 +55,14 @@ trait TouchableMixin extends StObject {
     * to return false. As a result, `touchableHandlePress` will be called when
     * lifting up, even if `touchableHandleLongPress` has also been called.
     */
-  def touchableHandleLongPress(e: GestureResponderEvent): Unit = js.native
+  def touchableHandleLongPress(e: GestureResponderEvent): Unit
   
   /**
     * Invoked when the item is "selected" - meaning the interaction ended by
     * letting up while the item was either in the state
     * `RESPONDER_ACTIVE_PRESS_IN` or `RESPONDER_INACTIVE_PRESS_IN`.
     */
-  def touchableHandlePress(e: GestureResponderEvent): Unit = js.native
+  def touchableHandlePress(e: GestureResponderEvent): Unit
 }
 object TouchableMixin {
   

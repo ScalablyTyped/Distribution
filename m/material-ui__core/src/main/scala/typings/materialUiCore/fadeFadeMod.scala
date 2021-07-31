@@ -6,7 +6,6 @@ import typings.materialUiCore.transitionMod.TransitionProps
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fadeFadeMod extends Shortcut {
@@ -15,10 +14,11 @@ object fadeFadeMod extends Shortcut {
   @js.native
   val default: ComponentType[FadeProps] = js.native
   
-  @js.native
-  trait FadeProps extends TransitionProps {
+  trait FadeProps
+    extends StObject
+       with TransitionProps {
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object FadeProps {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoUpgradeOptions extends StObject {
   
   /** [Output only] This field is set when upgrades are about to commence with the approximate start time for the upgrades, in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
-  var autoUpgradeStartTime: js.UndefOr[String] = js.native
+  var autoUpgradeStartTime: js.UndefOr[String] = js.undefined
   
   /** [Output only] This field is set when upgrades are about to commence with the description of the upgrade. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
 }
 object AutoUpgradeOptions {
   

@@ -3,31 +3,31 @@ package typings.sharepoint.SP
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UpgradeInfo extends ClientValueObject {
+trait UpgradeInfo
+  extends StObject
+     with ClientValueObject {
   
-  def get_errorFile(): String = js.native
+  def get_errorFile(): String
   
-  def get_errors(): Double = js.native
+  def get_errors(): Double
   
-  def get_lastUpdated(): Date = js.native
+  def get_lastUpdated(): Date
   
-  def get_logFile(): String = js.native
+  def get_logFile(): String
   
-  def get_requestDate(): Date = js.native
+  def get_requestDate(): Date
   
-  def get_retryCount(): Double = js.native
+  def get_retryCount(): Double
   
-  def get_startTime(): Date = js.native
+  def get_startTime(): Date
   
-  def get_status(): UpgradeStatus = js.native
+  def get_status(): UpgradeStatus
   
-  def get_upgradeType(): UpgradeType = js.native
+  def get_upgradeType(): UpgradeType
   
-  def get_warnings(): Double = js.native
+  def get_warnings(): Double
 }
 object UpgradeInfo {
   

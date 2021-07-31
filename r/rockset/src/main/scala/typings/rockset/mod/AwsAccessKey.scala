@@ -2,17 +2,15 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsAccessKey extends StObject {
   
   // AWS access key ID
-  var aws_access_key_id: String = js.native
+  var aws_access_key_id: String
   
   // AWS secret access key
-  var aws_secret_access_key: String = js.native
+  var aws_secret_access_key: String
 }
 object AwsAccessKey {
   

@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.failed
 import typings.arcgisJsApi.arcgisJsApiStrings.loading
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WebMap
-  extends Map
+  extends StObject
+     with Map
      with corePromise {
   
   /**
@@ -53,7 +53,7 @@ trait WebMap
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#load)
     */
-  def load(): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
   
   /**
     * Loads all the externally loadable resources associated with the webmap.
@@ -134,8 +134,8 @@ trait WebMap
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#updateFrom)
     */
-  def updateFrom(view: MapView): js.Promise[_] = js.native
-  def updateFrom(view: MapView, options: WebMapUpdateFromOptions): js.Promise[_] = js.native
+  def updateFrom(view: MapView): js.Promise[js.Any] = js.native
+  def updateFrom(view: MapView, options: WebMapUpdateFromOptions): js.Promise[js.Any] = js.native
   
   /**
     * The widgets object contains widgets that are exposed to the user.

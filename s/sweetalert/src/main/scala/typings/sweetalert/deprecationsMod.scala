@@ -3,29 +3,30 @@ package typings.sweetalert
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deprecationsMod {
+  
+  @JSImport("sweetalert/typings/modules/options/deprecations", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sweetalert/typings/modules/options/deprecations", "DEPRECATED_OPTS")
   @js.native
   val DEPRECATED_OPTS: OptionReplacementsList = js.native
   
-  @JSImport("sweetalert/typings/modules/options/deprecations", "logDeprecation")
-  @js.native
-  def logDeprecation(name: String): Unit = js.native
+  @scala.inline
+  def logDeprecation(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logDeprecation")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait OptionReplacement extends StObject {
     
-    var link: js.UndefOr[String] = js.native
+    var link: js.UndefOr[String] = js.undefined
     
-    var onlyRename: js.UndefOr[Boolean] = js.native
+    var onlyRename: js.UndefOr[Boolean] = js.undefined
     
-    var replacement: js.UndefOr[String] = js.native
+    var replacement: js.UndefOr[String] = js.undefined
     
-    var subOption: js.UndefOr[String] = js.native
+    var subOption: js.UndefOr[String] = js.undefined
   }
   object OptionReplacement {
     

@@ -3,15 +3,15 @@ package typings.activexLibreoffice.com_.sun.star.util
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables an object to search in its content. */
-@js.native
-trait XTextSearch2 extends XTextSearch {
+trait XTextSearch2
+  extends StObject
+     with XTextSearch {
   
   /** set the options for the forward or backward search. */
-  def setOptions2(options: SearchOptions2): Unit = js.native
+  def setOptions2(options: SearchOptions2): Unit
 }
 object XTextSearch2 {
   

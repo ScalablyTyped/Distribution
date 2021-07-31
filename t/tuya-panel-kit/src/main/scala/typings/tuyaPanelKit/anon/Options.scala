@@ -2,14 +2,12 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
   // tslint:disable-next-line no-redundant-undefined
-  var options: js.UndefOr[js.Object] = js.native
+  var options: js.UndefOr[js.Object] = js.undefined
 }
 object Options {
   

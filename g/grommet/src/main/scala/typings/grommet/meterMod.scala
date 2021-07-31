@@ -19,7 +19,6 @@ import typings.react.mod.ComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object meterMod {
@@ -36,30 +35,29 @@ object meterMod {
   @js.native
   val Meter: ComponentClass[MeterProps, ComponentState] = js.native
   
-  @js.native
   trait MeterProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var background: js.UndefOr[String | `1`] = js.native
+    var background: js.UndefOr[String | `1`] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[xsmall | small | medium | large | xlarge | full | String] = js.native
+    var size: js.UndefOr[xsmall | small | medium | large | xlarge | full | String] = js.undefined
     
-    var thickness: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.native
+    var thickness: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
     
-    var `type`: js.UndefOr[bar | circle] = js.native
+    var `type`: js.UndefOr[bar | circle] = js.undefined
     
-    var values: js.UndefOr[js.Array[Highlight]] = js.native
+    var values: js.UndefOr[js.Array[Highlight]] = js.undefined
   }
   object MeterProps {
     

@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCIceTransportEventMap extends StObject {
   
-  var gatheringstatechange: Event = js.native
+  var gatheringstatechange: Event
   
-  var selectedcandidatepairchange: Event = js.native
+  var selectedcandidatepairchange: Event
   
-  var statechange: Event = js.native
+  var statechange: Event
 }
 object RTCIceTransportEventMap {
   

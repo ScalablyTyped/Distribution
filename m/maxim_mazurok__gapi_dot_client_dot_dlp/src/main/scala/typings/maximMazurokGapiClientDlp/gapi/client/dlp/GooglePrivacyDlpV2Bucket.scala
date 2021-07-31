@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Bucket extends StObject {
   
   /** Upper bound of the range, exclusive; type must match min. */
-  var max: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var max: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
   
   /** Lower bound of the range, inclusive. Type should be the same as max if used. */
-  var min: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var min: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
   
   /** Required. Replacement value for this bucket. */
-  var replacementValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.native
+  var replacementValue: js.UndefOr[GooglePrivacyDlpV2Value] = js.undefined
 }
 object GooglePrivacyDlpV2Bucket {
   

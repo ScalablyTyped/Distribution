@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValueSuggestion extends StObject {
   
-  def Clone(): IPropertyValueSuggestion = js.native
+  def Clone(): IPropertyValueSuggestion
   
-  val IsFact: Boolean = js.native
+  val IsFact: Boolean
   
-  val Quality: Double = js.native
+  val Quality: Double
   
-  val TypedValue: ITypedValue = js.native
+  val TypedValue: ITypedValue
 }
 object IPropertyValueSuggestion {
   

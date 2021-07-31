@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrowserView extends StObject {
   
   /**
@@ -13,20 +11,20 @@ trait BrowserView extends StObject {
     *
     * @experimental
     */
-  def getBounds(): Rectangle = js.native
+  def getBounds(): Rectangle
   
-  def setAutoResize(options: AutoResizeOptions): Unit = js.native
+  def setAutoResize(options: AutoResizeOptions): Unit
   
-  def setBackgroundColor(color: String): Unit = js.native
+  def setBackgroundColor(color: String): Unit
   
   /**
     * Resizes and moves the view to the supplied bounds relative to the window.
     *
     * @experimental
     */
-  def setBounds(bounds: Rectangle): Unit = js.native
+  def setBounds(bounds: Rectangle): Unit
   
-  var webContents: WebContents_ = js.native
+  var webContents: WebContents_
 }
 object BrowserView {
   

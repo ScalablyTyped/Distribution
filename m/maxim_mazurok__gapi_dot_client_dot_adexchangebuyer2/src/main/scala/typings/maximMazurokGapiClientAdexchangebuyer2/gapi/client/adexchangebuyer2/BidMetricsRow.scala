@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BidMetricsRow extends StObject {
   
   /** The number of bids that Ad Exchange received from the buyer. */
-  var bids: js.UndefOr[MetricValue] = js.native
+  var bids: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of bids that were permitted to compete in the auction. */
-  var bidsInAuction: js.UndefOr[MetricValue] = js.native
+  var bidsInAuction: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of bids for which the buyer was billed. */
-  var billedImpressions: js.UndefOr[MetricValue] = js.native
+  var billedImpressions: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of bids that won the auction. */
-  var impressionsWon: js.UndefOr[MetricValue] = js.native
+  var impressionsWon: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of bids for which the corresponding impression was measurable for viewability (as defined by Active View). */
-  var measurableImpressions: js.UndefOr[MetricValue] = js.native
+  var measurableImpressions: js.UndefOr[MetricValue] = js.undefined
   
   /** The number of bids that won the auction and also won the mediation waterfall (if any). */
-  var reachedQueries: js.UndefOr[MetricValue] = js.native
+  var reachedQueries: js.UndefOr[MetricValue] = js.undefined
   
   /** The values of all dimensions associated with metric values in this row. */
-  var rowDimensions: js.UndefOr[RowDimensions] = js.native
+  var rowDimensions: js.UndefOr[RowDimensions] = js.undefined
   
   /** The number of bids for which the corresponding impression was viewable (as defined by Active View). */
-  var viewableImpressions: js.UndefOr[MetricValue] = js.native
+  var viewableImpressions: js.UndefOr[MetricValue] = js.undefined
 }
 object BidMetricsRow {
   

@@ -4,26 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(accountID: String): Visitor = ^.asInstanceOf[js.Dynamic].apply(accountID.asInstanceOf[js.Any]).asInstanceOf[Visitor]
+  @scala.inline
+  def apply(accountID: String, uuid: String): Visitor = (^.asInstanceOf[js.Dynamic].apply(accountID.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  @scala.inline
+  def apply(accountID: String, uuid: String, options: VisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].apply(accountID.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  @scala.inline
+  def apply(accountID: String, uuid: VisitorOptions): Visitor = (^.asInstanceOf[js.Dynamic].apply(accountID.asInstanceOf[js.Any], uuid.asInstanceOf[js.Any])).asInstanceOf[Visitor]
+  @scala.inline
+  def apply(accountID: VisitorOptions): Visitor = ^.asInstanceOf[js.Dynamic].apply(accountID.asInstanceOf[js.Any]).asInstanceOf[Visitor]
+  
   @JSImport("universal-analytics", JSImport.Namespace)
   @js.native
-  def apply(accountID: String): Visitor = js.native
-  @JSImport("universal-analytics", JSImport.Namespace)
-  @js.native
-  def apply(accountID: String, uuid: String): Visitor = js.native
-  @JSImport("universal-analytics", JSImport.Namespace)
-  @js.native
-  def apply(accountID: String, uuid: String, options: VisitorOptions): Visitor = js.native
-  @JSImport("universal-analytics", JSImport.Namespace)
-  @js.native
-  def apply(accountID: String, uuid: VisitorOptions): Visitor = js.native
-  @JSImport("universal-analytics", JSImport.Namespace)
-  @js.native
-  def apply(accountID: VisitorOptions): Visitor = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("universal-analytics", "Visitor")
   @js.native
@@ -37,27 +35,17 @@ object mod {
     def this(
       accountID: String,
       uuid: String,
-      context: js.UndefOr[scala.Nothing],
-      persistentParams: StringDictionary[js.Any]
-    ) = this()
-    def this(
-      accountID: String,
-      uuid: String,
       context: StringDictionary[js.Any],
       persistentParams: StringDictionary[js.Any]
     ) = this()
-    def this(
-      accountID: String,
-      uuid: VisitorOptions,
-      context: js.UndefOr[scala.Nothing],
-      persistentParams: StringDictionary[js.Any]
-    ) = this()
+    def this(accountID: String, uuid: String, context: Unit, persistentParams: StringDictionary[js.Any]) = this()
     def this(
       accountID: String,
       uuid: VisitorOptions,
       context: StringDictionary[js.Any],
       persistentParams: StringDictionary[js.Any]
     ) = this()
+    def this(accountID: String, uuid: VisitorOptions, context: Unit, persistentParams: StringDictionary[js.Any]) = this()
     
     def debug(): Visitor = js.native
     def debug(debug: Boolean): Visitor = js.native
@@ -868,37 +856,43 @@ object mod {
     def transaction(id: TransactionParams, callback: Callback): Visitor = js.native
   }
   
-  @JSImport("universal-analytics", "createFromSession")
-  @js.native
-  def createFromSession(): Visitor = js.native
-  @JSImport("universal-analytics", "createFromSession")
-  @js.native
-  def createFromSession(session: Session): Visitor = js.native
+  @scala.inline
+  def createFromSession(): Visitor = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSession")().asInstanceOf[Visitor]
+  @scala.inline
+  def createFromSession(session: Session): Visitor = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromSession")(session.asInstanceOf[js.Any]).asInstanceOf[Visitor]
   
-  @JSImport("universal-analytics", "middleware")
-  @js.native
+  @scala.inline
   def middleware(tid: String): js.Function3[
     /* req */ js.Any, 
     /* res */ js.Any, 
     /* next */ js.Function1[/* err */ js.Any, Unit], 
     Unit
-  ] = js.native
-  @JSImport("universal-analytics", "middleware")
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(tid.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ js.Any, 
+    /* res */ js.Any, 
+    /* next */ js.Function1[/* err */ js.Any, Unit], 
+    Unit
+  ]]
+  @scala.inline
   def middleware(tid: String, options: MiddlewareOptions): js.Function3[
     /* req */ js.Any, 
     /* res */ js.Any, 
     /* next */ js.Function1[/* err */ js.Any, Unit], 
     Unit
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("middleware")(tid.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function3[
+    /* req */ js.Any, 
+    /* res */ js.Any, 
+    /* next */ js.Function1[/* err */ js.Any, Unit], 
+    Unit
+  ]]
   
   type Callback = js.Function2[/* error */ Error | Null, /* count */ Double, Unit]
   
-  @js.native
   trait EventParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var dp: js.UndefOr[String] = js.native
+    var dp: js.UndefOr[String] = js.undefined
     
     /**
       * Event Action
@@ -911,7 +905,7 @@ object mod {
       *
       * Example value: `Action`
       */
-    var ea: js.UndefOr[String] = js.native
+    var ea: js.UndefOr[String] = js.undefined
     
     /**
       * Event Category
@@ -924,7 +918,7 @@ object mod {
       *
       * Example value: `Category`
       */
-    var ec: js.UndefOr[String] = js.native
+    var ec: js.UndefOr[String] = js.undefined
     
     /**
       * Event Label
@@ -935,7 +929,7 @@ object mod {
       *
       * Example value: `Label`
       */
-    var el: js.UndefOr[String] = js.native
+    var el: js.UndefOr[String] = js.undefined
     
     /**
       * Event Value
@@ -944,9 +938,9 @@ object mod {
       *
       * Example value: `55`
       */
-    var ev: js.UndefOr[String | Double] = js.native
+    var ev: js.UndefOr[String | Double] = js.undefined
     
-    var p: js.UndefOr[String] = js.native
+    var p: js.UndefOr[String] = js.undefined
   }
   object EventParams {
     
@@ -997,9 +991,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ExceptionParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Exception Description
@@ -1010,14 +1004,14 @@ object mod {
       *
       * Example value: `DatabaseError`
       */
-    var exd: js.UndefOr[String] = js.native
+    var exd: js.UndefOr[String] = js.undefined
     
     /**
       * Is Exception Fatal?
       *
       * Specifies whether the exception was fatal.
       */
-    var exf: js.UndefOr[Boolean] = js.native
+    var exf: js.UndefOr[Boolean] = js.undefined
   }
   object ExceptionParams {
     
@@ -1044,9 +1038,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ItemParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Item Code
@@ -1057,7 +1051,7 @@ object mod {
       *
       * Example value: `SKU47`
       */
-    var ic: js.UndefOr[String] = js.native
+    var ic: js.UndefOr[String] = js.undefined
     
     /**
       * Item Name
@@ -1070,7 +1064,7 @@ object mod {
       *
       * Example value: `Shoe`
       */
-    var in: js.UndefOr[String] = js.native
+    var in: js.UndefOr[String] = js.undefined
     
     /**
       * Item Price
@@ -1079,7 +1073,7 @@ object mod {
       *
       * Example value: `3.50`
       */
-    var ip: js.UndefOr[String | Double] = js.native
+    var ip: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Item Quantity
@@ -1088,7 +1082,7 @@ object mod {
       *
       * Example value: `4`
       */
-    var iq: js.UndefOr[String | Double] = js.native
+    var iq: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Item Category
@@ -1099,9 +1093,9 @@ object mod {
       *
       * Example value: `Blue`
       */
-    var iv: js.UndefOr[String] = js.native
+    var iv: js.UndefOr[String] = js.undefined
     
-    var p: js.UndefOr[String] = js.native
+    var p: js.UndefOr[String] = js.undefined
     
     /**
       * Transaction ID
@@ -1115,7 +1109,7 @@ object mod {
       *
       * Example value: `OD564`
       */
-    var ti: js.UndefOr[String] = js.native
+    var ti: js.UndefOr[String] = js.undefined
   }
   object ItemParams {
     
@@ -1172,10 +1166,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait MiddlewareOptions extends VisitorOptions {
+  trait MiddlewareOptions
+    extends StObject
+       with VisitorOptions {
     
-    var cookieName: js.UndefOr[String] = js.native
+    var cookieName: js.UndefOr[String] = js.undefined
   }
   object MiddlewareOptions {
     
@@ -1196,9 +1191,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PageviewParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Document Host Name
@@ -1207,7 +1202,7 @@ object mod {
       *
       * Max length: 100 Bytes
       */
-    var dh: js.UndefOr[String] = js.native
+    var dh: js.UndefOr[String] = js.undefined
     
     /**
       * Document location URL
@@ -1216,7 +1211,7 @@ object mod {
       *
       * Max length: 2048 Bytes
       */
-    var dl: js.UndefOr[String] = js.native
+    var dl: js.UndefOr[String] = js.undefined
     
     /**
       * Document Path
@@ -1225,7 +1220,7 @@ object mod {
       *
       * Max length: 2048 Bytes
       */
-    var dp: js.UndefOr[String] = js.native
+    var dp: js.UndefOr[String] = js.undefined
     
     /**
       * Document Title
@@ -1234,7 +1229,7 @@ object mod {
       *
       * Max length: 1500 Bytes
       */
-    var dt: js.UndefOr[String] = js.native
+    var dt: js.UndefOr[String] = js.undefined
   }
   object PageviewParams {
     
@@ -1273,9 +1268,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ScreenviewParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * Application ID
@@ -1286,7 +1281,7 @@ object mod {
       *
       * Example value: `com.company.app`
       */
-    var aid: js.UndefOr[String] = js.native
+    var aid: js.UndefOr[String] = js.undefined
     
     /**
       * Application Installer ID
@@ -1297,7 +1292,7 @@ object mod {
       *
       * Example value: `com.platform.vending`
       */
-    var aiid: js.UndefOr[String] = js.native
+    var aiid: js.UndefOr[String] = js.undefined
     
     /**
       * Application Name
@@ -1309,7 +1304,7 @@ object mod {
       *
       * Example value: `My App`
       */
-    var an: js.UndefOr[String] = js.native
+    var an: js.UndefOr[String] = js.undefined
     
     /**
       * Application Version
@@ -1320,7 +1315,7 @@ object mod {
       *
       * Example value: `1.2`
       */
-    var av: js.UndefOr[String] = js.native
+    var av: js.UndefOr[String] = js.undefined
     
     /**
       * Screen Name
@@ -1332,7 +1327,7 @@ object mod {
       *
       * Example value: `High Scores`
       */
-    var cd: js.UndefOr[String] = js.native
+    var cd: js.UndefOr[String] = js.undefined
   }
   object ScreenviewParams {
     
@@ -1377,13 +1372,12 @@ object mod {
     }
   }
   
-  @js.native
   trait Session extends StObject {
     
     /**
       * Client ID
       */
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
   }
   object Session {
     
@@ -1404,9 +1398,9 @@ object mod {
     }
   }
   
-  @js.native
   trait TimingParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     /**
       * User timing category
@@ -1419,7 +1413,7 @@ object mod {
       *
       * Example value: `category`
       */
-    var utc: js.UndefOr[String] = js.native
+    var utc: js.UndefOr[String] = js.undefined
     
     /**
       * User timing label
@@ -1430,7 +1424,7 @@ object mod {
       *
       * Example value: `label`
       */
-    var utl: js.UndefOr[String] = js.native
+    var utl: js.UndefOr[String] = js.undefined
     
     /**
       * User timing time
@@ -1441,7 +1435,7 @@ object mod {
       *
       * Example value: `123`
       */
-    var utt: js.UndefOr[String | Double] = js.native
+    var utt: js.UndefOr[String | Double] = js.undefined
     
     /**
       * User timing variable name
@@ -1454,7 +1448,7 @@ object mod {
       *
       * Example value: `lookup`
       */
-    var utv: js.UndefOr[String] = js.native
+    var utv: js.UndefOr[String] = js.undefined
   }
   object TimingParams {
     
@@ -1493,11 +1487,11 @@ object mod {
     }
   }
   
-  @js.native
   trait TransactionParams
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var p: js.UndefOr[String] = js.native
+    var p: js.UndefOr[String] = js.undefined
     
     /**
       * Transaction Affiliation
@@ -1508,7 +1502,7 @@ object mod {
       *
       * Example value: `Member`
       */
-    var ta: js.UndefOr[String] = js.native
+    var ta: js.UndefOr[String] = js.undefined
     
     /**
       * Transaction ID
@@ -1523,7 +1517,7 @@ object mod {
       *
       * Example value: `OD564`
       */
-    var ti: js.UndefOr[String] = js.native
+    var ti: js.UndefOr[String] = js.undefined
     
     /**
       * Transaction Revenue
@@ -1533,7 +1527,7 @@ object mod {
       *
       * Example value: `15.47`
       */
-    var tr: js.UndefOr[String | Double] = js.native
+    var tr: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Transaction Shipping
@@ -1542,7 +1536,7 @@ object mod {
       *
       * Example value: `3.50`
       */
-    var ts: js.UndefOr[String | Double] = js.native
+    var ts: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Transaction Tax
@@ -1551,7 +1545,7 @@ object mod {
       *
       * Example value: `11.20`
       */
-    var tt: js.UndefOr[String | Double] = js.native
+    var tt: js.UndefOr[String | Double] = js.undefined
   }
   object TransactionParams {
     
@@ -1602,41 +1596,40 @@ object mod {
     }
   }
   
-  @js.native
   trait VisitorOptions extends StObject {
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Client ID
       */
-    var cid: js.UndefOr[String] = js.native
+    var cid: js.UndefOr[String] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var enableBatching: js.UndefOr[Boolean] = js.native
+    var enableBatching: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
-    var https: js.UndefOr[Boolean] = js.native
+    var https: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var requestOptions: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var requestOptions: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var strictCidFormat: js.UndefOr[Boolean] = js.native
+    var strictCidFormat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Tracking ID
       */
-    var tid: js.UndefOr[String] = js.native
+    var tid: js.UndefOr[String] = js.undefined
     
     /**
       * User ID
       */
-    var uid: js.UndefOr[String] = js.native
+    var uid: js.UndefOr[String] = js.undefined
   }
   object VisitorOptions {
     

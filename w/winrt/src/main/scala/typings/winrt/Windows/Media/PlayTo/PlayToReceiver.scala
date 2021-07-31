@@ -4,11 +4,11 @@ import typings.winrt.Windows.Foundation.Collections.IPropertySet
 import typings.winrt.Windows.Foundation.IAsyncAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlayToReceiver extends IPlayToReceiver
+trait PlayToReceiver
+  extends StObject
+     with IPlayToReceiver
 object PlayToReceiver {
   
   @scala.inline

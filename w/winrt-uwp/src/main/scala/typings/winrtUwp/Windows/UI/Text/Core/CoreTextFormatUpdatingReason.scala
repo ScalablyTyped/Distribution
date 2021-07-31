@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.UI.Text.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object CoreTextFormatUpdatingReason extends StObject {
   
   /** The text is a converted composition string. */
   @js.native
-  sealed trait compositionConverted extends CoreTextFormatUpdatingReason
+  sealed trait compositionConverted
+    extends StObject
+       with CoreTextFormatUpdatingReason
   
   /** The user made a selection in the composition string, but the text has not yet been converted. */
   @js.native
-  sealed trait compositionTargetConverted extends CoreTextFormatUpdatingReason
+  sealed trait compositionTargetConverted
+    extends StObject
+       with CoreTextFormatUpdatingReason
   
   /** The user has made a selection in the composition string and the text has been converted. */
   @js.native
-  sealed trait compositionTargetUnconverted extends CoreTextFormatUpdatingReason
+  sealed trait compositionTargetUnconverted
+    extends StObject
+       with CoreTextFormatUpdatingReason
   
   /** The text is an unconverted composition string. */
   @js.native
-  sealed trait compositionUnconverted extends CoreTextFormatUpdatingReason
+  sealed trait compositionUnconverted
+    extends StObject
+       with CoreTextFormatUpdatingReason
   
   /** The reason for the format updating is unknown. */
   @js.native
-  sealed trait none extends CoreTextFormatUpdatingReason
+  sealed trait none
+    extends StObject
+       with CoreTextFormatUpdatingReason
 }

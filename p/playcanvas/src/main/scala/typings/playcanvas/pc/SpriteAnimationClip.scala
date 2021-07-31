@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [data.spriteAsset] - The id of the sprite asset that this clip will play.
   */
 @js.native
-trait SpriteAnimationClip extends EventHandler {
+trait SpriteAnimationClip
+  extends StObject
+     with EventHandler {
   
   /**
     * The total duration of the animation in seconds.

@@ -2,17 +2,15 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
-  var bindings: js.Array[Binding] = js.native
+  var bindings: js.Array[Binding]
   
-  var etag: String = js.native
+  var etag: String
   
-  var version: Double = js.native
+  var version: Double
 }
 object Policy {
   

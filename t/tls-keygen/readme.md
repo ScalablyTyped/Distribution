@@ -10,9 +10,9 @@ Generate a self-signed TLS certificate and add it to the trusted certificate sto
 | ------------------ | :-------------: |
 | Full name          | tls-keygen |
 | Keywords           | localhost, ssl, tls, certificate, self-signed |
-| # releases         | 2 |
+| # releases         | 1 |
 | # dependents       | 2 |
-| # downloads        | 24245 |
+| # downloads        | 18252 |
 | # stars            | 5 |
 
 ## Links

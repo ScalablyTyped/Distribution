@@ -3,37 +3,35 @@ package typings.jsplumb.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectParams extends StObject {
   
-  var anchor: js.UndefOr[AnchorSpec] = js.native
+  var anchor: js.UndefOr[AnchorSpec] = js.undefined
   
-  var anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.native
+  var anchors: js.UndefOr[js.Tuple2[AnchorSpec, AnchorSpec]] = js.undefined
   
-  var connector: js.UndefOr[ConnectorSpec] = js.native
+  var connector: js.UndefOr[ConnectorSpec] = js.undefined
   
-  var cssClass: js.UndefOr[String] = js.native
+  var cssClass: js.UndefOr[String] = js.undefined
   
-  var deleteEndpointsOnDetach: js.UndefOr[Boolean] = js.native
+  var deleteEndpointsOnDetach: js.UndefOr[Boolean] = js.undefined
   
-  var detachable: js.UndefOr[Boolean] = js.native
+  var detachable: js.UndefOr[Boolean] = js.undefined
   
-  var endpoint: js.UndefOr[EndpointSpec] = js.native
+  var endpoint: js.UndefOr[EndpointSpec] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.native
+  var overlays: js.UndefOr[js.Array[OverlaySpec]] = js.undefined
   
-  var parameters: js.UndefOr[Record[String, _]] = js.native
+  var parameters: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var source: js.UndefOr[ElementRef | Endpoint] = js.native
+  var source: js.UndefOr[ElementRef | Endpoint] = js.undefined
   
-  var target: js.UndefOr[ElementRef | Endpoint] = js.native
+  var target: js.UndefOr[ElementRef | Endpoint] = js.undefined
   
-  var uuids: js.UndefOr[js.Tuple2[UUID, UUID]] = js.native
+  var uuids: js.UndefOr[js.Tuple2[UUID, UUID]] = js.undefined
 }
 object ConnectParams {
   
@@ -107,7 +105,7 @@ object ConnectParams {
     def setOverlaysVarargs(value: OverlaySpec*): Self = StObject.set(x, "overlays", js.Array(value :_*))
     
     @scala.inline
-    def setParameters(value: Record[String, _]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: Record[String, js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)

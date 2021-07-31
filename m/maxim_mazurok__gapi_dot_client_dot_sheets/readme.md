@@ -10,9 +10,9 @@ TypeScript typings for Google Sheets API v4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.sheets |
 | Keywords           | - |
-| # releases         | 5 |
+| # releases         | 19 |
 | # dependents       | 1 |
-| # downloads        | 324 |
+| # downloads        | 201934 |
 | # stars            | 0 |
 
 ## Links

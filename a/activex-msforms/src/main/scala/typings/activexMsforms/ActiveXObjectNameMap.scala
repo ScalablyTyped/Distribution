@@ -3,14 +3,12 @@ package typings.activexMsforms
 import typings.activexMsforms.MSForms.Image
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Forms.Image")
-  var FormsDotImage: Image = js.native
+  var FormsDotImage: Image
 }
 object ActiveXObjectNameMap {
   

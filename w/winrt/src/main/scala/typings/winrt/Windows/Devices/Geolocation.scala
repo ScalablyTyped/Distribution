@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Geolocation {
@@ -16,10 +15,14 @@ object Geolocation {
   object PositionAccuracy extends StObject {
     
     @js.native
-    sealed trait default extends PositionAccuracy
+    sealed trait default
+      extends StObject
+         with PositionAccuracy
     
     @js.native
-    sealed trait high extends PositionAccuracy
+    sealed trait high
+      extends StObject
+         with PositionAccuracy
   }
   
   @js.native
@@ -29,26 +32,39 @@ object Geolocation {
   object PositionStatus extends StObject {
     
     @js.native
-    sealed trait disabled extends PositionStatus
+    sealed trait disabled
+      extends StObject
+         with PositionStatus
     
     @js.native
-    sealed trait initializing extends PositionStatus
+    sealed trait initializing
+      extends StObject
+         with PositionStatus
     
     @js.native
-    sealed trait noData extends PositionStatus
+    sealed trait noData
+      extends StObject
+         with PositionStatus
     
     @js.native
-    sealed trait notAvailable extends PositionStatus
+    sealed trait notAvailable
+      extends StObject
+         with PositionStatus
     
     @js.native
-    sealed trait notInitialized extends PositionStatus
+    sealed trait notInitialized
+      extends StObject
+         with PositionStatus
     
     @js.native
-    sealed trait ready extends PositionStatus
+    sealed trait ready
+      extends StObject
+         with PositionStatus
   }
   
-  @js.native
-  trait CivicAddress extends ICivicAddress
+  trait CivicAddress
+    extends StObject
+       with ICivicAddress
   object CivicAddress {
     
     @scala.inline
@@ -58,8 +74,9 @@ object Geolocation {
     }
   }
   
-  @js.native
-  trait Geocoordinate extends IGeocoordinate
+  trait Geocoordinate
+    extends StObject
+       with IGeocoordinate
   object Geocoordinate {
     
     @scala.inline
@@ -79,10 +96,13 @@ object Geolocation {
   }
   
   @js.native
-  trait Geolocator extends IGeolocator
+  trait Geolocator
+    extends StObject
+       with IGeolocator
   
-  @js.native
-  trait Geoposition extends IGeoposition
+  trait Geoposition
+    extends StObject
+       with IGeoposition
   object Geoposition {
     
     @scala.inline
@@ -92,18 +112,17 @@ object Geolocation {
     }
   }
   
-  @js.native
   trait ICivicAddress extends StObject {
     
-    var city: String = js.native
+    var city: String
     
-    var country: String = js.native
+    var country: String
     
-    var postalCode: String = js.native
+    var postalCode: String
     
-    var state: String = js.native
+    var state: String
     
-    var timestamp: Date = js.native
+    var timestamp: Date
   }
   object ICivicAddress {
     
@@ -133,24 +152,23 @@ object Geolocation {
     }
   }
   
-  @js.native
   trait IGeocoordinate extends StObject {
     
-    var accuracy: Double = js.native
+    var accuracy: Double
     
-    var altitude: Double = js.native
+    var altitude: Double
     
-    var altitudeAccuracy: Double = js.native
+    var altitudeAccuracy: Double
     
-    var heading: Double = js.native
+    var heading: Double
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var speed: Double = js.native
+    var speed: Double
     
-    var timestamp: Date = js.native
+    var timestamp: Date
   }
   object IGeocoordinate {
     
@@ -217,12 +235,11 @@ object Geolocation {
     var reportInterval: Double = js.native
   }
   
-  @js.native
   trait IGeoposition extends StObject {
     
-    var civicAddress: CivicAddress = js.native
+    var civicAddress: CivicAddress
     
-    var coordinate: Geocoordinate = js.native
+    var coordinate: Geocoordinate
   }
   object IGeoposition {
     
@@ -243,10 +260,9 @@ object Geolocation {
     }
   }
   
-  @js.native
   trait IPositionChangedEventArgs extends StObject {
     
-    var position: Geoposition = js.native
+    var position: Geoposition
   }
   object IPositionChangedEventArgs {
     
@@ -264,10 +280,9 @@ object Geolocation {
     }
   }
   
-  @js.native
   trait IStatusChangedEventArgs extends StObject {
     
-    var status: PositionStatus = js.native
+    var status: PositionStatus
   }
   object IStatusChangedEventArgs {
     
@@ -285,8 +300,9 @@ object Geolocation {
     }
   }
   
-  @js.native
-  trait PositionChangedEventArgs extends IPositionChangedEventArgs
+  trait PositionChangedEventArgs
+    extends StObject
+       with IPositionChangedEventArgs
   object PositionChangedEventArgs {
     
     @scala.inline
@@ -296,8 +312,9 @@ object Geolocation {
     }
   }
   
-  @js.native
-  trait StatusChangedEventArgs extends IStatusChangedEventArgs
+  trait StatusChangedEventArgs
+    extends StObject
+       with IStatusChangedEventArgs
   object StatusChangedEventArgs {
     
     @scala.inline

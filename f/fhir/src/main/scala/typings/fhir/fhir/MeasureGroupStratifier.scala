@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stratifier criteria for the measure
   */
-@js.native
-trait MeasureGroupStratifier extends BackboneElement {
+trait MeasureGroupStratifier
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'criteria'.
     */
-  var _criteria: js.UndefOr[Element] = js.native
+  var _criteria: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'path'.
     */
-  var _path: js.UndefOr[Element] = js.native
+  var _path: js.UndefOr[Element] = js.undefined
   
   /**
     * How the measure should be stratified
     */
-  var criteria: js.UndefOr[String] = js.native
+  var criteria: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier for the stratifier used to coordinate the reported data back to this stratifier
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Path to the stratifier
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object MeasureGroupStratifier {
   

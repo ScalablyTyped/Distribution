@@ -3,16 +3,17 @@ package typings.base64Arraybuffer
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("base64-arraybuffer", "decode")
+  @JSImport("base64-arraybuffer", JSImport.Namespace)
   @js.native
-  def decode(base64: String): ArrayBuffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("base64-arraybuffer", "encode")
-  @js.native
-  def encode(arraybuffer: ArrayBuffer): String = js.native
+  @scala.inline
+  def decode(base64: String): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(base64.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
+  
+  @scala.inline
+  def encode(arraybuffer: ArrayBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(arraybuffer.asInstanceOf[js.Any]).asInstanceOf[String]
 }

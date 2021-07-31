@@ -11,8 +11,8 @@ use json for deep comparison
 | Full name          | use-json-comparison |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 33 |
-| # downloads        | 251851 |
+| # dependents       | 37 |
+| # downloads        | 487984 |
 | # stars            | 0 |
 
 ## Links

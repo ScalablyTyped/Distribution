@@ -2,32 +2,30 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchBarPopoverConstructorOptions extends StObject {
   
   /**
     * Popover button icon.
     */
-  var icon: js.UndefOr[NativeImage_] = js.native
+  var icon: js.UndefOr[NativeImage_] = js.undefined
   
   /**
     * Items to display in the popover.
     */
-  var items: TouchBar = js.native
+  var items: TouchBar
   
   /**
     * Popover button text.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * `true` to display a close button on the left of the popover, `false` to not show
     * it. Default is `true`.
     */
-  var showCloseButton: js.UndefOr[Boolean] = js.native
+  var showCloseButton: js.UndefOr[Boolean] = js.undefined
 }
 object TouchBarPopoverConstructorOptions {
   

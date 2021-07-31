@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Who or what is in group
   */
-@js.native
-trait GroupMember extends BackboneElement {
+trait GroupMember
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'inactive'.
     */
-  var _inactive: js.UndefOr[Element] = js.native
+  var _inactive: js.UndefOr[Element] = js.undefined
   
   /**
     * Reference to the group member
     */
-  var entity: Reference = js.native
+  var entity: Reference
   
   /**
     * If member is no longer in group
     */
-  var inactive: js.UndefOr[Boolean] = js.native
+  var inactive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Period member belonged to the group
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
 }
 object GroupMember {
   

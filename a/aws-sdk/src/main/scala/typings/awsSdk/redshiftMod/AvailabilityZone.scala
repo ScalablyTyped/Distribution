@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailabilityZone extends StObject {
   
   /**
     * The name of the availability zone.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * 
     */
-  var SupportedPlatforms: js.UndefOr[SupportedPlatformsList] = js.native
+  var SupportedPlatforms: js.UndefOr[SupportedPlatformsList] = js.undefined
 }
 object AvailabilityZone {
   

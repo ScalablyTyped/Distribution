@@ -6,51 +6,50 @@ import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ajaxMod {
   
-  @JSImport("@rails/ujs/utils/ajax", "ajax")
+  @JSImport("@rails/ujs/utils/ajax", JSImport.Namespace)
   @js.native
-  def ajax(options: AjaxOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@rails/ujs/utils/ajax", "href")
-  @js.native
-  def href(element: HTMLElement): js.UndefOr[String] = js.native
+  @scala.inline
+  def ajax(options: AjaxOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ajax")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@rails/ujs/utils/ajax", "isCrossDomain")
-  @js.native
-  def isCrossDomain(url: String): Boolean = js.native
+  @scala.inline
+  def href(element: HTMLElement): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("href")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
   
-  @js.native
+  @scala.inline
+  def isCrossDomain(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCrossDomain")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait AjaxOptions extends StObject {
     
-    var accept: js.UndefOr[String] = js.native
+    var accept: js.UndefOr[String] = js.undefined
     
-    var beforeSend: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* options */ this.type, Unit]] = js.native
+    var beforeSend: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* options */ this.type, Unit]] = js.undefined
     
-    var complete: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* statusText */ String, Unit]] = js.native
+    var complete: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* statusText */ String, Unit]] = js.undefined
     
-    var crossDomain: js.UndefOr[Boolean] = js.native
+    var crossDomain: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.UndefOr[Document | BodyInit | Null] = js.native
+    var data: js.UndefOr[Document | BodyInit | Null] = js.undefined
     
-    var dataType: js.UndefOr[String] = js.native
+    var dataType: js.UndefOr[String] = js.undefined
     
     var error: js.UndefOr[
         js.Function3[/* response */ js.Any, /* statusText */ String, /* xhr */ XMLHttpRequest, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var success: js.UndefOr[
         js.Function3[/* response */ js.Any, /* statusText */ String, /* xhr */ XMLHttpRequest, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var url: String = js.native
+    var url: String
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object AjaxOptions {
     

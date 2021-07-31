@@ -2,31 +2,31 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeliveryViewPropertyCollection extends PlanPropertyCollection {
+trait DeliveryViewPropertyCollection
+  extends StObject
+     with PlanPropertyCollection {
   
   /**
     * Card settings
     */
-  var cardSettings: CardSettings = js.native
+  var cardSettings: CardSettings
   
   /**
     * Field criteria
     */
-  var criteria: js.Array[FilterClause] = js.native
+  var criteria: js.Array[FilterClause]
   
   /**
     * Markers. Will be missing/null if there are no markers.
     */
-  var markers: js.Array[Marker] = js.native
+  var markers: js.Array[Marker]
   
   /**
     * Team backlog mappings
     */
-  var teamBacklogMappings: js.Array[TeamBacklogMapping] = js.native
+  var teamBacklogMappings: js.Array[TeamBacklogMapping]
 }
 object DeliveryViewPropertyCollection {
   

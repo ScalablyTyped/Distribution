@@ -6,27 +6,25 @@ import typings.wegameApi.wegameApiStrings.italic
 import typings.wegameApi.wegameApiStrings.normal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineHeightParams extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var fontStyle: js.UndefOr[normal | italic] = js.native
+  var fontStyle: js.UndefOr[normal | italic] = js.undefined
   
-  var fontWeight: js.UndefOr[normal | bold] = js.native
+  var fontWeight: js.UndefOr[normal | bold] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ LineHeight, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ LineHeight, Unit]] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object LineHeightParams {
   

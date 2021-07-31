@@ -3,17 +3,15 @@ package typings.ssUtils.ssutils
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Validation extends StObject {
   
-  def errorFilter(errorMsg: String, errorCode: String, `type`: String): Unit = js.native
+  def errorFilter(errorMsg: String, errorCode: String, `type`: String): Unit
   
-  var messages: StringDictionary[String] = js.native
+  var messages: StringDictionary[String]
   
-  var overrideMessages: Boolean = js.native
+  var overrideMessages: Boolean
 }
 object Validation {
   

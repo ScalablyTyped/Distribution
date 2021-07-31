@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserConfig extends StObject {
   
   /** Determines whether messages with no header are allowed. */
-  var allowNullHeader: js.UndefOr[Boolean] = js.native
+  var allowNullHeader: js.UndefOr[Boolean] = js.undefined
   
   /** Byte(s) to use as the segment terminator. If this is unset, '\r' is used as segment terminator. */
-  var segmentTerminator: js.UndefOr[String] = js.native
+  var segmentTerminator: js.UndefOr[String] = js.undefined
 }
 object ParserConfig {
   

@@ -10,7 +10,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption")
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class UninterpretedOption () extends Message {
   
   def addName(): NamePart = js.native
-  def addName(value: js.UndefOr[scala.Nothing], index: Double): NamePart = js.native
+  def addName(value: Unit, index: Double): NamePart = js.native
   def addName(value: NamePart): NamePart = js.native
   def addName(value: NamePart, index: Double): NamePart = js.native
   
@@ -115,13 +114,11 @@ object UninterpretedOption {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.NamePart.deserializeBinary")
-    @js.native
-    def deserializeBinary(bytes: Uint8Array): NamePart = js.native
+    @scala.inline
+    def deserializeBinary(bytes: Uint8Array): NamePart = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[NamePart]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.NamePart.deserializeBinaryFromReader")
-    @js.native
-    def deserializeBinaryFromReader(message: NamePart, reader: BinaryReader): NamePart = js.native
+    @scala.inline
+    def deserializeBinaryFromReader(message: NamePart, reader: BinaryReader): NamePart = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[NamePart]
     
     @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.NamePart.extensions")
     @js.native
@@ -136,20 +133,17 @@ object UninterpretedOption {
     @scala.inline
     def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.NamePart.serializeBinaryToWriter")
-    @js.native
-    def serializeBinaryToWriter(message: NamePart, writer: BinaryWriter): Unit = js.native
+    @scala.inline
+    def serializeBinaryToWriter(message: NamePart, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.NamePart.toObject")
-    @js.native
-    def toObject(includeInstance: Boolean, msg: NamePart): typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject = js.native
+    @scala.inline
+    def toObject(includeInstance: Boolean, msg: NamePart): typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject]
     
-    @js.native
     trait AsObject extends StObject {
       
-      var isExtension: js.UndefOr[Boolean] = js.native
+      var isExtension: js.UndefOr[Boolean] = js.undefined
       
-      var namePart: js.UndefOr[String] = js.native
+      var namePart: js.UndefOr[String] = js.undefined
     }
     object AsObject {
       
@@ -177,13 +171,11 @@ object UninterpretedOption {
     }
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): UninterpretedOption = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): UninterpretedOption = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[UninterpretedOption]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: UninterpretedOption, reader: BinaryReader): UninterpretedOption = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: UninterpretedOption, reader: BinaryReader): UninterpretedOption = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[UninterpretedOption]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.extensions")
   @js.native
@@ -198,30 +190,27 @@ object UninterpretedOption {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: UninterpretedOption, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: UninterpretedOption, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "UninterpretedOption.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: UninterpretedOption): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: UninterpretedOption): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var aggregateValue: js.UndefOr[String] = js.native
+    var aggregateValue: js.UndefOr[String] = js.undefined
     
-    var doubleValue: js.UndefOr[Double] = js.native
+    var doubleValue: js.UndefOr[Double] = js.undefined
     
-    var identifierValue: js.UndefOr[String] = js.native
+    var identifierValue: js.UndefOr[String] = js.undefined
     
-    var nameList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject] = js.native
+    var nameList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.NamePart.AsObject]
     
-    var negativeIntValue: js.UndefOr[Double] = js.native
+    var negativeIntValue: js.UndefOr[Double] = js.undefined
     
-    var positiveIntValue: js.UndefOr[Double] = js.native
+    var positiveIntValue: js.UndefOr[Double] = js.undefined
     
-    var stringValue: Uint8Array | String = js.native
+    var stringValue: Uint8Array | String
   }
   object AsObject {
     

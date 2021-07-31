@@ -51,7 +51,6 @@ import typings.vscodeLanguageserverTypes.mod.DefinitionLink
 import typings.vscodeLanguageserverTypes.mod.SignatureHelp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,12 +60,12 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     * A property to provide access to client specific features like registering
     * for requests or notifications.
     */
-  var client: RemoteClient with PClient = js.native
+  var client: RemoteClient & PClient = js.native
   
   /**
     * A property to provide access to console specific features.
     */
-  var console: RemoteConsole with PConsole = js.native
+  var console: RemoteConsole & PConsole = js.native
   
   /**
     * Disposes the connection
@@ -76,7 +75,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
   /**
     * A property to provide access to language specific features.
     */
-  var languages: Languages with PLanguages = js.native
+  var languages: Languages & PLanguages = js.native
   
   /**
     * Start listening on the input stream for messages to process.
@@ -367,7 +366,9 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
     *
     * @param handler The corresponding handler.
     */
-  def onExecuteCommand(handler: ServerRequestHandler[ExecuteCommandParams, js.UndefOr[_ | Null], scala.Nothing, Unit]): Unit = js.native
+  def onExecuteCommand(
+    handler: ServerRequestHandler[ExecuteCommandParams, js.UndefOr[js.Any | Null], scala.Nothing, Unit]
+  ): Unit = js.native
   
   /**
     * Installs a handler for the exit notification.
@@ -426,7 +427,7 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
   def onInitialize(
     handler: ServerRequestHandler[
       InitializeParams, 
-      InitializeResult[_], 
+      InitializeResult[js.Any], 
       scala.Nothing, 
       typings.vscodeLanguageserverProtocol.protocolMod.InitializeError
     ]
@@ -705,20 +706,20 @@ trait Connection[PConsole, PTracer, PTelemetry, PClient, PWindow, PWorkspace, PL
   /**
     * A property to provide access to telemetry specific features.
     */
-  var telemetry: Telemetry with PTelemetry = js.native
+  var telemetry: Telemetry & PTelemetry = js.native
   
   /**
     * A property to provide access to tracer specific features.
     */
-  var tracer: Tracer with PTracer = js.native
+  var tracer: Tracer & PTracer = js.native
   
   /**
     * A property to provide access to windows specific features.
     */
-  var window: RemoteWindow with PWindow = js.native
+  var window: RemoteWindow & PWindow = js.native
   
   /**
     * A property to provide access to workspace specific features.
     */
-  var workspace: RemoteWorkspace with PWorkspace = js.native
+  var workspace: RemoteWorkspace & PWorkspace = js.native
 }

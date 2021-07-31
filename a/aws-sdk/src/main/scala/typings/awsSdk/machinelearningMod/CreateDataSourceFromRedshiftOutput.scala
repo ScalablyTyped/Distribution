@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDataSourceFromRedshiftOutput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the datasource. This value should be identical to the value of the DataSourceID in the request. 
     */
-  var DataSourceId: js.UndefOr[EntityId] = js.native
+  var DataSourceId: js.UndefOr[EntityId] = js.undefined
 }
 object CreateDataSourceFromRedshiftOutput {
   

@@ -2,46 +2,44 @@ package typings.phaser.Phaser.Types.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginObjectItem extends StObject {
   
   /**
     * Arbitrary data passed to the plugin's init() method.
     */
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A key to identify the plugin in the Plugin Manager.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * If this plugin is to be injected into the Scene Systems, this is the property key map used.
     */
-  var mapping: js.UndefOr[String] = js.native
+  var mapping: js.UndefOr[String] = js.undefined
   
   /**
     * The plugin itself. Usually a class/constructor.
     */
-  var plugin: js.UndefOr[js.Any] = js.native
+  var plugin: js.UndefOr[js.Any] = js.undefined
   
   /**
     * For a scene plugin, add the plugin to the scene object under this key (`this.KEY`, from the scene).
     */
-  var sceneKey: js.UndefOr[String] = js.native
+  var sceneKey: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the plugin should be started automatically.
     */
-  var start: js.UndefOr[Boolean] = js.native
+  var start: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For a scene plugin, add the plugin to the scene's systems object under this key (`this.sys.KEY`, from the scene).
     */
-  var systemKey: js.UndefOr[String] = js.native
+  var systemKey: js.UndefOr[String] = js.undefined
 }
 object PluginObjectItem {
   

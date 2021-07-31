@@ -3,21 +3,21 @@ package typings.xstate.typesMod
 import typings.xstate.actorMod.Actor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SendAction[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */] extends ActionObject[TContext, TEvent] {
+trait SendAction[TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */]
+  extends StObject
+     with ActionObject[TContext, TEvent] {
   
-  var delay: js.UndefOr[Double | String | (DelayExpr[TContext, TEvent])] = js.native
+  var delay: js.UndefOr[Double | String | (DelayExpr[TContext, TEvent])] = js.undefined
   
-  var event: TSentEvent | (SendExpr[TContext, TEvent, TSentEvent]) = js.native
+  var event: TSentEvent | (SendExpr[TContext, TEvent, TSentEvent])
   
-  var id: String | Double = js.native
+  var id: String | Double
   
   var to: js.UndefOr[
-    String | Double | (Actor[_, AnyEventObject]) | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[_, AnyEventObject])])
-  ] = js.native
+    String | Double | (Actor[js.Any, AnyEventObject]) | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[js.Any, AnyEventObject])])
+  ] = js.undefined
 }
 object SendAction {
   
@@ -29,7 +29,7 @@ object SendAction {
   }
   
   @scala.inline
-  implicit class SendActionMutableBuilder[Self <: SendAction[_, _, _], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */] (val x: Self with (SendAction[TContext, TEvent, TSentEvent])) extends AnyVal {
+  implicit class SendActionMutableBuilder[Self <: SendAction[?, ?, ?], TContext, TEvent /* <: EventObject */, TSentEvent /* <: EventObject */] (val x: Self & (SendAction[TContext, TEvent, TSentEvent])) extends AnyVal {
     
     @scala.inline
     def setDelay(value: Double | String | (DelayExpr[TContext, TEvent])): Self = StObject.set(x, "delay", value.asInstanceOf[js.Any])
@@ -51,12 +51,12 @@ object SendAction {
     
     @scala.inline
     def setTo(
-      value: String | Double | (Actor[_, AnyEventObject]) | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[_, AnyEventObject])])
+      value: String | Double | (Actor[js.Any, AnyEventObject]) | (ExprWithMeta[TContext, TEvent, String | Double | (Actor[js.Any, AnyEventObject])])
     ): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setToFunction3(
-      value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => String | Double | (Actor[_, AnyEventObject])
+      value: (TContext, TEvent, /* meta */ SCXMLEventMeta[TEvent]) => String | Double | (Actor[js.Any, AnyEventObject])
     ): Self = StObject.set(x, "to", js.Any.fromFunction3(value))
     
     @scala.inline

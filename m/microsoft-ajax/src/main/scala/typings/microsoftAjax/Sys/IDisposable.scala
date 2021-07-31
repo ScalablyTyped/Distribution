@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Implement the IDisposable interface to provide a common interface for closing or releasing resources held by instances of your registered Microsoft Ajax Library class.
   * You register an interface by when you register the class by calling the Type.registerClass method. You specify IDisposable in the interfaceTypes parameter when you call Type.registerClass.
   */
-@js.native
 trait IDisposable extends StObject {
   
   //#region Methods
@@ -18,7 +16,7 @@ trait IDisposable extends StObject {
     * Releases resources held by an object that implements the Sys.IDisposable interface.
     * Implement the dispose method to close or release resources held by an object, or to prepare an object for reuse.
     */
-  def dispose(): Unit = js.native
+  def dispose(): Unit
 }
 object IDisposable {
   

@@ -2,13 +2,11 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PulsateEffect extends StObject {
   
-  var times: js.UndefOr[Double] = js.native
+  var times: js.UndefOr[Double] = js.undefined
 }
 object PulsateEffect {
   

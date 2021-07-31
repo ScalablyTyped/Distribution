@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionList extends StObject {
   
   /**
     * This list it not complete. Further typing results in recomputing this list.
     */
-  var isIncomplete: Boolean = js.native
+  var isIncomplete: Boolean
   
   /**
     * The completion items.
     */
-  var items: js.Array[CompletionItem] = js.native
+  var items: js.Array[CompletionItem]
 }
 object CompletionList {
   
@@ -26,24 +24,24 @@ object CompletionList {
     __obj.asInstanceOf[CompletionList]
   }
   
+  @JSImport("vscode-languageserver-types", "CompletionList")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new completion list.
     *
     * @param items The completion items.
     * @param isIncomplete The list is not complete.
     */
-  @JSImport("vscode-languageserver-types", "CompletionList.create")
-  @js.native
-  def create(): CompletionList = js.native
-  @JSImport("vscode-languageserver-types", "CompletionList.create")
-  @js.native
-  def create(items: js.UndefOr[scala.Nothing], isIncomplete: Boolean): CompletionList = js.native
-  @JSImport("vscode-languageserver-types", "CompletionList.create")
-  @js.native
-  def create(items: js.Array[CompletionItem]): CompletionList = js.native
-  @JSImport("vscode-languageserver-types", "CompletionList.create")
-  @js.native
-  def create(items: js.Array[CompletionItem], isIncomplete: Boolean): CompletionList = js.native
+  @scala.inline
+  def create(): CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CompletionList]
+  @scala.inline
+  def create(items: js.Array[CompletionItem]): CompletionList = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any]).asInstanceOf[CompletionList]
+  @scala.inline
+  def create(items: js.Array[CompletionItem], isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
+  @scala.inline
+  def create(items: Unit, isIncomplete: Boolean): CompletionList = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(items.asInstanceOf[js.Any], isIncomplete.asInstanceOf[js.Any])).asInstanceOf[CompletionList]
   
   @scala.inline
   implicit class CompletionListMutableBuilder[Self <: CompletionList] (val x: Self) extends AnyVal {

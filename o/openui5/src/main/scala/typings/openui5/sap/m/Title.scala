@@ -5,11 +5,12 @@ import typings.openui5.sap.ui.core.TextAlign
 import typings.openui5.sap.ui.core.TitleLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Title extends Control {
+trait Title
+  extends StObject
+     with Control {
   
   /**
     * Gets current value of property <code>level</code>.Defines the semantic level of the title.This

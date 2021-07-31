@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRegistriesInput extends StObject {
   
   /**
     * Maximum number of results required per page. If the value is not supplied, this will be defaulted to 25 per page.
     */
-  var MaxResults: js.UndefOr[MaxResultsNumber] = js.native
+  var MaxResults: js.UndefOr[MaxResultsNumber] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
     */
-  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.native
+  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.undefined
 }
 object ListRegistriesInput {
   

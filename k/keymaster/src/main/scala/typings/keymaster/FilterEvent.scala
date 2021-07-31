@@ -3,15 +3,13 @@ package typings.keymaster
 import typings.keymaster.anon.TagName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterEvent extends StObject {
   
-  var srcElement: js.UndefOr[TagName] = js.native
+  var srcElement: js.UndefOr[TagName] = js.undefined
   
-  var target: js.UndefOr[TagName] = js.native
+  var target: js.UndefOr[TagName] = js.undefined
 }
 object FilterEvent {
   

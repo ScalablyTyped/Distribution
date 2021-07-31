@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MemberDefinition extends StObject {
   
   /**
     * The Amazon Cognito user group that is part of the work team.
     */
-  var CognitoMemberDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.CognitoMemberDefinition] = js.native
+  var CognitoMemberDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.CognitoMemberDefinition] = js.undefined
   
   /**
     * A list user groups that exist in your OIDC Identity Provider (IdP). One to ten groups can be used to create a single private work team. When you add a user group to the list of Groups, you can add that user group to one or more private work teams. If you add a user group to a private work team, all workers in that user group are added to the work team.
     */
-  var OidcMemberDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.OidcMemberDefinition] = js.native
+  var OidcMemberDefinition: js.UndefOr[typings.awsSdk.sagemakerMod.OidcMemberDefinition] = js.undefined
 }
 object MemberDefinition {
   

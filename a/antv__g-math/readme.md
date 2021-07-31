@@ -10,9 +10,9 @@ geometry math
 | ------------------ | :-------------: |
 | Full name          | @antv/g-math |
 | Keywords           | util, antv, g |
-| # releases         | 11 |
-| # dependents       | 7 |
-| # downloads        | 454576 |
+| # releases         | 13 |
+| # dependents       | 9 |
+| # downloads        | 792244 |
 | # stars            | 0 |
 
 ## Links

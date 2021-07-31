@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait DeleteShiftDirection extends StObject
 object DeleteShiftDirection extends StObject {
   
   @js.native
-  sealed trait left extends DeleteShiftDirection
+  sealed trait left
+    extends StObject
+       with DeleteShiftDirection
   
   @js.native
-  sealed trait up extends DeleteShiftDirection
+  sealed trait up
+    extends StObject
+       with DeleteShiftDirection
 }

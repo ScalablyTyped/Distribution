@@ -2,29 +2,29 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FontWidthEnumValues extends EmbindEnum {
+trait FontWidthEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Condensed: FontWidth = js.native
+  var Condensed: FontWidth
   
-  var Expanded: FontWidth = js.native
+  var Expanded: FontWidth
   
-  var ExtraCondensed: FontWidth = js.native
+  var ExtraCondensed: FontWidth
   
-  var ExtraExpanded: FontWidth = js.native
+  var ExtraExpanded: FontWidth
   
-  var Normal: FontWidth = js.native
+  var Normal: FontWidth
   
-  var SemiCondensed: FontWidth = js.native
+  var SemiCondensed: FontWidth
   
-  var SemiExpanded: FontWidth = js.native
+  var SemiExpanded: FontWidth
   
-  var UltraCondensed: FontWidth = js.native
+  var UltraCondensed: FontWidth
   
-  var UltraExpanded: FontWidth = js.native
+  var UltraExpanded: FontWidth
 }
 object FontWidthEnumValues {
   

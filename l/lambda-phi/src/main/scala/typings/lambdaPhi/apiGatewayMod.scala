@@ -3,14 +3,16 @@ package typings.lambdaPhi
 import typings.lambdaPhi.lambdaModelMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiGatewayMod {
   
-  @JSImport("lambda-phi/lib/api-gateway", "Any")
+  @JSImport("lambda-phi/lib/api-gateway", JSImport.Namespace)
   @js.native
-  def Any(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Any(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Any")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
   @JSImport("lambda-phi/lib/api-gateway", "ApiGateway")
   @js.native
@@ -75,53 +77,41 @@ object apiGatewayMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addAnyMethod")
-    @js.native
-    def addAnyMethod(target: js.Any, method: js.Any): Unit = js.native
+    @scala.inline
+    def addAnyMethod(target: js.Any, method: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addAnyMethod")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addBodyProperty")
-    @js.native
-    def addBodyProperty(target: js.Any, property: js.Any): Unit = js.native
+    @scala.inline
+    def addBodyProperty(target: js.Any, property: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addBodyProperty")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addHandlerMethod")
-    @js.native
-    def addHandlerMethod(target: js.Any, method: js.Any): Unit = js.native
+    @scala.inline
+    def addHandlerMethod(target: js.Any, method: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHandlerMethod")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addHeadersProperty")
-    @js.native
-    def addHeadersProperty(target: js.Any, property: js.Any): Unit = js.native
+    @scala.inline
+    def addHeadersProperty(target: js.Any, property: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHeadersProperty")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addHttpVerbMethod")
-    @js.native
-    def addHttpVerbMethod(name: String, target: js.Any, methodName: js.Any): Unit = js.native
+    @scala.inline
+    def addHttpVerbMethod(name: String, target: js.Any, methodName: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addHttpVerbMethod")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addMethodProperty")
-    @js.native
-    def addMethodProperty(target: js.Any, property: js.Any): Unit = js.native
+    @scala.inline
+    def addMethodProperty(target: js.Any, property: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMethodProperty")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addPathMethod")
-    @js.native
-    def addPathMethod(pattern: String, target: js.Any, method: js.Any): Unit = js.native
+    @scala.inline
+    def addPathMethod(pattern: String, target: js.Any, method: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPathMethod")(pattern.asInstanceOf[js.Any], target.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addPathParam")
-    @js.native
-    def addPathParam(name: String, target: js.Any, methodName: js.Any, index: Double): Unit = js.native
+    @scala.inline
+    def addPathParam(name: String, target: js.Any, methodName: js.Any, index: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPathParam")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addPathParamsProperty")
-    @js.native
-    def addPathParamsProperty(target: js.Any, property: js.Any): Unit = js.native
+    @scala.inline
+    def addPathParamsProperty(target: js.Any, property: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPathParamsProperty")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addPostConstructorMethod")
-    @js.native
-    def addPostConstructorMethod(target: js.Any, method: js.Any): Unit = js.native
+    @scala.inline
+    def addPostConstructorMethod(target: js.Any, method: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPostConstructorMethod")(target.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addQueryParamsProperty")
-    @js.native
-    def addQueryParamsProperty(target: js.Any, property: js.Any): Unit = js.native
+    @scala.inline
+    def addQueryParamsProperty(target: js.Any, property: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addQueryParamsProperty")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.addStageVariablesProperty")
-    @js.native
-    def addStageVariablesProperty(target: js.Any, property: js.Any): Unit = js.native
+    @scala.inline
+    def addStageVariablesProperty(target: js.Any, property: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addStageVariablesProperty")(target.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.bodyAlias")
     @js.native
@@ -129,21 +119,17 @@ object apiGatewayMod {
     @scala.inline
     def bodyAlias_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("bodyAlias")(x.asInstanceOf[js.Any])
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.executeAnyRequest")
-    @js.native
-    def executeAnyRequest(lambda: js.Any): js.Any = js.native
+    @scala.inline
+    def executeAnyRequest(lambda: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("executeAnyRequest")(lambda.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.getArgs")
-    @js.native
-    def getArgs(keys: js.Any, pathToRegEx: js.Any, lambda: js.Any, path: js.Any): js.Any = js.native
+    @scala.inline
+    def getArgs(keys: js.Any, pathToRegEx: js.Any, lambda: js.Any, path: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getArgs")(keys.asInstanceOf[js.Any], pathToRegEx.asInstanceOf[js.Any], lambda.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.getHttpVerbMethods")
-    @js.native
-    def getHttpVerbMethods(lambda: js.Any, method: js.Any): js.Any = js.native
+    @scala.inline
+    def getHttpVerbMethods(lambda: js.Any, method: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpVerbMethods")(lambda.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.getHttpVerbsByMethodName")
-    @js.native
-    def getHttpVerbsByMethodName(lambda: js.Any, methodName: js.Any): js.Any = js.native
+    @scala.inline
+    def getHttpVerbsByMethodName(lambda: js.Any, methodName: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getHttpVerbsByMethodName")(lambda.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.headersAlias")
     @js.native
@@ -157,9 +143,8 @@ object apiGatewayMod {
     @scala.inline
     def methodAlias_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("methodAlias")(x.asInstanceOf[js.Any])
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.methodHasPath")
-    @js.native
-    def methodHasPath(lambda: js.Any, methodName: js.Any): js.Any = js.native
+    @scala.inline
+    def methodHasPath(lambda: js.Any, methodName: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("methodHasPath")(lambda.asInstanceOf[js.Any], methodName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.pathConfig")
     @js.native
@@ -179,9 +164,8 @@ object apiGatewayMod {
     @scala.inline
     def queryParamsAlias_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("queryParamsAlias")(x.asInstanceOf[js.Any])
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.setPathConfig")
-    @js.native
-    def setPathConfig(config: js.Any): Unit = js.native
+    @scala.inline
+    def setPathConfig(config: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPathConfig")(config.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.stageVariablesAlias")
     @js.native
@@ -189,90 +173,67 @@ object apiGatewayMod {
     @scala.inline
     def stageVariablesAlias_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stageVariablesAlias")(x.asInstanceOf[js.Any])
     
-    @JSImport("lambda-phi/lib/api-gateway", "ApiGateway.verbExists")
-    @js.native
-    def verbExists(verbs: js.Any, verb: js.Any): js.Any = js.native
+    @scala.inline
+    def verbExists(verbs: js.Any, verb: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("verbExists")(verbs.asInstanceOf[js.Any], verb.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @JSImport("lambda-phi/lib/api-gateway", "Body")
-  @js.native
-  def Body(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  @JSImport("lambda-phi/lib/api-gateway", "Body")
-  @js.native
-  def Body(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @scala.inline
+  def Body(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Body")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  @scala.inline
+  def Body(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Body")(alias.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Delete")
-  @js.native
-  def Delete(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  @scala.inline
+  def Delete(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Delete")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Get")
-  @js.native
-  def Get(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  @scala.inline
+  def Get(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Get")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Head")
-  @js.native
-  def Head(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  @scala.inline
+  def Head(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Head")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Headers")
-  @js.native
-  def Headers(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  @JSImport("lambda-phi/lib/api-gateway", "Headers")
-  @js.native
-  def Headers(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @scala.inline
+  def Headers(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Headers")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  @scala.inline
+  def Headers(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Headers")(alias.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Method")
-  @js.native
-  def Method(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  @JSImport("lambda-phi/lib/api-gateway", "Method")
-  @js.native
-  def Method(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @scala.inline
+  def Method(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Method")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  @scala.inline
+  def Method(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Method")(alias.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Options")
-  @js.native
-  def Options(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  @scala.inline
+  def Options(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Options")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Patch")
-  @js.native
-  def Patch(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  @scala.inline
+  def Patch(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Patch")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Path")
-  @js.native
-  def Path(pattern: String): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @scala.inline
+  def Path(pattern: String): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Path")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "PathConfig")
-  @js.native
-  def PathConfig(config: js.Any): js.Function1[/* target */ js.Any, Unit] = js.native
+  @scala.inline
+  def PathConfig(config: js.Any): js.Function1[/* target */ js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PathConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* target */ js.Any, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "PathParam")
-  @js.native
-  def PathParam(name: String): js.Function3[/* target */ js.Object, /* propertyKey */ String, /* index */ Double, Unit] = js.native
+  @scala.inline
+  def PathParam(name: String): js.Function3[/* target */ js.Object, /* propertyKey */ String, /* index */ Double, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PathParam")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* target */ js.Object, /* propertyKey */ String, /* index */ Double, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "PathParams")
-  @js.native
-  def PathParams(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  @JSImport("lambda-phi/lib/api-gateway", "PathParams")
-  @js.native
-  def PathParams(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @scala.inline
+  def PathParams(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PathParams")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  @scala.inline
+  def PathParams(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("PathParams")(alias.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Post")
-  @js.native
-  def Post(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  @scala.inline
+  def Post(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Post")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "Put")
-  @js.native
-  def Put(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = js.native
+  @scala.inline
+  def Put(): js.Function2[/* target */ js.Object, /* methodName */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("Put")().asInstanceOf[js.Function2[/* target */ js.Object, /* methodName */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "QueryParams")
-  @js.native
-  def QueryParams(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  @JSImport("lambda-phi/lib/api-gateway", "QueryParams")
-  @js.native
-  def QueryParams(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @scala.inline
+  def QueryParams(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryParams")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  @scala.inline
+  def QueryParams(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("QueryParams")(alias.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
   
-  @JSImport("lambda-phi/lib/api-gateway", "StageVariables")
-  @js.native
-  def StageVariables(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
-  @JSImport("lambda-phi/lib/api-gateway", "StageVariables")
-  @js.native
-  def StageVariables(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = js.native
+  @scala.inline
+  def StageVariables(): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("StageVariables")().asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
+  @scala.inline
+  def StageVariables(alias: js.Any): js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("StageVariables")(alias.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* target */ js.Object, /* propertyKey */ String, Unit]]
 }

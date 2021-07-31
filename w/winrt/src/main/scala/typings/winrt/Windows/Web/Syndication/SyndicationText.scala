@@ -5,11 +5,11 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyndicationText extends ISyndicationText
+trait SyndicationText
+  extends StObject
+     with ISyndicationText
 object SyndicationText {
   
   @scala.inline

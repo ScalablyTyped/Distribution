@@ -2,20 +2,18 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for discovering supported languages.
   */
-@js.native
 trait SchemaGetSupportedLanguagesRequest extends StObject {
   
   /**
     * The language to use to return localized, human readable names of
     * supported languages.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object SchemaGetSupportedLanguagesRequest {
   

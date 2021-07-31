@@ -5,34 +5,32 @@ import typings.dialogflow.mod.google.cloud.dialogflow.v2.EntityType.IEntity
 import typings.dialogflow.mod.google.cloud.dialogflow.v2.EntityType.Kind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an EntityType. */
-@js.native
 trait IEntityType extends StObject {
   
   /** EntityType autoExpansionMode */
   var autoExpansionMode: js.UndefOr[
     AutoExpansionMode | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.EntityType.AutoExpansionMode * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** EntityType displayName */
-  var displayName: js.UndefOr[String | Null] = js.native
+  var displayName: js.UndefOr[String | Null] = js.undefined
   
   /** EntityType enableFuzzyExtraction */
-  var enableFuzzyExtraction: js.UndefOr[Boolean | Null] = js.native
+  var enableFuzzyExtraction: js.UndefOr[Boolean | Null] = js.undefined
   
   /** EntityType entities */
-  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.native
+  var entities: js.UndefOr[js.Array[IEntity] | Null] = js.undefined
   
   /** EntityType kind */
   var kind: js.UndefOr[
     Kind | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.dialogflow.v2.EntityType.Kind * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** EntityType name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object IEntityType {
   

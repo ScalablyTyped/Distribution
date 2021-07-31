@@ -3,13 +3,13 @@ package typings.awsLambda.anon
 import typings.awsLambda.apiGatewayAuthorizerMod.StatementAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait `0` extends StatementAction {
+trait `0`
+  extends StObject
+     with StatementAction {
   
-  var Action: String | js.Array[String] = js.native
+  var Action: String | js.Array[String]
 }
 object `0` {
   

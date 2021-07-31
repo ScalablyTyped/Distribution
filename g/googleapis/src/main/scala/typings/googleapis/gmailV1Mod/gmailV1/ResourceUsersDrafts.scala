@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gmail/v1", "gmail_v1.Resource$Users$Drafts")
@@ -34,7 +33,7 @@ class ResourceUsersDrafts protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaDraft] = js.native
   def create(callback: BodyResponseCallback[SchemaDraft]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDraft] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDraft] = js.native
   def create(params: ParamsResourceUsersDraftsCreate): GaxiosPromise[SchemaDraft] = js.native
   def create(params: ParamsResourceUsersDraftsCreate, callback: BodyResponseCallback[SchemaDraft]): Unit = js.native
   def create(
@@ -65,7 +64,7 @@ class ResourceUsersDrafts protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDraftsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceUsersDraftsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -96,7 +95,7 @@ class ResourceUsersDrafts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDraft] = js.native
   def get(callback: BodyResponseCallback[SchemaDraft]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDraft] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDraft] = js.native
   def get(params: ParamsResourceUsersDraftsGet): GaxiosPromise[SchemaDraft] = js.native
   def get(params: ParamsResourceUsersDraftsGet, callback: BodyResponseCallback[SchemaDraft]): Unit = js.native
   def get(
@@ -129,7 +128,7 @@ class ResourceUsersDrafts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDraftsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDraftsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDraftsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDraftsResponse] = js.native
   def list(params: ParamsResourceUsersDraftsList): GaxiosPromise[SchemaListDraftsResponse] = js.native
   def list(params: ParamsResourceUsersDraftsList, callback: BodyResponseCallback[SchemaListDraftsResponse]): Unit = js.native
   def list(
@@ -163,7 +162,7 @@ class ResourceUsersDrafts protected () extends StObject {
     */
   def send(): GaxiosPromise[SchemaMessage] = js.native
   def send(callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
-  def send(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
+  def send(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMessage] = js.native
   def send(params: ParamsResourceUsersDraftsSend): GaxiosPromise[SchemaMessage] = js.native
   def send(params: ParamsResourceUsersDraftsSend, callback: BodyResponseCallback[SchemaMessage]): Unit = js.native
   def send(
@@ -197,7 +196,7 @@ class ResourceUsersDrafts protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaDraft] = js.native
   def update(callback: BodyResponseCallback[SchemaDraft]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDraft] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDraft] = js.native
   def update(params: ParamsResourceUsersDraftsUpdate): GaxiosPromise[SchemaDraft] = js.native
   def update(params: ParamsResourceUsersDraftsUpdate, callback: BodyResponseCallback[SchemaDraft]): Unit = js.native
   def update(

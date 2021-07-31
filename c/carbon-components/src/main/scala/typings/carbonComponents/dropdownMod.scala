@@ -3,15 +3,40 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dropdownMod {
   
   @JSImport("carbon-components/components/dropdown/dropdown", JSImport.Default)
   @js.native
-  class default protected () extends Dropdown {
+  class default protected ()
+    extends StObject
+       with Dropdown {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _focusCleanup(): Unit = js.native
+    
+    /* CompleteClass */
+    override def _handleKeyDown(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _toggle(event: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def _updateFocus(itemToFocus: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def getCurrentNavigation(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def handleBlur(): Unit = js.native
+    
+    /* CompleteClass */
+    override def navigate(direction: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def select(itemToSelect: js.Any): Unit = js.native
   }
   object default {
     
@@ -48,24 +73,23 @@ object dropdownMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Dropdown extends StObject {
+  - Dropped any */ trait Dropdown extends StObject {
     
-    def _focusCleanup(): Unit = js.native
+    def _focusCleanup(): Unit
     
-    def _handleKeyDown(event: js.Any): Unit = js.native
+    def _handleKeyDown(event: js.Any): Unit
     
-    def _toggle(event: js.Any): Unit = js.native
+    def _toggle(event: js.Any): Unit
     
-    def _updateFocus(itemToFocus: js.Any): Unit = js.native
+    def _updateFocus(itemToFocus: js.Any): Unit
     
-    def getCurrentNavigation(): js.Any = js.native
+    def getCurrentNavigation(): js.Any
     
-    def handleBlur(): Unit = js.native
+    def handleBlur(): Unit
     
-    def navigate(direction: js.Any): Unit = js.native
+    def navigate(direction: js.Any): Unit
     
-    def select(itemToSelect: js.Any): Unit = js.native
+    def select(itemToSelect: js.Any): Unit
   }
   object Dropdown {
     

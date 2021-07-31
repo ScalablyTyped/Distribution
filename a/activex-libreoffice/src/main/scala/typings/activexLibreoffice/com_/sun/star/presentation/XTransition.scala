@@ -5,23 +5,23 @@ import typings.activexLibreoffice.com_.sun.star.rendering.XBitmap
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Transition interface to render custom transitions over time.
   * @since OOo 2.4
   */
-@js.native
-trait XTransition extends XInterface {
+trait XTransition
+  extends StObject
+     with XInterface {
   
   /**
     * Update transition on screen to given time state.
     * @param t Time on the transition timeline to display. Must be in the [0,1] range.
     */
-  def update(t: Double): Unit = js.native
+  def update(t: Double): Unit
   
-  def viewChanged(view: XSlideShowView, leavingBitmap: XBitmap, enteringBitmap: XBitmap): Unit = js.native
+  def viewChanged(view: XSlideShowView, leavingBitmap: XBitmap, enteringBitmap: XBitmap): Unit
 }
 object XTransition {
   

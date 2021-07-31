@@ -2,19 +2,17 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Remove a list of accounts from a hold.
   */
-@js.native
 trait SchemaRemoveHeldAccountsRequest extends StObject {
   
   /**
     * Account ids to identify HeldAccounts to remove.
     */
-  var accountIds: js.UndefOr[js.Array[String]] = js.native
+  var accountIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaRemoveHeldAccountsRequest {
   

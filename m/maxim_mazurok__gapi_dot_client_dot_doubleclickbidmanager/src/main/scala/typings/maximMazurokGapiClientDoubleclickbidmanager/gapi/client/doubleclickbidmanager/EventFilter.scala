@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventFilter extends StObject {
   
   /** Filter on a dimension. */
-  var dimensionFilter: js.UndefOr[PathQueryOptionsFilter] = js.native
+  var dimensionFilter: js.UndefOr[PathQueryOptionsFilter] = js.undefined
 }
 object EventFilter {
   

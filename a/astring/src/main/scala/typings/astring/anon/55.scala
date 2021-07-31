@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.UnaryExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `55` extends StObject {
   
-  var `type`: UnaryExpression = js.native
+  var `type`: UnaryExpression
 }
 object `55` {
   
   @scala.inline
-  def apply(`type`: UnaryExpression): `55` = {
+  def apply(): `55` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("UnaryExpression")
     __obj.asInstanceOf[`55`]
   }
   

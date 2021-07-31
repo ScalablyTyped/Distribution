@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.awt.Rectangle
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents common functionality for inplace embedded objects. */
-@js.native
-trait XInplaceObject extends XInterface {
+trait XInplaceObject
+  extends StObject
+     with XInterface {
   
   /**
     * enables or disables modeless dialogs of the object.
@@ -23,7 +23,7 @@ trait XInplaceObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def enableModeless(bEnable: Boolean): Unit = js.native
+  def enableModeless(bEnable: Boolean): Unit
   
   /**
     * sets the visible part of the inplace object.
@@ -37,14 +37,14 @@ trait XInplaceObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in invalid state
     * @throws com::sun::star::uno::Exception in case of other problems
     */
-  def setObjectRectangles(aPosRect: Rectangle, aClipRect: Rectangle): Unit = js.native
+  def setObjectRectangles(aPosRect: Rectangle, aClipRect: Rectangle): Unit
   
   /**
     * provides accelerator table the container wants to use during inplace editing.
     * @returns an accelerator table from container
     * @throws com::sun::star::embed::WrongStateException the object is in unexpected state
     */
-  def translateAccelerators(aKeys: SeqEquiv[KeyEvent]): Unit = js.native
+  def translateAccelerators(aKeys: SeqEquiv[KeyEvent]): Unit
 }
 object XInplaceObject {
   

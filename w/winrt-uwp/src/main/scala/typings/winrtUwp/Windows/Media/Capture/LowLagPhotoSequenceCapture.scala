@@ -7,14 +7,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.photocaptured
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods for taking a rapid sequence of low shutter lag photos. */
 @js.native
 trait LowLagPhotoSequenceCapture extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_photocaptured(
     `type`: photocaptured,
@@ -28,12 +27,12 @@ trait LowLagPhotoSequenceCapture extends StObject {
   def finishAsync(): IPromiseWithIAsyncAction = js.native
   
   /** Occurs when a photo has been captured. */
-  def onphotocaptured(ev: PhotoCapturedEventArgs with WinRTEvent[LowLagPhotoSequenceCapture]): Unit = js.native
+  def onphotocaptured(ev: PhotoCapturedEventArgs & WinRTEvent[LowLagPhotoSequenceCapture]): Unit = js.native
   /** Occurs when a photo has been captured. */
   @JSName("onphotocaptured")
   var onphotocaptured_Original: TypedEventHandler[LowLagPhotoSequenceCapture, PhotoCapturedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_photocaptured(
     `type`: photocaptured,

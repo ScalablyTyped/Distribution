@@ -2,26 +2,24 @@ package typings.googleapis.cloudtraceV2Mod.cloudtraceV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Binary module.
   */
-@js.native
 trait SchemaModule extends StObject {
   
   /**
     * A unique identifier for the module, usually a hash of its contents (up to
     * 128 bytes).
     */
-  var buildId: js.UndefOr[SchemaTruncatableString] = js.native
+  var buildId: js.UndefOr[SchemaTruncatableString] = js.undefined
   
   /**
     * For example: main binary, kernel modules, and dynamic libraries such as
     * libc.so, sharedlib.so (up to 256 bytes).
     */
-  var module: js.UndefOr[SchemaTruncatableString] = js.native
+  var module: js.UndefOr[SchemaTruncatableString] = js.undefined
 }
 object SchemaModule {
   

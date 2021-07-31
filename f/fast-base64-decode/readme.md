@@ -11,8 +11,8 @@ A fast Base64 decoder with a low level API. If you want a high level API, look a
 | Full name          | fast-base64-decode |
 | Keywords           | base64-decode, base64, decode |
 | # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 961047 |
+| # dependents       | 5 |
+| # downloads        | 5697721 |
 | # stars            | 0 |
 
 ## Links

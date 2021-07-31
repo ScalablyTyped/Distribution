@@ -13,19 +13,17 @@ import typings.chessJs.chessJsStrings.w
 import typings.chessJs.mod.PieceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
     /**
       * Pass true if you want this function to output verbose objects
       * instead of strings.
       */
-    var verbose: js.UndefOr[`false`] = js.native
+    var verbose: js.UndefOr[`false`] = js.undefined
   }
   object `0` {
     
@@ -46,20 +44,19 @@ object anon {
     }
   }
   
-  @js.native
   trait `1` extends StObject {
     
     /**
       * Pass true if you want this function to output verbose objects
       * instead of strings.
       */
-    var verbose: `true` = js.native
+    var verbose: `true`
   }
   object `1` {
     
     @scala.inline
-    def apply(verbose: `true`): `1` = {
-      val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+    def apply(): `1` = {
+      val __obj = js.Dynamic.literal(verbose = true)
       __obj.asInstanceOf[`1`]
     }
     
@@ -71,14 +68,13 @@ object anon {
     }
   }
   
-  @js.native
   trait `2` extends StObject {
     
     /**
       * Pass true if you want this function to output verbose objects
       * instead of strings.
       */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object `2` {
     
@@ -99,35 +95,34 @@ object anon {
     }
   }
   
-  @js.native
   trait BIGPAWN extends StObject {
     
     /** a pawn push of two squares */
-    var BIG_PAWN: b = js.native
+    var BIG_PAWN: b
     
     /** a standard capture */
-    var CAPTURE: c = js.native
+    var CAPTURE: c
     
     /** an en passant capture */
-    var EP_CAPTURE: e = js.native
+    var EP_CAPTURE: e
     
     /** kingside castling */
-    var KSIDE_CASTLE: k = js.native
+    var KSIDE_CASTLE: k
     
     /** a non-capture */
-    var NORMAL: n = js.native
+    var NORMAL: n
     
     /** a promotion */
-    var PROMOTION: p = js.native
+    var PROMOTION: p
     
     /** queenside castling */
-    var QSIDE_CASTLE: q = js.native
+    var QSIDE_CASTLE: q
   }
   object BIGPAWN {
     
     @scala.inline
-    def apply(BIG_PAWN: b, CAPTURE: c, EP_CAPTURE: e, KSIDE_CASTLE: k, NORMAL: n, PROMOTION: p, QSIDE_CASTLE: q): BIGPAWN = {
-      val __obj = js.Dynamic.literal(BIG_PAWN = BIG_PAWN.asInstanceOf[js.Any], CAPTURE = CAPTURE.asInstanceOf[js.Any], EP_CAPTURE = EP_CAPTURE.asInstanceOf[js.Any], KSIDE_CASTLE = KSIDE_CASTLE.asInstanceOf[js.Any], NORMAL = NORMAL.asInstanceOf[js.Any], PROMOTION = PROMOTION.asInstanceOf[js.Any], QSIDE_CASTLE = QSIDE_CASTLE.asInstanceOf[js.Any])
+    def apply(): BIGPAWN = {
+      val __obj = js.Dynamic.literal(BIG_PAWN = "b", CAPTURE = "c", EP_CAPTURE = "e", KSIDE_CASTLE = "k", NORMAL = "n", PROMOTION = "p", QSIDE_CASTLE = "q")
       __obj.asInstanceOf[BIGPAWN]
     }
     
@@ -157,12 +152,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: w | b = js.native
+    var color: w | b
     
-    var `type`: PieceType = js.native
+    var `type`: PieceType
   }
   object Color {
     
@@ -184,23 +178,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
     /**
       * The string "No errors." if valid. Otherwise a string explaining why
       * it is not valid.
       */
-    var error: String = js.native
+    var error: String
     
     /**
       * If not valid, then this will a type of error used internally in
       * chess.js. Otherwise 0.
       */
-    var error_number: Double = js.native
+    var error_number: Double
     
     /** Indicates if the fen is valid or not. */
-    var valid: Boolean = js.native
+    var valid: Boolean
   }
   object Error {
     
@@ -224,14 +217,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Maxwidth extends StObject {
     
     /** the maximum width of a line */
-    var max_width: js.UndefOr[Double] = js.native
+    var max_width: js.UndefOr[Double] = js.undefined
     
     /** Specific newline character */
-    var newline_char: js.UndefOr[String] = js.native
+    var newline_char: js.UndefOr[String] = js.undefined
   }
   object Maxwidth {
     
@@ -258,7 +250,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Newlinechar extends StObject {
     
     /**
@@ -272,7 +263,7 @@ object anon {
       * Avoid using a newline_char that may occur elsewhere in a PGN,
       * such as . or x, as this will result in unexpected behavior.
       */
-    var newline_char: js.UndefOr[String] = js.native
+    var newline_char: js.UndefOr[String] = js.undefined
     
     /**
       * The sloppy flag is a boolean that permits chess.js to parse moves in
@@ -280,7 +271,7 @@ object anon {
       * See .move documentation for more information about non-SAN
       * notations.
       */
-    var sloppy: js.UndefOr[Boolean] = js.native
+    var sloppy: js.UndefOr[Boolean] = js.undefined
   }
   object Newlinechar {
     
@@ -307,14 +298,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Sloppy extends StObject {
     
     /**
       * An optional sloppy flag can be used to parse a variety of
       * non-standard move notations.
       */
-    var sloppy: js.UndefOr[Boolean] = js.native
+    var sloppy: js.UndefOr[Boolean] = js.undefined
   }
   object Sloppy {
     
@@ -335,23 +325,22 @@ object anon {
     }
   }
   
-  @js.native
   trait Square extends StObject {
     
     /**
       * The string to test if it is a valid move, if it is not then an
       * empty array is returned
       */
-    var square: js.UndefOr[String] = js.native
+    var square: js.UndefOr[String] = js.undefined
     
     /** Set to true to return verbose move objects instead of strings */
-    var verbose: `true` = js.native
+    var verbose: `true`
   }
   object Square {
     
     @scala.inline
-    def apply(verbose: `true`): Square = {
-      val __obj = js.Dynamic.literal(verbose = verbose.asInstanceOf[js.Any])
+    def apply(): Square = {
+      val __obj = js.Dynamic.literal(verbose = true)
       __obj.asInstanceOf[Square]
     }
     
@@ -369,17 +358,16 @@ object anon {
     }
   }
   
-  @js.native
   trait SquareVerbose extends StObject {
     
     /**
       * The string to test if it is a valid move, if it is not then an
       * empty array is returned
       */
-    var square: js.UndefOr[String] = js.native
+    var square: js.UndefOr[String] = js.undefined
     
     /** Set to true to return verbose move objects instead of strings */
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object SquareVerbose {
     
@@ -406,17 +394,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Verbose extends StObject {
     
     /**
       * The string to test if it is a valid move, if it is not then an
       * empty array is returned
       */
-    var square: js.UndefOr[String] = js.native
+    var square: js.UndefOr[String] = js.undefined
     
     /** Set to true to return verbose move objects instead of strings */
-    var verbose: js.UndefOr[`false`] = js.native
+    var verbose: js.UndefOr[`false`] = js.undefined
   }
   object Verbose {
     

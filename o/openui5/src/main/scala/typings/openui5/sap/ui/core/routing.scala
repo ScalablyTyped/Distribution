@@ -5,7 +5,6 @@ import typings.openui5.sap.ui.base.EventProvider
 import typings.openui5.sap.ui.core.mvc.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routing {
@@ -22,21 +21,31 @@ object routing {
     object HistoryDirection extends StObject {
       
       @js.native
-      sealed trait Backwards extends HistoryDirection
+      sealed trait Backwards
+        extends StObject
+           with HistoryDirection
       
       @js.native
-      sealed trait Forwards extends HistoryDirection
+      sealed trait Forwards
+        extends StObject
+           with HistoryDirection
       
       @js.native
-      sealed trait NewEntry extends HistoryDirection
+      sealed trait NewEntry
+        extends StObject
+           with HistoryDirection
       
       @js.native
-      sealed trait Unknown extends HistoryDirection
+      sealed trait Unknown
+        extends StObject
+           with HistoryDirection
     }
   }
   
   @js.native
-  trait HashChanger extends EventProvider {
+  trait HashChanger
+    extends StObject
+       with EventProvider {
     
     /**
       * Fires the hashchanged event, may be extended to modify the hash before fireing the event
@@ -85,7 +94,6 @@ object routing {
     def setHash(sHash: String): Unit = js.native
   }
   
-  @js.native
   trait History extends StObject {
     
     /**
@@ -96,19 +104,19 @@ object routing {
       * @param sNewHash optional, if this parameter is not passed the last hashChange is taken.
       * @returns or undefined, if no navigation has taken place yet.
       */
-    def getDirection(sNewHash: String): js.Any = js.native
+    def getDirection(sNewHash: String): js.Any
     
     /**
       * @returns a global singleton that gets created as soon as the sap.ui.core.routing.History is required
       */
-    def getInstance(): typings.openui5.sap.ui.core.routing.History = js.native
+    def getInstance(): typings.openui5.sap.ui.core.routing.History
     
     /**
       * gets the previous hash in the history - if the last direction was Unknown or there was no navigation
       * yet, undefined will be returned
       * @returns or undefined
       */
-    def getPreviousHash(): String = js.native
+    def getPreviousHash(): String
   }
   object History {
     
@@ -137,7 +145,9 @@ object routing {
   }
   
   @js.native
-  trait Route extends EventProvider {
+  trait Route
+    extends StObject
+       with EventProvider {
     
     /**
       * Attach event-handler <code>fnFunction</code> to the 'matched' event of this
@@ -208,7 +218,9 @@ object routing {
   }
   
   @js.native
-  trait Router extends EventProvider {
+  trait Router
+    extends StObject
+       with EventProvider {
     
     /**
       * Adds a route to the router
@@ -413,9 +425,9 @@ object routing {
       * @returns this for chaining.
       */
     def navTo(sName: String): typings.openui5.sap.m.routing.Router = js.native
-    def navTo(sName: String, oParameters: js.UndefOr[scala.Nothing], bReplace: Boolean): typings.openui5.sap.m.routing.Router = js.native
     def navTo(sName: String, oParameters: js.Any): typings.openui5.sap.m.routing.Router = js.native
     def navTo(sName: String, oParameters: js.Any, bReplace: Boolean): typings.openui5.sap.m.routing.Router = js.native
+    def navTo(sName: String, oParameters: Unit, bReplace: Boolean): typings.openui5.sap.m.routing.Router = js.native
     
     /**
       * Will trigger routing events + place targets for routes matching the string
@@ -448,7 +460,9 @@ object routing {
   }
   
   @js.native
-  trait Target extends EventProvider {
+  trait Target
+    extends StObject
+       with EventProvider {
     
     /**
       * Attach event-handler <code>fnFunction</code> to the 'display' event of this
@@ -486,7 +500,7 @@ object routing {
       * @returns resolves with {name: *, view: *, control: *} if the target can be successfully displayed
       * otherwise it resolves with {name: *, error: *}
       */
-    def display(vData: js.Any): JQueryPromise[_] = js.native
+    def display(vData: js.Any): JQueryPromise[js.Any] = js.native
     
     /**
       * Fire event created to attached listeners.
@@ -497,7 +511,9 @@ object routing {
   }
   
   @js.native
-  trait Targets extends EventProvider {
+  trait Targets
+    extends StObject
+       with EventProvider {
     
     /**
       * Creates a target by using the given name and options. If there's already a target with the same name
@@ -578,7 +594,9 @@ object routing {
   }
   
   @js.native
-  trait Views extends EventProvider {
+  trait Views
+    extends StObject
+       with EventProvider {
     
     /**
       * Attach event-handler <code>fnFunction</code> to the 'created' event of this

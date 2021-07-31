@@ -2,32 +2,30 @@ package typings.telejson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<telejson.telejson.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var allowClass: js.UndefOr[Boolean] = js.native
+    var allowClass: js.UndefOr[Boolean] = js.undefined
     
-    var allowDate: js.UndefOr[Boolean] = js.native
+    var allowDate: js.UndefOr[Boolean] = js.undefined
     
-    var allowFunction: js.UndefOr[Boolean] = js.native
+    var allowFunction: js.UndefOr[Boolean] = js.undefined
     
-    var allowRegExp: js.UndefOr[Boolean] = js.native
+    var allowRegExp: js.UndefOr[Boolean] = js.undefined
     
-    var allowSymbol: js.UndefOr[Boolean] = js.native
+    var allowSymbol: js.UndefOr[Boolean] = js.undefined
     
-    var allowUndefined: js.UndefOr[Boolean] = js.native
+    var allowUndefined: js.UndefOr[Boolean] = js.undefined
     
-    var lazyEval: js.UndefOr[Boolean] = js.native
+    var lazyEval: js.UndefOr[Boolean] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var space: js.UndefOr[Double] = js.native
+    var space: js.UndefOr[Double] = js.undefined
   }
   object PartialOptions {
     

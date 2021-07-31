@@ -5,13 +5,13 @@ import typings.typescriptServices.TypeScript.CompilationSettings
 import typings.typescriptServices.TypeScript.IScriptSnapshot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LanguageServiceShimHostAdapter extends ILanguageServiceHost {
+trait LanguageServiceShimHostAdapter
+  extends StObject
+     with ILanguageServiceHost {
   
-  var shimHost: js.Any = js.native
+  var shimHost: js.Any
 }
 object LanguageServiceShimHostAdapter {
   

@@ -10,31 +10,32 @@ import typings.paystack.anon.Listbanks
 import typings.paystack.anon.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(secret_key: String): Object = ^.asInstanceOf[js.Dynamic].apply(secret_key.asInstanceOf[js.Any]).asInstanceOf[Object]
+  
   @JSImport("paystack", JSImport.Namespace)
   @js.native
-  def apply(secret_key: String): Object = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Object extends StObject {
     
-    var customer: Create = js.native
+    var customer: Create
     
-    var misc: Listbanks = js.native
+    var misc: Listbanks
     
-    var page: Get = js.native
+    var page: Get
     
-    var plan: List = js.native
+    var plan: List
     
-    var subaccount: Update = js.native
+    var subaccount: Update
     
-    var subscription: Disable = js.native
+    var subscription: Disable
     
-    var transaction: Charge = js.native
+    var transaction: Charge
   }
   object Object {
     
@@ -79,15 +80,15 @@ object mod {
   }
   
   // Transactions initialization success object
-  @js.native
   trait Response
-    extends /* others */ StringDictionary[js.Any] {
+    extends StObject
+       with /* others */ StringDictionary[js.Any] {
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var status: Boolean = js.native
+    var status: Boolean
   }
   object Response {
     

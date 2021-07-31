@@ -2,46 +2,44 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRecordsRequest extends StObject {
   
   /**
     * Intended to supply a device ID that will populate the lastModifiedBy field referenced in other methods. The ClientContext field is not yet implemented.
     */
-  var ClientContext: js.UndefOr[typings.awsSdk.cognitosyncMod.ClientContext] = js.native
+  var ClientContext: js.UndefOr[typings.awsSdk.cognitosyncMod.ClientContext] = js.undefined
   
   /**
     * A string of up to 128 characters. Allowed characters are a-z, A-Z, 0-9, '_' (underscore), '-' (dash), and '.' (dot).
     */
-  var DatasetName: typings.awsSdk.cognitosyncMod.DatasetName = js.native
+  var DatasetName: typings.awsSdk.cognitosyncMod.DatasetName
   
   /**
     * The unique ID generated for this device by Cognito.
     */
-  var DeviceId: js.UndefOr[typings.awsSdk.cognitosyncMod.DeviceId] = js.native
+  var DeviceId: js.UndefOr[typings.awsSdk.cognitosyncMod.DeviceId] = js.undefined
   
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
     */
-  var IdentityId: typings.awsSdk.cognitosyncMod.IdentityId = js.native
+  var IdentityId: typings.awsSdk.cognitosyncMod.IdentityId
   
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
     */
-  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId = js.native
+  var IdentityPoolId: typings.awsSdk.cognitosyncMod.IdentityPoolId
   
   /**
     * A list of patch operations.
     */
-  var RecordPatches: js.UndefOr[RecordPatchList] = js.native
+  var RecordPatches: js.UndefOr[RecordPatchList] = js.undefined
   
   /**
     * The SyncSessionToken returned by a previous call to ListRecords for this dataset and identity.
     */
-  var SyncSessionToken: typings.awsSdk.cognitosyncMod.SyncSessionToken = js.native
+  var SyncSessionToken: typings.awsSdk.cognitosyncMod.SyncSessionToken
 }
 object UpdateRecordsRequest {
   

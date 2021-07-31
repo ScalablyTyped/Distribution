@@ -5,7 +5,6 @@ import typings.kafkaNode.kafkaNodeStrings.utf8
 import typings.node.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kafka-node", "ProducerStream")
@@ -17,20 +16,23 @@ class ProducerStream () extends Writable {
   def _write_buffer(
     message: ProduceRequest,
     encoding: buffer,
-    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]
+    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]
   ): Unit = js.native
   @JSName("_write")
   def _write_utf8(
     message: ProduceRequest,
     encoding: utf8,
-    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]
+    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]
   ): Unit = js.native
   
   @JSName("_writev")
-  def _writev_MProducerStream(chunks: js.Array[Chunk], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): Unit = js.native
+  def _writev_MProducerStream(chunks: js.Array[Chunk], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
   
   def close(): Unit = js.native
-  def close(cb: js.Function0[_]): Unit = js.native
+  def close(cb: js.Function0[js.Any]): Unit = js.native
   
-  def sendPayload(payloads: js.Array[ProduceRequest], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): Unit = js.native
+  def sendPayload(
+    payloads: js.Array[ProduceRequest],
+    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]
+  ): Unit = js.native
 }

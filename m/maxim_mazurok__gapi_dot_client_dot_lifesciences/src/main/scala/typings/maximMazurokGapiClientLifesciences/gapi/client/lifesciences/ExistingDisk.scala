@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExistingDisk extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ExistingDisk extends StObject {
     * `Mount` references to this disk have the `read_only` flag set to true, the disk will be attached in `read-only` mode and can be shared with other instances. Otherwise, the disk will
     * be available for writing but cannot be shared.
     */
-  var disk: js.UndefOr[String] = js.native
+  var disk: js.UndefOr[String] = js.undefined
 }
 object ExistingDisk {
   

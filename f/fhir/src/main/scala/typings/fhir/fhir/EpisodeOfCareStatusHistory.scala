@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Past list of status codes (the current status may be included to cover the start date of the status)
   */
-@js.native
-trait EpisodeOfCareStatusHistory extends BackboneElement {
+trait EpisodeOfCareStatusHistory
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'status'.
     */
-  var _status: js.UndefOr[Element] = js.native
+  var _status: js.UndefOr[Element] = js.undefined
   
   /**
     * Duration the EpisodeOfCare was in the specified status
     */
-  var period: Period = js.native
+  var period: Period
   
   /**
     * planned | waitlist | active | onhold | finished | cancelled | entered-in-error
     */
-  var status: code = js.native
+  var status: code
 }
 object EpisodeOfCareStatusHistory {
   

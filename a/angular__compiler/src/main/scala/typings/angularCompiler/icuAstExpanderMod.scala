@@ -5,10 +5,13 @@ import typings.angularCompiler.srcParseUtilMod.ParseError
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object icuAstExpanderMod {
+  
+  @JSImport("@angular/compiler/src/ml_parser/icu_ast_expander", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/ml_parser/icu_ast_expander", "ExpansionError")
   @js.native
@@ -28,7 +31,6 @@ object icuAstExpanderMod {
     var nodes: js.Array[Node] = js.native
   }
   
-  @JSImport("@angular/compiler/src/ml_parser/icu_ast_expander", "expandNodes")
-  @js.native
-  def expandNodes(nodes: js.Array[Node]): ExpansionResult = js.native
+  @scala.inline
+  def expandNodes(nodes: js.Array[Node]): ExpansionResult = ^.asInstanceOf[js.Dynamic].applyDynamic("expandNodes")(nodes.asInstanceOf[js.Any]).asInstanceOf[ExpansionResult]
 }

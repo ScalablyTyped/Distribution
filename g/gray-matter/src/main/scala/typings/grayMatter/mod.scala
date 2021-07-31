@@ -2,7 +2,6 @@ package typings.grayMatter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,18 +20,13 @@ object mod {
   trait GrayMatter extends StObject {
     
     def apply(str: String): js.Any = js.native
-    def apply(
-      str: String,
-      options: js.UndefOr[scala.Nothing],
-      delims: js.UndefOr[scala.Nothing],
-      parser: js.Function
-    ): js.Any = js.native
-    def apply(str: String, options: js.UndefOr[scala.Nothing], delims: js.Array[String]): js.Any = js.native
-    def apply(str: String, options: js.UndefOr[scala.Nothing], delims: js.Array[String], parser: js.Function): js.Any = js.native
+    def apply(str: String, options: Unit, delims: js.Array[String]): js.Any = js.native
+    def apply(str: String, options: Unit, delims: js.Array[String], parser: js.Function): js.Any = js.native
+    def apply(str: String, options: Unit, delims: Unit, parser: js.Function): js.Any = js.native
     def apply(str: String, options: GrayMatterOption): js.Any = js.native
-    def apply(str: String, options: GrayMatterOption, delims: js.UndefOr[scala.Nothing], parser: js.Function): js.Any = js.native
     def apply(str: String, options: GrayMatterOption, delims: js.Array[String]): js.Any = js.native
     def apply(str: String, options: GrayMatterOption, delims: js.Array[String], parser: js.Function): js.Any = js.native
+    def apply(str: String, options: GrayMatterOption, delims: Unit, parser: js.Function): js.Any = js.native
     
     def read(fp: String): js.Any = js.native
     def read(fp: String, options: GrayMatterOption): js.Any = js.native
@@ -41,16 +35,15 @@ object mod {
     def stringify(str: String, data: js.Object, options: GrayMatterOption): String = js.native
   }
   
-  @js.native
   trait GrayMatterOption extends StObject {
     
-    var delims: String = js.native
+    var delims: String
     
-    var eval: js.UndefOr[Boolean] = js.native
+    var eval: js.UndefOr[Boolean] = js.undefined
     
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
-    var parser: js.UndefOr[js.Function] = js.native
+    var parser: js.UndefOr[js.Function] = js.undefined
   }
   object GrayMatterOption {
     

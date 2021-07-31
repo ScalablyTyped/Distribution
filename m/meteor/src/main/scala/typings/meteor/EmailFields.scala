@@ -3,19 +3,17 @@ package typings.meteor
 import typings.meteor.Meteor.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailFields extends StObject {
   
-  var from: js.UndefOr[js.Function1[/* user */ User, String]] = js.native
+  var from: js.UndefOr[js.Function1[/* user */ User, String]] = js.undefined
   
-  var html: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.native
+  var html: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.undefined
   
-  var subject: js.UndefOr[js.Function1[/* user */ User, String]] = js.native
+  var subject: js.UndefOr[js.Function1[/* user */ User, String]] = js.undefined
   
-  var text: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.native
+  var text: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.undefined
 }
 object EmailFields {
   

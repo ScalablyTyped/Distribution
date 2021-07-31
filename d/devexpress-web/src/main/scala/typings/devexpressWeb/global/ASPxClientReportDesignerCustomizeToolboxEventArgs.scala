@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,10 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientReportDesignerCustomizeToolboxEventArgs")
 @js.native
 class ASPxClientReportDesignerCustomizeToolboxEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientReportDesignerCustomizeToolboxEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientReportDesignerCustomizeToolboxEventArgs {
   /**
     * Initializes a new instance of the ASPxClientReportDesignerCustomizeToolboxEventArgs class with the specified settings.
     * @param controlsFactory An object that provides information about all controls available in the Toolbox. This object is assigned to the ASPxClientReportDesignerCustomizeToolboxEventArgs.ControlsFactory property.
     */
   def this(controlsFactory: typings.devexpressWeb.ASPxDesignerControlsFactory) = this()
+  
+  /**
+    * Provides information about all controls available in the Toolbox.
+    */
+  /* CompleteClass */
+  var ControlsFactory: typings.devexpressWeb.ASPxDesignerControlsFactory = js.native
 }

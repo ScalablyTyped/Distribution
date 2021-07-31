@@ -24,7 +24,6 @@ import typings.guacamoleClient.guacamoleClientNumbers.`0x031d`
 import typings.guacamoleClient.statusMod.Status.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("guacamole-client", "Status")
@@ -42,6 +41,10 @@ object Status {
   
   /* Inlined guacamole-client.guacamole-client/lib/Status.Status.StatusCode & std.Readonly<{fromHTTPCode (status : number): guacamole-client.guacamole-client/lib/Status.Status.Code, fromWebSocketCode (code : number): guacamole-client.guacamole-client/lib/Status.Status.Code}> */
   object Code {
+    
+    @JSImport("guacamole-client", "Status.Code")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("guacamole-client", "Status.Code.CLIENT_BAD_REQUEST")
     @js.native
@@ -127,12 +130,10 @@ object Status {
     @js.native
     val UPSTREAM_UNAVAILABLE: `0x0208` = js.native
     
-    @JSImport("guacamole-client", "Status.Code.fromHTTPCode")
-    @js.native
-    def fromHTTPCode(status: Double): typings.guacamoleClient.statusMod.Status.Code = js.native
+    @scala.inline
+    def fromHTTPCode(status: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHTTPCode")(status.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
     
-    @JSImport("guacamole-client", "Status.Code.fromWebSocketCode")
-    @js.native
-    def fromWebSocketCode(code: Double): typings.guacamoleClient.statusMod.Status.Code = js.native
+    @scala.inline
+    def fromWebSocketCode(code: Double): typings.guacamoleClient.statusMod.Status.Code = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWebSocketCode")(code.asInstanceOf[js.Any]).asInstanceOf[typings.guacamoleClient.statusMod.Status.Code]
   }
 }

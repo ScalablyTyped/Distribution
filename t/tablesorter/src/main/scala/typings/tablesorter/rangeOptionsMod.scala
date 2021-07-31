@@ -3,18 +3,18 @@ package typings.tablesorter
 import typings.tablesorter.intervalOptionsMod.IntervalOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeOptionsMod {
   
-  @js.native
-  trait RangeOptions extends IntervalOptions {
+  trait RangeOptions
+    extends StObject
+       with IntervalOptions {
     
     /**
       * The text indicating the whole range.
       */
-    var allText: js.UndefOr[String] = js.native
+    var allText: js.UndefOr[String] = js.undefined
   }
   object RangeOptions {
     

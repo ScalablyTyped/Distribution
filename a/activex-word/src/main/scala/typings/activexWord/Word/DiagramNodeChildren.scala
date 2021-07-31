@@ -3,7 +3,6 @@ package typings.activexWord.Word
 import typings.activexOffice.Office.MsoDiagramNodeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,9 @@ trait DiagramNodeChildren extends StObject {
     * @param Office.MsoDiagramNodeType [NodeType=1]
     */
   def AddNode(): DiagramNode = js.native
-  def AddNode(Index: js.UndefOr[scala.Nothing], NodeType: MsoDiagramNodeType): DiagramNode = js.native
   def AddNode(Index: js.Any): DiagramNode = js.native
   def AddNode(Index: js.Any, NodeType: MsoDiagramNodeType): DiagramNode = js.native
+  def AddNode(Index: Unit, NodeType: MsoDiagramNodeType): DiagramNode = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   

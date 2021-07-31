@@ -2,15 +2,13 @@ package typings.playerframework.PlayerFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Advertising {
   
-  @js.native
   trait AdvertisementBase extends StObject {
     
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object AdvertisementBase {
     
@@ -28,12 +26,13 @@ object Advertising {
     }
   }
   
-  @js.native
-  trait MidrollAdvertisement extends AdvertisementBase {
+  trait MidrollAdvertisement
+    extends StObject
+       with AdvertisementBase {
     
-    var time: Double = js.native
+    var time: Double
     
-    var timePercentage: Double = js.native
+    var timePercentage: Double
   }
   object MidrollAdvertisement {
     
@@ -54,8 +53,9 @@ object Advertising {
     }
   }
   
-  @js.native
-  trait PrerollAdvertisement extends AdvertisementBase
+  trait PrerollAdvertisement
+    extends StObject
+       with AdvertisementBase
   object PrerollAdvertisement {
     
     @scala.inline

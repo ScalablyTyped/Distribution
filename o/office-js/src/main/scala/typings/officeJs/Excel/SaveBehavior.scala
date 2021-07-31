@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,9 @@ object SaveBehavior extends StObject {
     *
     */
   @js.native
-  sealed trait prompt extends SaveBehavior
+  sealed trait prompt
+    extends StObject
+       with SaveBehavior
   
   /**
     * Save the workbook without prompting the user. If file is not saved,
@@ -31,5 +32,7 @@ object SaveBehavior extends StObject {
     *
     */
   @js.native
-  sealed trait save extends SaveBehavior
+  sealed trait save
+    extends StObject
+       with SaveBehavior
 }

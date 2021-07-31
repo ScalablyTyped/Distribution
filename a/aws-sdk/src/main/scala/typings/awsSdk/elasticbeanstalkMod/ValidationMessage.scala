@@ -2,31 +2,29 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationMessage extends StObject {
   
   /**
     * A message describing the error or warning.
     */
-  var Message: js.UndefOr[ValidationMessageString] = js.native
+  var Message: js.UndefOr[ValidationMessageString] = js.undefined
   
   /**
     * The namespace to which the option belongs.
     */
-  var Namespace: js.UndefOr[OptionNamespace] = js.native
+  var Namespace: js.UndefOr[OptionNamespace] = js.undefined
   
   /**
     * The name of the option.
     */
-  var OptionName: js.UndefOr[ConfigurationOptionName] = js.native
+  var OptionName: js.UndefOr[ConfigurationOptionName] = js.undefined
   
   /**
     * An indication of the severity of this message:    error: This message indicates that this is not a valid setting for an option.    warning: This message is providing information you should take into account.  
     */
-  var Severity: js.UndefOr[ValidationSeverity] = js.native
+  var Severity: js.UndefOr[ValidationSeverity] = js.undefined
 }
 object ValidationMessage {
   

@@ -14,7 +14,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,9 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A database range is a name for a cell range that also stores filtering, sorting, subtotal and data import settings and options.
   * @see com.sun.star.sheet.DatabaseRanges
   */
-@js.native
 trait DatabaseRange
-  extends XDatabaseRange
+  extends StObject
+     with XDatabaseRange
      with XCellRangeReferrer
      with XPropertySet
      with XNamed
@@ -35,13 +34,13 @@ trait DatabaseRange
     * specifies whether the AutoFilter is enabled or not.
     * @since OOo 1.1.2
     */
-  var AutoFilter: Boolean = js.native
+  var AutoFilter: Boolean
   
   /**
     * specifies whether this range includes a top row of headers.
     * @since LibreOffice 5.0
     */
-  var ContainsHeader: Boolean = js.native
+  var ContainsHeader: Boolean
   
   /**
     * specifies the range where the filter can find the filter criteria.
@@ -49,28 +48,28 @@ trait DatabaseRange
     * This is only used if SheetFilterDescriptor::UseFilterCriteriaSource is `TRUE` .
     * @since OOo 1.1.2
     */
-  var FilterCriteriaSource: CellRangeAddress = js.native
+  var FilterCriteriaSource: CellRangeAddress
   
   /**
     * specifies whether the imported data is only a selection of the database.
     * @since OOo 2.0
     */
-  var FromSelection: Boolean = js.native
+  var FromSelection: Boolean
   
   /** if this property is set, cell formats are extended when the size of the range is changed by an update operation. */
-  var KeepFormats: Boolean = js.native
+  var KeepFormats: Boolean
   
   /** if this property is set, columns or rows are inserted or deleted when the size of the range is changed by an update operation. */
-  var MoveCells: Boolean = js.native
+  var MoveCells: Boolean
   
   /**
     * specifies the time between two refresh actions in seconds.
     * @since OOo 2.0
     */
-  var RefreshPeriod: Double = js.native
+  var RefreshPeriod: Double
   
   /** if this property is set, the cell contents within the database range are left out when the document is saved. */
-  var StripData: Boolean = js.native
+  var StripData: Boolean
   
   /**
     * returns the index used to refer to this range in token arrays.
@@ -81,23 +80,23 @@ trait DatabaseRange
     * @see com.sun.star.sheet.FormulaMapGroupSpecialOffset.DB_AREA
     * @since OOo 3.0
     */
-  var TokenIndex: Double = js.native
+  var TokenIndex: Double
   
   /**
     * specifies whether this range includes a bottom row of totals.
     * @since LibreOffice 5.0
     */
-  var TotalsRow: Boolean = js.native
+  var TotalsRow: Boolean
   
   /**
     * specifies whether the filter criteria should be taken from a CellRange.
     * @since OOo 1.1.2
     */
-  var UseFilterCriteriaSource: Boolean = js.native
+  var UseFilterCriteriaSource: Boolean
   
   /** executes the stored import, filter, sorting, and subtotals descriptors again. */
   /* InferMemberOverrides */
-  override def refresh(): Unit = js.native
+  override def refresh(): Unit
 }
 object DatabaseRange {
   

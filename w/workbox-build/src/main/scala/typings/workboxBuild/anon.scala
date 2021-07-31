@@ -2,25 +2,23 @@ package typings.workboxBuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ChannelName extends StObject {
     
     /**
       * The `channelName` property to use when creating the
       * [`BroadcastCacheUpdatePlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-broadcast-update.BroadcastUpdatePlugin).
       */
-    var channelName: js.UndefOr[String] = js.native
+    var channelName: js.UndefOr[String] = js.undefined
     
     /**
       * The `options` property to use when creating the
       * [`BroadcastCacheUpdatePlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-broadcast-update.BroadcastUpdatePlugin).
       */
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object ChannelName {
     
@@ -47,16 +45,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: Double = js.native
+    var count: Double
     
-    var filePaths: js.Array[String] = js.native
+    var filePaths: js.Array[String]
     
-    var size: Double = js.native
+    var size: Double
     
-    var warnings: js.Array[String] = js.native
+    var warnings: js.Array[String]
   }
   object Count {
     
@@ -89,20 +86,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Headers extends StObject {
     
     /**
       * The `headers` property to use when creating the
       * [`CacheableResponsePlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-cacheable-response.CacheableResponsePlugin).
       */
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
     /**
       * The `statuses` property to use when creating the
       * [`CacheableResponsePlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-cacheable-response.CacheableResponsePlugin).
       */
-    var statuses: js.UndefOr[js.Array[Double]] = js.native
+    var statuses: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object Headers {
     
@@ -132,20 +128,19 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxAgeSeconds extends StObject {
     
     /**
       * The `maxAgeSeconds` property to use when creating the
       * [`ExpirationPlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-expiration.ExpirationPlugin.html)
       */
-    var maxAgeSeconds: js.UndefOr[Double] = js.native
+    var maxAgeSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * The `maxEntries` property to use when creating the
       * [`ExpirationPlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-expiration.ExpirationPlugin.html)
       */
-    var maxEntries: js.UndefOr[Double] = js.native
+    var maxEntries: js.UndefOr[Double] = js.undefined
   }
   object MaxAgeSeconds {
     
@@ -172,20 +167,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**
       * The `name` property to use when creating the
       * [`BackgroundSyncPlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-background-sync.BackgroundSyncPlugin).
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The `options` property to use when creating the
       * [`BackgroundSyncPlugin`](https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-background-sync.BackgroundSyncPlugin).
       */
-    var options: js.UndefOr[js.Object] = js.native
+    var options: js.UndefOr[js.Object] = js.undefined
   }
   object Name {
     

@@ -2,34 +2,32 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait seriesOptions extends StObject {
   
-  var bars: js.UndefOr[barsOptions] = js.native
+  var bars: js.UndefOr[barsOptions] = js.undefined
   
-  var clickable: js.UndefOr[Boolean] = js.native
+  var clickable: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
-  var highlightColor: js.UndefOr[js.Any] = js.native
+  var highlightColor: js.UndefOr[js.Any] = js.undefined
   
-  var hoverable: js.UndefOr[Boolean] = js.native
+  var hoverable: js.UndefOr[Boolean] = js.undefined
   
   // color or number
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var lines: js.UndefOr[linesOptions] = js.native
+  var lines: js.UndefOr[linesOptions] = js.undefined
   
-  var points: js.UndefOr[pointsOptions] = js.native
+  var points: js.UndefOr[pointsOptions] = js.undefined
   
-  var shadowSize: js.UndefOr[Double] = js.native
+  var shadowSize: js.UndefOr[Double] = js.undefined
   
-  var xaxis: js.UndefOr[Double] = js.native
+  var xaxis: js.UndefOr[Double] = js.undefined
   
-  var yaxis: js.UndefOr[Double] = js.native
+  var yaxis: js.UndefOr[Double] = js.undefined
 }
 object seriesOptions {
   

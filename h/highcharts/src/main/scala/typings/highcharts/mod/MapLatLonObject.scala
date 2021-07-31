@@ -2,24 +2,22 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A latitude/longitude object.
   */
-@js.native
 trait MapLatLonObject extends StObject {
   
   /**
     * The latitude.
     */
-  var lat: Double = js.native
+  var lat: Double
   
   /**
     * The longitude.
     */
-  var lon: Double = js.native
+  var lon: Double
 }
 object MapLatLonObject {
   

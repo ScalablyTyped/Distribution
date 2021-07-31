@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OfflineAudioContextOptions extends StObject {
   
-  var length: Double = js.native
+  var length: Double
   
-  var numberOfChannels: js.UndefOr[Double] = js.native
+  var numberOfChannels: js.UndefOr[Double] = js.undefined
   
-  var sampleRate: Double = js.native
+  var sampleRate: Double
 }
 object OfflineAudioContextOptions {
   

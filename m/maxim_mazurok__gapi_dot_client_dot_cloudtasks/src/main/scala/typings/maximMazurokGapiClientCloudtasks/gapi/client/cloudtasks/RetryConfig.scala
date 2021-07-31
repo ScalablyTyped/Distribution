@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudtasks.gapi.client.cloudtasks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryConfig extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait RetryConfig extends StObject {
     * -1. If unspecified when the queue is created, Cloud Tasks will pick the default. -1 indicates unlimited attempts. This field has the same meaning as [task_retry_limit in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var maxAttempts: js.UndefOr[Double] = js.native
+  var maxAttempts: js.UndefOr[Double] = js.undefined
   
   /**
     * A task will be scheduled for retry between min_backoff and max_backoff duration after it fails, if the queue's RetryConfig specifies that the task should be retried. If unspecified
     * when the queue is created, Cloud Tasks will pick the default. `max_backoff` will be truncated to the nearest second. This field has the same meaning as [max_backoff_seconds in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var maxBackoff: js.UndefOr[String] = js.native
+  var maxBackoff: js.UndefOr[String] = js.undefined
   
   /**
     * The time between retries will double `max_doublings` times. A task's retry interval starts at min_backoff, then doubles `max_doublings` times, then increases linearly, and finally
@@ -29,7 +27,7 @@ trait RetryConfig extends StObject {
     * attempted max_attempts times. Thus, the requests will retry at 10s, 20s, 40s, 80s, 160s, 240s, 300s, 300s, .... If unspecified when the queue is created, Cloud Tasks will pick the
     * default. This field has the same meaning as [max_doublings in queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var maxDoublings: js.UndefOr[Double] = js.native
+  var maxDoublings: js.UndefOr[Double] = js.undefined
   
   /**
     * If positive, `max_retry_duration` specifies the time limit for retrying a failed task, measured from when the task was first attempted. Once `max_retry_duration` time has passed
@@ -37,14 +35,14 @@ trait RetryConfig extends StObject {
     * queue is created, Cloud Tasks will pick the default. `max_retry_duration` will be truncated to the nearest second. This field has the same meaning as [task_age_limit in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var maxRetryDuration: js.UndefOr[String] = js.native
+  var maxRetryDuration: js.UndefOr[String] = js.undefined
   
   /**
     * A task will be scheduled for retry between min_backoff and max_backoff duration after it fails, if the queue's RetryConfig specifies that the task should be retried. If unspecified
     * when the queue is created, Cloud Tasks will pick the default. `min_backoff` will be truncated to the nearest second. This field has the same meaning as [min_backoff_seconds in
     * queue.yaml/xml](https://cloud.google.com/appengine/docs/standard/python/config/queueref#retry_parameters).
     */
-  var minBackoff: js.UndefOr[String] = js.native
+  var minBackoff: js.UndefOr[String] = js.undefined
 }
 object RetryConfig {
   

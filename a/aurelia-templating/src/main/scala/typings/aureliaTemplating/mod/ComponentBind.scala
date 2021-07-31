@@ -2,10 +2,8 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentBind extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait ComponentBind extends StObject {
     * An "override context" will be passed second. The override context contains information used to traverse
     * the parent hierarchy and can also be used to add any contextual properties that the component wants to add.
     */
-  def bind(bindingContext: js.Any, overrideContext: js.Any): Unit = js.native
+  def bind(bindingContext: js.Any, overrideContext: js.Any): Unit
 }
 object ComponentBind {
   

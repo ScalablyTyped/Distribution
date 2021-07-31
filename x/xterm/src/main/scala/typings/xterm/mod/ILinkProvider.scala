@@ -2,13 +2,11 @@ package typings.xterm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A custom link provider.
   */
-@js.native
 trait ILinkProvider extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait ILinkProvider extends StObject {
     * @param callback The callback to be fired when ready with the resulting
     * link(s) for the line or `undefined`.
     */
-  def provideLinks(bufferLineNumber: Double, callback: js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]): Unit = js.native
+  def provideLinks(bufferLineNumber: Double, callback: js.Function1[/* links */ js.UndefOr[js.Array[ILink]], Unit]): Unit
 }
 object ILinkProvider {
   

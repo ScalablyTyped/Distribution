@@ -5,7 +5,6 @@ import typings.esfxCancelable.distMod.Cancelable
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,13 +18,16 @@ object mod {
   
   object CancelSubscription {
     
+    @JSImport("@esfx/async-canceltoken", "CancelSubscription")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a `CancelSubscription` object for an `unsubscribe` callback.
       * @param unsubscribe The callback to execute when the `unsubscribe()` method is called.
       */
-    @JSImport("@esfx/async-canceltoken", "CancelSubscription.create")
-    @js.native
-    def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = js.native
+    @scala.inline
+    def create(unsubscribe: js.Function0[Unit]): typings.esfxCancelable.distMod.CancelSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(unsubscribe.asInstanceOf[js.Any]).asInstanceOf[typings.esfxCancelable.distMod.CancelSubscription]
   }
   
   @JSImport("@esfx/async-canceltoken", "CancelToken")
@@ -35,13 +37,16 @@ object mod {
   /* static members */
   object CancelToken {
     
+    @JSImport("@esfx/async-canceltoken", "CancelToken")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a CancelToken that becomes signaled when **all** of the provided cancelables are signaled.
       * @param cancelables An iterable of Cancelable objects.
       */
-    @JSImport("@esfx/async-canceltoken", "CancelToken.all")
-    @js.native
-    def all(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = js.native
+    @scala.inline
+    def all(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(cancelables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
     
     @JSImport("@esfx/async-canceltoken", "CancelToken.canceled")
     @js.native
@@ -50,12 +55,10 @@ object mod {
     /**
       * Gets a CancelToken from a cancelable.
       */
-    @JSImport("@esfx/async-canceltoken", "CancelToken.from")
-    @js.native
-    def from(): typings.esfxAsyncCanceltoken.distMod.CancelToken = js.native
-    @JSImport("@esfx/async-canceltoken", "CancelToken.from")
-    @js.native
-    def from(cancelable: Cancelable): typings.esfxAsyncCanceltoken.distMod.CancelToken = js.native
+    @scala.inline
+    def from(): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")().asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
+    @scala.inline
+    def from(cancelable: Cancelable): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
     
     @JSImport("@esfx/async-canceltoken", "CancelToken.none")
     @js.native
@@ -65,15 +68,13 @@ object mod {
       * Returns a CancelToken that becomes signaled when **any** of the provided cancelables are signaled.
       * @param cancelables An iterable of Cancelable objects.
       */
-    @JSImport("@esfx/async-canceltoken", "CancelToken.race")
-    @js.native
-    def race(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = js.native
+    @scala.inline
+    def race(cancelables: Iterable[Cancelable]): typings.esfxAsyncCanceltoken.distMod.CancelToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(cancelables.asInstanceOf[js.Any]).asInstanceOf[typings.esfxAsyncCanceltoken.distMod.CancelToken]
     
     /**
       * Creates a new CancelSource.
       */
-    @JSImport("@esfx/async-canceltoken", "CancelToken.source")
-    @js.native
-    def source(): CancelSource = js.native
+    @scala.inline
+    def source(): CancelSource = ^.asInstanceOf[js.Dynamic].applyDynamic("source")().asInstanceOf[CancelSource]
   }
 }

@@ -2,61 +2,59 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetEntry extends StObject {
   
   /**
     * The ARN for the asset.
     */
-  var Arn: typings.awsSdk.dataexchangeMod.Arn = js.native
+  var Arn: typings.awsSdk.dataexchangeMod.Arn
   
   /**
     * Information about the asset, including its size.
     */
-  var AssetDetails: typings.awsSdk.dataexchangeMod.AssetDetails = js.native
+  var AssetDetails: typings.awsSdk.dataexchangeMod.AssetDetails
   
   /**
     * The type of file your data is stored in. Currently, the supported asset type is S3_SNAPSHOT.
     */
-  var AssetType: typings.awsSdk.dataexchangeMod.AssetType = js.native
+  var AssetType: typings.awsSdk.dataexchangeMod.AssetType
   
   /**
     * The date and time that the asset was created, in ISO 8601 format.
     */
-  var CreatedAt: Timestamp = js.native
+  var CreatedAt: Timestamp
   
   /**
     * The unique identifier for the data set associated with this asset.
     */
-  var DataSetId: Id = js.native
+  var DataSetId: Id
   
   /**
     * The unique identifier for the asset.
     */
-  var Id: typings.awsSdk.dataexchangeMod.Id = js.native
+  var Id: typings.awsSdk.dataexchangeMod.Id
   
   /**
     * The name of the asset. When importing from Amazon S3, the S3 object key is used as the asset name. When exporting to Amazon S3, the asset name is used as default target S3 object key.
     */
-  var Name: AssetName = js.native
+  var Name: AssetName
   
   /**
     * The unique identifier for the revision associated with this asset.
     */
-  var RevisionId: Id = js.native
+  var RevisionId: Id
   
   /**
     * The asset ID of the owned asset corresponding to the entitled asset being viewed. This parameter is returned when an asset owner is viewing the entitled copy of its owned asset.
     */
-  var SourceId: js.UndefOr[Id] = js.native
+  var SourceId: js.UndefOr[Id] = js.undefined
   
   /**
     * The date and time that the asset was last updated, in ISO 8601 format.
     */
-  var UpdatedAt: Timestamp = js.native
+  var UpdatedAt: Timestamp
 }
 object AssetEntry {
   

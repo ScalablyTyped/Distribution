@@ -29,21 +29,21 @@ import typings.figma.mod.global.Trigger
 import typings.figma.mod.global.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait `0` extends LineHeight {
+  trait `0`
+    extends StObject
+       with LineHeight {
     
-    val unit: AUTO = js.native
+    val unit: AUTO
   }
   object `0` {
     
     @scala.inline
-    def apply(unit: AUTO): `0` = {
-      val __obj = js.Dynamic.literal(unit = unit.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(unit = "AUTO")
       __obj.asInstanceOf[`0`]
     }
     
@@ -55,10 +55,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait `1` extends Trigger {
+  trait `1`
+    extends StObject
+       with Trigger {
     
-    val `type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG = js.native
+    val `type`: ON_CLICK | ON_HOVER | ON_PRESS | ON_DRAG
   }
   object `1` {
     
@@ -77,17 +78,18 @@ object anon {
     }
   }
   
-  @js.native
-  trait `2` extends OverlayBackground {
+  trait `2`
+    extends StObject
+       with OverlayBackground {
     
-    val `type`: NONE = js.native
+    val `type`: NONE
   }
   object `2` {
     
     @scala.inline
-    def apply(`type`: NONE): `2` = {
+    def apply(): `2` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("NONE")
       __obj.asInstanceOf[`2`]
     }
     
@@ -99,19 +101,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait Color extends OverlayBackground {
+  trait Color
+    extends StObject
+       with OverlayBackground {
     
-    val color: RGBA = js.native
+    val color: RGBA
     
-    val `type`: SOLID_COLOR = js.native
+    val `type`: SOLID_COLOR
   }
   object Color {
     
     @scala.inline
-    def apply(color: RGBA, `type`: SOLID_COLOR): Color = {
+    def apply(color: RGBA): Color = {
       val __obj = js.Dynamic.literal(color = color.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("SOLID_COLOR")
       __obj.asInstanceOf[Color]
     }
     
@@ -126,12 +129,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Delay extends Trigger {
+  trait Delay
+    extends StObject
+       with Trigger {
     
-    val delay: Double = js.native
+    val delay: Double
     
-    val `type`: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN = js.native
+    val `type`: MOUSE_ENTER | MOUSE_LEAVE | MOUSE_UP | MOUSE_DOWN
   }
   object Delay {
     
@@ -153,29 +157,30 @@ object anon {
     }
   }
   
-  @js.native
-  trait DestinationId extends Action {
+  trait DestinationId
+    extends StObject
+       with Action {
     
-    val destinationId: String | Null = js.native
+    val destinationId: String | Null
     
-    val navigation: Navigation = js.native
+    val navigation: Navigation
     
     // Only present if navigation == "OVERLAY" and the destination uses
     // overlay position type "RELATIVE"
-    val overlayRelativePosition: js.UndefOr[Vector] = js.native
+    val overlayRelativePosition: js.UndefOr[Vector] = js.undefined
     
-    val preserveScrollPosition: Boolean = js.native
+    val preserveScrollPosition: Boolean
     
-    val transition: Transition | Null = js.native
+    val transition: Transition | Null
     
-    val `type`: NODE = js.native
+    val `type`: NODE
   }
   object DestinationId {
     
     @scala.inline
-    def apply(navigation: Navigation, preserveScrollPosition: Boolean, `type`: NODE): DestinationId = {
-      val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], preserveScrollPosition = preserveScrollPosition.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    def apply(navigation: Navigation, preserveScrollPosition: Boolean): DestinationId = {
+      val __obj = js.Dynamic.literal(navigation = navigation.asInstanceOf[js.Any], preserveScrollPosition = preserveScrollPosition.asInstanceOf[js.Any], destinationId = null, transition = null)
+      __obj.updateDynamic("type")("NODE")
       __obj.asInstanceOf[DestinationId]
     }
     
@@ -211,14 +216,13 @@ object anon {
     }
   }
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var node: TextNode = js.native
+    var node: TextNode
     
-    var start: Double = js.native
+    var start: Double
   }
   object End {
     
@@ -242,19 +246,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait Timeout extends Trigger {
+  trait Timeout
+    extends StObject
+       with Trigger {
     
-    val timeout: Double = js.native
+    val timeout: Double
     
-    val `type`: AFTER_TIMEOUT = js.native
+    val `type`: AFTER_TIMEOUT
   }
   object Timeout {
     
     @scala.inline
-    def apply(timeout: Double, `type`: AFTER_TIMEOUT): Timeout = {
+    def apply(timeout: Double): Timeout = {
       val __obj = js.Dynamic.literal(timeout = timeout.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("AFTER_TIMEOUT")
       __obj.asInstanceOf[Timeout]
     }
     
@@ -269,10 +274,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Type extends Action {
+  trait Type
+    extends StObject
+       with Action {
     
-    val `type`: BACK | CLOSE = js.native
+    val `type`: BACK | CLOSE
   }
   object Type {
     
@@ -291,12 +297,13 @@ object anon {
     }
   }
   
-  @js.native
-  trait Unit extends LineHeight {
+  trait Unit
+    extends StObject
+       with LineHeight {
     
-    val unit: PIXELS | PERCENT = js.native
+    val unit: PIXELS | PERCENT
     
-    val value: Double = js.native
+    val value: Double
   }
   object Unit {
     
@@ -317,19 +324,20 @@ object anon {
     }
   }
   
-  @js.native
-  trait Url extends Action {
+  trait Url
+    extends StObject
+       with Action {
     
-    val `type`: URL = js.native
+    val `type`: URL
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     
     @scala.inline
-    def apply(`type`: URL, url: String): Url = {
+    def apply(url: String): Url = {
       val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("URL")
       __obj.asInstanceOf[Url]
     }
     

@@ -3,7 +3,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,26 +19,25 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the elements out to some data sink.  Note that the Cloud Dataflow service
   * may be used to run many different types of jobs, not just Map-Reduce.
   */
-@js.native
 trait SchemaStep extends StObject {
   
   /**
     * The kind of step in the Cloud Dataflow job.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The name that identifies the step. This must be unique for each step with
     * respect to all other steps in the Cloud Dataflow job.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Named properties associated with the step. Each kind of predefined step
     * has its own required set of properties. Must be provided on Create.  Only
     * retrieved with JOB_VIEW_ALL.
     */
-  var properties: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var properties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaStep {
   

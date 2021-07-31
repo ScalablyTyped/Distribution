@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FreezePeriod extends StObject {
   
   /**
     * The end date (inclusive) of the freeze period. Must be no later than 90 days from the start date. If the end date is earlier than the start date, the freeze period is considered
     * wrapping year-end. Note: year must not be set. For example, {"month": 1,"date": 30}.
     */
-  var endDate: js.UndefOr[Date] = js.native
+  var endDate: js.UndefOr[Date] = js.undefined
   
   /** The start date (inclusive) of the freeze period. Note: year must not be set. For example, {"month": 1,"date": 30}. */
-  var startDate: js.UndefOr[Date] = js.native
+  var startDate: js.UndefOr[Date] = js.undefined
 }
 object FreezePeriod {
   

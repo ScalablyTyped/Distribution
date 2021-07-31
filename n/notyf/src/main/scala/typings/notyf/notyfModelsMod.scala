@@ -6,7 +6,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notyfModelsMod {
@@ -35,15 +34,19 @@ object notyfModelsMod {
   object NotyfArrayEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[NotyfArrayEvent with Double] = js.native
+    def apply(value: Double): js.UndefOr[NotyfArrayEvent & Double] = js.native
     
     @js.native
-    sealed trait Add extends NotyfArrayEvent
-    /* 0 */ val Add: typings.notyf.notyfModelsMod.NotyfArrayEvent.Add with Double = js.native
+    sealed trait Add
+      extends StObject
+         with NotyfArrayEvent
+    /* 0 */ val Add: typings.notyf.notyfModelsMod.NotyfArrayEvent.Add & Double = js.native
     
     @js.native
-    sealed trait Remove extends NotyfArrayEvent
-    /* 1 */ val Remove: typings.notyf.notyfModelsMod.NotyfArrayEvent.Remove with Double = js.native
+    sealed trait Remove
+      extends StObject
+         with NotyfArrayEvent
+    /* 1 */ val Remove: typings.notyf.notyfModelsMod.NotyfArrayEvent.Remove & Double = js.native
   }
   
   @JSImport("notyf/notyf.models", "NotyfNotification")
@@ -60,12 +63,11 @@ object notyfModelsMod {
     var triggerEvent: js.Any = js.native
   }
   
-  @js.native
   trait INotyfEventPayload extends StObject {
     
-    var event: js.UndefOr[Event] = js.native
+    var event: js.UndefOr[Event] = js.undefined
     
-    var target: NotyfNotification = js.native
+    var target: NotyfNotification
   }
   object INotyfEventPayload {
     
@@ -89,12 +91,11 @@ object notyfModelsMod {
     }
   }
   
-  @js.native
   trait IRenderedNotification extends StObject {
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
-    var notification: NotyfNotification = js.native
+    var notification: NotyfNotification
   }
   object IRenderedNotification {
     

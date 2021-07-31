@@ -11,8 +11,8 @@ Common operations for ndarray arrays
 | Full name          | ndarray-ops |
 | Keywords           | ndarray, math, operations, scientific, linear, algebra |
 | # releases         | 0 |
-| # dependents       | 97 |
-| # downloads        | 5876526 |
+| # dependents       | 98 |
+| # downloads        | 7199050 |
 | # stars            | 2 |
 
 ## Links

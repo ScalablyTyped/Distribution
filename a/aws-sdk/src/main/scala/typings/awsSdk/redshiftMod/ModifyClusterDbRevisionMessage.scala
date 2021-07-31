@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyClusterDbRevisionMessage extends StObject {
   
   /**
     * The unique identifier of a cluster whose database revision you want to modify.  Example: examplecluster 
     */
-  var ClusterIdentifier: String = js.native
+  var ClusterIdentifier: String
   
   /**
     * The identifier of the database revision. You can retrieve this value from the response to the DescribeClusterDbRevisions request.
     */
-  var RevisionTarget: String = js.native
+  var RevisionTarget: String
 }
 object ModifyClusterDbRevisionMessage {
   

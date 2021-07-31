@@ -4,33 +4,31 @@ import typings.iobroker.objectsMod.global.ioBroker.FileACL
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the return values of chownFile */
-@js.native
 trait ChownFileResult extends StObject {
   
   /** Access rights */
-  var acl: FileACL = js.native
+  var acl: FileACL
   
   /** Date of creation */
-  var createdAt: Double = js.native
+  var createdAt: Double
   
   /** Name of the file or directory */
-  var file: String = js.native
+  var file: String
   
   /** Whether this is a directory or a file */
-  var isDir: Boolean = js.native
+  var isDir: Boolean
   
   /** Date of last modification */
-  var modifiedAt: Double = js.native
+  var modifiedAt: Double
   
   /** The parent directory of the processed file or directory */
-  var path: String = js.native
+  var path: String
   
   /** File system stats */
-  var stats: Stats = js.native
+  var stats: Stats
 }
 object ChownFileResult {
   

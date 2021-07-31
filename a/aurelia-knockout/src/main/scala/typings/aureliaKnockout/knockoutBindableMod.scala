@@ -4,7 +4,6 @@ import typings.aureliaBinding.mod.InternalPropertyObserver
 import typings.aureliaBinding.mod.ObserverLocator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object knockoutBindableMod {
@@ -31,6 +30,6 @@ object knockoutBindableMod {
     
     var observerLocator: ObserverLocator = js.native
     
-    var subscriptions: js.Array[_] = js.native
+    var subscriptions: js.Array[js.Any] = js.native
   }
 }

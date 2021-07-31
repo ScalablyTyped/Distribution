@@ -3,25 +3,23 @@ package typings.antd.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemIcon extends StObject {
   
-  var clearIcon: ReactNode = js.native
+  var clearIcon: ReactNode
   
-  var itemIcon: js.Object | Null = js.native
+  var itemIcon: js.Object | Null
   
-  var removeIcon: js.Object | Null = js.native
+  var removeIcon: js.Object | Null
   
-  var suffixIcon: js.Object | Null = js.native
+  var suffixIcon: js.Object | Null
 }
 object ItemIcon {
   
   @scala.inline
   def apply(): ItemIcon = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(itemIcon = null, removeIcon = null, suffixIcon = null)
     __obj.asInstanceOf[ItemIcon]
   }
   

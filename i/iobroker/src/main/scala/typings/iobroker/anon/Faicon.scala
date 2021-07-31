@@ -2,25 +2,23 @@ package typings.iobroker.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Faicon extends StObject {
   
   /** Icon name for FontAwesome */
-  var `fa-icon`: js.UndefOr[String] = js.native
+  var `fa-icon`: js.UndefOr[String] = js.undefined
   
   /** If true, the Tab is not reloaded when the configuration changes */
-  var ignoreConfigUpdate: js.UndefOr[Boolean] = js.native
+  var ignoreConfigUpdate: js.UndefOr[Boolean] = js.undefined
   
   /** Which URL should be loaded in the tab. Supports placeholders like http://%ip%:%port% */
-  var link: js.UndefOr[String] = js.native
+  var link: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** If true, only one instance of this tab will be created for all instances */
-  var singleton: js.UndefOr[Boolean] = js.native
+  var singleton: js.UndefOr[Boolean] = js.undefined
 }
 object Faicon {
   

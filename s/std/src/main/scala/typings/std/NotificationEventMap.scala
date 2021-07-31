@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventMap extends StObject {
   
-  var click: Event = js.native
+  var click: Event
   
-  var close: Event = js.native
+  var close: Event
   
-  var error: Event = js.native
+  var error: Event
   
-  var show: Event = js.native
+  var show: Event
 }
 object NotificationEventMap {
   

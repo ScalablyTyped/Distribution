@@ -2,7 +2,6 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,7 +21,7 @@ trait UseSortByColumnProps[D /* <: js.Object */] extends StObject {
   var sortedIndex: Double = js.native
   
   def toggleSortBy(): Unit = js.native
-  def toggleSortBy(descending: js.UndefOr[scala.Nothing], multi: Boolean): Unit = js.native
   def toggleSortBy(descending: Boolean): Unit = js.native
   def toggleSortBy(descending: Boolean, multi: Boolean): Unit = js.native
+  def toggleSortBy(descending: Unit, multi: Boolean): Unit = js.native
 }

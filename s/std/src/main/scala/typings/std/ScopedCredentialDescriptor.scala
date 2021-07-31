@@ -2,23 +2,21 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScopedCredentialDescriptor extends StObject {
   
-  var id: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null = js.native
+  var id: Int8Array | Int16Array | Int32Array | Uint8Array | Uint16Array | Uint32Array | Uint8ClampedArray | Float32Array | Float64Array | DataView | ArrayBuffer | Null
   
-  var transports: js.UndefOr[js.Array[Transport]] = js.native
+  var transports: js.UndefOr[js.Array[Transport]] = js.undefined
   
-  var `type`: ScopedCredentialType = js.native
+  var `type`: ScopedCredentialType
 }
 object ScopedCredentialDescriptor {
   
   @scala.inline
   def apply(`type`: ScopedCredentialType): ScopedCredentialDescriptor = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(id = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScopedCredentialDescriptor]
   }

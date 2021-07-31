@@ -3,13 +3,11 @@ package typings.awsSdkTypes.eventStreamMod
 import typings.awsSdkTypes.httpMod.HttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventStreamRequestSigner extends StObject {
   
-  def sign(request: HttpRequest): js.Promise[HttpRequest] = js.native
+  def sign(request: HttpRequest): js.Promise[HttpRequest]
 }
 object EventStreamRequestSigner {
   

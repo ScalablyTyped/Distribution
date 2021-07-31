@@ -5,11 +5,12 @@ import typings.awsSdk.errorMod.AWSError
 import typings.awsSdk.requestMod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait XRay extends Service {
+trait XRay
+  extends StObject
+     with Service {
   
   /**
     * Retrieves a list of traces specified by ID. Each trace is a collection of segment documents that originates from a single request. Use GetTraceSummaries to get a list of trace IDs.
@@ -25,7 +26,7 @@ trait XRay extends Service {
     callback: js.Function2[/* err */ AWSError, /* data */ BatchGetTracesResult, Unit]
   ): Request[BatchGetTracesResult, AWSError] = js.native
   
-  var config: ConfigBase with ClientConfiguration = js.native
+  var config: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a group resource with a name and a filter expression. 

@@ -2,17 +2,15 @@ package typings.styledJsx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ClassName extends StObject {
     
-    var className: String = js.native
+    var className: String
     
-    var styles: String = js.native
+    var styles: String
   }
   object ClassName {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Nonce extends StObject {
     
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
   }
   object Nonce {
     

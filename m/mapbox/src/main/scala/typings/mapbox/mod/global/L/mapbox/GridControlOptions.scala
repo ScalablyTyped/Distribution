@@ -2,21 +2,21 @@ package typings.mapbox.mod.global.L.mapbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridControlOptions extends ControlOptions {
+trait GridControlOptions
+  extends StObject
+     with ControlOptions {
   
-  var follow: js.UndefOr[Boolean] = js.native
+  var follow: js.UndefOr[Boolean] = js.undefined
   
-  var location: js.UndefOr[Boolean] = js.native
+  var location: js.UndefOr[Boolean] = js.undefined
   
-  var pinnable: js.UndefOr[Boolean] = js.native
+  var pinnable: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var touchTeaser: js.UndefOr[Boolean] = js.native
+  var touchTeaser: js.UndefOr[Boolean] = js.undefined
 }
 object GridControlOptions {
   

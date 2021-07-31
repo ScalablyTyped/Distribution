@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterTimeline extends StObject {
   
   /**
     * The creation date and time of the cluster.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.native
+  var CreationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time when the cluster was terminated.
     */
-  var EndDateTime: js.UndefOr[Date] = js.native
+  var EndDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The date and time when the cluster was ready to execute steps.
     */
-  var ReadyDateTime: js.UndefOr[Date] = js.native
+  var ReadyDateTime: js.UndefOr[Date] = js.undefined
 }
 object ClusterTimeline {
   

@@ -2,7 +2,6 @@ package typings.promiseInflight
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,9 +15,14 @@ object mod {
     * @returns One promise as long as the `doFly()` promise is pending. Note that
     * if `bluebird` is installed, this promise will be a Bluebird promise.
     */
+  @scala.inline
+  def apply[T](unique: Resolvable[String], doFly: js.Function0[Resolvable[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(unique.asInstanceOf[js.Any], doFly.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def apply[T](unique: Resolvable[js.Array[Resolvable[String]]], doFly: js.Function0[Resolvable[T]]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(unique.asInstanceOf[js.Any], doFly.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  
   @JSImport("promise-inflight", JSImport.Namespace)
   @js.native
-  def apply[T](unique: Resolvable[js.Array[Resolvable[String]] | String], doFly: js.Function0[Resolvable[T]]): js.Promise[T] = js.native
+  val ^ : js.Any = js.native
   
   type Resolvable[T] = js.Thenable[T] | T
 }

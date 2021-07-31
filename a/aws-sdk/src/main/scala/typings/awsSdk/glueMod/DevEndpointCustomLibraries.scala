@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DevEndpointCustomLibraries extends StObject {
   
   /**
     * The path to one or more Java .jar files in an S3 bucket that should be loaded in your DevEndpoint.  You can only use pure Java/Scala libraries with a DevEndpoint. 
     */
-  var ExtraJarsS3Path: js.UndefOr[GenericString] = js.native
+  var ExtraJarsS3Path: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The paths to one or more Python libraries in an Amazon Simple Storage Service (Amazon S3) bucket that should be loaded in your DevEndpoint. Multiple values must be complete paths separated by a comma.  You can only use pure Python libraries with a DevEndpoint. Libraries that rely on C extensions, such as the pandas Python data analysis library, are not currently supported. 
     */
-  var ExtraPythonLibsS3Path: js.UndefOr[GenericString] = js.native
+  var ExtraPythonLibsS3Path: js.UndefOr[GenericString] = js.undefined
 }
 object DevEndpointCustomLibraries {
   

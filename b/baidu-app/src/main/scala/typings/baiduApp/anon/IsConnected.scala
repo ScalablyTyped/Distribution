@@ -3,15 +3,13 @@ package typings.baiduApp.anon
 import typings.baiduApp.swan.networkType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsConnected extends StObject {
   
-  var isConnected: Boolean = js.native
+  var isConnected: Boolean
   
-  var networkType: typings.baiduApp.swan.networkType = js.native
+  var networkType: typings.baiduApp.swan.networkType
 }
 object IsConnected {
   

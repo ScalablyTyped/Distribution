@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Crop extends StObject {
   
   /** The number of pixels to crop from the bottom. The default is 0. */
-  var bottomPixels: js.UndefOr[Double] = js.native
+  var bottomPixels: js.UndefOr[Double] = js.undefined
   
   /** The number of pixels to crop from the left. The default is 0. */
-  var leftPixels: js.UndefOr[Double] = js.native
+  var leftPixels: js.UndefOr[Double] = js.undefined
   
   /** The number of pixels to crop from the right. The default is 0. */
-  var rightPixels: js.UndefOr[Double] = js.native
+  var rightPixels: js.UndefOr[Double] = js.undefined
   
   /** The number of pixels to crop from the top. The default is 0. */
-  var topPixels: js.UndefOr[Double] = js.native
+  var topPixels: js.UndefOr[Double] = js.undefined
 }
 object Crop {
   

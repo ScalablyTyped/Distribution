@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RTCRtpSynchronizationSource extends RTCRtpContributingSource {
+trait RTCRtpSynchronizationSource
+  extends StObject
+     with RTCRtpContributingSource {
   
-  var voiceActivityFlag: js.UndefOr[scala.Boolean] = js.native
+  var voiceActivityFlag: js.UndefOr[scala.Boolean] = js.undefined
 }
 object RTCRtpSynchronizationSource {
   

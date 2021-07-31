@@ -2,56 +2,54 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for token resource in Directory API.
   */
-@js.native
 trait SchemaToken extends StObject {
   
   /**
     * Whether the application is registered with Google. The value is true if
     * the application has an anonymous Client ID.
     */
-  var anonymous: js.UndefOr[Boolean] = js.native
+  var anonymous: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Client ID of the application the token is issued to.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * The displayable name of the application the token is issued to.
     */
-  var displayText: js.UndefOr[String] = js.native
+  var displayText: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the API resource. This is always admin#directory#token.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the token is issued to an installed application. The value is
     * true if the application is installed to a desktop or mobile device.
     */
-  var nativeApp: js.UndefOr[Boolean] = js.native
+  var nativeApp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of authorization scopes the application is granted.
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The unique ID of the user that issued the token.
     */
-  var userKey: js.UndefOr[String] = js.native
+  var userKey: js.UndefOr[String] = js.undefined
 }
 object SchemaToken {
   

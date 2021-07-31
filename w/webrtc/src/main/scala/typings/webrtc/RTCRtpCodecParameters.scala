@@ -2,21 +2,19 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpcodecparameters
-@js.native
 trait RTCRtpCodecParameters extends StObject {
   
   //clockRate: number;
-  var channels: js.UndefOr[Double] = js.native
+  var channels: js.UndefOr[Double] = js.undefined
   
   //payloadType: number;
-  var mimeType: String = js.native
+  var mimeType: String
   
   // default = 1
-  var sdpFmtpLine: js.UndefOr[String] = js.native
+  var sdpFmtpLine: js.UndefOr[String] = js.undefined
 }
 object RTCRtpCodecParameters {
   

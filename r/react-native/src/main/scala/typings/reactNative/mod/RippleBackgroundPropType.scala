@@ -3,29 +3,28 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.RippleAndroid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RippleBackgroundPropType
-  extends BaseBackgroundPropType
+  extends StObject
+     with BaseBackgroundPropType
      with BackgroundPropType {
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var color: js.UndefOr[ColorValue] = js.native
+  var color: js.UndefOr[ColorValue] = js.undefined
   
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_RippleBackgroundPropType: RippleAndroid = js.native
+  var type_RippleBackgroundPropType: RippleAndroid
 }
 object RippleBackgroundPropType {
   
   @scala.inline
-  def apply(`type`: RippleAndroid): RippleBackgroundPropType = {
+  def apply(): RippleBackgroundPropType = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RippleAndroid")
     __obj.asInstanceOf[RippleBackgroundPropType]
   }
   

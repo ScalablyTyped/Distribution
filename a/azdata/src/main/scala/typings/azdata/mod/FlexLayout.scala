@@ -2,43 +2,41 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexLayout extends StObject {
   
   /**
     * Matches the align-content CSS property.
     */
-  var alignContent: js.UndefOr[AlignContentType] = js.native
+  var alignContent: js.UndefOr[AlignContentType] = js.undefined
   
   /**
     * Matches the align-items CSS property.
     */
-  var alignItems: js.UndefOr[AlignItemsType] = js.native
+  var alignItems: js.UndefOr[AlignItemsType] = js.undefined
   
   /**
     * Matches the flex-flow CSS property and its available values.
     * To layout as a vertical view use "column", and for horizontal
     * use "row".
     */
-  var flexFlow: js.UndefOr[String] = js.native
+  var flexFlow: js.UndefOr[String] = js.undefined
   
   /**
     *  Matches the flex-wrap CSS property.
     */
-  var flexWrap: js.UndefOr[FlexWrapType] = js.native
+  var flexWrap: js.UndefOr[FlexWrapType] = js.undefined
   
   /**
     * Container Height
     */
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Matches the justify-content CSS property.
     */
-  var justifyContent: js.UndefOr[JustifyContentType] = js.native
+  var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
   
   /**
     * The position CSS property. Empty by default.
@@ -47,17 +45,17 @@ trait FlexLayout extends StObject {
     * set to 'absolute', with the parent FlexContainer having 'relative' position.
     * Without this the component will fail to correctly size itself.
     */
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
   
   /**
     * Matches the text-align CSS property.
     */
-  var textAlign: js.UndefOr[TextAlignType] = js.native
+  var textAlign: js.UndefOr[TextAlignType] = js.undefined
   
   /**
     * Container Width
     */
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object FlexLayout {
   

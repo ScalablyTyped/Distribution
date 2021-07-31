@@ -7,7 +7,6 @@ import typings.sitemap2.anon.Contentloc
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,16 +14,19 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sitemap2", JSImport.Namespace)
   @js.native
-  class ^ () extends Sitemap {
+  class ^ ()
+    extends StObject
+       with Sitemap {
     def this(conf: SitemapConfig) = this()
   }
   @JSImport("sitemap2", JSImport.Namespace)
   @js.native
-  val ^ : Sitemap = js.native
+  val ^ : js.Object & Sitemap = js.native
   
   @js.native
   trait Sitemap
-    extends Instantiable0[Sitemap]
+    extends StObject
+       with Instantiable0[Sitemap]
        with Instantiable1[/* conf */ SitemapConfig, Sitemap] {
     
     def addSitemap(sm: Sitemap): this.type = js.native
@@ -46,22 +48,21 @@ object mod extends Shortcut {
     var urls: js.Array[String] = js.native
   }
   
-  @js.native
   trait SitemapConfig extends StObject {
     
-    var cacheTime: js.UndefOr[Double] = js.native
+    var cacheTime: js.UndefOr[Double] = js.undefined
     
-    var childrens: js.UndefOr[js.Array[Sitemap]] = js.native
+    var childrens: js.UndefOr[js.Array[Sitemap]] = js.undefined
     
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
-    var hostName: js.UndefOr[String] = js.native
+    var hostName: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var urls: js.UndefOr[js.Array[String]] = js.native
+    var urls: js.UndefOr[js.Array[String]] = js.undefined
     
-    var xslUrl: js.UndefOr[String] = js.native
+    var xslUrl: js.UndefOr[String] = js.undefined
   }
   object SitemapConfig {
     
@@ -124,12 +125,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SitemapXml extends StObject {
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var xml: String = js.native
+    var xml: String
   }
   object SitemapXml {
     
@@ -150,22 +150,21 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait UrlData extends StObject {
     
-    var chengefreq: js.UndefOr[String] = js.native
+    var chengefreq: js.UndefOr[String] = js.undefined
     
-    var lastmod: js.UndefOr[Date] = js.native
+    var lastmod: js.UndefOr[Date] = js.undefined
     
-    var lastmodInISO: js.UndefOr[Boolean] = js.native
+    var lastmodInISO: js.UndefOr[Boolean] = js.undefined
     
-    var lastmodWithTime: js.UndefOr[Boolean] = js.native
+    var lastmodWithTime: js.UndefOr[Boolean] = js.undefined
     
-    var priority: js.UndefOr[Double | String] = js.native
+    var priority: js.UndefOr[Double | String] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var video: js.UndefOr[Contentloc] = js.native
+    var video: js.UndefOr[Contentloc] = js.undefined
   }
   object UrlData {
     
@@ -219,8 +218,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Sitemap
+  type _To = js.Object & Sitemap
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Sitemap = ^
+  override def _to: js.Object & Sitemap = ^
 }

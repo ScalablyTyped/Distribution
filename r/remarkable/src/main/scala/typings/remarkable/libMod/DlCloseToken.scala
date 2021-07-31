@@ -3,22 +3,22 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.dl_close
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait DlCloseToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait DlCloseToken
+  extends StObject
+     with TagToken {
   
   @JSName("type")
-  var type_DlCloseToken: dl_close = js.native
+  var type_DlCloseToken: dl_close
 }
 object DlCloseToken {
   
   @scala.inline
-  def apply(level: Double, `type`: dl_close): DlCloseToken = {
+  def apply(level: Double): DlCloseToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("dl_close")
     __obj.asInstanceOf[DlCloseToken]
   }
   

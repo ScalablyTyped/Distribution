@@ -8,19 +8,17 @@ import typings.rethinkdb.rethinkdbStrings.soft
 import typings.rethinkdb.rethinkdbStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsertOptions extends StObject {
   
   var conflict: js.UndefOr[
-    error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, _])
-  ] = js.native
+    error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, js.Any])
+  ] = js.undefined
   
-  var durability: js.UndefOr[hard | soft] = js.native
+  var durability: js.UndefOr[hard | soft] = js.undefined
   
-  var returnChanges: js.UndefOr[Boolean | always] = js.native
+  var returnChanges: js.UndefOr[Boolean | always] = js.undefined
 }
 object InsertOptions {
   
@@ -35,11 +33,11 @@ object InsertOptions {
     
     @scala.inline
     def setConflict(
-      value: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, _])
+      value: error | replace | update | (js.Function3[/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any, js.Any])
     ): Self = StObject.set(x, "conflict", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setConflictFunction3(value: (/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any) => _): Self = StObject.set(x, "conflict", js.Any.fromFunction3(value))
+    def setConflictFunction3(value: (/* id */ String, /* oldDoc */ js.Any, /* newDoc */ js.Any) => js.Any): Self = StObject.set(x, "conflict", js.Any.fromFunction3(value))
     
     @scala.inline
     def setConflictUndefined: Self = StObject.set(x, "conflict", js.undefined)

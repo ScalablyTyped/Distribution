@@ -4,24 +4,24 @@ import typings.pleaseUpgradeNode.anon.PartialOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("please-upgrade-node", JSImport.Namespace)
-  @js.native
-  def apply(pkg: Record[String, _]): Unit = js.native
-  @JSImport("please-upgrade-node", JSImport.Namespace)
-  @js.native
-  def apply(pkg: Record[String, _], opts: PartialOptions): Unit = js.native
+  @scala.inline
+  def apply(pkg: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].apply(pkg.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(pkg: Record[String, js.Any], opts: PartialOptions): Unit = (^.asInstanceOf[js.Dynamic].apply(pkg.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("please-upgrade-node", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var exitCode: Double = js.native
+    var exitCode: Double
     
-    def message(version: String): String = js.native
+    def message(version: String): String
   }
   object Options {
     

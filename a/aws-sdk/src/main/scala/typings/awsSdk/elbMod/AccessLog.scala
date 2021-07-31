@@ -2,31 +2,29 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessLog extends StObject {
   
   /**
     * The interval for publishing the access logs. You can specify an interval of either 5 minutes or 60 minutes. Default: 60 minutes
     */
-  var EmitInterval: js.UndefOr[AccessLogInterval] = js.native
+  var EmitInterval: js.UndefOr[AccessLogInterval] = js.undefined
   
   /**
     * Specifies whether access logs are enabled for the load balancer.
     */
-  var Enabled: AccessLogEnabled = js.native
+  var Enabled: AccessLogEnabled
   
   /**
     * The name of the Amazon S3 bucket where the access logs are stored.
     */
-  var S3BucketName: js.UndefOr[typings.awsSdk.elbMod.S3BucketName] = js.native
+  var S3BucketName: js.UndefOr[typings.awsSdk.elbMod.S3BucketName] = js.undefined
   
   /**
     * The logical hierarchy you created for your Amazon S3 bucket, for example my-bucket-prefix/prod. If the prefix is not provided, the log is placed at the root level of the bucket.
     */
-  var S3BucketPrefix: js.UndefOr[AccessLogPrefix] = js.native
+  var S3BucketPrefix: js.UndefOr[AccessLogPrefix] = js.undefined
 }
 object AccessLog {
   

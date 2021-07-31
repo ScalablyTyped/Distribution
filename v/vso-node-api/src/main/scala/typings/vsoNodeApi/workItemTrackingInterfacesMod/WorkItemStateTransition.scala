@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemStateTransition extends StObject {
   
   /**
     * Gets a list of actions needed to transition to that state.
     */
-  var actions: js.Array[String] = js.native
+  var actions: js.Array[String]
   
   /**
     * Name of the next state.
     */
-  var to: String = js.native
+  var to: String
 }
 object WorkItemStateTransition {
   

@@ -13,22 +13,20 @@ import typings.reactIntl.reactIntlStrings.script
 import typings.reactIntl.reactIntlStrings.short
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @formatjs/intl-displaynames.@formatjs/intl-displaynames.DisplayNamesOptions & {  value :string | number | object} */
-@js.native
 trait DisplayNamesOptionsvalues extends StObject {
   
-  var fallback: js.UndefOr[code | none] = js.native
+  var fallback: js.UndefOr[code | none] = js.undefined
   
-  var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.native
+  var localeMatcher: js.UndefOr[lookup | (`best fit`)] = js.undefined
   
-  var style: js.UndefOr[narrow | short | long] = js.native
+  var style: js.UndefOr[narrow | short | long] = js.undefined
   
-  var `type`: language | region | script | currency = js.native
+  var `type`: language | region | script | currency
   
-  var value: String | Double | js.Object = js.native
+  var value: String | Double | js.Object
 }
 object DisplayNamesOptionsvalues {
   

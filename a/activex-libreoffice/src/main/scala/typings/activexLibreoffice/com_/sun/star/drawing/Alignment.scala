@@ -11,7 +11,6 @@ import typings.activexLibreoffice.activexLibreofficeNumbers.`7`
 import typings.activexLibreoffice.activexLibreofficeNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Alignment enumeration is a general way to specify the alignment of an object or sub-object relative to another object. */

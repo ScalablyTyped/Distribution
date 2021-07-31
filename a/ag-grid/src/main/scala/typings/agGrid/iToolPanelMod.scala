@@ -5,24 +5,23 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iToolPanelMod {
   
-  @js.native
   trait IToolPanel
-    extends IComponent[js.Any] {
+    extends StObject
+       with IComponent[js.Any] {
     
-    def getPreferredWidth(): Double = js.native
+    def getPreferredWidth(): Double
     
-    def isToolPanelShowing(): Boolean = js.native
+    def isToolPanelShowing(): Boolean
     
-    def refresh(): Unit = js.native
+    def refresh(): Unit
     
-    def registerGridComp(gridPanel: GridPanel): Unit = js.native
+    def registerGridComp(gridPanel: GridPanel): Unit
     
-    def showToolPanel(show: Boolean): Unit = js.native
+    def showToolPanel(show: Boolean): Unit
   }
   object IToolPanel {
     

@@ -2,10 +2,8 @@ package typings.restify.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricsCallbackOptions extends StObject {
   
   /**
@@ -13,53 +11,53 @@ trait MetricsCallbackOptions extends StObject {
     *
     * If connectionState is either 'close' or 'aborted', then the statusCode is not applicable since the connection was severed before a response was written.
     */
-  var connectionState: TMetricsCallback = js.native
+  var connectionState: TMetricsCallback
   
   /**
     * Number of inflight requests pending in restify
     */
-  var inflightRequests: Double = js.native
+  var inflightRequests: Double
   
   /**
     * Request latency
     */
-  var latency: Double = js.native
+  var latency: Double
   
   /**
     * HTTP request verb
     */
-  var method: String = js.native
+  var method: String
   
   /**
     * req.path() value
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * pre handlers latency
     */
-  var preLatency: Double | Null = js.native
+  var preLatency: Double | Null
   
   /**
     * Status code of the response. Can be undefined in the case of an `uncaughtException`.
     * Otherwise, in most normal scenarios, even calling `res.send()` or `res.end()` should result in a 200 by default.
     */
-  var statusCode: Double = js.native
+  var statusCode: Double
   
   /**
     * latency includes both request is flushed and all handlers finished
     */
-  var totalLatency: Double = js.native
+  var totalLatency: Double
   
   /**
     * Same as `inflightRequests`
     */
-  var unfinishedRequests: Double = js.native
+  var unfinishedRequests: Double
   
   /**
     * use handlers latency
     */
-  var useLatency: Double | Null = js.native
+  var useLatency: Double | Null
 }
 object MetricsCallbackOptions {
   
@@ -73,7 +71,7 @@ object MetricsCallbackOptions {
     totalLatency: Double,
     unfinishedRequests: Double
   ): MetricsCallbackOptions = {
-    val __obj = js.Dynamic.literal(inflightRequests = inflightRequests.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], totalLatency = totalLatency.asInstanceOf[js.Any], unfinishedRequests = unfinishedRequests.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(inflightRequests = inflightRequests.asInstanceOf[js.Any], latency = latency.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], statusCode = statusCode.asInstanceOf[js.Any], totalLatency = totalLatency.asInstanceOf[js.Any], unfinishedRequests = unfinishedRequests.asInstanceOf[js.Any], preLatency = null, useLatency = null)
     __obj.asInstanceOf[MetricsCallbackOptions]
   }
   

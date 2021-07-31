@@ -9,10 +9,13 @@ import typings.backoff.backoffStrings.ready
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("backoff", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("backoff", "Backoff")
   @js.native
@@ -101,10 +104,10 @@ object mod {
     
     @JSName("listeners")
     def listeners_backoff(event: typings.backoff.backoffStrings.backoff): js.Array[
-        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[_], Unit]
+        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
       ] = js.native
     @JSName("listeners")
-    def listeners_fail(event: fail): js.Array[js.Function1[/* error */ js.UndefOr[_], Unit]] = js.native
+    def listeners_fail(event: fail): js.Array[js.Function1[/* error */ js.UndefOr[js.Any], Unit]] = js.native
     @JSName("listeners")
     def listeners_ready(event: ready): js.Array[js.Function2[/* number */ Double, /* delay */ Double, Unit]] = js.native
     
@@ -330,7 +333,7 @@ object mod {
     def listeners_abort(event: abort): js.Array[js.Function0[Unit]] = js.native
     @JSName("listeners")
     def listeners_backoff(event: typings.backoff.backoffStrings.backoff): js.Array[
-        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[_], Unit]
+        js.Function3[/* number */ Double, /* delay */ Double, /* error */ js.UndefOr[js.Any], Unit]
       ] = js.native
     @JSName("listeners")
     def listeners_call(event: call): js.Array[js.Function1[/* args */ T, Unit]] = js.native
@@ -426,84 +429,140 @@ object mod {
   @js.native
   val FunctionCall: FunctionCallConstructor = js.native
   
-  @JSImport("backoff", "call")
+  /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
+  @JSImport("backoff", "FunctionCall")
   @js.native
-  def call(wrappedFunction: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): FunctionCallAny = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  class FunctionCallCls[T1, T2, T3, R1, R2, R3, E] protected ()
+    extends TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3] {
+    def this(
+      wrappedFunction: js.Function4[
+            /* t1 */ T1, 
+            /* t2 */ T2, 
+            /* t3 */ T3, 
+            /* cb */ js.Function4[/* err */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit], 
+            Unit
+          ],
+      args: js.Tuple3[T1, T2, T3],
+      callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
+    ) = this()
+    
+    /**
+      * Emitted each time the wrapped function invokes its callback
+      * @param results: wrapped function's return values
+      */
+    /* CompleteClass */
+    @JSName("addListener")
+    override def addListener_callback(
+      event: typings.backoff.backoffStrings.callback,
+      listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]
+    ): this.type = js.native
+    
+    /* CompleteClass */
+    @JSName("emit")
+    override def emit_callback(event: typings.backoff.backoffStrings.callback, results: js.Tuple4[E, R1, R2, R3]): Boolean = js.native
+    
+    /**
+      * Returns an array containing the last arguments passed to the completion callback
+      * of the wrapped function. For example, to get the error code returned by the last
+      * call, one would do the following.
+      *
+      * ``` js
+      * var results = call.getLastResult();
+      * // The error code is the first parameter of the callback.
+      * var error = results[0];
+      * ```
+      *
+      * Note that if the call was aborted, it will contain the abort error and not the
+      * last error returned by the wrapped function.
+      */
+    /* CompleteClass */
+    override def getLastResult(): js.Tuple4[E, R1, R2, R3] = js.native
+    
+    /* CompleteClass */
+    @JSName("listeners")
+    override def listeners_callback(event: typings.backoff.backoffStrings.callback): js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]] = js.native
+    
+    /* CompleteClass */
+    @JSName("on")
+    override def on_callback(
+      event: typings.backoff.backoffStrings.callback,
+      listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]
+    ): this.type = js.native
+    
+    /* CompleteClass */
+    @JSName("once")
+    override def once_callback(
+      event: typings.backoff.backoffStrings.callback,
+      listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]
+    ): this.type = js.native
+    
+    /* CompleteClass */
+    @JSName("prependListener")
+    override def prependListener_callback(
+      event: typings.backoff.backoffStrings.callback,
+      listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]
+    ): this.type = js.native
+    
+    /* CompleteClass */
+    @JSName("prependOnceListener")
+    override def prependOnceListener_callback(
+      event: typings.backoff.backoffStrings.callback,
+      listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]
+    ): this.type = js.native
+    
+    /* CompleteClass */
+    @JSName("removeListener")
+    override def removeListener_callback(
+      event: typings.backoff.backoffStrings.callback,
+      listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]
+    ): this.type = js.native
+  }
+  
+  @scala.inline
+  def call(wrappedFunction: js.Function1[/* repeated */ js.Any, Unit], args: js.Any*): FunctionCallAny = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[FunctionCallAny]
+  @scala.inline
   def call[E](
     wrappedFunction: js.Function1[/* cb */ js.Function1[/* err */ E, Unit], Unit],
     callback: js.Function1[/* err */ E, Unit]
-  ): TypedFunctionCall[
-    js.Array[js.UndefOr[scala.Nothing]], 
-    E, 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[Unit], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, Unit, Unit, Unit]]
+  @scala.inline
   def call[R1, E](
     wrappedFunction: js.Function1[/* cb */ js.Function2[/* err */ E, /* r1 */ R1, Unit], Unit],
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
-  ): TypedFunctionCall[
-    js.Array[js.UndefOr[scala.Nothing]], 
-    E, 
-    R1, 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[Unit], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, R1, Unit, Unit]]
+  @scala.inline
   def call[T1, E](
     wrappedFunction: js.Function2[/* t1 */ T1, /* cb */ js.Function1[/* err */ E, Unit], Unit],
     t1: T1,
     callback: js.Function1[/* err */ E, Unit]
-  ): TypedFunctionCall[
-    js.Array[T1], 
-    E, 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[T1], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, Unit, Unit, Unit]]
+  @scala.inline
   def call[R1, R2, E](
     wrappedFunction: js.Function1[/* cb */ js.Function3[/* err */ E, /* r1 */ R1, /* r2 */ R2, Unit], Unit],
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
-  ): TypedFunctionCall[js.Array[js.UndefOr[scala.Nothing]], E, R1, R2, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[Unit], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, R1, R2, Unit]]
+  @scala.inline
   def call[T1, R1, E](
     wrappedFunction: js.Function2[/* t1 */ T1, /* cb */ js.Function2[/* err */ E, /* r1 */ R1, Unit], Unit],
     t1: T1,
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
-  ): TypedFunctionCall[js.Array[T1], E, R1, js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[T1], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, R1, Unit, Unit]]
+  @scala.inline
   def call[T1, T2, E](
     wrappedFunction: js.Function3[/* t1 */ T1, /* t2 */ T2, /* cb */ js.Function1[/* err */ E, Unit], Unit],
     t1: T1,
     t2: T2,
     callback: js.Function1[/* err */ E, Unit]
-  ): TypedFunctionCall[
-    js.Tuple2[T1, T2], 
-    E, 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Tuple2[T1, T2], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, Unit, Unit, Unit]]
+  @scala.inline
   def call[R1, R2, R3, E](
     wrappedFunction: js.Function1[
       /* cb */ js.Function4[/* err */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit], 
       Unit
     ],
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
-  ): TypedFunctionCall[js.Array[js.UndefOr[scala.Nothing]], E, R1, R2, R3] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[Unit], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[Unit], E, R1, R2, R3]]
+  @scala.inline
   def call[T1, R1, R2, E](
     wrappedFunction: js.Function2[
       /* t1 */ T1, 
@@ -512,32 +571,23 @@ object mod {
     ],
     t1: T1,
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
-  ): TypedFunctionCall[js.Array[T1], E, R1, R2, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[T1], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, R1, R2, Unit]]
+  @scala.inline
   def call[T1, T2, R1, E](
     wrappedFunction: js.Function3[/* t1 */ T1, /* t2 */ T2, /* cb */ js.Function2[/* err */ E, /* r1 */ R1, Unit], Unit],
     t1: T1,
     t2: T2,
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
-  ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, R1, Unit, Unit]]
+  @scala.inline
   def call[T1, T2, T3, E](
     wrappedFunction: js.Function4[/* t1 */ T1, /* t2 */ T2, /* t3 */ T3, /* cb */ js.Function1[/* err */ E, Unit], Unit],
     t1: T1,
     t2: T2,
     t3: T3,
     callback: js.Function1[/* err */ E, Unit]
-  ): TypedFunctionCall[
-    js.Tuple3[T1, T2, T3], 
-    E, 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing], 
-    js.UndefOr[scala.Nothing]
-  ] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, Unit, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, Unit, Unit, Unit]]
+  @scala.inline
   def call[T1, R1, R2, R3, E](
     wrappedFunction: js.Function2[
       /* t1 */ T1, 
@@ -546,9 +596,8 @@ object mod {
     ],
     t1: T1,
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
-  ): TypedFunctionCall[js.Array[T1], E, R1, R2, R3] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Array[T1], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Array[T1], E, R1, R2, R3]]
+  @scala.inline
   def call[T1, T2, R1, R2, E](
     wrappedFunction: js.Function3[
       /* t1 */ T1, 
@@ -559,9 +608,8 @@ object mod {
     t1: T1,
     t2: T2,
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
-  ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, Unit]]
+  @scala.inline
   def call[T1, T2, T3, R1, E](
     wrappedFunction: js.Function4[
       /* t1 */ T1, 
@@ -574,9 +622,8 @@ object mod {
     t2: T2,
     t3: T3,
     callback: js.Function2[/* error */ E, /* r1 */ R1, Unit]
-  ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, js.UndefOr[scala.Nothing], js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, Unit, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, Unit, Unit]]
+  @scala.inline
   def call[T1, T2, R1, R2, R3, E](
     wrappedFunction: js.Function3[
       /* t1 */ T1, 
@@ -587,9 +634,8 @@ object mod {
     t1: T1,
     t2: T2,
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
-  ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, R3] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple2[T1, T2], E, R1, R2, R3]]
+  @scala.inline
   def call[T1, T2, T3, R1, R2, E](
     wrappedFunction: js.Function4[
       /* t1 */ T1, 
@@ -602,9 +648,8 @@ object mod {
     t2: T2,
     t3: T3,
     callback: js.Function3[/* error */ E, /* r1 */ R1, /* r2 */ R2, Unit]
-  ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("backoff", "call")
-  @js.native
+  ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, Unit]]
+  @scala.inline
   def call[T1, T2, T3, R1, R2, R3, E](
     wrappedFunction: js.Function4[
       /* t1 */ T1, 
@@ -617,26 +662,23 @@ object mod {
     t2: T2,
     t3: T3,
     callback: js.Function4[/* error */ E, /* r1 */ R1, /* r2 */ R2, /* r3 */ R3, Unit]
-  ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3] = js.native
+  ): TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(wrappedFunction.asInstanceOf[js.Any], t1.asInstanceOf[js.Any], t2.asInstanceOf[js.Any], t3.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[TypedFunctionCall[js.Tuple3[T1, T2, T3], E, R1, R2, R3]]
   
-  @JSImport("backoff", "exponential")
-  @js.native
-  def exponential(): Backoff = js.native
-  @JSImport("backoff", "exponential")
-  @js.native
-  def exponential(options: ExponentialOptions): Backoff = js.native
+  @scala.inline
+  def exponential(): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")().asInstanceOf[Backoff]
+  @scala.inline
+  def exponential(options: ExponentialOptions): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("exponential")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   
-  @JSImport("backoff", "fibonacci")
-  @js.native
-  def fibonacci(): Backoff = js.native
-  @JSImport("backoff", "fibonacci")
-  @js.native
-  def fibonacci(options: Options): Backoff = js.native
+  @scala.inline
+  def fibonacci(): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")().asInstanceOf[Backoff]
+  @scala.inline
+  def fibonacci(options: Options): Backoff = ^.asInstanceOf[js.Dynamic].applyDynamic("fibonacci")(options.asInstanceOf[js.Any]).asInstanceOf[Backoff]
   
-  @js.native
-  trait ExponentialOptions extends Options {
+  trait ExponentialOptions
+    extends StObject
+       with Options {
     
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
   }
   object ExponentialOptions {
     
@@ -657,9 +699,11 @@ object mod {
     }
   }
   
-  type FunctionCallAny = typings.backoff.mod.FunctionCall[js.Array[_]] with FunctionCallArgsAny
-  
   @js.native
+  trait FunctionCallAny
+    extends typings.backoff.mod.FunctionCall[js.Array[js.Any]]
+       with FunctionCallArgsAny
+  
   trait FunctionCallArgs[E, R1, R2, R3] extends StObject {
     
     /**
@@ -667,10 +711,10 @@ object mod {
       * @param results: wrapped function's return values
       */
     @JSName("addListener")
-    def addListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type = js.native
+    def addListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type
     
     @JSName("emit")
-    def emit_callback(event: callback, results: js.Tuple4[E, R1, R2, R3]): Boolean = js.native
+    def emit_callback(event: callback, results: js.Tuple4[E, R1, R2, R3]): Boolean
     
     /**
       * Returns an array containing the last arguments passed to the completion callback
@@ -686,25 +730,25 @@ object mod {
       * Note that if the call was aborted, it will contain the abort error and not the
       * last error returned by the wrapped function.
       */
-    def getLastResult(): js.Tuple4[E, R1, R2, R3] = js.native
+    def getLastResult(): js.Tuple4[E, R1, R2, R3]
     
     @JSName("listeners")
-    def listeners_callback(event: callback): js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]] = js.native
+    def listeners_callback(event: callback): js.Array[js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]]
     
     @JSName("on")
-    def on_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type = js.native
+    def on_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type
     
     @JSName("once")
-    def once_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type = js.native
+    def once_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type
     
     @JSName("prependListener")
-    def prependListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type = js.native
+    def prependListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type
     
     @JSName("prependOnceListener")
-    def prependOnceListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type = js.native
+    def prependOnceListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type
     
     @JSName("removeListener")
-    def removeListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type = js.native
+    def removeListener_callback(event: callback, listener: js.Function1[/* results */ js.Tuple4[E, R1, R2, R3], Unit]): this.type
   }
   object FunctionCallArgs {
     
@@ -725,7 +769,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FunctionCallArgsMutableBuilder[Self <: FunctionCallArgs[_, _, _, _], E, R1, R2, R3] (val x: Self with (FunctionCallArgs[E, R1, R2, R3])) extends AnyVal {
+    implicit class FunctionCallArgsMutableBuilder[Self <: FunctionCallArgs[?, ?, ?, ?], E, R1, R2, R3] (val x: Self & (FunctionCallArgs[E, R1, R2, R3])) extends AnyVal {
       
       @scala.inline
       def setAddListener(
@@ -768,7 +812,6 @@ object mod {
     }
   }
   
-  @js.native
   trait FunctionCallArgsAny extends StObject {
     
     /**
@@ -776,10 +819,10 @@ object mod {
       * @param results: wrapped function's return values
       */
     @JSName("addListener")
-    def addListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[_], Unit]): this.type = js.native
+    def addListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
     
     @JSName("emit")
-    def emit_callback(event: callback, results: js.Array[_]): Boolean = js.native
+    def emit_callback(event: callback, results: js.Array[js.Any]): Boolean
     
     /**
       * Returns an array containing the last arguments passed to the completion callback
@@ -795,39 +838,39 @@ object mod {
       * Note that if the call was aborted, it will contain the abort error and not the
       * last error returned by the wrapped function.
       */
-    def getLastResult(): js.Array[_] = js.native
+    def getLastResult(): js.Array[js.Any]
     
     @JSName("listeners")
-    def listeners_callback(event: callback): js.Array[js.Function1[/* results */ js.Array[_], Unit]] = js.native
+    def listeners_callback(event: callback): js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]]
     
     @JSName("on")
-    def on_callback(event: callback, listener: js.Function1[/* results */ js.Array[_], Unit]): this.type = js.native
+    def on_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
     
     @JSName("once")
-    def once_callback(event: callback, listener: js.Function1[/* results */ js.Array[_], Unit]): this.type = js.native
+    def once_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
     
     @JSName("prependListener")
-    def prependListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[_], Unit]): this.type = js.native
+    def prependListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
     
     @JSName("prependOnceListener")
-    def prependOnceListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[_], Unit]): this.type = js.native
+    def prependOnceListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
     
     @JSName("removeListener")
-    def removeListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[_], Unit]): this.type = js.native
+    def removeListener_callback(event: callback, listener: js.Function1[/* results */ js.Array[js.Any], Unit]): this.type
   }
   object FunctionCallArgsAny {
     
     @scala.inline
     def apply(
-      addListener: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny,
-      emit: (callback, js.Array[_]) => Boolean,
-      getLastResult: () => js.Array[_],
-      listeners: callback => js.Array[js.Function1[/* results */ js.Array[_], Unit]],
-      on: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny,
-      once: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny,
-      prependListener: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny,
-      prependOnceListener: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny,
-      removeListener: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny
+      addListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
+      emit: (callback, js.Array[js.Any]) => Boolean,
+      getLastResult: () => js.Array[js.Any],
+      listeners: callback => js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]],
+      on: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
+      once: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
+      prependListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
+      prependOnceListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny,
+      removeListener: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny
     ): FunctionCallArgsAny = {
       val __obj = js.Dynamic.literal(addListener = js.Any.fromFunction2(addListener), emit = js.Any.fromFunction2(emit), getLastResult = js.Any.fromFunction0(getLastResult), listeners = js.Any.fromFunction1(listeners), on = js.Any.fromFunction2(on), once = js.Any.fromFunction2(once), prependListener = js.Any.fromFunction2(prependListener), prependOnceListener = js.Any.fromFunction2(prependOnceListener), removeListener = js.Any.fromFunction2(removeListener))
       __obj.asInstanceOf[FunctionCallArgsAny]
@@ -837,37 +880,38 @@ object mod {
     implicit class FunctionCallArgsAnyMutableBuilder[Self <: FunctionCallArgsAny] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAddListener(value: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
+      def setAddListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "addListener", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setEmit(value: (callback, js.Array[_]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
+      def setEmit(value: (callback, js.Array[js.Any]) => Boolean): Self = StObject.set(x, "emit", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setGetLastResult(value: () => js.Array[_]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
+      def setGetLastResult(value: () => js.Array[js.Any]): Self = StObject.set(x, "getLastResult", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Array[_], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
+      def setListeners(value: callback => js.Array[js.Function1[/* results */ js.Array[js.Any], Unit]]): Self = StObject.set(x, "listeners", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setOn(value: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
+      def setOn(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "on", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setOnce(value: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+      def setOnce(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setPrependListener(value: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
+      def setPrependListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependListener", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setPrependOnceListener(value: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
+      def setPrependOnceListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "prependOnceListener", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setRemoveListener(value: (callback, js.Function1[/* results */ js.Array[_], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
+      def setRemoveListener(value: (callback, js.Function1[/* results */ js.Array[js.Any], Unit]) => FunctionCallArgsAny): Self = StObject.set(x, "removeListener", js.Any.fromFunction2(value))
     }
   }
   
   @js.native
   trait FunctionCallConstructor
-    extends Instantiable3[
+    extends StObject
+       with Instantiable3[
           (/* wrappedFunction */ js.Function1[
             (/* repeated */ js.Any) | (/* cb */ js.Function1[/* err */ js.Object, Unit]) | (/* cb */ js.Function2[/* err */ js.Object, /* r1 */ js.Object, Unit]) | (/* cb */ js.Function3[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, Unit]) | (/* cb */ js.Function4[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, /* r3 */ js.Object, Unit]), 
             Unit
@@ -887,29 +931,28 @@ object mod {
             (/* cb */ js.Function1[/* err */ js.Object, Unit]) | (/* cb */ js.Function2[/* err */ js.Object, /* r1 */ js.Object, Unit]) | (/* cb */ js.Function3[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, Unit]) | (/* cb */ js.Function4[/* err */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, /* r3 */ js.Object, Unit]), 
             Unit
           ]), 
-          (/* args */ js.Array[js.UndefOr[js.Any | js.Object]]) | (/* args */ js.Tuple2[js.Object, js.Object]) | (/* args */ js.Tuple3[js.Object, js.Object, js.Object]), 
+          (/* args */ js.Array[js.Any | js.Object | Unit]) | (/* args */ js.Tuple2[js.Object, js.Object]) | (/* args */ js.Tuple3[js.Object, js.Object, js.Object]), 
           (/* callback */ js.Function1[/* err */ js.Object, Unit]) | (/* callback */ js.Function2[
             (/* error */ js.Any) | (/* error */ js.Object), 
             (/* repeated */ js.Any) | (/* r1 */ js.Object), 
             Unit
           ]) | (/* callback */ js.Function3[/* error */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, Unit]) | (/* callback */ js.Function4[/* error */ js.Object, /* r1 */ js.Object, /* r2 */ js.Object, /* r3 */ js.Object, Unit]), 
           FunctionCallAny | (TypedFunctionCall[
-            js.Array[js.UndefOr[js.Object]] | (js.Tuple2[js.Object, js.Object]) | (js.Tuple3[js.Object, js.Object, js.Object]), 
+            (js.Array[js.Object | Unit]) | (js.Tuple2[js.Object, js.Object]) | (js.Tuple3[js.Object, js.Object, js.Object]), 
             js.Object, 
-            js.UndefOr[js.Object], 
-            js.UndefOr[js.Object], 
-            js.UndefOr[js.Object]
+            js.Object | Unit, 
+            js.Object | Unit, 
+            js.Object | Unit
           ])
         ]
   
-  @js.native
   trait Options extends StObject {
     
-    var initialDelay: js.UndefOr[Double] = js.native
+    var initialDelay: js.UndefOr[Double] = js.undefined
     
-    var maxDelay: js.UndefOr[Double] = js.native
+    var maxDelay: js.UndefOr[Double] = js.undefined
     
-    var randomisationFactor: js.UndefOr[Double] = js.native
+    var randomisationFactor: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -942,5 +985,8 @@ object mod {
     }
   }
   
-  type TypedFunctionCall[T, E, R1, R2, R3] = typings.backoff.mod.FunctionCall[T] with (FunctionCallArgs[E, R1, R2, R3])
+  @js.native
+  trait TypedFunctionCall[T, E, R1, R2, R3]
+    extends typings.backoff.mod.FunctionCall[T]
+       with FunctionCallArgs[E, R1, R2, R3]
 }

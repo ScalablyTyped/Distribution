@@ -5,12 +5,10 @@ import typings.plottable.interfacesMod.AttributeToAppliedProjector
 import typings.plottable.interfacesMod.SimpleSelection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animatorMod {
   
-  @js.native
   trait IAnimator extends StObject {
     
     /**
@@ -23,7 +21,7 @@ object animatorMod {
       *     transition object so that plots may chain the transitions between
       *     animators.
       */
-    def animate(selection: SimpleSelection[_], attrToAppliedProjector: AttributeToAppliedProjector): SimpleSelection[_] | (Transition_[_, _, _, _]) = js.native
+    def animate(selection: SimpleSelection[js.Any], attrToAppliedProjector: AttributeToAppliedProjector): SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any])
     
     /**
       * Given the number of elements, return the total time the animation requires
@@ -31,13 +29,13 @@ object animatorMod {
       * @param {number} numberofIterations The number of elements that will be drawn
       * @returns {number}
       */
-    def totalTime(numberOfIterations: Double): Double = js.native
+    def totalTime(numberOfIterations: Double): Double
   }
   object IAnimator {
     
     @scala.inline
     def apply(
-      animate: (SimpleSelection[_], AttributeToAppliedProjector) => SimpleSelection[_] | (Transition_[_, _, _, _]),
+      animate: (SimpleSelection[js.Any], AttributeToAppliedProjector) => SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any]),
       totalTime: Double => Double
     ): IAnimator = {
       val __obj = js.Dynamic.literal(animate = js.Any.fromFunction2(animate), totalTime = js.Any.fromFunction1(totalTime))
@@ -49,7 +47,7 @@ object animatorMod {
       
       @scala.inline
       def setAnimate(
-        value: (SimpleSelection[_], AttributeToAppliedProjector) => SimpleSelection[_] | (Transition_[_, _, _, _])
+        value: (SimpleSelection[js.Any], AttributeToAppliedProjector) => SimpleSelection[js.Any] | (Transition_[js.Any, js.Any, js.Any, js.Any])
       ): Self = StObject.set(x, "animate", js.Any.fromFunction2(value))
       
       @scala.inline

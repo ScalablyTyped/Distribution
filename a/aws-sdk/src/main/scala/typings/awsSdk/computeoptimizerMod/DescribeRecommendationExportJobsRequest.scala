@@ -2,31 +2,29 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRecommendationExportJobsRequest extends StObject {
   
   /**
     * An array of objects that describe a filter to return a more specific list of export jobs.
     */
-  var filters: js.UndefOr[JobFilters] = js.native
+  var filters: js.UndefOr[JobFilters] = js.undefined
   
   /**
     * The identification numbers of the export jobs to return. An export job ID is returned when you create an export using the ExportAutoScalingGroupRecommendations or ExportEC2InstanceRecommendations actions. All export jobs created in the last seven days are returned if this parameter is omitted.
     */
-  var jobIds: js.UndefOr[JobIds] = js.native
+  var jobIds: js.UndefOr[JobIds] = js.undefined
   
   /**
     * The maximum number of export jobs to return with a single request. To retrieve the remaining results, make another request with the returned NextToken value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token to advance to the next page of export jobs.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeRecommendationExportJobsRequest {
   

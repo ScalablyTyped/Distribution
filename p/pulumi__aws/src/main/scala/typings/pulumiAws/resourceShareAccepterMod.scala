@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceShareAccepterMod {
@@ -68,6 +67,10 @@ object resourceShareAccepterMod {
   /* static members */
   object ResourceShareAccepter {
     
+    @JSImport("@pulumi/aws/ram/resourceShareAccepter", "ResourceShareAccepter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResourceShareAccepter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -77,35 +80,29 @@ object resourceShareAccepterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ram/resourceShareAccepter", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResourceShareAccepter = js.native
-    @JSImport("@pulumi/aws/ram/resourceShareAccepter", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResourceShareAccepter = js.native
-    @JSImport("@pulumi/aws/ram/resourceShareAccepter", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareAccepterState): ResourceShareAccepter = js.native
-    @JSImport("@pulumi/aws/ram/resourceShareAccepter", "ResourceShareAccepter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceShareAccepterState, opts: CustomResourceOptions): ResourceShareAccepter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareAccepterState): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceShareAccepterState, opts: CustomResourceOptions): ResourceShareAccepter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceShareAccepter]
     
     /**
       * Returns true if the given object is an instance of ResourceShareAccepter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ram/resourceShareAccepter", "ResourceShareAccepter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ram/resourceShareAccepter.ResourceShareAccepter */ Boolean]
   }
   
-  @js.native
   trait ResourceShareAccepterArgs extends StObject {
     
     /**
       * The ARN of the resource share.
       */
-    val shareArn: Input[String] = js.native
+    val shareArn: Input[String]
   }
   object ResourceShareAccepterArgs {
     
@@ -123,48 +120,47 @@ object resourceShareAccepterMod {
     }
   }
   
-  @js.native
   trait ResourceShareAccepterState extends StObject {
     
     /**
       * The ARN of the resource share invitation.
       */
-    val invitationArn: js.UndefOr[Input[String]] = js.native
+    val invitationArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The account ID of the receiver account which accepts the invitation.
       */
-    val receiverAccountId: js.UndefOr[Input[String]] = js.native
+    val receiverAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of the resource ARNs shared via the resource share.
       */
-    val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The account ID of the sender account which submits the invitation.
       */
-    val senderAccountId: js.UndefOr[Input[String]] = js.native
+    val senderAccountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the resource share.
       */
-    val shareArn: js.UndefOr[Input[String]] = js.native
+    val shareArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the resource share as displayed in the console.
       */
-    val shareId: js.UndefOr[Input[String]] = js.native
+    val shareId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the resource share.
       */
-    val shareName: js.UndefOr[Input[String]] = js.native
+    val shareName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status of the resource share (ACTIVE, PENDING, FAILED, DELETING, DELETED).
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
   }
   object ResourceShareAccepterState {
     

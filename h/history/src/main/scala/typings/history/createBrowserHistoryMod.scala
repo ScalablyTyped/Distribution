@@ -3,30 +3,30 @@ package typings.history
 import typings.history.mod.History
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createBrowserHistoryMod {
   
-  @JSImport("history/createBrowserHistory", JSImport.Default)
+  @JSImport("history/createBrowserHistory", JSImport.Namespace)
   @js.native
-  def default[S](): History[S] = js.native
-  @JSImport("history/createBrowserHistory", JSImport.Default)
-  @js.native
-  def default[S](options: BrowserHistoryBuildOptions): History[S] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[S](): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[History[S]]
+  @scala.inline
+  def default[S](options: BrowserHistoryBuildOptions): History[S] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[History[S]]
+  
   trait BrowserHistoryBuildOptions extends StObject {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
-    var forceRefresh: js.UndefOr[Boolean] = js.native
+    var forceRefresh: js.UndefOr[Boolean] = js.undefined
     
     var getUserConfirmation: js.UndefOr[
         js.Function2[/* message */ String, /* callback */ js.Function1[/* result */ Boolean, Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var keyLength: js.UndefOr[Double] = js.native
+    var keyLength: js.UndefOr[Double] = js.undefined
   }
   object BrowserHistoryBuildOptions {
     

@@ -2,23 +2,21 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationOptions extends StObject {
   
   /**
     * The page number of results you wish to return
     * @default 1
     */
-  var Page: js.UndefOr[Double] = js.native
+  var Page: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of results to return per page: Max 100;
     * @default 10
     */
-  var Per_Page: js.UndefOr[Double] = js.native
+  var Per_Page: js.UndefOr[Double] = js.undefined
 }
 object PaginationOptions {
   

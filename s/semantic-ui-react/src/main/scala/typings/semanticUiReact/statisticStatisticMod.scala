@@ -13,7 +13,6 @@ import typings.semanticUiReact.statisticLabelMod.StatisticLabelProps
 import typings.semanticUiReact.statisticValueMod.StatisticValueProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statisticStatisticMod extends Shortcut {
@@ -23,7 +22,9 @@ object statisticStatisticMod extends Shortcut {
   val default: StatisticComponent = js.native
   
   @js.native
-  trait StatisticComponent extends FunctionComponent[StatisticProps] {
+  trait StatisticComponent
+    extends StObject
+       with FunctionComponent[StatisticProps] {
     
     var Group: StatelessComponent[StatisticGroupProps] = js.native
     
@@ -32,9 +33,9 @@ object statisticStatisticMod extends Shortcut {
     var Value: StatelessComponent[StatisticValueProps] = js.native
   }
   
-  @js.native
   trait StatisticProps
-    extends StrictStatisticProps
+    extends StObject
+       with StrictStatisticProps
        with /* key */ StringDictionary[js.Any]
   object StatisticProps {
     
@@ -71,44 +72,43 @@ object statisticStatisticMod extends Shortcut {
     def tiny: typings.semanticUiReact.semanticUiReactStrings.tiny = "tiny".asInstanceOf[typings.semanticUiReact.semanticUiReactStrings.tiny]
   }
   
-  @js.native
   trait StrictStatisticProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** A statistic can be formatted to be different colors. */
-    var color: js.UndefOr[SemanticCOLORS] = js.native
+    var color: js.UndefOr[SemanticCOLORS] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A statistic can sit to the left or right of other content. */
-    var floated: js.UndefOr[SemanticFLOATS] = js.native
+    var floated: js.UndefOr[SemanticFLOATS] = js.undefined
     
     /** A statistic can present its measurement horizontally. */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /** A statistic can be formatted to fit on a dark background. */
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
     /** Label content of the Statistic. */
-    var label: js.UndefOr[SemanticShorthandContent] = js.native
+    var label: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A statistic can vary in size. */
-    var size: js.UndefOr[StatisticSizeProp] = js.native
+    var size: js.UndefOr[StatisticSizeProp] = js.undefined
     
     /** Format the StatisticValue with smaller font size to fit nicely beside number values. */
-    var text: js.UndefOr[Boolean] = js.native
+    var text: js.UndefOr[Boolean] = js.undefined
     
     /** Value content of the Statistic. */
-    var value: js.UndefOr[SemanticShorthandContent] = js.native
+    var value: js.UndefOr[SemanticShorthandContent] = js.undefined
   }
   object StrictStatisticProps {
     

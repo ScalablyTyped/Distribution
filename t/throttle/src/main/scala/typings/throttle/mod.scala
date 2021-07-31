@@ -4,7 +4,6 @@ import typings.node.streamMod.Transform
 import typings.node.streamMod.TransformOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,12 +15,13 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
-  trait Options extends TransformOptions {
+  trait Options
+    extends StObject
+       with TransformOptions {
     
-    var bps: Double = js.native
+    var bps: Double
     
-    var chunkSize: js.UndefOr[Double] = js.native
+    var chunkSize: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

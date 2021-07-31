@@ -5,28 +5,26 @@ import typings.lodashDecorators.commonMod.ResolvableFunction
 import typings.lodashDecorators.factoryMod.DecoratorConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedMod {
   
-  @js.native
   trait ApplicateOptions extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var config: DecoratorConfig = js.native
+    var config: DecoratorConfig
     
-    var instance: js.UndefOr[js.Object] = js.native
+    var instance: js.UndefOr[js.Object] = js.undefined
     
-    var target: js.Any = js.native
+    var target: js.Any
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ApplicateOptions {
     
     @scala.inline
-    def apply(args: js.Array[_], config: DecoratorConfig, target: js.Any, value: js.Any): ApplicateOptions = {
+    def apply(args: js.Array[js.Any], config: DecoratorConfig, target: js.Any, value: js.Any): ApplicateOptions = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ApplicateOptions]
     }
@@ -35,7 +33,7 @@ object sharedMod {
     implicit class ApplicateOptionsMutableBuilder[Self <: ApplicateOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -57,17 +55,16 @@ object sharedMod {
     }
   }
   
-  @js.native
   trait DebounceOptions extends StObject {
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var maxWait: js.UndefOr[Double] = js.native
+    var maxWait: js.UndefOr[Double] = js.undefined
     
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
     
     @JSName("wait")
-    var wait_FDebounceOptions: js.UndefOr[Double] = js.native
+    var wait_FDebounceOptions: js.UndefOr[Double] = js.undefined
   }
   object DebounceOptions {
     
@@ -106,14 +103,13 @@ object sharedMod {
     }
   }
   
-  @js.native
   trait MemoizeConfig[T, U] extends StObject {
     
-    var cache: js.UndefOr[MemoizeMap[T, U]] = js.native
+    var cache: js.UndefOr[MemoizeMap[T, U]] = js.undefined
     
-    var resolver: js.UndefOr[ResolvableFunction] = js.native
+    var resolver: js.UndefOr[ResolvableFunction] = js.undefined
     
-    var `type`: js.UndefOr[Instantiable[T, U]] = js.native
+    var `type`: js.UndefOr[Instantiable[T, U]] = js.undefined
   }
   object MemoizeConfig {
     
@@ -124,7 +120,7 @@ object sharedMod {
     }
     
     @scala.inline
-    implicit class MemoizeConfigMutableBuilder[Self <: MemoizeConfig[_, _], T, U] (val x: Self with (MemoizeConfig[T, U])) extends AnyVal {
+    implicit class MemoizeConfigMutableBuilder[Self <: MemoizeConfig[?, ?], T, U] (val x: Self & (MemoizeConfig[T, U])) extends AnyVal {
       
       @scala.inline
       def setCache(value: MemoizeMap[T, U]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
@@ -146,18 +142,17 @@ object sharedMod {
     }
   }
   
-  @js.native
   trait MemoizeMap[T, U] extends StObject {
     
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    def delete(key: T): Unit = js.native
+    def delete(key: T): Unit
     
-    def get(key: T): U = js.native
+    def get(key: T): U
     
-    def has(key: T): Boolean = js.native
+    def has(key: T): Boolean
     
-    def set(key: T, value: U): Unit = js.native
+    def set(key: T, value: U): Unit
   }
   object MemoizeMap {
     
@@ -168,7 +163,7 @@ object sharedMod {
     }
     
     @scala.inline
-    implicit class MemoizeMapMutableBuilder[Self <: MemoizeMap[_, _], T, U] (val x: Self with (MemoizeMap[T, U])) extends AnyVal {
+    implicit class MemoizeMapMutableBuilder[Self <: MemoizeMap[?, ?], T, U] (val x: Self & (MemoizeMap[T, U])) extends AnyVal {
       
       @scala.inline
       def setClear(value: () => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction0(value))
@@ -190,12 +185,11 @@ object sharedMod {
     }
   }
   
-  @js.native
   trait ThrottleOptions extends StObject {
     
-    var leading: js.UndefOr[Boolean] = js.native
+    var leading: js.UndefOr[Boolean] = js.undefined
     
-    var trailing: js.UndefOr[Boolean] = js.native
+    var trailing: js.UndefOr[Boolean] = js.undefined
   }
   object ThrottleOptions {
     

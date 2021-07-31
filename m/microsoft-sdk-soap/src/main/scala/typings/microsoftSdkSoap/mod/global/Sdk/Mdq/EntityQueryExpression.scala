@@ -2,7 +2,6 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Sdk.Mdq.EntityQueryExpression")
@@ -17,7 +16,7 @@ class EntityQueryExpression protected () extends StObject {
   def this(
     criteria: MetadataFilterExpression,
     properties: MetadataPropertiesExpression,
-    attributeQuery: js.UndefOr[scala.Nothing],
+    attributeQuery: Unit,
     relationshipQuery: RelationshipQueryExpression
   ) = this()
   def this(
@@ -29,14 +28,14 @@ class EntityQueryExpression protected () extends StObject {
   def this(
     criteria: MetadataFilterExpression,
     properties: MetadataPropertiesExpression,
-    attributeQuery: js.UndefOr[scala.Nothing],
-    relationshipQuery: js.UndefOr[scala.Nothing],
+    attributeQuery: Unit,
+    relationshipQuery: Unit,
     labelQuery: LabelQueryExpression
   ) = this()
   def this(
     criteria: MetadataFilterExpression,
     properties: MetadataPropertiesExpression,
-    attributeQuery: js.UndefOr[scala.Nothing],
+    attributeQuery: Unit,
     relationshipQuery: RelationshipQueryExpression,
     labelQuery: LabelQueryExpression
   ) = this()
@@ -44,7 +43,7 @@ class EntityQueryExpression protected () extends StObject {
     criteria: MetadataFilterExpression,
     properties: MetadataPropertiesExpression,
     attributeQuery: AttributeQueryExpression,
-    relationshipQuery: js.UndefOr[scala.Nothing],
+    relationshipQuery: Unit,
     labelQuery: LabelQueryExpression
   ) = this()
   def this(

@@ -4,7 +4,6 @@ import typings.inversify.interfacesMod.interfaces.ContainerOptions
 import typings.inversify.interfacesMod.interfaces.ServiceIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object containerMod {
@@ -12,7 +11,8 @@ object containerMod {
   @JSImport("inversify/dts/container/container", "Container")
   @js.native
   class Container ()
-    extends typings.inversify.interfacesMod.interfaces.Container {
+    extends StObject
+       with typings.inversify.interfacesMod.interfaces.Container {
     def this(containerOptions: ContainerOptions) = this()
     
     var _bindingDictionary: js.Any = js.native
@@ -48,12 +48,15 @@ object containerMod {
   }
   object Container {
     
-    /* static member */
-    @JSImport("inversify/dts/container/container", "Container.merge")
+    @JSImport("inversify/dts/container/container", "Container")
     @js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
     def merge(
       container1: typings.inversify.interfacesMod.interfaces.Container,
       container2: typings.inversify.interfacesMod.interfaces.Container
-    ): typings.inversify.interfacesMod.interfaces.Container = js.native
+    ): typings.inversify.interfacesMod.interfaces.Container = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(container1.asInstanceOf[js.Any], container2.asInstanceOf[js.Any])).asInstanceOf[typings.inversify.interfacesMod.interfaces.Container]
   }
 }

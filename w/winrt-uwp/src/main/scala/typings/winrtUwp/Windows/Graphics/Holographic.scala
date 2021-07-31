@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Graphics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Holographic {
   
-  @js.native
   trait HolographicCamera extends StObject {
     
-    var id: js.Any = js.native
+    var id: js.Any
     
     /* unmapped type */
-    var isStereo: js.Any = js.native
+    var isStereo: js.Any
     
     /* unmapped type */
-    var renderTargetSize: js.Any = js.native
+    var renderTargetSize: js.Any
     
     /* unmapped type */
-    var setFarPlaneDistance: js.Any = js.native
+    var setFarPlaneDistance: js.Any
     
     /* unmapped type */
-    var setNearPlaneDistance: js.Any = js.native
+    var setNearPlaneDistance: js.Any
     
     /* unmapped type */
-    var viewportScaleFactor: js.Any = js.native
+    var viewportScaleFactor: js.Any
   }
   object HolographicCamera {
     
@@ -65,31 +63,30 @@ object Holographic {
     }
   }
   
-  @js.native
   trait HolographicCameraPose extends StObject {
     
-    var farPlaneDistance: js.Any = js.native
+    var farPlaneDistance: js.Any
     
     /* unmapped type */
-    var holographicCamera: js.Any = js.native
+    var holographicCamera: js.Any
     
     /* unmapped type */
-    var nearPlaneDistance: js.Any = js.native
+    var nearPlaneDistance: js.Any
     
     /* unmapped type */
-    var projectionTransform: js.Any = js.native
+    var projectionTransform: js.Any
     
     /* unmapped type */
-    var tryGetCullingFrustum: js.Any = js.native
+    var tryGetCullingFrustum: js.Any
     
     /* unmapped type */
-    var tryGetViewTransform: js.Any = js.native
+    var tryGetViewTransform: js.Any
     
     /* unmapped type */
-    var tryGetVisibleFrustum: js.Any = js.native
+    var tryGetVisibleFrustum: js.Any
     
     /* unmapped type */
-    var viewport: js.Any = js.native
+    var viewport: js.Any
   }
   object HolographicCameraPose {
     
@@ -137,16 +134,15 @@ object Holographic {
     }
   }
   
-  @js.native
   trait HolographicCameraRenderingParameters extends StObject {
     
-    var direct3D11BackBuffer: js.Any = js.native
+    var direct3D11BackBuffer: js.Any
     
     /* unmapped type */
-    var direct3D11Device: js.Any = js.native
+    var direct3D11Device: js.Any
     
     /* unmapped type */
-    var setFocusPoint: js.Any = js.native
+    var setFocusPoint: js.Any
   }
   object HolographicCameraRenderingParameters {
     
@@ -170,31 +166,30 @@ object Holographic {
     }
   }
   
-  @js.native
   trait HolographicFrame extends StObject {
     
-    var addedCameras: js.Any = js.native
+    var addedCameras: js.Any
     
     /* unmapped type */
-    var currentPrediction: js.Any = js.native
+    var currentPrediction: js.Any
     
     /* unmapped type */
-    var duration: js.Any = js.native
+    var duration: js.Any
     
     /* unmapped type */
-    var getRenderingParameters: js.Any = js.native
+    var getRenderingParameters: js.Any
     
     /* unmapped type */
-    var presentUsingCurrentPrediction: js.Any = js.native
+    var presentUsingCurrentPrediction: js.Any
     
     /* unmapped type */
-    var removedCameras: js.Any = js.native
+    var removedCameras: js.Any
     
     /* unmapped type */
-    var updateCurrentPrediction: js.Any = js.native
+    var updateCurrentPrediction: js.Any
     
     /* unmapped type */
-    var waitForFrameToFinish: js.Any = js.native
+    var waitForFrameToFinish: js.Any
   }
   object HolographicFrame {
     
@@ -242,13 +237,12 @@ object Holographic {
     }
   }
   
-  @js.native
   trait HolographicFramePrediction extends StObject {
     
-    var cameraPoses: js.Any = js.native
+    var cameraPoses: js.Any
     
     /* unmapped type */
-    var timestamp: js.Any = js.native
+    var timestamp: js.Any
   }
   object HolographicFramePrediction {
     
@@ -269,29 +263,28 @@ object Holographic {
     }
   }
   
-  @js.native
   trait HolographicSpace extends StObject {
     
     /* unmapped type */
-    var addEventListener: js.Any = js.native
+    var addEventListener: js.Any
     
     /* unmapped type */
-    var createNextFrame: js.Any = js.native
+    var createNextFrame: js.Any
     
     /* unmapped type */
-    var oncameraadded: js.Any = js.native
+    var oncameraadded: js.Any
     
     /* unmapped type */
-    var oncameraremoved: js.Any = js.native
+    var oncameraremoved: js.Any
     
     /* unmapped type */
-    var primaryAdapterId: js.Any = js.native
+    var primaryAdapterId: js.Any
     
     /* unmapped type */
-    var removeEventListener: js.Any = js.native
+    var removeEventListener: js.Any
     
     /* unmapped type */
-    var setDirect3D11Device: js.Any = js.native
+    var setDirect3D11Device: js.Any
   }
   object HolographicSpace {
     
@@ -335,13 +328,12 @@ object Holographic {
     }
   }
   
-  @js.native
   trait HolographicSpaceCameraAddedEventArgs extends StObject {
     
-    var camera: js.Any = js.native
+    var camera: js.Any
     
     /* unmapped type */
-    var getDeferral: js.Any = js.native
+    var getDeferral: js.Any
   }
   object HolographicSpaceCameraAddedEventArgs {
     
@@ -362,10 +354,9 @@ object Holographic {
     }
   }
   
-  @js.native
   trait HolographicSpaceCameraRemovedEventArgs extends StObject {
     
-    var camera: js.Any = js.native
+    var camera: js.Any
   }
   object HolographicSpaceCameraRemovedEventArgs {
     

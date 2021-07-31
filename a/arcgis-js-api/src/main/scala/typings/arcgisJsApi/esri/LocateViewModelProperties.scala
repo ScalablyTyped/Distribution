@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocateViewModelProperties
-  extends GeolocationPositioningProperties
+  extends StObject
+     with GeolocationPositioningProperties
      with GoToProperties
 object LocateViewModelProperties {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,20 +11,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to control collecting a signature.
   */
-@js.native
-trait XReferenceCollector extends XInterface {
+trait XReferenceCollector
+  extends StObject
+     with XInterface {
   
   /**
     * Sets the reference count of the signature.
     * @param count the reference count of the signature
     */
-  def setReferenceCount(count: Double): Unit = js.native
+  def setReferenceCount(count: Double): Unit
   
   /**
     * Set the keeper id of the element collector of the referenced element.
     * @param id the keeper id of the element collector, which is collecting a referenced element
     */
-  def setReferenceId(id: Double): Unit = js.native
+  def setReferenceId(id: Double): Unit
 }
 object XReferenceCollector {
   

@@ -2,20 +2,18 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Custom attribute values that are either filterable or non-filterable.
   */
-@js.native
 trait SchemaCustomAttribute extends StObject {
   
   /**
     * Optional.  If the `filterable` flag is true, custom field values are
     * searchable. If false, values are not searchable.  Default is false.
     */
-  var filterable: js.UndefOr[Boolean] = js.native
+  var filterable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional but at least one of string_values or long_value must be
@@ -23,7 +21,7 @@ trait SchemaCustomAttribute extends StObject {
     * `GT`, `GE`, `LE`, `LT`) over filterable `long_value`. For `long_value`, a
     * value between Long.MIN and Long.MAX is allowed.
     */
-  var longValue: js.UndefOr[String] = js.native
+  var longValue: js.UndefOr[String] = js.undefined
   
   /**
     * Optional but at least one of string_values or long_value must be
@@ -34,7 +32,7 @@ trait SchemaCustomAttribute extends StObject {
     * For unfilterable `string_values`, the maximum total byte size of
     * unfilterable `string_values` is 50KB.  Empty strings are not allowed.
     */
-  var stringValues: js.UndefOr[SchemaStringValues] = js.native
+  var stringValues: js.UndefOr[SchemaStringValues] = js.undefined
 }
 object SchemaCustomAttribute {
   

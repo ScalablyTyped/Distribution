@@ -3,7 +3,6 @@ package typings.xstyledStyledComponents
 import typings.xstyledStyledComponents.mod.BreakpointName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xstyledStyledComponentsStrings {
@@ -494,7 +493,9 @@ object xstyledStyledComponentsStrings {
   def legend: legend = "legend".asInstanceOf[legend]
   
   @js.native
-  sealed trait lg extends BreakpointName
+  sealed trait lg
+    extends StObject
+       with BreakpointName
   @scala.inline
   def lg: lg = "lg".asInstanceOf[lg]
   
@@ -544,7 +545,9 @@ object xstyledStyledComponentsStrings {
   def mask: mask = "mask".asInstanceOf[mask]
   
   @js.native
-  sealed trait md extends BreakpointName
+  sealed trait md
+    extends StObject
+       with BreakpointName
   @scala.inline
   def md: md = "md".asInstanceOf[md]
   
@@ -724,7 +727,9 @@ object xstyledStyledComponentsStrings {
   def slot: slot = "slot".asInstanceOf[slot]
   
   @js.native
-  sealed trait sm extends BreakpointName
+  sealed trait sm
+    extends StObject
+       with BreakpointName
   @scala.inline
   def sm: sm = "sm".asInstanceOf[sm]
   
@@ -904,12 +909,16 @@ object xstyledStyledComponentsStrings {
   def webview: webview = "webview".asInstanceOf[webview]
   
   @js.native
-  sealed trait xl extends BreakpointName
+  sealed trait xl
+    extends StObject
+       with BreakpointName
   @scala.inline
   def xl: xl = "xl".asInstanceOf[xl]
   
   @js.native
-  sealed trait xs extends BreakpointName
+  sealed trait xs
+    extends StObject
+       with BreakpointName
   @scala.inline
   def xs: xs = "xs".asInstanceOf[xs]
 }

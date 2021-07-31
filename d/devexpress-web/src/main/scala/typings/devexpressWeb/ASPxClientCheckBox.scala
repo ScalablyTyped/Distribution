@@ -2,52 +2,52 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the ASPxCheckBox control.
   */
-@js.native
-trait ASPxClientCheckBox extends ASPxClientEdit {
+trait ASPxClientCheckBox
+  extends StObject
+     with ASPxClientEdit {
   
   /**
     * Occurs on the client side when the editor's checked state is changed.
     */
-  var CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCheckBox]] = js.native
+  var CheckedChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientCheckBox]]
   
   /**
     * Returns a value which specifies a check box checked state.
     */
-  def GetCheckState(): String = js.native
+  def GetCheckState(): String
   
   /**
     * Returns a value indicating whether the check box editor is checked.
     */
-  def GetChecked(): Boolean = js.native
+  def GetChecked(): Boolean
   
   /**
     * Returns the text displayed within the editor.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Sets a value specifying the state of a check box.
     * @param checkState A string value matches one of the CheckState enumeration values.
     */
-  def SetCheckState(checkState: String): Unit = js.native
+  def SetCheckState(checkState: String): Unit
   
   /**
     * Sets a value which specifies the checked status of the check box editor.
     * @param isChecked true if the check box editor is checked; otherwise, false.
     */
-  def SetChecked(isChecked: Boolean): Unit = js.native
+  def SetChecked(isChecked: Boolean): Unit
   
   /**
     * Sets the text to be displayed within the editor.
     * @param text A string value specifying the text to be displayed within the editor.
     */
-  def SetText(text: String): Unit = js.native
+  def SetText(text: String): Unit
 }
 object ASPxClientCheckBox {
   

@@ -7,7 +7,6 @@ import typings.sawtoothSdk.coreMod.PublicKey
 import typings.sawtoothSdk.signingMod.message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object secp256k1Mod {
@@ -53,6 +52,10 @@ object secp256k1Mod {
   /* static members */
   object Secp256k1PrivateKey {
     
+    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PrivateKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a private key from a hex encode set of bytes.
       *
@@ -60,17 +63,15 @@ object secp256k1Mod {
       * @return a private key instance
       * @throws if the private key is not valid
       */
-    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PrivateKey.fromHex")
-    @js.native
-    def fromHex(privateKeyHex: String): Secp256k1PrivateKey = js.native
+    @scala.inline
+    def fromHex(privateKeyHex: String): Secp256k1PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(privateKeyHex.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PrivateKey]
     
     /**
       * @return generates a random PrivateKey
       *
       */
-    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PrivateKey.newRandom")
-    @js.native
-    def newRandom(): Secp256k1PrivateKey = js.native
+    @scala.inline
+    def newRandom(): Secp256k1PrivateKey = ^.asInstanceOf[js.Dynamic].applyDynamic("newRandom")().asInstanceOf[Secp256k1PrivateKey]
   }
   
   @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PublicKey")
@@ -84,6 +85,10 @@ object secp256k1Mod {
   /* static members */
   object Secp256k1PublicKey {
     
+    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PublicKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a public key from a hex encode set of bytes.
       *
@@ -91,8 +96,7 @@ object secp256k1Mod {
       * @return a public key instance
       * @throws if the public key is not valid
       */
-    @JSImport("sawtooth-sdk/signing/secp256k1", "Secp256k1PublicKey.fromHex")
-    @js.native
-    def fromHex(publicKeyHex: String): Secp256k1PublicKey = js.native
+    @scala.inline
+    def fromHex(publicKeyHex: String): Secp256k1PublicKey = ^.asInstanceOf[js.Dynamic].applyDynamic("fromHex")(publicKeyHex.asInstanceOf[js.Any]).asInstanceOf[Secp256k1PublicKey]
   }
 }

@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourcegroups {
   
-  @js.native
   trait GroupResourceQuery extends StObject {
     
     /**
       * The resource query as a JSON string.
       */
-    var query: String = js.native
+    var query: String
     
     /**
       * The type of the resource query. Defaults to `TAG_FILTERS_1_0`.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object GroupResourceQuery {
     

@@ -2,28 +2,26 @@ package typings.watsonDeveloperCloud.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `message` operation. */
-@js.native
 trait MessageParams extends StObject {
   
   /** Unique identifier of the assistant. You can find the assistant ID of an assistant on the **Assistants** tab of the Watson Assistant tool. For information about creating assistants, see the [documentation](https://console.bluemix.net/docs/services/assistant/assistant-add.html#assistant-add-task). **Note:** Currently, the v2 API does not support creating assistants. */
-  var assistant_id: String = js.native
+  var assistant_id: String
   
   /** State information for the conversation. The context is stored by the assistant on a per-session basis. You can use this property to set or modify context variables, which can also be accessed by dialog nodes. */
-  var context: js.UndefOr[MessageContext] = js.native
+  var context: js.UndefOr[MessageContext] = js.undefined
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** An input object that includes the input text. */
-  var input: js.UndefOr[MessageInput] = js.native
+  var input: js.UndefOr[MessageInput] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
   
   /** Unique identifier of the session. */
-  var session_id: String = js.native
+  var session_id: String
 }
 object MessageParams {
   

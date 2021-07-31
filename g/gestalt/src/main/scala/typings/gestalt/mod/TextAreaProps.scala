@@ -3,37 +3,35 @@ package typings.gestalt.mod
 import typings.gestalt.anon.ValueString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextAreaProps extends StObject {
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
-  var helperText: js.UndefOr[String] = js.native
+  var helperText: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.undefined
   
-  def onChange(args: ValueString): Unit = js.native
+  def onChange(args: ValueString): Unit
   
-  var onFocus: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.undefined
   
-  var onKeyDown: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* args */ ValueString, Unit]] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object TextAreaProps {
   

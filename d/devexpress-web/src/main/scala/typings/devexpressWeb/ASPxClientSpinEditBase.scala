@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a base class for the ASPxClientSpinEdit object.
   */
-@js.native
-trait ASPxClientSpinEditBase extends ASPxClientButtonEditBase {
+trait ASPxClientSpinEditBase
+  extends StObject
+     with ASPxClientButtonEditBase {
   
   /**
     * This event is not in effect for the ASPxClientSpinEditBase. Use the ASPxClientEdit.ValueChanged event instead. Alternatively, use an editor type specific event, such as ASPxClientSpinEdit.NumberChanged for an ASPxClientSpinEdit or ASPxClientTimeEdit.DateChanged for an ASPxClientTimeEdit.
     */
   @JSName("TextChanged")
-  var TextChanged_ASPxClientSpinEditBase: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEditBase]] = js.native
+  var TextChanged_ASPxClientSpinEditBase: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientSpinEditBase]]
 }
 object ASPxClientSpinEditBase {
   

@@ -3,7 +3,6 @@ package typings.graphlib
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -257,7 +256,7 @@ object mod {
       * @argument labelFn - default edge label factory function.
       * @returns the graph, allowing this to be chained with other functions.
       */
-    def setDefaultEdgeLabel(labelFn: js.Function1[/* v */ String, _]): Graph = js.native
+    def setDefaultEdgeLabel(labelFn: js.Function1[/* v */ String, js.Any]): Graph = js.native
     /**
       * Sets the default edge label. This label will be assigned as default label
       * in case if no label was specified while setting an edge.
@@ -277,7 +276,7 @@ object mod {
       * @argument labelFn - default node label factory function.
       * @returns the graph, allowing this to be chained with other functions.
       */
-    def setDefaultNodeLabel(labelFn: js.Function1[/* v */ String, _]): Graph = js.native
+    def setDefaultNodeLabel(labelFn: js.Function1[/* v */ String, js.Any]): Graph = js.native
     /**
       * Sets the default node label. This label will be assigned as default label
       * in case if no label was specified while setting a node.
@@ -315,9 +314,9 @@ object mod {
       * @returns the graph, allowing this to be chained with other functions.
       */
     def setEdge(v: String, w: String): Graph = js.native
-    def setEdge(v: String, w: String, label: js.UndefOr[scala.Nothing], name: String): Graph = js.native
     def setEdge(v: String, w: String, label: js.Any): Graph = js.native
     def setEdge(v: String, w: String, label: js.Any, name: String): Graph = js.native
+    def setEdge(v: String, w: String, label: Unit, name: String): Graph = js.native
     
     /**
       * Sets the label of the graph.
@@ -406,6 +405,10 @@ object mod {
   
   object alg {
     
+    @JSImport("graphlib", "alg")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Finds all connected components in a graph and returns an array of these components.
       * Each component is itself an array that contains the ids of nodes in the component.
@@ -414,9 +417,8 @@ object mod {
       * @argument graph - graph to find components in.
       * @returns array of nodes list representing components
       */
-    @JSImport("graphlib", "alg.components")
-    @js.native
-    def components(graph: Graph): js.Array[js.Array[String]] = js.native
+    @scala.inline
+    def components(graph: Graph): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("components")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
     
     /**
       * This function is an implementation of Dijkstra's algorithm which finds the shortest
@@ -436,28 +438,19 @@ object mod {
       * for the purposes of shortest path traversal. By default this function uses the graph.outEdges.
       * @returns shortest pathes map that starts from node source
       */
-    @JSImport("graphlib", "alg.dijkstra")
-    @js.native
-    def dijkstra(graph: Graph, source: String): StringDictionary[Path] = js.native
-    @JSImport("graphlib", "alg.dijkstra")
-    @js.native
-    def dijkstra(
-      graph: Graph,
-      source: String,
-      weightFn: js.UndefOr[scala.Nothing],
-      edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
-    ): StringDictionary[Path] = js.native
-    @JSImport("graphlib", "alg.dijkstra")
-    @js.native
-    def dijkstra(graph: Graph, source: String, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[Path] = js.native
-    @JSImport("graphlib", "alg.dijkstra")
-    @js.native
+    @scala.inline
+    def dijkstra(graph: Graph, source: String): StringDictionary[Path] = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Path]]
+    @scala.inline
+    def dijkstra(graph: Graph, source: String, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[Path] = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Path]]
+    @scala.inline
     def dijkstra(
       graph: Graph,
       source: String,
       weightFn: js.Function1[/* e */ Edge, Double],
       edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
-    ): StringDictionary[Path] = js.native
+    ): StringDictionary[Path] = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Path]]
+    @scala.inline
+    def dijkstra(graph: Graph, source: String, weightFn: Unit, edgeFn: js.Function1[/* v */ String, js.Array[Edge]]): StringDictionary[Path] = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstra")(graph.asInstanceOf[js.Any], source.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[Path]]
     
     /**
       * This function finds the shortest path from each node to every other reachable node in
@@ -473,26 +466,18 @@ object mod {
       * for the purposes of shortest path traversal. By default this function uses the graph.outEdges.
       * @returns shortest pathes map.
       */
-    @JSImport("graphlib", "alg.dijkstraAll")
-    @js.native
-    def dijkstraAll(graph: Graph): StringDictionary[StringDictionary[Path]] = js.native
-    @JSImport("graphlib", "alg.dijkstraAll")
-    @js.native
-    def dijkstraAll(
-      graph: Graph,
-      weightFn: js.UndefOr[scala.Nothing],
-      edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
-    ): StringDictionary[StringDictionary[Path]] = js.native
-    @JSImport("graphlib", "alg.dijkstraAll")
-    @js.native
-    def dijkstraAll(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[StringDictionary[Path]] = js.native
-    @JSImport("graphlib", "alg.dijkstraAll")
-    @js.native
+    @scala.inline
+    def dijkstraAll(graph: Graph): StringDictionary[StringDictionary[Path]] = ^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[StringDictionary[Path]]]
+    @scala.inline
+    def dijkstraAll(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[StringDictionary[Path]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[StringDictionary[Path]]]
+    @scala.inline
     def dijkstraAll(
       graph: Graph,
       weightFn: js.Function1[/* e */ Edge, Double],
       edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
-    ): StringDictionary[StringDictionary[Path]] = js.native
+    ): StringDictionary[StringDictionary[Path]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[StringDictionary[Path]]]
+    @scala.inline
+    def dijkstraAll(graph: Graph, weightFn: Unit, edgeFn: js.Function1[/* v */ String, js.Array[Edge]]): StringDictionary[StringDictionary[Path]] = (^.asInstanceOf[js.Dynamic].applyDynamic("dijkstraAll")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[StringDictionary[Path]]]
     
     /**
       * Given a Graph, graph, this function returns all nodes that are part of a cycle. As there
@@ -505,9 +490,8 @@ object mod {
       * @argument graph - graph where to search cycles.
       * @returns cycles list.
       */
-    @JSImport("graphlib", "alg.findCycles")
-    @js.native
-    def findCycles(graph: Graph): js.Array[js.Array[String]] = js.native
+    @scala.inline
+    def findCycles(graph: Graph): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("findCycles")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
     
     /**
       * This function is an implementation of the Floyd-Warshall algorithm, which finds the
@@ -528,26 +512,18 @@ object mod {
       * for the purposes of shortest path traversal. By default this function uses the graph.outEdges.
       * @returns shortest pathes map.
       */
-    @JSImport("graphlib", "alg.floydWarshall")
-    @js.native
-    def floydWarshall(graph: Graph): StringDictionary[StringDictionary[Path]] = js.native
-    @JSImport("graphlib", "alg.floydWarshall")
-    @js.native
-    def floydWarshall(
-      graph: Graph,
-      weightFn: js.UndefOr[scala.Nothing],
-      edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
-    ): StringDictionary[StringDictionary[Path]] = js.native
-    @JSImport("graphlib", "alg.floydWarshall")
-    @js.native
-    def floydWarshall(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[StringDictionary[Path]] = js.native
-    @JSImport("graphlib", "alg.floydWarshall")
-    @js.native
+    @scala.inline
+    def floydWarshall(graph: Graph): StringDictionary[StringDictionary[Path]] = ^.asInstanceOf[js.Dynamic].applyDynamic("floydWarshall")(graph.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[StringDictionary[Path]]]
+    @scala.inline
+    def floydWarshall(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): StringDictionary[StringDictionary[Path]] = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarshall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[StringDictionary[Path]]]
+    @scala.inline
     def floydWarshall(
       graph: Graph,
       weightFn: js.Function1[/* e */ Edge, Double],
       edgeFn: js.Function1[/* v */ String, js.Array[Edge]]
-    ): StringDictionary[StringDictionary[Path]] = js.native
+    ): StringDictionary[StringDictionary[Path]] = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarshall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[StringDictionary[Path]]]
+    @scala.inline
+    def floydWarshall(graph: Graph, weightFn: Unit, edgeFn: js.Function1[/* v */ String, js.Array[Edge]]): StringDictionary[StringDictionary[Path]] = (^.asInstanceOf[js.Dynamic].applyDynamic("floydWarshall")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any], edgeFn.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[StringDictionary[Path]]]
     
     /**
       * Given a Graph, graph, this function returns true if the graph has no cycles and returns false if it
@@ -557,9 +533,8 @@ object mod {
       * @argument graph - graph to detect whether it acyclic ot not.
       * @returns whether graph contain cycles or not.
       */
-    @JSImport("graphlib", "alg.isAcyclic")
-    @js.native
-    def isAcyclic(graph: Graph): Boolean = js.native
+    @scala.inline
+    def isAcyclic(graph: Graph): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAcyclic")(graph.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Performs post-order depth first traversal on the input graph. If the graph is
@@ -570,9 +545,8 @@ object mod {
       * @argument vs - nodes list to traverse.
       * @returns the nodes in the order they were visited as a list of their names.
       */
-    @JSImport("graphlib", "alg.postorder")
-    @js.native
-    def postorder(graph: Graph, vs: js.Array[String]): js.Array[String] = js.native
+    @scala.inline
+    def postorder(graph: Graph, vs: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("postorder")(graph.asInstanceOf[js.Any], vs.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Performs pre-order depth first traversal on the input graph. If the graph is
@@ -583,9 +557,8 @@ object mod {
       * @argument vs - nodes list to traverse.
       * @returns the nodes in the order they were visited as a list of their names.
       */
-    @JSImport("graphlib", "alg.preorder")
-    @js.native
-    def preorder(graph: Graph, vs: js.Array[String]): js.Array[String] = js.native
+    @scala.inline
+    def preorder(graph: Graph, vs: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("preorder")(graph.asInstanceOf[js.Any], vs.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
     
     /**
       * Prim's algorithm takes a connected undirected graph and generates a minimum spanning tree. This
@@ -598,9 +571,8 @@ object mod {
       *           the graph is not connected.
       * @returns minimum spanning tree of graph.
       */
-    @JSImport("graphlib", "alg.prim")
-    @js.native
-    def prim(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): Graph = js.native
+    @scala.inline
+    def prim(graph: Graph, weightFn: js.Function1[/* e */ Edge, Double]): Graph = (^.asInstanceOf[js.Dynamic].applyDynamic("prim")(graph.asInstanceOf[js.Any], weightFn.asInstanceOf[js.Any])).asInstanceOf[Graph]
     
     /**
       * This function is an implementation of Tarjan's algorithm which finds all strongly connected
@@ -615,9 +587,8 @@ object mod {
       * @return  an array of components. Each component is itself an array that contains
       *          the ids of all nodes in the component.
       */
-    @JSImport("graphlib", "alg.tarjan")
-    @js.native
-    def tarjan(graph: Graph): js.Array[js.Array[String]] = js.native
+    @scala.inline
+    def tarjan(graph: Graph): js.Array[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tarjan")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Array[String]]]
     
     /**
       * Given a Graph graph this function applies topological sorting to it.
@@ -627,12 +598,15 @@ object mod {
       * @argument graph - graph to apply topological sorting to.
       * @returns an array of nodes such that for each edge u -> v, u appears before v in the array.
       */
-    @JSImport("graphlib", "alg.topsort")
-    @js.native
-    def topsort(graph: Graph): js.Array[String] = js.native
+    @scala.inline
+    def topsort(graph: Graph): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("topsort")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   object json {
+    
+    @JSImport("graphlib", "json")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Takes JSON as input and returns the graph representation.
@@ -647,9 +621,8 @@ object mod {
       * @argument json - JSON serializable graph representation
       * @returns graph constructed acccording to specified representation
       */
-    @JSImport("graphlib", "json.read")
-    @js.native
-    def read(json: js.Object): Graph = js.native
+    @scala.inline
+    def read(json: js.Object): Graph = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(json.asInstanceOf[js.Any]).asInstanceOf[Graph]
     
     /**
       * Creates a JSON representation of the graph that can be serialized to a string with
@@ -658,20 +631,18 @@ object mod {
       * @argument graph - target to create JSON representation of.
       * @returns JSON serializable graph representation
       */
-    @JSImport("graphlib", "json.write")
-    @js.native
-    def write(graph: Graph): js.Object = js.native
+    @scala.inline
+    def write(graph: Graph): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(graph.asInstanceOf[js.Any]).asInstanceOf[js.Object]
   }
   
-  @js.native
   trait Edge extends StObject {
     
     /** The name that uniquely identifies a multi-edge. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var v: String = js.native
+    var v: String
     
-    var w: String = js.native
+    var w: String
   }
   object Edge {
     
@@ -698,16 +669,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphOptions extends StObject {
     
     // default: false.
-    var compound: js.UndefOr[Boolean] = js.native
+    var compound: js.UndefOr[Boolean] = js.undefined
     
-    var directed: js.UndefOr[Boolean] = js.native
+    var directed: js.UndefOr[Boolean] = js.undefined
     
     // default: true.
-    var multigraph: js.UndefOr[Boolean] = js.native
+    var multigraph: js.UndefOr[Boolean] = js.undefined
   }
   object GraphOptions {
     
@@ -740,12 +710,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
-    var distance: Double = js.native
+    var distance: Double
     
-    var predecessor: String = js.native
+    var predecessor: String
   }
   object Path {
     

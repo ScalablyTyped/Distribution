@@ -2,15 +2,13 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultExtensionMethodOperations extends StObject {
   
-  def DoesActiveVaultExtensionMethodExist(MethodIdentifier: String): Boolean = js.native
+  def DoesActiveVaultExtensionMethodExist(MethodIdentifier: String): Boolean
   
-  def ExecuteVaultExtensionMethod(MethodIdentifier: String, Input: String): String = js.native
+  def ExecuteVaultExtensionMethod(MethodIdentifier: String, Input: String): String
 }
 object IVaultExtensionMethodOperations {
   

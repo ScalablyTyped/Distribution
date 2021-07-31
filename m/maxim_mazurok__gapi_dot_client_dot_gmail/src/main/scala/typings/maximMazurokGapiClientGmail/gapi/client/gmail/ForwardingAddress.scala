@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGmail.gapi.client.gmail
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForwardingAddress extends StObject {
   
   /** An email address to which messages can be forwarded. */
-  var forwardingEmail: js.UndefOr[String] = js.native
+  var forwardingEmail: js.UndefOr[String] = js.undefined
   
   /** Indicates whether this address has been verified and is usable for forwarding. Read-only. */
-  var verificationStatus: js.UndefOr[String] = js.native
+  var verificationStatus: js.UndefOr[String] = js.undefined
 }
 object ForwardingAddress {
   

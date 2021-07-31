@@ -4,7 +4,6 @@ import typings.parse.mod.global.Parse.Push.PushData
 import typings.parse.mod.global.Parse.Push.SendOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,10 +11,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Push {
   
-  @JSImport("parse", "Push.send")
+  @JSImport("parse", "Push")
   @js.native
-  def send[T](data: PushData): js.Promise[T] = js.native
-  @JSImport("parse", "Push.send")
-  @js.native
-  def send[T](data: PushData, options: SendOptions): js.Promise[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def send[T](data: PushData): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def send[T](data: PushData, options: SendOptions): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }

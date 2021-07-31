@@ -2,15 +2,13 @@ package typings.std.Intl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluralRules extends StObject {
   
-  def resolvedOptions(): ResolvedPluralRulesOptions = js.native
+  def resolvedOptions(): ResolvedPluralRulesOptions
   
-  def select(n: Double): LDMLPluralRule = js.native
+  def select(n: Double): LDMLPluralRule
 }
 object PluralRules {
   

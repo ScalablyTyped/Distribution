@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchResponseResults extends Object {
+trait SearchResponseResults
+  extends StObject
+     with Object {
   
   /**
     * An array of search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var results: js.Array[SearchResult] = js.native
+  var results: js.Array[SearchResult]
   
   /**
     * The [source](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#sources) of the selected result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var source: js.Any = js.native
+  var source: js.Any
   
   /**
     * The index of the currently selected source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var sourceIndex: Double = js.native
+  var sourceIndex: Double
 }
 object SearchResponseResults {
   

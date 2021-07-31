@@ -5,33 +5,34 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputItemStyleMod {
   
-  @JSImport("@ant-design/react-native/lib/input-item/style", JSImport.Default)
+  @JSImport("@ant-design/react-native/lib/input-item/style", JSImport.Namespace)
   @js.native
-  def default(theme: Theme): InputItemStyle = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(theme: Theme): InputItemStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(theme.asInstanceOf[js.Any]).asInstanceOf[InputItemStyle]
+  
   trait InputItemStyle extends StObject {
     
-    var clear: ViewStyle = js.native
+    var clear: ViewStyle
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var errorIcon: ViewStyle = js.native
+    var errorIcon: ViewStyle
     
-    var extra: TextStyle = js.native
+    var extra: TextStyle
     
-    var input: TextStyle = js.native
+    var input: TextStyle
     
-    var inputDisabled: TextStyle = js.native
+    var inputDisabled: TextStyle
     
-    var inputErrorColor: TextStyle = js.native
+    var inputErrorColor: TextStyle
     
-    var text: TextStyle = js.native
+    var text: TextStyle
   }
   object InputItemStyle {
     

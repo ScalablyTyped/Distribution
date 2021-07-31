@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableIoTLoggingParams extends StObject {
   
   /**
     * Specifies the types of information to be logged.
     */
-  var logLevel: LogLevel = js.native
+  var logLevel: LogLevel
   
   /**
     * The ARN of the IAM role used for logging.
     */
-  var roleArnForLogging: RoleArn = js.native
+  var roleArnForLogging: RoleArn
 }
 object EnableIoTLoggingParams {
   

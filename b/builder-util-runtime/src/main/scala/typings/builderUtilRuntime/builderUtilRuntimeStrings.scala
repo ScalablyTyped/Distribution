@@ -3,7 +3,6 @@ package typings.builderUtilRuntime
 import typings.builderUtilRuntime.publishOptionsMod.PublishProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object builderUtilRuntimeStrings {
@@ -64,12 +63,16 @@ object builderUtilRuntimeStrings {
   def base64: base64 = "base64".asInstanceOf[base64]
   
   @js.native
-  sealed trait bintray extends PublishProvider
+  sealed trait bintray
+    extends StObject
+       with PublishProvider
   @scala.inline
   def bintray: bintray = "bintray".asInstanceOf[bintray]
   
   @js.native
-  sealed trait custom extends PublishProvider
+  sealed trait custom
+    extends StObject
+       with PublishProvider
   @scala.inline
   def custom: custom = "custom".asInstanceOf[custom]
   
@@ -79,12 +82,16 @@ object builderUtilRuntimeStrings {
   def draft: draft = "draft".asInstanceOf[draft]
   
   @js.native
-  sealed trait generic extends PublishProvider
+  sealed trait generic
+    extends StObject
+       with PublishProvider
   @scala.inline
   def generic: generic = "generic".asInstanceOf[generic]
   
   @js.native
-  sealed trait github extends PublishProvider
+  sealed trait github
+    extends StObject
+       with PublishProvider
   @scala.inline
   def github: github = "github".asInstanceOf[github]
   
@@ -129,17 +136,23 @@ object builderUtilRuntimeStrings {
   def release: release = "release".asInstanceOf[release]
   
   @js.native
-  sealed trait s3 extends PublishProvider
+  sealed trait s3
+    extends StObject
+       with PublishProvider
   @scala.inline
   def s3: s3 = "s3".asInstanceOf[s3]
   
   @js.native
-  sealed trait snapStore extends PublishProvider
+  sealed trait snapStore
+    extends StObject
+       with PublishProvider
   @scala.inline
   def snapStore: snapStore = "snapStore".asInstanceOf[snapStore]
   
   @js.native
-  sealed trait spaces extends PublishProvider
+  sealed trait spaces
+    extends StObject
+       with PublishProvider
   @scala.inline
   def spaces: spaces = "spaces".asInstanceOf[spaces]
 }

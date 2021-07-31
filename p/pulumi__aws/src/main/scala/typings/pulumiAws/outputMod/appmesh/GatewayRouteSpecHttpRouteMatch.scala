@@ -2,16 +2,14 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GatewayRouteSpecHttpRouteMatch extends StObject {
   
   /**
     * Specifies the path to match requests with. This parameter must always start with `/`, which by itself matches all requests to the virtual service name.
     */
-  var prefix: String = js.native
+  var prefix: String
 }
 object GatewayRouteSpecHttpRouteMatch {
   

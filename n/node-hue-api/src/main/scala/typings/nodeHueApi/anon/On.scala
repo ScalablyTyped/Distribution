@@ -2,13 +2,11 @@ package typings.nodeHueApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait On extends StObject {
   
-  var on: Boolean = js.native
+  var on: Boolean
 }
 object On {
   

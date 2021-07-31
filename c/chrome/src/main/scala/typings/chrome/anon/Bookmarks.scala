@@ -2,17 +2,15 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bookmarks extends StObject {
   
-  var bookmarks: js.UndefOr[String] = js.native
+  var bookmarks: js.UndefOr[String] = js.undefined
   
-  var history: js.UndefOr[String] = js.native
+  var history: js.UndefOr[String] = js.undefined
   
-  var newtab: js.UndefOr[String] = js.native
+  var newtab: js.UndefOr[String] = js.undefined
 }
 object Bookmarks {
   

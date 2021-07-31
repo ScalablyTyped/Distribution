@@ -2,13 +2,11 @@ package typings.onsenui.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnsOptions extends StObject {
   
-  var parentScope: js.UndefOr[js.Object] = js.native
+  var parentScope: js.UndefOr[js.Object] = js.undefined
 }
 object OnsOptions {
   

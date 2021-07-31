@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientCloudkms.gapi.client.cloudkms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CryptoKeyVersion extends StObject {
   
   /** Output only. The CryptoKeyVersionAlgorithm that this CryptoKeyVersion supports. */
-  var algorithm: js.UndefOr[String] = js.native
+  var algorithm: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Statement that was generated and signed by the HSM at key creation time. Use this statement to verify attributes of the key as stored on the HSM, independently of
     * Google. Only provided for key versions with protection_level HSM.
     */
-  var attestation: js.UndefOr[KeyOperationAttestation] = js.native
+  var attestation: js.UndefOr[KeyOperationAttestation] = js.undefined
   
   /** Output only. The time at which this CryptoKeyVersion was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this CryptoKeyVersion's key material was destroyed. Only present if state is DESTROYED. */
-  var destroyEventTime: js.UndefOr[String] = js.native
+  var destroyEventTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time this CryptoKeyVersion's key material is scheduled for destruction. Only present if state is DESTROY_SCHEDULED. */
-  var destroyTime: js.UndefOr[String] = js.native
+  var destroyTime: js.UndefOr[String] = js.undefined
   
   /** ExternalProtectionLevelOptions stores a group of additional fields for configuring a CryptoKeyVersion that are specific to the EXTERNAL protection level. */
-  var externalProtectionLevelOptions: js.UndefOr[ExternalProtectionLevelOptions] = js.native
+  var externalProtectionLevelOptions: js.UndefOr[ExternalProtectionLevelOptions] = js.undefined
   
   /** Output only. The time this CryptoKeyVersion's key material was generated. */
-  var generateTime: js.UndefOr[String] = js.native
+  var generateTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The root cause of an import failure. Only present if state is IMPORT_FAILED. */
-  var importFailureReason: js.UndefOr[String] = js.native
+  var importFailureReason: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of the ImportJob used to import this CryptoKeyVersion. Only present if the underlying key material was imported. */
-  var importJob: js.UndefOr[String] = js.native
+  var importJob: js.UndefOr[String] = js.undefined
   
   /** Output only. The time at which this CryptoKeyVersion's key material was imported. */
-  var importTime: js.UndefOr[String] = js.native
+  var importTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name for this CryptoKeyVersion in the format `projects/∗/locations/∗/keyRings/∗/cryptoKeys/∗/cryptoKeyVersions/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The ProtectionLevel describing how crypto operations are performed with this CryptoKeyVersion. */
-  var protectionLevel: js.UndefOr[String] = js.native
+  var protectionLevel: js.UndefOr[String] = js.undefined
   
   /** The current state of the CryptoKeyVersion. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object CryptoKeyVersion {
   

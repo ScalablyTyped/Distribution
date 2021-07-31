@@ -5,14 +5,14 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TetherShepherd {
   
   @js.native
   trait IShepherdTour
-    extends Instantiable0[IShepherdTour]
+    extends StObject
+       with Instantiable0[IShepherdTour]
        with Instantiable1[/* options */ IShepherdTourOptions, IShepherdTour] {
     
     def addStep(id: String, options: IShepherdTourStep): IShepherdTour = js.native
@@ -82,12 +82,11 @@ object TetherShepherd {
     def start(): Unit = js.native
   }
   
-  @js.native
   trait IShepherdTourAttachProperties extends StObject {
     
-    var element: String = js.native
+    var element: String
     
-    var on: String = js.native
+    var on: String
   }
   object IShepherdTourAttachProperties {
     
@@ -108,16 +107,15 @@ object TetherShepherd {
     }
   }
   
-  @js.native
   trait IShepherdTourButton extends StObject {
     
-    var action: js.UndefOr[js.Function] = js.native
+    var action: js.UndefOr[js.Function] = js.undefined
     
-    var classes: js.UndefOr[String] = js.native
+    var classes: js.UndefOr[String] = js.undefined
     
-    var events: js.UndefOr[IShepherdTourButtonEventHash] = js.native
+    var events: js.UndefOr[IShepherdTourButtonEventHash] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object IShepherdTourButton {
     
@@ -155,12 +153,11 @@ object TetherShepherd {
   
   type IShepherdTourButtonEventHash = StringDictionary[js.Function]
   
-  @js.native
   trait IShepherdTourOptions extends StObject {
     
-    var defaults: js.UndefOr[IShepherdTourStepOptions] = js.native
+    var defaults: js.UndefOr[IShepherdTourStepOptions] = js.undefined
     
-    var steps: js.UndefOr[js.Array[IShepherdTourStep]] = js.native
+    var steps: js.UndefOr[js.Array[IShepherdTourStep]] = js.undefined
   }
   object IShepherdTourOptions {
     
@@ -247,33 +244,32 @@ object TetherShepherd {
     def show(): Unit = js.native
   }
   
-  @js.native
   trait IShepherdTourStepOptions extends StObject {
     
-    var advanceOn: js.UndefOr[js.Any] = js.native
+    var advanceOn: js.UndefOr[js.Any] = js.undefined
     
-    var attachTo: js.UndefOr[js.Any] = js.native
+    var attachTo: js.UndefOr[js.Any] = js.undefined
     
-    var beforeShowPromise: js.UndefOr[js.Any] = js.native
+    var beforeShowPromise: js.UndefOr[js.Any] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[IShepherdTourButton]] = js.native
+    var buttons: js.UndefOr[js.Array[IShepherdTourButton]] = js.undefined
     
-    var classes: js.UndefOr[String] = js.native
+    var classes: js.UndefOr[String] = js.undefined
     
-    var scrollTo: js.UndefOr[Boolean] = js.native
+    var scrollTo: js.UndefOr[Boolean] = js.undefined
     
-    var showCancelLink: js.UndefOr[Boolean] = js.native
+    var showCancelLink: js.UndefOr[Boolean] = js.undefined
     
-    var showOn: js.UndefOr[js.Function0[Boolean]] = js.native
+    var showOn: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     // TODO: Tie this in with the tether.d.ts
-    var tetherOptions: js.UndefOr[js.Any] = js.native
+    var tetherOptions: js.UndefOr[js.Any] = js.undefined
     
-    var text: js.UndefOr[js.Any] = js.native
+    var text: js.UndefOr[js.Any] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var when: js.UndefOr[js.Any] = js.native
+    var when: js.UndefOr[js.Any] = js.undefined
   }
   object IShepherdTourStepOptions {
     

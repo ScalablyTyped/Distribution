@@ -5,27 +5,25 @@ import typings.knockoutPaging.anon.Dictindex
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutVirtualElements extends StObject {
   
-  var allowedBindings: StringDictionary[Boolean] = js.native
+  var allowedBindings: StringDictionary[Boolean]
   
-  def childNodes(node: KnockoutVirtualElement): js.Array[Node] = js.native
+  def childNodes(node: KnockoutVirtualElement): js.Array[Node]
   
-  def emptyNode(node: KnockoutVirtualElement): Unit = js.native
+  def emptyNode(node: KnockoutVirtualElement): Unit
   
-  def firstChild(node: KnockoutVirtualElement): KnockoutVirtualElement = js.native
+  def firstChild(node: KnockoutVirtualElement): KnockoutVirtualElement
   
-  def insertAfter(container: KnockoutVirtualElement, nodeToInsert: Node, insertAfter: Node): Unit = js.native
+  def insertAfter(container: KnockoutVirtualElement, nodeToInsert: Node, insertAfter: Node): Unit
   
-  def nextSibling(node: KnockoutVirtualElement): Node = js.native
+  def nextSibling(node: KnockoutVirtualElement): Node
   
-  def prepend(node: KnockoutVirtualElement, toInsert: Node): Unit = js.native
+  def prepend(node: KnockoutVirtualElement, toInsert: Node): Unit
   
-  def setDomNodeChildren(node: KnockoutVirtualElement, newChildren: Dictindex): Unit = js.native
+  def setDomNodeChildren(node: KnockoutVirtualElement, newChildren: Dictindex): Unit
 }
 object KnockoutVirtualElements {
   

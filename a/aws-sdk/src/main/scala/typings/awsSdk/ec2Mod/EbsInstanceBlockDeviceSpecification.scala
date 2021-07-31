@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EbsInstanceBlockDeviceSpecification extends StObject {
   
   /**
     * Indicates whether the volume is deleted on instance termination.
     */
-  var DeleteOnTermination: js.UndefOr[Boolean] = js.native
+  var DeleteOnTermination: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the EBS volume.
     */
-  var VolumeId: js.UndefOr[typings.awsSdk.ec2Mod.VolumeId] = js.native
+  var VolumeId: js.UndefOr[typings.awsSdk.ec2Mod.VolumeId] = js.undefined
 }
 object EbsInstanceBlockDeviceSpecification {
   

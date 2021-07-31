@@ -29,118 +29,116 @@ import typings.turistFetch.turistFetchStrings.SRV
 import typings.turistFetch.turistFetchStrings.TXT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Typeofdns extends StObject {
     
     // Supported getaddrinfo flags.
-    val ADDRCONFIG: Double = js.native
+    val ADDRCONFIG: Double
     
-    val ADDRGETNETWORKPARAMS: String = js.native
+    val ADDRGETNETWORKPARAMS: String
     
     /**
       * If `dns.V4MAPPED` is specified, return resolved IPv6 addresses as
       * well as IPv4 mapped IPv6 addresses.
       */
-    val ALL: Double = js.native
+    val ALL: Double
     
-    val BADFAMILY: String = js.native
+    val BADFAMILY: String
     
-    val BADFLAGS: String = js.native
+    val BADFLAGS: String
     
-    val BADHINTS: String = js.native
+    val BADHINTS: String
     
-    val BADNAME: String = js.native
+    val BADNAME: String
     
-    val BADQUERY: String = js.native
+    val BADQUERY: String
     
-    val BADRESP: String = js.native
+    val BADRESP: String
     
-    val BADSTR: String = js.native
+    val BADSTR: String
     
-    val CANCELLED: String = js.native
+    val CANCELLED: String
     
-    val CONNREFUSED: String = js.native
+    val CONNREFUSED: String
     
-    val DESTRUCTION: String = js.native
+    val DESTRUCTION: String
     
-    val EOF: String = js.native
+    val EOF: String
     
-    val FILE: String = js.native
+    val FILE: String
     
-    val FORMERR: String = js.native
+    val FORMERR: String
     
-    val LOADIPHLPAPI: String = js.native
+    val LOADIPHLPAPI: String
     
     // Error codes
-    val NODATA: String = js.native
+    val NODATA: String
     
-    val NOMEM: String = js.native
+    val NOMEM: String
     
-    val NONAME: String = js.native
+    val NONAME: String
     
-    val NOTFOUND: String = js.native
+    val NOTFOUND: String
     
-    val NOTIMP: String = js.native
+    val NOTIMP: String
     
-    val NOTINITIALIZED: String = js.native
+    val NOTINITIALIZED: String
     
-    val REFUSED: String = js.native
+    val REFUSED: String
     
-    var Resolver: Instantiable0[typings.node.dnsMod.Resolver] = js.native
+    var Resolver: Instantiable0[typings.node.dnsMod.Resolver]
     
-    val SERVFAIL: String = js.native
+    val SERVFAIL: String
     
-    val TIMEOUT: String = js.native
+    val TIMEOUT: String
     
-    val V4MAPPED: Double = js.native
+    val V4MAPPED: Double
     
-    def getServers(): js.Array[String] = js.native
-    
-    // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-    val lookup: Typeoflookup = js.native
-    
-    val lookupService: TypeoflookupService = js.native
-    
-    val promises: Typeofpromises = js.native
+    def getServers(): js.Array[String]
     
     // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-    val resolve: Typeofresolve = js.native
+    val lookup: Typeoflookup
+    
+    val lookupService: TypeoflookupService
+    
+    val promises: Typeofpromises
     
     // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-    val resolve4: Typeofresolve4 = js.native
+    val resolve: Typeofresolve
     
     // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
-    val resolve6: Typeofresolve6 = js.native
+    val resolve4: Typeofresolve4
     
-    val resolveAny: TypeofresolveAny = js.native
+    // NOTE: This namespace provides design-time support for util.promisify. Exported members do not exist at runtime.
+    val resolve6: Typeofresolve6
     
-    val resolveCname: TypeofresolveCname = js.native
+    val resolveAny: TypeofresolveAny
     
-    val resolveMx: TypeofresolveMx = js.native
+    val resolveCname: TypeofresolveCname
     
-    val resolveNaptr: TypeofresolveNaptr = js.native
+    val resolveMx: TypeofresolveMx
     
-    val resolveNs: TypeofresolveNs = js.native
+    val resolveNaptr: TypeofresolveNaptr
     
-    val resolvePtr: TypeofresolvePtr = js.native
+    val resolveNs: TypeofresolveNs
     
-    val resolveSoa: TypeofresolveSoa = js.native
+    val resolvePtr: TypeofresolvePtr
     
-    val resolveSrv: TypeofresolveSrv = js.native
+    val resolveSoa: TypeofresolveSoa
     
-    val resolveTxt: TypeofresolveTxt = js.native
+    val resolveSrv: TypeofresolveSrv
+    
+    val resolveTxt: TypeofresolveTxt
     
     def reverse(
       ip: String,
       callback: js.Function2[/* err */ ErrnoException | Null, /* hostnames */ js.Array[String], Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def setServers(servers: js.Array[String]): Unit = js.native
+    def setServers(servers: js.Array[String]): Unit
   }
   object Typeofdns {
     

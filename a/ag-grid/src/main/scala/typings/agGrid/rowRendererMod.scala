@@ -17,7 +17,6 @@ import typings.std.HTMLElement
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowRendererMod {
@@ -215,20 +214,19 @@ object rowRendererMod {
     /* private */ def workOutFirstAndLastRowsToRender(): js.Any = js.native
   }
   
-  @js.native
   trait RefreshViewParams extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var newData: js.UndefOr[Boolean] = js.native
+    var newData: js.UndefOr[Boolean] = js.undefined
     
-    var newPage: js.UndefOr[Boolean] = js.native
+    var newPage: js.UndefOr[Boolean] = js.undefined
     
-    var onlyBody: js.UndefOr[Boolean] = js.native
+    var onlyBody: js.UndefOr[Boolean] = js.undefined
     
-    var recycleRows: js.UndefOr[Boolean] = js.native
+    var recycleRows: js.UndefOr[Boolean] = js.undefined
     
-    var suppressKeepFocus: js.UndefOr[Boolean] = js.native
+    var suppressKeepFocus: js.UndefOr[Boolean] = js.undefined
   }
   object RefreshViewParams {
     

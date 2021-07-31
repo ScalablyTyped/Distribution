@@ -2,57 +2,55 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncoderSettings extends StObject {
   
-  var AudioDescriptions: listOfAudioDescription = js.native
+  var AudioDescriptions: listOfAudioDescription
   
   /**
     * Settings for ad avail blanking.
     */
-  var AvailBlanking: js.UndefOr[typings.awsSdk.medialiveMod.AvailBlanking] = js.native
+  var AvailBlanking: js.UndefOr[typings.awsSdk.medialiveMod.AvailBlanking] = js.undefined
   
   /**
     * Event-wide configuration settings for ad avail insertion.
     */
-  var AvailConfiguration: js.UndefOr[typings.awsSdk.medialiveMod.AvailConfiguration] = js.native
+  var AvailConfiguration: js.UndefOr[typings.awsSdk.medialiveMod.AvailConfiguration] = js.undefined
   
   /**
     * Settings for blackout slate.
     */
-  var BlackoutSlate: js.UndefOr[typings.awsSdk.medialiveMod.BlackoutSlate] = js.native
+  var BlackoutSlate: js.UndefOr[typings.awsSdk.medialiveMod.BlackoutSlate] = js.undefined
   
   /**
     * Settings for caption decriptions
     */
-  var CaptionDescriptions: js.UndefOr[listOfCaptionDescription] = js.native
+  var CaptionDescriptions: js.UndefOr[listOfCaptionDescription] = js.undefined
   
   /**
     * Feature Activations
     */
-  var FeatureActivations: js.UndefOr[typings.awsSdk.medialiveMod.FeatureActivations] = js.native
+  var FeatureActivations: js.UndefOr[typings.awsSdk.medialiveMod.FeatureActivations] = js.undefined
   
   /**
     * Configuration settings that apply to the event as a whole.
     */
-  var GlobalConfiguration: js.UndefOr[typings.awsSdk.medialiveMod.GlobalConfiguration] = js.native
+  var GlobalConfiguration: js.UndefOr[typings.awsSdk.medialiveMod.GlobalConfiguration] = js.undefined
   
   /**
     * Nielsen configuration settings.
     */
-  var NielsenConfiguration: js.UndefOr[typings.awsSdk.medialiveMod.NielsenConfiguration] = js.native
+  var NielsenConfiguration: js.UndefOr[typings.awsSdk.medialiveMod.NielsenConfiguration] = js.undefined
   
-  var OutputGroups: listOfOutputGroup = js.native
+  var OutputGroups: listOfOutputGroup
   
   /**
     * Contains settings used to acquire and adjust timecode information from inputs.
     */
-  var TimecodeConfig: typings.awsSdk.medialiveMod.TimecodeConfig = js.native
+  var TimecodeConfig: typings.awsSdk.medialiveMod.TimecodeConfig
   
-  var VideoDescriptions: listOfVideoDescription = js.native
+  var VideoDescriptions: listOfVideoDescription
 }
 object EncoderSettings {
   

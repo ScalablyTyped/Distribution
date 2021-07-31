@@ -2,23 +2,23 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WarningOptions extends ResultOptions {
+trait WarningOptions
+  extends StObject
+     with ResultOptions {
   
   /**
     * The index inside a node's string that should be highlighted as
     * source of warning.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * A word inside a node's string that should be highlighted as source
     * of warning.
     */
-  var word: js.UndefOr[String] = js.native
+  var word: js.UndefOr[String] = js.undefined
 }
 object WarningOptions {
   

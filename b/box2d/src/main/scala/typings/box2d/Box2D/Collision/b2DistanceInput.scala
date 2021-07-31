@@ -3,36 +3,34 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2DistanceInput extends StObject {
   
   /**
     * Proxy A
     **/
-  var proxyA: b2DistanceProxy = js.native
+  var proxyA: b2DistanceProxy
   
   /**
     * Proxy B
     **/
-  var proxyB: b2DistanceProxy = js.native
+  var proxyB: b2DistanceProxy
   
   /**
     * Transform A
     **/
-  var transformA: b2Transform = js.native
+  var transformA: b2Transform
   
   /**
     * Transform B
     **/
-  var transformB: b2Transform = js.native
+  var transformB: b2Transform
   
   /**
     * Use shape radii in computation?
     **/
-  var useRadii: Boolean = js.native
+  var useRadii: Boolean
 }
 object b2DistanceInput {
   

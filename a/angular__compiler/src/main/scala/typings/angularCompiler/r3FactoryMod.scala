@@ -14,10 +14,13 @@ import typings.angularCompiler.render3UtilMod.R3Reference
 import typings.angularCompiler.srcUtilMod.OutputContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object r3FactoryMod {
+  
+  @JSImport("@angular/compiler/src/render3/r3_factory", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait R3FactoryDelegateType extends StObject
@@ -26,19 +29,25 @@ object r3FactoryMod {
   object R3FactoryDelegateType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[R3FactoryDelegateType with Double] = js.native
+    def apply(value: Double): js.UndefOr[R3FactoryDelegateType & Double] = js.native
     
     @js.native
-    sealed trait Class extends R3FactoryDelegateType
-    /* 0 */ val Class: typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Class with Double = js.native
+    sealed trait Class
+      extends StObject
+         with R3FactoryDelegateType
+    /* 0 */ val Class: typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Class & Double = js.native
     
     @js.native
-    sealed trait Factory extends R3FactoryDelegateType
-    /* 2 */ val Factory: typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Factory with Double = js.native
+    sealed trait Factory
+      extends StObject
+         with R3FactoryDelegateType
+    /* 2 */ val Factory: typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Factory & Double = js.native
     
     @js.native
-    sealed trait Function extends R3FactoryDelegateType
-    /* 1 */ val Function: typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Function with Double = js.native
+    sealed trait Function
+      extends StObject
+         with R3FactoryDelegateType
+    /* 1 */ val Function: typings.angularCompiler.r3FactoryMod.R3FactoryDelegateType.Function & Double = js.native
   }
   
   @js.native
@@ -48,27 +57,37 @@ object r3FactoryMod {
   object R3FactoryTarget extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[R3FactoryTarget with Double] = js.native
+    def apply(value: Double): js.UndefOr[R3FactoryTarget & Double] = js.native
     
     @js.native
-    sealed trait Component extends R3FactoryTarget
-    /* 1 */ val Component: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Component with Double = js.native
+    sealed trait Component
+      extends StObject
+         with R3FactoryTarget
+    /* 1 */ val Component: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Component & Double = js.native
     
     @js.native
-    sealed trait Directive extends R3FactoryTarget
-    /* 0 */ val Directive: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Directive with Double = js.native
+    sealed trait Directive
+      extends StObject
+         with R3FactoryTarget
+    /* 0 */ val Directive: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Directive & Double = js.native
     
     @js.native
-    sealed trait Injectable extends R3FactoryTarget
-    /* 2 */ val Injectable: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Injectable with Double = js.native
+    sealed trait Injectable
+      extends StObject
+         with R3FactoryTarget
+    /* 2 */ val Injectable: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Injectable & Double = js.native
     
     @js.native
-    sealed trait NgModule extends R3FactoryTarget
-    /* 4 */ val NgModule: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.NgModule with Double = js.native
+    sealed trait NgModule
+      extends StObject
+         with R3FactoryTarget
+    /* 4 */ val NgModule: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.NgModule & Double = js.native
     
     @js.native
-    sealed trait Pipe extends R3FactoryTarget
-    /* 3 */ val Pipe: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Pipe with Double = js.native
+    sealed trait Pipe
+      extends StObject
+         with R3FactoryTarget
+    /* 3 */ val Pipe: typings.angularCompiler.r3FactoryMod.R3FactoryTarget.Pipe & Double = js.native
   }
   
   @js.native
@@ -78,7 +97,7 @@ object r3FactoryMod {
   object R3ResolvedDependencyType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[R3ResolvedDependencyType with Double] = js.native
+    def apply(value: Double): js.UndefOr[R3ResolvedDependencyType & Double] = js.native
     
     /**
       * The dependency is for an attribute.
@@ -86,41 +105,48 @@ object r3FactoryMod {
       * The token expression is a string representing the attribute name.
       */
     @js.native
-    sealed trait Attribute extends R3ResolvedDependencyType
-    /* 1 */ val Attribute: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.Attribute with Double = js.native
+    sealed trait Attribute
+      extends StObject
+         with R3ResolvedDependencyType
+    /* 1 */ val Attribute: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.Attribute & Double = js.native
     
     /**
       * Injecting the `ChangeDetectorRef` token. Needs special handling when injected into a pipe.
       */
     @js.native
-    sealed trait ChangeDetectorRef extends R3ResolvedDependencyType
-    /* 2 */ val ChangeDetectorRef: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.ChangeDetectorRef with Double = js.native
+    sealed trait ChangeDetectorRef
+      extends StObject
+         with R3ResolvedDependencyType
+    /* 2 */ val ChangeDetectorRef: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.ChangeDetectorRef & Double = js.native
     
     /**
       * An invalid dependency (no token could be determined). An error should be thrown at runtime.
       */
     @js.native
-    sealed trait Invalid extends R3ResolvedDependencyType
-    /* 3 */ val Invalid: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.Invalid with Double = js.native
+    sealed trait Invalid
+      extends StObject
+         with R3ResolvedDependencyType
+    /* 3 */ val Invalid: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.Invalid & Double = js.native
     
     /**
       * A normal token dependency.
       */
     @js.native
-    sealed trait Token extends R3ResolvedDependencyType
-    /* 0 */ val Token: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.Token with Double = js.native
+    sealed trait Token
+      extends StObject
+         with R3ResolvedDependencyType
+    /* 0 */ val Token: typings.angularCompiler.r3FactoryMod.R3ResolvedDependencyType.Token & Double = js.native
   }
   
-  @JSImport("@angular/compiler/src/render3/r3_factory", "compileFactoryFunction")
-  @js.native
-  def compileFactoryFunction(meta: R3FactoryMetadata): R3FactoryFn = js.native
+  @scala.inline
+  def compileFactoryFunction(meta: R3FactoryMetadata): R3FactoryFn = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFactoryFunction")(meta.asInstanceOf[js.Any]).asInstanceOf[R3FactoryFn]
   
-  @JSImport("@angular/compiler/src/render3/r3_factory", "dependenciesFromGlobalMetadata")
-  @js.native
-  def dependenciesFromGlobalMetadata(`type`: CompileTypeMetadata, outputCtx: OutputContext, reflector: CompileReflector): js.Array[R3DependencyMetadata] = js.native
+  @scala.inline
+  def dependenciesFromGlobalMetadata(`type`: CompileTypeMetadata, outputCtx: OutputContext, reflector: CompileReflector): js.Array[R3DependencyMetadata] = (^.asInstanceOf[js.Dynamic].applyDynamic("dependenciesFromGlobalMetadata")(`type`.asInstanceOf[js.Any], outputCtx.asInstanceOf[js.Any], reflector.asInstanceOf[js.Any])).asInstanceOf[js.Array[R3DependencyMetadata]]
   
-  @js.native
-  trait R3ConstructorFactoryMetadata extends R3FactoryMetadata {
+  trait R3ConstructorFactoryMetadata
+    extends StObject
+       with R3FactoryMetadata {
     
     /**
       * Regardless of whether `fnOrClass` is a constructor function or a user-defined factory, it
@@ -130,13 +156,13 @@ object r3FactoryMod {
       * then one or more of the parameters wasn't resolvable and any attempt to use these deps will
       * result in a runtime error.
       */
-    var deps: js.Array[R3DependencyMetadata] | invalid | Null = js.native
+    var deps: js.Array[R3DependencyMetadata] | invalid | Null
     
     /**
       * An expression for the function which will be used to inject dependencies. The API of this
       * function could be different, and other options control how it will be invoked.
       */
-    var injectFn: ExternalReference = js.native
+    var injectFn: ExternalReference
     
     /**
       * An expression representing the constructor type, intended for use within a class definition
@@ -145,25 +171,25 @@ object r3FactoryMod {
       * This can differ from the outer `type` if the class is being compiled by ngcc and is inside
       * an IIFE structure that uses a different name internally.
       */
-    var internalType: Expression = js.native
+    var internalType: Expression
     
     /**
       * String name of the type being generated (used to name the factory function).
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Type of the target being created by the factory.
       */
-    var target: R3FactoryTarget = js.native
+    var target: R3FactoryTarget
     
     /**
       * An expression representing the interface type being constructed.
       */
-    var `type`: R3Reference = js.native
+    var `type`: R3Reference
     
     /** Number of arguments for the `type`. */
-    var typeArgumentCount: Double = js.native
+    var typeArgumentCount: Double
   }
   object R3ConstructorFactoryMetadata {
     
@@ -176,7 +202,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): R3ConstructorFactoryMetadata = {
-      val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3ConstructorFactoryMetadata]
     }
@@ -214,12 +240,13 @@ object r3FactoryMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.angularCompiler.r3FactoryMod.R3FactoryMetadata because Already inherited */ @js.native
-  trait R3DelegatedFactoryMetadata extends R3ConstructorFactoryMetadata {
+  - typings.angularCompiler.r3FactoryMod.R3FactoryMetadata because Already inherited */ trait R3DelegatedFactoryMetadata
+    extends StObject
+       with R3ConstructorFactoryMetadata {
     
-    var delegate: Expression = js.native
+    var delegate: Expression
     
-    var delegateType: Factory = js.native
+    var delegateType: Factory
   }
   object R3DelegatedFactoryMetadata {
     
@@ -234,7 +261,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): R3DelegatedFactoryMetadata = {
-      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3DelegatedFactoryMetadata]
     }
@@ -251,14 +278,15 @@ object r3FactoryMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.angularCompiler.r3FactoryMod.R3FactoryMetadata because Already inherited */ @js.native
-  trait R3DelegatedFnOrClassMetadata extends R3ConstructorFactoryMetadata {
+  - typings.angularCompiler.r3FactoryMod.R3FactoryMetadata because Already inherited */ trait R3DelegatedFnOrClassMetadata
+    extends StObject
+       with R3ConstructorFactoryMetadata {
     
-    var delegate: Expression = js.native
+    var delegate: Expression
     
-    var delegateDeps: js.Array[R3DependencyMetadata] = js.native
+    var delegateDeps: js.Array[R3DependencyMetadata]
     
-    var delegateType: Class | Function = js.native
+    var delegateType: Class | Function
   }
   object R3DelegatedFnOrClassMetadata {
     
@@ -274,7 +302,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): R3DelegatedFnOrClassMetadata = {
-      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateDeps = delegateDeps.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateDeps = delegateDeps.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3DelegatedFnOrClassMetadata]
     }
@@ -296,7 +324,6 @@ object r3FactoryMod {
     }
   }
   
-  @js.native
   trait R3DependencyMetadata extends StObject {
     
     /**
@@ -304,38 +331,38 @@ object r3FactoryMod {
       * the unknown type if no literal type is available (e.g. the attribute name is an expression).
       * Will be null otherwise.
       */
-    var attribute: Expression | Null = js.native
+    var attribute: Expression | Null
     
     /**
       * Whether the dependency has an @Host qualifier.
       */
-    var host: Boolean = js.native
+    var host: Boolean
     
     /**
       * Whether the dependency has an @Optional qualifier.
       */
-    var optional: Boolean = js.native
+    var optional: Boolean
     
     /**
       * An enum indicating whether this dependency has special meaning to Angular and needs to be
       * injected specially.
       */
-    var resolved: R3ResolvedDependencyType = js.native
+    var resolved: R3ResolvedDependencyType
     
     /**
       * Whether the dependency has an @Self qualifier.
       */
-    var self: Boolean = js.native
+    var self: Boolean
     
     /**
       * Whether the dependency has an @SkipSelf qualifier.
       */
-    var skipSelf: Boolean = js.native
+    var skipSelf: Boolean
     
     /**
       * An expression representing the token or value to be injected.
       */
-    var token: Expression = js.native
+    var token: Expression
   }
   object R3DependencyMetadata {
     
@@ -348,7 +375,7 @@ object r3FactoryMod {
       skipSelf: Boolean,
       token: Expression
     ): R3DependencyMetadata = {
-      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any], skipSelf = skipSelf.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(host = host.asInstanceOf[js.Any], optional = optional.asInstanceOf[js.Any], resolved = resolved.asInstanceOf[js.Any], self = self.asInstanceOf[js.Any], skipSelf = skipSelf.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any], attribute = null)
       __obj.asInstanceOf[R3DependencyMetadata]
     }
     
@@ -382,10 +409,11 @@ object r3FactoryMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.angularCompiler.r3FactoryMod.R3FactoryMetadata because Already inherited */ @js.native
-  trait R3ExpressionFactoryMetadata extends R3ConstructorFactoryMetadata {
+  - typings.angularCompiler.r3FactoryMod.R3FactoryMetadata because Already inherited */ trait R3ExpressionFactoryMetadata
+    extends StObject
+       with R3ConstructorFactoryMetadata {
     
-    var expression: Expression = js.native
+    var expression: Expression
   }
   object R3ExpressionFactoryMetadata {
     
@@ -399,7 +427,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): R3ExpressionFactoryMetadata = {
-      val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[R3ExpressionFactoryMetadata]
     }
@@ -412,14 +440,13 @@ object r3FactoryMod {
     }
   }
   
-  @js.native
   trait R3FactoryFn extends StObject {
     
-    var factory: Expression = js.native
+    var factory: Expression
     
-    var statements: js.Array[Statement] = js.native
+    var statements: js.Array[Statement]
     
-    var `type`: ExpressionType_ = js.native
+    var `type`: ExpressionType_
   }
   object R3FactoryFn {
     
@@ -465,7 +492,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): typings.angularCompiler.r3FactoryMod.R3ConstructorFactoryMetadata = {
-      val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.angularCompiler.r3FactoryMod.R3ConstructorFactoryMetadata]
     }
@@ -481,7 +508,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): typings.angularCompiler.r3FactoryMod.R3DelegatedFactoryMetadata = {
-      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.angularCompiler.r3FactoryMod.R3DelegatedFactoryMetadata]
     }
@@ -498,7 +525,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): typings.angularCompiler.r3FactoryMod.R3DelegatedFnOrClassMetadata = {
-      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateDeps = delegateDeps.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delegate = delegate.asInstanceOf[js.Any], delegateDeps = delegateDeps.asInstanceOf[js.Any], delegateType = delegateType.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.angularCompiler.r3FactoryMod.R3DelegatedFnOrClassMetadata]
     }
@@ -513,7 +540,7 @@ object r3FactoryMod {
       `type`: R3Reference,
       typeArgumentCount: Double
     ): typings.angularCompiler.r3FactoryMod.R3ExpressionFactoryMetadata = {
-      val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], injectFn = injectFn.asInstanceOf[js.Any], internalType = internalType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], typeArgumentCount = typeArgumentCount.asInstanceOf[js.Any], deps = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.angularCompiler.r3FactoryMod.R3ExpressionFactoryMetadata]
     }

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutVoiceConnectorTerminationCredentialsRequest extends StObject {
   
   /**
     * The termination SIP credentials.
     */
-  var Credentials: js.UndefOr[CredentialList] = js.native
+  var Credentials: js.UndefOr[CredentialList] = js.undefined
   
   /**
     * The Amazon Chime Voice Connector ID.
     */
-  var VoiceConnectorId: NonEmptyString = js.native
+  var VoiceConnectorId: NonEmptyString
 }
 object PutVoiceConnectorTerminationCredentialsRequest {
   

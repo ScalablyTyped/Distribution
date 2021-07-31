@@ -2,17 +2,15 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketReplicationConfigurationRuleSourceSelectionCriteria extends StObject {
   
   /**
     * Match SSE-KMS encrypted objects (documented below). If specified, `replicaKmsKeyId`
     * in `destination` must be specified as well.
     */
-  var sseKmsEncryptedObjects: js.UndefOr[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects] = js.native
+  var sseKmsEncryptedObjects: js.UndefOr[BucketReplicationConfigurationRuleSourceSelectionCriteriaSseKmsEncryptedObjects] = js.undefined
 }
 object BucketReplicationConfigurationRuleSourceSelectionCriteria {
   

@@ -4,15 +4,13 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationProvider extends StObject {
   
-  def getNavigation(notebookUri: Uri): Thenable[NavigationResult] = js.native
+  def getNavigation(notebookUri: Uri): Thenable[NavigationResult]
   
-  val providerId: String = js.native
+  val providerId: String
 }
 object NavigationProvider {
   

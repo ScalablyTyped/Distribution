@@ -2,93 +2,91 @@ package typings.instagramPrivateApi.highlightsRepositoryHighlightsTrayResponseMo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightsRepositoryHighlightsTrayResponseItemsItem extends StObject {
   
-  var can_view_more_preview_comments: Boolean = js.native
+  var can_view_more_preview_comments: Boolean
   
-  var can_viewer_reshare: Boolean = js.native
+  var can_viewer_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: HighlightsRepositoryHighlightsTrayResponseCaption = js.native
+  var caption: HighlightsRepositoryHighlightsTrayResponseCaption
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var comment_count: Double = js.native
+  var comment_count: Double
   
-  var comment_likes_enabled: Boolean = js.native
+  var comment_likes_enabled: Boolean
   
-  var comment_threading_enabled: Boolean = js.native
+  var comment_threading_enabled: Boolean
   
-  var device_timestamp: Double = js.native
+  var device_timestamp: Double
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_audio: Boolean = js.native
+  var has_audio: Boolean
   
-  var has_liked: Boolean = js.native
+  var has_liked: Boolean
   
-  var has_more_comments: Boolean = js.native
+  var has_more_comments: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: HighlightsRepositoryHighlightsTrayResponseImageVersions2 = js.native
+  var image_versions2: HighlightsRepositoryHighlightsTrayResponseImageVersions2
   
-  var is_dash_eligible: Double = js.native
+  var is_dash_eligible: Double
   
-  var like_count: Double = js.native
+  var like_count: Double
   
-  var max_num_visible_preview_comments: Double = js.native
+  var max_num_visible_preview_comments: Double
   
-  var media_cropping_info: HighlightsRepositoryHighlightsTrayResponseMediaCroppingInfo = js.native
+  var media_cropping_info: HighlightsRepositoryHighlightsTrayResponseMediaCroppingInfo
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var nearly_complete_copyright_match: Boolean = js.native
+  var nearly_complete_copyright_match: Boolean
   
-  var next_max_id: String = js.native
+  var next_max_id: String
   
-  var number_of_qualities: Double = js.native
+  var number_of_qualities: Double
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var preview_comments: js.Array[HighlightsRepositoryHighlightsTrayResponsePreviewCommentsItem] = js.native
+  var preview_comments: js.Array[HighlightsRepositoryHighlightsTrayResponsePreviewCommentsItem]
   
-  var product_type: String = js.native
+  var product_type: String
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var thumbnails: HighlightsRepositoryHighlightsTrayResponseThumbnails = js.native
+  var thumbnails: HighlightsRepositoryHighlightsTrayResponseThumbnails
   
-  var title: String = js.native
+  var title: String
   
-  var user: HighlightsRepositoryHighlightsTrayResponseUser = js.native
+  var user: HighlightsRepositoryHighlightsTrayResponseUser
   
-  var video_codec: String = js.native
+  var video_codec: String
   
-  var video_dash_manifest: String = js.native
+  var video_dash_manifest: String
   
-  var video_duration: Double = js.native
+  var video_duration: Double
   
-  var video_versions: js.Array[HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem] = js.native
+  var video_versions: js.Array[HighlightsRepositoryHighlightsTrayResponseVideoVersionsItem]
   
-  var view_count: Double = js.native
+  var view_count: Double
 }
 object HighlightsRepositoryHighlightsTrayResponseItemsItem {
   

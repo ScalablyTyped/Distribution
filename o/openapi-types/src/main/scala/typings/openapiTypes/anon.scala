@@ -3,21 +3,19 @@ package typings.openapiTypes
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AuthorizationCode extends StObject {
     
-    var authorizationCode: js.UndefOr[Scopes] = js.native
+    var authorizationCode: js.UndefOr[Scopes] = js.undefined
     
-    var clientCredentials: js.UndefOr[RefreshUrl] = js.native
+    var clientCredentials: js.UndefOr[RefreshUrl] = js.undefined
     
-    var `implicit`: js.UndefOr[AuthorizationUrl] = js.native
+    var `implicit`: js.UndefOr[AuthorizationUrl] = js.undefined
     
-    var password: js.UndefOr[RefreshUrl] = js.native
+    var password: js.UndefOr[RefreshUrl] = js.undefined
   }
   object AuthorizationCode {
     
@@ -56,14 +54,13 @@ object anon {
     }
   }
   
-  @js.native
   trait AuthorizationUrl extends StObject {
     
-    var authorizationUrl: String = js.native
+    var authorizationUrl: String
     
-    var refreshUrl: js.UndefOr[String] = js.native
+    var refreshUrl: js.UndefOr[String] = js.undefined
     
-    var scopes: StringDictionary[String] = js.native
+    var scopes: StringDictionary[String]
   }
   object AuthorizationUrl {
     
@@ -90,14 +87,13 @@ object anon {
     }
   }
   
-  @js.native
   trait RefreshUrl extends StObject {
     
-    var refreshUrl: js.UndefOr[String] = js.native
+    var refreshUrl: js.UndefOr[String] = js.undefined
     
-    var scopes: StringDictionary[String] = js.native
+    var scopes: StringDictionary[String]
     
-    var tokenUrl: String = js.native
+    var tokenUrl: String
   }
   object RefreshUrl {
     
@@ -124,16 +120,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Scopes extends StObject {
     
-    var authorizationUrl: String = js.native
+    var authorizationUrl: String
     
-    var refreshUrl: js.UndefOr[String] = js.native
+    var refreshUrl: js.UndefOr[String] = js.undefined
     
-    var scopes: StringDictionary[String] = js.native
+    var scopes: StringDictionary[String]
     
-    var tokenUrl: String = js.native
+    var tokenUrl: String
   }
   object Scopes {
     

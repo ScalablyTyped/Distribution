@@ -2,31 +2,29 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedCreateSimulationJobRequest extends StObject {
   
   /**
     * The time, in milliseconds since the epoch, when the simulation job batch failed.
     */
-  var failedAt: js.UndefOr[FailedAt] = js.native
+  var failedAt: js.UndefOr[FailedAt] = js.undefined
   
   /**
     * The failure code.
     */
-  var failureCode: js.UndefOr[SimulationJobErrorCode] = js.native
+  var failureCode: js.UndefOr[SimulationJobErrorCode] = js.undefined
   
   /**
     * The failure reason of the simulation job request.
     */
-  var failureReason: js.UndefOr[GenericString] = js.native
+  var failureReason: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The simulation job request.
     */
-  var request: js.UndefOr[SimulationJobRequest] = js.native
+  var request: js.UndefOr[SimulationJobRequest] = js.undefined
 }
 object FailedCreateSimulationJobRequest {
   

@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBigtableColumn extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaBigtableColumn extends StObject {
     * the column family level. However, the setting at this level takes
     * precedence if &#39;encoding&#39; is set at both levels.
     */
-  var encoding: js.UndefOr[String] = js.native
+  var encoding: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] If the qualifier is not a valid BigQuery field identifier i.e.
     * does not match [a-zA-Z][a-zA-Z0-9_]*, a valid identifier must be provided
     * as the column field name and is used as field name in queries.
     */
-  var fieldName: js.UndefOr[String] = js.native
+  var fieldName: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] If this is set, only the latest version of value in this
@@ -31,7 +29,7 @@ trait SchemaBigtableColumn extends StObject {
     * column family level. However, the setting at this level takes precedence
     * if &#39;onlyReadLatest&#39; is set at both levels.
     */
-  var onlyReadLatest: js.UndefOr[Boolean] = js.native
+  var onlyReadLatest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Required] Qualifier of the column. Columns in the parent column family
@@ -42,9 +40,9 @@ trait SchemaBigtableColumn extends StObject {
     * qualifier is not a valid BigQuery field identifier i.e. does not match
     * [a-zA-Z][a-zA-Z0-9_]*, a valid identifier must be provided as field_name.
     */
-  var qualifierEncoded: js.UndefOr[String] = js.native
+  var qualifierEncoded: js.UndefOr[String] = js.undefined
   
-  var qualifierString: js.UndefOr[String] = js.native
+  var qualifierString: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The type to convert the value in cells of this column. The
@@ -55,7 +53,7 @@ trait SchemaBigtableColumn extends StObject {
     * However, the setting at this level takes precedence if &#39;type&#39; is
     * set at both levels.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaBigtableColumn {
   

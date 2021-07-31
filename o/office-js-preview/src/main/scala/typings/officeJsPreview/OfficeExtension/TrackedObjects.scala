@@ -2,7 +2,6 @@ package typings.officeJsPreview.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Collection of tracked objects, contained within a request context. See "context.trackedObjects" for more information. */

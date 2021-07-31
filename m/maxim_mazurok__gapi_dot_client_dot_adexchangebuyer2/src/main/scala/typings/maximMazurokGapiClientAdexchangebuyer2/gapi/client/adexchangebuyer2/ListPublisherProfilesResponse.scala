@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPublisherProfilesResponse extends StObject {
   
   /** List pagination support */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of matching publisher profiles. */
-  var publisherProfiles: js.UndefOr[js.Array[PublisherProfile]] = js.native
+  var publisherProfiles: js.UndefOr[js.Array[PublisherProfile]] = js.undefined
 }
 object ListPublisherProfilesResponse {
   

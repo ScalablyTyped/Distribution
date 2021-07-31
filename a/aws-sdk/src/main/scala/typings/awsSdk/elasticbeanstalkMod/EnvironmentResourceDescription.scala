@@ -2,51 +2,49 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentResourceDescription extends StObject {
   
   /**
     *  The AutoScalingGroups used by this environment. 
     */
-  var AutoScalingGroups: js.UndefOr[AutoScalingGroupList] = js.native
+  var AutoScalingGroups: js.UndefOr[AutoScalingGroupList] = js.undefined
   
   /**
     * The name of the environment.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * The Amazon EC2 instances used by this environment.
     */
-  var Instances: js.UndefOr[InstanceList] = js.native
+  var Instances: js.UndefOr[InstanceList] = js.undefined
   
   /**
     * The Auto Scaling launch configurations in use by this environment.
     */
-  var LaunchConfigurations: js.UndefOr[LaunchConfigurationList] = js.native
+  var LaunchConfigurations: js.UndefOr[LaunchConfigurationList] = js.undefined
   
   /**
     * The Amazon EC2 launch templates in use by this environment.
     */
-  var LaunchTemplates: js.UndefOr[LaunchTemplateList] = js.native
+  var LaunchTemplates: js.UndefOr[LaunchTemplateList] = js.undefined
   
   /**
     * The LoadBalancers in use by this environment.
     */
-  var LoadBalancers: js.UndefOr[LoadBalancerList] = js.native
+  var LoadBalancers: js.UndefOr[LoadBalancerList] = js.undefined
   
   /**
     * The queues used by this environment.
     */
-  var Queues: js.UndefOr[QueueList] = js.native
+  var Queues: js.UndefOr[QueueList] = js.undefined
   
   /**
     * The AutoScaling triggers in use by this environment. 
     */
-  var Triggers: js.UndefOr[TriggerList] = js.native
+  var Triggers: js.UndefOr[TriggerList] = js.undefined
 }
 object EnvironmentResourceDescription {
   

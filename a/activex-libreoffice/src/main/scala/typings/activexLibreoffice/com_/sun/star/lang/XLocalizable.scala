@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to set a {@link Locale} to be used by the object. */
-@js.native
-trait XLocalizable extends XInterface {
+trait XLocalizable
+  extends StObject
+     with XInterface {
   
   /** @returns the locale, which is used by this object. */
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns the locale, which is used by this object. */
-  def getLocale(): Locale = js.native
+  def getLocale(): Locale
   
   /** sets the locale to be used by this object. */
-  def setLocale(eLocale: Locale): Unit = js.native
+  def setLocale(eLocale: Locale): Unit
 }
 object XLocalizable {
   

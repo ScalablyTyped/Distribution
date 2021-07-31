@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangedConnectionInfo extends StObject {
   
   /**
     * Summary of details containing any connection changes.
     */
-  var connection: ConnectionSummary = js.native
+  var connection: ConnectionSummary
   
   /**
     * Owner URI of the connection that changed.
     */
-  var connectionUri: String = js.native
+  var connectionUri: String
 }
 object ChangedConnectionInfo {
   

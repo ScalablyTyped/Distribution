@@ -3,179 +3,179 @@ package typings.senchaTouch.Ext.fx
 import typings.senchaTouch.Ext.IEvented
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animation {
   
-  @js.native
-  trait IAbstract extends IEvented {
+  trait IAbstract
+    extends StObject
+       with IEvented {
     
     /** [Config Option] (Object) */
-    var before: js.UndefOr[js.Any] = js.native
+    var before: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of after
       * @returns Object
       */
-    var getAfter: js.UndefOr[js.Function0[_]] = js.native
+    var getAfter: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of before
       * @returns Object
       */
-    var getBefore: js.UndefOr[js.Function0[_]] = js.native
+    var getBefore: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of delay
       * @returns Number
       */
-    var getDelay: js.UndefOr[js.Function0[Double]] = js.native
+    var getDelay: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of direction
       * @returns String
       */
-    var getDirection: js.UndefOr[js.Function0[String]] = js.native
+    var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of duration
       * @returns Number
       */
-    var getDuration: js.UndefOr[js.Function0[Double]] = js.native
+    var getDuration: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of easing
       * @returns String
       */
-    var getEasing: js.UndefOr[js.Function0[String]] = js.native
+    var getEasing: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of element
       * @returns Object
       */
-    var getElement: js.UndefOr[js.Function0[_]] = js.native
+    var getElement: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of iteration
       * @returns Number
       */
-    var getIteration: js.UndefOr[js.Function0[Double]] = js.native
+    var getIteration: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns String
       */
-    var getName: js.UndefOr[js.Function0[String]] = js.native
+    var getName: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of onBeforeEnd
       * @returns Object
       */
-    var getOnBeforeEnd: js.UndefOr[js.Function0[_]] = js.native
+    var getOnBeforeEnd: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of onBeforeStart
       * @returns Object
       */
-    var getOnBeforeStart: js.UndefOr[js.Function0[_]] = js.native
+    var getOnBeforeStart: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of onEnd
       * @returns Object
       */
-    var getOnEnd: js.UndefOr[js.Function0[_]] = js.native
+    var getOnEnd: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of preserveEndState
       * @returns Boolean
       */
-    var getPreserveEndState: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getPreserveEndState: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of replacePrevious
       * @returns Boolean
       */
-    var getReplacePrevious: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getReplacePrevious: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of reverse
       * @returns Object
       */
-    var getReverse: js.UndefOr[js.Function0[_]] = js.native
+    var getReverse: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of scope
       * @returns Object
       */
-    var getScope: js.UndefOr[js.Function0[_]] = js.native
+    var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of after
       * @param after Object The new value.
       */
-    var setAfter: js.UndefOr[js.Function1[/* after */ js.UndefOr[js.Any], Unit]] = js.native
+    var setAfter: js.UndefOr[js.Function1[/* after */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of before
       * @param before Object The new value.
       */
-    var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of delay
       * @param delay Number The new value.
       */
-    var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[Double], Unit]] = js.native
+    var setDelay: js.UndefOr[js.Function1[/* delay */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of direction
       * @param direction String The new value.
       */
-    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
+    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of duration
       * @param duration Number The new value.
       */
-    var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.native
+    var setDuration: js.UndefOr[js.Function1[/* duration */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of easing
       * @param easing String The new value.
       */
-    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.native
+    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of element
       * @param element Object The new value.
       */
-    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.native
+    var setElement: js.UndefOr[js.Function1[/* element */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of iteration
       * @param iteration Number The new value.
       */
-    var setIteration: js.UndefOr[js.Function1[/* iteration */ js.UndefOr[Double], Unit]] = js.native
+    var setIteration: js.UndefOr[js.Function1[/* iteration */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name String The new value.
       */
-    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.native
+    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of onBeforeEnd
       * @param onBeforeEnd Object The new value.
       */
-    var setOnBeforeEnd: js.UndefOr[js.Function1[/* onBeforeEnd */ js.UndefOr[js.Any], Unit]] = js.native
+    var setOnBeforeEnd: js.UndefOr[js.Function1[/* onBeforeEnd */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of onBeforeStart
       * @param onBeforeStart Object The new value.
       */
-    var setOnBeforeStart: js.UndefOr[js.Function1[/* onBeforeStart */ js.UndefOr[js.Any], Unit]] = js.native
+    var setOnBeforeStart: js.UndefOr[js.Function1[/* onBeforeStart */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of onEnd
       * @param onEnd Object The new value.
       */
-    var setOnEnd: js.UndefOr[js.Function1[/* onEnd */ js.UndefOr[js.Any], Unit]] = js.native
+    var setOnEnd: js.UndefOr[js.Function1[/* onEnd */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of preserveEndState
       * @param preserveEndState Boolean The new value.
       */
-    var setPreserveEndState: js.UndefOr[js.Function1[/* preserveEndState */ js.UndefOr[Boolean], Unit]] = js.native
+    var setPreserveEndState: js.UndefOr[js.Function1[/* preserveEndState */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of replacePrevious
       * @param replacePrevious Boolean The new value.
       */
-    var setReplacePrevious: js.UndefOr[js.Function1[/* replacePrevious */ js.UndefOr[Boolean], Unit]] = js.native
+    var setReplacePrevious: js.UndefOr[js.Function1[/* replacePrevious */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of reverse
       * @param reverse Object The new value.
       */
-    var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.native
+    var setReverse: js.UndefOr[js.Function1[/* reverse */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of scope
       * @param scope Object The new value.
       */
-    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IAbstract {
     
@@ -201,13 +201,13 @@ object animation {
       def setEasingUndefined: Self = StObject.set(x, "easing", js.undefined)
       
       @scala.inline
-      def setGetAfter(value: () => _): Self = StObject.set(x, "getAfter", js.Any.fromFunction0(value))
+      def setGetAfter(value: () => js.Any): Self = StObject.set(x, "getAfter", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetAfterUndefined: Self = StObject.set(x, "getAfter", js.undefined)
       
       @scala.inline
-      def setGetBefore(value: () => _): Self = StObject.set(x, "getBefore", js.Any.fromFunction0(value))
+      def setGetBefore(value: () => js.Any): Self = StObject.set(x, "getBefore", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBeforeUndefined: Self = StObject.set(x, "getBefore", js.undefined)
@@ -237,7 +237,7 @@ object animation {
       def setGetEasingUndefined: Self = StObject.set(x, "getEasing", js.undefined)
       
       @scala.inline
-      def setGetElement(value: () => _): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
+      def setGetElement(value: () => js.Any): Self = StObject.set(x, "getElement", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetElementUndefined: Self = StObject.set(x, "getElement", js.undefined)
@@ -255,19 +255,19 @@ object animation {
       def setGetNameUndefined: Self = StObject.set(x, "getName", js.undefined)
       
       @scala.inline
-      def setGetOnBeforeEnd(value: () => _): Self = StObject.set(x, "getOnBeforeEnd", js.Any.fromFunction0(value))
+      def setGetOnBeforeEnd(value: () => js.Any): Self = StObject.set(x, "getOnBeforeEnd", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetOnBeforeEndUndefined: Self = StObject.set(x, "getOnBeforeEnd", js.undefined)
       
       @scala.inline
-      def setGetOnBeforeStart(value: () => _): Self = StObject.set(x, "getOnBeforeStart", js.Any.fromFunction0(value))
+      def setGetOnBeforeStart(value: () => js.Any): Self = StObject.set(x, "getOnBeforeStart", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetOnBeforeStartUndefined: Self = StObject.set(x, "getOnBeforeStart", js.undefined)
       
       @scala.inline
-      def setGetOnEnd(value: () => _): Self = StObject.set(x, "getOnEnd", js.Any.fromFunction0(value))
+      def setGetOnEnd(value: () => js.Any): Self = StObject.set(x, "getOnEnd", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetOnEndUndefined: Self = StObject.set(x, "getOnEnd", js.undefined)
@@ -285,13 +285,13 @@ object animation {
       def setGetReplacePreviousUndefined: Self = StObject.set(x, "getReplacePrevious", js.undefined)
       
       @scala.inline
-      def setGetReverse(value: () => _): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
+      def setGetReverse(value: () => js.Any): Self = StObject.set(x, "getReverse", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetReverseUndefined: Self = StObject.set(x, "getReverse", js.undefined)
       
       @scala.inline
-      def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+      def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
@@ -394,21 +394,22 @@ object animation {
     }
   }
   
-  @js.native
-  trait ICube extends IAbstract {
+  trait ICube
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (String) */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object ICube {
     
@@ -441,21 +442,22 @@ object animation {
     }
   }
   
-  @js.native
-  trait IFade extends IAbstract {
+  trait IFade
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IFade {
     
@@ -488,21 +490,22 @@ object animation {
     }
   }
   
-  @js.native
-  trait IFadeIn extends IAbstract {
+  trait IFadeIn
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IFadeIn {
     
@@ -535,8 +538,9 @@ object animation {
     }
   }
   
-  @js.native
-  trait IFadeOut extends IFade
+  trait IFadeOut
+    extends StObject
+       with IFade
   object IFadeOut {
     
     @scala.inline
@@ -546,31 +550,32 @@ object animation {
     }
   }
   
-  @js.native
-  trait IFlip extends IAbstract {
+  trait IFlip
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (String) */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of half
       * @returns Boolean
       */
-    var getHalf: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getHalf: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of out
       * @returns Object
       */
-    var getOut: js.UndefOr[js.Function0[_]] = js.native
+    var getOut: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Sets the value of half
       * @param half Boolean The new value.
       */
-    var setHalf: js.UndefOr[js.Function1[/* half */ js.UndefOr[Boolean], Unit]] = js.native
+    var setHalf: js.UndefOr[js.Function1[/* half */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Object The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[js.Any], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[js.Any], Unit]] = js.undefined
   }
   object IFlip {
     
@@ -596,7 +601,7 @@ object animation {
       def setGetHalfUndefined: Self = StObject.set(x, "getHalf", js.undefined)
       
       @scala.inline
-      def setGetOut(value: () => _): Self = StObject.set(x, "getOut", js.Any.fromFunction0(value))
+      def setGetOut(value: () => js.Any): Self = StObject.set(x, "getOut", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetOutUndefined: Self = StObject.set(x, "getOut", js.undefined)
@@ -615,21 +620,22 @@ object animation {
     }
   }
   
-  @js.native
-  trait IPop extends IAbstract {
+  trait IPop
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IPop {
     
@@ -662,21 +668,22 @@ object animation {
     }
   }
   
-  @js.native
-  trait IPopIn extends IAbstract {
+  trait IPopIn
+    extends StObject
+       with IAbstract {
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IPopIn {
     
@@ -709,8 +716,9 @@ object animation {
     }
   }
   
-  @js.native
-  trait IPopOut extends IPop
+  trait IPopOut
+    extends StObject
+       with IPop
   object IPopOut {
     
     @scala.inline
@@ -720,67 +728,68 @@ object animation {
     }
   }
   
-  @js.native
-  trait ISlide extends IAbstract {
+  trait ISlide
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (String) */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of isElementBoxFit
       * @returns Boolean
       */
-    var getIsElementBoxFit: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getIsElementBoxFit: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of offset
       * @returns Number
       */
-    var getOffset: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffset: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of useCssTransform
       * @returns Boolean
       */
-    var getUseCssTransform: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUseCssTransform: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Number) */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of containerBox
       * @param containerBox String The new value.
       */
-    var setContainerBox: js.UndefOr[js.Function1[/* containerBox */ js.UndefOr[String], Unit]] = js.native
+    var setContainerBox: js.UndefOr[js.Function1[/* containerBox */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of elementBox
       * @param elementBox String The new value.
       */
-    var setElementBox: js.UndefOr[js.Function1[/* elementBox */ js.UndefOr[String], Unit]] = js.native
+    var setElementBox: js.UndefOr[js.Function1[/* elementBox */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of isElementBoxFit
       * @param isElementBoxFit Boolean The new value.
       */
-    var setIsElementBoxFit: js.UndefOr[js.Function1[/* isElementBoxFit */ js.UndefOr[Boolean], Unit]] = js.native
+    var setIsElementBoxFit: js.UndefOr[js.Function1[/* isElementBoxFit */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of offset
       * @param offset Number The new value.
       */
-    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.native
+    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of useCssTransform
       * @param useCssTransform Boolean The new value.
       */
-    var setUseCssTransform: js.UndefOr[js.Function1[/* useCssTransform */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUseCssTransform: js.UndefOr[js.Function1[/* useCssTransform */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object ISlide {
     
@@ -873,67 +882,68 @@ object animation {
     }
   }
   
-  @js.native
-  trait ISlideIn extends IAbstract {
+  trait ISlideIn
+    extends StObject
+       with IAbstract {
     
     /** [Config Option] (String) */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of isElementBoxFit
       * @returns Boolean
       */
-    var getIsElementBoxFit: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getIsElementBoxFit: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of offset
       * @returns Number
       */
-    var getOffset: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffset: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Returns the value of useCssTransform
       * @returns Boolean
       */
-    var getUseCssTransform: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUseCssTransform: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Number) */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of containerBox
       * @param containerBox String The new value.
       */
-    var setContainerBox: js.UndefOr[js.Function1[/* containerBox */ js.UndefOr[String], Unit]] = js.native
+    var setContainerBox: js.UndefOr[js.Function1[/* containerBox */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of elementBox
       * @param elementBox String The new value.
       */
-    var setElementBox: js.UndefOr[js.Function1[/* elementBox */ js.UndefOr[String], Unit]] = js.native
+    var setElementBox: js.UndefOr[js.Function1[/* elementBox */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of isElementBoxFit
       * @param isElementBoxFit Boolean The new value.
       */
-    var setIsElementBoxFit: js.UndefOr[js.Function1[/* isElementBoxFit */ js.UndefOr[Boolean], Unit]] = js.native
+    var setIsElementBoxFit: js.UndefOr[js.Function1[/* isElementBoxFit */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of offset
       * @param offset Number The new value.
       */
-    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.native
+    var setOffset: js.UndefOr[js.Function1[/* offset */ js.UndefOr[Double], Unit]] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Method] Sets the value of useCssTransform
       * @param useCssTransform Boolean The new value.
       */
-    var setUseCssTransform: js.UndefOr[js.Function1[/* useCssTransform */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUseCssTransform: js.UndefOr[js.Function1[/* useCssTransform */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object ISlideIn {
     
@@ -1028,47 +1038,48 @@ object animation {
   
   type ISlideOut = ISlide
   
-  @js.native
-  trait IWipe extends IAnimation {
+  trait IWipe
+    extends StObject
+       with IAnimation {
     
     /** [Config Option] (String) */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of direction
       * @returns String
       */
-    var getDirection: js.UndefOr[js.Function0[String]] = js.native
+    var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of easing
       * @returns String
       */
-    var getEasing: js.UndefOr[js.Function0[String]] = js.native
+    var getEasing: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of direction
       * @param direction String The new value.
       */
-    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
+    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of easing
       * @param easing String The new value.
       */
-    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.native
+    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IWipe {
     
@@ -1137,47 +1148,48 @@ object animation {
     }
   }
   
-  @js.native
-  trait IWipeIn extends IAnimation {
+  trait IWipeIn
+    extends StObject
+       with IAnimation {
     
     /** [Config Option] (String) */
-    var direction: js.UndefOr[String] = js.native
+    var direction: js.UndefOr[String] = js.undefined
     
     /** [Config Option] (String) */
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
     /** [Method] Returns the value of direction
       * @returns String
       */
-    var getDirection: js.UndefOr[js.Function0[String]] = js.native
+    var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of easing
       * @returns String
       */
-    var getEasing: js.UndefOr[js.Function0[String]] = js.native
+    var getEasing: js.UndefOr[js.Function0[String]] = js.undefined
     
     /** [Method] Returns the value of out
       * @returns Boolean
       */
-    var getOut: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getOut: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var out: js.UndefOr[Boolean] = js.native
+    var out: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Sets the value of direction
       * @param direction String The new value.
       */
-    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
+    var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of easing
       * @param easing String The new value.
       */
-    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.native
+    var setEasing: js.UndefOr[js.Function1[/* easing */ js.UndefOr[String], Unit]] = js.undefined
     
     /** [Method] Sets the value of out
       * @param out Boolean The new value.
       */
-    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.native
+    var setOut: js.UndefOr[js.Function1[/* out */ js.UndefOr[Boolean], Unit]] = js.undefined
   }
   object IWipeIn {
     

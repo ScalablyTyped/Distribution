@@ -3,19 +3,17 @@ package typings.rcMenu.anon
 import typings.react.mod.ReactInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Open extends StObject {
   
-  var item: ReactInstance = js.native
+  var item: ReactInstance
   
-  var key: typings.react.mod.Key = js.native
+  var key: typings.react.mod.Key
   
-  var open: Boolean = js.native
+  var open: Boolean
   
-  var trigger: String = js.native
+  var trigger: String
 }
 object Open {
   

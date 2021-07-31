@@ -3,15 +3,13 @@ package typings.tern.anon
 import typings.tern.inferMod.Scope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
-  var node: typings.estree.mod.Node = js.native
+  var node: typings.estree.mod.Node
   
-  var state: Scope = js.native
+  var state: Scope
 }
 object Node {
   

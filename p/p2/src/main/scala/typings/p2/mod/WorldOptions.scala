@@ -2,19 +2,17 @@ package typings.p2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorldOptions extends StObject {
   
-  var broadphase: js.UndefOr[Broadphase] = js.native
+  var broadphase: js.UndefOr[Broadphase] = js.undefined
   
-  var gravity: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  var gravity: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  var islandSplit: js.UndefOr[Boolean] = js.native
+  var islandSplit: js.UndefOr[Boolean] = js.undefined
   
-  var solver: js.UndefOr[Solver] = js.native
+  var solver: js.UndefOr[Solver] = js.undefined
 }
 object WorldOptions {
   

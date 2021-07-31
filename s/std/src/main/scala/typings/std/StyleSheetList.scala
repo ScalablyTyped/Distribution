@@ -3,12 +3,13 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of StyleSheet. */
 @js.native
-trait StyleSheetList extends /* index */ NumberDictionary[CSSStyleSheet] {
+trait StyleSheetList
+  extends StObject
+     with /* index */ NumberDictionary[CSSStyleSheet] {
   
   def item(index: Double): CSSStyleSheet | Null = js.native
   

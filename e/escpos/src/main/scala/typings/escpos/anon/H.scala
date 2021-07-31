@@ -6,25 +6,23 @@ import typings.escpos.escposNumbers.`50`
 import typings.escpos.escposNumbers.`51`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait H extends StObject {
   
-  var H: `51` = js.native
+  var H: `51`
   
-  var L: `48` = js.native
+  var L: `48`
   
-  var M: `49` = js.native
+  var M: `49`
   
-  var Q: `50` = js.native
+  var Q: `50`
 }
 object H {
   
   @scala.inline
-  def apply(H: `51`, L: `48`, M: `49`, Q: `50`): H = {
-    val __obj = js.Dynamic.literal(H = H.asInstanceOf[js.Any], L = L.asInstanceOf[js.Any], M = M.asInstanceOf[js.Any], Q = Q.asInstanceOf[js.Any])
+  def apply(): H = {
+    val __obj = js.Dynamic.literal(H = 51, L = 48, M = 49, Q = 50)
     __obj.asInstanceOf[H]
   }
   

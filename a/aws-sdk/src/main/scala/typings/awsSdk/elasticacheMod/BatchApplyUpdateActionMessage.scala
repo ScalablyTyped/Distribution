@@ -2,26 +2,24 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchApplyUpdateActionMessage extends StObject {
   
   /**
     * The cache cluster IDs
     */
-  var CacheClusterIds: js.UndefOr[CacheClusterIdList] = js.native
+  var CacheClusterIds: js.UndefOr[CacheClusterIdList] = js.undefined
   
   /**
     * The replication group IDs
     */
-  var ReplicationGroupIds: js.UndefOr[ReplicationGroupIdList] = js.native
+  var ReplicationGroupIds: js.UndefOr[ReplicationGroupIdList] = js.undefined
   
   /**
     * The unique ID of the service update
     */
-  var ServiceUpdateName: String = js.native
+  var ServiceUpdateName: String
 }
 object BatchApplyUpdateActionMessage {
   

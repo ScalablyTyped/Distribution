@@ -2,17 +2,15 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AspectRatio extends StObject {
   
-  var aspectRatio: js.UndefOr[String] = js.native
+  var aspectRatio: js.UndefOr[String] = js.undefined
   
-  var minHeight: js.UndefOr[String] = js.native
+  var minHeight: js.UndefOr[String] = js.undefined
   
-  var minWidth: js.UndefOr[String] = js.native
+  var minWidth: js.UndefOr[String] = js.undefined
 }
 object AspectRatio {
   

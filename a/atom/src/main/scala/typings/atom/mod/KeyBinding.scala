@@ -2,13 +2,11 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyBinding extends StObject {
   
-  var command: String = js.native
+  var command: String
   
   /**
     *  Compare another KeyBinding to this instance.
@@ -16,26 +14,26 @@ trait KeyBinding extends StObject {
     *  Returns 0 if this binding is equivalent to the argument.
     *  Returns >= 1 if the argument is considered greater or of higher priority.
     */
-  def compare(other: KeyBinding): Double = js.native
+  def compare(other: KeyBinding): Double
   
   // Properties
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var keystrokeArray: js.Array[String] = js.native
+  var keystrokeArray: js.Array[String]
   
-  var keystrokeCount: Double = js.native
+  var keystrokeCount: Double
   
-  var keystrokes: String = js.native
+  var keystrokes: String
   
   // Comparison
   /** Determines whether the given keystroke matches any contained within this binding. */
-  def matches(keystroke: String): Boolean = js.native
+  def matches(keystroke: String): Boolean
   
-  var selector: String = js.native
+  var selector: String
   
-  var source: String = js.native
+  var source: String
   
-  var specificity: Double = js.native
+  var specificity: Double
 }
 object KeyBinding {
   

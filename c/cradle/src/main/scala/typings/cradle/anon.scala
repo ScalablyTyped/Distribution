@@ -2,31 +2,29 @@ package typings.cradle
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancel extends StObject {
     
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
-    var continuous: js.UndefOr[Boolean] = js.native
+    var continuous: js.UndefOr[Boolean] = js.undefined
     
-    var create_target: js.UndefOr[Boolean] = js.native
+    var create_target: js.UndefOr[Boolean] = js.undefined
     
-    var doc_ids: js.UndefOr[js.Array[String]] = js.native
+    var doc_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var proxy: js.UndefOr[String] = js.native
+    var proxy: js.UndefOr[String] = js.undefined
     
-    var query_params: js.UndefOr[js.Any] = js.native
+    var query_params: js.UndefOr[js.Any] = js.undefined
     
-    var source: String | Url = js.native
+    var source: String | Url
     
-    var target: String | Url = js.native
+    var target: String | Url
   }
   object Cancel {
     
@@ -92,24 +90,23 @@ object anon {
     }
   }
   
-  @js.native
   trait Descending extends StObject {
     
-    var descending: js.UndefOr[Boolean] = js.native
+    var descending: js.UndefOr[Boolean] = js.undefined
     
-    var endkey: js.UndefOr[js.Any] = js.native
+    var endkey: js.UndefOr[js.Any] = js.undefined
     
-    var group: js.UndefOr[Boolean] = js.native
+    var group: js.UndefOr[Boolean] = js.undefined
     
-    var include_docs: js.UndefOr[Boolean] = js.native
+    var include_docs: js.UndefOr[Boolean] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var reduce: js.UndefOr[Boolean] = js.native
+    var reduce: js.UndefOr[Boolean] = js.undefined
     
-    var startkey: js.UndefOr[js.Any] = js.native
+    var startkey: js.UndefOr[js.Any] = js.undefined
   }
   object Descending {
     
@@ -172,12 +169,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var rev: String = js.native
+    var rev: String
   }
   object Id {
     
@@ -198,12 +194,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object Password {
     
@@ -224,10 +219,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

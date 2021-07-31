@@ -9,10 +9,10 @@ A React component to crop images/videos with easy interactions
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-easy-crop |
-| Keywords           | - |
-| # releases         | 42 |
-| # dependents       | 24 |
-| # downloads        | 1085721 |
+| Keywords           | react, crop, cropper, image crop |
+| # releases         | 47 |
+| # dependents       | 31 |
+| # downloads        | 1596017 |
 | # stars            | 0 |
 
 ## Links

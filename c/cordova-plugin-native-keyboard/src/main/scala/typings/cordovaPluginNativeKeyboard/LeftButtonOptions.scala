@@ -2,18 +2,18 @@ package typings.cordovaPluginNativeKeyboard
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LeftButtonOptions extends ButtonOptions {
+trait LeftButtonOptions
+  extends StObject
+     with ButtonOptions {
   
   /**
     * Set to true to disable the button once text has been entered.
     *
     * Default: false
     */
-  var disabledWhenTextEntered: js.UndefOr[Boolean] = js.native
+  var disabledWhenTextEntered: js.UndefOr[Boolean] = js.undefined
 }
 object LeftButtonOptions {
   

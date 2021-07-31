@@ -4,15 +4,15 @@ import typings.uirouterCore.paramsInterfaceMod.RawParams
 import typings.uirouterCore.stateInterfaceMod._RedirectToResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Params extends _RedirectToResult {
+trait Params
+  extends StObject
+     with _RedirectToResult {
   
-  var params: js.UndefOr[RawParams] = js.native
+  var params: js.UndefOr[RawParams] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object Params {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeadLetterConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of an Amazon SQS queue or Amazon SNS topic.
     */
-  var TargetArn: js.UndefOr[ResourceArn] = js.native
+  var TargetArn: js.UndefOr[ResourceArn] = js.undefined
 }
 object DeadLetterConfig {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRdsPendingCloudWatchLogsExports extends StObject {
   
   /**
     * A list of log types that are being disabled.
     */
-  var LogTypesToDisable: js.UndefOr[StringList] = js.native
+  var LogTypesToDisable: js.UndefOr[StringList] = js.undefined
   
   /**
     * A list of log types that are being enabled.
     */
-  var LogTypesToEnable: js.UndefOr[StringList] = js.native
+  var LogTypesToEnable: js.UndefOr[StringList] = js.undefined
 }
 object AwsRdsPendingCloudWatchLogsExports {
   

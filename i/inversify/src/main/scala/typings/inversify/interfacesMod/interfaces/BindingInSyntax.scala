@@ -2,17 +2,15 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindingInSyntax[T] extends StObject {
   
-  def inRequestScope(): BindingWhenOnSyntax[T] = js.native
+  def inRequestScope(): BindingWhenOnSyntax[T]
   
-  def inSingletonScope(): BindingWhenOnSyntax[T] = js.native
+  def inSingletonScope(): BindingWhenOnSyntax[T]
   
-  def inTransientScope(): BindingWhenOnSyntax[T] = js.native
+  def inTransientScope(): BindingWhenOnSyntax[T]
 }
 object BindingInSyntax {
   
@@ -27,7 +25,7 @@ object BindingInSyntax {
   }
   
   @scala.inline
-  implicit class BindingInSyntaxMutableBuilder[Self <: BindingInSyntax[_], T] (val x: Self with BindingInSyntax[T]) extends AnyVal {
+  implicit class BindingInSyntaxMutableBuilder[Self <: BindingInSyntax[?], T] (val x: Self & BindingInSyntax[T]) extends AnyVal {
     
     @scala.inline
     def setInRequestScope(value: () => BindingWhenOnSyntax[T]): Self = StObject.set(x, "inRequestScope", js.Any.fromFunction0(value))

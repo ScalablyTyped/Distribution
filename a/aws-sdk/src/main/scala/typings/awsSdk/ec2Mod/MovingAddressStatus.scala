@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MovingAddressStatus extends StObject {
   
   /**
     * The status of the Elastic IP address that's being moved to the EC2-VPC platform, or restored to the EC2-Classic platform.
     */
-  var MoveStatus: js.UndefOr[typings.awsSdk.ec2Mod.MoveStatus] = js.native
+  var MoveStatus: js.UndefOr[typings.awsSdk.ec2Mod.MoveStatus] = js.undefined
   
   /**
     * The Elastic IP address.
     */
-  var PublicIp: js.UndefOr[String] = js.native
+  var PublicIp: js.UndefOr[String] = js.undefined
 }
 object MovingAddressStatus {
   

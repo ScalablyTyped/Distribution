@@ -2,7 +2,6 @@ package typings.ot.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("ot", "WrappedOperation")
@@ -25,7 +24,10 @@ class WrappedOperation[T] protected () extends StObject {
 /* static members */
 object WrappedOperation {
   
-  @JSImport("ot", "WrappedOperation.transform")
+  @JSImport("ot", "WrappedOperation")
   @js.native
-  def transform[T](left: WrappedOperation[T], right: WrappedOperation[T]): WrappedOperation[T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def transform[T](left: WrappedOperation[T], right: WrappedOperation[T]): WrappedOperation[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(left.asInstanceOf[js.Any], right.asInstanceOf[js.Any])).asInstanceOf[WrappedOperation[T]]
 }

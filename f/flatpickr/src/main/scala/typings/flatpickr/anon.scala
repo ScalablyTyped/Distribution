@@ -24,15 +24,13 @@ import typings.std.Error
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Capture extends StObject {
     
-    var capture: js.UndefOr[Boolean] = js.native
+    var capture: js.UndefOr[Boolean] = js.undefined
   }
   object Capture {
     
@@ -53,12 +51,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var config: js.UndefOr[ParsedOptions] = js.native
+    var config: js.UndefOr[ParsedOptions] = js.undefined
     
-    var l10n: js.UndefOr[Locale] = js.native
+    var l10n: js.UndefOr[Locale] = js.undefined
   }
   object Config {
     
@@ -102,17 +99,16 @@ object anon {
   trait GetDaysInMonth extends StObject {
     
     def getDaysInMonth(): Double = js.native
-    def getDaysInMonth(month: js.UndefOr[scala.Nothing], year: Double): Double = js.native
     def getDaysInMonth(month: Double): Double = js.native
     def getDaysInMonth(month: Double, year: Double): Double = js.native
+    def getDaysInMonth(month: Unit, year: Double): Double = js.native
   }
   
-  @js.native
   trait Longhand extends StObject {
     
-    var longhand: js.Tuple7[String, String, String, String, String, String, String] = js.native
+    var longhand: js.Tuple7[String, String, String, String, String, String, String]
     
-    var shorthand: js.Tuple7[String, String, String, String, String, String, String] = js.native
+    var shorthand: js.Tuple7[String, String, String, String, String, String, String]
   }
   object Longhand {
     
@@ -137,16 +133,15 @@ object anon {
   }
   
   /* Inlined std.Partial<flatpickr.flatpickr/dist/plugins/monthSelect.Config> */
-  @js.native
   trait PartialConfig extends StObject {
     
-    var altFormat: js.UndefOr[String] = js.native
+    var altFormat: js.UndefOr[String] = js.undefined
     
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
-    var shorthand: js.UndefOr[Boolean] = js.native
+    var shorthand: js.UndefOr[Boolean] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
   }
   object PartialConfig {
     
@@ -186,144 +181,143 @@ object anon {
   }
   
   /* Inlined std.Partial<flatpickr.flatpickr/dist/types/options.ParsedOptions> */
-  @js.native
   trait PartialParsedOptions extends StObject {
     
-    var _disable: js.UndefOr[js.Array[DateLimit[Date]]] = js.native
+    var _disable: js.UndefOr[js.Array[DateLimit[Date]]] = js.undefined
     
-    var _enable: js.UndefOr[js.Array[DateLimit[Date]]] = js.native
+    var _enable: js.UndefOr[js.Array[DateLimit[Date]]] = js.undefined
     
-    var _maxDate: js.UndefOr[Date] = js.native
+    var _maxDate: js.UndefOr[Date] = js.undefined
     
-    var _maxTime: js.UndefOr[Date] = js.native
+    var _maxTime: js.UndefOr[Date] = js.undefined
     
-    var _minDate: js.UndefOr[Date] = js.native
+    var _minDate: js.UndefOr[Date] = js.undefined
     
-    var _minTime: js.UndefOr[Date] = js.native
+    var _minTime: js.UndefOr[Date] = js.undefined
     
-    var allowInput: js.UndefOr[Boolean] = js.native
+    var allowInput: js.UndefOr[Boolean] = js.undefined
     
-    var allowInvalidPreload: js.UndefOr[Boolean] = js.native
+    var allowInvalidPreload: js.UndefOr[Boolean] = js.undefined
     
-    var altFormat: js.UndefOr[String] = js.native
+    var altFormat: js.UndefOr[String] = js.undefined
     
-    var altInput: js.UndefOr[Boolean] = js.native
+    var altInput: js.UndefOr[Boolean] = js.undefined
     
-    var altInputClass: js.UndefOr[String] = js.native
+    var altInputClass: js.UndefOr[String] = js.undefined
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var appendTo: js.UndefOr[HTMLElement] = js.native
+    var appendTo: js.UndefOr[HTMLElement] = js.undefined
     
-    var ariaDateFormat: js.UndefOr[String] = js.native
+    var ariaDateFormat: js.UndefOr[String] = js.undefined
     
-    var autoFillDefaultTime: js.UndefOr[Boolean] = js.native
+    var autoFillDefaultTime: js.UndefOr[Boolean] = js.undefined
     
-    var clickOpens: js.UndefOr[Boolean] = js.native
+    var clickOpens: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnSelect: js.UndefOr[Boolean] = js.native
+    var closeOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var conjunction: js.UndefOr[String] = js.native
+    var conjunction: js.UndefOr[String] = js.undefined
     
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
-    var defaultDate: js.UndefOr[Date | js.Array[Date]] = js.native
+    var defaultDate: js.UndefOr[Date | js.Array[Date]] = js.undefined
     
-    var defaultHour: js.UndefOr[Double] = js.native
+    var defaultHour: js.UndefOr[Double] = js.undefined
     
-    var defaultMinute: js.UndefOr[Double] = js.native
+    var defaultMinute: js.UndefOr[Double] = js.undefined
     
-    var defaultSeconds: js.UndefOr[Double] = js.native
+    var defaultSeconds: js.UndefOr[Double] = js.undefined
     
-    var disable: js.UndefOr[js.Array[DateLimit[Date]]] = js.native
+    var disable: js.UndefOr[js.Array[DateLimit[Date]]] = js.undefined
     
-    var disableMobile: js.UndefOr[Boolean] = js.native
+    var disableMobile: js.UndefOr[Boolean] = js.undefined
     
-    var enable: js.UndefOr[js.Array[DateLimit[Date]]] = js.native
+    var enable: js.UndefOr[js.Array[DateLimit[Date]]] = js.undefined
     
-    var enableSeconds: js.UndefOr[Boolean] = js.native
+    var enableSeconds: js.UndefOr[Boolean] = js.undefined
     
-    var enableTime: js.UndefOr[Boolean] = js.native
+    var enableTime: js.UndefOr[Boolean] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.native
+    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.undefined
     
-    var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.native
+    var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.undefined
     
-    var hourIncrement: js.UndefOr[Double] = js.native
+    var hourIncrement: js.UndefOr[Double] = js.undefined
     
-    var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.native
+    var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[key | CustomLocale] = js.native
+    var locale: js.UndefOr[key | CustomLocale] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var maxTime: js.UndefOr[Date] = js.native
+    var maxTime: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var minTime: js.UndefOr[Date] = js.native
+    var minTime: js.UndefOr[Date] = js.undefined
     
-    var minuteIncrement: js.UndefOr[Double] = js.native
+    var minuteIncrement: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[single | multiple | range | time] = js.native
+    var mode: js.UndefOr[single | multiple | range | time] = js.undefined
     
-    var monthSelectorType: js.UndefOr[String] = js.native
+    var monthSelectorType: js.UndefOr[String] = js.undefined
     
-    var nextArrow: js.UndefOr[String] = js.native
+    var nextArrow: js.UndefOr[String] = js.undefined
     
-    var noCalendar: js.UndefOr[Boolean] = js.native
+    var noCalendar: js.UndefOr[Boolean] = js.undefined
     
-    var now: js.UndefOr[Date] = js.native
+    var now: js.UndefOr[Date] = js.undefined
     
-    var onChange: js.UndefOr[js.Array[Hook]] = js.native
+    var onChange: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onClose: js.UndefOr[js.Array[Hook]] = js.native
+    var onClose: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onDayCreate: js.UndefOr[js.Array[Hook]] = js.native
+    var onDayCreate: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onDestroy: js.UndefOr[js.Array[Hook]] = js.native
+    var onDestroy: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onKeyDown: js.UndefOr[js.Array[Hook]] = js.native
+    var onKeyDown: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onMonthChange: js.UndefOr[js.Array[Hook]] = js.native
+    var onMonthChange: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Array[Hook]] = js.native
+    var onOpen: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onParseConfig: js.UndefOr[js.Array[Hook]] = js.native
+    var onParseConfig: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onPreCalendarPosition: js.UndefOr[js.Array[Hook]] = js.native
+    var onPreCalendarPosition: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onReady: js.UndefOr[js.Array[Hook]] = js.native
+    var onReady: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onValueUpdate: js.UndefOr[js.Array[Hook]] = js.native
+    var onValueUpdate: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var onYearChange: js.UndefOr[js.Array[Hook]] = js.native
+    var onYearChange: js.UndefOr[js.Array[Hook]] = js.undefined
     
-    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.native
+    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.native
+    var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.undefined
     
-    var position: js.UndefOr[auto | above | below] = js.native
+    var position: js.UndefOr[auto | above | below] = js.undefined
     
-    var positionElement: js.UndefOr[HTMLElement] = js.native
+    var positionElement: js.UndefOr[HTMLElement] = js.undefined
     
-    var prevArrow: js.UndefOr[String] = js.native
+    var prevArrow: js.UndefOr[String] = js.undefined
     
-    var shorthandCurrentMonth: js.UndefOr[Boolean] = js.native
+    var shorthandCurrentMonth: js.UndefOr[Boolean] = js.undefined
     
-    var showMonths: js.UndefOr[Double] = js.native
+    var showMonths: js.UndefOr[Double] = js.undefined
     
-    var static: js.UndefOr[Boolean] = js.native
+    var static: js.UndefOr[Boolean] = js.undefined
     
-    var time_24hr: js.UndefOr[Boolean] = js.native
+    var time_24hr: js.UndefOr[Boolean] = js.undefined
     
-    var weekNumbers: js.UndefOr[Boolean] = js.native
+    var weekNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object PartialParsedOptions {
     
@@ -803,12 +797,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Shorthand extends StObject {
     
-    var longhand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
+    var longhand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
     
-    var shorthand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
+    var shorthand: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
   }
   object Shorthand {
     
@@ -837,137 +830,136 @@ object anon {
   }
   
   /* Inlined {[ k in flatpickr.flatpickr/dist/types/locale.key ]:? flatpickr.flatpickr/dist/types/locale.CustomLocale} & {  default :flatpickr.flatpickr/dist/types/locale.Locale} */
-  @js.native
   trait kinkeyCustomLocaledefault extends StObject {
     
-    var default: js.UndefOr[CustomLocale] with Locale = js.native
+    var default: js.UndefOr[CustomLocale] & Locale
     
-    var ar: js.UndefOr[CustomLocale] = js.native
+    var ar: js.UndefOr[CustomLocale] = js.undefined
     
-    var at: js.UndefOr[CustomLocale] = js.native
+    var at: js.UndefOr[CustomLocale] = js.undefined
     
-    var az: js.UndefOr[CustomLocale] = js.native
+    var az: js.UndefOr[CustomLocale] = js.undefined
     
-    var be: js.UndefOr[CustomLocale] = js.native
+    var be: js.UndefOr[CustomLocale] = js.undefined
     
-    var bg: js.UndefOr[CustomLocale] = js.native
+    var bg: js.UndefOr[CustomLocale] = js.undefined
     
-    var bn: js.UndefOr[CustomLocale] = js.native
+    var bn: js.UndefOr[CustomLocale] = js.undefined
     
-    var bs: js.UndefOr[CustomLocale] = js.native
+    var bs: js.UndefOr[CustomLocale] = js.undefined
     
-    var ca: js.UndefOr[CustomLocale] = js.native
+    var ca: js.UndefOr[CustomLocale] = js.undefined
     
-    var cat: js.UndefOr[CustomLocale] = js.native
+    var cat: js.UndefOr[CustomLocale] = js.undefined
     
-    var cs: js.UndefOr[CustomLocale] = js.native
+    var cs: js.UndefOr[CustomLocale] = js.undefined
     
-    var cy: js.UndefOr[CustomLocale] = js.native
+    var cy: js.UndefOr[CustomLocale] = js.undefined
     
-    var da: js.UndefOr[CustomLocale] = js.native
+    var da: js.UndefOr[CustomLocale] = js.undefined
     
-    var de: js.UndefOr[CustomLocale] = js.native
+    var de: js.UndefOr[CustomLocale] = js.undefined
     
-    var en: js.UndefOr[CustomLocale] = js.native
+    var en: js.UndefOr[CustomLocale] = js.undefined
     
-    var eo: js.UndefOr[CustomLocale] = js.native
+    var eo: js.UndefOr[CustomLocale] = js.undefined
     
-    var es: js.UndefOr[CustomLocale] = js.native
+    var es: js.UndefOr[CustomLocale] = js.undefined
     
-    var et: js.UndefOr[CustomLocale] = js.native
+    var et: js.UndefOr[CustomLocale] = js.undefined
     
-    var fa: js.UndefOr[CustomLocale] = js.native
+    var fa: js.UndefOr[CustomLocale] = js.undefined
     
-    var fi: js.UndefOr[CustomLocale] = js.native
+    var fi: js.UndefOr[CustomLocale] = js.undefined
     
-    var fo: js.UndefOr[CustomLocale] = js.native
+    var fo: js.UndefOr[CustomLocale] = js.undefined
     
-    var fr: js.UndefOr[CustomLocale] = js.native
+    var fr: js.UndefOr[CustomLocale] = js.undefined
     
-    var gr: js.UndefOr[CustomLocale] = js.native
+    var gr: js.UndefOr[CustomLocale] = js.undefined
     
-    var he: js.UndefOr[CustomLocale] = js.native
+    var he: js.UndefOr[CustomLocale] = js.undefined
     
-    var hi: js.UndefOr[CustomLocale] = js.native
+    var hi: js.UndefOr[CustomLocale] = js.undefined
     
-    var hr: js.UndefOr[CustomLocale] = js.native
+    var hr: js.UndefOr[CustomLocale] = js.undefined
     
-    var hu: js.UndefOr[CustomLocale] = js.native
+    var hu: js.UndefOr[CustomLocale] = js.undefined
     
-    var id: js.UndefOr[CustomLocale] = js.native
+    var id: js.UndefOr[CustomLocale] = js.undefined
     
-    var is: js.UndefOr[CustomLocale] = js.native
+    var is: js.UndefOr[CustomLocale] = js.undefined
     
-    var it: js.UndefOr[CustomLocale] = js.native
+    var it: js.UndefOr[CustomLocale] = js.undefined
     
-    var ja: js.UndefOr[CustomLocale] = js.native
+    var ja: js.UndefOr[CustomLocale] = js.undefined
     
-    var ka: js.UndefOr[CustomLocale] = js.native
+    var ka: js.UndefOr[CustomLocale] = js.undefined
     
-    var km: js.UndefOr[CustomLocale] = js.native
+    var km: js.UndefOr[CustomLocale] = js.undefined
     
-    var ko: js.UndefOr[CustomLocale] = js.native
+    var ko: js.UndefOr[CustomLocale] = js.undefined
     
-    var kz: js.UndefOr[CustomLocale] = js.native
+    var kz: js.UndefOr[CustomLocale] = js.undefined
     
-    var lt: js.UndefOr[CustomLocale] = js.native
+    var lt: js.UndefOr[CustomLocale] = js.undefined
     
-    var lv: js.UndefOr[CustomLocale] = js.native
+    var lv: js.UndefOr[CustomLocale] = js.undefined
     
-    var mk: js.UndefOr[CustomLocale] = js.native
+    var mk: js.UndefOr[CustomLocale] = js.undefined
     
-    var mn: js.UndefOr[CustomLocale] = js.native
+    var mn: js.UndefOr[CustomLocale] = js.undefined
     
-    var ms: js.UndefOr[CustomLocale] = js.native
+    var ms: js.UndefOr[CustomLocale] = js.undefined
     
-    var my: js.UndefOr[CustomLocale] = js.native
+    var my: js.UndefOr[CustomLocale] = js.undefined
     
-    var nl: js.UndefOr[CustomLocale] = js.native
+    var nl: js.UndefOr[CustomLocale] = js.undefined
     
-    var no: js.UndefOr[CustomLocale] = js.native
+    var no: js.UndefOr[CustomLocale] = js.undefined
     
-    var pa: js.UndefOr[CustomLocale] = js.native
+    var pa: js.UndefOr[CustomLocale] = js.undefined
     
-    var pl: js.UndefOr[CustomLocale] = js.native
+    var pl: js.UndefOr[CustomLocale] = js.undefined
     
-    var pt: js.UndefOr[CustomLocale] = js.native
+    var pt: js.UndefOr[CustomLocale] = js.undefined
     
-    var ro: js.UndefOr[CustomLocale] = js.native
+    var ro: js.UndefOr[CustomLocale] = js.undefined
     
-    var ru: js.UndefOr[CustomLocale] = js.native
+    var ru: js.UndefOr[CustomLocale] = js.undefined
     
-    var si: js.UndefOr[CustomLocale] = js.native
+    var si: js.UndefOr[CustomLocale] = js.undefined
     
-    var sk: js.UndefOr[CustomLocale] = js.native
+    var sk: js.UndefOr[CustomLocale] = js.undefined
     
-    var sl: js.UndefOr[CustomLocale] = js.native
+    var sl: js.UndefOr[CustomLocale] = js.undefined
     
-    var sq: js.UndefOr[CustomLocale] = js.native
+    var sq: js.UndefOr[CustomLocale] = js.undefined
     
-    var sr: js.UndefOr[CustomLocale] = js.native
+    var sr: js.UndefOr[CustomLocale] = js.undefined
     
-    var sv: js.UndefOr[CustomLocale] = js.native
+    var sv: js.UndefOr[CustomLocale] = js.undefined
     
-    var th: js.UndefOr[CustomLocale] = js.native
+    var th: js.UndefOr[CustomLocale] = js.undefined
     
-    var tr: js.UndefOr[CustomLocale] = js.native
+    var tr: js.UndefOr[CustomLocale] = js.undefined
     
-    var uk: js.UndefOr[CustomLocale] = js.native
+    var uk: js.UndefOr[CustomLocale] = js.undefined
     
-    var uz: js.UndefOr[CustomLocale] = js.native
+    var uz: js.UndefOr[CustomLocale] = js.undefined
     
-    var uz_latn: js.UndefOr[CustomLocale] = js.native
+    var uz_latn: js.UndefOr[CustomLocale] = js.undefined
     
-    var vn: js.UndefOr[CustomLocale] = js.native
+    var vn: js.UndefOr[CustomLocale] = js.undefined
     
-    var zh: js.UndefOr[CustomLocale] = js.native
+    var zh: js.UndefOr[CustomLocale] = js.undefined
     
-    var zh_tw: js.UndefOr[CustomLocale] = js.native
+    var zh_tw: js.UndefOr[CustomLocale] = js.undefined
   }
   object kinkeyCustomLocaledefault {
     
     @scala.inline
-    def apply(default: js.UndefOr[CustomLocale] with Locale): kinkeyCustomLocaledefault = {
+    def apply(default: js.UndefOr[CustomLocale] & Locale): kinkeyCustomLocaledefault = {
       val __obj = js.Dynamic.literal(default = default.asInstanceOf[js.Any])
       __obj.asInstanceOf[kinkeyCustomLocaledefault]
     }
@@ -1054,7 +1046,7 @@ object anon {
       def setDeUndefined: Self = StObject.set(x, "de", js.undefined)
       
       @scala.inline
-      def setDefault(value: js.UndefOr[CustomLocale] with Locale): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
+      def setDefault(value: js.UndefOr[CustomLocale] & Locale): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEn(value: CustomLocale): Self = StObject.set(x, "en", value.asInstanceOf[js.Any])
@@ -1347,132 +1339,131 @@ object anon {
   }
   
   /* Inlined {[ k in keyof flatpickr.flatpickr/dist/types/options.Options ]:? flatpickr.flatpickr/dist/types/options.Options[k]} */
-  @js.native
   trait kinkeyofOptionsOptionsk extends StObject {
     
-    var allowInput: js.UndefOr[Boolean] = js.native
+    var allowInput: js.UndefOr[Boolean] = js.undefined
     
-    var allowInvalidPreload: js.UndefOr[Boolean] = js.native
+    var allowInvalidPreload: js.UndefOr[Boolean] = js.undefined
     
-    var altFormat: js.UndefOr[String] = js.native
+    var altFormat: js.UndefOr[String] = js.undefined
     
-    var altInput: js.UndefOr[Boolean] = js.native
+    var altInput: js.UndefOr[Boolean] = js.undefined
     
-    var altInputClass: js.UndefOr[String] = js.native
+    var altInputClass: js.UndefOr[String] = js.undefined
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var appendTo: js.UndefOr[HTMLElement] = js.native
+    var appendTo: js.UndefOr[HTMLElement] = js.undefined
     
-    var ariaDateFormat: js.UndefOr[String] = js.native
+    var ariaDateFormat: js.UndefOr[String] = js.undefined
     
-    var autoFillDefaultTime: js.UndefOr[Boolean] = js.native
+    var autoFillDefaultTime: js.UndefOr[Boolean] = js.undefined
     
-    var clickOpens: js.UndefOr[Boolean] = js.native
+    var clickOpens: js.UndefOr[Boolean] = js.undefined
     
-    var closeOnSelect: js.UndefOr[Boolean] = js.native
+    var closeOnSelect: js.UndefOr[Boolean] = js.undefined
     
-    var conjunction: js.UndefOr[String] = js.native
+    var conjunction: js.UndefOr[String] = js.undefined
     
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
-    var defaultDate: js.UndefOr[DateOption | js.Array[DateOption]] = js.native
+    var defaultDate: js.UndefOr[DateOption | js.Array[DateOption]] = js.undefined
     
-    var defaultHour: js.UndefOr[Double] = js.native
+    var defaultHour: js.UndefOr[Double] = js.undefined
     
-    var defaultMinute: js.UndefOr[Double] = js.native
+    var defaultMinute: js.UndefOr[Double] = js.undefined
     
-    var defaultSeconds: js.UndefOr[Double] = js.native
+    var defaultSeconds: js.UndefOr[Double] = js.undefined
     
-    var disable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.native
+    var disable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.undefined
     
-    var disableMobile: js.UndefOr[Boolean] = js.native
+    var disableMobile: js.UndefOr[Boolean] = js.undefined
     
-    var enable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.native
+    var enable: js.UndefOr[js.Array[DateLimit[DateOption]]] = js.undefined
     
-    var enableSeconds: js.UndefOr[Boolean] = js.native
+    var enableSeconds: js.UndefOr[Boolean] = js.undefined
     
-    var enableTime: js.UndefOr[Boolean] = js.native
+    var enableTime: js.UndefOr[Boolean] = js.undefined
     
-    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.native
+    var errorHandler: js.UndefOr[js.Function1[/* e */ Error, Unit]] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.native
+    var formatDate: js.UndefOr[js.Function3[/* date */ Date, /* format */ String, /* locale */ Locale, String]] = js.undefined
     
-    var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.native
+    var getWeek: js.UndefOr[js.Function1[/* date */ Date, String | Double]] = js.undefined
     
-    var hourIncrement: js.UndefOr[Double] = js.native
+    var hourIncrement: js.UndefOr[Double] = js.undefined
     
-    var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.native
+    var ignoredFocusElements: js.UndefOr[js.Array[HTMLElement]] = js.undefined
     
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[key | CustomLocale] = js.native
+    var locale: js.UndefOr[key | CustomLocale] = js.undefined
     
-    var maxDate: js.UndefOr[DateOption] = js.native
+    var maxDate: js.UndefOr[DateOption] = js.undefined
     
-    var maxTime: js.UndefOr[DateOption] = js.native
+    var maxTime: js.UndefOr[DateOption] = js.undefined
     
-    var minDate: js.UndefOr[DateOption] = js.native
+    var minDate: js.UndefOr[DateOption] = js.undefined
     
-    var minTime: js.UndefOr[DateOption] = js.native
+    var minTime: js.UndefOr[DateOption] = js.undefined
     
-    var minuteIncrement: js.UndefOr[Double] = js.native
+    var minuteIncrement: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[single | multiple | range | time] = js.native
+    var mode: js.UndefOr[single | multiple | range | time] = js.undefined
     
-    var monthSelectorType: js.UndefOr[dropdown | static] = js.native
+    var monthSelectorType: js.UndefOr[dropdown | static] = js.undefined
     
-    var nextArrow: js.UndefOr[String] = js.native
+    var nextArrow: js.UndefOr[String] = js.undefined
     
-    var noCalendar: js.UndefOr[Boolean] = js.native
+    var noCalendar: js.UndefOr[Boolean] = js.undefined
     
-    var now: js.UndefOr[DateOption] = js.native
+    var now: js.UndefOr[DateOption] = js.undefined
     
-    var onChange: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onChange: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onClose: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onClose: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onDayCreate: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onDayCreate: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onDestroy: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onDestroy: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onKeyDown: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onKeyDown: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onMonthChange: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onMonthChange: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onOpen: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onOpen: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onParseConfig: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onParseConfig: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onPreCalendarPosition: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onPreCalendarPosition: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onReady: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onReady: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onValueUpdate: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onValueUpdate: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var onYearChange: js.UndefOr[Hook | js.Array[Hook]] = js.native
+    var onYearChange: js.UndefOr[Hook | js.Array[Hook]] = js.undefined
     
-    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.native
+    var parseDate: js.UndefOr[js.Function2[/* date */ String, /* format */ String, Date]] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.native
+    var plugins: js.UndefOr[js.Array[Plugin[js.Object]]] = js.undefined
     
-    var position: js.UndefOr[auto | above | below] = js.native
+    var position: js.UndefOr[auto | above | below] = js.undefined
     
-    var positionElement: js.UndefOr[typings.std.Element] = js.native
+    var positionElement: js.UndefOr[typings.std.Element] = js.undefined
     
-    var prevArrow: js.UndefOr[String] = js.native
+    var prevArrow: js.UndefOr[String] = js.undefined
     
-    var shorthandCurrentMonth: js.UndefOr[Boolean] = js.native
+    var shorthandCurrentMonth: js.UndefOr[Boolean] = js.undefined
     
-    var showMonths: js.UndefOr[Double] = js.native
+    var showMonths: js.UndefOr[Double] = js.undefined
     
-    var static: js.UndefOr[Boolean] = js.native
+    var static: js.UndefOr[Boolean] = js.undefined
     
-    var time_24hr: js.UndefOr[Boolean] = js.native
+    var time_24hr: js.UndefOr[Boolean] = js.undefined
     
-    var weekNumbers: js.UndefOr[Boolean] = js.native
+    var weekNumbers: js.UndefOr[Boolean] = js.undefined
     
-    var wrap: js.UndefOr[Boolean] = js.native
+    var wrap: js.UndefOr[Boolean] = js.undefined
   }
   object kinkeyofOptionsOptionsk {
     

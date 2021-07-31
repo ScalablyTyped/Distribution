@@ -2,35 +2,33 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartLegend extends StObject {
   
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
-  var border: js.UndefOr[StockChartLegendBorder] = js.native
+  var border: js.UndefOr[StockChartLegendBorder] = js.undefined
   
-  var inactiveItems: js.UndefOr[StockChartLegendInactiveItems] = js.native
+  var inactiveItems: js.UndefOr[StockChartLegendInactiveItems] = js.undefined
   
-  var item: js.UndefOr[StockChartLegendItem] = js.native
+  var item: js.UndefOr[StockChartLegendItem] = js.undefined
   
-  var labels: js.UndefOr[StockChartLegendLabels] = js.native
+  var labels: js.UndefOr[StockChartLegendLabels] = js.undefined
   
-  var margin: js.UndefOr[Double | js.Any] = js.native
+  var margin: js.UndefOr[Double | js.Any] = js.undefined
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double | js.Any] = js.native
+  var padding: js.UndefOr[Double | js.Any] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object StockChartLegend {
   

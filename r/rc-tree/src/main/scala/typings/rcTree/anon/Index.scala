@@ -3,23 +3,21 @@ package typings.rcTree.anon
 import typings.rcTree.interfaceMod.DataNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Index extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var key: typings.rcTree.interfaceMod.Key = js.native
+  var key: typings.rcTree.interfaceMod.Key
   
-  var level: Double = js.native
+  var level: Double
   
-  var node: DataNode = js.native
+  var node: DataNode
   
-  var parentPos: String | Double = js.native
+  var parentPos: String | Double
   
-  var pos: String = js.native
+  var pos: String
 }
 object Index {
   

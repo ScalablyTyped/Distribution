@@ -3,23 +3,22 @@ package typings.mdast.mod
 import typings.mdast.mdastStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text
-  extends Literal
+  extends StObject
+     with Literal
      with StaticPhrasingContent {
   
   @JSName("type")
-  var type_Text: text = js.native
+  var type_Text: text
 }
 object Text {
   
   @scala.inline
-  def apply(`type`: text, value: js.Any): Text = {
+  def apply(value: js.Any): Text = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[Text]
   }
   

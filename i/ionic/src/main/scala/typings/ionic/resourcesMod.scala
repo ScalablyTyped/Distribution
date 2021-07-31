@@ -7,7 +7,6 @@ import typings.ionicCliFramework.definitionsMod.CommandLineInputs
 import typings.ionicCliFramework.definitionsMod.CommandLineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourcesMod {
@@ -24,10 +23,10 @@ object resourcesMod {
     
     def preRun(inputs: CommandLineInputs, options: CommandLineOptions, runinfo: CommandInstanceInfo): js.Promise[Unit] = js.native
     
-    def runCordovaRes(platform: js.UndefOr[scala.Nothing], options: CommandLineOptions): js.Promise[Unit] = js.native
     def runCordovaRes(platform: String, options: CommandLineOptions): js.Promise[Unit] = js.native
+    def runCordovaRes(platform: Unit, options: CommandLineOptions): js.Promise[Unit] = js.native
     
-    def runResourceServer(platform: js.UndefOr[scala.Nothing], options: CommandLineOptions): js.Promise[Unit] = js.native
     def runResourceServer(platform: String, options: CommandLineOptions): js.Promise[Unit] = js.native
+    def runResourceServer(platform: Unit, options: CommandLineOptions): js.Promise[Unit] = js.native
   }
 }

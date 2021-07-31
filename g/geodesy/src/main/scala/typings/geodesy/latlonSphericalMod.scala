@@ -8,55 +8,50 @@ import typings.geodesy.mod.GeoJSON
 import typings.geodesy.mod.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object latlonSphericalMod {
   
   @JSImport("geodesy/latlon-spherical", JSImport.Default)
   @js.native
-  class default protected () extends LatLonSpherical {
+  class default protected ()
+    extends StObject
+       with LatLonSpherical {
     def this(lat: Double, lon: Double) = this()
   }
   object default {
     
-    /* static member */
-    @JSImport("geodesy/latlon-spherical", "default.areaOf")
+    @JSImport("geodesy/latlon-spherical", JSImport.Default)
     @js.native
-    def areaOf(polygon: Polygon[LatLonSpherical]): Double = js.native
-    @JSImport("geodesy/latlon-spherical", "default.areaOf")
-    @js.native
-    def areaOf(polygon: Polygon[LatLonSpherical], radius: Double): Double = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "default.crossingParallels")
-    @js.native
-    def crossingParallels(point1: LatLonSpherical, point2: LatLonSpherical, latitude: Double): Lon1 | Null = js.native
+    @scala.inline
+    def areaOf(polygon: Polygon[LatLonSpherical]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("areaOf")(polygon.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def areaOf(polygon: Polygon[LatLonSpherical], radius: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("areaOf")(polygon.asInstanceOf[js.Any], radius.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "default.intersection")
-    @js.native
-    def intersection(p1: LatLonSpherical, brng1: Double, p2: LatLonSpherical, brng2: Double): LatLonSpherical | Null = js.native
+    @scala.inline
+    def crossingParallels(point1: LatLonSpherical, point2: LatLonSpherical, latitude: Double): Lon1 | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("crossingParallels")(point1.asInstanceOf[js.Any], point2.asInstanceOf[js.Any], latitude.asInstanceOf[js.Any])).asInstanceOf[Lon1 | Null]
     
-    @JSImport("geodesy/latlon-spherical", "default.parse")
-    @js.native
-    def parse(lat: String): LatLonSpherical = js.native
-    @JSImport("geodesy/latlon-spherical", "default.parse")
-    @js.native
-    def parse(lat: String, lon: Double): LatLonSpherical = js.native
-    @JSImport("geodesy/latlon-spherical", "default.parse")
-    @js.native
-    def parse(lat: js.Object): LatLonSpherical = js.native
-    @JSImport("geodesy/latlon-spherical", "default.parse")
-    @js.native
-    def parse(lat: js.Object, lon: Double): LatLonSpherical = js.native
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "default.parse")
-    @js.native
-    def parse(lat: Double): LatLonSpherical = js.native
-    @JSImport("geodesy/latlon-spherical", "default.parse")
-    @js.native
-    def parse(lat: Double, lon: Double): LatLonSpherical = js.native
+    @scala.inline
+    def intersection(p1: LatLonSpherical, brng1: Double, p2: LatLonSpherical, brng2: Double): LatLonSpherical | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("intersection")(p1.asInstanceOf[js.Any], brng1.asInstanceOf[js.Any], p2.asInstanceOf[js.Any], brng2.asInstanceOf[js.Any])).asInstanceOf[LatLonSpherical | Null]
+    
+    @scala.inline
+    def parse(lat: String): LatLonSpherical = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonSpherical]
+    @scala.inline
+    def parse(lat: String, lon: Double): LatLonSpherical = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonSpherical]
+    @scala.inline
+    def parse(lat: js.Object): LatLonSpherical = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonSpherical]
+    @scala.inline
+    def parse(lat: js.Object, lon: Double): LatLonSpherical = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonSpherical]
+    /* static member */
+    @scala.inline
+    def parse(lat: Double): LatLonSpherical = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any]).asInstanceOf[LatLonSpherical]
+    @scala.inline
+    def parse(lat: Double, lon: Double): LatLonSpherical = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(lat.asInstanceOf[js.Any], lon.asInstanceOf[js.Any])).asInstanceOf[LatLonSpherical]
   }
   
   // tslint:disable-next-line no-unnecessary-class
@@ -66,97 +61,77 @@ object latlonSphericalMod {
     extends typings.geodesy.dmsMod.default
   object Dms {
     
-    /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.compassPoint")
+    @JSImport("geodesy/latlon-spherical", "Dms")
     @js.native
-    def compassPoint(bearing: Double): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.compassPoint")
-    @js.native
-    def compassPoint(bearing: Double, precision: Precision): String = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.fromLocale")
-    @js.native
-    def fromLocale(str: String): String = js.native
+    @scala.inline
+    def compassPoint(bearing: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def compassPoint(bearing: Double, precision: Precision): String = (^.asInstanceOf[js.Dynamic].applyDynamic("compassPoint")(bearing.asInstanceOf[js.Any], precision.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.parse")
-    @js.native
-    def parse(dms: String): Double = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.parse")
-    @js.native
-    def parse(dms: Double): Double = js.native
+    @scala.inline
+    def fromLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toBrng")
-    @js.native
-    def toBrng(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def parse(dms: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def parse(dms: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(dms.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toDms")
-    @js.native
-    def toDms(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def toBrng(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toBrng(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toBrng(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toBrng(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toBrng")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toLat")
-    @js.native
-    def toLat(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def toDms(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toDms(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toDms(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toDms(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toDms")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.toLocale")
-    @js.native
-    def toLocale(str: String): String = js.native
+    @scala.inline
+    def toLat(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toLat(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLat(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLat(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLat")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double, format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double, format: Format): String = js.native
-    @JSImport("geodesy/latlon-spherical", "Dms.toLon")
-    @js.native
-    def toLon(deg: Double, format: Format, dp: Dp): String = js.native
+    @scala.inline
+    def toLocale(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLocale")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.wrap360")
-    @js.native
-    def wrap360(degrees: Double): String = js.native
+    @scala.inline
+    def toLon(deg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def toLon(deg: Double, format: Unit, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLon(deg: Double, format: Format): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def toLon(deg: Double, format: Format, dp: Dp): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toLon")(deg.asInstanceOf[js.Any], format.asInstanceOf[js.Any], dp.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /* static member */
-    @JSImport("geodesy/latlon-spherical", "Dms.wrap90")
-    @js.native
-    def wrap90(degrees: Double): String = js.native
+    @scala.inline
+    def wrap360(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap360")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /* static member */
+    @scala.inline
+    def wrap90(degrees: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap90")(degrees.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -213,7 +188,7 @@ object latlonSphericalMod {
     
     def toGeoJSON(): GeoJSON = js.native
     
-    def toString(format: js.UndefOr[scala.Nothing], dp: Dp): String = js.native
+    def toString(format: Unit, dp: Dp): String = js.native
     def toString(format: Format): String = js.native
     def toString(format: Format, dp: Dp): String = js.native
   }

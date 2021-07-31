@@ -3,16 +3,14 @@ package typings.fridaGum.Java
 import typings.fridaGum.NativePointer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumerateLoadedClassesCallbacks extends StObject {
   
   /**
     * Called when all loaded classes have been enumerated.
     */
-  def onComplete(): Unit = js.native
+  def onComplete(): Unit
   
   /**
     * Called with the name of each currently loaded class, and a JNI
@@ -21,7 +19,7 @@ trait EnumerateLoadedClassesCallbacks extends StObject {
     * Pass the `name` to `Java.use()` to get a JavaScript wrapper.
     * You may also `Java.cast()` the `handle` to `java.lang.Class`.
     */
-  def onMatch(name: String, handle: NativePointer): Unit = js.native
+  def onMatch(name: String, handle: NativePointer): Unit
 }
 object EnumerateLoadedClassesCallbacks {
   

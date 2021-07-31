@@ -3,11 +3,12 @@ package typings.vexflow.Vex.Flow
 import typings.vexflow.anon.Weight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait StaveText extends Modifier {
+trait StaveText
+  extends StObject
+     with Modifier {
   
   def draw(stave: Stave): StaveText = js.native
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains types that you can use to communicate with peripheral devices connected through a inter-integrated circuit (I²C) bus from an application. */
@@ -17,11 +16,15 @@ object I2c {
     
     /** A fast speed of 400 kHz. */
     @js.native
-    sealed trait fastMode extends I2cBusSpeed
+    sealed trait fastMode
+      extends StObject
+         with I2cBusSpeed
     
     /** The standard speed of 100 kilohertz (kHz). This speed is the default. */
     @js.native
-    sealed trait standardMode extends I2cBusSpeed
+    sealed trait standardMode
+      extends StObject
+         with I2cBusSpeed
   }
   
   @js.native
@@ -33,11 +36,15 @@ object I2c {
     
     /** Connects to the I²C bus address exclusively, so that no other connection to the I²C bus address can be made while you remain connected. This mode is the default mode. */
     @js.native
-    sealed trait exclusive extends I2cSharingMode
+    sealed trait exclusive
+      extends StObject
+         with I2cSharingMode
     
     /** Connects to the I²C bus address in shared mode, so that other connections to the I²C bus address can be made while you remain connected. */
     @js.native
-    sealed trait shared extends I2cSharingMode
+    sealed trait shared
+      extends StObject
+         with I2cSharingMode
   }
   
   @js.native
@@ -49,29 +56,34 @@ object I2c {
     
     /** The data was entirely transferred. For WriteReadPartial , the data for both the write and the read operations was entirely transferred. */
     @js.native
-    sealed trait fullTransfer extends I2cTransferStatus
+    sealed trait fullTransfer
+      extends StObject
+         with I2cTransferStatus
     
     /** The I²C device negatively acknowledged the data transfer before all of the data was transferred. */
     @js.native
-    sealed trait partialTransfer extends I2cTransferStatus
+    sealed trait partialTransfer
+      extends StObject
+         with I2cTransferStatus
     
     /** The bus address was not acknowledged. */
     @js.native
-    sealed trait slaveAddressNotAcknowledged extends I2cTransferStatus
+    sealed trait slaveAddressNotAcknowledged
+      extends StObject
+         with I2cTransferStatus
   }
   
   /** Represents the connection settings you want to use for an inter-integrated circuit (I²C) device. */
-  @js.native
   trait I2cConnectionSettings extends StObject {
     
     /** Gets or sets the bus speed to use for connecting to an inter-integrated circuit (I²C) device. The bus speed is the frequency at which to clock the I²C bus when accessing the device. */
-    var busSpeed: I2cBusSpeed = js.native
+    var busSpeed: I2cBusSpeed
     
     /** Gets or sets the sharing mode to use to connect to the inter-integrated circuit (I²C) bus address. This mode determines whether other connections to the I²C bus address can be opened while you are connect to the I²C bus address. */
-    var sharingMode: I2cSharingMode = js.native
+    var sharingMode: I2cSharingMode
     
     /** Gets or sets the bus address of the inter-integrated circuit (I²C) device. */
-    var slaveAddress: Double = js.native
+    var slaveAddress: Double
   }
   object I2cConnectionSettings {
     
@@ -96,7 +108,6 @@ object I2c {
   }
   
   /** Represents the I²C controller for the system. */
-  @js.native
   trait I2cController extends StObject {
     
     /**
@@ -104,7 +115,7 @@ object I2c {
       * @param settings The desired connection settings.
       * @return The I²C device.
       */
-    def getDevice(settings: I2cConnectionSettings): I2cDevice = js.native
+    def getDevice(settings: I2cConnectionSettings): I2cDevice
   }
   object I2cController {
     
@@ -123,50 +134,49 @@ object I2c {
   }
   
   /** Represents a communications channel to a device on an inter-integrated circuit (I²C) bus. */
-  @js.native
   trait I2cDevice extends StObject {
     
     /** Closes the connection to the inter-integrated circuit (I²C) device. */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /** Gets the connection settings used for communication with the inter-integrated circuit (I²C) device. */
-    var connectionSettings: I2cConnectionSettings = js.native
+    var connectionSettings: I2cConnectionSettings
     
     /** Gets the plug and play device identifier of the inter-integrated circuit (I²C) bus controller for the device. */
-    var deviceId: String = js.native
+    var deviceId: String
     
     /**
       * Reads data from the inter-integrated circuit (I²C) bus on which the device is connected into the specified buffer.
       * @param buffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
       */
-    def read(buffer: js.Array[Double]): Unit = js.native
+    def read(buffer: js.Array[Double]): Unit
     
     /**
       * Reads data from the inter-integrated circuit (I²C) bus on which the device is connected into the specified buffer, and returns information about the success of the operation that you can use for error handling.
       * @param buffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
       * @return A structure that contains information about the success of the read operation and the actual number of bytes that the operation read into the buffer.
       */
-    def readPartial(buffer: js.Array[Double]): I2cTransferResult = js.native
+    def readPartial(buffer: js.Array[Double]): I2cTransferResult
     
     /**
       * Writes data to the inter-integrated circuit (I²C) bus on which the device is connected, based on the bus address specified in the I2cConnectionSetting s object that you used to create the I2cDevice object.
       * @param buffer A buffer that contains the data that you want to write to the I²C device. This data should not include the bus address.
       */
-    def write(buffer: js.Array[Double]): Unit = js.native
+    def write(buffer: js.Array[Double]): Unit
     
     /**
       * Writes data to the inter-integrated circuit (I²C) bus on which the device is connected, and returns information about the success of the operation that you can use for error handling.
       * @param buffer A buffer that contains the data that you want to write to the I²C device. This data should not include the bus address.
       * @return A structure that contains information about the success of the write operation and the actual number of bytes that the operation wrote into the buffer.
       */
-    def writePartial(buffer: js.Array[Double]): I2cTransferResult = js.native
+    def writePartial(buffer: js.Array[Double]): I2cTransferResult
     
     /**
       * Performs an atomic operation to write data to and then read data from the inter-integrated circuit (I²C) bus on which the device is connected, and sends a restart condition between the write and read operations.
       * @param writeBuffer A buffer that contains the data that you want to write to the I²C device. This data should not include the bus address.
       * @param readBuffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
       */
-    def writeRead(writeBuffer: js.Array[Double], readBuffer: js.Array[Double]): Unit = js.native
+    def writeRead(writeBuffer: js.Array[Double], readBuffer: js.Array[Double]): Unit
     
     /**
       * Performs an atomic operation to write data to and then read data from the inter-integrated circuit (I²C) bus on which the device is connected, and returns information about the success of the operation that you can use for error handling.
@@ -174,7 +184,7 @@ object I2c {
       * @param readBuffer The buffer to which you want to read the data from the I²C bus. The length of the buffer determines how much data to request from the device.
       * @return A structure that contains information about whether both the read and write parts of the operation succeeded and the sum of the actual number of bytes that the operation wrote and the actual number of bytes that the operation read.
       */
-    def writeReadPartial(writeBuffer: js.Array[Double], readBuffer: js.Array[Double]): I2cTransferResult = js.native
+    def writeReadPartial(writeBuffer: js.Array[Double], readBuffer: js.Array[Double]): I2cTransferResult
   }
   object I2cDevice {
     
@@ -227,14 +237,13 @@ object I2c {
   }
   
   /** Provides information about whether the data transfers that the ReadPartial , WritePartial , or WriteReadPartial method performed succeeded, and the actual number of bytes the method transferred. */
-  @js.native
   trait I2cTransferResult extends StObject {
     
     /** The actual number of bytes that the operation actually transferred. The following table describes what this value represents for each method. */
-    var bytesTransferred: Double = js.native
+    var bytesTransferred: Double
     
     /** An enumeration value that indicates if the read or write operation transferred the full number of bytes that the method requested, or the reason that the full transfer did not succeed. For WriteReadPartial , the value indicates whether the data for both the write and the read operations was entirely transferred. */
-    var status: I2cTransferStatus = js.native
+    var status: I2cTransferStatus
   }
   object I2cTransferResult {
     
@@ -259,10 +268,9 @@ object I2c {
   object Provider {
     
     /** Represents actions common to all I²C providers. */
-    @js.native
     trait II2cProvider extends StObject {
       
-      var getControllersAsync: js.Any = js.native
+      var getControllersAsync: js.Any
     }
     object II2cProvider {
       
@@ -280,16 +288,15 @@ object I2c {
       }
     }
     
-    @js.native
     trait ProviderI2cConnectionSettings extends StObject {
       
-      var busSpeed: js.Any = js.native
+      var busSpeed: js.Any
       
       /* unmapped type */
-      var sharingMode: js.Any = js.native
+      var sharingMode: js.Any
       
       /* unmapped type */
-      var slaveAddress: js.Any = js.native
+      var slaveAddress: js.Any
     }
     object ProviderI2cConnectionSettings {
       

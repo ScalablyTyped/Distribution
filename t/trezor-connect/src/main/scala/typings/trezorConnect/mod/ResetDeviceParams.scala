@@ -2,25 +2,25 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResetDeviceParams extends CommonParams {
+trait ResetDeviceParams
+  extends StObject
+     with CommonParams {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var noBackup: js.UndefOr[Boolean] = js.native
+  var noBackup: js.UndefOr[Boolean] = js.undefined
   
-  var passphraseProtection: js.UndefOr[Boolean] = js.native
+  var passphraseProtection: js.UndefOr[Boolean] = js.undefined
   
-  var pinProtection: js.UndefOr[Boolean] = js.native
+  var pinProtection: js.UndefOr[Boolean] = js.undefined
   
-  var skipBackup: js.UndefOr[Boolean] = js.native
+  var skipBackup: js.UndefOr[Boolean] = js.undefined
   
-  var strength: js.UndefOr[Double] = js.native
+  var strength: js.UndefOr[Double] = js.undefined
   
-  var u2fCounter: js.UndefOr[Double] = js.native
+  var u2fCounter: js.UndefOr[Double] = js.undefined
 }
 object ResetDeviceParams {
   

@@ -3,7 +3,6 @@ package typings.nodegit.mod
 import typings.nodegit.pushOptionsMod.PushOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodegit", "Push")
@@ -13,7 +12,10 @@ class Push ()
 /* static members */
 object Push {
   
-  @JSImport("nodegit", "Push.initOptions")
+  @JSImport("nodegit", "Push")
   @js.native
-  def initOptions(opts: PushOptions, version: Double): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def initOptions(opts: PushOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

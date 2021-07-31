@@ -4,24 +4,25 @@ import typings.leaflet.mod.LatLngBounds_
 import typings.leaflet.mod.Map_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @JSImport("leaflet", "areaSelect")
+  @JSImport("leaflet", JSImport.Namespace)
   @js.native
-  def areaSelect(box: AreaSelectOptions): AreaSelect_ = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def areaSelect(box: AreaSelectOptions): AreaSelect_ = ^.asInstanceOf[js.Dynamic].applyDynamic("areaSelect")(box.asInstanceOf[js.Any]).asInstanceOf[AreaSelect_]
+  
   trait AreaSelectOptions extends StObject {
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var keepAspectRatio: js.UndefOr[Boolean] = js.native
+    var keepAspectRatio: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AreaSelectOptions {
     
@@ -54,16 +55,15 @@ object mod {
     }
   }
   
-  @js.native
   trait AreaSelect_ extends StObject {
     
-    def addTo(map: Map_): Map_ = js.native
+    def addTo(map: Map_): Map_
     
-    def getBounds(): LatLngBounds_ = js.native
+    def getBounds(): LatLngBounds_
     
-    def remove(): Unit = js.native
+    def remove(): Unit
     
-    def setDimensions(dim: Dimension): Unit = js.native
+    def setDimensions(dim: Dimension): Unit
   }
   object AreaSelect_ {
     
@@ -95,12 +95,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Dimension extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Dimension {
     

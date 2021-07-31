@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotVbpParamsOptions extends StObject {
   
   /**
     * (Highstock) The number of price zones.
     */
-  var ranges: js.UndefOr[Double] = js.native
+  var ranges: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The id of volume series which is mandatory. For example using
     * OHLC data, volumeSeriesID='volume' means the indicator will be calculated
     * using OHLC and volume values.
     */
-  var volumeSeriesID: js.UndefOr[String] = js.native
+  var volumeSeriesID: js.UndefOr[String] = js.undefined
 }
 object PlotVbpParamsOptions {
   

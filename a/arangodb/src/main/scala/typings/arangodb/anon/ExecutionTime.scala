@@ -2,27 +2,25 @@ package typings.arangodb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionTime extends StObject {
   
-  var executionTime: Double = js.native
+  var executionTime: Double
   
-  var filtered: Double = js.native
+  var filtered: Double
   
-  var fullCount: Double = js.native
+  var fullCount: Double
   
-  var httpRequests: Double = js.native
+  var httpRequests: Double
   
-  var scannedFull: Double = js.native
+  var scannedFull: Double
   
-  var scannedIndex: Double = js.native
+  var scannedIndex: Double
   
-  var writesExecuted: Double = js.native
+  var writesExecuted: Double
   
-  var writesIgnored: Double = js.native
+  var writesIgnored: Double
 }
 object ExecutionTime {
   

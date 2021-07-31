@@ -2,12 +2,11 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapProperties
-  extends LayersMixinProperties
+  extends StObject
+     with LayersMixinProperties
      with TablesMixinProperties {
   
   /**
@@ -15,14 +14,14 @@ trait MapProperties
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#basemap)
     */
-  var basemap: js.UndefOr[BasemapProperties | String] = js.native
+  var basemap: js.UndefOr[BasemapProperties | String] = js.undefined
   
   /**
     * Specifies the surface properties for the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Map.html#ground)
     */
-  var ground: js.UndefOr[GroundProperties | String] = js.native
+  var ground: js.UndefOr[GroundProperties | String] = js.undefined
 }
 object MapProperties {
   

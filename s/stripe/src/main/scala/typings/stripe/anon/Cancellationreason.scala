@@ -3,13 +3,11 @@ package typings.stripe.anon
 import typings.stripe.mod.paymentIntents.PaymentIntentUserProvidedCancellationReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancellationreason extends StObject {
   
-  var cancellation_reason: js.UndefOr[PaymentIntentUserProvidedCancellationReason] = js.native
+  var cancellation_reason: js.UndefOr[PaymentIntentUserProvidedCancellationReason] = js.undefined
 }
 object Cancellationreason {
   

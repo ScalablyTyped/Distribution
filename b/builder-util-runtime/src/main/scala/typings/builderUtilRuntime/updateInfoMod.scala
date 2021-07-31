@@ -3,12 +3,10 @@ package typings.builderUtilRuntime
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateInfoMod {
   
-  @js.native
   trait BlockMapDataHolder extends StObject {
     
     /**
@@ -16,20 +14,20 @@ object updateInfoMod {
       * This information can be obtained from the file itself, but it requires additional HTTP request,
       * so, to reduce request count, block map size is specified in the update metadata too.
       */
-    var blockMapSize: js.UndefOr[Double] = js.native
+    var blockMapSize: js.UndefOr[Double] = js.undefined
     
-    val isAdminRightsRequired: js.UndefOr[Boolean] = js.native
+    val isAdminRightsRequired: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The file checksum.
       */
-    val sha512: String = js.native
+    val sha512: String
     
     /**
       * The file size. Used to verify downloaded size (save one HTTP request to get length).
       * Also used when block map data is embedded into the file (appimage, windows web installer package).
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object BlockMapDataHolder {
     
@@ -65,10 +63,11 @@ object updateInfoMod {
     }
   }
   
-  @js.native
-  trait PackageFileInfo extends BlockMapDataHolder {
+  trait PackageFileInfo
+    extends StObject
+       with BlockMapDataHolder {
     
-    val path: String = js.native
+    val path: String
   }
   object PackageFileInfo {
     
@@ -86,24 +85,23 @@ object updateInfoMod {
     }
   }
   
-  @js.native
   trait ReleaseNoteInfo extends StObject {
     
     /**
       * The note.
       */
-    val note: String | Null = js.native
+    val note: String | Null
     
     /**
       * The version.
       */
-    val version: String = js.native
+    val version: String
   }
   object ReleaseNoteInfo {
     
     @scala.inline
     def apply(version: String): ReleaseNoteInfo = {
-      val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any], note = null)
       __obj.asInstanceOf[ReleaseNoteInfo]
     }
     
@@ -121,10 +119,11 @@ object updateInfoMod {
     }
   }
   
-  @js.native
-  trait UpdateFileInfo extends BlockMapDataHolder {
+  trait UpdateFileInfo
+    extends StObject
+       with BlockMapDataHolder {
     
-    var url: String = js.native
+    var url: String
   }
   object UpdateFileInfo {
     
@@ -142,41 +141,40 @@ object updateInfoMod {
     }
   }
   
-  @js.native
   trait UpdateInfo extends StObject {
     
-    val files: js.Array[UpdateFileInfo] = js.native
+    val files: js.Array[UpdateFileInfo]
     
     /** @deprecated */
-    val path: String = js.native
+    val path: String
     
     /**
       * The release date.
       */
-    var releaseDate: String = js.native
+    var releaseDate: String
     
     /**
       * The release name.
       */
-    var releaseName: js.UndefOr[String | Null] = js.native
+    var releaseName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The release notes. List if `updater.fullChangelog` is set to `true`, `string` otherwise.
       */
-    var releaseNotes: js.UndefOr[String | js.Array[ReleaseNoteInfo] | Null] = js.native
+    var releaseNotes: js.UndefOr[String | js.Array[ReleaseNoteInfo] | Null] = js.undefined
     
     /** @deprecated */
-    val sha512: String = js.native
+    val sha512: String
     
     /**
       * The [staged rollout](/auto-update#staged-rollouts) percentage, 0-100.
       */
-    val stagingPercentage: js.UndefOr[Double] = js.native
+    val stagingPercentage: js.UndefOr[Double] = js.undefined
     
     /**
       * The version.
       */
-    val version: String = js.native
+    val version: String
   }
   object UpdateInfo {
     
@@ -242,16 +240,17 @@ object updateInfoMod {
     }
   }
   
-  @js.native
-  trait WindowsUpdateInfo extends UpdateInfo {
+  trait WindowsUpdateInfo
+    extends StObject
+       with UpdateInfo {
     
-    var packages: js.UndefOr[StringDictionary[PackageFileInfo] | Null] = js.native
+    var packages: js.UndefOr[StringDictionary[PackageFileInfo] | Null] = js.undefined
     
     /**
       * @deprecated
       * @private
       */
-    var sha2: js.UndefOr[String] = js.native
+    var sha2: js.UndefOr[String] = js.undefined
   }
   object WindowsUpdateInfo {
     

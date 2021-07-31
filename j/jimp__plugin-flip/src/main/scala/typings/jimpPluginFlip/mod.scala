@@ -3,14 +3,16 @@ package typings.jimpPluginFlip
 import typings.jimpCore.etcMod.ImageCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-flip", JSImport.Default)
+  @JSImport("@jimp/plugin-flip", JSImport.Namespace)
   @js.native
-  def default(): Flip = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Flip = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Flip]
   
   @js.native
   trait Flip extends StObject {

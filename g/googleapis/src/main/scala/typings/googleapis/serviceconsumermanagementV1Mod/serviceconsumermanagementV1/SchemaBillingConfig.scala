@@ -2,20 +2,18 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the billing configuration for a new tenant project.
   */
-@js.native
 trait SchemaBillingConfig extends StObject {
   
   /**
     * Name of the billing account. For example
     * `billingAccounts/012345-567890-ABCDEF`.
     */
-  var billingAccount: js.UndefOr[String] = js.native
+  var billingAccount: js.UndefOr[String] = js.undefined
 }
 object SchemaBillingConfig {
   

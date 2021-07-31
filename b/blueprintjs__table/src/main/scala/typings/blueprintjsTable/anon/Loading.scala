@@ -2,15 +2,13 @@ package typings.blueprintjsTable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Loading extends StObject {
   
-  var loading: Boolean = js.native
+  var loading: Boolean
   
-  var renderMode: typings.blueprintjsTable.renderModeMod.RenderMode = js.native
+  var renderMode: typings.blueprintjsTable.renderModeMod.RenderMode
 }
 object Loading {
   

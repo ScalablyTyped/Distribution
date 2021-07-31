@@ -2,40 +2,38 @@ package typings.winrtUwp.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a custom print task option. */
-@js.native
 trait PrintCustomTextOptionDetails extends StObject {
   
   /** Gets or sets the display name of the custom print task option. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** Gets or sets the string for an error condition. */
-  var errorText: String = js.native
+  var errorText: String
   
   /** Gets or sets the maximum number of characters for the display name of the custom print task option. */
-  var maxCharacters: Double = js.native
+  var maxCharacters: Double
   
   /** Gets the ID of the custom print task option. */
-  var optionId: String = js.native
+  var optionId: String
   
   /** Gets the option type for the custom print task option. */
-  var optionType: PrintOptionType = js.native
+  var optionType: PrintOptionType
   
   /** Gets or sets the state of a custom print task option. */
-  var state: PrintOptionStates = js.native
+  var state: PrintOptionStates
   
   /**
     * Sets the value for the custom print task.
     * @param value Value for the custom print task.
     * @return Boolean value that indicates TRUE for a successful Get or Set, and FALSE for a failed Get or Set.
     */
-  def trySetValue(value: js.Any): Boolean = js.native
+  def trySetValue(value: js.Any): Boolean
   
   /** Gets or sets the value of a custom print task option. */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object PrintCustomTextOptionDetails {
   

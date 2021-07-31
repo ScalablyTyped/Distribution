@@ -3,133 +3,131 @@ package typings.dockerode.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostConfig extends StObject {
   
-  var AutoRemove: js.UndefOr[Boolean] = js.native
+  var AutoRemove: js.UndefOr[Boolean] = js.undefined
   
-  var Binds: js.UndefOr[js.Array[String]] = js.native
+  var Binds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var BlkioDeviceReadBps: js.UndefOr[js.Any] = js.native
+  var BlkioDeviceReadBps: js.UndefOr[js.Any] = js.undefined
   
-  var BlkioDeviceReadIOps: js.UndefOr[js.Any] = js.native
+  var BlkioDeviceReadIOps: js.UndefOr[js.Any] = js.undefined
   
-  var BlkioDeviceWriteBps: js.UndefOr[js.Any] = js.native
+  var BlkioDeviceWriteBps: js.UndefOr[js.Any] = js.undefined
   
-  var BlkioDeviceWriteIOps: js.UndefOr[js.Any] = js.native
+  var BlkioDeviceWriteIOps: js.UndefOr[js.Any] = js.undefined
   
-  var BlkioWeight: js.UndefOr[Double] = js.native
+  var BlkioWeight: js.UndefOr[Double] = js.undefined
   
-  var BlkioWeightDevice: js.UndefOr[js.Any] = js.native
+  var BlkioWeightDevice: js.UndefOr[js.Any] = js.undefined
   
-  var CapAdd: js.UndefOr[js.Any] = js.native
+  var CapAdd: js.UndefOr[js.Any] = js.undefined
   
-  var CapDrop: js.UndefOr[js.Any] = js.native
+  var CapDrop: js.UndefOr[js.Any] = js.undefined
   
-  var Cgroup: js.UndefOr[String] = js.native
+  var Cgroup: js.UndefOr[String] = js.undefined
   
-  var CgroupParent: js.UndefOr[String] = js.native
+  var CgroupParent: js.UndefOr[String] = js.undefined
   
-  var ConsoleSize: js.UndefOr[js.Array[Double]] = js.native
+  var ConsoleSize: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var ContainerIDFile: js.UndefOr[String] = js.native
+  var ContainerIDFile: js.UndefOr[String] = js.undefined
   
-  var CpuPeriod: js.UndefOr[Double] = js.native
+  var CpuPeriod: js.UndefOr[Double] = js.undefined
   
-  var CpuQuota: js.UndefOr[Double] = js.native
+  var CpuQuota: js.UndefOr[Double] = js.undefined
   
-  var CpuShares: js.UndefOr[Double] = js.native
+  var CpuShares: js.UndefOr[Double] = js.undefined
   
-  var CpusetCpus: js.UndefOr[String] = js.native
+  var CpusetCpus: js.UndefOr[String] = js.undefined
   
-  var CpusetMems: js.UndefOr[String] = js.native
+  var CpusetMems: js.UndefOr[String] = js.undefined
   
-  var DeviceCgroupRules: js.UndefOr[js.Array[String]] = js.native
+  var DeviceCgroupRules: js.UndefOr[js.Array[String]] = js.undefined
   
-  var DeviceRequests: js.UndefOr[js.Array[DeviceRequest]] = js.native
+  var DeviceRequests: js.UndefOr[js.Array[DeviceRequest]] = js.undefined
   
-  var Devices: js.UndefOr[js.Any] = js.native
+  var Devices: js.UndefOr[js.Any] = js.undefined
   
-  var DiskQuota: js.UndefOr[Double] = js.native
+  var DiskQuota: js.UndefOr[Double] = js.undefined
   
-  var Dns: js.UndefOr[js.Array[_]] = js.native
+  var Dns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var DnsOptions: js.UndefOr[js.Array[_]] = js.native
+  var DnsOptions: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var DnsSearch: js.UndefOr[js.Array[_]] = js.native
+  var DnsSearch: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var ExtraHosts: js.UndefOr[js.Any] = js.native
+  var ExtraHosts: js.UndefOr[js.Any] = js.undefined
   
-  var GroupAdd: js.UndefOr[js.Array[String]] = js.native
+  var GroupAdd: js.UndefOr[js.Array[String]] = js.undefined
   
-  var IpcMode: js.UndefOr[String] = js.native
+  var IpcMode: js.UndefOr[String] = js.undefined
   
-  var Isolation: js.UndefOr[String] = js.native
+  var Isolation: js.UndefOr[String] = js.undefined
   
-  var KernelMemory: js.UndefOr[Double] = js.native
+  var KernelMemory: js.UndefOr[Double] = js.undefined
   
-  var Links: js.UndefOr[js.Any] = js.native
+  var Links: js.UndefOr[js.Any] = js.undefined
   
-  var LogConfig: js.UndefOr[typings.dockerode.anon.Config] = js.native
+  var LogConfig: js.UndefOr[typings.dockerode.anon.Config] = js.undefined
   
-  var MaskedPaths: js.UndefOr[js.Array[String]] = js.native
+  var MaskedPaths: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Memory: js.UndefOr[Double] = js.native
+  var Memory: js.UndefOr[Double] = js.undefined
   
-  var MemoryReservation: js.UndefOr[Double] = js.native
+  var MemoryReservation: js.UndefOr[Double] = js.undefined
   
-  var MemorySwap: js.UndefOr[Double] = js.native
+  var MemorySwap: js.UndefOr[Double] = js.undefined
   
-  var MemorySwappiness: js.UndefOr[Double] = js.native
+  var MemorySwappiness: js.UndefOr[Double] = js.undefined
   
-  var Mounts: js.UndefOr[MountConfig] = js.native
+  var Mounts: js.UndefOr[MountConfig] = js.undefined
   
-  var NetworkMode: js.UndefOr[String] = js.native
+  var NetworkMode: js.UndefOr[String] = js.undefined
   
-  var OomKillDisable: js.UndefOr[Boolean] = js.native
+  var OomKillDisable: js.UndefOr[Boolean] = js.undefined
   
-  var OomScoreAdj: js.UndefOr[Double] = js.native
+  var OomScoreAdj: js.UndefOr[Double] = js.undefined
   
-  var PidMode: js.UndefOr[String] = js.native
+  var PidMode: js.UndefOr[String] = js.undefined
   
-  var PidsLimit: js.UndefOr[Double] = js.native
+  var PidsLimit: js.UndefOr[Double] = js.undefined
   
-  var PortBindings: js.UndefOr[js.Any] = js.native
+  var PortBindings: js.UndefOr[js.Any] = js.undefined
   
-  var Privileged: js.UndefOr[Boolean] = js.native
+  var Privileged: js.UndefOr[Boolean] = js.undefined
   
-  var PublishAllPorts: js.UndefOr[Boolean] = js.native
+  var PublishAllPorts: js.UndefOr[Boolean] = js.undefined
   
-  var ReadonlyPaths: js.UndefOr[js.Array[String]] = js.native
+  var ReadonlyPaths: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ReadonlyRootfs: js.UndefOr[Boolean] = js.native
+  var ReadonlyRootfs: js.UndefOr[Boolean] = js.undefined
   
-  var RestartPolicy: js.UndefOr[typings.dockerode.mod.RestartPolicy] = js.native
+  var RestartPolicy: js.UndefOr[typings.dockerode.mod.RestartPolicy] = js.undefined
   
-  var Runtime: js.UndefOr[String] = js.native
+  var Runtime: js.UndefOr[String] = js.undefined
   
-  var SecurityOpt: js.UndefOr[js.Any] = js.native
+  var SecurityOpt: js.UndefOr[js.Any] = js.undefined
   
-  var ShmSize: js.UndefOr[Double] = js.native
+  var ShmSize: js.UndefOr[Double] = js.undefined
   
-  var StorageOpt: js.UndefOr[StringDictionary[String]] = js.native
+  var StorageOpt: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Sysctls: js.UndefOr[StringDictionary[String]] = js.native
+  var Sysctls: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var Tmpfs: js.UndefOr[StringDictionary[String]] = js.native
+  var Tmpfs: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var UTSMode: js.UndefOr[String] = js.native
+  var UTSMode: js.UndefOr[String] = js.undefined
   
-  var Ulimits: js.UndefOr[js.Any] = js.native
+  var Ulimits: js.UndefOr[js.Any] = js.undefined
   
-  var UsernsMode: js.UndefOr[String] = js.native
+  var UsernsMode: js.UndefOr[String] = js.undefined
   
-  var VolumeDriver: js.UndefOr[String] = js.native
+  var VolumeDriver: js.UndefOr[String] = js.undefined
   
-  var VolumesFrom: js.UndefOr[js.Any] = js.native
+  var VolumesFrom: js.UndefOr[js.Any] = js.undefined
 }
 object HostConfig {
   
@@ -293,10 +291,10 @@ object HostConfig {
     def setDiskQuotaUndefined: Self = StObject.set(x, "DiskQuota", js.undefined)
     
     @scala.inline
-    def setDns(value: js.Array[_]): Self = StObject.set(x, "Dns", value.asInstanceOf[js.Any])
+    def setDns(value: js.Array[js.Any]): Self = StObject.set(x, "Dns", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDnsOptions(value: js.Array[_]): Self = StObject.set(x, "DnsOptions", value.asInstanceOf[js.Any])
+    def setDnsOptions(value: js.Array[js.Any]): Self = StObject.set(x, "DnsOptions", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDnsOptionsUndefined: Self = StObject.set(x, "DnsOptions", js.undefined)
@@ -305,7 +303,7 @@ object HostConfig {
     def setDnsOptionsVarargs(value: js.Any*): Self = StObject.set(x, "DnsOptions", js.Array(value :_*))
     
     @scala.inline
-    def setDnsSearch(value: js.Array[_]): Self = StObject.set(x, "DnsSearch", value.asInstanceOf[js.Any])
+    def setDnsSearch(value: js.Array[js.Any]): Self = StObject.set(x, "DnsSearch", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDnsSearchUndefined: Self = StObject.set(x, "DnsSearch", js.undefined)

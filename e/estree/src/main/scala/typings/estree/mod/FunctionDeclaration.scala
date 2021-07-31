@@ -2,34 +2,29 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionDeclaration
-  extends BaseFunction
+  extends StObject
+     with BaseFunction
      with Declaration
      with Function {
   
   @JSName("body")
-  var body_FunctionDeclaration: BlockStatement = js.native
+  var body_FunctionDeclaration: BlockStatement
   
   /** It is null when a function declaration is a part of the `export default function` statement */
-  var id: Identifier | Null = js.native
+  var id: Identifier | Null
   
   @JSName("type")
-  var type_FunctionDeclaration: typings.estree.estreeStrings.FunctionDeclaration = js.native
+  var type_FunctionDeclaration: typings.estree.estreeStrings.FunctionDeclaration
 }
 object FunctionDeclaration {
   
   @scala.inline
-  def apply(
-    body: BlockStatement,
-    params: js.Array[Pattern],
-    `type`: typings.estree.estreeStrings.FunctionDeclaration
-  ): FunctionDeclaration = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: BlockStatement, params: js.Array[Pattern]): FunctionDeclaration = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], id = null)
+    __obj.updateDynamic("type")("FunctionDeclaration")
     __obj.asInstanceOf[FunctionDeclaration]
   }
   

@@ -8,29 +8,27 @@ import typings.spectacle.spectacleStrings.space
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationsWhenGoingBack extends StObject {
   
-  var animationsWhenGoingBack: js.UndefOr[Boolean] = js.native
+  var animationsWhenGoingBack: js.UndefOr[Boolean] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var keyboardControls: js.UndefOr[arrows | space] = js.native
+  var keyboardControls: js.UndefOr[arrows | space] = js.undefined
   
-  var loop: js.UndefOr[Boolean] = js.native
+  var loop: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[TemplateFn] = js.native
+  var template: js.UndefOr[TemplateFn] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
   
-  var theme: js.UndefOr[Record[String, _]] = js.native
+  var theme: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var transitionEffect: js.UndefOr[TransitionEffect] = js.native
+  var transitionEffect: js.UndefOr[TransitionEffect] = js.undefined
 }
 object AnimationsWhenGoingBack {
   
@@ -86,7 +84,7 @@ object AnimationsWhenGoingBack {
     def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def setTheme(value: Record[String, _]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
+    def setTheme(value: Record[String, js.Any]): Self = StObject.set(x, "theme", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setThemeUndefined: Self = StObject.set(x, "theme", js.undefined)

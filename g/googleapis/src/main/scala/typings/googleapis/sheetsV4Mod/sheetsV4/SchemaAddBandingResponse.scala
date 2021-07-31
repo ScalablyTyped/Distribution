@@ -2,19 +2,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of adding a banded range.
   */
-@js.native
 trait SchemaAddBandingResponse extends StObject {
   
   /**
     * The banded range that was added.
     */
-  var bandedRange: js.UndefOr[SchemaBandedRange] = js.native
+  var bandedRange: js.UndefOr[SchemaBandedRange] = js.undefined
 }
 object SchemaAddBandingResponse {
   

@@ -6,35 +6,36 @@ import typings.rcPicker.interfaceMod.Locale
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object headerMod {
   
-  @JSImport("antd/lib/calendar/Header", JSImport.Default)
+  @JSImport("antd/lib/calendar/Header", JSImport.Namespace)
   @js.native
-  def default[DateType](props: CalendarHeaderProps[DateType]): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[DateType](props: CalendarHeaderProps[DateType]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait CalendarHeaderProps[DateType] extends StObject {
     
-    var fullscreen: Boolean = js.native
+    var fullscreen: Boolean
     
-    var generateConfig: GenerateConfig[DateType] = js.native
+    var generateConfig: GenerateConfig[DateType]
     
-    var locale: Locale = js.native
+    var locale: Locale
     
-    var mode: CalendarMode = js.native
+    var mode: CalendarMode
     
-    def onChange(date: DateType): Unit = js.native
+    def onChange(date: DateType): Unit
     
-    def onModeChange(mode: CalendarMode): Unit = js.native
+    def onModeChange(mode: CalendarMode): Unit
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var validRange: js.UndefOr[js.Tuple2[DateType, DateType]] = js.native
+    var validRange: js.UndefOr[js.Tuple2[DateType, DateType]] = js.undefined
     
-    var value: DateType = js.native
+    var value: DateType
   }
   object CalendarHeaderProps {
     
@@ -54,7 +55,7 @@ object headerMod {
     }
     
     @scala.inline
-    implicit class CalendarHeaderPropsMutableBuilder[Self <: CalendarHeaderProps[_], DateType] (val x: Self with CalendarHeaderProps[DateType]) extends AnyVal {
+    implicit class CalendarHeaderPropsMutableBuilder[Self <: CalendarHeaderProps[?], DateType] (val x: Self & CalendarHeaderProps[DateType]) extends AnyVal {
       
       @scala.inline
       def setFullscreen(value: Boolean): Self = StObject.set(x, "fullscreen", value.asInstanceOf[js.Any])

@@ -2,33 +2,31 @@ package typings.phaser.Phaser.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Plugins {
   
-  @js.native
   trait CorePluginContainer extends StObject {
     
     /**
       * Core Scene plugin or a Custom Scene plugin?
       */
-    var custom: js.UndefOr[Boolean] = js.native
+    var custom: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The unique name of this plugin in the core plugin cache.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * If this plugin is to be injected into the Scene Systems, this is the property key map used.
       */
-    var mapping: js.UndefOr[String] = js.native
+    var mapping: js.UndefOr[String] = js.undefined
     
     /**
       * The plugin to be stored. Should be the source object, not instantiated.
       */
-    var plugin: js.Function = js.native
+    var plugin: js.Function
   }
   object CorePluginContainer {
     
@@ -61,18 +59,17 @@ object Plugins {
     }
   }
   
-  @js.native
   trait CustomPluginContainer extends StObject {
     
     /**
       * The unique name of this plugin in the custom plugin cache.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * The plugin to be stored. Should be the source object, not instantiated.
       */
-    var plugin: js.Function = js.native
+    var plugin: js.Function
   }
   object CustomPluginContainer {
     
@@ -93,28 +90,27 @@ object Plugins {
     }
   }
   
-  @js.native
   trait GlobalPlugin extends StObject {
     
     /**
       * Is the plugin active or not?
       */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The unique name of this plugin within the plugin cache.
       */
-    var key: String = js.native
+    var key: String
     
     /**
       * If this plugin is to be injected into the Scene Systems, this is the property key map used.
       */
-    var mapping: js.UndefOr[String] = js.native
+    var mapping: js.UndefOr[String] = js.undefined
     
     /**
       * An instance of the plugin.
       */
-    var plugin: js.Function = js.native
+    var plugin: js.Function
   }
   object GlobalPlugin {
     

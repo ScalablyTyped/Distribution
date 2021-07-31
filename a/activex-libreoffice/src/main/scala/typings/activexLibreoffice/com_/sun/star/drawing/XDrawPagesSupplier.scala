@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** must be supported to provide access to a multi-page drawing-layer. */
-@js.native
-trait XDrawPagesSupplier extends XInterface {
+trait XDrawPagesSupplier
+  extends StObject
+     with XInterface {
   
   /** @returns an indexed container with the service {@link DrawPages} . */
-  val DrawPages: XDrawPages = js.native
+  val DrawPages: XDrawPages
   
   /** @returns an indexed container with the service {@link DrawPages} . */
-  def getDrawPages(): XDrawPages = js.native
+  def getDrawPages(): XDrawPages
 }
 object XDrawPagesSupplier {
   

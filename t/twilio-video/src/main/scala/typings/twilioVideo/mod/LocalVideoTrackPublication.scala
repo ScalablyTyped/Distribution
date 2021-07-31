@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitterOptions
 import typings.twilioVideo.twilioVideoStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio-video", "LocalVideoTrackPublication")

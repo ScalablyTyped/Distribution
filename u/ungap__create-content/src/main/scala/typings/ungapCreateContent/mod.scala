@@ -3,15 +3,16 @@ package typings.ungapCreateContent
 import typings.std.DocumentFragment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(markup: js.Any): DocumentFragment = ^.asInstanceOf[js.Dynamic].apply(markup.asInstanceOf[js.Any]).asInstanceOf[DocumentFragment]
+  @scala.inline
+  def apply(markup: js.Any, `type`: String): DocumentFragment = (^.asInstanceOf[js.Dynamic].apply(markup.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[DocumentFragment]
+  
   @JSImport("@ungap/create-content", JSImport.Namespace)
   @js.native
-  def apply(markup: js.Any): DocumentFragment = js.native
-  @JSImport("@ungap/create-content", JSImport.Namespace)
-  @js.native
-  def apply(markup: js.Any, `type`: String): DocumentFragment = js.native
+  val ^ : js.Any = js.native
 }

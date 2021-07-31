@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -56,29 +55,21 @@ trait PlusNativeObjBitmap extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def load(): Unit = js.native
-  def load(
-    path: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def load(path: js.UndefOr[scala.Nothing], successCallback: js.Function0[Unit]): Unit = js.native
-  def load(
-    path: js.UndefOr[scala.Nothing],
-    successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def load(path: String): Unit = js.native
-  def load(
-    path: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def load(path: String, successCallback: js.Function0[Unit]): Unit = js.native
   def load(
     path: String,
     successCallback: js.Function0[Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def load(path: String, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def load(path: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+  def load(
+    path: Unit,
+    successCallback: js.Function0[Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def load(path: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 加载Base64编码格式图片到Bitmap对象
@@ -88,29 +79,21 @@ trait PlusNativeObjBitmap extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def loadBase64Data(): Unit = js.native
-  def loadBase64Data(
-    data: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def loadBase64Data(data: js.UndefOr[scala.Nothing], successCallback: js.Function0[Unit]): Unit = js.native
-  def loadBase64Data(
-    data: js.UndefOr[scala.Nothing],
-    successCallback: js.Function0[Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def loadBase64Data(data: String): Unit = js.native
-  def loadBase64Data(
-    data: String,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def loadBase64Data(data: String, successCallback: js.Function0[Unit]): Unit = js.native
   def loadBase64Data(
     data: String,
     successCallback: js.Function0[Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def loadBase64Data(data: String, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def loadBase64Data(data: Unit, successCallback: js.Function0[Unit]): Unit = js.native
+  def loadBase64Data(
+    data: Unit,
+    successCallback: js.Function0[Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def loadBase64Data(data: Unit, successCallback: Unit, errorCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 回收Bitmap图片内存
@@ -128,75 +111,67 @@ trait PlusNativeObjBitmap extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
   def save(): Unit = js.native
-  def save(
-    path: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def save(
-    path: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def save(
-    path: js.UndefOr[scala.Nothing],
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def save(path: js.UndefOr[scala.Nothing], options: PlusNativeObjBitmapSaveOptions): Unit = js.native
-  def save(
-    path: js.UndefOr[scala.Nothing],
-    options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def save(
-    path: js.UndefOr[scala.Nothing],
-    options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def save(
-    path: js.UndefOr[scala.Nothing],
-    options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.Function1[/* result */ js.Any, Unit],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
   def save(path: String): Unit = js.native
+  def save(path: String, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def save(
     path: String,
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.UndefOr[scala.Nothing],
+    options: Unit,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def save(
     path: String,
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def save(
-    path: String,
-    options: js.UndefOr[scala.Nothing],
-    successCallback: js.Function1[/* result */ js.Any, Unit],
+    options: Unit,
+    successCallback: Unit,
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def save(path: String, options: PlusNativeObjBitmapSaveOptions): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,
-    successCallback: js.UndefOr[scala.Nothing],
-    errorCallback: js.Function1[/* result */ js.Any, Unit]
-  ): Unit = js.native
-  def save(
-    path: String,
-    options: PlusNativeObjBitmapSaveOptions,
     successCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   def save(
     path: String,
     options: PlusNativeObjBitmapSaveOptions,
     successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: String,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(path: Unit, options: Unit, successCallback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
+  def save(
+    path: Unit,
+    options: Unit,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: Unit,
+    options: Unit,
+    successCallback: Unit,
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(path: Unit, options: PlusNativeObjBitmapSaveOptions): Unit = js.native
+  def save(
+    path: Unit,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: Unit,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: js.Function1[/* result */ js.Any, Unit],
+    errorCallback: js.Function1[/* result */ js.Any, Unit]
+  ): Unit = js.native
+  def save(
+    path: Unit,
+    options: PlusNativeObjBitmapSaveOptions,
+    successCallback: Unit,
     errorCallback: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
   

@@ -2,7 +2,6 @@ package typings.dfVisible
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,39 +14,19 @@ trait JQuery extends StObject {
     * function(object details) {...};
     */
   def visible(): Boolean = js.native
-  def visible(
-    partial: js.UndefOr[scala.Nothing],
-    hidden: js.UndefOr[scala.Nothing],
-    direction: js.UndefOr[scala.Nothing],
-    container: JQuery
-  ): Boolean = js.native
-  def visible(partial: js.UndefOr[scala.Nothing], hidden: js.UndefOr[scala.Nothing], direction: Direction): Boolean = js.native
-  def visible(
-    partial: js.UndefOr[scala.Nothing],
-    hidden: js.UndefOr[scala.Nothing],
-    direction: Direction,
-    container: JQuery
-  ): Boolean = js.native
-  def visible(partial: js.UndefOr[scala.Nothing], hidden: Boolean): Boolean = js.native
-  def visible(
-    partial: js.UndefOr[scala.Nothing],
-    hidden: Boolean,
-    direction: js.UndefOr[scala.Nothing],
-    container: JQuery
-  ): Boolean = js.native
-  def visible(partial: js.UndefOr[scala.Nothing], hidden: Boolean, direction: Direction): Boolean = js.native
-  def visible(partial: js.UndefOr[scala.Nothing], hidden: Boolean, direction: Direction, container: JQuery): Boolean = js.native
   def visible(partial: Boolean): Boolean = js.native
-  def visible(
-    partial: Boolean,
-    hidden: js.UndefOr[scala.Nothing],
-    direction: js.UndefOr[scala.Nothing],
-    container: JQuery
-  ): Boolean = js.native
-  def visible(partial: Boolean, hidden: js.UndefOr[scala.Nothing], direction: Direction): Boolean = js.native
-  def visible(partial: Boolean, hidden: js.UndefOr[scala.Nothing], direction: Direction, container: JQuery): Boolean = js.native
   def visible(partial: Boolean, hidden: Boolean): Boolean = js.native
-  def visible(partial: Boolean, hidden: Boolean, direction: js.UndefOr[scala.Nothing], container: JQuery): Boolean = js.native
+  def visible(partial: Boolean, hidden: Boolean, direction: Unit, container: JQuery): Boolean = js.native
   def visible(partial: Boolean, hidden: Boolean, direction: Direction): Boolean = js.native
   def visible(partial: Boolean, hidden: Boolean, direction: Direction, container: JQuery): Boolean = js.native
+  def visible(partial: Boolean, hidden: Unit, direction: Unit, container: JQuery): Boolean = js.native
+  def visible(partial: Boolean, hidden: Unit, direction: Direction): Boolean = js.native
+  def visible(partial: Boolean, hidden: Unit, direction: Direction, container: JQuery): Boolean = js.native
+  def visible(partial: Unit, hidden: Boolean): Boolean = js.native
+  def visible(partial: Unit, hidden: Boolean, direction: Unit, container: JQuery): Boolean = js.native
+  def visible(partial: Unit, hidden: Boolean, direction: Direction): Boolean = js.native
+  def visible(partial: Unit, hidden: Boolean, direction: Direction, container: JQuery): Boolean = js.native
+  def visible(partial: Unit, hidden: Unit, direction: Unit, container: JQuery): Boolean = js.native
+  def visible(partial: Unit, hidden: Unit, direction: Direction): Boolean = js.native
+  def visible(partial: Unit, hidden: Unit, direction: Direction, container: JQuery): Boolean = js.native
 }

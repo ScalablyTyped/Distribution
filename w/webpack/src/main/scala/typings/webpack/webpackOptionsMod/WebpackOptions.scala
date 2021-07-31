@@ -24,153 +24,151 @@ import typings.webpack.webpackStrings.web
 import typings.webpack.webpackStrings.webworker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebpackOptions extends StObject {
   
   /**
   	 * Set the value of `require.amd` and `define.amd`. Or disable AMD support.
   	 */
-  var amd: js.UndefOr[`false` | StringDictionary[js.Any]] = js.native
+  var amd: js.UndefOr[`false` | StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * Report the first error as a hard error instead of tolerating it.
   	 */
-  var bail: js.UndefOr[Boolean] = js.native
+  var bail: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Cache generated modules and chunks to improve performance for multiple incremental builds.
   	 */
-  var cache: js.UndefOr[Boolean | StringDictionary[js.Any]] = js.native
+  var cache: js.UndefOr[Boolean | StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * The base directory (absolute path!) for resolving the `entry` option. If `output.pathinfo` is set, the included pathinfo is shortened to this directory.
   	 */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
   	 * References to other configurations to depend on.
   	 */
-  var dependencies: js.UndefOr[js.Array[String]] = js.native
+  var dependencies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
   	 * Options for the webpack-dev-server
   	 */
-  var devServer: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var devServer: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * A developer tool to enhance debugging.
   	 */
-  var devtool: js.UndefOr[String | `false`] = js.native
+  var devtool: js.UndefOr[String | `false`] = js.undefined
   
   /**
   	 * The entry point(s) of the compilation.
   	 */
-  var entry: js.UndefOr[Entry] = js.native
+  var entry: js.UndefOr[Entry] = js.undefined
   
   /**
   	 * Specify dependencies that shouldn't be resolved by webpack, but should become dependencies of the resulting bundle. The kind of the dependency depends on `output.libraryTarget`.
   	 */
-  var externals: js.UndefOr[Externals] = js.native
+  var externals: js.UndefOr[Externals] = js.undefined
   
   /**
   	 * Options for infrastructure level logging
   	 */
-  var infrastructureLogging: js.UndefOr[Debug] = js.native
+  var infrastructureLogging: js.UndefOr[Debug] = js.undefined
   
   /**
   	 * Custom values available in the loader context.
   	 */
-  var loader: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var loader: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * Enable production optimizations or development hints.
   	 */
-  var mode: js.UndefOr[development | production | none] = js.native
+  var mode: js.UndefOr[development | production | none] = js.undefined
   
   /**
   	 * Options affecting the normal modules (`NormalModuleFactory`).
   	 */
-  var module: js.UndefOr[ModuleOptions] = js.native
+  var module: js.UndefOr[ModuleOptions] = js.undefined
   
   /**
   	 * Name of the configuration. Used when loading multiple configurations.
   	 */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
   	 * Include polyfills or mocks for various node stuff.
   	 */
-  var node: js.UndefOr[`false` | NodeOptions] = js.native
+  var node: js.UndefOr[`false` | NodeOptions] = js.undefined
   
   /**
   	 * Enables/Disables integrated optimizations
   	 */
-  var optimization: js.UndefOr[OptimizationOptions] = js.native
+  var optimization: js.UndefOr[OptimizationOptions] = js.undefined
   
   /**
   	 * Options affecting the output of the compilation. `output` options tell webpack how to write the compiled files to disk.
   	 */
-  var output: js.UndefOr[OutputOptions] = js.native
+  var output: js.UndefOr[OutputOptions] = js.undefined
   
   /**
   	 * The number of parallel processed modules in the compilation.
   	 */
-  var parallelism: js.UndefOr[Double] = js.native
+  var parallelism: js.UndefOr[Double] = js.undefined
   
   /**
   	 * Configuration for web performance recommendations.
   	 */
-  var performance: js.UndefOr[`false` | PerformanceOptions] = js.native
+  var performance: js.UndefOr[`false` | PerformanceOptions] = js.undefined
   
   /**
   	 * Add additional plugins to the compiler.
   	 */
-  var plugins: js.UndefOr[js.Array[WebpackPluginInstance | WebpackPluginFunction]] = js.native
+  var plugins: js.UndefOr[js.Array[WebpackPluginInstance | WebpackPluginFunction]] = js.undefined
   
   /**
   	 * Capture timing information for each module.
   	 */
-  var profile: js.UndefOr[Boolean] = js.native
+  var profile: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Store compiler state to a json file.
   	 */
-  var recordsInputPath: js.UndefOr[String] = js.native
+  var recordsInputPath: js.UndefOr[String] = js.undefined
   
   /**
   	 * Load compiler state from a json file.
   	 */
-  var recordsOutputPath: js.UndefOr[String] = js.native
+  var recordsOutputPath: js.UndefOr[String] = js.undefined
   
   /**
   	 * Store/Load compiler state from/to a json file. This will result in persistent ids of modules and chunks. An absolute path is expected. `recordsPath` is used for `recordsInputPath` and `recordsOutputPath` if they left undefined.
   	 */
-  var recordsPath: js.UndefOr[String] = js.native
+  var recordsPath: js.UndefOr[String] = js.undefined
   
   /**
   	 * Options for the resolver
   	 */
-  var resolve: js.UndefOr[ResolveOptions] = js.native
+  var resolve: js.UndefOr[ResolveOptions] = js.undefined
   
   /**
   	 * Options for the resolver when resolving loaders
   	 */
-  var resolveLoader: js.UndefOr[ResolveOptions] = js.native
+  var resolveLoader: js.UndefOr[ResolveOptions] = js.undefined
   
   /**
   	 * Options for webpack-serve
   	 */
-  var serve: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var serve: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
   	 * Used by the webpack CLI program to pass stats options.
   	 */
   var stats: js.UndefOr[
     StatsOptions | Boolean | none | `errors-only` | minimal | normal | detailed | verbose | `errors-warnings`
-  ] = js.native
+  ] = js.undefined
   
   /**
   	 * Environment to build for
@@ -180,17 +178,17 @@ trait WebpackOptions extends StObject {
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Compiler */ /* compiler */ js.Any, 
       Unit
     ])
-  ] = js.native
+  ] = js.undefined
   
   /**
   	 * Enter watch mode, which rebuilds on file change.
   	 */
-  var watch: js.UndefOr[Boolean] = js.native
+  var watch: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Options for the watcher
   	 */
-  var watchOptions: js.UndefOr[AggregateTimeout] = js.native
+  var watchOptions: js.UndefOr[AggregateTimeout] = js.undefined
 }
 object WebpackOptions {
   

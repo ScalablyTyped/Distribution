@@ -5,21 +5,23 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Provider.FileUpdateStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.Storage.CachedFileManager")
 @js.native
 class CachedFileManager ()
-  extends typings.winrt.Windows.Storage.CachedFileManager
+  extends StObject
+     with typings.winrt.Windows.Storage.CachedFileManager
 /* static members */
 object CachedFileManager {
   
-  @JSGlobal("Windows.Storage.CachedFileManager.completeUpdatesAsync")
+  @JSGlobal("Windows.Storage.CachedFileManager")
   @js.native
-  def completeUpdatesAsync(file: IStorageFile): IAsyncOperation[FileUpdateStatus] = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("Windows.Storage.CachedFileManager.deferUpdates")
-  @js.native
-  def deferUpdates(file: IStorageFile): Unit = js.native
+  @scala.inline
+  def completeUpdatesAsync(file: IStorageFile): IAsyncOperation[FileUpdateStatus] = ^.asInstanceOf[js.Dynamic].applyDynamic("completeUpdatesAsync")(file.asInstanceOf[js.Any]).asInstanceOf[IAsyncOperation[FileUpdateStatus]]
+  
+  @scala.inline
+  def deferUpdates(file: IStorageFile): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deferUpdates")(file.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,21 +2,19 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Top extends StObject {
   
   /**
     * the left virtual screen coordinate of the mouse
     */
-  var left: Double = js.native
+  var left: Double
   
   /**
     * the top virtual screen coordinate of the mouse
     */
-  var top: Double = js.native
+  var top: Double
 }
 object Top {
   

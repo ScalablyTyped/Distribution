@@ -2,17 +2,15 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedrivePolicy extends StObject {
   
-  var deadLetterTargetArn: js.UndefOr[String] = js.native
+  var deadLetterTargetArn: js.UndefOr[String] = js.undefined
   
-  var deadLetterTargetImport: js.UndefOr[DeadLetterTargetImport] = js.native
+  var deadLetterTargetImport: js.UndefOr[DeadLetterTargetImport] = js.undefined
   
-  var deadLetterTargetRef: js.UndefOr[String] = js.native
+  var deadLetterTargetRef: js.UndefOr[String] = js.undefined
 }
 object RedrivePolicy {
   

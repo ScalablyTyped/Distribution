@@ -5,12 +5,10 @@ import typings.opentelemetryApi.setterMod.SetterFunction
 import typings.opentelemetryContextBase.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpTextPropagatorMod {
   
-  @js.native
   trait HttpTextPropagator extends StObject {
     
     /**
@@ -25,7 +23,7 @@ object httpTextPropagatorMod {
       * @param getter a function which accepts a carrier and a key, and returns
       *     the value from the carrier identified by the key.
       */
-    def extract(context: Context, carrier: js.Any, getter: GetterFunction[_]): Context = js.native
+    def extract(context: Context, carrier: js.Any, getter: GetterFunction[js.Any]): Context
     
     /**
       * Injects values from a given `Context` into a carrier.
@@ -40,14 +38,14 @@ object httpTextPropagatorMod {
       * @param setter a function which accepts a carrier, key, and value, which
       *     sets the key on the carrier to the value.
       */
-    def inject(context: Context, carrier: js.Any, setter: SetterFunction[_]): Unit = js.native
+    def inject(context: Context, carrier: js.Any, setter: SetterFunction[js.Any]): Unit
   }
   object HttpTextPropagator {
     
     @scala.inline
     def apply(
-      extract: (Context, js.Any, GetterFunction[_]) => Context,
-      inject: (Context, js.Any, SetterFunction[_]) => Unit
+      extract: (Context, js.Any, GetterFunction[js.Any]) => Context,
+      inject: (Context, js.Any, SetterFunction[js.Any]) => Unit
     ): HttpTextPropagator = {
       val __obj = js.Dynamic.literal(extract = js.Any.fromFunction3(extract), inject = js.Any.fromFunction3(inject))
       __obj.asInstanceOf[HttpTextPropagator]
@@ -57,10 +55,10 @@ object httpTextPropagatorMod {
     implicit class HttpTextPropagatorMutableBuilder[Self <: HttpTextPropagator] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setExtract(value: (Context, js.Any, GetterFunction[_]) => Context): Self = StObject.set(x, "extract", js.Any.fromFunction3(value))
+      def setExtract(value: (Context, js.Any, GetterFunction[js.Any]) => Context): Self = StObject.set(x, "extract", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setInject(value: (Context, js.Any, SetterFunction[_]) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
+      def setInject(value: (Context, js.Any, SetterFunction[js.Any]) => Unit): Self = StObject.set(x, "inject", js.Any.fromFunction3(value))
     }
   }
 }

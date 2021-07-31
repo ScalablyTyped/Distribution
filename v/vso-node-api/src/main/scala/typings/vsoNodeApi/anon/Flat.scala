@@ -2,17 +2,15 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Flat extends StObject {
   
-  var flat: scala.Double = js.native
+  var flat: scala.Double
   
-  var oneHop: scala.Double = js.native
+  var oneHop: scala.Double
   
-  var tree: scala.Double = js.native
+  var tree: scala.Double
 }
 object Flat {
   

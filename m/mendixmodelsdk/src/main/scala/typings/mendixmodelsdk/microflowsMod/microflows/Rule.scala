@@ -6,7 +6,6 @@ import typings.mendixmodelsdk.projectsMod.projects.FolderBase
 import typings.mendixmodelsdk.projectsMod.projects.IFolderBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -48,9 +47,8 @@ object Rule {
     * Expects one argument, the projects.IFolderBase in which this unit is contained.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Rule.createIn")
-  @js.native
-  def createIn(container: IFolderBase): Rule = js.native
+  @scala.inline
+  def createIn(container: IFolderBase): Rule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Rule]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Rule.structureTypeName")

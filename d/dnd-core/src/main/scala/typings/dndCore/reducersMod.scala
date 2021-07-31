@@ -2,36 +2,36 @@ package typings.dndCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reducersMod {
   
-  @JSImport("dnd-core/lib/reducers", "reduce")
+  @JSImport("dnd-core/lib/reducers", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def reduce(
-    state: js.UndefOr[scala.Nothing],
+    state: Unit,
     action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action<any> */ js.Any
-  ): State = js.native
-  @JSImport("dnd-core/lib/reducers", "reduce")
-  @js.native
+  ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
+  @scala.inline
   def reduce(
     state: State,
     action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Action<any> */ js.Any
-  ): State = js.native
+  ): State = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(state.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[State]
   
-  @js.native
   trait State extends StObject {
     
-    var dirtyHandlerIds: typings.dndCore.dirtyHandlerIdsMod.State = js.native
+    var dirtyHandlerIds: typings.dndCore.dirtyHandlerIdsMod.State
     
-    var dragOffset: typings.dndCore.dragOffsetMod.State = js.native
+    var dragOffset: typings.dndCore.dragOffsetMod.State
     
-    var dragOperation: typings.dndCore.dragOperationMod.State = js.native
+    var dragOperation: typings.dndCore.dragOperationMod.State
     
-    var refCount: typings.dndCore.refCountMod.State = js.native
+    var refCount: typings.dndCore.refCountMod.State
     
-    var stateId: typings.dndCore.stateIdMod.State = js.native
+    var stateId: typings.dndCore.stateIdMod.State
   }
   object State {
     

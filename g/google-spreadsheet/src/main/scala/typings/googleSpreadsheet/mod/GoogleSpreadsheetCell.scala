@@ -2,12 +2,13 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetCell")
 @js.native
-class GoogleSpreadsheetCell protected () extends CellFormat {
+class GoogleSpreadsheetCell protected ()
+  extends StObject
+     with CellFormat {
   def this(parentSheet: GoogleSpreadsheetWorksheet, rowIndex: Double, columnIndex: Double, cellData: js.Any) = this()
   
   /**
@@ -27,6 +28,20 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
     * cell row number in A1 address format
     */
   var a1Row: Double = js.native
+  
+  /**
+    * @description
+    * background color of the cell
+    */
+  /* CompleteClass */
+  var backgroundColor: Color = js.native
+  
+  /**
+    * @description
+    * border settings of the cell
+    */
+  /* CompleteClass */
+  var borders: Borders = js.native
   
   // #endregion
   // #region SYNCHRONOUS METHODS
@@ -81,6 +96,13 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
   
   /**
     * @description
+    * horizontal alignment of the cell's value
+    */
+  /* CompleteClass */
+  var horizontalAlignment: HorizontalAlign = js.native
+  
+  /**
+    * @description
     * url of the cell's link
     * - when using =HYPERLINK() formula
     */
@@ -88,9 +110,31 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
   
   /**
     * @description
+    * how a hyperlink (if any) should be displayed
+    */
+  /* CompleteClass */
+  var hyperlinkDisplayType: HyperlinkDisplayType = js.native
+  
+  /**
+    * @description
     * note attached to the cell
     */
   var note: String = js.native
+  
+  /**
+    * @description
+    * format describing how number values should be represented to the user
+    */
+  /* CompleteClass */
+  var numberFormat: NumberFormat = js.native
+  
+  /**
+    * @description
+    * padding in the cell
+    * - spacing between inner text and cell boundaries
+    */
+  /* CompleteClass */
+  var padding: Padding = js.native
   
   // #endregion
   // #region OWN PROPERTIES
@@ -112,6 +156,28 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
   
   /**
     * @description
+    * display direction of cell value text
+    */
+  /* CompleteClass */
+  var textDirection: TextDirection = js.native
+  
+  /**
+    * @description
+    * format of the text in the cell
+    * - font, size etc.
+    */
+  /* CompleteClass */
+  var textFormat: TextFormat = js.native
+  
+  /**
+    * @description
+    * rotation applied to text in a cell
+    */
+  /* CompleteClass */
+  var textRotation: TextRotation = js.native
+  
+  /**
+    * @description
     * format the user entered in the cell
     * - note: using named format properties is preferred
     */
@@ -129,4 +195,18 @@ class GoogleSpreadsheetCell protected () extends CellFormat {
     * the type of the value, using google's terminology
     */
   val valueType: CellValueType = js.native
+  
+  /**
+    * @description
+    * vertical alignment of the cell's value
+    */
+  /* CompleteClass */
+  var verticalAlignment: VerticalAlign = js.native
+  
+  /**
+    * @description
+    * text-wrapping strategy of the cell's value
+    */
+  /* CompleteClass */
+  var wrapStrategy: WrapStrategy = js.native
 }

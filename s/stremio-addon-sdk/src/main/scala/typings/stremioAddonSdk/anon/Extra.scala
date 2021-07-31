@@ -3,17 +3,15 @@ package typings.stremioAddonSdk.anon
 import typings.stremioAddonSdk.mod.ContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Extra extends StObject {
   
-  var extra: VideoHash = js.native
+  var extra: VideoHash
   
-  var id: String = js.native
+  var id: String
   
-  var `type`: ContentType = js.native
+  var `type`: ContentType
 }
 object Extra {
   

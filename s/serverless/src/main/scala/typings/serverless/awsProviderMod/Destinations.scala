@@ -2,15 +2,13 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destinations extends StObject {
   
-  var onFailure: js.UndefOr[String] = js.native
+  var onFailure: js.UndefOr[String] = js.undefined
   
-  var onSuccess: js.UndefOr[String] = js.native
+  var onSuccess: js.UndefOr[String] = js.undefined
 }
 object Destinations {
   

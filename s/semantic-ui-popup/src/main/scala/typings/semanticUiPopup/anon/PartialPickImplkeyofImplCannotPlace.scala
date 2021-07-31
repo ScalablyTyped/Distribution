@@ -2,22 +2,20 @@ package typings.semanticUiPopup.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-popup.SemanticUI.Popup.ErrorSettings._Impl, keyof semantic-ui-popup.SemanticUI.Popup.ErrorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplCannotPlace extends StObject {
   
-  var cannotPlace: js.UndefOr[String] = js.native
+  var cannotPlace: js.UndefOr[String] = js.undefined
   
-  var invalidPosition: js.UndefOr[String] = js.native
+  var invalidPosition: js.UndefOr[String] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var noTransition: js.UndefOr[String] = js.native
+  var noTransition: js.UndefOr[String] = js.undefined
   
-  var notFound: js.UndefOr[String] = js.native
+  var notFound: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplCannotPlace {
   

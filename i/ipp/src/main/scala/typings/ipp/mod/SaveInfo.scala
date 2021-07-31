@@ -2,17 +2,15 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SaveInfo extends StObject {
   
-  var `save-document-format`: js.UndefOr[MimeMediaType] = js.native
+  var `save-document-format`: js.UndefOr[MimeMediaType] = js.undefined
   
-  var `save-location`: js.UndefOr[String] = js.native
+  var `save-location`: js.UndefOr[String] = js.undefined
   
-  var `save-name`: js.UndefOr[String] = js.native
+  var `save-name`: js.UndefOr[String] = js.undefined
 }
 object SaveInfo {
   

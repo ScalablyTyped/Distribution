@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMerged extends StObject {
   
-  var autoMerged: scala.Double = js.native
+  var autoMerged: scala.Double
   
-  var takeSourceContent: scala.Double = js.native
+  var takeSourceContent: scala.Double
   
-  var takeTargetContent: scala.Double = js.native
+  var takeTargetContent: scala.Double
   
-  var undecided: scala.Double = js.native
+  var undecided: scala.Double
   
-  var userMerged: scala.Double = js.native
+  var userMerged: scala.Double
 }
 object AutoMerged {
   

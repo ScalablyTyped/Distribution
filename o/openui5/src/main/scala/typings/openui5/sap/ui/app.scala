@@ -7,13 +7,14 @@ import typings.openui5.sap.ui.core.UIComponent
 import typings.openui5.sap.ui.model.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object app {
   
   @js.native
-  trait Application extends Component {
+  trait Application
+    extends StObject
+       with Component {
     
     /**
       * Creates and returns the root component. Override this method in your application implementation, if

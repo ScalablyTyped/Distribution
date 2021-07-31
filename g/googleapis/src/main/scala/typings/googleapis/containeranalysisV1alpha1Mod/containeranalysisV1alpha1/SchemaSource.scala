@@ -3,13 +3,11 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Source describes the location of the source used for the build.
   */
-@js.native
 trait SchemaSource extends StObject {
   
   /**
@@ -18,18 +16,18 @@ trait SchemaSource extends StObject {
     * remotes or submodules. This list will not include the context specified
     * in the context field.
     */
-  var additionalContexts: js.UndefOr[js.Array[SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext]] = js.native
+  var additionalContexts: js.UndefOr[js.Array[SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext]] = js.undefined
   
   /**
     * If provided, the input binary artifacts for the build came from this
     * location.
     */
-  var artifactStorageSource: js.UndefOr[SchemaStorageSource] = js.native
+  var artifactStorageSource: js.UndefOr[SchemaStorageSource] = js.undefined
   
   /**
     * If provided, the source code used for the build came from this location.
     */
-  var context: js.UndefOr[SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext] = js.native
+  var context: js.UndefOr[SchemaGoogleDevtoolsContaineranalysisV1alpha1SourceContext] = js.undefined
   
   /**
     * Hash(es) of the build source, which can be used to verify that the
@@ -39,18 +37,18 @@ trait SchemaSource extends StObject {
     * such as a gzipped tarfile (.tar.gz), the FileHash will be for the single
     * path to that file.
     */
-  var fileHashes: js.UndefOr[StringDictionary[SchemaFileHashes]] = js.native
+  var fileHashes: js.UndefOr[StringDictionary[SchemaFileHashes]] = js.undefined
   
   /**
     * If provided, get source from this location in a Cloud Repo.
     */
-  var repoSource: js.UndefOr[SchemaRepoSource] = js.native
+  var repoSource: js.UndefOr[SchemaRepoSource] = js.undefined
   
   /**
     * If provided, get the source from this location in in Google Cloud
     * Storage.
     */
-  var storageSource: js.UndefOr[SchemaStorageSource] = js.native
+  var storageSource: js.UndefOr[SchemaStorageSource] = js.undefined
 }
 object SchemaSource {
   

@@ -4,46 +4,44 @@ import typings.devtoolsProtocol.mod.Protocol.Network.ResourceType
 import typings.devtoolsProtocol.mod.Protocol.Network.TimeSinceEpoch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameResource extends StObject {
   
   /**
     * True if the resource was canceled during loading.
     */
-  var canceled: js.UndefOr[Boolean] = js.native
+  var canceled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Resource content size.
     */
-  var contentSize: js.UndefOr[Double] = js.native
+  var contentSize: js.UndefOr[Double] = js.undefined
   
   /**
     * True if the resource failed to load.
     */
-  var failed: js.UndefOr[Boolean] = js.native
+  var failed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * last-modified timestamp as reported by server.
     */
-  var lastModified: js.UndefOr[TimeSinceEpoch] = js.native
+  var lastModified: js.UndefOr[TimeSinceEpoch] = js.undefined
   
   /**
     * Resource mimeType as determined by the browser.
     */
-  var mimeType: String = js.native
+  var mimeType: String
   
   /**
     * Type of this resource.
     */
-  var `type`: ResourceType = js.native
+  var `type`: ResourceType
   
   /**
     * Resource URL.
     */
-  var url: String = js.native
+  var url: String
 }
 object FrameResource {
   

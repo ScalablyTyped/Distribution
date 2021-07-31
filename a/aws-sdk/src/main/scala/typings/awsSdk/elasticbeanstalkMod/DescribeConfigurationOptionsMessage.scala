@@ -2,41 +2,39 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationOptionsMessage extends StObject {
   
   /**
     * The name of the application associated with the configuration template or environment. Only needed if you want to describe the configuration options associated with either the configuration template or environment.
     */
-  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.native
+  var ApplicationName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ApplicationName] = js.undefined
   
   /**
     * The name of the environment whose configuration options you want to describe.
     */
-  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.native
+  var EnvironmentName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.EnvironmentName] = js.undefined
   
   /**
     * If specified, restricts the descriptions to only the specified options.
     */
-  var Options: js.UndefOr[OptionsSpecifierList] = js.native
+  var Options: js.UndefOr[OptionsSpecifierList] = js.undefined
   
   /**
     * The ARN of the custom platform.
     */
-  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
+  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.undefined
   
   /**
     * The name of the solution stack whose configuration options you want to describe.
     */
-  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.native
+  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.undefined
   
   /**
     * The name of the configuration template whose configuration options you want to describe.
     */
-  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.native
+  var TemplateName: js.UndefOr[ConfigurationTemplateName] = js.undefined
 }
 object DescribeConfigurationOptionsMessage {
   

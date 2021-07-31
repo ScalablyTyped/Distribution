@@ -2,17 +2,15 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalizationLocalArgumentDefinition extends StObject {
   
-  var defaultValue: js.Any = js.native
+  var defaultValue: js.Any
   
-  var kind: String = js.native
+  var kind: String
   
-  var name: String = js.native
+  var name: String
 }
 object NormalizationLocalArgumentDefinition {
   

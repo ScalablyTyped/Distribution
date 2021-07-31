@@ -2,76 +2,74 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservedElasticsearchInstance extends StObject {
   
   /**
     * The currency code for the reserved Elasticsearch instance offering.
     */
-  var CurrencyCode: js.UndefOr[String] = js.native
+  var CurrencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * The duration, in seconds, for which the Elasticsearch instance is reserved.
     */
-  var Duration: js.UndefOr[Integer] = js.native
+  var Duration: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of Elasticsearch instances that have been reserved.
     */
-  var ElasticsearchInstanceCount: js.UndefOr[Integer] = js.native
+  var ElasticsearchInstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Elasticsearch instance type offered by the reserved instance offering.
     */
-  var ElasticsearchInstanceType: js.UndefOr[ESPartitionInstanceType] = js.native
+  var ElasticsearchInstanceType: js.UndefOr[ESPartitionInstanceType] = js.undefined
   
   /**
     * The upfront fixed charge you will paid to purchase the specific reserved Elasticsearch instance offering. 
     */
-  var FixedPrice: js.UndefOr[Double] = js.native
+  var FixedPrice: js.UndefOr[Double] = js.undefined
   
   /**
     * The payment option as defined in the reserved Elasticsearch instance offering.
     */
-  var PaymentOption: js.UndefOr[ReservedElasticsearchInstancePaymentOption] = js.native
+  var PaymentOption: js.UndefOr[ReservedElasticsearchInstancePaymentOption] = js.undefined
   
   /**
     * The charge to your account regardless of whether you are creating any domains using the instance offering.
     */
-  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.native
+  var RecurringCharges: js.UndefOr[RecurringChargeList] = js.undefined
   
   /**
     * The customer-specified identifier to track this reservation.
     */
-  var ReservationName: js.UndefOr[ReservationToken] = js.native
+  var ReservationName: js.UndefOr[ReservationToken] = js.undefined
   
   /**
     * The unique identifier for the reservation.
     */
-  var ReservedElasticsearchInstanceId: js.UndefOr[GUID] = js.native
+  var ReservedElasticsearchInstanceId: js.UndefOr[GUID] = js.undefined
   
   /**
     * The offering identifier.
     */
-  var ReservedElasticsearchInstanceOfferingId: js.UndefOr[String] = js.native
+  var ReservedElasticsearchInstanceOfferingId: js.UndefOr[String] = js.undefined
   
   /**
     * The time the reservation started.
     */
-  var StartTime: js.UndefOr[UpdateTimestamp] = js.native
+  var StartTime: js.UndefOr[UpdateTimestamp] = js.undefined
   
   /**
     * The state of the reserved Elasticsearch instance.
     */
-  var State: js.UndefOr[String] = js.native
+  var State: js.UndefOr[String] = js.undefined
   
   /**
     * The rate you are charged for each hour for the domain that is using this reserved instance.
     */
-  var UsagePrice: js.UndefOr[Double] = js.native
+  var UsagePrice: js.UndefOr[Double] = js.undefined
 }
 object ReservedElasticsearchInstance {
   

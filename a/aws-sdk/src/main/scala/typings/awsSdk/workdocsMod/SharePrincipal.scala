@@ -2,26 +2,24 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharePrincipal extends StObject {
   
   /**
     * The ID of the recipient.
     */
-  var Id: IdType = js.native
+  var Id: IdType
   
   /**
     * The role of the recipient.
     */
-  var Role: RoleType = js.native
+  var Role: RoleType
   
   /**
     * The type of the recipient.
     */
-  var Type: PrincipalType = js.native
+  var Type: PrincipalType
 }
 object SharePrincipal {
   

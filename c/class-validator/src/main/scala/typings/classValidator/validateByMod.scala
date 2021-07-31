@@ -6,38 +6,36 @@ import typings.classValidator.validatorConstraintInterfaceMod.ValidatorConstrain
 import typings.std.PropertyDecorator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validateByMod {
   
-  @JSImport("class-validator/types/decorator/common/ValidateBy", "ValidateBy")
+  @JSImport("class-validator/types/decorator/common/ValidateBy", JSImport.Namespace)
   @js.native
-  def ValidateBy(options: ValidateByOptions): PropertyDecorator = js.native
-  @JSImport("class-validator/types/decorator/common/ValidateBy", "ValidateBy")
-  @js.native
-  def ValidateBy(options: ValidateByOptions, validationOptions: ValidationOptions): PropertyDecorator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("class-validator/types/decorator/common/ValidateBy", "buildMessage")
-  @js.native
-  def buildMessage(impl: js.Function2[/* eachPrefix */ String, /* args */ js.UndefOr[ValidationArguments], String]): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = js.native
-  @JSImport("class-validator/types/decorator/common/ValidateBy", "buildMessage")
-  @js.native
+  @scala.inline
+  def ValidateBy(options: ValidateByOptions): PropertyDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("ValidateBy")(options.asInstanceOf[js.Any]).asInstanceOf[PropertyDecorator]
+  @scala.inline
+  def ValidateBy(options: ValidateByOptions, validationOptions: ValidationOptions): PropertyDecorator = (^.asInstanceOf[js.Dynamic].applyDynamic("ValidateBy")(options.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[PropertyDecorator]
+  
+  @scala.inline
+  def buildMessage(impl: js.Function2[/* eachPrefix */ String, /* args */ js.UndefOr[ValidationArguments], String]): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(impl.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String]]
+  @scala.inline
   def buildMessage(
     impl: js.Function2[/* eachPrefix */ String, /* args */ js.UndefOr[ValidationArguments], String],
     validationOptions: ValidationOptions
-  ): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = js.native
+  ): js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(impl.asInstanceOf[js.Any], validationOptions.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* validationArguments */ js.UndefOr[ValidationArguments], String]]
   
-  @js.native
   trait ValidateByOptions extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var constraints: js.UndefOr[js.Array[_]] = js.native
+    var constraints: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var validator: ValidatorConstraintInterface | js.Function = js.native
+    var validator: ValidatorConstraintInterface | js.Function
   }
   object ValidateByOptions {
     
@@ -57,7 +55,7 @@ object validateByMod {
       def setAsyncUndefined: Self = StObject.set(x, "async", js.undefined)
       
       @scala.inline
-      def setConstraints(value: js.Array[_]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)

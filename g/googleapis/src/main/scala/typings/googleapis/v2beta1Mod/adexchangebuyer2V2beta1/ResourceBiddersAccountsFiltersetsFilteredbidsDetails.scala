@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Bidders$Accounts$Filtersets$Filteredbids$Details")
@@ -35,7 +34,7 @@ class ResourceBiddersAccountsFiltersetsFilteredbidsDetails protected () extends 
     */
   def list(): GaxiosPromise[SchemaListCreativeStatusBreakdownByDetailResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCreativeStatusBreakdownByDetailResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCreativeStatusBreakdownByDetailResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCreativeStatusBreakdownByDetailResponse] = js.native
   def list(params: ParamsResourceBiddersAccountsFiltersetsFilteredbidsDetailsList): GaxiosPromise[SchemaListCreativeStatusBreakdownByDetailResponse] = js.native
   def list(
     params: ParamsResourceBiddersAccountsFiltersetsFilteredbidsDetailsList,

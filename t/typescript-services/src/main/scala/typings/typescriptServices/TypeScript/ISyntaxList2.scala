@@ -2,27 +2,27 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyntaxList2 extends AST {
+trait ISyntaxList2
+  extends StObject
+     with AST {
   
-  var _fileName: js.Any = js.native
+  var _fileName: js.Any
   
-  def any(func: js.Function1[/* v */ AST, Boolean]): Boolean = js.native
+  def any(func: js.Function1[/* v */ AST, Boolean]): Boolean
   
-  def childAt(index: Double): AST = js.native
+  def childAt(index: Double): AST
   
-  def childCount(): Double = js.native
+  def childCount(): Double
   
-  def firstOrDefault(func: js.Function2[/* v */ AST, /* index */ Double, Boolean]): AST = js.native
+  def firstOrDefault(func: js.Function2[/* v */ AST, /* index */ Double, Boolean]): AST
   
-  def lastOrDefault(func: js.Function2[/* v */ AST, /* index */ Double, Boolean]): AST = js.native
+  def lastOrDefault(func: js.Function2[/* v */ AST, /* index */ Double, Boolean]): AST
   
-  var members: js.Any = js.native
+  var members: js.Any
   
-  def structuralEquals(ast: ISyntaxList2, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ISyntaxList2, includingPosition: Boolean): Boolean
 }
 object ISyntaxList2 {
   

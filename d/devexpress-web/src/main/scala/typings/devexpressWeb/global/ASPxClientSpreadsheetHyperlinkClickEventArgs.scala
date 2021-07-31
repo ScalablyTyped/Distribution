@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientSpreadsheetHyperlinkClickEventArgs")
 @js.native
 class ASPxClientSpreadsheetHyperlinkClickEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientSpreadsheetHyperlinkClickEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientSpreadsheetHyperlinkClickEventArgs {
   /**
     * Initializes a new instance of the ASPxClientSpreadsheetHyperlinkClickEventArgs object. For internal use only.
     * @param htmlEvent A DHTML event object that relates to the processed event.
@@ -25,4 +25,28 @@ class ASPxClientSpreadsheetHyperlinkClickEventArgs protected ()
     hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType,
     targetUri: String
   ) = this()
+  
+  /**
+    * Gets or sets a value that specifies whether the event is handled, and the default processing is not required.
+    */
+  /* CompleteClass */
+  var handled: Boolean = js.native
+  
+  /**
+    * Gets a DHTML event object that relates to the processed event.
+    */
+  /* CompleteClass */
+  var htmlEvent: js.Any = js.native
+  
+  /**
+    * Gets a value identifying the clicked hyperlink type.
+    */
+  /* CompleteClass */
+  var hyperlinkType: typings.devexpressWeb.ASPxClientOfficeDocumentLinkType = js.native
+  
+  /**
+    * Gets the clicked link's URI.
+    */
+  /* CompleteClass */
+  var targetUri: String = js.native
 }

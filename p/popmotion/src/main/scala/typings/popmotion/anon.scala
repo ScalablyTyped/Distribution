@@ -5,17 +5,15 @@ import typings.popmotion.typesMod.KeyframeOptions
 import typings.popmotion.typesMod.SpringOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Damping extends StObject {
     
-    var damping: Double = js.native
+    var damping: Double
     
-    var stiffness: Double = js.native
+    var stiffness: Double
   }
   object Damping {
     
@@ -36,12 +34,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Done[V] extends StObject {
     
-    var done: Boolean = js.native
+    var done: Boolean
     
-    var value: V = js.native
+    var value: V
   }
   object Done {
     
@@ -52,7 +49,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DoneMutableBuilder[Self <: Done[_], V] (val x: Self with Done[V]) extends AnyVal {
+    implicit class DoneMutableBuilder[Self <: Done[?], V] (val x: Self & Done[V]) extends AnyVal {
       
       @scala.inline
       def setDone(value: Boolean): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
@@ -68,12 +65,11 @@ object anon {
     def apply[V](hasFromToEaseOffsetDuration: KeyframeOptions[Double]): Animation[Double | String] = js.native
   }
   
-  @js.native
   trait Start extends StObject {
     
-    def start(): Unit = js.native
+    def start(): Unit
     
-    def stop(): Boolean = js.native
+    def stop(): Boolean
   }
   object Start {
     
@@ -94,10 +90,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Stop extends StObject {
     
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object Stop {
     
@@ -125,12 +120,11 @@ object anon {
     var needsInterpolation_Original: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean] = js.native
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

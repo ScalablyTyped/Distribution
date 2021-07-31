@@ -2,34 +2,32 @@ package typings.reactAutosuggest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutosuggestState[TSuggestion] extends StObject {
   
-  var highlightedSectionIndex: Double | Null = js.native
+  var highlightedSectionIndex: Double | Null
   
-  var highlightedSuggestion: TSuggestion | Null = js.native
+  var highlightedSuggestion: TSuggestion | Null
   
-  var highlightedSuggestionIndex: Double | Null = js.native
+  var highlightedSuggestionIndex: Double | Null
   
-  var isCollapsed: Boolean = js.native
+  var isCollapsed: Boolean
   
-  var isFocused: Boolean = js.native
+  var isFocused: Boolean
   
-  var valueBeforeUpDown: TSuggestion | Null = js.native
+  var valueBeforeUpDown: TSuggestion | Null
 }
 object AutosuggestState {
   
   @scala.inline
   def apply[TSuggestion](isCollapsed: Boolean, isFocused: Boolean): AutosuggestState[TSuggestion] = {
-    val __obj = js.Dynamic.literal(isCollapsed = isCollapsed.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(isCollapsed = isCollapsed.asInstanceOf[js.Any], isFocused = isFocused.asInstanceOf[js.Any], highlightedSectionIndex = null, highlightedSuggestion = null, highlightedSuggestionIndex = null, valueBeforeUpDown = null)
     __obj.asInstanceOf[AutosuggestState[TSuggestion]]
   }
   
   @scala.inline
-  implicit class AutosuggestStateMutableBuilder[Self <: AutosuggestState[_], TSuggestion] (val x: Self with AutosuggestState[TSuggestion]) extends AnyVal {
+  implicit class AutosuggestStateMutableBuilder[Self <: AutosuggestState[?], TSuggestion] (val x: Self & AutosuggestState[TSuggestion]) extends AnyVal {
     
     @scala.inline
     def setHighlightedSectionIndex(value: Double): Self = StObject.set(x, "highlightedSectionIndex", value.asInstanceOf[js.Any])

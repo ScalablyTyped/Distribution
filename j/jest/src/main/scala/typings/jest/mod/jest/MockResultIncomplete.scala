@@ -3,26 +3,25 @@ package typings.jest.mod.jest
 import typings.jest.jestStrings.incomplete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the result of a single incomplete call to a mock function.
   */
-@js.native
 trait MockResultIncomplete
-  extends MockResult[js.Any] {
+  extends StObject
+     with MockResult[js.Any] {
   
-  var `type`: incomplete = js.native
+  var `type`: incomplete
   
-  var value: js.UndefOr[scala.Nothing] = js.native
+  var value: Unit
 }
 object MockResultIncomplete {
   
   @scala.inline
-  def apply(`type`: incomplete): MockResultIncomplete = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(value: Unit): MockResultIncomplete = {
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("incomplete")
     __obj.asInstanceOf[MockResultIncomplete]
   }
   
@@ -31,5 +30,8 @@ object MockResultIncomplete {
     
     @scala.inline
     def setType(value: incomplete): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

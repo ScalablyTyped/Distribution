@@ -5,17 +5,15 @@ import typings.tensorflowTfjsCore.kernelNamesMod.SpaceToBatchNDAttrs
 import typings.tensorflowTfjsCore.kernelNamesMod.SpaceToBatchNDInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttrsSpaceToBatchNDAttrs extends StObject {
   
-  var attrs: SpaceToBatchNDAttrs = js.native
+  var attrs: SpaceToBatchNDAttrs
   
-  var backend: MathBackendCPU = js.native
+  var backend: MathBackendCPU
   
-  var inputs: SpaceToBatchNDInputs = js.native
+  var inputs: SpaceToBatchNDInputs
 }
 object AttrsSpaceToBatchNDAttrs {
   

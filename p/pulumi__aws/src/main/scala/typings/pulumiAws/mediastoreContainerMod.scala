@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediastoreContainerMod {
@@ -25,7 +24,7 @@ object mediastoreContainerMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ContainerArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ContainerArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -51,6 +50,10 @@ object mediastoreContainerMod {
   /* static members */
   object Container {
     
+    @JSImport("@pulumi/aws/mediastore/container", "Container")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Container resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -60,40 +63,34 @@ object mediastoreContainerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/mediastore/container", "Container.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Container = js.native
-    @JSImport("@pulumi/aws/mediastore/container", "Container.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Container = js.native
-    @JSImport("@pulumi/aws/mediastore/container", "Container.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerState): Container = js.native
-    @JSImport("@pulumi/aws/mediastore/container", "Container.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ContainerState, opts: CustomResourceOptions): Container = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Container]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Container]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerState): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Container]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ContainerState, opts: CustomResourceOptions): Container = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Container]
     
     /**
       * Returns true if the given object is an instance of Container.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/mediastore/container", "Container.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/container.Container */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/mediastore/container.Container */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/mediastore/container.Container */ Boolean]
   }
   
-  @js.native
   trait ContainerArgs extends StObject {
     
     /**
       * The name of the container. Must contain alphanumeric characters or underscores.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ContainerArgs {
     
@@ -120,28 +117,27 @@ object mediastoreContainerMod {
     }
   }
   
-  @js.native
   trait ContainerState extends StObject {
     
     /**
       * The ARN of the container.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS endpoint of the container.
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the container. Must contain alphanumeric characters or underscores.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ContainerState {
     

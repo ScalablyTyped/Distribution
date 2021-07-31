@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.awt.Size
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents common visualization functionality for embedded objects. */
-@js.native
-trait XVisualObject extends XInterface {
+trait XVisualObject
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves map mode the object communicates in.
@@ -19,7 +19,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception in case of problems
     */
-  def getMapUnit(nAspect: Double): Double = js.native
+  def getMapUnit(nAspect: Double): Double
   
   /**
     * retrieves visual representation of the object in preferable format.
@@ -31,7 +31,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception in case of problems
     */
-  def getPreferredVisualRepresentation(nAspect: Double): VisualRepresentation = js.native
+  def getPreferredVisualRepresentation(nAspect: Double): VisualRepresentation
   
   /**
     * gets the size of object's visual area.
@@ -42,7 +42,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException one of arguments is illegal
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     */
-  def getVisualAreaSize(nAspect: Double): Size = js.native
+  def getVisualAreaSize(nAspect: Double): Size
   
   /**
     * sets the size of object's visual area.
@@ -56,7 +56,7 @@ trait XVisualObject extends XInterface {
     * @throws com::sun::star::embed::WrongStateException the object is in wrong state
     * @throws com::sun::star::uno::Exception the object failed to resize
     */
-  def setVisualAreaSize(nAspect: Double, aSize: Size): Unit = js.native
+  def setVisualAreaSize(nAspect: Double, aSize: Size): Unit
 }
 object XVisualObject {
   

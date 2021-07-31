@@ -4,16 +4,16 @@ import typings.tensorflowTfjsLayers.activationConfigMod.ActivationIdentifier
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActivationLayerArgs extends LayerArgs {
+trait ActivationLayerArgs
+  extends StObject
+     with LayerArgs {
   
   /**
     * Name of the activation function to use.
     */
-  var activation: ActivationIdentifier = js.native
+  var activation: ActivationIdentifier
 }
 object ActivationLayerArgs {
   

@@ -3,19 +3,17 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreStrings.`Brand for PlayerFactory that nothing will match`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ɵPlayerFactory extends StObject {
   
-  var __brand__ : `Brand for PlayerFactory that nothing will match` = js.native
+  var __brand__ : `Brand for PlayerFactory that nothing will match`
 }
 object ɵPlayerFactory {
   
   @scala.inline
-  def apply(__brand__ : `Brand for PlayerFactory that nothing will match`): ɵPlayerFactory = {
-    val __obj = js.Dynamic.literal(__brand__ = __brand__.asInstanceOf[js.Any])
+  def apply(): ɵPlayerFactory = {
+    val __obj = js.Dynamic.literal(__brand__ = "Brand for PlayerFactory that nothing will match")
     __obj.asInstanceOf[ɵPlayerFactory]
   }
   

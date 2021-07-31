@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelPackageValidationSpecification extends StObject {
   
   /**
     * An array of ModelPackageValidationProfile objects, each of which specifies a batch transform job that Amazon SageMaker runs to validate your model package.
     */
-  var ValidationProfiles: ModelPackageValidationProfiles = js.native
+  var ValidationProfiles: ModelPackageValidationProfiles
   
   /**
     * The IAM roles to be used for the validation of the model package.
     */
-  var ValidationRole: RoleArn = js.native
+  var ValidationRole: RoleArn
 }
 object ModelPackageValidationSpecification {
   

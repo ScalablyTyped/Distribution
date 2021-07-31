@@ -2,16 +2,14 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stages extends StObject {
   
   /**
     * The current page of elements from this collection.
     */
-  var item: js.UndefOr[ListOfStage] = js.native
+  var item: js.UndefOr[ListOfStage] = js.undefined
 }
 object Stages {
   

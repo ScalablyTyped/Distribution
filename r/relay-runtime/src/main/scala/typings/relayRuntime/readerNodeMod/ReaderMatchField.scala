@@ -4,25 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.anon.FragmentName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.relayRuntime.readerNodeMod.ReaderSelection because Already inherited */ @js.native
-trait ReaderMatchField extends ReaderField {
+- typings.relayRuntime.readerNodeMod.ReaderSelection because Already inherited */ trait ReaderMatchField
+  extends StObject
+     with ReaderField {
   
   // 'MatchField';
-  val alias: js.UndefOr[String | Null] = js.native
+  val alias: js.UndefOr[String | Null] = js.undefined
   
-  val args: js.UndefOr[js.Array[ReaderArgument] | Null] = js.native
+  val args: js.UndefOr[js.Array[ReaderArgument] | Null] = js.undefined
   
-  val kind: String = js.native
+  val kind: String
   
-  val matchesByType: StringDictionary[FragmentName] = js.native
+  val matchesByType: StringDictionary[FragmentName]
   
-  val name: String = js.native
+  val name: String
   
-  val storageKey: js.UndefOr[String | Null] = js.native
+  val storageKey: js.UndefOr[String | Null] = js.undefined
 }
 object ReaderMatchField {
   

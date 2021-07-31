@@ -6,7 +6,6 @@ import typings.autolinker.htmlTagMod.HtmlTag
 import typings.autolinker.matchMatchMod.Match
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anchorTagBuilderMod {
@@ -106,14 +105,13 @@ object anchorTagBuilderMod {
     val truncate: js.Any = js.native
   }
   
-  @js.native
   trait AnchorTagBuilderCfg extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var newWindow: js.UndefOr[Boolean] = js.native
+    var newWindow: js.UndefOr[Boolean] = js.undefined
     
-    var truncate: js.UndefOr[TruncateConfigObj] = js.native
+    var truncate: js.UndefOr[TruncateConfigObj] = js.undefined
   }
   object AnchorTagBuilderCfg {
     

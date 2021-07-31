@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,30 +17,30 @@ object mod {
   @js.native
   trait TarantoolConnection extends EventEmitter {
     
-    def call(functionName: String, args: js.Any*): js.Promise[_] = js.native
+    def call(functionName: String, args: js.Any*): js.Promise[js.Any] = js.native
     
     /* Connection */
     def connect(): js.Promise[Unit] = js.native
     
-    def delete(spaceId: String, indexId: String, key: js.Array[_]): js.Promise[_] = js.native
-    def delete(spaceId: String, indexId: Double, key: js.Array[_]): js.Promise[_] = js.native
-    def delete(spaceId: Double, indexId: String, key: js.Array[_]): js.Promise[_] = js.native
-    def delete(spaceId: Double, indexId: Double, key: js.Array[_]): js.Promise[_] = js.native
+    def delete(spaceId: String, indexId: String, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def delete(spaceId: String, indexId: Double, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def delete(spaceId: Double, indexId: String, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def delete(spaceId: Double, indexId: Double, key: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
     def destroy(): Unit = js.native
     
     def disconnect(): Unit = js.native
     def disconnect(reconnect: Boolean): Unit = js.native
     
-    def eval(expression: String, args: js.Any*): js.Promise[_] = js.native
+    def eval(expression: String, args: js.Any*): js.Promise[js.Any] = js.native
     
     def flushQueue(cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
-    def insert(spaceId: String, tuple: js.Array[_]): js.Promise[_] = js.native
-    def insert(spaceId: Double, tuple: js.Array[_]): js.Promise[_] = js.native
+    def insert(spaceId: String, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def insert(spaceId: Double, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
-    def replace(spaceId: String, tuple: js.Array[_]): js.Promise[_] = js.native
-    def replace(spaceId: Double, tuple: js.Array[_]): js.Promise[_] = js.native
+    def replace(spaceId: String, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def replace(spaceId: Double, tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
     def select(
       spaceId: String,
@@ -49,24 +48,24 @@ object mod {
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[_]
-    ): js.Promise[_] = js.native
+      key: js.Array[js.Any]
+    ): js.Promise[js.Any] = js.native
     def select(
       spaceId: String,
       indexId: Double,
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[_]
-    ): js.Promise[_] = js.native
+      key: js.Array[js.Any]
+    ): js.Promise[js.Any] = js.native
     def select(
       spaceId: Double,
       indexId: String,
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[_]
-    ): js.Promise[_] = js.native
+      key: js.Array[js.Any]
+    ): js.Promise[js.Any] = js.native
     /* Commands */
     def select(
       spaceId: Double,
@@ -74,38 +73,37 @@ object mod {
       limit: Double,
       offset: Double,
       iterator: String,
-      key: js.Array[_]
-    ): js.Promise[_] = js.native
+      key: js.Array[js.Any]
+    ): js.Promise[js.Any] = js.native
     
-    def update(spaceId: String, indexId: String, key: js.Array[_], ops: js.Array[_]): js.Promise[_] = js.native
-    def update(spaceId: String, indexId: Double, key: js.Array[_], ops: js.Array[_]): js.Promise[_] = js.native
-    def update(spaceId: Double, indexId: String, key: js.Array[_], ops: js.Array[_]): js.Promise[_] = js.native
-    def update(spaceId: Double, indexId: Double, key: js.Array[_], ops: js.Array[_]): js.Promise[_] = js.native
+    def update(spaceId: String, indexId: String, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def update(spaceId: String, indexId: Double, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def update(spaceId: Double, indexId: String, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def update(spaceId: Double, indexId: Double, key: js.Array[js.Any], ops: js.Array[js.Any]): js.Promise[js.Any] = js.native
     
-    def upsert(spaceId: String, ops: js.Array[_], tuple: js.Array[_]): js.Promise[_] = js.native
-    def upsert(spaceId: Double, ops: js.Array[_], tuple: js.Array[_]): js.Promise[_] = js.native
+    def upsert(spaceId: String, ops: js.Array[js.Any], tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def upsert(spaceId: Double, ops: js.Array[js.Any], tuple: js.Array[js.Any]): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait TarantoolOptions extends StObject {
     
-    var beforeReserve: js.UndefOr[Double] = js.native
+    var beforeReserve: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var lazyConnect: js.UndefOr[Boolean] = js.native
+    var lazyConnect: js.UndefOr[Boolean] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var reserveHosts: js.UndefOr[js.Array[String]] = js.native
+    var reserveHosts: js.UndefOr[js.Array[String]] = js.undefined
     
-    var retryStrategy: js.UndefOr[js.Function1[/* times */ Double, Double]] = js.native
+    var retryStrategy: js.UndefOr[js.Function1[/* times */ Double, Double]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object TarantoolOptions {
     

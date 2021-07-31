@@ -2,19 +2,17 @@ package typings.plugapi.mod.Event
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoothLocked extends StObject {
   
-  var c: Boolean = js.native
+  var c: Boolean
   
-  var f: Boolean = js.native
+  var f: Boolean
   
-  var m: String = js.native
+  var m: String
   
-  var ml: String = js.native
+  var ml: String
 }
 object BoothLocked {
   

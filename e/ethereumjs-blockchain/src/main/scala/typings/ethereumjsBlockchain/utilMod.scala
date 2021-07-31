@@ -1,28 +1,27 @@
 package typings.ethereumjsBlockchain
 
-import typings.bnJs.mod.^
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("ethereumjs-blockchain/dist/util", "bodyKey")
+  @JSImport("ethereumjs-blockchain/dist/util", JSImport.Namespace)
   @js.native
-  def bodyKey(n: ^, hash: Buffer): Buffer = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def bodyKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("bodyKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   /**
     * Convert BN to big endian Buffer
     */
-  @JSImport("ethereumjs-blockchain/dist/util", "bufBE8")
-  @js.native
-  def bufBE8(n: ^): Buffer = js.native
+  @scala.inline
+  def bufBE8(n: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("bufBE8")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-blockchain/dist/util", "hashToNumberKey")
-  @js.native
-  def hashToNumberKey(hash: Buffer): Buffer = js.native
+  @scala.inline
+  def hashToNumberKey(hash: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("hashToNumberKey")(hash.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /**
     * Current canonical head for full sync
@@ -38,19 +37,16 @@ object utilMod {
   @js.native
   val headHeaderKey: /* "LastHeader" */ String = js.native
   
-  @JSImport("ethereumjs-blockchain/dist/util", "headerKey")
-  @js.native
-  def headerKey(n: ^, hash: Buffer): Buffer = js.native
+  @scala.inline
+  def headerKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("headerKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
   @JSImport("ethereumjs-blockchain/dist/util", "headsKey")
   @js.native
   val headsKey: /* "heads" */ String = js.native
   
-  @JSImport("ethereumjs-blockchain/dist/util", "numberToHashKey")
-  @js.native
-  def numberToHashKey(n: ^): Buffer = js.native
+  @scala.inline
+  def numberToHashKey(n: typings.bnJs.mod.^): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("numberToHashKey")(n.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ethereumjs-blockchain/dist/util", "tdKey")
-  @js.native
-  def tdKey(n: ^, hash: Buffer): Buffer = js.native
+  @scala.inline
+  def tdKey(n: typings.bnJs.mod.^, hash: Buffer): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("tdKey")(n.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[Buffer]
 }

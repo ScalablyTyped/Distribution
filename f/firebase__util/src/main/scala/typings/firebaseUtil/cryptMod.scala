@@ -5,22 +5,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptMod {
+  
+  @JSImport("@firebase/util/dist/src/crypt", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@firebase/util/dist/src/crypt", "base64")
   @js.native
   val base64: Base64_ = js.native
   
-  @JSImport("@firebase/util/dist/src/crypt", "base64Decode")
-  @js.native
-  def base64Decode(str: String): String | Null = js.native
+  @scala.inline
+  def base64Decode(str: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Decode")(str.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("@firebase/util/dist/src/crypt", "base64Encode")
-  @js.native
-  def base64Encode(str: String): String = js.native
+  @scala.inline
+  def base64Encode(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64Encode")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @js.native
   trait Base64_ extends StObject {

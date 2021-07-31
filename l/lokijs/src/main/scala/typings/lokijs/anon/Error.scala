@@ -2,17 +2,15 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  def error(args: js.Any*): Unit = js.native
+  def error(args: js.Any*): Unit
   
-  def log(args: js.Any*): Unit = js.native
+  def log(args: js.Any*): Unit
   
-  def warn(args: js.Any*): Unit = js.native
+  def warn(args: js.Any*): Unit
 }
 object Error {
   

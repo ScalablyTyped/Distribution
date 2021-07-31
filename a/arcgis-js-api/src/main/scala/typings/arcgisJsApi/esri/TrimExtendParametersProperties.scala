@@ -8,10 +8,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`no-extend-at-to`
 import typings.arcgisJsApi.arcgisJsApiStrings.`relocate-ends`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrimExtendParametersProperties extends StObject {
   
   /**
@@ -21,21 +19,21 @@ trait TrimExtendParametersProperties extends StObject {
     */
   var extendHow: js.UndefOr[
     `default-curve-extension` | `relocate-ends` | `keep-end-attributes` | `no-end-attributes` | `no-extend-at-from` | `no-extend-at-to`
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The array of polylines to trim or extend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#polylines)
     */
-  var polylines: js.UndefOr[js.Array[PolylineProperties]] = js.native
+  var polylines: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
   
   /**
     * A polyline used as a guide for trimming or extending input polylines.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-TrimExtendParameters.html#trimExtendTo)
     */
-  var trimExtendTo: js.UndefOr[PolylineProperties] = js.native
+  var trimExtendTo: js.UndefOr[PolylineProperties] = js.undefined
 }
 object TrimExtendParametersProperties {
   

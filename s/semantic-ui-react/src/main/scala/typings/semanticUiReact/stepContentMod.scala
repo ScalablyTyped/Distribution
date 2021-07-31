@@ -13,7 +13,6 @@ import typings.semanticUiReact.stepDescriptionMod.StepDescriptionProps
 import typings.semanticUiReact.stepTitleMod.StepTitleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepContentMod extends Shortcut {
@@ -22,9 +21,9 @@ object stepContentMod extends Shortcut {
   @js.native
   val default: StatelessComponent[StepContentProps] = js.native
   
-  @js.native
   trait StepContentProps
-    extends StrictStepContentProps
+    extends StObject
+       with StrictStepContentProps
        with /* key */ StringDictionary[js.Any]
   object StepContentProps {
     
@@ -35,26 +34,25 @@ object stepContentMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictStepContentProps extends StObject {
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** Shorthand for StepDescription. */
-    var description: js.UndefOr[SemanticShorthandItem[StepDescriptionProps]] = js.native
+    var description: js.UndefOr[SemanticShorthandItem[StepDescriptionProps]] = js.undefined
     
     /** Shorthand for StepTitle. */
-    var title: js.UndefOr[SemanticShorthandItem[StepTitleProps]] = js.native
+    var title: js.UndefOr[SemanticShorthandItem[StepTitleProps]] = js.undefined
   }
   object StrictStepContentProps {
     

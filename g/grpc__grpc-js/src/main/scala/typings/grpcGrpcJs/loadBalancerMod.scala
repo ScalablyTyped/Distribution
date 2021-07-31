@@ -10,32 +10,29 @@ import typings.grpcGrpcJs.subchannelMod.Subchannel
 import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadBalancerMod {
   
-  @JSImport("@grpc/grpc-js/build/src/load-balancer", "createLoadBalancer")
+  @JSImport("@grpc/grpc-js/build/src/load-balancer", JSImport.Namespace)
   @js.native
-  def createLoadBalancer(typeName: String, channelControlHelper: ChannelControlHelper): LoadBalancer | Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@grpc/grpc-js/build/src/load-balancer", "getFirstUsableConfig")
-  @js.native
-  def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig | Null = js.native
+  @scala.inline
+  def createLoadBalancer(typeName: String, channelControlHelper: ChannelControlHelper): LoadBalancer | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("createLoadBalancer")(typeName.asInstanceOf[js.Any], channelControlHelper.asInstanceOf[js.Any])).asInstanceOf[LoadBalancer | Null]
   
-  @JSImport("@grpc/grpc-js/build/src/load-balancer", "isLoadBalancerNameRegistered")
-  @js.native
-  def isLoadBalancerNameRegistered(typeName: String): Boolean = js.native
+  @scala.inline
+  def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig | Null]
   
-  @JSImport("@grpc/grpc-js/build/src/load-balancer", "registerAll")
-  @js.native
-  def registerAll(): Unit = js.native
+  @scala.inline
+  def isLoadBalancerNameRegistered(typeName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoadBalancerNameRegistered")(typeName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@grpc/grpc-js/build/src/load-balancer", "registerLoadBalancerType")
-  @js.native
-  def registerLoadBalancerType(typeName: String, loadBalancerType: LoadBalancerConstructor): Unit = js.native
+  @scala.inline
+  def registerAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerAll")().asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def registerLoadBalancerType(typeName: String, loadBalancerType: LoadBalancerConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadBalancerType")(typeName.asInstanceOf[js.Any], loadBalancerType.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait ChannelControlHelper extends StObject {
     
     /**
@@ -43,12 +40,12 @@ object loadBalancerMod {
       * @param subchannelAddress The address to connect to
       * @param subchannelArgs Extra channel arguments specified by the load balancer
       */
-    def createSubchannel(subchannelAddress: SubchannelAddress, subchannelArgs: ChannelOptions): Subchannel = js.native
+    def createSubchannel(subchannelAddress: SubchannelAddress, subchannelArgs: ChannelOptions): Subchannel
     
     /**
       * Request new data from the resolver.
       */
-    def requestReresolution(): Unit = js.native
+    def requestReresolution(): Unit
     
     /**
       * Passes a new subchannel picker up to the channel. This is called if either
@@ -57,7 +54,7 @@ object loadBalancerMod {
       * @param connectivityState New connectivity state
       * @param picker New picker
       */
-    def updateState(connectivityState: ConnectivityState, picker: Picker): Unit = js.native
+    def updateState(connectivityState: ConnectivityState, picker: Picker): Unit
   }
   object ChannelControlHelper {
     
@@ -85,33 +82,32 @@ object loadBalancerMod {
     }
   }
   
-  @js.native
   trait LoadBalancer extends StObject {
     
     /**
       * The load balancer unrefs all of its subchannels and stops calling methods
       * of its channel control helper.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * If the load balancer is currently in the IDLE state, start connecting.
       */
-    def exitIdle(): Unit = js.native
+    def exitIdle(): Unit
     
     /**
       * Get the type name for this load balancer type. Must be constant across an
       * entire load balancer implementation class and must match the name that the
       * balancer implementation class was registered with.
       */
-    def getTypeName(): String = js.native
+    def getTypeName(): String
     
     /**
       * If the load balancer is currently in the CONNECTING or TRANSIENT_FAILURE
       * state, reset the current connection backoff timeout to its base value and
       * transition to CONNECTING if in TRANSIENT_FAILURE.
       */
-    def resetBackoff(): Unit = js.native
+    def resetBackoff(): Unit
     
     /**
       * Gives the load balancer a new list of addresses to start connecting to.
@@ -126,7 +122,7 @@ object loadBalancerMod {
       addressList: js.Array[SubchannelAddress],
       lbConfig: LoadBalancingConfig,
       attributes: StringDictionary[js.Any]
-    ): Unit = js.native
+    ): Unit
   }
   object LoadBalancer {
     
@@ -163,5 +159,7 @@ object loadBalancerMod {
   }
   
   @js.native
-  trait LoadBalancerConstructor extends Instantiable1[/* channelControlHelper */ ChannelControlHelper, LoadBalancer]
+  trait LoadBalancerConstructor
+    extends StObject
+       with Instantiable1[/* channelControlHelper */ ChannelControlHelper, LoadBalancer]
 }

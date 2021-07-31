@@ -2,21 +2,19 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EffectOptions extends StObject {
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
   
-  var endValue: js.UndefOr[Double] = js.native
+  var endValue: js.UndefOr[Double] = js.undefined
   
-  var startValue: js.UndefOr[Double] = js.native
+  var startValue: js.UndefOr[Double] = js.undefined
   
-  var when: js.UndefOr[String] = js.native
+  var when: js.UndefOr[String] = js.undefined
 }
 object EffectOptions {
   

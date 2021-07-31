@@ -4,37 +4,35 @@ import typings.std.HTMLElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("estimate", "element")
+  @JSImport("estimate", JSImport.Namespace)
   @js.native
-  def element(element: HTMLElement): Estimate = js.native
-  @JSImport("estimate", "element")
-  @js.native
-  def element(element: HTMLElement, options: Options): Estimate = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("estimate", "text")
-  @js.native
-  def text(text: String): Double = js.native
-  @JSImport("estimate", "text")
-  @js.native
-  def text(text: String, options: Options): Double = js.native
+  @scala.inline
+  def element(element: HTMLElement): Estimate = ^.asInstanceOf[js.Dynamic].applyDynamic("element")(element.asInstanceOf[js.Any]).asInstanceOf[Estimate]
+  @scala.inline
+  def element(element: HTMLElement, options: Options): Estimate = (^.asInstanceOf[js.Dynamic].applyDynamic("element")(element.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Estimate]
   
-  @js.native
+  @scala.inline
+  def text(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def text(text: String, options: Options): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("text")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   trait Estimate extends StObject {
     
-    def initialize(): Unit = js.native
+    def initialize(): Unit
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var remaining: Double = js.native
+    var remaining: Double
     
-    var total: Double = js.native
+    var total: Double
     
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object Estimate {
     
@@ -64,12 +62,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var spaces: js.UndefOr[RegExp] = js.native
+    var spaces: js.UndefOr[RegExp] = js.undefined
     
-    var speed: js.UndefOr[Double] = js.native
+    var speed: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

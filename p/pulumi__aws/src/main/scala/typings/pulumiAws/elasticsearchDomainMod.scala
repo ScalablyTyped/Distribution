@@ -19,7 +19,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object elasticsearchDomainMod {
@@ -36,7 +35,7 @@ object elasticsearchDomainMod {
       */
     def this(name: String) = this()
     def this(name: String, args: DomainArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DomainArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -139,6 +138,10 @@ object elasticsearchDomainMod {
   /* static members */
   object Domain {
     
+    @JSImport("@pulumi/aws/elasticsearch/domain", "Domain")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Domain resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -148,35 +151,29 @@ object elasticsearchDomainMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticsearch/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Domain = js.native
-    @JSImport("@pulumi/aws/elasticsearch/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Domain = js.native
-    @JSImport("@pulumi/aws/elasticsearch/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState): Domain = js.native
-    @JSImport("@pulumi/aws/elasticsearch/domain", "Domain.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Domain]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DomainState, opts: CustomResourceOptions): Domain = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Domain]
     
     /**
       * Returns true if the given object is an instance of Domain.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticsearch/domain", "Domain.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticsearch/domain.Domain */ Boolean]
   }
   
-  @js.native
   trait DomainArgs extends StObject {
     
     /**
       * IAM policy document specifying the access policies for the domain
       */
-    val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
     
     /**
       * Key-value string pairs to specify advanced configuration options.
@@ -184,44 +181,44 @@ object elasticsearchDomainMod {
       * may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
       * domain on every apply.
       */
-    val advancedOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val advancedOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Options for [fine-grained access control](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/fgac.html). See below for more details.
       */
-    val advancedSecurityOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]] = js.native
+    val advancedSecurityOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]] = js.undefined
     
     /**
       * Cluster configuration of the domain, see below.
       */
-    val clusterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]] = js.native
+    val clusterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]] = js.undefined
     
-    val cognitoOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]] = js.native
+    val cognitoOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]] = js.undefined
     
     /**
       * Domain endpoint HTTP(S) related options. See below.
       */
-    val domainEndpointOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]] = js.native
+    val domainEndpointOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]] = js.undefined
     
     /**
       * Name of the domain.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
       */
-    val ebsOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]] = js.native
+    val ebsOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]] = js.undefined
     
     /**
       * The version of Elasticsearch to deploy. Defaults to `1.5`
       */
-    val elasticsearchVersion: js.UndefOr[Input[String]] = js.native
+    val elasticsearchVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
       */
-    val encryptAtRest: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]] = js.native
+    val encryptAtRest: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]] = js.undefined
     
     /**
       * Options for publishing slow  and application logs to CloudWatch Logs. This block can be declared multiple times, for each log_type, within the same resource.
@@ -230,27 +227,27 @@ object elasticsearchDomainMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Node-to-node encryption options. See below.
       */
-    val nodeToNodeEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]] = js.native
+    val nodeToNodeEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]] = js.undefined
     
     /**
       * Snapshot related options, see below.
       */
-    val snapshotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]] = js.native
+    val snapshotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]] = js.undefined
     
     /**
       * A map of tags to assign to the resource
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
       */
-    val vpcOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]] = js.native
+    val vpcOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]] = js.undefined
   }
   object DomainArgs {
     
@@ -362,13 +359,12 @@ object elasticsearchDomainMod {
     }
   }
   
-  @js.native
   trait DomainState extends StObject {
     
     /**
       * IAM policy document specifying the access policies for the domain
       */
-    val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.native
+    val accessPolicies: js.UndefOr[Input[String | PolicyDocument]] = js.undefined
     
     /**
       * Key-value string pairs to specify advanced configuration options.
@@ -376,66 +372,66 @@ object elasticsearchDomainMod {
       * may be wrong and cause a perpetual diff, causing this provider to want to recreate your Elasticsearch
       * domain on every apply.
       */
-    val advancedOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val advancedOptions: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Options for [fine-grained access control](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/fgac.html). See below for more details.
       */
-    val advancedSecurityOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]] = js.native
+    val advancedSecurityOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainAdvancedSecurityOptions]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of the domain.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Cluster configuration of the domain, see below.
       */
-    val clusterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]] = js.native
+    val clusterConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainClusterConfig]] = js.undefined
     
-    val cognitoOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]] = js.native
+    val cognitoOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainCognitoOptions]] = js.undefined
     
     /**
       * Domain endpoint HTTP(S) related options. See below.
       */
-    val domainEndpointOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]] = js.native
+    val domainEndpointOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainDomainEndpointOptions]] = js.undefined
     
     /**
       * Unique identifier for the domain.
       */
-    val domainId: js.UndefOr[Input[String]] = js.native
+    val domainId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the domain.
       */
-    val domainName: js.UndefOr[Input[String]] = js.native
+    val domainName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * EBS related options, may be required based on chosen [instance size](https://aws.amazon.com/elasticsearch-service/pricing/). See below.
       */
-    val ebsOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]] = js.native
+    val ebsOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEbsOptions]] = js.undefined
     
     /**
       * The version of Elasticsearch to deploy. Defaults to `1.5`
       */
-    val elasticsearchVersion: js.UndefOr[Input[String]] = js.native
+    val elasticsearchVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Encrypt at rest options. Only available for [certain instance types](http://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/aes-supported-instance-types.html). See below.
       */
-    val encryptAtRest: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]] = js.native
+    val encryptAtRest: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainEncryptAtRest]] = js.undefined
     
     /**
       * Domain-specific endpoint used to submit index, search, and data upload requests.
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Domain-specific endpoint for kibana without https scheme.
       * * `vpc_options.0.availability_zones` - If the domain was created inside a VPC, the names of the availability zones the configured `subnetIds` were created inside.
       * * `vpc_options.0.vpc_id` - If the domain was created inside a VPC, the ID of the VPC.
       */
-    val kibanaEndpoint: js.UndefOr[Input[String]] = js.native
+    val kibanaEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Options for publishing slow  and application logs to CloudWatch Logs. This block can be declared multiple times, for each log_type, within the same resource.
@@ -444,27 +440,27 @@ object elasticsearchDomainMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.elasticsearch.DomainLogPublishingOption]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Node-to-node encryption options. See below.
       */
-    val nodeToNodeEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]] = js.native
+    val nodeToNodeEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainNodeToNodeEncryption]] = js.undefined
     
     /**
       * Snapshot related options, see below.
       */
-    val snapshotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]] = js.native
+    val snapshotOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainSnapshotOptions]] = js.undefined
     
     /**
       * A map of tags to assign to the resource
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * VPC related options, see below. Adding or removing this configuration forces a new resource ([documentation](https://docs.aws.amazon.com/elasticsearch-service/latest/developerguide/es-vpc.html#es-vpc-limitations)).
       */
-    val vpcOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]] = js.native
+    val vpcOptions: js.UndefOr[Input[typings.pulumiAws.inputMod.elasticsearch.DomainVpcOptions]] = js.undefined
   }
   object DomainState {
     

@@ -3,33 +3,31 @@ package typings.primereact
 import typings.primereact.anon.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuItemMod {
   
-  @js.native
   trait MenuItem extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var command: js.UndefOr[js.Function1[/* e */ Item, Unit]] = js.native
+    var command: js.UndefOr[js.Function1[/* e */ Item, Unit]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
-    var items: js.UndefOr[js.Array[js.Array[MenuItem] | MenuItem]] = js.native
+    var items: js.UndefOr[js.Array[js.Array[MenuItem] | MenuItem]] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var separator: js.UndefOr[Boolean] = js.native
+    var separator: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
-    var target: js.UndefOr[String] = js.native
+    var target: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object MenuItem {
     

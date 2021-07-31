@@ -4,68 +4,57 @@ import typings.std.RegExp
 import typings.uirouterCore.commonCommonMod.IInjectable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringsMod {
   
-  @JSImport("@uirouter/core/lib/common/strings", "beforeAfterSubstr")
+  @JSImport("@uirouter/core/lib/common/strings", JSImport.Namespace)
   @js.native
-  def beforeAfterSubstr(char: String): js.Function1[/* str */ String, js.Array[String]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@uirouter/core/lib/common/strings", "fnToString")
-  @js.native
-  def fnToString(fn: IInjectable): js.Any = js.native
+  @scala.inline
+  def beforeAfterSubstr(char: String): js.Function1[/* str */ String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("beforeAfterSubstr")(char.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* str */ String, js.Array[String]]]
   
-  @JSImport("@uirouter/core/lib/common/strings", "functionToString")
-  @js.native
-  def functionToString(fn: js.Function): js.Any = js.native
+  @scala.inline
+  def fnToString(fn: IInjectable): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("fnToString")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def functionToString(fn: js.Function): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("functionToString")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @JSImport("@uirouter/core/lib/common/strings", "hostRegex")
   @js.native
   val hostRegex: RegExp = js.native
   
-  @JSImport("@uirouter/core/lib/common/strings", "joinNeighborsR")
-  @js.native
-  def joinNeighborsR(acc: js.Array[_], x: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def joinNeighborsR(acc: js.Array[js.Any], x: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("joinNeighborsR")(acc.asInstanceOf[js.Any], x.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("@uirouter/core/lib/common/strings", "kebobString")
-  @js.native
-  def kebobString(camelCase: String): String = js.native
+  @scala.inline
+  def kebobString(camelCase: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("kebobString")(camelCase.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@uirouter/core/lib/common/strings", "maxLength")
-  @js.native
-  def maxLength(max: Double, str: String): String = js.native
+  @scala.inline
+  def maxLength(max: Double, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("maxLength")(max.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@uirouter/core/lib/common/strings", "padString")
-  @js.native
-  def padString(length: Double, str: String): String = js.native
+  @scala.inline
+  def padString(length: Double, str: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("padString")(length.asInstanceOf[js.Any], str.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@uirouter/core/lib/common/strings", "splitEqual")
-  @js.native
-  def splitEqual(str: String): js.Array[String] = js.native
+  @scala.inline
+  def splitEqual(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitEqual")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@uirouter/core/lib/common/strings", "splitHash")
-  @js.native
-  def splitHash(str: String): js.Array[String] = js.native
+  @scala.inline
+  def splitHash(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitHash")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@uirouter/core/lib/common/strings", "splitOnDelim")
-  @js.native
-  def splitOnDelim(delim: String): js.Function1[/* str */ String, js.Array[String]] = js.native
+  @scala.inline
+  def splitOnDelim(delim: String): js.Function1[/* str */ String, js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitOnDelim")(delim.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* str */ String, js.Array[String]]]
   
-  @JSImport("@uirouter/core/lib/common/strings", "splitQuery")
-  @js.native
-  def splitQuery(str: String): js.Array[String] = js.native
+  @scala.inline
+  def splitQuery(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("splitQuery")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("@uirouter/core/lib/common/strings", "stringify")
-  @js.native
-  def stringify(o: js.Any): String = js.native
+  @scala.inline
+  def stringify(o: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(o.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@uirouter/core/lib/common/strings", "stripLastPathElement")
-  @js.native
-  def stripLastPathElement(str: String): String = js.native
+  @scala.inline
+  def stripLastPathElement(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stripLastPathElement")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@uirouter/core/lib/common/strings", "trimHashVal")
-  @js.native
-  def trimHashVal(str: String): String = js.native
+  @scala.inline
+  def trimHashVal(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trimHashVal")(str.asInstanceOf[js.Any]).asInstanceOf[String]
 }

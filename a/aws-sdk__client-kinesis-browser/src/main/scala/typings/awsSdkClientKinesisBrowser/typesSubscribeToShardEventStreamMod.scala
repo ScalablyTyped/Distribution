@@ -4,18 +4,16 @@ import typings.awsSdkClientKinesisBrowser.typesSubscribeToShardEventMod.Subscrib
 import typings.awsSdkClientKinesisBrowser.typesSubscribeToShardEventMod.UnmarshalledSubscribeToShardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSubscribeToShardEventStreamMod {
   
-  @js.native
   trait SubscribeToShardEventStream extends StObject {
     
     /**
       * <p>After you call <a>SubscribeToShard</a>, Kinesis Data Streams sends events of this type to your consumer. </p>
       */
-    var SubscribeToShardEvent: typings.awsSdkClientKinesisBrowser.typesSubscribeToShardEventMod.SubscribeToShardEvent = js.native
+    var SubscribeToShardEvent: typings.awsSdkClientKinesisBrowser.typesSubscribeToShardEventMod.SubscribeToShardEvent
   }
   object SubscribeToShardEventStream {
     
@@ -33,14 +31,15 @@ object typesSubscribeToShardEventStreamMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSubscribeToShardEventStream extends SubscribeToShardEventStream {
+  trait UnmarshalledSubscribeToShardEventStream
+    extends StObject
+       with SubscribeToShardEventStream {
     
     /**
       * <p>After you call <a>SubscribeToShard</a>, Kinesis Data Streams sends events of this type to your consumer. </p>
       */
     @JSName("SubscribeToShardEvent")
-    var SubscribeToShardEvent_UnmarshalledSubscribeToShardEventStream: UnmarshalledSubscribeToShardEvent = js.native
+    var SubscribeToShardEvent_UnmarshalledSubscribeToShardEventStream: UnmarshalledSubscribeToShardEvent
   }
   object UnmarshalledSubscribeToShardEventStream {
     

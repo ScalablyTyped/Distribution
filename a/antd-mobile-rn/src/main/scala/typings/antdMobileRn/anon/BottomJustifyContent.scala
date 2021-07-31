@@ -2,29 +2,27 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BottomJustifyContent extends StObject {
   
-  var alignItems: String = js.native
+  var alignItems: String
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var justifyContent: String = js.native
+  var justifyContent: String
   
-  var left: Double = js.native
+  var left: Double
   
-  var position: String = js.native
+  var position: String
   
-  var right: Double = js.native
+  var right: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var zIndex: Double = js.native
+  var zIndex: Double
 }
 object BottomJustifyContent {
   

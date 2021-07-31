@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectVersionPermissions extends StObject {
   
-  val AccessControlList: IAccessControlList = js.native
+  val AccessControlList: IAccessControlList
   
-  val CustomACL: Boolean = js.native
+  val CustomACL: Boolean
   
-  val NamedACL: INamedACL = js.native
+  val NamedACL: INamedACL
   
-  val ObjVer: IObjVer = js.native
+  val ObjVer: IObjVer
 }
 object IObjectVersionPermissions {
   

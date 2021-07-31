@@ -11,8 +11,8 @@ Fast, energy-efficient, highly-configurable QR code scanner.
 | Full name          | cordova-plugin-qrscanner |
 | Keywords           | cordova, qr, qr code, scanner, reader, ecosystem:cordova, cordova-ios, cordova-android, cordova-browser, UMD, library, electron, NW.js |
 | # releases         | 5 |
-| # dependents       | 7 |
-| # downloads        | 138753 |
+| # dependents       | 8 |
+| # downloads        | 145822 |
 | # stars            | 13 |
 
 ## Links

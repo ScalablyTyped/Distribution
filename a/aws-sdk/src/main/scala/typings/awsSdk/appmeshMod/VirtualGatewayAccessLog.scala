@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayAccessLog extends StObject {
   
   /**
     * The file object to send virtual gateway access logs to.
     */
-  var file: js.UndefOr[VirtualGatewayFileAccessLog] = js.native
+  var file: js.UndefOr[VirtualGatewayFileAccessLog] = js.undefined
 }
 object VirtualGatewayAccessLog {
   

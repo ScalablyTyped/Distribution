@@ -2,15 +2,13 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Items extends StObject {
   
-  var currentRefinement: js.Array[String] = js.native
+  var currentRefinement: js.Array[String]
   
-  var items: js.Array[Label] = js.native
+  var items: js.Array[Label]
 }
 object Items {
   

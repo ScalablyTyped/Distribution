@@ -4,23 +4,21 @@ import typings.nodeHueApi.anon.Description
 import typings.nodeHueApi.anon.Major
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBridgeDescription extends StObject {
   
-  var icons: js.UndefOr[js.Array[IBridgeIcon]] = js.native
+  var icons: js.UndefOr[js.Array[IBridgeIcon]] = js.undefined
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var model: Description = js.native
+  var model: Description
   
-  var name: String = js.native
+  var name: String
   
-  var url: String = js.native
+  var url: String
   
-  var version: Major = js.native
+  var version: Major
 }
 object IBridgeDescription {
   

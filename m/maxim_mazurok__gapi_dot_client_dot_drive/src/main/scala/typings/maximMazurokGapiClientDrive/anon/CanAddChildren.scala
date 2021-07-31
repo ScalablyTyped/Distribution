@@ -2,65 +2,63 @@ package typings.maximMazurokGapiClientDrive.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanAddChildren extends StObject {
   
   /** Whether the current user can add children to folders in this shared drive. */
-  var canAddChildren: js.UndefOr[Boolean] = js.native
+  var canAddChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the copyRequiresWriterPermission restriction of this shared drive. */
-  var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeCopyRequiresWriterPermissionRestriction: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the domainUsersOnly restriction of this shared drive. */
-  var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeDomainUsersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the background of this shared drive. */
-  var canChangeDriveBackground: js.UndefOr[Boolean] = js.native
+  var canChangeDriveBackground: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can change the driveMembersOnly restriction of this shared drive. */
-  var canChangeDriveMembersOnlyRestriction: js.UndefOr[Boolean] = js.native
+  var canChangeDriveMembersOnlyRestriction: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can comment on files in this shared drive. */
-  var canComment: js.UndefOr[Boolean] = js.native
+  var canComment: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can copy files in this shared drive. */
-  var canCopy: js.UndefOr[Boolean] = js.native
+  var canCopy: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can delete children from folders in this shared drive. */
-  var canDeleteChildren: js.UndefOr[Boolean] = js.native
+  var canDeleteChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can delete this shared drive. Attempting to delete the shared drive may still fail if there are untrashed items inside the shared drive. */
-  var canDeleteDrive: js.UndefOr[Boolean] = js.native
+  var canDeleteDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can download files in this shared drive. */
-  var canDownload: js.UndefOr[Boolean] = js.native
+  var canDownload: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can edit files in this shared drive */
-  var canEdit: js.UndefOr[Boolean] = js.native
+  var canEdit: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can list the children of folders in this shared drive. */
-  var canListChildren: js.UndefOr[Boolean] = js.native
+  var canListChildren: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can add members to this shared drive or remove them or change their role. */
-  var canManageMembers: js.UndefOr[Boolean] = js.native
+  var canManageMembers: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can read the revisions resource of files in this shared drive. */
-  var canReadRevisions: js.UndefOr[Boolean] = js.native
+  var canReadRevisions: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can rename files or folders in this shared drive. */
-  var canRename: js.UndefOr[Boolean] = js.native
+  var canRename: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can rename this shared drive. */
-  var canRenameDrive: js.UndefOr[Boolean] = js.native
+  var canRenameDrive: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can share files or folders in this shared drive. */
-  var canShare: js.UndefOr[Boolean] = js.native
+  var canShare: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the current user can trash children from folders in this shared drive. */
-  var canTrashChildren: js.UndefOr[Boolean] = js.native
+  var canTrashChildren: js.UndefOr[Boolean] = js.undefined
 }
 object CanAddChildren {
   

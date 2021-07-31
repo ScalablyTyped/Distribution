@@ -24,7 +24,6 @@ import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object media {
@@ -33,14 +32,13 @@ object media {
   type Manager = XManager
   
   /** This interface provides an easy access to a stream images using their position in the time. */
-  @js.native
   trait XFrameGrabber extends StObject {
     
     /**
       * returns the image of the underlying stream at a given position
       * @param fMediaTime the time in seconds of the image to get. This time has to be a positive value inferior to the stream duration.
       */
-    def grabFrame(fMediaTime: Double): XGraphic = js.native
+    def grabFrame(fMediaTime: Double): XGraphic
   }
   object XFrameGrabber {
     
@@ -59,14 +57,13 @@ object media {
   }
   
   /** the {@link com.sun.star.media.XPlayer} factory interface */
-  @js.native
   trait XManager extends StObject {
     
     /**
       * creates a new media player
       * @param aURL the URL of the media to play
       */
-    def createPlayer(aURL: String): XPlayer = js.native
+    def createPlayer(aURL: String): XPlayer
   }
   object XManager {
     
@@ -85,113 +82,112 @@ object media {
   }
   
   /** is the multimedia stream handling interface. This allows to perform every basic operation on videos and sounds. */
-  @js.native
   trait XPlayer extends StObject {
     
     /**
       * gets the stream length
       * @returns the stream length in second
       */
-    val Duration: Double = js.native
+    val Duration: Double
     
     /**
       * gets the current position of the cursor in the stream
       * @returns the cursor position in seconds
       */
-    var MediaTime: Double = js.native
+    var MediaTime: Double
     
     /**
       * gets the preferred window size
       * @returns the {@link com.sun.star.awt.Size}
       */
-    val PreferredPlayerWindowSize: Size = js.native
+    val PreferredPlayerWindowSize: Size
     
     /**
       * gets the current audio volume in decibel
       * @returns the volume in decibel
       */
-    var VolumeDB: Double = js.native
+    var VolumeDB: Double
     
     /** gets a frame grabber for this stream. */
-    def createFrameGrabber(): XFrameGrabber = js.native
+    def createFrameGrabber(): XFrameGrabber
     
     /**
       * gets a new player window for this stream control
       * @param aArguments arguments passed to the window during its creation.
       */
-    def createPlayerWindow(aArguments: SeqEquiv[_]): XPlayerWindow = js.native
+    def createPlayerWindow(aArguments: SeqEquiv[js.Any]): XPlayerWindow
     
     /**
       * gets the stream length
       * @returns the stream length in second
       */
-    def getDuration(): Double = js.native
+    def getDuration(): Double
     
     /**
       * gets the current position of the cursor in the stream
       * @returns the cursor position in seconds
       */
-    def getMediaTime(): Double = js.native
+    def getMediaTime(): Double
     
     /**
       * gets the preferred window size
       * @returns the {@link com.sun.star.awt.Size}
       */
-    def getPreferredPlayerWindowSize(): Size = js.native
+    def getPreferredPlayerWindowSize(): Size
     
     /**
       * gets the current audio volume in decibel
       * @returns the volume in decibel
       */
-    def getVolumeDB(): Double = js.native
+    def getVolumeDB(): Double
     
     /**
       * gets whether the volume is temporarily down to `0` or not.
       * @returns `TRUE` if the volume is temporarily set to `0` , `FALSE` otherwise.
       */
-    def isMute(): Boolean = js.native
+    def isMute(): Boolean
     
     /**
       * indicates whether the stream reading will restart after the end of the stream.
       * @returns `TRUE` if the stream will loop, `FALSE` otherwise.
       */
-    def isPlaybackLoop(): Boolean = js.native
+    def isPlaybackLoop(): Boolean
     
     /**
       * indicates whether the stream is played or not.
       * @returns `TRUE` if the stream is played, `FALSE` otherwise
       */
-    def isPlaying(): Boolean = js.native
+    def isPlaying(): Boolean
     
     /**
       * sets the new cursor position in the media stream. After using this method the stream is stopped.
       * @param fTime the new position to set in seconds
       */
-    def setMediaTime(fTime: Double): Unit = js.native
+    def setMediaTime(fTime: Double): Unit
     
     /**
       * sets the volume to `0` or to its previous value.
       * @param bSet sets the volume to `0` if `TRUE` , and switch to the previous non-null value if `FALSE`
       */
-    def setMute(bSet: Boolean): Unit = js.native
+    def setMute(bSet: Boolean): Unit
     
     /**
       * sets whether the stream reading should restart at the stream start after the end of the stream.
       * @param bSet loops if set to `TRUE` , otherwise stops at the end of the stream.
       */
-    def setPlaybackLoop(bSet: Boolean): Unit = js.native
+    def setPlaybackLoop(bSet: Boolean): Unit
     
     /**
       * sets the audio volume in decibel.
       * @param nDB the new volume in Decibel
       */
-    def setVolumeDB(nDB: Double): Unit = js.native
+    def setVolumeDB(nDB: Double): Unit
     
     /** starts reading the stream from the current position. */
-    def start(): Unit = js.native
+    def start(): Unit
     
     /** stops reading the stream and leave the cursor at its current position. */
-    def stop(): Unit = js.native
+    def stop(): Unit
   }
   object XPlayer {
     
@@ -202,7 +198,7 @@ object media {
       PreferredPlayerWindowSize: Size,
       VolumeDB: Double,
       createFrameGrabber: () => XFrameGrabber,
-      createPlayerWindow: SeqEquiv[_] => XPlayerWindow,
+      createPlayerWindow: SeqEquiv[js.Any] => XPlayerWindow,
       getDuration: () => Double,
       getMediaTime: () => Double,
       getPreferredPlayerWindowSize: () => Size,
@@ -228,7 +224,7 @@ object media {
       def setCreateFrameGrabber(value: () => XFrameGrabber): Self = StObject.set(x, "createFrameGrabber", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setCreatePlayerWindow(value: SeqEquiv[_] => XPlayerWindow): Self = StObject.set(x, "createPlayerWindow", js.Any.fromFunction1(value))
+      def setCreatePlayerWindow(value: SeqEquiv[js.Any] => XPlayerWindow): Self = StObject.set(x, "createPlayerWindow", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDuration(value: Double): Self = StObject.set(x, "Duration", value.asInstanceOf[js.Any])
@@ -284,26 +280,27 @@ object media {
   }
   
   /** interacts with the media player window */
-  @js.native
-  trait XPlayerWindow extends XWindow {
+  trait XPlayerWindow
+    extends StObject
+       with XWindow {
     
     /** gets the current media ratio. */
-    var ZoomLevel: typings.activexLibreoffice.com_.sun.star.media.ZoomLevel = js.native
+    var ZoomLevel: typings.activexLibreoffice.com_.sun.star.media.ZoomLevel
     
     /** gets the current media ratio. */
-    def getZoomLevel(): ZoomLevel = js.native
+    def getZoomLevel(): ZoomLevel
     
     /**
       * changes the pointer for the player window.
       * @param SystemPointerType a {@link com.sun.star.awt.SystemPointer}
       */
-    def setPointerType(SystemPointerType: Double): Unit = js.native
+    def setPointerType(SystemPointerType: Double): Unit
     
     /** changes the zoom of the media played by the window. */
-    def setZoomLevel(ZoomLevel: ZoomLevel): Boolean = js.native
+    def setZoomLevel(ZoomLevel: ZoomLevel): Boolean
     
     /** redraws the player window */
-    def update(): Unit = js.native
+    def update(): Unit
   }
   object XPlayerWindow {
     

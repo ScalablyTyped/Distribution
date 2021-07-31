@@ -3,18 +3,16 @@ package typings.algoliaClientSearch.anon
 import typings.algoliaClientSearch.mod.SaveSynonymResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@algolia/client-common.@algolia/client-common.WaitablePromise<@algolia/client-search.@algolia/client-search.SaveSynonymResponse>> */
-@js.native
 trait ReadonlyWaitablePromiseSaWait extends StObject {
   
-  def `catch`[TResult](): js.Promise[SaveSynonymResponse | TResult] = js.native
+  def `catch`[TResult](): js.Promise[SaveSynonymResponse | TResult]
   
-  def `finally`(): js.Promise[SaveSynonymResponse] = js.native
+  def `finally`(): js.Promise[SaveSynonymResponse]
   
-  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
+  def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2]
 }
 object ReadonlyWaitablePromiseSaWait {
   

@@ -8,7 +8,6 @@ import typings.std.Float32Array
 import typings.std.Float64Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -72,7 +71,9 @@ object mod {
   
   @JSImport("motion-sensors-polyfill", "Sensor")
   @js.native
-  class Sensor () extends EventTarget {
+  class Sensor ()
+    extends StObject
+       with EventTarget {
     
     val activated: Boolean = js.native
     
@@ -111,10 +112,11 @@ object mod {
     def screen: typings.motionSensorsPolyfill.motionSensorsPolyfillStrings.screen = "screen".asInstanceOf[typings.motionSensorsPolyfill.motionSensorsPolyfillStrings.screen]
   }
   
-  @js.native
-  trait AccelerometerSensorOptions extends SensorOptions {
+  trait AccelerometerSensorOptions
+    extends StObject
+       with SensorOptions {
     
-    var referenceFrame: js.UndefOr[AccelerometerLocalCoordinateSystem] = js.native
+    var referenceFrame: js.UndefOr[AccelerometerLocalCoordinateSystem] = js.undefined
   }
   object AccelerometerSensorOptions {
     
@@ -151,10 +153,9 @@ object mod {
     def screen: typings.motionSensorsPolyfill.motionSensorsPolyfillStrings.screen = "screen".asInstanceOf[typings.motionSensorsPolyfill.motionSensorsPolyfillStrings.screen]
   }
   
-  @js.native
   trait GyroscopeSensorOptions extends StObject {
     
-    var referenceFrame: js.UndefOr[GyroscopeLocalCoordinateSystem] = js.native
+    var referenceFrame: js.UndefOr[GyroscopeLocalCoordinateSystem] = js.undefined
   }
   object GyroscopeSensorOptions {
     
@@ -189,10 +190,11 @@ object mod {
     def screen: typings.motionSensorsPolyfill.motionSensorsPolyfillStrings.screen = "screen".asInstanceOf[typings.motionSensorsPolyfill.motionSensorsPolyfillStrings.screen]
   }
   
-  @js.native
-  trait OrientationSensorOptions extends SensorOptions {
+  trait OrientationSensorOptions
+    extends StObject
+       with SensorOptions {
     
-    var referenceFrame: js.UndefOr[OrientationSensorLocalCoordinateSystem] = js.native
+    var referenceFrame: js.UndefOr[OrientationSensorLocalCoordinateSystem] = js.undefined
   }
   object OrientationSensorOptions {
     
@@ -215,10 +217,9 @@ object mod {
   
   type RotationMatrixType = Float32Array | Float64Array | DOMMatrix
   
-  @js.native
   trait SensorOptions extends StObject {
     
-    var frequency: js.UndefOr[Double] = js.native
+    var frequency: js.UndefOr[Double] = js.undefined
   }
   object SensorOptions {
     

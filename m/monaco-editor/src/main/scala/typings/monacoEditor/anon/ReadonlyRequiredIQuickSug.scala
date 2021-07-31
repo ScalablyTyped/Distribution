@@ -2,18 +2,16 @@ package typings.monacoEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.IQuickSuggestionsOptions>> */
-@js.native
 trait ReadonlyRequiredIQuickSug extends StObject {
   
-  val comments: Boolean = js.native
+  val comments: Boolean
   
-  val other: Boolean = js.native
+  val other: Boolean
   
-  val strings: Boolean = js.native
+  val strings: Boolean
 }
 object ReadonlyRequiredIQuickSug {
   

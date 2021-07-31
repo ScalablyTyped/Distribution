@@ -2,17 +2,15 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainInformation extends StObject {
   
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
   
-  var OwnerId: js.UndefOr[typings.awsSdk.esMod.OwnerId] = js.native
+  var OwnerId: js.UndefOr[typings.awsSdk.esMod.OwnerId] = js.undefined
   
-  var Region: js.UndefOr[typings.awsSdk.esMod.Region] = js.native
+  var Region: js.UndefOr[typings.awsSdk.esMod.Region] = js.undefined
 }
 object DomainInformation {
   

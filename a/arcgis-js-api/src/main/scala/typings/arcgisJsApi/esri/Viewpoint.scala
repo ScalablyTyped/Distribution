@@ -2,12 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Viewpoint
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport
      with _GoToTarget2D
      with _GoToTarget3D {

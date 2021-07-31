@@ -2,47 +2,48 @@ package typings.iobroker.objectsMod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScriptCommon extends ObjectCommon {
+trait ScriptCommon
+  extends StObject
+     with ObjectCommon {
   
   /** If the script uses a compiled language like TypeScript, this contains the compilation output */
-  var compiled: js.UndefOr[String] = js.native
+  var compiled: js.UndefOr[String] = js.undefined
   
   // Make it possible to narrow the object type using the custom property
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var debug: Boolean = js.native
+  var debug: Boolean
   
   /** If the script uses a compiled language like TypeScript, this contains the generated declarations (global scripts only) */
-  var declarations: js.UndefOr[String] = js.native
+  var declarations: js.UndefOr[String] = js.undefined
   
   /** Whether this script should be executed */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /** The instance id of the instance which executes this script */
-  var engine: String = js.native
+  var engine: String
   
   /** Defines the type of the script, e.g. TypeScript/ts, JavaScript/js or Blockly */
-  var engineType: String = js.native
+  var engineType: String
   
   @JSName("name")
-  var name_ScriptCommon: String = js.native
+  var name_ScriptCommon: String
   
   /** The source code of this script */
-  var source: String = js.native
+  var source: String
   
   /** Is used to determine whether a script has changed and needs to be recompiled */
-  var sourceHash: js.UndefOr[String] = js.native
+  var sourceHash: js.UndefOr[String] = js.undefined
   
-  var verbose: Boolean = js.native
+  var verbose: Boolean
 }
 object ScriptCommon {
   
   @scala.inline
   def apply(
+    custom: Unit,
     debug: Boolean,
     enabled: Boolean,
     engine: String,
@@ -51,7 +52,7 @@ object ScriptCommon {
     source: String,
     verbose: Boolean
   ): ScriptCommon = {
-    val __obj = js.Dynamic.literal(debug = debug.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], engineType = engineType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any], debug = debug.asInstanceOf[js.Any], enabled = enabled.asInstanceOf[js.Any], engine = engine.asInstanceOf[js.Any], engineType = engineType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], verbose = verbose.asInstanceOf[js.Any])
     __obj.asInstanceOf[ScriptCommon]
   }
   
@@ -63,6 +64,9 @@ object ScriptCommon {
     
     @scala.inline
     def setCompiledUndefined: Self = StObject.set(x, "compiled", js.undefined)
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDebug(value: Boolean): Self = StObject.set(x, "debug", value.asInstanceOf[js.Any])

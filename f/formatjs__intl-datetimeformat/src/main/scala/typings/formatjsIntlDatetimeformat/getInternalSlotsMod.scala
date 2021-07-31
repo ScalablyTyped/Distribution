@@ -4,12 +4,14 @@ import typings.formatjsEcma402Abstract.typesDateTimeMod.DateTimeFormat
 import typings.formatjsEcma402Abstract.typesDateTimeMod.IntlDateTimeFormatInternal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getInternalSlotsMod {
   
-  @JSImport("@formatjs/intl-datetimeformat/lib/src/get_internal_slots", JSImport.Default)
+  @JSImport("@formatjs/intl-datetimeformat/lib/src/get_internal_slots", JSImport.Namespace)
   @js.native
-  def default(x: DateTimeFormat): IntlDateTimeFormatInternal = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(x: DateTimeFormat): IntlDateTimeFormatInternal = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(x.asInstanceOf[js.Any]).asInstanceOf[IntlDateTimeFormatInternal]
 }

@@ -3,15 +3,13 @@ package typings.amapJsApiToolBar
 import typings.amapJsApi.AMap.LngLat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Lnglat extends StObject {
     
-    var lnglat: LngLat = js.native
+    var lnglat: LngLat
   }
   object Lnglat {
     

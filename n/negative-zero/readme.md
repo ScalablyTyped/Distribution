@@ -12,7 +12,7 @@ Check if a number is negative zero
 | Keywords           | number, is, check, detect, negative, zero |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 53425 |
+| # downloads        | 57880 |
 | # stars            | 1 |
 
 ## Links

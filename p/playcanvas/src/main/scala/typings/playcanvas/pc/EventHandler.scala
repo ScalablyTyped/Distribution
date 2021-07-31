@@ -3,7 +3,6 @@ package typings.playcanvas.pc
 import typings.playcanvas.pc.callbacks.HandleEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -78,13 +77,13 @@ trait EventHandler extends StObject {
     * @returns Self for chaining.
     */
   def off(): EventHandler = js.native
-  def off(name: js.UndefOr[scala.Nothing], callback: js.UndefOr[scala.Nothing], scope: js.Any): EventHandler = js.native
-  def off(name: js.UndefOr[scala.Nothing], callback: HandleEvent): EventHandler = js.native
-  def off(name: js.UndefOr[scala.Nothing], callback: HandleEvent, scope: js.Any): EventHandler = js.native
   def off(name: String): EventHandler = js.native
-  def off(name: String, callback: js.UndefOr[scala.Nothing], scope: js.Any): EventHandler = js.native
+  def off(name: String, callback: Unit, scope: js.Any): EventHandler = js.native
   def off(name: String, callback: HandleEvent): EventHandler = js.native
   def off(name: String, callback: HandleEvent, scope: js.Any): EventHandler = js.native
+  def off(name: Unit, callback: Unit, scope: js.Any): EventHandler = js.native
+  def off(name: Unit, callback: HandleEvent): EventHandler = js.native
+  def off(name: Unit, callback: HandleEvent, scope: js.Any): EventHandler = js.native
   
   /**
     * Attach an event handler to an event.

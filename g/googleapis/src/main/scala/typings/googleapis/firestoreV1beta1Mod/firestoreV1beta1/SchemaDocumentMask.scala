@@ -2,7 +2,6 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * standard field masks, as this is always scoped to a Document, and takes in
   * account the dynamic nature of Value.
   */
-@js.native
 trait SchemaDocumentMask extends StObject {
   
   /**
     * The list of field paths in the mask. See Document.fields for a field path
     * syntax reference.
     */
-  var fieldPaths: js.UndefOr[js.Array[String]] = js.native
+  var fieldPaths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDocumentMask {
   

@@ -13,72 +13,136 @@ import typings.tryghostContentApi.mod.Tag
 import typings.tryghostContentApi.mod.Tags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Browse extends StObject {
     
-    def browse(): js.Promise[PostsOrPages] = js.native
-    def browse(options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[PostsOrPages] = js.native
-    def browse(options: Params): js.Promise[PostsOrPages] = js.native
-    def browse(options: Params, memberToken: Nullable[String]): js.Promise[PostsOrPages] = js.native
+    def browse(): js.Promise[PostsOrPages]
+    def browse(options: Unit, memberToken: Nullable[String]): js.Promise[PostsOrPages]
+    def browse(options: Params): js.Promise[PostsOrPages]
+    def browse(options: Params, memberToken: Nullable[String]): js.Promise[PostsOrPages]
     @JSName("browse")
-    var browse_Original: BrowseFunction[PostsOrPages] = js.native
+    var browse_Original: BrowseFunction[PostsOrPages]
     
-    def read(data: Id): js.Promise[PostOrPage] = js.native
-    def read(data: Id, options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[PostOrPage] = js.native
-    def read(data: Id, options: Params): js.Promise[PostOrPage] = js.native
-    def read(data: Id, options: Params, memberToken: Nullable[String]): js.Promise[PostOrPage] = js.native
-    def read(data: Slug): js.Promise[PostOrPage] = js.native
-    def read(data: Slug, options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[PostOrPage] = js.native
-    def read(data: Slug, options: Params): js.Promise[PostOrPage] = js.native
-    def read(data: Slug, options: Params, memberToken: Nullable[String]): js.Promise[PostOrPage] = js.native
+    def read(data: Id): js.Promise[PostOrPage]
+    def read(data: Id, options: Unit, memberToken: Nullable[String]): js.Promise[PostOrPage]
+    def read(data: Id, options: Params): js.Promise[PostOrPage]
+    def read(data: Id, options: Params, memberToken: Nullable[String]): js.Promise[PostOrPage]
+    def read(data: Slug): js.Promise[PostOrPage]
+    def read(data: Slug, options: Unit, memberToken: Nullable[String]): js.Promise[PostOrPage]
+    def read(data: Slug, options: Params): js.Promise[PostOrPage]
+    def read(data: Slug, options: Params, memberToken: Nullable[String]): js.Promise[PostOrPage]
     @JSName("read")
-    var read_Original: ReadFunction[PostOrPage] = js.native
+    var read_Original: ReadFunction[PostOrPage]
+  }
+  object Browse {
+    
+    @scala.inline
+    def apply(
+      browse: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[PostsOrPages],
+      read: (/* data */ Id | Slug, /* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[PostOrPage]
+    ): Browse = {
+      val __obj = js.Dynamic.literal(browse = js.Any.fromFunction2(browse), read = js.Any.fromFunction3(read))
+      __obj.asInstanceOf[Browse]
+    }
+    
+    @scala.inline
+    implicit class BrowseMutableBuilder[Self <: Browse] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBrowse(
+        value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[PostsOrPages]
+      ): Self = StObject.set(x, "browse", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRead(
+        value: (/* data */ Id | Slug, /* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[PostOrPage]
+      ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait BrowseBrowseFunction extends StObject {
     
-    def browse(): js.Promise[SettingsResponse] = js.native
-    def browse(options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[SettingsResponse] = js.native
-    def browse(options: Params): js.Promise[SettingsResponse] = js.native
-    def browse(options: Params, memberToken: Nullable[String]): js.Promise[SettingsResponse] = js.native
+    def browse(): js.Promise[SettingsResponse]
+    def browse(options: Unit, memberToken: Nullable[String]): js.Promise[SettingsResponse]
+    def browse(options: Params): js.Promise[SettingsResponse]
+    def browse(options: Params, memberToken: Nullable[String]): js.Promise[SettingsResponse]
     @JSName("browse")
-    var browse_Original: BrowseFunction[SettingsResponse] = js.native
+    var browse_Original: BrowseFunction[SettingsResponse]
+  }
+  object BrowseBrowseFunction {
+    
+    @scala.inline
+    def apply(
+      browse: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[SettingsResponse]
+    ): BrowseBrowseFunction = {
+      val __obj = js.Dynamic.literal(browse = js.Any.fromFunction2(browse))
+      __obj.asInstanceOf[BrowseBrowseFunction]
+    }
+    
+    @scala.inline
+    implicit class BrowseBrowseFunctionMutableBuilder[Self <: BrowseBrowseFunction] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBrowse(
+        value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[SettingsResponse]
+      ): Self = StObject.set(x, "browse", js.Any.fromFunction2(value))
+    }
   }
   
-  @js.native
   trait BrowseRead extends StObject {
     
-    def browse(): js.Promise[Tags] = js.native
-    def browse(options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[Tags] = js.native
-    def browse(options: Params): js.Promise[Tags] = js.native
-    def browse(options: Params, memberToken: Nullable[String]): js.Promise[Tags] = js.native
+    def browse(): js.Promise[Tags]
+    def browse(options: Unit, memberToken: Nullable[String]): js.Promise[Tags]
+    def browse(options: Params): js.Promise[Tags]
+    def browse(options: Params, memberToken: Nullable[String]): js.Promise[Tags]
     @JSName("browse")
-    var browse_Original: BrowseFunction[Tags] = js.native
+    var browse_Original: BrowseFunction[Tags]
     
-    def read(data: Id): js.Promise[Tag] = js.native
-    def read(data: Id, options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[Tag] = js.native
-    def read(data: Id, options: Params): js.Promise[Tag] = js.native
-    def read(data: Id, options: Params, memberToken: Nullable[String]): js.Promise[Tag] = js.native
-    def read(data: Slug): js.Promise[Tag] = js.native
-    def read(data: Slug, options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[Tag] = js.native
-    def read(data: Slug, options: Params): js.Promise[Tag] = js.native
-    def read(data: Slug, options: Params, memberToken: Nullable[String]): js.Promise[Tag] = js.native
+    def read(data: Id): js.Promise[Tag]
+    def read(data: Id, options: Unit, memberToken: Nullable[String]): js.Promise[Tag]
+    def read(data: Id, options: Params): js.Promise[Tag]
+    def read(data: Id, options: Params, memberToken: Nullable[String]): js.Promise[Tag]
+    def read(data: Slug): js.Promise[Tag]
+    def read(data: Slug, options: Unit, memberToken: Nullable[String]): js.Promise[Tag]
+    def read(data: Slug, options: Params): js.Promise[Tag]
+    def read(data: Slug, options: Params, memberToken: Nullable[String]): js.Promise[Tag]
     @JSName("read")
-    var read_Original: ReadFunction[Tag] = js.native
+    var read_Original: ReadFunction[Tag]
+  }
+  object BrowseRead {
+    
+    @scala.inline
+    def apply(
+      browse: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Tags],
+      read: (/* data */ Id | Slug, /* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Tag]
+    ): BrowseRead = {
+      val __obj = js.Dynamic.literal(browse = js.Any.fromFunction2(browse), read = js.Any.fromFunction3(read))
+      __obj.asInstanceOf[BrowseRead]
+    }
+    
+    @scala.inline
+    implicit class BrowseReadMutableBuilder[Self <: BrowseRead] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBrowse(
+        value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Tags]
+      ): Self = StObject.set(x, "browse", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRead(
+        value: (/* data */ Id | Slug, /* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Tag]
+      ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait ErrorType extends StObject {
     
-    var errorType: String = js.native
+    var errorType: String
     
-    var message: String = js.native
+    var message: String
   }
   object ErrorType {
     
@@ -99,16 +163,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: Nullable[String] = js.native
+    var id: Nullable[String]
   }
   object Id {
     
     @scala.inline
     def apply(): Id = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(id = null)
       __obj.asInstanceOf[Id]
     }
     
@@ -123,12 +186,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var url: String = js.native
+    var url: String
   }
   object Label {
     
@@ -149,10 +211,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Pagination extends StObject {
     
-    var pagination: typings.tryghostContentApi.mod.Pagination = js.native
+    var pagination: typings.tryghostContentApi.mod.Pagination
   }
   object Pagination {
     
@@ -170,10 +231,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Posts extends StObject {
     
-    var posts: Double = js.native
+    var posts: Double
   }
   object Posts {
     
@@ -191,38 +251,61 @@ object anon {
     }
   }
   
-  @js.native
   trait Read extends StObject {
     
-    def browse(): js.Promise[Authors] = js.native
-    def browse(options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[Authors] = js.native
-    def browse(options: Params): js.Promise[Authors] = js.native
-    def browse(options: Params, memberToken: Nullable[String]): js.Promise[Authors] = js.native
+    def browse(): js.Promise[Authors]
+    def browse(options: Unit, memberToken: Nullable[String]): js.Promise[Authors]
+    def browse(options: Params): js.Promise[Authors]
+    def browse(options: Params, memberToken: Nullable[String]): js.Promise[Authors]
     @JSName("browse")
-    var browse_Original: BrowseFunction[Authors] = js.native
+    var browse_Original: BrowseFunction[Authors]
     
-    def read(data: Id): js.Promise[Author] = js.native
-    def read(data: Id, options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[Author] = js.native
-    def read(data: Id, options: Params): js.Promise[Author] = js.native
-    def read(data: Id, options: Params, memberToken: Nullable[String]): js.Promise[Author] = js.native
-    def read(data: Slug): js.Promise[Author] = js.native
-    def read(data: Slug, options: js.UndefOr[scala.Nothing], memberToken: Nullable[String]): js.Promise[Author] = js.native
-    def read(data: Slug, options: Params): js.Promise[Author] = js.native
-    def read(data: Slug, options: Params, memberToken: Nullable[String]): js.Promise[Author] = js.native
+    def read(data: Id): js.Promise[Author]
+    def read(data: Id, options: Unit, memberToken: Nullable[String]): js.Promise[Author]
+    def read(data: Id, options: Params): js.Promise[Author]
+    def read(data: Id, options: Params, memberToken: Nullable[String]): js.Promise[Author]
+    def read(data: Slug): js.Promise[Author]
+    def read(data: Slug, options: Unit, memberToken: Nullable[String]): js.Promise[Author]
+    def read(data: Slug, options: Params): js.Promise[Author]
+    def read(data: Slug, options: Params, memberToken: Nullable[String]): js.Promise[Author]
     @JSName("read")
-    var read_Original: ReadFunction[Author] = js.native
+    var read_Original: ReadFunction[Author]
+  }
+  object Read {
+    
+    @scala.inline
+    def apply(
+      browse: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Authors],
+      read: (/* data */ Id | Slug, /* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Author]
+    ): Read = {
+      val __obj = js.Dynamic.literal(browse = js.Any.fromFunction2(browse), read = js.Any.fromFunction3(read))
+      __obj.asInstanceOf[Read]
+    }
+    
+    @scala.inline
+    implicit class ReadMutableBuilder[Self <: Read] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setBrowse(
+        value: (/* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Authors]
+      ): Self = StObject.set(x, "browse", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setRead(
+        value: (/* data */ Id | Slug, /* options */ js.UndefOr[Params], /* memberToken */ js.UndefOr[Nullable[String]]) => js.Promise[Author]
+      ): Self = StObject.set(x, "read", js.Any.fromFunction3(value))
+    }
   }
   
-  @js.native
   trait Slug extends StObject {
     
-    var slug: Nullable[String] = js.native
+    var slug: Nullable[String]
   }
   object Slug {
     
     @scala.inline
     def apply(): Slug = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(slug = null)
       __obj.asInstanceOf[Slug]
     }
     

@@ -3,46 +3,44 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationSettings extends StObject {
   
-  var AdvanceMode: PpAdvanceMode = js.native
+  var AdvanceMode: PpAdvanceMode
   
-  var AdvanceTime: Double = js.native
+  var AdvanceTime: Double
   
-  var AfterEffect: PpAfterEffect = js.native
+  var AfterEffect: PpAfterEffect
   
-  var Animate: MsoTriState = js.native
+  var Animate: MsoTriState
   
-  var AnimateBackground: MsoTriState = js.native
+  var AnimateBackground: MsoTriState
   
-  var AnimateTextInReverse: MsoTriState = js.native
+  var AnimateTextInReverse: MsoTriState
   
-  var AnimationOrder: Double = js.native
+  var AnimationOrder: Double
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var ChartUnitEffect: PpChartUnitEffect = js.native
+  var ChartUnitEffect: PpChartUnitEffect
   
-  val DimColor: ColorFormat = js.native
+  val DimColor: ColorFormat
   
-  var EntryEffect: PpEntryEffect = js.native
+  var EntryEffect: PpEntryEffect
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings = js.native
+  val PlaySettings: typings.activexPowerpoint.PowerPoint.PlaySettings
   
   @JSName("PowerPoint.AnimationSettings_typekey")
-  var PowerPointDotAnimationSettings_typekey: AnimationSettings = js.native
+  var PowerPointDotAnimationSettings_typekey: AnimationSettings
   
-  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect = js.native
+  val SoundEffect: typings.activexPowerpoint.PowerPoint.SoundEffect
   
-  var TextLevelEffect: PpTextLevelEffect = js.native
+  var TextLevelEffect: PpTextLevelEffect
   
-  var TextUnitEffect: PpTextUnitEffect = js.native
+  var TextUnitEffect: PpTextUnitEffect
 }
 object AnimationSettings {
   

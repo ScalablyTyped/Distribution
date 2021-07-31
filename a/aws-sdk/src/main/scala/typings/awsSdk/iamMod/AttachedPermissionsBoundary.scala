@@ -2,21 +2,19 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachedPermissionsBoundary extends StObject {
   
   /**
     *  The ARN of the policy used to set the permissions boundary for the user or role.
     */
-  var PermissionsBoundaryArn: js.UndefOr[arnType] = js.native
+  var PermissionsBoundaryArn: js.UndefOr[arnType] = js.undefined
   
   /**
     *  The permissions boundary usage type that indicates what type of IAM resource is used as the permissions boundary for an entity. This data type can only have a value of Policy.
     */
-  var PermissionsBoundaryType: js.UndefOr[PermissionsBoundaryAttachmentType] = js.native
+  var PermissionsBoundaryType: js.UndefOr[PermissionsBoundaryAttachmentType] = js.undefined
 }
 object AttachedPermissionsBoundary {
   

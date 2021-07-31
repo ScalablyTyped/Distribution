@@ -2,36 +2,34 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRulesRequest extends StObject {
   
   /**
     * The detector ID.
     */
-  var detectorId: identifier = js.native
+  var detectorId: identifier
   
   /**
     * The maximum number of rules to return for the request.
     */
-  var maxResults: js.UndefOr[RulesMaxResults] = js.native
+  var maxResults: js.UndefOr[RulesMaxResults] = js.undefined
   
   /**
     * The next page token.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The rule ID.
     */
-  var ruleId: js.UndefOr[identifier] = js.native
+  var ruleId: js.UndefOr[identifier] = js.undefined
   
   /**
     * The rule version.
     */
-  var ruleVersion: js.UndefOr[wholeNumberVersionString] = js.native
+  var ruleVersion: js.UndefOr[wholeNumberVersionString] = js.undefined
 }
 object GetRulesRequest {
   

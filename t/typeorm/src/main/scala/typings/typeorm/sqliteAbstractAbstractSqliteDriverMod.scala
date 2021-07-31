@@ -6,14 +6,15 @@ import typings.typeorm.driverDriverMod.Driver
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqliteAbstractAbstractSqliteDriverMod {
   
   @JSImport("typeorm/driver/sqlite-abstract/AbstractSqliteDriver", "AbstractSqliteDriver")
   @js.native
-  abstract class AbstractSqliteDriver protected () extends Driver {
+  abstract class AbstractSqliteDriver protected ()
+    extends StObject
+       with Driver {
     def this(connection: Connection) = this()
     
     /**

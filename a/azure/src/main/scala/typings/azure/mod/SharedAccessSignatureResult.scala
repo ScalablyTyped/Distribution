@@ -3,19 +3,17 @@ package typings.azure.mod
 import typings.azure.anon.Se
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedAccessSignatureResult extends StObject {
   
-  var baseUrl: String = js.native
+  var baseUrl: String
   
-  var path: String = js.native
+  var path: String
   
-  var queryString: Se = js.native
+  var queryString: Se
   
-  def url(): String = js.native
+  def url(): String
 }
 object SharedAccessSignatureResult {
   

@@ -2,25 +2,23 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2Entitlement extends StObject {
   
   /**
     * Only present for in-app purchase and in-app subs.
     */
-  var inAppDetails: js.UndefOr[GoogleActionsV2SignedData] = js.native
+  var inAppDetails: js.UndefOr[GoogleActionsV2SignedData] = js.undefined
   
   /**
     * Product sku. Package name for paid app, suffix of Finsky docid for
     * in-app purchase and in-app subscription.
     * Match getSku() in Play InApp Billing API.
     */
-  var sku: js.UndefOr[String] = js.native
+  var sku: js.UndefOr[String] = js.undefined
   
-  var skuType: js.UndefOr[GoogleActionsV2EntitlementSkuType] = js.native
+  var skuType: js.UndefOr[GoogleActionsV2EntitlementSkuType] = js.undefined
 }
 object GoogleActionsV2Entitlement {
   

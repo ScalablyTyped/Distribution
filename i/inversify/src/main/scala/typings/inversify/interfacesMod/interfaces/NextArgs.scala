@@ -2,25 +2,23 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NextArgs extends StObject {
   
-  var avoidConstraints: Boolean = js.native
+  var avoidConstraints: Boolean
   
-  def contextInterceptor(contexts: Context): Context = js.native
+  def contextInterceptor(contexts: Context): Context
   
-  var isMultiInject: Boolean = js.native
+  var isMultiInject: Boolean
   
-  var key: js.UndefOr[String | Double | js.Symbol] = js.native
+  var key: js.UndefOr[String | Double | js.Symbol] = js.undefined
   
-  var serviceIdentifier: ServiceIdentifier[_] = js.native
+  var serviceIdentifier: ServiceIdentifier[js.Any]
   
-  var targetType: TargetType = js.native
+  var targetType: TargetType
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object NextArgs {
   
@@ -29,7 +27,7 @@ object NextArgs {
     avoidConstraints: Boolean,
     contextInterceptor: Context => Context,
     isMultiInject: Boolean,
-    serviceIdentifier: ServiceIdentifier[_],
+    serviceIdentifier: ServiceIdentifier[js.Any],
     targetType: TargetType
   ): NextArgs = {
     val __obj = js.Dynamic.literal(avoidConstraints = avoidConstraints.asInstanceOf[js.Any], contextInterceptor = js.Any.fromFunction1(contextInterceptor), isMultiInject = isMultiInject.asInstanceOf[js.Any], serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], targetType = targetType.asInstanceOf[js.Any])
@@ -55,7 +53,7 @@ object NextArgs {
     def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
     
     @scala.inline
-    def setServiceIdentifier(value: ServiceIdentifier[_]): Self = StObject.set(x, "serviceIdentifier", value.asInstanceOf[js.Any])
+    def setServiceIdentifier(value: ServiceIdentifier[js.Any]): Self = StObject.set(x, "serviceIdentifier", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTargetType(value: TargetType): Self = StObject.set(x, "targetType", value.asInstanceOf[js.Any])

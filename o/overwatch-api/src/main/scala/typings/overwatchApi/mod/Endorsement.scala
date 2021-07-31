@@ -2,15 +2,13 @@ package typings.overwatchApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Endorsement extends StObject {
   
-  var rate: Double = js.native
+  var rate: Double
   
-  var value: Double = js.native
+  var value: Double
 }
 object Endorsement {
   

@@ -3,35 +3,35 @@ package typings.typescriptServices.TypeScript.Services
 import typings.typescriptServices.TypeScript.ILogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILanguageServiceShimHost extends ILogger {
+trait ILanguageServiceShimHost
+  extends StObject
+     with ILogger {
   
-  def directoryExists(path: String): Boolean = js.native
+  def directoryExists(path: String): Boolean
   
-  def fileExists(path: String): Boolean = js.native
+  def fileExists(path: String): Boolean
   
-  def getCompilationSettings(): String = js.native
+  def getCompilationSettings(): String
   
-  def getDiagnosticsObject(): ILanguageServicesDiagnostics = js.native
+  def getDiagnosticsObject(): ILanguageServicesDiagnostics
   
-  def getLocalizedDiagnosticMessages(): String = js.native
+  def getLocalizedDiagnosticMessages(): String
   
-  def getParentDirectory(path: String): String = js.native
+  def getParentDirectory(path: String): String
   
-  def getScriptByteOrderMark(fileName: String): Double = js.native
+  def getScriptByteOrderMark(fileName: String): Double
   
-  def getScriptFileNames(): String = js.native
+  def getScriptFileNames(): String
   
-  def getScriptIsOpen(fileName: String): Boolean = js.native
+  def getScriptIsOpen(fileName: String): Boolean
   
-  def getScriptSnapshot(fileName: String): IScriptSnapshotShim = js.native
+  def getScriptSnapshot(fileName: String): IScriptSnapshotShim
   
-  def getScriptVersion(fileName: String): Double = js.native
+  def getScriptVersion(fileName: String): Double
   
-  def resolveRelativePath(path: String, directory: String): String = js.native
+  def resolveRelativePath(path: String, directory: String): String
 }
 object ILanguageServiceShimHost {
   

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.TableConditionalFormat
   * @see com.sun.star.sheet.TableConditionalEntry
   */
-@js.native
-trait XSheetConditionalEntries extends XIndexAccess {
+trait XSheetConditionalEntries
+  extends StObject
+     with XIndexAccess {
   
   /**
     * adds a conditional entry to the format.
@@ -34,13 +34,13 @@ trait XSheetConditionalEntries extends XIndexAccess {
     * **string StyleName **: contains the name of the cell style used by this condition.
     * @see com.sun.star.sheet.TableConditionalFormat
     */
-  def addNew(aConditionalEntry: SeqEquiv[PropertyValue]): Unit = js.native
+  def addNew(aConditionalEntry: SeqEquiv[PropertyValue]): Unit
   
   /** clears all condition entries. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /** removes a conditional entry from the format. */
-  def removeByIndex(nIndex: Double): Unit = js.native
+  def removeByIndex(nIndex: Double): Unit
 }
 object XSheetConditionalEntries {
   

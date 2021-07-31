@@ -2,38 +2,36 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAxisLabels extends StObject {
   
-  var alternate: Boolean = js.native
+  var alternate: Boolean
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var dateFormat: String = js.native
+  var dateFormat: String
   
-  var decimals: Double = js.native
+  var decimals: Double
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  def getLabel(value: Double): String = js.native
+  def getLabel(value: Double): String
   
-  var labelStyle: String = js.native
+  var labelStyle: String
   
-  var maxWidth: Double = js.native
+  var maxWidth: Double
   
-  var padding: Double = js.native
+  var padding: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var separation: Double = js.native
+  var separation: Double
   
   // %
-  var visible: Boolean = js.native
+  var visible: Boolean
   
-  def width(value: Double): Double = js.native
+  def width(value: Double): Double
 }
 object IAxisLabels {
   

@@ -3,23 +3,21 @@ package typings.winrt.Windows.Security.Credentials
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPasswordVault extends StObject {
   
-  def add(credential: PasswordCredential): Unit = js.native
+  def add(credential: PasswordCredential): Unit
   
-  def findAllByResource(resource: String): IVectorView[PasswordCredential] = js.native
+  def findAllByResource(resource: String): IVectorView[PasswordCredential]
   
-  def findAllByUserName(userName: String): IVectorView[PasswordCredential] = js.native
+  def findAllByUserName(userName: String): IVectorView[PasswordCredential]
   
-  def remove(credential: PasswordCredential): Unit = js.native
+  def remove(credential: PasswordCredential): Unit
   
-  def retrieve(resource: String, userName: String): PasswordCredential = js.native
+  def retrieve(resource: String, userName: String): PasswordCredential
   
-  def retrieveAll(): IVectorView[PasswordCredential] = js.native
+  def retrieveAll(): IVectorView[PasswordCredential]
 }
 object IPasswordVault {
   

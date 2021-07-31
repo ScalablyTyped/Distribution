@@ -2,21 +2,19 @@ package typings.ydnDb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageOptions extends StObject {
   
-  var autoSchema: js.UndefOr[Boolean] = js.native
+  var autoSchema: js.UndefOr[Boolean] = js.undefined
   
-  var isSerial: js.UndefOr[Boolean] = js.native
+  var isSerial: js.UndefOr[Boolean] = js.undefined
   
-  var mechanisms: js.UndefOr[js.Array[String]] = js.native
+  var mechanisms: js.UndefOr[js.Array[String]] = js.undefined
   
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object StorageOptions {
   

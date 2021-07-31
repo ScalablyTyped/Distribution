@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a SourcesOrder. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SourcesOrder.
   * @param [properties] Properties to set
   */
-class SourcesOrder () extends ISourcesOrder {
+class SourcesOrder ()
+  extends StObject
+     with ISourcesOrder {
   def this(properties: ISourcesOrder) = this()
   
   /** SourcesOrder seed. */
@@ -36,18 +37,20 @@ class SourcesOrder () extends ISourcesOrder {
 }
 object SourcesOrder {
   
+  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SourcesOrder instance using the specified properties.
     * @param [properties] Properties to set
     * @returns SourcesOrder instance
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.create")
-  @js.native
-  def create(): SourcesOrder = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.create")
-  @js.native
-  def create(properties: ISourcesOrder): SourcesOrder = js.native
+  @scala.inline
+  def create(): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SourcesOrder]
+  @scala.inline
+  def create(properties: ISourcesOrder): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   
   /**
     * Decodes a SourcesOrder message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object SourcesOrder {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.decode")
-  @js.native
-  def decode(reader: Reader): SourcesOrder = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): SourcesOrder = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.decode")
-  @js.native
-  def decode(reader: Uint8Array): SourcesOrder = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): SourcesOrder = js.native
+  @scala.inline
+  def decode(reader: Reader): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
+  @scala.inline
+  def decode(reader: Reader, length: Double): SourcesOrder = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesOrder]
+  @scala.inline
+  def decode(reader: Uint8Array): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): SourcesOrder = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SourcesOrder]
   
   /**
     * Decodes a SourcesOrder message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object SourcesOrder {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): SourcesOrder = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): SourcesOrder = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   
   /**
     * Encodes the specified SourcesOrder message. Does not implicitly {@link io.cucumber.messages.SourcesOrder.verify|verify} messages.
@@ -93,12 +90,10 @@ object SourcesOrder {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.encode")
-  @js.native
-  def encode(message: ISourcesOrder): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.encode")
-  @js.native
-  def encode(message: ISourcesOrder, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ISourcesOrder): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ISourcesOrder, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified SourcesOrder message, length delimited. Does not implicitly {@link io.cucumber.messages.SourcesOrder.verify|verify} messages.
@@ -107,12 +102,10 @@ object SourcesOrder {
     * @returns Writer
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISourcesOrder): Writer = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISourcesOrder, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ISourcesOrder): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ISourcesOrder, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a SourcesOrder message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object SourcesOrder {
     * @returns SourcesOrder
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): SourcesOrder = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): SourcesOrder = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SourcesOrder]
   
   /**
     * Creates a plain object from a SourcesOrder message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object SourcesOrder {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.toObject")
-  @js.native
-  def toObject(message: SourcesOrder): StringDictionary[js.Any] = js.native
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.toObject")
-  @js.native
-  def toObject(message: SourcesOrder, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: SourcesOrder): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: SourcesOrder, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a SourcesOrder message.
@@ -144,7 +134,6 @@ object SourcesOrder {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("cucumber-messages/dist/src/cucumber-messages", "io.cucumber.messages.SourcesOrder.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -4,10 +4,13 @@ import typings.sawtoothSdk.coreMod.Context
 import typings.sawtoothSdk.coreMod.PrivateKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signing {
+  
+  @JSImport("sawtooth-sdk", "signing")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sawtooth-sdk", "signing.CryptoFactory")
   @js.native
@@ -34,7 +37,6 @@ object signing {
     def this(content: Context, privateKey: PrivateKey) = this()
   }
   
-  @JSImport("sawtooth-sdk", "signing.createContext")
-  @js.native
-  def createContext(algorithmName: String): Context = js.native
+  @scala.inline
+  def createContext(algorithmName: String): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("createContext")(algorithmName.asInstanceOf[js.Any]).asInstanceOf[Context]
 }

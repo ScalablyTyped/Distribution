@@ -10,9 +10,9 @@ TypeScript typings for AdMob API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.admob |
 | Keywords           | - |
-| # releases         | 3 |
+| # releases         | 28 |
 | # dependents       | 1 |
-| # downloads        | 71 |
+| # downloads        | 2033 |
 | # stars            | 0 |
 
 ## Links

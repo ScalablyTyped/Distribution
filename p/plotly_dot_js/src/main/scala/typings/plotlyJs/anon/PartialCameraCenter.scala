@@ -4,18 +4,16 @@ import typings.plotlyJs.mod.Point
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Camera> */
-@js.native
 trait PartialCameraCenter extends StObject {
   
-  var center: js.UndefOr[Partial[Point]] = js.native
+  var center: js.UndefOr[Partial[Point]] = js.undefined
   
-  var eye: js.UndefOr[Partial[Point]] = js.native
+  var eye: js.UndefOr[Partial[Point]] = js.undefined
   
-  var up: js.UndefOr[Partial[Point]] = js.native
+  var up: js.UndefOr[Partial[Point]] = js.undefined
 }
 object PartialCameraCenter {
   

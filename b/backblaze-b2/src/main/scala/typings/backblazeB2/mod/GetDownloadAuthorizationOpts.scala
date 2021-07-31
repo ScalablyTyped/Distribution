@@ -2,22 +2,22 @@ package typings.backblazeB2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetDownloadAuthorizationOpts extends CommonArgs {
+trait GetDownloadAuthorizationOpts
+  extends StObject
+     with CommonArgs {
   
-  var b2ContentDisposition: String = js.native
+  var b2ContentDisposition: String
   
-  var bucketId: String = js.native
+  var bucketId: String
   
-  var fileNamePrefix: String = js.native
+  var fileNamePrefix: String
   
   /**
     * Authorization validity : 0 to 604800
     */
-  var validDurationInSeconds: Double = js.native
+  var validDurationInSeconds: Double
 }
 object GetDownloadAuthorizationOpts {
   

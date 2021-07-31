@@ -3,10 +3,13 @@ package typings.aureliaLogging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("aurelia-logging", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("aurelia-logging", "Logger")
   @js.native
@@ -71,47 +74,37 @@ object mod {
     def warn(message: String, rest: js.Any*): Unit = js.native
   }
   
-  @JSImport("aurelia-logging", "addAppender")
-  @js.native
-  def addAppender(appender: Appender): Unit = js.native
+  @scala.inline
+  def addAppender(appender: Appender): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAppender")(appender.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("aurelia-logging", "addCustomLevel")
-  @js.native
-  def addCustomLevel(name: String, value: Double): Unit = js.native
+  @scala.inline
+  def addCustomLevel(name: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCustomLevel")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("aurelia-logging", "clearAppenders")
-  @js.native
-  def clearAppenders(): Unit = js.native
+  @scala.inline
+  def clearAppenders(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearAppenders")().asInstanceOf[Unit]
   
-  @JSImport("aurelia-logging", "getAppenders")
-  @js.native
-  def getAppenders(): js.Any = js.native
+  @scala.inline
+  def getAppenders(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppenders")().asInstanceOf[js.Any]
   
-  @JSImport("aurelia-logging", "getLevel")
-  @js.native
-  def getLevel(): Double = js.native
+  @scala.inline
+  def getLevel(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getLevel")().asInstanceOf[Double]
   
-  @JSImport("aurelia-logging", "getLogger")
-  @js.native
-  def getLogger(id: String): Logger = js.native
+  @scala.inline
+  def getLogger(id: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(id.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   @JSImport("aurelia-logging", "logLevel")
   @js.native
   val logLevel: LogLevel_ = js.native
   
-  @JSImport("aurelia-logging", "removeAppender")
-  @js.native
-  def removeAppender(appender: Appender): Unit = js.native
+  @scala.inline
+  def removeAppender(appender: Appender): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAppender")(appender.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("aurelia-logging", "removeCustomLevel")
-  @js.native
-  def removeCustomLevel(name: String): Unit = js.native
+  @scala.inline
+  def removeCustomLevel(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeCustomLevel")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("aurelia-logging", "setLevel")
-  @js.native
-  def setLevel(level: Double): Unit = js.native
+  @scala.inline
+  def setLevel(level: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Appender extends StObject {
     
     /**
@@ -120,7 +113,7 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def debug(logger: Logger, rest: js.Any*): Unit = js.native
+    def debug(logger: Logger, rest: js.Any*): Unit
     
     /**
       * Appends an error log.
@@ -128,7 +121,7 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def error(logger: Logger, rest: js.Any*): Unit = js.native
+    def error(logger: Logger, rest: js.Any*): Unit
     
     /**
       * Appends an info log.
@@ -136,7 +129,7 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def info(logger: Logger, rest: js.Any*): Unit = js.native
+    def info(logger: Logger, rest: js.Any*): Unit
     
     /**
       * Appends a warning log.
@@ -144,7 +137,7 @@ object mod {
       * @param logger The source logger.
       * @param rest The data to log.
       */
-    def warn(logger: Logger, rest: js.Any*): Unit = js.native
+    def warn(logger: Logger, rest: js.Any*): Unit
   }
   object Appender {
     
@@ -176,9 +169,9 @@ object mod {
     }
   }
   
-  @js.native
   trait LogLevel_
-    extends /**
+    extends StObject
+       with /**
     * Additional log levels defined at runtime.
     */
   /* level */ StringDictionary[Double] {
@@ -186,27 +179,27 @@ object mod {
     /**
       * Log all messages.
       */
-    var debug: Double = js.native
+    var debug: Double
     
     /**
       * Log only error messages.
       */
-    var error: Double = js.native
+    var error: Double
     
     /**
       * Log informational messages or above.
       */
-    var info: Double = js.native
+    var info: Double
     
     /**
       * No logging.
       */
-    var none: Double = js.native
+    var none: Double
     
     /**
       * Log warnings messages or above.
       */
-    var warn: Double = js.native
+    var warn: Double
   }
   object LogLevel_ {
     

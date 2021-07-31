@@ -2,13 +2,11 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostCancellationToken extends StObject {
   
-  def isCancellationRequested(): Boolean = js.native
+  def isCancellationRequested(): Boolean
 }
 object HostCancellationToken {
   

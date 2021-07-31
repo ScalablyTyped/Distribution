@@ -10,10 +10,8 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteOptionsResponse extends StObject {
   
   /**
@@ -24,7 +22,7 @@ trait RouteOptionsResponse extends StObject {
     * The value is only used for logging as the request has already ended.
     * @default 499
     */
-  var disconnectStatusCode: js.UndefOr[Double] = js.native
+  var disconnectStatusCode: js.UndefOr[Double] = js.undefined
   
   /**
     * @default 204.
@@ -32,21 +30,21 @@ trait RouteOptionsResponse extends StObject {
     * response status code will remain 200 throughout the request lifecycle unless manually set).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponseemptystatuscode)
     */
-  var emptyStatusCode: js.UndefOr[`200` | `204`] = js.native
+  var emptyStatusCode: js.UndefOr[`200` | `204`] = js.undefined
   
   /**
     * @default 'error' (return an Internal Server Error (500) error response).
     * A failAction value which defines what to do when a response fails payload validation.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponsefailaction)
     */
-  var failAction: js.UndefOr[FailAction] = js.native
+  var failAction: js.UndefOr[FailAction] = js.undefined
   
   /**
     * @default false.
     * If true, applies the validation rule changes to the response payload.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponsemodify)
     */
-  var modify: js.UndefOr[Boolean] = js.native
+  var modify: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default none.
@@ -54,7 +52,7 @@ trait RouteOptionsResponse extends StObject {
     * custom validation function is defined via schema or status then options can an arbitrary object that will be passed to this function as the second argument.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponseoptions)
     */
-  var options: js.UndefOr[ValidationOptions] = js.native
+  var options: js.UndefOr[ValidationOptions] = js.undefined
   
   // TODO needs validation
   /**
@@ -62,14 +60,14 @@ trait RouteOptionsResponse extends StObject {
     * If false, payload range support is disabled.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponseranges)
     */
-  var ranges: js.UndefOr[Boolean] = js.native
+  var ranges: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default 100 (all responses).
     * The percent of response payloads validated (0 - 100). Set to 0 to disable all validation.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponsesample)
     */
-  var sample: js.UndefOr[Double] = js.native
+  var sample: js.UndefOr[Double] = js.undefined
   
   /**
     * @default true (no validation).
@@ -84,7 +82,7 @@ trait RouteOptionsResponse extends StObject {
     * output.payload. If an error is thrown, the error is processed according to failAction.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponseschema)
     */
-  var schema: js.UndefOr[RouteOptionsResponseSchema] = js.native
+  var schema: js.UndefOr[RouteOptionsResponseSchema] = js.undefined
   
   /**
     * @default none.
@@ -92,7 +90,7 @@ trait RouteOptionsResponse extends StObject {
     * status is set to an object where each key is a 3 digit HTTP status code and the value has the same definition as schema.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-routeoptionsresponsestatus)
     */
-  var status: js.UndefOr[Dictionary[RouteOptionsResponseSchema]] = js.native
+  var status: js.UndefOr[Dictionary[RouteOptionsResponseSchema]] = js.undefined
 }
 object RouteOptionsResponse {
   

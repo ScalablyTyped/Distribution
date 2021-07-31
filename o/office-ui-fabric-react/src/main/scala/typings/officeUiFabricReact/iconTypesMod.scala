@@ -12,7 +12,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.baseComponentTypesMod.IBaseProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconTypesMod {
@@ -24,49 +23,58 @@ object iconTypesMod {
   object IconType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[IconType with Double] = js.native
+    def apply(value: Double): js.UndefOr[IconType & Double] = js.native
     
     /**
       * Render using the fabric icon font.
       * @deprecated Icon type is inferred based on presence of `IIconProps.imageProps`
       */
     @js.native
-    sealed trait default extends IconType
-    /* 0 */ val default: typings.officeUiFabricReact.iconTypesMod.IconType.default with Double = js.native
+    sealed trait default
+      extends StObject
+         with IconType
+    /* 0 */ val default: typings.officeUiFabricReact.iconTypesMod.IconType.default & Double = js.native
     
     /**
       * Deprecated, use `default`.
       * @deprecated Use `default`.
       */
     @js.native
-    sealed trait Default extends IconType
-    /* 100000 */ val Default: typings.officeUiFabricReact.iconTypesMod.IconType.Default with Double = js.native
+    sealed trait Default
+      extends StObject
+         with IconType
+    /* 100000 */ val Default: typings.officeUiFabricReact.iconTypesMod.IconType.Default & Double = js.native
     
     /**
       * Deprecated, use `image`.
       * @deprecated Use `image`.
       */
     @js.native
-    sealed trait Image extends IconType
-    /* 100001 */ val Image: typings.officeUiFabricReact.iconTypesMod.IconType.Image with Double = js.native
+    sealed trait Image
+      extends StObject
+         with IconType
+    /* 100001 */ val Image: typings.officeUiFabricReact.iconTypesMod.IconType.Image & Double = js.native
     
     /**
       * Render using an image, where imageProps would be used.
       * @deprecated Icon type is inferred based on presence of `IIconProps.imageProps`
       */
     @js.native
-    sealed trait image extends IconType
-    /* 1 */ val image: typings.officeUiFabricReact.iconTypesMod.IconType.image with Double = js.native
+    sealed trait image
+      extends StObject
+         with IconType
+    /* 1 */ val image: typings.officeUiFabricReact.iconTypesMod.IconType.image & Double = js.native
   }
   
-  @js.native
-  trait IFontIconProps extends HTMLAttributes[HTMLElement] {
+  trait IFontIconProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * The name of the icon to use from the icon font.
       * If string is empty, a placeholder icon will be rendered the same width as an icon.
       */
-    var iconName: js.UndefOr[String] = js.native
+    var iconName: js.UndefOr[String] = js.undefined
   }
   object IFontIconProps {
     
@@ -87,45 +95,45 @@ object iconTypesMod {
     }
   }
   
-  @js.native
   trait IIconProps
-    extends HTMLAttributes[HTMLElement]
-       with IBaseProps[js.Any] {
+    extends StObject
+       with IBaseProps[js.Any]
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * The aria label of the icon for the benefit of screen readers.
       * @deprecated Use the native prop `aria-label`
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the icon to use from the icon font.
       * If string is empty, a placeholder icon will be rendered the same width as an icon.
       */
-    var iconName: js.UndefOr[String] = js.native
+    var iconName: js.UndefOr[String] = js.undefined
     
     /**
       * The type of icon to render (image or icon font).
       * @deprecated Inferred based on the presence of `imageProps`
       */
-    var iconType: js.UndefOr[IconType] = js.native
+    var iconType: js.UndefOr[IconType] = js.undefined
     
     /**
       * If rendering an image icon, this component will be rendered in the event that loading the image fails.
       */
-    var imageErrorAs: js.UndefOr[ComponentType[IImageProps]] = js.native
+    var imageErrorAs: js.UndefOr[ComponentType[IImageProps]] = js.undefined
     
     /**
       * If rendering an image icon, these props will be passed to the Image component.
       */
-    var imageProps: js.UndefOr[IImageProps] = js.native
+    var imageProps: js.UndefOr[IImageProps] = js.undefined
     
     /**
       * Gets the styles for an Icon.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IIconStyleProps, IIconStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IIconStyleProps, IIconStyles]] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IIconProps {
     
@@ -185,20 +193,19 @@ object iconTypesMod {
     }
   }
   
-  @js.native
   trait IIconStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var iconClassName: js.UndefOr[String] = js.native
+    var iconClassName: js.UndefOr[String] = js.undefined
     
-    var isImage: Boolean = js.native
+    var isImage: Boolean
     
-    var isPlaceholder: Boolean = js.native
+    var isPlaceholder: Boolean
     
-    var styles: js.UndefOr[PartialIIconStyles] = js.native
+    var styles: js.UndefOr[PartialIIconStyles] = js.undefined
     
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object IIconStyleProps {
     
@@ -243,16 +250,15 @@ object iconTypesMod {
     }
   }
   
-  @js.native
   trait IIconStyles extends StObject {
     
     /**
       * Deprecated. Use `root`.
       * @deprecated Use `root`.
       */
-    var imageContainer: js.UndefOr[IStyle] = js.native
+    var imageContainer: js.UndefOr[IStyle] = js.undefined
     
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IIconStyles {
     
@@ -285,13 +291,14 @@ object iconTypesMod {
     }
   }
   
-  @js.native
-  trait IImageIconProps extends HTMLAttributes[HTMLElement] {
+  trait IImageIconProps
+    extends StObject
+       with HTMLAttributes[HTMLElement] {
     
     /**
       * Props passed to the Image component.
       */
-    var imageProps: IImageProps = js.native
+    var imageProps: IImageProps
   }
   object IImageIconProps {
     

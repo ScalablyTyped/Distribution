@@ -2,15 +2,13 @@ package typings.wicgFileSystemAccess.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChooseFileSystemEntriesFileOptions extends StObject {
   
-  var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.native
+  var accepts: js.UndefOr[js.Array[ChooseFileSystemEntriesOptionsAccepts]] = js.undefined
   
-  var excludeAcceptAllOption: js.UndefOr[Boolean] = js.native
+  var excludeAcceptAllOption: js.UndefOr[Boolean] = js.undefined
 }
 object ChooseFileSystemEntriesFileOptions {
   

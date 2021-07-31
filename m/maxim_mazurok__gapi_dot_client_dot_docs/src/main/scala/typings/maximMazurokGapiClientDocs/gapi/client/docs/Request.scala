@@ -2,107 +2,105 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
   /** Creates a footer. */
-  var createFooter: js.UndefOr[CreateFooterRequest] = js.native
+  var createFooter: js.UndefOr[CreateFooterRequest] = js.undefined
   
   /** Creates a footnote. */
-  var createFootnote: js.UndefOr[CreateFootnoteRequest] = js.native
+  var createFootnote: js.UndefOr[CreateFootnoteRequest] = js.undefined
   
   /** Creates a header. */
-  var createHeader: js.UndefOr[CreateHeaderRequest] = js.native
+  var createHeader: js.UndefOr[CreateHeaderRequest] = js.undefined
   
   /** Creates a named range. */
-  var createNamedRange: js.UndefOr[CreateNamedRangeRequest] = js.native
+  var createNamedRange: js.UndefOr[CreateNamedRangeRequest] = js.undefined
   
   /** Creates bullets for paragraphs. */
-  var createParagraphBullets: js.UndefOr[CreateParagraphBulletsRequest] = js.native
+  var createParagraphBullets: js.UndefOr[CreateParagraphBulletsRequest] = js.undefined
   
   /** Deletes content from the document. */
-  var deleteContentRange: js.UndefOr[DeleteContentRangeRequest] = js.native
+  var deleteContentRange: js.UndefOr[DeleteContentRangeRequest] = js.undefined
   
   /** Deletes a footer from the document. */
-  var deleteFooter: js.UndefOr[DeleteFooterRequest] = js.native
+  var deleteFooter: js.UndefOr[DeleteFooterRequest] = js.undefined
   
   /** Deletes a header from the document. */
-  var deleteHeader: js.UndefOr[DeleteHeaderRequest] = js.native
+  var deleteHeader: js.UndefOr[DeleteHeaderRequest] = js.undefined
   
   /** Deletes a named range. */
-  var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.native
+  var deleteNamedRange: js.UndefOr[DeleteNamedRangeRequest] = js.undefined
   
   /** Deletes bullets from paragraphs. */
-  var deleteParagraphBullets: js.UndefOr[DeleteParagraphBulletsRequest] = js.native
+  var deleteParagraphBullets: js.UndefOr[DeleteParagraphBulletsRequest] = js.undefined
   
   /** Deletes a positioned object from the document. */
-  var deletePositionedObject: js.UndefOr[DeletePositionedObjectRequest] = js.native
+  var deletePositionedObject: js.UndefOr[DeletePositionedObjectRequest] = js.undefined
   
   /** Deletes a column from a table. */
-  var deleteTableColumn: js.UndefOr[DeleteTableColumnRequest] = js.native
+  var deleteTableColumn: js.UndefOr[DeleteTableColumnRequest] = js.undefined
   
   /** Deletes a row from a table. */
-  var deleteTableRow: js.UndefOr[DeleteTableRowRequest] = js.native
+  var deleteTableRow: js.UndefOr[DeleteTableRowRequest] = js.undefined
   
   /** Inserts an inline image at the specified location. */
-  var insertInlineImage: js.UndefOr[InsertInlineImageRequest] = js.native
+  var insertInlineImage: js.UndefOr[InsertInlineImageRequest] = js.undefined
   
   /** Inserts a page break at the specified location. */
-  var insertPageBreak: js.UndefOr[InsertPageBreakRequest] = js.native
+  var insertPageBreak: js.UndefOr[InsertPageBreakRequest] = js.undefined
   
   /** Inserts a section break at the specified location. */
-  var insertSectionBreak: js.UndefOr[InsertSectionBreakRequest] = js.native
+  var insertSectionBreak: js.UndefOr[InsertSectionBreakRequest] = js.undefined
   
   /** Inserts a table at the specified location. */
-  var insertTable: js.UndefOr[InsertTableRequest] = js.native
+  var insertTable: js.UndefOr[InsertTableRequest] = js.undefined
   
   /** Inserts an empty column into a table. */
-  var insertTableColumn: js.UndefOr[InsertTableColumnRequest] = js.native
+  var insertTableColumn: js.UndefOr[InsertTableColumnRequest] = js.undefined
   
   /** Inserts an empty row into a table. */
-  var insertTableRow: js.UndefOr[InsertTableRowRequest] = js.native
+  var insertTableRow: js.UndefOr[InsertTableRowRequest] = js.undefined
   
   /** Inserts text at the specified location. */
-  var insertText: js.UndefOr[InsertTextRequest] = js.native
+  var insertText: js.UndefOr[InsertTextRequest] = js.undefined
   
   /** Merges cells in a table. */
-  var mergeTableCells: js.UndefOr[MergeTableCellsRequest] = js.native
+  var mergeTableCells: js.UndefOr[MergeTableCellsRequest] = js.undefined
   
   /** Replaces all instances of the specified text. */
-  var replaceAllText: js.UndefOr[ReplaceAllTextRequest] = js.native
+  var replaceAllText: js.UndefOr[ReplaceAllTextRequest] = js.undefined
   
   /** Replaces an image in the document. */
-  var replaceImage: js.UndefOr[ReplaceImageRequest] = js.native
+  var replaceImage: js.UndefOr[ReplaceImageRequest] = js.undefined
   
   /** Replaces the content in a named range. */
-  var replaceNamedRangeContent: js.UndefOr[ReplaceNamedRangeContentRequest] = js.native
+  var replaceNamedRangeContent: js.UndefOr[ReplaceNamedRangeContentRequest] = js.undefined
   
   /** Unmerges cells in a table. */
-  var unmergeTableCells: js.UndefOr[UnmergeTableCellsRequest] = js.native
+  var unmergeTableCells: js.UndefOr[UnmergeTableCellsRequest] = js.undefined
   
   /** Updates the style of the document. */
-  var updateDocumentStyle: js.UndefOr[UpdateDocumentStyleRequest] = js.native
+  var updateDocumentStyle: js.UndefOr[UpdateDocumentStyleRequest] = js.undefined
   
   /** Updates the paragraph style at the specified range. */
-  var updateParagraphStyle: js.UndefOr[UpdateParagraphStyleRequest] = js.native
+  var updateParagraphStyle: js.UndefOr[UpdateParagraphStyleRequest] = js.undefined
   
   /** Updates the section style of the specified range. */
-  var updateSectionStyle: js.UndefOr[UpdateSectionStyleRequest] = js.native
+  var updateSectionStyle: js.UndefOr[UpdateSectionStyleRequest] = js.undefined
   
   /** Updates the style of table cells. */
-  var updateTableCellStyle: js.UndefOr[UpdateTableCellStyleRequest] = js.native
+  var updateTableCellStyle: js.UndefOr[UpdateTableCellStyleRequest] = js.undefined
   
   /** Updates the properties of columns in a table. */
-  var updateTableColumnProperties: js.UndefOr[UpdateTableColumnPropertiesRequest] = js.native
+  var updateTableColumnProperties: js.UndefOr[UpdateTableColumnPropertiesRequest] = js.undefined
   
   /** Updates the row style in a table. */
-  var updateTableRowStyle: js.UndefOr[UpdateTableRowStyleRequest] = js.native
+  var updateTableRowStyle: js.UndefOr[UpdateTableRowStyleRequest] = js.undefined
   
   /** Updates the text style at the specified range. */
-  var updateTextStyle: js.UndefOr[UpdateTextStyleRequest] = js.native
+  var updateTextStyle: js.UndefOr[UpdateTextStyleRequest] = js.undefined
 }
 object Request {
   

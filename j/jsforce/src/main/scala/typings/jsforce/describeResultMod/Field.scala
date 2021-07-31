@@ -3,121 +3,119 @@ package typings.jsforce.describeResultMod
 import typings.jsforce.jsforceBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Field extends StObject {
   
-  var aggregatable: Boolean = js.native
+  var aggregatable: Boolean
   
-  var autonumber: Boolean = js.native
+  var autonumber: Boolean
   
-  var byteLength: Double = js.native
+  var byteLength: Double
   
-  var calculated: Boolean = js.native
+  var calculated: Boolean
   
-  var calculatedFormula: js.UndefOr[maybe[String]] = js.native
+  var calculatedFormula: js.UndefOr[maybe[String]] = js.undefined
   
-  var cascadeDelete: Boolean = js.native
+  var cascadeDelete: Boolean
   
-  var caseSensitive: Boolean = js.native
+  var caseSensitive: Boolean
   
-  var compoundFieldName: js.UndefOr[maybe[String]] = js.native
+  var compoundFieldName: js.UndefOr[maybe[String]] = js.undefined
   
-  var controllerName: js.UndefOr[maybe[String]] = js.native
+  var controllerName: js.UndefOr[maybe[String]] = js.undefined
   
-  var createable: Boolean = js.native
+  var createable: Boolean
   
-  var custom: Boolean = js.native
+  var custom: Boolean
   
-  var defaultValue: js.UndefOr[maybe[String | Boolean]] = js.native
+  var defaultValue: js.UndefOr[maybe[String | Boolean]] = js.undefined
   
-  var defaultValueFormula: js.UndefOr[maybe[String]] = js.native
+  var defaultValueFormula: js.UndefOr[maybe[String]] = js.undefined
   
-  var defaultedOnCreate: Boolean = js.native
+  var defaultedOnCreate: Boolean
   
-  var dependentPicklist: Boolean = js.native
+  var dependentPicklist: Boolean
   
-  var deprecatedAndHidden: Boolean = js.native
+  var deprecatedAndHidden: Boolean
   
-  var digits: js.UndefOr[maybe[Double]] = js.native
+  var digits: js.UndefOr[maybe[Double]] = js.undefined
   
-  var displayLocationInDecimal: js.UndefOr[maybe[Boolean]] = js.native
+  var displayLocationInDecimal: js.UndefOr[maybe[Boolean]] = js.undefined
   
-  var encrypted: js.UndefOr[maybe[`true`]] = js.native
+  var encrypted: js.UndefOr[maybe[`true`]] = js.undefined
   
-  var externalId: Boolean = js.native
+  var externalId: Boolean
   
-  var extraTypeInfo: js.UndefOr[maybe[ExtraTypeInfo]] = js.native
+  var extraTypeInfo: js.UndefOr[maybe[ExtraTypeInfo]] = js.undefined
   
-  var filterable: Boolean = js.native
+  var filterable: Boolean
   
-  var filteredLookupInfo: js.UndefOr[maybe[FilteredLookupInfo]] = js.native
+  var filteredLookupInfo: js.UndefOr[maybe[FilteredLookupInfo]] = js.undefined
   
-  var formula: js.UndefOr[maybe[String]] = js.native
+  var formula: js.UndefOr[maybe[String]] = js.undefined
   
-  var groupable: Boolean = js.native
+  var groupable: Boolean
   
-  var highScaleNumber: js.UndefOr[maybe[Boolean]] = js.native
+  var highScaleNumber: js.UndefOr[maybe[Boolean]] = js.undefined
   
-  var htmlFormatted: Boolean = js.native
+  var htmlFormatted: Boolean
   
-  var idLookup: Boolean = js.native
+  var idLookup: Boolean
   
-  var inlineHelpText: js.UndefOr[maybe[String]] = js.native
+  var inlineHelpText: js.UndefOr[maybe[String]] = js.undefined
   
-  var label: String = js.native
+  var label: String
   
-  var length: Double = js.native
+  var length: Double
   
-  var mask: js.UndefOr[maybe[String]] = js.native
+  var mask: js.UndefOr[maybe[String]] = js.undefined
   
-  var maskType: js.UndefOr[maybe[String]] = js.native
+  var maskType: js.UndefOr[maybe[String]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var nameField: Boolean = js.native
+  var nameField: Boolean
   
-  var namePointing: Boolean = js.native
+  var namePointing: Boolean
   
-  var nillable: Boolean = js.native
+  var nillable: Boolean
   
-  var permissionable: Boolean = js.native
+  var permissionable: Boolean
   
-  var picklistValues: js.UndefOr[maybe[js.Array[PicklistEntry]]] = js.native
+  var picklistValues: js.UndefOr[maybe[js.Array[PicklistEntry]]] = js.undefined
   
-  var polymorphicForeignKey: Boolean = js.native
+  var polymorphicForeignKey: Boolean
   
-  var precision: js.UndefOr[maybe[Double]] = js.native
+  var precision: js.UndefOr[maybe[Double]] = js.undefined
   
-  var queryByDistance: Boolean = js.native
+  var queryByDistance: Boolean
   
-  var referenceTargetField: js.UndefOr[maybe[String]] = js.native
+  var referenceTargetField: js.UndefOr[maybe[String]] = js.undefined
   
-  var referenceTo: js.UndefOr[maybe[js.Array[String]]] = js.native
+  var referenceTo: js.UndefOr[maybe[js.Array[String]]] = js.undefined
   
-  var relationshipName: js.UndefOr[maybe[String]] = js.native
+  var relationshipName: js.UndefOr[maybe[String]] = js.undefined
   
-  var relationshipOrder: js.UndefOr[maybe[Double]] = js.native
+  var relationshipOrder: js.UndefOr[maybe[Double]] = js.undefined
   
-  var restrictedPicklist: Boolean = js.native
+  var restrictedPicklist: Boolean
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var searchPrefilterable: Boolean = js.native
+  var searchPrefilterable: Boolean
   
-  var soapType: SOAPType = js.native
+  var soapType: SOAPType
   
-  var sortable: Boolean = js.native
+  var sortable: Boolean
   
-  var `type`: FieldType = js.native
+  var `type`: FieldType
   
-  var unique: Boolean = js.native
+  var unique: Boolean
   
-  var updateable: Boolean = js.native
+  var updateable: Boolean
   
-  var writeRequiresMasterRead: js.UndefOr[maybe[Boolean]] = js.native
+  var writeRequiresMasterRead: js.UndefOr[maybe[Boolean]] = js.undefined
 }
 object Field {
   

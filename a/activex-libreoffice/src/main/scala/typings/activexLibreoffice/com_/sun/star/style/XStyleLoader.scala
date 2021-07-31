@@ -7,18 +7,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** enables the object to import styles from documents. */
-@js.native
-trait XStyleLoader extends XInterface {
+trait XStyleLoader
+  extends StObject
+     with XInterface {
   
   /** @returns a sequence of the supported properties as declared in {@link XStyleLoader.loadStylesFromURL()} with their current values. */
-  val StyleLoaderOptions: SafeArray[PropertyValue] = js.native
+  val StyleLoaderOptions: SafeArray[PropertyValue]
   
   /** @returns a sequence of the supported properties as declared in {@link XStyleLoader.loadStylesFromURL()} with their current values. */
-  def getStyleLoaderOptions(): SafeArray[PropertyValue] = js.native
+  def getStyleLoaderOptions(): SafeArray[PropertyValue]
   
   /**
     * loads styles from a document at the given URL.
@@ -27,7 +27,7 @@ trait XStyleLoader extends XInterface {
     * @param URL The directory and the filename from document with the styles
     * @param aOptions Specifies which of the {@link Style} families the method should load. The `sequence<PropertyValue>` has the following, optional items: b
     */
-  def loadStylesFromURL(URL: String, aOptions: SeqEquiv[PropertyValue]): Unit = js.native
+  def loadStylesFromURL(URL: String, aOptions: SeqEquiv[PropertyValue]): Unit
 }
 object XStyleLoader {
   

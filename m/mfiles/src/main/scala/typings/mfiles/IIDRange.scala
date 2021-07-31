@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IIDRange extends StObject {
   
-  def Clone(): IIDRange = js.native
+  def Clone(): IIDRange
   
-  var MaxID: Double = js.native
+  var MaxID: Double
   
-  var MaxID_32bit: String = js.native
+  var MaxID_32bit: String
   
-  var MinID: Double = js.native
+  var MinID: Double
   
-  var MinID_32bit: String = js.native
+  var MinID_32bit: String
   
-  def SetIDs(MinID: Double, MaxID: Double): Unit = js.native
+  def SetIDs(MinID: Double, MaxID: Double): Unit
   
-  def SetIDs_32bit(MinID: String, MaxID: String): Unit = js.native
+  def SetIDs_32bit(MinID: String, MaxID: String): Unit
 }
 object IIDRange {
   

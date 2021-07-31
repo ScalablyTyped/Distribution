@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetMaintenancePolicyRequest extends StObject {
   
   /** Required. The name of the cluster to update. */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /** Required. The maintenance policy to be set for the cluster. An empty field clears the existing maintenance policy. */
-  var maintenancePolicy: js.UndefOr[MaintenancePolicy] = js.native
+  var maintenancePolicy: js.UndefOr[MaintenancePolicy] = js.undefined
   
   /** The name (project, location, cluster id) of the cluster to set maintenance policy. Specified in the format `projects/∗/locations/∗/clusters/ *`. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. The Google Developers Console [project ID or project number](https://support.google.com/cloud/answer/6158840). */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the Google Compute Engine [zone](https://cloud.google.com/compute/docs/zones#available) in which the cluster resides. */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SetMaintenancePolicyRequest {
   

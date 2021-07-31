@@ -3,122 +3,120 @@ package typings.reactNativeNavigation.optionsMod
 import typings.reactNative.mod.Insets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsBottomTab extends StObject {
   
   /**
     * Show the badge with the animation.
     * #### (Android specific)
     */
-  var animateBadge: js.UndefOr[Boolean] = js.native
+  var animateBadge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the text in a badge that is overlayed over the component
     */
-  var badge: js.UndefOr[String] = js.native
+  var badge: js.UndefOr[String] = js.undefined
   
   /**
     * Set the background color of the badge that is overlayed over the component
     */
-  var badgeColor: js.UndefOr[String] = js.native
+  var badgeColor: js.UndefOr[String] = js.undefined
   
   /**
     * Set true if you want to disable the icon tinting
     * #### (iOS specific)
     */
-  var disableIconTint: js.UndefOr[Boolean] = js.native
+  var disableIconTint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set true if you want to disable the text tinting
     * #### (iOS specific)
     */
-  var disableSelectedIconTint: js.UndefOr[Boolean] = js.native
+  var disableSelectedIconTint: js.UndefOr[Boolean] = js.undefined
   
-  var dotIndicator: js.UndefOr[DotIndicatorOptions] = js.native
+  var dotIndicator: js.UndefOr[DotIndicatorOptions] = js.undefined
   
   /**
     * Set the font family for the tab's text
     */
-  var fontFamily: js.UndefOr[FontFamily] = js.native
+  var fontFamily: js.UndefOr[FontFamily] = js.undefined
   
   /**
     * Set the text font size
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the font style for the tab's text
     */
-  var fontStyle: js.UndefOr[FontStyle] = js.native
+  var fontStyle: js.UndefOr[FontStyle] = js.undefined
   
   /**
     * Specifies font weight. The values 'normal' and 'bold' are supported
     * for most fonts. Not all fonts have a variant for each of the numeric
     * values, in that case the closest one is chosen.
     */
-  var fontWeight: js.UndefOr[FontWeight] = js.native
+  var fontWeight: js.UndefOr[FontWeight] = js.undefined
   
   /**
     * Set the tab icon
     */
-  var icon: js.UndefOr[ImageResource] = js.native
+  var icon: js.UndefOr[ImageResource] = js.undefined
   
   /**
     * Set the icon tint
     */
-  var iconColor: js.UndefOr[Color] = js.native
+  var iconColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the insets of the icon
     * #### (iOS specific)
     */
-  var iconInsets: js.UndefOr[Insets] = js.native
+  var iconInsets: js.UndefOr[Insets] = js.undefined
   
   /**
     * If it's set to false, pressing a tab won't select the tab
     * instead it will emit a bottomTabPressedEvent
     */
-  var selectTabOnPress: js.UndefOr[Boolean] = js.native
+  var selectTabOnPress: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set the font size for selected tabs
     * #### (Android specific)
     */
-  var selectedFontSize: js.UndefOr[Double] = js.native
+  var selectedFontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Set selected icon image
     * #### (iOS specific)
     */
-  var selectedIcon: js.UndefOr[ImageResource] = js.native
+  var selectedIcon: js.UndefOr[ImageResource] = js.undefined
   
   /**
     * Set the selected icon tint
     */
-  var selectedIconColor: js.UndefOr[Color] = js.native
+  var selectedIconColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Set the selected text color
     */
-  var selectedTextColor: js.UndefOr[Color] = js.native
+  var selectedTextColor: js.UndefOr[Color] = js.undefined
   
   /**
     * Set a testID to reference the tab in E2E tests
     */
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
   /**
     * Set the text to display below the icon
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * Set the text color
     */
-  var textColor: js.UndefOr[Color] = js.native
+  var textColor: js.UndefOr[Color] = js.undefined
 }
 object OptionsBottomTab {
   

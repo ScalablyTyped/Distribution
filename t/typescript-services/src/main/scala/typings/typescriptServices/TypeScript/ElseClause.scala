@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElseClause extends AST {
+trait ElseClause
+  extends StObject
+     with AST {
   
-  var statement: AST = js.native
+  var statement: AST
   
-  def structuralEquals(ast: ElseClause, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ElseClause, includingPosition: Boolean): Boolean
 }
 object ElseClause {
   

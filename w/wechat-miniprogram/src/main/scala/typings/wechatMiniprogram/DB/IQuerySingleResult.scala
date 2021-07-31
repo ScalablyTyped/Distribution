@@ -3,13 +3,13 @@ package typings.wechatMiniprogram.DB
 import typings.wechatMiniprogram.IAPISuccessParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IQuerySingleResult extends IAPISuccessParam {
+trait IQuerySingleResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var data: IDocumentData = js.native
+  var data: IDocumentData
 }
 object IQuerySingleResult {
   

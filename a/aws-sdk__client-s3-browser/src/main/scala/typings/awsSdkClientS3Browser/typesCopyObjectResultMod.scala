@@ -3,23 +3,21 @@ package typings.awsSdkClientS3Browser
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCopyObjectResultMod {
   
-  @js.native
   trait CopyObjectResult extends StObject {
     
     /**
       * _ETag shape
       */
-    var ETag: js.UndefOr[String] = js.native
+    var ETag: js.UndefOr[String] = js.undefined
     
     /**
       * _LastModified shape
       */
-    var LastModified: js.UndefOr[Date | String | Double] = js.native
+    var LastModified: js.UndefOr[Date | String | Double] = js.undefined
   }
   object CopyObjectResult {
     
@@ -46,14 +44,15 @@ object typesCopyObjectResultMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledCopyObjectResult extends CopyObjectResult {
+  trait UnmarshalledCopyObjectResult
+    extends StObject
+       with CopyObjectResult {
     
     /**
       * _LastModified shape
       */
     @JSName("LastModified")
-    var LastModified_UnmarshalledCopyObjectResult: js.UndefOr[Date] = js.native
+    var LastModified_UnmarshalledCopyObjectResult: js.UndefOr[Date] = js.undefined
   }
   object UnmarshalledCopyObjectResult {
     

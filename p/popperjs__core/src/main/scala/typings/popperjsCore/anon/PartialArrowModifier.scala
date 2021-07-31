@@ -9,30 +9,30 @@ import typings.popperjsCore.typesMod.State
 import typings.popperjsCore.typesMod.StrictModifiers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/arrow.ArrowModifier> */
-@js.native
-trait PartialArrowModifier extends StrictModifiers {
+trait PartialArrowModifier
+  extends StObject
+     with StrictModifiers {
   
-  var data: js.UndefOr[Obj] = js.native
+  var data: js.UndefOr[Obj] = js.undefined
   
-  var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[Options], js.Function0[Unit] | Unit]] = js.native
+  var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[Options], js.Function0[Unit] | Unit]] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var fn: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[Options], State | Unit]] = js.native
+  var fn: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[Options], State | Unit]] = js.undefined
   
-  var name: js.UndefOr[arrow] = js.native
+  var name: js.UndefOr[arrow] = js.undefined
   
-  var options: js.UndefOr[PartialOptionsElement] = js.native
+  var options: js.UndefOr[PartialOptionsElement] = js.undefined
   
-  var phase: js.UndefOr[ModifierPhases_] = js.native
+  var phase: js.UndefOr[ModifierPhases_] = js.undefined
   
-  var requires: js.UndefOr[js.Array[String]] = js.native
+  var requires: js.UndefOr[js.Array[String]] = js.undefined
   
-  var requiresIfExists: js.UndefOr[js.Array[String]] = js.native
+  var requiresIfExists: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PartialArrowModifier {
   

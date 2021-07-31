@@ -6,7 +6,6 @@ import typings.react.mod.ReactNode
 import typings.reactVirtualized.anon.Children
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esColumnSizerMod {
@@ -36,9 +35,9 @@ object esColumnSizerMod {
     def propTypes_=(x: Children): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ColumnSizerProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -56,19 +55,19 @@ object esColumnSizerMod {
       * The :registerChild should be passed to the Grid's :ref property.
       * The :adjustedWidth property is optional; it reflects the lesser of the overall width or the width of all columns.
       */
-    def children(props: SizedColumnProps): ReactNode = js.native
+    def children(props: SizedColumnProps): ReactNode
     
     /** Number of columns in Grid or Table child */
-    var columnCount: js.UndefOr[Double] = js.native
+    var columnCount: js.UndefOr[Double] = js.undefined
     
     /** Optional maximum allowed column width */
-    var columnMaxWidth: js.UndefOr[Double] = js.native
+    var columnMaxWidth: js.UndefOr[Double] = js.undefined
     
     /** Optional minimum allowed column width */
-    var columnMinWidth: js.UndefOr[Double] = js.native
+    var columnMinWidth: js.UndefOr[Double] = js.undefined
     
     /** Width of Grid or Table child */
-    var width: Double = js.native
+    var width: Double
   }
   object ColumnSizerProps {
     
@@ -107,16 +106,15 @@ object esColumnSizerMod {
     }
   }
   
-  @js.native
   trait SizedColumnProps extends StObject {
     
-    var adjustedWidth: Double = js.native
+    var adjustedWidth: Double
     
-    var columnWidth: Double = js.native
+    var columnWidth: Double
     
-    def getColumnWidth(): Double = js.native
+    def getColumnWidth(): Double
     
-    var registerChild: js.Any = js.native
+    var registerChild: js.Any
   }
   object SizedColumnProps {
     

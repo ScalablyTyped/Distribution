@@ -3,19 +3,17 @@ package typings.cesium.anon
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DashLength extends StObject {
   
-  var color: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var color: js.UndefOr[typings.cesium.mod.Color] = js.undefined
   
-  var dashLength: js.UndefOr[Property] = js.native
+  var dashLength: js.UndefOr[Property] = js.undefined
   
-  var dashPattern: js.UndefOr[Property] = js.native
+  var dashPattern: js.UndefOr[Property] = js.undefined
   
-  var gapColor: js.UndefOr[typings.cesium.mod.Color] = js.native
+  var gapColor: js.UndefOr[typings.cesium.mod.Color] = js.undefined
 }
 object DashLength {
   

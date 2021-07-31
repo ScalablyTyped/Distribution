@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgPivotViewPivotGridOptionsLevelSortDirection
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,13 +15,13 @@ trait IgPivotViewPivotGridOptionsLevelSortDirection
   /**
     * Specifies the unique name of the level, which will be sorted.
     */
-  var levelUniqueName: js.UndefOr[String] = js.native
+  var levelUniqueName: js.UndefOr[String] = js.undefined
   
   /**
     * optional="true" Specifies the sort direction. If no direction is specified,the level is going to be sorted in the direction specified by the firstLevelSortDirection option.
     *
     */
-  var sortDirection: js.UndefOr[js.Any] = js.native
+  var sortDirection: js.UndefOr[js.Any] = js.undefined
 }
 object IgPivotViewPivotGridOptionsLevelSortDirection {
   

@@ -16,7 +16,6 @@ import typings.stripeV3.stripeV3Strings.light
 import typings.stripeV3.stripeV3Strings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Container for all elements related types
@@ -50,24 +49,23 @@ object elements {
     def update(options: ElementsOptions): Unit = js.native
   }
   
-  @js.native
   trait ElementChangeResponse extends StObject {
     
-    var bankName: js.UndefOr[String] = js.native
+    var bankName: js.UndefOr[String] = js.undefined
     
-    var brand: String = js.native
+    var brand: String
     
-    var complete: Boolean = js.native
+    var complete: Boolean
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var elementType: String = js.native
+    var elementType: String
     
-    var empty: Boolean = js.native
+    var empty: Boolean
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var value: js.UndefOr[PostalCode | String] = js.native
+    var value: js.UndefOr[PostalCode | String] = js.undefined
   }
   object ElementChangeResponse {
     
@@ -118,12 +116,11 @@ object elements {
     }
   }
   
-  @js.native
   trait ElementOptions extends StObject {
     
-    var fonts: js.UndefOr[js.Array[Font]] = js.native
+    var fonts: js.UndefOr[js.Array[Font]] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
   }
   object ElementOptions {
     
@@ -162,12 +159,11 @@ object elements {
     def getElement(`type`: elementsType): Element | Null = js.native
   }
   
-  @js.native
   trait ElementsCreateOptions extends StObject {
     
-    var fonts: js.UndefOr[js.Array[Font]] = js.native
+    var fonts: js.UndefOr[js.Array[Font]] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
   }
   object ElementsCreateOptions {
     
@@ -197,32 +193,31 @@ object elements {
     }
   }
   
-  @js.native
   trait ElementsOptions extends StObject {
     
-    var classes: js.UndefOr[Base] = js.native
+    var classes: js.UndefOr[Base] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var hideIcon: js.UndefOr[Boolean] = js.native
+    var hideIcon: js.UndefOr[Boolean] = js.undefined
     
-    var hidePostalCode: js.UndefOr[Boolean] = js.native
+    var hidePostalCode: js.UndefOr[Boolean] = js.undefined
     
-    var iconStyle: js.UndefOr[solid | default] = js.native
+    var iconStyle: js.UndefOr[solid | default] = js.undefined
     
-    var paymentRequest: js.UndefOr[StripePaymentRequest] = js.native
+    var paymentRequest: js.UndefOr[StripePaymentRequest] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var placeholderCountry: js.UndefOr[String] = js.native
+    var placeholderCountry: js.UndefOr[String] = js.undefined
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[Complete] = js.native
+    var style: js.UndefOr[Complete] = js.undefined
     
-    var supportedCountries: js.UndefOr[js.Array[String]] = js.native
+    var supportedCountries: js.UndefOr[js.Array[String]] = js.undefined
     
-    var value: js.UndefOr[String | StringDictionary[String]] = js.native
+    var value: js.UndefOr[String | StringDictionary[String]] = js.undefined
   }
   object ElementsOptions {
     
@@ -312,22 +307,21 @@ object elements {
     }
   }
   
-  @js.native
   trait Font extends StObject {
     
-    var cssSrc: js.UndefOr[String] = js.native
+    var cssSrc: js.UndefOr[String] = js.undefined
     
-    var display: js.UndefOr[String] = js.native
+    var display: js.UndefOr[String] = js.undefined
     
-    var family: js.UndefOr[String] = js.native
+    var family: js.UndefOr[String] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var unicodeRange: js.UndefOr[String] = js.native
+    var unicodeRange: js.UndefOr[String] = js.undefined
     
-    var weight: js.UndefOr[String] = js.native
+    var weight: js.UndefOr[String] = js.undefined
   }
   object Font {
     
@@ -384,14 +378,13 @@ object elements {
     }
   }
   
-  @js.native
   trait PaymentRequestButtonStyleOptions extends StObject {
     
-    var height: String = js.native
+    var height: String
     
-    var theme: dark | light | `light-outline` = js.native
+    var theme: dark | light | `light-outline`
     
-    var `type`: js.UndefOr[default | donate | buy] = js.native
+    var `type`: js.UndefOr[default | donate | buy] = js.undefined
   }
   object PaymentRequestButtonStyleOptions {
     
@@ -418,29 +411,30 @@ object elements {
     }
   }
   
-  @js.native
-  trait Style extends StyleOptions {
+  trait Style
+    extends StObject
+       with StyleOptions {
     
     @JSName(":-webkit-autofill")
-    var `Colon-webkit-autofill`: js.UndefOr[StyleOptions] = js.native
+    var `Colon-webkit-autofill`: js.UndefOr[StyleOptions] = js.undefined
     
     @JSName("::-ms-clear")
-    var `ColonColon-ms-clear`: js.UndefOr[StyleOptions] = js.native
+    var `ColonColon-ms-clear`: js.UndefOr[StyleOptions] = js.undefined
     
     @JSName("::placeholder")
-    var ColonColonplaceholder: js.UndefOr[StyleOptions] = js.native
+    var ColonColonplaceholder: js.UndefOr[StyleOptions] = js.undefined
     
     @JSName("::selection")
-    var ColonColonselection: js.UndefOr[StyleOptions] = js.native
+    var ColonColonselection: js.UndefOr[StyleOptions] = js.undefined
     
     @JSName(":disabled")
-    var Colondisabled: js.UndefOr[StyleOptions] = js.native
+    var Colondisabled: js.UndefOr[StyleOptions] = js.undefined
     
     @JSName(":focus")
-    var Colonfocus: js.UndefOr[StyleOptions] = js.native
+    var Colonfocus: js.UndefOr[StyleOptions] = js.undefined
     
     @JSName(":hover")
-    var Colonhover: js.UndefOr[StyleOptions] = js.native
+    var Colonhover: js.UndefOr[StyleOptions] = js.undefined
   }
   object Style {
     
@@ -497,38 +491,37 @@ object elements {
     }
   }
   
-  @js.native
   trait StyleOptions extends StObject {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontSize: js.UndefOr[String] = js.native
+    var fontSize: js.UndefOr[String] = js.undefined
     
-    var fontSmoothing: js.UndefOr[String] = js.native
+    var fontSmoothing: js.UndefOr[String] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var fontVariant: js.UndefOr[String] = js.native
+    var fontVariant: js.UndefOr[String] = js.undefined
     
-    var fontWeight: js.UndefOr[String | Double] = js.native
+    var fontWeight: js.UndefOr[String | Double] = js.undefined
     
-    var iconColor: js.UndefOr[String] = js.native
+    var iconColor: js.UndefOr[String] = js.undefined
     
-    var letterSpacing: js.UndefOr[String] = js.native
+    var letterSpacing: js.UndefOr[String] = js.undefined
     
-    var lineHeight: js.UndefOr[String] = js.native
+    var lineHeight: js.UndefOr[String] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var textDecoration: js.UndefOr[String] = js.native
+    var textDecoration: js.UndefOr[String] = js.undefined
     
-    var textShadow: js.UndefOr[String] = js.native
+    var textShadow: js.UndefOr[String] = js.undefined
     
-    var textTransform: js.UndefOr[String] = js.native
+    var textTransform: js.UndefOr[String] = js.undefined
   }
   object StyleOptions {
     

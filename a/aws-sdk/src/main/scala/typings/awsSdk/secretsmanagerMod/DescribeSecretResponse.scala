@@ -2,86 +2,84 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSecretResponse extends StObject {
   
   /**
     * The ARN of the secret.
     */
-  var ARN: js.UndefOr[SecretARNType] = js.native
+  var ARN: js.UndefOr[SecretARNType] = js.undefined
   
   /**
     * The date that the secret was created.
     */
-  var CreatedDate: js.UndefOr[TimestampType] = js.native
+  var CreatedDate: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * This value exists if the secret is scheduled for deletion. Some time after the specified date and time, Secrets Manager deletes the secret and all of its versions. If a secret is scheduled for deletion, then its details, including the encrypted secret information, is not accessible. To cancel a scheduled deletion and restore access, use RestoreSecret.
     */
-  var DeletedDate: js.UndefOr[DeletedDateType] = js.native
+  var DeletedDate: js.UndefOr[DeletedDateType] = js.undefined
   
   /**
     * The user-provided description of the secret.
     */
-  var Description: js.UndefOr[DescriptionType] = js.native
+  var Description: js.UndefOr[DescriptionType] = js.undefined
   
   /**
     * The ARN or alias of the AWS KMS customer master key (CMK) that's used to encrypt the SecretString or SecretBinary fields in each version of the secret. If you don't provide a key, then Secrets Manager defaults to encrypting the secret fields with the default AWS KMS CMK (the one named awssecretsmanager) for this account.
     */
-  var KmsKeyId: js.UndefOr[KmsKeyIdType] = js.native
+  var KmsKeyId: js.UndefOr[KmsKeyIdType] = js.undefined
   
   /**
     * The last date that this secret was accessed. This value is truncated to midnight of the date and therefore shows only the date, not the time.
     */
-  var LastAccessedDate: js.UndefOr[LastAccessedDateType] = js.native
+  var LastAccessedDate: js.UndefOr[LastAccessedDateType] = js.undefined
   
   /**
     * The last date and time that this secret was modified in any way.
     */
-  var LastChangedDate: js.UndefOr[LastChangedDateType] = js.native
+  var LastChangedDate: js.UndefOr[LastChangedDateType] = js.undefined
   
   /**
     * The most recent date and time that the Secrets Manager rotation process was successfully completed. This value is null if the secret has never rotated.
     */
-  var LastRotatedDate: js.UndefOr[LastRotatedDateType] = js.native
+  var LastRotatedDate: js.UndefOr[LastRotatedDateType] = js.undefined
   
   /**
     * The user-provided friendly name of the secret.
     */
-  var Name: js.UndefOr[SecretNameType] = js.native
+  var Name: js.UndefOr[SecretNameType] = js.undefined
   
   /**
     * Returns the name of the service that created this secret.
     */
-  var OwningService: js.UndefOr[OwningServiceType] = js.native
+  var OwningService: js.UndefOr[OwningServiceType] = js.undefined
   
   /**
     * Specifies whether automatic rotation is enabled for this secret. To enable rotation, use RotateSecret with AutomaticallyRotateAfterDays set to a value greater than 0. To disable rotation, use CancelRotateSecret.
     */
-  var RotationEnabled: js.UndefOr[RotationEnabledType] = js.native
+  var RotationEnabled: js.UndefOr[RotationEnabledType] = js.undefined
   
   /**
     * The ARN of a Lambda function that's invoked by Secrets Manager to rotate the secret either automatically per the schedule or manually by a call to RotateSecret.
     */
-  var RotationLambdaARN: js.UndefOr[RotationLambdaARNType] = js.native
+  var RotationLambdaARN: js.UndefOr[RotationLambdaARNType] = js.undefined
   
   /**
     * A structure that contains the rotation configuration for this secret.
     */
-  var RotationRules: js.UndefOr[RotationRulesType] = js.native
+  var RotationRules: js.UndefOr[RotationRulesType] = js.undefined
   
   /**
     * The list of user-defined tags that are associated with the secret. To add tags to a secret, use TagResource. To remove tags, use UntagResource.
     */
-  var Tags: js.UndefOr[TagListType] = js.native
+  var Tags: js.UndefOr[TagListType] = js.undefined
   
   /**
     * A list of all of the currently assigned VersionStage staging labels and the VersionId that each is attached to. Staging labels are used to keep track of the different versions during the rotation process.  A version that does not have any staging labels attached is considered deprecated and subject to deletion. Such versions are not included in this list. 
     */
-  var VersionIdsToStages: js.UndefOr[SecretVersionsToStagesMapType] = js.native
+  var VersionIdsToStages: js.UndefOr[SecretVersionsToStagesMapType] = js.undefined
 }
 object DescribeSecretResponse {
   

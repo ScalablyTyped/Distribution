@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SparklineZoomEndEvent extends SparklineEvent {
+trait SparklineZoomEndEvent
+  extends StObject
+     with SparklineEvent {
   
-  var axisRanges: js.UndefOr[js.Any] = js.native
+  var axisRanges: js.UndefOr[js.Any] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
 }
 object SparklineZoomEndEvent {
   

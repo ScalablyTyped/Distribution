@@ -2,21 +2,19 @@ package typings.viewportMercatorProject.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectionParameters extends StObject {
   
-  var aspect: Double = js.native
+  var aspect: Double
   
-  var far: Double = js.native
+  var far: Double
   
-  var focalDistance: Double = js.native
+  var focalDistance: Double
   
-  var fov: Double = js.native
+  var fov: Double
   
-  var near: Double = js.native
+  var near: Double
 }
 object ProjectionParameters {
   

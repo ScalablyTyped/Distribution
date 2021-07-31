@@ -2,15 +2,13 @@ package typings.flexmonster.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Handler extends StObject {
   
-  var handler: js.UndefOr[js.Function0[Unit]] = js.native
+  var handler: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var label: String = js.native
+  var label: String
 }
 object Handler {
   

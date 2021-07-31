@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,42 +14,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *     var item = form.addTextItem();
   *     item.setTitle('What is your name?');
   */
-@js.native
 trait TextItem extends StObject {
   
-  def clearValidation(): TextItem = js.native
+  def clearValidation(): TextItem
   
-  def createResponse(response: String): ItemResponse = js.native
+  def createResponse(response: String): ItemResponse
   
-  def duplicate(): TextItem = js.native
+  def duplicate(): TextItem
   
-  def getGeneralFeedback(): QuizFeedback = js.native
+  def getGeneralFeedback(): QuizFeedback
   
-  def getHelpText(): String = js.native
+  def getHelpText(): String
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getIndex(): Integer = js.native
+  def getIndex(): Integer
   
-  def getPoints(): Integer = js.native
+  def getPoints(): Integer
   
-  def getTitle(): String = js.native
+  def getTitle(): String
   
-  def getType(): ItemType = js.native
+  def getType(): ItemType
   
-  def isRequired(): Boolean = js.native
+  def isRequired(): Boolean
   
-  def setGeneralFeedback(feedback: QuizFeedback): TextItem = js.native
+  def setGeneralFeedback(feedback: QuizFeedback): TextItem
   
-  def setHelpText(text: String): TextItem = js.native
+  def setHelpText(text: String): TextItem
   
-  def setPoints(points: Integer): TextItem = js.native
+  def setPoints(points: Integer): TextItem
   
-  def setRequired(enabled: Boolean): TextItem = js.native
+  def setRequired(enabled: Boolean): TextItem
   
-  def setTitle(title: String): TextItem = js.native
+  def setTitle(title: String): TextItem
   
-  def setValidation(validation: TextValidation): TextItem = js.native
+  def setValidation(validation: TextValidation): TextItem
 }
 object TextItem {
   

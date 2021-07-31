@@ -2,16 +2,14 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetRuleGroupResponse extends StObject {
   
   /**
     * Information about the RuleGroup that you specified in the GetRuleGroup request. 
     */
-  var RuleGroup: js.UndefOr[typings.awsSdk.wafregionalMod.RuleGroup] = js.native
+  var RuleGroup: js.UndefOr[typings.awsSdk.wafregionalMod.RuleGroup] = js.undefined
 }
 object GetRuleGroupResponse {
   

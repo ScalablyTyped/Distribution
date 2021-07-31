@@ -2,14 +2,12 @@ package typings.ava.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SnapshotOptions extends StObject {
   
   /** If provided and not an empty string, used to select the snapshot to compare the `expected` value against. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SnapshotOptions {
   

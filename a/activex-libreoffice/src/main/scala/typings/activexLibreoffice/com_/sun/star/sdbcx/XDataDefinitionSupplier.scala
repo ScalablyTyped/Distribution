@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.sdbc.XConnection
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides the access to data definition beans from a connected database. */
-@js.native
-trait XDataDefinitionSupplier extends XInterface {
+trait XDataDefinitionSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns at least the container of tables related to the given connection.
@@ -20,7 +20,7 @@ trait XDataDefinitionSupplier extends XInterface {
     * @returns the container
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getDataDefinitionByConnection(connection: XConnection): XTablesSupplier = js.native
+  def getDataDefinitionByConnection(connection: XConnection): XTablesSupplier
   
   /**
     * returns at least the container of tables related to the given Database URL.
@@ -29,7 +29,7 @@ trait XDataDefinitionSupplier extends XInterface {
     * @returns the container
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def getDataDefinitionByURL(url: String, info: SeqEquiv[PropertyValue]): XTablesSupplier = js.native
+  def getDataDefinitionByURL(url: String, info: SeqEquiv[PropertyValue]): XTablesSupplier
 }
 object XDataDefinitionSupplier {
   

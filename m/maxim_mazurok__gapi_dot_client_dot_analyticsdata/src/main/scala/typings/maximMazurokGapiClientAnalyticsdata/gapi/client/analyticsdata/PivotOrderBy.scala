@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotOrderBy extends StObject {
   
   /** In the response to order by, order rows by this column. Must be a metric name from the request. */
-  var metricName: js.UndefOr[String] = js.native
+  var metricName: js.UndefOr[String] = js.undefined
   
   /**
     * Used to select a dimension name and value pivot. If multiple pivot selections are given, the sort occurs on rows where all pivot selection dimension name and value pairs match the
     * row's dimension name and value pair.
     */
-  var pivotSelections: js.UndefOr[js.Array[PivotSelection]] = js.native
+  var pivotSelections: js.UndefOr[js.Array[PivotSelection]] = js.undefined
 }
 object PivotOrderBy {
   

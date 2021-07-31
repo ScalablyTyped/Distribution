@@ -4,14 +4,15 @@ import typings.std.IterableIterator
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@ungap/url-search-params", JSImport.Namespace)
   @js.native
-  class ^ () extends URLSearchParams {
+  class ^ ()
+    extends StObject
+       with URLSearchParams {
     def this(init: String) = this()
     def this(init: js.Array[js.Array[String]]) = this()
     def this(init: Record[String, String]) = this()

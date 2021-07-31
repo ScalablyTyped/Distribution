@@ -2,23 +2,23 @@ package typings.lodash.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Primitive[T]
-  extends LoDashImplicitWrapper[T]
+  extends StObject
+     with LoDashImplicitWrapper[T]
      with _ImpChain[T] {
   
   /**
     * @see _.after
     */
-  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc): Function[TFunc] = js.native
+  def after[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc): Function[TFunc] = js.native
   
   /**
     * @see _.before
     */
-  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, _] */](func: TFunc): Function[TFunc] = js.native
+  def before[TFunc /* <: js.Function1[/* repeated */ js.Any, js.Any] */](func: TFunc): Function[TFunc] = js.native
   
   /**
     * @see _.castArray

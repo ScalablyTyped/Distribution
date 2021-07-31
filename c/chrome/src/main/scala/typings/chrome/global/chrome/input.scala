@@ -25,7 +25,6 @@ import typings.chrome.chrome.input.ime.SendKeyEventParameters
 import typings.chrome.chrome.input.ime.SurroundingTextChangedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object input {
@@ -44,34 +43,26 @@ object input {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSGlobal("chrome.input.ime.clearComposition")
-    @js.native
-    def clearComposition(parameters: ClearCompositionParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.clearComposition")
-    @js.native
-    def clearComposition(parameters: ClearCompositionParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def clearComposition(parameters: ClearCompositionParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clearComposition")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def clearComposition(parameters: ClearCompositionParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearComposition")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.commitText")
-    @js.native
-    def commitText(parameters: CommitTextParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.commitText")
-    @js.native
-    def commitText(parameters: CommitTextParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def commitText(parameters: CommitTextParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("commitText")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def commitText(parameters: CommitTextParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("commitText")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.deleteSurroundingText")
-    @js.native
-    def deleteSurroundingText(parameters: DeleteSurroundingTextParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.deleteSurroundingText")
-    @js.native
-    def deleteSurroundingText(parameters: DeleteSurroundingTextParameters, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def deleteSurroundingText(parameters: DeleteSurroundingTextParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteSurroundingText")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def deleteSurroundingText(parameters: DeleteSurroundingTextParameters, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteSurroundingText")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.hideInputView")
-    @js.native
-    def hideInputView(): Unit = js.native
+    @scala.inline
+    def hideInputView(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hideInputView")().asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.keyEventHandled")
-    @js.native
-    def keyEventHandled(requestId: String, response: Boolean): Unit = js.native
+    @scala.inline
+    def keyEventHandled(requestId: String, response: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("keyEventHandled")(requestId.asInstanceOf[js.Any], response.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSGlobal("chrome.input.ime.onActivate")
     @js.native
@@ -139,67 +130,49 @@ object input {
     @scala.inline
     def onSurroundingTextChanged_=(x: SurroundingTextChangedEvent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onSurroundingTextChanged")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("chrome.input.ime.sendKeyEvents")
-    @js.native
-    def sendKeyEvents(parameters: SendKeyEventParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.sendKeyEvents")
-    @js.native
-    def sendKeyEvents(parameters: SendKeyEventParameters, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def sendKeyEvents(parameters: SendKeyEventParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendKeyEvents")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def sendKeyEvents(parameters: SendKeyEventParameters, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendKeyEvents")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.setAssistiveWindowButtonHighlighted")
-    @js.native
-    def setAssistiveWindowButtonHighlighted(parameters: AnnounceString): Unit = js.native
-    @JSGlobal("chrome.input.ime.setAssistiveWindowButtonHighlighted")
-    @js.native
-    def setAssistiveWindowButtonHighlighted(parameters: AnnounceString, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def setAssistiveWindowButtonHighlighted(parameters: AnnounceString): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAssistiveWindowButtonHighlighted")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setAssistiveWindowButtonHighlighted(parameters: AnnounceString, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAssistiveWindowButtonHighlighted")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.setAssistiveWindowProperties")
-    @js.native
-    def setAssistiveWindowProperties(parameters: ContextID): Unit = js.native
-    @JSGlobal("chrome.input.ime.setAssistiveWindowProperties")
-    @js.native
-    def setAssistiveWindowProperties(parameters: ContextID, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def setAssistiveWindowProperties(parameters: ContextID): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAssistiveWindowProperties")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setAssistiveWindowProperties(parameters: ContextID, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAssistiveWindowProperties")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.setCandidateWindowProperties")
-    @js.native
-    def setCandidateWindowProperties(parameters: CandidateWindowParameter): Unit = js.native
-    @JSGlobal("chrome.input.ime.setCandidateWindowProperties")
-    @js.native
-    def setCandidateWindowProperties(parameters: CandidateWindowParameter, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def setCandidateWindowProperties(parameters: CandidateWindowParameter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCandidateWindowProperties")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setCandidateWindowProperties(parameters: CandidateWindowParameter, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCandidateWindowProperties")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.setCandidates")
-    @js.native
-    def setCandidates(parameters: CandidatesParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.setCandidates")
-    @js.native
-    def setCandidates(parameters: CandidatesParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def setCandidates(parameters: CandidatesParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCandidates")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setCandidates(parameters: CandidatesParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCandidates")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.setComposition")
-    @js.native
-    def setComposition(parameters: CompositionParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.setComposition")
-    @js.native
-    def setComposition(parameters: CompositionParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def setComposition(parameters: CompositionParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setComposition")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setComposition(parameters: CompositionParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setComposition")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.setCursorPosition")
-    @js.native
-    def setCursorPosition(parameters: CursorPositionParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.setCursorPosition")
-    @js.native
-    def setCursorPosition(parameters: CursorPositionParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = js.native
+    @scala.inline
+    def setCursorPosition(parameters: CursorPositionParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setCursorPosition")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setCursorPosition(parameters: CursorPositionParameters, callback: js.Function1[/* success */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setCursorPosition")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.setMenuItems")
-    @js.native
-    def setMenuItems(parameters: ImeParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.setMenuItems")
-    @js.native
-    def setMenuItems(parameters: ImeParameters, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def setMenuItems(parameters: ImeParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMenuItems")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setMenuItems(parameters: ImeParameters, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setMenuItems")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("chrome.input.ime.updateMenuItems")
-    @js.native
-    def updateMenuItems(parameters: MenuItemParameters): Unit = js.native
-    @JSGlobal("chrome.input.ime.updateMenuItems")
-    @js.native
-    def updateMenuItems(parameters: MenuItemParameters, callback: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def updateMenuItems(parameters: MenuItemParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateMenuItems")(parameters.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def updateMenuItems(parameters: MenuItemParameters, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateMenuItems")(parameters.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

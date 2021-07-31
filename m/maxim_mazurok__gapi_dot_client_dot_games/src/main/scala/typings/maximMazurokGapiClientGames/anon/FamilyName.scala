@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGames.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FamilyName extends StObject {
   
   /** The family name of this player. In some places, this is known as the last name. */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /** The given name of this player. In some places, this is known as the first name. */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
 }
 object FamilyName {
   

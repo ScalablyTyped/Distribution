@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2EntityId extends StObject {
   
   /** Composite key indicating which field contains the entity identifier. */
-  var field: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var field: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
 }
 object GooglePrivacyDlpV2EntityId {
   

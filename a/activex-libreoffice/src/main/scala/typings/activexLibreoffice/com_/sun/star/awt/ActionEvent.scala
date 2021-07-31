@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,11 +15,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The object that implements the {@link XActionListener} interface gets this {@link ActionEvent} when the event occurs. The listener is therefore spared
   * the details of processing individual mouse movements and mouse clicks, and can instead process a "meaningful" (semantic) event like "button pressed".
   */
-@js.native
-trait ActionEvent extends EventObject {
+trait ActionEvent
+  extends StObject
+     with EventObject {
   
   /** contains the command string associated with this action. */
-  var ActionCommand: String = js.native
+  var ActionCommand: String
 }
 object ActionEvent {
   

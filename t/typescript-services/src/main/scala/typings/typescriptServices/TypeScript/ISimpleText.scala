@@ -2,23 +2,21 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISimpleText extends StObject {
   
-  def charCodeAt(index: Double): Double = js.native
+  def charCodeAt(index: Double): Double
   
-  def copyTo(sourceIndex: Double, destination: js.Array[Double], destinationIndex: Double, count: Double): Unit = js.native
+  def copyTo(sourceIndex: Double, destination: js.Array[Double], destinationIndex: Double, count: Double): Unit
   
-  def length(): Double = js.native
+  def length(): Double
   
-  def lineMap(): LineMap = js.native
+  def lineMap(): LineMap
   
-  def subText(span: TextSpan): ISimpleText = js.native
+  def subText(span: TextSpan): ISimpleText
   
-  def substr(start: Double, length: Double, intern: Boolean): String = js.native
+  def substr(start: Double, length: Double, intern: Boolean): String
 }
 object ISimpleText {
   

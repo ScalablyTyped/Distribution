@@ -2,37 +2,35 @@ package typings.instagramPrivateApi.locationRepositoryStoryResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRepositoryStoryResponseStory extends StObject {
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var has_pride_media: Boolean = js.native
+  var has_pride_media: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var items: js.Array[LocationRepositoryStoryResponseItemsItem] = js.native
+  var items: js.Array[LocationRepositoryStoryResponseItemsItem]
   
-  var latest_reel_media: Double = js.native
+  var latest_reel_media: Double
   
-  var location: LocationRepositoryStoryResponseLocation = js.native
+  var location: LocationRepositoryStoryResponseLocation
   
-  var owner: LocationRepositoryStoryResponseOwner = js.native
+  var owner: LocationRepositoryStoryResponseOwner
   
-  var prefetch_count: Double = js.native
+  var prefetch_count: Double
   
-  var reel_type: String = js.native
+  var reel_type: String
   
-  var seen: Double = js.native
+  var seen: Double
   
-  var unique_integer_reel_id: String = js.native
+  var unique_integer_reel_id: String
 }
 object LocationRepositoryStoryResponseStory {
   

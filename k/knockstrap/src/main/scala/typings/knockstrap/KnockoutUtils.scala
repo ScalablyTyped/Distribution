@@ -2,15 +2,13 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutUtils extends StObject {
   
-  def uniqueId(prefix: String): String = js.native
+  def uniqueId(prefix: String): String
   
-  def unwrapProperties(wrappedProperies: js.Any): js.Any = js.native
+  def unwrapProperties(wrappedProperies: js.Any): js.Any
 }
 object KnockoutUtils {
   

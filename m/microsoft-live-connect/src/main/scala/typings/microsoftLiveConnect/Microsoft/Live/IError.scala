@@ -3,20 +3,18 @@ package typings.microsoftLiveConnect.Microsoft.Live
 import typings.microsoftLiveConnect.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The Error object contains info about an error that is returned by the
   * Live Connect APIs.
   */
-@js.native
 trait IError extends StObject {
   
   /**
     * Info about the error.
     */
-  var error: Code = js.native
+  var error: Code
 }
 object IError {
   

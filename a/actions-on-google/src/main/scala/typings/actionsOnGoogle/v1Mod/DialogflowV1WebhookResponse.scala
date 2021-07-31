@@ -3,25 +3,23 @@ package typings.actionsOnGoogle.v1Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1WebhookResponse extends StObject {
   
-  var contextOut: js.UndefOr[js.Array[DialogflowV1Context]] = js.native
+  var contextOut: js.UndefOr[js.Array[DialogflowV1Context]] = js.undefined
   
-  var data: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var data: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var displayText: js.UndefOr[String] = js.native
+  var displayText: js.UndefOr[String] = js.undefined
   
-  var followupEvent: js.UndefOr[DialogflowV1FollowupEvent] = js.native
+  var followupEvent: js.UndefOr[DialogflowV1FollowupEvent] = js.undefined
   
-  var messages: js.UndefOr[js.Array[DialogflowV1Message]] = js.native
+  var messages: js.UndefOr[js.Array[DialogflowV1Message]] = js.undefined
   
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var speech: js.UndefOr[String] = js.native
+  var speech: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1WebhookResponse {
   
@@ -44,7 +42,7 @@ object DialogflowV1WebhookResponse {
     def setContextOutVarargs(value: DialogflowV1Context*): Self = StObject.set(x, "contextOut", js.Array(value :_*))
     
     @scala.inline
-    def setData(value: ApiClientObjectMap[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

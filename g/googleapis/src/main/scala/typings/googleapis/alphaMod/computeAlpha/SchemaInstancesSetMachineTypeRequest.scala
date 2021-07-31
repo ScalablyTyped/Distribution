@@ -2,10 +2,8 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstancesSetMachineTypeRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaInstancesSetMachineTypeRequest extends StObject {
     * full list of machine types. For example:
     * zones/us-central1-f/machineTypes/n1-standard-1
     */
-  var machineType: js.UndefOr[String] = js.native
+  var machineType: js.UndefOr[String] = js.undefined
 }
 object SchemaInstancesSetMachineTypeRequest {
   

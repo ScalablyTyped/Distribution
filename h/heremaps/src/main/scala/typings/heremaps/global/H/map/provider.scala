@@ -2,9 +2,9 @@ package typings.heremaps.global.H.map
 
 import typings.heremaps.H.map.provider.ImageTileProvider.Options
 import typings.heremaps.H.map.provider.Invalidations.Mark
+import typings.heremaps.H.math.BitMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object provider {
@@ -16,7 +16,8 @@ object provider {
   @JSGlobal("H.map.provider.ImageTileProvider")
   @js.native
   class ImageTileProvider protected ()
-    extends typings.heremaps.H.map.provider.ImageTileProvider {
+    extends StObject
+       with typings.heremaps.H.map.provider.ImageTileProvider {
     /**
       * Constructor
       * @param options {H.map.provider.ImageTileProvider.Options} - configuration for tile provider
@@ -31,7 +32,72 @@ object provider {
   @JSGlobal("H.map.provider.Invalidations")
   @js.native
   class Invalidations ()
-    extends typings.heremaps.H.map.provider.Invalidations
+    extends StObject
+       with typings.heremaps.H.map.provider.Invalidations {
+    
+    /**
+      * This method returns the current invalidation mark of this invalidations object.
+      * @returns {H.map.provider.Invalidations.Mark} - the current invalidation mark
+      */
+    /* CompleteClass */
+    override def getMark(): Mark = js.native
+    
+    /**
+      * Checks whether an add-operation occurred after the specified since mark
+      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
+      * @returns {boolean}
+      */
+    /* CompleteClass */
+    override def isAdd(since: Mark): Boolean = js.native
+    
+    /**
+      * Checks whether any change occurred after the specified since mark
+      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
+      * @returns {boolean}
+      */
+    /* CompleteClass */
+    override def isAny(since: Mark): Boolean = js.native
+    
+    /**
+      * Checks whether a remove operation occurred after the specified since mark
+      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
+      * @returns {boolean}
+      */
+    /* CompleteClass */
+    override def isRemove(since: Mark): Boolean = js.native
+    
+    /**
+      * Checks whether a spatial change occurred after the specified since mark
+      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
+      * @returns {boolean}
+      */
+    /* CompleteClass */
+    override def isSpatial(since: Mark): Boolean = js.native
+    
+    /**
+      * Checks whether a visual change occurred after the specified since mark
+      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
+      * @returns {boolean}
+      */
+    /* CompleteClass */
+    override def isVisual(since: Mark): Boolean = js.native
+    
+    /**
+      * Checks whether a z-order change occurred after the specified since mark
+      * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
+      * @returns {boolean}
+      */
+    /* CompleteClass */
+    override def isZOrder(since: Mark): Boolean = js.native
+    
+    /**
+      * To update invalidation marks accordingly to the given the invalidation types.
+      * @param mark {H.map.provider.Invalidations.Mark} - The invalidation mark to set
+      * @param types {H.math.BitMask} - The descrete invalidation types to update
+      */
+    /* CompleteClass */
+    override def update(mark: Mark, types: BitMask): Unit = js.native
+  }
   object Invalidations {
     
     @JSGlobal("H.map.provider.Invalidations")
@@ -46,19 +112,19 @@ object provider {
     object Flag extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.heremaps.H.map.provider.Invalidations.Flag with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.heremaps.H.map.provider.Invalidations.Flag & Double] = js.native
       
-      /* 3 */ val ADD: typings.heremaps.H.map.provider.Invalidations.Flag.ADD with Double = js.native
+      /* 3 */ val ADD: typings.heremaps.H.map.provider.Invalidations.Flag.ADD & Double = js.native
       
-      /* 0 */ val NONE: typings.heremaps.H.map.provider.Invalidations.Flag.NONE with Double = js.native
+      /* 0 */ val NONE: typings.heremaps.H.map.provider.Invalidations.Flag.NONE & Double = js.native
       
-      /* 4 */ val REMOVE: typings.heremaps.H.map.provider.Invalidations.Flag.REMOVE with Double = js.native
+      /* 4 */ val REMOVE: typings.heremaps.H.map.provider.Invalidations.Flag.REMOVE & Double = js.native
       
-      /* 2 */ val SPATIAL: typings.heremaps.H.map.provider.Invalidations.Flag.SPATIAL with Double = js.native
+      /* 2 */ val SPATIAL: typings.heremaps.H.map.provider.Invalidations.Flag.SPATIAL & Double = js.native
       
-      /* 1 */ val VISUAL: typings.heremaps.H.map.provider.Invalidations.Flag.VISUAL with Double = js.native
+      /* 1 */ val VISUAL: typings.heremaps.H.map.provider.Invalidations.Flag.VISUAL & Double = js.native
       
-      /* 5 */ val Z_ORDER: typings.heremaps.H.map.provider.Invalidations.Flag.Z_ORDER with Double = js.native
+      /* 5 */ val Z_ORDER: typings.heremaps.H.map.provider.Invalidations.Flag.Z_ORDER & Double = js.native
     }
     
     /* static member */
@@ -82,7 +148,8 @@ object provider {
   @JSGlobal("H.map.provider.MarkerTileProvider")
   @js.native
   class MarkerTileProvider protected ()
-    extends typings.heremaps.H.map.provider.MarkerTileProvider {
+    extends StObject
+       with typings.heremaps.H.map.provider.MarkerTileProvider {
     /**
       * Constructor
       * @param options {H.map.provider.MarkerTileProvider.Options} - configuration for tile provider
@@ -100,7 +167,8 @@ object provider {
     * @param opt_options {H.map.provider.Provider.Options=}
     */
   class ObjectProvider ()
-    extends typings.heremaps.H.map.provider.ObjectProvider {
+    extends StObject
+       with typings.heremaps.H.map.provider.ObjectProvider {
     def this(opt_options: typings.heremaps.H.map.provider.Provider.Options) = this()
   }
   
@@ -119,7 +187,8 @@ object provider {
     * @param opt_options {H.map.provider.Provider.Options=}
     */
   class Provider ()
-    extends typings.heremaps.H.map.provider.Provider {
+    extends StObject
+       with typings.heremaps.H.map.provider.Provider {
     def this(opt_options: typings.heremaps.H.map.provider.Provider.Options) = this()
   }
   
@@ -130,7 +199,8 @@ object provider {
   @JSGlobal("H.map.provider.RemoteTileProvider")
   @js.native
   class RemoteTileProvider protected ()
-    extends typings.heremaps.H.map.provider.RemoteTileProvider {
+    extends StObject
+       with typings.heremaps.H.map.provider.RemoteTileProvider {
     /**
       * Constructor
       * @param options {H.map.provider.TileProvider.Options} - The options to instantiate this TileProvider
@@ -151,7 +221,8 @@ object provider {
   @JSGlobal("H.map.provider.Tile")
   @js.native
   class Tile protected ()
-    extends typings.heremaps.H.map.provider.Tile {
+    extends StObject
+       with typings.heremaps.H.map.provider.Tile {
     /**
       * Constructor
       * @param x {number} - x tile coordinate (row)
@@ -161,6 +232,24 @@ object provider {
       */
     def this(x: Double, y: Double, z: Double) = this()
     def this(x: Double, y: Double, z: Double, data: js.Any) = this()
+    
+    /* CompleteClass */
+    var data: js.Any = js.native
+    
+    /* CompleteClass */
+    var key: String = js.native
+    
+    /* CompleteClass */
+    var valid: Boolean = js.native
+    
+    /* CompleteClass */
+    var x: Double = js.native
+    
+    /* CompleteClass */
+    var y: Double = js.native
+    
+    /* CompleteClass */
+    var z: Double = js.native
   }
   
   /**
@@ -176,7 +265,8 @@ object provider {
   @JSGlobal("H.map.provider.TileProvider")
   @js.native
   class TileProvider protected ()
-    extends typings.heremaps.H.map.provider.TileProvider {
+    extends StObject
+       with typings.heremaps.H.map.provider.TileProvider {
     /**
       * Constructor
       * @param options {H.map.provider.TileProvider.Options} - The options to instantiate this TileProvider

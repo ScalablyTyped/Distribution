@@ -2,15 +2,13 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListElasticsearchVersionsResponse extends StObject {
   
-  var ElasticsearchVersions: js.UndefOr[ElasticsearchVersionList] = js.native
+  var ElasticsearchVersions: js.UndefOr[ElasticsearchVersionList] = js.undefined
   
-  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.esMod.NextToken] = js.undefined
 }
 object ListElasticsearchVersionsResponse {
   

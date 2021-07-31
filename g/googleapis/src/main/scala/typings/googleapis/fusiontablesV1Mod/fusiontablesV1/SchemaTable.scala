@@ -2,65 +2,63 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a table. Specifies the name, whether it is exportable,
   * description, attribution, and attribution link.
   */
-@js.native
 trait SchemaTable extends StObject {
   
   /**
     * Optional attribution assigned to the table.
     */
-  var attribution: js.UndefOr[String] = js.native
+  var attribution: js.UndefOr[String] = js.undefined
   
   /**
     * Optional link for attribution.
     */
-  var attributionLink: js.UndefOr[String] = js.native
+  var attributionLink: js.UndefOr[String] = js.undefined
   
   /**
     * Optional base table identifier if this table is a view or merged table.
     */
-  var baseTableIds: js.UndefOr[js.Array[String]] = js.native
+  var baseTableIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Columns in the table.
     */
-  var columns: js.UndefOr[js.Array[SchemaColumn]] = js.native
+  var columns: js.UndefOr[js.Array[SchemaColumn]] = js.undefined
   
   /**
     * Optional description assigned to the table.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Variable for whether table is exportable.
     */
-  var isExportable: js.UndefOr[Boolean] = js.native
+  var isExportable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type name: a template for an individual table.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name assigned to a table.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional sql that encodes the table definition for derived tables.
     */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
   
   /**
     * Encrypted unique alphanumeric identifier for the table.
     */
-  var tableId: js.UndefOr[String] = js.native
+  var tableId: js.UndefOr[String] = js.undefined
 }
 object SchemaTable {
   

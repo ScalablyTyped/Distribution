@@ -2,31 +2,29 @@ package typings.phaser.Phaser.Types.Physics.Matter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatterChamferConfig extends StObject {
   
   /**
     * The quality of the chamfering. -1 means 'auto'.
     */
-  var quality: js.UndefOr[Double] = js.native
+  var quality: js.UndefOr[Double] = js.undefined
   
   /**
     * The maximum quality of the chamfering. The higher this value, the more vertices are created.
     */
-  var qualityMax: js.UndefOr[Double] = js.native
+  var qualityMax: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum quality of the chamfering. The higher this value, the more vertices are created.
     */
-  var qualityMin: js.UndefOr[Double] = js.native
+  var qualityMin: js.UndefOr[Double] = js.undefined
   
   /**
     * A single number, or an array, to specify the radius for each vertex.
     */
-  var radius: js.UndefOr[Double | js.Array[Double]] = js.native
+  var radius: js.UndefOr[Double | js.Array[Double]] = js.undefined
 }
 object MatterChamferConfig {
   

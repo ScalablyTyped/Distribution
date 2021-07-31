@@ -4,13 +4,11 @@ import typings.react.mod.ComponentType
 import typings.reactInstantsearchDom.anon.Hit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HitsProps[T] extends StObject {
   
-  var hitComponent: js.UndefOr[ComponentType[Hit[T]]] = js.native
+  var hitComponent: js.UndefOr[ComponentType[Hit[T]]] = js.undefined
 }
 object HitsProps {
   
@@ -21,7 +19,7 @@ object HitsProps {
   }
   
   @scala.inline
-  implicit class HitsPropsMutableBuilder[Self <: HitsProps[_], T] (val x: Self with HitsProps[T]) extends AnyVal {
+  implicit class HitsPropsMutableBuilder[Self <: HitsProps[?], T] (val x: Self & HitsProps[T]) extends AnyVal {
     
     @scala.inline
     def setHitComponent(value: ComponentType[Hit[T]]): Self = StObject.set(x, "hitComponent", value.asInstanceOf[js.Any])

@@ -10,15 +10,15 @@ a functional component library for developing tuya device panels!
 | ------------------ | :-------------: |
 | Full name          | tuya-panel-kit |
 | Keywords           | tuya, react-native, panel |
-| # releases         | 11 |
+| # releases         | 22 |
 | # dependents       | 0 |
-| # downloads        | 755 |
+| # downloads        | 2023 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/TuyaInc/tuya-panel-kit#readme)
-- [Bugs](https://github.com/TuyaInc/tuya-panel-kit/issues)
-- [Repository](https://github.com/TuyaInc/tuya-panel-kit)
+- [Homepage](https://github.com/tuya/tuya-panel-kit#readme)
+- [Bugs](https://github.com/tuya/tuya-panel-kit/issues)
+- [Repository](https://github.com/tuya/tuya-panel-kit)
 - [Npm](https://www.npmjs.com/package/tuya-panel-kit)
     
 

@@ -3,21 +3,21 @@ package typings.jweixin.mod
 import typings.jweixin.anon.ServerId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IuploadImage extends BaseParams {
+trait IuploadImage
+  extends StObject
+     with BaseParams {
   
   // 需要上传的图片的本地ID，由chooseImage接口获得
-  var isShowProgressTips: Double = js.native
+  var isShowProgressTips: Double
   
-  var localId: String = js.native
+  var localId: String
   
   // 默认为1，显示进度提示
   // 返回图片的服务器端ID
   @JSName("success")
-  def success_MIuploadImage(res: ServerId): Unit = js.native
+  def success_MIuploadImage(res: ServerId): Unit
 }
 object IuploadImage {
   

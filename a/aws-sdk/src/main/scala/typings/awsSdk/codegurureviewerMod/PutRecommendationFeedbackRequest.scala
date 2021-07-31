@@ -2,26 +2,24 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRecommendationFeedbackRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
-  var CodeReviewArn: Arn = js.native
+  var CodeReviewArn: Arn
   
   /**
     *  List for storing reactions. Reactions are utf-8 text code for emojis. If you send an empty list it clears all your feedback. 
     */
-  var Reactions: typings.awsSdk.codegurureviewerMod.Reactions = js.native
+  var Reactions: typings.awsSdk.codegurureviewerMod.Reactions
   
   /**
     *  The recommendation ID that can be used to track the provided recommendations and then to collect the feedback. 
     */
-  var RecommendationId: typings.awsSdk.codegurureviewerMod.RecommendationId = js.native
+  var RecommendationId: typings.awsSdk.codegurureviewerMod.RecommendationId
 }
 object PutRecommendationFeedbackRequest {
   

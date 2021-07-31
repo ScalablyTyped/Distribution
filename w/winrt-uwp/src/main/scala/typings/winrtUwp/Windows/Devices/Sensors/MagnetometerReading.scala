@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a magnetometer reading. */
-@js.native
 trait MagnetometerReading extends StObject {
   
   /** Gets the magnetometer's directional accuracy. */
-  var directionalAccuracy: MagnetometerAccuracy = js.native
+  var directionalAccuracy: MagnetometerAccuracy
   
   /** Gets the magnetic field strength in microteslas along the X axis. */
-  var magneticFieldX: Double = js.native
+  var magneticFieldX: Double
   
   /** Gets the magnetic field strength in microteslas along the Y axis. */
-  var magneticFieldY: Double = js.native
+  var magneticFieldY: Double
   
   /** Gets the magnetic field strength in microteslas along the Z axis. */
-  var magneticFieldZ: Double = js.native
+  var magneticFieldZ: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object MagnetometerReading {
   

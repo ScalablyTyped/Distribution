@@ -3,13 +3,11 @@ package typings.awsLambda.anon
 import typings.awsLambda.codebuildCloudwatchStateMod.CodeBuildCacheType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
-  var `type`: CodeBuildCacheType = js.native
+  var `type`: CodeBuildCacheType
 }
 object Type {
   

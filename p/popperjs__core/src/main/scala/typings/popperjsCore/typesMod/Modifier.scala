@@ -4,29 +4,27 @@ import typings.popperjsCore.enumsMod.ModifierPhases_
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Modifier[Name, Options] extends StObject {
   
-  var data: js.UndefOr[Obj] = js.native
+  var data: js.UndefOr[Obj] = js.undefined
   
-  var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[Options], js.Function0[Unit] | Unit]] = js.native
+  var effect: js.UndefOr[js.Function1[/* arg0 */ ModifierArguments[Options], js.Function0[Unit] | Unit]] = js.undefined
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  def fn(arg0: ModifierArguments[Options]): State | Unit = js.native
+  def fn(arg0: ModifierArguments[Options]): State | Unit
   
-  var name: Name = js.native
+  var name: Name
   
-  var options: js.UndefOr[Partial[Options]] = js.native
+  var options: js.UndefOr[Partial[Options]] = js.undefined
   
-  var phase: ModifierPhases_ = js.native
+  var phase: ModifierPhases_
   
-  var requires: js.UndefOr[js.Array[String]] = js.native
+  var requires: js.UndefOr[js.Array[String]] = js.undefined
   
-  var requiresIfExists: js.UndefOr[js.Array[String]] = js.native
+  var requiresIfExists: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Modifier {
   
@@ -42,7 +40,7 @@ object Modifier {
   }
   
   @scala.inline
-  implicit class ModifierMutableBuilder[Self <: Modifier[_, _], Name, Options] (val x: Self with (Modifier[Name, Options])) extends AnyVal {
+  implicit class ModifierMutableBuilder[Self <: Modifier[?, ?], Name, Options] (val x: Self & (Modifier[Name, Options])) extends AnyVal {
     
     @scala.inline
     def setData(value: Obj): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

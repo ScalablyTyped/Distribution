@@ -2,36 +2,34 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrandResources extends StObject {
   
   /**
     * The user id of the user who created the brand resource.
     */
-  var createdByUserInfo: js.UndefOr[UserInfo] = js.native
+  var createdByUserInfo: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The date and time that the brand resource was created.
     */
-  var createdDate: js.UndefOr[String] = js.native
+  var createdDate: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated.
     */
-  var dataNotSavedNotInMaster: js.UndefOr[js.Array[String]] = js.native
+  var dataNotSavedNotInMaster: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Information about the user who last modified the brand resource.
     */
-  var modifiedByUserInfo: js.UndefOr[UserInfo] = js.native
+  var modifiedByUserInfo: js.UndefOr[UserInfo] = js.undefined
   
   /**
     * The date on which this user record was last modified.
     */
-  var modifiedDate: js.UndefOr[String] = js.native
+  var modifiedDate: js.UndefOr[String] = js.undefined
   
   /**
     * This property is returned in the response to the [AccountBrands::listResources][listResources] request.
@@ -39,7 +37,7 @@ trait BrandResources extends StObject {
     *
     * [listResources]: ./categories/Accounts/AccountBrands/listResources.html
     */
-  var modifiedTemplates: js.UndefOr[js.Array[String]] = js.native
+  var modifiedTemplates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The type of brand resource file. A brand uses a different resource file to control each of the following experiences:
@@ -51,12 +49,12 @@ trait BrandResources extends StObject {
     *
     * You can modify the default email messages and formats in these files and upload them to your brand to customize the user experience.
     */
-  var resourcesContentType: js.UndefOr[String] = js.native
+  var resourcesContentType: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the brand resource file.
     */
-  var resourcesContentUri: js.UndefOr[String] = js.native
+  var resourcesContentUri: js.UndefOr[String] = js.undefined
 }
 object BrandResources {
   

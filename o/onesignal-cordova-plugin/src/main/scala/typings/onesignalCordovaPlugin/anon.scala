@@ -12,17 +12,15 @@ import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`1`
 import typings.onesignalCordovaPlugin.onesignalCordovaPluginNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActionID extends StObject {
     
-    var actionID: js.UndefOr[String] = js.native
+    var actionID: js.UndefOr[String] = js.undefined
     
-    var `type`: OSActionType = js.native
+    var `type`: OSActionType
   }
   object ActionID {
     
@@ -47,20 +45,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Authorized extends StObject {
     
-    var Authorized: `1` = js.native
+    var Authorized: `1`
     
-    var Denied: `2` = js.native
+    var Denied: `2`
     
-    var NotDetermined: `0` = js.native
+    var NotDetermined: `0`
   }
   object Authorized {
     
     @scala.inline
-    def apply(Authorized: `1`, Denied: `2`, NotDetermined: `0`): Authorized = {
-      val __obj = js.Dynamic.literal(Authorized = Authorized.asInstanceOf[js.Any], Denied = Denied.asInstanceOf[js.Any], NotDetermined = NotDetermined.asInstanceOf[js.Any])
+    def apply(): Authorized = {
+      val __obj = js.Dynamic.literal(Authorized = 1, Denied = 2, NotDetermined = 0)
       __obj.asInstanceOf[Authorized]
     }
     
@@ -78,12 +75,11 @@ object anon {
     }
   }
   
-  @js.native
   trait From extends StObject {
     
-    var from: OSEmailSubscriptionState = js.native
+    var from: OSEmailSubscriptionState
     
-    var to: OSEmailSubscriptionState = js.native
+    var to: OSEmailSubscriptionState
   }
   object From {
     
@@ -104,12 +100,11 @@ object anon {
     }
   }
   
-  @js.native
   trait FromTo extends StObject {
     
-    var from: OSSubscriptionState = js.native
+    var from: OSSubscriptionState
     
-    var to: OSSubscriptionState = js.native
+    var to: OSSubscriptionState
   }
   object FromTo {
     
@@ -130,20 +125,19 @@ object anon {
     }
   }
   
-  @js.native
   trait InAppAlert extends StObject {
     
-    var InAppAlert: `1` = js.native
+    var InAppAlert: `1`
     
-    var None: `0` = js.native
+    var None: `0`
     
-    var Notification: `2` = js.native
+    var Notification: `2`
   }
   object InAppAlert {
     
     @scala.inline
-    def apply(InAppAlert: `1`, None: `0`, Notification: `2`): InAppAlert = {
-      val __obj = js.Dynamic.literal(InAppAlert = InAppAlert.asInstanceOf[js.Any], None = None.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any])
+    def apply(): InAppAlert = {
+      val __obj = js.Dynamic.literal(InAppAlert = 1, None = 0, Notification = 2)
       __obj.asInstanceOf[InAppAlert]
     }
     
@@ -161,12 +155,11 @@ object anon {
     }
   }
   
-  @js.native
   trait KOSSettingsKeyAutoPrompt extends StObject {
     
-    var kOSSettingsKeyAutoPrompt: Boolean = js.native
+    var kOSSettingsKeyAutoPrompt: Boolean
     
-    var kOSSettingsKeyInAppLaunchURL: Boolean = js.native
+    var kOSSettingsKeyInAppLaunchURL: Boolean
   }
   object KOSSettingsKeyAutoPrompt {
     
@@ -187,12 +180,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LogLevel extends StObject {
     
-    var logLevel: OSLogLevel = js.native
+    var logLevel: OSLogLevel
     
-    var visualLevel: OSLogLevel = js.native
+    var visualLevel: OSLogLevel
   }
   object LogLevel {
     
@@ -214,140 +206,139 @@ object anon {
   }
   
   /* Inlined std.Partial<onesignal-cordova-plugin.OneSignalCordovaPlugin.OSNotification> */
-  @js.native
   trait PartialOSNotification extends StObject {
     
-    var adm_big_picture: js.UndefOr[String] = js.native
+    var adm_big_picture: js.UndefOr[String] = js.undefined
     
-    var adm_group: js.UndefOr[String] = js.native
+    var adm_group: js.UndefOr[String] = js.undefined
     
-    var adm_group_message: js.UndefOr[js.Any] = js.native
+    var adm_group_message: js.UndefOr[js.Any] = js.undefined
     
-    var adm_large_icon: js.UndefOr[String] = js.native
+    var adm_large_icon: js.UndefOr[String] = js.undefined
     
-    var adm_small_icon: js.UndefOr[String] = js.native
+    var adm_small_icon: js.UndefOr[String] = js.undefined
     
-    var adm_sound: js.UndefOr[String] = js.native
+    var adm_sound: js.UndefOr[String] = js.undefined
     
-    var amazon_background_data: js.UndefOr[Boolean] = js.native
+    var amazon_background_data: js.UndefOr[Boolean] = js.undefined
     
-    var androidNotificationId: js.UndefOr[Double] = js.native
+    var androidNotificationId: js.UndefOr[Double] = js.undefined
     
-    var android_accent_color: js.UndefOr[String] = js.native
+    var android_accent_color: js.UndefOr[String] = js.undefined
     
-    var android_group: js.UndefOr[String] = js.native
+    var android_group: js.UndefOr[String] = js.undefined
     
-    var android_group_message: js.UndefOr[js.Any] = js.native
+    var android_group_message: js.UndefOr[js.Any] = js.undefined
     
-    var android_led_color: js.UndefOr[String] = js.native
+    var android_led_color: js.UndefOr[String] = js.undefined
     
-    var android_sound: js.UndefOr[String] = js.native
+    var android_sound: js.UndefOr[String] = js.undefined
     
-    var android_visibility: js.UndefOr[Double] = js.native
+    var android_visibility: js.UndefOr[Double] = js.undefined
     
-    var app_id: js.UndefOr[String] = js.native
+    var app_id: js.UndefOr[String] = js.undefined
     
-    var app_ids: js.UndefOr[js.Array[String]] = js.native
+    var app_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var big_picture: js.UndefOr[String] = js.native
+    var big_picture: js.UndefOr[String] = js.undefined
     
-    var buttons: js.UndefOr[js.Any] = js.native
+    var buttons: js.UndefOr[js.Any] = js.undefined
     
-    var chrome_big_picture: js.UndefOr[String] = js.native
+    var chrome_big_picture: js.UndefOr[String] = js.undefined
     
-    var chrome_icon: js.UndefOr[String] = js.native
+    var chrome_icon: js.UndefOr[String] = js.undefined
     
-    var chrome_web_icon: js.UndefOr[String] = js.native
+    var chrome_web_icon: js.UndefOr[String] = js.undefined
     
-    var content_available: js.UndefOr[Boolean] = js.native
+    var content_available: js.UndefOr[Boolean] = js.undefined
     
-    var contents: js.UndefOr[js.Any] = js.native
+    var contents: js.UndefOr[js.Any] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var delayed_option: js.UndefOr[String] = js.native
+    var delayed_option: js.UndefOr[String] = js.undefined
     
-    var delivery_time_of_day: js.UndefOr[String] = js.native
+    var delivery_time_of_day: js.UndefOr[String] = js.undefined
     
-    var displayType: js.UndefOr[OSDisplayType] = js.native
+    var displayType: js.UndefOr[OSDisplayType] = js.undefined
     
-    var excluded_segments: js.UndefOr[js.Array[String]] = js.native
+    var excluded_segments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var firefox_icon: js.UndefOr[String] = js.native
+    var firefox_icon: js.UndefOr[String] = js.undefined
     
-    var groupedNotifications: js.UndefOr[js.Array[OSNotificationPayload]] = js.native
+    var groupedNotifications: js.UndefOr[js.Array[OSNotificationPayload]] = js.undefined
     
-    var headings: js.UndefOr[js.Any] = js.native
+    var headings: js.UndefOr[js.Any] = js.undefined
     
-    var include_amazon_reg_ids: js.UndefOr[js.Array[String]] = js.native
+    var include_amazon_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include_android_reg_ids: js.UndefOr[js.Array[String]] = js.native
+    var include_android_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include_chrome_reg_ids: js.UndefOr[js.Array[String]] = js.native
+    var include_chrome_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include_chrome_web_reg_ids: js.UndefOr[js.Array[String]] = js.native
+    var include_chrome_web_reg_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include_ios_tokens: js.UndefOr[js.Array[String]] = js.native
+    var include_ios_tokens: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include_player_ids: js.UndefOr[js.Array[String]] = js.native
+    var include_player_ids: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include_wp_uris: js.UndefOr[js.Array[String]] = js.native
+    var include_wp_uris: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include_wp_wns_uris: js.UndefOr[js.Array[String]] = js.native
+    var include_wp_wns_uris: js.UndefOr[js.Array[String]] = js.undefined
     
-    var included_segments: js.UndefOr[js.Array[String]] = js.native
+    var included_segments: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ios_badgeCount: js.UndefOr[Double] = js.native
+    var ios_badgeCount: js.UndefOr[Double] = js.undefined
     
-    var ios_badgeType: js.UndefOr[String] = js.native
+    var ios_badgeType: js.UndefOr[String] = js.undefined
     
-    var ios_category: js.UndefOr[String] = js.native
+    var ios_category: js.UndefOr[String] = js.undefined
     
-    var ios_sound: js.UndefOr[String] = js.native
+    var ios_sound: js.UndefOr[String] = js.undefined
     
-    var isAdm: js.UndefOr[Boolean] = js.native
+    var isAdm: js.UndefOr[Boolean] = js.undefined
     
-    var isAndroid: js.UndefOr[Boolean] = js.native
+    var isAndroid: js.UndefOr[Boolean] = js.undefined
     
-    var isAnyWeb: js.UndefOr[Boolean] = js.native
+    var isAnyWeb: js.UndefOr[Boolean] = js.undefined
     
-    var isAppInFocus: js.UndefOr[Boolean] = js.native
+    var isAppInFocus: js.UndefOr[Boolean] = js.undefined
     
-    var isChrome: js.UndefOr[Boolean] = js.native
+    var isChrome: js.UndefOr[Boolean] = js.undefined
     
-    var isChromeWeb: js.UndefOr[Boolean] = js.native
+    var isChromeWeb: js.UndefOr[Boolean] = js.undefined
     
-    var isIos: js.UndefOr[Boolean] = js.native
+    var isIos: js.UndefOr[Boolean] = js.undefined
     
-    var isSafari: js.UndefOr[Boolean] = js.native
+    var isSafari: js.UndefOr[Boolean] = js.undefined
     
-    var isWP: js.UndefOr[Boolean] = js.native
+    var isWP: js.UndefOr[Boolean] = js.undefined
     
-    var isWP_WNS: js.UndefOr[Boolean] = js.native
+    var isWP_WNS: js.UndefOr[Boolean] = js.undefined
     
-    var large_icon: js.UndefOr[String] = js.native
+    var large_icon: js.UndefOr[String] = js.undefined
     
-    var payload: js.UndefOr[OSNotificationPayload] = js.native
+    var payload: js.UndefOr[OSNotificationPayload] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var send_after: js.UndefOr[String] = js.native
+    var send_after: js.UndefOr[String] = js.undefined
     
-    var shown: js.UndefOr[Boolean] = js.native
+    var shown: js.UndefOr[Boolean] = js.undefined
     
-    var small_icon: js.UndefOr[String] = js.native
+    var small_icon: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[js.Array[_]] = js.native
+    var tags: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var template_id: js.UndefOr[String] = js.native
+    var template_id: js.UndefOr[String] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
-    var wp_sound: js.UndefOr[String] = js.native
+    var wp_sound: js.UndefOr[String] = js.undefined
     
-    var wp_wns_sound: js.UndefOr[String] = js.native
+    var wp_wns_sound: js.UndefOr[String] = js.undefined
   }
   object PartialOSNotification {
     
@@ -757,7 +748,7 @@ object anon {
       def setSmall_iconUndefined: Self = StObject.set(x, "small_icon", js.undefined)
       
       @scala.inline
-      def setTags(value: js.Array[_]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      def setTags(value: js.Array[js.Any]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagsUndefined: Self = StObject.set(x, "tags", js.undefined)
@@ -797,12 +788,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PushToken extends StObject {
     
-    var pushToken: String = js.native
+    var pushToken: String
     
-    var userId: String = js.native
+    var userId: String
   }
   object PushToken {
     
@@ -823,12 +813,11 @@ object anon {
     }
   }
   
-  @js.native
   trait To extends StObject {
     
-    var from: OSPermissionState = js.native
+    var from: OSPermissionState
     
-    var to: OSPermissionState = js.native
+    var to: OSPermissionState
   }
   object To {
     

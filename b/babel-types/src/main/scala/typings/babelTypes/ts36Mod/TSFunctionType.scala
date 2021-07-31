@@ -2,22 +2,21 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSFunctionType
-  extends Node
+  extends StObject
+     with Node
      with TSType {
   
-  var parameters: (js.Array[Identifier_ | RestElement_]) | Null = js.native
+  var parameters: (js.Array[Identifier_ | RestElement_]) | Null
   
-  var typeAnnotation: TSTypeAnnotation | Null = js.native
+  var typeAnnotation: TSTypeAnnotation | Null
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSFunctionType: typings.babelTypes.babelTypesStrings.TSFunctionType = js.native
+  var type_TSFunctionType: typings.babelTypes.babelTypesStrings.TSFunctionType
 }
 object TSFunctionType {
   
@@ -26,7 +25,7 @@ object TSFunctionType {
   def apply(): TSFunctionType = js.native
   @JSImport("babel-types/ts3.6", "TSFunctionType")
   @js.native
-  def apply(typeParameters: js.UndefOr[scala.Nothing], typeAnnotation: TSTypeAnnotation): TSFunctionType = js.native
+  def apply(typeParameters: Unit, typeAnnotation: TSTypeAnnotation): TSFunctionType = js.native
   @JSImport("babel-types/ts3.6", "TSFunctionType")
   @js.native
   def apply(typeParameters: TypeParameterDeclaration_): TSFunctionType = js.native

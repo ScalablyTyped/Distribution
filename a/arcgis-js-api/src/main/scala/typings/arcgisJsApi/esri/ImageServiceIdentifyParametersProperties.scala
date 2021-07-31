@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageServiceIdentifyParametersProperties extends StObject {
   
   /**
@@ -13,70 +11,70 @@ trait ImageServiceIdentifyParametersProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#geometry)
     */
-  var geometry: js.UndefOr[PointProperties | PolygonProperties] = js.native
+  var geometry: js.UndefOr[PointProperties | PolygonProperties] = js.undefined
   
   /**
     * Controls the maximum number of returned catalog items, set to 1 to return the top most raster only.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#maxItemCount)
     */
-  var maxItemCount: js.UndefOr[Double] = js.native
+  var maxItemCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies the mosaic rules defining the image sorting order.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#mosaicRule)
     */
-  var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.native
+  var mosaicRule: js.UndefOr[MosaicRuleProperties] = js.undefined
   
   /**
     * Specifies the pixel level being identified on the x and y axis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#pixelSize)
     */
-  var pixelSize: js.UndefOr[PointProperties] = js.native
+  var pixelSize: js.UndefOr[PointProperties] = js.undefined
   
   /**
     * Specifies the rendering rule for how the requested image should be rendered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#renderingRule)
     */
-  var renderingRule: js.UndefOr[RasterFunctionProperties] = js.native
+  var renderingRule: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
     * An array the [rendering rules](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#renderingRule) to retrieve multiple processed pixel values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#renderingRules)
     */
-  var renderingRules: js.UndefOr[RasterFunctionProperties] = js.native
+  var renderingRules: js.UndefOr[RasterFunctionProperties] = js.undefined
   
   /**
     * If `true`, returns both geometry and attributes of the catalog items.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#returnCatalogItems)
     */
-  var returnCatalogItems: js.UndefOr[Boolean] = js.native
+  var returnCatalogItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When `true`, each feature in the catalog items includes the geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#returnGeometry)
     */
-  var returnGeometry: js.UndefOr[Boolean] = js.native
+  var returnGeometry: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the pixel values of all raster catalog items under the requested geometry.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#returnPixelValues)
     */
-  var returnPixelValues: js.UndefOr[Boolean] = js.native
+  var returnPixelValues: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A time extent for a temporal data against [time-aware imagery layer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html#timeInfo).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ImageServiceIdentifyParameters.html#timeExtent)
     */
-  var timeExtent: js.UndefOr[TimeExtentProperties] = js.native
+  var timeExtent: js.UndefOr[TimeExtentProperties] = js.undefined
 }
 object ImageServiceIdentifyParametersProperties {
   

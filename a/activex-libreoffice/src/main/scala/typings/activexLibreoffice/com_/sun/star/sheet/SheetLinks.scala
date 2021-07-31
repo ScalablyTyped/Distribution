@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.SheetLink
   * @see com.sun.star.sheet.SpreadsheetDocument
   */
-@js.native
 trait SheetLinks
-  extends XIndexAccess
+  extends StObject
+     with XIndexAccess
      with XNameAccess
      with XEnumerationAccess
 object SheetLinks {

@@ -31,7 +31,6 @@ import typings.semanticUiSite.semanticUiSiteStrings.siteNamespace
 import typings.semanticUiSite.semanticUiSiteStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -41,23 +40,24 @@ object SemanticUI {
     
     def apply(): JQuery = js.native
     def apply(behavior: destroy): JQuery = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: modules, value: js.UndefOr[scala.Nothing]): js.Array[String] = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: modules, value: js.Array[String]): JQuery = js.native
+    def apply(behavior: setting, name: modules, value: Unit): js.Array[String] = js.native
+    def apply(behavior: setting, name: namespaceStub, value: Unit): NamespaceStubSettings = js.native
     def apply(behavior: setting, name: namespaceStub, value: NamespaceStubSettings): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: siteNamespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: siteNamespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: siteNamespace, value: Unit): String = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: SiteSettings): JQuery = js.native
     def apply(settings: SiteSettings): JQuery = js.native
     
@@ -67,18 +67,17 @@ object SemanticUI {
     
     object NamespaceStubSettings {
       
-      @js.native
       trait Impl extends StObject {
         
-        var cache: js.Any = js.native
+        var cache: js.Any
         
-        var config: js.Any = js.native
+        var config: js.Any
         
-        var section: js.Any = js.native
+        var section: js.Any
         
-        var sections: js.Any = js.native
+        var sections: js.Any
         
-        var utilities: js.Any = js.native
+        var utilities: js.Any
       }
       object Impl {
         
@@ -108,55 +107,54 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplcache | PickImplconfig | PickImplsections | PickImplsection | PickImplutilities) with PartialPickImplkeyofImplCache
+      type Param = (PickImplcache | PickImplconfig | PickImplsections | PickImplsection | PickImplutilities) & PartialPickImplkeyofImplCache
     }
     type NamespaceStubSettings = Param
   }
   
   object SiteSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
-      var modules: js.Array[String] = js.native
+      var modules: js.Array[String]
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // region Component Settings
       // region DOM Settings
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
-      var namespaceStub: NamespaceStubSettings = js.native
+      var namespaceStub: NamespaceStubSettings
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
-      var siteNamespace: String = js.native
+      var siteNamespace: String
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -211,7 +209,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplmodules | PickImplsiteNamespace | PickImplnamespaceStub | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplmodules | PickImplsiteNamespace | PickImplnamespaceStub | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   type SiteSettings = typings.semanticUiSite.SemanticUI.SiteSettings.Param
 }

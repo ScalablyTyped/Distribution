@@ -2,7 +2,6 @@ package typings.winjs.global.WinJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion Properties
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("WinJS.ErrorFromName")
 @js.native
 class ErrorFromName protected ()
-  extends typings.winjs.WinJS.ErrorFromName {
+  extends StObject
+     with typings.winjs.WinJS.ErrorFromName {
   //#region Constructors
   /**
     * Creates an Error object with the specified name and message properties.

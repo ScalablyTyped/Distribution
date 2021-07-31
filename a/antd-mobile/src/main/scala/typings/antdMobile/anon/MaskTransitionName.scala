@@ -2,17 +2,15 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaskTransitionName extends StObject {
   
-  var WrapComponent: String = js.native
+  var WrapComponent: String
   
-  var maskTransitionName: String = js.native
+  var maskTransitionName: String
   
-  var transitionName: String = js.native
+  var transitionName: String
 }
 object MaskTransitionName {
   

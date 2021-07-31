@@ -2,29 +2,27 @@ package typings.amazonConnectStreams.connect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentRoutingProfile extends StObject {
   
   /** See `agent.getChannelConcurrency()` for more info. */
-  val channelConcurrencyMap: AgentChannelConcurrencyMap = js.native
+  val channelConcurrencyMap: AgentChannelConcurrencyMap
   
   /** The default queue which should be associated with outbound contacts. */
-  val defaultOutboundQueue: Queue = js.native
+  val defaultOutboundQueue: Queue
   
   /** The name of the routing profile. */
-  val name: String = js.native
+  val name: String
   
   /** The queues contained in the routing profile. */
-  val queues: js.Array[Queue] = js.native
+  val queues: js.Array[Queue]
   
   /** The routing profile ARN. */
-  val routingProfileARN: String = js.native
+  val routingProfileARN: String
   
   /** Alias for `routingProfileARN`. */
-  val routingProfileId: String = js.native
+  val routingProfileId: String
 }
 object AgentRoutingProfile {
   

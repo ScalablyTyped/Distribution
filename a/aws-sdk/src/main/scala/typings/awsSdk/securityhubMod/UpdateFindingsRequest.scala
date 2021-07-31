@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFindingsRequest extends StObject {
   
   /**
     * A collection of attributes that specify which findings you want to update.
     */
-  var Filters: AwsSecurityFindingFilters = js.native
+  var Filters: AwsSecurityFindingFilters
   
   /**
     * The updated note for the finding.
     */
-  var Note: js.UndefOr[NoteUpdate] = js.native
+  var Note: js.UndefOr[NoteUpdate] = js.undefined
   
   /**
     * The updated record state for the finding.
     */
-  var RecordState: js.UndefOr[typings.awsSdk.securityhubMod.RecordState] = js.native
+  var RecordState: js.UndefOr[typings.awsSdk.securityhubMod.RecordState] = js.undefined
 }
 object UpdateFindingsRequest {
   

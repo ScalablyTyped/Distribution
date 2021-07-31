@@ -2,48 +2,46 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesConnectorsOptionsObject extends StObject {
   
-  var animation: js.UndefOr[ConnectorsAnimationOptionsObject] = js.native
+  var animation: js.UndefOr[ConnectorsAnimationOptionsObject] = js.undefined
   
   /**
     * (Gantt) Set the default dash style for this chart's connecting lines.
     */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /**
     * (Gantt) Marker options specific to the end markers for this chart's
     * Pathfinder connectors. Overrides the generic marker options.
     */
-  var endMarker: js.UndefOr[ConnectorsEndMarkerOptions] = js.native
+  var endMarker: js.UndefOr[ConnectorsEndMarkerOptions] = js.undefined
   
   /**
     * (Gantt) Set the default color for this chart's Pathfinder connecting
     * lines. Defaults to the color of the point being connected.
     */
-  var lineColor: js.UndefOr[ColorString] = js.native
+  var lineColor: js.UndefOr[ColorString] = js.undefined
   
   /**
     * (Gantt) Set the default pixel width for this chart's Pathfinder
     * connecting lines.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Gantt) Marker options for this chart's Pathfinder connectors. Note that
     * this option is overridden by the `startMarker` and `endMarker` options.
     */
-  var marker: js.UndefOr[ConnectorsMarkerOptions] = js.native
+  var marker: js.UndefOr[ConnectorsMarkerOptions] = js.undefined
   
   /**
     * (Gantt) Marker options specific to the start markers for this chart's
     * Pathfinder connectors. Overrides the generic marker options.
     */
-  var startMarker: js.UndefOr[ConnectorsStartMarkerOptions] = js.native
+  var startMarker: js.UndefOr[ConnectorsStartMarkerOptions] = js.undefined
   
   /**
     * (Gantt) Set the default pathfinder algorithm to use for this chart. It is
@@ -68,7 +66,7 @@ trait SeriesConnectorsOptionsObject extends StObject {
     * `simpleConnect` is used as default for Gantt series, to show dependencies
     * between points.
     */
-  var `type`: js.UndefOr[String | PathfinderTypeValue] = js.native
+  var `type`: js.UndefOr[String | PathfinderTypeValue] = js.undefined
 }
 object SeriesConnectorsOptionsObject {
   

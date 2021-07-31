@@ -2,17 +2,15 @@ package typings.awsSdkBuildTypes.apiModelMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var code: js.UndefOr[java.lang.String] = js.native
+  var code: js.UndefOr[java.lang.String] = js.undefined
   
-  var httpStatusCode: js.UndefOr[scala.Double] = js.native
+  var httpStatusCode: js.UndefOr[scala.Double] = js.undefined
   
-  var senderFault: js.UndefOr[scala.Boolean] = js.native
+  var senderFault: js.UndefOr[scala.Boolean] = js.undefined
 }
 object Error {
   

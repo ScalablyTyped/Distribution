@@ -2,19 +2,19 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NativeViewGestureHandlerProperties extends GestureHandlerProperties {
+trait NativeViewGestureHandlerProperties
+  extends StObject
+     with GestureHandlerProperties {
   
-  var disallowInterruption: js.UndefOr[Boolean] = js.native
+  var disallowInterruption: js.UndefOr[Boolean] = js.undefined
   
-  var onGestureEvent: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerGestureEvent, Unit]] = js.native
+  var onGestureEvent: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerGestureEvent, Unit]] = js.undefined
   
-  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerStateChangeEvent, Unit]] = js.native
+  var onHandlerStateChange: js.UndefOr[js.Function1[/* event */ NativeViewGestureHandlerStateChangeEvent, Unit]] = js.undefined
   
-  var shouldActivateOnStart: js.UndefOr[Boolean] = js.native
+  var shouldActivateOnStart: js.UndefOr[Boolean] = js.undefined
 }
 object NativeViewGestureHandlerProperties {
   

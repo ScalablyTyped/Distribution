@@ -6,37 +6,37 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePostuserinfosGet extends StandardParameters {
+trait ParamsResourcePostuserinfosGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the blog.
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of comments to pull back on a post.
     */
-  var maxComments: js.UndefOr[Double] = js.native
+  var maxComments: js.UndefOr[Double] = js.undefined
   
   /**
     * The ID of the post to get.
     */
-  var postId: js.UndefOr[String] = js.native
+  var postId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of the user for the per-user information to be fetched. Either the
     * word 'self' (sans quote marks) or the user's profile identifier.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePostuserinfosGet {
   

@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientAbusiveexperiencereport.anon.Accesstoken
 import typings.maximMazurokGapiClientAbusiveexperiencereport.anon.Alt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -14,32 +13,31 @@ object gapi {
     
     object abusiveexperiencereport {
       
-      @js.native
       trait SiteSummaryResponse extends StObject {
         
         /** The site's Abusive Experience Report status. */
-        var abusiveStatus: js.UndefOr[String] = js.native
+        var abusiveStatus: js.UndefOr[String] = js.undefined
         
         /** The time at which [enforcement](https://support.google.com/webtools/answer/7538608) against the site began or will begin. Not set when the filter_status is OFF. */
-        var enforcementTime: js.UndefOr[String] = js.native
+        var enforcementTime: js.UndefOr[String] = js.undefined
         
         /** The site's [enforcement status](https://support.google.com/webtools/answer/7538608). */
-        var filterStatus: js.UndefOr[String] = js.native
+        var filterStatus: js.UndefOr[String] = js.undefined
         
         /** The time at which the site's status last changed. */
-        var lastChangeTime: js.UndefOr[String] = js.native
+        var lastChangeTime: js.UndefOr[String] = js.undefined
         
         /**
           * A link to the full Abusive Experience Report for the site. Not set in ViolatingSitesResponse. Note that you must complete the [Search Console verification
           * process](https://support.google.com/webmasters/answer/9008080) for the site before you can access the full report.
           */
-        var reportUrl: js.UndefOr[String] = js.native
+        var reportUrl: js.UndefOr[String] = js.undefined
         
         /** The name of the reviewed site, e.g. `google.com`. */
-        var reviewedSite: js.UndefOr[String] = js.native
+        var reviewedSite: js.UndefOr[String] = js.undefined
         
         /** Whether the site is currently under review. */
-        var underReview: js.UndefOr[Boolean] = js.native
+        var underReview: js.UndefOr[Boolean] = js.undefined
       }
       object SiteSummaryResponse {
         
@@ -112,11 +110,10 @@ object gapi {
         def list(request: Alt): Request[ViolatingSitesResponse] = js.native
       }
       
-      @js.native
       trait ViolatingSitesResponse extends StObject {
         
         /** The list of violating sites. */
-        var violatingSites: js.UndefOr[js.Array[SiteSummaryResponse]] = js.native
+        var violatingSites: js.UndefOr[js.Array[SiteSummaryResponse]] = js.undefined
       }
       object ViolatingSitesResponse {
         

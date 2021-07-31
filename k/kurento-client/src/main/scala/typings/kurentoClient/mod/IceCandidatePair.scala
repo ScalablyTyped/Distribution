@@ -2,19 +2,17 @@ package typings.kurentoClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IceCandidatePair extends StObject {
   
-  var componentID: Double = js.native
+  var componentID: Double
   
-  var localCandidate: String = js.native
+  var localCandidate: String
   
-  var remoteCandidate: String = js.native
+  var remoteCandidate: String
   
-  var streamID: String = js.native
+  var streamID: String
 }
 object IceCandidatePair {
   

@@ -2,15 +2,16 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PolyUtil {
   
-  @JSImport("leaflet", "PolyUtil.clipPolygon")
+  @JSImport("leaflet", "PolyUtil")
   @js.native
-  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression): js.Array[Point_] = js.native
-  @JSImport("leaflet", "PolyUtil.clipPolygon")
-  @js.native
-  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression, round: Boolean): js.Array[Point_] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
+  @scala.inline
+  def clipPolygon(points: js.Array[Point_], bounds: BoundsExpression, round: Boolean): js.Array[Point_] = (^.asInstanceOf[js.Dynamic].applyDynamic("clipPolygon")(points.asInstanceOf[js.Any], bounds.asInstanceOf[js.Any], round.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point_]]
 }

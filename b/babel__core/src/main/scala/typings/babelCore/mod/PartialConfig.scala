@@ -2,21 +2,19 @@ package typings.babelCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartialConfig extends StObject {
   
-  var babelignore: js.UndefOr[String] = js.native
+  var babelignore: js.UndefOr[String] = js.undefined
   
-  var babelrc: js.UndefOr[String] = js.native
+  var babelrc: js.UndefOr[String] = js.undefined
   
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
   
-  def hasFilesystemConfig(): Boolean = js.native
+  def hasFilesystemConfig(): Boolean
   
-  var options: TransformOptions = js.native
+  var options: TransformOptions
 }
 object PartialConfig {
   

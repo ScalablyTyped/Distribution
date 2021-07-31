@@ -2,123 +2,121 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticsearchDomainStatus extends StObject {
   
   /**
     * The Amazon resource name (ARN) of an Elasticsearch domain. See Identifiers for IAM Entities in Using AWS Identity and Access Management for more information.
     */
-  var ARN: typings.awsSdk.esMod.ARN = js.native
+  var ARN: typings.awsSdk.esMod.ARN
   
   /**
     *  IAM access policy as a JSON-formatted string.
     */
-  var AccessPolicies: js.UndefOr[PolicyDocument] = js.native
+  var AccessPolicies: js.UndefOr[PolicyDocument] = js.undefined
   
   /**
     * Specifies the status of the AdvancedOptions
     */
-  var AdvancedOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedOptions] = js.native
+  var AdvancedOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedOptions] = js.undefined
   
   /**
     * The current status of the Elasticsearch domain's advanced security options.
     */
-  var AdvancedSecurityOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedSecurityOptions] = js.native
+  var AdvancedSecurityOptions: js.UndefOr[typings.awsSdk.esMod.AdvancedSecurityOptions] = js.undefined
   
   /**
     * The CognitoOptions for the specified domain. For more information, see Amazon Cognito Authentication for Kibana.
     */
-  var CognitoOptions: js.UndefOr[typings.awsSdk.esMod.CognitoOptions] = js.native
+  var CognitoOptions: js.UndefOr[typings.awsSdk.esMod.CognitoOptions] = js.undefined
   
   /**
     * The domain creation status. True if the creation of an Elasticsearch domain is complete. False if domain creation is still in progress.
     */
-  var Created: js.UndefOr[Boolean] = js.native
+  var Created: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The domain deletion status. True if a delete request has been received for the domain but resource cleanup is still in progress. False if the domain has not been deleted. Once domain deletion is complete, the status of the domain is no longer returned.
     */
-  var Deleted: js.UndefOr[Boolean] = js.native
+  var Deleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current status of the Elasticsearch domain's endpoint options.
     */
-  var DomainEndpointOptions: js.UndefOr[typings.awsSdk.esMod.DomainEndpointOptions] = js.native
+  var DomainEndpointOptions: js.UndefOr[typings.awsSdk.esMod.DomainEndpointOptions] = js.undefined
   
   /**
     * The unique identifier for the specified Elasticsearch domain.
     */
-  var DomainId: typings.awsSdk.esMod.DomainId = js.native
+  var DomainId: typings.awsSdk.esMod.DomainId
   
   /**
     * The name of an Elasticsearch domain. Domain names are unique across the domains owned by an account within an AWS region. Domain names start with a letter or number and can contain the following characters: a-z (lowercase), 0-9, and - (hyphen).
     */
-  var DomainName: typings.awsSdk.esMod.DomainName = js.native
+  var DomainName: typings.awsSdk.esMod.DomainName
   
   /**
     * The EBSOptions for the specified domain. See Configuring EBS-based Storage for more information.
     */
-  var EBSOptions: js.UndefOr[typings.awsSdk.esMod.EBSOptions] = js.native
+  var EBSOptions: js.UndefOr[typings.awsSdk.esMod.EBSOptions] = js.undefined
   
   /**
     * The type and number of instances in the domain cluster.
     */
-  var ElasticsearchClusterConfig: typings.awsSdk.esMod.ElasticsearchClusterConfig = js.native
+  var ElasticsearchClusterConfig: typings.awsSdk.esMod.ElasticsearchClusterConfig
   
-  var ElasticsearchVersion: js.UndefOr[ElasticsearchVersionString] = js.native
+  var ElasticsearchVersion: js.UndefOr[ElasticsearchVersionString] = js.undefined
   
   /**
     *  Specifies the status of the EncryptionAtRestOptions.
     */
-  var EncryptionAtRestOptions: js.UndefOr[typings.awsSdk.esMod.EncryptionAtRestOptions] = js.native
+  var EncryptionAtRestOptions: js.UndefOr[typings.awsSdk.esMod.EncryptionAtRestOptions] = js.undefined
   
   /**
     * The Elasticsearch domain endpoint that you use to submit index and search requests.
     */
-  var Endpoint: js.UndefOr[ServiceUrl] = js.native
+  var Endpoint: js.UndefOr[ServiceUrl] = js.undefined
   
   /**
     * Map containing the Elasticsearch domain endpoints used to submit index and search requests. Example key, value: 'vpc','vpc-endpoint-h2dsd34efgyghrtguk5gt6j2foh4.us-east-1.es.amazonaws.com'.
     */
-  var Endpoints: js.UndefOr[EndpointsMap] = js.native
+  var Endpoints: js.UndefOr[EndpointsMap] = js.undefined
   
   /**
     * Log publishing options for the given domain.
     */
-  var LogPublishingOptions: js.UndefOr[typings.awsSdk.esMod.LogPublishingOptions] = js.native
+  var LogPublishingOptions: js.UndefOr[typings.awsSdk.esMod.LogPublishingOptions] = js.undefined
   
   /**
     * Specifies the status of the NodeToNodeEncryptionOptions.
     */
-  var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.esMod.NodeToNodeEncryptionOptions] = js.native
+  var NodeToNodeEncryptionOptions: js.UndefOr[typings.awsSdk.esMod.NodeToNodeEncryptionOptions] = js.undefined
   
   /**
     * The status of the Elasticsearch domain configuration. True if Amazon Elasticsearch Service is processing configuration changes. False if the configuration is active.
     */
-  var Processing: js.UndefOr[Boolean] = js.native
+  var Processing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current status of the Elasticsearch domain's service software.
     */
-  var ServiceSoftwareOptions: js.UndefOr[typings.awsSdk.esMod.ServiceSoftwareOptions] = js.native
+  var ServiceSoftwareOptions: js.UndefOr[typings.awsSdk.esMod.ServiceSoftwareOptions] = js.undefined
   
   /**
     * Specifies the status of the SnapshotOptions
     */
-  var SnapshotOptions: js.UndefOr[typings.awsSdk.esMod.SnapshotOptions] = js.native
+  var SnapshotOptions: js.UndefOr[typings.awsSdk.esMod.SnapshotOptions] = js.undefined
   
   /**
     * The status of an Elasticsearch domain version upgrade. True if Amazon Elasticsearch Service is undergoing a version upgrade. False if the configuration is active.
     */
-  var UpgradeProcessing: js.UndefOr[Boolean] = js.native
+  var UpgradeProcessing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The VPCOptions for the specified domain. For more information, see VPC Endpoints for Amazon Elasticsearch Service Domains.
     */
-  var VPCOptions: js.UndefOr[VPCDerivedInfo] = js.native
+  var VPCOptions: js.UndefOr[VPCDerivedInfo] = js.undefined
 }
 object ElasticsearchDomainStatus {
   

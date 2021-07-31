@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,14 +16,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * NOTE: 'params' can be omitted.
   */
-@js.native
-trait DERObjectIdentifier extends ASN1Object {
+trait DERObjectIdentifier
+  extends StObject
+     with ASN1Object {
   
   /**
     * set value by a hexadecimal string
     * @param newHexString hexadecimal value of OID bytes
     */
-  def setValueHex(newHexString: String): Unit = js.native
+  def setValueHex(newHexString: String): Unit
   
   /**
     * set value by a OID name
@@ -36,7 +36,7 @@ trait DERObjectIdentifier extends ASN1Object {
     * o = new KJUR.asn1.DERObjectIdentifier();
     * o.setValueName("serverAuth");
     */
-  def setValueName(oidName: String): Unit = js.native
+  def setValueName(oidName: String): Unit
   
   /**
     * set value by a OID string
@@ -45,7 +45,7 @@ trait DERObjectIdentifier extends ASN1Object {
     * o = new KJUR.asn1.DERObjectIdentifier();
     * o.setValueOidString("2.5.4.13");
     */
-  def setValueOidString(oidString: String): Unit = js.native
+  def setValueOidString(oidString: String): Unit
 }
 object DERObjectIdentifier {
   

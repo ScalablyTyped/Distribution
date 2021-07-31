@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the AWS Glue resource to which to add the tags. For more information about AWS Glue resource ARNs, see the AWS Glue ARN string pattern.
     */
-  var ResourceArn: GlueResourceArn = js.native
+  var ResourceArn: GlueResourceArn
   
   /**
     * Tags to add to this resource.
     */
-  var TagsToAdd: TagsMap = js.native
+  var TagsToAdd: TagsMap
 }
 object TagResourceRequest {
   

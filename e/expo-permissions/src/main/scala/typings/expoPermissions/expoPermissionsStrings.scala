@@ -3,7 +3,6 @@ package typings.expoPermissions
 import typings.expoPermissions.permissionsTypesMod.PermissionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoPermissionsStrings {
@@ -19,22 +18,30 @@ object expoPermissionsStrings {
   def always: always = "always".asInstanceOf[always]
   
   @js.native
-  sealed trait audioRecording extends PermissionType
+  sealed trait audioRecording
+    extends StObject
+       with PermissionType
   @scala.inline
   def audioRecording: audioRecording = "audioRecording".asInstanceOf[audioRecording]
   
   @js.native
-  sealed trait calendar extends PermissionType
+  sealed trait calendar
+    extends StObject
+       with PermissionType
   @scala.inline
   def calendar: calendar = "calendar".asInstanceOf[calendar]
   
   @js.native
-  sealed trait camera extends PermissionType
+  sealed trait camera
+    extends StObject
+       with PermissionType
   @scala.inline
   def camera: camera = "camera".asInstanceOf[camera]
   
   @js.native
-  sealed trait cameraRoll extends PermissionType
+  sealed trait cameraRoll
+    extends StObject
+       with PermissionType
   @scala.inline
   def cameraRoll: cameraRoll = "cameraRoll".asInstanceOf[cameraRoll]
   
@@ -44,7 +51,9 @@ object expoPermissionsStrings {
   def coarse: coarse = "coarse".asInstanceOf[coarse]
   
   @js.native
-  sealed trait contacts extends PermissionType
+  sealed trait contacts
+    extends StObject
+       with PermissionType
   @scala.inline
   def contacts: contacts = "contacts".asInstanceOf[contacts]
   
@@ -59,12 +68,16 @@ object expoPermissionsStrings {
   def limited: limited = "limited".asInstanceOf[limited]
   
   @js.native
-  sealed trait location extends PermissionType
+  sealed trait location
+    extends StObject
+       with PermissionType
   @scala.inline
   def location: location = "location".asInstanceOf[location]
   
   @js.native
-  sealed trait motion extends PermissionType
+  sealed trait motion
+    extends StObject
+       with PermissionType
   @scala.inline
   def motion: motion = "motion".asInstanceOf[motion]
   
@@ -74,22 +87,30 @@ object expoPermissionsStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait notifications extends PermissionType
+  sealed trait notifications
+    extends StObject
+       with PermissionType
   @scala.inline
   def notifications: notifications = "notifications".asInstanceOf[notifications]
   
   @js.native
-  sealed trait reminders extends PermissionType
+  sealed trait reminders
+    extends StObject
+       with PermissionType
   @scala.inline
   def reminders: reminders = "reminders".asInstanceOf[reminders]
   
   @js.native
-  sealed trait systemBrightness extends PermissionType
+  sealed trait systemBrightness
+    extends StObject
+       with PermissionType
   @scala.inline
   def systemBrightness: systemBrightness = "systemBrightness".asInstanceOf[systemBrightness]
   
   @js.native
-  sealed trait userFacingNotifications extends PermissionType
+  sealed trait userFacingNotifications
+    extends StObject
+       with PermissionType
   @scala.inline
   def userFacingNotifications: userFacingNotifications = "userFacingNotifications".asInstanceOf[userFacingNotifications]
   

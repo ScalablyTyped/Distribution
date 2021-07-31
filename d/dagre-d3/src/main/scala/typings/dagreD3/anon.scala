@@ -2,38 +2,36 @@ package typings.dagreD3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined dagre.dagre.Node<{}> */
-  @js.native
   trait Node extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var paddingX: js.UndefOr[Double] = js.native
+    var paddingX: js.UndefOr[Double] = js.undefined
     
-    var paddingY: js.UndefOr[Double] = js.native
+    var paddingY: js.UndefOr[Double] = js.undefined
     
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
     
-    var shape: js.UndefOr[String] = js.native
+    var shape: js.UndefOr[String] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Node {
     

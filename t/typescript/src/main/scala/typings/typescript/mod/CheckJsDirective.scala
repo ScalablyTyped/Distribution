@@ -2,13 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckJsDirective extends TextRange {
+trait CheckJsDirective
+  extends StObject
+     with TextRange {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
 }
 object CheckJsDirective {
   

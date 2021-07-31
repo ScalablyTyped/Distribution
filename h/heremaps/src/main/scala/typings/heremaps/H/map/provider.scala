@@ -13,7 +13,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object provider {
@@ -22,63 +21,62 @@ object provider {
     * This class represents invalidation states of a renderable object. A renderer can optimize its rendering strategies based on the information in this object.
     * @property MARK_INITIAL {H.map.provider.Invalidations.Mark} - This constant represents the initial invalidation mark an invalidations object has.
     */
-  @js.native
   trait Invalidations extends StObject {
     
     /**
       * This method returns the current invalidation mark of this invalidations object.
       * @returns {H.map.provider.Invalidations.Mark} - the current invalidation mark
       */
-    def getMark(): Mark = js.native
+    def getMark(): Mark
     
     /**
       * Checks whether an add-operation occurred after the specified since mark
       * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
       * @returns {boolean}
       */
-    def isAdd(since: Mark): Boolean = js.native
+    def isAdd(since: Mark): Boolean
     
     /**
       * Checks whether any change occurred after the specified since mark
       * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
       * @returns {boolean}
       */
-    def isAny(since: Mark): Boolean = js.native
+    def isAny(since: Mark): Boolean
     
     /**
       * Checks whether a remove operation occurred after the specified since mark
       * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
       * @returns {boolean}
       */
-    def isRemove(since: Mark): Boolean = js.native
+    def isRemove(since: Mark): Boolean
     
     /**
       * Checks whether a spatial change occurred after the specified since mark
       * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
       * @returns {boolean}
       */
-    def isSpatial(since: Mark): Boolean = js.native
+    def isSpatial(since: Mark): Boolean
     
     /**
       * Checks whether a visual change occurred after the specified since mark
       * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
       * @returns {boolean}
       */
-    def isVisual(since: Mark): Boolean = js.native
+    def isVisual(since: Mark): Boolean
     
     /**
       * Checks whether a z-order change occurred after the specified since mark
       * @param since {H.map.provider.Invalidations.Mark} - The invalidation mark to check against
       * @returns {boolean}
       */
-    def isZOrder(since: Mark): Boolean = js.native
+    def isZOrder(since: Mark): Boolean
     
     /**
       * To update invalidation marks accordingly to the given the invalidation types.
       * @param mark {H.map.provider.Invalidations.Mark} - The invalidation mark to set
       * @param types {H.math.BitMask} - The descrete invalidation types to update
       */
-    def update(mark: Mark, types: BitMask): Unit = js.native
+    def update(mark: Mark, types: BitMask): Unit
   }
   object Invalidations {
     
@@ -107,22 +105,34 @@ object provider {
     object Flag extends StObject {
       
       @js.native
-      sealed trait ADD extends Flag
+      sealed trait ADD
+        extends StObject
+           with Flag
       
       @js.native
-      sealed trait NONE extends Flag
+      sealed trait NONE
+        extends StObject
+           with Flag
       
       @js.native
-      sealed trait REMOVE extends Flag
+      sealed trait REMOVE
+        extends StObject
+           with Flag
       
       @js.native
-      sealed trait SPATIAL extends Flag
+      sealed trait SPATIAL
+        extends StObject
+           with Flag
       
       @js.native
-      sealed trait VISUAL extends Flag
+      sealed trait VISUAL
+        extends StObject
+           with Flag
       
       @js.native
-      sealed trait Z_ORDER extends Flag
+      sealed trait Z_ORDER
+        extends StObject
+           with Flag
     }
     
     @scala.inline
@@ -164,7 +174,9 @@ object provider {
     * @property tileSize {number} - Size of a tile image supported by the provider
     */
   @js.native
-  trait ImageTileProvider extends RemoteTileProvider {
+  trait ImageTileProvider
+    extends StObject
+       with RemoteTileProvider {
     
     var tileSize: Double = js.native
   }
@@ -182,24 +194,23 @@ object provider {
       * @property crossOrigin {(string | boolean=)} - The CORS settings to use for the crossOrigin attribute for the image, if omitted or if the value evaluates to false no CORS settings
       * are used.
       */
-    @js.native
     trait Options extends StObject {
       
-      var crossOrigin: js.UndefOr[String | Boolean] = js.native
+      var crossOrigin: js.UndefOr[String | Boolean] = js.undefined
       
       var getCopyrights: js.UndefOr[
             js.Function2[/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double, js.Array[ICopyright]]
-          ] = js.native
+          ] = js.undefined
       
-      def getURL(n1: Double, n2: Double, n3: Double): String = js.native
+      def getURL(n1: Double, n2: Double, n3: Double): String
       
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
       
-      var min: js.UndefOr[Double] = js.native
+      var min: js.UndefOr[Double] = js.undefined
       
-      var tileSize: js.UndefOr[Double] = js.native
+      var tileSize: js.UndefOr[Double] = js.undefined
       
-      var uri: js.UndefOr[String] = js.native
+      var uri: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -265,7 +276,9 @@ object provider {
     * @property uid {string} - Provider instance unique identifier, generated at construction time
     */
   @js.native
-  trait MarkerTileProvider extends RemoteTileProvider {
+  trait MarkerTileProvider
+    extends StObject
+       with RemoteTileProvider {
     
     /**
       * To signal to this provider that a map object has been changed. The method marks tile, that contains that object as invalid and triggers dispatchUpdate()
@@ -290,14 +303,13 @@ object provider {
       * of H.map.AbstractMarker that is passed success callback, if function fails to fetch data onError callback must be called
       * @property providesDomMarkers {boolean=} - indicates if markers provided are of type H.map.DomMarker or H.map.Marker, default is H.map.Marker
       */
-    @js.native
     trait Options extends StObject {
       
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
       
-      var min: js.UndefOr[Double] = js.native
+      var min: js.UndefOr[Double] = js.undefined
       
-      var providesDomMarkers: js.UndefOr[Boolean] = js.native
+      var providesDomMarkers: js.UndefOr[Boolean] = js.undefined
       
       def requestData(
         n1: Double,
@@ -305,7 +317,7 @@ object provider {
         n3: Double,
         markerCallback: js.Function1[/* markers */ js.Array[AbstractMarker], Unit],
         f: js.Function0[Unit]
-      ): ICancelable = js.native
+      ): ICancelable
     }
     object Options {
       
@@ -350,7 +362,9 @@ object provider {
     * An abstract class to manage and provide map objects (Marker, Polyline, Polygon)
     */
   @js.native
-  trait ObjectProvider extends Provider {
+  trait ObjectProvider
+    extends StObject
+       with Provider {
     
     /**
       * Returns the accumulate invalidations of this provider's objects that have occurred.
@@ -450,7 +464,9 @@ object provider {
     * @property uid {string} - Provider instance unique identifier, generated at construction time
     */
   @js.native
-  trait Provider extends EventTarget {
+  trait Provider
+    extends StObject
+       with EventTarget {
     
     def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
     
@@ -480,18 +496,17 @@ object provider {
       * @property max {number=} - The maximal supported zoom level, default is 22
       * @property getCopyrights {(function(H.geo.Rect, number): ?Array<H.map.ICopyright>)=} - A function to replace the default implementation of H.map.provider.Provider#getCopyrights
       */
-    @js.native
     trait Options extends StObject {
       
       var getCopyrights: js.UndefOr[
             js.Function2[/* rect */ typings.heremaps.H.geo.Rect, /* n */ Double, js.Array[ICopyright]]
-          ] = js.native
+          ] = js.undefined
       
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
       
-      var min: js.UndefOr[Double] = js.native
+      var min: js.UndefOr[Double] = js.undefined
       
-      var uri: js.UndefOr[String] = js.native
+      var uri: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -536,7 +551,9 @@ object provider {
     * (to request remote tile) and 'getCache' (to provide configured cache object were tiled data is being cached)
     */
   @js.native
-  trait RemoteTileProvider extends TileProvider {
+  trait RemoteTileProvider
+    extends StObject
+       with TileProvider {
     
     /**
       * This method returns cache which should be used to store tiles
@@ -565,29 +582,6 @@ object provider {
       x: Double,
       y: Double,
       z: Double,
-      onResponse: js.UndefOr[scala.Nothing],
-      onError: js.UndefOr[scala.Nothing],
-      opt_priority: Priority
-    ): ICancelable = js.native
-    def requestInternal(
-      x: Double,
-      y: Double,
-      z: Double,
-      onResponse: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* s */ String, Unit]
-    ): ICancelable = js.native
-    def requestInternal(
-      x: Double,
-      y: Double,
-      z: Double,
-      onResponse: js.UndefOr[scala.Nothing],
-      onError: js.Function1[/* s */ String, Unit],
-      opt_priority: Priority
-    ): ICancelable = js.native
-    def requestInternal(
-      x: Double,
-      y: Double,
-      z: Double,
       onResponse: js.Function2[
           /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
           /* response */ js.Any, 
@@ -603,18 +597,6 @@ object provider {
           /* response */ js.Any, 
           Unit
         ],
-      onError: js.UndefOr[scala.Nothing],
-      opt_priority: Priority
-    ): ICancelable = js.native
-    def requestInternal(
-      x: Double,
-      y: Double,
-      z: Double,
-      onResponse: js.Function2[
-          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
-          /* response */ js.Any, 
-          Unit
-        ],
       onError: js.Function1[/* s */ String, Unit]
     ): ICancelable = js.native
     def requestInternal(
@@ -629,6 +611,28 @@ object provider {
       onError: js.Function1[/* s */ String, Unit],
       opt_priority: Priority
     ): ICancelable = js.native
+    def requestInternal(
+      x: Double,
+      y: Double,
+      z: Double,
+      onResponse: js.Function2[
+          /* object */ js.Array[Object] | HTMLImageElement | HTMLCanvasElement | ArrayBuffer, 
+          /* response */ js.Any, 
+          Unit
+        ],
+      onError: Unit,
+      opt_priority: Priority
+    ): ICancelable = js.native
+    def requestInternal(x: Double, y: Double, z: Double, onResponse: Unit, onError: js.Function1[/* s */ String, Unit]): ICancelable = js.native
+    def requestInternal(
+      x: Double,
+      y: Double,
+      z: Double,
+      onResponse: Unit,
+      onError: js.Function1[/* s */ String, Unit],
+      opt_priority: Priority
+    ): ICancelable = js.native
+    def requestInternal(x: Double, y: Double, z: Double, onResponse: Unit, onError: Unit, opt_priority: Priority): ICancelable = js.native
   }
   
   /**
@@ -641,20 +645,19 @@ object provider {
     * @property y {number} - Tile row
     * @property z {number} - Tile zoom level
     */
-  @js.native
   trait Tile extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var key: String = js.native
+    var key: String
     
-    var valid: Boolean = js.native
+    var valid: Boolean
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: Double = js.native
+    var z: Double
   }
   object Tile {
     
@@ -698,7 +701,9 @@ object provider {
     * @property uid {string} - Provider instance unique identifier, generated at construction time
     */
   @js.native
-  trait TileProvider extends Provider {
+  trait TileProvider
+    extends StObject
+       with Provider {
     
     var cancelTile: js.Any = js.native
     
@@ -739,20 +744,19 @@ object provider {
       * @property getCopyrights {(function(H.geo.Rect, number): Array<H.map.ICopyright>)=} - A function to replace the default implememtation of H.map.provider.Provider#getCopyrights
       * @property tileSize {number=} - The size of a tile as edge length in pixels. It must be 2^n where n is in range [0 ... 30], default is 256
       */
-    @js.native
     trait Options extends StObject {
       
       var getCopyrights: js.UndefOr[
             js.Function2[/* rect */ typings.heremaps.H.geo.Rect, /* number */ Double, js.Array[ICopyright]]
-          ] = js.native
+          ] = js.undefined
       
-      var max: js.UndefOr[Double] = js.native
+      var max: js.UndefOr[Double] = js.undefined
       
-      var min: js.UndefOr[Double] = js.native
+      var min: js.UndefOr[Double] = js.undefined
       
-      var tileSize: js.UndefOr[Double] = js.native
+      var tileSize: js.UndefOr[Double] = js.undefined
       
-      var uri: js.UndefOr[String] = js.native
+      var uri: js.UndefOr[String] = js.undefined
     }
     object Options {
       

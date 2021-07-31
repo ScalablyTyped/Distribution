@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.System.RemoteSystems
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object RemoteSystemStatusType extends StObject {
   
   /** The remote system can have any availability status and be discoverable. */
   @js.native
-  sealed trait any extends RemoteSystemStatusType
+  sealed trait any
+    extends StObject
+       with RemoteSystemStatusType
   
   /** The remote system must have a Status property value of Available in order to be discoverable. */
   @js.native
-  sealed trait available extends RemoteSystemStatusType
+  sealed trait available
+    extends StObject
+       with RemoteSystemStatusType
 }

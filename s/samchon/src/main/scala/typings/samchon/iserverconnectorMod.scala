@@ -4,13 +4,13 @@ import typings.samchon.icommunicatorMod.ICommunicator
 import typings.samchon.invokeMod.Invoke
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iserverconnectorMod {
   
-  @js.native
-  trait IServerConnector extends ICommunicator {
+  trait IServerConnector
+    extends StObject
+       with ICommunicator {
     
     /**
       * Connect to a server.
@@ -31,7 +31,7 @@ object iserverconnectorMod {
       *			 successful.
       * @param port The port number to connect to.
       */
-    def connect(ip: String, port: Double): Unit = js.native
+    def connect(ip: String, port: Double): Unit
     
     /**
       * Callback function for connection completed.
@@ -40,7 +40,7 @@ object iserverconnectorMod {
       * {@link onConnect} will be called. Note that, if the listener of this {@link onConnect} is a member method of
       * some class, then you've use the ```bind```.
       */
-    var onConnect: js.Function = js.native
+    var onConnect: js.Function
   }
   object IServerConnector {
     

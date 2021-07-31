@@ -6,33 +6,36 @@ import typings.webBluetooth.webBluetoothStrings.advertisementreceived
 import typings.webBluetooth.webBluetoothStrings.gattserverdisconnected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait BluetoothDevice
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with BluetoothDeviceEventHandlers
      with CharacteristicEventHandlers
      with ServiceEventHandlers {
   
   @JSName("addEventListener")
-  def addEventListener_advertisementreceived(`type`: advertisementreceived, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_advertisementreceived(
+    `type`: advertisementreceived,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
+  ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_advertisementreceived(
     `type`: advertisementreceived,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     useCapture: Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gattserverdisconnected(
     `type`: gattserverdisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_gattserverdisconnected(
     `type`: gattserverdisconnected,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     useCapture: Boolean
   ): Unit = js.native
   

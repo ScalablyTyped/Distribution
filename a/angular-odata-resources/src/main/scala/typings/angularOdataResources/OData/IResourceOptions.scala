@@ -3,23 +3,21 @@ package typings.angularOdataResources.OData
 import typings.angularOdataResources.anon.Method
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Currently supported options for the $resource factory options argument.
   */
-@js.native
 trait IResourceOptions extends StObject {
   
-  var isodatav4: js.UndefOr[Boolean] = js.native
+  var isodatav4: js.UndefOr[Boolean] = js.undefined
   
-  var odata: js.UndefOr[Method] = js.native
+  var odata: js.UndefOr[Method] = js.undefined
   
   /**
     * If true then the trailing slashes from any calculated URL will be stripped (defaults to true)
     */
-  var stripTrailingSlashes: js.UndefOr[Boolean] = js.native
+  var stripTrailingSlashes: js.UndefOr[Boolean] = js.undefined
 }
 object IResourceOptions {
   

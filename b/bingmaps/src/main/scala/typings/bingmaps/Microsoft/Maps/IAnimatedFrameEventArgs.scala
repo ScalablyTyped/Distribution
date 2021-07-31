@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAnimatedFrameEventArgs extends StObject {
   
   /** The animated tile layer that the frame belongs to. **/
-  var animatedTileLayer: AnimatedTileLayer = js.native
+  var animatedTileLayer: AnimatedTileLayer
   
   /** The index of the frame being loaded. **/
-  var index: Double = js.native
+  var index: Double
 }
 object IAnimatedFrameEventArgs {
   

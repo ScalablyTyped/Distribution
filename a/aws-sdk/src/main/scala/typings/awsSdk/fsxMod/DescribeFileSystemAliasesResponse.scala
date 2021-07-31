@@ -2,21 +2,19 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFileSystemAliasesResponse extends StObject {
   
   /**
     * An array of one or more DNS aliases currently associated with the specified file system.
     */
-  var Aliases: js.UndefOr[typings.awsSdk.fsxMod.Aliases] = js.native
+  var Aliases: js.UndefOr[typings.awsSdk.fsxMod.Aliases] = js.undefined
   
   /**
     * Present if there are more DNS aliases than returned in the response (String). You can use the NextToken value in a later request to fetch additional descriptions. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.fsxMod.NextToken] = js.undefined
 }
 object DescribeFileSystemAliasesResponse {
   

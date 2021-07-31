@@ -10,24 +10,23 @@ import typings.bcoeV8Coverage.typesMod.RangeCov
 import typings.bcoeV8Coverage.typesMod.ScriptCov
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloneMod {
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/clone", "cloneFunctionCov")
+  @JSImport("@bcoe/v8-coverage/dist/lib/clone", JSImport.Namespace)
   @js.native
-  def cloneFunctionCov(functionCov: ReadonlyFunctionCov): FunctionCov = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/clone", "cloneProcessCov")
-  @js.native
-  def cloneProcessCov(processCov: ReadonlyProcessCov): ProcessCov = js.native
+  @scala.inline
+  def cloneFunctionCov(functionCov: ReadonlyFunctionCov): FunctionCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneFunctionCov")(functionCov.asInstanceOf[js.Any]).asInstanceOf[FunctionCov]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/clone", "cloneRangeCov")
-  @js.native
-  def cloneRangeCov(rangeCov: ReadonlyRangeCov): RangeCov = js.native
+  @scala.inline
+  def cloneProcessCov(processCov: ReadonlyProcessCov): ProcessCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneProcessCov")(processCov.asInstanceOf[js.Any]).asInstanceOf[ProcessCov]
   
-  @JSImport("@bcoe/v8-coverage/dist/lib/clone", "cloneScriptCov")
-  @js.native
-  def cloneScriptCov(scriptCov: ReadonlyScriptCov): ScriptCov = js.native
+  @scala.inline
+  def cloneRangeCov(rangeCov: ReadonlyRangeCov): RangeCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneRangeCov")(rangeCov.asInstanceOf[js.Any]).asInstanceOf[RangeCov]
+  
+  @scala.inline
+  def cloneScriptCov(scriptCov: ReadonlyScriptCov): ScriptCov = ^.asInstanceOf[js.Dynamic].applyDynamic("cloneScriptCov")(scriptCov.asInstanceOf[js.Any]).asInstanceOf[ScriptCov]
 }

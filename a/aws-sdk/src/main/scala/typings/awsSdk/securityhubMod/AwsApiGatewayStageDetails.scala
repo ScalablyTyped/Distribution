@@ -2,91 +2,89 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsApiGatewayStageDetails extends StObject {
   
   /**
     * Settings for logging access for the stage.
     */
-  var AccessLogSettings: js.UndefOr[AwsApiGatewayAccessLogSettings] = js.native
+  var AccessLogSettings: js.UndefOr[AwsApiGatewayAccessLogSettings] = js.undefined
   
   /**
     * Indicates whether a cache cluster is enabled for the stage.
     */
-  var CacheClusterEnabled: js.UndefOr[Boolean] = js.native
+  var CacheClusterEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If a cache cluster is enabled, the size of the cache cluster.
     */
-  var CacheClusterSize: js.UndefOr[NonEmptyString] = js.native
+  var CacheClusterSize: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * If a cache cluster is enabled, the status of the cache cluster.
     */
-  var CacheClusterStatus: js.UndefOr[NonEmptyString] = js.native
+  var CacheClusterStatus: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Information about settings for canary deployment in the stage.
     */
-  var CanarySettings: js.UndefOr[AwsApiGatewayCanarySettings] = js.native
+  var CanarySettings: js.UndefOr[AwsApiGatewayCanarySettings] = js.undefined
   
   /**
     * The identifier of the client certificate for the stage.
     */
-  var ClientCertificateId: js.UndefOr[NonEmptyString] = js.native
+  var ClientCertificateId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the stage was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedDate: js.UndefOr[NonEmptyString] = js.native
+  var CreatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the deployment that the stage points to.
     */
-  var DeploymentId: js.UndefOr[NonEmptyString] = js.native
+  var DeploymentId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A description of the stage.
     */
-  var Description: js.UndefOr[NonEmptyString] = js.native
+  var Description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version of the API documentation that is associated with the stage.
     */
-  var DocumentationVersion: js.UndefOr[NonEmptyString] = js.native
+  var DocumentationVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates when the stage was most recently updated. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var LastUpdatedDate: js.UndefOr[NonEmptyString] = js.native
+  var LastUpdatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Defines the method settings for the stage.
     */
-  var MethodSettings: js.UndefOr[AwsApiGatewayMethodSettingsList] = js.native
+  var MethodSettings: js.UndefOr[AwsApiGatewayMethodSettingsList] = js.undefined
   
   /**
     * The name of the stage.
     */
-  var StageName: js.UndefOr[NonEmptyString] = js.native
+  var StageName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Indicates whether active tracing with AWS X-Ray is enabled for the stage.
     */
-  var TracingEnabled: js.UndefOr[Boolean] = js.native
+  var TracingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A map that defines the stage variables for the stage. Variable names can have alphanumeric and underscore characters. Variable values can contain the following characters:   Uppercase and lowercase letters   Numbers   Special characters -._~:/?#&amp;=,  
     */
-  var Variables: js.UndefOr[FieldMap] = js.native
+  var Variables: js.UndefOr[FieldMap] = js.undefined
   
   /**
     * The ARN of the web ACL associated with the stage.
     */
-  var WebAclArn: js.UndefOr[NonEmptyString] = js.native
+  var WebAclArn: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsApiGatewayStageDetails {
   

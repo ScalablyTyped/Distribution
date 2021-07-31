@@ -13,13 +13,15 @@ import typings.stylableCore.stylableTransformerMod.StylableTransformer
 import typings.stylableCore.stylableTransformerMod.replaceValueHook
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionsMod {
   
-  @JSImport("@stylable/core/cjs/functions", "evalDeclarationValue")
+  @JSImport("@stylable/core/cjs/functions", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def evalDeclarationValue(
     resolver: StylableResolver,
     value: String,
@@ -31,49 +33,43 @@ object functionsMod {
     passedThrough: js.UndefOr[js.Array[String]],
     cssVarsMapping: js.UndefOr[Record[String, String]],
     args: js.UndefOr[js.Array[String]]
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("evalDeclarationValue")(resolver.asInstanceOf[js.Any], value.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], valueHook.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], passedThrough.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[String]
   
   object functionWarnings {
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CANNOT_FIND_IMPORTED_VAR")
+    @JSImport("@stylable/core/cjs/functions", "functionWarnings")
     @js.native
-    def CANNOT_FIND_IMPORTED_VAR(varName: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CANNOT_USE_AS_VALUE")
-    @js.native
-    def CANNOT_USE_AS_VALUE(`type`: String, varName: String): String = js.native
+    @scala.inline
+    def CANNOT_FIND_IMPORTED_VAR(varName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_FIND_IMPORTED_VAR")(varName.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CANNOT_USE_JS_AS_VALUE")
-    @js.native
-    def CANNOT_USE_JS_AS_VALUE(varName: String): String = js.native
+    @scala.inline
+    def CANNOT_USE_AS_VALUE(`type`: String, varName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_USE_AS_VALUE")(`type`.asInstanceOf[js.Any], varName.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.COULD_NOT_RESOLVE_VALUE")
-    @js.native
-    def COULD_NOT_RESOLVE_VALUE(args: String): String = js.native
+    @scala.inline
+    def CANNOT_USE_JS_AS_VALUE(varName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CANNOT_USE_JS_AS_VALUE")(varName.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.CYCLIC_VALUE")
-    @js.native
-    def CYCLIC_VALUE(cyclicChain: js.Array[String]): String = js.native
+    @scala.inline
+    def COULD_NOT_RESOLVE_VALUE(args: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("COULD_NOT_RESOLVE_VALUE")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.FAIL_TO_EXECUTE_FORMATTER")
-    @js.native
-    def FAIL_TO_EXECUTE_FORMATTER(resolvedValue: String, message: String): String = js.native
+    @scala.inline
+    def CYCLIC_VALUE(cyclicChain: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CYCLIC_VALUE")(cyclicChain.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.MULTI_ARGS_IN_VALUE")
-    @js.native
-    def MULTI_ARGS_IN_VALUE(args: String): String = js.native
+    @scala.inline
+    def FAIL_TO_EXECUTE_FORMATTER(resolvedValue: String, message: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAIL_TO_EXECUTE_FORMATTER")(resolvedValue.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.UNKNOWN_FORMATTER")
-    @js.native
-    def UNKNOWN_FORMATTER(name: String): String = js.native
+    @scala.inline
+    def MULTI_ARGS_IN_VALUE(args: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("MULTI_ARGS_IN_VALUE")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@stylable/core/cjs/functions", "functionWarnings.UNKNOWN_VAR")
-    @js.native
-    def UNKNOWN_VAR(name: String): String = js.native
+    @scala.inline
+    def UNKNOWN_FORMATTER(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_FORMATTER")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNKNOWN_VAR(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_VAR")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("@stylable/core/cjs/functions", "processDeclarationValue")
-  @js.native
+  @scala.inline
   def processDeclarationValue(
     resolver: StylableResolver,
     value: String,
@@ -85,54 +81,49 @@ object functionsMod {
     passedThrough: js.UndefOr[js.Array[String]],
     cssVarsMapping: js.UndefOr[Record[String, String]],
     args: js.UndefOr[js.Array[String]]
-  ): OutputValue = js.native
+  ): OutputValue = (^.asInstanceOf[js.Dynamic].applyDynamic("processDeclarationValue")(resolver.asInstanceOf[js.Any], value.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], valueHook.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], passedThrough.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[OutputValue]
   
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
     meta: StylableMeta,
     diagnostics: Diagnostics,
     node: Node
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
     meta: StylableMeta,
     diagnostics: Diagnostics,
     node: Node,
-    variableOverride: js.UndefOr[scala.Nothing],
-    path: js.UndefOr[scala.Nothing],
-    cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
-  def resolveArgumentsValue(
-    options: Record[String, String],
-    transformer: StylableTransformer,
-    meta: StylableMeta,
-    diagnostics: Diagnostics,
-    node: Node,
-    variableOverride: js.UndefOr[scala.Nothing],
+    variableOverride: Unit,
     path: js.Array[String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
     meta: StylableMeta,
     diagnostics: Diagnostics,
     node: Node,
-    variableOverride: js.UndefOr[scala.Nothing],
+    variableOverride: Unit,
     path: js.Array[String],
     cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def resolveArgumentsValue(
+    options: Record[String, String],
+    transformer: StylableTransformer,
+    meta: StylableMeta,
+    diagnostics: Diagnostics,
+    node: Node,
+    variableOverride: Unit,
+    path: Unit,
+    cssVarsMapping: Record[String, String]
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -140,21 +131,8 @@ object functionsMod {
     diagnostics: Diagnostics,
     node: Node,
     variableOverride: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
-  def resolveArgumentsValue(
-    options: Record[String, String],
-    transformer: StylableTransformer,
-    meta: StylableMeta,
-    diagnostics: Diagnostics,
-    node: Node,
-    variableOverride: Record[String, String],
-    path: js.UndefOr[scala.Nothing],
-    cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -163,9 +141,8 @@ object functionsMod {
     node: Node,
     variableOverride: Record[String, String],
     path: js.Array[String]
-  ): Record[String, String] = js.native
-  @JSImport("@stylable/core/cjs/functions", "resolveArgumentsValue")
-  @js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
   def resolveArgumentsValue(
     options: Record[String, String],
     transformer: StylableTransformer,
@@ -175,7 +152,18 @@ object functionsMod {
     variableOverride: Record[String, String],
     path: js.Array[String],
     cssVarsMapping: Record[String, String]
-  ): Record[String, String] = js.native
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def resolveArgumentsValue(
+    options: Record[String, String],
+    transformer: StylableTransformer,
+    meta: StylableMeta,
+    diagnostics: Diagnostics,
+    node: Node,
+    variableOverride: Record[String, String],
+    path: Unit,
+    cssVarsMapping: Record[String, String]
+  ): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveArgumentsValue")(options.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], meta.asInstanceOf[js.Any], diagnostics.asInstanceOf[js.Any], node.asInstanceOf[js.Any], variableOverride.asInstanceOf[js.Any], path.asInstanceOf[js.Any], cssVarsMapping.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   
   type ResolvedFormatter = Record[String, JSResolve | CSSResolve[StylableSymbol] | ValueFormatter | Null]
   

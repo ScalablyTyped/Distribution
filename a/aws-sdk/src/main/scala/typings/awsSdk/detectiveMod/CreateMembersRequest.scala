@@ -2,26 +2,24 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMembersRequest extends StObject {
   
   /**
     * The list of AWS accounts to invite to become member accounts in the behavior graph. For each invited account, the account list contains the account identifier and the AWS account root user email address.
     */
-  var Accounts: AccountList = js.native
+  var Accounts: AccountList
   
   /**
     * The ARN of the behavior graph to invite the member accounts to contribute their data to.
     */
-  var GraphArn: typings.awsSdk.detectiveMod.GraphArn = js.native
+  var GraphArn: typings.awsSdk.detectiveMod.GraphArn
   
   /**
     * Customized message text to include in the invitation email message to the invited member accounts.
     */
-  var Message: js.UndefOr[EmailMessage] = js.native
+  var Message: js.UndefOr[EmailMessage] = js.undefined
 }
 object CreateMembersRequest {
   

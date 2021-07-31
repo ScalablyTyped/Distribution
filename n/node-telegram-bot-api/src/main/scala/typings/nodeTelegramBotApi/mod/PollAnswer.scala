@@ -2,17 +2,15 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollAnswer extends StObject {
   
-  var option_ids: js.Array[Double] = js.native
+  var option_ids: js.Array[Double]
   
-  var poll_id: String = js.native
+  var poll_id: String
   
-  var user: User = js.native
+  var user: User
 }
 object PollAnswer {
   

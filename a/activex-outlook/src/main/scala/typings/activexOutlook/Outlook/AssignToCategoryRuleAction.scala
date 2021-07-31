@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignToCategoryRuleAction extends StObject {
   
-  val ActionType: OlRuleActionType = js.native
+  val ActionType: OlRuleActionType
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  var Categories: js.Any = js.native
+  var Categories: js.Any
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Outlook.AssignToCategoryRuleAction_typekey")
-  var OutlookDotAssignToCategoryRuleAction_typekey: AssignToCategoryRuleAction = js.native
+  var OutlookDotAssignToCategoryRuleAction_typekey: AssignToCategoryRuleAction
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object AssignToCategoryRuleAction {
   

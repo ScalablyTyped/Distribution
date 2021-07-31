@@ -10,9 +10,9 @@ Shorten GitHub URLs like GitHub shortens Issues and Commit URLs
 | ------------------ | :-------------: |
 | Full name          | shorten-repo-url |
 | Keywords           | commit, file, github, gitlab, issue, link, links, ref, reference, shorter, url |
-| # releases         | 5 |
+| # releases         | 6 |
 | # dependents       | 0 |
-| # downloads        | 25302 |
+| # downloads        | 31251 |
 | # stars            | 0 |
 
 ## Links

@@ -2,16 +2,18 @@ package typings.rcEasyui.mod.DateTimeSpinner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propTypes {
   
   object addonLeft {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.addonLeft")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.addonLeft
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.addonLeft.isRequired")
@@ -21,9 +23,12 @@ object propTypes {
   
   object addonRight {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.addonRight")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.addonRight
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.addonRight.isRequired")
@@ -33,9 +38,12 @@ object propTypes {
   
   object ampm {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.ampm")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.ampm
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.ampm.isRequired")
@@ -45,9 +53,12 @@ object propTypes {
   
   object className {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.className")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.className
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.className.isRequired")
@@ -57,9 +68,12 @@ object propTypes {
   
   object disabled {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.disabled")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.disabled
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.disabled.isRequired")
@@ -69,9 +83,12 @@ object propTypes {
   
   object editable {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.editable")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.editable
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.editable.isRequired")
@@ -81,9 +98,12 @@ object propTypes {
   
   object format {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.format")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.format
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.format.isRequired")
@@ -93,9 +113,12 @@ object propTypes {
   
   object highlight {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.highlight")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.highlight
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.highlight.isRequired")
@@ -105,9 +128,12 @@ object propTypes {
   
   object iconAlign {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.iconAlign")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.iconAlign
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.iconAlign.isRequired")
@@ -117,9 +143,12 @@ object propTypes {
   
   object iconCls {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.iconCls")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.iconCls
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.iconCls.isRequired")
@@ -129,9 +158,12 @@ object propTypes {
   
   object increment {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.increment")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.increment
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.increment.isRequired")
@@ -141,9 +173,12 @@ object propTypes {
   
   object inputCls {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.inputCls")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.inputCls
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.inputCls.isRequired")
@@ -153,9 +188,12 @@ object propTypes {
   
   object inputId {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.inputId")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.inputId
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.inputId.isRequired")
@@ -165,9 +203,12 @@ object propTypes {
   
   object inputStyle {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.inputStyle")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.inputStyle
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.inputStyle.isRequired")
@@ -177,9 +218,12 @@ object propTypes {
   
   object max {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.max")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.max
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.max.isRequired")
@@ -189,9 +233,12 @@ object propTypes {
   
   object min {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.min")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.min
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.min.isRequired")
@@ -201,9 +248,12 @@ object propTypes {
   
   object multiline {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.multiline")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.multiline
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.multiline.isRequired")
@@ -213,9 +263,12 @@ object propTypes {
   
   object onBlur {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.onBlur")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.onBlur
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.onBlur.isRequired")
@@ -225,9 +278,12 @@ object propTypes {
   
   object onChange {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.onChange")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.onChange
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.onChange.isRequired")
@@ -237,9 +293,12 @@ object propTypes {
   
   object onFocus {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.onFocus")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.onFocus
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.onFocus.isRequired")
@@ -249,9 +308,12 @@ object propTypes {
   
   object placeholder {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.placeholder")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.placeholder
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.placeholder.isRequired")
@@ -261,9 +323,12 @@ object propTypes {
   
   object readOnly {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.readOnly")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.readOnly
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.readOnly.isRequired")
@@ -273,9 +338,12 @@ object propTypes {
   
   object reversed {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.reversed")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.reversed
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.reversed.isRequired")
@@ -285,9 +353,12 @@ object propTypes {
   
   object selections {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.selections")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.selections
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.selections.isRequired")
@@ -297,9 +368,12 @@ object propTypes {
   
   object spinAlign {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.spinAlign")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.spinAlign
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.spinAlign.isRequired")
@@ -309,9 +383,12 @@ object propTypes {
   
   object spinners {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.spinners")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.spinners
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.spinners.isRequired")
@@ -321,9 +398,12 @@ object propTypes {
   
   object style {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.style")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.style
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.style.isRequired")
@@ -333,9 +413,12 @@ object propTypes {
   
   object tabIndex {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.tabIndex")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.tabIndex
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.tabIndex.isRequired")
@@ -345,9 +428,12 @@ object propTypes {
   
   object textFormatter {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.textFormatter")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.textFormatter
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.textFormatter.isRequired")
@@ -357,9 +443,12 @@ object propTypes {
   
   object value {
     
+    @scala.inline
+    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.value")
     @js.native
-    def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
     // Circular reference from rc_easyui.DateTimeSpinner.propTypes.value
     @JSImport("rc-easyui", "DateTimeSpinner.propTypes.value.isRequired")

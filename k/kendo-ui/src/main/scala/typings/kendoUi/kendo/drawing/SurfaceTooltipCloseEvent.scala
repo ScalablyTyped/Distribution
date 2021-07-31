@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SurfaceTooltipCloseEvent extends SurfaceEvent {
+trait SurfaceTooltipCloseEvent
+  extends StObject
+     with SurfaceEvent {
   
-  var element: js.UndefOr[Element] = js.native
+  var element: js.UndefOr[Element] = js.undefined
   
-  var target: js.UndefOr[Element] = js.native
+  var target: js.UndefOr[Element] = js.undefined
 }
 object SurfaceTooltipCloseEvent {
   

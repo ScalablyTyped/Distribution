@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutRepositoryTriggersOutput extends StObject {
   
   /**
     * The system-generated unique ID for the create or update operation.
     */
-  var configurationId: js.UndefOr[RepositoryTriggersConfigurationId] = js.native
+  var configurationId: js.UndefOr[RepositoryTriggersConfigurationId] = js.undefined
 }
 object PutRepositoryTriggersOutput {
   

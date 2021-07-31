@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.document
 import typings.activexLibreoffice.com_.sun.star.frame.XController2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see DocumentEvent
   * @since OOo 3.1
   */
-@js.native
 trait XDocumentEventBroadcaster extends StObject {
   
   /**
     * registers a listener which is notified about document events
     * @param Listener the listener to register. The behavior of the method is undefined this listener is `NULL` .
     */
-  def addDocumentEventListener(Listener: XDocumentEventListener): Unit = js.native
+  def addDocumentEventListener(Listener: XDocumentEventListener): Unit
   
   /**
     * causes the broadcaster to notify all registered listeners of the given event
@@ -39,13 +37,13 @@ trait XDocumentEventBroadcaster extends StObject {
     * @throws com::sun::star::lang::IllegalArgumentException if EventName is empty, or if EventName is not supported by the document implementation.
     * @throws com::sun::star::lang::NoSupportException if the broadcaster implementation does not supported broadcasting events induced externally. This is usu
     */
-  def notifyDocumentEvent(EventName: String, ViewController: XController2, Supplement: js.Any): Unit = js.native
+  def notifyDocumentEvent(EventName: String, ViewController: XController2, Supplement: js.Any): Unit
   
   /**
     * revokes a listener which has previously been registered to be notified about document events.
     * @param Listener the listener to revoke. The behavior of the method is undefined this listener is `NULL` .
     */
-  def removeDocumentEventListener(Listener: XDocumentEventListener): Unit = js.native
+  def removeDocumentEventListener(Listener: XDocumentEventListener): Unit
 }
 object XDocumentEventBroadcaster {
   

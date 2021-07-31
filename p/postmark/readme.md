@@ -10,9 +10,9 @@ Official Node.js client library for the Postmark HTTP API - https://www.postmark
 | ------------------ | :-------------: |
 | Full name          | postmark |
 | Keywords           | - |
-| # releases         | 24 |
-| # dependents       | 51 |
-| # downloads        | 1958739 |
+| # releases         | 23 |
+| # dependents       | 53 |
+| # downloads        | 2240090 |
 | # stars            | 7 |
 
 ## Links

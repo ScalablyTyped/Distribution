@@ -2,21 +2,19 @@ package typings.speedtestNet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadUploadData extends StObject {
   
   /** Bytes per second. */
-  var bandwidth: Double = js.native
+  var bandwidth: Double
   
-  var bytes: Double = js.native
+  var bytes: Double
   
-  var elapsed: Double = js.native
+  var elapsed: Double
   
   /** Indicates the progress of the current test. */
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
 }
 object DownloadUploadData {
   

@@ -2,27 +2,26 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PseudoClassSelectorPlain
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNodePlain {
   
-  var children: js.Array[CssNodePlain] | Null = js.native
+  var children: js.Array[CssNodePlain] | Null
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_PseudoClassSelectorPlain: typings.cssTree.cssTreeStrings.PseudoClassSelector = js.native
+  var type_PseudoClassSelectorPlain: typings.cssTree.cssTreeStrings.PseudoClassSelector
 }
 object PseudoClassSelectorPlain {
   
   @scala.inline
-  def apply(name: String, `type`: typings.cssTree.cssTreeStrings.PseudoClassSelector): PseudoClassSelectorPlain = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: String): PseudoClassSelectorPlain = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], children = null)
+    __obj.updateDynamic("type")("PseudoClassSelector")
     __obj.asInstanceOf[PseudoClassSelectorPlain]
   }
   

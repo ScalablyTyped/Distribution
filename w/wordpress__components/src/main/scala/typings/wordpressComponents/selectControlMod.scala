@@ -9,34 +9,35 @@ import typings.wordpressComponents.baseControlMod.BaseControl.ControlProps
 import typings.wordpressComponents.selectControlMod.SelectControl.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectControlMod {
   
   object default {
     
+    @scala.inline
+    def apply[T /* <: String | js.Array[String] */](// tslint:disable-next-line:no-unnecessary-generics
+    props: Props[T]): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/components/select-control", JSImport.Default)
     @js.native
-    def apply[T /* <: String | js.Array[String] */](// tslint:disable-next-line:no-unnecessary-generics
-    props: Props[T]): Element = js.native
+    val ^ : js.Any = js.native
   }
   
   object SelectControl {
     
-    @js.native
     trait Option extends StObject {
       
       /**
         * The label to be shown to the user.
         */
-      var label: String = js.native
+      var label: String
       
       /**
         * The internal value used to choose the selected value. This is also
         * the value passed to `onChange` when the option is selected.
         */
-      var value: String = js.native
+      var value: String
     }
     object Option {
       
@@ -57,6 +58,6 @@ object selectControlMod {
       }
     }
     
-    type Props[T /* <: String | js.Array[String] */] = OmitHTMLPropsHTMLSelectEl with ControlProps with OnChange[T] with (`1` | Multiple)
+    type Props[T /* <: String | js.Array[String] */] = OmitHTMLPropsHTMLSelectEl & ControlProps & OnChange[T] & (`1` | Multiple)
   }
 }

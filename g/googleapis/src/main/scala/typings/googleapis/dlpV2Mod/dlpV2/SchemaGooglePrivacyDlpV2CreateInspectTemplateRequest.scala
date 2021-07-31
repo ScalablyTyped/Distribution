@@ -2,19 +2,17 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for CreateInspectTemplate.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest extends StObject {
   
   /**
     * The InspectTemplate to create.
     */
-  var inspectTemplate: js.UndefOr[SchemaGooglePrivacyDlpV2InspectTemplate] = js.native
+  var inspectTemplate: js.UndefOr[SchemaGooglePrivacyDlpV2InspectTemplate] = js.undefined
   
   /**
     * The template id can contain uppercase and lowercase letters, numbers, and
@@ -22,7 +20,7 @@ trait SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest extends StObject {
     * The maximum length is 100 characters. Can be empty to allow the system to
     * generate one.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2CreateInspectTemplateRequest {
   

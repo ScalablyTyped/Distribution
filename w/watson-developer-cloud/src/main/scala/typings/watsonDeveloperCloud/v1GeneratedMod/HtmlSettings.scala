@@ -2,28 +2,26 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A list of HTML conversion settings. */
-@js.native
 trait HtmlSettings extends StObject {
   
-  var exclude_content: js.UndefOr[XPathPatterns] = js.native
+  var exclude_content: js.UndefOr[XPathPatterns] = js.undefined
   
   /** Array of HTML tag attributes to exclude. */
-  var exclude_tag_attributes: js.UndefOr[js.Array[String]] = js.native
+  var exclude_tag_attributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Array of HTML tags that are excluded completely. */
-  var exclude_tags_completely: js.UndefOr[js.Array[String]] = js.native
+  var exclude_tags_completely: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Array of HTML tags which are excluded but still retain content. */
-  var exclude_tags_keep_content: js.UndefOr[js.Array[String]] = js.native
+  var exclude_tags_keep_content: js.UndefOr[js.Array[String]] = js.undefined
   
-  var keep_content: js.UndefOr[XPathPatterns] = js.native
+  var keep_content: js.UndefOr[XPathPatterns] = js.undefined
   
   /** An array of HTML tag attributes to keep in the converted document. */
-  var keep_tag_attributes: js.UndefOr[js.Array[String]] = js.native
+  var keep_tag_attributes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HtmlSettings {
   

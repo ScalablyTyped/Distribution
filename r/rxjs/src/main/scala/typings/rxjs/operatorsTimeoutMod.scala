@@ -3,27 +3,26 @@ package typings.rxjs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsTimeoutMod {
   
-  @JSImport("rxjs/operators/timeout", "timeout")
+  @JSImport("rxjs/operators/timeout", JSImport.Namespace)
   @js.native
-  def timeout[T](due: Double): js.Any = js.native
-  @JSImport("rxjs/operators/timeout", "timeout")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def timeout[T](due: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def timeout[T](
     due: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs/operators/timeout", "timeout")
-  @js.native
-  def timeout[T](due: Date): js.Any = js.native
-  @JSImport("rxjs/operators/timeout", "timeout")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def timeout[T](due: Date): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def timeout[T](
     due: Date,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("timeout")(due.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

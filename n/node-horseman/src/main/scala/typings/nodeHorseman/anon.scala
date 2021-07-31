@@ -10,19 +10,17 @@ import typings.nodeHorseman.nodeHorsemanStrings.landscape
 import typings.nodeHorseman.nodeHorsemanStrings.portrait
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Format extends StObject {
     
-    var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.native
+    var format: js.UndefOr[A3 | A4 | A5 | Legal | Letter | Tabloid] = js.undefined
     
-    var margin: js.UndefOr[String] = js.native
+    var margin: js.UndefOr[String] = js.undefined
     
-    var orientation: js.UndefOr[portrait | landscape] = js.native
+    var orientation: js.UndefOr[portrait | landscape] = js.undefined
   }
   object Format {
     

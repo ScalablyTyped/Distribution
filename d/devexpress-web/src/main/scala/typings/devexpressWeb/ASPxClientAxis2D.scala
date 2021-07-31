@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the Axis2D class.
   */
-@js.native
-trait ASPxClientAxis2D extends ASPxClientAxisBase {
+trait ASPxClientAxis2D
+  extends StObject
+     with ASPxClientAxisBase {
   
   /**
     * Provides access to an axis title object.
     */
-  var axisTitle: ASPxClientAxisTitle = js.native
+  var axisTitle: ASPxClientAxisTitle
   
   /**
     * Provides access to the collection of the axis constant lines.
     */
-  var constantLines: js.Array[ASPxClientConstantLine] = js.native
+  var constantLines: js.Array[ASPxClientConstantLine]
   
   /**
     * Provides access to the axis strips collection.
     */
-  var strips: js.Array[ASPxClientStrip] = js.native
+  var strips: js.Array[ASPxClientStrip]
 }
 object ASPxClientAxis2D {
   

@@ -10,53 +10,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryTableDataSource extends Object {
+trait QueryTableDataSource
+  extends StObject
+     with Object {
   
   /**
     * The geometry type of each record in the table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
     */
-  var geometryType: point | multipoint | polyline | polygon | multipatch = js.native
+  var geometryType: point | multipoint | polyline | polygon | multipatch
   
   /**
     * The field name(s) containing the unique IDs for each record in the table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
     */
-  var oidFields: String = js.native
+  var oidFields: String
   
   /**
     * The SQL query used to filter records.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
     */
-  var query: String = js.native
+  var query: String
   
   /**
     * The spatial reference of the geometry of each feature in the table source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
     */
-  var spatialReference: SpatialReference = js.native
+  var spatialReference: SpatialReference
   
   /**
     * This value is always `query-table` and is inferred when the `query` property of this object is set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
     */
-  var `type`: `query-table` = js.native
+  var `type`: `query-table`
   
   /**
     * The workspace where the data resides (defined in ArcGIS Server Manager).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#QueryTableDataSource)
     */
-  var workspaceId: String = js.native
+  var workspaceId: String
 }
 object QueryTableDataSource {
   
@@ -69,11 +69,10 @@ object QueryTableDataSource {
     propertyIsEnumerable: PropertyKey => Boolean,
     query: String,
     spatialReference: SpatialReference,
-    `type`: `query-table`,
     workspaceId: String
   ): QueryTableDataSource = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], geometryType = geometryType.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), oidFields = oidFields.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), query = query.asInstanceOf[js.Any], spatialReference = spatialReference.asInstanceOf[js.Any], workspaceId = workspaceId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("query-table")
     __obj.asInstanceOf[QueryTableDataSource]
   }
   

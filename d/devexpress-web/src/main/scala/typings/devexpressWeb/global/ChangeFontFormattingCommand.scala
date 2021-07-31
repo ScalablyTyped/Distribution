@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ChangeFontFormattingCommand")
 @js.native
 class ChangeFontFormattingCommand ()
-  extends typings.devexpressWeb.ChangeFontFormattingCommand
+  extends StObject
+     with typings.devexpressWeb.ChangeFontFormattingCommand {
+  
+  /**
+    * Executes the ChangeFontFormattingCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
+    * @param settings A  FontFormattingSettings object specifying font formatting settings.
+    */
+  /* CompleteClass */
+  override def execute(settings: typings.devexpressWeb.FontFormattingSettings): Boolean = js.native
+  
+  /**
+    * Gets information about the command's state.
+    */
+  /* CompleteClass */
+  override def getState(): typings.devexpressWeb.CommandState[typings.devexpressWeb.FontFormattingSettings] = js.native
+}

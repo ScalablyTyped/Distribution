@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // class ClientResult {
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //    setValue(value: any): void;
 //    constructor();
 // }
-@js.native
 trait ClientResult[T] extends StObject {
   
-  def get_value(): T = js.native
+  def get_value(): T
   
-  def setValue(value: T): Unit = js.native
+  def setValue(value: T): Unit
 }
 object ClientResult {
   
@@ -26,7 +24,7 @@ object ClientResult {
   }
   
   @scala.inline
-  implicit class ClientResultMutableBuilder[Self <: ClientResult[_], T] (val x: Self with ClientResult[T]) extends AnyVal {
+  implicit class ClientResultMutableBuilder[Self <: ClientResult[?], T] (val x: Self & ClientResult[T]) extends AnyVal {
     
     @scala.inline
     def setGet_value(value: () => T): Self = StObject.set(x, "get_value", js.Any.fromFunction0(value))

@@ -2,41 +2,39 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningJob extends StObject {
   
   /**
     * The date and time that the signing job was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The ID of the signing job.
     */
-  var jobId: js.UndefOr[JobId] = js.native
+  var jobId: js.UndefOr[JobId] = js.undefined
   
   /**
     * A SignedObject structure that contains information about a signing job's signed code image.
     */
-  var signedObject: js.UndefOr[SignedObject] = js.native
+  var signedObject: js.UndefOr[SignedObject] = js.undefined
   
   /**
     * A SigningMaterial object that contains the Amazon Resource Name (ARN) of the certificate used for the signing job.
     */
-  var signingMaterial: js.UndefOr[SigningMaterial] = js.native
+  var signingMaterial: js.UndefOr[SigningMaterial] = js.undefined
   
   /**
     * A Source that contains information about a signing job's code image source.
     */
-  var source: js.UndefOr[Source] = js.native
+  var source: js.UndefOr[Source] = js.undefined
   
   /**
     * The status of the signing job.
     */
-  var status: js.UndefOr[SigningStatus] = js.native
+  var status: js.UndefOr[SigningStatus] = js.undefined
 }
 object SigningJob {
   

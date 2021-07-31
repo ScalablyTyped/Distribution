@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Printers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a 3D printer. */
-@js.native
 trait Print3DDevice extends StObject {
   
   /** Gets the PrintSchema object for obtaining capabilities and print ticket information. */
-  var printSchema: PrintSchema = js.native
+  var printSchema: PrintSchema
 }
 object Print3DDevice {
   

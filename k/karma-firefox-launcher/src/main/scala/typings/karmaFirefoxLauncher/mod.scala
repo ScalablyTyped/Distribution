@@ -3,24 +3,22 @@ package typings.karmaFirefoxLauncher
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait CustomLauncher extends StObject {
     
     /**
       * extensions that you want loaded into the browser on startup
       */
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * configure preferences for the Firefox instance that is loaded
       */
-    var prefs: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var prefs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object CustomLauncher {
     

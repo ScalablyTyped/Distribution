@@ -3,21 +3,21 @@ package typings.angularCommon.httpHttpMod
 import typings.angularCommon.httpHttpMod.HttpEventType.DownloadProgress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HttpDownloadProgressEvent extends HttpProgressEvent {
+trait HttpDownloadProgressEvent
+  extends StObject
+     with HttpProgressEvent {
   
   /**
     * The partial response body as downloaded so far.
     *
     * Only present if the responseType was `text`.
     */
-  var partialText: js.UndefOr[String] = js.native
+  var partialText: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_HttpDownloadProgressEvent: DownloadProgress = js.native
+  var type_HttpDownloadProgressEvent: DownloadProgress
 }
 object HttpDownloadProgressEvent {
   

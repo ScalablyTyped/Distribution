@@ -2,17 +2,15 @@ package typings.iso8601Localizer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait localizer extends StObject {
   
-  def localize(): String = js.native
+  def localize(): String
   
-  def returnAs(as: String): localizer = js.native
+  def returnAs(as: String): localizer
   
-  def to(offset: Double): localizer = js.native
+  def to(offset: Double): localizer
 }
 object localizer {
   

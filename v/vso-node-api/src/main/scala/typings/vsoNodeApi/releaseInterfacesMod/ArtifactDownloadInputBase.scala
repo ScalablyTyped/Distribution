@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArtifactDownloadInputBase extends StObject {
   
-  var alias: String = js.native
+  var alias: String
   
-  var artifactDownloadMode: String = js.native
+  var artifactDownloadMode: String
   
-  var artifactType: String = js.native
+  var artifactType: String
 }
 object ArtifactDownloadInputBase {
   

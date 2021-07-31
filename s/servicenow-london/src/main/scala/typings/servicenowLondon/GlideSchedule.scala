@@ -2,7 +2,6 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -121,9 +120,9 @@ trait GlideSchedule extends StObject {
     * x.load('08fcd0830a0a0b2600079f56b1adb9ae');
     */
   def load(sysId: String): Unit = js.native
-  def load(sysId: String, timeZone: js.UndefOr[scala.Nothing], excludeSpanId: String): Unit = js.native
   def load(sysId: String, timeZone: String): Unit = js.native
   def load(sysId: String, timeZone: String, excludeSpanId: String): Unit = js.native
+  def load(sysId: String, timeZone: Unit, excludeSpanId: String): Unit = js.native
   
   /**
     * Sets the timezone for the current schedule.

@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadonlyTextRange extends StObject {
   
-  val end: Double = js.native
+  val end: Double
   
-  val pos: Double = js.native
+  val pos: Double
 }
 object ReadonlyTextRange {
   

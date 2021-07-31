@@ -11,10 +11,13 @@ import typings.std.MessageEvent
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rasterMod {
+  
+  @JSImport("ol/source/Raster", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/source/Raster", JSImport.Default)
   @js.native
@@ -41,7 +44,7 @@ object rasterMod {
     /**
       * Handle messages from the worker.
       */
-    def _onWorkerMessage(index: Double, event: MessageEvent[_]): Unit = js.native
+    def _onWorkerMessage(index: Double, event: MessageEvent[js.Any]): Unit = js.native
     
     /**
       * Resolve a job.  If there are no more worker threads, the processor callback
@@ -53,7 +56,7 @@ object rasterMod {
       * Run operation on input data.
       */
     def process(
-      inputs: js.Array[js.Array[_] | ImageData],
+      inputs: js.Array[js.Array[js.Any] | ImageData],
       meta: js.Any,
       callback: js.Function3[/* p0 */ Error, /* p1 */ ImageData, /* p2 */ js.Object, Unit]
     ): Unit = js.native
@@ -69,10 +72,14 @@ object rasterMod {
   object RasterOperationType extends StObject {
     
     @js.native
-    sealed trait IMAGE extends RasterOperationType
+    sealed trait IMAGE
+      extends StObject
+         with RasterOperationType
     
     @js.native
-    sealed trait PIXEL extends RasterOperationType
+    sealed trait PIXEL
+      extends StObject
+         with RasterOperationType
   }
   
   @JSImport("ol/source/Raster", "RasterSourceEvent")
@@ -98,14 +105,12 @@ object rasterMod {
     var resolution: Double = js.native
   }
   
-  @JSImport("ol/source/Raster", "newImageData")
-  @js.native
-  def newImageData(data: Uint8ClampedArray, width: Double, height: Double): ImageData = js.native
+  @scala.inline
+  def newImageData(data: Uint8ClampedArray, width: Double, height: Double): ImageData = (^.asInstanceOf[js.Dynamic].applyDynamic("newImageData")(data.asInstanceOf[js.Any], width.asInstanceOf[js.Any], height.asInstanceOf[js.Any])).asInstanceOf[ImageData]
   
-  @js.native
   trait FauxMessageEvent extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
   }
   object FauxMessageEvent {
     
@@ -129,20 +134,19 @@ object rasterMod {
     js.Array[Double] | ImageData
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var lib: js.UndefOr[js.Any] = js.native
+    var lib: js.UndefOr[js.Any] = js.undefined
     
-    var operation: js.UndefOr[Operation] = js.native
+    var operation: js.UndefOr[Operation] = js.undefined
     
-    var operationType: js.UndefOr[RasterOperationType] = js.native
+    var operationType: js.UndefOr[RasterOperationType] = js.undefined
     
     var sources: js.Array[
         typings.ol.sourceSourceMod.default | typings.ol.layerLayerMod.default[typings.ol.sourceSourceMod.default]
-      ] = js.native
+      ]
     
-    var threads: js.UndefOr[Double] = js.native
+    var threads: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -199,23 +203,22 @@ object rasterMod {
     }
   }
   
-  @js.native
   trait ProcessorOptions extends StObject {
     
-    var imageOps: js.UndefOr[Boolean] = js.native
+    var imageOps: js.UndefOr[Boolean] = js.undefined
     
-    var lib: js.UndefOr[js.Any] = js.native
+    var lib: js.UndefOr[js.Any] = js.undefined
     
-    def operation(p0: js.Array[_], p1: js.Object): js.Any = js.native
+    def operation(p0: js.Array[js.Any], p1: js.Object): js.Any
     
-    var queue: Double = js.native
+    var queue: Double
     
-    var threads: Double = js.native
+    var threads: Double
   }
   object ProcessorOptions {
     
     @scala.inline
-    def apply(operation: (js.Array[_], js.Object) => js.Any, queue: Double, threads: Double): ProcessorOptions = {
+    def apply(operation: (js.Array[js.Any], js.Object) => js.Any, queue: Double, threads: Double): ProcessorOptions = {
       val __obj = js.Dynamic.literal(operation = js.Any.fromFunction2(operation), queue = queue.asInstanceOf[js.Any], threads = threads.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessorOptions]
     }
@@ -236,7 +239,7 @@ object rasterMod {
       def setLibUndefined: Self = StObject.set(x, "lib", js.undefined)
       
       @scala.inline
-      def setOperation(value: (js.Array[_], js.Object) => js.Any): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
+      def setOperation(value: (js.Array[js.Any], js.Object) => js.Any): Self = StObject.set(x, "operation", js.Any.fromFunction2(value))
       
       @scala.inline
       def setQueue(value: Double): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])

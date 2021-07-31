@@ -3,14 +3,15 @@ package typings.nodeHtmlParser
 import typings.nodeHtmlParser.typeMod.NodeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeMod {
   
   @JSImport("node-html-parser/dist/nodes/node", JSImport.Default)
   @js.native
-  abstract class default () extends Node
+  abstract class default ()
+    extends StObject
+       with Node
   
   @js.native
   trait Node extends StObject {

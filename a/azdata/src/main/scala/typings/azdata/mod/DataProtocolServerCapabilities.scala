@@ -2,23 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProtocolServerCapabilities extends StObject {
   
-  var adminServicesProvider: AdminServicesOptions = js.native
+  var adminServicesProvider: AdminServicesOptions
   
-  var connectionProvider: ConnectionProviderOptions = js.native
+  var connectionProvider: ConnectionProviderOptions
   
-  var features: js.Array[FeatureMetadataProvider] = js.native
+  var features: js.Array[FeatureMetadataProvider]
   
-  var protocolVersion: String = js.native
+  var protocolVersion: String
   
-  var providerDisplayName: String = js.native
+  var providerDisplayName: String
   
-  var providerName: String = js.native
+  var providerName: String
 }
 object DataProtocolServerCapabilities {
   

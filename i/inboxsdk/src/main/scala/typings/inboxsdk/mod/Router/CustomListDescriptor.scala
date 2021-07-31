@@ -2,17 +2,15 @@ package typings.inboxsdk.mod.Router
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomListDescriptor extends StObject {
   
-  var hasMore: js.UndefOr[Boolean] = js.native
+  var hasMore: js.UndefOr[Boolean] = js.undefined
   
-  var threads: js.Array[ThreadDescriptor | String] = js.native
+  var threads: js.Array[ThreadDescriptor | String]
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object CustomListDescriptor {
   

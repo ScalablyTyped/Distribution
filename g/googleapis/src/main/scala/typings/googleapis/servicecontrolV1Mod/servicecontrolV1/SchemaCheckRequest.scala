@@ -2,32 +2,30 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for the Check method.
   */
-@js.native
 trait SchemaCheckRequest extends StObject {
   
   /**
     * The operation to be checked.
     */
-  var operation: js.UndefOr[SchemaOperation] = js.native
+  var operation: js.UndefOr[SchemaOperation] = js.undefined
   
   /**
     * Requests the project settings to be returned as part of the check
     * response.
     */
-  var requestProjectSettings: js.UndefOr[Boolean] = js.native
+  var requestProjectSettings: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies which version of service configuration should be used to
     * process the request.  If unspecified or no matching version can be found,
     * the latest one will be used.
     */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if service activation check should be skipped for this request.
@@ -35,7 +33,7 @@ trait SchemaCheckRequest extends StObject {
     * WARNING: Setting this flag to &quot;true&quot; will disable quota
     * enforcement.
     */
-  var skipActivationCheck: js.UndefOr[Boolean] = js.native
+  var skipActivationCheck: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaCheckRequest {
   

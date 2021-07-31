@@ -1,26 +1,24 @@
 package typings.actionsOnGoogle.v1Mod
 
-import typings.actionsOnGoogle.actionsOnGoogleStrings.google
 import typings.actionsOnGoogle.actionsOnGoogleStrings.list_card
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogflowV1MessageList
-  extends DialogflowV1BaseGoogleMessage[list_card]
+  extends StObject
+     with DialogflowV1BaseGoogleMessage[list_card]
      with DialogflowV1Message {
   
-  var items: js.UndefOr[js.Array[DialogflowV1MessageOptionItem]] = js.native
+  var items: js.UndefOr[js.Array[DialogflowV1MessageOptionItem]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object DialogflowV1MessageList {
   
   @scala.inline
-  def apply(platform: google): DialogflowV1MessageList = {
-    val __obj = js.Dynamic.literal(platform = platform.asInstanceOf[js.Any])
+  def apply(): DialogflowV1MessageList = {
+    val __obj = js.Dynamic.literal(platform = "google")
     __obj.asInstanceOf[DialogflowV1MessageList]
   }
   

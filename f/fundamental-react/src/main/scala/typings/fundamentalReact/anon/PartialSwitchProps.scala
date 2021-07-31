@@ -2,34 +2,32 @@ package typings.fundamentalReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<fundamental-react.fundamental-react/lib/Switch/Switch.SwitchProps> */
-@js.native
 trait PartialSwitchProps extends StObject {
   
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var compact: js.UndefOr[Boolean] = js.native
+  var compact: js.UndefOr[Boolean] = js.undefined
   
-  var disableStyles: js.UndefOr[Boolean] = js.native
+  var disableStyles: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inputProps: js.UndefOr[js.Any] = js.native
+  var inputProps: js.UndefOr[js.Any] = js.undefined
   
-  var internalLabels: js.UndefOr[Checked] = js.native
+  var internalLabels: js.UndefOr[Checked] = js.undefined
   
-  var labelProps: js.UndefOr[js.Any] = js.native
+  var labelProps: js.UndefOr[js.Any] = js.undefined
   
-  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
   
-  var semantic: js.UndefOr[Boolean] = js.native
+  var semantic: js.UndefOr[Boolean] = js.undefined
 }
 object PartialSwitchProps {
   
@@ -97,7 +95,7 @@ object PartialSwitchProps {
     def setLabelPropsUndefined: Self = StObject.set(x, "labelProps", js.undefined)
     
     @scala.inline
-    def setOnChange(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
+    def setOnChange(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)

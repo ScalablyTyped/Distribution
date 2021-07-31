@@ -2,59 +2,59 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message source application
   */
-@js.native
-trait MessageHeaderSource extends BackboneElement {
+trait MessageHeaderSource
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'endpoint'.
     */
-  var _endpoint: js.UndefOr[Element] = js.native
+  var _endpoint: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'software'.
     */
-  var _software: js.UndefOr[Element] = js.native
+  var _software: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * Human contact for problems
     */
-  var contact: js.UndefOr[ContactPoint] = js.native
+  var contact: js.UndefOr[ContactPoint] = js.undefined
   
   /**
     * Actual message source address or id
     */
-  var endpoint: uri = js.native
+  var endpoint: uri
   
   /**
     * Name of system
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Name of software running the system
     */
-  var software: js.UndefOr[String] = js.native
+  var software: js.UndefOr[String] = js.undefined
   
   /**
     * Version of software running
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object MessageHeaderSource {
   

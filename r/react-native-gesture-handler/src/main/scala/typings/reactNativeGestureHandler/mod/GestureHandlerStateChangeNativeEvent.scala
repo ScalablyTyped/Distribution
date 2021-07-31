@@ -2,19 +2,17 @@ package typings.reactNativeGestureHandler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GestureHandlerStateChangeNativeEvent extends StObject {
   
-  var handlerTag: Double = js.native
+  var handlerTag: Double
   
-  var numberOfPointers: Double = js.native
+  var numberOfPointers: Double
   
-  var oldState: State = js.native
+  var oldState: State
   
-  var state: State = js.native
+  var state: State
 }
 object GestureHandlerStateChangeNativeEvent {
   

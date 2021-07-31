@@ -2,21 +2,19 @@ package typings.instagramPrivateApi.timelineFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineFeedResponseHideReasonsV2Item extends StObject {
   
-  var reason: String | Null = js.native
+  var reason: String | Null
   
-  var text: String = js.native
+  var text: String
 }
 object TimelineFeedResponseHideReasonsV2Item {
   
   @scala.inline
   def apply(text: String): TimelineFeedResponseHideReasonsV2Item = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any], reason = null)
     __obj.asInstanceOf[TimelineFeedResponseHideReasonsV2Item]
   }
   

@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.bpmnModdle.mod.TypeDerived because Already inherited
-- typings.bpmnModdle.mod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ @js.native
-trait Event extends FlowNode {
+- typings.bpmnModdle.mod.InteractionNode because var conflicts: $parent, $type. Inlined incomingConversationLinks, outgoingConversationLinks */ trait Event
+  extends StObject
+     with FlowNode {
   
-  var incomingConversationLinks: js.Array[ConversationLink] = js.native
+  var incomingConversationLinks: js.Array[ConversationLink]
   
-  var outgoingConversationLinks: js.Array[ConversationLink] = js.native
+  var outgoingConversationLinks: js.Array[ConversationLink]
   
-  var properties: js.Array[Property] = js.native
+  var properties: js.Array[Property]
 }
 object Event {
   

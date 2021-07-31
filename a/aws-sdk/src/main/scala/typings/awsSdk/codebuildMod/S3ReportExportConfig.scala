@@ -2,36 +2,34 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3ReportExportConfig extends StObject {
   
   /**
     *  The name of the S3 bucket where the raw data of a report are exported. 
     */
-  var bucket: js.UndefOr[NonEmptyString] = js.native
+  var bucket: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  A boolean value that specifies if the results of a report are encrypted. 
     */
-  var encryptionDisabled: js.UndefOr[WrapperBoolean] = js.native
+  var encryptionDisabled: js.UndefOr[WrapperBoolean] = js.undefined
   
   /**
     *  The encryption key for the report's encrypted raw data. 
     */
-  var encryptionKey: js.UndefOr[NonEmptyString] = js.native
+  var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     *  The type of build output artifact to create. Valid values include:     NONE: AWS CodeBuild creates the raw data in the output bucket. This is the default if packaging is not specified.     ZIP: AWS CodeBuild creates a ZIP file with the raw data in the output bucket.   
     */
-  var packaging: js.UndefOr[ReportPackagingType] = js.native
+  var packaging: js.UndefOr[ReportPackagingType] = js.undefined
   
   /**
     *  The path to the exported report's raw data results. 
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
 }
 object S3ReportExportConfig {
   

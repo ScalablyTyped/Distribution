@@ -9,35 +9,34 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBucketWebsiteOutputMod {
   
-  @js.native
   trait GetBucketWebsiteOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * _ErrorDocument shape
       */
-    var ErrorDocument: js.UndefOr[UnmarshalledErrorDocument] = js.native
+    var ErrorDocument: js.UndefOr[UnmarshalledErrorDocument] = js.undefined
     
     /**
       * _IndexDocument shape
       */
-    var IndexDocument: js.UndefOr[UnmarshalledIndexDocument] = js.native
+    var IndexDocument: js.UndefOr[UnmarshalledIndexDocument] = js.undefined
     
     /**
       * _RedirectAllRequestsTo shape
       */
-    var RedirectAllRequestsTo: js.UndefOr[UnmarshalledRedirectAllRequestsTo] = js.native
+    var RedirectAllRequestsTo: js.UndefOr[UnmarshalledRedirectAllRequestsTo] = js.undefined
     
     /**
       * _RoutingRules shape
       */
-    var RoutingRules: js.UndefOr[js.Array[UnmarshalledRoutingRule]] = js.native
+    var RoutingRules: js.UndefOr[js.Array[UnmarshalledRoutingRule]] = js.undefined
   }
   object GetBucketWebsiteOutput {
     

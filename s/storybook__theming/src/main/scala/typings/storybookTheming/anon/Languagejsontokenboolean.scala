@@ -2,24 +2,22 @@ package typings.storybookTheming.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Languagejsontokenboolean extends StObject {
   
   @JSName("language-json .token.boolean")
-  var `language-json DottokenDotboolean`: Color = js.native
+  var `language-json DottokenDotboolean`: Color
   
   @JSName("language-json .token.number")
-  var `language-json DottokenDotnumber`: Color = js.native
+  var `language-json DottokenDotnumber`: Color
   
   @JSName("language-json .token.property")
-  var `language-json DottokenDotproperty`: Color = js.native
+  var `language-json DottokenDotproperty`: Color
   
-  var namespace: Opacity = js.native
+  var namespace: Opacity
   
-  var token: Atrule = js.native
+  var token: Atrule
 }
 object Languagejsontokenboolean {
   

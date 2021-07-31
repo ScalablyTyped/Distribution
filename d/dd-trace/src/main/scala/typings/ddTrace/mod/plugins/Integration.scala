@@ -2,22 +2,20 @@ package typings.ddTrace.mod.plugins
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
 trait Integration extends StObject {
   
   /** Whether to enable the plugin.
     * @default true
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The service name to be used for this plugin.
     */
-  var service: js.UndefOr[String | js.Any] = js.native
+  var service: js.UndefOr[String | js.Any] = js.undefined
 }
 object Integration {
   

@@ -8,18 +8,20 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractPickerMod {
+  
+  @JSImport("antd-mobile/lib/picker/AbstractPicker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("antd-mobile/lib/picker/AbstractPicker", JSImport.Default)
   @js.native
   abstract class default () extends AbstractPicker
   
-  @JSImport("antd-mobile/lib/picker/AbstractPicker", "getDefaultProps")
-  @js.native
-  def getDefaultProps(): Cascade = js.native
+  @scala.inline
+  def getDefaultProps(): Cascade = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultProps")().asInstanceOf[Cascade]
   
   @js.native
   trait AbstractPicker
@@ -44,12 +46,13 @@ object abstractPickerMod {
     def setScrollValue(v: js.Any): Unit = js.native
   }
   
-  @js.native
-  trait AbstractPickerProps extends PickerPropsType {
+  trait AbstractPickerProps
+    extends StObject
+       with PickerPropsType {
     
-    var pickerPrefixCls: js.UndefOr[String] = js.native
+    var pickerPrefixCls: js.UndefOr[String] = js.undefined
     
-    var popupPrefixCls: js.UndefOr[String] = js.native
+    var popupPrefixCls: js.UndefOr[String] = js.undefined
   }
   object AbstractPickerProps {
     

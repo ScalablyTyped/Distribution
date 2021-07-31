@@ -3,19 +3,17 @@ package typings.firebaseInstallations
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var message: String = js.native
+    var message: String
     
-    var status: String = js.native
+    var status: String
   }
   object Code {
     
@@ -40,16 +38,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@firebase/installations.@firebase/installations/dist/src/interfaces/app-config.AppConfig> */
-  @js.native
   trait PartialAppConfig extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var appId: js.UndefOr[String] = js.native
+    var appId: js.UndefOr[String] = js.undefined
     
-    var appName: js.UndefOr[String] = js.native
+    var appName: js.UndefOr[String] = js.undefined
     
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
   }
   object PartialAppConfig {
     
@@ -88,10 +85,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueName extends StObject {
     
-    var valueName: String = js.native
+    var valueName: String
   }
   object ValueName {
     
@@ -110,16 +106,17 @@ object anon {
   }
   
   /* Inlined {  requestName :string, [index: string] : string | number} & @firebase/installations.@firebase/installations/dist/src/util/errors.ServerErrorData */
-  @js.native
-  trait requestNamestringindexstr extends /* index */ StringDictionary[String | Double] {
+  trait requestNamestringindexstr
+    extends StObject
+       with /* index */ StringDictionary[String | Double] {
     
-    var requestName: String = js.native
+    var requestName: String
     
-    var serverCode: Double = js.native
+    var serverCode: Double
     
-    var serverMessage: String = js.native
+    var serverMessage: String
     
-    var serverStatus: String = js.native
+    var serverStatus: String
   }
   object requestNamestringindexstr {
     

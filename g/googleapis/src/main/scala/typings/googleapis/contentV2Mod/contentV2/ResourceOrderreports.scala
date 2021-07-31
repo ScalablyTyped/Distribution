@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2", "content_v2.Resource$Orderreports")
@@ -35,7 +34,7 @@ class ResourceOrderreports protected () extends StObject {
     */
   def listdisbursements(): GaxiosPromise[SchemaOrderreportsListDisbursementsResponse] = js.native
   def listdisbursements(callback: BodyResponseCallback[SchemaOrderreportsListDisbursementsResponse]): Unit = js.native
-  def listdisbursements(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderreportsListDisbursementsResponse] = js.native
+  def listdisbursements(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderreportsListDisbursementsResponse] = js.native
   def listdisbursements(params: ParamsResourceOrderreportsListdisbursements): GaxiosPromise[SchemaOrderreportsListDisbursementsResponse] = js.native
   def listdisbursements(
     params: ParamsResourceOrderreportsListdisbursements,
@@ -73,7 +72,7 @@ class ResourceOrderreports protected () extends StObject {
     */
   def listtransactions(): GaxiosPromise[SchemaOrderreportsListTransactionsResponse] = js.native
   def listtransactions(callback: BodyResponseCallback[SchemaOrderreportsListTransactionsResponse]): Unit = js.native
-  def listtransactions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderreportsListTransactionsResponse] = js.native
+  def listtransactions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderreportsListTransactionsResponse] = js.native
   def listtransactions(params: ParamsResourceOrderreportsListtransactions): GaxiosPromise[SchemaOrderreportsListTransactionsResponse] = js.native
   def listtransactions(
     params: ParamsResourceOrderreportsListtransactions,

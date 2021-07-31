@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.1]
   */
-@js.native
 trait ChartCollectionLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var axes: js.UndefOr[ChartAxesLoadOptions] = js.native
+  var axes: js.UndefOr[ChartAxesLoadOptions] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var categoryLabelLevel: js.UndefOr[Boolean] = js.native
+  var categoryLabelLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var chartType: js.UndefOr[Boolean] = js.native
+  var chartType: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var dataLabels: js.UndefOr[ChartDataLabelsLoadOptions] = js.native
+  var dataLabels: js.UndefOr[ChartDataLabelsLoadOptions] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var displayBlanksAs: js.UndefOr[Boolean] = js.native
+  var displayBlanksAs: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var format: js.UndefOr[ChartAreaFormatLoadOptions] = js.native
+  var format: js.UndefOr[ChartAreaFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -99,7 +97,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var legend: js.UndefOr[ChartLegendLoadOptions] = js.native
+  var legend: js.UndefOr[ChartLegendLoadOptions] = js.undefined
   
   /**
     *
@@ -107,7 +105,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -115,7 +113,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var pivotOptions: js.UndefOr[ChartPivotOptionsLoadOptions] = js.native
+  var pivotOptions: js.UndefOr[ChartPivotOptionsLoadOptions] = js.undefined
   
   /**
     *
@@ -123,7 +121,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var plotArea: js.UndefOr[ChartPlotAreaLoadOptions] = js.native
+  var plotArea: js.UndefOr[ChartPlotAreaLoadOptions] = js.undefined
   
   /**
     *
@@ -131,7 +129,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var plotBy: js.UndefOr[Boolean] = js.native
+  var plotBy: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -139,7 +137,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var plotVisibleOnly: js.UndefOr[Boolean] = js.native
+  var plotVisibleOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -147,7 +145,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var series: js.UndefOr[ChartSeriesCollectionLoadOptions] = js.native
+  var series: js.UndefOr[ChartSeriesCollectionLoadOptions] = js.undefined
   
   /**
     *
@@ -156,7 +154,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var seriesNameLevel: js.UndefOr[Boolean] = js.native
+  var seriesNameLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -164,7 +162,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showAllFieldButtons: js.UndefOr[Boolean] = js.native
+  var showAllFieldButtons: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -174,7 +172,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.native
+  var showDataLabelsOverMaximum: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -182,7 +180,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -190,7 +188,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var title: js.UndefOr[ChartTitleLoadOptions] = js.native
+  var title: js.UndefOr[ChartTitleLoadOptions] = js.undefined
   
   /**
     *
@@ -198,7 +196,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -206,7 +204,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -214,7 +212,7 @@ trait ChartCollectionLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 object ChartCollectionLoadOptions {
   

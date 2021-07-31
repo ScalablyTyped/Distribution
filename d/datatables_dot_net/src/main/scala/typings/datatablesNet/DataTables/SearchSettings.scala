@@ -2,36 +2,34 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSettings extends StObject {
   
   /**
     * Control case-sensitive filtering option. Since: 1.10
     */
-  var caseInsensitive: js.UndefOr[Boolean] = js.native
+  var caseInsensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable / disable escaping of regular expression characters in the search term. Since: 1.10
     */
-  var regex: js.UndefOr[Boolean] = js.native
+  var regex: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set an initial filtering condition on the table. Since: 1.10
     */
-  var search: js.UndefOr[String] = js.native
+  var search: js.UndefOr[String] = js.undefined
   
   /**
     * Set a placeholder attribute for input type="text" tag elements. Since: 1.10.1
     */
-  var searchPlaceholder: js.UndefOr[String] = js.native
+  var searchPlaceholder: js.UndefOr[String] = js.undefined
   
   /**
     * Enable / disable DataTables' smart filtering. Since: 1.10
     */
-  var smart: js.UndefOr[Boolean] = js.native
+  var smart: js.UndefOr[Boolean] = js.undefined
 }
 object SearchSettings {
   

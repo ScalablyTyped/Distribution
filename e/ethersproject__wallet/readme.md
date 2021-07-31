@@ -10,9 +10,9 @@ Classes for managing, encrypting and decrypting Ethereum private keys as a Signe
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/wallet |
 | Keywords           | Ethereum, ethers |
-| # releases         | 32 |
-| # dependents       | 21 |
-| # downloads        | 567463 |
+| # releases         | 35 |
+| # dependents       | 26 |
+| # downloads        | 1184426 |
 | # stars            | 0 |
 
 ## Links

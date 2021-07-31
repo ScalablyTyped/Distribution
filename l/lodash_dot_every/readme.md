@@ -11,8 +11,8 @@ The lodash method `_.every` exported as a module.
 | Full name          | lodash.every |
 | Keywords           | lodash-modularized, every |
 | # releases         | 0 |
-| # dependents       | 114 |
-| # downloads        | 19692430 |
+| # dependents       | 122 |
+| # downloads        | 22440791 |
 | # stars            | 0 |
 
 ## Links

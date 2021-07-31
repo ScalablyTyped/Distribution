@@ -12,11 +12,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DistanceMeasurement2D extends Widget_ {
+trait DistanceMeasurement2D
+  extends StObject
+     with Widget_ {
   
   /**
     * The widget's default CSS icon class.

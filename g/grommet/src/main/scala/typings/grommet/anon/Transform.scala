@@ -3,15 +3,13 @@ package typings.grommet.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transform extends StObject {
   
-  var property: String = js.native
+  var property: String
   
-  def transform(args: js.Any*): ReactNode = js.native
+  def transform(args: js.Any*): ReactNode
 }
 object Transform {
   

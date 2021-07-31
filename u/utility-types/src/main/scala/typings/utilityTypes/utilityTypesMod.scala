@@ -10,12 +10,11 @@ import typings.utilityTypes.mappedTypesMod.SetComplement
 import typings.utilityTypes.utilityTypesStrings.$ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilityTypesMod {
   
-  type Call[Fn /* <: js.Function1[/* repeated */ js.Any, _] */] = js.Any
+  type Call[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */] = js.Any
   
   type Class[T] = Instantiable1[/* args (repeated) */ js.Any, T]
   
@@ -23,7 +22,7 @@ object utilityTypesMod {
   
   type ElementType[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in K & any ]: any}
-    */ $ElementType with TopLevel[js.Any] */, K /* <: (/* keyof T */ String) | Double */] = /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
+    */ $ElementType & TopLevel[js.Any] */, K /* <: (/* keyof T */ String) | Double */] = /* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any
   
   type Keys[T /* <: js.Object */] = /* keyof T */ String
   

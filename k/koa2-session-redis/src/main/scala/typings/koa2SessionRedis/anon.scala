@@ -3,30 +3,28 @@ package typings.koa2SessionRedis
 import typings.koa2SessionRedis.koa2SessionRedisStrings.session
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<koa-session.koa-session.Session> & {  _expire :number | undefined,   _maxAge :number | undefined} */
-  @js.native
   trait PartialSessionexpirenumbe extends StObject {
     
-    var _expire: js.UndefOr[Double] = js.native
+    var _expire: js.UndefOr[Double] = js.undefined
     
-    var _maxAge: js.UndefOr[Double] = js.native
+    var _maxAge: js.UndefOr[Double] = js.undefined
     
-    var inspect: js.UndefOr[js.Function0[js.Object]] = js.native
+    var inspect: js.UndefOr[js.Function0[js.Object]] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var maxAge: js.UndefOr[Double | session] = js.native
+    var maxAge: js.UndefOr[Double | session] = js.undefined
     
-    var populated: js.UndefOr[Boolean] = js.native
+    var populated: js.UndefOr[Boolean] = js.undefined
     
-    var save: js.UndefOr[js.Function0[Unit]] = js.native
+    var save: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var toJSON: js.UndefOr[js.Function0[js.Object]] = js.native
+    var toJSON: js.UndefOr[js.Function0[js.Object]] = js.undefined
   }
   object PartialSessionexpirenumbe {
     

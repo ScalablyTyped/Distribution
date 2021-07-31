@@ -2,15 +2,13 @@ package typings.novaEditorNode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitializationOptions extends StObject {
   
-  var initializationOptions: js.UndefOr[js.Any] = js.native
+  var initializationOptions: js.UndefOr[js.Any] = js.undefined
   
-  var syntaxes: js.Array[String] = js.native
+  var syntaxes: js.Array[String]
 }
 object InitializationOptions {
   

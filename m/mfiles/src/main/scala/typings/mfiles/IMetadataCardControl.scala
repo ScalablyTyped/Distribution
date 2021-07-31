@@ -4,87 +4,85 @@ import typings.mfiles.MFiles.MFBuiltInPropertyDef
 import typings.mfiles.MFiles.MFBuiltInValueList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardControl extends StObject {
   
-  def ActivateLink(valuePart: js.Any): Unit = js.native
+  def ActivateLink(valuePart: js.Any): Unit
   
-  def AddNewItem(name: String): js.Any = js.native
+  def AddNewItem(name: String): js.Any
   
-  def AddNewSubItem(name: String, valueParent: js.Any): js.Any = js.native
+  def AddNewSubItem(name: String, valueParent: js.Any): js.Any
   
-  val AllowAdding: Boolean = js.native
+  val AllowAdding: Boolean
   
-  def AllowHitHighlighting(): Boolean = js.native
+  def AllowHitHighlighting(): Boolean
   
-  def CanActivateLink(valuePart: js.Any): Boolean = js.native
+  def CanActivateLink(valuePart: js.Any): Boolean
   
-  def CanAddNewSubItem(name: String, valueParent: js.Any): Boolean = js.native
+  def CanAddNewSubItem(name: String, valueParent: js.Any): Boolean
   
-  def CanEditItem(value: js.Any): Boolean = js.native
+  def CanEditItem(value: js.Any): Boolean
   
-  def CreateSelectionList(): IMetadataCardSelectionList = js.native
+  def CreateSelectionList(): IMetadataCardSelectionList
   
-  def CreateUnvalidatedValue(valueString: String): IMetadataCardUnvalidatedValue = js.native
+  def CreateUnvalidatedValue(valueString: String): IMetadataCardUnvalidatedValue
   
-  def EditItem(value: js.Any): js.Any = js.native
+  def EditItem(value: js.Any): js.Any
   
-  val Events: IEvents = js.native
+  val Events: IEvents
   
-  def FindItem(name: String): js.Any = js.native
+  def FindItem(name: String): js.Any
   
-  def FindItemByID(itemID: Double): js.Any = js.native
+  def FindItemByID(itemID: Double): js.Any
   
-  def GetSelectableValueItemStates(): js.Any = js.native
+  def GetSelectableValueItemStates(): js.Any
   
-  def GetValueSuggestions(): js.Any = js.native
+  def GetValueSuggestions(): js.Any
   
-  def HasAutomaticValue(): Boolean = js.native
+  def HasAutomaticValue(): Boolean
   
-  def HasInitialValue(): Boolean = js.native
+  def HasInitialValue(): Boolean
   
-  def HasUncalculatedAutomaticValue(): Boolean = js.native
+  def HasUncalculatedAutomaticValue(): Boolean
   
-  val Hierarchical: Boolean = js.native
+  val Hierarchical: Boolean
   
-  val ID: String = js.native
+  val ID: String
   
-  def IsExternal(): Boolean = js.native
+  def IsExternal(): Boolean
   
-  var Label: String = js.native
+  var Label: String
   
-  val Linked: Boolean = js.native
+  val Linked: Boolean
   
-  var Modified: Boolean = js.native
+  var Modified: Boolean
   
-  var MustExist: Boolean = js.native
+  var MustExist: Boolean
   
-  val PropertyDef: MFBuiltInPropertyDef | Double = js.native
+  val PropertyDef: MFBuiltInPropertyDef | Double
   
-  var ReadOnly: Boolean = js.native
+  var ReadOnly: Boolean
   
-  val RealObjectType: Boolean = js.native
+  val RealObjectType: Boolean
   
-  def RefreshList(): Unit = js.native
+  def RefreshList(): Unit
   
-  def Remove(): Unit = js.native
+  def Remove(): Unit
   
-  def RevertToInitialValue(): Unit = js.native
+  def RevertToInitialValue(): Unit
   
-  def SetValueItemState(itemID: String, state: js.Any): Unit = js.native
+  def SetValueItemState(itemID: String, state: js.Any): Unit
   
-  val Type: String = js.native
+  val Type: String
   
-  var Value: js.Any = js.native
+  var Value: js.Any
   
-  var ValueRequired: Boolean = js.native
+  var ValueRequired: Boolean
   
-  val Valuelist: MFBuiltInValueList | Double = js.native
+  val Valuelist: MFBuiltInValueList | Double
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object IMetadataCardControl {
   

@@ -2,44 +2,42 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A customer feedback about an alert.
   */
-@js.native
 trait SchemaAlertFeedback extends StObject {
   
   /**
     * Output only. The alert identifier.
     */
-  var alertId: js.UndefOr[String] = js.native
+  var alertId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time this feedback was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The unique identifier of the Google account of the customer.
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The email of the user that provided the feedback.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The unique identifier for the feedback.
     */
-  var feedbackId: js.UndefOr[String] = js.native
+  var feedbackId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The type of the feedback.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaAlertFeedback {
   

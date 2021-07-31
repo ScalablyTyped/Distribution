@@ -3,29 +3,27 @@ package typings.cesium.anon
 import typings.cesium.mod.MaterialAppearance.MaterialSupport
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FaceForward extends StObject {
   
-  var closed: js.UndefOr[Boolean] = js.native
+  var closed: js.UndefOr[Boolean] = js.undefined
   
-  var faceForward: js.UndefOr[Boolean] = js.native
+  var faceForward: js.UndefOr[Boolean] = js.undefined
   
-  var flat: js.UndefOr[Boolean] = js.native
+  var flat: js.UndefOr[Boolean] = js.undefined
   
-  var fragmentShaderSource: js.UndefOr[String] = js.native
+  var fragmentShaderSource: js.UndefOr[String] = js.undefined
   
-  var material: js.UndefOr[typings.cesium.mod.Material] = js.native
+  var material: js.UndefOr[typings.cesium.mod.Material] = js.undefined
   
-  var materialSupport: js.UndefOr[MaterialSupport] = js.native
+  var materialSupport: js.UndefOr[MaterialSupport] = js.undefined
   
-  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.native
+  var renderState: js.UndefOr[typings.cesium.mod.RenderState] = js.undefined
   
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
   
-  var vertexShaderSource: js.UndefOr[String] = js.native
+  var vertexShaderSource: js.UndefOr[String] = js.undefined
 }
 object FaceForward {
   

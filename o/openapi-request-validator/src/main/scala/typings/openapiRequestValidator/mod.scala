@@ -15,21 +15,65 @@ import typings.openapiTypes.mod.OpenAPIV3.RequestBodyObject
 import typings.tsLog.mod.Logger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("openapi-request-validator", JSImport.Default)
   @js.native
-  class default protected () extends OpenAPIRequestValidator {
+  class default protected ()
+    extends StObject
+       with OpenAPIRequestValidator {
     def this(args: OpenAPIRequestValidatorArgs) = this()
+    
+    /* CompleteClass */
+    var bodySchema: js.Any = js.native
+    
+    /* CompleteClass */
+    var errorMapper: js.Any = js.native
+    
+    /* CompleteClass */
+    var isBodyRequired: js.Any = js.native
+    
+    /* CompleteClass */
+    var logger: js.Any = js.native
+    
+    /* CompleteClass */
+    var loggingKey: js.Any = js.native
+    
+    /* CompleteClass */
+    var requestBody: js.Any = js.native
+    
+    /* CompleteClass */
+    var requestBodyValidators: js.Any = js.native
+    
+    /* CompleteClass */
+    override def validate(request: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    var validateBody: js.Any = js.native
+    
+    /* CompleteClass */
+    var validateFormData: js.Any = js.native
+    
+    /* CompleteClass */
+    var validateHeaders: js.Any = js.native
+    
+    /* CompleteClass */
+    var validatePath: js.Any = js.native
+    
+    /* CompleteClass */
+    var validateQuery: js.Any = js.native
+    
+    /* CompleteClass */
+    override def validateRequest(request: js.Any): js.Any = js.native
+    /* CompleteClass */
+    override def validateRequest(request: Request): js.Any = js.native
   }
   
-  @js.native
   trait IOpenAPIRequestValidator extends StObject {
     
-    def validateRequest(request: Request): js.Any = js.native
+    def validateRequest(request: Request): js.Any
   }
   object IOpenAPIRequestValidator {
     
@@ -47,36 +91,37 @@ object mod {
     }
   }
   
-  @js.native
-  trait OpenAPIRequestValidator extends IOpenAPIRequestValidator {
+  trait OpenAPIRequestValidator
+    extends StObject
+       with IOpenAPIRequestValidator {
     
-    var bodySchema: js.Any = js.native
+    var bodySchema: js.Any
     
-    var errorMapper: js.Any = js.native
+    var errorMapper: js.Any
     
-    var isBodyRequired: js.Any = js.native
+    var isBodyRequired: js.Any
     
-    var logger: js.Any = js.native
+    var logger: js.Any
     
-    var loggingKey: js.Any = js.native
+    var loggingKey: js.Any
     
-    var requestBody: js.Any = js.native
+    var requestBody: js.Any
     
-    var requestBodyValidators: js.Any = js.native
+    var requestBodyValidators: js.Any
     
-    def validate(request: js.Any): Unit = js.native
+    def validate(request: js.Any): Unit
     
-    var validateBody: js.Any = js.native
+    var validateBody: js.Any
     
-    var validateFormData: js.Any = js.native
+    var validateFormData: js.Any
     
-    var validateHeaders: js.Any = js.native
+    var validateHeaders: js.Any
     
-    var validatePath: js.Any = js.native
+    var validatePath: js.Any
     
-    var validateQuery: js.Any = js.native
+    var validateQuery: js.Any
     
-    def validateRequest(request: js.Any): js.Any = js.native
+    def validateRequest(request: js.Any): js.Any
   }
   object OpenAPIRequestValidator {
     
@@ -148,34 +193,33 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPIRequestValidatorArgs extends StObject {
     
-    var componentSchemas: js.UndefOr[js.Array[IJsonSchema]] = js.native
+    var componentSchemas: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
     
-    var customFormats: js.UndefOr[StringDictionary[FormatValidator | FormatDefinition]] = js.native
+    var customFormats: js.UndefOr[StringDictionary[FormatValidator | FormatDefinition]] = js.undefined
     
-    var customKeywords: js.UndefOr[StringDictionary[KeywordDefinition]] = js.native
+    var customKeywords: js.UndefOr[StringDictionary[KeywordDefinition]] = js.undefined
     
     var errorTransformer: js.UndefOr[
         js.Function2[
           /* openAPIResponseValidatorValidationError */ OpenAPIRequestValidatorError, 
           /* ajvError */ ErrorObject, 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var externalSchemas: js.UndefOr[StringDictionary[IJsonSchema]] = js.native
+    var externalSchemas: js.UndefOr[StringDictionary[IJsonSchema]] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var loggingKey: js.UndefOr[String] = js.native
+    var loggingKey: js.UndefOr[String] = js.undefined
     
-    var parameters: js.UndefOr[Parameters] = js.native
+    var parameters: js.UndefOr[Parameters] = js.undefined
     
-    var requestBody: js.UndefOr[RequestBodyObject] = js.native
+    var requestBody: js.UndefOr[RequestBodyObject] = js.undefined
     
-    var schemas: js.UndefOr[js.Array[IJsonSchema]] = js.native
+    var schemas: js.UndefOr[js.Array[IJsonSchema]] = js.undefined
   }
   object OpenAPIRequestValidatorArgs {
     
@@ -211,7 +255,7 @@ object mod {
       
       @scala.inline
       def setErrorTransformer(
-        value: (/* openAPIResponseValidatorValidationError */ OpenAPIRequestValidatorError, /* ajvError */ ErrorObject) => _
+        value: (/* openAPIResponseValidatorValidationError */ OpenAPIRequestValidatorError, /* ajvError */ ErrorObject) => js.Any
       ): Self = StObject.set(x, "errorTransformer", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -263,18 +307,17 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenAPIRequestValidatorError extends StObject {
     
-    var errorCode: String = js.native
+    var errorCode: String
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[js.Any] = js.native
+    var schema: js.UndefOr[js.Any] = js.undefined
   }
   object OpenAPIRequestValidatorError {
     

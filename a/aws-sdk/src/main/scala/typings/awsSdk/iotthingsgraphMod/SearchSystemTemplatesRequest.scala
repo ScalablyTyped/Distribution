@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSystemTemplatesRequest extends StObject {
   
   /**
     * An array of filters that limit the result set. The only valid filter is FLOW_TEMPLATE_ID.
     */
-  var filters: js.UndefOr[SystemTemplateFilters] = js.native
+  var filters: js.UndefOr[SystemTemplateFilters] = js.undefined
   
   /**
     * The maximum number of results to return in the response.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The string that specifies the next page of results. Use this when you're paginating results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object SearchSystemTemplatesRequest {
   

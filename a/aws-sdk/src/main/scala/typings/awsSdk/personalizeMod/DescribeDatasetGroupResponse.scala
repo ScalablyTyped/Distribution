@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDatasetGroupResponse extends StObject {
   
   /**
     * A listing of the dataset group's properties.
     */
-  var datasetGroup: js.UndefOr[DatasetGroup] = js.native
+  var datasetGroup: js.UndefOr[DatasetGroup] = js.undefined
 }
 object DescribeDatasetGroupResponse {
   

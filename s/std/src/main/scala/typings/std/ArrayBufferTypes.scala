@@ -2,18 +2,16 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Allowed ArrayBuffer types for the buffer of an ArrayBufferView and related Typed Arrays.
   */
-@js.native
 trait ArrayBufferTypes extends StObject {
   
-  var ArrayBuffer: typings.std.ArrayBuffer = js.native
+  var ArrayBuffer: typings.std.ArrayBuffer
   
-  var SharedArrayBuffer: typings.std.SharedArrayBuffer = js.native
+  var SharedArrayBuffer: typings.std.SharedArrayBuffer
 }
 object ArrayBufferTypes {
   

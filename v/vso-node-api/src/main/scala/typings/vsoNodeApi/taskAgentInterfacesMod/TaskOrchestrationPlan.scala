@@ -3,33 +3,33 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskOrchestrationPlan extends TaskOrchestrationPlanReference {
+trait TaskOrchestrationPlan
+  extends StObject
+     with TaskOrchestrationPlanReference {
   
-  var environment: PlanEnvironment = js.native
+  var environment: PlanEnvironment
   
-  var finishTime: Date = js.native
+  var finishTime: Date
   
-  var implementation: TaskOrchestrationContainer = js.native
+  var implementation: TaskOrchestrationContainer
   
-  var planGroup: String = js.native
+  var planGroup: String
   
-  var requestedById: String = js.native
+  var requestedById: String
   
-  var requestedForId: String = js.native
+  var requestedForId: String
   
-  var result: TaskResult = js.native
+  var result: TaskResult
   
-  var resultCode: String = js.native
+  var resultCode: String
   
-  var startTime: Date = js.native
+  var startTime: Date
   
-  var state: TaskOrchestrationPlanState = js.native
+  var state: TaskOrchestrationPlanState
   
-  var timeline: TimelineReference = js.native
+  var timeline: TimelineReference
 }
 object TaskOrchestrationPlan {
   

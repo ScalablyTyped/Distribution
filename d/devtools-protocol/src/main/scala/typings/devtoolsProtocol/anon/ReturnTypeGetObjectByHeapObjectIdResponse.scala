@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.GetObjectByHeapObjectI
 import typings.devtoolsProtocol.mod.Protocol.HeapProfiler.GetObjectByHeapObjectIdResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetObjectByHeapObjectIdResponse extends StObject {
   
-  var paramsType: js.Array[GetObjectByHeapObjectIdRequest] = js.native
+  var paramsType: js.Array[GetObjectByHeapObjectIdRequest]
   
-  var returnType: GetObjectByHeapObjectIdResponse = js.native
+  var returnType: GetObjectByHeapObjectIdResponse
 }
 object ReturnTypeGetObjectByHeapObjectIdResponse {
   

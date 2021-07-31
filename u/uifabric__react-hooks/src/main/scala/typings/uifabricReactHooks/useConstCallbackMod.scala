@@ -2,12 +2,14 @@ package typings.uifabricReactHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useConstCallbackMod {
   
-  @JSImport("@uifabric/react-hooks/lib/useConstCallback", "useConstCallback")
+  @JSImport("@uifabric/react-hooks/lib/useConstCallback", JSImport.Namespace)
   @js.native
-  def useConstCallback[T /* <: js.Function1[/* repeated */ js.Any, _] */](callback: T): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useConstCallback[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](callback: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useConstCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[T]
 }

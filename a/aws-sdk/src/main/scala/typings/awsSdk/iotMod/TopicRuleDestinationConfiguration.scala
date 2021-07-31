@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleDestinationConfiguration extends StObject {
   
   /**
     * Configuration of the HTTP URL.
     */
-  var httpUrlConfiguration: js.UndefOr[HttpUrlDestinationConfiguration] = js.native
+  var httpUrlConfiguration: js.UndefOr[HttpUrlDestinationConfiguration] = js.undefined
 }
 object TopicRuleDestinationConfiguration {
   

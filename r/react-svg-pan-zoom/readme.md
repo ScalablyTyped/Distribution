@@ -10,9 +10,9 @@ A React component that adds pan and zoom features to SVG
 | ------------------ | :-------------: |
 | Full name          | react-svg-pan-zoom |
 | Keywords           | react, react-component, svg, pan, zoom, react, ui, user, interface, component, web-components |
-| # releases         | 14 |
-| # dependents       | 22 |
-| # downloads        | 211976 |
+| # releases         | 17 |
+| # dependents       | 21 |
+| # downloads        | 204023 |
 | # stars            | 1 |
 
 ## Links

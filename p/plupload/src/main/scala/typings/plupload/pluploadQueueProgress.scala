@@ -2,27 +2,25 @@ package typings.plupload
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait pluploadQueueProgress extends StObject {
   
-  var bytesPerSec: Double = js.native
+  var bytesPerSec: Double
   
-  var failed: Double = js.native
+  var failed: Double
   
-  var loaded: Double = js.native
+  var loaded: Double
   
-  var percent: Double = js.native
+  var percent: Double
   
-  var queued: Double = js.native
+  var queued: Double
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  var size: Double = js.native
+  var size: Double
   
-  var uploaded: Double = js.native
+  var uploaded: Double
 }
 object pluploadQueueProgress {
   

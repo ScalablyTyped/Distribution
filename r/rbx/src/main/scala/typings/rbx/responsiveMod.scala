@@ -15,31 +15,28 @@ import typings.rbx.factoryMod.MakeValidatingTransformFunction
 import typings.rbx.factoryMod.TransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object responsiveMod {
   
-  @JSImport("rbx/base/helpers/responsive", "makePropTypes")
+  @JSImport("rbx/base/helpers/responsive", JSImport.Namespace)
   @js.native
-  def makePropTypes(): ValidationMap[_] = js.native
-  @JSImport("rbx/base/helpers/responsive", "makePropTypes")
-  @js.native
-  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rbx/base/helpers/responsive", "makeResponsiveBreakpointLimitedPropTypes")
-  @js.native
-  def makeResponsiveBreakpointLimitedPropTypes(): ValidationMap[_] = js.native
-  @JSImport("rbx/base/helpers/responsive", "makeResponsiveBreakpointLimitedPropTypes")
-  @js.native
-  def makeResponsiveBreakpointLimitedPropTypes(variables: PartialVariablesDefinitio): ValidationMap[_] = js.native
+  @scala.inline
+  def makePropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  @scala.inline
+  def makePropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makePropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
-  @JSImport("rbx/base/helpers/responsive", "makeResponsiveBreakpointPropTypes")
-  @js.native
-  def makeResponsiveBreakpointPropTypes(): ValidationMap[_] = js.native
-  @JSImport("rbx/base/helpers/responsive", "makeResponsiveBreakpointPropTypes")
-  @js.native
-  def makeResponsiveBreakpointPropTypes(variables: PartialVariablesDefinitio): ValidationMap[_] = js.native
+  @scala.inline
+  def makeResponsiveBreakpointLimitedPropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointLimitedPropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  @scala.inline
+  def makeResponsiveBreakpointLimitedPropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointLimitedPropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
+  
+  @scala.inline
+  def makeResponsiveBreakpointPropTypes(): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointPropTypes")().asInstanceOf[ValidationMap[js.Any]]
+  @scala.inline
+  def makeResponsiveBreakpointPropTypes(variables: PartialVariablesDefinitio): ValidationMap[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeResponsiveBreakpointPropTypes")(variables.asInstanceOf[js.Any]).asInstanceOf[ValidationMap[js.Any]]
   
   @JSImport("rbx/base/helpers/responsive", "makeValidatingTransform")
   @js.native
@@ -49,16 +46,15 @@ object responsiveMod {
   @js.native
   val transform: TransformFunction[ResponsiveHelpersProps, js.Object] = js.native
   
-  @js.native
   trait LimitedResponsiveBreakpointProps extends StObject {
     
-    var display: js.UndefOr[Value] = js.native
+    var display: js.UndefOr[Value] = js.undefined
     
-    var hide: js.UndefOr[ValueBoolean] = js.native
+    var hide: js.UndefOr[ValueBoolean] = js.undefined
     
-    var textAlign: js.UndefOr[`1`] = js.native
+    var textAlign: js.UndefOr[`1`] = js.undefined
     
-    var textSize: js.UndefOr[`2`] = js.native
+    var textSize: js.UndefOr[`2`] = js.undefined
   }
   object LimitedResponsiveBreakpointProps {
     
@@ -97,16 +93,15 @@ object responsiveMod {
     }
   }
   
-  @js.native
   trait ResponsiveBreakpointProps extends StObject {
     
-    var display: js.UndefOr[Only] = js.native
+    var display: js.UndefOr[Only] = js.undefined
     
-    var hide: js.UndefOr[OnlyValue] = js.native
+    var hide: js.UndefOr[OnlyValue] = js.undefined
     
-    var textAlign: js.UndefOr[`3`] = js.native
+    var textAlign: js.UndefOr[`3`] = js.undefined
     
-    var textSize: js.UndefOr[`4`] = js.native
+    var textSize: js.UndefOr[`4`] = js.undefined
   }
   object ResponsiveBreakpointProps {
     
@@ -145,10 +140,9 @@ object responsiveMod {
     }
   }
   
-  @js.native
   trait ResponsiveHelpersProps extends StObject {
     
-    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.native
+    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.undefined
   }
   object ResponsiveHelpersProps {
     

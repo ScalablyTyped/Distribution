@@ -2,12 +2,14 @@ package typings.formatjsIntlRelativetimeformat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatjsIntlRelativetimeformatShouldPolyfillMod {
   
-  @JSImport("@formatjs/intl-relativetimeformat/should-polyfill", "shouldPolyfill")
+  @JSImport("@formatjs/intl-relativetimeformat/should-polyfill", JSImport.Namespace)
   @js.native
-  def shouldPolyfill(): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def shouldPolyfill(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("shouldPolyfill")().asInstanceOf[Boolean]
 }

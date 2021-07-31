@@ -26,7 +26,6 @@ import typings.typeorm.sqljsEntityManagerMod.SqljsEntityManager
 import typings.typeorm.treeRepositoryMod.TreeRepository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod {
@@ -64,8 +63,8 @@ object connectionMod {
     /**
       * Creates a new query builder that can be used to build a sql query.
       */
-    def createQueryBuilder(): SelectQueryBuilder[_] = js.native
-    def createQueryBuilder(queryRunner: QueryRunner): SelectQueryBuilder[_] = js.native
+    def createQueryBuilder(): SelectQueryBuilder[js.Any] = js.native
+    def createQueryBuilder(queryRunner: QueryRunner): SelectQueryBuilder[js.Any] = js.native
     /**
       * Creates a new query builder that can be used to build a sql query.
       */
@@ -105,7 +104,7 @@ object connectionMod {
     /**
       * Finds exist entity metadata by the given entity class, target name or table name.
       */
-    /* protected */ def findMetadata(target: EntityTarget[_]): js.UndefOr[EntityMetadata] = js.native
+    /* protected */ def findMetadata(target: EntityTarget[js.Any]): js.UndefOr[EntityMetadata] = js.native
     
     /**
       * Gets custom entity repository marked with @EntityRepository decorator.
@@ -117,12 +116,12 @@ object connectionMod {
     /**
       * Gets entity metadata of the junction table (many-to-many table).
       */
-    def getManyToManyMetadata(entityTarget: EntityTarget[_], relationPropertyPath: String): js.UndefOr[EntityMetadata] = js.native
+    def getManyToManyMetadata(entityTarget: EntityTarget[js.Any], relationPropertyPath: String): js.UndefOr[EntityMetadata] = js.native
     
     /**
       * Gets entity metadata for the given entity class or schema name.
       */
-    def getMetadata(target: EntityTarget[_]): EntityMetadata = js.native
+    def getMetadata(target: EntityTarget[js.Any]): EntityMetadata = js.native
     
     /**
       * Gets mongodb-specific repository for the given entity class or name.
@@ -144,7 +143,7 @@ object connectionMod {
     /**
       * Checks if entity metadata exist for the given entity class, target name or table name.
       */
-    def hasMetadata(target: EntityTarget[_]): Boolean = js.native
+    def hasMetadata(target: EntityTarget[js.Any]): Boolean = js.native
     
     /**
       * Indicates if connection is initialized or not.
@@ -192,10 +191,10 @@ object connectionMod {
     /**
       * Executes raw SQL query and returns raw database results.
       */
-    def query(query: String): js.Promise[_] = js.native
-    def query(query: String, parameters: js.UndefOr[scala.Nothing], queryRunner: QueryRunner): js.Promise[_] = js.native
-    def query(query: String, parameters: js.Array[_]): js.Promise[_] = js.native
-    def query(query: String, parameters: js.Array[_], queryRunner: QueryRunner): js.Promise[_] = js.native
+    def query(query: String): js.Promise[js.Any] = js.native
+    def query(query: String, parameters: js.Array[js.Any]): js.Promise[js.Any] = js.native
+    def query(query: String, parameters: js.Array[js.Any], queryRunner: QueryRunner): js.Promise[js.Any] = js.native
+    def query(query: String, parameters: Unit, queryRunner: QueryRunner): js.Promise[js.Any] = js.native
     
     /**
       * Used to work with query result cache.
@@ -235,7 +234,7 @@ object connectionMod {
     /**
       * Entity subscriber instances that are registered for this connection.
       */
-    val subscribers: js.Array[EntitySubscriberInterface[_]] = js.native
+    val subscribers: js.Array[EntitySubscriberInterface[js.Any]] = js.native
     
     /**
       * Creates database schema for all entities registered in this connection.

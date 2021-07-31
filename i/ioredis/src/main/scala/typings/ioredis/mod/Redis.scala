@@ -4,7 +4,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,7 +23,7 @@ trait Redis
   
   val options: RedisOptions = js.native
   
-  def send_command(command: String, args: ValueType*): js.Promise[_] = js.native
+  def send_command(command: String, args: ValueType*): js.Promise[js.Any] = js.native
   
   val status: String = js.native
 }

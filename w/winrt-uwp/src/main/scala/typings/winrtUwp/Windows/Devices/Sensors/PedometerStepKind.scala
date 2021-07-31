@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PedometerStepKind extends StObject {
   
   /** A running step. */
   @js.native
-  sealed trait running extends PedometerStepKind
+  sealed trait running
+    extends StObject
+       with PedometerStepKind
   
   /** An unknown step type. */
   @js.native
-  sealed trait unknown extends PedometerStepKind
+  sealed trait unknown
+    extends StObject
+       with PedometerStepKind
   
   /** A walking step. */
   @js.native
-  sealed trait walking extends PedometerStepKind
+  sealed trait walking
+    extends StObject
+       with PedometerStepKind
 }

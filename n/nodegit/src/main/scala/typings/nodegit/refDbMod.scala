@@ -3,7 +3,6 @@ package typings.nodegit
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refDbMod {
@@ -19,8 +18,11 @@ object refDbMod {
   /* static members */
   object Refdb {
     
-    @JSImport("nodegit/ref-db", "Refdb.open")
+    @JSImport("nodegit/ref-db", "Refdb")
     @js.native
-    def open(repo: Repository): js.Promise[Refdb] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def open(repo: Repository): js.Promise[Refdb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Refdb]]
   }
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Object extends StObject {
   
   /**
     * The name of the S3 bucket.
     */
-  var Bucket: js.UndefOr[S3Bucket] = js.native
+  var Bucket: js.UndefOr[S3Bucket] = js.undefined
   
   /**
     * The file name of the input document. Synchronous operations can use image files that are in JPEG or PNG format. Asynchronous operations also support PDF format files.
     */
-  var Name: js.UndefOr[S3ObjectName] = js.native
+  var Name: js.UndefOr[S3ObjectName] = js.undefined
   
   /**
     * If the bucket has versioning enabled, you can specify the object version. 
     */
-  var Version: js.UndefOr[S3ObjectVersion] = js.native
+  var Version: js.UndefOr[S3ObjectVersion] = js.undefined
 }
 object S3Object {
   

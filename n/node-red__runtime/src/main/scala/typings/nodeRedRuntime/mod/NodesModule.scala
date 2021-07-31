@@ -13,10 +13,8 @@ import typings.nodeRedRuntime.anon.Req
 import typings.nodeRedRuntime.anon.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodesModule extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the node module info
     */
-  def addModule(opts: Version): js.Promise[js.Object] = js.native
+  def addModule(opts: Version): js.Promise[js.Object]
   
   /**
     * Gets a node icon
@@ -38,7 +36,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the icon file as a Buffer or null if no icon available
     */
-  def getIcon(opts: IconModule): js.Promise[Buffer] = js.native
+  def getIcon(opts: IconModule): js.Promise[Buffer]
   
   /**
     * Gets the list of all icons available in the modules installed within the runtime
@@ -46,7 +44,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the list of all icons
     */
-  def getIconList(opts: Req): js.Promise[js.Object] = js.native
+  def getIconList(opts: Req): js.Promise[js.Object]
   
   /**
     * Gets a modules message catalog
@@ -56,7 +54,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the message catalog
     */
-  def getModuleCatalog(opts: LangModule): js.Promise[js.Object] = js.native
+  def getModuleCatalog(opts: LangModule): js.Promise[js.Object]
   
   /**
     * Gets all registered module message catalogs
@@ -65,7 +63,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the message catalogs
     */
-  def getModuleCatalogs(opts: LangReq): js.Promise[js.Object] = js.native
+  def getModuleCatalogs(opts: LangReq): js.Promise[js.Object]
   
   /**
     * Gets the info of a node module
@@ -74,7 +72,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the node module info
     */
-  def getModuleInfo(opts: ModuleReq): js.Promise[js.Object] = js.native
+  def getModuleInfo(opts: ModuleReq): js.Promise[js.Object]
   
   /**
     * Gets an individual node's html content
@@ -84,7 +82,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns - the node html content
     */
-  def getNodeConfig(opts: Lang): js.Promise[String] = js.native
+  def getNodeConfig(opts: Lang): js.Promise[String]
   
   /**
     * Gets all node html content
@@ -93,7 +91,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the node html content
     */
-  def getNodeConfigs(opts: LangReq): js.Promise[String] = js.native
+  def getNodeConfigs(opts: LangReq): js.Promise[String]
   
   /**
     * Gets the info of an individual node set
@@ -102,7 +100,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the node information
     */
-  def getNodeInfo(opts: IdReq): js.Promise[js.Object] = js.native
+  def getNodeInfo(opts: IdReq): js.Promise[js.Object]
   
   /**
     * Gets the list of node modules installed in the runtime
@@ -110,7 +108,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the list of node modules
     */
-  def getNodeList(opts: Req): js.Promise[js.Array[js.Object]] = js.native
+  def getNodeList(opts: Req): js.Promise[js.Array[js.Object]]
   
   /**
     * Removes a module from the runtime
@@ -119,7 +117,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns resolves when complete
     */
-  def removeModule(opts: ModuleReq): js.Promise[Unit] = js.native
+  def removeModule(opts: ModuleReq): js.Promise[Unit]
   
   /**
     * Enables or disables a module in the runtime
@@ -129,7 +127,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the module info object
     */
-  def setModuleState(opts: EnabledModule): js.Promise[js.Object] = js.native
+  def setModuleState(opts: EnabledModule): js.Promise[js.Object]
   
   /**
     * Enables or disables a n individual node-set in the runtime
@@ -139,7 +137,7 @@ trait NodesModule extends StObject {
     * @param opts.req - the request to log (optional)
     * @returns the module info object
     */
-  def setNodeSetState(opts: EnabledId): js.Promise[js.Object] = js.native
+  def setNodeSetState(opts: EnabledId): js.Promise[js.Object]
 }
 object NodesModule {
   

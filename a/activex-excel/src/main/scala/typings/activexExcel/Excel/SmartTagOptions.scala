@@ -2,24 +2,22 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartTagOptions extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  var DisplaySmartTags: XlSmartTagDisplayMode = js.native
+  var DisplaySmartTags: XlSmartTagDisplayMode
   
-  var EmbedSmartTags: Boolean = js.native
+  var EmbedSmartTags: Boolean
   
   @JSName("Excel.SmartTagOptions_typekey")
-  var ExcelDotSmartTagOptions_typekey: SmartTagOptions = js.native
+  var ExcelDotSmartTagOptions_typekey: SmartTagOptions
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object SmartTagOptions {
   

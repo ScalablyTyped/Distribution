@@ -2,27 +2,25 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QTable extends StObject {
   
-  var colCount: Double = js.native
+  var colCount: Double
   
-  def exportData(options: ExportDataOptions, callback: js.Function1[/* url */ String, Unit]): Unit = js.native
+  def exportData(options: ExportDataOptions, callback: js.Function1[/* url */ String, Unit]): Unit
   
-  def getColByName(fld: String): js.UndefOr[Double] = js.native
+  def getColByName(fld: String): js.UndefOr[Double]
   
-  def getMoreData(): Unit = js.native
+  def getMoreData(): Unit
   
-  var headers: js.Array[QHeader] = js.native
+  var headers: js.Array[QHeader]
   
-  var rowCount: Double = js.native
+  var rowCount: Double
   
-  var rows: js.Array[QRow] = js.native
+  var rows: js.Array[QRow]
   
-  var totals: js.Array[QMeasureCell] = js.native
+  var totals: js.Array[QMeasureCell]
 }
 object QTable {
   

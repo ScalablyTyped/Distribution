@@ -2,27 +2,25 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDevicesRequest extends StObject {
   
   /**
     * The type of the device, such as "button".
     */
-  var DeviceType: js.UndefOr[string] = js.native
+  var DeviceType: js.UndefOr[string] = js.undefined
   
   /**
     * The maximum number of results to return per request. If not set, a default value of
     100 is used.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.MaxResults] = js.undefined
   
   /**
     * The token to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListDevicesRequest {
   

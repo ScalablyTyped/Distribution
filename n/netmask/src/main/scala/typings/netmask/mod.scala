@@ -2,10 +2,13 @@ package typings.netmask
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("netmask", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("netmask", "Netmask")
   @js.native
@@ -53,11 +56,9 @@ object mod {
     var size: Double = js.native
   }
   
-  @JSImport("netmask", "ip2long")
-  @js.native
-  def ip2long(ip: String): Double = js.native
+  @scala.inline
+  def ip2long(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("ip2long")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("netmask", "long2ip")
-  @js.native
-  def long2ip(long: Double): String = js.native
+  @scala.inline
+  def long2ip(long: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("long2ip")(long.asInstanceOf[js.Any]).asInstanceOf[String]
 }

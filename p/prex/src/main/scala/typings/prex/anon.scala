@@ -2,15 +2,13 @@ package typings.prex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dispose extends StObject {
     
-    def dispose(): js.Any = js.native
+    def dispose(): js.Any
   }
   object Dispose {
     

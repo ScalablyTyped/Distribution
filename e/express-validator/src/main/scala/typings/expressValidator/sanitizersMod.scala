@@ -4,7 +4,6 @@ import typings.expressValidator.baseMod.CustomSanitizer
 import typings.expressValidator.optionsMod.NormalizeEmailOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sanitizersMod {

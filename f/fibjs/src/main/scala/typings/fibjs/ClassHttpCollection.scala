@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 @js.native
-trait ClassHttpCollection extends ClassObject {
+trait ClassHttpCollection
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -42,7 +43,7 @@ trait ClassHttpCollection extends ClassObject {
     * 
     * 
     */
-  def all(name: String): js.Array[_] = js.native
+  def all(name: String): js.Array[js.Any] = js.native
   
   /**
     * 

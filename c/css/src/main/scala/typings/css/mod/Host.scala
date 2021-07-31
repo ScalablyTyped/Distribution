@@ -2,16 +2,15 @@ package typings.css.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Host
-  extends Node
+  extends StObject
+     with Node
      with AtRule {
   
   /** Array of nodes with the types rule, comment and any of the at-rule types. */
-  var rules: js.UndefOr[js.Array[Rule | Comment | AtRule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule | Comment | AtRule]] = js.undefined
 }
 object Host {
   

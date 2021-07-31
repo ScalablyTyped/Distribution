@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAssignedLocationsResponse extends StObject {
   
   /** The list of assigned locations. This list will be absent if empty. */
-  var assignedLocations: js.UndefOr[js.Array[AssignedLocation]] = js.native
+  var assignedLocations: js.UndefOr[js.Array[AssignedLocation]] = js.undefined
   
   /** A token to retrieve the next page of results. Pass this value in the page_token field in the subsequent call to `ListAssignedLocations` method to retrieve the next page of results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListAssignedLocationsResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportDestination extends StObject {
   
   /**
     * An object that describes the destination Amazon Simple Storage Service (Amazon S3) bucket name and object keys of a recommendations export file, and its associated metadata file.
     */
-  var s3: js.UndefOr[S3Destination] = js.native
+  var s3: js.UndefOr[S3Destination] = js.undefined
 }
 object ExportDestination {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to toggle justified paragraph alignment on and off.
   */
-@js.native
-trait ToggleParagraphAlignmentJustifyCommand extends CommandWithBooleanStateBase {
+trait ToggleParagraphAlignmentJustifyCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ToggleParagraphAlignmentJustifyCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleParagraphAlignmentJustifyCommand {
   

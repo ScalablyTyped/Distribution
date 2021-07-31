@@ -2,16 +2,14 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutConferencePreferenceRequest extends StObject {
   
   /**
     * The conference preference of a specific conference provider.
     */
-  var ConferencePreference: typings.awsSdk.alexaforbusinessMod.ConferencePreference = js.native
+  var ConferencePreference: typings.awsSdk.alexaforbusinessMod.ConferencePreference
 }
 object PutConferencePreferenceRequest {
   

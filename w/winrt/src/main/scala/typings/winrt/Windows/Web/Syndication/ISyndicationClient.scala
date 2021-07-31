@@ -5,25 +5,23 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyndicationClient extends StObject {
   
-  var bypassCacheOnRetrieve: Boolean = js.native
+  var bypassCacheOnRetrieve: Boolean
   
-  var maxResponseBufferSize: Double = js.native
+  var maxResponseBufferSize: Double
   
-  var proxyCredential: PasswordCredential = js.native
+  var proxyCredential: PasswordCredential
   
-  def retrieveFeedAsync(uri: Uri): IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress] = js.native
+  def retrieveFeedAsync(uri: Uri): IAsyncOperationWithProgress[SyndicationFeed, RetrievalProgress]
   
-  var serverCredential: PasswordCredential = js.native
+  var serverCredential: PasswordCredential
   
-  def setRequestHeader(name: String, value: String): Unit = js.native
+  def setRequestHeader(name: String, value: String): Unit
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object ISyndicationClient {
   

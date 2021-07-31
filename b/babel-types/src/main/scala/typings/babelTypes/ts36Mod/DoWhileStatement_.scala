@@ -3,38 +3,30 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.DoWhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoWhileStatement_
-  extends Node
+  extends StObject
+     with Node
      with BlockParent
      with Loop
      with Scopable
      with Statement
      with While {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_DoWhileStatement_ : DoWhileStatement = js.native
+  var type_DoWhileStatement_ : DoWhileStatement
 }
 object DoWhileStatement_ {
   
   @scala.inline
-  def apply(
-    body: Statement,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    test: Expression,
-    `type`: DoWhileStatement
-  ): DoWhileStatement_ = {
+  def apply(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): DoWhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("DoWhileStatement")
     __obj.asInstanceOf[DoWhileStatement_]
   }
   

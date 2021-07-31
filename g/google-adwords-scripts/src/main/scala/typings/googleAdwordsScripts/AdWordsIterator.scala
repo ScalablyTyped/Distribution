@@ -2,17 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdWordsIterator[E] extends StObject {
   
-  def hasNext(): Boolean = js.native
+  def hasNext(): Boolean
   
-  def next(): E = js.native
+  def next(): E
   
-  def totalNumEntities(): Double = js.native
+  def totalNumEntities(): Double
 }
 object AdWordsIterator {
   
@@ -23,7 +21,7 @@ object AdWordsIterator {
   }
   
   @scala.inline
-  implicit class AdWordsIteratorMutableBuilder[Self <: AdWordsIterator[_], E] (val x: Self with AdWordsIterator[E]) extends AnyVal {
+  implicit class AdWordsIteratorMutableBuilder[Self <: AdWordsIterator[?], E] (val x: Self & AdWordsIterator[E]) extends AnyVal {
     
     @scala.inline
     def setHasNext(value: () => Boolean): Self = StObject.set(x, "hasNext", js.Any.fromFunction0(value))

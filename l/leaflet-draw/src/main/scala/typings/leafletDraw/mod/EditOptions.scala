@@ -6,19 +6,17 @@ import typings.leaflet.mod.Icon_
 import typings.leafletDraw.mod.DrawOptions.DrawErrorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object EditOptions {
   
-  @js.native
   trait EditPolyVerticesEditOptions extends StObject {
     
-    var drawError: js.UndefOr[DrawErrorOptions] = js.native
+    var drawError: js.UndefOr[DrawErrorOptions] = js.undefined
     
-    var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var icon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
     
-    var touchIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var touchIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
   }
   object EditPolyVerticesEditOptions {
     
@@ -51,16 +49,15 @@ object EditOptions {
     }
   }
   
-  @js.native
   trait EditSimpleShapeOptions extends StObject {
     
-    var moveIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var moveIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
     
-    var resizeIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var resizeIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
     
-    var touchMoveIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var touchMoveIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
     
-    var touchResizeIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.native
+    var touchResizeIcon: js.UndefOr[Icon_[IconOptions] | DivIcon_] = js.undefined
   }
   object EditSimpleShapeOptions {
     

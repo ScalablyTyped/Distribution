@@ -2,19 +2,17 @@ package typings.activexWia
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DeviceID extends StObject {
     
-    val DeviceID: String = js.native
+    val DeviceID: String
     
-    val EventID: String = js.native
+    val EventID: String
     
-    val ItemID: String = js.native
+    val ItemID: String
   }
   object DeviceID {
     

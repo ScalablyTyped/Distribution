@@ -17,26 +17,21 @@ import typings.phaser.spine.webgl.SkeletonDebugRenderer
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SpinePlugin extends ScenePlugin {
+trait SpinePlugin
+  extends StObject
+     with ScenePlugin {
   
   def add(x: Double, y: Double): SpineGameObject = js.native
-  def add(
-    x: Double,
-    y: Double,
-    key: js.UndefOr[scala.Nothing],
-    animationName: js.UndefOr[scala.Nothing],
-    loop: Boolean
-  ): SpineGameObject = js.native
-  def add(x: Double, y: Double, key: js.UndefOr[scala.Nothing], animationName: String): SpineGameObject = js.native
-  def add(x: Double, y: Double, key: js.UndefOr[scala.Nothing], animationName: String, loop: Boolean): SpineGameObject = js.native
   def add(x: Double, y: Double, key: String): SpineGameObject = js.native
-  def add(x: Double, y: Double, key: String, animationName: js.UndefOr[scala.Nothing], loop: Boolean): SpineGameObject = js.native
   def add(x: Double, y: Double, key: String, animationName: String): SpineGameObject = js.native
   def add(x: Double, y: Double, key: String, animationName: String, loop: Boolean): SpineGameObject = js.native
+  def add(x: Double, y: Double, key: String, animationName: Unit, loop: Boolean): SpineGameObject = js.native
+  def add(x: Double, y: Double, key: Unit, animationName: String): SpineGameObject = js.native
+  def add(x: Double, y: Double, key: Unit, animationName: String, loop: Boolean): SpineGameObject = js.native
+  def add(x: Double, y: Double, key: Unit, animationName: Unit, loop: Boolean): SpineGameObject = js.native
   
   var cache: BaseCache = js.native
   

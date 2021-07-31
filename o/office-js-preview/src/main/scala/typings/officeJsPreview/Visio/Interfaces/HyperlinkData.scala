@@ -2,11 +2,9 @@ package typings.officeJsPreview.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "hyperlink.toJSON()". */
-@js.native
 trait HyperlinkData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait HyperlinkData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait HyperlinkData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait HyperlinkData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var extraInfo: js.UndefOr[String] = js.native
+  var extraInfo: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait HyperlinkData extends StObject {
     *
     * [Api set:  1.1]
     */
-  var subAddress: js.UndefOr[String] = js.native
+  var subAddress: js.UndefOr[String] = js.undefined
 }
 object HyperlinkData {
   

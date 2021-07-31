@@ -4,15 +4,15 @@
 Typings are for version 6.1.2
 
 ## Library description:
-a11y addon for storybook
+Test component compliance with web accessibility standards
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-a11y |
 | Keywords           | a11y, accessibility, addon, storybook, valid, verify |
-| # releases         | 569 |
-| # dependents       | 82 |
-| # downloads        | 18884088 |
+| # releases         | 558 |
+| # dependents       | 98 |
+| # downloads        | 21204872 |
 | # stars            | 0 |
 
 ## Links

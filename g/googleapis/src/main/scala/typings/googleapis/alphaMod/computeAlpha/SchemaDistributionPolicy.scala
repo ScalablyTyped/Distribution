@@ -2,17 +2,15 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDistributionPolicy extends StObject {
   
   /**
     * Zones where the regional managed instance group will create and manage
     * instances.
     */
-  var zones: js.UndefOr[js.Array[SchemaDistributionPolicyZoneConfiguration]] = js.native
+  var zones: js.UndefOr[js.Array[SchemaDistributionPolicyZoneConfiguration]] = js.undefined
 }
 object SchemaDistributionPolicy {
   

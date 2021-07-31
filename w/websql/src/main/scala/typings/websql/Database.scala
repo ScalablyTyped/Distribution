@@ -2,7 +2,6 @@ package typings.websql
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 4.3 Asynchronous database API - The transaction() and readTransaction() methods takes
@@ -25,20 +24,20 @@ trait Database extends StObject {
   def changeVersion(
     oldVersion: DOMString,
     newVersion: DOMString,
-    callback: js.UndefOr[scala.Nothing],
-    errorCallback: js.UndefOr[scala.Nothing],
+    callback: Unit,
+    errorCallback: Unit,
     successCallback: SQLVoidCallback
   ): Unit = js.native
   def changeVersion(
     oldVersion: DOMString,
     newVersion: DOMString,
-    callback: js.UndefOr[scala.Nothing],
+    callback: Unit,
     errorCallback: SQLTransactionErrorCallback
   ): Unit = js.native
   def changeVersion(
     oldVersion: DOMString,
     newVersion: DOMString,
-    callback: js.UndefOr[scala.Nothing],
+    callback: Unit,
     errorCallback: SQLTransactionErrorCallback,
     successCallback: SQLVoidCallback
   ): Unit = js.native
@@ -47,7 +46,7 @@ trait Database extends StObject {
     oldVersion: DOMString,
     newVersion: DOMString,
     callback: SQLTransactionCallback,
-    errorCallback: js.UndefOr[scala.Nothing],
+    errorCallback: Unit,
     successCallback: SQLVoidCallback
   ): Unit = js.native
   def changeVersion(
@@ -65,11 +64,7 @@ trait Database extends StObject {
   ): Unit = js.native
   
   def readTransaction(callback: SQLTransactionCallback): Unit = js.native
-  def readTransaction(
-    callback: SQLTransactionCallback,
-    errorCallback: js.UndefOr[scala.Nothing],
-    successCallback: SQLVoidCallback
-  ): Unit = js.native
+  def readTransaction(callback: SQLTransactionCallback, errorCallback: Unit, successCallback: SQLVoidCallback): Unit = js.native
   def readTransaction(callback: SQLTransactionCallback, errorCallback: SQLTransactionErrorCallback): Unit = js.native
   def readTransaction(
     callback: SQLTransactionCallback,
@@ -78,11 +73,7 @@ trait Database extends StObject {
   ): Unit = js.native
   
   def transaction(callback: SQLTransactionCallback): Unit = js.native
-  def transaction(
-    callback: SQLTransactionCallback,
-    errorCallback: js.UndefOr[scala.Nothing],
-    successCallback: SQLVoidCallback
-  ): Unit = js.native
+  def transaction(callback: SQLTransactionCallback, errorCallback: Unit, successCallback: SQLVoidCallback): Unit = js.native
   def transaction(callback: SQLTransactionCallback, errorCallback: SQLTransactionErrorCallback): Unit = js.native
   def transaction(
     callback: SQLTransactionCallback,

@@ -2,21 +2,19 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Createdat extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var name: String = js.native
+  var name: String
   
-  var selected_repositories_url: String = js.native
+  var selected_repositories_url: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var visibility: String = js.native
+  var visibility: String
 }
 object Createdat {
   

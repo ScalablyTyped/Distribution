@@ -2,50 +2,48 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata available primarily for filtering jobs. Will be included in the
   * ListJob response and Job SUMMARY view.
   */
-@js.native
 trait SchemaJobMetadata extends StObject {
   
   /**
     * Identification of a BigTable source used in the Dataflow job.
     */
-  var bigTableDetails: js.UndefOr[js.Array[SchemaBigTableIODetails]] = js.native
+  var bigTableDetails: js.UndefOr[js.Array[SchemaBigTableIODetails]] = js.undefined
   
   /**
     * Identification of a BigQuery source used in the Dataflow job.
     */
-  var bigqueryDetails: js.UndefOr[js.Array[SchemaBigQueryIODetails]] = js.native
+  var bigqueryDetails: js.UndefOr[js.Array[SchemaBigQueryIODetails]] = js.undefined
   
   /**
     * Identification of a Datastore source used in the Dataflow job.
     */
-  var datastoreDetails: js.UndefOr[js.Array[SchemaDatastoreIODetails]] = js.native
+  var datastoreDetails: js.UndefOr[js.Array[SchemaDatastoreIODetails]] = js.undefined
   
   /**
     * Identification of a File source used in the Dataflow job.
     */
-  var fileDetails: js.UndefOr[js.Array[SchemaFileIODetails]] = js.native
+  var fileDetails: js.UndefOr[js.Array[SchemaFileIODetails]] = js.undefined
   
   /**
     * Identification of a PubSub source used in the Dataflow job.
     */
-  var pubsubDetails: js.UndefOr[js.Array[SchemaPubSubIODetails]] = js.native
+  var pubsubDetails: js.UndefOr[js.Array[SchemaPubSubIODetails]] = js.undefined
   
   /**
     * The SDK version used to run the job.
     */
-  var sdkVersion: js.UndefOr[SchemaSdkVersion] = js.native
+  var sdkVersion: js.UndefOr[SchemaSdkVersion] = js.undefined
   
   /**
     * Identification of a Spanner source used in the Dataflow job.
     */
-  var spannerDetails: js.UndefOr[js.Array[SchemaSpannerIODetails]] = js.native
+  var spannerDetails: js.UndefOr[js.Array[SchemaSpannerIODetails]] = js.undefined
 }
 object SchemaJobMetadata {
   

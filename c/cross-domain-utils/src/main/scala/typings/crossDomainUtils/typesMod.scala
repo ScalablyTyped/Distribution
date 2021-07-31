@@ -6,7 +6,6 @@ import typings.std.Document
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -31,13 +30,13 @@ object typesMod {
     var location: String | js.Object = js.native
     
     def open(): CrossDomainWindowType | Null = js.native
-    def open(url: js.UndefOr[scala.Nothing], target: js.UndefOr[scala.Nothing], features: String): CrossDomainWindowType | Null = js.native
-    def open(url: js.UndefOr[scala.Nothing], target: String): CrossDomainWindowType | Null = js.native
-    def open(url: js.UndefOr[scala.Nothing], target: String, features: String): CrossDomainWindowType | Null = js.native
     def open(url: String): CrossDomainWindowType | Null = js.native
-    def open(url: String, target: js.UndefOr[scala.Nothing], features: String): CrossDomainWindowType | Null = js.native
     def open(url: String, target: String): CrossDomainWindowType | Null = js.native
     def open(url: String, target: String, features: String): CrossDomainWindowType | Null = js.native
+    def open(url: String, target: Unit, features: String): CrossDomainWindowType | Null = js.native
+    def open(url: Unit, target: String): CrossDomainWindowType | Null = js.native
+    def open(url: Unit, target: String, features: String): CrossDomainWindowType | Null = js.native
+    def open(url: Unit, target: Unit, features: String): CrossDomainWindowType | Null = js.native
     
     var opener: js.UndefOr[CrossDomainWindowType] = js.native
     
@@ -70,13 +69,13 @@ object typesMod {
     var navigator: MockUserAgent = js.native
     
     def open(): CrossDomainWindowType | Null = js.native
-    def open(url: js.UndefOr[scala.Nothing], target: js.UndefOr[scala.Nothing], features: String): CrossDomainWindowType | Null = js.native
-    def open(url: js.UndefOr[scala.Nothing], target: String): CrossDomainWindowType | Null = js.native
-    def open(url: js.UndefOr[scala.Nothing], target: String, features: String): CrossDomainWindowType | Null = js.native
     def open(url: String): CrossDomainWindowType | Null = js.native
-    def open(url: String, target: js.UndefOr[scala.Nothing], features: String): CrossDomainWindowType | Null = js.native
     def open(url: String, target: String): CrossDomainWindowType | Null = js.native
     def open(url: String, target: String, features: String): CrossDomainWindowType | Null = js.native
+    def open(url: String, target: Unit, features: String): CrossDomainWindowType | Null = js.native
+    def open(url: Unit, target: String): CrossDomainWindowType | Null = js.native
+    def open(url: Unit, target: String, features: String): CrossDomainWindowType | Null = js.native
+    def open(url: Unit, target: Unit, features: String): CrossDomainWindowType | Null = js.native
     
     var self: CrossDomainWindowType = js.native
   }

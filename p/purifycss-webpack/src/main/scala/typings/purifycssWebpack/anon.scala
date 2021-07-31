@@ -2,23 +2,21 @@ package typings.purifycssWebpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Info extends StObject {
     
-    var info: js.UndefOr[Boolean] = js.native
+    var info: js.UndefOr[Boolean] = js.undefined
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
-    var output: js.UndefOr[String | Boolean] = js.native
+    var output: js.UndefOr[String | Boolean] = js.undefined
     
-    var rejected: js.UndefOr[Boolean] = js.native
+    var rejected: js.UndefOr[Boolean] = js.undefined
     
-    var whitelist: js.UndefOr[js.Array[String]] = js.native
+    var whitelist: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Info {
     

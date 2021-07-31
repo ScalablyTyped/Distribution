@@ -2,13 +2,11 @@ package typings.googleapis.appengineV1Mod.appengineV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An SSL certificate obtained from a certificate authority.
   */
-@js.native
 trait SchemaCertificateRawData extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaCertificateRawData extends StObject {
     * -----BEGIN RSA PRIVATE KEY----- &lt;unencrypted_key_value&gt; -----END
     * RSA PRIVATE KEY----- &lt;/pre&gt; @InputOnly
     */
-  var privateKey: js.UndefOr[String] = js.native
+  var privateKey: js.UndefOr[String] = js.undefined
   
   /**
     * PEM encoded x.509 public key certificate. This field is set once on
@@ -26,7 +24,7 @@ trait SchemaCertificateRawData extends StObject {
     * &lt;pre&gt; -----BEGIN CERTIFICATE----- &lt;certificate_value&gt;
     * -----END CERTIFICATE----- &lt;/pre&gt;
     */
-  var publicCertificate: js.UndefOr[String] = js.native
+  var publicCertificate: js.UndefOr[String] = js.undefined
 }
 object SchemaCertificateRawData {
   

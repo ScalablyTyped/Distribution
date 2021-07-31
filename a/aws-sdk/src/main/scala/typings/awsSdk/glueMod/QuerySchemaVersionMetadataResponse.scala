@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuerySchemaVersionMetadataResponse extends StObject {
   
   /**
     * A map of a metadata key and associated values.
     */
-  var MetadataInfoMap: js.UndefOr[typings.awsSdk.glueMod.MetadataInfoMap] = js.native
+  var MetadataInfoMap: js.UndefOr[typings.awsSdk.glueMod.MetadataInfoMap] = js.undefined
   
   /**
     * A continuation token for paginating the returned list of tokens, returned if the current segment of the list is not the last.
     */
-  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.native
+  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.undefined
   
   /**
     * The unique version ID of the schema version.
     */
-  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.native
+  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.undefined
 }
 object QuerySchemaVersionMetadataResponse {
   

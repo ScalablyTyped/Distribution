@@ -12,7 +12,6 @@ import typings.filesize.mod.Filesize.Filesize
 import typings.std.Intl.NumberFormatOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,78 +31,77 @@ object mod extends Shortcut {
       def partial(options: Options): js.Function1[/* bytes */ Double, String] = js.native
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * Number base, default is 2
         */
-      var base: js.UndefOr[Double] = js.native
+      var base: js.UndefOr[Double] = js.undefined
       
       /**
         * Enables bit sizes, default is false
         */
-      var bits: js.UndefOr[Boolean] = js.native
+      var bits: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Specifies the SI suffix via exponent, e.g. 2 is MB for bytes, default is -1
         */
-      var exponent: js.UndefOr[Double] = js.native
+      var exponent: js.UndefOr[Double] = js.undefined
       
       /**
         * Enables full form of unit of measure, default is false
         */
-      var fullform: js.UndefOr[Boolean] = js.native
+      var fullform: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Array of full form overrides, default is []
         */
-      var fullforms: js.UndefOr[js.Array[String]] = js.native
+      var fullforms: js.UndefOr[js.Array[String]] = js.undefined
       
       /**
         * BCP 47 language tag to specify a locale, or true to use default locale, default is ""
         */
-      var locale: js.UndefOr[String | Boolean] = js.native
+      var locale: js.UndefOr[String | Boolean] = js.undefined
       
       /**
         * ECMA-402 number format option overrides, default is "{}"
         */
-      var localeOptions: js.UndefOr[NumberFormatOptions] = js.native
+      var localeOptions: js.UndefOr[NumberFormatOptions] = js.undefined
       
       /**
         * Output of function (array, exponent, object, or string), default is string
         */
-      var output: js.UndefOr[array | exponent | `object` | string] = js.native
+      var output: js.UndefOr[array | exponent | `object` | string] = js.undefined
       
       /**
         * Decimal place, default is 2
         */
-      var round: js.UndefOr[Double] = js.native
+      var round: js.UndefOr[Double] = js.undefined
       
       /**
         * Decimal separator character, default is `.`
         */
-      var separator: js.UndefOr[String] = js.native
+      var separator: js.UndefOr[String] = js.undefined
       
       /**
         * Character between the result and suffix, default is ` `
         */
-      var spacer: js.UndefOr[String] = js.native
+      var spacer: js.UndefOr[String] = js.undefined
       
       /**
         * Standard unit of measure, can be iec or jedec, default is jedec; can be overruled by base
         */
-      var standard: js.UndefOr[iec | jedec] = js.native
+      var standard: js.UndefOr[iec | jedec] = js.undefined
       
       /**
         * Dictionary of SI/JEDEC symbols to replace for localization, defaults to english if no match is found
         */
-      var symbols: js.UndefOr[SiJedec] = js.native
+      var symbols: js.UndefOr[SiJedec] = js.undefined
       
       /**
         *  Enables unix style human readable output, e.g ls -lh, default is false
         */
-      var unix: js.UndefOr[Boolean] = js.native
+      var unix: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -205,46 +203,11 @@ object mod extends Shortcut {
       }
     }
     
-    /* Inlined filesize.filesize.Filesize.SiJedecBits & filesize.filesize.Filesize.SiJedecBytes & {[name: string] : string} */
-    @js.native
-    trait SiJedec extends /* name */ StringDictionary[String] {
-      
-      var B: js.UndefOr[String] = js.native
-      
-      var EB: js.UndefOr[String] = js.native
-      
-      var Eb: js.UndefOr[String] = js.native
-      
-      var GB: js.UndefOr[String] = js.native
-      
-      var Gb: js.UndefOr[String] = js.native
-      
-      var KB: js.UndefOr[String] = js.native
-      
-      var Kb: js.UndefOr[String] = js.native
-      
-      var MB: js.UndefOr[String] = js.native
-      
-      var Mb: js.UndefOr[String] = js.native
-      
-      var PB: js.UndefOr[String] = js.native
-      
-      var Pb: js.UndefOr[String] = js.native
-      
-      var TB: js.UndefOr[String] = js.native
-      
-      var Tb: js.UndefOr[String] = js.native
-      
-      var YB: js.UndefOr[String] = js.native
-      
-      var Yb: js.UndefOr[String] = js.native
-      
-      var ZB: js.UndefOr[String] = js.native
-      
-      var Zb: js.UndefOr[String] = js.native
-      
-      var b: js.UndefOr[String] = js.native
-    }
+    trait SiJedec
+      extends StObject
+         with SiJedecBits
+         with SiJedecBytes
+         with /* name */ StringDictionary[String]
     object SiJedec {
       
       @scala.inline
@@ -252,86 +215,27 @@ object mod extends Shortcut {
         val __obj = js.Dynamic.literal()
         __obj.asInstanceOf[SiJedec]
       }
-      
-      @scala.inline
-      implicit class SiJedecMutableBuilder[Self <: SiJedec] (val x: Self) extends AnyVal {
-        
-        @scala.inline
-        def setB(value: String): Self = StObject.set(x, "B", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setBUndefined: Self = StObject.set(x, "B", js.undefined)
-        
-        @scala.inline
-        def setEB(value: String): Self = StObject.set(x, "EB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setEBUndefined: Self = StObject.set(x, "EB", js.undefined)
-        
-        @scala.inline
-        def setGB(value: String): Self = StObject.set(x, "GB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setGBUndefined: Self = StObject.set(x, "GB", js.undefined)
-        
-        @scala.inline
-        def setKB(value: String): Self = StObject.set(x, "KB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setKBUndefined: Self = StObject.set(x, "KB", js.undefined)
-        
-        @scala.inline
-        def setMB(value: String): Self = StObject.set(x, "MB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setMBUndefined: Self = StObject.set(x, "MB", js.undefined)
-        
-        @scala.inline
-        def setPB(value: String): Self = StObject.set(x, "PB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setPBUndefined: Self = StObject.set(x, "PB", js.undefined)
-        
-        @scala.inline
-        def setTB(value: String): Self = StObject.set(x, "TB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setTBUndefined: Self = StObject.set(x, "TB", js.undefined)
-        
-        @scala.inline
-        def setYB(value: String): Self = StObject.set(x, "YB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setYBUndefined: Self = StObject.set(x, "YB", js.undefined)
-        
-        @scala.inline
-        def setZB(value: String): Self = StObject.set(x, "ZB", value.asInstanceOf[js.Any])
-        
-        @scala.inline
-        def setZBUndefined: Self = StObject.set(x, "ZB", js.undefined)
-      }
     }
     
-    @js.native
     trait SiJedecBits extends StObject {
       
-      var Eb: js.UndefOr[String] = js.native
+      var Eb: js.UndefOr[String] = js.undefined
       
-      var Gb: js.UndefOr[String] = js.native
+      var Gb: js.UndefOr[String] = js.undefined
       
-      var Kb: js.UndefOr[String] = js.native
+      var Kb: js.UndefOr[String] = js.undefined
       
-      var Mb: js.UndefOr[String] = js.native
+      var Mb: js.UndefOr[String] = js.undefined
       
-      var Pb: js.UndefOr[String] = js.native
+      var Pb: js.UndefOr[String] = js.undefined
       
-      var Tb: js.UndefOr[String] = js.native
+      var Tb: js.UndefOr[String] = js.undefined
       
-      var Yb: js.UndefOr[String] = js.native
+      var Yb: js.UndefOr[String] = js.undefined
       
-      var Zb: js.UndefOr[String] = js.native
+      var Zb: js.UndefOr[String] = js.undefined
       
-      var b: js.UndefOr[String] = js.native
+      var b: js.UndefOr[String] = js.undefined
     }
     object SiJedecBits {
       
@@ -400,26 +304,25 @@ object mod extends Shortcut {
       }
     }
     
-    @js.native
     trait SiJedecBytes extends StObject {
       
-      var B: js.UndefOr[String] = js.native
+      var B: js.UndefOr[String] = js.undefined
       
-      var EB: js.UndefOr[String] = js.native
+      var EB: js.UndefOr[String] = js.undefined
       
-      var GB: js.UndefOr[String] = js.native
+      var GB: js.UndefOr[String] = js.undefined
       
-      var KB: js.UndefOr[String] = js.native
+      var KB: js.UndefOr[String] = js.undefined
       
-      var MB: js.UndefOr[String] = js.native
+      var MB: js.UndefOr[String] = js.undefined
       
-      var PB: js.UndefOr[String] = js.native
+      var PB: js.UndefOr[String] = js.undefined
       
-      var TB: js.UndefOr[String] = js.native
+      var TB: js.UndefOr[String] = js.undefined
       
-      var YB: js.UndefOr[String] = js.native
+      var YB: js.UndefOr[String] = js.undefined
       
-      var ZB: js.UndefOr[String] = js.native
+      var ZB: js.UndefOr[String] = js.undefined
     }
     object SiJedecBytes {
       

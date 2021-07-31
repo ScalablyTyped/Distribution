@@ -3,9 +3,9 @@ package typings.webix.mod
 import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import typings.std.HTMLElement
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,4 +27,9 @@ trait RenderStack extends StObject {
   var `type`: StringDictionary[js.Any] = js.native
   
   var types: StringDictionary[js.Any] = js.native
+}
+object RenderStack {
+  
+  @scala.inline
+  def apply: RenderStack = ^.asInstanceOf[js.Dynamic].selectDynamic("RenderStack").asInstanceOf[RenderStack]
 }

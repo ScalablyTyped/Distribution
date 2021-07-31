@@ -2,13 +2,11 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingInfo extends StObject {
   
-  var BrokerLogs: typings.awsSdk.kafkaMod.BrokerLogs = js.native
+  var BrokerLogs: typings.awsSdk.kafkaMod.BrokerLogs
 }
 object LoggingInfo {
   

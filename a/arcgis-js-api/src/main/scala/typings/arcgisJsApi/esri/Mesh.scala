@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.mesh
 import typings.arcgisJsApi.esri.geometry.Geometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Mesh
-  extends Geometry_
+  extends StObject
+     with Geometry_
      with Geometry
      with geometryGeometry {
   

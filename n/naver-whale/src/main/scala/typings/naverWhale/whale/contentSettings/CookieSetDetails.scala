@@ -5,15 +5,14 @@ import typings.naverWhale.naverWhaleStrings.block
 import typings.naverWhale.naverWhaleStrings.session_only
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieSetDetails
-  extends typings.chrome.chrome.contentSettings.SetDetails {
+  extends StObject
+     with typings.chrome.chrome.contentSettings.SetDetails {
   
   @JSName("setting")
-  var setting_CookieSetDetails: allow | block | session_only = js.native
+  var setting_CookieSetDetails: allow | block | session_only
 }
 object CookieSetDetails {
   

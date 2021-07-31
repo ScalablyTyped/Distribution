@@ -2,38 +2,36 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserProperty extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Formula: String = js.native
+  var Formula: String
   
-  val IsUserProperty: Boolean = js.native
+  val IsUserProperty: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Outlook.UserProperty_typekey")
-  var OutlookDotUserProperty_typekey: UserProperty = js.native
+  var OutlookDotUserProperty_typekey: UserProperty
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  val Type: OlUserPropertyType = js.native
+  val Type: OlUserPropertyType
   
-  var ValidationFormula: String = js.native
+  var ValidationFormula: String
   
-  var ValidationText: String = js.native
+  var ValidationText: String
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object UserProperty {
   

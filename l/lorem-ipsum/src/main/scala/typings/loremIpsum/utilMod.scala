@@ -2,31 +2,28 @@ package typings.loremIpsum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilMod {
   
-  @JSImport("lorem-ipsum/types/src/bin/util", "copyToClipboard")
+  @JSImport("lorem-ipsum/types/src/bin/util", JSImport.Namespace)
   @js.native
-  def copyToClipboard(text: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("lorem-ipsum/types/src/bin/util", "getCopyCommand")
-  @js.native
-  def getCopyCommand(): String = js.native
-  @JSImport("lorem-ipsum/types/src/bin/util", "getCopyCommand")
-  @js.native
-  def getCopyCommand(platform: String): String = js.native
+  @scala.inline
+  def copyToClipboard(text: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyToClipboard")(text.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
-  @JSImport("lorem-ipsum/types/src/bin/util", "getPlatform")
-  @js.native
-  def getPlatform(): String = js.native
+  @scala.inline
+  def getCopyCommand(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCopyCommand")().asInstanceOf[String]
+  @scala.inline
+  def getCopyCommand(platform: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getCopyCommand")(platform.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("lorem-ipsum/types/src/bin/util", "getVersion")
-  @js.native
-  def getVersion(): String = js.native
+  @scala.inline
+  def getPlatform(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPlatform")().asInstanceOf[String]
   
-  @JSImport("lorem-ipsum/types/src/bin/util", "isSupportedPlatform")
-  @js.native
-  def isSupportedPlatform(platform: String): Boolean = js.native
+  @scala.inline
+  def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
+  
+  @scala.inline
+  def isSupportedPlatform(platform: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupportedPlatform")(platform.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

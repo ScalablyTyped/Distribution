@@ -2,39 +2,37 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Leg extends StObject {
   
   /**
     * An annotations object that contains additional details about each line segment along the route geometry.
     * Each entry in an annotations field corresponds to a coordinate along the route geometry.
     */
-  var annotation: js.Array[DirectionsAnnotation] = js.native
+  var annotation: js.Array[DirectionsAnnotation]
   
   /**
     * Number indicating the distance traveled in meters
     */
-  var distance: Double = js.native
+  var distance: Double
   
   /**
     * Number indicating the estimated travel time in seconds
     */
-  var duration: Double = js.native
+  var duration: Double
   
   /**
     * Depending on the steps parameter, either an Array of RouteStep objects (true, default) or an empty array (false)
     */
-  var steps: js.Array[Step] = js.native
+  var steps: js.Array[Step]
   
   /**
     * Depending on the summary parameter, either a String summarizing the route (true, default) or an empty String (false)
     */
-  var summary: String = js.native
+  var summary: String
   
-  var weight: Double = js.native
+  var weight: Double
 }
 object Leg {
   

@@ -6,26 +6,25 @@ import typings.estree.estreeStrings.method
 import typings.estree.estreeStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MethodDefinition
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with Node {
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var kind: constructor | method | get | set = js.native
+  var kind: constructor | method | get | set
   
-  var static: Boolean = js.native
+  var static: Boolean
   
   @JSName("type")
-  var type_MethodDefinition: typings.estree.estreeStrings.MethodDefinition = js.native
+  var type_MethodDefinition: typings.estree.estreeStrings.MethodDefinition
   
-  var value: FunctionExpression = js.native
+  var value: FunctionExpression
 }
 object MethodDefinition {
   
@@ -35,11 +34,10 @@ object MethodDefinition {
     key: Expression,
     kind: constructor | method | get | set,
     static: Boolean,
-    `type`: typings.estree.estreeStrings.MethodDefinition,
     value: FunctionExpression
   ): MethodDefinition = {
     val __obj = js.Dynamic.literal(computed = computed.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MethodDefinition")
     __obj.asInstanceOf[MethodDefinition]
   }
   

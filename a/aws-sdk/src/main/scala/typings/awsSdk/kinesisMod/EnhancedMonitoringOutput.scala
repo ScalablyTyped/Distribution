@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnhancedMonitoringOutput extends StObject {
   
   /**
     * Represents the current state of the metrics that are in the enhanced state before the operation.
     */
-  var CurrentShardLevelMetrics: js.UndefOr[MetricsNameList] = js.native
+  var CurrentShardLevelMetrics: js.UndefOr[MetricsNameList] = js.undefined
   
   /**
     * Represents the list of all the metrics that would be in the enhanced state after the operation.
     */
-  var DesiredShardLevelMetrics: js.UndefOr[MetricsNameList] = js.native
+  var DesiredShardLevelMetrics: js.UndefOr[MetricsNameList] = js.undefined
   
   /**
     * The name of the Kinesis data stream.
     */
-  var StreamName: js.UndefOr[typings.awsSdk.kinesisMod.StreamName] = js.native
+  var StreamName: js.UndefOr[typings.awsSdk.kinesisMod.StreamName] = js.undefined
 }
 object EnhancedMonitoringOutput {
   

@@ -2,44 +2,42 @@ package typings.mapboxMapboxSdk.directionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instruction extends StObject {
   
   /**
     * Objects that, together, make up what should be displayed in the banner.
     * Includes additional information intended to be used to aid in visual layout
     */
-  var components: js.Array[Component] = js.native
+  var components: js.Array[Component]
   
   /**
     * The degrees at which you will be exiting a roundabout, assuming 180 indicates going straight through the roundabout.
     */
-  var degrees: js.UndefOr[Double] = js.native
+  var degrees: js.UndefOr[Double] = js.undefined
   
   /**
     * A string representing which side the of the street people drive on in that location. Can be 'left' or 'right'.
     */
-  var driving_side: DirectionsSide = js.native
+  var driving_side: DirectionsSide
   
   /**
     * The modifier for the maneuver. Can be used in combination with the type (and, if it is a roundabout, the degrees)
     * to for an icon to display. Possible values: 'left', 'right', 'slight left', 'slight right', 'sharp left', 'sharp right', 'straight', 'uturn'
     */
-  var modifier: js.UndefOr[ManeuverModifier] = js.native
+  var modifier: js.UndefOr[ManeuverModifier] = js.undefined
   
   /**
     * String that contains all the text that should be displayed.
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * The type of maneuver. May be used in combination with the modifier (and, if it is a roundabout, the degrees) to for an icon to
     * display. Possible values: 'turn', 'merge', 'depart', 'arrive', 'fork', 'off ramp', 'roundabout'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Instruction {
   

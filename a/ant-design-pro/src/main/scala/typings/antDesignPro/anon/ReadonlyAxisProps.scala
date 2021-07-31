@@ -10,42 +10,40 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.AxisProps> */
-@js.native
 trait ReadonlyAxisProps extends StObject {
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val grid: js.UndefOr[AxisGrid | Null] = js.native
+  val grid: js.UndefOr[AxisGrid | Null] = js.undefined
   
-  val key: js.UndefOr[typings.react.mod.Key] = js.native
+  val key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  val label: js.UndefOr[AxisLabel | Null] = js.native
+  val label: js.UndefOr[AxisLabel | Null] = js.undefined
   
-  val line: js.UndefOr[typings.antvG2.mod.Styles.line | Null] = js.native
+  val line: js.UndefOr[typings.antvG2.mod.Styles.line | Null] = js.undefined
   
-  val min: js.UndefOr[Double] = js.native
+  val min: js.UndefOr[Double] = js.undefined
   
-  val name: js.UndefOr[String] = js.native
+  val name: js.UndefOr[String] = js.undefined
   
-  val position: js.UndefOr[PositionType] = js.native
+  val position: js.UndefOr[PositionType] = js.undefined
   
-  val ref: js.UndefOr[LegacyRef[_]] = js.native
+  val ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  val subTickCount: js.UndefOr[Double] = js.native
+  val subTickCount: js.UndefOr[Double] = js.undefined
   
-  val subTickLine: js.UndefOr[typings.antvG2.mod.Styles.tickLine] = js.native
+  val subTickLine: js.UndefOr[typings.antvG2.mod.Styles.tickLine] = js.undefined
   
-  val tickLine: js.UndefOr[typings.antvG2.mod.Styles.tickLine | Null] = js.native
+  val tickLine: js.UndefOr[typings.antvG2.mod.Styles.tickLine | Null] = js.undefined
   
-  val title: js.UndefOr[AxisTitle | Boolean | Null] = js.native
+  val title: js.UndefOr[AxisTitle | Boolean | Null] = js.undefined
   
-  val visible: js.UndefOr[Boolean] = js.native
+  val visible: js.UndefOr[Boolean] = js.undefined
   
-  val zIndex: js.UndefOr[Double] = js.native
+  val zIndex: js.UndefOr[Double] = js.undefined
 }
 object ReadonlyAxisProps {
   
@@ -116,10 +114,10 @@ object ReadonlyAxisProps {
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: LegacyRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

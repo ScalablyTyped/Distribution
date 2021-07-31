@@ -2,26 +2,24 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the result of checking a revision.
   */
-@js.native
 trait SchemaRevisionCheckResponse extends StObject {
   
   /**
     * The version of the API this client revision should use when calling API
     * methods.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#revisionCheckResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The result of the revision check. Possible values are:   - &quot;OK&quot;
@@ -30,7 +28,7 @@ trait SchemaRevisionCheckResponse extends StObject {
     * works.  - &quot;INVALID&quot; - The revision being used is not supported
     * in any released version.
     */
-  var revisionStatus: js.UndefOr[String] = js.native
+  var revisionStatus: js.UndefOr[String] = js.undefined
 }
 object SchemaRevisionCheckResponse {
   

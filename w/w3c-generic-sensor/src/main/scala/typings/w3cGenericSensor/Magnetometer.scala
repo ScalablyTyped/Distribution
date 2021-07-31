@@ -2,12 +2,13 @@ package typings.w3cGenericSensor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Magnetometer: https://www.w3.org/TR/magnetometer/
 @js.native
-trait Magnetometer extends Sensor {
+trait Magnetometer
+  extends StObject
+     with Sensor {
   
   val x: js.UndefOr[Double] = js.native
   

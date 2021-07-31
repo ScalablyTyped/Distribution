@@ -4,42 +4,40 @@ import typings.activexOffice.Office.MsoConnectorType
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorFormat extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  def BeginConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit = js.native
+  def BeginConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit
   
-  val BeginConnected: MsoTriState = js.native
+  val BeginConnected: MsoTriState
   
-  val BeginConnectedShape: Shape = js.native
+  val BeginConnectedShape: Shape
   
-  val BeginConnectionSite: Double = js.native
+  val BeginConnectionSite: Double
   
-  def BeginDisconnect(): Unit = js.native
+  def BeginDisconnect(): Unit
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def EndConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit = js.native
+  def EndConnect(ConnectedShape: Shape, ConnectionSite: Double): Unit
   
-  val EndConnected: MsoTriState = js.native
+  val EndConnected: MsoTriState
   
-  val EndConnectedShape: Shape = js.native
+  val EndConnectedShape: Shape
   
-  val EndConnectionSite: Double = js.native
+  val EndConnectionSite: Double
   
-  def EndDisconnect(): Unit = js.native
+  def EndDisconnect(): Unit
   
   @JSName("Excel.ConnectorFormat_typekey")
-  var ExcelDotConnectorFormat_typekey: ConnectorFormat = js.native
+  var ExcelDotConnectorFormat_typekey: ConnectorFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Type: MsoConnectorType = js.native
+  var Type: MsoConnectorType
 }
 object ConnectorFormat {
   

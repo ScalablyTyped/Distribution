@@ -2,58 +2,56 @@ package typings.googleapis.fusiontablesV1Mod.fusiontablesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a PolygonStyle within a StyleSetting
   */
-@js.native
 trait SchemaPolygonStyle extends StObject {
   
   /**
     * Color of the interior of the polygon in #RRGGBB format.
     */
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
   /**
     * Column-value, gradient, or bucket styler that is used to determine the
     * interior color and opacity of the polygon.
     */
-  var fillColorStyler: js.UndefOr[SchemaStyleFunction] = js.native
+  var fillColorStyler: js.UndefOr[SchemaStyleFunction] = js.undefined
   
   /**
     * Opacity of the interior of the polygon: 0.0 (transparent) to 1.0
     * (opaque).
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Color of the polygon border in #RRGGBB format.
     */
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
   /**
     * Column-value, gradient or buckets styler that is used to determine the
     * border color and opacity.
     */
-  var strokeColorStyler: js.UndefOr[SchemaStyleFunction] = js.native
+  var strokeColorStyler: js.UndefOr[SchemaStyleFunction] = js.undefined
   
   /**
     * Opacity of the polygon border: 0.0 (transparent) to 1.0 (opaque).
     */
-  var strokeOpacity: js.UndefOr[Double] = js.native
+  var strokeOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * Width of the polyon border in pixels.
     */
-  var strokeWeight: js.UndefOr[Double] = js.native
+  var strokeWeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Column-value or bucket styler that is used to determine the width of the
     * polygon border.
     */
-  var strokeWeightStyler: js.UndefOr[SchemaStyleFunction] = js.native
+  var strokeWeightStyler: js.UndefOr[SchemaStyleFunction] = js.undefined
 }
 object SchemaPolygonStyle {
   

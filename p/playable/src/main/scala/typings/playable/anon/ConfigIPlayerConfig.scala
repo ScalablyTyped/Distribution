@@ -3,13 +3,11 @@ package typings.playable.anon
 import typings.playable.configMod.IPlayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigIPlayerConfig extends StObject {
   
-  var config: IPlayerConfig = js.native
+  var config: IPlayerConfig
 }
 object ConfigIPlayerConfig {
   

@@ -11,38 +11,36 @@ import typings.amapJsApi.AMap.TileLayer.WMS
 import typings.amapJsApi.AMap.TileLayer.WMTS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTileLayer extends StObject {
   
-  val Flexible: Instantiable1[/* options */ js.UndefOr[Options], typings.amapJsApi.AMap.TileLayer.Flexible] = js.native
+  val Flexible: Instantiable1[/* options */ js.UndefOr[Options], typings.amapJsApi.AMap.TileLayer.Flexible]
   
   /**
     * 路网图层
     */
-  var RoadNet: Instantiable0[typings.amapJsApi.AMap.TileLayer.RoadNet] = js.native
+  var RoadNet: Instantiable0[typings.amapJsApi.AMap.TileLayer.RoadNet]
   
   /**
     * 卫星图层
     */
-  var Satellite: Instantiable0[typings.amapJsApi.AMap.TileLayer.Satellite] = js.native
+  var Satellite: Instantiable0[typings.amapJsApi.AMap.TileLayer.Satellite]
   
   val Traffic: Instantiable1[
     /* options */ js.UndefOr[typings.amapJsApi.AMap.TileLayer.Traffic.Options], 
     typings.amapJsApi.AMap.TileLayer.Traffic
-  ] = js.native
+  ]
   
   val WMS: Instantiable1[
     /* options */ typings.amapJsApi.AMap.TileLayer.WMS.Options, 
     typings.amapJsApi.AMap.TileLayer.WMS
-  ] = js.native
+  ]
   
   val WMTS: Instantiable1[
     /* options */ typings.amapJsApi.AMap.TileLayer.WMTS.Options, 
     typings.amapJsApi.AMap.TileLayer.WMTS
-  ] = js.native
+  ]
 }
 object TypeofTileLayer {
   

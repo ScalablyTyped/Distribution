@@ -2,31 +2,29 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyImageRequest extends StObject {
   
   /**
     * The description that the image will have when it is copied to the destination.
     */
-  var DestinationImageDescription: js.UndefOr[Description] = js.native
+  var DestinationImageDescription: js.UndefOr[Description] = js.undefined
   
   /**
     * The name that the image will have when it is copied to the destination.
     */
-  var DestinationImageName: Name = js.native
+  var DestinationImageName: Name
   
   /**
     * The destination region to which the image will be copied. This parameter is required, even if you are copying an image within the same region.
     */
-  var DestinationRegion: RegionName = js.native
+  var DestinationRegion: RegionName
   
   /**
     * The name of the image to copy.
     */
-  var SourceImageName: Name = js.native
+  var SourceImageName: Name
 }
 object CopyImageRequest {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeComponentConfigurationRequest extends StObject {
   
   /**
     * The name of the component.
     */
-  var ComponentName: typings.awsSdk.applicationinsightsMod.ComponentName = js.native
+  var ComponentName: typings.awsSdk.applicationinsightsMod.ComponentName
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName = js.native
+  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
 }
 object DescribeComponentConfigurationRequest {
   

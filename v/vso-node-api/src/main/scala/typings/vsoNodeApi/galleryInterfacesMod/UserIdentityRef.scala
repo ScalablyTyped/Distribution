@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserIdentityRef extends StObject {
   
   /**
     * User display name
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * User VSID
     */
-  var id: String = js.native
+  var id: String
 }
 object UserIdentityRef {
   

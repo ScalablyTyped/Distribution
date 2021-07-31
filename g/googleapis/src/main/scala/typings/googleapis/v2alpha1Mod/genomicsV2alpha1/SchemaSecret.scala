@@ -2,21 +2,19 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Holds encrypted information that is only decrypted and stored in RAM by the
   * worker VM when running the pipeline.
   */
-@js.native
 trait SchemaSecret extends StObject {
   
   /**
     * The value of the cipherText response from the `encrypt` method. This
     * field is intentionally unaudited.
     */
-  var cipherText: js.UndefOr[String] = js.native
+  var cipherText: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Cloud KMS key that will be used to decrypt the secret
@@ -24,7 +22,7 @@ trait SchemaSecret extends StObject {
     * authentication scopes to invoke the `decrypt` method on the specified
     * key.
     */
-  var keyName: js.UndefOr[String] = js.native
+  var keyName: js.UndefOr[String] = js.undefined
 }
 object SchemaSecret {
   

@@ -2,13 +2,11 @@ package typings.winrt.Windows.Networking.Sockets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStreamSocketListenerControl extends StObject {
   
-  var qualityOfService: SocketQualityOfService = js.native
+  var qualityOfService: SocketQualityOfService
 }
 object IStreamSocketListenerControl {
   

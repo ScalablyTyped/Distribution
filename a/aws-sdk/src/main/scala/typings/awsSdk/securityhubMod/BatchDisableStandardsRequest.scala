@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDisableStandardsRequest extends StObject {
   
   /**
     * The ARNs of the standards subscriptions to disable.
     */
-  var StandardsSubscriptionArns: typings.awsSdk.securityhubMod.StandardsSubscriptionArns = js.native
+  var StandardsSubscriptionArns: typings.awsSdk.securityhubMod.StandardsSubscriptionArns
 }
 object BatchDisableStandardsRequest {
   

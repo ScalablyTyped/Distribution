@@ -2,7 +2,6 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -18,7 +17,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.preact.preactStrings.solid
 */
 trait LineStyle
-  extends _BorderBlockEndProperty[js.Any]
+  extends StObject
+     with _BorderBlockEndProperty[js.Any]
      with _BorderBlockProperty[js.Any]
      with _BorderBlockStartProperty[js.Any]
      with _BorderBottomProperty[js.Any]

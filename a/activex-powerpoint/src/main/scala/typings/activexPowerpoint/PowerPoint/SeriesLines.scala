@@ -2,30 +2,28 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesLines extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Border: ChartBorder = js.native
+  val Border: ChartBorder
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.SeriesLines_typekey")
-  var PowerPointDotSeriesLines_typekey: SeriesLines = js.native
+  var PowerPointDotSeriesLines_typekey: SeriesLines
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
 }
 object SeriesLines {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MobileApp extends StObject {
   
   /** Mobile app directory. */
-  var directory: js.UndefOr[String] = js.native
+  var directory: js.UndefOr[String] = js.undefined
   
   /** ID of this mobile app. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#mobileApp". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Publisher name. */
-  var publisherName: js.UndefOr[String] = js.native
+  var publisherName: js.UndefOr[String] = js.undefined
   
   /** Title of this mobile app. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object MobileApp {
   

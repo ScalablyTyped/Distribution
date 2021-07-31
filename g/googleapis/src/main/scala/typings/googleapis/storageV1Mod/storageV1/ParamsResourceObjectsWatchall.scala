@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceObjectsWatchall extends StandardParameters {
+trait ParamsResourceObjectsWatchall
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the bucket in which to look for objects.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * Returns results in a directory-like mode. items will contain only objects
@@ -29,13 +29,13 @@ trait ParamsResourceObjectsWatchall extends StandardParameters {
     * name, truncated after the delimiter, returned in prefixes. Duplicate
     * prefixes are omitted.
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /**
     * If true, objects that end in exactly one instance of delimiter will have
     * their metadata included in items in addition to prefixes.
     */
-  var includeTrailingDelimiter: js.UndefOr[Boolean] = js.native
+  var includeTrailingDelimiter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of items plus prefixes to return in a single page of
@@ -43,40 +43,40 @@ trait ParamsResourceObjectsWatchall extends StandardParameters {
     * returned than requested. The service will use this parameter or 1,000
     * items, whichever is smaller.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * A previously-returned page token representing part of the larger set of
     * results to view.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Filter results to objects whose names begin with this prefix.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * Set of properties to return. Defaults to noAcl.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaChannel] = js.native
+  var requestBody: js.UndefOr[SchemaChannel] = js.undefined
   
   /**
     * The project to be billed for this request. Required for Requester Pays
     * buckets.
     */
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
   
   /**
     * If true, lists all versions of an object as distinct results. The default
     * is false. For more information, see Object Versioning.
     */
-  var versions: js.UndefOr[Boolean] = js.native
+  var versions: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceObjectsWatchall {
   

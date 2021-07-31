@@ -2,17 +2,17 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISortedQuery extends IFinalizable {
+trait ISortedQuery
+  extends StObject
+     with IFinalizable {
   
   /** Specifies next order field (ascending) */
-  def ThenBy(fieldInternalName: String): js.Any = js.native
+  def ThenBy(fieldInternalName: String): js.Any
   
   /** Specifies next order field (descending) */
-  def ThenByDesc(fieldInternalName: String): js.Any = js.native
+  def ThenByDesc(fieldInternalName: String): js.Any
 }
 object ISortedQuery {
   

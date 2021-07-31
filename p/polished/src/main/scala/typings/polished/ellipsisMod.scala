@@ -3,18 +3,18 @@ package typings.polished
 import typings.polished.styleMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ellipsisMod {
   
-  @JSImport("polished/lib/mixins/ellipsis", JSImport.Default)
+  @JSImport("polished/lib/mixins/ellipsis", JSImport.Namespace)
   @js.native
-  def default(): Styles = js.native
-  @JSImport("polished/lib/mixins/ellipsis", JSImport.Default)
-  @js.native
-  def default(width: String): Styles = js.native
-  @JSImport("polished/lib/mixins/ellipsis", JSImport.Default)
-  @js.native
-  def default(width: Double): Styles = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Styles]
+  @scala.inline
+  def default(width: String): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
+  @scala.inline
+  def default(width: Double): Styles = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(width.asInstanceOf[js.Any]).asInstanceOf[Styles]
 }

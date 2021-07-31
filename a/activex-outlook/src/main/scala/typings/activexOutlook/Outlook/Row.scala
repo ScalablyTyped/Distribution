@@ -3,32 +3,30 @@ package typings.activexOutlook.Outlook
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Row extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  def BinaryToString(Index: js.Any): String = js.native
+  def BinaryToString(Index: js.Any): String
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  def GetValues(): js.Any = js.native
+  def GetValues(): js.Any
   
-  def Item(Index: js.Any): js.Any = js.native
+  def Item(Index: js.Any): js.Any
   
-  def LocalTimeToUTC(Index: js.Any): VarDate = js.native
+  def LocalTimeToUTC(Index: js.Any): VarDate
   
   @JSName("Outlook.Row_typekey")
-  var OutlookDotRow_typekey: Row = js.native
+  var OutlookDotRow_typekey: Row
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def UTCToLocalTime(Index: js.Any): VarDate = js.native
+  def UTCToLocalTime(Index: js.Any): VarDate
 }
 object Row {
   

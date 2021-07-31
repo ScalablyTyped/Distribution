@@ -2,51 +2,49 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetSummary extends StObject {
   
   /**
     * The ARN of the asset, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:asset/${AssetId} 
     */
-  var arn: ARN = js.native
+  var arn: ARN
   
   /**
     * The ID of the asset model used to create this asset.
     */
-  var assetModelId: ID = js.native
+  var assetModelId: ID
   
   /**
     * The date the asset was created, in Unix epoch time.
     */
-  var creationDate: Timestamp = js.native
+  var creationDate: Timestamp
   
   /**
     * A list of asset hierarchies that each contain a hierarchyId. A hierarchy specifies allowed parent/child asset relationships.
     */
-  var hierarchies: AssetHierarchies = js.native
+  var hierarchies: AssetHierarchies
   
   /**
     * The ID of the asset.
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The date the asset was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: Timestamp = js.native
+  var lastUpdateDate: Timestamp
   
   /**
     * The name of the asset.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The current status of the asset.
     */
-  var status: AssetStatus = js.native
+  var status: AssetStatus
 }
 object AssetSummary {
   

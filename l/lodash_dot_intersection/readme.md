@@ -11,8 +11,8 @@ The lodash method `_.intersection` exported as a module.
 | Full name          | lodash.intersection |
 | Keywords           | lodash-modularized, intersection |
 | # releases         | 0 |
-| # dependents       | 126 |
-| # downloads        | 4620166 |
+| # dependents       | 141 |
+| # downloads        | 5306515 |
 | # stars            | 0 |
 
 ## Links

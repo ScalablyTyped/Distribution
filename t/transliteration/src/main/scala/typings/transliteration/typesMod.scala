@@ -5,28 +5,47 @@ import typings.std.RegExp
 import typings.transliteration.charmapMod.Charmap_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait BrowserGlobalObject extends StObject {
     
-    def slugify(source: String): String = js.native
-    def slugify(source: String, options: OptionsSlugify): String = js.native
+    def slugify(source: String): String
+    def slugify(source: String, options: OptionsSlugify): String
     @JSName("slugify")
-    var slugify_Original: SlugifyFunction = js.native
+    var slugify_Original: SlugifyFunction
     
-    def transl(source: String): String = js.native
-    def transl(source: String, options: OptionsTransliterate): String = js.native
+    def transl(source: String): String
+    def transl(source: String, options: OptionsTransliterate): String
     @JSName("transl")
-    var transl_Original: TransliterateFunction = js.native
+    var transl_Original: TransliterateFunction
     
-    def transliterate(source: String): String = js.native
-    def transliterate(source: String, options: OptionsTransliterate): String = js.native
+    def transliterate(source: String): String
+    def transliterate(source: String, options: OptionsTransliterate): String
     @JSName("transliterate")
-    var transliterate_Original: TransliterateFunction = js.native
+    var transliterate_Original: TransliterateFunction
+  }
+  object BrowserGlobalObject {
+    
+    @scala.inline
+    def apply(slugify: SlugifyFunction, transl: TransliterateFunction, transliterate: TransliterateFunction): BrowserGlobalObject = {
+      val __obj = js.Dynamic.literal(slugify = slugify.asInstanceOf[js.Any], transl = transl.asInstanceOf[js.Any], transliterate = transliterate.asInstanceOf[js.Any])
+      __obj.asInstanceOf[BrowserGlobalObject]
+    }
+    
+    @scala.inline
+    implicit class BrowserGlobalObjectMutableBuilder[Self <: BrowserGlobalObject] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setSlugify(value: SlugifyFunction): Self = StObject.set(x, "slugify", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTransl(value: TransliterateFunction): Self = StObject.set(x, "transl", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTransliterate(value: TransliterateFunction): Self = StObject.set(x, "transliterate", value.asInstanceOf[js.Any])
+    }
   }
   
   type IntervalArray = js.Array[js.Tuple2[Double, Double]]
@@ -60,8 +79,9 @@ object typesMod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.transliteration.typesMod.Options because Already inherited */ @js.native
-  trait OptionsSlugify extends OptionsTransliterate {
+  - typings.transliteration.typesMod.Options because Already inherited */ trait OptionsSlugify
+    extends StObject
+       with OptionsTransliterate {
     
     /**
       * Allowed characters.
@@ -69,25 +89,25 @@ object typesMod {
       * Other characters will all be converted to `separator`
       * @default 'a-zA-Z0-9-_.~''
       */
-    var allowedChars: js.UndefOr[String] = js.native
+    var allowedChars: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the result need to be converted into lowercase
       * @default true
       */
-    var lowercase: js.UndefOr[Boolean] = js.native
+    var lowercase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Custom separator string
       * @default '-'
       */
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the result need to be converted into uppercase
       * @default false
       */
-    var uppercase: js.UndefOr[Boolean] = js.native
+    var uppercase: js.UndefOr[Boolean] = js.undefined
   }
   object OptionsSlugify {
     
@@ -126,20 +146,21 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait OptionsTransliterate extends Options {
+  trait OptionsTransliterate
+    extends StObject
+       with Options {
     
     /**
       * Fix Chinese spacing. For example, `你好` is transliterated to `Ni Hao` instead of `NiHao`. If you don't need to transliterate Chinese characters, set it to false to false to improve performance.
       * @default true
       */
-    var fixChineseSpacing: js.UndefOr[Boolean] = js.native
+    var fixChineseSpacing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Ignore a list of strings untouched
       * @example tr('你好，世界', { ignore: ['你'] }) // 你 Hao , Shi Jie
       */
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Replace a list of string / regex in the source string into the provided target string before transliteration
@@ -148,24 +169,24 @@ object typesMod {
       * @example tr('你好，世界', { replace: [['你', 'You']] }) // You Hao , Shi Jie
       * @example tr('你好，世界', { replace: [[/你/g, 'You']] }) // You Hao , Shi Jie
       */
-    var replace: js.UndefOr[OptionReplaceCombined] = js.native
+    var replace: js.UndefOr[OptionReplaceCombined] = js.undefined
     
     /**
       * Same as `replace` but after transliteration
       */
-    var replaceAfter: js.UndefOr[OptionReplaceCombined] = js.native
+    var replaceAfter: js.UndefOr[OptionReplaceCombined] = js.undefined
     
     /**
       * Decides whether or not to trim the result string after transliteration
       * @default false
       */
-    var trim: js.UndefOr[Boolean] = js.native
+    var trim: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Any characters not known by this library will be replaced by a specific string `unknown`
       * @default ''
       */
-    var unknown: js.UndefOr[String] = js.native
+    var unknown: js.UndefOr[String] = js.undefined
   }
   object OptionsTransliterate {
     
@@ -243,7 +264,7 @@ object typesMod {
     def config(): T = js.native
     def config(options: T): T = js.native
     def config(options: T, reset: Boolean): T = js.native
-    def config(options: js.UndefOr[scala.Nothing], reset: Boolean): T = js.native
+    def config(options: Unit, reset: Boolean): T = js.native
     
     /**
       * Used by browser
@@ -257,7 +278,7 @@ object typesMod {
       * @memberof Transliterate
       */
     def setData(): Charmap_ = js.native
-    def setData(data: js.UndefOr[scala.Nothing], reset: Boolean): Charmap_ = js.native
+    def setData(data: Unit, reset: Boolean): Charmap_ = js.native
     def setData(data: Charmap_): Charmap_ = js.native
     def setData(data: Charmap_, reset: Boolean): Charmap_ = js.native
   }

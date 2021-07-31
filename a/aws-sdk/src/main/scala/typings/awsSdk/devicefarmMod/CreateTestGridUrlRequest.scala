@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTestGridUrlRequest extends StObject {
   
   /**
     * Lifetime, in seconds, of the URL.
     */
-  var expiresInSeconds: TestGridUrlExpiresInSecondsInput = js.native
+  var expiresInSeconds: TestGridUrlExpiresInSecondsInput
   
   /**
     * ARN (from CreateTestGridProject or ListTestGridProjects) to associate with the short-term URL. 
     */
-  var projectArn: DeviceFarmArn = js.native
+  var projectArn: DeviceFarmArn
 }
 object CreateTestGridUrlRequest {
   

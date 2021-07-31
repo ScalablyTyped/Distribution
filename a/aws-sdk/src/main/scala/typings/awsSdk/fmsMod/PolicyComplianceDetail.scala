@@ -2,46 +2,44 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyComplianceDetail extends StObject {
   
   /**
     * Indicates if over 100 resources are noncompliant with the AWS Firewall Manager policy.
     */
-  var EvaluationLimitExceeded: js.UndefOr[Boolean] = js.native
+  var EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A timestamp that indicates when the returned information should be considered out of date.
     */
-  var ExpiredAt: js.UndefOr[TimeStamp] = js.native
+  var ExpiredAt: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * Details about problems with dependent services, such as AWS WAF or AWS Config, that are causing a resource to be noncompliant. The details include the name of the dependent service and the error message received that indicates the problem with the service.
     */
-  var IssueInfoMap: js.UndefOr[typings.awsSdk.fmsMod.IssueInfoMap] = js.native
+  var IssueInfoMap: js.UndefOr[typings.awsSdk.fmsMod.IssueInfoMap] = js.undefined
   
   /**
     * The AWS account ID.
     */
-  var MemberAccount: js.UndefOr[AWSAccountId] = js.native
+  var MemberAccount: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
     * The ID of the AWS Firewall Manager policy.
     */
-  var PolicyId: js.UndefOr[typings.awsSdk.fmsMod.PolicyId] = js.native
+  var PolicyId: js.UndefOr[typings.awsSdk.fmsMod.PolicyId] = js.undefined
   
   /**
     * The AWS account that created the AWS Firewall Manager policy.
     */
-  var PolicyOwner: js.UndefOr[AWSAccountId] = js.native
+  var PolicyOwner: js.UndefOr[AWSAccountId] = js.undefined
   
   /**
     * An array of resources that aren't protected by the AWS WAF or Shield Advanced policy or that aren't in compliance with the security group policy.
     */
-  var Violators: js.UndefOr[ComplianceViolators] = js.native
+  var Violators: js.UndefOr[ComplianceViolators] = js.undefined
 }
 object PolicyComplianceDetail {
   

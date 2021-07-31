@@ -17,34 +17,29 @@ import typings.std.Exclude
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("beanstalkd", JSImport.Default)
   @js.native
-  class default () extends BeanstalkdClient {
+  class default ()
+    extends StObject
+       with BeanstalkdClient {
     def this(host: String) = this()
-    def this(host: js.UndefOr[scala.Nothing], port: Double) = this()
     def this(host: String, port: Double) = this()
-    def this(host: js.UndefOr[scala.Nothing], port: js.UndefOr[scala.Nothing], options: js.Object) = this()
-    def this(host: js.UndefOr[scala.Nothing], port: Double, options: js.Object) = this()
-    def this(host: String, port: js.UndefOr[scala.Nothing], options: js.Object) = this()
+    def this(host: Unit, port: Double) = this()
     def this(host: String, port: Double, options: js.Object) = this()
+    def this(host: String, port: Unit, options: js.Object) = this()
+    def this(host: Unit, port: Double, options: js.Object) = this()
+    def this(host: Unit, port: Unit, options: js.Object) = this()
   }
   /* static members */
   object default {
     
-    /**
-      * Prepare a command which will be applied on the Client.
-      *
-      * @param command The command to prepare.
-      * @param expected The expected reply.
-      */
-    @JSImport("beanstalkd", "default.addCommand")
+    @JSImport("beanstalkd", JSImport.Default)
     @js.native
-    def addCommand(command: String, expected: String): Unit = js.native
+    val ^ : js.Any = js.native
     
     /**
       * Prepare a command which will be applied on the Client.
@@ -52,30 +47,37 @@ object mod {
       * @param command The command to prepare.
       * @param expected The expected reply.
       */
-    @JSImport("beanstalkd", "default.addYamlCommand")
-    @js.native
-    def addYamlCommand(command: String, expected: String): Unit = js.native
+    @scala.inline
+    def addCommand(command: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addCommand")(command.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    /**
+      * Prepare a command which will be applied on the Client.
+      *
+      * @param command The command to prepare.
+      * @param expected The expected reply.
+      */
+    @scala.inline
+    def addYamlCommand(command: String, expected: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addYamlCommand")(command.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   type ArgsType[T] = js.Any
   
-  @js.native
   trait BasicReader extends StObject {
     
     def handle(
       protocol: BeanstalkdProtocol,
       data: js.Any,
       resolve: js.Function1[/* data */ js.UndefOr[js.Any], Unit],
-      reject: js.Function1[/* err */ js.UndefOr[js.Any], _]
-    ): Buffer = js.native
+      reject: js.Function1[/* err */ js.UndefOr[js.Any], js.Any]
+    ): Buffer
     
-    def parseData(data: String): js.Any = js.native
+    def parseData(data: String): js.Any
   }
   object BasicReader {
     
     @scala.inline
     def apply(
-      handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], _]) => Buffer,
+      handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer,
       parseData: String => js.Any
     ): BasicReader = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction4(handle), parseData = js.Any.fromFunction1(parseData))
@@ -87,7 +89,7 @@ object mod {
       
       @scala.inline
       def setHandle(
-        value: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], _]) => Buffer
+        value: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer
       ): Self = StObject.set(x, "handle", js.Any.fromFunction4(value))
       
       @scala.inline
@@ -95,15 +97,16 @@ object mod {
     }
   }
   
-  @js.native
-  trait BasicWriter extends Writer {
+  trait BasicWriter
+    extends StObject
+       with Writer {
     
-    def handle(protocol: BeanstalkdProtocol, connection: Socket, args: js.Any*): js.Promise[_] = js.native
+    def handle(protocol: BeanstalkdProtocol, connection: Socket, args: js.Any*): js.Promise[js.Any]
   }
   object BasicWriter {
     
     @scala.inline
-    def apply(command: String, handle: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[_]): BasicWriter = {
+    def apply(command: String, handle: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): BasicWriter = {
       val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], handle = js.Any.fromFunction3(handle))
       __obj.asInstanceOf[BasicWriter]
     }
@@ -112,11 +115,10 @@ object mod {
     implicit class BasicWriterMutableBuilder[Self <: BasicWriter] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setHandle(value: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[_]): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
+      def setHandle(value: (BeanstalkdProtocol, Socket, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
     }
   }
   
-  @js.native
   trait BeanstalkdCaller extends StObject {
     
     def call[K /* <: Exclude[
@@ -131,7 +133,7 @@ object mod {
         ReturnType[
           /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
         ]
-      ]) with BeanstalkdCaller = js.native
+      ]) & BeanstalkdCaller
   }
   object BeanstalkdCaller {
     
@@ -143,7 +145,7 @@ object mod {
           ReturnType[
             /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
           ]
-        ]) with BeanstalkdCaller
+        ]) & BeanstalkdCaller
     ): BeanstalkdCaller = {
       val __obj = js.Dynamic.literal(call = js.Any.fromFunction2(call))
       __obj.asInstanceOf[BeanstalkdCaller]
@@ -160,7 +162,7 @@ object mod {
               ReturnType[
                 /* import warning: importer.ImportType#apply Failed type conversion: beanstalkd.anon.RequiredBeanstalkdClient[K] */ js.Any
               ]
-            ]) with BeanstalkdCaller
+            ]) & BeanstalkdCaller
       ): Self = StObject.set(x, "call", js.Any.fromFunction2(value))
     }
   }
@@ -176,8 +178,8 @@ object mod {
       * @param writer The Writer to use for this command.
       * @param reader The Reader to use for this command.
       */
-    def _command(command: String, args: js.Array[_], writer: BasicWriter, reader: BasicReader): js.Promise[_] = js.native
-    def _command(command: String, args: js.Array[_], writer: BasicWriter, reader: YamlReader): js.Promise[_] = js.native
+    def _command(command: String, args: js.Array[js.Any], writer: BasicWriter, reader: BasicReader): js.Promise[js.Any] = js.native
+    def _command(command: String, args: js.Array[js.Any], writer: BasicWriter, reader: YamlReader): js.Promise[js.Any] = js.native
     
     /**
       * Bury the specified job and assign it the given priority. Responds with null if successful, a string error otherwise.
@@ -192,7 +194,7 @@ object mod {
     /**
       * Connect the Client to the configured Server.
       */
-    def connect(): (js.Promise[this.type with BeanstalkdCaller]) with BeanstalkdCaller = js.native
+    def connect(): (js.Promise[this.type & BeanstalkdCaller]) & BeanstalkdCaller = js.native
     
     /**
       * Delete the specified job. Responds with null if successful, a string error otherwise.
@@ -482,57 +484,56 @@ object mod {
     def reserved: typings.beanstalkd.beanstalkdStrings.reserved = "reserved".asInstanceOf[typings.beanstalkd.beanstalkdStrings.reserved]
   }
   
-  @js.native
   trait BeanstalkdJobStats extends StObject {
     
     /** The time in seconds since the put command that created this job. */
-    var age: Double = js.native
+    var age: Double
     
     /** The number of times this job has been buried. */
-    var buries: Double = js.native
+    var buries: Double
     
     /** The integer number of seconds to wait before putting this job in the ready queue. */
-    var delay: Double = js.native
+    var delay: Double
     
     /**
       * The number of the earliest binlog file containing this job.
       * If -b wasn't used, this will be 0.
       */
-    var file: Double = js.native
+    var file: Double
     
     /** The job id. */
-    var id: String = js.native
+    var id: String
     
     /** The number of times this job has been kicked. */
-    var kicks: Double = js.native
+    var kicks: Double
     
     /** The priority value set by the put, release, or bury commands. */
-    var pri: Double = js.native
+    var pri: Double
     
     /** The number of times a client has released this job from a reservation. */
-    var releases: Double = js.native
+    var releases: Double
     
     /** The number of times this job has been reserved. */
-    var reserves: Double = js.native
+    var reserves: Double
     
     /** The job state. */
-    var state: String = js.native
+    var state: String
     
     /**
       * The number of seconds left until the server puts this job into the ready queue.
       * This number is only meaningful if the job is reserved or delayed.
       * If the job is reserved and this amount of time elapses before its state changes, it is considered to have timed out.
       */
-    var `time-left`: Double = js.native
+    var `time-left`: Double
     
     /** The number of times this job has timed out during a reservation. */
-    var timeouts: Double = js.native
+    var timeouts: Double
     
     /** Time to run: The integer number of seconds a worker is allowed to run this job. */
-    var ttr: Double = js.native
+    var ttr: Double
     
     /** The name of the tube that contains this job. */
-    var tube: String = js.native
+    var tube: String
   }
   object BeanstalkdJobStats {
     
@@ -605,32 +606,31 @@ object mod {
     }
   }
   
-  @js.native
   trait BeanstalkdProtocol extends StObject {
     
-    def add(signature: String, key: String): Unit = js.native
+    def add(signature: String, key: String): Unit
     
-    def addCommand(signature: String): Unit = js.native
+    def addCommand(signature: String): Unit
     
-    def addReply(signature: String): Unit = js.native
+    def addReply(signature: String): Unit
     
-    def addType(key: String, `type`: js.Any): Unit = js.native
+    def addType(key: String, `type`: js.Any): Unit
     
-    def build(identifier: String, args: js.Array[_], key: String): Buffer = js.native
+    def build(identifier: String, args: js.Array[js.Any], key: String): Buffer
     
-    def buildCommand(command: String, args: js.Array[_]): Buffer = js.native
+    def buildCommand(command: String, args: js.Array[js.Any]): Buffer
     
-    def buildPut(args: js.Array[_]): Buffer = js.native
+    def buildPut(args: js.Array[js.Any]): Buffer
     
-    def buildreply(reply: String, args: js.Array[_]): Buffer = js.native
+    def buildreply(reply: String, args: js.Array[js.Any]): Buffer
     
-    def parse(buffer: Buffer, key: String): js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | BeanstalkdProtocolReply | Null] = js.native
+    def parse(buffer: Buffer, key: String): js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | BeanstalkdProtocolReply | Null]
     
-    def parseCommand(buffer: Buffer): js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | Null] = js.native
+    def parseCommand(buffer: Buffer): js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | Null]
     
-    def parseReply(buffer: Buffer): js.Tuple2[Buffer | Null, BeanstalkdProtocolReply | Null] = js.native
+    def parseReply(buffer: Buffer): js.Tuple2[Buffer | Null, BeanstalkdProtocolReply | Null]
     
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object BeanstalkdProtocol {
     
@@ -640,10 +640,10 @@ object mod {
       addCommand: String => Unit,
       addReply: String => Unit,
       addType: (String, js.Any) => Unit,
-      build: (String, js.Array[_], String) => Buffer,
-      buildCommand: (String, js.Array[_]) => Buffer,
-      buildPut: js.Array[_] => Buffer,
-      buildreply: (String, js.Array[_]) => Buffer,
+      build: (String, js.Array[js.Any], String) => Buffer,
+      buildCommand: (String, js.Array[js.Any]) => Buffer,
+      buildPut: js.Array[js.Any] => Buffer,
+      buildreply: (String, js.Array[js.Any]) => Buffer,
       parse: (Buffer, String) => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | BeanstalkdProtocolReply | Null],
       parseCommand: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolCommand | Null],
       parseReply: Buffer => js.Tuple2[Buffer | Null, BeanstalkdProtocolReply | Null],
@@ -669,16 +669,16 @@ object mod {
       def setAddType(value: (String, js.Any) => Unit): Self = StObject.set(x, "addType", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setBuild(value: (String, js.Array[_], String) => Buffer): Self = StObject.set(x, "build", js.Any.fromFunction3(value))
+      def setBuild(value: (String, js.Array[js.Any], String) => Buffer): Self = StObject.set(x, "build", js.Any.fromFunction3(value))
       
       @scala.inline
-      def setBuildCommand(value: (String, js.Array[_]) => Buffer): Self = StObject.set(x, "buildCommand", js.Any.fromFunction2(value))
+      def setBuildCommand(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildCommand", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setBuildPut(value: js.Array[_] => Buffer): Self = StObject.set(x, "buildPut", js.Any.fromFunction1(value))
+      def setBuildPut(value: js.Array[js.Any] => Buffer): Self = StObject.set(x, "buildPut", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setBuildreply(value: (String, js.Array[_]) => Buffer): Self = StObject.set(x, "buildreply", js.Any.fromFunction2(value))
+      def setBuildreply(value: (String, js.Array[js.Any]) => Buffer): Self = StObject.set(x, "buildreply", js.Any.fromFunction2(value))
       
       @scala.inline
       def setParse(
@@ -696,17 +696,16 @@ object mod {
     }
   }
   
-  @js.native
   trait BeanstalkdProtocolCommand extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var command: String = js.native
+    var command: String
   }
   object BeanstalkdProtocolCommand {
     
     @scala.inline
-    def apply(args: js.Array[_], command: String): BeanstalkdProtocolCommand = {
+    def apply(args: js.Array[js.Any], command: String): BeanstalkdProtocolCommand = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], command = command.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeanstalkdProtocolCommand]
     }
@@ -715,7 +714,7 @@ object mod {
     implicit class BeanstalkdProtocolCommandMutableBuilder[Self <: BeanstalkdProtocolCommand] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -725,17 +724,16 @@ object mod {
     }
   }
   
-  @js.native
   trait BeanstalkdProtocolReply extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var reply: String = js.native
+    var reply: String
   }
   object BeanstalkdProtocolReply {
     
     @scala.inline
-    def apply(args: js.Array[_], reply: String): BeanstalkdProtocolReply = {
+    def apply(args: js.Array[js.Any], reply: String): BeanstalkdProtocolReply = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], reply = reply.asInstanceOf[js.Any])
       __obj.asInstanceOf[BeanstalkdProtocolReply]
     }
@@ -744,7 +742,7 @@ object mod {
     implicit class BeanstalkdProtocolReplyMutableBuilder[Self <: BeanstalkdProtocolReply] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -754,155 +752,154 @@ object mod {
     }
   }
   
-  @js.native
   trait BeanstalkdStats extends StObject {
     
     /** The index of the current binlog file being written to. If binlog is not active this value will be 0. */
-    var `binlog-current-index`: Double = js.native
+    var `binlog-current-index`: Double
     
     /** The maximum size in bytes a binlog file is allowed to get before a new binlog file is opened. */
-    var `binlog-max-size`: Double = js.native
+    var `binlog-max-size`: Double
     
     /** The index of the oldest binlog file needed to store the current jobs. */
-    var `binlog-oldest-index`: Double = js.native
+    var `binlog-oldest-index`: Double
     
     /** The cumulative number of records written as part of compaction. */
-    var `binlog-records-migrated`: Double = js.native
+    var `binlog-records-migrated`: Double
     
     /** The cumulative number of records written to the binlog. */
-    var `binlog-records-written`: Double = js.native
+    var `binlog-records-written`: Double
     
     /** The cumulative number of bury commands. */
-    var `cmd-bury`: Double = js.native
+    var `cmd-bury`: Double
     
     /** The cumulative number of delete commands. */
-    var `cmd-delete`: Double = js.native
+    var `cmd-delete`: Double
     
     /** The cumulative number of ignore commands. */
-    var `cmd-ignore`: Double = js.native
+    var `cmd-ignore`: Double
     
     /** The cumulative number of kick commands. */
-    var `cmd-kick`: Double = js.native
+    var `cmd-kick`: Double
     
     /** The cumulative number of list-tube-used commands. */
-    var `cmd-list-tube-used`: Double = js.native
+    var `cmd-list-tube-used`: Double
     
     /** The cumulative number of list-tubes commands. */
-    var `cmd-list-tubes`: Double = js.native
+    var `cmd-list-tubes`: Double
     
     /** The cumulative number of list-tubes-watched commands. */
-    var `cmd-list-tubes-watched`: Double = js.native
+    var `cmd-list-tubes-watched`: Double
     
     /** The cumulative number of pause-tube commands. */
-    var `cmd-pause-tube`: Double = js.native
+    var `cmd-pause-tube`: Double
     
     /** The cumulative number of peek commands. */
-    var `cmd-peek`: Double = js.native
+    var `cmd-peek`: Double
     
     /** The cumulative number of peek-buried commands. */
-    var `cmd-peek-buried`: Double = js.native
+    var `cmd-peek-buried`: Double
     
     /** The cumulative number of peek-delayed commands. */
-    var `cmd-peek-delayed`: Double = js.native
+    var `cmd-peek-delayed`: Double
     
     /** The cumulative number of peek-ready commands. */
-    var `cmd-peek-ready`: Double = js.native
+    var `cmd-peek-ready`: Double
     
     /** The cumulative number of put commands. */
-    var `cmd-put`: Double = js.native
+    var `cmd-put`: Double
     
     /** The cumulative number of release commands. */
-    var `cmd-release`: Double = js.native
+    var `cmd-release`: Double
     
     /** The cumulative number of reserve commands. */
-    var `cmd-reserve`: Double = js.native
+    var `cmd-reserve`: Double
     
     /** The cumulative number of stats commands. */
-    var `cmd-stats`: Double = js.native
+    var `cmd-stats`: Double
     
     /** The cumulative number of stats-job commands. */
-    var `cmd-stats-job`: Double = js.native
+    var `cmd-stats-job`: Double
     
     /** The cumulative number of stats-tube commands. */
-    var `cmd-stats-tube`: Double = js.native
+    var `cmd-stats-tube`: Double
     
     /** The cumulative number of use commands. */
-    var `cmd-use`: Double = js.native
+    var `cmd-use`: Double
     
     /** The cumulative number of watch commands. */
-    var `cmd-watch`: Double = js.native
+    var `cmd-watch`: Double
     
     /** The number of currently open connections. */
-    var `current-connections`: Double = js.native
+    var `current-connections`: Double
     
     /** The number of buried jobs. */
-    var `current-jobs-buried`: Double = js.native
+    var `current-jobs-buried`: Double
     
     /** The number of delayed jobs. */
-    var `current-jobs-delayed`: Double = js.native
+    var `current-jobs-delayed`: Double
     
     /** The number of jobs in the ready queue. */
-    var `current-jobs-ready`: Double = js.native
+    var `current-jobs-ready`: Double
     
     /** The number of jobs reserved by all clients. */
-    var `current-jobs-reserved`: Double = js.native
+    var `current-jobs-reserved`: Double
     
     /** The number of ready jobs with priority < 1024. */
-    var `current-jobs-urgent`: Double = js.native
+    var `current-jobs-urgent`: Double
     
     /** The number of open connections that have each issued at least one put command. */
-    var `current-producers`: Double = js.native
+    var `current-producers`: Double
     
     /** The number of currently-existing tubes. */
-    var `current-tubes`: Double = js.native
+    var `current-tubes`: Double
     
     /** The number of open connections that have issued a reserve command but not yet received a response. */
-    var `current-waiting`: Double = js.native
+    var `current-waiting`: Double
     
     /** The number of open connections that have each issued at least one reserve command. */
-    var `current-workers`: Double = js.native
+    var `current-workers`: Double
     
     /** Set to "true" if the server is in drain mode, "false" otherwise. */
-    var draining: Boolean = js.native
+    var draining: Boolean
     
     /** The hostname of the machine as determined by uname. */
-    var hostname: String = js.native
+    var hostname: String
     
     /** A random id string for this server process, generated every time beanstalkd process starts. */
-    var id: String = js.native
+    var id: String
     
     /** The cumulative count of times a job has timed out. */
-    var `job-timeouts`: Double = js.native
+    var `job-timeouts`: Double
     
     /** The maximum number of bytes in a job. */
-    var `max-job-size`: Double = js.native
+    var `max-job-size`: Double
     
     /** The OS version as determined by uname */
-    var os: String = js.native
+    var os: String
     
     /** The process id of the server. */
-    var pid: String = js.native
+    var pid: String
     
     /** The machine architecture as determined by uname */
-    var platform: String = js.native
+    var platform: String
     
     /** The cumulative system CPU time of this process in seconds and microseconds. */
-    var `rusage-stime`: Double = js.native
+    var `rusage-stime`: Double
     
     /** The cumulative user CPU time of this process in seconds and microseconds. */
-    var `rusage-utime`: Double = js.native
+    var `rusage-utime`: Double
     
     /** The cumulative count of connections. */
-    var `total-connections`: Double = js.native
+    var `total-connections`: Double
     
     /** The cumulative count of jobs created. */
-    var `total-jobs`: Double = js.native
+    var `total-jobs`: Double
     
     /** The number of seconds since this server process started running. */
-    var uptime: Double = js.native
+    var uptime: Double
     
     /** The version string of the server. */
-    var version: String = js.native
+    var version: String
   }
   object BeanstalkdStats {
     
@@ -1155,50 +1152,49 @@ object mod {
     }
   }
   
-  @js.native
   trait BeanstalkdTubeStats extends StObject {
     
     /** The cumulative number of delete commands for this tube. */
-    var `cmd-delete`: Double = js.native
+    var `cmd-delete`: Double
     
     /** The cumulative number of pause-tube commands for this tube. */
-    var `cmd-pause-tube`: Double = js.native
+    var `cmd-pause-tube`: Double
     
     /** The number of buried jobs in this tube. */
-    var `current-jobs-buried`: Double = js.native
+    var `current-jobs-buried`: Double
     
     /** The number of delayed jobs in this tube. */
-    var `current-jobs-delayed`: Double = js.native
+    var `current-jobs-delayed`: Double
     
     /** The number of jobs in the ready queue in this tube. */
-    var `current-jobs-ready`: Double = js.native
+    var `current-jobs-ready`: Double
     
     /** The number of jobs reserved by all clients in this tube. */
-    var `current-jobs-reserved`: Double = js.native
+    var `current-jobs-reserved`: Double
     
     /** The number of ready jobs with priority < 1024 in this tube. */
-    var `current-jobs-urgent`: Double = js.native
+    var `current-jobs-urgent`: Double
     
     /** The number of open connections that are currently using this tube. */
-    var `current-using`: Double = js.native
+    var `current-using`: Double
     
     /** The number of open connections that have issued a reserve command while watching this tube but not yet received a response. */
-    var `current-waiting`: Double = js.native
+    var `current-waiting`: Double
     
     /** The number of open connections that are currently watching this tube. */
-    var `current-watching`: Double = js.native
+    var `current-watching`: Double
     
     /** The tube's name. */
-    var name: String = js.native
+    var name: String
     
     /** The number of seconds the tube has been paused for. */
-    var pause: Double = js.native
+    var pause: Double
     
     /** The number of seconds until the tube is un-paused. */
-    var `pause-time-left`: Double = js.native
+    var `pause-time-left`: Double
     
     /** The cumulative count of jobs created in this tube in the current beanstalkd process. */
-    var `total-jobs`: Double = js.native
+    var `total-jobs`: Double
   }
   object BeanstalkdTubeStats {
     
@@ -1282,16 +1278,15 @@ object mod {
     }
   }
   
-  type FunctionsNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) with String
+  type FunctionsNames[T] = (/* import warning: importer.ImportType#apply Failed type conversion: {[ K in keyof T ]: T[K] extends (args : ...any): any? K : never}[keyof T] */ js.Any) & String
   
   type MergePromise[T] = js.Promise[UnPromise[T]]
   
   type UnPromise[T] = T
   
-  @js.native
   trait Writer extends StObject {
     
-    var command: String = js.native
+    var command: String
   }
   object Writer {
     
@@ -1309,13 +1304,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait YamlReader extends BasicReader
+  trait YamlReader
+    extends StObject
+       with BasicReader
   object YamlReader {
     
     @scala.inline
     def apply(
-      handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], _]) => Buffer,
+      handle: (BeanstalkdProtocol, js.Any, js.Function1[/* data */ js.UndefOr[js.Any], Unit], js.Function1[/* err */ js.UndefOr[js.Any], js.Any]) => Buffer,
       parseData: String => js.Any
     ): YamlReader = {
       val __obj = js.Dynamic.literal(handle = js.Any.fromFunction4(handle), parseData = js.Any.fromFunction1(parseData))

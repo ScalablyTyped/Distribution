@@ -3,15 +3,13 @@ package typings.reactOnsenui.mod
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabbarRenderTab extends StObject {
   
-  var content: Element = js.native
+  var content: Element
   
-  var tab: Element = js.native
+  var tab: Element
 }
 object TabbarRenderTab {
   

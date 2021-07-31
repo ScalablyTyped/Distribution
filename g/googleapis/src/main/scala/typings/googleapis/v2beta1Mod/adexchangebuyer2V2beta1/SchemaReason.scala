@@ -2,27 +2,25 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A specific filtering status and how many times it occurred.
   */
-@js.native
 trait SchemaReason extends StObject {
   
   /**
     * The number of times the creative was filtered for the status. The count
     * is aggregated across all publishers on the exchange.
     */
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * The filtering status code. Please refer to the
     * [creative-status-codes.txt](https://storage.googleapis.com/adx-rtb-dictionaries/creative-status-codes.txt)
     * file for different statuses.
     */
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
 }
 object SchemaReason {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContentMatcher extends StObject {
   
   /** String or regex content to match. Maximum 1024 bytes. An empty content string indicates no content matching is to be performed. */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /** The type of content matcher that will be applied to the server output, compared to the content string when the check is run. */
-  var matcher: js.UndefOr[String] = js.native
+  var matcher: js.UndefOr[String] = js.undefined
 }
 object ContentMatcher {
   

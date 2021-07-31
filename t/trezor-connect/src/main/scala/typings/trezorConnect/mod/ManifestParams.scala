@@ -2,15 +2,13 @@ package typings.trezorConnect.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManifestParams extends StObject {
   
-  var appUrl: String = js.native
+  var appUrl: String
   
-  var email: String = js.native
+  var email: String
 }
 object ManifestParams {
   

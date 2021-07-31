@@ -2,51 +2,49 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFindingsFilterResponse extends StObject {
   
   /**
     * The action that's performed on findings that meet the filter criteria (findingCriteria). Possible values are: ARCHIVE, suppress (automatically archive) the findings; and, NOOP, don't perform any action on the findings.
     */
-  var action: js.UndefOr[FindingsFilterAction] = js.native
+  var action: js.UndefOr[FindingsFilterAction] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the filter.
     */
-  var arn: js.UndefOr[string] = js.native
+  var arn: js.UndefOr[string] = js.undefined
   
   /**
     * The custom description of the filter.
     */
-  var description: js.UndefOr[string] = js.native
+  var description: js.UndefOr[string] = js.undefined
   
   /**
     * The criteria that's used to filter findings.
     */
-  var findingCriteria: js.UndefOr[FindingCriteria] = js.native
+  var findingCriteria: js.UndefOr[FindingCriteria] = js.undefined
   
   /**
     * The unique identifier for the filter.
     */
-  var id: js.UndefOr[string] = js.native
+  var id: js.UndefOr[string] = js.undefined
   
   /**
     * The custom name of the filter.
     */
-  var name: js.UndefOr[string] = js.native
+  var name: js.UndefOr[string] = js.undefined
   
   /**
     * The position of the filter in the list of saved filters on the Amazon Macie console. This value also determines the order in which the filter is applied to findings, relative to other filters that are also applied to the findings.
     */
-  var position: js.UndefOr[integer] = js.native
+  var position: js.UndefOr[integer] = js.undefined
   
   /**
     * A map of key-value pairs that identifies the tags (keys and values) that are associated with the filter.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object GetFindingsFilterResponse {
   

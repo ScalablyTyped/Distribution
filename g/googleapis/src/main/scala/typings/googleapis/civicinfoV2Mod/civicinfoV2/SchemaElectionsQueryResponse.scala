@@ -2,25 +2,23 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The list of elections available for this version of the API.
   */
-@js.native
 trait SchemaElectionsQueryResponse extends StObject {
   
   /**
     * A list of available elections
     */
-  var elections: js.UndefOr[js.Array[SchemaElection]] = js.native
+  var elections: js.UndefOr[js.Array[SchemaElection]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;civicinfo#electionsQueryResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaElectionsQueryResponse {
   

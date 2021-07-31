@@ -4,17 +4,15 @@ import typings.doublearray.doublearray.DoubleArray
 import typings.kuromoji.mod.TokenInfoDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Tokeninfodictionary extends StObject {
     
-    var token_info_dictionary: TokenInfoDictionary = js.native
+    var token_info_dictionary: TokenInfoDictionary
     
-    var trie: DoubleArray = js.native
+    var trie: DoubleArray
   }
   object Tokeninfodictionary {
     

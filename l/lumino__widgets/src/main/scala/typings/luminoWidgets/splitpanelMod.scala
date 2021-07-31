@@ -11,7 +11,6 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object splitpanelMod {
@@ -138,13 +137,27 @@ object splitpanelMod {
   }
   object SplitPanel {
     
+    @JSImport("@lumino/widgets/types/splitpanel", "SplitPanel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * The default implementation of `IRenderer`.
       */
     @JSImport("@lumino/widgets/types/splitpanel", "SplitPanel.Renderer")
     @js.native
     class Renderer ()
-      extends typings.luminoWidgets.splitlayoutMod.SplitLayout.IRenderer
+      extends StObject
+         with typings.luminoWidgets.splitlayoutMod.SplitLayout.IRenderer {
+      
+      /**
+        * Create a new handle for use with a split layout.
+        *
+        * @returns A new handle element.
+        */
+      /* CompleteClass */
+      override def createHandle(): HTMLDivElement = js.native
+    }
     
     /**
       * The default `Renderer` instance.
@@ -160,9 +173,8 @@ object splitpanelMod {
       *
       * @returns The split panel stretch factor for the widget.
       */
-    @JSImport("@lumino/widgets/types/splitpanel", "SplitPanel.getStretch")
-    @js.native
-    def getStretch(widget: Widget): Double = js.native
+    @scala.inline
+    def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Set the split panel stretch factor for the given widget.
@@ -171,9 +183,8 @@ object splitpanelMod {
       *
       * @param value - The value for the stretch factor.
       */
-    @JSImport("@lumino/widgets/types/splitpanel", "SplitPanel.setStretch")
-    @js.native
-    def setStretch(widget: Widget, value: Double): Unit = js.native
+    @scala.inline
+    def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for a split panel alignment.
@@ -183,7 +194,6 @@ object splitpanelMod {
     /**
       * An options object for initializing a split panel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -191,7 +201,7 @@ object splitpanelMod {
         *
         * The default is `'start'`.
         */
-      var alignment: js.UndefOr[Alignment] = js.native
+      var alignment: js.UndefOr[Alignment] = js.undefined
       
       /**
         * The split layout to use for the split panel.
@@ -200,28 +210,28 @@ object splitpanelMod {
         *
         * The default is a new `SplitLayout`.
         */
-      var layout: js.UndefOr[SplitLayout] = js.native
+      var layout: js.UndefOr[SplitLayout] = js.undefined
       
       /**
         * The layout orientation of the panel.
         *
         * The default is `'horizontal'`.
         */
-      var orientation: js.UndefOr[Orientation] = js.native
+      var orientation: js.UndefOr[Orientation] = js.undefined
       
       /**
         * The renderer to use for the split panel.
         *
         * The default is a shared renderer instance.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
       
       /**
         * The spacing between items in the panel.
         *
         * The default is `4`.
         */
-      var spacing: js.UndefOr[Double] = js.native
+      var spacing: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       

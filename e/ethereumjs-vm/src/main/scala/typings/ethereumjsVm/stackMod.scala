@@ -3,14 +3,15 @@ package typings.ethereumjsVm
 import typings.bnJs.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
   
   @JSImport("ethereumjs-vm/dist/evm/stack", JSImport.Default)
   @js.native
-  class default () extends Stack
+  class default ()
+    extends StObject
+       with Stack
   
   @js.native
   trait Stack extends StObject {

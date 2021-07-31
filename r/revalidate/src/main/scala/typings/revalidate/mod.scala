@@ -3,278 +3,197 @@ package typings.revalidate
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("revalidate", "combineValidators")
+  @JSImport("revalidate", JSImport.Namespace)
   @js.native
-  def combineValidators(validators: js.Any): ConfiguredCombinedValidator = js.native
-  @JSImport("revalidate", "combineValidators")
-  @js.native
-  def combineValidators(validators: js.Any, options: CombineValidatorsOptions): ConfiguredCombinedValidator = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("revalidate", "composeValidators")
-  @js.native
-  def composeValidators(firstValidator: js.Any, validators: Validator*): ComposedCurryableValidator = js.native
-  @JSImport("revalidate", "composeValidators")
-  @js.native
-  def composeValidators(firstValidator: Validator, validators: Validator*): ComposedCurryableValidator = js.native
+  @scala.inline
+  def combineValidators(validators: js.Any): ConfiguredCombinedValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("combineValidators")(validators.asInstanceOf[js.Any]).asInstanceOf[ConfiguredCombinedValidator]
+  @scala.inline
+  def combineValidators(validators: js.Any, options: CombineValidatorsOptions): ConfiguredCombinedValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("combineValidators")(validators.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ConfiguredCombinedValidator]
   
-  @JSImport("revalidate", "createValidator")
-  @js.native
-  def createValidator(curriedDefinition: ValidatorImpl): ConfigurableValidator = js.native
-  @JSImport("revalidate", "createValidator")
-  @js.native
-  def createValidator(curriedDefinition: ValidatorImpl, defaultMessageCreator: MessageCreator): ConfigurableValidator = js.native
+  @scala.inline
+  def composeValidators(firstValidator: js.Any, validators: Validator*): ComposedCurryableValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("composeValidators")(firstValidator.asInstanceOf[js.Any], validators.asInstanceOf[js.Any])).asInstanceOf[ComposedCurryableValidator]
+  @scala.inline
+  def composeValidators(firstValidator: Validator, validators: Validator*): ComposedCurryableValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("composeValidators")(firstValidator.asInstanceOf[js.Any], validators.asInstanceOf[js.Any])).asInstanceOf[ComposedCurryableValidator]
   
-  @JSImport("revalidate", "hasLengthBetween")
-  @js.native
-  def hasLengthBetween(min: Double, max: Double): ConfigurableValidator = js.native
+  @scala.inline
+  def createValidator(curriedDefinition: ValidatorImpl): ConfigurableValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("createValidator")(curriedDefinition.asInstanceOf[js.Any]).asInstanceOf[ConfigurableValidator]
+  @scala.inline
+  def createValidator(curriedDefinition: ValidatorImpl, defaultMessageCreator: MessageCreator): ConfigurableValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("createValidator")(curriedDefinition.asInstanceOf[js.Any], defaultMessageCreator.asInstanceOf[js.Any])).asInstanceOf[ConfigurableValidator]
   
-  @JSImport("revalidate", "hasLengthGreaterThan")
-  @js.native
-  def hasLengthGreaterThan(min: Double): ConfigurableValidator = js.native
+  @scala.inline
+  def hasLengthBetween(min: Double, max: Double): ConfigurableValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("hasLengthBetween")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ConfigurableValidator]
   
-  @JSImport("revalidate", "hasLengthLessThan")
-  @js.native
-  def hasLengthLessThan(max: Double): ConfigurableValidator = js.native
+  @scala.inline
+  def hasLengthGreaterThan(min: Double): ConfigurableValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("hasLengthGreaterThan")(min.asInstanceOf[js.Any]).asInstanceOf[ConfigurableValidator]
   
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: js.UndefOr[scala.Nothing], value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: js.UndefOr[scala.Nothing], value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: String): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: String, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: String, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: Config): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: Config, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: Config, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphaNumeric")
-  @js.native
-  def isAlphaNumeric(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
+  @scala.inline
+  def hasLengthLessThan(max: Double): ConfigurableValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("hasLengthLessThan")(max.asInstanceOf[js.Any]).asInstanceOf[ConfigurableValidator]
   
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: js.UndefOr[scala.Nothing], value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: js.UndefOr[scala.Nothing], value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: String): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: String, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: String, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: Config): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: Config, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: Config, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isAlphabetic")
-  @js.native
-  def isAlphabetic(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
+  @scala.inline
+  def isAlphaNumeric(): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")().asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: String): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: String, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: String, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: Unit, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: Unit, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: Unit, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: Config): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: Config, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphaNumeric(config: Config, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphaNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
   
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: js.UndefOr[scala.Nothing], value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: js.UndefOr[scala.Nothing], value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: String): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: String, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: String, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: Config): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: Config, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: Config, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isNumeric")
-  @js.native
-  def isNumeric(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
+  @scala.inline
+  def isAlphabetic(): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")().asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: String): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: String, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: String, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: Unit, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: Unit, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: Unit, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: Config): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: Config, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isAlphabetic(config: Config, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isAlphabetic")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
   
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: js.UndefOr[scala.Nothing], value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: js.UndefOr[scala.Nothing], value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: String): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: String, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: String, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: Config): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: Config, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: Config, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isOneOf")
-  @js.native
-  def isOneOf(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
+  @scala.inline
+  def isNumeric(): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")().asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: String): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: String, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: String, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: Unit, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: Unit, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: Unit, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: Config): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: Config, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isNumeric(config: Config, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumeric")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
   
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: js.UndefOr[scala.Nothing], value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: js.UndefOr[scala.Nothing], value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: String): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: String, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: String, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: Config): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: Config, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: Config, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequired")
-  @js.native
-  def isRequired(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
+  @scala.inline
+  def isOneOf(): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")().asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: String): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: String, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: String, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: Unit, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: Unit, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: Unit, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: Config): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: Config, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isOneOf(config: Config, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isOneOf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
   
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: js.UndefOr[scala.Nothing], value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: js.UndefOr[scala.Nothing], value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: js.UndefOr[scala.Nothing], value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: String): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: String, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: String, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: Config): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: Config, value: js.UndefOr[scala.Nothing], allValues: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: Config, value: js.Any): ConfiguredValidator | js.Any = js.native
-  @JSImport("revalidate", "isRequiredIf")
-  @js.native
-  def isRequiredIf(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = js.native
+  @scala.inline
+  def isRequired(): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")().asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: String): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: String, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: String, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: Unit, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: Unit, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: Unit, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: Config): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: Config, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequired(config: Config, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequired")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
   
-  @JSImport("revalidate", "matchesField")
-  @js.native
-  def matchesField(otherField: String, otherFieldLabel: String): ConfigurableValidator = js.native
+  @scala.inline
+  def isRequiredIf(): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")().asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: String): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: String, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: String, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: String, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: Unit, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: Unit, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: Unit, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: Config): ConfiguredValidator | js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any]).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: Config, value: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: Config, value: js.Any, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
+  @scala.inline
+  def isRequiredIf(config: Config, value: Unit, allValues: js.Any): ConfiguredValidator | js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("isRequiredIf")(config.asInstanceOf[js.Any], value.asInstanceOf[js.Any], allValues.asInstanceOf[js.Any])).asInstanceOf[ConfiguredValidator | js.Any]
   
-  @JSImport("revalidate", "matchesPattern")
-  @js.native
-  def matchesPattern(regex: RegExp): ConfigurableValidator = js.native
+  @scala.inline
+  def matchesField(otherField: String, otherFieldLabel: String): ConfigurableValidator = (^.asInstanceOf[js.Dynamic].applyDynamic("matchesField")(otherField.asInstanceOf[js.Any], otherFieldLabel.asInstanceOf[js.Any])).asInstanceOf[ConfigurableValidator]
   
-  @js.native
+  @scala.inline
+  def matchesPattern(regex: RegExp): ConfigurableValidator = ^.asInstanceOf[js.Dynamic].applyDynamic("matchesPattern")(regex.asInstanceOf[js.Any]).asInstanceOf[ConfigurableValidator]
+  
   trait CombineValidatorsOptions extends StObject {
     
-    var serializeValues: js.UndefOr[js.Function1[/* values */ js.Any, _]] = js.native
+    var serializeValues: js.UndefOr[js.Function1[/* values */ js.Any, js.Any]] = js.undefined
   }
   object CombineValidatorsOptions {
     
@@ -288,7 +207,7 @@ object mod {
     implicit class CombineValidatorsOptionsMutableBuilder[Self <: CombineValidatorsOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setSerializeValues(value: /* values */ js.Any => _): Self = StObject.set(x, "serializeValues", js.Any.fromFunction1(value))
+      def setSerializeValues(value: /* values */ js.Any => js.Any): Self = StObject.set(x, "serializeValues", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSerializeValuesUndefined: Self = StObject.set(x, "serializeValues", js.undefined)
@@ -297,16 +216,26 @@ object mod {
   
   type Comparer = js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
   
-  type ComposeConfig = Config with Multiple
+  trait ComposeConfig
+    extends StObject
+       with Config
+       with Multiple
+  object ComposeConfig {
+    
+    @scala.inline
+    def apply(): ComposeConfig = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComposeConfig]
+    }
+  }
   
   type ComposedCurryableValidator = js.Function1[/* config */ js.UndefOr[String | ComposeConfig], ConfiguredValidator]
   
-  @js.native
   trait Config extends StObject {
     
-    var field: js.UndefOr[js.Any] = js.native
+    var field: js.UndefOr[js.Any] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -333,7 +262,20 @@ object mod {
     }
   }
   
-  type ConfigurableValidator = UnconfiguredValidator with CurryableValidator
+  @js.native
+  trait ConfigurableValidator
+    extends UnconfiguredValidator
+       with CurryableValidator {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* config */ js.UndefOr[String | Config]): ConfiguredValidator = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* config */ js.UndefOr[String | Config],
+      arg2: /* value */ js.UndefOr[js.Any],
+      arg3: /* allValues */ js.UndefOr[js.Any]
+    ): js.Any = js.native
+  }
   
   type ConfiguredCombinedValidator = js.Function2[/* value */ js.UndefOr[js.Any], /* allValues */ js.UndefOr[js.Any], js.Any]
   
@@ -343,10 +285,9 @@ object mod {
   
   type MessageCreator = (js.Function1[/* field */ js.Any, js.Any]) | String
   
-  @js.native
   trait Multiple extends StObject {
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
   }
   object Multiple {
     
@@ -367,14 +308,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ParsedField extends StObject {
     
-    var baseName: String = js.native
+    var baseName: String
     
-    var fullName: String = js.native
+    var fullName: String
     
-    var isArray: Boolean = js.native
+    var isArray: Boolean
   }
   object ParsedField {
     
@@ -405,7 +345,20 @@ object mod {
     js.Any
   ]
   
-  type Validator = ConfiguredValidator with UnconfiguredValidator
+  @js.native
+  trait Validator
+    extends ConfiguredValidator
+       with UnconfiguredValidator {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* value */ js.UndefOr[js.Any], arg2: /* allValues */ js.UndefOr[js.Any]): js.Any = js.native
+    /* InferMemberOverrides */
+    override def apply(
+      arg1: /* config */ js.UndefOr[String | Config],
+      arg2: /* value */ js.UndefOr[js.Any],
+      arg3: /* allValues */ js.UndefOr[js.Any]
+    ): js.Any = js.native
+  }
   
   type ValidatorImpl = js.Function1[
     /* message */ js.Any, 

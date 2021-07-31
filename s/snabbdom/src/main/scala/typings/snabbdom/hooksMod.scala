@@ -3,7 +3,6 @@ package typings.snabbdom
 import typings.snabbdom.vnodeMod.VNode_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hooksMod {
@@ -12,28 +11,27 @@ object hooksMod {
   
   type DestroyHook = js.Function1[/* vNode */ VNode_, js.Any]
   
-  @js.native
   trait Hooks extends StObject {
     
-    var create: js.UndefOr[CreateHook] = js.native
+    var create: js.UndefOr[CreateHook] = js.undefined
     
-    var destroy: js.UndefOr[DestroyHook] = js.native
+    var destroy: js.UndefOr[DestroyHook] = js.undefined
     
-    var init: js.UndefOr[InitHook] = js.native
+    var init: js.UndefOr[InitHook] = js.undefined
     
-    var insert: js.UndefOr[InsertHook] = js.native
+    var insert: js.UndefOr[InsertHook] = js.undefined
     
-    var post: js.UndefOr[PostHook] = js.native
+    var post: js.UndefOr[PostHook] = js.undefined
     
-    var postpatch: js.UndefOr[PostPatchHook] = js.native
+    var postpatch: js.UndefOr[PostPatchHook] = js.undefined
     
-    var pre: js.UndefOr[PreHook] = js.native
+    var pre: js.UndefOr[PreHook] = js.undefined
     
-    var prepatch: js.UndefOr[PrePatchHook] = js.native
+    var prepatch: js.UndefOr[PrePatchHook] = js.undefined
     
-    var remove: js.UndefOr[RemoveHook] = js.native
+    var remove: js.UndefOr[RemoveHook] = js.undefined
     
-    var update: js.UndefOr[UpdateHook] = js.native
+    var update: js.UndefOr[UpdateHook] = js.undefined
   }
   object Hooks {
     

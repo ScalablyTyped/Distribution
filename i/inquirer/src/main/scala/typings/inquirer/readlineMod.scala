@@ -3,28 +3,26 @@ package typings.inquirer
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object readlineMod {
   
-  @JSImport("inquirer/lib/utils/readline", "clearLine")
+  @JSImport("inquirer/lib/utils/readline", JSImport.Namespace)
   @js.native
-  def clearLine(readLine: Interface, count: Double): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("inquirer/lib/utils/readline", "down")
-  @js.native
-  def down(readLine: Interface, count: Double): Unit = js.native
+  @scala.inline
+  def clearLine(readLine: Interface, count: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clearLine")(readLine.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("inquirer/lib/utils/readline", "left")
-  @js.native
-  def left(readLine: Interface, count: Double): Unit = js.native
+  @scala.inline
+  def down(readLine: Interface, count: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("down")(readLine.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("inquirer/lib/utils/readline", "right")
-  @js.native
-  def right(readLine: Interface, count: Double): Unit = js.native
+  @scala.inline
+  def left(readLine: Interface, count: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("left")(readLine.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("inquirer/lib/utils/readline", "up")
-  @js.native
-  def up(readLine: Interface, count: Double): Unit = js.native
+  @scala.inline
+  def right(readLine: Interface, count: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("right")(readLine.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def up(readLine: Interface, count: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("up")(readLine.asInstanceOf[js.Any], count.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

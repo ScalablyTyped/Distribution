@@ -7,68 +7,66 @@ import typings.vis.anon.Maximum
 import typings.vis.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeOptions extends StObject {
   
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
-  var borderWidthSelected: js.UndefOr[Double] = js.native
+  var borderWidthSelected: js.UndefOr[Double] = js.undefined
   
-  var brokenImage: js.UndefOr[String] = js.native
+  var brokenImage: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String | Color] = js.native
+  var color: js.UndefOr[String | Color] = js.undefined
   
-  var fixed: js.UndefOr[Boolean | X] = js.native
+  var fixed: js.UndefOr[Boolean | X] = js.undefined
   
-  var font: js.UndefOr[String | Font] = js.native
+  var font: js.UndefOr[String | Font] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[Code] = js.native
+  var icon: js.UndefOr[Code] = js.undefined
   
-  var image: js.UndefOr[String | Image] = js.native
+  var image: js.UndefOr[String | Image] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelHighlightBold: js.UndefOr[Boolean] = js.native
+  var labelHighlightBold: js.UndefOr[Boolean] = js.undefined
   
-  var level: js.UndefOr[Double] = js.native
+  var level: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Bottom] = js.native
+  var margin: js.UndefOr[Bottom] = js.undefined
   
-  var mass: js.UndefOr[Double] = js.native
+  var mass: js.UndefOr[Double] = js.undefined
   
-  var physics: js.UndefOr[Boolean] = js.native
+  var physics: js.UndefOr[Boolean] = js.undefined
   
-  var scaling: js.UndefOr[OptionsScaling] = js.native
+  var scaling: js.UndefOr[OptionsScaling] = js.undefined
   
-  var shadow: js.UndefOr[Boolean | OptionsShadow] = js.native
+  var shadow: js.UndefOr[Boolean | OptionsShadow] = js.undefined
   
-  var shape: js.UndefOr[String] = js.native
+  var shape: js.UndefOr[String] = js.undefined
   
-  var shapeProperties: js.UndefOr[BorderDashes] = js.native
+  var shapeProperties: js.UndefOr[BorderDashes] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
   /**
     * If false, no widthConstraint is applied. If a number is specified, the minimum and maximum widths of the node are set to the value.
     * The node's label's lines will be broken on spaces to stay below the maximum and the node's width
     * will be set to the minimum if less than the value.
     */
-  var widthConstraint: js.UndefOr[Double | Boolean | Maximum] = js.native
+  var widthConstraint: js.UndefOr[Double | Boolean | Maximum] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object NodeOptions {
   

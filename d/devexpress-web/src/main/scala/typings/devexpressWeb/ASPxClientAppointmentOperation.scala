@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains methods allowing you to perform or cancel an operation.
   */
-@js.native
 trait ASPxClientAppointmentOperation extends StObject {
   
   /**
     * Passes parameters to the corresponding callback function to accomplish the operation.
     */
-  def Apply(): Unit = js.native
+  def Apply(): Unit
   
   /**
     * Cancels the operation.
     */
-  def Cancel(): Unit = js.native
+  def Cancel(): Unit
 }
 object ASPxClientAppointmentOperation {
   

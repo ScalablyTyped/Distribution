@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LeaseWorkItemRequest extends StObject {
   
   /** The current timestamp at the worker. */
-  var currentWorkerTime: js.UndefOr[String] = js.native
+  var currentWorkerTime: js.UndefOr[String] = js.undefined
   
   /** The [regional endpoint] (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that contains the WorkItem's job. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** The initial lease period. */
-  var requestedLeaseDuration: js.UndefOr[String] = js.native
+  var requestedLeaseDuration: js.UndefOr[String] = js.undefined
   
   /** Untranslated bag-of-bytes WorkRequest from UnifiedWorker. */
   var unifiedWorkerRequest: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Filter for WorkItem type. */
-  var workItemTypes: js.UndefOr[js.Array[String]] = js.native
+  var workItemTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Worker capabilities. WorkItems might be limited to workers with specific capabilities. */
-  var workerCapabilities: js.UndefOr[js.Array[String]] = js.native
+  var workerCapabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Identifies the worker leasing work -- typically the ID of the virtual machine running the worker. */
-  var workerId: js.UndefOr[String] = js.native
+  var workerId: js.UndefOr[String] = js.undefined
 }
 object LeaseWorkItemRequest {
   
@@ -67,7 +65,7 @@ object LeaseWorkItemRequest {
     def setUnifiedWorkerRequest(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataflow.maximMazurokGapiClientDataflowStrings.LeaseWorkItemRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "unifiedWorkerRequest", value.asInstanceOf[js.Any])
     
     @scala.inline

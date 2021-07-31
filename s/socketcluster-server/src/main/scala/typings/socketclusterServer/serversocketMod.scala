@@ -33,7 +33,6 @@ import typings.std.Error
 import typings.writableConsumableStream.consumerMod.ConsumerStats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serversocketMod {
@@ -109,9 +108,9 @@ object serversocketMod {
     def decode(message: js.Any): js.Any = js.native
     
     def disconnect(): Unit = js.native
-    def disconnect(code: js.UndefOr[scala.Nothing], reason: String): Unit = js.native
     def disconnect(code: Double): Unit = js.native
     def disconnect(code: Double, reason: String): Unit = js.native
+    def disconnect(code: Unit, reason: String): Unit = js.native
     
     def emitError(error: Error): Unit = js.native
     
@@ -230,13 +229,13 @@ object serversocketMod {
     
     val ignoreStatuses: SocketProtocolIgnoreStatuses_ = js.native
     
-    var inboundMessageStream: typings.writableConsumableStream.mod.^[_] = js.native
+    var inboundMessageStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
     
     var inboundProcessedMessageCount: Double = js.native
     
     var inboundReceivedMessageCount: Double = js.native
     
-    def invoke(event: String, data: js.Any, options: js.Any): js.Promise[_] = js.native
+    def invoke(event: String, data: js.Any, options: js.Any): js.Promise[js.Any] = js.native
     
     def isAuthTokenExpired(token: AuthToken): Boolean = js.native
     
@@ -247,9 +246,9 @@ object serversocketMod {
     def isSubscribed(channel: String): Boolean = js.native
     
     def kickOut(): js.Any = js.native
-    def kickOut(channel: js.UndefOr[scala.Nothing], message: String): js.Any = js.native
     def kickOut(channel: String): js.Any = js.native
     def kickOut(channel: String, message: String): js.Any = js.native
+    def kickOut(channel: Unit, message: String): js.Any = js.native
     
     def killAllMiddlewares(): Unit = js.native
     
@@ -273,25 +272,25 @@ object serversocketMod {
     
     def killReceiverConsumer(consumerId: Double): Unit = js.native
     
-    var middlewareHandshakeStream: typings.writableConsumableStream.mod.^[_] = js.native
+    var middlewareHandshakeStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
     
-    var middlewareInboundRawStream: typings.writableConsumableStream.mod.^[_] = js.native
+    var middlewareInboundRawStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
     
-    var middlewareInboundStream: typings.writableConsumableStream.mod.^[_] = js.native
+    var middlewareInboundStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
     
-    var middlewareOutboundStream: typings.writableConsumableStream.mod.^[_] = js.native
+    var middlewareOutboundStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
     
-    var outboundPacketStream: typings.writableConsumableStream.mod.^[_] = js.native
+    var outboundPacketStream: typings.writableConsumableStream.mod.^[js.Any] = js.native
     
     var outboundPreparedMessageCount: Double = js.native
     
     var outboundSentMessageCount: Double = js.native
     
-    def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[_] = js.native
+    def procedure(procedureName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
     
     var protocolVersion: Double = js.native
     
-    def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[_] = js.native
+    def receiver(receiverName: String): typings.streamDemux.demuxedConsumableStreamMod.^[js.Any] = js.native
     
     var remoteAddress: String = js.native
     
@@ -338,10 +337,11 @@ object serversocketMod {
   
   type AuthToken = StringDictionary[js.Any]
   
-  @js.native
-  trait AuthTokenOptions extends SignOptions {
+  trait AuthTokenOptions
+    extends StObject
+       with SignOptions {
     
-    var rejectOnFailedDelivery: js.UndefOr[Boolean] = js.native
+    var rejectOnFailedDelivery: js.UndefOr[Boolean] = js.undefined
   }
   object AuthTokenOptions {
     
@@ -362,10 +362,9 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait AuthenticateData extends StObject {
     
-    var authToken: js.UndefOr[AuthToken] = js.native
+    var authToken: js.UndefOr[AuthToken] = js.undefined
   }
   object AuthenticateData {
     
@@ -386,12 +385,11 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait BadAuthTokenData extends StObject {
     
-    var authError: Error = js.native
+    var authError: Error
     
-    var signedAuthToken: String = js.native
+    var signedAuthToken: String
   }
   object BadAuthTokenData {
     
@@ -412,12 +410,11 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait CloseData extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
   }
   object CloseData {
     
@@ -438,12 +435,11 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait ConnectAbortData extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
   }
   object ConnectAbortData {
     
@@ -464,16 +460,15 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait ConnectData extends StObject {
     
-    var authError: js.UndefOr[Error] = js.native
+    var authError: js.UndefOr[Error] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var isAuthenticated: Boolean = js.native
+    var isAuthenticated: Boolean
     
-    var pingTimeout: Double = js.native
+    var pingTimeout: Double
   }
   object ConnectData {
     
@@ -503,10 +498,9 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait DeauthenticateData extends StObject {
     
-    var oldAuthToken: js.UndefOr[AuthToken] = js.native
+    var oldAuthToken: js.UndefOr[AuthToken] = js.undefined
   }
   object DeauthenticateData {
     
@@ -527,12 +521,11 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait DisconnectData extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var reason: String = js.native
+    var reason: String
   }
   object DisconnectData {
     
@@ -553,14 +546,13 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait StateChangeData extends StObject {
     
-    var authToken: js.UndefOr[AuthToken] = js.native
+    var authToken: js.UndefOr[AuthToken] = js.undefined
     
-    var newState: authenticated | unauthenticated = js.native
+    var newState: authenticated | unauthenticated
     
-    var oldState: authenticated | unauthenticated = js.native
+    var oldState: authenticated | unauthenticated
   }
   object StateChangeData {
     
@@ -587,12 +579,11 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait SubscribeData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var subscriptionOptions: SubscriptionOptions = js.native
+    var subscriptionOptions: SubscriptionOptions
   }
   object SubscribeData {
     
@@ -613,14 +604,13 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait SubscriptionOptions extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var waitForAuth: js.UndefOr[Boolean] = js.native
+    var waitForAuth: js.UndefOr[Boolean] = js.undefined
   }
   object SubscriptionOptions {
     
@@ -650,10 +640,9 @@ object serversocketMod {
     }
   }
   
-  @js.native
   trait UnsubscribeData extends StObject {
     
-    var channel: String = js.native
+    var channel: String
   }
   object UnsubscribeData {
     

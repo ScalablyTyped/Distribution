@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,53 +17,87 @@ sealed trait ShapeFontUnderlineStyle extends StObject
 object ShapeFontUnderlineStyle extends StObject {
   
   @js.native
-  sealed trait dash extends ShapeFontUnderlineStyle
+  sealed trait dash
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dashHeavy extends ShapeFontUnderlineStyle
+  sealed trait dashHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dashLong extends ShapeFontUnderlineStyle
+  sealed trait dashLong
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dashLongHeavy extends ShapeFontUnderlineStyle
+  sealed trait dashLongHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dotDash extends ShapeFontUnderlineStyle
+  sealed trait dotDash
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dotDashHeavy extends ShapeFontUnderlineStyle
+  sealed trait dotDashHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dotDotDash extends ShapeFontUnderlineStyle
+  sealed trait dotDotDash
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dotDotDashHeavy extends ShapeFontUnderlineStyle
+  sealed trait dotDotDashHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dotted extends ShapeFontUnderlineStyle
+  sealed trait dotted
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait dottedHeavy extends ShapeFontUnderlineStyle
+  sealed trait dottedHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait double extends ShapeFontUnderlineStyle
+  sealed trait double
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait heavy extends ShapeFontUnderlineStyle
+  sealed trait heavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait none extends ShapeFontUnderlineStyle
+  sealed trait none
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait single extends ShapeFontUnderlineStyle
+  sealed trait single
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait wavy extends ShapeFontUnderlineStyle
+  sealed trait wavy
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait wavyDouble extends ShapeFontUnderlineStyle
+  sealed trait wavyDouble
+    extends StObject
+       with ShapeFontUnderlineStyle
   
   @js.native
-  sealed trait wavyHeavy extends ShapeFontUnderlineStyle
+  sealed trait wavyHeavy
+    extends StObject
+       with ShapeFontUnderlineStyle
 }

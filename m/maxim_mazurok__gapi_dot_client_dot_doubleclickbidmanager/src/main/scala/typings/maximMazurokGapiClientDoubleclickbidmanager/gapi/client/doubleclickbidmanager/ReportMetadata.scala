@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportMetadata extends StObject {
   
   /** The path to the location in Google Cloud Storage where the report is stored. */
-  var googleCloudStoragePath: js.UndefOr[String] = js.native
+  var googleCloudStoragePath: js.UndefOr[String] = js.undefined
   
   /** The ending time for the data that is shown in the report. */
-  var reportDataEndTimeMs: js.UndefOr[String] = js.native
+  var reportDataEndTimeMs: js.UndefOr[String] = js.undefined
   
   /** The starting time for the data that is shown in the report. */
-  var reportDataStartTimeMs: js.UndefOr[String] = js.native
+  var reportDataStartTimeMs: js.UndefOr[String] = js.undefined
   
   /** Report status. */
-  var status: js.UndefOr[ReportStatus] = js.native
+  var status: js.UndefOr[ReportStatus] = js.undefined
 }
 object ReportMetadata {
   

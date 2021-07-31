@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memberAccessRuleMod {
@@ -22,12 +21,10 @@ object memberAccessRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/memberAccessRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(memberType: String): String = js.native
-    @JSImport("tslint/lib/rules/memberAccessRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(memberType: String, memberName: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_FACTORY(memberType: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(memberType.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def FAILURE_STRING_FACTORY(memberType: String, memberName: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(memberType.asInstanceOf[js.Any], memberName.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/memberAccessRule", "Rule.FAILURE_STRING_NO_PUBLIC")
     @js.native

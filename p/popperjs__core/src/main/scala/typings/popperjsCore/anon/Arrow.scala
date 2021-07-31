@@ -4,17 +4,15 @@ import typings.popperjsCore.typesMod.VirtualElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arrow extends StObject {
   
-  var arrow: js.UndefOr[HTMLElement] = js.native
+  var arrow: js.UndefOr[HTMLElement] = js.undefined
   
-  var popper: HTMLElement = js.native
+  var popper: HTMLElement
   
-  var reference: typings.std.Element | VirtualElement = js.native
+  var reference: typings.std.Element | VirtualElement
 }
 object Arrow {
   

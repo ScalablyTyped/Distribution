@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a StreamingDetectIntentRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new StreamingDetectIntentRequest.
   * @param [properties] Properties to set
   */
-class StreamingDetectIntentRequest () extends IStreamingDetectIntentRequest {
+class StreamingDetectIntentRequest ()
+  extends StObject
+     with IStreamingDetectIntentRequest {
   def this(properties: IStreamingDetectIntentRequest) = this()
   
   /** StreamingDetectIntentRequest inputAudio. */
@@ -40,18 +41,20 @@ class StreamingDetectIntentRequest () extends IStreamingDetectIntentRequest {
 }
 object StreamingDetectIntentRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new StreamingDetectIntentRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns StreamingDetectIntentRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.create")
-  @js.native
-  def create(): StreamingDetectIntentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.create")
-  @js.native
-  def create(properties: IStreamingDetectIntentRequest): StreamingDetectIntentRequest = js.native
+  @scala.inline
+  def create(): StreamingDetectIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[StreamingDetectIntentRequest]
+  @scala.inline
+  def create(properties: IStreamingDetectIntentRequest): StreamingDetectIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[StreamingDetectIntentRequest]
   
   /**
     * Decodes a StreamingDetectIntentRequest message from the specified reader or buffer.
@@ -62,18 +65,14 @@ object StreamingDetectIntentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.decode")
-  @js.native
-  def decode(reader: Reader): StreamingDetectIntentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): StreamingDetectIntentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): StreamingDetectIntentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): StreamingDetectIntentRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): StreamingDetectIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingDetectIntentRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): StreamingDetectIntentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StreamingDetectIntentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): StreamingDetectIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingDetectIntentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): StreamingDetectIntentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[StreamingDetectIntentRequest]
   
   /**
     * Decodes a StreamingDetectIntentRequest message from the specified reader or buffer, length delimited.
@@ -83,12 +82,10 @@ object StreamingDetectIntentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): StreamingDetectIntentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): StreamingDetectIntentRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): StreamingDetectIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingDetectIntentRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): StreamingDetectIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[StreamingDetectIntentRequest]
   
   /**
     * Encodes the specified StreamingDetectIntentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2.StreamingDetectIntentRequest.verify|verify} messages.
@@ -97,12 +94,10 @@ object StreamingDetectIntentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.encode")
-  @js.native
-  def encode(message: IStreamingDetectIntentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.encode")
-  @js.native
-  def encode(message: IStreamingDetectIntentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IStreamingDetectIntentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IStreamingDetectIntentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified StreamingDetectIntentRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2.StreamingDetectIntentRequest.verify|verify} messages.
@@ -111,12 +106,10 @@ object StreamingDetectIntentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStreamingDetectIntentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IStreamingDetectIntentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IStreamingDetectIntentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IStreamingDetectIntentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a StreamingDetectIntentRequest message from a plain object. Also converts values to their respective internal types.
@@ -124,9 +117,8 @@ object StreamingDetectIntentRequest {
     * @returns StreamingDetectIntentRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): StreamingDetectIntentRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): StreamingDetectIntentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[StreamingDetectIntentRequest]
   
   /**
     * Creates a plain object from a StreamingDetectIntentRequest message. Also converts values to other types if specified.
@@ -135,12 +127,10 @@ object StreamingDetectIntentRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.toObject")
-  @js.native
-  def toObject(message: StreamingDetectIntentRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.toObject")
-  @js.native
-  def toObject(message: StreamingDetectIntentRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: StreamingDetectIntentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: StreamingDetectIntentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a StreamingDetectIntentRequest message.
@@ -148,7 +138,6 @@ object StreamingDetectIntentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2.StreamingDetectIntentRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

@@ -3,23 +3,22 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyLink
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: link = js.native
+  var component: link
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object CustomPropertyLink {
   
   @scala.inline
-  def apply(component: link): CustomPropertyLink = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
+  def apply(): CustomPropertyLink = {
+    val __obj = js.Dynamic.literal(component = "link")
     __obj.asInstanceOf[CustomPropertyLink]
   }
   

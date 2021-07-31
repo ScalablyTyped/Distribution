@@ -2,36 +2,34 @@ package typings.sarif.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /**
     * An array of strings to substitute into the message string.
     */
-  var arguments: js.UndefOr[js.Array[String]] = js.native
+  var arguments: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The identifier for this message.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A Markdown message string.
     */
-  var markdown: js.UndefOr[String] = js.native
+  var markdown: js.UndefOr[String] = js.undefined
   
   /**
     * Key/value pairs that provide additional information about the message.
     */
-  var properties: js.UndefOr[PropertyBag] = js.native
+  var properties: js.UndefOr[PropertyBag] = js.undefined
   
   /**
     * A plain text message string.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object Message {
   

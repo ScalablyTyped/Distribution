@@ -22,93 +22,82 @@ import typings.istanbulReports.istanbulReportsStrings.text
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("istanbul-reports", "create")
+  @JSImport("istanbul-reports", JSImport.Namespace)
   @js.native
-  def create_clover(name: clover): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_clover(name: clover, options: Partial[CloverOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_cobertura(name: cobertura): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_cobertura(name: cobertura, options: Partial[CoberturaOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_html(name: html): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_html(name: html, options: Partial[HtmlOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_htmlspa(name: `html-spa`): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_htmlspa(name: `html-spa`, options: Partial[HtmlSpaOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_json(name: json): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_json(name: json, options: Partial[JsonOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_jsonsummary(name: `json-summary`): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_jsonsummary(name: `json-summary`, options: Partial[JsonSummaryOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_lcov(name: lcov): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_lcov(name: lcov, options: Partial[LcovOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_lcovonly(name: lcovonly): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_lcovonly(name: lcovonly, options: Partial[LcovOnlyOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_none(name: none): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_none(name: none, options: Partial[scala.Nothing]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_teamcity(name: teamcity): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_teamcity(name: teamcity, options: Partial[TeamcityOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_text(name: text): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_text(name: text, options: Partial[TextOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_textlcov(name: `text-lcov`): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_textlcov(name: `text-lcov`, options: Partial[TextLcovOptions]): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_textsummary(name: `text-summary`): Visitor[Node] = js.native
-  @JSImport("istanbul-reports", "create")
-  @js.native
-  def create_textsummary(name: `text-summary`, options: Partial[TextSummaryOptions]): Visitor[Node] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create_clover(name: clover): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_clover(name: clover, options: Partial[CloverOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_cobertura(name: cobertura): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_cobertura(name: cobertura, options: Partial[CoberturaOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_html(name: html): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_html(name: html, options: Partial[HtmlOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_htmlspa(name: `html-spa`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_htmlspa(name: `html-spa`, options: Partial[HtmlSpaOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_json(name: json): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_json(name: json, options: Partial[JsonOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_jsonsummary(name: `json-summary`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_jsonsummary(name: `json-summary`, options: Partial[JsonSummaryOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_lcov(name: lcov): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_lcov(name: lcov, options: Partial[LcovOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_lcovonly(name: lcovonly): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_lcovonly(name: lcovonly, options: Partial[LcovOnlyOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_none(name: none): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_none(name: none, options: Partial[scala.Nothing]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_teamcity(name: teamcity): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_teamcity(name: teamcity, options: Partial[TeamcityOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_text(name: text): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_text(name: text, options: Partial[TextOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_textlcov(name: `text-lcov`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_textlcov(name: `text-lcov`, options: Partial[TextLcovOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
+  @scala.inline
+  def create_textsummary(name: `text-summary`): Visitor[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any]).asInstanceOf[Visitor[Node]]
+  @scala.inline
+  def create_textsummary(name: `text-summary`, options: Partial[TextSummaryOptions]): Visitor[Node] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Visitor[Node]]
+  
   trait CloverOptions
-    extends FileOptions
+    extends StObject
+       with FileOptions
        with ProjectOptions
   object CloverOptions {
     
@@ -119,9 +108,9 @@ object mod {
     }
   }
   
-  @js.native
   trait CoberturaOptions
-    extends FileOptions
+    extends StObject
+       with FileOptions
        with ProjectOptions
   object CoberturaOptions {
     
@@ -132,10 +121,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FileOptions extends StObject {
     
-    var file: String = js.native
+    var file: String
   }
   object FileOptions {
     
@@ -153,16 +141,15 @@ object mod {
     }
   }
   
-  @js.native
   trait HtmlOptions extends StObject {
     
-    var linkMapper: LinkMapper = js.native
+    var linkMapper: LinkMapper
     
-    var skipEmpty: Boolean = js.native
+    var skipEmpty: Boolean
     
-    var subdir: String = js.native
+    var subdir: String
     
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object HtmlOptions {
     
@@ -189,10 +176,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait HtmlSpaOptions extends HtmlOptions {
+  trait HtmlSpaOptions
+    extends StObject
+       with HtmlOptions {
     
-    var metricsToShow: js.Array[lines | branches | functions | statements] = js.native
+    var metricsToShow: js.Array[lines | branches | functions | statements]
   }
   object HtmlSpaOptions {
     
@@ -223,9 +211,9 @@ object mod {
   
   type JsonSummaryOptions = FileOptions
   
-  @js.native
   trait LcovOnlyOptions
-    extends FileOptions
+    extends StObject
+       with FileOptions
        with ProjectOptions
   object LcovOnlyOptions {
     
@@ -236,9 +224,9 @@ object mod {
     }
   }
   
-  @js.native
   trait LcovOptions
-    extends FileOptions
+    extends StObject
+       with FileOptions
        with ProjectOptions
   object LcovOptions {
     
@@ -263,10 +251,9 @@ object mod {
     def relativePath(source: Node, target: Node): String = js.native
   }
   
-  @js.native
   trait ProjectOptions extends StObject {
     
-    var projectRoot: String = js.native
+    var projectRoot: String
   }
   object ProjectOptions {
     
@@ -284,32 +271,31 @@ object mod {
     }
   }
   
-  @js.native
   trait ReportOptions extends StObject {
     
-    var clover: CloverOptions = js.native
+    var clover: CloverOptions
     
-    var cobertura: CoberturaOptions = js.native
+    var cobertura: CoberturaOptions
     
-    var html: HtmlOptions = js.native
+    var html: HtmlOptions
     
-    var `html-spa`: HtmlSpaOptions = js.native
+    var `html-spa`: HtmlSpaOptions
     
-    var json: JsonOptions = js.native
+    var json: JsonOptions
     
-    var `json-summary`: JsonSummaryOptions = js.native
+    var `json-summary`: JsonSummaryOptions
     
-    var lcov: LcovOptions = js.native
+    var lcov: LcovOptions
     
-    var lcovonly: LcovOnlyOptions = js.native
+    var lcovonly: LcovOnlyOptions
     
-    var teamcity: TeamcityOptions = js.native
+    var teamcity: TeamcityOptions
     
-    var text: TextOptions = js.native
+    var text: TextOptions
     
-    var `text-lcov`: TextLcovOptions = js.native
+    var `text-lcov`: TextLcovOptions
     
-    var `text-summary`: TextSummaryOptions = js.native
+    var `text-summary`: TextSummaryOptions
   }
   object ReportOptions {
     
@@ -394,10 +380,11 @@ object mod {
   */
   trait ReportType extends StObject
   
-  @js.native
-  trait TeamcityOptions extends FileOptions {
+  trait TeamcityOptions
+    extends StObject
+       with FileOptions {
     
-    var blockName: String = js.native
+    var blockName: String
   }
   object TeamcityOptions {
     
@@ -417,14 +404,15 @@ object mod {
   
   type TextLcovOptions = ProjectOptions
   
-  @js.native
-  trait TextOptions extends FileOptions {
+  trait TextOptions
+    extends StObject
+       with FileOptions {
     
-    var maxCols: Double = js.native
+    var maxCols: Double
     
-    var skipEmpty: Boolean = js.native
+    var skipEmpty: Boolean
     
-    var skipFull: Boolean = js.native
+    var skipFull: Boolean
   }
   object TextOptions {
     

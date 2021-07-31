@@ -1,37 +1,33 @@
 package typings.webidl2.mod
 
-import typings.webidl2.webidl2Booleans.`false`
 import typings.webidl2.webidl2Strings.maplike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaplikeDeclarationMemberType
-  extends AbstractCollectionLikeMemberType
+  extends StObject
+     with AbstractCollectionLikeMemberType
      with DeclarationMemberType {
   
   @JSName("idlType")
-  var idlType_MaplikeDeclarationMemberType: js.Tuple2[IDLTypeDescription, IDLTypeDescription] = js.native
+  var idlType_MaplikeDeclarationMemberType: js.Tuple2[IDLTypeDescription, IDLTypeDescription]
   
   @JSName("type")
-  var type_MaplikeDeclarationMemberType: maplike = js.native
+  var type_MaplikeDeclarationMemberType: maplike
 }
 object MaplikeDeclarationMemberType {
   
   @scala.inline
   def apply(
     arguments: js.Array[js.Any],
-    async: `false`,
     extAttrs: js.Array[ExtendedAttribute],
     idlType: js.Tuple2[IDLTypeDescription, IDLTypeDescription],
     parent: InterfaceMixinType | InterfaceType,
-    readonly: Boolean,
-    `type`: maplike
+    readonly: Boolean
   ): MaplikeDeclarationMemberType = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = async.asInstanceOf[js.Any], extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], async = false, extAttrs = extAttrs.asInstanceOf[js.Any], idlType = idlType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], readonly = readonly.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("maplike")
     __obj.asInstanceOf[MaplikeDeclarationMemberType]
   }
   

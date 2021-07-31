@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDistributionConfigurationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the distribution configuration that was deleted. 
     */
-  var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.native
+  var distributionConfigurationArn: js.UndefOr[DistributionConfigurationArn] = js.undefined
   
   /**
     * The request ID that uniquely identifies this request. 
     */
-  var requestId: js.UndefOr[NonEmptyString] = js.native
+  var requestId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DeleteDistributionConfigurationResponse {
   

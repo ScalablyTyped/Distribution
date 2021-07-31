@@ -4,36 +4,27 @@ import typings.sketchapp.anon.X
 import typings.sketchapp.sketchappStrings.styleBlur
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSStyleBlur extends StObject {
   
-  var _class: styleBlur = js.native
+  var _class: styleBlur
   
-  var center: X = js.native
+  var center: X
   
-  var isEnabled: Double = js.native
+  var isEnabled: Double
   
-  var motionAngle: Double = js.native
+  var motionAngle: Double
   
-  var radius: Double = js.native
+  var radius: Double
   
-  var `type`: Double = js.native
+  var `type`: Double
 }
 object SketchMSStyleBlur {
   
   @scala.inline
-  def apply(
-    _class: styleBlur,
-    center: X,
-    isEnabled: Double,
-    motionAngle: Double,
-    radius: Double,
-    `type`: Double
-  ): SketchMSStyleBlur = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], center = center.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], motionAngle = motionAngle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
+  def apply(center: X, isEnabled: Double, motionAngle: Double, radius: Double, `type`: Double): SketchMSStyleBlur = {
+    val __obj = js.Dynamic.literal(_class = "styleBlur", center = center.asInstanceOf[js.Any], isEnabled = isEnabled.asInstanceOf[js.Any], motionAngle = motionAngle.asInstanceOf[js.Any], radius = radius.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSStyleBlur]
   }

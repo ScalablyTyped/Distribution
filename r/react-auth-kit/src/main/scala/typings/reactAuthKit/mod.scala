@@ -13,10 +13,13 @@ import typings.reactAuthKit.withSignInMod.withSignInProps
 import typings.reactAuthKit.withSignOutMod.withSignOutProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-auth-kit", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * AuthProvider - The Authentication Context Provider
@@ -46,52 +49,41 @@ object mod {
   @js.native
   val PrivateRoute: FunctionComponent[PrivateRouteProps] = js.native
   
-  @JSImport("react-auth-kit", "useAuth")
-  @js.native
-  def useAuth(): AuthHeader = js.native
+  @scala.inline
+  def useAuth(): AuthHeader = ^.asInstanceOf[js.Dynamic].applyDynamic("useAuth")().asInstanceOf[AuthHeader]
   
-  @JSImport("react-auth-kit", "useAuthHeader")
-  @js.native
-  def useAuthHeader(): js.Function0[String] = js.native
+  @scala.inline
+  def useAuthHeader(): js.Function0[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAuthHeader")().asInstanceOf[js.Function0[String]]
   
-  @JSImport("react-auth-kit", "useAuthUser")
-  @js.native
-  def useAuthUser(): js.Function0[js.Object | Null] = js.native
+  @scala.inline
+  def useAuthUser(): js.Function0[js.Object | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("useAuthUser")().asInstanceOf[js.Function0[js.Object | Null]]
   
-  @JSImport("react-auth-kit", "useIsAuthenticated")
-  @js.native
-  def useIsAuthenticated(): js.Function0[Boolean] = js.native
+  @scala.inline
+  def useIsAuthenticated(): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useIsAuthenticated")().asInstanceOf[js.Function0[Boolean]]
   
   /**
     * Authentication SignIn Hook
     *
     * @returns - Sign In function
     */
-  @JSImport("react-auth-kit", "useSignIn")
-  @js.native
-  def useSignIn(): js.Function1[/* signInConfig */ signInFunctionParams, Boolean] = js.native
+  @scala.inline
+  def useSignIn(): js.Function1[/* signInConfig */ signInFunctionParams, Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSignIn")().asInstanceOf[js.Function1[/* signInConfig */ signInFunctionParams, Boolean]]
   
-  @JSImport("react-auth-kit", "useSignOut")
-  @js.native
-  def useSignOut(): js.Function0[Boolean] = js.native
+  @scala.inline
+  def useSignOut(): js.Function0[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSignOut")().asInstanceOf[js.Function0[Boolean]]
   
-  @JSImport("react-auth-kit", "withAuthHeader")
-  @js.native
-  def withAuthHeader[P /* <: withAuthHeaderProps */](Component: ComponentType[P]): FC[P] = js.native
+  @scala.inline
+  def withAuthHeader[P /* <: withAuthHeaderProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withAuthHeader")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   
-  @JSImport("react-auth-kit", "withAuthUser")
-  @js.native
-  def withAuthUser[P /* <: withAuthProps */](Component: ComponentType[P]): FC[P] = js.native
+  @scala.inline
+  def withAuthUser[P /* <: withAuthProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withAuthUser")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   
-  @JSImport("react-auth-kit", "withIsAuthenticated")
-  @js.native
-  def withIsAuthenticated[P /* <: typings.reactAuthKit.withIsAuthenticatedMod.withAuthHeaderProps */](Component: ComponentType[P]): FC[P] = js.native
+  @scala.inline
+  def withIsAuthenticated[P /* <: typings.reactAuthKit.withIsAuthenticatedMod.withAuthHeaderProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withIsAuthenticated")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   
-  @JSImport("react-auth-kit", "withSignIn")
-  @js.native
-  def withSignIn[P /* <: withSignInProps */](Component: ComponentType[P]): FC[P] = js.native
+  @scala.inline
+  def withSignIn[P /* <: withSignInProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSignIn")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
   
-  @JSImport("react-auth-kit", "withSignOut")
-  @js.native
-  def withSignOut[P /* <: withSignOutProps */](Component: ComponentType[P]): FC[P] = js.native
+  @scala.inline
+  def withSignOut[P /* <: withSignOutProps */](Component: ComponentType[P]): FC[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withSignOut")(Component.asInstanceOf[js.Any]).asInstanceOf[FC[P]]
 }

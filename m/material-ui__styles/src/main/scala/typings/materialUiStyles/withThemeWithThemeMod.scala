@@ -16,52 +16,70 @@ import typings.react.mod.global.JSX.LibraryManagedAttributes
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withThemeWithThemeMod {
   
-  @JSImport("@material-ui/styles/withTheme/withTheme", JSImport.Default)
+  @JSImport("@material-ui/styles/withTheme/withTheme", JSImport.Namespace)
   @js.native
-  def default[Theme](component: ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]): ComponentType[
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[Theme](
+    component: ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+  ): ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState], 
+        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
         ComponentProps[
-          ComponentClass[ConsistentWith[ComponentProps[_], WithTheme[Theme]], ComponentState]
+          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
         ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
-    ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
-  ] = js.native
-  @JSImport("@material-ui/styles/withTheme/withTheme", JSImport.Default)
-  @js.native
-  def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]): ComponentType[
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
     (Omit[
       LibraryManagedAttributes[
-        FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]], 
-        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[_], WithTheme[Theme]]]]
+        ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState], 
+        ComponentProps[
+          ComponentClass[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]], ComponentState]
+        ]
       ], 
       /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
-    ]) with Partial[WithTheme[Theme]] with ThemedComponentProps
-  ] = js.native
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
+  @scala.inline
+  def default[Theme](component: FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]): ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[
+      LibraryManagedAttributes[
+        FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]], 
+        ComponentProps[FunctionComponent[ConsistentWith[ComponentProps[js.Any], WithTheme[Theme]]]]
+      ], 
+      /* keyof @material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<Theme> */ theme | innerRef
+    ]) & Partial[WithTheme[Theme]] & ThemedComponentProps
+  ]]
   
-  @JSImport("@material-ui/styles/withTheme/withTheme", "withThemeCreator")
-  @js.native
-  def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
-  @JSImport("@material-ui/styles/withTheme/withTheme", "withThemeCreator")
-  @js.native
-  def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = js.native
+  @scala.inline
+  def withThemeCreator[Theme](): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")().asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
+  @scala.inline
+  def withThemeCreator[Theme](option: WithThemeCreatorOption[Theme]): PropInjector[WithTheme[Theme], ThemedComponentProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withThemeCreator")(option.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithTheme[Theme], ThemedComponentProps]]
   
   /* Inlined parent std.Partial<@material-ui/styles.@material-ui/styles/withTheme/withTheme.WithTheme<@material-ui/styles.@material-ui/styles/defaultTheme.DefaultTheme>> */
-  @js.native
   trait ThemedComponentProps extends StObject {
     
-    var innerRef: js.UndefOr[Ref[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var ref: js.UndefOr[Ref[_]] = js.native
+    var ref: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var theme: js.UndefOr[DefaultTheme] = js.native
+    var theme: js.UndefOr[DefaultTheme] = js.undefined
   }
   object ThemedComponentProps {
     
@@ -75,10 +93,10 @@ object withThemeWithThemeMod {
     implicit class ThemedComponentPropsMutableBuilder[Self <: ThemedComponentProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
@@ -87,10 +105,10 @@ object withThemeWithThemeMod {
       def setInnerRefUndefined: Self = StObject.set(x, "innerRef", js.undefined)
       
       @scala.inline
-      def setRef(value: Ref[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: Ref[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+      def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRefNull: Self = StObject.set(x, "ref", null)
@@ -106,7 +124,6 @@ object withThemeWithThemeMod {
     }
   }
   
-  @js.native
   trait WithTheme[Theme] extends StObject {
     
     /**
@@ -114,9 +131,9 @@ object withThemeWithThemeMod {
       * the inner component.
       * @deprecated since version 4.0
       */
-    var innerRef: js.UndefOr[Ref[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
     
-    var theme: Theme = js.native
+    var theme: Theme
   }
   object WithTheme {
     
@@ -127,13 +144,13 @@ object withThemeWithThemeMod {
     }
     
     @scala.inline
-    implicit class WithThemeMutableBuilder[Self <: WithTheme[_], Theme] (val x: Self with WithTheme[Theme]) extends AnyVal {
+    implicit class WithThemeMutableBuilder[Self <: WithTheme[?], Theme] (val x: Self & WithTheme[Theme]) extends AnyVal {
       
       @scala.inline
-      def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
@@ -146,10 +163,9 @@ object withThemeWithThemeMod {
     }
   }
   
-  @js.native
   trait WithThemeCreatorOption[Theme] extends StObject {
     
-    var defaultTheme: js.UndefOr[Theme] = js.native
+    var defaultTheme: js.UndefOr[Theme] = js.undefined
   }
   object WithThemeCreatorOption {
     
@@ -160,7 +176,7 @@ object withThemeWithThemeMod {
     }
     
     @scala.inline
-    implicit class WithThemeCreatorOptionMutableBuilder[Self <: WithThemeCreatorOption[_], Theme] (val x: Self with WithThemeCreatorOption[Theme]) extends AnyVal {
+    implicit class WithThemeCreatorOptionMutableBuilder[Self <: WithThemeCreatorOption[?], Theme] (val x: Self & WithThemeCreatorOption[Theme]) extends AnyVal {
       
       @scala.inline
       def setDefaultTheme(value: Theme): Self = StObject.set(x, "defaultTheme", value.asInstanceOf[js.Any])

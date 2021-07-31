@@ -2,29 +2,27 @@ package typings.scrivito.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Config definitions
   */
-@js.native
 trait ConfigOptions extends StObject {
   
   // Hard to type
-  var constraintsValidation: js.UndefOr[js.Function1[/* constraints */ js.Any, _]] = js.native
+  var constraintsValidation: js.UndefOr[js.Function1[/* constraints */ js.Any, js.Any]] = js.undefined
   
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
-  def homepage(): Obj = js.native
+  def homepage(): Obj
   
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
-  var routingBasePath: js.UndefOr[String] = js.native
+  var routingBasePath: js.UndefOr[String] = js.undefined
   
-  var tenant: String = js.native
+  var tenant: String
   
-  var visitorAuthentication: js.UndefOr[Boolean] = js.native
+  var visitorAuthentication: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigOptions {
   
@@ -38,7 +36,7 @@ object ConfigOptions {
   implicit class ConfigOptionsMutableBuilder[Self <: ConfigOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setConstraintsValidation(value: /* constraints */ js.Any => _): Self = StObject.set(x, "constraintsValidation", js.Any.fromFunction1(value))
+    def setConstraintsValidation(value: /* constraints */ js.Any => js.Any): Self = StObject.set(x, "constraintsValidation", js.Any.fromFunction1(value))
     
     @scala.inline
     def setConstraintsValidationUndefined: Self = StObject.set(x, "constraintsValidation", js.undefined)

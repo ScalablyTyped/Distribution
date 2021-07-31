@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides client functionality for the Image dialog within the  ASPxHtmlEditor.
   */
-@js.native
-trait ASPxClientHtmlEditorImageDialog extends ASPxClientHtmlEditorMediaDialogBase {
+trait ASPxClientHtmlEditorImageDialog
+  extends StObject
+     with ASPxClientHtmlEditorMediaDialogBase {
   
   /**
     * Provides access to the client object of the "Create thumbnail" check box in the Html Editor's Image dialog.
     */
-  def GetCreateThumbnailCheckBox(): ASPxClientCheckBox = js.native
+  def GetCreateThumbnailCheckBox(): ASPxClientCheckBox
   
   /**
     * Provides access to the client object of the "Description" text box in the Html Editor's Image dialog.
     */
-  def GetDescriptionTextBox(): ASPxClientTextBox = js.native
+  def GetDescriptionTextBox(): ASPxClientTextBox
   
   /**
     * Provides access to the client object of the "Size" combo box in the Html Editor's Image dialog.
     */
-  def GetSizeComboBox(): ASPxClientComboBox = js.native
+  def GetSizeComboBox(): ASPxClientComboBox
   
   /**
     * Provides access to the client object of the "New image name" text box in the Html Editor's Image dialog.
     */
-  def GetThumbnailNameTextBox(): ASPxClientTextBox = js.native
+  def GetThumbnailNameTextBox(): ASPxClientTextBox
   
   /**
     * Provides access to the client object of the "Wrap text around image" check box in the Html Editor's Image dialog.
     */
-  def GetWrapTextCheckBox(): ASPxClientCheckBox = js.native
+  def GetWrapTextCheckBox(): ASPxClientCheckBox
 }
 object ASPxClientHtmlEditorImageDialog {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.secretsmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecretVersionsListEntry extends StObject {
   
   /**
     * The date and time this version of the secret was created.
     */
-  var CreatedDate: js.UndefOr[CreatedDateType] = js.native
+  var CreatedDate: js.UndefOr[CreatedDateType] = js.undefined
   
   /**
     * The date that this version of the secret was last accessed. Note that the resolution of this field is at the date level and does not include the time.
     */
-  var LastAccessedDate: js.UndefOr[LastAccessedDateType] = js.native
+  var LastAccessedDate: js.UndefOr[LastAccessedDateType] = js.undefined
   
   /**
     * The unique version identifier of this version of the secret.
     */
-  var VersionId: js.UndefOr[SecretVersionIdType] = js.native
+  var VersionId: js.UndefOr[SecretVersionIdType] = js.undefined
   
   /**
     * An array of staging labels that are currently associated with this version of the secret.
     */
-  var VersionStages: js.UndefOr[SecretVersionStagesType] = js.native
+  var VersionStages: js.UndefOr[SecretVersionStagesType] = js.undefined
 }
 object SecretVersionsListEntry {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
   /**
     * The branch of the repository where the pull request changes are merged. Also known as the destination branch.
     */
-  var destinationReference: js.UndefOr[ReferenceName] = js.native
+  var destinationReference: js.UndefOr[ReferenceName] = js.undefined
   
   /**
     * The name of the repository that contains the pull request.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
   
   /**
     * The branch of the repository that contains the changes for the pull request. Also known as the source branch.
     */
-  var sourceReference: ReferenceName = js.native
+  var sourceReference: ReferenceName
 }
 object Target {
   

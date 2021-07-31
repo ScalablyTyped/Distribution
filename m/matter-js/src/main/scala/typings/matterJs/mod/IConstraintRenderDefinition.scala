@@ -5,10 +5,8 @@ import typings.matterJs.matterJsStrings.pin
 import typings.matterJs.matterJsStrings.spring
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConstraintRenderDefinition extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type boolean
     * @default true
     */
-  var anchors: js.UndefOr[Boolean] = js.native
+  var anchors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A `Number` that defines the line width to use when rendering the constraint outline.
@@ -28,7 +26,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type number
     * @default 2
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * A `String` that defines the stroke style to use when rendering the constraint outline.
@@ -38,7 +36,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type string
     * @default a random colour
     */
-  var strokeStyle: js.UndefOr[String] = js.native
+  var strokeStyle: js.UndefOr[String] = js.undefined
   
   /**
     * A String that defines the constraint rendering type. The possible values are
@@ -49,7 +47,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type string
     * @default 'line'
     */
-  var `type`: js.UndefOr[line | pin | spring] = js.native
+  var `type`: js.UndefOr[line | pin | spring] = js.undefined
   
   /**
     * A flag that indicates if the constraint should be rendered.
@@ -58,7 +56,7 @@ trait IConstraintRenderDefinition extends StObject {
     * @type boolean
     * @default true
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object IConstraintRenderDefinition {
   

@@ -3,11 +3,11 @@ package typings.winrt.Windows.Networking.Connectivity
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NetworkAdapter extends INetworkAdapter
+trait NetworkAdapter
+  extends StObject
+     with INetworkAdapter
 object NetworkAdapter {
   
   @scala.inline

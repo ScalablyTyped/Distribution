@@ -2,42 +2,40 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*
   Types based on https://github.com/serverless/serverless/blob/master/docs/providers/aws/guide/serverless.yml.md
   */
-@js.native
 trait Serverless extends StObject {
   
   @JSName("package")
-  var _package: js.UndefOr[Package] = js.native
+  var _package: js.UndefOr[Package] = js.undefined
   
-  var app: js.UndefOr[String] = js.native
+  var app: js.UndefOr[String] = js.undefined
   
-  var configValidationMode: js.UndefOr[String] = js.native
+  var configValidationMode: js.UndefOr[String] = js.undefined
   
-  var custom: js.UndefOr[Custom] = js.native
+  var custom: js.UndefOr[Custom] = js.undefined
   
-  var frameworkVersion: String = js.native
+  var frameworkVersion: String
   
-  var functions: js.UndefOr[Functions] = js.native
+  var functions: js.UndefOr[Functions] = js.undefined
   
-  var layers: js.UndefOr[Layers] = js.native
+  var layers: js.UndefOr[Layers] = js.undefined
   
   @JSName("org")
-  var org_ : js.UndefOr[String] = js.native
+  var org_ : js.UndefOr[String] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[String]] = js.native
+  var plugins: js.UndefOr[js.Array[String]] = js.undefined
   
-  var provider: Provider = js.native
+  var provider: Provider
   
-  var resources: js.UndefOr[Resources] = js.native
+  var resources: js.UndefOr[Resources] = js.undefined
   
-  var service: Service | String = js.native
+  var service: Service | String
   
-  var tenant: js.UndefOr[String] = js.native
+  var tenant: js.UndefOr[String] = js.undefined
 }
 object Serverless {
   

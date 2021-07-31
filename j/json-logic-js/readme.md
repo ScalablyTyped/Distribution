@@ -10,9 +10,9 @@ Build complex rules, serialize them as JSON, and execute them in JavaScript
 | ------------------ | :-------------: |
 | Full name          | json-logic-js |
 | Keywords           | json, logic, jsonlogic, rules |
-| # releases         | 0 |
-| # dependents       | 70 |
-| # downloads        | 1233326 |
+| # releases         | 3 |
+| # dependents       | 75 |
+| # downloads        | 1642924 |
 | # stars            | 1 |
 
 ## Links

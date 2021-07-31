@@ -7,7 +7,6 @@ import typings.gapiPlus.gapi.client.plus.people.Person
 import typings.gapiPlus.gapi.client.plus.people.SearchParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -21,13 +20,15 @@ object global {
         
         object people {
           
-          @JSGlobal("gapi.client.plus.people.get")
+          @JSGlobal("gapi.client.plus.people")
           @js.native
-          def get(parameters: GetParameters): HttpRequest[Person] = js.native
+          val ^ : js.Any = js.native
           
-          @JSGlobal("gapi.client.plus.people.search")
-          @js.native
-          def search(parameters: SearchParameters): HttpRequest[PeopleFeed] = js.native
+          @scala.inline
+          def get(parameters: GetParameters): HttpRequest[Person] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[Person]]
+          
+          @scala.inline
+          def search(parameters: SearchParameters): HttpRequest[PeopleFeed] = ^.asInstanceOf[js.Dynamic].applyDynamic("search")(parameters.asInstanceOf[js.Any]).asInstanceOf[HttpRequest[PeopleFeed]]
         }
       }
     }

@@ -2,59 +2,57 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NearByOptions extends StObject {
   
   /**
     * maximum walking distance in meters
     * @default undefined
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * parse & expose entrances of stops/stations?
     * @default true
     */
-  var entrances: js.UndefOr[Boolean] = js.native
+  var entrances: js.UndefOr[Boolean] = js.undefined
   
   /**
     * language
     * @default en
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * parse & expose lines at each stop/station?
     * @default false
     */
-  var linesOfStops: js.UndefOr[Boolean] = js.native
+  var linesOfStops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * return points of interest?
     * @default false
     */
-  var poi: js.UndefOr[Boolean] = js.native
+  var poi: js.UndefOr[Boolean] = js.undefined
   
   /**
     * maximum number of results
     * @default 8
     */
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
   /**
     * return stops/stations?
     * @default true
     */
-  var stops: js.UndefOr[Boolean] = js.native
+  var stops: js.UndefOr[Boolean] = js.undefined
   
   /**
     * parse & expose sub-stops of stations?
     * @default true
     */
-  var subStops: js.UndefOr[Boolean] = js.native
+  var subStops: js.UndefOr[Boolean] = js.undefined
 }
 object NearByOptions {
   

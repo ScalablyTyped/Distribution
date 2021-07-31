@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrawlerTargets extends StObject {
   
   /**
     * Specifies AWS Glue Data Catalog targets.
     */
-  var CatalogTargets: js.UndefOr[CatalogTargetList] = js.native
+  var CatalogTargets: js.UndefOr[CatalogTargetList] = js.undefined
   
   /**
     * Specifies Amazon DynamoDB targets.
     */
-  var DynamoDBTargets: js.UndefOr[DynamoDBTargetList] = js.native
+  var DynamoDBTargets: js.UndefOr[DynamoDBTargetList] = js.undefined
   
   /**
     * Specifies JDBC targets.
     */
-  var JdbcTargets: js.UndefOr[JdbcTargetList] = js.native
+  var JdbcTargets: js.UndefOr[JdbcTargetList] = js.undefined
   
   /**
     * Specifies Amazon DocumentDB or MongoDB targets.
     */
-  var MongoDBTargets: js.UndefOr[MongoDBTargetList] = js.native
+  var MongoDBTargets: js.UndefOr[MongoDBTargetList] = js.undefined
   
   /**
     * Specifies Amazon Simple Storage Service (Amazon S3) targets.
     */
-  var S3Targets: js.UndefOr[S3TargetList] = js.native
+  var S3Targets: js.UndefOr[S3TargetList] = js.undefined
 }
 object CrawlerTargets {
   

@@ -2,25 +2,23 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for ListInstanceConfigs.
   */
-@js.native
 trait SchemaListInstanceConfigsResponse extends StObject {
   
   /**
     * The list of requested instance configurations.
     */
-  var instanceConfigs: js.UndefOr[js.Array[SchemaInstanceConfig]] = js.native
+  var instanceConfigs: js.UndefOr[js.Array[SchemaInstanceConfig]] = js.undefined
   
   /**
     * `next_page_token` can be sent in a subsequent ListInstanceConfigs call to
     * fetch more of the matching instance configurations.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListInstanceConfigsResponse {
   

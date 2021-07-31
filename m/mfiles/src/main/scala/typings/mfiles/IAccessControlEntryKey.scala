@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessControlEntryKey extends StObject {
   
-  def Clone(): IAccessControlEntryKey = js.native
+  def Clone(): IAccessControlEntryKey
   
-  def GetResolvedPseudoUserOrGroupIDs(): IUserOrUserGroupIDs = js.native
+  def GetResolvedPseudoUserOrGroupIDs(): IUserOrUserGroupIDs
   
-  val HasConcreteUserOrGroupID: Boolean = js.native
+  val HasConcreteUserOrGroupID: Boolean
   
-  val IsGroup: Boolean = js.native
+  val IsGroup: Boolean
   
-  val IsPseudoUser: Boolean = js.native
+  val IsPseudoUser: Boolean
   
-  var PseudoUserID: IIndirectPropertyID = js.native
+  var PseudoUserID: IIndirectPropertyID
   
-  def ResetResolvedPseudoUserOrGroupIDs(): Unit = js.native
+  def ResetResolvedPseudoUserOrGroupIDs(): Unit
   
-  def SetUserOrGroupID(UserOrGroupID: Double, IsGroup: Boolean): Unit = js.native
+  def SetUserOrGroupID(UserOrGroupID: Double, IsGroup: Boolean): Unit
   
-  val UserOrGroupID: Double = js.native
+  val UserOrGroupID: Double
 }
 object IAccessControlEntryKey {
   

@@ -10,9 +10,9 @@ small commonmark compliant markdown parser with positional info and concrete tok
 | ------------------ | :-------------: |
 | Full name          | micromark |
 | Keywords           | commonmark, compiler, gfm, html, lexer, markdown, markup, md, unified, parse, parser, plugin, process, remark, render, renderer, token, tokenizer |
-| # releases         | 10 |
-| # dependents       | 7 |
-| # downloads        | 1370 |
+| # releases         | 20 |
+| # dependents       | 22 |
+| # downloads        | 8571311 |
 | # stars            | 0 |
 
 ## Links

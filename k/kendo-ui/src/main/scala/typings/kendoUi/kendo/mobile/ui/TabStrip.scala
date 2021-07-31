@@ -3,12 +3,12 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TabStrip
-  extends typings.kendoUi.kendo.ui.Widget {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Widget {
   
   def badge(tab: String, value: String): String = js.native
   def badge(tab: String, value: Boolean): String = js.native

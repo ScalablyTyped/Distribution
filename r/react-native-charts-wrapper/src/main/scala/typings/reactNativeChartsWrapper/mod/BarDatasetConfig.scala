@@ -2,19 +2,18 @@ package typings.reactNativeChartsWrapper.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarDatasetConfig
-  extends CommonDatasetConfig
+  extends StObject
+     with CommonDatasetConfig
      with BarLineScatterCandleBubbleConfig {
   
-  var barShadowColor: js.UndefOr[Color] = js.native
+  var barShadowColor: js.UndefOr[Color] = js.undefined
   
-  var highlightAlpha: js.UndefOr[Double] = js.native
+  var highlightAlpha: js.UndefOr[Double] = js.undefined
   
-  var stackLabels: js.UndefOr[js.Array[String]] = js.native
+  var stackLabels: js.UndefOr[js.Array[String]] = js.undefined
 }
 object BarDatasetConfig {
   

@@ -2,7 +2,6 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * placed in a Paper.js project.
   */
 @js.native
-trait SymbolItem extends Item {
+trait SymbolItem
+  extends StObject
+     with Item {
   
   /** 
     * The symbol definition that the placed symbol refers to.

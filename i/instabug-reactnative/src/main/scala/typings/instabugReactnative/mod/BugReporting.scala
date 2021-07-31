@@ -2,10 +2,13 @@ package typings.instabugReactnative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BugReporting {
+  
+  @JSImport("instabug-reactnative", "BugReporting")
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait extendedBugReportMode extends StObject
@@ -14,22 +17,25 @@ object BugReporting {
   object extendedBugReportMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.BugReporting.extendedBugReportMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.BugReporting.extendedBugReportMode & Double] = js.native
     
     @js.native
     sealed trait disabled
-      extends typings.instabugReactnative.mod.BugReporting.extendedBugReportMode
-    /* 2 */ val disabled: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode.disabled with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.extendedBugReportMode
+    /* 2 */ val disabled: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode.disabled & Double = js.native
     
     @js.native
     sealed trait enabledWithOptionalFields
-      extends typings.instabugReactnative.mod.BugReporting.extendedBugReportMode
-    /* 1 */ val enabledWithOptionalFields: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode.enabledWithOptionalFields with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.extendedBugReportMode
+    /* 1 */ val enabledWithOptionalFields: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode.enabledWithOptionalFields & Double = js.native
     
     @js.native
     sealed trait enabledWithRequiredFields
-      extends typings.instabugReactnative.mod.BugReporting.extendedBugReportMode
-    /* 0 */ val enabledWithRequiredFields: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode.enabledWithRequiredFields with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.extendedBugReportMode
+    /* 0 */ val enabledWithRequiredFields: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode.enabledWithRequiredFields & Double = js.native
   }
   
   @js.native
@@ -39,32 +45,37 @@ object BugReporting {
   object invocationEvent extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.BugReporting.invocationEvent with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.BugReporting.invocationEvent & Double] = js.native
     
     @js.native
     sealed trait floatingButton
-      extends typings.instabugReactnative.mod.BugReporting.invocationEvent
-    /* 4 */ val floatingButton: typings.instabugReactnative.mod.BugReporting.invocationEvent.floatingButton with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationEvent
+    /* 4 */ val floatingButton: typings.instabugReactnative.mod.BugReporting.invocationEvent.floatingButton & Double = js.native
     
     @js.native
     sealed trait none
-      extends typings.instabugReactnative.mod.BugReporting.invocationEvent
-    /* 0 */ val none: typings.instabugReactnative.mod.BugReporting.invocationEvent.none with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationEvent
+    /* 0 */ val none: typings.instabugReactnative.mod.BugReporting.invocationEvent.none & Double = js.native
     
     @js.native
     sealed trait screenshot
-      extends typings.instabugReactnative.mod.BugReporting.invocationEvent
-    /* 2 */ val screenshot: typings.instabugReactnative.mod.BugReporting.invocationEvent.screenshot with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationEvent
+    /* 2 */ val screenshot: typings.instabugReactnative.mod.BugReporting.invocationEvent.screenshot & Double = js.native
     
     @js.native
     sealed trait shake
-      extends typings.instabugReactnative.mod.BugReporting.invocationEvent
-    /* 1 */ val shake: typings.instabugReactnative.mod.BugReporting.invocationEvent.shake with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationEvent
+    /* 1 */ val shake: typings.instabugReactnative.mod.BugReporting.invocationEvent.shake & Double = js.native
     
     @js.native
     sealed trait twoFingersSwipe
-      extends typings.instabugReactnative.mod.BugReporting.invocationEvent
-    /* 3 */ val twoFingersSwipe: typings.instabugReactnative.mod.BugReporting.invocationEvent.twoFingersSwipe with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationEvent
+    /* 3 */ val twoFingersSwipe: typings.instabugReactnative.mod.BugReporting.invocationEvent.twoFingersSwipe & Double = js.native
   }
   
   @js.native
@@ -74,40 +85,41 @@ object BugReporting {
   object invocationOptions extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.BugReporting.invocationOptions with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.instabugReactnative.mod.BugReporting.invocationOptions & Double] = js.native
     
     @js.native
     sealed trait commentFieldRequired
-      extends typings.instabugReactnative.mod.BugReporting.invocationOptions
-    /* 2 */ val commentFieldRequired: typings.instabugReactnative.mod.BugReporting.invocationOptions.commentFieldRequired with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationOptions
+    /* 2 */ val commentFieldRequired: typings.instabugReactnative.mod.BugReporting.invocationOptions.commentFieldRequired & Double = js.native
     
     @js.native
     sealed trait disablePostSendingDialog
-      extends typings.instabugReactnative.mod.BugReporting.invocationOptions
-    /* 3 */ val disablePostSendingDialog: typings.instabugReactnative.mod.BugReporting.invocationOptions.disablePostSendingDialog with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationOptions
+    /* 3 */ val disablePostSendingDialog: typings.instabugReactnative.mod.BugReporting.invocationOptions.disablePostSendingDialog & Double = js.native
     
     @js.native
     sealed trait emailFieldHidden
-      extends typings.instabugReactnative.mod.BugReporting.invocationOptions
-    /* 0 */ val emailFieldHidden: typings.instabugReactnative.mod.BugReporting.invocationOptions.emailFieldHidden with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationOptions
+    /* 0 */ val emailFieldHidden: typings.instabugReactnative.mod.BugReporting.invocationOptions.emailFieldHidden & Double = js.native
     
     @js.native
     sealed trait emailFieldOptional
-      extends typings.instabugReactnative.mod.BugReporting.invocationOptions
-    /* 1 */ val emailFieldOptional: typings.instabugReactnative.mod.BugReporting.invocationOptions.emailFieldOptional with Double = js.native
+      extends StObject
+         with typings.instabugReactnative.mod.BugReporting.invocationOptions
+    /* 1 */ val emailFieldOptional: typings.instabugReactnative.mod.BugReporting.invocationOptions.emailFieldOptional & Double = js.native
   }
   
-  @JSImport("instabug-reactnative", "BugReporting.onInvokeHandler")
-  @js.native
-  def onInvokeHandler(handler: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def onInvokeHandler(handler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onInvokeHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.onReportSubmitHandler")
-  @js.native
-  def onReportSubmitHandler(preSendingHandler: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def onReportSubmitHandler(preSendingHandler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onReportSubmitHandler")(preSendingHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.onSDKDismissedHandler")
-  @js.native
-  def onSDKDismissedHandler(handler: js.Function2[/* dismiss */ dismissType, /* report */ reportType, Unit]): Unit = js.native
+  @scala.inline
+  def onSDKDismissedHandler(handler: js.Function2[/* dismiss */ dismissType, /* report */ reportType, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSDKDismissedHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @js.native
   sealed trait option extends StObject
@@ -116,23 +128,31 @@ object BugReporting {
   object option extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[option with Double] = js.native
+    def apply(value: Double): js.UndefOr[option & Double] = js.native
     
     @js.native
-    sealed trait commentFieldRequired extends option
-    /* 2 */ val commentFieldRequired: typings.instabugReactnative.mod.BugReporting.option.commentFieldRequired with Double = js.native
+    sealed trait commentFieldRequired
+      extends StObject
+         with option
+    /* 2 */ val commentFieldRequired: typings.instabugReactnative.mod.BugReporting.option.commentFieldRequired & Double = js.native
     
     @js.native
-    sealed trait disablePostSendingDialog extends option
-    /* 3 */ val disablePostSendingDialog: typings.instabugReactnative.mod.BugReporting.option.disablePostSendingDialog with Double = js.native
+    sealed trait disablePostSendingDialog
+      extends StObject
+         with option
+    /* 3 */ val disablePostSendingDialog: typings.instabugReactnative.mod.BugReporting.option.disablePostSendingDialog & Double = js.native
     
     @js.native
-    sealed trait emailFieldHidden extends option
-    /* 0 */ val emailFieldHidden: typings.instabugReactnative.mod.BugReporting.option.emailFieldHidden with Double = js.native
+    sealed trait emailFieldHidden
+      extends StObject
+         with option
+    /* 0 */ val emailFieldHidden: typings.instabugReactnative.mod.BugReporting.option.emailFieldHidden & Double = js.native
     
     @js.native
-    sealed trait emailFieldOptional extends option
-    /* 1 */ val emailFieldOptional: typings.instabugReactnative.mod.BugReporting.option.emailFieldOptional with Double = js.native
+    sealed trait emailFieldOptional
+      extends StObject
+         with option
+    /* 1 */ val emailFieldOptional: typings.instabugReactnative.mod.BugReporting.option.emailFieldOptional & Double = js.native
   }
   
   @js.native
@@ -142,70 +162,63 @@ object BugReporting {
   object reportType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[reportType with Double] = js.native
+    def apply(value: Double): js.UndefOr[reportType & Double] = js.native
     
     @js.native
-    sealed trait bug extends reportType
-    /* 0 */ val bug: typings.instabugReactnative.mod.BugReporting.reportType.bug with Double = js.native
+    sealed trait bug
+      extends StObject
+         with reportType
+    /* 0 */ val bug: typings.instabugReactnative.mod.BugReporting.reportType.bug & Double = js.native
     
     @js.native
-    sealed trait feedback extends reportType
-    /* 1 */ val feedback: typings.instabugReactnative.mod.BugReporting.reportType.feedback with Double = js.native
+    sealed trait feedback
+      extends StObject
+         with reportType
+    /* 1 */ val feedback: typings.instabugReactnative.mod.BugReporting.reportType.feedback & Double = js.native
     
     @js.native
-    sealed trait question extends reportType
-    /* 2 */ val question: typings.instabugReactnative.mod.BugReporting.reportType.question with Double = js.native
+    sealed trait question
+      extends StObject
+         with reportType
+    /* 2 */ val question: typings.instabugReactnative.mod.BugReporting.reportType.question & Double = js.native
   }
   
-  @JSImport("instabug-reactnative", "BugReporting.setAutoScreenRecordingEnabled")
-  @js.native
-  def setAutoScreenRecordingEnabled(isEnabled: Boolean): Unit = js.native
+  @scala.inline
+  def setAutoScreenRecordingEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAutoScreenRecordingEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setDidSelectPromptOptionHandler")
-  @js.native
-  def setDidSelectPromptOptionHandler(didSelectPromptOptionHandler: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setDidSelectPromptOptionHandler(didSelectPromptOptionHandler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDidSelectPromptOptionHandler")(didSelectPromptOptionHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setEnabled")
-  @js.native
-  def setEnabled(isEnabled: Boolean): Unit = js.native
+  @scala.inline
+  def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setExtendedBugReportMode")
-  @js.native
-  def setExtendedBugReportMode(extendedBugReportMode: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode): Unit = js.native
+  @scala.inline
+  def setExtendedBugReportMode(extendedBugReportMode: typings.instabugReactnative.mod.BugReporting.extendedBugReportMode): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExtendedBugReportMode")(extendedBugReportMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setInvocationEvents")
-  @js.native
-  def setInvocationEvents(invocationEvents: js.Array[typings.instabugReactnative.mod.BugReporting.invocationEvent]): Unit = js.native
+  @scala.inline
+  def setInvocationEvents(invocationEvents: js.Array[typings.instabugReactnative.mod.BugReporting.invocationEvent]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInvocationEvents")(invocationEvents.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setInvocationOptions")
-  @js.native
-  def setInvocationOptions(invocationOptions: js.Array[typings.instabugReactnative.mod.BugReporting.invocationOptions]): Unit = js.native
+  @scala.inline
+  def setInvocationOptions(invocationOptions: js.Array[typings.instabugReactnative.mod.BugReporting.invocationOptions]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInvocationOptions")(invocationOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setReportTypes")
-  @js.native
-  def setReportTypes(types: js.Array[reportType]): Unit = js.native
+  @scala.inline
+  def setReportTypes(types: js.Array[reportType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setReportTypes")(types.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setShakingThresholdForAndroid")
-  @js.native
-  def setShakingThresholdForAndroid(androidThreshold: Double): Unit = js.native
+  @scala.inline
+  def setShakingThresholdForAndroid(androidThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForAndroid")(androidThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setShakingThresholdForiPad")
-  @js.native
-  def setShakingThresholdForiPad(iPadShakingThreshold: Double): Unit = js.native
+  @scala.inline
+  def setShakingThresholdForiPad(iPadShakingThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForiPad")(iPadShakingThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setShakingThresholdForiPhone")
-  @js.native
-  def setShakingThresholdForiPhone(iPhoneShakingThreshold: Double): Unit = js.native
+  @scala.inline
+  def setShakingThresholdForiPhone(iPhoneShakingThreshold: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShakingThresholdForiPhone")(iPhoneShakingThreshold.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.setViewHierarchyEnabled")
-  @js.native
-  def setViewHierarchyEnabled(isEnabled: Boolean): Unit = js.native
+  @scala.inline
+  def setViewHierarchyEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setViewHierarchyEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.show")
-  @js.native
-  def show(`type`: reportType, options: js.Array[option]): Unit = js.native
+  @scala.inline
+  def show(`type`: reportType, options: js.Array[option]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "BugReporting.showWithOptions")
-  @js.native
-  def showWithOptions(`type`: reportType, options: js.Array[option]): Unit = js.native
+  @scala.inline
+  def showWithOptions(`type`: reportType, options: js.Array[option]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("showWithOptions")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

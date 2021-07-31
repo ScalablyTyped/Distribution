@@ -13,26 +13,25 @@ import typings.d3Selection.mod.ValueFn
 import typings.std.SVGGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-brush", "brush")
+  @JSImport("d3-brush", JSImport.Namespace)
   @js.native
-  def brush[Datum](): BrushBehavior[Datum] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-brush", "brushSelection")
-  @js.native
-  def brushSelection(node: SVGGElement): BrushSelection_ | Null = js.native
+  @scala.inline
+  def brush[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brush")().asInstanceOf[BrushBehavior[Datum]]
   
-  @JSImport("d3-brush", "brushX")
-  @js.native
-  def brushX[Datum](): BrushBehavior[Datum] = js.native
+  @scala.inline
+  def brushSelection(node: SVGGElement): BrushSelection_ | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("brushSelection")(node.asInstanceOf[js.Any]).asInstanceOf[BrushSelection_ | Null]
   
-  @JSImport("d3-brush", "brushY")
-  @js.native
-  def brushY[Datum](): BrushBehavior[Datum] = js.native
+  @scala.inline
+  def brushX[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushX")().asInstanceOf[BrushBehavior[Datum]]
+  
+  @scala.inline
+  def brushY[Datum](): BrushBehavior[Datum] = ^.asInstanceOf[js.Dynamic].applyDynamic("brushY")().asInstanceOf[BrushBehavior[Datum]]
   
   @js.native
   trait BrushBehavior[Datum] extends StObject {
@@ -46,14 +45,14 @@ object mod {
       * @param group A D3 selection of SVG G elements.
       * @param args Optional arguments to be passed in.
       */
-    def apply(group: Selection_[SVGGElement, Datum, _, _], args: js.Any*): Unit = js.native
+    def apply(group: Selection_[SVGGElement, Datum, js.Any, js.Any], args: js.Any*): Unit = js.native
     
     /**
       * Clear the active selection of the brush on the specified SVG G element(s) selection.
       *
       * @param group A D3 selection of SVG G elements.
       */
-    def clear(group: Selection_[SVGGElement, Datum, _, _]): Unit = js.native
+    def clear(group: Selection_[SVGGElement, Datum, js.Any, js.Any]): Unit = js.native
     
     /**
       * Returns the current extent accessor.
@@ -137,7 +136,7 @@ object mod {
       * @param group A D3 selection of SVG G elements.
       * @param selection Use null to clear the active brush selection.
       */
-    def move(group: Selection_[SVGGElement, Datum, _, _], selection: Null): Unit = js.native
+    def move(group: Selection_[SVGGElement, Datum, js.Any, js.Any], selection: Null): Unit = js.native
     /**
       * Sets the active selection of the brush on the specified SVG G element(s) selection
       * to the provided array.
@@ -148,7 +147,7 @@ object mod {
       * x1 is the maximum x-value, and y1 is the maximum y-value. For an x-brush, it must be defined as [x0, x1];
       * for a y-brush, it must be defined as [y0, y1].
       */
-    def move(group: Selection_[SVGGElement, Datum, _, _], selection: BrushSelection_): Unit = js.native
+    def move(group: Selection_[SVGGElement, Datum, js.Any, js.Any], selection: BrushSelection_): Unit = js.native
     /**
       * Sets the active selection of the brush on the specified SVG G element(s) selection
       * based on the array returned by a value function invoked for each selection element.
@@ -162,7 +161,7 @@ object mod {
       * for a y-brush, it must be defined as [y0, y1].
       */
     def move(
-      group: Selection_[SVGGElement, Datum, _, _],
+      group: Selection_[SVGGElement, Datum, js.Any, js.Any],
       selection: ValueFn[SVGGElement, Datum, BrushSelection_]
     ): Unit = js.native
     /**
@@ -263,25 +262,24 @@ object mod {
   
   type BrushSelection_ = js.Tuple2[Double | (js.Tuple2[Double, Double]), Double | (js.Tuple2[Double, Double])]
   
-  @js.native
   trait D3BrushEvent[Datum] extends StObject {
     
     /**
       * The mode of the brush.
       */
-    var mode: drag | space | handle | center = js.native
+    var mode: drag | space | handle | center
     
     // Leave failsafe string type for cases like 'brush.foo'
     /**
       * The current brush selection associated with the event.
       * This is null when the selection is empty.
       */
-    var selection: BrushSelection_ | Null = js.native
+    var selection: BrushSelection_ | Null
     
     /**
       * The underlying input event, such as mousemove or touchmove.
       */
-    var sourceEvent: js.Any = js.native
+    var sourceEvent: js.Any
     
     /**
       * Applies the brush to the specified group, which must be a selection of SVG G elements.
@@ -295,16 +293,52 @@ object mod {
     /**
       * The BrushBehavior associated with the event
       */
-    def target(group: Selection_[SVGGElement, Datum, _, _], args: js.Any*): Unit = js.native
+    def target(group: Selection_[SVGGElement, Datum, js.Any, js.Any], args: js.Any*): Unit
     /**
       * The BrushBehavior associated with the event
       */
     @JSName("target")
-    var target_Original: BrushBehavior[Datum] = js.native
+    var target_Original: BrushBehavior[Datum]
     
     /**
       * The event type for the BrushEvent
       */
-    var `type`: start | brush | end | String = js.native
+    var `type`: start | brush | end | String
+  }
+  object D3BrushEvent {
+    
+    @scala.inline
+    def apply[Datum](
+      mode: drag | space | handle | center,
+      sourceEvent: js.Any,
+      target: BrushBehavior[Datum],
+      `type`: start | brush | end | String
+    ): D3BrushEvent[Datum] = {
+      val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], sourceEvent = sourceEvent.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any], selection = null)
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[D3BrushEvent[Datum]]
+    }
+    
+    @scala.inline
+    implicit class D3BrushEventMutableBuilder[Self <: D3BrushEvent[?], Datum] (val x: Self & D3BrushEvent[Datum]) extends AnyVal {
+      
+      @scala.inline
+      def setMode(value: drag | space | handle | center): Self = StObject.set(x, "mode", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSelection(value: BrushSelection_): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSelectionNull: Self = StObject.set(x, "selection", null)
+      
+      @scala.inline
+      def setSourceEvent(value: js.Any): Self = StObject.set(x, "sourceEvent", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTarget(value: BrushBehavior[Datum]): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setType(value: start | brush | end | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
 }

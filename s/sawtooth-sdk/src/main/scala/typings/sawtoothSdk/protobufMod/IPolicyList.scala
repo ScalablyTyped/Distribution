@@ -2,14 +2,12 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPolicyList extends StObject {
   
   /** PolicyList policies */
-  var policies: js.UndefOr[js.Array[IPolicy] | Null] = js.native
+  var policies: js.UndefOr[js.Array[IPolicy] | Null] = js.undefined
 }
 object IPolicyList {
   

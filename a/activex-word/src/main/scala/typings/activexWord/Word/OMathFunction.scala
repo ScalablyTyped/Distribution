@@ -2,68 +2,66 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathFunction extends StObject {
   
-  val Acc: OMathAcc = js.native
+  val Acc: OMathAcc
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Args: OMathArgs = js.native
+  val Args: OMathArgs
   
-  val Bar: OMathBar = js.native
+  val Bar: OMathBar
   
-  val BorderBox: OMathBorderBox = js.native
+  val BorderBox: OMathBorderBox
   
-  val Box: OMathBox = js.native
+  val Box: OMathBox
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Delim: OMathDelim = js.native
+  val Delim: OMathDelim
   
-  val EqArray: OMathEqArray = js.native
+  val EqArray: OMathEqArray
   
-  val Frac: OMathFrac = js.native
+  val Frac: OMathFrac
   
-  val Func: OMathFunc = js.native
+  val Func: OMathFunc
   
-  val GroupChar: OMathGroupChar = js.native
+  val GroupChar: OMathGroupChar
   
-  val LimLow: OMathLimLow = js.native
+  val LimLow: OMathLimLow
   
-  val LimUpp: OMathLimUpp = js.native
+  val LimUpp: OMathLimUpp
   
-  val Mat: OMathMat = js.native
+  val Mat: OMathMat
   
-  val Nary: OMathNary = js.native
+  val Nary: OMathNary
   
-  val OMath: typings.activexWord.Word.OMath = js.native
+  val OMath: typings.activexWord.Word.OMath
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Phantom: OMathPhantom = js.native
+  val Phantom: OMathPhantom
   
-  val Rad: OMathRad = js.native
+  val Rad: OMathRad
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  def Remove(): OMathFunction = js.native
+  def Remove(): OMathFunction
   
-  val ScrPre: OMathScrPre = js.native
+  val ScrPre: OMathScrPre
   
-  val ScrSub: OMathScrSub = js.native
+  val ScrSub: OMathScrSub
   
-  val ScrSubSup: OMathScrSubSup = js.native
+  val ScrSubSup: OMathScrSubSup
   
-  val ScrSup: OMathScrSup = js.native
+  val ScrSup: OMathScrSup
   
-  val Type: WdOMathFunctionType = js.native
+  val Type: WdOMathFunctionType
   
   @JSName("Word.OMathFunction_typekey")
-  var WordDotOMathFunction_typekey: OMathFunction = js.native
+  var WordDotOMathFunction_typekey: OMathFunction
 }
 object OMathFunction {
   

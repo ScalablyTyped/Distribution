@@ -2,21 +2,19 @@ package typings.knockoutSecureBinding
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutSecureBindingOptions extends StObject {
   
-  var attribute: js.UndefOr[String] = js.native
+  var attribute: js.UndefOr[String] = js.undefined
   
   var bindings: js.UndefOr[
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandlers */ js.Any
-  ] = js.native
+  ] = js.undefined
   
-  var globals: js.UndefOr[js.Any] = js.native
+  var globals: js.UndefOr[js.Any] = js.undefined
   
-  var noVirtualElements: js.UndefOr[Boolean] = js.native
+  var noVirtualElements: js.UndefOr[Boolean] = js.undefined
 }
 object KnockoutSecureBindingOptions {
   

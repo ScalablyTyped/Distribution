@@ -3,35 +3,59 @@ package typings.baconjs
 import typings.baconjs.typesMod.Unsub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compositeunsubscribeMod {
   
   @JSImport("baconjs/types/compositeunsubscribe", JSImport.Default)
   @js.native
-  class default () extends CompositeUnsubscribe {
+  class default ()
+    extends StObject
+       with CompositeUnsubscribe {
     def this(ss: js.Array[Subscription]) = this()
-  }
-  
-  @js.native
-  trait CompositeUnsubscribe extends StObject {
     
-    def add(subscription: Subscription): Unit = js.native
+    /* CompleteClass */
+    override def add(subscription: Subscription): Unit = js.native
     
-    def count(): Double = js.native
+    /* CompleteClass */
+    override def count(): Double = js.native
     
-    def empty(): Boolean = js.native
+    /* CompleteClass */
+    override def empty(): Boolean = js.native
     
-    def remove(unsub: Unsub): Unit = js.native
+    /* CompleteClass */
+    override def remove(unsub: Unsub): Unit = js.native
     
+    /* CompleteClass */
     var starting: js.Array[Subscription] = js.native
     
+    /* CompleteClass */
     var subscriptions: js.Array[Unsub] = js.native
     
-    def unsubscribe(): Unit = js.native
+    /* CompleteClass */
+    override def unsubscribe(): Unit = js.native
     
+    /* CompleteClass */
     var unsubscribed: Boolean = js.native
+  }
+  
+  trait CompositeUnsubscribe extends StObject {
+    
+    def add(subscription: Subscription): Unit
+    
+    def count(): Double
+    
+    def empty(): Boolean
+    
+    def remove(unsub: Unsub): Unit
+    
+    var starting: js.Array[Subscription]
+    
+    var subscriptions: js.Array[Unsub]
+    
+    def unsubscribe(): Unit
+    
+    var unsubscribed: Boolean
   }
   object CompositeUnsubscribe {
     

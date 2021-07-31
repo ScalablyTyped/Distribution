@@ -3,27 +3,26 @@ package typings.rxjsCompat
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object delayMod {
   
-  @JSImport("rxjs-compat/operators/delay", "delay")
+  @JSImport("rxjs-compat/operators/delay", JSImport.Namespace)
   @js.native
-  def delay[T](delay: Double): js.Any = js.native
-  @JSImport("rxjs-compat/operators/delay", "delay")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def delay[T](delay: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def delay[T](
     delay: Double,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
-  @JSImport("rxjs-compat/operators/delay", "delay")
-  @js.native
-  def delay[T](delay: Date): js.Any = js.native
-  @JSImport("rxjs-compat/operators/delay", "delay")
-  @js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def delay[T](delay: Date): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
   def delay[T](
     delay: Date,
     scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-  ): js.Any = js.native
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delay.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

@@ -11,8 +11,8 @@ Deeply iterate over an object and redact secret values by replacing them with a 
 | Full name          | redact-secrets |
 | Keywords           | secret, hidden, redact, redacting, iterate, walk, traverse, obj, object, json |
 | # releases         | 0 |
-| # dependents       | 8 |
-| # downloads        | 3952417 |
+| # dependents       | 10 |
+| # downloads        | 4866518 |
 | # stars            | 0 |
 
 ## Links

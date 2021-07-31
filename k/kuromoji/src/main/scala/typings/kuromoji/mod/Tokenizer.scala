@@ -2,25 +2,23 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tokenizer[T] extends StObject {
   
-  var formatter: Formatter[T] = js.native
+  var formatter: Formatter[T]
   
-  def getLattice(text: String): ViterbiLattice = js.native
+  def getLattice(text: String): ViterbiLattice
   
-  var token_info_dictionary: TokenInfoDictionary = js.native
+  var token_info_dictionary: TokenInfoDictionary
   
-  def tokenize(text: String): js.Array[T] = js.native
+  def tokenize(text: String): js.Array[T]
   
-  var unknown_dictionary: UnknownDictionary = js.native
+  var unknown_dictionary: UnknownDictionary
   
-  var viterbi_builder: ViterbiBuilder = js.native
+  var viterbi_builder: ViterbiBuilder
   
-  var viterbi_searcher: ViterbiSearcher = js.native
+  var viterbi_searcher: ViterbiSearcher
 }
 object Tokenizer {
   
@@ -39,7 +37,7 @@ object Tokenizer {
   }
   
   @scala.inline
-  implicit class TokenizerMutableBuilder[Self <: Tokenizer[_], T] (val x: Self with Tokenizer[T]) extends AnyVal {
+  implicit class TokenizerMutableBuilder[Self <: Tokenizer[?], T] (val x: Self & Tokenizer[T]) extends AnyVal {
     
     @scala.inline
     def setFormatter(value: Formatter[T]): Self = StObject.set(x, "formatter", value.asInstanceOf[js.Any])

@@ -3,15 +3,13 @@ package typings.monacoEditor.mod.languages
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokens extends StObject {
   
-  val data: Uint32Array = js.native
+  val data: Uint32Array
   
-  val resultId: js.UndefOr[String] = js.native
+  val resultId: js.UndefOr[String] = js.undefined
 }
 object SemanticTokens {
   

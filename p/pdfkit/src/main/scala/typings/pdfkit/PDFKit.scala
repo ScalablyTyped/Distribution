@@ -43,27 +43,25 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PDFKit {
   
-  @js.native
   trait DocumentInfo extends StObject {
     
-    var Author: js.UndefOr[String] = js.native
+    var Author: js.UndefOr[String] = js.undefined
     
-    var CreationDate: js.UndefOr[Date] = js.native
+    var CreationDate: js.UndefOr[Date] = js.undefined
     
-    var Creator: js.UndefOr[String] = js.native
+    var Creator: js.UndefOr[String] = js.undefined
     
-    var Keywords: js.UndefOr[String] = js.native
+    var Keywords: js.UndefOr[String] = js.undefined
     
-    var ModDate: js.UndefOr[Date] = js.native
+    var ModDate: js.UndefOr[Date] = js.undefined
     
-    var Producer: js.UndefOr[String] = js.native
+    var Producer: js.UndefOr[String] = js.undefined
     
-    var Title: js.UndefOr[String] = js.native
+    var Title: js.UndefOr[String] = js.undefined
   }
   object DocumentInfo {
     
@@ -120,22 +118,21 @@ object PDFKit {
     }
   }
   
-  @js.native
   trait DocumentPermissions extends StObject {
     
-    var annotating: js.UndefOr[Boolean] = js.native
+    var annotating: js.UndefOr[Boolean] = js.undefined
     
-    var contentAccessibility: js.UndefOr[Boolean] = js.native
+    var contentAccessibility: js.UndefOr[Boolean] = js.undefined
     
-    var copying: js.UndefOr[Boolean] = js.native
+    var copying: js.UndefOr[Boolean] = js.undefined
     
-    var documentAssembly: js.UndefOr[Boolean] = js.native
+    var documentAssembly: js.UndefOr[Boolean] = js.undefined
     
-    var fillingForms: js.UndefOr[Boolean] = js.native
+    var fillingForms: js.UndefOr[Boolean] = js.undefined
     
-    var modifying: js.UndefOr[Boolean] = js.native
+    var modifying: js.UndefOr[Boolean] = js.undefined
     
-    var printing: js.UndefOr[lowResolution | highResolution] = js.native
+    var printing: js.UndefOr[lowResolution | highResolution] = js.undefined
   }
   object DocumentPermissions {
     
@@ -194,34 +191,33 @@ object PDFKit {
   
   object Mixins {
     
-    @js.native
     trait AnnotationOption extends StObject {
       
-      var A: js.UndefOr[js.Any] = js.native
+      var A: js.UndefOr[js.Any] = js.undefined
       
-      var B: js.UndefOr[js.Any] = js.native
+      var B: js.UndefOr[js.Any] = js.undefined
       
-      var Border: js.UndefOr[js.Array[Double]] = js.native
+      var Border: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var C: js.UndefOr[js.Any] = js.native
+      var C: js.UndefOr[js.Any] = js.undefined
       
-      var Contents: js.UndefOr[String] = js.native
+      var Contents: js.UndefOr[String] = js.undefined
       
-      var DA: js.UndefOr[String] = js.native
+      var DA: js.UndefOr[String] = js.undefined
       
-      var L: js.UndefOr[js.Any] = js.native
+      var L: js.UndefOr[js.Any] = js.undefined
       
-      var Name: js.UndefOr[String] = js.native
+      var Name: js.UndefOr[String] = js.undefined
       
-      var QuadPoints: js.UndefOr[js.Array[Double]] = js.native
+      var QuadPoints: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var Rect: js.UndefOr[js.Any] = js.native
+      var Rect: js.UndefOr[js.Any] = js.undefined
       
-      var SubType: js.UndefOr[String] = js.native
+      var SubType: js.UndefOr[String] = js.undefined
       
-      var Type: js.UndefOr[String] = js.native
+      var Type: js.UndefOr[String] = js.undefined
       
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
     }
     object AnnotationOption {
       
@@ -324,30 +320,29 @@ object PDFKit {
     //     example:   "red"                  [R, G, B]                  [C, M, Y, K]
     type ColorValue = String | PDFGradient | (js.Tuple3[Double, Double, Double]) | (js.Tuple4[Double, Double, Double, Double])
     
-    @js.native
     trait ImageOption extends StObject {
       
-      var align: js.UndefOr[center | right] = js.native
+      var align: js.UndefOr[center | right] = js.undefined
       
-      var cover: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var cover: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
       
-      var destination: js.UndefOr[String] = js.native
+      var destination: js.UndefOr[String] = js.undefined
       
       /** Two elements array specifying dimensions(w,h)  */
-      var fit: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+      var fit: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
       
-      var goTo: js.UndefOr[AnnotationOption] = js.native
+      var goTo: js.UndefOr[AnnotationOption] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var link: js.UndefOr[AnnotationOption] = js.native
+      var link: js.UndefOr[AnnotationOption] = js.undefined
       
       /** Scale percentage */
-      var scale: js.UndefOr[Double] = js.native
+      var scale: js.UndefOr[Double] = js.undefined
       
-      var valign: js.UndefOr[center | bottom] = js.native
+      var valign: js.UndefOr[center | bottom] = js.undefined
       
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object ImageOption {
       
@@ -1449,15 +1444,16 @@ object PDFKit {
       
       def font(buffer: Buffer): this.type = js.native
       def font(src: String): this.type = js.native
-      def font(src: String, family: js.UndefOr[scala.Nothing], size: Double): this.type = js.native
       def font(src: String, family: String): this.type = js.native
       def font(src: String, family: String, size: Double): this.type = js.native
+      def font(src: String, family: Unit, size: Double): this.type = js.native
       
       def fontSize(size: Double): this.type = js.native
       
       def registerFont(name: String): this.type = js.native
-      def registerFont(name: String, src: js.UndefOr[PDFFontSource], family: String): this.type = js.native
+      def registerFont(name: String, src: Unit, family: String): this.type = js.native
       def registerFont(name: String, src: PDFFontSource): this.type = js.native
+      def registerFont(name: String, src: PDFFontSource, family: String): this.type = js.native
     }
     
     type PDFFontSource = String | Buffer | Uint8Array | ArrayBuffer
@@ -1470,13 +1466,13 @@ object PDFKit {
         */
       def image(src: js.Any): this.type = js.native
       def image(src: js.Any, options: ImageOption): this.type = js.native
-      def image(src: js.Any, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], options: ImageOption): this.type = js.native
-      def image(src: js.Any, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-      def image(src: js.Any, x: js.UndefOr[scala.Nothing], y: Double, options: ImageOption): this.type = js.native
       def image(src: js.Any, x: Double): this.type = js.native
-      def image(src: js.Any, x: Double, y: js.UndefOr[scala.Nothing], options: ImageOption): this.type = js.native
       def image(src: js.Any, x: Double, y: Double): this.type = js.native
       def image(src: js.Any, x: Double, y: Double, options: ImageOption): this.type = js.native
+      def image(src: js.Any, x: Double, y: Unit, options: ImageOption): this.type = js.native
+      def image(src: js.Any, x: Unit, y: Double): this.type = js.native
+      def image(src: js.Any, x: Unit, y: Double, options: ImageOption): this.type = js.native
+      def image(src: js.Any, x: Unit, y: Unit, options: ImageOption): this.type = js.native
     }
     
     @js.native
@@ -1487,20 +1483,15 @@ object PDFKit {
       
       def lineGap(lineGap: Double): this.type = js.native
       
-      def list(list: js.Array[String | _]): this.type = js.native
-      def list(list: js.Array[String | _], options: TextOptions): this.type = js.native
-      def list(
-        list: js.Array[String | _],
-        x: js.UndefOr[scala.Nothing],
-        y: js.UndefOr[scala.Nothing],
-        options: TextOptions
-      ): this.type = js.native
-      def list(list: js.Array[String | _], x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-      def list(list: js.Array[String | _], x: js.UndefOr[scala.Nothing], y: Double, options: TextOptions): this.type = js.native
-      def list(list: js.Array[String | _], x: Double): this.type = js.native
-      def list(list: js.Array[String | _], x: Double, y: js.UndefOr[scala.Nothing], options: TextOptions): this.type = js.native
-      def list(list: js.Array[String | _], x: Double, y: Double): this.type = js.native
-      def list(list: js.Array[String | _], x: Double, y: Double, options: TextOptions): this.type = js.native
+      def list(list: js.Array[String | js.Any]): this.type = js.native
+      def list(list: js.Array[String | js.Any], options: TextOptions): this.type = js.native
+      def list(list: js.Array[String | js.Any], x: Double): this.type = js.native
+      def list(list: js.Array[String | js.Any], x: Double, y: Double): this.type = js.native
+      def list(list: js.Array[String | js.Any], x: Double, y: Double, options: TextOptions): this.type = js.native
+      def list(list: js.Array[String | js.Any], x: Double, y: Unit, options: TextOptions): this.type = js.native
+      def list(list: js.Array[String | js.Any], x: Unit, y: Double): this.type = js.native
+      def list(list: js.Array[String | js.Any], x: Unit, y: Double, options: TextOptions): this.type = js.native
+      def list(list: js.Array[String | js.Any], x: Unit, y: Unit, options: TextOptions): this.type = js.native
       
       def moveDown(): this.type = js.native
       def moveDown(line: Double): this.type = js.native
@@ -1510,13 +1501,13 @@ object PDFKit {
       
       def text(text: String): this.type = js.native
       def text(text: String, options: TextOptions): this.type = js.native
-      def text(text: String, x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], options: TextOptions): this.type = js.native
-      def text(text: String, x: js.UndefOr[scala.Nothing], y: Double): this.type = js.native
-      def text(text: String, x: js.UndefOr[scala.Nothing], y: Double, options: TextOptions): this.type = js.native
       def text(text: String, x: Double): this.type = js.native
-      def text(text: String, x: Double, y: js.UndefOr[scala.Nothing], options: TextOptions): this.type = js.native
       def text(text: String, x: Double, y: Double): this.type = js.native
       def text(text: String, x: Double, y: Double, options: TextOptions): this.type = js.native
+      def text(text: String, x: Double, y: Unit, options: TextOptions): this.type = js.native
+      def text(text: String, x: Unit, y: Double): this.type = js.native
+      def text(text: String, x: Unit, y: Double, options: TextOptions): this.type = js.native
+      def text(text: String, x: Unit, y: Unit, options: TextOptions): this.type = js.native
       
       def widthOfString(text: String): Double = js.native
       def widthOfString(text: String, options: TextOptions): Double = js.native
@@ -1540,15 +1531,20 @@ object PDFKit {
       def ellipse(x: Double, y: Double, r1: Double, r2: Double): this.type = js.native
       
       def fill(): this.type = js.native
-      def fill(color: js.UndefOr[ColorValue], rule: RuleValue): this.type = js.native
+      def fill(color: Unit, rule: RuleValue): this.type = js.native
       def fill(color: ColorValue): this.type = js.native
+      def fill(color: ColorValue, rule: RuleValue): this.type = js.native
       def fill(rule: RuleValue): this.type = js.native
       
       def fillAndStroke(): this.type = js.native
-      def fillAndStroke(fillColor: js.UndefOr[ColorValue], strokeColor: js.UndefOr[ColorValue], rule: RuleValue): this.type = js.native
-      def fillAndStroke(fillColor: js.UndefOr[ColorValue], strokeColor: ColorValue): this.type = js.native
+      def fillAndStroke(fillColor: Unit, strokeColor: Unit, rule: RuleValue): this.type = js.native
+      def fillAndStroke(fillColor: Unit, strokeColor: ColorValue): this.type = js.native
+      def fillAndStroke(fillColor: Unit, strokeColor: ColorValue, rule: RuleValue): this.type = js.native
       def fillAndStroke(fillColor: ColorValue): this.type = js.native
       def fillAndStroke(fillColor: ColorValue, rule: RuleValue): this.type = js.native
+      def fillAndStroke(fillColor: ColorValue, strokeColor: Unit, rule: RuleValue): this.type = js.native
+      def fillAndStroke(fillColor: ColorValue, strokeColor: ColorValue): this.type = js.native
+      def fillAndStroke(fillColor: ColorValue, strokeColor: ColorValue, rule: RuleValue): this.type = js.native
       def fillAndStroke(rule: RuleValue): this.type = js.native
       
       def lineCap(c: String): this.type = js.native
@@ -1582,9 +1578,9 @@ object PDFKit {
       def save(): this.type = js.native
       
       def scale(xFactor: Double): this.type = js.native
-      def scale(xFactor: Double, yFactor: js.UndefOr[scala.Nothing], options: Origin): this.type = js.native
       def scale(xFactor: Double, yFactor: Double): this.type = js.native
       def scale(xFactor: Double, yFactor: Double, options: Origin): this.type = js.native
+      def scale(xFactor: Double, yFactor: Unit, options: Origin): this.type = js.native
       
       def stroke(): this.type = js.native
       def stroke(color: ColorValue): this.type = js.native
@@ -1619,74 +1615,73 @@ object PDFKit {
       def nonzero: typings.pdfkit.pdfkitStrings.nonzero = "nonzero".asInstanceOf[typings.pdfkit.pdfkitStrings.nonzero]
     }
     
-    @js.native
     trait TextOptions extends StObject {
       
       /** the alignment of the text (center, justify, left, right) */
       //TODO check this
-      var align: js.UndefOr[center | justify | left | right | String] = js.native
+      var align: js.UndefOr[center | justify | left | right | String] = js.undefined
       
       /** the vertical alignment of the text with respect to its insertion point */
       var baseline: js.UndefOr[
             Double | `svg-middle` | middle | `svg-central` | bottom | ideographic | alphabetic | mathematical | hanging | top
-          ] = js.native
+          ] = js.undefined
       
       /** the amount of space between each character in the text */
-      var characterSpacing: js.UndefOr[Double] = js.native
+      var characterSpacing: js.UndefOr[Double] = js.undefined
       
       /** the amount of space between each column (1/4 inch by default) */
-      var columnGap: js.UndefOr[Double] = js.native
+      var columnGap: js.UndefOr[Double] = js.undefined
       
       /**  the number of columns to flow the text into */
-      var columns: js.UndefOr[Double] = js.native
+      var columns: js.UndefOr[Double] = js.undefined
       
       /** whether the text segment will be followed immediately by another segment. Useful for changing styling in the middle of a paragraph. */
-      var continued: js.UndefOr[Boolean] = js.native
+      var continued: js.UndefOr[Boolean] = js.undefined
       
       /** The character to display at the end of the text when it is too long. Set to true to use the default character. */
-      var ellipsis: js.UndefOr[Boolean | String] = js.native
+      var ellipsis: js.UndefOr[Boolean | String] = js.undefined
       
       /** an array of OpenType feature tags to apply. If not provided, a set of defaults is used. */
-      var features: js.UndefOr[js.Array[OpenTypeFeatures]] = js.native
+      var features: js.UndefOr[js.Array[OpenTypeFeatures]] = js.undefined
       
       /** whether to fill the text (true by default) */
-      var fill: js.UndefOr[Boolean] = js.native
+      var fill: js.UndefOr[Boolean] = js.undefined
       
       /**  The maximum height that text should be clipped to */
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
       /** The amount in PDF points (72 per inch) to indent each paragraph of text */
-      var indent: js.UndefOr[Double] = js.native
+      var indent: js.UndefOr[Double] = js.undefined
       
       /**  Set to false to disable line wrapping all together */
-      var lineBreak: js.UndefOr[Boolean] = js.native
+      var lineBreak: js.UndefOr[Boolean] = js.undefined
       
       /** the amount of space between each line of text */
-      var lineGap: js.UndefOr[Double] = js.native
+      var lineGap: js.UndefOr[Double] = js.undefined
       
       /** A URL to link this text to (shortcut to create an annotation) */
-      var link: js.UndefOr[String] = js.native
+      var link: js.UndefOr[String] = js.undefined
       
       /** whether to slant the text (angle in degrees or true) */
-      var oblique: js.UndefOr[Boolean | Double] = js.native
+      var oblique: js.UndefOr[Boolean | Double] = js.undefined
       
       /** the amount of space between each paragraph of text */
-      var paragraphGap: js.UndefOr[Double] = js.native
+      var paragraphGap: js.UndefOr[Double] = js.undefined
       
       /** whether to strike out the text */
-      var strike: js.UndefOr[Boolean] = js.native
+      var strike: js.UndefOr[Boolean] = js.undefined
       
       /**  whether to stroke the text */
-      var stroke: js.UndefOr[Boolean] = js.native
+      var stroke: js.UndefOr[Boolean] = js.undefined
       
       /** whether to underline the text */
-      var underline: js.UndefOr[Boolean] = js.native
+      var underline: js.UndefOr[Boolean] = js.undefined
       
       /** The width that text should be wrapped to (by default, the page width minus the left and right margin) */
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
       
       /** the amount of space between each word in the text */
-      var wordSpacing: js.UndefOr[Double] = js.native
+      var wordSpacing: js.UndefOr[Double] = js.undefined
     }
     object TextOptions {
       
@@ -1838,11 +1833,12 @@ object PDFKit {
     */
   @js.native
   trait PDFData
-    extends Instantiable1[/* data */ js.Array[js.Any], PDFData] {
+    extends StObject
+       with Instantiable1[/* data */ js.Array[js.Any], PDFData] {
     
     def byteAt(index: Double): js.Any = js.native
     
-    def read(length: Double): js.Array[_] = js.native
+    def read(length: Double): js.Array[js.Any] = js.native
     
     def readBool(): Boolean = js.native
     
@@ -1864,11 +1860,11 @@ object PDFKit {
     
     def readUInt32(): Double = js.native
     
-    def slice(start: Double, end: Double): js.Array[_] = js.native
+    def slice(start: Double, end: Double): js.Array[js.Any] = js.native
     
     def stringAt(pos: Double, length: Double): String = js.native
     
-    def write(bytes: js.Array[_]): Unit = js.native
+    def write(bytes: js.Array[js.Any]): Unit = js.native
     
     def writeBool(`val`: Boolean): Boolean = js.native
     
@@ -1893,7 +1889,8 @@ object PDFKit {
   
   @js.native
   trait PDFDocument
-    extends ReadableStream
+    extends StObject
+       with ReadableStream
        with PDFAnnotation
        with PDFColor
        with PDFImage
@@ -1959,32 +1956,31 @@ object PDFKit {
     var y: Double = js.native
   }
   
-  @js.native
   trait PDFDocumentOptions extends StObject {
     
-    var autoFirstPage: js.UndefOr[Boolean] = js.native
+    var autoFirstPage: js.UndefOr[Boolean] = js.undefined
     
-    var bufferPages: js.UndefOr[Boolean] = js.native
+    var bufferPages: js.UndefOr[Boolean] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var info: js.UndefOr[DocumentInfo] = js.native
+    var info: js.UndefOr[DocumentInfo] = js.undefined
     
-    var layout: js.UndefOr[portrait | landscape] = js.native
+    var layout: js.UndefOr[portrait | landscape] = js.undefined
     
-    var margin: js.UndefOr[Double] = js.native
+    var margin: js.UndefOr[Double] = js.undefined
     
-    var margins: js.UndefOr[Bottom] = js.native
+    var margins: js.UndefOr[Bottom] = js.undefined
     
-    var ownerPassword: js.UndefOr[String] = js.native
+    var ownerPassword: js.UndefOr[String] = js.undefined
     
-    var pdfVersion: js.UndefOr[`1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3`] = js.native
+    var pdfVersion: js.UndefOr[`1Dot3` | `1Dot4` | `1Dot5` | `1Dot6` | `1Dot7` | `1Dot7ext3`] = js.undefined
     
-    var permissions: js.UndefOr[DocumentPermissions] = js.native
+    var permissions: js.UndefOr[DocumentPermissions] = js.undefined
     
-    var size: js.UndefOr[js.Array[Double] | String] = js.native
+    var size: js.UndefOr[js.Array[Double] | String] = js.undefined
     
-    var userPassword: js.UndefOr[String] = js.native
+    var userPassword: js.UndefOr[String] = js.undefined
   }
   object PDFDocumentOptions {
     
@@ -2076,7 +2072,8 @@ object PDFKit {
   
   @js.native
   trait PDFGradient
-    extends Instantiable1[/* document */ js.Any, PDFGradient] {
+    extends StObject
+       with Instantiable1[/* document */ js.Any, PDFGradient] {
     
     @JSName("apply")
     def apply(): Unit = js.native
@@ -2084,44 +2081,43 @@ object PDFKit {
     def embed(): Unit = js.native
     
     def stop(pos: Double): PDFGradient = js.native
-    def stop(pos: Double, color: js.UndefOr[scala.Nothing], opacity: Double): PDFGradient = js.native
     def stop(pos: Double, color: String): PDFGradient = js.native
     def stop(pos: Double, color: String, opacity: Double): PDFGradient = js.native
+    def stop(pos: Double, color: Unit, opacity: Double): PDFGradient = js.native
     def stop(pos: Double, color: PDFGradient): PDFGradient = js.native
     def stop(pos: Double, color: PDFGradient, opacity: Double): PDFGradient = js.native
   }
   
   /** PDFReference - represents a reference to another object in the PDF object heirarchy */
-  @js.native
   trait PDFKitReference extends StObject {
     
-    var chunks: js.Array[_] = js.native
+    var chunks: js.Array[js.Any]
     
-    var compress: Boolean = js.native
+    var compress: Boolean
     
-    var data: Annots = js.native
+    var data: Annots
     
-    var deflate: js.Any = js.native
+    var deflate: js.Any
     
-    var document: PDFDocument = js.native
+    var document: PDFDocument
     
-    def end(chunk: js.Any): Unit = js.native
+    def end(chunk: js.Any): Unit
     
-    var gen: Double = js.native
+    var gen: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    def initDeflate(): Unit = js.native
+    def initDeflate(): Unit
     
-    var uncompressedLength: Double = js.native
+    var uncompressedLength: Double
     
-    def write(chunk: js.Any): Unit = js.native
+    def write(chunk: js.Any): Unit
   }
   object PDFKitReference {
     
     @scala.inline
     def apply(
-      chunks: js.Array[_],
+      chunks: js.Array[js.Any],
       compress: Boolean,
       data: Annots,
       deflate: js.Any,
@@ -2141,7 +2137,7 @@ object PDFKit {
     implicit class PDFKitReferenceMutableBuilder[Self <: PDFKitReference] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChunks(value: js.Array[_]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
+      def setChunks(value: js.Array[js.Any]): Self = StObject.set(x, "chunks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChunksVarargs(value: js.Any*): Self = StObject.set(x, "chunks", js.Array(value :_*))
@@ -2180,7 +2176,8 @@ object PDFKit {
   
   @js.native
   trait PDFLinearGradient
-    extends PDFGradient
+    extends StObject
+       with PDFGradient
        with Instantiable5[
           /* document */ js.Any, 
           /* x1 */ Double, 
@@ -2192,49 +2189,48 @@ object PDFKit {
     
     def opacityGradient(): PDFLinearGradient = js.native
     
-    def shader(fn: js.Function0[_]): js.Any = js.native
+    def shader(fn: js.Function0[js.Any]): js.Any = js.native
   }
   
   /**
     * Represent a single page in the PDF document
     */
-  @js.native
   trait PDFPage extends StObject {
     
-    var annotations: js.Any = js.native
+    var annotations: js.Any
     
-    var content: PDFKitReference = js.native
+    var content: PDFKitReference
     
     /**
       * The page dictionnary
       */
-    var dictionary: PDFKitReference = js.native
+    var dictionary: PDFKitReference
     
-    var document: PDFDocument = js.native
+    var document: PDFDocument
     
-    def end(): Unit = js.native
+    def end(): Unit
     
-    var ext_gstates: js.Any = js.native
+    var ext_gstates: js.Any
     
-    var fonts: js.Any = js.native
+    var fonts: js.Any
     
-    var height: Double = js.native
+    var height: Double
     
-    var layout: String = js.native
+    var layout: String
     
-    var margins: Bottom = js.native
+    var margins: Bottom
     
-    def maxY(): Double = js.native
+    def maxY(): Double
     
-    var patterns: js.Any = js.native
+    var patterns: js.Any
     
-    var size: String = js.native
+    var size: String
     
-    var width: Double = js.native
+    var width: Double
     
-    def write(chunk: js.Any): Unit = js.native
+    def write(chunk: js.Any): Unit
     
-    var xobjects: js.Any = js.native
+    var xobjects: js.Any
   }
   object PDFPage {
     
@@ -2316,7 +2312,8 @@ object PDFKit {
   
   @js.native
   trait PDFRadialGradient
-    extends PDFGradient
+    extends StObject
+       with PDFGradient
        with Instantiable5[
           /* document */ js.Any, 
           /* x1 */ Double, 
@@ -2328,6 +2325,6 @@ object PDFKit {
     
     def opacityGradient(): PDFRadialGradient = js.native
     
-    def shader(fn: js.Function0[_]): js.Any = js.native
+    def shader(fn: js.Function0[js.Any]): js.Any = js.native
   }
 }

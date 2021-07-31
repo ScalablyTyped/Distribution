@@ -2,21 +2,19 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MerchantAccountUpdateRequest extends StObject {
   
-  var business: js.UndefOr[MerchantBusinessRequest] = js.native
+  var business: js.UndefOr[MerchantBusinessRequest] = js.undefined
   
-  var funding: MerchantFunding = js.native
+  var funding: MerchantFunding
   
-  var id: String = js.native
+  var id: String
   
-  var individual: MerchantIndividualRequest = js.native
+  var individual: MerchantIndividualRequest
   
-  var masterMerchantAccountId: String = js.native
+  var masterMerchantAccountId: String
 }
 object MerchantAccountUpdateRequest {
   

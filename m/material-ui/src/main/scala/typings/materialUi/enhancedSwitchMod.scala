@@ -4,7 +4,6 @@ import typings.materialUi.MaterialUI.Switches.CommonEnhancedSwitchProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object enhancedSwitchMod {
@@ -18,8 +17,9 @@ object enhancedSwitchMod {
   trait EnhancedSwitch
     extends Component[EnhancedSwitchProps, js.Object, js.Any]
   
-  @js.native
-  trait EnhancedSwitchProps extends CommonEnhancedSwitchProps[EnhancedSwitch]
+  trait EnhancedSwitchProps
+    extends StObject
+       with CommonEnhancedSwitchProps[EnhancedSwitch]
   object EnhancedSwitchProps {
     
     @scala.inline

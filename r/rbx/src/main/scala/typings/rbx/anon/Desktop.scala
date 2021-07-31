@@ -4,36 +4,34 @@ import typings.rbx.columnMod.ColumnBreakpointOptions
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Desktop[TAsComponent /* <: ElementType[_] */] extends StObject {
+trait Desktop[TAsComponent /* <: ElementType[js.Any] */] extends StObject {
   
-  var as: js.UndefOr[TAsComponent] = js.native
+  var as: js.UndefOr[TAsComponent] = js.undefined
   
-  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var desktop: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var mobile: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var tablet: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var touch: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var touch: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   
-  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.native
+  var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.undefined
 }
 object Desktop {
   
   @scala.inline
-  def apply[TAsComponent /* <: ElementType[_] */](): Desktop[TAsComponent] = {
+  def apply[TAsComponent /* <: ElementType[js.Any] */](): Desktop[TAsComponent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[Desktop[TAsComponent]]
   }
   
   @scala.inline
-  implicit class DesktopMutableBuilder[Self <: Desktop[_], TAsComponent /* <: ElementType[_] */] (val x: Self with Desktop[TAsComponent]) extends AnyVal {
+  implicit class DesktopMutableBuilder[Self <: Desktop[?], TAsComponent /* <: ElementType[js.Any] */] (val x: Self & Desktop[TAsComponent]) extends AnyVal {
     
     @scala.inline
     def setAs(value: TAsComponent): Self = StObject.set(x, "as", value.asInstanceOf[js.Any])

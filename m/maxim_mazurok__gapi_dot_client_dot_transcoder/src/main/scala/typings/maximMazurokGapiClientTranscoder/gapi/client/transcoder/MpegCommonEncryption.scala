@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientTranscoder.gapi.client.transcoder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MpegCommonEncryption extends StObject {
   
   /** Required. 128 bit Key ID represented as lowercase hexadecimal digits for use with common encryption. */
-  var keyId: js.UndefOr[String] = js.native
+  var keyId: js.UndefOr[String] = js.undefined
   
   /** Required. Specify the encryption scheme. Supported encryption schemes: - 'cenc' - 'cbcs' */
-  var scheme: js.UndefOr[String] = js.native
+  var scheme: js.UndefOr[String] = js.undefined
 }
 object MpegCommonEncryption {
   

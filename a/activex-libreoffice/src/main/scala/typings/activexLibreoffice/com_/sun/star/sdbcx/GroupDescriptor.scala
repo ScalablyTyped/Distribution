@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is used to create a new group in a database.
   * @see com.sun.star.sdbcx.Group
   */
-@js.native
-trait GroupDescriptor extends Descriptor
+trait GroupDescriptor
+  extends StObject
+     with Descriptor
 object GroupDescriptor {
   
   @scala.inline

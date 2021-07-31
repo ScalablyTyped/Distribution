@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FavoriteTemplatesContentItem extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait FavoriteTemplatesContentItem extends StObject {
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
-  var favoritedDate: js.UndefOr[String] = js.native
+  var favoritedDate: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the template.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object FavoriteTemplatesContentItem {
   

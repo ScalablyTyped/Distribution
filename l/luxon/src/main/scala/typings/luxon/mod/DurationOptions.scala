@@ -2,17 +2,15 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationOptions extends StObject {
   
-  var conversionAccuracy: js.UndefOr[ConversionAccuracy] = js.native
+  var conversionAccuracy: js.UndefOr[ConversionAccuracy] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var numberingSystem: js.UndefOr[NumberingSystem] = js.native
+  var numberingSystem: js.UndefOr[NumberingSystem] = js.undefined
 }
 object DurationOptions {
   

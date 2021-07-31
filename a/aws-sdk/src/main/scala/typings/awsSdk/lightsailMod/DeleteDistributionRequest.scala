@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDistributionRequest extends StObject {
   
   /**
     * The name of the distribution to delete. Use the GetDistributions action to get a list of distribution names that you can specify.
     */
-  var distributionName: js.UndefOr[ResourceName] = js.native
+  var distributionName: js.UndefOr[ResourceName] = js.undefined
 }
 object DeleteDistributionRequest {
   

@@ -2,7 +2,6 @@ package typings.vegaTypings.scaleMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.heatmap
 */
 trait RangeEnum
-  extends _RangeBand
+  extends StObject
+     with _RangeBand
      with _RangeScheme
 object RangeEnum {
   

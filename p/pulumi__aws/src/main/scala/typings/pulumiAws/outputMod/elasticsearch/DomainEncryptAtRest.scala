@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainEncryptAtRest extends StObject {
   
   /**
     * Specifies whether Amazon Cognito authentication with Kibana is enabled or not
     */
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
   /**
     * The KMS key id to encrypt the Elasticsearch domain with. If not specified then it defaults to using the `aws/es` service KMS key.
     */
-  var kmsKeyId: String = js.native
+  var kmsKeyId: String
 }
 object DomainEncryptAtRest {
   

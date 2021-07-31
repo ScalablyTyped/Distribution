@@ -3,31 +3,29 @@ package typings.simplecrawler
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ActualDataSize extends StObject {
     
-    var actualDataSize: Double = js.native
+    var actualDataSize: Double
     
-    var code: Double = js.native
+    var code: Double
     
-    var contentLength: Double = js.native
+    var contentLength: Double
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var downloadTime: Double = js.native
+    var downloadTime: Double
     
-    var headers: js.Object = js.native
+    var headers: js.Object
     
-    var requestLatency: Double = js.native
+    var requestLatency: Double
     
-    var requestTime: Double = js.native
+    var requestTime: Double
     
-    var sentIncorrectSize: Boolean = js.native
+    var sentIncorrectSize: Boolean
   }
   object ActualDataSize {
     
@@ -79,25 +77,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var Accept: String = js.native
+    var Accept: String
     
-    var `Accept-Encoding`: js.UndefOr[String] = js.native
+    var `Accept-Encoding`: js.UndefOr[String] = js.undefined
     
-    var Authorization: js.UndefOr[String] = js.native
+    var Authorization: js.UndefOr[String] = js.undefined
     
-    var Host: String = js.native
+    var Host: String
     
-    var `Proxy-Authorization`: js.UndefOr[String] = js.native
+    var `Proxy-Authorization`: js.UndefOr[String] = js.undefined
     
-    var Referer: js.UndefOr[String] = js.native
+    var Referer: js.UndefOr[String] = js.undefined
     
-    var `User-Agent`: String = js.native
+    var `User-Agent`: String
     
-    var cookie: js.UndefOr[String] = js.native
+    var cookie: js.UndefOr[String] = js.undefined
   }
   object Dictkey {
     

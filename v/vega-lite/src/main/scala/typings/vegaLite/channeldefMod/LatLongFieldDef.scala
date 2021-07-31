@@ -8,11 +8,9 @@ import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/channeldef.FieldDefBase<F, null> & vega-lite.vega-lite/build/src/guide.TitleMixins & std.Partial<vega-lite.vega-lite/build/src/channeldef.TypeMixins<'quantitative'>> */
-@js.native
 trait LatLongFieldDef[F /* <: Field */] extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`aggregate`](https://vega.github.io/vega-lite/docs/aggregate.html) documentation.
     */
-  var aggregate: js.UndefOr[Aggregate | HiddenCompositeAggregate] = js.native
+  var aggregate: js.UndefOr[Aggregate | HiddenCompositeAggregate] = js.undefined
   
   /**
     * For rect-based marks (`rect`, `bar`, and `image`), mark size relative to bandwidth of [band scales](https://vega.github.io/vega-lite/docs/scale.html#band), bins or time units. If set to `1`, the mark size is set to the bandwidth, the bin interval, or the time unit interval. If set to `0.5`, the mark size is half of the bandwidth or the time unit interval.
@@ -33,7 +31,7 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
     * @minimum 0
     * @maximum 1
     */
-  var band: js.UndefOr[Double] = js.native
+  var band: js.UndefOr[Double] = js.undefined
   
   /**
     * A flag for binning a `quantitative` field, [an object defining binning parameters](https://vega.github.io/vega-lite/docs/bin.html#params), or indicating that the data for `x` or `y` channel are binned before they are imported into Vega-Lite (`"binned"`).
@@ -46,7 +44,7 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`bin`](https://vega.github.io/vega-lite/docs/bin.html) documentation.
     */
-  var bin: js.UndefOr[Null] = js.native
+  var bin: js.UndefOr[Null] = js.undefined
   
   /**
     * __Required.__ A string defining the name of the field from which to pull a data value
@@ -60,7 +58,7 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
     * See more details about escaping in the [field documentation](https://vega.github.io/vega-lite/docs/field.html).
     * 2) `field` is not required if `aggregate` is `count`.
     */
-  var field: js.UndefOr[F] = js.native
+  var field: js.UndefOr[F] = js.undefined
   
   /**
     * Time unit (e.g., `year`, `yearmonth`, `month`, `hours`) for a temporal field.
@@ -70,7 +68,7 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
     *
     * __See also:__ [`timeUnit`](https://vega.github.io/vega-lite/docs/timeunit.html) documentation.
     */
-  var timeUnit: js.UndefOr[TimeUnit | TimeUnitParams] = js.native
+  var timeUnit: js.UndefOr[TimeUnit | TimeUnitParams] = js.undefined
   
   /**
     * A title for the field. If `null`, the title will be removed.
@@ -83,9 +81,9 @@ trait LatLongFieldDef[F /* <: Field */] extends StObject {
     *
     * 2) If both field definition's `title` and axis, header, or legend `title` are defined, axis/header/legend title will be used.
     */
-  var title: js.UndefOr[Text | Null | SignalRef] = js.native
+  var title: js.UndefOr[Text | Null | SignalRef] = js.undefined
   
-  var `type`: js.UndefOr[quantitative] = js.native
+  var `type`: js.UndefOr[quantitative] = js.undefined
 }
 object LatLongFieldDef {
   
@@ -96,7 +94,7 @@ object LatLongFieldDef {
   }
   
   @scala.inline
-  implicit class LatLongFieldDefMutableBuilder[Self <: LatLongFieldDef[_], F /* <: Field */] (val x: Self with LatLongFieldDef[F]) extends AnyVal {
+  implicit class LatLongFieldDefMutableBuilder[Self <: LatLongFieldDef[?], F /* <: Field */] (val x: Self & LatLongFieldDef[F]) extends AnyVal {
     
     @scala.inline
     def setAggregate(value: Aggregate | HiddenCompositeAggregate): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])

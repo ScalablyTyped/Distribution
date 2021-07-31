@@ -2,7 +2,6 @@ package typings.firebaseDatabase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventAccumulatorMod {
@@ -19,7 +18,7 @@ object eventAccumulatorMod {
     
     var condition: js.Function = js.native
     
-    var eventData: js.Array[_] = js.native
+    var eventData: js.Array[js.Any] = js.native
     
     def onEvent(cb: js.Function): Unit = js.native
     
@@ -41,8 +40,11 @@ object eventAccumulatorMod {
   
   object EventAccumulatorFactory {
     
-    @JSImport("@firebase/database/dist/test/helpers/EventAccumulator", "EventAccumulatorFactory.waitsForCount")
+    @JSImport("@firebase/database/dist/test/helpers/EventAccumulator", "EventAccumulatorFactory")
     @js.native
-    def waitsForCount(maxCount: js.Any): EventAccumulator = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def waitsForCount(maxCount: js.Any): EventAccumulator = ^.asInstanceOf[js.Dynamic].applyDynamic("waitsForCount")(maxCount.asInstanceOf[js.Any]).asInstanceOf[EventAccumulator]
   }
 }

@@ -6,14 +6,28 @@ import typings.firebaseAuthInteropTypes.mod.FirebaseAuthInternalName
 import typings.firebaseComponent.mod.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authTokenProviderMod {
   
   @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "EmulatorAdminTokenProvider")
   @js.native
-  class EmulatorAdminTokenProvider () extends AuthTokenProvider
+  class EmulatorAdminTokenProvider ()
+    extends StObject
+       with AuthTokenProvider {
+    
+    /* CompleteClass */
+    override def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData] = js.native
+    
+    /* CompleteClass */
+    override def notifyForInvalidToken(): Unit = js.native
+    
+    /* CompleteClass */
+    override def removeTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
+  }
   /* static members */
   object EmulatorAdminTokenProvider {
     
@@ -30,26 +44,39 @@ object authTokenProviderMod {
   
   @JSImport("@firebase/database/dist/src/core/AuthTokenProvider", "FirebaseAuthTokenProvider")
   @js.native
-  class FirebaseAuthTokenProvider protected () extends AuthTokenProvider {
+  class FirebaseAuthTokenProvider protected ()
+    extends StObject
+       with AuthTokenProvider {
     def this(app_ : FirebaseApp, authProvider_ : Provider[FirebaseAuthInternalName]) = this()
+    
+    /* CompleteClass */
+    override def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
     
     var app_ : js.Any = js.native
     
     var authProvider_ : js.Any = js.native
     
     var auth_ : js.Any = js.native
+    
+    /* CompleteClass */
+    override def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData] = js.native
+    
+    /* CompleteClass */
+    override def notifyForInvalidToken(): Unit = js.native
+    
+    /* CompleteClass */
+    override def removeTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
   }
   
-  @js.native
   trait AuthTokenProvider extends StObject {
     
-    def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
+    def addTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit
     
-    def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData] = js.native
+    def getToken(forceRefresh: Boolean): js.Promise[FirebaseAuthTokenData]
     
-    def notifyForInvalidToken(): Unit = js.native
+    def notifyForInvalidToken(): Unit
     
-    def removeTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit = js.native
+    def removeTokenChangeListener(listener: js.Function1[/* token */ String | Null, Unit]): Unit
   }
   object AuthTokenProvider {
     

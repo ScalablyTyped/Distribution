@@ -3,50 +3,49 @@ package typings.powerAssertFormatter
 import typings.powerAssertFormatter.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("power-assert-formatter", JSImport.Namespace)
-  @js.native
-  def apply(): Formatter = js.native
-  @JSImport("power-assert-formatter", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): Formatter = js.native
+  @scala.inline
+  def apply(): Formatter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Formatter]
+  @scala.inline
+  def apply(options: Options): Formatter = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Formatter]
   
-  @JSImport("power-assert-formatter", "defaultOptions")
+  @JSImport("power-assert-formatter", JSImport.Namespace)
   @js.native
-  def defaultOptions(): Options = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def defaultOptions(): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultOptions")().asInstanceOf[Options]
   
   type Formatter = js.Function1[/* powerAssertContext */ js.Any, String]
   
-  @js.native
   trait Options extends StObject {
     
-    var ambiguousEastAsianCharWidth: js.UndefOr[Double] = js.native
+    var ambiguousEastAsianCharWidth: js.UndefOr[Double] = js.undefined
     
-    var anonymous: js.UndefOr[String] = js.native
+    var anonymous: js.UndefOr[String] = js.undefined
     
-    var circular: js.UndefOr[String] = js.native
+    var circular: js.UndefOr[String] = js.undefined
     
-    var diff: js.UndefOr[js.Function] = js.native
+    var diff: js.UndefOr[js.Function] = js.undefined
     
-    var lineDiffThreshold: js.UndefOr[Double] = js.native
+    var lineDiffThreshold: js.UndefOr[Double] = js.undefined
     
-    var lineSeparator: js.UndefOr[String] = js.native
+    var lineSeparator: js.UndefOr[String] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var outputOffset: js.UndefOr[Double] = js.native
+    var outputOffset: js.UndefOr[Double] = js.undefined
     
-    var renderers: js.UndefOr[js.Array[_]] = js.native
+    var renderers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var stringify: js.UndefOr[js.Function] = js.native
+    var stringify: js.UndefOr[js.Function] = js.undefined
     
-    var widthOf: js.UndefOr[js.Function] = js.native
+    var widthOf: js.UndefOr[js.Function] = js.undefined
     
-    var writerClass: js.UndefOr[Instantiable] = js.native
+    var writerClass: js.UndefOr[Instantiable] = js.undefined
   }
   object Options {
     
@@ -108,7 +107,7 @@ object mod {
       def setOutputOffsetUndefined: Self = StObject.set(x, "outputOffset", js.undefined)
       
       @scala.inline
-      def setRenderers(value: js.Array[_]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
+      def setRenderers(value: js.Array[js.Any]): Self = StObject.set(x, "renderers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRenderersUndefined: Self = StObject.set(x, "renderers", js.undefined)

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * let it run again if a new event will be detected later.
   * @see theJobExecutor
   */
-@js.native
-trait XJobExecutor extends XInterface {
+trait XJobExecutor
+  extends StObject
+     with XInterface {
   
   /**
     * trigger event to start registered jobs
@@ -26,7 +26,7 @@ trait XJobExecutor extends XInterface {
     * special events will be defined here.
     * @param Event describe the event for which jobs can be registered and should be started
     */
-  def trigger(Event: String): Unit = js.native
+  def trigger(Event: String): Unit
 }
 object XJobExecutor {
   

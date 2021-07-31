@@ -5,15 +5,13 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Worker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Env extends StObject {
     
-    var env: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any = js.native
+    var env: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
   }
   object Env {
     
@@ -33,16 +31,16 @@ object anon {
   
   @js.native
   trait Instantiable
-    extends Instantiable1[/* filename */ scala.Nothing, Worker]
+    extends StObject
+       with Instantiable1[/* filename */ scala.Nothing, Worker]
        with Instantiable2[/* filename */ scala.Nothing, /* options */ Env, Worker]
   
-  @js.native
   trait PostMessage extends StObject {
     
     def postMessage(
       value: js.Any,
       transferList: /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-    ): js.Any = js.native
+    ): js.Any
   }
   object PostMessage {
     
@@ -64,12 +62,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ResourceLimits extends StObject {
     
     var resourceLimits: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: infer T */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object ResourceLimits {
     

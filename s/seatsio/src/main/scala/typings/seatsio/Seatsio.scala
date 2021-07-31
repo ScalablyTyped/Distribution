@@ -28,7 +28,6 @@ import typings.seatsio.seatsioStrings.WorkSans
 import typings.seatsio.seatsioStrings.`3d`
 import typings.seatsio.seatsioStrings.asymmetrical
 import typings.seatsio.seatsioStrings.bolder
-import typings.seatsio.seatsioStrings.consecutiveSeats
 import typings.seatsio.seatsioStrings.continue
 import typings.seatsio.seatsioStrings.fillEnabled
 import typings.seatsio.seatsioStrings.fillHighlightedOption
@@ -40,7 +39,6 @@ import typings.seatsio.seatsioStrings.manageTableBooking
 import typings.seatsio.seatsioStrings.manual
 import typings.seatsio.seatsioStrings.max
 import typings.seatsio.seatsioStrings.minMax
-import typings.seatsio.seatsioStrings.noOrphanSeats
 import typings.seatsio.seatsioStrings.none
 import typings.seatsio.seatsioStrings.normal
 import typings.seatsio.seatsioStrings.print
@@ -52,19 +50,17 @@ import typings.seatsio.seatsioStrings.width
 import typings.seatsio.seatsioStrings.widthAndHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Seatsio extends StObject {
   
-  var ChartManager: ChartManager = js.native
+  var ChartManager: ChartManager
   
-  var EventManager: EventManager = js.native
+  var EventManager: EventManager
   
-  var SeatingChart: SeatingChart = js.native
+  var SeatingChart: SeatingChart
   
-  var SeatingChartDesigner: SeatingChartDesigner = js.native
+  var SeatingChartDesigner: SeatingChartDesigner
 }
 object Seatsio {
   
@@ -125,16 +121,15 @@ object Seatsio {
     def unpulse(): Unit = js.native
   }
   
-  @js.native
   trait BestAvailable extends StObject {
     
-    var category: String | js.Array[String] = js.native
+    var category: String | js.Array[String]
     
-    var clearSelection: Boolean = js.native
+    var clearSelection: Boolean
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var ticketTypes: StringDictionary[Double] = js.native
+    var ticketTypes: StringDictionary[Double]
   }
   object BestAvailable {
     
@@ -178,18 +173,17 @@ object Seatsio {
   */
   trait BookableObject extends StObject
   
-  @js.native
   trait Category extends StObject {
     
-    var accessible: Boolean = js.native
+    var accessible: Boolean
     
-    var color: String = js.native
+    var color: String
     
-    var key: Double = js.native
+    var key: Double
     
-    var label: String = js.native
+    var label: String
     
-    var pricing: Pricing = js.native
+    var pricing: Pricing
   }
   object Category {
     
@@ -219,16 +213,15 @@ object Seatsio {
     }
   }
   
-  @js.native
   trait CategoryConfig extends StObject {
     
-    var accessible: js.UndefOr[Boolean] = js.native
+    var accessible: js.UndefOr[Boolean] = js.undefined
     
-    var color: String = js.native
+    var color: String
     
-    var key: Double = js.native
+    var key: Double
     
-    var label: String = js.native
+    var label: String
   }
   object CategoryConfig {
     
@@ -258,10 +251,9 @@ object Seatsio {
     }
   }
   
-  @js.native
   trait CategoryList extends StObject {
     
-    def get(key: String): Category = js.native
+    def get(key: String): Category
   }
   object CategoryList {
     
@@ -279,18 +271,17 @@ object Seatsio {
     }
   }
   
-  @js.native
   trait ChangeableSeatingChartConfig extends StObject {
     
-    var availableCategories: js.UndefOr[js.Array[String]] = js.native
+    var availableCategories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var extraConfig: js.UndefOr[ExtraConfig] = js.native
+    var extraConfig: js.UndefOr[ExtraConfig] = js.undefined
     
-    var filteredCategories: js.UndefOr[js.Array[String]] = js.native
+    var filteredCategories: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxSelectedObjects: js.UndefOr[Double | js.Array[typings.seatsio.anon.Category]] = js.native
+    var maxSelectedObjects: js.UndefOr[Double | js.Array[typings.seatsio.anon.Category]] = js.undefined
     
-    var numberOfPlacesToSelect: js.UndefOr[Double] = js.native
+    var numberOfPlacesToSelect: js.UndefOr[Double] = js.undefined
     
     var objectColor: js.UndefOr[
         js.Function3[
@@ -299,7 +290,7 @@ object Seatsio {
           /* extraConfig */ ExtraConfig, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
     var objectLabel: js.UndefOr[
         js.Function3[
@@ -308,13 +299,13 @@ object Seatsio {
           /* extraConfig */ ExtraConfig, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var pricing: js.UndefOr[js.Array[PricingConfig]] = js.native
+    var pricing: js.UndefOr[js.Array[PricingConfig]] = js.undefined
     
-    var ticketListings: js.UndefOr[js.Array[TicketListing]] = js.native
+    var ticketListings: js.UndefOr[js.Array[TicketListing]] = js.undefined
     
-    var unavailableCategories: js.UndefOr[js.Array[String]] = js.native
+    var unavailableCategories: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ChangeableSeatingChartConfig {
     
@@ -412,7 +403,9 @@ object Seatsio {
   }
   
   @js.native
-  trait ChartManager extends // tslint:disable-next-line:no-misused-new
+  trait ChartManager
+    extends StObject
+       with // tslint:disable-next-line:no-misused-new
   Instantiable1[/* config */ ChartManagerConfig, ChartManager] {
     
     def destroy(): Unit = js.native
@@ -420,56 +413,55 @@ object Seatsio {
     def render(): ChartManager = js.native
   }
   
-  @js.native
   trait ChartManagerConfig extends StObject {
     
-    var chart: String = js.native
+    var chart: String
     
-    var colorScheme: js.UndefOr[ColorScheme] = js.native
+    var colorScheme: js.UndefOr[ColorScheme] = js.undefined
     
-    var colors: js.UndefOr[Colors] = js.native
+    var colors: js.UndefOr[Colors] = js.undefined
     
-    var divId: String = js.native
+    var divId: String
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var messages: js.UndefOr[StringDictionary[String]] = js.native
+    var messages: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var mode: manageRulesets = js.native
+    var mode: manageRulesets
     
-    var onChartRendered: js.UndefOr[js.Function1[/* chart */ ChartManager, Unit]] = js.native
+    var onChartRendered: js.UndefOr[js.Function1[/* chart */ ChartManager, Unit]] = js.undefined
     
-    var onChartRenderingFailed: js.UndefOr[js.Function1[/* chart */ ChartManager, Unit]] = js.native
+    var onChartRenderingFailed: js.UndefOr[js.Function1[/* chart */ ChartManager, Unit]] = js.undefined
     
-    var onFullScreenClosed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFullScreenClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFullScreenOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFullScreenOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onObjectClicked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.native
+    var onObjectClicked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.undefined
     
     var onObjectDeselected: js.UndefOr[
         js.Function2[/* object */ BookableObject, /* deselectedTicketType */ js.UndefOr[Price], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onObjectSelected: js.UndefOr[
         js.Function2[/* object */ BookableObject, /* selectedTicketType */ js.UndefOr[Price], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var secretKey: String = js.native
+    var secretKey: String
     
-    var showFullScreenButton: js.UndefOr[Boolean] = js.native
+    var showFullScreenButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[Style] = js.native
+    var style: js.UndefOr[Style] = js.undefined
     
-    var stylePreset: js.UndefOr[StylePreset] = js.native
+    var stylePreset: js.UndefOr[StylePreset] = js.undefined
     
-    var tooltipInfo: js.UndefOr[js.Function1[/* object */ BookableObject, String]] = js.native
+    var tooltipInfo: js.UndefOr[js.Function1[/* object */ BookableObject, String]] = js.undefined
   }
   object ChartManagerConfig {
     
     @scala.inline
-    def apply(chart: String, divId: String, mode: manageRulesets, secretKey: String): ChartManagerConfig = {
-      val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], divId = divId.asInstanceOf[js.Any], mode = mode.asInstanceOf[js.Any], secretKey = secretKey.asInstanceOf[js.Any])
+    def apply(chart: String, divId: String, secretKey: String): ChartManagerConfig = {
+      val __obj = js.Dynamic.literal(chart = chart.asInstanceOf[js.Any], divId = divId.asInstanceOf[js.Any], mode = "manageRulesets", secretKey = secretKey.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChartManagerConfig]
     }
     
@@ -594,14 +586,13 @@ object Seatsio {
     def light: typings.seatsio.seatsioStrings.light = "light".asInstanceOf[typings.seatsio.seatsioStrings.light]
   }
   
-  @js.native
   trait Colors extends StObject {
     
-    var colorSelected: js.UndefOr[String] = js.native
+    var colorSelected: js.UndefOr[String] = js.undefined
     
-    var colorTitle: js.UndefOr[String] = js.native
+    var colorTitle: js.UndefOr[String] = js.undefined
     
-    var cursorTooltipBackgroundColor: js.UndefOr[String] = js.native
+    var cursorTooltipBackgroundColor: js.UndefOr[String] = js.undefined
   }
   object Colors {
     
@@ -634,12 +625,11 @@ object Seatsio {
     }
   }
   
-  @js.native
   trait DataPerEvent extends StObject {
     
-    var extraData: js.UndefOr[js.Any] = js.native
+    var extraData: js.UndefOr[js.Any] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object DataPerEvent {
     
@@ -664,7 +654,9 @@ object Seatsio {
   }
   
   @js.native
-  trait EventManager extends // tslint:disable-next-line:no-misused-new
+  trait EventManager
+    extends StObject
+       with // tslint:disable-next-line:no-misused-new
   Instantiable1[/* config */ EventManagerConfig, EventManager] {
     
     def destroy(): Unit = js.native
@@ -672,50 +664,49 @@ object Seatsio {
     def render(): EventManager = js.native
   }
   
-  @js.native
   trait EventManagerConfig extends StObject {
     
-    var colorScheme: js.UndefOr[ColorScheme] = js.native
+    var colorScheme: js.UndefOr[ColorScheme] = js.undefined
     
-    var colors: js.UndefOr[Colors] = js.native
+    var colors: js.UndefOr[Colors] = js.undefined
     
-    var divId: String = js.native
+    var divId: String
     
-    var event: String = js.native
+    var event: String
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var messages: js.UndefOr[StringDictionary[String]] = js.native
+    var messages: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var mode: manageObjectStatuses | manageForSaleConfig | manageTableBooking | manageChannels = js.native
+    var mode: manageObjectStatuses | manageForSaleConfig | manageTableBooking | manageChannels
     
-    var onChartRendered: js.UndefOr[js.Function1[/* chart */ EventManager, Unit]] = js.native
+    var onChartRendered: js.UndefOr[js.Function1[/* chart */ EventManager, Unit]] = js.undefined
     
-    var onChartRenderingFailed: js.UndefOr[js.Function1[/* chart */ EventManager, Unit]] = js.native
+    var onChartRenderingFailed: js.UndefOr[js.Function1[/* chart */ EventManager, Unit]] = js.undefined
     
-    var onFullScreenClosed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFullScreenClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFullScreenOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFullScreenOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onObjectClicked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.native
+    var onObjectClicked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.undefined
     
     var onObjectDeselected: js.UndefOr[
         js.Function2[/* object */ BookableObject, /* deselectedTicketType */ js.UndefOr[Price], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onObjectSelected: js.UndefOr[
         js.Function2[/* object */ BookableObject, /* selectedTicketType */ js.UndefOr[Price], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var secretKey: String = js.native
+    var secretKey: String
     
-    var showFullScreenButton: js.UndefOr[Boolean] = js.native
+    var showFullScreenButton: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[Style] = js.native
+    var style: js.UndefOr[Style] = js.undefined
     
-    var stylePreset: js.UndefOr[StylePreset] = js.native
+    var stylePreset: js.UndefOr[StylePreset] = js.undefined
     
-    var tooltipInfo: js.UndefOr[js.Function1[/* object */ BookableObject, String]] = js.native
+    var tooltipInfo: js.UndefOr[js.Function1[/* object */ BookableObject, String]] = js.undefined
   }
   object EventManagerConfig {
     
@@ -841,7 +832,8 @@ object Seatsio {
   
   @js.native
   trait GeneralAdmissionArea
-    extends BaseObject
+    extends StObject
+       with BaseObject
        with BookableObject {
     
     var capacity: Double = js.native
@@ -858,18 +850,19 @@ object Seatsio {
     var selectionPerTicketType: StringDictionary[Double] = js.native
   }
   
-  @js.native
-  trait GeneralAdmissionDataPerEvent extends DataPerEvent {
+  trait GeneralAdmissionDataPerEvent
+    extends StObject
+       with DataPerEvent {
     
-    var holds: StringDictionary[DictticketType] = js.native
+    var holds: StringDictionary[DictticketType]
     
-    var numBooked: `5` = js.native
+    var numBooked: `5`
   }
   object GeneralAdmissionDataPerEvent {
     
     @scala.inline
-    def apply(holds: StringDictionary[DictticketType], numBooked: `5`, status: String): GeneralAdmissionDataPerEvent = {
-      val __obj = js.Dynamic.literal(holds = holds.asInstanceOf[js.Any], numBooked = numBooked.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(holds: StringDictionary[DictticketType], status: String): GeneralAdmissionDataPerEvent = {
+      val __obj = js.Dynamic.literal(holds = holds.asInstanceOf[js.Any], numBooked = 5, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[GeneralAdmissionDataPerEvent]
     }
     
@@ -884,14 +877,13 @@ object Seatsio {
     }
   }
   
-  @js.native
   trait Pricing extends StObject {
     
-    var formattedPrice: String = js.native
+    var formattedPrice: String
     
-    var price: Double = js.native
+    var price: Double
     
-    var ticketType: js.UndefOr[String] = js.native
+    var ticketType: js.UndefOr[String] = js.undefined
   }
   object Pricing {
     
@@ -938,12 +930,13 @@ object Seatsio {
     }
   }
   
-  @js.native
-  trait PricingConfigMulti extends PricingConfig {
+  trait PricingConfigMulti
+    extends StObject
+       with PricingConfig {
     
-    var category: String = js.native
+    var category: String
     
-    var ticketTypes: js.Array[LabelPrice] = js.native
+    var ticketTypes: js.Array[LabelPrice]
   }
   object PricingConfigMulti {
     
@@ -967,12 +960,13 @@ object Seatsio {
     }
   }
   
-  @js.native
-  trait PricingConfigSimple extends PricingConfig {
+  trait PricingConfigSimple
+    extends StObject
+       with PricingConfig {
     
-    var category: String = js.native
+    var category: String
     
-    var price: Double = js.native
+    var price: Double
   }
   object PricingConfigSimple {
     
@@ -995,7 +989,8 @@ object Seatsio {
   
   @js.native
   trait Seat
-    extends BaseObject
+    extends StObject
+       with BaseObject
        with BookableObject {
     
     var companionSeat: Boolean = js.native
@@ -1010,58 +1005,48 @@ object Seatsio {
   }
   
   @js.native
-  trait SeatingChart extends // tslint:disable-next-line:no-misused-new
+  trait SeatingChart
+    extends StObject
+       with // tslint:disable-next-line:no-misused-new
   Instantiable1[/* config */ SeatingChartConfig, SeatingChart] {
     
     def changeConfig(config: ChangeableSeatingChartConfig): Unit = js.native
     
     def clearSelection(): Unit = js.native
-    def clearSelection(successCallback: js.UndefOr[scala.Nothing], failureCallback: js.Function0[Unit]): Unit = js.native
     def clearSelection(successCallback: js.Function0[Unit]): Unit = js.native
     def clearSelection(successCallback: js.Function0[Unit], failureCallback: js.Function0[Unit]): Unit = js.native
+    def clearSelection(successCallback: Unit, failureCallback: js.Function0[Unit]): Unit = js.native
     
     var config: SeatingChartConfig = js.native
     
     def deselectCategories(categoryIds: js.Array[String]): Unit = js.native
-    def deselectCategories(
-      categoryIds: js.Array[String],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function0[Unit]
-    ): Unit = js.native
     def deselectCategories(categoryIds: js.Array[String], successCallback: js.Function0[Unit]): Unit = js.native
     def deselectCategories(
       categoryIds: js.Array[String],
       successCallback: js.Function0[Unit],
       failureCallback: js.Function0[Unit]
     ): Unit = js.native
+    def deselectCategories(categoryIds: js.Array[String], successCallback: Unit, failureCallback: js.Function0[Unit]): Unit = js.native
     
     def deselectObjects(objects: js.Array[Amount | String]): Unit = js.native
-    def deselectObjects(
-      objects: js.Array[Amount | String],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function0[Unit]
-    ): Unit = js.native
     def deselectObjects(objects: js.Array[Amount | String], successCallback: js.Function0[Unit]): Unit = js.native
     def deselectObjects(
       objects: js.Array[Amount | String],
       successCallback: js.Function0[Unit],
       failureCallback: js.Function0[Unit]
     ): Unit = js.native
+    def deselectObjects(objects: js.Array[Amount | String], successCallback: Unit, failureCallback: js.Function0[Unit]): Unit = js.native
     
     def destroy(): Unit = js.native
     
     def findObject(label: String): Unit = js.native
-    def findObject(
-      label: String,
-      successCallback: js.UndefOr[scala.Nothing],
-      objectNotFoundCallback: js.Function0[Unit]
-    ): Unit = js.native
     def findObject(label: String, successCallback: js.Function1[/* object */ BookableObject, Unit]): Unit = js.native
     def findObject(
       label: String,
       successCallback: js.Function1[/* object */ BookableObject, Unit],
       objectNotFoundCallback: js.Function0[Unit]
     ): Unit = js.native
+    def findObject(label: String, successCallback: Unit, objectNotFoundCallback: js.Function0[Unit]): Unit = js.native
     
     var holdToken: String | Null = js.native
     
@@ -1078,45 +1063,38 @@ object Seatsio {
     def selectBestAvailable(config: BestAvailable): Unit = js.native
     
     def selectCategories(categoryIds: js.Array[String]): Unit = js.native
-    def selectCategories(
-      categoryIds: js.Array[String],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function0[Unit]
-    ): Unit = js.native
     def selectCategories(categoryIds: js.Array[String], successCallback: js.Function0[Unit]): Unit = js.native
     def selectCategories(
       categoryIds: js.Array[String],
       successCallback: js.Function0[Unit],
       failureCallback: js.Function0[Unit]
     ): Unit = js.native
+    def selectCategories(categoryIds: js.Array[String], successCallback: Unit, failureCallback: js.Function0[Unit]): Unit = js.native
     
     def selectObjects(objects: js.Array[Amount | String]): Unit = js.native
-    def selectObjects(
-      objects: js.Array[Amount | String],
-      successCallback: js.UndefOr[scala.Nothing],
-      failureCallback: js.Function0[Unit]
-    ): Unit = js.native
     def selectObjects(objects: js.Array[Amount | String], successCallback: js.Function0[Unit]): Unit = js.native
     def selectObjects(
       objects: js.Array[Amount | String],
       successCallback: js.Function0[Unit],
       failureCallback: js.Function0[Unit]
     ): Unit = js.native
+    def selectObjects(objects: js.Array[Amount | String], successCallback: Unit, failureCallback: js.Function0[Unit]): Unit = js.native
     
     var selectedObjects: js.Array[String] = js.native
     
     def startNewSession(): Unit = js.native
-    def startNewSession(successCallback: js.UndefOr[scala.Nothing], failureCallback: js.Function0[Unit]): Unit = js.native
     def startNewSession(successCallback: js.Function0[Unit]): Unit = js.native
     def startNewSession(successCallback: js.Function0[Unit], failureCallback: js.Function0[Unit]): Unit = js.native
+    def startNewSession(successCallback: Unit, failureCallback: js.Function0[Unit]): Unit = js.native
     
     def zoomToSelectedObjects(): Unit = js.native
   }
   
-  @js.native
-  trait SeatingChartConfig extends ChangeableSeatingChartConfig {
+  trait SeatingChartConfig
+    extends StObject
+       with ChangeableSeatingChartConfig {
     
-    var alwaysShowSectionContents: js.UndefOr[Boolean] = js.native
+    var alwaysShowSectionContents: js.UndefOr[Boolean] = js.undefined
     
     var canGASelectionBeIncreased: js.UndefOr[
         js.Function4[
@@ -1126,49 +1104,49 @@ object Seatsio {
           /* ticketType */ String, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var categories: js.UndefOr[js.Array[CategoryConfig]] = js.native
+    var categories: js.UndefOr[js.Array[CategoryConfig]] = js.undefined
     
-    var categoryFilter: js.UndefOr[Enabled] = js.native
+    var categoryFilter: js.UndefOr[Enabled] = js.undefined
     
-    var channels: js.UndefOr[js.Array[String]] = js.native
+    var channels: js.UndefOr[js.Array[String]] = js.undefined
     
-    var chart: js.UndefOr[String] = js.native
+    var chart: js.UndefOr[String] = js.undefined
     
-    var colorScheme: js.UndefOr[ColorScheme] = js.native
+    var colorScheme: js.UndefOr[ColorScheme] = js.undefined
     
-    var colors: js.UndefOr[Colors] = js.native
+    var colors: js.UndefOr[Colors] = js.undefined
     
-    var divId: String = js.native
+    var divId: String
     
-    var event: js.UndefOr[String] = js.native
+    var event: js.UndefOr[String] = js.undefined
     
-    var events: js.UndefOr[js.Array[String]] = js.native
+    var events: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fitTo: js.UndefOr[widthAndHeight | width] = js.native
+    var fitTo: js.UndefOr[widthAndHeight | width] = js.undefined
     
-    var holdOnSelectForGAs: js.UndefOr[Boolean] = js.native
+    var holdOnSelectForGAs: js.UndefOr[Boolean] = js.undefined
     
-    var holdToken: js.UndefOr[String] = js.native
+    var holdToken: js.UndefOr[String] = js.undefined
     
-    var holdTokenInputName: js.UndefOr[String] = js.native
+    var holdTokenInputName: js.UndefOr[String] = js.undefined
     
-    var isObjectVisible: js.UndefOr[js.Function2[/* object */ BookableObject, /* extraConfig */ ExtraConfig, String]] = js.native
+    var isObjectVisible: js.UndefOr[js.Function2[/* object */ BookableObject, /* extraConfig */ ExtraConfig, String]] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var legend: js.UndefOr[HideNonSelectableCategories] = js.native
+    var legend: js.UndefOr[HideNonSelectableCategories] = js.undefined
     
-    var loading: js.UndefOr[String] = js.native
+    var loading: js.UndefOr[String] = js.undefined
     
-    var messages: js.UndefOr[StringDictionary[String]] = js.native
+    var messages: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var mode: js.UndefOr[normal | static | print] = js.native
+    var mode: js.UndefOr[normal | static | print] = js.undefined
     
-    var multiSelectEnabled: js.UndefOr[Boolean] = js.native
+    var multiSelectEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var objectCategories: js.UndefOr[StringDictionary[String]] = js.native
+    var objectCategories: js.UndefOr[StringDictionary[String]] = js.undefined
     
     var objectCategory: js.UndefOr[
         js.Function4[
@@ -1178,7 +1156,7 @@ object Seatsio {
           /* extraConfig */ ExtraConfig, 
           Category
         ]
-      ] = js.native
+      ] = js.undefined
     
     var objectIcon: js.UndefOr[
         js.Function3[
@@ -1187,27 +1165,27 @@ object Seatsio {
           /* extraConfig */ ExtraConfig, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var objectTooltip: js.UndefOr[ConfirmSelectionOnMobile] = js.native
+    var objectTooltip: js.UndefOr[ConfirmSelectionOnMobile] = js.undefined
     
-    var objectWithoutCategorySelectable: js.UndefOr[Boolean] = js.native
+    var objectWithoutCategorySelectable: js.UndefOr[Boolean] = js.undefined
     
-    var objectWithoutPricingSelectable: js.UndefOr[Boolean] = js.native
+    var objectWithoutPricingSelectable: js.UndefOr[Boolean] = js.undefined
     
     var onBestAvailableSelected: js.UndefOr[
         js.Function2[/* objects */ js.Array[BookableObject], /* nextToEachOther */ Boolean | Null, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onBestAvailableSelectionFailed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBestAvailableSelectionFailed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onChartRendered: js.UndefOr[js.Function1[/* chart */ SeatingChart, Unit]] = js.native
+    var onChartRendered: js.UndefOr[js.Function1[/* chart */ SeatingChart, Unit]] = js.undefined
     
-    var onChartRenderingFailed: js.UndefOr[js.Function1[/* chart */ SeatingChart, Unit]] = js.native
+    var onChartRenderingFailed: js.UndefOr[js.Function1[/* chart */ SeatingChart, Unit]] = js.undefined
     
-    var onFullScreenClosed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFullScreenClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFullScreenOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFullScreenOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     var onHoldFailed: js.UndefOr[
         js.Function2[
@@ -1215,7 +1193,7 @@ object Seatsio {
           /* ticketTypes */ js.UndefOr[js.Array[TicketType]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onHoldSucceeded: js.UndefOr[
         js.Function2[
@@ -1223,23 +1201,23 @@ object Seatsio {
           /* ticketTypes */ js.UndefOr[js.Array[TicketType]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onHoldTokenExpired: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHoldTokenExpired: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onObjectClicked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.native
+    var onObjectClicked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.undefined
     
     var onObjectDeselected: js.UndefOr[
         js.Function2[/* object */ BookableObject, /* deselectedTicketType */ js.UndefOr[Price], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var onObjectMouseOut: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.native
+    var onObjectMouseOut: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.undefined
     
-    var onObjectMouseOver: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.native
+    var onObjectMouseOver: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.undefined
     
     var onObjectSelected: js.UndefOr[
         js.Function2[/* object */ BookableObject, /* selectedTicketType */ js.UndefOr[Price], Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onReleaseHoldFailed: js.UndefOr[
         js.Function2[
@@ -1247,7 +1225,7 @@ object Seatsio {
           /* ticketTypes */ js.UndefOr[js.Array[TicketType]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onReleaseHoldSucceeded: js.UndefOr[
         js.Function2[
@@ -1255,17 +1233,17 @@ object Seatsio {
           /* ticketTypes */ js.UndefOr[js.Array[TicketType]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onSelectedObjectBooked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.native
+    var onSelectedObjectBooked: js.UndefOr[js.Function1[/* object */ BookableObject, Unit]] = js.undefined
     
-    var onSelectionInvalid: js.UndefOr[js.Function1[/* violations */ js.Array[Violations], Unit]] = js.native
+    var onSelectionInvalid: js.UndefOr[js.Function1[/* violations */ js.Array[Violations], Unit]] = js.undefined
     
-    var onSelectionValid: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSelectionValid: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var priceFormatter: js.UndefOr[js.Function1[/* price */ Double, String]] = js.native
+    var priceFormatter: js.UndefOr[js.Function1[/* price */ Double, String]] = js.undefined
     
-    var priceLevelsTooltipMessage: js.UndefOr[String] = js.native
+    var priceLevelsTooltipMessage: js.UndefOr[String] = js.undefined
     
     var sectionColor: js.UndefOr[
         js.Function3[
@@ -1274,43 +1252,43 @@ object Seatsio {
           /* extraConfig */ ExtraConfig, 
           String
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var selectBestAvailable: js.UndefOr[BestAvailable] = js.native
+    var selectBestAvailable: js.UndefOr[BestAvailable] = js.undefined
     
-    var selectedObjects: js.UndefOr[js.Array[String | Label]] = js.native
+    var selectedObjects: js.UndefOr[js.Array[String | Label]] = js.undefined
     
-    var selectedObjectsInputName: js.UndefOr[String] = js.native
+    var selectedObjectsInputName: js.UndefOr[String] = js.undefined
     
-    var selectionValidators: js.UndefOr[js.Array[SelectionValidator]] = js.native
+    var selectionValidators: js.UndefOr[js.Array[SelectionValidator]] = js.undefined
     
-    var session: js.UndefOr[continue | start | manual | none] = js.native
+    var session: js.UndefOr[continue | start | manual | none] = js.undefined
     
-    var showActiveSectionTooltipOnMobile: js.UndefOr[Boolean] = js.native
+    var showActiveSectionTooltipOnMobile: js.UndefOr[Boolean] = js.undefined
     
-    var showFullScreenButton: js.UndefOr[Boolean] = js.native
+    var showFullScreenButton: js.UndefOr[Boolean] = js.undefined
     
-    var showLegend: js.UndefOr[Boolean] = js.native
+    var showLegend: js.UndefOr[Boolean] = js.undefined
     
-    var showMinimap: js.UndefOr[Boolean] = js.native
+    var showMinimap: js.UndefOr[Boolean] = js.undefined
     
-    var showRowLines: js.UndefOr[Boolean] = js.native
+    var showRowLines: js.UndefOr[Boolean] = js.undefined
     
-    var showViewFromYourSeatOnDesktop: js.UndefOr[Boolean] = js.native
+    var showViewFromYourSeatOnDesktop: js.UndefOr[Boolean] = js.undefined
     
-    var showViewFromYourSeatOnMobile: js.UndefOr[Boolean] = js.native
+    var showViewFromYourSeatOnMobile: js.UndefOr[Boolean] = js.undefined
     
-    var showZoomOutButtonOnMobile: js.UndefOr[Boolean] = js.native
+    var showZoomOutButtonOnMobile: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[Style] = js.native
+    var style: js.UndefOr[Style] = js.undefined
     
-    var stylePreset: js.UndefOr[StylePreset] = js.native
+    var stylePreset: js.UndefOr[StylePreset] = js.undefined
     
-    var tooltipInfo: js.UndefOr[js.Function1[/* object */ BookableObject, String]] = js.native
+    var tooltipInfo: js.UndefOr[js.Function1[/* object */ BookableObject, String]] = js.undefined
     
-    var unifiedObjectPropertiesInCallbacks: js.UndefOr[Boolean] = js.native
+    var unifiedObjectPropertiesInCallbacks: js.UndefOr[Boolean] = js.undefined
     
-    var workspaceKey: String = js.native
+    var workspaceKey: String
   }
   object SeatingChartConfig {
     
@@ -1757,7 +1735,9 @@ object Seatsio {
   }
   
   @js.native
-  trait SeatingChartDesigner extends // tslint:disable-next-line:no-misused-new
+  trait SeatingChartDesigner
+    extends StObject
+       with // tslint:disable-next-line:no-misused-new
   Instantiable1[/* config */ SeatingChartDesignerConfig, SeatingChartDesigner] {
     
     def destroy(): Unit = js.native
@@ -1765,34 +1745,33 @@ object Seatsio {
     def render(): SeatingChartDesigner = js.native
   }
   
-  @js.native
   trait SeatingChartDesignerConfig extends StObject {
     
-    var chartKey: String = js.native
+    var chartKey: String
     
-    var divId: String = js.native
+    var divId: String
     
-    var features: js.UndefOr[Disabled] = js.native
+    var features: js.UndefOr[Disabled] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var onChartCreated: js.UndefOr[js.Function1[/* chartKey */ String, Unit]] = js.native
+    var onChartCreated: js.UndefOr[js.Function1[/* chartKey */ String, Unit]] = js.undefined
     
-    var onChartPublished: js.UndefOr[js.Function1[/* chartKey */ String, Unit]] = js.native
+    var onChartPublished: js.UndefOr[js.Function1[/* chartKey */ String, Unit]] = js.undefined
     
-    var onChartUpdated: js.UndefOr[js.Function1[/* chartKey */ String, Unit]] = js.native
+    var onChartUpdated: js.UndefOr[js.Function1[/* chartKey */ String, Unit]] = js.undefined
     
-    var onDesignerRendered: js.UndefOr[js.Function1[/* designer */ SeatingChartDesigner, Unit]] = js.native
+    var onDesignerRendered: js.UndefOr[js.Function1[/* designer */ SeatingChartDesigner, Unit]] = js.undefined
     
-    var onDesignerRenderingFailed: js.UndefOr[js.Function1[/* designer */ SeatingChartDesigner, Unit]] = js.native
+    var onDesignerRenderingFailed: js.UndefOr[js.Function1[/* designer */ SeatingChartDesigner, Unit]] = js.undefined
     
-    var onExitRequested: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExitRequested: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var openDraftDrawing: js.UndefOr[Boolean] = js.native
+    var openDraftDrawing: js.UndefOr[Boolean] = js.undefined
     
-    var openLatestDrawing: js.UndefOr[Boolean] = js.native
+    var openLatestDrawing: js.UndefOr[Boolean] = js.undefined
     
-    var secretKey: String = js.native
+    var secretKey: String
   }
   object SeatingChartDesignerConfig {
     
@@ -1894,7 +1873,8 @@ object Seatsio {
   
   @js.native
   trait Section
-    extends BaseObject
+    extends StObject
+       with BaseObject
        with BookableObject {
     
     var isInteractive: Boolean = js.native
@@ -1916,34 +1896,33 @@ object Seatsio {
   object SelectionValidator {
     
     @scala.inline
-    def `0`(`type`: consecutiveSeats): typings.seatsio.anon.`0` = {
+    def `0`(): typings.seatsio.anon.`0` = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("consecutiveSeats")
       __obj.asInstanceOf[typings.seatsio.anon.`0`]
     }
     
     @scala.inline
-    def Highlight(`type`: noOrphanSeats): typings.seatsio.anon.Highlight = {
+    def Highlight(): typings.seatsio.anon.Highlight = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("noOrphanSeats")
       __obj.asInstanceOf[typings.seatsio.anon.Highlight]
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var border: js.UndefOr[thick | `3d`] = js.native
+    var border: js.UndefOr[thick | `3d`] = js.undefined
     
-    var borderRadius: js.UndefOr[none | max | asymmetrical] = js.native
+    var borderRadius: js.UndefOr[none | max | asymmetrical] = js.undefined
     
-    var buttonFace: js.UndefOr[fillEnabled | fillHighlightedOption] = js.native
+    var buttonFace: js.UndefOr[fillEnabled | fillHighlightedOption] = js.undefined
     
-    var font: js.UndefOr[Roboto | Montserrat | WorkSans | NotoSansHK | Lato] = js.native
+    var font: js.UndefOr[Roboto | Montserrat | WorkSans | NotoSansHK | Lato] = js.undefined
     
-    var fontWeight: js.UndefOr[bolder | minMax] = js.native
+    var fontWeight: js.UndefOr[bolder | minMax] = js.undefined
     
-    var padding: js.UndefOr[spacious] = js.native
+    var padding: js.UndefOr[spacious] = js.undefined
   }
   object Style {
     
@@ -2020,14 +1999,13 @@ object Seatsio {
     def leaf: typings.seatsio.seatsioStrings.leaf = "leaf".asInstanceOf[typings.seatsio.seatsioStrings.leaf]
   }
   
-  @js.native
   trait TicketListing extends StObject {
     
-    var price: Double = js.native
+    var price: Double
     
-    var quantity: Double = js.native
+    var quantity: Double
     
-    var section: String = js.native
+    var section: String
   }
   object TicketListing {
     

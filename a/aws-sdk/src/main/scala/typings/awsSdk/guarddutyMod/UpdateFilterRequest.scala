@@ -2,41 +2,39 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFilterRequest extends StObject {
   
   /**
     * Specifies the action that is to be applied to the findings that match the filter.
     */
-  var Action: js.UndefOr[FilterAction] = js.native
+  var Action: js.UndefOr[FilterAction] = js.undefined
   
   /**
     * The description of the filter.
     */
-  var Description: js.UndefOr[FilterDescription] = js.native
+  var Description: js.UndefOr[FilterDescription] = js.undefined
   
   /**
     * The unique ID of the detector that specifies the GuardDuty service where you want to update a filter.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The name of the filter.
     */
-  var FilterName: String = js.native
+  var FilterName: String
   
   /**
     * Represents the criteria to be used in the filter for querying findings.
     */
-  var FindingCriteria: js.UndefOr[typings.awsSdk.guarddutyMod.FindingCriteria] = js.native
+  var FindingCriteria: js.UndefOr[typings.awsSdk.guarddutyMod.FindingCriteria] = js.undefined
   
   /**
     * Specifies the position of the filter in the list of current filters. Also specifies the order in which this filter is applied to the findings.
     */
-  var Rank: js.UndefOr[FilterRank] = js.native
+  var Rank: js.UndefOr[FilterRank] = js.undefined
 }
 object UpdateFilterRequest {
   

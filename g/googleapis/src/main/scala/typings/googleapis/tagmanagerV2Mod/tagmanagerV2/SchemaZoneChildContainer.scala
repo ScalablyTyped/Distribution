@@ -2,24 +2,22 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a child container of a Zone.
   */
-@js.native
 trait SchemaZoneChildContainer extends StObject {
   
   /**
     * The zone&#39;s nickname for the child container.
     */
-  var nickname: js.UndefOr[String] = js.native
+  var nickname: js.UndefOr[String] = js.undefined
   
   /**
     * The child container&#39;s public id.
     */
-  var publicId: js.UndefOr[String] = js.native
+  var publicId: js.UndefOr[String] = js.undefined
 }
 object SchemaZoneChildContainer {
   

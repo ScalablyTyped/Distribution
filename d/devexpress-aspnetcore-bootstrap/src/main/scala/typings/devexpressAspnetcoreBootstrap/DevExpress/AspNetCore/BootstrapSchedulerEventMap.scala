@@ -2,55 +2,55 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapSchedulerEventMap extends ControlEventMap {
+trait BootstrapSchedulerEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var activeViewChanged: EventArgs = js.native
+  var activeViewChanged: EventArgs
   
-  var activeViewChanging: ActiveViewChangingEventArgs = js.native
+  var activeViewChanging: ActiveViewChangingEventArgs
   
-  var appointmentClick: AppointmentClickEventArgs = js.native
+  var appointmentClick: AppointmentClickEventArgs
   
-  var appointmentDeleting: AppointmentDeletingEventArgs = js.native
+  var appointmentDeleting: AppointmentDeletingEventArgs
   
-  var appointmentDoubleClick: AppointmentClickEventArgs = js.native
+  var appointmentDoubleClick: AppointmentClickEventArgs
   
-  var appointmentDrag: AppointmentDragEventArgs = js.native
+  var appointmentDrag: AppointmentDragEventArgs
   
-  var appointmentDrop: AppointmentDropEventArgs = js.native
+  var appointmentDrop: AppointmentDropEventArgs
   
-  var appointmentResize: AppointmentResizeEventArgs = js.native
+  var appointmentResize: AppointmentResizeEventArgs
   
-  var appointmentResizing: AppointmentResizingEventArgs = js.native
+  var appointmentResizing: AppointmentResizingEventArgs
   
-  var appointmentToolTipShowing: AppointmentToolTipShowingEventArgs = js.native
+  var appointmentToolTipShowing: AppointmentToolTipShowingEventArgs
   
-  var appointmentsSelectionChanged: AppointmentsSelectionEventArgs = js.native
+  var appointmentsSelectionChanged: AppointmentsSelectionEventArgs
   
-  var beginCallback: BeginCallbackEventArgs = js.native
+  var beginCallback: BeginCallbackEventArgs
   
-  var callbackError: CallbackErrorEventArgs = js.native
+  var callbackError: CallbackErrorEventArgs
   
-  var cellClick: CellClickEventArgs = js.native
+  var cellClick: CellClickEventArgs
   
-  var cellDoubleClick: CellClickEventArgs = js.native
+  var cellDoubleClick: CellClickEventArgs
   
-  var endCallback: EndCallbackEventArgs = js.native
+  var endCallback: EndCallbackEventArgs
   
-  var menuItemClicked: MenuItemClickedEventArgs = js.native
+  var menuItemClicked: MenuItemClickedEventArgs
   
-  var moreButtonClicked: MoreButtonClickedEventArgs = js.native
+  var moreButtonClicked: MoreButtonClickedEventArgs
   
-  var selectionChanged: EventArgs = js.native
+  var selectionChanged: EventArgs
   
-  var selectionChanging: EventArgs = js.native
+  var selectionChanging: EventArgs
   
-  var shortcut: ShortcutEventArgs = js.native
+  var shortcut: ShortcutEventArgs
   
-  var visibleIntervalChanged: EventArgs = js.native
+  var visibleIntervalChanged: EventArgs
 }
 object BootstrapSchedulerEventMap {
   

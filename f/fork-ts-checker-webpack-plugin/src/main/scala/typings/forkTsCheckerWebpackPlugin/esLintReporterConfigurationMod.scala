@@ -4,33 +4,33 @@ import typings.forkTsCheckerWebpackPlugin.esLintReporterOptionsMod.EsLintReporte
 import typings.forkTsCheckerWebpackPlugin.eslintMod.CLIEngineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esLintReporterConfigurationMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/eslint-reporter/EsLintReporterConfiguration", "createEsLintReporterConfiguration")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/eslint-reporter/EsLintReporterConfiguration", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def createEsLintReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-  ): EsLintReporterConfiguration = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/eslint-reporter/EsLintReporterConfiguration", "createEsLintReporterConfiguration")
-  @js.native
+  ): EsLintReporterConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporterConfiguration")(compiler.asInstanceOf[js.Any]).asInstanceOf[EsLintReporterConfiguration]
+  @scala.inline
   def createEsLintReporterConfiguration(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any,
     options: EsLintReporterOptions
-  ): EsLintReporterConfiguration = js.native
+  ): EsLintReporterConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("createEsLintReporterConfiguration")(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[EsLintReporterConfiguration]
   
-  @js.native
   trait EsLintReporterConfiguration extends StObject {
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
     
-    var memoryLimit: Double = js.native
+    var memoryLimit: Double
     
-    var options: CLIEngineOptions = js.native
+    var options: CLIEngineOptions
   }
   object EsLintReporterConfiguration {
     

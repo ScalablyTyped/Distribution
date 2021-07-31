@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.lambda
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FunctionDeadLetterConfig extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait FunctionDeadLetterConfig extends StObject {
     * which means allowing either the `sns:Publish` or `sqs:SendMessage` action on this ARN, depending on
     * which service is targeted.
     */
-  var targetArn: String = js.native
+  var targetArn: String
 }
 object FunctionDeadLetterConfig {
   

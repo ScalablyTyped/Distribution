@@ -2,7 +2,6 @@ package typings.progressjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,21 +33,21 @@ trait ProgressJs extends StObject {
     *
     * @param providedCallback Callback function.
     */
-  def onbeforeend(providedCallback: js.Function0[_]): ProgressJs = js.native
+  def onbeforeend(providedCallback: js.Function0[js.Any]): ProgressJs = js.native
   
   /**
     * Set a callback function to call before start the progress-bar.
     *
     * @param providedCallback Callback function.
     */
-  def onbeforestart(providedCallback: js.Function0[_]): ProgressJs = js.native
+  def onbeforestart(providedCallback: js.Function0[js.Any]): ProgressJs = js.native
   
   /**
     * Set callback function to call for each change of progress-bar.
     *
     * @param providedCallback Callback function.
     */
-  def onprogress(providedCallback: js.Function2[/* targetElement */ String, /* percent */ Double, _]): ProgressJs = js.native
+  def onprogress(providedCallback: js.Function2[/* targetElement */ String, /* percent */ Double, js.Any]): ProgressJs = js.native
   
   /**
     * Set specific percentage to progress-bar.

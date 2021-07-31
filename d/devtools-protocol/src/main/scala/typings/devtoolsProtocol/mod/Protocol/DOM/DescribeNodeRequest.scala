@@ -4,38 +4,36 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeNodeRequest extends StObject {
   
   /**
     * Identifier of the backend node.
     */
-  var backendNodeId: js.UndefOr[BackendNodeId] = js.native
+  var backendNodeId: js.UndefOr[BackendNodeId] = js.undefined
   
   /**
     * The maximum depth at which children should be retrieved, defaults to 1. Use -1 for the
     * entire subtree or provide an integer larger than 0.
     */
-  var depth: js.UndefOr[integer] = js.native
+  var depth: js.UndefOr[integer] = js.undefined
   
   /**
     * Identifier of the node.
     */
-  var nodeId: js.UndefOr[NodeId] = js.native
+  var nodeId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * JavaScript object id of the node wrapper.
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * Whether or not iframes and shadow roots should be traversed when returning the subtree
     * (default is false).
     */
-  var pierce: js.UndefOr[Boolean] = js.native
+  var pierce: js.UndefOr[Boolean] = js.undefined
 }
 object DescribeNodeRequest {
   

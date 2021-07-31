@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.table.Cell
   * @see com.sun.star.table.CellRange
   */
-@js.native
-trait CellProperties extends XPropertySet {
+trait CellProperties
+  extends StObject
+     with XPropertySet {
   
   /**
     * selects Asian character orientation in vertical orientation.
@@ -29,104 +29,104 @@ trait CellProperties extends XPropertySet {
     * If the {@link CellProperties.Orientation} property is CellOrientation::STACKED, in Asian mode only Asian characters are printed in horizontal
     * orientation instead of all characters. For other values of {@link CellProperties.Orientation} , this value is not used.
     */
-  var AsianVerticalMode: Boolean = js.native
+  var AsianVerticalMode: Boolean
   
   /** contains a description of the bottom border line of each cell. */
-  var BottomBorder: BorderLine = js.native
+  var BottomBorder: BorderLine
   
   /**
     * contains a description of the bottom border line of each cell. Preferred over {@link BorderLine}{@link BottomBorder} .
     * @since LibreOffice 3.6
     */
-  var BottomBorder2: BorderLine2 = js.native
+  var BottomBorder2: BorderLine2
   
   /** contains the cell background color. */
-  var CellBackColor: Color = js.native
+  var CellBackColor: Color
   
   /**
     * Grab bag of cell properties, used as a string-any map for interim interop purposes.
     * @since LibreOffice 4.3  This property is intentionally not handled by the ODF filter. Any member that should be handled there should be first moved out
     */
-  var CellInteropGrabBag: SafeArray[PropertyValue] = js.native
+  var CellInteropGrabBag: SafeArray[PropertyValue]
   
   /**
     * contains a description of the cell protection.
     *
     * {@link Cell} protection is active only if the sheet is protected.
     */
-  var CellProtection: typings.activexLibreoffice.com_.sun.star.util.CellProtection = js.native
+  var CellProtection: typings.activexLibreoffice.com_.sun.star.util.CellProtection
   
   /** contains the name of the style of the cell. */
-  var CellStyle: String = js.native
+  var CellStyle: String
   
   /** contains a description of the bottom left to top right diagonal line of each cell. */
-  var DiagonalBLTR: BorderLine = js.native
+  var DiagonalBLTR: BorderLine
   
   /**
     * contains a description of the bottom left to top right diagonal line of each cell. Preferred over {@link BorderLine}{@link DiagonalBLTR} .
     * @since LibreOffice 3.6
     */
-  var DiagonalBLTR2: BorderLine2 = js.native
+  var DiagonalBLTR2: BorderLine2
   
   /** contains a description of the top left to bottom right diagonal line of each cell. */
-  var DiagonalTLBR: BorderLine = js.native
+  var DiagonalTLBR: BorderLine
   
   /**
     * contains a description of the top left to bottom right diagonal line of each cell. Preferred over {@link BorderLine}{@link DiagonalTLBR} .
     * @since LibreOffice 3.6
     */
-  var DiagonalTLBR2: BorderLine2 = js.native
+  var DiagonalTLBR2: BorderLine2
   
   /** contains the horizontal alignment of the cell contents. */
-  var HoriJustify: CellHoriJustify = js.native
+  var HoriJustify: CellHoriJustify
   
   /**
     * is `TRUE` , if the cell background is transparent.
     *
     * In this case the {@link CellProperties.CellBackColor} value is not used.
     */
-  var IsCellBackgroundTransparent: Boolean = js.native
+  var IsCellBackgroundTransparent: Boolean
   
   /** is `TRUE` , if text in the cells will be wrapped automatically at the right border. */
-  var IsTextWrapped: Boolean = js.native
+  var IsTextWrapped: Boolean
   
   /** contains a description of the left border line of each cell. */
-  var LeftBorder: BorderLine = js.native
+  var LeftBorder: BorderLine
   
   /**
     * contains a description of the left border line of each cell. Preferred over {@link BorderLine}{@link LeftBorder} .
     * @since LibreOffice 3.6
     */
-  var LeftBorder2: BorderLine2 = js.native
+  var LeftBorder2: BorderLine2
   
   /**
     * contains the index of the number format that is used in the cells.
     *
     * The proper value can be determined by using the {@link com.sun.star.util.NumberFormatter} interface of the document.
     */
-  var NumberFormat: Double = js.native
+  var NumberFormat: Double
   
   /**
     * contains the orientation of the cell contents.
     *
     * If the {@link CellProperties.RotateAngle} property is non-zero, this value is not used.
     */
-  var Orientation: CellOrientation = js.native
+  var Orientation: CellOrientation
   
   /** defines the indentation of the cell contents (in 1/100 mm). */
-  var ParaIndent: Double = js.native
+  var ParaIndent: Double
   
   /** contains a description of the right border line of each cell. */
-  var RightBorder: BorderLine = js.native
+  var RightBorder: BorderLine
   
   /**
     * contains a description of the right border line of each cell. Preferred over {@link BorderLine}{@link RightBorder} .
     * @since LibreOffice 3.6
     */
-  var RightBorder2: BorderLine2 = js.native
+  var RightBorder2: BorderLine2
   
   /** defines how much the content of cells is rotated (in 1/100 degrees). */
-  var RotateAngle: Double = js.native
+  var RotateAngle: Double
   
   /**
     * defines at which edge rotated cells are aligned.
@@ -134,20 +134,20 @@ trait CellProperties extends XPropertySet {
     * changed from {@link com.sun.star.table.CellVertJustify} to long in LibO 3.5
     * @see com.sun.star.table.CellVertJustify2
     */
-  var RotateReference: Double = js.native
+  var RotateReference: Double
   
   /** contains a description of the shadow. */
-  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat = js.native
+  var ShadowFormat: typings.activexLibreoffice.com_.sun.star.table.ShadowFormat
   
   /** is `TRUE` , if the cell content will be shrunk to fit in the cell. */
-  var ShrinkToFit: Boolean = js.native
+  var ShrinkToFit: Boolean
   
   /**
     * contains a description of the cell or cell range border.
     *
     * If used with a cell range, the top, left, right, and bottom lines are at the edges of the entire range, not at the edges of the individual cell.
     */
-  var TableBorder: typings.activexLibreoffice.com_.sun.star.table.TableBorder = js.native
+  var TableBorder: typings.activexLibreoffice.com_.sun.star.table.TableBorder
   
   /**
     * contains a description of the cell or cell range border. Preferred over {@link TableBorder}{@link TableBorder} .
@@ -155,23 +155,23 @@ trait CellProperties extends XPropertySet {
     * If used with a cell range, the top, left, right, and bottom lines are at the edges of the entire range, not at the edges of the individual cell.
     * @since LibreOffice 3.6
     */
-  var TableBorder2: typings.activexLibreoffice.com_.sun.star.table.TableBorder2 = js.native
+  var TableBorder2: typings.activexLibreoffice.com_.sun.star.table.TableBorder2
   
   /** contains a description of the top border line of each cell. */
-  var TopBorder: BorderLine = js.native
+  var TopBorder: BorderLine
   
   /**
     * contains a description of the top border line of each cell. Preferred over {@link BorderLine}{@link TopBorder} .
     * @since LibreOffice 3.6
     */
-  var TopBorder2: BorderLine2 = js.native
+  var TopBorder2: BorderLine2
   
   /**
     * stores additional attributes.
     *
     * This property is used i.e. by the XML filters to load and restore unknown attributes.
     */
-  var UserDefinedAttributes: XNameContainer = js.native
+  var UserDefinedAttributes: XNameContainer
   
   /**
     * contains the vertical alignment of the cell contents.
@@ -179,7 +179,7 @@ trait CellProperties extends XPropertySet {
     * changed from {@link com.sun.star.table.CellVertJustify} to long in LibO 3.5
     * @see com.sun.star.table.CellVertJustify2
     */
-  var VertJustify: Double = js.native
+  var VertJustify: Double
 }
 object CellProperties {
   

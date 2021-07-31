@@ -10,7 +10,6 @@ import typings.vegaLite.unitMod.UnitModel
 import typings.vegaTypings.transformMod.Transforms
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackMod {
@@ -33,60 +32,61 @@ object stackMod {
   /* static members */
   object StackNode {
     
-    @JSImport("vega-lite/build/src/compile/data/stack", "StackNode.makeFromEncoding")
+    @JSImport("vega-lite/build/src/compile/data/stack", "StackNode")
     @js.native
-    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): StackNode = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("vega-lite/build/src/compile/data/stack", "StackNode.makeFromTransform")
-    @js.native
-    def makeFromTransform(parent: DataFlowNode, stackTransform: StackTransform): StackNode = js.native
+    @scala.inline
+    def makeFromEncoding(parent: DataFlowNode, model: UnitModel): StackNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromEncoding")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any])).asInstanceOf[StackNode]
+    
+    @scala.inline
+    def makeFromTransform(parent: DataFlowNode, stackTransform: StackTransform): StackNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeFromTransform")(parent.asInstanceOf[js.Any], stackTransform.asInstanceOf[js.Any])).asInstanceOf[StackNode]
   }
   
-  @js.native
   trait StackComponent extends StObject {
     
     /**
       * Output field names of each stack field.
       */
-    var as: js.Tuple2[FieldName, FieldName] = js.native
+    var as: js.Tuple2[FieldName, FieldName]
     
-    var dimensionFieldDef: js.UndefOr[PositionFieldDef[String]] = js.native
+    var dimensionFieldDef: js.UndefOr[PositionFieldDef[String]] = js.undefined
     
     /**
       * Faceted field.
       */
-    var facetby: js.Array[String] = js.native
+    var facetby: js.Array[String]
     
     /**
       * The data fields to group by.
       */
-    var groupby: js.UndefOr[js.Array[FieldName]] = js.native
+    var groupby: js.UndefOr[js.Array[FieldName]] = js.undefined
     
     /**
       * Whether to impute the data before stacking. Used only in makeFromEncoding.
       */
-    var impute: js.UndefOr[Boolean] = js.native
+    var impute: js.UndefOr[Boolean] = js.undefined
     
     /** Mode for stacking marks.
       */
-    var offset: StackOffset = js.native
+    var offset: StackOffset
     
     /**
       * Field that determines order of levels in the stacked charts.
       * Used in both but optional in transform.
       */
-    var sort: SortFields = js.native
+    var sort: SortFields
     
     /**
       * Stack measure's field. Used in makeFromEncoding.
       */
-    var stackField: String = js.native
+    var stackField: String
     
     /**
       * Level of detail fields for each level in the stacked charts such as color or detail.
       * Used in makeFromEncoding.
       */
-    var stackby: js.UndefOr[js.Array[String]] = js.native
+    var stackby: js.UndefOr[js.Array[String]] = js.undefined
   }
   object StackComponent {
     

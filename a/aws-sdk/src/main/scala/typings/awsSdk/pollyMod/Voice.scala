@@ -2,46 +2,44 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Voice extends StObject {
   
   /**
     * Additional codes for languages available for the specified voice in addition to its default language.  For example, the default language for Aditi is Indian English (en-IN) because it was first used for that language. Since Aditi is bilingual and fluent in both Indian English and Hindi, this parameter would show the code hi-IN.
     */
-  var AdditionalLanguageCodes: js.UndefOr[LanguageCodeList] = js.native
+  var AdditionalLanguageCodes: js.UndefOr[LanguageCodeList] = js.undefined
   
   /**
     * Gender of the voice.
     */
-  var Gender: js.UndefOr[typings.awsSdk.pollyMod.Gender] = js.native
+  var Gender: js.UndefOr[typings.awsSdk.pollyMod.Gender] = js.undefined
   
   /**
     * Amazon Polly assigned voice ID. This is the ID that you specify when calling the SynthesizeSpeech operation.
     */
-  var Id: js.UndefOr[VoiceId] = js.native
+  var Id: js.UndefOr[VoiceId] = js.undefined
   
   /**
     * Language code of the voice.
     */
-  var LanguageCode: js.UndefOr[typings.awsSdk.pollyMod.LanguageCode] = js.native
+  var LanguageCode: js.UndefOr[typings.awsSdk.pollyMod.LanguageCode] = js.undefined
   
   /**
     * Human readable name of the language in English.
     */
-  var LanguageName: js.UndefOr[typings.awsSdk.pollyMod.LanguageName] = js.native
+  var LanguageName: js.UndefOr[typings.awsSdk.pollyMod.LanguageName] = js.undefined
   
   /**
     * Name of the voice (for example, Salli, Kendra, etc.). This provides a human readable voice name that you might display in your application.
     */
-  var Name: js.UndefOr[VoiceName] = js.native
+  var Name: js.UndefOr[VoiceName] = js.undefined
   
   /**
     * Specifies which engines (standard or neural) that are supported by a given voice.
     */
-  var SupportedEngines: js.UndefOr[EngineList] = js.native
+  var SupportedEngines: js.UndefOr[EngineList] = js.undefined
 }
 object Voice {
   

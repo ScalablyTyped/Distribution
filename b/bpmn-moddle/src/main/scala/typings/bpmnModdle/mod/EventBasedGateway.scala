@@ -2,18 +2,18 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventBasedGateway extends Gateway {
+trait EventBasedGateway
+  extends StObject
+     with Gateway {
   
   /**
     * @default Exclusive
     */
-  var eventGatewayType: EventBasedGatewayType = js.native
+  var eventGatewayType: EventBasedGatewayType
   
-  var instantiate: Boolean = js.native
+  var instantiate: Boolean
 }
 object EventBasedGateway {
   

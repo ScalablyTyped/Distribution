@@ -5,10 +5,13 @@ import typings.bunyan.mod.Serializer
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bunyan {
+  
+  @JSImport("restify", "bunyan")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * A Bunyan stream to capture records in a ring buffer and only pass through
@@ -25,9 +28,8 @@ object bunyan {
   }
   
   /** create a bunyan logger */
-  @JSImport("restify", "bunyan.createLogger")
-  @js.native
-  def createLogger(name: String): typings.bunyan.mod.^ = js.native
+  @scala.inline
+  def createLogger(name: String): typings.bunyan.mod.^ = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(name.asInstanceOf[js.Any]).asInstanceOf[typings.bunyan.mod.^]
   
   /* Inlined bunyan.bunyan.Serializers & {  err :bunyan.bunyan.Serializer,   req :bunyan.bunyan.Serializer,   res :bunyan.bunyan.Serializer,   client_req :bunyan.bunyan.Serializer,   client_res :bunyan.bunyan.Serializer} */
   object serializers {
@@ -39,52 +41,46 @@ object bunyan {
     @JSImport("restify", "bunyan.serializers.client_req")
     @js.native
     def clientReq: Serializer = js.native
-    @JSImport("restify", "bunyan.serializers.client_req")
-    @js.native
-    def clientReq(input: js.Any): js.Any = js.native
     
+    @scala.inline
+    def clientReq(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("client_req")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @scala.inline
     def clientReq_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("client_req")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.client_res")
     @js.native
     def clientRes: Serializer = js.native
-    @JSImport("restify", "bunyan.serializers.client_res")
-    @js.native
-    def clientRes(input: js.Any): js.Any = js.native
     
+    @scala.inline
+    def clientRes(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("client_res")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @scala.inline
     def clientRes_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("client_res")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.err")
     @js.native
     def err: Serializer = js.native
-    @JSImport("restify", "bunyan.serializers.err")
-    @js.native
-    def err(input: js.Any): js.Any = js.native
+    @scala.inline
+    def err(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("err")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @scala.inline
     def err_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("err")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.req")
     @js.native
     def req: Serializer = js.native
-    @JSImport("restify", "bunyan.serializers.req")
-    @js.native
-    def req(input: js.Any): js.Any = js.native
+    @scala.inline
+    def req(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("req")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @scala.inline
     def req_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("req")(x.asInstanceOf[js.Any])
     
     @JSImport("restify", "bunyan.serializers.res")
     @js.native
     def res: Serializer = js.native
-    @JSImport("restify", "bunyan.serializers.res")
-    @js.native
-    def res(input: js.Any): js.Any = js.native
+    @scala.inline
+    def res(input: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("res")(input.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     @scala.inline
     def res_=(x: Serializer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("res")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait RequestCaptureOptions extends StObject {
     
     /**
@@ -92,28 +88,28 @@ object bunyan {
       * dumping. I.e. dump records logged without "req_id" field. Default
       * false.
       */
-    var dumpDefault: js.UndefOr[Boolean] = js.native
+    var dumpDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The level at which to trigger dumping captured records. Defaults to
       * bunyan.WARN.
       */
-    var level: js.UndefOr[LogLevel] = js.native
+    var level: js.UndefOr[LogLevel] = js.undefined
     
     /** Number of records to capture. Default 100. */
-    var maxRecords: js.UndefOr[Double] = js.native
+    var maxRecords: js.UndefOr[Double] = js.undefined
     
     /**
       * Number of simultaneous request id capturing buckets to maintain.
       * Default 1000.
       */
-    var maxRequestIds: js.UndefOr[Double] = js.native
+    var maxRequestIds: js.UndefOr[Double] = js.undefined
     
     /** The stream to which to write when dumping captured records. */
-    var stream: js.UndefOr[typings.bunyan.mod.Stream] = js.native
+    var stream: js.UndefOr[typings.bunyan.mod.Stream] = js.undefined
     
     /** The streams to which to write when dumping captured records. */
-    var streams: js.UndefOr[js.Array[typings.bunyan.mod.Stream]] = js.native
+    var streams: js.UndefOr[js.Array[typings.bunyan.mod.Stream]] = js.undefined
   }
   object RequestCaptureOptions {
     

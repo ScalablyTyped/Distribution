@@ -2,51 +2,49 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveSchemaVersionMetadataResponse extends StObject {
   
   /**
     * The latest version of the schema.
     */
-  var LatestVersion: js.UndefOr[LatestSchemaVersionBoolean] = js.native
+  var LatestVersion: js.UndefOr[LatestSchemaVersionBoolean] = js.undefined
   
   /**
     * The metadata key.
     */
-  var MetadataKey: js.UndefOr[MetadataKeyString] = js.native
+  var MetadataKey: js.UndefOr[MetadataKeyString] = js.undefined
   
   /**
     * The value of the metadata key.
     */
-  var MetadataValue: js.UndefOr[MetadataValueString] = js.native
+  var MetadataValue: js.UndefOr[MetadataValueString] = js.undefined
   
   /**
     * The name of the registry.
     */
-  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var RegistryName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the schema.
     */
-  var SchemaArn: js.UndefOr[GlueResourceArn] = js.native
+  var SchemaArn: js.UndefOr[GlueResourceArn] = js.undefined
   
   /**
     * The name of the schema.
     */
-  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.native
+  var SchemaName: js.UndefOr[SchemaRegistryNameString] = js.undefined
   
   /**
     * The version ID for the schema version.
     */
-  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.native
+  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.undefined
   
   /**
     * The version number of the schema.
     */
-  var VersionNumber: js.UndefOr[VersionLongNumber] = js.native
+  var VersionNumber: js.UndefOr[VersionLongNumber] = js.undefined
 }
 object RemoveSchemaVersionMetadataResponse {
   

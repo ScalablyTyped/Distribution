@@ -3,69 +3,69 @@ package typings.eventHooksWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("event-hooks-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
   type EventHooksPlugin = Plugin
   
-  @js.native
   trait Options extends StObject {
     
-    var additionalPass: js.UndefOr[js.Function0[Unit]] = js.native
+    var additionalPass: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterCompile: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterCompile: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterEmit: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterEmit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterEnvironment: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterEnvironment: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterPlugins: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterPlugins: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterResolvers: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterResolvers: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeCompile: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeCompile: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeRun: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeRun: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var compilation: js.UndefOr[js.Function0[Unit]] = js.native
+    var compilation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var compile: js.UndefOr[js.Function0[Unit]] = js.native
+    var compile: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var contextModuleFactory: js.UndefOr[js.Function0[Unit]] = js.native
+    var contextModuleFactory: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var done: js.UndefOr[js.Function0[Unit]] = js.native
+    var done: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var emit: js.UndefOr[js.Function0[Unit]] = js.native
+    var emit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var entryOption: js.UndefOr[js.Function0[Unit]] = js.native
+    var entryOption: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var environment: js.UndefOr[js.Function0[Unit]] = js.native
+    var environment: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var failed: js.UndefOr[js.Function0[Unit]] = js.native
+    var failed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var invalid: js.UndefOr[js.Function0[Unit]] = js.native
+    var invalid: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var make: js.UndefOr[js.Function0[Unit]] = js.native
+    var make: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var normalModuleFactory: js.UndefOr[js.Function0[Unit]] = js.native
+    var normalModuleFactory: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var run: js.UndefOr[js.Function0[Unit]] = js.native
+    var run: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var shouldEmit: js.UndefOr[js.Function0[Unit]] = js.native
+    var shouldEmit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var thisCompilation: js.UndefOr[js.Function0[Unit]] = js.native
+    var thisCompilation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var watchClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var watchClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var watchRun: js.UndefOr[js.Function0[Unit]] = js.native
+    var watchRun: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Options {
     

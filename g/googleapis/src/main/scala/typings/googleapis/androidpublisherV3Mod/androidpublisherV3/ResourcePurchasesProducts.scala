@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidpublisher/v3", "androidpublisher_v3.Resource$Purchases$Products")
@@ -32,7 +31,7 @@ class ResourcePurchasesProducts protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaProductPurchase] = js.native
   def get(callback: BodyResponseCallback[SchemaProductPurchase]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaProductPurchase] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaProductPurchase] = js.native
   def get(params: ParamsResourcePurchasesProductsGet): GaxiosPromise[SchemaProductPurchase] = js.native
   def get(params: ParamsResourcePurchasesProductsGet, callback: BodyResponseCallback[SchemaProductPurchase]): Unit = js.native
   def get(

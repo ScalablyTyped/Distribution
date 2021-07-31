@@ -2,16 +2,14 @@ package typings.activexLibreoffice.com_.sun.star.bridge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** string/value pair */
-@js.native
 trait ProtocolProperty extends StObject {
   
-  var Name: String = js.native
+  var Name: String
   
-  var Value: js.Any = js.native
+  var Value: js.Any
 }
 object ProtocolProperty {
   

@@ -22,14 +22,13 @@ import typings.std.HTMLTableHeaderCellElement
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tableCellMod {
   
   @JSImport("@react-md/table/types/TableCell", "TableCell")
   @js.native
-  val TableCell: ForwardRefExoticComponent[TableCellProps with RefAttributes[TableCellElement]] = js.native
+  val TableCell: ForwardRefExoticComponent[TableCellProps & RefAttributes[TableCellElement]] = js.native
   
   type TableCellAttributes = Omit[
     TdHTMLAttributes[HTMLTableDataCellElement] | ThHTMLAttributes[HTMLTableHeaderCellElement], 
@@ -38,15 +37,16 @@ object tableCellMod {
   
   type TableCellElement = HTMLTableDataCellElement | HTMLTableHeaderCellElement
   
-  @js.native
-  trait TableCellOptions extends TableCellConfig {
+  trait TableCellOptions
+    extends StObject
+       with TableCellConfig {
     
     /**
       * The number of columns that the cell should span. If you would like a cell
       * to span an entire row ignoring the other rows and cells, you can set this
       * value to the number of columns within your table or `"100%"`.
       */
-    var colSpan: js.UndefOr[Double | `100Percentsign`] = js.native
+    var colSpan: js.UndefOr[Double | `100Percentsign`] = js.undefined
     
     /**
       * This is a bit of a "weird" prop since all it does is apply `width: 100%` to
@@ -55,7 +55,7 @@ object tableCellMod {
       * `fullWidth` table configuration is enabled, all cells will have an
       * equal-sized width.
       */
-    var grow: js.UndefOr[Boolean] = js.native
+    var grow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This prop is only valid when the `header` prop is enabled or the
@@ -63,7 +63,7 @@ object tableCellMod {
       * be used with a value of `"row"` if you have table headers that are at the
       * start of each row instead of at the top of the table.
       */
-    var scope: js.UndefOr[row | col | rowgroup | colgroup] = js.native
+    var scope: js.UndefOr[row | col | rowgroup | colgroup] = js.undefined
     
     /**
       * If this is a trueish value, the cell will become a sticky cell that will be
@@ -78,7 +78,7 @@ object tableCellMod {
       * both vertical and horizontal scrolling. This means that other sticky header
       * cells will scroll beneath this cell.
       */
-    var sticky: js.UndefOr[Boolean | header | cell | `header-cell`] = js.native
+    var sticky: js.UndefOr[Boolean | header | cell | `header-cell`] = js.undefined
   }
   object TableCellOptions {
     
@@ -118,8 +118,9 @@ object tableCellMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof react.react.TdHTMLAttributes<std.HTMLTableDataCellElement> | react.react.ThHTMLAttributes<std.HTMLTableHeaderCellElement>, 'colSpan' | 'scope'> ]: react.react.TdHTMLAttributes<std.HTMLTableDataCellElement> | react.react.ThHTMLAttributes<std.HTMLTableHeaderCellElement>[P]} */ @js.native
-  trait TableCellProps extends TableCellOptions {
+  - Dropped {[ P in std.Exclude<keyof react.react.TdHTMLAttributes<std.HTMLTableDataCellElement> | react.react.ThHTMLAttributes<std.HTMLTableHeaderCellElement>, 'colSpan' | 'scope'> ]: react.react.TdHTMLAttributes<std.HTMLTableDataCellElement> | react.react.ThHTMLAttributes<std.HTMLTableHeaderCellElement>[P]} */ trait TableCellProps
+    extends StObject
+       with TableCellOptions {
     
     /**
       * If you want to apply a sort icon for a header cell, set this prop to either
@@ -132,7 +133,7 @@ object tableCellMod {
       * in the children, just without the sort icon. This is so that the sort
       * behavior can still be toggled for keyboard users and will be tab-focusable.
       */
-    var `aria-sort`: js.UndefOr[SortOrder] = js.native
+    var `aria-sort`: js.UndefOr[SortOrder] = js.undefined
     
     /**
       * Boolean if cell should no longer have any padding since you want a child
@@ -143,7 +144,7 @@ object tableCellMod {
       * provided and the `sortIcon` is not resoled as `null`. You can override this
       * default behavior by manually setting this to `true` or `false`.
       */
-    var disablePadding: js.UndefOr[Boolean] = js.native
+    var disablePadding: js.UndefOr[Boolean] = js.undefined
     
     /**
       * An optional sort icon to use. This will be defaulted to the configured sort
@@ -151,13 +152,13 @@ object tableCellMod {
       * implementation for the sort icon behavior from `react-md`, you can set this
       * prop to `null`.
       */
-    var sortIcon: js.UndefOr[ReactNode] = js.native
+    var sortIcon: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Boolean if the sort icon should appear after the children in the cell
       * instead of before.
       */
-    var sortIconAfter: js.UndefOr[Boolean] = js.native
+    var sortIconAfter: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the sort icon should be rotated instead of the default
@@ -165,7 +166,7 @@ object tableCellMod {
       * `"aria-sort"` prop is set to `"descending"`. If this is not `undefined`,
       * its boolean value will always be used.
       */
-    var sortIconRotated: js.UndefOr[Boolean] = js.native
+    var sortIconRotated: js.UndefOr[Boolean] = js.undefined
   }
   object TableCellProps {
     

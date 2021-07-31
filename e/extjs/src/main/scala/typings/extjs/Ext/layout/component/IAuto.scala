@@ -2,23 +2,23 @@ package typings.extjs.Ext.layout.component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IAuto extends IComponent {
+trait IAuto
+  extends StObject
+     with IComponent {
   
   /** [Method] Called to perform the calculations for this layout
     * @param ownerContext Object
     */
   @JSName("calculate")
-  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+  var calculate_IAuto: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var setHeightInDom: js.UndefOr[Boolean] = js.native
+  var setHeightInDom: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var setWidthInDom: js.UndefOr[Boolean] = js.native
+  var setWidthInDom: js.UndefOr[Boolean] = js.undefined
 }
 object IAuto {
   

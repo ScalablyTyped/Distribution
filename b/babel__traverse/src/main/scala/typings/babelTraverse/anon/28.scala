@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TSIndexedAccessType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `28` extends StObject {
   
-  var `type`: TSIndexedAccessType = js.native
+  var `type`: TSIndexedAccessType
 }
 object `28` {
   
   @scala.inline
-  def apply(`type`: TSIndexedAccessType): `28` = {
+  def apply(): `28` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TSIndexedAccessType")
     __obj.asInstanceOf[`28`]
   }
   

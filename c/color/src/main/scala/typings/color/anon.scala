@@ -247,21 +247,19 @@ import typings.colorConvert.conversionsMod.RGB_
 import typings.colorConvert.conversionsMod.XYZ_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Alpha extends StObject {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object Alpha {
     
@@ -291,10 +289,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Dictkey extends /* key */ StringDictionary[Double] {
+  trait Dictkey
+    extends StObject
+       with /* key */ StringDictionary[Double] {
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
   }
   object Dictkey {
     
@@ -515,53 +514,52 @@ object anon {
     def xyz(from: CMYK_): XYZ_ = js.native
   }
   
-  @js.native
   trait Typeofconvert extends StObject {
     
     /* Inlined { readonly channels :1,  readonly labels :['ansi16'], readonly rgb (ansi16 : color-convert.color-convert/conversions.ANSI16): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.ansi16 & {[ F in keyof color-convert.color-convert/route.ansi16 ]: {  raw :color-convert.color-convert/route.ansi16[F]}} */
-    val ansi16: Typeofansi16 = js.native
+    val ansi16: Typeofansi16
     
     /* Inlined { readonly channels :1,  readonly labels :['ansi256'], readonly rgb (ansi256 : color-convert.color-convert/conversions.ANSI256): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.ansi256 & {[ F in keyof color-convert.color-convert/route.ansi256 ]: {  raw :color-convert.color-convert/route.ansi256[F]}} */
-    val ansi256: Typeofansi256 = js.native
+    val ansi256: Typeofansi256
     
     /* Inlined { readonly channels :3,  readonly labels :['r16', 'g16', 'b16'], readonly rgb (apple : color-convert.color-convert/conversions.APPLE): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.apple & {[ F in keyof color-convert.color-convert/route.apple ]: {  raw :color-convert.color-convert/route.apple[F]}} */
-    val apple: Typeofapple = js.native
+    val apple: Typeofapple
     
     /* Inlined { readonly channels :4,  readonly labels :'cmyk', readonly rgb (cmyk : color-convert.color-convert/conversions.CMYK): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.cmyk & {[ F in keyof color-convert.color-convert/route.cmyk ]: {  raw :color-convert.color-convert/route.cmyk[F]}} */
-    val cmyk: Typeofcmyk = js.native
+    val cmyk: Typeofcmyk
     
     /* Inlined { readonly channels :1,  readonly labels :['gray'], readonly rgb (gray : color-convert.color-convert/conversions.GRAY): color-convert.color-convert/conversions.RGB, readonly hsl (gray : color-convert.color-convert/conversions.GRAY): color-convert.color-convert/conversions.HSL, readonly hsv (gray : color-convert.color-convert/conversions.GRAY): color-convert.color-convert/conversions.HSV, readonly hwb (gray : color-convert.color-convert/conversions.GRAY): color-convert.color-convert/conversions.HWB, readonly cmyk (gray : color-convert.color-convert/conversions.GRAY): color-convert.color-convert/conversions.CMYK, readonly lab (gray : color-convert.color-convert/conversions.GRAY): color-convert.color-convert/conversions.LAB, readonly hex (gray : color-convert.color-convert/conversions.GRAY): color-convert.color-convert/conversions.HEX} & color-convert.color-convert/route.gray & {[ F in keyof color-convert.color-convert/route.gray ]: {  raw :color-convert.color-convert/route.gray[F]}} */
-    val gray: Typeofgray = js.native
+    val gray: Typeofgray
     
     /* Inlined { readonly channels :3,  readonly labels :['h', 'c', 'g'], readonly rgb (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.RGB, readonly hsv (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HSV, readonly hsl (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HSL, readonly hwb (hcg : color-convert.color-convert/conversions.HCG): color-convert.color-convert/conversions.HWB} & color-convert.color-convert/route.hcg & {[ F in keyof color-convert.color-convert/route.hcg ]: {  raw :color-convert.color-convert/route.hcg[F]}} */
-    val hcg: Typeofhcg = js.native
+    val hcg: Typeofhcg
     
     /* Inlined { readonly channels :1,  readonly labels :['hex'], readonly rgb (hex : color-convert.color-convert/conversions.HEX): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.hex & {[ F in keyof color-convert.color-convert/route.hex ]: {  raw :color-convert.color-convert/route.hex[F]}} */
-    val hex: Typeofhex = js.native
+    val hex: Typeofhex
     
     /* Inlined { readonly channels :3,  readonly labels :'hsl', readonly rgb (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.RGB, readonly hsv (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.HSV, readonly hcg (hsl : color-convert.color-convert/conversions.HSL): color-convert.color-convert/conversions.HCG} & color-convert.color-convert/route.hsl & {[ F in keyof color-convert.color-convert/route.hsl ]: {  raw :color-convert.color-convert/route.hsl[F]}} */
-    val hsl: Typeofhsl = js.native
+    val hsl: Typeofhsl
     
     /* Inlined { readonly channels :3,  readonly labels :'hsv', readonly rgb (hsv : color-convert.color-convert/conversions.HSV): color-convert.color-convert/conversions.RGB, readonly hsl (hsv : color-convert.color-convert/conversions.HSV): color-convert.color-convert/conversions.HSL, readonly ansi16 (hsv : color-convert.color-convert/conversions.HSV): color-convert.color-convert/conversions.ANSI16, readonly hcg (hsv : color-convert.color-convert/conversions.HSV): color-convert.color-convert/conversions.HCG} & color-convert.color-convert/route.hsv & {[ F in keyof color-convert.color-convert/route.hsv ]: {  raw :color-convert.color-convert/route.hsv[F]}} */
-    val hsv: Typeofhsv = js.native
+    val hsv: Typeofhsv
     
     /* Inlined { readonly channels :3,  readonly labels :'hwb', readonly rgb (hwb : color-convert.color-convert/conversions.HWB): color-convert.color-convert/conversions.RGB, readonly hcg (hwb : color-convert.color-convert/conversions.HWB): color-convert.color-convert/conversions.HCG} & color-convert.color-convert/route.hwb & {[ F in keyof color-convert.color-convert/route.hwb ]: {  raw :color-convert.color-convert/route.hwb[F]}} */
-    val hwb: Typeofhwb = js.native
+    val hwb: Typeofhwb
     
     /* Inlined { readonly channels :1,  readonly labels :['keyword'], readonly rgb (keyword : color-convert.color-convert/conversions.KEYWORD): color-convert.color-convert/conversions.RGB} & color-convert.color-convert/route.keyword & {[ F in keyof color-convert.color-convert/route.keyword ]: {  raw :color-convert.color-convert/route.keyword[F]}} */
-    val keyword: Typeofkeyword = js.native
+    val keyword: Typeofkeyword
     
     /* Inlined { readonly channels :3,  readonly labels :'lab', readonly xyz (lab : color-convert.color-convert/conversions.LAB): color-convert.color-convert/conversions.XYZ, readonly lch (lab : color-convert.color-convert/conversions.LAB): color-convert.color-convert/conversions.LCH} & color-convert.color-convert/route.lab & {[ F in keyof color-convert.color-convert/route.lab ]: {  raw :color-convert.color-convert/route.lab[F]}} */
-    val lab: Typeoflab = js.native
+    val lab: Typeoflab
     
     /* Inlined { readonly channels :3,  readonly labels :'lch', readonly lab (lch : color-convert.color-convert/conversions.LCH): color-convert.color-convert/conversions.LAB} & color-convert.color-convert/route.lch & {[ F in keyof color-convert.color-convert/route.lch ]: {  raw :color-convert.color-convert/route.lch[F]}} */
-    val lch: Typeoflch = js.native
+    val lch: Typeoflch
     
     /* Inlined { readonly channels :3,  readonly labels :'rgb', readonly hsl (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HSL, readonly hsv (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HSV, readonly hwb (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HWB, readonly cmyk (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.CMYK, readonly keyword (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.KEYWORD, readonly xyz (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.XYZ, readonly lab (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.LAB, readonly ansi16 (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.ANSI16, readonly ansi256 (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.ANSI256, readonly hex (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HEX, readonly hcg (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.HCG, readonly apple (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.APPLE, readonly gray (rgb : color-convert.color-convert/conversions.RGB): color-convert.color-convert/conversions.GRAY} & color-convert.color-convert/route.rgb & {[ F in keyof color-convert.color-convert/route.rgb ]: {  raw :color-convert.color-convert/route.rgb[F]}} */
-    val rgb: Typeofrgb = js.native
+    val rgb: Typeofrgb
     
     /* Inlined { readonly channels :3,  readonly labels :'xyz', readonly rgb (xyz : color-convert.color-convert/conversions.XYZ): color-convert.color-convert/conversions.RGB, readonly lab (xyz : color-convert.color-convert/conversions.XYZ): color-convert.color-convert/conversions.LAB} & color-convert.color-convert/route.xyz & {[ F in keyof color-convert.color-convert/route.xyz ]: {  raw :color-convert.color-convert/route.xyz[F]}} */
-    val xyz: Typeofxyz = js.native
+    val xyz: Typeofxyz
   }
   object Typeofconvert {
     

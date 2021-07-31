@@ -3,34 +3,32 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/InputLabel.InputLabelClassKey>> */
-@js.native
 trait PartialStyleRulesInputLab extends StObject {
   
-  var animated: js.UndefOr[CSSProperties] = js.native
+  var animated: js.UndefOr[CSSProperties] = js.undefined
   
-  var disabled: js.UndefOr[CSSProperties] = js.native
+  var disabled: js.UndefOr[CSSProperties] = js.undefined
   
-  var error: js.UndefOr[CSSProperties] = js.native
+  var error: js.UndefOr[CSSProperties] = js.undefined
   
-  var filled: js.UndefOr[CSSProperties] = js.native
+  var filled: js.UndefOr[CSSProperties] = js.undefined
   
-  var focused: js.UndefOr[CSSProperties] = js.native
+  var focused: js.UndefOr[CSSProperties] = js.undefined
   
-  var formControl: js.UndefOr[CSSProperties] = js.native
+  var formControl: js.UndefOr[CSSProperties] = js.undefined
   
-  var marginDense: js.UndefOr[CSSProperties] = js.native
+  var marginDense: js.UndefOr[CSSProperties] = js.undefined
   
-  var outlined: js.UndefOr[CSSProperties] = js.native
+  var outlined: js.UndefOr[CSSProperties] = js.undefined
   
-  var required: js.UndefOr[CSSProperties] = js.native
+  var required: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var shrink: js.UndefOr[CSSProperties] = js.native
+  var shrink: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesInputLab {
   

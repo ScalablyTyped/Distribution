@@ -2,22 +2,22 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SegmentedControlIOSProps extends ViewProps {
+trait SegmentedControlIOSProps
+  extends StObject
+     with ViewProps {
   
   /**
     * If false the user won't be able to interact with the control. Default value is true.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, then selecting a segment won't persist visually.
     * The onValueChange callback will still work as expected.
     */
-  var momentary: js.UndefOr[Boolean] = js.native
+  var momentary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Callback that is called when the user taps a segment;
@@ -25,27 +25,27 @@ trait SegmentedControlIOSProps extends ViewProps {
     */
   var onChange: js.UndefOr[
     js.Function1[/* event */ NativeSyntheticEvent[NativeSegmentedControlIOSChangeEvent], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Callback that is called when the user taps a segment; passes the segment's value as an argument
     */
-  var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
   
   /**
     * The index in props.values of the segment to be (pre)selected.
     */
-  var selectedIndex: js.UndefOr[Double] = js.native
+  var selectedIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Accent color of the control.
     */
-  var tintColor: js.UndefOr[ColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * The labels for the control's segment buttons, in order.
     */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SegmentedControlIOSProps {
   

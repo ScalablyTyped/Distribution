@@ -2,15 +2,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseSubscriptionFilter extends StObject {
   
-  var eventType: String = js.native
+  var eventType: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object BaseSubscriptionFilter {
   

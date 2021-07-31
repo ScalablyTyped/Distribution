@@ -3,86 +3,84 @@ package typings.algoliaClientSearch.mod
 import typings.algoliaClientSearch.anon.Indexname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
   /**
     * Answer body. It’s truncated after 1000 characters.
     */
-  val answer: String = js.native
+  val answer: String
   
   /**
     * Http response code.
     */
-  val answer_code: String = js.native
+  val answer_code: String
   
   /**
     * Exhaustive flags used during the query.
     */
-  val exhaustive: js.UndefOr[Boolean] = js.native
+  val exhaustive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Index name of the log
     */
-  val index: js.UndefOr[String] = js.native
+  val index: js.UndefOr[String] = js.undefined
   
   /**
     * Internal queries performed for this query.
     */
-  val inner_queries: js.Array[Indexname] = js.native
+  val inner_queries: js.Array[Indexname]
   
   /**
     * Client ip of the call.
     */
-  val ip: String = js.native
+  val ip: String
   
   /**
     * Rest type of the method.
     */
-  val method: String = js.native
+  val method: String
   
   /**
     * Number Of Api Calls
     */
-  val nb_api_calls: js.UndefOr[String] = js.native
+  val nb_api_calls: js.UndefOr[String] = js.undefined
   
   /**
     * Processing time for the query. This does not include network time.
     */
-  val processing_time_ms: String = js.native
+  val processing_time_ms: String
   
   /**
     * Request body. It’s truncated after 1000 characters.
     */
-  val query_body: String = js.native
+  val query_body: String
   
   /**
     * Request Headers (API Key is obfuscated).
     */
-  val query_headers: String = js.native
+  val query_headers: String
   
   /**
     * Number of hits returned for the query.
     */
-  val query_nb_hits: js.UndefOr[String] = js.native
+  val query_nb_hits: js.UndefOr[String] = js.undefined
   
   /**
     * SHA1 ID of entry.
     */
-  val sha1: String = js.native
+  val sha1: String
   
   /**
     * Timestamp in ISO-8601 format.
     */
-  val timestamp: String = js.native
+  val timestamp: String
   
   /**
     * Request URL.
     */
-  val url: String = js.native
+  val url: String
 }
 object Log {
   

@@ -3,7 +3,6 @@ package typings.typescriptServices.global.TypeScript
 import typings.typescriptServices.TypeScript.CompilerDiagnostics.IDiagnosticWriter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CompilerDiagnostics {
@@ -12,9 +11,8 @@ object CompilerDiagnostics {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSGlobal("TypeScript.CompilerDiagnostics.Alert")
-  @js.native
-  def Alert(output: String): Unit = js.native
+  @scala.inline
+  def Alert(output: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Alert")(output.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("TypeScript.CompilerDiagnostics.analysisPass")
   @js.native
@@ -22,17 +20,15 @@ object CompilerDiagnostics {
   @scala.inline
   def analysisPass_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("analysisPass")(x.asInstanceOf[js.Any])
   
-  @JSGlobal("TypeScript.CompilerDiagnostics.assert")
-  @js.native
-  def assert(condition: Boolean, s: String): Unit = js.native
+  @scala.inline
+  def assert(condition: Boolean, s: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("assert")(condition.asInstanceOf[js.Any], s.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSGlobal("TypeScript.CompilerDiagnostics.debug")
   @js.native
   def debug: Boolean = js.native
   
-  @JSGlobal("TypeScript.CompilerDiagnostics.debugPrint")
-  @js.native
-  def debugPrint(s: String): Unit = js.native
+  @scala.inline
+  def debugPrint(s: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debugPrint")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @scala.inline
   def debug_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("debug")(x.asInstanceOf[js.Any])

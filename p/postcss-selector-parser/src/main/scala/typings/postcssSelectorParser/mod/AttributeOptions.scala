@@ -4,28 +4,27 @@ import typings.postcssSelectorParser.anon.After
 import typings.postcssSelectorParser.anon.Insensitive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeOptions
-  extends NamespaceOptions[js.UndefOr[String]] {
+  extends StObject
+     with NamespaceOptions[js.UndefOr[String]] {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var insensitive: js.UndefOr[Boolean] = js.native
+  var insensitive: js.UndefOr[Boolean] = js.undefined
   
-  var operator: js.UndefOr[AttributeOperator] = js.native
+  var operator: js.UndefOr[AttributeOperator] = js.undefined
   
-  var quoteMark: js.UndefOr[QuoteMark] = js.native
+  var quoteMark: js.UndefOr[QuoteMark] = js.undefined
   
   /** @deprecated Use quoteMark instead. */
-  var quoted: js.UndefOr[Boolean] = js.native
+  var quoted: js.UndefOr[Boolean] = js.undefined
   
-  var raws: Insensitive = js.native
+  var raws: Insensitive
   
   @JSName("spaces")
-  var spaces_AttributeOptions: js.UndefOr[After] = js.native
+  var spaces_AttributeOptions: js.UndefOr[After] = js.undefined
 }
 object AttributeOptions {
   

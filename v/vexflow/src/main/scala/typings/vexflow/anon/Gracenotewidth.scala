@@ -2,21 +2,19 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gracenotewidth extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var gracenote_width: Double = js.native
+  var gracenote_width: Double
   
-  var shift_down: Double = js.native
+  var shift_down: Double
   
-  var shift_right: Double = js.native
+  var shift_right: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Gracenotewidth {
   

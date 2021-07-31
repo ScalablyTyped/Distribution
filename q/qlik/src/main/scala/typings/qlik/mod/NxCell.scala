@@ -10,35 +10,33 @@ import typings.qlik.qlikStrings.XL
 import typings.qlik.qlikStrings.XS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxCell extends StObject {
   
-  var qAttrDims: NxAttributeDimValues = js.native
+  var qAttrDims: NxAttributeDimValues
   
-  var qAttrExps: NxAttributeExpressionValues = js.native
+  var qAttrExps: NxAttributeExpressionValues
   
-  var qElemNumber: Double = js.native
+  var qElemNumber: Double
   
-  var qFrequency: String = js.native
+  var qFrequency: String
   
-  var qHighlightRanges: NxHighlightRanges = js.native
+  var qHighlightRanges: NxHighlightRanges
   
-  var qIsEmpty: Boolean = js.native
+  var qIsEmpty: Boolean
   
-  var qIsNull: Boolean = js.native
+  var qIsNull: Boolean
   
-  var qIsOtherCell: Boolean = js.native
+  var qIsOtherCell: Boolean
   
-  var qIsTotalCell: Boolean = js.native
+  var qIsTotalCell: Boolean
   
-  var qNum: Double = js.native
+  var qNum: Double
   
-  var qState: L | S | O | D | A | X | XS | XL = js.native
+  var qState: L | S | O | D | A | X | XS | XL
   
-  var qText: String = js.native
+  var qText: String
 }
 object NxCell {
   

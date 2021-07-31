@@ -2,17 +2,15 @@ package typings.businessRulesEngine.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPropertyValidator extends StObject {
   
-  var customMessage: js.UndefOr[IErrorCustomMessage] = js.native
+  var customMessage: js.UndefOr[IErrorCustomMessage] = js.undefined
   
-  def isAcceptable(s: js.Any): Boolean = js.native
+  def isAcceptable(s: js.Any): Boolean
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object IPropertyValidator {
   

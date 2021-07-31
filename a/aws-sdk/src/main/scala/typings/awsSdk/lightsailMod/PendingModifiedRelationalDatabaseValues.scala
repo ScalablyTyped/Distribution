@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingModifiedRelationalDatabaseValues extends StObject {
   
   /**
     * A Boolean value indicating whether automated backup retention is enabled.
     */
-  var backupRetentionEnabled: js.UndefOr[Boolean] = js.native
+  var backupRetentionEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The database engine version.
     */
-  var engineVersion: js.UndefOr[String] = js.native
+  var engineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The password for the master user of the database.
     */
-  var masterUserPassword: js.UndefOr[String] = js.native
+  var masterUserPassword: js.UndefOr[String] = js.undefined
 }
 object PendingModifiedRelationalDatabaseValues {
   

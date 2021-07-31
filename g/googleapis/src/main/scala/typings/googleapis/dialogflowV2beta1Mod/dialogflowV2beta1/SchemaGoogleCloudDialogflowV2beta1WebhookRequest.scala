@@ -2,37 +2,35 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for a webhook call.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1WebhookRequest extends StObject {
   
   /**
     * Alternative query results from KnowledgeService.
     */
-  var alternativeQueryResults: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1QueryResult]] = js.native
+  var alternativeQueryResults: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1QueryResult]] = js.undefined
   
   /**
     * Optional. The contents of the original request that was passed to
     * `[Streaming]DetectIntent` call.
     */
-  var originalDetectIntentRequest: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1OriginalDetectIntentRequest] = js.native
+  var originalDetectIntentRequest: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1OriginalDetectIntentRequest] = js.undefined
   
   /**
     * The result of the conversational query or event processing. Contains the
     * same value as `[Streaming]DetectIntentResponse.query_result`.
     */
-  var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryResult] = js.native
+  var queryResult: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1QueryResult] = js.undefined
   
   /**
     * The unique identifier of the response. Contains the same value as
     * `[Streaming]DetectIntentResponse.response_id`.
     */
-  var responseId: js.UndefOr[String] = js.native
+  var responseId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of detectIntent request session. Can be used to
@@ -41,7 +39,7 @@ trait SchemaGoogleCloudDialogflowV2beta1WebhookRequest extends StObject {
     * `projects/&lt;Project ID&gt;/agent/environments/&lt;Environment
     * ID&gt;/users/&lt;User ID&gt;/sessions/&lt;Session ID&gt;`.
     */
-  var session: js.UndefOr[String] = js.native
+  var session: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1WebhookRequest {
   

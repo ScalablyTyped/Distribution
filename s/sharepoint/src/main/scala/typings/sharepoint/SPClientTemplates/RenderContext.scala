@@ -2,51 +2,49 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderContext extends StObject {
   
-  var BaseViewID: js.UndefOr[Double] = js.native
+  var BaseViewID: js.UndefOr[Double] = js.undefined
   
-  var ControlMode: js.UndefOr[ClientControlMode] = js.native
+  var ControlMode: js.UndefOr[ClientControlMode] = js.undefined
   
-  var CurrentCultureName: js.UndefOr[String] = js.native
+  var CurrentCultureName: js.UndefOr[String] = js.undefined
   
-  var CurrentLanguage: js.UndefOr[Double] = js.native
+  var CurrentLanguage: js.UndefOr[Double] = js.undefined
   
-  var CurrentSelectedItems: js.UndefOr[js.Any] = js.native
+  var CurrentSelectedItems: js.UndefOr[js.Any] = js.undefined
   
-  var CurrentUICultureName: js.UndefOr[String] = js.native
+  var CurrentUICultureName: js.UndefOr[String] = js.undefined
   
-  var ListTemplateType: js.UndefOr[Double] = js.native
+  var ListTemplateType: js.UndefOr[Double] = js.undefined
   
-  var OnPostRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.native
+  var OnPostRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
   
-  var OnPreRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.native
+  var OnPreRender: js.UndefOr[RenderCallback | js.Array[RenderCallback]] = js.undefined
   
-  var RenderBody: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.native
+  var RenderBody: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
   
-  var RenderFieldByName: js.UndefOr[js.Function2[/* renderContext */ this.type, /* fieldName */ String, String]] = js.native
+  var RenderFieldByName: js.UndefOr[js.Function2[/* renderContext */ this.type, /* fieldName */ String, String]] = js.undefined
   
-  var RenderFields: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.native
+  var RenderFields: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
   
-  var RenderFooter: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.native
+  var RenderFooter: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
   
-  var RenderGroups: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.native
+  var RenderGroups: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
   
-  var RenderHeader: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.native
+  var RenderHeader: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
   
-  var RenderItems: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.native
+  var RenderItems: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
   
-  var RenderView: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.native
+  var RenderView: js.UndefOr[js.Function1[/* renderContext */ this.type, String]] = js.undefined
   
-  var SiteClientTag: js.UndefOr[String] = js.native
+  var SiteClientTag: js.UndefOr[String] = js.undefined
   
-  var Templates: js.UndefOr[typings.sharepoint.SPClientTemplates.Templates] = js.native
+  var Templates: js.UndefOr[typings.sharepoint.SPClientTemplates.Templates] = js.undefined
   
-  var onRefreshFailed: js.UndefOr[js.Any] = js.native
+  var onRefreshFailed: js.UndefOr[js.Any] = js.undefined
 }
 object RenderContext {
   

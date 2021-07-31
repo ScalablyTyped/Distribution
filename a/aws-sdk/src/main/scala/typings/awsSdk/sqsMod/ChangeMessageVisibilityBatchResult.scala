@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeMessageVisibilityBatchResult extends StObject {
   
   /**
     * A list of  BatchResultErrorEntry  items.
     */
-  var Failed: BatchResultErrorEntryList = js.native
+  var Failed: BatchResultErrorEntryList
   
   /**
     * A list of  ChangeMessageVisibilityBatchResultEntry  items.
     */
-  var Successful: ChangeMessageVisibilityBatchResultEntryList = js.native
+  var Successful: ChangeMessageVisibilityBatchResultEntryList
 }
 object ChangeMessageVisibilityBatchResult {
   

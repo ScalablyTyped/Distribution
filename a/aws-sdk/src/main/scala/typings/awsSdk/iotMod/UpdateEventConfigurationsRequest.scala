@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateEventConfigurationsRequest extends StObject {
   
   /**
     * The new event configuration values.
     */
-  var eventConfigurations: js.UndefOr[EventConfigurations] = js.native
+  var eventConfigurations: js.UndefOr[EventConfigurations] = js.undefined
 }
 object UpdateEventConfigurationsRequest {
   

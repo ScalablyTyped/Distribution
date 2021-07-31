@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait TableColumnCollection extends ClientObject {
+trait TableColumnCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds a new column to the table.
@@ -30,21 +31,7 @@ trait TableColumnCollection extends ClientObject {
     * @param name Optional. Specifies the name of the new column. If null, the default name will be used.
     */
   def add(): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: js.UndefOr[scala.Nothing], name: String): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: String): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: String, name: String): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: js.Array[js.Array[Boolean | String | Double]]): TableColumn = js.native
-  def add(
-    index: js.UndefOr[scala.Nothing],
-    values: js.Array[js.Array[Boolean | String | Double]],
-    name: String
-  ): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: Boolean): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: Boolean, name: String): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: Double): TableColumn = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: Double, name: String): TableColumn = js.native
   def add(index: Double): TableColumn = js.native
-  def add(index: Double, values: js.UndefOr[scala.Nothing], name: String): TableColumn = js.native
   def add(index: Double, values: String): TableColumn = js.native
   def add(index: Double, values: String, name: String): TableColumn = js.native
   def add(index: Double, values: js.Array[js.Array[Boolean | String | Double]]): TableColumn = js.native
@@ -53,6 +40,16 @@ trait TableColumnCollection extends ClientObject {
   def add(index: Double, values: Boolean, name: String): TableColumn = js.native
   def add(index: Double, values: Double): TableColumn = js.native
   def add(index: Double, values: Double, name: String): TableColumn = js.native
+  def add(index: Double, values: Unit, name: String): TableColumn = js.native
+  def add(index: Unit, values: String): TableColumn = js.native
+  def add(index: Unit, values: String, name: String): TableColumn = js.native
+  def add(index: Unit, values: js.Array[js.Array[Boolean | String | Double]]): TableColumn = js.native
+  def add(index: Unit, values: js.Array[js.Array[Boolean | String | Double]], name: String): TableColumn = js.native
+  def add(index: Unit, values: Boolean): TableColumn = js.native
+  def add(index: Unit, values: Boolean, name: String): TableColumn = js.native
+  def add(index: Unit, values: Double): TableColumn = js.native
+  def add(index: Unit, values: Double, name: String): TableColumn = js.native
+  def add(index: Unit, values: Unit, name: String): TableColumn = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -111,7 +108,7 @@ trait TableColumnCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TableColumnCollection = js.native
-  def load(options: TableColumnCollectionLoadOptions with CollectionLoadOptions): TableColumnCollection = js.native
+  def load(options: TableColumnCollectionLoadOptions & CollectionLoadOptions): TableColumnCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): TableColumnCollection = js.native
   def load(propertyNames: String): TableColumnCollection = js.native
   def load(propertyNames: js.Array[String]): TableColumnCollection = js.native

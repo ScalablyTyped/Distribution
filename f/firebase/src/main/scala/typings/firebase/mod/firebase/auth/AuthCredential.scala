@@ -2,7 +2,6 @@ package typings.firebase.mod.firebase.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * requirements.
   *
   */
-@js.native
 trait AuthCredential extends StObject {
   
   /**
     * The authentication provider ID for the credential.
     * For example, 'facebook.com', or 'google.com'.
     */
-  var providerId: String = js.native
+  var providerId: String
   
   /**
     * The authentication sign in method for the credential.
@@ -26,12 +24,12 @@ trait AuthCredential extends StObject {
     * method identifier as returned in
     * {@link firebase.auth.Auth.fetchSignInMethodsForEmail}.
     */
-  var signInMethod: String = js.native
+  var signInMethod: String
   
   /**
     * Returns a JSON-serializable representation of this object.
     */
-  def toJSON(): js.Object = js.native
+  def toJSON(): js.Object
 }
 object AuthCredential {
   

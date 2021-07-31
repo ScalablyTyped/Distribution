@@ -4,14 +4,16 @@ import org.scalablytyped.runtime.TopLevel
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("spected", JSImport.Default)
+  @JSImport("spected", JSImport.Namespace)
   @js.native
-  def default[ROOTINPUT, SPEC /* <: SpecValue[ROOTINPUT, ROOTINPUT] */](spec: SPEC, input: ROOTINPUT): Result[ROOTINPUT, SPEC] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[ROOTINPUT, SPEC /* <: SpecValue[ROOTINPUT, ROOTINPUT] */](spec: SPEC, input: ROOTINPUT): Result[ROOTINPUT, SPEC] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(spec.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Result[ROOTINPUT, SPEC]]
   
   type ErrorMsg[INPUT] = js.UndefOr[
     String | Double | Boolean | js.Symbol | Null | js.Object | (js.Function2[/* value */ INPUT, /* field */ String, js.Any])
@@ -21,7 +23,7 @@ object mod {
   
   type Result[INPUT, SPEC] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof INPUT ]: true | std.Array<any> | / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias spected.spected.Result<INPUT[key], any> * / object}
-    */ typings.spected.spectedStrings.Result with TopLevel[js.Any]
+    */ typings.spected.spectedStrings.Result & TopLevel[js.Any]
   
   type Spec[INPUT, ROOTINPUT] = js.Tuple2[Predicate[INPUT, ROOTINPUT], ErrorMsg[INPUT]]
   
@@ -35,7 +37,7 @@ object mod {
   type SpecObject[INPUT, ROOTINPUT] = Partial[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof INPUT ]: spected.spected.SpecValue<INPUT[key], ROOTINPUT>}
-    */ typings.spected.spectedStrings.SpecObject with TopLevel[INPUT]
+    */ typings.spected.spectedStrings.SpecObject & TopLevel[INPUT]
   ]
   
   type SpecValue[INPUT, ROOTINPUT] = (SpecArray[INPUT, ROOTINPUT]) | (SpecFunction[INPUT, ROOTINPUT]) | (SpecObject[INPUT, ROOTINPUT])

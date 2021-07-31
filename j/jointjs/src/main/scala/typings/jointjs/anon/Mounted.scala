@@ -2,15 +2,13 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mounted extends StObject {
   
-  var mounted: Double = js.native
+  var mounted: Double
   
-  var unmounted: Double = js.native
+  var unmounted: Double
 }
 object Mounted {
   

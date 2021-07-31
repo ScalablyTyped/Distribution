@@ -3,7 +3,6 @@ package typings.postcss.mod
 import typings.postcss.postcssStrings.atrule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait AtRule_
-  extends ContainerBase
+  extends StObject
+     with ContainerBase
      with ChildNode
      with Container {
   

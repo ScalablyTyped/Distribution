@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec extends StObject {
   
   /**
     * Output only. The Data Catalog resource name of the dataset entry the current table belongs to, for example,
     * `projects/{project_id}/locations/{location}/entrygroups/{entry_group_id}/entries/{entry_id}`.
     */
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Total number of shards. */
-  var shardCount: js.UndefOr[String] = js.native
+  var shardCount: js.UndefOr[String] = js.undefined
   
   /** Output only. The table name prefix of the shards. The name of any given shard is `[table_prefix]YYYYMMDD`, for example, for shard `MyTable20180101`, the `table_prefix` is `MyTable`. */
-  var tablePrefix: js.UndefOr[String] = js.native
+  var tablePrefix: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1BigQueryDateShardedSpec {
   

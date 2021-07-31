@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgUploadFileExtensionIcons
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,17 +15,17 @@ trait IgUploadFileExtensionIcons
   /**
     * Css classes which sets icon.
     */
-  var css: js.UndefOr[String] = js.native
+  var css: js.UndefOr[String] = js.undefined
   
   /**
     * Default icons when the file extension is not found. It is taken only the first item which have def set to true, other are ignored.
     */
-  var `def`: js.UndefOr[Boolean] = js.native
+  var `def`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of string for file extensions
     */
-  var ext: js.UndefOr[js.Array[_]] = js.native
+  var ext: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object IgUploadFileExtensionIcons {
   
@@ -52,7 +51,7 @@ object IgUploadFileExtensionIcons {
     def setDefUndefined: Self = StObject.set(x, "def", js.undefined)
     
     @scala.inline
-    def setExt(value: js.Array[_]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
+    def setExt(value: js.Array[js.Any]): Self = StObject.set(x, "ext", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtUndefined: Self = StObject.set(x, "ext", js.undefined)

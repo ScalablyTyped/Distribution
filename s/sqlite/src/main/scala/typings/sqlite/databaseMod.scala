@@ -8,7 +8,6 @@ import typings.sqlite.interfacesMod.ISqlite.SqlType
 import typings.sqlite.sqlite3Mod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object databaseMod {
@@ -136,7 +135,7 @@ object databaseMod {
       *
       * @param {string} path Filename of the extension to load
       */
-    def loadExtension(path: String): js.Promise[_] = js.native
+    def loadExtension(path: String): js.Promise[js.Any] = js.native
     
     /**
       * Performs a database migration.

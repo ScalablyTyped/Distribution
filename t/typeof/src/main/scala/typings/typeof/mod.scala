@@ -2,12 +2,14 @@ package typings.typeof
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(`object`: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(`object`.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("typeof", JSImport.Namespace)
   @js.native
-  def apply(`object`: js.Any): String = js.native
+  val ^ : js.Any = js.native
 }

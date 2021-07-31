@@ -3,11 +3,12 @@ package typings.openui5.sap.ui.unified
 import typings.openui5.sap.ui.core.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Currency extends Control {
+trait Currency
+  extends StObject
+     with Control {
   
   /**
     * Gets current value of property <code>currency</code>.Determines the displayed currency code (ISO

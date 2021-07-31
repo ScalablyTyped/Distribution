@@ -11,7 +11,6 @@ import typings.mongration.mongrationStrings.skipped
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,22 +29,21 @@ object mod {
     def migrate(doneCb: js.Function2[/* err */ Error | Null, /* response */ js.Array[MigrationResponse], Unit]): Unit = js.native
   }
   
-  @js.native
   trait DbConfig extends StObject {
     
-    var db: js.UndefOr[String] = js.native
+    var db: js.UndefOr[String] = js.undefined
     
-    var hosts: js.UndefOr[String] = js.native
+    var hosts: js.UndefOr[String] = js.undefined
     
-    var migrationCollection: String = js.native
+    var migrationCollection: String
     
-    var mongoUri: js.UndefOr[String] = js.native
+    var mongoUri: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var replicaSet: js.UndefOr[String] = js.native
+    var replicaSet: js.UndefOr[String] = js.undefined
     
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object DbConfig {
     
@@ -99,12 +97,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MigrationResponse extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var status: `not-run` | skipped | pending | ok | error | rollback | `rollback-error` = js.native
+    var status: `not-run` | skipped | pending | ok | error | rollback | `rollback-error`
   }
   object MigrationResponse {
     
@@ -125,16 +122,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MigrationStep extends StObject {
     
     var down: js.UndefOr[
         js.Function2[/* db */ Db, /* cb */ js.Function1[/* err */ js.UndefOr[Error], Unit], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    def up(db: Db, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def up(db: Db, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit
   }
   object MigrationStep {
     

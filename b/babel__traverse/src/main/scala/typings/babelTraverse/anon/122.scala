@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.JSXEmptyExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `122` extends StObject {
   
-  var `type`: JSXEmptyExpression = js.native
+  var `type`: JSXEmptyExpression
 }
 object `122` {
   
   @scala.inline
-  def apply(`type`: JSXEmptyExpression): `122` = {
+  def apply(): `122` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXEmptyExpression")
     __obj.asInstanceOf[`122`]
   }
   

@@ -3,26 +3,25 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`5`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InterpolationNode
-  extends TemplateChildNode
+  extends StObject
      with Node2
+     with TemplateChildNode
      with TemplateTextChildNode {
   
-  var content: ExpressionNode = js.native
+  var content: ExpressionNode
   
   @JSName("type")
-  var type_InterpolationNode: `5` = js.native
+  var type_InterpolationNode: `5`
 }
 object InterpolationNode {
   
   @scala.inline
-  def apply(content: ExpressionNode, loc: SourceLocation, `type`: `5`): InterpolationNode = {
+  def apply(content: ExpressionNode, loc: SourceLocation): InterpolationNode = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(5)
     __obj.asInstanceOf[InterpolationNode]
   }
   

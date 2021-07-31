@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ThreatAssessmentResult extends Entity {
+trait ThreatAssessmentResult
+  extends StObject
+     with Entity {
   
   /**
     * The Timestamp type represents date and time information using ISO 8601 format and is always in UTC time. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'.
     */
-  var createdDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var createdDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The result message for each threat assessment.
-  var message: js.UndefOr[NullableOption[String]] = js.native
+  var message: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The threat assessment result type. Possible values are: checkPolicy, rescan.
-  var resultType: js.UndefOr[NullableOption[ThreatAssessmentResultType]] = js.native
+  var resultType: js.UndefOr[NullableOption[ThreatAssessmentResultType]] = js.undefined
 }
 object ThreatAssessmentResult {
   

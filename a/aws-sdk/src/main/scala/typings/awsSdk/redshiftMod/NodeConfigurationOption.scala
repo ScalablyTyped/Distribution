@@ -2,31 +2,29 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeConfigurationOption extends StObject {
   
   /**
     * The estimated disk utilizaton percentage.
     */
-  var EstimatedDiskUtilizationPercent: js.UndefOr[DoubleOptional] = js.native
+  var EstimatedDiskUtilizationPercent: js.UndefOr[DoubleOptional] = js.undefined
   
   /**
     * The category of the node configuration recommendation.
     */
-  var Mode: js.UndefOr[typings.awsSdk.redshiftMod.Mode] = js.native
+  var Mode: js.UndefOr[typings.awsSdk.redshiftMod.Mode] = js.undefined
   
   /**
     * The node type, such as, "ds2.8xlarge".
     */
-  var NodeType: js.UndefOr[String] = js.native
+  var NodeType: js.UndefOr[String] = js.undefined
   
   /**
     * The number of nodes.
     */
-  var NumberOfNodes: js.UndefOr[Integer] = js.native
+  var NumberOfNodes: js.UndefOr[Integer] = js.undefined
 }
 object NodeConfigurationOption {
   

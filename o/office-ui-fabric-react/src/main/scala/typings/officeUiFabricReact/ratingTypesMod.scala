@@ -10,7 +10,6 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ratingTypesMod {
@@ -22,27 +21,31 @@ object ratingTypesMod {
   object RatingSize extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RatingSize with Double] = js.native
+    def apply(value: Double): js.UndefOr[RatingSize & Double] = js.native
     
     @js.native
-    sealed trait Large extends RatingSize
-    /* 1 */ val Large: typings.officeUiFabricReact.ratingTypesMod.RatingSize.Large with Double = js.native
+    sealed trait Large
+      extends StObject
+         with RatingSize
+    /* 1 */ val Large: typings.officeUiFabricReact.ratingTypesMod.RatingSize.Large & Double = js.native
     
     @js.native
-    sealed trait Small extends RatingSize
-    /* 0 */ val Small: typings.officeUiFabricReact.ratingTypesMod.RatingSize.Small with Double = js.native
+    sealed trait Small
+      extends StObject
+         with RatingSize
+    /* 0 */ val Small: typings.officeUiFabricReact.ratingTypesMod.RatingSize.Small & Double = js.native
   }
   
-  @js.native
   trait IRating extends StObject
   
-  @js.native
-  trait IRatingProps extends AllHTMLAttributes[HTMLElement] {
+  trait IRatingProps
+    extends StObject
+       with AllHTMLAttributes[HTMLElement] {
     
     /**
       * Allow the rating value to be set to 0 instead of a minimum of 1.
       */
-    var allowZeroStars: js.UndefOr[Boolean] = js.native
+    var allowZeroStars: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Optional label format for a rating star that will be read by screen readers.
@@ -50,40 +53,40 @@ object ratingTypesMod {
       * where \{0\} will be substituted by the current rating and \{1\} will be substituted by the max rating.
       * @defaultvalue empty string.
       */
-    var ariaLabelFormat: js.UndefOr[String] = js.native
+    var ariaLabelFormat: js.UndefOr[String] = js.undefined
     
     /**
       * Deprecated: Optional id of label describing this instance of Rating.
       * @deprecated Use `getAriaLabel` instead.
       */
-    var ariaLabelId: js.UndefOr[String] = js.native
+    var ariaLabelId: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the IRating interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[IRating]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IRating]] = js.undefined
     
-    var getAriaLabel: js.UndefOr[js.Function2[/* rating */ Double, /* max */ Double, String]] = js.native
+    var getAriaLabel: js.UndefOr[js.Function2[/* rating */ Double, /* max */ Double, String]] = js.undefined
     
     /**
       * Custom icon
       * @defaultvalue FavoriteStarFill
       */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /**
       * Maximum rating, defaults to 5, has to be \>= min
       */
     @JSName("max")
-    var max_IRatingProps: js.UndefOr[Double] = js.native
+    var max_IRatingProps: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum rating, defaults to 1, has to be \>= 0
       * @deprecated No longer used.
       */
     @JSName("min")
-    var min_IRatingProps: js.UndefOr[Double] = js.native
+    var min_IRatingProps: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback issued when the rating changes.
@@ -91,39 +94,39 @@ object ratingTypesMod {
     @JSName("onChange")
     var onChange_IRatingProps: js.UndefOr[
         js.Function2[/* event */ FocusEvent[HTMLElement], /* rating */ js.UndefOr[Double], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * @deprecated Use `onChange` instead.
       */
-    var onChanged: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.native
+    var onChanged: js.UndefOr[js.Function1[/* rating */ Double, Unit]] = js.undefined
     
     /**
       * Selected rating, has to be an integer between min and max
       */
-    var rating: js.UndefOr[Double] = js.native
+    var rating: js.UndefOr[Double] = js.undefined
     
     /**
       * Size of rating, defaults to small
       */
     @JSName("size")
-    var size_IRatingProps: js.UndefOr[RatingSize] = js.native
+    var size_IRatingProps: js.UndefOr[RatingSize] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IRatingStyleProps, IRatingStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IRatingStyleProps, IRatingStyles]] = js.undefined
     
     /**
       * Theme (provided through customization.)
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Custom icon for unselected rating elements.
       * @defaultvalue FavoriteStar
       */
-    var unselectedIcon: js.UndefOr[String] = js.native
+    var unselectedIcon: js.UndefOr[String] = js.undefined
   }
   object IRatingProps {
     
@@ -234,14 +237,13 @@ object ratingTypesMod {
     }
   }
   
-  @js.native
   trait IRatingStyleProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IRatingStyleProps {
     
@@ -271,30 +273,29 @@ object ratingTypesMod {
     }
   }
   
-  @js.native
   trait IRatingStyles extends StObject {
     
-    var labelText: IStyle = js.native
+    var labelText: IStyle
     
-    var ratingButton: IStyle = js.native
+    var ratingButton: IStyle
     
-    var ratingFocusZone: IStyle = js.native
+    var ratingFocusZone: IStyle
     
-    var ratingStar: IStyle = js.native
+    var ratingStar: IStyle
     
-    var ratingStarBack: IStyle = js.native
+    var ratingStarBack: IStyle
     
-    var ratingStarFront: IStyle = js.native
+    var ratingStarFront: IStyle
     
-    var ratingStarIsLarge: IStyle = js.native
+    var ratingStarIsLarge: IStyle
     
-    var ratingStarIsSmall: IStyle = js.native
+    var ratingStarIsSmall: IStyle
     
-    var root: IStyle = js.native
+    var root: IStyle
     
-    var rootIsLarge: IStyle = js.native
+    var rootIsLarge: IStyle
     
-    var rootIsSmall: IStyle = js.native
+    var rootIsSmall: IStyle
   }
   object IRatingStyles {
     

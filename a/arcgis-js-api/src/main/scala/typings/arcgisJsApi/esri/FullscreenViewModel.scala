@@ -7,11 +7,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FullscreenViewModel extends Accessor {
+trait FullscreenViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * The [HTMLElement](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement) to present in fullscreen mode.

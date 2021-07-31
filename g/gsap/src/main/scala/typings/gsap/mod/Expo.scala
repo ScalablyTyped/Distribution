@@ -2,13 +2,18 @@ package typings.gsap.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("gsap", "Expo")
 @js.native
 class Expo ()
-  extends typings.gsap.gsap.Ease
+  extends StObject
+     with typings.gsap.gsap.Ease {
+  
+  /** Translates the tween's progress ratio into the corresponding ease ratio. */
+  /* CompleteClass */
+  override def getRatio(p: Double): Double = js.native
+}
 object Expo {
   
   @JSImport("gsap", "Expo")

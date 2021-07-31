@@ -5,31 +5,46 @@ import typings.sqltoolsFormatter.typesMod.Token
 import typings.sqltoolsFormatter.typesMod.TokenizerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractMod {
   
   @JSImport("@sqltools/formatter/lib/languages/utils/abstract", JSImport.Default)
   @js.native
-  abstract class default protected () extends AbstractFormatter {
+  abstract class default protected ()
+    extends StObject
+       with AbstractFormatter {
     def this(cfg: Config) = this()
-  }
-  
-  @js.native
-  trait AbstractFormatter extends StObject {
     
+    /* CompleteClass */
     var cfg: Config = js.native
     
-    def format(query: String): String = js.native
+    /* CompleteClass */
+    override def format(query: String): String = js.native
     
-    def getTokenizerConfig(): TokenizerConfig = js.native
+    /* CompleteClass */
+    override def getTokenizerConfig(): TokenizerConfig = js.native
     
-    var tokenOverride: js.UndefOr[js.Function2[/* token */ Token, /* previousToken */ js.UndefOr[Token], Token]] = js.native
+    /* CompleteClass */
+    override def tokenize(query: String): js.Array[Token] = js.native
     
-    def tokenize(query: String): js.Array[Token] = js.native
+    /* CompleteClass */
+    override def tokenizer(): typings.sqltoolsFormatter.tokenizerMod.default = js.native
+  }
+  
+  trait AbstractFormatter extends StObject {
     
-    def tokenizer(): typings.sqltoolsFormatter.tokenizerMod.default = js.native
+    var cfg: Config
+    
+    def format(query: String): String
+    
+    def getTokenizerConfig(): TokenizerConfig
+    
+    var tokenOverride: js.UndefOr[js.Function2[/* token */ Token, /* previousToken */ js.UndefOr[Token], Token]] = js.undefined
+    
+    def tokenize(query: String): js.Array[Token]
+    
+    def tokenizer(): typings.sqltoolsFormatter.tokenizerMod.default
   }
   object AbstractFormatter {
     

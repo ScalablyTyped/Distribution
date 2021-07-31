@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupedResult extends StObject {
   
   /** The bounding polygon around the product detected in the query image. */
-  var boundingPoly: js.UndefOr[BoundingPoly] = js.native
+  var boundingPoly: js.UndefOr[BoundingPoly] = js.undefined
   
   /** List of generic predictions for the object in the bounding box. */
-  var objectAnnotations: js.UndefOr[js.Array[ObjectAnnotation]] = js.native
+  var objectAnnotations: js.UndefOr[js.Array[ObjectAnnotation]] = js.undefined
   
   /** List of results, one for each product match. */
-  var results: js.UndefOr[js.Array[Result]] = js.native
+  var results: js.UndefOr[js.Array[Result]] = js.undefined
 }
 object GroupedResult {
   

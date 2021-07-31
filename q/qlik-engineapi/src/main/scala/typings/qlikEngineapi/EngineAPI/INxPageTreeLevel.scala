@@ -2,22 +2,20 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INxPageTreeLevel extends StObject {
   
   /**
     * Number of dimensions to include in the tree.
     */
-  var qDepth: Double = js.native
+  var qDepth: Double
   
   /**
     * The first dimension that is to be part of the tree, counted from the left.
     * For example, if qLeft is equal to 1, omit nodes from the first dimension in the current sort order.
     */
-  var qLeft: Double = js.native
+  var qLeft: Double
 }
 object INxPageTreeLevel {
   

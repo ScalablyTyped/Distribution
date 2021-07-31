@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.pulumiPulumi.resourceMod.ResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SharedVolumeConstructor
-  extends /**
+  extends StObject
+     with /**
   * Construct a new Volume with the given unique name.
   *
   * @param name The unique name of the volume.

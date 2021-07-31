@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sshKeyMod {
@@ -58,6 +57,10 @@ object sshKeyMod {
   /* static members */
   object SshKey {
     
+    @JSImport("@pulumi/aws/iam/sshKey", "SshKey")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SshKey resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -67,50 +70,44 @@ object sshKeyMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SshKey = js.native
-    @JSImport("@pulumi/aws/iam/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SshKey = js.native
-    @JSImport("@pulumi/aws/iam/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SshKeyState): SshKey = js.native
-    @JSImport("@pulumi/aws/iam/sshKey", "SshKey.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SshKeyState, opts: CustomResourceOptions): SshKey = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SshKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SshKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SshKeyState): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SshKey]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SshKeyState, opts: CustomResourceOptions): SshKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SshKey]
     
     /**
       * Returns true if the given object is an instance of SshKey.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/sshKey", "SshKey.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/sshKey.SshKey */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/sshKey.SshKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/sshKey.SshKey */ Boolean]
   }
   
-  @js.native
   trait SshKeyArgs extends StObject {
     
     /**
       * Specifies the public key encoding format to use in the response. To retrieve the public key in ssh-rsa format, use `SSH`. To retrieve the public key in PEM format, use `PEM`.
       */
-    val encoding: Input[String] = js.native
+    val encoding: Input[String]
     
     /**
       * The SSH public key. The public key must be encoded in ssh-rsa format or PEM format.
       */
-    val publicKey: Input[String] = js.native
+    val publicKey: Input[String]
     
     /**
       * The status to assign to the SSH public key. Active means the key can be used for authentication with an AWS CodeCommit repository. Inactive means the key cannot be used. Default is `active`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IAM user to associate the SSH public key with.
       */
-    val username: Input[String] = js.native
+    val username: Input[String]
   }
   object SshKeyArgs {
     
@@ -140,38 +137,37 @@ object sshKeyMod {
     }
   }
   
-  @js.native
   trait SshKeyState extends StObject {
     
     /**
       * Specifies the public key encoding format to use in the response. To retrieve the public key in ssh-rsa format, use `SSH`. To retrieve the public key in PEM format, use `PEM`.
       */
-    val encoding: js.UndefOr[Input[String]] = js.native
+    val encoding: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The MD5 message digest of the SSH public key.
       */
-    val fingerprint: js.UndefOr[Input[String]] = js.native
+    val fingerprint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The SSH public key. The public key must be encoded in ssh-rsa format or PEM format.
       */
-    val publicKey: js.UndefOr[Input[String]] = js.native
+    val publicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The unique identifier for the SSH public key.
       */
-    val sshPublicKeyId: js.UndefOr[Input[String]] = js.native
+    val sshPublicKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The status to assign to the SSH public key. Active means the key can be used for authentication with an AWS CodeCommit repository. Inactive means the key cannot be used. Default is `active`.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the IAM user to associate the SSH public key with.
       */
-    val username: js.UndefOr[Input[String]] = js.native
+    val username: js.UndefOr[Input[String]] = js.undefined
   }
   object SshKeyState {
     

@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object base64Mod {
   
-  @JSImport("base64", "decode")
+  @JSImport("base64", JSImport.Namespace)
   @js.native
-  def decode(data: String): ClassBuffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("base64", "encode")
-  @js.native
-  def encode(data: ClassBuffer): String = js.native
-  @JSImport("base64", "encode")
-  @js.native
-  def encode(data: ClassBuffer, url: Boolean): String = js.native
+  @scala.inline
+  def decode(data: String): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
+  
+  @scala.inline
+  def encode(data: ClassBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(data: ClassBuffer, url: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
 }

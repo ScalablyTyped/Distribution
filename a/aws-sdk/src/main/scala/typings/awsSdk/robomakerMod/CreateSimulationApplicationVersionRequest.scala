@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSimulationApplicationVersionRequest extends StObject {
   
   /**
     * The application information for the simulation application.
     */
-  var application: Arn = js.native
+  var application: Arn
   
   /**
     * The current revision id for the simulation application. If you provide a value and it matches the latest revision ID, a new version will be created.
     */
-  var currentRevisionId: js.UndefOr[RevisionId] = js.native
+  var currentRevisionId: js.UndefOr[RevisionId] = js.undefined
 }
 object CreateSimulationApplicationVersionRequest {
   

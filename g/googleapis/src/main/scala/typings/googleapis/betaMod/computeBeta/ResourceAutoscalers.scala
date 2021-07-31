@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/beta", "compute_beta.Resource$Autoscalers")
@@ -99,7 +98,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaAutoscalerAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaAutoscalerAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalerAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscalerAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceAutoscalersAggregatedlist): GaxiosPromise[SchemaAutoscalerAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceAutoscalersAggregatedlist,
@@ -195,7 +194,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAutoscalersDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAutoscalersDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -286,7 +285,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(callback: BodyResponseCallback[SchemaAutoscaler]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscaler] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(params: ParamsResourceAutoscalersGet): GaxiosPromise[SchemaAutoscaler] = js.native
   def get(params: ParamsResourceAutoscalersGet, callback: BodyResponseCallback[SchemaAutoscaler]): Unit = js.native
   def get(
@@ -379,7 +378,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceAutoscalersInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceAutoscalersInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -483,7 +482,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAutoscalerList] = js.native
   def list(callback: BodyResponseCallback[SchemaAutoscalerList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAutoscalerList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAutoscalerList] = js.native
   def list(params: ParamsResourceAutoscalersList): GaxiosPromise[SchemaAutoscalerList] = js.native
   def list(params: ParamsResourceAutoscalersList, callback: BodyResponseCallback[SchemaAutoscalerList]): Unit = js.native
   def list(
@@ -580,7 +579,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAutoscalersPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceAutoscalersPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(
@@ -673,7 +672,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceAutoscalersTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceAutoscalersTestiampermissions,
@@ -772,7 +771,7 @@ class ResourceAutoscalers protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaOperation] = js.native
   def update(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceAutoscalersUpdate): GaxiosPromise[SchemaOperation] = js.native
   def update(params: ParamsResourceAutoscalersUpdate, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def update(

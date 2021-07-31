@@ -8,7 +8,6 @@ import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.Sudo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runnersMod {
@@ -46,24 +45,23 @@ object runnersMod {
     def show(runnerId: Double, options: Sudo): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait RunnerSchema extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var description: String = js.native
+    var description: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var ip_address: String = js.native
+    var ip_address: String
     
-    var is_shared: Boolean = js.native
+    var is_shared: Boolean
     
-    var name: String = js.native
+    var name: String
     
-    var online: Boolean = js.native
+    var online: Boolean
     
-    var status: String = js.native
+    var status: String
   }
   object RunnerSchema {
     

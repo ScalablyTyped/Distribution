@@ -2,14 +2,12 @@ package typings.semanticUiProgress.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-progress.SemanticUI.ProgressSettings._Impl, 'showActivity'> */
-@js.native
 trait PickImplshowActivity extends StObject {
   
-  var showActivity: Boolean = js.native
+  var showActivity: Boolean
 }
 object PickImplshowActivity {
   

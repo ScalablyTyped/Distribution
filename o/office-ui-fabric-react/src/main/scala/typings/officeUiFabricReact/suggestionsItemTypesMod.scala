@@ -12,54 +12,52 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsItemTypesMod {
   
-  @js.native
   trait ISuggestionItemProps[T] extends StObject {
     
     /** Optional renderer to override the default one for each type of picker. */
-    def RenderSuggestion(item: T, suggestionItemProps: ISuggestionItemProps[T]): Element = js.native
+    def RenderSuggestion(item: T, suggestionItemProps: ISuggestionItemProps[T]): Element
     
     /** Optional className for the root element of the suggestion item. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Optional callback to access the ISuggestionItem interface. Use this instead of ref for accessing
       * the public methods and properties of the component.
       */
-    var componentRef: js.UndefOr[IRefObject[ISuggestionsItem]] = js.native
+    var componentRef: js.UndefOr[IRefObject[ISuggestionsItem]] = js.undefined
     
     /** Unique id of the suggested item. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** An override for the 'selected' property of the SuggestionModel. */
-    var isSelectedOverride: js.UndefOr[Boolean] = js.native
+    var isSelectedOverride: js.UndefOr[Boolean] = js.undefined
     
     /** Callback for when the user clicks on the suggestion. */
-    def onClick(ev: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit = js.native
+    def onClick(ev: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit
     
     /** Callback for when the item is removed from the array of suggested items. */
-    def onRemoveItem(ev: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit = js.native
+    def onRemoveItem(ev: MouseEvent[HTMLButtonElement, NativeMouseEvent]): Unit
     
     /**
       * The ARIA label for the button to remove the suggestion from the list.
       */
-    var removeButtonAriaLabel: js.UndefOr[String] = js.native
+    var removeButtonAriaLabel: js.UndefOr[String] = js.undefined
     
     /** Whether the remove button should be rendered or not. */
-    var showRemoveButton: js.UndefOr[Boolean] = js.native
+    var showRemoveButton: js.UndefOr[Boolean] = js.undefined
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
-    var styles: js.UndefOr[IStyleFunctionOrObject[ISuggestionsItemStyleProps, ISuggestionsItemStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[ISuggestionsItemStyleProps, ISuggestionsItemStyles]] = js.undefined
     
     /** Individual suggestion object containing its properties. */
-    var suggestionModel: ISuggestionModel[T] = js.native
+    var suggestionModel: ISuggestionModel[T]
     
     /** Theme provided by High-Order Component. */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
   }
   object ISuggestionItemProps {
     
@@ -75,7 +73,7 @@ object suggestionsItemTypesMod {
     }
     
     @scala.inline
-    implicit class ISuggestionItemPropsMutableBuilder[Self <: ISuggestionItemProps[_], T] (val x: Self with ISuggestionItemProps[T]) extends AnyVal {
+    implicit class ISuggestionItemPropsMutableBuilder[Self <: ISuggestionItemProps[?], T] (val x: Self & ISuggestionItemProps[T]) extends AnyVal {
       
       @scala.inline
       def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
@@ -145,19 +143,17 @@ object suggestionsItemTypesMod {
     }
   }
   
-  @js.native
   trait ISuggestionsItem extends StObject
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.types.ISuggestionItemProps<any>, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/pickers/Suggestions/SuggestionsItem.types.ISuggestionItemProps<any>, 'className'> & {  suggested :boolean | undefined} */
-  @js.native
   trait ISuggestionsItemStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Whether the suggestion item is selected or not. */
-    var suggested: js.UndefOr[Boolean] = js.native
+    var suggested: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object ISuggestionsItemStyleProps {
     
@@ -187,17 +183,16 @@ object suggestionsItemTypesMod {
     }
   }
   
-  @js.native
   trait ISuggestionsItemStyles extends StObject {
     
     /** Refers to the remove button in case it's rendered. */
-    var closeButton: IStyle = js.native
+    var closeButton: IStyle
     
     /** Refers to the CommandButton holding the content of the suggested item. */
-    var itemButton: IStyle = js.native
+    var itemButton: IStyle
     
     /** Root element of the suggested item. */
-    var root: IStyle = js.native
+    var root: IStyle
   }
   object ISuggestionsItemStyles {
     

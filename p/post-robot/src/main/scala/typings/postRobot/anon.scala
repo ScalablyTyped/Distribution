@@ -2,19 +2,17 @@ package typings.postRobot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var origin: String = js.native
+    var origin: String
     
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object Data {
     

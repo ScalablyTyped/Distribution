@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.SummaryStatisticsResult
 import typings.arcgisJsApi.esri.summaryStatisticsForAgeSummaryStatisticsForAgeParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object summaryStatisticsForAgeMod extends Shortcut {

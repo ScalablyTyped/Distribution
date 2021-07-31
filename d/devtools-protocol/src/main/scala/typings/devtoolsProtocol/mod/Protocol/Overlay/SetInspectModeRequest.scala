@@ -2,22 +2,20 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetInspectModeRequest extends StObject {
   
   /**
     * A descriptor for the highlight appearance of hovered-over nodes. May be omitted if `enabled
     * == false`.
     */
-  var highlightConfig: js.UndefOr[HighlightConfig] = js.native
+  var highlightConfig: js.UndefOr[HighlightConfig] = js.undefined
   
   /**
     * Set an inspection mode.
     */
-  var mode: InspectMode = js.native
+  var mode: InspectMode
 }
 object SetInspectModeRequest {
   

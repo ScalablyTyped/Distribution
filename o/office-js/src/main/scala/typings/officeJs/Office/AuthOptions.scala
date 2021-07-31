@@ -2,13 +2,11 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides options for the user experience when Office obtains an access token to the add-in from AAD v. 2.0 with the `getAccessToken` method.
   */
-@js.native
 trait AuthOptions extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait AuthOptions extends StObject {
     * If set to `true`, Office will show an interactive consent UI after it fails to silently get an access token.
     * The prompt will only allow consent to the AAD profile scope, not to any Microsoft Graph scopes.
     */
-  var allowConsentPrompt: js.UndefOr[Boolean] = js.native
+  var allowConsentPrompt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows Office to get an access token silently provided consent is present or show interactive UI to sign in the user. Default value is `false`.
     * If set to `false`, Office will silently try to get an access token. If it fails to do so, Office will return a descriptive error.
     * If set to `true`, Office will show an interactive sign-in UI after it fails to silently get an access token.
     */
-  var allowSignInPrompt: js.UndefOr[Boolean] = js.native
+  var allowSignInPrompt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the `asyncContext` property of the `AsyncResult` object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.native
+  var asyncContext: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Causes Office to prompt the user to provide the additional factor when the tenancy being targeted by Microsoft Graph requires multifactor
@@ -38,21 +36,21 @@ trait AuthOptions extends StObject {
     * call of `getAccessToken` after Microsoft Graph has sent an error requesting the additional factor and containing the string that should
     * be used with the `authChallenge` option.
     */
-  var authChallenge: js.UndefOr[String] = js.native
+  var authChallenge: js.UndefOr[String] = js.undefined
   
   /**
     * Causes Office to return a descriptive error when the add-in wants to access Microsoft Graph and the user/admin has not granted consent to Graph scopes. Default value is `false`.
     * Office only supports consent to Graph scopes when the add-in has been deployed by a tenant admin. This information will not be available during development.
     * Setting this option to `true` will cause Office to inform your add-in beforehand (by returning a descriptive error) if Graph access will fail.
     */
-  var forMSGraphAccess: js.UndefOr[Boolean] = js.native
+  var forMSGraphAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Prompts the user to add their Office account (or to switch to it, if it is already added). Default value is `false`.
     *
     * @deprecated Use `allowSignInPrompt` instead.
     */
-  var forceAddAccount: js.UndefOr[Boolean] = js.native
+  var forceAddAccount: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Causes Office to display the add-in consent experience. Useful if the add-in's Azure permissions have changed or if the user's consent has
@@ -60,7 +58,7 @@ trait AuthOptions extends StObject {
     *
     * @deprecated Use `allowConsentPrompt` instead.
     */
-  var forceConsent: js.UndefOr[Boolean] = js.native
+  var forceConsent: js.UndefOr[Boolean] = js.undefined
 }
 object AuthOptions {
   

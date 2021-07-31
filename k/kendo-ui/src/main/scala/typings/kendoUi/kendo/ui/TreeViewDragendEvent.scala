@@ -3,17 +3,17 @@ package typings.kendoUi.kendo.ui
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TreeViewDragendEvent extends TreeViewEvent {
+trait TreeViewDragendEvent
+  extends StObject
+     with TreeViewEvent {
   
-  var destinationNode: js.UndefOr[Element] = js.native
+  var destinationNode: js.UndefOr[Element] = js.undefined
   
-  var dropPosition: js.UndefOr[String] = js.native
+  var dropPosition: js.UndefOr[String] = js.undefined
   
-  var sourceNode: js.UndefOr[Element] = js.native
+  var sourceNode: js.UndefOr[Element] = js.undefined
 }
 object TreeViewDragendEvent {
   

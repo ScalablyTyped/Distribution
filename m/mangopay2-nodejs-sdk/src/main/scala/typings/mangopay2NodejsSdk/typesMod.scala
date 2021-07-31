@@ -8,7 +8,6 @@ import typings.std.Pick
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -2137,13 +2136,13 @@ object typesMod {
   
   type DeepPartial[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias mangopay2-nodejs-sdk.mangopay2-nodejs-sdk/types.DeepPartial<T[P]> * / object}
-    */ typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DeepPartial with TopLevel[js.Any]
+    */ typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.DeepPartial & TopLevel[js.Any]
   
-  type MakeKeysNullable[T1, T2 /* <: /* keyof T1 */ String */] = (Omit[T1, T2]) with typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MakeKeysNullable with TopLevel[T1]
+  type MakeKeysNullable[T1, T2 /* <: /* keyof T1 */ String */] = (Omit[T1, T2]) & typings.mangopay2NodejsSdk.mangopay2NodejsSdkStrings.MakeKeysNullable & TopLevel[T1]
   
-  type MakeKeysOptional[T1, T2 /* <: /* keyof T1 */ String */] = (Omit[T1, T2]) with (Partial[Pick[T1, T2]])
+  type MakeKeysOptional[T1, T2 /* <: /* keyof T1 */ String */] = (Omit[T1, T2]) & (Partial[Pick[T1, T2]])
   
-  type MakeKeysRequired[T1, T2 /* <: /* keyof T1 */ String */] = (Omit[T1, T2]) with (Required[Pick[T1, T2]])
+  type MakeKeysRequired[T1, T2 /* <: /* keyof T1 */ String */] = (Omit[T1, T2]) & (Required[Pick[T1, T2]])
   
   type Omit[T, K /* <: /* keyof T */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
@@ -2151,7 +2150,7 @@ object typesMod {
   
   type PickPartial[T, Par /* <: /* keyof T */ String */] = Pick[Partial[T], Par]
   
-  type PickPartialRequired[T, Par /* <: /* keyof T */ String */, Req /* <: /* keyof T */ String */] = (Pick[Partial[T], Par]) with (Pick[Required[T], Req])
+  type PickPartialRequired[T, Par /* <: /* keyof T */ String */, Req /* <: /* keyof T */ String */] = (Pick[Partial[T], Par]) & (Pick[Required[T], Req])
   
   type ValueOf[T] = /* import warning: importer.ImportType#apply Failed type conversion: T[keyof T] */ js.Any
 }

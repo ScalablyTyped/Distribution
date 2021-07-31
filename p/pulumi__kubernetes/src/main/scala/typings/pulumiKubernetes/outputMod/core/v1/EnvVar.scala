@@ -2,29 +2,27 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * EnvVar represents an environment variable present in a Container.
   */
-@js.native
 trait EnvVar extends StObject {
   
   /**
     * Name of the environment variable. Must be a C_IDENTIFIER.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Variable references $(VAR_NAME) are expanded using the previous defined environment variables in the container and any service environment variables. If a variable cannot be resolved, the reference in the input string will be unchanged. The $(VAR_NAME) syntax can be escaped with a double $$, ie: $$(VAR_NAME). Escaped references will never be expanded, regardless of whether the variable exists or not. Defaults to "".
     */
-  var value: String = js.native
+  var value: String
   
   /**
     * Source for the environment variable's value. Cannot be used if value is not empty.
     */
-  var valueFrom: EnvVarSource = js.native
+  var valueFrom: EnvVarSource
 }
 object EnvVar {
   

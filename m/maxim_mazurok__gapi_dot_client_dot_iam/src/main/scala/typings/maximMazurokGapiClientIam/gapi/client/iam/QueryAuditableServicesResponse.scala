@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIam.gapi.client.iam
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryAuditableServicesResponse extends StObject {
   
   /** The auditable services for a resource. */
-  var services: js.UndefOr[js.Array[AuditableService]] = js.native
+  var services: js.UndefOr[js.Array[AuditableService]] = js.undefined
 }
 object QueryAuditableServicesResponse {
   

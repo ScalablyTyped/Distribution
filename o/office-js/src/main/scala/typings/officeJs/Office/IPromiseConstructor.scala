@@ -3,7 +3,6 @@ package typings.officeJs.Office
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // **Note**: this is a copy of the PromiseConstructor object from
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 // (because even though Promise is part of standard lib.d.ts, PromiseConstructor is not)
 @js.native
 trait IPromiseConstructor
-  extends /**
+  extends StObject
+     with /**
   * Creates a new Promise.
   * @param executor A callback used to initialize the promise. This callback is passed two arguments:
   * a resolve callback used resolve the promise with a value or the result of another promise,

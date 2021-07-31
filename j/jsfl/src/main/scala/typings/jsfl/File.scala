@@ -2,17 +2,15 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
-  var contents: String = js.native
+  var contents: String
   
-  def copy(path: String): File = js.native
+  def copy(path: String): File
   
-  def write(data: String): File = js.native
+  def write(data: String): File
 }
 object File {
   

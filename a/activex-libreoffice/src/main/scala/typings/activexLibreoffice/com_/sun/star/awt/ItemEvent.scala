@@ -4,21 +4,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies an event occurred to an item of a menu, a list box etc. */
-@js.native
-trait ItemEvent extends EventObject {
+trait ItemEvent
+  extends StObject
+     with EventObject {
   
   /** specifies which item is newly highlighted. */
-  var Highlighted: Double = js.native
+  var Highlighted: Double
   
   /** specifies the id of the item. */
-  var ItemId: Double = js.native
+  var ItemId: Double
   
   /** specifies which item is newly selected. */
-  var Selected: Double = js.native
+  var Selected: Double
 }
 object ItemEvent {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,22 +14,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * upon a parametrized statement, it needs values to fill in the parameters with actual values when it is being loaded. One method to gather these values
   * is calling the {@link XDatabaseParameterListener} listeners, which can fill them in.
   */
-@js.native
-trait XDatabaseParameterBroadcaster extends XInterface {
+trait XDatabaseParameterBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener, to allow it to fill in necessary parameter values.
     * @param aListener the listener to add.
     * @see com.sun.star.form.XDatabaseParameterListener
     */
-  def addParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
+  def addParameterListener(aListener: XDatabaseParameterListener): Unit
   
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XDatabaseParameterListener
     */
-  def removeParameterListener(aListener: XDatabaseParameterListener): Unit = js.native
+  def removeParameterListener(aListener: XDatabaseParameterListener): Unit
 }
 object XDatabaseParameterBroadcaster {
   

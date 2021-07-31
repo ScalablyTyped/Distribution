@@ -8,10 +8,8 @@ import typings.std.HTMLImageElement
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshTextureProperties extends StObject {
   
   /**
@@ -19,28 +17,28 @@ trait MeshTextureProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#data)
     */
-  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | js.Any | ImageData] = js.native
+  var data: js.UndefOr[HTMLImageElement | HTMLCanvasElement | js.Any | ImageData] = js.undefined
   
   /**
     * Indicates whether the image data should be interpreted as being semi-transparent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#transparent)
     */
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The url to the image resource.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#url)
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how uv coordinates outside the [0, 1] range are handled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-MeshTexture.html#wrap)
     */
-  var wrap: js.UndefOr[clamp | repeat | mirror | SeparableWrapModes] = js.native
+  var wrap: js.UndefOr[clamp | repeat | mirror | SeparableWrapModes] = js.undefined
 }
 object MeshTextureProperties {
   

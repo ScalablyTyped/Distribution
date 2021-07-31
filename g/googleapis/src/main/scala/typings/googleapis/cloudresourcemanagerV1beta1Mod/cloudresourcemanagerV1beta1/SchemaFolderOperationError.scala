@@ -2,19 +2,17 @@ package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A classification of the Folder Operation error.
   */
-@js.native
 trait SchemaFolderOperationError extends StObject {
   
   /**
     * The type of operation error experienced.
     */
-  var errorMessageId: js.UndefOr[String] = js.native
+  var errorMessageId: js.UndefOr[String] = js.undefined
 }
 object SchemaFolderOperationError {
   

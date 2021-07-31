@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTriggersResponse extends StObject {
   
   /**
     * A continuation token, if not all the requested triggers have yet been returned.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
   /**
     * A list of triggers for the specified job.
     */
-  var Triggers: js.UndefOr[TriggerList] = js.native
+  var Triggers: js.UndefOr[TriggerList] = js.undefined
 }
 object GetTriggersResponse {
   

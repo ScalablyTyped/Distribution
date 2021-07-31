@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableIdentifier extends StObject {
   
   /**
     * The ID of the Data Catalog in which the table resides.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database that contains the target table.
     */
-  var DatabaseName: js.UndefOr[NameString] = js.native
+  var DatabaseName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The name of the target table.
     */
-  var Name: js.UndefOr[NameString] = js.native
+  var Name: js.UndefOr[NameString] = js.undefined
 }
 object TableIdentifier {
   

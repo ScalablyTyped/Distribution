@@ -3,19 +3,17 @@ package typings.jqueryAjaxfile.anon
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddDisposeCallback extends StObject {
   
-  def addDisposeCallback(node: typings.std.Element, callback: js.Function): Unit = js.native
+  def addDisposeCallback(node: typings.std.Element, callback: js.Function): Unit
   
-  def cleanNode(node: Node): typings.std.Element = js.native
+  def cleanNode(node: Node): typings.std.Element
   
-  def removeDisposeCallback(node: typings.std.Element, callback: js.Function): Unit = js.native
+  def removeDisposeCallback(node: typings.std.Element, callback: js.Function): Unit
   
-  def removeNode(node: Node): Unit = js.native
+  def removeNode(node: Node): Unit
 }
 object AddDisposeCallback {
   

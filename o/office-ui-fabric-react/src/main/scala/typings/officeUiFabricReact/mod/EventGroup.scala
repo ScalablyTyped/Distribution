@@ -2,7 +2,6 @@ package typings.officeUiFabricReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("office-ui-fabric-react", "EventGroup")
@@ -32,13 +31,11 @@ object EventGroup {
   def _uniqueId_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_uniqueId")(x.asInstanceOf[js.Any])
   
   /** Check to see if the target has declared support of the given event. */
-  @JSImport("office-ui-fabric-react", "EventGroup.isDeclared")
-  @js.native
-  def isDeclared(target: js.Any, eventName: String): Boolean = js.native
+  @scala.inline
+  def isDeclared(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDeclared")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react", "EventGroup.isObserved")
-  @js.native
-  def isObserved(target: js.Any, eventName: String): Boolean = js.native
+  @scala.inline
+  def isObserved(target: js.Any, eventName: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isObserved")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /** For IE8, bubbleEvent is ignored here and must be dealt with by the handler.
     *  Events raised here by default have bubbling set to false and cancelable set to true.
@@ -46,20 +43,15 @@ object EventGroup {
     *  which may lead to unexpected behavior if it differs from the defaults.
     *
     */
-  @JSImport("office-ui-fabric-react", "EventGroup.raise")
-  @js.native
-  def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = js.native
-  @JSImport("office-ui-fabric-react", "EventGroup.raise")
-  @js.native
-  def raise(target: js.Any, eventName: String, eventArgs: js.UndefOr[scala.Nothing], bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
-  @JSImport("office-ui-fabric-react", "EventGroup.raise")
-  @js.native
-  def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = js.native
-  @JSImport("office-ui-fabric-react", "EventGroup.raise")
-  @js.native
-  def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = js.native
+  @scala.inline
+  def raise(target: js.Any, eventName: String): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  @scala.inline
+  def raise(target: js.Any, eventName: String, eventArgs: js.Any): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  @scala.inline
+  def raise(target: js.Any, eventName: String, eventArgs: js.Any, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  @scala.inline
+  def raise(target: js.Any, eventName: String, eventArgs: Unit, bubbleEvent: Boolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("raise")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any], bubbleEvent.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
   
-  @JSImport("office-ui-fabric-react", "EventGroup.stopPropagation")
-  @js.native
-  def stopPropagation(event: js.Any): Unit = js.native
+  @scala.inline
+  def stopPropagation(event: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

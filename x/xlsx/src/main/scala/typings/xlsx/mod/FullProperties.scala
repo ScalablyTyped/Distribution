@@ -3,43 +3,43 @@ package typings.xlsx.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FullProperties extends Properties {
+trait FullProperties
+  extends StObject
+     with Properties {
   
-  var AppVersion: js.UndefOr[String] = js.native
+  var AppVersion: js.UndefOr[String] = js.undefined
   
-  var Application: js.UndefOr[String] = js.native
+  var Application: js.UndefOr[String] = js.undefined
   
-  var ContentStatus: js.UndefOr[String] = js.native
+  var ContentStatus: js.UndefOr[String] = js.undefined
   
-  var DocSecurity: js.UndefOr[String] = js.native
+  var DocSecurity: js.UndefOr[String] = js.undefined
   
-  var HyperlinksChanged: js.UndefOr[Boolean] = js.native
+  var HyperlinksChanged: js.UndefOr[Boolean] = js.undefined
   
-  var Identifier: js.UndefOr[String] = js.native
+  var Identifier: js.UndefOr[String] = js.undefined
   
-  var Language: js.UndefOr[String] = js.native
+  var Language: js.UndefOr[String] = js.undefined
   
-  var LastPrinted: js.UndefOr[String] = js.native
+  var LastPrinted: js.UndefOr[String] = js.undefined
   
-  var LinksUpToDate: js.UndefOr[Boolean] = js.native
+  var LinksUpToDate: js.UndefOr[Boolean] = js.undefined
   
-  var ModifiedDate: js.UndefOr[Date] = js.native
+  var ModifiedDate: js.UndefOr[Date] = js.undefined
   
-  var Revision: js.UndefOr[String | Double] = js.native
+  var Revision: js.UndefOr[String | Double] = js.undefined
   
-  var ScaleCrop: js.UndefOr[Boolean] = js.native
+  var ScaleCrop: js.UndefOr[Boolean] = js.undefined
   
-  var SharedDoc: js.UndefOr[Boolean] = js.native
+  var SharedDoc: js.UndefOr[Boolean] = js.undefined
   
-  var SheetNames: js.UndefOr[js.Array[String]] = js.native
+  var SheetNames: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Version: js.UndefOr[String] = js.native
+  var Version: js.UndefOr[String] = js.undefined
   
-  var Worksheets: js.UndefOr[Double] = js.native
+  var Worksheets: js.UndefOr[Double] = js.undefined
 }
 object FullProperties {
   

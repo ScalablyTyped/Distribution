@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Emulation.SetUserAgentOverrideRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `92` extends StObject {
   
-  var paramsType: js.Array[SetUserAgentOverrideRequest] = js.native
+  var paramsType: js.Array[SetUserAgentOverrideRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `92` {
   

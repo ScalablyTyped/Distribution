@@ -4,7 +4,6 @@ import typings.uirouterCore.resolveInterfaceMod.ResolvableLiteral
 import typings.uirouterCore.resolveInterfaceMod.ResolvePolicy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@uirouter/angularjs", "Resolvable")
@@ -35,36 +34,21 @@ class Resolvable protected ()
     * @param data Pre-resolved data. If the resolve value is already known, it may be provided here.
     */
   def this(token: js.Any, resolveFn: js.Function) = this()
-  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_]) = this()
-  def this(token: js.Any, resolveFn: js.Function, deps: js.UndefOr[scala.Nothing], policy: ResolvePolicy) = this()
-  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy) = this()
-  def this(
-    token: js.Any,
-    resolveFn: js.Function,
-    deps: js.UndefOr[scala.Nothing],
-    policy: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ) = this()
-  def this(
-    token: js.Any,
-    resolveFn: js.Function,
-    deps: js.UndefOr[scala.Nothing],
-    policy: ResolvePolicy,
-    data: js.Any
-  ) = this()
-  def this(
-    token: js.Any,
-    resolveFn: js.Function,
-    deps: js.Array[_],
-    policy: js.UndefOr[scala.Nothing],
-    data: js.Any
-  ) = this()
-  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[_], policy: ResolvePolicy, data: js.Any) = this()
+  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any]) = this()
+  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: ResolvePolicy) = this()
+  def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy) = this()
+  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: Unit, data: js.Any) = this()
+  def this(token: js.Any, resolveFn: js.Function, deps: js.Array[js.Any], policy: ResolvePolicy, data: js.Any) = this()
+  def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: Unit, data: js.Any) = this()
+  def this(token: js.Any, resolveFn: js.Function, deps: Unit, policy: ResolvePolicy, data: js.Any) = this()
 }
 /* static members */
 object Resolvable {
   
-  @JSImport("@uirouter/angularjs", "Resolvable.fromData")
+  @JSImport("@uirouter/angularjs", "Resolvable")
   @js.native
-  def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromData(token: js.Any, data: js.Any): typings.uirouterCore.resolvableMod.Resolvable = (^.asInstanceOf[js.Dynamic].applyDynamic("fromData")(token.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.uirouterCore.resolvableMod.Resolvable]
 }

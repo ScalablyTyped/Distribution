@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This object is passed as a parameter to the event handlers for the StatusUpdated event. */
-@js.native
 trait CashDrawerStatusUpdatedEventArgs extends StObject {
   
   /** Gets the data associated with the StatusUpdated event. */
-  var status: CashDrawerStatus = js.native
+  var status: CashDrawerStatus
 }
 object CashDrawerStatusUpdatedEventArgs {
   

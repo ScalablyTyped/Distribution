@@ -2,21 +2,19 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUtterancesRequest extends StObject {
   
   /**
     * The name of the bot that stored the utterances.
     */
-  var botName: BotName = js.native
+  var botName: BotName
   
   /**
     *  The unique identifier for the user that made the utterances. This is the user ID that was sent in the PostContent or PostText operation request that contained the utterance.
     */
-  var userId: UserId = js.native
+  var userId: UserId
 }
 object DeleteUtterancesRequest {
   

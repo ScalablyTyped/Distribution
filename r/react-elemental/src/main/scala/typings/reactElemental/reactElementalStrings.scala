@@ -10,7 +10,6 @@ import typings.reactElemental.mod.SpinnerSize
 import typings.reactElemental.mod.TagSize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactElementalStrings {
@@ -37,7 +36,8 @@ object reactElementalStrings {
   
   @js.native
   sealed trait alpha
-    extends AlertSize
+    extends StObject
+       with AlertSize
        with ButtonSize
        with ModalSize
        with PulsatorSize
@@ -58,7 +58,8 @@ object reactElementalStrings {
   
   @js.native
   sealed trait beta
-    extends AlertSize
+    extends StObject
+       with AlertSize
        with ButtonSize
        with ModalSize
        with PulsatorSize
@@ -89,7 +90,8 @@ object reactElementalStrings {
   
   @js.native
   sealed trait delta
-    extends PulsatorSize
+    extends StObject
+       with PulsatorSize
        with SpinnerSize
   @scala.inline
   def delta: delta = "delta".asInstanceOf[delta]
@@ -120,7 +122,9 @@ object reactElementalStrings {
   def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
-  sealed trait error extends AlertType
+  sealed trait error
+    extends StObject
+       with AlertType
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -131,7 +135,8 @@ object reactElementalStrings {
   
   @js.native
   sealed trait gamma
-    extends ButtonSize
+    extends StObject
+       with ButtonSize
        with ModalSize
        with PulsatorSize
        with SpinnerSize
@@ -159,7 +164,9 @@ object reactElementalStrings {
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait info extends AlertType
+  sealed trait info
+    extends StObject
+       with AlertType
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
@@ -249,7 +256,9 @@ object reactElementalStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait plain extends LinkType
+  sealed trait plain
+    extends StObject
+       with LinkType
   @scala.inline
   def plain: plain = "plain".asInstanceOf[plain]
   
@@ -269,7 +278,9 @@ object reactElementalStrings {
   def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait regular extends LinkType
+  sealed trait regular
+    extends StObject
+       with LinkType
   @scala.inline
   def regular: regular = "regular".asInstanceOf[regular]
   
@@ -309,7 +320,9 @@ object reactElementalStrings {
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait success extends AlertType
+  sealed trait success
+    extends StObject
+       with AlertType
   @scala.inline
   def success: success = "success".asInstanceOf[success]
   
@@ -344,7 +357,9 @@ object reactElementalStrings {
   def tree: tree = "tree".asInstanceOf[tree]
   
   @js.native
-  sealed trait underline extends LinkType
+  sealed trait underline
+    extends StObject
+       with LinkType
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   
@@ -359,7 +374,9 @@ object reactElementalStrings {
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait warn extends AlertType
+  sealed trait warn
+    extends StObject
+       with AlertType
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
   

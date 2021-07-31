@@ -3,26 +3,24 @@ package typings.mergeAnything
 import typings.mergeAnything.mergeMod.IConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("merge-anything", JSImport.Default)
+  @JSImport("merge-anything", JSImport.Namespace)
   @js.native
-  def default(origin: js.Any, newComers: js.Any*): js.Any = js.native
-  @JSImport("merge-anything", JSImport.Default)
-  @js.native
-  def default(origin: IConfig, newComers: js.Any*): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("merge-anything", "concatArrays")
-  @js.native
-  def concatArrays(originVal: js.Any, newVal: js.Any): js.Any = js.native
+  @scala.inline
+  def default(origin: js.Any, newComers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(origin.asInstanceOf[js.Any], newComers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def default(origin: IConfig, newComers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(origin.asInstanceOf[js.Any], newComers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("merge-anything", "merge")
-  @js.native
-  def merge(origin: js.Any, newComers: js.Any*): js.Any = js.native
-  @JSImport("merge-anything", "merge")
-  @js.native
-  def merge(origin: IConfig, newComers: js.Any*): js.Any = js.native
+  @scala.inline
+  def concatArrays(originVal: js.Any, newVal: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("concatArrays")(originVal.asInstanceOf[js.Any], newVal.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def merge(origin: js.Any, newComers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(origin.asInstanceOf[js.Any], newComers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def merge(origin: IConfig, newComers: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("merge")(origin.asInstanceOf[js.Any], newComers.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

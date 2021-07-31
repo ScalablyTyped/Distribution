@@ -2,17 +2,15 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Facebook extends StObject {
   
-  var og_description: js.UndefOr[Nullable[String]] = js.native
+  var og_description: js.UndefOr[Nullable[String]] = js.undefined
   
-  var og_image: js.UndefOr[Nullable[String]] = js.native
+  var og_image: js.UndefOr[Nullable[String]] = js.undefined
   
-  var og_title: js.UndefOr[Nullable[String]] = js.native
+  var og_title: js.UndefOr[Nullable[String]] = js.undefined
 }
 object Facebook {
   

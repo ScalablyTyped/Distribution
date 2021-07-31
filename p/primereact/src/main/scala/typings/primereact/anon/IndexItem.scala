@@ -3,17 +3,15 @@ package typings.primereact.anon
 import typings.primereact.menuItemMod.MenuItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexItem extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var item: MenuItem = js.native
+  var item: MenuItem
   
-  var originalEvent: typings.std.Event = js.native
+  var originalEvent: typings.std.Event
 }
 object IndexItem {
   

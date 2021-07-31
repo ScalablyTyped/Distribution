@@ -27,10 +27,13 @@ import typings.sentryTypes.transactionMod.TransactionContext
 import typings.sentryTypes.userMod.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object exportsMod {
+  
+  @JSImport("@sentry/browser/dist/exports", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@sentry/browser/dist/exports", "BrowserClient")
   @js.native
@@ -57,11 +60,11 @@ object exportsMod {
   class Hub ()
     extends typings.sentryCore.mod.Hub {
     def this(client: Client[Options]) = this()
-    def this(client: js.UndefOr[scala.Nothing], scope: typings.sentryHub.scopeMod.Scope) = this()
+    def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope) = this()
     def this(client: Client[Options], scope: typings.sentryHub.scopeMod.Scope) = this()
-    def this(client: js.UndefOr[scala.Nothing], scope: js.UndefOr[scala.Nothing], _version: Double) = this()
-    def this(client: js.UndefOr[scala.Nothing], scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
-    def this(client: Client[Options], scope: js.UndefOr[scala.Nothing], _version: Double) = this()
+    def this(client: Unit, scope: Unit, _version: Double) = this()
+    def this(client: Unit, scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
+    def this(client: Client[Options], scope: Unit, _version: Double) = this()
     def this(client: Client[Options], scope: typings.sentryHub.scopeMod.Scope, _version: Double) = this()
   }
   
@@ -80,9 +83,12 @@ object exportsMod {
   /* static members */
   object Scope {
     
-    @JSImport("@sentry/browser/dist/exports", "Scope.clone")
+    @JSImport("@sentry/browser/dist/exports", "Scope")
     @js.native
-    def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def clone(scope: typings.sentryHub.scopeMod.Scope): typings.sentryHub.scopeMod.Scope = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(scope.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.scopeMod.Scope]
   }
   
   @JSImport("@sentry/browser/dist/exports", "Severity")
@@ -90,21 +96,21 @@ object exportsMod {
   object Severity extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sentryTypes.severityMod.Severity with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sentryTypes.severityMod.Severity & String] = js.native
     
-    /* "critical" */ val Critical: typings.sentryTypes.severityMod.Severity.Critical with String = js.native
+    /* "critical" */ val Critical: typings.sentryTypes.severityMod.Severity.Critical & String = js.native
     
-    /* "debug" */ val Debug: typings.sentryTypes.severityMod.Severity.Debug with String = js.native
+    /* "debug" */ val Debug: typings.sentryTypes.severityMod.Severity.Debug & String = js.native
     
-    /* "error" */ val Error: typings.sentryTypes.severityMod.Severity.Error with String = js.native
+    /* "error" */ val Error: typings.sentryTypes.severityMod.Severity.Error & String = js.native
     
-    /* "fatal" */ val Fatal: typings.sentryTypes.severityMod.Severity.Fatal with String = js.native
+    /* "fatal" */ val Fatal: typings.sentryTypes.severityMod.Severity.Fatal & String = js.native
     
-    /* "info" */ val Info: typings.sentryTypes.severityMod.Severity.Info with String = js.native
+    /* "info" */ val Info: typings.sentryTypes.severityMod.Severity.Info & String = js.native
     
-    /* "log" */ val Log: typings.sentryTypes.severityMod.Severity.Log with String = js.native
+    /* "log" */ val Log: typings.sentryTypes.severityMod.Severity.Log & String = js.native
     
-    /* "warning" */ val Warning: typings.sentryTypes.severityMod.Severity.Warning with String = js.native
+    /* "warning" */ val Warning: typings.sentryTypes.severityMod.Severity.Warning & String = js.native
     
     /**
       * Converts a string-based level into a {@link Severity}.
@@ -120,19 +126,19 @@ object exportsMod {
   object Status extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.sentryTypes.statusMod.Status with String] = js.native
+    def apply(value: String): js.UndefOr[typings.sentryTypes.statusMod.Status & String] = js.native
     
-    /* "failed" */ val Failed: typings.sentryTypes.statusMod.Status.Failed with String = js.native
+    /* "failed" */ val Failed: typings.sentryTypes.statusMod.Status.Failed & String = js.native
     
-    /* "invalid" */ val Invalid: typings.sentryTypes.statusMod.Status.Invalid with String = js.native
+    /* "invalid" */ val Invalid: typings.sentryTypes.statusMod.Status.Invalid & String = js.native
     
-    /* "rate_limit" */ val RateLimit: typings.sentryTypes.statusMod.Status.RateLimit with String = js.native
+    /* "rate_limit" */ val RateLimit: typings.sentryTypes.statusMod.Status.RateLimit & String = js.native
     
-    /* "skipped" */ val Skipped: typings.sentryTypes.statusMod.Status.Skipped with String = js.native
+    /* "skipped" */ val Skipped: typings.sentryTypes.statusMod.Status.Skipped & String = js.native
     
-    /* "success" */ val Success: typings.sentryTypes.statusMod.Status.Success with String = js.native
+    /* "success" */ val Success: typings.sentryTypes.statusMod.Status.Success & String = js.native
     
-    /* "unknown" */ val Unknown: typings.sentryTypes.statusMod.Status.Unknown with String = js.native
+    /* "unknown" */ val Unknown: typings.sentryTypes.statusMod.Status.Unknown & String = js.native
     
     /**
       * Converts a HTTP status code into a {@link Status}.
@@ -143,45 +149,34 @@ object exportsMod {
     def fromHttpCode(code: Double): typings.sentryTypes.statusMod.Status = js.native
   }
   
-  @JSImport("@sentry/browser/dist/exports", "addBreadcrumb")
-  @js.native
-  def addBreadcrumb(breadcrumb: Breadcrumb): Unit = js.native
+  @scala.inline
+  def addBreadcrumb(breadcrumb: Breadcrumb): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addBreadcrumb")(breadcrumb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "addGlobalEventProcessor")
-  @js.native
-  def addGlobalEventProcessor(callback: EventProcessor): Unit = js.native
+  @scala.inline
+  def addGlobalEventProcessor(callback: EventProcessor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addGlobalEventProcessor")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "captureEvent")
-  @js.native
-  def captureEvent(event: Event): String = js.native
+  @scala.inline
+  def captureEvent(event: Event): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureEvent")(event.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@sentry/browser/dist/exports", "captureException")
-  @js.native
-  def captureException(exception: js.Any): String = js.native
-  @JSImport("@sentry/browser/dist/exports", "captureException")
-  @js.native
-  def captureException(exception: js.Any, captureContext: CaptureContext): String = js.native
+  @scala.inline
+  def captureException(exception: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def captureException(exception: js.Any, captureContext: CaptureContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureException")(exception.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/browser/dist/exports", "captureMessage")
-  @js.native
-  def captureMessage(message: String): String = js.native
-  @JSImport("@sentry/browser/dist/exports", "captureMessage")
-  @js.native
-  def captureMessage(message: String, captureContext: CaptureContext): String = js.native
-  @JSImport("@sentry/browser/dist/exports", "captureMessage")
-  @js.native
-  def captureMessage(message: String, captureContext: Severity): String = js.native
+  @scala.inline
+  def captureMessage(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def captureMessage(message: String, captureContext: CaptureContext): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def captureMessage(message: String, captureContext: Severity): String = (^.asInstanceOf[js.Dynamic].applyDynamic("captureMessage")(message.asInstanceOf[js.Any], captureContext.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@sentry/browser/dist/exports", "close")
-  @js.native
-  def close(): js.Thenable[Boolean] = js.native
-  @JSImport("@sentry/browser/dist/exports", "close")
-  @js.native
-  def close(timeout: Double): js.Thenable[Boolean] = js.native
+  @scala.inline
+  def close(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")().asInstanceOf[js.Thenable[Boolean]]
+  @scala.inline
+  def close(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
   
-  @JSImport("@sentry/browser/dist/exports", "configureScope")
-  @js.native
-  def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = js.native
+  @scala.inline
+  def configureScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configureScope")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("@sentry/browser/dist/exports", "defaultIntegrations")
   @js.native
@@ -189,120 +184,88 @@ object exportsMod {
     FunctionToString | InboundFilters | GlobalHandlers | TryCatch | Breadcrumbs | LinkedErrors | UserAgent
   ] = js.native
   
-  @JSImport("@sentry/browser/dist/exports", "eventFromException")
-  @js.native
-  def eventFromException(options: Options, exception: js.Any): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/exports", "eventFromException")
-  @js.native
-  def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = js.native
+  @scala.inline
+  def eventFromException(options: Options, exception: js.Any): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(options.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromException(options: Options, exception: js.Any, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromException")(options.asInstanceOf[js.Any], exception.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
   
-  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String, level: js.UndefOr[scala.Nothing], hint: EventHint): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String, level: Severity): js.Thenable[Event] = js.native
-  @JSImport("@sentry/browser/dist/exports", "eventFromMessage")
-  @js.native
-  def eventFromMessage(options: Options, message: String, level: Severity, hint: EventHint): js.Thenable[Event] = js.native
+  @scala.inline
+  def eventFromMessage(options: Options, message: String): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromMessage(options: Options, message: String, level: Unit, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromMessage(options: Options, message: String, level: Severity): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
+  @scala.inline
+  def eventFromMessage(options: Options, message: String, level: Severity, hint: EventHint): js.Thenable[Event] = (^.asInstanceOf[js.Dynamic].applyDynamic("eventFromMessage")(options.asInstanceOf[js.Any], message.asInstanceOf[js.Any], level.asInstanceOf[js.Any], hint.asInstanceOf[js.Any])).asInstanceOf[js.Thenable[Event]]
   
-  @JSImport("@sentry/browser/dist/exports", "flush")
-  @js.native
-  def flush(): js.Thenable[Boolean] = js.native
-  @JSImport("@sentry/browser/dist/exports", "flush")
-  @js.native
-  def flush(timeout: Double): js.Thenable[Boolean] = js.native
+  @scala.inline
+  def flush(): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[js.Thenable[Boolean]]
+  @scala.inline
+  def flush(timeout: Double): js.Thenable[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(timeout.asInstanceOf[js.Any]).asInstanceOf[js.Thenable[Boolean]]
   
-  @JSImport("@sentry/browser/dist/exports", "forceLoad")
-  @js.native
-  def forceLoad(): Unit = js.native
+  @scala.inline
+  def forceLoad(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forceLoad")().asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "getCurrentHub")
-  @js.native
-  def getCurrentHub(): typings.sentryHub.hubMod.Hub = js.native
+  @scala.inline
+  def getCurrentHub(): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentHub")().asInstanceOf[typings.sentryHub.hubMod.Hub]
   
-  @JSImport("@sentry/browser/dist/exports", "getHubFromCarrier")
-  @js.native
-  def getHubFromCarrier(carrier: Carrier): typings.sentryHub.hubMod.Hub = js.native
+  @scala.inline
+  def getHubFromCarrier(carrier: Carrier): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("getHubFromCarrier")(carrier.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.hubMod.Hub]
   
-  @JSImport("@sentry/browser/dist/exports", "init")
-  @js.native
-  def init(): Unit = js.native
-  @JSImport("@sentry/browser/dist/exports", "init")
-  @js.native
-  def init(options: BrowserOptions): Unit = js.native
+  @scala.inline
+  def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+  @scala.inline
+  def init(options: BrowserOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "injectReportDialog")
-  @js.native
-  def injectReportDialog(): Unit = js.native
-  @JSImport("@sentry/browser/dist/exports", "injectReportDialog")
-  @js.native
-  def injectReportDialog(options: ReportDialogOptions): Unit = js.native
+  @scala.inline
+  def injectReportDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")().asInstanceOf[Unit]
+  @scala.inline
+  def injectReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "lastEventId")
-  @js.native
-  def lastEventId(): js.UndefOr[String] = js.native
+  @scala.inline
+  def lastEventId(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastEventId")().asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@sentry/browser/dist/exports", "makeMain")
-  @js.native
-  def makeMain(hub: typings.sentryHub.hubMod.Hub): typings.sentryHub.hubMod.Hub = js.native
+  @scala.inline
+  def makeMain(hub: typings.sentryHub.hubMod.Hub): typings.sentryHub.hubMod.Hub = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMain")(hub.asInstanceOf[js.Any]).asInstanceOf[typings.sentryHub.hubMod.Hub]
   
-  @JSImport("@sentry/browser/dist/exports", "onLoad")
-  @js.native
-  def onLoad(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def onLoad(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLoad")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "setContext")
-  @js.native
-  def setContext(name: String): Unit = js.native
-  @JSImport("@sentry/browser/dist/exports", "setContext")
-  @js.native
-  def setContext(name: String, context: StringDictionary[js.Any]): Unit = js.native
+  @scala.inline
+  def setContext(name: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setContext(name: String, context: StringDictionary[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(name.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "setExtra")
-  @js.native
-  def setExtra(key: String, extra: Extra): Unit = js.native
+  @scala.inline
+  def setExtra(key: String, extra: Extra): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtra")(key.asInstanceOf[js.Any], extra.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "setExtras")
-  @js.native
-  def setExtras(extras: Extras): Unit = js.native
+  @scala.inline
+  def setExtras(extras: Extras): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setExtras")(extras.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "setTag")
-  @js.native
-  def setTag(key: String, value: String): Unit = js.native
+  @scala.inline
+  def setTag(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "setTags")
-  @js.native
-  def setTags(tags: StringDictionary[String]): Unit = js.native
+  @scala.inline
+  def setTags(tags: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTags")(tags.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "setUser")
-  @js.native
-  def setUser(): Unit = js.native
-  @JSImport("@sentry/browser/dist/exports", "setUser")
-  @js.native
-  def setUser(user: User): Unit = js.native
+  @scala.inline
+  def setUser(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")().asInstanceOf[Unit]
+  @scala.inline
+  def setUser(user: User): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setUser")(user.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "showReportDialog")
-  @js.native
-  def showReportDialog(): Unit = js.native
-  @JSImport("@sentry/browser/dist/exports", "showReportDialog")
-  @js.native
-  def showReportDialog(options: ReportDialogOptions): Unit = js.native
+  @scala.inline
+  def showReportDialog(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")().asInstanceOf[Unit]
+  @scala.inline
+  def showReportDialog(options: ReportDialogOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showReportDialog")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "startTransaction")
-  @js.native
-  def startTransaction(context: TransactionContext): Transaction = js.native
-  @JSImport("@sentry/browser/dist/exports", "startTransaction")
-  @js.native
-  def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): Transaction = js.native
+  @scala.inline
+  def startTransaction(context: TransactionContext): Transaction = ^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any]).asInstanceOf[Transaction]
+  @scala.inline
+  def startTransaction(context: TransactionContext, customSamplingContext: CustomSamplingContext): Transaction = (^.asInstanceOf[js.Dynamic].applyDynamic("startTransaction")(context.asInstanceOf[js.Any], customSamplingContext.asInstanceOf[js.Any])).asInstanceOf[Transaction]
   
-  @JSImport("@sentry/browser/dist/exports", "withScope")
-  @js.native
-  def withScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = js.native
+  @scala.inline
+  def withScope(callback: js.Function1[/* scope */ typings.sentryHub.mod.Scope, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("withScope")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@sentry/browser/dist/exports", "wrap")
-  @js.native
-  def wrap(fn: js.Function1[/* args */ js.Any, _]): js.Any = js.native
+  @scala.inline
+  def wrap(fn: js.Function1[/* args */ js.Any, js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

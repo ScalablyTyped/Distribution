@@ -2,23 +2,21 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3PaymentInfo extends StObject {
   
   /**
     * The display info of the payment method used for the transaction.
     */
-  var paymentMethodDisplayInfo: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodDisplayInfo] = js.native
+  var paymentMethodDisplayInfo: js.UndefOr[GoogleActionsTransactionsV3PaymentMethodDisplayInfo] = js.undefined
   
   /**
     * Provenance of the payment method used for the transaction.
     * User may have registered the same payment method with both google and
     * merchant.
     */
-  var paymentMethodProvenance: js.UndefOr[GoogleActionsTransactionsV3PaymentInfoPaymentMethodProvenance] = js.native
+  var paymentMethodProvenance: js.UndefOr[GoogleActionsTransactionsV3PaymentInfoPaymentMethodProvenance] = js.undefined
 }
 object GoogleActionsTransactionsV3PaymentInfo {
   

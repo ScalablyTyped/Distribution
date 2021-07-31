@@ -3,22 +3,20 @@ package typings.d3pie.anon
 import typings.d3pie.d3pieStrings.left
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  location :'left' | undefined} & d3pie.d3pie.ID3PieTextOptions */
-@js.native
 trait locationleftundefinedID3P extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var location: js.UndefOr[left] = js.native
+  var location: js.UndefOr[left] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object locationleftundefinedID3P {
   

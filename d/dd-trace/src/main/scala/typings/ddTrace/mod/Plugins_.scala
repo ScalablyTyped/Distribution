@@ -46,100 +46,98 @@ import typings.ddTrace.mod.plugins.when
 import typings.ddTrace.mod.plugins.winston
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @hidden */
-@js.native
 trait Plugins_ extends StObject {
   
-  var amqp10: typings.ddTrace.mod.plugins.amqp10 = js.native
+  var amqp10: typings.ddTrace.mod.plugins.amqp10
   
-  var amqplib: typings.ddTrace.mod.plugins.amqplib = js.native
+  var amqplib: typings.ddTrace.mod.plugins.amqplib
   
-  var `aws-sdk`: awsSdk = js.native
+  var `aws-sdk`: awsSdk
   
-  var bluebird: typings.ddTrace.mod.plugins.bluebird = js.native
+  var bluebird: typings.ddTrace.mod.plugins.bluebird
   
-  var bunyan: typings.ddTrace.mod.plugins.bunyan = js.native
+  var bunyan: typings.ddTrace.mod.plugins.bunyan
   
-  var `cassandra-driver`: cassandraDriver = js.native
+  var `cassandra-driver`: cassandraDriver
   
-  var connect: typings.ddTrace.mod.plugins.connect = js.native
+  var connect: typings.ddTrace.mod.plugins.connect
   
-  var couchbase: typings.ddTrace.mod.plugins.couchbase = js.native
+  var couchbase: typings.ddTrace.mod.plugins.couchbase
   
-  var dns: typings.ddTrace.mod.plugins.dns = js.native
+  var dns: typings.ddTrace.mod.plugins.dns
   
-  var elasticsearch: typings.ddTrace.mod.plugins.elasticsearch = js.native
+  var elasticsearch: typings.ddTrace.mod.plugins.elasticsearch
   
-  var express: typings.ddTrace.mod.plugins.express = js.native
+  var express: typings.ddTrace.mod.plugins.express
   
-  var fastify: typings.ddTrace.mod.plugins.fastify = js.native
+  var fastify: typings.ddTrace.mod.plugins.fastify
   
-  var fs: typings.ddTrace.mod.plugins.fs = js.native
+  var fs: typings.ddTrace.mod.plugins.fs
   
-  var `generic-pool`: genericPool = js.native
+  var `generic-pool`: genericPool
   
-  var `google-cloud-pubsub`: googleCloudPubsub = js.native
+  var `google-cloud-pubsub`: googleCloudPubsub
   
-  var graphql: typings.ddTrace.mod.plugins.graphql = js.native
+  var graphql: typings.ddTrace.mod.plugins.graphql
   
-  var grpc: typings.ddTrace.mod.plugins.grpc = js.native
+  var grpc: typings.ddTrace.mod.plugins.grpc
   
-  var hapi: typings.ddTrace.mod.plugins.hapi = js.native
+  var hapi: typings.ddTrace.mod.plugins.hapi
   
-  var http: typings.ddTrace.mod.plugins.http = js.native
+  var http: typings.ddTrace.mod.plugins.http
   
-  var http2: typings.ddTrace.mod.plugins.http2 = js.native
+  var http2: typings.ddTrace.mod.plugins.http2
   
-  var ioredis: typings.ddTrace.mod.plugins.ioredis = js.native
+  var ioredis: typings.ddTrace.mod.plugins.ioredis
   
-  var knex: typings.ddTrace.mod.plugins.knex = js.native
+  var knex: typings.ddTrace.mod.plugins.knex
   
-  var koa: typings.ddTrace.mod.plugins.koa = js.native
+  var koa: typings.ddTrace.mod.plugins.koa
   
-  var `limitd-client`: limitdClient = js.native
+  var `limitd-client`: limitdClient
   
-  var memcached: typings.ddTrace.mod.plugins.memcached = js.native
+  var memcached: typings.ddTrace.mod.plugins.memcached
   
-  var `microgateway-core`: microgatewayCore = js.native
+  var `microgateway-core`: microgatewayCore
   
-  var `mongodb-core`: mongodbCore = js.native
+  var `mongodb-core`: mongodbCore
   
-  var mongoose: typings.ddTrace.mod.plugins.mongoose = js.native
+  var mongoose: typings.ddTrace.mod.plugins.mongoose
   
-  var mysql: typings.ddTrace.mod.plugins.mysql = js.native
+  var mysql: typings.ddTrace.mod.plugins.mysql
   
-  var mysql2: typings.ddTrace.mod.plugins.mysql2 = js.native
+  var mysql2: typings.ddTrace.mod.plugins.mysql2
   
-  var net: typings.ddTrace.mod.plugins.net = js.native
+  var net: typings.ddTrace.mod.plugins.net
   
-  var paperplane: typings.ddTrace.mod.plugins.paperplane = js.native
+  var paperplane: typings.ddTrace.mod.plugins.paperplane
   
-  var pg: typings.ddTrace.mod.plugins.pg = js.native
+  var pg: typings.ddTrace.mod.plugins.pg
   
-  var pino: typings.ddTrace.mod.plugins.pino = js.native
+  var pino: typings.ddTrace.mod.plugins.pino
   
-  var promise: typings.ddTrace.mod.plugins.promise = js.native
+  var promise: typings.ddTrace.mod.plugins.promise
   
-  var `promise-js`: promiseJs = js.native
+  var `promise-js`: promiseJs
   
-  var q: typings.ddTrace.mod.plugins.q = js.native
+  var q: typings.ddTrace.mod.plugins.q
   
-  var redis: typings.ddTrace.mod.plugins.redis = js.native
+  var redis: typings.ddTrace.mod.plugins.redis
   
-  var restify: typings.ddTrace.mod.plugins.restify = js.native
+  var restify: typings.ddTrace.mod.plugins.restify
   
-  var rhea: typings.ddTrace.mod.plugins.rhea = js.native
+  var rhea: typings.ddTrace.mod.plugins.rhea
   
-  var router: typings.ddTrace.mod.plugins.router = js.native
+  var router: typings.ddTrace.mod.plugins.router
   
-  var tedious: typings.ddTrace.mod.plugins.tedious = js.native
+  var tedious: typings.ddTrace.mod.plugins.tedious
   
-  var when: typings.ddTrace.mod.plugins.when = js.native
+  var when: typings.ddTrace.mod.plugins.when
   
-  var winston: typings.ddTrace.mod.plugins.winston = js.native
+  var winston: typings.ddTrace.mod.plugins.winston
 }
 object Plugins_ {
   

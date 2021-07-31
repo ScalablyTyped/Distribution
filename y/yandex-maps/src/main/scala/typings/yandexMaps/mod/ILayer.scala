@@ -3,13 +3,14 @@ package typings.yandexMaps.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.yandexMaps.mod.IEventEmitter because Already inherited
 - typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options */ @js.native
-trait ILayer extends IChild[IControlParent] {
+trait ILayer
+  extends StObject
+     with IChild[IControlParent] {
   
   var getBrightness: js.UndefOr[js.Function0[Double]] = js.native
   

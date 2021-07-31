@@ -2,15 +2,13 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionStatistic extends StObject {
   
-  var statisticName: String = js.native
+  var statisticName: String
   
-  var value: Double = js.native
+  var value: Double
 }
 object ExtensionStatistic {
   

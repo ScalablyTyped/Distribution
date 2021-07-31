@@ -2,28 +2,26 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/range_slider.html
-@js.native
 trait SliderOptions extends StObject {
   
-  var end: js.UndefOr[Double] = js.native
+  var end: js.UndefOr[Double] = js.undefined
   
-  var initial: js.UndefOr[Double] = js.native
+  var initial: js.UndefOr[Double] = js.undefined
   
-  var on_change: js.UndefOr[js.Function0[_]] = js.native
+  var on_change: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var trigger_input_change: js.UndefOr[Boolean] = js.native
+  var trigger_input_change: js.UndefOr[Boolean] = js.undefined
   
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object SliderOptions {
   
@@ -49,7 +47,7 @@ object SliderOptions {
     def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
     @scala.inline
-    def setOn_change(value: () => _): Self = StObject.set(x, "on_change", js.Any.fromFunction0(value))
+    def setOn_change(value: () => js.Any): Self = StObject.set(x, "on_change", js.Any.fromFunction0(value))
     
     @scala.inline
     def setOn_changeUndefined: Self = StObject.set(x, "on_change", js.undefined)

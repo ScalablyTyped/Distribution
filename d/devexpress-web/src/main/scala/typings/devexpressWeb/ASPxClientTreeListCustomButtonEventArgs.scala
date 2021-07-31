@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeList.CustomButtonClick event.
   */
-@js.native
-trait ASPxClientTreeListCustomButtonEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientTreeListCustomButtonEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the value which identifies the custom button.
     */
-  var buttonID: String = js.native
+  var buttonID: String
   
   /**
     * Gets the button's index.
     */
-  var buttonIndex: Double = js.native
+  var buttonIndex: Double
   
   /**
     * Gets the key value of the node whose custom button has been clicked.
     */
-  var nodeKey: String = js.native
+  var nodeKey: String
 }
 object ASPxClientTreeListCustomButtonEventArgs {
   

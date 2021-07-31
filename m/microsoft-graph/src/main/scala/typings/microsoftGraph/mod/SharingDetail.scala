@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharingDetail extends StObject {
   
   // The user who shared the document.
-  var sharedBy: js.UndefOr[NullableOption[InsightIdentity]] = js.native
+  var sharedBy: js.UndefOr[NullableOption[InsightIdentity]] = js.undefined
   
   /**
     * The date and time the file was last shared. The timestamp represents date and time information using ISO 8601 format
     * and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this: 2014-01-01T00:00:00Z.
     * Read-only.
     */
-  var sharedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var sharedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var sharingReference: js.UndefOr[NullableOption[ResourceReference]] = js.native
+  var sharingReference: js.UndefOr[NullableOption[ResourceReference]] = js.undefined
   
   // The subject with which the document was shared.
-  var sharingSubject: js.UndefOr[NullableOption[String]] = js.native
+  var sharingSubject: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Determines the way the document was shared, can be by a 'Link', 'Attachment', 'Group', 'Site'.
-  var sharingType: js.UndefOr[NullableOption[String]] = js.native
+  var sharingType: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SharingDetail {
   

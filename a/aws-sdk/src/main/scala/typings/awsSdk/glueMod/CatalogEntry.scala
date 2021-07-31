@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CatalogEntry extends StObject {
   
   /**
     * The database in which the table metadata resides.
     */
-  var DatabaseName: NameString = js.native
+  var DatabaseName: NameString
   
   /**
     * The name of the table in question.
     */
-  var TableName: NameString = js.native
+  var TableName: NameString
 }
 object CatalogEntry {
   

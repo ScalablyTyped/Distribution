@@ -3,23 +3,21 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IExtension extends StObject {
   
-  var controller: js.UndefOr[js.Any] = js.native
+  var controller: js.UndefOr[js.Any] = js.undefined
   
-  var definition: js.UndefOr[IDefinition] = js.native
+  var definition: js.UndefOr[IDefinition] = js.undefined
   
-  var initialProperties: js.UndefOr[IInitialProperties] = js.native
+  var initialProperties: js.UndefOr[IInitialProperties] = js.undefined
   
-  var paint: js.UndefOr[js.Function2[/* $element */ HTMLElement, /* layout */ js.UndefOr[js.Any], Unit]] = js.native
+  var paint: js.UndefOr[js.Function2[/* $element */ HTMLElement, /* layout */ js.UndefOr[js.Any], Unit]] = js.undefined
   
-  var support: js.UndefOr[ISupport] = js.native
+  var support: js.UndefOr[ISupport] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
 }
 object IExtension {
   

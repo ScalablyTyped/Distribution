@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventFeedbackType extends StObject {
   
   /**
     * The event feedback date.
     */
-  var FeedbackDate: js.UndefOr[DateType] = js.native
+  var FeedbackDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The event feedback value.
     */
-  var FeedbackValue: FeedbackValueType = js.native
+  var FeedbackValue: FeedbackValueType
   
   /**
     * The provider.
     */
-  var Provider: StringType = js.native
+  var Provider: StringType
 }
 object EventFeedbackType {
   

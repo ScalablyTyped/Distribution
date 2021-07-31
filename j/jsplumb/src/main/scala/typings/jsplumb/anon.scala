@@ -5,19 +5,17 @@ import typings.jsplumb.mod.ContinuousAnchorFace
 import typings.jsplumb.mod.PerimeterShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AnchorCount extends StObject {
     
-    var anchorCount: js.UndefOr[Double] = js.native
+    var anchorCount: js.UndefOr[Double] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var shape: js.UndefOr[PerimeterShape] = js.native
+    var shape: js.UndefOr[PerimeterShape] = js.undefined
   }
   object AnchorCount {
     
@@ -50,21 +48,20 @@ object anon {
     }
   }
   
-  @js.native
   trait BorderStyle extends StObject {
     
-    var borderStyle: js.UndefOr[String] = js.native
+    var borderStyle: js.UndefOr[String] = js.undefined
     
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
     // integer
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
   }
   object BorderStyle {
     
@@ -115,10 +112,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Each extends StObject {
     
-    def each(fn: js.Function1[/* conn */ Connection, Unit]): Unit = js.native
+    def each(fn: js.Function1[/* conn */ Connection, Unit]): Unit
   }
   object Each {
     
@@ -136,10 +132,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Faces extends StObject {
     
-    var faces: js.UndefOr[js.Array[ContinuousAnchorFace]] = js.native
+    var faces: js.UndefOr[js.Array[ContinuousAnchorFace]] = js.undefined
   }
   object Faces {
     

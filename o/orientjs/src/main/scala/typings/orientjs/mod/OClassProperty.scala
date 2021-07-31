@@ -5,7 +5,6 @@ import typings.orientjs.anon.Force
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("orientjs", "OClassProperty")
@@ -27,11 +26,11 @@ class OClassProperty () extends StObject {
     * @promise {Object}              The created property.
     */
   def create(): js.Promise[OClassProperty] = js.native
-  def create(config: js.UndefOr[scala.Nothing], reload: Boolean): js.Promise[OClassProperty] = js.native
   def create(config: String): js.Promise[OClassProperty] = js.native
   def create(config: String, reload: Boolean): js.Promise[OClassProperty] = js.native
   def create(config: js.Array[PropertyCreateConfig]): js.Promise[js.Array[OClassProperty]] = js.native
   def create(config: js.Array[PropertyCreateConfig], reload: Boolean): js.Promise[js.Array[OClassProperty]] = js.native
+  def create(config: Unit, reload: Boolean): js.Promise[OClassProperty] = js.native
   def create(config: PropertyCreateConfig): js.Promise[OClassProperty] = js.native
   def create(config: PropertyCreateConfig, reload: Boolean): js.Promise[OClassProperty] = js.native
   

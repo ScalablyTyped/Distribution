@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Bluetooth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object BluetoothCacheMode extends StObject {
   
   /** Use system-cached values. */
   @js.native
-  sealed trait cached extends BluetoothCacheMode
+  sealed trait cached
+    extends StObject
+       with BluetoothCacheMode
   
   /** Retrieve values from the Bluetooth device. */
   @js.native
-  sealed trait uncached extends BluetoothCacheMode
+  sealed trait uncached
+    extends StObject
+       with BluetoothCacheMode
 }

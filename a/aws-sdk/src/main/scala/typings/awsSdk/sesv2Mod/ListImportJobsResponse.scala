@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListImportJobsResponse extends StObject {
   
   /**
     * A list of the import job summaries.
     */
-  var ImportJobs: js.UndefOr[ImportJobSummaryList] = js.native
+  var ImportJobs: js.UndefOr[ImportJobSummaryList] = js.undefined
   
   /**
     * A string token indicating that there might be additional import jobs available to be listed. Copy this token to a subsequent call to ListImportJobs with the same parameters to retrieve the next page of import jobs.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sesv2Mod.NextToken] = js.undefined
 }
 object ListImportJobsResponse {
   

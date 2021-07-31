@@ -4,7 +4,6 @@ import typings.matrixAppserviceBridge.anon.Conflict
 import typings.matrixAppserviceBridge.appServiceBotMod.AppServiceBot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roomLinkValidatorMod {
@@ -47,29 +46,36 @@ object roomLinkValidatorMod {
   object RoomLinkValidatorStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RoomLinkValidatorStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[RoomLinkValidatorStatus & Double] = js.native
     
     @js.native
-    sealed trait ERROR extends RoomLinkValidatorStatus
-    /* 3 */ val ERROR: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with RoomLinkValidatorStatus
+    /* 3 */ val ERROR: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.ERROR & Double = js.native
     
     @js.native
-    sealed trait ERROR_CACHED extends RoomLinkValidatorStatus
-    /* 2 */ val ERROR_CACHED: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.ERROR_CACHED with Double = js.native
+    sealed trait ERROR_CACHED
+      extends StObject
+         with RoomLinkValidatorStatus
+    /* 2 */ val ERROR_CACHED: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.ERROR_CACHED & Double = js.native
     
     @js.native
-    sealed trait ERROR_USER_CONFLICT extends RoomLinkValidatorStatus
-    /* 1 */ val ERROR_USER_CONFLICT: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.ERROR_USER_CONFLICT with Double = js.native
+    sealed trait ERROR_USER_CONFLICT
+      extends StObject
+         with RoomLinkValidatorStatus
+    /* 1 */ val ERROR_USER_CONFLICT: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.ERROR_USER_CONFLICT & Double = js.native
     
     @js.native
-    sealed trait PASSED extends RoomLinkValidatorStatus
-    /* 0 */ val PASSED: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.PASSED with Double = js.native
+    sealed trait PASSED
+      extends StObject
+         with RoomLinkValidatorStatus
+    /* 0 */ val PASSED: typings.matrixAppserviceBridge.roomLinkValidatorMod.RoomLinkValidatorStatus.PASSED & Double = js.native
   }
   
-  @js.native
   trait Rules extends StObject {
     
-    var userIds: Conflict = js.native
+    var userIds: Conflict
   }
   object Rules {
     

@@ -3,21 +3,21 @@ package typings.reactNative.mod
 import typings.reactNative.reactNativeStrings.sharedAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShareSharedAction extends ShareAction {
+trait ShareSharedAction
+  extends StObject
+     with ShareAction {
   
-  var action: sharedAction = js.native
+  var action: sharedAction
   
-  var activityType: js.UndefOr[String] = js.native
+  var activityType: js.UndefOr[String] = js.undefined
 }
 object ShareSharedAction {
   
   @scala.inline
-  def apply(action: sharedAction): ShareSharedAction = {
-    val __obj = js.Dynamic.literal(action = action.asInstanceOf[js.Any])
+  def apply(): ShareSharedAction = {
+    val __obj = js.Dynamic.literal(action = "sharedAction")
     __obj.asInstanceOf[ShareSharedAction]
   }
   

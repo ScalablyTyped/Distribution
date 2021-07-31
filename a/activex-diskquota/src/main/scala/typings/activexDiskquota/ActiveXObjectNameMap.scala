@@ -3,14 +3,12 @@ package typings.activexDiskquota
 import typings.activexDiskquota.DiskQuotaTypeLibrary.DiskQuotaControl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
   @JSName("Microsoft.DiskQuota")
-  var MicrosoftDotDiskQuota: DiskQuotaControl = js.native
+  var MicrosoftDotDiskQuota: DiskQuotaControl
 }
 object ActiveXObjectNameMap {
   

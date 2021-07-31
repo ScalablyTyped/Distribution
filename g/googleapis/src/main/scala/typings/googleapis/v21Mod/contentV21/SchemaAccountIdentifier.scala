@@ -2,22 +2,20 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountIdentifier extends StObject {
   
   /**
     * The aggregator ID, set for aggregators and subaccounts (in that case, it
     * represents the aggregator of the subaccount).
     */
-  var aggregatorId: js.UndefOr[String] = js.native
+  var aggregatorId: js.UndefOr[String] = js.undefined
   
   /**
     * The merchant account ID, set for individual accounts and subaccounts.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountIdentifier {
   

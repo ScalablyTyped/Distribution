@@ -4,15 +4,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the information about a changed title. */
-@js.native
-trait TitleChangedEvent extends EventObject {
+trait TitleChangedEvent
+  extends StObject
+     with EventObject {
   
   /** The new title */
-  var Title: String = js.native
+  var Title: String
 }
 object TitleChangedEvent {
   

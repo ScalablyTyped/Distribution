@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginConvertShapeToPath extends PluginConfig {
+trait PluginConvertShapeToPath
+  extends StObject
+     with PluginConfig {
   
-  var convertShapeToPath: Boolean | js.Object = js.native
+  var convertShapeToPath: Boolean | js.Object
 }
 object PluginConvertShapeToPath {
   

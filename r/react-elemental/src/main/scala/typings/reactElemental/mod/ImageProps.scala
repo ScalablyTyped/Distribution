@@ -5,26 +5,26 @@ import typings.react.mod.ImgHTMLAttributes
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ImageProps extends ImgHTMLAttributes[HTMLImageElement] {
+trait ImageProps
+  extends StObject
+     with ImgHTMLAttributes[HTMLImageElement] {
   
   @JSName("alt")
-  val alt_ImageProps: String = js.native
+  val alt_ImageProps: String
   
   @JSName("height")
-  val height_ImageProps: js.UndefOr[String] = js.native
+  val height_ImageProps: js.UndefOr[String] = js.undefined
   
-  val imgStyle: js.UndefOr[CSSProperties] = js.native
+  val imgStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  val `lazy`: js.UndefOr[Boolean] = js.native
+  val `lazy`: js.UndefOr[Boolean] = js.undefined
   
-  val showIntermediate: js.UndefOr[Boolean] = js.native
+  val showIntermediate: js.UndefOr[Boolean] = js.undefined
   
   @JSName("width")
-  val width_ImageProps: js.UndefOr[String] = js.native
+  val width_ImageProps: js.UndefOr[String] = js.undefined
 }
 object ImageProps {
   

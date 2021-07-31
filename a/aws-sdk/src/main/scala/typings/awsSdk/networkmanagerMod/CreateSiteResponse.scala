@@ -2,16 +2,14 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSiteResponse extends StObject {
   
   /**
     * Information about the site.
     */
-  var Site: js.UndefOr[typings.awsSdk.networkmanagerMod.Site] = js.native
+  var Site: js.UndefOr[typings.awsSdk.networkmanagerMod.Site] = js.undefined
 }
 object CreateSiteResponse {
   

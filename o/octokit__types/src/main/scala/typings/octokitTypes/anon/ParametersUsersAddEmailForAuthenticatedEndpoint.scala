@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.UsersAddEmailForAuthenticatedResponseDa
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersUsersAddEmailForAuthenticatedEndpoint extends StObject {
   
-  var parameters: UsersAddEmailForAuthenticatedEndpoint = js.native
+  var parameters: UsersAddEmailForAuthenticatedEndpoint
   
-  var request: UsersAddEmailForAuthenticatedRequestOptions = js.native
+  var request: UsersAddEmailForAuthenticatedRequestOptions
   
-  var response: OctokitResponse[UsersAddEmailForAuthenticatedResponseData] = js.native
+  var response: OctokitResponse[UsersAddEmailForAuthenticatedResponseData]
 }
 object ParametersUsersAddEmailForAuthenticatedEndpoint {
   

@@ -5,24 +5,24 @@ import typings.awsSdkClientGlacierNode.typesDataRetrievalPolicyMod.UnmarshalledD
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetDataRetrievalPolicyOutputMod {
   
-  @js.native
-  trait GetDataRetrievalPolicyOutput extends _OutputTypesUnion {
+  trait GetDataRetrievalPolicyOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Contains the returned data retrieval policy in JSON format.</p>
       */
-    var Policy: js.UndefOr[UnmarshalledDataRetrievalPolicy] = js.native
+    var Policy: js.UndefOr[UnmarshalledDataRetrievalPolicy] = js.undefined
   }
   object GetDataRetrievalPolicyOutput {
     

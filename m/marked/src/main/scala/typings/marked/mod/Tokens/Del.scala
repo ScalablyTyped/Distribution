@@ -4,24 +4,24 @@ import typings.marked.markedStrings.del
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Del extends Token {
+trait Del
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: del = js.native
+  var `type`: del
 }
 object Del {
   
   @scala.inline
-  def apply(raw: String, text: String, `type`: del): Del = {
+  def apply(raw: String, text: String): Del = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("del")
     __obj.asInstanceOf[Del]
   }
   

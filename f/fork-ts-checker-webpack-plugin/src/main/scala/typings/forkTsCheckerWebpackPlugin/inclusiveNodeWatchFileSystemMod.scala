@@ -8,14 +8,15 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inclusiveNodeWatchFileSystemMod {
   
   @JSImport("fork-ts-checker-webpack-plugin/lib/watch/InclusiveNodeWatchFileSystem", "InclusiveNodeWatchFileSystem")
   @js.native
-  class InclusiveNodeWatchFileSystem protected () extends WatchFileSystem {
+  class InclusiveNodeWatchFileSystem protected ()
+    extends StObject
+       with WatchFileSystem {
     def this(watchFileSystem: WatchFileSystem, pluginState: ForkTsCheckerWebpackPluginState) = this()
     
     val changedFiles: Set[String] = js.native

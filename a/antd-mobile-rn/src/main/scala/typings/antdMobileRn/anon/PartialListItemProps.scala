@@ -15,44 +15,42 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd-mobile-rn.antd-mobile-rn/lib/list/ListItem.native.ListItemProps> */
-@js.native
 trait PartialListItemProps extends StObject {
   
-  var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var activeStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var align: js.UndefOr[top | middle | bottom] = js.native
+  var align: js.UndefOr[top | middle | bottom] = js.undefined
   
-  var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.native
+  var arrow: js.UndefOr[horizontal | down | up | empty | _empty] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var extra: js.UndefOr[ReactNode] = js.native
+  var extra: js.UndefOr[ReactNode] = js.undefined
   
-  var multipleLine: js.UndefOr[Boolean] = js.native
+  var multipleLine: js.UndefOr[Boolean] = js.undefined
   
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPressIn: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPressIn: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPressOut: js.UndefOr[js.Function0[Unit]] = js.native
+  var onPressOut: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var platform: js.UndefOr[android | ios] = js.native
+  var platform: js.UndefOr[android | ios] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var styles: js.UndefOr[Arrow] = js.native
+  var styles: js.UndefOr[Arrow] = js.undefined
   
-  var thumb: js.UndefOr[ReactNode | Null] = js.native
+  var thumb: js.UndefOr[ReactNode | Null] = js.undefined
   
-  var wrap: js.UndefOr[Boolean] = js.native
+  var wrap: js.UndefOr[Boolean] = js.undefined
 }
 object PartialListItemProps {
   

@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.HeatmapStatisticsResult
 import typings.arcgisJsApi.esri.heatmapStatisticsHeatmapStatisticsParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object heatmapStatisticsMod extends Shortcut {

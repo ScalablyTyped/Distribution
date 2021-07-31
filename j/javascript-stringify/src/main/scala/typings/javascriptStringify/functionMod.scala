@@ -13,10 +13,13 @@ import typings.std.RegExpExecArray
 import typings.std.WeakSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionMod {
+  
+  @JSImport("javascript-stringify/dist/function", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("javascript-stringify/dist/function", "FunctionParser")
   @js.native
@@ -114,9 +117,8 @@ object functionMod {
   @js.native
   val USED_METHOD_KEY: WeakSet[js.Function] = js.native
   
-  @JSImport("javascript-stringify/dist/function", "dedentFunction")
-  @js.native
-  def dedentFunction(fnString: String): String = js.native
+  @scala.inline
+  def dedentFunction(fnString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("dedentFunction")(fnString.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("javascript-stringify/dist/function", "functionToString")
   @js.native

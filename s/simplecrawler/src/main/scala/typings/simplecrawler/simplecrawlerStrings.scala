@@ -4,53 +4,70 @@ import typings.simplecrawler.crawlerMod.HTTPMethods
 import typings.simplecrawler.queueMod.QueueItemStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object simplecrawlerStrings {
   
   @js.native
-  sealed trait CONNECT extends HTTPMethods
+  sealed trait CONNECT
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def CONNECT: CONNECT = "CONNECT".asInstanceOf[CONNECT]
   
   @js.native
-  sealed trait DELETE extends HTTPMethods
+  sealed trait DELETE
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def DELETE: DELETE = "DELETE".asInstanceOf[DELETE]
   
   @js.native
-  sealed trait GET extends HTTPMethods
+  sealed trait GET
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait HEAD extends HTTPMethods
+  sealed trait HEAD
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def HEAD: HEAD = "HEAD".asInstanceOf[HEAD]
   
   @js.native
-  sealed trait OPTIONS extends HTTPMethods
+  sealed trait OPTIONS
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def OPTIONS: OPTIONS = "OPTIONS".asInstanceOf[OPTIONS]
   
   @js.native
-  sealed trait PATCH extends HTTPMethods
+  sealed trait PATCH
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends HTTPMethods
+  sealed trait POST
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PUT extends HTTPMethods
+  sealed trait PUT
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait TRACE extends HTTPMethods
+  sealed trait TRACE
+    extends StObject
+       with HTTPMethods
   @scala.inline
   def TRACE: TRACE = "TRACE".asInstanceOf[TRACE]
   
@@ -80,7 +97,9 @@ object simplecrawlerStrings {
   def downloadconditionerror: downloadconditionerror = "downloadconditionerror".asInstanceOf[downloadconditionerror]
   
   @js.native
-  sealed trait downloaded extends QueueItemStatus
+  sealed trait downloaded
+    extends StObject
+       with QueueItemStatus
   @scala.inline
   def downloaded: downloaded = "downloaded".asInstanceOf[downloaded]
   
@@ -90,7 +109,9 @@ object simplecrawlerStrings {
   def downloadprevented: downloadprevented = "downloadprevented".asInstanceOf[downloadprevented]
   
   @js.native
-  sealed trait failed extends QueueItemStatus
+  sealed trait failed
+    extends StObject
+       with QueueItemStatus
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   
@@ -165,7 +186,9 @@ object simplecrawlerStrings {
   def gziperror: gziperror = "gziperror".asInstanceOf[gziperror]
   
   @js.native
-  sealed trait headers extends QueueItemStatus
+  sealed trait headers
+    extends StObject
+       with QueueItemStatus
   @scala.inline
   def headers: headers = "headers".asInstanceOf[headers]
   
@@ -175,7 +198,9 @@ object simplecrawlerStrings {
   def invaliddomain: invaliddomain = "invaliddomain".asInstanceOf[invaliddomain]
   
   @js.native
-  sealed trait notfound extends QueueItemStatus
+  sealed trait notfound
+    extends StObject
+       with QueueItemStatus
   @scala.inline
   def notfound: notfound = "notfound".asInstanceOf[notfound]
   
@@ -190,7 +215,9 @@ object simplecrawlerStrings {
   def queueadd: queueadd = "queueadd".asInstanceOf[queueadd]
   
   @js.native
-  sealed trait queued extends QueueItemStatus
+  sealed trait queued
+    extends StObject
+       with QueueItemStatus
   @scala.inline
   def queued: queued = "queued".asInstanceOf[queued]
   
@@ -205,7 +232,9 @@ object simplecrawlerStrings {
   def queueerror: queueerror = "queueerror".asInstanceOf[queueerror]
   
   @js.native
-  sealed trait redirected extends QueueItemStatus
+  sealed trait redirected
+    extends StObject
+       with QueueItemStatus
   @scala.inline
   def redirected: redirected = "redirected".asInstanceOf[redirected]
   
@@ -215,7 +244,9 @@ object simplecrawlerStrings {
   def robotstxterror: robotstxterror = "robotstxterror".asInstanceOf[robotstxterror]
   
   @js.native
-  sealed trait spooled extends QueueItemStatus
+  sealed trait spooled
+    extends StObject
+       with QueueItemStatus
   @scala.inline
   def spooled: spooled = "spooled".asInstanceOf[spooled]
 }

@@ -2,16 +2,14 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeCommitRepository extends StObject {
   
   /**
     * The name of the AWS CodeCommit repository. For more information, see repositoryName in the AWS CodeCommit API Reference.
     */
-  var Name: typings.awsSdk.codegurureviewerMod.Name = js.native
+  var Name: typings.awsSdk.codegurureviewerMod.Name
 }
 object CodeCommitRepository {
   

@@ -3,51 +3,49 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxDeviceProvider Class */
-@js.native
 trait FaxDeviceProvider extends StObject {
   
   /** Is device provider built in debug environment */
-  val Debug: Boolean = js.native
+  val Debug: Boolean
   
   /** Array of device IDs exposed by the provider */
-  val DeviceIds: SafeArray[Double] = js.native
+  val DeviceIds: SafeArray[Double]
   
   @JSName("FAXCOMEXLib.FaxDeviceProvider_typekey")
-  var FAXCOMEXLibDotFaxDeviceProvider_typekey: FaxDeviceProvider = js.native
+  var FAXCOMEXLibDotFaxDeviceProvider_typekey: FaxDeviceProvider
   
   /** Provider's friendly name */
-  val FriendlyName: String = js.native
+  val FriendlyName: String
   
   /** Full path and file name of the provider DLL */
-  val ImageName: String = js.native
+  val ImageName: String
   
   /** Last error code at load or initialization */
-  val InitErrorCode: Double = js.native
+  val InitErrorCode: Double
   
   /** The major part of the device provider's build number */
-  val MajorBuild: Double = js.native
+  val MajorBuild: Double
   
   /** The major part of the device provider's version number */
-  val MajorVersion: Double = js.native
+  val MajorVersion: Double
   
   /** The minor part of the device provider's build number */
-  val MinorBuild: Double = js.native
+  val MinorBuild: Double
   
   /** The minor part of the device provider's version number */
-  val MinorVersion: Double = js.native
+  val MinorVersion: Double
   
   /** Status of the device provider */
-  val Status: FAX_PROVIDER_STATUS_ENUM = js.native
+  val Status: FAX_PROVIDER_STATUS_ENUM
   
   /** TSP name used by the provider */
-  val TapiProviderName: String = js.native
+  val TapiProviderName: String
   
   /** Unique name of the provider */
-  val UniqueName: String = js.native
+  val UniqueName: String
 }
 object FaxDeviceProvider {
   

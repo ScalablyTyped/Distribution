@@ -2,41 +2,39 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Browser extends StObject {
   
-  var ANDROID_VERSION: Double | Null = js.native
+  var ANDROID_VERSION: Double | Null
   
-  var CHROME_VERSION: Double = js.native
+  var CHROME_VERSION: Double
   
-  var IE_VERSION: Double = js.native
+  var IE_VERSION: Double
   
-  var IOS_VERSION: Double | Null = js.native
+  var IOS_VERSION: Double | Null
   
-  var IS_ANDROID: Boolean = js.native
+  var IS_ANDROID: Boolean
   
-  var IS_ANY_SAFARI: Boolean = js.native
+  var IS_ANY_SAFARI: Boolean
   
-  var IS_CHROME: Boolean = js.native
+  var IS_CHROME: Boolean
   
-  var IS_EDGE: Boolean = js.native
+  var IS_EDGE: Boolean
   
-  var IS_IOS: Boolean = js.native
+  var IS_IOS: Boolean
   
-  var IS_IPAD: Boolean = js.native
+  var IS_IPAD: Boolean
   
-  var IS_IPHONE: Boolean = js.native
+  var IS_IPHONE: Boolean
   
-  var IS_IPOD: Boolean = js.native
+  var IS_IPOD: Boolean
   
-  var IS_NATIVE_ANDROID: Boolean = js.native
+  var IS_NATIVE_ANDROID: Boolean
   
-  var IS_SAFARI: Boolean = js.native
+  var IS_SAFARI: Boolean
   
-  var TOUCH_ENABLED: Boolean = js.native
+  var TOUCH_ENABLED: Boolean
 }
 object Browser {
   
@@ -56,7 +54,7 @@ object Browser {
     IS_SAFARI: Boolean,
     TOUCH_ENABLED: Boolean
   ): Browser = {
-    val __obj = js.Dynamic.literal(CHROME_VERSION = CHROME_VERSION.asInstanceOf[js.Any], IE_VERSION = IE_VERSION.asInstanceOf[js.Any], IS_ANDROID = IS_ANDROID.asInstanceOf[js.Any], IS_ANY_SAFARI = IS_ANY_SAFARI.asInstanceOf[js.Any], IS_CHROME = IS_CHROME.asInstanceOf[js.Any], IS_EDGE = IS_EDGE.asInstanceOf[js.Any], IS_IOS = IS_IOS.asInstanceOf[js.Any], IS_IPAD = IS_IPAD.asInstanceOf[js.Any], IS_IPHONE = IS_IPHONE.asInstanceOf[js.Any], IS_IPOD = IS_IPOD.asInstanceOf[js.Any], IS_NATIVE_ANDROID = IS_NATIVE_ANDROID.asInstanceOf[js.Any], IS_SAFARI = IS_SAFARI.asInstanceOf[js.Any], TOUCH_ENABLED = TOUCH_ENABLED.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(CHROME_VERSION = CHROME_VERSION.asInstanceOf[js.Any], IE_VERSION = IE_VERSION.asInstanceOf[js.Any], IS_ANDROID = IS_ANDROID.asInstanceOf[js.Any], IS_ANY_SAFARI = IS_ANY_SAFARI.asInstanceOf[js.Any], IS_CHROME = IS_CHROME.asInstanceOf[js.Any], IS_EDGE = IS_EDGE.asInstanceOf[js.Any], IS_IOS = IS_IOS.asInstanceOf[js.Any], IS_IPAD = IS_IPAD.asInstanceOf[js.Any], IS_IPHONE = IS_IPHONE.asInstanceOf[js.Any], IS_IPOD = IS_IPOD.asInstanceOf[js.Any], IS_NATIVE_ANDROID = IS_NATIVE_ANDROID.asInstanceOf[js.Any], IS_SAFARI = IS_SAFARI.asInstanceOf[js.Any], TOUCH_ENABLED = TOUCH_ENABLED.asInstanceOf[js.Any], ANDROID_VERSION = null, IOS_VERSION = null)
     __obj.asInstanceOf[Browser]
   }
   

@@ -2,22 +2,20 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contents of manifest.json for a static theme */
-@js.native
 trait ThemeManifest extends StObject {
   
-  var dark_theme: js.UndefOr[ThemeType] = js.native
+  var dark_theme: js.UndefOr[ThemeType] = js.undefined
   
-  var default_locale: js.UndefOr[String] = js.native
+  var default_locale: js.UndefOr[String] = js.undefined
   
-  var icons: js.UndefOr[ThemeManifestIcons] = js.native
+  var icons: js.UndefOr[ThemeManifestIcons] = js.undefined
   
-  var theme: ThemeType = js.native
+  var theme: ThemeType
   
-  var theme_experiment: js.UndefOr[ThemeExperiment] = js.native
+  var theme_experiment: js.UndefOr[ThemeExperiment] = js.undefined
 }
 object ThemeManifest {
   

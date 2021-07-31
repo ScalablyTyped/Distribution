@@ -4,7 +4,6 @@ import typings.heremaps.H.geo.MultiPolygon
 import typings.heremaps.H.map.provider.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * by the strip object H.geo.Strip
   */
 @js.native
-trait Polygon extends GeoShape {
+trait Polygon
+  extends StObject
+     with GeoShape {
   
   /**
     * To obtain the polygon's geometry. If you modify the obtained geometry, you must call setGeometry afterwards to not violate the integrity of the polygon.
@@ -49,30 +50,29 @@ object Polygon {
     * @property visibility {boolean}
     * Indicates whether the map object is visible, the default is true A map object is only treated as visible, if it self and all of its nesting parent groups are visible.
     */
-  @js.native
   trait Options extends StObject {
     
-    var arrows: js.UndefOr[ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options] = js.native
+    var arrows: js.UndefOr[ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var elevation: js.UndefOr[Double] = js.native
+    var elevation: js.UndefOr[Double] = js.undefined
     
-    var extrusion: js.UndefOr[Double] = js.native
+    var extrusion: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var provider: js.UndefOr[Provider | Null] = js.native
+    var provider: js.UndefOr[Provider | Null] = js.undefined
     
-    var style: js.UndefOr[SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options] = js.native
+    var style: js.UndefOr[SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options] = js.undefined
     
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
-    var volatility: js.UndefOr[Boolean] = js.native
+    var volatility: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

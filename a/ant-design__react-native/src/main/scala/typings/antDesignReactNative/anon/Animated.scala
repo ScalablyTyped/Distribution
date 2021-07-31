@@ -9,39 +9,37 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animated extends StObject {
   
-  var activeTab: Double = js.native
+  var activeTab: Double
   
-  var animated: Boolean = js.native
+  var animated: Boolean
   
-  var goToTab: js.Any = js.native
+  var goToTab: js.Any
   
-  var instanceId: Double = js.native
+  var instanceId: Double
   
-  var onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.native
+  var onTabClick: js.UndefOr[js.Function2[/* tab */ TabData, /* index */ Double, Unit]] = js.undefined
   
-  var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.native
+  var renderTab: js.UndefOr[js.Function1[/* tab */ TabData, ReactNode]] = js.undefined
   
-  var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.native
+  var renderUnderline: js.UndefOr[js.Function1[/* style */ js.Any, ReactNode]] = js.undefined
   
-  var tabBarActiveTextColor: js.UndefOr[String] = js.native
+  var tabBarActiveTextColor: js.UndefOr[String] = js.undefined
   
-  var tabBarBackgroundColor: js.UndefOr[String] = js.native
+  var tabBarBackgroundColor: js.UndefOr[String] = js.undefined
   
-  var tabBarInactiveTextColor: js.UndefOr[String] = js.native
+  var tabBarInactiveTextColor: js.UndefOr[String] = js.undefined
   
-  var tabBarPosition: js.UndefOr[top | bottom] = js.native
+  var tabBarPosition: js.UndefOr[top | bottom] = js.undefined
   
-  var tabBarTextStyle: StyleProp[TextStyle] = js.native
+  var tabBarTextStyle: StyleProp[TextStyle]
   
-  var tabBarUnderlineStyle: StyleProp[ViewStyle] = js.native
+  var tabBarUnderlineStyle: StyleProp[ViewStyle]
   
-  var tabs: js.Array[TabData] = js.native
+  var tabs: js.Array[TabData]
 }
 object Animated {
   

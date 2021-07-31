@@ -2,63 +2,61 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PanResponderCallbacks extends StObject {
   
   var onMoveShouldSetPanResponder: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onMoveShouldSetPanResponderCapture: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderEnd: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderGrant: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderMove: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderReject: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderRelease: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderStart: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderTerminate: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onPanResponderTerminationRequest: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onShouldBlockNativeResponder: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onStartShouldSetPanResponder: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Boolean]
-  ] = js.native
+  ] = js.undefined
   
   var onStartShouldSetPanResponderCapture: js.UndefOr[
     js.Function2[/* e */ GestureResponderEvent, /* gestureState */ PanResponderGestureState, Boolean]
-  ] = js.native
+  ] = js.undefined
 }
 object PanResponderCallbacks {
   

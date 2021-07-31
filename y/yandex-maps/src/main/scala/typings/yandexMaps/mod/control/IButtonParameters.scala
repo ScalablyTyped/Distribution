@@ -5,17 +5,15 @@ import typings.yandexMaps.anon.Enabled
 import typings.yandexMaps.anon.IBaseButtonParametersOpti
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IButtonParameters extends StObject {
   
-  var data: js.UndefOr[Content] = js.native
+  var data: js.UndefOr[Content] = js.undefined
   
-  var options: js.UndefOr[IBaseButtonParametersOpti] = js.native
+  var options: js.UndefOr[IBaseButtonParametersOpti] = js.undefined
   
-  var state: js.UndefOr[Enabled] = js.native
+  var state: js.UndefOr[Enabled] = js.undefined
 }
 object IButtonParameters {
   

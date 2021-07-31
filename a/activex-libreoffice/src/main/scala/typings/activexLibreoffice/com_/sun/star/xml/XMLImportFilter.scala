@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.sax.XDocumentHandler
 import typings.activexLibreoffice.com_.sun.star.xml.sax.XLocator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,9 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It is an extension of {@link com.sun.star.document.ImportFilter} and differs from it in that this filter additionally supports the {@link
   * com.sun.star.xml.sax.XDocumentHandler} interface.
   */
-@js.native
 trait XMLImportFilter
-  extends typings.activexLibreoffice.com_.sun.star.document.ImportFilter
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.document.ImportFilter
      with XDocumentHandler
 object XMLImportFilter {
   
@@ -35,7 +34,7 @@ object XMLImportFilter {
     filter: SeqEquiv[PropertyValue] => Boolean,
     getName: () => String,
     ignorableWhitespace: String => Unit,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     processingInstruction: (String, String) => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,

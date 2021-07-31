@@ -13,19 +13,21 @@ import typings.std.Record
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useNavigationHelpersMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/useNavigationHelpers", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/useNavigationHelpers", JSImport.Namespace)
   @js.native
-  def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, Action /* <: NavigationAction */, EventMap /* <: Record[String, _] */](hasOnActionGetStateEmitterRouter: Options[State, Action]): DangerouslyGetParent with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) with EventEmitter[EventMap] with EventConsumer[_] with (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, _]) with ActionHelpers = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[State /* <: NavigationState[ParamListBase] */, ActionHelpers /* <: Record[String, js.Function0[Unit]] */, Action /* <: NavigationAction */, EventMap /* <: Record[String, js.Any] */](hasOnActionGetStateEmitterRouter: Options[State, Action]): DangerouslyGetParent & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasOnActionGetStateEmitterRouter.asInstanceOf[js.Any]).asInstanceOf[DangerouslyGetParent & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Object]) & EventEmitter[EventMap] & EventConsumer[js.Any] & (PrivateValueStore[Record[String, js.UndefOr[js.Object]], String, js.Any]) & ActionHelpers]
   
   @js.native
   trait Options[State /* <: NavigationState[ParamListBase] */, Action /* <: NavigationAction */] extends StObject {
     
-    var emitter: NavigationEventEmitter[_] = js.native
+    var emitter: NavigationEventEmitter[js.Any] = js.native
     
     def getState(): State = js.native
     

@@ -3,19 +3,17 @@ package typings.openlayers.mod.olx.format
 import typings.openlayers.mod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WriteOptions extends StObject {
   
-  var dataProjection: ProjectionLike = js.native
+  var dataProjection: ProjectionLike
   
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
-  var featureProjection: js.UndefOr[ProjectionLike] = js.native
+  var featureProjection: js.UndefOr[ProjectionLike] = js.undefined
   
-  var rightHanded: js.UndefOr[Boolean] = js.native
+  var rightHanded: js.UndefOr[Boolean] = js.undefined
 }
 object WriteOptions {
   

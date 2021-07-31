@@ -10,9 +10,9 @@ Fetch adapter for @pollyjs
 | ------------------ | :-------------: |
 | Full name          | @pollyjs/adapter-fetch |
 | Keywords           | polly, pollyjs, record, replay, fetch, adapter |
-| # releases         | 27 |
+| # releases         | 23 |
 | # dependents       | 5 |
-| # downloads        | 284008 |
+| # downloads        | 282037 |
 | # stars            | 0 |
 
 ## Links

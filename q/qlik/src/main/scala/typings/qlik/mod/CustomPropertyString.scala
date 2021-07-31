@@ -6,29 +6,28 @@ import typings.qlik.qlikStrings.optional
 import typings.qlik.qlikStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyString
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var expression: js.UndefOr[always | optional | _empty] = js.native
+  var expression: js.UndefOr[always | optional | _empty] = js.undefined
   
-  var maxLength: js.UndefOr[Double] = js.native
+  var maxLength: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyString: string = js.native
+  var type_CustomPropertyString: string
 }
 object CustomPropertyString {
   
   @scala.inline
-  def apply(`type`: string): CustomPropertyString = {
+  def apply(): CustomPropertyString = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomPropertyString]
   }
   

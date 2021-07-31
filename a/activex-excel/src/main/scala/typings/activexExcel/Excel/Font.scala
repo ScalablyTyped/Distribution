@@ -6,54 +6,52 @@ import typings.activexExcel.activexExcelStrings.Regular
 import typings.activexExcel.activexExcelStrings.`Bold Italic`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Font extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Background: XlBackground = js.native
+  var Background: XlBackground
   
-  var Bold: Boolean = js.native
+  var Bold: Boolean
   
-  var Color: XlRgbColor | Double = js.native
+  var Color: XlRgbColor | Double
   
-  var ColorIndex: Double | XlColorIndex = js.native
+  var ColorIndex: Double | XlColorIndex
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Font_typekey")
-  var ExcelDotFont_typekey: Font = js.native
+  var ExcelDotFont_typekey: Font
   
-  var FontStyle: Regular | Italic | Bold | (`Bold Italic`) = js.native
+  var FontStyle: Regular | Italic | Bold | (`Bold Italic`)
   
-  var Italic: Boolean = js.native
+  var Italic: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
-  var OutlineFont: js.Any = js.native
+  var OutlineFont: js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Shadow: js.Any = js.native
+  var Shadow: js.Any
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Strikethrough: Boolean = js.native
+  var Strikethrough: Boolean
   
-  var Subscript: Boolean = js.native
+  var Subscript: Boolean
   
-  var Superscript: Boolean = js.native
+  var Superscript: Boolean
   
-  var ThemeColor: XlThemeColor = js.native
+  var ThemeColor: XlThemeColor
   
-  var ThemeFont: XlThemeFont = js.native
+  var ThemeFont: XlThemeFont
   
-  var TintAndShade: Double = js.native
+  var TintAndShade: Double
   
-  var Underline: XlUnderlineStyle = js.native
+  var Underline: XlUnderlineStyle
 }
 object Font {
   

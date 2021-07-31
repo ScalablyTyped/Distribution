@@ -2,16 +2,14 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ValueExpression... Where <expression> is a string.
   */
-@js.native
 trait IValueExpr extends StObject {
   
-  var qv: String = js.native
+  var qv: String
 }
 object IValueExpr {
   

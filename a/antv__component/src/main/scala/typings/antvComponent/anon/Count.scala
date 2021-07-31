@@ -2,17 +2,15 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
-  var count: Double = js.native
+  var count: Double
   
-  var length: Double = js.native
+  var length: Double
   
-  var style: Stroke = js.native
+  var style: Stroke
 }
 object Count {
   

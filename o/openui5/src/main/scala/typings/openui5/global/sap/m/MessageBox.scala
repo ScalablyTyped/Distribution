@@ -2,10 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MessageBox {
+  
+  @JSGlobal("sap.m.MessageBox")
+  @js.native
+  val ^ : js.Any = js.native
   
   object Action {
     
@@ -173,12 +176,10 @@ object MessageBox {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
-  @JSGlobal("sap.m.MessageBox.alert")
-  @js.native
-  def alert(vMessage: String): Unit = js.native
-  @JSGlobal("sap.m.MessageBox.alert")
-  @js.native
-  def alert(vMessage: String, mOptions: js.Any): Unit = js.native
+  @scala.inline
+  def alert(vMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("alert")(vMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def alert(vMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("alert")(vMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Displays a confirmation dialog with the given message, a QUESTION icon, an OK buttonand a Cancel
@@ -198,12 +199,10 @@ object MessageBox {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
-  @JSGlobal("sap.m.MessageBox.confirm")
-  @js.native
-  def confirm(vMessage: String): Unit = js.native
-  @JSGlobal("sap.m.MessageBox.confirm")
-  @js.native
-  def confirm(vMessage: String, mOptions: js.Any): Unit = js.native
+  @scala.inline
+  def confirm(vMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(vMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def confirm(vMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(vMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Displays an error dialog with the given message, an ERROR icon, a CLOSE button..If a callback is
@@ -221,12 +220,10 @@ object MessageBox {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
-  @JSGlobal("sap.m.MessageBox.error")
-  @js.native
-  def error(vMessage: String): Unit = js.native
-  @JSGlobal("sap.m.MessageBox.error")
-  @js.native
-  def error(vMessage: String, mOptions: js.Any): Unit = js.native
+  @scala.inline
+  def error(vMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(vMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def error(vMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(vMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Displays an information dialog with the given message, an INFO icon, an OK button.If a callback is
@@ -244,12 +241,10 @@ object MessageBox {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
-  @JSGlobal("sap.m.MessageBox.information")
-  @js.native
-  def information(vMessage: String): Unit = js.native
-  @JSGlobal("sap.m.MessageBox.information")
-  @js.native
-  def information(vMessage: String, mOptions: js.Any): Unit = js.native
+  @scala.inline
+  def information(vMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("information")(vMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def information(vMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("information")(vMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates and displays a sap.m.Dialog with type sap.m.DialogType.Message with the given text and
@@ -272,12 +267,10 @@ object MessageBox {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
-  @JSGlobal("sap.m.MessageBox.show")
-  @js.native
-  def show(vMessage: String): Unit = js.native
-  @JSGlobal("sap.m.MessageBox.show")
-  @js.native
-  def show(vMessage: String, mOptions: js.Any): Unit = js.native
+  @scala.inline
+  def show(vMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(vMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def show(vMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(vMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Displays a success dialog with the given message, a SUCCESS icon, an OK button.If a callback is
@@ -295,12 +288,10 @@ object MessageBox {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
-  @JSGlobal("sap.m.MessageBox.success")
-  @js.native
-  def success(vMessage: String): Unit = js.native
-  @JSGlobal("sap.m.MessageBox.success")
-  @js.native
-  def success(vMessage: String, mOptions: js.Any): Unit = js.native
+  @scala.inline
+  def success(vMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(vMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def success(vMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(vMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Displays a warning dialog with the given message, a WARNING icon, an OK button.If a callback is
@@ -318,10 +309,8 @@ object MessageBox {
     * vMassage is deprecated since version 1.30.4.
     * @param mOptions Other options (optional)
     */
-  @JSGlobal("sap.m.MessageBox.warning")
-  @js.native
-  def warning(vMessage: String): Unit = js.native
-  @JSGlobal("sap.m.MessageBox.warning")
-  @js.native
-  def warning(vMessage: String, mOptions: js.Any): Unit = js.native
+  @scala.inline
+  def warning(vMessage: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warning")(vMessage.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def warning(vMessage: String, mOptions: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warning")(vMessage.asInstanceOf[js.Any], mOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

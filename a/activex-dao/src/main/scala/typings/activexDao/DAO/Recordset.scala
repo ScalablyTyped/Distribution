@@ -4,7 +4,6 @@ import typings.std.SafeArray
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -65,9 +64,9 @@ trait Recordset extends StObject {
   val Fields_Original: Fields = js.native
   
   def FillCache(): Unit = js.native
-  def FillCache(Rows: js.UndefOr[scala.Nothing], StartBookmark: String): Unit = js.native
   def FillCache(Rows: Double): Unit = js.native
   def FillCache(Rows: Double, StartBookmark: String): Unit = js.native
+  def FillCache(Rows: Unit, StartBookmark: String): Unit = js.native
   
   var Filter: String = js.native
   
@@ -114,7 +113,7 @@ trait Recordset extends StObject {
   val ODBCFetchDelay: Double = js.native
   
   def OpenRecordset(): Recordset = js.native
-  def OpenRecordset(Type: js.UndefOr[scala.Nothing], Options: RecordsetOptionEnum): Recordset = js.native
+  def OpenRecordset(Type: Unit, Options: RecordsetOptionEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum): Recordset = js.native
   def OpenRecordset(Type: RecordsetTypeEnum, Options: RecordsetOptionEnum): Recordset = js.native
   
@@ -168,7 +167,7 @@ trait Recordset extends StObject {
     * @param Force [Force=false]
     */
   def Update(): Unit = js.native
-  def Update(UpdateType: js.UndefOr[scala.Nothing], Force: Boolean): Unit = js.native
+  def Update(UpdateType: Unit, Force: Boolean): Unit = js.native
   def Update(UpdateType: UpdateTypeEnum): Unit = js.native
   def Update(UpdateType: UpdateTypeEnum, Force: Boolean): Unit = js.native
   

@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDatasetGroupRequest extends StObject {
   
   /**
     * An array of the Amazon Resource Names (ARNs) of the datasets to add to the dataset group.
     */
-  var DatasetArns: ArnList = js.native
+  var DatasetArns: ArnList
   
   /**
     * The ARN of the dataset group.
     */
-  var DatasetGroupArn: Arn = js.native
+  var DatasetGroupArn: Arn
 }
 object UpdateDatasetGroupRequest {
   

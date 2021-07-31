@@ -2,7 +2,6 @@ package typings.microsoftLiveConnect.Microsoft.Live
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,40 +12,39 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a user. Use the wl.contacts_calendars scope to read a user's friends'
   * Calendar objects.
   */
-@js.native
 trait ICalendar extends StObject {
   
   /**
     * The time, in ISO 8601 format, at which the calendar was created.
     */
-  var created_time: String = js.native
+  var created_time: String
   
   /**
     * Description of the calendar.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Info about the user who owns the calendar.
     */
-  var from: IUserInfo = js.native
+  var from: IUserInfo
   
   /**
     * The Calendar object's ID.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * A value that indicates whether this calendar is the default calendar.
     * If this calendar is the default calendar, this value is true;
     * otherwise, it is false.
     */
-  var is_default: Boolean = js.native
+  var is_default: Boolean
   
   /**
     * Name of the calendar.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Role and permissions that are granted to the user for the calendar.
@@ -58,19 +56,19 @@ trait ICalendar extends StObject {
     * - co_owner: The user is co-owner of this calendar.
     * - owner: The user is the owner of this calendar.
     */
-  var permissions: String = js.native
+  var permissions: String
   
   /**
     * A public subscription URL with which Live Connect will synchronize
     * properties and events periodically for this calendar. A NULL value
     * indicates that this is not a subscribed calendar.
     */
-  var subscription_location: String = js.native
+  var subscription_location: String
   
   /**
     * The time, in ISO 8601 format, that the calendar was last updated.
     */
-  var updated_time: String = js.native
+  var updated_time: String
 }
 object ICalendar {
   

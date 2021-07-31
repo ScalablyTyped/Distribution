@@ -9,37 +9,35 @@ import typings.angularCompiler.compileMetadataMod.TransitiveCompileNgModuleMetad
 import typings.angularCompiler.coreMod.SchemaMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapComponents extends StObject {
   
-  var bootstrapComponents: js.Array[CompileIdentifierMetadata] = js.native
+  var bootstrapComponents: js.Array[CompileIdentifierMetadata]
   
-  var declaredDirectives: js.Array[CompileIdentifierMetadata] = js.native
+  var declaredDirectives: js.Array[CompileIdentifierMetadata]
   
-  var declaredPipes: js.Array[CompileIdentifierMetadata] = js.native
+  var declaredPipes: js.Array[CompileIdentifierMetadata]
   
-  var entryComponents: js.Array[CompileEntryComponentMetadata] = js.native
+  var entryComponents: js.Array[CompileEntryComponentMetadata]
   
-  var exportedDirectives: js.Array[CompileIdentifierMetadata] = js.native
+  var exportedDirectives: js.Array[CompileIdentifierMetadata]
   
-  var exportedModules: js.Array[CompileNgModuleSummary] = js.native
+  var exportedModules: js.Array[CompileNgModuleSummary]
   
-  var exportedPipes: js.Array[CompileIdentifierMetadata] = js.native
+  var exportedPipes: js.Array[CompileIdentifierMetadata]
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var importedModules: js.Array[CompileNgModuleSummary] = js.native
+  var importedModules: js.Array[CompileNgModuleSummary]
   
-  var providers: js.Array[CompileProviderMetadata] = js.native
+  var providers: js.Array[CompileProviderMetadata]
   
-  var schemas: js.Array[SchemaMetadata] = js.native
+  var schemas: js.Array[SchemaMetadata]
   
-  var transitiveModule: TransitiveCompileNgModuleMetadata = js.native
+  var transitiveModule: TransitiveCompileNgModuleMetadata
   
-  var `type`: CompileTypeMetadata = js.native
+  var `type`: CompileTypeMetadata
 }
 object BootstrapComponents {
   
@@ -58,7 +56,7 @@ object BootstrapComponents {
     transitiveModule: TransitiveCompileNgModuleMetadata,
     `type`: CompileTypeMetadata
   ): BootstrapComponents = {
-    val __obj = js.Dynamic.literal(bootstrapComponents = bootstrapComponents.asInstanceOf[js.Any], declaredDirectives = declaredDirectives.asInstanceOf[js.Any], declaredPipes = declaredPipes.asInstanceOf[js.Any], entryComponents = entryComponents.asInstanceOf[js.Any], exportedDirectives = exportedDirectives.asInstanceOf[js.Any], exportedModules = exportedModules.asInstanceOf[js.Any], exportedPipes = exportedPipes.asInstanceOf[js.Any], importedModules = importedModules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], transitiveModule = transitiveModule.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bootstrapComponents = bootstrapComponents.asInstanceOf[js.Any], declaredDirectives = declaredDirectives.asInstanceOf[js.Any], declaredPipes = declaredPipes.asInstanceOf[js.Any], entryComponents = entryComponents.asInstanceOf[js.Any], exportedDirectives = exportedDirectives.asInstanceOf[js.Any], exportedModules = exportedModules.asInstanceOf[js.Any], exportedPipes = exportedPipes.asInstanceOf[js.Any], importedModules = importedModules.asInstanceOf[js.Any], providers = providers.asInstanceOf[js.Any], schemas = schemas.asInstanceOf[js.Any], transitiveModule = transitiveModule.asInstanceOf[js.Any], id = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BootstrapComponents]
   }

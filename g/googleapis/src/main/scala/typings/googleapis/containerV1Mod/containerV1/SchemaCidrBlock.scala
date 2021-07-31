@@ -2,24 +2,22 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CidrBlock contains an optional name and one CIDR block.
   */
-@js.native
 trait SchemaCidrBlock extends StObject {
   
   /**
     * cidr_block must be specified in CIDR notation.
     */
-  var cidrBlock: js.UndefOr[String] = js.native
+  var cidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * display_name is an optional field for users to identify CIDR blocks.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
 }
 object SchemaCidrBlock {
   

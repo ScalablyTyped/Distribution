@@ -12,40 +12,38 @@ import typings.wechatMiniprogram.WechatMiniprogram.Page.IShareAppMessageOption
 import typings.wechatMiniprogram.WechatMiniprogram.Page.ITabItemTapOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wechat-miniprogram.WechatMiniprogram.OptionalInterface<wechat-miniprogram.WechatMiniprogram.Page.ILifetime> */
-@js.native
 trait OptionalInterfaceILifetim extends StObject {
   
-  var onAddToFavorites: Optional[js.Function1[/* options */ IAddToFavoritesOption, IAddToFavoritesContent]] = js.native
+  var onAddToFavorites: Optional[js.Function1[/* options */ IAddToFavoritesOption, IAddToFavoritesContent]]
   
-  var onHide: Optional[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onHide: Optional[js.Function0[Unit | js.Promise[Unit]]]
   
   var onLoad: Optional[
     js.Function1[/* query */ Record[String, js.UndefOr[String]], Unit | js.Promise[Unit]]
-  ] = js.native
+  ]
   
-  var onPageScroll: Optional[js.Function1[/* options */ IPageScrollOption, Unit | js.Promise[Unit]]] = js.native
+  var onPageScroll: Optional[js.Function1[/* options */ IPageScrollOption, Unit | js.Promise[Unit]]]
   
-  var onPullDownRefresh: Optional[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onPullDownRefresh: Optional[js.Function0[Unit | js.Promise[Unit]]]
   
-  var onReachBottom: Optional[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onReachBottom: Optional[js.Function0[Unit | js.Promise[Unit]]]
   
-  var onReady: Optional[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onReady: Optional[js.Function0[Unit | js.Promise[Unit]]]
   
-  var onResize: Optional[js.Function1[/* options */ IResizeOption, Unit | js.Promise[Unit]]] = js.native
+  var onResize: Optional[js.Function1[/* options */ IResizeOption, Unit | js.Promise[Unit]]]
   
-  var onShareAppMessage: Optional[js.Function1[/* options */ IShareAppMessageOption, ICustomShareContent | Unit]] = js.native
+  var onShareAppMessage: Optional[js.Function1[/* options */ IShareAppMessageOption, ICustomShareContent | Unit]]
   
-  var onShareTimeline: Optional[js.Function0[ICustomTimelineContent | Unit]] = js.native
+  var onShareTimeline: Optional[js.Function0[ICustomTimelineContent | Unit]]
   
-  var onShow: Optional[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onShow: Optional[js.Function0[Unit | js.Promise[Unit]]]
   
-  var onTabItemTap: Optional[js.Function1[/* options */ ITabItemTapOption, Unit | js.Promise[Unit]]] = js.native
+  var onTabItemTap: Optional[js.Function1[/* options */ ITabItemTapOption, Unit | js.Promise[Unit]]]
   
-  var onUnload: Optional[js.Function0[Unit | js.Promise[Unit]]] = js.native
+  var onUnload: Optional[js.Function0[Unit | js.Promise[Unit]]]
 }
 object OptionalInterfaceILifetim {
   

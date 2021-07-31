@@ -508,7 +508,6 @@ import typings.csstype.mod.WordWrapProperty
 import typings.csstype.mod.WritingModeProperty
 import typings.csstype.mod.ZIndexProperty
 import typings.csstype.mod.ZoomProperty
-import typings.emotionSerialize.anon.Anim
 import typings.emotionSerialize.helperMod.Equal
 import typings.emotionUtils.mod.RegisteredCache
 import typings.emotionUtils.mod.SerializedStyles
@@ -517,35 +516,38 @@ import typings.std.Extract
 import typings.std.TemplateStringsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@emotion/serialize", "serializeStyles")
+  @JSImport("@emotion/serialize", JSImport.Namespace)
   @js.native
-  def serializeStyles[MP](args: js.Array[TemplateStringsArray | Interpolation[MP]], registered: RegisteredCache): SerializedStyles = js.native
-  @JSImport("@emotion/serialize", "serializeStyles")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def serializeStyles[MP](args: js.Array[TemplateStringsArray | Interpolation[MP]], registered: RegisteredCache): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeStyles")(args.asInstanceOf[js.Any], registered.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
+  @scala.inline
   def serializeStyles[MP](
     args: js.Array[TemplateStringsArray | Interpolation[MP]],
     registered: RegisteredCache,
     mergedProps: MP
-  ): SerializedStyles = js.native
+  ): SerializedStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeStyles")(args.asInstanceOf[js.Any], registered.asInstanceOf[js.Any], mergedProps.asInstanceOf[js.Any])).asInstanceOf[SerializedStyles]
   
   @js.native
   trait ArrayCSSInterpolation
-    extends Array[CSSInterpolation]
+    extends StObject
+       with Array[CSSInterpolation]
        with _CSSInterpolation
   
   @js.native
   trait ArrayInterpolation[MP]
-    extends Array[Interpolation[MP]]
+    extends StObject
+       with Array[Interpolation[MP]]
        with _Interpolation[MP]
   
   /* Rewritten from type alias, can be one of: 
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Boolean
     - scala.Double
     - java.lang.String
@@ -555,13 +557,21 @@ object mod {
     - typings.emotionSerialize.mod.CSSObject
     - typings.emotionSerialize.mod.ArrayCSSInterpolation
   */
-  type CSSInterpolation = js.UndefOr[
-    _CSSInterpolation | Null | Boolean | Double | String | Keyframes | SerializedStyles
-  ]
+  type CSSInterpolation = js.UndefOr[_CSSInterpolation | Null | Boolean | Double | String | SerializedStyles]
   
-  @js.native
-  trait CSSObject
-    extends CSSOthersObjectForCSSObject
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
+  - typings.emotionSerialize.mod.CSSOthersObjectForCSSObject because Inheritance from two classes. Inlined  */ trait CSSObject
+    extends StObject
        with CSSPropertiesWithMultiValues
        with CSSPseudosForCSSObject
        with _CSSInterpolation
@@ -574,8 +584,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait CSSOthersObject[MP] extends /* propertiesName */ StringDictionary[Interpolation[MP]]
+  trait CSSOthersObject[MP]
+    extends StObject
+       with /* propertiesName */ StringDictionary[Interpolation[MP]]
   object CSSOthersObject {
     
     @scala.inline
@@ -585,8 +596,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait CSSOthersObjectForCSSObject extends /* propertiesName */ StringDictionary[CSSInterpolation]
+  trait CSSOthersObjectForCSSObject
+    extends StObject
+       with /* propertiesName */ StringDictionary[CSSInterpolation]
   object CSSOthersObjectForCSSObject {
     
     @scala.inline
@@ -599,86 +611,85 @@ object mod {
   type CSSProperties = PropertiesFallback[Double | String]
   
   /* Inlined {[ K in keyof @emotion/serialize.@emotion/serialize.CSSProperties ]: @emotion/serialize.@emotion/serialize.CSSProperties[K] | std.Array<std.Extract<@emotion/serialize.@emotion/serialize.CSSProperties[K], string>>} */
-  @js.native
   trait CSSPropertiesWithMultiValues extends StObject {
     
     var KhtmlBoxAlign: js.UndefOr[
         BoxAlignProperty | (js.Array[
           BoxAlignProperty | (Extract[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlBoxDirection: js.UndefOr[
         BoxDirectionProperty | (js.Array[
           BoxDirectionProperty | (Extract[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlBoxFlex: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlBoxFlexGroup: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlBoxLines: js.UndefOr[
         BoxLinesProperty | (js.Array[
           BoxLinesProperty | (Extract[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlBoxOrdinalGroup: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlBoxOrient: js.UndefOr[
         BoxOrientProperty | (js.Array[
           BoxOrientProperty | (Extract[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlBoxPack: js.UndefOr[
         BoxPackProperty | (js.Array[
           BoxPackProperty | (Extract[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlLineBreak: js.UndefOr[
         LineBreakProperty | (js.Array[
           (Extract[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]], String]) | LineBreakProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlOpacity: js.UndefOr[
         OpacityProperty | (js.Array[
           (Extract[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]], String]) | OpacityProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var KhtmlUserSelect: js.UndefOr[
         UserSelectProperty | (js.Array[
           (Extract[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]], String]) | UserSelectProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimation: js.UndefOr[
         AnimationProperty | (js.Array[
           AnimationProperty | (Extract[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationDirection: js.UndefOr[
         AnimationDirectionProperty | (js.Array[
@@ -687,13 +698,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationFillMode: js.UndefOr[
         AnimationFillModeProperty | (js.Array[
@@ -702,7 +713,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationIterationCount: js.UndefOr[
         AnimationIterationCountProperty | (js.Array[
@@ -711,13 +722,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationName: js.UndefOr[
         AnimationNameProperty | (js.Array[
           AnimationNameProperty | (Extract[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationPlayState: js.UndefOr[
         AnimationPlayStateProperty | (js.Array[
@@ -726,7 +737,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAnimationTimingFunction: js.UndefOr[
         AnimationTimingFunctionProperty | (js.Array[
@@ -735,13 +746,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozAppearance: js.UndefOr[
         MozAppearanceProperty | (js.Array[
           (Extract[js.UndefOr[MozAppearanceProperty | js.Array[MozAppearanceProperty]], String]) | MozAppearanceProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBackfaceVisibility: js.UndefOr[
         BackfaceVisibilityProperty | (js.Array[
@@ -750,13 +761,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundClip: js.UndefOr[
         BackgroundClipProperty | (js.Array[
           BackgroundClipProperty | (Extract[js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundInlinePolicy: js.UndefOr[
         BoxDecorationBreakProperty | (js.Array[
@@ -765,13 +776,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundOrigin: js.UndefOr[
         BackgroundOriginProperty | (js.Array[
           BackgroundOriginProperty | (Extract[js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBackgroundSize: js.UndefOr[
         (BackgroundSizeProperty[Double | String]) | (js.Array[
@@ -782,13 +793,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBinding: js.UndefOr[
         MozBindingProperty | (js.Array[
           (Extract[js.UndefOr[MozBindingProperty | js.Array[MozBindingProperty]], String]) | MozBindingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderBottomColors: js.UndefOr[
         MozBorderBottomColorsProperty | (js.Array[
@@ -797,7 +808,7 @@ object mod {
             String
           ]) | MozBorderBottomColorsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderEndColor: js.UndefOr[
         BorderInlineEndColorProperty | (js.Array[
@@ -806,7 +817,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderEndStyle: js.UndefOr[
         BorderInlineEndStyleProperty | (js.Array[
@@ -815,7 +826,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderEndWidth: js.UndefOr[
         (BorderInlineEndWidthProperty[Double | String]) | (js.Array[
@@ -826,13 +837,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderImage: js.UndefOr[
         BorderImageProperty | (js.Array[
           BorderImageProperty | (Extract[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderLeftColors: js.UndefOr[
         MozBorderLeftColorsProperty | (js.Array[
@@ -841,7 +852,7 @@ object mod {
             String
           ]) | MozBorderLeftColorsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadius: js.UndefOr[
         (BorderRadiusProperty[Double | String]) | (js.Array[
@@ -852,7 +863,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusBottomleft: js.UndefOr[
         (BorderBottomLeftRadiusProperty[Double | String]) | (js.Array[
@@ -863,7 +874,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusBottomright: js.UndefOr[
         (BorderBottomRightRadiusProperty[Double | String]) | (js.Array[
@@ -874,7 +885,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusTopleft: js.UndefOr[
         (BorderTopLeftRadiusProperty[Double | String]) | (js.Array[
@@ -885,7 +896,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRadiusTopright: js.UndefOr[
         (BorderTopRightRadiusProperty[Double | String]) | (js.Array[
@@ -896,7 +907,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderRightColors: js.UndefOr[
         MozBorderRightColorsProperty | (js.Array[
@@ -905,7 +916,7 @@ object mod {
             String
           ]) | MozBorderRightColorsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderStartColor: js.UndefOr[
         BorderInlineStartColorProperty | (js.Array[
@@ -914,7 +925,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderStartStyle: js.UndefOr[
         BorderInlineStartStyleProperty | (js.Array[
@@ -923,7 +934,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBorderTopColors: js.UndefOr[
         MozBorderTopColorsProperty | (js.Array[
@@ -932,67 +943,67 @@ object mod {
             String
           ]) | MozBorderTopColorsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxAlign: js.UndefOr[
         BoxAlignProperty | (js.Array[
           BoxAlignProperty | (Extract[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxDirection: js.UndefOr[
         BoxDirectionProperty | (js.Array[
           BoxDirectionProperty | (Extract[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxFlex: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxOrdinalGroup: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxOrient: js.UndefOr[
         BoxOrientProperty | (js.Array[
           BoxOrientProperty | (Extract[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxPack: js.UndefOr[
         BoxPackProperty | (js.Array[
           BoxPackProperty | (Extract[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxShadow: js.UndefOr[
         BoxShadowProperty | (js.Array[
           BoxShadowProperty | (Extract[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozBoxSizing: js.UndefOr[
         BoxSizingProperty | (js.Array[
           BoxSizingProperty | (Extract[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnCount: js.UndefOr[
         ColumnCountProperty | (js.Array[
           ColumnCountProperty | (Extract[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnFill: js.UndefOr[
         ColumnFillProperty | (js.Array[
           ColumnFillProperty | (Extract[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnGap: js.UndefOr[
         (ColumnGapProperty[Double | String]) | (js.Array[
@@ -1003,7 +1014,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRule: js.UndefOr[
         (ColumnRuleProperty[Double | String]) | (js.Array[
@@ -1014,19 +1025,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRuleColor: js.UndefOr[
         ColumnRuleColorProperty | (js.Array[
           ColumnRuleColorProperty | (Extract[js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRuleStyle: js.UndefOr[
         ColumnRuleStyleProperty | (js.Array[
           ColumnRuleStyleProperty | (Extract[js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnRuleWidth: js.UndefOr[
         (ColumnRuleWidthProperty[Double | String]) | (js.Array[
@@ -1037,7 +1048,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumnWidth: js.UndefOr[
         (ColumnWidthProperty[Double | String]) | (js.Array[
@@ -1048,7 +1059,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozColumns: js.UndefOr[
         (ColumnsProperty[Double | String]) | (js.Array[
@@ -1059,7 +1070,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozContextProperties: js.UndefOr[
         MozContextPropertiesProperty | (js.Array[
@@ -1068,13 +1079,13 @@ object mod {
             String
           ]) | MozContextPropertiesProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozFloatEdge: js.UndefOr[
         MozFloatEdgeProperty | (js.Array[
           (Extract[js.UndefOr[MozFloatEdgeProperty | js.Array[MozFloatEdgeProperty]], String]) | MozFloatEdgeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozFontFeatureSettings: js.UndefOr[
         FontFeatureSettingsProperty | (js.Array[
@@ -1083,7 +1094,7 @@ object mod {
             String
           ]) | FontFeatureSettingsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozFontLanguageOverride: js.UndefOr[
         FontLanguageOverrideProperty | (js.Array[
@@ -1092,25 +1103,25 @@ object mod {
             String
           ]) | FontLanguageOverrideProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozForceBrokenImageIcon: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozHyphens: js.UndefOr[
         HyphensProperty | (js.Array[
           (Extract[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]], String]) | HyphensProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozImageRegion: js.UndefOr[
         MozImageRegionProperty | (js.Array[
           (Extract[js.UndefOr[MozImageRegionProperty | js.Array[MozImageRegionProperty]], String]) | MozImageRegionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozMarginEnd: js.UndefOr[
         (MarginInlineEndProperty[Double | String]) | (js.Array[
@@ -1121,7 +1132,7 @@ object mod {
             String
           ]) | (MarginInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozMarginStart: js.UndefOr[
         (MarginInlineStartProperty[Double | String]) | (js.Array[
@@ -1132,19 +1143,19 @@ object mod {
             String
           ]) | (MarginInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOpacity: js.UndefOr[
         OpacityProperty | (js.Array[
           (Extract[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]], String]) | OpacityProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOrient: js.UndefOr[
         MozOrientProperty | (js.Array[
           (Extract[js.UndefOr[MozOrientProperty | js.Array[MozOrientProperty]], String]) | MozOrientProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOsxFontSmoothing: js.UndefOr[
         (FontSmoothProperty[Double | String]) | (js.Array[
@@ -1155,7 +1166,7 @@ object mod {
             String
           ]) | (FontSmoothProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutline: js.UndefOr[
         (OutlineProperty[Double | String]) | (js.Array[
@@ -1166,13 +1177,13 @@ object mod {
             String
           ]) | (OutlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineColor: js.UndefOr[
         OutlineColorProperty | (js.Array[
           (Extract[js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]], String]) | OutlineColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadius: js.UndefOr[
         (MozOutlineRadiusProperty[Double | String]) | (js.Array[
@@ -1183,7 +1194,7 @@ object mod {
             String
           ]) | (MozOutlineRadiusProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusBottomleft: js.UndefOr[
         (MozOutlineRadiusBottomleftProperty[Double | String]) | (js.Array[
@@ -1194,7 +1205,7 @@ object mod {
             String
           ]) | (MozOutlineRadiusBottomleftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusBottomright: js.UndefOr[
         (MozOutlineRadiusBottomrightProperty[Double | String]) | (js.Array[
@@ -1205,7 +1216,7 @@ object mod {
             String
           ]) | (MozOutlineRadiusBottomrightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusTopleft: js.UndefOr[
         (MozOutlineRadiusTopleftProperty[Double | String]) | (js.Array[
@@ -1216,7 +1227,7 @@ object mod {
             String
           ]) | (MozOutlineRadiusTopleftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineRadiusTopright: js.UndefOr[
         (MozOutlineRadiusToprightProperty[Double | String]) | (js.Array[
@@ -1227,13 +1238,13 @@ object mod {
             String
           ]) | (MozOutlineRadiusToprightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineStyle: js.UndefOr[
         OutlineStyleProperty | (js.Array[
           (Extract[js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]], String]) | OutlineStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozOutlineWidth: js.UndefOr[
         (OutlineWidthProperty[Double | String]) | (js.Array[
@@ -1244,7 +1255,7 @@ object mod {
             String
           ]) | (OutlineWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozPaddingEnd: js.UndefOr[
         (PaddingInlineEndProperty[Double | String]) | (js.Array[
@@ -1255,7 +1266,7 @@ object mod {
             String
           ]) | (PaddingInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozPaddingStart: js.UndefOr[
         (PaddingInlineStartProperty[Double | String]) | (js.Array[
@@ -1266,7 +1277,7 @@ object mod {
             String
           ]) | (PaddingInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozPerspective: js.UndefOr[
         (PerspectiveProperty[Double | String]) | (js.Array[
@@ -1277,7 +1288,7 @@ object mod {
             String
           ]) | (PerspectiveProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozPerspectiveOrigin: js.UndefOr[
         (PerspectiveOriginProperty[Double | String]) | (js.Array[
@@ -1288,13 +1299,13 @@ object mod {
             String
           ]) | (PerspectiveOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozStackSizing: js.UndefOr[
         MozStackSizingProperty | (js.Array[
           (Extract[js.UndefOr[MozStackSizingProperty | js.Array[MozStackSizingProperty]], String]) | MozStackSizingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTabSize: js.UndefOr[
         (TabSizeProperty[Double | String]) | (js.Array[
@@ -1305,19 +1316,19 @@ object mod {
             String
           ]) | (TabSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTextAlignLast: js.UndefOr[
         TextAlignLastProperty | (js.Array[
           (Extract[js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]], String]) | TextAlignLastProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTextBlink: js.UndefOr[
         MozTextBlinkProperty | (js.Array[
           (Extract[js.UndefOr[MozTextBlinkProperty | js.Array[MozTextBlinkProperty]], String]) | MozTextBlinkProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTextDecorationColor: js.UndefOr[
         TextDecorationColorProperty | (js.Array[
@@ -1326,7 +1337,7 @@ object mod {
             String
           ]) | TextDecorationColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTextDecorationLine: js.UndefOr[
         TextDecorationLineProperty | (js.Array[
@@ -1335,7 +1346,7 @@ object mod {
             String
           ]) | TextDecorationLineProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTextDecorationStyle: js.UndefOr[
         TextDecorationStyleProperty | (js.Array[
@@ -1344,13 +1355,13 @@ object mod {
             String
           ]) | TextDecorationStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTextSizeAdjust: js.UndefOr[
         TextSizeAdjustProperty | (js.Array[
           (Extract[js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]], String]) | TextSizeAdjustProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTransformOrigin: js.UndefOr[
         (TransformOriginProperty[Double | String]) | (js.Array[
@@ -1361,31 +1372,31 @@ object mod {
             String
           ]) | (TransformOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTransformStyle: js.UndefOr[
         TransformStyleProperty | (js.Array[
           (Extract[js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]], String]) | TransformStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTransition: js.UndefOr[
         TransitionProperty | (js.Array[
           (Extract[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]], String]) | TransitionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTransitionDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTransitionDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTransitionProperty: js.UndefOr[
         TransitionPropertyProperty | (js.Array[
@@ -1394,7 +1405,7 @@ object mod {
             String
           ]) | TransitionPropertyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozTransitionTimingFunction: js.UndefOr[
         TransitionTimingFunctionProperty | (js.Array[
@@ -1403,31 +1414,31 @@ object mod {
             String
           ]) | TransitionTimingFunctionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozUserFocus: js.UndefOr[
         MozUserFocusProperty | (js.Array[
           (Extract[js.UndefOr[MozUserFocusProperty | js.Array[MozUserFocusProperty]], String]) | MozUserFocusProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozUserInput: js.UndefOr[
         MozUserInputProperty | (js.Array[
           (Extract[js.UndefOr[MozUserInputProperty | js.Array[MozUserInputProperty]], String]) | MozUserInputProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozUserModify: js.UndefOr[
         MozUserModifyProperty | (js.Array[
           (Extract[js.UndefOr[MozUserModifyProperty | js.Array[MozUserModifyProperty]], String]) | MozUserModifyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozUserSelect: js.UndefOr[
         UserSelectProperty | (js.Array[
           (Extract[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]], String]) | UserSelectProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozWindowDragging: js.UndefOr[
         MozWindowDraggingProperty | (js.Array[
@@ -1436,25 +1447,25 @@ object mod {
             String
           ]) | MozWindowDraggingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var MozWindowShadow: js.UndefOr[
         MozWindowShadowProperty | (js.Array[
           (Extract[js.UndefOr[MozWindowShadowProperty | js.Array[MozWindowShadowProperty]], String]) | MozWindowShadowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimation: js.UndefOr[
         AnimationProperty | (js.Array[
           AnimationProperty | (Extract[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationDirection: js.UndefOr[
         AnimationDirectionProperty | (js.Array[
@@ -1463,13 +1474,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationFillMode: js.UndefOr[
         AnimationFillModeProperty | (js.Array[
@@ -1478,7 +1489,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationIterationCount: js.UndefOr[
         AnimationIterationCountProperty | (js.Array[
@@ -1487,13 +1498,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationName: js.UndefOr[
         AnimationNameProperty | (js.Array[
           AnimationNameProperty | (Extract[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationPlayState: js.UndefOr[
         AnimationPlayStateProperty | (js.Array[
@@ -1502,7 +1513,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OAnimationTimingFunction: js.UndefOr[
         AnimationTimingFunctionProperty | (js.Array[
@@ -1511,7 +1522,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OBackgroundSize: js.UndefOr[
         (BackgroundSizeProperty[Double | String]) | (js.Array[
@@ -1522,19 +1533,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OBorderImage: js.UndefOr[
         BorderImageProperty | (js.Array[
           BorderImageProperty | (Extract[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OObjectFit: js.UndefOr[
         ObjectFitProperty | (js.Array[
           (Extract[js.UndefOr[ObjectFitProperty | js.Array[ObjectFitProperty]], String]) | ObjectFitProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OObjectPosition: js.UndefOr[
         (ObjectPositionProperty[Double | String]) | (js.Array[
@@ -1545,7 +1556,7 @@ object mod {
             String
           ]) | (ObjectPositionProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTabSize: js.UndefOr[
         (TabSizeProperty[Double | String]) | (js.Array[
@@ -1556,19 +1567,19 @@ object mod {
             String
           ]) | (TabSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTextOverflow: js.UndefOr[
         TextOverflowProperty | (js.Array[
           (Extract[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]], String]) | TextOverflowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTransform: js.UndefOr[
         TransformProperty | (js.Array[
           (Extract[js.UndefOr[TransformProperty | js.Array[TransformProperty]], String]) | TransformProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTransformOrigin: js.UndefOr[
         (TransformOriginProperty[Double | String]) | (js.Array[
@@ -1579,25 +1590,25 @@ object mod {
             String
           ]) | (TransformOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTransition: js.UndefOr[
         TransitionProperty | (js.Array[
           (Extract[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]], String]) | TransitionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTransitionDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTransitionDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTransitionProperty: js.UndefOr[
         TransitionPropertyProperty | (js.Array[
@@ -1606,7 +1617,7 @@ object mod {
             String
           ]) | TransitionPropertyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var OTransitionTimingFunction: js.UndefOr[
         TransitionTimingFunctionProperty | (js.Array[
@@ -1615,37 +1626,37 @@ object mod {
             String
           ]) | TransitionTimingFunctionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAlignContent: js.UndefOr[
         AlignContentProperty | (js.Array[
           AlignContentProperty | (Extract[js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAlignItems: js.UndefOr[
         AlignItemsProperty | (js.Array[
           AlignItemsProperty | (Extract[js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAlignSelf: js.UndefOr[
         AlignSelfProperty | (js.Array[
           AlignSelfProperty | (Extract[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimation: js.UndefOr[
         AnimationProperty | (js.Array[
           AnimationProperty | (Extract[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationDirection: js.UndefOr[
         AnimationDirectionProperty | (js.Array[
@@ -1654,13 +1665,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationFillMode: js.UndefOr[
         AnimationFillModeProperty | (js.Array[
@@ -1669,7 +1680,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationIterationCount: js.UndefOr[
         AnimationIterationCountProperty | (js.Array[
@@ -1678,13 +1689,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationName: js.UndefOr[
         AnimationNameProperty | (js.Array[
           AnimationNameProperty | (Extract[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationPlayState: js.UndefOr[
         AnimationPlayStateProperty | (js.Array[
@@ -1693,7 +1704,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAnimationTimingFunction: js.UndefOr[
         AnimationTimingFunctionProperty | (js.Array[
@@ -1702,19 +1713,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitAppearance: js.UndefOr[
         WebkitAppearanceProperty | (js.Array[
           (Extract[js.UndefOr[WebkitAppearanceProperty | js.Array[WebkitAppearanceProperty]], String]) | WebkitAppearanceProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackdropFilter: js.UndefOr[
         BackdropFilterProperty | (js.Array[
           BackdropFilterProperty | (Extract[js.UndefOr[BackdropFilterProperty | js.Array[BackdropFilterProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackfaceVisibility: js.UndefOr[
         BackfaceVisibilityProperty | (js.Array[
@@ -1723,19 +1734,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackgroundClip: js.UndefOr[
         BackgroundClipProperty | (js.Array[
           BackgroundClipProperty | (Extract[js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackgroundOrigin: js.UndefOr[
         BackgroundOriginProperty | (js.Array[
           BackgroundOriginProperty | (Extract[js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBackgroundSize: js.UndefOr[
         (BackgroundSizeProperty[Double | String]) | (js.Array[
@@ -1746,7 +1757,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBefore: js.UndefOr[
         (WebkitBorderBeforeProperty[Double | String]) | (js.Array[
@@ -1757,7 +1768,7 @@ object mod {
             String
           ]) | (WebkitBorderBeforeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBeforeColor: js.UndefOr[
         WebkitBorderBeforeColorProperty | (js.Array[
@@ -1766,7 +1777,7 @@ object mod {
             String
           ]) | WebkitBorderBeforeColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBeforeStyle: js.UndefOr[
         WebkitBorderBeforeStyleProperty | (js.Array[
@@ -1775,7 +1786,7 @@ object mod {
             String
           ]) | WebkitBorderBeforeStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBeforeWidth: js.UndefOr[
         (WebkitBorderBeforeWidthProperty[Double | String]) | (js.Array[
@@ -1786,7 +1797,7 @@ object mod {
             String
           ]) | (WebkitBorderBeforeWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBottomLeftRadius: js.UndefOr[
         (BorderBottomLeftRadiusProperty[Double | String]) | (js.Array[
@@ -1797,7 +1808,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderBottomRightRadius: js.UndefOr[
         (BorderBottomRightRadiusProperty[Double | String]) | (js.Array[
@@ -1808,19 +1819,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderImage: js.UndefOr[
         BorderImageProperty | (js.Array[
           BorderImageProperty | (Extract[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderImageSlice: js.UndefOr[
         BorderImageSliceProperty | (js.Array[
           BorderImageSliceProperty | (Extract[js.UndefOr[BorderImageSliceProperty | js.Array[BorderImageSliceProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderRadius: js.UndefOr[
         (BorderRadiusProperty[Double | String]) | (js.Array[
@@ -1831,7 +1842,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderTopLeftRadius: js.UndefOr[
         (BorderTopLeftRadiusProperty[Double | String]) | (js.Array[
@@ -1842,7 +1853,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBorderTopRightRadius: js.UndefOr[
         (BorderTopRightRadiusProperty[Double | String]) | (js.Array[
@@ -1853,13 +1864,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxAlign: js.UndefOr[
         BoxAlignProperty | (js.Array[
           BoxAlignProperty | (Extract[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxDecorationBreak: js.UndefOr[
         BoxDecorationBreakProperty | (js.Array[
@@ -1868,49 +1879,49 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxDirection: js.UndefOr[
         BoxDirectionProperty | (js.Array[
           BoxDirectionProperty | (Extract[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxFlex: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxFlexGroup: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxLines: js.UndefOr[
         BoxLinesProperty | (js.Array[
           BoxLinesProperty | (Extract[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxOrdinalGroup: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxOrient: js.UndefOr[
         BoxOrientProperty | (js.Array[
           BoxOrientProperty | (Extract[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxPack: js.UndefOr[
         BoxPackProperty | (js.Array[
           BoxPackProperty | (Extract[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxReflect: js.UndefOr[
         (WebkitBoxReflectProperty[Double | String]) | (js.Array[
@@ -1921,37 +1932,37 @@ object mod {
             String
           ]) | (WebkitBoxReflectProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxShadow: js.UndefOr[
         BoxShadowProperty | (js.Array[
           BoxShadowProperty | (Extract[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitBoxSizing: js.UndefOr[
         BoxSizingProperty | (js.Array[
           BoxSizingProperty | (Extract[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitClipPath: js.UndefOr[
         ClipPathProperty | (js.Array[
           ClipPathProperty | (Extract[js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnCount: js.UndefOr[
         ColumnCountProperty | (js.Array[
           ColumnCountProperty | (Extract[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnFill: js.UndefOr[
         ColumnFillProperty | (js.Array[
           ColumnFillProperty | (Extract[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnGap: js.UndefOr[
         (ColumnGapProperty[Double | String]) | (js.Array[
@@ -1962,7 +1973,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRule: js.UndefOr[
         (ColumnRuleProperty[Double | String]) | (js.Array[
@@ -1973,19 +1984,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRuleColor: js.UndefOr[
         ColumnRuleColorProperty | (js.Array[
           ColumnRuleColorProperty | (Extract[js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRuleStyle: js.UndefOr[
         ColumnRuleStyleProperty | (js.Array[
           ColumnRuleStyleProperty | (Extract[js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnRuleWidth: js.UndefOr[
         (ColumnRuleWidthProperty[Double | String]) | (js.Array[
@@ -1996,13 +2007,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnSpan: js.UndefOr[
         ColumnSpanProperty | (js.Array[
           ColumnSpanProperty | (Extract[js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumnWidth: js.UndefOr[
         (ColumnWidthProperty[Double | String]) | (js.Array[
@@ -2013,7 +2024,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitColumns: js.UndefOr[
         (ColumnsProperty[Double | String]) | (js.Array[
@@ -2024,13 +2035,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFilter: js.UndefOr[
         FilterProperty | (js.Array[
           (Extract[js.UndefOr[FilterProperty | js.Array[FilterProperty]], String]) | FilterProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlex: js.UndefOr[
         (FlexProperty[Double | String]) | (js.Array[
@@ -2039,7 +2050,7 @@ object mod {
             String
           ]) | (FlexProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlexBasis: js.UndefOr[
         (FlexBasisProperty[Double | String]) | (js.Array[
@@ -2050,37 +2061,37 @@ object mod {
             String
           ]) | (FlexBasisProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlexDirection: js.UndefOr[
         FlexDirectionProperty | (js.Array[
           (Extract[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]], String]) | FlexDirectionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlexFlow: js.UndefOr[
         FlexFlowProperty | (js.Array[
           (Extract[js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]], String]) | FlexFlowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlexGrow: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlexShrink: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFlexWrap: js.UndefOr[
         FlexWrapProperty | (js.Array[
           (Extract[js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]], String]) | FlexWrapProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFontFeatureSettings: js.UndefOr[
         FontFeatureSettingsProperty | (js.Array[
@@ -2089,13 +2100,13 @@ object mod {
             String
           ]) | FontFeatureSettingsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFontKerning: js.UndefOr[
         FontKerningProperty | (js.Array[
           (Extract[js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]], String]) | FontKerningProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFontSmoothing: js.UndefOr[
         (FontSmoothProperty[Double | String]) | (js.Array[
@@ -2106,7 +2117,7 @@ object mod {
             String
           ]) | (FontSmoothProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitFontVariantLigatures: js.UndefOr[
         FontVariantLigaturesProperty | (js.Array[
@@ -2115,31 +2126,31 @@ object mod {
             String
           ]) | FontVariantLigaturesProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitHyphens: js.UndefOr[
         HyphensProperty | (js.Array[
           (Extract[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]], String]) | HyphensProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitJustifyContent: js.UndefOr[
         JustifyContentProperty | (js.Array[
           (Extract[js.UndefOr[JustifyContentProperty | js.Array[JustifyContentProperty]], String]) | JustifyContentProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitLineBreak: js.UndefOr[
         LineBreakProperty | (js.Array[
           (Extract[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]], String]) | LineBreakProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitLineClamp: js.UndefOr[
         WebkitLineClampProperty | (js.Array[
           (Extract[js.UndefOr[WebkitLineClampProperty | js.Array[WebkitLineClampProperty]], String]) | WebkitLineClampProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMarginEnd: js.UndefOr[
         (MarginInlineEndProperty[Double | String]) | (js.Array[
@@ -2150,7 +2161,7 @@ object mod {
             String
           ]) | (MarginInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMarginStart: js.UndefOr[
         (MarginInlineStartProperty[Double | String]) | (js.Array[
@@ -2161,7 +2172,7 @@ object mod {
             String
           ]) | (MarginInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMask: js.UndefOr[
         (WebkitMaskProperty[Double | String]) | (js.Array[
@@ -2172,7 +2183,7 @@ object mod {
             String
           ]) | (WebkitMaskProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskAttachment: js.UndefOr[
         WebkitMaskAttachmentProperty | (js.Array[
@@ -2181,13 +2192,13 @@ object mod {
             String
           ]) | WebkitMaskAttachmentProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskClip: js.UndefOr[
         WebkitMaskClipProperty | (js.Array[
           (Extract[js.UndefOr[WebkitMaskClipProperty | js.Array[WebkitMaskClipProperty]], String]) | WebkitMaskClipProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskComposite: js.UndefOr[
         WebkitMaskCompositeProperty | (js.Array[
@@ -2196,19 +2207,19 @@ object mod {
             String
           ]) | WebkitMaskCompositeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskImage: js.UndefOr[
         WebkitMaskImageProperty | (js.Array[
           (Extract[js.UndefOr[WebkitMaskImageProperty | js.Array[WebkitMaskImageProperty]], String]) | WebkitMaskImageProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskOrigin: js.UndefOr[
         WebkitMaskOriginProperty | (js.Array[
           (Extract[js.UndefOr[WebkitMaskOriginProperty | js.Array[WebkitMaskOriginProperty]], String]) | WebkitMaskOriginProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskPosition: js.UndefOr[
         (WebkitMaskPositionProperty[Double | String]) | (js.Array[
@@ -2219,7 +2230,7 @@ object mod {
             String
           ]) | (WebkitMaskPositionProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskPositionX: js.UndefOr[
         (WebkitMaskPositionXProperty[Double | String]) | (js.Array[
@@ -2230,7 +2241,7 @@ object mod {
             String
           ]) | (WebkitMaskPositionXProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskPositionY: js.UndefOr[
         (WebkitMaskPositionYProperty[Double | String]) | (js.Array[
@@ -2241,13 +2252,13 @@ object mod {
             String
           ]) | (WebkitMaskPositionYProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskRepeat: js.UndefOr[
         WebkitMaskRepeatProperty | (js.Array[
           (Extract[js.UndefOr[WebkitMaskRepeatProperty | js.Array[WebkitMaskRepeatProperty]], String]) | WebkitMaskRepeatProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskRepeatX: js.UndefOr[
         WebkitMaskRepeatXProperty | (js.Array[
@@ -2256,7 +2267,7 @@ object mod {
             String
           ]) | WebkitMaskRepeatXProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskRepeatY: js.UndefOr[
         WebkitMaskRepeatYProperty | (js.Array[
@@ -2265,7 +2276,7 @@ object mod {
             String
           ]) | WebkitMaskRepeatYProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaskSize: js.UndefOr[
         (WebkitMaskSizeProperty[Double | String]) | (js.Array[
@@ -2276,7 +2287,7 @@ object mod {
             String
           ]) | (WebkitMaskSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitMaxInlineSize: js.UndefOr[
         (MaxInlineSizeProperty[Double | String]) | (js.Array[
@@ -2287,13 +2298,13 @@ object mod {
             String
           ]) | (MaxInlineSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitOrder: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitOverflowScrolling: js.UndefOr[
         WebkitOverflowScrollingProperty | (js.Array[
@@ -2302,7 +2313,7 @@ object mod {
             String
           ]) | WebkitOverflowScrollingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPaddingEnd: js.UndefOr[
         (PaddingInlineEndProperty[Double | String]) | (js.Array[
@@ -2313,7 +2324,7 @@ object mod {
             String
           ]) | (PaddingInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPaddingStart: js.UndefOr[
         (PaddingInlineStartProperty[Double | String]) | (js.Array[
@@ -2324,7 +2335,7 @@ object mod {
             String
           ]) | (PaddingInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPerspective: js.UndefOr[
         (PerspectiveProperty[Double | String]) | (js.Array[
@@ -2335,7 +2346,7 @@ object mod {
             String
           ]) | (PerspectiveProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPerspectiveOrigin: js.UndefOr[
         (PerspectiveOriginProperty[Double | String]) | (js.Array[
@@ -2346,19 +2357,19 @@ object mod {
             String
           ]) | (PerspectiveOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitPrintColorAdjust: js.UndefOr[
         ColorAdjustProperty | (js.Array[
           ColorAdjustProperty | (Extract[js.UndefOr[ColorAdjustProperty | js.Array[ColorAdjustProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitRubyPosition: js.UndefOr[
         RubyPositionProperty | (js.Array[
           (Extract[js.UndefOr[RubyPositionProperty | js.Array[RubyPositionProperty]], String]) | RubyPositionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitScrollSnapPointsX: js.UndefOr[
         ScrollSnapPointsXProperty | (js.Array[
@@ -2367,7 +2378,7 @@ object mod {
             String
           ]) | ScrollSnapPointsXProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitScrollSnapPointsY: js.UndefOr[
         ScrollSnapPointsYProperty | (js.Array[
@@ -2376,13 +2387,13 @@ object mod {
             String
           ]) | ScrollSnapPointsYProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitScrollSnapType: js.UndefOr[
         ScrollSnapTypeProperty | (js.Array[
           (Extract[js.UndefOr[ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]], String]) | ScrollSnapTypeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitShapeMargin: js.UndefOr[
         (ShapeMarginProperty[Double | String]) | (js.Array[
@@ -2393,7 +2404,7 @@ object mod {
             String
           ]) | (ShapeMarginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTapHighlightColor: js.UndefOr[
         WebkitTapHighlightColorProperty | (js.Array[
@@ -2402,7 +2413,7 @@ object mod {
             String
           ]) | WebkitTapHighlightColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextCombine: js.UndefOr[
         TextCombineUprightProperty | (js.Array[
@@ -2411,7 +2422,7 @@ object mod {
             String
           ]) | TextCombineUprightProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationColor: js.UndefOr[
         TextDecorationColorProperty | (js.Array[
@@ -2420,7 +2431,7 @@ object mod {
             String
           ]) | TextDecorationColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationLine: js.UndefOr[
         TextDecorationLineProperty | (js.Array[
@@ -2429,7 +2440,7 @@ object mod {
             String
           ]) | TextDecorationLineProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationSkip: js.UndefOr[
         TextDecorationSkipProperty | (js.Array[
@@ -2438,7 +2449,7 @@ object mod {
             String
           ]) | TextDecorationSkipProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextDecorationStyle: js.UndefOr[
         TextDecorationStyleProperty | (js.Array[
@@ -2447,13 +2458,13 @@ object mod {
             String
           ]) | TextDecorationStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextEmphasis: js.UndefOr[
         TextEmphasisProperty | (js.Array[
           (Extract[js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]], String]) | TextEmphasisProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextEmphasisColor: js.UndefOr[
         TextEmphasisColorProperty | (js.Array[
@@ -2462,13 +2473,13 @@ object mod {
             String
           ]) | TextEmphasisColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextEmphasisPosition: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextEmphasisStyle: js.UndefOr[
         TextEmphasisStyleProperty | (js.Array[
@@ -2477,7 +2488,7 @@ object mod {
             String
           ]) | TextEmphasisStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextFillColor: js.UndefOr[
         WebkitTextFillColorProperty | (js.Array[
@@ -2486,19 +2497,19 @@ object mod {
             String
           ]) | WebkitTextFillColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextOrientation: js.UndefOr[
         TextOrientationProperty | (js.Array[
           (Extract[js.UndefOr[TextOrientationProperty | js.Array[TextOrientationProperty]], String]) | TextOrientationProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextSizeAdjust: js.UndefOr[
         TextSizeAdjustProperty | (js.Array[
           (Extract[js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]], String]) | TextSizeAdjustProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextStroke: js.UndefOr[
         (WebkitTextStrokeProperty[Double | String]) | (js.Array[
@@ -2509,7 +2520,7 @@ object mod {
             String
           ]) | (WebkitTextStrokeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextStrokeColor: js.UndefOr[
         WebkitTextStrokeColorProperty | (js.Array[
@@ -2518,7 +2529,7 @@ object mod {
             String
           ]) | WebkitTextStrokeColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextStrokeWidth: js.UndefOr[
         (WebkitTextStrokeWidthProperty[Double | String]) | (js.Array[
@@ -2529,7 +2540,7 @@ object mod {
             String
           ]) | (WebkitTextStrokeWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTextUnderlinePosition: js.UndefOr[
         TextUnderlinePositionProperty | (js.Array[
@@ -2538,7 +2549,7 @@ object mod {
             String
           ]) | TextUnderlinePositionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTouchCallout: js.UndefOr[
         WebkitTouchCalloutProperty | (js.Array[
@@ -2547,13 +2558,13 @@ object mod {
             String
           ]) | WebkitTouchCalloutProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransform: js.UndefOr[
         TransformProperty | (js.Array[
           (Extract[js.UndefOr[TransformProperty | js.Array[TransformProperty]], String]) | TransformProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransformOrigin: js.UndefOr[
         (TransformOriginProperty[Double | String]) | (js.Array[
@@ -2564,31 +2575,31 @@ object mod {
             String
           ]) | (TransformOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransformStyle: js.UndefOr[
         TransformStyleProperty | (js.Array[
           (Extract[js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]], String]) | TransformStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransition: js.UndefOr[
         TransitionProperty | (js.Array[
           (Extract[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]], String]) | TransitionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransitionDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransitionDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransitionProperty: js.UndefOr[
         TransitionPropertyProperty | (js.Array[
@@ -2597,7 +2608,7 @@ object mod {
             String
           ]) | TransitionPropertyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitTransitionTimingFunction: js.UndefOr[
         TransitionTimingFunctionProperty | (js.Array[
@@ -2606,49 +2617,49 @@ object mod {
             String
           ]) | TransitionTimingFunctionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitUserModify: js.UndefOr[
         WebkitUserModifyProperty | (js.Array[
           (Extract[js.UndefOr[WebkitUserModifyProperty | js.Array[WebkitUserModifyProperty]], String]) | WebkitUserModifyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitUserSelect: js.UndefOr[
         UserSelectProperty | (js.Array[
           (Extract[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]], String]) | UserSelectProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var WebkitWritingMode: js.UndefOr[
         WritingModeProperty | (js.Array[
           (Extract[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]], String]) | WritingModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var alignContent: js.UndefOr[
         AlignContentProperty | (js.Array[
           AlignContentProperty | (Extract[js.UndefOr[AlignContentProperty | js.Array[AlignContentProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var alignItems: js.UndefOr[
         AlignItemsProperty | (js.Array[
           AlignItemsProperty | (Extract[js.UndefOr[AlignItemsProperty | js.Array[AlignItemsProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var alignSelf: js.UndefOr[
         AlignSelfProperty | (js.Array[
           AlignSelfProperty | (Extract[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var alignTracks: js.UndefOr[
         AlignTracksProperty | (js.Array[
           AlignTracksProperty | (Extract[js.UndefOr[AlignTracksProperty | js.Array[AlignTracksProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var alignmentBaseline: js.UndefOr[
         AlignmentBaselineProperty | (js.Array[
@@ -2657,23 +2668,23 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var all: js.UndefOr[
         Globals | (js.Array[(Extract[js.UndefOr[Globals | js.Array[Globals]], String]) | Globals])
-      ] = js.native
+      ] = js.undefined
     
     var animation: js.UndefOr[
         AnimationProperty | (js.Array[
           AnimationProperty | (Extract[js.UndefOr[AnimationProperty | js.Array[AnimationProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationDirection: js.UndefOr[
         AnimationDirectionProperty | (js.Array[
@@ -2682,13 +2693,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationFillMode: js.UndefOr[
         AnimationFillModeProperty | (js.Array[
@@ -2697,7 +2708,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationIterationCount: js.UndefOr[
         AnimationIterationCountProperty | (js.Array[
@@ -2706,13 +2717,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationName: js.UndefOr[
         AnimationNameProperty | (js.Array[
           AnimationNameProperty | (Extract[js.UndefOr[AnimationNameProperty | js.Array[AnimationNameProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationPlayState: js.UndefOr[
         AnimationPlayStateProperty | (js.Array[
@@ -2721,7 +2732,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var animationTimingFunction: js.UndefOr[
         AnimationTimingFunctionProperty | (js.Array[
@@ -2730,31 +2741,31 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var appearance: js.UndefOr[
         AppearanceProperty | (js.Array[
           AppearanceProperty | (Extract[js.UndefOr[AppearanceProperty | js.Array[AppearanceProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var aspectRatio: js.UndefOr[
         AspectRatioProperty | (js.Array[
           AspectRatioProperty | (Extract[js.UndefOr[AspectRatioProperty | js.Array[AspectRatioProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var azimuth: js.UndefOr[
         AzimuthProperty | (js.Array[
           AzimuthProperty | (Extract[js.UndefOr[AzimuthProperty | js.Array[AzimuthProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backdropFilter: js.UndefOr[
         BackdropFilterProperty | (js.Array[
           BackdropFilterProperty | (Extract[js.UndefOr[BackdropFilterProperty | js.Array[BackdropFilterProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backfaceVisibility: js.UndefOr[
         BackfaceVisibilityProperty | (js.Array[
@@ -2763,7 +2774,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var background: js.UndefOr[
         (BackgroundProperty[Double | String]) | (js.Array[
@@ -2774,7 +2785,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundAttachment: js.UndefOr[
         BackgroundAttachmentProperty | (js.Array[
@@ -2783,7 +2794,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundBlendMode: js.UndefOr[
         BackgroundBlendModeProperty | (js.Array[
@@ -2792,31 +2803,31 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundClip: js.UndefOr[
         BackgroundClipProperty | (js.Array[
           BackgroundClipProperty | (Extract[js.UndefOr[BackgroundClipProperty | js.Array[BackgroundClipProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundColor: js.UndefOr[
         BackgroundColorProperty | (js.Array[
           BackgroundColorProperty | (Extract[js.UndefOr[BackgroundColorProperty | js.Array[BackgroundColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundImage: js.UndefOr[
         BackgroundImageProperty | (js.Array[
           BackgroundImageProperty | (Extract[js.UndefOr[BackgroundImageProperty | js.Array[BackgroundImageProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundOrigin: js.UndefOr[
         BackgroundOriginProperty | (js.Array[
           BackgroundOriginProperty | (Extract[js.UndefOr[BackgroundOriginProperty | js.Array[BackgroundOriginProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundPosition: js.UndefOr[
         (BackgroundPositionProperty[Double | String]) | (js.Array[
@@ -2827,7 +2838,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundPositionX: js.UndefOr[
         (BackgroundPositionXProperty[Double | String]) | (js.Array[
@@ -2838,7 +2849,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundPositionY: js.UndefOr[
         (BackgroundPositionYProperty[Double | String]) | (js.Array[
@@ -2849,13 +2860,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundRepeat: js.UndefOr[
         BackgroundRepeatProperty | (js.Array[
           BackgroundRepeatProperty | (Extract[js.UndefOr[BackgroundRepeatProperty | js.Array[BackgroundRepeatProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var backgroundSize: js.UndefOr[
         (BackgroundSizeProperty[Double | String]) | (js.Array[
@@ -2866,7 +2877,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var baselineShift: js.UndefOr[
         (BaselineShiftProperty[Double | String]) | (js.Array[
@@ -2877,13 +2888,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var blockOverflow: js.UndefOr[
         BlockOverflowProperty | (js.Array[
           BlockOverflowProperty | (Extract[js.UndefOr[BlockOverflowProperty | js.Array[BlockOverflowProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var blockSize: js.UndefOr[
         (BlockSizeProperty[Double | String]) | (js.Array[
@@ -2894,7 +2905,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var border: js.UndefOr[
         (BorderProperty[Double | String]) | (js.Array[
@@ -2903,7 +2914,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlock: js.UndefOr[
         (BorderBlockProperty[Double | String]) | (js.Array[
@@ -2914,13 +2925,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockColor: js.UndefOr[
         BorderBlockColorProperty | (js.Array[
           BorderBlockColorProperty | (Extract[js.UndefOr[BorderBlockColorProperty | js.Array[BorderBlockColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEnd: js.UndefOr[
         (BorderBlockEndProperty[Double | String]) | (js.Array[
@@ -2931,7 +2942,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEndColor: js.UndefOr[
         BorderBlockEndColorProperty | (js.Array[
@@ -2940,7 +2951,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEndStyle: js.UndefOr[
         BorderBlockEndStyleProperty | (js.Array[
@@ -2949,7 +2960,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockEndWidth: js.UndefOr[
         (BorderBlockEndWidthProperty[Double | String]) | (js.Array[
@@ -2960,7 +2971,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStart: js.UndefOr[
         (BorderBlockStartProperty[Double | String]) | (js.Array[
@@ -2971,7 +2982,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStartColor: js.UndefOr[
         BorderBlockStartColorProperty | (js.Array[
@@ -2980,7 +2991,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStartStyle: js.UndefOr[
         BorderBlockStartStyleProperty | (js.Array[
@@ -2989,7 +3000,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStartWidth: js.UndefOr[
         (BorderBlockStartWidthProperty[Double | String]) | (js.Array[
@@ -3000,13 +3011,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockStyle: js.UndefOr[
         BorderBlockStyleProperty | (js.Array[
           BorderBlockStyleProperty | (Extract[js.UndefOr[BorderBlockStyleProperty | js.Array[BorderBlockStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBlockWidth: js.UndefOr[
         (BorderBlockWidthProperty[Double | String]) | (js.Array[
@@ -3017,7 +3028,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottom: js.UndefOr[
         (BorderBottomProperty[Double | String]) | (js.Array[
@@ -3028,7 +3039,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomColor: js.UndefOr[
         BorderBottomColorProperty | (js.Array[
@@ -3037,7 +3048,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomLeftRadius: js.UndefOr[
         (BorderBottomLeftRadiusProperty[Double | String]) | (js.Array[
@@ -3048,7 +3059,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomRightRadius: js.UndefOr[
         (BorderBottomRightRadiusProperty[Double | String]) | (js.Array[
@@ -3059,7 +3070,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomStyle: js.UndefOr[
         BorderBottomStyleProperty | (js.Array[
@@ -3068,7 +3079,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderBottomWidth: js.UndefOr[
         (BorderBottomWidthProperty[Double | String]) | (js.Array[
@@ -3079,19 +3090,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderCollapse: js.UndefOr[
         BorderCollapseProperty | (js.Array[
           BorderCollapseProperty | (Extract[js.UndefOr[BorderCollapseProperty | js.Array[BorderCollapseProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderColor: js.UndefOr[
         BorderColorProperty | (js.Array[
           BorderColorProperty | (Extract[js.UndefOr[BorderColorProperty | js.Array[BorderColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderEndEndRadius: js.UndefOr[
         (BorderEndEndRadiusProperty[Double | String]) | (js.Array[
@@ -3102,7 +3113,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderEndStartRadius: js.UndefOr[
         (BorderEndStartRadiusProperty[Double | String]) | (js.Array[
@@ -3113,13 +3124,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderImage: js.UndefOr[
         BorderImageProperty | (js.Array[
           BorderImageProperty | (Extract[js.UndefOr[BorderImageProperty | js.Array[BorderImageProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderImageOutset: js.UndefOr[
         (BorderImageOutsetProperty[Double | String]) | (js.Array[
@@ -3130,7 +3141,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderImageRepeat: js.UndefOr[
         BorderImageRepeatProperty | (js.Array[
@@ -3139,13 +3150,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderImageSlice: js.UndefOr[
         BorderImageSliceProperty | (js.Array[
           BorderImageSliceProperty | (Extract[js.UndefOr[BorderImageSliceProperty | js.Array[BorderImageSliceProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderImageSource: js.UndefOr[
         BorderImageSourceProperty | (js.Array[
@@ -3154,7 +3165,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderImageWidth: js.UndefOr[
         (BorderImageWidthProperty[Double | String]) | (js.Array[
@@ -3165,7 +3176,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInline: js.UndefOr[
         (BorderInlineProperty[Double | String]) | (js.Array[
@@ -3176,7 +3187,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineColor: js.UndefOr[
         BorderInlineColorProperty | (js.Array[
@@ -3185,7 +3196,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEnd: js.UndefOr[
         (BorderInlineEndProperty[Double | String]) | (js.Array[
@@ -3196,7 +3207,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEndColor: js.UndefOr[
         BorderInlineEndColorProperty | (js.Array[
@@ -3205,7 +3216,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEndStyle: js.UndefOr[
         BorderInlineEndStyleProperty | (js.Array[
@@ -3214,7 +3225,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineEndWidth: js.UndefOr[
         (BorderInlineEndWidthProperty[Double | String]) | (js.Array[
@@ -3225,7 +3236,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStart: js.UndefOr[
         (BorderInlineStartProperty[Double | String]) | (js.Array[
@@ -3236,7 +3247,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStartColor: js.UndefOr[
         BorderInlineStartColorProperty | (js.Array[
@@ -3245,7 +3256,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStartStyle: js.UndefOr[
         BorderInlineStartStyleProperty | (js.Array[
@@ -3254,7 +3265,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStartWidth: js.UndefOr[
         (BorderInlineStartWidthProperty[Double | String]) | (js.Array[
@@ -3265,7 +3276,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineStyle: js.UndefOr[
         BorderInlineStyleProperty | (js.Array[
@@ -3274,7 +3285,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderInlineWidth: js.UndefOr[
         (BorderInlineWidthProperty[Double | String]) | (js.Array[
@@ -3285,7 +3296,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderLeft: js.UndefOr[
         (BorderLeftProperty[Double | String]) | (js.Array[
@@ -3296,19 +3307,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderLeftColor: js.UndefOr[
         BorderLeftColorProperty | (js.Array[
           BorderLeftColorProperty | (Extract[js.UndefOr[BorderLeftColorProperty | js.Array[BorderLeftColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderLeftStyle: js.UndefOr[
         BorderLeftStyleProperty | (js.Array[
           BorderLeftStyleProperty | (Extract[js.UndefOr[BorderLeftStyleProperty | js.Array[BorderLeftStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderLeftWidth: js.UndefOr[
         (BorderLeftWidthProperty[Double | String]) | (js.Array[
@@ -3319,7 +3330,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRadius: js.UndefOr[
         (BorderRadiusProperty[Double | String]) | (js.Array[
@@ -3330,7 +3341,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRight: js.UndefOr[
         (BorderRightProperty[Double | String]) | (js.Array[
@@ -3341,19 +3352,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRightColor: js.UndefOr[
         BorderRightColorProperty | (js.Array[
           BorderRightColorProperty | (Extract[js.UndefOr[BorderRightColorProperty | js.Array[BorderRightColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRightStyle: js.UndefOr[
         BorderRightStyleProperty | (js.Array[
           BorderRightStyleProperty | (Extract[js.UndefOr[BorderRightStyleProperty | js.Array[BorderRightStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderRightWidth: js.UndefOr[
         (BorderRightWidthProperty[Double | String]) | (js.Array[
@@ -3364,7 +3375,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderSpacing: js.UndefOr[
         (BorderSpacingProperty[Double | String]) | (js.Array[
@@ -3375,7 +3386,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderStartEndRadius: js.UndefOr[
         (BorderStartEndRadiusProperty[Double | String]) | (js.Array[
@@ -3386,7 +3397,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderStartStartRadius: js.UndefOr[
         (BorderStartStartRadiusProperty[Double | String]) | (js.Array[
@@ -3397,13 +3408,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderStyle: js.UndefOr[
         BorderStyleProperty | (js.Array[
           BorderStyleProperty | (Extract[js.UndefOr[BorderStyleProperty | js.Array[BorderStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTop: js.UndefOr[
         (BorderTopProperty[Double | String]) | (js.Array[
@@ -3414,13 +3425,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTopColor: js.UndefOr[
         BorderTopColorProperty | (js.Array[
           BorderTopColorProperty | (Extract[js.UndefOr[BorderTopColorProperty | js.Array[BorderTopColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTopLeftRadius: js.UndefOr[
         (BorderTopLeftRadiusProperty[Double | String]) | (js.Array[
@@ -3431,7 +3442,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTopRightRadius: js.UndefOr[
         (BorderTopRightRadiusProperty[Double | String]) | (js.Array[
@@ -3442,13 +3453,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTopStyle: js.UndefOr[
         BorderTopStyleProperty | (js.Array[
           BorderTopStyleProperty | (Extract[js.UndefOr[BorderTopStyleProperty | js.Array[BorderTopStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderTopWidth: js.UndefOr[
         (BorderTopWidthProperty[Double | String]) | (js.Array[
@@ -3459,7 +3470,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var borderWidth: js.UndefOr[
         (BorderWidthProperty[Double | String]) | (js.Array[
@@ -3470,7 +3481,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var bottom: js.UndefOr[
         (BottomProperty[Double | String]) | (js.Array[
@@ -3479,13 +3490,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxAlign: js.UndefOr[
         BoxAlignProperty | (js.Array[
           BoxAlignProperty | (Extract[js.UndefOr[BoxAlignProperty | js.Array[BoxAlignProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxDecorationBreak: js.UndefOr[
         BoxDecorationBreakProperty | (js.Array[
@@ -3494,127 +3505,127 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxDirection: js.UndefOr[
         BoxDirectionProperty | (js.Array[
           BoxDirectionProperty | (Extract[js.UndefOr[BoxDirectionProperty | js.Array[BoxDirectionProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxFlex: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxFlexGroup: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxLines: js.UndefOr[
         BoxLinesProperty | (js.Array[
           BoxLinesProperty | (Extract[js.UndefOr[BoxLinesProperty | js.Array[BoxLinesProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxOrdinalGroup: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxOrient: js.UndefOr[
         BoxOrientProperty | (js.Array[
           BoxOrientProperty | (Extract[js.UndefOr[BoxOrientProperty | js.Array[BoxOrientProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxPack: js.UndefOr[
         BoxPackProperty | (js.Array[
           BoxPackProperty | (Extract[js.UndefOr[BoxPackProperty | js.Array[BoxPackProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxShadow: js.UndefOr[
         BoxShadowProperty | (js.Array[
           BoxShadowProperty | (Extract[js.UndefOr[BoxShadowProperty | js.Array[BoxShadowProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var boxSizing: js.UndefOr[
         BoxSizingProperty | (js.Array[
           BoxSizingProperty | (Extract[js.UndefOr[BoxSizingProperty | js.Array[BoxSizingProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var breakAfter: js.UndefOr[
         BreakAfterProperty | (js.Array[
           BreakAfterProperty | (Extract[js.UndefOr[BreakAfterProperty | js.Array[BreakAfterProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var breakBefore: js.UndefOr[
         BreakBeforeProperty | (js.Array[
           BreakBeforeProperty | (Extract[js.UndefOr[BreakBeforeProperty | js.Array[BreakBeforeProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var breakInside: js.UndefOr[
         BreakInsideProperty | (js.Array[
           BreakInsideProperty | (Extract[js.UndefOr[BreakInsideProperty | js.Array[BreakInsideProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var captionSide: js.UndefOr[
         CaptionSideProperty | (js.Array[
           CaptionSideProperty | (Extract[js.UndefOr[CaptionSideProperty | js.Array[CaptionSideProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var caretColor: js.UndefOr[
         CaretColorProperty | (js.Array[
           CaretColorProperty | (Extract[js.UndefOr[CaretColorProperty | js.Array[CaretColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var clear: js.UndefOr[
         ClearProperty | (js.Array[
           ClearProperty | (Extract[js.UndefOr[ClearProperty | js.Array[ClearProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var clip: js.UndefOr[
         ClipProperty | (js.Array[
           ClipProperty | (Extract[js.UndefOr[ClipProperty | js.Array[ClipProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var clipPath: js.UndefOr[
         ClipPathProperty | (js.Array[
           ClipPathProperty | (Extract[js.UndefOr[ClipPathProperty | js.Array[ClipPathProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var clipRule: js.UndefOr[
         ClipRuleProperty | (js.Array[
           ClipRuleProperty | (Extract[js.UndefOr[ClipRuleProperty | js.Array[ClipRuleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var color: js.UndefOr[
         ColorProperty | (js.Array[
           ColorProperty | (Extract[js.UndefOr[ColorProperty | js.Array[ColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var colorAdjust: js.UndefOr[
         ColorAdjustProperty | (js.Array[
           ColorAdjustProperty | (Extract[js.UndefOr[ColorAdjustProperty | js.Array[ColorAdjustProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var colorInterpolation: js.UndefOr[
         ColorInterpolationProperty | (js.Array[
@@ -3623,25 +3634,25 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var colorRendering: js.UndefOr[
         ColorRenderingProperty | (js.Array[
           ColorRenderingProperty | (Extract[js.UndefOr[ColorRenderingProperty | js.Array[ColorRenderingProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnCount: js.UndefOr[
         ColumnCountProperty | (js.Array[
           ColumnCountProperty | (Extract[js.UndefOr[ColumnCountProperty | js.Array[ColumnCountProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnFill: js.UndefOr[
         ColumnFillProperty | (js.Array[
           ColumnFillProperty | (Extract[js.UndefOr[ColumnFillProperty | js.Array[ColumnFillProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnGap: js.UndefOr[
         (ColumnGapProperty[Double | String]) | (js.Array[
@@ -3652,7 +3663,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnRule: js.UndefOr[
         (ColumnRuleProperty[Double | String]) | (js.Array[
@@ -3663,19 +3674,19 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnRuleColor: js.UndefOr[
         ColumnRuleColorProperty | (js.Array[
           ColumnRuleColorProperty | (Extract[js.UndefOr[ColumnRuleColorProperty | js.Array[ColumnRuleColorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnRuleStyle: js.UndefOr[
         ColumnRuleStyleProperty | (js.Array[
           ColumnRuleStyleProperty | (Extract[js.UndefOr[ColumnRuleStyleProperty | js.Array[ColumnRuleStyleProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnRuleWidth: js.UndefOr[
         (ColumnRuleWidthProperty[Double | String]) | (js.Array[
@@ -3686,13 +3697,13 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnSpan: js.UndefOr[
         ColumnSpanProperty | (js.Array[
           ColumnSpanProperty | (Extract[js.UndefOr[ColumnSpanProperty | js.Array[ColumnSpanProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columnWidth: js.UndefOr[
         (ColumnWidthProperty[Double | String]) | (js.Array[
@@ -3703,7 +3714,7 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var columns: js.UndefOr[
         (ColumnsProperty[Double | String]) | (js.Array[
@@ -3714,91 +3725,91 @@ object mod {
             String
           ])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var contain: js.UndefOr[
         ContainProperty | (js.Array[
           ContainProperty | (Extract[js.UndefOr[ContainProperty | js.Array[ContainProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var content: js.UndefOr[
         ContentProperty | (js.Array[
           ContentProperty | (Extract[js.UndefOr[ContentProperty | js.Array[ContentProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var counterIncrement: js.UndefOr[
         CounterIncrementProperty | (js.Array[
           CounterIncrementProperty | (Extract[js.UndefOr[CounterIncrementProperty | js.Array[CounterIncrementProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var counterReset: js.UndefOr[
         CounterResetProperty | (js.Array[
           CounterResetProperty | (Extract[js.UndefOr[CounterResetProperty | js.Array[CounterResetProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var counterSet: js.UndefOr[
         CounterSetProperty | (js.Array[
           CounterSetProperty | (Extract[js.UndefOr[CounterSetProperty | js.Array[CounterSetProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var cursor: js.UndefOr[
         CursorProperty | (js.Array[
           CursorProperty | (Extract[js.UndefOr[CursorProperty | js.Array[CursorProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var direction: js.UndefOr[
         DirectionProperty | (js.Array[
           DirectionProperty | (Extract[js.UndefOr[DirectionProperty | js.Array[DirectionProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var display: js.UndefOr[
         DisplayProperty | (js.Array[
           DisplayProperty | (Extract[js.UndefOr[DisplayProperty | js.Array[DisplayProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var dominantBaseline: js.UndefOr[
         DominantBaselineProperty | (js.Array[
           DominantBaselineProperty | (Extract[js.UndefOr[DominantBaselineProperty | js.Array[DominantBaselineProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var emptyCells: js.UndefOr[
         EmptyCellsProperty | (js.Array[
           EmptyCellsProperty | (Extract[js.UndefOr[EmptyCellsProperty | js.Array[EmptyCellsProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fill: js.UndefOr[
         FillProperty | (js.Array[
           (Extract[js.UndefOr[FillProperty | js.Array[FillProperty]], String]) | FillProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fillOpacity: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fillRule: js.UndefOr[
         FillRuleProperty | (js.Array[
           (Extract[js.UndefOr[FillRuleProperty | js.Array[FillRuleProperty]], String]) | FillRuleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var filter: js.UndefOr[
         FilterProperty | (js.Array[
           (Extract[js.UndefOr[FilterProperty | js.Array[FilterProperty]], String]) | FilterProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flex: js.UndefOr[
         (FlexProperty[Double | String]) | (js.Array[
@@ -3807,7 +3818,7 @@ object mod {
             String
           ]) | (FlexProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexBasis: js.UndefOr[
         (FlexBasisProperty[Double | String]) | (js.Array[
@@ -3818,67 +3829,67 @@ object mod {
             String
           ]) | (FlexBasisProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexDirection: js.UndefOr[
         FlexDirectionProperty | (js.Array[
           (Extract[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]], String]) | FlexDirectionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexFlow: js.UndefOr[
         FlexFlowProperty | (js.Array[
           (Extract[js.UndefOr[FlexFlowProperty | js.Array[FlexFlowProperty]], String]) | FlexFlowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexGrow: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexShrink: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var flexWrap: js.UndefOr[
         FlexWrapProperty | (js.Array[
           (Extract[js.UndefOr[FlexWrapProperty | js.Array[FlexWrapProperty]], String]) | FlexWrapProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var float: js.UndefOr[
         FloatProperty | (js.Array[
           (Extract[js.UndefOr[FloatProperty | js.Array[FloatProperty]], String]) | FloatProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var floodColor: js.UndefOr[
         FloodColorProperty | (js.Array[
           (Extract[js.UndefOr[FloodColorProperty | js.Array[FloodColorProperty]], String]) | FloodColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var floodOpacity: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var font: js.UndefOr[
         FontProperty | (js.Array[
           (Extract[js.UndefOr[FontProperty | js.Array[FontProperty]], String]) | FontProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontFamily: js.UndefOr[
         FontFamilyProperty | (js.Array[
           (Extract[js.UndefOr[FontFamilyProperty | js.Array[FontFamilyProperty]], String]) | FontFamilyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontFeatureSettings: js.UndefOr[
         FontFeatureSettingsProperty | (js.Array[
@@ -3887,13 +3898,13 @@ object mod {
             String
           ]) | FontFeatureSettingsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontKerning: js.UndefOr[
         FontKerningProperty | (js.Array[
           (Extract[js.UndefOr[FontKerningProperty | js.Array[FontKerningProperty]], String]) | FontKerningProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontLanguageOverride: js.UndefOr[
         FontLanguageOverrideProperty | (js.Array[
@@ -3902,7 +3913,7 @@ object mod {
             String
           ]) | FontLanguageOverrideProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontOpticalSizing: js.UndefOr[
         FontOpticalSizingProperty | (js.Array[
@@ -3911,7 +3922,7 @@ object mod {
             String
           ]) | FontOpticalSizingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontSize: js.UndefOr[
         (FontSizeProperty[Double | String]) | (js.Array[
@@ -3922,13 +3933,13 @@ object mod {
             String
           ]) | (FontSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontSizeAdjust: js.UndefOr[
         FontSizeAdjustProperty | (js.Array[
           (Extract[js.UndefOr[FontSizeAdjustProperty | js.Array[FontSizeAdjustProperty]], String]) | FontSizeAdjustProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontSmooth: js.UndefOr[
         (FontSmoothProperty[Double | String]) | (js.Array[
@@ -3939,31 +3950,31 @@ object mod {
             String
           ]) | (FontSmoothProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontStretch: js.UndefOr[
         FontStretchProperty | (js.Array[
           (Extract[js.UndefOr[FontStretchProperty | js.Array[FontStretchProperty]], String]) | FontStretchProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontStyle: js.UndefOr[
         FontStyleProperty | (js.Array[
           (Extract[js.UndefOr[FontStyleProperty | js.Array[FontStyleProperty]], String]) | FontStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontSynthesis: js.UndefOr[
         FontSynthesisProperty | (js.Array[
           (Extract[js.UndefOr[FontSynthesisProperty | js.Array[FontSynthesisProperty]], String]) | FontSynthesisProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariant: js.UndefOr[
         FontVariantProperty | (js.Array[
           (Extract[js.UndefOr[FontVariantProperty | js.Array[FontVariantProperty]], String]) | FontVariantProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantAlternates: js.UndefOr[
         FontVariantAlternatesProperty | (js.Array[
@@ -3972,13 +3983,13 @@ object mod {
             String
           ]) | FontVariantAlternatesProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantCaps: js.UndefOr[
         FontVariantCapsProperty | (js.Array[
           (Extract[js.UndefOr[FontVariantCapsProperty | js.Array[FontVariantCapsProperty]], String]) | FontVariantCapsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantEastAsian: js.UndefOr[
         FontVariantEastAsianProperty | (js.Array[
@@ -3987,7 +3998,7 @@ object mod {
             String
           ]) | FontVariantEastAsianProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantLigatures: js.UndefOr[
         FontVariantLigaturesProperty | (js.Array[
@@ -3996,7 +4007,7 @@ object mod {
             String
           ]) | FontVariantLigaturesProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantNumeric: js.UndefOr[
         FontVariantNumericProperty | (js.Array[
@@ -4005,7 +4016,7 @@ object mod {
             String
           ]) | FontVariantNumericProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariantPosition: js.UndefOr[
         FontVariantPositionProperty | (js.Array[
@@ -4014,7 +4025,7 @@ object mod {
             String
           ]) | FontVariantPositionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontVariationSettings: js.UndefOr[
         FontVariationSettingsProperty | (js.Array[
@@ -4023,13 +4034,13 @@ object mod {
             String
           ]) | FontVariationSettingsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var fontWeight: js.UndefOr[
         FontWeightProperty | (js.Array[
           (Extract[js.UndefOr[FontWeightProperty | js.Array[FontWeightProperty]], String]) | FontWeightProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gap: js.UndefOr[
         (GapProperty[Double | String]) | (js.Array[
@@ -4038,7 +4049,7 @@ object mod {
             String
           ]) | (GapProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var glyphOrientationVertical: js.UndefOr[
         GlyphOrientationVerticalProperty | (js.Array[
@@ -4047,19 +4058,19 @@ object mod {
             String
           ]) | GlyphOrientationVerticalProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var grid: js.UndefOr[
         GridProperty | (js.Array[
           (Extract[js.UndefOr[GridProperty | js.Array[GridProperty]], String]) | GridProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridArea: js.UndefOr[
         GridAreaProperty | (js.Array[
           (Extract[js.UndefOr[GridAreaProperty | js.Array[GridAreaProperty]], String]) | GridAreaProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridAutoColumns: js.UndefOr[
         (GridAutoColumnsProperty[Double | String]) | (js.Array[
@@ -4070,13 +4081,13 @@ object mod {
             String
           ]) | (GridAutoColumnsProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridAutoFlow: js.UndefOr[
         GridAutoFlowProperty | (js.Array[
           (Extract[js.UndefOr[GridAutoFlowProperty | js.Array[GridAutoFlowProperty]], String]) | GridAutoFlowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridAutoRows: js.UndefOr[
         (GridAutoRowsProperty[Double | String]) | (js.Array[
@@ -4087,19 +4098,19 @@ object mod {
             String
           ]) | (GridAutoRowsProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridColumn: js.UndefOr[
         GridColumnProperty | (js.Array[
           (Extract[js.UndefOr[GridColumnProperty | js.Array[GridColumnProperty]], String]) | GridColumnProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridColumnEnd: js.UndefOr[
         GridColumnEndProperty | (js.Array[
           (Extract[js.UndefOr[GridColumnEndProperty | js.Array[GridColumnEndProperty]], String]) | GridColumnEndProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridColumnGap: js.UndefOr[
         (GridColumnGapProperty[Double | String]) | (js.Array[
@@ -4110,13 +4121,13 @@ object mod {
             String
           ]) | (GridColumnGapProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridColumnStart: js.UndefOr[
         GridColumnStartProperty | (js.Array[
           (Extract[js.UndefOr[GridColumnStartProperty | js.Array[GridColumnStartProperty]], String]) | GridColumnStartProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridGap: js.UndefOr[
         (GridGapProperty[Double | String]) | (js.Array[
@@ -4127,19 +4138,19 @@ object mod {
             String
           ]) | (GridGapProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridRow: js.UndefOr[
         GridRowProperty | (js.Array[
           (Extract[js.UndefOr[GridRowProperty | js.Array[GridRowProperty]], String]) | GridRowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridRowEnd: js.UndefOr[
         GridRowEndProperty | (js.Array[
           (Extract[js.UndefOr[GridRowEndProperty | js.Array[GridRowEndProperty]], String]) | GridRowEndProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridRowGap: js.UndefOr[
         (GridRowGapProperty[Double | String]) | (js.Array[
@@ -4150,19 +4161,19 @@ object mod {
             String
           ]) | (GridRowGapProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridRowStart: js.UndefOr[
         GridRowStartProperty | (js.Array[
           (Extract[js.UndefOr[GridRowStartProperty | js.Array[GridRowStartProperty]], String]) | GridRowStartProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplate: js.UndefOr[
         GridTemplateProperty | (js.Array[
           (Extract[js.UndefOr[GridTemplateProperty | js.Array[GridTemplateProperty]], String]) | GridTemplateProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateAreas: js.UndefOr[
         GridTemplateAreasProperty | (js.Array[
@@ -4171,7 +4182,7 @@ object mod {
             String
           ]) | GridTemplateAreasProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateColumns: js.UndefOr[
         (GridTemplateColumnsProperty[Double | String]) | (js.Array[
@@ -4182,7 +4193,7 @@ object mod {
             String
           ]) | (GridTemplateColumnsProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var gridTemplateRows: js.UndefOr[
         (GridTemplateRowsProperty[Double | String]) | (js.Array[
@@ -4193,7 +4204,7 @@ object mod {
             String
           ]) | (GridTemplateRowsProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var hangingPunctuation: js.UndefOr[
         HangingPunctuationProperty | (js.Array[
@@ -4202,7 +4213,7 @@ object mod {
             String
           ]) | HangingPunctuationProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var height: js.UndefOr[
         (HeightProperty[Double | String]) | (js.Array[
@@ -4211,43 +4222,43 @@ object mod {
             String
           ]) | (HeightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var hyphens: js.UndefOr[
         HyphensProperty | (js.Array[
           (Extract[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]], String]) | HyphensProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var imageOrientation: js.UndefOr[
         ImageOrientationProperty | (js.Array[
           (Extract[js.UndefOr[ImageOrientationProperty | js.Array[ImageOrientationProperty]], String]) | ImageOrientationProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var imageRendering: js.UndefOr[
         ImageRenderingProperty | (js.Array[
           (Extract[js.UndefOr[ImageRenderingProperty | js.Array[ImageRenderingProperty]], String]) | ImageRenderingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var imageResolution: js.UndefOr[
         ImageResolutionProperty | (js.Array[
           (Extract[js.UndefOr[ImageResolutionProperty | js.Array[ImageResolutionProperty]], String]) | ImageResolutionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var imeMode: js.UndefOr[
         ImeModeProperty | (js.Array[
           (Extract[js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]], String]) | ImeModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var initialLetter: js.UndefOr[
         InitialLetterProperty | (js.Array[
           (Extract[js.UndefOr[InitialLetterProperty | js.Array[InitialLetterProperty]], String]) | InitialLetterProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var inlineSize: js.UndefOr[
         (InlineSizeProperty[Double | String]) | (js.Array[
@@ -4258,7 +4269,7 @@ object mod {
             String
           ]) | (InlineSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var inset: js.UndefOr[
         (InsetProperty[Double | String]) | (js.Array[
@@ -4267,7 +4278,7 @@ object mod {
             String
           ]) | (InsetProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var insetBlock: js.UndefOr[
         (InsetBlockProperty[Double | String]) | (js.Array[
@@ -4278,7 +4289,7 @@ object mod {
             String
           ]) | (InsetBlockProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var insetBlockEnd: js.UndefOr[
         (InsetBlockEndProperty[Double | String]) | (js.Array[
@@ -4289,7 +4300,7 @@ object mod {
             String
           ]) | (InsetBlockEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var insetBlockStart: js.UndefOr[
         (InsetBlockStartProperty[Double | String]) | (js.Array[
@@ -4300,7 +4311,7 @@ object mod {
             String
           ]) | (InsetBlockStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var insetInline: js.UndefOr[
         (InsetInlineProperty[Double | String]) | (js.Array[
@@ -4311,7 +4322,7 @@ object mod {
             String
           ]) | (InsetInlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var insetInlineEnd: js.UndefOr[
         (InsetInlineEndProperty[Double | String]) | (js.Array[
@@ -4322,7 +4333,7 @@ object mod {
             String
           ]) | (InsetInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var insetInlineStart: js.UndefOr[
         (InsetInlineStartProperty[Double | String]) | (js.Array[
@@ -4333,37 +4344,37 @@ object mod {
             String
           ]) | (InsetInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var isolation: js.UndefOr[
         IsolationProperty | (js.Array[
           (Extract[js.UndefOr[IsolationProperty | js.Array[IsolationProperty]], String]) | IsolationProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var justifyContent: js.UndefOr[
         JustifyContentProperty | (js.Array[
           (Extract[js.UndefOr[JustifyContentProperty | js.Array[JustifyContentProperty]], String]) | JustifyContentProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var justifyItems: js.UndefOr[
         JustifyItemsProperty | (js.Array[
           (Extract[js.UndefOr[JustifyItemsProperty | js.Array[JustifyItemsProperty]], String]) | JustifyItemsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var justifySelf: js.UndefOr[
         JustifySelfProperty | (js.Array[
           (Extract[js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]], String]) | JustifySelfProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var justifyTracks: js.UndefOr[
         JustifyTracksProperty | (js.Array[
           (Extract[js.UndefOr[JustifyTracksProperty | js.Array[JustifyTracksProperty]], String]) | JustifyTracksProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var left: js.UndefOr[
         (LeftProperty[Double | String]) | (js.Array[
@@ -4372,7 +4383,7 @@ object mod {
             String
           ]) | (LeftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var letterSpacing: js.UndefOr[
         (LetterSpacingProperty[Double | String]) | (js.Array[
@@ -4383,25 +4394,25 @@ object mod {
             String
           ]) | (LetterSpacingProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var lightingColor: js.UndefOr[
         LightingColorProperty | (js.Array[
           (Extract[js.UndefOr[LightingColorProperty | js.Array[LightingColorProperty]], String]) | LightingColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var lineBreak: js.UndefOr[
         LineBreakProperty | (js.Array[
           (Extract[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]], String]) | LineBreakProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var lineClamp: js.UndefOr[
         LineClampProperty | (js.Array[
           (Extract[js.UndefOr[LineClampProperty | js.Array[LineClampProperty]], String]) | LineClampProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var lineHeight: js.UndefOr[
         (LineHeightProperty[Double | String]) | (js.Array[
@@ -4412,7 +4423,7 @@ object mod {
             String
           ]) | (LineHeightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var lineHeightStep: js.UndefOr[
         (LineHeightStepProperty[Double | String]) | (js.Array[
@@ -4423,19 +4434,19 @@ object mod {
             String
           ]) | (LineHeightStepProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var listStyle: js.UndefOr[
         ListStyleProperty | (js.Array[
           (Extract[js.UndefOr[ListStyleProperty | js.Array[ListStyleProperty]], String]) | ListStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var listStyleImage: js.UndefOr[
         ListStyleImageProperty | (js.Array[
           (Extract[js.UndefOr[ListStyleImageProperty | js.Array[ListStyleImageProperty]], String]) | ListStyleImageProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var listStylePosition: js.UndefOr[
         ListStylePositionProperty | (js.Array[
@@ -4444,13 +4455,13 @@ object mod {
             String
           ]) | ListStylePositionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var listStyleType: js.UndefOr[
         ListStyleTypeProperty | (js.Array[
           (Extract[js.UndefOr[ListStyleTypeProperty | js.Array[ListStyleTypeProperty]], String]) | ListStyleTypeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var margin: js.UndefOr[
         (MarginProperty[Double | String]) | (js.Array[
@@ -4459,7 +4470,7 @@ object mod {
             String
           ]) | (MarginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginBlock: js.UndefOr[
         (MarginBlockProperty[Double | String]) | (js.Array[
@@ -4470,7 +4481,7 @@ object mod {
             String
           ]) | (MarginBlockProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginBlockEnd: js.UndefOr[
         (MarginBlockEndProperty[Double | String]) | (js.Array[
@@ -4481,7 +4492,7 @@ object mod {
             String
           ]) | (MarginBlockEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginBlockStart: js.UndefOr[
         (MarginBlockStartProperty[Double | String]) | (js.Array[
@@ -4492,7 +4503,7 @@ object mod {
             String
           ]) | (MarginBlockStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginBottom: js.UndefOr[
         (MarginBottomProperty[Double | String]) | (js.Array[
@@ -4503,7 +4514,7 @@ object mod {
             String
           ]) | (MarginBottomProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginInline: js.UndefOr[
         (MarginInlineProperty[Double | String]) | (js.Array[
@@ -4514,7 +4525,7 @@ object mod {
             String
           ]) | (MarginInlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginInlineEnd: js.UndefOr[
         (MarginInlineEndProperty[Double | String]) | (js.Array[
@@ -4525,7 +4536,7 @@ object mod {
             String
           ]) | (MarginInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginInlineStart: js.UndefOr[
         (MarginInlineStartProperty[Double | String]) | (js.Array[
@@ -4536,7 +4547,7 @@ object mod {
             String
           ]) | (MarginInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginLeft: js.UndefOr[
         (MarginLeftProperty[Double | String]) | (js.Array[
@@ -4547,7 +4558,7 @@ object mod {
             String
           ]) | (MarginLeftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginRight: js.UndefOr[
         (MarginRightProperty[Double | String]) | (js.Array[
@@ -4558,7 +4569,7 @@ object mod {
             String
           ]) | (MarginRightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marginTop: js.UndefOr[
         (MarginTopProperty[Double | String]) | (js.Array[
@@ -4569,31 +4580,31 @@ object mod {
             String
           ]) | (MarginTopProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var marker: js.UndefOr[
         MarkerProperty | (js.Array[
           (Extract[js.UndefOr[MarkerProperty | js.Array[MarkerProperty]], String]) | MarkerProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var markerEnd: js.UndefOr[
         MarkerEndProperty | (js.Array[
           (Extract[js.UndefOr[MarkerEndProperty | js.Array[MarkerEndProperty]], String]) | MarkerEndProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var markerMid: js.UndefOr[
         MarkerMidProperty | (js.Array[
           (Extract[js.UndefOr[MarkerMidProperty | js.Array[MarkerMidProperty]], String]) | MarkerMidProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var markerStart: js.UndefOr[
         MarkerStartProperty | (js.Array[
           (Extract[js.UndefOr[MarkerStartProperty | js.Array[MarkerStartProperty]], String]) | MarkerStartProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var mask: js.UndefOr[
         (MaskProperty[Double | String]) | (js.Array[
@@ -4602,19 +4613,19 @@ object mod {
             String
           ]) | (MaskProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskBorder: js.UndefOr[
         MaskBorderProperty | (js.Array[
           (Extract[js.UndefOr[MaskBorderProperty | js.Array[MaskBorderProperty]], String]) | MaskBorderProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderMode: js.UndefOr[
         MaskBorderModeProperty | (js.Array[
           (Extract[js.UndefOr[MaskBorderModeProperty | js.Array[MaskBorderModeProperty]], String]) | MaskBorderModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderOutset: js.UndefOr[
         (MaskBorderOutsetProperty[Double | String]) | (js.Array[
@@ -4625,25 +4636,25 @@ object mod {
             String
           ]) | (MaskBorderOutsetProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderRepeat: js.UndefOr[
         MaskBorderRepeatProperty | (js.Array[
           (Extract[js.UndefOr[MaskBorderRepeatProperty | js.Array[MaskBorderRepeatProperty]], String]) | MaskBorderRepeatProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderSlice: js.UndefOr[
         MaskBorderSliceProperty | (js.Array[
           (Extract[js.UndefOr[MaskBorderSliceProperty | js.Array[MaskBorderSliceProperty]], String]) | MaskBorderSliceProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderSource: js.UndefOr[
         MaskBorderSourceProperty | (js.Array[
           (Extract[js.UndefOr[MaskBorderSourceProperty | js.Array[MaskBorderSourceProperty]], String]) | MaskBorderSourceProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskBorderWidth: js.UndefOr[
         (MaskBorderWidthProperty[Double | String]) | (js.Array[
@@ -4654,37 +4665,37 @@ object mod {
             String
           ]) | (MaskBorderWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskClip: js.UndefOr[
         MaskClipProperty | (js.Array[
           (Extract[js.UndefOr[MaskClipProperty | js.Array[MaskClipProperty]], String]) | MaskClipProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskComposite: js.UndefOr[
         MaskCompositeProperty | (js.Array[
           (Extract[js.UndefOr[MaskCompositeProperty | js.Array[MaskCompositeProperty]], String]) | MaskCompositeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskImage: js.UndefOr[
         MaskImageProperty | (js.Array[
           (Extract[js.UndefOr[MaskImageProperty | js.Array[MaskImageProperty]], String]) | MaskImageProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskMode: js.UndefOr[
         MaskModeProperty | (js.Array[
           (Extract[js.UndefOr[MaskModeProperty | js.Array[MaskModeProperty]], String]) | MaskModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskOrigin: js.UndefOr[
         MaskOriginProperty | (js.Array[
           (Extract[js.UndefOr[MaskOriginProperty | js.Array[MaskOriginProperty]], String]) | MaskOriginProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskPosition: js.UndefOr[
         (MaskPositionProperty[Double | String]) | (js.Array[
@@ -4695,13 +4706,13 @@ object mod {
             String
           ]) | (MaskPositionProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskRepeat: js.UndefOr[
         MaskRepeatProperty | (js.Array[
           (Extract[js.UndefOr[MaskRepeatProperty | js.Array[MaskRepeatProperty]], String]) | MaskRepeatProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskSize: js.UndefOr[
         (MaskSizeProperty[Double | String]) | (js.Array[
@@ -4712,25 +4723,25 @@ object mod {
             String
           ]) | (MaskSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maskType: js.UndefOr[
         MaskTypeProperty | (js.Array[
           (Extract[js.UndefOr[MaskTypeProperty | js.Array[MaskTypeProperty]], String]) | MaskTypeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var masonryAutoFlow: js.UndefOr[
         MasonryAutoFlowProperty | (js.Array[
           (Extract[js.UndefOr[MasonryAutoFlowProperty | js.Array[MasonryAutoFlowProperty]], String]) | MasonryAutoFlowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var mathStyle: js.UndefOr[
         MathStyleProperty | (js.Array[
           (Extract[js.UndefOr[MathStyleProperty | js.Array[MathStyleProperty]], String]) | MathStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maxBlockSize: js.UndefOr[
         (MaxBlockSizeProperty[Double | String]) | (js.Array[
@@ -4741,7 +4752,7 @@ object mod {
             String
           ]) | (MaxBlockSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maxHeight: js.UndefOr[
         (MaxHeightProperty[Double | String]) | (js.Array[
@@ -4752,7 +4763,7 @@ object mod {
             String
           ]) | (MaxHeightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maxInlineSize: js.UndefOr[
         (MaxInlineSizeProperty[Double | String]) | (js.Array[
@@ -4763,13 +4774,13 @@ object mod {
             String
           ]) | (MaxInlineSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maxLines: js.UndefOr[
         MaxLinesProperty | (js.Array[
           (Extract[js.UndefOr[MaxLinesProperty | js.Array[MaxLinesProperty]], String]) | MaxLinesProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var maxWidth: js.UndefOr[
         (MaxWidthProperty[Double | String]) | (js.Array[
@@ -4780,7 +4791,7 @@ object mod {
             String
           ]) | (MaxWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var minBlockSize: js.UndefOr[
         (MinBlockSizeProperty[Double | String]) | (js.Array[
@@ -4791,7 +4802,7 @@ object mod {
             String
           ]) | (MinBlockSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var minHeight: js.UndefOr[
         (MinHeightProperty[Double | String]) | (js.Array[
@@ -4802,7 +4813,7 @@ object mod {
             String
           ]) | (MinHeightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var minInlineSize: js.UndefOr[
         (MinInlineSizeProperty[Double | String]) | (js.Array[
@@ -4813,7 +4824,7 @@ object mod {
             String
           ]) | (MinInlineSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var minWidth: js.UndefOr[
         (MinWidthProperty[Double | String]) | (js.Array[
@@ -4824,13 +4835,13 @@ object mod {
             String
           ]) | (MinWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var mixBlendMode: js.UndefOr[
         MixBlendModeProperty | (js.Array[
           (Extract[js.UndefOr[MixBlendModeProperty | js.Array[MixBlendModeProperty]], String]) | MixBlendModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var motion: js.UndefOr[
         (OffsetProperty[Double | String]) | (js.Array[
@@ -4839,7 +4850,7 @@ object mod {
             String
           ]) | (OffsetProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var motionDistance: js.UndefOr[
         (OffsetDistanceProperty[Double | String]) | (js.Array[
@@ -4850,31 +4861,31 @@ object mod {
             String
           ]) | (OffsetDistanceProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var motionPath: js.UndefOr[
         OffsetPathProperty | (js.Array[
           (Extract[js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]], String]) | OffsetPathProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var motionRotation: js.UndefOr[
         OffsetRotateProperty | (js.Array[
           (Extract[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]], String]) | OffsetRotateProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msAccelerator: js.UndefOr[
         MsAcceleratorProperty | (js.Array[
           (Extract[js.UndefOr[MsAcceleratorProperty | js.Array[MsAcceleratorProperty]], String]) | MsAcceleratorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msAlignSelf: js.UndefOr[
         AlignSelfProperty | (js.Array[
           AlignSelfProperty | (Extract[js.UndefOr[AlignSelfProperty | js.Array[AlignSelfProperty]], String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msBlockProgression: js.UndefOr[
         MsBlockProgressionProperty | (js.Array[
@@ -4883,7 +4894,7 @@ object mod {
             String
           ]) | MsBlockProgressionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomChaining: js.UndefOr[
         MsContentZoomChainingProperty | (js.Array[
@@ -4892,25 +4903,25 @@ object mod {
             String
           ]) | MsContentZoomChainingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomLimit: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomLimitMax: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomLimitMin: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomSnap: js.UndefOr[
         MsContentZoomSnapProperty | (js.Array[
@@ -4919,13 +4930,13 @@ object mod {
             String
           ]) | MsContentZoomSnapProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomSnapPoints: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZoomSnapType: js.UndefOr[
         MsContentZoomSnapTypeProperty | (js.Array[
@@ -4934,19 +4945,19 @@ object mod {
             String
           ]) | MsContentZoomSnapTypeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msContentZooming: js.UndefOr[
         MsContentZoomingProperty | (js.Array[
           (Extract[js.UndefOr[MsContentZoomingProperty | js.Array[MsContentZoomingProperty]], String]) | MsContentZoomingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msFilter: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msFlex: js.UndefOr[
         (FlexProperty[Double | String]) | (js.Array[
@@ -4955,31 +4966,31 @@ object mod {
             String
           ]) | (FlexProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msFlexDirection: js.UndefOr[
         FlexDirectionProperty | (js.Array[
           (Extract[js.UndefOr[FlexDirectionProperty | js.Array[FlexDirectionProperty]], String]) | FlexDirectionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msFlexPositive: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msFlowFrom: js.UndefOr[
         MsFlowFromProperty | (js.Array[
           (Extract[js.UndefOr[MsFlowFromProperty | js.Array[MsFlowFromProperty]], String]) | MsFlowFromProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msFlowInto: js.UndefOr[
         MsFlowIntoProperty | (js.Array[
           (Extract[js.UndefOr[MsFlowIntoProperty | js.Array[MsFlowIntoProperty]], String]) | MsFlowIntoProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msGridColumns: js.UndefOr[
         (MsGridColumnsProperty[Double | String]) | (js.Array[
@@ -4990,7 +5001,7 @@ object mod {
             String
           ]) | (MsGridColumnsProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msGridRows: js.UndefOr[
         (MsGridRowsProperty[Double | String]) | (js.Array[
@@ -5001,7 +5012,7 @@ object mod {
             String
           ]) | (MsGridRowsProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msHighContrastAdjust: js.UndefOr[
         MsHighContrastAdjustProperty | (js.Array[
@@ -5010,7 +5021,7 @@ object mod {
             String
           ]) | MsHighContrastAdjustProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msHyphenateLimitChars: js.UndefOr[
         MsHyphenateLimitCharsProperty | (js.Array[
@@ -5019,7 +5030,7 @@ object mod {
             String
           ]) | MsHyphenateLimitCharsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msHyphenateLimitLines: js.UndefOr[
         MsHyphenateLimitLinesProperty | (js.Array[
@@ -5028,7 +5039,7 @@ object mod {
             String
           ]) | MsHyphenateLimitLinesProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msHyphenateLimitZone: js.UndefOr[
         (MsHyphenateLimitZoneProperty[Double | String]) | (js.Array[
@@ -5039,73 +5050,73 @@ object mod {
             String
           ]) | (MsHyphenateLimitZoneProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msHyphens: js.UndefOr[
         HyphensProperty | (js.Array[
           (Extract[js.UndefOr[HyphensProperty | js.Array[HyphensProperty]], String]) | HyphensProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msImeAlign: js.UndefOr[
         MsImeAlignProperty | (js.Array[
           (Extract[js.UndefOr[MsImeAlignProperty | js.Array[MsImeAlignProperty]], String]) | MsImeAlignProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msImeMode: js.UndefOr[
         ImeModeProperty | (js.Array[
           (Extract[js.UndefOr[ImeModeProperty | js.Array[ImeModeProperty]], String]) | ImeModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msJustifySelf: js.UndefOr[
         JustifySelfProperty | (js.Array[
           (Extract[js.UndefOr[JustifySelfProperty | js.Array[JustifySelfProperty]], String]) | JustifySelfProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msLineBreak: js.UndefOr[
         LineBreakProperty | (js.Array[
           (Extract[js.UndefOr[LineBreakProperty | js.Array[LineBreakProperty]], String]) | LineBreakProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msOrder: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msOverflowStyle: js.UndefOr[
         MsOverflowStyleProperty | (js.Array[
           (Extract[js.UndefOr[MsOverflowStyleProperty | js.Array[MsOverflowStyleProperty]], String]) | MsOverflowStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msOverflowX: js.UndefOr[
         OverflowXProperty | (js.Array[
           (Extract[js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]], String]) | OverflowXProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msOverflowY: js.UndefOr[
         OverflowYProperty | (js.Array[
           (Extract[js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]], String]) | OverflowYProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollChaining: js.UndefOr[
         MsScrollChainingProperty | (js.Array[
           (Extract[js.UndefOr[MsScrollChainingProperty | js.Array[MsScrollChainingProperty]], String]) | MsScrollChainingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimit: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimitXMax: js.UndefOr[
         (MsScrollLimitXMaxProperty[Double | String]) | (js.Array[
@@ -5116,7 +5127,7 @@ object mod {
             String
           ]) | (MsScrollLimitXMaxProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimitXMin: js.UndefOr[
         (MsScrollLimitXMinProperty[Double | String]) | (js.Array[
@@ -5127,7 +5138,7 @@ object mod {
             String
           ]) | (MsScrollLimitXMinProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimitYMax: js.UndefOr[
         (MsScrollLimitYMaxProperty[Double | String]) | (js.Array[
@@ -5138,7 +5149,7 @@ object mod {
             String
           ]) | (MsScrollLimitYMaxProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollLimitYMin: js.UndefOr[
         (MsScrollLimitYMinProperty[Double | String]) | (js.Array[
@@ -5149,43 +5160,43 @@ object mod {
             String
           ]) | (MsScrollLimitYMinProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollRails: js.UndefOr[
         MsScrollRailsProperty | (js.Array[
           (Extract[js.UndefOr[MsScrollRailsProperty | js.Array[MsScrollRailsProperty]], String]) | MsScrollRailsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollSnapPointsX: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollSnapPointsY: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollSnapType: js.UndefOr[
         MsScrollSnapTypeProperty | (js.Array[
           (Extract[js.UndefOr[MsScrollSnapTypeProperty | js.Array[MsScrollSnapTypeProperty]], String]) | MsScrollSnapTypeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollSnapX: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollSnapY: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollTranslation: js.UndefOr[
         MsScrollTranslationProperty | (js.Array[
@@ -5194,7 +5205,7 @@ object mod {
             String
           ]) | MsScrollTranslationProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbar3dlightColor: js.UndefOr[
         MsScrollbar3dlightColorProperty | (js.Array[
@@ -5203,7 +5214,7 @@ object mod {
             String
           ]) | MsScrollbar3dlightColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarArrowColor: js.UndefOr[
         MsScrollbarArrowColorProperty | (js.Array[
@@ -5212,7 +5223,7 @@ object mod {
             String
           ]) | MsScrollbarArrowColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarBaseColor: js.UndefOr[
         MsScrollbarBaseColorProperty | (js.Array[
@@ -5221,7 +5232,7 @@ object mod {
             String
           ]) | MsScrollbarBaseColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarDarkshadowColor: js.UndefOr[
         MsScrollbarDarkshadowColorProperty | (js.Array[
@@ -5232,7 +5243,7 @@ object mod {
             String
           ]) | MsScrollbarDarkshadowColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarFaceColor: js.UndefOr[
         MsScrollbarFaceColorProperty | (js.Array[
@@ -5241,7 +5252,7 @@ object mod {
             String
           ]) | MsScrollbarFaceColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarHighlightColor: js.UndefOr[
         MsScrollbarHighlightColorProperty | (js.Array[
@@ -5250,7 +5261,7 @@ object mod {
             String
           ]) | MsScrollbarHighlightColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarShadowColor: js.UndefOr[
         MsScrollbarShadowColorProperty | (js.Array[
@@ -5259,7 +5270,7 @@ object mod {
             String
           ]) | MsScrollbarShadowColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msScrollbarTrackColor: js.UndefOr[
         MsScrollbarTrackColorProperty | (js.Array[
@@ -5268,13 +5279,13 @@ object mod {
             String
           ]) | MsScrollbarTrackColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTextAutospace: js.UndefOr[
         MsTextAutospaceProperty | (js.Array[
           (Extract[js.UndefOr[MsTextAutospaceProperty | js.Array[MsTextAutospaceProperty]], String]) | MsTextAutospaceProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTextCombineHorizontal: js.UndefOr[
         TextCombineUprightProperty | (js.Array[
@@ -5283,31 +5294,31 @@ object mod {
             String
           ]) | TextCombineUprightProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTextOverflow: js.UndefOr[
         TextOverflowProperty | (js.Array[
           (Extract[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]], String]) | TextOverflowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTouchAction: js.UndefOr[
         TouchActionProperty | (js.Array[
           (Extract[js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]], String]) | TouchActionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTouchSelect: js.UndefOr[
         MsTouchSelectProperty | (js.Array[
           (Extract[js.UndefOr[MsTouchSelectProperty | js.Array[MsTouchSelectProperty]], String]) | MsTouchSelectProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTransform: js.UndefOr[
         TransformProperty | (js.Array[
           (Extract[js.UndefOr[TransformProperty | js.Array[TransformProperty]], String]) | TransformProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTransformOrigin: js.UndefOr[
         (TransformOriginProperty[Double | String]) | (js.Array[
@@ -5318,25 +5329,25 @@ object mod {
             String
           ]) | (TransformOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTransition: js.UndefOr[
         TransitionProperty | (js.Array[
           (Extract[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]], String]) | TransitionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTransitionDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTransitionDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTransitionProperty: js.UndefOr[
         TransitionPropertyProperty | (js.Array[
@@ -5345,7 +5356,7 @@ object mod {
             String
           ]) | TransitionPropertyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msTransitionTimingFunction: js.UndefOr[
         TransitionTimingFunctionProperty | (js.Array[
@@ -5354,25 +5365,25 @@ object mod {
             String
           ]) | TransitionTimingFunctionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msUserSelect: js.UndefOr[
         MsUserSelectProperty | (js.Array[
           (Extract[js.UndefOr[MsUserSelectProperty | js.Array[MsUserSelectProperty]], String]) | MsUserSelectProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msWordBreak: js.UndefOr[
         WordBreakProperty | (js.Array[
           (Extract[js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]], String]) | WordBreakProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msWrapFlow: js.UndefOr[
         MsWrapFlowProperty | (js.Array[
           (Extract[js.UndefOr[MsWrapFlowProperty | js.Array[MsWrapFlowProperty]], String]) | MsWrapFlowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msWrapMargin: js.UndefOr[
         (MsWrapMarginProperty[Double | String]) | (js.Array[
@@ -5383,25 +5394,25 @@ object mod {
             String
           ]) | (MsWrapMarginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msWrapThrough: js.UndefOr[
         MsWrapThroughProperty | (js.Array[
           (Extract[js.UndefOr[MsWrapThroughProperty | js.Array[MsWrapThroughProperty]], String]) | MsWrapThroughProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var msWritingMode: js.UndefOr[
         WritingModeProperty | (js.Array[
           (Extract[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]], String]) | WritingModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var objectFit: js.UndefOr[
         ObjectFitProperty | (js.Array[
           (Extract[js.UndefOr[ObjectFitProperty | js.Array[ObjectFitProperty]], String]) | ObjectFitProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var objectPosition: js.UndefOr[
         (ObjectPositionProperty[Double | String]) | (js.Array[
@@ -5412,7 +5423,7 @@ object mod {
             String
           ]) | (ObjectPositionProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offset: js.UndefOr[
         (OffsetProperty[Double | String]) | (js.Array[
@@ -5421,7 +5432,7 @@ object mod {
             String
           ]) | (OffsetProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetAnchor: js.UndefOr[
         (OffsetAnchorProperty[Double | String]) | (js.Array[
@@ -5432,7 +5443,7 @@ object mod {
             String
           ]) | (OffsetAnchorProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetBlock: js.UndefOr[
         (InsetBlockProperty[Double | String]) | (js.Array[
@@ -5443,7 +5454,7 @@ object mod {
             String
           ]) | (InsetBlockProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetBlockEnd: js.UndefOr[
         (InsetBlockEndProperty[Double | String]) | (js.Array[
@@ -5454,7 +5465,7 @@ object mod {
             String
           ]) | (InsetBlockEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetBlockStart: js.UndefOr[
         (InsetBlockStartProperty[Double | String]) | (js.Array[
@@ -5465,7 +5476,7 @@ object mod {
             String
           ]) | (InsetBlockStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetDistance: js.UndefOr[
         (OffsetDistanceProperty[Double | String]) | (js.Array[
@@ -5476,7 +5487,7 @@ object mod {
             String
           ]) | (OffsetDistanceProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetInline: js.UndefOr[
         (InsetInlineProperty[Double | String]) | (js.Array[
@@ -5487,7 +5498,7 @@ object mod {
             String
           ]) | (InsetInlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetInlineEnd: js.UndefOr[
         (InsetInlineEndProperty[Double | String]) | (js.Array[
@@ -5498,7 +5509,7 @@ object mod {
             String
           ]) | (InsetInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetInlineStart: js.UndefOr[
         (InsetInlineStartProperty[Double | String]) | (js.Array[
@@ -5509,43 +5520,43 @@ object mod {
             String
           ]) | (InsetInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetPath: js.UndefOr[
         OffsetPathProperty | (js.Array[
           (Extract[js.UndefOr[OffsetPathProperty | js.Array[OffsetPathProperty]], String]) | OffsetPathProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetRotate: js.UndefOr[
         OffsetRotateProperty | (js.Array[
           (Extract[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]], String]) | OffsetRotateProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var offsetRotation: js.UndefOr[
         OffsetRotateProperty | (js.Array[
           (Extract[js.UndefOr[OffsetRotateProperty | js.Array[OffsetRotateProperty]], String]) | OffsetRotateProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var opacity: js.UndefOr[
         OpacityProperty | (js.Array[
           (Extract[js.UndefOr[OpacityProperty | js.Array[OpacityProperty]], String]) | OpacityProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var order: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var orphans: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var outline: js.UndefOr[
         (OutlineProperty[Double | String]) | (js.Array[
@@ -5556,13 +5567,13 @@ object mod {
             String
           ]) | (OutlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var outlineColor: js.UndefOr[
         OutlineColorProperty | (js.Array[
           (Extract[js.UndefOr[OutlineColorProperty | js.Array[OutlineColorProperty]], String]) | OutlineColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var outlineOffset: js.UndefOr[
         (OutlineOffsetProperty[Double | String]) | (js.Array[
@@ -5573,13 +5584,13 @@ object mod {
             String
           ]) | (OutlineOffsetProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var outlineStyle: js.UndefOr[
         OutlineStyleProperty | (js.Array[
           (Extract[js.UndefOr[OutlineStyleProperty | js.Array[OutlineStyleProperty]], String]) | OutlineStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var outlineWidth: js.UndefOr[
         (OutlineWidthProperty[Double | String]) | (js.Array[
@@ -5590,55 +5601,55 @@ object mod {
             String
           ]) | (OutlineWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflow: js.UndefOr[
         OverflowProperty | (js.Array[
           (Extract[js.UndefOr[OverflowProperty | js.Array[OverflowProperty]], String]) | OverflowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflowAnchor: js.UndefOr[
         OverflowAnchorProperty | (js.Array[
           (Extract[js.UndefOr[OverflowAnchorProperty | js.Array[OverflowAnchorProperty]], String]) | OverflowAnchorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflowBlock: js.UndefOr[
         OverflowBlockProperty | (js.Array[
           (Extract[js.UndefOr[OverflowBlockProperty | js.Array[OverflowBlockProperty]], String]) | OverflowBlockProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflowClipBox: js.UndefOr[
         OverflowClipBoxProperty | (js.Array[
           (Extract[js.UndefOr[OverflowClipBoxProperty | js.Array[OverflowClipBoxProperty]], String]) | OverflowClipBoxProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflowInline: js.UndefOr[
         OverflowInlineProperty | (js.Array[
           (Extract[js.UndefOr[OverflowInlineProperty | js.Array[OverflowInlineProperty]], String]) | OverflowInlineProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflowWrap: js.UndefOr[
         OverflowWrapProperty | (js.Array[
           (Extract[js.UndefOr[OverflowWrapProperty | js.Array[OverflowWrapProperty]], String]) | OverflowWrapProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflowX: js.UndefOr[
         OverflowXProperty | (js.Array[
           (Extract[js.UndefOr[OverflowXProperty | js.Array[OverflowXProperty]], String]) | OverflowXProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overflowY: js.UndefOr[
         OverflowYProperty | (js.Array[
           (Extract[js.UndefOr[OverflowYProperty | js.Array[OverflowYProperty]], String]) | OverflowYProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehavior: js.UndefOr[
         OverscrollBehaviorProperty | (js.Array[
@@ -5647,7 +5658,7 @@ object mod {
             String
           ]) | OverscrollBehaviorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorBlock: js.UndefOr[
         OverscrollBehaviorBlockProperty | (js.Array[
@@ -5656,7 +5667,7 @@ object mod {
             String
           ]) | OverscrollBehaviorBlockProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorInline: js.UndefOr[
         OverscrollBehaviorInlineProperty | (js.Array[
@@ -5665,7 +5676,7 @@ object mod {
             String
           ]) | OverscrollBehaviorInlineProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorX: js.UndefOr[
         OverscrollBehaviorXProperty | (js.Array[
@@ -5674,7 +5685,7 @@ object mod {
             String
           ]) | OverscrollBehaviorXProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var overscrollBehaviorY: js.UndefOr[
         OverscrollBehaviorYProperty | (js.Array[
@@ -5683,7 +5694,7 @@ object mod {
             String
           ]) | OverscrollBehaviorYProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var padding: js.UndefOr[
         (PaddingProperty[Double | String]) | (js.Array[
@@ -5694,7 +5705,7 @@ object mod {
             String
           ]) | (PaddingProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingBlock: js.UndefOr[
         (PaddingBlockProperty[Double | String]) | (js.Array[
@@ -5705,7 +5716,7 @@ object mod {
             String
           ]) | (PaddingBlockProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingBlockEnd: js.UndefOr[
         (PaddingBlockEndProperty[Double | String]) | (js.Array[
@@ -5716,7 +5727,7 @@ object mod {
             String
           ]) | (PaddingBlockEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingBlockStart: js.UndefOr[
         (PaddingBlockStartProperty[Double | String]) | (js.Array[
@@ -5727,7 +5738,7 @@ object mod {
             String
           ]) | (PaddingBlockStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingBottom: js.UndefOr[
         (PaddingBottomProperty[Double | String]) | (js.Array[
@@ -5738,7 +5749,7 @@ object mod {
             String
           ]) | (PaddingBottomProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingInline: js.UndefOr[
         (PaddingInlineProperty[Double | String]) | (js.Array[
@@ -5749,7 +5760,7 @@ object mod {
             String
           ]) | (PaddingInlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingInlineEnd: js.UndefOr[
         (PaddingInlineEndProperty[Double | String]) | (js.Array[
@@ -5760,7 +5771,7 @@ object mod {
             String
           ]) | (PaddingInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingInlineStart: js.UndefOr[
         (PaddingInlineStartProperty[Double | String]) | (js.Array[
@@ -5771,7 +5782,7 @@ object mod {
             String
           ]) | (PaddingInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingLeft: js.UndefOr[
         (PaddingLeftProperty[Double | String]) | (js.Array[
@@ -5782,7 +5793,7 @@ object mod {
             String
           ]) | (PaddingLeftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingRight: js.UndefOr[
         (PaddingRightProperty[Double | String]) | (js.Array[
@@ -5793,7 +5804,7 @@ object mod {
             String
           ]) | (PaddingRightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paddingTop: js.UndefOr[
         (PaddingTopProperty[Double | String]) | (js.Array[
@@ -5804,31 +5815,31 @@ object mod {
             String
           ]) | (PaddingTopProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pageBreakAfter: js.UndefOr[
         PageBreakAfterProperty | (js.Array[
           (Extract[js.UndefOr[PageBreakAfterProperty | js.Array[PageBreakAfterProperty]], String]) | PageBreakAfterProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pageBreakBefore: js.UndefOr[
         PageBreakBeforeProperty | (js.Array[
           (Extract[js.UndefOr[PageBreakBeforeProperty | js.Array[PageBreakBeforeProperty]], String]) | PageBreakBeforeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pageBreakInside: js.UndefOr[
         PageBreakInsideProperty | (js.Array[
           (Extract[js.UndefOr[PageBreakInsideProperty | js.Array[PageBreakInsideProperty]], String]) | PageBreakInsideProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var paintOrder: js.UndefOr[
         PaintOrderProperty | (js.Array[
           (Extract[js.UndefOr[PaintOrderProperty | js.Array[PaintOrderProperty]], String]) | PaintOrderProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var perspective: js.UndefOr[
         (PerspectiveProperty[Double | String]) | (js.Array[
@@ -5839,7 +5850,7 @@ object mod {
             String
           ]) | (PerspectiveProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var perspectiveOrigin: js.UndefOr[
         (PerspectiveOriginProperty[Double | String]) | (js.Array[
@@ -5850,49 +5861,49 @@ object mod {
             String
           ]) | (PerspectiveOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var placeContent: js.UndefOr[
         PlaceContentProperty | (js.Array[
           (Extract[js.UndefOr[PlaceContentProperty | js.Array[PlaceContentProperty]], String]) | PlaceContentProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var placeItems: js.UndefOr[
         PlaceItemsProperty | (js.Array[
           (Extract[js.UndefOr[PlaceItemsProperty | js.Array[PlaceItemsProperty]], String]) | PlaceItemsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var placeSelf: js.UndefOr[
         PlaceSelfProperty | (js.Array[
           (Extract[js.UndefOr[PlaceSelfProperty | js.Array[PlaceSelfProperty]], String]) | PlaceSelfProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var pointerEvents: js.UndefOr[
         PointerEventsProperty | (js.Array[
           (Extract[js.UndefOr[PointerEventsProperty | js.Array[PointerEventsProperty]], String]) | PointerEventsProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var position: js.UndefOr[
         PositionProperty | (js.Array[
           (Extract[js.UndefOr[PositionProperty | js.Array[PositionProperty]], String]) | PositionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var quotes: js.UndefOr[
         QuotesProperty | (js.Array[
           (Extract[js.UndefOr[QuotesProperty | js.Array[QuotesProperty]], String]) | QuotesProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var resize: js.UndefOr[
         ResizeProperty | (js.Array[
           (Extract[js.UndefOr[ResizeProperty | js.Array[ResizeProperty]], String]) | ResizeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var right: js.UndefOr[
         (RightProperty[Double | String]) | (js.Array[
@@ -5901,13 +5912,13 @@ object mod {
             String
           ]) | (RightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var rotate: js.UndefOr[
         RotateProperty | (js.Array[
           (Extract[js.UndefOr[RotateProperty | js.Array[RotateProperty]], String]) | RotateProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var rowGap: js.UndefOr[
         (RowGapProperty[Double | String]) | (js.Array[
@@ -5916,37 +5927,37 @@ object mod {
             String
           ]) | (RowGapProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var rubyAlign: js.UndefOr[
         RubyAlignProperty | (js.Array[
           (Extract[js.UndefOr[RubyAlignProperty | js.Array[RubyAlignProperty]], String]) | RubyAlignProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var rubyMerge: js.UndefOr[
         RubyMergeProperty | (js.Array[
           (Extract[js.UndefOr[RubyMergeProperty | js.Array[RubyMergeProperty]], String]) | RubyMergeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var rubyPosition: js.UndefOr[
         RubyPositionProperty | (js.Array[
           (Extract[js.UndefOr[RubyPositionProperty | js.Array[RubyPositionProperty]], String]) | RubyPositionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scale: js.UndefOr[
         ScaleProperty | (js.Array[
           (Extract[js.UndefOr[ScaleProperty | js.Array[ScaleProperty]], String]) | ScaleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollBehavior: js.UndefOr[
         ScrollBehaviorProperty | (js.Array[
           (Extract[js.UndefOr[ScrollBehaviorProperty | js.Array[ScrollBehaviorProperty]], String]) | ScrollBehaviorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMargin: js.UndefOr[
         (ScrollMarginProperty[Double | String]) | (js.Array[
@@ -5957,7 +5968,7 @@ object mod {
             String
           ]) | (ScrollMarginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBlock: js.UndefOr[
         (ScrollMarginBlockProperty[Double | String]) | (js.Array[
@@ -5968,7 +5979,7 @@ object mod {
             String
           ]) | (ScrollMarginBlockProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBlockEnd: js.UndefOr[
         (ScrollMarginBlockEndProperty[Double | String]) | (js.Array[
@@ -5979,7 +5990,7 @@ object mod {
             String
           ]) | (ScrollMarginBlockEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBlockStart: js.UndefOr[
         (ScrollMarginBlockStartProperty[Double | String]) | (js.Array[
@@ -5990,7 +6001,7 @@ object mod {
             String
           ]) | (ScrollMarginBlockStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginBottom: js.UndefOr[
         (ScrollMarginBottomProperty[Double | String]) | (js.Array[
@@ -6001,7 +6012,7 @@ object mod {
             String
           ]) | (ScrollMarginBottomProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginInline: js.UndefOr[
         (ScrollMarginInlineProperty[Double | String]) | (js.Array[
@@ -6012,7 +6023,7 @@ object mod {
             String
           ]) | (ScrollMarginInlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginInlineEnd: js.UndefOr[
         (ScrollMarginInlineEndProperty[Double | String]) | (js.Array[
@@ -6023,7 +6034,7 @@ object mod {
             String
           ]) | (ScrollMarginInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginInlineStart: js.UndefOr[
         (ScrollMarginInlineStartProperty[Double | String]) | (js.Array[
@@ -6034,7 +6045,7 @@ object mod {
             String
           ]) | (ScrollMarginInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginLeft: js.UndefOr[
         (ScrollMarginLeftProperty[Double | String]) | (js.Array[
@@ -6045,7 +6056,7 @@ object mod {
             String
           ]) | (ScrollMarginLeftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginRight: js.UndefOr[
         (ScrollMarginRightProperty[Double | String]) | (js.Array[
@@ -6056,7 +6067,7 @@ object mod {
             String
           ]) | (ScrollMarginRightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollMarginTop: js.UndefOr[
         (ScrollMarginTopProperty[Double | String]) | (js.Array[
@@ -6067,7 +6078,7 @@ object mod {
             String
           ]) | (ScrollMarginTopProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPadding: js.UndefOr[
         (ScrollPaddingProperty[Double | String]) | (js.Array[
@@ -6078,7 +6089,7 @@ object mod {
             String
           ]) | (ScrollPaddingProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBlock: js.UndefOr[
         (ScrollPaddingBlockProperty[Double | String]) | (js.Array[
@@ -6089,7 +6100,7 @@ object mod {
             String
           ]) | (ScrollPaddingBlockProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBlockEnd: js.UndefOr[
         (ScrollPaddingBlockEndProperty[Double | String]) | (js.Array[
@@ -6100,7 +6111,7 @@ object mod {
             String
           ]) | (ScrollPaddingBlockEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBlockStart: js.UndefOr[
         (ScrollPaddingBlockStartProperty[Double | String]) | (js.Array[
@@ -6111,7 +6122,7 @@ object mod {
             String
           ]) | (ScrollPaddingBlockStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingBottom: js.UndefOr[
         (ScrollPaddingBottomProperty[Double | String]) | (js.Array[
@@ -6122,7 +6133,7 @@ object mod {
             String
           ]) | (ScrollPaddingBottomProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingInline: js.UndefOr[
         (ScrollPaddingInlineProperty[Double | String]) | (js.Array[
@@ -6133,7 +6144,7 @@ object mod {
             String
           ]) | (ScrollPaddingInlineProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingInlineEnd: js.UndefOr[
         (ScrollPaddingInlineEndProperty[Double | String]) | (js.Array[
@@ -6144,7 +6155,7 @@ object mod {
             String
           ]) | (ScrollPaddingInlineEndProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingInlineStart: js.UndefOr[
         (ScrollPaddingInlineStartProperty[Double | String]) | (js.Array[
@@ -6155,7 +6166,7 @@ object mod {
             String
           ]) | (ScrollPaddingInlineStartProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingLeft: js.UndefOr[
         (ScrollPaddingLeftProperty[Double | String]) | (js.Array[
@@ -6166,7 +6177,7 @@ object mod {
             String
           ]) | (ScrollPaddingLeftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingRight: js.UndefOr[
         (ScrollPaddingRightProperty[Double | String]) | (js.Array[
@@ -6177,7 +6188,7 @@ object mod {
             String
           ]) | (ScrollPaddingRightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollPaddingTop: js.UndefOr[
         (ScrollPaddingTopProperty[Double | String]) | (js.Array[
@@ -6188,13 +6199,13 @@ object mod {
             String
           ]) | (ScrollPaddingTopProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapAlign: js.UndefOr[
         ScrollSnapAlignProperty | (js.Array[
           (Extract[js.UndefOr[ScrollSnapAlignProperty | js.Array[ScrollSnapAlignProperty]], String]) | ScrollSnapAlignProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapCoordinate: js.UndefOr[
         (ScrollSnapCoordinateProperty[Double | String]) | (js.Array[
@@ -6205,7 +6216,7 @@ object mod {
             String
           ]) | (ScrollSnapCoordinateProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapDestination: js.UndefOr[
         (ScrollSnapDestinationProperty[Double | String]) | (js.Array[
@@ -6216,7 +6227,7 @@ object mod {
             String
           ]) | (ScrollSnapDestinationProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMargin: js.UndefOr[
         (ScrollMarginProperty[Double | String]) | (js.Array[
@@ -6227,7 +6238,7 @@ object mod {
             String
           ]) | (ScrollMarginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginBottom: js.UndefOr[
         (ScrollMarginBottomProperty[Double | String]) | (js.Array[
@@ -6238,7 +6249,7 @@ object mod {
             String
           ]) | (ScrollMarginBottomProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginLeft: js.UndefOr[
         (ScrollMarginLeftProperty[Double | String]) | (js.Array[
@@ -6249,7 +6260,7 @@ object mod {
             String
           ]) | (ScrollMarginLeftProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginRight: js.UndefOr[
         (ScrollMarginRightProperty[Double | String]) | (js.Array[
@@ -6260,7 +6271,7 @@ object mod {
             String
           ]) | (ScrollMarginRightProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapMarginTop: js.UndefOr[
         (ScrollMarginTopProperty[Double | String]) | (js.Array[
@@ -6271,7 +6282,7 @@ object mod {
             String
           ]) | (ScrollMarginTopProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapPointsX: js.UndefOr[
         ScrollSnapPointsXProperty | (js.Array[
@@ -6280,7 +6291,7 @@ object mod {
             String
           ]) | ScrollSnapPointsXProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapPointsY: js.UndefOr[
         ScrollSnapPointsYProperty | (js.Array[
@@ -6289,43 +6300,43 @@ object mod {
             String
           ]) | ScrollSnapPointsYProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapStop: js.UndefOr[
         ScrollSnapStopProperty | (js.Array[
           (Extract[js.UndefOr[ScrollSnapStopProperty | js.Array[ScrollSnapStopProperty]], String]) | ScrollSnapStopProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapType: js.UndefOr[
         ScrollSnapTypeProperty | (js.Array[
           (Extract[js.UndefOr[ScrollSnapTypeProperty | js.Array[ScrollSnapTypeProperty]], String]) | ScrollSnapTypeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapTypeX: js.UndefOr[
         ScrollSnapTypeXProperty | (js.Array[
           (Extract[js.UndefOr[ScrollSnapTypeXProperty | js.Array[ScrollSnapTypeXProperty]], String]) | ScrollSnapTypeXProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollSnapTypeY: js.UndefOr[
         ScrollSnapTypeYProperty | (js.Array[
           (Extract[js.UndefOr[ScrollSnapTypeYProperty | js.Array[ScrollSnapTypeYProperty]], String]) | ScrollSnapTypeYProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarColor: js.UndefOr[
         ScrollbarColorProperty | (js.Array[
           (Extract[js.UndefOr[ScrollbarColorProperty | js.Array[ScrollbarColorProperty]], String]) | ScrollbarColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarGutter: js.UndefOr[
         ScrollbarGutterProperty | (js.Array[
           (Extract[js.UndefOr[ScrollbarGutterProperty | js.Array[ScrollbarGutterProperty]], String]) | ScrollbarGutterProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarTrackColor: js.UndefOr[
         MsScrollbarTrackColorProperty | (js.Array[
@@ -6334,13 +6345,13 @@ object mod {
             String
           ]) | MsScrollbarTrackColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var scrollbarWidth: js.UndefOr[
         ScrollbarWidthProperty | (js.Array[
           (Extract[js.UndefOr[ScrollbarWidthProperty | js.Array[ScrollbarWidthProperty]], String]) | ScrollbarWidthProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var shapeImageThreshold: js.UndefOr[
         ShapeImageThresholdProperty | (js.Array[
@@ -6349,7 +6360,7 @@ object mod {
             String
           ]) | ShapeImageThresholdProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var shapeMargin: js.UndefOr[
         (ShapeMarginProperty[Double | String]) | (js.Array[
@@ -6360,37 +6371,37 @@ object mod {
             String
           ]) | (ShapeMarginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var shapeOutside: js.UndefOr[
         ShapeOutsideProperty | (js.Array[
           (Extract[js.UndefOr[ShapeOutsideProperty | js.Array[ShapeOutsideProperty]], String]) | ShapeOutsideProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var shapeRendering: js.UndefOr[
         ShapeRenderingProperty | (js.Array[
           (Extract[js.UndefOr[ShapeRenderingProperty | js.Array[ShapeRenderingProperty]], String]) | ShapeRenderingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var stopColor: js.UndefOr[
         StopColorProperty | (js.Array[
           (Extract[js.UndefOr[StopColorProperty | js.Array[StopColorProperty]], String]) | StopColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var stopOpacity: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var stroke: js.UndefOr[
         StrokeProperty | (js.Array[
           (Extract[js.UndefOr[StrokeProperty | js.Array[StrokeProperty]], String]) | StrokeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var strokeDasharray: js.UndefOr[
         (StrokeDasharrayProperty[Double | String]) | (js.Array[
@@ -6401,7 +6412,7 @@ object mod {
             String
           ]) | (StrokeDasharrayProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var strokeDashoffset: js.UndefOr[
         (StrokeDashoffsetProperty[Double | String]) | (js.Array[
@@ -6412,31 +6423,31 @@ object mod {
             String
           ]) | (StrokeDashoffsetProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var strokeLinecap: js.UndefOr[
         StrokeLinecapProperty | (js.Array[
           (Extract[js.UndefOr[StrokeLinecapProperty | js.Array[StrokeLinecapProperty]], String]) | StrokeLinecapProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var strokeLinejoin: js.UndefOr[
         StrokeLinejoinProperty | (js.Array[
           (Extract[js.UndefOr[StrokeLinejoinProperty | js.Array[StrokeLinejoinProperty]], String]) | StrokeLinejoinProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var strokeMiterlimit: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var strokeOpacity: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var strokeWidth: js.UndefOr[
         (StrokeWidthProperty[Double | String]) | (js.Array[
@@ -6447,7 +6458,7 @@ object mod {
             String
           ]) | (StrokeWidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var tabSize: js.UndefOr[
         (TabSizeProperty[Double | String]) | (js.Array[
@@ -6458,31 +6469,31 @@ object mod {
             String
           ]) | (TabSizeProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var tableLayout: js.UndefOr[
         TableLayoutProperty | (js.Array[
           (Extract[js.UndefOr[TableLayoutProperty | js.Array[TableLayoutProperty]], String]) | TableLayoutProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textAlign: js.UndefOr[
         TextAlignProperty | (js.Array[
           (Extract[js.UndefOr[TextAlignProperty | js.Array[TextAlignProperty]], String]) | TextAlignProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textAlignLast: js.UndefOr[
         TextAlignLastProperty | (js.Array[
           (Extract[js.UndefOr[TextAlignLastProperty | js.Array[TextAlignLastProperty]], String]) | TextAlignLastProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textAnchor: js.UndefOr[
         TextAnchorProperty | (js.Array[
           (Extract[js.UndefOr[TextAnchorProperty | js.Array[TextAnchorProperty]], String]) | TextAnchorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textCombineHorizontal: js.UndefOr[
         TextCombineUprightProperty | (js.Array[
@@ -6491,7 +6502,7 @@ object mod {
             String
           ]) | TextCombineUprightProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textCombineUpright: js.UndefOr[
         TextCombineUprightProperty | (js.Array[
@@ -6500,7 +6511,7 @@ object mod {
             String
           ]) | TextCombineUprightProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecoration: js.UndefOr[
         (TextDecorationProperty[Double | String]) | (js.Array[
@@ -6511,7 +6522,7 @@ object mod {
             String
           ]) | (TextDecorationProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationColor: js.UndefOr[
         TextDecorationColorProperty | (js.Array[
@@ -6520,7 +6531,7 @@ object mod {
             String
           ]) | TextDecorationColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationLine: js.UndefOr[
         TextDecorationLineProperty | (js.Array[
@@ -6529,7 +6540,7 @@ object mod {
             String
           ]) | TextDecorationLineProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationSkip: js.UndefOr[
         TextDecorationSkipProperty | (js.Array[
@@ -6538,7 +6549,7 @@ object mod {
             String
           ]) | TextDecorationSkipProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationSkipInk: js.UndefOr[
         TextDecorationSkipInkProperty | (js.Array[
@@ -6547,7 +6558,7 @@ object mod {
             String
           ]) | TextDecorationSkipInkProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationStyle: js.UndefOr[
         TextDecorationStyleProperty | (js.Array[
@@ -6556,7 +6567,7 @@ object mod {
             String
           ]) | TextDecorationStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationThickness: js.UndefOr[
         (TextDecorationThicknessProperty[Double | String]) | (js.Array[
@@ -6567,7 +6578,7 @@ object mod {
             String
           ]) | (TextDecorationThicknessProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textDecorationWidth: js.UndefOr[
         (TextDecorationThicknessProperty[Double | String]) | (js.Array[
@@ -6578,13 +6589,13 @@ object mod {
             String
           ]) | (TextDecorationThicknessProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textEmphasis: js.UndefOr[
         TextEmphasisProperty | (js.Array[
           (Extract[js.UndefOr[TextEmphasisProperty | js.Array[TextEmphasisProperty]], String]) | TextEmphasisProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textEmphasisColor: js.UndefOr[
         TextEmphasisColorProperty | (js.Array[
@@ -6593,13 +6604,13 @@ object mod {
             String
           ]) | TextEmphasisColorProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textEmphasisPosition: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textEmphasisStyle: js.UndefOr[
         TextEmphasisStyleProperty | (js.Array[
@@ -6608,7 +6619,7 @@ object mod {
             String
           ]) | TextEmphasisStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textIndent: js.UndefOr[
         (TextIndentProperty[Double | String]) | (js.Array[
@@ -6619,49 +6630,49 @@ object mod {
             String
           ]) | (TextIndentProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textJustify: js.UndefOr[
         TextJustifyProperty | (js.Array[
           (Extract[js.UndefOr[TextJustifyProperty | js.Array[TextJustifyProperty]], String]) | TextJustifyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textOrientation: js.UndefOr[
         TextOrientationProperty | (js.Array[
           (Extract[js.UndefOr[TextOrientationProperty | js.Array[TextOrientationProperty]], String]) | TextOrientationProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textOverflow: js.UndefOr[
         TextOverflowProperty | (js.Array[
           (Extract[js.UndefOr[TextOverflowProperty | js.Array[TextOverflowProperty]], String]) | TextOverflowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textRendering: js.UndefOr[
         TextRenderingProperty | (js.Array[
           (Extract[js.UndefOr[TextRenderingProperty | js.Array[TextRenderingProperty]], String]) | TextRenderingProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textShadow: js.UndefOr[
         TextShadowProperty | (js.Array[
           (Extract[js.UndefOr[TextShadowProperty | js.Array[TextShadowProperty]], String]) | TextShadowProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textSizeAdjust: js.UndefOr[
         TextSizeAdjustProperty | (js.Array[
           (Extract[js.UndefOr[TextSizeAdjustProperty | js.Array[TextSizeAdjustProperty]], String]) | TextSizeAdjustProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textTransform: js.UndefOr[
         TextTransformProperty | (js.Array[
           (Extract[js.UndefOr[TextTransformProperty | js.Array[TextTransformProperty]], String]) | TextTransformProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textUnderlineOffset: js.UndefOr[
         (TextUnderlineOffsetProperty[Double | String]) | (js.Array[
@@ -6672,7 +6683,7 @@ object mod {
             String
           ]) | (TextUnderlineOffsetProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var textUnderlinePosition: js.UndefOr[
         TextUnderlinePositionProperty | (js.Array[
@@ -6681,7 +6692,7 @@ object mod {
             String
           ]) | TextUnderlinePositionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var top: js.UndefOr[
         (TopProperty[Double | String]) | (js.Array[
@@ -6690,25 +6701,25 @@ object mod {
             String
           ]) | (TopProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var touchAction: js.UndefOr[
         TouchActionProperty | (js.Array[
           (Extract[js.UndefOr[TouchActionProperty | js.Array[TouchActionProperty]], String]) | TouchActionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transform: js.UndefOr[
         TransformProperty | (js.Array[
           (Extract[js.UndefOr[TransformProperty | js.Array[TransformProperty]], String]) | TransformProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transformBox: js.UndefOr[
         TransformBoxProperty | (js.Array[
           (Extract[js.UndefOr[TransformBoxProperty | js.Array[TransformBoxProperty]], String]) | TransformBoxProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transformOrigin: js.UndefOr[
         (TransformOriginProperty[Double | String]) | (js.Array[
@@ -6719,31 +6730,31 @@ object mod {
             String
           ]) | (TransformOriginProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transformStyle: js.UndefOr[
         TransformStyleProperty | (js.Array[
           (Extract[js.UndefOr[TransformStyleProperty | js.Array[TransformStyleProperty]], String]) | TransformStyleProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transition: js.UndefOr[
         TransitionProperty | (js.Array[
           (Extract[js.UndefOr[TransitionProperty | js.Array[TransitionProperty]], String]) | TransitionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transitionDelay: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transitionDuration: js.UndefOr[
         GlobalsString | (js.Array[
           (Extract[js.UndefOr[GlobalsString | js.Array[GlobalsString]], String]) | GlobalsString
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transitionProperty: js.UndefOr[
         TransitionPropertyProperty | (js.Array[
@@ -6752,7 +6763,7 @@ object mod {
             String
           ]) | TransitionPropertyProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var transitionTimingFunction: js.UndefOr[
         TransitionTimingFunctionProperty | (js.Array[
@@ -6761,7 +6772,7 @@ object mod {
             String
           ]) | TransitionTimingFunctionProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var translate: js.UndefOr[
         (TranslateProperty[Double | String]) | (js.Array[
@@ -6772,25 +6783,25 @@ object mod {
             String
           ]) | (TranslateProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var unicodeBidi: js.UndefOr[
         UnicodeBidiProperty | (js.Array[
           (Extract[js.UndefOr[UnicodeBidiProperty | js.Array[UnicodeBidiProperty]], String]) | UnicodeBidiProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var userSelect: js.UndefOr[
         UserSelectProperty | (js.Array[
           (Extract[js.UndefOr[UserSelectProperty | js.Array[UserSelectProperty]], String]) | UserSelectProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var vectorEffect: js.UndefOr[
         VectorEffectProperty | (js.Array[
           (Extract[js.UndefOr[VectorEffectProperty | js.Array[VectorEffectProperty]], String]) | VectorEffectProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var verticalAlign: js.UndefOr[
         (VerticalAlignProperty[Double | String]) | (js.Array[
@@ -6801,25 +6812,25 @@ object mod {
             String
           ]) | (VerticalAlignProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var visibility: js.UndefOr[
         VisibilityProperty | (js.Array[
           (Extract[js.UndefOr[VisibilityProperty | js.Array[VisibilityProperty]], String]) | VisibilityProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var whiteSpace: js.UndefOr[
         WhiteSpaceProperty | (js.Array[
           (Extract[js.UndefOr[WhiteSpaceProperty | js.Array[WhiteSpaceProperty]], String]) | WhiteSpaceProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var widows: js.UndefOr[
         GlobalsNumber | (js.Array[
           (Extract[js.UndefOr[GlobalsNumber | js.Array[GlobalsNumber]], String]) | GlobalsNumber
         ])
-      ] = js.native
+      ] = js.undefined
     
     var width: js.UndefOr[
         (WidthProperty[Double | String]) | (js.Array[
@@ -6828,19 +6839,19 @@ object mod {
             String
           ]) | (WidthProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var willChange: js.UndefOr[
         WillChangeProperty | (js.Array[
           (Extract[js.UndefOr[WillChangeProperty | js.Array[WillChangeProperty]], String]) | WillChangeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var wordBreak: js.UndefOr[
         WordBreakProperty | (js.Array[
           (Extract[js.UndefOr[WordBreakProperty | js.Array[WordBreakProperty]], String]) | WordBreakProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var wordSpacing: js.UndefOr[
         (WordSpacingProperty[Double | String]) | (js.Array[
@@ -6851,31 +6862,31 @@ object mod {
             String
           ]) | (WordSpacingProperty[Double | String])
         ])
-      ] = js.native
+      ] = js.undefined
     
     var wordWrap: js.UndefOr[
         WordWrapProperty | (js.Array[
           (Extract[js.UndefOr[WordWrapProperty | js.Array[WordWrapProperty]], String]) | WordWrapProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var writingMode: js.UndefOr[
         WritingModeProperty | (js.Array[
           (Extract[js.UndefOr[WritingModeProperty | js.Array[WritingModeProperty]], String]) | WritingModeProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var zIndex: js.UndefOr[
         ZIndexProperty | (js.Array[
           (Extract[js.UndefOr[ZIndexProperty | js.Array[ZIndexProperty]], String]) | ZIndexProperty
         ])
-      ] = js.native
+      ] = js.undefined
     
     var zoom: js.UndefOr[
         ZoomProperty | (js.Array[
           (Extract[js.UndefOr[ZoomProperty | js.Array[ZoomProperty]], String]) | ZoomProperty
         ])
-      ] = js.native
+      ] = js.undefined
   }
   object CSSPropertiesWithMultiValues {
     
@@ -21635,341 +21646,340 @@ object mod {
   }
   
   /* Inlined {[ K in csstype.csstype.Pseudos ]:? @emotion/serialize.@emotion/serialize.ObjectInterpolation<MP>} */
-  @js.native
   trait CSSPseudos[MP] extends StObject {
     
     @JSName(":-khtml-any-link")
-    var `Colon-khtml-any-link`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-khtml-any-link`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-any-link")
-    var `Colon-moz-any-link`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-any-link`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-any()")
-    var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-dir")
-    var `Colon-moz-dir`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-dir`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-focusring")
-    var `Colon-moz-focusring`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-focusring`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-full-screen")
-    var `Colon-moz-full-screen`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-full-screen`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-placeholder")
-    var `Colon-moz-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-read-only")
-    var `Colon-moz-read-only`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-read-only`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-moz-read-write")
-    var `Colon-moz-read-write`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-moz-read-write`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-ms-fullscreen")
-    var `Colon-ms-fullscreen`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-ms-fullscreen`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-ms-input-placeholder")
-    var `Colon-ms-input-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-ms-input-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-webkit-any-link")
-    var `Colon-webkit-any-link`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-webkit-any-link`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-webkit-any()")
-    var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":-webkit-full-screen")
-    var `Colon-webkit-full-screen`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colon-webkit-full-screen`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-moz-placeholder")
-    var `ColonColon-moz-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-moz-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-moz-progress-bar")
-    var `ColonColon-moz-progress-bar`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-moz-progress-bar`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-moz-range-progress")
-    var `ColonColon-moz-range-progress`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-moz-range-progress`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-moz-range-thumb")
-    var `ColonColon-moz-range-thumb`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-moz-range-thumb`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-moz-range-track")
-    var `ColonColon-moz-range-track`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-moz-range-track`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-moz-selection")
-    var `ColonColon-moz-selection`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-moz-selection`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-backdrop")
-    var `ColonColon-ms-backdrop`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-backdrop`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-browse")
-    var `ColonColon-ms-browse`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-browse`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-check")
-    var `ColonColon-ms-check`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-check`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-clear")
-    var `ColonColon-ms-clear`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-clear`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-fill")
-    var `ColonColon-ms-fill`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-fill`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-fill-lower")
-    var `ColonColon-ms-fill-lower`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-fill-lower`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-fill-upper")
-    var `ColonColon-ms-fill-upper`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-fill-upper`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-input-placeholder")
-    var `ColonColon-ms-input-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-input-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-reveal")
-    var `ColonColon-ms-reveal`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-reveal`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-thumb")
-    var `ColonColon-ms-thumb`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-thumb`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-ticks-after")
-    var `ColonColon-ms-ticks-after`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-ticks-after`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-ticks-before")
-    var `ColonColon-ms-ticks-before`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-ticks-before`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-tooltip")
-    var `ColonColon-ms-tooltip`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-tooltip`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-track")
-    var `ColonColon-ms-track`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-track`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-ms-value")
-    var `ColonColon-ms-value`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-ms-value`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-webkit-backdrop")
-    var `ColonColon-webkit-backdrop`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-webkit-backdrop`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-webkit-input-placeholder")
-    var `ColonColon-webkit-input-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-webkit-input-placeholder`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-webkit-progress-bar")
-    var `ColonColon-webkit-progress-bar`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-webkit-progress-bar`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-webkit-progress-inner-value")
-    var `ColonColon-webkit-progress-inner-value`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-webkit-progress-inner-value`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-webkit-progress-value")
-    var `ColonColon-webkit-progress-value`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-webkit-progress-value`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-webkit-slider-runnable-track")
-    var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::-webkit-slider-thumb")
-    var `ColonColon-webkit-slider-thumb`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColon-webkit-slider-thumb`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::after")
-    var ColonColonafter: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonafter: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::backdrop")
-    var ColonColonbackdrop: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonbackdrop: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::before")
-    var ColonColonbefore: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonbefore: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::cue")
-    var ColonColoncue: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColoncue: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::cue-region")
-    var `ColonColoncue-region`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColoncue-region`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::first-letter")
-    var `ColonColonfirst-letter`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColonfirst-letter`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::first-line")
-    var `ColonColonfirst-line`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColonfirst-line`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::grammar-error")
-    var `ColonColongrammar-error`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColongrammar-error`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::marker")
-    var ColonColonmarker: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonmarker: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::part")
-    var ColonColonpart: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonpart: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::placeholder")
-    var ColonColonplaceholder: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonplaceholder: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::selection")
-    var ColonColonselection: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonselection: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::slotted")
-    var ColonColonslotted: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonColonslotted: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName("::spelling-error")
-    var `ColonColonspelling-error`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `ColonColonspelling-error`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":active")
-    var Colonactive: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonactive: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":after")
-    var Colonafter: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonafter: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":any-link")
-    var `Colonany-link`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonany-link`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":before")
-    var Colonbefore: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonbefore: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":blank")
-    var Colonblank: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonblank: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":checked")
-    var Colonchecked: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonchecked: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":default")
-    var Colondefault: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colondefault: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":defined")
-    var Colondefined: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colondefined: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":dir")
-    var Colondir: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colondir: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":disabled")
-    var Colondisabled: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colondisabled: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":empty")
-    var Colonempty: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonempty: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":enabled")
-    var Colonenabled: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonenabled: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":first")
-    var Colonfirst: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonfirst: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":first-child")
-    var `Colonfirst-child`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonfirst-child`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":first-letter")
-    var `Colonfirst-letter`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonfirst-letter`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":first-line")
-    var `Colonfirst-line`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonfirst-line`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":first-of-type")
-    var `Colonfirst-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonfirst-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":focus")
-    var Colonfocus: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonfocus: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":focus-visible")
-    var `Colonfocus-visible`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonfocus-visible`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":focus-within")
-    var `Colonfocus-within`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonfocus-within`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":fullscreen")
-    var Colonfullscreen: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonfullscreen: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":has")
-    var Colonhas: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonhas: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":host")
-    var Colonhost: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonhost: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":host-context")
-    var `Colonhost-context`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonhost-context`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":hover")
-    var Colonhover: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonhover: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":in-range")
-    var `Colonin-range`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonin-range`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":indeterminate")
-    var Colonindeterminate: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonindeterminate: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":invalid")
-    var Coloninvalid: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Coloninvalid: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":is")
-    var Colonis: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonis: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":lang")
-    var Colonlang: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonlang: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":last-child")
-    var `Colonlast-child`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonlast-child`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":last-of-type")
-    var `Colonlast-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonlast-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":left")
-    var Colonleft: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonleft: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":link")
-    var Colonlink: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonlink: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":matches()")
-    var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":not")
-    var Colonnot: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonnot: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":nth-child")
-    var `Colonnth-child`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonnth-child`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":nth-last-child")
-    var `Colonnth-last-child`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonnth-last-child`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":nth-last-of-type")
-    var `Colonnth-last-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonnth-last-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":nth-of-type")
-    var `Colonnth-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonnth-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":only-child")
-    var `Colononly-child`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colononly-child`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":only-of-type")
-    var `Colononly-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colononly-of-type`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":optional")
-    var Colonoptional: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonoptional: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":out-of-range")
-    var `Colonout-of-range`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonout-of-range`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":placeholder-shown")
-    var `Colonplaceholder-shown`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonplaceholder-shown`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":read-only")
-    var `Colonread-only`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonread-only`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":read-write")
-    var `Colonread-write`: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var `Colonread-write`: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":required")
-    var Colonrequired: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonrequired: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":right")
-    var Colonright: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonright: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":root")
-    var Colonroot: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonroot: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":scope")
-    var Colonscope: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonscope: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":target")
-    var Colontarget: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colontarget: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":valid")
-    var Colonvalid: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonvalid: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":visited")
-    var Colonvisited: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonvisited: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
     
     @JSName(":where")
-    var Colonwhere: js.UndefOr[ObjectInterpolation[MP]] = js.native
+    var Colonwhere: js.UndefOr[ObjectInterpolation[MP]] = js.undefined
   }
   object CSSPseudos {
     
@@ -21980,7 +21990,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class CSSPseudosMutableBuilder[Self <: CSSPseudos[_], MP] (val x: Self with CSSPseudos[MP]) extends AnyVal {
+    implicit class CSSPseudosMutableBuilder[Self <: CSSPseudos[?], MP] (val x: Self & CSSPseudos[MP]) extends AnyVal {
       
       @scala.inline
       def `setColon-khtml-any-link`(value: ObjectInterpolation[MP]): Self = StObject.set(x, ":-khtml-any-link", value.asInstanceOf[js.Any])
@@ -22651,341 +22661,340 @@ object mod {
   }
   
   /* Inlined {[ K in csstype.csstype.Pseudos ]:? @emotion/serialize.@emotion/serialize.CSSObject} */
-  @js.native
   trait CSSPseudosForCSSObject extends StObject {
     
     @JSName(":-khtml-any-link")
-    var `Colon-khtml-any-link`: js.UndefOr[CSSObject] = js.native
+    var `Colon-khtml-any-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-any-link")
-    var `Colon-moz-any-link`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-any-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-any()")
-    var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-dir")
-    var `Colon-moz-dir`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-dir`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-focusring")
-    var `Colon-moz-focusring`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-focusring`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-full-screen")
-    var `Colon-moz-full-screen`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-full-screen`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-placeholder")
-    var `Colon-moz-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-read-only")
-    var `Colon-moz-read-only`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-read-only`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-moz-read-write")
-    var `Colon-moz-read-write`: js.UndefOr[CSSObject] = js.native
+    var `Colon-moz-read-write`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-ms-fullscreen")
-    var `Colon-ms-fullscreen`: js.UndefOr[CSSObject] = js.native
+    var `Colon-ms-fullscreen`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-ms-input-placeholder")
-    var `Colon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `Colon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-webkit-any-link")
-    var `Colon-webkit-any-link`: js.UndefOr[CSSObject] = js.native
+    var `Colon-webkit-any-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-webkit-any()")
-    var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.native
+    var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":-webkit-full-screen")
-    var `Colon-webkit-full-screen`: js.UndefOr[CSSObject] = js.native
+    var `Colon-webkit-full-screen`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-placeholder")
-    var `ColonColon-moz-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-progress-bar")
-    var `ColonColon-moz-progress-bar`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-progress-bar`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-range-progress")
-    var `ColonColon-moz-range-progress`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-range-progress`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-range-thumb")
-    var `ColonColon-moz-range-thumb`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-range-thumb`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-range-track")
-    var `ColonColon-moz-range-track`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-range-track`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-moz-selection")
-    var `ColonColon-moz-selection`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-moz-selection`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-backdrop")
-    var `ColonColon-ms-backdrop`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-backdrop`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-browse")
-    var `ColonColon-ms-browse`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-browse`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-check")
-    var `ColonColon-ms-check`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-check`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-clear")
-    var `ColonColon-ms-clear`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-clear`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-fill")
-    var `ColonColon-ms-fill`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-fill`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-fill-lower")
-    var `ColonColon-ms-fill-lower`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-fill-lower`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-fill-upper")
-    var `ColonColon-ms-fill-upper`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-fill-upper`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-input-placeholder")
-    var `ColonColon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-reveal")
-    var `ColonColon-ms-reveal`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-reveal`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-thumb")
-    var `ColonColon-ms-thumb`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-thumb`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-ticks-after")
-    var `ColonColon-ms-ticks-after`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-ticks-after`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-ticks-before")
-    var `ColonColon-ms-ticks-before`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-ticks-before`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-tooltip")
-    var `ColonColon-ms-tooltip`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-tooltip`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-track")
-    var `ColonColon-ms-track`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-track`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-ms-value")
-    var `ColonColon-ms-value`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-ms-value`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-backdrop")
-    var `ColonColon-webkit-backdrop`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-backdrop`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-input-placeholder")
-    var `ColonColon-webkit-input-placeholder`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-input-placeholder`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-progress-bar")
-    var `ColonColon-webkit-progress-bar`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-progress-bar`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-progress-inner-value")
-    var `ColonColon-webkit-progress-inner-value`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-progress-inner-value`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-progress-value")
-    var `ColonColon-webkit-progress-value`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-progress-value`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-slider-runnable-track")
-    var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::-webkit-slider-thumb")
-    var `ColonColon-webkit-slider-thumb`: js.UndefOr[CSSObject] = js.native
+    var `ColonColon-webkit-slider-thumb`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::after")
-    var ColonColonafter: js.UndefOr[CSSObject] = js.native
+    var ColonColonafter: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::backdrop")
-    var ColonColonbackdrop: js.UndefOr[CSSObject] = js.native
+    var ColonColonbackdrop: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::before")
-    var ColonColonbefore: js.UndefOr[CSSObject] = js.native
+    var ColonColonbefore: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::cue")
-    var ColonColoncue: js.UndefOr[CSSObject] = js.native
+    var ColonColoncue: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::cue-region")
-    var `ColonColoncue-region`: js.UndefOr[CSSObject] = js.native
+    var `ColonColoncue-region`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::first-letter")
-    var `ColonColonfirst-letter`: js.UndefOr[CSSObject] = js.native
+    var `ColonColonfirst-letter`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::first-line")
-    var `ColonColonfirst-line`: js.UndefOr[CSSObject] = js.native
+    var `ColonColonfirst-line`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::grammar-error")
-    var `ColonColongrammar-error`: js.UndefOr[CSSObject] = js.native
+    var `ColonColongrammar-error`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::marker")
-    var ColonColonmarker: js.UndefOr[CSSObject] = js.native
+    var ColonColonmarker: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::part")
-    var ColonColonpart: js.UndefOr[CSSObject] = js.native
+    var ColonColonpart: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::placeholder")
-    var ColonColonplaceholder: js.UndefOr[CSSObject] = js.native
+    var ColonColonplaceholder: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::selection")
-    var ColonColonselection: js.UndefOr[CSSObject] = js.native
+    var ColonColonselection: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::slotted")
-    var ColonColonslotted: js.UndefOr[CSSObject] = js.native
+    var ColonColonslotted: js.UndefOr[CSSObject] = js.undefined
     
     @JSName("::spelling-error")
-    var `ColonColonspelling-error`: js.UndefOr[CSSObject] = js.native
+    var `ColonColonspelling-error`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":active")
-    var Colonactive: js.UndefOr[CSSObject] = js.native
+    var Colonactive: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":after")
-    var Colonafter: js.UndefOr[CSSObject] = js.native
+    var Colonafter: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":any-link")
-    var `Colonany-link`: js.UndefOr[CSSObject] = js.native
+    var `Colonany-link`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":before")
-    var Colonbefore: js.UndefOr[CSSObject] = js.native
+    var Colonbefore: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":blank")
-    var Colonblank: js.UndefOr[CSSObject] = js.native
+    var Colonblank: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":checked")
-    var Colonchecked: js.UndefOr[CSSObject] = js.native
+    var Colonchecked: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":default")
-    var Colondefault: js.UndefOr[CSSObject] = js.native
+    var Colondefault: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":defined")
-    var Colondefined: js.UndefOr[CSSObject] = js.native
+    var Colondefined: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":dir")
-    var Colondir: js.UndefOr[CSSObject] = js.native
+    var Colondir: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":disabled")
-    var Colondisabled: js.UndefOr[CSSObject] = js.native
+    var Colondisabled: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":empty")
-    var Colonempty: js.UndefOr[CSSObject] = js.native
+    var Colonempty: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":enabled")
-    var Colonenabled: js.UndefOr[CSSObject] = js.native
+    var Colonenabled: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first")
-    var Colonfirst: js.UndefOr[CSSObject] = js.native
+    var Colonfirst: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-child")
-    var `Colonfirst-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-letter")
-    var `Colonfirst-letter`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-letter`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-line")
-    var `Colonfirst-line`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-line`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":first-of-type")
-    var `Colonfirst-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonfirst-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":focus")
-    var Colonfocus: js.UndefOr[CSSObject] = js.native
+    var Colonfocus: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":focus-visible")
-    var `Colonfocus-visible`: js.UndefOr[CSSObject] = js.native
+    var `Colonfocus-visible`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":focus-within")
-    var `Colonfocus-within`: js.UndefOr[CSSObject] = js.native
+    var `Colonfocus-within`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":fullscreen")
-    var Colonfullscreen: js.UndefOr[CSSObject] = js.native
+    var Colonfullscreen: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":has")
-    var Colonhas: js.UndefOr[CSSObject] = js.native
+    var Colonhas: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":host")
-    var Colonhost: js.UndefOr[CSSObject] = js.native
+    var Colonhost: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":host-context")
-    var `Colonhost-context`: js.UndefOr[CSSObject] = js.native
+    var `Colonhost-context`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":hover")
-    var Colonhover: js.UndefOr[CSSObject] = js.native
+    var Colonhover: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":in-range")
-    var `Colonin-range`: js.UndefOr[CSSObject] = js.native
+    var `Colonin-range`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":indeterminate")
-    var Colonindeterminate: js.UndefOr[CSSObject] = js.native
+    var Colonindeterminate: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":invalid")
-    var Coloninvalid: js.UndefOr[CSSObject] = js.native
+    var Coloninvalid: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":is")
-    var Colonis: js.UndefOr[CSSObject] = js.native
+    var Colonis: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":lang")
-    var Colonlang: js.UndefOr[CSSObject] = js.native
+    var Colonlang: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":last-child")
-    var `Colonlast-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonlast-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":last-of-type")
-    var `Colonlast-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonlast-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":left")
-    var Colonleft: js.UndefOr[CSSObject] = js.native
+    var Colonleft: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":link")
-    var Colonlink: js.UndefOr[CSSObject] = js.native
+    var Colonlink: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":matches()")
-    var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[CSSObject] = js.native
+    var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":not")
-    var Colonnot: js.UndefOr[CSSObject] = js.native
+    var Colonnot: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-child")
-    var `Colonnth-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-last-child")
-    var `Colonnth-last-child`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-last-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-last-of-type")
-    var `Colonnth-last-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-last-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":nth-of-type")
-    var `Colonnth-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colonnth-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":only-child")
-    var `Colononly-child`: js.UndefOr[CSSObject] = js.native
+    var `Colononly-child`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":only-of-type")
-    var `Colononly-of-type`: js.UndefOr[CSSObject] = js.native
+    var `Colononly-of-type`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":optional")
-    var Colonoptional: js.UndefOr[CSSObject] = js.native
+    var Colonoptional: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":out-of-range")
-    var `Colonout-of-range`: js.UndefOr[CSSObject] = js.native
+    var `Colonout-of-range`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":placeholder-shown")
-    var `Colonplaceholder-shown`: js.UndefOr[CSSObject] = js.native
+    var `Colonplaceholder-shown`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":read-only")
-    var `Colonread-only`: js.UndefOr[CSSObject] = js.native
+    var `Colonread-only`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":read-write")
-    var `Colonread-write`: js.UndefOr[CSSObject] = js.native
+    var `Colonread-write`: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":required")
-    var Colonrequired: js.UndefOr[CSSObject] = js.native
+    var Colonrequired: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":right")
-    var Colonright: js.UndefOr[CSSObject] = js.native
+    var Colonright: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":root")
-    var Colonroot: js.UndefOr[CSSObject] = js.native
+    var Colonroot: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":scope")
-    var Colonscope: js.UndefOr[CSSObject] = js.native
+    var Colonscope: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":target")
-    var Colontarget: js.UndefOr[CSSObject] = js.native
+    var Colontarget: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":valid")
-    var Colonvalid: js.UndefOr[CSSObject] = js.native
+    var Colonvalid: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":visited")
-    var Colonvisited: js.UndefOr[CSSObject] = js.native
+    var Colonvisited: js.UndefOr[CSSObject] = js.undefined
     
     @JSName(":where")
-    var Colonwhere: js.UndefOr[CSSObject] = js.native
+    var Colonwhere: js.UndefOr[CSSObject] = js.undefined
   }
   object CSSPseudosForCSSObject {
     
@@ -23666,12 +23675,12 @@ object mod {
     }
   }
   
-  @js.native
   trait ComponentSelector
-    extends _CSSInterpolation
+    extends StObject
+       with _CSSInterpolation
        with _Interpolation[js.Any] {
     
-    var __emotion_styles: js.Any = js.native
+    var __emotion_styles: js.Any
   }
   object ComponentSelector {
     
@@ -23697,7 +23706,7 @@ object mod {
   
   /* Rewritten from type alias, can be one of: 
     - scala.Null
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - scala.Boolean
     - scala.Double
     - java.lang.String
@@ -23706,21 +23715,39 @@ object mod {
     - typings.emotionUtils.mod.SerializedStyles
     - typings.emotionSerialize.mod.ArrayInterpolation[MP]
     - typings.emotionSerialize.mod.ObjectInterpolation[MP]
-    - typings.emotionSerialize.helperMod.Equal[
-  MP, 
-  js.UndefOr[scala.Nothing], 
-  scala.Nothing, 
-  typings.emotionSerialize.mod.FunctionInterpolation[MP]]
+    - typings.emotionSerialize.helperMod.Equal[MP, scala.Unit, scala.Nothing, typings.emotionSerialize.mod.FunctionInterpolation[MP]]
   */
   type Interpolation[MP] = js.UndefOr[
-    _Interpolation[MP] | (Equal[MP, js.UndefOr[scala.Nothing], scala.Nothing, FunctionInterpolation[MP]]) | Null | Boolean | Double | String | Keyframes | SerializedStyles
+    _Interpolation[MP] | (Equal[MP, Unit, scala.Nothing, FunctionInterpolation[MP]]) | Null | Boolean | Double | String | SerializedStyles
   ]
   
-  type Keyframes = Anim with String
-  
   @js.native
-  trait ObjectInterpolation[MP]
-    extends CSSOthersObject[MP]
+  trait Keyframes
+    extends StObject
+       with typings.std.String
+       with _CSSInterpolation
+       with _Interpolation[js.Any] {
+    
+    var anim: Double = js.native
+    
+    var name: String = js.native
+    
+    var styles: String = js.native
+  }
+  
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
+  - typings.emotionSerialize.mod.CSSOthersObject because Inheritance from two classes. Inlined  */ trait ObjectInterpolation[MP]
+    extends StObject
        with CSSPropertiesWithMultiValues
        with CSSPseudos[MP]
        with _Interpolation[MP]

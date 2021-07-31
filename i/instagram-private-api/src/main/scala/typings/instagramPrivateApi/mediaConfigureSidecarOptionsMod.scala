@@ -8,33 +8,31 @@ import typings.instagramPrivateApi.mediaConfigureOptionsMod.MediaLocation
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaConfigureSidecarOptionsMod {
   
-  @js.native
   trait MediaConfigureSidecarItem extends StObject {
     
-    var caption: js.UndefOr[Null] = js.native
+    var caption: js.UndefOr[Null] = js.undefined
     
-    var device: js.UndefOr[Androidversion | String] = js.native
+    var device: js.UndefOr[Androidversion | String] = js.undefined
     
-    var edits: js.UndefOr[Cropcenter | String] = js.native
+    var edits: js.UndefOr[Cropcenter | String] = js.undefined
     
-    var extra: js.UndefOr[Sourceheight | String] = js.native
+    var extra: js.UndefOr[Sourceheight | String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var source_type: js.UndefOr[String] = js.native
+    var source_type: js.UndefOr[String] = js.undefined
     
-    var timezone_offset: js.UndefOr[String] = js.native
+    var timezone_offset: js.UndefOr[String] = js.undefined
     
-    var upload_id: String = js.native
+    var upload_id: String
     
-    var usertags: js.UndefOr[PostingUsertags | String] = js.native
+    var usertags: js.UndefOr[PostingUsertags | String] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object MediaConfigureSidecarItem {
     
@@ -94,32 +92,31 @@ object mediaConfigureSidecarOptionsMod {
     }
   }
   
-  @js.native
   trait MediaConfigureSidecarOptions extends StObject {
     
-    var _csrftoken: js.UndefOr[String] = js.native
+    var _csrftoken: js.UndefOr[String] = js.undefined
     
-    var _uid: js.UndefOr[String] = js.native
+    var _uid: js.UndefOr[String] = js.undefined
     
-    var _uuid: js.UndefOr[String] = js.native
+    var _uuid: js.UndefOr[String] = js.undefined
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var children_metadata: js.Array[MediaConfigureSidecarItem] = js.native
+    var children_metadata: js.Array[MediaConfigureSidecarItem]
     
-    var client_sidecar_id: js.UndefOr[String] = js.native
+    var client_sidecar_id: js.UndefOr[String] = js.undefined
     
-    var device: js.UndefOr[Androidversion] = js.native
+    var device: js.UndefOr[Androidversion] = js.undefined
     
-    var device_id: js.UndefOr[String] = js.native
+    var device_id: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[MediaLocation | String] = js.native
+    var location: js.UndefOr[MediaLocation | String] = js.undefined
     
-    var source_type: js.UndefOr[String] = js.native
+    var source_type: js.UndefOr[String] = js.undefined
     
-    var timezone_offset: js.UndefOr[String] = js.native
+    var timezone_offset: js.UndefOr[String] = js.undefined
     
-    var upload_id: js.UndefOr[String] = js.native
+    var upload_id: js.UndefOr[String] = js.undefined
   }
   object MediaConfigureSidecarOptions {
     
@@ -206,22 +203,23 @@ object mediaConfigureSidecarOptionsMod {
     }
   }
   
-  @js.native
-  trait MediaConfigureSidecarVideoItem extends MediaConfigureSidecarItem {
+  trait MediaConfigureSidecarVideoItem
+    extends StObject
+       with MediaConfigureSidecarItem {
     
-    var audio_muted: js.UndefOr[String] = js.native
+    var audio_muted: js.UndefOr[String] = js.undefined
     
-    var clips: js.UndefOr[js.Array[Length] | String] = js.native
+    var clips: js.UndefOr[js.Array[Length] | String] = js.undefined
     
-    var date_time_original: js.UndefOr[String] = js.native
+    var date_time_original: js.UndefOr[String] = js.undefined
     
-    var filter_type: js.UndefOr[String] = js.native
+    var filter_type: js.UndefOr[String] = js.undefined
     
-    var length: String = js.native
+    var length: String
     
-    var poster_frame_index: js.UndefOr[String] = js.native
+    var poster_frame_index: js.UndefOr[String] = js.undefined
     
-    var video_result: js.UndefOr[String] = js.native
+    var video_result: js.UndefOr[String] = js.undefined
   }
   object MediaConfigureSidecarVideoItem {
     

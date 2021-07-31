@@ -2,39 +2,39 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference from one resource to another
   */
-@js.native
-trait Reference extends Element {
+trait Reference
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'display'.
     */
-  var _display: js.UndefOr[Element] = js.native
+  var _display: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'reference'.
     */
-  var _reference: js.UndefOr[Element] = js.native
+  var _reference: js.UndefOr[Element] = js.undefined
   
   /**
     * Text alternative for the resource
     */
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
   /**
     * Logical reference, when literal reference is not known
     */
-  var identifier: js.UndefOr[Identifier] = js.native
+  var identifier: js.UndefOr[Identifier] = js.undefined
   
   /**
     * Literal reference, Relative, internal or absolute URL
     */
-  var reference: js.UndefOr[String] = js.native
+  var reference: js.UndefOr[String] = js.undefined
 }
 object Reference {
   

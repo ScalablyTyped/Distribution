@@ -2,16 +2,14 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Record extends StObject {
   
   /**
     * The values returned in the record.
     */
-  var values: js.UndefOr[Row] = js.native
+  var values: js.UndefOr[Row] = js.undefined
 }
 object Record {
   

@@ -3,22 +3,21 @@ package typings.mqttPacket.mod
 import typings.mqttPacket.mqttPacketStrings.pingresp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPingrespPacket
-  extends IPacket
+  extends StObject
+     with IPacket
      with Packet {
   
   @JSName("cmd")
-  var cmd_IPingrespPacket: pingresp = js.native
+  var cmd_IPingrespPacket: pingresp
 }
 object IPingrespPacket {
   
   @scala.inline
-  def apply(cmd: pingresp): IPingrespPacket = {
-    val __obj = js.Dynamic.literal(cmd = cmd.asInstanceOf[js.Any])
+  def apply(): IPingrespPacket = {
+    val __obj = js.Dynamic.literal(cmd = "pingresp")
     __obj.asInstanceOf[IPingrespPacket]
   }
   

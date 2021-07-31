@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 import typings.devtoolsProtocol.mod.Protocol.Browser.BrowserContextID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBrowserContextsResponse extends StObject {
   
   /**
     * An array of browser context ids.
     */
-  var browserContextIds: js.Array[BrowserContextID] = js.native
+  var browserContextIds: js.Array[BrowserContextID]
 }
 object GetBrowserContextsResponse {
   

@@ -6,7 +6,6 @@ import typings.officeUiFabricReact.imageTypesMod.ImageLoadState
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageBaseMod {
@@ -57,10 +56,9 @@ object imageBaseMod {
     def defaultProps_=(x: ShouldFadeIn): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IImageState extends StObject {
     
-    var loadState: js.UndefOr[ImageLoadState] = js.native
+    var loadState: js.UndefOr[ImageLoadState] = js.undefined
   }
   object IImageState {
     

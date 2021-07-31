@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * library.googleapis.com/branch         metrics:         -
   * library.googleapis.com/book/borrowed_count
   */
-@js.native
 trait SchemaBilling extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait SchemaBilling extends StObject {
     * different monitored resource type. A metric can be used in at most one
     * consumer destination.
     */
-  var consumerDestinations: js.UndefOr[js.Array[SchemaBillingDestination]] = js.native
+  var consumerDestinations: js.UndefOr[js.Array[SchemaBillingDestination]] = js.undefined
 }
 object SchemaBilling {
   

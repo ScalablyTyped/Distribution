@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OcrRequest extends StObject {
   
-  var ocrLanguage: js.UndefOr[String] = js.native
+  var ocrLanguage: js.UndefOr[String] = js.undefined
   
-  var pageSelection: js.UndefOr[String] = js.native
+  var pageSelection: js.UndefOr[String] = js.undefined
   
-  var setPageOrientation: js.UndefOr[String] = js.native
+  var setPageOrientation: js.UndefOr[String] = js.undefined
   
-  var showFrames: js.UndefOr[String] = js.native
+  var showFrames: js.UndefOr[String] = js.undefined
   
-  var showText: js.UndefOr[String] = js.native
+  var showText: js.UndefOr[String] = js.undefined
   
-  var skipPagesHavingExistingExtractableText: js.UndefOr[String] = js.native
+  var skipPagesHavingExistingExtractableText: js.UndefOr[String] = js.undefined
 }
 object OcrRequest {
   

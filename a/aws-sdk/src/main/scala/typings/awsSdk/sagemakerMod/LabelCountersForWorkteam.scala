@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelCountersForWorkteam extends StObject {
   
   /**
     * The total number of data objects labeled by a human worker.
     */
-  var HumanLabeled: js.UndefOr[LabelCounter] = js.native
+  var HumanLabeled: js.UndefOr[LabelCounter] = js.undefined
   
   /**
     * The total number of data objects that need to be labeled by a human worker.
     */
-  var PendingHuman: js.UndefOr[LabelCounter] = js.native
+  var PendingHuman: js.UndefOr[LabelCounter] = js.undefined
   
   /**
     * The total number of tasks in the labeling job.
     */
-  var Total: js.UndefOr[LabelCounter] = js.native
+  var Total: js.UndefOr[LabelCounter] = js.undefined
 }
 object LabelCountersForWorkteam {
   

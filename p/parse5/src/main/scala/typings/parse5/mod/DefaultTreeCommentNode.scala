@@ -3,33 +3,33 @@ package typings.parse5.mod
 import typings.parse5.parse5Strings.Numbersigncomment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DefaultTreeCommentNode extends DefaultTreeChildNode {
+trait DefaultTreeCommentNode
+  extends StObject
+     with DefaultTreeChildNode {
   
   /**
     * Comment text.
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * The name of the node.
     */
   @JSName("nodeName")
-  var nodeName_DefaultTreeCommentNode: Numbersigncomment = js.native
+  var nodeName_DefaultTreeCommentNode: Numbersigncomment
   
   /**
     * Comment source code location info. Available if location info is enabled via {@link ParserOptions}.
     */
-  var sourceCodeLocation: js.UndefOr[Location] = js.native
+  var sourceCodeLocation: js.UndefOr[Location] = js.undefined
 }
 object DefaultTreeCommentNode {
   
   @scala.inline
-  def apply(data: String, nodeName: Numbersigncomment, parentNode: DefaultTreeParentNode): DefaultTreeCommentNode = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], nodeName = nodeName.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any])
+  def apply(data: String, parentNode: DefaultTreeParentNode): DefaultTreeCommentNode = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], nodeName = "#comment", parentNode = parentNode.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultTreeCommentNode]
   }
   

@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GainOptions extends AudioNodeOptions {
+trait GainOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var gain: js.UndefOr[Double] = js.native
+  var gain: js.UndefOr[Double] = js.undefined
 }
 object GainOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstallToRemoteAccessSessionRequest extends StObject {
   
   /**
     * The ARN of the app about which you are requesting information.
     */
-  var appArn: AmazonResourceName = js.native
+  var appArn: AmazonResourceName
   
   /**
     * The Amazon Resource Name (ARN) of the remote access session about which you are requesting information.
     */
-  var remoteAccessSessionArn: AmazonResourceName = js.native
+  var remoteAccessSessionArn: AmazonResourceName
 }
 object InstallToRemoteAccessSessionRequest {
   

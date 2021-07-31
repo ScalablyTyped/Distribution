@@ -3,21 +3,19 @@ package typings.angularCore.anon
 import typings.angularCore.helpersMod.HelperFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
-  var node: typings.typescript.mod.Node | Null = js.native
+  var node: typings.typescript.mod.Node | Null
   
-  var requiredHelpers: js.UndefOr[js.Array[HelperFunction]] = js.native
+  var requiredHelpers: js.UndefOr[js.Array[HelperFunction]] = js.undefined
 }
 object Node {
   
   @scala.inline
   def apply(): Node = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(node = null)
     __obj.asInstanceOf[Node]
   }
   

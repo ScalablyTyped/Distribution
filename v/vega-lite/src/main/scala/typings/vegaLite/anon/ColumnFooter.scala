@@ -2,23 +2,21 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnFooter extends StObject {
   
-  var columnFooter: js.UndefOr[Double] = js.native
+  var columnFooter: js.UndefOr[Double] = js.undefined
   
-  var columnHeader: js.UndefOr[Double] = js.native
+  var columnHeader: js.UndefOr[Double] = js.undefined
   
-  var columnTitle: js.UndefOr[Double] = js.native
+  var columnTitle: js.UndefOr[Double] = js.undefined
   
-  var rowFooter: js.UndefOr[Double] = js.native
+  var rowFooter: js.UndefOr[Double] = js.undefined
   
-  var rowHeader: js.UndefOr[Double] = js.native
+  var rowHeader: js.UndefOr[Double] = js.undefined
   
-  var rowTitle: js.UndefOr[Double] = js.native
+  var rowTitle: js.UndefOr[Double] = js.undefined
 }
 object ColumnFooter {
   

@@ -3,13 +3,11 @@ package typings.aliApp.anon
 import typings.aliApp.my.Beacon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Beacons extends StObject {
   
-  var beacons: js.Array[Beacon] = js.native
+  var beacons: js.Array[Beacon]
 }
 object Beacons {
   

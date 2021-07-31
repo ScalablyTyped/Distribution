@@ -102,204 +102,202 @@ import typings.uifabricUtilities.createRefMod.IRefObject
 import typings.uifabricUtilities.icomponentasMod.IComponentAs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<office-ui-fabric-react.office-ui-fabric-react/lib/components/Toggle/Toggle.types.IToggleProps> */
-@js.native
 trait ReadonlyIToggleProps extends StObject {
   
-  val about: js.UndefOr[String] = js.native
+  val about: js.UndefOr[String] = js.undefined
   
-  val accessKey: js.UndefOr[String] = js.native
+  val accessKey: js.UndefOr[String] = js.undefined
   
-  val `aria-activedescendant`: js.UndefOr[String] = js.native
+  val `aria-activedescendant`: js.UndefOr[String] = js.undefined
   
-  val `aria-atomic`: js.UndefOr[Boolean] = js.native
+  val `aria-atomic`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.native
+  val `aria-autocomplete`: js.UndefOr[none | `inline` | list | both] = js.undefined
   
-  val `aria-busy`: js.UndefOr[Boolean] = js.native
+  val `aria-busy`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-checked`: js.UndefOr[Boolean | mixed] = js.native
+  val `aria-checked`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  val `aria-colcount`: js.UndefOr[Double] = js.native
+  val `aria-colcount`: js.UndefOr[Double] = js.undefined
   
-  val `aria-colindex`: js.UndefOr[Double] = js.native
+  val `aria-colindex`: js.UndefOr[Double] = js.undefined
   
-  val `aria-colspan`: js.UndefOr[Double] = js.native
+  val `aria-colspan`: js.UndefOr[Double] = js.undefined
   
-  val `aria-controls`: js.UndefOr[String] = js.native
+  val `aria-controls`: js.UndefOr[String] = js.undefined
   
-  val `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.native
+  val `aria-current`: js.UndefOr[Boolean | page | step | location | date | time] = js.undefined
   
-  val `aria-describedby`: js.UndefOr[String] = js.native
+  val `aria-describedby`: js.UndefOr[String] = js.undefined
   
-  val `aria-details`: js.UndefOr[String] = js.native
+  val `aria-details`: js.UndefOr[String] = js.undefined
   
-  val `aria-disabled`: js.UndefOr[Boolean] = js.native
+  val `aria-disabled`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.native
+  val `aria-dropeffect`: js.UndefOr[none | copy | execute | link | move | popup] = js.undefined
   
-  val `aria-errormessage`: js.UndefOr[String] = js.native
+  val `aria-errormessage`: js.UndefOr[String] = js.undefined
   
-  val `aria-expanded`: js.UndefOr[Boolean] = js.native
+  val `aria-expanded`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-flowto`: js.UndefOr[String] = js.native
+  val `aria-flowto`: js.UndefOr[String] = js.undefined
   
-  val `aria-grabbed`: js.UndefOr[Boolean] = js.native
+  val `aria-grabbed`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.native
+  val `aria-haspopup`: js.UndefOr[Boolean | menu | listbox | tree | grid | dialog] = js.undefined
   
-  val `aria-hidden`: js.UndefOr[Boolean] = js.native
+  val `aria-hidden`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.native
+  val `aria-invalid`: js.UndefOr[Boolean | grammar | spelling] = js.undefined
   
-  val `aria-keyshortcuts`: js.UndefOr[String] = js.native
+  val `aria-keyshortcuts`: js.UndefOr[String] = js.undefined
   
-  val `aria-label`: js.UndefOr[String] = js.native
+  val `aria-label`: js.UndefOr[String] = js.undefined
   
-  val `aria-labelledby`: js.UndefOr[String] = js.native
+  val `aria-labelledby`: js.UndefOr[String] = js.undefined
   
-  val `aria-level`: js.UndefOr[Double] = js.native
+  val `aria-level`: js.UndefOr[Double] = js.undefined
   
-  val `aria-live`: js.UndefOr[off | assertive | polite] = js.native
+  val `aria-live`: js.UndefOr[off | assertive | polite] = js.undefined
   
-  val `aria-modal`: js.UndefOr[Boolean] = js.native
+  val `aria-modal`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-multiline`: js.UndefOr[Boolean] = js.native
+  val `aria-multiline`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-multiselectable`: js.UndefOr[Boolean] = js.native
+  val `aria-multiselectable`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-orientation`: js.UndefOr[horizontal | vertical] = js.native
+  val `aria-orientation`: js.UndefOr[horizontal | vertical] = js.undefined
   
-  val `aria-owns`: js.UndefOr[String] = js.native
+  val `aria-owns`: js.UndefOr[String] = js.undefined
   
-  val `aria-placeholder`: js.UndefOr[String] = js.native
+  val `aria-placeholder`: js.UndefOr[String] = js.undefined
   
-  val `aria-posinset`: js.UndefOr[Double] = js.native
+  val `aria-posinset`: js.UndefOr[Double] = js.undefined
   
-  val `aria-pressed`: js.UndefOr[Boolean | mixed] = js.native
+  val `aria-pressed`: js.UndefOr[Boolean | mixed] = js.undefined
   
-  val `aria-readonly`: js.UndefOr[Boolean] = js.native
+  val `aria-readonly`: js.UndefOr[Boolean] = js.undefined
   
   val `aria-relevant`: js.UndefOr[
     additions | (`additions removals`) | (`additions text`) | all | removals | (`removals additions`) | (`removals text`) | text | (`text additions`) | (`text removals`)
-  ] = js.native
+  ] = js.undefined
   
-  val `aria-required`: js.UndefOr[Boolean] = js.native
+  val `aria-required`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-roledescription`: js.UndefOr[String] = js.native
+  val `aria-roledescription`: js.UndefOr[String] = js.undefined
   
-  val `aria-rowcount`: js.UndefOr[Double] = js.native
+  val `aria-rowcount`: js.UndefOr[Double] = js.undefined
   
-  val `aria-rowindex`: js.UndefOr[Double] = js.native
+  val `aria-rowindex`: js.UndefOr[Double] = js.undefined
   
-  val `aria-rowspan`: js.UndefOr[Double] = js.native
+  val `aria-rowspan`: js.UndefOr[Double] = js.undefined
   
-  val `aria-selected`: js.UndefOr[Boolean] = js.native
+  val `aria-selected`: js.UndefOr[Boolean] = js.undefined
   
-  val `aria-setsize`: js.UndefOr[Double] = js.native
+  val `aria-setsize`: js.UndefOr[Double] = js.undefined
   
-  val `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.native
+  val `aria-sort`: js.UndefOr[none | ascending | descending | other] = js.undefined
   
-  val `aria-valuemax`: js.UndefOr[Double] = js.native
+  val `aria-valuemax`: js.UndefOr[Double] = js.undefined
   
-  val `aria-valuemin`: js.UndefOr[Double] = js.native
+  val `aria-valuemin`: js.UndefOr[Double] = js.undefined
   
-  val `aria-valuenow`: js.UndefOr[Double] = js.native
+  val `aria-valuenow`: js.UndefOr[Double] = js.undefined
   
-  val `aria-valuetext`: js.UndefOr[String] = js.native
+  val `aria-valuetext`: js.UndefOr[String] = js.undefined
   
-  val ariaLabel: js.UndefOr[String] = js.native
+  val ariaLabel: js.UndefOr[String] = js.undefined
   
-  val as: js.UndefOr[IComponentAs[HTMLAttributes[HTMLElement]]] = js.native
+  val as: js.UndefOr[IComponentAs[HTMLAttributes[HTMLElement]]] = js.undefined
   
-  val autoCapitalize: js.UndefOr[String] = js.native
+  val autoCapitalize: js.UndefOr[String] = js.undefined
   
-  val autoCorrect: js.UndefOr[String] = js.native
+  val autoCorrect: js.UndefOr[String] = js.undefined
   
-  val autoSave: js.UndefOr[String] = js.native
+  val autoSave: js.UndefOr[String] = js.undefined
   
-  val checked: js.UndefOr[Boolean] = js.native
+  val checked: js.UndefOr[Boolean] = js.undefined
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val className: js.UndefOr[String] = js.native
+  val className: js.UndefOr[String] = js.undefined
   
-  val color: js.UndefOr[String] = js.native
+  val color: js.UndefOr[String] = js.undefined
   
-  val componentRef: js.UndefOr[IRefObject[IToggle]] = js.native
+  val componentRef: js.UndefOr[IRefObject[IToggle]] = js.undefined
   
-  val contentEditable: js.UndefOr[Booleanish | inherit] = js.native
+  val contentEditable: js.UndefOr[Booleanish | inherit] = js.undefined
   
-  val contextMenu: js.UndefOr[String] = js.native
+  val contextMenu: js.UndefOr[String] = js.undefined
   
-  val dangerouslySetInnerHTML: js.UndefOr[Html] = js.native
+  val dangerouslySetInnerHTML: js.UndefOr[Html] = js.undefined
   
-  val datatype: js.UndefOr[String] = js.native
+  val datatype: js.UndefOr[String] = js.undefined
   
-  val defaultChecked: js.UndefOr[Boolean] = js.native
+  val defaultChecked: js.UndefOr[Boolean] = js.undefined
   
-  val defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.native
+  val defaultValue: js.UndefOr[String | Double | js.Array[String]] = js.undefined
   
-  val dir: js.UndefOr[String] = js.native
+  val dir: js.UndefOr[String] = js.undefined
   
-  val disabled: js.UndefOr[Boolean] = js.native
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val draggable: js.UndefOr[Booleanish] = js.native
+  val draggable: js.UndefOr[Booleanish] = js.undefined
   
-  val hidden: js.UndefOr[Boolean] = js.native
+  val hidden: js.UndefOr[Boolean] = js.undefined
   
-  val id: js.UndefOr[String] = js.native
+  val id: js.UndefOr[String] = js.undefined
   
-  val inlineLabel: js.UndefOr[Boolean] = js.native
+  val inlineLabel: js.UndefOr[Boolean] = js.undefined
   
-  val inlist: js.UndefOr[js.Any] = js.native
+  val inlist: js.UndefOr[js.Any] = js.undefined
   
-  val inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  val inputMode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
-  val is: js.UndefOr[String] = js.native
+  val is: js.UndefOr[String] = js.undefined
   
-  val itemID: js.UndefOr[String] = js.native
+  val itemID: js.UndefOr[String] = js.undefined
   
-  val itemProp: js.UndefOr[String] = js.native
+  val itemProp: js.UndefOr[String] = js.undefined
   
-  val itemRef: js.UndefOr[String] = js.native
+  val itemRef: js.UndefOr[String] = js.undefined
   
-  val itemScope: js.UndefOr[Boolean] = js.native
+  val itemScope: js.UndefOr[Boolean] = js.undefined
   
-  val itemType: js.UndefOr[String] = js.native
+  val itemType: js.UndefOr[String] = js.undefined
   
-  val keytipProps: js.UndefOr[IKeytipProps] = js.native
+  val keytipProps: js.UndefOr[IKeytipProps] = js.undefined
   
-  val label: js.UndefOr[String | Element] = js.native
+  val label: js.UndefOr[String | Element] = js.undefined
   
-  val lang: js.UndefOr[String] = js.native
+  val lang: js.UndefOr[String] = js.undefined
   
-  val offAriaLabel: js.UndefOr[String] = js.native
+  val offAriaLabel: js.UndefOr[String] = js.undefined
   
-  val offText: js.UndefOr[String] = js.native
+  val offText: js.UndefOr[String] = js.undefined
   
-  val onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onAbort: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.native
+  val onAnimationEnd: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.undefined
   
-  val onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.native
+  val onAnimationIteration: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.undefined
   
-  val onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.native
+  val onAnimationStart: js.UndefOr[AnimationEventHandler[HTMLElement]] = js.undefined
   
-  val onAriaLabel: js.UndefOr[String] = js.native
+  val onAriaLabel: js.UndefOr[String] = js.undefined
   
-  val onAuxClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onAuxClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onBeforeInput: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
+  val onBeforeInput: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
-  val onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.native
+  val onBlur: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
   
-  val onCanPlay: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onCanPlay: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onCanPlayThrough: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
   val onChange: js.UndefOr[
     js.Function2[
@@ -307,191 +305,191 @@ trait ReadonlyIToggleProps extends StObject {
       /* checked */ js.UndefOr[Boolean], 
       scala.Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  val onChanged: js.UndefOr[js.Function1[/* checked */ Boolean, scala.Unit]] = js.native
+  val onChanged: js.UndefOr[js.Function1[/* checked */ Boolean, scala.Unit]] = js.undefined
   
-  val onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLElement]] = js.native
+  val onCompositionEnd: js.UndefOr[CompositionEventHandler[HTMLElement]] = js.undefined
   
-  val onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLElement]] = js.native
+  val onCompositionStart: js.UndefOr[CompositionEventHandler[HTMLElement]] = js.undefined
   
-  val onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLElement]] = js.native
+  val onCompositionUpdate: js.UndefOr[CompositionEventHandler[HTMLElement]] = js.undefined
   
-  val onContextMenu: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onContextMenu: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onCopy: js.UndefOr[ClipboardEventHandler[HTMLElement]] = js.native
+  val onCopy: js.UndefOr[ClipboardEventHandler[HTMLElement]] = js.undefined
   
-  val onCut: js.UndefOr[ClipboardEventHandler[HTMLElement]] = js.native
+  val onCut: js.UndefOr[ClipboardEventHandler[HTMLElement]] = js.undefined
   
-  val onDoubleClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onDoubleClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onDrag: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDrag: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDragEnd: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDragEnd: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDragEnter: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDragEnter: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDragExit: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDragExit: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDragLeave: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDragLeave: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDragOver: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDragOver: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDragStart: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDragStart: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDrop: js.UndefOr[DragEventHandler[HTMLElement]] = js.native
+  val onDrop: js.UndefOr[DragEventHandler[HTMLElement]] = js.undefined
   
-  val onDurationChange: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onDurationChange: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onEmptied: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onEmptied: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onEncrypted: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onEncrypted: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onEnded: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onEnded: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onError: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onError: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.native
+  val onFocus: js.UndefOr[FocusEventHandler[HTMLElement]] = js.undefined
   
-  val onInput: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
+  val onInput: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
-  val onInvalid: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
+  val onInvalid: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
-  val onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+  val onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   
-  val onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+  val onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   
-  val onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+  val onKeyUp: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
   
-  val onLoad: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onLoad: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onLoadStart: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onLoadStart: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onLoadedData: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onLoadedData: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onLoadedMetadata: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onMouseDown: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onMouseDown: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onMouseMove: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onMouseMove: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onMouseOut: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onMouseOut: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onMouseOver: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onMouseOver: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onMouseUp: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+  val onMouseUp: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
   
-  val onPaste: js.UndefOr[ClipboardEventHandler[HTMLElement]] = js.native
+  val onPaste: js.UndefOr[ClipboardEventHandler[HTMLElement]] = js.undefined
   
-  val onPause: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onPause: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onPlay: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onPlay: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onPlaying: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onPlaying: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerCancel: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerCancel: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerDown: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerDown: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerEnter: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerEnter: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerLeave: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerLeave: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerMove: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerMove: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerOut: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerOut: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerOver: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerOver: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onPointerUp: js.UndefOr[PointerEventHandler[HTMLElement]] = js.native
+  val onPointerUp: js.UndefOr[PointerEventHandler[HTMLElement]] = js.undefined
   
-  val onProgress: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onProgress: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onRateChange: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onRateChange: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onReset: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
+  val onReset: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
-  val onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.native
+  val onScroll: js.UndefOr[UIEventHandler[HTMLElement]] = js.undefined
   
-  val onSeeked: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onSeeked: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onSeeking: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onSeeking: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onSelect: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onSelect: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onStalled: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onStalled: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onSubmit: js.UndefOr[FormEventHandler[HTMLElement]] = js.native
+  val onSubmit: js.UndefOr[FormEventHandler[HTMLElement]] = js.undefined
   
-  val onSuspend: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onSuspend: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onText: js.UndefOr[String] = js.native
+  val onText: js.UndefOr[String] = js.undefined
   
-  val onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onTimeUpdate: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onTouchCancel: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+  val onTouchCancel: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
   
-  val onTouchEnd: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+  val onTouchEnd: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
   
-  val onTouchMove: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+  val onTouchMove: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
   
-  val onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.native
+  val onTouchStart: js.UndefOr[TouchEventHandler[HTMLElement]] = js.undefined
   
-  val onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLElement]] = js.native
+  val onTransitionEnd: js.UndefOr[TransitionEventHandler[HTMLElement]] = js.undefined
   
-  val onVolumeChange: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onVolumeChange: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onWaiting: js.UndefOr[ReactEventHandler[HTMLElement]] = js.native
+  val onWaiting: js.UndefOr[ReactEventHandler[HTMLElement]] = js.undefined
   
-  val onWheel: js.UndefOr[WheelEventHandler[HTMLElement]] = js.native
+  val onWheel: js.UndefOr[WheelEventHandler[HTMLElement]] = js.undefined
   
-  val placeholder: js.UndefOr[String] = js.native
+  val placeholder: js.UndefOr[String] = js.undefined
   
-  val prefix: js.UndefOr[String] = js.native
+  val prefix: js.UndefOr[String] = js.undefined
   
-  val property: js.UndefOr[String] = js.native
+  val property: js.UndefOr[String] = js.undefined
   
-  val radioGroup: js.UndefOr[String] = js.native
+  val radioGroup: js.UndefOr[String] = js.undefined
   
-  val resource: js.UndefOr[String] = js.native
+  val resource: js.UndefOr[String] = js.undefined
   
-  val results: js.UndefOr[Double] = js.native
+  val results: js.UndefOr[Double] = js.undefined
   
-  val role: js.UndefOr[checkbox | switch | menuitemcheckbox] = js.native
+  val role: js.UndefOr[checkbox | switch | menuitemcheckbox] = js.undefined
   
-  val security: js.UndefOr[String] = js.native
+  val security: js.UndefOr[String] = js.undefined
   
-  val slot: js.UndefOr[String] = js.native
+  val slot: js.UndefOr[String] = js.undefined
   
-  val spellCheck: js.UndefOr[Booleanish] = js.native
+  val spellCheck: js.UndefOr[Booleanish] = js.undefined
   
-  val style: js.UndefOr[CSSProperties] = js.native
+  val style: js.UndefOr[CSSProperties] = js.undefined
   
-  val styles: js.UndefOr[IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles]] = js.native
+  val styles: js.UndefOr[IStyleFunctionOrObject[IToggleStyleProps, IToggleStyles]] = js.undefined
   
-  val suppressContentEditableWarning: js.UndefOr[Boolean] = js.native
+  val suppressContentEditableWarning: js.UndefOr[Boolean] = js.undefined
   
-  val suppressHydrationWarning: js.UndefOr[Boolean] = js.native
+  val suppressHydrationWarning: js.UndefOr[Boolean] = js.undefined
   
-  val tabIndex: js.UndefOr[Double] = js.native
+  val tabIndex: js.UndefOr[Double] = js.undefined
   
-  val theme: js.UndefOr[ITheme] = js.native
+  val theme: js.UndefOr[ITheme] = js.undefined
   
-  val title: js.UndefOr[String] = js.native
+  val title: js.UndefOr[String] = js.undefined
   
-  val translate: js.UndefOr[yes | no] = js.native
+  val translate: js.UndefOr[yes | no] = js.undefined
   
-  val typeof: js.UndefOr[String] = js.native
+  val typeof: js.UndefOr[String] = js.undefined
   
-  val unselectable: js.UndefOr[on | off] = js.native
+  val unselectable: js.UndefOr[on | off] = js.undefined
   
-  val vocab: js.UndefOr[String] = js.native
+  val vocab: js.UndefOr[String] = js.undefined
 }
 object ReadonlyIToggleProps {
   

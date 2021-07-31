@@ -2,27 +2,25 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options for private clusters.
   */
-@js.native
 trait SchemaPrivateClusterConfig extends StObject {
   
   /**
     * Whether the master&#39;s internal IP address is used as the cluster
     * endpoint.
     */
-  var enablePrivateEndpoint: js.UndefOr[Boolean] = js.native
+  var enablePrivateEndpoint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether nodes have internal IP addresses only. If enabled, all nodes are
     * given only RFC 1918 private addresses and communicate with the master via
     * private networking.
     */
-  var enablePrivateNodes: js.UndefOr[Boolean] = js.native
+  var enablePrivateNodes: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IP range in CIDR notation to use for the hosted master network. This
@@ -30,19 +28,19 @@ trait SchemaPrivateClusterConfig extends StObject {
     * set of masters, as well as the ILB VIP. This range must not overlap with
     * any other ranges in use within the cluster&#39;s network.
     */
-  var masterIpv4CidrBlock: js.UndefOr[String] = js.native
+  var masterIpv4CidrBlock: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The internal IP address of this cluster&#39;s master
     * endpoint.
     */
-  var privateEndpoint: js.UndefOr[String] = js.native
+  var privateEndpoint: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The external IP address of this cluster&#39;s master
     * endpoint.
     */
-  var publicEndpoint: js.UndefOr[String] = js.native
+  var publicEndpoint: js.UndefOr[String] = js.undefined
 }
 object SchemaPrivateClusterConfig {
   

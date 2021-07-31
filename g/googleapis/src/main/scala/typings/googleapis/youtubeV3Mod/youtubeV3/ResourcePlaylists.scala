@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Playlists")
@@ -31,7 +30,7 @@ class ResourcePlaylists protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePlaylistsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourcePlaylistsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -63,7 +62,7 @@ class ResourcePlaylists protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaPlaylist] = js.native
   def insert(callback: BodyResponseCallback[SchemaPlaylist]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlaylist] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlaylist] = js.native
   def insert(params: ParamsResourcePlaylistsInsert): GaxiosPromise[SchemaPlaylist] = js.native
   def insert(params: ParamsResourcePlaylistsInsert, callback: BodyResponseCallback[SchemaPlaylist]): Unit = js.native
   def insert(
@@ -103,7 +102,7 @@ class ResourcePlaylists protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaPlaylistListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaPlaylistListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlaylistListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlaylistListResponse] = js.native
   def list(params: ParamsResourcePlaylistsList): GaxiosPromise[SchemaPlaylistListResponse] = js.native
   def list(params: ParamsResourcePlaylistsList, callback: BodyResponseCallback[SchemaPlaylistListResponse]): Unit = js.native
   def list(
@@ -135,7 +134,7 @@ class ResourcePlaylists protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaPlaylist] = js.native
   def update(callback: BodyResponseCallback[SchemaPlaylist]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlaylist] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlaylist] = js.native
   def update(params: ParamsResourcePlaylistsUpdate): GaxiosPromise[SchemaPlaylist] = js.native
   def update(params: ParamsResourcePlaylistsUpdate, callback: BodyResponseCallback[SchemaPlaylist]): Unit = js.native
   def update(

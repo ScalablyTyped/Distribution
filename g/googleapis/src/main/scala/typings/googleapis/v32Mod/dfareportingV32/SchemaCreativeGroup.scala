@@ -2,32 +2,30 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains properties of a creative group.
   */
-@js.native
 trait SchemaCreativeGroup extends StObject {
   
   /**
     * Account ID of this creative group. This is a read-only field that can be
     * left blank.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Advertiser ID of this creative group. This is a required field on
     * insertion.
     */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /**
     * Dimension value for the ID of the advertiser. This is a read-only,
     * auto-generated field.
     */
-  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.native
+  var advertiserIdDimensionValue: js.UndefOr[SchemaDimensionValue] = js.undefined
   
   /**
     * Subgroup of the creative group. Assign your creative groups to a subgroup
@@ -35,31 +33,31 @@ trait SchemaCreativeGroup extends StObject {
     * insertion and is read-only after insertion. Acceptable values are 1 to 2,
     * inclusive.
     */
-  var groupNumber: js.UndefOr[Double] = js.native
+  var groupNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * ID of this creative group. This is a read-only, auto-generated field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#creativeGroup&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this creative group. This is a required field and must be less
     * than 256 characters long and unique among creative groups of the same
     * advertiser.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Subaccount ID of this creative group. This is a read-only field that can
     * be left blank.
     */
-  var subaccountId: js.UndefOr[String] = js.native
+  var subaccountId: js.UndefOr[String] = js.undefined
 }
 object SchemaCreativeGroup {
   

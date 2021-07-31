@@ -7,7 +7,6 @@ import typings.angularAnimations.mod.NoopAnimationPlayer
 import typings.angularAnimations.mod.ɵStyleData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingTestingMod {
@@ -38,7 +37,7 @@ object testingTestingMod {
       duration: Double,
       delay: Double,
       easing: String,
-      previousPlayers: js.Array[_]
+      previousPlayers: js.Array[js.Any]
     ) = this()
     
     var __finished: js.Any = js.native
@@ -62,7 +61,7 @@ object testingTestingMod {
     
     var keyframes: js.Array[StringDictionary[String | Double]] = js.native
     
-    var previousPlayers: js.Array[_] = js.native
+    var previousPlayers: js.Array[js.Any] = js.native
     
     var previousStyles: StringDictionary[String | Double] = js.native
   }

@@ -7,20 +7,18 @@ import typings.webappsecCredentialManagement.webappsecCredentialManagementString
 import typings.webappsecCredentialManagement.webappsecCredentialManagementStrings.required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://w3c.github.io/webauthn/#dictdef-authenticatorselectioncriteria}
   */
-@js.native
 trait AuthenticatorSelectionCriteria extends StObject {
   
-  var authenticatorAttachment: js.UndefOr[platform | `cross-platform`] = js.native
+  var authenticatorAttachment: js.UndefOr[platform | `cross-platform`] = js.undefined
   
-  var requireResidentKey: js.UndefOr[Boolean] = js.native
+  var requireResidentKey: js.UndefOr[Boolean] = js.undefined
   
-  var userVerification: js.UndefOr[required | preferred | discouraged] = js.native
+  var userVerification: js.UndefOr[required | preferred | discouraged] = js.undefined
 }
 object AuthenticatorSelectionCriteria {
   

@@ -7,85 +7,75 @@ import typings.proxyVerifier.proxyVerifierBooleans.`true`
 import typings.request.mod.CoreOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("proxy-verifier", "test")
+  @JSImport("proxy-verifier", JSImport.Namespace)
   @js.native
-  def test(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]): Unit = js.native
-  @JSImport("proxy-verifier", "test")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def test(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def test(
     proxy: Proxy,
     options: TestOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ CustomTestResult, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("proxy-verifier", "testAll")
-  @js.native
-  def testAll(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]): Unit = js.native
-  @JSImport("proxy-verifier", "testAll")
-  @js.native
+  @scala.inline
+  def testAll(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def testAll(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ AllResults, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAll")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("proxy-verifier", "testAnonymityLevel")
-  @js.native
-  def testAnonymityLevel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]): Unit = js.native
-  @JSImport("proxy-verifier", "testAnonymityLevel")
-  @js.native
+  @scala.inline
+  def testAnonymityLevel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def testAnonymityLevel(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ String, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testAnonymityLevel")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("proxy-verifier", "testProtocol")
-  @js.native
-  def testProtocol(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = js.native
-  @JSImport("proxy-verifier", "testProtocol")
-  @js.native
+  @scala.inline
+  def testProtocol(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def testProtocol(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocol")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("proxy-verifier", "testProtocols")
-  @js.native
-  def testProtocols(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]): Unit = js.native
-  @JSImport("proxy-verifier", "testProtocols")
-  @js.native
+  @scala.inline
+  def testProtocols(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def testProtocols(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ ProtocolResult, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testProtocols")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("proxy-verifier", "testTunnel")
-  @js.native
-  def testTunnel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = js.native
-  @JSImport("proxy-verifier", "testTunnel")
-  @js.native
+  @scala.inline
+  def testTunnel(proxy: Proxy, cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def testTunnel(
     proxy: Proxy,
     options: CoreOptions,
     cb: js.Function2[/* error */ js.Any, /* result */ Result, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("testTunnel")(proxy.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait AllResults extends StObject {
     
-    var anonymityLevel: js.UndefOr[AnonymityLevel] = js.native
+    var anonymityLevel: js.UndefOr[AnonymityLevel] = js.undefined
     
-    var protocols: js.UndefOr[ProtocolResult] = js.native
+    var protocols: js.UndefOr[ProtocolResult] = js.undefined
     
-    var tunnel: js.UndefOr[Result] = js.native
+    var tunnel: js.UndefOr[Result] = js.undefined
   }
   object AllResults {
     
@@ -136,14 +126,13 @@ object mod {
     def transparent: typings.proxyVerifier.proxyVerifierStrings.transparent = "transparent".asInstanceOf[typings.proxyVerifier.proxyVerifierStrings.transparent]
   }
   
-  @js.native
   trait CustomTestBaseResult extends StObject {
     
-    var data: String = js.native
+    var data: String
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var status: Double = js.native
+    var status: Double
   }
   object CustomTestBaseResult {
     
@@ -167,20 +156,20 @@ object mod {
     }
   }
   
-  @js.native
   trait CustomTestNotWorkingResult
-    extends CustomTestBaseResult
+    extends StObject
+       with CustomTestBaseResult
        with CustomTestResult {
     
-    var error: Code = js.native
+    var error: Code
     
-    var ok: `false` = js.native
+    var ok: `false`
   }
   object CustomTestNotWorkingResult {
     
     @scala.inline
-    def apply(data: String, error: Code, headers: Headers, ok: `false`, status: Double): CustomTestNotWorkingResult = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(data: String, error: Code, headers: Headers, status: Double): CustomTestNotWorkingResult = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = false, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomTestNotWorkingResult]
     }
     
@@ -203,30 +192,30 @@ object mod {
   object CustomTestResult {
     
     @scala.inline
-    def CustomTestNotWorkingResult(data: String, error: Code, headers: Headers, ok: `false`, status: Double): typings.proxyVerifier.mod.CustomTestNotWorkingResult = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def CustomTestNotWorkingResult(data: String, error: Code, headers: Headers, status: Double): typings.proxyVerifier.mod.CustomTestNotWorkingResult = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], error = error.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = false, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.proxyVerifier.mod.CustomTestNotWorkingResult]
     }
     
     @scala.inline
-    def CustomTestWorkingResult(data: String, headers: Headers, ok: `true`, status: Double): typings.proxyVerifier.mod.CustomTestWorkingResult = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def CustomTestWorkingResult(data: String, headers: Headers, status: Double): typings.proxyVerifier.mod.CustomTestWorkingResult = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = true, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.proxyVerifier.mod.CustomTestWorkingResult]
     }
   }
   
-  @js.native
   trait CustomTestWorkingResult
-    extends CustomTestBaseResult
+    extends StObject
+       with CustomTestBaseResult
        with CustomTestResult {
     
-    var ok: `true` = js.native
+    var ok: `true`
   }
   object CustomTestWorkingResult {
     
     @scala.inline
-    def apply(data: String, headers: Headers, ok: `true`, status: Double): CustomTestWorkingResult = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(data: String, headers: Headers, status: Double): CustomTestWorkingResult = {
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], headers = headers.asInstanceOf[js.Any], ok = true, status = status.asInstanceOf[js.Any])
       __obj.asInstanceOf[CustomTestWorkingResult]
     }
     
@@ -240,18 +229,19 @@ object mod {
   
   type Headers = StringDictionary[String]
   
-  @js.native
-  trait NotWorkingResult extends Result {
+  trait NotWorkingResult
+    extends StObject
+       with Result {
     
-    var error: Code = js.native
+    var error: Code
     
-    var ok: `false` = js.native
+    var ok: `false`
   }
   object NotWorkingResult {
     
     @scala.inline
-    def apply(error: Code, ok: `false`): NotWorkingResult = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
+    def apply(error: Code): NotWorkingResult = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = false)
       __obj.asInstanceOf[NotWorkingResult]
     }
     
@@ -290,21 +280,20 @@ object mod {
   
   type ProtocolResult = StringDictionary[Result]
   
-  @js.native
   trait Proxy extends StObject {
     
     /**
       * Proxy-Authorization header
       */
-    var auth: js.UndefOr[String] = js.native
+    var auth: js.UndefOr[String] = js.undefined
     
-    var ipAddress: String = js.native
+    var ipAddress: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var protocol: js.UndefOr[Protocol] = js.native
+    var protocol: js.UndefOr[Protocol] = js.undefined
     
-    var protocols: js.UndefOr[js.Array[Protocol]] = js.native
+    var protocols: js.UndefOr[js.Array[Protocol]] = js.undefined
   }
   object Proxy {
     
@@ -354,24 +343,23 @@ object mod {
   object Result {
     
     @scala.inline
-    def NotWorkingResult(error: Code, ok: `false`): typings.proxyVerifier.mod.NotWorkingResult = {
-      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = ok.asInstanceOf[js.Any])
+    def NotWorkingResult(error: Code): typings.proxyVerifier.mod.NotWorkingResult = {
+      val __obj = js.Dynamic.literal(error = error.asInstanceOf[js.Any], ok = false)
       __obj.asInstanceOf[typings.proxyVerifier.mod.NotWorkingResult]
     }
     
     @scala.inline
-    def WorkingResult(ok: `true`): typings.proxyVerifier.mod.WorkingResult = {
-      val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
+    def WorkingResult(): typings.proxyVerifier.mod.WorkingResult = {
+      val __obj = js.Dynamic.literal(ok = true)
       __obj.asInstanceOf[typings.proxyVerifier.mod.WorkingResult]
     }
   }
   
-  @js.native
   trait TestOptions extends StObject {
     
-    def testFn(data: String, status: Double, headers: Headers): Unit = js.native
+    def testFn(data: String, status: Double, headers: Headers): Unit
     
-    var testUrl: String = js.native
+    var testUrl: String
   }
   object TestOptions {
     
@@ -392,16 +380,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait WorkingResult extends Result {
+  trait WorkingResult
+    extends StObject
+       with Result {
     
-    var ok: `true` = js.native
+    var ok: `true`
   }
   object WorkingResult {
     
     @scala.inline
-    def apply(ok: `true`): WorkingResult = {
-      val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
+    def apply(): WorkingResult = {
+      val __obj = js.Dynamic.literal(ok = true)
       __obj.asInstanceOf[WorkingResult]
     }
     

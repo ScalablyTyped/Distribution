@@ -10,9 +10,9 @@ mdast utility to parse markdown
 | ------------------ | :-------------: |
 | Full name          | mdast-util-from-markdown |
 | Keywords           | unist, mdast, mdast-util, util, utility, markdown, markup, parse, syntax, tree, ast |
-| # releases         | 7 |
-| # dependents       | 0 |
-| # downloads        | 683 |
+| # releases         | 15 |
+| # dependents       | 12 |
+| # downloads        | 8201274 |
 | # stars            | 0 |
 
 ## Links

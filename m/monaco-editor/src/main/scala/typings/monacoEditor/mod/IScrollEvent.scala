@@ -2,27 +2,25 @@ package typings.monacoEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScrollEvent extends StObject {
   
-  val scrollHeight: Double = js.native
+  val scrollHeight: Double
   
-  val scrollHeightChanged: Boolean = js.native
+  val scrollHeightChanged: Boolean
   
-  val scrollLeft: Double = js.native
+  val scrollLeft: Double
   
-  val scrollLeftChanged: Boolean = js.native
+  val scrollLeftChanged: Boolean
   
-  val scrollTop: Double = js.native
+  val scrollTop: Double
   
-  val scrollTopChanged: Boolean = js.native
+  val scrollTopChanged: Boolean
   
-  val scrollWidth: Double = js.native
+  val scrollWidth: Double
   
-  val scrollWidthChanged: Boolean = js.native
+  val scrollWidthChanged: Boolean
 }
 object IScrollEvent {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the cancelable events of a client ASPxGridView column.
   */
-@js.native
-trait ASPxClientGridViewColumnCancelEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientGridViewColumnCancelEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the processed client column.
     */
-  var column: ASPxClientGridViewColumn = js.native
+  var column: ASPxClientGridViewColumn
 }
 object ASPxClientGridViewColumnCancelEventArgs {
   

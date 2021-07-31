@@ -2,35 +2,35 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Collaboration extends BaseElement {
+trait Collaboration
+  extends StObject
+     with BaseElement {
   
-  var artifacts: js.Array[Artifact] = js.native
+  var artifacts: js.Array[Artifact]
   
-  var choreographyRef: js.Array[Choreography] = js.native
+  var choreographyRef: js.Array[Choreography]
   
-  var conversationAssociations: js.Array[ConversationAssociation] = js.native
+  var conversationAssociations: js.Array[ConversationAssociation]
   
-  var conversationLinks: js.Array[ConversationLink] = js.native
+  var conversationLinks: js.Array[ConversationLink]
   
-  var conversations: js.Array[ConversationNode] = js.native
+  var conversations: js.Array[ConversationNode]
   
-  var correlationKeys: js.Array[CorrelationKey] = js.native
+  var correlationKeys: js.Array[CorrelationKey]
   
-  var isClosed: Boolean = js.native
+  var isClosed: Boolean
   
-  var messageFlowAssociations: js.Array[MessageFlowAssociation] = js.native
+  var messageFlowAssociations: js.Array[MessageFlowAssociation]
   
-  var messageFlows: js.Array[MessageFlow] = js.native
+  var messageFlows: js.Array[MessageFlow]
   
-  var name: String = js.native
+  var name: String
   
-  var participantAssociations: js.Array[ParticipantAssociation] = js.native
+  var participantAssociations: js.Array[ParticipantAssociation]
   
-  var participants: js.Array[Participant] = js.native
+  var participants: js.Array[Participant]
 }
 object Collaboration {
   

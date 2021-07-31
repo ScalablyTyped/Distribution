@@ -3,16 +3,15 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationResultSessionReport
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var entities: js.UndefOr[js.Array[SessionReport]] = js.native
+  var entities: js.UndefOr[js.Array[SessionReport]] = js.undefined
   
-  var metaData: js.UndefOr[PaginationSettings] = js.native
+  var metaData: js.UndefOr[PaginationSettings] = js.undefined
 }
 object PaginationResultSessionReport {
   

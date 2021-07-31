@@ -2,13 +2,11 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Next id: 10
   */
-@js.native
 trait SchemaAggregateRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaAggregateRequest extends StObject {
     * same bucketing criteria. There will be one dataset in the response for
     * every aggregateBy spec.
     */
-  var aggregateBy: js.UndefOr[js.Array[SchemaAggregateBy]] = js.native
+  var aggregateBy: js.UndefOr[js.Array[SchemaAggregateBy]] = js.undefined
   
   /**
     * Specifies that data be aggregated each activity segment recored for a
@@ -25,7 +23,7 @@ trait SchemaAggregateRequest extends StObject {
     * activity segment rather than all segments of the same type. Mutually
     * exclusive of other bucketing specifications.
     */
-  var bucketByActivitySegment: js.UndefOr[SchemaBucketByActivity] = js.native
+  var bucketByActivitySegment: js.UndefOr[SchemaBucketByActivity] = js.undefined
   
   /**
     * Specifies that data be aggregated by the type of activity being performed
@@ -35,39 +33,39 @@ trait SchemaAggregateRequest extends StObject {
     * included in the response. Mutually exclusive of other bucketing
     * specifications.
     */
-  var bucketByActivityType: js.UndefOr[SchemaBucketByActivity] = js.native
+  var bucketByActivityType: js.UndefOr[SchemaBucketByActivity] = js.undefined
   
   /**
     * Specifies that data be aggregated by user sessions. Data that does not
     * fall within the time range of a session will not be included in the
     * response. Mutually exclusive of other bucketing specifications.
     */
-  var bucketBySession: js.UndefOr[SchemaBucketBySession] = js.native
+  var bucketBySession: js.UndefOr[SchemaBucketBySession] = js.undefined
   
   /**
     * Specifies that data be aggregated by a single time interval. Mutually
     * exclusive of other bucketing specifications.
     */
-  var bucketByTime: js.UndefOr[SchemaBucketByTime] = js.native
+  var bucketByTime: js.UndefOr[SchemaBucketByTime] = js.undefined
   
   /**
     * The end of a window of time. Data that intersects with this time window
     * will be aggregated. The time is in milliseconds since epoch, inclusive.
     */
-  var endTimeMillis: js.UndefOr[String] = js.native
+  var endTimeMillis: js.UndefOr[String] = js.undefined
   
   /**
     * DO NOT POPULATE THIS FIELD. As data quality standards are deprecated,
     * filling it in will result in no data sources being returned. It will be
     * removed in a future version entirely.
     */
-  var filteredDataQualityStandard: js.UndefOr[js.Array[String]] = js.native
+  var filteredDataQualityStandard: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The start of a window of time. Data that intersects with this time window
     * will be aggregated. The time is in milliseconds since epoch, inclusive.
     */
-  var startTimeMillis: js.UndefOr[String] = js.native
+  var startTimeMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaAggregateRequest {
   

@@ -2,13 +2,11 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaintextLength extends StObject {
   
-  var plaintextLength: Double = js.native
+  var plaintextLength: Double
 }
 object PlaintextLength {
   

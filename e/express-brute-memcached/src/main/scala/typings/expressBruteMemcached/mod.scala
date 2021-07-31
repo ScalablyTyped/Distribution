@@ -2,14 +2,15 @@ package typings.expressBruteMemcached
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("express-brute-memcached", JSImport.Default)
   @js.native
-  class default protected () extends MemcachedStore {
+  class default protected ()
+    extends StObject
+       with MemcachedStore {
     /**
       * @summary Constructor.
       * @constructor
@@ -22,104 +23,102 @@ object mod {
     def this(hosts: js.Array[String], options: MemcachedStoreOptions) = this()
   }
   
-  @js.native
   trait MemcachedStore extends StObject
   
-  @js.native
   trait MemcachedStoreOptions extends StObject {
     
     /**
       * @summary Hashing algorithm used to generate the  hashRing  values
       * @type {string}
       */
-    var algorithm: String = js.native
+    var algorithm: String
     
     /**
       * @summary An array of  server_locations  to replace servers that fail and that are removed from the consistent hashing scheme.
       * @type {Array}
       */
-    var failOverServers: js.Array[_] = js.native
+    var failOverServers: js.Array[js.Any]
     
     /**
       * @summary Number of failed-attempts to a server before it is regarded as 'dead'.
       * @type {number}
       */
-    var failures: Double = js.native
+    var failures: Double
     
     /**
       * @summary Idle timeout for the connections.
       * @type {number}
       */
-    var idle: Double = js.native
+    var idle: Double
     
     /**
       * @summary True, whether to use  md5  as hashing scheme when keys exceed  maxKeySize .
       * @type
       */
-    var keyCompression: Boolean = js.native
+    var keyCompression: Boolean
     
     /**
       * @summary Maximum expiration time of keys (in seconds).
       * @type {number}
       */
-    var maxExpiration: Double = js.native
+    var maxExpiration: Double
     
     /**
       * @summary Maximum key size allowed.
       * @type {number}
       */
-    var maxKeySize: Double = js.native
+    var maxKeySize: Double
     
     /**
       * @summary Maximum size of a value.
       * @type {number}
       */
-    var maxValue: Double = js.native
+    var maxValue: Double
     
     /**
       * @summary Maximum size of the connection pool.
       * @type {number}
       */
-    var poolSize: Double = js.native
+    var poolSize: Double
     
-    var prefix: String = js.native
+    var prefix: String
     
     /**
       * @summary Time between reconnection attempts (in milliseconds).
       * @type {number}
       */
-    var reconnect: Double = js.native
+    var reconnect: Double
     
     /**
       * @summary If true, authorizes the automatic removal of dead servers from the pool.
       * @type {boolean}
       */
-    var remove: Boolean = js.native
+    var remove: Boolean
     
     /**
       * @summary Number of socket allocation retries per request.
       * @type {number}
       */
-    var retries: Double = js.native
+    var retries: Double
     
     /**
       * @summary Time between a server failure and an attempt to set it up back in service.
       * @type {number}
       */
-    var retry: Double = js.native
+    var retry: Double
     
     /**
       * @summary Time after which Memcached sends a connection timeout (in milliseconds).
       * @type {number}
       */
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object MemcachedStoreOptions {
     
     @scala.inline
     def apply(
       algorithm: String,
-      failOverServers: js.Array[_],
+      failOverServers: js.Array[js.Any],
       failures: Double,
       idle: Double,
       keyCompression: Boolean,
@@ -145,7 +144,7 @@ object mod {
       def setAlgorithm(value: String): Self = StObject.set(x, "algorithm", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFailOverServers(value: js.Array[_]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
+      def setFailOverServers(value: js.Array[js.Any]): Self = StObject.set(x, "failOverServers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFailOverServersVarargs(value: js.Any*): Self = StObject.set(x, "failOverServers", js.Array(value :_*))

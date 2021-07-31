@@ -4,7 +4,6 @@ import typings.materializeCss.anon.PartialParallaxOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -13,37 +12,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class Parallax () extends StObject
 object Parallax {
   
+  @JSImport("materialize-css", "Parallax")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get Instance
     */
   /* static member */
-  @JSImport("materialize-css", "Parallax.getInstance")
-  @js.native
-  def getInstance(elem: Element): typings.materializeCss.M.Parallax = js.native
+  @scala.inline
+  def getInstance(elem: Element): typings.materializeCss.M.Parallax = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Parallax]
   
   /**
     * Init Parallaxs
     */
   /* static member */
-  @JSImport("materialize-css", "Parallax.init")
-  @js.native
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
-  ): js.Array[typings.materializeCss.M.Parallax] = js.native
-  @JSImport("materialize-css", "Parallax.init")
-  @js.native
+  ): js.Array[typings.materializeCss.M.Parallax] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Parallax]]
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: PartialParallaxOptions
-  ): js.Array[typings.materializeCss.M.Parallax] = js.native
+  ): js.Array[typings.materializeCss.M.Parallax] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Parallax]]
   /**
     * Init Parallax
     */
   /* static member */
-  @JSImport("materialize-css", "Parallax.init")
-  @js.native
-  def init(els: Element): typings.materializeCss.M.Parallax = js.native
-  @JSImport("materialize-css", "Parallax.init")
-  @js.native
-  def init(els: Element, options: PartialParallaxOptions): typings.materializeCss.M.Parallax = js.native
+  @scala.inline
+  def init(els: Element): typings.materializeCss.M.Parallax = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Parallax]
+  @scala.inline
+  def init(els: Element, options: PartialParallaxOptions): typings.materializeCss.M.Parallax = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Parallax]
 }

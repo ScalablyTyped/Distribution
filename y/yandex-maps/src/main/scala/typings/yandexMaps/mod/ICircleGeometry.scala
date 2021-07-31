@@ -2,30 +2,27 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.yandexMaps.mod.IFreezable because var conflicts: events. Inlined freeze, isFrozen, unfreeze
-- typings.yandexMaps.mod.ICircleGeometryAccess because var conflicts: events. Inlined contains, getClosest, getCoordinates, getRadius, setCoordinates, setCoordinates, setRadius */ @js.native
-trait ICircleGeometry extends IGeometry {
+- typings.yandexMaps.mod.IEventEmitter because var conflicts: events. Inlined 
+- typings.yandexMaps.mod.ICustomizable because var conflicts: events. Inlined options
+- typings.yandexMaps.mod.IBaseGeometry because var conflicts: events. Inlined getBounds, getType
+- typings.yandexMaps.mod.IGeometry because var conflicts: events. Inlined getMap, getPixelGeometry, getPixelGeometry, setMap */ @js.native
+trait ICircleGeometry
+  extends StObject
+     with ICircleGeometryAccess {
   
-  def contains(position: js.Array[Double]): Boolean = js.native
+  def getBounds(): js.Array[js.Array[Double]] | Null = js.native
   
-  def freeze(): IFreezable = js.native
+  def getMap(): Map_ | Null = js.native
   
-  def getClosest(anchorPosition: js.Array[Double]): js.Object = js.native
+  def getPixelGeometry(): IPixelGeometry = js.native
+  def getPixelGeometry(options: js.Object): IPixelGeometry = js.native
   
-  def getCoordinates(): js.Array[Double] | Null = js.native
+  def getType(): String = js.native
   
-  def getRadius(): Double = js.native
+  var options: IOptionManager = js.native
   
-  def isFrozen(): Boolean = js.native
-  
-  def setCoordinates(): this.type = js.native
-  def setCoordinates(coordinates: js.Array[Double]): this.type = js.native
-  
-  def setRadius(radius: Double): this.type = js.native
-  
-  def unfreeze(): IFreezable = js.native
+  def setMap(map: Map_): Unit = js.native
 }

@@ -4,34 +4,32 @@ import typings.reactOverlays.usePopperMod.State
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrowProps extends StObject {
   
-  var arrowProps: (Record[String, _]) with Ref = js.native
+  var arrowProps: (Record[String, js.Any]) & Ref
   
-  def forceUpdate(): Unit = js.native
+  def forceUpdate(): Unit
   
-  var placement: typings.reactOverlays.usePopperMod.Placement = js.native
+  var placement: typings.reactOverlays.usePopperMod.Placement
   
-  var props: (Record[String, _]) with Style = js.native
+  var props: (Record[String, js.Any]) & Style
   
-  var show: Boolean = js.native
+  var show: Boolean
   
-  var state: js.UndefOr[State] = js.native
+  var state: js.UndefOr[State] = js.undefined
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object ArrowProps {
   
   @scala.inline
   def apply(
-    arrowProps: (Record[String, _]) with Ref,
+    arrowProps: (Record[String, js.Any]) & Ref,
     forceUpdate: () => Unit,
     placement: typings.reactOverlays.usePopperMod.Placement,
-    props: (Record[String, _]) with Style,
+    props: (Record[String, js.Any]) & Style,
     show: Boolean,
     update: () => Unit
   ): ArrowProps = {
@@ -43,7 +41,7 @@ object ArrowProps {
   implicit class ArrowPropsMutableBuilder[Self <: ArrowProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setArrowProps(value: (Record[String, _]) with Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
+    def setArrowProps(value: (Record[String, js.Any]) & Ref): Self = StObject.set(x, "arrowProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setForceUpdate(value: () => Unit): Self = StObject.set(x, "forceUpdate", js.Any.fromFunction0(value))
@@ -52,7 +50,7 @@ object ArrowProps {
     def setPlacement(value: typings.reactOverlays.usePopperMod.Placement): Self = StObject.set(x, "placement", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setProps(value: (Record[String, _]) with Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+    def setProps(value: (Record[String, js.Any]) & Style): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setShow(value: Boolean): Self = StObject.set(x, "show", value.asInstanceOf[js.Any])

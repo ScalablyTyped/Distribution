@@ -2,29 +2,27 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `Property` consists of a user-supplied name/value pair.
   */
-@js.native
 trait SchemaProperty extends StObject {
   
   /**
     * Name of the property.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Value of numeric properties.
     */
-  var uint64Value: js.UndefOr[String] = js.native
+  var uint64Value: js.UndefOr[String] = js.undefined
   
   /**
     * Value of the property.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaProperty {
   

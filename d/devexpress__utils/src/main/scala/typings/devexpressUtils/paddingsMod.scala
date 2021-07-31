@@ -4,7 +4,6 @@ import typings.devexpressUtils.offsetsMod.Offsets
 import typings.devexpressUtils.typesMod.ICloneable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paddingsMod {
@@ -19,8 +18,11 @@ object paddingsMod {
   /* static members */
   object Paddings {
     
-    @JSImport("@devexpress/utils/lib/geometry/paddings", "Paddings.empty")
+    @JSImport("@devexpress/utils/lib/geometry/paddings", "Paddings")
     @js.native
-    def empty(): Paddings = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def empty(): Paddings = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[Paddings]
   }
 }

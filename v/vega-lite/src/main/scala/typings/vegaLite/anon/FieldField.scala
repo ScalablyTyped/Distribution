@@ -2,13 +2,11 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldField extends StObject {
   
-  var field: typings.vegaTypings.encodeMod.Field = js.native
+  var field: typings.vegaTypings.encodeMod.Field
 }
 object FieldField {
   

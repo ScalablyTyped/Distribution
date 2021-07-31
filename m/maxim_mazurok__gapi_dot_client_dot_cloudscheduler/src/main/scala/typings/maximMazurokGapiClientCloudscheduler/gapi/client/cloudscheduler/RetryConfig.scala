@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudscheduler.gapi.client.cloudscheduler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryConfig extends StObject {
   
   /** The maximum amount of time to wait before retrying a job after it fails. The default value of this field is 1 hour. */
-  var maxBackoffDuration: js.UndefOr[String] = js.native
+  var maxBackoffDuration: js.UndefOr[String] = js.undefined
   
   /**
     * The time between retries will double `max_doublings` times. A job's retry interval starts at min_backoff_duration, then doubles `max_doublings` times, then increases linearly, and
@@ -18,16 +16,16 @@ trait RetryConfig extends StObject {
     * max_backoff_duration until the job has been attempted retry_count times. Thus, the requests will retry at 10s, 20s, 40s, 80s, 160s, 240s, 300s, 300s, .... The default value of this
     * field is 5.
     */
-  var maxDoublings: js.UndefOr[Double] = js.native
+  var maxDoublings: js.UndefOr[Double] = js.undefined
   
   /**
     * The time limit for retrying a failed job, measured from time when an execution was first attempted. If specified with retry_count, the job will be retried until both limits are
     * reached. The default value for max_retry_duration is zero, which means retry duration is unlimited.
     */
-  var maxRetryDuration: js.UndefOr[String] = js.native
+  var maxRetryDuration: js.UndefOr[String] = js.undefined
   
   /** The minimum amount of time to wait before retrying a job after it fails. The default value of this field is 5 seconds. */
-  var minBackoffDuration: js.UndefOr[String] = js.native
+  var minBackoffDuration: js.UndefOr[String] = js.undefined
   
   /**
     * The number of attempts that the system will make to run a job using the exponential backoff procedure described by max_doublings. The default value of retry_count is zero. If
@@ -35,7 +33,7 @@ trait RetryConfig extends StObject {
     * non-zero number then Cloud Scheduler will retry failed attempts, using exponential backoff, retry_count times, or until the next scheduled execution time, whichever comes first.
     * Values greater than 5 and negative values are not allowed.
     */
-  var retryCount: js.UndefOr[Double] = js.native
+  var retryCount: js.UndefOr[Double] = js.undefined
 }
 object RetryConfig {
   

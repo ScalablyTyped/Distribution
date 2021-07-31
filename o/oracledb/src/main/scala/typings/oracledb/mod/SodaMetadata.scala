@@ -7,7 +7,6 @@ import typings.oracledb.anon.Method
 import typings.oracledb.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,38 +16,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://docs.oracle.com/en/database/oracle/simple-oracle-document-access/adsdi/soda-collection-metadata-components-reference.html#GUID-46E36926-7E6C-4561-A19F-01C09428C56D
   */
-@js.native
 trait SodaMetadata extends StObject {
   
   /** Object containing information related to the content column. */
-  var contentColumn: js.UndefOr[Cache] = js.native
+  var contentColumn: js.UndefOr[Cache] = js.undefined
   
   /** Object containing information related to the creation time column. */
-  var creationTimeColumn: js.UndefOr[Name] = js.native
+  var creationTimeColumn: js.UndefOr[Name] = js.undefined
   
   /** Object containing information related to the key column. */
-  var keyColumn: js.UndefOr[AssignmentMethod] = js.native
+  var keyColumn: js.UndefOr[AssignmentMethod] = js.undefined
   
   /** Object containing information related to the last modified column. */
-  var lastModifiedColumn: js.UndefOr[Index] = js.native
+  var lastModifiedColumn: js.UndefOr[Index] = js.undefined
   
   /** Object containing information related to the media type column. */
-  var mediaTypeColumn: js.UndefOr[Name] = js.native
+  var mediaTypeColumn: js.UndefOr[Name] = js.undefined
   
   /** Specifies whether or not the collection is read-only. */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /** Name of the Oracle Database schema that owns the table or view to which the collection is mapped. */
-  var schemaName: js.UndefOr[String] = js.native
+  var schemaName: js.UndefOr[String] = js.undefined
   
   /** Name of the table to which the collection is mapped. */
-  var tableName: js.UndefOr[String] = js.native
+  var tableName: js.UndefOr[String] = js.undefined
   
   /** Object containing information related to the version column. */
-  var versionColumn: js.UndefOr[Method] = js.native
+  var versionColumn: js.UndefOr[Method] = js.undefined
   
   /** Name of the view to which the collection is mapped. */
-  var viewName: js.UndefOr[String] = js.native
+  var viewName: js.UndefOr[String] = js.undefined
 }
 object SodaMetadata {
   

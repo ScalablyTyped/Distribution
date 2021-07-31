@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a SpeechWordInfo. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new SpeechWordInfo.
   * @param [properties] Properties to set
   */
-class SpeechWordInfo () extends ISpeechWordInfo {
+class SpeechWordInfo ()
+  extends StObject
+     with ISpeechWordInfo {
   def this(properties: ISpeechWordInfo) = this()
   
   /** SpeechWordInfo confidence. */
@@ -36,18 +37,20 @@ class SpeechWordInfo () extends ISpeechWordInfo {
 }
 object SpeechWordInfo {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new SpeechWordInfo instance using the specified properties.
     * @param [properties] Properties to set
     * @returns SpeechWordInfo instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.create")
-  @js.native
-  def create(): SpeechWordInfo = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.create")
-  @js.native
-  def create(properties: ISpeechWordInfo): SpeechWordInfo = js.native
+  @scala.inline
+  def create(): SpeechWordInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SpeechWordInfo]
+  @scala.inline
+  def create(properties: ISpeechWordInfo): SpeechWordInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[SpeechWordInfo]
   
   /**
     * Decodes a SpeechWordInfo message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object SpeechWordInfo {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.decode")
-  @js.native
-  def decode(reader: Reader): SpeechWordInfo = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): SpeechWordInfo = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.decode")
-  @js.native
-  def decode(reader: Uint8Array): SpeechWordInfo = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): SpeechWordInfo = js.native
+  @scala.inline
+  def decode(reader: Reader): SpeechWordInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechWordInfo]
+  @scala.inline
+  def decode(reader: Reader, length: Double): SpeechWordInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SpeechWordInfo]
+  @scala.inline
+  def decode(reader: Uint8Array): SpeechWordInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechWordInfo]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): SpeechWordInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[SpeechWordInfo]
   
   /**
     * Decodes a SpeechWordInfo message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object SpeechWordInfo {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): SpeechWordInfo = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): SpeechWordInfo = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): SpeechWordInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechWordInfo]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): SpeechWordInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[SpeechWordInfo]
   
   /**
     * Encodes the specified SpeechWordInfo message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.SpeechWordInfo.verify|verify} messages.
@@ -93,12 +90,10 @@ object SpeechWordInfo {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.encode")
-  @js.native
-  def encode(message: ISpeechWordInfo): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.encode")
-  @js.native
-  def encode(message: ISpeechWordInfo, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ISpeechWordInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ISpeechWordInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified SpeechWordInfo message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.SpeechWordInfo.verify|verify} messages.
@@ -107,12 +102,10 @@ object SpeechWordInfo {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISpeechWordInfo): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ISpeechWordInfo, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ISpeechWordInfo): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ISpeechWordInfo, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a SpeechWordInfo message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object SpeechWordInfo {
     * @returns SpeechWordInfo
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): SpeechWordInfo = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): SpeechWordInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[SpeechWordInfo]
   
   /**
     * Creates a plain object from a SpeechWordInfo message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object SpeechWordInfo {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.toObject")
-  @js.native
-  def toObject(message: SpeechWordInfo): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.toObject")
-  @js.native
-  def toObject(message: SpeechWordInfo, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: SpeechWordInfo): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: SpeechWordInfo, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a SpeechWordInfo message.
@@ -144,7 +134,6 @@ object SpeechWordInfo {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SpeechWordInfo.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

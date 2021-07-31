@@ -14,7 +14,6 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkBoxGroupMod {
@@ -24,39 +23,38 @@ object checkBoxGroupMod {
   @js.native
   class CheckBoxGroup protected ()
     extends Component[
-          CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/CheckBoxGroup", "CheckBoxGroup")
   @js.native
   val CheckBoxGroup: ComponentClass[
-    CheckBoxGroupProps with BoxProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    CheckBoxGroupProps & BoxProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait CheckBoxGroupProps extends StObject {
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var labelKey: js.UndefOr[String] = js.native
+    var labelKey: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* event */ js.UndefOr[OnChangeEvent], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ js.UndefOr[OnChangeEvent], Unit]] = js.undefined
     
-    var options: js.Array[CheckBoxType] = js.native
+    var options: js.Array[CheckBoxType]
     
-    var value: js.UndefOr[js.Array[Double | String]] = js.native
+    var value: js.UndefOr[js.Array[Double | String]] = js.undefined
     
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
   }
   object CheckBoxGroupProps {
     
@@ -117,16 +115,15 @@ object checkBoxGroupMod {
   }
   
   type CheckBoxType = Omit[
-    CheckBoxProps with (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
+    CheckBoxProps & (DetailedHTMLProps[InputHTMLAttributes[HTMLInputElement], HTMLInputElement]), 
     checked
   ]
   
-  @js.native
   trait OnChangeEvent extends StObject {
     
-    var option: String | CheckBoxProps = js.native
+    var option: String | CheckBoxProps
     
-    var value: String = js.native
+    var value: String
   }
   object OnChangeEvent {
     

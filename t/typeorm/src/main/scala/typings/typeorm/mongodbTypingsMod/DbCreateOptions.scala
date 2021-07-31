@@ -2,86 +2,84 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbCreateOptions extends StObject {
   
   /**
     * If the database authentication is dependent on another databaseName.
     */
-  var authSource: js.UndefOr[String] = js.native
+  var authSource: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a cap on how many operations the driver will buffer up before giving up on getting a working connection, default is -1 which is unlimited.
     */
-  var bufferMaxEntries: js.UndefOr[scala.Double] = js.native
+  var bufferMaxEntries: js.UndefOr[scala.Double] = js.undefined
   
   /**
     * Force server to assign _id values instead of driver.
     */
-  var forceServerObjectId: js.UndefOr[Boolean] = js.native
+  var forceServerObjectId: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify if the BSON serializer should ignore undefined fields.
     */
-  var ignoreUndefined: js.UndefOr[Boolean] = js.native
+  var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a journal write concern.
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current value of the parameter native_parser.
     */
-  var native_parser: js.UndefOr[Boolean] = js.native
+  var native_parser: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A primary key factory object for generation of custom _id keys.
     */
-  var pkFactory: js.UndefOr[js.Object] = js.native
+  var pkFactory: js.UndefOr[js.Object] = js.undefined
   
   /**
     * A Promise library class the application wishes to use such as Bluebird, must be ES6 compatible.
     */
-  var promiseLibrary: js.UndefOr[js.Object] = js.native
+  var promiseLibrary: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Promotes Long values to number if they fit inside the 53 bits resolution.
     */
-  var promoteLongs: js.UndefOr[Boolean] = js.native
+  var promoteLongs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Return document results as raw BSON buffers.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specify a read concern for the collection. (only MongoDB 3.2 or higher supported).
     */
-  var readConcern: js.UndefOr[ReadConcern] = js.native
+  var readConcern: js.UndefOr[ReadConcern] = js.undefined
   
   /**
     * The preferred read preference (ReadPreference.PRIMARY, ReadPreference.PRIMARY_PREFERRED, ReadPreference.SECONDARY, ReadPreference.SECONDARY_PREFERRED, ReadPreference.NEAREST).
     */
-  var readPreference: js.UndefOr[ReadPreference | String] = js.native
+  var readPreference: js.UndefOr[ReadPreference | String] = js.undefined
   
   /**
     * Serialize functions on any object.
     */
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The write concern.
     */
-  var w: js.UndefOr[scala.Double | String] = js.native
+  var w: js.UndefOr[scala.Double | String] = js.undefined
   
   /**
     * The write concern timeout.
     */
-  var wtimeout: js.UndefOr[scala.Double] = js.native
+  var wtimeout: js.UndefOr[scala.Double] = js.undefined
 }
 object DbCreateOptions {
   

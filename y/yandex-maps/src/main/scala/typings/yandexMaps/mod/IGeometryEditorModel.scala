@@ -2,15 +2,15 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeometryEditorModel extends IEventEmitter {
+trait IGeometryEditorModel
+  extends StObject
+     with IEventEmitter {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def getPixels(): js.Array[Double] = js.native
+  def getPixels(): js.Array[Double]
 }
 object IGeometryEditorModel {
   

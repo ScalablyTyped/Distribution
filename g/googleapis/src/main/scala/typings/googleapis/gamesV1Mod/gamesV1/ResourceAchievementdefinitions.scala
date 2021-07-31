@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Achievementdefinitions")
@@ -32,7 +31,7 @@ class ResourceAchievementdefinitions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAchievementDefinitionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaAchievementDefinitionsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAchievementDefinitionsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAchievementDefinitionsListResponse] = js.native
   def list(params: ParamsResourceAchievementdefinitionsList): GaxiosPromise[SchemaAchievementDefinitionsListResponse] = js.native
   def list(
     params: ParamsResourceAchievementdefinitionsList,

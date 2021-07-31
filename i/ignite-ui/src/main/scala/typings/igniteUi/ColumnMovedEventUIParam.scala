@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnMovedEventUIParam extends StObject {
   
   /**
     * Gets the column key of the column that was moved.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets the new column index of the column that was being moved.
     */
-  var newIndex: js.UndefOr[Double] = js.native
+  var newIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the previous column index of the column that was moved.
     */
-  var oldIndex: js.UndefOr[Double] = js.native
+  var oldIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets a reference to the widget.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ColumnMovedEventUIParam {
   

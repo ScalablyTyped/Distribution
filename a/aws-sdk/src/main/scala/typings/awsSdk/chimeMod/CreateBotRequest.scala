@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBotRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The bot display name.
     */
-  var DisplayName: SensitiveString = js.native
+  var DisplayName: SensitiveString
   
   /**
     * The domain of the Amazon Chime Enterprise account.
     */
-  var Domain: js.UndefOr[NonEmptyString] = js.native
+  var Domain: js.UndefOr[NonEmptyString] = js.undefined
 }
 object CreateBotRequest {
   

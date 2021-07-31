@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTimeParameter extends StObject {
   
   /**
     * A display name for the date-time parameter.
     */
-  var Name: NonEmptyString = js.native
+  var Name: NonEmptyString
   
   /**
     * The values for the date-time parameter.
     */
-  var Values: TimestampList = js.native
+  var Values: TimestampList
 }
 object DateTimeParameter {
   

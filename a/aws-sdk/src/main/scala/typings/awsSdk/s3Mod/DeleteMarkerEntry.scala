@@ -2,36 +2,34 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMarkerEntry extends StObject {
   
   /**
     * Specifies whether the object is (true) or is not (false) the latest version of an object.
     */
-  var IsLatest: js.UndefOr[typings.awsSdk.s3Mod.IsLatest] = js.native
+  var IsLatest: js.UndefOr[typings.awsSdk.s3Mod.IsLatest] = js.undefined
   
   /**
     * The object key.
     */
-  var Key: js.UndefOr[ObjectKey] = js.native
+  var Key: js.UndefOr[ObjectKey] = js.undefined
   
   /**
     * Date and time the object was last modified.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.native
+  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
   
   /**
     * The account that created the delete marker.&gt;
     */
-  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.native
+  var Owner: js.UndefOr[typings.awsSdk.s3Mod.Owner] = js.undefined
   
   /**
     * Version ID of an object.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.native
+  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
 }
 object DeleteMarkerEntry {
   

@@ -1,0 +1,55 @@
+package typings.wixUiCore
+
+import typings.react.mod.FunctionComponent
+import typings.wixUiCore.anon.PickClearButtonPropschildChildren
+import typings.wixUiCore.anon.PickSigningPadPropsrequirAbout
+import typings.wixUiCore.anon.PickTitlePropschildrenChildren
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object componentsSignatureInputMod {
+  
+  @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput")
+  @js.native
+  class SignatureInput protected ()
+    extends typings.wixUiCore.componentsSignatureInputSignatureInputMod.SignatureInput {
+    def this(props: js.Object) = this()
+    /**
+      * @deprecated
+      * @see https://reactjs.org/docs/legacy-context.html
+      */
+    def this(props: js.Object, context: js.Any) = this()
+  }
+  /* static members */
+  object SignatureInput {
+    
+    @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.ClearButton")
+    @js.native
+    def ClearButton: FunctionComponent[PickClearButtonPropschildChildren] = js.native
+    @scala.inline
+    def ClearButton_=(x: FunctionComponent[PickClearButtonPropschildChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ClearButton")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.SigningPad")
+    @js.native
+    def SigningPad: FunctionComponent[PickSigningPadPropsrequirAbout] = js.native
+    @scala.inline
+    def SigningPad_=(x: FunctionComponent[PickSigningPadPropsrequirAbout]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SigningPad")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.Title")
+    @js.native
+    def Title: FunctionComponent[PickTitlePropschildrenChildren] = js.native
+    @scala.inline
+    def Title_=(x: FunctionComponent[PickTitlePropschildrenChildren]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Title")(x.asInstanceOf[js.Any])
+    
+    @JSImport("wix-ui-core/dist/standalone/src/components/signature-input", "SignatureInput.displayName")
+    @js.native
+    def displayName: String = js.native
+    @scala.inline
+    def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
+  }
+}

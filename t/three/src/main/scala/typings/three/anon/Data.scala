@@ -3,33 +3,25 @@ package typings.three.anon
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var isInterleavedBufferAttribute: `true` = js.native
+  var isInterleavedBufferAttribute: `true`
   
-  var itemSize: Double = js.native
+  var itemSize: Double
   
-  var normalized: Boolean = js.native
+  var normalized: Boolean
   
-  var offset: Double = js.native
+  var offset: Double
 }
 object Data {
   
   @scala.inline
-  def apply(
-    data: String,
-    isInterleavedBufferAttribute: `true`,
-    itemSize: Double,
-    normalized: Boolean,
-    offset: Double
-  ): Data = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isInterleavedBufferAttribute = isInterleavedBufferAttribute.asInstanceOf[js.Any], itemSize = itemSize.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
+  def apply(data: String, itemSize: Double, normalized: Boolean, offset: Double): Data = {
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], isInterleavedBufferAttribute = true, itemSize = itemSize.asInstanceOf[js.Any], normalized = normalized.asInstanceOf[js.Any], offset = offset.asInstanceOf[js.Any])
     __obj.asInstanceOf[Data]
   }
   

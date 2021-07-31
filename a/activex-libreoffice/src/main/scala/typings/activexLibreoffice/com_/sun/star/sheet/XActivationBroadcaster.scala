@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to add and remove {@link XActivationEventListener}
   * @since OOo 2.0
   */
-@js.native
-trait XActivationBroadcaster extends XInterface {
+trait XActivationBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * allows a component supporting the {@link XActivationEventListener} interface to register as listener. The component will be notified with a {@link
@@ -21,13 +21,13 @@ trait XActivationBroadcaster extends XInterface {
     * @see XActivationEventListener
     * @see ActivationEvent
     */
-  def addActivationEventListener(aListener: XActivationEventListener): Unit = js.native
+  def addActivationEventListener(aListener: XActivationEventListener): Unit
   
   /**
     * removes a previously registered listener.
     * @param aListener the component that is to be removed
     */
-  def removeActivationEventListener(aListener: XActivationEventListener): Unit = js.native
+  def removeActivationEventListener(aListener: XActivationEventListener): Unit
 }
 object XActivationBroadcaster {
   

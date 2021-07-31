@@ -4,14 +4,12 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<typedoc.typedoc/dist/lib/serialization/schema.StringLiteralType, 'type'> */
-@js.native
 trait PickStringLiteralTypetype extends StObject {
   
-  var `type`: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String) = js.native
+  var `type`: (ModelToObject[/* "stringLiteral" */ String]) | (/* "stringLiteral" */ String)
 }
 object PickStringLiteralTypetype {
   

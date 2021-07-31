@@ -3,14 +3,12 @@ package typings.coreJs
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrayReduceMod {
   
   /* was `typeof core.Array.reduce` */
-  @JSImport("core-js/library/fn/array/reduce", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
@@ -20,9 +18,8 @@ object arrayReduceMod {
       /* array */ Array[T], 
       T
     ]
-  ): T = js.native
-  @JSImport("core-js/library/fn/array/reduce", JSImport.Namespace)
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def apply[T](
     array: ArrayLike[T],
     callbackfn: js.Function4[
@@ -33,5 +30,9 @@ object arrayReduceMod {
       T
     ],
     initialValue: T
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].apply(array.asInstanceOf[js.Any], callbackfn.asInstanceOf[js.Any], initialValue.asInstanceOf[js.Any])).asInstanceOf[T]
+  
+  @JSImport("core-js/library/fn/array/reduce", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

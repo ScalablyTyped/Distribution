@@ -2,39 +2,37 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A client-side equivalent of the ribbon's RibbonGroup object.
   */
-@js.native
 trait ASPxClientRibbonGroup extends StObject {
   
   /**
     * Returns a value specifying whether a ribbon group is displayed.
     */
-  def GetVisible(): Boolean = js.native
+  def GetVisible(): Boolean
   
   /**
     * Gets or sets the group's index within the collection.
     */
-  var index: Double = js.native
+  var index: Double
   
   /**
     * Gets the name of the current ribbon group.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets the client ribbon object to which the current group belongs.
     */
-  var ribbon: ASPxClientRibbon = js.native
+  var ribbon: ASPxClientRibbon
   
   /**
     * Gets the client tab object to which the current group belongs.
     */
-  var tab: ASPxClientRibbonTab = js.native
+  var tab: ASPxClientRibbonTab
 }
 object ASPxClientRibbonGroup {
   

@@ -2,26 +2,24 @@ package typings.algoliaTransporter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatelessHost extends StObject {
   
   /**
     * The type of the host.
     */
-  val accept: CallType = js.native
+  val accept: CallType
   
   /**
     * The protocol of the stateless host. Between `http` and `https`.
     */
-  val protocol: String = js.native
+  val protocol: String
   
   /**
     * The url, without protocol.
     */
-  val url: String = js.native
+  val url: String
 }
 object StatelessHost {
   

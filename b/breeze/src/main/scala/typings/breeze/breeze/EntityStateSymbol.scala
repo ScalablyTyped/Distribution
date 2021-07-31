@@ -4,25 +4,25 @@ import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EntityStateSymbol extends EnumSymbol {
+trait EntityStateSymbol
+  extends StObject
+     with EnumSymbol {
   
-  def isAdded(): Boolean = js.native
+  def isAdded(): Boolean
   
-  def isAddedModifiedOrDeleted(): Boolean = js.native
+  def isAddedModifiedOrDeleted(): Boolean
   
-  def isDeleted(): Boolean = js.native
+  def isDeleted(): Boolean
   
-  def isDetached(): Boolean = js.native
+  def isDetached(): Boolean
   
-  def isModified(): Boolean = js.native
+  def isModified(): Boolean
   
-  def isUnchanged(): Boolean = js.native
+  def isUnchanged(): Boolean
   
-  def isUnchangedOrModified(): Boolean = js.native
+  def isUnchangedOrModified(): Boolean
 }
 object EntityStateSymbol {
   

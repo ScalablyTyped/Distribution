@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSComputedStyleProperty extends StObject {
   
   /**
     * Computed style property name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Computed style property value.
     */
-  var value: String = js.native
+  var value: String
 }
 object CSSComputedStyleProperty {
   

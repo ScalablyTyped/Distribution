@@ -1,37 +1,67 @@
 package typings.tmiJs.mod
 
-import typings.tmiJs.AnonClientId
-import typings.tmiJs.AnonError
-import typings.tmiJs.AnonMaxReconnectAttempts
-import typings.tmiJs.AnonPassword
+import typings.tmiJs.anon.ClientId
+import typings.tmiJs.anon.Error
+import typings.tmiJs.anon.MaxReconnectAttempts
+import typings.tmiJs.anon.Password
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Options extends js.Object {
+trait Options extends StObject {
+  
   var channels: js.UndefOr[js.Array[String]] = js.undefined
-  var connection: js.UndefOr[AnonMaxReconnectAttempts] = js.undefined
-  var identity: js.UndefOr[AnonPassword] = js.undefined
-  var logger: js.UndefOr[AnonError] = js.undefined
-  var options: js.UndefOr[AnonClientId] = js.undefined
+  
+  var connection: js.UndefOr[MaxReconnectAttempts] = js.undefined
+  
+  var identity: js.UndefOr[Password] = js.undefined
+  
+  var logger: js.UndefOr[Error] = js.undefined
+  
+  var options: js.UndefOr[ClientId] = js.undefined
 }
-
 object Options {
+  
   @scala.inline
-  def apply(
-    channels: js.Array[String] = null,
-    connection: AnonMaxReconnectAttempts = null,
-    identity: AnonPassword = null,
-    logger: AnonError = null,
-    options: AnonClientId = null
-  ): Options = {
+  def apply(): Options = {
     val __obj = js.Dynamic.literal()
-    if (channels != null) __obj.updateDynamic("channels")(channels.asInstanceOf[js.Any])
-    if (connection != null) __obj.updateDynamic("connection")(connection.asInstanceOf[js.Any])
-    if (identity != null) __obj.updateDynamic("identity")(identity.asInstanceOf[js.Any])
-    if (logger != null) __obj.updateDynamic("logger")(logger.asInstanceOf[js.Any])
-    if (options != null) __obj.updateDynamic("options")(options.asInstanceOf[js.Any])
     __obj.asInstanceOf[Options]
   }
+  
+  @scala.inline
+  implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setChannels(value: js.Array[String]): Self = StObject.set(x, "channels", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChannelsUndefined: Self = StObject.set(x, "channels", js.undefined)
+    
+    @scala.inline
+    def setChannelsVarargs(value: String*): Self = StObject.set(x, "channels", js.Array(value :_*))
+    
+    @scala.inline
+    def setConnection(value: MaxReconnectAttempts): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setConnectionUndefined: Self = StObject.set(x, "connection", js.undefined)
+    
+    @scala.inline
+    def setIdentity(value: Password): Self = StObject.set(x, "identity", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdentityUndefined: Self = StObject.set(x, "identity", js.undefined)
+    
+    @scala.inline
+    def setLogger(value: Error): Self = StObject.set(x, "logger", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoggerUndefined: Self = StObject.set(x, "logger", js.undefined)
+    
+    @scala.inline
+    def setOptions(value: ClientId): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
+  }
 }
-

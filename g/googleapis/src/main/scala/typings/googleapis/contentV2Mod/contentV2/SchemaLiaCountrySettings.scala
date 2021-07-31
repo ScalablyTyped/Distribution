@@ -2,46 +2,44 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiaCountrySettings extends StObject {
   
   /**
     * The settings for the About page.
     */
-  var about: js.UndefOr[SchemaLiaAboutPageSettings] = js.native
+  var about: js.UndefOr[SchemaLiaAboutPageSettings] = js.undefined
   
   /**
     * CLDR country code (e.g. &quot;US&quot;).
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the &quot;Merchant hosted local storefront&quot; feature.
     */
-  var hostedLocalStorefrontActive: js.UndefOr[Boolean] = js.native
+  var hostedLocalStorefrontActive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * LIA inventory verification settings.
     */
-  var inventory: js.UndefOr[SchemaLiaInventorySettings] = js.native
+  var inventory: js.UndefOr[SchemaLiaInventorySettings] = js.undefined
   
   /**
     * LIA &quot;On Display To Order&quot; settings.
     */
-  var onDisplayToOrder: js.UndefOr[SchemaLiaOnDisplayToOrderSettings] = js.native
+  var onDisplayToOrder: js.UndefOr[SchemaLiaOnDisplayToOrderSettings] = js.undefined
   
   /**
     * The POS data provider linked with this country.
     */
-  var posDataProvider: js.UndefOr[SchemaLiaPosDataProvider] = js.native
+  var posDataProvider: js.UndefOr[SchemaLiaPosDataProvider] = js.undefined
   
   /**
     * The status of the &quot;Store pickup&quot; feature.
     */
-  var storePickupActive: js.UndefOr[Boolean] = js.native
+  var storePickupActive: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaLiaCountrySettings {
   

@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusDetails extends StObject {
   
   /** The Causes array includes more details associated with the StatusReason failure. Not all StatusReasons may provide detailed causes. +optional */
-  var causes: js.UndefOr[js.Array[StatusCause]] = js.native
+  var causes: js.UndefOr[js.Array[StatusCause]] = js.undefined
   
   /** The group attribute of the resource associated with the status StatusReason. +optional */
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
   /**
     * The kind attribute of the resource associated with the status StatusReason. On some operations may differ from the requested resource Kind. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds +optional
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The name attribute of the resource associated with the status StatusReason (when there is a single name which can be described). +optional */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If specified, the time in seconds before the operation should be retried. Some errors may indicate the client must take an alternate action - for those errors this field may
     * indicate how long to wait before taking the alternate action. +optional
     */
-  var retryAfterSeconds: js.UndefOr[Double] = js.native
+  var retryAfterSeconds: js.UndefOr[Double] = js.undefined
   
   /** UID of the resource. (when there is a single resource which can be described). More info: http://kubernetes.io/docs/user-guide/identifiers#uids +optional */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
 }
 object StatusDetails {
   

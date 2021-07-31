@@ -3,12 +3,11 @@ package typings.tern.ternMod
 import typings.tern.ternStrings.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeQuery
-  extends BaseQueryWithFile
+  extends StObject
+     with BaseQueryWithFile
      with Query {
   
   /**
@@ -17,31 +16,31 @@ trait TypeQuery
     * and be represented by their type name or a representation showing
     * only property names below it. Default `0`
     */
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
   /** Specify the location of the expression. */
-  var end: Double | Position = js.native
+  var end: Double | Position
   
   /**
     * Set to `true` when you are interested in a function type.
     * This will cause function types to win when something has multiple types.
     * Default `false`
     */
-  var preferFunction: js.UndefOr[Boolean] = js.native
+  var preferFunction: js.UndefOr[Boolean] = js.undefined
   
   /** Specify the location of the expression. */
-  var start: js.UndefOr[Double | Position] = js.native
+  var start: js.UndefOr[Double | Position] = js.undefined
   
   /** Query the type of something. */
   @JSName("type")
-  var type_TypeQuery: `type` = js.native
+  var type_TypeQuery: `type`
 }
 object TypeQuery {
   
   @scala.inline
-  def apply(end: Double | Position, file: String, `type`: `type`): TypeQuery = {
+  def apply(end: Double | Position, file: String): TypeQuery = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], file = file.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("type")
     __obj.asInstanceOf[TypeQuery]
   }
   

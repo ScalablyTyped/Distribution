@@ -11,8 +11,8 @@ A react.js reCAPTCHA for Google
 | Full name          | react-recaptcha |
 | Keywords           | react, react-component, reCAPTCHA, component |
 | # releases         | 0 |
-| # dependents       | 18 |
-| # downloads        | 1784920 |
+| # dependents       | 17 |
+| # downloads        | 1650778 |
 | # stars            | 5 |
 
 ## Links

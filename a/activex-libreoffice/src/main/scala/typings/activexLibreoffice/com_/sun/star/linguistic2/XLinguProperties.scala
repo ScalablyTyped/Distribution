@@ -8,69 +8,69 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for {@link LinguProperties} service.
   * @since LibreOffice 4.1
   */
-@js.native
-trait XLinguProperties extends XPropertySet {
+trait XLinguProperties
+  extends StObject
+     with XPropertySet {
   
   /** the default western language for new documents. */
-  var DefaultLocale: Locale = js.native
+  var DefaultLocale: Locale
   
   /** the default language for CJK languages. */
-  var DefaultLocale_CJK: Locale = js.native
+  var DefaultLocale_CJK: Locale
   
   /** the default language for CTL languages. */
-  var DefaultLocale_CTL: Locale = js.native
+  var DefaultLocale_CTL: Locale
   
   /** the minimum number of characters of a word to remain before the hyphen when doing hyphenation. */
-  var HyphMinLeading: Double = js.native
+  var HyphMinLeading: Double
   
   /** the minimum number of characters of a word to remain after the hyphen when doing hyphenation. */
-  var HyphMinTrailing: Double = js.native
+  var HyphMinTrailing: Double
   
   /** the minimum length of a word in order to be hyphenated. */
-  var HyphMinWordLength: Double = js.native
+  var HyphMinWordLength: Double
   
   /**
     * defines whether interactive hyphenation should be performed without requiring the user to select every hyphenation position after the user has
     * triggered the hyphenation.
     */
-  var IsHyphAuto: Boolean = js.native
+  var IsHyphAuto: Boolean
   
   /** defines whether hyphenation should be done in special regions of documents or not. */
-  var IsHyphSpecial: Boolean = js.native
+  var IsHyphSpecial: Boolean
   
   /** defines if control characters should be ignored or not, by the linguistic (i.e., spell checker, hyphenator and thesaurus). */
-  var IsIgnoreControlCharacters: Boolean = js.native
+  var IsIgnoreControlCharacters: Boolean
   
   /** indicates whether spell checking should be done automatically or not. */
-  var IsSpellAuto: Boolean = js.native
+  var IsSpellAuto: Boolean
   
   /**
     * defines if the capitalization of words should be checked or not.
     * @deprecated Deprecated
     */
-  var IsSpellCapitalization: Boolean = js.native
+  var IsSpellCapitalization: Boolean
   
   /** defines whether spell checking should be done in special regions of documents or not. */
-  var IsSpellSpecial: Boolean = js.native
+  var IsSpellSpecial: Boolean
   
   /** defines if words with only uppercase letters should be subject to spell checking or not. */
-  var IsSpellUpperCase: Boolean = js.native
+  var IsSpellUpperCase: Boolean
   
   /** defines if words containing digits (or numbers) should be subject to spell checking or not. */
-  var IsSpellWithDigits: Boolean = js.native
+  var IsSpellWithDigits: Boolean
   
   /** defines if the dictionary-list should be used for spell checking and hyphenation or not. */
-  var IsUseDictionaryList: Boolean = js.native
+  var IsUseDictionaryList: Boolean
   
   /** defines whether spell checking should be done in reverse direction or not. */
-  var IsWrapReverse: Boolean = js.native
+  var IsWrapReverse: Boolean
 }
 object XLinguProperties {
   

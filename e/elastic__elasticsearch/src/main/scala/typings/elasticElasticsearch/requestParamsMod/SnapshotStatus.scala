@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SnapshotStatus extends Generic {
+trait SnapshotStatus
+  extends StObject
+     with Generic {
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var repository: js.UndefOr[String] = js.native
+  var repository: js.UndefOr[String] = js.undefined
   
-  var snapshot: js.UndefOr[String | js.Array[String]] = js.native
+  var snapshot: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object SnapshotStatus {
   

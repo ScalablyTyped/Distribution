@@ -2,21 +2,19 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemovePermissionInput extends StObject {
   
   /**
     * The unique label of the statement you want to remove.
     */
-  var Label: label = js.native
+  var Label: label
   
   /**
     * The ARN of the topic whose access control policy you wish to modify.
     */
-  var TopicArn: topicARN = js.native
+  var TopicArn: topicARN
 }
 object RemovePermissionInput {
   

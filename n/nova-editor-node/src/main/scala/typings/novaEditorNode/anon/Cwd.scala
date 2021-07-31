@@ -7,23 +7,21 @@ import typings.novaEditorNode.novaEditorNodeStrings.jsonrpc
 import typings.novaEditorNode.novaEditorNodeStrings.pipe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cwd extends StObject {
   
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
-  var env: js.UndefOr[StringDictionary[String]] = js.native
+  var env: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var shell: js.UndefOr[`true` | String] = js.native
+  var shell: js.UndefOr[`true` | String] = js.undefined
   
   var stdio: js.UndefOr[
     (js.Tuple3[pipe | ignore, pipe | ignore, pipe | ignore]) | pipe | ignore | jsonrpc | Double
-  ] = js.native
+  ] = js.undefined
 }
 object Cwd {
   

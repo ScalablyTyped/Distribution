@@ -2,27 +2,27 @@ package typings.wxJsSdkDt.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UploadImageConfig extends WxBaseRequestConfig {
+trait UploadImageConfig
+  extends StObject
+     with WxBaseRequestConfig {
   
   /**
     * 默认为1，显示进度提示
     */
-  var isShowProgressTips: js.UndefOr[Double] = js.native
+  var isShowProgressTips: js.UndefOr[Double] = js.undefined
   
   /**
     * 要上传的图片的本地 ID，由 chooseImage 接口获得
     */
-  var localId: String = js.native
+  var localId: String
   
   /**
     * res: var serverId = res.serverId;  返回图片的服务器端 ID
     */
   @JSName("success")
-  def success_MUploadImageConfig(res: js.Any): Unit = js.native
+  def success_MUploadImageConfig(res: js.Any): Unit
 }
 object UploadImageConfig {
   

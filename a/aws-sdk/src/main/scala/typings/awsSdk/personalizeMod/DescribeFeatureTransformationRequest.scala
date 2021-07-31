@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeFeatureTransformationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the feature transformation to describe.
     */
-  var featureTransformationArn: Arn = js.native
+  var featureTransformationArn: Arn
 }
 object DescribeFeatureTransformationRequest {
   

@@ -10,9 +10,9 @@ A Node.js style checker and lint tool for Markdown/CommonMark files.
 | ------------------ | :-------------: |
 | Full name          | markdownlint |
 | Keywords           | markdown, lint, md, CommonMark, markdownlint |
-| # releases         | 17 |
-| # dependents       | 30 |
-| # downloads        | 5003566 |
+| # releases         | 20 |
+| # dependents       | 37 |
+| # downloads        | 6530259 |
 | # stars            | 5 |
 
 ## Links

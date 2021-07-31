@@ -6,83 +6,79 @@ import typings.nodeDhtSensor.nodeDhtSensorNumbers.`11`
 import typings.nodeDhtSensor.nodeDhtSensorNumbers.`22`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("node-dht-sensor", "initialize")
+  @JSImport("node-dht-sensor", JSImport.Namespace)
   @js.native
-  def initialize(testOptions: Test): Unit = js.native
-  @JSImport("node-dht-sensor", "initialize")
-  @js.native
-  def initialize(`type`: SensorType, pin: Double): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def initialize(testOptions: Test): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(testOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def initialize(`type`: SensorType, pin: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   object promises {
     
-    @JSImport("node-dht-sensor", "promises.initialize")
+    @JSImport("node-dht-sensor", "promises")
     @js.native
-    def initialize(testOptions: Test): Unit = js.native
-    @JSImport("node-dht-sensor", "promises.initialize")
-    @js.native
-    def initialize(`type`: SensorType, pin: Double): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("node-dht-sensor", "promises.read")
-    @js.native
-    def read(): js.Promise[SensorData] = js.native
-    @JSImport("node-dht-sensor", "promises.read")
-    @js.native
-    def read(`type`: js.UndefOr[SensorType], pin: Double): js.Promise[SensorData] = js.native
-    @JSImport("node-dht-sensor", "promises.read")
-    @js.native
-    def read(`type`: SensorType): js.Promise[SensorData] = js.native
+    @scala.inline
+    def initialize(testOptions: Test): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(testOptions.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def initialize(`type`: SensorType, pin: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("node-dht-sensor", "promises.readSync")
-    @js.native
-    def readSync(): SensorData = js.native
-    @JSImport("node-dht-sensor", "promises.readSync")
-    @js.native
-    def readSync(`type`: js.UndefOr[SensorType], pin: Double): SensorData = js.native
-    @JSImport("node-dht-sensor", "promises.readSync")
-    @js.native
-    def readSync(`type`: SensorType): SensorData = js.native
+    @scala.inline
+    def read(): js.Promise[SensorData] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[js.Promise[SensorData]]
+    @scala.inline
+    def read(`type`: Unit, pin: Double): js.Promise[SensorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SensorData]]
+    @scala.inline
+    def read(`type`: SensorType): js.Promise[SensorData] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.Promise[SensorData]]
+    @scala.inline
+    def read(`type`: SensorType, pin: Double): js.Promise[SensorData] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SensorData]]
     
-    @JSImport("node-dht-sensor", "promises.setMaxRetries")
-    @js.native
-    def setMaxRetries(maxRetries: Double): Unit = js.native
+    @scala.inline
+    def readSync(): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")().asInstanceOf[SensorData]
+    @scala.inline
+    def readSync(`type`: Unit, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+    @scala.inline
+    def readSync(`type`: SensorType): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any]).asInstanceOf[SensorData]
+    @scala.inline
+    def readSync(`type`: SensorType, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+    
+    @scala.inline
+    def setMaxRetries(maxRetries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxRetries")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @JSImport("node-dht-sensor", "read")
-  @js.native
-  def read(): SensorData = js.native
-  @JSImport("node-dht-sensor", "read")
-  @js.native
-  def read(`type`: js.UndefOr[SensorType], pin: Double): SensorData = js.native
-  @JSImport("node-dht-sensor", "read")
-  @js.native
-  def read(`type`: SensorType): SensorData = js.native
-  @JSImport("node-dht-sensor", "read")
-  @js.native
+  @scala.inline
+  def read(): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("read")().asInstanceOf[SensorData]
+  @scala.inline
+  def read(`type`: Unit, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+  @scala.inline
+  def read(`type`: SensorType): SensorData = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any]).asInstanceOf[SensorData]
+  @scala.inline
+  def read(`type`: SensorType, pin: Double): SensorData = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any])).asInstanceOf[SensorData]
+  @scala.inline
   def read(
     `type`: SensorType,
     pin: Double,
     callback: js.Function3[/* err */ ErrnoException | Null, /* temperature */ Double, /* humidity */ Double, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(`type`.asInstanceOf[js.Any], pin.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("node-dht-sensor", "setMaxRetries")
-  @js.native
-  def setMaxRetries(maxRetries: Double): Unit = js.native
+  @scala.inline
+  def setMaxRetries(maxRetries: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxRetries")(maxRetries.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type DHT11 = `11`
   
   type DHT22 = `22`
   
-  @js.native
   trait SensorData extends StObject {
     
-    var humidity: Double = js.native
+    var humidity: Double
     
-    var temperature: Double = js.native
+    var temperature: Double
   }
   object SensorData {
     

@@ -2,18 +2,16 @@ package typings.reactWidgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonPropsMod {
   
-  @js.native
   trait AutoFocus extends StObject {
     
     /**
       * Pass focus to component when it mounts.
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
   }
   object AutoFocus {
     
@@ -34,14 +32,15 @@ object commonPropsMod {
     }
   }
   
-  @js.native
-  trait ReactWidgetsCommonDropdownProps extends ReactWidgetsCommonProps {
+  trait ReactWidgetsCommonDropdownProps
+    extends StObject
+       with ReactWidgetsCommonProps {
     
     /**
       * Show "drop up" not "drop down"
       * @default false
       */
-    var dropUp: js.UndefOr[Boolean] = js.native
+    var dropUp: js.UndefOr[Boolean] = js.undefined
   }
   object ReactWidgetsCommonDropdownProps {
     
@@ -62,19 +61,18 @@ object commonPropsMod {
     }
   }
   
-  @js.native
   trait ReactWidgetsCommonProps extends StObject {
     
     /**
       * Disable the widget, if an Array of values is passed in only those values will be disabled.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean | js.Array[_]] = js.native
+    var disabled: js.UndefOr[Boolean | js.Array[js.Any]] = js.undefined
     
     /**
       * Used to label and annotate aria- attributes
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * Mark whether the SelectList should render right-to-left. This property can also be
@@ -82,14 +80,14 @@ object commonPropsMod {
       * level application components to specify the direction.
       * @default false
       */
-    var isRtl: js.UndefOr[Boolean] = js.native
+    var isRtl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Place the widget in a read-only mode, If an Array of values is passed in only those
       * values will be read-only.
       * @default false
       */
-    var readOnly: js.UndefOr[Boolean | js.Array[_]] = js.native
+    var readOnly: js.UndefOr[Boolean | js.Array[js.Any]] = js.undefined
   }
   object ReactWidgetsCommonProps {
     
@@ -103,7 +101,7 @@ object commonPropsMod {
     implicit class ReactWidgetsCommonPropsMutableBuilder[Self <: ReactWidgetsCommonProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDisabled(value: Boolean | js.Array[_]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
+      def setDisabled(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
@@ -124,7 +122,7 @@ object commonPropsMod {
       def setIsRtlUndefined: Self = StObject.set(x, "isRtl", js.undefined)
       
       @scala.inline
-      def setReadOnly(value: Boolean | js.Array[_]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
+      def setReadOnly(value: Boolean | js.Array[js.Any]): Self = StObject.set(x, "readOnly", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setReadOnlyUndefined: Self = StObject.set(x, "readOnly", js.undefined)

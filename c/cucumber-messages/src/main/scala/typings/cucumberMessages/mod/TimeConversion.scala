@@ -4,24 +4,23 @@ import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.IDurati
 import typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages.ITimestamp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TimeConversion {
   
-  @JSImport("cucumber-messages", "TimeConversion.durationToMilliseconds")
+  @JSImport("cucumber-messages", "TimeConversion")
   @js.native
-  def durationToMilliseconds(duration: IDuration): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cucumber-messages", "TimeConversion.millisecondsSinceEpochToTimestamp")
-  @js.native
-  def millisecondsSinceEpochToTimestamp(millisecondsSinceEpoch: Double): ITimestamp = js.native
+  @scala.inline
+  def durationToMilliseconds(duration: IDuration): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("durationToMilliseconds")(duration.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("cucumber-messages", "TimeConversion.millisecondsToDuration")
-  @js.native
-  def millisecondsToDuration(durationInMilliseconds: Double): IDuration = js.native
+  @scala.inline
+  def millisecondsSinceEpochToTimestamp(millisecondsSinceEpoch: Double): ITimestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("millisecondsSinceEpochToTimestamp")(millisecondsSinceEpoch.asInstanceOf[js.Any]).asInstanceOf[ITimestamp]
   
-  @JSImport("cucumber-messages", "TimeConversion.timestampToMillisecondsSinceEpoch")
-  @js.native
-  def timestampToMillisecondsSinceEpoch(timestamp: ITimestamp): Double = js.native
+  @scala.inline
+  def millisecondsToDuration(durationInMilliseconds: Double): IDuration = ^.asInstanceOf[js.Dynamic].applyDynamic("millisecondsToDuration")(durationInMilliseconds.asInstanceOf[js.Any]).asInstanceOf[IDuration]
+  
+  @scala.inline
+  def timestampToMillisecondsSinceEpoch(timestamp: ITimestamp): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("timestampToMillisecondsSinceEpoch")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

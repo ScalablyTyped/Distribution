@@ -2,18 +2,16 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteMessagesParameters extends StObject {
   
-  var channel: String = js.native
+  var channel: String
   
   // timetoken
-  var end: js.UndefOr[String | Double] = js.native
+  var end: js.UndefOr[String | Double] = js.undefined
   
-  var start: js.UndefOr[String | Double] = js.native
+  var start: js.UndefOr[String | Double] = js.undefined
 }
 object DeleteMessagesParameters {
   

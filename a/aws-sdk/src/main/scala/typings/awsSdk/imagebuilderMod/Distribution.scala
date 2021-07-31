@@ -2,26 +2,24 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Distribution extends StObject {
   
   /**
     * The specific AMI settings (for example, launch permissions, AMI tags). 
     */
-  var amiDistributionConfiguration: js.UndefOr[AmiDistributionConfiguration] = js.native
+  var amiDistributionConfiguration: js.UndefOr[AmiDistributionConfiguration] = js.undefined
   
   /**
     * The License Manager Configuration to associate with the AMI in the specified Region.
     */
-  var licenseConfigurationArns: js.UndefOr[LicenseConfigurationArnList] = js.native
+  var licenseConfigurationArns: js.UndefOr[LicenseConfigurationArnList] = js.undefined
   
   /**
     * The target Region. 
     */
-  var region: NonEmptyString = js.native
+  var region: NonEmptyString
 }
 object Distribution {
   

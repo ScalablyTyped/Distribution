@@ -4,7 +4,6 @@ import typings.firefoxWebextBrowser.browser.dns.DNSRecord
 import typings.firefoxWebextBrowser.browser.dns.ResolveFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,12 +15,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object dns {
   
+  @JSGlobal("browser.dns")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /* dns functions */
   /** Resolves a hostname to a DNS record. */
-  @JSGlobal("browser.dns.resolve")
-  @js.native
-  def resolve(hostname: String): js.Promise[DNSRecord] = js.native
-  @JSGlobal("browser.dns.resolve")
-  @js.native
-  def resolve(hostname: String, flags: ResolveFlags): js.Promise[DNSRecord] = js.native
+  @scala.inline
+  def resolve(hostname: String): js.Promise[DNSRecord] = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DNSRecord]]
+  @scala.inline
+  def resolve(hostname: String, flags: ResolveFlags): js.Promise[DNSRecord] = (^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(hostname.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DNSRecord]]
 }

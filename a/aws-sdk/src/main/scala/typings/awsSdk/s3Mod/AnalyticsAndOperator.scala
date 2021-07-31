@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticsAndOperator extends StObject {
   
   /**
     * The prefix to use when evaluating an AND predicate: The prefix that an object must have to be included in the metrics results.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.s3Mod.Prefix] = js.undefined
   
   /**
     * The list of tags to use when evaluating an AND predicate.
     */
-  var Tags: js.UndefOr[TagSet] = js.native
+  var Tags: js.UndefOr[TagSet] = js.undefined
 }
 object AnalyticsAndOperator {
   

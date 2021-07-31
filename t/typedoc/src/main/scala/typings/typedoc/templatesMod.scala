@@ -7,7 +7,6 @@ import typings.typedoc.stackMod.ResourceOrigin
 import typings.typedoc.stackMod.ResourceStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templatesMod {
@@ -22,7 +21,7 @@ object templatesMod {
   @JSImport("typedoc/dist/lib/output/utils/resources/templates", "Template")
   @js.native
   class Template[T] protected () extends Resource {
-    def this(origin: ResourceOrigin[_], name: String, fileName: String) = this()
+    def this(origin: ResourceOrigin[js.Any], name: String, fileName: String) = this()
     
     def getTemplate(): TemplateDelegate[T] = js.native
     

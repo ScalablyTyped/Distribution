@@ -4,25 +4,25 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.mixture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DistributionMixture extends Distribution {
+trait DistributionMixture
+  extends StObject
+     with Distribution {
   
-  var distributions: js.UndefOr[(js.Array[Distribution | SignalRef]) | SignalRef] = js.native
+  var distributions: js.UndefOr[(js.Array[Distribution | SignalRef]) | SignalRef] = js.undefined
   
-  var field: String | TransformField = js.native
+  var field: String | TransformField
   
-  var function: mixture = js.native
+  var function: mixture
   
-  var weights: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.native
+  var weights: js.UndefOr[(js.Array[Double | SignalRef]) | SignalRef] = js.undefined
 }
 object DistributionMixture {
   
   @scala.inline
-  def apply(field: String | TransformField, function: mixture): DistributionMixture = {
-    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = function.asInstanceOf[js.Any])
+  def apply(field: String | TransformField): DistributionMixture = {
+    val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], function = "mixture")
     __obj.asInstanceOf[DistributionMixture]
   }
   

@@ -3,17 +3,15 @@ package typings.amapJsApiPlaceSearch.anon
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Poi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: js.Array[Poi] = js.native
+  var data: js.Array[Poi]
   
-  var id: String = js.native
+  var id: String
   
-  var index: Double = js.native
+  var index: Double
 }
 object Data {
   

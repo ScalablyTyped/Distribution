@@ -5,62 +5,61 @@ import typings.extjs.Ext.data.IStore
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object app {
   
-  @js.native
   trait EventBus extends StObject
   
-  @js.native
-  trait IApplication extends IController {
+  trait IApplication
+    extends StObject
+       with IController {
     
     /** [Config Option] (String) */
-    var appFolder: js.UndefOr[java.lang.String] = js.native
+    var appFolder: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var appProperty: js.UndefOr[java.lang.String] = js.native
+    var appProperty: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var autoCreateViewport: js.UndefOr[Boolean] = js.native
+    var autoCreateViewport: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var controllers: js.UndefOr[js.Any] = js.native
+    var controllers: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var enableQuickTips: js.UndefOr[Boolean] = js.native
+    var enableQuickTips: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] Returns the base Ext app Application for this controller
       * @returns Ext.app.Application the application
       */
     @JSName("getApplication")
-    var getApplication_IApplication: js.UndefOr[js.Function0[this.type]] = js.native
+    var getApplication_IApplication: js.UndefOr[js.Function0[this.type]] = js.undefined
     
     /** [Method] Returns instance of a Controller with the given id
       * @param name Object
       * @returns Ext.app.Controller controller instance or undefined.
       */
     @JSName("getController")
-    var getController_IApplication: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], IController]] = js.native
+    var getController_IApplication: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], IController]] = js.undefined
     
     /** [Method] Called automatically when the page has completely loaded
       * @param profile String The detected application profile
       * @returns Boolean By default, the Application will dispatch to the configured startup controller and action immediately after running the launch function. Return false to prevent this behavior.
       */
-    var launch: js.UndefOr[js.Function1[/* profile */ js.UndefOr[java.lang.String], Boolean]] = js.native
+    var launch: js.UndefOr[js.Function1[/* profile */ js.UndefOr[java.lang.String], Boolean]] = js.undefined
     
     /** [Config Option] (String) */
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var namespaces: js.UndefOr[js.Any] = js.native
+    var namespaces: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var paths: js.UndefOr[js.Any] = js.native
+    var paths: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
   }
   object IApplication {
     
@@ -147,16 +146,17 @@ object app {
     }
   }
   
-  @js.native
-  trait IController extends IObservable {
+  trait IController
+    extends StObject
+       with IObservable {
     
     /** [Method] Registers one or more references
       * @param refs Object/Object[]
       */
-    var addRef: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.native
+    var addRef: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Property] (Ext.app.Application) */
-    var application: js.UndefOr[IApplication] = js.native
+    var application: js.UndefOr[IApplication] = js.undefined
     
     /** [Method] Adds listeners to components selected via Ext ComponentQuery
       * @param selectors String/Object If a String, the second argument is used as the listeners, otherwise an object of selectors -> listeners is assumed
@@ -164,72 +164,72 @@ object app {
       */
     var control: js.UndefOr[
         js.Function2[/* selectors */ js.UndefOr[js.Any], /* listeners */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the base Ext app Application for this controller
       * @returns Ext.app.Application the application
       */
-    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.native
+    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.undefined
     
     /** [Method] Returns instance of a Controller with the given id
       * @param id String
       * @returns Ext.app.Controller controller instance or undefined.
       */
-    var getController: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], this.type]] = js.native
+    var getController: js.UndefOr[js.Function1[/* id */ js.UndefOr[java.lang.String], this.type]] = js.undefined
     
     /** [Method] Returns a Model class with the given name
       * @param name String
       * @returns Ext.data.Model a model class.
       */
-    var getModel: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IModel]] = js.native
+    var getModel: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IModel]] = js.undefined
     
     /** [Method] Returns instance of a Store with the given name
       * @param name String
       * @returns Ext.data.Store a store instance.
       */
-    var getStore: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IStore]] = js.native
+    var getStore: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IStore]] = js.undefined
     
     /** [Method] Returns a View class with the given name
       * @param name String
       * @returns Ext.Base a view class.
       */
-    var getView: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IBase]] = js.native
+    var getView: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], IBase]] = js.undefined
     
     /** [Method] Returns true if a reference is registered
       * @param ref Object
       * @returns Boolean
       */
-    var hasRef: js.UndefOr[js.Function1[/* ref */ js.UndefOr[js.Any], Boolean]] = js.native
+    var hasRef: js.UndefOr[js.Function1[/* ref */ js.UndefOr[js.Any], Boolean]] = js.undefined
     
     /** [Config Option] (String) */
-    var id: js.UndefOr[java.lang.String] = js.native
+    var id: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] A template method that is called when your application boots
       * @param application Ext.app.Application
       */
-    var init: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.native
+    var init: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
     
     /** [Method] Adds listeners to different event sources also called event domains
       * @param to Object Config object containing domains, selectors and listeners.
       */
-    var listen: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], Unit]] = js.native
+    var listen: js.UndefOr[js.Function1[/* to */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var models: js.UndefOr[js.Any] = js.native
+    var models: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] A template method like init but called after the viewport is created
       * @param application Ext.app.Application
       */
-    var onLaunch: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.native
+    var onLaunch: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
     
     /** [Config Option] (Object[]) */
-    var refs: js.UndefOr[Array] = js.native
+    var refs: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var stores: js.UndefOr[js.Any] = js.native
+    var stores: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String/String[]) */
-    var views: js.UndefOr[js.Any] = js.native
+    var views: js.UndefOr[js.Any] = js.undefined
   }
   object IController {
     
@@ -348,14 +348,15 @@ object app {
   
   type IEventBus = IBase
   
-  @js.native
-  trait IEventDomain extends IBase {
+  trait IEventDomain
+    extends StObject
+       with IBase {
     
     /** [Config Option] (String) */
-    var idProperty: js.UndefOr[java.lang.String] = js.native
+    var idProperty: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Property] (Object) */
-    var instances: js.UndefOr[js.Any] = js.native
+    var instances: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] This method matches the firer of the event the target to the given selector
       * @param target Object The firer of the event.
@@ -368,12 +369,12 @@ object app {
           /* selector */ js.UndefOr[java.lang.String], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] This method is called by the derived class to monitor fireEvent calls
       * @param observable Ext.Class The Observable to monitor for events.
       */
-    var monitor: js.UndefOr[js.Function1[/* observable */ js.UndefOr[IClass], Unit]] = js.native
+    var monitor: js.UndefOr[js.Function1[/* observable */ js.UndefOr[IClass], Unit]] = js.undefined
   }
   object IEventDomain {
     
@@ -414,16 +415,12 @@ object app {
   
   object domain {
     
-    @js.native
     trait Component extends StObject
     
-    @js.native
     trait Controller extends StObject
     
-    @js.native
     trait Direct extends StObject
     
-    @js.native
     trait Global extends StObject
     
     type IComponent = IEventDomain
@@ -436,7 +433,6 @@ object app {
     
     type IStore = IEventDomain
     
-    @js.native
     trait Store extends StObject
   }
 }

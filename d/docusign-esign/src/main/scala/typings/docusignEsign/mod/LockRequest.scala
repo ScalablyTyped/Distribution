@@ -2,38 +2,36 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LockRequest extends StObject {
   
   /**
     * The number of seconds to lock the envelope for editing.  This value must be greater than `0` seconds.
     */
-  var lockDurationInSeconds: js.UndefOr[String] = js.native
+  var lockDurationInSeconds: js.UndefOr[String] = js.undefined
   
   /**
     * The type of lock.  Currently `edit` is the only supported type.
     */
-  var lockType: js.UndefOr[String] = js.native
+  var lockType: js.UndefOr[String] = js.undefined
   
   /**
     * The human-readable name of the application that is locking the envelope or template. This value displays to the user in error messages when lock conflicts occur.
     */
-  var lockedByApp: js.UndefOr[String] = js.native
+  var lockedByApp: js.UndefOr[String] = js.undefined
   
   /**
     * The [password for the template](https://support.docusign.com/en/guides/ndse-user-guide-template-passwords). If you are using a lock for a template that
     * has a password or an envelope that is based on a template that has a password, you must enter the `templatePassword` to save the changes.
     */
-  var templatePassword: js.UndefOr[String] = js.native
+  var templatePassword: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, a scratchpad is used to edit information.
     *
     */
-  var useScratchPad: js.UndefOr[String] = js.native
+  var useScratchPad: js.UndefOr[String] = js.undefined
 }
 object LockRequest {
   

@@ -11,22 +11,24 @@ import typings.contentfulManagement.commonTypesMod.MetaSysProps
 import typings.contentfulManagement.commonTypesMod.MetadataProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object assetMod {
   
-  @JSImport("contentful-management/dist/typings/entities/asset", "wrapAsset")
+  @JSImport("contentful-management/dist/typings/entities/asset", JSImport.Namespace)
   @js.native
-  def wrapAsset(http: AxiosInstance, data: AssetProps): Asset = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("contentful-management/dist/typings/entities/asset", "wrapAssetCollection")
-  @js.native
-  def wrapAssetCollection(http: AxiosInstance, data: CollectionProp[AssetProps]): Collection[Asset, AssetProps] = js.native
+  @scala.inline
+  def wrapAsset(http: AxiosInstance, data: AssetProps): Asset = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAsset")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Asset]
+  
+  @scala.inline
+  def wrapAssetCollection(http: AxiosInstance, data: CollectionProp[AssetProps]): Collection[Asset, AssetProps] = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapAssetCollection")(http.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Collection[Asset, AssetProps]]
   
   @js.native
   trait Asset
-    extends AssetProps
+    extends StObject
+       with AssetProps
        with DefaultElements[AssetProps]
        with AssetApi
   
@@ -246,12 +248,11 @@ object assetMod {
     def update(): js.Promise[Asset] = js.native
   }
   
-  @js.native
   trait AssetFileProp extends StObject {
     
-    var fields: Title = js.native
+    var fields: Title
     
-    var sys: MetaSysProps = js.native
+    var sys: MetaSysProps
   }
   object AssetFileProp {
     
@@ -272,12 +273,11 @@ object assetMod {
     }
   }
   
-  @js.native
   trait AssetProcessingForLocale extends StObject {
     
-    var processingCheckRetries: js.UndefOr[Double] = js.native
+    var processingCheckRetries: js.UndefOr[Double] = js.undefined
     
-    var processingCheckWait: js.UndefOr[Double] = js.native
+    var processingCheckWait: js.UndefOr[Double] = js.undefined
   }
   object AssetProcessingForLocale {
     
@@ -304,14 +304,13 @@ object assetMod {
     }
   }
   
-  @js.native
   trait AssetProps extends StObject {
     
-    var fields: Description = js.native
+    var fields: Description
     
-    var metadata: js.UndefOr[MetadataProps] = js.native
+    var metadata: js.UndefOr[MetadataProps] = js.undefined
     
-    var sys: localestringMetaSysProps = js.native
+    var sys: localestringMetaSysProps
   }
   object AssetProps {
     

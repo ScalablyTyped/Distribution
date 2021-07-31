@@ -2,21 +2,19 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityUserAssignedIdentitiesValue extends StObject {
   
   /**
     * The client id of user assigned identity.
     */
-  val clientId: js.UndefOr[String] = js.native
+  val clientId: js.UndefOr[String] = js.undefined
   
   /**
     * The principal id of user assigned identity.
     */
-  val principalId: js.UndefOr[String] = js.native
+  val principalId: js.UndefOr[String] = js.undefined
 }
 object IdentityUserAssignedIdentitiesValue {
   

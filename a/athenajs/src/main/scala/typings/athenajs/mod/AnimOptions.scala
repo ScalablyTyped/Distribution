@@ -2,25 +2,23 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimOptions extends StObject {
   
-  var frameDuration: Double = js.native
+  var frameDuration: Double
   
-  var frameHeight: Double = js.native
+  var frameHeight: Double
   
-  var frameSpacing: js.UndefOr[Double] = js.native
+  var frameSpacing: js.UndefOr[Double] = js.undefined
   
-  var frameWidth: Double = js.native
+  var frameWidth: Double
   
-  var numFrames: Double = js.native
+  var numFrames: Double
   
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
 }
 object AnimOptions {
   

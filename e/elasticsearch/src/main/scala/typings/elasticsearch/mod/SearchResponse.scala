@@ -3,23 +3,21 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.anon.Hits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResponse[T] extends StObject {
   
-  var _scroll_id: js.UndefOr[String] = js.native
+  var _scroll_id: js.UndefOr[String] = js.undefined
   
-  var _shards: ShardsResponse = js.native
+  var _shards: ShardsResponse
   
-  var aggregations: js.UndefOr[js.Any] = js.native
+  var aggregations: js.UndefOr[js.Any] = js.undefined
   
-  var hits: Hits[T] = js.native
+  var hits: Hits[T]
   
-  var timed_out: Boolean = js.native
+  var timed_out: Boolean
   
-  var took: Double = js.native
+  var took: Double
 }
 object SearchResponse {
   
@@ -30,7 +28,7 @@ object SearchResponse {
   }
   
   @scala.inline
-  implicit class SearchResponseMutableBuilder[Self <: SearchResponse[_], T] (val x: Self with SearchResponse[T]) extends AnyVal {
+  implicit class SearchResponseMutableBuilder[Self <: SearchResponse[?], T] (val x: Self & SearchResponse[T]) extends AnyVal {
     
     @scala.inline
     def setAggregations(value: js.Any): Self = StObject.set(x, "aggregations", value.asInstanceOf[js.Any])

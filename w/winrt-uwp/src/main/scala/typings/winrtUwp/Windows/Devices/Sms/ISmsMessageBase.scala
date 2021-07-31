@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Devices.Sms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interface specifies base functionality for all SMS message types. */
-@js.native
 trait ISmsMessageBase extends StObject {
   
   /** Gets the cellular class of the message. */
-  var cellularClass: CellularClass = js.native
+  var cellularClass: CellularClass
   
   /** Gets the unique device identifier associated with this message. */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /** Gets the message class of this message. */
-  var messageClass: SmsMessageClass = js.native
+  var messageClass: SmsMessageClass
   
   /** Gets the message type of this message. */
-  var messageType: SmsMessageType = js.native
+  var messageType: SmsMessageType
   
   /** Gets the ICCID (Integrated Circuit Card Identifier) of the SIM that received the message. */
-  var simIccId: String = js.native
+  var simIccId: String
 }
 object ISmsMessageBase {
   

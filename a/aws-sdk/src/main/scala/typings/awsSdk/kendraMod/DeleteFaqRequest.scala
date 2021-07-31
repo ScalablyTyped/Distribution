@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFaqRequest extends StObject {
   
   /**
     * The identifier of the FAQ to remove.
     */
-  var Id: FaqId = js.native
+  var Id: FaqId
   
   /**
     * The index to remove the FAQ from.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
 }
 object DeleteFaqRequest {
   

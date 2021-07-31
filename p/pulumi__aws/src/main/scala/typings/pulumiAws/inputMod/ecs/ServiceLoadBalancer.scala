@@ -3,31 +3,29 @@ package typings.pulumiAws.inputMod.ecs
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceLoadBalancer extends StObject {
   
   /**
     * The name of the container to associate with the load balancer (as it appears in a container definition).
     */
-  var containerName: Input[String] = js.native
+  var containerName: Input[String]
   
   /**
     * The port on the container to associate with the load balancer.
     */
-  var containerPort: Input[Double] = js.native
+  var containerPort: Input[Double]
   
   /**
     * The name of the ELB (Classic) to associate with the service.
     */
-  var elbName: js.UndefOr[Input[String]] = js.native
+  var elbName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The ARN of the Load Balancer target group to associate with the service.
     */
-  var targetGroupArn: js.UndefOr[Input[String]] = js.native
+  var targetGroupArn: js.UndefOr[Input[String]] = js.undefined
 }
 object ServiceLoadBalancer {
   

@@ -10,12 +10,12 @@ import typings.uirouterCore.urlMatcherFactoryMod.ParamFactory
 import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TypeofUrlMatcher
-  extends Instantiable3[
+  extends StObject
+     with Instantiable3[
       /* pattern */ String, 
       /* paramTypes */ ParamTypes, 
       /* paramFactory */ ParamFactory, 

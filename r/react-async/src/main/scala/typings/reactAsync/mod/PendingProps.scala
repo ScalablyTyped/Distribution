@@ -3,15 +3,13 @@ package typings.reactAsync.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingProps[T] extends StObject {
   
-  var children: js.UndefOr[PendingChildren[T]] = js.native
+  var children: js.UndefOr[PendingChildren[T]] = js.undefined
   
-  var initial: js.UndefOr[Boolean] = js.native
+  var initial: js.UndefOr[Boolean] = js.undefined
 }
 object PendingProps {
   
@@ -22,7 +20,7 @@ object PendingProps {
   }
   
   @scala.inline
-  implicit class PendingPropsMutableBuilder[Self <: PendingProps[_], T] (val x: Self with PendingProps[T]) extends AnyVal {
+  implicit class PendingPropsMutableBuilder[Self <: PendingProps[?], T] (val x: Self & PendingProps[T]) extends AnyVal {
     
     @scala.inline
     def setChildren(value: PendingChildren[T]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])

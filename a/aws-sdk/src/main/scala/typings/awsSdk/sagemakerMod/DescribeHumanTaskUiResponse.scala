@@ -2,33 +2,31 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHumanTaskUiResponse extends StObject {
   
   /**
     * The timestamp when the human task user interface was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the human task user interface (worker task template).
     */
-  var HumanTaskUiArn: typings.awsSdk.sagemakerMod.HumanTaskUiArn = js.native
+  var HumanTaskUiArn: typings.awsSdk.sagemakerMod.HumanTaskUiArn
   
   /**
     * The name of the human task user interface (worker task template).
     */
-  var HumanTaskUiName: typings.awsSdk.sagemakerMod.HumanTaskUiName = js.native
+  var HumanTaskUiName: typings.awsSdk.sagemakerMod.HumanTaskUiName
   
   /**
     * The status of the human task user interface (worker task template). Valid values are listed below.
     */
-  var HumanTaskUiStatus: js.UndefOr[typings.awsSdk.sagemakerMod.HumanTaskUiStatus] = js.native
+  var HumanTaskUiStatus: js.UndefOr[typings.awsSdk.sagemakerMod.HumanTaskUiStatus] = js.undefined
   
-  var UiTemplate: UiTemplateInfo = js.native
+  var UiTemplate: UiTemplateInfo
 }
 object DescribeHumanTaskUiResponse {
   

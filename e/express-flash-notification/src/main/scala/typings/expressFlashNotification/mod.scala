@@ -3,19 +3,19 @@ package typings.expressFlashNotification
 import typings.express.mod.Application_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-flash-notification", JSImport.Namespace)
-  @js.native
-  def apply(app: Application_, options: js.UndefOr[scala.Nothing], args: js.Any*): js.Any = js.native
-  @JSImport("express-flash-notification", JSImport.Namespace)
-  @js.native
-  def apply(app: Application_, options: efnOptions, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def apply(app: Application_, options: Unit, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(app: Application_, options: efnOptions, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("express-flash-notification", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait efnOptions extends StObject {
     
     var afterAllRender: js.UndefOr[
@@ -24,7 +24,7 @@ object mod {
           /* callback */ js.Function2[/* err */ js.Any, /* html */ String, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var beforeSingleRender: js.UndefOr[
         js.Function2[
@@ -32,15 +32,15 @@ object mod {
           /* callback */ js.Function2[/* err */ js.Any, /* item */ js.Any, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var localsName: js.UndefOr[String] = js.native
+    var localsName: js.UndefOr[String] = js.undefined
     
-    var sessionName: js.UndefOr[String] = js.native
+    var sessionName: js.UndefOr[String] = js.undefined
     
-    var utilityName: js.UndefOr[String] = js.native
+    var utilityName: js.UndefOr[String] = js.undefined
     
-    var viewName: js.UndefOr[String] = js.native
+    var viewName: js.UndefOr[String] = js.undefined
   }
   object efnOptions {
     
@@ -99,16 +99,15 @@ object mod {
     
     object Express {
       
-      @js.native
       trait FlashOptions extends StObject {
         
-        var message: js.UndefOr[String] = js.native
+        var message: js.UndefOr[String] = js.undefined
         
-        var redirect: js.UndefOr[Boolean] = js.native
+        var redirect: js.UndefOr[Boolean] = js.undefined
         
-        var `type`: js.UndefOr[String] = js.native
+        var `type`: js.UndefOr[String] = js.undefined
         
-        var url: js.UndefOr[String] = js.native
+        var url: js.UndefOr[String] = js.undefined
       }
       object FlashOptions {
         
@@ -152,11 +151,11 @@ object mod {
         
         def flash(`object`: FlashOptions): Unit = js.native
         def flash(`type`: String): Unit = js.native
-        def flash(`type`: String, message: js.UndefOr[scala.Nothing], redirect: String): Unit = js.native
-        def flash(`type`: String, message: js.UndefOr[scala.Nothing], redirect: Boolean): Unit = js.native
         def flash(`type`: String, message: String): Unit = js.native
         def flash(`type`: String, message: String, redirect: String): Unit = js.native
         def flash(`type`: String, message: String, redirect: Boolean): Unit = js.native
+        def flash(`type`: String, message: Unit, redirect: String): Unit = js.native
+        def flash(`type`: String, message: Unit, redirect: Boolean): Unit = js.native
       }
     }
   }

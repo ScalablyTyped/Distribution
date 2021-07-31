@@ -3,51 +3,44 @@ package typings.lzString
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
   object LZString {
     
-    @JSGlobal("LZString.compress")
+    @JSGlobal("LZString")
     @js.native
-    def compress(input: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSGlobal("LZString.compressToBase64")
-    @js.native
-    def compressToBase64(input: String): String = js.native
+    @scala.inline
+    def compress(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("LZString.compressToEncodedURIComponent")
-    @js.native
-    def compressToEncodedURIComponent(input: String): String = js.native
+    @scala.inline
+    def compressToBase64(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compressToBase64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("LZString.compressToUTF16")
-    @js.native
-    def compressToUTF16(input: String): String = js.native
+    @scala.inline
+    def compressToEncodedURIComponent(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compressToEncodedURIComponent")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("LZString.compressToUint8Array")
-    @js.native
-    def compressToUint8Array(uncompressed: String): Uint8Array = js.native
+    @scala.inline
+    def compressToUTF16(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("compressToUTF16")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("LZString.decompress")
-    @js.native
-    def decompress(compressed: String): String = js.native
+    @scala.inline
+    def compressToUint8Array(uncompressed: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("compressToUint8Array")(uncompressed.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
     
-    @JSGlobal("LZString.decompressFromBase64")
-    @js.native
-    def decompressFromBase64(input: String): String = js.native
+    @scala.inline
+    def decompress(compressed: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompress")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("LZString.decompressFromEncodedURIComponent")
-    @js.native
-    def decompressFromEncodedURIComponent(compressed: String): String = js.native
+    @scala.inline
+    def decompressFromBase64(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressFromBase64")(input.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("LZString.decompressFromUTF16")
-    @js.native
-    def decompressFromUTF16(compressed: String): String = js.native
+    @scala.inline
+    def decompressFromEncodedURIComponent(compressed: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressFromEncodedURIComponent")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("LZString.decompressFromUint8Array")
-    @js.native
-    def decompressFromUint8Array(compressed: Uint8Array): String = js.native
+    @scala.inline
+    def decompressFromUTF16(compressed: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressFromUTF16")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def decompressFromUint8Array(compressed: Uint8Array): String = ^.asInstanceOf[js.Dynamic].applyDynamic("decompressFromUint8Array")(compressed.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

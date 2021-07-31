@@ -9,23 +9,23 @@ import typings.reactMdCard.reactMdCardStrings.start
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardActionsMod {
   
   @JSImport("@react-md/card/types/CardActions", "CardActions")
   @js.native
-  val CardActions: ForwardRefExoticComponent[CardActionsProps with RefAttributes[HTMLDivElement]] = js.native
+  val CardActions: ForwardRefExoticComponent[CardActionsProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait CardActionsProps extends HTMLAttributes[HTMLDivElement] {
+  trait CardActionsProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     /**
       * The alignment to use for the card actions. This is really just a simple
       * pass through to the `justify-content` flex property.
       */
-    var align: js.UndefOr[start | end | center] = js.native
+    var align: js.UndefOr[start | end | center] = js.undefined
   }
   object CardActionsProps {
     

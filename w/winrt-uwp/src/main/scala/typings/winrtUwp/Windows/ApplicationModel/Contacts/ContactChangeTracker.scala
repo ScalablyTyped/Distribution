@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides functionality for monitoring changes to Contact objects in the ContactStore . */
-@js.native
 trait ContactChangeTracker extends StObject {
   
   /** Call this method to enable change tracking. */
-  def enable(): Unit = js.native
+  def enable(): Unit
   
   /**
     * Gets a ContactChangeReader that can be used to process changes.
     * @return A ContactChangeReader that can be used to process changes.
     */
-  def getChangeReader(): ContactChangeReader = js.native
+  def getChangeReader(): ContactChangeReader
   
   /** Call this method to reset the change tracker if your app receives ContactChangeType.ChangeTrackingLost . */
-  def reset(): Unit = js.native
+  def reset(): Unit
 }
 object ContactChangeTracker {
   

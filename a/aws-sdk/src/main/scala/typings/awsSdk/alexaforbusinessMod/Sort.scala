@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sort extends StObject {
   
   /**
     * The sort key of a sort object.
     */
-  var Key: SortKey = js.native
+  var Key: SortKey
   
   /**
     * The sort value of a sort object.
     */
-  var Value: SortValue = js.native
+  var Value: SortValue
 }
 object Sort {
   

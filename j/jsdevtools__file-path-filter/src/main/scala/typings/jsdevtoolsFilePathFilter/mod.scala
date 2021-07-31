@@ -8,38 +8,32 @@ import typings.jsdevtoolsFilePathFilter.typesMod.Filters
 import typings.jsdevtoolsFilePathFilter.typesMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jsdevtools/file-path-filter", JSImport.Default)
+  @JSImport("@jsdevtools/file-path-filter", JSImport.Namespace)
   @js.native
-  def default(criteria: FilterCriterion*): FilterFunction = js.native
-  @JSImport("@jsdevtools/file-path-filter", JSImport.Default)
-  @js.native
-  def default(criteria: AnyFilter): FilterFunction = js.native
-  @JSImport("@jsdevtools/file-path-filter", JSImport.Default)
-  @js.native
-  def default(filters: Filters[FilterCriteria]): FilterFunction = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@jsdevtools/file-path-filter", "createFilter")
-  @js.native
-  def createFilter(options: Options, criteria: FilterCriterion*): FilterFunction = js.native
-  @JSImport("@jsdevtools/file-path-filter", "createFilter")
-  @js.native
-  def createFilter(options: Options, criteria: AnyFilter): FilterFunction = js.native
-  @JSImport("@jsdevtools/file-path-filter", "createFilter")
-  @js.native
-  def createFilter(options: Options, filters: Filters[FilterCriteria]): FilterFunction = js.native
+  @scala.inline
+  def default(criteria: FilterCriterion*): FilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(criteria.asInstanceOf[js.Any]).asInstanceOf[FilterFunction]
+  @scala.inline
+  def default(criteria: AnyFilter): FilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(criteria.asInstanceOf[js.Any]).asInstanceOf[FilterFunction]
+  @scala.inline
+  def default(filters: Filters[FilterCriteria]): FilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(filters.asInstanceOf[js.Any]).asInstanceOf[FilterFunction]
   
-  @JSImport("@jsdevtools/file-path-filter", "filePathFilter")
-  @js.native
-  def filePathFilter(criteria: FilterCriterion*): FilterFunction = js.native
-  @JSImport("@jsdevtools/file-path-filter", "filePathFilter")
-  @js.native
-  def filePathFilter(criteria: AnyFilter): FilterFunction = js.native
-  @JSImport("@jsdevtools/file-path-filter", "filePathFilter")
-  @js.native
-  def filePathFilter(filters: Filters[FilterCriteria]): FilterFunction = js.native
+  @scala.inline
+  def createFilter(options: Options, criteria: FilterCriterion*): FilterFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(options.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[FilterFunction]
+  @scala.inline
+  def createFilter(options: Options, criteria: AnyFilter): FilterFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(options.asInstanceOf[js.Any], criteria.asInstanceOf[js.Any])).asInstanceOf[FilterFunction]
+  @scala.inline
+  def createFilter(options: Options, filters: Filters[FilterCriteria]): FilterFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("createFilter")(options.asInstanceOf[js.Any], filters.asInstanceOf[js.Any])).asInstanceOf[FilterFunction]
+  
+  @scala.inline
+  def filePathFilter(criteria: FilterCriterion*): FilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("filePathFilter")(criteria.asInstanceOf[js.Any]).asInstanceOf[FilterFunction]
+  @scala.inline
+  def filePathFilter(criteria: AnyFilter): FilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("filePathFilter")(criteria.asInstanceOf[js.Any]).asInstanceOf[FilterFunction]
+  @scala.inline
+  def filePathFilter(filters: Filters[FilterCriteria]): FilterFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("filePathFilter")(filters.asInstanceOf[js.Any]).asInstanceOf[FilterFunction]
 }

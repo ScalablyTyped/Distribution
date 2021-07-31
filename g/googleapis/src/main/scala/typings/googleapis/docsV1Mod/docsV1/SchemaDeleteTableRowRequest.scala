@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deletes a row from a table.
   */
-@js.native
 trait SchemaDeleteTableRowRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaDeleteTableRowRequest extends StObject {
     * multiple rows, all rows that the cell spans will be deleted. If no rows
     * remain in the table after this deletion, the whole table is deleted.
     */
-  var tableCellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var tableCellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
 }
 object SchemaDeleteTableRowRequest {
   

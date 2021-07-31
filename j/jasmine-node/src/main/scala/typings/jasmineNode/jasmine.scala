@@ -5,15 +5,13 @@ import typings.jasmineNode.anon.Consolidate
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmine {
   
-  @js.native
   trait Env extends StObject {
     
-    var defaultTimeoutInterval: Double = js.native
+    var defaultTimeoutInterval: Double
   }
   object Env {
     
@@ -31,28 +29,27 @@ object jasmine {
     }
   }
   
-  @js.native
   trait ExecuteSpecsOptions extends StObject {
     
-    var growl: js.UndefOr[Boolean] = js.native
+    var growl: js.UndefOr[Boolean] = js.undefined
     
-    var includeStackTrace: js.UndefOr[Boolean] = js.native
+    var includeStackTrace: js.UndefOr[Boolean] = js.undefined
     
-    var isVerbose: js.UndefOr[Boolean] = js.native
+    var isVerbose: js.UndefOr[Boolean] = js.undefined
     
-    var junitreport: js.UndefOr[Consolidate] = js.native
+    var junitreport: js.UndefOr[Consolidate] = js.undefined
     
-    var onComplete: js.UndefOr[js.Function1[/* runner */ Runner, Unit]] = js.native
+    var onComplete: js.UndefOr[js.Function1[/* runner */ Runner, Unit]] = js.undefined
     
-    var regExpSpec: RegExp = js.native
+    var regExpSpec: RegExp
     
-    var showColors: js.UndefOr[Boolean] = js.native
+    var showColors: js.UndefOr[Boolean] = js.undefined
     
-    var specFolders: js.Array[String] = js.native
+    var specFolders: js.Array[String]
     
-    var teamcity: js.UndefOr[String | Boolean] = js.native
+    var teamcity: js.UndefOr[String | Boolean] = js.undefined
     
-    var useRequireJs: js.UndefOr[Boolean] = js.native
+    var useRequireJs: js.UndefOr[Boolean] = js.undefined
   }
   object ExecuteSpecsOptions {
     
@@ -124,12 +121,11 @@ object jasmine {
     }
   }
   
-  @js.native
   trait JasmineNode extends StObject {
     
-    def executeSpecsInFolder(options: ExecuteSpecsOptions): Unit = js.native
+    def executeSpecsInFolder(options: ExecuteSpecsOptions): Unit
     
-    def loadHelpersInFolder(path: String, pattern: RegExp): Unit = js.native
+    def loadHelpersInFolder(path: String, pattern: RegExp): Unit
   }
   object JasmineNode {
     

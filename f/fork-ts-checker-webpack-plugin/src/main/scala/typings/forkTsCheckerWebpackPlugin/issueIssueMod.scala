@@ -4,33 +4,33 @@ import typings.forkTsCheckerWebpackPlugin.issueLocationMod.IssueLocation
 import typings.forkTsCheckerWebpackPlugin.issueSeverityMod.IssueSeverity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issueIssueMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/Issue", "deduplicateAndSortIssues")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/Issue", JSImport.Namespace)
   @js.native
-  def deduplicateAndSortIssues(issues: js.Array[Issue]): js.Array[Issue] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/Issue", "isIssue")
-  @js.native
-  def isIssue(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/Issue.Issue */ Boolean = js.native
+  @scala.inline
+  def deduplicateAndSortIssues(issues: js.Array[Issue]): js.Array[Issue] = ^.asInstanceOf[js.Dynamic].applyDynamic("deduplicateAndSortIssues")(issues.asInstanceOf[js.Any]).asInstanceOf[js.Array[Issue]]
   
-  @js.native
+  @scala.inline
+  def isIssue(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/Issue.Issue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIssue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/Issue.Issue */ Boolean]
+  
   trait Issue extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[IssueLocation] = js.native
+    var location: js.UndefOr[IssueLocation] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var origin: String = js.native
+    var origin: String
     
-    var severity: IssueSeverity = js.native
+    var severity: IssueSeverity
   }
   object Issue {
     

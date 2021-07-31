@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationChannel extends StObject {
   
   /**
     * The ARN of an IAM role that gives Amazon Rekognition publishing permissions to the Amazon SNS topic. 
     */
-  var RoleArn: typings.awsSdk.rekognitionMod.RoleArn = js.native
+  var RoleArn: typings.awsSdk.rekognitionMod.RoleArn
   
   /**
     * The Amazon SNS topic to which Amazon Rekognition to posts the completion status.
     */
-  var SNSTopicArn: typings.awsSdk.rekognitionMod.SNSTopicArn = js.native
+  var SNSTopicArn: typings.awsSdk.rekognitionMod.SNSTopicArn
 }
 object NotificationChannel {
   

@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transferUserMod {
@@ -75,6 +74,10 @@ object transferUserMod {
   /* static members */
   object User {
     
+    @JSImport("@pulumi/aws/transfer/user", "User")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing User resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -84,72 +87,66 @@ object transferUserMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/transfer/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID]): User = js.native
-    @JSImport("@pulumi/aws/transfer/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): User = js.native
-    @JSImport("@pulumi/aws/transfer/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserState): User = js.native
-    @JSImport("@pulumi/aws/transfer/user", "User.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserState): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[User]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: UserState, opts: CustomResourceOptions): User = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[User]
     
     /**
       * Returns true if the given object is an instance of User.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/transfer/user", "User.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/transfer/user.User */ Boolean]
   }
   
-  @js.native
   trait UserArgs extends StObject {
     
     /**
       * The landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a `/`.  The first item in the path is the name of the home bucket (accessible as `${Transfer:HomeBucket}` in the policy) and the rest is the home directory (accessible as `${Transfer:HomeDirectory}` in the policy). For example, `/example-bucket-1234/username` would set the home bucket to `example-bucket-1234` and the home directory to `username`.
       */
-    val homeDirectory: js.UndefOr[Input[String]] = js.native
+    val homeDirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. documented below.
       */
     val homeDirectoryMappings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The type of landing directory (folder) you mapped for your users' home directory. Valid values are `PATH` and `LOGICAL`.
       */
-    val homeDirectoryType: js.UndefOr[Input[String]] = js.native
+    val homeDirectoryType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include `${Transfer:UserName}`, `${Transfer:HomeDirectory}`, and `${Transfer:HomeBucket}`. These are evaluated on-the-fly when navigating the bucket.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of an IAM role that allows the service to controls your user’s access to your Amazon S3 bucket.
       */
-    val role: Input[String] = js.native
+    val role: Input[String]
     
     /**
       * The Server ID of the Transfer Server (e.g. `s-12345678`)
       */
-    val serverId: Input[String] = js.native
+    val serverId: Input[String]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name used for log in to your SFTP server.
       */
-    val userName: Input[String] = js.native
+    val userName: Input[String]
   }
   object UserArgs {
     
@@ -206,55 +203,54 @@ object transferUserMod {
     }
   }
   
-  @js.native
   trait UserState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of Transfer User
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The landing directory (folder) for a user when they log in to the server using their SFTP client.  It should begin with a `/`.  The first item in the path is the name of the home bucket (accessible as `${Transfer:HomeBucket}` in the policy) and the rest is the home directory (accessible as `${Transfer:HomeDirectory}` in the policy). For example, `/example-bucket-1234/username` would set the home bucket to `example-bucket-1234` and the home directory to `username`.
       */
-    val homeDirectory: js.UndefOr[Input[String]] = js.native
+    val homeDirectory: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Logical directory mappings that specify what S3 paths and keys should be visible to your user and how you want to make them visible. documented below.
       */
     val homeDirectoryMappings: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.transfer.UserHomeDirectoryMapping]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The type of landing directory (folder) you mapped for your users' home directory. Valid values are `PATH` and `LOGICAL`.
       */
-    val homeDirectoryType: js.UndefOr[Input[String]] = js.native
+    val homeDirectoryType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An IAM JSON policy document that scopes down user access to portions of their Amazon S3 bucket. IAM variables you can use inside this policy include `${Transfer:UserName}`, `${Transfer:HomeDirectory}`, and `${Transfer:HomeBucket}`. These are evaluated on-the-fly when navigating the bucket.
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of an IAM role that allows the service to controls your user’s access to your Amazon S3 bucket.
       */
-    val role: js.UndefOr[Input[String]] = js.native
+    val role: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Server ID of the Transfer Server (e.g. `s-12345678`)
       */
-    val serverId: js.UndefOr[Input[String]] = js.native
+    val serverId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The name used for log in to your SFTP server.
       */
-    val userName: js.UndefOr[Input[String]] = js.native
+    val userName: js.UndefOr[Input[String]] = js.undefined
   }
   object UserState {
     

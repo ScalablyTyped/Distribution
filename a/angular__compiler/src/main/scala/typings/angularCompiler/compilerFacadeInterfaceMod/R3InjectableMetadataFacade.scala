@@ -2,29 +2,27 @@ package typings.angularCompiler.compilerFacadeInterfaceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait R3InjectableMetadataFacade extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var providedIn: js.Any = js.native
+  var providedIn: js.Any
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
   
-  var typeArgumentCount: Double = js.native
+  var typeArgumentCount: Double
   
-  var useClass: js.UndefOr[js.Any] = js.native
+  var useClass: js.UndefOr[js.Any] = js.undefined
   
-  var useExisting: js.UndefOr[js.Any] = js.native
+  var useExisting: js.UndefOr[js.Any] = js.undefined
   
-  var useFactory: js.UndefOr[js.Any] = js.native
+  var useFactory: js.UndefOr[js.Any] = js.undefined
   
-  var useValue: js.UndefOr[js.Any] = js.native
+  var useValue: js.UndefOr[js.Any] = js.undefined
   
-  var userDeps: js.UndefOr[js.Array[R3DependencyMetadataFacade]] = js.native
+  var userDeps: js.UndefOr[js.Array[R3DependencyMetadataFacade]] = js.undefined
 }
 object R3InjectableMetadataFacade {
   

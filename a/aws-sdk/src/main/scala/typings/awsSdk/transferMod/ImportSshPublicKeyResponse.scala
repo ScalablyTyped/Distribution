@@ -2,26 +2,24 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportSshPublicKeyResponse extends StObject {
   
   /**
     * A system-assigned unique identifier for a server.
     */
-  var ServerId: typings.awsSdk.transferMod.ServerId = js.native
+  var ServerId: typings.awsSdk.transferMod.ServerId
   
   /**
     * The name given to a public key by the system that was imported.
     */
-  var SshPublicKeyId: typings.awsSdk.transferMod.SshPublicKeyId = js.native
+  var SshPublicKeyId: typings.awsSdk.transferMod.SshPublicKeyId
   
   /**
     * A user name assigned to the ServerID value that you specified.
     */
-  var UserName: typings.awsSdk.transferMod.UserName = js.native
+  var UserName: typings.awsSdk.transferMod.UserName
 }
 object ImportSshPublicKeyResponse {
   

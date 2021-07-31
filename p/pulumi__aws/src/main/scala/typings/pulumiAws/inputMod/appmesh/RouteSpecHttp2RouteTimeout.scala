@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttp2RouteTimeout extends StObject {
   
   /**
     * The idle timeout. An idle timeout bounds the amount of time that a connection may be idle.
     */
-  var idle: js.UndefOr[Input[RouteSpecHttp2RouteTimeoutIdle]] = js.native
+  var idle: js.UndefOr[Input[RouteSpecHttp2RouteTimeoutIdle]] = js.undefined
   
   /**
     * The per request timeout.
     */
-  var perRequest: js.UndefOr[Input[RouteSpecHttp2RouteTimeoutPerRequest]] = js.native
+  var perRequest: js.UndefOr[Input[RouteSpecHttp2RouteTimeoutPerRequest]] = js.undefined
 }
 object RouteSpecHttp2RouteTimeout {
   

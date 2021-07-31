@@ -9,7 +9,6 @@ import typings.parse.mod.global.Parse.Schema._FieldType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,7 +41,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("Parse.File")
 @js.native
-class File protected () extends _FieldType {
+class File protected ()
+  extends StObject
+     with _FieldType {
   def this(name: String, data: js.Array[Double]) = this()
   def this(name: String, data: Base64) = this()
   def this(name: String, data: Size) = this()
@@ -71,18 +72,18 @@ class File protected () extends _FieldType {
     */
   def getData(): js.Promise[String] = js.native
   
-  def metadata(): Record[String, _] = js.native
+  def metadata(): Record[String, js.Any] = js.native
   
   def name(): String = js.native
   
   def save(): js.Promise[File] = js.native
   def save(options: SuccessFailureOptions): js.Promise[File] = js.native
   
-  def setMetadata(metadata: Record[String, _]): Unit = js.native
+  def setMetadata(metadata: Record[String, js.Any]): Unit = js.native
   
-  def setTags(tags: Record[String, _]): Unit = js.native
+  def setTags(tags: Record[String, js.Any]): Unit = js.native
   
-  def tags(): Record[String, _] = js.native
+  def tags(): Record[String, js.Any] = js.native
   
   def toJSON(): Name = js.native
   

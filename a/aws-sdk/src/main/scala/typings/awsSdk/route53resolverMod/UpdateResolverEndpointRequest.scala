@@ -2,21 +2,19 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResolverEndpointRequest extends StObject {
   
   /**
     * The name of the Resolver endpoint that you want to update.
     */
-  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.undefined
   
   /**
     * The ID of the Resolver endpoint that you want to update.
     */
-  var ResolverEndpointId: ResourceId = js.native
+  var ResolverEndpointId: ResourceId
 }
 object UpdateResolverEndpointRequest {
   

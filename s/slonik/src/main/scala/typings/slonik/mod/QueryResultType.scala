@@ -6,25 +6,23 @@ import typings.slonik.slonikStrings.SELECT
 import typings.slonik.slonikStrings.UPDATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResultType[T] extends StObject {
   
-  var command: DELETE | INSERT | SELECT | UPDATE = js.native
+  var command: DELETE | INSERT | SELECT | UPDATE
   
-  var fields: js.Array[FieldType] = js.native
+  var fields: js.Array[FieldType]
   
-  var notices: js.Array[NoticeType] = js.native
+  var notices: js.Array[NoticeType]
   
-  var oid: Double | Null = js.native
+  var oid: Double | Null
   
-  var rowAsArray: Boolean = js.native
+  var rowAsArray: Boolean
   
-  var rowCount: Double = js.native
+  var rowCount: Double
   
-  var rows: js.Array[T] = js.native
+  var rows: js.Array[T]
 }
 object QueryResultType {
   
@@ -37,12 +35,12 @@ object QueryResultType {
     rowCount: Double,
     rows: js.Array[T]
   ): QueryResultType[T] = {
-    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], notices = notices.asInstanceOf[js.Any], rowAsArray = rowAsArray.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(command = command.asInstanceOf[js.Any], fields = fields.asInstanceOf[js.Any], notices = notices.asInstanceOf[js.Any], rowAsArray = rowAsArray.asInstanceOf[js.Any], rowCount = rowCount.asInstanceOf[js.Any], rows = rows.asInstanceOf[js.Any], oid = null)
     __obj.asInstanceOf[QueryResultType[T]]
   }
   
   @scala.inline
-  implicit class QueryResultTypeMutableBuilder[Self <: QueryResultType[_], T] (val x: Self with QueryResultType[T]) extends AnyVal {
+  implicit class QueryResultTypeMutableBuilder[Self <: QueryResultType[?], T] (val x: Self & QueryResultType[T]) extends AnyVal {
     
     @scala.inline
     def setCommand(value: DELETE | INSERT | SELECT | UPDATE): Self = StObject.set(x, "command", value.asInstanceOf[js.Any])

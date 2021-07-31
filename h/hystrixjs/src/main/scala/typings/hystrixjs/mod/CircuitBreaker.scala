@@ -2,19 +2,17 @@ package typings.hystrixjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CircuitBreaker extends StObject {
   
-  def allowRequest(): Boolean = js.native
+  def allowRequest(): Boolean
   
-  def allowSingleTest(): Boolean = js.native
+  def allowSingleTest(): Boolean
   
-  def isOpen(): Boolean = js.native
+  def isOpen(): Boolean
   
-  def markSuccess(): Unit = js.native
+  def markSuccess(): Unit
 }
 object CircuitBreaker {
   

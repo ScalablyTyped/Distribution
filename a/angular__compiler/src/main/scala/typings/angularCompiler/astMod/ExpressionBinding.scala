@@ -2,12 +2,13 @@ package typings.angularCompiler.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/expression_parser/ast", "ExpressionBinding")
 @js.native
-class ExpressionBinding protected () extends TemplateBinding {
+class ExpressionBinding protected ()
+  extends StObject
+     with TemplateBinding {
   /**
     * @param sourceSpan entire span of the binding.
     * @param key binding name, like ngForOf, ngForTrackBy, ngIf, along with its

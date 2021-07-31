@@ -7,24 +7,24 @@ import typings.reactNative.reactNativeStrings.`on-drag`
 import typings.reactNative.reactNativeStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewPagerAndroidProps extends ViewProps {
+trait ViewPagerAndroidProps
+  extends StObject
+     with ViewProps {
   
   /**
     * Index of initial page that should be selected. Use `setPage` method to
     * update the page, and `onPageSelected` to monitor page changes
     */
-  var initialPage: js.UndefOr[Double] = js.native
+  var initialPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Determines whether the keyboard gets dismissed in response to a drag.
     *   - 'none' (the default), drags do not dismiss the keyboard.
     *   - 'on-drag', the keyboard is dismissed when a drag begins.
     */
-  var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.native
+  var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.undefined
   
   /**
     * Executed when transitioning between pages (ether because of animation for
@@ -37,7 +37,7 @@ trait ViewPagerAndroidProps extends ViewProps {
     */
   var onPageScroll: js.UndefOr[
     js.Function1[/* event */ NativeSyntheticEvent[ViewPagerAndroidOnPageScrollEventData], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Function called when the page scrolling state has changed.
@@ -47,7 +47,7 @@ trait ViewPagerAndroidProps extends ViewProps {
     * - settling, meaning that there was an interaction with the page scroller, and the
     *   page scroller is now finishing it's closing or opening animation
     */
-  var onPageScrollStateChanged: js.UndefOr[js.Function1[/* state */ Idle | Dragging | Settling, Unit]] = js.native
+  var onPageScrollStateChanged: js.UndefOr[js.Function1[/* state */ Idle | Dragging | Settling, Unit]] = js.undefined
   
   /**
     * This callback will be called once ViewPager finish navigating to selected page
@@ -57,19 +57,19 @@ trait ViewPagerAndroidProps extends ViewProps {
     */
   var onPageSelected: js.UndefOr[
     js.Function1[/* event */ NativeSyntheticEvent[ViewPagerAndroidOnPageSelectedEventData], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Blank space to show between pages. This is only visible while scrolling, pages are still
     * edge-to-edge.
     */
-  var pageMargin: js.UndefOr[Double] = js.native
+  var pageMargin: js.UndefOr[Double] = js.undefined
   
   /**
     * When false, the content does not scroll.
     * The default value is true.
     */
-  var scrollEnabled: js.UndefOr[Boolean] = js.native
+  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object ViewPagerAndroidProps {
   

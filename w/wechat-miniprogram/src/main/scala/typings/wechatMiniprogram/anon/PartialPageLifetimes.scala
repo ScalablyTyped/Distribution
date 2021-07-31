@@ -3,18 +3,16 @@ package typings.wechatMiniprogram.anon
 import typings.wechatMiniprogram.WechatMiniprogram.Page.IResizeOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Component.PageLifetimes> */
-@js.native
 trait PartialPageLifetimes extends StObject {
   
-  var hide: js.UndefOr[js.Function0[Unit]] = js.native
+  var hide: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var resize: js.UndefOr[js.Function1[/* size */ IResizeOption, Unit]] = js.native
+  var resize: js.UndefOr[js.Function1[/* size */ IResizeOption, Unit]] = js.undefined
   
-  var show: js.UndefOr[js.Function0[Unit]] = js.native
+  var show: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object PartialPageLifetimes {
   

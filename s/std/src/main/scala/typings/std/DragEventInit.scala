@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DragEventInit extends MouseEventInit {
+trait DragEventInit
+  extends StObject
+     with MouseEventInit {
   
-  var dataTransfer: js.UndefOr[DataTransfer | Null] = js.native
+  var dataTransfer: js.UndefOr[DataTransfer | Null] = js.undefined
 }
 object DragEventInit {
   

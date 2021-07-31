@@ -4,13 +4,13 @@ import typings.log4js.log4jsStrings.colored
 import typings.log4js.log4jsStrings.coloured
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColoredLayout extends Layout {
+trait ColoredLayout
+  extends StObject
+     with Layout {
   
-  var `type`: colored | coloured = js.native
+  var `type`: colored | coloured
 }
 object ColoredLayout {
   

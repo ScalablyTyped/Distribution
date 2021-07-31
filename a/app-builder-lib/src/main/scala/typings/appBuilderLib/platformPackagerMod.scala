@@ -19,10 +19,13 @@ import typings.builderUtil.mod.AsyncTaskManager
 import typings.builderUtil.mod.DebugLogger
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformPackagerMod {
+  
+  @JSImport("app-builder-lib/out/platformPackager", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("app-builder-lib/out/platformPackager", "PlatformPackager")
   @js.native
@@ -46,75 +49,27 @@ object platformPackagerMod {
     var computeAsarOptions: js.Any = js.native
     
     def computeSafeArtifactName(suggestedName: String, ext: String): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: String,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      skipArchIfX64: js.UndefOr[scala.Nothing],
-      safePattern: String
-    ): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: String, ext: String, arch: js.UndefOr[scala.Nothing], skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: String,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean,
-      safePattern: String
-    ): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: String,
-      ext: String,
-      arch: Null,
-      skipArchIfX64: js.UndefOr[scala.Nothing],
-      safePattern: String
-    ): String | Null = js.native
     def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Boolean): String | Null = js.native
     def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Null, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipArchIfX64: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Unit, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
     def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: String,
-      ext: String,
-      arch: Arch,
-      skipArchIfX64: js.UndefOr[scala.Nothing],
-      safePattern: String
-    ): String | Null = js.native
     def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipArchIfX64: Boolean): String | Null = js.native
     def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: String, ext: String, arch: Arch, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: Null,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      skipArchIfX64: js.UndefOr[scala.Nothing],
-      safePattern: String
-    ): String | Null = js.native
-    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: js.UndefOr[scala.Nothing], skipArchIfX64: Boolean): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: Null,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean,
-      safePattern: String
-    ): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: Null,
-      ext: String,
-      arch: Null,
-      skipArchIfX64: js.UndefOr[scala.Nothing],
-      safePattern: String
-    ): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipArchIfX64: Boolean): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Null, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipArchIfX64: Boolean): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Unit, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch): String | Null = js.native
-    def computeSafeArtifactName(
-      suggestedName: Null,
-      ext: String,
-      arch: Arch,
-      skipArchIfX64: js.UndefOr[scala.Nothing],
-      safePattern: String
-    ): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Boolean): String | Null = js.native
     def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Boolean, safePattern: String): String | Null = js.native
+    def computeSafeArtifactName(suggestedName: Null, ext: String, arch: Arch, skipArchIfX64: Unit, safePattern: String): String | Null = js.native
     
     def config: Configuration = js.native
     
@@ -153,88 +108,14 @@ object platformPackagerMod {
       targets: js.Array[Target]
     ): js.Promise[Unit] = js.native
     
-    def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String): String = js.native
-    def expandArtifactBeautyNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Arch): String = js.native
     def expandArtifactBeautyNamePattern(targetSpecificOptions: Null, ext: String): String = js.native
     def expandArtifactBeautyNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch): String = js.native
+    def expandArtifactBeautyNamePattern(targetSpecificOptions: Unit, ext: String): String = js.native
+    def expandArtifactBeautyNamePattern(targetSpecificOptions: Unit, ext: String, arch: Arch): String = js.native
     def expandArtifactBeautyNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String): String = js.native
     def expandArtifactBeautyNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch): String = js.native
     
-    def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: js.UndefOr[scala.Nothing],
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      defaultPattern: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: js.UndefOr[scala.Nothing],
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      defaultPattern: String
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: js.UndefOr[scala.Nothing],
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: js.UndefOr[scala.Nothing],
-      ext: String,
-      arch: Null,
-      defaultPattern: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Null, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: js.UndefOr[scala.Nothing],
-      ext: String,
-      arch: Null,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Arch): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: js.UndefOr[scala.Nothing],
-      ext: String,
-      arch: Arch,
-      defaultPattern: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: js.UndefOr[scala.Nothing], ext: String, arch: Arch, defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: js.UndefOr[scala.Nothing],
-      ext: String,
-      arch: Arch,
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
     def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Null,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      defaultPattern: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: js.UndefOr[scala.Nothing], defaultPattern: String): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Null,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      defaultPattern: String,
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: Null,
-      ext: String,
-      arch: Null,
-      defaultPattern: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean
-    ): String = js.native
     def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Null, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
       targetSpecificOptions: Null,
@@ -243,14 +124,17 @@ object platformPackagerMod {
       defaultPattern: String,
       skipArchIfX64: Boolean
     ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Null, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Unit, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
       targetSpecificOptions: Null,
       ext: String,
-      arch: Arch,
-      defaultPattern: js.UndefOr[scala.Nothing],
+      arch: Unit,
+      defaultPattern: String,
       skipArchIfX64: Boolean
     ): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Unit, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch): String = js.native
     def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
       targetSpecificOptions: Null,
@@ -259,34 +143,37 @@ object platformPackagerMod {
       defaultPattern: String,
       skipArchIfX64: Boolean
     ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Null, ext: String, arch: Arch, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Null, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
+      targetSpecificOptions: Unit,
       ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      defaultPattern: js.UndefOr[scala.Nothing],
-      skipArchIfX64: Boolean
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
-      defaultPattern: String
-    ): String = js.native
-    def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
-      ext: String,
-      arch: js.UndefOr[scala.Nothing],
+      arch: Null,
       defaultPattern: String,
       skipArchIfX64: Boolean
     ): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Null, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Unit, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
-      targetSpecificOptions: TargetSpecificOptions,
+      targetSpecificOptions: Unit,
       ext: String,
-      arch: Null,
-      defaultPattern: js.UndefOr[scala.Nothing],
+      arch: Unit,
+      defaultPattern: String,
       skipArchIfX64: Boolean
     ): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Unit, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Arch): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Arch, defaultPattern: String): String = js.native
+    def expandArtifactNamePattern(
+      targetSpecificOptions: Unit,
+      ext: String,
+      arch: Arch,
+      defaultPattern: String,
+      skipArchIfX64: Boolean
+    ): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: Unit, ext: String, arch: Arch, defaultPattern: Unit, skipArchIfX64: Boolean): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String): String = js.native
     def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Null, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
       targetSpecificOptions: TargetSpecificOptions,
@@ -295,14 +182,29 @@ object platformPackagerMod {
       defaultPattern: String,
       skipArchIfX64: Boolean
     ): String = js.native
-    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch): String = js.native
     def expandArtifactNamePattern(
       targetSpecificOptions: TargetSpecificOptions,
       ext: String,
-      arch: Arch,
-      defaultPattern: js.UndefOr[scala.Nothing],
+      arch: Null,
+      defaultPattern: Unit,
       skipArchIfX64: Boolean
     ): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Unit, defaultPattern: String): String = js.native
+    def expandArtifactNamePattern(
+      targetSpecificOptions: TargetSpecificOptions,
+      ext: String,
+      arch: Unit,
+      defaultPattern: String,
+      skipArchIfX64: Boolean
+    ): String = js.native
+    def expandArtifactNamePattern(
+      targetSpecificOptions: TargetSpecificOptions,
+      ext: String,
+      arch: Unit,
+      defaultPattern: Unit,
+      skipArchIfX64: Boolean
+    ): String = js.native
+    def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch): String = js.native
     def expandArtifactNamePattern(targetSpecificOptions: TargetSpecificOptions, ext: String, arch: Arch, defaultPattern: String): String = js.native
     def expandArtifactNamePattern(
       targetSpecificOptions: TargetSpecificOptions,
@@ -311,34 +213,36 @@ object platformPackagerMod {
       defaultPattern: String,
       skipArchIfX64: Boolean
     ): String = js.native
+    def expandArtifactNamePattern(
+      targetSpecificOptions: TargetSpecificOptions,
+      ext: String,
+      arch: Arch,
+      defaultPattern: Unit,
+      skipArchIfX64: Boolean
+    ): String = js.native
     
     def expandMacro(pattern: String): String = js.native
-    def expandMacro(
-      pattern: String,
-      arch: js.UndefOr[scala.Nothing],
-      extra: js.UndefOr[scala.Nothing],
-      isProductNameSanitized: Boolean
-    ): String = js.native
-    def expandMacro(pattern: String, arch: js.UndefOr[scala.Nothing], extra: js.Any): String = js.native
-    def expandMacro(pattern: String, arch: js.UndefOr[scala.Nothing], extra: js.Any, isProductNameSanitized: Boolean): String = js.native
     def expandMacro(pattern: String, arch: String): String = js.native
-    def expandMacro(pattern: String, arch: String, extra: js.UndefOr[scala.Nothing], isProductNameSanitized: Boolean): String = js.native
     def expandMacro(pattern: String, arch: String, extra: js.Any): String = js.native
     def expandMacro(pattern: String, arch: String, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
-    def expandMacro(pattern: String, arch: Null, extra: js.UndefOr[scala.Nothing], isProductNameSanitized: Boolean): String = js.native
+    def expandMacro(pattern: String, arch: String, extra: Unit, isProductNameSanitized: Boolean): String = js.native
     def expandMacro(pattern: String, arch: Null, extra: js.Any): String = js.native
     def expandMacro(pattern: String, arch: Null, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
+    def expandMacro(pattern: String, arch: Null, extra: Unit, isProductNameSanitized: Boolean): String = js.native
+    def expandMacro(pattern: String, arch: Unit, extra: js.Any): String = js.native
+    def expandMacro(pattern: String, arch: Unit, extra: js.Any, isProductNameSanitized: Boolean): String = js.native
+    def expandMacro(pattern: String, arch: Unit, extra: Unit, isProductNameSanitized: Boolean): String = js.native
     
     def fileAssociations: js.Array[FileAssociation] = js.native
     
     def forceCodeSigning: Boolean = js.native
     
-    def generateName2(ext: String, classifier: js.UndefOr[scala.Nothing], deployment: Boolean): String = js.native
     def generateName2(ext: String, classifier: String, deployment: Boolean): String = js.native
     def generateName2(ext: String, classifier: Null, deployment: Boolean): String = js.native
-    def generateName2(ext: Null, classifier: js.UndefOr[scala.Nothing], deployment: Boolean): String = js.native
+    def generateName2(ext: String, classifier: Unit, deployment: Boolean): String = js.native
     def generateName2(ext: Null, classifier: String, deployment: Boolean): String = js.native
     def generateName2(ext: Null, classifier: Null, deployment: Boolean): String = js.native
+    def generateName2(ext: Null, classifier: Unit, deployment: Boolean): String = js.native
     
     /* protected */ def getCscLink(): js.UndefOr[String | Null] = js.native
     /* protected */ def getCscLink(extraEnvName: String): js.UndefOr[String | Null] = js.native
@@ -359,9 +263,9 @@ object platformPackagerMod {
     
     /* protected */ def getOrConvertIcon(format: IconFormat): js.Promise[String | Null] = js.native
     
-    def getResource(custom: js.UndefOr[scala.Nothing], names: String*): js.Promise[String | Null] = js.native
     def getResource(custom: String, names: String*): js.Promise[String | Null] = js.native
     def getResource(custom: Null, names: String*): js.Promise[String | Null] = js.native
+    def getResource(custom: Unit, names: String*): js.Promise[String | Null] = js.native
     
     def getResourcesDir(appOutDir: String): String = js.native
     
@@ -369,7 +273,7 @@ object platformPackagerMod {
     
     val info: Packager = js.native
     
-    def pack(outDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): js.Promise[_] = js.native
+    def pack(outDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): js.Promise[js.Any] = js.native
     
     /* protected */ def packageInDistributableFormat(appOutDir: String, arch: Arch, targets: js.Array[Target], taskManager: AsyncTaskManager): Unit = js.native
     
@@ -389,7 +293,7 @@ object platformPackagerMod {
     
     var sanityCheckPackage: js.Any = js.native
     
-    /* protected */ def signApp(packContext: AfterPackContext, isAsar: Boolean): js.Promise[_] = js.native
+    /* protected */ def signApp(packContext: AfterPackContext, isAsar: Boolean): js.Promise[js.Any] = js.native
   }
   /* static members */
   object PlatformPackager {
@@ -411,47 +315,35 @@ object platformPackagerMod {
     def normalizePlatformSpecificBuildOptions_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("normalizePlatformSpecificBuildOptions")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("app-builder-lib/out/platformPackager", "chooseNotNull")
-  @js.native
-  def chooseNotNull(): js.UndefOr[String | Null] = js.native
-  @JSImport("app-builder-lib/out/platformPackager", "chooseNotNull")
-  @js.native
-  def chooseNotNull(v1: js.UndefOr[scala.Nothing], v2: String): js.UndefOr[String | Null] = js.native
-  @JSImport("app-builder-lib/out/platformPackager", "chooseNotNull")
-  @js.native
-  def chooseNotNull(v1: String): js.UndefOr[String | Null] = js.native
-  @JSImport("app-builder-lib/out/platformPackager", "chooseNotNull")
-  @js.native
-  def chooseNotNull(v1: String, v2: String): js.UndefOr[String | Null] = js.native
-  @JSImport("app-builder-lib/out/platformPackager", "chooseNotNull")
-  @js.native
-  def chooseNotNull(v1: Null, v2: String): js.UndefOr[String | Null] = js.native
+  @scala.inline
+  def chooseNotNull(): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")().asInstanceOf[js.UndefOr[String | Null]]
+  @scala.inline
+  def chooseNotNull(v1: String): js.UndefOr[String | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String | Null]]
+  @scala.inline
+  def chooseNotNull(v1: String, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  @scala.inline
+  def chooseNotNull(v1: Null, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
+  @scala.inline
+  def chooseNotNull(v1: Unit, v2: String): js.UndefOr[String | Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseNotNull")(v1.asInstanceOf[js.Any], v2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String | Null]]
   
-  @JSImport("app-builder-lib/out/platformPackager", "computeSafeArtifactNameIfNeeded")
-  @js.native
-  def computeSafeArtifactNameIfNeeded(suggestedName: String, safeNameProducer: js.Function0[String]): String | Null = js.native
-  @JSImport("app-builder-lib/out/platformPackager", "computeSafeArtifactNameIfNeeded")
-  @js.native
-  def computeSafeArtifactNameIfNeeded(suggestedName: Null, safeNameProducer: js.Function0[String]): String | Null = js.native
+  @scala.inline
+  def computeSafeArtifactNameIfNeeded(suggestedName: String, safeNameProducer: js.Function0[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSafeArtifactNameIfNeeded")(suggestedName.asInstanceOf[js.Any], safeNameProducer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def computeSafeArtifactNameIfNeeded(suggestedName: Null, safeNameProducer: js.Function0[String]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSafeArtifactNameIfNeeded")(suggestedName.asInstanceOf[js.Any], safeNameProducer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("app-builder-lib/out/platformPackager", "isSafeGithubName")
-  @js.native
-  def isSafeGithubName(name: String): Boolean = js.native
+  @scala.inline
+  def isSafeGithubName(name: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeGithubName")(name.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("app-builder-lib/out/platformPackager", "isSafeToUnpackElectronOnRemoteBuildServer")
-  @js.native
-  def isSafeToUnpackElectronOnRemoteBuildServer(packager: PlatformPackager[_]): Boolean = js.native
+  @scala.inline
+  def isSafeToUnpackElectronOnRemoteBuildServer(packager: PlatformPackager[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSafeToUnpackElectronOnRemoteBuildServer")(packager.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("app-builder-lib/out/platformPackager", "normalizeExt")
-  @js.native
-  def normalizeExt(ext: String): String = js.native
+  @scala.inline
+  def normalizeExt(ext: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeExt")(ext.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("app-builder-lib/out/platformPackager", "resolveFunction")
-  @js.native
-  def resolveFunction[T](executor: T, name: String): T = js.native
-  @JSImport("app-builder-lib/out/platformPackager", "resolveFunction")
-  @js.native
-  def resolveFunction[T](executor: String, name: String): T = js.native
+  @scala.inline
+  def resolveFunction[T](executor: T, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFunction")(executor.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resolveFunction[T](executor: String, name: String): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveFunction")(executor.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[T]
   
   /* Rewritten from type alias, can be one of: 
     - typings.appBuilderLib.appBuilderLibStrings.icns
@@ -471,12 +363,11 @@ object platformPackagerMod {
     def set: typings.appBuilderLib.appBuilderLibStrings.set = "set".asInstanceOf[typings.appBuilderLib.appBuilderLibStrings.set]
   }
   
-  @js.native
   trait IconInfo extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var size: Double = js.native
+    var size: Double
   }
   object IconInfo {
     

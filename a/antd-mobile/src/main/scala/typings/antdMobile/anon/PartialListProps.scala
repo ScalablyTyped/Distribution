@@ -4,24 +4,22 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<antd-mobile.antd-mobile/lib/list.ListProps> */
-@js.native
 trait PartialListProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var prefixCls: js.UndefOr[String] = js.native
+  var prefixCls: js.UndefOr[String] = js.undefined
   
-  var renderFooter: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.native
+  var renderFooter: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.undefined
   
-  var renderHeader: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.native
+  var renderHeader: js.UndefOr[js.Function0[ReactNode] | ReactNode] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialListProps {
   

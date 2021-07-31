@@ -3,38 +3,36 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Find or replace text within a range, sheet or spreadsheet. Can also specify search options.
   */
-@js.native
 trait TextFinder extends StObject {
   
-  def findAll(): js.Array[Range] = js.native
+  def findAll(): js.Array[Range]
   
-  def findNext(): Range | Null = js.native
+  def findNext(): Range | Null
   
-  def findPrevious(): Range | Null = js.native
+  def findPrevious(): Range | Null
   
-  def getCurrentMatch(): Range | Null = js.native
+  def getCurrentMatch(): Range | Null
   
-  def ignoreDiacritics(ignoreDiacritics: Boolean): TextFinder = js.native
+  def ignoreDiacritics(ignoreDiacritics: Boolean): TextFinder
   
-  def matchCase(matchCase: Boolean): TextFinder = js.native
+  def matchCase(matchCase: Boolean): TextFinder
   
-  def matchEntireCell(matchEntireCell: Boolean): TextFinder = js.native
+  def matchEntireCell(matchEntireCell: Boolean): TextFinder
   
-  def matchFormulaText(matchFormulaText: Boolean): TextFinder = js.native
+  def matchFormulaText(matchFormulaText: Boolean): TextFinder
   
-  def replaceAllWith(replaceText: String): Integer = js.native
+  def replaceAllWith(replaceText: String): Integer
   
-  def replaceWith(replaceText: String): Integer = js.native
+  def replaceWith(replaceText: String): Integer
   
-  def startFrom(startRange: Range): TextFinder = js.native
+  def startFrom(startRange: Range): TextFinder
   
-  def useRegularExpression(useRegEx: Boolean): TextFinder = js.native
+  def useRegularExpression(useRegEx: Boolean): TextFinder
 }
 object TextFinder {
   

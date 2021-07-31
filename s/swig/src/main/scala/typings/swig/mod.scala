@@ -6,7 +6,6 @@ import typings.swig.mod.lexer.TYPES
 import typings.swig.mod.parser.ParseReturn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -53,9 +52,9 @@ object mod {
     def renderFile(pathName: String, locals: js.Any, cb: js.Function2[/* err */ Error, /* output */ String, Unit]): Unit = js.native
     
     def run(templateFn: js.Function): String = js.native
-    def run(templateFn: js.Function, locals: js.UndefOr[scala.Nothing], filePath: String): String = js.native
     def run(templateFn: js.Function, locals: js.Any): String = js.native
     def run(templateFn: js.Function, locals: js.Any, filePath: String): String = js.native
+    def run(templateFn: js.Function, locals: Unit, filePath: String): String = js.native
     
     def setExtension(name: String, `object`: js.Any): Unit = js.native
     
@@ -83,7 +82,7 @@ object mod {
               String
             ]
           ], 
-          /* args */ js.UndefOr[js.Array[_]], 
+          /* args */ js.UndefOr[js.Array[js.Any]], 
           /* content */ js.UndefOr[String], 
           /* parents */ js.UndefOr[js.Any], 
           /* options */ js.UndefOr[js.Any], 
@@ -113,39 +112,7 @@ object mod {
               String
             ]
           ], 
-          /* args */ js.UndefOr[js.Array[_]], 
-          /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
-          /* blockName */ js.UndefOr[String], 
-          String
-        ],
-      ends: js.UndefOr[scala.Nothing],
-      blockLevel: Boolean
-    ): Unit = js.native
-    def setTag(
-      name: String,
-      parse: js.Function7[
-          /* str */ js.UndefOr[String], 
-          /* line */ js.UndefOr[String], 
-          /* parser */ js.UndefOr[js.Object], 
-          /* types */ js.UndefOr[TYPES], 
-          /* stack */ js.UndefOr[js.Any], 
-          /* opts */ js.UndefOr[js.Object], 
-          /* swig */ js.UndefOr[this.type], 
-          Boolean
-        ],
-      compile: js.Function6[
-          /* compiler */ js.UndefOr[
-            js.Function4[
-              /* content */ js.UndefOr[String], 
-              /* parents */ js.UndefOr[js.Any], 
-              /* options */ js.UndefOr[js.Any], 
-              /* blockName */ js.UndefOr[String], 
-              String
-            ]
-          ], 
-          /* args */ js.UndefOr[js.Array[_]], 
+          /* args */ js.UndefOr[js.Array[js.Any]], 
           /* content */ js.UndefOr[String], 
           /* parents */ js.UndefOr[js.Any], 
           /* options */ js.UndefOr[js.Any], 
@@ -176,7 +143,7 @@ object mod {
               String
             ]
           ], 
-          /* args */ js.UndefOr[js.Array[_]], 
+          /* args */ js.UndefOr[js.Array[js.Any]], 
           /* content */ js.UndefOr[String], 
           /* parents */ js.UndefOr[js.Any], 
           /* options */ js.UndefOr[js.Any], 
@@ -186,23 +153,50 @@ object mod {
       ends: Boolean,
       blockLevel: Boolean
     ): Unit = js.native
+    def setTag(
+      name: String,
+      parse: js.Function7[
+          /* str */ js.UndefOr[String], 
+          /* line */ js.UndefOr[String], 
+          /* parser */ js.UndefOr[js.Object], 
+          /* types */ js.UndefOr[TYPES], 
+          /* stack */ js.UndefOr[js.Any], 
+          /* opts */ js.UndefOr[js.Object], 
+          /* swig */ js.UndefOr[this.type], 
+          Boolean
+        ],
+      compile: js.Function6[
+          /* compiler */ js.UndefOr[
+            js.Function4[
+              /* content */ js.UndefOr[String], 
+              /* parents */ js.UndefOr[js.Any], 
+              /* options */ js.UndefOr[js.Any], 
+              /* blockName */ js.UndefOr[String], 
+              String
+            ]
+          ], 
+          /* args */ js.UndefOr[js.Array[js.Any]], 
+          /* content */ js.UndefOr[String], 
+          /* parents */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[js.Any], 
+          /* blockName */ js.UndefOr[String], 
+          String
+        ],
+      ends: Unit,
+      blockLevel: Boolean
+    ): Unit = js.native
   }
   
-  @JSImport("swig", "compile")
-  @js.native
-  def compile(source: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
-  @JSImport("swig", "compile")
-  @js.native
-  def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
+  @scala.inline
+  def compile(source: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  @scala.inline
+  def compile(source: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
   
-  @JSImport("swig", "compileFile")
-  @js.native
-  def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
-  @JSImport("swig", "compileFile")
-  @js.native
-  def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = js.native
-  @JSImport("swig", "compileFile")
-  @js.native
+  @scala.inline
+  def compileFile(pathname: String): js.Function1[/* locals */ js.UndefOr[js.Any], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  @scala.inline
+  def compileFile(pathname: String, options: SwigOptions): js.Function1[/* locals */ js.UndefOr[js.Any], String] = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* locals */ js.UndefOr[js.Any], String]]
+  @scala.inline
   def compileFile(
     pathname: String,
     options: SwigOptions,
@@ -211,13 +205,16 @@ object mod {
       /* compiledRender */ js.Function1[/* locals */ js.UndefOr[js.Any], String], 
       Unit
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("compileFile")(pathname.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("swig", "invalidateCache")
-  @js.native
-  def invalidateCache(): Unit = js.native
+  @scala.inline
+  def invalidateCache(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("invalidateCache")().asInstanceOf[Unit]
   
   object lexer {
+    
+    @JSImport("swig", "lexer")
+    @js.native
+    val ^ : js.Any = js.native
     
     @js.native
     sealed trait TYPES extends StObject
@@ -226,235 +223,266 @@ object mod {
     object TYPES extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[TYPES with Double] = js.native
+      def apply(value: Double): js.UndefOr[TYPES & Double] = js.native
       
       /** Start of an array */
       @js.native
-      sealed trait ARRAYOPEN extends TYPES
-      /* 15 */ val ARRAYOPEN: typings.swig.mod.lexer.TYPES.ARRAYOPEN with Double = js.native
+      sealed trait ARRAYOPEN
+        extends StObject
+           with TYPES
+      /* 15 */ val ARRAYOPEN: typings.swig.mod.lexer.TYPES.ARRAYOPEN & Double = js.native
       
       /** Variable assignment */
       @js.native
-      sealed trait ASSIGNMENT extends TYPES
-      /* 24 */ val ASSIGNMENT: typings.swig.mod.lexer.TYPES.ASSIGNMENT with Double = js.native
+      sealed trait ASSIGNMENT
+        extends StObject
+           with TYPES
+      /* 24 */ val ASSIGNMENT: typings.swig.mod.lexer.TYPES.ASSIGNMENT & Double = js.native
       
       /** true or false */
       @js.native
-      sealed trait BOOL extends TYPES
-      /* 23 */ val BOOL: typings.swig.mod.lexer.TYPES.BOOL with Double = js.native
+      sealed trait BOOL
+        extends StObject
+           with TYPES
+      /* 23 */ val BOOL: typings.swig.mod.lexer.TYPES.BOOL & Double = js.native
       
       /** Close square bracket */
       @js.native
-      sealed trait BRACKETCLOSE extends TYPES
-      /* 13 */ val BRACKETCLOSE: typings.swig.mod.lexer.TYPES.BRACKETCLOSE with Double = js.native
+      sealed trait BRACKETCLOSE
+        extends StObject
+           with TYPES
+      /* 13 */ val BRACKETCLOSE: typings.swig.mod.lexer.TYPES.BRACKETCLOSE & Double = js.native
       
       /** Open square bracket */
       @js.native
-      sealed trait BRACKETOPEN extends TYPES
-      /* 12 */ val BRACKETOPEN: typings.swig.mod.lexer.TYPES.BRACKETOPEN with Double = js.native
+      sealed trait BRACKETOPEN
+        extends StObject
+           with TYPES
+      /* 12 */ val BRACKETOPEN: typings.swig.mod.lexer.TYPES.BRACKETOPEN & Double = js.native
       
       /** Colon (:) */
       @js.native
-      sealed trait COLON extends TYPES
-      /* 19 */ val COLON: typings.swig.mod.lexer.TYPES.COLON with Double = js.native
+      sealed trait COLON
+        extends StObject
+           with TYPES
+      /* 19 */ val COLON: typings.swig.mod.lexer.TYPES.COLON & Double = js.native
       
       /** Comma */
       @js.native
-      sealed trait COMMA extends TYPES
-      /* 8 */ val COMMA: typings.swig.mod.lexer.TYPES.COMMA with Double = js.native
+      sealed trait COMMA
+        extends StObject
+           with TYPES
+      /* 8 */ val COMMA: typings.swig.mod.lexer.TYPES.COMMA & Double = js.native
       
       /** JavaScript-valid comparator */
       @js.native
-      sealed trait COMPARATOR extends TYPES
-      /* 20 */ val COMPARATOR: typings.swig.mod.lexer.TYPES.COMPARATOR with Double = js.native
+      sealed trait COMPARATOR
+        extends StObject
+           with TYPES
+      /* 20 */ val COMPARATOR: typings.swig.mod.lexer.TYPES.COMPARATOR & Double = js.native
       
       /** Close curly brace */
       @js.native
-      sealed trait CURLYCLOSE extends TYPES
-      /* 18 */ val CURLYCLOSE: typings.swig.mod.lexer.TYPES.CURLYCLOSE with Double = js.native
+      sealed trait CURLYCLOSE
+        extends StObject
+           with TYPES
+      /* 18 */ val CURLYCLOSE: typings.swig.mod.lexer.TYPES.CURLYCLOSE & Double = js.native
       
       /** End of an array
         * Currently unused
         ARRAYCLOSE = 16, */
       /** Open curly brace */
       @js.native
-      sealed trait CURLYOPEN extends TYPES
-      /* 17 */ val CURLYOPEN: typings.swig.mod.lexer.TYPES.CURLYOPEN with Double = js.native
+      sealed trait CURLYOPEN
+        extends StObject
+           with TYPES
+      /* 17 */ val CURLYOPEN: typings.swig.mod.lexer.TYPES.CURLYOPEN & Double = js.native
       
       /** Key on an object using dot-notation */
       @js.native
-      sealed trait DOTKEY extends TYPES
-      /* 14 */ val DOTKEY: typings.swig.mod.lexer.TYPES.DOTKEY with Double = js.native
+      sealed trait DOTKEY
+        extends StObject
+           with TYPES
+      /* 14 */ val DOTKEY: typings.swig.mod.lexer.TYPES.DOTKEY & Double = js.native
       
       /** Variable filter */
       @js.native
-      sealed trait FILTER extends TYPES
-      /* 2 */ val FILTER: typings.swig.mod.lexer.TYPES.FILTER with Double = js.native
+      sealed trait FILTER
+        extends StObject
+           with TYPES
+      /* 2 */ val FILTER: typings.swig.mod.lexer.TYPES.FILTER & Double = js.native
       
       /** Empty variable filter */
       @js.native
-      sealed trait FILTEREMPTY extends TYPES
-      /* 3 */ val FILTEREMPTY: typings.swig.mod.lexer.TYPES.FILTEREMPTY with Double = js.native
+      sealed trait FILTEREMPTY
+        extends StObject
+           with TYPES
+      /* 3 */ val FILTEREMPTY: typings.swig.mod.lexer.TYPES.FILTEREMPTY & Double = js.native
       
       /** Function */
       @js.native
-      sealed trait FUNCTION extends TYPES
-      /* 4 */ val FUNCTION: typings.swig.mod.lexer.TYPES.FUNCTION with Double = js.native
+      sealed trait FUNCTION
+        extends StObject
+           with TYPES
+      /* 4 */ val FUNCTION: typings.swig.mod.lexer.TYPES.FUNCTION & Double = js.native
       
       /** Function with no arguments */
       @js.native
-      sealed trait FUNCTIONEMPTY extends TYPES
-      /* 5 */ val FUNCTIONEMPTY: typings.swig.mod.lexer.TYPES.FUNCTIONEMPTY with Double = js.native
+      sealed trait FUNCTIONEMPTY
+        extends StObject
+           with TYPES
+      /* 5 */ val FUNCTIONEMPTY: typings.swig.mod.lexer.TYPES.FUNCTIONEMPTY & Double = js.native
       
       /** Boolean logic */
       @js.native
-      sealed trait LOGIC extends TYPES
-      /* 21 */ val LOGIC: typings.swig.mod.lexer.TYPES.LOGIC with Double = js.native
+      sealed trait LOGIC
+        extends StObject
+           with TYPES
+      /* 21 */ val LOGIC: typings.swig.mod.lexer.TYPES.LOGIC & Double = js.native
       
       /** Start of a method */
       @js.native
-      sealed trait METHODOPEN extends TYPES
-      /* 25 */ val METHODOPEN: typings.swig.mod.lexer.TYPES.METHODOPEN with Double = js.native
+      sealed trait METHODOPEN
+        extends StObject
+           with TYPES
+      /* 25 */ val METHODOPEN: typings.swig.mod.lexer.TYPES.METHODOPEN & Double = js.native
       
       /** Boolean logic "not" */
       @js.native
-      sealed trait NOT extends TYPES
-      /* 22 */ val NOT: typings.swig.mod.lexer.TYPES.NOT with Double = js.native
+      sealed trait NOT
+        extends StObject
+           with TYPES
+      /* 22 */ val NOT: typings.swig.mod.lexer.TYPES.NOT & Double = js.native
       
       /** Number */
       @js.native
-      sealed trait NUMBER extends TYPES
-      /* 10 */ val NUMBER: typings.swig.mod.lexer.TYPES.NUMBER with Double = js.native
+      sealed trait NUMBER
+        extends StObject
+           with TYPES
+      /* 10 */ val NUMBER: typings.swig.mod.lexer.TYPES.NUMBER & Double = js.native
       
       /** Math operator */
       @js.native
-      sealed trait OPERATOR extends TYPES
-      /* 11 */ val OPERATOR: typings.swig.mod.lexer.TYPES.OPERATOR with Double = js.native
+      sealed trait OPERATOR
+        extends StObject
+           with TYPES
+      /* 11 */ val OPERATOR: typings.swig.mod.lexer.TYPES.OPERATOR & Double = js.native
       
       /** Close parenthesis */
       @js.native
-      sealed trait PARENCLOSE extends TYPES
-      /* 7 */ val PARENCLOSE: typings.swig.mod.lexer.TYPES.PARENCLOSE with Double = js.native
+      sealed trait PARENCLOSE
+        extends StObject
+           with TYPES
+      /* 7 */ val PARENCLOSE: typings.swig.mod.lexer.TYPES.PARENCLOSE & Double = js.native
       
       /** Open parenthesis */
       @js.native
-      sealed trait PARENOPEN extends TYPES
-      /* 6 */ val PARENOPEN: typings.swig.mod.lexer.TYPES.PARENOPEN with Double = js.native
+      sealed trait PARENOPEN
+        extends StObject
+           with TYPES
+      /* 6 */ val PARENOPEN: typings.swig.mod.lexer.TYPES.PARENOPEN & Double = js.native
       
       /** Plain string */
       @js.native
-      sealed trait STRING extends TYPES
-      /* 1 */ val STRING: typings.swig.mod.lexer.TYPES.STRING with Double = js.native
+      sealed trait STRING
+        extends StObject
+           with TYPES
+      /* 1 */ val STRING: typings.swig.mod.lexer.TYPES.STRING & Double = js.native
       
       /** End of a method
         * Currently unused
         METHODEND = 26, */
       /** Unknown type */
       @js.native
-      sealed trait UNKNOWN extends TYPES
-      /* 100 */ val UNKNOWN: typings.swig.mod.lexer.TYPES.UNKNOWN with Double = js.native
+      sealed trait UNKNOWN
+        extends StObject
+           with TYPES
+      /* 100 */ val UNKNOWN: typings.swig.mod.lexer.TYPES.UNKNOWN & Double = js.native
       
       /** Variable */
       @js.native
-      sealed trait VAR extends TYPES
-      /* 9 */ val VAR: typings.swig.mod.lexer.TYPES.VAR with Double = js.native
+      sealed trait VAR
+        extends StObject
+           with TYPES
+      /* 9 */ val VAR: typings.swig.mod.lexer.TYPES.VAR & Double = js.native
       
       /** Whitespace */
       @js.native
-      sealed trait WHITESPACE extends TYPES
-      /* 0 */ val WHITESPACE: typings.swig.mod.lexer.TYPES.WHITESPACE with Double = js.native
+      sealed trait WHITESPACE
+        extends StObject
+           with TYPES
+      /* 0 */ val WHITESPACE: typings.swig.mod.lexer.TYPES.WHITESPACE & Double = js.native
     }
     
-    @JSImport("swig", "lexer.read")
-    @js.native
-    def read(str: String): js.Array[String] = js.native
+    @scala.inline
+    def read(str: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   }
   
   object loaders {
     
-    @JSImport("swig", "loaders.fs")
+    @JSImport("swig", "loaders")
     @js.native
-    def fs(): TemplateLoader = js.native
-    @JSImport("swig", "loaders.fs")
-    @js.native
-    def fs(basepath: js.UndefOr[scala.Nothing], encoding: String): TemplateLoader = js.native
-    @JSImport("swig", "loaders.fs")
-    @js.native
-    def fs(basepath: String): TemplateLoader = js.native
-    @JSImport("swig", "loaders.fs")
-    @js.native
-    def fs(basepath: String, encoding: String): TemplateLoader = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("swig", "loaders.memory")
-    @js.native
-    def memory(mapping: js.Any): TemplateLoader = js.native
-    @JSImport("swig", "loaders.memory")
-    @js.native
-    def memory(mapping: js.Any, basepath: String): TemplateLoader = js.native
+    @scala.inline
+    def fs(): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")().asInstanceOf[TemplateLoader]
+    @scala.inline
+    def fs(basepath: String): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
+    @scala.inline
+    def fs(basepath: String, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
+    @scala.inline
+    def fs(basepath: Unit, encoding: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("fs")(basepath.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
+    
+    @scala.inline
+    def memory(mapping: js.Any): TemplateLoader = ^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any]).asInstanceOf[TemplateLoader]
+    @scala.inline
+    def memory(mapping: js.Any, basepath: String): TemplateLoader = (^.asInstanceOf[js.Dynamic].applyDynamic("memory")(mapping.asInstanceOf[js.Any], basepath.asInstanceOf[js.Any])).asInstanceOf[TemplateLoader]
   }
   
-  @JSImport("swig", "parseFile")
-  @js.native
-  def parseFile(pathName: String): ParseReturn = js.native
-  @JSImport("swig", "parseFile")
-  @js.native
-  def parseFile(pathName: String, options: js.Any): ParseReturn = js.native
+  @scala.inline
+  def parseFile(pathName: String): ParseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[ParseReturn]
+  @scala.inline
+  def parseFile(pathName: String, options: js.Any): ParseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("parseFile")(pathName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ParseReturn]
   
-  @JSImport("swig", "precompile")
-  @js.native
-  def precompile(source: String): js.Any = js.native
-  @JSImport("swig", "precompile")
-  @js.native
-  def precompile(source: String, options: SwigOptions): js.Any = js.native
+  @scala.inline
+  def precompile(source: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def precompile(source: String, options: SwigOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("precompile")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("swig", "render")
-  @js.native
-  def render(source: String): String = js.native
-  @JSImport("swig", "render")
-  @js.native
-  def render(source: String, options: SwigOptions): String = js.native
+  @scala.inline
+  def render(source: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def render(source: String, options: SwigOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("swig", "renderFile")
-  @js.native
-  def renderFile(pathName: String): String = js.native
-  @JSImport("swig", "renderFile")
-  @js.native
-  def renderFile(pathName: String, locals: js.Any): String = js.native
-  @JSImport("swig", "renderFile")
-  @js.native
-  def renderFile(pathName: String, locals: js.Any, cb: js.Function2[/* err */ Error, /* output */ String, Unit]): Unit = js.native
+  @scala.inline
+  def renderFile(pathName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def renderFile(pathName: String, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def renderFile(pathName: String, locals: js.Any, cb: js.Function2[/* err */ Error, /* output */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renderFile")(pathName.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("swig", "run")
-  @js.native
-  def run(templateFn: js.Function): String = js.native
-  @JSImport("swig", "run")
-  @js.native
-  def run(templateFn: js.Function, locals: js.UndefOr[scala.Nothing], filePath: String): String = js.native
-  @JSImport("swig", "run")
-  @js.native
-  def run(templateFn: js.Function, locals: js.Any): String = js.native
-  @JSImport("swig", "run")
-  @js.native
-  def run(templateFn: js.Function, locals: js.Any, filePath: String): String = js.native
+  @scala.inline
+  def run(templateFn: js.Function): String = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def run(templateFn: js.Function, locals: js.Any): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def run(templateFn: js.Function, locals: js.Any, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def run(templateFn: js.Function, locals: Unit, filePath: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(templateFn.asInstanceOf[js.Any], locals.asInstanceOf[js.Any], filePath.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("swig", "setDefaultTZOffset")
-  @js.native
-  def setDefaultTZOffset(offset: Double): Unit = js.native
+  @scala.inline
+  def setDefaultTZOffset(offset: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultTZOffset")(offset.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("swig", "setDefaults")
-  @js.native
-  def setDefaults(options: SwigOptions): Unit = js.native
+  @scala.inline
+  def setDefaults(options: SwigOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("swig", "setExtension")
-  @js.native
-  def setExtension(name: String, `object`: js.Any): Unit = js.native
+  @scala.inline
+  def setExtension(name: String, `object`: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtension")(name.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("swig", "setFilter")
-  @js.native
-  def setFilter(name: String, method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, String]): Unit = js.native
+  @scala.inline
+  def setFilter(name: String, method: js.Function2[/* input */ js.Any, /* repeated */ js.Any, String]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setFilter")(name.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("swig", "setTag")
-  @js.native
+  @scala.inline
   def setTag(
     name: String,
     parse: js.Function7[
@@ -477,16 +505,15 @@ object mod {
           String
         ]
       ], 
-      /* args */ js.UndefOr[js.Array[_]], 
+      /* args */ js.UndefOr[js.Array[js.Any]], 
       /* content */ js.UndefOr[String], 
       /* parents */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
       /* blockName */ js.UndefOr[String], 
       String
     ]
-  ): Unit = js.native
-  @JSImport("swig", "setTag")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(name.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], compile.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setTag(
     name: String,
     parse: js.Function7[
@@ -509,41 +536,7 @@ object mod {
           String
         ]
       ], 
-      /* args */ js.UndefOr[js.Array[_]], 
-      /* content */ js.UndefOr[String], 
-      /* parents */ js.UndefOr[js.Any], 
-      /* options */ js.UndefOr[js.Any], 
-      /* blockName */ js.UndefOr[String], 
-      String
-    ],
-    ends: js.UndefOr[scala.Nothing],
-    blockLevel: Boolean
-  ): Unit = js.native
-  @JSImport("swig", "setTag")
-  @js.native
-  def setTag(
-    name: String,
-    parse: js.Function7[
-      /* str */ js.UndefOr[String], 
-      /* line */ js.UndefOr[String], 
-      /* parser */ js.UndefOr[js.Object], 
-      /* types */ js.UndefOr[TYPES], 
-      /* stack */ js.UndefOr[js.Any], 
-      /* opts */ js.UndefOr[js.Object], 
-      /* swig */ js.UndefOr[Swig], 
-      Boolean
-    ],
-    compile: js.Function6[
-      /* compiler */ js.UndefOr[
-        js.Function4[
-          /* content */ js.UndefOr[String], 
-          /* parents */ js.UndefOr[js.Any], 
-          /* options */ js.UndefOr[js.Any], 
-          /* blockName */ js.UndefOr[String], 
-          String
-        ]
-      ], 
-      /* args */ js.UndefOr[js.Array[_]], 
+      /* args */ js.UndefOr[js.Array[js.Any]], 
       /* content */ js.UndefOr[String], 
       /* parents */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
@@ -551,9 +544,8 @@ object mod {
       String
     ],
     ends: Boolean
-  ): Unit = js.native
-  @JSImport("swig", "setTag")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(name.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], compile.asInstanceOf[js.Any], ends.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def setTag(
     name: String,
     parse: js.Function7[
@@ -576,7 +568,7 @@ object mod {
           String
         ]
       ], 
-      /* args */ js.UndefOr[js.Array[_]], 
+      /* args */ js.UndefOr[js.Array[js.Any]], 
       /* content */ js.UndefOr[String], 
       /* parents */ js.UndefOr[js.Any], 
       /* options */ js.UndefOr[js.Any], 
@@ -585,7 +577,40 @@ object mod {
     ],
     ends: Boolean,
     blockLevel: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(name.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], compile.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], blockLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setTag(
+    name: String,
+    parse: js.Function7[
+      /* str */ js.UndefOr[String], 
+      /* line */ js.UndefOr[String], 
+      /* parser */ js.UndefOr[js.Object], 
+      /* types */ js.UndefOr[TYPES], 
+      /* stack */ js.UndefOr[js.Any], 
+      /* opts */ js.UndefOr[js.Object], 
+      /* swig */ js.UndefOr[Swig], 
+      Boolean
+    ],
+    compile: js.Function6[
+      /* compiler */ js.UndefOr[
+        js.Function4[
+          /* content */ js.UndefOr[String], 
+          /* parents */ js.UndefOr[js.Any], 
+          /* options */ js.UndefOr[js.Any], 
+          /* blockName */ js.UndefOr[String], 
+          String
+        ]
+      ], 
+      /* args */ js.UndefOr[js.Array[js.Any]], 
+      /* content */ js.UndefOr[String], 
+      /* parents */ js.UndefOr[js.Any], 
+      /* options */ js.UndefOr[js.Any], 
+      /* blockName */ js.UndefOr[String], 
+      String
+    ],
+    ends: Unit,
+    blockLevel: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTag")(name.asInstanceOf[js.Any], parse.asInstanceOf[js.Any], compile.asInstanceOf[js.Any], ends.asInstanceOf[js.Any], blockLevel.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("swig", "version")
   @js.native
@@ -593,22 +618,21 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait SwigOptions extends StObject {
     
-    var autoescape: js.UndefOr[Boolean] = js.native
+    var autoescape: js.UndefOr[Boolean] = js.undefined
     
-    var cache: js.UndefOr[js.Any] = js.native
+    var cache: js.UndefOr[js.Any] = js.undefined
     
-    var cmtControls: js.UndefOr[js.Array[String]] = js.native
+    var cmtControls: js.UndefOr[js.Array[String]] = js.undefined
     
-    var loader: js.UndefOr[TemplateLoader] = js.native
+    var loader: js.UndefOr[TemplateLoader] = js.undefined
     
-    var locals: js.UndefOr[js.Any] = js.native
+    var locals: js.UndefOr[js.Any] = js.undefined
     
-    var tagControls: js.UndefOr[js.Array[String]] = js.native
+    var tagControls: js.UndefOr[js.Array[String]] = js.undefined
     
-    var varControls: js.UndefOr[js.Array[String]] = js.native
+    var varControls: js.UndefOr[js.Array[String]] = js.undefined
   }
   object SwigOptions {
     
@@ -687,21 +711,20 @@ object mod {
   
   object parser {
     
-    @js.native
     trait ParseReturn extends StObject {
       
-      var blocks: js.Any = js.native
+      var blocks: js.Any
       
-      var name: String = js.native
+      var name: String
       
-      var parent: js.Any = js.native
+      var parent: js.Any
       
-      var tokens: js.Array[_] = js.native
+      var tokens: js.Array[js.Any]
     }
     object ParseReturn {
       
       @scala.inline
-      def apply(blocks: js.Any, name: String, parent: js.Any, tokens: js.Array[_]): ParseReturn = {
+      def apply(blocks: js.Any, name: String, parent: js.Any, tokens: js.Array[js.Any]): ParseReturn = {
         val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], tokens = tokens.asInstanceOf[js.Any])
         __obj.asInstanceOf[ParseReturn]
       }
@@ -719,7 +742,7 @@ object mod {
         def setParent(value: js.Any): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setTokens(value: js.Array[_]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
+        def setTokens(value: js.Array[js.Any]): Self = StObject.set(x, "tokens", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setTokensVarargs(value: js.Any*): Self = StObject.set(x, "tokens", js.Array(value :_*))

@@ -2,56 +2,54 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowExecutionInfo extends StObject {
   
   /**
     * Set to true if a cancellation is requested for this workflow execution.
     */
-  var cancelRequested: js.UndefOr[Canceled] = js.native
+  var cancelRequested: js.UndefOr[Canceled] = js.undefined
   
   /**
     * If the execution status is closed then this specifies how the execution was closed:    COMPLETED – the execution was successfully completed.    CANCELED – the execution was canceled.Cancellation allows the implementation to gracefully clean up before the execution is closed.    TERMINATED – the execution was force terminated.    FAILED – the execution failed to complete.    TIMED_OUT – the execution did not complete in the alloted time and was automatically timed out.    CONTINUED_AS_NEW – the execution is logically continued. This means the current execution was completed and a new execution was started to carry on the workflow.  
     */
-  var closeStatus: js.UndefOr[CloseStatus] = js.native
+  var closeStatus: js.UndefOr[CloseStatus] = js.undefined
   
   /**
     * The time when the workflow execution was closed. Set only if the execution status is CLOSED.
     */
-  var closeTimestamp: js.UndefOr[Timestamp] = js.native
+  var closeTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The workflow execution this information is about.
     */
-  var execution: WorkflowExecution = js.native
+  var execution: WorkflowExecution
   
   /**
     * The current status of the execution.
     */
-  var executionStatus: ExecutionStatus = js.native
+  var executionStatus: ExecutionStatus
   
   /**
     * If this workflow execution is a child of another execution then contains the workflow execution that started this execution.
     */
-  var parent: js.UndefOr[WorkflowExecution] = js.native
+  var parent: js.UndefOr[WorkflowExecution] = js.undefined
   
   /**
     * The time when the execution was started.
     */
-  var startTimestamp: Timestamp = js.native
+  var startTimestamp: Timestamp
   
   /**
     * The list of tags associated with the workflow execution. Tags can be used to identify and list workflow executions of interest through the visibility APIs. A workflow execution can have a maximum of 5 tags.
     */
-  var tagList: js.UndefOr[TagList] = js.native
+  var tagList: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of the workflow execution.
     */
-  var workflowType: WorkflowType = js.native
+  var workflowType: WorkflowType
 }
 object WorkflowExecutionInfo {
   

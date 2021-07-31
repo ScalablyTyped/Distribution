@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.extensions.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FSGroupStrategyOptions defines the strategy type and options used to create the strategy. Deprecated: use FSGroupStrategyOptions from policy API Group instead.
   */
-@js.native
 trait FSGroupStrategyOptions extends StObject {
   
   /**
     * ranges are the allowed ranges of fs groups.  If you would like to force a single fs group then supply a single range with the same start and end. Required for MustRunAs.
     */
-  var ranges: js.Array[IDRange] = js.native
+  var ranges: js.Array[IDRange]
   
   /**
     * rule is the strategy that will dictate what FSGroup is used in the SecurityContext.
     */
-  var rule: String = js.native
+  var rule: String
 }
 object FSGroupStrategyOptions {
   

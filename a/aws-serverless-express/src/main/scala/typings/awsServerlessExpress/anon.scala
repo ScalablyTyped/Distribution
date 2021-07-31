@@ -6,17 +6,15 @@ import typings.awsLambda.apiGatewayMod.APIGatewayEventRequestContextWithAuthoriz
 import typings.awsServerlessExpress.middlewareMod.NonFunctionProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Context extends StObject {
     
-    var context: NonFunctionProperties[typings.awsLambda.handlerMod.Context] = js.native
+    var context: NonFunctionProperties[typings.awsLambda.handlerMod.Context]
     
-    var event: OmitAPIGatewayProxyEventb = js.native
+    var event: OmitAPIGatewayProxyEventb
   }
   object Context {
     
@@ -41,30 +39,29 @@ object anon {
   }
   
   /* Inlined std.Omit<aws-lambda.aws-lambda.APIGatewayProxyEvent, 'body'> */
-  @js.native
   trait OmitAPIGatewayProxyEventb extends StObject {
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var httpMethod: String = js.native
+    var httpMethod: String
     
-    var isBase64Encoded: Boolean = js.native
+    var isBase64Encoded: Boolean
     
-    var multiValueHeaders: StringDictionary[js.Array[String]] = js.native
+    var multiValueHeaders: StringDictionary[js.Array[String]]
     
-    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]] | Null] = js.native
+    var multiValueQueryStringParameters: js.UndefOr[StringDictionary[js.Array[String]] | Null] = js.undefined
     
-    var path: String = js.native
+    var path: String
     
-    var pathParameters: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var pathParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
-    var queryStringParameters: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var queryStringParameters: js.UndefOr[StringDictionary[String] | Null] = js.undefined
     
-    var requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext] = js.native
+    var requestContext: APIGatewayEventRequestContextWithAuthorizer[APIGatewayEventDefaultAuthorizerContext]
     
-    var resource: String = js.native
+    var resource: String
     
-    var stageVariables: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var stageVariables: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   }
   object OmitAPIGatewayProxyEventb {
     

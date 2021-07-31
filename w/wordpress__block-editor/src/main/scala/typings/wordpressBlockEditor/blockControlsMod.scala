@@ -8,16 +8,15 @@ import typings.wordpressBlockEditor.blockControlsMod.BlockControls.Props
 import typings.wordpressComponents.toolbarMod.Toolbar.Control
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockControlsMod {
   
   object default {
     
-    @JSImport("@wordpress/block-editor/components/block-controls", JSImport.Default)
-    @js.native
-    def apply(props: Props): Element = js.native
+    @scala.inline
+    def apply(props: Props): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("@wordpress/block-editor/components/block-controls", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -32,12 +31,11 @@ object blockControlsMod {
   object BlockControls {
     
     /* Inlined parent std.Pick<@wordpress/components.@wordpress/components.Toolbar.Props, 'controls'> */
-    @js.native
     trait Props extends StObject {
       
-      var children: ReactNode = js.native
+      var children: ReactNode
       
-      var controls: js.UndefOr[js.Array[js.Array[Control] | Control]] = js.native
+      var controls: js.UndefOr[js.Array[js.Array[Control] | Control]] = js.undefined
     }
     object Props {
       

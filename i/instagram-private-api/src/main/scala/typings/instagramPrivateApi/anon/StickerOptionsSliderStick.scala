@@ -3,68 +3,66 @@ package typings.instagramPrivateApi.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined instagram-private-api.instagram-private-api/dist/sticker-builder/sticker-builder.StickerOptions<instagram-private-api.instagram-private-api/dist/sticker-builder/stickers.SliderSticker> */
-@js.native
 trait StickerOptionsSliderStick extends StObject {
   
-  var additionalConfigureProperties: js.UndefOr[js.Function0[_]] = js.native
+  var additionalConfigureProperties: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var bottom: js.UndefOr[js.Function0[this.type]] = js.native
+  var bottom: js.UndefOr[js.Function0[this.type]] = js.undefined
   
-  var center: js.UndefOr[js.Function0[this.type]] = js.native
+  var center: js.UndefOr[js.Function0[this.type]] = js.undefined
   
-  var emoji: String = js.native
+  var emoji: String
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[js.Function0[String]] = js.native
+  var id: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var isSticker: js.UndefOr[Boolean] = js.native
+  var isSticker: js.UndefOr[Boolean] = js.undefined
   
-  var key: js.UndefOr[js.Function0[String]] = js.native
+  var key: js.UndefOr[js.Function0[String]] = js.undefined
   
-  var left: js.UndefOr[js.Function0[this.type]] = js.native
+  var left: js.UndefOr[js.Function0[this.type]] = js.undefined
   
-  var moveBackwards: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.native
+  var moveBackwards: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.undefined
   
-  var moveForward: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.native
+  var moveForward: js.UndefOr[js.Function1[/* layers */ js.UndefOr[Double], this.type]] = js.undefined
   
-  var question: String = js.native
+  var question: String
   
-  var right: js.UndefOr[js.Function0[this.type]] = js.native
+  var right: js.UndefOr[js.Function0[this.type]] = js.undefined
   
-  var rotateDeg: js.UndefOr[js.Function1[/* deg */ Double, this.type]] = js.native
+  var rotateDeg: js.UndefOr[js.Function1[/* deg */ Double, this.type]] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[js.Function1[/* factor */ Double, this.type]] = js.native
+  var scale: js.UndefOr[js.Function1[/* factor */ Double, this.type]] = js.undefined
   
-  var sliderVoteAverage: js.UndefOr[Double] = js.native
+  var sliderVoteAverage: js.UndefOr[Double] = js.undefined
   
-  var sliderVoteCount: js.UndefOr[Double] = js.native
+  var sliderVoteCount: js.UndefOr[Double] = js.undefined
   
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
   
-  var toJSON: js.UndefOr[js.Function0[StringDictionary[_]]] = js.native
+  var toJSON: js.UndefOr[js.Function0[StringDictionary[js.Any]]] = js.undefined
   
-  var top: js.UndefOr[js.Function0[this.type]] = js.native
+  var top: js.UndefOr[js.Function0[this.type]] = js.undefined
   
-  var viewerCanVote: js.UndefOr[Boolean] = js.native
+  var viewerCanVote: js.UndefOr[Boolean] = js.undefined
   
-  var viewerVote: js.UndefOr[Double] = js.native
+  var viewerVote: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var z: js.UndefOr[Double] = js.native
+  var z: js.UndefOr[Double] = js.undefined
 }
 object StickerOptionsSliderStick {
   
@@ -78,7 +76,7 @@ object StickerOptionsSliderStick {
   implicit class StickerOptionsSliderStickMutableBuilder[Self <: StickerOptionsSliderStick] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAdditionalConfigureProperties(value: () => _): Self = StObject.set(x, "additionalConfigureProperties", js.Any.fromFunction0(value))
+    def setAdditionalConfigureProperties(value: () => js.Any): Self = StObject.set(x, "additionalConfigureProperties", js.Any.fromFunction0(value))
     
     @scala.inline
     def setAdditionalConfigurePropertiesUndefined: Self = StObject.set(x, "additionalConfigureProperties", js.undefined)
@@ -192,7 +190,7 @@ object StickerOptionsSliderStick {
     def setTextColorUndefined: Self = StObject.set(x, "textColor", js.undefined)
     
     @scala.inline
-    def setToJSON(value: () => StringDictionary[_]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
+    def setToJSON(value: () => StringDictionary[js.Any]): Self = StObject.set(x, "toJSON", js.Any.fromFunction0(value))
     
     @scala.inline
     def setToJSONUndefined: Self = StObject.set(x, "toJSON", js.undefined)

@@ -2,13 +2,13 @@ package typings.antvComponent.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataMarkerTextCfg extends EnhancedTextCfg {
+trait DataMarkerTextCfg
+  extends StObject
+     with EnhancedTextCfg {
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
 }
 object DataMarkerTextCfg {
   

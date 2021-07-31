@@ -3,14 +3,15 @@ package typings.excelStyleDataformatter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("excel-style-dataformatter", JSImport.Namespace)
   @js.native
-  class ^ () extends DataFormatter {
+  class ^ ()
+    extends StObject
+       with DataFormatter {
     def this(options: FormatterOptions) = this()
   }
   
@@ -46,16 +47,15 @@ object mod {
     def setUTCOffset(offset: Double): Unit = js.native
   }
   
-  @js.native
   trait FormatResult extends StObject {
     
-    var align: String = js.native
+    var align: String
     
-    var color: String = js.native
+    var color: String
     
-    var pattern: String = js.native
+    var pattern: String
     
-    var value: String = js.native
+    var value: String
   }
   object FormatResult {
     
@@ -82,18 +82,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FormatterOptions extends StObject {
     
-    var UTCOffset: js.UndefOr[Double | Null] = js.native
+    var UTCOffset: js.UndefOr[Double | Null] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var locales: js.UndefOr[js.Array[LocalesOptions]] = js.native
+    var locales: js.UndefOr[js.Array[LocalesOptions]] = js.undefined
     
-    var transformCode: js.UndefOr[js.Function1[/* code */ js.Any, _]] = js.native
+    var transformCode: js.UndefOr[js.Function1[/* code */ js.Any, js.Any]] = js.undefined
   }
   object FormatterOptions {
     
@@ -128,7 +127,7 @@ object mod {
       def setLocalesVarargs(value: LocalesOptions*): Self = StObject.set(x, "locales", js.Array(value :_*))
       
       @scala.inline
-      def setTransformCode(value: /* code */ js.Any => _): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
+      def setTransformCode(value: /* code */ js.Any => js.Any): Self = StObject.set(x, "transformCode", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTransformCodeUndefined: Self = StObject.set(x, "transformCode", js.undefined)
@@ -144,24 +143,23 @@ object mod {
     }
   }
   
-  @js.native
   trait LocalesOptions extends StObject {
     
-    var days: js.Array[String] = js.native
+    var days: js.Array[String]
     
-    var daysShort: js.Array[String] = js.native
+    var daysShort: js.Array[String]
     
-    var decimalSeparator: String = js.native
+    var decimalSeparator: String
     
-    var formats: StringDictionary[String] = js.native
+    var formats: StringDictionary[String]
     
-    var months: js.Array[String] = js.native
+    var months: js.Array[String]
     
-    var monthsShort: js.Array[String] = js.native
+    var monthsShort: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var thousandSeparator: String = js.native
+    var thousandSeparator: String
   }
   object LocalesOptions {
     

@@ -3,27 +3,25 @@ package typings.activexLibreoffice.com_.sun.star.awt.grid
 import typings.activexLibreoffice.com_.sun.star.beans.Pair
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows to sort the data represented by a {@link XGridDataModel} */
-@js.native
 trait XSortableGridData extends StObject {
   
   /**
     * returns the current sort order.
     * @returns a structure describing the current sort order. com::sun::star::beans::Pair::First denotes the column by which the data is sorted, or -1 if the da
     */
-  val CurrentSortOrder: Pair[Double, Boolean] = js.native
+  val CurrentSortOrder: Pair[Double, Boolean]
   
   /**
     * returns the current sort order.
     * @returns a structure describing the current sort order. com::sun::star::beans::Pair::First denotes the column by which the data is sorted, or -1 if the da
     */
-  def getCurrentSortOrder(): Pair[Double, Boolean] = js.native
+  def getCurrentSortOrder(): Pair[Double, Boolean]
   
   /** removes any possibly present sorting of the grid data */
-  def removeColumnSort(): Unit = js.native
+  def removeColumnSort(): Unit
   
   /**
     * sorts the rows represented by the model by a given column's data.
@@ -31,7 +29,7 @@ trait XSortableGridData extends StObject {
     * @param SortAscending is `TRUE` if the data should be sorted ascending, `FALSE` otherwise.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if `ColumnIndex` does not denote a valid column.
     */
-  def sortByColumn(ColumnIndex: Double, SortAscending: Boolean): Unit = js.native
+  def sortByColumn(ColumnIndex: Double, SortAscending: Boolean): Unit
 }
 object XSortableGridData {
   

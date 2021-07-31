@@ -4,43 +4,43 @@ import typings.phaser.spine.ArrayLike
 import typings.phaser.spine.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PolygonBatcher extends Disposable {
+trait PolygonBatcher
+  extends StObject
+     with Disposable {
   
-  def begin(shader: Shader): Unit = js.native
+  def begin(shader: Shader): Unit
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  def draw(texture: GLTexture, vertices: ArrayLike[Double], indices: js.Array[Double]): Unit = js.native
+  def draw(texture: GLTexture, vertices: ArrayLike[Double], indices: js.Array[Double]): Unit
   
-  var drawCalls: js.Any = js.native
+  var drawCalls: js.Any
   
-  var dstBlend: js.Any = js.native
+  var dstBlend: js.Any
   
-  def end(): Unit = js.native
+  def end(): Unit
   
-  var flush: js.Any = js.native
+  var flush: js.Any
   
-  def getDrawCalls(): Double = js.native
+  def getDrawCalls(): Double
   
-  var indicesLength: js.Any = js.native
+  var indicesLength: js.Any
   
-  var isDrawing: js.Any = js.native
+  var isDrawing: js.Any
   
-  var lastTexture: js.Any = js.native
+  var lastTexture: js.Any
   
-  var mesh: js.Any = js.native
+  var mesh: js.Any
   
-  def setBlendMode(srcBlend: Double, dstBlend: Double): Unit = js.native
+  def setBlendMode(srcBlend: Double, dstBlend: Double): Unit
   
-  var shader: js.Any = js.native
+  var shader: js.Any
   
-  var srcBlend: js.Any = js.native
+  var srcBlend: js.Any
   
-  var verticesLength: js.Any = js.native
+  var verticesLength: js.Any
 }
 object PolygonBatcher {
   

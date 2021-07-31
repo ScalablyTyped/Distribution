@@ -4,19 +4,19 @@ import typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.Provisione
 import typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.UnmarshalledProvisionedThroughput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdateGlobalSecondaryIndexActionMod {
   
-  @js.native
-  trait UnmarshalledUpdateGlobalSecondaryIndexAction extends UpdateGlobalSecondaryIndexAction {
+  trait UnmarshalledUpdateGlobalSecondaryIndexAction
+    extends StObject
+       with UpdateGlobalSecondaryIndexAction {
     
     /**
       * <p>Represents the provisioned throughput settings for the specified global secondary index.</p> <p>For current minimum and maximum provisioned throughput values, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html">Limits</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
       */
     @JSName("ProvisionedThroughput")
-    var ProvisionedThroughput_UnmarshalledUpdateGlobalSecondaryIndexAction: UnmarshalledProvisionedThroughput = js.native
+    var ProvisionedThroughput_UnmarshalledUpdateGlobalSecondaryIndexAction: UnmarshalledProvisionedThroughput
   }
   object UnmarshalledUpdateGlobalSecondaryIndexAction {
     
@@ -34,18 +34,17 @@ object typesUpdateGlobalSecondaryIndexActionMod {
     }
   }
   
-  @js.native
   trait UpdateGlobalSecondaryIndexAction extends StObject {
     
     /**
       * <p>The name of the global secondary index to be updated.</p>
       */
-    var IndexName: String = js.native
+    var IndexName: String
     
     /**
       * <p>Represents the provisioned throughput settings for the specified global secondary index.</p> <p>For current minimum and maximum provisioned throughput values, see <a href="http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/Limits.html">Limits</a> in the <i>Amazon DynamoDB Developer Guide</i>.</p>
       */
-    var ProvisionedThroughput: typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.ProvisionedThroughput = js.native
+    var ProvisionedThroughput: typings.awsSdkClientDynamodbNode.typesProvisionedThroughputMod.ProvisionedThroughput
   }
   object UpdateGlobalSecondaryIndexAction {
     

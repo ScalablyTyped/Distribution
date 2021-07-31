@@ -2,30 +2,28 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an email.
   */
-@js.native
 trait SchemaUserEmail extends StObject {
   
   /**
     * Email id of the user.
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Custom Type.
     */
-  var customType: js.UndefOr[String] = js.native
+  var customType: js.UndefOr[String] = js.undefined
   
   /**
     * If this is user&#39;s primary email. Only one entry could be marked as
     * primary.
     */
-  var primary: js.UndefOr[Boolean] = js.native
+  var primary: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Each entry can have a type which indicates standard types of that entry.
@@ -33,7 +31,7 @@ trait SchemaUserEmail extends StObject {
     * type, an entry can have a custom type and can take any value Such types
     * should have the CUSTOM value as type and also have a customType value.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUserEmail {
   

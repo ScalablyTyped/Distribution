@@ -2,13 +2,11 @@ package typings.openlayers.mod.olx.format
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WMSGetFeatureInfoOptions extends StObject {
   
-  var layers: js.UndefOr[js.Array[String]] = js.native
+  var layers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object WMSGetFeatureInfoOptions {
   

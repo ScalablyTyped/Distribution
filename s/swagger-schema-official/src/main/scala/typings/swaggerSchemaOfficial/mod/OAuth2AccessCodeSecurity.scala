@@ -1,30 +1,28 @@
 package typings.swaggerSchemaOfficial.mod
 
 import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.accessCode
-import typings.swaggerSchemaOfficial.swaggerSchemaOfficialStrings.oauth2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OAuth2AccessCodeSecurity
-  extends BaseOAuthSecurity
+  extends StObject
+     with BaseOAuthSecurity
      with Security {
   
-  var authorizationUrl: String = js.native
+  var authorizationUrl: String
   
   @JSName("flow")
-  var flow_OAuth2AccessCodeSecurity: accessCode = js.native
+  var flow_OAuth2AccessCodeSecurity: accessCode
   
-  var tokenUrl: String = js.native
+  var tokenUrl: String
 }
 object OAuth2AccessCodeSecurity {
   
   @scala.inline
-  def apply(authorizationUrl: String, flow: accessCode, tokenUrl: String, `type`: oauth2): OAuth2AccessCodeSecurity = {
-    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = flow.asInstanceOf[js.Any], tokenUrl = tokenUrl.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(authorizationUrl: String, tokenUrl: String): OAuth2AccessCodeSecurity = {
+    val __obj = js.Dynamic.literal(authorizationUrl = authorizationUrl.asInstanceOf[js.Any], flow = "accessCode", tokenUrl = tokenUrl.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("oauth2")
     __obj.asInstanceOf[OAuth2AccessCodeSecurity]
   }
   

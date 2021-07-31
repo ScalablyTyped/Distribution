@@ -2,19 +2,17 @@ package typings.slimerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceError extends StObject {
   
-  var errorCode: String = js.native
+  var errorCode: String
   
-  var errorString: String = js.native
+  var errorString: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var url: String = js.native
+  var url: String
 }
 object ResourceError {
   

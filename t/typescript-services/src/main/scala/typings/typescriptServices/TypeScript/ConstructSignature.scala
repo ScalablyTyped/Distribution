@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConstructSignature extends AST {
+trait ConstructSignature
+  extends StObject
+     with AST {
   
-  var callSignature: CallSignature = js.native
+  var callSignature: CallSignature
 }
 object ConstructSignature {
   

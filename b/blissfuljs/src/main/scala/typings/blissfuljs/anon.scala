@@ -6,17 +6,15 @@ import typings.std.ProgressEvent
 import typings.std.XMLHttpRequestUpload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Add extends StObject {
     
-    def add(name: String, callback: js.Function): Unit = js.native
+    def add(name: String, callback: js.Function): Unit
     
-    def run(name: String, env: js.Object): Unit = js.native
+    def run(name: String, env: js.Object): Unit
   }
   object Add {
     
@@ -37,39 +35,39 @@ object anon {
     }
   }
   
-  @js.native
   trait Data
-    extends /* propertyName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* propertyName */ StringDictionary[js.Any] {
     
-    var data: js.UndefOr[String] = js.native
+    var data: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var onreadystatechange: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], _]] = js.native
+    var onreadystatechange: js.UndefOr[js.Function1[/* ev */ ProgressEvent[EventTarget], js.Any]] = js.undefined
     
-    var readyState: js.UndefOr[Double] = js.native
+    var readyState: js.UndefOr[Double] = js.undefined
     
-    var response: js.UndefOr[js.Any] = js.native
+    var response: js.UndefOr[js.Any] = js.undefined
     
-    var responseBody: js.UndefOr[js.Any] = js.native
+    var responseBody: js.UndefOr[js.Any] = js.undefined
     
-    var responseText: js.UndefOr[String] = js.native
+    var responseText: js.UndefOr[String] = js.undefined
     
-    var responseType: js.UndefOr[String] = js.native
+    var responseType: js.UndefOr[String] = js.undefined
     
-    var responseXML: js.UndefOr[js.Any] = js.native
+    var responseXML: js.UndefOr[js.Any] = js.undefined
     
-    var status: js.UndefOr[Double] = js.native
+    var status: js.UndefOr[Double] = js.undefined
     
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var upload: js.UndefOr[XMLHttpRequestUpload] = js.native
+    var upload: js.UndefOr[XMLHttpRequestUpload] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object Data {
     
@@ -101,7 +99,7 @@ object anon {
       def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
       
       @scala.inline
-      def setOnreadystatechange(value: /* ev */ ProgressEvent[EventTarget] => _): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction1(value))
+      def setOnreadystatechange(value: /* ev */ ProgressEvent[EventTarget] => js.Any): Self = StObject.set(x, "onreadystatechange", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnreadystatechangeUndefined: Self = StObject.set(x, "onreadystatechange", js.undefined)
@@ -174,21 +172,21 @@ object anon {
     }
   }
   
-  @js.native
   trait DictpropertyName
-    extends /* propertyName */ StringDictionary[js.Any] {
+    extends StObject
+       with /* propertyName */ StringDictionary[js.Any] {
     
-    var `abstract`: js.UndefOr[Boolean] = js.native
+    var `abstract`: js.UndefOr[Boolean] = js.undefined
     
-    var constructor: js.UndefOr[js.Function] = js.native
+    var constructor: js.UndefOr[js.Function] = js.undefined
     
-    var `extends`: js.UndefOr[js.Function] = js.native
+    var `extends`: js.UndefOr[js.Function] = js.undefined
     
-    var `lazy`: js.UndefOr[js.Object] = js.native
+    var `lazy`: js.UndefOr[js.Object] = js.undefined
     
-    var live: js.UndefOr[js.Object] = js.native
+    var live: js.UndefOr[js.Object] = js.undefined
     
-    var static: js.UndefOr[js.Object] = js.native
+    var static: js.UndefOr[js.Object] = js.undefined
   }
   object DictpropertyName {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteFacesRequest extends StObject {
   
   /**
     * Collection from which to remove the specific faces.
     */
-  var CollectionId: typings.awsSdk.rekognitionMod.CollectionId = js.native
+  var CollectionId: typings.awsSdk.rekognitionMod.CollectionId
   
   /**
     * An array of face IDs to delete.
     */
-  var FaceIds: FaceIdList = js.native
+  var FaceIds: FaceIdList
 }
 object DeleteFacesRequest {
   

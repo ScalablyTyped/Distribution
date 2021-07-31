@@ -2,23 +2,21 @@ package typings.ow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Message extends StObject {
     
     /**
       The error message which should be shown if the `validator` is `false`. Or a error function which returns the error message and accepts the label as first argument.
       */
-    var message: String | (js.Function1[/* label */ String, String]) = js.native
+    var message: String | (js.Function1[/* label */ String, String])
     
     /**
       Should be `true` if the validation is correct.
       */
-    var validator: Boolean = js.native
+    var validator: Boolean
   }
   object Message {
     

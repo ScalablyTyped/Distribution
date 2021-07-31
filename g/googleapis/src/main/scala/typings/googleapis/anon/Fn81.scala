@@ -7,7 +7,6 @@ import typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Healthcare
 import typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

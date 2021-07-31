@@ -10,10 +10,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.org_user
 import typings.arcgisJsApi.arcgisJsApiStrings.public
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortalUserProperties extends StObject {
   
   /**
@@ -21,112 +19,112 @@ trait PortalUserProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#access)
     */
-  var access: js.UndefOr[`private` | org_ | public] = js.native
+  var access: js.UndefOr[`private` | org_ | public] = js.undefined
   
   /**
     * The date the user was created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#created)
     */
-  var created: js.UndefOr[DateProperties] = js.native
+  var created: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The culture information for the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#culture)
     */
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The user's e-mail address.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#email)
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The user's full name.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#fullName)
     */
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
   /**
     * The date the user was last modified.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#modified)
     */
-  var modified: js.UndefOr[DateProperties] = js.native
+  var modified: js.UndefOr[DateProperties] = js.undefined
   
   /**
     * The ID of the organization the user belongs to.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#orgId)
     */
-  var orgId: js.UndefOr[String] = js.native
+  var orgId: js.UndefOr[String] = js.undefined
   
   /**
     * The portal associated with the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#portal)
     */
-  var portal: js.UndefOr[PortalProperties] = js.native
+  var portal: js.UndefOr[PortalProperties] = js.undefined
   
   /**
     * The user's preferred view for content, either web or GIS.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#preferredView)
     */
-  var preferredView: js.UndefOr[String] = js.native
+  var preferredView: js.UndefOr[String] = js.undefined
   
   /**
     * The user preferred region, used to set the featured maps on the home page, content in the gallery, and the default extent of new maps in the Viewer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#region)
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the user's role in the organization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#role)
     */
-  var role: js.UndefOr[org_admin | org_publisher | org_user] = js.native
+  var role: js.UndefOr[org_admin | org_publisher | org_user] = js.undefined
   
   /**
     * The ID of the user's role.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#roleId)
     */
-  var roleId: js.UndefOr[String] = js.native
+  var roleId: js.UndefOr[String] = js.undefined
   
   /**
     * The JSON used to create the property values when the `PortalUser` is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#sourceJSON)
     */
-  var sourceJSON: js.UndefOr[js.Any] = js.native
+  var sourceJSON: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The user's personal units of measure setting.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#units)
     */
-  var units: js.UndefOr[english | metric] = js.native
+  var units: js.UndefOr[english | metric] = js.undefined
   
   /**
     * The username of the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalUser.html#username)
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object PortalUserProperties {
   

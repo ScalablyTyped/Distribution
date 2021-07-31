@@ -7,7 +7,6 @@ import typings.koa.mod.DefaultState
 import typings.koa.mod.Middleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -88,12 +87,11 @@ object mod extends Shortcut {
     ): Middleware[DefaultState, DefaultContext] = js.native
   }
   
-  @js.native
   trait KoaHelmetContentSecurityPolicyConfiguration extends StObject {
     
-    var directives: js.UndefOr[KoaHelmetContentSecurityPolicyDirectives] = js.native
+    var directives: js.UndefOr[KoaHelmetContentSecurityPolicyDirectives] = js.undefined
     
-    var reportOnly: js.UndefOr[Boolean] = js.native
+    var reportOnly: js.UndefOr[Boolean] = js.undefined
   }
   object KoaHelmetContentSecurityPolicyConfiguration {
     
@@ -122,40 +120,39 @@ object mod extends Shortcut {
   
   type KoaHelmetContentSecurityPolicyDirectiveFunction = js.Function1[/* ctx */ Context, String]
   
-  @js.native
   trait KoaHelmetContentSecurityPolicyDirectives extends StObject {
     
-    var baseUri: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var baseUri: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var childSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var childSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var connectSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var connectSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var defaultSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var defaultSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var fontSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var fontSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var formAction: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var formAction: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var frameAncestors: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var frameAncestors: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var frameSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var frameSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var imgSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var imgSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var mediaSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var mediaSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var objectSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var objectSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var pluginTypes: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var pluginTypes: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var reportUri: js.UndefOr[String] = js.native
+    var reportUri: js.UndefOr[String] = js.undefined
     
-    var sandbox: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var sandbox: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var scriptSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var scriptSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
     
-    var styleSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.native
+    var styleSrc: js.UndefOr[js.Array[KoaHelmetCspDirectiveValue]] = js.undefined
   }
   object KoaHelmetContentSecurityPolicyDirectives {
     

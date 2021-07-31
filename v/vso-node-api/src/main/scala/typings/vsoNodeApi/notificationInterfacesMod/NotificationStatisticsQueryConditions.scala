@@ -4,23 +4,21 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationStatisticsQueryConditions extends StObject {
   
-  var endDate: Date = js.native
+  var endDate: Date
   
-  var hitCountMinimum: Double = js.native
+  var hitCountMinimum: Double
   
-  var path: String = js.native
+  var path: String
   
-  var startDate: Date = js.native
+  var startDate: Date
   
-  var `type`: NotificationStatisticType = js.native
+  var `type`: NotificationStatisticType
   
-  var user: IdentityRef = js.native
+  var user: IdentityRef
 }
 object NotificationStatisticsQueryConditions {
   

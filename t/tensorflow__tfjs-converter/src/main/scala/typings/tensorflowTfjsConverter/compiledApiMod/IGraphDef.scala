@@ -2,20 +2,18 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGraphDef extends StObject {
   
   /** GraphDef library */
-  var library: js.UndefOr[IFunctionDefLibrary | Null] = js.native
+  var library: js.UndefOr[IFunctionDefLibrary | Null] = js.undefined
   
   /** GraphDef node */
-  var node: js.UndefOr[js.Array[INodeDef] | Null] = js.native
+  var node: js.UndefOr[js.Array[INodeDef] | Null] = js.undefined
   
   /** GraphDef versions */
-  var versions: js.UndefOr[IVersionDef | Null] = js.native
+  var versions: js.UndefOr[IVersionDef | Null] = js.undefined
 }
 object IGraphDef {
   

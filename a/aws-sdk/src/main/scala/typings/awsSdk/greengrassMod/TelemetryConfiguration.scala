@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TelemetryConfiguration extends StObject {
   
   /**
     * Synchronization status of the device reported configuration with the desired configuration.
     */
-  var ConfigurationSyncStatus: js.UndefOr[typings.awsSdk.greengrassMod.ConfigurationSyncStatus] = js.native
+  var ConfigurationSyncStatus: js.UndefOr[typings.awsSdk.greengrassMod.ConfigurationSyncStatus] = js.undefined
   
   /**
     * Configure telemetry to be on or off.
     */
-  var Telemetry: typings.awsSdk.greengrassMod.Telemetry = js.native
+  var Telemetry: typings.awsSdk.greengrassMod.Telemetry
 }
 object TelemetryConfiguration {
   

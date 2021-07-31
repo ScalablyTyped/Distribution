@@ -2,31 +2,29 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConnectionAliasesRequest extends StObject {
   
   /**
     * The identifiers of the connection aliases to describe.
     */
-  var AliasIds: js.UndefOr[ConnectionAliasIdList] = js.native
+  var AliasIds: js.UndefOr[ConnectionAliasIdList] = js.undefined
   
   /**
     * The maximum number of connection aliases to return.
     */
-  var Limit: js.UndefOr[typings.awsSdk.workspacesMod.Limit] = js.native
+  var Limit: js.UndefOr[typings.awsSdk.workspacesMod.Limit] = js.undefined
   
   /**
     * If you received a NextToken from a previous call that was paginated, provide this token to receive the next set of results. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The identifier of the directory associated with the connection alias.
     */
-  var ResourceId: js.UndefOr[NonEmptyString] = js.native
+  var ResourceId: js.UndefOr[NonEmptyString] = js.undefined
 }
 object DescribeConnectionAliasesRequest {
   

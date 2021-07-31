@@ -2,15 +2,13 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayoutAnimationProperties extends StObject {
   
-  var opacity: String = js.native
+  var opacity: String
   
-  var scaleXY: String = js.native
+  var scaleXY: String
 }
 object LayoutAnimationProperties {
   

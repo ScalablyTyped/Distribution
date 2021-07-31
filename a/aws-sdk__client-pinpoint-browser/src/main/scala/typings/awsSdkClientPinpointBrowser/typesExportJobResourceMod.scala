@@ -2,18 +2,16 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesExportJobResourceMod {
   
-  @js.native
   trait ExportJobResource extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) of an IAM role that grants Amazon Pinpoint access to the Amazon S3 location that endpoints will be exported to.
       */
-    var RoleArn: js.UndefOr[String] = js.native
+    var RoleArn: js.UndefOr[String] = js.undefined
     
     /**
       * A URL that points to the location within an Amazon S3 bucket that will receive the export. The location is typically a folder with multiple files.
@@ -22,17 +20,17 @@ object typesExportJobResourceMod {
       *
       * Amazon Pinpoint will export endpoints to this location.
       */
-    var S3UrlPrefix: js.UndefOr[String] = js.native
+    var S3UrlPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the segment to export endpoints from. If not present, Amazon Pinpoint exports all of the endpoints that belong to the application.
       */
-    var SegmentId: js.UndefOr[String] = js.native
+    var SegmentId: js.UndefOr[String] = js.undefined
     
     /**
       * The version of the segment to export if specified.
       */
-    var SegmentVersion: js.UndefOr[Double] = js.native
+    var SegmentVersion: js.UndefOr[Double] = js.undefined
   }
   object ExportJobResource {
     

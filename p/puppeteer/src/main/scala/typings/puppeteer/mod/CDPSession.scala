@@ -2,11 +2,12 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CDPSession extends EventEmitter {
+trait CDPSession
+  extends StObject
+     with EventEmitter {
   
   /**
     * Detaches session from target. Once detached, session won't emit any events and can't be used

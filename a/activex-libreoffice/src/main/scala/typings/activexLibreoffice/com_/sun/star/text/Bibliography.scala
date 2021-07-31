@@ -9,21 +9,21 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of bibliography within a text document.
   * @see com.sun.star.text.BaseIndex
   */
-@js.native
-trait Bibliography extends BaseIndex {
+trait Bibliography
+  extends StObject
+     with BaseIndex {
   
   /** contains the locale of the index. */
-  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  var Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** contains the name of the sort algorithm that is used to sort the entries. */
-  var SortAlgorithm: String = js.native
+  var SortAlgorithm: String
 }
 object Bibliography {
   

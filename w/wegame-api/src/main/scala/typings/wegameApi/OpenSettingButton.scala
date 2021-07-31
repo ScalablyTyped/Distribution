@@ -4,15 +4,15 @@ import typings.wegameApi.wx.types.ButtonStyle
 import typings.wegameApi.wx.types.ButtonType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenSettingButton extends CreatedButton {
+trait OpenSettingButton
+  extends StObject
+     with CreatedButton {
   
-  def offTap(callback: js.Function0[Unit]): Unit = js.native
+  def offTap(callback: js.Function0[Unit]): Unit
   
-  def onTap(callback: js.Function0[Unit]): Unit = js.native
+  def onTap(callback: js.Function0[Unit]): Unit
 }
 object OpenSettingButton {
   

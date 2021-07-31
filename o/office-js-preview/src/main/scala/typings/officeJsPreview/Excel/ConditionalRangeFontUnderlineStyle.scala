@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,11 +14,17 @@ sealed trait ConditionalRangeFontUnderlineStyle extends StObject
 object ConditionalRangeFontUnderlineStyle extends StObject {
   
   @js.native
-  sealed trait double extends ConditionalRangeFontUnderlineStyle
+  sealed trait double
+    extends StObject
+       with ConditionalRangeFontUnderlineStyle
   
   @js.native
-  sealed trait none extends ConditionalRangeFontUnderlineStyle
+  sealed trait none
+    extends StObject
+       with ConditionalRangeFontUnderlineStyle
   
   @js.native
-  sealed trait single extends ConditionalRangeFontUnderlineStyle
+  sealed trait single
+    extends StObject
+       with ConditionalRangeFontUnderlineStyle
 }

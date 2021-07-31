@@ -20,19 +20,19 @@ import typings.vegaTypings.encodeMod.Text
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined vega-lite.vega-lite/build/src/spec/toplevel.TopLevel<vega-lite.vega-lite/build/src/spec/layer.LayerSpec> */
-@js.native
-trait TopLevelLayerSpec extends _TopLevelSpec {
+trait TopLevelLayerSpec
+  extends StObject
+     with _TopLevelSpec {
   
   /**
     * URL to [JSON schema](http://json-schema.org/) for a Vega-Lite specification. Unless you have a reason to change this, use `https://vega.github.io/schema/vega-lite/v4.json`. Setting the `$schema` property allows automatic validation and autocomplete in editors that support JSON schema.
     * @format uri
     */
   @JSName("$schema")
-  var $schema: js.UndefOr[String] = js.native
+  var $schema: js.UndefOr[String] = js.undefined
   
   /**
     * How the visualization size should be determined. If a string, should be one of `"pad"`, `"fit"` or `"none"`.
@@ -40,40 +40,40 @@ trait TopLevelLayerSpec extends _TopLevelSpec {
     *
     * __Default value__: `pad`
     */
-  var autosize: js.UndefOr[AutosizeType | AutoSizeParams] = js.native
+  var autosize: js.UndefOr[AutosizeType | AutoSizeParams] = js.undefined
   
   /**
     * CSS color property to use as the background of the entire view.
     *
     * __Default value:__ `"white"`
     */
-  var background: js.UndefOr[typings.vegaTypings.colorMod.Color | ExprRef | SignalRef] = js.native
+  var background: js.UndefOr[typings.vegaTypings.colorMod.Color | ExprRef | SignalRef] = js.undefined
   
   /**
     * Vega-Lite configuration object. This property can only be defined at the top-level of a specification.
     */
-  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]] = js.native
+  var config: js.UndefOr[typings.vegaLite.srcConfigMod.Config[ExprRef | SignalRef]] = js.undefined
   
   /**
     * An object describing the data source. Set to `null` to ignore the parent's data source. If no data is set, it is derived from the parent.
     */
-  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data | Null] = js.native
+  var data: js.UndefOr[typings.vegaLite.srcDataMod.Data | Null] = js.undefined
   
   /**
     * A global data store for named datasets. This is a mapping from names to inline datasets.
     * This can be an array of objects or primitive values or a string. Arrays of primitive values are ingested as objects with a `data` property.
     */
-  var datasets: js.UndefOr[typings.vegaLite.toplevelMod.Datasets] = js.native
+  var datasets: js.UndefOr[typings.vegaLite.toplevelMod.Datasets] = js.undefined
   
   /**
     * Description of this mark for commenting purpose.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A shared key-value mapping between encoding channels and definition of fields in the underlying layers.
     */
-  var encoding: js.UndefOr[SharedCompositeEncoding[typings.vegaLite.channeldefMod.Field]] = js.native
+  var encoding: js.UndefOr[SharedCompositeEncoding[typings.vegaLite.channeldefMod.Field]] = js.undefined
   
   /**
     * The height of a visualization.
@@ -88,19 +88,19 @@ trait TopLevelLayerSpec extends _TopLevelSpec {
     *
     * __See also:__ [`height`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var height: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
   
   /**
     * Layer or single view specifications to be layered.
     *
     * __Note__: Specifications inside `layer` cannot use `row` and `column` channels as layering facet specifications is not allowed. Instead, use the [facet operator](https://vega.github.io/vega-lite/docs/facet.html) and place a layer inside a facet.
     */
-  var layer: js.Array[LayerSpec | UnitSpec] = js.native
+  var layer: js.Array[LayerSpec | UnitSpec]
   
   /**
     * Name of the visualization for later reference.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The default visualization padding, in pixels, from the edge of the visualization canvas to the data rectangle. If a number, specifies padding for all sides.
@@ -108,45 +108,45 @@ trait TopLevelLayerSpec extends _TopLevelSpec {
     *
     * __Default value__: `5`
     */
-  var padding: js.UndefOr[Padding | ExprRef | SignalRef] = js.native
+  var padding: js.UndefOr[Padding | ExprRef | SignalRef] = js.undefined
   
   /**
     * Dynamic variables that parameterize a visualization.
     */
-  var params: js.UndefOr[js.Array[Parameter]] = js.native
+  var params: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /**
     * An object defining properties of the geographic projection shared by underlying layers.
     */
-  var projection: js.UndefOr[Projection] = js.native
+  var projection: js.UndefOr[Projection] = js.undefined
   
   /**
     * Scale, axis, and legend resolutions for view composition specifications.
     */
-  var resolve: js.UndefOr[Resolve] = js.native
+  var resolve: js.UndefOr[Resolve] = js.undefined
   
   /**
     * Title for the plot.
     */
-  var title: js.UndefOr[Text | (TitleParams[ExprRef | SignalRef])] = js.native
+  var title: js.UndefOr[Text | (TitleParams[ExprRef | SignalRef])] = js.undefined
   
   /**
     * An array of data transformations such as filter and new field calculation.
     */
-  var transform: js.UndefOr[js.Array[Transform]] = js.native
+  var transform: js.UndefOr[js.Array[Transform]] = js.undefined
   
   /**
     * Optional metadata that will be passed to Vega.
     * This object is completely ignored by Vega and Vega-Lite and can be used for custom metadata.
     */
-  var usermeta: js.UndefOr[Dict[_]] = js.native
+  var usermeta: js.UndefOr[Dict[js.Any]] = js.undefined
   
   /**
     * An object defining the view background's fill and stroke.
     *
     * __Default value:__ none (transparent)
     */
-  var view: js.UndefOr[ViewBackground[ExprRef | SignalRef]] = js.native
+  var view: js.UndefOr[ViewBackground[ExprRef | SignalRef]] = js.undefined
   
   /**
     * The width of a visualization.
@@ -162,7 +162,7 @@ trait TopLevelLayerSpec extends _TopLevelSpec {
     *
     * __See also:__ [`width`](https://vega.github.io/vega-lite/docs/size.html) documentation.
     */
-  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.native
+  var width: js.UndefOr[Double | container | typings.vegaLite.specBaseMod.Step] = js.undefined
 }
 object TopLevelLayerSpec {
   
@@ -290,7 +290,7 @@ object TopLevelLayerSpec {
     def setTransformVarargs(value: Transform*): Self = StObject.set(x, "transform", js.Array(value :_*))
     
     @scala.inline
-    def setUsermeta(value: Dict[_]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
+    def setUsermeta(value: Dict[js.Any]): Self = StObject.set(x, "usermeta", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setUsermetaUndefined: Self = StObject.set(x, "usermeta", js.undefined)

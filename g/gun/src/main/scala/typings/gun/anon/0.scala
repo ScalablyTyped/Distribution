@@ -2,19 +2,17 @@ package typings.gun.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var ok: typings.gun.gunNumbers.`0` = js.native
+  var ok: typings.gun.gunNumbers.`0`
 }
 object `0` {
   
   @scala.inline
-  def apply(ok: typings.gun.gunNumbers.`0`): `0` = {
-    val __obj = js.Dynamic.literal(ok = ok.asInstanceOf[js.Any])
+  def apply(): `0` = {
+    val __obj = js.Dynamic.literal(ok = 0)
     __obj.asInstanceOf[`0`]
   }
   

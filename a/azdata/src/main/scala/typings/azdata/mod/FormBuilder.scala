@@ -2,11 +2,12 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FormBuilder extends ContainerBuilder[FormContainer, FormLayout, FormItemLayout] {
+trait FormBuilder
+  extends StObject
+     with ContainerBuilder[FormContainer, FormLayout, FormItemLayout] {
   
   /**
     * Creates a child component and adds it to this container.
@@ -36,12 +37,12 @@ trait FormBuilder extends ContainerBuilder[FormContainer, FormLayout, FormItemLa
     */
   def insertFormItem(formComponent: FormComponent): Unit = js.native
   def insertFormItem(formComponent: FormComponentGroup): Unit = js.native
-  def insertFormItem(formComponent: FormComponentGroup, index: js.UndefOr[scala.Nothing], itemLayout: FormItemLayout): Unit = js.native
   def insertFormItem(formComponent: FormComponentGroup, index: Double): Unit = js.native
   def insertFormItem(formComponent: FormComponentGroup, index: Double, itemLayout: FormItemLayout): Unit = js.native
-  def insertFormItem(formComponent: FormComponent, index: js.UndefOr[scala.Nothing], itemLayout: FormItemLayout): Unit = js.native
+  def insertFormItem(formComponent: FormComponentGroup, index: Unit, itemLayout: FormItemLayout): Unit = js.native
   def insertFormItem(formComponent: FormComponent, index: Double): Unit = js.native
   def insertFormItem(formComponent: FormComponent, index: Double, itemLayout: FormItemLayout): Unit = js.native
+  def insertFormItem(formComponent: FormComponent, index: Unit, itemLayout: FormItemLayout): Unit = js.native
   
   /**
     * Removes a from item from the from

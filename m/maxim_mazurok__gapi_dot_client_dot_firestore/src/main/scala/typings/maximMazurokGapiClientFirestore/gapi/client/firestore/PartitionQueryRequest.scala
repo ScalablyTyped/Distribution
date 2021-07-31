@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionQueryRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait PartitionQueryRequest extends StObject {
     * will return up to 8 partitions and a `next_page_token` if more results exist. A second call to PartitionQuery will return up to 2 partitions, to complete the total of 10 specified
     * in `partition_count`.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The `next_page_token` value returned from a previous call to PartitionQuery that may be used to get an additional set of results. There are no ordering guarantees between sets of
@@ -21,20 +19,20 @@ trait PartitionQueryRequest extends StObject {
     * cursor Q * cursor A, cursor U, cursor W To obtain a complete result set ordered with respect to the results of the query supplied to PartitionQuery, the results sets should be
     * merged: cursor A, cursor B, cursor M, cursor Q, cursor U, cursor W
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The desired maximum number of partition points. The partitions may be returned across multiple pages of results. The number must be positive. The actual number of partitions
     * returned may be fewer. For example, this may be set to one fewer than the number of parallel queries to be run, or in running a data pipeline job, one fewer than the number of
     * workers or compute instances available.
     */
-  var partitionCount: js.UndefOr[String] = js.native
+  var partitionCount: js.UndefOr[String] = js.undefined
   
   /**
     * A structured query. Query must specify collection with all descendants and be ordered by name ascending. Other filters, order bys, limits, offsets, and start/end cursors are not
     * supported.
     */
-  var structuredQuery: js.UndefOr[StructuredQuery] = js.native
+  var structuredQuery: js.UndefOr[StructuredQuery] = js.undefined
 }
 object PartitionQueryRequest {
   

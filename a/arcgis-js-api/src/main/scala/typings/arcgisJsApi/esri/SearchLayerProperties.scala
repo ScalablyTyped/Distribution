@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchLayerProperties extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait SearchLayerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayer.html#field)
     */
-  var field: js.UndefOr[SearchLayerFieldProperties] = js.native
+  var field: js.UndefOr[SearchLayerFieldProperties] = js.undefined
   
   /**
     * The id of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayer.html#id)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The sub layer index.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webdoc-applicationProperties-SearchLayer.html#subLayer)
     */
-  var subLayer: js.UndefOr[Double] = js.native
+  var subLayer: js.UndefOr[Double] = js.undefined
 }
 object SearchLayerProperties {
   

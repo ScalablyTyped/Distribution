@@ -2,13 +2,11 @@ package typings.googleapis.runtimeconfigV1beta1Mod.runtimeconfigV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `ListVariables()` method.
   */
-@js.native
 trait SchemaListVariablesResponse extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaListVariablesResponse extends StObject {
     * next list request. Subsequent list requests will have their own
     * `nextPageToken` to continue paging through the results
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of variables and their values. The order of returned variable
     * objects is arbitrary.
     */
-  var variables: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var variables: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
 }
 object SchemaListVariablesResponse {
   

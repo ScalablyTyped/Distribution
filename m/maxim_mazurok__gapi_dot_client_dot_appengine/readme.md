@@ -10,9 +10,9 @@ TypeScript typings for App Engine Admin API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.appengine |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 7 |
 | # dependents       | 1 |
-| # downloads        | 40 |
+| # downloads        | 956 |
 | # stars            | 0 |
 
 ## Links

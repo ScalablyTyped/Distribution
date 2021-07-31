@@ -12,92 +12,90 @@ import typings.std.HTMLButtonElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateRangePickerInputShape extends StObject {
   
-  var block: js.UndefOr[Boolean] = js.native
+  var block: js.UndefOr[Boolean] = js.undefined
   
-  var customArrowIcon: js.UndefOr[ReactNode] = js.native
+  var customArrowIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var customCloseIcon: js.UndefOr[ReactNode] = js.native
+  var customCloseIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var customInputIcon: js.UndefOr[ReactNode] = js.native
+  var customInputIcon: js.UndefOr[ReactNode] = js.undefined
   
-  var disabled: js.UndefOr[DisabledShape] = js.native
+  var disabled: js.UndefOr[DisabledShape] = js.undefined
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
-  var endDateAriaLabel: js.UndefOr[String] = js.native
+  var endDateAriaLabel: js.UndefOr[String] = js.undefined
   
-  var endDateId: js.UndefOr[String] = js.native
+  var endDateId: js.UndefOr[String] = js.undefined
   
-  var endDatePlaceholderText: js.UndefOr[String] = js.native
+  var endDatePlaceholderText: js.UndefOr[String] = js.undefined
   
-  var inputIconPosition: js.UndefOr[IconPositionShape] = js.native
+  var inputIconPosition: js.UndefOr[IconPositionShape] = js.undefined
   
-  var isEndDateFocused: js.UndefOr[Boolean] = js.native
+  var isEndDateFocused: js.UndefOr[Boolean] = js.undefined
   
   // accessibility
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var isRTL: js.UndefOr[Boolean] = js.native
+  var isRTL: js.UndefOr[Boolean] = js.undefined
   
-  var isStartDateFocused: js.UndefOr[Boolean] = js.native
+  var isStartDateFocused: js.UndefOr[Boolean] = js.undefined
   
-  var noBorder: js.UndefOr[Boolean] = js.native
+  var noBorder: js.UndefOr[Boolean] = js.undefined
   
-  var onClearDates: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+  var onClearDates: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
   
-  var onEndDateChange: js.UndefOr[js.Function1[/* dateString */ String, Unit]] = js.native
+  var onEndDateChange: js.UndefOr[js.Function1[/* dateString */ String, Unit]] = js.undefined
   
-  var onEndDateFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onEndDateFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   
-  var onEndDateTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onEndDateTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyDownArrowDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownArrowDown: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onKeyDownQuestionMark: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onKeyDownQuestionMark: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var onStartDateChange: js.UndefOr[js.Function1[/* dateString */ String, Unit]] = js.native
+  var onStartDateChange: js.UndefOr[js.Function1[/* dateString */ String, Unit]] = js.undefined
   
-  var onStartDateFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.native
+  var onStartDateFocus: js.UndefOr[FocusEventHandler[HTMLInputElement]] = js.undefined
   
-  var onStartDateShiftTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.native
+  var onStartDateShiftTab: js.UndefOr[KeyboardEventHandler[HTMLInputElement]] = js.undefined
   
-  var openDirection: js.UndefOr[OpenDirectionShape] = js.native
+  var openDirection: js.UndefOr[OpenDirectionShape] = js.undefined
   
   // describes actual DOM focus
   // i18n
-  var phrases: js.UndefOr[DateRangePickerInputPhrases] = js.native
+  var phrases: js.UndefOr[DateRangePickerInputPhrases] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var regular: js.UndefOr[Boolean] = js.native
+  var regular: js.UndefOr[Boolean] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var screenReaderMessage: js.UndefOr[String] = js.native
+  var screenReaderMessage: js.UndefOr[String] = js.undefined
   
-  var showCaret: js.UndefOr[Boolean] = js.native
+  var showCaret: js.UndefOr[Boolean] = js.undefined
   
-  var showClearDates: js.UndefOr[Boolean] = js.native
+  var showClearDates: js.UndefOr[Boolean] = js.undefined
   
-  var showDefaultInputIcon: js.UndefOr[Boolean] = js.native
+  var showDefaultInputIcon: js.UndefOr[Boolean] = js.undefined
   
-  var small: js.UndefOr[Boolean] = js.native
+  var small: js.UndefOr[Boolean] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
-  var startDateAriaLabel: js.UndefOr[String] = js.native
+  var startDateAriaLabel: js.UndefOr[String] = js.undefined
   
-  var startDateId: js.UndefOr[String] = js.native
+  var startDateId: js.UndefOr[String] = js.undefined
   
-  var startDatePlaceholderText: js.UndefOr[String] = js.native
+  var startDatePlaceholderText: js.UndefOr[String] = js.undefined
   
-  var verticalSpacing: js.UndefOr[Double] = js.native
+  var verticalSpacing: js.UndefOr[Double] = js.undefined
 }
 object DateRangePickerInputShape {
   

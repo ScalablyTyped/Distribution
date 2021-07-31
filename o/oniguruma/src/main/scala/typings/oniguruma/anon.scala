@@ -2,28 +2,26 @@ package typings.oniguruma
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined oniguruma.oniguruma.CaptureIndex & {  match :string} */
-  @js.native
   trait CaptureIndexmatchstring extends StObject {
     
     /** The position in the search string where the capture ends */
-    var end: Double = js.native
+    var end: Double
     
     /** The index of the capturing group, or 0 for a full-string match */
-    var index: Double = js.native
+    var index: Double
     
     /** The total character length of the capture */
-    var length: Double = js.native
+    var length: Double
     
-    var `match`: String = js.native
+    var `match`: String
     
     /** The position in the search string where the capture begins */
-    var start: Double = js.native
+    var start: Double
   }
   object CaptureIndexmatchstring {
     

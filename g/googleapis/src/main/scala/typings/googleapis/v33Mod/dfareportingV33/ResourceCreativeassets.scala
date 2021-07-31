@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.3", "dfareporting_v3_3.Resource$Creativeassets")
@@ -35,7 +34,7 @@ class ResourceCreativeassets protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaCreativeAssetMetadata] = js.native
   def insert(callback: BodyResponseCallback[SchemaCreativeAssetMetadata]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCreativeAssetMetadata] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCreativeAssetMetadata] = js.native
   def insert(params: ParamsResourceCreativeassetsInsert): GaxiosPromise[SchemaCreativeAssetMetadata] = js.native
   def insert(
     params: ParamsResourceCreativeassetsInsert,

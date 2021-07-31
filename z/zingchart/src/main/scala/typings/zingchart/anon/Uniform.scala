@@ -2,10 +2,8 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uniform extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait Uniform extends StObject {
     * been specified in this transform object. If values for both "text" and "all" have been specified, the value in "text" will be used
     * . 'Month of %M' | '%d' | ...
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * To convert Unix timestamps into dates. Use this attribute with the all attribute. 'date'
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * To set the time-series scale to linear (uniform) or non-linear. true | false | 1 | 0
     */
-  var uniform: js.UndefOr[Boolean] = js.native
+  var uniform: js.UndefOr[Boolean] = js.undefined
 }
 object Uniform {
   

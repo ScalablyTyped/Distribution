@@ -2,14 +2,12 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserResponse extends StObject {
   
   // user object that was deleted
-  var data: js.UndefOr[User] = js.native
+  var data: js.UndefOr[User] = js.undefined
 }
 object DeleteUserResponse {
   

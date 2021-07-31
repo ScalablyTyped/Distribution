@@ -4,7 +4,6 @@ import typings.highcharts.mod.Options
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,7 +39,6 @@ object mod {
   /**
     * Props for ReactHighcharts component.
     */
-  @js.native
   trait ReactHighchartsProps extends StObject {
     
     /**
@@ -52,17 +50,17 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Highcharts.ChartObject */ /* chart */ js.Any, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Highcharts configuration options.
       */
-    var config: Options = js.native
+    var config: Options
     
     /**
       * Chart will not rerender if the config is referentially equal to previous and this property is true
       */
-    var isPureConfig: js.UndefOr[Boolean] = js.native
+    var isPureConfig: js.UndefOr[Boolean] = js.undefined
   }
   object ReactHighchartsProps {
     

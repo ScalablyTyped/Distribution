@@ -6,7 +6,6 @@ import typings.babelPresetEnv.babelPresetEnvStrings.tp
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,7 +22,9 @@ object mod {
     - typings.babelPresetEnv.babelPresetEnvNumbers.`2`
     - typings.babelPresetEnv.babelPresetEnvNumbers.`3`
   */
-  trait CorejsVersion extends CorejsOption
+  trait CorejsVersion
+    extends StObject
+       with CorejsOption
   object CorejsVersion {
     
     @scala.inline
@@ -67,36 +68,35 @@ object mod {
     def umd: typings.babelPresetEnv.babelPresetEnvStrings.umd = "umd".asInstanceOf[typings.babelPresetEnv.babelPresetEnvStrings.umd]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var bugfixes: js.UndefOr[Boolean] = js.native
+    var bugfixes: js.UndefOr[Boolean] = js.undefined
     
-    var configPath: js.UndefOr[String] = js.native
+    var configPath: js.UndefOr[String] = js.undefined
     
-    var corejs: js.UndefOr[CorejsOption] = js.native
+    var corejs: js.UndefOr[CorejsOption] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var exclude: js.UndefOr[PluginList] = js.native
+    var exclude: js.UndefOr[PluginList] = js.undefined
     
-    var forceAllTransforms: js.UndefOr[Boolean] = js.native
+    var forceAllTransforms: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreBrowserslistConfig: js.UndefOr[Boolean] = js.native
+    var ignoreBrowserslistConfig: js.UndefOr[Boolean] = js.undefined
     
-    var include: js.UndefOr[PluginList] = js.native
+    var include: js.UndefOr[PluginList] = js.undefined
     
-    var loose: js.UndefOr[Boolean] = js.native
+    var loose: js.UndefOr[Boolean] = js.undefined
     
-    var modules: js.UndefOr[ModuleOption] = js.native
+    var modules: js.UndefOr[ModuleOption] = js.undefined
     
-    var shippedProposals: js.UndefOr[Boolean] = js.native
+    var shippedProposals: js.UndefOr[Boolean] = js.undefined
     
-    var spec: js.UndefOr[Boolean] = js.native
+    var spec: js.UndefOr[Boolean] = js.undefined
     
-    var targets: js.UndefOr[TargetsOptions] = js.native
+    var targets: js.UndefOr[TargetsOptions] = js.undefined
     
-    var useBuiltIns: js.UndefOr[UseBuiltInsOption] = js.native
+    var useBuiltIns: js.UndefOr[UseBuiltInsOption] = js.undefined
   }
   object Options {
     
@@ -381,8 +381,8 @@ object mod {
     }
     
     @scala.inline
-    def Esmodules(esmodules: `true`): typings.babelPresetEnv.anon.Esmodules = {
-      val __obj = js.Dynamic.literal(esmodules = esmodules.asInstanceOf[js.Any])
+    def Esmodules(): typings.babelPresetEnv.anon.Esmodules = {
+      val __obj = js.Dynamic.literal(esmodules = true)
       __obj.asInstanceOf[typings.babelPresetEnv.anon.Esmodules]
     }
     

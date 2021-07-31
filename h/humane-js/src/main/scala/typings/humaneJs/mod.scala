@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -32,7 +31,7 @@ object mod extends Shortcut {
     var info: js.UndefOr[SpawnLogFunction] = js.native
     
     def log(message: logMessage): Humane = js.native
-    def log(message: logMessage, callback: js.UndefOr[scala.Nothing], options: HumaneMessageOptions): Humane = js.native
+    def log(message: logMessage, callback: Unit, options: HumaneMessageOptions): Humane = js.native
     def log(message: logMessage, callback: completionCallback): Humane = js.native
     def log(message: logMessage, callback: completionCallback, options: HumaneMessageOptions): Humane = js.native
     def log(message: logMessage, options: HumaneMessageOptions): Humane = js.native
@@ -49,16 +48,15 @@ object mod extends Shortcut {
     var waitForMove: Boolean = js.native
   }
   
-  @js.native
   trait HumaneMessageOptions extends StObject {
     
-    var addnCls: js.UndefOr[String] = js.native
+    var addnCls: js.UndefOr[String] = js.undefined
     
-    var clickToClose: js.UndefOr[Boolean] = js.native
+    var clickToClose: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var waitForMove: js.UndefOr[Boolean] = js.native
+    var waitForMove: js.UndefOr[Boolean] = js.undefined
   }
   object HumaneMessageOptions {
     
@@ -97,12 +95,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait HumaneOptions extends HumaneMessageOptions {
+  trait HumaneOptions
+    extends StObject
+       with HumaneMessageOptions {
     
-    var baseCls: js.UndefOr[String] = js.native
+    var baseCls: js.UndefOr[String] = js.undefined
     
-    var container: js.UndefOr[Element] = js.native
+    var container: js.UndefOr[Element] = js.undefined
   }
   object HumaneOptions {
     
@@ -133,7 +132,7 @@ object mod extends Shortcut {
   trait SpawnLogFunction extends StObject {
     
     def apply(message: logMessage): Humane = js.native
-    def apply(message: logMessage, callback: js.UndefOr[scala.Nothing], options: HumaneMessageOptions): Humane = js.native
+    def apply(message: logMessage, callback: Unit, options: HumaneMessageOptions): Humane = js.native
     def apply(message: logMessage, callback: completionCallback): Humane = js.native
     def apply(message: logMessage, callback: completionCallback, options: HumaneMessageOptions): Humane = js.native
     def apply(message: logMessage, options: HumaneMessageOptions): Humane = js.native

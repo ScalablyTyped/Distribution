@@ -3,19 +3,17 @@ package typings.overlayscrollbars.anon
 import typings.overlayscrollbars.mod.Margin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bottom extends StObject {
   
-  var bottom: js.UndefOr[Margin] = js.native
+  var bottom: js.UndefOr[Margin] = js.undefined
   
-  var left: js.UndefOr[Margin] = js.native
+  var left: js.UndefOr[Margin] = js.undefined
   
-  var right: js.UndefOr[Margin] = js.native
+  var right: js.UndefOr[Margin] = js.undefined
   
-  var top: js.UndefOr[Margin] = js.native
+  var top: js.UndefOr[Margin] = js.undefined
 }
 object Bottom {
   

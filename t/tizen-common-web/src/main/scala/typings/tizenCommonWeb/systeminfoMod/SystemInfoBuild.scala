@@ -2,30 +2,30 @@ package typings.tizenCommonWeb.systeminfoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SystemInfoBuild extends SystemInfoProperty {
+trait SystemInfoBuild
+  extends StObject
+     with SystemInfoProperty {
   
   /**
     * Represents the build version information of the device.
     *
     * @since 2.2
     */
-  val buildVersion: String = js.native
+  val buildVersion: String
   
   /**
     * Represents the manufacturer of the device.
     *
     * @since 2.1
     */
-  val manufacturer: String = js.native
+  val manufacturer: String
   
   /**
     * Represents the model name of the current device.
     */
-  val model: String = js.native
+  val model: String
 }
 object SystemInfoBuild {
   

@@ -10,9 +10,9 @@ The Next Generation of CSS-in-JS.
 | ------------------ | :-------------: |
 | Full name          | create-emotion |
 | Keywords           | styles, emotion, react, css, css-in-js |
-| # releases         | 37 |
-| # dependents       | 32 |
-| # downloads        | 39952501 |
+| # releases         | 14 |
+| # dependents       | 41 |
+| # downloads        | 37664921 |
 | # stars            | 0 |
 
 ## Links

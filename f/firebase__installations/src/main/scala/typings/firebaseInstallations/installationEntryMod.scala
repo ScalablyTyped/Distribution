@@ -5,7 +5,6 @@ import typings.firebaseInstallations.firebaseInstallationsNumbers.`1`
 import typings.firebaseInstallations.firebaseInstallationsNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object installationEntryMod {
@@ -19,52 +18,53 @@ object installationEntryMod {
   object AuthToken {
     
     @scala.inline
-    def CompletedAuthToken(creationTime: Double, expiresIn: Double, requestStatus: `2`, token: String): typings.firebaseInstallations.installationEntryMod.CompletedAuthToken = {
-      val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = requestStatus.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    def CompletedAuthToken(creationTime: Double, expiresIn: Double, token: String): typings.firebaseInstallations.installationEntryMod.CompletedAuthToken = {
+      val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = 2, token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.CompletedAuthToken]
     }
     
     @scala.inline
-    def InProgressAuthToken(requestStatus: `1`, requestTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressAuthToken = {
-      val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any], requestTime = requestTime.asInstanceOf[js.Any])
+    def InProgressAuthToken(requestTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressAuthToken = {
+      val __obj = js.Dynamic.literal(requestStatus = 1, requestTime = requestTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.InProgressAuthToken]
     }
     
     @scala.inline
-    def NotStartedAuthToken(requestStatus: `0`): typings.firebaseInstallations.installationEntryMod.NotStartedAuthToken = {
-      val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any])
+    def NotStartedAuthToken(): typings.firebaseInstallations.installationEntryMod.NotStartedAuthToken = {
+      val __obj = js.Dynamic.literal(requestStatus = 0)
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.NotStartedAuthToken]
     }
   }
   
-  @js.native
-  trait CompletedAuthToken extends AuthToken {
+  trait CompletedAuthToken
+    extends StObject
+       with AuthToken {
     
     /**
       * Unix timestamp when Authentication Token was created.
       * Only exists if requestStatus is COMPLETED.
       */
-    val creationTime: Double = js.native
+    val creationTime: Double
     
     /**
       * Authentication Token time to live duration in milliseconds.
       * Only exists if requestStatus is COMPLETED.
       */
-    val expiresIn: Double = js.native
+    val expiresIn: Double
     
-    val requestStatus: `2` = js.native
+    val requestStatus: `2`
     
     /**
       * Firebase Installations Authentication Token.
       * Only exists if requestStatus is COMPLETED.
       */
-    val token: String = js.native
+    val token: String
   }
   object CompletedAuthToken {
     
     @scala.inline
-    def apply(creationTime: Double, expiresIn: Double, requestStatus: `2`, token: String): CompletedAuthToken = {
-      val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = requestStatus.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    def apply(creationTime: Double, expiresIn: Double, token: String): CompletedAuthToken = {
+      val __obj = js.Dynamic.literal(creationTime = creationTime.asInstanceOf[js.Any], expiresIn = expiresIn.asInstanceOf[js.Any], requestStatus = 2, token = token.asInstanceOf[js.Any])
       __obj.asInstanceOf[CompletedAuthToken]
     }
     
@@ -85,22 +85,23 @@ object installationEntryMod {
     }
   }
   
-  @js.native
-  trait InProgressAuthToken extends AuthToken {
+  trait InProgressAuthToken
+    extends StObject
+       with AuthToken {
     
-    val requestStatus: `1` = js.native
+    val requestStatus: `1`
     
     /**
       * Unix timestamp when the current generateAuthRequest was initiated.
       * Used for figuring out how long the request status has been IN_PROGRESS.
       */
-    val requestTime: Double = js.native
+    val requestTime: Double
   }
   object InProgressAuthToken {
     
     @scala.inline
-    def apply(requestStatus: `1`, requestTime: Double): InProgressAuthToken = {
-      val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any], requestTime = requestTime.asInstanceOf[js.Any])
+    def apply(requestTime: Double): InProgressAuthToken = {
+      val __obj = js.Dynamic.literal(requestStatus = 1, requestTime = requestTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[InProgressAuthToken]
     }
     
@@ -115,27 +116,28 @@ object installationEntryMod {
     }
   }
   
-  @js.native
-  trait InProgressInstallationEntry extends InstallationEntry {
+  trait InProgressInstallationEntry
+    extends StObject
+       with InstallationEntry {
     
     /** Firebase Installation ID */
-    val fid: String = js.native
+    val fid: String
     
     /** Status of the Firebase Installation registration on the server. */
-    val registrationStatus: `1` = js.native
+    val registrationStatus: `1`
     
     /**
       * Unix timestamp that shows the time when the current createInstallation
       * request was initiated.
       * Used for figuring out how long the registration status has been PENDING.
       */
-    val registrationTime: Double = js.native
+    val registrationTime: Double
   }
   object InProgressInstallationEntry {
     
     @scala.inline
-    def apply(fid: String, registrationStatus: `1`, registrationTime: Double): InProgressInstallationEntry = {
-      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any], registrationTime = registrationTime.asInstanceOf[js.Any])
+    def apply(fid: String, registrationTime: Double): InProgressInstallationEntry = {
+      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 1, registrationTime = registrationTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[InProgressInstallationEntry]
     }
     
@@ -162,34 +164,35 @@ object installationEntryMod {
   object InstallationEntry {
     
     @scala.inline
-    def InProgressInstallationEntry(fid: String, registrationStatus: `1`, registrationTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressInstallationEntry = {
-      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any], registrationTime = registrationTime.asInstanceOf[js.Any])
+    def InProgressInstallationEntry(fid: String, registrationTime: Double): typings.firebaseInstallations.installationEntryMod.InProgressInstallationEntry = {
+      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 1, registrationTime = registrationTime.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.InProgressInstallationEntry]
     }
     
     @scala.inline
-    def RegisteredInstallationEntry(authToken: AuthToken, fid: String, refreshToken: String, registrationStatus: `2`): typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry = {
-      val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], fid = fid.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
+    def RegisteredInstallationEntry(authToken: AuthToken, fid: String, refreshToken: String): typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry = {
+      val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], fid = fid.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], registrationStatus = 2)
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.RegisteredInstallationEntry]
     }
     
     @scala.inline
-    def UnregisteredInstallationEntry(fid: String, registrationStatus: `0`): typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry = {
-      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
+    def UnregisteredInstallationEntry(fid: String): typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry = {
+      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 0)
       __obj.asInstanceOf[typings.firebaseInstallations.installationEntryMod.UnregisteredInstallationEntry]
     }
   }
   
-  @js.native
-  trait NotStartedAuthToken extends AuthToken {
+  trait NotStartedAuthToken
+    extends StObject
+       with AuthToken {
     
-    val requestStatus: `0` = js.native
+    val requestStatus: `0`
   }
   object NotStartedAuthToken {
     
     @scala.inline
-    def apply(requestStatus: `0`): NotStartedAuthToken = {
-      val __obj = js.Dynamic.literal(requestStatus = requestStatus.asInstanceOf[js.Any])
+    def apply(): NotStartedAuthToken = {
+      val __obj = js.Dynamic.literal(requestStatus = 0)
       __obj.asInstanceOf[NotStartedAuthToken]
     }
     
@@ -201,29 +204,30 @@ object installationEntryMod {
     }
   }
   
-  @js.native
-  trait RegisteredInstallationEntry extends InstallationEntry {
+  trait RegisteredInstallationEntry
+    extends StObject
+       with InstallationEntry {
     
     /** Firebase Installation Authentication Token. */
-    val authToken: AuthToken = js.native
+    val authToken: AuthToken
     
     /** Firebase Installation ID */
-    val fid: String = js.native
+    val fid: String
     
     /**
       * Refresh Token returned from the server.
       * Used for authenticating generateAuthToken requests.
       */
-    val refreshToken: String = js.native
+    val refreshToken: String
     
     /** Status of the Firebase Installation registration on the server. */
-    val registrationStatus: `2` = js.native
+    val registrationStatus: `2`
   }
   object RegisteredInstallationEntry {
     
     @scala.inline
-    def apply(authToken: AuthToken, fid: String, refreshToken: String, registrationStatus: `2`): RegisteredInstallationEntry = {
-      val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], fid = fid.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
+    def apply(authToken: AuthToken, fid: String, refreshToken: String): RegisteredInstallationEntry = {
+      val __obj = js.Dynamic.literal(authToken = authToken.asInstanceOf[js.Any], fid = fid.asInstanceOf[js.Any], refreshToken = refreshToken.asInstanceOf[js.Any], registrationStatus = 2)
       __obj.asInstanceOf[RegisteredInstallationEntry]
     }
     
@@ -262,20 +266,21 @@ object installationEntryMod {
     def NOT_STARTED: `0` = 0.asInstanceOf[`0`]
   }
   
-  @js.native
-  trait UnregisteredInstallationEntry extends InstallationEntry {
+  trait UnregisteredInstallationEntry
+    extends StObject
+       with InstallationEntry {
     
     /** Firebase Installation ID */
-    val fid: String = js.native
+    val fid: String
     
     /** Status of the Firebase Installation registration on the server. */
-    val registrationStatus: `0` = js.native
+    val registrationStatus: `0`
   }
   object UnregisteredInstallationEntry {
     
     @scala.inline
-    def apply(fid: String, registrationStatus: `0`): UnregisteredInstallationEntry = {
-      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = registrationStatus.asInstanceOf[js.Any])
+    def apply(fid: String): UnregisteredInstallationEntry = {
+      val __obj = js.Dynamic.literal(fid = fid.asInstanceOf[js.Any], registrationStatus = 0)
       __obj.asInstanceOf[UnregisteredInstallationEntry]
     }
     

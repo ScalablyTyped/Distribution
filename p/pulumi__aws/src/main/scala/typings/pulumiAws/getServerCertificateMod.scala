@@ -3,46 +3,44 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getServerCertificateMod {
   
-  @JSImport("@pulumi/aws/iam/getServerCertificate", "getServerCertificate")
+  @JSImport("@pulumi/aws/iam/getServerCertificate", JSImport.Namespace)
   @js.native
-  def getServerCertificate(): js.Promise[GetServerCertificateResult] = js.native
-  @JSImport("@pulumi/aws/iam/getServerCertificate", "getServerCertificate")
-  @js.native
-  def getServerCertificate(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetServerCertificateResult] = js.native
-  @JSImport("@pulumi/aws/iam/getServerCertificate", "getServerCertificate")
-  @js.native
-  def getServerCertificate(args: GetServerCertificateArgs): js.Promise[GetServerCertificateResult] = js.native
-  @JSImport("@pulumi/aws/iam/getServerCertificate", "getServerCertificate")
-  @js.native
-  def getServerCertificate(args: GetServerCertificateArgs, opts: InvokeOptions): js.Promise[GetServerCertificateResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getServerCertificate(): js.Promise[GetServerCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")().asInstanceOf[js.Promise[GetServerCertificateResult]]
+  @scala.inline
+  def getServerCertificate(args: Unit, opts: InvokeOptions): js.Promise[GetServerCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerCertificateResult]]
+  @scala.inline
+  def getServerCertificate(args: GetServerCertificateArgs): js.Promise[GetServerCertificateResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetServerCertificateResult]]
+  @scala.inline
+  def getServerCertificate(args: GetServerCertificateArgs, opts: InvokeOptions): js.Promise[GetServerCertificateResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getServerCertificate")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetServerCertificateResult]]
+  
   trait GetServerCertificateArgs extends StObject {
     
     /**
       * sort results by expiration date. returns the certificate with expiration date in furthest in the future.
       */
-    val latest: js.UndefOr[Boolean] = js.native
+    val latest: js.UndefOr[Boolean] = js.undefined
     
     /**
       * exact name of the cert to lookup
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /**
       * prefix of cert to filter by
       */
-    val namePrefix: js.UndefOr[String] = js.native
+    val namePrefix: js.UndefOr[String] = js.undefined
     
     /**
       * prefix of path to filter by
       */
-    val pathPrefix: js.UndefOr[String] = js.native
+    val pathPrefix: js.UndefOr[String] = js.undefined
   }
   object GetServerCertificateArgs {
     
@@ -81,33 +79,32 @@ object getServerCertificateMod {
     }
   }
   
-  @js.native
   trait GetServerCertificateResult extends StObject {
     
-    val arn: String = js.native
+    val arn: String
     
-    val certificateBody: String = js.native
+    val certificateBody: String
     
-    val certificateChain: String = js.native
+    val certificateChain: String
     
-    val expirationDate: String = js.native
+    val expirationDate: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val latest: js.UndefOr[Boolean] = js.native
+    val latest: js.UndefOr[Boolean] = js.undefined
     
-    val name: String = js.native
+    val name: String
     
-    val namePrefix: js.UndefOr[String] = js.native
+    val namePrefix: js.UndefOr[String] = js.undefined
     
-    val path: String = js.native
+    val path: String
     
-    val pathPrefix: js.UndefOr[String] = js.native
+    val pathPrefix: js.UndefOr[String] = js.undefined
     
-    val uploadDate: String = js.native
+    val uploadDate: String
   }
   object GetServerCertificateResult {
     

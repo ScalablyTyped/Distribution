@@ -2,15 +2,13 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseExpressionData extends StObject {
   
-  def evaluate(scope: js.Any): js.Any = js.native
+  def evaluate(scope: js.Any): js.Any
   
-  var `type`: ExpressionType = js.native
+  var `type`: ExpressionType
 }
 object BaseExpressionData {
   

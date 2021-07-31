@@ -2,17 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxClientWebDocumentViewerBrickNavigation extends StObject {
   
-  var drillDownKey: String = js.native
+  var drillDownKey: String
   
-  var target: String = js.native
+  var target: String
   
-  var url: String = js.native
+  var url: String
 }
 object ASPxClientWebDocumentViewerBrickNavigation {
   

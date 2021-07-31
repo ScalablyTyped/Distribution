@@ -2,16 +2,16 @@ package typings.typescript.mod.server
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EndInstallTypes extends InstallTypes {
+trait EndInstallTypes
+  extends StObject
+     with InstallTypes {
   
-  val installSuccess: Boolean = js.native
+  val installSuccess: Boolean
   
   @JSName("kind")
-  val kind_EndInstallTypes: EventEndInstallTypes = js.native
+  val kind_EndInstallTypes: EventEndInstallTypes
 }
 object EndInstallTypes {
   

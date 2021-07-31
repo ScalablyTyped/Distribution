@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,14 +16,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * delete permission;  The actions string is processed case-insensitive.
   * @since OOo 1.1.2
   */
-@js.native
 trait FilePermission extends StObject {
   
   /** comma separated actions list */
-  var Actions: String = js.native
+  var Actions: String
   
   /** target file url */
-  var URL: String = js.native
+  var URL: String
 }
 object FilePermission {
   

@@ -4,33 +4,31 @@ import typings.geojson.mod.Point
 import typings.geojson.mod.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Place extends StObject {
   
-  var attributes: PlaceAttribute = js.native
+  var attributes: PlaceAttribute
   
-  var bounding_box: Polygon = js.native
+  var bounding_box: Polygon
   
-  var contained_within: js.Array[Place] = js.native
+  var contained_within: js.Array[Place]
   
-  var country: String = js.native
+  var country: String
   
-  var country_code: String = js.native
+  var country_code: String
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var geometry: Point = js.native
+  var geometry: Point
   
-  var id: String = js.native
+  var id: String
   
-  var name: String = js.native
+  var name: String
   
-  var place_type: String = js.native
+  var place_type: String
   
-  var url: String = js.native
+  var url: String
 }
 object Place {
   

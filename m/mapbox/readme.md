@@ -11,8 +11,8 @@ interface to mapbox services
 | Full name          | mapbox |
 | Keywords           | mapbox, interface, api, sdk |
 | # releases         | 1 |
-| # dependents       | 16 |
-| # downloads        | 502116 |
+| # dependents       | 17 |
+| # downloads        | 593561 |
 | # stars            | 4 |
 
 ## Links

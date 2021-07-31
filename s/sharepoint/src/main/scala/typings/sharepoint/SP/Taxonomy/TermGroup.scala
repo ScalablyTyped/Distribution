@@ -4,11 +4,12 @@ import typings.sharepoint.SP.Guid
 import typings.sharepoint.SP.StringResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TermGroup extends TaxonomyItem {
+trait TermGroup
+  extends StObject
+     with TaxonomyItem {
   
   def createTermSet(name: String, newTermSetId: Guid, lcid: Double): TermSet = js.native
   

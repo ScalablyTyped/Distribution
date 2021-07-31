@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeStatusItem extends StObject {
   
   /**
     * The details of the operation.
     */
-  var Actions: js.UndefOr[VolumeStatusActionsList] = js.native
+  var Actions: js.UndefOr[VolumeStatusActionsList] = js.undefined
   
   /**
     * Information about the instances to which the volume is attached.
     */
-  var AttachmentStatuses: js.UndefOr[VolumeStatusAttachmentStatusList] = js.native
+  var AttachmentStatuses: js.UndefOr[VolumeStatusAttachmentStatusList] = js.undefined
   
   /**
     * The Availability Zone of the volume.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * A list of events associated with the volume.
     */
-  var Events: js.UndefOr[VolumeStatusEventsList] = js.native
+  var Events: js.UndefOr[VolumeStatusEventsList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The volume ID.
     */
-  var VolumeId: js.UndefOr[String] = js.native
+  var VolumeId: js.UndefOr[String] = js.undefined
   
   /**
     * The volume status.
     */
-  var VolumeStatus: js.UndefOr[VolumeStatusInfo] = js.native
+  var VolumeStatus: js.UndefOr[VolumeStatusInfo] = js.undefined
 }
 object VolumeStatusItem {
   

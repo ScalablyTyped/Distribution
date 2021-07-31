@@ -10,9 +10,9 @@ Given a cache folder and url, return the appropriate cache folder.
 | ------------------ | :-------------: |
 | Full name          | npm-cache-filename |
 | Keywords           | - |
-| # releases         | 0 |
-| # dependents       | 36 |
-| # downloads        | 20426659 |
+| # releases         | 1 |
+| # dependents       | 38 |
+| # downloads        | 23530469 |
 | # stars            | 0 |
 
 ## Links

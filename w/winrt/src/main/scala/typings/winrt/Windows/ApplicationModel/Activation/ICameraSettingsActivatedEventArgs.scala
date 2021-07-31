@@ -2,15 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Activation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICameraSettingsActivatedEventArgs extends IActivatedEventArgs {
+trait ICameraSettingsActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var videoDeviceController: js.Any = js.native
+  var videoDeviceController: js.Any
   
-  var videoDeviceExtension: js.Any = js.native
+  var videoDeviceExtension: js.Any
 }
 object ICameraSettingsActivatedEventArgs {
   

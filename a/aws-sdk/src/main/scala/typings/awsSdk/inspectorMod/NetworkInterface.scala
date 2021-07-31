@@ -2,61 +2,59 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInterface extends StObject {
   
   /**
     * The IP addresses associated with the network interface.
     */
-  var ipv6Addresses: js.UndefOr[Ipv6Addresses] = js.native
+  var ipv6Addresses: js.UndefOr[Ipv6Addresses] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var networkInterfaceId: js.UndefOr[Text] = js.native
+  var networkInterfaceId: js.UndefOr[Text] = js.undefined
   
   /**
     * The name of a private DNS associated with the network interface.
     */
-  var privateDnsName: js.UndefOr[Text] = js.native
+  var privateDnsName: js.UndefOr[Text] = js.undefined
   
   /**
     * The private IP address associated with the network interface.
     */
-  var privateIpAddress: js.UndefOr[Text] = js.native
+  var privateIpAddress: js.UndefOr[Text] = js.undefined
   
   /**
     * A list of the private IP addresses associated with the network interface. Includes the privateDnsName and privateIpAddress.
     */
-  var privateIpAddresses: js.UndefOr[PrivateIpAddresses] = js.native
+  var privateIpAddresses: js.UndefOr[PrivateIpAddresses] = js.undefined
   
   /**
     * The name of a public DNS associated with the network interface.
     */
-  var publicDnsName: js.UndefOr[Text] = js.native
+  var publicDnsName: js.UndefOr[Text] = js.undefined
   
   /**
     * The public IP address from which the network interface is reachable.
     */
-  var publicIp: js.UndefOr[Text] = js.native
+  var publicIp: js.UndefOr[Text] = js.undefined
   
   /**
     * A list of the security groups associated with the network interface. Includes the groupId and groupName.
     */
-  var securityGroups: js.UndefOr[SecurityGroups] = js.native
+  var securityGroups: js.UndefOr[SecurityGroups] = js.undefined
   
   /**
     * The ID of a subnet associated with the network interface.
     */
-  var subnetId: js.UndefOr[Text] = js.native
+  var subnetId: js.UndefOr[Text] = js.undefined
   
   /**
     * The ID of a VPC associated with the network interface.
     */
-  var vpcId: js.UndefOr[Text] = js.native
+  var vpcId: js.UndefOr[Text] = js.undefined
 }
 object NetworkInterface {
   

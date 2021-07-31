@@ -9,14 +9,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
   
   @JSImport("@ionic/core/dist/types/components/router/router", "Router")
   @js.native
-  class Router () extends ComponentInterface {
+  class Router ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * Go back to previous page in the window.history.
@@ -77,7 +78,7 @@ object routerMod {
       * @param direction The direction of the animation. Defaults to `"forward"`.
       */
     def push(url: String): js.Promise[Boolean] = js.native
-    def push(url: String, direction: js.UndefOr[scala.Nothing], animation: AnimationBuilder): js.Promise[Boolean] = js.native
+    def push(url: String, direction: Unit, animation: AnimationBuilder): js.Promise[Boolean] = js.native
     def push(url: String, direction: RouterDirection): js.Promise[Boolean] = js.native
     def push(url: String, direction: RouterDirection, animation: AnimationBuilder): js.Promise[Boolean] = js.native
     

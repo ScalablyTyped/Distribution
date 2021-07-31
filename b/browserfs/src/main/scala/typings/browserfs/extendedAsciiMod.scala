@@ -3,14 +3,15 @@ package typings.browserfs
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extendedAsciiMod {
   
   @JSImport("browserfs/dist/node/generic/extended_ascii", JSImport.Default)
   @js.native
-  class default () extends ExtendedASCII
+  class default ()
+    extends StObject
+       with ExtendedASCII
   /* static members */
   object default {
     
@@ -18,13 +19,11 @@ object extendedAsciiMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("browserfs/dist/node/generic/extended_ascii", "default.byte2str")
-    @js.native
-    def byte2str(buff: Buffer): String = js.native
+    @scala.inline
+    def byte2str(buff: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("byte2str")(buff.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("browserfs/dist/node/generic/extended_ascii", "default.byteLength")
-    @js.native
-    def byteLength(str: String): Double = js.native
+    @scala.inline
+    def byteLength(str: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("byteLength")(str.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     @JSImport("browserfs/dist/node/generic/extended_ascii", "default.extendedChars")
     @js.native
@@ -32,11 +31,9 @@ object extendedAsciiMod {
     @scala.inline
     def extendedChars_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extendedChars")(x.asInstanceOf[js.Any])
     
-    @JSImport("browserfs/dist/node/generic/extended_ascii", "default.str2byte")
-    @js.native
-    def str2byte(str: String, buf: Buffer): Double = js.native
+    @scala.inline
+    def str2byte(str: String, buf: Buffer): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("str2byte")(str.asInstanceOf[js.Any], buf.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  @js.native
   trait ExtendedASCII extends StObject
 }

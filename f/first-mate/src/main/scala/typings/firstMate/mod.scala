@@ -6,7 +6,6 @@ import typings.firstMate.firstMateBooleans.`false`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -40,7 +39,6 @@ object mod {
       *  @return An object representing the result of the tokenize.
       */
     def tokenizeLine(line: String): TokenizeLineResult = js.native
-    def tokenizeLine(line: String, ruleStack: js.UndefOr[scala.Nothing], firstLine: Boolean): TokenizeLineResult = js.native
     /**
       *  Tokenizes the line of text.
       *  @param line A string of text to tokenize.
@@ -52,6 +50,7 @@ object mod {
       */
     def tokenizeLine(line: String, ruleStack: js.Array[GrammarRule]): TokenizeLineResult = js.native
     def tokenizeLine(line: String, ruleStack: Null, firstLine: Boolean): TokenizeLineResult = js.native
+    def tokenizeLine(line: String, ruleStack: Unit, firstLine: Boolean): TokenizeLineResult = js.native
     @JSName("tokenizeLine")
     def tokenizeLine_false(line: String, ruleStack: js.Array[GrammarRule], firstLine: `false`): TokenizeLineResult = js.native
     
@@ -212,30 +211,29 @@ object mod {
     def toCssSyntaxSelector(): String = js.native
   }
   
-  @js.native
   trait GrammarOptions extends StObject {
     
-    var fileTypes: js.UndefOr[js.Array[String]] = js.native
+    var fileTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var firstLineMatch: js.UndefOr[Boolean] = js.native
+    var firstLineMatch: js.UndefOr[Boolean] = js.undefined
     
-    var foldingStopMarker: js.UndefOr[String] = js.native
+    var foldingStopMarker: js.UndefOr[String] = js.undefined
     
-    var injectionSelector: js.UndefOr[ScopeSelector] = js.native
+    var injectionSelector: js.UndefOr[ScopeSelector] = js.undefined
     
-    var injections: js.UndefOr[js.Object] = js.native
+    var injections: js.UndefOr[js.Object] = js.undefined
     
-    var maxLineLength: js.UndefOr[Double] = js.native
+    var maxLineLength: js.UndefOr[Double] = js.undefined
     
-    var maxTokensPerLine: js.UndefOr[Double] = js.native
+    var maxTokensPerLine: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var patterns: js.UndefOr[js.Array[js.Object]] = js.native
+    var patterns: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var repository: js.UndefOr[js.Object] = js.native
+    var repository: js.UndefOr[js.Object] = js.undefined
     
-    var scopeName: js.UndefOr[String] = js.native
+    var scopeName: js.UndefOr[String] = js.undefined
   }
   object GrammarOptions {
     
@@ -322,16 +320,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GrammarRule extends StObject {
     
-    var contentScopeName: String = js.native
+    var contentScopeName: String
     
     // https://github.com/atom/first-mate/blob/v7.0.7/src/rule.coffee
     // This is private. Don't go down the rabbit hole.
-    var rule: js.Object = js.native
+    var rule: js.Object
     
-    var scopeName: String = js.native
+    var scopeName: String
   }
   object GrammarRule {
     
@@ -355,12 +352,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GrammarToken extends StObject {
     
-    var scopes: js.Array[String] = js.native
+    var scopes: js.Array[String]
     
-    var value: String = js.native
+    var value: String
   }
   object GrammarToken {
     
@@ -384,18 +380,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenizeLineResult extends StObject {
     
     /** The string of text that was tokenized. */
-    var line: String = js.native
+    var line: String
     
     /**
       *  An array of rules representing the tokenized state at the end of the line.
       *  These should be passed back into this method when tokenizing the next line
       *  in the file.
       */
-    var ruleStack: js.Array[GrammarRule] = js.native
+    var ruleStack: js.Array[GrammarRule]
     
     /**
       *  An array of integer scope ids and strings. Positive ids indicate the
@@ -403,14 +398,14 @@ object mod {
       *  to scope names, call GrammarRegistry::scopeForId with the absolute
       *  value of the id.
       */
-    var tags: js.Array[Double | String] = js.native
+    var tags: js.Array[Double | String]
     
     /**
       *  This is a dynamic property. Invoking it will incur additional overhead,
       *  but will automatically translate the `tags` into token objects with `value`
       *  and `scopes` properties.
       */
-    var tokens: js.Array[GrammarToken] = js.native
+    var tokens: js.Array[GrammarToken]
   }
   object TokenizeLineResult {
     

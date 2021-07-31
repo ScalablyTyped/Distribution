@@ -10,9 +10,9 @@ A Karma plugin. Launcher for jsdom.
 | ------------------ | :-------------: |
 | Full name          | karma-jsdom-launcher |
 | Keywords           | karma-plugin, karma-launcher, jsdom |
-| # releases         | 10 |
+| # releases         | 5 |
 | # dependents       | 10 |
-| # downloads        | 595448 |
+| # downloads        | 491294 |
 | # stars            | 2 |
 
 ## Links

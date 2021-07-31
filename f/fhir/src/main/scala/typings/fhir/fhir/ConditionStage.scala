@@ -2,24 +2,24 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stage/grade, usually assessed formally
   */
-@js.native
-trait ConditionStage extends BackboneElement {
+trait ConditionStage
+  extends StObject
+     with BackboneElement {
   
   /**
     * Formal record of assessment
     */
-  var assessment: js.UndefOr[js.Array[Reference]] = js.native
+  var assessment: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * Simple summary (disease specific)
     */
-  var summary: js.UndefOr[CodeableConcept] = js.native
+  var summary: js.UndefOr[CodeableConcept] = js.undefined
 }
 object ConditionStage {
   

@@ -2,17 +2,15 @@ package typings.storybookTheming.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Black extends StObject {
   
-  var black: Double = js.native
+  var black: Double
   
-  var bold: Double = js.native
+  var bold: Double
   
-  var regular: Double = js.native
+  var regular: Double
 }
 object Black {
   

@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Media.Core
 import typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines an video media stream. */
-@js.native
 trait VideoStreamDescriptor extends StObject {
   
   /** Gets the encoding properties on the video stream. */
-  var encodingProperties: VideoEncodingProperties = js.native
+  var encodingProperties: VideoEncodingProperties
   
   /** Specifies whether the stream is currently in use by the MediaStreamSource . */
-  var isSelected: Boolean = js.native
+  var isSelected: Boolean
   
   /** Gets or sets the RFC-1766 language code for the stream. */
-  var language: String = js.native
+  var language: String
   
   /** Gets or sets the name of the stream. */
-  var name: String = js.native
+  var name: String
 }
 object VideoStreamDescriptor {
   

@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MemberFunctionDeclaration extends AST {
+trait MemberFunctionDeclaration
+  extends StObject
+     with AST {
   
-  var block: Block = js.native
+  var block: Block
   
-  var callSignature: CallSignature = js.native
+  var callSignature: CallSignature
   
-  var modifiers: js.Array[PullElementFlags] = js.native
+  var modifiers: js.Array[PullElementFlags]
   
-  var propertyName: IASTToken = js.native
+  var propertyName: IASTToken
 }
 object MemberFunctionDeclaration {
   

@@ -2,16 +2,14 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FoldingRange extends StObject {
   
   /**
     * The one-based end line of the range to fold. The folded area ends with the line's last character.
     */
-  var end: Double = js.native
+  var end: Double
   
   /**
     * Describes the [Kind](#FoldingRangeKind) of the folding range such as [Comment](#FoldingRangeKind.Comment) or
@@ -19,12 +17,12 @@ trait FoldingRange extends StObject {
     * like 'Fold all comments'. See
     * [FoldingRangeKind](#FoldingRangeKind) for an enumeration of standardized kinds.
     */
-  var kind: js.UndefOr[FoldingRangeKind] = js.native
+  var kind: js.UndefOr[FoldingRangeKind] = js.undefined
   
   /**
     * The one-based start line of the range to fold. The folded area starts after the line's last character.
     */
-  var start: Double = js.native
+  var start: Double
 }
 object FoldingRange {
   

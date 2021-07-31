@@ -12,7 +12,7 @@ Rails like credentials store for database passwords, API keys, etc. encrypted in
 | Keywords           | schluessel, credentials, secret, secrets, password, key, vault, encrypted, rails |
 | # releases         | 12 |
 | # dependents       | 0 |
-| # downloads        | 944 |
+| # downloads        | 1291 |
 | # stars            | 0 |
 
 ## Links

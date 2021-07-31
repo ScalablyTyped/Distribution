@@ -2,17 +2,15 @@ package typings.chrome.chrome.contentSettings
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceIdentifier extends StObject {
   
   /** Optional. A human readable description of the resource.  */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The resource identifier for the given content type. */
-  var id: String = js.native
+  var id: String
 }
 object ResourceIdentifier {
   

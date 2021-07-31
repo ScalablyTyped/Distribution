@@ -2,20 +2,20 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnimateOptions extends AnimationOptions {
+trait AnimateOptions
+  extends StObject
+     with AnimationOptions {
   
   /** complete - A function to call when the animation is done. */
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** queue - A boolean indicating whether to queue the animation. */
-  var queue: js.UndefOr[Boolean] = js.native
+  var queue: js.UndefOr[Boolean] = js.undefined
   
   /** step - A function to call each time the animation steps. */
-  var step: js.UndefOr[js.Function0[Unit]] = js.native
+  var step: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object AnimateOptions {
   

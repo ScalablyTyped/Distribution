@@ -2,13 +2,11 @@ package typings.qlikEngineapi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QDownloadInfo extends StObject {
   
-  var qDownloadInfo: js.Any = js.native
+  var qDownloadInfo: js.Any
 }
 object QDownloadInfo {
   

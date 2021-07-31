@@ -11,8 +11,8 @@ Simple CLDR traverser
 | Full name          | cldrjs |
 | Keywords           | utility, globalization, internationalization, multilingualization, localization, g11n, i18n, m17n, L10n, localize, locale, cldr, json, inheritance, compiler |
 | # releases         | 5 |
-| # dependents       | 11 |
-| # downloads        | 4777694 |
+| # dependents       | 12 |
+| # downloads        | 6190718 |
 | # stars            | 1 |
 
 ## Links

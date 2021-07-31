@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetGroupsRequest extends StObject {
   
   /**
     * The number of items to return in the response.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.forecastserviceMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.forecastserviceMod.MaxResults] = js.undefined
   
   /**
     * If the result of the previous request was truncated, the response includes a NextToken. To retrieve the next set of results, use the token in the next request. Tokens expire after 24 hours.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.forecastserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.forecastserviceMod.NextToken] = js.undefined
 }
 object ListDatasetGroupsRequest {
   

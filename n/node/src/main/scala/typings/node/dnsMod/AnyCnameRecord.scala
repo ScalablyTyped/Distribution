@@ -3,22 +3,22 @@ package typings.node.dnsMod
 import typings.node.nodeStrings.CNAME
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnyCnameRecord extends AnyRecord {
+trait AnyCnameRecord
+  extends StObject
+     with AnyRecord {
   
-  var `type`: CNAME = js.native
+  var `type`: CNAME
   
-  var value: String = js.native
+  var value: String
 }
 object AnyCnameRecord {
   
   @scala.inline
-  def apply(`type`: CNAME, value: String): AnyCnameRecord = {
+  def apply(value: String): AnyCnameRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CNAME")
     __obj.asInstanceOf[AnyCnameRecord]
   }
   

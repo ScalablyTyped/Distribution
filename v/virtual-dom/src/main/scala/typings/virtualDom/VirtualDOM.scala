@@ -8,12 +8,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object VirtualDOM {
   
-  type EventHandler = js.Function1[/* repeated */ js.Any, Unit]
+  @js.native
+  trait EventHandler extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
   
   type PatchFn[T /* <: Element */] = js.Function3[
     /* rootNode */ T, 
@@ -22,15 +25,16 @@ object VirtualDOM {
     T
   ]
   
-  @js.native
-  trait Thunk extends VTree {
+  trait Thunk
+    extends StObject
+       with VTree {
     
-    def render(previous: VTree): VTree = js.native
+    def render(previous: VTree): VTree
     
-    var `type`: String = js.native
+    var `type`: String
     
     // 'Thunk'
-    var vnode: VTree = js.native
+    var vnode: VTree
   }
   object Thunk {
     
@@ -57,12 +61,11 @@ object VirtualDOM {
   
   type VChild = (js.Array[String | VTree]) | VTree | String
   
-  @js.native
   trait VHook extends StObject {
     
-    def hook(node: Element, propertyName: String): Unit = js.native
+    def hook(node: Element, propertyName: String): Unit
     
-    def unhook(node: Element, propertyName: String): Unit = js.native
+    def unhook(node: Element, propertyName: String): Unit
   }
   object VHook {
     
@@ -83,32 +86,33 @@ object VirtualDOM {
     }
   }
   
-  @js.native
-  trait VNode extends VTree {
+  trait VNode
+    extends StObject
+       with VTree {
     
-    var children: js.Array[VTree] = js.native
+    var children: js.Array[VTree]
     
-    var count: Double = js.native
+    var count: Double
     
-    var descendantHooks: js.Array[_] = js.native
+    var descendantHooks: js.Array[js.Any]
     
-    var hasThunks: Boolean = js.native
+    var hasThunks: Boolean
     
-    var hasWidgets: Boolean = js.native
+    var hasWidgets: Boolean
     
-    var hooks: js.Array[_] = js.native
+    var hooks: js.Array[js.Any]
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var properties: VProperties = js.native
+    var properties: VProperties
     
-    var tagName: String = js.native
+    var tagName: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var version: String = js.native
+    var version: String
   }
   object VNode {
     
@@ -116,10 +120,10 @@ object VirtualDOM {
     def apply(
       children: js.Array[VTree],
       count: Double,
-      descendantHooks: js.Array[_],
+      descendantHooks: js.Array[js.Any],
       hasThunks: Boolean,
       hasWidgets: Boolean,
-      hooks: js.Array[_],
+      hooks: js.Array[js.Any],
       properties: VProperties,
       tagName: String,
       `type`: String,
@@ -143,7 +147,7 @@ object VirtualDOM {
       def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDescendantHooks(value: js.Array[_]): Self = StObject.set(x, "descendantHooks", value.asInstanceOf[js.Any])
+      def setDescendantHooks(value: js.Array[js.Any]): Self = StObject.set(x, "descendantHooks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDescendantHooksVarargs(value: js.Any*): Self = StObject.set(x, "descendantHooks", js.Array(value :_*))
@@ -155,7 +159,7 @@ object VirtualDOM {
       def setHasWidgets(value: Boolean): Self = StObject.set(x, "hasWidgets", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHooks(value: js.Array[_]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+      def setHooks(value: js.Array[js.Any]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHooksVarargs(value: js.Any*): Self = StObject.set(x, "hooks", js.Array(value :_*))
@@ -188,7 +192,8 @@ object VirtualDOM {
   
   @js.native
   trait VNodeConstructor
-    extends Instantiable3[
+    extends StObject
+       with Instantiable3[
           /* tagName */ String, 
           /* properties */ VProperties, 
           /* children */ js.Array[VTree], 
@@ -205,7 +210,7 @@ object VirtualDOM {
           /* tagName */ String, 
           /* properties */ VProperties, 
           /* children */ js.Array[VTree], 
-          js.UndefOr[/* key */ String], 
+          (/* key */ String) | (/* key */ Unit), 
           /* namespace */ String, 
           VNode
         ]
@@ -221,20 +226,19 @@ object VirtualDOM {
   //   REMOVE = 7,
   //   THUNK = 8
   // }
-  @js.native
   trait VPatch extends StObject {
     
-    var patch: js.Any = js.native
+    var patch: js.Any
     
     /**
       type is set to 'VirtualPatch' on the prototype, but overridden in the
       constructor with a number.
       */
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var vNode: VNode = js.native
+    var vNode: VNode
     
-    var version: String = js.native
+    var version: String
   }
   object VPatch {
     
@@ -262,10 +266,9 @@ object VirtualDOM {
     }
   }
   
-  @js.native
   trait VPatchOptions[T /* <: Element */] extends StObject {
     
-    var patch: js.UndefOr[PatchFn[T]] = js.native
+    var patch: js.UndefOr[PatchFn[T]] = js.undefined
   }
   object VPatchOptions {
     
@@ -276,7 +279,7 @@ object VirtualDOM {
     }
     
     @scala.inline
-    implicit class VPatchOptionsMutableBuilder[Self <: VPatchOptions[_], T /* <: Element */] (val x: Self with VPatchOptions[T]) extends AnyVal {
+    implicit class VPatchOptionsMutableBuilder[Self <: VPatchOptions[?], T /* <: Element */] (val x: Self & VPatchOptions[T]) extends AnyVal {
       
       @scala.inline
       def setPatch(value: (T, /* patches */ js.Array[VPatch], /* renderOptions */ VPatchOptions[T]) => T): Self = StObject.set(x, "patch", js.Any.fromFunction3(value))
@@ -286,9 +289,9 @@ object VirtualDOM {
     }
   }
   
-  @js.native
   trait VProperties
-    extends /**
+    extends StObject
+       with /**
     The relaxation on `style` above is the reason why we need `any` as an option
     on the indexer type.
     */
@@ -296,7 +299,7 @@ object VirtualDOM {
           js.Any | String | Boolean | Double | VHook | EventHandler | (StringDictionary[String | Boolean | Double])
         ] {
     
-    var attributes: js.UndefOr[StringDictionary[String]] = js.native
+    var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       I would like to use {[index: string]: string}, but then we couldn't use an
@@ -304,7 +307,7 @@ object VirtualDOM {
       infer that {'fontSize': string; 'fontWeight': string;} is actually quite
       assignable to the type { [index: string]: string; }
       */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
   }
   object VProperties {
     
@@ -331,14 +334,15 @@ object VirtualDOM {
     }
   }
   
-  @js.native
-  trait VText extends VTree {
+  trait VText
+    extends StObject
+       with VTree {
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var version: String = js.native
+    var version: String
   }
   object VText {
     
@@ -364,7 +368,9 @@ object VirtualDOM {
   }
   
   @js.native
-  trait VTextConstructor extends Instantiable1[/* text */ String, VText]
+  trait VTextConstructor
+    extends StObject
+       with Instantiable1[/* text */ String, VText]
   
   /* Rewritten from type alias, can be one of: 
     - typings.virtualDom.VirtualDOM.VText
@@ -386,10 +392,10 @@ object VirtualDOM {
     def VNode(
       children: js.Array[VTree],
       count: Double,
-      descendantHooks: js.Array[_],
+      descendantHooks: js.Array[js.Any],
       hasThunks: Boolean,
       hasWidgets: Boolean,
-      hooks: js.Array[_],
+      hooks: js.Array[js.Any],
       properties: VProperties,
       tagName: String,
       `type`: String,
@@ -420,17 +426,18 @@ object VirtualDOM {
     }
   }
   
-  @js.native
-  trait Widget extends VTree {
+  trait Widget
+    extends StObject
+       with VTree {
     
-    def destroy(node: Element): Unit = js.native
+    def destroy(node: Element): Unit
     
     // 'Widget'
-    def init(): Element = js.native
+    def init(): Element
     
-    var `type`: String = js.native
+    var `type`: String
     
-    def update(previous: Widget, domNode: Element): Unit = js.native
+    def update(previous: Widget, domNode: Element): Unit
   }
   object Widget {
     
@@ -458,12 +465,13 @@ object VirtualDOM {
     }
   }
   
-  @js.native
-  trait createProperties extends VProperties {
+  trait createProperties
+    extends StObject
+       with VProperties {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
   }
   object createProperties {
     

@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamedSlideShows extends StObject {
   
-  def Add(Name: String, safeArrayOfSlideIDs: js.Any): NamedSlideShow = js.native
+  def Add(Name: String, safeArrayOfSlideIDs: js.Any): NamedSlideShow
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): NamedSlideShow = js.native
+  def Item(Index: js.Any): NamedSlideShow
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.NamedSlideShows_typekey")
-  var PowerPointDotNamedSlideShows_typekey: NamedSlideShows = js.native
+  var PowerPointDotNamedSlideShows_typekey: NamedSlideShows
 }
 object NamedSlideShows {
   

@@ -3,13 +3,11 @@ package typings.node.anon
 import typings.node.utilMod.InspectOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var options: InspectOptions = js.native
+  var options: InspectOptions
 }
 object Options {
   

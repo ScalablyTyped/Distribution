@@ -12,7 +12,7 @@ chai plugin to match objects and arrays deep equality with arrays (including nes
 | Keywords           | chai, plugin, chai-plugin, arrays, objects, any, order, deep, equal |
 | # releases         | 17 |
 | # dependents       | 5 |
-| # downloads        | 1389261 |
+| # downloads        | 2378128 |
 | # stars            | 0 |
 
 ## Links

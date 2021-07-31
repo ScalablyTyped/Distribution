@@ -12,7 +12,7 @@ An Observable push stream
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 1285302 |
+| # downloads        | 3997488 |
 | # stars            | 0 |
 
 ## Links

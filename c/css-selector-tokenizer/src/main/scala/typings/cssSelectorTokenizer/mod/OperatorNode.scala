@@ -3,24 +3,23 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperatorNode
-  extends SelectorNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with SelectorNodeType {
   
-  var operator: String = js.native
+  var operator: String
   
-  var `type`: operator = js.native
+  var `type`: operator
 }
 object OperatorNode {
   
   @scala.inline
-  def apply(operator: String, `type`: operator): OperatorNode = {
+  def apply(operator: String): OperatorNode = {
     val __obj = js.Dynamic.literal(operator = operator.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("operator")
     __obj.asInstanceOf[OperatorNode]
   }
   

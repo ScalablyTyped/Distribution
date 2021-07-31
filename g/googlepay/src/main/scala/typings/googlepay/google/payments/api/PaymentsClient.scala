@@ -3,14 +3,12 @@ package typings.googlepay.google.payments.api
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This reference describes the JavaScript client methods to use to
   * implement the Google Pay API in your web applications.
   */
-@js.native
 trait PaymentsClient extends StObject {
   
   /**
@@ -37,7 +35,7 @@ trait PaymentsClient extends StObject {
     *
     * @throws `Error` A required property isn't set.
     */
-  def createButton(options: ButtonOptions): HTMLElement = js.native
+  def createButton(options: ButtonOptions): HTMLElement
   
   /**
     * This method determines a shopper's ability to return a form of
@@ -62,7 +60,7 @@ trait PaymentsClient extends StObject {
     *     [insecure browser
     *     context](https://developer.mozilla.org/en-US/docs/Web/Security/Secure_Contexts).
     */
-  def isReadyToPay(request: IsReadyToPayRequest): js.Promise[IsReadyToPayResponse] = js.native
+  def isReadyToPay(request: IsReadyToPayRequest): js.Promise[IsReadyToPayResponse]
   
   /**
     * This method presents a Google Pay payment sheet that allows selection
@@ -103,7 +101,7 @@ trait PaymentsClient extends StObject {
     *     improperly formatted, missing the minimum required parameters, or
     *     contains an invalid parameter and/or value.
     */
-  def loadPaymentData(request: PaymentDataRequest): js.Promise[PaymentData] = js.native
+  def loadPaymentData(request: PaymentDataRequest): js.Promise[PaymentData]
   
   /**
     * Use this method to prefetch a
@@ -118,7 +116,7 @@ trait PaymentsClient extends StObject {
     *     Pay API configuration. A change in the `transactionInfo` property
     *     doesn't affect the cached prefetch value.
     */
-  def prefetchPaymentData(request: PaymentDataRequest): Unit = js.native
+  def prefetchPaymentData(request: PaymentDataRequest): Unit
 }
 object PaymentsClient {
   

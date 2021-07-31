@@ -5,10 +5,13 @@ import typings.reactFns.geoPositionGeoPositionMod.GeoPositionProps
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geoPositionMod {
+  
+  @JSImport("react-fns/dist/GeoPosition", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-fns/dist/GeoPosition", "GeoPosition")
   @js.native
@@ -22,7 +25,6 @@ object geoPositionMod {
     def this(props: SharedRenderProps[GeoPositionProps], context: js.Any) = this()
   }
   
-  @JSImport("react-fns/dist/GeoPosition", "withGeoPosition")
-  @js.native
-  def withGeoPosition[Props](Component: ComponentType[Props with GeoPositionProps]): ComponentType[Props] = js.native
+  @scala.inline
+  def withGeoPosition[Props](Component: ComponentType[Props & GeoPositionProps]): ComponentType[Props] = ^.asInstanceOf[js.Dynamic].applyDynamic("withGeoPosition")(Component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[Props]]
 }

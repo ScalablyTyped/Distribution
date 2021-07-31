@@ -2,16 +2,14 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSentimentDetectionJobRequest extends StObject {
   
   /**
     * The identifier that Amazon Comprehend generated for the job. The operation returns this identifier in its response.
     */
-  var JobId: typings.awsSdk.comprehendMod.JobId = js.native
+  var JobId: typings.awsSdk.comprehendMod.JobId
 }
 object DescribeSentimentDetectionJobRequest {
   

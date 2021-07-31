@@ -2,10 +2,10 @@ package typings.sharepoint.global.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SP.WebInformation")
 @js.native
 class WebInformation ()
-  extends typings.sharepoint.SP.WebInformation
+  extends StObject
+     with typings.sharepoint.SP.WebInformation

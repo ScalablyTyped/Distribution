@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/toolresults/v1beta3", "toolresults_v1beta3.Resource$Projects$Histories$Executions$Clusters")
@@ -33,7 +32,7 @@ class ResourceProjectsHistoriesExecutionsClusters protected () extends StObject 
     */
   def get(): GaxiosPromise[SchemaScreenshotCluster] = js.native
   def get(callback: BodyResponseCallback[SchemaScreenshotCluster]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaScreenshotCluster] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaScreenshotCluster] = js.native
   def get(params: ParamsResourceProjectsHistoriesExecutionsClustersGet): GaxiosPromise[SchemaScreenshotCluster] = js.native
   def get(
     params: ParamsResourceProjectsHistoriesExecutionsClustersGet,
@@ -73,7 +72,7 @@ class ResourceProjectsHistoriesExecutionsClusters protected () extends StObject 
     */
   def list(): GaxiosPromise[SchemaListScreenshotClustersResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListScreenshotClustersResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListScreenshotClustersResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListScreenshotClustersResponse] = js.native
   def list(params: ParamsResourceProjectsHistoriesExecutionsClustersList): GaxiosPromise[SchemaListScreenshotClustersResponse] = js.native
   def list(
     params: ParamsResourceProjectsHistoriesExecutionsClustersList,

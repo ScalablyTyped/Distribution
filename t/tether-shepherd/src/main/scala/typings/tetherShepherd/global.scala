@@ -6,7 +6,6 @@ import typings.tetherShepherd.TetherShepherd.IShepherdTourOptions
 import typings.tetherShepherd.TetherShepherd.ShepherdStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -20,14 +19,18 @@ object global {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Shepherd.Tour")
     @js.native
-    class Tour () extends IShepherdTour {
+    class Tour ()
+      extends StObject
+         with IShepherdTour {
       def this(options: IShepherdTourOptions) = this()
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSGlobal("Shepherd.activeTour")
     @js.native
-    class activeTour () extends IShepherdTour {
+    class activeTour ()
+      extends StObject
+         with IShepherdTour {
       def this(options: IShepherdTourOptions) = this()
     }
     

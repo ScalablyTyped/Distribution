@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCustomDataIdentifierResponse extends StObject {
   
   /**
     * The unique identifier for the custom data identifier that was created.
     */
-  var customDataIdentifierId: js.UndefOr[string] = js.native
+  var customDataIdentifierId: js.UndefOr[string] = js.undefined
 }
 object CreateCustomDataIdentifierResponse {
   

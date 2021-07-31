@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
   /**
     * A tag key.
     */
-  var key: tagKey = js.native
+  var key: tagKey
   
   /**
     * A value assigned to a tag key.
     */
-  var value: tagValue = js.native
+  var value: tagValue
 }
 object Tag {
   

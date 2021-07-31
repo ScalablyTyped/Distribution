@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IamInstanceProfileAssociation extends StObject {
   
   /**
     * The ID of the association.
     */
-  var AssociationId: js.UndefOr[String] = js.native
+  var AssociationId: js.UndefOr[String] = js.undefined
   
   /**
     * The IAM instance profile.
     */
-  var IamInstanceProfile: js.UndefOr[typings.awsSdk.ec2Mod.IamInstanceProfile] = js.native
+  var IamInstanceProfile: js.UndefOr[typings.awsSdk.ec2Mod.IamInstanceProfile] = js.undefined
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the association.
     */
-  var State: js.UndefOr[IamInstanceProfileAssociationState] = js.native
+  var State: js.UndefOr[IamInstanceProfileAssociationState] = js.undefined
   
   /**
     * The time the IAM instance profile was associated with the instance.
     */
-  var Timestamp: js.UndefOr[DateTime] = js.native
+  var Timestamp: js.UndefOr[DateTime] = js.undefined
 }
 object IamInstanceProfileAssociation {
   

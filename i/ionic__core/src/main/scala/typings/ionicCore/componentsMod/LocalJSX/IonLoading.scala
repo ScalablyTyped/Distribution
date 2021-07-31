@@ -10,91 +10,89 @@ import typings.ionicCore.spinnerConfigsMod.SpinnerTypes
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonLoading extends StObject {
   
   /**
     * If `true`, the loading indicator will animate.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the loading indicator will be dismissed when the backdrop is clicked.
     */
-  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Number of milliseconds to wait before dismissing the loading indicator.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Animation to use when the loading indicator is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animation to use when the loading indicator is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * Optional text content to display in the loading indicator.
     */
-  var message: js.UndefOr[String | IonicSafeString] = js.native
+  var message: js.UndefOr[String | IonicSafeString] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted after the loading has dismissed.
     */
-  var onIonLoadingDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonLoadingDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted after the loading has presented.
     */
-  var onIonLoadingDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonLoadingDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted before the loading has dismissed.
     */
-  var onIonLoadingWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonLoadingWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted before the loading has presented.
     */
-  var onIonLoadingWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonLoadingWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * If `true`, a backdrop will be displayed behind the loading indicator.
     */
-  var showBackdrop: js.UndefOr[Boolean] = js.native
+  var showBackdrop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the spinner to display.
     */
-  var spinner: js.UndefOr[SpinnerTypes | Null] = js.native
+  var spinner: js.UndefOr[SpinnerTypes | Null] = js.undefined
   
   /**
     * If `true`, the loading indicator will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object IonLoading {
   
@@ -165,7 +163,7 @@ object IonLoading {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnIonLoadingDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonLoadingDidDismiss", js.Any.fromFunction1(value))
+    def setOnIonLoadingDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonLoadingDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonLoadingDidDismissUndefined: Self = StObject.set(x, "onIonLoadingDidDismiss", js.undefined)
@@ -177,7 +175,7 @@ object IonLoading {
     def setOnIonLoadingDidPresentUndefined: Self = StObject.set(x, "onIonLoadingDidPresent", js.undefined)
     
     @scala.inline
-    def setOnIonLoadingWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonLoadingWillDismiss", js.Any.fromFunction1(value))
+    def setOnIonLoadingWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonLoadingWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonLoadingWillDismissUndefined: Self = StObject.set(x, "onIonLoadingWillDismiss", js.undefined)

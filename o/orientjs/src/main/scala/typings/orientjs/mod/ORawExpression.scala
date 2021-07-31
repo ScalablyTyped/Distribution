@@ -2,17 +2,17 @@ package typings.orientjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ORawExpression extends _OSqlExpression {
+trait ORawExpression
+  extends StObject
+     with _OSqlExpression {
   
-  def as(alias: String): ORawExpression = js.native
+  def as(alias: String): ORawExpression
   
-  var db: ODB = js.native
+  var db: ODB
   
-  var value: String = js.native
+  var value: String
 }
 object ORawExpression {
   

@@ -10,9 +10,9 @@ A custom React Hooks library that gives you custom hooks for your code.
 | ------------------ | :-------------: |
 | Full name          | react-hooks-helper |
 | Keywords           | react-hooks, hooks, react, utils, lib, form, step, wizard |
-| # releases         | 28 |
-| # dependents       | 0 |
-| # downloads        | 40006 |
+| # releases         | 0 |
+| # dependents       | 1 |
+| # downloads        | 81854 |
 | # stars            | 0 |
 
 ## Links

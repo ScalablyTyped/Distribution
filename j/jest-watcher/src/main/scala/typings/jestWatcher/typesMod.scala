@@ -18,51 +18,49 @@ import typings.jestWatcher.jestWatcherStrings.watch
 import typings.jestWatcher.jestWatcherStrings.watchAll
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   /* Inlined std.Partial<std.Pick<@jest/types.@jest/types.Config.GlobalConfig, 'bail' | 'changedSince' | 'collectCoverage' | 'collectCoverageFrom' | 'collectCoverageOnlyFrom' | 'coverageDirectory' | 'coverageReporters' | 'findRelatedTests' | 'nonFlagArgs' | 'notify' | 'notifyMode' | 'onlyFailures' | 'reporters' | 'testNamePattern' | 'testPathPattern' | 'updateSnapshot' | 'verbose'> & {  mode :'watch' | 'watchAll'}> */
-  @js.native
   trait AllowedConfigOptions extends StObject {
     
-    var bail: js.UndefOr[Double] = js.native
+    var bail: js.UndefOr[Double] = js.undefined
     
-    var changedSince: js.UndefOr[String] = js.native
+    var changedSince: js.UndefOr[String] = js.undefined
     
-    var collectCoverage: js.UndefOr[Boolean] = js.native
+    var collectCoverage: js.UndefOr[Boolean] = js.undefined
     
-    var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.native
+    var collectCoverageFrom: js.UndefOr[js.Array[Glob]] = js.undefined
     
-    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var collectCoverageOnlyFrom: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var coverageDirectory: js.UndefOr[String] = js.native
+    var coverageDirectory: js.UndefOr[String] = js.undefined
     
-    var coverageReporters: js.UndefOr[CoverageReporters] = js.native
+    var coverageReporters: js.UndefOr[CoverageReporters] = js.undefined
     
-    var findRelatedTests: js.UndefOr[Boolean] = js.native
+    var findRelatedTests: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[watch | watchAll] = js.native
+    var mode: js.UndefOr[watch | watchAll] = js.undefined
     
-    var nonFlagArgs: js.UndefOr[js.Array[String]] = js.native
+    var nonFlagArgs: js.UndefOr[js.Array[String]] = js.undefined
     
-    var notifyMode: js.UndefOr[NotifyMode] = js.native
+    var notifyMode: js.UndefOr[NotifyMode] = js.undefined
     
     @JSName("notify")
-    var notify_FAllowedConfigOptions: js.UndefOr[Boolean] = js.native
+    var notify_FAllowedConfigOptions: js.UndefOr[Boolean] = js.undefined
     
-    var onlyFailures: js.UndefOr[Boolean] = js.native
+    var onlyFailures: js.UndefOr[Boolean] = js.undefined
     
-    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.native
+    var reporters: js.UndefOr[js.Array[String | ReporterConfig]] = js.undefined
     
-    var testNamePattern: js.UndefOr[String] = js.native
+    var testNamePattern: js.UndefOr[String] = js.undefined
     
-    var testPathPattern: js.UndefOr[String] = js.native
+    var testPathPattern: js.UndefOr[String] = js.undefined
     
-    var updateSnapshot: js.UndefOr[SnapshotUpdateState] = js.native
+    var updateSnapshot: js.UndefOr[SnapshotUpdateState] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object AllowedConfigOptions {
     
@@ -199,14 +197,13 @@ object typesMod {
   
   type FileChange = js.Function1[/* fs */ JestHookExposedFS, Unit]
   
-  @js.native
   trait JestHookEmitter extends StObject {
     
-    def onFileChange(fs: JestHookExposedFS): Unit = js.native
+    def onFileChange(fs: JestHookExposedFS): Unit
     
-    def onTestRunComplete(results: AggregatedResult): Unit = js.native
+    def onTestRunComplete(results: AggregatedResult): Unit
     
-    def shouldRunTestSuite(testSuiteInfo: TestSuiteInfo): js.Promise[Boolean] | Boolean = js.native
+    def shouldRunTestSuite(testSuiteInfo: TestSuiteInfo): js.Promise[Boolean] | Boolean
   }
   object JestHookEmitter {
     
@@ -234,10 +231,9 @@ object typesMod {
     }
   }
   
-  @js.native
   trait JestHookExposedFS extends StObject {
     
-    var projects: js.Array[Config] = js.native
+    var projects: js.Array[Config]
   }
   object JestHookExposedFS {
     
@@ -258,14 +254,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait JestHookSubscriber extends StObject {
     
-    def onFileChange(fn: FileChange): Unit = js.native
+    def onFileChange(fn: FileChange): Unit
     
-    def onTestRunComplete(fn: TestRunComplete): Unit = js.native
+    def onTestRunComplete(fn: TestRunComplete): Unit
     
-    def shouldRunTestSuite(fn: ShouldRunTestSuite): Unit = js.native
+    def shouldRunTestSuite(fn: ShouldRunTestSuite): Unit
   }
   object JestHookSubscriber {
     
@@ -293,12 +288,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ScrollOptions extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object ScrollOptions {
     
@@ -323,14 +317,13 @@ object typesMod {
   
   type TestRunComplete = js.Function1[/* results */ AggregatedResult, Unit]
   
-  @js.native
   trait TestSuiteInfo extends StObject {
     
-    var config: ProjectConfig = js.native
+    var config: ProjectConfig
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var testPath: String = js.native
+    var testPath: String
   }
   object TestSuiteInfo {
     
@@ -359,12 +352,11 @@ object typesMod {
   
   type UpdateConfigCallback = js.Function1[/* config */ js.UndefOr[AllowedConfigOptions], Unit]
   
-  @js.native
   trait UsageData extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var prompt: String = js.native
+    var prompt: String
   }
   object UsageData {
     
@@ -385,17 +377,16 @@ object typesMod {
     }
   }
   
-  @js.native
   trait WatchPlugin extends StObject {
     
     @JSName("apply")
-    var apply: js.UndefOr[js.Function1[/* hooks */ JestHookSubscriber, Unit]] = js.native
+    var apply: js.UndefOr[js.Function1[/* hooks */ JestHookSubscriber, Unit]] = js.undefined
     
-    var getUsageInfo: js.UndefOr[js.Function1[/* globalConfig */ GlobalConfig, UsageData | Null]] = js.native
+    var getUsageInfo: js.UndefOr[js.Function1[/* globalConfig */ GlobalConfig, UsageData | Null]] = js.undefined
     
-    var isInternal: js.UndefOr[Boolean] = js.native
+    var isInternal: js.UndefOr[Boolean] = js.undefined
     
-    var onKey: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onKey: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
     var run: js.UndefOr[
         js.Function2[
@@ -403,7 +394,7 @@ object typesMod {
           /* updateConfigAndRun */ UpdateConfigCallback, 
           js.Promise[Unit | Boolean]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object WatchPlugin {
     
@@ -451,5 +442,7 @@ object typesMod {
   }
   
   @js.native
-  trait WatchPluginClass extends Instantiable1[/* options */ Stdin, WatchPlugin]
+  trait WatchPluginClass
+    extends StObject
+       with Instantiable1[/* options */ Stdin, WatchPlugin]
 }

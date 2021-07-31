@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object redshiftClusterMod {
@@ -218,6 +217,10 @@ object redshiftClusterMod {
   /* static members */
   object Cluster {
     
+    @JSImport("@pulumi/aws/redshift/cluster", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -227,207 +230,201 @@ object redshiftClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/redshift/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cluster = js.native
-    @JSImport("@pulumi/aws/redshift/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
-    @JSImport("@pulumi/aws/redshift/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
-    @JSImport("@pulumi/aws/redshift/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/redshift/cluster", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/redshift/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/redshift/cluster.Cluster */ Boolean]
   }
   
-  @js.native
   trait ClusterArgs extends StObject {
     
     /**
       * If true , major version upgrades can be applied during the maintenance window to the Amazon Redshift engine that is running on the cluster. Default is true
       */
-    val allowVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val allowVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with create-cluster-snapshot. Default is 1.
       */
-    val automatedSnapshotRetentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val automatedSnapshotRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The EC2 Availability Zone (AZ) in which you want Amazon Redshift to provision the cluster. For example, if you have several EC2 instances running in a specific Availability Zone, then you might want the cluster to be provisioned in the same zone in order to decrease network latency.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Cluster Identifier. Must be a lower case
       * string.
       */
-    val clusterIdentifier: Input[String] = js.native
+    val clusterIdentifier: Input[String]
     
     /**
       * The name of the parameter group to be associated with this cluster.
       */
-    val clusterParameterGroupName: js.UndefOr[Input[String]] = js.native
+    val clusterParameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public key for the cluster
       */
-    val clusterPublicKey: js.UndefOr[Input[String]] = js.native
+    val clusterPublicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The specific revision number of the database in the cluster
       */
-    val clusterRevisionNumber: js.UndefOr[Input[String]] = js.native
+    val clusterRevisionNumber: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security groups to be associated with this cluster.
       */
-    val clusterSecurityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val clusterSecurityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside virtual private cloud (VPC).
       */
-    val clusterSubnetGroupName: js.UndefOr[Input[String]] = js.native
+    val clusterSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The cluster type to use. Either `single-node` or `multi-node`.
       */
-    val clusterType: js.UndefOr[Input[String]] = js.native
+    val clusterType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the Amazon Redshift engine software that you want to deploy on the cluster.
       * The version selected runs on all the nodes in the cluster.
       */
-    val clusterVersion: js.UndefOr[Input[String]] = js.native
+    val clusterVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the first database to be created when the cluster is created.
       * If you do not provide a name, Amazon Redshift will create a default database called `dev`.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Elastic IP (EIP) address for the cluster.
       */
-    val elasticIp: js.UndefOr[Input[String]] = js.native
+    val elasticIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true , the data in the cluster is encrypted at rest.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The connection endpoint
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true , enhanced VPC routing is enabled.
       */
-    val enhancedVpcRouting: js.UndefOr[Input[Boolean]] = js.native
+    val enhancedVpcRouting: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The identifier of the final snapshot that is to be created immediately before deleting the cluster. If this parameter is provided, `skipFinalSnapshot` must be false.
       */
-    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IAM Role ARNs to associate with the cluster. A Maximum of 10 can be associated to the cluster at any time.
       */
-    val iamRoles: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val iamRoles: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Logging, documented below.
       */
-    val logging: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterLogging]] = js.native
+    val logging: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterLogging]] = js.undefined
     
     /**
       * Password for the master DB user.
       * Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and
       * contain at least one uppercase letter, one lowercase letter, and one number.
       */
-    val masterPassword: js.UndefOr[Input[String]] = js.native
+    val masterPassword: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Username for the master DB user.
       */
-    val masterUsername: js.UndefOr[Input[String]] = js.native
+    val masterUsername: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The node type to be provisioned for the cluster.
       */
-    val nodeType: Input[String] = js.native
+    val nodeType: Input[String]
     
     /**
       * The number of compute nodes in the cluster. This parameter is required when the ClusterType parameter is specified as multi-node. Default is 1.
       */
-    val numberOfNodes: js.UndefOr[Input[Double]] = js.native
+    val numberOfNodes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The AWS customer account used to create or copy the snapshot. Required if you are restoring a snapshot you do not own, optional if you own the snapshot.
       */
-    val ownerAccount: js.UndefOr[Input[String]] = js.native
+    val ownerAccount: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port number on which the cluster accepts incoming connections.
       * The cluster is accessible only via the JDBC and ODBC connection strings. Part of the connection string requires the port on which the cluster will listen for incoming connections. Default port is 5439.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The weekly time range (in UTC) during which automated cluster maintenance can occur.
       * Format: ddd:hh24:mi-ddd:hh24:mi
       */
-    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true, the cluster can be accessed from a public network. Default is `true`.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Determines whether a final snapshot of the cluster is created before Amazon Redshift deletes the cluster. If true , a final cluster snapshot is not created. If false , a final cluster snapshot is created before the cluster is deleted. Default is false.
       */
-    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.native
+    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the cluster the source snapshot was created from.
       */
-    val snapshotClusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val snapshotClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration of automatic copy of snapshots from one region to another. Documented below.
       */
-    val snapshotCopy: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterSnapshotCopy]] = js.native
+    val snapshotCopy: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterSnapshotCopy]] = js.undefined
     
     /**
       * The name of the snapshot from which to create the new cluster.
       */
-    val snapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val snapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object ClusterArgs {
     
@@ -649,195 +646,194 @@ object redshiftClusterMod {
     }
   }
   
-  @js.native
   trait ClusterState extends StObject {
     
     /**
       * If true , major version upgrades can be applied during the maintenance window to the Amazon Redshift engine that is running on the cluster. Default is true
       */
-    val allowVersionUpgrade: js.UndefOr[Input[Boolean]] = js.native
+    val allowVersionUpgrade: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Amazon Resource Name (ARN) of cluster
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of days that automated snapshots are retained. If the value is 0, automated snapshots are disabled. Even if automated snapshots are disabled, you can still create manual snapshots when you want with create-cluster-snapshot. Default is 1.
       */
-    val automatedSnapshotRetentionPeriod: js.UndefOr[Input[Double]] = js.native
+    val automatedSnapshotRetentionPeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The EC2 Availability Zone (AZ) in which you want Amazon Redshift to provision the cluster. For example, if you have several EC2 instances running in a specific Availability Zone, then you might want the cluster to be provisioned in the same zone in order to decrease network latency.
       */
-    val availabilityZone: js.UndefOr[Input[String]] = js.native
+    val availabilityZone: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Cluster Identifier. Must be a lower case
       * string.
       */
-    val clusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the parameter group to be associated with this cluster.
       */
-    val clusterParameterGroupName: js.UndefOr[Input[String]] = js.native
+    val clusterParameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The public key for the cluster
       */
-    val clusterPublicKey: js.UndefOr[Input[String]] = js.native
+    val clusterPublicKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The specific revision number of the database in the cluster
       */
-    val clusterRevisionNumber: js.UndefOr[Input[String]] = js.native
+    val clusterRevisionNumber: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of security groups to be associated with this cluster.
       */
-    val clusterSecurityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val clusterSecurityGroups: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The name of a cluster subnet group to be associated with this cluster. If this parameter is not provided the resulting cluster will be deployed outside virtual private cloud (VPC).
       */
-    val clusterSubnetGroupName: js.UndefOr[Input[String]] = js.native
+    val clusterSubnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The cluster type to use. Either `single-node` or `multi-node`.
       */
-    val clusterType: js.UndefOr[Input[String]] = js.native
+    val clusterType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the Amazon Redshift engine software that you want to deploy on the cluster.
       * The version selected runs on all the nodes in the cluster.
       */
-    val clusterVersion: js.UndefOr[Input[String]] = js.native
+    val clusterVersion: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the first database to be created when the cluster is created.
       * If you do not provide a name, Amazon Redshift will create a default database called `dev`.
       */
-    val databaseName: js.UndefOr[Input[String]] = js.native
+    val databaseName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The DNS name of the cluster
       */
-    val dnsName: js.UndefOr[Input[String]] = js.native
+    val dnsName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Elastic IP (EIP) address for the cluster.
       */
-    val elasticIp: js.UndefOr[Input[String]] = js.native
+    val elasticIp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true , the data in the cluster is encrypted at rest.
       */
-    val encrypted: js.UndefOr[Input[Boolean]] = js.native
+    val encrypted: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The connection endpoint
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true , enhanced VPC routing is enabled.
       */
-    val enhancedVpcRouting: js.UndefOr[Input[Boolean]] = js.native
+    val enhancedVpcRouting: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The identifier of the final snapshot that is to be created immediately before deleting the cluster. If this parameter is provided, `skipFinalSnapshot` must be false.
       */
-    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val finalSnapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of IAM Role ARNs to associate with the cluster. A Maximum of 10 can be associated to the cluster at any time.
       */
-    val iamRoles: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val iamRoles: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The ARN for the KMS encryption key. When specifying `kmsKeyId`, `encrypted` needs to be set to true.
       */
-    val kmsKeyId: js.UndefOr[Input[String]] = js.native
+    val kmsKeyId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Logging, documented below.
       */
-    val logging: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterLogging]] = js.native
+    val logging: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterLogging]] = js.undefined
     
     /**
       * Password for the master DB user.
       * Note that this may show up in logs, and it will be stored in the state file. Password must contain at least 8 chars and
       * contain at least one uppercase letter, one lowercase letter, and one number.
       */
-    val masterPassword: js.UndefOr[Input[String]] = js.native
+    val masterPassword: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Username for the master DB user.
       */
-    val masterUsername: js.UndefOr[Input[String]] = js.native
+    val masterUsername: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The node type to be provisioned for the cluster.
       */
-    val nodeType: js.UndefOr[Input[String]] = js.native
+    val nodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of compute nodes in the cluster. This parameter is required when the ClusterType parameter is specified as multi-node. Default is 1.
       */
-    val numberOfNodes: js.UndefOr[Input[Double]] = js.native
+    val numberOfNodes: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The AWS customer account used to create or copy the snapshot. Required if you are restoring a snapshot you do not own, optional if you own the snapshot.
       */
-    val ownerAccount: js.UndefOr[Input[String]] = js.native
+    val ownerAccount: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port number on which the cluster accepts incoming connections.
       * The cluster is accessible only via the JDBC and ODBC connection strings. Part of the connection string requires the port on which the cluster will listen for incoming connections. Default port is 5439.
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The weekly time range (in UTC) during which automated cluster maintenance can occur.
       * Format: ddd:hh24:mi-ddd:hh24:mi
       */
-    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val preferredMaintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If true, the cluster can be accessed from a public network. Default is `true`.
       */
-    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.native
+    val publiclyAccessible: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Determines whether a final snapshot of the cluster is created before Amazon Redshift deletes the cluster. If true , a final cluster snapshot is not created. If false , a final cluster snapshot is created before the cluster is deleted. Default is false.
       */
-    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.native
+    val skipFinalSnapshot: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the cluster the source snapshot was created from.
       */
-    val snapshotClusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val snapshotClusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration of automatic copy of snapshots from one region to another. Documented below.
       */
-    val snapshotCopy: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterSnapshotCopy]] = js.native
+    val snapshotCopy: js.UndefOr[Input[typings.pulumiAws.inputMod.redshift.ClusterSnapshotCopy]] = js.undefined
     
     /**
       * The name of the snapshot from which to create the new cluster.
       */
-    val snapshotIdentifier: js.UndefOr[Input[String]] = js.native
+    val snapshotIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of Virtual Private Cloud (VPC) security groups to be associated with the cluster.
       */
-    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcSecurityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   }
   object ClusterState {
     

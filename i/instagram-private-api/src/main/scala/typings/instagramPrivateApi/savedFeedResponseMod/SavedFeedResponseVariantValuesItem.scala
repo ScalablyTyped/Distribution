@@ -2,21 +2,19 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseVariantValuesItem extends StObject {
   
-  var id: String = js.native
+  var id: String
   
-  var is_preselected: Boolean = js.native
+  var is_preselected: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var value: String = js.native
+  var value: String
   
-  var visual_style: String = js.native
+  var visual_style: String
 }
 object SavedFeedResponseVariantValuesItem {
   

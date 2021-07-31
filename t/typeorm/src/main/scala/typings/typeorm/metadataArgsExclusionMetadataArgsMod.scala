@@ -2,28 +2,26 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataArgsExclusionMetadataArgsMod {
   
-  @js.native
   trait ExclusionMetadataArgs extends StObject {
     
     /**
       * Exclusion expression.
       */
-    var expression: String = js.native
+    var expression: String
     
     /**
       * Exclusion constraint name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Class to which index is applied.
       */
-    var target: js.Function | String = js.native
+    var target: js.Function | String
   }
   object ExclusionMetadataArgs {
     

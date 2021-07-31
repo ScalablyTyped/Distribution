@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ArcGISImageServiceCapabilitiesQuery extends Object {
+trait ArcGISImageServiceCapabilitiesQuery
+  extends StObject
+     with Object {
   
   /**
     * The maximum number of records that will be returned for a given query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var maxRecordCount: Unit = js.native
+  var maxRecordCount: Unit
   
   /**
     * Indicates if the layer supports queries for distinct values based on fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsDistinct: Unit = js.native
+  var supportsDistinct: Unit
   
   /**
     * Indicates if the layer returned in the query response can be ordered by one or more fields.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsOrderBy: Unit = js.native
+  var supportsOrderBy: Unit
   
   /**
     * Indicates if the layer supports paged queries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsPagination: Unit = js.native
+  var supportsPagination: Unit
   
   /**
     * Indicates if the layer supports use of standardized queries.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsStandardizedQueriesOnly: Unit = js.native
+  var supportsStandardizedQueriesOnly: Unit
   
   /**
     * Indicates if the layer supports field-based statistical functions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-mixins-ArcGISImageService.html#capabilities)
     */
-  var supportsStatistics: Unit = js.native
+  var supportsStatistics: Unit
 }
 object ArcGISImageServiceCapabilitiesQuery {
   

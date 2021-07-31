@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to apply bottom-left alignment for the selected table cells.
   */
-@js.native
-trait ToggleTableCellAlignBottomLeftCommand extends CommandWithBooleanStateBase {
+trait ToggleTableCellAlignBottomLeftCommand
+  extends StObject
+     with CommandWithBooleanStateBase {
   
   /**
     * Executes the ToggleTableCellAlignBottomLeftCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object ToggleTableCellAlignBottomLeftCommand {
   

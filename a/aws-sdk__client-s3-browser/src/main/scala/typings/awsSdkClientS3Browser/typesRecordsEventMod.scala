@@ -5,18 +5,16 @@ import typings.std.ArrayBufferView
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRecordsEventMod {
   
-  @js.native
   trait RecordsEvent extends StObject {
     
     /**
       * <p>The byte array of partial, one or more result records.</p>
       */
-    var Payload: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.native
+    var Payload: js.UndefOr[ArrayBuffer | ArrayBufferView | String] = js.undefined
   }
   object RecordsEvent {
     
@@ -37,14 +35,15 @@ object typesRecordsEventMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRecordsEvent extends RecordsEvent {
+  trait UnmarshalledRecordsEvent
+    extends StObject
+       with RecordsEvent {
     
     /**
       * <p>The byte array of partial, one or more result records.</p>
       */
     @JSName("Payload")
-    var Payload_UnmarshalledRecordsEvent: js.UndefOr[Uint8Array] = js.native
+    var Payload_UnmarshalledRecordsEvent: js.UndefOr[Uint8Array] = js.undefined
   }
   object UnmarshalledRecordsEvent {
     

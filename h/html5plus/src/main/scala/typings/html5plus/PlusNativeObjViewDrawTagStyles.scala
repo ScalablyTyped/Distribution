@@ -7,7 +7,6 @@ import typings.html5plus.html5plusStrings.rect
 import typings.html5plus.html5plusStrings.richtext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjViewDrawTagStyles extends StObject {
   
   /**
@@ -28,7 +26,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * 绘制操作标识
@@ -36,7 +34,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * 绘制输入框的样式
@@ -44,7 +42,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var inputStyles: js.UndefOr[PlusNativeObjInputStyles] = js.native
+  var inputStyles: js.UndefOr[PlusNativeObjInputStyles] = js.undefined
   
   /**
     * 绘制内容区域
@@ -55,7 +53,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var position: js.UndefOr[PlusNativeObjPosition] = js.native
+  var position: js.UndefOr[PlusNativeObjPosition] = js.undefined
   
   /**
     * 绘制区域的样式
@@ -63,7 +61,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var rectStyles: js.UndefOr[PlusNativeObjRectStyles] = js.native
+  var rectStyles: js.UndefOr[PlusNativeObjRectStyles] = js.undefined
   
   /**
     * 绘制富文本的样式
@@ -71,7 +69,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var richTextStyles: js.UndefOr[PlusNativeObjRichTextStyles] = js.native
+  var richTextStyles: js.UndefOr[PlusNativeObjRichTextStyles] = js.undefined
   
   /**
     * 图片源的绘制区域
@@ -79,7 +77,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var sprite: js.UndefOr[PlusNativeObjPosition] = js.native
+  var sprite: js.UndefOr[PlusNativeObjPosition] = js.undefined
   
   /**
     * 绘制的图片资源
@@ -88,7 +86,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
   
   /**
     * 绘制操作类型
@@ -106,7 +104,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var tag: js.UndefOr[img | rect | font | richtext | input] = js.native
+  var tag: js.UndefOr[img | rect | font | richtext | input] = js.undefined
   
   /**
     * 绘制的文本内容
@@ -114,7 +112,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * 绘制文本的样式
@@ -122,7 +120,7 @@ trait PlusNativeObjViewDrawTagStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var textStyles: js.UndefOr[PlusNativeObjTextStyles] = js.native
+  var textStyles: js.UndefOr[PlusNativeObjTextStyles] = js.undefined
 }
 object PlusNativeObjViewDrawTagStyles {
   

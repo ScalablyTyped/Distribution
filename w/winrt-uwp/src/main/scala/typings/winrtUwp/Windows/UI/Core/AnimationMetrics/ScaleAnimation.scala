@@ -3,42 +3,40 @@ package typings.winrtUwp.Windows.UI.Core.AnimationMetrics
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides methods that enable you to retrieve the parameters for a scaling (growing or shrinking) animation. */
-@js.native
 trait ScaleAnimation extends StObject {
   
   /** Gets the location of the first control point for the cubic Bézier curve that describes how the scale should animate over time. */
-  var control1: Point = js.native
+  var control1: Point
   
   /** Gets the location of the second control point for the cubic Bézier curve that describes how the scale should animate over time. */
-  var control2: Point = js.native
+  var control2: Point
   
   /** Gets the amount of time between when the scale animation is instructed to begin and when that animation actually begins to draw. */
-  var delay: Double = js.native
+  var delay: Double
   
   /** Gets the amount of time over which the scale animation should be performed. This does not include the delay. */
-  var duration: Double = js.native
+  var duration: Double
   
   /** Gets the final horizontal scale factor for the object. */
-  var finalScaleX: Double = js.native
+  var finalScaleX: Double
   
   /** Gets the final vertical scale factor for the object. */
-  var finalScaleY: Double = js.native
+  var finalScaleY: Double
   
   /** Gets the initial horizontal scale factor for the object. */
-  var initialScaleX: Double = js.native
+  var initialScaleX: Double
   
   /** Gets the initial vertical scale factor for the object. */
-  var initialScaleY: Double = js.native
+  var initialScaleY: Double
   
   /** Gets the center point for the scaling animation, expressed as a point relative to the object's normal size. */
-  var normalizedOrigin: Point = js.native
+  var normalizedOrigin: Point
   
   /** Gets the type of animation represented by this object. */
-  var `type`: PropertyAnimationType = js.native
+  var `type`: PropertyAnimationType
 }
 object ScaleAnimation {
   

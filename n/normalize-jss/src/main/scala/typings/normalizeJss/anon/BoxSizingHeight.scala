@@ -2,17 +2,15 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoxSizingHeight extends StObject {
   
-  var boxSizing: String = js.native
+  var boxSizing: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var overflow: String = js.native
+  var overflow: String
 }
 object BoxSizingHeight {
   

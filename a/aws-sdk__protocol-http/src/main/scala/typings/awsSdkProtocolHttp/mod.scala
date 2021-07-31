@@ -4,10 +4,13 @@ import typings.awsSdkProtocolHttp.httpRequestMod.HttpRequestOptions
 import typings.awsSdkProtocolHttp.httpResponseMod.HttpResponseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@aws-sdk/protocol-http", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@aws-sdk/protocol-http", "HttpRequest")
   @js.native
@@ -18,9 +21,12 @@ object mod {
   /* static members */
   object HttpRequest {
     
-    @JSImport("@aws-sdk/protocol-http", "HttpRequest.isInstance")
+    @JSImport("@aws-sdk/protocol-http", "HttpRequest")
     @js.native
-    def isInstance(request: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isInstance(request: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(request.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpRequest.HttpRequest */ Boolean]
   }
   
   @JSImport("@aws-sdk/protocol-http", "HttpResponse")
@@ -32,12 +38,14 @@ object mod {
   /* static members */
   object HttpResponse {
     
-    @JSImport("@aws-sdk/protocol-http", "HttpResponse.isInstance")
+    @JSImport("@aws-sdk/protocol-http", "HttpResponse")
     @js.native
-    def isInstance(response: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isInstance(response: js.Any): /* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(response.asInstanceOf[js.Any]).asInstanceOf[/* is @aws-sdk/protocol-http.@aws-sdk/protocol-http/dist/cjs/httpResponse.HttpResponse */ Boolean]
   }
   
-  @JSImport("@aws-sdk/protocol-http", "isValidHostname")
-  @js.native
-  def isValidHostname(hostname: String): Boolean = js.native
+  @scala.inline
+  def isValidHostname(hostname: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidHostname")(hostname.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

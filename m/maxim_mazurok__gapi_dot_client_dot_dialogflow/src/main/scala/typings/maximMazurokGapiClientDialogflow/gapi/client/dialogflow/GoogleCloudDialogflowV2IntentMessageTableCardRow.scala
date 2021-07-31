@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2IntentMessageTableCardRow extends StObject {
   
   /** Optional. List of cells that make up this row. */
-  var cells: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageTableCardCell]] = js.native
+  var cells: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessageTableCardCell]] = js.undefined
   
   /** Optional. Whether to add a visual divider after this row. */
-  var dividerAfter: js.UndefOr[Boolean] = js.native
+  var dividerAfter: js.UndefOr[Boolean] = js.undefined
 }
 object GoogleCloudDialogflowV2IntentMessageTableCardRow {
   

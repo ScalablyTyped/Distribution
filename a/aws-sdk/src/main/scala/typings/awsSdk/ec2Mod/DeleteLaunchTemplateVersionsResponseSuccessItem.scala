@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLaunchTemplateVersionsResponseSuccessItem extends StObject {
   
   /**
     * The ID of the launch template.
     */
-  var LaunchTemplateId: js.UndefOr[String] = js.native
+  var LaunchTemplateId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the launch template.
     */
-  var LaunchTemplateName: js.UndefOr[String] = js.native
+  var LaunchTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the launch template.
     */
-  var VersionNumber: js.UndefOr[Long] = js.native
+  var VersionNumber: js.UndefOr[Long] = js.undefined
 }
 object DeleteLaunchTemplateVersionsResponseSuccessItem {
   

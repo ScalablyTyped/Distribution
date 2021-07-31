@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeSettings extends StObject {
   
   /** The maximum number of nodes that can be created beyond the current size of the node pool during the upgrade process. */
-  var maxSurge: js.UndefOr[Double] = js.native
+  var maxSurge: js.UndefOr[Double] = js.undefined
   
   /** The maximum number of nodes that can be simultaneously unavailable during the upgrade process. A node is considered available if its status is Ready. */
-  var maxUnavailable: js.UndefOr[Double] = js.native
+  var maxUnavailable: js.UndefOr[Double] = js.undefined
 }
 object UpgradeSettings {
   

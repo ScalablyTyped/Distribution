@@ -2,26 +2,24 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionExecutionResult extends StObject {
   
   /**
     * The action provider's external ID for the action execution.
     */
-  var externalExecutionId: js.UndefOr[ExternalExecutionId] = js.native
+  var externalExecutionId: js.UndefOr[ExternalExecutionId] = js.undefined
   
   /**
     * The action provider's summary for the action execution.
     */
-  var externalExecutionSummary: js.UndefOr[ExternalExecutionSummary] = js.native
+  var externalExecutionSummary: js.UndefOr[ExternalExecutionSummary] = js.undefined
   
   /**
     * The deepest external link to the external resource (for example, a repository URL or deployment endpoint) that is used when running the action.
     */
-  var externalExecutionUrl: js.UndefOr[Url] = js.native
+  var externalExecutionUrl: js.UndefOr[Url] = js.undefined
 }
 object ActionExecutionResult {
   

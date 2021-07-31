@@ -3,7 +3,6 @@ package typings.googleapis.scriptV1Mod.scriptV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,7 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * format for the response   body. Client libraries automatically convert a
   * 4XX response into an   exception class.&lt;/li&gt; &lt;/ul&gt;
   */
-@js.native
 trait SchemaOperation extends StObject {
   
   /**
@@ -35,7 +33,7 @@ trait SchemaOperation extends StObject {
     * completed execution has a populated `response` field containing the
     * ExecutionResponse from function that was executed.
     */
-  var done: js.UndefOr[Boolean] = js.native
+  var done: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If a `run` call succeeds but the script function (or Apps Script itself)
@@ -44,13 +42,13 @@ trait SchemaOperation extends StObject {
     * ExecutionError object that provides information about the nature of the
     * error.
     */
-  var error: js.UndefOr[SchemaStatus] = js.native
+  var error: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * If the script function returns successfully, this field contains an
     * ExecutionResponse object with the function&#39;s return value.
     */
-  var response: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var response: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaOperation {
   

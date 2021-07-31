@@ -2,12 +2,12 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JsxFragment
-  extends PrimaryExpression
+  extends StObject
+     with PrimaryExpression
      with JsxChild {
   
   val children: NodeArray[JsxChild] = js.native

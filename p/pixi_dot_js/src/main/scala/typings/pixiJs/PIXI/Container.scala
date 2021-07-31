@@ -4,7 +4,6 @@ import typings.pixiJs.pixiJsStrings.added
 import typings.pixiJs.pixiJsStrings.removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @memberof PIXI
   */
 @js.native
-trait Container extends DisplayObject {
+trait Container
+  extends StObject
+     with DisplayObject {
   
   /**
     * Recalculates the bounds of the object. Override this to
@@ -116,7 +117,7 @@ trait Container extends DisplayObject {
     */
   def getChildIndex(child: DisplayObject): Double = js.native
   
-  def getLocalBounds(rect: js.UndefOr[scala.Nothing], skipChildrenUpdate: Boolean): Rectangle = js.native
+  def getLocalBounds(rect: Unit, skipChildrenUpdate: Boolean): Rectangle = js.native
   def getLocalBounds(rect: Rectangle, skipChildrenUpdate: Boolean): Rectangle = js.native
   
   /**
@@ -139,19 +140,19 @@ trait Container extends DisplayObject {
   @JSName("off")
   def off_added(event: added): this.type = js.native
   @JSName("off")
-  def off_added(event: added, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
-  @JSName("off")
   def off_added(event: added, fn: js.Function): this.type = js.native
   @JSName("off")
   def off_added(event: added, fn: js.Function, context: js.Any): this.type = js.native
   @JSName("off")
-  def off_removed(event: removed): this.type = js.native
+  def off_added(event: added, fn: Unit, context: js.Any): this.type = js.native
   @JSName("off")
-  def off_removed(event: removed, fn: js.UndefOr[scala.Nothing], context: js.Any): this.type = js.native
+  def off_removed(event: removed): this.type = js.native
   @JSName("off")
   def off_removed(event: removed, fn: js.Function): this.type = js.native
   @JSName("off")
   def off_removed(event: removed, fn: js.Function, context: js.Any): this.type = js.native
+  @JSName("off")
+  def off_removed(event: removed, fn: Unit, context: js.Any): this.type = js.native
   
   /**
     * Overridable method that can be used by Container subclasses whenever the children array is modified
@@ -204,9 +205,9 @@ trait Container extends DisplayObject {
     * @returns {PIXI.DisplayObject[]} List of removed children
     */
   def removeChildren(): js.Array[DisplayObject] = js.native
-  def removeChildren(beginIndex: js.UndefOr[scala.Nothing], endIndex: Double): js.Array[DisplayObject] = js.native
   def removeChildren(beginIndex: Double): js.Array[DisplayObject] = js.native
   def removeChildren(beginIndex: Double, endIndex: Double): js.Array[DisplayObject] = js.native
+  def removeChildren(beginIndex: Unit, endIndex: Double): js.Array[DisplayObject] = js.native
   
   /**
     * Renders the object using the WebGL renderer

@@ -5,7 +5,6 @@ import typings.antDesignProLayout.anon.FlatMenuKeys
 import typings.unstatedNext.mod.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object counterMod extends Shortcut {

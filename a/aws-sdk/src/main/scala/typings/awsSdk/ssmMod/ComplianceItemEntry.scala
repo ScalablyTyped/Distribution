@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceItemEntry extends StObject {
   
   /**
     * A "Key": "Value" tag combination for the compliance item.
     */
-  var Details: js.UndefOr[ComplianceItemDetails] = js.native
+  var Details: js.UndefOr[ComplianceItemDetails] = js.undefined
   
   /**
     * The compliance item ID. For example, if the compliance item is a Windows patch, the ID could be the number of the KB article.
     */
-  var Id: js.UndefOr[ComplianceItemId] = js.native
+  var Id: js.UndefOr[ComplianceItemId] = js.undefined
   
   /**
     * The severity of the compliance status. Severity can be one of the following: Critical, High, Medium, Low, Informational, Unspecified.
     */
-  var Severity: ComplianceSeverity = js.native
+  var Severity: ComplianceSeverity
   
   /**
     * The status of the compliance item. An item is either COMPLIANT or NON_COMPLIANT.
     */
-  var Status: ComplianceStatus = js.native
+  var Status: ComplianceStatus
   
   /**
     * The title of the compliance item. For example, if the compliance item is a Windows patch, the title could be the title of the KB article for the patch; for example: Security Update for Active Directory Federation Services. 
     */
-  var Title: js.UndefOr[ComplianceItemTitle] = js.native
+  var Title: js.UndefOr[ComplianceItemTitle] = js.undefined
 }
 object ComplianceItemEntry {
   

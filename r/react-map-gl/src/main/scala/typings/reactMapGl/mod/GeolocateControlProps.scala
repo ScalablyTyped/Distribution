@@ -4,33 +4,33 @@ import typings.mapboxGl.mod.FitBoundsOptions
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeolocateControlProps extends BaseControlProps {
+trait GeolocateControlProps
+  extends StObject
+     with BaseControlProps {
   
-  var auto: js.UndefOr[Boolean] = js.native
+  var auto: js.UndefOr[Boolean] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.native
+  var fitBoundsOptions: js.UndefOr[FitBoundsOptions] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var onGeolocate: js.UndefOr[js.Function1[/* options */ PositionOptions, Unit]] = js.native
+  var onGeolocate: js.UndefOr[js.Function1[/* options */ PositionOptions, Unit]] = js.undefined
   
-  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.native
+  var onViewStateChange: js.UndefOr[ViewStateChangeHandler] = js.undefined
   
-  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.native
+  var onViewportChange: js.UndefOr[ViewportChangeHandler] = js.undefined
   
-  var positionOptions: js.UndefOr[typings.mapboxGl.mod.PositionOptions] = js.native
+  var positionOptions: js.UndefOr[typings.mapboxGl.mod.PositionOptions] = js.undefined
   
-  var showUserLocation: js.UndefOr[Boolean] = js.native
+  var showUserLocation: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var trackUserLocation: js.UndefOr[Boolean] = js.native
+  var trackUserLocation: js.UndefOr[Boolean] = js.undefined
 }
 object GeolocateControlProps {
   

@@ -2,31 +2,29 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A rule describing a conditional format.
   */
-@js.native
 trait SchemaConditionalFormatRule extends StObject {
   
   /**
     * The formatting is either &quot;on&quot; or &quot;off&quot; according to
     * the rule.
     */
-  var booleanRule: js.UndefOr[SchemaBooleanRule] = js.native
+  var booleanRule: js.UndefOr[SchemaBooleanRule] = js.undefined
   
   /**
     * The formatting will vary based on the gradients in the rule.
     */
-  var gradientRule: js.UndefOr[SchemaGradientRule] = js.native
+  var gradientRule: js.UndefOr[SchemaGradientRule] = js.undefined
   
   /**
     * The ranges that are formatted if the condition is true. All the ranges
     * must be on the same grid.
     */
-  var ranges: js.UndefOr[js.Array[SchemaGridRange]] = js.native
+  var ranges: js.UndefOr[js.Array[SchemaGridRange]] = js.undefined
 }
 object SchemaConditionalFormatRule {
   

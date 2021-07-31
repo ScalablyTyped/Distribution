@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBlacklistReportsRequest extends StObject {
   
   /**
     * A list of IP addresses that you want to retrieve blacklist information about. You can only specify the dedicated IP addresses that you use to send email using Amazon Pinpoint or Amazon SES.
     */
-  var BlacklistItemNames: typings.awsSdk.pinpointemailMod.BlacklistItemNames = js.native
+  var BlacklistItemNames: typings.awsSdk.pinpointemailMod.BlacklistItemNames
 }
 object GetBlacklistReportsRequest {
   

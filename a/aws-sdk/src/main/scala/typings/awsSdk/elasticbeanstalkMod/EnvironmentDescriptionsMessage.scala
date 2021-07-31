@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentDescriptionsMessage extends StObject {
   
   /**
     *  Returns an EnvironmentDescription list. 
     */
-  var Environments: js.UndefOr[EnvironmentDescriptionsList] = js.native
+  var Environments: js.UndefOr[EnvironmentDescriptionsList] = js.undefined
   
   /**
     * In a paginated request, the token that you can pass in a subsequent request to get the next response page.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
 }
 object EnvironmentDescriptionsMessage {
   

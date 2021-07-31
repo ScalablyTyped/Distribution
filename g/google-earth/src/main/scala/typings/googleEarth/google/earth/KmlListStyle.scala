@@ -2,31 +2,31 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlListStyle extends KmlObject {
+trait KmlListStyle
+  extends StObject
+     with KmlObject {
   
   /**
     * Background color for the Snippet.
     */
-  def getBgColor(): KmlColor = js.native
+  def getBgColor(): KmlColor
   
   /**
     * Specifies how a feature should be displayed in a list view.
     */
-  def getListItemType(): KmlListItemTypeEnum = js.native
+  def getListItemType(): KmlListItemTypeEnum
   
   /**
     * Maximum number of lines of text for the Snippet.
     */
-  def getMaxSnippetLines(): Double = js.native
+  def getMaxSnippetLines(): Double
   
   /**
     * Maximum number of lines of text for the Snippet.
     */
-  def setMaxSnippetLines(maxSnippetLines: Double): Unit = js.native
+  def setMaxSnippetLines(maxSnippetLines: Double): Unit
 }
 object KmlListStyle {
   

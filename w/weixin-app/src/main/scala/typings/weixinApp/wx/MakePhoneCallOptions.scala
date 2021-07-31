@@ -2,18 +2,17 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 设备-----拨打电话
-@js.native
 trait MakePhoneCallOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 需要拨打的电话号码
     */
-  var phoneNumber: String = js.native
+  var phoneNumber: String
 }
 object MakePhoneCallOptions {
   

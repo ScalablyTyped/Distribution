@@ -3,7 +3,6 @@ package typings.googleAnalytics
 import typings.googleAnalytics.UniversalAnalytics.ga
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,7 +10,8 @@ object global {
   @JSGlobal("Tracker")
   @js.native
   class Tracker ()
-    extends typings.googleAnalytics.Tracker
+    extends StObject
+       with typings.googleAnalytics.Tracker
   
   @JSGlobal("ga")
   @js.native

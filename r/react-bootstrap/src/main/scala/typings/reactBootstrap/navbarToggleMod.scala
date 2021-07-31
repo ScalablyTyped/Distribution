@@ -7,7 +7,6 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object navbarToggleMod {
@@ -21,11 +20,12 @@ object navbarToggleMod {
   trait NavbarToggle
     extends Component[NavbarToggleProps, js.Object, js.Any]
   
-  @js.native
-  trait NavbarToggleProps extends HTMLProps[NavbarToggle] {
+  trait NavbarToggleProps
+    extends StObject
+       with HTMLProps[NavbarToggle] {
     
     @JSName("onClick")
-    var onClick_NavbarToggleProps: js.UndefOr[MouseEventHandler[_]] = js.native
+    var onClick_NavbarToggleProps: js.UndefOr[MouseEventHandler[js.Any]] = js.undefined
   }
   object NavbarToggleProps {
     
@@ -39,7 +39,7 @@ object navbarToggleMod {
     implicit class NavbarTogglePropsMutableBuilder[Self <: NavbarToggleProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setOnClick(value: MouseEvent[_, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+      def setOnClick(value: MouseEvent[js.Any, NativeMouseEvent] => Unit): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)

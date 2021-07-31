@@ -3,24 +3,24 @@ package typings.vueComponentCompilerUtils
 import typings.vueComponentCompilerUtils.assetUrlMod.TransformAssetUrlsOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/utils", "urlToRequire")
+  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/utils", JSImport.Namespace)
   @js.native
-  def urlToRequire(url: String): String = js.native
-  @JSImport("@vue/component-compiler-utils/dist/templateCompilerModules/utils", "urlToRequire")
-  @js.native
-  def urlToRequire(url: String, transformAssetUrlsOption: TransformAssetUrlsOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def urlToRequire(url: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlToRequire")(url.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def urlToRequire(url: String, transformAssetUrlsOption: TransformAssetUrlsOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("urlToRequire")(url.asInstanceOf[js.Any], transformAssetUrlsOption.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait ASTNode extends StObject {
     
-    var attrs: js.Array[Attr] = js.native
+    var attrs: js.Array[Attr]
     
-    var tag: String = js.native
+    var tag: String
   }
   object ASTNode {
     
@@ -44,12 +44,11 @@ object utilsMod {
     }
   }
   
-  @js.native
   trait Attr extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Attr {
     

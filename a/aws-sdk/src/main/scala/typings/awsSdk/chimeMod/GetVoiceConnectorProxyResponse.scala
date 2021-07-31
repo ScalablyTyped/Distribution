@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetVoiceConnectorProxyResponse extends StObject {
   
   /**
     * The proxy configuration details.
     */
-  var Proxy: js.UndefOr[typings.awsSdk.chimeMod.Proxy] = js.native
+  var Proxy: js.UndefOr[typings.awsSdk.chimeMod.Proxy] = js.undefined
 }
 object GetVoiceConnectorProxyResponse {
   

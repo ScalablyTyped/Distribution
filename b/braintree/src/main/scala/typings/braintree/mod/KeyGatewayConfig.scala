@@ -2,19 +2,19 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KeyGatewayConfig extends GatewayConfig {
+trait KeyGatewayConfig
+  extends StObject
+     with GatewayConfig {
   
-  var environment: Environment = js.native
+  var environment: Environment
   
-  var merchantId: String = js.native
+  var merchantId: String
   
-  var privateKey: String = js.native
+  var privateKey: String
   
-  var publicKey: String = js.native
+  var publicKey: String
 }
 object KeyGatewayConfig {
   

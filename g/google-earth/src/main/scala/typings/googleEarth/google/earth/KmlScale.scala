@@ -2,46 +2,46 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlScale extends KmlObject {
+trait KmlScale
+  extends StObject
+     with KmlObject {
   
   /**
     * Indicates the x coordinate.
     */
-  def getX(): Double = js.native
+  def getX(): Double
   
   /**
     * Indicates the y coordinate.
     */
-  def getY(): Double = js.native
+  def getY(): Double
   
   /**
     * Indicates the z coordinate.
     */
-  def getZ(): Double = js.native
+  def getZ(): Double
   
   /**
     * Sets the x, y, and z coordinates for a model.
     */
-  def set(x: Double, y: Double, z: Double): Unit = js.native
+  def set(x: Double, y: Double, z: Double): Unit
   
   /**
     * Indicates the x coordinate.
     */
-  def setX(x: Double): Unit = js.native
+  def setX(x: Double): Unit
   
   /**
     * Indicates the y coordinate.
     */
-  def setY(y: Double): Unit = js.native
+  def setY(y: Double): Unit
   
   /**
     * Indicates the z coordinate.
     */
-  def setZ(z: Double): Unit = js.native
+  def setZ(z: Double): Unit
 }
 object KmlScale {
   

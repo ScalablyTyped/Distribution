@@ -3,7 +3,6 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,14 +21,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSImport("prosemirror-model", "Node")
 @js.native
-class Node[S /* <: Schema[_, _] */] () extends ProsemirrorNode[S]
+class Node[S /* <: Schema[js.Any, js.Any] */] ()
+  extends StObject
+     with ProsemirrorNode[S]
 object Node {
+  
+  @JSImport("prosemirror-model", "Node")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Deserialize a node from its JSON representation.
     */
   /* static member */
-  @JSImport("prosemirror-model", "Node.fromJSON")
-  @js.native
-  def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): ProsemirrorNode[S] = js.native
+  @scala.inline
+  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): ProsemirrorNode[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[ProsemirrorNode[S]]
 }

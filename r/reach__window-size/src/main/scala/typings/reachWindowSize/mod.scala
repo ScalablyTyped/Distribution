@@ -6,7 +6,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,10 +14,9 @@ object mod extends Shortcut {
   @js.native
   val default: FC[WindowSizeProps] = js.native
   
-  @js.native
   trait WindowSizeProps extends StObject {
     
-    def children(size: Height): ReactNode = js.native
+    def children(size: Height): ReactNode
   }
   object WindowSizeProps {
     

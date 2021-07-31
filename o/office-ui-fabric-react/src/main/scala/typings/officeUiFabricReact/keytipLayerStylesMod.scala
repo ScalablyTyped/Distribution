@@ -6,16 +6,17 @@ import typings.officeUiFabricReact.layerTypesMod.ILayerStyleProps
 import typings.officeUiFabricReact.layerTypesMod.ILayerStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keytipLayerStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipLayer.styles", "getLayerStyles")
+  @JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipLayer.styles", JSImport.Namespace)
   @js.native
-  def getLayerStyles(props: ILayerStyleProps): ILayerStyles = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/KeytipLayer/KeytipLayer.styles", "getStyles")
-  @js.native
-  def getStyles(props: IKeytipLayerStyleProps): IKeytipLayerStyles = js.native
+  @scala.inline
+  def getLayerStyles(props: ILayerStyleProps): ILayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getLayerStyles")(props.asInstanceOf[js.Any]).asInstanceOf[ILayerStyles]
+  
+  @scala.inline
+  def getStyles(props: IKeytipLayerStyleProps): IKeytipLayerStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(props.asInstanceOf[js.Any]).asInstanceOf[IKeytipLayerStyles]
 }

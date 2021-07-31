@@ -11,8 +11,8 @@ Typings are for version 6.6.3
 | Full name          | rxjs-compat |
 | Keywords           | - |
 | # releases         | 11 |
-| # dependents       | 643 |
-| # downloads        | 18026986 |
+| # dependents       | 683 |
+| # downloads        | 19597429 |
 | # stars            | 0 |
 
 ## Links

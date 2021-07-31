@@ -2,41 +2,39 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolverRuleAssociation extends StObject {
   
   /**
     * The ID of the association between a Resolver rule and a VPC. Resolver assigns this value when you submit an AssociateResolverRule request.
     */
-  var Id: js.UndefOr[ResourceId] = js.native
+  var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The name of an association between a Resolver rule and a VPC.
     */
-  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.route53resolverMod.Name] = js.undefined
   
   /**
     * The ID of the Resolver rule that you associated with the VPC that is specified by VPCId.
     */
-  var ResolverRuleId: js.UndefOr[ResourceId] = js.native
+  var ResolverRuleId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * A code that specifies the current status of the association between a Resolver rule and a VPC.
     */
-  var Status: js.UndefOr[ResolverRuleAssociationStatus] = js.native
+  var Status: js.UndefOr[ResolverRuleAssociationStatus] = js.undefined
   
   /**
     * A detailed description of the status of the association between a Resolver rule and a VPC.
     */
-  var StatusMessage: js.UndefOr[typings.awsSdk.route53resolverMod.StatusMessage] = js.native
+  var StatusMessage: js.UndefOr[typings.awsSdk.route53resolverMod.StatusMessage] = js.undefined
   
   /**
     * The ID of the VPC that you associated the Resolver rule with.
     */
-  var VPCId: js.UndefOr[ResourceId] = js.native
+  var VPCId: js.UndefOr[ResourceId] = js.undefined
 }
 object ResolverRuleAssociation {
   

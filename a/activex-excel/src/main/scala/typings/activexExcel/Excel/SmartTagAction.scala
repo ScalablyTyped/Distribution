@@ -2,42 +2,40 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SmartTagAction extends StObject {
   
-  val ActiveXControl: js.Any = js.native
+  val ActiveXControl: js.Any
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var CheckboxState: Boolean = js.native
+  var CheckboxState: Boolean
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.SmartTagAction_typekey")
-  var ExcelDotSmartTagAction_typekey: SmartTagAction = js.native
+  var ExcelDotSmartTagAction_typekey: SmartTagAction
   
-  def Execute(): Unit = js.native
+  def Execute(): Unit
   
-  var ExpandHelp: Boolean = js.native
+  var ExpandHelp: Boolean
   
-  var ListSelection: Double = js.native
+  var ListSelection: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PresentInPane: Boolean = js.native
+  val PresentInPane: Boolean
   
-  var RadioGroupSelection: Double = js.native
+  var RadioGroupSelection: Double
   
-  var TextboxText: String = js.native
+  var TextboxText: String
   
-  val Type: XlSmartTagControlType = js.native
+  val Type: XlSmartTagControlType
   
-  val _Default: String = js.native
+  val _Default: String
 }
 object SmartTagAction {
   

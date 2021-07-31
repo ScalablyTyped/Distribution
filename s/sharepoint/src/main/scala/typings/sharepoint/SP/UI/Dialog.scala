@@ -4,44 +4,42 @@ import typings.std.HTMLElement
 import typings.std.HTMLFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a dialog. Do not use this class directly from your code. */
-@js.native
 trait Dialog extends StObject {
   
-  def autoSize(): Unit = js.native
+  def autoSize(): Unit
   
-  def autoSizeSuppressScrollbar(resizePageCallBack: js.Any): Unit = js.native
+  def autoSizeSuppressScrollbar(resizePageCallBack: js.Any): Unit
   
-  def get_allowMaximize(): Boolean = js.native
+  def get_allowMaximize(): Boolean
   
-  def get_args(): js.Any = js.native
+  def get_args(): js.Any
   
-  def get_closed(): Boolean = js.native
+  def get_closed(): Boolean
   
-  def get_dialogElement(): HTMLElement = js.native
+  def get_dialogElement(): HTMLElement
   
-  def get_firstTabStop(): HTMLElement = js.native
+  def get_firstTabStop(): HTMLElement
   
-  def get_frameElement(): HTMLFrameElement = js.native
+  def get_frameElement(): HTMLFrameElement
   
-  def get_html(): String = js.native
+  def get_html(): String
   
-  def get_isMaximized(): Boolean = js.native
+  def get_isMaximized(): Boolean
   
-  def get_lastTabStop(): HTMLElement = js.native
+  def get_lastTabStop(): HTMLElement
   
-  def get_returnValue(): js.Any = js.native
+  def get_returnValue(): js.Any
   
-  def get_showClose(): Boolean = js.native
+  def get_showClose(): Boolean
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def set_returnValue(value: js.Any): Unit = js.native
+  def set_returnValue(value: js.Any): Unit
 }
 object Dialog {
   

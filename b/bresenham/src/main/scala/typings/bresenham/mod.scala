@@ -2,30 +2,30 @@ package typings.bresenham
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("bresenham", JSImport.Namespace)
-  @js.native
-  def apply(x0: Double, y0: Double, x1: Double, y1: Double): js.Array[Point] = js.native
-  @JSImport("bresenham", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(x0: Double, y0: Double, x1: Double, y1: Double): js.Array[Point] = (^.asInstanceOf[js.Dynamic].apply(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any])).asInstanceOf[js.Array[Point]]
+  @scala.inline
   def apply(
     x0: Double,
     y0: Double,
     x1: Double,
     y1: Double,
     fn: js.Function2[/* x */ Double, /* y */ Double, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(x0.asInstanceOf[js.Any], y0.asInstanceOf[js.Any], x1.asInstanceOf[js.Any], y1.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("bresenham", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     

@@ -4,26 +4,24 @@ import typings.relayRuntime.readerNodeMod.ReaderPaginationMetadata
 import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined relay-runtime.relay-runtime/lib/util/ReaderNode.ReaderRefetchMetadata & {  connection :relay-runtime.relay-runtime/lib/util/ReaderNode.ReaderPaginationMetadata} */
-@js.native
 trait ReaderRefetchMetadataconn extends StObject {
   
-  val connection: (js.UndefOr[ReaderPaginationMetadata | Null]) with ReaderPaginationMetadata = js.native
+  val connection: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata
   
-  val fragmentPathInResult: js.Array[String] = js.native
+  val fragmentPathInResult: js.Array[String]
   
-  val identifierField: js.UndefOr[String | Null] = js.native
+  val identifierField: js.UndefOr[String | Null] = js.undefined
   
-  val operation: String | ConcreteRequest = js.native
+  val operation: String | ConcreteRequest
 }
 object ReaderRefetchMetadataconn {
   
   @scala.inline
   def apply(
-    connection: (js.UndefOr[ReaderPaginationMetadata | Null]) with ReaderPaginationMetadata,
+    connection: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata,
     fragmentPathInResult: js.Array[String],
     operation: String | ConcreteRequest
   ): ReaderRefetchMetadataconn = {
@@ -35,7 +33,7 @@ object ReaderRefetchMetadataconn {
   implicit class ReaderRefetchMetadataconnMutableBuilder[Self <: ReaderRefetchMetadataconn] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setConnection(value: (js.UndefOr[ReaderPaginationMetadata | Null]) with ReaderPaginationMetadata): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
+    def setConnection(value: (js.UndefOr[ReaderPaginationMetadata | Null]) & ReaderPaginationMetadata): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFragmentPathInResult(value: js.Array[String]): Self = StObject.set(x, "fragmentPathInResult", value.asInstanceOf[js.Any])

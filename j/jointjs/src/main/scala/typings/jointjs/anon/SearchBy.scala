@@ -12,15 +12,13 @@ import typings.jointjs.jointjsStrings.topMiddle
 import typings.jointjs.jointjsStrings.topRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchBy extends StObject {
   
   var searchBy: js.UndefOr[
     bottomLeft | bottomMiddle | center | corner | leftMiddle | origin | rightMiddle | topMiddle | topRight | bbox
-  ] = js.native
+  ] = js.undefined
 }
 object SearchBy {
   

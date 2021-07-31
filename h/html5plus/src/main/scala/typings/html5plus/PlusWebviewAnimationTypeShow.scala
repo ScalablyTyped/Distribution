@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewAnimationTypeShow extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var auto: js.UndefOr[String] = js.native
+  var auto: js.UndefOr[String] = js.undefined
   
   /**
     * 从透明到不透明逐渐显示效果
@@ -28,7 +26,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `fade-in`: js.UndefOr[String] = js.native
+  var `fade-in`: js.UndefOr[String] = js.undefined
   
   /**
     * 无动画效果
@@ -38,7 +36,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var none: js.UndefOr[String] = js.native
+  var none: js.UndefOr[String] = js.undefined
   
   /**
     * 从右侧平移入栈动画效果
@@ -47,7 +45,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `pop-in`: js.UndefOr[String] = js.native
+  var `pop-in`: js.UndefOr[String] = js.undefined
   
   /**
     * 从下侧竖向滑动效果
@@ -56,7 +54,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `slide-in-bottom`: js.UndefOr[String] = js.native
+  var `slide-in-bottom`: js.UndefOr[String] = js.undefined
   
   /**
     * 从左侧横向滑动效果
@@ -65,7 +63,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `slide-in-left`: js.UndefOr[String] = js.native
+  var `slide-in-left`: js.UndefOr[String] = js.undefined
   
   /**
     * 从右侧横向滑动效果
@@ -74,7 +72,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `slide-in-right`: js.UndefOr[String] = js.native
+  var `slide-in-right`: js.UndefOr[String] = js.undefined
   
   /**
     * 从上侧竖向滑动效果
@@ -83,7 +81,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `slide-in-top`: js.UndefOr[String] = js.native
+  var `slide-in-top`: js.UndefOr[String] = js.undefined
   
   /**
     * 从小到大逐渐放大并且从透明到不透明逐渐显示效果
@@ -92,7 +90,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `zoom-fade-out`: js.UndefOr[String] = js.native
+  var `zoom-fade-out`: js.UndefOr[String] = js.undefined
   
   /**
     * 从小到大逐渐放大显示效果
@@ -101,7 +99,7 @@ trait PlusWebviewAnimationTypeShow extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var `zoom-out`: js.UndefOr[String] = js.native
+  var `zoom-out`: js.UndefOr[String] = js.undefined
 }
 object PlusWebviewAnimationTypeShow {
   

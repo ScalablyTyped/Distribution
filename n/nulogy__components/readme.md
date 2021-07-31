@@ -10,9 +10,9 @@ Component library for the Nulogy Design System - http://nulogy.design
 | ------------------ | :-------------: |
 | Full name          | @nulogy/components |
 | Keywords           | nulogy, design system, NDS, react, components, component library |
-| # releases         | 206 |
+| # releases         | 269 |
 | # dependents       | 0 |
-| # downloads        | 43643 |
+| # downloads        | 53128 |
 | # stars            | 0 |
 
 ## Links

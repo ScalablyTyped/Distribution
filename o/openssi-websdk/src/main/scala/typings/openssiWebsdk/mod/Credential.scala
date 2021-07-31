@@ -4,31 +4,29 @@ import typings.openssiWebsdk.anon.Attributes
 import typings.openssiWebsdk.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credential extends StObject {
   
-  var credential_definition_id: CredentialDefinitionID = js.native
+  var credential_definition_id: CredentialDefinitionID
   
-  var id: String = js.native
+  var id: String
   
-  var issuer_did: DID = js.native
+  var issuer_did: DID
   
-  var offer: js.UndefOr[Attributes] = js.native
+  var offer: js.UndefOr[Attributes] = js.undefined
   
-  var properties: Properties = js.native
+  var properties: Properties
   
-  var role: String = js.native
+  var role: String
   
-  var schema_name: String = js.native
+  var schema_name: String
   
-  var schema_version: String = js.native
+  var schema_version: String
   
-  var state: CredentialState = js.native
+  var state: CredentialState
   
-  var to: Name = js.native
+  var to: Name
 }
 object Credential {
   

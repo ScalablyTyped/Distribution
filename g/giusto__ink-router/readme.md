@@ -11,8 +11,8 @@ Implementation of react-router for ink
 | Full name          | @giusto/ink-router |
 | Keywords           | - |
 | # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 486 |
+| # dependents       | 2 |
+| # downloads        | 1051 |
 | # stars            | 0 |
 
 ## Links

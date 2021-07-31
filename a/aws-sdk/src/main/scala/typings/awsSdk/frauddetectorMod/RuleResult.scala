@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleResult extends StObject {
   
   /**
     * The outcomes of the matched rule, based on the rule execution mode.
     */
-  var outcomes: js.UndefOr[ListOfStrings] = js.native
+  var outcomes: js.UndefOr[ListOfStrings] = js.undefined
   
   /**
     * The rule ID that was matched, based on the rule execution mode.
     */
-  var ruleId: js.UndefOr[String] = js.native
+  var ruleId: js.UndefOr[String] = js.undefined
 }
 object RuleResult {
   

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapTableViewOptionsViewSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,12 +15,12 @@ trait OlapTableViewOptionsViewSettings
   /**
     * Optional="false" value indicating wheter the column headers should be arranged for compact header layout - each hieararchy is in a single row.
     */
-  var compactColumnHeaders: js.UndefOr[Boolean] = js.native
+  var compactColumnHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional="false" value indicating wheter the row headers should be arranged for compact header layout - each hieararchy is in a single row.
     */
-  var compactRowHeaders: js.UndefOr[Boolean] = js.native
+  var compactRowHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional="false" a value indicating whether parent for columns is in front of its children.
@@ -29,7 +28,7 @@ trait OlapTableViewOptionsViewSettings
     *                 Child members immediately follow their parent members.
     *                 If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.
     */
-  var isParentInFrontForColumns: js.UndefOr[Boolean] = js.native
+  var isParentInFrontForColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional="false" a value indicating whether parent for rows is in front of its children.
@@ -37,7 +36,7 @@ trait OlapTableViewOptionsViewSettings
     *                 Child members immediately follow their parent members.
     *                 If set to false the query set sorts the members in a level using a post-natural order. In other words, child members precede their parents.
     */
-  var isParentInFrontForRows: js.UndefOr[Boolean] = js.native
+  var isParentInFrontForRows: js.UndefOr[Boolean] = js.undefined
 }
 object OlapTableViewOptionsViewSettings {
   

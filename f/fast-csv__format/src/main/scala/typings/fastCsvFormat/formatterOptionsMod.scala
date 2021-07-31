@@ -6,7 +6,6 @@ import typings.fastCsvFormat.typesMod.RowTransformCallback
 import typings.fastCsvFormat.typesMod.RowTransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterOptionsMod {
@@ -47,34 +46,33 @@ object formatterOptionsMod {
     val writeBOM: Boolean = js.native
   }
   
-  @js.native
   trait FormatterOptionsArgs[I /* <: Row */, O /* <: Row */] extends StObject {
     
-    var alwaysWriteHeaders: js.UndefOr[Boolean] = js.native
+    var alwaysWriteHeaders: js.UndefOr[Boolean] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var escape: js.UndefOr[String] = js.native
+    var escape: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[Null | Boolean | js.Array[String]] = js.native
+    var headers: js.UndefOr[Null | Boolean | js.Array[String]] = js.undefined
     
-    var includeEndRowDelimiter: js.UndefOr[Boolean] = js.native
+    var includeEndRowDelimiter: js.UndefOr[Boolean] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var quote: js.UndefOr[String | Boolean] = js.native
+    var quote: js.UndefOr[String | Boolean] = js.undefined
     
-    var quoteColumns: js.UndefOr[QuoteColumns] = js.native
+    var quoteColumns: js.UndefOr[QuoteColumns] = js.undefined
     
-    var quoteHeaders: js.UndefOr[QuoteColumns] = js.native
+    var quoteHeaders: js.UndefOr[QuoteColumns] = js.undefined
     
-    var rowDelimiter: js.UndefOr[String] = js.native
+    var rowDelimiter: js.UndefOr[String] = js.undefined
     
-    var transform: js.UndefOr[RowTransformFunction[I, O]] = js.native
+    var transform: js.UndefOr[RowTransformFunction[I, O]] = js.undefined
     
-    var writeBOM: js.UndefOr[Boolean] = js.native
+    var writeBOM: js.UndefOr[Boolean] = js.undefined
     
-    var writeHeaders: js.UndefOr[Boolean] = js.native
+    var writeHeaders: js.UndefOr[Boolean] = js.undefined
   }
   object FormatterOptionsArgs {
     
@@ -85,7 +83,7 @@ object formatterOptionsMod {
     }
     
     @scala.inline
-    implicit class FormatterOptionsArgsMutableBuilder[Self <: FormatterOptionsArgs[_, _], I /* <: Row */, O /* <: Row */] (val x: Self with (FormatterOptionsArgs[I, O])) extends AnyVal {
+    implicit class FormatterOptionsArgsMutableBuilder[Self <: FormatterOptionsArgs[?, ?], I /* <: Row */, O /* <: Row */] (val x: Self & (FormatterOptionsArgs[I, O])) extends AnyVal {
       
       @scala.inline
       def setAlwaysWriteHeaders(value: Boolean): Self = StObject.set(x, "alwaysWriteHeaders", value.asInstanceOf[js.Any])

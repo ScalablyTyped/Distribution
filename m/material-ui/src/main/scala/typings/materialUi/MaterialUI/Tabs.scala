@@ -8,7 +8,6 @@ import typings.react.mod.FormEvent
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Tabs {
@@ -17,22 +16,23 @@ object Tabs {
   trait Tab
     extends Component[TabProps, js.Object, js.Any]
   
-  @js.native
-  trait TabProps extends SharedEnhancedButtonProps[Tab] {
+  trait TabProps
+    extends StObject
+       with SharedEnhancedButtonProps[Tab] {
     
-    var buttonStyle: js.UndefOr[CSSProperties] = js.native
+    var buttonStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
     
-    var onActive: js.UndefOr[js.Function1[/* tab */ Tab, Unit]] = js.native
+    var onActive: js.UndefOr[js.Function1[/* tab */ Tab, Unit]] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object TabProps {
     
@@ -91,32 +91,31 @@ object Tabs {
   
   type Tabs = Component[TabsProps, js.Object, js.Any]
   
-  @js.native
   trait TabsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var contentContainerClassName: js.UndefOr[String] = js.native
+    var contentContainerClassName: js.UndefOr[String] = js.undefined
     
-    var contentContainerStyle: js.UndefOr[CSSProperties] = js.native
+    var contentContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var initialSelectedIndex: js.UndefOr[Double] = js.native
+    var initialSelectedIndex: js.UndefOr[Double] = js.undefined
     
-    var inkBarStyle: js.UndefOr[CSSProperties] = js.native
+    var inkBarStyle: js.UndefOr[CSSProperties] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function3[/* value */ js.Any, /* e */ FormEvent[js.Object], /* tab */ Tab, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabItemContainerStyle: js.UndefOr[CSSProperties] = js.native
+    var tabItemContainerStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabTemplate: js.UndefOr[ComponentClass[_, ComponentState]] = js.native
+    var tabTemplate: js.UndefOr[ComponentClass[js.Any, ComponentState]] = js.undefined
     
-    var tabTemplateStyle: js.UndefOr[CSSProperties] = js.native
+    var tabTemplateStyle: js.UndefOr[CSSProperties] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object TabsProps {
     
@@ -178,7 +177,7 @@ object Tabs {
       def setTabItemContainerStyleUndefined: Self = StObject.set(x, "tabItemContainerStyle", js.undefined)
       
       @scala.inline
-      def setTabTemplate(value: ComponentClass[_, ComponentState]): Self = StObject.set(x, "tabTemplate", value.asInstanceOf[js.Any])
+      def setTabTemplate(value: ComponentClass[js.Any, ComponentState]): Self = StObject.set(x, "tabTemplate", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTabTemplateStyle(value: CSSProperties): Self = StObject.set(x, "tabTemplateStyle", value.asInstanceOf[js.Any])

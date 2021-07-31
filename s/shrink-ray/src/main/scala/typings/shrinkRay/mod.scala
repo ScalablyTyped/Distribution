@@ -10,7 +10,6 @@ import typings.shrinkRay.anon.Lgblock
 import typings.shrinkRay.anon.Partialflushnumberundefin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,10 +21,10 @@ object mod extends Shortcut {
   @js.native
   trait CreateMiddleware extends StObject {
     
-    def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
-    def filter(req: Request_[ParamsDictionary, _, _, Query], res: Response_[_]): Boolean = js.native
+    def filter(req: Request_[ParamsDictionary, js.Any, js.Any, Query], res: Response_[js.Any]): Boolean = js.native
     @JSName("filter")
     var filter_Original: FilterFunction = js.native
   }
@@ -37,22 +36,25 @@ object mod extends Shortcut {
   ]
   
   /* Inlined std.Partial<{  cacheSize :number,   threshold :number,   zlib :std.Partial<{  flush :number | undefined,   finishFlush :number | undefined,   chunkSize :number | undefined,   windowBits :number | undefined,   strategy :number | undefined,   dictionary :any | undefined,   level :-1 | 0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9,   memLevel :1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9}>,   brotli :{  lgblock :number,   lgwin :number,   mode :0 | 1 | 2,   quality :0 | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11},   filter :shrink-ray.shrink-ray.FilterFunction, cache (req : express.express.Request<express-serve-static-core.express-serve-static-core.ParamsDictionary, any, any, express-serve-static-core.express-serve-static-core.Query>, res : express.express.Response<any>): boolean}> */
-  @js.native
   trait Options extends StObject {
     
-    var brotli: js.UndefOr[Lgblock] = js.native
+    var brotli: js.UndefOr[Lgblock] = js.undefined
     
     var cache: js.UndefOr[
-        js.Function2[/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_], Boolean]
-      ] = js.native
+        js.Function2[
+          /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+          /* res */ Response_[js.Any], 
+          Boolean
+        ]
+      ] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var filter: js.UndefOr[FilterFunction] = js.native
+    var filter: js.UndefOr[FilterFunction] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var zlib: js.UndefOr[Partialflushnumberundefin] = js.native
+    var zlib: js.UndefOr[Partialflushnumberundefin] = js.undefined
   }
   object Options {
     
@@ -72,7 +74,9 @@ object mod extends Shortcut {
       def setBrotliUndefined: Self = StObject.set(x, "brotli", js.undefined)
       
       @scala.inline
-      def setCache(value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response_[_]) => Boolean): Self = StObject.set(x, "cache", js.Any.fromFunction2(value))
+      def setCache(
+        value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response_[js.Any]) => Boolean
+      ): Self = StObject.set(x, "cache", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCacheSize(value: Double): Self = StObject.set(x, "cacheSize", value.asInstanceOf[js.Any])

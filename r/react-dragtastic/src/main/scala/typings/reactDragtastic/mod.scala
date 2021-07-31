@@ -7,7 +7,6 @@ import typings.reactDragtastic.anon.StateisOverAcceptedboolea
 import typings.reactDragtastic.anon.StateisOverbooleanwillAcc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,25 +61,24 @@ object mod {
   
   type Accepts = String | js.Array[String]
   
-  @js.native
   trait DragComponentProps extends StObject {
     
     /** A boolean determining whether or not the DragComponent should always render. Defaults to false. */
-    var alwaysRender: js.UndefOr[Boolean] = js.native
+    var alwaysRender: js.UndefOr[Boolean] = js.undefined
     
-    def children(arg: StateisOverAcceptedboolea): ReactNode = js.native
+    def children(arg: StateisOverAcceptedboolea): ReactNode
     
     /* A string corresponding to the id property of the <Draggable/> zone that should trigger this component to start rendering. */
-    var `for`: js.UndefOr[Id] = js.native
+    var `for`: js.UndefOr[Id] = js.undefined
     
     /** A function which will be called every time a user drags. */
-    var onDrag: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDrag: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
       * For example, you may pass ['type', 'data'] to only rerender if these keys change.
       */
-    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.native
+    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.undefined
   }
   object DragComponentProps {
     
@@ -128,16 +126,15 @@ object mod {
     }
   }
   
-  @js.native
   trait DragStateProps extends StObject {
     
-    def children(arg: State): ReactNode = js.native
+    def children(arg: State): ReactNode
     
     /**
       * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
       * For example, you may pass ['type', 'data'] to only rerender if these keys change.
       */
-    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.native
+    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.undefined
   }
   object DragStateProps {
     
@@ -167,37 +164,36 @@ object mod {
     }
   }
   
-  @js.native
   trait DraggableProps extends StObject {
     
-    def children(arg: StateisActivebooleanevent): ReactNode = js.native
+    def children(arg: StateisActivebooleanevent): ReactNode
     
     /** Data of any type which will be passed to the onDrop function of any <Droppable/> which accepts this <Draggable/>'s type. */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** An optional int representing the distance in pixels the user's pointer must travel to activate the draggable. Defaults to 8 */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /** An id which will be used in the draggable zone's target <DragComponent/> */
-    var id: js.UndefOr[Id] = js.native
+    var id: js.UndefOr[Id] = js.undefined
     
     /** A function which will be called every time the user's cursor moves while dragging. */
-    var onDrag: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDrag: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** A function which will be called when the <Draggable/> zone is deactivated (The user stopped dragging). */
-    var onDragEnd: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var onDragEnd: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /** A function which will be called when the <Draggable/> zone is activated (The user started dragging). */
-    var onDragStart: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /**
       * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
       * For example, you may pass ['type', 'data'] to only rerender if these keys change.
       */
-    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.native
+    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.undefined
     
     /** A string, or array of strings, used to limit which droppable zones will accept <DragComponent/>'s attached to this draggable. */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
   }
   object DraggableProps {
     
@@ -269,37 +265,36 @@ object mod {
     }
   }
   
-  @js.native
   trait DroppableProps extends StObject {
     
     /** A string type corresponding to the type property of the <Draggable/> zone for which this <Droppable/> should accept drop events. */
-    var accepts: js.UndefOr[Accepts] = js.native
+    var accepts: js.UndefOr[Accepts] = js.undefined
     
-    def children(arg: StateisOverbooleanwillAcc): ReactNode = js.native
+    def children(arg: StateisOverbooleanwillAcc): ReactNode
     
     /** An id which will be used in the draggable zone's target <DragComponent/> */
-    var id: js.UndefOr[Id] = js.native
+    var id: js.UndefOr[Id] = js.undefined
     
     /**
       * A function which will be called when the user's cursor enters the <Droppable/> while dragging.
       * This function will be called regardless of whether the droppable accepts the draggable currently being dragged.
       */
-    var onDragEnter: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function which will be called when the user's cursor leaves the <Droppable/> while dragging.
       * This function will be called regardless of whether the droppable accepts the draggable currently being dragged.
       */
-    var onDragLeave: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** A function which will be called when a user drops a <DragComponent/> on this <Droppable/> with an accepted type. */
-    var onDrop: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var onDrop: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
     /**
       * An optional array of strings. For performance reasons you can limit which keys in the dragState your component subscribes to.
       * For example, you may pass ['type', 'data'] to only rerender if these keys change.
       */
-    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.native
+    var subscribeTo: js.UndefOr[js.Array[String] | Null] = js.undefined
   }
   object DroppableProps {
     
@@ -364,38 +359,37 @@ object mod {
   
   type Id = String | Double
   
-  @js.native
   trait State extends StObject {
     
     /** The id of the currently dragging element. */
-    var currentlyDraggingId: js.UndefOr[Id] = js.native
+    var currentlyDraggingId: js.UndefOr[Id] = js.undefined
     
     /** The accepts property of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.native
+    var currentlyHoveredDroppableAccepts: js.UndefOr[Accepts] = js.undefined
     
     /** The id of the <Droppable/> currently being hovered. */
-    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.native
+    var currentlyHoveredDroppableId: js.UndefOr[Id] = js.undefined
     
     /** Data from the data property of the <Draggable/> which is currently active. null if not dragging. */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /** A boolean representing whether the user is currently dragging. */
-    var isDragging: Boolean = js.native
+    var isDragging: Boolean
     
     /** The user's initial horizontal position on the page when they started dragging. */
-    var startingX: Double = js.native
+    var startingX: Double
     
     /** The user's initial vertical position on the page when they started dragging. */
-    var startingY: Double = js.native
+    var startingY: Double
     
     /** The type of the component being currently dragged. null if not dragging. */
-    var `type`: js.UndefOr[Type] = js.native
+    var `type`: js.UndefOr[Type] = js.undefined
     
     /** The user's current horizontal position on the page. */
-    var x: Double = js.native
+    var x: Double
     
     /** The user's current vertical position on the page. */
-    var y: Double = js.native
+    var y: Double
   }
   object State {
     

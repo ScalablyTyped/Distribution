@@ -2,19 +2,17 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The base class for parameters used in the ASPxHtmlEditor's client-side commands.
   */
-@js.native
 trait ASPxClientHtmlEditorCommandArguments extends StObject {
   
   /**
     * Gets the currently selected element in the ASPxHtmlEditor.
     */
-  var selectedElement: js.Any = js.native
+  var selectedElement: js.Any
 }
 object ASPxClientHtmlEditorCommandArguments {
   

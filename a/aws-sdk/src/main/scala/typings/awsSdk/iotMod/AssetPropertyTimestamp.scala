@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetPropertyTimestamp extends StObject {
   
   /**
     * Optional. A string that contains the nanosecond time offset. Accepts substitution templates.
     */
-  var offsetInNanos: js.UndefOr[AssetPropertyOffsetInNanos] = js.native
+  var offsetInNanos: js.UndefOr[AssetPropertyOffsetInNanos] = js.undefined
   
   /**
     * A string that contains the time in seconds since epoch. Accepts substitution templates.
     */
-  var timeInSeconds: AssetPropertyTimeInSeconds = js.native
+  var timeInSeconds: AssetPropertyTimeInSeconds
 }
 object AssetPropertyTimestamp {
   

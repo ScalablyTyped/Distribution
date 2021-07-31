@@ -3,21 +3,19 @@ package typings.box2d.Box2D.Collision
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait b2RayCastOutput extends StObject {
   
   /**
     * The fraction between p1 and p2 that the collision occurs at.
     **/
-  var fraction: Double = js.native
+  var fraction: Double
   
   /**
     * The normal at the point of collision.
     **/
-  var normal: b2Vec2 = js.native
+  var normal: b2Vec2
 }
 object b2RayCastOutput {
   

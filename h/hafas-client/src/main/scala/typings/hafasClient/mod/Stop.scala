@@ -3,48 +3,46 @@ package typings.hafasClient.mod
 import typings.hafasClient.hafasClientStrings.stop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A stop is a single small point or structure at which vehicles stop.
   * A stop always belongs to a station. It may for example be a sign, a basic shelter or a railway platform.
   */
-@js.native
 trait Stop extends StObject {
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var entrances: js.UndefOr[js.Array[Location]] = js.native
+  var entrances: js.UndefOr[js.Array[Location]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var ids: js.UndefOr[Ids] = js.native
+  var ids: js.UndefOr[Ids] = js.undefined
   
-  var isMeta: js.UndefOr[Boolean] = js.native
+  var isMeta: js.UndefOr[Boolean] = js.undefined
   
-  var lines: js.UndefOr[js.Array[Line]] = js.native
+  var lines: js.UndefOr[js.Array[Line]] = js.undefined
   
-  var loadFactor: js.UndefOr[String] = js.native
+  var loadFactor: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var products: js.UndefOr[Products] = js.native
+  var products: js.UndefOr[Products] = js.undefined
   
-  var reisezentrumOpeningHours: js.UndefOr[ReisezentrumOpeningHours] = js.native
+  var reisezentrumOpeningHours: js.UndefOr[ReisezentrumOpeningHours] = js.undefined
   
-  var transitAuthority: js.UndefOr[String] = js.native
+  var transitAuthority: js.UndefOr[String] = js.undefined
   
-  var `type`: stop = js.native
+  var `type`: stop
 }
 object Stop {
   
   @scala.inline
-  def apply(`type`: stop): Stop = {
+  def apply(): Stop = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("stop")
     __obj.asInstanceOf[Stop]
   }
   

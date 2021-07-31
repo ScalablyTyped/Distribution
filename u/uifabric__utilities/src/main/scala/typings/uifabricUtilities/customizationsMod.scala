@@ -3,7 +3,6 @@ package typings.uifabricUtilities
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customizationsMod {
@@ -35,61 +34,49 @@ object customizationsMod {
       * applying many customizations at once.
       * @param suppressUpdate - Do not raise the change event at the end, preventing all updates
       */
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.applyBatchedUpdates")
-    @js.native
-    def applyBatchedUpdates(code: js.Function0[Unit]): Unit = js.native
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.applyBatchedUpdates")
-    @js.native
-    def applyBatchedUpdates(code: js.Function0[Unit], suppressUpdate: Boolean): Unit = js.native
+    @scala.inline
+    def applyBatchedUpdates(code: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def applyBatchedUpdates(code: js.Function0[Unit], suppressUpdate: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyBatchedUpdates")(code.asInstanceOf[js.Any], suppressUpdate.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Apply Customizations to a particular named scope, like a component.
       * @example Customizations.applyScopedSettings('Nav', \{ styles: () =\> \{\} \});
       */
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.applyScopedSettings")
-    @js.native
-    def applyScopedSettings(scopeName: String, settings: ISettings): Unit = js.native
+    @scala.inline
+    def applyScopedSettings(scopeName: String, settings: ISettings): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("applyScopedSettings")(scopeName.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /** Apply global Customization settings.
       * @example Customizations.applySettings(\{ theme: \{...\} \});
       */
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.applySettings")
-    @js.native
-    def applySettings(settings: ISettings): Unit = js.native
+    @scala.inline
+    def applySettings(settings: ISettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("applySettings")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.getSettings")
-    @js.native
-    def getSettings(properties: js.Array[String]): js.Any = js.native
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.getSettings")
-    @js.native
-    def getSettings(properties: js.Array[String], scopeName: js.UndefOr[scala.Nothing], localSettings: ICustomizations): js.Any = js.native
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.getSettings")
-    @js.native
-    def getSettings(properties: js.Array[String], scopeName: String): js.Any = js.native
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.getSettings")
-    @js.native
-    def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = js.native
+    @scala.inline
+    def getSettings(properties: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def getSettings(properties: js.Array[String], scopeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getSettings(properties: js.Array[String], scopeName: String, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def getSettings(properties: js.Array[String], scopeName: Unit, localSettings: ICustomizations): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getSettings")(properties.asInstanceOf[js.Any], scopeName.asInstanceOf[js.Any], localSettings.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.observe")
-    @js.native
-    def observe(onChange: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def observe(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("observe")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.reset")
-    @js.native
-    def reset(): Unit = js.native
+    @scala.inline
+    def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
     
-    @JSImport("@uifabric/utilities/lib/customizations/Customizations", "Customizations.unobserve")
-    @js.native
-    def unobserve(onChange: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def unobserve(onChange: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unobserve")(onChange.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
-  @js.native
   trait ICustomizations extends StObject {
     
-    var inCustomizerContext: js.UndefOr[Boolean] = js.native
+    var inCustomizerContext: js.UndefOr[Boolean] = js.undefined
     
-    var scopedSettings: StringDictionary[ISettings] = js.native
+    var scopedSettings: StringDictionary[ISettings]
     
-    var settings: ISettings = js.native
+    var settings: ISettings
   }
   object ICustomizations {
     

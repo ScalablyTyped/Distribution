@@ -15,16 +15,14 @@ import typings.uifabricMergeStyles.istylefunctionMod.IStyleFunctionOrObject
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorSliderTypesMod {
   
-  @js.native
   trait IColorSlider extends StObject {
     
     /** Current value of the slider. */
-    var value: Double = js.native
+    var value: Double
   }
   object IColorSlider {
     
@@ -42,23 +40,22 @@ object colorSliderTypesMod {
     }
   }
   
-  @js.native
   trait IColorSliderProps extends StObject {
     
     /**
       * Label of the ColorSlider for the benefit of screen reader users.
       */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /**
       * Additional CSS class(es) to apply to the ColorSlider.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Gets the component ref.
       */
-    var componentRef: js.UndefOr[IRefObject[IColorSlider]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IColorSlider]] = js.undefined
     
     /**
       * If true, the slider represents an alpha slider and will display a gray checkered pattern
@@ -66,19 +63,19 @@ object colorSliderTypesMod {
       * @defaultvalue false
       * @deprecated Use `type`
       */
-    var isAlpha: js.UndefOr[Boolean] = js.native
+    var isAlpha: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Maximum value of the slider.
       * @deprecated Will be 100 for alpha or transparency sliders, or 359 for hue sliders.
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Minimum value of the slider.
       * @deprecated Will always be 0
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback issued when the value changes.
@@ -89,45 +86,45 @@ object colorSliderTypesMod {
           /* newValue */ js.UndefOr[Double], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Hex color to use when rendering an alpha or transparency slider's overlay, *without* the `#`.
       */
-    var overlayColor: js.UndefOr[String] = js.native
+    var overlayColor: js.UndefOr[String] = js.undefined
     
     /**
       * Custom style for the overlay element.
       * @deprecated Use `overlayColor` instead
       */
-    var overlayStyle: js.UndefOr[CSSProperties] = js.native
+    var overlayStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Call to provide customized styling that will layer on top of the variant rules.
       */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IColorSliderStyleProps, IColorSliderStyles]] = js.undefined
     
     /**
       * Theme (provided through customization).
       */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * CSS-compatible string for the color of the thumb element.
       * @deprecated Not used. Use `styles.sliderThumb` instead.
       */
-    var thumbColor: js.UndefOr[String] = js.native
+    var thumbColor: js.UndefOr[String] = js.undefined
     
     /**
       * Type of slider to display.
       * @defaultvalue 'hue'
       */
-    var `type`: js.UndefOr[hue | alpha | transparency] = js.native
+    var `type`: js.UndefOr[hue | alpha | transparency] = js.undefined
     
     /**
       * Current value of the slider.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object IColorSliderProps {
     
@@ -235,19 +232,18 @@ object colorSliderTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider.types.IColorSliderProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/ColorPicker/ColorSlider/ColorSlider.types.IColorSliderProps, 'className' | 'type'> & {  isAlpha :boolean | undefined} */
-  @js.native
   trait IColorSliderStyleProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * @deprecated Use `type`
       */
-    var isAlpha: js.UndefOr[Boolean] = js.native
+    var isAlpha: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
     
-    var `type`: js.UndefOr[hue | alpha | transparency] = js.native
+    var `type`: js.UndefOr[hue | alpha | transparency] = js.undefined
   }
   object IColorSliderStyleProps {
     
@@ -283,23 +279,22 @@ object colorSliderTypesMod {
     }
   }
   
-  @js.native
   trait IColorSliderStyles extends StObject {
     
     /**
       * Style set for the root element.
       */
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the overlay element.
       */
-    var sliderOverlay: js.UndefOr[IStyle] = js.native
+    var sliderOverlay: js.UndefOr[IStyle] = js.undefined
     
     /**
       * Style set for the draggable thumb element.
       */
-    var sliderThumb: js.UndefOr[IStyle] = js.native
+    var sliderThumb: js.UndefOr[IStyle] = js.undefined
   }
   object IColorSliderStyles {
     

@@ -6,21 +6,19 @@ import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsCreateInstallationAccessTokenResponseData extends StObject {
   
-  var expires_at: String = js.native
+  var expires_at: String
   
-  var permissions: Contents = js.native
+  var permissions: Contents
   
-  var repositories: js.Array[Allowmergecommit] = js.native
+  var repositories: js.Array[Allowmergecommit]
   
-  var repository_selection: all | selected = js.native
+  var repository_selection: all | selected
   
-  var token: String = js.native
+  var token: String
 }
 object AppsCreateInstallationAccessTokenResponseData {
   

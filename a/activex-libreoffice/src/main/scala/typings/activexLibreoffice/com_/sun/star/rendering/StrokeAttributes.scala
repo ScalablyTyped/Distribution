@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Path stroking is the process of drawing a polygon with a thick pen. The various attributes contained in this structure can be used to customize that
   * process.
   */
-@js.native
 trait StrokeAttributes extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait StrokeAttributes extends StObject {
     * forth. Give zero elements here for solid strokes. This array always have an even number of elements, with zero, as usual, counting as even here.
     * Furthermore, each entry in this array must have a value that is positive (or 0.0)
     */
-  var DashArray: SafeArray[Double] = js.native
+  var DashArray: SafeArray[Double]
   
   /**
     * The end shape of the stroke.
@@ -30,7 +28,7 @@ trait StrokeAttributes extends StObject {
     * The end point is the last point of every polygon of the path poly-polygon.
     * @see PathCapType
     */
-  var EndCapType: Double = js.native
+  var EndCapType: Double
   
   /**
     * The join shape of the stroke.
@@ -40,7 +38,7 @@ trait StrokeAttributes extends StObject {
     * specified here.
     * @see PathJoinType
     */
-  var JoinType: Double = js.native
+  var JoinType: Double
   
   /**
     * Array of line widths and spacings for multiple-line strokes.
@@ -50,7 +48,7 @@ trait StrokeAttributes extends StObject {
     * path to the end point. The second element specifies the space between the first line and the second line, and so forth. If the array ends with a
     * spacing, this spacing is included in the total width of the multiple-line stroke. That is, the stroke becomes asymmetric.
     */
-  var LineArray: SafeArray[Double] = js.native
+  var LineArray: SafeArray[Double]
   
   /**
     * Determines the maximal length of the diagonal in mitered corners.
@@ -62,7 +60,7 @@ trait StrokeAttributes extends StObject {
     * Before performing the actual comparison, implementations will multiply the MiterLimit with the current StrokeWidth, such that, with phi being the
     * angle between the two joining segments, MiterLimit=1/sin(phi/2.0).
     */
-  var MiterLimit: Double = js.native
+  var MiterLimit: Double
   
   /**
     * The start shape of the stroke.
@@ -70,14 +68,14 @@ trait StrokeAttributes extends StObject {
     * The start point is the first point of every polygon of the path poly-polygon.
     * @see PathCapType
     */
-  var StartCapType: Double = js.native
+  var StartCapType: Double
   
   /**
     * Defines the width of the stroke, measured in user coordinate space.
     *
     * This value must be positive (or 0.0)
     */
-  var StrokeWidth: Double = js.native
+  var StrokeWidth: Double
 }
 object StrokeAttributes {
   

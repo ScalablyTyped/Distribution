@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchGroupOptions...
   */
-@js.native
 trait ISearchGroupOptions extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ISearchGroupOptions extends StObject {
     * The default value is -1;
     * all values are returned.
     */
-  var qCount: Double = js.native
+  var qCount: Double
   
   /**
     * Type of the group. Can be:
@@ -25,13 +23,13 @@ trait ISearchGroupOptions extends StObject {
     * - DatasetType: type of the search group item is a dataset association.
     *   Groups have this type when you are calling SearchResults.
     */
-  var qGroupType: js.Any = js.native
+  var qGroupType: js.Any
   
   /**
     * Position starting from 0.
     * >> The default value is 0.
     */
-  var qOffset: Double = js.native
+  var qOffset: Double
 }
 object ISearchGroupOptions {
   

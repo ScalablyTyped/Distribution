@@ -2,91 +2,89 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait M3u8Settings extends StObject {
   
   /**
     * The number of audio frames to insert for each PES packet.
     */
-  var AudioFramesPerPes: js.UndefOr[integerMin0Max2147483647] = js.native
+  var AudioFramesPerPes: js.UndefOr[integerMin0Max2147483647] = js.undefined
   
   /**
     * Packet Identifier (PID) of the elementary audio stream(s) in the transport stream. Multiple values are accepted, and can be entered in ranges and/or by comma separation.
     */
-  var AudioPids: js.UndefOr[listOfIntegerMin32Max8182] = js.native
+  var AudioPids: js.UndefOr[listOfIntegerMin32Max8182] = js.undefined
   
   /**
     * If INSERT, Nielsen inaudible tones for media tracking will be detected in the input audio and an equivalent ID3 tag will be inserted in the output.
     */
-  var NielsenId3: js.UndefOr[M3u8NielsenId3] = js.native
+  var NielsenId3: js.UndefOr[M3u8NielsenId3] = js.undefined
   
   /**
     * The number of milliseconds between instances of this table in the output transport stream.
     */
-  var PatInterval: js.UndefOr[integerMin0Max1000] = js.native
+  var PatInterval: js.UndefOr[integerMin0Max1000] = js.undefined
   
   /**
     * When set to PCR_EVERY_PES_PACKET a Program Clock Reference value is inserted for every Packetized Elementary Stream (PES) header. This parameter is effective only when the PCR PID is the same as the video or audio elementary stream.
     */
-  var PcrControl: js.UndefOr[M3u8PcrControl] = js.native
+  var PcrControl: js.UndefOr[M3u8PcrControl] = js.undefined
   
   /**
     * Packet Identifier (PID) of the Program Clock Reference (PCR) in the transport stream. When no value is given, the encoder will assign the same value as the Video PID.
     */
-  var PcrPid: js.UndefOr[integerMin32Max8182] = js.native
+  var PcrPid: js.UndefOr[integerMin32Max8182] = js.undefined
   
   /**
     * The number of milliseconds between instances of this table in the output transport stream.
     */
-  var PmtInterval: js.UndefOr[integerMin0Max1000] = js.native
+  var PmtInterval: js.UndefOr[integerMin0Max1000] = js.undefined
   
   /**
     * Packet Identifier (PID) for the Program Map Table (PMT) in the transport stream.
     */
-  var PmtPid: js.UndefOr[integerMin32Max8182] = js.native
+  var PmtPid: js.UndefOr[integerMin32Max8182] = js.undefined
   
   /**
     * Packet Identifier (PID) of the private metadata stream in the transport stream.
     */
-  var PrivateMetadataPid: js.UndefOr[integerMin32Max8182] = js.native
+  var PrivateMetadataPid: js.UndefOr[integerMin32Max8182] = js.undefined
   
   /**
     * The value of the program number field in the Program Map Table.
     */
-  var ProgramNumber: js.UndefOr[integerMin0Max65535] = js.native
+  var ProgramNumber: js.UndefOr[integerMin0Max65535] = js.undefined
   
   /**
     * Packet Identifier (PID) of the SCTE-35 stream in the transport stream.
     */
-  var Scte35Pid: js.UndefOr[integerMin32Max8182] = js.native
+  var Scte35Pid: js.UndefOr[integerMin32Max8182] = js.undefined
   
   /**
     * For SCTE-35 markers from your input-- Choose Passthrough (PASSTHROUGH) if you want SCTE-35 markers that appear in your input to also appear in this output. Choose None (NONE) if you don't want SCTE-35 markers in this output. For SCTE-35 markers from an ESAM XML document-- Choose None (NONE) if you don't want manifest conditioning. Choose Passthrough (PASSTHROUGH) and choose Ad markers (adMarkers) if you do want manifest conditioning. In both cases, also provide the ESAM XML as a string in the setting Signal processing notification XML (sccXml).
     */
-  var Scte35Source: js.UndefOr[M3u8Scte35Source] = js.native
+  var Scte35Source: js.UndefOr[M3u8Scte35Source] = js.undefined
   
   /**
     * Applies only to HLS outputs. Use this setting to specify whether the service inserts the ID3 timed metadata from the input in this output.
     */
-  var TimedMetadata: js.UndefOr[typings.awsSdk.mediaconvertMod.TimedMetadata] = js.native
+  var TimedMetadata: js.UndefOr[typings.awsSdk.mediaconvertMod.TimedMetadata] = js.undefined
   
   /**
     * Packet Identifier (PID) of the timed metadata stream in the transport stream.
     */
-  var TimedMetadataPid: js.UndefOr[integerMin32Max8182] = js.native
+  var TimedMetadataPid: js.UndefOr[integerMin32Max8182] = js.undefined
   
   /**
     * The value of the transport stream ID field in the Program Map Table.
     */
-  var TransportStreamId: js.UndefOr[integerMin0Max65535] = js.native
+  var TransportStreamId: js.UndefOr[integerMin0Max65535] = js.undefined
   
   /**
     * Packet Identifier (PID) of the elementary video stream in the transport stream.
     */
-  var VideoPid: js.UndefOr[integerMin32Max8182] = js.native
+  var VideoPid: js.UndefOr[integerMin32Max8182] = js.undefined
 }
 object M3u8Settings {
   

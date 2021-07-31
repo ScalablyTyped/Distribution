@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellRange extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Borders: typings.activexPowerpoint.PowerPoint.Borders = js.native
+  val Borders: typings.activexPowerpoint.PowerPoint.Borders
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): Cell = js.native
+  def Item(Index: Double): Cell
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.CellRange_typekey")
-  var PowerPointDotCellRange_typekey: CellRange = js.native
+  var PowerPointDotCellRange_typekey: CellRange
 }
 object CellRange {
   

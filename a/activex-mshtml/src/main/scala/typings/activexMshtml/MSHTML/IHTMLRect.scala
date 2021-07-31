@@ -2,22 +2,20 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHTMLRect extends StObject {
   
   @JSName("MSHTML.IHTMLRect_typekey")
-  var MSHTMLDotIHTMLRect_typekey: IHTMLRect = js.native
+  var MSHTMLDotIHTMLRect_typekey: IHTMLRect
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var right: Double = js.native
+  var right: Double
   
-  var top: Double = js.native
+  var top: Double
 }
 object IHTMLRect {
   

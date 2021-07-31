@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @implements IPoint
   */
 @js.native
-trait ObservablePoint extends IPoint {
+trait ObservablePoint
+  extends StObject
+     with IPoint {
   
-  def clone(cb: js.UndefOr[scala.Nothing], scope: js.Any): ObservablePoint = js.native
-  def clone(cb: js.Function1[/* repeated */ js.Any, _]): ObservablePoint = js.native
-  def clone(cb: js.Function1[/* repeated */ js.Any, _], scope: js.Any): ObservablePoint = js.native
+  def clone(cb: js.Function1[/* repeated */ js.Any, js.Any]): ObservablePoint = js.native
+  def clone(cb: js.Function1[/* repeated */ js.Any, js.Any], scope: js.Any): ObservablePoint = js.native
+  def clone(cb: Unit, scope: js.Any): ObservablePoint = js.native
 }

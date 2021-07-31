@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindow extends StObject {
   
   /** Daily cycle. */
-  var dailyCycle: js.UndefOr[DailyCycle] = js.native
+  var dailyCycle: js.UndefOr[DailyCycle] = js.undefined
   
   /** Weekly cycle. */
-  var weeklyCycle: js.UndefOr[WeeklyCycle] = js.native
+  var weeklyCycle: js.UndefOr[WeeklyCycle] = js.undefined
 }
 object MaintenanceWindow {
   

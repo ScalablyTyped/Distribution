@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGameSessionOutput extends StObject {
   
   /**
     * The updated game session metadata.
     */
-  var GameSession: js.UndefOr[typings.awsSdk.gameliftMod.GameSession] = js.native
+  var GameSession: js.UndefOr[typings.awsSdk.gameliftMod.GameSession] = js.undefined
 }
 object UpdateGameSessionOutput {
   

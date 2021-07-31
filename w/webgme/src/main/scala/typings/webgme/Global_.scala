@@ -8,7 +8,6 @@ import typings.webgme.GmePanel.PanelManager
 import typings.webgme.Visualize.Visualizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Global_ {
@@ -39,16 +38,15 @@ object Global_ {
     def warn(fmt: String, msg: String): Unit = js.native
   }
   
-  @js.native
   trait History extends StObject {
     
-    var configurable: Boolean = js.native
+    var configurable: Boolean
     
-    var enumerable: Boolean = js.native
+    var enumerable: Boolean
     
-    var value: Boolean = js.native
+    var value: Boolean
     
-    var writable: Boolean = js.native
+    var writable: Boolean
   }
   object History {
     
@@ -117,10 +115,9 @@ object Global_ {
   
   type StateHandler = js.Function2[/* model */ js.Any, /* change */ String, Unit]
   
-  @js.native
   trait StateOptions extends StObject {
     
-    var silent: Boolean = js.native
+    var silent: Boolean
   }
   object StateOptions {
     
@@ -138,10 +135,9 @@ object Global_ {
     }
   }
   
-  @js.native
   trait UserInfo extends StObject {
     
-    var _id: String = js.native
+    var _id: String
   }
   object UserInfo {
     
@@ -159,32 +155,31 @@ object Global_ {
     }
   }
   
-  @js.native
   trait WebGmeGlobal extends StObject {
     
-    var GitHubVersion: js.UndefOr[String] = js.native
+    var GitHubVersion: js.UndefOr[String] = js.undefined
     
-    var KeyboardManager: js.UndefOr[typings.webgme.Global_.KeyboardManager] = js.native
+    var KeyboardManager: js.UndefOr[typings.webgme.Global_.KeyboardManager] = js.undefined
     
-    var LayoutManager: js.UndefOr[typings.webgme.GmePanel.LayoutManager] = js.native
+    var LayoutManager: js.UndefOr[typings.webgme.GmePanel.LayoutManager] = js.undefined
     
-    var NpmVersion: js.UndefOr[String] = js.native
+    var NpmVersion: js.UndefOr[String] = js.undefined
     
-    var PanelManager: js.UndefOr[typings.webgme.GmePanel.PanelManager] = js.native
+    var PanelManager: js.UndefOr[typings.webgme.GmePanel.PanelManager] = js.undefined
     
-    var State: js.UndefOr[typings.webgme.Global_.State] = js.native
+    var State: js.UndefOr[typings.webgme.Global_.State] = js.undefined
     
-    var Toolbar: js.UndefOr[typings.webgme.Toolbar.Toolbar] = js.native
+    var Toolbar: js.UndefOr[typings.webgme.Toolbar.Toolbar] = js.undefined
     
-    def getConfig(): typings.webgme.GmeConfig.GmeConfig = js.native
+    def getConfig(): typings.webgme.GmeConfig.GmeConfig
     
-    var gmeConfig: typings.webgme.GmeConfig.GmeConfig = js.native
+    var gmeConfig: typings.webgme.GmeConfig.GmeConfig
     
-    var history: js.UndefOr[History] = js.native
+    var history: js.UndefOr[History] = js.undefined
     
-    var userInfo: js.UndefOr[UserInfo] = js.native
+    var userInfo: js.UndefOr[UserInfo] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object WebGmeGlobal {
     

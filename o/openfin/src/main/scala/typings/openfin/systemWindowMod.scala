@@ -2,31 +2,29 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object systemWindowMod {
   
-  @js.native
   trait WindowDetail extends StObject {
     
-    var bottom: Double = js.native
+    var bottom: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var isShowing: Boolean = js.native
+    var isShowing: Boolean
     
-    var left: Double = js.native
+    var left: Double
     
-    var name: String = js.native
+    var name: String
     
-    var right: Double = js.native
+    var right: Double
     
-    var state: String = js.native
+    var state: String
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object WindowDetail {
     
@@ -78,14 +76,13 @@ object systemWindowMod {
     }
   }
   
-  @js.native
   trait WindowInfo extends StObject {
     
-    var childWindows: js.Array[WindowDetail] = js.native
+    var childWindows: js.Array[WindowDetail]
     
-    var mainWindow: WindowDetail = js.native
+    var mainWindow: WindowDetail
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object WindowInfo {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Row extends StObject {
   
   /** The original label of this row. */
-  var actualLabel: js.UndefOr[String] = js.native
+  var actualLabel: js.UndefOr[String] = js.undefined
   
   /** Info describing predicted label distribution. */
-  var entries: js.UndefOr[js.Array[Entry]] = js.native
+  var entries: js.UndefOr[js.Array[Entry]] = js.undefined
 }
 object Row {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.tslint.ruleMod.RuleFailure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterMod {
@@ -24,7 +23,9 @@ object formatterMod {
   }
   
   @js.native
-  trait FormatterConstructor extends Instantiable0[IFormatter]
+  trait FormatterConstructor
+    extends StObject
+       with Instantiable0[IFormatter]
   
   @js.native
   trait IFormatter extends StObject {
@@ -36,38 +37,37 @@ object formatterMod {
       * @param fileNames All of the file paths that were linted
       */
     def format(failures: js.Array[RuleFailure]): String = js.native
-    def format(failures: js.Array[RuleFailure], fixes: js.UndefOr[scala.Nothing], fileNames: js.Array[String]): String = js.native
     def format(failures: js.Array[RuleFailure], fixes: js.Array[RuleFailure]): String = js.native
     def format(failures: js.Array[RuleFailure], fixes: js.Array[RuleFailure], fileNames: js.Array[String]): String = js.native
+    def format(failures: js.Array[RuleFailure], fixes: Unit, fileNames: js.Array[String]): String = js.native
   }
   
-  @js.native
   trait IFormatterMetadata extends StObject {
     
     /**
       * Sample output from the formatter.
       */
-    var consumer: ConsumerType = js.native
+    var consumer: ConsumerType
     
     /**
       * A short, one line description of what the formatter does.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * More elaborate details about the formatter.
       */
-    var descriptionDetails: js.UndefOr[String] = js.native
+    var descriptionDetails: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the formatter.
       */
-    var formatterName: String = js.native
+    var formatterName: String
     
     /**
       * Sample output from the formatter.
       */
-    var sample: String = js.native
+    var sample: String
   }
   object IFormatterMetadata {
     

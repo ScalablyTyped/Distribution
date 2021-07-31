@@ -4,28 +4,26 @@ import typings.plotlyJs.plotlyJsStrings.circular
 import typings.plotlyJs.plotlyJsStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PolarLayout> */
-@js.native
 trait PartialPolarLayout extends StObject {
   
-  var angularaxis: js.UndefOr[PartialLayoutAxis] = js.native
+  var angularaxis: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var bgcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var domain: js.UndefOr[PartialDomain] = js.native
+  var domain: js.UndefOr[PartialDomain] = js.undefined
   
-  var gridshape: js.UndefOr[circular | linear] = js.native
+  var gridshape: js.UndefOr[circular | linear] = js.undefined
   
-  var hole: js.UndefOr[Double] = js.native
+  var hole: js.UndefOr[Double] = js.undefined
   
-  var radialaxis: js.UndefOr[PartialLayoutAxis] = js.native
+  var radialaxis: js.UndefOr[PartialLayoutAxis] = js.undefined
   
-  var sector: js.UndefOr[js.Array[Double]] = js.native
+  var sector: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var uirevision: js.UndefOr[String | Double] = js.native
+  var uirevision: js.UndefOr[String | Double] = js.undefined
 }
 object PartialPolarLayout {
   

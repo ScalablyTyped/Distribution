@@ -4,7 +4,6 @@ import typings.angularCompiler.astMod.ParsedEventType
 import typings.angularCompiler.r3AstMod.BoundEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "TmplAstBoundEvent")
@@ -51,7 +50,10 @@ class TmplAstBoundEvent protected ()
 /* static members */
 object TmplAstBoundEvent {
   
-  @JSImport("@angular/compiler/public_api", "TmplAstBoundEvent.fromParsedEvent")
+  @JSImport("@angular/compiler/public_api", "TmplAstBoundEvent")
   @js.native
-  def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): BoundEvent = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fromParsedEvent(event: typings.angularCompiler.astMod.ParsedEvent): BoundEvent = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEvent]
 }

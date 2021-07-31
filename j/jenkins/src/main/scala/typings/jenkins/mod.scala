@@ -15,35 +15,34 @@ import typings.jenkins.anon.Log
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jenkins", JSImport.Namespace)
-  @js.native
-  def apply(): JenkinsAPI = js.native
-  @JSImport("jenkins", JSImport.Namespace)
-  @js.native
-  def apply(opts: BaseUrl): JenkinsAPI = js.native
-  @JSImport("jenkins", JSImport.Namespace)
-  @js.native
-  def apply(opts: CrumbIssuer): JenkinsPromisifiedAPI = js.native
+  @scala.inline
+  def apply(): JenkinsAPI = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[JenkinsAPI]
+  @scala.inline
+  def apply(opts: BaseUrl): JenkinsAPI = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[JenkinsAPI]
+  @scala.inline
+  def apply(opts: CrumbIssuer): JenkinsPromisifiedAPI = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[JenkinsPromisifiedAPI]
   
+  @JSImport("jenkins", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait JenkinsAPI extends StObject {
     
-    var build: Get = js.native
+    var build: Get
     
-    def info(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def info(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit
     
-    var job: Build = js.native
+    var job: Build
     
-    var node: Config = js.native
+    var node: Config
     
-    var queue: Cancel = js.native
+    var queue: Cancel
     
-    var view: Add = js.native
+    var view: Add
   }
   object JenkinsAPI {
     
@@ -83,16 +82,15 @@ object mod {
     }
   }
   
-  @js.native
   trait JenkinsClientOptions extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var crumbIssuer: js.UndefOr[Boolean] = js.native
+    var crumbIssuer: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var promisify: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var promisify: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
   }
   object JenkinsClientOptions {
     
@@ -124,35 +122,34 @@ object mod {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setPromisify(value: Boolean | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
+      def setPromisify(value: Boolean | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "promisify", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPromisifyFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "promisify", js.Any.fromFunction1(value))
+      def setPromisifyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "promisify", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPromisifyUndefined: Self = StObject.set(x, "promisify", js.undefined)
     }
   }
   
-  @js.native
   trait JenkinsPromisifiedAPI extends StObject {
     
-    var build: Log = js.native
+    var build: Log
     
-    def info(): js.Promise[_] = js.native
+    def info(): js.Promise[js.Any]
     
-    var job: Copy = js.native
+    var job: Copy
     
-    var node: Create = js.native
+    var node: Create
     
-    var queue: Item = js.native
+    var queue: Item
     
-    var view: Destroy = js.native
+    var view: Destroy
   }
   object JenkinsPromisifiedAPI {
     
     @scala.inline
-    def apply(build: Log, info: () => js.Promise[_], job: Copy, node: Create, queue: Item, view: Destroy): JenkinsPromisifiedAPI = {
+    def apply(build: Log, info: () => js.Promise[js.Any], job: Copy, node: Create, queue: Item, view: Destroy): JenkinsPromisifiedAPI = {
       val __obj = js.Dynamic.literal(build = build.asInstanceOf[js.Any], info = js.Any.fromFunction0(info), job = job.asInstanceOf[js.Any], node = node.asInstanceOf[js.Any], queue = queue.asInstanceOf[js.Any], view = view.asInstanceOf[js.Any])
       __obj.asInstanceOf[JenkinsPromisifiedAPI]
     }
@@ -164,7 +161,7 @@ object mod {
       def setBuild(value: Log): Self = StObject.set(x, "build", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInfo(value: () => js.Promise[_]): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
+      def setInfo(value: () => js.Promise[js.Any]): Self = StObject.set(x, "info", js.Any.fromFunction0(value))
       
       @scala.inline
       def setJob(value: Copy): Self = StObject.set(x, "job", value.asInstanceOf[js.Any])
@@ -180,14 +177,13 @@ object mod {
     }
   }
   
-  @js.native
   trait JobBuildOptions extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var parameters: js.UndefOr[js.Any] = js.native
+    var parameters: js.UndefOr[js.Any] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object JobBuildOptions {
     

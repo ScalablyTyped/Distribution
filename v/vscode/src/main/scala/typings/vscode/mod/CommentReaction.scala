@@ -2,31 +2,29 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentReaction extends StObject {
   
   /**
     * Whether the [author](CommentAuthorInformation) of the comment has reacted to this reaction
     */
-  val authorHasReacted: Boolean = js.native
+  val authorHasReacted: Boolean
   
   /**
     * The number of users who have reacted to this reaction
     */
-  val count: Double = js.native
+  val count: Double
   
   /**
     * Icon for the reaction shown in UI.
     */
-  val iconPath: String | Uri = js.native
+  val iconPath: String | Uri
   
   /**
     * The human-readable label for the reaction
     */
-  val label: String = js.native
+  val label: String
 }
 object CommentReaction {
   

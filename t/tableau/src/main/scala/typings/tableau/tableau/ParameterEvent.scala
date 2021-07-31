@@ -2,17 +2,17 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParameterEvent extends TableauEvent {
+trait ParameterEvent
+  extends StObject
+     with TableauEvent {
   
   /** Gets the Parameter object that triggered the event. */
-  def getParameterAsync(): js.Promise[Parameter] = js.native
+  def getParameterAsync(): js.Promise[Parameter]
   
   /** Gets the name of the parameter that changed. */
-  def getParameterName(): String = js.native
+  def getParameterName(): String
 }
 object ParameterEvent {
   

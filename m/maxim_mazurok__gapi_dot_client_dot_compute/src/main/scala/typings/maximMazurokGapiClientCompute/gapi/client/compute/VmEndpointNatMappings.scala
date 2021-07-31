@@ -2,16 +2,14 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VmEndpointNatMappings extends StObject {
   
   /** Name of the VM instance which the endpoint belongs to */
-  var instanceName: js.UndefOr[String] = js.native
+  var instanceName: js.UndefOr[String] = js.undefined
   
-  var interfaceNatMappings: js.UndefOr[js.Array[VmEndpointNatMappingsInterfaceNatMappings]] = js.native
+  var interfaceNatMappings: js.UndefOr[js.Array[VmEndpointNatMappingsInterfaceNatMappings]] = js.undefined
 }
 object VmEndpointNatMappings {
   

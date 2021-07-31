@@ -5,14 +5,15 @@ import typings.circuitBreakerJs.circuitBreakerJsNumbers.`1`
 import typings.circuitBreakerJs.circuitBreakerJsNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("circuit-breaker-js", JSImport.Namespace)
   @js.native
-  class ^ () extends CircuitBreaker {
+  class ^ ()
+    extends StObject
+       with CircuitBreaker {
     def this(options: Options) = this()
   }
   @JSImport("circuit-breaker-js", JSImport.Namespace)
@@ -58,14 +59,13 @@ object mod {
     def unforce(): Unit = js.native
   }
   
-  @js.native
   trait Metrics extends StObject {
     
-    var errorCount: Double = js.native
+    var errorCount: Double
     
-    var errorPercentage: Double = js.native
+    var errorPercentage: Double
     
-    var totalCount: Double = js.native
+    var totalCount: Double
   }
   object Metrics {
     
@@ -89,22 +89,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var errorThreshold: js.UndefOr[Double] = js.native
+    var errorThreshold: js.UndefOr[Double] = js.undefined
     
-    var numBuckets: js.UndefOr[Double] = js.native
+    var numBuckets: js.UndefOr[Double] = js.undefined
     
-    var onCircuitClose: js.UndefOr[js.Function1[/* m */ Metrics, Unit]] = js.native
+    var onCircuitClose: js.UndefOr[js.Function1[/* m */ Metrics, Unit]] = js.undefined
     
-    var onCircuitOpen: js.UndefOr[js.Function1[/* m */ Metrics, Unit]] = js.native
+    var onCircuitOpen: js.UndefOr[js.Function1[/* m */ Metrics, Unit]] = js.undefined
     
-    var timeoutDuration: js.UndefOr[Double] = js.native
+    var timeoutDuration: js.UndefOr[Double] = js.undefined
     
-    var volumeThreshold: js.UndefOr[Double] = js.native
+    var volumeThreshold: js.UndefOr[Double] = js.undefined
     
-    var windowDuration: js.UndefOr[Double] = js.native
+    var windowDuration: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

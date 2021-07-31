@@ -2,17 +2,17 @@ package typings.extjs.Ext.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISequentialIdGenerator extends IIdGenerator {
+trait ISequentialIdGenerator
+  extends StObject
+     with IIdGenerator {
   
   /** [Config Option] (String) */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Number) */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
 }
 object ISequentialIdGenerator {
   

@@ -14,7 +14,6 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spaceMod extends Shortcut {
@@ -27,22 +26,21 @@ object spaceMod extends Shortcut {
   @js.native
   val LastIndexContext: Context[Double] = js.native
   
-  @js.native
   trait SpaceProps extends StObject {
     
-    var align: js.UndefOr[start | end | center | baseline] = js.native
+    var align: js.UndefOr[start | end | center | baseline] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[SizeType | Double] = js.native
+    var size: js.UndefOr[SizeType | Double] = js.undefined
     
-    var split: js.UndefOr[ReactNode] = js.native
+    var split: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SpaceProps {
     

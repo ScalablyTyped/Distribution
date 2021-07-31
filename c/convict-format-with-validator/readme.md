@@ -11,8 +11,8 @@ Formats 'email', 'ipaddress' and 'url' for convict
 | Full name          | convict-format-with-validator |
 | Keywords           | convict, convict-format, email, ipaddress, url, validator |
 | # releases         | 3 |
-| # dependents       | 4 |
-| # downloads        | 378614 |
+| # dependents       | 7 |
+| # downloads        | 1508733 |
 | # stars            | 0 |
 
 ## Links

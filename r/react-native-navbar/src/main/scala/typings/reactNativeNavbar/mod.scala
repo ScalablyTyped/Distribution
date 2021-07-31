@@ -13,7 +13,6 @@ import typings.reactNativeNavbar.reactNativeNavbarStrings.slide
 import typings.reactNativeNavbar.reactNativeNavbarStrings.tail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,16 +24,15 @@ object mod {
   
   type NavigationBar = Component[NavigationBarProps, js.Object, js.Any]
   
-  @js.native
   trait NavigationBarButton extends StObject {
     
-    var disable: js.UndefOr[Boolean] = js.native
+    var disable: js.UndefOr[Boolean] = js.undefined
     
-    var handler: js.UndefOr[js.Function0[Unit]] = js.native
+    var handler: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object NavigationBarButton {
     
@@ -70,20 +68,19 @@ object mod {
     }
   }
   
-  @js.native
   trait NavigationBarProps extends StObject {
     
-    var leftButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.native
+    var leftButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.undefined
     
-    var rightButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.native
+    var rightButton: js.UndefOr[NavigationBarButton | ReactElement | Null] = js.undefined
     
-    var statusBar: js.UndefOr[StatusBar] = js.native
+    var statusBar: js.UndefOr[StatusBar] = js.undefined
     
-    var style: js.UndefOr[ViewStyle] = js.native
+    var style: js.UndefOr[ViewStyle] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[NavigationBarTitle | ReactElement | Null] = js.native
+    var title: js.UndefOr[NavigationBarTitle | ReactElement | Null] = js.undefined
   }
   object NavigationBarProps {
     
@@ -143,16 +140,15 @@ object mod {
     }
   }
   
-  @js.native
   trait NavigationBarTitle extends StObject {
     
-    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.native
+    var ellipsizeMode: js.UndefOr[head | middle | tail | clip] = js.undefined
     
-    var numberOfLines: js.UndefOr[Double] = js.native
+    var numberOfLines: js.UndefOr[Double] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
   }
   object NavigationBarTitle {
     
@@ -188,18 +184,17 @@ object mod {
     }
   }
   
-  @js.native
   trait StatusBar extends StObject {
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var hideAnimation: js.UndefOr[fade | slide | none] = js.native
+    var hideAnimation: js.UndefOr[fade | slide | none] = js.undefined
     
-    var showAnimation: js.UndefOr[fade | slide | none] = js.native
+    var showAnimation: js.UndefOr[fade | slide | none] = js.undefined
     
-    var style: js.UndefOr[`light-content` | typings.reactNativeNavbar.reactNativeNavbarStrings.default] = js.native
+    var style: js.UndefOr[`light-content` | typings.reactNativeNavbar.reactNativeNavbarStrings.default] = js.undefined
     
-    var tintColor: js.UndefOr[String] = js.native
+    var tintColor: js.UndefOr[String] = js.undefined
   }
   object StatusBar {
     

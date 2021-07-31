@@ -11,8 +11,8 @@ TypeSafe CSS
 | Full name          | typestyle |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 123 |
-| # downloads        | 2629585 |
+| # dependents       | 133 |
+| # downloads        | 3002089 |
 | # stars            | 8 |
 
 ## Links

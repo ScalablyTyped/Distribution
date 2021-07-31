@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudOrgpolicyV1ListPolicy extends StObject {
   
   /** The policy all_values state. */
-  var allValues: js.UndefOr[String] = js.native
+  var allValues: js.UndefOr[String] = js.undefined
   
   /** List of values allowed at this resource. Can only be set if `all_values` is set to `ALL_VALUES_UNSPECIFIED`. */
-  var allowedValues: js.UndefOr[js.Array[String]] = js.native
+  var allowedValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /** List of values denied at this resource. Can only be set if `all_values` is set to `ALL_VALUES_UNSPECIFIED`. */
-  var deniedValues: js.UndefOr[js.Array[String]] = js.native
+  var deniedValues: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Determines the inheritance behavior for this `Policy`. By default, a `ListPolicy` set at a resource supersedes any `Policy` set anywhere up the resource hierarchy. However, if
@@ -43,13 +41,13 @@ trait GoogleCloudOrgpolicyV1ListPolicy extends StObject {
     * `Policy` with: {allowed_values: "under:projects/P3"} {denied_values: "under:folders/F2"} The accepted values at `organizations/foo` are `organizations/O1`, `folders/F1`,
     * `folders/F2`, `projects/P1`, `projects/P2`, `projects/P3`. The accepted values at `projects/bar` are `organizations/O1`, `folders/F1`, `projects/P1`.
     */
-  var inheritFromParent: js.UndefOr[Boolean] = js.native
+  var inheritFromParent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. The Google Cloud Console will try to default to a configuration that matches the value specified in this `Policy`. If `suggested_value` is not set, it will inherit the
     * value specified higher in the hierarchy, unless `inherit_from_parent` is `false`.
     */
-  var suggestedValue: js.UndefOr[String] = js.native
+  var suggestedValue: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudOrgpolicyV1ListPolicy {
   

@@ -5,10 +5,8 @@ import typings.angularCore.mod.Type
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Route extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait Route extends StObject {
     * handlers, in order to determine if the current user is allowed to
     * activate the component. By default, any user can activate.
     */
-  var canActivate: js.UndefOr[js.Array[_]] = js.native
+  var canActivate: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An array of DI tokens used to look up `CanActivateChild()` handlers,
     * in order to determine if the current user is allowed to activate
     * a child of the component. By default, any user can activate a child.
     */
-  var canActivateChild: js.UndefOr[js.Array[_]] = js.native
+  var canActivateChild: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An array of DI tokens used to look up `CanDeactivate()`
@@ -31,48 +29,48 @@ trait Route extends StObject {
     * deactivate the component. By default, any user can deactivate.
     *
     */
-  var canDeactivate: js.UndefOr[js.Array[_]] = js.native
+  var canDeactivate: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An array of DI tokens used to look up `CanLoad()`
     * handlers, in order to determine if the current user is allowed to
     * load the component. By default, any user can load.
     */
-  var canLoad: js.UndefOr[js.Array[_]] = js.native
+  var canLoad: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * An array of child `Route` objects that specifies a nested route
     * configuration.
     */
-  var children: js.UndefOr[Routes] = js.native
+  var children: js.UndefOr[Routes] = js.undefined
   
   /**
     * The component to instantiate when the path matches.
     * Can be empty if child routes specify components.
     */
-  var component: js.UndefOr[Type[_]] = js.native
+  var component: js.UndefOr[Type[js.Any]] = js.undefined
   
   /**
     * Additional developer-defined data provided to the component via
     * `ActivatedRoute`. By default, no additional data is passed.
     */
-  var data: js.UndefOr[Data] = js.native
+  var data: js.UndefOr[Data] = js.undefined
   
   /**
     * An object specifying lazy-loaded child routes.
     */
-  var loadChildren: js.UndefOr[LoadChildren] = js.native
+  var loadChildren: js.UndefOr[LoadChildren] = js.undefined
   
   /**
     * A custom URL-matching function. Cannot be used together with `path`.
     */
-  var matcher: js.UndefOr[UrlMatcher] = js.native
+  var matcher: js.UndefOr[UrlMatcher] = js.undefined
   
   /**
     * Name of a `RouterOutlet` object where the component can be placed
     * when the path matches.
     */
-  var outlet: js.UndefOr[String] = js.native
+  var outlet: js.UndefOr[String] = js.undefined
   
   /**
     * The path to match against. Cannot be used together with a custom `matcher` function.
@@ -81,7 +79,7 @@ trait Route extends StObject {
     * Default is "/" (the root path).
     *
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * The path-matching strategy, one of 'prefix' or 'full'.
@@ -98,19 +96,19 @@ trait Route extends StObject {
     * to the redirect destination, creating an endless loop.
     *
     */
-  var pathMatch: js.UndefOr[String] = js.native
+  var pathMatch: js.UndefOr[String] = js.undefined
   
   /**
     * A URL to redirect to when the path matches.
     * Absolute if the URL begins with a slash (/), otherwise relative to the path URL.
     * When not present, router does not redirect.
     */
-  var redirectTo: js.UndefOr[String] = js.native
+  var redirectTo: js.UndefOr[String] = js.undefined
   
   /**
     * A map of DI tokens used to look up data resolvers. See `Resolve`.
     */
-  var resolve: js.UndefOr[ResolveData] = js.native
+  var resolve: js.UndefOr[ResolveData] = js.undefined
   
   /**
     * Defines when guards and resolvers will be run. One of
@@ -119,7 +117,7 @@ trait Route extends StObject {
     * By default, guards and resolvers run only when the matrix
     * parameters of the route change.
     */
-  var runGuardsAndResolvers: js.UndefOr[RunGuardsAndResolvers] = js.native
+  var runGuardsAndResolvers: js.UndefOr[RunGuardsAndResolvers] = js.undefined
 }
 object Route {
   
@@ -133,10 +131,10 @@ object Route {
   implicit class RouteMutableBuilder[Self <: Route] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCanActivate(value: js.Array[_]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
+    def setCanActivate(value: js.Array[js.Any]): Self = StObject.set(x, "canActivate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCanActivateChild(value: js.Array[_]): Self = StObject.set(x, "canActivateChild", value.asInstanceOf[js.Any])
+    def setCanActivateChild(value: js.Array[js.Any]): Self = StObject.set(x, "canActivateChild", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanActivateChildUndefined: Self = StObject.set(x, "canActivateChild", js.undefined)
@@ -151,7 +149,7 @@ object Route {
     def setCanActivateVarargs(value: js.Any*): Self = StObject.set(x, "canActivate", js.Array(value :_*))
     
     @scala.inline
-    def setCanDeactivate(value: js.Array[_]): Self = StObject.set(x, "canDeactivate", value.asInstanceOf[js.Any])
+    def setCanDeactivate(value: js.Array[js.Any]): Self = StObject.set(x, "canDeactivate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanDeactivateUndefined: Self = StObject.set(x, "canDeactivate", js.undefined)
@@ -160,7 +158,7 @@ object Route {
     def setCanDeactivateVarargs(value: js.Any*): Self = StObject.set(x, "canDeactivate", js.Array(value :_*))
     
     @scala.inline
-    def setCanLoad(value: js.Array[_]): Self = StObject.set(x, "canLoad", value.asInstanceOf[js.Any])
+    def setCanLoad(value: js.Array[js.Any]): Self = StObject.set(x, "canLoad", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCanLoadUndefined: Self = StObject.set(x, "canLoad", js.undefined)
@@ -178,7 +176,7 @@ object Route {
     def setChildrenVarargs(value: Route*): Self = StObject.set(x, "children", js.Array(value :_*))
     
     @scala.inline
-    def setComponent(value: Type[_]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
+    def setComponent(value: Type[js.Any]): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setComponentUndefined: Self = StObject.set(x, "component", js.undefined)

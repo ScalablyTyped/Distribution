@@ -2,21 +2,19 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceFleetStateChangeReason extends StObject {
   
   /**
     * A code corresponding to the reason the state change occurred.
     */
-  var Code: js.UndefOr[InstanceFleetStateChangeReasonCode] = js.native
+  var Code: js.UndefOr[InstanceFleetStateChangeReasonCode] = js.undefined
   
   /**
     * An explanatory message.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object InstanceFleetStateChangeReason {
   

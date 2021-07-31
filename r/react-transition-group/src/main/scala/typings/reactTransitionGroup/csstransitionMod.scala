@@ -6,7 +6,6 @@ import typings.reactTransitionGroup.transitionMod.TransitionProps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object csstransitionMod {
@@ -18,26 +17,25 @@ object csstransitionMod {
   
   type CSSTransition[Ref /* <: js.UndefOr[HTMLElement] */] = Component[CSSTransitionProps[Ref], js.Object, js.Any]
   
-  @js.native
   trait CSSTransitionClassNames extends StObject {
     
-    var appear: js.UndefOr[String] = js.native
+    var appear: js.UndefOr[String] = js.undefined
     
-    var appearActive: js.UndefOr[String] = js.native
+    var appearActive: js.UndefOr[String] = js.undefined
     
-    var appearDone: js.UndefOr[String] = js.native
+    var appearDone: js.UndefOr[String] = js.undefined
     
-    var enter: js.UndefOr[String] = js.native
+    var enter: js.UndefOr[String] = js.undefined
     
-    var enterActive: js.UndefOr[String] = js.native
+    var enterActive: js.UndefOr[String] = js.undefined
     
-    var enterDone: js.UndefOr[String] = js.native
+    var enterDone: js.UndefOr[String] = js.undefined
     
-    var exit: js.UndefOr[String] = js.native
+    var exit: js.UndefOr[String] = js.undefined
     
-    var exitActive: js.UndefOr[String] = js.native
+    var exitActive: js.UndefOr[String] = js.undefined
     
-    var exitDone: js.UndefOr[String] = js.native
+    var exitDone: js.UndefOr[String] = js.undefined
   }
   object CSSTransitionClassNames {
     
@@ -106,5 +104,5 @@ object csstransitionMod {
     }
   }
   
-  type CSSTransitionProps[Ref /* <: js.UndefOr[HTMLElement] */] = TransitionProps[Ref] with ClassNames
+  type CSSTransitionProps[Ref /* <: js.UndefOr[HTMLElement] */] = TransitionProps[Ref] & ClassNames
 }

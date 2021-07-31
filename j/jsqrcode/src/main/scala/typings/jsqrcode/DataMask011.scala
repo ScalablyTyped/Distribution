@@ -2,11 +2,11 @@ package typings.jsqrcode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataMask011 extends DataMask
+trait DataMask011
+  extends StObject
+     with DataMask
 object DataMask011 {
   
   @scala.inline

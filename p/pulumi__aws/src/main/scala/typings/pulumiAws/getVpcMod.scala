@@ -6,64 +6,62 @@ import typings.pulumiAws.outputMod.ec2.GetVpcCidrBlockAssociation
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getVpcMod {
   
-  @JSImport("@pulumi/aws/ec2/getVpc", "getVpc")
+  @JSImport("@pulumi/aws/ec2/getVpc", JSImport.Namespace)
   @js.native
-  def getVpc(): js.Promise[GetVpcResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpc", "getVpc")
-  @js.native
-  def getVpc(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetVpcResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpc", "getVpc")
-  @js.native
-  def getVpc(args: GetVpcArgs): js.Promise[GetVpcResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getVpc", "getVpc")
-  @js.native
-  def getVpc(args: GetVpcArgs, opts: InvokeOptions): js.Promise[GetVpcResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getVpc(): js.Promise[GetVpcResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpc")().asInstanceOf[js.Promise[GetVpcResult]]
+  @scala.inline
+  def getVpc(args: Unit, opts: InvokeOptions): js.Promise[GetVpcResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpc")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcResult]]
+  @scala.inline
+  def getVpc(args: GetVpcArgs): js.Promise[GetVpcResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVpc")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetVpcResult]]
+  @scala.inline
+  def getVpc(args: GetVpcArgs, opts: InvokeOptions): js.Promise[GetVpcResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getVpc")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetVpcResult]]
+  
   trait GetVpcArgs extends StObject {
     
     /**
       * Boolean constraint on whether the desired VPC is
       * the default VPC for the region.
       */
-    val default: js.UndefOr[Boolean] = js.native
+    val default: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The cidr block of the desired VPC.
       */
-    val cidrBlock: js.UndefOr[String] = js.native
+    val cidrBlock: js.UndefOr[String] = js.undefined
     
     /**
       * The DHCP options id of the desired VPC.
       */
-    val dhcpOptionsId: js.UndefOr[String] = js.native
+    val dhcpOptionsId: js.UndefOr[String] = js.undefined
     
     /**
       * Custom filter block as described below.
       */
-    val filters: js.UndefOr[js.Array[GetVpcFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetVpcFilter]] = js.undefined
     
     /**
       * The id of the specific VPC to retrieve.
       */
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
     /**
       * The current state of the desired VPC.
       * Can be either `"pending"` or `"available"`.
       */
-    val state: js.UndefOr[String] = js.native
+    val state: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags, each pair of which must exactly match
       * a pair on the desired VPC.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetVpcArgs {
     
@@ -123,71 +121,70 @@ object getVpcMod {
     }
   }
   
-  @js.native
   trait GetVpcResult extends StObject {
     
-    val default: Boolean = js.native
+    val default: Boolean
     
     /**
       * Amazon Resource Name (ARN) of VPC
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The CIDR block for the association.
       */
-    val cidrBlock: String = js.native
+    val cidrBlock: String
     
-    val cidrBlockAssociations: js.Array[GetVpcCidrBlockAssociation] = js.native
+    val cidrBlockAssociations: js.Array[GetVpcCidrBlockAssociation]
     
-    val dhcpOptionsId: String = js.native
+    val dhcpOptionsId: String
     
     /**
       * Whether or not the VPC has DNS hostname support
       */
-    val enableDnsHostnames: Boolean = js.native
+    val enableDnsHostnames: Boolean
     
     /**
       * Whether or not the VPC has DNS support
       */
-    val enableDnsSupport: Boolean = js.native
+    val enableDnsSupport: Boolean
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetVpcFilter]] = js.undefined
     
-    val id: String = js.native
+    val id: String
     
     /**
       * The allowed tenancy of instances launched into the
       * selected VPC. May be any of `"default"`, `"dedicated"`, or `"host"`.
       */
-    val instanceTenancy: String = js.native
+    val instanceTenancy: String
     
     /**
       * The association ID for the IPv6 CIDR block.
       */
-    val ipv6AssociationId: String = js.native
+    val ipv6AssociationId: String
     
     /**
       * The IPv6 CIDR block.
       */
-    val ipv6CidrBlock: String = js.native
+    val ipv6CidrBlock: String
     
     /**
       * The ID of the main route table associated with this VPC.
       */
-    val mainRouteTableId: String = js.native
+    val mainRouteTableId: String
     
     /**
       * The ID of the AWS account that owns the VPC.
       */
-    val ownerId: String = js.native
+    val ownerId: String
     
     /**
       * The State of the association.
       */
-    val state: String = js.native
+    val state: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetVpcResult {
     

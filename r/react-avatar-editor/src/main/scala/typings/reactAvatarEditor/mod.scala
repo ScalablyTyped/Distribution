@@ -8,7 +8,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.ImageData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,52 +27,51 @@ object mod {
     def getImageScaledToCanvas(): HTMLCanvasElement = js.native
   }
   
-  @js.native
   trait AvatarEditorProps extends StObject {
     
-    var border: js.UndefOr[Double | js.Array[Double]] = js.native
+    var border: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var borderRadius: js.UndefOr[Double] = js.native
+    var borderRadius: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[js.Array[Double]] = js.native
+    var color: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var disableBoundaryChecks: js.UndefOr[Boolean] = js.native
+    var disableBoundaryChecks: js.UndefOr[Boolean] = js.undefined
     
-    var disableDrop: js.UndefOr[Boolean] = js.native
+    var disableDrop: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var image: String | File = js.native
+    var image: String | File
     
-    var onDropFile: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+    var onDropFile: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
     
-    var onImageChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onImageChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onImageReady: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onImageReady: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onLoadFailure: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onLoadFailure: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onLoadSuccess: js.UndefOr[js.Function1[/* imgInfo */ ImageState, Unit]] = js.native
+    var onLoadSuccess: js.UndefOr[js.Function1[/* imgInfo */ ImageState, Unit]] = js.undefined
     
-    var onMouseMove: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.native
+    var onMouseMove: js.UndefOr[js.Function1[/* event */ Event, Unit]] = js.undefined
     
-    var onMouseUp: js.UndefOr[js.Function0[Unit]] = js.native
+    var onMouseUp: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPositionChange: js.UndefOr[js.Function1[/* position */ Position, Unit]] = js.native
+    var onPositionChange: js.UndefOr[js.Function1[/* position */ Position, Unit]] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object AvatarEditorProps {
     
@@ -223,12 +221,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait CroppedRect extends Position {
+  trait CroppedRect
+    extends StObject
+       with Position {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object CroppedRect {
     
@@ -249,10 +248,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ImageState extends CroppedRect {
+  trait ImageState
+    extends StObject
+       with CroppedRect {
     
-    var resource: ImageData = js.native
+    var resource: ImageData
   }
   object ImageState {
     
@@ -270,12 +270,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Position {
     

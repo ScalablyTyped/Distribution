@@ -18,65 +18,63 @@ import typings.sentryTypes.userMod.User
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventMod {
   
-  @js.native
   trait Event extends StObject {
     
-    var breadcrumbs: js.UndefOr[js.Array[Breadcrumb]] = js.native
+    var breadcrumbs: js.UndefOr[js.Array[Breadcrumb]] = js.undefined
     
-    var contexts: js.UndefOr[Contexts] = js.native
+    var contexts: js.UndefOr[Contexts] = js.undefined
     
-    var dist: js.UndefOr[String] = js.native
+    var dist: js.UndefOr[String] = js.undefined
     
-    var environment: js.UndefOr[String] = js.native
+    var environment: js.UndefOr[String] = js.undefined
     
-    var event_id: js.UndefOr[String] = js.native
+    var event_id: js.UndefOr[String] = js.undefined
     
-    var exception: js.UndefOr[Values] = js.native
+    var exception: js.UndefOr[Values] = js.undefined
     
-    var extra: js.UndefOr[Extras] = js.native
+    var extra: js.UndefOr[Extras] = js.undefined
     
-    var fingerprint: js.UndefOr[js.Array[String]] = js.native
+    var fingerprint: js.UndefOr[js.Array[String]] = js.undefined
     
-    var level: js.UndefOr[Severity] = js.native
+    var level: js.UndefOr[Severity] = js.undefined
     
-    var logger: js.UndefOr[String] = js.native
+    var logger: js.UndefOr[String] = js.undefined
     
-    var measurements: js.UndefOr[Measurements] = js.native
+    var measurements: js.UndefOr[Measurements] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var modules: js.UndefOr[StringDictionary[String]] = js.native
+    var modules: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var platform: js.UndefOr[String] = js.native
+    var platform: js.UndefOr[String] = js.undefined
     
-    var release: js.UndefOr[String] = js.native
+    var release: js.UndefOr[String] = js.undefined
     
-    var request: js.UndefOr[Request] = js.native
+    var request: js.UndefOr[Request] = js.undefined
     
-    var sdk: js.UndefOr[SdkInfo] = js.native
+    var sdk: js.UndefOr[SdkInfo] = js.undefined
     
-    var server_name: js.UndefOr[String] = js.native
+    var server_name: js.UndefOr[String] = js.undefined
     
-    var spans: js.UndefOr[js.Array[Span]] = js.native
+    var spans: js.UndefOr[js.Array[Span]] = js.undefined
     
-    var stacktrace: js.UndefOr[Stacktrace] = js.native
+    var stacktrace: js.UndefOr[Stacktrace] = js.undefined
     
-    var start_timestamp: js.UndefOr[Double] = js.native
+    var start_timestamp: js.UndefOr[Double] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var transaction: js.UndefOr[String] = js.native
+    var transaction: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[EventType] = js.native
+    var `type`: js.UndefOr[EventType] = js.undefined
     
-    var user: js.UndefOr[User] = js.native
+    var user: js.UndefOr[User] = js.undefined
   }
   object Event {
     
@@ -256,18 +254,17 @@ object eventMod {
     }
   }
   
-  @js.native
   trait EventHint extends StObject {
     
-    var captureContext: js.UndefOr[CaptureContext] = js.native
+    var captureContext: js.UndefOr[CaptureContext] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var event_id: js.UndefOr[String] = js.native
+    var event_id: js.UndefOr[String] = js.undefined
     
-    var originalException: js.UndefOr[Error | String | Null] = js.native
+    var originalException: js.UndefOr[Error | String | Null] = js.undefined
     
-    var syntheticException: js.UndefOr[Error | Null] = js.native
+    var syntheticException: js.UndefOr[Error | Null] = js.undefined
   }
   object EventHint {
     

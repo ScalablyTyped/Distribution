@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.OperationDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyOperationDefinition extends StObject {
   
-  var body: OperationDefinition = js.native
+  var body: OperationDefinition
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.OperationDefinition = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.OperationDefinition
 }
 object BodyOperationDefinition {
   
   @scala.inline
-  def apply(
-    body: OperationDefinition,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.OperationDefinition
-  ): BodyOperationDefinition = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: OperationDefinition): BodyOperationDefinition = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "OperationDefinition")
     __obj.asInstanceOf[BodyOperationDefinition]
   }
   

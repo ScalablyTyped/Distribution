@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFolderRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The ID of the folder.
     */
-  var FolderId: ResourceIdType = js.native
+  var FolderId: ResourceIdType
   
   /**
     * The name of the folder.
     */
-  var Name: js.UndefOr[ResourceNameType] = js.native
+  var Name: js.UndefOr[ResourceNameType] = js.undefined
   
   /**
     * The ID of the parent folder.
     */
-  var ParentFolderId: js.UndefOr[ResourceIdType] = js.native
+  var ParentFolderId: js.UndefOr[ResourceIdType] = js.undefined
   
   /**
     * The resource state of the folder. Only ACTIVE and RECYCLED are accepted values from the API.
     */
-  var ResourceState: js.UndefOr[ResourceStateType] = js.native
+  var ResourceState: js.UndefOr[ResourceStateType] = js.undefined
 }
 object UpdateFolderRequest {
   

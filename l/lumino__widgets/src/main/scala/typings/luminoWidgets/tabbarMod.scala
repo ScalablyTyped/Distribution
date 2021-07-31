@@ -21,7 +21,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLUListElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabbarMod {
@@ -364,11 +363,18 @@ object tabbarMod {
       * Construct a new renderer.
       */
     class Renderer ()
-      extends IRenderer[js.Any] {
+      extends StObject
+         with IRenderer[js.Any] {
       
       var _tabID: js.Any = js.native
       
       var _tabKeys: js.Any = js.native
+      
+      /**
+        * A selector which matches the close icon node in a tab.
+        */
+      /* CompleteClass */
+      override val closeIconSelector: String = js.native
       
       /**
         * Create the class name for the tab icon.
@@ -377,7 +383,7 @@ object tabbarMod {
         *
         * @returns The full class name for the tab icon.
         */
-      def createIconClass(data: IRenderData[_]): String = js.native
+      def createIconClass(data: IRenderData[js.Any]): String = js.native
       
       /**
         * Create the class name for the tab.
@@ -386,7 +392,7 @@ object tabbarMod {
         *
         * @returns The full class name for the tab.
         */
-      def createTabClass(data: IRenderData[_]): String = js.native
+      def createTabClass(data: IRenderData[js.Any]): String = js.native
       
       /**
         * Create the dataset for a tab.
@@ -395,7 +401,7 @@ object tabbarMod {
         *
         * @returns The dataset for the tab.
         */
-      def createTabDataset(data: IRenderData[_]): ElementDataset = js.native
+      def createTabDataset(data: IRenderData[js.Any]): ElementDataset = js.native
       
       /**
         * Create a unique render key for the tab.
@@ -409,7 +415,7 @@ object tabbarMod {
         * the key is generated. This enables efficient rendering of moved
         * tabs and avoids subtle hover style artifacts.
         */
-      def createTabKey(data: IRenderData[_]): String = js.native
+      def createTabKey(data: IRenderData[js.Any]): String = js.native
       
       /**
         * Create the inline style object for a tab.
@@ -418,7 +424,7 @@ object tabbarMod {
         *
         * @returns The inline style data for the tab.
         */
-      def createTabStyle(data: IRenderData[_]): ElementInlineStyle = js.native
+      def createTabStyle(data: IRenderData[js.Any]): ElementInlineStyle = js.native
       
       /**
         * Render the close icon element for a tab.
@@ -427,7 +433,7 @@ object tabbarMod {
         *
         * @returns A virtual element representing the tab close icon.
         */
-      def renderCloseIcon(data: IRenderData[_]): VirtualElement = js.native
+      def renderCloseIcon(data: IRenderData[js.Any]): VirtualElement = js.native
       
       /**
         * Render the icon element for a tab.
@@ -436,7 +442,7 @@ object tabbarMod {
         *
         * @returns A virtual element representing the tab icon.
         */
-      def renderIcon(data: IRenderData[_]): VirtualElement = js.native
+      def renderIcon(data: IRenderData[js.Any]): VirtualElement = js.native
       
       /**
         * Render the label element for a tab.
@@ -445,7 +451,17 @@ object tabbarMod {
         *
         * @returns A virtual element representing the tab label.
         */
-      def renderLabel(data: IRenderData[_]): VirtualElement = js.native
+      def renderLabel(data: IRenderData[js.Any]): VirtualElement = js.native
+      
+      /**
+        * Render the virtual element for a tab.
+        *
+        * @param data - The data to use for rendering the tab.
+        *
+        * @returns A virtual element representing the tab.
+        */
+      /* CompleteClass */
+      override def renderTab(data: IRenderData[js.Any]): VirtualElement = js.native
     }
     
     /**
@@ -458,39 +474,38 @@ object tabbarMod {
     /**
       * The arguments object for the `currentChanged` signal.
       */
-    @js.native
     trait ICurrentChangedArgs[T] extends StObject {
       
       /**
         * The currently selected index.
         */
-      val currentIndex: Double = js.native
+      val currentIndex: Double
       
       /**
         * The currently selected title.
         */
-      val currentTitle: Title[T] | Null = js.native
+      val currentTitle: Title[T] | Null
       
       /**
         * The previously selected index.
         */
-      val previousIndex: Double = js.native
+      val previousIndex: Double
       
       /**
         * The previously selected title.
         */
-      val previousTitle: Title[T] | Null = js.native
+      val previousTitle: Title[T] | Null
     }
     object ICurrentChangedArgs {
       
       @scala.inline
       def apply[T](currentIndex: Double, previousIndex: Double): ICurrentChangedArgs[T] = {
-        val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any])
+        val __obj = js.Dynamic.literal(currentIndex = currentIndex.asInstanceOf[js.Any], previousIndex = previousIndex.asInstanceOf[js.Any], currentTitle = null, previousTitle = null)
         __obj.asInstanceOf[ICurrentChangedArgs[T]]
       }
       
       @scala.inline
-      implicit class ICurrentChangedArgsMutableBuilder[Self <: ICurrentChangedArgs[_], T] (val x: Self with ICurrentChangedArgs[T]) extends AnyVal {
+      implicit class ICurrentChangedArgsMutableBuilder[Self <: ICurrentChangedArgs[?], T] (val x: Self & ICurrentChangedArgs[T]) extends AnyVal {
         
         @scala.inline
         def setCurrentIndex(value: Double): Self = StObject.set(x, "currentIndex", value.asInstanceOf[js.Any])
@@ -515,7 +530,6 @@ object tabbarMod {
     /**
       * An options object for creating a tab bar.
       */
-    @js.native
     trait IOptions[T] extends StObject {
       
       /**
@@ -523,49 +537,49 @@ object tabbarMod {
         *
         * The default is `false`.
         */
-      var allowDeselect: js.UndefOr[Boolean] = js.native
+      var allowDeselect: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The selection behavior when inserting a tab.
         *
         * The default is `'select-tab-if-needed'`.
         */
-      var insertBehavior: js.UndefOr[InsertBehavior] = js.native
+      var insertBehavior: js.UndefOr[InsertBehavior] = js.undefined
       
       /**
         * The layout orientation of the tab bar.
         *
         * The default is `horizontal`.
         */
-      var orientation: js.UndefOr[Orientation] = js.native
+      var orientation: js.UndefOr[Orientation] = js.undefined
       
       /**
         * The selection behavior when removing a tab.
         *
         * The default is `'select-tab-after'`.
         */
-      var removeBehavior: js.UndefOr[RemoveBehavior] = js.native
+      var removeBehavior: js.UndefOr[RemoveBehavior] = js.undefined
       
       /**
         * A renderer to use with the tab bar.
         *
         * The default is a shared renderer instance.
         */
-      var renderer: js.UndefOr[IRenderer[T]] = js.native
+      var renderer: js.UndefOr[IRenderer[T]] = js.undefined
       
       /**
         * Whether the tabs are movable by the user.
         *
         * The default is `false`.
         */
-      var tabsMovable: js.UndefOr[Boolean] = js.native
+      var tabsMovable: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether the titles can be directly edited by the user.
         *
         * The default is `false`.
         */
-      var titlesEditable: js.UndefOr[Boolean] = js.native
+      var titlesEditable: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
@@ -576,7 +590,7 @@ object tabbarMod {
       }
       
       @scala.inline
-      implicit class IOptionsMutableBuilder[Self <: IOptions[_], T] (val x: Self with IOptions[T]) extends AnyVal {
+      implicit class IOptionsMutableBuilder[Self <: IOptions[?], T] (val x: Self & IOptions[T]) extends AnyVal {
         
         @scala.inline
         def setAllowDeselect(value: Boolean): Self = StObject.set(x, "allowDeselect", value.asInstanceOf[js.Any])
@@ -625,23 +639,22 @@ object tabbarMod {
     /**
       * An object which holds the data to render a tab.
       */
-    @js.native
     trait IRenderData[T] extends StObject {
       
       /**
         * Whether the tab is the current tab.
         */
-      val current: Boolean = js.native
+      val current: Boolean
       
       /**
         * The title associated with the tab.
         */
-      val title: Title[T] = js.native
+      val title: Title[T]
       
       /**
         * The z-index for the tab.
         */
-      val zIndex: Double = js.native
+      val zIndex: Double
     }
     object IRenderData {
       
@@ -652,7 +665,7 @@ object tabbarMod {
       }
       
       @scala.inline
-      implicit class IRenderDataMutableBuilder[Self <: IRenderData[_], T] (val x: Self with IRenderData[T]) extends AnyVal {
+      implicit class IRenderDataMutableBuilder[Self <: IRenderData[?], T] (val x: Self & IRenderData[T]) extends AnyVal {
         
         @scala.inline
         def setCurrent(value: Boolean): Self = StObject.set(x, "current", value.asInstanceOf[js.Any])
@@ -668,13 +681,12 @@ object tabbarMod {
     /**
       * A renderer for use with a tab bar.
       */
-    @js.native
     trait IRenderer[T] extends StObject {
       
       /**
         * A selector which matches the close icon node in a tab.
         */
-      val closeIconSelector: String = js.native
+      val closeIconSelector: String
       
       /**
         * Render the virtual element for a tab.
@@ -683,7 +695,7 @@ object tabbarMod {
         *
         * @returns A virtual element representing the tab.
         */
-      def renderTab(data: IRenderData[T]): VirtualElement = js.native
+      def renderTab(data: IRenderData[T]): VirtualElement
     }
     object IRenderer {
       
@@ -694,7 +706,7 @@ object tabbarMod {
       }
       
       @scala.inline
-      implicit class IRendererMutableBuilder[Self <: IRenderer[_], T] (val x: Self with IRenderer[T]) extends AnyVal {
+      implicit class IRendererMutableBuilder[Self <: IRenderer[?], T] (val x: Self & IRenderer[T]) extends AnyVal {
         
         @scala.inline
         def setCloseIconSelector(value: String): Self = StObject.set(x, "closeIconSelector", value.asInstanceOf[js.Any])
@@ -707,18 +719,17 @@ object tabbarMod {
     /**
       * The arguments object for the `tabActivateRequested` signal.
       */
-    @js.native
     trait ITabActivateRequestedArgs[T] extends StObject {
       
       /**
         * The index of the tab to activate.
         */
-      val index: Double = js.native
+      val index: Double
       
       /**
         * The title for the tab.
         */
-      val title: Title[T] = js.native
+      val title: Title[T]
     }
     object ITabActivateRequestedArgs {
       
@@ -729,7 +740,7 @@ object tabbarMod {
       }
       
       @scala.inline
-      implicit class ITabActivateRequestedArgsMutableBuilder[Self <: ITabActivateRequestedArgs[_], T] (val x: Self with ITabActivateRequestedArgs[T]) extends AnyVal {
+      implicit class ITabActivateRequestedArgsMutableBuilder[Self <: ITabActivateRequestedArgs[?], T] (val x: Self & ITabActivateRequestedArgs[T]) extends AnyVal {
         
         @scala.inline
         def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -742,18 +753,17 @@ object tabbarMod {
     /**
       * The arguments object for the `tabCloseRequested` signal.
       */
-    @js.native
     trait ITabCloseRequestedArgs[T] extends StObject {
       
       /**
         * The index of the tab to close.
         */
-      val index: Double = js.native
+      val index: Double
       
       /**
         * The title for the tab.
         */
-      val title: Title[T] = js.native
+      val title: Title[T]
     }
     object ITabCloseRequestedArgs {
       
@@ -764,7 +774,7 @@ object tabbarMod {
       }
       
       @scala.inline
-      implicit class ITabCloseRequestedArgsMutableBuilder[Self <: ITabCloseRequestedArgs[_], T] (val x: Self with ITabCloseRequestedArgs[T]) extends AnyVal {
+      implicit class ITabCloseRequestedArgsMutableBuilder[Self <: ITabCloseRequestedArgs[?], T] (val x: Self & ITabCloseRequestedArgs[T]) extends AnyVal {
         
         @scala.inline
         def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
@@ -777,33 +787,32 @@ object tabbarMod {
     /**
       * The arguments object for the `tabDetachRequested` signal.
       */
-    @js.native
     trait ITabDetachRequestedArgs[T] extends StObject {
       
       /**
         * The current client X position of the mouse.
         */
-      val clientX: Double = js.native
+      val clientX: Double
       
       /**
         * The current client Y position of the mouse.
         */
-      val clientY: Double = js.native
+      val clientY: Double
       
       /**
         * The index of the tab to detach.
         */
-      val index: Double = js.native
+      val index: Double
       
       /**
         * The node representing the tab.
         */
-      val tab: HTMLElement = js.native
+      val tab: HTMLElement
       
       /**
         * The title for the tab.
         */
-      val title: Title[T] = js.native
+      val title: Title[T]
     }
     object ITabDetachRequestedArgs {
       
@@ -814,7 +823,7 @@ object tabbarMod {
       }
       
       @scala.inline
-      implicit class ITabDetachRequestedArgsMutableBuilder[Self <: ITabDetachRequestedArgs[_], T] (val x: Self with ITabDetachRequestedArgs[T]) extends AnyVal {
+      implicit class ITabDetachRequestedArgsMutableBuilder[Self <: ITabDetachRequestedArgs[?], T] (val x: Self & ITabDetachRequestedArgs[T]) extends AnyVal {
         
         @scala.inline
         def setClientX(value: Double): Self = StObject.set(x, "clientX", value.asInstanceOf[js.Any])
@@ -836,23 +845,22 @@ object tabbarMod {
     /**
       * The arguments object for the `tabMoved` signal.
       */
-    @js.native
     trait ITabMovedArgs[T] extends StObject {
       
       /**
         * The previous index of the tab.
         */
-      val fromIndex: Double = js.native
+      val fromIndex: Double
       
       /**
         * The title for the tab.
         */
-      val title: Title[T] = js.native
+      val title: Title[T]
       
       /**
         * The current index of the tab.
         */
-      val toIndex: Double = js.native
+      val toIndex: Double
     }
     object ITabMovedArgs {
       
@@ -863,7 +871,7 @@ object tabbarMod {
       }
       
       @scala.inline
-      implicit class ITabMovedArgsMutableBuilder[Self <: ITabMovedArgs[_], T] (val x: Self with ITabMovedArgs[T]) extends AnyVal {
+      implicit class ITabMovedArgsMutableBuilder[Self <: ITabMovedArgs[?], T] (val x: Self & ITabMovedArgs[T]) extends AnyVal {
         
         @scala.inline
         def setFromIndex(value: Double): Self = StObject.set(x, "fromIndex", value.asInstanceOf[js.Any])

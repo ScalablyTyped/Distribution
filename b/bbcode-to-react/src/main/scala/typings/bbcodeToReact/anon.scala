@@ -3,15 +3,13 @@ package typings.bbcodeToReact
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Linkify extends StObject {
     
-    var linkify: Boolean = js.native
+    var linkify: Boolean
   }
   object Linkify {
     
@@ -30,16 +28,15 @@ object anon {
   }
   
   /* Inlined std.Partial<std.Omit<bbcode-to-react.bbcode-to-react.TagType, 'children'>> */
-  @js.native
   trait PartialOmitTagTypechildre extends StObject {
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var parent: js.UndefOr[ReactNode] = js.native
+    var parent: js.UndefOr[ReactNode] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object PartialOmitTagTypechildre {
     

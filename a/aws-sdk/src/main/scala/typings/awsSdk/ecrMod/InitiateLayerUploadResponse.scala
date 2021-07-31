@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitiateLayerUploadResponse extends StObject {
   
   /**
     * The size, in bytes, that Amazon ECR expects future layer part uploads to be.
     */
-  var partSize: js.UndefOr[PartSize] = js.native
+  var partSize: js.UndefOr[PartSize] = js.undefined
   
   /**
     * The upload ID for the layer upload. This parameter is passed to further UploadLayerPart and CompleteLayerUpload operations.
     */
-  var uploadId: js.UndefOr[UploadId] = js.native
+  var uploadId: js.UndefOr[UploadId] = js.undefined
 }
 object InitiateLayerUploadResponse {
   

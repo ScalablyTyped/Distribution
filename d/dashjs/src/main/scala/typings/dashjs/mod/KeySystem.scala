@@ -4,29 +4,27 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeySystem extends StObject {
   
-  def getCDMData(): ArrayBuffer | Null = js.native
+  def getCDMData(): ArrayBuffer | Null
   
-  def getInitData(cp: js.Object): ArrayBuffer = js.native
+  def getInitData(cp: js.Object): ArrayBuffer
   
-  def getLicenseRequestFromMessage(message: ArrayBuffer): Uint8Array = js.native
+  def getLicenseRequestFromMessage(message: ArrayBuffer): Uint8Array
   
-  def getLicenseServerURLFromInitData(initData: ArrayBuffer): String | Null = js.native
+  def getLicenseServerURLFromInitData(initData: ArrayBuffer): String | Null
   
-  def getRequestHeadersFromMessage(message: ArrayBuffer): js.Object | Null = js.native
+  def getRequestHeadersFromMessage(message: ArrayBuffer): js.Object | Null
   
-  def getSessionId(): String | Null = js.native
+  def getSessionId(): String | Null
   
-  var schemeIdURI: String = js.native
+  var schemeIdURI: String
   
-  var systemString: String = js.native
+  var systemString: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object KeySystem {
   

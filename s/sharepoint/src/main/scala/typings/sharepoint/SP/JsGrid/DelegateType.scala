@@ -2,7 +2,6 @@ package typings.sharepoint.SP.JsGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,98 +11,162 @@ sealed trait DelegateType extends StObject
 object DelegateType extends StObject {
   
   @js.native
-  sealed trait AddColumnMenuItems extends DelegateType
+  sealed trait AddColumnMenuItems
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait AddNewColumn extends DelegateType
+  sealed trait AddNewColumn
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait AddNewColumnMenuItems extends DelegateType
+  sealed trait AddNewColumnMenuItems
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait AllowSelectionChange extends DelegateType
+  sealed trait AllowSelectionChange
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait AutoFilter extends DelegateType
+  sealed trait AutoFilter
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait CanReorderRecords extends DelegateType
+  sealed trait CanReorderRecords
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait CreateEntryRecord extends DelegateType
+  sealed trait CreateEntryRecord
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait DeleteRecords extends DelegateType
+  sealed trait DeleteRecords
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait ExpandColumnMenu extends DelegateType
+  sealed trait ExpandColumnMenu
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait ExpandConflictResolution extends DelegateType
+  sealed trait ExpandConflictResolution
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait ExpandDelayLoadedHierarchyNode extends DelegateType
+  sealed trait ExpandDelayLoadedHierarchyNode
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait Filter extends DelegateType
+  sealed trait Filter
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait GetAutoFilterEntries extends DelegateType
+  sealed trait GetAutoFilterEntries
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait GetFieldEditMode extends DelegateType
+  sealed trait GetFieldEditMode
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait GetFieldReadOnlyActiveState extends DelegateType
+  sealed trait GetFieldReadOnlyActiveState
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait GetGridRowStyleId extends DelegateType
+  sealed trait GetGridRowStyleId
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait GetRecordEditMode extends DelegateType
+  sealed trait GetRecordEditMode
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait IndentRecords extends DelegateType
+  sealed trait IndentRecords
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait InsertRecord extends DelegateType
+  sealed trait InsertRecord
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait IsRecordInsertInView extends DelegateType
+  sealed trait IsRecordInsertInView
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait LaunchFilterDialog extends DelegateType
+  sealed trait LaunchFilterDialog
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait NextPage extends DelegateType
+  sealed trait NextPage
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait OnBeforeRecordReordered extends DelegateType
+  sealed trait OnBeforeRecordReordered
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait OutdentRecords extends DelegateType
+  sealed trait OutdentRecords
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait RemoveColumnFromView extends DelegateType
+  sealed trait RemoveColumnFromView
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait ReorderColumnPositionInView extends DelegateType
+  sealed trait ReorderColumnPositionInView
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait ShowColumnConfigurationDialog extends DelegateType
+  sealed trait ShowColumnConfigurationDialog
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait Sort extends DelegateType
+  sealed trait Sort
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait TryBeginPaste extends DelegateType
+  sealed trait TryBeginPaste
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait TryCreateProvisionalRecord extends DelegateType
+  sealed trait TryCreateProvisionalRecord
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait TryInsertEntryRecord extends DelegateType
+  sealed trait TryInsertEntryRecord
+    extends StObject
+       with DelegateType
   
   @js.native
-  sealed trait WillAddColumnMenuItems extends DelegateType
+  sealed trait WillAddColumnMenuItems
+    extends StObject
+       with DelegateType
 }

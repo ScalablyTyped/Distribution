@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,16 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * NOTE: This is a private type and should not be exported
   */
-@js.native
 trait InjectorTypeWithProviders[T] extends StObject {
   
-  var ngModule: InjectorType[T] = js.native
+  var ngModule: InjectorType[T]
   
   var providers: js.UndefOr[
     js.Array[
-      typings.angularCore.mod.Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
+      Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object InjectorTypeWithProviders {
   
@@ -33,7 +31,7 @@ object InjectorTypeWithProviders {
   }
   
   @scala.inline
-  implicit class InjectorTypeWithProvidersMutableBuilder[Self <: InjectorTypeWithProviders[_], T] (val x: Self with InjectorTypeWithProviders[T]) extends AnyVal {
+  implicit class InjectorTypeWithProvidersMutableBuilder[Self <: InjectorTypeWithProviders[?], T] (val x: Self & InjectorTypeWithProviders[T]) extends AnyVal {
     
     @scala.inline
     def setNgModule(value: InjectorType[T]): Self = StObject.set(x, "ngModule", value.asInstanceOf[js.Any])
@@ -41,7 +39,7 @@ object InjectorTypeWithProviders {
     @scala.inline
     def setProviders(
       value: js.Array[
-          typings.angularCore.mod.Type[_] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[_]
+          Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any]
         ]
     ): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
     
@@ -50,7 +48,7 @@ object InjectorTypeWithProviders {
     
     @scala.inline
     def setProvidersVarargs(
-      value: (typings.angularCore.mod.Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
+      value: (Type[js.Any] | ValueProvider | ExistingProvider | FactoryProvider | ConstructorProvider | StaticClassProvider | ClassProvider | js.Array[js.Any])*
     ): Self = StObject.set(x, "providers", js.Array(value :_*))
   }
 }

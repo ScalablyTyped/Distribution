@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowedCharacterCount extends StObject {
   
   /** Maximum allowed characters on this layer, especially for the "copy" layer. */
-  var allowedCharacterCount: js.UndefOr[Double] = js.native
+  var allowedCharacterCount: js.UndefOr[Double] = js.undefined
   
   /** Type of limitation on this layer. "limited" or "unlimited" for the "copy" layer. */
-  var limitType: js.UndefOr[String] = js.native
+  var limitType: js.UndefOr[String] = js.undefined
   
   /** Remaining allowed characters on this layer, especially for the "copy" layer. */
-  var remainingCharacterCount: js.UndefOr[Double] = js.native
+  var remainingCharacterCount: js.UndefOr[Double] = js.undefined
 }
 object AllowedCharacterCount {
   

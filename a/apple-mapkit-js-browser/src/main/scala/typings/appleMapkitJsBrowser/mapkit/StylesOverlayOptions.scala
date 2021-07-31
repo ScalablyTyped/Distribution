@@ -2,16 +2,16 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An observable set of style attributes for an overlay.
   */
-@js.native
-trait StylesOverlayOptions extends OverlayOptions {
+trait StylesOverlayOptions
+  extends StObject
+     with OverlayOptions {
   
-  var style: js.UndefOr[Style] = js.native
+  var style: js.UndefOr[Style] = js.undefined
 }
 object StylesOverlayOptions {
   

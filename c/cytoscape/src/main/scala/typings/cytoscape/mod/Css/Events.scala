@@ -6,26 +6,24 @@ import typings.cytoscape.mod.EdgeSingular
 import typings.cytoscape.mod.NodeSingular
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#style/events
   */
-@js.native
 trait Events[SingularType /* <: NodeSingular | EdgeSingular */] extends StObject {
   
   /**
     * Whether events should occur on an element (e.g.tap, mouseover, etc.).
     *  * For "no", the element receives no events and events simply pass through to the core/viewport.
     */
-  var events: PropertyValue[SingularType, yes | no] = js.native
+  var events: PropertyValue[SingularType, yes | no]
   
   /**
     *  Whether events should occur on an element if the label receives an event.
     * You may want a style applied to the text on active so you know the text is activatable.
     */
-  var `text-events`: PropertyValue[SingularType, yes | no] = js.native
+  var `text-events`: PropertyValue[SingularType, yes | no]
 }
 object Events {
   
@@ -40,7 +38,7 @@ object Events {
   }
   
   @scala.inline
-  implicit class EventsMutableBuilder[Self <: Events[_], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self with Events[SingularType]) extends AnyVal {
+  implicit class EventsMutableBuilder[Self <: Events[?], SingularType /* <: NodeSingular | EdgeSingular */] (val x: Self & Events[SingularType]) extends AnyVal {
     
     @scala.inline
     def setEvents(value: PropertyValue[SingularType, yes | no]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])

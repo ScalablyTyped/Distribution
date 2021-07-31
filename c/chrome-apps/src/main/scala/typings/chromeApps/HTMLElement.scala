@@ -2,31 +2,29 @@ package typings.chromeApps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElement extends StObject {
   
   /**
     * @requires Permissions: 'pointerLock'
     */
-  def exitPointerLock(): Unit = js.native
+  def exitPointerLock(): Unit
   
   /**
     * ❗ Unprefixed version are not available as of Chrome 68, in Chrome apps ❗
     */
-  def exitrequestFullscreen(): Unit = js.native
+  def exitrequestFullscreen(): Unit
   
   /**
     * ❗ Unprefixed version are not available as of Chrome 68, in Chrome apps ❗
     */
-  def requestFullscreen(): js.Promise[Unit] = js.native
+  def requestFullscreen(): js.Promise[Unit]
   
   /**
     * @requires Permissions: 'pointerLock'
     */
-  def requestPointerLock(): Unit = js.native
+  def requestPointerLock(): Unit
   
   /**
     * @requires Permissions: 'app.window.fullscreen', 'app.window.fullscreen.overrideEsc'
@@ -42,7 +40,7 @@ trait HTMLElement extends StObject {
     * @example
     * document.webkitExitFullscreen();
     */
-  def webkitRequestFullscreen(): Unit = js.native
+  def webkitRequestFullscreen(): Unit
 }
 object HTMLElement {
   

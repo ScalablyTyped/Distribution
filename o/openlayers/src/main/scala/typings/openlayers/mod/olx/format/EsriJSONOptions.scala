@@ -2,13 +2,11 @@ package typings.openlayers.mod.olx.format
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EsriJSONOptions extends StObject {
   
-  var geometryName: js.UndefOr[String] = js.native
+  var geometryName: js.UndefOr[String] = js.undefined
 }
 object EsriJSONOptions {
   

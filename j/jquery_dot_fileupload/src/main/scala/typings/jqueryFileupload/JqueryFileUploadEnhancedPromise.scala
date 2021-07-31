@@ -5,32 +5,32 @@ import typings.jquery.JQuery.PromiseBase
 import typings.jquery.JQuery.TypeOrArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait JqueryFileUploadEnhancedPromise[T]
-  extends PromiseBase[T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any] {
+  extends StObject
+     with PromiseBase[T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any, T, js.Any, js.Any] {
   
   def complete(
-    alwaysCallback: TypeOrArray[CallbackBase[T | _, T | _, T | _, T | _]],
-    alwaysCallbacks: (TypeOrArray[CallbackBase[T | _, T | _, T | _, T | _]])*
+    alwaysCallback: TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]],
+    alwaysCallbacks: (TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]])*
   ): this.type = js.native
   @JSName("complete")
   var complete_Original: js.Function2[
-    /* alwaysCallback */ TypeOrArray[CallbackBase[T | _, T | _, T | _, T | _]], 
-    /* repeated */ TypeOrArray[CallbackBase[T | _, T | _, T | _, T | _]], 
+    /* alwaysCallback */ TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]], 
+    /* repeated */ TypeOrArray[CallbackBase[T | js.Any, T | js.Any, T | js.Any, T | js.Any]], 
     this.type
   ] = js.native
   
   def error(
-    failCallback: TypeOrArray[CallbackBase[_, _, _, _]],
-    failCallbacks: (TypeOrArray[CallbackBase[_, _, _, _]])*
+    failCallback: TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]],
+    failCallbacks: (TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]])*
   ): this.type = js.native
   @JSName("error")
   var error_Original: js.Function2[
-    /* failCallback */ TypeOrArray[CallbackBase[_, _, _, _]], 
-    /* repeated */ TypeOrArray[CallbackBase[_, _, _, _]], 
+    /* failCallback */ TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]], 
+    /* repeated */ TypeOrArray[CallbackBase[js.Any, js.Any, js.Any, js.Any]], 
     this.type
   ] = js.native
   

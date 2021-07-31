@@ -11,8 +11,8 @@ Telephone number input React component
 | Full name          | react-phone-number-input |
 | Keywords           | react, phone, number, input, telephone, international |
 | # releases         | 72 |
-| # dependents       | 53 |
-| # downloads        | 3658846 |
+| # dependents       | 57 |
+| # downloads        | 4451263 |
 | # stars            | 3 |
 
 ## Links

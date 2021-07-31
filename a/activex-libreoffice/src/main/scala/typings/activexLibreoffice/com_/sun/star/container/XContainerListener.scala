@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** receives events when the content of the related container changes. */
-@js.native
-trait XContainerListener extends XEventListener {
+trait XContainerListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when a container has inserted an element. */
-  def elementInserted(Event: ContainerEvent): Unit = js.native
+  def elementInserted(Event: ContainerEvent): Unit
   
   /** is invoked when a container has removed an element. */
-  def elementRemoved(Event: ContainerEvent): Unit = js.native
+  def elementRemoved(Event: ContainerEvent): Unit
   
   /** is invoked when a container has replaced an element. */
-  def elementReplaced(Event: ContainerEvent): Unit = js.native
+  def elementReplaced(Event: ContainerEvent): Unit
 }
 object XContainerListener {
   

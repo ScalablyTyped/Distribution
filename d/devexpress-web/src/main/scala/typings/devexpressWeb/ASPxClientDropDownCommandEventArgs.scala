@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientDropDownEdit.DropDownCommandButtonClick event.
   */
-@js.native
-trait ASPxClientDropDownCommandEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientDropDownCommandEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Gets the name of the processed command in the ASPxClientDropDownEdit.DropDownCommandButtonClick event.
     */
-  var commandName: String = js.native
+  var commandName: String
 }
 object ASPxClientDropDownCommandEventArgs {
   

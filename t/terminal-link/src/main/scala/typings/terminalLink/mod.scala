@@ -3,7 +3,6 @@ package typings.terminalLink
 import typings.terminalLink.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,12 +21,14 @@ object mod {
   	console.log(link);
   	```
   	*/
+  @scala.inline
+  def apply(text: String, url: String): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(text: String, url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("terminal-link", JSImport.Namespace)
   @js.native
-  def apply(text: String, url: String): String = js.native
-  @JSImport("terminal-link", JSImport.Namespace)
-  @js.native
-  def apply(text: String, url: String, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Check whether the terminal supports links.
@@ -53,21 +54,18 @@ object mod {
   		console.error(link);
   		```
   		*/
-  @JSImport("terminal-link", "stderr")
-  @js.native
-  def stderr(text: String, url: String): String = js.native
-  @JSImport("terminal-link", "stderr")
-  @js.native
-  def stderr(text: String, url: String, options: Options): String = js.native
+  @scala.inline
+  def stderr(text: String, url: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stderr(text: String, url: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stderr")(text.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		Override the default fallback. If false, the fallback will be disabled.
     		@default `${text} (${url})`
     		*/
-    var fallback: js.UndefOr[(js.Function2[/* text */ String, /* url */ String, String]) | Boolean] = js.native
+    var fallback: js.UndefOr[(js.Function2[/* text */ String, /* url */ String, String]) | Boolean] = js.undefined
   }
   object Options {
     

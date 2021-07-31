@@ -2,17 +2,15 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncCallback[T] extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ T, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ T, Unit]] = js.undefined
 }
 object AsyncCallback {
   
@@ -23,7 +21,7 @@ object AsyncCallback {
   }
   
   @scala.inline
-  implicit class AsyncCallbackMutableBuilder[Self <: AsyncCallback[_], T] (val x: Self with AsyncCallback[T]) extends AnyVal {
+  implicit class AsyncCallbackMutableBuilder[Self <: AsyncCallback[?], T] (val x: Self & AsyncCallback[T]) extends AnyVal {
     
     @scala.inline
     def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))

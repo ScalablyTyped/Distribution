@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconOriginMod {
@@ -12,15 +11,15 @@ object iconOriginMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[IconOrigin with String] = js.native
+    def apply(value: String): js.UndefOr[IconOrigin & String] = js.native
     
-    /* "bottom-left" */ val BOTTOM_LEFT: typings.ol.iconOriginMod.IconOrigin.BOTTOM_LEFT with String = js.native
+    /* "bottom-left" */ val BOTTOM_LEFT: typings.ol.iconOriginMod.IconOrigin.BOTTOM_LEFT & String = js.native
     
-    /* "bottom-right" */ val BOTTOM_RIGHT: typings.ol.iconOriginMod.IconOrigin.BOTTOM_RIGHT with String = js.native
+    /* "bottom-right" */ val BOTTOM_RIGHT: typings.ol.iconOriginMod.IconOrigin.BOTTOM_RIGHT & String = js.native
     
-    /* "top-left" */ val TOP_LEFT: typings.ol.iconOriginMod.IconOrigin.TOP_LEFT with String = js.native
+    /* "top-left" */ val TOP_LEFT: typings.ol.iconOriginMod.IconOrigin.TOP_LEFT & String = js.native
     
-    /* "top-right" */ val TOP_RIGHT: typings.ol.iconOriginMod.IconOrigin.TOP_RIGHT with String = js.native
+    /* "top-right" */ val TOP_RIGHT: typings.ol.iconOriginMod.IconOrigin.TOP_RIGHT & String = js.native
   }
   
   @js.native
@@ -30,15 +29,23 @@ object iconOriginMod {
   object IconOrigin extends StObject {
     
     @js.native
-    sealed trait BOTTOM_LEFT extends IconOrigin
+    sealed trait BOTTOM_LEFT
+      extends StObject
+         with IconOrigin
     
     @js.native
-    sealed trait BOTTOM_RIGHT extends IconOrigin
+    sealed trait BOTTOM_RIGHT
+      extends StObject
+         with IconOrigin
     
     @js.native
-    sealed trait TOP_LEFT extends IconOrigin
+    sealed trait TOP_LEFT
+      extends StObject
+         with IconOrigin
     
     @js.native
-    sealed trait TOP_RIGHT extends IconOrigin
+    sealed trait TOP_RIGHT
+      extends StObject
+         with IconOrigin
   }
 }

@@ -2,13 +2,11 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitToggleElement extends StObject {
   
-  def toggle(): Unit = js.native
+  def toggle(): Unit
 }
 object UIkitToggleElement {
   

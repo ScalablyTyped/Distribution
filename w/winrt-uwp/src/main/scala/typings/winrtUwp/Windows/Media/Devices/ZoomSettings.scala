@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents zoom settings that can be applied to the ZoomControl by calling the Configure method. */
-@js.native
 trait ZoomSettings extends StObject {
   
   /** Gets or sets a ZoomTransitionMode value indicating how the capture device should transition to the new zoom value specified with the Value property. */
-  var mode: ZoomTransitionMode = js.native
+  var mode: ZoomTransitionMode
   
   /** Gets or sets the zoom value to which the ZoomControl will transition. */
-  var value: Double = js.native
+  var value: Double
 }
 object ZoomSettings {
   

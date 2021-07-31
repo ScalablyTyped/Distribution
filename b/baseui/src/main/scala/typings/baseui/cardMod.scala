@@ -9,7 +9,6 @@ import typings.std.HTMLImageElement
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardMod {
@@ -50,36 +49,35 @@ object cardMod {
   @js.native
   val StyledWrapper: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait CardOverrides extends StObject {
     
     var Action: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Body: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Contents: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var HeaderImage: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Thumbnail: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Title: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<any> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object CardOverrides {
     
@@ -150,24 +148,23 @@ object cardMod {
     }
   }
   
-  @js.native
   trait CardProps extends StObject {
     
-    val action: js.UndefOr[ReactNode] = js.native
+    val action: js.UndefOr[ReactNode] = js.undefined
     
-    val children: js.UndefOr[ReactNode] = js.native
+    val children: js.UndefOr[ReactNode] = js.undefined
     
-    val hasThumbnail: js.UndefOr[js.Function1[/* props */ Thumbnail, Boolean]] = js.native
+    val hasThumbnail: js.UndefOr[js.Function1[/* props */ Thumbnail, Boolean]] = js.undefined
     
     val headerImage: js.UndefOr[
         String | (DetailedHTMLProps[ImgHTMLAttributes[HTMLImageElement], HTMLImageElement])
-      ] = js.native
+      ] = js.undefined
     
-    val overrides: js.UndefOr[CardOverrides] = js.native
+    val overrides: js.UndefOr[CardOverrides] = js.undefined
     
-    val thumbnail: js.UndefOr[String] = js.native
+    val thumbnail: js.UndefOr[String] = js.undefined
     
-    val title: js.UndefOr[ReactNode] = js.native
+    val title: js.UndefOr[ReactNode] = js.undefined
   }
   object CardProps {
     

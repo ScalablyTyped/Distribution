@@ -6,36 +6,36 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceAssociationsessionsStart extends StandardParameters {
+trait ParamsResourceAssociationsessionsStart
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Products to associate with the user.
     */
-  var productCode: js.UndefOr[js.Array[String]] = js.native
+  var productCode: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The preferred locale of the user.
     */
-  var userLocale: js.UndefOr[String] = js.native
+  var userLocale: js.UndefOr[String] = js.undefined
   
   /**
     * The locale of the user's hosted website.
     */
-  var websiteLocale: js.UndefOr[String] = js.native
+  var websiteLocale: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the user's hosted website.
     */
-  var websiteUrl: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceAssociationsessionsStart {
   

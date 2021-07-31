@@ -2,17 +2,15 @@ package typings.googleapis.v2Mod.androidpublisherV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaReviewsReplyRequest extends StObject {
   
   /**
     * The text to set as the reply. Replies of more than approximately 350
     * characters will be rejected. HTML tags will be stripped.
     */
-  var replyText: js.UndefOr[String] = js.native
+  var replyText: js.UndefOr[String] = js.undefined
 }
 object SchemaReviewsReplyRequest {
   

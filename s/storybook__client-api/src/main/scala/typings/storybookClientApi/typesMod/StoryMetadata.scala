@@ -5,17 +5,15 @@ import typings.storybookAddons.typesMod.LoaderFunction
 import typings.storybookAddons.typesMod.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoryMetadata extends StObject {
   
-  var decorators: js.UndefOr[js.Array[DecoratorFunction[_]]] = js.native
+  var decorators: js.UndefOr[js.Array[DecoratorFunction[js.Any]]] = js.undefined
   
-  var loaders: js.UndefOr[js.Array[LoaderFunction]] = js.native
+  var loaders: js.UndefOr[js.Array[LoaderFunction]] = js.undefined
   
-  var parameters: js.UndefOr[Parameters] = js.native
+  var parameters: js.UndefOr[Parameters] = js.undefined
 }
 object StoryMetadata {
   
@@ -29,7 +27,7 @@ object StoryMetadata {
   implicit class StoryMetadataMutableBuilder[Self <: StoryMetadata] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDecorators(value: js.Array[DecoratorFunction[_]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
+    def setDecorators(value: js.Array[DecoratorFunction[js.Any]]): Self = StObject.set(x, "decorators", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDecoratorsUndefined: Self = StObject.set(x, "decorators", js.undefined)

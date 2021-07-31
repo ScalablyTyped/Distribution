@@ -4,7 +4,6 @@ import typings.node.streamMod.WritableOptions
 import typings.streamMock.iwritablemockMod.IWritableMock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectWritableMockMod {
@@ -19,9 +18,9 @@ object objectWritableMockMod {
   trait ObjectWritableMock extends IWritableMock {
     
     @JSName("data")
-    var data_ObjectWritableMock: js.Array[_] = js.native
+    var data_ObjectWritableMock: js.Array[js.Any] = js.native
     
     @JSName("flatData")
-    var flatData_ObjectWritableMock: js.Array[_] = js.native
+    var flatData_ObjectWritableMock: js.Array[js.Any] = js.native
   }
 }

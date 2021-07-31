@@ -4,26 +4,21 @@ import typings.miniprogram.anon.Dictkey
 import typings.miniprogram.anon.dataanyundefinedonLoadque
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
-  @JSGlobal("App")
-  @js.native
-  def App(obj: Dictkey): Unit = js.native
+  @scala.inline
+  def App(obj: Dictkey): Unit = js.Dynamic.global.applyDynamic("App")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("Page")
-  @js.native
-  def Page(obj: dataanyundefinedonLoadque): Unit = js.native
+  @scala.inline
+  def Page(obj: dataanyundefinedonLoadque): Unit = js.Dynamic.global.applyDynamic("Page")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("getApp")
-  @js.native
-  def getApp(): js.Any = js.native
+  @scala.inline
+  def getApp(): js.Any = js.Dynamic.global.applyDynamic("getApp")().asInstanceOf[js.Any]
   
-  @JSGlobal("getCurrentPages")
-  @js.native
-  def getCurrentPages(): js.Array[_] = js.native
+  @scala.inline
+  def getCurrentPages(): js.Array[js.Any] = js.Dynamic.global.applyDynamic("getCurrentPages")().asInstanceOf[js.Array[js.Any]]
   
   @JSGlobal("my")
   @js.native

@@ -19,57 +19,55 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cellMod extends Shortcut {
   
   @JSImport("rc-table/lib/Cell", JSImport.Default)
   @js.native
-  val default: MemoExoticComponent[ForwardRefExoticComponent[CellProps[_] with RefAttributes[_]]] = js.native
+  val default: MemoExoticComponent[ForwardRefExoticComponent[CellProps[js.Any] & RefAttributes[js.Any]]] = js.native
   
-  @js.native
   trait CellProps[RecordType /* <: DefaultRecordType */] extends StObject {
     
-    var additionalProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
+    var additionalProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
-    var align: js.UndefOr[AlignType] = js.native
+    var align: js.UndefOr[AlignType] = js.undefined
     
     /** @private Used for `expandable` with nest tree */
-    var appendNode: js.UndefOr[ReactNode] = js.native
+    var appendNode: js.UndefOr[ReactNode] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var colSpan: js.UndefOr[Double] = js.native
+    var colSpan: js.UndefOr[Double] = js.undefined
     
-    var component: js.UndefOr[CustomizeComponent] = js.native
+    var component: js.UndefOr[CustomizeComponent] = js.undefined
     
-    var dataIndex: js.UndefOr[DataIndex] = js.native
+    var dataIndex: js.UndefOr[DataIndex] = js.undefined
     
-    var ellipsis: js.UndefOr[CellEllipsisType] = js.native
+    var ellipsis: js.UndefOr[CellEllipsisType] = js.undefined
     
-    var firstFixLeft: js.UndefOr[Boolean] = js.native
+    var firstFixLeft: js.UndefOr[Boolean] = js.undefined
     
-    var firstFixRight: js.UndefOr[Boolean] = js.native
+    var firstFixRight: js.UndefOr[Boolean] = js.undefined
     
-    var fixLeft: js.UndefOr[Double | `false`] = js.native
+    var fixLeft: js.UndefOr[Double | `false`] = js.undefined
     
-    var fixRight: js.UndefOr[Double | `false`] = js.native
+    var fixRight: js.UndefOr[Double | `false`] = js.undefined
     
     /** `record` index. Not `column` index. */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
-    var isSticky: js.UndefOr[Boolean] = js.native
+    var isSticky: js.UndefOr[Boolean] = js.undefined
     
-    var lastFixLeft: js.UndefOr[Boolean] = js.native
+    var lastFixLeft: js.UndefOr[Boolean] = js.undefined
     
-    var lastFixRight: js.UndefOr[Boolean] = js.native
+    var lastFixRight: js.UndefOr[Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var record: js.UndefOr[RecordType] = js.native
+    var record: js.UndefOr[RecordType] = js.undefined
     
     var render: js.UndefOr[
         js.Function3[
@@ -78,13 +76,13 @@ object cellMod extends Shortcut {
           /* index */ Double, 
           ReactNode | RenderedCell[RecordType]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var rowSpan: js.UndefOr[Double] = js.native
+    var rowSpan: js.UndefOr[Double] = js.undefined
     
-    var rowType: js.UndefOr[header | body | footer] = js.native
+    var rowType: js.UndefOr[header | body | footer] = js.undefined
     
-    var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.native
+    var shouldCellUpdate: js.UndefOr[js.Function2[/* record */ RecordType, /* prevRecord */ RecordType, Boolean]] = js.undefined
   }
   object CellProps {
     
@@ -95,7 +93,7 @@ object cellMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class CellPropsMutableBuilder[Self <: CellProps[_], RecordType /* <: DefaultRecordType */] (val x: Self with CellProps[RecordType]) extends AnyVal {
+    implicit class CellPropsMutableBuilder[Self <: CellProps[?], RecordType /* <: DefaultRecordType */] (val x: Self & CellProps[RecordType]) extends AnyVal {
       
       @scala.inline
       def setAdditionalProps(value: HTMLAttributes[HTMLElement]): Self = StObject.set(x, "additionalProps", value.asInstanceOf[js.Any])
@@ -242,8 +240,8 @@ object cellMod extends Shortcut {
     }
   }
   
-  type _To = MemoExoticComponent[ForwardRefExoticComponent[CellProps[_] with RefAttributes[_]]]
+  type _To = MemoExoticComponent[ForwardRefExoticComponent[CellProps[js.Any] & RefAttributes[js.Any]]]
   
   /* This means you don't have to write `default`, but can instead just say `cellMod.foo` */
-  override def _to: MemoExoticComponent[ForwardRefExoticComponent[CellProps[_] with RefAttributes[_]]] = default
+  override def _to: MemoExoticComponent[ForwardRefExoticComponent[CellProps[js.Any] & RefAttributes[js.Any]]] = default
 }

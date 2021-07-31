@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies parameters to use in a text search of Contact objects. */
-@js.native
 trait ContactQueryTextSearch extends StObject {
   
   /** Gets or sets which contact fields to search for a text match. */
-  var fields: ContactQuerySearchFields = js.native
+  var fields: ContactQuerySearchFields
   
   /** Gets or sets a value that specifies either a local or server search. */
-  var searchScope: ContactQuerySearchScope = js.native
+  var searchScope: ContactQuerySearchScope
   
   /** Gets or sets the text for which to search. */
-  var text: String = js.native
+  var text: String
 }
 object ContactQueryTextSearch {
   

@@ -4,17 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenderContextGroupInView extends RenderContextInView {
+trait RenderContextGroupInView
+  extends StObject
+     with RenderContextInView {
   
-  var CurrentGroup: Group = js.native
+  var CurrentGroup: Group
   
-  var CurrentGroupIdx: Double = js.native
+  var CurrentGroupIdx: Double
   
-  var CurrentItems: js.Array[Item] = js.native
+  var CurrentItems: js.Array[Item]
 }
 object RenderContextGroupInView {
   

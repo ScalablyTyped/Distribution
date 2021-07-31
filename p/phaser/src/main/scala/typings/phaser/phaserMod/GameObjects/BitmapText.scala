@@ -7,7 +7,6 @@ import typings.phaser.integer
 import typings.std.XMLDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -34,7 +33,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("phaser", "GameObjects.BitmapText")
 @js.native
 class BitmapText protected ()
-  extends typings.phaser.Phaser.GameObjects.BitmapText {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.BitmapText {
   /**
     * 
     * @param scene The Scene to which this Game Object belongs. It can only belong to one Scene at any given time.
@@ -48,46 +48,11 @@ class BitmapText protected ()
   def this(scene: Scene, x: Double, y: Double, font: String) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String]) = this()
-  def this(scene: Scene, x: Double, y: Double, font: String, text: js.UndefOr[scala.Nothing], size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: js.Array[String], size: Double) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.UndefOr[scala.Nothing],
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.UndefOr[scala.Nothing],
-    size: Double,
-    align: integer
-  ) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: String,
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double) = this()
   def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Double, align: integer) = this()
-  def this(
-    scene: Scene,
-    x: Double,
-    y: Double,
-    font: String,
-    text: js.Array[String],
-    size: js.UndefOr[scala.Nothing],
-    align: integer
-  ) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: String, size: Unit, align: integer) = this()
   def this(
     scene: Scene,
     x: Double,
@@ -97,6 +62,63 @@ class BitmapText protected ()
     size: Double,
     align: integer
   ) = this()
+  def this(
+    scene: Scene,
+    x: Double,
+    y: Double,
+    font: String,
+    text: js.Array[String],
+    size: Unit,
+    align: integer
+  ) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Double, align: integer) = this()
+  def this(scene: Scene, x: Double, y: Double, font: String, text: Unit, size: Unit, align: integer) = this()
+  
+  /**
+    * The depth of this Game Object within the Scene.
+    * 
+    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+    * of Game Objects, without actually moving their position in the display list.
+    * 
+    * The default depth is zero. A Game Object with a higher depth
+    * value will always render in front of one with a lower value.
+    * 
+    * Setting the depth will queue a depth sort event within the Scene.
+    */
+  /* CompleteClass */
+  var depth: Double = js.native
+  
+  /**
+    * The depth of this Game Object within the Scene.
+    * 
+    * The depth is also known as the 'z-index' in some environments, and allows you to change the rendering order
+    * of Game Objects, without actually moving their position in the display list.
+    * 
+    * The default depth is zero. A Game Object with a higher depth
+    * value will always render in front of one with a lower value.
+    * 
+    * Setting the depth will queue a depth sort event within the Scene.
+    * @param value The depth of this Game Object.
+    */
+  /* CompleteClass */
+  override def setDepth(value: integer): this.type = js.native
+  
+  /**
+    * Sets the visibility of this Game Object.
+    * 
+    * An invisible Game Object will skip rendering, but will still process update logic.
+    * @param value The visible state of the Game Object.
+    */
+  /* CompleteClass */
+  override def setVisible(value: Boolean): this.type = js.native
+  
+  /**
+    * The visible state of the Game Object.
+    * 
+    * An invisible Game Object will skip rendering, but will still process update logic.
+    */
+  /* CompleteClass */
+  var visible: Boolean = js.native
 }
 object BitmapText {
   
@@ -147,22 +169,19 @@ object BitmapText {
     * @param ySpacing The y-axis spacing to add to the line height.
     */
   /* static member */
-  @JSImport("phaser", "GameObjects.BitmapText.ParseFromAtlas")
-  @js.native
-  def ParseFromAtlas(scene: Scene, fontName: String, textureKey: String, frameKey: String, xmlKey: String): Boolean = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseFromAtlas")
-  @js.native
+  @scala.inline
+  def ParseFromAtlas(scene: Scene, fontName: String, textureKey: String, frameKey: String, xmlKey: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def ParseFromAtlas(
     scene: Scene,
     fontName: String,
     textureKey: String,
     frameKey: String,
     xmlKey: String,
-    xSpacing: js.UndefOr[scala.Nothing],
+    xSpacing: Unit,
     ySpacing: integer
-  ): Boolean = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseFromAtlas")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def ParseFromAtlas(
     scene: Scene,
     fontName: String,
@@ -170,9 +189,8 @@ object BitmapText {
     frameKey: String,
     xmlKey: String,
     xSpacing: integer
-  ): Boolean = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseFromAtlas")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def ParseFromAtlas(
     scene: Scene,
     fontName: String,
@@ -181,7 +199,7 @@ object BitmapText {
     xmlKey: String,
     xSpacing: integer,
     ySpacing: integer
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseFromAtlas")(scene.asInstanceOf[js.Any], fontName.asInstanceOf[js.Any], textureKey.asInstanceOf[js.Any], frameKey.asInstanceOf[js.Any], xmlKey.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Parse an XML font to Bitmap Font data for the Bitmap Font cache.
@@ -191,33 +209,20 @@ object BitmapText {
     * @param frame The texture frame to take into account while parsing.
     */
   /* static member */
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(
-    xml: XMLDocument,
-    xSpacing: js.UndefOr[scala.Nothing],
-    ySpacing: js.UndefOr[scala.Nothing],
-    frame: Frame
-  ): BitmapFontData = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: js.UndefOr[scala.Nothing], ySpacing: integer): BitmapFontData = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: js.UndefOr[scala.Nothing], ySpacing: integer, frame: Frame): BitmapFontData = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: js.UndefOr[scala.Nothing], frame: Frame): BitmapFontData = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = js.native
-  @JSImport("phaser", "GameObjects.BitmapText.ParseXMLBitmapFont")
-  @js.native
-  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = js.native
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument): BitmapFontData = ^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any]).asInstanceOf[BitmapFontData]
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: Unit, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: Unit, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
+  @scala.inline
+  def ParseXMLBitmapFont(xml: XMLDocument, xSpacing: integer, ySpacing: integer, frame: Frame): BitmapFontData = (^.asInstanceOf[js.Dynamic].applyDynamic("ParseXMLBitmapFont")(xml.asInstanceOf[js.Any], xSpacing.asInstanceOf[js.Any], ySpacing.asInstanceOf[js.Any], frame.asInstanceOf[js.Any])).asInstanceOf[BitmapFontData]
 }

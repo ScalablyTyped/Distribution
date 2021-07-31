@@ -15,10 +15,13 @@ import typings.opentelemetryCore.typesMod.LogLevel
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@opentelemetry/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@opentelemetry/core", "ACTIVE_SPAN_KEY")
   @js.native
@@ -79,13 +82,13 @@ object mod {
   object ExportResult extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.exportResultMod.ExportResult with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.exportResultMod.ExportResult & Double] = js.native
     
-    /* 1 */ val FAILED_NOT_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_NOT_RETRYABLE with Double = js.native
+    /* 1 */ val FAILED_NOT_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_NOT_RETRYABLE & Double = js.native
     
-    /* 2 */ val FAILED_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_RETRYABLE with Double = js.native
+    /* 2 */ val FAILED_RETRYABLE: typings.opentelemetryCore.exportResultMod.ExportResult.FAILED_RETRYABLE & Double = js.native
     
-    /* 0 */ val SUCCESS: typings.opentelemetryCore.exportResultMod.ExportResult.SUCCESS with Double = js.native
+    /* 0 */ val SUCCESS: typings.opentelemetryCore.exportResultMod.ExportResult.SUCCESS & Double = js.native
   }
   
   @JSImport("@opentelemetry/core", "HttpCorrelationContext")
@@ -103,15 +106,15 @@ object mod {
   object LogLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.typesMod.LogLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryCore.typesMod.LogLevel & Double] = js.native
     
-    /* 3 */ val DEBUG: typings.opentelemetryCore.typesMod.LogLevel.DEBUG with Double = js.native
+    /* 3 */ val DEBUG: typings.opentelemetryCore.typesMod.LogLevel.DEBUG & Double = js.native
     
-    /* 0 */ val ERROR: typings.opentelemetryCore.typesMod.LogLevel.ERROR with Double = js.native
+    /* 0 */ val ERROR: typings.opentelemetryCore.typesMod.LogLevel.ERROR & Double = js.native
     
-    /* 2 */ val INFO: typings.opentelemetryCore.typesMod.LogLevel.INFO with Double = js.native
+    /* 2 */ val INFO: typings.opentelemetryCore.typesMod.LogLevel.INFO & Double = js.native
     
-    /* 1 */ val WARN: typings.opentelemetryCore.typesMod.LogLevel.WARN with Double = js.native
+    /* 1 */ val WARN: typings.opentelemetryCore.typesMod.LogLevel.WARN & Double = js.native
   }
   
   @JSImport("@opentelemetry/core", "MAX_NAME_VALUE_PAIRS")
@@ -235,128 +238,97 @@ object mod {
   @js.native
   val X_B3_TRACE_ID: /* "x-b3-traceid" */ String = js.native
   
-  @JSImport("@opentelemetry/core", "getActiveSpan")
-  @js.native
-  def getActiveSpan(context: Context): js.UndefOr[Span] = js.native
+  @scala.inline
+  def getActiveSpan(context: Context): js.UndefOr[Span] = ^.asInstanceOf[js.Dynamic].applyDynamic("getActiveSpan")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Span]]
   
-  @JSImport("@opentelemetry/core", "getCorrelationContext")
-  @js.native
-  def getCorrelationContext(context: Context): js.UndefOr[CorrelationContext] = js.native
+  @scala.inline
+  def getCorrelationContext(context: Context): js.UndefOr[CorrelationContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCorrelationContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[CorrelationContext]]
   
-  @JSImport("@opentelemetry/core", "getEnv")
-  @js.native
-  def getEnv(): RequiredENVIRONMENT = js.native
+  @scala.inline
+  def getEnv(): RequiredENVIRONMENT = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[RequiredENVIRONMENT]
   
-  @JSImport("@opentelemetry/core", "getExtractedSpanContext")
-  @js.native
-  def getExtractedSpanContext(context: Context): js.UndefOr[SpanContext] = js.native
+  @scala.inline
+  def getExtractedSpanContext(context: Context): js.UndefOr[SpanContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getExtractedSpanContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SpanContext]]
   
-  @JSImport("@opentelemetry/core", "getParentSpanContext")
-  @js.native
-  def getParentSpanContext(context: Context): js.UndefOr[SpanContext] = js.native
+  @scala.inline
+  def getParentSpanContext(context: Context): js.UndefOr[SpanContext] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParentSpanContext")(context.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[SpanContext]]
   
-  @JSImport("@opentelemetry/core", "hexToBase64")
-  @js.native
-  def hexToBase64(hexStr: String): String = js.native
+  @scala.inline
+  def hexToBase64(hexStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hexToBase64")(hexStr.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@opentelemetry/core", "hrTime")
-  @js.native
-  def hrTime(): HrTime = js.native
-  @JSImport("@opentelemetry/core", "hrTime")
-  @js.native
-  def hrTime(performanceNow: Double): HrTime = js.native
+  @scala.inline
+  def hrTime(): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTime")().asInstanceOf[HrTime]
+  @scala.inline
+  def hrTime(performanceNow: Double): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTime")(performanceNow.asInstanceOf[js.Any]).asInstanceOf[HrTime]
   
-  @JSImport("@opentelemetry/core", "hrTimeDuration")
-  @js.native
-  def hrTimeDuration(startTime: HrTime, endTime: HrTime): HrTime = js.native
+  @scala.inline
+  def hrTimeDuration(startTime: HrTime, endTime: HrTime): HrTime = (^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeDuration")(startTime.asInstanceOf[js.Any], endTime.asInstanceOf[js.Any])).asInstanceOf[HrTime]
   
-  @JSImport("@opentelemetry/core", "hrTimeToMicroseconds")
-  @js.native
-  def hrTimeToMicroseconds(hrTime: HrTime): Double = js.native
+  @scala.inline
+  def hrTimeToMicroseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMicroseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@opentelemetry/core", "hrTimeToMilliseconds")
-  @js.native
-  def hrTimeToMilliseconds(hrTime: HrTime): Double = js.native
+  @scala.inline
+  def hrTimeToMilliseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToMilliseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@opentelemetry/core", "hrTimeToNanoseconds")
-  @js.native
-  def hrTimeToNanoseconds(hrTime: HrTime): Double = js.native
+  @scala.inline
+  def hrTimeToNanoseconds(hrTime: HrTime): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToNanoseconds")(hrTime.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@opentelemetry/core", "hrTimeToTimeStamp")
-  @js.native
-  def hrTimeToTimeStamp(hrTime: HrTime): String = js.native
+  @scala.inline
+  def hrTimeToTimeStamp(hrTime: HrTime): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hrTimeToTimeStamp")(hrTime.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@opentelemetry/core", "_invokeGlobalShutdown")
-  @js.native
-  def invokeGlobalShutdown(): Unit = js.native
+  @scala.inline
+  def invokeGlobalShutdown(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_invokeGlobalShutdown")().asInstanceOf[Unit]
   
-  @JSImport("@opentelemetry/core", "isInstrumentationSuppressed")
-  @js.native
-  def isInstrumentationSuppressed(context: Context): Boolean = js.native
+  @scala.inline
+  def isInstrumentationSuppressed(context: Context): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstrumentationSuppressed")(context.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/core", "isTimeInput")
-  @js.native
-  def isTimeInput(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isTimeInput(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInput")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/core", "isTimeInputHrTime")
-  @js.native
-  def isTimeInputHrTime(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isTimeInputHrTime(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimeInputHrTime")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/core", "isUrlIgnored")
-  @js.native
-  def isUrlIgnored(url: String): Boolean = js.native
-  @JSImport("@opentelemetry/core", "isUrlIgnored")
-  @js.native
-  def isUrlIgnored(url: String, ignoredUrls: js.Array[String | RegExp]): Boolean = js.native
+  @scala.inline
+  def isUrlIgnored(url: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrlIgnored")(url.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isUrlIgnored(url: String, ignoredUrls: js.Array[String | RegExp]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isUrlIgnored")(url.asInstanceOf[js.Any], ignoredUrls.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/core", "isWrapped")
-  @js.native
-  def isWrapped(func: js.Any): Boolean = js.native
+  @scala.inline
+  def isWrapped(func: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWrapped")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@opentelemetry/core", "notifyOnGlobalShutdown")
-  @js.native
-  def notifyOnGlobalShutdown(cb: js.Function0[Unit]): js.Function0[Unit] = js.native
+  @scala.inline
+  def notifyOnGlobalShutdown(cb: js.Function0[Unit]): js.Function0[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("notifyOnGlobalShutdown")(cb.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Unit]]
   
   @JSImport("@opentelemetry/core", "otperformance")
   @js.native
   val otperformance: Performance_ = js.native
   
-  @JSImport("@opentelemetry/core", "parseTraceParent")
-  @js.native
-  def parseTraceParent(traceParent: String): SpanContext | Null = js.native
+  @scala.inline
+  def parseTraceParent(traceParent: String): SpanContext | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTraceParent")(traceParent.asInstanceOf[js.Any]).asInstanceOf[SpanContext | Null]
   
-  @JSImport("@opentelemetry/core", "setActiveSpan")
-  @js.native
-  def setActiveSpan(context: Context, span: Span): Context = js.native
+  @scala.inline
+  def setActiveSpan(context: Context, span: Span): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setActiveSpan")(context.asInstanceOf[js.Any], span.asInstanceOf[js.Any])).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core", "setCorrelationContext")
-  @js.native
-  def setCorrelationContext(context: Context, correlationContext: CorrelationContext): Context = js.native
+  @scala.inline
+  def setCorrelationContext(context: Context, correlationContext: CorrelationContext): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setCorrelationContext")(context.asInstanceOf[js.Any], correlationContext.asInstanceOf[js.Any])).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core", "setExtractedSpanContext")
-  @js.native
-  def setExtractedSpanContext(context: Context, spanContext: SpanContext): Context = js.native
+  @scala.inline
+  def setExtractedSpanContext(context: Context, spanContext: SpanContext): Context = (^.asInstanceOf[js.Dynamic].applyDynamic("setExtractedSpanContext")(context.asInstanceOf[js.Any], spanContext.asInstanceOf[js.Any])).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core", "suppressInstrumentation")
-  @js.native
-  def suppressInstrumentation(context: Context): Context = js.native
+  @scala.inline
+  def suppressInstrumentation(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("suppressInstrumentation")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core", "timeInputToHrTime")
-  @js.native
-  def timeInputToHrTime(time: TimeInput): HrTime = js.native
+  @scala.inline
+  def timeInputToHrTime(time: TimeInput): HrTime = ^.asInstanceOf[js.Dynamic].applyDynamic("timeInputToHrTime")(time.asInstanceOf[js.Any]).asInstanceOf[HrTime]
   
-  @JSImport("@opentelemetry/core", "unrefTimer")
-  @js.native
-  def unrefTimer(timer: Timer): Unit = js.native
+  @scala.inline
+  def unrefTimer(timer: Timer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unrefTimer")(timer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@opentelemetry/core", "unsuppressInstrumentation")
-  @js.native
-  def unsuppressInstrumentation(context: Context): Context = js.native
+  @scala.inline
+  def unsuppressInstrumentation(context: Context): Context = ^.asInstanceOf[js.Dynamic].applyDynamic("unsuppressInstrumentation")(context.asInstanceOf[js.Any]).asInstanceOf[Context]
   
-  @JSImport("@opentelemetry/core", "urlMatches")
-  @js.native
-  def urlMatches(url: String, urlToMatch: String): Boolean = js.native
-  @JSImport("@opentelemetry/core", "urlMatches")
-  @js.native
-  def urlMatches(url: String, urlToMatch: RegExp): Boolean = js.native
+  @scala.inline
+  def urlMatches(url: String, urlToMatch: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("urlMatches")(url.asInstanceOf[js.Any], urlToMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def urlMatches(url: String, urlToMatch: RegExp): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("urlMatches")(url.asInstanceOf[js.Any], urlToMatch.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

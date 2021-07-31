@@ -3,11 +3,11 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 import typings.winrt.Windows.Foundation.IAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EasClientSecurityPolicy extends IEasClientSecurityPolicy
+trait EasClientSecurityPolicy
+  extends StObject
+     with IEasClientSecurityPolicy
 object EasClientSecurityPolicy {
   
   @scala.inline

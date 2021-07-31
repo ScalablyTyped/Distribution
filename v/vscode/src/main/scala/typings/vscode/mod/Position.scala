@@ -4,7 +4,6 @@ import typings.vscode.anon.Character
 import typings.vscode.anon.CharacterDelta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vscode", "Position")
@@ -98,9 +97,9 @@ class Position protected () extends StObject {
     * is not changing anything.
     */
   def translate(change: CharacterDelta): Position = js.native
-  def translate(lineDelta: js.UndefOr[scala.Nothing], characterDelta: Double): Position = js.native
   def translate(lineDelta: Double): Position = js.native
   def translate(lineDelta: Double, characterDelta: Double): Position = js.native
+  def translate(lineDelta: Unit, characterDelta: Double): Position = js.native
   
   /**
     * Create a new position derived from this position.
@@ -118,7 +117,7 @@ class Position protected () extends StObject {
     * is not changing anything.
     */
   def `with`(change: Character): Position = js.native
-  def `with`(line: js.UndefOr[scala.Nothing], character: Double): Position = js.native
   def `with`(line: Double): Position = js.native
   def `with`(line: Double, character: Double): Position = js.native
+  def `with`(line: Unit, character: Double): Position = js.native
 }

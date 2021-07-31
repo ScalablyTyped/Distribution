@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GrantFlowEntitlementsResponse extends StObject {
   
   /**
     * The entitlements that were just granted.
     */
-  var Entitlements: js.UndefOr[listOfEntitlement] = js.native
+  var Entitlements: js.UndefOr[listOfEntitlement] = js.undefined
   
   /**
     * The ARN of the flow that these entitlements were granted to.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
 }
 object GrantFlowEntitlementsResponse {
   

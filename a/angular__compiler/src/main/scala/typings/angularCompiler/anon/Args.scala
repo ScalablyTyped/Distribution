@@ -3,15 +3,13 @@ package typings.angularCompiler.anon
 import typings.angularCompiler.outputAstMod.Statement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Args extends StObject {
   
-  var args: js.Array[typings.angularCompiler.outputAstMod.Expression] = js.native
+  var args: js.Array[typings.angularCompiler.outputAstMod.Expression]
   
-  var stmts: js.Array[Statement] = js.native
+  var stmts: js.Array[Statement]
 }
 object Args {
   

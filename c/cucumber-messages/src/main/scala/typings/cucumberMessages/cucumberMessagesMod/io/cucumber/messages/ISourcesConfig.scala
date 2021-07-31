@@ -2,24 +2,22 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SourcesConfig. */
-@js.native
 trait ISourcesConfig extends StObject {
   
   /** SourcesConfig absolutePaths */
-  var absolutePaths: js.UndefOr[js.Array[String] | Null] = js.native
+  var absolutePaths: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** SourcesConfig filters */
-  var filters: js.UndefOr[ISourcesFilterConfig | Null] = js.native
+  var filters: js.UndefOr[ISourcesFilterConfig | Null] = js.undefined
   
   /** SourcesConfig language */
-  var language: js.UndefOr[String | Null] = js.native
+  var language: js.UndefOr[String | Null] = js.undefined
   
   /** SourcesConfig order */
-  var order: js.UndefOr[ISourcesOrder | Null] = js.native
+  var order: js.UndefOr[ISourcesOrder | Null] = js.undefined
 }
 object ISourcesConfig {
   

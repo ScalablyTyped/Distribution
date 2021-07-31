@@ -4,33 +4,31 @@ import typings.azure.anon.Database
 import typings.azure.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterCreationOptions extends StObject {
   
-  var additionalStorageAccounts: js.UndefOr[js.Array[Key]] = js.native
+  var additionalStorageAccounts: js.UndefOr[js.Array[Key]] = js.undefined
   
-  var defaultStorageAccountKey: String = js.native
+  var defaultStorageAccountKey: String
   
-  var defaultStorageAccountName: String = js.native
+  var defaultStorageAccountName: String
   
-  var defaultStorageContainer: String = js.native
+  var defaultStorageContainer: String
   
-  var hiveMetastore: js.UndefOr[Database] = js.native
+  var hiveMetastore: js.UndefOr[Database] = js.undefined
   
-  var location: String = js.native
+  var location: String
   
-  var name: String = js.native
+  var name: String
   
-  var nodes: Double = js.native
+  var nodes: Double
   
-  var oozieMetastore: js.UndefOr[Database] = js.native
+  var oozieMetastore: js.UndefOr[Database] = js.undefined
   
-  var password: String = js.native
+  var password: String
   
-  var user: String = js.native
+  var user: String
 }
 object ClusterCreationOptions {
   

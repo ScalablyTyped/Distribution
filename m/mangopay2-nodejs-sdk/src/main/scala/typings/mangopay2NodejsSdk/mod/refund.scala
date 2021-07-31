@@ -6,21 +6,19 @@ import typings.mangopay2NodejsSdk.mod.transaction.TransactionStatus
 import typings.mangopay2NodejsSdk.mod.transaction.TransactionType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refund {
   
-  @js.native
   trait CreatePayInRefund extends StObject {
     
-    var AuthorId: String = js.native
+    var AuthorId: String
     
-    var DebitedFunds: js.UndefOr[MoneyData] = js.native
+    var DebitedFunds: js.UndefOr[MoneyData] = js.undefined
     
-    var Fees: js.UndefOr[MoneyData] = js.native
+    var Fees: js.UndefOr[MoneyData] = js.undefined
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreatePayInRefund {
     
@@ -56,12 +54,11 @@ object refund {
     }
   }
   
-  @js.native
   trait CreateTransferRefund extends StObject {
     
-    var AuthorId: String = js.native
+    var AuthorId: String
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
   }
   object CreateTransferRefund {
     
@@ -85,29 +82,30 @@ object refund {
     }
   }
   
-  @js.native
-  trait RefundData extends TransactionData {
+  trait RefundData
+    extends StObject
+       with TransactionData {
     
     /**
       * The initial transaction ID
       */
-    var InitialTransactionId: String = js.native
+    var InitialTransactionId: String
     
     /**
       * The initial transaction type
       */
-    var InitialTransactionType: TransactionType = js.native
+    var InitialTransactionType: TransactionType
     
     /**
       * The nature of the transaction
       */
     @JSName("Nature")
-    var Nature_RefundData: REFUND = js.native
+    var Nature_RefundData: REFUND
     
     /**
       * Contains info about the reason for refund
       */
-    var RefundReason: typings.mangopay2NodejsSdk.mod.refund.RefundReason = js.native
+    var RefundReason: typings.mangopay2NodejsSdk.mod.refund.RefundReason
   }
   object RefundData {
     
@@ -125,7 +123,6 @@ object refund {
       Id: String,
       InitialTransactionId: String,
       InitialTransactionType: TransactionType,
-      Nature: REFUND,
       RefundReason: RefundReason,
       ResultCode: String,
       ResultMessage: String,
@@ -133,7 +130,7 @@ object refund {
       Tag: String,
       Type: TransactionType
     ): RefundData = {
-      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InitialTransactionId = InitialTransactionId.asInstanceOf[js.Any], InitialTransactionType = InitialTransactionType.asInstanceOf[js.Any], Nature = Nature.asInstanceOf[js.Any], RefundReason = RefundReason.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(AuthorId = AuthorId.asInstanceOf[js.Any], CreationDate = CreationDate.asInstanceOf[js.Any], CreditedFunds = CreditedFunds.asInstanceOf[js.Any], CreditedUserId = CreditedUserId.asInstanceOf[js.Any], CreditedWalletId = CreditedWalletId.asInstanceOf[js.Any], DebitedFunds = DebitedFunds.asInstanceOf[js.Any], DebitedWalletId = DebitedWalletId.asInstanceOf[js.Any], ExecutionDate = ExecutionDate.asInstanceOf[js.Any], Fees = Fees.asInstanceOf[js.Any], Id = Id.asInstanceOf[js.Any], InitialTransactionId = InitialTransactionId.asInstanceOf[js.Any], InitialTransactionType = InitialTransactionType.asInstanceOf[js.Any], Nature = "REFUND", RefundReason = RefundReason.asInstanceOf[js.Any], ResultCode = ResultCode.asInstanceOf[js.Any], ResultMessage = ResultMessage.asInstanceOf[js.Any], Status = Status.asInstanceOf[js.Any], Tag = Tag.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
       __obj.asInstanceOf[RefundData]
     }
     
@@ -154,10 +151,9 @@ object refund {
     }
   }
   
-  @js.native
   trait RefundReason extends StObject {
     
-    var RefundReasonType: typings.mangopay2NodejsSdk.mod.refund.RefundReasonType = js.native
+    var RefundReasonType: typings.mangopay2NodejsSdk.mod.refund.RefundReasonType
   }
   object RefundReason {
     

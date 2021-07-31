@@ -10,46 +10,44 @@ import typings.wechatMiniprogram.anon.PartialPageLifetimes
 import typings.wechatMiniprogram.anon.Partialcreatedvoidattache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<wechat-miniprogram.WechatMiniprogram.Component.Data<TData>> & std.Partial<wechat-miniprogram.WechatMiniprogram.Component.Property<TProperty>> & std.Partial<wechat-miniprogram.WechatMiniprogram.Component.Method<TMethod, TIsPage>> & std.Partial<wechat-miniprogram.WechatMiniprogram.Component.OtherOption> & std.Partial<wechat-miniprogram.WechatMiniprogram.Component.Lifetimes> & std.ThisType<wechat-miniprogram.WechatMiniprogram.Component.Instance<TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage>> */
-@js.native
 trait Options[TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: MethodOption */, TCustomInstanceProperty /* <: IAnyObject */, TIsPage /* <: Boolean */] extends StObject {
   
-  var attached: js.UndefOr[js.Function0[Unit]] = js.native
+  var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var behaviors: js.UndefOr[js.Array[BehaviorIdentifier]] = js.native
+  var behaviors: js.UndefOr[js.Array[BehaviorIdentifier]] = js.undefined
   
-  var created: js.UndefOr[js.Function0[Unit]] = js.native
+  var created: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: js.UndefOr[TData] = js.native
+  var data: js.UndefOr[TData] = js.undefined
   
-  var definitionFilter: js.UndefOr[DefinitionFilter] = js.native
+  var definitionFilter: js.UndefOr[DefinitionFilter] = js.undefined
   
-  var detached: js.UndefOr[js.Function0[Unit]] = js.native
+  var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* err */ Error, Unit]] = js.undefined
   
-  var externalClasses: js.UndefOr[js.Array[String]] = js.native
+  var externalClasses: js.UndefOr[js.Array[String]] = js.undefined
   
-  var lifetimes: js.UndefOr[Partialcreatedvoidattache] = js.native
+  var lifetimes: js.UndefOr[Partialcreatedvoidattache] = js.undefined
   
-  var methods: js.UndefOr[TMethod with (js.Object | PartialILifetime)] = js.native
+  var methods: js.UndefOr[TMethod & (js.Object | PartialILifetime)] = js.undefined
   
-  var moved: js.UndefOr[js.Function0[Unit]] = js.native
+  var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var observers: js.UndefOr[Record[String, js.Function1[/* repeated */ _, _]]] = js.native
+  var observers: js.UndefOr[Record[String, js.Function1[/* repeated */ js.Any, js.Any]]] = js.undefined
   
-  var options: js.UndefOr[ComponentOptions] = js.native
+  var options: js.UndefOr[ComponentOptions] = js.undefined
   
-  var pageLifetimes: js.UndefOr[PartialPageLifetimes] = js.native
+  var pageLifetimes: js.UndefOr[PartialPageLifetimes] = js.undefined
   
-  var properties: js.UndefOr[TProperty] = js.native
+  var properties: js.UndefOr[TProperty] = js.undefined
   
-  var ready: js.UndefOr[js.Function0[Unit]] = js.native
+  var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var relations: js.UndefOr[StringDictionary[RelationOption]] = js.native
+  var relations: js.UndefOr[StringDictionary[RelationOption]] = js.undefined
 }
 object Options {
   
@@ -60,7 +58,7 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options[_, _, _, _, _], TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: MethodOption */, TCustomInstanceProperty /* <: IAnyObject */, TIsPage /* <: Boolean */] (val x: Self with (Options[TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage])) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options[?, ?, ?, ?, ?], TData /* <: DataOption */, TProperty /* <: PropertyOption */, TMethod /* <: MethodOption */, TCustomInstanceProperty /* <: IAnyObject */, TIsPage /* <: Boolean */] (val x: Self & (Options[TData, TProperty, TMethod, TCustomInstanceProperty, TIsPage])) extends AnyVal {
     
     @scala.inline
     def setAttached(value: () => Unit): Self = StObject.set(x, "attached", js.Any.fromFunction0(value))
@@ -129,7 +127,7 @@ object Options {
     def setLifetimesUndefined: Self = StObject.set(x, "lifetimes", js.undefined)
     
     @scala.inline
-    def setMethods(value: TMethod with (js.Object | PartialILifetime)): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
+    def setMethods(value: TMethod & (js.Object | PartialILifetime)): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMethodsUndefined: Self = StObject.set(x, "methods", js.undefined)
@@ -141,7 +139,7 @@ object Options {
     def setMovedUndefined: Self = StObject.set(x, "moved", js.undefined)
     
     @scala.inline
-    def setObservers(value: Record[String, js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
+    def setObservers(value: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "observers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setObserversUndefined: Self = StObject.set(x, "observers", js.undefined)

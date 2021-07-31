@@ -3,12 +3,11 @@ package typings.uiGrid.mod
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGridOptionsOf[TEntity]
-  extends typings.uiGrid.mod.cellNav.IGridOptions
+  extends StObject
+     with typings.uiGrid.mod.cellNav.IGridOptions
      with typings.uiGrid.mod.edit.IGridOptions
      with typings.uiGrid.mod.expandable.IGridOptions
      with typings.uiGrid.mod.exporter.IGridOptions[TEntity]
@@ -28,29 +27,29 @@ trait IGridOptionsOf[TEntity]
   /**
     * Default time in milliseconds to throttle aggregation calcuations, defaults to 500ms
     */
-  var aggregationCalcThrottle: js.UndefOr[Double] = js.native
+  var aggregationCalcThrottle: js.UndefOr[Double] = js.undefined
   
   /**
     * by default, the parent scope of the ui-grid element will be assigned to grid.appScope
     * this property allows you to assign any reference you want to grid.appScope
     */
-  var appScopeProvider: js.UndefOr[IScope | js.Object] = js.native
+  var appScopeProvider: js.UndefOr[IScope | js.Object] = js.undefined
   
   /**
     * Array of columnDef objects.  Only required property is name.
     */
-  var columnDefs: js.UndefOr[js.Array[IColumnDefOf[TEntity]]] = js.native
+  var columnDefs: js.UndefOr[js.Array[IColumnDefOf[TEntity]]] = js.undefined
   
   /**
     * The height of the footer rows (column footer and grid footer) in pixels
     */
-  var columnFooterHeight: js.UndefOr[Double] = js.native
+  var columnFooterHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Turn virtualization on when number of columns goes over this number, defaults to 10
     * @default 10
     */
-  var columnVirtualizationThreshold: js.UndefOr[Double] = js.native
+  var columnVirtualizationThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (mandatory) Array of data to be rendered into the grid, providing the data source or data binding for
@@ -86,14 +85,14 @@ trait IGridOptionsOf[TEntity]
     * Where you do this, you need to take care in updating the data - you can't just update `$scope.myData` to some
     * other array, you need to update $scope.gridOptions.data to point to that new array as well.
     */
-  var data: js.UndefOr[js.Array[TEntity] | String] = js.native
+  var data: js.UndefOr[js.Array[TEntity] | String] = js.undefined
   
   /**
     * True by default. When enabled, this setting displays a column
     * menu within each column.
     * @default true
     */
-  var enableColumnMenus: js.UndefOr[Boolean] = js.native
+  var enableColumnMenus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * False by default. When enabled, this setting adds filter
@@ -101,7 +100,7 @@ trait IGridOptionsOf[TEntity]
     * Filtering can then be disabled on individual columns using the columnDefs.
     * @default false
     */
-  var enableFiltering: js.UndefOr[Boolean] = js.native
+  var enableFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * False by default. When enabled, this adds a settings icon in the top right of the grid,
@@ -109,14 +108,14 @@ trait IGridOptionsOf[TEntity]
     * but can be customized to show additional actions.
     * @default false
     */
-  var enableGridMenu: js.UndefOr[Boolean] = js.native
+  var enableGridMenu: js.UndefOr[Boolean] = js.undefined
   
   /**
     * uiGridConstants.scrollbars.ALWAYS by default. This settings controls the horizontal scrollbar for the grid.
     * Supported values: uiGridConstants.scrollbars.ALWAYS, uiGridConstants.scrollbars.NEVER, uiGridConstants.scrollbars.WHEN_NEEDED
     * @default 1
     */
-  var enableHorizontalScrollbar: js.UndefOr[Boolean | Double] = js.native
+  var enableHorizontalScrollbar: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
     * True by default. When enabled, a newly initialized grid will check to see if it is tall enough to display
@@ -124,7 +123,7 @@ trait IGridOptionsOf[TEntity]
     * minRowsToShow number of rows.
     * @default true
     */
-  var enableMinHeightCheck: js.UndefOr[Boolean] = js.native
+  var enableMinHeightCheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True by default. When enabled, this setting allows uiGrid to add
@@ -138,7 +137,7 @@ trait IGridOptionsOf[TEntity]
     * and are altering the data set often.
     * @default true
     */
-  var enableRowHashing: js.UndefOr[Boolean] = js.native
+  var enableRowHashing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True by default. When enabled, this setting adds sort
@@ -146,28 +145,28 @@ trait IGridOptionsOf[TEntity]
     * Sorting can then be disabled on individual columns using the columnDefs.
     * @default true
     */
-  var enableSorting: js.UndefOr[Boolean] = js.native
+  var enableSorting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * uiGridConstants.scrollbars.ALWAYS by default. This settings controls the vertical scrollbar for the grid.
     * Supported values: uiGridConstants.scrollbars.ALWAYS, uiGridConstants.scrollbars.NEVER, uiGridConstants.scrollbars.WHEN_NEEDED
     * @default 1
     */
-  var enableVerticalScrollbar: js.UndefOr[Boolean | Double] = js.native
+  var enableVerticalScrollbar: js.UndefOr[Boolean | Double] = js.undefined
   
   /**
     * Extra columns to to render outside of the viewport, which helps with smoothness of scrolling.
     * Defaults to 4
     * @default 4
     */
-  var excessColumns: js.UndefOr[Double] = js.native
+  var excessColumns: js.UndefOr[Double] = js.undefined
   
   /**
     * Extra rows to to render outside of the viewport, which helps with smoothness of scrolling.
     * Defaults to 4
     * @default 4
     */
-  var excessRows: js.UndefOr[Double] = js.native
+  var excessRows: js.UndefOr[Double] = js.undefined
   
   /**
     * Array of property names in data to ignore when auto-generating column names.  Provides the
@@ -178,9 +177,9 @@ trait IGridOptionsOf[TEntity]
     *
     * Defaults to ['$$hashKey']
     */
-  var excludeProperties: js.UndefOr[js.Array[String]] = js.native
+  var excludeProperties: js.UndefOr[js.Array[String]] = js.undefined
   
-  var fastWatch: js.UndefOr[Boolean] = js.native
+  var fastWatch: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to true if your columns are all related directly to fields in a flat object structure - i.e.
@@ -193,7 +192,7 @@ trait IGridOptionsOf[TEntity]
     * By default false
     * @default false
     */
-  var flatEntityAccess: js.UndefOr[Boolean] = js.native
+  var flatEntityAccess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (optional) ui-grid/ui-grid-footer by default.  This footer shows the per-column
@@ -205,7 +204,7 @@ trait IGridOptionsOf[TEntity]
     * information.
     * @default 'ui-grid/ui-grid-footer'
     */
-  var footerTemplate: js.UndefOr[String] = js.native
+  var footerTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * This function returns the identity value uniquely identifying this row,
@@ -216,14 +215,14 @@ trait IGridOptionsOf[TEntity]
     * @param {IGridRow} row The row for which you want the unique id
     * @returns {string} row uid
     */
-  var getRowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], _]] = js.native
+  var getRowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], js.Any]] = js.undefined
   
   /**
     * (optional) ui-grid/ui-grid-grid-footer by default. This template by default shows the
     * total items at the bottom of the grid, and the selected items if selection is enabled.
     * @default 'ui-grid/ui-grid-grid-footer'
     */
-  var gridFooterTemplate: js.UndefOr[String] = js.native
+  var gridFooterTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Null by default. When provided, this setting uses a custom header
@@ -242,20 +241,20 @@ trait IGridOptionsOf[TEntity]
     * current 'ui-grid-header.html' template in github as your starting point.
     * @default null
     */
-  var headerTemplate: js.UndefOr[String] = js.native
+  var headerTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to 4
     * @default 4
     */
-  var horizontalScrollThreshold: js.UndefOr[Double] = js.native
+  var horizontalScrollThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Inform the grid of whether there are rows
     * to load scrolling down
     * @default true
     */
-  var infiniteScrollDown: js.UndefOr[Boolean] = js.native
+  var infiniteScrollDown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of rows from the end of the dataset
@@ -263,32 +262,32 @@ trait IGridOptionsOf[TEntity]
     * for more data
     * @default 20
     */
-  var infiniteScrollRowsFromEnd: js.UndefOr[Double] = js.native
+  var infiniteScrollRowsFromEnd: js.UndefOr[Double] = js.undefined
   
   /**
     * Inform the grid of whether there are rows
     * to load when scrolling up
     * @default false
     */
-  var infiniteScrollUp: js.UndefOr[Boolean] = js.native
+  var infiniteScrollUp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defaults to 200
     * @default 200
     */
-  var maxVisibleColumnCount: js.UndefOr[Double] = js.native
+  var maxVisibleColumnCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Minimum number of rows to show when the grid doesn't have a defined height. Defaults to "10".
     * @default 10
     */
-  var minRowsToShow: js.UndefOr[Double] = js.native
+  var minRowsToShow: js.UndefOr[Double] = js.undefined
   
   /**
     * Columns can't be smaller than this, defaults to 10 pixels
     * @default 10
     */
-  var minimumColumnSize: js.UndefOr[Double] = js.native
+  var minimumColumnSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A callback that returns the gridApi once the grid is instantiated, which is
@@ -299,7 +298,7 @@ trait IGridOptionsOf[TEntity]
     * if needed
     * @param {IGridApi} gridApi
     */
-  var onRegisterApi: js.UndefOr[js.Function1[/* gridApi */ IGridApiOf[TEntity], Unit]] = js.native
+  var onRegisterApi: js.UndefOr[js.Function1[/* gridApi */ IGridApiOf[TEntity], Unit]] = js.undefined
   
   /**
     * By default, rows are compared using object equality.  This option can be overridden
@@ -307,13 +306,13 @@ trait IGridOptionsOf[TEntity]
     * @param {TEntity} entityA First Data Item to compare
     * @param {TEntity} entityB Second Data Item to compare
     */
-  var rowEquality: js.UndefOr[js.Function2[/* entityA */ TEntity, /* entityB */ TEntity, Boolean]] = js.native
+  var rowEquality: js.UndefOr[js.Function2[/* entityA */ TEntity, /* entityB */ TEntity, Boolean]] = js.undefined
   
   /**
     * The height of the row in pixels, defaults to 30
     * @default 30
     */
-  var rowHeight: js.UndefOr[Double] = js.native
+  var rowHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * This function is used to get and, if necessary, set the value uniquely identifying this row
@@ -322,7 +321,7 @@ trait IGridOptionsOf[TEntity]
     * By default it returns the `$$hashKey` property if it exists. If it doesn't it uses gridUtil.nextUid()
     * to generate one
     */
-  var rowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], _]] = js.native
+  var rowIdentity: js.UndefOr[js.Function1[/* row */ IGridRowOf[TEntity], js.Any]] = js.undefined
   
   /**
     * 'ui-grid/ui-grid-row' by default. When provided, this setting uses a
@@ -338,65 +337,65 @@ trait IGridOptionsOf[TEntity]
     * </br>Refer to the custom row template tutorial for more information.
     * @default 'ui-grid/ui-grid-row'
     */
-  var rowTemplate: js.UndefOr[String] = js.native
+  var rowTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Default time in milliseconds to debounce scroll events, defaults to 300ms
     * @default 300
     */
-  var scrollDebounce: js.UndefOr[Double] = js.native
+  var scrollDebounce: js.UndefOr[Double] = js.undefined
   
   /**
     * Defaults to 4
     * @default 4
     */
-  var scrollThreshold: js.UndefOr[Double] = js.native
+  var scrollThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether or not to show the column footer, defaults to false
     * The column footer displays column aggregates
     * @default false
     */
-  var showColumnFooter: js.UndefOr[Boolean] = js.native
+  var showColumnFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not to show the footer, defaults to false
     * The footer display Total Rows and Visible Rows (filtered rows)
     * @default false
     */
-  var showGridFooter: js.UndefOr[Boolean] = js.native
+  var showGridFooter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True by default. When set to false, this setting will replace the
     * standard header template with '<div></div>', resulting in no header being shown.
     * @default true
     */
-  var showHeader: js.UndefOr[Boolean] = js.native
+  var showHeader: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disables client side filtering. When true, handle the filterChanged event and set data,
     * defaults to false
     * @default false
     */
-  var useExternalFiltering: js.UndefOr[Boolean] = js.native
+  var useExternalFiltering: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Disables client side sorting. When true, handle the sortChanged event and do the sorting there
     * @default false
     */
-  var useExternalSorting: js.UndefOr[Boolean] = js.native
+  var useExternalSorting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Turn virtualization on when number of data elements goes over this number, defaults to 20
     * @default 20
     */
-  var virtualizationThreshold: js.UndefOr[Double] = js.native
+  var virtualizationThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * Default time in milliseconds to throttle scroll events to, defaults to 70ms
     * @default 70
     */
-  var wheelScrollThrottle: js.UndefOr[Double] = js.native
+  var wheelScrollThrottle: js.UndefOr[Double] = js.undefined
 }
 object IGridOptionsOf {
   
@@ -407,7 +406,7 @@ object IGridOptionsOf {
   }
   
   @scala.inline
-  implicit class IGridOptionsOfMutableBuilder[Self <: IGridOptionsOf[_], TEntity] (val x: Self with IGridOptionsOf[TEntity]) extends AnyVal {
+  implicit class IGridOptionsOfMutableBuilder[Self <: IGridOptionsOf[?], TEntity] (val x: Self & IGridOptionsOf[TEntity]) extends AnyVal {
     
     @scala.inline
     def setAggregationCalcThrottle(value: Double): Self = StObject.set(x, "aggregationCalcThrottle", value.asInstanceOf[js.Any])
@@ -539,7 +538,7 @@ object IGridOptionsOf {
     def setFooterTemplateUndefined: Self = StObject.set(x, "footerTemplate", js.undefined)
     
     @scala.inline
-    def setGetRowIdentity(value: /* row */ IGridRowOf[TEntity] => _): Self = StObject.set(x, "getRowIdentity", js.Any.fromFunction1(value))
+    def setGetRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "getRowIdentity", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetRowIdentityUndefined: Self = StObject.set(x, "getRowIdentity", js.undefined)
@@ -617,7 +616,7 @@ object IGridOptionsOf {
     def setRowHeightUndefined: Self = StObject.set(x, "rowHeight", js.undefined)
     
     @scala.inline
-    def setRowIdentity(value: /* row */ IGridRowOf[TEntity] => _): Self = StObject.set(x, "rowIdentity", js.Any.fromFunction1(value))
+    def setRowIdentity(value: /* row */ IGridRowOf[TEntity] => js.Any): Self = StObject.set(x, "rowIdentity", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRowIdentityUndefined: Self = StObject.set(x, "rowIdentity", js.undefined)

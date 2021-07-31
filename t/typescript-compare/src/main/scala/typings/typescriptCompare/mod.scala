@@ -13,7 +13,6 @@ import typings.typescriptLogic.mod.Not
 import typings.typescriptLogic.mod.Or
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,16 +24,15 @@ object mod {
   
   object Compare {
     
-    @js.native
     trait Options extends StObject {
       
-      var broaderLeft: js.Any = js.native
+      var broaderLeft: js.Any
       
-      var broaderRight: js.Any = js.native
+      var broaderRight: js.Any
       
-      var equal: js.Any = js.native
+      var equal: js.Any
       
-      var mismatch: js.Any = js.native
+      var mismatch: js.Any
     }
     object Options {
       
@@ -44,26 +42,27 @@ object mod {
         __obj.asInstanceOf[Options]
       }
       
-      @js.native
-      trait Default extends Options {
+      trait Default
+        extends StObject
+           with Options {
         
         @JSName("broaderLeft")
-        var broaderLeft_Default: broaderLeft = js.native
+        var broaderLeft_Default: broaderLeft
         
         @JSName("broaderRight")
-        var broaderRight_Default: broaderRight = js.native
+        var broaderRight_Default: broaderRight
         
         @JSName("equal")
-        var equal_Default: equal = js.native
+        var equal_Default: equal
         
         @JSName("mismatch")
-        var mismatch_Default: mismatch = js.native
+        var mismatch_Default: mismatch
       }
       object Default {
         
         @scala.inline
-        def apply(broaderLeft: broaderLeft, broaderRight: broaderRight, equal: equal, mismatch: mismatch): Default = {
-          val __obj = js.Dynamic.literal(broaderLeft = broaderLeft.asInstanceOf[js.Any], broaderRight = broaderRight.asInstanceOf[js.Any], equal = equal.asInstanceOf[js.Any], mismatch = mismatch.asInstanceOf[js.Any])
+        def apply(): Default = {
+          val __obj = js.Dynamic.literal(broaderLeft = "broaderLeft", broaderRight = "broaderRight", equal = "equal", mismatch = "mismatch")
           __obj.asInstanceOf[Default]
         }
         

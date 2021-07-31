@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,10 +25,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
 - typings.activexLibreoffice.com_.sun.star.sdb.XSingleSelectQueryAnalyzer because Already inherited
-- typings.activexLibreoffice.com_.sun.star.sdb.XSingleSelectQueryComposer because var conflicts: Query. Inlined appendFilterByColumn, appendGroupByColumn, appendHavingClauseByColumn, appendOrderByColumn, ElementaryQuery, setFilter, setGroup, setHavingClause, setOrder, setStructuredFilter, setStructuredHavingClause */ @js.native
-trait SingleSelectQueryComposer
-  extends SingleSelectQueryAnalyzer
-     with XPropertySet {
+- typings.activexLibreoffice.com_.sun.star.sdb.XSingleSelectQueryComposer because var conflicts: Query. Inlined appendFilterByColumn, appendGroupByColumn, appendHavingClauseByColumn, appendOrderByColumn, ElementaryQuery, setFilter, setGroup, setHavingClause, setOrder, setStructuredFilter, setStructuredHavingClause */ trait SingleSelectQueryComposer
+  extends StObject
+     with XPropertySet
+     with SingleSelectQueryAnalyzer {
   
   /**
     * sets a new elementary query for the composer
@@ -57,10 +56,10 @@ trait SingleSelectQueryComposer
     * the resulting query ( {@link XSingleSelectQueryAnalyzer.getQuery()} ) to an {@link SingleSelectQueryAnalyzer} instance via {@link
     * XSingleSelectQueryAnalyzer.setQuery()} .
     */
-  var ElementaryQuery: String = js.native
+  var ElementaryQuery: String
   
   /** is the original SQL statement set with the interface {@link com.sun.star.sdb.XSingleSelectQueryAnalyzer} . */
-  var Original: String = js.native
+  var Original: String
   
   /**
     * appends a new filter condition by a {@link com.sun.star.sdb.DataColumn} providing the name and the value for the filter. The value property must be
@@ -70,14 +69,14 @@ trait SingleSelectQueryComposer
     * @param filterOperator The operator used, is defined by {@link com.sun.star.sdb.SQLFilterOperator} .
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def appendFilterByColumn(column: XPropertySet, andCriteria: Boolean, filterOperator: Double): Unit = js.native
+  def appendFilterByColumn(column: XPropertySet, andCriteria: Boolean, filterOperator: Double): Unit
   
   /**
     * appends an additional part to the group criteria of the select statement. The column must be a {@link com.sun.star.sdbcx.Column} .
     * @param column the column which is used to create a group part
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def appendGroupByColumn(column: XPropertySet): Unit = js.native
+  def appendGroupByColumn(column: XPropertySet): Unit
   
   /**
     * appends a new HAVING filter condition by a {@link com.sun.star.sdb.DataColumn} providing the name and the value for the filter.
@@ -86,7 +85,7 @@ trait SingleSelectQueryComposer
     * @param filterOperator The operator used, is defined by {@link com.sun.star.sdb.SQLFilterOperator} .
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def appendHavingClauseByColumn(column: XPropertySet, andCriteria: Boolean, filterOperator: Double): Unit = js.native
+  def appendHavingClauseByColumn(column: XPropertySet, andCriteria: Boolean, filterOperator: Double): Unit
   
   /**
     * appends an additional part to the sort order criteria of the select statement. The column must be a {@link com.sun.star.sdbcx.Column} .
@@ -94,49 +93,49 @@ trait SingleSelectQueryComposer
     * @param ascending `TRUE` when the order should be ascending, otherwise if `FALSE` descending.
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def appendOrderByColumn(column: XPropertySet, ascending: Boolean): Unit = js.native
+  def appendOrderByColumn(column: XPropertySet, ascending: Boolean): Unit
   
   /**
     * makes it possible to set a filter condition for the query.
     * @param filter the filter to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't valid or the statement isn't parsable.
     */
-  def setFilter(filter: String): Unit = js.native
+  def setFilter(filter: String): Unit
   
   /**
     * makes it possible to set a group for the query.
     * @param group the group part to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't valid or the statement isn't parsable.
     */
-  def setGroup(group: String): Unit = js.native
+  def setGroup(group: String): Unit
   
   /**
     * makes it possible to set a HAVING filter condition for the query.
     * @param filter the filter to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the statement isn't valid or the statement isn't parsable.
     */
-  def setHavingClause(filter: String): Unit = js.native
+  def setHavingClause(filter: String): Unit
   
   /**
     * makes it possible to set a sort condition for the query.
     * @param order the order part to set
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs or the order isn't valid or the statement isn't parsable.
     */
-  def setOrder(order: String): Unit = js.native
+  def setOrder(order: String): Unit
   
   /**
     * appends a new set of filter criteria which is split into levels.
     * @param filter The filter criteria is split into levels. Each level represents the OR criteria. Within each level, the filters are provided as an AND cri
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def setStructuredFilter(filter: SeqEquiv[SeqEquiv[PropertyValue]]): Unit = js.native
+  def setStructuredFilter(filter: SeqEquiv[SeqEquiv[PropertyValue]]): Unit
   
   /**
     * appends a new set of HAVING filter criteria which is split into levels.
     * @param filter The HAVING filter criteria is split into levels. Each level represents the OR criteria. Within each level, the filters are provided as an
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def setStructuredHavingClause(filter: SeqEquiv[SeqEquiv[PropertyValue]]): Unit = js.native
+  def setStructuredHavingClause(filter: SeqEquiv[SeqEquiv[PropertyValue]]): Unit
 }
 object SingleSelectQueryComposer {
   

@@ -2,22 +2,20 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details information about an error encountered during job execution or the
   * results of an unsuccessful activation of the JobTrigger. Output only field.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Error extends StObject {
   
-  var details: js.UndefOr[SchemaGoogleRpcStatus] = js.native
+  var details: js.UndefOr[SchemaGoogleRpcStatus] = js.undefined
   
   /**
     * The times the error occurred.
     */
-  var timestamps: js.UndefOr[js.Array[String]] = js.native
+  var timestamps: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Error {
   

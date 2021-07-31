@@ -2,18 +2,16 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/interchange.html#custom-named-queries
-@js.native
 trait InterchangeOptions extends StObject {
   
-  var directives: js.UndefOr[js.Object] = js.native
+  var directives: js.UndefOr[js.Object] = js.undefined
   
-  var load_attr: js.UndefOr[String] = js.native
+  var load_attr: js.UndefOr[String] = js.undefined
   
-  var named_queries: js.UndefOr[js.Object] = js.native
+  var named_queries: js.UndefOr[js.Object] = js.undefined
 }
 object InterchangeOptions {
   

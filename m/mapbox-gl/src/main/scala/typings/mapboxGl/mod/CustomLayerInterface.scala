@@ -6,14 +6,12 @@ import typings.mapboxGl.mapboxGlStrings.custom
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLayerInterface extends StObject {
   
   /** A unique layer id. */
-  var id: String = js.native
+  var id: String
   
   /**
     * Optional method called when the layer has been added to the Map with Map#addLayer.
@@ -21,7 +19,7 @@ trait CustomLayerInterface extends StObject {
     * @param map The Map this custom layer was just added to.
     * @param gl The gl context for the map.
     */
-  var onAdd: js.UndefOr[js.Function2[/* map */ Map, /* gl */ WebGLRenderingContext, Unit]] = js.native
+  var onAdd: js.UndefOr[js.Function2[/* map */ Map, /* gl */ WebGLRenderingContext, Unit]] = js.undefined
   
   /**
     * Optional method called when the layer has been removed from the Map with Map#removeLayer.
@@ -29,7 +27,7 @@ trait CustomLayerInterface extends StObject {
     * @param map The Map this custom layer was just added to.
     * @param gl The gl context for the map.
     */
-  var onRemove: js.UndefOr[js.Function2[/* map */ Map, /* gl */ WebGLRenderingContext, Unit]] = js.native
+  var onRemove: js.UndefOr[js.Function2[/* map */ Map, /* gl */ WebGLRenderingContext, Unit]] = js.undefined
   
   /**
     * Optional method called during a render frame to allow a layer to prepare resources
@@ -48,7 +46,7 @@ trait CustomLayerInterface extends StObject {
     */
   var prerender: js.UndefOr[
     js.Function2[/* gl */ WebGLRenderingContext, /* matrix */ js.Array[Double], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Called during a render frame allowing the layer to draw into the GL context.
@@ -74,20 +72,20 @@ trait CustomLayerInterface extends StObject {
     *               MercatorCoordinate .fromLatLng can be used to project a  LngLat to a mercator
     *               coordinate.
     */
-  def render(gl: WebGLRenderingContext, matrix: js.Array[Double]): Unit = js.native
+  def render(gl: WebGLRenderingContext, matrix: js.Array[Double]): Unit
   
   /* Either "2d" or "3d". Defaults to  "2d". */
-  var renderingMode: js.UndefOr[`2d` | `3d`] = js.native
+  var renderingMode: js.UndefOr[`2d` | `3d`] = js.undefined
   
   /* The layer's type. Must be "custom". */
-  var `type`: custom = js.native
+  var `type`: custom
 }
 object CustomLayerInterface {
   
   @scala.inline
-  def apply(id: String, render: (WebGLRenderingContext, js.Array[Double]) => Unit, `type`: custom): CustomLayerInterface = {
+  def apply(id: String, render: (WebGLRenderingContext, js.Array[Double]) => Unit): CustomLayerInterface = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], render = js.Any.fromFunction2(render))
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("custom")
     __obj.asInstanceOf[CustomLayerInterface]
   }
   

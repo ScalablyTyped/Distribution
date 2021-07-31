@@ -18,19 +18,17 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object style {
   
-  @js.native
   trait AtlasManagerOptions extends StObject {
     
-    var initialSize: js.UndefOr[Double] = js.native
+    var initialSize: js.UndefOr[Double] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var space: js.UndefOr[Double] = js.native
+    var space: js.UndefOr[Double] = js.undefined
   }
   object AtlasManagerOptions {
     
@@ -63,18 +61,17 @@ object style {
     }
   }
   
-  @js.native
   trait CircleOptions extends StObject {
     
-    var atlasManager: js.UndefOr[AtlasManager] = js.native
+    var atlasManager: js.UndefOr[AtlasManager] = js.undefined
     
-    var fill: js.UndefOr[Fill] = js.native
+    var fill: js.UndefOr[Fill] = js.undefined
     
-    var radius: Double = js.native
+    var radius: Double
     
-    var snapToPixel: js.UndefOr[Boolean] = js.native
+    var snapToPixel: js.UndefOr[Boolean] = js.undefined
     
-    var stroke: js.UndefOr[Stroke] = js.native
+    var stroke: js.UndefOr[Stroke] = js.undefined
   }
   object CircleOptions {
     
@@ -116,10 +113,9 @@ object style {
     }
   }
   
-  @js.native
   trait FillOptions extends StObject {
     
-    var color: js.UndefOr[Color_ | ColorLike_] = js.native
+    var color: js.UndefOr[Color_ | ColorLike_] = js.undefined
   }
   object FillOptions {
     
@@ -140,42 +136,41 @@ object style {
     }
   }
   
-  @js.native
   trait IconOptions extends StObject {
     
-    var anchor: js.UndefOr[js.Array[Double]] = js.native
+    var anchor: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var anchorOrigin: js.UndefOr[IconOrigin] = js.native
+    var anchorOrigin: js.UndefOr[IconOrigin] = js.undefined
     
-    var anchorXUnits: js.UndefOr[IconAnchorUnits] = js.native
+    var anchorXUnits: js.UndefOr[IconAnchorUnits] = js.undefined
     
-    var anchorYUnits: js.UndefOr[IconAnchorUnits] = js.native
+    var anchorYUnits: js.UndefOr[IconAnchorUnits] = js.undefined
     
-    var color: js.UndefOr[Color_ | String] = js.native
+    var color: js.UndefOr[Color_ | String] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var img: js.UndefOr[HTMLImageElement | HTMLCanvasElement] = js.native
+    var img: js.UndefOr[HTMLImageElement | HTMLCanvasElement] = js.undefined
     
-    var imgSize: js.UndefOr[Size] = js.native
+    var imgSize: js.UndefOr[Size] = js.undefined
     
-    var offset: js.UndefOr[js.Array[Double]] = js.native
+    var offset: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var offsetOrigin: js.UndefOr[IconOrigin] = js.native
+    var offsetOrigin: js.UndefOr[IconOrigin] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var rotateWithView: js.UndefOr[Boolean] = js.native
+    var rotateWithView: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[Size] = js.native
+    var size: js.UndefOr[Size] = js.undefined
     
-    var snapToPixel: js.UndefOr[Boolean] = js.native
+    var snapToPixel: js.UndefOr[Boolean] = js.undefined
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object IconOptions {
     
@@ -301,26 +296,25 @@ object style {
   /**
     * Specify radius for regular polygons, or radius1 and radius2 for stars.
     */
-  @js.native
   trait RegularShapeOptions extends StObject {
     
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
-    var fill: js.UndefOr[Fill] = js.native
+    var fill: js.UndefOr[Fill] = js.undefined
     
-    var points: Double = js.native
+    var points: Double
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var radius1: js.UndefOr[Double] = js.native
+    var radius1: js.UndefOr[Double] = js.undefined
     
-    var radius2: js.UndefOr[Double] = js.native
+    var radius2: js.UndefOr[Double] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var snapToPixel: js.UndefOr[Boolean] = js.native
+    var snapToPixel: js.UndefOr[Boolean] = js.undefined
     
-    var stroke: js.UndefOr[Stroke] = js.native
+    var stroke: js.UndefOr[Stroke] = js.undefined
   }
   object RegularShapeOptions {
     
@@ -386,22 +380,21 @@ object style {
     }
   }
   
-  @js.native
   trait StrokeOptions extends StObject {
     
-    var color: js.UndefOr[Color_ | String] = js.native
+    var color: js.UndefOr[Color_ | String] = js.undefined
     
-    var lineCap: js.UndefOr[String] = js.native
+    var lineCap: js.UndefOr[String] = js.undefined
     
-    var lineDash: js.UndefOr[js.Array[Double]] = js.native
+    var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lineDashOffset: js.UndefOr[Double] = js.native
+    var lineDashOffset: js.UndefOr[Double] = js.undefined
     
-    var lineJoin: js.UndefOr[String] = js.native
+    var lineJoin: js.UndefOr[String] = js.undefined
     
-    var miterLimit: js.UndefOr[Double] = js.native
+    var miterLimit: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object StrokeOptions {
     
@@ -461,20 +454,19 @@ object style {
     }
   }
   
-  @js.native
   trait StyleOptions extends StObject {
     
-    var fill: js.UndefOr[Fill] = js.native
+    var fill: js.UndefOr[Fill] = js.undefined
     
-    var geometry: js.UndefOr[String | Geometry | StyleGeometryFunction] = js.native
+    var geometry: js.UndefOr[String | Geometry | StyleGeometryFunction] = js.undefined
     
-    var image: js.UndefOr[Image] = js.native
+    var image: js.UndefOr[Image] = js.undefined
     
-    var stroke: js.UndefOr[Stroke] = js.native
+    var stroke: js.UndefOr[Stroke] = js.undefined
     
-    var text: js.UndefOr[Text] = js.native
+    var text: js.UndefOr[Text] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object StyleOptions {
     
@@ -530,42 +522,41 @@ object style {
     }
   }
   
-  @js.native
   trait TextOptions extends StObject {
     
-    var backgroundFill: js.UndefOr[Fill] = js.native
+    var backgroundFill: js.UndefOr[Fill] = js.undefined
     
-    var backgroundStroke: js.UndefOr[Stroke] = js.native
+    var backgroundStroke: js.UndefOr[Stroke] = js.undefined
     
-    var fill: js.UndefOr[Fill] = js.native
+    var fill: js.UndefOr[Fill] = js.undefined
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
-    var maxAngle: js.UndefOr[Boolean] = js.native
+    var maxAngle: js.UndefOr[Boolean] = js.undefined
     
-    var offsetX: js.UndefOr[Double] = js.native
+    var offsetX: js.UndefOr[Double] = js.undefined
     
-    var offsetY: js.UndefOr[Double] = js.native
+    var offsetY: js.UndefOr[Double] = js.undefined
     
-    var overflow: js.UndefOr[Boolean] = js.native
+    var overflow: js.UndefOr[Boolean] = js.undefined
     
-    var padding: js.UndefOr[js.Array[Double]] = js.native
+    var padding: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var placement: js.UndefOr[TextPlacement] = js.native
+    var placement: js.UndefOr[TextPlacement] = js.undefined
     
-    var rotateWithView: js.UndefOr[Boolean] = js.native
+    var rotateWithView: js.UndefOr[Boolean] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
     
-    var stroke: js.UndefOr[Stroke] = js.native
+    var stroke: js.UndefOr[Stroke] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var textAlign: js.UndefOr[String] = js.native
+    var textAlign: js.UndefOr[String] = js.undefined
     
-    var textBaseline: js.UndefOr[String] = js.native
+    var textBaseline: js.UndefOr[String] = js.undefined
   }
   object TextOptions {
     

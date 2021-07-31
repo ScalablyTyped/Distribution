@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceWithNamedPorts extends StObject {
   
   /** [Output Only] The URL of the instance. */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** [Output Only] The named ports that belong to this instance group. */
-  var namedPorts: js.UndefOr[js.Array[NamedPort]] = js.native
+  var namedPorts: js.UndefOr[js.Array[NamedPort]] = js.undefined
   
   /** [Output Only] The status of the instance. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object InstanceWithNamedPorts {
   

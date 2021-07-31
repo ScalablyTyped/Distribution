@@ -2,36 +2,34 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateWorldTemplateRequest extends StObject {
   
   /**
     * Unique, case-sensitive identifier that you provide to ensure the idempotency of the request.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The name of the world template.
     */
-  var name: js.UndefOr[TemplateName] = js.native
+  var name: js.UndefOr[TemplateName] = js.undefined
   
   /**
     * A map that contains tag keys and tag values that are attached to the world template.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The world template body.
     */
-  var templateBody: js.UndefOr[Json] = js.native
+  var templateBody: js.UndefOr[Json] = js.undefined
   
   /**
     * The location of the world template.
     */
-  var templateLocation: js.UndefOr[TemplateLocation] = js.native
+  var templateLocation: js.UndefOr[TemplateLocation] = js.undefined
 }
 object CreateWorldTemplateRequest {
   

@@ -1,0 +1,42 @@
+package typings.puppeteerCore
+
+import typings.puppeteerCore.anon.PreferredRevision
+import typings.puppeteerCore.connectionMod.Connection
+import typings.puppeteerCore.launchOptionsMod.LaunchOptions
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object browserRunnerMod {
+  
+  @JSImport("puppeteer-core/lib/cjs/puppeteer/node/BrowserRunner", "BrowserRunner")
+  @js.native
+  class BrowserRunner protected () extends StObject {
+    def this(executablePath: String, processArguments: js.Array[String]) = this()
+    def this(executablePath: String, processArguments: js.Array[String], tempDirectory: String) = this()
+    
+    var _closed: js.Any = js.native
+    
+    var _executablePath: js.Any = js.native
+    
+    var _listeners: js.Any = js.native
+    
+    var _processArguments: js.Any = js.native
+    
+    var _processClosing: js.Any = js.native
+    
+    var _tempDirectory: js.Any = js.native
+    
+    def close(): js.Promise[Unit] = js.native
+    
+    var connection: js.Any = js.native
+    
+    def kill(): Unit = js.native
+    
+    var proc: js.Any = js.native
+    
+    def setupConnection(options: PreferredRevision): js.Promise[Connection] = js.native
+    
+    def start(options: LaunchOptions): Unit = js.native
+  }
+}

@@ -3,15 +3,13 @@ package typings.hapiHapi.anon
 import typings.hapiHapi.hapiHapiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
-  var log: js.UndefOr[js.Array[String] | `false`] = js.native
+  var log: js.UndefOr[js.Array[String] | `false`] = js.undefined
   
-  var request: js.UndefOr[js.Array[String] | `false`] = js.native
+  var request: js.UndefOr[js.Array[String] | `false`] = js.undefined
 }
 object Log {
   

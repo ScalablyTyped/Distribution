@@ -2,30 +2,28 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Resource definition for Gmail filters. Filters apply to specific messages
   * instead of an entire email thread.
   */
-@js.native
 trait SchemaFilter extends StObject {
   
   /**
     * Action that the filter performs.
     */
-  var action: js.UndefOr[SchemaFilterAction] = js.native
+  var action: js.UndefOr[SchemaFilterAction] = js.undefined
   
   /**
     * Matching criteria for the filter.
     */
-  var criteria: js.UndefOr[SchemaFilterCriteria] = js.native
+  var criteria: js.UndefOr[SchemaFilterCriteria] = js.undefined
   
   /**
     * The server assigned ID of the filter.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
 }
 object SchemaFilter {
   

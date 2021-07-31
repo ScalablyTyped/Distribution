@@ -2,60 +2,58 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Mirror object referencing original JavaScript object.
   */
-@js.native
 trait RemoteObject extends StObject {
   
   /**
     * Object class (constructor) name. Specified for <code>object</code> type values only.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * @experimental
     */
-  var customPreview: js.UndefOr[CustomPreview] = js.native
+  var customPreview: js.UndefOr[CustomPreview] = js.undefined
   
   /**
     * String representation of the object.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Unique object identifier (for non-primitive values).
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * Preview containing abbreviated property values. Specified for <code>object</code> type values only.
     * @experimental
     */
-  var preview: js.UndefOr[ObjectPreview] = js.native
+  var preview: js.UndefOr[ObjectPreview] = js.undefined
   
   /**
     * Object subtype hint. Specified for <code>object</code> type values only.
     */
-  var subtype: js.UndefOr[String] = js.native
+  var subtype: js.UndefOr[String] = js.undefined
   
   /**
     * Object type.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Primitive value which can not be JSON-stringified does not have <code>value</code>, but gets this property.
     */
-  var unserializableValue: js.UndefOr[UnserializableValue] = js.native
+  var unserializableValue: js.UndefOr[UnserializableValue] = js.undefined
   
   /**
     * Remote object value in case of primitive values or JSON values (if it was requested).
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object RemoteObject {
   

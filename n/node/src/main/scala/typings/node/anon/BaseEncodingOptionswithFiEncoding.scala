@@ -4,22 +4,20 @@ import typings.node.BufferEncoding
 import typings.node.nodeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.fs.BaseEncodingOptions & {  withFileTypes :true} */
-@js.native
 trait BaseEncodingOptionswithFiEncoding extends StObject {
   
-  var encoding: js.UndefOr[BufferEncoding | Null] = js.native
+  var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
   
-  var withFileTypes: `true` = js.native
+  var withFileTypes: `true`
 }
 object BaseEncodingOptionswithFiEncoding {
   
   @scala.inline
-  def apply(withFileTypes: `true`): BaseEncodingOptionswithFiEncoding = {
-    val __obj = js.Dynamic.literal(withFileTypes = withFileTypes.asInstanceOf[js.Any])
+  def apply(): BaseEncodingOptionswithFiEncoding = {
+    val __obj = js.Dynamic.literal(withFileTypes = true)
     __obj.asInstanceOf[BaseEncodingOptionswithFiEncoding]
   }
   

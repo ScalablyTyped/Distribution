@@ -2,37 +2,35 @@ package typings.svgIntersections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("svg-intersections", "intersect")
+  @JSImport("svg-intersections", JSImport.Namespace)
   @js.native
-  def intersect(shape1: Shape_, shape2: Shape_): Intersection = js.native
-  @JSImport("svg-intersections", "intersect")
-  @js.native
-  def intersect(shape1: Shape_, shape2: Shape_, m1: js.UndefOr[scala.Nothing], m2: Matrix2D): Intersection = js.native
-  @JSImport("svg-intersections", "intersect")
-  @js.native
-  def intersect(shape1: Shape_, shape2: Shape_, m1: Matrix2D): Intersection = js.native
-  @JSImport("svg-intersections", "intersect")
-  @js.native
-  def intersect(shape1: Shape_, shape2: Shape_, m1: Matrix2D, m2: Matrix2D): Intersection = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("svg-intersections", "shape")
-  @js.native
-  def shape[T /* <: SvgElements */](svgElementName: T, svgProps: SvgProperties[T]): Shape_ = js.native
+  @scala.inline
+  def intersect(shape1: Shape_, shape2: Shape_): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(shape1.asInstanceOf[js.Any], shape2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
+  @scala.inline
+  def intersect(shape1: Shape_, shape2: Shape_, m1: Unit, m2: Matrix2D): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(shape1.asInstanceOf[js.Any], shape2.asInstanceOf[js.Any], m1.asInstanceOf[js.Any], m2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
+  @scala.inline
+  def intersect(shape1: Shape_, shape2: Shape_, m1: Matrix2D): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(shape1.asInstanceOf[js.Any], shape2.asInstanceOf[js.Any], m1.asInstanceOf[js.Any])).asInstanceOf[Intersection]
+  @scala.inline
+  def intersect(shape1: Shape_, shape2: Shape_, m1: Matrix2D, m2: Matrix2D): Intersection = (^.asInstanceOf[js.Dynamic].applyDynamic("intersect")(shape1.asInstanceOf[js.Any], shape2.asInstanceOf[js.Any], m1.asInstanceOf[js.Any], m2.asInstanceOf[js.Any])).asInstanceOf[Intersection]
   
-  @js.native
+  @scala.inline
+  def shape[T /* <: SvgElements */](svgElementName: T, svgProps: SvgProperties[T]): Shape_ = (^.asInstanceOf[js.Dynamic].applyDynamic("shape")(svgElementName.asInstanceOf[js.Any], svgProps.asInstanceOf[js.Any])).asInstanceOf[Shape_]
+  
   trait CircleProps
-    extends _SvgProperties[js.Any] {
+    extends StObject
+       with _SvgProperties[js.Any] {
     
-    var cx: Double = js.native
+    var cx: Double
     
-    var cy: Double = js.native
+    var cy: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object CircleProps {
     
@@ -56,17 +54,17 @@ object mod {
     }
   }
   
-  @js.native
   trait EllipseProps
-    extends _SvgProperties[js.Any] {
+    extends StObject
+       with _SvgProperties[js.Any] {
     
-    var cx: Double = js.native
+    var cx: Double
     
-    var cy: Double = js.native
+    var cy: Double
     
-    var rx: Double = js.native
+    var rx: Double
     
-    var ry: Double = js.native
+    var ry: Double
   }
   object EllipseProps {
     
@@ -93,12 +91,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Intersection extends StObject {
     
-    var points: js.Array[Point2D] = js.native
+    var points: js.Array[Point2D]
     
-    var status: String = js.native
+    var status: String
   }
   object Intersection {
     
@@ -122,17 +119,17 @@ object mod {
     }
   }
   
-  @js.native
   trait LineProps
-    extends _SvgProperties[js.Any] {
+    extends StObject
+       with _SvgProperties[js.Any] {
     
-    var x1: Double = js.native
+    var x1: Double
     
-    var x2: Double = js.native
+    var x2: Double
     
-    var y1: Double = js.native
+    var y1: Double
     
-    var y2: Double = js.native
+    var y2: Double
   }
   object LineProps {
     
@@ -159,20 +156,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Matrix2D extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var c: Double = js.native
+    var c: Double
     
-    var d: Double = js.native
+    var d: Double
     
-    var e: Double = js.native
+    var e: Double
     
-    var f: Double = js.native
+    var f: Double
   }
   object Matrix2D {
     
@@ -205,11 +201,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PathProps
-    extends _SvgProperties[js.Any] {
+    extends StObject
+       with _SvgProperties[js.Any] {
     
-    var d: String = js.native
+    var d: String
   }
   object PathProps {
     
@@ -227,12 +223,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Point2D extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point2D {
     
@@ -253,11 +248,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PolygonProps
-    extends _SvgProperties[js.Any] {
+    extends StObject
+       with _SvgProperties[js.Any] {
     
-    var points: String = js.native
+    var points: String
   }
   object PolygonProps {
     
@@ -277,21 +272,21 @@ object mod {
   
   type PolylineProps = PolygonProps
   
-  @js.native
   trait RectProps
-    extends _SvgProperties[js.Any] {
+    extends StObject
+       with _SvgProperties[js.Any] {
     
-    var height: Double = js.native
+    var height: Double
     
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object RectProps {
     
@@ -330,14 +325,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Shape_ extends StObject {
     
-    var meta: js.Object = js.native
+    var meta: js.Object
     
-    var params: js.Object = js.native
+    var params: js.Object
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Shape_ {
     

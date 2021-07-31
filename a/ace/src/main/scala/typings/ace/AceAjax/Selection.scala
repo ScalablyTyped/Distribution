@@ -2,7 +2,6 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -147,7 +146,7 @@ trait Selection extends StObject {
   
   def off(ev: String, callback: js.Function): Unit = js.native
   
-  def on(event: String, fn: js.Function1[/* e */ js.Any, _]): Unit = js.native
+  def on(event: String, fn: js.Function1[/* e */ js.Any, js.Any]): Unit = js.native
   def on(ev: String, callback: js.Function): Unit = js.native
   
   def removeEventListener(ev: String, callback: js.Function): Unit = js.native

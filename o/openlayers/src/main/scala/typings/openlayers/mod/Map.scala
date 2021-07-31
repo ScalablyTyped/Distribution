@@ -11,7 +11,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openlayers", "Map")
@@ -148,38 +147,11 @@ class Map protected () extends Object {
     * @api stable
     */
   def forEachLayerAtPixel[T](pixel: Pixel, callback: js.Function2[/* layer */ Layer, /* color */ Color_, T]): T = js.native
-  def forEachLayerAtPixel[T](
-    pixel: Pixel,
-    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
-    opt_this: js.UndefOr[scala.Nothing],
-    opt_layerFilter: js.UndefOr[scala.Nothing],
-    opt_this2: js.Any
-  ): T = js.native
-  def forEachLayerAtPixel[T](
-    pixel: Pixel,
-    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
-    opt_this: js.UndefOr[scala.Nothing],
-    opt_layerFilter: js.Function1[/* layer */ Layer, Boolean]
-  ): T = js.native
-  def forEachLayerAtPixel[T](
-    pixel: Pixel,
-    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
-    opt_this: js.UndefOr[scala.Nothing],
-    opt_layerFilter: js.Function1[/* layer */ Layer, Boolean],
-    opt_this2: js.Any
-  ): T = js.native
   def forEachLayerAtPixel[T](pixel: Pixel, callback: js.Function2[/* layer */ Layer, /* color */ Color_, T], opt_this: js.Any): T = js.native
   def forEachLayerAtPixel[T](
     pixel: Pixel,
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
     opt_this: js.Any,
-    opt_layerFilter: js.UndefOr[scala.Nothing],
-    opt_this2: js.Any
-  ): T = js.native
-  def forEachLayerAtPixel[T](
-    pixel: Pixel,
-    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
-    opt_this: js.Any,
     opt_layerFilter: js.Function1[/* layer */ Layer, Boolean]
   ): T = js.native
   def forEachLayerAtPixel[T](
@@ -187,6 +159,33 @@ class Map protected () extends Object {
     callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
     opt_this: js.Any,
     opt_layerFilter: js.Function1[/* layer */ Layer, Boolean],
+    opt_this2: js.Any
+  ): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: js.Any,
+    opt_layerFilter: Unit,
+    opt_this2: js.Any
+  ): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: Unit,
+    opt_layerFilter: js.Function1[/* layer */ Layer, Boolean]
+  ): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: Unit,
+    opt_layerFilter: js.Function1[/* layer */ Layer, Boolean],
+    opt_this2: js.Any
+  ): T = js.native
+  def forEachLayerAtPixel[T](
+    pixel: Pixel,
+    callback: js.Function2[/* layer */ Layer, /* color */ Color_, T],
+    opt_this: Unit,
+    opt_layerFilter: Unit,
     opt_this2: js.Any
   ): T = js.native
   

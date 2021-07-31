@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `worksheetCustomProperty.toJSON()`. */
-@js.native
 trait WorksheetCustomPropertyData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait WorksheetCustomPropertyData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait WorksheetCustomPropertyData extends StObject {
     *
     * [Api set: ExcelApi 1.12]
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object WorksheetCustomPropertyData {
   

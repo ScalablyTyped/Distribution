@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteLocation extends StObject {
   
-  var host: String = js.native
+  var host: String
   
-  var port: integer = js.native
+  var port: integer
 }
 object RemoteLocation {
   

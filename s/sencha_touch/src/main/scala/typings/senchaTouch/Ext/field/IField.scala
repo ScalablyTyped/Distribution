@@ -4,211 +4,211 @@ import typings.senchaTouch.Ext.IDecorator
 import typings.senchaTouch.Ext.IElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IField extends IDecorator {
+trait IField
+  extends StObject
+     with IDecorator {
   
   /** [Config Option] (Boolean) */
-  var clearIcon: js.UndefOr[Boolean] = js.native
+  var clearIcon: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var fieldCls: js.UndefOr[String] = js.native
+  var fieldCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var fieldLabel: js.UndefOr[String] = js.native
+  var fieldLabel: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of clearIcon
     * @returns Boolean
     */
-  var getClearIcon: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getClearIcon: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of inputCls
     * @returns String
     */
-  var getInputCls: js.UndefOr[js.Function0[String]] = js.native
+  var getInputCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of inputType
     * @returns String
     */
-  var getInputType: js.UndefOr[js.Function0[String]] = js.native
+  var getInputType: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of label
     * @returns String
     */
-  var getLabel: js.UndefOr[js.Function0[String]] = js.native
+  var getLabel: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of labelAlign
     * @returns String
     */
-  var getLabelAlign: js.UndefOr[js.Function0[String]] = js.native
+  var getLabelAlign: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of labelCls
     * @returns String
     */
-  var getLabelCls: js.UndefOr[js.Function0[String]] = js.native
+  var getLabelCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of labelWidth
     * @returns Number/String
     */
-  var getLabelWidth: js.UndefOr[js.Function0[_]] = js.native
+  var getLabelWidth: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of labelWrap
     * @returns Boolean
     */
-  var getLabelWrap: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getLabelWrap: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of name
     * @returns String
     */
-  var getName: js.UndefOr[js.Function0[String]] = js.native
+  var getName: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of required
     * @returns Boolean
     */
-  var getRequired: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getRequired: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of requiredCls
     * @returns String
     */
-  var getRequiredCls: js.UndefOr[js.Function0[String]] = js.native
+  var getRequiredCls: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of tabIndex
     * @returns Number
     */
-  var getTabIndex: js.UndefOr[js.Function0[Double]] = js.native
+  var getTabIndex: js.UndefOr[js.Function0[Double]] = js.undefined
   
   /** [Method] Returns the value of value
     * @returns Mixed
     */
-  var getValue: js.UndefOr[js.Function0[_]] = js.native
+  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (String) */
-  var inputCls: js.UndefOr[String] = js.native
+  var inputCls: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var inputType: js.UndefOr[String] = js.native
+  var inputType: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns true if the value of this Field has been changed from its originalValue
     * @returns Boolean true if this field has been changed from its original value (and is not disabled), false otherwise.
     */
-  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.native
+  var isDirty: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isField: js.UndefOr[Boolean] = js.native
+  var isField: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var labelAlign: js.UndefOr[String] = js.native
+  var labelAlign: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var labelCls: js.UndefOr[String] = js.native
+  var labelCls: js.UndefOr[String] = js.undefined
   
   /** [Property] (Ext.Element) */
-  var labelEl: js.UndefOr[IElement] = js.native
+  var labelEl: js.UndefOr[IElement] = js.undefined
   
   /** [Config Option] (Number/String) */
-  var labelWidth: js.UndefOr[js.Any] = js.native
+  var labelWidth: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var labelWrap: js.UndefOr[Boolean] = js.native
+  var labelWrap: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Property] (Mixed) */
-  var originalValue: js.UndefOr[js.Any] = js.native
+  var originalValue: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var requiredCls: js.UndefOr[String] = js.native
+  var requiredCls: js.UndefOr[String] = js.undefined
   
   /** [Method] Resets the current field value back to the original value on this field when it was created
     * @returns Ext.field.Field this
     */
-  var reset: js.UndefOr[js.Function0[this.type]] = js.native
+  var reset: js.UndefOr[js.Function0[this.type]] = js.undefined
   
   /** [Method] Resets the field s originalValue property so it matches the current value  */
-  var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.native
+  var resetOriginalValue: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets the value of clearIcon
     * @param clearIcon Boolean The new value.
     */
-  var setClearIcon: js.UndefOr[js.Function1[/* clearIcon */ js.UndefOr[Boolean], Unit]] = js.native
+  var setClearIcon: js.UndefOr[js.Function1[/* clearIcon */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of inputCls
     * @param inputCls String The new value.
     */
-  var setInputCls: js.UndefOr[js.Function1[/* inputCls */ js.UndefOr[String], Unit]] = js.native
+  var setInputCls: js.UndefOr[js.Function1[/* inputCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of inputType
     * @param inputType String The new value.
     */
-  var setInputType: js.UndefOr[js.Function1[/* inputType */ js.UndefOr[String], Unit]] = js.native
+  var setInputType: js.UndefOr[js.Function1[/* inputType */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of label
     * @param label String The new value.
     */
-  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[String], Unit]] = js.native
+  var setLabel: js.UndefOr[js.Function1[/* label */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of labelAlign
     * @param labelAlign String The new value.
     */
-  var setLabelAlign: js.UndefOr[js.Function1[/* labelAlign */ js.UndefOr[String], Unit]] = js.native
+  var setLabelAlign: js.UndefOr[js.Function1[/* labelAlign */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of labelCls
     * @param labelCls String The new value.
     */
-  var setLabelCls: js.UndefOr[js.Function1[/* labelCls */ js.UndefOr[String], Unit]] = js.native
+  var setLabelCls: js.UndefOr[js.Function1[/* labelCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of labelWidth
     * @param labelWidth Number/String The new value.
     */
-  var setLabelWidth: js.UndefOr[js.Function1[/* labelWidth */ js.UndefOr[js.Any], Unit]] = js.native
+  var setLabelWidth: js.UndefOr[js.Function1[/* labelWidth */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of labelWrap
     * @param labelWrap Boolean The new value.
     */
-  var setLabelWrap: js.UndefOr[js.Function1[/* labelWrap */ js.UndefOr[Boolean], Unit]] = js.native
+  var setLabelWrap: js.UndefOr[js.Function1[/* labelWrap */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of name
     * @param name String The new value.
     */
-  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.native
+  var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of required
     * @param required Boolean The new value.
     */
-  var setRequired: js.UndefOr[js.Function1[/* required */ js.UndefOr[Boolean], Unit]] = js.native
+  var setRequired: js.UndefOr[js.Function1[/* required */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of requiredCls
     * @param requiredCls String The new value.
     */
-  var setRequiredCls: js.UndefOr[js.Function1[/* requiredCls */ js.UndefOr[String], Unit]] = js.native
+  var setRequiredCls: js.UndefOr[js.Function1[/* requiredCls */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of tabIndex
     * @param tabIndex Number The new value.
     */
-  var setTabIndex: js.UndefOr[js.Function1[/* tabIndex */ js.UndefOr[Double], Unit]] = js.native
+  var setTabIndex: js.UndefOr[js.Function1[/* tabIndex */ js.UndefOr[Double], Unit]] = js.undefined
   
   /** [Method] Sets the value of value
     * @param value Mixed The new value.
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Number) */
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (String) */
-  var useClearIcon: js.UndefOr[String] = js.native
+  var useClearIcon: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object IField {
   
@@ -276,7 +276,7 @@ object IField {
     def setGetLabelUndefined: Self = StObject.set(x, "getLabel", js.undefined)
     
     @scala.inline
-    def setGetLabelWidth(value: () => _): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
+    def setGetLabelWidth(value: () => js.Any): Self = StObject.set(x, "getLabelWidth", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetLabelWidthUndefined: Self = StObject.set(x, "getLabelWidth", js.undefined)
@@ -312,7 +312,7 @@ object IField {
     def setGetTabIndexUndefined: Self = StObject.set(x, "getTabIndex", js.undefined)
     
     @scala.inline
-    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)

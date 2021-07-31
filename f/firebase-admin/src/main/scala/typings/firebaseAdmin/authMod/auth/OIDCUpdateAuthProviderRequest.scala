@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,32 +9,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when updating an OIDC provider's configuration via
   * {@link auth.Auth.updateProviderConfig `updateProviderConfig()`}.
   */
-@js.native
-trait OIDCUpdateAuthProviderRequest extends UpdateAuthProviderRequest {
+trait OIDCUpdateAuthProviderRequest
+  extends StObject
+     with UpdateAuthProviderRequest {
   
   /**
     * The OIDC provider's updated client ID. If not provided, the existing
     * configuration's value is not modified.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * The OIDC provider's updated display name. If not provided, the existing
     * configuration's value is not modified.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the OIDC provider is enabled or not. If not provided, the existing
     * configuration's setting is not modified.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The OIDC provider's updated issuer. If not provided, the existing
     * configuration's value is not modified.
     */
-  var issuer: js.UndefOr[String] = js.native
+  var issuer: js.UndefOr[String] = js.undefined
 }
 object OIDCUpdateAuthProviderRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetOTAUpdateResponse extends StObject {
   
   /**
     * The OTA update info.
     */
-  var otaUpdateInfo: js.UndefOr[OTAUpdateInfo] = js.native
+  var otaUpdateInfo: js.UndefOr[OTAUpdateInfo] = js.undefined
 }
 object GetOTAUpdateResponse {
   

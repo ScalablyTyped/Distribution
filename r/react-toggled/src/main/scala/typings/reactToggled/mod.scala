@@ -11,7 +11,6 @@ import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,16 +37,15 @@ object mod extends Shortcut {
   
   type ReactToggledInterface = ComponentClass[ReactToggledProps, ComponentState]
   
-  @js.native
   trait ReactToggledProps extends StObject {
     
-    val children: ChildrenFunction = js.native
+    val children: ChildrenFunction
     
-    val defaultOn: js.UndefOr[Boolean] = js.native
+    val defaultOn: js.UndefOr[Boolean] = js.undefined
     
-    val on: js.UndefOr[Boolean] = js.native
+    val on: js.UndefOr[Boolean] = js.undefined
     
-    val onToggle: js.UndefOr[js.Function2[/* on */ Boolean, /* object */ TogglerStateAndHelpers, Unit]] = js.native
+    val onToggle: js.UndefOr[js.Function2[/* on */ Boolean, /* object */ TogglerStateAndHelpers, Unit]] = js.undefined
   }
   object ReactToggledProps {
     

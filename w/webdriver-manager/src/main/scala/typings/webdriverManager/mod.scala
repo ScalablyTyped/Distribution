@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.webdriverManager.binaryMod.OS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -260,13 +259,13 @@ object mod {
   object OS extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.webdriverManager.binaryMod.OS with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.webdriverManager.binaryMod.OS & Double] = js.native
     
-    /* 2 */ val Darwin: typings.webdriverManager.binaryMod.OS.Darwin with Double = js.native
+    /* 2 */ val Darwin: typings.webdriverManager.binaryMod.OS.Darwin & Double = js.native
     
-    /* 1 */ val Linux: typings.webdriverManager.binaryMod.OS.Linux with Double = js.native
+    /* 1 */ val Linux: typings.webdriverManager.binaryMod.OS.Linux & Double = js.native
     
-    /* 0 */ val Windows_NT: typings.webdriverManager.binaryMod.OS.Windows_NT with Double = js.native
+    /* 0 */ val Windows_NT: typings.webdriverManager.binaryMod.OS.Windows_NT & Double = js.native
   }
   
   @JSImport("webdriver-manager/built/lib/binaries", "Standalone")

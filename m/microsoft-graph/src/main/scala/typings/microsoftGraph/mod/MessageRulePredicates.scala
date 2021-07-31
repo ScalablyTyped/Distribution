@@ -2,156 +2,154 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageRulePredicates extends StObject {
   
   /**
     * Represents the strings that should appear in the body of an incoming message in order for the condition or exception to
     * apply.
     */
-  var bodyContains: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var bodyContains: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Represents the strings that should appear in the body or subject of an incoming message in order for the condition or
     * exception to apply.
     */
-  var bodyOrSubjectContains: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var bodyOrSubjectContains: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Represents the categories that an incoming message should be labeled with in order for the condition or exception to
     * apply.
     */
-  var categories: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var categories: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Represents the specific sender email addresses of an incoming message in order for the condition or exception to apply.
-  var fromAddresses: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var fromAddresses: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   // Indicates whether an incoming message must have attachments in order for the condition or exception to apply.
-  var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hasAttachments: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Represents the strings that appear in the headers of an incoming message in order for the condition or exception to
     * apply.
     */
-  var headerContains: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var headerContains: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * The importance that is stamped on an incoming message in order for the condition or exception to apply: low, normal,
     * high.
     */
-  var importance: js.UndefOr[NullableOption[Importance]] = js.native
+  var importance: js.UndefOr[NullableOption[Importance]] = js.undefined
   
   // Indicates whether an incoming message must be an approval request in order for the condition or exception to apply.
-  var isApprovalRequest: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isApprovalRequest: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be automatically forwarded in order for the condition or exception to apply.
-  var isAutomaticForward: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isAutomaticForward: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be an auto reply in order for the condition or exception to apply.
-  var isAutomaticReply: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isAutomaticReply: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be encrypted in order for the condition or exception to apply.
-  var isEncrypted: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isEncrypted: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be a meeting request in order for the condition or exception to apply.
-  var isMeetingRequest: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isMeetingRequest: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be a meeting response in order for the condition or exception to apply.
-  var isMeetingResponse: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isMeetingResponse: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be a non-delivery report in order for the condition or exception to apply.
-  var isNonDeliveryReport: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isNonDeliveryReport: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Indicates whether an incoming message must be permission controlled (RMS-protected) in order for the condition or
     * exception to apply.
     */
-  var isPermissionControlled: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isPermissionControlled: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be a read receipt in order for the condition or exception to apply.
-  var isReadReceipt: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isReadReceipt: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be S/MIME-signed in order for the condition or exception to apply.
-  var isSigned: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isSigned: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Indicates whether an incoming message must be a voice mail in order for the condition or exception to apply.
-  var isVoicemail: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isVoicemail: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Represents the flag-for-action value that appears on an incoming message in order for the condition or exception to
     * apply. The possible values are: any, call, doNotForward, followUp, fyi, forward, noResponseNecessary, read, reply,
     * replyToAll, review.
     */
-  var messageActionFlag: js.UndefOr[NullableOption[MessageActionFlag]] = js.native
+  var messageActionFlag: js.UndefOr[NullableOption[MessageActionFlag]] = js.undefined
   
   /**
     * Indicates whether the owner of the mailbox must not be a recipient of an incoming message in order for the condition or
     * exception to apply.
     */
-  var notSentToMe: js.UndefOr[NullableOption[Boolean]] = js.native
+  var notSentToMe: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Represents the strings that appear in either the toRecipients or ccRecipients properties of an incoming message in
     * order for the condition or exception to apply.
     */
-  var recipientContains: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var recipientContains: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Represents the strings that appear in the from property of an incoming message in order for the condition or exception
     * to apply.
     */
-  var senderContains: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var senderContains: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Represents the sensitivity level that must be stamped on an incoming message in order for the condition or exception to
     * apply. The possible values are: normal, personal, private, confidential.
     */
-  var sensitivity: js.UndefOr[NullableOption[Sensitivity]] = js.native
+  var sensitivity: js.UndefOr[NullableOption[Sensitivity]] = js.undefined
   
   /**
     * Indicates whether the owner of the mailbox must be in the ccRecipients property of an incoming message in order for the
     * condition or exception to apply.
     */
-  var sentCcMe: js.UndefOr[NullableOption[Boolean]] = js.native
+  var sentCcMe: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Indicates whether the owner of the mailbox must be the only recipient in an incoming message in order for the condition
     * or exception to apply.
     */
-  var sentOnlyToMe: js.UndefOr[NullableOption[Boolean]] = js.native
+  var sentOnlyToMe: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Represents the email addresses that an incoming message must have been sent to in order for the condition or exception
     * to apply.
     */
-  var sentToAddresses: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var sentToAddresses: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   /**
     * Indicates whether the owner of the mailbox must be in the toRecipients property of an incoming message in order for the
     * condition or exception to apply.
     */
-  var sentToMe: js.UndefOr[NullableOption[Boolean]] = js.native
+  var sentToMe: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Indicates whether the owner of the mailbox must be in either a toRecipients or ccRecipients property of an incoming
     * message in order for the condition or exception to apply.
     */
-  var sentToOrCcMe: js.UndefOr[NullableOption[Boolean]] = js.native
+  var sentToOrCcMe: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   /**
     * Represents the strings that appear in the subject of an incoming message in order for the condition or exception to
     * apply.
     */
-  var subjectContains: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var subjectContains: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Represents the minimum and maximum sizes (in kilobytes) that an incoming message must fall in between in order for the
     * condition or exception to apply.
     */
-  var withinSizeRange: js.UndefOr[NullableOption[SizeRange]] = js.native
+  var withinSizeRange: js.UndefOr[NullableOption[SizeRange]] = js.undefined
 }
 object MessageRulePredicates {
   

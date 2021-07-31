@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexContainer
 import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Such a presentation can use certain pages more than once, but it does not necessarily use all of the pages.
   */
-@js.native
 trait CustomPresentation
-  extends XIndexContainer
+  extends StObject
+     with XIndexContainer
      with XNamed
 object CustomPresentation {
   

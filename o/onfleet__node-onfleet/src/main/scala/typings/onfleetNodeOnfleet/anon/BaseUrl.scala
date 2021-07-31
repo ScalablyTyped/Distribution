@@ -2,17 +2,15 @@ package typings.onfleetNodeOnfleet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseUrl extends StObject {
   
-  var baseUrl: String = js.native
+  var baseUrl: String
   
-  var headers: Authorization = js.native
+  var headers: Authorization
   
-  var timeout: Double = js.native
+  var timeout: Double
 }
 object BaseUrl {
   

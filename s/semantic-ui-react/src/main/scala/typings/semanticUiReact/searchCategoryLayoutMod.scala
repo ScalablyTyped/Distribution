@@ -6,7 +6,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchCategoryLayoutMod extends Shortcut {
@@ -15,9 +14,9 @@ object searchCategoryLayoutMod extends Shortcut {
   @js.native
   val default: StatelessComponent[SearchCategoryLayoutProps] = js.native
   
-  @js.native
   trait SearchCategoryLayoutProps
-    extends StrictSearchCategoryLayoutProps
+    extends StObject
+       with StrictSearchCategoryLayoutProps
        with /* key */ StringDictionary[js.Any]
   object SearchCategoryLayoutProps {
     
@@ -28,14 +27,13 @@ object searchCategoryLayoutMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictSearchCategoryLayoutProps extends StObject {
     
     /** The rendered category content */
-    var categoryContent: ReactElement = js.native
+    var categoryContent: ReactElement
     
     /** The rendered results content */
-    var resultsContent: ReactElement = js.native
+    var resultsContent: ReactElement
   }
   object StrictSearchCategoryLayoutProps {
     

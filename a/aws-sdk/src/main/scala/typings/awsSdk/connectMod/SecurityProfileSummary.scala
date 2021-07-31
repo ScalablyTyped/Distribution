@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityProfileSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the security profile.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The identifier of the security profile.
     */
-  var Id: js.UndefOr[SecurityProfileId] = js.native
+  var Id: js.UndefOr[SecurityProfileId] = js.undefined
   
   /**
     * The name of the security profile.
     */
-  var Name: js.UndefOr[SecurityProfileName] = js.native
+  var Name: js.UndefOr[SecurityProfileName] = js.undefined
 }
 object SecurityProfileSummary {
   

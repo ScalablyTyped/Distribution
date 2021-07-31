@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GameProperty extends StObject {
   
   /**
     * The game property identifier.
     */
-  var Key: GamePropertyKey = js.native
+  var Key: GamePropertyKey
   
   /**
     * The game property value.
     */
-  var Value: GamePropertyValue = js.native
+  var Value: GamePropertyValue
 }
 object GameProperty {
   

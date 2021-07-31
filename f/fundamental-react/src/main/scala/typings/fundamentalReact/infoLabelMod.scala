@@ -16,7 +16,6 @@ import typings.fundamentalReact.iconMod.IconGlyph
 import typings.react.mod.FunctionComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object infoLabelMod extends Shortcut {
@@ -25,19 +24,19 @@ object infoLabelMod extends Shortcut {
   @js.native
   val default: FunctionComponent[InfoLabelProps] = js.native
   
-  @js.native
   trait InfoLabelProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10`] = js.native
+    var color: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10`] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var glyph: js.UndefOr[IconGlyph] = js.native
+    var glyph: js.UndefOr[IconGlyph] = js.undefined
     
-    var numeric: js.UndefOr[Boolean] = js.native
+    var numeric: js.UndefOr[Boolean] = js.undefined
   }
   object InfoLabelProps {
     

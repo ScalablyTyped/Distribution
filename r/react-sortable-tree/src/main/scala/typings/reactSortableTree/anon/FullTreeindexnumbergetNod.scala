@@ -6,24 +6,22 @@ import typings.reactSortableTree.mod.TreeNode
 import typings.reactSortableTree.treeDataUtilsMod.GetNodeKeyFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-sortable-tree.react-sortable-tree.FullTree & {  index :number,   getNodeKey :react-sortable-tree.react-sortable-tree/utils/tree-data-utils.GetNodeKeyFunction} */
-@js.native
 trait FullTreeindexnumbergetNod extends StObject {
   
-  var getNodeKey: GetNodeKeyFunction = js.native
+  var getNodeKey: GetNodeKeyFunction
   
-  var index: Double = js.native
+  var index: Double
   
-  var treeData: js.Array[TreeItem] = js.native
+  var treeData: js.Array[TreeItem]
 }
 object FullTreeindexnumbergetNod {
   
   @scala.inline
   def apply(
-    getNodeKey: /* data */ TreeIndex with TreeNode => String | Double,
+    getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
     index: Double,
     treeData: js.Array[TreeItem]
   ): FullTreeindexnumbergetNod = {
@@ -35,7 +33,7 @@ object FullTreeindexnumbergetNod {
   implicit class FullTreeindexnumbergetNodMutableBuilder[Self <: FullTreeindexnumbergetNod] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetNodeKey(value: /* data */ TreeIndex with TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+    def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

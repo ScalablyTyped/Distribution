@@ -5,19 +5,31 @@ import typings.forgeDi.dependencyMod.Dependency
 import typings.forgeDi.inspectorMod.Inspector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object regexInspectorMod {
   
   @JSImport("forge-di/dist/inspectors/RegexInspector", JSImport.Default)
   @js.native
-  class default () extends RegexInspector
-  
-  @js.native
-  trait RegexInspector extends Inspector {
+  class default ()
+    extends StObject
+       with RegexInspector {
     
+    /* CompleteClass */
+    override def findConstructor(func: Constructor): Constructor = js.native
+    
+    /* CompleteClass */
+    override def getDependencies(func: js.Function): js.Array[Dependency] = js.native
+    
+    /* CompleteClass */
     var getParameterNames: js.Any = js.native
+  }
+  
+  trait RegexInspector
+    extends StObject
+       with Inspector {
+    
+    var getParameterNames: js.Any
   }
   object RegexInspector {
     

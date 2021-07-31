@@ -3,25 +3,25 @@ package typings.ionic.definitionsMod
 import typings.ionic.ionicStrings.vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VueBuildOptions extends BuildOptions[vue] {
+trait VueBuildOptions
+  extends StObject
+     with BuildOptions[vue] {
   
-  var configuration: js.UndefOr[String] = js.native
+  var configuration: js.UndefOr[String] = js.undefined
   
-  var cordovaAssets: js.UndefOr[Boolean] = js.native
+  var cordovaAssets: js.UndefOr[Boolean] = js.undefined
   
-  var sourcemaps: js.UndefOr[Boolean] = js.native
+  var sourcemaps: js.UndefOr[Boolean] = js.undefined
 }
 object VueBuildOptions {
   
   @scala.inline
-  def apply(`--`: js.Array[String], engine: String, `type`: vue): VueBuildOptions = {
+  def apply(`--`: js.Array[String], engine: String): VueBuildOptions = {
     val __obj = js.Dynamic.literal(engine = engine.asInstanceOf[js.Any])
     __obj.updateDynamic("--")(`--`.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("vue")
     __obj.asInstanceOf[VueBuildOptions]
   }
   

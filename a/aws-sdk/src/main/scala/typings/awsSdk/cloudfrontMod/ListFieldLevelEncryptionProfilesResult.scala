@@ -2,16 +2,14 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFieldLevelEncryptionProfilesResult extends StObject {
   
   /**
     * Returns a list of the field-level encryption profiles that have been created in CloudFront for this account.
     */
-  var FieldLevelEncryptionProfileList: js.UndefOr[typings.awsSdk.cloudfrontMod.FieldLevelEncryptionProfileList] = js.native
+  var FieldLevelEncryptionProfileList: js.UndefOr[typings.awsSdk.cloudfrontMod.FieldLevelEncryptionProfileList] = js.undefined
 }
 object ListFieldLevelEncryptionProfilesResult {
   

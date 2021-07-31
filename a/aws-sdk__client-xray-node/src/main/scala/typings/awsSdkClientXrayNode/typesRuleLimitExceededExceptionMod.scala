@@ -3,22 +3,22 @@ package typings.awsSdkClientXrayNode
 import typings.awsSdkClientXrayNode.createSamplingRuleExceptionsUnionMod.CreateSamplingRuleExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRuleLimitExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RuleLimitExceededExceptionDetails> * / any */ @js.native
-  trait RuleLimitExceededException extends CreateSamplingRuleExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_RuleLimitExceededExceptionDetails> * / any */ trait RuleLimitExceededException
+    extends StObject
+       with CreateSamplingRuleExceptionsUnion {
     
-    var name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.RuleLimitExceededException = js.native
+    var name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.RuleLimitExceededException
   }
   object RuleLimitExceededException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientXrayNode.awsSdkClientXrayNodeStrings.RuleLimitExceededException): RuleLimitExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): RuleLimitExceededException = {
+      val __obj = js.Dynamic.literal(name = "RuleLimitExceededException")
       __obj.asInstanceOf[RuleLimitExceededException]
     }
     
@@ -30,13 +30,12 @@ object typesRuleLimitExceededExceptionMod {
     }
   }
   
-  @js.native
   trait RuleLimitExceededExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var Message: js.UndefOr[String] = js.native
+    var Message: js.UndefOr[String] = js.undefined
   }
   object RuleLimitExceededExceptionDetails {
     

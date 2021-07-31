@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientCardView.FocusedCellChanging event.
   */
-@js.native
-trait ASPxClientCardViewFocusedCellChangingEventArgs extends ASPxClientCancelEventArgs {
+trait ASPxClientCardViewFocusedCellChangingEventArgs
+  extends StObject
+     with ASPxClientCancelEventArgs {
   
   /**
     * Provides information of a card's cell currently being focused.
     */
-  var cellInfo: ASPxClientCardViewCellInfo = js.native
+  var cellInfo: ASPxClientCardViewCellInfo
 }
 object ASPxClientCardViewFocusedCellChangingEventArgs {
   

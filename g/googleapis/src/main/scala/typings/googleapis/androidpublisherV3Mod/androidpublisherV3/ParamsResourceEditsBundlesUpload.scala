@@ -7,39 +7,39 @@ import typings.googleAuthLibrary.mod.UserRefreshClient
 import typings.googleapis.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceEditsBundlesUpload extends StandardParameters {
+trait ParamsResourceEditsBundlesUpload
+  extends StObject
+     with StandardParameters {
   
   /**
     * Must be set to true if the bundle installation may trigger a warning on
     * user devices (for example, if installation size may be over a threshold,
     * typically 100 MB).
     */
-  var ackBundleInstallationWarning: js.UndefOr[Boolean] = js.native
+  var ackBundleInstallationWarning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Unique identifier for this edit.
     */
-  var editId: js.UndefOr[String] = js.native
+  var editId: js.UndefOr[String] = js.undefined
   
   /**
     * Media metadata
     */
-  var media: js.UndefOr[Body] = js.native
+  var media: js.UndefOr[Body] = js.undefined
   
   /**
     * Unique identifier for the Android app that is being updated; for example,
     * "com.spiffygame".
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceEditsBundlesUpload {
   

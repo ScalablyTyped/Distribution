@@ -17,44 +17,42 @@ import typings.gaeaModel.gaeaModelStrings.reset
 import typings.gaeaModel.gaeaModelStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Diff extends StObject {
   
   // 新增操作
-  var add: js.UndefOr[Index] = js.native
+  var add: js.UndefOr[Index] = js.undefined
   
   // 新增组合
-  var addCombo: js.UndefOr[ComponentInfo] = js.native
+  var addCombo: js.UndefOr[ComponentInfo] = js.undefined
   
   // 新增模板
-  var addSource: js.UndefOr[ComponentInfo] = js.native
+  var addSource: js.UndefOr[ComponentInfo] = js.undefined
   
   // 内部交换顺序
-  var exchange: js.UndefOr[NewIndex] = js.native
+  var exchange: js.UndefOr[NewIndex] = js.undefined
   
   // 操作组件的 mapUniqueKey
-  var mapUniqueKey: String = js.native
+  var mapUniqueKey: String
   
   // 移动到另一个父元素
-  var move: js.UndefOr[SourceIndex] = js.native
+  var move: js.UndefOr[SourceIndex] = js.undefined
   
   // 粘贴操作
-  var paste: js.UndefOr[DiffRemove] = js.native
+  var paste: js.UndefOr[DiffRemove] = js.undefined
   
   // 删除组件
-  var remove: js.UndefOr[DiffRemove] = js.native
+  var remove: js.UndefOr[DiffRemove] = js.undefined
   
   // 重置组件
-  var reset: js.UndefOr[BeforeName] = js.native
+  var reset: js.UndefOr[BeforeName] = js.undefined
   
   // 操作类型
-  var `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource = js.native
+  var `type`: add | move | remove | exchange | update | paste | reset | addCombo | addSource
   
   // 更新操作
-  var update: js.UndefOr[NewValue] = js.native
+  var update: js.UndefOr[NewValue] = js.undefined
 }
 object Diff {
   

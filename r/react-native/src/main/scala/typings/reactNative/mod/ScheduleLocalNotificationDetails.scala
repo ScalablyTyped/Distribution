@@ -8,31 +8,29 @@ import typings.reactNative.reactNativeStrings.week
 import typings.reactNative.reactNativeStrings.year
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduleLocalNotificationDetails extends StObject {
   
-  var alertAction: js.UndefOr[String] = js.native
+  var alertAction: js.UndefOr[String] = js.undefined
   
-  var alertBody: js.UndefOr[String] = js.native
+  var alertBody: js.UndefOr[String] = js.undefined
   
-  var alertTitle: js.UndefOr[String] = js.native
+  var alertTitle: js.UndefOr[String] = js.undefined
   
-  var applicationIconBadgeNumber: js.UndefOr[Double] = js.native
+  var applicationIconBadgeNumber: js.UndefOr[Double] = js.undefined
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var fireDate: js.UndefOr[Double | String] = js.native
+  var fireDate: js.UndefOr[Double | String] = js.undefined
   
-  var isSilent: js.UndefOr[Boolean] = js.native
+  var isSilent: js.UndefOr[Boolean] = js.undefined
   
-  var repeatInterval: js.UndefOr[year | month | week | day | hour | minute] = js.native
+  var repeatInterval: js.UndefOr[year | month | week | day | hour | minute] = js.undefined
   
-  var soundName: js.UndefOr[String] = js.native
+  var soundName: js.UndefOr[String] = js.undefined
   
-  var userInfo: js.UndefOr[js.Object] = js.native
+  var userInfo: js.UndefOr[js.Object] = js.undefined
 }
 object ScheduleLocalNotificationDetails {
   

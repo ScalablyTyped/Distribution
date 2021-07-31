@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Frames extends StObject {
   
-  def Add(Range: Range): Frame = js.native
+  def Add(Range: Range): Frame
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  def Item(Index: Double): Frame = js.native
+  def Item(Index: Double): Frame
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.Frames_typekey")
-  var WordDotFrames_typekey: Frames = js.native
+  var WordDotFrames_typekey: Frames
 }
 object Frames {
   

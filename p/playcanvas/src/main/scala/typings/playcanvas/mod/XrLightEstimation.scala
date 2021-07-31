@@ -2,7 +2,6 @@ package typings.playcanvas.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,6 +15,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "XrLightEstimation")
 @js.native
 class XrLightEstimation protected ()
-  extends typings.playcanvas.pc.XrLightEstimation {
+  extends StObject
+     with typings.playcanvas.pc.XrLightEstimation {
   def this(manager: typings.playcanvas.pc.XrManager) = this()
 }

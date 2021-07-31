@@ -3,11 +3,11 @@ package typings.angularFormly.AngularFormly
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFieldConfigurationObject extends IFieldObject {
+trait IFieldConfigurationObject
+  extends StObject
+     with IFieldObject {
   
   /**
     * By default, the model passed to the formly-field directive is the same as the model passed to the
@@ -20,12 +20,12 @@ trait IFieldConfigurationObject extends IFieldObject {
     *
     * see http://docs.angular-formly.com/docs/field-configuration-object#model-object--string
     */
-  var model: js.UndefOr[String | StringDictionary[js.Any]] = js.native
+  var model: js.UndefOr[String | StringDictionary[js.Any]] = js.undefined
 }
 object IFieldConfigurationObject {
   
   @scala.inline
-  def apply(value: js.UndefOr[js.Function0[_]] with (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldConfigurationObject = {
+  def apply(value: js.UndefOr[js.Function0[js.Any]] & (js.UndefOr[js.Function1[/* val */ js.Any, Unit]])): IFieldConfigurationObject = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[IFieldConfigurationObject]
   }

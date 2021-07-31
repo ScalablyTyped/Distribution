@@ -5,42 +5,42 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.vegaTypingsStrings.kde
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KDETransform extends _Transforms {
+trait KDETransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.native
+  var as: js.UndefOr[(Vector2[String | SignalRef]) | SignalRef] = js.undefined
   
-  var bandwidth: js.UndefOr[Double | SignalRef] = js.native
+  var bandwidth: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var counts: js.UndefOr[Boolean | SignalRef] = js.native
+  var counts: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var cumulative: js.UndefOr[Boolean | SignalRef] = js.native
+  var cumulative: js.UndefOr[Boolean | SignalRef] = js.undefined
   
-  var extent: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.native
+  var extent: js.UndefOr[(Vector2[Double | SignalRef]) | SignalRef] = js.undefined
   
-  var field: FieldRef = js.native
+  var field: FieldRef
   
-  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.native
+  var groupby: js.UndefOr[js.Array[FieldRef] | SignalRef] = js.undefined
   
-  var maxsteps: js.UndefOr[Double | SignalRef] = js.native
+  var maxsteps: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var minsteps: js.UndefOr[Double | SignalRef] = js.native
+  var minsteps: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var resolve: js.UndefOr[KDEResolve | SignalRef] = js.native
+  var resolve: js.UndefOr[KDEResolve | SignalRef] = js.undefined
   
-  var steps: js.UndefOr[Double | SignalRef] = js.native
+  var steps: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var `type`: kde = js.native
+  var `type`: kde
 }
 object KDETransform {
   
   @scala.inline
-  def apply(field: FieldRef, `type`: kde): KDETransform = {
+  def apply(field: FieldRef): KDETransform = {
     val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("kde")
     __obj.asInstanceOf[KDETransform]
   }
   

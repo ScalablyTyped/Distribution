@@ -4,33 +4,33 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TaskOrchestrationJob extends TaskOrchestrationItem {
+trait TaskOrchestrationJob
+  extends StObject
+     with TaskOrchestrationItem {
   
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
-  var executeAs: IdentityRef = js.native
+  var executeAs: IdentityRef
   
-  var executionMode: String = js.native
+  var executionMode: String
   
-  var executionTimeout: js.Any = js.native
+  var executionTimeout: js.Any
   
-  var instanceId: String = js.native
+  var instanceId: String
   
-  var name: String = js.native
+  var name: String
   
-  var tasks: js.Array[TaskInstance] = js.native
+  var tasks: js.Array[TaskInstance]
   
-  var variables: StringDictionary[String] = js.native
+  var variables: StringDictionary[String]
 }
 object TaskOrchestrationJob {
   
   @scala.inline
   def apply(
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     executeAs: IdentityRef,
     executionMode: String,
     executionTimeout: js.Any,
@@ -48,7 +48,7 @@ object TaskOrchestrationJob {
   implicit class TaskOrchestrationJobMutableBuilder[Self <: TaskOrchestrationJob] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

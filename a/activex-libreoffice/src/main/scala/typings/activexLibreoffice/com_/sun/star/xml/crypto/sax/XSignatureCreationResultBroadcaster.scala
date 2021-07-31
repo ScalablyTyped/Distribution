@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to manipulate signature creation result listener.
   */
-@js.native
-trait XSignatureCreationResultBroadcaster extends XInterface {
+trait XSignatureCreationResultBroadcaster
+  extends StObject
+     with XInterface {
   
   /**
     * Adds a new signature creation result listener.
@@ -21,7 +21,7 @@ trait XSignatureCreationResultBroadcaster extends XInterface {
     * When the signature is created, the result information will be sent to this listener.
     * @param listener the listener to be added
     */
-  def addSignatureCreationResultListener(listener: XSignatureCreationResultListener): Unit = js.native
+  def addSignatureCreationResultListener(listener: XSignatureCreationResultListener): Unit
   
   /**
     * Removes a signature creation result listener.
@@ -29,7 +29,7 @@ trait XSignatureCreationResultBroadcaster extends XInterface {
     * After a listener is removed, no result information will be sent to it.
     * @param listener the listener to be removed
     */
-  def removeSignatureCreationResultListener(listener: XSignatureCreationResultListener): Unit = js.native
+  def removeSignatureCreationResultListener(listener: XSignatureCreationResultListener): Unit
 }
 object XSignatureCreationResultBroadcaster {
   

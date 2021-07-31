@@ -2,25 +2,26 @@ package typings.voronoiDiagram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(points: js.Array[Point]): VoronoiDiagram = ^.asInstanceOf[js.Dynamic].apply(points.asInstanceOf[js.Any]).asInstanceOf[VoronoiDiagram]
+  
   @JSImport("voronoi-diagram", JSImport.Namespace)
   @js.native
-  def apply(points: js.Array[Point]): VoronoiDiagram = js.native
+  val ^ : js.Any = js.native
   
   type Cell = js.Array[Double]
   
   type Point = js.Array[Double]
   
-  @js.native
   trait VoronoiDiagram extends StObject {
     
-    var cells: js.Array[Cell] = js.native
+    var cells: js.Array[Cell]
     
-    var positions: js.Array[Point] = js.native
+    var positions: js.Array[Point]
   }
   object VoronoiDiagram {
     

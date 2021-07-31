@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetLocalConsolePasswordInput extends StObject {
   
-  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN = js.native
+  var GatewayARN: typings.awsSdk.storagegatewayMod.GatewayARN
   
   /**
     * The password you want to set for your VM local console.
     */
-  var LocalConsolePassword: typings.awsSdk.storagegatewayMod.LocalConsolePassword = js.native
+  var LocalConsolePassword: typings.awsSdk.storagegatewayMod.LocalConsolePassword
 }
 object SetLocalConsolePasswordInput {
   

@@ -7,15 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Listener interface to receive shape-specific events.
   * @since OOo 2.4
   */
-@js.native
-trait XShapeEventListener extends XEventListener {
+trait XShapeEventListener
+  extends StObject
+     with XEventListener {
   
   /**
     * Notify a clicked shape.
@@ -24,7 +24,7 @@ trait XShapeEventListener extends XEventListener {
     * @param xShape The shape that was clicked upon.
     * @param aOriginalEvent The original mouse click event that generated this notification.
     */
-  def click(xShape: XShape, aOriginalEvent: MouseEvent): Unit = js.native
+  def click(xShape: XShape, aOriginalEvent: MouseEvent): Unit
 }
 object XShapeEventListener {
   

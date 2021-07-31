@@ -11,7 +11,6 @@ import typings.vscodeJsonrpc.eventsMod.Event
 import typings.vscodeJsonrpc.messagesMod.Message
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageWriterMod {
@@ -31,7 +30,7 @@ object messageWriterMod {
     /* protected */ def fireClose(): Unit = js.native
     
     /* protected */ def fireError(error: js.Any): Unit = js.native
-    /* protected */ def fireError(error: js.Any, message: js.UndefOr[scala.Nothing], count: Double): Unit = js.native
+    /* protected */ def fireError(error: js.Any, message: Unit, count: Double): Unit = js.native
     /* protected */ def fireError(error: js.Any, message: Message): Unit = js.native
     /* protected */ def fireError(error: js.Any, message: Message, count: Double): Unit = js.native
     
@@ -67,28 +66,24 @@ object messageWriterMod {
     
     def dispose(): Unit = js.native
     
-    def onClose(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-    def onClose(
-      listener: js.Function1[/* e */ Unit, _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-    def onClose(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    def onClose(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
     
-    def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _]): Disposable = js.native
+    def onError(listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any]): Disposable = js.native
     def onError(
-      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onError(
-      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
+      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
       thisArgs: js.Any
     ): Disposable = js.native
     def onError(
-      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], _],
+      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
       thisArgs: js.Any,
+      disposables: js.Array[Disposable]
+    ): Disposable = js.native
+    def onError(
+      listener: js.Function1[/* e */ js.Tuple3[Error, js.UndefOr[Message], js.UndefOr[Double]], js.Any],
+      thisArgs: Unit,
       disposables: js.Array[Disposable]
     ): Disposable = js.native
     
@@ -96,9 +91,12 @@ object messageWriterMod {
   }
   object MessageWriter {
     
-    @JSImport("vscode-jsonrpc/lib/messageWriter", "MessageWriter.is")
+    @JSImport("vscode-jsonrpc/lib/messageWriter", "MessageWriter")
     @js.native
-    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def is(value: js.Any): /* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-jsonrpc.vscode-jsonrpc/lib/messageWriter.MessageWriter */ Boolean]
   }
   
   @JSImport("vscode-jsonrpc/lib/messageWriter", "SocketMessageWriter")

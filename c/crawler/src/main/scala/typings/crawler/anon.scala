@@ -5,15 +5,13 @@ import typings.crawler.mod.CrawlerRequestResponse
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Log extends StObject {
     
-    def log(level: String, args: js.Any*): Unit = js.native
+    def log(level: String, args: js.Any*): Unit
   }
   object Log {
     
@@ -32,20 +30,19 @@ object anon {
   }
   
   /* Inlined std.Omit<crawler.crawler.CrawlerRequestOptions, 'callback'> & {callback (error : std.Error, response : crawler.crawler.CrawlerRequestResponse): void} */
-  @js.native
   trait OmitCrawlerRequestOptions extends StObject {
     
-    def callback(error: Error, response: CrawlerRequestResponse): Unit = js.native
+    def callback(error: Error, response: CrawlerRequestResponse): Unit
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
-    var html: js.UndefOr[String] = js.native
+    var html: js.UndefOr[String] = js.undefined
     
-    var jQuery: js.UndefOr[js.Any] = js.native
+    var jQuery: js.UndefOr[js.Any] = js.undefined
     
-    var jquery: js.UndefOr[js.Any] = js.native
+    var jquery: js.UndefOr[js.Any] = js.undefined
     
-    var limiter: js.UndefOr[String] = js.native
+    var limiter: js.UndefOr[String] = js.undefined
     
     var preRequest: js.UndefOr[
         js.Function2[
@@ -53,15 +50,15 @@ object anon {
           /* doRequest */ js.Function1[/* err */ js.UndefOr[Error], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
     
-    var proxies: js.UndefOr[js.Array[_]] = js.native
+    var proxies: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var uri: js.UndefOr[String] = js.native
+    var uri: js.UndefOr[String] = js.undefined
   }
   object OmitCrawlerRequestOptions {
     
@@ -116,7 +113,7 @@ object anon {
       def setPriorityUndefined: Self = StObject.set(x, "priority", js.undefined)
       
       @scala.inline
-      def setProxies(value: js.Array[_]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
+      def setProxies(value: js.Array[js.Any]): Self = StObject.set(x, "proxies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProxiesUndefined: Self = StObject.set(x, "proxies", js.undefined)

@@ -6,10 +6,13 @@ import typings.redux.mod.Middleware
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@wordpress/redux-routine", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a Redux middleware, given an object of controls where each key is an action type for
@@ -20,10 +23,8 @@ object mod {
     *
     * @param controls - Object of control handlers.
     */
-  @JSImport("@wordpress/redux-routine", JSImport.Default)
-  @js.native
-  def default(): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
-  @JSImport("@wordpress/redux-routine", JSImport.Default)
-  @js.native
-  def default(controls: Record[String, js.Function1[/* action */ AnyAction, _]]): Middleware[js.Object, _, Dispatch[AnyAction]] = js.native
+  @scala.inline
+  def default(): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
+  @scala.inline
+  def default(controls: Record[String, js.Function1[/* action */ AnyAction, js.Any]]): Middleware[js.Object, js.Any, Dispatch[AnyAction]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(controls.asInstanceOf[js.Any]).asInstanceOf[Middleware[js.Object, js.Any, Dispatch[AnyAction]]]
 }

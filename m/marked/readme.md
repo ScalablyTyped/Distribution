@@ -10,9 +10,9 @@ A markdown parser built for speed
 | ------------------ | :-------------: |
 | Full name          | marked |
 | Keywords           | markdown, markup, html |
-| # releases         | 18 |
-| # dependents       | 4609 |
-| # downloads        | 159129314 |
+| # releases         | 21 |
+| # dependents       | 4771 |
+| # downloads        | 175362697 |
 | # stars            | 230 |
 
 ## Links

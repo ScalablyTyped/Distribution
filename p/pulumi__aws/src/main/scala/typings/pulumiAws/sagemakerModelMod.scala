@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sagemakerModelMod {
@@ -72,6 +71,10 @@ object sagemakerModelMod {
   /* static members */
   object Model {
     
+    @JSImport("@pulumi/aws/sagemaker/model", "Model")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Model resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,65 +84,59 @@ object sagemakerModelMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/sagemaker/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Model = js.native
-    @JSImport("@pulumi/aws/sagemaker/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Model = js.native
-    @JSImport("@pulumi/aws/sagemaker/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ModelState): Model = js.native
-    @JSImport("@pulumi/aws/sagemaker/model", "Model.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): Model = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ModelState): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Model]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ModelState, opts: CustomResourceOptions): Model = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Model]
     
     /**
       * Returns true if the given object is an instance of Model.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/sagemaker/model", "Model.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sagemaker/model.Model */ Boolean]
   }
   
-  @js.native
   trait ModelArgs extends StObject {
     
     /**
       * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
       */
-    val containers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]] = js.native
+    val containers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]] = js.undefined
     
     /**
       * Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
       */
-    val enableNetworkIsolation: js.UndefOr[Input[Boolean]] = js.native
+    val enableNetworkIsolation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A role that SageMaker can assume to access model artifacts and docker images for deployment.
       */
-    val executionRoleArn: Input[String] = js.native
+    val executionRoleArn: Input[String]
     
     /**
       * The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
       */
-    val primaryContainer: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]] = js.native
+    val primaryContainer: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
       */
-    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]] = js.native
+    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]] = js.undefined
   }
   object ModelArgs {
     
@@ -196,48 +193,47 @@ object sagemakerModelMod {
     }
   }
   
-  @js.native
   trait ModelState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) assigned by AWS to this model.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies containers in the inference pipeline. If not specified, the `primaryContainer` argument is required. Fields are documented below.
       */
-    val containers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]] = js.native
+    val containers: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.sagemaker.ModelContainer]]]] = js.undefined
     
     /**
       * Isolates the model container. No inbound or outbound network calls can be made to or from the model container.
       */
-    val enableNetworkIsolation: js.UndefOr[Input[Boolean]] = js.native
+    val enableNetworkIsolation: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A role that SageMaker can assume to access model artifacts and docker images for deployment.
       */
-    val executionRoleArn: js.UndefOr[Input[String]] = js.native
+    val executionRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the model (must be unique). If omitted, this provider will assign a random, unique name.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The primary docker image containing inference code that is used when the model is deployed for predictions.  If not specified, the `container` argument is required. Fields are documented below.
       */
-    val primaryContainer: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]] = js.native
+    val primaryContainer: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelPrimaryContainer]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the VPC that you want your model to connect to. VpcConfig is used in hosting services and in batch transform.
       */
-    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]] = js.native
+    val vpcConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.sagemaker.ModelVpcConfig]] = js.undefined
   }
   object ModelState {
     

@@ -8,28 +8,26 @@ import typings.awsSdkClientCognitoIdentityBrowser.typesRulesConfigurationTypeMod
 import typings.awsSdkClientCognitoIdentityBrowser.typesRulesConfigurationTypeMod.UnmarshalledRulesConfigurationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesRoleMappingMod {
   
-  @js.native
   trait RoleMapping extends StObject {
     
     /**
       * <p>If you specify Token or Rules as the <code>Type</code>, <code>AmbiguousRoleResolution</code> is required.</p> <p>Specifies the action to be taken if either no rules match the claim value for the <code>Rules</code> type, or there is no <code>cognito:preferred_role</code> claim and there are multiple <code>cognito:roles</code> matches for the <code>Token</code> type.</p>
       */
-    var AmbiguousRoleResolution: js.UndefOr[AuthenticatedRole | Deny | String] = js.native
+    var AmbiguousRoleResolution: js.UndefOr[AuthenticatedRole | Deny | String] = js.undefined
     
     /**
       * <p>The rules to be used for mapping users to roles.</p> <p>If you specify Rules as the role mapping type, <code>RulesConfiguration</code> is required.</p>
       */
-    var RulesConfiguration: js.UndefOr[RulesConfigurationType] = js.native
+    var RulesConfiguration: js.UndefOr[RulesConfigurationType] = js.undefined
     
     /**
       * <p>The role mapping type. Token will use <code>cognito:roles</code> and <code>cognito:preferred_role</code> claims from the Cognito identity provider token to map groups to roles. Rules will attempt to match claims from the token to map to a role.</p>
       */
-    var Type: Token | Rules | String = js.native
+    var Type: Token | Rules | String
   }
   object RoleMapping {
     
@@ -59,14 +57,15 @@ object typesRoleMappingMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledRoleMapping extends RoleMapping {
+  trait UnmarshalledRoleMapping
+    extends StObject
+       with RoleMapping {
     
     /**
       * <p>The rules to be used for mapping users to roles.</p> <p>If you specify Rules as the role mapping type, <code>RulesConfiguration</code> is required.</p>
       */
     @JSName("RulesConfiguration")
-    var RulesConfiguration_UnmarshalledRoleMapping: js.UndefOr[UnmarshalledRulesConfigurationType] = js.native
+    var RulesConfiguration_UnmarshalledRoleMapping: js.UndefOr[UnmarshalledRulesConfigurationType] = js.undefined
   }
   object UnmarshalledRoleMapping {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveRoleFromDBClusterMessage extends StObject {
   
   /**
     * The name of the DB cluster to disassociate the IAM role from.
     */
-  var DBClusterIdentifier: String = js.native
+  var DBClusterIdentifier: String
   
   /**
     * The name of the feature for the DB cluster that the IAM role is to be disassociated from. For the list of supported feature names, see DBEngineVersion.
     */
-  var FeatureName: js.UndefOr[String] = js.native
+  var FeatureName: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role to disassociate from the DB cluster, for example arn:aws:iam::123456789012:role/NeptuneAccessRole.
     */
-  var RoleArn: String = js.native
+  var RoleArn: String
 }
 object RemoveRoleFromDBClusterMessage {
   

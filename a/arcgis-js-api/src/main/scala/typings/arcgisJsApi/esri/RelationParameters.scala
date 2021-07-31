@@ -13,12 +13,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.touch
 import typings.arcgisJsApi.arcgisJsApiStrings.within
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RelationParameters
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

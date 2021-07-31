@@ -4,33 +4,31 @@ import typings.std.Date
 import typings.vsoNodeApi.anon.KeyValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionDraft extends StObject {
   
-  var assets: js.Array[ExtensionDraftAsset] = js.native
+  var assets: js.Array[ExtensionDraftAsset]
   
-  var createdDate: Date = js.native
+  var createdDate: Date
   
-  var draftState: DraftStateType = js.native
+  var draftState: DraftStateType
   
-  var extensionName: String = js.native
+  var extensionName: String
   
-  var id: String = js.native
+  var id: String
   
-  var lastUpdated: Date = js.native
+  var lastUpdated: Date
   
-  var payload: ExtensionPayload = js.native
+  var payload: ExtensionPayload
   
-  var product: String = js.native
+  var product: String
   
-  var publisherName: String = js.native
+  var publisherName: String
   
-  var validationErrors: js.Array[KeyValue] = js.native
+  var validationErrors: js.Array[KeyValue]
   
-  var validationWarnings: js.Array[KeyValue] = js.native
+  var validationWarnings: js.Array[KeyValue]
 }
 object ExtensionDraft {
   

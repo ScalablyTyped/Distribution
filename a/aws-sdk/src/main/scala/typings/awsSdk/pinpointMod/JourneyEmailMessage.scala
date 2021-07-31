@@ -2,16 +2,14 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JourneyEmailMessage extends StObject {
   
   /**
     * The verified email address to send the email message from. The default address is the FromAddress specified for the email channel for the application.
     */
-  var FromAddress: js.UndefOr[string] = js.native
+  var FromAddress: js.UndefOr[string] = js.undefined
 }
 object JourneyEmailMessage {
   

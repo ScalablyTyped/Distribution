@@ -2,25 +2,23 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServoGeneralOption extends StObject {
   
-  var center: js.UndefOr[Boolean] = js.native
+  var center: js.UndefOr[Boolean] = js.undefined
   
-  var controller: js.UndefOr[String] = js.native
+  var controller: js.UndefOr[String] = js.undefined
   
-  var isInverted: js.UndefOr[Boolean] = js.native
+  var isInverted: js.UndefOr[Boolean] = js.undefined
   
-  var pin: Double | String = js.native
+  var pin: Double | String
   
-  var range: js.UndefOr[js.Array[Double]] = js.native
+  var range: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var startAt: js.UndefOr[Double] = js.native
+  var startAt: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ServoGeneralOption {
   

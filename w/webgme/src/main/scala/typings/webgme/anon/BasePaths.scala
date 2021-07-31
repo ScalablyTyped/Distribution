@@ -2,10 +2,8 @@ package typings.webgme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BasePaths extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait BasePaths extends StObject {
     * e.g. C:/SomeAddOns/MyOtherAddOn/MyOtherAddOn.js.
     *    config.addOn.basePaths = ['./src/addon/core'];
     */
-  var basePaths: js.Array[String] = js.native
+  var basePaths: js.Array[String]
   
   /**
     * If true enables add-ons.
     *    config.addOn.enable = false;
     */
-  var enable: Boolean = js.native
+  var enable: Boolean
   
   /**
     * In milliseconds, the waiting time before add-ons 
@@ -31,7 +29,7 @@ trait BasePaths extends StObject {
     * the last client leaves a branch.
     *    config.addOn.monitorTimeout = 5000;
     */
-  var monitorTimeout: Double = js.native
+  var monitorTimeout: Double
 }
 object BasePaths {
   

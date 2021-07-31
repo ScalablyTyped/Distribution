@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomSourceLocation extends StObject {
   
   /** Whether this source is stateful. */
-  var stateful: js.UndefOr[Boolean] = js.native
+  var stateful: js.UndefOr[Boolean] = js.undefined
 }
 object CustomSourceLocation {
   

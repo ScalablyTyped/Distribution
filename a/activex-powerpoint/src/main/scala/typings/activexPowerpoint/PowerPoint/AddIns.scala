@@ -2,26 +2,24 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddIns extends StObject {
   
-  def Add(FileName: String): AddIn = js.native
+  def Add(FileName: String): AddIn
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): AddIn = js.native
+  def Item(Index: js.Any): AddIn
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.AddIns_typekey")
-  var PowerPointDotAddIns_typekey: AddIns = js.native
+  var PowerPointDotAddIns_typekey: AddIns
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: js.Any): Unit
 }
 object AddIns {
   

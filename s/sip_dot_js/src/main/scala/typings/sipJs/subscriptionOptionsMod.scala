@@ -3,15 +3,13 @@ package typings.sipJs
 import typings.sipJs.subscriptionDelegateMod.SubscriptionDelegate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionOptionsMod {
   
-  @js.native
   trait SubscriptionOptions extends StObject {
     
-    var delegate: js.UndefOr[SubscriptionDelegate] = js.native
+    var delegate: js.UndefOr[SubscriptionDelegate] = js.undefined
   }
   object SubscriptionOptions {
     

@@ -2,13 +2,11 @@ package typings.googleCloudStorage.bucketMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddLifecycleRuleOptions extends StObject {
   
-  var append: js.UndefOr[Boolean] = js.native
+  var append: js.UndefOr[Boolean] = js.undefined
 }
 object AddLifecycleRuleOptions {
   

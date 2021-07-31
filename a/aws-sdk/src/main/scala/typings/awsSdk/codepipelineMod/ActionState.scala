@@ -2,36 +2,34 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionState extends StObject {
   
   /**
     * The name of the action.
     */
-  var actionName: js.UndefOr[ActionName] = js.native
+  var actionName: js.UndefOr[ActionName] = js.undefined
   
   /**
     * Represents information about the version (or revision) of an action.
     */
-  var currentRevision: js.UndefOr[ActionRevision] = js.native
+  var currentRevision: js.UndefOr[ActionRevision] = js.undefined
   
   /**
     * A URL link for more information about the state of the action, such as a deployment group details page.
     */
-  var entityUrl: js.UndefOr[Url] = js.native
+  var entityUrl: js.UndefOr[Url] = js.undefined
   
   /**
     * Represents information about the run of an action.
     */
-  var latestExecution: js.UndefOr[ActionExecution] = js.native
+  var latestExecution: js.UndefOr[ActionExecution] = js.undefined
   
   /**
     * A URL link for more information about the revision, such as a commit details page.
     */
-  var revisionUrl: js.UndefOr[Url] = js.native
+  var revisionUrl: js.UndefOr[Url] = js.undefined
 }
 object ActionState {
   

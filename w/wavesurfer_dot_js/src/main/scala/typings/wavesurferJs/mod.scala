@@ -20,15 +20,31 @@ import typings.wavesurferJs.wavesurferJsStrings.blob
 import typings.wavesurferJs.wavesurferJsStrings.dataURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("wavesurfer.js", JSImport.Namespace)
   @js.native
-  class ^ protected () extends WaveSurfer {
+  class ^ protected ()
+    extends StObject
+       with WaveSurfer {
     def this(params: WaveSurferParams) = this()
+    
+    /* CompleteClass */
+    override def fireEvent(eventName: String, args: js.Any*): Unit = js.native
+    
+    /* CompleteClass */
+    override def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor = js.native
+    
+    /* CompleteClass */
+    override def once(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor = js.native
+    
+    /* CompleteClass */
+    override def un(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def unAll(): Unit = js.native
   }
   @JSImport("wavesurfer.js", JSImport.Namespace)
   @js.native
@@ -43,7 +59,9 @@ object mod {
   
   @JSImport("wavesurfer.js", "WaveRenderer")
   @js.native
-  class WaveRenderer protected () extends Observer {
+  class WaveRenderer protected ()
+    extends StObject
+       with Observer {
     def this(container: HTMLElement, params: WaveSurferParams) = this()
     
     def clearWave(): Unit = js.native
@@ -58,6 +76,9 @@ object mod {
     
     def drawWave(peaks: js.Array[js.Array[Double] | Double], channelIndex: Double, start: Double, end: Double): Unit = js.native
     
+    /* CompleteClass */
+    override def fireEvent(eventName: String, args: js.Any*): Unit = js.native
+    
     def getScrollX(): Double = js.native
     
     def getWidth(): Double = js.native
@@ -65,6 +86,12 @@ object mod {
     def handleEvent(e: Event, noPrevent: Boolean): Double = js.native
     
     var height: Double = js.native
+    
+    /* CompleteClass */
+    override def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor = js.native
+    
+    /* CompleteClass */
+    override def once(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor = js.native
     
     def progress(progress: Double): Unit = js.native
     
@@ -79,6 +106,12 @@ object mod {
     def setWidth(width: Double): Boolean = js.native
     
     def style(el: HTMLElement, styles: StringDictionary[String]): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def un(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def unAll(): Unit = js.native
     
     def updateProgress(position: Double): Unit = js.native
     
@@ -100,16 +133,18 @@ object mod {
   }
   object WaveSurferPlugin {
     
-    /* static member */
-    @JSImport("wavesurfer.js", "WaveSurferPlugin.create")
+    @JSImport("wavesurfer.js", "WaveSurferPlugin")
     @js.native
-    def create(params: js.Object): PluginDefinition = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def create(params: js.Object): PluginDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any]).asInstanceOf[PluginDefinition]
   }
   
   /* static member */
-  @JSImport("wavesurfer.js", "create")
-  @js.native
-  def create(params: WaveSurferParams): WaveSurfer = js.native
+  @scala.inline
+  def create(params: WaveSurferParams): WaveSurfer = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(params.asInstanceOf[js.Any]).asInstanceOf[WaveSurfer]
   
   /* static member */
   @JSImport("wavesurfer.js", "util")
@@ -118,14 +153,13 @@ object mod {
   @scala.inline
   def util_=(x: WaveSurferUtil): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("util")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait ListenerDescriptor extends StObject {
     
-    def callback(args: js.Any*): Unit = js.native
+    def callback(args: js.Any*): Unit
     
-    var name: String = js.native
+    var name: String
     
-    def un(): Unit = js.native
+    def un(): Unit
   }
   object ListenerDescriptor {
     
@@ -149,18 +183,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Observer extends StObject {
     
-    def fireEvent(eventName: String, args: js.Any*): Unit = js.native
+    def fireEvent(eventName: String, args: js.Any*): Unit
     
-    def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor = js.native
+    def on(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor
     
-    def once(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor = js.native
+    def once(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): ListenerDescriptor
     
-    def un(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit = js.native
+    def un(eventName: String, callback: js.Function1[/* repeated */ js.Any, Unit]): Unit
     
-    def unAll(): Unit = js.native
+    def unAll(): Unit
   }
   object Observer {
     
@@ -196,18 +229,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PluginDefinition extends StObject {
     
-    var deferInit: js.UndefOr[Boolean] = js.native
+    var deferInit: js.UndefOr[Boolean] = js.undefined
     
-    var instance: InstantiableWaveSurferPlugin = js.native
+    var instance: InstantiableWaveSurferPlugin
     
-    var name: String = js.native
+    var name: String
     
-    var params: js.Object = js.native
+    var params: js.Object
     
-    var staticProps: js.UndefOr[js.Object] = js.native
+    var staticProps: js.UndefOr[js.Object] = js.undefined
   }
   object PluginDefinition {
     
@@ -245,7 +277,8 @@ object mod {
   
   @js.native
   trait WaveSurfer
-    extends Observer
+    extends StObject
+       with Observer
        with // [x: string]: any
   //   pluginName -> WaveSurferPlugin
   //   propertyNameAddedByPlugin -> any
@@ -264,144 +297,58 @@ object mod {
     def empty(): Unit = js.native
     
     def exportImage(): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
-    def exportImage(format: js.UndefOr[scala.Nothing], quality: Double): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     def exportImage(format: String): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     def exportImage(format: String, quality: Double): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
-    @JSName("exportImage")
-    def exportImage_blob(format: js.UndefOr[scala.Nothing], quality: js.UndefOr[scala.Nothing], `type`: blob): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
-    @JSName("exportImage")
-    def exportImage_blob(format: js.UndefOr[scala.Nothing], quality: Double, `type`: blob): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
-    @JSName("exportImage")
-    def exportImage_blob(format: String, quality: js.UndefOr[scala.Nothing], `type`: blob): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
+    def exportImage(format: Unit, quality: Double): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     @JSName("exportImage")
     def exportImage_blob(format: String, quality: Double, `type`: blob): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     @JSName("exportImage")
-    def exportImage_dataURL(format: js.UndefOr[scala.Nothing], quality: js.UndefOr[scala.Nothing], `type`: dataURL): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
+    def exportImage_blob(format: String, quality: Unit, `type`: blob): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     @JSName("exportImage")
-    def exportImage_dataURL(format: js.UndefOr[scala.Nothing], quality: Double, `type`: dataURL): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
+    def exportImage_blob(format: Unit, quality: Double, `type`: blob): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     @JSName("exportImage")
-    def exportImage_dataURL(format: String, quality: js.UndefOr[scala.Nothing], `type`: dataURL): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
+    def exportImage_blob(format: Unit, quality: Unit, `type`: blob): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     @JSName("exportImage")
     def exportImage_dataURL(format: String, quality: Double, `type`: dataURL): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
+    @JSName("exportImage")
+    def exportImage_dataURL(format: String, quality: Unit, `type`: dataURL): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
+    @JSName("exportImage")
+    def exportImage_dataURL(format: Unit, quality: Double, `type`: dataURL): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
+    @JSName("exportImage")
+    def exportImage_dataURL(format: Unit, quality: Unit, `type`: dataURL): String | js.Array[String] | js.Promise[js.Array[Blob]] = js.native
     
     def exportPCM(): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: js.UndefOr[scala.Nothing],
-      start: js.UndefOr[scala.Nothing],
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: js.UndefOr[scala.Nothing],
-      start: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: js.UndefOr[scala.Nothing],
-      start: Double,
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(length: js.UndefOr[scala.Nothing], accuracy: js.UndefOr[scala.Nothing], noWindow: Boolean): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: Boolean,
-      start: js.UndefOr[scala.Nothing],
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: Boolean,
-      start: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: Boolean,
-      start: Double,
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(length: js.UndefOr[scala.Nothing], accuracy: Double): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: Double,
-      noWindow: js.UndefOr[scala.Nothing],
-      start: js.UndefOr[scala.Nothing],
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: Double,
-      noWindow: js.UndefOr[scala.Nothing],
-      start: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: Double,
-      noWindow: js.UndefOr[scala.Nothing],
-      start: Double,
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(length: js.UndefOr[scala.Nothing], accuracy: Double, noWindow: Boolean): js.Promise[String] = js.native
-    def exportPCM(
-      length: js.UndefOr[scala.Nothing],
-      accuracy: Double,
-      noWindow: Boolean,
-      start: js.UndefOr[scala.Nothing],
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(length: js.UndefOr[scala.Nothing], accuracy: Double, noWindow: Boolean, start: Double): js.Promise[String] = js.native
-    def exportPCM(length: js.UndefOr[scala.Nothing], accuracy: Double, noWindow: Boolean, start: Double, end: Double): js.Promise[String] = js.native
     def exportPCM(length: Double): js.Promise[String] = js.native
-    def exportPCM(
-      length: Double,
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: js.UndefOr[scala.Nothing],
-      start: js.UndefOr[scala.Nothing],
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: Double,
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: js.UndefOr[scala.Nothing],
-      start: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(
-      length: Double,
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: js.UndefOr[scala.Nothing],
-      start: Double,
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(length: Double, accuracy: js.UndefOr[scala.Nothing], noWindow: Boolean): js.Promise[String] = js.native
-    def exportPCM(
-      length: Double,
-      accuracy: js.UndefOr[scala.Nothing],
-      noWindow: Boolean,
-      start: js.UndefOr[scala.Nothing],
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(length: Double, accuracy: js.UndefOr[scala.Nothing], noWindow: Boolean, start: Double): js.Promise[String] = js.native
-    def exportPCM(length: Double, accuracy: js.UndefOr[scala.Nothing], noWindow: Boolean, start: Double, end: Double): js.Promise[String] = js.native
     def exportPCM(length: Double, accuracy: Double): js.Promise[String] = js.native
-    def exportPCM(
-      length: Double,
-      accuracy: Double,
-      noWindow: js.UndefOr[scala.Nothing],
-      start: js.UndefOr[scala.Nothing],
-      end: Double
-    ): js.Promise[String] = js.native
-    def exportPCM(length: Double, accuracy: Double, noWindow: js.UndefOr[scala.Nothing], start: Double): js.Promise[String] = js.native
-    def exportPCM(length: Double, accuracy: Double, noWindow: js.UndefOr[scala.Nothing], start: Double, end: Double): js.Promise[String] = js.native
     def exportPCM(length: Double, accuracy: Double, noWindow: Boolean): js.Promise[String] = js.native
-    def exportPCM(length: Double, accuracy: Double, noWindow: Boolean, start: js.UndefOr[scala.Nothing], end: Double): js.Promise[String] = js.native
     def exportPCM(length: Double, accuracy: Double, noWindow: Boolean, start: Double): js.Promise[String] = js.native
     def exportPCM(length: Double, accuracy: Double, noWindow: Boolean, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Double, noWindow: Boolean, start: Unit, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Double, noWindow: Unit, start: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Double, noWindow: Unit, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Double, noWindow: Unit, start: Unit, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Unit, noWindow: Boolean): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Unit, noWindow: Boolean, start: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Unit, noWindow: Boolean, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Unit, noWindow: Boolean, start: Unit, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Unit, noWindow: Unit, start: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Unit, noWindow: Unit, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Double, accuracy: Unit, noWindow: Unit, start: Unit, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double, noWindow: Boolean): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double, noWindow: Boolean, start: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double, noWindow: Boolean, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double, noWindow: Boolean, start: Unit, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double, noWindow: Unit, start: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double, noWindow: Unit, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Double, noWindow: Unit, start: Unit, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Unit, noWindow: Boolean): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Unit, noWindow: Boolean, start: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Unit, noWindow: Boolean, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Unit, noWindow: Boolean, start: Unit, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Unit, noWindow: Unit, start: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Unit, noWindow: Unit, start: Double, end: Double): js.Promise[String] = js.native
+    def exportPCM(length: Unit, accuracy: Unit, noWindow: Unit, start: Unit, end: Double): js.Promise[String] = js.native
     
     def getActivePlugins(): js.Object = js.native
     
@@ -436,39 +383,15 @@ object mod {
     def isReady(): Boolean = js.native
     
     def load(url: String): Unit = js.native
-    def load(
-      url: String,
-      peaks: js.UndefOr[scala.Nothing],
-      preload: js.UndefOr[scala.Nothing],
-      duration: Double
-    ): Unit = js.native
-    def load(url: String, peaks: js.UndefOr[scala.Nothing], preload: String): Unit = js.native
-    def load(url: String, peaks: js.UndefOr[scala.Nothing], preload: String, duration: Double): Unit = js.native
     def load(url: String, peaks: js.Array[js.Array[Double] | Double]): Unit = js.native
-    def load(
-      url: String,
-      peaks: js.Array[js.Array[Double] | Double],
-      preload: js.UndefOr[scala.Nothing],
-      duration: Double
-    ): Unit = js.native
     def load(url: String, peaks: js.Array[js.Array[Double] | Double], preload: String): Unit = js.native
     def load(url: String, peaks: js.Array[js.Array[Double] | Double], preload: String, duration: Double): Unit = js.native
+    def load(url: String, peaks: js.Array[js.Array[Double] | Double], preload: Unit, duration: Double): Unit = js.native
+    def load(url: String, peaks: Unit, preload: String): Unit = js.native
+    def load(url: String, peaks: Unit, preload: String, duration: Double): Unit = js.native
+    def load(url: String, peaks: Unit, preload: Unit, duration: Double): Unit = js.native
     def load(url: HTMLMediaElement): Unit = js.native
-    def load(
-      url: HTMLMediaElement,
-      peaks: js.UndefOr[scala.Nothing],
-      preload: js.UndefOr[scala.Nothing],
-      duration: Double
-    ): Unit = js.native
-    def load(url: HTMLMediaElement, peaks: js.UndefOr[scala.Nothing], preload: String): Unit = js.native
-    def load(url: HTMLMediaElement, peaks: js.UndefOr[scala.Nothing], preload: String, duration: Double): Unit = js.native
     def load(url: HTMLMediaElement, peaks: js.Array[js.Array[Double] | Double]): Unit = js.native
-    def load(
-      url: HTMLMediaElement,
-      peaks: js.Array[js.Array[Double] | Double],
-      preload: js.UndefOr[scala.Nothing],
-      duration: Double
-    ): Unit = js.native
     def load(url: HTMLMediaElement, peaks: js.Array[js.Array[Double] | Double], preload: String): Unit = js.native
     def load(
       url: HTMLMediaElement,
@@ -476,6 +399,10 @@ object mod {
       preload: String,
       duration: Double
     ): Unit = js.native
+    def load(url: HTMLMediaElement, peaks: js.Array[js.Array[Double] | Double], preload: Unit, duration: Double): Unit = js.native
+    def load(url: HTMLMediaElement, peaks: Unit, preload: String): Unit = js.native
+    def load(url: HTMLMediaElement, peaks: Unit, preload: String, duration: Double): Unit = js.native
+    def load(url: HTMLMediaElement, peaks: Unit, preload: Unit, duration: Double): Unit = js.native
     
     def loadBlob(url: Blob): Unit = js.native
     def loadBlob(url: File): Unit = js.native
@@ -483,9 +410,9 @@ object mod {
     def pause(): js.UndefOr[js.Promise[Unit]] = js.native
     
     def play(): js.UndefOr[js.Promise[Unit]] = js.native
-    def play(start: js.UndefOr[scala.Nothing], end: Double): js.UndefOr[js.Promise[Unit]] = js.native
     def play(start: Double): js.UndefOr[js.Promise[Unit]] = js.native
     def play(start: Double, end: Double): js.UndefOr[js.Promise[Unit]] = js.native
+    def play(start: Unit, end: Double): js.UndefOr[js.Promise[Unit]] = js.native
     
     def playPause(): js.UndefOr[js.Promise[Unit]] = js.native
     
@@ -509,7 +436,7 @@ object mod {
     
     def setPlaybackRate(rate: Double): Unit = js.native
     
-    def setSinkId(deviceId: String): js.Promise[_] = js.native
+    def setSinkId(deviceId: String): js.Promise[js.Any] = js.native
     
     def setVolume(newVolume: Double): Unit = js.native
     
@@ -542,99 +469,98 @@ object mod {
   trait WaveSurferBackend extends StObject {
     
     def getPeaks(length: Double): js.Array[js.Array[Double] | Double] = js.native
-    def getPeaks(length: Double, first: js.UndefOr[scala.Nothing], last: Double): js.Array[js.Array[Double] | Double] = js.native
     def getPeaks(length: Double, first: Double): js.Array[js.Array[Double] | Double] = js.native
     def getPeaks(length: Double, first: Double, last: Double): js.Array[js.Array[Double] | Double] = js.native
+    def getPeaks(length: Double, first: Unit, last: Double): js.Array[js.Array[Double] | Double] = js.native
   }
   
-  @js.native
   trait WaveSurferParams extends StObject {
     
-    var audioContext: js.UndefOr[AudioContext] = js.native
+    var audioContext: js.UndefOr[AudioContext] = js.undefined
     
-    var audioRate: js.UndefOr[Double] = js.native
+    var audioRate: js.UndefOr[Double] = js.undefined
     
-    var audioScriptProcessor: js.UndefOr[ScriptProcessorNode] = js.native
+    var audioScriptProcessor: js.UndefOr[ScriptProcessorNode] = js.undefined
     
-    var autoCenter: js.UndefOr[Boolean] = js.native
+    var autoCenter: js.UndefOr[Boolean] = js.undefined
     
-    var autoCenterImmediately: js.UndefOr[Boolean] = js.native
+    var autoCenterImmediately: js.UndefOr[Boolean] = js.undefined
     
-    var autoCenterRate: js.UndefOr[Double] = js.native
+    var autoCenterRate: js.UndefOr[Double] = js.undefined
     
-    var backend: js.UndefOr[WebAudio | MediaElement | MediaElementWebAudio] = js.native
+    var backend: js.UndefOr[WebAudio | MediaElement | MediaElementWebAudio] = js.undefined
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var barGap: js.UndefOr[Double] = js.native
+    var barGap: js.UndefOr[Double] = js.undefined
     
-    var barHeight: js.UndefOr[Double] = js.native
+    var barHeight: js.UndefOr[Double] = js.undefined
     
-    var barMinHeight: js.UndefOr[Double] = js.native
+    var barMinHeight: js.UndefOr[Double] = js.undefined
     
-    var barRadius: js.UndefOr[Double] = js.native
+    var barRadius: js.UndefOr[Double] = js.undefined
     
-    var barWidth: js.UndefOr[Double] = js.native
+    var barWidth: js.UndefOr[Double] = js.undefined
     
-    var closeAudioContext: js.UndefOr[Boolean] = js.native
+    var closeAudioContext: js.UndefOr[Boolean] = js.undefined
     
-    var container: String | HTMLElement = js.native
+    var container: String | HTMLElement
     
-    var cursorColor: js.UndefOr[String] = js.native
+    var cursorColor: js.UndefOr[String] = js.undefined
     
-    var cursorWidth: js.UndefOr[Double] = js.native
+    var cursorWidth: js.UndefOr[Double] = js.undefined
     
-    var drawingContextAttributes: js.UndefOr[js.Object] = js.native
+    var drawingContextAttributes: js.UndefOr[js.Object] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var fillParent: js.UndefOr[Boolean] = js.native
+    var fillParent: js.UndefOr[Boolean] = js.undefined
     
-    var forceDecode: js.UndefOr[Boolean] = js.native
+    var forceDecode: js.UndefOr[Boolean] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hideScrollbar: js.UndefOr[Boolean] = js.native
+    var hideScrollbar: js.UndefOr[Boolean] = js.undefined
     
-    var interact: js.UndefOr[Boolean] = js.native
+    var interact: js.UndefOr[Boolean] = js.undefined
     
-    var loopSelection: js.UndefOr[Boolean] = js.native
+    var loopSelection: js.UndefOr[Boolean] = js.undefined
     
-    var maxCanvasWidth: js.UndefOr[Double] = js.native
+    var maxCanvasWidth: js.UndefOr[Double] = js.undefined
     
-    var mediaControls: js.UndefOr[Boolean] = js.native
+    var mediaControls: js.UndefOr[Boolean] = js.undefined
     
-    var mediaType: js.UndefOr[String] = js.native
+    var mediaType: js.UndefOr[String] = js.undefined
     
-    var minPxPerSec: js.UndefOr[Double] = js.native
+    var minPxPerSec: js.UndefOr[Double] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
-    var partialRender: js.UndefOr[Boolean] = js.native
+    var partialRender: js.UndefOr[Boolean] = js.undefined
     
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.native
+    var plugins: js.UndefOr[js.Array[PluginDefinition]] = js.undefined
     
-    var progressColor: js.UndefOr[String] = js.native
+    var progressColor: js.UndefOr[String] = js.undefined
     
-    var removeMediaElementOnDestroy: js.UndefOr[Boolean] = js.native
+    var removeMediaElementOnDestroy: js.UndefOr[Boolean] = js.undefined
     
-    var renderer: js.UndefOr[Instantiable] = js.native
+    var renderer: js.UndefOr[Instantiable] = js.undefined
     
-    var responsive: js.UndefOr[Boolean | Double] = js.native
+    var responsive: js.UndefOr[Boolean | Double] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var scrollParent: js.UndefOr[Boolean] = js.native
+    var scrollParent: js.UndefOr[Boolean] = js.undefined
     
-    var skipLength: js.UndefOr[Double] = js.native
+    var skipLength: js.UndefOr[Double] = js.undefined
     
-    var splitChannels: js.UndefOr[Boolean] = js.native
+    var splitChannels: js.UndefOr[Boolean] = js.undefined
     
-    var waveColor: js.UndefOr[String | CanvasGradient] = js.native
+    var waveColor: js.UndefOr[String | CanvasGradient] = js.undefined
     
-    var xhr: js.UndefOr[XHROptions] = js.native
+    var xhr: js.UndefOr[XHROptions] = js.undefined
   }
   object WaveSurferParams {
     
@@ -907,28 +833,27 @@ object mod {
     }
   }
   
-  @js.native
   trait WaveSurferUtil extends StObject {
     
-    var Observer: typings.wavesurferJs.mod.Observer = js.native
+    var Observer: typings.wavesurferJs.mod.Observer
     
-    def ajax(options: Xhr): Observer = js.native
+    def ajax(options: Xhr): Observer
     
-    def extend(dest: js.Object, sources: js.Object*): js.Object = js.native
+    def extend(dest: js.Object, sources: js.Object*): js.Object
     
-    def frame(fn: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Double] = js.native
+    def frame(fn: js.Function1[/* repeated */ js.Any, Unit]): js.Function1[/* repeated */ js.Any, Double]
     
-    def getId(): String = js.native
+    def getId(): String
     
-    def max(values: js.Array[Double]): Double = js.native
+    def max(values: js.Array[Double]): Double
     
-    def min(values: js.Array[Double]): Double = js.native
+    def min(values: js.Array[Double]): Double
     
-    def preventClick(): Unit = js.native
+    def preventClick(): Unit
     
-    def requestAnimationFrame(): js.Function1[/* fn */ js.Function1[/* t */ Double, Unit], Double] = js.native
+    def requestAnimationFrame(): js.Function1[/* fn */ js.Function1[/* t */ Double, Unit], Double]
     
-    def style(el: HTMLElement, styles: StringDictionary[String]): HTMLElement = js.native
+    def style(el: HTMLElement, styles: StringDictionary[String]): HTMLElement
   }
   object WaveSurferUtil {
     
@@ -984,12 +909,11 @@ object mod {
     }
   }
   
-  @js.native
   trait XHROptions extends StObject {
     
-    var requestHeaders: js.UndefOr[js.Array[XHRRequestHeader]] = js.native
+    var requestHeaders: js.UndefOr[js.Array[XHRRequestHeader]] = js.undefined
     
-    var withCredentials: js.UndefOr[Boolean] = js.native
+    var withCredentials: js.UndefOr[Boolean] = js.undefined
   }
   object XHROptions {
     
@@ -1019,12 +943,11 @@ object mod {
     }
   }
   
-  @js.native
   trait XHRRequestHeader extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var value: String = js.native
+    var value: String
   }
   object XHRRequestHeader {
     

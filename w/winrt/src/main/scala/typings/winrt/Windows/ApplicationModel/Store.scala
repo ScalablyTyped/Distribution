@@ -8,35 +8,31 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Store {
   
-  @js.native
   trait CurrentApp extends StObject
   
-  @js.native
   trait CurrentAppSimulator extends StObject
   
-  @js.native
   trait ICurrentApp extends StObject {
     
-    var appId: String = js.native
+    var appId: String
     
-    def getAppReceiptAsync(): IAsyncOperation[String] = js.native
+    def getAppReceiptAsync(): IAsyncOperation[String]
     
-    def getProductReceiptAsync(productId: String): IAsyncOperation[String] = js.native
+    def getProductReceiptAsync(productId: String): IAsyncOperation[String]
     
-    var licenseInformation: LicenseInformation = js.native
+    var licenseInformation: LicenseInformation
     
-    var linkUri: Uri = js.native
+    var linkUri: Uri
     
-    def loadListingInformationAsync(): IAsyncOperation[ListingInformation] = js.native
+    def loadListingInformationAsync(): IAsyncOperation[ListingInformation]
     
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String] = js.native
+    def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String]
     
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String] = js.native
+    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String]
   }
   object ICurrentApp {
     
@@ -84,26 +80,25 @@ object Store {
     }
   }
   
-  @js.native
   trait ICurrentAppSimulator extends StObject {
     
-    var appId: String = js.native
+    var appId: String
     
-    def getAppReceiptAsync(): IAsyncOperation[String] = js.native
+    def getAppReceiptAsync(): IAsyncOperation[String]
     
-    def getProductReceiptAsync(productId: String): IAsyncOperation[String] = js.native
+    def getProductReceiptAsync(productId: String): IAsyncOperation[String]
     
-    var licenseInformation: LicenseInformation = js.native
+    var licenseInformation: LicenseInformation
     
-    var linkUri: Uri = js.native
+    var linkUri: Uri
     
-    def loadListingInformationAsync(): IAsyncOperation[ListingInformation] = js.native
+    def loadListingInformationAsync(): IAsyncOperation[ListingInformation]
     
-    def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IAsyncAction = js.native
+    def reloadSimulatorAsync(simulatorSettingsFile: StorageFile): IAsyncAction
     
-    def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String] = js.native
+    def requestAppPurchaseAsync(includeReceipt: Boolean): IAsyncOperation[String]
     
-    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String] = js.native
+    def requestProductPurchaseAsync(productId: String, includeReceipt: Boolean): IAsyncOperation[String]
   }
   object ICurrentAppSimulator {
     
@@ -155,18 +150,17 @@ object Store {
     }
   }
   
-  @js.native
   trait ILicenseInformation extends StObject {
     
-    var expirationDate: Date = js.native
+    var expirationDate: Date
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var isTrial: Boolean = js.native
+    var isTrial: Boolean
     
-    var onlicensechanged: js.Any = js.native
+    var onlicensechanged: js.Any
     
-    var productLicenses: IMapView[String, ProductLicense] = js.native
+    var productLicenses: IMapView[String, ProductLicense]
   }
   object ILicenseInformation {
     
@@ -202,20 +196,19 @@ object Store {
     }
   }
   
-  @js.native
   trait IListingInformation extends StObject {
     
-    var ageRating: Double = js.native
+    var ageRating: Double
     
-    var currentMarket: String = js.native
+    var currentMarket: String
     
-    var description: String = js.native
+    var description: String
     
-    var formattedPrice: String = js.native
+    var formattedPrice: String
     
-    var name: String = js.native
+    var name: String
     
-    var productListings: IMapView[String, ProductListing] = js.native
+    var productListings: IMapView[String, ProductListing]
   }
   object IListingInformation {
     
@@ -255,14 +248,13 @@ object Store {
     }
   }
   
-  @js.native
   trait IProductLicense extends StObject {
     
-    var expirationDate: Date = js.native
+    var expirationDate: Date
     
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
-    var productId: String = js.native
+    var productId: String
   }
   object IProductLicense {
     
@@ -286,14 +278,13 @@ object Store {
     }
   }
   
-  @js.native
   trait IProductListing extends StObject {
     
-    var formattedPrice: String = js.native
+    var formattedPrice: String
     
-    var name: String = js.native
+    var name: String
     
-    var productId: String = js.native
+    var productId: String
   }
   object IProductListing {
     
@@ -319,8 +310,9 @@ object Store {
   
   type LicenseChangedEventHandler = js.Function0[Unit]
   
-  @js.native
-  trait LicenseInformation extends ILicenseInformation
+  trait LicenseInformation
+    extends StObject
+       with ILicenseInformation
   object LicenseInformation {
     
     @scala.inline
@@ -336,8 +328,9 @@ object Store {
     }
   }
   
-  @js.native
-  trait ListingInformation extends IListingInformation
+  trait ListingInformation
+    extends StObject
+       with IListingInformation
   object ListingInformation {
     
     @scala.inline
@@ -354,8 +347,9 @@ object Store {
     }
   }
   
-  @js.native
-  trait ProductLicense extends IProductLicense
+  trait ProductLicense
+    extends StObject
+       with IProductLicense
   object ProductLicense {
     
     @scala.inline
@@ -365,8 +359,9 @@ object Store {
     }
   }
   
-  @js.native
-  trait ProductListing extends IProductListing
+  trait ProductListing
+    extends StObject
+       with IProductListing
   object ProductListing {
     
     @scala.inline

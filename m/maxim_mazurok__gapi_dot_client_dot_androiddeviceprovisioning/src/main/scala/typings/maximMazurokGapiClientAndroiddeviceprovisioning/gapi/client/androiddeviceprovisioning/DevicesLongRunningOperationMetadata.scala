@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DevicesLongRunningOperationMetadata extends StObject {
   
   /** The number of metadata updates in the operation. This might be different from the number of updates in the request if the API can't parse some of the updates. */
-  var devicesCount: js.UndefOr[Double] = js.native
+  var devicesCount: js.UndefOr[Double] = js.undefined
   
   /** The processing status of the operation. */
-  var processingStatus: js.UndefOr[String] = js.native
+  var processingStatus: js.UndefOr[String] = js.undefined
   
   /** The processing progress of the operation. Measured as a number from 0 to 100. A value of 10O doesnt always mean the operation completed—check for the inclusion of a `done` field. */
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
 }
 object DevicesLongRunningOperationMetadata {
   

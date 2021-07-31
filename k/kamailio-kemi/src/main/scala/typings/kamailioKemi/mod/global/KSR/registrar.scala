@@ -2,72 +2,59 @@ package typings.kamailioKemi.mod.global.KSR
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registrar {
   
-  @JSGlobal("KSR.registrar.add_sock_hdr")
+  @JSGlobal("KSR.registrar")
   @js.native
-  def addSockHdr(hdr_name: String): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSGlobal("KSR.registrar.lookup")
-  @js.native
-  def lookup(table: String): Double = js.native
+  @scala.inline
+  def addSockHdr(hdr_name: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("add_sock_hdr")(hdr_name.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.lookup_branches")
-  @js.native
-  def lookupBranches(_dtable: String): Double = js.native
+  @scala.inline
+  def lookup(table: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(table.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.lookup_to_dset")
-  @js.native
-  def lookupToDset(table: String, uri: String): Double = js.native
+  @scala.inline
+  def lookupBranches(_dtable: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup_branches")(_dtable.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.lookup_uri")
-  @js.native
-  def lookupUri(table: String, uri: String): Double = js.native
+  @scala.inline
+  def lookupToDset(table: String, uri: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup_to_dset")(table.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.reg_fetch_contacts")
-  @js.native
-  def regFetchContacts(dtable: String, uri: String, profile: String): Double = js.native
+  @scala.inline
+  def lookupUri(table: String, uri: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup_uri")(table.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.reg_free_contacts")
-  @js.native
-  def regFreeContacts(profile: String): Double = js.native
+  @scala.inline
+  def regFetchContacts(dtable: String, uri: String, profile: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("reg_fetch_contacts")(dtable.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], profile.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.registered")
-  @js.native
-  def registered(table: String): Double = js.native
+  @scala.inline
+  def regFreeContacts(profile: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("reg_free_contacts")(profile.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.registered_action")
-  @js.native
-  def registeredAction(_dtable: String, _uri: String, _f: Double, _aflags: Double): Double = js.native
+  @scala.inline
+  def registered(table: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("registered")(table.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.registered_flags")
-  @js.native
-  def registeredFlags(_dtable: String, _uri: String, _f: Double): Double = js.native
+  @scala.inline
+  def registeredAction(_dtable: String, _uri: String, _f: Double, _aflags: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("registered_action")(_dtable.asInstanceOf[js.Any], _uri.asInstanceOf[js.Any], _f.asInstanceOf[js.Any], _aflags.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.registered_uri")
-  @js.native
-  def registeredUri(_dtable: String, _uri: String): Double = js.native
+  @scala.inline
+  def registeredFlags(_dtable: String, _uri: String, _f: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("registered_flags")(_dtable.asInstanceOf[js.Any], _uri.asInstanceOf[js.Any], _f.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.save")
-  @js.native
-  def save(table: String, flags: Double): Double = js.native
+  @scala.inline
+  def registeredUri(_dtable: String, _uri: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("registered_uri")(_dtable.asInstanceOf[js.Any], _uri.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.save_uri")
-  @js.native
-  def saveUri(table: String, flags: Double, uri: String): Double = js.native
+  @scala.inline
+  def save(table: String, flags: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("save")(table.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.set_q_override")
-  @js.native
-  def setQOverride(new_q: String): Double = js.native
+  @scala.inline
+  def saveUri(table: String, flags: Double, uri: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("save_uri")(table.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.unregister")
-  @js.native
-  def unregister(_dtable: String, _uri: String): Double = js.native
+  @scala.inline
+  def setQOverride(new_q: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("set_q_override")(new_q.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSGlobal("KSR.registrar.unregister_ruid")
-  @js.native
-  def unregisterRuid(_dtable: String, _uri: String, _ruid: String): Double = js.native
+  @scala.inline
+  def unregister(_dtable: String, _uri: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(_dtable.asInstanceOf[js.Any], _uri.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def unregisterRuid(_dtable: String, _uri: String, _ruid: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unregister_ruid")(_dtable.asInstanceOf[js.Any], _uri.asInstanceOf[js.Any], _ruid.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

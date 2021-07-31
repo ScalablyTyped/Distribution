@@ -2,15 +2,13 @@ package typings.asn1js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChoiceParams extends StObject {
   
-  var optional: js.UndefOr[scala.Boolean] = js.native
+  var optional: js.UndefOr[scala.Boolean] = js.undefined
   
-  var value: js.UndefOr[js.Array[LocalValueBlock]] = js.native
+  var value: js.UndefOr[js.Array[LocalValueBlock]] = js.undefined
 }
 object ChoiceParams {
   

@@ -7,153 +7,134 @@ import typings.officeUiFabricReact.anon.PartialIComboBoxStyles
 import typings.officeUiFabricReact.buttonTypesMod.IButtonStyles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object comboBoxStylesMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getCaretDownButtonStyles")
+  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", JSImport.Namespace)
   @js.native
-  def getCaretDownButtonStyles(theme: ITheme): IButtonStyles = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getCaretDownButtonStyles")
-  @js.native
-  def getCaretDownButtonStyles(theme: ITheme, customStyles: PartialIButtonStyles): IButtonStyles = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
-  def getOptionStyles(theme: ITheme): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  @scala.inline
+  def getCaretDownButtonStyles(theme: ITheme): IButtonStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getCaretDownButtonStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[IButtonStyles]
+  @scala.inline
+  def getCaretDownButtonStyles(theme: ITheme, customStyles: PartialIButtonStyles): IButtonStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getCaretDownButtonStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any])).asInstanceOf[IButtonStyles]
+  
+  @scala.inline
+  def getOptionStyles(theme: ITheme): PartialIComboBoxOptionSty = ^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
-    customStylesForAllOptions: js.UndefOr[scala.Nothing],
-    customOptionStylesForCurrentOption: js.UndefOr[scala.Nothing],
-    isPending: js.UndefOr[scala.Nothing],
-    isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
-  def getOptionStyles(
-    theme: ITheme,
-    customStylesForAllOptions: js.UndefOr[scala.Nothing],
-    customOptionStylesForCurrentOption: js.UndefOr[scala.Nothing],
+    customStylesForAllOptions: Unit,
+    customOptionStylesForCurrentOption: Unit,
     isPending: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
-    customStylesForAllOptions: js.UndefOr[scala.Nothing],
-    customOptionStylesForCurrentOption: js.UndefOr[scala.Nothing],
+    customStylesForAllOptions: Unit,
+    customOptionStylesForCurrentOption: Unit,
     isPending: Boolean,
     isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
-    customStylesForAllOptions: js.UndefOr[scala.Nothing],
+    customStylesForAllOptions: Unit,
+    customOptionStylesForCurrentOption: Unit,
+    isPending: Unit,
+    isHidden: Boolean
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
+  def getOptionStyles(
+    theme: ITheme,
+    customStylesForAllOptions: Unit,
     customOptionStylesForCurrentOption: PartialIComboBoxOptionSty
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
-    customStylesForAllOptions: js.UndefOr[scala.Nothing],
-    customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
-    isPending: js.UndefOr[scala.Nothing],
-    isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
-  def getOptionStyles(
-    theme: ITheme,
-    customStylesForAllOptions: js.UndefOr[scala.Nothing],
+    customStylesForAllOptions: Unit,
     customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
     isPending: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
-    customStylesForAllOptions: js.UndefOr[scala.Nothing],
+    customStylesForAllOptions: Unit,
     customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
     isPending: Boolean,
     isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
-  def getOptionStyles(theme: ITheme, customStylesForAllOptions: PartialIComboBoxOptionSty): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
-    customStylesForAllOptions: PartialIComboBoxOptionSty,
-    customOptionStylesForCurrentOption: js.UndefOr[scala.Nothing],
-    isPending: js.UndefOr[scala.Nothing],
+    customStylesForAllOptions: Unit,
+    customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
+    isPending: Unit,
     isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
+  def getOptionStyles(theme: ITheme, customStylesForAllOptions: PartialIComboBoxOptionSty): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
     customStylesForAllOptions: PartialIComboBoxOptionSty,
-    customOptionStylesForCurrentOption: js.UndefOr[scala.Nothing],
+    customOptionStylesForCurrentOption: Unit,
     isPending: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
     customStylesForAllOptions: PartialIComboBoxOptionSty,
-    customOptionStylesForCurrentOption: js.UndefOr[scala.Nothing],
+    customOptionStylesForCurrentOption: Unit,
     isPending: Boolean,
     isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
+  def getOptionStyles(
+    theme: ITheme,
+    customStylesForAllOptions: PartialIComboBoxOptionSty,
+    customOptionStylesForCurrentOption: Unit,
+    isPending: Unit,
+    isHidden: Boolean
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
     customStylesForAllOptions: PartialIComboBoxOptionSty,
     customOptionStylesForCurrentOption: PartialIComboBoxOptionSty
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
-  def getOptionStyles(
-    theme: ITheme,
-    customStylesForAllOptions: PartialIComboBoxOptionSty,
-    customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
-    isPending: js.UndefOr[scala.Nothing],
-    isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
     customStylesForAllOptions: PartialIComboBoxOptionSty,
     customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
     isPending: Boolean
-  ): PartialIComboBoxOptionSty = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getOptionStyles")
-  @js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
   def getOptionStyles(
     theme: ITheme,
     customStylesForAllOptions: PartialIComboBoxOptionSty,
     customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
     isPending: Boolean,
     isHidden: Boolean
-  ): PartialIComboBoxOptionSty = js.native
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
+  @scala.inline
+  def getOptionStyles(
+    theme: ITheme,
+    customStylesForAllOptions: PartialIComboBoxOptionSty,
+    customOptionStylesForCurrentOption: PartialIComboBoxOptionSty,
+    isPending: Unit,
+    isHidden: Boolean
+  ): PartialIComboBoxOptionSty = (^.asInstanceOf[js.Dynamic].applyDynamic("getOptionStyles")(theme.asInstanceOf[js.Any], customStylesForAllOptions.asInstanceOf[js.Any], customOptionStylesForCurrentOption.asInstanceOf[js.Any], isPending.asInstanceOf[js.Any], isHidden.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxOptionSty]
   
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getStyles")
-  @js.native
-  def getStyles(theme: ITheme): PartialIComboBoxStyles = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getStyles")
-  @js.native
-  def getStyles(theme: ITheme, customStyles: js.UndefOr[scala.Nothing], comboBoxOptionWidth: String): PartialIComboBoxStyles = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getStyles")
-  @js.native
-  def getStyles(theme: ITheme, customStyles: PartialIComboBoxStyles): PartialIComboBoxStyles = js.native
-  @JSImport("office-ui-fabric-react/lib/components/ComboBox/ComboBox.styles", "getStyles")
-  @js.native
-  def getStyles(theme: ITheme, customStyles: PartialIComboBoxStyles, comboBoxOptionWidth: String): PartialIComboBoxStyles = js.native
+  @scala.inline
+  def getStyles(theme: ITheme): PartialIComboBoxStyles = ^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any]).asInstanceOf[PartialIComboBoxStyles]
+  @scala.inline
+  def getStyles(theme: ITheme, customStyles: Unit, comboBoxOptionWidth: String): PartialIComboBoxStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any], comboBoxOptionWidth.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxStyles]
+  @scala.inline
+  def getStyles(theme: ITheme, customStyles: PartialIComboBoxStyles): PartialIComboBoxStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxStyles]
+  @scala.inline
+  def getStyles(theme: ITheme, customStyles: PartialIComboBoxStyles, comboBoxOptionWidth: String): PartialIComboBoxStyles = (^.asInstanceOf[js.Dynamic].applyDynamic("getStyles")(theme.asInstanceOf[js.Any], customStyles.asInstanceOf[js.Any], comboBoxOptionWidth.asInstanceOf[js.Any])).asInstanceOf[PartialIComboBoxStyles]
 }

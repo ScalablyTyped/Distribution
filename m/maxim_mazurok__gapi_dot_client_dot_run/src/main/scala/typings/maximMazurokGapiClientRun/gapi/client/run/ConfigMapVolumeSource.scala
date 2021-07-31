@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientRun.gapi.client.run
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigMapVolumeSource extends StObject {
   
   /**
@@ -13,20 +11,20 @@ trait ConfigMapVolumeSource extends StObject {
     * Directories within the path are not affected by this setting. This might be in conflict with other options that affect the file mode, like fsGroup, and the result can be other mode
     * bits set.
     */
-  var defaultMode: js.UndefOr[Double] = js.native
+  var defaultMode: js.UndefOr[Double] = js.undefined
   
   /**
     * (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported If unspecified, each key-value pair in the Data field of the referenced Secret will be projected
     * into the volume as a file whose name is the key and content is the value. If specified, the listed keys will be projected into the specified paths, and unlisted keys will not be
     * present. If a key is specified which is not present in the Secret, the volume setup will error unless it is marked optional.
     */
-  var items: js.UndefOr[js.Array[KeyToPath]] = js.native
+  var items: js.UndefOr[js.Array[KeyToPath]] = js.undefined
   
   /** Cloud Run fully managed: not supported Cloud Run for Anthos: supported Name of the config. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** (Optional) Cloud Run fully managed: not supported Cloud Run for Anthos: supported Specify whether the Secret or its keys must be defined. */
-  var optional: js.UndefOr[Boolean] = js.native
+  var optional: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigMapVolumeSource {
   

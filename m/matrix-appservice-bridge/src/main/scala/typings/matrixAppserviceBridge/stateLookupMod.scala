@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateLookupMod {
@@ -86,18 +85,17 @@ object stateLookupMod {
     def untrackRoom(roomId: String): Unit = js.native
   }
   
-  @js.native
   trait StateLookupEvent extends StObject {
     
-    var content: js.Any = js.native
+    var content: js.Any
     
-    var event_id: String = js.native
+    var event_id: String
     
-    var room_id: String = js.native
+    var room_id: String
     
-    var state_key: String = js.native
+    var state_key: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object StateLookupEvent {
     
@@ -128,16 +126,15 @@ object stateLookupMod {
     }
   }
   
-  @js.native
   trait StateLookupOpts extends StObject {
     
-    var client: js.Any = js.native
+    var client: js.Any
     
-    var eventTypes: js.UndefOr[js.Array[String]] = js.native
+    var eventTypes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var retryStateInMs: js.UndefOr[Double] = js.native
+    var retryStateInMs: js.UndefOr[Double] = js.undefined
     
-    var stateLookupConcurrency: js.UndefOr[Double] = js.native
+    var stateLookupConcurrency: js.UndefOr[Double] = js.undefined
   }
   object StateLookupOpts {
     
@@ -176,14 +173,13 @@ object stateLookupMod {
     }
   }
   
-  @js.native
   trait StateLookupRoom extends StObject {
     
-    var events: StringDictionary[StringDictionary[StateLookupEvent]] = js.native
+    var events: StringDictionary[StringDictionary[StateLookupEvent]]
     
-    var syncPending: Boolean = js.native
+    var syncPending: Boolean
     
-    var syncPromise: js.Promise[StateLookupRoom] = js.native
+    var syncPromise: js.Promise[StateLookupRoom]
   }
   object StateLookupRoom {
     

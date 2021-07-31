@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ScopedGlideRecord
-  extends /* fieldName */ StringDictionary[js.Any]
+  extends StObject
+     with /* fieldName */ StringDictionary[js.Any]
      with /**
   * Creates an instance of the GlideRecord class for the specified table.
   *
@@ -50,9 +50,9 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def _query(): Unit = js.native
-  def _query(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def _query(name: String): Unit = js.native
   def _query(name: String, value: js.Any): Unit = js.native
+  def _query(name: Unit, value: js.Any): Unit = js.native
   
   /**
     * Adds a filter to return active records.
@@ -141,9 +141,9 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * gr.query();
     */
   def addJoinQuery(joinTable: String): ScopedQueryCondition = js.native
-  def addJoinQuery(joinTable: String, primaryField: js.UndefOr[scala.Nothing], joinTableField: String): ScopedQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String): ScopedQueryCondition = js.native
   def addJoinQuery(joinTable: String, primaryField: String, joinTableField: String): ScopedQueryCondition = js.native
+  def addJoinQuery(joinTable: String, primaryField: Unit, joinTableField: String): ScopedQueryCondition = js.native
   
   /**
     * A filter that specifies records where the value of the field passed in the parameter is not
@@ -790,9 +790,9 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     * }
     */
   def query(): Unit = js.native
-  def query(field: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
   def query(field: String): Unit = js.native
   def query(field: String, value: js.Any): Unit = js.native
+  def query(field: Unit, value: js.Any): Unit = js.native
   
   /**
     * Sets a flag to indicate if the next database action (insert, update, delete) is to be aborted.
@@ -870,17 +870,17 @@ Instantiable1[/* tableName */ String, ScopedGlideRecord] {
     */
   def setWorkflow(enable: Boolean): Unit = js.native
   
-  val sys_created_by: String with ScopedGlideElement = js.native
+  val sys_created_by: String & ScopedGlideElement = js.native
   
-  val sys_created_on: GlideDateTime with ScopedGlideElement = js.native
+  val sys_created_on: GlideDateTime & ScopedGlideElement = js.native
   
-  val sys_id: String with ScopedGlideElement = js.native
+  val sys_id: String & ScopedGlideElement = js.native
   
-  val sys_mod_count: Double with ScopedGlideElement = js.native
+  val sys_mod_count: Double & ScopedGlideElement = js.native
   
-  val sys_updated_by: String with ScopedGlideElement = js.native
+  val sys_updated_by: String & ScopedGlideElement = js.native
   
-  val sys_updated_on: GlideDateTime with ScopedGlideElement = js.native
+  val sys_updated_on: GlideDateTime & ScopedGlideElement = js.native
   
   /**
     * Updates the GlideRecord with any changes that have been made. If the record does not already

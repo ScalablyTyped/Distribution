@@ -2,35 +2,33 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceMatrixResponse extends StObject {
   
   /**
     * contains an array of addresses as returned by the API from your original request.
     * As with origin_addresses, these are localized if appropriate.
     */
-  var destination_addresses: js.Array[String] = js.native
+  var destination_addresses: js.Array[String]
   
   /**
     * When the top-level status code is other than `OK`, this field contains more detailed information
     * about the reasons behind the given status code.
     */
-  var error_message: String = js.native
+  var error_message: String
   
   /**
     * contains an array of addresses as returned by the API from your original request.
     * These are formatted by the geocoder and localized according to the language parameter passed with the request.
     */
-  var origin_addresses: js.Array[String] = js.native
+  var origin_addresses: js.Array[String]
   
   /** contains an array of elements, which in turn each contain a status, duration, and distance element. */
-  var rows: js.Array[DistanceMatrixRow] = js.native
+  var rows: js.Array[DistanceMatrixRow]
   
   /** contains metadata on the request. See Status Codes below. */
-  var status: DistanceMatrixResponseTopLevelStatus = js.native
+  var status: DistanceMatrixResponseTopLevelStatus
 }
 object DistanceMatrixResponse {
   

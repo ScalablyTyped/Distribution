@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,12 +12,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : MsgPackStatic = js.native
   
-  @js.native
   trait MsgPackCallbackResult extends StObject {
     
-    var ok: Boolean = js.native
+    var ok: Boolean
     
-    var status: Double = js.native
+    var status: Double
   }
   object MsgPackCallbackResult {
     
@@ -46,7 +44,6 @@ object mod extends Shortcut {
     Unit
   ]
   
-  @js.native
   trait MsgPackDownloadOption extends StObject {
     
     var after: js.UndefOr[
@@ -56,19 +53,19 @@ object mod extends Shortcut {
           /* result */ MsgPackCallbackResult, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var before: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* option */ this.type, Unit]] = js.native
+    var before: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* option */ this.type, Unit]] = js.undefined
     
     /**
       * timeout sec.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * use WebWorker if true.
       */
-    var worker: js.UndefOr[Boolean] = js.native
+    var worker: js.UndefOr[Boolean] = js.undefined
   }
   object MsgPackDownloadOption {
     
@@ -142,7 +139,6 @@ object mod extends Shortcut {
     Unit
   ]
   
-  @js.native
   trait MsgPackUploadOption extends StObject {
     
     var after: js.UndefOr[
@@ -152,24 +148,24 @@ object mod extends Shortcut {
           /* result */ MsgPackCallbackResult, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var before: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* option */ this.type, Unit]] = js.native
+    var before: js.UndefOr[js.Function2[/* xhr */ XMLHttpRequest, /* option */ this.type, Unit]] = js.undefined
     
     /**
       * string or ByteArray
       */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /**
       * timeout sec.
       */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /**
       * use WebWorker if true.
       */
-    var worker: js.UndefOr[Boolean] = js.native
+    var worker: js.UndefOr[Boolean] = js.undefined
   }
   object MsgPackUploadOption {
     

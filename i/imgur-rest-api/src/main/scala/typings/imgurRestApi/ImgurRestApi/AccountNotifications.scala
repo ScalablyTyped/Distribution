@@ -2,15 +2,13 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountNotifications extends StObject {
   
-  var messages: js.Array[Notification[Conversation]] = js.native
+  var messages: js.Array[Notification[Conversation]]
   
-  var replies: js.Array[Notification[Comment]] = js.native
+  var replies: js.Array[Notification[Comment]]
 }
 object AccountNotifications {
   

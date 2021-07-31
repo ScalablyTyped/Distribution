@@ -6,15 +6,16 @@ import typings.googleGax.apitypesMod.SimpleCallbackFunction
 import typings.googleGax.gaxMod.RetryOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object retriesMod {
   
-  @JSImport("google-gax/build/src/normalCalls/retries", "retryable")
+  @JSImport("google-gax/build/src/normalCalls/retries", JSImport.Namespace)
   @js.native
-  def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs): SimpleCallbackFunction = js.native
-  @JSImport("google-gax/build/src/normalCalls/retries", "retryable")
-  @js.native
-  def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs, apiName: String): SimpleCallbackFunction = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("retryable")(func.asInstanceOf[js.Any], retry.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
+  @scala.inline
+  def retryable(func: GRPCCall, retry: RetryOptions, otherArgs: GRPCCallOtherArgs, apiName: String): SimpleCallbackFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("retryable")(func.asInstanceOf[js.Any], retry.asInstanceOf[js.Any], otherArgs.asInstanceOf[js.Any], apiName.asInstanceOf[js.Any])).asInstanceOf[SimpleCallbackFunction]
 }

@@ -4,18 +4,18 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SlideUpdateFromOptions extends Object {
+trait SlideUpdateFromOptions
+  extends StObject
+     with Object {
   
   /**
     * Screenshot options to use.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-webscene-Slide.html#updateFrom)
     */
-  var screenshot: SlideUpdateFromOptionsScreenshot = js.native
+  var screenshot: SlideUpdateFromOptionsScreenshot
 }
 object SlideUpdateFromOptions {
   

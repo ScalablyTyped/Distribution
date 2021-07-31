@@ -2,50 +2,50 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a base for client-side objects which allow single-line text input.
   */
-@js.native
-trait ASPxClientTextEdit extends ASPxClientEdit {
+trait ASPxClientTextEdit
+  extends StObject
+     with ASPxClientEdit {
   
   /**
     * Obtains the caret position within the edited text.
     */
-  def GetCaretPosition(): Double = js.native
+  def GetCaretPosition(): Double
   
   /**
     * Returns the text displayed within the editor.
     */
-  def GetText(): String = js.native
+  def GetText(): String
   
   /**
     * Occurs on the client-side when an end-user presses a key while the editor has focus.
     */
-  var KeyDown: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]] = js.native
+  var KeyDown: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]
   
   /**
     * Occurs on the client-side when an end-user presses and releases a key while the editor has focus.
     */
-  var KeyPress: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]] = js.native
+  var KeyPress: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]
   
   /**
     * Occurs on the client-side when an end-user releases a pressed key while the editor has focus.
     */
-  var KeyUp: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]] = js.native
+  var KeyUp: ASPxClientEvent[ASPxClientEditKeyEventHandler[ASPxClientTextEdit]]
   
   /**
     * Selects all text in the text editor.
     */
-  def SelectAll(): Unit = js.native
+  def SelectAll(): Unit
   
   /**
     * Sets the caret position within the edited text.
     * @param position An integer value that specifies the zero-based index of a text character that shall precede the caret.
     */
-  def SetCaretPosition(position: Double): Unit = js.native
+  def SetCaretPosition(position: Double): Unit
   
   /**
     * Selects the specified portion of the editor's text.
@@ -53,23 +53,23 @@ trait ASPxClientTextEdit extends ASPxClientEdit {
     * @param endPos A zero-based integer value specifying the selection's ending position.
     * @param scrollToSelection true to scroll the editor's contents to make the selection visible; otherwise, false.
     */
-  def SetSelection(startPos: Double, endPos: Double, scrollToSelection: Boolean): Unit = js.native
+  def SetSelection(startPos: Double, endPos: Double, scrollToSelection: Boolean): Unit
   
   /**
     * Sets the text to be displayed within the editor.
     * @param text A string value specifying the text to be displayed within the editor.
     */
-  def SetText(text: String): Unit = js.native
+  def SetText(text: String): Unit
   
   /**
     * Fires on the client side when the editor's text is changed and focus moves out of the editor by end-user interactions.
     */
-  var TextChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]] = js.native
+  var TextChanged: ASPxClientEvent[ASPxClientProcessingModeEventHandler[ASPxClientTextEdit]]
   
   /**
     * Fires on the client side when the editor's input value is changed before the focus moves out of the editor by end-user interactions.
     */
-  var UserInput: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTextEdit]] = js.native
+  var UserInput: ASPxClientEvent[ASPxClientEventHandler[ASPxClientTextEdit]]
 }
 object ASPxClientTextEdit {
   

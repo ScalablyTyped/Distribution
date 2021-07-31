@@ -2,26 +2,24 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The list of all clusters in a project.
   */
-@js.native
 trait SchemaListClustersResponse extends StObject {
   
   /**
     * Output only. The clusters in the project.
     */
-  var clusters: js.UndefOr[js.Array[SchemaCluster]] = js.native
+  var clusters: js.UndefOr[js.Array[SchemaCluster]] = js.undefined
   
   /**
     * Output only. This token is included in the response if there are more
     * results to fetch. To fetch additional results, provide this value as the
     * page_token in a subsequent ListClustersRequest.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListClustersResponse {
   

@@ -2,11 +2,11 @@ package typings.asn1js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LocalUniversalStringValueParams extends LocalHexBlockParams
+trait LocalUniversalStringValueParams
+  extends StObject
+     with LocalHexBlockParams
 object LocalUniversalStringValueParams {
   
   @scala.inline

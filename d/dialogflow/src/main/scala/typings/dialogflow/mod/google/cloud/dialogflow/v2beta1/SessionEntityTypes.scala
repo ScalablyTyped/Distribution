@@ -11,7 +11,6 @@ import typings.protobufjs.mod.rpc.Service
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a SessionEntityTypes */
@@ -26,8 +25,8 @@ class SessionEntityTypes protected () extends Service {
     */
   def this(rpcImpl: RPCImpl) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean) = this()
-  def this(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean) = this()
   def this(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean) = this()
+  def this(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean) = this()
   
   /**
     * Calls CreateSessionEntityType.
@@ -96,6 +95,10 @@ class SessionEntityTypes protected () extends Service {
 }
 object SessionEntityTypes {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SessionEntityTypes")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates new SessionEntityTypes service using the specified rpc implementation.
     * @param rpcImpl RPC implementation
@@ -104,18 +107,14 @@ object SessionEntityTypes {
     * @returns RPC service. Useful where requests and/or responses are streamed.
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SessionEntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl): SessionEntityTypes = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SessionEntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: js.UndefOr[scala.Nothing], responseDelimited: Boolean): SessionEntityTypes = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SessionEntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): SessionEntityTypes = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.SessionEntityTypes.create")
-  @js.native
-  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): SessionEntityTypes = js.native
+  @scala.inline
+  def create(rpcImpl: RPCImpl): SessionEntityTypes = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any]).asInstanceOf[SessionEntityTypes]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean): SessionEntityTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any])).asInstanceOf[SessionEntityTypes]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Boolean, responseDelimited: Boolean): SessionEntityTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[SessionEntityTypes]
+  @scala.inline
+  def create(rpcImpl: RPCImpl, requestDelimited: Unit, responseDelimited: Boolean): SessionEntityTypes = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(rpcImpl.asInstanceOf[js.Any], requestDelimited.asInstanceOf[js.Any], responseDelimited.asInstanceOf[js.Any])).asInstanceOf[SessionEntityTypes]
   
   /**
     * Callback as used by {@link google.cloud.dialogflow.v2beta1.SessionEntityTypes#createSessionEntityType}.

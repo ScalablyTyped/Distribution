@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
   /** Container image path set for flex Template. */
-  var containerSpec: js.UndefOr[ContainerSpec] = js.native
+  var containerSpec: js.UndefOr[ContainerSpec] = js.undefined
   
   /** job_graph_gcs_path set for legacy Template. */
-  var jobGraphGcsPath: js.UndefOr[String] = js.native
+  var jobGraphGcsPath: js.UndefOr[String] = js.undefined
   
   /** Metadata set for legacy Template. */
-  var metadata: js.UndefOr[TemplateMetadata] = js.native
+  var metadata: js.UndefOr[TemplateMetadata] = js.undefined
 }
 object Artifact {
   

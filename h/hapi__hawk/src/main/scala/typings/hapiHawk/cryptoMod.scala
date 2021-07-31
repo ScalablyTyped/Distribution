@@ -4,69 +4,64 @@ import typings.hapiHawk.clientMod.Credentials
 import typings.node.cryptoMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cryptoMod {
+  
+  @JSImport("@hapi/hawk/lib/crypto", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@hapi/hawk/lib/crypto", "algorithms")
   @js.native
   val algorithms: js.Array[String] = js.native
   
-  @JSImport("@hapi/hawk/lib/crypto", "calculateMac")
-  @js.native
-  def calculateMac(`type`: String, credentials: Credentials, options: Artifacts): String = js.native
+  @scala.inline
+  def calculateMac(`type`: String, credentials: Credentials, options: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateMac")(`type`.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@hapi/hawk/lib/crypto", "calculatePayloadHash")
-  @js.native
-  def calculatePayloadHash(payload: String, algorithm: String, contentType: String): String = js.native
+  @scala.inline
+  def calculatePayloadHash(payload: String, algorithm: String, contentType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculatePayloadHash")(payload.asInstanceOf[js.Any], algorithm.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@hapi/hawk/lib/crypto", "calculateTsMac")
-  @js.native
-  def calculateTsMac(ts: String, credentials: Credentials): String = js.native
+  @scala.inline
+  def calculateTsMac(ts: String, credentials: Credentials): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateTsMac")(ts.asInstanceOf[js.Any], credentials.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@hapi/hawk/lib/crypto", "finalizePayloadHash")
-  @js.native
-  def finalizePayloadHash(hash: Hash): String = js.native
+  @scala.inline
+  def finalizePayloadHash(hash: Hash): String = ^.asInstanceOf[js.Dynamic].applyDynamic("finalizePayloadHash")(hash.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@hapi/hawk/lib/crypto", "generateNormalizedString")
-  @js.native
-  def generateNormalizedString(`type`: String, options: Artifacts): String = js.native
+  @scala.inline
+  def generateNormalizedString(`type`: String, options: Artifacts): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateNormalizedString")(`type`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("@hapi/hawk/lib/crypto", "headerVersion")
   @js.native
   val headerVersion: String = js.native
   
-  @JSImport("@hapi/hawk/lib/crypto", "initializePayloadHash")
-  @js.native
-  def initializePayloadHash(algorithm: String, contentType: String): String = js.native
+  @scala.inline
+  def initializePayloadHash(algorithm: String, contentType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("initializePayloadHash")(algorithm.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@hapi/hawk/lib/crypto", "timestampMessage")
-  @js.native
-  def timestampMessage(credentials: Credentials, localtimeOffsetMsec: Double): TimestampMessage_ = js.native
+  @scala.inline
+  def timestampMessage(credentials: Credentials, localtimeOffsetMsec: Double): TimestampMessage_ = (^.asInstanceOf[js.Dynamic].applyDynamic("timestampMessage")(credentials.asInstanceOf[js.Any], localtimeOffsetMsec.asInstanceOf[js.Any])).asInstanceOf[TimestampMessage_]
   
-  @js.native
   trait Artifacts extends StObject {
     
-    var app: js.UndefOr[String] = js.native
+    var app: js.UndefOr[String] = js.undefined
     
-    var dlg: js.UndefOr[String] = js.native
+    var dlg: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var host: String = js.native
+    var host: String
     
-    var method: String = js.native
+    var method: String
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var resource: String = js.native
+    var resource: String
     
-    var ts: String = js.native
+    var ts: String
   }
   object Artifacts {
     
@@ -123,12 +118,11 @@ object cryptoMod {
     }
   }
   
-  @js.native
   trait TimestampMessage_ extends StObject {
     
-    var ts: Double = js.native
+    var ts: Double
     
-    var tsm: String = js.native
+    var tsm: String
   }
   object TimestampMessage_ {
     

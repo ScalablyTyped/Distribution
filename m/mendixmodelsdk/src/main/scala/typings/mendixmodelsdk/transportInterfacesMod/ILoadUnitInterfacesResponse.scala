@@ -2,15 +2,13 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILoadUnitInterfacesResponse extends StObject {
   
-  var eventId: Double = js.native
+  var eventId: Double
   
-  var units: js.Array[IAbstractUnitJson] = js.native
+  var units: js.Array[IAbstractUnitJson]
 }
 object ILoadUnitInterfacesResponse {
   

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bgpPeerMod {
@@ -75,6 +74,10 @@ object bgpPeerMod {
   /* static members */
   object BgpPeer {
     
+    @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing BgpPeer resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -84,62 +87,56 @@ object bgpPeerMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID]): BgpPeer = js.native
-    @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): BgpPeer = js.native
-    @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BgpPeerState): BgpPeer = js.native
-    @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BgpPeerState, opts: CustomResourceOptions): BgpPeer = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BgpPeerState): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BgpPeerState, opts: CustomResourceOptions): BgpPeer = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[BgpPeer]
     
     /**
       * Returns true if the given object is an instance of BgpPeer.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/directconnect/bgpPeer", "BgpPeer.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/directconnect/bgpPeer.BgpPeer */ Boolean]
   }
   
-  @js.native
   trait BgpPeerArgs extends StObject {
     
     /**
       * The address family for the BGP peer. `ipv4 ` or `ipv6`.
       */
-    val addressFamily: Input[String] = js.native
+    val addressFamily: Input[String]
     
     /**
       * The IPv4 CIDR address to use to send traffic to Amazon.
       * Required for IPv4 BGP peers on public virtual interfaces.
       */
-    val amazonAddress: js.UndefOr[Input[String]] = js.native
+    val amazonAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
       */
-    val bgpAsn: Input[Double] = js.native
+    val bgpAsn: Input[Double]
     
     /**
       * The authentication key for BGP configuration.
       */
-    val bgpAuthKey: js.UndefOr[Input[String]] = js.native
+    val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 CIDR destination address to which Amazon should send traffic.
       * Required for IPv4 BGP peers on public virtual interfaces.
       */
-    val customerAddress: js.UndefOr[Input[String]] = js.native
+    val customerAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect virtual interface on which to create the BGP peer.
       */
-    val virtualInterfaceId: Input[String] = js.native
+    val virtualInterfaceId: Input[String]
   }
   object BgpPeerArgs {
     
@@ -181,55 +178,54 @@ object bgpPeerMod {
     }
   }
   
-  @js.native
   trait BgpPeerState extends StObject {
     
     /**
       * The address family for the BGP peer. `ipv4 ` or `ipv6`.
       */
-    val addressFamily: js.UndefOr[Input[String]] = js.native
+    val addressFamily: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 CIDR address to use to send traffic to Amazon.
       * Required for IPv4 BGP peers on public virtual interfaces.
       */
-    val amazonAddress: js.UndefOr[Input[String]] = js.native
+    val amazonAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Direct Connect endpoint on which the BGP peer terminates.
       */
-    val awsDevice: js.UndefOr[Input[String]] = js.native
+    val awsDevice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The autonomous system (AS) number for Border Gateway Protocol (BGP) configuration.
       */
-    val bgpAsn: js.UndefOr[Input[Double]] = js.native
+    val bgpAsn: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The authentication key for BGP configuration.
       */
-    val bgpAuthKey: js.UndefOr[Input[String]] = js.native
+    val bgpAuthKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the BGP peer.
       */
-    val bgpPeerId: js.UndefOr[Input[String]] = js.native
+    val bgpPeerId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Up/Down state of the BGP peer.
       */
-    val bgpStatus: js.UndefOr[Input[String]] = js.native
+    val bgpStatus: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IPv4 CIDR destination address to which Amazon should send traffic.
       * Required for IPv4 BGP peers on public virtual interfaces.
       */
-    val customerAddress: js.UndefOr[Input[String]] = js.native
+    val customerAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the Direct Connect virtual interface on which to create the BGP peer.
       */
-    val virtualInterfaceId: js.UndefOr[Input[String]] = js.native
+    val virtualInterfaceId: js.UndefOr[Input[String]] = js.undefined
   }
   object BgpPeerState {
     

@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.node.streamMod.Duplex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recognizeStreamMod {
@@ -86,9 +85,8 @@ object recognizeStreamMod {
   def WEBSOCKET_CONNECTION_ERROR_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WEBSOCKET_CONNECTION_ERROR")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("watson-developer-cloud/lib/recognize-stream", "getContentType")
-  @js.native
-  def getContentType(buffer: Buffer): String = js.native
+  @scala.inline
+  def getContentType(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getContentType")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * pipe()-able Node.js Readable/Writeable stream - accepts binary audio and emits text in its `data` events.

@@ -3,17 +3,15 @@ package typings.thrift.mod
 import typings.thrift.mod.Thrift.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TMap extends StObject {
   
-  var ktype: Type = js.native
+  var ktype: Type
   
-  var size: Double = js.native
+  var size: Double
   
-  var vtype: Type = js.native
+  var vtype: Type
 }
 object TMap {
   

@@ -2,76 +2,74 @@ package typings.flot.jquery.flot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait axisOptions extends StObject {
   
-  var alignTicksWithAxis: js.UndefOr[Double] = js.native
+  var alignTicksWithAxis: js.UndefOr[Double] = js.undefined
   
-  var autoscaleMargin: js.UndefOr[Double] = js.native
+  var autoscaleMargin: js.UndefOr[Double] = js.undefined
   
   // array of month names
-  var color: js.UndefOr[js.Any] = js.native
+  var color: js.UndefOr[js.Any] = js.undefined
   
   // null or color spec
-  var font: js.UndefOr[js.Any] = js.native
+  var font: js.UndefOr[js.Any] = js.undefined
   
   // null or fn: number -> number
-  var inverseTransform: js.UndefOr[js.Function1[/* v */ Double, Double]] = js.native
+  var inverseTransform: js.UndefOr[js.Function1[/* v */ Double, Double]] = js.undefined
   
-  var labelHeight: js.UndefOr[Double] = js.native
+  var labelHeight: js.UndefOr[Double] = js.undefined
   
-  var labelWidth: js.UndefOr[Double] = js.native
+  var labelWidth: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   // null or font spec object
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   // number or array
-  var minTickSize: js.UndefOr[js.Any] = js.native
+  var minTickSize: js.UndefOr[js.Any] = js.undefined
   
   // "bottom" or "top" or "left" or "right"
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   // "time"
-  var monthNames: js.UndefOr[js.Array[String]] = js.native
+  var monthNames: js.UndefOr[js.Array[String]] = js.undefined
   
   // null or true/false
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var reserveSpace: js.UndefOr[Boolean] = js.native
+  var reserveSpace: js.UndefOr[Boolean] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
   // null or color spec
-  var tickColor: js.UndefOr[js.Any] = js.native
+  var tickColor: js.UndefOr[js.Any] = js.undefined
   
   // (fn: number, object -> string) or string
-  var tickDecimals: js.UndefOr[Double] = js.native
+  var tickDecimals: js.UndefOr[Double] = js.undefined
   
   // number or array
-  var tickFormatter: js.UndefOr[js.Function2[/* t */ Double, /* a */ js.UndefOr[axis], String]] = js.native
+  var tickFormatter: js.UndefOr[js.Function2[/* t */ Double, /* a */ js.UndefOr[axis], String]] = js.undefined
   
-  var tickLength: js.UndefOr[Double] = js.native
+  var tickLength: js.UndefOr[Double] = js.undefined
   
   // null or number or ticks array or (fn: axis -> ticks array)
-  var tickSize: js.UndefOr[js.Any] = js.native
+  var tickSize: js.UndefOr[js.Any] = js.undefined
   
   // null or fn: number -> number
-  var ticks: js.UndefOr[js.Any] = js.native
+  var ticks: js.UndefOr[js.Any] = js.undefined
   
   // "browser" or timezone (only makes sense for mode: "time")
-  var timeformat: js.UndefOr[String] = js.native
+  var timeformat: js.UndefOr[String] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
   
-  var transform: js.UndefOr[js.Function1[/* v */ Double, Double]] = js.native
+  var transform: js.UndefOr[js.Function1[/* v */ Double, Double]] = js.undefined
   
   // null or format string
-  var twelveHourClock: js.UndefOr[Boolean] = js.native
+  var twelveHourClock: js.UndefOr[Boolean] = js.undefined
 }
 object axisOptions {
   

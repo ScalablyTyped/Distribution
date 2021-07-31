@@ -11,8 +11,8 @@ data set with state management
 | Full name          | @antv/data-set |
 | Keywords           | antv, data-set, dataSet |
 | # releases         | 12 |
-| # dependents       | 422 |
-| # downloads        | 1223211 |
+| # dependents       | 442 |
+| # downloads        | 1332574 |
 | # stars            | 0 |
 
 ## Links

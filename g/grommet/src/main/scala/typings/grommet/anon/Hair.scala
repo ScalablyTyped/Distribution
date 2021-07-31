@@ -2,29 +2,27 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hair extends StObject {
   
-  var hair: js.UndefOr[String] = js.native
+  var hair: js.UndefOr[String] = js.undefined
   
-  var large: js.UndefOr[String] = js.native
+  var large: js.UndefOr[String] = js.undefined
   
-  var medium: js.UndefOr[String] = js.native
+  var medium: js.UndefOr[String] = js.undefined
   
-  var none: js.UndefOr[String] = js.native
+  var none: js.UndefOr[String] = js.undefined
   
-  var responsiveBreakpoint: js.UndefOr[String] = js.native
+  var responsiveBreakpoint: js.UndefOr[String] = js.undefined
   
-  var small: js.UndefOr[String] = js.native
+  var small: js.UndefOr[String] = js.undefined
   
-  var xlarge: js.UndefOr[String] = js.native
+  var xlarge: js.UndefOr[String] = js.undefined
   
-  var xsmall: js.UndefOr[String] = js.native
+  var xsmall: js.UndefOr[String] = js.undefined
   
-  var xxsmall: js.UndefOr[String] = js.native
+  var xxsmall: js.UndefOr[String] = js.undefined
 }
 object Hair {
   

@@ -3,39 +3,31 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ClassProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassProperty_
-  extends Node
+  extends StObject
+     with Node
      with Flow
      with Property {
   
-  var decorators: js.UndefOr[js.Array[Decorator_]] = js.native
+  var decorators: js.UndefOr[js.Array[Decorator_]] = js.undefined
   
-  var key: Identifier_ = js.native
+  var key: Identifier_
   
-  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.native
+  var typeAnnotation: js.UndefOr[TypeAnnotation_] = js.undefined
   
   @JSName("type")
-  var type_ClassProperty_ : ClassProperty = js.native
+  var type_ClassProperty_ : ClassProperty
   
-  var value: Expression = js.native
+  var value: Expression
 }
 object ClassProperty_ {
   
   @scala.inline
-  def apply(
-    end: Double,
-    key: Identifier_,
-    loc: SourceLocation,
-    start: Double,
-    `type`: ClassProperty,
-    value: Expression
-  ): ClassProperty_ = {
+  def apply(end: Double, key: Identifier_, loc: SourceLocation, start: Double, value: Expression): ClassProperty_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassProperty")
     __obj.asInstanceOf[ClassProperty_]
   }
   

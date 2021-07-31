@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConditionalAccessGrantControls extends StObject {
   
   /**
     * List of values of built-in controls required by the policy. Possible values: Block, Mfa, CompliantDevice,
     * DomainJoinedDevice, ApprovedApplication, CompliantApplication
     */
-  var builtInControls: js.UndefOr[js.Array[ConditionalAccessGrantControl]] = js.native
+  var builtInControls: js.UndefOr[js.Array[ConditionalAccessGrantControl]] = js.undefined
   
   // List of custom controls IDs required by the policy. For more information, see Custom controls.
-  var customAuthenticationFactors: js.UndefOr[js.Array[String]] = js.native
+  var customAuthenticationFactors: js.UndefOr[js.Array[String]] = js.undefined
   
   // Defines the relationship of the grant controls. Possible values: AND, OR.
-  var operator: js.UndefOr[NullableOption[String]] = js.native
+  var operator: js.UndefOr[NullableOption[String]] = js.undefined
   
   // List of terms of use IDs required by the policy.
-  var termsOfUse: js.UndefOr[js.Array[String]] = js.native
+  var termsOfUse: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ConditionalAccessGrantControls {
   

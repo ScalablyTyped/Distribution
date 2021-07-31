@@ -12,7 +12,7 @@ Flat UI library for React
 | Keywords           | - |
 | # releases         | 3 |
 | # dependents       | 0 |
-| # downloads        | 1352 |
+| # downloads        | 1339 |
 | # stars            | 1 |
 
 ## Links

@@ -2,16 +2,14 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelatedObservations extends StObject {
   
   /**
     * The list of observations related to the problem.
     */
-  var ObservationList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ObservationList] = js.native
+  var ObservationList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ObservationList] = js.undefined
 }
 object RelatedObservations {
   

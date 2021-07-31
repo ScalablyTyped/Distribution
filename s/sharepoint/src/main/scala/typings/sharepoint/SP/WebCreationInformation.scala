@@ -2,35 +2,35 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebCreationInformation extends ClientValueObject {
+trait WebCreationInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_description(): String = js.native
+  def get_description(): String
   
-  def get_language(): Double = js.native
+  def get_language(): Double
   
-  def get_title(): String = js.native
+  def get_title(): String
   
-  def get_url(): String = js.native
+  def get_url(): String
   
-  def get_useSamePermissionsAsParentSite(): Boolean = js.native
+  def get_useSamePermissionsAsParentSite(): Boolean
   
-  def get_webTemplate(): String = js.native
+  def get_webTemplate(): String
   
-  def set_description(value: String): Unit = js.native
+  def set_description(value: String): Unit
   
-  def set_language(value: Double): Unit = js.native
+  def set_language(value: Double): Unit
   
-  def set_title(value: String): Unit = js.native
+  def set_title(value: String): Unit
   
-  def set_url(value: String): Unit = js.native
+  def set_url(value: String): Unit
   
-  def set_useSamePermissionsAsParentSite(value: Boolean): Unit = js.native
+  def set_useSamePermissionsAsParentSite(value: Boolean): Unit
   
-  def set_webTemplate(value: String): Unit = js.native
+  def set_webTemplate(value: String): Unit
 }
 object WebCreationInformation {
   

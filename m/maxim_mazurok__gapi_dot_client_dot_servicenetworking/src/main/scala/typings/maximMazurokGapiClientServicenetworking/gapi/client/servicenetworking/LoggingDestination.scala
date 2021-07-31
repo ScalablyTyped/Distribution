@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoggingDestination extends StObject {
   
   /**
     * Names of the logs to be sent to this destination. Each name must be defined in the Service.logs section. If the log name is not a domain scoped name, it will be automatically
     * prefixed with the service name followed by "/".
     */
-  var logs: js.UndefOr[js.Array[String]] = js.native
+  var logs: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The monitored resource type. The type must be defined in the Service.monitored_resources section. */
-  var monitoredResource: js.UndefOr[String] = js.native
+  var monitoredResource: js.UndefOr[String] = js.undefined
 }
 object LoggingDestination {
   

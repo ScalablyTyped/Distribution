@@ -2,7 +2,6 @@ package typings.keystonejsOembedAdapters
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,13 +14,12 @@ object mod {
     // Unlikely to be used in client apps, hence the any, but if you're using this, feel free to
     // type it properly. It's a res.json response from Fetch, just didn't want to pull that in
     // when it's unlikely to be actually used in client apps, Keystone calls this.
-    def fetch(parameters: js.Any): js.Promise[_] = js.native
+    def fetch(parameters: js.Any): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait OEmbedAdapterConfig extends StObject {
     
-    var apiKey: String = js.native
+    var apiKey: String
   }
   object OEmbedAdapterConfig {
     

@@ -3,39 +3,37 @@ package typings.jsClipper.ClipperLib
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolyOffsetBuilder extends StObject {
   
-  def AddPoint(pt: IntPoint): Unit = js.native
+  def AddPoint(pt: IntPoint): Unit
   
-  def DoMiter(): Unit = js.native
+  def DoMiter(): Unit
   
-  def DoRound(): Unit = js.native
+  def DoRound(): Unit
   
-  def DoSquare(mul: Double): Unit = js.native
+  def DoSquare(mul: Double): Unit
   
-  def UpdateBotPt(pt: IntPoint): Boolean = js.native
+  def UpdateBotPt(pt: IntPoint): Boolean
   
-  var botPt: PolyOffsetBuilder = js.native
+  var botPt: PolyOffsetBuilder
   
-  var currentPoly: Polygon = js.native
+  var currentPoly: Polygon
   
-  var delta: Double = js.native
+  var delta: Double
   
-  var m_R: Double = js.native
+  var m_R: Double
   
-  var m_i: Double = js.native
+  var m_i: Double
   
-  var m_j: Double = js.native
+  var m_j: Double
   
-  var m_k: Double = js.native
+  var m_k: Double
   
-  var normals: ArrayLike[IntPoint] = js.native
+  var normals: ArrayLike[IntPoint]
   
-  var pts: Polygons = js.native
+  var pts: Polygons
 }
 object PolyOffsetBuilder {
   

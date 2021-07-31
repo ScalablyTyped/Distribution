@@ -2,21 +2,21 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SliderOptions extends ComponentOptions {
+trait SliderOptions
+  extends StObject
+     with ComponentOptions {
   
   /**
     * Set property names to bar to match with the child Slider class is looking for
     */
-  var barName: js.UndefOr[String] = js.native
+  var barName: js.UndefOr[String] = js.undefined
   
   /**
     * Set a horizontal or vertical class on the slider depending on the slider type
     */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object SliderOptions {
   

@@ -10,9 +10,9 @@ Typings are for version 1.6
 | ------------------ | :-------------: |
 | Full name          | react-typing-animation |
 | Keywords           | react, typing, animation, animated, typewriter, typist, typer |
-| # releases         | 6 |
+| # releases         | 0 |
 | # dependents       | 7 |
-| # downloads        | 69099 |
+| # downloads        | 77056 |
 | # stars            | 1 |
 
 ## Links

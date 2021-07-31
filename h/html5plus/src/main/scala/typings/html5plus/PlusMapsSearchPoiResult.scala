@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
   */
-@js.native
 trait PlusMapsSearchPoiResult extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusMapsSearchPoiResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var currentNumber: js.UndefOr[Double] = js.native
+  var currentNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * 获取指定索引的检索结果
@@ -27,7 +25,7 @@ trait PlusMapsSearchPoiResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  def getPosition(): PlusMapsPosition = js.native
+  def getPosition(): PlusMapsPosition
   
   /**
     * 获取当前页的索引
@@ -35,7 +33,7 @@ trait PlusMapsSearchPoiResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var pageIndex: js.UndefOr[Double] = js.native
+  var pageIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * 本次POI检索的总页数
@@ -43,7 +41,7 @@ trait PlusMapsSearchPoiResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var pageNumber: js.UndefOr[Double] = js.native
+  var pageNumber: js.UndefOr[Double] = js.undefined
   
   /**
     * 本次POI检索结果数组
@@ -51,7 +49,7 @@ trait PlusMapsSearchPoiResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var poiList: js.UndefOr[js.Array[_]] = js.native
+  var poiList: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * POI检索总结果数
@@ -59,7 +57,7 @@ trait PlusMapsSearchPoiResult extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/maps.html](http://www.html5plus.org/doc/zh_cn/maps.html)
     */
-  var totalNumber: js.UndefOr[Double] = js.native
+  var totalNumber: js.UndefOr[Double] = js.undefined
 }
 object PlusMapsSearchPoiResult {
   
@@ -94,7 +92,7 @@ object PlusMapsSearchPoiResult {
     def setPageNumberUndefined: Self = StObject.set(x, "pageNumber", js.undefined)
     
     @scala.inline
-    def setPoiList(value: js.Array[_]): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
+    def setPoiList(value: js.Array[js.Any]): Self = StObject.set(x, "poiList", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPoiListUndefined: Self = StObject.set(x, "poiList", js.undefined)

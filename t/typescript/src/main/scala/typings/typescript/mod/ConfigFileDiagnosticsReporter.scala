@@ -2,19 +2,32 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigFileDiagnosticsReporter extends StObject {
   
   /**
     * Reports unrecoverable error when parsing config file
     */
-  def onUnRecoverableConfigFileDiagnostic(diagnostic: Diagnostic): Unit = js.native
+  def onUnRecoverableConfigFileDiagnostic(diagnostic: Diagnostic): Unit
   /**
     * Reports unrecoverable error when parsing config file
     */
   @JSName("onUnRecoverableConfigFileDiagnostic")
-  var onUnRecoverableConfigFileDiagnostic_Original: DiagnosticReporter = js.native
+  var onUnRecoverableConfigFileDiagnostic_Original: DiagnosticReporter
+}
+object ConfigFileDiagnosticsReporter {
+  
+  @scala.inline
+  def apply(onUnRecoverableConfigFileDiagnostic: /* diagnostic */ Diagnostic => Unit): ConfigFileDiagnosticsReporter = {
+    val __obj = js.Dynamic.literal(onUnRecoverableConfigFileDiagnostic = js.Any.fromFunction1(onUnRecoverableConfigFileDiagnostic))
+    __obj.asInstanceOf[ConfigFileDiagnosticsReporter]
+  }
+  
+  @scala.inline
+  implicit class ConfigFileDiagnosticsReporterMutableBuilder[Self <: ConfigFileDiagnosticsReporter] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnUnRecoverableConfigFileDiagnostic(value: /* diagnostic */ Diagnostic => Unit): Self = StObject.set(x, "onUnRecoverableConfigFileDiagnostic", js.Any.fromFunction1(value))
+  }
 }

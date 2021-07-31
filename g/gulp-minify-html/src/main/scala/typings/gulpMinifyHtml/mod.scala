@@ -3,42 +3,42 @@ package typings.gulpMinifyHtml
 import typings.node.NodeJS.ReadWriteStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ReadWriteStream]
+  @scala.inline
+  def apply(options: Options): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   @JSImport("gulp-minify-html", JSImport.Namespace)
   @js.native
-  def apply(): ReadWriteStream = js.native
-  @JSImport("gulp-minify-html", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
   // Options from https://github.com/Swaagie/minimize#options
-  @js.native
   trait Options extends StObject {
     
     // Do not strip CDATA from scripts
-    var cdata: js.UndefOr[Boolean] = js.native
+    var cdata: js.UndefOr[Boolean] = js.undefined
     
     // Do not remove comments
-    var comments: js.UndefOr[Boolean] = js.native
+    var comments: js.UndefOr[Boolean] = js.undefined
     
     // Do not remove conditional internet explorer comments
-    var conditionals: js.UndefOr[Boolean] = js.native
+    var conditionals: js.UndefOr[Boolean] = js.undefined
     
     // Do not remove empty attributes
-    var empty: js.UndefOr[Boolean] = js.native
+    var empty: js.UndefOr[Boolean] = js.undefined
     
     // Preserve one whitespace
-    var loose: js.UndefOr[Boolean] = js.native
+    var loose: js.UndefOr[Boolean] = js.undefined
     
     // Do not remove arbitrary quotes
-    var quotes: js.UndefOr[Boolean] = js.native
+    var quotes: js.UndefOr[Boolean] = js.undefined
     
     // Do not remove redundant attributes
-    var spare: js.UndefOr[Boolean] = js.native
+    var spare: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

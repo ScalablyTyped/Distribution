@@ -3,24 +3,23 @@ package typings.typescript.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildOptions
-  extends /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
+  extends StObject
+     with /* option */ StringDictionary[js.UndefOr[CompilerOptionsValue]] {
   
-  var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[Boolean] = js.native
+  var assumeChangesOnlyAffectDirectDependencies: js.UndefOr[Boolean] = js.undefined
   
-  var dry: js.UndefOr[Boolean] = js.native
+  var dry: js.UndefOr[Boolean] = js.undefined
   
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
-  var incremental: js.UndefOr[Boolean] = js.native
+  var incremental: js.UndefOr[Boolean] = js.undefined
   
-  var traceResolution: js.UndefOr[Boolean] = js.native
+  var traceResolution: js.UndefOr[Boolean] = js.undefined
   
-  var verbose: js.UndefOr[Boolean] = js.native
+  var verbose: js.UndefOr[Boolean] = js.undefined
 }
 object BuildOptions {
   

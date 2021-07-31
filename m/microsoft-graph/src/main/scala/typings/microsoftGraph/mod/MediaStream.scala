@@ -2,26 +2,24 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaStream extends StObject {
   
   // The direction. The possible values are inactive, sendOnly, receiveOnly, sendReceive.
-  var direction: js.UndefOr[MediaDirection] = js.native
+  var direction: js.UndefOr[MediaDirection] = js.undefined
   
   // The media stream label.
-  var label: js.UndefOr[NullableOption[String]] = js.native
+  var label: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The media type. The possible value are unknown, audio, video, videoBasedScreenSharing, data.
-  var mediaType: js.UndefOr[Modality] = js.native
+  var mediaType: js.UndefOr[Modality] = js.undefined
   
   // If the media is muted by the server.
-  var serverMuted: js.UndefOr[Boolean] = js.native
+  var serverMuted: js.UndefOr[Boolean] = js.undefined
   
   // The source ID.
-  var sourceId: js.UndefOr[String] = js.native
+  var sourceId: js.UndefOr[String] = js.undefined
 }
 object MediaStream {
   

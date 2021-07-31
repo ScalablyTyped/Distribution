@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountBusinessInformation extends StObject {
   
   /** The address of the business. */
-  var address: js.UndefOr[AccountAddress] = js.native
+  var address: js.UndefOr[AccountAddress] = js.undefined
   
   /** The customer service information of the business. */
-  var customerService: js.UndefOr[AccountCustomerService] = js.native
+  var customerService: js.UndefOr[AccountCustomerService] = js.undefined
   
   /** The phone number of the business. */
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
 }
 object AccountBusinessInformation {
   

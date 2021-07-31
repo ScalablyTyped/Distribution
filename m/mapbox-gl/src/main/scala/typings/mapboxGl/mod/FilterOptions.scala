@@ -2,10 +2,8 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait FilterOptions extends StObject {
     * Disabling validation is a performance optimization that should only be used
     * if you have previously validated the values you will be passing to this function.
     */
-  var validate: js.UndefOr[Boolean | Null] = js.native
+  var validate: js.UndefOr[Boolean | Null] = js.undefined
 }
 object FilterOptions {
   

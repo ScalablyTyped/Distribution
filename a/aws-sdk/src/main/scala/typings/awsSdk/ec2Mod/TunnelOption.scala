@@ -2,106 +2,104 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TunnelOption extends StObject {
   
   /**
     * The action to take after a DPD timeout occurs.
     */
-  var DpdTimeoutAction: js.UndefOr[String] = js.native
+  var DpdTimeoutAction: js.UndefOr[String] = js.undefined
   
   /**
     * The number of seconds after which a DPD timeout occurs.
     */
-  var DpdTimeoutSeconds: js.UndefOr[Integer] = js.native
+  var DpdTimeoutSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The IKE versions that are permitted for the VPN tunnel.
     */
-  var IkeVersions: js.UndefOr[IKEVersionsList] = js.native
+  var IkeVersions: js.UndefOr[IKEVersionsList] = js.undefined
   
   /**
     * The external IP address of the VPN tunnel.
     */
-  var OutsideIpAddress: js.UndefOr[String] = js.native
+  var OutsideIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The permitted Diffie-Hellman group numbers for the VPN tunnel for phase 1 IKE negotiations.
     */
-  var Phase1DHGroupNumbers: js.UndefOr[Phase1DHGroupNumbersList] = js.native
+  var Phase1DHGroupNumbers: js.UndefOr[Phase1DHGroupNumbersList] = js.undefined
   
   /**
     * The permitted encryption algorithms for the VPN tunnel for phase 1 IKE negotiations.
     */
-  var Phase1EncryptionAlgorithms: js.UndefOr[Phase1EncryptionAlgorithmsList] = js.native
+  var Phase1EncryptionAlgorithms: js.UndefOr[Phase1EncryptionAlgorithmsList] = js.undefined
   
   /**
     * The permitted integrity algorithms for the VPN tunnel for phase 1 IKE negotiations.
     */
-  var Phase1IntegrityAlgorithms: js.UndefOr[Phase1IntegrityAlgorithmsList] = js.native
+  var Phase1IntegrityAlgorithms: js.UndefOr[Phase1IntegrityAlgorithmsList] = js.undefined
   
   /**
     * The lifetime for phase 1 of the IKE negotiation, in seconds.
     */
-  var Phase1LifetimeSeconds: js.UndefOr[Integer] = js.native
+  var Phase1LifetimeSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The permitted Diffie-Hellman group numbers for the VPN tunnel for phase 2 IKE negotiations.
     */
-  var Phase2DHGroupNumbers: js.UndefOr[Phase2DHGroupNumbersList] = js.native
+  var Phase2DHGroupNumbers: js.UndefOr[Phase2DHGroupNumbersList] = js.undefined
   
   /**
     * The permitted encryption algorithms for the VPN tunnel for phase 2 IKE negotiations.
     */
-  var Phase2EncryptionAlgorithms: js.UndefOr[Phase2EncryptionAlgorithmsList] = js.native
+  var Phase2EncryptionAlgorithms: js.UndefOr[Phase2EncryptionAlgorithmsList] = js.undefined
   
   /**
     * The permitted integrity algorithms for the VPN tunnel for phase 2 IKE negotiations.
     */
-  var Phase2IntegrityAlgorithms: js.UndefOr[Phase2IntegrityAlgorithmsList] = js.native
+  var Phase2IntegrityAlgorithms: js.UndefOr[Phase2IntegrityAlgorithmsList] = js.undefined
   
   /**
     * The lifetime for phase 2 of the IKE negotiation, in seconds.
     */
-  var Phase2LifetimeSeconds: js.UndefOr[Integer] = js.native
+  var Phase2LifetimeSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The pre-shared key (PSK) to establish initial authentication between the virtual private gateway and the customer gateway.
     */
-  var PreSharedKey: js.UndefOr[String] = js.native
+  var PreSharedKey: js.UndefOr[String] = js.undefined
   
   /**
     * The percentage of the rekey window determined by RekeyMarginTimeSeconds during which the rekey time is randomly selected.
     */
-  var RekeyFuzzPercentage: js.UndefOr[Integer] = js.native
+  var RekeyFuzzPercentage: js.UndefOr[Integer] = js.undefined
   
   /**
     * The margin time, in seconds, before the phase 2 lifetime expires, during which the AWS side of the VPN connection performs an IKE rekey.
     */
-  var RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.native
+  var RekeyMarginTimeSeconds: js.UndefOr[Integer] = js.undefined
   
   /**
     * The number of packets in an IKE replay window.
     */
-  var ReplayWindowSize: js.UndefOr[Integer] = js.native
+  var ReplayWindowSize: js.UndefOr[Integer] = js.undefined
   
   /**
     * The action to take when the establishing the VPN tunnels for a VPN connection.
     */
-  var StartupAction: js.UndefOr[String] = js.native
+  var StartupAction: js.UndefOr[String] = js.undefined
   
   /**
     * The range of inside IPv4 addresses for the tunnel.
     */
-  var TunnelInsideCidr: js.UndefOr[String] = js.native
+  var TunnelInsideCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The range of inside IPv6 addresses for the tunnel.
     */
-  var TunnelInsideIpv6Cidr: js.UndefOr[String] = js.native
+  var TunnelInsideIpv6Cidr: js.UndefOr[String] = js.undefined
 }
 object TunnelOption {
   

@@ -13,7 +13,6 @@ import typings.vitalsigns.mod.vitalsigns.Options
 import typings.vitalsigns.mod.vitalsigns.ReportOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,7 +27,9 @@ object mod {
     * @constructors
     * @param {Options} [options] Options.
     */
-  class ^ () extends VitalSigns_ {
+  class ^ ()
+    extends StObject
+       with VitalSigns_ {
     def this(options: Options) = this()
   }
   
@@ -54,13 +55,17 @@ object mod {
       * Gets a request handler.
       * @type {RequestHandler}
       */
-    def express(req: Request[ParamsDictionary, _, _, Query], res: Response[_, Double], next: NextFunction): js.Any = js.native
+    def express(
+      req: Request[ParamsDictionary, js.Any, js.Any, Query],
+      res: Response[js.Any, Double],
+      next: NextFunction
+    ): js.Any = js.native
     /**
       * Gets a request handler.
       * @type {RequestHandler}
       */
     @JSName("express")
-    var express_Original: RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    var express_Original: RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
     /**
       * Retrieves an array of human-readable messages that define the specific health constraints that failed when running the last health check.
@@ -111,7 +116,6 @@ object mod {
   
   object vitalsigns {
     
-    @js.native
     trait Constraint extends StObject {
       
       /**
@@ -119,31 +123,31 @@ object mod {
         * Valid comparators are: 'equal', 'greater', and 'less'.
         * @type {string}
         */
-      var comparator: String = js.native
+      var comparator: String
       
       /**
         * The name of the field to be constrained.
         * @type {string}
         */
-      var field: String = js.native
+      var field: String
       
       /**
         * The name of the monitor containing the field to be constrained.
         * @type {string}
         */
-      var monitor: String = js.native
+      var monitor: String
       
       /**
         * true to negate the outcome of the comparison; false or omitted to use the comparison result.
         * @type {boolean}
         */
-      var negate: js.UndefOr[Boolean] = js.native
+      var negate: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The value against which the field should be compared.
         * @type {any}
         */
-      var value: js.Any = js.native
+      var value: js.Any
     }
     object Constraint {
       
@@ -176,17 +180,16 @@ object mod {
       }
     }
     
-    @js.native
     trait ConstraintWrapper extends StObject {
       
       @JSName("equals")
-      var equals_FConstraintWrapper: js.UndefOr[js.Function1[/* num */ Double, this.type]] = js.native
+      var equals_FConstraintWrapper: js.UndefOr[js.Function1[/* num */ Double, this.type]] = js.undefined
       
-      var greaterThan: js.UndefOr[js.Function1[/* num */ Double, this.type]] = js.native
+      var greaterThan: js.UndefOr[js.Function1[/* num */ Double, this.type]] = js.undefined
       
-      var lessThan: js.UndefOr[js.Function1[/* num */ Double, this.type]] = js.native
+      var lessThan: js.UndefOr[js.Function1[/* num */ Double, this.type]] = js.undefined
       
-      var not: js.UndefOr[ConstraintWrapper] = js.native
+      var not: js.UndefOr[ConstraintWrapper] = js.undefined
     }
     object ConstraintWrapper {
       
@@ -225,14 +228,13 @@ object mod {
       }
     }
     
-    @js.native
     trait Monitor extends StObject {
       
       /**
         * Connections.
         * @type {any}
         */
-      var connections: js.Any = js.native
+      var connections: js.Any
     }
     object Monitor {
       
@@ -250,20 +252,19 @@ object mod {
       }
     }
     
-    @js.native
     trait MonitorField extends StObject {
       
       /**
         * Name.
         * @type {string}
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Units.
         * @type {string}
         */
-      var units: js.UndefOr[String] = js.native
+      var units: js.UndefOr[String] = js.undefined
     }
     object MonitorField {
       
@@ -290,26 +291,25 @@ object mod {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * Number of milliseconds to wait between automatic health checks.
         * @type {number|boolean}
         */
-      var autoCheck: js.UndefOr[Double | Boolean] = js.native
+      var autoCheck: js.UndefOr[Double | Boolean] = js.undefined
       
       /**
         * HTTP response code to send back in the VitalSigns.
         * @type {number}
         */
-      var httpHealthy: js.UndefOr[Double] = js.native
+      var httpHealthy: js.UndefOr[Double] = js.undefined
       
       /**
         * HTTP response code to send back in the VitalSigns.
         * @type {number}
         */
-      var httpUnhealthy: js.UndefOr[Double] = js.native
+      var httpUnhealthy: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -346,20 +346,19 @@ object mod {
       * Report options.
       * @interface
       */
-    @js.native
     trait ReportOptions extends StObject {
       
       /**
         * true to flatten the report object down to a single level by concatenating nested key names; false to keep the default hierarchical format.
         * @type {boolean}
         */
-      var flatten: js.UndefOr[Boolean] = js.native
+      var flatten: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If flatten is true, this string will be used to separate key names when they are concatenated together.
         * @type {boolean}
         */
-      var separator: js.UndefOr[String] = js.native
+      var separator: js.UndefOr[String] = js.undefined
     }
     object ReportOptions {
       

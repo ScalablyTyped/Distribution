@@ -2,16 +2,14 @@ package typings.awsSdk.ssoadminMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionPermissionSetResponse extends StObject {
   
   /**
     * The status object for the permission set provisioning operation.
     */
-  var PermissionSetProvisioningStatus: js.UndefOr[typings.awsSdk.ssoadminMod.PermissionSetProvisioningStatus] = js.native
+  var PermissionSetProvisioningStatus: js.UndefOr[typings.awsSdk.ssoadminMod.PermissionSetProvisioningStatus] = js.undefined
 }
 object ProvisionPermissionSetResponse {
   

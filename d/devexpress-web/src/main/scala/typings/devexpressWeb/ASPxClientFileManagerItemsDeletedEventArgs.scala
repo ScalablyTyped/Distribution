@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.ItemsDeleted event.
   */
-@js.native
-trait ASPxClientFileManagerItemsDeletedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerItemsDeletedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets an array of the currently processed items.
     */
-  var items: js.Array[ASPxClientFileManagerItem] = js.native
+  var items: js.Array[ASPxClientFileManagerItem]
 }
 object ASPxClientFileManagerItemsDeletedEventArgs {
   

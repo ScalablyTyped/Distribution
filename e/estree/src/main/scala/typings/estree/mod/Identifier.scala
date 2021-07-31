@@ -2,27 +2,26 @@ package typings.estree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.estree.mod.Node because Already inherited */ @js.native
-trait Identifier
-  extends BaseNode
+- typings.estree.mod.Node because Already inherited */ trait Identifier
+  extends StObject
+     with BaseNode
      with Expression
      with Pattern {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_Identifier: typings.estree.estreeStrings.Identifier = js.native
+  var type_Identifier: typings.estree.estreeStrings.Identifier
 }
 object Identifier {
   
   @scala.inline
-  def apply(name: String, `type`: typings.estree.estreeStrings.Identifier): Identifier = {
+  def apply(name: String): Identifier = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Identifier")
     __obj.asInstanceOf[Identifier]
   }
   

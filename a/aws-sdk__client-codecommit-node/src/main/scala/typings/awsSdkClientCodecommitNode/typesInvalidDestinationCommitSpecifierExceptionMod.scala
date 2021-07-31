@@ -3,24 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.getMergeConflictsExceptionsUnionMod.GetMergeConflictsExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidDestinationCommitSpecifierExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidDestinationCommitSpecifierExceptionDetails> * / any */ @js.native
-  trait InvalidDestinationCommitSpecifierException extends GetMergeConflictsExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidDestinationCommitSpecifierExceptionDetails> * / any */ trait InvalidDestinationCommitSpecifierException
+    extends StObject
+       with GetMergeConflictsExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDestinationCommitSpecifierException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDestinationCommitSpecifierException
   }
   object InvalidDestinationCommitSpecifierException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidDestinationCommitSpecifierException
-    ): InvalidDestinationCommitSpecifierException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidDestinationCommitSpecifierException = {
+      val __obj = js.Dynamic.literal(name = "InvalidDestinationCommitSpecifierException")
       __obj.asInstanceOf[InvalidDestinationCommitSpecifierException]
     }
     
@@ -34,6 +32,5 @@ object typesInvalidDestinationCommitSpecifierExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidDestinationCommitSpecifierExceptionDetails extends StObject
 }

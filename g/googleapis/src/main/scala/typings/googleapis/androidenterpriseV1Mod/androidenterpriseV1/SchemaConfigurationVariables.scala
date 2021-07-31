@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,24 +10,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that is attributed to the user. The variable set will be used to replace
   * placeholders in the managed configuration settings.
   */
-@js.native
 trait SchemaConfigurationVariables extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#configurationVariables&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the managed configurations settings.
     */
-  var mcmId: js.UndefOr[String] = js.native
+  var mcmId: js.UndefOr[String] = js.undefined
   
   /**
     * The variable set that is attributed to the user.
     */
-  var variableSet: js.UndefOr[js.Array[SchemaVariableSet]] = js.native
+  var variableSet: js.UndefOr[js.Array[SchemaVariableSet]] = js.undefined
 }
 object SchemaConfigurationVariables {
   

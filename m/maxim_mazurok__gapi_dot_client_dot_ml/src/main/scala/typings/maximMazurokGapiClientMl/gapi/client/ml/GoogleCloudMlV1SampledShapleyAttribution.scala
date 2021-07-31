@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1SampledShapleyAttribution extends StObject {
   
   /** The number of feature permutations to consider when approximating the Shapley values. */
-  var numPaths: js.UndefOr[Double] = js.native
+  var numPaths: js.UndefOr[Double] = js.undefined
 }
 object GoogleCloudMlV1SampledShapleyAttribution {
   

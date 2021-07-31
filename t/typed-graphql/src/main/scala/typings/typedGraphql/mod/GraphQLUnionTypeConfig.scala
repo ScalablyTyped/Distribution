@@ -2,24 +2,22 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphQLUnionTypeConfig extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   /**
     * Optionally provide a custom type resolver function. If one is not provided,
     * the default implementation will call `isTypeOf` on each implementing
     * Object type.
     */
-  var resolveType: js.UndefOr[GraphQLTypeResolveFn] = js.native
+  var resolveType: js.UndefOr[GraphQLTypeResolveFn] = js.undefined
   
-  var types: js.Array[GraphQLObjectType] = js.native
+  var types: js.Array[GraphQLObjectType]
 }
 object GraphQLUnionTypeConfig {
   

@@ -12,7 +12,7 @@ A schema definition module for RabbitMQ graphs and messages
 | Keywords           | rabbitmq, rabbit, schema, graph, exchange, queue, message, topology, topologies |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 754 |
+| # downloads        | 864 |
 | # stars            | 2 |
 
 ## Links

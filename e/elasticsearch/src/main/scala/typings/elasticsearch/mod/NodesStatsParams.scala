@@ -5,33 +5,33 @@ import typings.elasticsearch.elasticsearchStrings.node
 import typings.elasticsearch.elasticsearchStrings.shards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodesStatsParams extends GenericParams {
+trait NodesStatsParams
+  extends StObject
+     with GenericParams {
   
-  var completionFields: js.UndefOr[NameList] = js.native
+  var completionFields: js.UndefOr[NameList] = js.undefined
   
-  var fielddataFields: js.UndefOr[NameList] = js.native
+  var fielddataFields: js.UndefOr[NameList] = js.undefined
   
-  var fields: js.UndefOr[NameList] = js.native
+  var fields: js.UndefOr[NameList] = js.undefined
   
-  var groups: js.UndefOr[Boolean] = js.native
+  var groups: js.UndefOr[Boolean] = js.undefined
   
-  var human: js.UndefOr[Boolean] = js.native
+  var human: js.UndefOr[Boolean] = js.undefined
   
-  var indexMetric: js.UndefOr[NameList] = js.native
+  var indexMetric: js.UndefOr[NameList] = js.undefined
   
-  var level: js.UndefOr[indices | node | shards] = js.native
+  var level: js.UndefOr[indices | node | shards] = js.undefined
   
-  var metric: js.UndefOr[NameList] = js.native
+  var metric: js.UndefOr[NameList] = js.undefined
   
-  var nodeId: js.UndefOr[NameList] = js.native
+  var nodeId: js.UndefOr[NameList] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var types: js.UndefOr[NameList] = js.native
+  var types: js.UndefOr[NameList] = js.undefined
 }
 object NodesStatsParams {
   

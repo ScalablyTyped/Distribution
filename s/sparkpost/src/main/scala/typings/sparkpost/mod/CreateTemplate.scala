@@ -3,17 +3,15 @@ package typings.sparkpost.mod
 import typings.sparkpost.anon.Emailrfc822
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTemplate extends StObject {
   
   /** Content that will be used to construct a message  yes  For a full description, see the Content Attributes. Maximum length - 20 MBs */
-  var content: CreateTemplateContent | Emailrfc822 = js.native
+  var content: CreateTemplateContent | Emailrfc822
   
   /** Detailed description of the template  no  Maximum length - 1024 bytes */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Short, unique, alphanumeric ID used to reference the template.
@@ -22,16 +20,16 @@ trait CreateTemplate extends StObject {
     * After a template has been created, this property cannot be changed. Maximum length - 64 bytes
     *
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Editable display name  At a minimum, id or name is required upon creation.  The name does not have to be unique. Maximum length - 1024 bytes */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** JSON object in which template options are defined  no  For a full description, see the Options Attributes. */
-  var options: js.UndefOr[CreateTemplateOptions] = js.native
+  var options: js.UndefOr[CreateTemplateOptions] = js.undefined
   
   /** Whether the template is published or is a draft version  no - defaults to false  A template cannot be changed from published to draft. */
-  var published: js.UndefOr[Boolean] = js.native
+  var published: js.UndefOr[Boolean] = js.undefined
 }
 object CreateTemplate {
   

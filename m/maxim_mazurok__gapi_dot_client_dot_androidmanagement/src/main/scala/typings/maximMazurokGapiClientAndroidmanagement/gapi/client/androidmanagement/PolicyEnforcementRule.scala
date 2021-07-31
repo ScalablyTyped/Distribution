@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PolicyEnforcementRule extends StObject {
   
   /**
     * An action to block access to apps and data on a fully managed device or in a work profile. This action also triggers a user-facing notification with information (where possible) on
     * how to correct the compliance issue. Note: wipeAction must also be specified.
     */
-  var blockAction: js.UndefOr[BlockAction] = js.native
+  var blockAction: js.UndefOr[BlockAction] = js.undefined
   
   /** The top-level policy to enforce. For example, applications or passwordPolicies. */
-  var settingName: js.UndefOr[String] = js.native
+  var settingName: js.UndefOr[String] = js.undefined
   
   /** An action to reset a fully managed device or delete a work profile. Note: blockAction must also be specified. */
-  var wipeAction: js.UndefOr[WipeAction] = js.native
+  var wipeAction: js.UndefOr[WipeAction] = js.undefined
 }
 object PolicyEnforcementRule {
   

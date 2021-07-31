@@ -3,12 +3,11 @@ package typings.firebaseAdmin.messagingMod.messaging
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingOptions
-  extends /* key */ StringDictionary[js.UndefOr[js.Any]] {
+  extends StObject
+     with /* key */ StringDictionary[js.UndefOr[js.Any]] {
   
   /**
     * String identifying a group of messages (for example, "Updates Available")
@@ -25,7 +24,7 @@ trait MessagingOptions
     *
     * **Default value:** None
     */
-  var collapseKey: js.UndefOr[String] = js.native
+  var collapseKey: js.UndefOr[String] = js.undefined
   
   /**
     * On iOS, use this field to represent `content-available` in the APNs payload.
@@ -35,7 +34,7 @@ trait MessagingOptions
     *
     * **Default value:** `false`
     */
-  var contentAvailable: js.UndefOr[Boolean] = js.native
+  var contentAvailable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether or not the message should actually be sent. When set to `true`,
@@ -44,7 +43,7 @@ trait MessagingOptions
     *
     * **Default value:** `false`
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * On iOS, use this field to represent `mutable-content` in the APNs payload.
@@ -56,7 +55,7 @@ trait MessagingOptions
     *
     * **Default value:** `false`
     */
-  var mutableContent: js.UndefOr[Boolean] = js.native
+  var mutableContent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The priority of the message. Valid values are `"normal"` and `"high".` On
@@ -77,7 +76,7 @@ trait MessagingOptions
     * **Default value:** `"high"` for notification messages, `"normal"` for data
     * messages
     */
-  var priority: js.UndefOr[String] = js.native
+  var priority: js.UndefOr[String] = js.undefined
   
   /**
     * The package name of the application which the registration tokens must match
@@ -85,7 +84,7 @@ trait MessagingOptions
     *
     * **Default value:** None
     */
-  var restrictedPackageName: js.UndefOr[String] = js.native
+  var restrictedPackageName: js.UndefOr[String] = js.undefined
   
   /**
     * How long (in seconds) the message should be kept in FCM storage if the device
@@ -95,7 +94,7 @@ trait MessagingOptions
     *
     * **Default value:** `2419200` (representing four weeks, in seconds)
     */
-  var timeToLive: js.UndefOr[Double] = js.native
+  var timeToLive: js.UndefOr[Double] = js.undefined
 }
 object MessagingOptions {
   

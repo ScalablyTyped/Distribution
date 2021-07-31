@@ -4,13 +4,11 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.kendoUi.kendo.ui.editor.Toolbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofeditor extends StObject {
   
-  var Toolbar: Instantiable0[typings.kendoUi.kendo.ui.editor.Toolbar] = js.native
+  var Toolbar: Instantiable0[typings.kendoUi.kendo.ui.editor.Toolbar]
 }
 object Typeofeditor {
   

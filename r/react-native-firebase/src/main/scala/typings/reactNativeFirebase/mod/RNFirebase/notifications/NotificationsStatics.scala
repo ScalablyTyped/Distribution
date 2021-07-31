@@ -4,15 +4,13 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.reactNativeFirebase.anon.Action
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationsStatics extends StObject {
   
-  var Android: Action = js.native
+  var Android: Action
   
-  var Notification: Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.notifications.Notification] = js.native
+  var Notification: Instantiable0[typings.reactNativeFirebase.mod.RNFirebase.notifications.Notification]
 }
 object NotificationsStatics {
   

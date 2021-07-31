@@ -3,43 +3,41 @@ package typings.kendoUi.kendo.mobile.ui
 import typings.kendoUi.kendo.data.DataSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollViewOptions extends StObject {
   
-  var autoBind: js.UndefOr[Boolean] = js.native
+  var autoBind: js.UndefOr[Boolean] = js.undefined
   
-  var bounceVelocityThreshold: js.UndefOr[Double] = js.native
+  var bounceVelocityThreshold: js.UndefOr[Double] = js.undefined
   
-  var change: js.UndefOr[js.Function1[/* e */ ScrollViewChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ ScrollViewChangeEvent, Unit]] = js.undefined
   
-  var changing: js.UndefOr[js.Function1[/* e */ ScrollViewChangingEvent, Unit]] = js.native
+  var changing: js.UndefOr[js.Function1[/* e */ ScrollViewChangingEvent, Unit]] = js.undefined
   
-  var contentHeight: js.UndefOr[Double | String] = js.native
+  var contentHeight: js.UndefOr[Double | String] = js.undefined
   
-  var dataSource: js.UndefOr[DataSource | js.Any] = js.native
+  var dataSource: js.UndefOr[DataSource | js.Any] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var emptyTemplate: js.UndefOr[String] = js.native
+  var emptyTemplate: js.UndefOr[String] = js.undefined
   
-  var enablePager: js.UndefOr[Boolean] = js.native
+  var enablePager: js.UndefOr[Boolean] = js.undefined
   
-  var itemsPerPage: js.UndefOr[Double] = js.native
+  var itemsPerPage: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
-  var refresh: js.UndefOr[js.Function1[/* e */ ScrollViewRefreshEvent, Unit]] = js.native
+  var refresh: js.UndefOr[js.Function1[/* e */ ScrollViewRefreshEvent, Unit]] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var velocityThreshold: js.UndefOr[Double] = js.native
+  var velocityThreshold: js.UndefOr[Double] = js.undefined
 }
 object ScrollViewOptions {
   

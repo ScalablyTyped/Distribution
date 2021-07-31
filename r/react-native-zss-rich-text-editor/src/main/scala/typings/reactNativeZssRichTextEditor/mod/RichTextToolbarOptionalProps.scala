@@ -3,31 +3,29 @@ package typings.reactNativeZssRichTextEditor.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RichTextToolbarOptionalProps extends StObject {
   
   // An array of actions to be provided by this toolbar.
-  var actions: js.Array[ACTIONS] = js.native
+  var actions: js.Array[ACTIONS]
   
-  var iconMap: IconsMap = js.native
+  var iconMap: IconsMap
   
-  var iconTint: String = js.native
+  var iconTint: String
   
-  var onPressAddImage: FunctionWithZeroArgs = js.native
+  var onPressAddImage: FunctionWithZeroArgs
   
   // Functions called when the addLink or addImage actions are tapped.
-  var onPressAddLink: FunctionWithZeroArgs = js.native
+  var onPressAddLink: FunctionWithZeroArgs
   
-  def renderAction(): ReactNode = js.native
+  def renderAction(): ReactNode
   
-  var selectedButtonStyle: ElementStyles = js.native
+  var selectedButtonStyle: ElementStyles
   
-  var selectedIconTint: String = js.native
+  var selectedIconTint: String
   
-  var unselectedButtonStyle: ElementStyles = js.native
+  var unselectedButtonStyle: ElementStyles
 }
 object RichTextToolbarOptionalProps {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputParallelismUpdate extends StObject {
   
   /**
     * Number of in-application streams to create for the specified streaming source.
     */
-  var CountUpdate: js.UndefOr[InputParallelismCount] = js.native
+  var CountUpdate: js.UndefOr[InputParallelismCount] = js.undefined
 }
 object InputParallelismUpdate {
   

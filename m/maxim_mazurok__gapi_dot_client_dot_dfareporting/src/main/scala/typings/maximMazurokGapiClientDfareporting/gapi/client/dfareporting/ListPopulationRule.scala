@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPopulationRule extends StObject {
   
   /** Floodlight activity ID associated with this rule. This field can be left blank. */
-  var floodlightActivityId: js.UndefOr[String] = js.native
+  var floodlightActivityId: js.UndefOr[String] = js.undefined
   
   /** Name of floodlight activity associated with this rule. This is a read-only, auto-generated field. */
-  var floodlightActivityName: js.UndefOr[String] = js.native
+  var floodlightActivityName: js.UndefOr[String] = js.undefined
   
   /** Clauses that make up this list population rule. Clauses are joined by ANDs, and the clauses themselves are made up of list population terms which are joined by ORs. */
-  var listPopulationClauses: js.UndefOr[js.Array[ListPopulationClause]] = js.native
+  var listPopulationClauses: js.UndefOr[js.Array[ListPopulationClause]] = js.undefined
 }
 object ListPopulationRule {
   

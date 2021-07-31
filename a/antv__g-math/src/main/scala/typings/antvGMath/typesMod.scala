@@ -2,21 +2,19 @@ package typings.antvGMath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait BBox extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object BBox {
     
@@ -43,12 +41,11 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Point extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Point {
     
@@ -71,14 +68,13 @@ object typesMod {
   
   type PointTuple = js.Tuple2[Double, Double]
   
-  @js.native
   trait Segment extends StObject {
     
-    var from: PointTuple = js.native
+    var from: PointTuple
     
-    var length: Double = js.native
+    var length: Double
     
-    var to: PointTuple = js.native
+    var to: PointTuple
   }
   object Segment {
     

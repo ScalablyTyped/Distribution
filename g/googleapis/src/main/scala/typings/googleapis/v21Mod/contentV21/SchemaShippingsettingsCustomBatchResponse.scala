@@ -2,22 +2,20 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaShippingsettingsCustomBatchResponse extends StObject {
   
   /**
     * The result of the execution of the batch requests.
     */
-  var entries: js.UndefOr[js.Array[SchemaShippingsettingsCustomBatchResponseEntry]] = js.native
+  var entries: js.UndefOr[js.Array[SchemaShippingsettingsCustomBatchResponseEntry]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#shippingsettingsCustomBatchResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaShippingsettingsCustomBatchResponse {
   

@@ -6,23 +6,21 @@ import typings.playable.tooltipTypesMod.ITooltipService
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlsChromecastTypesMod {
   
-  @js.native
   trait IChromecastButton extends StObject {
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    def getElement(): HTMLElement = js.native
+    def getElement(): HTMLElement
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    def setChromecastButtonCallback(callback: js.Function): Unit = js.native
+    def setChromecastButtonCallback(callback: js.Function): Unit
     
-    def show(): Unit = js.native
+    def show(): Unit
   }
   object IChromecastButton {
     
@@ -58,14 +56,13 @@ object controlsChromecastTypesMod {
     }
   }
   
-  @js.native
   trait IChromecastStyles extends StObject {
     
-    var buttonWrapper: String = js.native
+    var buttonWrapper: String
     
-    var downloadButton: String = js.native
+    var downloadButton: String
     
-    var hidden: String = js.native
+    var hidden: String
   }
   object IChromecastStyles {
     
@@ -89,10 +86,9 @@ object controlsChromecastTypesMod {
     }
   }
   
-  @js.native
   trait IChromecastViewCallbacks extends StObject {
     
-    var onButtonClick: js.Function = js.native
+    var onButtonClick: js.Function
   }
   object IChromecastViewCallbacks {
     
@@ -110,16 +106,15 @@ object controlsChromecastTypesMod {
     }
   }
   
-  @js.native
   trait IChromecastViewConfig extends StObject {
     
-    var callbacks: IChromecastViewCallbacks = js.native
+    var callbacks: IChromecastViewCallbacks
     
-    var textMap: ITextMap = js.native
+    var textMap: ITextMap
     
-    var theme: IThemeService = js.native
+    var theme: IThemeService
     
-    var tooltipService: ITooltipService = js.native
+    var tooltipService: ITooltipService
   }
   object IChromecastViewConfig {
     

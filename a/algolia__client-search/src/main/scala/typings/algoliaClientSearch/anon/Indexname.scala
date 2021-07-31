@@ -2,31 +2,29 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Indexname extends StObject {
   
   /**
     * Index name of the query.
     */
-  val index_name: String = js.native
+  val index_name: String
   
   /**
     * The offset of the query.
     */
-  val offset: js.UndefOr[Double] = js.native
+  val offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Query ID of the query.
     */
-  val query_id: js.UndefOr[String] = js.native
+  val query_id: js.UndefOr[String] = js.undefined
   
   /**
     * The user token of the query.
     */
-  val user_token: js.UndefOr[String] = js.native
+  val user_token: js.UndefOr[String] = js.undefined
 }
 object Indexname {
   

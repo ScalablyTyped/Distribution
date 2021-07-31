@@ -3,21 +3,19 @@ package typings.mongodb.anon
 import typings.mongodb.mod.FilterQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Collation[TSchema] extends StObject {
   
-  var collation: js.UndefOr[js.Object] = js.native
+  var collation: js.UndefOr[js.Object] = js.undefined
   
-  var filter: FilterQuery[TSchema] = js.native
+  var filter: FilterQuery[TSchema]
   
-  var hint: js.UndefOr[String | js.Object] = js.native
+  var hint: js.UndefOr[String | js.Object] = js.undefined
   
-  var replacement: TSchema = js.native
+  var replacement: TSchema
   
-  var upsert: js.UndefOr[Boolean] = js.native
+  var upsert: js.UndefOr[Boolean] = js.undefined
 }
 object Collation {
   
@@ -28,7 +26,7 @@ object Collation {
   }
   
   @scala.inline
-  implicit class CollationMutableBuilder[Self <: Collation[_], TSchema] (val x: Self with Collation[TSchema]) extends AnyVal {
+  implicit class CollationMutableBuilder[Self <: Collation[?], TSchema] (val x: Self & Collation[TSchema]) extends AnyVal {
     
     @scala.inline
     def setCollation(value: js.Object): Self = StObject.set(x, "collation", value.asInstanceOf[js.Any])

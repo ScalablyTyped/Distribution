@@ -2,21 +2,19 @@ package typings.awsSdk.textractMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Warning extends StObject {
   
   /**
     * The error code for the warning.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.textractMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.textractMod.ErrorCode] = js.undefined
   
   /**
     * A list of the pages that the warning applies to.
     */
-  var Pages: js.UndefOr[typings.awsSdk.textractMod.Pages] = js.native
+  var Pages: js.UndefOr[typings.awsSdk.textractMod.Pages] = js.undefined
 }
 object Warning {
   

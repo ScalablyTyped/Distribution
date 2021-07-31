@@ -11,8 +11,8 @@ Simple wildcard matching
 | Full name          | matcher |
 | Keywords           | matcher, matching, match, regex, regexp, regular, expression, wildcard, pattern, string, filter, glob, globber, globbing, minimatch |
 | # releases         | 4 |
-| # dependents       | 100 |
-| # downloads        | 45861508 |
+| # dependents       | 111 |
+| # downloads        | 51088815 |
 | # stars            | 4 |
 
 ## Links

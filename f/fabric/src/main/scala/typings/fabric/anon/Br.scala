@@ -2,29 +2,27 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Br extends StObject {
   
-  var bl: js.UndefOr[Boolean] = js.native
+  var bl: js.UndefOr[Boolean] = js.undefined
   
-  var br: js.UndefOr[Boolean] = js.native
+  var br: js.UndefOr[Boolean] = js.undefined
   
-  var mb: js.UndefOr[Boolean] = js.native
+  var mb: js.UndefOr[Boolean] = js.undefined
   
-  var ml: js.UndefOr[Boolean] = js.native
+  var ml: js.UndefOr[Boolean] = js.undefined
   
-  var mr: js.UndefOr[Boolean] = js.native
+  var mr: js.UndefOr[Boolean] = js.undefined
   
-  var mt: js.UndefOr[Boolean] = js.native
+  var mt: js.UndefOr[Boolean] = js.undefined
   
-  var mtr: js.UndefOr[Boolean] = js.native
+  var mtr: js.UndefOr[Boolean] = js.undefined
   
-  var tl: js.UndefOr[Boolean] = js.native
+  var tl: js.UndefOr[Boolean] = js.undefined
   
-  var tr: js.UndefOr[Boolean] = js.native
+  var tr: js.UndefOr[Boolean] = js.undefined
 }
 object Br {
   

@@ -4,13 +4,16 @@ import typings.std.HTMLElement
 import typings.winjs.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides functionality for data and template binding.
 **/
 object Binding {
+  
+  @JSGlobal("WinJS.Binding")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Represents a list of objects that can be accessed by index or by a string key. Provides methods to search, sort, filter, and manipulate the data.
@@ -25,10 +28,11 @@ object Binding {
     * @param options You can set two Boolean options: binding and proxy. If options.binding is true, the list contains the result of calling as on the element values. If options.proxy is true, the list specified as the first parameter is used as the storage for the List. This option should be used with care, because uncoordinated edits to the data storage may result in errors.
     **/
   class List[T] ()
-    extends typings.winjs.WinJS.Binding.List[T] {
+    extends StObject
+       with typings.winjs.WinJS.Binding.List[T] {
     def this(list: js.Array[T]) = this()
-    def this(list: js.UndefOr[scala.Nothing], options: js.Any) = this()
     def this(list: js.Array[T], options: js.Any) = this()
+    def this(list: Unit, options: js.Any) = this()
   }
   object List {
     
@@ -53,7 +57,8 @@ object Binding {
   @JSGlobal("WinJS.Binding.Template")
   @js.native
   class Template protected ()
-    extends typings.winjs.WinJS.Binding.Template {
+    extends StObject
+       with typings.winjs.WinJS.Binding.Template {
     //#region Constructors
     /**
       * Creates a template that provides a reusable declarative binding element.
@@ -88,12 +93,10 @@ object Binding {
       * @returns A promise that is completed after binding has finished. The value is either the object in the container parameter or the created DIV.
       **/
     /* static member */
-    @JSGlobal("WinJS.Binding.Template.render")
-    @js.native
-    def render(href: String, dataContext: js.Any): typings.winjs.WinJS.Promise[HTMLElement] = js.native
-    @JSGlobal("WinJS.Binding.Template.render")
-    @js.native
-    def render(href: String, dataContext: js.Any, container: HTMLElement): typings.winjs.WinJS.Promise[HTMLElement] = js.native
+    @scala.inline
+    def render(href: String, dataContext: js.Any): typings.winjs.WinJS.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(href.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[HTMLElement]]
+    @scala.inline
+    def render(href: String, dataContext: js.Any, container: HTMLElement): typings.winjs.WinJS.Promise[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(href.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[HTMLElement]]
     
     /**
       * Indicates that the object is compatibile with declarative processing.
@@ -114,18 +117,16 @@ object Binding {
     * @param sourceProperties The path on the source object to the source class.
     * @param dest The destination object.
     **/
-  @JSGlobal("WinJS.Binding.addClassOneTime")
-  @js.native
-  def addClassOneTime(source: js.Any, sourceProperties: js.Array[_], dest: HTMLElement): Unit = js.native
+  @scala.inline
+  def addClassOneTime(source: js.Any, sourceProperties: js.Array[js.Any], dest: HTMLElement): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassOneTime")(source.asInstanceOf[js.Any], sourceProperties.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns an observable object. This may be an observable proxy for the specified object, an existing proxy, or the specified object itself if it directly supports observation.
     * @param data The object to observe.
     * @returns The observable object.
     **/
-  @JSGlobal("WinJS.Binding.as")
-  @js.native
-  def as[U](data: U): U = js.native
+  @scala.inline
+  def as[U](data: U): U = ^.asInstanceOf[js.Dynamic].applyDynamic("as")(data.asInstanceOf[js.Any]).asInstanceOf[U]
   
   /**
     * Binds to one or more properties on the observable object or or on child values of that object.
@@ -133,18 +134,16 @@ object Binding {
     * @param bindingDescriptor An object literal containing the binding declarations. Binding declarations take the form: { propertyName: (function | bindingDeclaration), ... }.
     * @returns An object that contains at least a "cancel" field, which is a function that removes all bindings associated with this bind request.
     **/
-  @JSGlobal("WinJS.Binding.bind")
-  @js.native
-  def bind(observable: js.Any, bindingDescriptor: js.Any): js.Any = js.native
+  @scala.inline
+  def bind(observable: js.Any, bindingDescriptor: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(observable.asInstanceOf[js.Any], bindingDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Creates a default binding initializer for binding between a source property and a destination property with the specified converter function that is executed on the value of the source property.
     * @param convert The conversion function that takes the source property and produces a value that is set to the destination property. This function must be accessible from the global namespace.
     * @returns The binding initializer.
     **/
-  @JSGlobal("WinJS.Binding.converter")
-  @js.native
-  def converter(convert: js.Function): js.Function = js.native
+  @scala.inline
+  def converter(convert: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("converter")(convert.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   /**
     * Creates a one-way binding between the source object and the destination object. Warning Do not attempt to bind data to the ID of an HTML element.
@@ -154,18 +153,16 @@ object Binding {
     * @param destProperties The path on the destination object to the destination property.
     * @returns An object with a cancel method that is used to coalesce bindings.
     **/
-  @JSGlobal("WinJS.Binding.defaultBind")
-  @js.native
-  def defaultBind(source: js.Any, sourceProperties: js.Any, dest: js.Any, destProperties: js.Any): js.Any = js.native
+  @scala.inline
+  def defaultBind(source: js.Any, sourceProperties: js.Any, dest: js.Any, destProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultBind")(source.asInstanceOf[js.Any], sourceProperties.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], destProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Creates a new constructor function that supports observability with the specified set of properties.
     * @param data The object to use as the pattern for defining the set of properties.
     * @returns A constructor function with 1 optional argument that is the initial state of the properties.
     **/
-  @JSGlobal("WinJS.Binding.define")
-  @js.native
-  def define(data: js.Any): js.Function = js.native
+  @scala.inline
+  def define(data: js.Any): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("define")(data.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   //#region Properties
   //#endregion Properties
@@ -175,15 +172,18 @@ object Binding {
     **/
   object dynamicObservableMixin {
     
+    @JSGlobal("WinJS.Binding.dynamicObservableMixin")
+    @js.native
+    val ^ : js.Any = js.native
+    
     //#region Methods
     /**
       * Adds a property with change notification to this object, including a ECMAScript5 property definition.
       * @param name The name of the property to add.
       * @param value This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.addProperty")
-    @js.native
-    def addProperty(name: String, value: js.Any): Unit = js.native
+    @scala.inline
+    def addProperty(name: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.
@@ -191,18 +191,16 @@ object Binding {
       * @param action The function to invoke asynchronously when the property may have changed.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.bind")
-    @js.native
-    def bind(name: String, action: js.Any): js.Function = js.native
+    @scala.inline
+    def bind(name: String, action: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
       * Gets a property value by name.
       * @param name The name of the property to get.
       * @returns The value of the property as an observable object.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.getProperty")
-    @js.native
-    def getProperty(name: String): js.Any = js.native
+    @scala.inline
+    def getProperty(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getProperty")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Notifies listeners that a property value was updated.
@@ -211,18 +209,16 @@ object Binding {
       * @param oldValue The old value for the property.
       * @returns A promise that is completed when the notifications are complete.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.notify")
-    @js.native
-    def notify_(name: String, newValue: String, oldValue: String): typings.winjs.WinJS.Promise[_] = js.native
+    @scala.inline
+    def notify_(name: String, newValue: String, oldValue: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(name.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
     
     /**
       * Removes a property value.
       * @param name The name of the property to remove.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.removeProperty")
-    @js.native
-    def removeProperty(name: String): js.Any = js.native
+    @scala.inline
+    def removeProperty(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeProperty")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Updates a property value and notifies any listeners.
@@ -230,9 +226,8 @@ object Binding {
       * @param value The new value of the property.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.setProperty")
-    @js.native
-    def setProperty(name: String, value: js.Any): js.Any = js.native
+    @scala.inline
+    def setProperty(name: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Removes one or more listeners from the notification list for a given property.
@@ -240,9 +235,8 @@ object Binding {
       * @param action The function to remove from the listener list for the specified property. If this parameter is omitted, all listeners are removed for the specific property.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.unbind")
-    @js.native
-    def unbind(name: String, action: js.Function): js.Any = js.native
+    @scala.inline
+    def unbind(name: String, action: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Updates a property value and notifies any listeners.
@@ -250,9 +244,8 @@ object Binding {
       * @param value The new value of the property.
       * @returns A promise that completes when the notifications for this property change have been processed. If multiple notifications are coalesced, the promise may be canceled or the value of the promise may be updated. The fulfilled value of the promise is the new value of the property for which the notifications have been completed.
       **/
-    @JSGlobal("WinJS.Binding.dynamicObservableMixin.updateProperty")
-    @js.native
-    def updateProperty(name: String, value: js.Any): typings.winjs.WinJS.Promise[_] = js.native
+    @scala.inline
+    def updateProperty(name: String, value: js.Any): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
   }
   
   /**
@@ -260,33 +253,33 @@ object Binding {
     * @param shape The specification for the bindable object.
     * @returns An object with a set of properties all of which are wired for binding.
     **/
-  @JSGlobal("WinJS.Binding.expandProperties")
-  @js.native
-  def expandProperties(shape: js.Any): js.Any = js.native
+  @scala.inline
+  def expandProperties(shape: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("expandProperties")(shape.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  @JSGlobal("WinJS.Binding.getValue")
-  @js.native
-  def getValue(obj: js.Any): js.Any = js.native
-  @JSGlobal("WinJS.Binding.getValue")
-  @js.native
-  def getValue(obj: js.Any, path: js.Any): js.Any = js.native
+  @scala.inline
+  def getValue(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getValue(obj: js.Any, path: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getValue")(obj.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Marks a custom initializer function as being compatible with declarative data binding.
     * @param customInitializer The custom initializer to be marked as compatible with declarative data binding.
     * @returns The input customInitializer.
     **/
-  @JSGlobal("WinJS.Binding.initializer")
-  @js.native
-  def initializer(customInitializer: js.Function): js.Function = js.native
+  @scala.inline
+  def initializer(customInitializer: js.Function): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("initializer")(customInitializer.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   /**
     * Provides a standard implementation of the bindable contract, as well as a basic storage mechanism that participates in change notification and an asynchronous notification implementation.
     **/
   object mixin {
+    
+    @JSGlobal("WinJS.Binding.mixin")
+    @js.native
+    val ^ : js.Any = js.native
     
     //#region Methods
     /**
@@ -295,9 +288,8 @@ object Binding {
       * @param value The value of the property.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.mixin.addProperty")
-    @js.native
-    def addProperty(name: String, value: js.Any): js.Any = js.native
+    @scala.inline
+    def addProperty(name: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("addProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Links the specified action to the property specified in the name parameter. This function is invoked when the value of the property may have changed. It is not guaranteed that the action will be called only when a value has actually changed, nor is it guaranteed that the action will be called for every value change. The implementation of this function coalesces change notifications, such that multiple updates to a property value may result in only a single call to the specified action.
@@ -305,18 +297,16 @@ object Binding {
       * @param action The function to invoke asynchronously when the property may have changed.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.mixin.bind")
-    @js.native
-    def bind(name: String, action: js.Any): js.Function = js.native
+    @scala.inline
+    def bind(name: String, action: js.Any): js.Function = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Function]
     
     /**
       * Gets a property value by name.
       * @param name The name of the property to get.
       * @returns The value of the property as an observable object.
       **/
-    @JSGlobal("WinJS.Binding.mixin.getProperty")
-    @js.native
-    def getProperty(name: String): js.Any = js.native
+    @scala.inline
+    def getProperty(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getProperty")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Notifies listeners that a property value was updated.
@@ -325,18 +315,16 @@ object Binding {
       * @param oldValue The old value for the property.
       * @returns A promise that is completed when the notifications are complete.
       **/
-    @JSGlobal("WinJS.Binding.mixin.notify")
-    @js.native
-    def notify_(name: String, newValue: String, oldValue: String): typings.winjs.WinJS.Promise[_] = js.native
+    @scala.inline
+    def notify_(name: String, newValue: String, oldValue: String): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(name.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
     
     /**
       * Removes a property value.
       * @param name The name of the property to remove.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.mixin.removeProperty")
-    @js.native
-    def removeProperty(name: String): js.Any = js.native
+    @scala.inline
+    def removeProperty(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("removeProperty")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Updates a property value and notifies any listeners.
@@ -344,9 +332,8 @@ object Binding {
       * @param value The new value of the property.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.mixin.setProperty")
-    @js.native
-    def setProperty(name: String, value: js.Any): js.Any = js.native
+    @scala.inline
+    def setProperty(name: String, value: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Removes one or more listeners from the notification list for a given property.
@@ -354,9 +341,8 @@ object Binding {
       * @param action The function to remove from the listener list for the specified property. If this parameter is omitted, all listeners are removed for the specific property.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.mixin.unbind")
-    @js.native
-    def unbind(name: String, action: js.Function): js.Any = js.native
+    @scala.inline
+    def unbind(name: String, action: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Updates a property value and notifies any listeners.
@@ -364,15 +350,18 @@ object Binding {
       * @param value The new value of the property.
       * @returns A promise that completes when the notifications for this property change have been processed. If multiple notifications are coalesced, the promise may be canceled or the value of the promise may be updated. The fulfilled value of the promise is the new value of the property for which the notifications have been completed.
       **/
-    @JSGlobal("WinJS.Binding.mixin.updateProperty")
-    @js.native
-    def updateProperty(name: String, value: js.Any): typings.winjs.WinJS.Promise[_] = js.native
+    @scala.inline
+    def updateProperty(name: String, value: js.Any): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateProperty")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
   }
   
   /**
     * Provides functions that can make an object observable.
     **/
   object observableMixin {
+    
+    @JSGlobal("WinJS.Binding.observableMixin")
+    @js.native
+    val ^ : js.Any = js.native
     
     //#region Methods
     /**
@@ -381,9 +370,8 @@ object Binding {
       * @param action The function to invoke asynchronously when the property may have changed.
       * @returns A reference to this observableMixin object.
       **/
-    @JSGlobal("WinJS.Binding.observableMixin.bind")
-    @js.native
-    def bind(name: String, action: js.Function): js.Any = js.native
+    @scala.inline
+    def bind(name: String, action: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bind")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     /**
       * Notifies listeners that a property value was updated.
@@ -392,9 +380,8 @@ object Binding {
       * @param oldValue The old value for the property.
       * @returns A promise that is completed when the notifications are complete.
       **/
-    @JSGlobal("WinJS.Binding.observableMixin.notify")
-    @js.native
-    def notify_(name: String, newValue: js.Any, oldValue: js.Any): typings.winjs.WinJS.Promise[_] = js.native
+    @scala.inline
+    def notify_(name: String, newValue: js.Any, oldValue: js.Any): typings.winjs.WinJS.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(name.asInstanceOf[js.Any], newValue.asInstanceOf[js.Any], oldValue.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[js.Any]]
     
     /**
       * Removes one or more listeners from the notification list for a given property.
@@ -402,9 +389,8 @@ object Binding {
       * @param action The function to remove from the listener list for the specified property. If this parameter is omitted, all listeners are removed for the specific property.
       * @returns This object is returned.
       **/
-    @JSGlobal("WinJS.Binding.observableMixin.unbind")
-    @js.native
-    def unbind(name: String, action: js.Function): js.Any = js.native
+    @scala.inline
+    def unbind(name: String, action: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("unbind")(name.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   /**
@@ -415,9 +401,8 @@ object Binding {
     * @param destProperties The path on the destination object to the destination property.
     * @returns An object with a cancel method that is used to coalesce bindings.
     **/
-  @JSGlobal("WinJS.Binding.oneTime")
-  @js.native
-  def oneTime(source: js.Any, sourceProperties: js.Any, dest: js.Any, destProperties: js.Any): js.Any = js.native
+  @scala.inline
+  def oneTime(source: js.Any, sourceProperties: js.Any, dest: js.Any, destProperties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("oneTime")(source.asInstanceOf[js.Any], sourceProperties.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], destProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Binds the values of an object to the values of a DOM element that has the data-win-bind attribute. If multiple DOM elements are to be bound, you must set the attribute on all of them. See the example below for details.
@@ -428,233 +413,166 @@ object Binding {
     * @param defaultInitializer The binding initializer to use in the case that one is not specified in a binding expression. If not provided, the behavior is the same as Binding.defaultBind.
     * @returns A Promise that completes when every item that contains the data-win-bind attribute has been processed and the update has started.
     **/
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  @scala.inline
+  def processAll(): typings.winjs.WinJS.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("processAll")().asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Unit, dataContext: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Unit, dataContext: js.Any, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Unit, dataContext: js.Any, skipRoot: Boolean, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.UndefOr[scala.Nothing],
-    defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.Any
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.Any,
-    defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: js.UndefOr[scala.Nothing], dataContext: js.UndefOr[scala.Nothing], skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: Boolean,
-    bindingCache: js.UndefOr[scala.Nothing],
-    defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: Boolean,
-    bindingCache: js.Any
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: Boolean,
-    bindingCache: js.Any,
-    defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: js.UndefOr[scala.Nothing], dataContext: js.Any): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.Any,
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.UndefOr[scala.Nothing],
-    defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.Any,
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.Any
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.Any,
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.Any,
-    defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: js.UndefOr[scala.Nothing], dataContext: js.Any, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.Any,
-    skipRoot: Boolean,
-    bindingCache: js.UndefOr[scala.Nothing],
-    defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
-    dataContext: js.Any,
-    skipRoot: Boolean,
-    bindingCache: js.Any
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
     dataContext: js.Any,
     skipRoot: Boolean,
     bindingCache: js.Any,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: Element): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: Element,
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
+    dataContext: js.Any,
+    skipRoot: Boolean,
+    bindingCache: Unit,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Unit, dataContext: js.Any, skipRoot: Unit, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: Element,
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.Any
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: Element,
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
+    dataContext: js.Any,
+    skipRoot: Unit,
     bindingCache: js.Any,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: Element, dataContext: js.UndefOr[scala.Nothing], skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: Element,
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: Boolean,
-    bindingCache: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
+    dataContext: js.Any,
+    skipRoot: Unit,
+    bindingCache: Unit,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Unit, dataContext: Unit, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Unit, dataContext: Unit, skipRoot: Boolean, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: Element,
-    dataContext: js.UndefOr[scala.Nothing],
-    skipRoot: Boolean,
-    bindingCache: js.Any
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: Element,
-    dataContext: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
+    dataContext: Unit,
     skipRoot: Boolean,
     bindingCache: js.Any,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: Element, dataContext: js.Any): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: Element,
-    dataContext: js.Any,
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
+    dataContext: Unit,
+    skipRoot: Boolean,
+    bindingCache: Unit,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Unit, dataContext: Unit, skipRoot: Unit, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: Element,
-    dataContext: js.Any,
-    skipRoot: js.UndefOr[scala.Nothing],
-    bindingCache: js.Any
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(
-    rootElement: Element,
-    dataContext: js.Any,
-    skipRoot: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
+    dataContext: Unit,
+    skipRoot: Unit,
     bindingCache: js.Any,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: Element, dataContext: js.Any, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
-    rootElement: Element,
-    dataContext: js.Any,
-    skipRoot: Boolean,
-    bindingCache: js.UndefOr[scala.Nothing],
+    rootElement: Unit,
+    dataContext: Unit,
+    skipRoot: Unit,
+    bindingCache: Unit,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
-  def processAll(rootElement: Element, dataContext: js.Any, skipRoot: Boolean, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = js.native
-  @JSGlobal("WinJS.Binding.processAll")
-  @js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element): typings.winjs.WinJS.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any]).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element, dataContext: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element, dataContext: js.Any, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element, dataContext: js.Any, skipRoot: Boolean, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
   def processAll(
     rootElement: Element,
     dataContext: js.Any,
     skipRoot: Boolean,
     bindingCache: js.Any,
     defaultInitializer: js.Function
-  ): typings.winjs.WinJS.Promise[Unit] = js.native
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(
+    rootElement: Element,
+    dataContext: js.Any,
+    skipRoot: Boolean,
+    bindingCache: Unit,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element, dataContext: js.Any, skipRoot: Unit, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(
+    rootElement: Element,
+    dataContext: js.Any,
+    skipRoot: Unit,
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(
+    rootElement: Element,
+    dataContext: js.Any,
+    skipRoot: Unit,
+    bindingCache: Unit,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element, dataContext: Unit, skipRoot: Boolean): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element, dataContext: Unit, skipRoot: Boolean, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(
+    rootElement: Element,
+    dataContext: Unit,
+    skipRoot: Boolean,
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(
+    rootElement: Element,
+    dataContext: Unit,
+    skipRoot: Boolean,
+    bindingCache: Unit,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(rootElement: Element, dataContext: Unit, skipRoot: Unit, bindingCache: js.Any): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(
+    rootElement: Element,
+    dataContext: Unit,
+    skipRoot: Unit,
+    bindingCache: js.Any,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
+  @scala.inline
+  def processAll(
+    rootElement: Element,
+    dataContext: Unit,
+    skipRoot: Unit,
+    bindingCache: Unit,
+    defaultInitializer: js.Function
+  ): typings.winjs.WinJS.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("processAll")(rootElement.asInstanceOf[js.Any], dataContext.asInstanceOf[js.Any], skipRoot.asInstanceOf[js.Any], bindingCache.asInstanceOf[js.Any], defaultInitializer.asInstanceOf[js.Any])).asInstanceOf[typings.winjs.WinJS.Promise[Unit]]
   
   /**
     * Creates a one-way binding between the source object and an attribute on the destination element.
@@ -664,9 +582,13 @@ object Binding {
     * @param destProperties The path on the destination object to the destination property. This must be a single name.
     * @returns An object with a cancel() method that is used to coalesce bindings.
     **/
-  @JSGlobal("WinJS.Binding.setAttribute")
-  @js.native
-  def setAttribute(source: js.Any, sourceProperties: js.Array[_], dest: Element, destProperties: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def setAttribute(
+    source: js.Any,
+    sourceProperties: js.Array[js.Any],
+    dest: Element,
+    destProperties: js.Array[js.Any]
+  ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttribute")(source.asInstanceOf[js.Any], sourceProperties.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], destProperties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Sets an attribute on the destination element to the value of the source property.
@@ -675,16 +597,19 @@ object Binding {
     * @param dest The destination object.
     * @param destProperties The path on the destination object to the destination property. This must be a single name.
     **/
-  @JSGlobal("WinJS.Binding.setAttributeOneTime")
-  @js.native
-  def setAttributeOneTime(source: js.Any, sourceProperties: js.Array[_], dest: Element, destProperties: js.Array[_]): Unit = js.native
+  @scala.inline
+  def setAttributeOneTime(
+    source: js.Any,
+    sourceProperties: js.Array[js.Any],
+    dest: Element,
+    destProperties: js.Array[js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setAttributeOneTime")(source.asInstanceOf[js.Any], sourceProperties.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], destProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns the original (non-observable) object is returned if the specified object is an observable proxy,
     * @param data The object for which to retrieve the original value.
     * @returns If the specified object is an observable proxy, the original object is returned, otherwise the same object is returned.
     **/
-  @JSGlobal("WinJS.Binding.unwrap")
-  @js.native
-  def unwrap(data: js.Any): js.Any = js.native
+  @scala.inline
+  def unwrap(data: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unwrap")(data.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

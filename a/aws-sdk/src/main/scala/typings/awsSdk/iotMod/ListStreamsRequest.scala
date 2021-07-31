@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStreamsRequest extends StObject {
   
   /**
     * Set to true to return the list of streams in ascending order.
     */
-  var ascendingOrder: js.UndefOr[AscendingOrder] = js.native
+  var ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined
   
   /**
     * The maximum number of results to return at a time.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * A token used to get the next set of results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListStreamsRequest {
   

@@ -2,24 +2,22 @@ package typings.googleapis.genomicsV1Mod.genomicsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An event generated after a worker VM has been assigned to run the pipeline.
   */
-@js.native
 trait SchemaWorkerAssignedEvent extends StObject {
   
   /**
     * The worker&#39;s instance name.
     */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /**
     * The zone the worker is running in.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaWorkerAssignedEvent {
   

@@ -2,18 +2,16 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RangeException extends StObject {
   
   @JSName("MSHTML.RangeException_typekey")
-  var MSHTMLDotRangeException_typekey: RangeException = js.native
+  var MSHTMLDotRangeException_typekey: RangeException
   
-  var code: Double = js.native
+  var code: Double
   
-  val message: String = js.native
+  val message: String
 }
 object RangeException {
   

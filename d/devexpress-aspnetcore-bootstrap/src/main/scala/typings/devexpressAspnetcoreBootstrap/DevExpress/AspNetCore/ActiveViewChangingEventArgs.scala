@@ -2,17 +2,17 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActiveViewChangingEventArgs extends EventArgs {
+trait ActiveViewChangingEventArgs
+  extends StObject
+     with EventArgs {
   
-  var cancel: Boolean = js.native
+  var cancel: Boolean
   
-  val newView: BootstrapSchedulerViewType = js.native
+  val newView: BootstrapSchedulerViewType
   
-  val oldView: BootstrapSchedulerViewType = js.native
+  val oldView: BootstrapSchedulerViewType
 }
 object ActiveViewChangingEventArgs {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetModelPropertyDefinition extends StObject {
   
   /**
     * The data type of the property definition.
     */
-  var dataType: PropertyDataType = js.native
+  var dataType: PropertyDataType
   
   /**
     * The name of the property definition.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The property definition type (see PropertyType). You can only specify one type in a property definition.
     */
-  var `type`: PropertyType = js.native
+  var `type`: PropertyType
   
   /**
     * The unit of the property definition, such as Newtons or RPM.
     */
-  var unit: js.UndefOr[PropertyUnit] = js.native
+  var unit: js.UndefOr[PropertyUnit] = js.undefined
 }
 object AssetModelPropertyDefinition {
   

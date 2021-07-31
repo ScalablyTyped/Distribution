@@ -7,27 +7,25 @@ import typings.chromeApps.chromeAppsStrings.mips64_
 import typings.chromeApps.chromeAppsStrings.mips_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARM extends StObject {
   
-  var ARM: arm_ = js.native
+  var ARM: arm_
   
-  var MIPS: mips_ = js.native
+  var MIPS: mips_
   
-  var MIPS64: mips64_ = js.native
+  var MIPS64: mips64_
   
-  var X86_32: `x86-32` = js.native
+  var X86_32: `x86-32`
   
-  var X86_64: `x86-64` = js.native
+  var X86_64: `x86-64`
 }
 object ARM {
   
   @scala.inline
-  def apply(ARM: arm_, MIPS: mips_, MIPS64: mips64_, X86_32: `x86-32`, X86_64: `x86-64`): ARM = {
-    val __obj = js.Dynamic.literal(ARM = ARM.asInstanceOf[js.Any], MIPS = MIPS.asInstanceOf[js.Any], MIPS64 = MIPS64.asInstanceOf[js.Any], X86_32 = X86_32.asInstanceOf[js.Any], X86_64 = X86_64.asInstanceOf[js.Any])
+  def apply(): ARM = {
+    val __obj = js.Dynamic.literal(ARM = "arm", MIPS = "mips", MIPS64 = "mips64", X86_32 = "x86-32", X86_64 = "x86-64")
     __obj.asInstanceOf[ARM]
   }
   

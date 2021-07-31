@@ -3,15 +3,13 @@ package typings.uikit.mod.UIkit
 import typings.uikit.mod.UIkitNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitNavElement extends StObject {
   
-  var animate: Boolean = js.native
+  var animate: Boolean
   
-  var index: String | Double | UIkitNode = js.native
+  var index: String | Double | UIkitNode
 }
 object UIkitNavElement {
   

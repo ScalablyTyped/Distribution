@@ -10,15 +10,17 @@ import typings.node.NodeJS.WritableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   // Merged declaration, g is both a callable function and a namespace
+  @scala.inline
+  def apply(db: js.Any, mongo: js.Any): Grid = (^.asInstanceOf[js.Dynamic].apply(db.asInstanceOf[js.Any], mongo.asInstanceOf[js.Any])).asInstanceOf[Grid]
+  
   @JSImport("gridfs-stream", JSImport.Namespace)
   @js.native
-  def apply(db: js.Any, mongo: js.Any): Grid = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gridfs-stream", "Grid")
   @js.native
@@ -48,25 +50,24 @@ object mod {
   
   object GridFSStream {
     
-    @js.native
     trait Options extends StObject {
       
-      var _id: js.UndefOr[String] = js.native
+      var _id: js.UndefOr[String] = js.undefined
       
       // any other options from the GridStore may be passed too, e.g.
-      var chunkSize: js.UndefOr[Double] = js.native
+      var chunkSize: js.UndefOr[Double] = js.undefined
       
-      var content_type: js.UndefOr[String] = js.native
+      var content_type: js.UndefOr[String] = js.undefined
       
-      var filename: js.UndefOr[String] = js.native
+      var filename: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[js.Any] = js.native
+      var metadata: js.UndefOr[js.Any] = js.undefined
       
-      var mode: js.UndefOr[String] = js.native
+      var mode: js.UndefOr[String] = js.undefined
       
-      var range: js.UndefOr[Range] = js.native
+      var range: js.UndefOr[Range] = js.undefined
       
-      var root: js.UndefOr[String] = js.native
+      var root: js.UndefOr[String] = js.undefined
     }
     object Options {
       
@@ -129,12 +130,11 @@ object mod {
       }
     }
     
-    @js.native
     trait Range extends StObject {
       
-      var endPos: Double = js.native
+      var endPos: Double
       
-      var startPos: Double = js.native
+      var startPos: Double
     }
     object Range {
       
@@ -156,13 +156,17 @@ object mod {
     }
     
     @js.native
-    trait ReadStream extends ReadableStream {
+    trait ReadStream
+      extends StObject
+         with ReadableStream {
       
       var paused: Boolean = js.native
     }
     
     @js.native
-    trait WriteStream extends WritableStream {
+    trait WriteStream
+      extends StObject
+         with WritableStream {
       
       var id: String = js.native
       

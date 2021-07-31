@@ -3,10 +3,8 @@ package typings.vis.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenClusterOptions extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait OpenClusterOptions extends StObject {
     * we will position them at the location of the cluster.
     * This is also the default behaviour when no releaseFunction is defined.
     */
-  def releaseFunction(clusterPosition: Position, containedNodesPositions: StringDictionary[Position]): StringDictionary[Position] = js.native
+  def releaseFunction(clusterPosition: Position, containedNodesPositions: StringDictionary[Position]): StringDictionary[Position]
 }
 object OpenClusterOptions {
   

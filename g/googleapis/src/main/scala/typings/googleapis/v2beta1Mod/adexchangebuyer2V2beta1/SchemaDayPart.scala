@@ -2,34 +2,32 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Daypart targeting message that specifies if the ad can be shown only during
   * certain parts of a day/week.
   */
-@js.native
 trait SchemaDayPart extends StObject {
   
   /**
     * The day of the week to target. If unspecified, applicable to all days.
     */
-  var dayOfWeek: js.UndefOr[String] = js.native
+  var dayOfWeek: js.UndefOr[String] = js.undefined
   
   /**
     * The ending time of the day for the ad to show (minute level granularity).
     * The end time is exclusive. This field is not available for filtering in
     * PQL queries.
     */
-  var endTime: js.UndefOr[SchemaTimeOfDay] = js.native
+  var endTime: js.UndefOr[SchemaTimeOfDay] = js.undefined
   
   /**
     * The starting time of day for the ad to show (minute level granularity).
     * The start time is inclusive. This field is not available for filtering in
     * PQL queries.
     */
-  var startTime: js.UndefOr[SchemaTimeOfDay] = js.native
+  var startTime: js.UndefOr[SchemaTimeOfDay] = js.undefined
 }
 object SchemaDayPart {
   

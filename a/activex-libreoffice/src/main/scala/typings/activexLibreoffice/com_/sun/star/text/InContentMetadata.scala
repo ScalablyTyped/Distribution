@@ -11,16 +11,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * is a {@link TextContent} that can be used to attach RDF metadata to a range of text.
   * @since OOo 3.2
   */
-@js.native
 trait InContentMetadata
-  extends TextContent
+  extends StObject
+     with TextContent
      with XMetadatable
      with XEnumerationAccess
      with XChild

@@ -2,51 +2,49 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EC2InstanceDetails extends StObject {
   
   /**
     * The Availability Zone of the recommended reservation.
     */
-  var AvailabilityZone: js.UndefOr[GenericString] = js.native
+  var AvailabilityZone: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Whether the recommendation is for a current-generation instance. 
     */
-  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.native
+  var CurrentGeneration: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
     * The instance family of the recommended reservation.
     */
-  var Family: js.UndefOr[GenericString] = js.native
+  var Family: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The type of instance that AWS recommends.
     */
-  var InstanceType: js.UndefOr[GenericString] = js.native
+  var InstanceType: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The platform of the recommended reservation. The platform is the specific combination of operating system, license model, and software on an instance.
     */
-  var Platform: js.UndefOr[GenericString] = js.native
+  var Platform: js.UndefOr[GenericString] = js.undefined
   
   /**
     * The AWS Region of the recommended reservation.
     */
-  var Region: js.UndefOr[GenericString] = js.native
+  var Region: js.UndefOr[GenericString] = js.undefined
   
   /**
     * Whether the recommended reservation is size flexible.
     */
-  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.native
+  var SizeFlexEligible: js.UndefOr[GenericBoolean] = js.undefined
   
   /**
     * Whether the recommended reservation is dedicated or shared.
     */
-  var Tenancy: js.UndefOr[GenericString] = js.native
+  var Tenancy: js.UndefOr[GenericString] = js.undefined
 }
 object EC2InstanceDetails {
   

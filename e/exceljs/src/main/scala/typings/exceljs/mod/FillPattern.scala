@@ -4,26 +4,26 @@ import typings.exceljs.anon.PartialColor
 import typings.exceljs.exceljsStrings.pattern
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FillPattern extends Fill {
+trait FillPattern
+  extends StObject
+     with Fill {
   
-  var bgColor: js.UndefOr[PartialColor] = js.native
+  var bgColor: js.UndefOr[PartialColor] = js.undefined
   
-  var fgColor: PartialColor = js.native
+  var fgColor: PartialColor
   
-  var pattern: FillPatterns = js.native
+  var pattern: FillPatterns
   
-  var `type`: pattern = js.native
+  var `type`: pattern
 }
 object FillPattern {
   
   @scala.inline
-  def apply(fgColor: PartialColor, pattern: FillPatterns, `type`: pattern): FillPattern = {
+  def apply(fgColor: PartialColor, pattern: FillPatterns): FillPattern = {
     val __obj = js.Dynamic.literal(fgColor = fgColor.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("pattern")
     __obj.asInstanceOf[FillPattern]
   }
   

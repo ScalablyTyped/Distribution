@@ -2,25 +2,25 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SaleResource extends Resource {
+trait SaleResource
+  extends StObject
+     with Resource {
   
-  val billing_agreement_id: js.UndefOr[String] = js.native
+  val billing_agreement_id: js.UndefOr[String] = js.undefined
   
-  val clearing_time: js.UndefOr[String] = js.native
+  val clearing_time: js.UndefOr[String] = js.undefined
   
-  val exchange_rate: js.UndefOr[String] = js.native
+  val exchange_rate: js.UndefOr[String] = js.undefined
   
-  val payment_hold_reasons: js.UndefOr[js.Array[String]] = js.native
+  val payment_hold_reasons: js.UndefOr[js.Array[String]] = js.undefined
   
-  val payment_hold_status: js.UndefOr[String] = js.native
+  val payment_hold_status: js.UndefOr[String] = js.undefined
   
-  val purchase_unit_reference_id: js.UndefOr[String] = js.native
+  val purchase_unit_reference_id: js.UndefOr[String] = js.undefined
   
-  val transaction_fee: js.UndefOr[Currency] = js.native
+  val transaction_fee: js.UndefOr[Currency] = js.undefined
 }
 object SaleResource {
   

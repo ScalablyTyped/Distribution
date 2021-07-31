@@ -2,55 +2,53 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Details of a message in phishing spike alert.
   */
-@js.native
 trait SchemaGmailMessageInfo extends StObject {
   
   /**
     * The `SHA256` hash of email&#39;s attachment and all MIME parts.
     */
-  var attachmentsSha256Hash: js.UndefOr[js.Array[String]] = js.native
+  var attachmentsSha256Hash: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The date the malicious email was sent.
     */
-  var date: js.UndefOr[String] = js.native
+  var date: js.UndefOr[String] = js.undefined
   
   /**
     * The hash of the message body text.
     */
-  var md5HashMessageBody: js.UndefOr[String] = js.native
+  var md5HashMessageBody: js.UndefOr[String] = js.undefined
   
   /**
     * The MD5 Hash of email&#39;s subject (only available for reported emails).
     */
-  var md5HashSubject: js.UndefOr[String] = js.native
+  var md5HashSubject: js.UndefOr[String] = js.undefined
   
   /**
     * The snippet of the message body text (only available for reported
     * emails).
     */
-  var messageBodySnippet: js.UndefOr[String] = js.native
+  var messageBodySnippet: js.UndefOr[String] = js.undefined
   
   /**
     * The message ID.
     */
-  var messageId: js.UndefOr[String] = js.native
+  var messageId: js.UndefOr[String] = js.undefined
   
   /**
     * The recipient of this email.
     */
-  var recipient: js.UndefOr[String] = js.native
+  var recipient: js.UndefOr[String] = js.undefined
   
   /**
     * The email subject text (only available for reported emails).
     */
-  var subjectText: js.UndefOr[String] = js.native
+  var subjectText: js.UndefOr[String] = js.undefined
 }
 object SchemaGmailMessageInfo {
   

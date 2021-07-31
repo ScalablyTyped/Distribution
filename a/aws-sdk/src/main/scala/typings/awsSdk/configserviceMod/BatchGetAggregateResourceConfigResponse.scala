@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetAggregateResourceConfigResponse extends StObject {
   
   /**
     * A list that contains the current configuration of one or more resources.
     */
-  var BaseConfigurationItems: js.UndefOr[typings.awsSdk.configserviceMod.BaseConfigurationItems] = js.native
+  var BaseConfigurationItems: js.UndefOr[typings.awsSdk.configserviceMod.BaseConfigurationItems] = js.undefined
   
   /**
     * A list of resource identifiers that were not processed with current scope. The list is empty if all the resources are processed.
     */
-  var UnprocessedResourceIdentifiers: js.UndefOr[UnprocessedResourceIdentifierList] = js.native
+  var UnprocessedResourceIdentifiers: js.UndefOr[UnprocessedResourceIdentifierList] = js.undefined
 }
 object BatchGetAggregateResourceConfigResponse {
   

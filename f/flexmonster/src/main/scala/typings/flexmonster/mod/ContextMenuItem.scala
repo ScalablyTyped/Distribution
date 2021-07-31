@@ -2,21 +2,19 @@ package typings.flexmonster.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenuItem extends StObject {
   
-  var `class`: js.UndefOr[String] = js.native
+  var `class`: js.UndefOr[String] = js.undefined
   
-  var handler: js.UndefOr[js.Function0[Unit] | String] = js.native
+  var handler: js.UndefOr[js.Function0[Unit] | String] = js.undefined
   
-  var isSelected: js.UndefOr[Boolean] = js.native
+  var isSelected: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var submenu: js.UndefOr[js.Array[ContextMenuItem]] = js.native
+  var submenu: js.UndefOr[js.Array[ContextMenuItem]] = js.undefined
 }
 object ContextMenuItem {
   

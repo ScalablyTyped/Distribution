@@ -2,25 +2,23 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a list of score submission statuses.
   */
-@js.native
 trait SchemaPlayerScoreListResponse extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#playerScoreListResponse.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The score submissions statuses.
     */
-  var submittedScores: js.UndefOr[js.Array[SchemaPlayerScoreResponse]] = js.native
+  var submittedScores: js.UndefOr[js.Array[SchemaPlayerScoreResponse]] = js.undefined
 }
 object SchemaPlayerScoreListResponse {
   

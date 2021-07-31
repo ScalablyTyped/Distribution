@@ -5,13 +5,14 @@ import typings.d3Selection.mod.Selection_
 import typings.d3Transition.mod.Transition_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.nvd3.mod.Nvd3Element because Already inherited
 - typings.nvd3.mod.Chart because var conflicts: dispatch. Inlined state, interactiveLayer */ @js.native
-trait SunburstChart extends Sunburst {
+trait SunburstChart
+  extends StObject
+     with Sunburst {
   
   /*No longer used.Use chart.dispatch.changeState(...) instead*/
   def defaultState(): js.Any = js.native
@@ -34,19 +35,19 @@ trait SunburstChart extends Sunburst {
   
   def sunburst(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def sunburst(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native

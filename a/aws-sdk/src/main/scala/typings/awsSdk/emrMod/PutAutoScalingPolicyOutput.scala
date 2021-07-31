@@ -2,31 +2,29 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAutoScalingPolicyOutput extends StObject {
   
   /**
     * The automatic scaling policy definition.
     */
-  var AutoScalingPolicy: js.UndefOr[AutoScalingPolicyDescription] = js.native
+  var AutoScalingPolicy: js.UndefOr[AutoScalingPolicyDescription] = js.undefined
   
   /**
     * The Amazon Resource Name of the cluster.
     */
-  var ClusterArn: js.UndefOr[ArnType] = js.native
+  var ClusterArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * Specifies the ID of a cluster. The instance group to which the automatic scaling policy is applied is within this cluster.
     */
-  var ClusterId: js.UndefOr[typings.awsSdk.emrMod.ClusterId] = js.native
+  var ClusterId: js.UndefOr[typings.awsSdk.emrMod.ClusterId] = js.undefined
   
   /**
     * Specifies the ID of the instance group to which the scaling policy is applied.
     */
-  var InstanceGroupId: js.UndefOr[typings.awsSdk.emrMod.InstanceGroupId] = js.native
+  var InstanceGroupId: js.UndefOr[typings.awsSdk.emrMod.InstanceGroupId] = js.undefined
 }
 object PutAutoScalingPolicyOutput {
   

@@ -3,13 +3,11 @@ package typings.braintree.mod
 import typings.braintree.anon.Plans
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlanGateway extends StObject {
   
-  def all(): js.Promise[Plans] = js.native
+  def all(): js.Promise[Plans]
 }
 object PlanGateway {
   

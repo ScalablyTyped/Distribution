@@ -10,7 +10,6 @@ import typings.std.NodeList
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationInterfaceMod {
@@ -202,7 +201,7 @@ object animationInterfaceMod {
       * browsers that do not support
       * the Web Animations API.
       */
-    def getWebAnimations(): js.Array[_] = js.native
+    def getWebAnimations(): js.Array[js.Any] = js.native
     
     var id: js.UndefOr[String] = js.native
     
@@ -241,8 +240,8 @@ object animationInterfaceMod {
     def play(): js.Promise[Unit] = js.native
     def play(opts: AnimationPlayOptions): js.Promise[Unit] = js.native
     
-    def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double): Unit = js.native
-    def progressEnd(playTo: js.UndefOr[scala.Nothing], step: Double, dur: Double): Unit = js.native
+    def progressEnd(playTo: Unit, step: Double): Unit = js.native
+    def progressEnd(playTo: Unit, step: Double, dur: Double): Unit = js.native
     @JSName("progressEnd")
     def progressEnd_0(playTo: `0`, step: Double): Unit = js.native
     @JSName("progressEnd")
@@ -268,10 +267,9 @@ object animationInterfaceMod {
   
   type AnimationBuilder = js.Function2[/* baseEl */ js.Any, /* opts */ js.UndefOr[js.Any], Animation]
   
-  @js.native
   trait AnimationCallbackOptions extends StObject {
     
-    var oneTimeCallback: Boolean = js.native
+    var oneTimeCallback: Boolean
   }
   object AnimationCallbackOptions {
     
@@ -338,10 +336,9 @@ object animationInterfaceMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: any} */ @js.native
-  trait AnimationKeyFrame extends StObject {
+  - Dropped {[ P in string ]: any} */ trait AnimationKeyFrame extends StObject {
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object AnimationKeyFrame {
     
@@ -360,10 +357,9 @@ object animationInterfaceMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in string ]: any} */ @js.native
-  trait AnimationKeyFrameEdge extends StObject {
+  - Dropped {[ P in string ]: any} */ trait AnimationKeyFrameEdge extends StObject {
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object AnimationKeyFrameEdge {
     
@@ -388,10 +384,9 @@ object animationInterfaceMod {
   
   type AnimationLifecycle = js.Function2[/* currentStep */ `0` | `1`, /* animation */ Animation, Unit]
   
-  @js.native
   trait AnimationPlayOptions extends StObject {
     
-    var sync: Boolean = js.native
+    var sync: Boolean
   }
   object AnimationPlayOptions {
     

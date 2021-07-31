@@ -2,17 +2,18 @@ package typings.lodashDeep
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lodash-deep", "deepMapValues")
+  @JSImport("lodash-deep", JSImport.Namespace)
   @js.native
-  def deepMapValues(`object`: js.Any, callback: js.Any): js.Any = js.native
-  @JSImport("lodash-deep", "deepMapValues")
-  @js.native
-  def deepMapValues(`object`: js.Any, callback: js.Any, propertyPath: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def deepMapValues(`object`: js.Any, callback: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def deepMapValues(`object`: js.Any, callback: js.Any, propertyPath: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("deepMapValues")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], propertyPath.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* augmented module */
   object lodashAugmentingMod {

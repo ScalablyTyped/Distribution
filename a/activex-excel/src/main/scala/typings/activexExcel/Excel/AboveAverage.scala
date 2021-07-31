@@ -2,58 +2,154 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AboveAverage extends StObject {
   
-  var AboveBelow: XlAboveBelow = js.native
+  var AboveBelow: XlAboveBelow
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  def AppliesTo(Address: String): Range = js.native
-  def AppliesTo(RowIndex: Double): Range = js.native
-  def AppliesTo(RowIndex: Double, ColumnIndex: Double): Range = js.native
+  def AppliesTo(Address: String): Range
+  def AppliesTo(RowIndex: Double): Range
+  def AppliesTo(RowIndex: Double, ColumnIndex: Double): Range
   @JSName("AppliesTo")
-  val AppliesTo_Original: Range = js.native
+  val AppliesTo_Original: Range
   
-  def Borders(Index: XlBordersIndex): Border = js.native
+  def Borders(Index: XlBordersIndex): Border
   @JSName("Borders")
-  val Borders_Original: Borders = js.native
+  val Borders_Original: Borders
   
-  var CalcFor: XlCalcFor = js.native
+  var CalcFor: XlCalcFor
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
   @JSName("Excel.AboveAverage_typekey")
-  var ExcelDotAboveAverage_typekey: AboveAverage = js.native
+  var ExcelDotAboveAverage_typekey: AboveAverage
   
-  val Font: typings.activexExcel.Excel.Font = js.native
+  val Font: typings.activexExcel.Excel.Font
   
-  val Interior: typings.activexExcel.Excel.Interior = js.native
+  val Interior: typings.activexExcel.Excel.Interior
   
-  def ModifyAppliesToRange(Range: Range): Unit = js.native
+  def ModifyAppliesToRange(Range: Range): Unit
   
-  var NumStdDev: Double = js.native
+  var NumStdDev: Double
   
-  var NumberFormat: String = js.native
+  var NumberFormat: String
   
-  val PTCondition: Boolean = js.native
+  val PTCondition: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Priority: Double = js.native
+  var Priority: Double
   
-  var ScopeType: XlPivotConditionScope = js.native
+  var ScopeType: XlPivotConditionScope
   
-  def SetFirstPriority(): Unit = js.native
+  def SetFirstPriority(): Unit
   
-  def SetLastPriority(): Unit = js.native
+  def SetLastPriority(): Unit
   
-  var StopIfTrue: Boolean = js.native
+  var StopIfTrue: Boolean
   
-  val Type: Double = js.native
+  val Type: Double
+}
+object AboveAverage {
+  
+  @scala.inline
+  def apply(
+    AboveBelow: XlAboveBelow,
+    Application: Application,
+    AppliesTo: Range,
+    Borders: Borders,
+    CalcFor: XlCalcFor,
+    Creator: XlCreator,
+    Delete: () => Unit,
+    ExcelDotAboveAverage_typekey: AboveAverage,
+    Font: Font,
+    Interior: Interior,
+    ModifyAppliesToRange: Range => Unit,
+    NumStdDev: Double,
+    NumberFormat: String,
+    PTCondition: Boolean,
+    Parent: js.Any,
+    Priority: Double,
+    ScopeType: XlPivotConditionScope,
+    SetFirstPriority: () => Unit,
+    SetLastPriority: () => Unit,
+    StopIfTrue: Boolean,
+    Type: Double
+  ): AboveAverage = {
+    val __obj = js.Dynamic.literal(AboveBelow = AboveBelow.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], AppliesTo = AppliesTo.asInstanceOf[js.Any], Borders = Borders.asInstanceOf[js.Any], CalcFor = CalcFor.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Delete = js.Any.fromFunction0(Delete), Font = Font.asInstanceOf[js.Any], Interior = Interior.asInstanceOf[js.Any], ModifyAppliesToRange = js.Any.fromFunction1(ModifyAppliesToRange), NumStdDev = NumStdDev.asInstanceOf[js.Any], NumberFormat = NumberFormat.asInstanceOf[js.Any], PTCondition = PTCondition.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], Priority = Priority.asInstanceOf[js.Any], ScopeType = ScopeType.asInstanceOf[js.Any], SetFirstPriority = js.Any.fromFunction0(SetFirstPriority), SetLastPriority = js.Any.fromFunction0(SetLastPriority), StopIfTrue = StopIfTrue.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    __obj.updateDynamic("Excel.AboveAverage_typekey")(ExcelDotAboveAverage_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[AboveAverage]
+  }
+  
+  @scala.inline
+  implicit class AboveAverageMutableBuilder[Self <: AboveAverage] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAboveBelow(value: XlAboveBelow): Self = StObject.set(x, "AboveBelow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setApplication(value: Application): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAppliesTo(value: Range): Self = StObject.set(x, "AppliesTo", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setBorders(value: Borders): Self = StObject.set(x, "Borders", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCalcFor(value: XlCalcFor): Self = StObject.set(x, "CalcFor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: XlCreator): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDelete(value: () => Unit): Self = StObject.set(x, "Delete", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setExcelDotAboveAverage_typekey(value: AboveAverage): Self = StObject.set(x, "Excel.AboveAverage_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFont(value: Font): Self = StObject.set(x, "Font", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInterior(value: Interior): Self = StObject.set(x, "Interior", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setModifyAppliesToRange(value: Range => Unit): Self = StObject.set(x, "ModifyAppliesToRange", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setNumStdDev(value: Double): Self = StObject.set(x, "NumStdDev", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNumberFormat(value: String): Self = StObject.set(x, "NumberFormat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPTCondition(value: Boolean): Self = StObject.set(x, "PTCondition", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPriority(value: Double): Self = StObject.set(x, "Priority", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScopeType(value: XlPivotConditionScope): Self = StObject.set(x, "ScopeType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSetFirstPriority(value: () => Unit): Self = StObject.set(x, "SetFirstPriority", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setSetLastPriority(value: () => Unit): Self = StObject.set(x, "SetLastPriority", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setStopIfTrue(value: Boolean): Self = StObject.set(x, "StopIfTrue", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: Double): Self = StObject.set(x, "Type", value.asInstanceOf[js.Any])
+  }
 }

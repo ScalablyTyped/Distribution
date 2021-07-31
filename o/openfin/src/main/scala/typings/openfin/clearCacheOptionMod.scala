@@ -2,21 +2,19 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clearCacheOptionMod {
   
-  @js.native
   trait ClearCacheOption extends StObject {
     
-    var appcache: js.UndefOr[Boolean] = js.native
+    var appcache: js.UndefOr[Boolean] = js.undefined
     
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
-    var cookies: js.UndefOr[Boolean] = js.native
+    var cookies: js.UndefOr[Boolean] = js.undefined
     
-    var localStorage: js.UndefOr[Boolean] = js.native
+    var localStorage: js.UndefOr[Boolean] = js.undefined
   }
   object ClearCacheOption {
     

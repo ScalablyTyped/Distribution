@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.googleapis.bigqueryV2Mod.bigqueryV2.SchemaDatasetReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetReference extends StObject {
   
-  var datasetReference: js.UndefOr[SchemaDatasetReference] = js.native
+  var datasetReference: js.UndefOr[SchemaDatasetReference] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
 }
 object DatasetReference {
   

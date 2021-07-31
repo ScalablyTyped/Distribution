@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLogEventsResponse extends StObject {
   
   /**
     * The events.
     */
-  var events: js.UndefOr[OutputLogEvents] = js.native
+  var events: js.UndefOr[OutputLogEvents] = js.undefined
   
   /**
     * The token for the next set of items in the backward direction. The token expires after 24 hours. This token is never null. If you have reached the end of the stream, it returns the same token you passed in.
     */
-  var nextBackwardToken: js.UndefOr[NextToken] = js.native
+  var nextBackwardToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The token for the next set of items in the forward direction. The token expires after 24 hours. If you have reached the end of the stream, it returns the same token you passed in.
     */
-  var nextForwardToken: js.UndefOr[NextToken] = js.native
+  var nextForwardToken: js.UndefOr[NextToken] = js.undefined
 }
 object GetLogEventsResponse {
   

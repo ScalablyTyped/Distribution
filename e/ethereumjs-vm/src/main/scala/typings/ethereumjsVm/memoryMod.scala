@@ -3,25 +3,25 @@ package typings.ethereumjsVm
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoryMod {
   
   @JSImport("ethereumjs-vm/dist/evm/memory", JSImport.Default)
   @js.native
-  class default () extends Memory
-  
-  @js.native
-  trait Memory extends StObject {
+  class default ()
+    extends StObject
+       with Memory {
     
+    /* CompleteClass */
     var _store: js.Array[Double] = js.native
     
     /**
       * Extends the memory given an offset and size. Rounds extended
       * memory to word-size.
       */
-    def extend(offset: Double, size: Double): Unit = js.native
+    /* CompleteClass */
+    override def extend(offset: Double, size: Double): Unit = js.native
     
     /**
       * Reads a slice of memory from `offset` till `offset + size` as a `Buffer`.
@@ -29,7 +29,8 @@ object memoryMod {
       * @param offset - Starting position
       * @param size - How many bytes to read
       */
-    def read(offset: Double, size: Double): Buffer = js.native
+    /* CompleteClass */
+    override def read(offset: Double, size: Double): Buffer = js.native
     
     /**
       * Writes a byte array with length `size` to memory, starting from `offset`.
@@ -37,7 +38,35 @@ object memoryMod {
       * @param size - How many bytes to write
       * @param value - Value
       */
-    def write(offset: Double, size: Double, value: Buffer): Unit = js.native
+    /* CompleteClass */
+    override def write(offset: Double, size: Double, value: Buffer): Unit = js.native
+  }
+  
+  trait Memory extends StObject {
+    
+    var _store: js.Array[Double]
+    
+    /**
+      * Extends the memory given an offset and size. Rounds extended
+      * memory to word-size.
+      */
+    def extend(offset: Double, size: Double): Unit
+    
+    /**
+      * Reads a slice of memory from `offset` till `offset + size` as a `Buffer`.
+      * It fills up the difference between memory's length and `offset + size` with zeros.
+      * @param offset - Starting position
+      * @param size - How many bytes to read
+      */
+    def read(offset: Double, size: Double): Buffer
+    
+    /**
+      * Writes a byte array with length `size` to memory, starting from `offset`.
+      * @param offset - Starting position
+      * @param size - How many bytes to write
+      * @param value - Value
+      */
+    def write(offset: Double, size: Double, value: Buffer): Unit
   }
   object Memory {
     

@@ -2,17 +2,15 @@ package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationBaseEvent extends StObject {
   
-  var topic: String = js.native
+  var topic: String
   
-  var `type`: OpenFinApplicationEventType = js.native
+  var `type`: OpenFinApplicationEventType
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object ApplicationBaseEvent {
   

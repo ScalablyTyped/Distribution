@@ -2,21 +2,21 @@ package typings.elasticsearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TasksCancelParams extends GenericParams {
+trait TasksCancelParams
+  extends StObject
+     with GenericParams {
   
-  var actions: js.UndefOr[NameList] = js.native
+  var actions: js.UndefOr[NameList] = js.undefined
   
-  var nodeId: js.UndefOr[NameList] = js.native
+  var nodeId: js.UndefOr[NameList] = js.undefined
   
-  var parentNode: js.UndefOr[String] = js.native
+  var parentNode: js.UndefOr[String] = js.undefined
   
-  var parentTask: js.UndefOr[String] = js.native
+  var parentTask: js.UndefOr[String] = js.undefined
   
-  var taskId: js.UndefOr[String] = js.native
+  var taskId: js.UndefOr[String] = js.undefined
 }
 object TasksCancelParams {
   

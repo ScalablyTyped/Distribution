@@ -18,7 +18,6 @@ import typings.std.HTMLDivElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
@@ -79,34 +78,33 @@ object notificationMod {
   type HolderReadyCallback = js.Function2[/* div */ HTMLDivElement, /* noticeProps */ NoticePropskeyKey, Unit]
   
   /* Inlined parent std.Omit<rc-notification.rc-notification/es/Notice.NoticeProps, 'prefixCls' | 'children' | 'noticeKey' | 'onClose'> */
-  @js.native
   trait NoticeContent extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closable: js.UndefOr[Boolean] = js.native
+    var closable: js.UndefOr[Boolean] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
-    var duration: js.UndefOr[Double | Null] = js.native
+    var duration: js.UndefOr[Double | Null] = js.undefined
     
-    var holder: js.UndefOr[HTMLDivElement] = js.native
+    var holder: js.UndefOr[HTMLDivElement] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var props: js.UndefOr[DivProps] = js.native
+    var props: js.UndefOr[DivProps] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var updateMark: js.UndefOr[String] = js.native
+    var updateMark: js.UndefOr[String] = js.undefined
   }
   object NoticeContent {
     
@@ -220,18 +218,17 @@ object notificationMod {
     def remove(removeKey: Key): Unit = js.native
   }
   
-  @js.native
   trait NotificationInstance extends StObject {
     
-    var component: Notification = js.native
+    var component: Notification
     
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
-    var notice: NoticeFunc = js.native
+    var notice: NoticeFunc
     
-    def removeNotice(key: Key): Unit = js.native
+    def removeNotice(key: Key): Unit
     
-    def useNotification(): js.Tuple2[NoticeFunc, ReactElement] = js.native
+    def useNotification(): js.Tuple2[NoticeFunc, ReactElement]
   }
   object NotificationInstance {
     
@@ -267,22 +264,21 @@ object notificationMod {
     }
   }
   
-  @js.native
   trait NotificationProps extends StObject {
     
-    var animation: js.UndefOr[String | js.Object] = js.native
+    var animation: js.UndefOr[String | js.Object] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeIcon: js.UndefOr[ReactNode] = js.native
+    var closeIcon: js.UndefOr[ReactNode] = js.undefined
     
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
   }
   object NotificationProps {
     
@@ -339,10 +335,9 @@ object notificationMod {
     }
   }
   
-  @js.native
   trait NotificationState extends StObject {
     
-    var notices: js.Array[HolderCallback] = js.native
+    var notices: js.Array[HolderCallback]
   }
   object NotificationState {
     

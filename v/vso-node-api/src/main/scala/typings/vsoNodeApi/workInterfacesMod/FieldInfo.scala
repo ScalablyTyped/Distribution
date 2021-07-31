@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FieldInfo extends StObject {
   
   /**
     * The additional field display name
     */
-  var displayName: String = js.native
+  var displayName: String
   
   /**
     * The additional field type
     */
-  var fieldType: FieldType = js.native
+  var fieldType: FieldType
   
   /**
     * Indicates if the field definition is for an identity field.
     */
-  var isIdentity: Boolean = js.native
+  var isIdentity: Boolean
   
   /**
     * The additional field reference name
     */
-  var referenceName: String = js.native
+  var referenceName: String
 }
 object FieldInfo {
   

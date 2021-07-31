@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides special properties and methods (beyond those of the regular object HTMLElement interface it also has available to it by inheritance) for manipulating the layout and presentation of <area> elements. */
 @js.native
 trait HTMLAreaElement
-  extends HTMLElement
+  extends StObject
+     with HTMLElement
      with HTMLHyperlinkElementUtils {
   
   /* InferMemberOverrides */

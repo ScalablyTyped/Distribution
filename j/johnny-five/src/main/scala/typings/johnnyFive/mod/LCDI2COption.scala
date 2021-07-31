@@ -2,15 +2,15 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LCDI2COption extends LCDGeneralOption {
+trait LCDI2COption
+  extends StObject
+     with LCDGeneralOption {
   
-  var backlight: js.UndefOr[Double] = js.native
+  var backlight: js.UndefOr[Double] = js.undefined
   
-  var controller: String = js.native
+  var controller: String
 }
 object LCDI2COption {
   

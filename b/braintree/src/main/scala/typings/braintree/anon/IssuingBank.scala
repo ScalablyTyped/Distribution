@@ -2,15 +2,13 @@ package typings.braintree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuingBank extends StObject {
   
-  var CountryOfIssuance: String = js.native
+  var CountryOfIssuance: String
   
-  var IssuingBank: String = js.native
+  var IssuingBank: String
 }
 object IssuingBank {
   

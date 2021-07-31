@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an Empty. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new Empty.
   * @param [properties] Properties to set
   */
-class Empty () extends IEmpty {
+class Empty ()
+  extends StObject
+     with IEmpty {
   def this(properties: IEmpty) = this()
   
   /**
@@ -28,18 +29,20 @@ class Empty () extends IEmpty {
 }
 object Empty {
   
+  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Empty instance using the specified properties.
     * @param [properties] Properties to set
     * @returns Empty instance
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.create")
-  @js.native
-  def create(): Empty = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.create")
-  @js.native
-  def create(properties: IEmpty): Empty = js.native
+  @scala.inline
+  def create(): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Empty]
+  @scala.inline
+  def create(properties: IEmpty): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[Empty]
   
   /**
     * Decodes an Empty message from the specified reader or buffer.
@@ -50,18 +53,14 @@ object Empty {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.decode")
-  @js.native
-  def decode(reader: Reader): Empty = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): Empty = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.decode")
-  @js.native
-  def decode(reader: Uint8Array): Empty = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): Empty = js.native
+  @scala.inline
+  def decode(reader: Reader): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Empty]
+  @scala.inline
+  def decode(reader: Reader, length: Double): Empty = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Empty]
+  @scala.inline
+  def decode(reader: Uint8Array): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[Empty]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): Empty = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Empty]
   
   /**
     * Decodes an Empty message from the specified reader or buffer, length delimited.
@@ -71,12 +70,10 @@ object Empty {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): Empty = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): Empty = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Empty]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[Empty]
   
   /**
     * Encodes the specified Empty message. Does not implicitly {@link google.protobuf.Empty.verify|verify} messages.
@@ -85,12 +82,10 @@ object Empty {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.encode")
-  @js.native
-  def encode(message: IEmpty): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.encode")
-  @js.native
-  def encode(message: IEmpty, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IEmpty): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IEmpty, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified Empty message, length delimited. Does not implicitly {@link google.protobuf.Empty.verify|verify} messages.
@@ -99,12 +94,10 @@ object Empty {
     * @returns Writer
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEmpty): Writer = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEmpty, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IEmpty): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IEmpty, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an Empty message from a plain object. Also converts values to their respective internal types.
@@ -112,9 +105,8 @@ object Empty {
     * @returns Empty
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): Empty = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): Empty = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Empty]
   
   /**
     * Creates a plain object from an Empty message. Also converts values to other types if specified.
@@ -123,12 +115,10 @@ object Empty {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.toObject")
-  @js.native
-  def toObject(message: Empty): StringDictionary[js.Any] = js.native
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.toObject")
-  @js.native
-  def toObject(message: Empty, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: Empty): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: Empty, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an Empty message.
@@ -136,7 +126,6 @@ object Empty {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("google-gax/build/protos/operations", "google.protobuf.Empty.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

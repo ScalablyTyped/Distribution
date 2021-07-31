@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mergeListContextMod extends Shortcut {
@@ -13,10 +12,9 @@ object mergeListContextMod extends Shortcut {
   @js.native
   val default: ComponentType[MergeWithListContextProps] = js.native
   
-  @js.native
   trait MergeWithListContextProps extends StObject {
     
-    var dense: js.UndefOr[Boolean] = js.native
+    var dense: js.UndefOr[Boolean] = js.undefined
   }
   object MergeWithListContextProps {
     

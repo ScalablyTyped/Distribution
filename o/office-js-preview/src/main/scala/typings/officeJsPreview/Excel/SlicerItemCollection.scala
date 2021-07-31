@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.10]
   */
 @js.native
-trait SlicerItemCollection extends ClientObject {
+trait SlicerItemCollection
+  extends StObject
+     with ClientObject {
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -67,7 +68,7 @@ trait SlicerItemCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): SlicerItemCollection = js.native
-  def load(options: SlicerItemCollectionLoadOptions with CollectionLoadOptions): SlicerItemCollection = js.native
+  def load(options: SlicerItemCollectionLoadOptions & CollectionLoadOptions): SlicerItemCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): SlicerItemCollection = js.native
   def load(propertyNames: String): SlicerItemCollection = js.native
   def load(propertyNames: js.Array[String]): SlicerItemCollection = js.native

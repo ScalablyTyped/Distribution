@@ -2,27 +2,27 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FileSaveBinaryInformation extends ClientValueObject {
+trait FileSaveBinaryInformation
+  extends StObject
+     with ClientValueObject {
   
-  def get_checkRequiredFields(): Boolean = js.native
+  def get_checkRequiredFields(): Boolean
   
-  def get_content(): Base64EncodedByteArray = js.native
+  def get_content(): Base64EncodedByteArray
   
-  def get_eTag(): String = js.native
+  def get_eTag(): String
   
-  def get_fieldValues(): js.Any = js.native
+  def get_fieldValues(): js.Any
   
-  def set_checkRequiredFields(value: Boolean): Unit = js.native
+  def set_checkRequiredFields(value: Boolean): Unit
   
-  def set_content(value: Base64EncodedByteArray): Unit = js.native
+  def set_content(value: Base64EncodedByteArray): Unit
   
-  def set_eTag(value: String): Unit = js.native
+  def set_eTag(value: String): Unit
   
-  def set_fieldValues(value: js.Any): Unit = js.native
+  def set_fieldValues(value: js.Any): Unit
 }
 object FileSaveBinaryInformation {
   

@@ -3,15 +3,15 @@ package typings.mongorito.mod
 import typings.mongorito.mod.ActionTypes.CREATED
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreatedAction extends Action {
+trait CreatedAction
+  extends StObject
+     with Action {
   
-  var id: js.Object = js.native
+  var id: js.Object
   
-  var `type`: CREATED = js.native
+  var `type`: CREATED
 }
 object CreatedAction {
   

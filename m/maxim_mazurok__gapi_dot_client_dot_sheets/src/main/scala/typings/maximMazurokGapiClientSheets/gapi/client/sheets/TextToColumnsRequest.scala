@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextToColumnsRequest extends StObject {
   
   /** The delimiter to use. Used only if delimiterType is CUSTOM. */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /** The delimiter type to use. */
-  var delimiterType: js.UndefOr[String] = js.native
+  var delimiterType: js.UndefOr[String] = js.undefined
   
   /** The source data range. This must span exactly one column. */
-  var source: js.UndefOr[GridRange] = js.native
+  var source: js.UndefOr[GridRange] = js.undefined
 }
 object TextToColumnsRequest {
   

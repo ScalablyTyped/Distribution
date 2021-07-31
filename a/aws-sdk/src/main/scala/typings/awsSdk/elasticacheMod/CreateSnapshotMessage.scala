@@ -2,31 +2,29 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateSnapshotMessage extends StObject {
   
   /**
     * The identifier of an existing cluster. The snapshot is created from this cluster.
     */
-  var CacheClusterId: js.UndefOr[String] = js.native
+  var CacheClusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the KMS key used to encrypt the snapshot.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * The identifier of an existing replication group. The snapshot is created from this replication group.
     */
-  var ReplicationGroupId: js.UndefOr[String] = js.native
+  var ReplicationGroupId: js.UndefOr[String] = js.undefined
   
   /**
     * A name for the snapshot being created.
     */
-  var SnapshotName: String = js.native
+  var SnapshotName: String
 }
 object CreateSnapshotMessage {
   

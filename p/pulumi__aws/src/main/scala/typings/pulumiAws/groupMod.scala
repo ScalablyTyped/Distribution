@@ -16,7 +16,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupMod {
@@ -221,6 +220,10 @@ object groupMod {
   /* static members */
   object Group {
     
+    @JSImport("@pulumi/aws/autoscaling/group", "Group")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Group resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -230,52 +233,46 @@ object groupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/autoscaling/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Group = js.native
-    @JSImport("@pulumi/aws/autoscaling/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Group = js.native
-    @JSImport("@pulumi/aws/autoscaling/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState): Group = js.native
-    @JSImport("@pulumi/aws/autoscaling/group", "Group.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Group]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupState, opts: CustomResourceOptions): Group = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Group]
     
     /**
       * Returns true if the given object is an instance of Group.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/autoscaling/group", "Group.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/group.Group */ Boolean]
   }
   
-  @js.native
   trait GroupArgs extends StObject {
     
     /**
       * A list of one or more availability zones for the group. Used for EC2-Classic and default subnets when not specified with `vpcZoneIdentifier` argument. Conflicts with `vpcZoneIdentifier`.
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
       */
-    val defaultCooldown: js.UndefOr[Input[Double]] = js.native
+    val defaultCooldown: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of Amazon EC2 instances that
       * should be running in the group. (See also Waiting for
       * Capacity below.)
       */
-    val desiredCapacity: js.UndefOr[Input[Double]] = js.native
+    val desiredCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
       */
-    val enabledMetrics: js.UndefOr[Input[js.Array[Input[Metric]]]] = js.native
+    val enabledMetrics: js.UndefOr[Input[js.Array[Input[Metric]]]] = js.undefined
     
     /**
       * Allows deleting the autoscaling group without waiting
@@ -284,17 +281,17 @@ object groupMod {
       * drains all the instances before deleting the group.  This bypasses that
       * behavior and potentially leaves resources dangling.
       */
-    val forceDelete: js.UndefOr[Input[Boolean]] = js.native
+    val forceDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Time (in seconds) after instance comes into service before checking health.
       */
-    val healthCheckGracePeriod: js.UndefOr[Input[Double]] = js.native
+    val healthCheckGracePeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * "EC2" or "ELB". Controls how health checking is done.
       */
-    val healthCheckType: js.UndefOr[Input[String]] = js.native
+    val healthCheckType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more
@@ -309,38 +306,38 @@ object groupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.autoscaling.GroupInitialLifecycleHook]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the launch configuration to use.
       */
-    val launchConfiguration: js.UndefOr[Input[String | LaunchConfiguration]] = js.native
+    val launchConfiguration: js.UndefOr[Input[String | LaunchConfiguration]] = js.undefined
     
     /**
       * Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
       */
-    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupLaunchTemplate]] = js.native
+    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupLaunchTemplate]] = js.undefined
     
     /**
       * A list of elastic load balancer names to add to the autoscaling
       * group names. Only valid for classic load balancers. For ALBs, use `targetGroupArns` instead.
       */
-    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
       */
-    val maxInstanceLifetime: js.UndefOr[Input[Double]] = js.native
+    val maxInstanceLifetime: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum size of the auto scale group.
       */
-    val maxSize: Input[Double] = js.native
+    val maxSize: Input[Double]
     
     /**
       * The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
       */
-    val metricsGranularity: js.UndefOr[Input[String | MetricsGranularity]] = js.native
+    val metricsGranularity: js.UndefOr[Input[String | MetricsGranularity]] = js.undefined
     
     /**
       * Setting this causes this provider to wait for
@@ -348,77 +345,77 @@ object groupMod {
       * ELB only on creation. Updates will not wait on ELB instance number changes.
       * (See also Waiting for Capacity below.)
       */
-    val minElbCapacity: js.UndefOr[Input[Double]] = js.native
+    val minElbCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The minimum size of the auto scale group.
       * (See also Waiting for Capacity below.)
       */
-    val minSize: Input[Double] = js.native
+    val minSize: Input[Double]
     
     /**
       * Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
       */
-    val mixedInstancesPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupMixedInstancesPolicy]] = js.native
+    val mixedInstancesPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupMixedInstancesPolicy]] = js.undefined
     
     /**
       * The name of the auto scaling group. By default generated by this provider.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified
       * prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the placement group into which you'll launch your instances, if any.
       */
-    val placementGroup: js.UndefOr[Input[String | PlacementGroup]] = js.native
+    val placementGroup: js.UndefOr[Input[String | PlacementGroup]] = js.undefined
     
     /**
       * Allows setting instance protection. The
       * autoscaling group will not select instances with this setting for termination
       * during scale in events.
       */
-    val protectFromScaleIn: js.UndefOr[Input[Boolean]] = js.native
+    val protectFromScaleIn: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the service-linked role that the ASG will use to call other AWS services
       */
-    val serviceLinkedRoleArn: js.UndefOr[Input[String]] = js.native
+    val serviceLinkedRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
       * Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
       */
-    val suspendedProcesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val suspendedProcesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block(s) containing resource tags. Conflicts with `tags`. Documented below.
       */
-    val tags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.GroupTag]]]] = js.native
+    val tags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.GroupTag]]]] = js.undefined
     
     /**
       * Set of maps containing resource tags. Conflicts with `tag`. Documented below.
       */
-    val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[Input[String]]]]]] = js.native
+    val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[Input[String]]]]]] = js.undefined
     
     /**
       * A set of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
       */
-    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
       */
-    val terminationPolicies: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val terminationPolicies: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of subnet IDs to launch resources in. Subnets automatically determine which availability zones the group will reside. Conflicts with `availabilityZones`.
       */
-    val vpcZoneIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcZoneIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A maximum
@@ -427,7 +424,7 @@ object groupMod {
       * for Capacity below.) Setting this to "0" causes
       * this provider to skip all Capacity Waiting behavior.
       */
-    val waitForCapacityTimeout: js.UndefOr[Input[String]] = js.native
+    val waitForCapacityTimeout: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Setting this will cause this provider to wait
@@ -436,7 +433,7 @@ object groupMod {
       * precedence over `minElbCapacity` behavior.)
       * (See also Waiting for Capacity below.)
       */
-    val waitForElbCapacity: js.UndefOr[Input[Double]] = js.native
+    val waitForElbCapacity: js.UndefOr[Input[Double]] = js.undefined
   }
   object GroupArgs {
     
@@ -659,35 +656,34 @@ object groupMod {
     }
   }
   
-  @js.native
   trait GroupState extends StObject {
     
     /**
       * The ARN for this AutoScaling Group
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of one or more availability zones for the group. Used for EC2-Classic and default subnets when not specified with `vpcZoneIdentifier` argument. Conflicts with `vpcZoneIdentifier`.
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The amount of time, in seconds, after a scaling activity completes before another scaling activity can start.
       */
-    val defaultCooldown: js.UndefOr[Input[Double]] = js.native
+    val defaultCooldown: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of Amazon EC2 instances that
       * should be running in the group. (See also Waiting for
       * Capacity below.)
       */
-    val desiredCapacity: js.UndefOr[Input[Double]] = js.native
+    val desiredCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of metrics to collect. The allowed values are `GroupDesiredCapacity`, `GroupInServiceCapacity`, `GroupPendingCapacity`, `GroupMinSize`, `GroupMaxSize`, `GroupInServiceInstances`, `GroupPendingInstances`, `GroupStandbyInstances`, `GroupStandbyCapacity`, `GroupTerminatingCapacity`, `GroupTerminatingInstances`, `GroupTotalCapacity`, `GroupTotalInstances`.
       */
-    val enabledMetrics: js.UndefOr[Input[js.Array[Input[Metric]]]] = js.native
+    val enabledMetrics: js.UndefOr[Input[js.Array[Input[Metric]]]] = js.undefined
     
     /**
       * Allows deleting the autoscaling group without waiting
@@ -696,17 +692,17 @@ object groupMod {
       * drains all the instances before deleting the group.  This bypasses that
       * behavior and potentially leaves resources dangling.
       */
-    val forceDelete: js.UndefOr[Input[Boolean]] = js.native
+    val forceDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Time (in seconds) after instance comes into service before checking health.
       */
-    val healthCheckGracePeriod: js.UndefOr[Input[Double]] = js.native
+    val healthCheckGracePeriod: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * "EC2" or "ELB". Controls how health checking is done.
       */
-    val healthCheckType: js.UndefOr[Input[String]] = js.native
+    val healthCheckType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more
@@ -721,38 +717,38 @@ object groupMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.autoscaling.GroupInitialLifecycleHook]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the launch configuration to use.
       */
-    val launchConfiguration: js.UndefOr[Input[String | LaunchConfiguration]] = js.native
+    val launchConfiguration: js.UndefOr[Input[String | LaunchConfiguration]] = js.undefined
     
     /**
       * Nested argument containing launch template settings along with the overrides to specify multiple instance types and weights. Defined below.
       */
-    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupLaunchTemplate]] = js.native
+    val launchTemplate: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupLaunchTemplate]] = js.undefined
     
     /**
       * A list of elastic load balancer names to add to the autoscaling
       * group names. Only valid for classic load balancers. For ALBs, use `targetGroupArns` instead.
       */
-    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The maximum amount of time, in seconds, that an instance can be in service, values must be either equal to 0 or between 604800 and 31536000 seconds.
       */
-    val maxInstanceLifetime: js.UndefOr[Input[Double]] = js.native
+    val maxInstanceLifetime: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The maximum size of the auto scale group.
       */
-    val maxSize: js.UndefOr[Input[Double]] = js.native
+    val maxSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The granularity to associate with the metrics to collect. The only valid value is `1Minute`. Default is `1Minute`.
       */
-    val metricsGranularity: js.UndefOr[Input[String | MetricsGranularity]] = js.native
+    val metricsGranularity: js.UndefOr[Input[String | MetricsGranularity]] = js.undefined
     
     /**
       * Setting this causes this provider to wait for
@@ -760,77 +756,77 @@ object groupMod {
       * ELB only on creation. Updates will not wait on ELB instance number changes.
       * (See also Waiting for Capacity below.)
       */
-    val minElbCapacity: js.UndefOr[Input[Double]] = js.native
+    val minElbCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The minimum size of the auto scale group.
       * (See also Waiting for Capacity below.)
       */
-    val minSize: js.UndefOr[Input[Double]] = js.native
+    val minSize: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Configuration block containing settings to define launch targets for Auto Scaling groups. Defined below.
       */
-    val mixedInstancesPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupMixedInstancesPolicy]] = js.native
+    val mixedInstancesPolicy: js.UndefOr[Input[typings.pulumiAws.inputMod.autoscaling.GroupMixedInstancesPolicy]] = js.undefined
     
     /**
       * The name of the auto scaling group. By default generated by this provider.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Creates a unique name beginning with the specified
       * prefix. Conflicts with `name`.
       */
-    val namePrefix: js.UndefOr[Input[String]] = js.native
+    val namePrefix: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the placement group into which you'll launch your instances, if any.
       */
-    val placementGroup: js.UndefOr[Input[String | PlacementGroup]] = js.native
+    val placementGroup: js.UndefOr[Input[String | PlacementGroup]] = js.undefined
     
     /**
       * Allows setting instance protection. The
       * autoscaling group will not select instances with this setting for termination
       * during scale in events.
       */
-    val protectFromScaleIn: js.UndefOr[Input[Boolean]] = js.native
+    val protectFromScaleIn: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN of the service-linked role that the ASG will use to call other AWS services
       */
-    val serviceLinkedRoleArn: js.UndefOr[Input[String]] = js.native
+    val serviceLinkedRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of processes to suspend for the AutoScaling Group. The allowed values are `Launch`, `Terminate`, `HealthCheck`, `ReplaceUnhealthy`, `AZRebalance`, `AlarmNotification`, `ScheduledActions`, `AddToLoadBalancer`.
       * Note that if you suspend either the `Launch` or `Terminate` process types, it can prevent your autoscaling group from functioning properly.
       */
-    val suspendedProcesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val suspendedProcesses: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Configuration block(s) containing resource tags. Conflicts with `tags`. Documented below.
       */
-    val tags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.GroupTag]]]] = js.native
+    val tags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.autoscaling.GroupTag]]]] = js.undefined
     
     /**
       * Set of maps containing resource tags. Conflicts with `tag`. Documented below.
       */
-    val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[Input[String]]]]]] = js.native
+    val tagsCollection: js.UndefOr[Input[js.Array[Input[StringDictionary[Input[String]]]]]] = js.undefined
     
     /**
       * A set of `aws.alb.TargetGroup` ARNs, for use with Application or Network Load Balancing.
       */
-    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of policies to decide how the instances in the auto scale group should be terminated. The allowed values are `OldestInstance`, `NewestInstance`, `OldestLaunchConfiguration`, `ClosestToNextInstanceHour`, `OldestLaunchTemplate`, `AllocationStrategy`, `Default`.
       */
-    val terminationPolicies: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val terminationPolicies: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of subnet IDs to launch resources in. Subnets automatically determine which availability zones the group will reside. Conflicts with `availabilityZones`.
       */
-    val vpcZoneIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val vpcZoneIdentifiers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A maximum
@@ -839,7 +835,7 @@ object groupMod {
       * for Capacity below.) Setting this to "0" causes
       * this provider to skip all Capacity Waiting behavior.
       */
-    val waitForCapacityTimeout: js.UndefOr[Input[String]] = js.native
+    val waitForCapacityTimeout: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Setting this will cause this provider to wait
@@ -848,7 +844,7 @@ object groupMod {
       * precedence over `minElbCapacity` behavior.)
       * (See also Waiting for Capacity below.)
       */
-    val waitForElbCapacity: js.UndefOr[Input[Double]] = js.native
+    val waitForElbCapacity: js.UndefOr[Input[Double]] = js.undefined
   }
   object GroupState {
     

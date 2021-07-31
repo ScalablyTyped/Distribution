@@ -2,23 +2,21 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Marker extends StObject {
   
   /**
     * 该图例项 marker 的填充颜色
     */
-  var fill: String = js.native
+  var fill: String
   
-  var marker: js.UndefOr[String | js.Function] = js.native
+  var marker: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * 图例项的文本内容
     */
-  var value: String = js.native
+  var value: String
 }
 object Marker {
   

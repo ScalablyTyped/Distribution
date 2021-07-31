@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.1]
   */
 @js.native
-trait TableRowCollection extends ClientObject {
+trait TableRowCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds one or more rows to the table. The return object will be the top of the newly added row(s).
@@ -39,15 +40,15 @@ trait TableRowCollection extends ClientObject {
     * @param values Optional. A 2-dimensional array of unformatted values of the table row.
     */
   def add(): TableRow = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: String): TableRow = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: js.Array[js.Array[Boolean | String | Double]]): TableRow = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: Boolean): TableRow = js.native
-  def add(index: js.UndefOr[scala.Nothing], values: Double): TableRow = js.native
   def add(index: Double): TableRow = js.native
   def add(index: Double, values: String): TableRow = js.native
   def add(index: Double, values: js.Array[js.Array[Boolean | String | Double]]): TableRow = js.native
   def add(index: Double, values: Boolean): TableRow = js.native
   def add(index: Double, values: Double): TableRow = js.native
+  def add(index: Unit, values: String): TableRow = js.native
+  def add(index: Unit, values: js.Array[js.Array[Boolean | String | Double]]): TableRow = js.native
+  def add(index: Unit, values: Boolean): TableRow = js.native
+  def add(index: Unit, values: Double): TableRow = js.native
   
   /** The request context associated with the object. This connects the add-in's process to the Office host application's process. */
   @JSName("context")
@@ -91,7 +92,7 @@ trait TableRowCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): TableRowCollection = js.native
-  def load(options: TableRowCollectionLoadOptions with CollectionLoadOptions): TableRowCollection = js.native
+  def load(options: TableRowCollectionLoadOptions & CollectionLoadOptions): TableRowCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): TableRowCollection = js.native
   def load(propertyNames: String): TableRowCollection = js.native
   def load(propertyNames: js.Array[String]): TableRowCollection = js.native

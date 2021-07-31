@@ -10,43 +10,43 @@ import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.dir
 import typings.svgSpritemapWebpackPlugin.svgSpritemapWebpackPluginStrings.module
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("svg-spritemap-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends SVGSpritemapPlugin {
+  class ^ ()
+    extends StObject
+       with SVGSpritemapPlugin {
     def this(pattern: String) = this()
     def this(pattern: js.Array[String]) = this()
-    def this(pattern: js.UndefOr[scala.Nothing], options: Options) = this()
     def this(pattern: String, options: Options) = this()
     def this(pattern: js.Array[String], options: Options) = this()
+    def this(pattern: Unit, options: Options) = this()
   }
   
   /**
     * @see {@link https://github.com/cascornelissen/svg-spritemap-webpack-plugin/blob/master/docs/options.md#options}
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * The input object contains the configuration for the input of the plugin.
       */
-    var input: js.UndefOr[typings.svgSpritemapWebpackPlugin.anon.Options] = js.native
+    var input: js.UndefOr[typings.svgSpritemapWebpackPlugin.anon.Options] = js.undefined
     
     /**
       * The output object contains the configuration for the main output (SVG) of the plugin.
       */
-    var output: js.UndefOr[Chunk] = js.native
+    var output: js.UndefOr[Chunk] = js.undefined
     
     /**
       * The sprite object contains the configuration for the generated sprites in the output spritemap.
       */
-    var sprite: js.UndefOr[Generate] = js.native
+    var sprite: js.UndefOr[Generate] = js.undefined
     
-    var styles: js.UndefOr[Boolean | String | Filename] = js.native
+    var styles: js.UndefOr[Boolean | String | Filename] = js.undefined
   }
   object Options {
     
@@ -86,7 +86,9 @@ object mod {
   }
   
   @js.native
-  trait SVGSpritemapPlugin extends Plugin {
+  trait SVGSpritemapPlugin
+    extends StObject
+       with Plugin {
     
     val directories: js.Array[String] = js.native
     
@@ -109,9 +111,9 @@ object mod {
     /* private */ def hashFilename(fileaname: String, hashes: js.Array[String]): String = js.native
     
     /* private */ def rewriteAssetsHashes(filename: String): Assets = js.native
-    /* private */ def rewriteAssetsHashes(filename: String, assets: js.UndefOr[scala.Nothing], hashes: js.Array[String]): Assets = js.native
     /* private */ def rewriteAssetsHashes(filename: String, assets: js.Object): Assets = js.native
     /* private */ def rewriteAssetsHashes(filename: String, assets: js.Object, hashes: js.Array[String]): Assets = js.native
+    /* private */ def rewriteAssetsHashes(filename: String, assets: Unit, hashes: js.Array[String]): Assets = js.native
     
     /* private */ def updateDependencies(): Unit = js.native
     

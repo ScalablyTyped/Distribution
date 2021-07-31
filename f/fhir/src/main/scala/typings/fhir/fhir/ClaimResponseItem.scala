@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Line items
   */
-@js.native
-trait ClaimResponseItem extends BackboneElement {
+trait ClaimResponseItem
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'noteNumber'.
     */
-  var _noteNumber: js.UndefOr[js.Array[Element]] = js.native
+  var _noteNumber: js.UndefOr[js.Array[Element]] = js.undefined
   
   /**
     * Contains extended information for property 'sequenceLinkId'.
     */
-  var _sequenceLinkId: js.UndefOr[Element] = js.native
+  var _sequenceLinkId: js.UndefOr[Element] = js.undefined
   
   /**
     * Adjudication details
     */
-  var adjudication: js.UndefOr[js.Array[ClaimResponseItemAdjudication]] = js.native
+  var adjudication: js.UndefOr[js.Array[ClaimResponseItemAdjudication]] = js.undefined
   
   /**
     * Detail line items
     */
-  var detail: js.UndefOr[js.Array[ClaimResponseItemDetail]] = js.native
+  var detail: js.UndefOr[js.Array[ClaimResponseItemDetail]] = js.undefined
   
   /**
     * List of note numbers which apply
     */
-  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.native
+  var noteNumber: js.UndefOr[js.Array[positiveInt]] = js.undefined
   
   /**
     * Service instance
     */
-  var sequenceLinkId: positiveInt = js.native
+  var sequenceLinkId: positiveInt
 }
 object ClaimResponseItem {
   

@@ -2,41 +2,39 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderOptions extends StObject {
   
-  var change: js.UndefOr[js.Function1[/* e */ SliderChangeEvent, Unit]] = js.native
+  var change: js.UndefOr[js.Function1[/* e */ SliderChangeEvent, Unit]] = js.undefined
   
-  var decreaseButtonTitle: js.UndefOr[String] = js.native
+  var decreaseButtonTitle: js.UndefOr[String] = js.undefined
   
-  var dragHandleTitle: js.UndefOr[String] = js.native
+  var dragHandleTitle: js.UndefOr[String] = js.undefined
   
-  var increaseButtonTitle: js.UndefOr[String] = js.native
+  var increaseButtonTitle: js.UndefOr[String] = js.undefined
   
-  var largeStep: js.UndefOr[Double] = js.native
+  var largeStep: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
-  var showButtons: js.UndefOr[Boolean] = js.native
+  var showButtons: js.UndefOr[Boolean] = js.undefined
   
-  var slide: js.UndefOr[js.Function1[/* e */ SliderSlideEvent, Unit]] = js.native
+  var slide: js.UndefOr[js.Function1[/* e */ SliderSlideEvent, Unit]] = js.undefined
   
-  var smallStep: js.UndefOr[Double] = js.native
+  var smallStep: js.UndefOr[Double] = js.undefined
   
-  var tickPlacement: js.UndefOr[String] = js.native
+  var tickPlacement: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[SliderTooltip] = js.native
+  var tooltip: js.UndefOr[SliderTooltip] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object SliderOptions {
   

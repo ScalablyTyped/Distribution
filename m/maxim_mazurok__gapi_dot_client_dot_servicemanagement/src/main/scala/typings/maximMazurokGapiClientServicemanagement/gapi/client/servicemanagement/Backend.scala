@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientServicemanagement.gapi.client.servicemanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backend extends StObject {
   
   /** A list of API backend rules that apply to individual API methods. **NOTE:** All service configuration rules follow "last one wins" order. */
-  var rules: js.UndefOr[js.Array[BackendRule]] = js.native
+  var rules: js.UndefOr[js.Array[BackendRule]] = js.undefined
 }
 object Backend {
   

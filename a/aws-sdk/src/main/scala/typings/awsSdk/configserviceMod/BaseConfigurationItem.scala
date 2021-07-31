@@ -2,81 +2,79 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseConfigurationItem extends StObject {
   
   /**
     * The 12-digit AWS account ID associated with the resource.
     */
-  var accountId: js.UndefOr[AccountId] = js.native
+  var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource.
     */
-  var arn: js.UndefOr[ARN] = js.native
+  var arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The Availability Zone associated with the resource.
     */
-  var availabilityZone: js.UndefOr[AvailabilityZone] = js.native
+  var availabilityZone: js.UndefOr[AvailabilityZone] = js.undefined
   
   /**
     * The region where the resource resides.
     */
-  var awsRegion: js.UndefOr[AwsRegion] = js.native
+  var awsRegion: js.UndefOr[AwsRegion] = js.undefined
   
   /**
     * The description of the resource configuration.
     */
-  var configuration: js.UndefOr[Configuration] = js.native
+  var configuration: js.UndefOr[Configuration] = js.undefined
   
   /**
     * The time when the configuration recording was initiated.
     */
-  var configurationItemCaptureTime: js.UndefOr[ConfigurationItemCaptureTime] = js.native
+  var configurationItemCaptureTime: js.UndefOr[ConfigurationItemCaptureTime] = js.undefined
   
   /**
     * The configuration item status. The valid values are:   OK – The resource configuration has been updated   ResourceDiscovered – The resource was newly discovered   ResourceNotRecorded – The resource was discovered but its configuration was not recorded since the recorder excludes the recording of resources of this type   ResourceDeleted – The resource was deleted   ResourceDeletedNotRecorded – The resource was deleted but its configuration was not recorded since the recorder excludes the recording of resources of this type    The CIs do not incur any cost. 
     */
-  var configurationItemStatus: js.UndefOr[ConfigurationItemStatus] = js.native
+  var configurationItemStatus: js.UndefOr[ConfigurationItemStatus] = js.undefined
   
   /**
     * An identifier that indicates the ordering of the configuration items of a resource.
     */
-  var configurationStateId: js.UndefOr[ConfigurationStateId] = js.native
+  var configurationStateId: js.UndefOr[ConfigurationStateId] = js.undefined
   
   /**
     * The time stamp when the resource was created.
     */
-  var resourceCreationTime: js.UndefOr[ResourceCreationTime] = js.native
+  var resourceCreationTime: js.UndefOr[ResourceCreationTime] = js.undefined
   
   /**
     * The ID of the resource (for example., sg-xxxxxx).
     */
-  var resourceId: js.UndefOr[ResourceId] = js.native
+  var resourceId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The custom name of the resource, if available.
     */
-  var resourceName: js.UndefOr[ResourceName] = js.native
+  var resourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The type of AWS resource.
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * Configuration attributes that AWS Config returns for certain resource types to supplement the information returned for the configuration parameter.
     */
-  var supplementaryConfiguration: js.UndefOr[SupplementaryConfiguration] = js.native
+  var supplementaryConfiguration: js.UndefOr[SupplementaryConfiguration] = js.undefined
   
   /**
     * The version number of the resource configuration.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object BaseConfigurationItem {
   

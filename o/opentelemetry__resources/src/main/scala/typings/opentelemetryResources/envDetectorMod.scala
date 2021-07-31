@@ -5,7 +5,6 @@ import typings.opentelemetryResources.resourceMod.Resource
 import typings.opentelemetryResources.typesMod.Detector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object envDetectorMod {
@@ -18,20 +17,21 @@ object envDetectorMod {
     * EnvDetector can be used to detect the presence of and create a Resource
     * from the OTEL_RESOURCE_ATTRIBUTES environment variable.
     */
-  @js.native
-  trait EnvDetector_ extends Detector {
+  trait EnvDetector_
+    extends StObject
+       with Detector {
     
-    val _COMMA_SEPARATOR: js.Any = js.native
+    val _COMMA_SEPARATOR: js.Any
     
-    val _ERROR_MESSAGE_INVALID_CHARS: js.Any = js.native
+    val _ERROR_MESSAGE_INVALID_CHARS: js.Any
     
-    val _ERROR_MESSAGE_INVALID_VALUE: js.Any = js.native
+    val _ERROR_MESSAGE_INVALID_VALUE: js.Any
     
-    val _LABEL_KEY_VALUE_SPLITTER: js.Any = js.native
+    val _LABEL_KEY_VALUE_SPLITTER: js.Any
     
-    val _MAX_LENGTH: js.Any = js.native
+    val _MAX_LENGTH: js.Any
     
-    var _isPrintableString: js.Any = js.native
+    var _isPrintableString: js.Any
     
     /**
       * Determines whether the given String is a valid printable ASCII string with
@@ -40,7 +40,7 @@ object envDetectorMod {
       * @param str The String to be validated.
       * @returns Whether the String is valid.
       */
-    var _isValid: js.Any = js.native
+    var _isValid: js.Any
     
     /**
       * Determines whether the given String is a valid printable ASCII string with
@@ -49,7 +49,7 @@ object envDetectorMod {
       * @param str The String to be validated.
       * @returns Whether the String is valid and not empty.
       */
-    var _isValidAndNotEmpty: js.Any = js.native
+    var _isValidAndNotEmpty: js.Any
     
     /**
       * Creates an attribute map from the OTEL_RESOURCE_ATTRIBUTES environment
@@ -65,7 +65,7 @@ object envDetectorMod {
       * of key/value pairs.
       * @returns The sanitized resource attributes.
       */
-    var _parseResourceAttributes: js.Any = js.native
+    var _parseResourceAttributes: js.Any
   }
   object EnvDetector_ {
     

@@ -2,17 +2,15 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelAnimationStatus extends StObject {
   
   /** The animation to which the status applies. */
-  var anim: RaphaelAnimation = js.native
+  var anim: RaphaelAnimation
   
   /** The current status of the animation, i.e. the normalized animation time, a value between `0` and `1`. */
-  var status: Double = js.native
+  var status: Double
 }
 object RaphaelAnimationStatus {
   

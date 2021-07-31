@@ -4,18 +4,16 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // additional types for Valerie (all inside this namespace)
 object Valerie {
   
   // Contains converters, always singletons.
-  @js.native
   trait ConvertersStatic extends StObject {
     
     //TODO: other converters to be added
-    var passThrough: IConverter = js.native
+    var passThrough: IConverter
   }
   object ConvertersStatic {
     
@@ -44,12 +42,11 @@ object Valerie {
     def parse(value: String): js.Any = js.native
   }
   
-  @js.native
   trait IRule extends StObject {
     
-    var defaultOptions: ValidationOptions = js.native
+    var defaultOptions: ValidationOptions
     
-    def test(value: js.Any): ValidationResult = js.native
+    def test(value: js.Any): ValidationResult
   }
   object IRule {
     
@@ -275,18 +272,17 @@ object Valerie {
   }
   
   // Construction options for a model validation state.
-  @js.native
   trait ModelValidationStateOptions extends StObject {
     
-    def applicable(): Boolean = js.native
+    def applicable(): Boolean
     
-    var excludeFromSummary: Boolean = js.native
+    var excludeFromSummary: Boolean
     
-    var failureMessage: String = js.native
+    var failureMessage: String
     
-    def name(): String = js.native
+    def name(): String
     
-    def paused(): Boolean = js.native
+    def paused(): Boolean
   }
   object ModelValidationStateOptions {
     
@@ -323,14 +319,13 @@ object Valerie {
   }
   
   // A helper for parsing and formatting numeric values.
-  @js.native
   trait NumericHelper extends StObject {
     
     // Adds thousands separators to the given numeric string.
-    def addThousandsSeparator(numericString: String): String = js.native
+    def addThousandsSeparator(numericString: String): String
     
     // Formats the given numeric value as a string.
-    def format(value: Double, format: String): String = js.native
+    def format(value: Double, format: String): String
     
     // Initialises the helper
     def init(
@@ -338,25 +333,25 @@ object Valerie {
       thousandsSeparator: String,
       currencySign: String,
       currencyMinorUnitPlaces: Double
-    ): NumericHelper = js.native
+    ): NumericHelper
     
     // Informs whether the given numeric string represents a currency value with major units only.
-    def isCurrencyMajor(numericString: String): Boolean = js.native
+    def isCurrencyMajor(numericString: String): Boolean
     
     // Informs whether the given numeric string represents a currency value with major units and optionally minor units.
-    def isCurrencyMajorMinor(numericString: String): Boolean = js.native
+    def isCurrencyMajorMinor(numericString: String): Boolean
     
     // Informs whether the given numeric string represents a non-integer numeric value.
-    def isFloat(numericString: String): Boolean = js.native
+    def isFloat(numericString: String): Boolean
     
     // Informs whether the given numeric string represents an integer value.
-    def isInteger(numericString: String): Boolean = js.native
+    def isInteger(numericString: String): Boolean
     
     // Attempts to parse the given numeric string as a number value. The string is unformatted first.
-    def parse(numericString: String): Double = js.native
+    def parse(numericString: String): Double
     
     // Unformats a numeric string; removes currency signs, thousands separators and normalises decimal separators.
-    def unformat(numericString: String): String = js.native
+    def unformat(numericString: String): String
   }
   object NumericHelper {
     
@@ -502,13 +497,13 @@ object Valerie {
     
     def matches(permitted: js.Any): PropertyValidationState[T] = js.native
     def matches(permitted: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
-    def matches(permitted: js.Function0[_]): PropertyValidationState[T] = js.native
-    def matches(permitted: js.Function0[_], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def matches(permitted: js.Function0[js.Any]): PropertyValidationState[T] = js.native
+    def matches(permitted: js.Function0[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def maximum(maximum: js.Any): PropertyValidationState[T] = js.native
     def maximum(maximum: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
-    def maximum(maximum: js.Function0[_]): PropertyValidationState[T] = js.native
-    def maximum(maximum: js.Function0[_], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def maximum(maximum: js.Function0[js.Any]): PropertyValidationState[T] = js.native
+    def maximum(maximum: js.Function0[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def maximumLength(longest: js.Function0[Double]): PropertyValidationState[T] = js.native
     def maximumLength(longest: js.Function0[Double], options: ValidationOptions): PropertyValidationState[T] = js.native
@@ -538,10 +533,10 @@ object Valerie {
     def name(value: String): PropertyValidationState[T] = js.native
     def name(value: js.Function0[String]): PropertyValidationState[T] = js.native
     
-    def noneOf(forbiddenValues: js.Array[_]): PropertyValidationState[T] = js.native
-    def noneOf(forbiddenValues: js.Array[_], options: ValidationOptions): PropertyValidationState[T] = js.native
-    def noneOf(forbiddenValues: js.Function0[js.Array[_]]): PropertyValidationState[T] = js.native
-    def noneOf(forbiddenValues: js.Function0[js.Array[_]], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Array[js.Any]): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Array[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Function0[js.Array[js.Any]]): PropertyValidationState[T] = js.native
+    def noneOf(forbiddenValues: js.Function0[js.Array[js.Any]], options: ValidationOptions): PropertyValidationState[T] = js.native
     
     def not(forbiddenValueOrFunction: js.Any): PropertyValidationState[T] = js.native
     def not(forbiddenValueOrFunction: js.Any, options: ValidationOptions): PropertyValidationState[T] = js.native
@@ -555,10 +550,10 @@ object Valerie {
     // the observable or computed the validation state is for
     var observableOrComputed: T = js.native
     
-    def oneOf(permittedValues: js.Array[_]): PropertyValidationState[T] = js.native
-    def oneOf(permittedValues: js.Array[_], options: ValidationOptions): PropertyValidationState[T] = js.native
-    def oneOf(permittedValues: js.Function0[js.Array[_]]): PropertyValidationState[T] = js.native
-    def oneOf(permittedValues: js.Function0[js.Array[_]], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Array[js.Any]): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Array[js.Any], options: ValidationOptions): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Function0[js.Array[js.Any]]): PropertyValidationState[T] = js.native
+    def oneOf(permittedValues: js.Function0[js.Array[js.Any]], options: ValidationOptions): PropertyValidationState[T] = js.native
     
     // the options to use when creating the validation state
     var options: ValidationOptions = js.native
@@ -578,7 +573,7 @@ object Valerie {
     // set touched state
     def result(): ValidationResult = js.native
     
-    def rule(testFunction: js.Function0[_]): PropertyValidationState[T] = js.native
+    def rule(testFunction: js.Function0[js.Any]): PropertyValidationState[T] = js.native
     
     def ruleMessage(failureMessageFormat: String): PropertyValidationState[T] = js.native
     
@@ -626,7 +621,7 @@ object Valerie {
     def mapModel(sourceModel: js.Any): js.Any = js.native
     def mapModel(
       sourceModel: js.Any,
-      includeWrappedFunction: js.UndefOr[scala.Nothing],
+      includeWrappedFunction: Unit,
       includeUnwrappedFunction: IncludePropertyCallback
     ): js.Any = js.native
     def mapModel(sourceModel: js.Any, includeWrappedFunction: IncludePropertyCallback): js.Any = js.native
@@ -669,7 +664,7 @@ object Valerie {
   trait UtilsStatic extends StObject {
     
     // Creates a function that returns the given value as an array of one item, or simply returns the given value if it is already an array.
-    def asArray[T](value: js.Any): js.Array[_] = js.native
+    def asArray[T](value: js.Any): js.Array[js.Any] = js.native
     
     def asFunction[T](fn: js.Function0[T]): js.Function0[T] = js.native
     // Creates a function that returns the given value, or simply returns the given value if it is already a function
@@ -700,13 +695,12 @@ object Valerie {
     def mergeOptions(defaultOptions: ValidationOptions, options: js.Any): ValidationOptions = js.native
   }
   
-  @js.native
   trait ValidatableModel[T] extends StObject {
     
     // return original observableArray
-    def end(): T = js.native
+    def end(): T
     
-    def name(value: String): PropertyValidationState[T] = js.native
+    def name(value: String): PropertyValidationState[T]
   }
   object ValidatableModel {
     
@@ -717,7 +711,7 @@ object Valerie {
     }
     
     @scala.inline
-    implicit class ValidatableModelMutableBuilder[Self <: ValidatableModel[_], T] (val x: Self with ValidatableModel[T]) extends AnyVal {
+    implicit class ValidatableModelMutableBuilder[Self <: ValidatableModel[?], T] (val x: Self & ValidatableModel[T]) extends AnyVal {
       
       @scala.inline
       def setEnd(value: () => T): Self = StObject.set(x, "end", js.Any.fromFunction0(value))
@@ -727,37 +721,36 @@ object Valerie {
     }
   }
   
-  @js.native
   trait ValidationOptions extends StObject {
     
-    var applicable: js.UndefOr[js.Function0[_]] = js.native
+    var applicable: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     // the function used to determine if the property is applicable
-    var converter: js.UndefOr[IConverter] = js.native
+    var converter: js.UndefOr[IConverter] = js.undefined
     
     // the converter used to parse user entries and format display of the property's value
-    var entryFormat: js.UndefOr[String] = js.native
+    var entryFormat: js.UndefOr[String] = js.undefined
     
     // the string used to format the property's value for display in a user entry
-    var excludeFromSummary: js.UndefOr[Boolean] = js.native
+    var excludeFromSummary: js.UndefOr[Boolean] = js.undefined
     
     // whether any validation failures for this property are excluded from a summary
-    var invalidFailureMessage: js.UndefOr[String] = js.native
+    var invalidFailureMessage: js.UndefOr[String] = js.undefined
     
     // the message shown when the user has entered an invalid value
-    var missingFailureMessage: js.UndefOr[String] = js.native
+    var missingFailureMessage: js.UndefOr[String] = js.undefined
     
     // the message shown when a value is required but is missing
-    var name: js.UndefOr[js.Function0[_]] = js.native
+    var name: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     // the function used to determine the name of the property; used in failure messages
-    var required: js.UndefOr[js.Function0[_]] = js.native
+    var required: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     // the function used to determine if a value is required
-    var rules: js.UndefOr[js.Any] = js.native
+    var rules: js.UndefOr[js.Any] = js.undefined
     
     //Valerie.array.<IRule>;  // the chain of rules used to validate the property's value
-    var valueFormat: js.UndefOr[String] = js.native
+    var valueFormat: js.UndefOr[String] = js.undefined
   }
   object ValidationOptions {
     
@@ -771,7 +764,7 @@ object Valerie {
     implicit class ValidationOptionsMutableBuilder[Self <: ValidationOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setApplicable(value: () => _): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
+      def setApplicable(value: () => js.Any): Self = StObject.set(x, "applicable", js.Any.fromFunction0(value))
       
       @scala.inline
       def setApplicableUndefined: Self = StObject.set(x, "applicable", js.undefined)
@@ -807,13 +800,13 @@ object Valerie {
       def setMissingFailureMessageUndefined: Self = StObject.set(x, "missingFailureMessage", js.undefined)
       
       @scala.inline
-      def setName(value: () => _): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
+      def setName(value: () => js.Any): Self = StObject.set(x, "name", js.Any.fromFunction0(value))
       
       @scala.inline
       def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
       
       @scala.inline
-      def setRequired(value: () => _): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
+      def setRequired(value: () => js.Any): Self = StObject.set(x, "required", js.Any.fromFunction0(value))
       
       @scala.inline
       def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
@@ -854,13 +847,12 @@ object Valerie {
     var state: js.Any = js.native
   }
   
-  @js.native
   trait ValidationResultStatic extends StObject {
     
     // static method to create validatio failed message
-    def createFailedResult(message: String): ValidationResult = js.native
+    def createFailedResult(message: String): ValidationResult
     
-    var passedInstance: ValidationResult = js.native
+    var passedInstance: ValidationResult
   }
   object ValidationResultStatic {
     
@@ -886,26 +878,7 @@ object Valerie {
     
     // Finds and returns the validation states
     def findIn(model: js.Any): js.Array[IValidationState] = js.native
-    def findIn(
-      model: js.Any,
-      includeSubModels: js.UndefOr[scala.Nothing],
-      recurse: js.UndefOr[scala.Nothing],
-      validationStates: js.Array[IValidationState]
-    ): js.Array[IValidationState] = js.native
-    def findIn(model: js.Any, includeSubModels: js.UndefOr[scala.Nothing], recurse: Boolean): js.Array[IValidationState] = js.native
-    def findIn(
-      model: js.Any,
-      includeSubModels: js.UndefOr[scala.Nothing],
-      recurse: Boolean,
-      validationStates: js.Array[IValidationState]
-    ): js.Array[IValidationState] = js.native
     def findIn(model: js.Any, includeSubModels: Boolean): js.Array[IValidationState] = js.native
-    def findIn(
-      model: js.Any,
-      includeSubModels: Boolean,
-      recurse: js.UndefOr[scala.Nothing],
-      validationStates: js.Array[IValidationState]
-    ): js.Array[IValidationState] = js.native
     def findIn(model: js.Any, includeSubModels: Boolean, recurse: Boolean): js.Array[IValidationState] = js.native
     def findIn(
       model: js.Any,
@@ -913,6 +886,20 @@ object Valerie {
       recurse: Boolean,
       validationStates: js.Array[IValidationState]
     ): js.Array[IValidationState] = js.native
+    def findIn(
+      model: js.Any,
+      includeSubModels: Boolean,
+      recurse: Unit,
+      validationStates: js.Array[IValidationState]
+    ): js.Array[IValidationState] = js.native
+    def findIn(model: js.Any, includeSubModels: Unit, recurse: Boolean): js.Array[IValidationState] = js.native
+    def findIn(
+      model: js.Any,
+      includeSubModels: Unit,
+      recurse: Boolean,
+      validationStates: js.Array[IValidationState]
+    ): js.Array[IValidationState] = js.native
+    def findIn(model: js.Any, includeSubModels: Unit, recurse: Unit, validationStates: js.Array[IValidationState]): js.Array[IValidationState] = js.native
     
     // Gets the validation state for the given model, observable or computed.
     def getFor(modelOrObservableOrComputed: js.Any): IValidationState = js.native
@@ -924,12 +911,11 @@ object Valerie {
     def setFor(modelOrObservableOrComputed: js.Any, state: IValidationState): Unit = js.native
   }
   
-  @js.native
   trait summaryItem extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
   }
   object summaryItem {
     

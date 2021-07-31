@@ -2,18 +2,16 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<lokijs.CheckIndexOptions> */
-@js.native
 trait PartialCheckIndexOptions extends StObject {
   
-  var randomSampling: js.UndefOr[Boolean] = js.native
+  var randomSampling: js.UndefOr[Boolean] = js.undefined
   
-  var randomSamplingFactor: js.UndefOr[Double] = js.native
+  var randomSamplingFactor: js.UndefOr[Double] = js.undefined
   
-  var repair: js.UndefOr[Boolean] = js.native
+  var repair: js.UndefOr[Boolean] = js.undefined
 }
 object PartialCheckIndexOptions {
   

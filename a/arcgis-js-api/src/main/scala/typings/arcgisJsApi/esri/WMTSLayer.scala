@@ -5,12 +5,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.RESTful
 import typings.arcgisJsApi.arcgisJsApiStrings.wmts
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait WMTSLayer
-  extends Layer
+  extends StObject
+     with Layer
      with PortalLayer
      with ScaleRangeLayer
      with RefreshableLayer

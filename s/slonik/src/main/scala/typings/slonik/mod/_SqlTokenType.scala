@@ -3,7 +3,6 @@ package typings.slonik.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _SqlTokenType extends StObject
@@ -36,7 +35,7 @@ object _SqlTokenType {
   
   @scala.inline
   def JsonSqlTokenType(`type`: js.Symbol): typings.slonik.mod.JsonSqlTokenType = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(value = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.slonik.mod.JsonSqlTokenType]
   }

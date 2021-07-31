@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an AcknowledgeRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new AcknowledgeRequest.
   * @param [properties] Properties to set
   */
-class AcknowledgeRequest () extends IAcknowledgeRequest {
+class AcknowledgeRequest ()
+  extends StObject
+     with IAcknowledgeRequest {
   def this(properties: IAcknowledgeRequest) = this()
   
   /** AcknowledgeRequest ackIds. */
@@ -36,18 +37,20 @@ class AcknowledgeRequest () extends IAcknowledgeRequest {
 }
 object AcknowledgeRequest {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new AcknowledgeRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns AcknowledgeRequest instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.create")
-  @js.native
-  def create(): AcknowledgeRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.create")
-  @js.native
-  def create(properties: IAcknowledgeRequest): AcknowledgeRequest = js.native
+  @scala.inline
+  def create(): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[AcknowledgeRequest]
+  @scala.inline
+  def create(properties: IAcknowledgeRequest): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
   
   /**
     * Decodes an AcknowledgeRequest message from the specified reader or buffer.
@@ -58,18 +61,14 @@ object AcknowledgeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.decode")
-  @js.native
-  def decode(reader: Reader): AcknowledgeRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): AcknowledgeRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): AcknowledgeRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): AcknowledgeRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): AcknowledgeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AcknowledgeRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): AcknowledgeRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[AcknowledgeRequest]
   
   /**
     * Decodes an AcknowledgeRequest message from the specified reader or buffer, length delimited.
@@ -79,12 +78,10 @@ object AcknowledgeRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): AcknowledgeRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): AcknowledgeRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
   
   /**
     * Encodes the specified AcknowledgeRequest message. Does not implicitly {@link google.pubsub.v1.AcknowledgeRequest.verify|verify} messages.
@@ -93,12 +90,10 @@ object AcknowledgeRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.encode")
-  @js.native
-  def encode(message: IAcknowledgeRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.encode")
-  @js.native
-  def encode(message: IAcknowledgeRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IAcknowledgeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IAcknowledgeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified AcknowledgeRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.AcknowledgeRequest.verify|verify} messages.
@@ -107,12 +102,10 @@ object AcknowledgeRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAcknowledgeRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IAcknowledgeRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IAcknowledgeRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IAcknowledgeRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an AcknowledgeRequest message from a plain object. Also converts values to their respective internal types.
@@ -120,9 +113,8 @@ object AcknowledgeRequest {
     * @returns AcknowledgeRequest
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): AcknowledgeRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): AcknowledgeRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[AcknowledgeRequest]
   
   /**
     * Creates a plain object from an AcknowledgeRequest message. Also converts values to other types if specified.
@@ -131,12 +123,10 @@ object AcknowledgeRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.toObject")
-  @js.native
-  def toObject(message: AcknowledgeRequest): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.toObject")
-  @js.native
-  def toObject(message: AcknowledgeRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: AcknowledgeRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: AcknowledgeRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an AcknowledgeRequest message.
@@ -144,7 +134,6 @@ object AcknowledgeRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.AcknowledgeRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

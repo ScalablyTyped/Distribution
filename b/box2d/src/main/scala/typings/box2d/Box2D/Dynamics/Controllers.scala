@@ -4,65 +4,65 @@ import typings.box2d.Box2D.Common.Math.b2Mat22
 import typings.box2d.Box2D.Common.Math.b2Vec2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Controllers {
   
-  @js.native
-  trait b2BuoyancyController extends b2Controller {
+  trait b2BuoyancyController
+    extends StObject
+       with b2Controller {
     
     /**
       * Linear drag co-efficient.
       * @default = 1
       **/
-    var angularDrag: Double = js.native
+    var angularDrag: Double
     
     /**
       * The fluid density.
       * @default = 0
       **/
-    var density: Double = js.native
+    var density: Double
     
     /**
       * Gravity vector, if the world's gravity is not used.
       * @default = null
       **/
-    var gravity: b2Vec2 = js.native
+    var gravity: b2Vec2
     
     /**
       * Linear drag co-efficient.
       * @default = 2
       **/
-    var linearDrag: Double = js.native
+    var linearDrag: Double
     
     /**
       * The outer surface normal.
       **/
-    var normal: b2Vec2 = js.native
+    var normal: b2Vec2
     
     /**
       * The height of the fluid surface along the normal.
       * @default = 0
       **/
-    var offset: Double = js.native
+    var offset: Double
     
     /**
       * If false, bodies are assumed to be uniformly dense, otherwise use the shapes densities.
       * @default = false.
       **/
-    var useDensity: Boolean = js.native
+    var useDensity: Boolean
     
     /**
       * If true, gravity is taken from the world instead of the gravity parameter.
       * @default = true.
       **/
-    var useWorldGravity: Boolean = js.native
+    var useWorldGravity: Boolean
     
     /**
       * Fluid velocity, for drag calculations.
       **/
-    var velocity: b2Vec2 = js.native
+    var velocity: b2Vec2
   }
   object b2BuoyancyController {
     
@@ -124,13 +124,14 @@ object Controllers {
     }
   }
   
-  @js.native
-  trait b2ConstantAccelController extends b2Controller {
+  trait b2ConstantAccelController
+    extends StObject
+       with b2Controller {
     
     /**
       * The acceleration to apply.
       **/
-    var A: b2Vec2 = js.native
+    var A: b2Vec2
   }
   object b2ConstantAccelController {
     
@@ -160,13 +161,14 @@ object Controllers {
     }
   }
   
-  @js.native
-  trait b2ConstantForceController extends b2Controller {
+  trait b2ConstantForceController
+    extends StObject
+       with b2Controller {
     
     /**
       * The acceleration to apply.
       **/
-    var A: b2Vec2 = js.native
+    var A: b2Vec2
   }
   object b2ConstantForceController {
     
@@ -196,65 +198,64 @@ object Controllers {
     }
   }
   
-  @js.native
   trait b2Controller extends StObject {
     
     /**
       * Adds a body to the controller.
       * @param body Body to add.
       **/
-    def AddBody(body: b2Body): Unit = js.native
+    def AddBody(body: b2Body): Unit
     
     /**
       * Removes all bodies from the controller.
       **/
-    def Clear(): Unit = js.native
+    def Clear(): Unit
     
     /**
       * Debug drawing.
       * @param debugDraw Handle to drawer.
       **/
-    def Draw(debugDraw: b2DebugDraw): Unit = js.native
+    def Draw(debugDraw: b2DebugDraw): Unit
     
     /**
       * Gets the body list.
       * @return Body list.
       **/
-    def GetBodyList(): b2ControllerEdge = js.native
+    def GetBodyList(): b2ControllerEdge
     
     /**
       * Gets the next controller.
       * @return Next controller.
       **/
-    def GetNext(): b2Controller = js.native
+    def GetNext(): b2Controller
     
     /**
       * Gets the world.
       * @return World.
       **/
-    def GetWorld(): b2World = js.native
+    def GetWorld(): b2World
     
     /**
       * Removes a body from the controller.
       * @param body Body to remove from this controller.
       **/
-    def RemoveBody(body: b2Body): Unit = js.native
+    def RemoveBody(body: b2Body): Unit
     
     /**
       * Step
       * @param step b2TimeStep -> Private internal class.  Not sure why this is exposed.
       **/
-    def Step(step: js.Any): Unit = js.native
+    def Step(step: js.Any): Unit
     
     /**
       * Body count.
       **/
-    var m_bodyCount: Double = js.native
+    var m_bodyCount: Double
     
     /**
       * List of bodies.
       **/
-    var m_bodyList: b2ControllerEdge = js.native
+    var m_bodyList: b2ControllerEdge
   }
   object b2Controller {
     
@@ -310,38 +311,37 @@ object Controllers {
     }
   }
   
-  @js.native
   trait b2ControllerEdge extends StObject {
     
     /**
       * Body.
       **/
-    var body: b2Body = js.native
+    var body: b2Body
     
     /**
       * Provides quick access to the other end of this edge.
       **/
-    var controller: b2Controller = js.native
+    var controller: b2Controller
     
     /**
       * The next controller edge in the controller's body list.
       **/
-    var nextBody: b2ControllerEdge = js.native
+    var nextBody: b2ControllerEdge
     
     /**
       * The next controller edge in the body's controller list.
       **/
-    var nextController: b2ControllerEdge = js.native
+    var nextController: b2ControllerEdge
     
     /**
       * The previous controller edge in the controller's body list.
       **/
-    var prevBody: b2ControllerEdge = js.native
+    var prevBody: b2ControllerEdge
     
     /**
       * The previous controller edge in the body's controller list.
       **/
-    var prevController: b2ControllerEdge = js.native
+    var prevController: b2ControllerEdge
   }
   object b2ControllerEdge {
     
@@ -381,19 +381,20 @@ object Controllers {
     }
   }
   
-  @js.native
-  trait b2GravityController extends b2Controller {
+  trait b2GravityController
+    extends StObject
+       with b2Controller {
     
     /**
       * Specifies the strength of the gravitation force.
       * @default = 1
       **/
-    var G: Double = js.native
+    var G: Double
     
     /**
       * If true, gravity is proportional to r^-2, otherwise r^-1.
       **/
-    var invSqr: Boolean = js.native
+    var invSqr: Boolean
   }
   object b2GravityController {
     
@@ -427,26 +428,27 @@ object Controllers {
     }
   }
   
-  @js.native
-  trait b2TensorDampingController extends b2Controller {
+  trait b2TensorDampingController
+    extends StObject
+       with b2Controller {
     
     /**
       * Helper function to set T in a common case.
       * @param xDamping x
       * @param yDamping y
       **/
-    def SetAxisAligned(xDamping: Double, yDamping: Double): Unit = js.native
+    def SetAxisAligned(xDamping: Double, yDamping: Double): Unit
     
     /**
       * Tensor to use in damping model.
       **/
-    var T: b2Mat22 = js.native
+    var T: b2Mat22
     
     /**
       * Set this to a positive number to clamp the maximum amount of damping done.
       * @default = 0
       **/
-    var maxTimeStep: Double = js.native
+    var maxTimeStep: Double
   }
   object b2TensorDampingController {
     

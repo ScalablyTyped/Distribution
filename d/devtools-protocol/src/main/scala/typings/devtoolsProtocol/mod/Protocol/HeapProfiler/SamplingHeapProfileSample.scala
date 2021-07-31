@@ -3,27 +3,25 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingHeapProfileSample extends StObject {
   
   /**
     * Id of the corresponding profile tree node.
     */
-  var nodeId: integer = js.native
+  var nodeId: integer
   
   /**
     * Time-ordered sample ordinal number. It is unique across all profiles retrieved
     * between startSampling and stopSampling.
     */
-  var ordinal: Double = js.native
+  var ordinal: Double
   
   /**
     * Allocation size in bytes attributed to the sample.
     */
-  var size: Double = js.native
+  var size: Double
 }
 object SamplingHeapProfileSample {
   

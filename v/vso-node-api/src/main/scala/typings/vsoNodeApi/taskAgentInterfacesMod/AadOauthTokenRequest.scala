@@ -2,19 +2,17 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AadOauthTokenRequest extends StObject {
   
-  var refresh: Boolean = js.native
+  var refresh: Boolean
   
-  var resource: String = js.native
+  var resource: String
   
-  var tenantId: String = js.native
+  var tenantId: String
   
-  var token: String = js.native
+  var token: String
 }
 object AadOauthTokenRequest {
   

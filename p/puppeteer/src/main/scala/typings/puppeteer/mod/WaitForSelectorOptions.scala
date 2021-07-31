@@ -2,25 +2,25 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WaitForSelectorOptions extends Timeoutable {
+trait WaitForSelectorOptions
+  extends StObject
+     with Timeoutable {
   
   /**
     * Wait for element to not be found in the DOM or to be hidden,
     * i.e. have display: none or visibility: hidden CSS properties.
     * @default false
     */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Wait for element to be present in DOM and to be visible,
     * i.e. to not have display: none or visibility: hidden CSS properties.
     * @default false
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object WaitForSelectorOptions {
   

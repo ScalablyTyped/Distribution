@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.ApplicationModel.Search
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about query text that the user enters through an Input Method Editor (IME). */
-@js.native
 trait SearchPaneQueryLinguisticDetails extends StObject {
   
   /** A list of the text alternatives for the current query text. These alternatives account for uncomposed text the user is entering in an IME. */
-  var queryTextAlternatives: IVectorView[String] = js.native
+  var queryTextAlternatives: IVectorView[String]
   
   /** The length of the portion of the query text that the user is composing with an Input Method Editor (IME). */
-  var queryTextCompositionLength: Double = js.native
+  var queryTextCompositionLength: Double
   
   /** The starting location of the text that the user is composing with an Input Method Editor (IME). */
-  var queryTextCompositionStart: Double = js.native
+  var queryTextCompositionStart: Double
 }
 object SearchPaneQueryLinguisticDetails {
   

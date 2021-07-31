@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WebParts {
@@ -14,14 +13,20 @@ object WebParts {
   object PersonalizationScope extends StObject {
     
     @js.native
-    sealed trait shared extends PersonalizationScope
+    sealed trait shared
+      extends StObject
+         with PersonalizationScope
     
     @js.native
-    sealed trait user extends PersonalizationScope
+    sealed trait user
+      extends StObject
+         with PersonalizationScope
   }
   
   @js.native
-  trait LimitedWebPartManager extends ClientObject {
+  trait LimitedWebPartManager
+    extends StObject
+       with ClientObject {
     
     def addWebPart(webPart: WebPart, zoneId: String, zoneIndex: Double): WebPartDefinition = js.native
     
@@ -34,32 +39,33 @@ object WebParts {
     def importWebPart(webPartXml: String): WebPartDefinition = js.native
   }
   
-  @js.native
-  trait TileData extends ClientValueObject {
+  trait TileData
+    extends StObject
+       with ClientValueObject {
     
-    def get_backgroundImageLocation(): String = js.native
+    def get_backgroundImageLocation(): String
     
-    def get_description(): String = js.native
+    def get_description(): String
     
-    def get_iD(): Double = js.native
+    def get_iD(): Double
     
-    def get_linkLocation(): String = js.native
+    def get_linkLocation(): String
     
-    def get_tileOrder(): Double = js.native
+    def get_tileOrder(): Double
     
-    def get_title(): String = js.native
+    def get_title(): String
     
-    def set_backgroundImageLocation(value: String): Unit = js.native
+    def set_backgroundImageLocation(value: String): Unit
     
-    def set_description(value: String): Unit = js.native
+    def set_description(value: String): Unit
     
-    def set_iD(value: Double): Unit = js.native
+    def set_iD(value: Double): Unit
     
-    def set_linkLocation(value: String): Unit = js.native
+    def set_linkLocation(value: String): Unit
     
-    def set_tileOrder(value: Double): Unit = js.native
+    def set_tileOrder(value: Double): Unit
     
-    def set_title(value: String): Unit = js.native
+    def set_title(value: String): Unit
   }
   object TileData {
     
@@ -129,7 +135,9 @@ object WebParts {
   }
   
   @js.native
-  trait WebPart extends ClientObject {
+  trait WebPart
+    extends StObject
+       with ClientObject {
     
     def get_hidden(): Boolean = js.native
     
@@ -153,7 +161,9 @@ object WebParts {
   }
   
   @js.native
-  trait WebPartDefinition extends ClientObject {
+  trait WebPartDefinition
+    extends StObject
+       with ClientObject {
     
     def closeWebPart(): Unit = js.native
     
@@ -173,7 +183,9 @@ object WebParts {
   }
   
   @js.native
-  trait WebPartDefinitionCollection extends ClientObjectCollection[WebPartDefinition] {
+  trait WebPartDefinitionCollection
+    extends StObject
+       with ClientObjectCollection[WebPartDefinition] {
     
     def getByControlId(controlId: String): WebPartDefinition = js.native
     

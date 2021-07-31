@@ -4,46 +4,46 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchResponse extends Object {
+trait SearchResponse
+  extends StObject
+     with Object {
   
   /**
     * The index of the source from which the search result was obtained.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var activeSourceIndex: Double = js.native
+  var activeSourceIndex: Double
   
   /**
     * An array of error objects returned from the search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var errors: js.Array[Error] = js.native
+  var errors: js.Array[Error]
   
   /**
     * The number of search results.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var numResults: Double = js.native
+  var numResults: Double
   
   /**
     * An array of objects representing the results of search.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var results: js.Array[SearchResponseResults] = js.native
+  var results: js.Array[SearchResponseResults]
   
   /**
     * The searched expression.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search.html#SearchResponse)
     */
-  var searchTerm: String = js.native
+  var searchTerm: String
 }
 object SearchResponse {
   

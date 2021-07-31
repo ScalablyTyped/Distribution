@@ -9,23 +9,21 @@ import typings.reactDates.reactDatesNumbers.`0`
 import typings.std.HTMLTableDataCellElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarDayShape extends StObject {
   
-  var ariaLabelFormat: js.UndefOr[String] = js.native
+  var ariaLabelFormat: js.UndefOr[String] = js.undefined
   
-  var day: js.UndefOr[Moment | Null] = js.native
+  var day: js.UndefOr[Moment | Null] = js.undefined
   
-  var daySize: js.UndefOr[Double] = js.native
+  var daySize: js.UndefOr[Double] = js.undefined
   
-  var isFocused: js.UndefOr[Boolean] = js.native
+  var isFocused: js.UndefOr[Boolean] = js.undefined
   
-  var isOutsideDay: js.UndefOr[Boolean] = js.native
+  var isOutsideDay: js.UndefOr[Boolean] = js.undefined
   
-  var modifiers: js.UndefOr[ModifiersShape] = js.native
+  var modifiers: js.UndefOr[ModifiersShape] = js.undefined
   
   var onDayClick: js.UndefOr[
     js.Function2[
@@ -33,7 +31,7 @@ trait CalendarDayShape extends StObject {
       /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onDayMouseEnter: js.UndefOr[
     js.Function2[
@@ -41,7 +39,7 @@ trait CalendarDayShape extends StObject {
       /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onDayMouseLeave: js.UndefOr[
     js.Function2[
@@ -49,16 +47,16 @@ trait CalendarDayShape extends StObject {
       /* event */ MouseEvent[HTMLTableDataCellElement, NativeMouseEvent], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   // internationalization
-  var phrases: js.UndefOr[CalendarDayPhrases] = js.native
+  var phrases: js.UndefOr[CalendarDayPhrases] = js.undefined
   
   var renderDayContents: js.UndefOr[
     (js.Function2[/* day */ Moment, /* modifiers */ ModifiersShape, ReactNode]) | Null
-  ] = js.native
+  ] = js.undefined
   
-  var tabIndex: js.UndefOr[`0` | `-1`] = js.native
+  var tabIndex: js.UndefOr[`0` | `-1`] = js.undefined
 }
 object CalendarDayShape {
   

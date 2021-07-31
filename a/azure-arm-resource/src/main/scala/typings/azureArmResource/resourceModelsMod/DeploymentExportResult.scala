@@ -2,16 +2,14 @@ package typings.azureArmResource.resourceModelsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentExportResult extends StObject {
   
   /**
     * The template content.
     */
-  var template: js.UndefOr[js.Any] = js.native
+  var template: js.UndefOr[js.Any] = js.undefined
 }
 object DeploymentExportResult {
   

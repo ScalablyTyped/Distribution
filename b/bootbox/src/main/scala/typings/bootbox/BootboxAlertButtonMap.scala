@@ -2,14 +2,14 @@ package typings.bootbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ButtonMap options for alerts modals */
-@js.native
-trait BootboxAlertButtonMap extends BootboxButtonMap {
+trait BootboxAlertButtonMap
+  extends StObject
+     with BootboxButtonMap {
   
-  var ok: BootboxButton | js.Function = js.native
+  var ok: BootboxButton | js.Function
 }
 object BootboxAlertButtonMap {
   

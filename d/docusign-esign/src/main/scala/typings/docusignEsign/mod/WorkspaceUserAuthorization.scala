@@ -2,70 +2,68 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceUserAuthorization extends StObject {
   
   /**
     * When set to **true**, the workspace user can delete items from the workspace.
     */
-  var canDelete: js.UndefOr[String] = js.native
+  var canDelete: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the workspace user can move the items in the workspace.
     */
-  var canMove: js.UndefOr[String] = js.native
+  var canMove: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the workspace user can create transactions from the workspace.
     */
-  var canTransact: js.UndefOr[String] = js.native
+  var canTransact: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, the workspace user can view the items in the workspace.
     */
-  var canView: js.UndefOr[String] = js.native
+  var canView: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the workspace user authorization was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the user who created the workspace user authorization.
     */
-  var createdById: js.UndefOr[String] = js.native
+  var createdById: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The UTC DateTime when the workspace user authorization was last modified.
     */
-  var modified: js.UndefOr[String] = js.native
+  var modified: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the user who last modified the workspace user authorization.
     */
-  var modifiedById: js.UndefOr[String] = js.native
+  var modifiedById: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the workspace user.
     */
-  var workspaceUserId: js.UndefOr[String] = js.native
+  var workspaceUserId: js.UndefOr[String] = js.undefined
   
   /**
     * An object that provides details about the workspace user.
     */
   var workspaceUserInformation: js.UndefOr[
     /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
-  ] = js.native
+  ] = js.undefined
 }
 object WorkspaceUserAuthorization {
   

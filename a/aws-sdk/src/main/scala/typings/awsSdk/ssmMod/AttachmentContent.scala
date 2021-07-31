@@ -2,36 +2,34 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachmentContent extends StObject {
   
   /**
     * The cryptographic hash value of the document content.
     */
-  var Hash: js.UndefOr[AttachmentHash] = js.native
+  var Hash: js.UndefOr[AttachmentHash] = js.undefined
   
   /**
     * The hash algorithm used to calculate the hash value.
     */
-  var HashType: js.UndefOr[AttachmentHashType] = js.native
+  var HashType: js.UndefOr[AttachmentHashType] = js.undefined
   
   /**
     * The name of an attachment.
     */
-  var Name: js.UndefOr[AttachmentName] = js.native
+  var Name: js.UndefOr[AttachmentName] = js.undefined
   
   /**
     * The size of an attachment in bytes.
     */
-  var Size: js.UndefOr[ContentLength] = js.native
+  var Size: js.UndefOr[ContentLength] = js.undefined
   
   /**
     * The URL location of the attachment content.
     */
-  var Url: js.UndefOr[AttachmentUrl] = js.native
+  var Url: js.UndefOr[AttachmentUrl] = js.undefined
 }
 object AttachmentContent {
   

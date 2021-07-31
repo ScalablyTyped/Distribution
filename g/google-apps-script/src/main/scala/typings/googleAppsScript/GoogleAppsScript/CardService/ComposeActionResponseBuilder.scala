@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 import typings.googleAppsScript.GoogleAppsScript.Gmail.GmailDraft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,12 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * this builder creates responses to an Action that composes draft messages when a specific
   * UI element is selected.
   */
-@js.native
 trait ComposeActionResponseBuilder extends StObject {
   
-  def build(): ComposeActionResponse = js.native
+  def build(): ComposeActionResponse
   
-  def setGmailDraft(draft: GmailDraft): ComposeActionResponseBuilder = js.native
+  def setGmailDraft(draft: GmailDraft): ComposeActionResponseBuilder
 }
 object ComposeActionResponseBuilder {
   

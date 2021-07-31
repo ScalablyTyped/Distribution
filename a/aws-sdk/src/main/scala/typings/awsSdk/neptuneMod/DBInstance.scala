@@ -2,276 +2,274 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBInstance extends StObject {
   
   /**
     * Specifies the allocated storage size specified in gibibytes.
     */
-  var AllocatedStorage: js.UndefOr[Integer] = js.native
+  var AllocatedStorage: js.UndefOr[Integer] = js.undefined
   
   /**
     * Indicates that minor version patches are applied automatically.
     */
-  var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.native
+  var AutoMinorVersionUpgrade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the name of the Availability Zone the DB instance is located in.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the number of days for which automatic DB snapshots are retained.
     */
-  var BackupRetentionPeriod: js.UndefOr[Integer] = js.native
+  var BackupRetentionPeriod: js.UndefOr[Integer] = js.undefined
   
   /**
     * The identifier of the CA certificate for this DB instance.
     */
-  var CACertificateIdentifier: js.UndefOr[String] = js.native
+  var CACertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  (Not supported by Neptune) 
     */
-  var CharacterSetName: js.UndefOr[String] = js.native
+  var CharacterSetName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether tags are copied from the DB instance to snapshots of the DB instance.
     */
-  var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.native
+  var CopyTagsToSnapshot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
     */
-  var DBClusterIdentifier: js.UndefOr[String] = js.native
+  var DBClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the DB instance.
     */
-  var DBInstanceArn: js.UndefOr[String] = js.native
+  var DBInstanceArn: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the name of the compute and memory capacity class of the DB instance.
     */
-  var DBInstanceClass: js.UndefOr[String] = js.native
+  var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
     * Contains a user-supplied database identifier. This identifier is the unique key that identifies a DB instance.
     */
-  var DBInstanceIdentifier: js.UndefOr[String] = js.native
+  var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the current state of this database.
     */
-  var DBInstanceStatus: js.UndefOr[String] = js.native
+  var DBInstanceStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The database name.
     */
-  var DBName: js.UndefOr[String] = js.native
+  var DBName: js.UndefOr[String] = js.undefined
   
   /**
     * Provides the list of DB parameter groups applied to this DB instance.
     */
-  var DBParameterGroups: js.UndefOr[DBParameterGroupStatusList] = js.native
+  var DBParameterGroups: js.UndefOr[DBParameterGroupStatusList] = js.undefined
   
   /**
     *  Provides List of DB security group elements containing only DBSecurityGroup.Name and DBSecurityGroup.Status subelements.
     */
-  var DBSecurityGroups: js.UndefOr[DBSecurityGroupMembershipList] = js.native
+  var DBSecurityGroups: js.UndefOr[DBSecurityGroupMembershipList] = js.undefined
   
   /**
     * Specifies information on the subnet group associated with the DB instance, including the name, description, and subnets in the subnet group.
     */
-  var DBSubnetGroup: js.UndefOr[typings.awsSdk.neptuneMod.DBSubnetGroup] = js.native
+  var DBSubnetGroup: js.UndefOr[typings.awsSdk.neptuneMod.DBSubnetGroup] = js.undefined
   
   /**
     * Specifies the port that the DB instance listens on. If the DB instance is part of a DB cluster, this can be a different port than the DB cluster port.
     */
-  var DbInstancePort: js.UndefOr[Integer] = js.native
+  var DbInstancePort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The AWS Region-unique, immutable identifier for the DB instance. This identifier is found in AWS CloudTrail log entries whenever the AWS KMS key for the DB instance is accessed.
     */
-  var DbiResourceId: js.UndefOr[String] = js.native
+  var DbiResourceId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether or not the DB instance has deletion protection enabled. The instance can't be deleted when deletion protection is enabled. See Deleting a DB Instance.
     */
-  var DeletionProtection: js.UndefOr[BooleanOptional] = js.native
+  var DeletionProtection: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * Not supported
     */
-  var DomainMemberships: js.UndefOr[DomainMembershipList] = js.native
+  var DomainMemberships: js.UndefOr[DomainMembershipList] = js.undefined
   
   /**
     * A list of log types that this DB instance is configured to export to CloudWatch Logs.
     */
-  var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.native
+  var EnabledCloudwatchLogsExports: js.UndefOr[LogTypeList] = js.undefined
   
   /**
     * Specifies the connection endpoint.
     */
-  var Endpoint: js.UndefOr[typings.awsSdk.neptuneMod.Endpoint] = js.native
+  var Endpoint: js.UndefOr[typings.awsSdk.neptuneMod.Endpoint] = js.undefined
   
   /**
     * Provides the name of the database engine to be used for this DB instance.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the database engine version.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Amazon CloudWatch Logs log stream that receives the Enhanced Monitoring metrics data for the DB instance.
     */
-  var EnhancedMonitoringResourceArn: js.UndefOr[String] = js.native
+  var EnhancedMonitoringResourceArn: js.UndefOr[String] = js.undefined
   
   /**
     * True if AWS Identity and Access Management (IAM) authentication is enabled, and otherwise false.
     */
-  var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.native
+  var IAMDatabaseAuthenticationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Provides the date and time the DB instance was created.
     */
-  var InstanceCreateTime: js.UndefOr[TStamp] = js.native
+  var InstanceCreateTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Specifies the Provisioned IOPS (I/O operations per second) value.
     */
-  var Iops: js.UndefOr[IntegerOptional] = js.native
+  var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     *  Not supported: The encryption for DB instances is managed by the DB cluster.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the latest time to which a database can be restored with point-in-time restore.
     */
-  var LatestRestorableTime: js.UndefOr[TStamp] = js.native
+  var LatestRestorableTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * License model information for this DB instance.
     */
-  var LicenseModel: js.UndefOr[String] = js.native
+  var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the master username for the DB instance.
     */
-  var MasterUsername: js.UndefOr[String] = js.native
+  var MasterUsername: js.UndefOr[String] = js.undefined
   
   /**
     * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
     */
-  var MonitoringInterval: js.UndefOr[IntegerOptional] = js.native
+  var MonitoringInterval: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The ARN for the IAM role that permits Neptune to send Enhanced Monitoring metrics to Amazon CloudWatch Logs.
     */
-  var MonitoringRoleArn: js.UndefOr[String] = js.native
+  var MonitoringRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies if the DB instance is a Multi-AZ deployment.
     */
-  var MultiAZ: js.UndefOr[Boolean] = js.native
+  var MultiAZ: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  (Not supported by Neptune) 
     */
-  var OptionGroupMemberships: js.UndefOr[OptionGroupMembershipList] = js.native
+  var OptionGroupMemberships: js.UndefOr[OptionGroupMembershipList] = js.undefined
   
   /**
     * Specifies that changes to the DB instance are pending. This element is only included when changes are pending. Specific changes are identified by subelements.
     */
-  var PendingModifiedValues: js.UndefOr[typings.awsSdk.neptuneMod.PendingModifiedValues] = js.native
+  var PendingModifiedValues: js.UndefOr[typings.awsSdk.neptuneMod.PendingModifiedValues] = js.undefined
   
   /**
     *  (Not supported by Neptune) 
     */
-  var PerformanceInsightsEnabled: js.UndefOr[BooleanOptional] = js.native
+  var PerformanceInsightsEnabled: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     *  (Not supported by Neptune) 
     */
-  var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.native
+  var PerformanceInsightsKMSKeyId: js.UndefOr[String] = js.undefined
   
   /**
     *  Specifies the daily time range during which automated backups are created if automated backups are enabled, as determined by the BackupRetentionPeriod.
     */
-  var PreferredBackupWindow: js.UndefOr[String] = js.native
+  var PreferredBackupWindow: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the weekly time range during which system maintenance can occur, in Universal Coordinated Time (UTC).
     */
-  var PreferredMaintenanceWindow: js.UndefOr[String] = js.native
+  var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
   /**
     * A value that specifies the order in which a Read Replica is promoted to the primary instance after a failure of the existing primary instance. 
     */
-  var PromotionTier: js.UndefOr[IntegerOptional] = js.native
+  var PromotionTier: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * This flag should no longer be used.
     */
-  var PubliclyAccessible: js.UndefOr[Boolean] = js.native
+  var PubliclyAccessible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Contains one or more identifiers of DB clusters that are Read Replicas of this DB instance.
     */
-  var ReadReplicaDBClusterIdentifiers: js.UndefOr[ReadReplicaDBClusterIdentifierList] = js.native
+  var ReadReplicaDBClusterIdentifiers: js.UndefOr[ReadReplicaDBClusterIdentifierList] = js.undefined
   
   /**
     * Contains one or more identifiers of the Read Replicas associated with this DB instance.
     */
-  var ReadReplicaDBInstanceIdentifiers: js.UndefOr[ReadReplicaDBInstanceIdentifierList] = js.native
+  var ReadReplicaDBInstanceIdentifiers: js.UndefOr[ReadReplicaDBInstanceIdentifierList] = js.undefined
   
   /**
     * Contains the identifier of the source DB instance if this DB instance is a Read Replica.
     */
-  var ReadReplicaSourceDBInstanceIdentifier: js.UndefOr[String] = js.native
+  var ReadReplicaSourceDBInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * If present, specifies the name of the secondary Availability Zone for a DB instance with multi-AZ support.
     */
-  var SecondaryAvailabilityZone: js.UndefOr[String] = js.native
+  var SecondaryAvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The status of a Read Replica. If the instance is not a Read Replica, this is blank.
     */
-  var StatusInfos: js.UndefOr[DBInstanceStatusInfoList] = js.native
+  var StatusInfos: js.UndefOr[DBInstanceStatusInfoList] = js.undefined
   
   /**
     * Not supported: The encryption for DB instances is managed by the DB cluster.
     */
-  var StorageEncrypted: js.UndefOr[Boolean] = js.native
+  var StorageEncrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the storage type associated with DB instance.
     */
-  var StorageType: js.UndefOr[String] = js.native
+  var StorageType: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN from the key store with which the instance is associated for TDE encryption.
     */
-  var TdeCredentialArn: js.UndefOr[String] = js.native
+  var TdeCredentialArn: js.UndefOr[String] = js.undefined
   
   /**
     * Not supported.
     */
-  var Timezone: js.UndefOr[String] = js.native
+  var Timezone: js.UndefOr[String] = js.undefined
   
   /**
     * Provides a list of VPC security group elements that the DB instance belongs to.
     */
-  var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.native
+  var VpcSecurityGroups: js.UndefOr[VpcSecurityGroupMembershipList] = js.undefined
 }
 object DBInstance {
   

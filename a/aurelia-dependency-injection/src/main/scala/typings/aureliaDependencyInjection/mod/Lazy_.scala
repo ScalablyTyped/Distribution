@@ -2,7 +2,6 @@ package typings.aureliaDependencyInjection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("aurelia-dependency-injection", "Lazy")
@@ -15,7 +14,10 @@ class Lazy_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] prote
 /* static members */
 object Lazy_ {
   
-  @JSImport("aurelia-dependency-injection", "Lazy.of")
+  @JSImport("aurelia-dependency-injection", "Lazy")
   @js.native
-  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Lazy_[TBase, TImpl, TArgs] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def of[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */](key: PrimitiveOrDependencyCtor[TBase, TImpl, TArgs]): Lazy_[TBase, TImpl, TArgs] = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(key.asInstanceOf[js.Any]).asInstanceOf[Lazy_[TBase, TImpl, TArgs]]
 }

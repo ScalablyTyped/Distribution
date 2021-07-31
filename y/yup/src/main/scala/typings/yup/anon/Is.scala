@@ -3,23 +3,21 @@ package typings.yup.anon
 import typings.yup.mod.WhenOptionsBuilderObjectIs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Is extends StObject {
   
-  var is: WhenOptionsBuilderObjectIs = js.native
+  var is: WhenOptionsBuilderObjectIs
   
-  var otherwise: js.Any = js.native
+  var otherwise: js.Any
   
-  var `then`: js.Any = js.native
+  var `then`: js.Any
 }
 object Is {
   
   @scala.inline
   def apply(otherwise: js.Any, `then`: js.Any): Is = {
-    val __obj = js.Dynamic.literal(otherwise = otherwise.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(otherwise = otherwise.asInstanceOf[js.Any], is = null)
     __obj.updateDynamic("then")(`then`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Is]
   }

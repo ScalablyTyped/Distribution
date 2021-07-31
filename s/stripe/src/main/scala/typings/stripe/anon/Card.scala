@@ -3,13 +3,11 @@ package typings.stripe.anon
 import typings.stripe.mod.cards.ICardSourceCreationOptionsExtended
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Card extends StObject {
   
-  var card: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.native
+  var card: js.UndefOr[String | ICardSourceCreationOptionsExtended] = js.undefined
 }
 object Card {
   

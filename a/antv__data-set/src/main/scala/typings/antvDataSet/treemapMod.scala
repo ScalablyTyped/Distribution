@@ -8,44 +8,42 @@ import typings.antvDataSet.antvDataSetStrings.treemapSliceDice
 import typings.antvDataSet.antvDataSetStrings.treemapSquarify
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treemapMod {
   
-  @js.native
   trait Options extends StObject {
     
-    var as: js.Tuple2[String, String] = js.native
+    var as: js.Tuple2[String, String]
     
     /**
       * 字段名 默认为 value
       */
-    var field: js.UndefOr[String] = js.native
+    var field: js.UndefOr[String] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var paddingBottom: js.UndefOr[Double] = js.native
+    var paddingBottom: js.UndefOr[Double] = js.undefined
     
-    var paddingInner: js.UndefOr[Double] = js.native
+    var paddingInner: js.UndefOr[Double] = js.undefined
     
-    var paddingLeft: js.UndefOr[Double] = js.native
+    var paddingLeft: js.UndefOr[Double] = js.undefined
     
-    var paddingOuter: js.UndefOr[Double] = js.native
+    var paddingOuter: js.UndefOr[Double] = js.undefined
     
-    var paddingRight: js.UndefOr[Double] = js.native
+    var paddingRight: js.UndefOr[Double] = js.undefined
     
-    var paddingTop: js.UndefOr[Double] = js.native
+    var paddingTop: js.UndefOr[Double] = js.undefined
     
-    var ratio: js.UndefOr[Double] = js.native
+    var ratio: js.UndefOr[Double] = js.undefined
     
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var size: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
     var tile: js.UndefOr[
         treemapBinary | treemapDice | treemapSlice | treemapSliceDice | treemapSquarify | treemapResquarify
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     

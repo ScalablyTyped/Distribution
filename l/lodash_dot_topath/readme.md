@@ -11,8 +11,8 @@ The lodash method `_.toPath` exported as a module.
 | Full name          | lodash.topath |
 | Keywords           | lodash-modularized, topath |
 | # releases         | 0 |
-| # dependents       | 130 |
-| # downloads        | 4835932 |
+| # dependents       | 140 |
+| # downloads        | 4118087 |
 | # stars            | 0 |
 
 ## Links

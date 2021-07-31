@@ -13,7 +13,6 @@ import typings.maximMazurokGapiClientCustomsearch.anon.NextPage
 import typings.maximMazurokGapiClientCustomsearch.anon.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -32,26 +31,25 @@ object gapi {
         var siterestrict: SiterestrictResource = js.native
       }
       
-      @js.native
       trait Promotion extends StObject {
         
         /** An array of block objects for this promotion. See [Google WebSearch Protocol reference](https://developers.google.com/custom-search/docs/xml_results) for more information. */
-        var bodyLines: js.UndefOr[js.Array[HtmlTitle]] = js.native
+        var bodyLines: js.UndefOr[js.Array[HtmlTitle]] = js.undefined
         
         /** An abridged version of this search's result URL, e.g. www.example.com. */
-        var displayLink: js.UndefOr[String] = js.native
+        var displayLink: js.UndefOr[String] = js.undefined
         
         /** The title of the promotion, in HTML. */
-        var htmlTitle: js.UndefOr[String] = js.native
+        var htmlTitle: js.UndefOr[String] = js.undefined
         
         /** Image belonging to a promotion. */
-        var image: js.UndefOr[Height] = js.native
+        var image: js.UndefOr[Height] = js.undefined
         
         /** The URL of the promotion. */
-        var link: js.UndefOr[String] = js.native
+        var link: js.UndefOr[String] = js.undefined
         
         /** The title of the promotion. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
       }
       object Promotion {
         
@@ -105,57 +103,56 @@ object gapi {
         }
       }
       
-      @js.native
       trait Result extends StObject {
         
         /** Indicates the ID of Google's cached version of the search result. */
-        var cacheId: js.UndefOr[String] = js.native
+        var cacheId: js.UndefOr[String] = js.undefined
         
         /** An abridged version of this search result’s URL, e.g. www.example.com. */
-        var displayLink: js.UndefOr[String] = js.native
+        var displayLink: js.UndefOr[String] = js.undefined
         
         /** The file format of the search result. */
-        var fileFormat: js.UndefOr[String] = js.native
+        var fileFormat: js.UndefOr[String] = js.undefined
         
         /** The URL displayed after the snippet for each search result. */
-        var formattedUrl: js.UndefOr[String] = js.native
+        var formattedUrl: js.UndefOr[String] = js.undefined
         
         /** The HTML-formatted URL displayed after the snippet for each search result. */
-        var htmlFormattedUrl: js.UndefOr[String] = js.native
+        var htmlFormattedUrl: js.UndefOr[String] = js.undefined
         
         /** The snippet of the search result, in HTML. */
-        var htmlSnippet: js.UndefOr[String] = js.native
+        var htmlSnippet: js.UndefOr[String] = js.undefined
         
         /** The title of the search result, in HTML. */
-        var htmlTitle: js.UndefOr[String] = js.native
+        var htmlTitle: js.UndefOr[String] = js.undefined
         
         /** Image belonging to a custom search result. */
-        var image: js.UndefOr[ByteSize] = js.native
+        var image: js.UndefOr[ByteSize] = js.undefined
         
         /** A unique identifier for the type of current object. For this API, it is `customsearch#result.` */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** Encapsulates all information about [refinement labels](https://developers.google.com/custom-search/docs/xml_results). */
-        var labels: js.UndefOr[js.Array[DisplayName]] = js.native
+        var labels: js.UndefOr[js.Array[DisplayName]] = js.undefined
         
         /** The full URL to which the search result is pointing, e.g. http://www.example.com/foo/bar. */
-        var link: js.UndefOr[String] = js.native
+        var link: js.UndefOr[String] = js.undefined
         
         /** The MIME type of the search result. */
-        var mime: js.UndefOr[String] = js.native
+        var mime: js.UndefOr[String] = js.undefined
         
         /** Contains [PageMap](https://developers.google.com/custom-search/docs/structured_data#pagemaps) information for this search result. */
         var pagemap: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[js.Any]
+              ] = js.undefined
         
         /** The snippet of the search result, in plain text. */
-        var snippet: js.UndefOr[String] = js.native
+        var snippet: js.UndefOr[String] = js.undefined
         
         /** The title of the search result, in plain text. */
-        var title: js.UndefOr[String] = js.native
+        var title: js.UndefOr[String] = js.undefined
       }
       object Result {
         
@@ -247,7 +244,7 @@ object gapi {
           def setPagemap(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Result & TopLevel[js.Any]
           ): Self = StObject.set(x, "pagemap", value.asInstanceOf[js.Any])
           
           @scala.inline
@@ -267,7 +264,6 @@ object gapi {
         }
       }
       
-      @js.native
       trait Search extends StObject {
         
         /**
@@ -277,32 +273,32 @@ object gapi {
         var context: js.UndefOr[
                 /* import warning: importer.ImportType#apply c Unsupported type mapping: 
         {[ P in string ]: any}
-          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search with TopLevel[js.Any]
-              ] = js.native
+          */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[js.Any]
+              ] = js.undefined
         
         /** The current set of custom search results. */
-        var items: js.UndefOr[js.Array[Result]] = js.native
+        var items: js.UndefOr[js.Array[Result]] = js.undefined
         
         /** Unique identifier for the type of current object. For this API, it is customsearch#search. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /**
           * The set of [promotions](https://developers.google.com/custom-search/docs/promotions). Present only if the custom search engine's configuration files define any promotions for the
           * given query.
           */
-        var promotions: js.UndefOr[js.Array[Promotion]] = js.native
+        var promotions: js.UndefOr[js.Array[Promotion]] = js.undefined
         
         /** Query metadata for the previous, current, and next pages of results. */
-        var queries: js.UndefOr[NextPage] = js.native
+        var queries: js.UndefOr[NextPage] = js.undefined
         
         /** Metadata about a search operation. */
-        var searchInformation: js.UndefOr[FormattedSearchTime] = js.native
+        var searchInformation: js.UndefOr[FormattedSearchTime] = js.undefined
         
         /** Spell correction information for a query. */
-        var spelling: js.UndefOr[CorrectedQuery] = js.native
+        var spelling: js.UndefOr[CorrectedQuery] = js.undefined
         
         /** OpenSearch template and URL. */
-        var url: js.UndefOr[Template] = js.native
+        var url: js.UndefOr[Template] = js.undefined
       }
       object Search {
         
@@ -319,7 +315,7 @@ object gapi {
           def setContext(
             value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
           {[ P in string ]: any}
-            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search with TopLevel[js.Any]
+            */ typings.maximMazurokGapiClientCustomsearch.maximMazurokGapiClientCustomsearchStrings.Search & TopLevel[js.Any]
           ): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
           
           @scala.inline

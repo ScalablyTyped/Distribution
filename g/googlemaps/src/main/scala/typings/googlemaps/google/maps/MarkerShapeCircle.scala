@@ -3,26 +3,26 @@ package typings.googlemaps.google.maps
 import typings.googlemaps.googlemapsStrings.circle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MarkerShapeCircle extends MarkerShape {
+trait MarkerShapeCircle
+  extends StObject
+     with MarkerShape {
   
   /**
     * Coords is **[x1,y1,r]** where x1,y2 are the coordinates of the center of
     * the circle, and r is the radius of the circle.
     */
-  var coords: js.Tuple3[Double, Double, Double] = js.native
+  var coords: js.Tuple3[Double, Double, Double]
   
-  var `type`: circle = js.native
+  var `type`: circle
 }
 object MarkerShapeCircle {
   
   @scala.inline
-  def apply(coords: js.Tuple3[Double, Double, Double], `type`: circle): MarkerShapeCircle = {
+  def apply(coords: js.Tuple3[Double, Double, Double]): MarkerShapeCircle = {
     val __obj = js.Dynamic.literal(coords = coords.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("circle")
     __obj.asInstanceOf[MarkerShapeCircle]
   }
   

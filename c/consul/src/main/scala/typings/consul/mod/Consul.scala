@@ -3,37 +3,35 @@ package typings.consul.mod
 import typings.consul.mod.Lock.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Consul extends StObject {
   
-  var acl: Acl = js.native
+  var acl: Acl
   
-  var agent: Agent = js.native
+  var agent: Agent
   
-  var catalog: Catalog = js.native
+  var catalog: Catalog
   
-  var event: Event = js.native
+  var event: Event
   
-  var health: Health = js.native
+  var health: Health
   
-  var kv: Kv = js.native
+  var kv: Kv
   
   /**
     * Lock helper.
     */
-  def lock(opts: Options): Lock = js.native
+  def lock(opts: Options): Lock
   
-  var session: Session = js.native
+  var session: Session
   
-  var status: Status = js.native
+  var status: Status
   
   /**
     * Watch helper.
     */
-  def watch(opts: typings.consul.mod.Watch.Options): Watch = js.native
+  def watch(opts: typings.consul.mod.Watch.Options): Watch
 }
 object Consul {
   

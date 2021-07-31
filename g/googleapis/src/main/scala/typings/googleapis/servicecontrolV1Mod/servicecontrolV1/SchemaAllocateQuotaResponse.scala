@@ -2,30 +2,28 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for the AllocateQuota method.
   */
-@js.native
 trait SchemaAllocateQuotaResponse extends StObject {
   
   /**
     * Indicates the decision of the allocate.
     */
-  var allocateErrors: js.UndefOr[js.Array[SchemaQuotaError]] = js.native
+  var allocateErrors: js.UndefOr[js.Array[SchemaQuotaError]] = js.undefined
   
   /**
     * WARNING: DO NOT use this field until this warning message is removed.
     */
-  var allocateInfo: js.UndefOr[SchemaAllocateInfo] = js.native
+  var allocateInfo: js.UndefOr[SchemaAllocateInfo] = js.undefined
   
   /**
     * The same operation_id value used in the AllocateQuotaRequest. Used for
     * logging and diagnostics purposes.
     */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /**
     * Quota metrics to indicate the result of allocation. Depending on the
@@ -37,12 +35,12 @@ trait SchemaAllocateQuotaResponse extends StObject {
     * following boolean metric :
     * &quot;serviceruntime.googleapis.com/quota/exceeded&quot;
     */
-  var quotaMetrics: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.native
+  var quotaMetrics: js.UndefOr[js.Array[SchemaMetricValueSet]] = js.undefined
   
   /**
     * ID of the actual config used to process the request.
     */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
 }
 object SchemaAllocateQuotaResponse {
   

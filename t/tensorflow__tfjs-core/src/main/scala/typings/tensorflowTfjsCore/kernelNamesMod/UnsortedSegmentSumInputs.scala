@@ -2,16 +2,14 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@tensorflow/tfjs-core.@tensorflow/tfjs-core/dist/kernel_registry.NamedTensorInfoMap, 'x' | 'segmentIds'> */
-@js.native
 trait UnsortedSegmentSumInputs extends StObject {
   
-  var segmentIds: js.UndefOr[js.Any] = js.native
+  var segmentIds: js.UndefOr[js.Any] = js.undefined
   
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
 }
 object UnsortedSegmentSumInputs {
   

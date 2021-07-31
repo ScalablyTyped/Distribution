@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDns.gapi.client.dns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DnsKeyDigest extends StObject {
   
   /** The base-16 encoded bytes of this digest. Suitable for use in a DS resource record. */
-  var digest: js.UndefOr[String] = js.native
+  var digest: js.UndefOr[String] = js.undefined
   
   /** Specifies the algorithm used to calculate this digest. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object DnsKeyDigest {
   

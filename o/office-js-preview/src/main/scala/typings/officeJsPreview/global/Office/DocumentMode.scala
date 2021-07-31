@@ -2,7 +2,6 @@ package typings.officeJsPreview.global.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,9 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object DocumentMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.DocumentMode with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.officeJsPreview.Office.DocumentMode & Double] = js.native
   
-  /* 0 */ val ReadOnly: typings.officeJsPreview.Office.DocumentMode.ReadOnly with Double = js.native
+  /* 0 */ val ReadOnly: typings.officeJsPreview.Office.DocumentMode.ReadOnly & Double = js.native
   
-  /* 1 */ val ReadWrite: typings.officeJsPreview.Office.DocumentMode.ReadWrite with Double = js.native
+  /* 1 */ val ReadWrite: typings.officeJsPreview.Office.DocumentMode.ReadWrite & Double = js.native
 }

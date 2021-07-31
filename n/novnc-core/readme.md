@@ -12,7 +12,7 @@ noVNC core files for using with node
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 57073 |
+| # downloads        | 53626 |
 | # stars            | 1 |
 
 ## Links

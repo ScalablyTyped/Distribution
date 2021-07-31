@@ -2,13 +2,11 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cgid extends StObject {
   
-  var cgid: String = js.native
+  var cgid: String
 }
 object Cgid {
   

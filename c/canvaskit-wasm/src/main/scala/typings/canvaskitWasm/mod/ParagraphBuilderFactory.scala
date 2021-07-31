@@ -2,10 +2,8 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParagraphBuilderFactory extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ParagraphBuilderFactory extends StObject {
     * @param style
     * @param fontManager
     */
-  def Make(style: ParagraphStyle, fontManager: SkFontMgr): ParagraphBuilder = js.native
+  def Make(style: ParagraphStyle, fontManager: SkFontMgr): ParagraphBuilder
   
   /**
     * Creates a ParagraphBuilder using the fonts available from the given font provider.
     * @param style
     * @param fontSrc
     */
-  def MakeFromFontProvider(style: ParagraphStyle, fontSrc: TypefaceFontProvider): ParagraphBuilder = js.native
+  def MakeFromFontProvider(style: ParagraphStyle, fontSrc: TypefaceFontProvider): ParagraphBuilder
 }
 object ParagraphBuilderFactory {
   

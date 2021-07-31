@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutMetricFilterRequest extends StObject {
   
   /**
     * A name for the metric filter.
     */
-  var filterName: FilterName = js.native
+  var filterName: FilterName
   
   /**
     * A filter pattern for extracting metric data out of ingested log events.
     */
-  var filterPattern: FilterPattern = js.native
+  var filterPattern: FilterPattern
   
   /**
     * The name of the log group.
     */
-  var logGroupName: LogGroupName = js.native
+  var logGroupName: LogGroupName
   
   /**
     * A collection of information that defines how metric data gets emitted.
     */
-  var metricTransformations: MetricTransformations = js.native
+  var metricTransformations: MetricTransformations
 }
 object PutMetricFilterRequest {
   

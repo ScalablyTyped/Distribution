@@ -16,7 +16,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firehoseDeliveryStreamMod {
@@ -109,6 +108,10 @@ object firehoseDeliveryStreamMod {
   /* static members */
   object FirehoseDeliveryStream {
     
+    @JSImport("@pulumi/aws/kinesis/firehoseDeliveryStream", "FirehoseDeliveryStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing FirehoseDeliveryStream resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -118,42 +121,36 @@ object firehoseDeliveryStreamMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kinesis/firehoseDeliveryStream", "FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID]): FirehoseDeliveryStream = js.native
-    @JSImport("@pulumi/aws/kinesis/firehoseDeliveryStream", "FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): FirehoseDeliveryStream = js.native
-    @JSImport("@pulumi/aws/kinesis/firehoseDeliveryStream", "FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState): FirehoseDeliveryStream = js.native
-    @JSImport("@pulumi/aws/kinesis/firehoseDeliveryStream", "FirehoseDeliveryStream.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState, opts: CustomResourceOptions): FirehoseDeliveryStream = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: FirehoseDeliveryStreamState, opts: CustomResourceOptions): FirehoseDeliveryStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[FirehoseDeliveryStream]
     
     /**
       * Returns true if the given object is an instance of FirehoseDeliveryStream.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kinesis/firehoseDeliveryStream", "FirehoseDeliveryStream.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/firehoseDeliveryStream.FirehoseDeliveryStream */ Boolean]
   }
   
-  @js.native
   trait FirehoseDeliveryStreamArgs extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the Stream
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extendedS3` instead), `extendedS3`, `redshift`, `elasticsearch`, `splunk`, and `httpEndpoint`.
       */
-    val destination: Input[String] = js.native
+    val destination: Input[String]
     
-    val destinationId: js.UndefOr[Input[String]] = js.native
+    val destinationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration options if elasticsearch is the destination. More details are given below.
@@ -162,14 +159,14 @@ object firehoseDeliveryStreamMod {
         Input[
           typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamElasticsearchConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Enhanced configuration options for the s3 destination. More details are given below.
       */
     val extendedS3Configuration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamExtendedS3Configuration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration options if httpEndpoint is the destination. requires the user to also specify a `s3Configuration` block.  More details are given below.
@@ -178,7 +175,7 @@ object firehoseDeliveryStreamMod {
         Input[
           typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamHttpEndpointConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
@@ -187,13 +184,13 @@ object firehoseDeliveryStreamMod {
         Input[
           typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamKinesisSourceConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A name to identify the stream. This is unique to the
       * AWS account and region the Stream is created in.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration options if redshift is the destination.
@@ -202,13 +199,13 @@ object firehoseDeliveryStreamMod {
       */
     val redshiftConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamRedshiftConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Required for non-S3 destinations. For S3 destination, use `extendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
       * is redshift). More details are given below.
       */
-    val s3Configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]] = js.native
+    val s3Configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]] = js.undefined
     
     /**
       * Encrypt at rest options.
@@ -216,24 +213,24 @@ object firehoseDeliveryStreamMod {
       */
     val serverSideEncryption: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamServerSideEncryption]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration options if splunk is the destination. More details are given below.
       */
     val splunkConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamSplunkConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the table version for the output data schema. Defaults to `LATEST`.
       */
-    val versionId: js.UndefOr[Input[String]] = js.native
+    val versionId: js.UndefOr[Input[String]] = js.undefined
   }
   object FirehoseDeliveryStreamArgs {
     
@@ -341,20 +338,19 @@ object firehoseDeliveryStreamMod {
     }
   }
   
-  @js.native
   trait FirehoseDeliveryStreamState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) specifying the Stream
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * This is the destination to where the data is delivered. The only options are `s3` (Deprecated, use `extendedS3` instead), `extendedS3`, `redshift`, `elasticsearch`, `splunk`, and `httpEndpoint`.
       */
-    val destination: js.UndefOr[Input[String]] = js.native
+    val destination: js.UndefOr[Input[String]] = js.undefined
     
-    val destinationId: js.UndefOr[Input[String]] = js.native
+    val destinationId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration options if elasticsearch is the destination. More details are given below.
@@ -363,14 +359,14 @@ object firehoseDeliveryStreamMod {
         Input[
           typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamElasticsearchConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Enhanced configuration options for the s3 destination. More details are given below.
       */
     val extendedS3Configuration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamExtendedS3Configuration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration options if httpEndpoint is the destination. requires the user to also specify a `s3Configuration` block.  More details are given below.
@@ -379,7 +375,7 @@ object firehoseDeliveryStreamMod {
         Input[
           typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamHttpEndpointConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Allows the ability to specify the kinesis stream that is used as the source of the firehose delivery stream.
@@ -388,13 +384,13 @@ object firehoseDeliveryStreamMod {
         Input[
           typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamKinesisSourceConfiguration
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A name to identify the stream. This is unique to the
       * AWS account and region the Stream is created in.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration options if redshift is the destination.
@@ -403,13 +399,13 @@ object firehoseDeliveryStreamMod {
       */
     val redshiftConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamRedshiftConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Required for non-S3 destinations. For S3 destination, use `extendedS3Configuration` instead. Configuration options for the s3 destination (or the intermediate bucket if the destination
       * is redshift). More details are given below.
       */
-    val s3Configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]] = js.native
+    val s3Configuration: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamS3Configuration]] = js.undefined
     
     /**
       * Encrypt at rest options.
@@ -417,24 +413,24 @@ object firehoseDeliveryStreamMod {
       */
     val serverSideEncryption: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamServerSideEncryption]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Configuration options if splunk is the destination. More details are given below.
       */
     val splunkConfiguration: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.FirehoseDeliveryStreamSplunkConfiguration]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Specifies the table version for the output data schema. Defaults to `LATEST`.
       */
-    val versionId: js.UndefOr[Input[String]] = js.native
+    val versionId: js.UndefOr[Input[String]] = js.undefined
   }
   object FirehoseDeliveryStreamState {
     

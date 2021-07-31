@@ -9,32 +9,31 @@ import typings.vegaLite.specFacetMod.FacetMapping
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repeaterMod {
   
-  @JSImport("vega-lite/build/src/normalize/repeater", "replaceRepeaterInEncoding")
+  @JSImport("vega-lite/build/src/normalize/repeater", JSImport.Namespace)
   @js.native
-  def replaceRepeaterInEncoding[E /* <: Encoding[Field] */](encoding: E, repeater: RepeaterValue): Encoding[FieldName] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/normalize/repeater", "replaceRepeaterInFacet")
-  @js.native
-  def replaceRepeaterInFacet(facet: FacetFieldDef[Field, ExprRef | SignalRef], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = js.native
-  @JSImport("vega-lite/build/src/normalize/repeater", "replaceRepeaterInFacet")
-  @js.native
-  def replaceRepeaterInFacet(facet: FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = js.native
+  @scala.inline
+  def replaceRepeaterInEncoding[E /* <: Encoding[Field] */](encoding: E, repeater: RepeaterValue): Encoding[FieldName] = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInEncoding")(encoding.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[Encoding[FieldName]]
   
-  @js.native
+  @scala.inline
+  def replaceRepeaterInFacet(facet: FacetFieldDef[Field, ExprRef | SignalRef], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInFacet")(facet.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[(FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]])]
+  @scala.inline
+  def replaceRepeaterInFacet(facet: FacetMapping[Field, FacetFieldDef[Field, ExprRef | SignalRef]], repeater: RepeaterValue): (FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]]) = (^.asInstanceOf[js.Dynamic].applyDynamic("replaceRepeaterInFacet")(facet.asInstanceOf[js.Any], repeater.asInstanceOf[js.Any])).asInstanceOf[(FacetFieldDef[FieldName, ExprRef | SignalRef]) | (FacetMapping[FieldName, FacetFieldDef[FieldName, ExprRef | SignalRef]])]
+  
   trait RepeaterValue extends StObject {
     
-    var column: js.UndefOr[String] = js.native
+    var column: js.UndefOr[String] = js.undefined
     
-    var layer: js.UndefOr[String] = js.native
+    var layer: js.UndefOr[String] = js.undefined
     
-    var repeat: js.UndefOr[String] = js.native
+    var repeat: js.UndefOr[String] = js.undefined
     
-    var row: js.UndefOr[String] = js.native
+    var row: js.UndefOr[String] = js.undefined
   }
   object RepeaterValue {
     

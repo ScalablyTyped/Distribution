@@ -4,30 +4,28 @@ import typings.winrtUwp.Windows.Foundation.Uri
 import typings.winrtUwp.Windows.System.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a web account authentication provider. */
-@js.native
 trait WebAccountProvider extends StObject {
   
   /** Gets the authority of the web account provider. Use authority to disambiguate between a single provider with multiple identities (such as a Microsoft account versus Azure Active Directory). */
-  var authority: String = js.native
+  var authority: String
   
   /** Gets the display name for the web account provider. */
-  var displayName: String = js.native
+  var displayName: String
   
   /** Gets the display purpose of the web account provider. */
-  var displayPurpose: String = js.native
+  var displayPurpose: String
   
   /** Gets the Uri of the icon image to display for the web account provider. */
-  var iconUri: Uri = js.native
+  var iconUri: Uri
   
   /** Gets the web account provider id. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the user associated with the provider. */
-  var user: User = js.native
+  var user: User
 }
 object WebAccountProvider {
   

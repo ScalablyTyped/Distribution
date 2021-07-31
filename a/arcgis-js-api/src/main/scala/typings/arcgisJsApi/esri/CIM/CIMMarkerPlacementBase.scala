@@ -2,18 +2,16 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementBase extends StObject {
   
   /**
     * The primitive name.
     */
-  var primitiveName: js.UndefOr[String] = js.native
+  var primitiveName: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object CIMMarkerPlacementBase {
   

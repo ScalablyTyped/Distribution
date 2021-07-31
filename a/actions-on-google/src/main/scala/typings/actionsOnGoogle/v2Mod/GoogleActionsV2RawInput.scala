@@ -2,27 +2,25 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2RawInput extends StObject {
   
   /**
     * Indicates how the user provided this input: a typed response, a voice
     * response, unspecified, etc.
     */
-  var inputType: js.UndefOr[GoogleActionsV2RawInputInputType] = js.native
+  var inputType: js.UndefOr[GoogleActionsV2RawInputInputType] = js.undefined
   
   /**
     * Typed or spoken input from the end user.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * The triggering URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2RawInput {
   

@@ -6,37 +6,35 @@ import typings.devextreme.mod.DevExpress.ui.dxPivotGrid
 import typings.devextreme.mod.DevExpress.ui.dxPivotGridPivotGridCell
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnFields extends StObject {
   
-  var area: js.UndefOr[String] = js.native
+  var area: js.UndefOr[String] = js.undefined
   
-  var cell: js.UndefOr[dxPivotGridPivotGridCell] = js.native
+  var cell: js.UndefOr[dxPivotGridPivotGridCell] = js.undefined
   
-  var cellElement: js.UndefOr[dxElement] = js.native
+  var cellElement: js.UndefOr[dxElement] = js.undefined
   
-  var columnFields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.native
+  var columnFields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.undefined
   
-  var columnIndex: js.UndefOr[Double] = js.native
+  var columnIndex: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxPivotGrid] = js.native
+  var component: js.UndefOr[dxPivotGrid] = js.undefined
   
-  var dataFields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.native
+  var dataFields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var field: js.UndefOr[PivotGridDataSourceField] = js.native
+  var field: js.UndefOr[PivotGridDataSourceField] = js.undefined
   
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var rowFields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.native
+  var rowFields: js.UndefOr[js.Array[PivotGridDataSourceField]] = js.undefined
   
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
 }
 object ColumnFields {
   
@@ -110,7 +108,7 @@ object ColumnFields {
     def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

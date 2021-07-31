@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Country extends StObject {
   
   /**
     * The country code of the remote IP address.
     */
-  var CountryCode: js.UndefOr[String] = js.native
+  var CountryCode: js.UndefOr[String] = js.undefined
   
   /**
     * The country name of the remote IP address.
     */
-  var CountryName: js.UndefOr[String] = js.native
+  var CountryName: js.UndefOr[String] = js.undefined
 }
 object Country {
   

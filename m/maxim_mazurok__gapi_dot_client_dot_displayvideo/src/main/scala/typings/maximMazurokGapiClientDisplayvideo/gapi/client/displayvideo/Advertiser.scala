@@ -2,53 +2,51 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Advertiser extends StObject {
   
   /** Required. Immutable. Ad server related settings of the advertiser. */
-  var adServerConfig: js.UndefOr[AdvertiserAdServerConfig] = js.native
+  var adServerConfig: js.UndefOr[AdvertiserAdServerConfig] = js.undefined
   
   /** Output only. The unique ID of the advertiser. Assigned by the system. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Required. Creative related settings of the advertiser. */
-  var creativeConfig: js.UndefOr[AdvertiserCreativeConfig] = js.native
+  var creativeConfig: js.UndefOr[AdvertiserCreativeConfig] = js.undefined
   
   /** Settings that control how advertiser data may be accessed. */
-  var dataAccessConfig: js.UndefOr[AdvertiserDataAccessConfig] = js.native
+  var dataAccessConfig: js.UndefOr[AdvertiserDataAccessConfig] = js.undefined
   
   /** Required. The display name of the advertiser. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Controls whether or not insertion orders and line items of the advertiser can spend their budgets and bid on inventory. * Accepted values are `ENTITY_STATUS_ACTIVE` and
     * `ENTITY_STATUS_SCHEDULED_FOR_DELETION`. * If set to `ENTITY_STATUS_SCHEDULED_FOR_DELETION`, the advertiser will be deleted 30 days from when it was first scheduled for deletion.
     */
-  var entityStatus: js.UndefOr[String] = js.native
+  var entityStatus: js.UndefOr[String] = js.undefined
   
   /** Required. General settings of the advertiser. */
-  var generalConfig: js.UndefOr[AdvertiserGeneralConfig] = js.native
+  var generalConfig: js.UndefOr[AdvertiserGeneralConfig] = js.undefined
   
   /**
     * Integration details of the advertiser. Only integrationCode is currently applicable to advertiser. Other fields of IntegrationDetails are not supported and will be ignored if
     * provided.
     */
-  var integrationDetails: js.UndefOr[IntegrationDetails] = js.native
+  var integrationDetails: js.UndefOr[IntegrationDetails] = js.undefined
   
   /** Output only. The resource name of the advertiser. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The unique ID of the partner that the advertiser belongs to. */
-  var partnerId: js.UndefOr[String] = js.native
+  var partnerId: js.UndefOr[String] = js.undefined
   
   /** Targeting settings related to ad serving of the advertiser. */
-  var servingConfig: js.UndefOr[AdvertiserTargetingConfig] = js.native
+  var servingConfig: js.UndefOr[AdvertiserTargetingConfig] = js.undefined
   
   /** Output only. The timestamp when the advertiser was last updated. Assigned by the system. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Advertiser {
   

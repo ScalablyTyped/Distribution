@@ -2,75 +2,73 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPageLabels extends StObject {
   
-  var lblAdd: js.UndefOr[String] = js.native
+  var lblAdd: js.UndefOr[String] = js.undefined
   
-  var lblEditHead: js.UndefOr[String] = js.native
+  var lblEditHead: js.UndefOr[String] = js.undefined
   
-  var lblEditKeyField: js.UndefOr[String] = js.native
+  var lblEditKeyField: js.UndefOr[String] = js.undefined
   
-  var lblEditValueField: js.UndefOr[String] = js.native
+  var lblEditValueField: js.UndefOr[String] = js.undefined
   
-  var lblEditedExpressionsHead: js.UndefOr[String] = js.native
+  var lblEditedExpressionsHead: js.UndefOr[String] = js.undefined
   
-  var lblFind: js.UndefOr[String] = js.native
+  var lblFind: js.UndefOr[String] = js.undefined
   
-  var lblFindHead: js.UndefOr[String] = js.native
+  var lblFindHead: js.UndefOr[String] = js.undefined
   
-  var lblFindedExpressionsHead: js.UndefOr[String] = js.native
+  var lblFindedExpressionsHead: js.UndefOr[String] = js.undefined
   
-  var lblModify: js.UndefOr[String] = js.native
+  var lblModify: js.UndefOr[String] = js.undefined
   
-  var lblOrderedTest: js.UndefOr[String] = js.native
+  var lblOrderedTest: js.UndefOr[String] = js.undefined
   
-  var lblOrderedTestHlp: js.UndefOr[String] = js.native
+  var lblOrderedTestHlp: js.UndefOr[String] = js.undefined
   
-  var lblPageHeader: js.UndefOr[String] = js.native
+  var lblPageHeader: js.UndefOr[String] = js.undefined
   
-  var lblRandomlyTest: js.UndefOr[String] = js.native
+  var lblRandomlyTest: js.UndefOr[String] = js.undefined
   
-  var lblRandomlyTestHlp: js.UndefOr[String] = js.native
+  var lblRandomlyTestHlp: js.UndefOr[String] = js.undefined
   
-  var lblRemove: js.UndefOr[String] = js.native
+  var lblRemove: js.UndefOr[String] = js.undefined
   
-  var lblSearchField: js.UndefOr[String] = js.native
+  var lblSearchField: js.UndefOr[String] = js.undefined
   
-  var lblSearchInExpressions: js.UndefOr[String] = js.native
+  var lblSearchInExpressions: js.UndefOr[String] = js.undefined
   
-  var lblSearchInExpressionsHlp: js.UndefOr[String] = js.native
+  var lblSearchInExpressionsHlp: js.UndefOr[String] = js.undefined
   
-  var lblSearchInMeanings: js.UndefOr[String] = js.native
+  var lblSearchInMeanings: js.UndefOr[String] = js.undefined
   
-  var lblSearchInMeaningsHlp: js.UndefOr[String] = js.native
+  var lblSearchInMeaningsHlp: js.UndefOr[String] = js.undefined
   
-  var lblSelectedTest: js.UndefOr[String] = js.native
+  var lblSelectedTest: js.UndefOr[String] = js.undefined
   
-  var lblSelectedTestHlp: js.UndefOr[String] = js.native
+  var lblSelectedTestHlp: js.UndefOr[String] = js.undefined
   
-  var lblStartTest: js.UndefOr[String] = js.native
+  var lblStartTest: js.UndefOr[String] = js.undefined
   
-  var lblStopTest: js.UndefOr[String] = js.native
+  var lblStopTest: js.UndefOr[String] = js.undefined
   
-  var lblTestHead: js.UndefOr[String] = js.native
+  var lblTestHead: js.UndefOr[String] = js.undefined
   
-  var lblTitle: js.UndefOr[String] = js.native
+  var lblTitle: js.UndefOr[String] = js.undefined
   
-  var lblTypedTest: js.UndefOr[String] = js.native
+  var lblTypedTest: js.UndefOr[String] = js.undefined
   
-  var lblTypedTestHlp: js.UndefOr[String] = js.native
+  var lblTypedTestHlp: js.UndefOr[String] = js.undefined
   
-  var lblVoicedTest: js.UndefOr[String] = js.native
+  var lblVoicedTest: js.UndefOr[String] = js.undefined
   
-  var lblVoicedTestHlp: js.UndefOr[String] = js.native
+  var lblVoicedTestHlp: js.UndefOr[String] = js.undefined
   
-  var lblWrittedTest: js.UndefOr[String] = js.native
+  var lblWrittedTest: js.UndefOr[String] = js.undefined
   
-  var lblWrittedTestHlp: js.UndefOr[String] = js.native
+  var lblWrittedTestHlp: js.UndefOr[String] = js.undefined
 }
 object IPageLabels {
   

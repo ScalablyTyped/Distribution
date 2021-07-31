@@ -6,7 +6,6 @@ import typings.react.mod.SVGAttributes
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bookmarkFilledMod extends Shortcut {
@@ -15,10 +14,11 @@ object bookmarkFilledMod extends Shortcut {
   @js.native
   val default: SFC[BookmarkFilledProps] = js.native
   
-  @js.native
-  trait BookmarkFilledProps extends SVGAttributes[SVGElement] {
+  trait BookmarkFilledProps
+    extends StObject
+       with SVGAttributes[SVGElement] {
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object BookmarkFilledProps {
     

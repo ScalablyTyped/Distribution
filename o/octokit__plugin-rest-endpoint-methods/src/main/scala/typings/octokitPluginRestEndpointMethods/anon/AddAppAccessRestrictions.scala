@@ -2,289 +2,287 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddAppAccessRestrictions extends StObject {
   
-  var acceptInvitation: `892` = js.native
+  var acceptInvitation: `892`
   
-  var addAppAccessRestrictions: `893` = js.native
+  var addAppAccessRestrictions: `893`
   
-  var addCollaborator: `894` = js.native
+  var addCollaborator: `894`
   
-  var addStatusCheckContexts: `895` = js.native
+  var addStatusCheckContexts: `895`
   
-  var addTeamAccessRestrictions: `896` = js.native
+  var addTeamAccessRestrictions: `896`
   
-  var addUserAccessRestrictions: `897` = js.native
+  var addUserAccessRestrictions: `897`
   
-  var checkCollaborator: `898` = js.native
+  var checkCollaborator: `898`
   
-  var checkVulnerabilityAlerts: `899` = js.native
+  var checkVulnerabilityAlerts: `899`
   
-  var compareCommits: `900` = js.native
+  var compareCommits: `900`
   
-  var createCommitComment: `901` = js.native
+  var createCommitComment: `901`
   
-  var createCommitSignatureProtection: `902` = js.native
+  var createCommitSignatureProtection: `902`
   
-  var createCommitStatus: `903` = js.native
+  var createCommitStatus: `903`
   
-  var createDeployKey: `904` = js.native
+  var createDeployKey: `904`
   
-  var createDeployment: `905` = js.native
+  var createDeployment: `905`
   
-  var createDeploymentStatus: `906` = js.native
+  var createDeploymentStatus: `906`
   
-  var createDispatchEvent: `907` = js.native
+  var createDispatchEvent: `907`
   
-  var createForAuthenticatedUser: `908` = js.native
+  var createForAuthenticatedUser: `908`
   
-  var createFork: `909` = js.native
+  var createFork: `909`
   
-  var createInOrg: `910` = js.native
+  var createInOrg: `910`
   
-  var createOrUpdateFileContents: `911` = js.native
+  var createOrUpdateFileContents: `911`
   
-  var createPagesSite: `912` = js.native
+  var createPagesSite: `912`
   
-  var createRelease: `913` = js.native
+  var createRelease: `913`
   
-  var createUsingTemplate: `914` = js.native
+  var createUsingTemplate: `914`
   
-  var createWebhook: `915` = js.native
+  var createWebhook: `915`
   
-  var declineInvitation: `916` = js.native
+  var declineInvitation: `916`
   
-  var delete: `917` = js.native
+  var delete: `917`
   
-  var deleteAccessRestrictions: `918` = js.native
+  var deleteAccessRestrictions: `918`
   
-  var deleteAdminBranchProtection: `919` = js.native
+  var deleteAdminBranchProtection: `919`
   
-  var deleteBranchProtection: `920` = js.native
+  var deleteBranchProtection: `920`
   
-  var deleteCommitComment: `921` = js.native
+  var deleteCommitComment: `921`
   
-  var deleteCommitSignatureProtection: `922` = js.native
+  var deleteCommitSignatureProtection: `922`
   
-  var deleteDeployKey: `923` = js.native
+  var deleteDeployKey: `923`
   
-  var deleteDeployment: `924` = js.native
+  var deleteDeployment: `924`
   
-  var deleteFile: `925` = js.native
+  var deleteFile: `925`
   
-  var deleteInvitation: `926` = js.native
+  var deleteInvitation: `926`
   
-  var deletePagesSite: `927` = js.native
+  var deletePagesSite: `927`
   
-  var deletePullRequestReviewProtection: `928` = js.native
+  var deletePullRequestReviewProtection: `928`
   
-  var deleteRelease: `929` = js.native
+  var deleteRelease: `929`
   
-  var deleteReleaseAsset: `930` = js.native
+  var deleteReleaseAsset: `930`
   
-  var deleteWebhook: `931` = js.native
+  var deleteWebhook: `931`
   
-  var disableAutomatedSecurityFixes: `932` = js.native
+  var disableAutomatedSecurityFixes: `932`
   
-  var disableVulnerabilityAlerts: `933` = js.native
+  var disableVulnerabilityAlerts: `933`
   
-  var downloadArchive: `934` = js.native
+  var downloadArchive: `934`
   
-  var enableAutomatedSecurityFixes: `935` = js.native
+  var enableAutomatedSecurityFixes: `935`
   
-  var enableVulnerabilityAlerts: `936` = js.native
+  var enableVulnerabilityAlerts: `936`
   
-  var get: `937` = js.native
+  var get: `937`
   
-  var getAccessRestrictions: `938` = js.native
+  var getAccessRestrictions: `938`
   
-  var getAdminBranchProtection: `939` = js.native
+  var getAdminBranchProtection: `939`
   
-  var getAllStatusCheckContexts: `940` = js.native
+  var getAllStatusCheckContexts: `940`
   
-  var getAllTopics: `941` = js.native
+  var getAllTopics: `941`
   
-  var getAppsWithAccessToProtectedBranch: `942` = js.native
+  var getAppsWithAccessToProtectedBranch: `942`
   
-  var getBranch: `943` = js.native
+  var getBranch: `943`
   
-  var getBranchProtection: `944` = js.native
+  var getBranchProtection: `944`
   
-  var getClones: `945` = js.native
+  var getClones: `945`
   
-  var getCodeFrequencyStats: `946` = js.native
+  var getCodeFrequencyStats: `946`
   
-  var getCollaboratorPermissionLevel: `947` = js.native
+  var getCollaboratorPermissionLevel: `947`
   
-  var getCombinedStatusForRef: `948` = js.native
+  var getCombinedStatusForRef: `948`
   
-  var getCommit: `949` = js.native
+  var getCommit: `949`
   
-  var getCommitActivityStats: `950` = js.native
+  var getCommitActivityStats: `950`
   
-  var getCommitComment: `951` = js.native
+  var getCommitComment: `951`
   
-  var getCommitSignatureProtection: `952` = js.native
+  var getCommitSignatureProtection: `952`
   
-  var getCommunityProfileMetrics: `953` = js.native
+  var getCommunityProfileMetrics: `953`
   
-  var getContent: `954` = js.native
+  var getContent: `954`
   
-  var getContributorsStats: `955` = js.native
+  var getContributorsStats: `955`
   
-  var getDeployKey: `956` = js.native
+  var getDeployKey: `956`
   
-  var getDeployment: `957` = js.native
+  var getDeployment: `957`
   
-  var getDeploymentStatus: `958` = js.native
+  var getDeploymentStatus: `958`
   
-  var getLatestPagesBuild: `959` = js.native
+  var getLatestPagesBuild: `959`
   
-  var getLatestRelease: `960` = js.native
+  var getLatestRelease: `960`
   
-  var getPages: `961` = js.native
+  var getPages: `961`
   
-  var getPagesBuild: `962` = js.native
+  var getPagesBuild: `962`
   
-  var getParticipationStats: `963` = js.native
+  var getParticipationStats: `963`
   
-  var getPullRequestReviewProtection: `964` = js.native
+  var getPullRequestReviewProtection: `964`
   
-  var getPunchCardStats: `965` = js.native
+  var getPunchCardStats: `965`
   
-  var getReadme: `966` = js.native
+  var getReadme: `966`
   
-  var getRelease: `967` = js.native
+  var getRelease: `967`
   
-  var getReleaseAsset: `968` = js.native
+  var getReleaseAsset: `968`
   
-  var getReleaseByTag: `969` = js.native
+  var getReleaseByTag: `969`
   
-  var getStatusChecksProtection: `970` = js.native
+  var getStatusChecksProtection: `970`
   
-  var getTeamsWithAccessToProtectedBranch: `971` = js.native
+  var getTeamsWithAccessToProtectedBranch: `971`
   
-  var getTopPaths: `972` = js.native
+  var getTopPaths: `972`
   
-  var getTopReferrers: `973` = js.native
+  var getTopReferrers: `973`
   
-  var getUsersWithAccessToProtectedBranch: `974` = js.native
+  var getUsersWithAccessToProtectedBranch: `974`
   
-  var getViews: `975` = js.native
+  var getViews: `975`
   
-  var getWebhook: `976` = js.native
+  var getWebhook: `976`
   
-  var listBranches: `977` = js.native
+  var listBranches: `977`
   
-  var listBranchesForHeadCommit: `978` = js.native
+  var listBranchesForHeadCommit: `978`
   
-  var listCollaborators: `979` = js.native
+  var listCollaborators: `979`
   
-  var listCommentsForCommit: `980` = js.native
+  var listCommentsForCommit: `980`
   
-  var listCommitCommentsForRepo: `981` = js.native
+  var listCommitCommentsForRepo: `981`
   
-  var listCommitStatusesForRef: `982` = js.native
+  var listCommitStatusesForRef: `982`
   
-  var listCommits: `983` = js.native
+  var listCommits: `983`
   
-  var listContributors: `984` = js.native
+  var listContributors: `984`
   
-  var listDeployKeys: `985` = js.native
+  var listDeployKeys: `985`
   
-  var listDeploymentStatuses: `986` = js.native
+  var listDeploymentStatuses: `986`
   
-  var listDeployments: `987` = js.native
+  var listDeployments: `987`
   
-  var listForAuthenticatedUser: `988` = js.native
+  var listForAuthenticatedUser: `988`
   
-  var listForOrg: `989` = js.native
+  var listForOrg: `989`
   
-  var listForUser: `990` = js.native
+  var listForUser: `990`
   
-  var listForks: `991` = js.native
+  var listForks: `991`
   
-  var listInvitations: `992` = js.native
+  var listInvitations: `992`
   
-  var listInvitationsForAuthenticatedUser: `993` = js.native
+  var listInvitationsForAuthenticatedUser: `993`
   
-  var listLanguages: `994` = js.native
+  var listLanguages: `994`
   
-  var listPagesBuilds: `995` = js.native
+  var listPagesBuilds: `995`
   
-  var listPublic: `996` = js.native
+  var listPublic: `996`
   
-  var listPullRequestsAssociatedWithCommit: `997` = js.native
+  var listPullRequestsAssociatedWithCommit: `997`
   
-  var listReleaseAssets: `998` = js.native
+  var listReleaseAssets: `998`
   
-  var listReleases: `999` = js.native
+  var listReleases: `999`
   
-  var listTags: `1000` = js.native
+  var listTags: `1000`
   
-  var listTeams: `1001` = js.native
+  var listTeams: `1001`
   
-  var listWebhooks: `1002` = js.native
+  var listWebhooks: `1002`
   
-  var merge: `1003` = js.native
+  var merge: `1003`
   
-  var pingWebhook: `1004` = js.native
+  var pingWebhook: `1004`
   
-  var removeAppAccessRestrictions: `1005` = js.native
+  var removeAppAccessRestrictions: `1005`
   
-  var removeCollaborator: `1006` = js.native
+  var removeCollaborator: `1006`
   
-  var removeStatusCheckContexts: `1007` = js.native
+  var removeStatusCheckContexts: `1007`
   
-  var removeStatusCheckProtection: `1008` = js.native
+  var removeStatusCheckProtection: `1008`
   
-  var removeTeamAccessRestrictions: `1009` = js.native
+  var removeTeamAccessRestrictions: `1009`
   
-  var removeUserAccessRestrictions: `1010` = js.native
+  var removeUserAccessRestrictions: `1010`
   
-  var replaceAllTopics: `1011` = js.native
+  var replaceAllTopics: `1011`
   
-  var requestPagesBuild: `1012` = js.native
+  var requestPagesBuild: `1012`
   
-  var setAdminBranchProtection: `1013` = js.native
+  var setAdminBranchProtection: `1013`
   
-  var setAppAccessRestrictions: `1014` = js.native
+  var setAppAccessRestrictions: `1014`
   
-  var setStatusCheckContexts: `1015` = js.native
+  var setStatusCheckContexts: `1015`
   
-  var setTeamAccessRestrictions: `1016` = js.native
+  var setTeamAccessRestrictions: `1016`
   
-  var setUserAccessRestrictions: `1017` = js.native
+  var setUserAccessRestrictions: `1017`
   
-  var testPushWebhook: `1018` = js.native
+  var testPushWebhook: `1018`
   
-  var transfer: `1019` = js.native
+  var transfer: `1019`
   
-  var update: `1020` = js.native
+  var update: `1020`
   
-  var updateBranchProtection: `1021` = js.native
+  var updateBranchProtection: `1021`
   
-  var updateCommitComment: `1022` = js.native
+  var updateCommitComment: `1022`
   
-  var updateInformationAboutPagesSite: `1023` = js.native
+  var updateInformationAboutPagesSite: `1023`
   
-  var updateInvitation: `1024` = js.native
+  var updateInvitation: `1024`
   
-  var updatePullRequestReviewProtection: `1025` = js.native
+  var updatePullRequestReviewProtection: `1025`
   
-  var updateRelease: `1026` = js.native
+  var updateRelease: `1026`
   
-  var updateReleaseAsset: `1027` = js.native
+  var updateReleaseAsset: `1027`
   
-  var updateStatusCheckPotection: `1028` = js.native
+  var updateStatusCheckPotection: `1028`
   
-  var updateWebhook: `1029` = js.native
+  var updateWebhook: `1029`
   
-  var uploadReleaseAsset: `1030` = js.native
+  var uploadReleaseAsset: `1030`
 }
 object AddAppAccessRestrictions {
   

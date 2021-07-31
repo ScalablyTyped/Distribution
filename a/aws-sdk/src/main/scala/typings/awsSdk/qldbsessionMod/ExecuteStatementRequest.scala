@@ -2,26 +2,24 @@ package typings.awsSdk.qldbsessionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecuteStatementRequest extends StObject {
   
   /**
     * Specifies the parameters for the parameterized statement in the request.
     */
-  var Parameters: js.UndefOr[StatementParameters] = js.native
+  var Parameters: js.UndefOr[StatementParameters] = js.undefined
   
   /**
     * Specifies the statement of the request.
     */
-  var Statement: typings.awsSdk.qldbsessionMod.Statement = js.native
+  var Statement: typings.awsSdk.qldbsessionMod.Statement
   
   /**
     * Specifies the transaction ID of the request.
     */
-  var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId = js.native
+  var TransactionId: typings.awsSdk.qldbsessionMod.TransactionId
 }
 object ExecuteStatementRequest {
   

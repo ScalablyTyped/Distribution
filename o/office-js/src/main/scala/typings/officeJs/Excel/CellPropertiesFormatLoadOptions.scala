@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait CellPropertiesFormatLoadOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoIndent: js.UndefOr[Boolean] = js.native
+  var autoIndent: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var borders: js.UndefOr[CellPropertiesBorderLoadOptions] = js.native
+  var borders: js.UndefOr[CellPropertiesBorderLoadOptions] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var fill: js.UndefOr[CellPropertiesFillLoadOptions] = js.native
+  var fill: js.UndefOr[CellPropertiesFillLoadOptions] = js.undefined
   
   /**
     *
@@ -44,7 +42,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var font: js.UndefOr[CellPropertiesFontLoadOptions] = js.native
+  var font: js.UndefOr[CellPropertiesFontLoadOptions] = js.undefined
   
   /**
     *
@@ -52,7 +50,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontalAlignment: js.UndefOr[Boolean] = js.native
+  var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var indentLevel: js.UndefOr[Boolean] = js.native
+  var indentLevel: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var protection: js.UndefOr[Boolean] = js.native
+  var protection: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -76,7 +74,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var readingOrder: js.UndefOr[Boolean] = js.native
+  var readingOrder: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -84,7 +82,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var shrinkToFit: js.UndefOr[Boolean] = js.native
+  var shrinkToFit: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -92,7 +90,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var textOrientation: js.UndefOr[Boolean] = js.native
+  var textOrientation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -100,7 +98,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useStandardHeight: js.UndefOr[Boolean] = js.native
+  var useStandardHeight: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -108,7 +106,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var useStandardWidth: js.UndefOr[Boolean] = js.native
+  var useStandardWidth: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -116,7 +114,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalAlignment: js.UndefOr[Boolean] = js.native
+  var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -124,7 +122,7 @@ trait CellPropertiesFormatLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var wrapText: js.UndefOr[Boolean] = js.native
+  var wrapText: js.UndefOr[Boolean] = js.undefined
 }
 object CellPropertiesFormatLoadOptions {
   

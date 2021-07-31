@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipientViewRequest extends StObject {
   
   /**
     * A unique identifier of the authentication event executed by the client application.
     */
-  var assertionId: js.UndefOr[String] = js.native
+  var assertionId: js.UndefOr[String] = js.undefined
   
   /**
     * A sender-generated value that indicates the date and time that the signer was authenticated.
     */
-  var authenticationInstant: js.UndefOr[String] = js.native
+  var authenticationInstant: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Choose a value that most closely matches the technique your application used to authenticate the recipient / signer.
@@ -43,7 +41,7 @@ trait RecipientViewRequest extends StObject {
     *
     * This information is included in the Certificate of Completion.
     */
-  var authenticationMethod: js.UndefOr[String] = js.native
+  var authenticationMethod: js.UndefOr[String] = js.undefined
   
   /**
     * A sender-created value. If provided, the recipient is treated as an embedded (captive) recipient or signer.
@@ -53,29 +51,29 @@ trait RecipientViewRequest extends StObject {
     *
     * Maximum length: 100 characters.
     */
-  var clientUserId: js.UndefOr[String] = js.native
+  var clientUserId: js.UndefOr[String] = js.undefined
   
   /**
     * (Required) Specifies the email of the recipient. You can use either `email` and `userName` or `userId` to identify the recipient.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Only used if `pingUrl` is specified. This is the interval, in seconds, between pings on the `pingUrl`.  The default is `300` seconds. Valid values are 60-1200 seconds.
     */
-  var pingFrequency: js.UndefOr[String] = js.native
+  var pingFrequency: js.UndefOr[String] = js.undefined
   
   /**
     * The client URL that the DocuSign Signing experience should ping to indicate to the client that Signing is active. An HTTP GET call is executed against the client.
     * The response from the client is ignored. The intent is for the client to reset its session timer when the request is received.
     */
-  var pingUrl: js.UndefOr[String] = js.native
+  var pingUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A local reference that senders use to map recipients to other objects, such as specific document tabs. Within an envelope, each `recipientId` must be unique,
     * but there is no uniqueness requirement across envelopes. For example, many envelopes assign the first recipient a `recipientId` of `1`.
     */
-  var recipientId: js.UndefOr[String] = js.native
+  var recipientId: js.UndefOr[String] = js.undefined
   
   /**
     * (Optional) The URL to which the user should be redirected
@@ -107,12 +105,12 @@ trait RecipientViewRequest extends StObject {
     * Ensure that you include `https://` in the URL to prevent the redirect from failing on certain browsers.
     *
     */
-  var returnUrl: js.UndefOr[String] = js.native
+  var returnUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The domain in which the user authenticated.
     */
-  var securityDomain: js.UndefOr[String] = js.native
+  var securityDomain: js.UndefOr[String] = js.undefined
   
   /**
     * The user ID of the recipient. You can use either the user ID or email and user name to identify the recipient.
@@ -122,12 +120,12 @@ trait RecipientViewRequest extends StObject {
     *
     * If a `userId` is used and a `clientUserId` is not provided, the `userId` must match the user ID of the authenticating user.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   /**
     * The username of the recipient. You can use either `email` and `userName` or `userId` to identify the recipient.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether a browser should be allowed to render a page in a frame or IFrame. Setting this property ensures that your content is not embedded into
@@ -139,13 +137,13 @@ trait RecipientViewRequest extends StObject {
     * - `same_origin`: The page can only be displayed in a frame on the same origin as the page itself.
     * - `allow_from`: The page can only be displayed in a frame on the origin specified by the `xFrameOptionsAllowFromUrl` property.
     */
-  var xFrameOptions: js.UndefOr[String] = js.native
+  var xFrameOptions: js.UndefOr[String] = js.undefined
   
   /**
     * When the value of `xFrameOptions` is `allow_from`, this property specifies the origin on which the page is allowed to display in a frame.
     * If the value of `xFrameOptions` is `allow_from`, you must include a value for this property.
     */
-  var xFrameOptionsAllowFromUrl: js.UndefOr[String] = js.native
+  var xFrameOptionsAllowFromUrl: js.UndefOr[String] = js.undefined
 }
 object RecipientViewRequest {
   

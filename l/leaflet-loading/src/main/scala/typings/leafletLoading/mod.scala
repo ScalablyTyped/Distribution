@@ -6,13 +6,16 @@ import typings.leaflet.mod.Control_.Zoom
 import typings.leafletLoading.anon.Length
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
   object Control {
+    
+    @JSImport("leaflet", "Control")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("leaflet", "Control.Loading")
     @js.native
@@ -23,26 +26,25 @@ object mod {
       var options_Loading_ : LoadingOptions = js.native
     }
     
-    @JSImport("leaflet", "Control.loading")
-    @js.native
-    def loading(): Loading_ = js.native
-    @JSImport("leaflet", "Control.loading")
-    @js.native
-    def loading(options: LoadingOptions): Loading_ = js.native
+    @scala.inline
+    def loading(): Loading_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")().asInstanceOf[Loading_]
+    @scala.inline
+    def loading(options: LoadingOptions): Loading_ = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")(options.asInstanceOf[js.Any]).asInstanceOf[Loading_]
   }
   
-  @js.native
-  trait LoadingOptions extends ControlOptions {
+  trait LoadingOptions
+    extends StObject
+       with ControlOptions {
     
-    var delayIndicator: js.UndefOr[Double] = js.native
+    var delayIndicator: js.UndefOr[Double] = js.undefined
     
-    var separate: js.UndefOr[Boolean] = js.native
+    var separate: js.UndefOr[Boolean] = js.undefined
     
-    var spin: js.UndefOr[Length] = js.native
+    var spin: js.UndefOr[Length] = js.undefined
     
-    var spinjs: js.UndefOr[Boolean] = js.native
+    var spinjs: js.UndefOr[Boolean] = js.undefined
     
-    var zoomControl: js.UndefOr[Zoom] = js.native
+    var zoomControl: js.UndefOr[Zoom] = js.undefined
   }
   object LoadingOptions {
     
@@ -87,10 +89,9 @@ object mod {
     }
   }
   
-  @js.native
   trait MapOptions extends StObject {
     
-    var loadingControl: js.UndefOr[Boolean] = js.native
+    var loadingControl: js.UndefOr[Boolean] = js.undefined
   }
   object MapOptions {
     

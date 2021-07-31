@@ -2,20 +2,18 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnimationOptions extends StObject {
   
   /** List of delays between animation frames (in milliseconds), each value between 0 and 65535. (optional) */
-  var delay: js.UndefOr[js.Array[Double]] = js.native
+  var delay: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Number of animation iterations, a value between 0 and 65535. Use 0 for infinite animation. (optional, default 0) */
-  var loop: js.UndefOr[Double] = js.native
+  var loop: js.UndefOr[Double] = js.undefined
   
   /** Page height for animated output, a value greater than 0. (optional) */
-  var pageHeight: js.UndefOr[Double] = js.native
+  var pageHeight: js.UndefOr[Double] = js.undefined
 }
 object AnimationOptions {
   

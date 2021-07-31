@@ -2,26 +2,24 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluationResult extends StObject {
   
   /**
     * Describes an AWS account's compliance with the AWS Firewall Manager policy.
     */
-  var ComplianceStatus: js.UndefOr[PolicyComplianceStatusType] = js.native
+  var ComplianceStatus: js.UndefOr[PolicyComplianceStatusType] = js.undefined
   
   /**
     * Indicates that over 100 resources are noncompliant with the AWS Firewall Manager policy.
     */
-  var EvaluationLimitExceeded: js.UndefOr[Boolean] = js.native
+  var EvaluationLimitExceeded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of resources that are noncompliant with the specified policy. For AWS WAF and Shield Advanced policies, a resource is considered noncompliant if it is not associated with the policy. For security group policies, a resource is considered noncompliant if it doesn't comply with the rules of the policy and remediation is disabled or not possible.
     */
-  var ViolatorCount: js.UndefOr[ResourceCount] = js.native
+  var ViolatorCount: js.UndefOr[ResourceCount] = js.undefined
 }
 object EvaluationResult {
   

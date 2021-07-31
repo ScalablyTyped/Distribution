@@ -2,7 +2,6 @@ package typings.three.geometriesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("three/src/geometries/Geometries", "TetrahedronGeometry")
@@ -14,6 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class TetrahedronGeometry ()
   extends typings.three.tetrahedronGeometryMod.TetrahedronGeometry {
   def this(radius: Double) = this()
-  def this(radius: js.UndefOr[scala.Nothing], detail: Double) = this()
   def this(radius: Double, detail: Double) = this()
+  def this(radius: Unit, detail: Double) = this()
 }

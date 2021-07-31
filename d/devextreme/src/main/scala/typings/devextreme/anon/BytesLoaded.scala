@@ -6,29 +6,27 @@ import typings.devextreme.mod.DevExpress.ui.dxFileUploader
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BytesLoaded extends StObject {
   
-  var bytesLoaded: js.UndefOr[Double] = js.native
+  var bytesLoaded: js.UndefOr[Double] = js.undefined
   
-  var bytesTotal: js.UndefOr[Double] = js.native
+  var bytesTotal: js.UndefOr[Double] = js.undefined
   
-  var component: js.UndefOr[dxFileUploader] = js.native
+  var component: js.UndefOr[dxFileUploader] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var file: js.UndefOr[typings.std.File] = js.native
+  var file: js.UndefOr[typings.std.File] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var request: js.UndefOr[XMLHttpRequest] = js.native
+  var request: js.UndefOr[XMLHttpRequest] = js.undefined
   
-  var segmentSize: js.UndefOr[Double] = js.native
+  var segmentSize: js.UndefOr[Double] = js.undefined
 }
 object BytesLoaded {
   

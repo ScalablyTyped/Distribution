@@ -2,25 +2,24 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StringLiteral
-  extends AssemblyItem
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with AssemblyItem {
   
   @JSName("type")
-  var type_StringLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral = js.native
+  var type_StringLiteral: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral
   
-  var value: String = js.native
+  var value: String
 }
 object StringLiteral {
   
   @scala.inline
-  def apply(`type`: typings.solidityParserAntlr.solidityParserAntlrStrings.StringLiteral, value: String): StringLiteral = {
+  def apply(value: String): StringLiteral = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StringLiteral")
     __obj.asInstanceOf[StringLiteral]
   }
   

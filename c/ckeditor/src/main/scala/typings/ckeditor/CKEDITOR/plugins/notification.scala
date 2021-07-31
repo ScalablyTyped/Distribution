@@ -5,35 +5,33 @@ import typings.ckeditor.CKEDITOR.editor
 import typings.ckeditor.CKEDITOR.plugins.notification.updateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait notification extends StObject {
   
-  val area: typings.ckeditor.CKEDITOR.plugins.notification.area = js.native
+  val area: typings.ckeditor.CKEDITOR.plugins.notification.area
   
-  val duration: Double = js.native
+  val duration: Double
   
-  val editor: typings.ckeditor.CKEDITOR.editor = js.native
+  val editor: typings.ckeditor.CKEDITOR.editor
   
-  val element: typings.ckeditor.CKEDITOR.dom.element = js.native
+  val element: typings.ckeditor.CKEDITOR.dom.element
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  val id: Double = js.native
+  val id: Double
   
-  def isVisible(): Boolean = js.native
+  def isVisible(): Boolean
   
-  val message: String = js.native
+  val message: String
   
-  val progress: Double = js.native
+  val progress: Double
   
-  def show(): Unit = js.native
+  def show(): Unit
   
-  val `type`: typings.ckeditor.CKEDITOR.plugins.notification.`type` = js.native
+  val `type`: typings.ckeditor.CKEDITOR.plugins.notification.`type`
   
-  def update(options: updateOptions): Unit = js.native
+  def update(options: updateOptions): Unit
 }
 object notification {
   
@@ -57,18 +55,17 @@ object notification {
     __obj.asInstanceOf[notification]
   }
   
-  @js.native
   trait area extends StObject {
     
-    def add(notification: notification): Unit = js.native
+    def add(notification: notification): Unit
     
-    val editor: typings.ckeditor.CKEDITOR.editor = js.native
+    val editor: typings.ckeditor.CKEDITOR.editor
     
-    val element: typings.ckeditor.CKEDITOR.dom.element = js.native
+    val element: typings.ckeditor.CKEDITOR.dom.element
     
-    val notifications: js.Array[notification] = js.native
+    val notifications: js.Array[notification]
     
-    def remove(notification: notification): Unit = js.native
+    def remove(notification: notification): Unit
   }
   object area {
     
@@ -147,10 +144,11 @@ object notification {
     def setUpdate(value: updateOptions => Unit): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
   
-  @js.native
-  trait options extends optionsBase {
+  trait options
+    extends StObject
+       with optionsBase {
     
-    var message: String = js.native
+    var message: String
   }
   object options {
     
@@ -168,14 +166,13 @@ object notification {
     }
   }
   
-  @js.native
   trait optionsBase extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var progress: js.UndefOr[Double] = js.native
+    var progress: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[typings.ckeditor.CKEDITOR.plugins.notification.`type`] = js.native
+    var `type`: js.UndefOr[typings.ckeditor.CKEDITOR.plugins.notification.`type`] = js.undefined
   }
   object optionsBase {
     
@@ -230,12 +227,13 @@ object notification {
     def warning: typings.ckeditor.ckeditorStrings.warning = "warning".asInstanceOf[typings.ckeditor.ckeditorStrings.warning]
   }
   
-  @js.native
-  trait updateOptions extends optionsBase {
+  trait updateOptions
+    extends StObject
+       with optionsBase {
     
-    var important: js.UndefOr[Boolean] = js.native
+    var important: js.UndefOr[Boolean] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object updateOptions {
     

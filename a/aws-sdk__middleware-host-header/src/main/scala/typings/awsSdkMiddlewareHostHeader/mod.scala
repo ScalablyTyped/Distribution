@@ -7,39 +7,37 @@ import typings.awsSdkTypes.middlewareMod.Pluggable
 import typings.awsSdkTypes.transferMod.RequestHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/middleware-host-header", "getHostHeaderPlugin")
+  @JSImport("@aws-sdk/middleware-host-header", JSImport.Namespace)
   @js.native
-  def getHostHeaderPlugin(options: HostHeaderResolvedConfig): Pluggable[_, _] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/middleware-host-header", "hostHeaderMiddleware")
-  @js.native
-  def hostHeaderMiddleware[Input /* <: js.Object */, Output /* <: js.Object */](options: HostHeaderResolvedConfig): BuildMiddleware[Input, Output] = js.native
+  @scala.inline
+  def getHostHeaderPlugin(options: HostHeaderResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getHostHeaderPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  
+  @scala.inline
+  def hostHeaderMiddleware[Input /* <: js.Object */, Output /* <: js.Object */](options: HostHeaderResolvedConfig): BuildMiddleware[Input, Output] = ^.asInstanceOf[js.Dynamic].applyDynamic("hostHeaderMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[Input, Output]]
   
   @JSImport("@aws-sdk/middleware-host-header", "hostHeaderMiddlewareOptions")
   @js.native
-  val hostHeaderMiddlewareOptions: BuildHandlerOptions with AbsoluteLocation = js.native
+  val hostHeaderMiddlewareOptions: BuildHandlerOptions & AbsoluteLocation = js.native
   
-  @JSImport("@aws-sdk/middleware-host-header", "resolveHostHeaderConfig")
-  @js.native
-  def resolveHostHeaderConfig[T](input: T with PreviouslyResolved with HostHeaderInputConfig): T with HostHeaderResolvedConfig = js.native
+  @scala.inline
+  def resolveHostHeaderConfig[T](input: T & PreviouslyResolved & HostHeaderInputConfig): T & HostHeaderResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveHostHeaderConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & HostHeaderResolvedConfig]
   
-  @js.native
   trait HostHeaderInputConfig extends StObject
   
-  @js.native
   trait HostHeaderResolvedConfig extends StObject {
     
-    var requestHandler: RequestHandler[_, _, js.Object] = js.native
+    var requestHandler: RequestHandler[js.Any, js.Any, js.Object]
   }
   object HostHeaderResolvedConfig {
     
     @scala.inline
-    def apply(requestHandler: RequestHandler[_, _, js.Object]): HostHeaderResolvedConfig = {
+    def apply(requestHandler: RequestHandler[js.Any, js.Any, js.Object]): HostHeaderResolvedConfig = {
       val __obj = js.Dynamic.literal(requestHandler = requestHandler.asInstanceOf[js.Any])
       __obj.asInstanceOf[HostHeaderResolvedConfig]
     }
@@ -48,19 +46,18 @@ object mod {
     implicit class HostHeaderResolvedConfigMutableBuilder[Self <: HostHeaderResolvedConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRequestHandler(value: RequestHandler[_, _, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      def setRequestHandler(value: RequestHandler[js.Any, js.Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PreviouslyResolved extends StObject {
     
-    var requestHandler: RequestHandler[_, _, js.Object] = js.native
+    var requestHandler: RequestHandler[js.Any, js.Any, js.Object]
   }
   object PreviouslyResolved {
     
     @scala.inline
-    def apply(requestHandler: RequestHandler[_, _, js.Object]): PreviouslyResolved = {
+    def apply(requestHandler: RequestHandler[js.Any, js.Any, js.Object]): PreviouslyResolved = {
       val __obj = js.Dynamic.literal(requestHandler = requestHandler.asInstanceOf[js.Any])
       __obj.asInstanceOf[PreviouslyResolved]
     }
@@ -69,7 +66,7 @@ object mod {
     implicit class PreviouslyResolvedMutableBuilder[Self <: PreviouslyResolved] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRequestHandler(value: RequestHandler[_, _, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
+      def setRequestHandler(value: RequestHandler[js.Any, js.Any, js.Object]): Self = StObject.set(x, "requestHandler", value.asInstanceOf[js.Any])
     }
   }
 }

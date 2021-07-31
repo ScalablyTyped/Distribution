@@ -2,34 +2,32 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the size and coordinates of a rectangle.
   */
-@js.native
 trait Rectangle extends StObject {
   
   /**
     * Gets the rectangle's height.
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Gets the rectangle's width.
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * Gets the x-coordinate of the upper-left corner of the rectangle.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Gets the y-coordinate of the upper-left corner of the rectangle.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Rectangle {
   

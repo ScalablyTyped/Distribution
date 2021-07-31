@@ -4,19 +4,17 @@ import typings.node.Buffer
 import typings.std.JSON
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Data extends StObject {
     
-    var data: Buffer | String | JSON = js.native
+    var data: Buffer | String | JSON
     
-    var headers: js.Any = js.native
+    var headers: js.Any
     
-    var status: Double = js.native
+    var status: Double
   }
   object Data {
     

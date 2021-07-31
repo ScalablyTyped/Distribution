@@ -7,7 +7,6 @@ import typings.jquery.JQuery
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("backbone.marionette", "Behavior")
@@ -80,5 +79,5 @@ class Behavior () extends Object {
   /**
     * The View that this behavior is attached to.
     */
-  var view: View[_] = js.native
+  var view: View[js.Any] = js.native
 }

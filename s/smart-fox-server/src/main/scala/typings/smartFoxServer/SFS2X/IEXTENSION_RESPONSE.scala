@@ -2,17 +2,15 @@ package typings.smartFoxServer.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEXTENSION_RESPONSE extends StObject {
   
-  var cmd: String = js.native
+  var cmd: String
   
-  var params: js.Object = js.native
+  var params: js.Object
   
-  var sourceRoom: Double = js.native
+  var sourceRoom: Double
 }
 object IEXTENSION_RESPONSE {
   

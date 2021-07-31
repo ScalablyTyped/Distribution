@@ -10,9 +10,9 @@ Escape LaTeX special characters with Javascript
 | ------------------ | :-------------: |
 | Full name          | escape-latex |
 | Keywords           | latex, escape |
-| # releases         | 2 |
-| # dependents       | 12 |
-| # downloads        | 8600908 |
+| # releases         | 0 |
+| # dependents       | 14 |
+| # downloads        | 10215910 |
 | # stars            | 0 |
 
 ## Links

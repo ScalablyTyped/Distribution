@@ -2,15 +2,13 @@ package typings.jwplayer.jwplayer
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaylistItemParam extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var item: js.Any = js.native
+  var item: js.Any
 }
 object PlaylistItemParam {
   

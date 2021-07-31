@@ -12,7 +12,7 @@ horsepower for your modules
 | Keywords           | control, flow, async, series, parallel |
 | # releases         | 0 |
 | # dependents       | 48 |
-| # downloads        | 1191294 |
+| # downloads        | 1622811 |
 | # stars            | 8 |
 
 ## Links

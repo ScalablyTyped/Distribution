@@ -2,42 +2,42 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ELangTest
-@js.native
-trait IELangTestDefaults extends IELangBaseDefaults {
+trait IELangTestDefaults
+  extends StObject
+     with IELangBaseDefaults {
   
-  var formHtml: String = js.native
+  var formHtml: String
   
-  var rdoOrderedLabel: String = js.native
+  var rdoOrderedLabel: String
   
-  var rdoOrderedTooltip: String = js.native
+  var rdoOrderedTooltip: String
   
-  var rdoRandomlyLabel: String = js.native
+  var rdoRandomlyLabel: String
   
-  var rdoRandomlyTooltip: String = js.native
+  var rdoRandomlyTooltip: String
   
-  var rdoSelectedLabel: String = js.native
+  var rdoSelectedLabel: String
   
-  var rdoSelectedTooltip: String = js.native
+  var rdoSelectedTooltip: String
   
-  var rdoTypedLabel: String = js.native
+  var rdoTypedLabel: String
   
-  var rdoTypedTooltip: String = js.native
+  var rdoTypedTooltip: String
   
-  var rdoVoicedLabel: String = js.native
+  var rdoVoicedLabel: String
   
-  var rdoVoicedTooltip: String = js.native
+  var rdoVoicedTooltip: String
   
-  var rdoWrittedLabel: String = js.native
+  var rdoWrittedLabel: String
   
-  var rdoWrittedTooltip: String = js.native
+  var rdoWrittedTooltip: String
   
-  var startButtonLabel: String = js.native
+  var startButtonLabel: String
   
-  var stopButtonLabel: String = js.native
+  var stopButtonLabel: String
 }
 object IELangTestDefaults {
   

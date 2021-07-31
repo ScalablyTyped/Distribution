@@ -2,15 +2,13 @@ package typings.nodeRedEditorClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hide extends StObject {
   
-  var hide: Double = js.native
+  var hide: Double
   
-  var show: Double = js.native
+  var show: Double
 }
 object Hide {
   

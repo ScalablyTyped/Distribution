@@ -2,12 +2,14 @@ package typings.antDesignProUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickProFormItemPropsMod {
   
-  @JSImport("@ant-design/pro-utils/lib/pickProFormItemProps", JSImport.Default)
+  @JSImport("@ant-design/pro-utils/lib/pickProFormItemProps", JSImport.Namespace)
   @js.native
-  def default(props: js.Object): js.Object = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

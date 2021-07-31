@@ -7,7 +7,6 @@ import typings.novaEditorNode.anon.Env
 import typings.novaEditorNode.anon.InitializationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -16,8 +15,15 @@ object global {
   @JSGlobal("Charset")
   @js.native
   class Charset ()
-    extends typings.novaEditorNode.Charset {
+    extends StObject
+       with typings.novaEditorNode.Charset {
     def this(characters: String) = this()
+    
+    /* CompleteClass */
+    override def concat(charsets: typings.novaEditorNode.Charset*): typings.novaEditorNode.Charset = js.native
+    
+    /* CompleteClass */
+    override def intersect(charsets: typings.novaEditorNode.Charset*): typings.novaEditorNode.Charset = js.native
   }
   object Charset {
     
@@ -93,16 +99,30 @@ object global {
   @JSGlobal("Color")
   @js.native
   class Color protected ()
-    extends typings.novaEditorNode.Color {
+    extends StObject
+       with typings.novaEditorNode.Color {
     def this(format: ColorFormat, components: ColorComponents) = this()
+    
+    /* CompleteClass */
+    var components: ColorComponents = js.native
+    
+    /* CompleteClass */
+    var format: ColorFormat = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/completion-item/
   @JSGlobal("CompletionItem")
   @js.native
   class CompletionItem protected ()
-    extends typings.novaEditorNode.CompletionItem {
+    extends StObject
+       with typings.novaEditorNode.CompletionItem {
     def this(label: String, kind: CompletionItemKind) = this()
+    
+    /* CompleteClass */
+    var kind: CompletionItemKind = js.native
+    
+    /* CompleteClass */
+    var label: String = js.native
   }
   
   @JSGlobal("CompletionItemKind")
@@ -110,63 +130,63 @@ object global {
   object CompletionItemKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.novaEditorNode.CompletionItemKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.novaEditorNode.CompletionItemKind & Double] = js.native
     
-    /* 14 */ val Argument: typings.novaEditorNode.CompletionItemKind.Argument with Double = js.native
+    /* 14 */ val Argument: typings.novaEditorNode.CompletionItemKind.Argument & Double = js.native
     
-    /* 2 */ val Category: typings.novaEditorNode.CompletionItemKind.Category with Double = js.native
+    /* 2 */ val Category: typings.novaEditorNode.CompletionItemKind.Category & Double = js.native
     
-    /* 1 */ val Class: typings.novaEditorNode.CompletionItemKind.Class with Double = js.native
+    /* 1 */ val Class: typings.novaEditorNode.CompletionItemKind.Class & Double = js.native
     
-    /* 9 */ val Closure: typings.novaEditorNode.CompletionItemKind.Closure with Double = js.native
+    /* 9 */ val Closure: typings.novaEditorNode.CompletionItemKind.Closure & Double = js.native
     
-    /* 15 */ val Color: typings.novaEditorNode.CompletionItemKind.Color with Double = js.native
+    /* 15 */ val Color: typings.novaEditorNode.CompletionItemKind.Color & Double = js.native
     
-    /* 11 */ val Constant: typings.novaEditorNode.CompletionItemKind.Constant with Double = js.native
+    /* 11 */ val Constant: typings.novaEditorNode.CompletionItemKind.Constant & Double = js.native
     
-    /* 10 */ val Constructor: typings.novaEditorNode.CompletionItemKind.Constructor with Double = js.native
+    /* 10 */ val Constructor: typings.novaEditorNode.CompletionItemKind.Constructor & Double = js.native
     
-    /* 4 */ val Enum: typings.novaEditorNode.CompletionItemKind.Enum with Double = js.native
+    /* 4 */ val Enum: typings.novaEditorNode.CompletionItemKind.Enum & Double = js.native
     
-    /* 16 */ val EnumMember: typings.novaEditorNode.CompletionItemKind.EnumMember with Double = js.native
+    /* 16 */ val EnumMember: typings.novaEditorNode.CompletionItemKind.EnumMember & Double = js.native
     
-    /* 18 */ val Expression: typings.novaEditorNode.CompletionItemKind.Expression with Double = js.native
+    /* 18 */ val Expression: typings.novaEditorNode.CompletionItemKind.Expression & Double = js.native
     
-    /* 21 */ val File: typings.novaEditorNode.CompletionItemKind.File with Double = js.native
+    /* 21 */ val File: typings.novaEditorNode.CompletionItemKind.File & Double = js.native
     
-    /* 7 */ val Function: typings.novaEditorNode.CompletionItemKind.Function with Double = js.native
+    /* 7 */ val Function: typings.novaEditorNode.CompletionItemKind.Function & Double = js.native
     
-    /* 3 */ val Interface: typings.novaEditorNode.CompletionItemKind.Interface with Double = js.native
+    /* 3 */ val Interface: typings.novaEditorNode.CompletionItemKind.Interface & Double = js.native
     
-    /* 23 */ val Keyword: typings.novaEditorNode.CompletionItemKind.Keyword with Double = js.native
+    /* 23 */ val Keyword: typings.novaEditorNode.CompletionItemKind.Keyword & Double = js.native
     
-    /* 8 */ val Method: typings.novaEditorNode.CompletionItemKind.Method with Double = js.native
+    /* 8 */ val Method: typings.novaEditorNode.CompletionItemKind.Method & Double = js.native
     
-    /* 20 */ val Package: typings.novaEditorNode.CompletionItemKind.Package with Double = js.native
+    /* 20 */ val Package: typings.novaEditorNode.CompletionItemKind.Package & Double = js.native
     
-    /* 13 */ val Property: typings.novaEditorNode.CompletionItemKind.Property with Double = js.native
+    /* 13 */ val Property: typings.novaEditorNode.CompletionItemKind.Property & Double = js.native
     
-    /* 22 */ val Reference: typings.novaEditorNode.CompletionItemKind.Reference with Double = js.native
+    /* 22 */ val Reference: typings.novaEditorNode.CompletionItemKind.Reference & Double = js.native
     
-    /* 17 */ val Statement: typings.novaEditorNode.CompletionItemKind.Statement with Double = js.native
+    /* 17 */ val Statement: typings.novaEditorNode.CompletionItemKind.Statement & Double = js.native
     
-    /* 6 */ val Struct: typings.novaEditorNode.CompletionItemKind.Struct with Double = js.native
+    /* 6 */ val Struct: typings.novaEditorNode.CompletionItemKind.Struct & Double = js.native
     
-    /* 27 */ val StyleClass: typings.novaEditorNode.CompletionItemKind.StyleClass with Double = js.native
+    /* 27 */ val StyleClass: typings.novaEditorNode.CompletionItemKind.StyleClass & Double = js.native
     
-    /* 25 */ val StyleDirective: typings.novaEditorNode.CompletionItemKind.StyleDirective with Double = js.native
+    /* 25 */ val StyleDirective: typings.novaEditorNode.CompletionItemKind.StyleDirective & Double = js.native
     
-    /* 26 */ val StyleID: typings.novaEditorNode.CompletionItemKind.StyleID with Double = js.native
+    /* 26 */ val StyleID: typings.novaEditorNode.CompletionItemKind.StyleID & Double = js.native
     
-    /* 24 */ val StyleRuleset: typings.novaEditorNode.CompletionItemKind.StyleRuleset with Double = js.native
+    /* 24 */ val StyleRuleset: typings.novaEditorNode.CompletionItemKind.StyleRuleset & Double = js.native
     
-    /* 19 */ val Tag: typings.novaEditorNode.CompletionItemKind.Tag with Double = js.native
+    /* 19 */ val Tag: typings.novaEditorNode.CompletionItemKind.Tag & Double = js.native
     
-    /* 0 */ val Type: typings.novaEditorNode.CompletionItemKind.Type with Double = js.native
+    /* 0 */ val Type: typings.novaEditorNode.CompletionItemKind.Type & Double = js.native
     
-    /* 5 */ val Union: typings.novaEditorNode.CompletionItemKind.Union with Double = js.native
+    /* 5 */ val Union: typings.novaEditorNode.CompletionItemKind.Union & Double = js.native
     
-    /* 12 */ val Variable: typings.novaEditorNode.CompletionItemKind.Variable with Double = js.native
+    /* 12 */ val Variable: typings.novaEditorNode.CompletionItemKind.Variable & Double = js.native
   }
   
   @JSGlobal("CompletionReason")
@@ -174,76 +194,156 @@ object global {
   object CompletionReason extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.novaEditorNode.CompletionReason with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.novaEditorNode.CompletionReason & Double] = js.native
     
-    /* 1 */ val Character: typings.novaEditorNode.CompletionReason.Character with Double = js.native
+    /* 1 */ val Character: typings.novaEditorNode.CompletionReason.Character & Double = js.native
     
-    /* 0 */ val Invoke: typings.novaEditorNode.CompletionReason.Invoke with Double = js.native
+    /* 0 */ val Invoke: typings.novaEditorNode.CompletionReason.Invoke & Double = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/composite-disposable/
   @JSGlobal("CompositeDisposable")
   @js.native
   class CompositeDisposable ()
-    extends typings.novaEditorNode.CompositeDisposable
+    extends StObject
+       with typings.novaEditorNode.CompositeDisposable {
+    
+    /* CompleteClass */
+    override def add(`object`: typings.novaEditorNode.Disposable): Unit = js.native
+    
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /* CompleteClass */
+    override def delete(`object`: typings.novaEditorNode.Disposable): Unit = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def remove(`object`: typings.novaEditorNode.Disposable): Unit = js.native
+  }
   
   /// https://novadocs.panic.com/api-reference/disposable/
   @JSGlobal("Disposable")
   @js.native
   class Disposable ()
-    extends typings.novaEditorNode.Disposable
+    extends StObject
+       with typings.novaEditorNode.Disposable {
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+  }
   object Disposable {
     
-    /* static member */
-    @JSGlobal("Disposable.isDisposable")
+    @JSGlobal("Disposable")
     @js.native
-    def isDisposable(x: js.Any): /* is nova-editor-node.Disposable */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def isDisposable(x: js.Any): /* is nova-editor-node.Disposable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisposable")(x.asInstanceOf[js.Any]).asInstanceOf[/* is nova-editor-node.Disposable */ Boolean]
   }
   
   /// https://novadocs.panic.com/api-reference/emitter/
   @JSGlobal("Emitter")
   @js.native
   class Emitter ()
-    extends typings.novaEditorNode.Emitter
+    extends StObject
+       with typings.novaEditorNode.Emitter {
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+  }
   
   @JSGlobal("FileSystem")
   @js.native
   class FileSystem protected ()
-    extends typings.novaEditorNode.FileSystem
+    extends StObject
+       with typings.novaEditorNode.FileSystem
   
   @JSGlobal("InsertTextFormat")
   @js.native
   object InsertTextFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.novaEditorNode.InsertTextFormat with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.novaEditorNode.InsertTextFormat & Double] = js.native
     
-    /* 0 */ val PlainText: typings.novaEditorNode.InsertTextFormat.PlainText with Double = js.native
+    /* 0 */ val PlainText: typings.novaEditorNode.InsertTextFormat.PlainText & Double = js.native
     
-    /* 1 */ val Snippet: typings.novaEditorNode.InsertTextFormat.Snippet with Double = js.native
+    /* 1 */ val Snippet: typings.novaEditorNode.InsertTextFormat.Snippet & Double = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/issue/
   @JSGlobal("Issue")
   @js.native
   class Issue ()
-    extends typings.novaEditorNode.Issue
+    extends StObject
+       with typings.novaEditorNode.Issue {
+    
+    /* CompleteClass */
+    var code: Double | String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var severity: IssueSeverity = js.native
+    
+    /* CompleteClass */
+    var source: String | Null = js.native
+  }
   
   /// https://novadocs.panic.com/api-reference/issue-collection/
   @JSGlobal("IssueCollection")
   @js.native
   class IssueCollection ()
-    extends typings.novaEditorNode.IssueCollection {
+    extends StObject
+       with typings.novaEditorNode.IssueCollection {
     def this(name: String) = this()
+    
+    /* CompleteClass */
+    override def append(uri: String, issues: js.Array[typings.novaEditorNode.Issue]): Unit = js.native
+    
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /* CompleteClass */
+    override def get(uri: String): js.Array[typings.novaEditorNode.Issue] = js.native
+    
+    /* CompleteClass */
+    override def has(uri: String): Boolean = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
+    override def remove(uri: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def set(uri: String, issues: js.Array[typings.novaEditorNode.Issue]): Unit = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/issue-parser/
   @JSGlobal("IssueParser")
   @js.native
   class IssueParser ()
-    extends typings.novaEditorNode.IssueParser {
+    extends StObject
+       with typings.novaEditorNode.IssueParser {
     def this(matcherNames: String) = this()
     def this(matcherNames: js.Array[String]) = this()
+    
+    /* CompleteClass */
+    override def clear(): Unit = js.native
+    
+    /* CompleteClass */
+    override val issues: js.Array[typings.novaEditorNode.Issue] = js.native
+    
+    /* CompleteClass */
+    override def pushLine(line: String): Unit = js.native
   }
   
   @JSGlobal("IssueSeverity")
@@ -251,22 +351,23 @@ object global {
   object IssueSeverity extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.novaEditorNode.IssueSeverity with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.novaEditorNode.IssueSeverity & Double] = js.native
     
-    /* 0 */ val Error: typings.novaEditorNode.IssueSeverity.Error with Double = js.native
+    /* 0 */ val Error: typings.novaEditorNode.IssueSeverity.Error & Double = js.native
     
-    /* 2 */ val Hint: typings.novaEditorNode.IssueSeverity.Hint with Double = js.native
+    /* 2 */ val Hint: typings.novaEditorNode.IssueSeverity.Hint & Double = js.native
     
-    /* 3 */ val Info: typings.novaEditorNode.IssueSeverity.Info with Double = js.native
+    /* 3 */ val Info: typings.novaEditorNode.IssueSeverity.Info & Double = js.native
     
-    /* 1 */ val Warning: typings.novaEditorNode.IssueSeverity.Warning with Double = js.native
+    /* 1 */ val Warning: typings.novaEditorNode.IssueSeverity.Warning & Double = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/language-client/
   @JSGlobal("LanguageClient")
   @js.native
   class LanguageClient protected ()
-    extends typings.novaEditorNode.LanguageClient {
+    extends StObject
+       with typings.novaEditorNode.LanguageClient {
     def this(identifier: String, name: String, serverOptions: Args, clientOptions: InitializationOptions) = this()
   }
   
@@ -274,8 +375,12 @@ object global {
   @JSGlobal("NotificationRequest")
   @js.native
   class NotificationRequest protected ()
-    extends typings.novaEditorNode.NotificationRequest {
+    extends StObject
+       with typings.novaEditorNode.NotificationRequest {
     def this(identifier: String) = this()
+    
+    /* CompleteClass */
+    override val identifier: String = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/process/
@@ -285,7 +390,8 @@ object global {
   @JSGlobal("Process")
   @js.native
   class Process protected ()
-    extends typings.novaEditorNode.Process {
+    extends StObject
+       with typings.novaEditorNode.Process {
     def this(command: String) = this()
     def this(command: String, options: Cwd) = this()
   }
@@ -294,22 +400,97 @@ object global {
   @JSGlobal("Range")
   @js.native
   class Range protected ()
-    extends typings.novaEditorNode.Range {
+    extends StObject
+       with typings.novaEditorNode.Range {
     def this(start: Double, end: Double) = this()
+    
+    /* CompleteClass */
+    override def compare(other: typings.novaEditorNode.Range): Double = js.native
+    
+    /* CompleteClass */
+    override def containsIndex(index: Double): Boolean = js.native
+    
+    /* CompleteClass */
+    override def containsRange(other: typings.novaEditorNode.Range): Boolean = js.native
+    
+    /* CompleteClass */
+    var empty: Boolean = js.native
+    
+    /* CompleteClass */
+    var end: Double = js.native
+    
+    /* CompleteClass */
+    override def intersection(other: typings.novaEditorNode.Range): typings.novaEditorNode.Range = js.native
+    
+    /* CompleteClass */
+    override def intersectsRange(other: typings.novaEditorNode.Range): Boolean = js.native
+    
+    /* CompleteClass */
+    override def isEqual(other: typings.novaEditorNode.Range): Boolean = js.native
+    
+    /* CompleteClass */
+    var length: Double = js.native
+    
+    /* CompleteClass */
+    var start: Double = js.native
+    
+    /* CompleteClass */
+    override def union(other: typings.novaEditorNode.Range): typings.novaEditorNode.Range = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/scanner/
   @JSGlobal("Scanner")
   @js.native
   class Scanner protected ()
-    extends typings.novaEditorNode.Scanner {
+    extends StObject
+       with typings.novaEditorNode.Scanner {
     def this(string: String) = this()
+    
+    /* CompleteClass */
+    override val atEnd: Boolean = js.native
+    
+    /* CompleteClass */
+    var caseSensitive: Boolean = js.native
+    
+    /* CompleteClass */
+    var location: Double = js.native
+    
+    /* CompleteClass */
+    override def scanChars(charset: typings.novaEditorNode.Charset): String | Null = js.native
+    
+    /* CompleteClass */
+    override def scanFloat(): Double | Null = js.native
+    
+    /* CompleteClass */
+    override def scanHexFloat(): Double | Null = js.native
+    
+    /* CompleteClass */
+    override def scanHexInt(): Double | Null = js.native
+    
+    /* CompleteClass */
+    override def scanInt(): Double | Null = js.native
+    
+    /* CompleteClass */
+    override def scanString(string: String): String | Null = js.native
+    
+    /* CompleteClass */
+    override def scanUpToChars(charset: typings.novaEditorNode.Charset): String | Null = js.native
+    
+    /* CompleteClass */
+    override def scanUpToString(string: String): String | Null = js.native
+    
+    /* CompleteClass */
+    var skipChars: typings.novaEditorNode.Charset = js.native
+    
+    /* CompleteClass */
+    override val string: String = js.native
   }
   
   @JSGlobal("Task")
   @js.native
   class Task protected ()
-    extends typings.novaEditorNode.Task {
+    extends StObject
+       with typings.novaEditorNode.Task {
     def this(name: String) = this()
   }
   object Task {
@@ -334,7 +515,8 @@ object global {
   @JSGlobal("TaskProcessAction")
   @js.native
   class TaskProcessAction protected ()
-    extends typings.novaEditorNode.TaskProcessAction {
+    extends StObject
+       with typings.novaEditorNode.TaskProcessAction {
     def this(command: String) = this()
     def this(command: String, options: Env) = this()
   }
@@ -343,47 +525,66 @@ object global {
   @JSGlobal("TextEdit")
   @js.native
   class TextEdit protected ()
-    extends typings.novaEditorNode.TextEdit {
+    extends StObject
+       with typings.novaEditorNode.TextEdit {
     def this(range: typings.novaEditorNode.Range, newText: String) = this()
+    
+    /* CompleteClass */
+    override val newText: String = js.native
+    
+    /* CompleteClass */
+    override val range: typings.novaEditorNode.Range = js.native
   }
   object TextEdit {
     
-    /* static member */
-    @JSGlobal("TextEdit.delete")
+    @JSGlobal("TextEdit")
     @js.native
-    def delete(range: typings.novaEditorNode.Range): typings.novaEditorNode.TextEdit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("TextEdit.insert")
-    @js.native
-    def insert(position: Double, newText: String): typings.novaEditorNode.TextEdit = js.native
+    @scala.inline
+    def delete(range: typings.novaEditorNode.Range): typings.novaEditorNode.TextEdit = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(range.asInstanceOf[js.Any]).asInstanceOf[typings.novaEditorNode.TextEdit]
     
     /* static member */
-    @JSGlobal("TextEdit.replace")
-    @js.native
-    def replace(range: typings.novaEditorNode.Range, newText: String): typings.novaEditorNode.TextEdit = js.native
+    @scala.inline
+    def insert(position: Double, newText: String): typings.novaEditorNode.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("insert")(position.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.novaEditorNode.TextEdit]
+    
+    /* static member */
+    @scala.inline
+    def replace(range: typings.novaEditorNode.Range, newText: String): typings.novaEditorNode.TextEdit = (^.asInstanceOf[js.Dynamic].applyDynamic("replace")(range.asInstanceOf[js.Any], newText.asInstanceOf[js.Any])).asInstanceOf[typings.novaEditorNode.TextEdit]
   }
   
   /// https://novadocs.panic.com/api-reference/text-editor/
   @JSGlobal("TextEditor")
   @js.native
   class TextEditor protected ()
-    extends typings.novaEditorNode.TextEditor
+    extends StObject
+       with typings.novaEditorNode.TextEditor
   object TextEditor {
     
-    /* static member */
-    @JSGlobal("TextEditor.isTextEditor")
+    @JSGlobal("TextEditor")
     @js.native
-    def isTextEditor(`object`: js.Any): /* is nova-editor-node.TextEditor */ Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def isTextEditor(`object`: js.Any): /* is nova-editor-node.TextEditor */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTextEditor")(`object`.asInstanceOf[js.Any]).asInstanceOf[/* is nova-editor-node.TextEditor */ Boolean]
   }
   
   /// https://novadocs.panic.com/api-reference/tree-item/
   @JSGlobal("TreeItem")
   @js.native
   class TreeItem protected ()
-    extends typings.novaEditorNode.TreeItem {
+    extends StObject
+       with typings.novaEditorNode.TreeItem {
     def this(name: String) = this()
     def this(name: String, collapsibleState: TreeItemCollapsibleState) = this()
+    
+    /* CompleteClass */
+    var collapsibleState: TreeItemCollapsibleState = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   @JSGlobal("TreeItemCollapsibleState")
@@ -391,62 +592,56 @@ object global {
   object TreeItemCollapsibleState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.novaEditorNode.TreeItemCollapsibleState with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.novaEditorNode.TreeItemCollapsibleState & Double] = js.native
     
-    /* 1 */ val Collapsed: typings.novaEditorNode.TreeItemCollapsibleState.Collapsed with Double = js.native
+    /* 1 */ val Collapsed: typings.novaEditorNode.TreeItemCollapsibleState.Collapsed & Double = js.native
     
-    /* 2 */ val Expanded: typings.novaEditorNode.TreeItemCollapsibleState.Expanded with Double = js.native
+    /* 2 */ val Expanded: typings.novaEditorNode.TreeItemCollapsibleState.Expanded & Double = js.native
     
-    /* 0 */ val None: typings.novaEditorNode.TreeItemCollapsibleState.None with Double = js.native
+    /* 0 */ val None: typings.novaEditorNode.TreeItemCollapsibleState.None & Double = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/tree-view/
   @JSGlobal("TreeView")
   @js.native
   class TreeView[E] protected ()
-    extends typings.novaEditorNode.TreeView[E] {
+    extends StObject
+       with typings.novaEditorNode.TreeView[E] {
     def this(identifier: String) = this()
     def this(identifier: String, options: DataProvider[E]) = this()
+    
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
   }
   
   /// https://novadocs.panic.com/api-reference/
-  @JSGlobal("atob")
-  @js.native
-  def atob(data: String): String = js.native
+  @scala.inline
+  def atob(data: String): String = js.Dynamic.global.applyDynamic("atob")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("btoa")
-  @js.native
-  def btoa(data: String): String = js.native
+  @scala.inline
+  def btoa(data: String): String = js.Dynamic.global.applyDynamic("btoa")(data.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSGlobal("clearInterval")
-  @js.native
-  def clearInterval(): Unit = js.native
-  @JSGlobal("clearInterval")
-  @js.native
-  def clearInterval(handle: Double): Unit = js.native
+  @scala.inline
+  def clearInterval(): Unit = js.Dynamic.global.applyDynamic("clearInterval")().asInstanceOf[Unit]
+  @scala.inline
+  def clearInterval(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearInterval")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("clearTimeout")
-  @js.native
-  def clearTimeout(): Unit = js.native
-  @JSGlobal("clearTimeout")
-  @js.native
-  def clearTimeout(handle: Double): Unit = js.native
+  @scala.inline
+  def clearTimeout(): Unit = js.Dynamic.global.applyDynamic("clearTimeout")().asInstanceOf[Unit]
+  @scala.inline
+  def clearTimeout(handle: Double): Unit = js.Dynamic.global.applyDynamic("clearTimeout")(handle.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSGlobal("nova")
   @js.native
   val nova: Environment = js.native
   
-  @JSGlobal("setInterval")
-  @js.native
-  def setInterval(handler: TimerHandler, timeout: js.UndefOr[scala.Nothing], arguments: js.Any*): Double = js.native
-  @JSGlobal("setInterval")
-  @js.native
-  def setInterval(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = js.native
+  @scala.inline
+  def setInterval(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def setInterval(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setInterval")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSGlobal("setTimeout")
-  @js.native
-  def setTimeout(handler: TimerHandler, timeout: js.UndefOr[scala.Nothing], arguments: js.Any*): Double = js.native
-  @JSGlobal("setTimeout")
-  @js.native
-  def setTimeout(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = js.native
+  @scala.inline
+  def setTimeout(handler: TimerHandler, timeout: Double, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def setTimeout(handler: TimerHandler, timeout: Unit, arguments: js.Any*): Double = (js.Dynamic.global.applyDynamic("setTimeout")(handler.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

@@ -3,15 +3,14 @@ package typings.inboxsdk.mod.ButterBar
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadingMessageDescriptorHtmlElement
-  extends LoadingMessageDescriptorBase
+  extends StObject
+     with LoadingMessageDescriptorBase
      with LoadingMessageDescriptor {
   
-  var el: HTMLElement = js.native
+  var el: HTMLElement
 }
 object LoadingMessageDescriptorHtmlElement {
   

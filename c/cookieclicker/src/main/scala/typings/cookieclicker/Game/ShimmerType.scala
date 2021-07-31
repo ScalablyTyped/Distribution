@@ -2,37 +2,35 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShimmerType extends StObject {
   
-  def getMaxTime(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit = js.native
+  def getMaxTime(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit
   
-  def getMinTime(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit = js.native
+  def getMinTime(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit
   
-  def initFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit = js.native
+  def initFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit
   
-  var maxTime: Double = js.native
+  var maxTime: Double
   
-  var minTime: Double = js.native
+  var minTime: Double
   
-  def missFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit = js.native
+  def missFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit
   
-  def popFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit = js.native
+  def popFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def spawnConditions(): Boolean = js.native
+  def spawnConditions(): Boolean
   
-  var spawned: Boolean | PseudoBoolean = js.native
+  var spawned: Boolean | PseudoBoolean
   
-  var spawnsOnTimer: Boolean = js.native
+  var spawnsOnTimer: Boolean
   
-  var time: Double = js.native
+  var time: Double
   
-  def updateFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit = js.native
+  def updateFunc(me: Shimmer[/* keyof std.Record<string, cookieclicker.Game.ShimmerType> */ String, js.Object]): Unit
 }
 object ShimmerType {
   

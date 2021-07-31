@@ -2,21 +2,19 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableOptions extends StObject {
   
   // 'soft'
-  var cache_size: js.UndefOr[Double] = js.native
+  var cache_size: js.UndefOr[Double] = js.undefined
   
-  var datacenter: js.UndefOr[String] = js.native
+  var datacenter: js.UndefOr[String] = js.undefined
   
   // 'id'
-  var durability: js.UndefOr[String] = js.native
+  var durability: js.UndefOr[String] = js.undefined
   
-  var primary_key: js.UndefOr[String] = js.native
+  var primary_key: js.UndefOr[String] = js.undefined
 }
 object TableOptions {
   

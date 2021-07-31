@@ -13,7 +13,6 @@ import typings.tether.mod.ITetherOptions
 import typings.tether.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -57,18 +56,17 @@ object mod {
   
   object ReactTether {
     
-    @js.native
     trait Constraints extends StObject {
       
-      var attachment: js.UndefOr[String | together] = js.native
+      var attachment: js.UndefOr[String | together] = js.undefined
       
-      var outOfBoundsClass: js.UndefOr[String] = js.native
+      var outOfBoundsClass: js.UndefOr[String] = js.undefined
       
-      var pin: js.UndefOr[Boolean | js.Array[String]] = js.native
+      var pin: js.UndefOr[Boolean | js.Array[String]] = js.undefined
       
-      var pinnedClass: js.UndefOr[String] = js.native
+      var pinnedClass: js.UndefOr[String] = js.undefined
       
-      var to: js.UndefOr[ContraintsTo] = js.native
+      var to: js.UndefOr[ContraintsTo] = js.undefined
     }
     object Constraints {
       
@@ -126,12 +124,11 @@ object mod {
     
     type RenderProp = js.Function1[/* ref */ RefObject[Element], ReactNode]
     
-    @js.native
     trait TetherAttachment extends StObject {
       
-      var left: String = js.native
+      var left: String
       
-      var top: String = js.native
+      var top: String
     }
     object TetherAttachment {
       
@@ -152,31 +149,31 @@ object mod {
       }
     }
     
-    @js.native
     trait TetherComponentProps
-      extends Props[TetherComponent]
+      extends StObject
+         with Props[TetherComponent]
          with ITetherOptions {
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       @JSName("constraints")
-      var constraints_TetherComponentProps: js.UndefOr[js.Array[Constraints]] = js.native
+      var constraints_TetherComponentProps: js.UndefOr[js.Array[Constraints]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var onRepositioned: js.UndefOr[js.Function0[Unit]] = js.native
+      var onRepositioned: js.UndefOr[js.Function0[Unit]] = js.undefined
       
-      var onUpdate: js.UndefOr[js.Function1[/* data */ UpdateEventData, Unit]] = js.native
+      var onUpdate: js.UndefOr[js.Function1[/* data */ UpdateEventData, Unit]] = js.undefined
       
-      var renderElement: js.UndefOr[RenderProp] = js.native
+      var renderElement: js.UndefOr[RenderProp] = js.undefined
       
-      var renderElementTag: js.UndefOr[String] = js.native
+      var renderElementTag: js.UndefOr[String] = js.undefined
       
-      var renderElementTo: js.UndefOr[Element | String] = js.native
+      var renderElementTo: js.UndefOr[Element | String] = js.undefined
       
-      var renderTarget: js.UndefOr[RenderProp] = js.native
+      var renderTarget: js.UndefOr[RenderProp] = js.undefined
       
-      var style: js.UndefOr[CSSProperties] = js.native
+      var style: js.UndefOr[CSSProperties] = js.undefined
     }
     object TetherComponentProps {
       
@@ -254,12 +251,11 @@ object mod {
       }
     }
     
-    @js.native
     trait UpdateEventData extends StObject {
       
-      var attachment: TetherAttachment = js.native
+      var attachment: TetherAttachment
       
-      var targetAttachment: TetherAttachment = js.native
+      var targetAttachment: TetherAttachment
     }
     object UpdateEventData {
       

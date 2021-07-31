@@ -5,13 +5,14 @@ import typings.antvGBase.typesMod.Cursor
 import typings.antvGBase.typesMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antvGBaseStrings {
   
   @js.native
-  sealed trait default extends Cursor
+  sealed trait default
+    extends StObject
+       with Cursor
   @scala.inline
   def default: default = "default".asInstanceOf[default]
   
@@ -86,17 +87,23 @@ object antvGBaseStrings {
   def a_ : a_ = "a".asInstanceOf[a_]
   
   @js.native
-  sealed trait add extends ChangeType
+  sealed trait add
+    extends StObject
+       with ChangeType
   @scala.inline
   def add: add = "add".asInstanceOf[add]
   
   @js.native
-  sealed trait alias extends Cursor
+  sealed trait alias
+    extends StObject
+       with Cursor
   @scala.inline
   def alias: alias = "alias".asInstanceOf[alias]
   
   @js.native
-  sealed trait `all-scroll` extends Cursor
+  sealed trait `all-scroll`
+    extends StObject
+       with Cursor
   @scala.inline
   def `all-scroll`: `all-scroll` = "all-scroll".asInstanceOf[`all-scroll`]
   
@@ -106,12 +113,16 @@ object antvGBaseStrings {
   def alphabetic: alphabetic = "alphabetic".asInstanceOf[alphabetic]
   
   @js.native
-  sealed trait attr extends ChangeType
+  sealed trait attr
+    extends StObject
+       with ChangeType
   @scala.inline
   def attr: attr = "attr".asInstanceOf[attr]
   
   @js.native
-  sealed trait auto extends Cursor
+  sealed trait auto
+    extends StObject
+       with Cursor
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -146,12 +157,16 @@ object antvGBaseStrings {
   def c_ : c_ = "c".asInstanceOf[c_]
   
   @js.native
-  sealed trait canvas extends Renderer
+  sealed trait canvas
+    extends StObject
+       with Renderer
   @scala.inline
   def canvas: canvas = "canvas".asInstanceOf[canvas]
   
   @js.native
-  sealed trait cell extends Cursor
+  sealed trait cell
+    extends StObject
+       with Cursor
   @scala.inline
   def cell: cell = "cell".asInstanceOf[cell]
   
@@ -161,42 +176,58 @@ object antvGBaseStrings {
   def center: center = "center".asInstanceOf[center]
   
   @js.native
-  sealed trait changeSize extends ChangeType
+  sealed trait changeSize
+    extends StObject
+       with ChangeType
   @scala.inline
   def changeSize: changeSize = "changeSize".asInstanceOf[changeSize]
   
   @js.native
-  sealed trait clear extends ChangeType
+  sealed trait clear
+    extends StObject
+       with ChangeType
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
   @js.native
-  sealed trait clip extends ChangeType
+  sealed trait clip
+    extends StObject
+       with ChangeType
   @scala.inline
   def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
-  sealed trait `col-resize` extends Cursor
+  sealed trait `col-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `col-resize`: `col-resize` = "col-resize".asInstanceOf[`col-resize`]
   
   @js.native
-  sealed trait `context-menu` extends Cursor
+  sealed trait `context-menu`
+    extends StObject
+       with Cursor
   @scala.inline
   def `context-menu`: `context-menu` = "context-menu".asInstanceOf[`context-menu`]
   
   @js.native
-  sealed trait copy extends Cursor
+  sealed trait copy
+    extends StObject
+       with Cursor
   @scala.inline
   def copy: copy = "copy".asInstanceOf[copy]
   
   @js.native
-  sealed trait crosshair extends Cursor
+  sealed trait crosshair
+    extends StObject
+       with Cursor
   @scala.inline
   def crosshair: crosshair = "crosshair".asInstanceOf[crosshair]
   
   @js.native
-  sealed trait `e-resize` extends Cursor
+  sealed trait `e-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `e-resize`: `e-resize` = "e-resize".asInstanceOf[`e-resize`]
   
@@ -206,17 +237,23 @@ object antvGBaseStrings {
   def end: end = "end".asInstanceOf[end]
   
   @js.native
-  sealed trait `ew-resize` extends Cursor
+  sealed trait `ew-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `ew-resize`: `ew-resize` = "ew-resize".asInstanceOf[`ew-resize`]
   
   @js.native
-  sealed trait grab extends Cursor
+  sealed trait grab
+    extends StObject
+       with Cursor
   @scala.inline
   def grab: grab = "grab".asInstanceOf[grab]
   
   @js.native
-  sealed trait grabbing extends Cursor
+  sealed trait grabbing
+    extends StObject
+       with Cursor
   @scala.inline
   def grabbing: grabbing = "grabbing".asInstanceOf[grabbing]
   
@@ -231,12 +268,16 @@ object antvGBaseStrings {
   def hanging: hanging = "hanging".asInstanceOf[hanging]
   
   @js.native
-  sealed trait help extends Cursor
+  sealed trait help
+    extends StObject
+       with Cursor
   @scala.inline
   def help: help = "help".asInstanceOf[help]
   
   @js.native
-  sealed trait hide extends ChangeType
+  sealed trait hide
+    extends StObject
+       with ChangeType
   @scala.inline
   def hide: hide = "hide".asInstanceOf[hide]
   
@@ -271,7 +312,9 @@ object antvGBaseStrings {
   def m_ : m_ = "m".asInstanceOf[m_]
   
   @js.native
-  sealed trait matrix extends ChangeType
+  sealed trait matrix
+    extends StObject
+       with ChangeType
   @scala.inline
   def matrix: matrix = "matrix".asInstanceOf[matrix]
   
@@ -286,32 +329,44 @@ object antvGBaseStrings {
   def miter: miter = "miter".asInstanceOf[miter]
   
   @js.native
-  sealed trait move extends Cursor
+  sealed trait move
+    extends StObject
+       with Cursor
   @scala.inline
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait `n-resize` extends Cursor
+  sealed trait `n-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `n-resize`: `n-resize` = "n-resize".asInstanceOf[`n-resize`]
   
   @js.native
-  sealed trait `ne-resize` extends Cursor
+  sealed trait `ne-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `ne-resize`: `ne-resize` = "ne-resize".asInstanceOf[`ne-resize`]
   
   @js.native
-  sealed trait `nesw-resize` extends Cursor
+  sealed trait `nesw-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `nesw-resize`: `nesw-resize` = "nesw-resize".asInstanceOf[`nesw-resize`]
   
   @js.native
-  sealed trait `no-drop` extends Cursor
+  sealed trait `no-drop`
+    extends StObject
+       with Cursor
   @scala.inline
   def `no-drop`: `no-drop` = "no-drop".asInstanceOf[`no-drop`]
   
   @js.native
-  sealed trait none extends Cursor
+  sealed trait none
+    extends StObject
+       with Cursor
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -321,22 +376,30 @@ object antvGBaseStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait `not-allowed` extends Cursor
+  sealed trait `not-allowed`
+    extends StObject
+       with Cursor
   @scala.inline
   def `not-allowed`: `not-allowed` = "not-allowed".asInstanceOf[`not-allowed`]
   
   @js.native
-  sealed trait `ns-resize` extends Cursor
+  sealed trait `ns-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `ns-resize`: `ns-resize` = "ns-resize".asInstanceOf[`ns-resize`]
   
   @js.native
-  sealed trait `nw-resize` extends Cursor
+  sealed trait `nw-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `nw-resize`: `nw-resize` = "nw-resize".asInstanceOf[`nw-resize`]
   
   @js.native
-  sealed trait `nwse-resize` extends Cursor
+  sealed trait `nwse-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `nwse-resize`: `nwse-resize` = "nwse-resize".asInstanceOf[`nwse-resize`]
   
@@ -351,12 +414,16 @@ object antvGBaseStrings {
   def oblique: oblique = "oblique".asInstanceOf[oblique]
   
   @js.native
-  sealed trait pointer extends Cursor
+  sealed trait pointer
+    extends StObject
+       with Cursor
   @scala.inline
   def pointer: pointer = "pointer".asInstanceOf[pointer]
   
   @js.native
-  sealed trait progress extends Cursor
+  sealed trait progress
+    extends StObject
+       with Cursor
   @scala.inline
   def progress: progress = "progress".asInstanceOf[progress]
   
@@ -371,7 +438,9 @@ object antvGBaseStrings {
   def r_ : r_ = "r".asInstanceOf[r_]
   
   @js.native
-  sealed trait remove extends ChangeType
+  sealed trait remove
+    extends StObject
+       with ChangeType
   @scala.inline
   def remove: remove = "remove".asInstanceOf[remove]
   
@@ -386,12 +455,16 @@ object antvGBaseStrings {
   def round: round = "round".asInstanceOf[round]
   
   @js.native
-  sealed trait `row-resize` extends Cursor
+  sealed trait `row-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `row-resize`: `row-resize` = "row-resize".asInstanceOf[`row-resize`]
   
   @js.native
-  sealed trait `s-resize` extends Cursor
+  sealed trait `s-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `s-resize`: `s-resize` = "s-resize".asInstanceOf[`s-resize`]
   
@@ -401,12 +474,16 @@ object antvGBaseStrings {
   def s_ : s_ = "s".asInstanceOf[s_]
   
   @js.native
-  sealed trait `se-resize` extends Cursor
+  sealed trait `se-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `se-resize`: `se-resize` = "se-resize".asInstanceOf[`se-resize`]
   
   @js.native
-  sealed trait show extends ChangeType
+  sealed trait show
+    extends StObject
+       with ChangeType
   @scala.inline
   def show: show = "show".asInstanceOf[show]
   
@@ -416,7 +493,9 @@ object antvGBaseStrings {
   def `small-caps`: `small-caps` = "small-caps".asInstanceOf[`small-caps`]
   
   @js.native
-  sealed trait sort extends ChangeType
+  sealed trait sort
+    extends StObject
+       with ChangeType
   @scala.inline
   def sort: sort = "sort".asInstanceOf[sort]
   
@@ -431,12 +510,16 @@ object antvGBaseStrings {
   def start: start = "start".asInstanceOf[start]
   
   @js.native
-  sealed trait svg extends Renderer
+  sealed trait svg
+    extends StObject
+       with Renderer
   @scala.inline
   def svg: svg = "svg".asInstanceOf[svg]
   
   @js.native
-  sealed trait `sw-resize` extends Cursor
+  sealed trait `sw-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `sw-resize`: `sw-resize` = "sw-resize".asInstanceOf[`sw-resize`]
   
@@ -446,7 +529,9 @@ object antvGBaseStrings {
   def t_ : t_ = "t".asInstanceOf[t_]
   
   @js.native
-  sealed trait text extends Cursor
+  sealed trait text
+    extends StObject
+       with Cursor
   @scala.inline
   def text: text = "text".asInstanceOf[text]
   
@@ -466,20 +551,28 @@ object antvGBaseStrings {
   def v_ : v_ = "v".asInstanceOf[v_]
   
   @js.native
-  sealed trait `vertical-text` extends Cursor
+  sealed trait `vertical-text`
+    extends StObject
+       with Cursor
   @scala.inline
   def `vertical-text`: `vertical-text` = "vertical-text".asInstanceOf[`vertical-text`]
   
   @js.native
-  sealed trait `w-resize` extends Cursor
+  sealed trait `w-resize`
+    extends StObject
+       with Cursor
   @scala.inline
   def `w-resize`: `w-resize` = "w-resize".asInstanceOf[`w-resize`]
   
   @js.native
-  sealed trait wait extends Cursor
+  sealed trait wait
+    extends StObject
+       with Cursor
   
   @js.native
-  sealed trait zIndex extends ChangeType
+  sealed trait zIndex
+    extends StObject
+       with ChangeType
   @scala.inline
   def zIndex: zIndex = "zIndex".asInstanceOf[zIndex]
   
@@ -489,12 +582,16 @@ object antvGBaseStrings {
   def z_ : z_ = "z".asInstanceOf[z_]
   
   @js.native
-  sealed trait `zoom-in` extends Cursor
+  sealed trait `zoom-in`
+    extends StObject
+       with Cursor
   @scala.inline
   def `zoom-in`: `zoom-in` = "zoom-in".asInstanceOf[`zoom-in`]
   
   @js.native
-  sealed trait `zoom-out` extends Cursor
+  sealed trait `zoom-out`
+    extends StObject
+       with Cursor
   @scala.inline
   def `zoom-out`: `zoom-out` = "zoom-out".asInstanceOf[`zoom-out`]
 }

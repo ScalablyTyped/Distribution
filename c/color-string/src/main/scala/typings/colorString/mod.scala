@@ -5,68 +5,68 @@ import typings.colorString.colorStringStrings.hwb
 import typings.colorString.colorStringStrings.rgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object get {
     
+    @scala.inline
+    def apply(colorString: String): ColorDescriptor | Null = ^.asInstanceOf[js.Dynamic].apply(colorString.asInstanceOf[js.Any]).asInstanceOf[ColorDescriptor | Null]
+    
     @JSImport("color-string", "get")
     @js.native
-    def apply(colorString: String): ColorDescriptor | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("color-string", "get.hsl")
-    @js.native
-    def hsl(colorString: String): Color | Null = js.native
+    @scala.inline
+    def hsl(colorString: String): Color | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(colorString.asInstanceOf[js.Any]).asInstanceOf[Color | Null]
     
-    @JSImport("color-string", "get.hwb")
-    @js.native
-    def hwb(colorString: String): Color | Null = js.native
+    @scala.inline
+    def hwb(colorString: String): Color | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Color | Null]
     
-    @JSImport("color-string", "get.rgb")
-    @js.native
-    def rgb(colorString: String): Color | Null = js.native
+    @scala.inline
+    def rgb(colorString: String): Color | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(colorString.asInstanceOf[js.Any]).asInstanceOf[Color | Null]
   }
   
   object to {
     
-    @JSImport("color-string", "to.hex")
+    @JSImport("color-string", "to")
     @js.native
-    def hex(args: (Double | js.Array[Double])*): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("color-string", "to.hsl")
-    @js.native
-    def hsl(args: (Double | js.Array[Double])*): String = js.native
+    @scala.inline
+    def hex(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("color-string", "to.hwb")
-    @js.native
-    def hwb(args: (Double | js.Array[Double])*): String = js.native
+    @scala.inline
+    def hsl(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("color-string", "to.keyword")
-    @js.native
-    def keyword(args: (Double | js.Array[Double])*): String = js.native
+    @scala.inline
+    def hwb(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(args.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def keyword(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     
     object rgb {
       
+      @scala.inline
+      def apply(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].apply(args.asInstanceOf[js.Any]).asInstanceOf[String]
+      
       @JSImport("color-string", "to.rgb")
       @js.native
-      def apply(args: (Double | js.Array[Double])*): String = js.native
+      val ^ : js.Any = js.native
       
-      @JSImport("color-string", "to.rgb.percent")
-      @js.native
-      def percent(args: (Double | js.Array[Double])*): String = js.native
+      @scala.inline
+      def percent(args: (Double | js.Array[Double])*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("percent")(args.asInstanceOf[js.Any]).asInstanceOf[String]
     }
   }
   
   type Color = js.Tuple4[Double, Double, Double, Double]
   
-  @js.native
   trait ColorDescriptor extends StObject {
     
-    var model: rgb | hsl | hwb = js.native
+    var model: rgb | hsl | hwb
     
-    var value: Color = js.native
+    var value: Color
   }
   object ColorDescriptor {
     

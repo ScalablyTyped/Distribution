@@ -15,7 +15,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statisticStatisticMod {
@@ -24,7 +23,7 @@ object statisticStatisticMod {
     
     @JSImport("antd/lib/statistic/Statistic", JSImport.Default)
     @js.native
-    val ^ : FC[StatisticProps] with StatisticComponent = js.native
+    val ^ : FC[StatisticProps] & StatisticComponent = js.native
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("antd/lib/statistic/Statistic", "default.Countdown")
@@ -32,21 +31,20 @@ object statisticStatisticMod {
     class Countdown ()
       extends typings.antd.countdownMod.default
     
-    type _To = FC[StatisticProps] with StatisticComponent
+    type _To = FC[StatisticProps] & StatisticComponent
     
     /* This means you don't have to write `^`, but can instead just say `default.foo` */
-    override def _to: FC[StatisticProps] with StatisticComponent = ^
+    override def _to: FC[StatisticProps] & StatisticComponent = ^
   }
   
-  @js.native
   trait StatisticComponent extends StObject {
     
-    var Countdown: Instantiable0[default] with TypeofCountdown = js.native
+    var Countdown: Instantiable0[default] & TypeofCountdown
   }
   object StatisticComponent {
     
     @scala.inline
-    def apply(Countdown: Instantiable0[default] with TypeofCountdown): StatisticComponent = {
+    def apply(Countdown: Instantiable0[default] & TypeofCountdown): StatisticComponent = {
       val __obj = js.Dynamic.literal(Countdown = Countdown.asInstanceOf[js.Any])
       __obj.asInstanceOf[StatisticComponent]
     }
@@ -55,34 +53,35 @@ object statisticStatisticMod {
     implicit class StatisticComponentMutableBuilder[Self <: StatisticComponent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCountdown(value: Instantiable0[default] with TypeofCountdown): Self = StObject.set(x, "Countdown", value.asInstanceOf[js.Any])
+      def setCountdown(value: Instantiable0[default] & TypeofCountdown): Self = StObject.set(x, "Countdown", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait StatisticProps extends FormatConfig {
+  trait StatisticProps
+    extends StObject
+       with FormatConfig {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLDivElement]] = js.undefined
     
-    var prefix: js.UndefOr[ReactNode] = js.native
+    var prefix: js.UndefOr[ReactNode] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var suffix: js.UndefOr[ReactNode] = js.native
+    var suffix: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var value: js.UndefOr[valueType] = js.native
+    var value: js.UndefOr[valueType] = js.undefined
     
-    var valueRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.native
+    var valueRender: js.UndefOr[js.Function1[/* node */ ReactNode, ReactNode]] = js.undefined
     
-    var valueStyle: js.UndefOr[CSSProperties] = js.native
+    var valueStyle: js.UndefOr[CSSProperties] = js.undefined
   }
   object StatisticProps {
     

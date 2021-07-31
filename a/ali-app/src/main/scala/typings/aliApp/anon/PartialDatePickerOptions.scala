@@ -8,26 +8,24 @@ import typings.aliApp.aliAppStrings.`yyyy-MM`
 import typings.aliApp.aliAppStrings.yyyy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ali-app.my.DatePickerOptions> */
-@js.native
 trait PartialDatePickerOptions extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
-  var currentDate: js.UndefOr[String] = js.native
+  var currentDate: js.UndefOr[String] = js.undefined
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[`11`, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[`11`, Unit]] = js.undefined
   
-  var format: js.UndefOr[`yyyy-MM-dd` | HHColonmm | (`yyyy-MM-dd HHColonmm`) | `yyyy-MM` | yyyy] = js.native
+  var format: js.UndefOr[`yyyy-MM-dd` | HHColonmm | (`yyyy-MM-dd HHColonmm`) | `yyyy-MM` | yyyy] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* result */ Date, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ Date, Unit]] = js.undefined
 }
 object PartialDatePickerOptions {
   

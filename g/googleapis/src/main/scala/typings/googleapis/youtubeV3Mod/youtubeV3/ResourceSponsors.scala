@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Sponsors")
@@ -33,7 +32,7 @@ class ResourceSponsors protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSponsorListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaSponsorListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSponsorListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSponsorListResponse] = js.native
   def list(params: ParamsResourceSponsorsList): GaxiosPromise[SchemaSponsorListResponse] = js.native
   def list(params: ParamsResourceSponsorsList, callback: BodyResponseCallback[SchemaSponsorListResponse]): Unit = js.native
   def list(

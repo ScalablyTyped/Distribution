@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceTagNotificationAttribute extends StObject {
   
   /**
     * Indicates wheter all tag keys in the current Region are registered to appear in scheduled event notifications. true indicates that all tag keys in the current Region are registered.
     */
-  var IncludeAllTagsOfInstance: js.UndefOr[Boolean] = js.native
+  var IncludeAllTagsOfInstance: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The registered tag keys.
     */
-  var InstanceTagKeys: js.UndefOr[InstanceTagKeySet] = js.native
+  var InstanceTagKeys: js.UndefOr[InstanceTagKeySet] = js.undefined
 }
 object InstanceTagNotificationAttribute {
   

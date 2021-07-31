@@ -3,23 +3,21 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapType extends StObject {
   
-  def getTile(x: Double, y: Double, z: Double): HTMLElement | Tile = js.native
+  def getTile(x: Double, y: Double, z: Double): HTMLElement | Tile
   
-  var maxZoom: Double = js.native
+  var maxZoom: Double
   
-  var minZoom: Double = js.native
+  var minZoom: Double
   
-  var name: String = js.native
+  var name: String
   
-  var projection: Projection = js.native
+  var projection: Projection
   
-  var tileSize: Size = js.native
+  var tileSize: Size
 }
 object MapType {
   

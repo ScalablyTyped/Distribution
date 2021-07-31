@@ -2,54 +2,52 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents all the details pertaining to a goal.
   */
-@js.native
 trait SchemaGoalData extends StObject {
   
   /**
     * URL of the page where this goal was completed.
     */
-  var goalCompletionLocation: js.UndefOr[String] = js.native
+  var goalCompletionLocation: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of goal completions in this activity.
     */
-  var goalCompletions: js.UndefOr[String] = js.native
+  var goalCompletions: js.UndefOr[String] = js.undefined
   
   /**
     * This identifies the goal as configured for the profile.
     */
-  var goalIndex: js.UndefOr[Double] = js.native
+  var goalIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Name of the goal.
     */
-  var goalName: js.UndefOr[String] = js.native
+  var goalName: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the page one step prior to the goal completion.
     */
-  var goalPreviousStep1: js.UndefOr[String] = js.native
+  var goalPreviousStep1: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the page two steps prior to the goal completion.
     */
-  var goalPreviousStep2: js.UndefOr[String] = js.native
+  var goalPreviousStep2: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the page three steps prior to the goal completion.
     */
-  var goalPreviousStep3: js.UndefOr[String] = js.native
+  var goalPreviousStep3: js.UndefOr[String] = js.undefined
   
   /**
     * Value in this goal.
     */
-  var goalValue: js.UndefOr[Double] = js.native
+  var goalValue: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoalData {
   

@@ -5,7 +5,6 @@ import typings.builderUtilRuntime.publishOptionsMod.S3Options
 import typings.electronPublish.mod.PublishContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object s3PublisherMod {
@@ -18,12 +17,14 @@ object s3PublisherMod {
   /* static members */
   object default {
     
-    @JSImport("app-builder-lib/out/publish/s3/s3Publisher", "default.checkAndResolveOptions")
+    @JSImport("app-builder-lib/out/publish/s3/s3Publisher", JSImport.Default)
     @js.native
-    def checkAndResolveOptions(options: S3Options, channelFromAppVersion: String, errorIfCannot: Boolean): js.Promise[Unit] = js.native
-    @JSImport("app-builder-lib/out/publish/s3/s3Publisher", "default.checkAndResolveOptions")
-    @js.native
-    def checkAndResolveOptions(options: S3Options, channelFromAppVersion: Null, errorIfCannot: Boolean): js.Promise[Unit] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def checkAndResolveOptions(options: S3Options, channelFromAppVersion: String, errorIfCannot: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndResolveOptions")(options.asInstanceOf[js.Any], channelFromAppVersion.asInstanceOf[js.Any], errorIfCannot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+    @scala.inline
+    def checkAndResolveOptions(options: S3Options, channelFromAppVersion: Null, errorIfCannot: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkAndResolveOptions")(options.asInstanceOf[js.Any], channelFromAppVersion.asInstanceOf[js.Any], errorIfCannot.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   @js.native

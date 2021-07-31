@@ -9,7 +9,6 @@ import typings.jquery.JQuery.TouchMoveEvent
 import typings.jquery.JQuery.TouchStartEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -49,11 +48,11 @@ trait FancyBoxGestures extends StObject {
   
   def onZoom(): Unit = js.native
   
-  def onscroll(e: ScrollEvent[_, _, _, _]): Unit = js.native
+  def onscroll(e: ScrollEvent[js.Any, js.Any, js.Any, js.Any]): Unit = js.native
   
-  def ontouchend(e: TouchEndEvent[_, _, _, _]): Unit = js.native
+  def ontouchend(e: TouchEndEvent[js.Any, js.Any, js.Any, js.Any]): Unit = js.native
   
-  def ontouchmove(e: TouchMoveEvent[_, _, _, _]): Unit = js.native
+  def ontouchmove(e: TouchMoveEvent[js.Any, js.Any, js.Any, js.Any]): Unit = js.native
   
-  def ontouchstart(e: TouchStartEvent[_, _, _, _]): Unit = js.native
+  def ontouchstart(e: TouchStartEvent[js.Any, js.Any, js.Any, js.Any]): Unit = js.native
 }

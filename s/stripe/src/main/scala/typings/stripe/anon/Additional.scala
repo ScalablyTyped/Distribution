@@ -2,15 +2,13 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Additional extends StObject {
   
-  var additional: js.Array[String] = js.native
+  var additional: js.Array[String]
   
-  var minimum: js.Array[String] = js.native
+  var minimum: js.Array[String]
 }
 object Additional {
   

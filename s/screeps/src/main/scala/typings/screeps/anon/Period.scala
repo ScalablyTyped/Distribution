@@ -9,19 +9,17 @@ import typings.screeps.screepsNumbers.`50`
 import typings.screeps.screepsStrings.operator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Period extends StObject {
   
-  var className: operator = js.native
+  var className: operator
   
-  var cooldown: `100` = js.native
+  var cooldown: `100`
   
-  var duration: `300` = js.native
+  var duration: `300`
   
-  var effect: js.Tuple5[`50`, `100`, `150`, `200`, `250`] = js.native
+  var effect: js.Tuple5[`50`, `100`, `150`, `200`, `250`]
   
   var level: js.Tuple5[
     typings.screeps.screepsNumbers.`10`, 
@@ -29,19 +27,16 @@ trait Period extends StObject {
     typings.screeps.screepsNumbers.`12`, 
     typings.screeps.screepsNumbers.`14`, 
     typings.screeps.screepsNumbers.`22`
-  ] = js.native
+  ]
   
-  var period: typings.screeps.screepsNumbers.`15` = js.native
+  var period: typings.screeps.screepsNumbers.`15`
   
-  var range: typings.screeps.screepsNumbers.`3` = js.native
+  var range: typings.screeps.screepsNumbers.`3`
 }
 object Period {
   
   @scala.inline
   def apply(
-    className: operator,
-    cooldown: `100`,
-    duration: `300`,
     effect: js.Tuple5[`50`, `100`, `150`, `200`, `250`],
     level: js.Tuple5[
       typings.screeps.screepsNumbers.`10`, 
@@ -49,11 +44,9 @@ object Period {
       typings.screeps.screepsNumbers.`12`, 
       typings.screeps.screepsNumbers.`14`, 
       typings.screeps.screepsNumbers.`22`
-    ],
-    period: typings.screeps.screepsNumbers.`15`,
-    range: typings.screeps.screepsNumbers.`3`
+    ]
   ): Period = {
-    val __obj = js.Dynamic.literal(className = className.asInstanceOf[js.Any], cooldown = cooldown.asInstanceOf[js.Any], duration = duration.asInstanceOf[js.Any], effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], period = period.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(className = "operator", cooldown = 100, duration = 300, effect = effect.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], period = 15, range = 3)
     __obj.asInstanceOf[Period]
   }
   

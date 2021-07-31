@@ -2,15 +2,13 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FinishingBinding extends StObject {
   
-  var `binding-reference-edge`: js.UndefOr[ReferenceEdge] = js.native
+  var `binding-reference-edge`: js.UndefOr[ReferenceEdge] = js.undefined
   
-  var `binding-type`: js.UndefOr[BindingType] = js.native
+  var `binding-type`: js.UndefOr[BindingType] = js.undefined
 }
 object FinishingBinding {
   

@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a DeleteDocumentRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new DeleteDocumentRequest.
   * @param [properties] Properties to set
   */
-class DeleteDocumentRequest () extends IDeleteDocumentRequest {
+class DeleteDocumentRequest ()
+  extends StObject
+     with IDeleteDocumentRequest {
   def this(properties: IDeleteDocumentRequest) = this()
   
   /** DeleteDocumentRequest name. */
@@ -32,18 +33,20 @@ class DeleteDocumentRequest () extends IDeleteDocumentRequest {
 }
 object DeleteDocumentRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new DeleteDocumentRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns DeleteDocumentRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.create")
-  @js.native
-  def create(): DeleteDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.create")
-  @js.native
-  def create(properties: IDeleteDocumentRequest): DeleteDocumentRequest = js.native
+  @scala.inline
+  def create(): DeleteDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DeleteDocumentRequest]
+  @scala.inline
+  def create(properties: IDeleteDocumentRequest): DeleteDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[DeleteDocumentRequest]
   
   /**
     * Decodes a DeleteDocumentRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object DeleteDocumentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.decode")
-  @js.native
-  def decode(reader: Reader): DeleteDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): DeleteDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): DeleteDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): DeleteDocumentRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): DeleteDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteDocumentRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): DeleteDocumentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteDocumentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): DeleteDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteDocumentRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): DeleteDocumentRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[DeleteDocumentRequest]
   
   /**
     * Decodes a DeleteDocumentRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object DeleteDocumentRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): DeleteDocumentRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): DeleteDocumentRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): DeleteDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteDocumentRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): DeleteDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[DeleteDocumentRequest]
   
   /**
     * Encodes the specified DeleteDocumentRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object DeleteDocumentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.encode")
-  @js.native
-  def encode(message: IDeleteDocumentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.encode")
-  @js.native
-  def encode(message: IDeleteDocumentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IDeleteDocumentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IDeleteDocumentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified DeleteDocumentRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object DeleteDocumentRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDeleteDocumentRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IDeleteDocumentRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IDeleteDocumentRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IDeleteDocumentRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a DeleteDocumentRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object DeleteDocumentRequest {
     * @returns DeleteDocumentRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): DeleteDocumentRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): DeleteDocumentRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[DeleteDocumentRequest]
   
   /**
     * Creates a plain object from a DeleteDocumentRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object DeleteDocumentRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.toObject")
-  @js.native
-  def toObject(message: DeleteDocumentRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.toObject")
-  @js.native
-  def toObject(message: DeleteDocumentRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: DeleteDocumentRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: DeleteDocumentRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a DeleteDocumentRequest message.
@@ -140,7 +130,6 @@ object DeleteDocumentRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.DeleteDocumentRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

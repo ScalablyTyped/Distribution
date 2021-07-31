@@ -4,7 +4,6 @@ import typings.reactLazyLoadImageComponent.mod.DelayMethod
 import typings.reactLazyLoadImageComponent.mod.Effect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactLazyLoadImageComponentStrings {
@@ -60,12 +59,16 @@ object reactLazyLoadImageComponentStrings {
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait `black-and-white` extends Effect
+  sealed trait `black-and-white`
+    extends StObject
+       with Effect
   @scala.inline
   def `black-and-white`: `black-and-white` = "black-and-white".asInstanceOf[`black-and-white`]
   
   @js.native
-  sealed trait blur extends Effect
+  sealed trait blur
+    extends StObject
+       with Effect
   @scala.inline
   def blur: blur = "blur".asInstanceOf[blur]
   
@@ -85,7 +88,9 @@ object reactLazyLoadImageComponentStrings {
   def date: date = "date".asInstanceOf[date]
   
   @js.native
-  sealed trait debounce extends DelayMethod
+  sealed trait debounce
+    extends StObject
+       with DelayMethod
   @scala.inline
   def debounce: debounce = "debounce".asInstanceOf[debounce]
   
@@ -210,7 +215,9 @@ object reactLazyLoadImageComponentStrings {
   def on: on = "on".asInstanceOf[on]
   
   @js.native
-  sealed trait opacity extends Effect
+  sealed trait opacity
+    extends StObject
+       with Effect
   @scala.inline
   def opacity: opacity = "opacity".asInstanceOf[opacity]
   
@@ -295,7 +302,9 @@ object reactLazyLoadImageComponentStrings {
   def `text removals`: `text removals` = ("text removals").asInstanceOf[`text removals`]
   
   @js.native
-  sealed trait throttle extends DelayMethod
+  sealed trait throttle
+    extends StObject
+       with DelayMethod
   @scala.inline
   def throttle: throttle = "throttle".asInstanceOf[throttle]
   

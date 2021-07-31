@@ -2,26 +2,24 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellSelectionChangedEventUIParam extends StObject {
   
   /**
     * Gets reference to the cell object.
     */
-  var cell: js.UndefOr[js.Any] = js.native
+  var cell: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to GridSelection.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to selected cells object array.
     */
-  var selectedCells: js.UndefOr[js.Array[_]] = js.native
+  var selectedCells: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object CellSelectionChangedEventUIParam {
   
@@ -47,7 +45,7 @@ object CellSelectionChangedEventUIParam {
     def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setSelectedCells(value: js.Array[_]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
+    def setSelectedCells(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)

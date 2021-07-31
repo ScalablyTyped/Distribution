@@ -6,29 +6,30 @@ import typings.std.IntersectionObserver
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lozad", JSImport.Namespace)
-  @js.native
-  def apply(): Observer = js.native
-  @JSImport("lozad", JSImport.Namespace)
-  @js.native
-  def apply(selector: js.UndefOr[Selector], options: Option): Observer = js.native
-  @JSImport("lozad", JSImport.Namespace)
-  @js.native
-  def apply(selector: Selector): Observer = js.native
+  @scala.inline
+  def apply(): Observer = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Observer]
+  @scala.inline
+  def apply(selector: Unit, options: Option): Observer = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observer]
+  @scala.inline
+  def apply(selector: Selector): Observer = ^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any]).asInstanceOf[Observer]
+  @scala.inline
+  def apply(selector: Selector, options: Option): Observer = (^.asInstanceOf[js.Dynamic].apply(selector.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Observer]
   
+  @JSImport("lozad", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Observer extends StObject {
     
-    def observe(): Unit = js.native
+    def observe(): Unit
     
-    var observer: IntersectionObserver = js.native
+    var observer: IntersectionObserver
     
-    def triggerLoad(element: Element): Unit = js.native
+    def triggerLoad(element: Element): Unit
   }
   object Observer {
     
@@ -52,16 +53,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var load: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
     
-    var loaded: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.native
+    var loaded: js.UndefOr[js.Function1[/* element */ Element, Unit]] = js.undefined
     
-    var rootMargin: js.UndefOr[String] = js.native
+    var rootMargin: js.UndefOr[String] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
   }
   object Option {
     

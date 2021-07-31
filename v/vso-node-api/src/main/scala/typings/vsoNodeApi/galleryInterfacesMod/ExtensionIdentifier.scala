@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtensionIdentifier extends StObject {
   
   /**
     * The ExtensionName component part of the fully qualified ExtensionIdentifier
     */
-  var extensionName: String = js.native
+  var extensionName: String
   
   /**
     * The PublisherName component part of the fully qualified ExtensionIdentifier
     */
-  var publisherName: String = js.native
+  var publisherName: String
 }
 object ExtensionIdentifier {
   

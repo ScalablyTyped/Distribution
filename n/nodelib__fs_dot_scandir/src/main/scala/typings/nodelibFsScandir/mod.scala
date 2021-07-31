@@ -5,10 +5,13 @@ import typings.nodelibFsScandir.settingsMod.default
 import typings.nodelibFsScandir.typesMod.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@nodelib/fs.scandir", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@nodelib/fs.scandir", "Settings")
   @js.native
@@ -16,25 +19,19 @@ object mod {
     def this(_options: Options) = this()
   }
   
-  @JSImport("@nodelib/fs.scandir", "scandir")
-  @js.native
-  def scandir(path: String, callback: AsyncCallback): Unit = js.native
-  @JSImport("@nodelib/fs.scandir", "scandir")
-  @js.native
-  def scandir(path: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = js.native
-  @JSImport("@nodelib/fs.scandir", "scandir")
-  @js.native
-  def scandir(path: String, optionsOrSettings: default, callback: AsyncCallback): Unit = js.native
+  @scala.inline
+  def scandir(path: String, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scandir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scandir(path: String, optionsOrSettings: Options, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scandir")(path.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def scandir(path: String, optionsOrSettings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scandir")(path.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@nodelib/fs.scandir", "scandirSync")
-  @js.native
-  def scandirSync(path: String): js.Array[Entry] = js.native
-  @JSImport("@nodelib/fs.scandir", "scandirSync")
-  @js.native
-  def scandirSync(path: String, optionsOrSettings: Options): js.Array[Entry] = js.native
-  @JSImport("@nodelib/fs.scandir", "scandirSync")
-  @js.native
-  def scandirSync(path: String, optionsOrSettings: default): js.Array[Entry] = js.native
+  @scala.inline
+  def scandirSync(path: String): js.Array[Entry] = ^.asInstanceOf[js.Dynamic].applyDynamic("scandirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Entry]]
+  @scala.inline
+  def scandirSync(path: String, optionsOrSettings: Options): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("scandirSync")(path.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
+  @scala.inline
+  def scandirSync(path: String, optionsOrSettings: default): js.Array[Entry] = (^.asInstanceOf[js.Dynamic].applyDynamic("scandirSync")(path.asInstanceOf[js.Any], optionsOrSettings.asInstanceOf[js.Any])).asInstanceOf[js.Array[Entry]]
   
   type AsyncCallback = typings.nodelibFsScandir.asyncMod.AsyncCallback
 }

@@ -2,15 +2,13 @@ package typings.intercomClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object messageMod {
   
-  @js.native
   trait Avatar extends StObject {
     
-    var image_url: String = js.native
+    var image_url: String
   }
   object Avatar {
     
@@ -28,14 +26,15 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait CreateMessage extends MessageModel {
+  trait CreateMessage
+    extends StObject
+       with MessageModel {
     
-    var from: FromToObject = js.native
+    var from: FromToObject
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
-    var to: FromToObject = js.native
+    var to: FromToObject
   }
   object CreateMessage {
     
@@ -62,12 +61,11 @@ object messageMod {
     }
   }
   
-  @js.native
   trait FromToObject extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object FromToObject {
     
@@ -89,16 +87,17 @@ object messageMod {
     }
   }
   
-  @js.native
-  trait Message extends MessageModel {
+  trait Message
+    extends StObject
+       with MessageModel {
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var id: String = js.native
+    var id: String
     
-    var owner: Owner = js.native
+    var owner: Owner
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Message {
     
@@ -126,14 +125,13 @@ object messageMod {
     }
   }
   
-  @js.native
   trait MessageModel extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var message_type: String = js.native
+    var message_type: String
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
   }
   object MessageModel {
     
@@ -160,22 +158,21 @@ object messageMod {
     }
   }
   
-  @js.native
   trait Owner extends StObject {
     
-    var avatar: Avatar = js.native
+    var avatar: Avatar
     
-    var away_mode_enabled: Boolean = js.native
+    var away_mode_enabled: Boolean
     
-    var away_mode_reassign: Boolean = js.native
+    var away_mode_reassign: Boolean
     
-    var email: String = js.native
+    var email: String
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Owner {
     

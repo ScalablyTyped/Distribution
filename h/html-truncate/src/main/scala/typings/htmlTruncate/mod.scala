@@ -2,7 +2,6 @@ package typings.htmlTruncate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -10,25 +9,26 @@ object mod {
   /**
     * Truncate HTML text and also keep tag safe.
     */
-  @JSImport("html-truncate", JSImport.Namespace)
-  @js.native
-  def apply(input: String, maxLength: Double): String = js.native
-  @JSImport("html-truncate", JSImport.Namespace)
-  @js.native
-  def apply(input: String, maxLength: Double, options: TruncateOptions): String = js.native
+  @scala.inline
+  def apply(input: String, maxLength: Double): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(input: String, maxLength: Double, options: TruncateOptions): String = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], maxLength.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
+  @JSImport("html-truncate", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait TruncateOptions extends StObject {
     
     /**
       * Omission symbol for truncated string, '...' by default.
       */
-    var ellipsis: Boolean | String = js.native
+    var ellipsis: Boolean | String
     
     /**
       * Flag to specify if keep image tag, false by default.
       */
-    var keepImageTag: Boolean = js.native
+    var keepImageTag: Boolean
   }
   object TruncateOptions {
     

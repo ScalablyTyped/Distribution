@@ -4,60 +4,60 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait HistogramConfig extends Object {
+trait HistogramConfig
+  extends StObject
+     with Object {
   
   /**
     * Indicates the average value of the dataset.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var average: js.UndefOr[Double] = js.native
+  var average: js.UndefOr[Double] = js.undefined
   
   /**
     * Function for styling bars representing histogram bins.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var barCreatedFunction: js.UndefOr[BarCreatedFunction] = js.native
+  var barCreatedFunction: js.UndefOr[BarCreatedFunction] = js.undefined
   
   /**
     * The bins of the histogram.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var bins: js.UndefOr[js.Array[Bin]] = js.native
+  var bins: js.UndefOr[js.Array[Bin]] = js.undefined
   
   /**
     * Function that fires each time a data line is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var dataLineCreatedFunction: js.UndefOr[DataLineCreatedFunction] = js.native
+  var dataLineCreatedFunction: js.UndefOr[DataLineCreatedFunction] = js.undefined
   
   /**
     * When set, renders lines on the histogram that indicate important or meaningful values to the end user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var dataLines: js.UndefOr[js.Array[HistogramConfigDataLines]] = js.native
+  var dataLines: js.UndefOr[js.Array[HistogramConfigDataLines]] = js.undefined
   
   /**
     * Indicates the standard deviation of the dataset.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var standardDeviation: js.UndefOr[Double] = js.native
+  var standardDeviation: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates the standard deviation of the dataset.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SmartMappingSliderBase.html#HistogramConfig)
     */
-  var standardDeviationCount: js.UndefOr[Double] = js.native
+  var standardDeviationCount: js.UndefOr[Double] = js.undefined
 }
 object HistogramConfig {
   

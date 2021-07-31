@@ -10,17 +10,17 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operationsTypesMod {
   
-  @js.native
-  trait AttrParamMapper extends ParamMapper {
+  trait AttrParamMapper
+    extends StObject
+       with ParamMapper {
     
-    var tfDeprecatedName: js.UndefOr[String] = js.native
+    var tfDeprecatedName: js.UndefOr[String] = js.undefined
     
-    var tfName: js.UndefOr[String] = js.native
+    var tfName: js.UndefOr[String] = js.undefined
   }
   object AttrParamMapper {
     
@@ -126,24 +126,23 @@ object operationsTypesMod {
     def transformation: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.transformation = "transformation".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.transformation]
   }
   
-  @js.native
   trait Graph extends StObject {
     
-    var functions: js.UndefOr[StringDictionary[Graph]] = js.native
+    var functions: js.UndefOr[StringDictionary[Graph]] = js.undefined
     
-    var initNodes: js.UndefOr[js.Array[Node]] = js.native
+    var initNodes: js.UndefOr[js.Array[Node]] = js.undefined
     
-    var inputs: js.Array[Node] = js.native
+    var inputs: js.Array[Node]
     
-    var nodes: StringDictionary[Node] = js.native
+    var nodes: StringDictionary[Node]
     
-    var outputs: js.Array[Node] = js.native
+    var outputs: js.Array[Node]
     
-    var placeholders: js.Array[Node] = js.native
+    var placeholders: js.Array[Node]
     
-    var signature: js.UndefOr[ISignatureDef] = js.native
+    var signature: js.UndefOr[ISignatureDef] = js.undefined
     
-    var weights: js.Array[Node] = js.native
+    var weights: js.Array[Node]
   }
   object Graph {
     
@@ -212,12 +211,11 @@ object operationsTypesMod {
     }
   }
   
-  @js.native
   trait GraphNode extends StObject {
     
-    var attrs: StringDictionary[ValueType] = js.native
+    var attrs: StringDictionary[ValueType]
     
-    var inputs: js.Array[Tensor[Rank]] = js.native
+    var inputs: js.Array[Tensor[Rank]]
   }
   object GraphNode {
     
@@ -241,12 +239,13 @@ object operationsTypesMod {
     }
   }
   
-  @js.native
-  trait InputParamMapper extends ParamMapper {
+  trait InputParamMapper
+    extends StObject
+       with ParamMapper {
     
-    var end: js.UndefOr[Double] = js.native
+    var end: js.UndefOr[Double] = js.undefined
     
-    var start: Double = js.native
+    var start: Double
   }
   object InputParamMapper {
     
@@ -271,12 +270,13 @@ object operationsTypesMod {
     }
   }
   
-  @js.native
-  trait InputParamValue extends ParamValue {
+  trait InputParamValue
+    extends StObject
+       with ParamValue {
     
-    var inputIndexEnd: js.UndefOr[Double] = js.native
+    var inputIndexEnd: js.UndefOr[Double] = js.undefined
     
-    var inputIndexStart: js.UndefOr[Double] = js.native
+    var inputIndexStart: js.UndefOr[Double] = js.undefined
   }
   object InputParamValue {
     
@@ -319,30 +319,29 @@ object operationsTypesMod {
     Tensor[Rank] | js.Array[Tensor[Rank]]
   ]
   
-  @js.native
   trait Node extends StObject {
     
-    var attrParams: StringDictionary[ParamValue] = js.native
+    var attrParams: StringDictionary[ParamValue]
     
-    var category: Category = js.native
+    var category: Category
     
-    var children: js.Array[Node] = js.native
+    var children: js.Array[Node]
     
-    var defaultOutput: js.UndefOr[Double] = js.native
+    var defaultOutput: js.UndefOr[Double] = js.undefined
     
-    var inputNames: js.Array[String] = js.native
+    var inputNames: js.Array[String]
     
-    var inputParams: StringDictionary[InputParamValue] = js.native
+    var inputParams: StringDictionary[InputParamValue]
     
-    var inputs: js.Array[Node] = js.native
+    var inputs: js.Array[Node]
     
-    var name: String = js.native
+    var name: String
     
-    var op: String = js.native
+    var op: String
     
-    var rawAttrs: js.UndefOr[StringDictionary[IAttrValue]] = js.native
+    var rawAttrs: js.UndefOr[StringDictionary[IAttrValue]] = js.undefined
     
-    var signatureKey: js.UndefOr[String] = js.native
+    var signatureKey: js.UndefOr[String] = js.undefined
   }
   object Node {
     
@@ -422,18 +421,17 @@ object operationsTypesMod {
     Tensor[Rank] | js.Array[Tensor[Rank]] | (js.Promise[Tensor[Rank] | js.Array[Tensor[Rank]]])
   ]
   
-  @js.native
   trait OpMapper extends StObject {
     
-    var attrs: js.UndefOr[js.Array[AttrParamMapper]] = js.native
+    var attrs: js.UndefOr[js.Array[AttrParamMapper]] = js.undefined
     
-    var category: js.UndefOr[Category] = js.native
+    var category: js.UndefOr[Category] = js.undefined
     
-    var customExecutor: js.UndefOr[OpExecutor] = js.native
+    var customExecutor: js.UndefOr[OpExecutor] = js.undefined
     
-    var inputs: js.UndefOr[js.Array[InputParamMapper]] = js.native
+    var inputs: js.UndefOr[js.Array[InputParamMapper]] = js.undefined
     
-    var tfOpName: String = js.native
+    var tfOpName: String
   }
   object OpMapper {
     
@@ -483,16 +481,15 @@ object operationsTypesMod {
     }
   }
   
-  @js.native
   trait ParamMapper extends StObject {
     
-    var defaultValue: js.UndefOr[ValueType] = js.native
+    var defaultValue: js.UndefOr[ValueType] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var notSupported: js.UndefOr[Boolean] = js.native
+    var notSupported: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: ParamType = js.native
+    var `type`: ParamType
   }
   object ParamMapper {
     
@@ -587,12 +584,11 @@ object operationsTypesMod {
     def tensors: typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensors = "tensors".asInstanceOf[typings.tensorflowTfjsConverter.tensorflowTfjsConverterStrings.tensors]
   }
   
-  @js.native
   trait ParamValue extends StObject {
     
-    var `type`: ParamType = js.native
+    var `type`: ParamType
     
-    var value: js.UndefOr[ValueType] = js.native
+    var value: js.UndefOr[ValueType] = js.undefined
   }
   object ParamValue {
     

@@ -2,15 +2,13 @@ package typings.nedbLogger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Filename extends StObject {
     
-    var filename: String = js.native
+    var filename: String
   }
   object Filename {
     

@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LiaCountrySettings extends StObject {
   
   /** The settings for the About page. */
-  var about: js.UndefOr[LiaAboutPageSettings] = js.native
+  var about: js.UndefOr[LiaAboutPageSettings] = js.undefined
   
   /** Required. CLDR country code (e.g. "US"). */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /** The status of the "Merchant hosted local storefront" feature. */
-  var hostedLocalStorefrontActive: js.UndefOr[Boolean] = js.native
+  var hostedLocalStorefrontActive: js.UndefOr[Boolean] = js.undefined
   
   /** LIA inventory verification settings. */
-  var inventory: js.UndefOr[LiaInventorySettings] = js.native
+  var inventory: js.UndefOr[LiaInventorySettings] = js.undefined
   
   /** LIA "On Display To Order" settings. */
-  var onDisplayToOrder: js.UndefOr[LiaOnDisplayToOrderSettings] = js.native
+  var onDisplayToOrder: js.UndefOr[LiaOnDisplayToOrderSettings] = js.undefined
   
   /** The POS data provider linked with this country. */
-  var posDataProvider: js.UndefOr[LiaPosDataProvider] = js.native
+  var posDataProvider: js.UndefOr[LiaPosDataProvider] = js.undefined
   
   /** The status of the "Store pickup" feature. */
-  var storePickupActive: js.UndefOr[Boolean] = js.native
+  var storePickupActive: js.UndefOr[Boolean] = js.undefined
 }
 object LiaCountrySettings {
   

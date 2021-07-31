@@ -16,21 +16,21 @@ import typings.server.commonMod.LogLevel
 import typings.server.serverBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
   
-  @js.native
   trait CsurfOptions extends StObject {
     
-    var cookie: js.UndefOr[CookieOptions | Boolean] = js.native
+    var cookie: js.UndefOr[CookieOptions | Boolean] = js.undefined
     
-    var ignoreMethods: js.UndefOr[js.Array[String]] = js.native
+    var ignoreMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]] = js.native
+    var value: js.UndefOr[
+        js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]
+      ] = js.undefined
   }
   object CsurfOptions {
     
@@ -65,7 +65,7 @@ object optionsMod {
       def setSessionKeyUndefined: Self = StObject.set(x, "sessionKey", js.undefined)
       
       @scala.inline
-      def setValue(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
+      def setValue(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "value", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
@@ -98,7 +98,7 @@ object optionsMod {
     def parse(req: IncomingMessage): Unit = js.native
     def parse(
       req: IncomingMessage,
-      callback: js.Function3[/* err */ js.Any, /* fields */ Fields, /* files */ Files, _]
+      callback: js.Function3[/* err */ js.Any, /* fields */ Fields, /* files */ Files, js.Any]
     ): Unit = js.native
     
     var `type`: String = js.native
@@ -106,32 +106,31 @@ object optionsMod {
     var uploadDir: String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var engine: js.UndefOr[String] = js.native
+    var engine: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[String] = js.native
+    var env: js.UndefOr[String] = js.undefined
     
-    var favicon: js.UndefOr[String] = js.native
+    var favicon: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[LogLevel | Level] = js.native
+    var log: js.UndefOr[LogLevel | Level] = js.undefined
     
-    var parser: js.UndefOr[Body] = js.native
+    var parser: js.UndefOr[Body] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var public: js.UndefOr[String] = js.native
+    var public: js.UndefOr[String] = js.undefined
     
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
     var security: js.UndefOr[
-        `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ js.Any) with Csurf)
-      ] = js.native
+        `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ js.Any) & Csurf)
+      ] = js.undefined
     
-    var session: js.UndefOr[SessionOptions] = js.native
+    var session: js.UndefOr[SessionOptions] = js.undefined
     
-    var views: js.UndefOr[String] = js.native
+    var views: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -194,7 +193,7 @@ object optionsMod {
       
       @scala.inline
       def setSecurity(
-        value: `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ js.Any) with Csurf)
+        value: `false` | ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify helmet.IHelmetConfiguration */ js.Any) & Csurf)
       ): Self = StObject.set(x, "security", value.asInstanceOf[js.Any])
       
       @scala.inline

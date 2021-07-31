@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/dfareporting/v3.2", "dfareporting_v3_2.Resource$Operatingsystems")
@@ -31,7 +30,7 @@ class ResourceOperatingsystems protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaOperatingSystem] = js.native
   def get(callback: BodyResponseCallback[SchemaOperatingSystem]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperatingSystem] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperatingSystem] = js.native
   def get(params: ParamsResourceOperatingsystemsGet): GaxiosPromise[SchemaOperatingSystem] = js.native
   def get(params: ParamsResourceOperatingsystemsGet, callback: BodyResponseCallback[SchemaOperatingSystem]): Unit = js.native
   def get(
@@ -60,7 +59,7 @@ class ResourceOperatingsystems protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaOperatingSystemsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaOperatingSystemsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperatingSystemsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperatingSystemsListResponse] = js.native
   def list(params: ParamsResourceOperatingsystemsList): GaxiosPromise[SchemaOperatingSystemsListResponse] = js.native
   def list(
     params: ParamsResourceOperatingsystemsList,

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionDraining extends StObject {
   
   /** The amount of time in seconds to allow existing connections to persist while on unhealthy backend VMs. Only applicable if the protocol is not UDP. The valid range is [0, 3600]. */
-  var drainingTimeoutSec: js.UndefOr[Double] = js.native
+  var drainingTimeoutSec: js.UndefOr[Double] = js.undefined
 }
 object ConnectionDraining {
   

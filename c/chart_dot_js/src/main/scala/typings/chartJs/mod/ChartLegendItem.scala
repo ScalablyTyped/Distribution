@@ -7,33 +7,31 @@ import typings.chartJs.chartJsStrings.round
 import typings.chartJs.chartJsStrings.square
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegendItem extends StObject {
   
-  var fillStyle: js.UndefOr[String] = js.native
+  var fillStyle: js.UndefOr[String] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var lineCap: js.UndefOr[butt | round | square] = js.native
+  var lineCap: js.UndefOr[butt | round | square] = js.undefined
   
-  var lineDash: js.UndefOr[js.Array[Double]] = js.native
+  var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var lineDashOffset: js.UndefOr[Double] = js.native
+  var lineDashOffset: js.UndefOr[Double] = js.undefined
   
-  var lineJoin: js.UndefOr[bevel | round | miter] = js.native
+  var lineJoin: js.UndefOr[bevel | round | miter] = js.undefined
   
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
-  var pointStyle: js.UndefOr[PointStyle] = js.native
+  var pointStyle: js.UndefOr[PointStyle] = js.undefined
   
-  var strokeStyle: js.UndefOr[String] = js.native
+  var strokeStyle: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object ChartLegendItem {
   

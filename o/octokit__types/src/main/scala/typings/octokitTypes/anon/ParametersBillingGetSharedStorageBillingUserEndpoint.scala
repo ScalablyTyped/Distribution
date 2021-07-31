@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.BillingGetSharedStorageBillingUserRespo
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersBillingGetSharedStorageBillingUserEndpoint extends StObject {
   
-  var parameters: BillingGetSharedStorageBillingUserEndpoint = js.native
+  var parameters: BillingGetSharedStorageBillingUserEndpoint
   
-  var request: BillingGetSharedStorageBillingUserRequestOptions = js.native
+  var request: BillingGetSharedStorageBillingUserRequestOptions
   
-  var response: OctokitResponse[BillingGetSharedStorageBillingUserResponseData] = js.native
+  var response: OctokitResponse[BillingGetSharedStorageBillingUserResponseData]
 }
 object ParametersBillingGetSharedStorageBillingUserEndpoint {
   

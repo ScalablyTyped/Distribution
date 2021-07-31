@@ -6,40 +6,38 @@ import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventLoadEventMod {
   
-  @js.native
   trait LoadEvent[Entity] extends StObject {
     
     /**
       * Connection used in the event.
       */
-    var connection: Connection = js.native
+    var connection: Connection
     
     /**
       * Loaded entity.
       */
-    var entity: Entity = js.native
+    var entity: Entity
     
     /**
       * EntityManager used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this entity manager instance.
       */
-    var manager: EntityManager = js.native
+    var manager: EntityManager
     
     /**
       * Metadata of the entity.
       */
-    var metadata: EntityMetadata = js.native
+    var metadata: EntityMetadata
     
     /**
       * QueryRunner used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this query runner instance.
       */
-    var queryRunner: QueryRunner = js.native
+    var queryRunner: QueryRunner
   }
   object LoadEvent {
     
@@ -56,7 +54,7 @@ object eventLoadEventMod {
     }
     
     @scala.inline
-    implicit class LoadEventMutableBuilder[Self <: LoadEvent[_], Entity] (val x: Self with LoadEvent[Entity]) extends AnyVal {
+    implicit class LoadEventMutableBuilder[Self <: LoadEvent[?], Entity] (val x: Self & LoadEvent[Entity]) extends AnyVal {
       
       @scala.inline
       def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])

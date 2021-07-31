@@ -11,8 +11,8 @@ Virtual file format for text processing
 | Full name          | vfile |
 | Keywords           | vfile, virtual, file, text, processing, message, warning, error, remark, retext, rehype |
 | # releases         | 9 |
-| # dependents       | 115 |
-| # downloads        | 177604702 |
+| # dependents       | 125 |
+| # downloads        | 207797369 |
 | # stars            | 2 |
 
 ## Links

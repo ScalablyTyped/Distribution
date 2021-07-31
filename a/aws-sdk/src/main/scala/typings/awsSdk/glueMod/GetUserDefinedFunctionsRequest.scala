@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetUserDefinedFunctionsRequest extends StObject {
   
   /**
     * The ID of the Data Catalog where the functions to be retrieved are located. If none is provided, the AWS account ID is used by default.
     */
-  var CatalogId: js.UndefOr[CatalogIdString] = js.native
+  var CatalogId: js.UndefOr[CatalogIdString] = js.undefined
   
   /**
     * The name of the catalog database where the functions are located. If none is provided, functions from all the databases across the catalog will be returned.
     */
-  var DatabaseName: js.UndefOr[NameString] = js.native
+  var DatabaseName: js.UndefOr[NameString] = js.undefined
   
   /**
     * The maximum number of functions to return in one response.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * An optional function-name pattern string that filters the function definitions returned.
     */
-  var Pattern: NameString = js.native
+  var Pattern: NameString
 }
 object GetUserDefinedFunctionsRequest {
   

@@ -2,27 +2,25 @@ package typings.web3Core.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Log extends StObject {
   
-  var address: String = js.native
+  var address: String
   
-  var blockHash: String = js.native
+  var blockHash: String
   
-  var blockNumber: Double = js.native
+  var blockNumber: Double
   
-  var data: String = js.native
+  var data: String
   
-  var logIndex: Double = js.native
+  var logIndex: Double
   
-  var topics: js.Array[String] = js.native
+  var topics: js.Array[String]
   
-  var transactionHash: String = js.native
+  var transactionHash: String
   
-  var transactionIndex: Double = js.native
+  var transactionIndex: Double
 }
 object Log {
   

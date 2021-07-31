@@ -2,17 +2,15 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxTimeMS extends StObject {
   
-  var maxTimeMS: js.UndefOr[Double] = js.native
+  var maxTimeMS: js.UndefOr[Double] = js.undefined
   
-  var projection: js.UndefOr[js.Object] = js.native
+  var projection: js.UndefOr[js.Object] = js.undefined
   
-  var sort: js.UndefOr[js.Object] = js.native
+  var sort: js.UndefOr[js.Object] = js.undefined
 }
 object MaxTimeMS {
   

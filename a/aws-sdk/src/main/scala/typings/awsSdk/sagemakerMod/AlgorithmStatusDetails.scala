@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlgorithmStatusDetails extends StObject {
   
   /**
     * The status of the scan of the algorithm's Docker image container.
     */
-  var ImageScanStatuses: js.UndefOr[AlgorithmStatusItemList] = js.native
+  var ImageScanStatuses: js.UndefOr[AlgorithmStatusItemList] = js.undefined
   
   /**
     * The status of algorithm validation.
     */
-  var ValidationStatuses: js.UndefOr[AlgorithmStatusItemList] = js.native
+  var ValidationStatuses: js.UndefOr[AlgorithmStatusItemList] = js.undefined
 }
 object AlgorithmStatusDetails {
   

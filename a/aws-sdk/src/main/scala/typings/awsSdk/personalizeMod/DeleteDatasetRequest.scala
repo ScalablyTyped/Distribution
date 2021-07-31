@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteDatasetRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the dataset to delete.
     */
-  var datasetArn: Arn = js.native
+  var datasetArn: Arn
 }
 object DeleteDatasetRequest {
   

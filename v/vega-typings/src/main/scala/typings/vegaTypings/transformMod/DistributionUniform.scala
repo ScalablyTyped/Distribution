@@ -4,23 +4,23 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.uniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DistributionUniform extends Distribution {
+trait DistributionUniform
+  extends StObject
+     with Distribution {
   
-  var function: uniform = js.native
+  var function: uniform
   
-  var max: js.UndefOr[Double | SignalRef] = js.native
+  var max: js.UndefOr[Double | SignalRef] = js.undefined
   
-  var min: js.UndefOr[Double | SignalRef] = js.native
+  var min: js.UndefOr[Double | SignalRef] = js.undefined
 }
 object DistributionUniform {
   
   @scala.inline
-  def apply(function: uniform): DistributionUniform = {
-    val __obj = js.Dynamic.literal(function = function.asInstanceOf[js.Any])
+  def apply(): DistributionUniform = {
+    val __obj = js.Dynamic.literal(function = "uniform")
     __obj.asInstanceOf[DistributionUniform]
   }
   

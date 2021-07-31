@@ -9,10 +9,10 @@ Clean up user-submitted HTML, preserving whitelisted elements and whitelisted at
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sanitize-html |
-| Keywords           | html, parser, sanitizer |
-| # releases         | 22 |
-| # dependents       | 525 |
-| # downloads        | 38786421 |
+| Keywords           | html, parser, sanitizer, sanitize |
+| # releases         | 27 |
+| # dependents       | 563 |
+| # downloads        | 45488829 |
 | # stars            | 72 |
 
 ## Links

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgResponsiveContainer
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait IgResponsiveContainer
   /**
     * The time between two resize checks in milliseconds.
     */
-  var pollingInterval: js.UndefOr[Double] = js.native
+  var pollingInterval: js.UndefOr[Double] = js.undefined
 }
 object IgResponsiveContainer {
   

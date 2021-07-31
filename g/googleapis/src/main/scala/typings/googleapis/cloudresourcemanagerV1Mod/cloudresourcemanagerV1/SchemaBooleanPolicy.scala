@@ -2,14 +2,12 @@ package typings.googleapis.cloudresourcemanagerV1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Used in `policy_type` to specify how `boolean_policy` will behave at this
   * resource.
   */
-@js.native
 trait SchemaBooleanPolicy extends StObject {
   
   /**
@@ -40,7 +38,7 @@ trait SchemaBooleanPolicy extends StObject {
     * The constraint at `projects/bar` is not enforced, because
     * `constraint_default` for the `Constraint` is `ALLOW`.
     */
-  var enforced: js.UndefOr[Boolean] = js.native
+  var enforced: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaBooleanPolicy {
   

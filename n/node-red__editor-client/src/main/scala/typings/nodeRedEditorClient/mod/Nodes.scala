@@ -5,7 +5,6 @@ import typings.nodeRedEditorClient.anon.LinksNodes
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -37,31 +36,31 @@ trait Nodes extends StObject {
     * Converts the current node selection to an exportable JSON Object
     */
   def createExportableNodeSet(set: js.Array[js.Object]): js.Array[js.Object] = js.native
-  def createExportableNodeSet(
-    set: js.Array[js.Object],
-    exportedIds: js.UndefOr[scala.Nothing],
-    exportedSubflows: js.UndefOr[scala.Nothing],
-    exportedConfigNodes: js.Object
-  ): js.Array[js.Object] = js.native
-  def createExportableNodeSet(set: js.Array[js.Object], exportedIds: js.UndefOr[scala.Nothing], exportedSubflows: js.Object): js.Array[js.Object] = js.native
-  def createExportableNodeSet(
-    set: js.Array[js.Object],
-    exportedIds: js.UndefOr[scala.Nothing],
-    exportedSubflows: js.Object,
-    exportedConfigNodes: js.Object
-  ): js.Array[js.Object] = js.native
   def createExportableNodeSet(set: js.Array[js.Object], exportedIds: js.Object): js.Array[js.Object] = js.native
-  def createExportableNodeSet(
-    set: js.Array[js.Object],
-    exportedIds: js.Object,
-    exportedSubflows: js.UndefOr[scala.Nothing],
-    exportedConfigNodes: js.Object
-  ): js.Array[js.Object] = js.native
   def createExportableNodeSet(set: js.Array[js.Object], exportedIds: js.Object, exportedSubflows: js.Object): js.Array[js.Object] = js.native
   def createExportableNodeSet(
     set: js.Array[js.Object],
     exportedIds: js.Object,
     exportedSubflows: js.Object,
+    exportedConfigNodes: js.Object
+  ): js.Array[js.Object] = js.native
+  def createExportableNodeSet(
+    set: js.Array[js.Object],
+    exportedIds: js.Object,
+    exportedSubflows: Unit,
+    exportedConfigNodes: js.Object
+  ): js.Array[js.Object] = js.native
+  def createExportableNodeSet(set: js.Array[js.Object], exportedIds: Unit, exportedSubflows: js.Object): js.Array[js.Object] = js.native
+  def createExportableNodeSet(
+    set: js.Array[js.Object],
+    exportedIds: Unit,
+    exportedSubflows: js.Object,
+    exportedConfigNodes: js.Object
+  ): js.Array[js.Object] = js.native
+  def createExportableNodeSet(
+    set: js.Array[js.Object],
+    exportedIds: Unit,
+    exportedSubflows: Unit,
     exportedConfigNodes: js.Object
   ): js.Array[js.Object] = js.native
   
@@ -102,12 +101,9 @@ trait Nodes extends StObject {
   @JSName("getNodeList")
   var getNodeList_Original: js.Function0[js.Array[js.Object]] = js.native
   
-  def getType(nt: String): NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties] = js.native
+  def getType(nt: String): NodeDef[NodeProperties, Unit, NodeProperties] = js.native
   @JSName("getType")
-  var getType_Original: js.Function1[
-    /* nt */ String, 
-    NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties]
-  ] = js.native
+  var getType_Original: js.Function1[/* nt */ String, NodeDef[NodeProperties, Unit, NodeProperties]] = js.native
   
   def getWorkspaceOrder(): js.Array[js.Object] = js.native
   
@@ -121,14 +117,6 @@ trait Nodes extends StObject {
     * @returns [new_nodes,new_links,new_groups,new_workspaces,new_subflows,missingWorkspace]
     */
   def `import`(newNodesObj: String): js.Tuple6[
-    js.Array[js.Object], 
-    js.Array[js.Object], 
-    js.Array[js.Object], 
-    js.Array[js.Object], 
-    js.Array[js.Object], 
-    js.Object
-  ] = js.native
-  def `import`(newNodesObj: String, createNewIds: js.UndefOr[scala.Nothing], createMissingWorkspace: Boolean): js.Tuple6[
     js.Array[js.Object], 
     js.Array[js.Object], 
     js.Array[js.Object], 
@@ -152,7 +140,7 @@ trait Nodes extends StObject {
     js.Array[js.Object], 
     js.Object
   ] = js.native
-  def `import`(newNodesObj: js.Array[js.Object]): js.Tuple6[
+  def `import`(newNodesObj: String, createNewIds: Unit, createMissingWorkspace: Boolean): js.Tuple6[
     js.Array[js.Object], 
     js.Array[js.Object], 
     js.Array[js.Object], 
@@ -160,11 +148,7 @@ trait Nodes extends StObject {
     js.Array[js.Object], 
     js.Object
   ] = js.native
-  def `import`(
-    newNodesObj: js.Array[js.Object],
-    createNewIds: js.UndefOr[scala.Nothing],
-    createMissingWorkspace: Boolean
-  ): js.Tuple6[
+  def `import`(newNodesObj: js.Array[js.Object]): js.Tuple6[
     js.Array[js.Object], 
     js.Array[js.Object], 
     js.Array[js.Object], 
@@ -188,7 +172,7 @@ trait Nodes extends StObject {
     js.Array[js.Object], 
     js.Object
   ] = js.native
-  def `import`(newNodesObj: js.Object): js.Tuple6[
+  def `import`(newNodesObj: js.Array[js.Object], createNewIds: Unit, createMissingWorkspace: Boolean): js.Tuple6[
     js.Array[js.Object], 
     js.Array[js.Object], 
     js.Array[js.Object], 
@@ -196,7 +180,7 @@ trait Nodes extends StObject {
     js.Array[js.Object], 
     js.Object
   ] = js.native
-  def `import`(newNodesObj: js.Object, createNewIds: js.UndefOr[scala.Nothing], createMissingWorkspace: Boolean): js.Tuple6[
+  def `import`(newNodesObj: js.Object): js.Tuple6[
     js.Array[js.Object], 
     js.Array[js.Object], 
     js.Array[js.Object], 
@@ -213,6 +197,14 @@ trait Nodes extends StObject {
     js.Object
   ] = js.native
   def `import`(newNodesObj: js.Object, createNewIds: Boolean, createMissingWorkspace: Boolean): js.Tuple6[
+    js.Array[js.Object], 
+    js.Array[js.Object], 
+    js.Array[js.Object], 
+    js.Array[js.Object], 
+    js.Array[js.Object], 
+    js.Object
+  ] = js.native
+  def `import`(newNodesObj: js.Object, createNewIds: Unit, createMissingWorkspace: Boolean): js.Tuple6[
     js.Array[js.Object], 
     js.Array[js.Object], 
     js.Array[js.Object], 
@@ -250,11 +242,7 @@ trait Nodes extends StObject {
     * needed by the editor.
     */
   @JSName("registerType")
-  var registerType_Original: js.Function2[
-    /* nt */ String, 
-    /* def */ NodeDef[NodeProperties, js.UndefOr[scala.Nothing], NodeProperties], 
-    Unit
-  ] = js.native
+  var registerType_Original: js.Function2[/* nt */ String, /* def */ NodeDef[NodeProperties, Unit, NodeProperties], Unit] = js.native
   
   var registry: NodesRegistry = js.native
   

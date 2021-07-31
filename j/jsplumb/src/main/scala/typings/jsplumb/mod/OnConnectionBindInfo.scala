@@ -3,44 +3,42 @@ package typings.jsplumb.mod
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnConnectionBindInfo extends StObject {
   
-  var connection: Connection = js.native
+  var connection: Connection
   
   //- the source Endpoint in the Connection
-  var newSourceEndpoint: Endpoint = js.native
+  var newSourceEndpoint: Endpoint
   
-  var newSourceId: String = js.native
+  var newSourceId: String
   
   //- the targetEndpoint in the Connection
-  var newTargetEndpoint: Endpoint = js.native
+  var newTargetEndpoint: Endpoint
   
-  var newTargetId: String = js.native
+  var newTargetId: String
   
   // - id of the source element in the Connection
-  var originalSourceId: String = js.native
+  var originalSourceId: String
   
   // - id of the target element in the Connection
-  var originalTargetId: String = js.native
+  var originalTargetId: String
   
-  var source: Element = js.native
+  var source: Element
   
   //- the target element in the Connection
-  var sourceEndpoint: Endpoint = js.native
+  var sourceEndpoint: Endpoint
   
   // the new Connection.you can register listeners on this etc.
-  var sourceId: String = js.native
+  var sourceId: String
   
   // - the source element in the Connection
-  var target: Element = js.native
+  var target: Element
   
-  var targetEndpoint: Endpoint = js.native
+  var targetEndpoint: Endpoint
   
-  var targetId: String = js.native
+  var targetId: String
 }
 object OnConnectionBindInfo {
   

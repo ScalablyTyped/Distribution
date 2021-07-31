@@ -2,81 +2,79 @@ package typings.bootstrapTreeview
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BootstrapTreeViewOptions extends StObject {
   
-  var backColor: js.UndefOr[String] = js.native
+  var backColor: js.UndefOr[String] = js.undefined
   
-  var borderColor: js.UndefOr[String] = js.native
+  var borderColor: js.UndefOr[String] = js.undefined
   
-  var checkedIcon: js.UndefOr[String] = js.native
+  var checkedIcon: js.UndefOr[String] = js.undefined
   
-  var collapseIcon: js.UndefOr[String] = js.native
+  var collapseIcon: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var data: js.UndefOr[js.Array[BootstrapTreeViewNodeData]] = js.native
+  var data: js.UndefOr[js.Array[BootstrapTreeViewNodeData]] = js.undefined
   
-  var emptyIcon: js.UndefOr[String] = js.native
+  var emptyIcon: js.UndefOr[String] = js.undefined
   
-  var enableLinks: js.UndefOr[Boolean] = js.native
+  var enableLinks: js.UndefOr[Boolean] = js.undefined
   
-  var expandIcon: js.UndefOr[String] = js.native
+  var expandIcon: js.UndefOr[String] = js.undefined
   
-  var highlightSearchResults: js.UndefOr[Boolean] = js.native
+  var highlightSearchResults: js.UndefOr[Boolean] = js.undefined
   
-  var highlightSelected: js.UndefOr[Boolean] = js.native
+  var highlightSelected: js.UndefOr[Boolean] = js.undefined
   
-  var levels: js.UndefOr[Double] = js.native
+  var levels: js.UndefOr[Double] = js.undefined
   
-  var multiSelect: js.UndefOr[Boolean] = js.native
+  var multiSelect: js.UndefOr[Boolean] = js.undefined
   
-  var nodeIcon: js.UndefOr[String] = js.native
+  var nodeIcon: js.UndefOr[String] = js.undefined
   
-  var onNodeChecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeChecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeCollapsed: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeCollapsed: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeDisabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeDisabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeEnabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeEnabled: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeExpanded: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeExpanded: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeSelected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeSelected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeUnchecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeUnchecked: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onNodeUnselected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onNodeUnselected: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onSearchCleared: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onSearchCleared: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onSearchComplete: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.native
+  var onSearchComplete: js.UndefOr[js.Function2[/* event */ js.Any, /* node */ BootstrapTreeViewNodeData, Unit]] = js.undefined
   
-  var onhoverColor: js.UndefOr[String] = js.native
+  var onhoverColor: js.UndefOr[String] = js.undefined
   
-  var searchResultBackColor: js.UndefOr[String] = js.native
+  var searchResultBackColor: js.UndefOr[String] = js.undefined
   
-  var searchResultColor: js.UndefOr[String] = js.native
+  var searchResultColor: js.UndefOr[String] = js.undefined
   
-  var selectedBackColor: js.UndefOr[String] = js.native
+  var selectedBackColor: js.UndefOr[String] = js.undefined
   
-  var selectedColor: js.UndefOr[String] = js.native
+  var selectedColor: js.UndefOr[String] = js.undefined
   
-  var selectedIcon: js.UndefOr[String] = js.native
+  var selectedIcon: js.UndefOr[String] = js.undefined
   
-  var showBorder: js.UndefOr[Boolean] = js.native
+  var showBorder: js.UndefOr[Boolean] = js.undefined
   
-  var showCheckbox: js.UndefOr[Boolean] = js.native
+  var showCheckbox: js.UndefOr[Boolean] = js.undefined
   
-  var showIcon: js.UndefOr[Boolean] = js.native
+  var showIcon: js.UndefOr[Boolean] = js.undefined
   
-  var showTags: js.UndefOr[Boolean] = js.native
+  var showTags: js.UndefOr[Boolean] = js.undefined
   
-  var uncheckedIcon: js.UndefOr[Boolean] = js.native
+  var uncheckedIcon: js.UndefOr[Boolean] = js.undefined
 }
 object BootstrapTreeViewOptions {
   

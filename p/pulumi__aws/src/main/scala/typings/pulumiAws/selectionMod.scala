@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectionMod {
@@ -54,6 +53,10 @@ object selectionMod {
   /* static members */
   object Selection {
     
+    @JSImport("@pulumi/aws/backup/selection", "Selection")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Selection resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -63,55 +66,49 @@ object selectionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/backup/selection", "Selection.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Selection = js.native
-    @JSImport("@pulumi/aws/backup/selection", "Selection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Selection = js.native
-    @JSImport("@pulumi/aws/backup/selection", "Selection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SelectionState): Selection = js.native
-    @JSImport("@pulumi/aws/backup/selection", "Selection.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SelectionState, opts: CustomResourceOptions): Selection = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SelectionState): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Selection]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SelectionState, opts: CustomResourceOptions): Selection = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Selection]
     
     /**
       * Returns true if the given object is an instance of Selection.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/backup/selection", "Selection.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/backup/selection.Selection */ Boolean]
   }
   
-  @js.native
   trait SelectionArgs extends StObject {
     
     /**
       * The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the [AWS Backup Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#managed-policies) for additional information about using AWS managed policies or creating custom policies attached to the IAM role.
       */
-    val iamRoleArn: Input[String] = js.native
+    val iamRoleArn: Input[String]
     
     /**
       * The display name of a resource selection document.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The backup plan ID to be associated with the selection of resources.
       */
-    val planId: Input[String] = js.native
+    val planId: Input[String]
     
     /**
       * An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to assign to a backup plan..
       */
-    val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Tag-based conditions used to specify a set of resources to assign to a backup plan.
       */
-    val selectionTags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]] = js.native
+    val selectionTags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]] = js.undefined
   }
   object SelectionArgs {
     
@@ -156,33 +153,32 @@ object selectionMod {
     }
   }
   
-  @js.native
   trait SelectionState extends StObject {
     
     /**
       * The ARN of the IAM role that AWS Backup uses to authenticate when restoring and backing up the target resource. See the [AWS Backup Developer Guide](https://docs.aws.amazon.com/aws-backup/latest/devguide/access-control.html#managed-policies) for additional information about using AWS managed policies or creating custom policies attached to the IAM role.
       */
-    val iamRoleArn: js.UndefOr[Input[String]] = js.native
+    val iamRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The display name of a resource selection document.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The backup plan ID to be associated with the selection of resources.
       */
-    val planId: js.UndefOr[Input[String]] = js.native
+    val planId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An array of strings that either contain Amazon Resource Names (ARNs) or match patterns of resources to assign to a backup plan..
       */
-    val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val resources: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Tag-based conditions used to specify a set of resources to assign to a backup plan.
       */
-    val selectionTags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]] = js.native
+    val selectionTags: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.backup.SelectionSelectionTag]]]] = js.undefined
   }
   object SelectionState {
     

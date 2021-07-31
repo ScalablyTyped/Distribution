@@ -503,10 +503,13 @@ import typings.pulumiPulumi.resourceMod.ComponentResourceOptions
 import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object yamlYamlMod {
+  
+  @JSImport("@pulumi/kubernetes/yaml/yaml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/kubernetes/yaml/yaml", "CollectionComponentResource")
   @js.native
@@ -1345,7 +1348,7 @@ object yamlYamlMod {
       property: metadata
     ): Output_[ListMeta] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: apiVersion): Output_[appsSlashv1] = js.native
-    def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: data): Output_[_] = js.native
+    def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: data): Output_[js.Any] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: metadata): Output_[ObjectMeta] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1SlashControllerRevision, name: String, property: revision): Output_[Double] = js.native
@@ -1360,7 +1363,7 @@ object yamlYamlMod {
       namespace: String,
       name: String,
       property: data
-    ): Output_[_] = js.native
+    ): Output_[js.Any] = js.native
     def getResourceProperty(
       groupVersionKind: appsSlashv1SlashControllerRevision,
       namespace: String,
@@ -1540,7 +1543,7 @@ object yamlYamlMod {
       property: metadata
     ): Output_[ListMeta] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: apiVersion): Output_[appsSlashv1beta1] = js.native
-    def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: data): Output_[_] = js.native
+    def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: data): Output_[js.Any] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: metadata): Output_[ObjectMeta] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta1SlashControllerRevision, name: String, property: revision): Output_[Double] = js.native
@@ -1555,7 +1558,7 @@ object yamlYamlMod {
       namespace: String,
       name: String,
       property: data
-    ): Output_[_] = js.native
+    ): Output_[js.Any] = js.native
     def getResourceProperty(
       groupVersionKind: appsSlashv1beta1SlashControllerRevision,
       namespace: String,
@@ -1719,7 +1722,7 @@ object yamlYamlMod {
       property: metadata
     ): Output_[ListMeta] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: apiVersion): Output_[appsSlashv1beta2] = js.native
-    def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: data): Output_[_] = js.native
+    def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: data): Output_[js.Any] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: kind): Output_[typings.pulumiKubernetes.pulumiKubernetesStrings.ControllerRevision] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: metadata): Output_[ObjectMeta] = js.native
     def getResourceProperty(groupVersionKind: appsSlashv1beta2SlashControllerRevision, name: String, property: revision): Output_[Double] = js.native
@@ -1734,7 +1737,7 @@ object yamlYamlMod {
       namespace: String,
       name: String,
       property: data
-    ): Output_[_] = js.native
+    ): Output_[js.Any] = js.native
     def getResourceProperty(
       groupVersionKind: appsSlashv1beta2SlashControllerRevision,
       namespace: String,
@@ -9052,7 +9055,7 @@ object yamlYamlMod {
       */
     def this(name: String) = this()
     def this(name: String, config: ConfigFileOpts) = this()
-    def this(name: String, config: js.UndefOr[scala.Nothing], opts: ComponentResourceOptions) = this()
+    def this(name: String, config: Unit, opts: ComponentResourceOptions) = this()
     def this(name: String, config: ConfigFileOpts, opts: ComponentResourceOptions) = this()
   }
   
@@ -9070,27 +9073,24 @@ object yamlYamlMod {
     def this(name: String, config: ConfigGroupOpts, opts: ComponentResourceOptions) = this()
   }
   
-  @JSImport("@pulumi/kubernetes/yaml/yaml", "parse")
-  @js.native
-  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = js.native
-  @JSImport("@pulumi/kubernetes/yaml/yaml", "parse")
-  @js.native
-  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = js.native
+  @scala.inline
+  def parse(config: ConfigGroupOpts): Output_[StringDictionary[CustomResource]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any]).asInstanceOf[Output_[StringDictionary[CustomResource]]]
+  @scala.inline
+  def parse(config: ConfigGroupOpts, opts: CustomResourceOptions): Output_[StringDictionary[CustomResource]] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(config.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Output_[StringDictionary[CustomResource]]]
   
-  @js.native
   trait ConfigFileOpts extends StObject {
     
     /** Path or a URL that uniquely identifies a file. */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /**
       * An optional prefix for the auto-generated resource names.
       * Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".
       */
-    var resourcePrefix: js.UndefOr[String] = js.native
+    var resourcePrefix: js.UndefOr[String] = js.undefined
     
     /** A set of transformations to apply to Kubernetes resource definitions before registering with engine. */
-    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]] = js.native
+    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]] = js.undefined
   }
   object ConfigFileOpts {
     
@@ -9116,36 +9116,35 @@ object yamlYamlMod {
       def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
       @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
       @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait ConfigGroupOpts extends StObject {
     
     /** Set of paths or a URLs that uniquely identify files. */
-    var files: js.UndefOr[js.Array[String] | String] = js.native
+    var files: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /** JavaScript objects representing Kubernetes resources. */
-    var objs: js.UndefOr[js.Array[_] | js.Any] = js.native
+    var objs: js.UndefOr[js.Array[js.Any] | js.Any] = js.undefined
     
     /**
       * An optional prefix for the auto-generated resource names.
       * Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".
       */
-    var resourcePrefix: js.UndefOr[String] = js.native
+    var resourcePrefix: js.UndefOr[String] = js.undefined
     
     /** A set of transformations to apply to Kubernetes resource definitions before registering with engine. */
-    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]] = js.native
+    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]] = js.undefined
     
     /** YAML text containing Kubernetes resource definitions. */
-    var yaml: js.UndefOr[js.Array[String] | String] = js.native
+    var yaml: js.UndefOr[js.Array[String] | String] = js.undefined
   }
   object ConfigGroupOpts {
     
@@ -9168,7 +9167,7 @@ object yamlYamlMod {
       def setFilesVarargs(value: String*): Self = StObject.set(x, "files", js.Array(value :_*))
       
       @scala.inline
-      def setObjs(value: js.Array[_] | js.Any): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
+      def setObjs(value: js.Array[js.Any] | js.Any): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjsUndefined: Self = StObject.set(x, "objs", js.undefined)
@@ -9183,13 +9182,13 @@ object yamlYamlMod {
       def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
       @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
       @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
       
       @scala.inline
       def setYaml(value: js.Array[String] | String): Self = StObject.set(x, "yaml", value.asInstanceOf[js.Any])
@@ -9202,25 +9201,24 @@ object yamlYamlMod {
     }
   }
   
-  @js.native
   trait ConfigOpts extends StObject {
     
     /** JavaScript objects representing Kubernetes resources. */
-    var objs: js.Promise[js.Array[_]] = js.native
+    var objs: js.Promise[js.Array[js.Any]]
     
     /**
       * An optional prefix for the auto-generated resource names.
       * Example: A resource created with resourcePrefix="foo" would produce a resource named "foo-resourceName".
       */
-    var resourcePrefix: js.UndefOr[String] = js.native
+    var resourcePrefix: js.UndefOr[String] = js.undefined
     
     /** A set of transformations to apply to Kubernetes resource definitions before registering with engine. */
-    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]] = js.native
+    var transformations: js.UndefOr[js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]] = js.undefined
   }
   object ConfigOpts {
     
     @scala.inline
-    def apply(objs: js.Promise[js.Array[_]]): ConfigOpts = {
+    def apply(objs: js.Promise[js.Array[js.Any]]): ConfigOpts = {
       val __obj = js.Dynamic.literal(objs = objs.asInstanceOf[js.Any])
       __obj.asInstanceOf[ConfigOpts]
     }
@@ -9229,7 +9227,7 @@ object yamlYamlMod {
     implicit class ConfigOptsMutableBuilder[Self <: ConfigOpts] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setObjs(value: js.Promise[js.Array[_]]): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
+      def setObjs(value: js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "objs", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setResourcePrefix(value: String): Self = StObject.set(x, "resourcePrefix", value.asInstanceOf[js.Any])
@@ -9238,13 +9236,13 @@ object yamlYamlMod {
       def setResourcePrefixUndefined: Self = StObject.set(x, "resourcePrefix", js.undefined)
       
       @scala.inline
-      def setTransformations(value: js.Array[js.Function2[/* o */ _, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
+      def setTransformations(value: js.Array[js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit]]): Self = StObject.set(x, "transformations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransformationsUndefined: Self = StObject.set(x, "transformations", js.undefined)
       
       @scala.inline
-      def setTransformationsVarargs(value: (js.Function2[js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
+      def setTransformationsVarargs(value: (js.Function2[/* o */ js.Any, /* opts */ CustomResourceOptions, Unit])*): Self = StObject.set(x, "transformations", js.Array(value :_*))
     }
   }
 }

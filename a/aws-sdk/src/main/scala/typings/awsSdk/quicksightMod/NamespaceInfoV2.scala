@@ -2,41 +2,39 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamespaceInfoV2 extends StObject {
   
   /**
     * The namespace ARN.
     */
-  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.quicksightMod.Arn] = js.undefined
   
   /**
     * The namespace AWS Region.
     */
-  var CapacityRegion: js.UndefOr[String] = js.native
+  var CapacityRegion: js.UndefOr[String] = js.undefined
   
   /**
     * The creation status of a namespace that is not yet completely created.
     */
-  var CreationStatus: js.UndefOr[NamespaceStatus] = js.native
+  var CreationStatus: js.UndefOr[NamespaceStatus] = js.undefined
   
   /**
     * The identity store used for the namespace.
     */
-  var IdentityStore: js.UndefOr[typings.awsSdk.quicksightMod.IdentityStore] = js.native
+  var IdentityStore: js.UndefOr[typings.awsSdk.quicksightMod.IdentityStore] = js.undefined
   
   /**
     * The name of the error.
     */
-  var Name: js.UndefOr[Namespace] = js.native
+  var Name: js.UndefOr[Namespace] = js.undefined
   
   /**
     * An error that occurred when the namespace was created.
     */
-  var NamespaceError: js.UndefOr[typings.awsSdk.quicksightMod.NamespaceError] = js.native
+  var NamespaceError: js.UndefOr[typings.awsSdk.quicksightMod.NamespaceError] = js.undefined
 }
 object NamespaceInfoV2 {
   

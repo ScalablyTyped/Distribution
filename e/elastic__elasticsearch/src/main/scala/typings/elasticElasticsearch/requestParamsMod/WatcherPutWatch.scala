@@ -2,23 +2,23 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WatcherPutWatch[T] extends Generic {
+trait WatcherPutWatch[T]
+  extends StObject
+     with Generic {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var if_primary_term: js.UndefOr[Double] = js.native
+  var if_primary_term: js.UndefOr[Double] = js.undefined
   
-  var if_seq_no: js.UndefOr[Double] = js.native
+  var if_seq_no: js.UndefOr[Double] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object WatcherPutWatch {
   
@@ -29,7 +29,7 @@ object WatcherPutWatch {
   }
   
   @scala.inline
-  implicit class WatcherPutWatchMutableBuilder[Self <: WatcherPutWatch[_], T] (val x: Self with WatcherPutWatch[T]) extends AnyVal {
+  implicit class WatcherPutWatchMutableBuilder[Self <: WatcherPutWatch[?], T] (val x: Self & WatcherPutWatch[T]) extends AnyVal {
     
     @scala.inline
     def setActive(value: Boolean): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])

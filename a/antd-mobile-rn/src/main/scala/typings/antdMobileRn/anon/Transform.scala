@@ -2,21 +2,19 @@ package typings.antdMobileRn.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transform extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
   
-  var fontWeight: String = js.native
+  var fontWeight: String
   
-  var textAlign: String = js.native
+  var textAlign: String
   
-  var transform: js.Array[Rotate] = js.native
+  var transform: js.Array[Rotate]
 }
 object Transform {
   

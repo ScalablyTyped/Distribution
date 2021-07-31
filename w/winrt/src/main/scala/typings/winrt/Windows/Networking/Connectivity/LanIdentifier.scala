@@ -2,11 +2,11 @@ package typings.winrt.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LanIdentifier extends ILanIdentifier
+trait LanIdentifier
+  extends StObject
+     with ILanIdentifier
 object LanIdentifier {
   
   @scala.inline

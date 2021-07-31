@@ -7,13 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes the common properties of a database column. */
-@js.native
 trait Column
-  extends typings.activexLibreoffice.com_.sun.star.sdbcx.Column
+  extends StObject
+     with typings.activexLibreoffice.com_.sun.star.sdbcx.Column
      with ColumnSettings
 object Column {
   

@@ -4,7 +4,6 @@ import typings.blueprintjsCore.propsMod.IProps
 import typings.react.mod.PureComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeHandleMod {
@@ -16,15 +15,19 @@ object resizeHandleMod {
   object Orientation extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Orientation with Double] = js.native
+    def apply(value: Double): js.UndefOr[Orientation & Double] = js.native
     
     @js.native
-    sealed trait HORIZONTAL extends Orientation
-    /* 1 */ val HORIZONTAL: typings.blueprintjsTable.resizeHandleMod.Orientation.HORIZONTAL with Double = js.native
+    sealed trait HORIZONTAL
+      extends StObject
+         with Orientation
+    /* 1 */ val HORIZONTAL: typings.blueprintjsTable.resizeHandleMod.Orientation.HORIZONTAL & Double = js.native
     
     @js.native
-    sealed trait VERTICAL extends Orientation
-    /* 0 */ val VERTICAL: typings.blueprintjsTable.resizeHandleMod.Orientation.VERTICAL with Double = js.native
+    sealed trait VERTICAL
+      extends StObject
+         with Orientation
+    /* 0 */ val VERTICAL: typings.blueprintjsTable.resizeHandleMod.Orientation.VERTICAL & Double = js.native
   }
   
   @JSImport("@blueprintjs/table/lib/esm/interactions/resizeHandle", "ResizeHandle")
@@ -58,7 +61,8 @@ object resizeHandleMod {
   
   @js.native
   trait IResizeHandleProps
-    extends IProps
+    extends StObject
+       with IProps
        with ILockableLayout {
     
     /**
@@ -89,13 +93,12 @@ object resizeHandleMod {
     var orientation: Orientation = js.native
   }
   
-  @js.native
   trait IResizeHandleState extends StObject {
     
     /**
       * A boolean that is true while the user is dragging the resize handle
       */
-    var isDragging: Boolean = js.native
+    var isDragging: Boolean
   }
   object IResizeHandleState {
     

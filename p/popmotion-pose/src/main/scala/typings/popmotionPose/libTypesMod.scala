@@ -8,7 +8,6 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libTypesMod {
@@ -19,12 +18,11 @@ object libTypesMod {
   
   type AddTransitionDelay[A] = js.Function2[/* delay */ Double, /* transition */ A, A]
   
-  @js.native
   trait AncestorValue[V] extends StObject {
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var values: ValueMap[V] = js.native
+    var values: ValueMap[V]
   }
   object AncestorValue {
     
@@ -35,7 +33,7 @@ object libTypesMod {
     }
     
     @scala.inline
-    implicit class AncestorValueMutableBuilder[Self <: AncestorValue[_], V] (val x: Self with AncestorValue[V]) extends AnyVal {
+    implicit class AncestorValueMutableBuilder[Self <: AncestorValue[?], V] (val x: Self & AncestorValue[V]) extends AnyVal {
       
       @scala.inline
       def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -89,31 +87,31 @@ object libTypesMod {
   
   type PassiveValueMap = StringDictionary[js.Tuple3[String, js.Any, Boolean | String | Unit]]
   
-  @js.native
   trait Pose[A, TD]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var afterChildren: js.UndefOr[Boolean | BooleanPropFactory] = js.native
+    var afterChildren: js.UndefOr[Boolean | BooleanPropFactory] = js.undefined
     
-    var applyAtEnd: js.UndefOr[ApplyMap] = js.native
+    var applyAtEnd: js.UndefOr[ApplyMap] = js.undefined
     
-    var applyAtStart: js.UndefOr[ApplyMap] = js.native
+    var applyAtStart: js.UndefOr[ApplyMap] = js.undefined
     
-    var beforeChildren: js.UndefOr[Boolean | BooleanPropFactory] = js.native
+    var beforeChildren: js.UndefOr[Boolean | BooleanPropFactory] = js.undefined
     
-    var delay: js.UndefOr[Double | NumberPropFactory] = js.native
+    var delay: js.UndefOr[Double | NumberPropFactory] = js.undefined
     
-    var delayChildren: js.UndefOr[Double | NumberPropFactory] = js.native
+    var delayChildren: js.UndefOr[Double | NumberPropFactory] = js.undefined
     
-    var preTransform: js.UndefOr[js.Function0[_]] = js.native
+    var preTransform: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var preTransition: js.UndefOr[js.Function1[/* props */ Props, _]] = js.native
+    var preTransition: js.UndefOr[js.Function1[/* props */ Props, js.Any]] = js.undefined
     
-    var staggerChildren: js.UndefOr[Double | NumberPropFactory] = js.native
+    var staggerChildren: js.UndefOr[Double | NumberPropFactory] = js.undefined
     
-    var staggerDirection: js.UndefOr[`1` | `-1` | StaggerDirectionPropFactory] = js.native
+    var staggerDirection: js.UndefOr[`1` | `-1` | StaggerDirectionPropFactory] = js.undefined
     
-    var transition: js.UndefOr[(TransitionMap[A, TD]) | (TransitionMapFactory[A, TD])] = js.native
+    var transition: js.UndefOr[(TransitionMap[A, TD]) | (TransitionMapFactory[A, TD])] = js.undefined
   }
   object Pose {
     
@@ -124,7 +122,7 @@ object libTypesMod {
     }
     
     @scala.inline
-    implicit class PoseMutableBuilder[Self <: Pose[_, _], A, TD] (val x: Self with (Pose[A, TD])) extends AnyVal {
+    implicit class PoseMutableBuilder[Self <: Pose[?, ?], A, TD] (val x: Self & (Pose[A, TD])) extends AnyVal {
       
       @scala.inline
       def setAfterChildren(value: Boolean | BooleanPropFactory): Self = StObject.set(x, "afterChildren", value.asInstanceOf[js.Any])
@@ -175,13 +173,13 @@ object libTypesMod {
       def setDelayUndefined: Self = StObject.set(x, "delay", js.undefined)
       
       @scala.inline
-      def setPreTransform(value: () => _): Self = StObject.set(x, "preTransform", js.Any.fromFunction0(value))
+      def setPreTransform(value: () => js.Any): Self = StObject.set(x, "preTransform", js.Any.fromFunction0(value))
       
       @scala.inline
       def setPreTransformUndefined: Self = StObject.set(x, "preTransform", js.undefined)
       
       @scala.inline
-      def setPreTransition(value: /* props */ Props => _): Self = StObject.set(x, "preTransition", js.Any.fromFunction1(value))
+      def setPreTransition(value: /* props */ Props => js.Any): Self = StObject.set(x, "preTransition", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPreTransitionUndefined: Self = StObject.set(x, "preTransition", js.undefined)
@@ -215,81 +213,198 @@ object libTypesMod {
     }
   }
   
-  @js.native
   trait PoseFactoryConfig[V, A, C, P, TD] extends StObject {
     
-    def addActionDelay(delay: Double, transition: A): A = js.native
+    def addActionDelay(delay: Double, transition: A): A
     @JSName("addActionDelay")
-    var addActionDelay_Original: AddTransitionDelay[A] = js.native
+    var addActionDelay_Original: AddTransitionDelay[A]
     
-    def bindOnChange(values: ValueMap[V], onChange: OnChangeCallbacks): js.Function1[/* key */ String, _] = js.native
+    def bindOnChange(values: ValueMap[V], onChange: OnChangeCallbacks): js.Function1[/* key */ String, js.Any]
     
-    def convertTransitionDefinition(value: V, transitionDef: A | TD, props: Props): A = js.native
+    def convertTransitionDefinition(value: V, transitionDef: A | TD, props: Props): A
     @JSName("convertTransitionDefinition")
-    var convertTransitionDefinition_Original: ConvertTransitionDefinition[V, A, TD] = js.native
+    var convertTransitionDefinition_Original: ConvertTransitionDefinition[V, A, TD]
     
-    def convertValue(value: js.Any, key: String, props: Props): V = js.native
+    def convertValue(value: js.Any, key: String, props: Props): V
     @JSName("convertValue")
-    var convertValue_Original: ConvertValue[V] = js.native
+    var convertValue_Original: ConvertValue[V]
     
-    def createValue(init: js.Any, key: String, props: Props): V = js.native
-    def createValue(init: js.Any, key: String, props: Props, createValueProps: CreateValueProps): V = js.native
+    def createValue(init: js.Any, key: String, props: Props): V
+    def createValue(init: js.Any, key: String, props: Props, createValueProps: CreateValueProps): V
     @JSName("createValue")
-    var createValue_Original: CreateValue[V] = js.native
+    var createValue_Original: CreateValue[V]
     
-    var defaultTransitions: js.UndefOr[Map[String, TransitionMap[A, TD]]] = js.native
+    var defaultTransitions: js.UndefOr[Map[String, TransitionMap[A, TD]]] = js.undefined
     
-    def extendAPI(api: Poser[V, A, C, P], state: PoserState[V, A, C, P], config: PoserConfig[V]): Poser[V, A, C, P] = js.native
+    def extendAPI(api: Poser[V, A, C, P], state: PoserState[V, A, C, P], config: PoserConfig[V]): Poser[V, A, C, P]
     @JSName("extendAPI")
-    var extendAPI_Original: ExtendAPI[V, A, C, P] = js.native
+    var extendAPI_Original: ExtendAPI[V, A, C, P]
     
-    var forceRender: js.UndefOr[js.Function1[/* props */ Props, _]] = js.native
+    var forceRender: js.UndefOr[js.Function1[/* props */ Props, js.Any]] = js.undefined
     
-    var getDefaultProps: js.UndefOr[js.Function1[/* config */ PoserConfig[V], Props]] = js.native
+    var getDefaultProps: js.UndefOr[js.Function1[/* config */ PoserConfig[V], Props]] = js.undefined
     
-    def getInstantTransition(value: V, props: Props): A = js.native
+    def getInstantTransition(value: V, props: Props): A
     @JSName("getInstantTransition")
-    var getInstantTransition_Original: GetInstantTransition[V, A] = js.native
+    var getInstantTransition_Original: GetInstantTransition[V, A]
     
-    def getTransitionProps(value: V, target: Double, props: Props): Props = js.native
+    def getTransitionProps(value: V, target: Double, props: Props): Props
     @JSName("getTransitionProps")
-    var getTransitionProps_Original: GetTransitionProps[V] = js.native
+    var getTransitionProps_Original: GetTransitionProps[V]
     
-    var posePriority: js.UndefOr[js.Array[String]] = js.native
+    var posePriority: js.UndefOr[js.Array[String]] = js.undefined
     
-    def readValue(value: V): js.Any = js.native
+    def readValue(value: V): js.Any
     
-    var readValueFromSource: js.UndefOr[ReadValueFromSource] = js.native
+    var readValueFromSource: js.UndefOr[ReadValueFromSource] = js.undefined
     
     @JSName("readValue")
-    var readValue_Original: ReadValue[V] = js.native
+    var readValue_Original: ReadValue[V]
     
-    def resolveTarget(value: V, target: js.Any): js.Any = js.native
+    def resolveTarget(value: V, target: js.Any): js.Any
     @JSName("resolveTarget")
-    var resolveTarget_Original: ResolveTarget[V] = js.native
+    var resolveTarget_Original: ResolveTarget[V]
     
-    def selectValueToRead(value: V): js.Any = js.native
+    def selectValueToRead(value: V): js.Any
     @JSName("selectValueToRead")
-    var selectValueToRead_Original: SelectValueToRead[V] = js.native
+    var selectValueToRead_Original: SelectValueToRead[V]
     
-    def setValue(v: V, value: js.Any): Unit = js.native
+    def setValue(v: V, value: js.Any): Unit
     
-    def setValueNative(key: String, value: js.Any, props: Props): Unit = js.native
+    def setValueNative(key: String, value: js.Any, props: Props): Unit
     @JSName("setValueNative")
-    var setValueNative_Original: SetValueNative = js.native
+    var setValueNative_Original: SetValueNative
     
     @JSName("setValue")
-    var setValue_Original: SetValue[V] = js.native
+    var setValue_Original: SetValue[V]
     
-    def startAction(value: V, action: A, complete: js.Function0[_]): C = js.native
+    def startAction(value: V, action: A, complete: js.Function0[js.Any]): C
     @JSName("startAction")
-    var startAction_Original: StartAction[V, A, C] = js.native
+    var startAction_Original: StartAction[V, A, C]
     
-    def stopAction(controls: C): js.Any = js.native
+    def stopAction(controls: C): js.Any
     @JSName("stopAction")
-    var stopAction_Original: StopAction[C] = js.native
+    var stopAction_Original: StopAction[C]
     
-    var transformPose: js.UndefOr[TransformPose[V, A, C, P, TD]] = js.native
+    var transformPose: js.UndefOr[TransformPose[V, A, C, P, TD]] = js.undefined
+  }
+  object PoseFactoryConfig {
+    
+    @scala.inline
+    def apply[V, A, C, P, TD](
+      addActionDelay: (/* delay */ Double, A) => A,
+      bindOnChange: (ValueMap[V], OnChangeCallbacks) => js.Function1[/* key */ String, js.Any],
+      convertTransitionDefinition: (V, /* transitionDef */ TD | A, /* props */ Props) => A,
+      convertValue: (/* value */ js.Any, /* key */ String, /* props */ Props) => V,
+      createValue: (/* init */ js.Any, /* key */ String, /* props */ Props, /* createValueProps */ js.UndefOr[CreateValueProps]) => V,
+      extendAPI: (/* api */ Poser[V, A, C, P], /* state */ PoserState[V, A, C, P], /* config */ PoserConfig[V]) => Poser[V, A, C, P],
+      getInstantTransition: (V, /* props */ Props) => A,
+      getTransitionProps: (V, /* target */ Double, /* props */ Props) => Props,
+      readValue: V => js.Any,
+      resolveTarget: (V, /* target */ js.Any) => js.Any,
+      selectValueToRead: V => js.Any,
+      setValue: (V, /* value */ js.Any) => Unit,
+      setValueNative: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit,
+      startAction: (V, A, /* complete */ js.Function0[js.Any]) => C,
+      stopAction: C => js.Any
+    ): PoseFactoryConfig[V, A, C, P, TD] = {
+      val __obj = js.Dynamic.literal(addActionDelay = js.Any.fromFunction2(addActionDelay), bindOnChange = js.Any.fromFunction2(bindOnChange), convertTransitionDefinition = js.Any.fromFunction3(convertTransitionDefinition), convertValue = js.Any.fromFunction3(convertValue), createValue = js.Any.fromFunction4(createValue), extendAPI = js.Any.fromFunction3(extendAPI), getInstantTransition = js.Any.fromFunction2(getInstantTransition), getTransitionProps = js.Any.fromFunction3(getTransitionProps), readValue = js.Any.fromFunction1(readValue), resolveTarget = js.Any.fromFunction2(resolveTarget), selectValueToRead = js.Any.fromFunction1(selectValueToRead), setValue = js.Any.fromFunction2(setValue), setValueNative = js.Any.fromFunction3(setValueNative), startAction = js.Any.fromFunction3(startAction), stopAction = js.Any.fromFunction1(stopAction))
+      __obj.asInstanceOf[PoseFactoryConfig[V, A, C, P, TD]]
+    }
+    
+    @scala.inline
+    implicit class PoseFactoryConfigMutableBuilder[Self <: PoseFactoryConfig[?, ?, ?, ?, ?], V, A, C, P, TD] (val x: Self & (PoseFactoryConfig[V, A, C, P, TD])) extends AnyVal {
+      
+      @scala.inline
+      def setAddActionDelay(value: (/* delay */ Double, A) => A): Self = StObject.set(x, "addActionDelay", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setBindOnChange(value: (ValueMap[V], OnChangeCallbacks) => js.Function1[/* key */ String, js.Any]): Self = StObject.set(x, "bindOnChange", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setConvertTransitionDefinition(value: (V, /* transitionDef */ TD | A, /* props */ Props) => A): Self = StObject.set(x, "convertTransitionDefinition", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setConvertValue(value: (/* value */ js.Any, /* key */ String, /* props */ Props) => V): Self = StObject.set(x, "convertValue", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setCreateValue(
+        value: (/* init */ js.Any, /* key */ String, /* props */ Props, /* createValueProps */ js.UndefOr[CreateValueProps]) => V
+      ): Self = StObject.set(x, "createValue", js.Any.fromFunction4(value))
+      
+      @scala.inline
+      def setDefaultTransitions(value: Map[String, TransitionMap[A, TD]]): Self = StObject.set(x, "defaultTransitions", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDefaultTransitionsUndefined: Self = StObject.set(x, "defaultTransitions", js.undefined)
+      
+      @scala.inline
+      def setExtendAPI(
+        value: (/* api */ Poser[V, A, C, P], /* state */ PoserState[V, A, C, P], /* config */ PoserConfig[V]) => Poser[V, A, C, P]
+      ): Self = StObject.set(x, "extendAPI", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setForceRender(value: /* props */ Props => js.Any): Self = StObject.set(x, "forceRender", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setForceRenderUndefined: Self = StObject.set(x, "forceRender", js.undefined)
+      
+      @scala.inline
+      def setGetDefaultProps(value: /* config */ PoserConfig[V] => Props): Self = StObject.set(x, "getDefaultProps", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGetDefaultPropsUndefined: Self = StObject.set(x, "getDefaultProps", js.undefined)
+      
+      @scala.inline
+      def setGetInstantTransition(value: (V, /* props */ Props) => A): Self = StObject.set(x, "getInstantTransition", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setGetTransitionProps(value: (V, /* target */ Double, /* props */ Props) => Props): Self = StObject.set(x, "getTransitionProps", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setPosePriority(value: js.Array[String]): Self = StObject.set(x, "posePriority", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPosePriorityUndefined: Self = StObject.set(x, "posePriority", js.undefined)
+      
+      @scala.inline
+      def setPosePriorityVarargs(value: String*): Self = StObject.set(x, "posePriority", js.Array(value :_*))
+      
+      @scala.inline
+      def setReadValue(value: V => js.Any): Self = StObject.set(x, "readValue", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setReadValueFromSource(value: (/* key */ String, /* props */ Props) => js.Any): Self = StObject.set(x, "readValueFromSource", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setReadValueFromSourceUndefined: Self = StObject.set(x, "readValueFromSource", js.undefined)
+      
+      @scala.inline
+      def setResolveTarget(value: (V, /* target */ js.Any) => js.Any): Self = StObject.set(x, "resolveTarget", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setSelectValueToRead(value: V => js.Any): Self = StObject.set(x, "selectValueToRead", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSetValue(value: (V, /* value */ js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setSetValueNative(value: (/* key */ String, /* value */ js.Any, /* props */ Props) => Unit): Self = StObject.set(x, "setValueNative", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setStartAction(value: (V, A, /* complete */ js.Function0[js.Any]) => C): Self = StObject.set(x, "startAction", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setStopAction(value: C => js.Any): Self = StObject.set(x, "stopAction", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setTransformPose(
+        value: (/* pose */ Pose[A, TD], /* key */ String, /* state */ PoserState[V, A, C, P]) => Pose[A, TD]
+      ): Self = StObject.set(x, "transformPose", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setTransformPoseUndefined: Self = StObject.set(x, "transformPose", js.undefined)
+    }
   }
   
   type PoseMap[A, TD] = StringDictionary[Pose[A, TD]]
@@ -310,34 +425,34 @@ object libTypesMod {
     
     def removeChild(child: Poser[V, A, C, P]): Unit = js.native
     
-    def set(next: String): js.Promise[_] = js.native
-    def set(next: String, props: Props): js.Promise[_] = js.native
+    def set(next: String): js.Promise[js.Any] = js.native
+    def set(next: String, props: Props): js.Promise[js.Any] = js.native
     
     def setProps(props: Props): Unit = js.native
     
-    def unset(toUnset: String): js.Promise[_] = js.native
-    def unset(toUnset: String, props: Props): js.Promise[_] = js.native
+    def unset(toUnset: String): js.Promise[js.Any] = js.native
+    def unset(toUnset: String, props: Props): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait PoserConfig[V]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var ancestorValues: js.UndefOr[AncestorValueList[V]] = js.native
+    var ancestorValues: js.UndefOr[AncestorValueList[V]] = js.undefined
     
-    var initialPose: js.UndefOr[String | js.Array[String]] = js.native
+    var initialPose: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[OnChangeCallbacks] = js.native
+    var onChange: js.UndefOr[OnChangeCallbacks] = js.undefined
     
-    var parentValues: js.UndefOr[ValueMap[V]] = js.native
+    var parentValues: js.UndefOr[ValueMap[V]] = js.undefined
     
-    var passive: js.UndefOr[PassiveValueMap] = js.native
+    var passive: js.UndefOr[PassiveValueMap] = js.undefined
     
-    var props: js.UndefOr[Props] = js.native
+    var props: js.UndefOr[Props] = js.undefined
     
-    var values: js.UndefOr[StringDictionary[V]] = js.native
+    var values: js.UndefOr[StringDictionary[V]] = js.undefined
   }
   object PoserConfig {
     
@@ -348,7 +463,7 @@ object libTypesMod {
     }
     
     @scala.inline
-    implicit class PoserConfigMutableBuilder[Self <: PoserConfig[_], V] (val x: Self with PoserConfig[V]) extends AnyVal {
+    implicit class PoserConfigMutableBuilder[Self <: PoserConfig[?], V] (val x: Self & PoserConfig[V]) extends AnyVal {
       
       @scala.inline
       def setAncestorValues(value: AncestorValueList[V]): Self = StObject.set(x, "ancestorValues", value.asInstanceOf[js.Any])
@@ -408,18 +523,17 @@ object libTypesMod {
   
   type PoserFactory[V, A, C, P] = js.Function1[/* config */ PoserConfig[V], Poser[V, A, C, P]]
   
-  @js.native
   trait PoserState[V, A, C, P] extends StObject {
     
-    var activeActions: ActiveActions[C] = js.native
+    var activeActions: ActiveActions[C]
     
-    var activePoses: ActivePoses = js.native
+    var activePoses: ActivePoses
     
-    var children: ChildPosers[V, A, C, P] = js.native
+    var children: ChildPosers[V, A, C, P]
     
-    var props: Props = js.native
+    var props: Props
     
-    var values: ValueMap[V] = js.native
+    var values: ValueMap[V]
   }
   object PoserState {
     
@@ -436,7 +550,7 @@ object libTypesMod {
     }
     
     @scala.inline
-    implicit class PoserStateMutableBuilder[Self <: PoserState[_, _, _, _], V, A, C, P] (val x: Self with (PoserState[V, A, C, P])) extends AnyVal {
+    implicit class PoserStateMutableBuilder[Self <: PoserState[?, ?, ?, ?], V, A, C, P] (val x: Self & (PoserState[V, A, C, P])) extends AnyVal {
       
       @scala.inline
       def setActiveActions(value: ActiveActions[C]): Self = StObject.set(x, "activeActions", value.asInstanceOf[js.Any])

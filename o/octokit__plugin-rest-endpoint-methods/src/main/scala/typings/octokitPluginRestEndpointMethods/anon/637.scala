@@ -10,21 +10,19 @@ import typings.octokitTypes.requestParametersMod.RequestParameters
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `637` extends StObject {
   
-  var parameters: RequestParameters with (Omit[AppsListAccountsForPlanStubbedEndpoint, baseUrl | headers | mediaType]) = js.native
+  var parameters: RequestParameters & (Omit[AppsListAccountsForPlanStubbedEndpoint, baseUrl | headers | mediaType])
   
-  var response: OctokitResponse[AppsListAccountsForPlanStubbedResponseData] = js.native
+  var response: OctokitResponse[AppsListAccountsForPlanStubbedResponseData]
 }
 object `637` {
   
   @scala.inline
   def apply(
-    parameters: RequestParameters with (Omit[AppsListAccountsForPlanStubbedEndpoint, baseUrl | headers | mediaType]),
+    parameters: RequestParameters & (Omit[AppsListAccountsForPlanStubbedEndpoint, baseUrl | headers | mediaType]),
     response: OctokitResponse[AppsListAccountsForPlanStubbedResponseData]
   ): `637` = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
@@ -36,7 +34,7 @@ object `637` {
     
     @scala.inline
     def setParameters(
-      value: RequestParameters with (Omit[AppsListAccountsForPlanStubbedEndpoint, baseUrl | headers | mediaType])
+      value: RequestParameters & (Omit[AppsListAccountsForPlanStubbedEndpoint, baseUrl | headers | mediaType])
     ): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline

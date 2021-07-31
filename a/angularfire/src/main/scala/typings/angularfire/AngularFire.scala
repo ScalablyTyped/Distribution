@@ -3,7 +3,6 @@ package typings.angularfire
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,7 @@ trait AngularFire extends StObject {
   
   @JSName("$push")
   def $push(data: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   @JSName("$ref")
@@ -28,45 +27,45 @@ trait AngularFire extends StObject {
   
   @JSName("$remove")
   def $remove(): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   @JSName("$remove")
   def $remove(key: String): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   @JSName("$set")
   def $set(data: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   @JSName("$set")
   def $set(key: String, data: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   
   @JSName("$transaction")
-  def $transaction(key: String, updateFn: js.Function1[/* currentData */ js.Any, _]): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ _
+  def $transaction(key: String, updateFn: js.Function1[/* currentData */ js.Any, js.Any]): IPromise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ js.Any
   ] = js.native
   @JSName("$transaction")
-  def $transaction(key: String, updateFn: js.Function1[/* currentData */ js.Any, _], applyLocally: Boolean): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ _
+  def $transaction(key: String, updateFn: js.Function1[/* currentData */ js.Any, js.Any], applyLocally: Boolean): IPromise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ js.Any
   ] = js.native
   @JSName("$transaction")
-  def $transaction(updateFn: js.Function1[/* currentData */ js.Any, _]): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ _
+  def $transaction(updateFn: js.Function1[/* currentData */ js.Any, js.Any]): IPromise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ js.Any
   ] = js.native
   @JSName("$transaction")
-  def $transaction(updateFn: js.Function1[/* currentData */ js.Any, _], applyLocally: Boolean): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ _
+  def $transaction(updateFn: js.Function1[/* currentData */ js.Any, js.Any], applyLocally: Boolean): IPromise[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FirebaseDataSnapshot */ js.Any
   ] = js.native
   
   @JSName("$update")
   def $update(data: js.Any): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
   @JSName("$update")
   def $update(key: String, data: js.Object): IPromise[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ _
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Firebase */ js.Any
   ] = js.native
 }

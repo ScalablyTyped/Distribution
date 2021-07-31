@@ -11,9 +11,9 @@ Robust, expressive, and feature-rich CSS superset
 | Full name          | stylus |
 | Keywords           | css, parser, style, stylesheets, jade, language |
 | # releases         | 4 |
-| # dependents       | 1767 |
-| # downloads        | 79447938 |
-| # stars            | 148 |
+| # dependents       | 1822 |
+| # downloads        | 91969469 |
+| # stars            | 149 |
 
 ## Links
 - [Homepage](https://github.com/stylus/stylus)

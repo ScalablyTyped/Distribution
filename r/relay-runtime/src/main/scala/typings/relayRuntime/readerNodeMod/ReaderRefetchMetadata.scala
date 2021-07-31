@@ -3,19 +3,17 @@ package typings.relayRuntime.readerNodeMod
 import typings.relayRuntime.relayConcreteNodeMod.ConcreteRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReaderRefetchMetadata extends StObject {
   
-  val connection: js.UndefOr[ReaderPaginationMetadata | Null] = js.native
+  val connection: js.UndefOr[ReaderPaginationMetadata | Null] = js.undefined
   
-  val fragmentPathInResult: js.Array[String] = js.native
+  val fragmentPathInResult: js.Array[String]
   
-  val identifierField: js.UndefOr[String | Null] = js.native
+  val identifierField: js.UndefOr[String | Null] = js.undefined
   
-  val operation: String | ConcreteRequest = js.native
+  val operation: String | ConcreteRequest
 }
 object ReaderRefetchMetadata {
   

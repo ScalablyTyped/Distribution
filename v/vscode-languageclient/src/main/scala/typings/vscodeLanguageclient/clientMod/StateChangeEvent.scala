@@ -2,15 +2,13 @@ package typings.vscodeLanguageclient.clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateChangeEvent extends StObject {
   
-  var newState: State = js.native
+  var newState: State
   
-  var oldState: State = js.native
+  var oldState: State
 }
 object StateChangeEvent {
   

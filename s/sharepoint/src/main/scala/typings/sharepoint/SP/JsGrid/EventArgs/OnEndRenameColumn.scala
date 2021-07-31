@@ -3,17 +3,17 @@ package typings.sharepoint.SP.JsGrid.EventArgs
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnEndRenameColumn extends IEventArgs {
+trait OnEndRenameColumn
+  extends StObject
+     with IEventArgs {
   
-  var columnKey: String = js.native
+  var columnKey: String
   
-  var newColumnTitle: String = js.native
+  var newColumnTitle: String
   
-  var originalColumnTitle: String = js.native
+  var originalColumnTitle: String
 }
 object OnEndRenameColumn {
   

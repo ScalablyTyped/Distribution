@@ -8,7 +8,6 @@ import typings.officeJsPreview.OneNote.Interfaces.TableCellUpdateData
 import typings.officeJsPreview.anon.Expand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: OneNoteApi 1.1]
   */
 @js.native
-trait TableCell extends ClientObject {
+trait TableCell
+  extends StObject
+     with ClientObject {
   
   /**
     *

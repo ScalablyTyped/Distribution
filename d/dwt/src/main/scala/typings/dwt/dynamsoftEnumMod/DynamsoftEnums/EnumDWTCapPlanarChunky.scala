@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,13 +12,17 @@ sealed trait EnumDWTCapPlanarChunky extends StObject
 object EnumDWTCapPlanarChunky extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumDWTCapPlanarChunky with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumDWTCapPlanarChunky & Double] = js.native
   
   @js.native
-  sealed trait TWPC_CHUNKY extends EnumDWTCapPlanarChunky
-  /* 0 */ val TWPC_CHUNKY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPlanarChunky.TWPC_CHUNKY with Double = js.native
+  sealed trait TWPC_CHUNKY
+    extends StObject
+       with EnumDWTCapPlanarChunky
+  /* 0 */ val TWPC_CHUNKY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPlanarChunky.TWPC_CHUNKY & Double = js.native
   
   @js.native
-  sealed trait TWPC_PLANAR extends EnumDWTCapPlanarChunky
-  /* 1 */ val TWPC_PLANAR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPlanarChunky.TWPC_PLANAR with Double = js.native
+  sealed trait TWPC_PLANAR
+    extends StObject
+       with EnumDWTCapPlanarChunky
+  /* 1 */ val TWPC_PLANAR: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTCapPlanarChunky.TWPC_PLANAR & Double = js.native
 }

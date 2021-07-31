@@ -2,7 +2,6 @@ package typings.logg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,13 +16,11 @@ object mod {
   @scala.inline
   def Level_=(x: loggingLevels): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Level")(x.asInstanceOf[js.Any])
   
-  @JSImport("logg", "getLogger")
-  @js.native
-  def getLogger(name: String): Logger = js.native
+  @scala.inline
+  def getLogger(name: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(name.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
-  @JSImport("logg", "getTransientLogger")
-  @js.native
-  def getTransientLogger(name: String): Logger = js.native
+  @scala.inline
+  def getTransientLogger(name: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransientLogger")(name.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   @JSImport("logg", "registerWatcher")
   @js.native

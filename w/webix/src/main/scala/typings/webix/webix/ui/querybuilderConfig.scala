@@ -5,69 +5,67 @@ import typings.webix.webix.DataCollection
 import typings.webix.webix.EventHash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait querybuilderConfig extends StObject {
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var columnMode: js.UndefOr[Boolean] = js.native
+  var columnMode: js.UndefOr[Boolean] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var fields: js.UndefOr[js.Array[_]] = js.native
+  var fields: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var filtering: js.UndefOr[Boolean] = js.native
+  var filtering: js.UndefOr[Boolean] = js.undefined
   
-  var filters: js.UndefOr[js.Array[_] | DataCollection] = js.native
+  var filters: js.UndefOr[js.Array[js.Any] | DataCollection] = js.undefined
   
-  var glue: js.UndefOr[String] = js.native
+  var glue: js.UndefOr[String] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var inputMaxWidth: js.UndefOr[Double] = js.native
+  var inputMaxWidth: js.UndefOr[Double] = js.undefined
   
-  var inputWidth: js.UndefOr[Double] = js.native
+  var inputWidth: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxLevel: js.UndefOr[Double] = js.native
+  var maxLevel: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
-  var paddingX: js.UndefOr[Double] = js.native
+  var paddingX: js.UndefOr[Double] = js.undefined
   
-  var paddingY: js.UndefOr[Double] = js.native
+  var paddingY: js.UndefOr[Double] = js.undefined
   
-  var sorting: js.UndefOr[Boolean] = js.native
+  var sorting: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object querybuilderConfig {
   
@@ -117,7 +115,7 @@ object querybuilderConfig {
     def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
     
     @scala.inline
-    def setFields(value: js.Array[_]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
+    def setFields(value: js.Array[js.Any]): Self = StObject.set(x, "fields", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFieldsUndefined: Self = StObject.set(x, "fields", js.undefined)
@@ -132,7 +130,7 @@ object querybuilderConfig {
     def setFilteringUndefined: Self = StObject.set(x, "filtering", js.undefined)
     
     @scala.inline
-    def setFilters(value: js.Array[_] | DataCollection): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
+    def setFilters(value: js.Array[js.Any] | DataCollection): Self = StObject.set(x, "filters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFiltersUndefined: Self = StObject.set(x, "filters", js.undefined)

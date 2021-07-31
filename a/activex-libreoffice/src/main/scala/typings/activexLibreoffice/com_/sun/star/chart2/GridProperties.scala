@@ -9,15 +9,15 @@ import typings.activexLibreoffice.com_.sun.star.drawing.PolyPolygonBezierCoords
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Must be supported by all grids */
-@js.native
-trait GridProperties extends LineProperties {
+trait GridProperties
+  extends StObject
+     with LineProperties {
   
   /** Determines, whether the grid should be rendered by the view. */
-  var Show: Boolean = js.native
+  var Show: Boolean
 }
 object GridProperties {
   

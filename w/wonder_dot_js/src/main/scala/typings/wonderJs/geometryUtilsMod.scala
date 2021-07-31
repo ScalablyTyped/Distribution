@@ -2,27 +2,39 @@ package typings.wonderJs
 
 import typings.wonderJs.face3Mod.Face3
 import typings.wonderJs.vector3Mod.Vector3
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/component/geometry/GeometryUtils", JSImport.Namespace)
-@js.native
-object geometryUtilsMod extends js.Object {
-  @js.native
-  class GeometryUtils () extends js.Object
+object geometryUtilsMod {
   
+  @JSImport("wonder.js/dist/es2015/component/geometry/GeometryUtils", "GeometryUtils")
+  @js.native
+  class GeometryUtils () extends StObject
   /* static members */
-  @js.native
-  object GeometryUtils extends js.Object {
-    def convertToFaces(indices: js.Array[Double]): js.Array[Face3] = js.native
-    def convertToFaces(indices: js.Array[Double], normals: js.Array[Double]): js.Array[Face3] = js.native
-    def getThreeComponent(sourceData: js.Array[Double], index: Double): Vector3 = js.native
-    def hasData(data: js.Any): Boolean = js.native
-    def iterateThreeComponent(dataArr: js.Array[Double], iterator: js.Function1[/* v */ Vector3, Unit]): Unit = js.native
-    def setThreeComponent(targetData: js.Array[Double], sourceData: js.Array[Double], index: Double): js.Any = js.native
-    def setThreeComponent(targetData: js.Array[Double], sourceData: Vector3, index: Double): js.Any = js.native
+  object GeometryUtils {
+    
+    @JSImport("wonder.js/dist/es2015/component/geometry/GeometryUtils", "GeometryUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def convertToFaces(indices: js.Array[Double]): js.Array[Face3] = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToFaces")(indices.asInstanceOf[js.Any]).asInstanceOf[js.Array[Face3]]
+    @scala.inline
+    def convertToFaces(indices: js.Array[Double], normals: js.Array[Double]): js.Array[Face3] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertToFaces")(indices.asInstanceOf[js.Any], normals.asInstanceOf[js.Any])).asInstanceOf[js.Array[Face3]]
+    
+    @scala.inline
+    def getThreeComponent(sourceData: js.Array[Double], index: Double): Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("getThreeComponent")(sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[Vector3]
+    
+    @scala.inline
+    def hasData(data: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasData")(data.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def iterateThreeComponent(dataArr: js.Array[Double], iterator: js.Function1[/* v */ Vector3, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("iterateThreeComponent")(dataArr.asInstanceOf[js.Any], iterator.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def setThreeComponent(targetData: js.Array[Double], sourceData: js.Array[Double], index: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setThreeComponent")(targetData.asInstanceOf[js.Any], sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def setThreeComponent(targetData: js.Array[Double], sourceData: Vector3, index: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("setThreeComponent")(targetData.asInstanceOf[js.Any], sourceData.asInstanceOf[js.Any], index.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
-  
 }
-

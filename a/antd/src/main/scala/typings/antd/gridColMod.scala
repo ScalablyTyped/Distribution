@@ -7,43 +7,43 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gridColMod extends Shortcut {
   
   @JSImport("antd/lib/grid/col", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[ColProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[ColProps & RefAttributes[HTMLDivElement]] = js.native
   
-  @js.native
-  trait ColProps extends HTMLAttributes[HTMLDivElement] {
+  trait ColProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
-    var flex: js.UndefOr[FlexType] = js.native
+    var flex: js.UndefOr[FlexType] = js.undefined
     
-    var lg: js.UndefOr[ColSpanType | ColSize] = js.native
+    var lg: js.UndefOr[ColSpanType | ColSize] = js.undefined
     
-    var md: js.UndefOr[ColSpanType | ColSize] = js.native
+    var md: js.UndefOr[ColSpanType | ColSize] = js.undefined
     
-    var offset: js.UndefOr[ColSpanType] = js.native
+    var offset: js.UndefOr[ColSpanType] = js.undefined
     
-    var order: js.UndefOr[ColSpanType] = js.native
+    var order: js.UndefOr[ColSpanType] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var pull: js.UndefOr[ColSpanType] = js.native
+    var pull: js.UndefOr[ColSpanType] = js.undefined
     
-    var push: js.UndefOr[ColSpanType] = js.native
+    var push: js.UndefOr[ColSpanType] = js.undefined
     
-    var sm: js.UndefOr[ColSpanType | ColSize] = js.native
+    var sm: js.UndefOr[ColSpanType | ColSize] = js.undefined
     
-    var span: js.UndefOr[ColSpanType] = js.native
+    var span: js.UndefOr[ColSpanType] = js.undefined
     
-    var xl: js.UndefOr[ColSpanType | ColSize] = js.native
+    var xl: js.UndefOr[ColSpanType | ColSize] = js.undefined
     
-    var xs: js.UndefOr[ColSpanType | ColSize] = js.native
+    var xs: js.UndefOr[ColSpanType | ColSize] = js.undefined
     
-    var xxl: js.UndefOr[ColSpanType | ColSize] = js.native
+    var xxl: js.UndefOr[ColSpanType | ColSize] = js.undefined
   }
   object ColProps {
     
@@ -136,20 +136,19 @@ object gridColMod extends Shortcut {
     }
   }
   
-  @js.native
   trait ColSize extends StObject {
     
-    var flex: js.UndefOr[FlexType] = js.native
+    var flex: js.UndefOr[FlexType] = js.undefined
     
-    var offset: js.UndefOr[ColSpanType] = js.native
+    var offset: js.UndefOr[ColSpanType] = js.undefined
     
-    var order: js.UndefOr[ColSpanType] = js.native
+    var order: js.UndefOr[ColSpanType] = js.undefined
     
-    var pull: js.UndefOr[ColSpanType] = js.native
+    var pull: js.UndefOr[ColSpanType] = js.undefined
     
-    var push: js.UndefOr[ColSpanType] = js.native
+    var push: js.UndefOr[ColSpanType] = js.undefined
     
-    var span: js.UndefOr[ColSpanType] = js.native
+    var span: js.UndefOr[ColSpanType] = js.undefined
   }
   object ColSize {
     
@@ -212,8 +211,8 @@ object gridColMod extends Shortcut {
   
   trait _FlexType extends StObject
   
-  type _To = ForwardRefExoticComponent[ColProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[ColProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `gridColMod.foo` */
-  override def _to: ForwardRefExoticComponent[ColProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[ColProps & RefAttributes[HTMLDivElement]] = default
 }

@@ -11,19 +11,20 @@ import typings.globalize.globalizeStrings.name
 import typings.globalize.globalizeStrings.symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object currencyMod extends Shortcut {
   
   @JSImport("globalize/dist/globalize/currency", JSImport.Namespace)
   @js.native
-  val ^ : Static = js.native
+  val ^ : js.Object & Static = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("globalize/dist/globalize/currency", JSImport.Namespace)
   @js.native
-  class Class protected () extends Shared {
+  class Class protected ()
+    extends StObject
+       with Shared {
     /**
       * Create a Globalize instance.
       * @param cldr Cldr instance of the instance.
@@ -38,21 +39,22 @@ object currencyMod extends Shortcut {
     def this(locale: String) = this()
   }
   
-  type _To = Static
+  type _To = js.Object & Static
   
   /* This means you don't have to write `^`, but can instead just say `currencyMod.foo` */
-  override def _to: Static = ^
+  override def _to: js.Object & Static = ^
   
   /* augmented module */
   object globalizeDistGlobalizeAugmentingMod {
     
-    @js.native
-    trait CurrencyFormatterOptions extends CommonNumberFormatterOptions {
+    trait CurrencyFormatterOptions
+      extends StObject
+         with CommonNumberFormatterOptions {
       
       /**
         * symbol (default), accounting, code or name.
         */
-      var style: js.UndefOr[symbol | accounting | code | name] = js.native
+      var style: js.UndefOr[symbol | accounting | code | name] = js.undefined
     }
     object CurrencyFormatterOptions {
       

@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NamespaceError extends StObject {
   
   /**
     * The message for the error.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     * The error type.
     */
-  var Type: js.UndefOr[NamespaceErrorType] = js.native
+  var Type: js.UndefOr[NamespaceErrorType] = js.undefined
 }
 object NamespaceError {
   

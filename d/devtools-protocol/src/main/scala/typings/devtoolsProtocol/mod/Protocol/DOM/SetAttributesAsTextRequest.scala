@@ -2,27 +2,25 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetAttributesAsTextRequest extends StObject {
   
   /**
     * Attribute name to replace with new attributes derived from text in case text parsed
     * successfully.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Id of the element to set attributes for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * Text with a number of attributes. Will parse this text using HTML parser.
     */
-  var text: String = js.native
+  var text: String
 }
 object SetAttributesAsTextRequest {
   

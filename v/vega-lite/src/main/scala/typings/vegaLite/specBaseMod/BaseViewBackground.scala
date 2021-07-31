@@ -12,96 +12,94 @@ import typings.vegaTypings.encodeMod.ScaledValueRef
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<std.Pick<vega-lite.vega-lite/build/src/mark.MarkConfig<ES>, 'cornerRadius' | 'fillOpacity' | 'opacity' | 'strokeCap' | 'strokeDash' | 'strokeDashOffset' | 'strokeJoin' | 'strokeMiterLimit' | 'strokeOpacity' | 'strokeWidth'>> */
-@js.native
 trait BaseViewBackground[ES /* <: ExprRef | SignalRef */] extends StObject {
   
   var cornerRadius: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The mouse cursor used over the view. Any valid [CSS cursor type](https://developer.mozilla.org/en-US/docs/Web/CSS/cursor#Values) can be used.
     */
-  var cursor: js.UndefOr[Cursor] = js.native
+  var cursor: js.UndefOr[Cursor] = js.undefined
   
   /**
     * The fill color.
     *
     * __Default value:__ `undefined`
     */
-  var fill: js.UndefOr[Color | Null | ES] = js.native
+  var fill: js.UndefOr[Color | Null | ES] = js.undefined
   
   var fillOpacity: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
-  var opacity: js.UndefOr[Double | ES] = js.native
+  var opacity: js.UndefOr[Double | ES] = js.undefined
   
   /**
     * The stroke color.
     *
     * __Default value:__ `"#ddd"`
     */
-  var stroke: js.UndefOr[Color | Null | ES] = js.native
+  var stroke: js.UndefOr[Color | Null | ES] = js.undefined
   
   var strokeCap: js.UndefOr[
     (Exclude[
       js.UndefOr[StrokeCap | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
   var strokeDash: js.UndefOr[
     (Exclude[
       js.UndefOr[js.Array[Double] | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
   var strokeDashOffset: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
   var strokeJoin: js.UndefOr[
     (Exclude[
       js.UndefOr[StrokeJoin | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
   var strokeMiterLimit: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
   var strokeOpacity: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
   
   var strokeWidth: js.UndefOr[
     (Exclude[
       js.UndefOr[Double | SignalRef], 
-      ScaledValueRef[_] | NumericValueRef | ColorValueRef
+      ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
     ]) | ES
-  ] = js.native
+  ] = js.undefined
 }
 object BaseViewBackground {
   
@@ -112,13 +110,13 @@ object BaseViewBackground {
   }
   
   @scala.inline
-  implicit class BaseViewBackgroundMutableBuilder[Self <: BaseViewBackground[_], ES /* <: ExprRef | SignalRef */] (val x: Self with BaseViewBackground[ES]) extends AnyVal {
+  implicit class BaseViewBackgroundMutableBuilder[Self <: BaseViewBackground[?], ES /* <: ExprRef | SignalRef */] (val x: Self & BaseViewBackground[ES]) extends AnyVal {
     
     @scala.inline
     def setCornerRadius(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "cornerRadius", value.asInstanceOf[js.Any])
     
@@ -141,7 +139,7 @@ object BaseViewBackground {
     def setFillOpacity(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "fillOpacity", value.asInstanceOf[js.Any])
     
@@ -164,7 +162,7 @@ object BaseViewBackground {
     def setStrokeCap(
       value: (Exclude[
           js.UndefOr[StrokeCap | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeCap", value.asInstanceOf[js.Any])
     
@@ -175,7 +173,7 @@ object BaseViewBackground {
     def setStrokeDash(
       value: (Exclude[
           js.UndefOr[js.Array[Double] | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeDash", value.asInstanceOf[js.Any])
     
@@ -183,7 +181,7 @@ object BaseViewBackground {
     def setStrokeDashOffset(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeDashOffset", value.asInstanceOf[js.Any])
     
@@ -200,7 +198,7 @@ object BaseViewBackground {
     def setStrokeJoin(
       value: (Exclude[
           js.UndefOr[StrokeJoin | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeJoin", value.asInstanceOf[js.Any])
     
@@ -211,7 +209,7 @@ object BaseViewBackground {
     def setStrokeMiterLimit(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeMiterLimit", value.asInstanceOf[js.Any])
     
@@ -225,7 +223,7 @@ object BaseViewBackground {
     def setStrokeOpacity(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeOpacity", value.asInstanceOf[js.Any])
     
@@ -239,7 +237,7 @@ object BaseViewBackground {
     def setStrokeWidth(
       value: (Exclude[
           js.UndefOr[Double | SignalRef], 
-          ScaledValueRef[_] | NumericValueRef | ColorValueRef
+          ScaledValueRef[js.Any] | NumericValueRef | ColorValueRef
         ]) | ES
     ): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
     

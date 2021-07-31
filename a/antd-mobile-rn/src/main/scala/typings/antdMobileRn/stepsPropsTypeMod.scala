@@ -2,24 +2,22 @@ package typings.antdMobileRn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsPropsTypeMod {
   
-  @js.native
   trait StepsPropsType extends StObject {
     
-    var children: js.Array[_] = js.native
+    var children: js.Array[js.Any]
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object StepsPropsType {
     
     @scala.inline
-    def apply(children: js.Array[_]): StepsPropsType = {
+    def apply(children: js.Array[js.Any]): StepsPropsType = {
       val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
       __obj.asInstanceOf[StepsPropsType]
     }
@@ -28,7 +26,7 @@ object stepsPropsTypeMod {
     implicit class StepsPropsTypeMutableBuilder[Self <: StepsPropsType] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setChildren(value: js.Array[_]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
+      def setChildren(value: js.Array[js.Any]): Self = StObject.set(x, "children", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setChildrenVarargs(value: js.Any*): Self = StObject.set(x, "children", js.Array(value :_*))

@@ -10,9 +10,9 @@ Non-blocking stdout stream
 | ------------------ | :-------------: |
 | Full name          | stdout-stream |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 65 |
-| # downloads        | 196879949 |
+| # releases         | 0 |
+| # dependents       | 64 |
+| # downloads        | 215509897 |
 | # stars            | 2 |
 
 ## Links

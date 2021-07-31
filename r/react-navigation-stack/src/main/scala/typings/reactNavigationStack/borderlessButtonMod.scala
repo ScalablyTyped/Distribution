@@ -9,7 +9,6 @@ import typings.reactNavigationStack.anon.Borderless
 import typings.reactNavigationStack.anon.ReadonlyBaseButtonPropert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object borderlessButtonMod {
@@ -40,5 +39,5 @@ object borderlessButtonMod {
     var opacity: js.Any = js.native
   }
   
-  type Props = (ComponentProps[Instantiable1[/* props */ ReadonlyBaseButtonPropert, BaseButton]]) with ActiveOpacity
+  type Props = (ComponentProps[Instantiable1[/* props */ ReadonlyBaseButtonPropert, BaseButton]]) & ActiveOpacity
 }

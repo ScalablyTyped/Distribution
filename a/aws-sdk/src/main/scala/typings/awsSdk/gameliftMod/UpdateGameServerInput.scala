@@ -2,36 +2,34 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateGameServerInput extends StObject {
   
   /**
     * A set of custom game server properties, formatted as a single string value. This data is passed to a game client or service when it requests information on game servers using ListGameServers or ClaimGameServer. 
     */
-  var GameServerData: js.UndefOr[typings.awsSdk.gameliftMod.GameServerData] = js.native
+  var GameServerData: js.UndefOr[typings.awsSdk.gameliftMod.GameServerData] = js.undefined
   
   /**
     * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.
     */
-  var GameServerGroupName: GameServerGroupNameOrArn = js.native
+  var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
     * A custom string that uniquely identifies the game server to update.
     */
-  var GameServerId: typings.awsSdk.gameliftMod.GameServerId = js.native
+  var GameServerId: typings.awsSdk.gameliftMod.GameServerId
   
   /**
     * Indicates health status of the game server. A request that includes this parameter updates the game server's LastHealthCheckTime timestamp. 
     */
-  var HealthCheck: js.UndefOr[GameServerHealthCheck] = js.native
+  var HealthCheck: js.UndefOr[GameServerHealthCheck] = js.undefined
   
   /**
     * Indicates whether the game server is available or is currently hosting gameplay.
     */
-  var UtilizationStatus: js.UndefOr[GameServerUtilizationStatus] = js.native
+  var UtilizationStatus: js.UndefOr[GameServerUtilizationStatus] = js.undefined
 }
 object UpdateGameServerInput {
   

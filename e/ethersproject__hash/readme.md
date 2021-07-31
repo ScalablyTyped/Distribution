@@ -10,9 +10,9 @@ Hash utility functions for Ethereum.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/hash |
 | Keywords           | Ethereum, ethers |
-| # releases         | 26 |
-| # dependents       | 17 |
-| # downloads        | 1696048 |
+| # releases         | 30 |
+| # dependents       | 27 |
+| # downloads        | 2891463 |
 | # stars            | 0 |
 
 ## Links

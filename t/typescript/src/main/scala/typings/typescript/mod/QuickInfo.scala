@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuickInfo extends StObject {
   
-  var displayParts: js.UndefOr[js.Array[SymbolDisplayPart]] = js.native
+  var displayParts: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
   
-  var documentation: js.UndefOr[js.Array[SymbolDisplayPart]] = js.native
+  var documentation: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
-  var kindModifiers: java.lang.String = js.native
+  var kindModifiers: java.lang.String
   
-  var tags: js.UndefOr[js.Array[JSDocTagInfo]] = js.native
+  var tags: js.UndefOr[js.Array[JSDocTagInfo]] = js.undefined
   
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object QuickInfo {
   

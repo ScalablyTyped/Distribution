@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Container extends StObject {
   
   /** A string representation of the full container name. Examples: - BigQuery: 'Project:DataSetId.TableId' - Google Cloud Storage: 'gs://Bucket/folders/filename.txt' */
-  var fullPath: js.UndefOr[String] = js.native
+  var fullPath: js.UndefOr[String] = js.undefined
   
   /** Project where the finding was found. Can be different from the project that owns the finding. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * The rest of the path after the root. Examples: - For BigQuery table `project_id:dataset_id.table_id`, the relative path is `table_id` - Google Cloud Storage file
     * `gs://bucket/folder/filename.txt`, the relative path is `folder/filename.txt`
     */
-  var relativePath: js.UndefOr[String] = js.native
+  var relativePath: js.UndefOr[String] = js.undefined
   
   /**
     * The root of the container. Examples: - For BigQuery table `project_id:dataset_id.table_id`, the root is `dataset_id` - For Google Cloud Storage file
     * `gs://bucket/folder/filename.txt`, the root is `gs://bucket`
     */
-  var rootPath: js.UndefOr[String] = js.native
+  var rootPath: js.UndefOr[String] = js.undefined
   
   /** Container type, for example BigQuery or Google Cloud Storage. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Findings container modification timestamp, if applicable. For Google Cloud Storage contains last file modification timestamp. For BigQuery table contains last_modified_time
     * property. For Datastore - not populated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
   
   /** Findings container version, if available ("generation" for Google Cloud Storage). */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2Container {
   

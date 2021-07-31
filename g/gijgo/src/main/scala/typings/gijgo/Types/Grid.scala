@@ -3,11 +3,12 @@ package typings.gijgo.Types
 import typings.gijgo.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Grid[Entity, Params] extends JQuery {
+trait Grid[Entity, Params]
+  extends StObject
+     with JQuery {
   
   def addRow(record: Entity): Grid[Entity, Params] = js.native
   
@@ -21,14 +22,14 @@ trait Grid[Entity, Params] extends JQuery {
   def count(): Double = js.native
   
   def destroy(): Unit = js.native
-  def destroy(keepTableTag: js.UndefOr[scala.Nothing], keepWrapperTag: Boolean): Unit = js.native
   def destroy(keepTableTag: Boolean): Unit = js.native
   def destroy(keepTableTag: Boolean, keepWrapperTag: Boolean): Unit = js.native
+  def destroy(keepTableTag: Unit, keepWrapperTag: Boolean): Unit = js.native
   
   def downloadCSV(): Grid[Entity, Params] = js.native
-  def downloadCSV(filename: js.UndefOr[scala.Nothing], includeAllRecords: Boolean): Grid[Entity, Params] = js.native
   def downloadCSV(filename: String): Grid[Entity, Params] = js.native
   def downloadCSV(filename: String, includeAllRecords: Boolean): Grid[Entity, Params] = js.native
+  def downloadCSV(filename: Unit, includeAllRecords: Boolean): Grid[Entity, Params] = js.native
   
   def edit(id: String): Grid[Entity, Params] = js.native
   

@@ -12,7 +12,7 @@ Sorts JSON object alphabetically. It supports nested objects, arrays and collect
 | Keywords           | sorting, beautify, alphabet, sorts json, json, utility |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 52479 |
+| # downloads        | 113707 |
 | # stars            | 0 |
 
 ## Links

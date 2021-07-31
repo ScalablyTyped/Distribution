@@ -3,40 +3,40 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPatchBaselineMod {
   
-  @JSImport("@pulumi/aws/ssm/getPatchBaseline", "getPatchBaseline")
+  @JSImport("@pulumi/aws/ssm/getPatchBaseline", JSImport.Namespace)
   @js.native
-  def getPatchBaseline(args: GetPatchBaselineArgs): js.Promise[GetPatchBaselineResult] = js.native
-  @JSImport("@pulumi/aws/ssm/getPatchBaseline", "getPatchBaseline")
-  @js.native
-  def getPatchBaseline(args: GetPatchBaselineArgs, opts: InvokeOptions): js.Promise[GetPatchBaselineResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPatchBaseline(args: GetPatchBaselineArgs): js.Promise[GetPatchBaselineResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPatchBaseline")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetPatchBaselineResult]]
+  @scala.inline
+  def getPatchBaseline(args: GetPatchBaselineArgs, opts: InvokeOptions): js.Promise[GetPatchBaselineResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPatchBaseline")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetPatchBaselineResult]]
+  
   trait GetPatchBaselineArgs extends StObject {
     
     /**
       * Filters the results against the baselines defaultBaseline field.
       */
-    val defaultBaseline: js.UndefOr[Boolean] = js.native
+    val defaultBaseline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Filter results by the baseline name prefix.
       */
-    val namePrefix: js.UndefOr[String] = js.native
+    val namePrefix: js.UndefOr[String] = js.undefined
     
     /**
       * The specified OS for the baseline.
       */
-    val operatingSystem: js.UndefOr[String] = js.native
+    val operatingSystem: js.UndefOr[String] = js.undefined
     
     /**
       * The owner of the baseline. Valid values: `All`, `AWS`, `Self` (the current account).
       */
-    val owner: String = js.native
+    val owner: String
   }
   object GetPatchBaselineArgs {
     
@@ -72,31 +72,30 @@ object getPatchBaselineMod {
     }
   }
   
-  @js.native
   trait GetPatchBaselineResult extends StObject {
     
-    val defaultBaseline: js.UndefOr[Boolean] = js.native
+    val defaultBaseline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The description of the baseline.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The name of the baseline.
       */
-    val name: String = js.native
+    val name: String
     
-    val namePrefix: js.UndefOr[String] = js.native
+    val namePrefix: js.UndefOr[String] = js.undefined
     
-    val operatingSystem: js.UndefOr[String] = js.native
+    val operatingSystem: js.UndefOr[String] = js.undefined
     
-    val owner: String = js.native
+    val owner: String
   }
   object GetPatchBaselineResult {
     

@@ -2,17 +2,15 @@ package typings.angularHttpAuth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Reject extends StObject {
     
-    def reject(data: js.Any): Unit = js.native
+    def reject(data: js.Any): Unit
     
-    def resolve(data: js.Any): Unit = js.native
+    def resolve(data: js.Any): Unit
   }
   object Reject {
     

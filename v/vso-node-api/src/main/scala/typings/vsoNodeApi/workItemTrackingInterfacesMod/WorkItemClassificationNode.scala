@@ -3,46 +3,46 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemClassificationNode extends WorkItemTrackingResource {
+trait WorkItemClassificationNode
+  extends StObject
+     with WorkItemTrackingResource {
   
   /**
     * Dictionary that has node attributes like start/finish date for iteration nodes.
     */
-  var attributes: StringDictionary[js.Any] = js.native
+  var attributes: StringDictionary[js.Any]
   
   /**
     * List of child nodes fetched.
     */
-  var children: js.Array[WorkItemClassificationNode] = js.native
+  var children: js.Array[WorkItemClassificationNode]
   
   /**
     * Flag that indicates if the classification node has any child nodes.
     */
-  var hasChildren: Boolean = js.native
+  var hasChildren: Boolean
   
   /**
     * Integer ID of the classification node.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * GUID ID of the classification node.
     */
-  var identifier: String = js.native
+  var identifier: String
   
   /**
     * Name of the classification node.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Node structure type.
     */
-  var structureType: TreeNodeStructureType = js.native
+  var structureType: TreeNodeStructureType
 }
 object WorkItemClassificationNode {
   

@@ -2,21 +2,19 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyscalekeyScale extends StObject {
   
   /**
     * Sets the key-scale value "scale-k" | "scale-v" | ...
     */
-  var `key-scalekeyScale`: js.UndefOr[String] = js.native
+  var `key-scalekeyScale`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the value-scale value "scale-x" | "scale-y" | ...
     */
-  var `val-scalevalScale`: js.UndefOr[String] = js.native
+  var `val-scalevalScale`: js.UndefOr[String] = js.undefined
 }
 object KeyscalekeyScale {
   

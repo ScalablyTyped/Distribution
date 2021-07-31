@@ -5,10 +5,13 @@ import typings.node.asyncHooksMod.AsyncResource
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object perfHooksMod {
+  
+  @JSImport("perf_hooks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("perf_hooks", "PerformanceObserver")
   @js.native
@@ -76,12 +79,10 @@ object perfHooksMod {
     val NODE_PERFORMANCE_GC_WEAKCB: Double = js.native
   }
   
-  @JSImport("perf_hooks", "monitorEventLoopDelay")
-  @js.native
-  def monitorEventLoopDelay(): EventLoopDelayMonitor = js.native
-  @JSImport("perf_hooks", "monitorEventLoopDelay")
-  @js.native
-  def monitorEventLoopDelay(options: EventLoopMonitorOptions): EventLoopDelayMonitor = js.native
+  @scala.inline
+  def monitorEventLoopDelay(): EventLoopDelayMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorEventLoopDelay")().asInstanceOf[EventLoopDelayMonitor]
+  @scala.inline
+  def monitorEventLoopDelay(options: EventLoopMonitorOptions): EventLoopDelayMonitor = ^.asInstanceOf[js.Dynamic].applyDynamic("monitorEventLoopDelay")(options.asInstanceOf[js.Any]).asInstanceOf[EventLoopDelayMonitor]
   
   @JSImport("perf_hooks", "performance")
   @js.native
@@ -121,59 +122,58 @@ object perfHooksMod {
     def node: typings.node.nodeStrings.node = "node".asInstanceOf[typings.node.nodeStrings.node]
   }
   
-  @js.native
   trait EventLoopDelayMonitor extends StObject {
     
     /**
       * Disables the event loop delay sample timer. Returns `true` if the timer was stopped, `false` if it was already stopped.
       */
-    def disable(): Boolean = js.native
+    def disable(): Boolean
     
     /**
       * Enables the event loop delay sample timer. Returns `true` if the timer was started, `false` if it was already started.
       */
-    def enable(): Boolean = js.native
+    def enable(): Boolean
     
     /**
       * The number of times the event loop delay exceeded the maximum 1 hour eventloop delay threshold.
       */
-    val exceeds: Double = js.native
+    val exceeds: Double
     
     /**
       * The maximum recorded event loop delay.
       */
-    val max: Double = js.native
+    val max: Double
     
     /**
       * The mean of the recorded event loop delays.
       */
-    val mean: Double = js.native
+    val mean: Double
     
     /**
       * The minimum recorded event loop delay.
       */
-    val min: Double = js.native
+    val min: Double
     
     /**
       * Returns the value at the given percentile.
       * @param percentile A percentile value between 1 and 100.
       */
-    def percentile(percentile: Double): Double = js.native
+    def percentile(percentile: Double): Double
     
     /**
       * A `Map` object detailing the accumulated percentile distribution.
       */
-    val percentiles: Map[Double, Double] = js.native
+    val percentiles: Map[Double, Double]
     
     /**
       * Resets the collected histogram data.
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
     
     /**
       * The standard deviation of the recorded event loop delays.
       */
-    val stddev: Double = js.native
+    val stddev: Double
   }
   object EventLoopDelayMonitor {
     
@@ -229,7 +229,6 @@ object perfHooksMod {
     }
   }
   
-  @js.native
   trait EventLoopMonitorOptions extends StObject {
     
     /**
@@ -237,7 +236,7 @@ object perfHooksMod {
       * Must be greater than zero.
       * @default 10
       */
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
   }
   object EventLoopMonitorOptions {
     
@@ -258,14 +257,13 @@ object perfHooksMod {
     }
   }
   
-  @js.native
   trait EventLoopUtilization extends StObject {
     
-    var active: Double = js.native
+    var active: Double
     
-    var idle: Double = js.native
+    var idle: Double
     
-    var utilization: Double = js.native
+    var utilization: Double
   }
   object EventLoopUtilization {
     
@@ -289,44 +287,43 @@ object perfHooksMod {
     }
   }
   
-  @js.native
   trait PerformanceEntry extends StObject {
     
     /**
       * The total number of milliseconds elapsed for this entry.
       * This value will not be meaningful for all Performance Entry types.
       */
-    val duration: Double = js.native
+    val duration: Double
     
     /**
       * The type of the performance entry.
       * Currently it may be one of: 'node', 'mark', 'measure', 'gc', or 'function'.
       */
-    val entryType: EntryType = js.native
+    val entryType: EntryType
     
     /**
       * When `performanceEntry.entryType` is equal to 'gc', the `performance.flags`
       * property contains additional information about garbage collection operation.
       * See perf_hooks.constants for valid values.
       */
-    val flags: js.UndefOr[Double] = js.native
+    val flags: js.UndefOr[Double] = js.undefined
     
     /**
       * When `performanceEntry.entryType` is equal to 'gc', `the performance.kind` property identifies
       * the type of garbage collection operation that occurred.
       * See perf_hooks.constants for valid values.
       */
-    val kind: js.UndefOr[Double] = js.native
+    val kind: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the performance entry.
       */
-    val name: java.lang.String = js.native
+    val name: java.lang.String
     
     /**
       * The high resolution millisecond timestamp marking the starting time of the Performance Entry.
       */
-    val startTime: Double = js.native
+    val startTime: Double
   }
   object PerformanceEntry {
     
@@ -365,24 +362,25 @@ object perfHooksMod {
     }
   }
   
-  @js.native
-  trait PerformanceNodeTiming extends PerformanceEntry {
+  trait PerformanceNodeTiming
+    extends StObject
+       with PerformanceEntry {
     
     /**
       * The high resolution millisecond timestamp at which the Node.js process completed bootstrap.
       */
-    val bootstrapComplete: Double = js.native
+    val bootstrapComplete: Double
     
     /**
       * The high resolution millisecond timestamp at which the Node.js process completed bootstrapping.
       * If bootstrapping has not yet finished, the property has the value of -1.
       */
-    val environment: Double = js.native
+    val environment: Double
     
     /**
       * The high resolution millisecond timestamp at which the Node.js environment was initialized.
       */
-    val idleTime: Double = js.native
+    val idleTime: Double
     
     /**
       * The high resolution millisecond timestamp of the amount of time the event loop has been idle
@@ -390,18 +388,18 @@ object perfHooksMod {
       * into consideration. If the event loop has not yet started (e.g., in the first tick of the main script),
       *  the property has the value of 0.
       */
-    val loopExit: Double = js.native
+    val loopExit: Double
     
     /**
       * The high resolution millisecond timestamp at which the Node.js event loop started.
       * If the event loop has not yet started (e.g., in the first tick of the main script), the property has the value of -1.
       */
-    val loopStart: Double = js.native
+    val loopStart: Double
     
     /**
       * The high resolution millisecond timestamp at which the V8 platform was initialized.
       */
-    val v8Start: Double = js.native
+    val v8Start: Double
   }
   object PerformanceNodeTiming {
     
@@ -489,7 +487,7 @@ object perfHooksMod {
       * @param util2 The result of a previous call to eventLoopUtilization() prior to util1
       */
     def eventLoopUtilization(): EventLoopUtilization = js.native
-    def eventLoopUtilization(util1: js.UndefOr[scala.Nothing], util2: EventLoopUtilization): EventLoopUtilization = js.native
+    def eventLoopUtilization(util1: Unit, util2: EventLoopUtilization): EventLoopUtilization = js.native
     def eventLoopUtilization(util1: EventLoopUtilization): EventLoopUtilization = js.native
     def eventLoopUtilization(util1: EventLoopUtilization, util2: EventLoopUtilization): EventLoopUtilization = js.native
     
@@ -540,6 +538,6 @@ object perfHooksMod {
       * A PerformanceObserver must be subscribed to the 'function' event type in order for the timing details to be accessed.
       * @param fn
       */
-    def timerify[T /* <: js.Function1[/* repeated */ js.Any, _] */](fn: T): T = js.native
+    def timerify[T /* <: js.Function1[/* repeated */ js.Any, js.Any] */](fn: T): T = js.native
   }
 }

@@ -6,35 +6,39 @@ import typings.flatpickr.localeMod.Locale
 import typings.flatpickr.optionsMod.ParsedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datesMod {
   
-  @JSImport("flatpickr/dist/utils/dates", "compareDates")
+  @JSImport("flatpickr/dist/utils/dates", JSImport.Namespace)
   @js.native
-  def compareDates(date1: Date, date2: Date): Double = js.native
-  @JSImport("flatpickr/dist/utils/dates", "compareDates")
-  @js.native
-  def compareDates(date1: Date, date2: Date, timeless: Boolean): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("flatpickr/dist/utils/dates", "compareTimes")
-  @js.native
-  def compareTimes(date1: Date, date2: Date): Double = js.native
+  @scala.inline
+  def compareDates(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareDates(date1: Date, date2: Date, timeless: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any], timeless.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("flatpickr/dist/utils/dates", "createDateFormatter")
-  @js.native
-  def createDateFormatter(hasConfigL10nIsMobile: FormatterArgs): js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String] = js.native
+  @scala.inline
+  def compareTimes(date1: Date, date2: Date): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareTimes")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("flatpickr/dist/utils/dates", "createDateParser")
-  @js.native
+  @scala.inline
+  def createDateFormatter(hasConfigL10nIsMobile: FormatterArgs): js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateFormatter")(hasConfigL10nIsMobile.asInstanceOf[js.Any]).asInstanceOf[js.Function3[/* dateObj */ Date, /* frmt */ String, /* overrideLocale */ js.UndefOr[Locale], String]]
+  
+  @scala.inline
   def createDateParser(hasConfigL10n: Config): js.Function4[
     /* date */ Date | String | Double, 
     /* givenFormat */ js.UndefOr[String], 
     /* timeless */ js.UndefOr[Boolean], 
     /* customLocale */ js.UndefOr[Locale], 
     js.UndefOr[Date]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDateParser")(hasConfigL10n.asInstanceOf[js.Any]).asInstanceOf[js.Function4[
+    /* date */ Date | String | Double, 
+    /* givenFormat */ js.UndefOr[String], 
+    /* timeless */ js.UndefOr[Boolean], 
+    /* customLocale */ js.UndefOr[Locale], 
+    js.UndefOr[Date]
+  ]]
   
   object duration {
     
@@ -49,18 +53,16 @@ object datesMod {
     def DAY_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DAY")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("flatpickr/dist/utils/dates", "isBetween")
-  @js.native
-  def isBetween(ts: Double, ts1: Double, ts2: Double): Boolean = js.native
+  @scala.inline
+  def isBetween(ts: Double, ts1: Double, ts2: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isBetween")(ts.asInstanceOf[js.Any], ts1.asInstanceOf[js.Any], ts2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait FormatterArgs extends StObject {
     
-    var config: js.UndefOr[ParsedOptions] = js.native
+    var config: js.UndefOr[ParsedOptions] = js.undefined
     
-    var isMobile: js.UndefOr[Boolean] = js.native
+    var isMobile: js.UndefOr[Boolean] = js.undefined
     
-    var l10n: js.UndefOr[Locale] = js.native
+    var l10n: js.UndefOr[Locale] = js.undefined
   }
   object FormatterArgs {
     

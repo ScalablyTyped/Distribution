@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateRoleAliasRequest extends StObject {
   
   /**
     * How long (in seconds) the credentials will be valid.
     */
-  var credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.native
+  var credentialDurationSeconds: js.UndefOr[CredentialDurationSeconds] = js.undefined
   
   /**
     * The role alias that points to a role ARN. This allows you to change the role without having to update the device.
     */
-  var roleAlias: RoleAlias = js.native
+  var roleAlias: RoleAlias
   
   /**
     * The role ARN.
     */
-  var roleArn: RoleArn = js.native
+  var roleArn: RoleArn
   
   /**
     * Metadata which can be used to manage the role alias.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateRoleAliasRequest {
   

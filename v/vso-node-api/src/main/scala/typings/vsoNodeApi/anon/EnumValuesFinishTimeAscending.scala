@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesFinishTimeAscending extends StObject {
   
-  var enumValues: FinishTimeAscending = js.native
+  var enumValues: FinishTimeAscending
 }
 object EnumValuesFinishTimeAscending {
   

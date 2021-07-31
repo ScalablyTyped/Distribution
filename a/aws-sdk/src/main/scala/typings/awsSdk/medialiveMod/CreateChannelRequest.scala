@@ -2,66 +2,64 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateChannelRequest extends StObject {
   
   /**
     * Specification of CDI inputs for this channel
     */
-  var CdiInputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.CdiInputSpecification] = js.native
+  var CdiInputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.CdiInputSpecification] = js.undefined
   
   /**
     * The class for this channel. STANDARD for a channel with two pipelines or SINGLE_PIPELINE for a channel with one pipeline.
     */
-  var ChannelClass: js.UndefOr[typings.awsSdk.medialiveMod.ChannelClass] = js.native
+  var ChannelClass: js.UndefOr[typings.awsSdk.medialiveMod.ChannelClass] = js.undefined
   
-  var Destinations: js.UndefOr[listOfOutputDestination] = js.native
+  var Destinations: js.UndefOr[listOfOutputDestination] = js.undefined
   
-  var EncoderSettings: js.UndefOr[typings.awsSdk.medialiveMod.EncoderSettings] = js.native
+  var EncoderSettings: js.UndefOr[typings.awsSdk.medialiveMod.EncoderSettings] = js.undefined
   
   /**
     * List of input attachments for channel.
     */
-  var InputAttachments: js.UndefOr[listOfInputAttachment] = js.native
+  var InputAttachments: js.UndefOr[listOfInputAttachment] = js.undefined
   
   /**
     * Specification of network and file inputs for this channel
     */
-  var InputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.InputSpecification] = js.native
+  var InputSpecification: js.UndefOr[typings.awsSdk.medialiveMod.InputSpecification] = js.undefined
   
   /**
     * The log level to write to CloudWatch Logs.
     */
-  var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.native
+  var LogLevel: js.UndefOr[typings.awsSdk.medialiveMod.LogLevel] = js.undefined
   
   /**
     * Name of channel.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Unique request ID to be specified. This is needed to prevent retries from
   creating multiple resources.
     */
-  var RequestId: js.UndefOr[string] = js.native
+  var RequestId: js.UndefOr[string] = js.undefined
   
   /**
     * Deprecated field that's only usable by whitelisted customers.
     */
-  var Reserved: js.UndefOr[string] = js.native
+  var Reserved: js.UndefOr[string] = js.undefined
   
   /**
     * An optional Amazon Resource Name (ARN) of the role to assume when running the Channel.
     */
-  var RoleArn: js.UndefOr[string] = js.native
+  var RoleArn: js.UndefOr[string] = js.undefined
   
   /**
     * A collection of key-value pairs.
     */
-  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.medialiveMod.Tags] = js.undefined
 }
 object CreateChannelRequest {
   

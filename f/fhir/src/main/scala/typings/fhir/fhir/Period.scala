@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Time range defined by start and end date/time
   */
-@js.native
-trait Period extends Element {
+trait Period
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'end'.
     */
-  var _end: js.UndefOr[Element] = js.native
+  var _end: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'start'.
     */
-  var _start: js.UndefOr[Element] = js.native
+  var _start: js.UndefOr[Element] = js.undefined
   
   /**
     * End time with inclusive boundary, if not ongoing
     */
-  var end: js.UndefOr[dateTime] = js.native
+  var end: js.UndefOr[dateTime] = js.undefined
   
   /**
     * Starting time with inclusive boundary
     */
-  var start: js.UndefOr[dateTime] = js.native
+  var start: js.UndefOr[dateTime] = js.undefined
 }
 object Period {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSourceDimension
   * @see com.sun.star.sheet.DataPilotSource
   */
-@js.native
-trait XHierarchiesSupplier extends XInterface {
+trait XHierarchiesSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * returns the collection of hierarchies.
     * @see com.sun.star.sheet.DataPilotSourceHierarchies
     */
-  val Hierarchies: XNameAccess = js.native
+  val Hierarchies: XNameAccess
   
   /**
     * returns the collection of hierarchies.
     * @see com.sun.star.sheet.DataPilotSourceHierarchies
     */
-  def getHierarchies(): XNameAccess = js.native
+  def getHierarchies(): XNameAccess
 }
 object XHierarchiesSupplier {
   

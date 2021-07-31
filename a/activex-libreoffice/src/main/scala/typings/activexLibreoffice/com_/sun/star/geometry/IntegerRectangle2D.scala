@@ -2,33 +2,31 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure contains the necessary information for a two-dimensional rectangle.
   * @since OOo 2.0
   */
-@js.native
 trait IntegerRectangle2D extends StObject {
   
-  var X1: Double = js.native
+  var X1: Double
   
   /**
     * X coordinate of lower right corner.
     *
     * Must be greater than X1 for non-empty rectangles.
     */
-  var X2: Double = js.native
+  var X2: Double
   
-  var Y1: Double = js.native
+  var Y1: Double
   
   /**
     * Y coordinate of lower right corner.
     *
     * Must be greater than y1 for non-empty rectangles.
     */
-  var Y2: Double = js.native
+  var Y2: Double
 }
 object IntegerRectangle2D {
   

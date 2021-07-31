@@ -2,16 +2,14 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCodeReviewResponse extends StObject {
   
   /**
     *  Information about the code review. 
     */
-  var CodeReview: js.UndefOr[typings.awsSdk.codegurureviewerMod.CodeReview] = js.native
+  var CodeReview: js.UndefOr[typings.awsSdk.codegurureviewerMod.CodeReview] = js.undefined
 }
 object DescribeCodeReviewResponse {
   

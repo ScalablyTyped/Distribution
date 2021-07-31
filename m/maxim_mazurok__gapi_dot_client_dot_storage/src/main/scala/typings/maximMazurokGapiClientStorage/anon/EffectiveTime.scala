@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EffectiveTime extends StObject {
   
   /** Server-determined value that indicates the time from which policy was enforced and effective. This value is in RFC 3339 format. */
-  var effectiveTime: js.UndefOr[String] = js.native
+  var effectiveTime: js.UndefOr[String] = js.undefined
   
   /** Once locked, an object retention policy cannot be modified. */
-  var isLocked: js.UndefOr[Boolean] = js.native
+  var isLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The duration in seconds that objects need to be retained. Retention duration must be greater than zero and less than 100 years. Note that enforcement of retention periods less
     * than a day is not guaranteed. Such periods should only be used for testing purposes.
     */
-  var retentionPeriod: js.UndefOr[String] = js.native
+  var retentionPeriod: js.UndefOr[String] = js.undefined
 }
 object EffectiveTime {
   

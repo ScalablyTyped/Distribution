@@ -2,15 +2,13 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICompleteRequest extends StObject {
   
-  var code: String = js.native
+  var code: String
   
-  var cursor_pos: Double = js.native
+  var cursor_pos: Double
 }
 object ICompleteRequest {
   

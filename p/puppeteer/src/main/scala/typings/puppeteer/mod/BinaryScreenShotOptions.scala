@@ -3,14 +3,14 @@ package typings.puppeteer.mod
 import typings.puppeteer.puppeteerStrings.binary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BinaryScreenShotOptions extends ScreenshotOptions {
+trait BinaryScreenShotOptions
+  extends StObject
+     with ScreenshotOptions {
   
   @JSName("encoding")
-  var encoding_BinaryScreenShotOptions: js.UndefOr[binary] = js.native
+  var encoding_BinaryScreenShotOptions: js.UndefOr[binary] = js.undefined
 }
 object BinaryScreenShotOptions {
   

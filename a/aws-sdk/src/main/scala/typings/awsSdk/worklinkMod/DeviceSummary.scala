@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceSummary extends StObject {
   
   /**
     * The ID of the device.
     */
-  var DeviceId: js.UndefOr[Id] = js.native
+  var DeviceId: js.UndefOr[Id] = js.undefined
   
   /**
     * The status of the device.
     */
-  var DeviceStatus: js.UndefOr[typings.awsSdk.worklinkMod.DeviceStatus] = js.native
+  var DeviceStatus: js.UndefOr[typings.awsSdk.worklinkMod.DeviceStatus] = js.undefined
 }
 object DeviceSummary {
   

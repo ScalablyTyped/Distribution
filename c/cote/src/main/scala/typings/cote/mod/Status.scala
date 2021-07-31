@@ -2,13 +2,13 @@ package typings.cote.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Status extends Event {
+trait Status
+  extends StObject
+     with Event {
   
-  var advertisement: StatusAdvertisement = js.native
+  var advertisement: StatusAdvertisement
 }
 object Status {
   

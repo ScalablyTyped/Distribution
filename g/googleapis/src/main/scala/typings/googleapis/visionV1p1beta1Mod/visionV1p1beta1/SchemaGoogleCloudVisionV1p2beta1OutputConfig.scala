@@ -2,13 +2,11 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The desired output location and metadata.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p2beta1OutputConfig extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait SchemaGoogleCloudVisionV1p2beta1OutputConfig extends StObject {
     * GcsDestination, with potential future support for other output
     * configurations.
     */
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The Google Cloud Storage location to write the output(s) to.
     */
-  var gcsDestination: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1GcsDestination] = js.native
+  var gcsDestination: js.UndefOr[SchemaGoogleCloudVisionV1p2beta1GcsDestination] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p2beta1OutputConfig {
   

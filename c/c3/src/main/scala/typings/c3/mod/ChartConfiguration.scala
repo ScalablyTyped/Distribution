@@ -17,17 +17,15 @@ import typings.d3Selection.mod.Selection_
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartConfiguration extends StObject {
   
-  var area: js.UndefOr[Zerobased] = js.native
+  var area: js.UndefOr[Zerobased] = js.undefined
   
-  var axis: js.UndefOr[AxesOptions] = js.native
+  var axis: js.UndefOr[AxesOptions] = js.undefined
   
-  var bar: js.UndefOr[Space] = js.native
+  var bar: js.UndefOr[Space] = js.undefined
   
   /**
     * The CSS selector or the element which the chart will be set to. D3 selection object can be specified. If other chart is set already, it will be replaced with the new one (only one chart
@@ -36,59 +34,59 @@ trait ChartConfiguration extends StObject {
     * Note: When chart is not binded, c3 starts observing if chart.element is binded by MutationObserver. In this case, polyfill is required in IE9 and IE10 becuase they do not support
     * MutationObserver. On the other hand, if chart always will be binded, polyfill will not be required because MutationObserver will never be called.
     */
-  var bindto: js.UndefOr[String | HTMLElement | (Selection_[_, _, _, _]) | Null] = js.native
+  var bindto: js.UndefOr[String | HTMLElement | (Selection_[js.Any, js.Any, js.Any, js.Any]) | Null] = js.undefined
   
-  var color: js.UndefOr[Pattern] = js.native
+  var color: js.UndefOr[Pattern] = js.undefined
   
-  var data: Data = js.native
+  var data: Data
   
-  var donut: js.UndefOr[Label] = js.native
+  var donut: js.UndefOr[Label] = js.undefined
   
-  var gauge: js.UndefOr[Arcs] = js.native
+  var gauge: js.UndefOr[Arcs] = js.undefined
   
-  var grid: js.UndefOr[GridOptions] = js.native
+  var grid: js.UndefOr[GridOptions] = js.undefined
   
-  var interaction: js.UndefOr[Brighten] = js.native
+  var interaction: js.UndefOr[Brighten] = js.undefined
   
-  var legend: js.UndefOr[LegendOptions] = js.native
+  var legend: js.UndefOr[LegendOptions] = js.undefined
   
-  var line: js.UndefOr[LineOptions] = js.native
+  var line: js.UndefOr[LineOptions] = js.undefined
   
   /**
     * Set a callback to execute when the chart is initialized.
     */
-  var oninit: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
+  var oninit: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
   
   /**
     * Set a callback to execute when mouse leaves the chart.
     */
-  var onmouseout: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
+  var onmouseout: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
   
   /**
     * Set a callback to execute when mouse enters the chart.
     */
-  var onmouseover: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
+  var onmouseover: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
   
   /**
     * Set a callback which is executed when the chart is rendered. Basically, this callback will be called in each time when the chart is redrawed.
     */
-  var onrendered: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
+  var onrendered: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
   
   /**
     * Set a callback to execute when user resizes the screen.
     */
-  var onresize: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
+  var onresize: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
   
   /**
     * Set a callback to execute when screen resize finished.
     */
-  var onresized: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.native
+  var onresized: js.UndefOr[js.ThisFunction0[/* this */ ChartInternal, Unit]] = js.undefined
   
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
   
-  var pie: js.UndefOr[Expand] = js.native
+  var pie: js.UndefOr[Expand] = js.undefined
   
-  var point: js.UndefOr[PointOptions] = js.native
+  var point: js.UndefOr[PointOptions] = js.undefined
   
   /**
     * Show rectangles inside the chart.
@@ -96,27 +94,27 @@ trait ChartConfiguration extends StObject {
     * axis must be x, y or y2. start and end should be the value where regions start and end. If not specified, the edge values will be used. If timeseries x axis, date string, Date object and
     * unixtime integer can be used. If class is set, the region element will have it as class.
     */
-  var regions: js.UndefOr[js.Array[RegionOptions]] = js.native
+  var regions: js.UndefOr[js.Array[RegionOptions]] = js.undefined
   
-  var resize: js.UndefOr[Auto] = js.native
+  var resize: js.UndefOr[Auto] = js.undefined
   
-  var size: js.UndefOr[Height] = js.native
+  var size: js.UndefOr[Height] = js.undefined
   
-  var spline: js.UndefOr[Interpolation] = js.native
+  var spline: js.UndefOr[Interpolation] = js.undefined
   
-  var stanford: js.UndefOr[Colors] = js.native
+  var stanford: js.UndefOr[Colors] = js.undefined
   
-  var subchart: js.UndefOr[SubchartOptions] = js.native
+  var subchart: js.UndefOr[SubchartOptions] = js.undefined
   
-  var svg: js.UndefOr[Classname] = js.native
+  var svg: js.UndefOr[Classname] = js.undefined
   
-  var title: js.UndefOr[typings.c3.anon.Padding] = js.native
+  var title: js.UndefOr[typings.c3.anon.Padding] = js.undefined
   
-  var tooltip: js.UndefOr[TooltipOptions] = js.native
+  var tooltip: js.UndefOr[TooltipOptions] = js.undefined
   
-  var transition: js.UndefOr[Duration] = js.native
+  var transition: js.UndefOr[Duration] = js.undefined
   
-  var zoom: js.UndefOr[ZoomOptions] = js.native
+  var zoom: js.UndefOr[ZoomOptions] = js.undefined
 }
 object ChartConfiguration {
   
@@ -148,7 +146,7 @@ object ChartConfiguration {
     def setBarUndefined: Self = StObject.set(x, "bar", js.undefined)
     
     @scala.inline
-    def setBindto(value: String | HTMLElement | (Selection_[_, _, _, _])): Self = StObject.set(x, "bindto", value.asInstanceOf[js.Any])
+    def setBindto(value: String | HTMLElement | (Selection_[js.Any, js.Any, js.Any, js.Any])): Self = StObject.set(x, "bindto", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBindtoNull: Self = StObject.set(x, "bindto", null)

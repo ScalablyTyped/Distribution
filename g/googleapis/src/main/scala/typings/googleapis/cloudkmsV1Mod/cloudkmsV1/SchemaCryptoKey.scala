@@ -3,7 +3,6 @@ package typings.googleapis.cloudkmsV1Mod.cloudkmsV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,25 +10,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * operations.  A CryptoKey is made up of one or more versions, which
   * represent the actual key material used in cryptographic operations.
   */
-@js.native
 trait SchemaCryptoKey extends StObject {
   
   /**
     * Output only. The time at which this CryptoKey was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Labels with user-defined metadata. For more information, see [Labeling
     * Keys](/kms/docs/labeling-keys).
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Output only. The resource name for this CryptoKey in the format
     * `projects/x/locations/x/keyRings/x/cryptoKeys/x.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * At next_rotation_time, the Key Management Service will automatically:  1.
@@ -39,7 +37,7 @@ trait SchemaCryptoKey extends StObject {
     * with purpose ENCRYPT_DECRYPT support automatic rotation. For other keys,
     * this field must be omitted.
     */
-  var nextRotationTime: js.UndefOr[String] = js.native
+  var nextRotationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. A copy of the &quot;primary&quot; CryptoKeyVersion that will
@@ -48,12 +46,12 @@ trait SchemaCryptoKey extends StObject {
     * UpdateCryptoKeyPrimaryVersion.  All keys with purpose ENCRYPT_DECRYPT
     * have a primary. For other keys, this field will be omitted.
     */
-  var primary: js.UndefOr[SchemaCryptoKeyVersion] = js.native
+  var primary: js.UndefOr[SchemaCryptoKeyVersion] = js.undefined
   
   /**
     * The immutable purpose of this CryptoKey.
     */
-  var purpose: js.UndefOr[String] = js.native
+  var purpose: js.UndefOr[String] = js.undefined
   
   /**
     * next_rotation_time will be advanced by this period when the service
@@ -62,14 +60,14 @@ trait SchemaCryptoKey extends StObject {
     * purpose ENCRYPT_DECRYPT support automatic rotation. For other keys, this
     * field must be omitted.
     */
-  var rotationPeriod: js.UndefOr[String] = js.native
+  var rotationPeriod: js.UndefOr[String] = js.undefined
   
   /**
     * A template describing settings for new CryptoKeyVersion instances. The
     * properties of new CryptoKeyVersion instances created by either
     * CreateCryptoKeyVersion or auto-rotation are controlled by this template.
     */
-  var versionTemplate: js.UndefOr[SchemaCryptoKeyVersionTemplate] = js.native
+  var versionTemplate: js.UndefOr[SchemaCryptoKeyVersionTemplate] = js.undefined
 }
 object SchemaCryptoKey {
   

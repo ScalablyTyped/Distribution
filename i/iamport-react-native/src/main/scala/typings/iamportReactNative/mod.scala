@@ -4,7 +4,6 @@ import typings.iamportReactNative.anon.Cardquota
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,58 +27,57 @@ object mod {
     def Payment_=(x: FC[PaymentProps]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Payment")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait CallbackRsp extends StObject {
     
-    var apply_num: js.UndefOr[String] = js.native
+    var apply_num: js.UndefOr[String] = js.undefined
     
-    var buyer_addr: js.UndefOr[String] = js.native
+    var buyer_addr: js.UndefOr[String] = js.undefined
     
-    var buyer_email: js.UndefOr[String] = js.native
+    var buyer_email: js.UndefOr[String] = js.undefined
     
-    var buyer_name: js.UndefOr[String] = js.native
+    var buyer_name: js.UndefOr[String] = js.undefined
     
-    var buyer_postcode: js.UndefOr[String] = js.native
+    var buyer_postcode: js.UndefOr[String] = js.undefined
     
-    var buyer_tel: js.UndefOr[String] = js.native
+    var buyer_tel: js.UndefOr[String] = js.undefined
     
-    var custom_data: js.UndefOr[js.Object] = js.native
+    var custom_data: js.UndefOr[js.Object] = js.undefined
     
-    var error_code: js.UndefOr[String] = js.native
+    var error_code: js.UndefOr[String] = js.undefined
     
-    var error_msg: js.UndefOr[String] = js.native
+    var error_msg: js.UndefOr[String] = js.undefined
     
-    var imp_success: js.UndefOr[String] = js.native
+    var imp_success: js.UndefOr[String] = js.undefined
     
-    var imp_uid: js.UndefOr[String] = js.native
+    var imp_uid: js.UndefOr[String] = js.undefined
     
-    var merchant_uid: js.UndefOr[String] = js.native
+    var merchant_uid: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var paid_amount: js.UndefOr[String] = js.native
+    var paid_amount: js.UndefOr[String] = js.undefined
     
-    var paid_at: js.UndefOr[Double] = js.native
+    var paid_at: js.UndefOr[Double] = js.undefined
     
-    var pay_method: js.UndefOr[String] = js.native
+    var pay_method: js.UndefOr[String] = js.undefined
     
-    var pg_provider: js.UndefOr[String] = js.native
+    var pg_provider: js.UndefOr[String] = js.undefined
     
-    var pg_tid: js.UndefOr[String] = js.native
+    var pg_tid: js.UndefOr[String] = js.undefined
     
-    var receipt_url: js.UndefOr[String] = js.native
+    var receipt_url: js.UndefOr[String] = js.undefined
     
-    var status: js.UndefOr[String] = js.native
+    var status: js.UndefOr[String] = js.undefined
     
-    var success: js.UndefOr[Boolean] = js.native
+    var success: js.UndefOr[Boolean] = js.undefined
     
-    var vbank_date: js.UndefOr[Double] = js.native
+    var vbank_date: js.UndefOr[Double] = js.undefined
     
-    var vbank_holder: js.UndefOr[String] = js.native
+    var vbank_holder: js.UndefOr[String] = js.undefined
     
-    var vbank_name: js.UndefOr[String] = js.native
+    var vbank_name: js.UndefOr[String] = js.undefined
     
-    var vbank_num: js.UndefOr[String] = js.native
+    var vbank_num: js.UndefOr[String] = js.undefined
   }
   object CallbackRsp {
     
@@ -244,22 +242,21 @@ object mod {
     }
   }
   
-  @js.native
   trait CertificationData extends StObject {
     
-    var app_scheme: js.UndefOr[String] = js.native
+    var app_scheme: js.UndefOr[String] = js.undefined
     
-    var carrier: js.UndefOr[IMP_CARRIERS] = js.native
+    var carrier: js.UndefOr[IMP_CARRIERS] = js.undefined
     
-    var company: js.UndefOr[String] = js.native
+    var company: js.UndefOr[String] = js.undefined
     
-    var merchant_uid: js.UndefOr[String] = js.native
+    var merchant_uid: js.UndefOr[String] = js.undefined
     
-    var min_age: js.UndefOr[String] = js.native
+    var min_age: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var phone: js.UndefOr[String] = js.native
+    var phone: js.UndefOr[String] = js.undefined
   }
   object CertificationData {
     
@@ -316,18 +313,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CertificationProps extends StObject {
     
-    def callback(rsp: CallbackRsp): Unit = js.native
+    def callback(rsp: CallbackRsp): Unit
     
-    var data: CertificationData = js.native
+    var data: CertificationData
     
-    var loading: js.UndefOr[js.Object] = js.native
+    var loading: js.UndefOr[js.Object] = js.undefined
     
-    var tierCode: js.UndefOr[String] = js.native
+    var tierCode: js.UndefOr[String] = js.undefined
     
-    var userCode: String = js.native
+    var userCode: String
   }
   object CertificationProps {
     
@@ -571,52 +567,51 @@ object mod {
     def uplus: typings.iamportReactNative.iamportReactNativeStrings.uplus = "uplus".asInstanceOf[typings.iamportReactNative.iamportReactNativeStrings.uplus]
   }
   
-  @js.native
   trait PaymentData extends StObject {
     
-    var amount: Double = js.native
+    var amount: Double
     
-    var app_scheme: String = js.native
+    var app_scheme: String
     
-    var biz_num: js.UndefOr[String] = js.native
+    var biz_num: js.UndefOr[String] = js.undefined
     
-    var buyer_addr: js.UndefOr[String] = js.native
+    var buyer_addr: js.UndefOr[String] = js.undefined
     
-    var buyer_email: js.UndefOr[String] = js.native
+    var buyer_email: js.UndefOr[String] = js.undefined
     
-    var buyer_name: js.UndefOr[String] = js.native
+    var buyer_name: js.UndefOr[String] = js.undefined
     
-    var buyer_postcode: js.UndefOr[String] = js.native
+    var buyer_postcode: js.UndefOr[String] = js.undefined
     
-    var buyer_tel: String = js.native
+    var buyer_tel: String
     
-    var currency: js.UndefOr[IMP_CURRENCY] = js.native
+    var currency: js.UndefOr[IMP_CURRENCY] = js.undefined
     
-    var custom_data: js.UndefOr[js.Object] = js.native
+    var custom_data: js.UndefOr[js.Object] = js.undefined
     
-    var digital: js.UndefOr[Boolean] = js.native
+    var digital: js.UndefOr[Boolean] = js.undefined
     
-    var display: js.UndefOr[Cardquota] = js.native
+    var display: js.UndefOr[Cardquota] = js.undefined
     
-    var escrow: js.UndefOr[Boolean] = js.native
+    var escrow: js.UndefOr[Boolean] = js.undefined
     
-    var m_redirect_url: js.UndefOr[String] = js.native
+    var m_redirect_url: js.UndefOr[String] = js.undefined
     
-    var merchant_uid: String = js.native
+    var merchant_uid: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var notice_url: js.UndefOr[String | js.Array[String]] = js.native
+    var notice_url: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var pay_method: js.UndefOr[IMP_PAY_METHOD] = js.native
+    var pay_method: js.UndefOr[IMP_PAY_METHOD] = js.undefined
     
-    var pg: js.UndefOr[IMP_PG] = js.native
+    var pg: js.UndefOr[IMP_PG] = js.undefined
     
-    var popup: js.UndefOr[Boolean] = js.native
+    var popup: js.UndefOr[Boolean] = js.undefined
     
-    var tax_free: js.UndefOr[Double] = js.native
+    var tax_free: js.UndefOr[Double] = js.undefined
     
-    var vbank_due: js.UndefOr[String] = js.native
+    var vbank_due: js.UndefOr[String] = js.undefined
   }
   object PaymentData {
     
@@ -754,22 +749,21 @@ object mod {
     }
   }
   
-  @js.native
   trait PaymentProps extends StObject {
     
-    def callback(rsp: CallbackRsp): Unit = js.native
+    def callback(rsp: CallbackRsp): Unit
     
-    var data: PaymentData = js.native
+    var data: PaymentData
     
-    var handleInicisTrans: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var handleInicisTrans: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var loading: js.UndefOr[js.Object] = js.native
+    var loading: js.UndefOr[js.Object] = js.undefined
     
-    var open3rdPartyApp: js.UndefOr[js.Function1[/* iamportUrl */ js.Any, Unit]] = js.native
+    var open3rdPartyApp: js.UndefOr[js.Function1[/* iamportUrl */ js.Any, Unit]] = js.undefined
     
-    var tierCode: js.UndefOr[String] = js.native
+    var tierCode: js.UndefOr[String] = js.undefined
     
-    var userCode: String = js.native
+    var userCode: String
   }
   object PaymentProps {
     

@@ -8,13 +8,14 @@ import typings.vueNiceDates.anon.LastValidDate
 import typings.vueNiceDates.sharedMod.DatePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datePickerMod {
   
   @js.native
-  trait DatePicker extends VueConstructor[Vue] {
+  trait DatePicker
+    extends StObject
+       with VueConstructor[Vue] {
     
     def date(): LastValidDate = js.native
     

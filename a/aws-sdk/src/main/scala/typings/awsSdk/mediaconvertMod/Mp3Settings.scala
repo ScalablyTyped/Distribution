@@ -2,36 +2,34 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mp3Settings extends StObject {
   
   /**
     * Specify the average bitrate in bits per second.
     */
-  var Bitrate: js.UndefOr[integerMin16000Max320000] = js.native
+  var Bitrate: js.UndefOr[integerMin16000Max320000] = js.undefined
   
   /**
     * Specify the number of channels in this output audio track. Choosing Mono on the console gives you 1 output channel; choosing Stereo gives you 2. In the API, valid values are 1 and 2.
     */
-  var Channels: js.UndefOr[integerMin1Max2] = js.native
+  var Channels: js.UndefOr[integerMin1Max2] = js.undefined
   
   /**
     * Specify whether the service encodes this MP3 audio output with a constant bitrate (CBR) or a variable bitrate (VBR).
     */
-  var RateControlMode: js.UndefOr[Mp3RateControlMode] = js.native
+  var RateControlMode: js.UndefOr[Mp3RateControlMode] = js.undefined
   
   /**
     * Sample rate in hz.
     */
-  var SampleRate: js.UndefOr[integerMin22050Max48000] = js.native
+  var SampleRate: js.UndefOr[integerMin22050Max48000] = js.undefined
   
   /**
     * Required when you set Bitrate control mode (rateControlMode) to VBR. Specify the audio quality of this MP3 output from 0 (highest quality) to 9 (lowest quality).
     */
-  var VbrQuality: js.UndefOr[integerMin0Max9] = js.native
+  var VbrQuality: js.UndefOr[integerMin0Max9] = js.undefined
 }
 object Mp3Settings {
   

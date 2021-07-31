@@ -18,17 +18,15 @@ import typings.grommet.grommetStrings.xlarge
 import typings.grommet.grommetStrings.xsmall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Count extends StObject {
   
-  var count: js.UndefOr[fit | fill | Double] = js.native
+  var count: js.UndefOr[fit | fill | Double] = js.undefined
   
   var size: js.UndefOr[
     xsmall | small | medium | large | xlarge | full | `1Slash2` | `1Slash3` | `2Slash3` | `1Slash4` | `2Slash4` | `3Slash4` | flex | auto | String | js.Array[String]
-  ] = js.native
+  ] = js.undefined
 }
 object Count {
   

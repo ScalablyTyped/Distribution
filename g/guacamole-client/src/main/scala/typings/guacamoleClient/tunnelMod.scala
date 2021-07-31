@@ -9,7 +9,6 @@ import typings.guacamoleClient.statusMod.Status
 import typings.guacamoleClient.tunnelMod.Tunnel.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tunnelMod {
@@ -51,7 +50,7 @@ object tunnelMod {
       * @param opcode The Guacamole instruction opcode.
       * @param parameters The parameters provided for the instruction, if any.
       */
-    var oninstruction: Null | (js.Function2[/* opcode */ String, /* args */ js.Array[_], Unit]) = js.native
+    var oninstruction: Null | (js.Function2[/* opcode */ String, /* args */ js.Array[js.Any], Unit]) = js.native
     
     /**
       * Fired whenever the state of the tunnel changes.
@@ -116,22 +115,21 @@ object tunnelMod {
     val State: TunnelState = js.native
     
     /* Inlined std.Readonly<{  CONNECTING :0,   OPEN :1,   CLOSED :2,   UNSTABLE :3}> */
-    @js.native
     trait TunnelState extends StObject {
       
-      val CLOSED: `2` = js.native
+      val CLOSED: `2`
       
-      val CONNECTING: `0` = js.native
+      val CONNECTING: `0`
       
-      val OPEN: `1` = js.native
+      val OPEN: `1`
       
-      val UNSTABLE: `3` = js.native
+      val UNSTABLE: `3`
     }
     object TunnelState {
       
       @scala.inline
-      def apply(CLOSED: `2`, CONNECTING: `0`, OPEN: `1`, UNSTABLE: `3`): TunnelState = {
-        val __obj = js.Dynamic.literal(CLOSED = CLOSED.asInstanceOf[js.Any], CONNECTING = CONNECTING.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], UNSTABLE = UNSTABLE.asInstanceOf[js.Any])
+      def apply(): TunnelState = {
+        val __obj = js.Dynamic.literal(CLOSED = 2, CONNECTING = 0, OPEN = 1, UNSTABLE = 3)
         __obj.asInstanceOf[TunnelState]
       }
       

@@ -3,23 +3,22 @@ package typings.reactMdl.mod
 import typings.react.mod.DOMAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadioGroupProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with DOMAttributes[RadioGroup] {
   
-  var childContainer: js.UndefOr[String] = js.native
+  var childContainer: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var value: String | Double = js.native
+  var value: String | Double
 }
 object RadioGroupProps {
   

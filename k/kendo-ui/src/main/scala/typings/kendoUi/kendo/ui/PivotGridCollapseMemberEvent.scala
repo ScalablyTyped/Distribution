@@ -2,15 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PivotGridCollapseMemberEvent extends PivotGridEvent {
+trait PivotGridCollapseMemberEvent
+  extends StObject
+     with PivotGridEvent {
   
-  var axis: js.UndefOr[String] = js.native
+  var axis: js.UndefOr[String] = js.undefined
   
-  var path: js.UndefOr[js.Array[String]] = js.native
+  var path: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PivotGridCollapseMemberEvent {
   

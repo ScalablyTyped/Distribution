@@ -6,7 +6,6 @@ import typings.rmcTrigger.anon.AfterPopupVisibleChange
 import typings.rmcTrigger.propsTypeMod.ITriggerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object triggerMod {
@@ -28,14 +27,13 @@ object triggerMod {
     def defaultProps_=(x: AfterPopupVisibleChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IProptypes extends StObject {
     
-    def onClose(): Unit = js.native
+    def onClose(): Unit
     
-    def onTargetClick(): Unit = js.native
+    def onTargetClick(): Unit
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object IProptypes {
     
@@ -61,7 +59,7 @@ object triggerMod {
   
   @js.native
   trait Trigger
-    extends Component[ITriggerProps with IProptypes, js.Any, js.Any] {
+    extends Component[ITriggerProps & IProptypes, js.Any, js.Any] {
     
     var _component: js.Any = js.native
     

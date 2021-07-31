@@ -2,17 +2,15 @@ package typings.apolloProtobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEnumDescriptorProto extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[IEnumOptions] = js.native
+  var options: js.UndefOr[IEnumOptions] = js.undefined
   
-  var value: js.UndefOr[js.Array[IEnumValueDescriptorProto]] = js.native
+  var value: js.UndefOr[js.Array[IEnumValueDescriptorProto]] = js.undefined
 }
 object IEnumDescriptorProto {
   

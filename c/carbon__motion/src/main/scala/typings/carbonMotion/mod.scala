@@ -3,7 +3,6 @@ package typings.carbonMotion
 import typings.carbonMotion.anon.Expressive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,8 +34,11 @@ object mod {
   
   object motion {
     
+    @scala.inline
+    def apply(name: String, mode: String): String = (^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSImport("@carbon/motion", "motion")
     @js.native
-    def apply(name: String, mode: String): String = js.native
+    val ^ : js.Any = js.native
   }
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListObjectParentsResponse extends StObject {
   
   /**
     * The pagination token.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.clouddirectoryMod.NextToken] = js.undefined
   
   /**
     * Returns a list of parent reference and LinkName Tuples.
     */
-  var ParentLinks: js.UndefOr[ObjectIdentifierAndLinkNameList] = js.native
+  var ParentLinks: js.UndefOr[ObjectIdentifierAndLinkNameList] = js.undefined
   
   /**
     * The parent structure, which is a map with key as the ObjectIdentifier and LinkName as the value.
     */
-  var Parents: js.UndefOr[ObjectIdentifierToLinkNameMap] = js.native
+  var Parents: js.UndefOr[ObjectIdentifierToLinkNameMap] = js.undefined
 }
 object ListObjectParentsResponse {
   

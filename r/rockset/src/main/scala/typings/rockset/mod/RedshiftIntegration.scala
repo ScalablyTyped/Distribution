@@ -2,29 +2,27 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RedshiftIntegration extends StObject {
   
   // AWS access key credentials
-  var aws_access_key: js.UndefOr[AwsAccessKey] = js.native
+  var aws_access_key: js.UndefOr[AwsAccessKey] = js.undefined
   
   // Redshift Cluster host
-  var host: String = js.native
+  var host: String
   
   // Password associated with Redshift cluster
-  var password: String = js.native
+  var password: String
   
   // Redshift Cluster port
-  var port: Double = js.native
+  var port: Double
   
   // unload S3 bucket path
-  var s3_bucket_path: String = js.native
+  var s3_bucket_path: String
   
   // Username associated with Redshift cluster
-  var username: String = js.native
+  var username: String
 }
 object RedshiftIntegration {
   

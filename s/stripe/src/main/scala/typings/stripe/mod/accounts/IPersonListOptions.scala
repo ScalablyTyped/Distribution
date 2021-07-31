@@ -4,13 +4,13 @@ import typings.stripe.anon.Executive
 import typings.stripe.mod.IListOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPersonListOptions extends IListOptions {
+trait IPersonListOptions
+  extends StObject
+     with IListOptions {
   
-  var relationship: Executive = js.native
+  var relationship: Executive
 }
 object IPersonListOptions {
   

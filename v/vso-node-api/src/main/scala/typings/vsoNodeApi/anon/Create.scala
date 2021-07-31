@@ -2,23 +2,21 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Create extends StObject {
   
-  var create: scala.Double = js.native
+  var create: scala.Double
   
-  var delete: scala.Double = js.native
+  var delete: scala.Double
   
-  var edit: scala.Double = js.native
+  var edit: scala.Double
   
-  var managePermissions: scala.Double = js.native
+  var managePermissions: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var read: scala.Double = js.native
+  var read: scala.Double
 }
 object Create {
   

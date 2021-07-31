@@ -10,53 +10,53 @@ import typings.typedGithubApi.typedGithubApiStrings.closed
 import typings.typedGithubApi.typedGithubApiStrings.open
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesIssueMod {
   
-  @js.native
-  trait Issue extends IssueRef {
+  trait Issue
+    extends StObject
+       with IssueRef {
     
-    val age: Duration_ = js.native
+    val age: Duration_
     
-    var assignee: js.UndefOr[UserSummary] = js.native
+    var assignee: js.UndefOr[UserSummary] = js.undefined
     
-    var assignees: js.Array[UserSummary] = js.native
+    var assignees: js.Array[UserSummary]
     
-    var body: String = js.native
+    var body: String
     
-    var closed: js.UndefOr[Moment] = js.native
+    var closed: js.UndefOr[Moment] = js.undefined
     
-    var closedBy: js.UndefOr[UserSummary] = js.native
+    var closedBy: js.UndefOr[UserSummary] = js.undefined
     
-    var comments: Double = js.native
+    var comments: Double
     
-    var created: Moment = js.native
+    var created: Moment
     
-    var createdBy: UserSummary = js.native
+    var createdBy: UserSummary
     
-    var htmlUri: String = js.native
+    var htmlUri: String
     
-    var id: Double = js.native
+    var id: Double
     
-    val isOpen: Boolean = js.native
+    val isOpen: Boolean
     
-    var isPullRequest: Boolean = js.native
+    var isPullRequest: Boolean
     
-    var labels: js.Array[Label] = js.native
+    var labels: js.Array[Label]
     
-    var locked: Boolean = js.native
+    var locked: Boolean
     
-    var milestone: js.UndefOr[Milestone] = js.native
+    var milestone: js.UndefOr[Milestone] = js.undefined
     
-    var state: open | closed = js.native
+    var state: open | closed
     
-    var title: String = js.native
+    var title: String
     
-    var updated: Moment = js.native
+    var updated: Moment
     
-    def wasOpen(when: Moment): Boolean = js.native
+    def wasOpen(when: Moment): Boolean
   }
   object Issue {
     
@@ -169,20 +169,19 @@ object interfacesIssueMod {
     }
   }
   
-  @js.native
   trait IssueComment extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var createdAt: Moment = js.native
+    var createdAt: Moment
     
-    var createdBy: UserSummary = js.native
+    var createdBy: UserSummary
     
-    var htmlUri: String = js.native
+    var htmlUri: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var updatedAt: Moment = js.native
+    var updatedAt: Moment
   }
   object IssueComment {
     
@@ -222,14 +221,13 @@ object interfacesIssueMod {
     }
   }
   
-  @js.native
   trait IssueRef extends StObject {
     
-    def loadAsync(): js.Promise[Issue | Null] = js.native
+    def loadAsync(): js.Promise[Issue | Null]
     
-    def loadRepositoryAsync(): js.Promise[Repository] = js.native
+    def loadRepositoryAsync(): js.Promise[Repository]
     
-    val number: Double = js.native
+    val number: Double
   }
   object IssueRef {
     

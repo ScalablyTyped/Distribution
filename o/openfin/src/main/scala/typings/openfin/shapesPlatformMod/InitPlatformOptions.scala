@@ -2,13 +2,26 @@ package typings.openfin.shapesPlatformMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitPlatformOptions extends StObject {
   
-  def overrideCallback(arg: PlatformProvider): js.Any = js.native
+  def overrideCallback(arg: PlatformProvider): js.Any
   @JSName("overrideCallback")
-  var overrideCallback_Original: OverrideCallback[_] = js.native
+  var overrideCallback_Original: OverrideCallback[js.Any]
+}
+object InitPlatformOptions {
+  
+  @scala.inline
+  def apply(overrideCallback: /* arg */ PlatformProvider => js.Any): InitPlatformOptions = {
+    val __obj = js.Dynamic.literal(overrideCallback = js.Any.fromFunction1(overrideCallback))
+    __obj.asInstanceOf[InitPlatformOptions]
+  }
+  
+  @scala.inline
+  implicit class InitPlatformOptionsMutableBuilder[Self <: InitPlatformOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOverrideCallback(value: /* arg */ PlatformProvider => js.Any): Self = StObject.set(x, "overrideCallback", js.Any.fromFunction1(value))
+  }
 }

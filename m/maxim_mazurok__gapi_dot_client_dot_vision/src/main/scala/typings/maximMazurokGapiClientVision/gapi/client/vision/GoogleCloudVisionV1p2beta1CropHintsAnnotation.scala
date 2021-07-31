@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p2beta1CropHintsAnnotation extends StObject {
   
   /** Crop hint results. */
-  var cropHints: js.UndefOr[js.Array[GoogleCloudVisionV1p2beta1CropHint]] = js.native
+  var cropHints: js.UndefOr[js.Array[GoogleCloudVisionV1p2beta1CropHint]] = js.undefined
 }
 object GoogleCloudVisionV1p2beta1CropHintsAnnotation {
   

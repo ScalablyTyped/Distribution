@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * };
   * ```
   */
-@js.native
 trait InjectStreamConfig extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait InjectStreamConfig extends StObject {
     *
     * Agora recommends that you stay with the default value and not reset it at this point of time.
     */
-  var audioBitrate: js.UndefOr[Double] = js.native
+  var audioBitrate: js.UndefOr[Double] = js.undefined
   
   /**
     * Audio channels to add into the broadcast.
@@ -44,7 +42,7 @@ trait InjectStreamConfig extends StObject {
     *
     * Agora recommends that you stay with the default value and not reset it at this point of time.
     */
-  var audioChannels: js.UndefOr[Double] = js.native
+  var audioChannels: js.UndefOr[Double] = js.undefined
   
   /**
     * Audio sampling rate of the added stream to the broadcast.
@@ -57,14 +55,14 @@ trait InjectStreamConfig extends StObject {
     *
     * Agora recommends that you stay with the default value and not reset it at this point of time.
     */
-  var audioSampleRate: js.UndefOr[Double] = js.native
+  var audioSampleRate: js.UndefOr[Double] = js.undefined
   
   /**
     * Height of the added stream to the broadcast.
     *
     * Integer, the default value is 0, which is the same height as the original stream. The value range is [0, 10000].
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Video bitrate of the added stream to the broadcast.
@@ -75,28 +73,28 @@ trait InjectStreamConfig extends StObject {
     *
     * The setting of the video bitrate is closely linked to the resolution. If the video bitrate you set is beyond the reasonable range, the SDK will set it within the reasonable range instead.
     */
-  var videoBitrate: js.UndefOr[Double] = js.native
+  var videoBitrate: js.UndefOr[Double] = js.undefined
   
   /**
     * Video frame rate of the added stream to the broadcast.
     *
     * Positive integer. The default value is 15 fps. The value range is [1, 10000].
     */
-  var videoFramerate: js.UndefOr[Double] = js.native
+  var videoFramerate: js.UndefOr[Double] = js.undefined
   
   /**
     * Video GOP of the added stream to the broadcast.
     *
     * Positive integer. The default value is 30 frames. The value range is [1, 10000].
     */
-  var videoGop: js.UndefOr[Double] = js.native
+  var videoGop: js.UndefOr[Double] = js.undefined
   
   /**
     * Width of the added stream to the broadcast.
     *
     * Integer, the default value is 0, which is the same width as the original stream. The value range is [0, 10000].
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object InjectStreamConfig {
   

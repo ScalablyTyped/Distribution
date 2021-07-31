@@ -2,15 +2,13 @@ package typings.breeze.breeze
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplexObject extends StObject {
   
-  var complexAspect: ComplexAspect = js.native
+  var complexAspect: ComplexAspect
   
-  var complexType: ComplexType = js.native
+  var complexType: ComplexType
 }
 object ComplexObject {
   

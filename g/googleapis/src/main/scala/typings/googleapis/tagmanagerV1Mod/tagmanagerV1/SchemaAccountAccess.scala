@@ -2,20 +2,18 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the Google Tag Manager Account access permissions.
   */
-@js.native
 trait SchemaAccountAccess extends StObject {
   
   /**
     * List of Account permissions. Valid account permissions are read and
     * manage.
     */
-  var permission: js.UndefOr[js.Array[String]] = js.native
+  var permission: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaAccountAccess {
   

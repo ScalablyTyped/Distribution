@@ -2,24 +2,22 @@ package typings.makerJs.MakerJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options to pass to model.simplify()
   */
-@js.native
 trait ISimplifyOptions extends StObject {
   
   /**
     * Optional
     */
-  var pointMatchingDistance: js.UndefOr[Double] = js.native
+  var pointMatchingDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional
     */
-  var scalarMatchingDistance: js.UndefOr[Double] = js.native
+  var scalarMatchingDistance: js.UndefOr[Double] = js.undefined
 }
 object ISimplifyOptions {
   

@@ -2,7 +2,6 @@ package typings.angularCompiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bigIntegerMod {
@@ -101,12 +100,14 @@ object bigIntegerMod {
   /* static members */
   object BigInteger {
     
-    @JSImport("@angular/compiler/src/i18n/big_integer", "BigInteger.one")
+    @JSImport("@angular/compiler/src/i18n/big_integer", "BigInteger")
     @js.native
-    def one(): BigInteger = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@angular/compiler/src/i18n/big_integer", "BigInteger.zero")
-    @js.native
-    def zero(): BigInteger = js.native
+    @scala.inline
+    def one(): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("one")().asInstanceOf[BigInteger]
+    
+    @scala.inline
+    def zero(): BigInteger = ^.asInstanceOf[js.Dynamic].applyDynamic("zero")().asInstanceOf[BigInteger]
   }
 }

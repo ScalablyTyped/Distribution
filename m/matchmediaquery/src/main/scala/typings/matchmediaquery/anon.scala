@@ -2,42 +2,40 @@ package typings.matchmediaquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<matchmediaquery.matchmediaquery.MediaValues> */
-  @js.native
   trait PartialMediaValues extends StObject {
     
-    var `aspect-ratio`: js.UndefOr[js.Any] = js.native
+    var `aspect-ratio`: js.UndefOr[js.Any] = js.undefined
     
-    var color: js.UndefOr[js.Any] = js.native
+    var color: js.UndefOr[js.Any] = js.undefined
     
-    var `color-index`: js.UndefOr[js.Any] = js.native
+    var `color-index`: js.UndefOr[js.Any] = js.undefined
     
-    var `device-aspect-ratio`: js.UndefOr[js.Any] = js.native
+    var `device-aspect-ratio`: js.UndefOr[js.Any] = js.undefined
     
-    var `device-height`: js.UndefOr[js.Any] = js.native
+    var `device-height`: js.UndefOr[js.Any] = js.undefined
     
-    var `device-width`: js.UndefOr[js.Any] = js.native
+    var `device-width`: js.UndefOr[js.Any] = js.undefined
     
-    var grid: js.UndefOr[js.Any] = js.native
+    var grid: js.UndefOr[js.Any] = js.undefined
     
-    var height: js.UndefOr[js.Any] = js.native
+    var height: js.UndefOr[js.Any] = js.undefined
     
-    var monochrome: js.UndefOr[js.Any] = js.native
+    var monochrome: js.UndefOr[js.Any] = js.undefined
     
-    var orientation: js.UndefOr[js.Any] = js.native
+    var orientation: js.UndefOr[js.Any] = js.undefined
     
-    var resolution: js.UndefOr[js.Any] = js.native
+    var resolution: js.UndefOr[js.Any] = js.undefined
     
-    var scan: js.UndefOr[js.Any] = js.native
+    var scan: js.UndefOr[js.Any] = js.undefined
     
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
-    var width: js.UndefOr[js.Any] = js.native
+    var width: js.UndefOr[js.Any] = js.undefined
   }
   object PartialMediaValues {
     

@@ -2,35 +2,33 @@ package typings.stylus.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Eot extends StObject {
   
   @JSName(".eot")
-  var Doteot: String = js.native
+  var Doteot: String
   
   @JSName(".gif")
-  var Dotgif: String = js.native
+  var Dotgif: String
   
   @JSName(".jpeg")
-  var Dotjpeg: String = js.native
+  var Dotjpeg: String
   
   @JSName(".jpg")
-  var Dotjpg: String = js.native
+  var Dotjpg: String
   
   @JSName(".png")
-  var Dotpng: String = js.native
+  var Dotpng: String
   
   @JSName(".svg")
-  var Dotsvg: String = js.native
+  var Dotsvg: String
   
   @JSName(".ttf")
-  var Dotttf: String = js.native
+  var Dotttf: String
   
   @JSName(".woff")
-  var Dotwoff: String = js.native
+  var Dotwoff: String
 }
 object Eot {
   

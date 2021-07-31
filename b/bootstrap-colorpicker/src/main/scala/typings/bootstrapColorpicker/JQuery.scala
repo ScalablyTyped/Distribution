@@ -12,7 +12,6 @@ import typings.bootstrapColorpicker.bootstrapColorpickerStrings.show
 import typings.bootstrapColorpicker.bootstrapColorpickerStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -76,30 +75,30 @@ trait JQuery extends StObject {
   def data_colorpicker(methodName: colorpicker): ColorPicker = js.native
   
   def off(events: ColorPickerEvents): JQuery = js.native
-  def off(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, _]): JQuery = js.native
-  def off(
-    events: ColorPickerEvents,
-    selector: js.UndefOr[scala.Nothing],
-    handler: js.Function1[/* event */ ColorPickerEventObject, _]
-  ): JQuery = js.native
+  def off(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, js.Any]): JQuery = js.native
   def off(events: ColorPickerEvents, selector: String): JQuery = js.native
   def off(
     events: ColorPickerEvents,
     selector: String,
-    handler: js.Function1[/* event */ ColorPickerEventObject, _]
+    handler: js.Function1[/* event */ ColorPickerEventObject, js.Any]
+  ): JQuery = js.native
+  def off(
+    events: ColorPickerEvents,
+    selector: Unit,
+    handler: js.Function1[/* event */ ColorPickerEventObject, js.Any]
   ): JQuery = js.native
   
-  def on(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, _]): JQuery = js.native
+  def on(events: ColorPickerEvents, handler: js.Function1[/* event */ ColorPickerEventObject, js.Any]): JQuery = js.native
   def on(events: ColorPickerEvents, selector: String, data: js.Any): JQuery = js.native
   def on(
     events: ColorPickerEvents,
     selector: String,
     data: js.Any,
-    handler: js.Function1[/* event */ ColorPickerEventObject, _]
+    handler: js.Function1[/* event */ ColorPickerEventObject, js.Any]
   ): JQuery = js.native
   def on(
     events: ColorPickerEvents,
     selector: String,
-    handler: js.Function1[/* event */ ColorPickerEventObject, _]
+    handler: js.Function1[/* event */ ColorPickerEventObject, js.Any]
   ): JQuery = js.native
 }

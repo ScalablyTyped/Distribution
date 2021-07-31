@@ -2,23 +2,21 @@ package typings.tizenAccessory
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SAPeerAccessory extends StObject {
   
-  val accessoryId: String = js.native
+  val accessoryId: String
   
-  val deviceAddress: String = js.native
+  val deviceAddress: String
   
-  val deviceName: String = js.native
+  val deviceName: String
   
-  val productId: String = js.native
+  val productId: String
   
-  val transportType: String = js.native
+  val transportType: String
   
-  val vendorId: String = js.native
+  val vendorId: String
 }
 object SAPeerAccessory {
   

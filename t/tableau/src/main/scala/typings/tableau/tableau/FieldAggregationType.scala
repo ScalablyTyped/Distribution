@@ -2,7 +2,6 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,119 +11,197 @@ sealed trait FieldAggregationType extends StObject
 object FieldAggregationType extends StObject {
   
   @js.native
-  sealed trait ATTR extends FieldAggregationType
+  sealed trait ATTR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait AVG extends FieldAggregationType
+  sealed trait AVG
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait COUNT extends FieldAggregationType
+  sealed trait COUNT
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait COUNTD extends FieldAggregationType
+  sealed trait COUNTD
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait DAY extends FieldAggregationType
+  sealed trait DAY
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait END extends FieldAggregationType
+  sealed trait END
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait HOUR extends FieldAggregationType
+  sealed trait HOUR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait INOUT extends FieldAggregationType
+  sealed trait INOUT
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait KURTOSIS extends FieldAggregationType
+  sealed trait KURTOSIS
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait MAX extends FieldAggregationType
+  sealed trait MAX
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait MDY extends FieldAggregationType
+  sealed trait MDY
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait MEDIAN extends FieldAggregationType
+  sealed trait MEDIAN
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait MIN extends FieldAggregationType
+  sealed trait MIN
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait MINUTE extends FieldAggregationType
+  sealed trait MINUTE
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait MONTH extends FieldAggregationType
+  sealed trait MONTH
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait MONTHYEAR extends FieldAggregationType
+  sealed trait MONTHYEAR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait NONE extends FieldAggregationType
+  sealed trait NONE
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait QTR extends FieldAggregationType
+  sealed trait QTR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait QUART1 extends FieldAggregationType
+  sealed trait QUART1
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait QUART3 extends FieldAggregationType
+  sealed trait QUART3
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait SECOND extends FieldAggregationType
+  sealed trait SECOND
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait SKEWNESS extends FieldAggregationType
+  sealed trait SKEWNESS
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait STDEV extends FieldAggregationType
+  sealed trait STDEV
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait STDEVP extends FieldAggregationType
+  sealed trait STDEVP
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait SUM extends FieldAggregationType
+  sealed trait SUM
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_DAY extends FieldAggregationType
+  sealed trait TRUNC_DAY
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_HOUR extends FieldAggregationType
+  sealed trait TRUNC_HOUR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_MINUTE extends FieldAggregationType
+  sealed trait TRUNC_MINUTE
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_MONTH extends FieldAggregationType
+  sealed trait TRUNC_MONTH
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_QTR extends FieldAggregationType
+  sealed trait TRUNC_QTR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_SECOND extends FieldAggregationType
+  sealed trait TRUNC_SECOND
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_WEEK extends FieldAggregationType
+  sealed trait TRUNC_WEEK
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait TRUNC_YEAR extends FieldAggregationType
+  sealed trait TRUNC_YEAR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait USER extends FieldAggregationType
+  sealed trait USER
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait VAR extends FieldAggregationType
+  sealed trait VAR
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait VARP extends FieldAggregationType
+  sealed trait VARP
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait WEEK extends FieldAggregationType
+  sealed trait WEEK
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait WEEKDAY extends FieldAggregationType
+  sealed trait WEEKDAY
+    extends StObject
+       with FieldAggregationType
   
   @js.native
-  sealed trait YEAR extends FieldAggregationType
+  sealed trait YEAR
+    extends StObject
+       with FieldAggregationType
 }

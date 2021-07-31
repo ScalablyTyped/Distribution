@@ -2,13 +2,11 @@ package typings.googleapis.surveysV2Mod.surveysV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifications for the target audience of a survey run through the API.
   */
-@js.native
 trait SchemaSurveyAudience extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaSurveyAudience extends StObject {
     * [&#39;18-24&#39;, &#39;25-34&#39;, &#39;35-44&#39;, &#39;45-54&#39;,
     * &#39;55-64&#39;, &#39;65+&#39;]
     */
-  var ages: js.UndefOr[js.Array[String]] = js.native
+  var ages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required country code that surveys should be targeted to. Accepts
@@ -24,7 +22,7 @@ trait SchemaSurveyAudience extends StObject {
     * &#39;US&#39; for the United States, and &#39;GB&#39; for the United
     * Kingdom.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * Country subdivision (states/provinces/etc) that surveys should be
@@ -33,12 +31,12 @@ trait SchemaSurveyAudience extends StObject {
     * statistical region codes for the United Kingdom is required (eg.
     * &#39;UK-UKC&#39; for North East England).
     */
-  var countrySubdivision: js.UndefOr[String] = js.native
+  var countrySubdivision: js.UndefOr[String] = js.undefined
   
   /**
     * Optional gender to target.
     */
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
   /**
     * Language code that surveys should be targeted to. For instance,
@@ -48,12 +46,12 @@ trait SchemaSurveyAudience extends StObject {
     * content (which is displayed) must match the first language listed.
     * Accepts standard BCP47 language codes. See specification.
     */
-  var languages: js.UndefOr[js.Array[String]] = js.native
+  var languages: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Online population source where the respondents are sampled from.
     */
-  var populationSource: js.UndefOr[String] = js.native
+  var populationSource: js.UndefOr[String] = js.undefined
 }
 object SchemaSurveyAudience {
   

@@ -2,23 +2,21 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceChange extends StObject {
   
   /**
     * A description for the service.
     */
-  var Description: js.UndefOr[ResourceDescription] = js.native
+  var Description: js.UndefOr[ResourceDescription] = js.undefined
   
   /**
     * A complex type that contains information about the Route 53 DNS records that you want AWS Cloud Map to create when you register an instance.
     */
-  var DnsConfig: js.UndefOr[DnsConfigChange] = js.native
+  var DnsConfig: js.UndefOr[DnsConfigChange] = js.undefined
   
-  var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.native
+  var HealthCheckConfig: js.UndefOr[typings.awsSdk.servicediscoveryMod.HealthCheckConfig] = js.undefined
 }
 object ServiceChange {
   

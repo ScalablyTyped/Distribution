@@ -2,17 +2,15 @@ package typings.meteor.Meteor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait absoluteUrlOptions extends StObject {
   
-  var replaceLocalhost: js.UndefOr[Boolean] = js.native
+  var replaceLocalhost: js.UndefOr[Boolean] = js.undefined
   
-  var rootUrl: js.UndefOr[String] = js.native
+  var rootUrl: js.UndefOr[String] = js.undefined
   
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
 }
 object absoluteUrlOptions {
   

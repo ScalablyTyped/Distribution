@@ -4,30 +4,28 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Security.Credentials.PasswordCredential
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides socket control data on a MessageWebSocket . */
-@js.native
 trait MessageWebSocketControl extends StObject {
   
   /** The maximum message size, in bytes, for a WebSocket message to be configured on the MessageWebSocket object. */
-  var maxMessageSize: Double = js.native
+  var maxMessageSize: Double
   
   /** The WebSocket message type to be configured on a MessageWebSocket object for write operations. */
-  var messageType: SocketMessageType = js.native
+  var messageType: SocketMessageType
   
   /** The size, in bytes, of the send buffer to be used for sending data on a MessageWebSocket object. */
-  var outboundBufferSizeInBytes: Double = js.native
+  var outboundBufferSizeInBytes: Double
   
   /** The credential to use to authenticate to the proxy server through HTTP header authentication using a MessageWebSocket object. */
-  var proxyCredential: PasswordCredential = js.native
+  var proxyCredential: PasswordCredential
   
   /** The credential to use to authenticate to the WebSocket server through HTTP header authentication using a MessageWebSocket object. */
-  var serverCredential: PasswordCredential = js.native
+  var serverCredential: PasswordCredential
   
   /** Gets a collection that can be used to add a list of supported sub-protocols that will be advertised to the server during the connect handshake. */
-  var supportedProtocols: IVector[String] = js.native
+  var supportedProtocols: IVector[String]
 }
 object MessageWebSocketControl {
   

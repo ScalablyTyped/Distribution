@@ -3,10 +3,13 @@ package typings.expoSqlite
 import typings.expoSqlite.sqliteTypesMod.WebSQLDatabase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("expo-sqlite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("expo-sqlite", "SQLError")
   @js.native
@@ -68,105 +71,84 @@ object mod {
     def VERSION_ERR_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VERSION_ERR")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(name: String): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: js.UndefOr[scala.Nothing],
-    description: js.UndefOr[scala.Nothing],
-    size: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: js.UndefOr[scala.Nothing],
-    description: js.UndefOr[scala.Nothing],
-    size: Double
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: js.UndefOr[scala.Nothing],
-    description: js.UndefOr[scala.Nothing],
-    size: Double,
-    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(name: String, version: js.UndefOr[scala.Nothing], description: String): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: js.UndefOr[scala.Nothing],
-    description: String,
-    size: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(name: String, version: js.UndefOr[scala.Nothing], description: String, size: Double): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: js.UndefOr[scala.Nothing],
-    description: String,
-    size: Double,
-    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(name: String, version: String): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: String,
-    description: js.UndefOr[scala.Nothing],
-    size: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(name: String, version: String, description: js.UndefOr[scala.Nothing], size: Double): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: String,
-    description: js.UndefOr[scala.Nothing],
-    size: Double,
-    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(name: String, version: String, description: String): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(
-    name: String,
-    version: String,
-    description: String,
-    size: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
-  def openDatabase(name: String, version: String, description: String, size: Double): WebSQLDatabase = js.native
-  @JSImport("expo-sqlite", "openDatabase")
-  @js.native
+  @scala.inline
+  def openDatabase(name: String): WebSQLDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any]).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(name: String, version: String): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(name: String, version: String, description: String): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(name: String, version: String, description: String, size: Double): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
   def openDatabase(
     name: String,
     version: String,
     description: String,
     size: Double,
     callback: js.Function1[/* db */ WebSQLDatabase, Unit]
-  ): WebSQLDatabase = js.native
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(
+    name: String,
+    version: String,
+    description: String,
+    size: Unit,
+    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(name: String, version: String, description: Unit, size: Double): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(
+    name: String,
+    version: String,
+    description: Unit,
+    size: Double,
+    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(
+    name: String,
+    version: String,
+    description: Unit,
+    size: Unit,
+    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(name: String, version: Unit, description: String): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(name: String, version: Unit, description: String, size: Double): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(
+    name: String,
+    version: Unit,
+    description: String,
+    size: Double,
+    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(
+    name: String,
+    version: Unit,
+    description: String,
+    size: Unit,
+    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(name: String, version: Unit, description: Unit, size: Double): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(
+    name: String,
+    version: Unit,
+    description: Unit,
+    size: Double,
+    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
+  @scala.inline
+  def openDatabase(
+    name: String,
+    version: Unit,
+    description: Unit,
+    size: Unit,
+    callback: js.Function1[/* db */ WebSQLDatabase, Unit]
+  ): WebSQLDatabase = (^.asInstanceOf[js.Dynamic].applyDynamic("openDatabase")(name.asInstanceOf[js.Any], version.asInstanceOf[js.Any], description.asInstanceOf[js.Any], size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[WebSQLDatabase]
 }

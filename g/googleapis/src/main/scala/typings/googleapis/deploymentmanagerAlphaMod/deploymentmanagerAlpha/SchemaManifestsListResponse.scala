@@ -2,25 +2,23 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response containing a partial list of manifests and a page token used to
   * build the next request if the request has been truncated.
   */
-@js.native
 trait SchemaManifestsListResponse extends StObject {
   
   /**
     * Output only. Manifests contained in this list response.
     */
-  var manifests: js.UndefOr[js.Array[SchemaManifest]] = js.native
+  var manifests: js.UndefOr[js.Array[SchemaManifest]] = js.undefined
   
   /**
     * Output only. A token used to continue a truncated list request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaManifestsListResponse {
   

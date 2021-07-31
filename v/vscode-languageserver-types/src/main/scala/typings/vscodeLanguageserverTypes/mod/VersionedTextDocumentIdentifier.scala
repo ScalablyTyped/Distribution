@@ -2,11 +2,11 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VersionedTextDocumentIdentifier extends TextDocumentIdentifier {
+trait VersionedTextDocumentIdentifier
+  extends StObject
+     with TextDocumentIdentifier {
   
   /**
     * The version number of this document. If a versioned text document identifier
@@ -15,34 +15,35 @@ trait VersionedTextDocumentIdentifier extends TextDocumentIdentifier {
     * `null` to indicate that the version is unknown and the content on disk is the
     * truth (as speced with document content ownership).
     */
-  var version: Double | Null = js.native
+  var version: Double | Null
 }
 object VersionedTextDocumentIdentifier {
   
   @scala.inline
   def apply(uri: DocumentUri): VersionedTextDocumentIdentifier = {
-    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(uri = uri.asInstanceOf[js.Any], version = null)
     __obj.asInstanceOf[VersionedTextDocumentIdentifier]
   }
+  
+  @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new VersionedTextDocumentIdentifier literal.
     * @param uri The document's uri.
     * @param uri The document's text.
     */
-  @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier.create")
-  @js.native
-  def create(uri: DocumentUri): VersionedTextDocumentIdentifier = js.native
-  @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier.create")
-  @js.native
-  def create(uri: DocumentUri, version: Double): VersionedTextDocumentIdentifier = js.native
+  @scala.inline
+  def create(uri: DocumentUri): VersionedTextDocumentIdentifier = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any]).asInstanceOf[VersionedTextDocumentIdentifier]
+  @scala.inline
+  def create(uri: DocumentUri, version: Double): VersionedTextDocumentIdentifier = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(uri.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[VersionedTextDocumentIdentifier]
   
   /**
     * Checks whether the given literal conforms to the [VersionedTextDocumentIdentifier](#VersionedTextDocumentIdentifier) interface.
     */
-  @JSImport("vscode-languageserver-types", "VersionedTextDocumentIdentifier.is")
-  @js.native
-  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = js.native
+  @scala.inline
+  def is(value: js.Any): /* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("is")(value.asInstanceOf[js.Any]).asInstanceOf[/* is vscode-languageserver-types.vscode-languageserver-types.VersionedTextDocumentIdentifier */ Boolean]
   
   @scala.inline
   implicit class VersionedTextDocumentIdentifierMutableBuilder[Self <: VersionedTextDocumentIdentifier] (val x: Self) extends AnyVal {

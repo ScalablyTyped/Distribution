@@ -5,38 +5,36 @@ import typings.babelTypes.babelTypesBooleans.`true`
 import typings.babelTypes.babelTypesStrings.NewExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait NewExpression_
-  extends Expression
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait NewExpression_
+  extends StObject
+     with BaseNode
+     with Expression {
   
-  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_] = js.native
+  var arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_]
   
-  var callee: Expression | V8IntrinsicIdentifier_ = js.native
+  var callee: Expression | V8IntrinsicIdentifier_
   
-  var optional: `true` | `false` | Null = js.native
+  var optional: `true` | `false` | Null
   
-  var typeArguments: TypeParameterInstantiation_ | Null = js.native
+  var typeArguments: TypeParameterInstantiation_ | Null
   
-  var typeParameters: TSTypeParameterInstantiation_ | Null = js.native
+  var typeParameters: TSTypeParameterInstantiation_ | Null
   
   @JSName("type")
-  var type_NewExpression_ : NewExpression = js.native
+  var type_NewExpression_ : NewExpression
 }
 object NewExpression_ {
   
   @scala.inline
   def apply(
     arguments: js.Array[Expression | SpreadElement_ | JSXNamespacedName_ | ArgumentPlaceholder_],
-    callee: Expression | V8IntrinsicIdentifier_,
-    `type`: NewExpression
+    callee: Expression | V8IntrinsicIdentifier_
   ): NewExpression_ = {
-    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], callee = callee.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, optional = null, start = null, trailingComments = null, typeArguments = null, typeParameters = null)
+    __obj.updateDynamic("type")("NewExpression")
     __obj.asInstanceOf[NewExpression_]
   }
   

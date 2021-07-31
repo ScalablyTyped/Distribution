@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChatPhoto extends StObject {
   
-  var big_file_id: String = js.native
+  var big_file_id: String
   
-  var small_file_id: String = js.native
+  var small_file_id: String
 }
 object ChatPhoto {
   

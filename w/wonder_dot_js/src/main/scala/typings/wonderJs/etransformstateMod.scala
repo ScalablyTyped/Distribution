@@ -1,57 +1,54 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/component/transform/ETransformState", JSImport.Namespace)
-@js.native
-object etransformstateMod extends js.Object {
-  @js.native
-  sealed trait ETransformState extends js.Object
+object etransformstateMod {
   
   @js.native
-  object ETransformState extends js.Object {
-    @js.native
-    sealed trait ISLOCALROTATE extends ETransformState
-    
-    @js.native
-    sealed trait ISLOCALSCALE extends ETransformState
-    
-    @js.native
-    sealed trait ISLOCALTRANSLATE extends ETransformState
-    
-    @js.native
-    sealed trait ISROTATE extends ETransformState
-    
-    @js.native
-    sealed trait ISSCALE extends ETransformState
-    
-    @js.native
-    sealed trait ISTRANSLATE extends ETransformState
+  sealed trait ETransformState extends StObject
+  @JSImport("wonder.js/dist/es2015/component/transform/ETransformState", "ETransformState")
+  @js.native
+  object ETransformState extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ETransformState with Double] = js.native
-    /* 4 */ @js.native
-    object ISLOCALROTATE extends TopLevel[ISLOCALROTATE with Double]
+    def apply(value: Double): js.UndefOr[ETransformState & Double] = js.native
     
-    /* 5 */ @js.native
-    object ISLOCALSCALE extends TopLevel[ISLOCALSCALE with Double]
+    @js.native
+    sealed trait ISLOCALROTATE
+      extends StObject
+         with ETransformState
+    /* 4 */ val ISLOCALROTATE: typings.wonderJs.etransformstateMod.ETransformState.ISLOCALROTATE & Double = js.native
     
-    /* 3 */ @js.native
-    object ISLOCALTRANSLATE extends TopLevel[ISLOCALTRANSLATE with Double]
+    @js.native
+    sealed trait ISLOCALSCALE
+      extends StObject
+         with ETransformState
+    /* 5 */ val ISLOCALSCALE: typings.wonderJs.etransformstateMod.ETransformState.ISLOCALSCALE & Double = js.native
     
-    /* 1 */ @js.native
-    object ISROTATE extends TopLevel[ISROTATE with Double]
+    @js.native
+    sealed trait ISLOCALTRANSLATE
+      extends StObject
+         with ETransformState
+    /* 3 */ val ISLOCALTRANSLATE: typings.wonderJs.etransformstateMod.ETransformState.ISLOCALTRANSLATE & Double = js.native
     
-    /* 2 */ @js.native
-    object ISSCALE extends TopLevel[ISSCALE with Double]
+    @js.native
+    sealed trait ISROTATE
+      extends StObject
+         with ETransformState
+    /* 1 */ val ISROTATE: typings.wonderJs.etransformstateMod.ETransformState.ISROTATE & Double = js.native
     
-    /* 0 */ @js.native
-    object ISTRANSLATE extends TopLevel[ISTRANSLATE with Double]
+    @js.native
+    sealed trait ISSCALE
+      extends StObject
+         with ETransformState
+    /* 2 */ val ISSCALE: typings.wonderJs.etransformstateMod.ETransformState.ISSCALE & Double = js.native
     
+    @js.native
+    sealed trait ISTRANSLATE
+      extends StObject
+         with ETransformState
+    /* 0 */ val ISTRANSLATE: typings.wonderJs.etransformstateMod.ETransformState.ISTRANSLATE & Double = js.native
   }
-  
 }
-

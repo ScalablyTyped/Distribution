@@ -3,19 +3,18 @@ package typings.yaml.parseCstMod.CST
 import typings.yaml.utilMod.Type.MAP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Map
-  extends Node
+  extends StObject
+     with Node
      with ContentNode {
   
   /** implicit keys are not wrapped */
-  var items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem] = js.native
+  var items: js.Array[BlankLine | Comment | Alias | Scalar | MapItem]
   
   @JSName("type")
-  var type_Map: MAP = js.native
+  var type_Map: MAP
 }
 object Map {
   
@@ -29,7 +28,7 @@ object Map {
     `type`: MAP,
     valueRangeContainsNewline: Boolean
   ): Map = {
-    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(hasComment = hasComment.asInstanceOf[js.Any], hasProps = hasProps.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], jsonLike = jsonLike.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], valueRangeContainsNewline = valueRangeContainsNewline.asInstanceOf[js.Any], anchor = null, comment = null, context = null, error = null, range = null, rawValue = null, tag = null, value = null, valueRange = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Map]
   }

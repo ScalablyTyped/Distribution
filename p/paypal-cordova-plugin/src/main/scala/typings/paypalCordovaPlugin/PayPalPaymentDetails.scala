@@ -2,7 +2,6 @@ package typings.paypalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see https://developer.paypal.com/webapps/developer/docs/api/#details-object for more details.
   */
-@js.native
 trait PayPalPaymentDetails extends StObject {
   
   /**
     * Amount charged for shipping. 10 characters max with support for 2 decimal places.
     */
-  var shipping: String = js.native
+  var shipping: String
   
   /**
     * Sub-total (amount) of items being paid for. 10 characters max with support for 2 decimal places.
     */
-  var subtotal: String = js.native
+  var subtotal: String
   
   /**
     * Amount charged for tax. 10 characters max with support for 2 decimal places.
     */
-  var tax: String = js.native
+  var tax: String
 }
 object PayPalPaymentDetails {
   

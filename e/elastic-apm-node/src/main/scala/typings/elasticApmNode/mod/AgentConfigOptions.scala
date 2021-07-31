@@ -3,117 +3,115 @@ package typings.elasticApmNode.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentConfigOptions extends StObject {
   
-  var abortedErrorThreshold: js.UndefOr[String] = js.native
+  var abortedErrorThreshold: js.UndefOr[String] = js.undefined
   
   // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var addPatch: js.UndefOr[KeyValueConfig] = js.native
+  var addPatch: js.UndefOr[KeyValueConfig] = js.undefined
   
-  var apiRequestSize: js.UndefOr[String] = js.native
-  
-  // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var apiRequestTime: js.UndefOr[String] = js.native
+  var apiRequestSize: js.UndefOr[String] = js.undefined
   
   // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var asyncHooks: js.UndefOr[Boolean] = js.native
-  
-  var captureBody: js.UndefOr[CaptureBody] = js.native
-  
-  var captureErrorLogStackTraces: js.UndefOr[CaptureErrorLogStackTraces] = js.native
-  
-  var captureExceptions: js.UndefOr[Boolean] = js.native
-  
-  var captureHeaders: js.UndefOr[Boolean] = js.native
-  
-  var captureSpanStackTraces: js.UndefOr[Boolean] = js.native
-  
-  var centralConfig: js.UndefOr[Boolean] = js.native
-  
-  var containerId: js.UndefOr[String] = js.native
-  
-  var disableInstrumentations: js.UndefOr[String | js.Array[String]] = js.native
-  
-  var environment: js.UndefOr[String] = js.native
-  
-  var errorMessageMaxLength: js.UndefOr[String] = js.native
+  var apiRequestTime: js.UndefOr[String] = js.undefined
   
   // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var errorOnAbortedRequests: js.UndefOr[Boolean] = js.native
+  var asyncHooks: js.UndefOr[Boolean] = js.undefined
   
-  var filterHttpHeaders: js.UndefOr[Boolean] = js.native
+  var captureBody: js.UndefOr[CaptureBody] = js.undefined
   
-  var frameworkName: js.UndefOr[String] = js.native
+  var captureErrorLogStackTraces: js.UndefOr[CaptureErrorLogStackTraces] = js.undefined
   
-  var frameworkVersion: js.UndefOr[String] = js.native
+  var captureExceptions: js.UndefOr[Boolean] = js.undefined
   
-  var globalLabels: js.UndefOr[KeyValueConfig] = js.native
+  var captureHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var hostname: js.UndefOr[String] = js.native
+  var captureSpanStackTraces: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreUrls: js.UndefOr[js.Array[String | RegExp]] = js.native
+  var centralConfig: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreUserAgents: js.UndefOr[js.Array[String | RegExp]] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
-  var instrument: js.UndefOr[Boolean] = js.native
+  var disableInstrumentations: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var instrumentIncomingHTTPRequests: js.UndefOr[Boolean] = js.native
+  var environment: js.UndefOr[String] = js.undefined
   
-  var kubernetesNamespace: js.UndefOr[String] = js.native
-  
-  var kubernetesNodeName: js.UndefOr[String] = js.native
-  
-  var kubernetesPodName: js.UndefOr[String] = js.native
-  
-  var kubernetesPodUID: js.UndefOr[String] = js.native
-  
-  var logLevel: js.UndefOr[LogLevel] = js.native
-  
-  var logUncaughtExceptions: js.UndefOr[Boolean] = js.native
-  
-  var logger: js.UndefOr[Logger] = js.native
-  
-  var metricsInterval: js.UndefOr[String] = js.native
+  var errorMessageMaxLength: js.UndefOr[String] = js.undefined
   
   // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var payloadLogFile: js.UndefOr[String] = js.native
+  var errorOnAbortedRequests: js.UndefOr[Boolean] = js.undefined
   
-  var secretToken: js.UndefOr[String] = js.native
+  var filterHttpHeaders: js.UndefOr[Boolean] = js.undefined
   
-  var serverCaCertFile: js.UndefOr[String] = js.native
+  var frameworkName: js.UndefOr[String] = js.undefined
   
-  var serverTimeout: js.UndefOr[String] = js.native
+  var frameworkVersion: js.UndefOr[String] = js.undefined
+  
+  var globalLabels: js.UndefOr[KeyValueConfig] = js.undefined
+  
+  var hostname: js.UndefOr[String] = js.undefined
+  
+  var ignoreUrls: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+  
+  var ignoreUserAgents: js.UndefOr[js.Array[String | RegExp]] = js.undefined
+  
+  var instrument: js.UndefOr[Boolean] = js.undefined
+  
+  var instrumentIncomingHTTPRequests: js.UndefOr[Boolean] = js.undefined
+  
+  var kubernetesNamespace: js.UndefOr[String] = js.undefined
+  
+  var kubernetesNodeName: js.UndefOr[String] = js.undefined
+  
+  var kubernetesPodName: js.UndefOr[String] = js.undefined
+  
+  var kubernetesPodUID: js.UndefOr[String] = js.undefined
+  
+  var logLevel: js.UndefOr[LogLevel] = js.undefined
+  
+  var logUncaughtExceptions: js.UndefOr[Boolean] = js.undefined
+  
+  var logger: js.UndefOr[Logger] = js.undefined
+  
+  var metricsInterval: js.UndefOr[String] = js.undefined
   
   // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
-  var serverUrl: js.UndefOr[String] = js.native
+  var payloadLogFile: js.UndefOr[String] = js.undefined
   
-  var serviceName: js.UndefOr[String] = js.native
+  var secretToken: js.UndefOr[String] = js.undefined
   
-  var serviceVersion: js.UndefOr[String] = js.native
+  var serverCaCertFile: js.UndefOr[String] = js.undefined
   
-  var sourceLinesErrorAppFrames: js.UndefOr[Double] = js.native
+  var serverTimeout: js.UndefOr[String] = js.undefined
   
-  var sourceLinesErrorLibraryFrames: js.UndefOr[Double] = js.native
+  // Also support `number`, but as we're removing this functionality soon, there's no need to advertise it
+  var serverUrl: js.UndefOr[String] = js.undefined
   
-  var sourceLinesSpanAppFrames: js.UndefOr[Double] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
   
-  var sourceLinesSpanLibraryFrames: js.UndefOr[Double] = js.native
+  var serviceVersion: js.UndefOr[String] = js.undefined
   
-  var stackTraceLimit: js.UndefOr[Double] = js.native
+  var sourceLinesErrorAppFrames: js.UndefOr[Double] = js.undefined
   
-  var transactionMaxSpans: js.UndefOr[Double] = js.native
+  var sourceLinesErrorLibraryFrames: js.UndefOr[Double] = js.undefined
   
-  var transactionSampleRate: js.UndefOr[Double] = js.native
+  var sourceLinesSpanAppFrames: js.UndefOr[Double] = js.undefined
   
-  var usePathAsTransactionName: js.UndefOr[Boolean] = js.native
+  var sourceLinesSpanLibraryFrames: js.UndefOr[Double] = js.undefined
   
-  var verifyServerCert: js.UndefOr[Boolean] = js.native
+  var stackTraceLimit: js.UndefOr[Double] = js.undefined
+  
+  var transactionMaxSpans: js.UndefOr[Double] = js.undefined
+  
+  var transactionSampleRate: js.UndefOr[Double] = js.undefined
+  
+  var usePathAsTransactionName: js.UndefOr[Boolean] = js.undefined
+  
+  var verifyServerCert: js.UndefOr[Boolean] = js.undefined
 }
 object AgentConfigOptions {
   

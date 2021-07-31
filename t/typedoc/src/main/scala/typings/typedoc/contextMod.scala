@@ -17,7 +17,6 @@ import typings.typescript.mod.TypeNode
 import typings.typescript.mod.TypeParameterDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -90,37 +89,19 @@ object contextMod {
     
     var visitStack: js.Array[Node] = js.native
     
-    def withScope(scope: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: Unit, parameters: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: Unit, parameters: Unit, preserve: Boolean, callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: Unit, parameters: NodeArray[TypeParameterDeclaration], callback: js.Function0[Unit]): Unit = js.native
     def withScope(
-      scope: js.UndefOr[scala.Nothing],
-      parameters: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(
-      scope: js.UndefOr[scala.Nothing],
-      parameters: js.UndefOr[scala.Nothing],
-      preserve: Boolean,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(
-      scope: js.UndefOr[scala.Nothing],
-      parameters: NodeArray[TypeParameterDeclaration],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def withScope(
-      scope: js.UndefOr[scala.Nothing],
+      scope: Unit,
       parameters: NodeArray[TypeParameterDeclaration],
       preserve: Boolean,
       callback: js.Function0[Unit]
     ): Unit = js.native
     def withScope(scope: Reflection, callback: js.Function0[Unit]): Unit = js.native
-    def withScope(scope: Reflection, parameters: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def withScope(
-      scope: Reflection,
-      parameters: js.UndefOr[scala.Nothing],
-      preserve: Boolean,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    def withScope(scope: Reflection, parameters: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def withScope(scope: Reflection, parameters: Unit, preserve: Boolean, callback: js.Function0[Unit]): Unit = js.native
     def withScope(scope: Reflection, parameters: NodeArray[TypeParameterDeclaration], callback: js.Function0[Unit]): Unit = js.native
     def withScope(
       scope: Reflection,

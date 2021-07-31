@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebase.gapi.client.firebase
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddGoogleAnalyticsRequest extends StObject {
   
   /**
     * The ID for the existing [Google Analytics account](http://www.google.com/analytics/) that you want to link with the `FirebaseProject`. Specifying this field will provision a new
     * Google Analytics property in your Google Analytics account and associate the new property with the `FirebaseProject`.
     */
-  var analyticsAccountId: js.UndefOr[String] = js.native
+  var analyticsAccountId: js.UndefOr[String] = js.undefined
   
   /** The ID for the existing Google Analytics property that you want to associate with the `FirebaseProject`. */
-  var analyticsPropertyId: js.UndefOr[String] = js.native
+  var analyticsPropertyId: js.UndefOr[String] = js.undefined
 }
 object AddGoogleAnalyticsRequest {
   

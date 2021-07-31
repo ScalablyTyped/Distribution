@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "Period")
@@ -69,47 +68,38 @@ object Period {
   def ZERO_=(x: Period): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ZERO")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "Period.between")
-  @js.native
-  def between(startDate: LocalDate, endDate: LocalDate): Period = js.native
+  @scala.inline
+  def between(startDate: LocalDate, endDate: LocalDate): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[Period]
   
   /* static member */
-  @JSImport("js-joda", "Period.create")
-  @js.native
-  def create(years: Double, months: Double, days: Double): Duration = js.native
+  @scala.inline
+  def create(years: Double, months: Double, days: Double): Duration = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(years.asInstanceOf[js.Any], months.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Duration]
   
   /* static member */
-  @JSImport("js-joda", "Period.from")
-  @js.native
-  def from(amount: TemporalAmount): Period = js.native
+  @scala.inline
+  def from(amount: TemporalAmount): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(amount.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @JSImport("js-joda", "Period.of")
-  @js.native
-  def of(years: Double, months: Double, days: Double): Period = js.native
+  @scala.inline
+  def of(years: Double, months: Double, days: Double): Period = (^.asInstanceOf[js.Dynamic].applyDynamic("of")(years.asInstanceOf[js.Any], months.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Period]
   
   /* static member */
-  @JSImport("js-joda", "Period.ofDays")
-  @js.native
-  def ofDays(days: Double): Period = js.native
+  @scala.inline
+  def ofDays(days: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofDays")(days.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @JSImport("js-joda", "Period.ofMonths")
-  @js.native
-  def ofMonths(months: Double): Period = js.native
+  @scala.inline
+  def ofMonths(months: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofMonths")(months.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @JSImport("js-joda", "Period.ofWeeks")
-  @js.native
-  def ofWeeks(weeks: Double): Period = js.native
+  @scala.inline
+  def ofWeeks(weeks: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofWeeks")(weeks.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @JSImport("js-joda", "Period.ofYears")
-  @js.native
-  def ofYears(years: Double): Period = js.native
+  @scala.inline
+  def ofYears(years: Double): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("ofYears")(years.asInstanceOf[js.Any]).asInstanceOf[Period]
   
   /* static member */
-  @JSImport("js-joda", "Period.parse")
-  @js.native
-  def parse(text: String): Period = js.native
+  @scala.inline
+  def parse(text: String): Period = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[Period]
 }

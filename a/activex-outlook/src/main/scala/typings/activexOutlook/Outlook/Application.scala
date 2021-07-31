@@ -12,7 +12,6 @@ import typings.activexOutlook.activexOutlookNumbers.`6`
 import typings.activexOutlook.activexOutlookNumbers.`7`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,18 +24,13 @@ trait Application extends StObject {
   def ActiveWindow(): js.Any = js.native
   
   def AdvancedSearch(Scope: String): Search = js.native
-  def AdvancedSearch(
-    Scope: String,
-    Filter: js.UndefOr[scala.Nothing],
-    SearchSubFolders: js.UndefOr[scala.Nothing],
-    Tag: js.Any
-  ): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: js.UndefOr[scala.Nothing], SearchSubFolders: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: js.UndefOr[scala.Nothing], SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any): Search = js.native
-  def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.UndefOr[scala.Nothing], Tag: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any): Search = js.native
   def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: js.Any, SearchSubFolders: Unit, Tag: js.Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: js.Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: js.Any, Tag: js.Any): Search = js.native
+  def AdvancedSearch(Scope: String, Filter: Unit, SearchSubFolders: Unit, Tag: js.Any): Search = js.native
   
   val AnswerWizard: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.AnswerWizard */ js.Any = js.native
   

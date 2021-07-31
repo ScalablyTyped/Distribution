@@ -3,13 +3,15 @@ package typings.rrule
 import typings.rrule.typesMod.ParsedOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object monthinfoMod {
   
-  @JSImport("rrule/dist/esm/src/iterinfo/monthinfo", "rebuildMonth")
+  @JSImport("rrule/dist/esm/src/iterinfo/monthinfo", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def rebuildMonth(
     year: Double,
     month: Double,
@@ -17,16 +19,15 @@ object monthinfoMod {
     mrange: js.Array[Double],
     wdaymask: js.Array[Double],
     options: ParsedOptions
-  ): MonthInfo = js.native
+  ): MonthInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("rebuildMonth")(year.asInstanceOf[js.Any], month.asInstanceOf[js.Any], yearlen.asInstanceOf[js.Any], mrange.asInstanceOf[js.Any], wdaymask.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[MonthInfo]
   
-  @js.native
   trait MonthInfo extends StObject {
     
-    var lastmonth: Double = js.native
+    var lastmonth: Double
     
-    var lastyear: Double = js.native
+    var lastyear: Double
     
-    var nwdaymask: js.Array[Double] = js.native
+    var nwdaymask: js.Array[Double]
   }
   object MonthInfo {
     

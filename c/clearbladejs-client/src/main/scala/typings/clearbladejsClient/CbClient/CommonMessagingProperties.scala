@@ -2,23 +2,21 @@ package typings.clearbladejsClient.CbClient
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommonMessagingProperties extends StObject {
   
-  var cleanSession: js.UndefOr[Boolean] = js.native
+  var cleanSession: js.UndefOr[Boolean] = js.undefined
   
-  var hosts: js.UndefOr[String] = js.native
+  var hosts: js.UndefOr[String] = js.undefined
   
-  var onFailure: js.UndefOr[js.Function] = js.native
+  var onFailure: js.UndefOr[js.Function] = js.undefined
   
-  var onSuccess: js.UndefOr[js.Function] = js.native
+  var onSuccess: js.UndefOr[js.Function] = js.undefined
   
-  var ports: js.UndefOr[String] = js.native
+  var ports: js.UndefOr[String] = js.undefined
   
-  var useSSL: js.UndefOr[Boolean] = js.native
+  var useSSL: js.UndefOr[Boolean] = js.undefined
 }
 object CommonMessagingProperties {
   

@@ -7,36 +7,31 @@ import typings.dashjs.dashjsStrings.qualityChangeRequested
 import typings.dashjs.dashjsStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QualityChangeRequestedEvent extends Event {
+trait QualityChangeRequestedEvent
+  extends StObject
+     with Event {
   
-  var mediaType: video | audio | fragmentedText = js.native
+  var mediaType: video | audio | fragmentedText
   
-  var newQuality: Double = js.native
+  var newQuality: Double
   
-  var oldQuality: Double = js.native
+  var oldQuality: Double
   
-  var reason: DroppedFrames | Null = js.native
+  var reason: DroppedFrames | Null
   
-  var streamInfo: StreamInfo | Null = js.native
+  var streamInfo: StreamInfo | Null
   
   @JSName("type")
-  var type_QualityChangeRequestedEvent: qualityChangeRequested = js.native
+  var type_QualityChangeRequestedEvent: qualityChangeRequested
 }
 object QualityChangeRequestedEvent {
   
   @scala.inline
-  def apply(
-    mediaType: video | audio | fragmentedText,
-    newQuality: Double,
-    oldQuality: Double,
-    `type`: qualityChangeRequested
-  ): QualityChangeRequestedEvent = {
-    val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], newQuality = newQuality.asInstanceOf[js.Any], oldQuality = oldQuality.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(mediaType: video | audio | fragmentedText, newQuality: Double, oldQuality: Double): QualityChangeRequestedEvent = {
+    val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], newQuality = newQuality.asInstanceOf[js.Any], oldQuality = oldQuality.asInstanceOf[js.Any], reason = null, streamInfo = null)
+    __obj.updateDynamic("type")("qualityChangeRequested")
     __obj.asInstanceOf[QualityChangeRequestedEvent]
   }
   

@@ -2,19 +2,17 @@ package typings.broccoliNodeApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CachePath extends StObject {
     
-    var cachePath: js.UndefOr[String] = js.native
+    var cachePath: js.UndefOr[String] = js.undefined
     
-    var inputPaths: js.Array[String] = js.native
+    var inputPaths: js.Array[String]
     
-    var outputPath: String = js.native
+    var outputPath: String
   }
   object CachePath {
     

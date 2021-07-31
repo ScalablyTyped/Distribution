@@ -7,7 +7,6 @@ import typings.reactNative.mod.GetPhotosParamType
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cameraRollPickerMod {
@@ -38,9 +37,8 @@ object cameraRollPickerMod {
       @scala.inline
       def backgroundColor_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("backgroundColor")(x.asInstanceOf[js.Any])
       
-      @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.callback")
-      @js.native
-      def callback(selectedImages: js.Any, currentImage: js.Any): Unit = js.native
+      @scala.inline
+      def callback(selectedImages: js.Any, currentImage: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("callback")(selectedImages.asInstanceOf[js.Any], currentImage.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       @JSImport("@ant-design/react-native/lib/image-picker/CameraRollPicker", "default.defaultProps.first")
       @js.native
@@ -95,7 +93,7 @@ object cameraRollPickerMod {
     
     def _arrayObjectIndexOf(array: js.Any, property: String, value: js.Any): js.Any = js.native
     
-    def _nEveryRow(data: js.Any, n: Double): js.Array[js.Array[_]] = js.native
+    def _nEveryRow(data: js.Any, n: Double): js.Array[js.Array[js.Any]] = js.native
     
     def _renderImage(item: js.Any): Element = js.native
     
@@ -103,30 +101,31 @@ object cameraRollPickerMod {
     
     var after: js.UndefOr[String] = js.native
     
-    def onFetch(_underscore: js.UndefOr[scala.Nothing], startFetch: js.Any, abortFetch: js.Function0[Unit]): js.Promise[Unit] = js.native
     def onFetch(_underscore: Double, startFetch: js.Any, abortFetch: js.Function0[Unit]): js.Promise[Unit] = js.native
+    def onFetch(_underscore: Unit, startFetch: js.Any, abortFetch: js.Function0[Unit]): js.Promise[Unit] = js.native
   }
   
-  @js.native
-  trait CameraRollPickerProps extends GetPhotosParamType {
+  trait CameraRollPickerProps
+    extends StObject
+       with GetPhotosParamType {
     
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
-    var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var containerWidth: js.UndefOr[Double] = js.native
+    var containerWidth: js.UndefOr[Double] = js.undefined
     
-    var imageMargin: Double = js.native
+    var imageMargin: Double
     
-    var imagesPerRow: Double = js.native
+    var imagesPerRow: Double
     
-    var maximum: Double = js.native
+    var maximum: Double
     
-    var selectSingleItem: js.UndefOr[Boolean] = js.native
+    var selectSingleItem: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[js.Array[_]] = js.native
+    var selected: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var selectedMarker: js.UndefOr[Element] = js.native
+    var selectedMarker: js.UndefOr[Element] = js.undefined
   }
   object CameraRollPickerProps {
     
@@ -146,7 +145,7 @@ object cameraRollPickerMod {
       def setBackgroundColorUndefined: Self = StObject.set(x, "backgroundColor", js.undefined)
       
       @scala.inline
-      def setCallback(value: /* repeated */ js.Any => _): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      def setCallback(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCallbackUndefined: Self = StObject.set(x, "callback", js.undefined)
@@ -173,7 +172,7 @@ object cameraRollPickerMod {
       def setSelectSingleItemUndefined: Self = StObject.set(x, "selectSingleItem", js.undefined)
       
       @scala.inline
-      def setSelected(value: js.Array[_]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
+      def setSelected(value: js.Array[js.Any]): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectedMarker(value: Element): Self = StObject.set(x, "selectedMarker", value.asInstanceOf[js.Any])
@@ -189,17 +188,16 @@ object cameraRollPickerMod {
     }
   }
   
-  @js.native
   trait CameraRollPickerState extends StObject {
     
-    var images: js.Array[_] = js.native
+    var images: js.Array[js.Any]
     
-    var selected: js.Any = js.native
+    var selected: js.Any
   }
   object CameraRollPickerState {
     
     @scala.inline
-    def apply(images: js.Array[_], selected: js.Any): CameraRollPickerState = {
+    def apply(images: js.Array[js.Any], selected: js.Any): CameraRollPickerState = {
       val __obj = js.Dynamic.literal(images = images.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any])
       __obj.asInstanceOf[CameraRollPickerState]
     }
@@ -208,7 +206,7 @@ object cameraRollPickerMod {
     implicit class CameraRollPickerStateMutableBuilder[Self <: CameraRollPickerState] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setImages(value: js.Array[_]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
+      def setImages(value: js.Array[js.Any]): Self = StObject.set(x, "images", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImagesVarargs(value: js.Any*): Self = StObject.set(x, "images", js.Array(value :_*))
@@ -218,16 +216,15 @@ object cameraRollPickerMod {
     }
   }
   
-  @js.native
   trait CameraRollPickerStyle extends StObject {
     
-    var marker: ViewStyle = js.native
+    var marker: ViewStyle
     
-    var row: ViewStyle = js.native
+    var row: ViewStyle
     
-    var spinner: ViewStyle = js.native
+    var spinner: ViewStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object CameraRollPickerStyle {
     

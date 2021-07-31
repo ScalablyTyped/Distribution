@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InventorySourceStatus extends StObject {
   
   /**
@@ -13,28 +11,28 @@ trait InventorySourceStatus extends StObject {
     * `INVENTORY_SOURCE_CONFIG_STATUS_COMPLETED`. An inventory source must be configured (fill in the required fields, choose creatives, and select a default campaign) before it can
     * serve.
     */
-  var configStatus: js.UndefOr[String] = js.native
+  var configStatus: js.UndefOr[String] = js.undefined
   
   /** The user-provided reason for pausing this inventory source. Must not exceed 100 characters. Only applicable when entity_status is set to `ENTITY_STATUS_PAUSED`. */
-  var entityPauseReason: js.UndefOr[String] = js.native
+  var entityPauseReason: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the inventory source is servable. Acceptable values are `ENTITY_STATUS_ACTIVE`, `ENTITY_STATUS_ARCHIVED`, and `ENTITY_STATUS_PAUSED`. Default value is
     * `ENTITY_STATUS_ACTIVE`.
     */
-  var entityStatus: js.UndefOr[String] = js.native
+  var entityStatus: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The seller-provided reason for pausing this inventory source. Only applicable for inventory sources synced directly from the publishers and when seller_status is set to
     * `ENTITY_STATUS_PAUSED`.
     */
-  var sellerPauseReason: js.UndefOr[String] = js.native
+  var sellerPauseReason: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The status set by the seller for the inventory source. Only applicable for inventory sources synced directly from the publishers. Acceptable values are
     * `ENTITY_STATUS_ACTIVE` and `ENTITY_STATUS_PAUSED`.
     */
-  var sellerStatus: js.UndefOr[String] = js.native
+  var sellerStatus: js.UndefOr[String] = js.undefined
 }
 object InventorySourceStatus {
   

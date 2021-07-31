@@ -8,11 +8,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.text
 import typings.arcgisJsApi.arcgisJsApiStrings.unsupported
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait InputField extends Accessor {
+trait InputField
+  extends StObject
+     with Accessor {
   
   /**
     * The field's description.

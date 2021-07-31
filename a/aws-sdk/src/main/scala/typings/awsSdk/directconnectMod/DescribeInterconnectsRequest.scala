@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeInterconnectsRequest extends StObject {
   
   /**
     * The ID of the interconnect.
     */
-  var interconnectId: js.UndefOr[InterconnectId] = js.native
+  var interconnectId: js.UndefOr[InterconnectId] = js.undefined
 }
 object DescribeInterconnectsRequest {
   

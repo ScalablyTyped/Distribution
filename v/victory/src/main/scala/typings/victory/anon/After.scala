@@ -3,17 +3,15 @@ package typings.victory.anon
 import typings.victory.mod.AnimationStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait After extends StObject {
   
-  var after: js.UndefOr[js.Function1[/* datum */ js.Any, AnimationStyle]] = js.native
+  var after: js.UndefOr[js.Function1[/* datum */ js.Any, AnimationStyle]] = js.undefined
   
-  var before: js.UndefOr[js.Function1[/* datum */ js.Any, AnimationStyle]] = js.native
+  var before: js.UndefOr[js.Function1[/* datum */ js.Any, AnimationStyle]] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
 }
 object After {
   

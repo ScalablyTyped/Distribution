@@ -3,25 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.DomainResource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyDomainResource extends StObject {
   
-  var body: DomainResource = js.native
+  var body: DomainResource
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DomainResource = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.DomainResource
 }
 object BodyDomainResource {
   
   @scala.inline
-  def apply(body: DomainResource, resourceType: typings.fhirKitClient.fhirKitClientStrings.DomainResource): BodyDomainResource = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: DomainResource): BodyDomainResource = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "DomainResource")
     __obj.asInstanceOf[BodyDomainResource]
   }
   

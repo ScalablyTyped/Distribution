@@ -3,32 +3,32 @@ package typings.log4js.mod
 import typings.log4js.log4jsStrings.fileSync
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SyncfileAppender extends Appender {
+trait SyncfileAppender
+  extends StObject
+     with Appender {
   
   // (default value = 5) - the number of old log files to keep during log rolling.
-  var backups: js.UndefOr[Double] = js.native
+  var backups: js.UndefOr[Double] = js.undefined
   
   // the path of the file where you want your logs written.
-  var filename: String = js.native
+  var filename: String
   
   // defaults to basic layout
-  var layout: js.UndefOr[Layout] = js.native
+  var layout: js.UndefOr[Layout] = js.undefined
   
   // the maximum size (in bytes) for the log file. If not specified, then no log rolling will happen.
-  var maxLogSize: js.UndefOr[Double | String] = js.native
+  var maxLogSize: js.UndefOr[Double | String] = js.undefined
   
-  var `type`: fileSync = js.native
+  var `type`: fileSync
 }
 object SyncfileAppender {
   
   @scala.inline
-  def apply(filename: String, `type`: fileSync): SyncfileAppender = {
+  def apply(filename: String): SyncfileAppender = {
     val __obj = js.Dynamic.literal(filename = filename.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fileSync")
     __obj.asInstanceOf[SyncfileAppender]
   }
   

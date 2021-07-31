@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Link to a resource that concerns the same actual person
   */
-@js.native
-trait PersonLink extends BackboneElement {
+trait PersonLink
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'assurance'.
     */
-  var _assurance: js.UndefOr[Element] = js.native
+  var _assurance: js.UndefOr[Element] = js.undefined
   
   /**
     * level1 | level2 | level3 | level4
     */
-  var assurance: js.UndefOr[code] = js.native
+  var assurance: js.UndefOr[code] = js.undefined
   
   /**
     * The resource to which this actual person is associated
     */
-  var target: Reference = js.native
+  var target: Reference
 }
 object PersonLink {
   

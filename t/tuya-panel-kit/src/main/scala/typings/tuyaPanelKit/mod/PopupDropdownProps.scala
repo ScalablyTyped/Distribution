@@ -6,35 +6,33 @@ import typings.reactNative.mod.ViewStyle
 import typings.tuyaPanelKit.anon.Title
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopupDropdownProps extends StObject {
   
-  var corner: js.UndefOr[Boolean] = js.native
+  var corner: js.UndefOr[Boolean] = js.undefined
   
-  var cornerColor: js.UndefOr[String] = js.native
+  var cornerColor: js.UndefOr[String] = js.undefined
   
-  var cornerDirection: js.UndefOr[String] = js.native
+  var cornerDirection: js.UndefOr[String] = js.undefined
   
-  var cornerDirectionValue: js.UndefOr[String] = js.native
+  var cornerDirectionValue: js.UndefOr[String] = js.undefined
   
-  var cornerSize: js.UndefOr[String] = js.native
+  var cornerSize: js.UndefOr[String] = js.undefined
   
-  var cornerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var cornerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var customCornerSize: js.UndefOr[String] = js.native
+  var customCornerSize: js.UndefOr[String] = js.undefined
   
-  var data: js.Array[Title] = js.native
+  var data: js.Array[Title]
   
-  var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var listStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var onSelect: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.native
+  var onSelect: js.UndefOr[js.Function1[/* value */ js.UndefOr[Double | String], Unit]] = js.undefined
   
-  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var textStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var touchViewStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var touchViewStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object PopupDropdownProps {
   

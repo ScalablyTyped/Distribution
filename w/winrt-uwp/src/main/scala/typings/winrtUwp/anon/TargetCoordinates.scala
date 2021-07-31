@@ -4,15 +4,13 @@ import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncAction
 import typings.winrtUwp.Windows.Foundation.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetCoordinates extends StObject {
   
-  /** This function returns asynchronously. */ var returnValue: IPromiseWithIAsyncAction = js.native
+  /** This function returns asynchronously. */ var returnValue: IPromiseWithIAsyncAction
   
-  /** The pixel coordinates, mapped to depth image space. */ var targetCoordinates: Point = js.native
+  /** The pixel coordinates, mapped to depth image space. */ var targetCoordinates: Point
 }
 object TargetCoordinates {
   

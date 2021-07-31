@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,24 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * against the content of a cell resulting in either a true or false value. If the
   * criteria evaluates to true, the condition's formatting settings are applied to the cell.
   */
-@js.native
 trait BooleanCondition extends StObject {
   
-  def getBackground(): String | Null = js.native
+  def getBackground(): String | Null
   
-  def getBold(): Boolean | Null = js.native
+  def getBold(): Boolean | Null
   
-  def getCriteriaType(): BooleanCriteria = js.native
+  def getCriteriaType(): BooleanCriteria
   
-  def getCriteriaValues(): js.Array[_] = js.native
+  def getCriteriaValues(): js.Array[js.Any]
   
-  def getFontColor(): String | Null = js.native
+  def getFontColor(): String | Null
   
-  def getItalic(): Boolean | Null = js.native
+  def getItalic(): Boolean | Null
   
-  def getStrikethrough(): Boolean | Null = js.native
+  def getStrikethrough(): Boolean | Null
   
-  def getUnderline(): Boolean | Null = js.native
+  def getUnderline(): Boolean | Null
 }
 object BooleanCondition {
   
@@ -38,7 +36,7 @@ object BooleanCondition {
     getBackground: () => String | Null,
     getBold: () => Boolean | Null,
     getCriteriaType: () => BooleanCriteria,
-    getCriteriaValues: () => js.Array[_],
+    getCriteriaValues: () => js.Array[js.Any],
     getFontColor: () => String | Null,
     getItalic: () => Boolean | Null,
     getStrikethrough: () => Boolean | Null,
@@ -61,7 +59,7 @@ object BooleanCondition {
     def setGetCriteriaType(value: () => BooleanCriteria): Self = StObject.set(x, "getCriteriaType", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetCriteriaValues(value: () => js.Array[_]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
+    def setGetCriteriaValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getCriteriaValues", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetFontColor(value: () => String | Null): Self = StObject.set(x, "getFontColor", js.Any.fromFunction0(value))

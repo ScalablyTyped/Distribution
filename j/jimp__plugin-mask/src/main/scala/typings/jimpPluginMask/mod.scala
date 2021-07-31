@@ -4,14 +4,16 @@ import typings.jimpCore.etcMod.ImageCallback
 import typings.jimpCore.jimpMod.Jimp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugin-mask", JSImport.Default)
+  @JSImport("@jimp/plugin-mask", JSImport.Namespace)
   @js.native
-  def default(): Mask = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Mask = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Mask]
   
   @js.native
   trait Mask extends StObject {

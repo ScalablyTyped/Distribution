@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceExecutionSummary extends StObject {
   
   /**
     * An ID created by the system when PutComplianceItems was called. For example, CommandID is a valid execution ID. You can use this ID in subsequent calls.
     */
-  var ExecutionId: js.UndefOr[ComplianceExecutionId] = js.native
+  var ExecutionId: js.UndefOr[ComplianceExecutionId] = js.undefined
   
   /**
     * The time the execution ran as a datetime object that is saved in the following format: yyyy-MM-dd'T'HH:mm:ss'Z'.
     */
-  var ExecutionTime: DateTime = js.native
+  var ExecutionTime: DateTime
   
   /**
     * The type of execution. For example, Command is a valid execution type.
     */
-  var ExecutionType: js.UndefOr[ComplianceExecutionType] = js.native
+  var ExecutionType: js.UndefOr[ComplianceExecutionType] = js.undefined
 }
 object ComplianceExecutionSummary {
   

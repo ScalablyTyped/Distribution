@@ -2,17 +2,15 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Total extends StObject {
   
-  var author: Avatarurl = js.native
+  var author: Avatarurl
   
-  var total: Double = js.native
+  var total: Double
   
-  var weeks: js.Array[A] = js.native
+  var weeks: js.Array[A]
 }
 object Total {
   

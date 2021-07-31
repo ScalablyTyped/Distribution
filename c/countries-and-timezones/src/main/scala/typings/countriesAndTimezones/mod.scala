@@ -3,43 +3,39 @@ package typings.countriesAndTimezones
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("countries-and-timezones", "getAllCountries")
+  @JSImport("countries-and-timezones", JSImport.Namespace)
   @js.native
-  def getAllCountries(): StringDictionary[Country] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("countries-and-timezones", "getAllTimezones")
-  @js.native
-  def getAllTimezones(): StringDictionary[Timezone] = js.native
+  @scala.inline
+  def getAllCountries(): StringDictionary[Country] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllCountries")().asInstanceOf[StringDictionary[Country]]
   
-  @JSImport("countries-and-timezones", "getCountry")
-  @js.native
-  def getCountry(id: String): Country | Null = js.native
+  @scala.inline
+  def getAllTimezones(): StringDictionary[Timezone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAllTimezones")().asInstanceOf[StringDictionary[Timezone]]
   
-  @JSImport("countries-and-timezones", "getCountryForTimezone")
-  @js.native
-  def getCountryForTimezone(name: String): Country | Null = js.native
+  @scala.inline
+  def getCountry(id: String): Country | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountry")(id.asInstanceOf[js.Any]).asInstanceOf[Country | Null]
   
-  @JSImport("countries-and-timezones", "getTimezone")
-  @js.native
-  def getTimezone(name: String): Timezone | Null = js.native
+  @scala.inline
+  def getCountryForTimezone(name: String): Country | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getCountryForTimezone")(name.asInstanceOf[js.Any]).asInstanceOf[Country | Null]
   
-  @JSImport("countries-and-timezones", "getTimezonesForCountry")
-  @js.native
-  def getTimezonesForCountry(id: String): js.Array[Timezone] = js.native
+  @scala.inline
+  def getTimezone(name: String): Timezone | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezone")(name.asInstanceOf[js.Any]).asInstanceOf[Timezone | Null]
   
-  @js.native
+  @scala.inline
+  def getTimezonesForCountry(id: String): js.Array[Timezone] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezonesForCountry")(id.asInstanceOf[js.Any]).asInstanceOf[js.Array[Timezone]]
+  
   trait Country extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var timezones: js.Array[String] = js.native
+    var timezones: js.Array[String]
   }
   object Country {
     
@@ -66,28 +62,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Timezone extends StObject {
     
-    var aliasOf: String | Null = js.native
+    var aliasOf: String | Null
     
-    var country: String | Null = js.native
+    var country: String | Null
     
-    var dstOffset: Double = js.native
+    var dstOffset: Double
     
-    var dstOffsetStr: String = js.native
+    var dstOffsetStr: String
     
-    var name: String = js.native
+    var name: String
     
-    var utcOffset: Double = js.native
+    var utcOffset: Double
     
-    var utcOffsetStr: String = js.native
+    var utcOffsetStr: String
   }
   object Timezone {
     
     @scala.inline
     def apply(dstOffset: Double, dstOffsetStr: String, name: String, utcOffset: Double, utcOffsetStr: String): Timezone = {
-      val __obj = js.Dynamic.literal(dstOffset = dstOffset.asInstanceOf[js.Any], dstOffsetStr = dstOffsetStr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], utcOffset = utcOffset.asInstanceOf[js.Any], utcOffsetStr = utcOffsetStr.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(dstOffset = dstOffset.asInstanceOf[js.Any], dstOffsetStr = dstOffsetStr.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], utcOffset = utcOffset.asInstanceOf[js.Any], utcOffsetStr = utcOffsetStr.asInstanceOf[js.Any], aliasOf = null, country = null)
       __obj.asInstanceOf[Timezone]
     }
     

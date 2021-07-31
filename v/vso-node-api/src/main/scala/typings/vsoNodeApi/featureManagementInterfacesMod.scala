@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.anon.EnumValuesEnabled
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureManagementInterfacesMod {
@@ -16,28 +15,34 @@ object featureManagementInterfacesMod {
   object ContributedFeatureEnabledValue extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ContributedFeatureEnabledValue with Double] = js.native
+    def apply(value: Double): js.UndefOr[ContributedFeatureEnabledValue & Double] = js.native
     
     /**
       * The feature is disabled at the specified scope
       */
     @js.native
-    sealed trait Disabled extends ContributedFeatureEnabledValue
-    /* 0 */ val Disabled: typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureEnabledValue.Disabled with Double = js.native
+    sealed trait Disabled
+      extends StObject
+         with ContributedFeatureEnabledValue
+    /* 0 */ val Disabled: typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureEnabledValue.Disabled & Double = js.native
     
     /**
       * The feature is enabled at the specified scope
       */
     @js.native
-    sealed trait Enabled extends ContributedFeatureEnabledValue
-    /* 1 */ val Enabled: typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureEnabledValue.Enabled with Double = js.native
+    sealed trait Enabled
+      extends StObject
+         with ContributedFeatureEnabledValue
+    /* 1 */ val Enabled: typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureEnabledValue.Enabled & Double = js.native
     
     /**
       * The state of the feature is not set for the specified scope
       */
     @js.native
-    sealed trait Undefined extends ContributedFeatureEnabledValue
-    /* -1 */ val Undefined: typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureEnabledValue.Undefined with Double = js.native
+    sealed trait Undefined
+      extends StObject
+         with ContributedFeatureEnabledValue
+    /* -1 */ val Undefined: typings.vsoNodeApi.featureManagementInterfacesMod.ContributedFeatureEnabledValue.Undefined & Double = js.native
   }
   
   object TypeInfo {
@@ -66,53 +71,52 @@ object featureManagementInterfacesMod {
     def ContributedFeatureState_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ContributedFeatureState")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ContributedFeature extends StObject {
     
     /**
       * Named links describing the feature
       */
-    var _links: js.Any = js.native
+    var _links: js.Any
     
     /**
       * If true, the feature is enabled unless overridden at some scope
       */
-    var defaultState: Boolean = js.native
+    var defaultState: Boolean
     
     /**
       * Rules for setting the default value if not specified by any setting/scope. Evaluated in order until a rule returns an Enabled or Disabled state (not Undefined)
       */
-    var defaultValueRules: js.Array[ContributedFeatureValueRule] = js.native
+    var defaultValueRules: js.Array[ContributedFeatureValueRule]
     
     /**
       * The description of the feature
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * The full contribution id of the feature
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * The friendly name of the feature
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Rules for overriding a feature value. These rules are run before explicit user/host state values are checked. They are evaluated in order until a rule returns an Enabled or Disabled state (not Undefined)
       */
-    var overrideRules: js.Array[ContributedFeatureValueRule] = js.native
+    var overrideRules: js.Array[ContributedFeatureValueRule]
     
     /**
       * The scopes/levels at which settings can set the enabled/disabled state of this feature
       */
-    var scopes: js.Array[ContributedFeatureSettingScope] = js.native
+    var scopes: js.Array[ContributedFeatureSettingScope]
     
     /**
       * The service instance id of the service that owns this feature
       */
-    var serviceInstanceType: String = js.native
+    var serviceInstanceType: String
   }
   object ContributedFeature {
     
@@ -173,18 +177,17 @@ object featureManagementInterfacesMod {
     }
   }
   
-  @js.native
   trait ContributedFeatureSettingScope extends StObject {
     
     /**
       * The name of the settings scope to use when reading/writing the setting
       */
-    var settingScope: String = js.native
+    var settingScope: String
     
     /**
       * Whether this is a user-scope or this is a host-wide (all users) setting
       */
-    var userScoped: Boolean = js.native
+    var userScoped: Boolean
   }
   object ContributedFeatureSettingScope {
     
@@ -205,33 +208,32 @@ object featureManagementInterfacesMod {
     }
   }
   
-  @js.native
   trait ContributedFeatureState extends StObject {
     
     /**
       * The full contribution id of the feature
       */
-    var featureId: String = js.native
+    var featureId: String
     
     /**
       * True if the effective state was set by an override rule (indicating that the state cannot be managed by the end user)
       */
-    var overridden: Boolean = js.native
+    var overridden: Boolean
     
     /**
       * Reason that the state was set (by a plugin/rule).
       */
-    var reason: String = js.native
+    var reason: String
     
     /**
       * The scope at which this state applies
       */
-    var scope: ContributedFeatureSettingScope = js.native
+    var scope: ContributedFeatureSettingScope
     
     /**
       * The current state of this feature
       */
-    var state: ContributedFeatureEnabledValue = js.native
+    var state: ContributedFeatureEnabledValue
   }
   object ContributedFeatureState {
     
@@ -267,23 +269,22 @@ object featureManagementInterfacesMod {
     }
   }
   
-  @js.native
   trait ContributedFeatureStateQuery extends StObject {
     
     /**
       * The list of feature ids to query
       */
-    var featureIds: js.Array[String] = js.native
+    var featureIds: js.Array[String]
     
     /**
       * The query result containing the current feature states for each of the queried feature ids
       */
-    var featureStates: StringDictionary[ContributedFeatureState] = js.native
+    var featureStates: StringDictionary[ContributedFeatureState]
     
     /**
       * A dictionary of scope values (project name, etc.) to use in the query (if querying across scopes)
       */
-    var scopeValues: StringDictionary[String] = js.native
+    var scopeValues: StringDictionary[String]
   }
   object ContributedFeatureStateQuery {
     
@@ -314,18 +315,17 @@ object featureManagementInterfacesMod {
     }
   }
   
-  @js.native
   trait ContributedFeatureValueRule extends StObject {
     
     /**
       * Name of the IContributedFeatureValuePlugin to run
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Properties to feed to the IContributedFeatureValuePlugin
       */
-    var properties: StringDictionary[js.Any] = js.native
+    var properties: StringDictionary[js.Any]
   }
   object ContributedFeatureValueRule {
     

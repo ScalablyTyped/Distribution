@@ -2,17 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ShorthandPropertyAssignment
-  extends ObjectLiteralElement
+  extends StObject
+     with ObjectLiteralElement
      with JSDocContainer
+     with HasJSDoc
      with ObjectBindingOrAssignmentElement
      with ObjectLiteralElementLike
-     with VariableLikeDeclaration
-     with _HasJSDoc {
+     with VariableLikeDeclaration {
   
   val equalsToken: js.UndefOr[EqualsToken] = js.native
   

@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpsAggregator extends StObject {
   
   /**
     * Either a Range or Count aggregator for limiting an OpsItem summary.
     */
-  var AggregatorType: js.UndefOr[OpsAggregatorType] = js.native
+  var AggregatorType: js.UndefOr[OpsAggregatorType] = js.undefined
   
   /**
     * A nested aggregator for viewing counts of OpsItems.
     */
-  var Aggregators: js.UndefOr[OpsAggregatorList] = js.native
+  var Aggregators: js.UndefOr[OpsAggregatorList] = js.undefined
   
   /**
     * The name of an OpsItem attribute on which to limit the count of OpsItems.
     */
-  var AttributeName: js.UndefOr[OpsDataAttributeName] = js.native
+  var AttributeName: js.UndefOr[OpsDataAttributeName] = js.undefined
   
   /**
     * The aggregator filters.
     */
-  var Filters: js.UndefOr[OpsFilterList] = js.native
+  var Filters: js.UndefOr[OpsFilterList] = js.undefined
   
   /**
     * The data type name to use for viewing counts of OpsItems.
     */
-  var TypeName: js.UndefOr[OpsDataTypeName] = js.native
+  var TypeName: js.UndefOr[OpsDataTypeName] = js.undefined
   
   /**
     * The aggregator value.
     */
-  var Values: js.UndefOr[OpsAggregatorValueMap] = js.native
+  var Values: js.UndefOr[OpsAggregatorValueMap] = js.undefined
 }
 object OpsAggregator {
   

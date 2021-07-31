@@ -2,19 +2,17 @@ package typings.googleapis.translateV2Mod.translateV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The main language translation response message.
   */
-@js.native
 trait SchemaTranslationsListResponse extends StObject {
   
   /**
     * Translations contains list of translation results of given text
     */
-  var translations: js.UndefOr[js.Array[SchemaTranslationsResource]] = js.native
+  var translations: js.UndefOr[js.Array[SchemaTranslationsResource]] = js.undefined
 }
 object SchemaTranslationsListResponse {
   

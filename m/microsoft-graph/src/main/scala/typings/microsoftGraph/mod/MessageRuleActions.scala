@@ -2,44 +2,42 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageRuleActions extends StObject {
   
   // A list of categories to be assigned to a message.
-  var assignCategories: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var assignCategories: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // The ID of a folder that a message is to be copied to.
-  var copyToFolder: js.UndefOr[NullableOption[String]] = js.native
+  var copyToFolder: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether a message should be moved to the Deleted Items folder.
-  var delete: js.UndefOr[NullableOption[Boolean]] = js.native
+  var delete: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The email addresses of the recipients to which a message should be forwarded as an attachment.
-  var forwardAsAttachmentTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var forwardAsAttachmentTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   // The email addresses of the recipients to which a message should be forwarded.
-  var forwardTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var forwardTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   // Indicates whether a message should be marked as read.
-  var markAsRead: js.UndefOr[NullableOption[Boolean]] = js.native
+  var markAsRead: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Sets the importance of the message, which can be: low, normal, high.
-  var markImportance: js.UndefOr[NullableOption[Importance]] = js.native
+  var markImportance: js.UndefOr[NullableOption[Importance]] = js.undefined
   
   // The ID of the folder that a message will be moved to.
-  var moveToFolder: js.UndefOr[NullableOption[String]] = js.native
+  var moveToFolder: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates whether a message should be permanently deleted and not saved to the Deleted Items folder.
-  var permanentDelete: js.UndefOr[NullableOption[Boolean]] = js.native
+  var permanentDelete: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The email addresses to which a message should be redirected.
-  var redirectTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.native
+  var redirectTo: js.UndefOr[NullableOption[js.Array[Recipient]]] = js.undefined
   
   // Indicates whether subsequent rules should be evaluated.
-  var stopProcessingRules: js.UndefOr[NullableOption[Boolean]] = js.native
+  var stopProcessingRules: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object MessageRuleActions {
   

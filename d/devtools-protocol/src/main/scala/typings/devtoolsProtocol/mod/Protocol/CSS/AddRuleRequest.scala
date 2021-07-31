@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddRuleRequest extends StObject {
   
   /**
     * Text position of a new rule in the target style sheet.
     */
-  var location: SourceRange = js.native
+  var location: SourceRange
   
   /**
     * The text of a new rule.
     */
-  var ruleText: String = js.native
+  var ruleText: String
   
   /**
     * The css style sheet identifier where a new rule should be inserted.
     */
-  var styleSheetId: StyleSheetId = js.native
+  var styleSheetId: StyleSheetId
 }
 object AddRuleRequest {
   

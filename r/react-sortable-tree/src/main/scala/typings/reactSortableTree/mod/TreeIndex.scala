@@ -2,13 +2,11 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeIndex extends StObject {
   
-  var treeIndex: Double = js.native
+  var treeIndex: Double
 }
 object TreeIndex {
   

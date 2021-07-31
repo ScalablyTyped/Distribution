@@ -12,7 +12,7 @@ Mic input activity detection
 | Keywords           | voice, voice activity, mic |
 | # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 7223 |
+| # downloads        | 9900 |
 | # stars            | 2 |
 
 ## Links

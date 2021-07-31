@@ -2,10 +2,8 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
   def openDatabase(
@@ -13,9 +11,9 @@ trait Window extends StObject {
     database_version: String,
     database_displayname: String,
     database_size: Double
-  ): Database = js.native
+  ): Database
   
-  var requestFileSystem: js.Any = js.native
+  var requestFileSystem: js.Any
 }
 object Window {
   

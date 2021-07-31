@@ -2,20 +2,18 @@ package typings.reactTable.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  aggregate :react-table.react-table.Aggregator<D>,   Aggregated :react-table.react-table.Renderer<react-table.react-table.CellProps<D, any>>,   disableGroupBy :boolean,   defaultCanGroupBy :boolean}> */
-@js.native
 trait UseGroupByColumnOptions[D /* <: js.Object */] extends StObject {
   
-  var Aggregated: js.UndefOr[Renderer[CellProps[D, _]]] = js.native
+  var Aggregated: js.UndefOr[Renderer[CellProps[D, js.Any]]] = js.undefined
   
-  var aggregate: js.UndefOr[Aggregator[D]] = js.native
+  var aggregate: js.UndefOr[Aggregator[D]] = js.undefined
   
-  var defaultCanGroupBy: js.UndefOr[Boolean] = js.native
+  var defaultCanGroupBy: js.UndefOr[Boolean] = js.undefined
   
-  var disableGroupBy: js.UndefOr[Boolean] = js.native
+  var disableGroupBy: js.UndefOr[Boolean] = js.undefined
 }
 object UseGroupByColumnOptions {
   
@@ -26,7 +24,7 @@ object UseGroupByColumnOptions {
   }
   
   @scala.inline
-  implicit class UseGroupByColumnOptionsMutableBuilder[Self <: UseGroupByColumnOptions[_], D /* <: js.Object */] (val x: Self with UseGroupByColumnOptions[D]) extends AnyVal {
+  implicit class UseGroupByColumnOptionsMutableBuilder[Self <: UseGroupByColumnOptions[?], D /* <: js.Object */] (val x: Self & UseGroupByColumnOptions[D]) extends AnyVal {
     
     @scala.inline
     def setAggregate(value: Aggregator[D]): Self = StObject.set(x, "aggregate", value.asInstanceOf[js.Any])
@@ -40,7 +38,7 @@ object UseGroupByColumnOptions {
     def setAggregateUndefined: Self = StObject.set(x, "aggregate", js.undefined)
     
     @scala.inline
-    def setAggregated(value: Renderer[CellProps[D, _]]): Self = StObject.set(x, "Aggregated", value.asInstanceOf[js.Any])
+    def setAggregated(value: Renderer[CellProps[D, js.Any]]): Self = StObject.set(x, "Aggregated", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAggregatedUndefined: Self = StObject.set(x, "Aggregated", js.undefined)

@@ -2,15 +2,15 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlPutFilter[T] extends Generic {
+trait MlPutFilter[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var filter_id: String = js.native
+  var filter_id: String
 }
 object MlPutFilter {
   
@@ -21,7 +21,7 @@ object MlPutFilter {
   }
   
   @scala.inline
-  implicit class MlPutFilterMutableBuilder[Self <: MlPutFilter[_], T] (val x: Self with MlPutFilter[T]) extends AnyVal {
+  implicit class MlPutFilterMutableBuilder[Self <: MlPutFilter[?], T] (val x: Self & MlPutFilter[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

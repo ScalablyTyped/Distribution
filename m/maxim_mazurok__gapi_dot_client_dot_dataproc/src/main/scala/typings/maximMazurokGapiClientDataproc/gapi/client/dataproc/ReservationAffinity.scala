@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationAffinity extends StObject {
   
   /** Optional. Type of reservation to consume */
-  var consumeReservationType: js.UndefOr[String] = js.native
+  var consumeReservationType: js.UndefOr[String] = js.undefined
   
   /** Optional. Corresponds to the label key of reservation resource. */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /** Optional. Corresponds to the label values of reservation resource. */
-  var values: js.UndefOr[js.Array[String]] = js.native
+  var values: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ReservationAffinity {
   

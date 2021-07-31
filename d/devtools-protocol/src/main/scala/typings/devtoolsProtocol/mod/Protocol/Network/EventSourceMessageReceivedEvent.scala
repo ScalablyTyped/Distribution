@@ -2,36 +2,34 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSourceMessageReceivedEvent extends StObject {
   
   /**
     * Message content.
     */
-  var data: String = js.native
+  var data: String
   
   /**
     * Message identifier.
     */
-  var eventId: String = js.native
+  var eventId: String
   
   /**
     * Message type.
     */
-  var eventName: String = js.native
+  var eventName: String
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Timestamp.
     */
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
 }
 object EventSourceMessageReceivedEvent {
   

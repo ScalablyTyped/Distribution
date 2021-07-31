@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLSerializer extends StObject {
   
   @JSName("MSHTML.XMLSerializer_typekey")
-  var MSHTMLDotXMLSerializer_typekey: XMLSerializer = js.native
+  var MSHTMLDotXMLSerializer_typekey: XMLSerializer
   
-  def serializeToString(pNode: IHTMLDOMNode): String = js.native
+  def serializeToString(pNode: IHTMLDOMNode): String
 }
 object XMLSerializer {
   

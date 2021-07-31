@@ -2,51 +2,49 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnStatisticsData extends StObject {
   
   /**
     * Binary column statistics data.
     */
-  var BinaryColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.BinaryColumnStatisticsData] = js.native
+  var BinaryColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.BinaryColumnStatisticsData] = js.undefined
   
   /**
     * Boolean column statistics data.
     */
-  var BooleanColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.BooleanColumnStatisticsData] = js.native
+  var BooleanColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.BooleanColumnStatisticsData] = js.undefined
   
   /**
     * Date column statistics data.
     */
-  var DateColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.DateColumnStatisticsData] = js.native
+  var DateColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.DateColumnStatisticsData] = js.undefined
   
   /**
     * Decimal column statistics data.
     */
-  var DecimalColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.DecimalColumnStatisticsData] = js.native
+  var DecimalColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.DecimalColumnStatisticsData] = js.undefined
   
   /**
     * Double column statistics data.
     */
-  var DoubleColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.DoubleColumnStatisticsData] = js.native
+  var DoubleColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.DoubleColumnStatisticsData] = js.undefined
   
   /**
     * Long column statistics data.
     */
-  var LongColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.LongColumnStatisticsData] = js.native
+  var LongColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.LongColumnStatisticsData] = js.undefined
   
   /**
     * String column statistics data.
     */
-  var StringColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.StringColumnStatisticsData] = js.native
+  var StringColumnStatisticsData: js.UndefOr[typings.awsSdk.glueMod.StringColumnStatisticsData] = js.undefined
   
   /**
     * The type of column statistics data.
     */
-  var Type: ColumnStatisticsType = js.native
+  var Type: ColumnStatisticsType
 }
 object ColumnStatisticsData {
   

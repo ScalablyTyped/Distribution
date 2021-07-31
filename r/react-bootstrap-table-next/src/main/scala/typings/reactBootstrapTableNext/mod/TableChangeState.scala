@@ -7,25 +7,23 @@ import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.asc
 import typings.reactBootstrapTableNext.reactBootstrapTableNextStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableChangeState[T] extends StObject {
   
-  var cellEdit: DataField = js.native
+  var cellEdit: DataField
   
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
   
-  var filters: StringDictionary[Comparator] = js.native
+  var filters: StringDictionary[Comparator]
   
-  var page: Double = js.native
+  var page: Double
   
-  var sizePerPage: Double = js.native
+  var sizePerPage: Double
   
-  var sortField: String = js.native
+  var sortField: String
   
-  var sortOrder: asc | desc = js.native
+  var sortOrder: asc | desc
 }
 object TableChangeState {
   
@@ -44,7 +42,7 @@ object TableChangeState {
   }
   
   @scala.inline
-  implicit class TableChangeStateMutableBuilder[Self <: TableChangeState[_], T] (val x: Self with TableChangeState[T]) extends AnyVal {
+  implicit class TableChangeStateMutableBuilder[Self <: TableChangeState[?], T] (val x: Self & TableChangeState[T]) extends AnyVal {
     
     @scala.inline
     def setCellEdit(value: DataField): Self = StObject.set(x, "cellEdit", value.asInstanceOf[js.Any])

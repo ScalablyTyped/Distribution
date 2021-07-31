@@ -2,36 +2,33 @@ package typings.sharedb.sharedbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined sharedb.sharedb/lib/sharedb.RawOp & {  op :std.Array<sharedb.sharedb/lib/sharedb.Op>,   create :undefined,   del :undefined} */
-@js.native
-trait EditOp extends StObject {
+trait EditOp
+  extends StObject
+     with RawOp {
   
-  var c: String = js.native
+  var create: Unit
   
-  var create: js.UndefOr[scala.Nothing] = js.native
+  var del: Unit
   
-  var d: String = js.native
-  
-  var del: js.UndefOr[scala.Nothing] = js.native
-  
-  var m: js.Any = js.native
-  
-  var op: js.Array[Op] = js.native
-  
-  var seq: Double = js.native
-  
-  var src: String = js.native
-  
-  var v: Double = js.native
+  var op: js.Array[Op]
 }
 object EditOp {
   
   @scala.inline
-  def apply(c: String, d: String, m: js.Any, op: js.Array[Op], seq: Double, src: String, v: Double): EditOp = {
-    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
+  def apply(
+    c: String,
+    create: Unit,
+    d: String,
+    del: Unit,
+    m: js.Any,
+    op: js.Array[Op],
+    seq: Double,
+    src: String,
+    v: Double
+  ): EditOp = {
+    val __obj = js.Dynamic.literal(c = c.asInstanceOf[js.Any], create = create.asInstanceOf[js.Any], d = d.asInstanceOf[js.Any], del = del.asInstanceOf[js.Any], m = m.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], seq = seq.asInstanceOf[js.Any], src = src.asInstanceOf[js.Any], v = v.asInstanceOf[js.Any])
     __obj.asInstanceOf[EditOp]
   }
   
@@ -39,27 +36,15 @@ object EditOp {
   implicit class EditOpMutableBuilder[Self <: EditOp] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setC(value: String): Self = StObject.set(x, "c", value.asInstanceOf[js.Any])
+    def setCreate(value: Unit): Self = StObject.set(x, "create", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setD(value: String): Self = StObject.set(x, "d", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setM(value: js.Any): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])
+    def setDel(value: Unit): Self = StObject.set(x, "del", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOp(value: js.Array[Op]): Self = StObject.set(x, "op", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOpVarargs(value: Op*): Self = StObject.set(x, "op", js.Array(value :_*))
-    
-    @scala.inline
-    def setSeq(value: Double): Self = StObject.set(x, "seq", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setSrc(value: String): Self = StObject.set(x, "src", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setV(value: Double): Self = StObject.set(x, "v", value.asInstanceOf[js.Any])
   }
 }

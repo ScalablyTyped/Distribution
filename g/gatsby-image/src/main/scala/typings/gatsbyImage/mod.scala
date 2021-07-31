@@ -7,7 +7,6 @@ import typings.gatsbyImage.gatsbyImageStrings.eager
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,26 +16,25 @@ object mod {
   class default ()
     extends Component[GatsbyImageProps, js.Any, js.Any]
   
-  @js.native
   trait FixedObject extends StObject {
     
-    var base64: js.UndefOr[String] = js.native
+    var base64: js.UndefOr[String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var src: String = js.native
+    var src: String
     
-    var srcSet: String = js.native
+    var srcSet: String
     
-    var srcSetWebp: js.UndefOr[String] = js.native
+    var srcSetWebp: js.UndefOr[String] = js.undefined
     
-    var srcWebp: js.UndefOr[String] = js.native
+    var srcWebp: js.UndefOr[String] = js.undefined
     
-    var tracedSVG: js.UndefOr[String] = js.native
+    var tracedSVG: js.UndefOr[String] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object FixedObject {
     
@@ -93,26 +91,25 @@ object mod {
     }
   }
   
-  @js.native
   trait FluidObject extends StObject {
     
-    var aspectRatio: Double = js.native
+    var aspectRatio: Double
     
-    var base64: js.UndefOr[String] = js.native
+    var base64: js.UndefOr[String] = js.undefined
     
-    var media: js.UndefOr[String] = js.native
+    var media: js.UndefOr[String] = js.undefined
     
-    var sizes: String = js.native
+    var sizes: String
     
-    var src: String = js.native
+    var src: String
     
-    var srcSet: String = js.native
+    var srcSet: String
     
-    var srcSetWebp: js.UndefOr[String] = js.native
+    var srcSetWebp: js.UndefOr[String] = js.undefined
     
-    var srcWebp: js.UndefOr[String] = js.native
+    var srcWebp: js.UndefOr[String] = js.undefined
     
-    var tracedSVG: js.UndefOr[String] = js.native
+    var tracedSVG: js.UndefOr[String] = js.undefined
   }
   object FluidObject {
     
@@ -171,12 +168,12 @@ object mod {
   
   type GatsbyImage = Component[GatsbyImageProps, js.Any, js.Any]
   
-  @js.native
   trait GatsbyImageFixedProps
-    extends GatsbyImageOptionalProps
+    extends StObject
+       with GatsbyImageOptionalProps
        with GatsbyImageProps {
     
-    var fixed: FixedObject | js.Array[FixedObject] = js.native
+    var fixed: FixedObject | js.Array[FixedObject]
   }
   object GatsbyImageFixedProps {
     
@@ -197,12 +194,12 @@ object mod {
     }
   }
   
-  @js.native
   trait GatsbyImageFluidProps
-    extends GatsbyImageOptionalProps
+    extends StObject
+       with GatsbyImageOptionalProps
        with GatsbyImageProps {
     
-    var fluid: FluidObject | js.Array[FluidObject] = js.native
+    var fluid: FluidObject | js.Array[FluidObject]
   }
   object GatsbyImageFluidProps {
     
@@ -223,56 +220,55 @@ object mod {
     }
   }
   
-  @js.native
   trait GatsbyImageOptionalProps extends StObject {
     
-    var Tag: js.UndefOr[String] = js.native
+    var Tag: js.UndefOr[String] = js.undefined
     
-    var alt: js.UndefOr[String] = js.native
+    var alt: js.UndefOr[String] = js.undefined
     
-    var backgroundColor: js.UndefOr[String | Boolean] = js.native
+    var backgroundColor: js.UndefOr[String | Boolean] = js.undefined
     
-    var className: js.UndefOr[String | js.Object] = js.native
+    var className: js.UndefOr[String | js.Object] = js.undefined
     
-    var critical: js.UndefOr[Boolean] = js.native
+    var critical: js.UndefOr[Boolean] = js.undefined
     
-    var crossOrigin: js.UndefOr[String | Boolean] = js.native
+    var crossOrigin: js.UndefOr[String | Boolean] = js.undefined
     
-    var draggable: js.UndefOr[Boolean] = js.native
+    var draggable: js.UndefOr[Boolean] = js.undefined
     
-    var durationFadeIn: js.UndefOr[Double] = js.native
+    var durationFadeIn: js.UndefOr[Double] = js.undefined
     
-    var fadeIn: js.UndefOr[Boolean] = js.native
+    var fadeIn: js.UndefOr[Boolean] = js.undefined
     
-    var imgStyle: js.UndefOr[js.Object] = js.native
+    var imgStyle: js.UndefOr[js.Object] = js.undefined
     
-    var itemProp: js.UndefOr[String] = js.native
+    var itemProp: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[auto | `lazy` | eager] = js.native
+    var loading: js.UndefOr[auto | `lazy` | eager] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onStartLoad: js.UndefOr[js.Function1[/* param */ WasCached, Unit]] = js.native
+    var onStartLoad: js.UndefOr[js.Function1[/* param */ WasCached, Unit]] = js.undefined
     
-    var placeholderClassName: js.UndefOr[String] = js.native
+    var placeholderClassName: js.UndefOr[String] = js.undefined
     
-    var placeholderStyle: js.UndefOr[js.Object] = js.native
+    var placeholderStyle: js.UndefOr[js.Object] = js.undefined
     
     /**
       * @deprecated Use `fixed`
       */
-    var resolutions: js.UndefOr[FixedObject] = js.native
+    var resolutions: js.UndefOr[FixedObject] = js.undefined
     
     /**
       * @deprecated Use `fluid`
       */
-    var sizes: js.UndefOr[FluidObject] = js.native
+    var sizes: js.UndefOr[FluidObject] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object GatsbyImageOptionalProps {
     

@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service contains the collection of automatic style families within the container document. */
-@js.native
 trait XAutoStyles
-  extends XNameAccess
+  extends StObject
+     with XNameAccess
      with XIndexAccess
 object XAutoStyles {
   

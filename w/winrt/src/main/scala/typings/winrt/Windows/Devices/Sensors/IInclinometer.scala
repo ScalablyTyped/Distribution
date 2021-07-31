@@ -2,19 +2,17 @@ package typings.winrt.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IInclinometer extends StObject {
   
-  def getCurrentReading(): InclinometerReading = js.native
+  def getCurrentReading(): InclinometerReading
   
-  var minimumReportInterval: Double = js.native
+  var minimumReportInterval: Double
   
-  var onreadingchanged: js.Any = js.native
+  var onreadingchanged: js.Any
   
-  var reportInterval: Double = js.native
+  var reportInterval: Double
 }
 object IInclinometer {
   

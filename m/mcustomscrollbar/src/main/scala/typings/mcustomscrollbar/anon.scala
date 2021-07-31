@@ -7,12 +7,10 @@ import typings.mcustomscrollbar.mcustomscrollbarStrings.x
 import typings.mcustomscrollbar.mcustomscrollbarStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AlwaysTriggerOffsets extends StObject {
     
     /**
@@ -20,94 +18,94 @@ object anon {
       * By default, callback offsets will trigger repeatedly while content is scrolling within the offsets.
       * Set alwaysTriggerOffsets: false when you need to trigger onTotalScroll and onTotalScrollBack callbacks once, each time scroll end or beginning is reached.
       */
-    var alwaysTriggerOffsets: js.UndefOr[Boolean] = js.native
+    var alwaysTriggerOffsets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A function to call right before scrollbar(s) are updated.
       */
-    var onBeforeUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+    var onBeforeUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when plugin markup is created.
       */
-    var onCreate: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCreate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call each time an image inside the element is fully loaded and scrollbar(s) are updated.
       */
-    var onImageLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onImageLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when scrollbars have initialized
       */
-    var onInit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onInit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when content becomes wide enough and horizontal scrollbar is added.
       */
-    var onOverflowX: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOverflowX: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when content becomes narrow enough and horizontal scrollbar is removed.
       */
-    var onOverflowXNone: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOverflowXNone: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when content becomes long enough and vertical scrollbar is added.
       */
-    var onOverflowY: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOverflowY: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when content becomes short enough and vertical scrollbar is removed.
       */
-    var onOverflowYNone: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOverflowYNone: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * User defined callback function, triggered on scroll event. Call your own function(s) each time a scroll event completes
       */
-    var onScroll: js.UndefOr[js.Function0[Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * User defined callback function, triggered on scroll start event. You can call your own function(s) each time a scroll event begins
       */
-    var onScrollStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onScrollStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call each time a type of element is added, removed or changes its size and scrollbar(s) are updated.
       */
-    var onSelectorChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSelectorChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when scrolling is completed and content is scrolled all the way to the end (bottom/right)
       */
-    var onTotalScroll: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTotalScroll: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * A function to call when scrolling is completed and content is scrolled back to the beginning (top/left)
       */
-    var onTotalScrollBack: js.UndefOr[js.Function0[Unit]] = js.native
+    var onTotalScrollBack: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Set an offset for which the onTotalScrollBack callback is triggered.
       * Its value is in pixels
       */
-    var onTotalScrollBackOffset: js.UndefOr[Double] = js.native
+    var onTotalScrollBackOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * Set an offset for which the onTotalScroll callback is triggered.
       * Its value is in pixels.
       */
-    var onTotalScrollOffset: js.UndefOr[Double] = js.native
+    var onTotalScrollOffset: js.UndefOr[Double] = js.undefined
     
     /**
       * A function to call when scrollbar(s) are updated.
       */
-    var onUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+    var onUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * User defined callback function, triggered while scrolling
       */
-    var whileScrolling: js.UndefOr[js.Function0[Unit]] = js.native
+    var whileScrolling: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object AlwaysTriggerOffsets {
     
@@ -230,14 +228,13 @@ object anon {
     }
   }
   
-  @js.native
   trait AutoExpandHorizontalScroll extends StObject {
     
     /**
       * Auto-expanding content's width on horizontal scrollbars, values: true, false. Set to true if you have horizontal scrollbr on content that change on-the-fly. Demo contains
       * blocks with images and horizontal scrollbars that use this option parameter
       */
-    var autoExpandHorizontalScroll: js.UndefOr[Boolean] = js.native
+    var autoExpandHorizontalScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the list of elements/selectors that will auto-scroll content to their position when focused.
@@ -247,48 +244,48 @@ object anon {
       * Default:
       *   "input,textarea,select,button,datalist,keygen,a[tabindex],area,object,[contenteditable='true']"
       */
-    var autoScrollOnFocus: js.UndefOr[Boolean | String] = js.native
+    var autoScrollOnFocus: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * Set the auto-update timeout in milliseconds.
       * Default timeout: 60
       */            
-    var autoUpdateTimeout: js.UndefOr[Double] = js.native
+    var autoUpdateTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Add extra selector(s) that’ll release scrollbar dragging upon mouseup, pointerup, touchend etc.
       * Example: extraDraggableSelectors: ".myClass, #myID"
       */
-    var extraDraggableSelectors: js.UndefOr[String] = js.native
+    var extraDraggableSelectors: js.UndefOr[String] = js.undefined
     
     /**
       * Normalize mouse wheel delta (-1/1), values: true, false
       */
-    var normalizeMouseWheelDelta: js.UndefOr[Boolean] = js.native
+    var normalizeMouseWheelDelta: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Add extra selector(s) that’ll allow scrollbar dragging upon mousemove/up, pointermove/up, touchend etc.
       * Example: releaseDraggableSelectors: ".myClass, #myID"
       */
-    var releaseDraggableSelectors: js.UndefOr[String] = js.native
+    var releaseDraggableSelectors: js.UndefOr[String] = js.undefined
     
     /**
       * Update scrollbars on browser resize (for fluid content blocks and layouts based on percentages), values: true, false. Set to false only when you content has fixed dimensions
       */
-    var updateOnBrowserResize: js.UndefOr[Boolean] = js.native
+    var updateOnBrowserResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Auto-update scrollbars on content resize (useful when adding/changing content progrmatically), value: true, false. Setting this to true makes the script check for content
       * length changes (every few milliseconds) and automatically call plugin's update method to adjust the scrollbar accordingly
       */
-    var updateOnContentResize: js.UndefOr[Boolean] = js.native
+    var updateOnContentResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Update scrollbar(s) automatically each time an image inside the element is fully loaded.
       * Default value is auto which triggers the function only on "x" and "yx" axis (if needed).
       * The value should be true when your content contains images and you need the function to trigger on any axis.
       */
-    var updateOnImageLoad: js.UndefOr[auto | Boolean] = js.native
+    var updateOnImageLoad: js.UndefOr[auto | Boolean] = js.undefined
     
     /**
       * Update scrollbar(s) automatically when the amount and size of specific selectors changes.
@@ -297,7 +294,7 @@ object anon {
       * Setting the value to true, will update scrollbars each time any element is changed.
       * To disable (default) set to false.
       */
-    var updateOnSelectorChange: js.UndefOr[String | Boolean] = js.native
+    var updateOnSelectorChange: js.UndefOr[String | Boolean] = js.undefined
   }
   object AutoExpandHorizontalScroll {
     
@@ -372,54 +369,53 @@ object anon {
     }
   }
   
-  @js.native
   trait Axis extends StObject {
     
     /**
       * Define the mouse-wheel scrolling axis when both vertical and horizontal scrollbars are present.
       * Set axis: "y" (default) for vertical or axis: "x" for horizontal scrolling.
       */
-    var axis: js.UndefOr[x | y] = js.native
+    var axis: js.UndefOr[x | y] = js.undefined
     
     /**
       * Set the number of pixels one wheel notch scrolls. The default value “auto” uses the OS/browser value.
       */
-    var deltaFactor: js.UndefOr[Double] = js.native
+    var deltaFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * Set the tags that disable mouse-wheel when cursor is over them.
       * Default value: ["select","option","keygen","datalist","textarea"]
       */
-    var disableOver: js.UndefOr[js.Array[String]] = js.native
+    var disableOver: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Enable or disable content scrolling via mouse-wheel.
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Invert mouse-wheel scrolling direction.
       * Set to true to scroll down or right when mouse-wheel is turned upwards.
       */
-    var invert: js.UndefOr[Boolean] = js.native
+    var invert: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable or disable mouse-wheel (delta) acceleration.
       * Setting normalizeDelta: true translates mouse-wheel delta value to -1 or 1.
       */
-    var normalizeDelta: js.UndefOr[Boolean] = js.native
+    var normalizeDelta: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevent the default behaviour which automatically scrolls the parent element when end
       * or beginning of scrolling is reached (same bahavior with browser’s native scrollbar).
       */
-    var preventDefault: js.UndefOr[Boolean] = js.native
+    var preventDefault: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the mouse-wheel scrolling amount (in pixels).
       * The default value "auto" adjusts scrolling amount according to scrollable content length.
       */
-    var scrollAmount: js.UndefOr[auto | Double] = js.native
+    var scrollAmount: js.UndefOr[auto | Double] = js.undefined
   }
   object Axis {
     
@@ -485,26 +481,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Enable extends StObject {
     
     /**
       * Enable or disable content scrolling via keyboard.
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set the keyboard arrows scrolling amount (in pixels). 
       * The default value "auto" adjusts scrolling amount according to scrollable content length.
       */
-    var scrollAmount: js.UndefOr[auto | Double] = js.native
+    var scrollAmount: js.UndefOr[auto | Double] = js.undefined
     
     /**
       * Define the buttons scrolling type/behavior.
       * scrollType: "stepless" – continuously scroll content while pressing the button (default)
       * scrollType: "stepped" – each button click scrolls content by a certain amount (defined in scrollAmount option above)
       */
-    var scrollType: js.UndefOr[stepless | stepped] = js.native
+    var scrollType: js.UndefOr[stepless | stepped] = js.undefined
   }
   object Enable {
     
@@ -537,30 +532,29 @@ object anon {
     }
   }
   
-  @js.native
   trait ScrollAmount extends StObject {
     
     /**
       * Enable or disable scroll buttons.
       */
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Scroll buttons pixels scrolling amount, value in pixels or "auto"
       */
-    var scrollAmount: js.UndefOr[auto | Double] = js.native
+    var scrollAmount: js.UndefOr[auto | Double] = js.undefined
     
     /**
       * Define the buttons scrolling type/behavior.
       * scrollType: "stepless" – continuously scroll content while pressing the button (default)
       * scrollType: "stepped" – each button click scrolls content by a certain amount (defined in scrollAmount option above)
       */
-    var scrollType: js.UndefOr[stepless | stepped] = js.native
+    var scrollType: js.UndefOr[stepless | stepped] = js.undefined
     
     /**
       * Set a tabindex value for the buttons.
       */
-    var tabindex: js.UndefOr[Double] = js.native
+    var tabindex: js.UndefOr[Double] = js.undefined
   }
   object ScrollAmount {
     

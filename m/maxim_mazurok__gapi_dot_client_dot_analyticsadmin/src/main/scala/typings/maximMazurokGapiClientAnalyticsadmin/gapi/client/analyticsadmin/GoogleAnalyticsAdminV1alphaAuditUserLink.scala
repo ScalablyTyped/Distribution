@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalyticsadmin.gapi.client.analyticsadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleAnalyticsAdminV1alphaAuditUserLink extends StObject {
   
   /**
     * Roles directly assigned to this user for this entity. Format: predefinedRoles/read Excludes roles that are inherited from an account (if this is for a property), group, or
     * organization admin role.
     */
-  var directRoles: js.UndefOr[js.Array[String]] = js.native
+  var directRoles: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Union of all permissions a user has at this account or property (includes direct permissions, group-inherited permissions, etc.). Format: predefinedRoles/read */
-  var effectiveRoles: js.UndefOr[js.Array[String]] = js.native
+  var effectiveRoles: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Email address of the linked user */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /** Example format: properties/1234/userLinks/5678 */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleAnalyticsAdminV1alphaAuditUserLink {
   

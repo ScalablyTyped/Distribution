@@ -5,28 +5,26 @@ import typings.stripe.stripeStrings.inactive
 import typings.stripe.stripeStrings.pending
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cardpayments extends StObject {
   
   /**
     * The status of the card payments capability of the account, or whether
     * the account can directly process credit and debit card charges.
     */
-  var card_payments: js.UndefOr[active | inactive | pending] = js.native
+  var card_payments: js.UndefOr[active | inactive | pending] = js.undefined
   
   /**
     * The status of the legacy payments capability of the account.
     */
-  var legacy_payments: js.UndefOr[active | inactive | pending] = js.native
+  var legacy_payments: js.UndefOr[active | inactive | pending] = js.undefined
   
   /**
     * The status of the transfers capability of the account, or whether your
     * platform can transfer funds to the account.
     */
-  var transfers: js.UndefOr[active | inactive | pending] = js.native
+  var transfers: js.UndefOr[active | inactive | pending] = js.undefined
 }
 object Cardpayments {
   

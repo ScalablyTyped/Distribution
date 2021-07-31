@@ -2,13 +2,11 @@ package typings.aureliaDependencyInjection.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] extends StObject {
   
-  def invoke(container: Container, fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs], dependencies: TArgs): ImplOrAny[TImpl] = js.native
+  def invoke(container: Container, fn: DependencyCtorOrFunctor[TBase, TImpl, TArgs], dependencies: TArgs): ImplOrAny[TImpl]
   
   def invokeWithDynamicDependencies(
     container: Container,
@@ -19,7 +17,7 @@ trait Invoker_[TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] ex
     dynamicDependencies: js.Array[
       /* import warning: importer.ImportType#apply Failed type conversion: TArgs[number] */ js.Any
     ]
-  ): ImplOrAny[TImpl] = js.native
+  ): ImplOrAny[TImpl]
 }
 object Invoker_ {
   
@@ -37,7 +35,7 @@ object Invoker_ {
   }
   
   @scala.inline
-  implicit class Invoker_MutableBuilder[Self <: Invoker_[_, _, _], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self with (Invoker_[TBase, TImpl, TArgs])) extends AnyVal {
+  implicit class Invoker_MutableBuilder[Self <: Invoker_[?, ?, ?], TBase, TImpl /* <: Impl[TBase] */, TArgs /* <: Args[TBase] */] (val x: Self & (Invoker_[TBase, TImpl, TArgs])) extends AnyVal {
     
     @scala.inline
     def setInvoke(value: (Container, DependencyCtorOrFunctor[TBase, TImpl, TArgs], TArgs) => ImplOrAny[TImpl]): Self = StObject.set(x, "invoke", js.Any.fromFunction3(value))

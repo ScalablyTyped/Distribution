@@ -4,17 +4,15 @@ import typings.reactReduxToastr.mod.ConfirmToastrCustomOptions
 import typings.reactReduxToastr.mod.ConfirmToastrOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CancelText extends StObject {
     
-    var cancelText: String = js.native
+    var cancelText: String
     
-    var okText: String = js.native
+    var okText: String
   }
   object CancelText {
     
@@ -35,16 +33,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var message: String = js.native
+    var message: String
     
-    var options: ConfirmToastrOptions | ConfirmToastrCustomOptions = js.native
+    var options: ConfirmToastrOptions | ConfirmToastrCustomOptions
     
-    var show: Boolean = js.native
+    var show: Boolean
   }
   object Id {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMl.gapi.client.ml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudMlV1ReplicaConfig extends StObject {
   
   /**
     * Represents the type and number of accelerators used by the replica. [Learn about restrictions on accelerator configurations for
     * training.](/ai-platform/training/docs/using-gpus#compute-engine-machine-types-with-gpu)
     */
-  var acceleratorConfig: js.UndefOr[GoogleCloudMlV1AcceleratorConfig] = js.native
+  var acceleratorConfig: js.UndefOr[GoogleCloudMlV1AcceleratorConfig] = js.undefined
   
   /**
     * Arguments to the entrypoint command. The following rules apply for container_command and container_args: - If you do not supply command or args: The defaults defined in the Docker
@@ -21,19 +19,19 @@ trait GoogleCloudMlV1ReplicaConfig extends StObject {
     * the default Cmd defined in the Docker image are ignored. Your command is run with your args. It cannot be set if custom container image is not provided. Note that this field and
     * [TrainingInput.args] are mutually exclusive, i.e., both cannot be set at the same time.
     */
-  var containerArgs: js.UndefOr[js.Array[String]] = js.native
+  var containerArgs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The command with which the replica's custom container is run. If provided, it will override default ENTRYPOINT of the docker image. If not provided, the docker image's ENTRYPOINT is
     * used. It cannot be set if custom container image is not provided. Note that this field and [TrainingInput.args] are mutually exclusive, i.e., both cannot be set at the same time.
     */
-  var containerCommand: js.UndefOr[js.Array[String]] = js.native
+  var containerCommand: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The Docker image to run on the replica. This image must be in Container Registry. Learn more about [configuring custom
     * containers](/ai-platform/training/docs/distributed-training-containers).
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
   
   /**
     * The AI Platform runtime version that includes a TensorFlow version matching the one used in the custom container. This field is required if the replica is a TPU worker that uses a
@@ -42,7 +40,7 @@ trait GoogleCloudMlV1ReplicaConfig extends StObject {
     * version itself, because it may have a different [patch version](https://www.tensorflow.org/guide/version_compat#semantic_versioning_20). In this field, you must specify the runtime
     * version (TensorFlow minor version). For example, if your custom container runs TensorFlow `1.x.y`, specify `1.x`.
     */
-  var tpuTfVersion: js.UndefOr[String] = js.native
+  var tpuTfVersion: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudMlV1ReplicaConfig {
   

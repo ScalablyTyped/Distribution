@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePhotosBatchget extends StandardParameters {
+trait ParamsResourcePhotosBatchget
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The BCP-47 language code, such as "en-US" or "sr-Latn". For more
@@ -24,19 +24,19 @@ trait ParamsResourcePhotosBatchget extends StandardParameters {
     * language_code is unspecified, the user's language preference for Google
     * services is used.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required. IDs of the Photos. For HTTP GET requests, the URL query
     * parameter should be `photoIds=<id1>&photoIds=<id2>&...`.
     */
-  var photoIds: js.UndefOr[js.Array[String]] = js.native
+  var photoIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Specifies if a download URL for the photo bytes should be returned in the
     * Photo response.
     */
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePhotosBatchget {
   

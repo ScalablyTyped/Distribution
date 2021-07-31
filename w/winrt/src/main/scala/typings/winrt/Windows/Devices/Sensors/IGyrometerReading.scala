@@ -3,19 +3,17 @@ package typings.winrt.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGyrometerReading extends StObject {
   
-  var angularVelocityX: Double = js.native
+  var angularVelocityX: Double
   
-  var angularVelocityY: Double = js.native
+  var angularVelocityY: Double
   
-  var angularVelocityZ: Double = js.native
+  var angularVelocityZ: Double
   
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object IGyrometerReading {
   

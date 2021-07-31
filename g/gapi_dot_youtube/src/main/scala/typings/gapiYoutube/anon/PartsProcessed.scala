@@ -2,26 +2,24 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartsProcessed extends StObject {
   
   /**
     * The number of parts of the video that YouTube has already processed.
     */
-  var partsProcessed: Double = js.native
+  var partsProcessed: Double
   
   /**
     * An estimate of the total number of parts that need to be processed for the video. The number may be updated with more precise estimates while YouTube processes the video.
     */
-  var partsTotal: Double = js.native
+  var partsTotal: Double
   
   /**
     * An estimate of the amount of time, in millseconds, that YouTube needs to finish processing the video.
     */
-  var timeLeftMs: Double = js.native
+  var timeLeftMs: Double
 }
 object PartsProcessed {
   

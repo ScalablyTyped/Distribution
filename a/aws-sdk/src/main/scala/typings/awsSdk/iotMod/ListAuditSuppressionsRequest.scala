@@ -2,30 +2,28 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAuditSuppressionsRequest extends StObject {
   
   /**
     *  Determines whether suppressions are listed in ascending order by expiration date or not. If parameter isn't provided, ascendingOrder=true. 
     */
-  var ascendingOrder: js.UndefOr[AscendingOrder] = js.native
+  var ascendingOrder: js.UndefOr[AscendingOrder] = js.undefined
   
-  var checkName: js.UndefOr[AuditCheckName] = js.native
+  var checkName: js.UndefOr[AuditCheckName] = js.undefined
   
   /**
     *  The maximum number of results to return at one time. The default is 25. 
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     *  The token for the next set of results. 
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
-  var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.native
+  var resourceIdentifier: js.UndefOr[ResourceIdentifier] = js.undefined
 }
 object ListAuditSuppressionsRequest {
   

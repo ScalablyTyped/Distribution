@@ -5,7 +5,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Remote
 import typings.officeJsPreview.officeJsPreviewStrings.WorksheetAdded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait WorksheetAddedEventArgs extends StObject {
   
   /**
@@ -23,7 +21,7 @@ trait WorksheetAddedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -31,7 +29,7 @@ trait WorksheetAddedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: WorksheetAdded = js.native
+  var `type`: WorksheetAdded
   
   /**
     *
@@ -39,14 +37,14 @@ trait WorksheetAddedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetAddedEventArgs {
   
   @scala.inline
-  def apply(source: EventSource | Local | Remote, `type`: WorksheetAdded, worksheetId: String): WorksheetAddedEventArgs = {
+  def apply(source: EventSource | Local | Remote, worksheetId: String): WorksheetAddedEventArgs = {
     val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetAdded")
     __obj.asInstanceOf[WorksheetAddedEventArgs]
   }
   

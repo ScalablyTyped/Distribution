@@ -2,43 +2,41 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICollisionPair extends StObject {
   
-  var activeContacts: js.Array[Vector] = js.native
+  var activeContacts: js.Array[Vector]
   
-  var bodyA: Body = js.native
+  var bodyA: Body
   
-  var bodyB: Body = js.native
+  var bodyB: Body
   
-  var collision: ICollisionData = js.native
+  var collision: ICollisionData
   
-  var confirmedActive: Boolean = js.native
+  var confirmedActive: Boolean
   
-  var friction: Double = js.native
+  var friction: Double
   
-  var frictionStatic: Double = js.native
+  var frictionStatic: Double
   
-  var id: String = js.native
+  var id: String
   
-  var inverseMass: Double = js.native
+  var inverseMass: Double
   
-  var isActive: Boolean = js.native
+  var isActive: Boolean
   
-  var isSensor: Boolean = js.native
+  var isSensor: Boolean
   
-  var restitution: Double = js.native
+  var restitution: Double
   
-  var separation: Double = js.native
+  var separation: Double
   
-  var slop: Double = js.native
+  var slop: Double
   
-  var timeCreated: Double = js.native
+  var timeCreated: Double
   
-  var timeUpdated: Double = js.native
+  var timeUpdated: Double
 }
 object ICollisionPair {
   

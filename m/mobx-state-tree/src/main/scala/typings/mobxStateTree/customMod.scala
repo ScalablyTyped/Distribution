@@ -3,14 +3,16 @@ package typings.mobxStateTree
 import typings.mobxStateTree.typeMod.IType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object customMod {
   
-  @JSImport("mobx-state-tree/dist/types/utility-types/custom", "custom")
+  @JSImport("mobx-state-tree/dist/types/utility-types/custom", JSImport.Namespace)
   @js.native
-  def custom[S, T](options: CustomTypeOptions[S, T]): IType[S | T, S, T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def custom[S, T](options: CustomTypeOptions[S, T]): IType[S | T, S, T] = ^.asInstanceOf[js.Dynamic].applyDynamic("custom")(options.asInstanceOf[js.Any]).asInstanceOf[IType[S | T, S, T]]
   
   @js.native
   trait CustomTypeOptions[S, T] extends StObject {

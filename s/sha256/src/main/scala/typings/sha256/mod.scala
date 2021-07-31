@@ -6,7 +6,6 @@ import typings.sha256.anon.AsBytes
 import typings.sha256.anon.AsString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,7 +25,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait Sha256WithX2 extends Sha256 {
+  trait Sha256WithX2
+    extends StObject
+       with Sha256 {
     
     def x2(message: Message): String = js.native
     def x2(message: Message, options: AsBytes): js.Array[Double] = js.native

@@ -6,27 +6,25 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeSvgCharts.anon.PartialTextProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisProps[T] extends StObject {
   
-  var data: js.Array[T] = js.native
+  var data: js.Array[T]
   
-  var formatLabel: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, Double | String]] = js.native
+  var formatLabel: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, Double | String]] = js.undefined
   
-  var numberOfTicks: js.UndefOr[Double] = js.native
+  var numberOfTicks: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[ScaleFunction] = js.native
+  var scale: js.UndefOr[ScaleFunction] = js.undefined
   
-  var spacingInner: js.UndefOr[Double] = js.native
+  var spacingInner: js.UndefOr[Double] = js.undefined
   
-  var spacingOuter: js.UndefOr[Double] = js.native
+  var spacingOuter: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var svg: js.UndefOr[PartialTextProps] = js.native
+  var svg: js.UndefOr[PartialTextProps] = js.undefined
 }
 object AxisProps {
   
@@ -37,7 +35,7 @@ object AxisProps {
   }
   
   @scala.inline
-  implicit class AxisPropsMutableBuilder[Self <: AxisProps[_], T] (val x: Self with AxisProps[T]) extends AnyVal {
+  implicit class AxisPropsMutableBuilder[Self <: AxisProps[?], T] (val x: Self & AxisProps[T]) extends AnyVal {
     
     @scala.inline
     def setData(value: js.Array[T]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

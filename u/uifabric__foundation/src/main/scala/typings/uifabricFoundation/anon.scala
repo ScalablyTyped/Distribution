@@ -3,19 +3,17 @@ package typings.uifabricFoundation
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Slots[TSlots] extends StObject {
     
     var slots: js.UndefOr[
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in keyof TSlots ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[key]>>}
-      */ typings.uifabricFoundation.uifabricFoundationStrings.Slots with TopLevel[TSlots]
-      ] = js.native
+      */ typings.uifabricFoundation.uifabricFoundationStrings.Slots & TopLevel[TSlots]
+      ] = js.undefined
   }
   object Slots {
     
@@ -26,13 +24,13 @@ object anon {
     }
     
     @scala.inline
-    implicit class SlotsMutableBuilder[Self <: Slots[_], TSlots] (val x: Self with Slots[TSlots]) extends AnyVal {
+    implicit class SlotsMutableBuilder[Self <: Slots[?], TSlots] (val x: Self & Slots[TSlots]) extends AnyVal {
       
       @scala.inline
       def setSlots(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ key in keyof TSlots ]:? @uifabric/foundation.@uifabric/foundation/lib/ISlots.ISlotOptions<@uifabric/foundation.@uifabric/foundation/lib/ISlots.ExtractProps<TSlots[key]>>}
-        */ typings.uifabricFoundation.uifabricFoundationStrings.Slots with TopLevel[TSlots]
+        */ typings.uifabricFoundation.uifabricFoundationStrings.Slots & TopLevel[TSlots]
       ): Self = StObject.set(x, "slots", value.asInstanceOf[js.Any])
       
       @scala.inline

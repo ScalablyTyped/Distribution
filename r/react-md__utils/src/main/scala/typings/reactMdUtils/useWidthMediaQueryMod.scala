@@ -5,28 +5,32 @@ import typings.reactMdUtils.reactMdUtilsStrings.min
 import typings.reactMdUtils.sizingConstantsMod.QuerySize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useWidthMediaQueryMod {
   
-  @JSImport("@react-md/utils/types/sizing/useWidthMediaQuery", "toWidthPart")
+  @JSImport("@react-md/utils/types/sizing/useWidthMediaQuery", JSImport.Namespace)
   @js.native
-  def toWidthPart_max(v: js.UndefOr[QuerySize], prefix: max): String = js.native
-  @JSImport("@react-md/utils/types/sizing/useWidthMediaQuery", "toWidthPart")
-  @js.native
-  def toWidthPart_min(v: js.UndefOr[QuerySize], prefix: min): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@react-md/utils/types/sizing/useWidthMediaQuery", "useWidthMediaQuery")
-  @js.native
-  def useWidthMediaQuery(hasMinMax: WidthMediaQuery with WidthMediaQuerys): Boolean = js.native
+  @scala.inline
+  def toWidthPart_max(v: Unit, prefix: max): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toWidthPart_max(v: QuerySize, prefix: max): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def toWidthPart_min(v: Unit, prefix: min): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toWidthPart_min(v: QuerySize, prefix: min): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toWidthPart")(v.asInstanceOf[js.Any], prefix.asInstanceOf[js.Any])).asInstanceOf[String]
+  
+  @scala.inline
+  def useWidthMediaQuery(hasMinMax: WidthMediaQuery & WidthMediaQuerys): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("useWidthMediaQuery")(hasMinMax.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait WidthMediaQuery extends StObject {
     
-    var max: js.UndefOr[QuerySize] = js.native
+    var max: js.UndefOr[QuerySize] = js.undefined
     
-    var min: js.UndefOr[QuerySize] = js.native
+    var min: js.UndefOr[QuerySize] = js.undefined
   }
   object WidthMediaQuery {
     

@@ -5,24 +5,22 @@ import typings.minappEnv.minappEnvStrings.button
 import typings.minappEnv.minappEnvStrings.menu
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Page {
   
-  type GetCurrentPages = js.Function0[Array[(PageInstance[js.Object, js.Object]) with js.Object]]
+  type GetCurrentPages = js.Function0[Array[(PageInstance[js.Object, js.Object]) & js.Object]]
   
-  @js.native
   trait ICustomShareContent extends StObject {
     
     /** 自定义图片路径，可以是本地文件路径、代码包文件路径或者网络图片路径。支持PNG及JPG。显示图片长宽比是 5:4，最低基础库： `1.5.0`。默认值：使用默认截图 */
-    var imageUrl: js.UndefOr[java.lang.String] = js.native
+    var imageUrl: js.UndefOr[java.lang.String] = js.undefined
     
     /** 转发路径，必须是以 / 开头的完整路径。默认值：当前页面 path */
-    var path: js.UndefOr[java.lang.String] = js.native
+    var path: js.UndefOr[java.lang.String] = js.undefined
     
     /** 转发标题。默认值：当前小程序名称 */
-    var title: js.UndefOr[java.lang.String] = js.native
+    var title: js.UndefOr[java.lang.String] = js.undefined
   }
   object ICustomShareContent {
     
@@ -55,11 +53,10 @@ object Page {
     }
   }
   
-  @js.native
   trait IPageScrollOption extends StObject {
     
     /** 页面在垂直方向已滚动的距离（单位px） */
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object IPageScrollOption {
     
@@ -77,7 +74,6 @@ object Page {
     }
   }
   
-  @js.native
   trait IShareAppMessageOption extends StObject {
     
     /** 转发事件来源。
@@ -88,18 +84,18 @@ object Page {
       *
       * 最低基础库： `1.2.4`
       */
-    var from: button | menu | java.lang.String = js.native
+    var from: button | menu | java.lang.String
     
     /** 如果 `from` 值是 `button`，则 `target` 是触发这次转发事件的 `button`，否则为 `undefined`
       *
       * 最低基础库： `1.2.4` */
-    var target: js.Any = js.native
+    var target: js.Any
     
     /** 页面中包含`<web-view>`组件时，返回当前`<web-view>`的url
       *
       * 最低基础库： `1.6.4`
       */
-    var webViewUrl: js.UndefOr[java.lang.String] = js.native
+    var webViewUrl: js.UndefOr[java.lang.String] = js.undefined
   }
   object IShareAppMessageOption {
     
@@ -126,17 +122,16 @@ object Page {
     }
   }
   
-  @js.native
   trait ITabItemTapOption extends StObject {
     
     /** 被点击tabItem的序号，从0开始，最低基础库： `1.9.0` */
-    var index: java.lang.String = js.native
+    var index: java.lang.String
     
     /** 被点击tabItem的页面路径，最低基础库： `1.9.0` */
-    var pagePath: java.lang.String = js.native
+    var pagePath: java.lang.String
     
     /** 被点击tabItem的按钮文字，最低基础库： `1.9.0` */
-    var text: java.lang.String = js.native
+    var text: java.lang.String
   }
   object ITabItemTapOption {
     
@@ -161,30 +156,31 @@ object Page {
   }
   
   type PageConstructor = js.Function1[
-    /* options */ (PageInstance[IAnyObject, IAnyObject with (PageInstance[_, _])]) with IAnyObject with (PageInstance[_, _]), 
+    /* options */ (PageInstance[IAnyObject, IAnyObject & (PageInstance[js.Any, js.Any])]) & IAnyObject & (PageInstance[js.Any, js.Any]), 
     Unit
   ]
   
-  @js.native
-  trait PageInstance[D /* <: IAnyObject */, T /* <: IAnyObject */] extends PageInstanceBaseProps[D] {
+  trait PageInstance[D /* <: IAnyObject */, T /* <: IAnyObject */]
+    extends StObject
+       with PageInstanceBaseProps[D] {
     
     /** 生命周期回调—监听页面隐藏
       *
       * 页面隐藏/切入后台时触发。 如 `navigateTo` 或底部 `tab` 切换到其他页面，小程序切入后台等。
       */
-    var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** 生命周期回调—监听页面加载
       *
       * 页面加载时触发。一个页面只会调用一次，可以在 onLoad 的参数中获取打开当前页面路径中的参数。
       */
-    var onLoad: js.UndefOr[js.Function1[/* query */ js.UndefOr[StringDictionary[java.lang.String]], Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* query */ js.UndefOr[StringDictionary[java.lang.String]], Unit]] = js.undefined
     
     /** 页面滚动触发事件的处理函数
       *
       * 监听用户滑动页面事件。
       */
-    var onPageScroll: js.UndefOr[js.Function1[/* options */ js.UndefOr[IPageScrollOption], Unit]] = js.native
+    var onPageScroll: js.UndefOr[js.Function1[/* options */ js.UndefOr[IPageScrollOption], Unit]] = js.undefined
     
     /** 监听用户下拉动作
       *
@@ -193,7 +189,7 @@ object Page {
       * - 可以通过`wx.startPullDownRefresh`触发下拉刷新，调用后触发下拉刷新动画，效果与用户手动下拉刷新一致。
       * - 当处理完数据刷新后，`wx.stopPullDownRefresh`可以停止当前页面的下拉刷新。
       */
-    var onPullDownRefresh: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPullDownRefresh: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** 页面上拉触底事件的处理函数
       *
@@ -201,7 +197,7 @@ object Page {
       * - 可以在`app.json`的`window`选项中或页面配置中设置触发距离`onReachBottomDistance`。
       * - 在触发距离内滑动期间，本事件只会被触发一次。
       */
-    var onReachBottom: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReachBottom: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** 生命周期回调—监听页面初次渲染完成
       * 
@@ -210,7 +206,7 @@ object Page {
       
       * 注意：对界面内容进行设置的 API 如`wx.setNavigationBarTitle`，请在`onReady`之后进行。
       */
-    var onReady: js.UndefOr[js.Function0[Unit]] = js.native
+    var onReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** 用户点击右上角转发
       *
@@ -222,22 +218,22 @@ object Page {
       */
     var onShareAppMessage: js.UndefOr[
         js.Function1[/* options */ js.UndefOr[IShareAppMessageOption], ICustomShareContent]
-      ] = js.native
+      ] = js.undefined
     
     /** 生命周期回调—监听页面显示
       *
       * 页面显示/切入前台时触发。
       */
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** 当前是 tab 页时，点击 tab 时触发，最低基础库： `1.9.0` */
-    var onTabItemTap: js.UndefOr[js.Function1[/* options */ js.UndefOr[ITabItemTapOption], Unit]] = js.native
+    var onTabItemTap: js.UndefOr[js.Function1[/* options */ js.UndefOr[ITabItemTapOption], Unit]] = js.undefined
     
     /** 生命周期回调—监听页面卸载
       *
       * 页面卸载时触发。如`redirectTo`或`navigateBack`到其他页面时。
       */
-    var onUnload: js.UndefOr[js.Function0[Unit]] = js.native
+    var onUnload: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object PageInstance {
     
@@ -248,7 +244,7 @@ object Page {
     }
     
     @scala.inline
-    implicit class PageInstanceMutableBuilder[Self <: PageInstance[_, _], D /* <: IAnyObject */, T /* <: IAnyObject */] (val x: Self with (PageInstance[D, T])) extends AnyVal {
+    implicit class PageInstanceMutableBuilder[Self <: PageInstance[?, ?], D /* <: IAnyObject */, T /* <: IAnyObject */] (val x: Self & (PageInstance[D, T])) extends AnyVal {
       
       @scala.inline
       def setOnHide(value: () => Unit): Self = StObject.set(x, "onHide", js.Any.fromFunction0(value))
@@ -312,7 +308,6 @@ object Page {
     }
   }
   
-  @js.native
   trait PageInstanceBaseProps[D /* <: IAnyObject */] extends StObject {
     
     /** 页面的初始数据
@@ -323,10 +318,10 @@ object Page {
       * 
       * 渲染层可以通过 `WXML` 对数据进行绑定。
       */
-    var data: js.UndefOr[D] = js.native
+    var data: js.UndefOr[D] = js.undefined
     
     /** 到当前页面的路径，类型为`String`。最低基础库： `1.2.0` */
-    var route: js.UndefOr[java.lang.String] = js.native
+    var route: js.UndefOr[java.lang.String] = js.undefined
     
     /** `setData` 函数用于将数据从逻辑层发送到视图层（异步），同时改变对应的 `this.data` 的值（同步）。
       *
@@ -343,7 +338,7 @@ object Page {
           /* callback */ js.UndefOr[js.Function0[Unit]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object PageInstanceBaseProps {
     
@@ -354,7 +349,7 @@ object Page {
     }
     
     @scala.inline
-    implicit class PageInstanceBasePropsMutableBuilder[Self <: PageInstanceBaseProps[_], D /* <: IAnyObject */] (val x: Self with PageInstanceBaseProps[D]) extends AnyVal {
+    implicit class PageInstanceBasePropsMutableBuilder[Self <: PageInstanceBaseProps[?], D /* <: IAnyObject */] (val x: Self & PageInstanceBaseProps[D]) extends AnyVal {
       
       @scala.inline
       def setData(value: D): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

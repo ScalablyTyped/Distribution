@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "BoolQuery")
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   A Query that matches documents matching boolean combinations of other
   queries, e.g. termQuerys, phraseQuerys or other boolQuerys.
   */
-class BoolQuery () extends Query {
+class BoolQuery ()
+  extends StObject
+     with Query {
   
   /*
     The type of ejs object.  For internal use only.

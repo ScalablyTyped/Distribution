@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableProgress extends StObject {
   
   /** Estimate of the number of bytes copied so far for this table. This will eventually reach 'estimated_size_bytes' unless the table copy is CANCELLED. */
-  var estimatedCopiedBytes: js.UndefOr[String] = js.native
+  var estimatedCopiedBytes: js.UndefOr[String] = js.undefined
   
   /** Estimate of the size of the table to be copied. */
-  var estimatedSizeBytes: js.UndefOr[String] = js.native
+  var estimatedSizeBytes: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object TableProgress {
   

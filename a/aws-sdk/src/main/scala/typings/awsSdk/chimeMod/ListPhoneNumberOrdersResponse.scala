@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPhoneNumberOrdersResponse extends StObject {
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The phone number order details.
     */
-  var PhoneNumberOrders: js.UndefOr[PhoneNumberOrderList] = js.native
+  var PhoneNumberOrders: js.UndefOr[PhoneNumberOrderList] = js.undefined
 }
 object ListPhoneNumberOrdersResponse {
   

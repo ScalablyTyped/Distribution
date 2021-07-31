@@ -3,21 +3,19 @@ package typings.d3Scale
 import typings.d3Scale.d3ScaleStrings.`implicit`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Name extends StObject {
     
-    var name: `implicit` = js.native
+    var name: `implicit`
   }
   object Name {
     
     @scala.inline
-    def apply(name: `implicit`): Name = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): Name = {
+      val __obj = js.Dynamic.literal(name = "implicit")
       __obj.asInstanceOf[Name]
     }
     
@@ -29,9 +27,7 @@ object anon {
     }
   }
   
-  @js.native
   trait ToString extends StObject
   
-  @js.native
   trait ValueOf extends StObject
 }

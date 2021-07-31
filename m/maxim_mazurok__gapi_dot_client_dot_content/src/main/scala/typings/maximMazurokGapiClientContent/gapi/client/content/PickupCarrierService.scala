@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PickupCarrierService extends StObject {
   
   /** The name of the pickup carrier (e.g., `"UPS"`). Required. */
-  var carrierName: js.UndefOr[String] = js.native
+  var carrierName: js.UndefOr[String] = js.undefined
   
   /** The name of the pickup service (e.g., `"Access point"`). Required. */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
 }
 object PickupCarrierService {
   

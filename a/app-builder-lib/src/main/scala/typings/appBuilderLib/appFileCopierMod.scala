@@ -8,56 +8,53 @@ import typings.node.Buffer
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appFileCopierMod {
   
-  @JSImport("app-builder-lib/out/util/appFileCopier", "computeFileSets")
+  @JSImport("app-builder-lib/out/util/appFileCopier", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def computeFileSets(
     matchers: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ js.Any
     ],
     transformer: Null,
-    platformPackager: PlatformPackager[_],
+    platformPackager: PlatformPackager[js.Any],
     isElectronCompile: Boolean
-  ): js.Promise[js.Array[ResolvedFileSet]] = js.native
-  @JSImport("app-builder-lib/out/util/appFileCopier", "computeFileSets")
-  @js.native
+  ): js.Promise[js.Array[ResolvedFileSet]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFileSets")(matchers.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], platformPackager.asInstanceOf[js.Any], isElectronCompile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ResolvedFileSet]]]
+  @scala.inline
   def computeFileSets(
     matchers: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FileMatcher */ js.Any
     ],
     transformer: FileTransformer,
-    platformPackager: PlatformPackager[_],
+    platformPackager: PlatformPackager[js.Any],
     isElectronCompile: Boolean
-  ): js.Promise[js.Array[ResolvedFileSet]] = js.native
+  ): js.Promise[js.Array[ResolvedFileSet]] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeFileSets")(matchers.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any], platformPackager.asInstanceOf[js.Any], isElectronCompile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ResolvedFileSet]]]
   
-  @JSImport("app-builder-lib/out/util/appFileCopier", "copyAppFiles")
-  @js.native
-  def copyAppFiles(fileSet: ResolvedFileSet, packager: Packager, transformer: FileTransformer): js.Promise[Unit] = js.native
+  @scala.inline
+  def copyAppFiles(fileSet: ResolvedFileSet, packager: Packager, transformer: FileTransformer): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyAppFiles")(fileSet.asInstanceOf[js.Any], packager.asInstanceOf[js.Any], transformer.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("app-builder-lib/out/util/appFileCopier", "getDestinationPath")
-  @js.native
-  def getDestinationPath(file: String, fileSet: ResolvedFileSet): String = js.native
+  @scala.inline
+  def getDestinationPath(file: String, fileSet: ResolvedFileSet): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getDestinationPath")(file.asInstanceOf[js.Any], fileSet.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("app-builder-lib/out/util/appFileCopier", "transformFiles")
-  @js.native
-  def transformFiles(transformer: FileTransformer, fileSet: ResolvedFileSet): js.Promise[Unit] = js.native
+  @scala.inline
+  def transformFiles(transformer: FileTransformer, fileSet: ResolvedFileSet): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFiles")(transformer.asInstanceOf[js.Any], fileSet.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
   trait ResolvedFileSet extends StObject {
     
-    var destination: String = js.native
+    var destination: String
     
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
     
-    var metadata: Map[String, Stats] = js.native
+    var metadata: Map[String, Stats]
     
-    var src: String = js.native
+    var src: String
     
-    var transformedFiles: js.UndefOr[(Map[Double, String | Buffer]) | Null] = js.native
+    var transformedFiles: js.UndefOr[(Map[Double, String | Buffer]) | Null] = js.undefined
   }
   object ResolvedFileSet {
     

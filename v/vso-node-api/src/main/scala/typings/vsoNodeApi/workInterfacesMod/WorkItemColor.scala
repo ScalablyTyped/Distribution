@@ -2,17 +2,15 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemColor extends StObject {
   
-  var icon: String = js.native
+  var icon: String
   
-  var primaryColor: String = js.native
+  var primaryColor: String
   
-  var workItemTypeName: String = js.native
+  var workItemTypeName: String
 }
 object WorkItemColor {
   

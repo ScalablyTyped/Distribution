@@ -21,19 +21,18 @@ import typings.luaparse.luaparseStrings.^
 import typings.luaparse.luaparseStrings.`-_`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinaryExpression
-  extends Expression
-     with Base[typings.luaparse.luaparseStrings.BinaryExpression] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.BinaryExpression]
+     with Expression {
   
-  var left: Expression = js.native
+  var left: Expression
   
-  var operator: Plussign | `-_` | Asterisk | Percentsign | ^ | Slash | SlashSlash | Ampersand | Verticalline | Tilde | LessthansignLessthansign | GreaterthansignGreaterthansign | DotDot | TildeEqualssign | EqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign = js.native
+  var operator: Plussign | `-_` | Asterisk | Percentsign | ^ | Slash | SlashSlash | Ampersand | Verticalline | Tilde | LessthansignLessthansign | GreaterthansignGreaterthansign | DotDot | TildeEqualssign | EqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign
   
-  var right: Expression = js.native
+  var right: Expression
 }
 object BinaryExpression {
   
@@ -41,11 +40,10 @@ object BinaryExpression {
   def apply(
     left: Expression,
     operator: Plussign | `-_` | Asterisk | Percentsign | ^ | Slash | SlashSlash | Ampersand | Verticalline | Tilde | LessthansignLessthansign | GreaterthansignGreaterthansign | DotDot | TildeEqualssign | EqualssignEqualssign | Lessthansign | LessthansignEqualssign | Greaterthansign | GreaterthansignEqualssign,
-    right: Expression,
-    `type`: typings.luaparse.luaparseStrings.BinaryExpression
+    right: Expression
   ): BinaryExpression = {
     val __obj = js.Dynamic.literal(left = left.asInstanceOf[js.Any], operator = operator.asInstanceOf[js.Any], right = right.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BinaryExpression")
     __obj.asInstanceOf[BinaryExpression]
   }
   

@@ -2,41 +2,41 @@ package typings.gtin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gtin", "getFormat")
+  @JSImport("gtin", JSImport.Namespace)
   @js.native
-  def getFormat(gtin: String): GtinFormat = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gtin", "getRealFormat")
-  @js.native
-  def getRealFormat(gtin: String): GtinFormat = js.native
+  @scala.inline
+  def getFormat(gtin: String): GtinFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormat")(gtin.asInstanceOf[js.Any]).asInstanceOf[GtinFormat]
   
-  @JSImport("gtin", "isGTIN")
-  @js.native
-  def isGTIN(gtin: String): Boolean = js.native
+  @scala.inline
+  def getRealFormat(gtin: String): GtinFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("getRealFormat")(gtin.asInstanceOf[js.Any]).asInstanceOf[GtinFormat]
   
-  @JSImport("gtin", "minify")
-  @js.native
-  def minify(gtin: String): String = js.native
+  @scala.inline
+  def isGTIN(gtin: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isGTIN")(gtin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def minify(gtin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("minify")(gtin.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object upce {
     
-    @JSImport("gtin", "upce.compress")
+    @JSImport("gtin", "upce")
     @js.native
-    def compress(gtin: String): String | Null = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("gtin", "upce.expand")
-    @js.native
-    def expand(gtin: String): String = js.native
+    @scala.inline
+    def compress(gtin: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("compress")(gtin.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+    
+    @scala.inline
+    def expand(gtin: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("expand")(gtin.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @JSImport("gtin", "validate")
-  @js.native
-  def validate(gtin: String): Boolean = js.native
+  @scala.inline
+  def validate(gtin: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validate")(gtin.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.gtin.gtinStrings.`GTIN-8`

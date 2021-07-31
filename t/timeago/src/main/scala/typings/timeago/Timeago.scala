@@ -4,51 +4,49 @@ import typings.std.Date
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Timeago {
   
   type DynamicMessage = js.Function2[/* n */ Double, /* distanceMillis */ Double, String]
   
-  @js.native
   trait LocalizedStrings extends StObject {
     
-    var day: String | DynamicMessage = js.native
+    var day: String | DynamicMessage
     
-    var days: String | DynamicMessage = js.native
+    var days: String | DynamicMessage
     
-    var hour: String | DynamicMessage = js.native
+    var hour: String | DynamicMessage
     
-    var hours: String | DynamicMessage = js.native
+    var hours: String | DynamicMessage
     
-    var inPast: String = js.native
+    var inPast: String
     
-    var minute: String | DynamicMessage = js.native
+    var minute: String | DynamicMessage
     
-    var minutes: String | DynamicMessage = js.native
+    var minutes: String | DynamicMessage
     
-    var month: String | DynamicMessage = js.native
+    var month: String | DynamicMessage
     
-    var months: String | DynamicMessage = js.native
+    var months: String | DynamicMessage
     
-    var numbers: js.Array[String] = js.native
+    var numbers: js.Array[String]
     
-    var prefixAgo: String | Null = js.native
+    var prefixAgo: String | Null
     
-    var prefixFromNow: String | Null = js.native
+    var prefixFromNow: String | Null
     
-    var seconds: String | DynamicMessage = js.native
+    var seconds: String | DynamicMessage
     
-    var suffixAgo: String | Null = js.native
+    var suffixAgo: String | Null
     
-    var suffixFromNow: String | Null = js.native
+    var suffixFromNow: String | Null
     
-    var wordSeparator: String = js.native
+    var wordSeparator: String
     
-    var year: String | DynamicMessage = js.native
+    var year: String | DynamicMessage
     
-    var years: String | DynamicMessage = js.native
+    var years: String | DynamicMessage
   }
   object LocalizedStrings {
     
@@ -69,7 +67,7 @@ object Timeago {
       year: String | DynamicMessage,
       years: String | DynamicMessage
     ): LocalizedStrings = {
-      val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], inPast = inPast.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], wordSeparator = wordSeparator.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(day = day.asInstanceOf[js.Any], days = days.asInstanceOf[js.Any], hour = hour.asInstanceOf[js.Any], hours = hours.asInstanceOf[js.Any], inPast = inPast.asInstanceOf[js.Any], minute = minute.asInstanceOf[js.Any], minutes = minutes.asInstanceOf[js.Any], month = month.asInstanceOf[js.Any], months = months.asInstanceOf[js.Any], numbers = numbers.asInstanceOf[js.Any], seconds = seconds.asInstanceOf[js.Any], wordSeparator = wordSeparator.asInstanceOf[js.Any], year = year.asInstanceOf[js.Any], years = years.asInstanceOf[js.Any], prefixAgo = null, prefixFromNow = null, suffixAgo = null, suffixFromNow = null)
       __obj.asInstanceOf[LocalizedStrings]
     }
     
@@ -180,22 +178,21 @@ object Timeago {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var allowFuture: Boolean = js.native
+    var allowFuture: Boolean
     
-    var allowPast: Boolean = js.native
+    var allowPast: Boolean
     
-    var autoDispose: Boolean = js.native
+    var autoDispose: Boolean
     
-    var cutoff: Double = js.native
+    var cutoff: Double
     
-    var localeTitle: Boolean = js.native
+    var localeTitle: Boolean
     
-    var refreshMillis: Double = js.native
+    var refreshMillis: Double
     
-    var strings: LocalizedStrings = js.native
+    var strings: LocalizedStrings
   }
   object Settings {
     

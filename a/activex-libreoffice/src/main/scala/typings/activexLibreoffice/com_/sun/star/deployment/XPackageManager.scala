@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,22 +30,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see thePackageManagerFactory
   * @since OOo 2.0
   */
-@js.native
 trait XPackageManager
-  extends XComponent
+  extends StObject
+     with XComponent
      with XModifyBroadcaster {
   
   /**
     * returns the underlying deployment context, that is, the name of the repository.
     * @returns underlying deployment context
     */
-  val Context: String = js.native
+  val Context: String
   
   /**
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
-  val SupportedPackageTypes: SafeArray[XPackageTypeInfo] = js.native
+  val SupportedPackageTypes: SafeArray[XPackageTypeInfo]
   
   /**
     * adds an UNO package.
@@ -65,7 +64,7 @@ trait XPackageManager
     mediaType: String,
     xAbortChannel: XAbortChannel,
     xCmdEnv: XCommandEnvironment
-  ): XPackage = js.native
+  ): XPackage
   
   /**
     * checks if the extension can be used.
@@ -73,19 +72,19 @@ trait XPackageManager
     * The extension must be managed by this package manager, that is, it must be recorded in its database. The package manager calls {@link
     * XPackage.checkPrerequisites} and updates its data base with the result. The result, which is from {@link Prerequisites} will be returned.
     */
-  def checkPrerequisites(extension: XPackage, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Double = js.native
+  def checkPrerequisites(`extension`: XPackage, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Double
   
   /**
     * creates a command channel to be used to asynchronously abort a command.
     * @returns abort channel
     */
-  def createAbortChannel(): XAbortChannel = js.native
+  def createAbortChannel(): XAbortChannel
   
   /**
     * returns the underlying deployment context, that is, the name of the repository.
     * @returns underlying deployment context
     */
-  def getContext(): String = js.native
+  def getContext(): String
   
   /**
     * gets a deployed package.
@@ -94,7 +93,7 @@ trait XPackageManager
     * @param xCmdEnv command environment for error and progress handling
     * @returns {@link XPackage} handle
     */
-  def getDeployedPackage(identifier: String, fileName: String, xCmdEnv: XCommandEnvironment): XPackage = js.native
+  def getDeployedPackage(identifier: String, fileName: String, xCmdEnv: XCommandEnvironment): XPackage
   
   /**
     * gets all currently deployed packages.
@@ -102,7 +101,7 @@ trait XPackageManager
     * @param xCmdEnv command environment for error and progress handling
     * @returns all currently deployed packages
     */
-  def getDeployedPackages(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): SafeArray[XPackage] = js.native
+  def getDeployedPackages(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): SafeArray[XPackage]
   
   /**
     * returns all extensions which are currently not in use because the user did not accept the license.
@@ -113,13 +112,13 @@ trait XPackageManager
     * Extensions which allow the license to be suppressed, that is, it does not need to be displayed, and which are installed with the corresponding option,
     * are also not returned.
     */
-  def getExtensionsWithUnacceptedLicenses(xCmdEnv: XCommandEnvironment): SafeArray[XPackage] = js.native
+  def getExtensionsWithUnacceptedLicenses(xCmdEnv: XCommandEnvironment): SafeArray[XPackage]
   
   /**
     * gets the supported XPackageTypeInfos.
     * @returns supported XPackageTypeInfos.
     */
-  def getSupportedPackageTypes(): SafeArray[XPackageTypeInfo] = js.native
+  def getSupportedPackageTypes(): SafeArray[XPackageTypeInfo]
   
   /**
     * adds an extension.
@@ -130,7 +129,7 @@ trait XPackageManager
     * @param xCmdEnv command environment for error and progress handling
     * @returns {@link XPackage} handle
     */
-  def importExtension(extension: XPackage, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): XPackage = js.native
+  def importExtension(`extension`: XPackage, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): XPackage
   
   /**
     * indicates that this implementation cannot be used for tasks which require write access to the location where the extensions are installed.
@@ -140,7 +139,7 @@ trait XPackageManager
     * {@link XPackageManager} implementation knows the location of the installed extensions. Therefore it is not possible to check "externally" for write
     * permission.
     */
-  def isReadOnly(): Boolean = js.native
+  def isReadOnly(): Boolean
   
   /**
     * Expert feature: erases the underlying registry cache and reinstalls all previously added packages. Please keep in mind that all registration status
@@ -151,7 +150,7 @@ trait XPackageManager
     * @param xAbortChannel abort channel to asynchronously abort the adding process
     * @param xCmdEnv command environment for error and progress handling
     */
-  def reinstallDeployedPackages(force: Boolean, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit = js.native
+  def reinstallDeployedPackages(force: Boolean, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit
   
   /**
     * removes an UNO package.
@@ -160,7 +159,7 @@ trait XPackageManager
     * @param xAbortChannel abort channel to asynchronously abort the removing process, or null
     * @param xCmdEnv command environment for error and progress handling
     */
-  def removePackage(identifier: String, fileName: String, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit = js.native
+  def removePackage(identifier: String, fileName: String, xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Unit
   
   /**
     * synchronizes the extension database with the contents of the extensions folder.
@@ -170,7 +169,7 @@ trait XPackageManager
     * @param xCmdEnv command environment for error and progress handling
     * @returns If true - then at least one extension was removed or added. Otherwise nothing was changed.
     */
-  def synchronize(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Boolean = js.native
+  def synchronize(xAbortChannel: XAbortChannel, xCmdEnv: XCommandEnvironment): Boolean
 }
 object XPackageManager {
   

@@ -2,13 +2,11 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextDef extends StObject {
   
-  var prefix: String = js.native
+  var prefix: String
 }
 object TextDef {
   

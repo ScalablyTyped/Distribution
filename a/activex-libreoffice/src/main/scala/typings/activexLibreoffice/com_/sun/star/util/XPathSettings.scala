@@ -7,97 +7,97 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
-trait XPathSettings extends XPropertySet {
+trait XPathSettings
+  extends StObject
+     with XPropertySet {
   
   /** Specifies the directory that contains spreadsheet add-ins which use the old add-in API */
-  var Addin: String = js.native
+  var Addin: String
   
   /** The settings of the AutoCorrect dialog. The value can be more than one path separated by a semicolon. */
-  var AutoCorrect: String = js.native
+  var AutoCorrect: String
   
   /** The directory which contains the AutoText modules. The value can be more than one path separated by a semicolon. */
-  var AutoText: String = js.native
+  var AutoText: String
   
   /** Automatic backup copies of documents are stored here. */
-  var Backup: String = js.native
+  var Backup: String
   
-  var BasePathShareLayer: String = js.native
+  var BasePathShareLayer: String
   
-  var BasePathUserLayer: String = js.native
+  var BasePathUserLayer: String
   
   /** The Basic files, used by the AutoPilots, can be found here. The value can be more than one path separated by a semicolon. */
-  var Basic: String = js.native
+  var Basic: String
   
   /** This directory contains the icons for the toolbars. */
-  var Bitmap: String = js.native
+  var Bitmap: String
   
   /** The configuration files are located here. This entry cannot be changed by the user in Office user interface. */
-  var Config: String = js.native
+  var Config: String
   
   /** The provided dictionaries are stored here. */
-  var Dictionary: String = js.native
+  var Dictionary: String
   
   /** Path to save folder bookmarks */
-  var Favorite: String = js.native
+  var Favorite: String
   
   /** Specifies the directory where all the filters are stored. */
-  var Filter: String = js.native
+  var Filter: String
   
   /** Specifies the directories which contains the Gallery database and multimedia files. The value can be more than one path separated by a semicolon. */
-  var Gallery: String = js.native
+  var Gallery: String
   
   /** This directory is displayed when the dialog for opening a graphic or for saving a new graphic is called. */
-  var Graphic: String = js.native
+  var Graphic: String
   
   /** The path to the Office help files. */
-  var Help: String = js.native
+  var Help: String
   
   /** The files that are necessary for the spell check are saved here. */
-  var Linguistic: String = js.native
+  var Linguistic: String
   
   /** This is the path for the modules. */
-  var Module: String = js.native
+  var Module: String
   
   /**
     * This is the path to the palette files *.SOB to *.SOF containing user-defined colors and patterns. The value can be more than one path separated by a
     * semicolon.
     */
-  var Palette: String = js.native
+  var Palette: String
   
   /** Plugins are saved in these directories. The value can be more than one path separated by a semicolon. */
-  var Plugin: String = js.native
+  var Plugin: String
   
   /** Mail, News files and other information (for example, about FTP Server) are stored here. */
-  var Storage: String = js.native
+  var Storage: String
   
   /** The base url to the office temp-files */
-  var Temp: String = js.native
+  var Temp: String
   
   /** The templates originate from these folders and sub-folders. The value can be more than one path separated by a semicolon. */
-  var Template: String = js.native
+  var Template: String
   
   /**
     * Global directories to look for user interface configuration files. The user interface configuration will be merged with user settings stored in the
     * directory specified by **UserConfig** . The value can be more than one path separated by a semicolon.
     */
-  var UIConfig: String = js.native
+  var UIConfig: String
   
   /** Specifies the folder with the user settings. */
-  var UserConfig: String = js.native
+  var UserConfig: String
   
   /**
     * The custom dictionaries are contained here.
     * @deprecated Deprecated
     */
-  var UserDictionary: String = js.native
+  var UserDictionary: String
   
   /** The path of the work folder can be modified according to the user's needs. The path specified here can be seen in the Open or Save dialog. */
-  var Work: String = js.native
+  var Work: String
 }
 object XPathSettings {
   

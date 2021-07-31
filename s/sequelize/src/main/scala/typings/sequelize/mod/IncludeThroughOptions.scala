@@ -2,24 +2,22 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Through options for Include Options
   */
-@js.native
 trait IncludeThroughOptions extends StObject {
   
   /**
     * A list of attributes to select from the join model for belongsToMany relations
     */
-  var attributes: js.UndefOr[js.Array[String]] = js.native
+  var attributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Filter on the join model for belongsToMany relations
     */
-  var where: js.UndefOr[AnyWhereOptions] = js.native
+  var where: js.UndefOr[AnyWhereOptions] = js.undefined
 }
 object IncludeThroughOptions {
   

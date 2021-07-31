@@ -2,56 +2,54 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchAlarmDefinition extends StObject {
   
   /**
     * Determines how the metric specified by MetricName is compared to the value specified by Threshold.
     */
-  var ComparisonOperator: typings.awsSdk.emrMod.ComparisonOperator = js.native
+  var ComparisonOperator: typings.awsSdk.emrMod.ComparisonOperator
   
   /**
     * A CloudWatch metric dimension.
     */
-  var Dimensions: js.UndefOr[MetricDimensionList] = js.native
+  var Dimensions: js.UndefOr[MetricDimensionList] = js.undefined
   
   /**
     * The number of periods, in five-minute increments, during which the alarm condition must exist before the alarm triggers automatic scaling activity. The default value is 1.
     */
-  var EvaluationPeriods: js.UndefOr[Integer] = js.native
+  var EvaluationPeriods: js.UndefOr[Integer] = js.undefined
   
   /**
     * The name of the CloudWatch metric that is watched to determine an alarm condition.
     */
-  var MetricName: String = js.native
+  var MetricName: String
   
   /**
     * The namespace for the CloudWatch metric. The default is AWS/ElasticMapReduce.
     */
-  var Namespace: js.UndefOr[String] = js.native
+  var Namespace: js.UndefOr[String] = js.undefined
   
   /**
     * The period, in seconds, over which the statistic is applied. EMR CloudWatch metrics are emitted every five minutes (300 seconds), so if an EMR CloudWatch metric is specified, specify 300.
     */
-  var Period: Integer = js.native
+  var Period: Integer
   
   /**
     * The statistic to apply to the metric associated with the alarm. The default is AVERAGE.
     */
-  var Statistic: js.UndefOr[typings.awsSdk.emrMod.Statistic] = js.native
+  var Statistic: js.UndefOr[typings.awsSdk.emrMod.Statistic] = js.undefined
   
   /**
     * The value against which the specified statistic is compared.
     */
-  var Threshold: NonNegativeDouble = js.native
+  var Threshold: NonNegativeDouble
   
   /**
     * The unit of measure associated with the CloudWatch metric being watched. The value specified for Unit must correspond to the units specified in the CloudWatch metric.
     */
-  var Unit: js.UndefOr[typings.awsSdk.emrMod.Unit] = js.native
+  var Unit: js.UndefOr[typings.awsSdk.emrMod.Unit] = js.undefined
 }
 object CloudWatchAlarmDefinition {
   

@@ -6,13 +6,13 @@ import typings.awsSdkClientCodecommitNode.inputTypesUnionMod.InputTypesUnion
 import typings.awsSdkTypes.abortMod.AbortSignal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesUpdatePullRequestStatusInputMod {
   
-  @js.native
-  trait UpdatePullRequestStatusInput extends InputTypesUnion {
+  trait UpdatePullRequestStatusInput
+    extends StObject
+       with InputTypesUnion {
     
     /**
       * An object that may be queried to determine if the underlying operation has been aborted.
@@ -20,7 +20,7 @@ object typesUpdatePullRequestStatusInputMod {
       * @see https://developer.mozilla.org/en-US/docs/Web/API/AbortSignal
       */
     @JSName("$abortSignal")
-    var $abortSignal: js.UndefOr[AbortSignal] = js.native
+    var $abortSignal: js.UndefOr[AbortSignal] = js.undefined
     
     /**
       * Per-request HTTP configuration options. If set, any options specified will override the corresponding HTTP option set on the client for this command.
@@ -28,23 +28,23 @@ object typesUpdatePullRequestStatusInputMod {
     @JSName("$httpOptions")
     var $httpOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __HttpOptions__ */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The maximum number of times this operation should be retried. If set, this value will override the `maxRetries` configuration set on the client for this command.
       */
     @JSName("$maxRetries")
-    var $maxRetries: js.UndefOr[Double] = js.native
+    var $maxRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The system-generated ID of the pull request. To get this ID, use <a>ListPullRequests</a>.</p>
       */
-    var pullRequestId: String = js.native
+    var pullRequestId: String
     
     /**
       * <p>The status of the pull request. The only valid operations are to update the status from <code>OPEN</code> to <code>OPEN</code>, <code>OPEN</code> to <code>CLOSED</code> or from from <code>CLOSED</code> to <code>CLOSED</code>.</p>
       */
-    var pullRequestStatus: OPEN | CLOSED | String = js.native
+    var pullRequestStatus: OPEN | CLOSED | String
   }
   object UpdatePullRequestStatusInput {
     

@@ -3,26 +3,24 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoRGBType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExtraColors extends StObject {
   
-  def Add(Type: MsoRGBType): Unit = js.native
+  def Add(Type: MsoRGBType): Unit
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): MsoRGBType = js.native
+  def Item(Index: Double): MsoRGBType
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.ExtraColors_typekey")
-  var PowerPointDotExtraColors_typekey: ExtraColors = js.native
+  var PowerPointDotExtraColors_typekey: ExtraColors
 }
 object ExtraColors {
   

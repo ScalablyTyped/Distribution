@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAppInstanceAdminsResponse extends StObject {
   
   /**
     * The information for each administrator.
     */
-  var AppInstanceAdmins: js.UndefOr[AppInstanceAdminList] = js.native
+  var AppInstanceAdmins: js.UndefOr[AppInstanceAdminList] = js.undefined
   
   /**
     * The ARN of the app instance.
     */
-  var AppInstanceArn: js.UndefOr[ChimeArn] = js.native
+  var AppInstanceArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The token returned from previous API requests until the number of administrators is reached.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.chimeMod.NextToken] = js.undefined
 }
 object ListAppInstanceAdminsResponse {
   

@@ -3,57 +3,55 @@ package typings.activexLibreoffice.com_.sun.star.reflection
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Reflects a service constructor.
   * @since OOo 2.0
   */
-@js.native
 trait XServiceConstructorDescription extends StObject {
   
   /**
     * Returns the exceptions that can be raised by the constructor.
     * @returns the reflections of all the exceptions that are listed in the constructor's `raises` specification, in no particular order; all elements of the re
     */
-  val Exceptions: SafeArray[XCompoundTypeDescription] = js.native
+  val Exceptions: SafeArray[XCompoundTypeDescription]
   
   /**
     * Returns the constructor's name.
     * @returns the constructor's name; for a default constructor, an empty `string` is returned
     */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * Returns the constructor's parameters.
     * @returns the reflections of all the constructor's parameters, in their lexical order; for a default constructor, an empty sequence is returned
     */
-  val Parameters: SafeArray[XParameter] = js.native
+  val Parameters: SafeArray[XParameter]
   
   /**
     * Returns the exceptions that can be raised by the constructor.
     * @returns the reflections of all the exceptions that are listed in the constructor's `raises` specification, in no particular order; all elements of the re
     */
-  def getExceptions(): SafeArray[XCompoundTypeDescription] = js.native
+  def getExceptions(): SafeArray[XCompoundTypeDescription]
   
   /**
     * Returns the constructor's name.
     * @returns the constructor's name; for a default constructor, an empty `string` is returned
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Returns the constructor's parameters.
     * @returns the reflections of all the constructor's parameters, in their lexical order; for a default constructor, an empty sequence is returned
     */
-  def getParameters(): SafeArray[XParameter] = js.native
+  def getParameters(): SafeArray[XParameter]
   
   /**
     * Returns whether the constructor is a default constructor.
     * @returns `TRUE` if the constructor is a default constructor
     */
-  def isDefaultConstructor(): Boolean = js.native
+  def isDefaultConstructor(): Boolean
 }
 object XServiceConstructorDescription {
   

@@ -5,27 +5,25 @@ import typings.spotifyWebApiJs.spotifyWebApiJsStrings.genre
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.track
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Recommendations Seed Object
   * [](https://developer.spotify.com/web-api/object-model/#recommendations-seed-object)
   */
-@js.native
 trait RecommendationsSeedObject extends StObject {
   
-  var afterFilteringSize: Double = js.native
+  var afterFilteringSize: Double
   
-  var afterRelinkingSize: Double = js.native
+  var afterRelinkingSize: Double
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var initialPoolSize: Double = js.native
+  var initialPoolSize: Double
   
-  var `type`: artist | track | genre = js.native
+  var `type`: artist | track | genre
 }
 object RecommendationsSeedObject {
   

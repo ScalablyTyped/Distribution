@@ -2,7 +2,6 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,7 +19,7 @@ trait Dataset extends StObject {
   val driver: Driver = js.native
   
   def executeSQL(statement: String): Layer = js.native
-  def executeSQL(statement: String, spatial_filter: js.UndefOr[scala.Nothing], dialect: String): Layer = js.native
+  def executeSQL(statement: String, spatial_filter: Unit, dialect: String): Layer = js.native
   def executeSQL(statement: String, spatial_filter: Geometry): Layer = js.native
   def executeSQL(statement: String, spatial_filter: Geometry, dialect: String): Layer = js.native
   

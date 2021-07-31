@@ -2,25 +2,23 @@ package typings.googleapis.safebrowsingV4Mod.safebrowsingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client metadata associated with Safe Browsing API requests.
   */
-@js.native
 trait SchemaClientInfo extends StObject {
   
   /**
     * A client ID that (hopefully) uniquely identifies the client
     * implementation of the Safe Browsing API.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * The version of the client implementation.
     */
-  var clientVersion: js.UndefOr[String] = js.native
+  var clientVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaClientInfo {
   

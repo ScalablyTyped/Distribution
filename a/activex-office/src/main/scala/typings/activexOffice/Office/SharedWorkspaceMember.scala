@@ -2,30 +2,28 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedWorkspaceMember extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val DomainName: String = js.native
+  val DomainName: String
   
-  val Email: String = js.native
+  val Email: String
   
-  val Id: String = js.native
+  val Id: String
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.SharedWorkspaceMember_typekey")
-  var OfficeDotSharedWorkspaceMember_typekey: SharedWorkspaceMember = js.native
+  var OfficeDotSharedWorkspaceMember_typekey: SharedWorkspaceMember
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
 }
 object SharedWorkspaceMember {
   

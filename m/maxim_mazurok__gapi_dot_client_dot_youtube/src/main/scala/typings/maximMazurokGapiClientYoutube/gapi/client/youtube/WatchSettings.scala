@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientYoutube.gapi.client.youtube
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WatchSettings extends StObject {
   
   /** The text color for the video watch page's branded area. */
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
   /** An ID that uniquely identifies a playlist that displays next to the video player. */
-  var featuredPlaylistId: js.UndefOr[String] = js.native
+  var featuredPlaylistId: js.UndefOr[String] = js.undefined
   
   /** The background color for the video watch page's branded area. */
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
 }
 object WatchSettings {
   

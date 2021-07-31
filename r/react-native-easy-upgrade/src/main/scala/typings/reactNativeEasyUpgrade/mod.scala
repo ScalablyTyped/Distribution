@@ -7,14 +7,15 @@ import typings.reactNativeEasyUpgrade.anon.VERSIONCODE
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("react-native-easy-upgrade", JSImport.Default)
   @js.native
-  class default protected () extends AppUpgrade {
+  class default protected ()
+    extends StObject
+       with AppUpgrade {
     def this(options: PartialOptions) = this()
   }
   
@@ -66,26 +67,25 @@ object mod {
     def updateAndroidApp(apkUrl: String): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    def downloadApkEnd(path: String): js.Any = js.native
+    def downloadApkEnd(path: String): js.Any
     
-    var downloadApkName: String = js.native
+    var downloadApkName: String
     
-    var downloadDescription: String = js.native
+    var downloadDescription: String
     
-    var downloadDestDirectory: String = js.native
+    var downloadDestDirectory: String
     
-    var downloadTitle: String = js.native
+    var downloadTitle: String
     
-    var iOSAppId: String = js.native
+    var iOSAppId: String
     
-    var iOSAppLookupUrl: String = js.native
+    var iOSAppLookupUrl: String
     
-    def onError(err: Error): js.Any = js.native
+    def onError(err: Error): js.Any
     
-    var shouldCheckApkHasDownloaded: Boolean = js.native
+    var shouldCheckApkHasDownloaded: Boolean
   }
   object Options {
     

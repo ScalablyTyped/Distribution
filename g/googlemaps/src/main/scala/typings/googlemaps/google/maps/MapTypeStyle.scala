@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapTypeStyle extends StObject {
   
-  var elementType: js.UndefOr[MapTypeStyleElementType] = js.native
+  var elementType: js.UndefOr[MapTypeStyleElementType] = js.undefined
   
-  var featureType: js.UndefOr[MapTypeStyleFeatureType] = js.native
+  var featureType: js.UndefOr[MapTypeStyleFeatureType] = js.undefined
   
-  var stylers: js.UndefOr[js.Array[MapTypeStyler]] = js.native
+  var stylers: js.UndefOr[js.Array[MapTypeStyler]] = js.undefined
 }
 object MapTypeStyle {
   

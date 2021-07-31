@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateMitigationActionResponse extends StObject {
   
   /**
     * The ARN for the new mitigation action.
     */
-  var actionArn: js.UndefOr[MitigationActionArn] = js.native
+  var actionArn: js.UndefOr[MitigationActionArn] = js.undefined
   
   /**
     * A unique identifier for the new mitigation action.
     */
-  var actionId: js.UndefOr[MitigationActionId] = js.native
+  var actionId: js.UndefOr[MitigationActionId] = js.undefined
 }
 object CreateMitigationActionResponse {
   

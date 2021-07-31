@@ -2,16 +2,14 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSecurityPolicyResponse extends StObject {
   
   /**
     * An array containing the properties of the security policy.
     */
-  var SecurityPolicy: DescribedSecurityPolicy = js.native
+  var SecurityPolicy: DescribedSecurityPolicy
 }
 object DescribeSecurityPolicyResponse {
   

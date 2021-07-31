@@ -5,7 +5,6 @@ import typings.lasso.writerMod.Writer
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lassoContextMod {
@@ -31,7 +30,7 @@ object lassoContextMod {
     
     var dependencyRegistry: DependencyRegistry = js.native
     
-    var flags: js.Array[_] = js.native
+    var flags: js.Array[js.Any] = js.native
     
     var lasso: typings.lasso.lassoMod.default = js.native
     

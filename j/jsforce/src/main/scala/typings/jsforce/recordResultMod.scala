@@ -5,23 +5,23 @@ import typings.jsforce.jsforceBooleans.`true`
 import typings.jsforce.salesforceIdMod.SalesforceId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object recordResultMod {
   
-  @js.native
-  trait ErrorResult extends RecordResult {
+  trait ErrorResult
+    extends StObject
+       with RecordResult {
     
-    var errors: js.Array[String] = js.native
+    var errors: js.Array[String]
     
-    var success: `false` = js.native
+    var success: `false`
   }
   object ErrorResult {
     
     @scala.inline
-    def apply(errors: js.Array[String], success: `false`): ErrorResult = {
-      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def apply(errors: js.Array[String]): ErrorResult = {
+      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = false)
       __obj.asInstanceOf[ErrorResult]
     }
     
@@ -47,30 +47,31 @@ object recordResultMod {
   object RecordResult {
     
     @scala.inline
-    def ErrorResult(errors: js.Array[String], success: `false`): typings.jsforce.recordResultMod.ErrorResult = {
-      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def ErrorResult(errors: js.Array[String]): typings.jsforce.recordResultMod.ErrorResult = {
+      val __obj = js.Dynamic.literal(errors = errors.asInstanceOf[js.Any], success = false)
       __obj.asInstanceOf[typings.jsforce.recordResultMod.ErrorResult]
     }
     
     @scala.inline
-    def SuccessResult(id: SalesforceId, success: `true`): typings.jsforce.recordResultMod.SuccessResult = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def SuccessResult(id: SalesforceId): typings.jsforce.recordResultMod.SuccessResult = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = true)
       __obj.asInstanceOf[typings.jsforce.recordResultMod.SuccessResult]
     }
   }
   
-  @js.native
-  trait SuccessResult extends RecordResult {
+  trait SuccessResult
+    extends StObject
+       with RecordResult {
     
-    var id: SalesforceId = js.native
+    var id: SalesforceId
     
-    var success: `true` = js.native
+    var success: `true`
   }
   object SuccessResult {
     
     @scala.inline
-    def apply(id: SalesforceId, success: `true`): SuccessResult = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+    def apply(id: SalesforceId): SuccessResult = {
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], success = true)
       __obj.asInstanceOf[SuccessResult]
     }
     

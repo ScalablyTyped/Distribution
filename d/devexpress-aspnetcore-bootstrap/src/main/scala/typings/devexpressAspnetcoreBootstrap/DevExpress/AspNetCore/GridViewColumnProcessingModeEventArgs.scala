@@ -2,13 +2,13 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridViewColumnProcessingModeEventArgs extends ProcessingModeEventArgs {
+trait GridViewColumnProcessingModeEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  val column: BootstrapGridViewColumn = js.native
+  val column: BootstrapGridViewColumn
 }
 object GridViewColumnProcessingModeEventArgs {
   

@@ -2,21 +2,19 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmitHelper extends StObject {
   
-  val dependencies: js.UndefOr[js.Array[EmitHelper]] = js.native
+  val dependencies: js.UndefOr[js.Array[EmitHelper]] = js.undefined
   
-  val name: java.lang.String = js.native
+  val name: java.lang.String
   
-  val priority: js.UndefOr[Double] = js.native
+  val priority: js.UndefOr[Double] = js.undefined
   
-  val scoped: Boolean = js.native
+  val scoped: Boolean
   
-  val text: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String]) = js.native
+  val text: java.lang.String | (js.Function1[/* node */ EmitHelperUniqueNameCallback, java.lang.String])
 }
 object EmitHelper {
   

@@ -3,21 +3,19 @@ package typings.iotaLibJs.anon
 import typings.iotaLibJs.mod.InputObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Balance extends StObject {
   
-  var addresses: js.Array[String] = js.native
+  var addresses: js.Array[String]
   
-  var balance: Double = js.native
+  var balance: Double
   
-  var inputs: js.Array[InputObject] = js.native
+  var inputs: js.Array[InputObject]
   
-  var latestAddress: String = js.native
+  var latestAddress: String
   
-  var transfers: js.Array[String] = js.native
+  var transfers: js.Array[String]
 }
 object Balance {
   

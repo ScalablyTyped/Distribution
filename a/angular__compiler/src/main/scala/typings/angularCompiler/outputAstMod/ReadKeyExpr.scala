@@ -3,7 +3,6 @@ package typings.angularCompiler.outputAstMod
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/src/output/output_ast", "ReadKeyExpr")
@@ -11,13 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ReadKeyExpr protected () extends Expression {
   def this(receiver: Expression, index: Expression) = this()
   def this(receiver: Expression, index: Expression, `type`: Type) = this()
-  def this(
-    receiver: Expression,
-    index: Expression,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: ParseSourceSpan
-  ) = this()
   def this(receiver: Expression, index: Expression, `type`: Null, sourceSpan: ParseSourceSpan) = this()
+  def this(receiver: Expression, index: Expression, `type`: Unit, sourceSpan: ParseSourceSpan) = this()
   def this(receiver: Expression, index: Expression, `type`: Type, sourceSpan: ParseSourceSpan) = this()
   
   var index: Expression = js.native

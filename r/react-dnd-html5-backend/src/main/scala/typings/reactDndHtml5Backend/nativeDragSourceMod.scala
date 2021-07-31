@@ -5,7 +5,6 @@ import typings.reactDndHtml5Backend.nativeTypesConfigMod.NativeItemConfig
 import typings.std.DataTransfer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeDragSourceMod {

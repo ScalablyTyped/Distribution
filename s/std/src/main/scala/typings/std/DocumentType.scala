@@ -2,12 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A Node containing a doctype. */
 @js.native
-trait DocumentType extends ChildNode {
+trait DocumentType
+  extends StObject
+     with ChildNode {
   
   val name: java.lang.String = js.native
   

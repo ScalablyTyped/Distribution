@@ -10,35 +10,30 @@ import typings.node.streamMod.TransformOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shimsHdkeyCryptoMod {
   
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "createHash")
+  @JSImport("ethereum-cryptography/shims/hdkey-crypto", JSImport.Namespace)
   @js.native
-  def createHash(algorithm: String): Hash = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "createHash")
-  @js.native
-  def createHash(algorithm: String, options: HashOptions): Hash = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: BinaryLike): Hmac = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: BinaryLike, options: TransformOptions): Hmac = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: KeyObject): Hmac = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "createHmac")
-  @js.native
-  def createHmac(algorithm: String, key: KeyObject, options: TransformOptions): Hmac = js.native
+  @scala.inline
+  def createHash(algorithm: String): Hash = ^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any]).asInstanceOf[Hash]
+  @scala.inline
+  def createHash(algorithm: String, options: HashOptions): Hash = (^.asInstanceOf[js.Dynamic].applyDynamic("createHash")(algorithm.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Hash]
   
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double): Buffer = js.native
-  @JSImport("ethereum-cryptography/shims/hdkey-crypto", "randomBytes")
-  @js.native
-  def randomBytes(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = js.native
+  @scala.inline
+  def createHmac(algorithm: String, key: BinaryLike): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  @scala.inline
+  def createHmac(algorithm: String, key: BinaryLike, options: TransformOptions): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  @scala.inline
+  def createHmac(algorithm: String, key: KeyObject): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  @scala.inline
+  def createHmac(algorithm: String, key: KeyObject, options: TransformOptions): Hmac = (^.asInstanceOf[js.Dynamic].applyDynamic("createHmac")(algorithm.asInstanceOf[js.Any], key.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Hmac]
+  
+  @scala.inline
+  def randomBytes(size: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def randomBytes(size: Double, callback: js.Function2[/* err */ Error | Null, /* buf */ Buffer, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("randomBytes")(size.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

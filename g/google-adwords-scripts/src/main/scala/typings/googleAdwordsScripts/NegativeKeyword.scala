@@ -2,20 +2,19 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Negative Keywords
-@js.native
 trait NegativeKeyword
-  extends isAdGroupChild
-     with AdWordsEntity {
+  extends StObject
+     with AdWordsEntity
+     with isAdGroupChild {
   
-  def getMatchType(): MatchType = js.native
+  def getMatchType(): MatchType
   
-  def getText(): String = js.native
+  def getText(): String
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object NegativeKeyword {
   

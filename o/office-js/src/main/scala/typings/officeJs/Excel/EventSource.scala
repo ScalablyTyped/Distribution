@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,12 +18,16 @@ object EventSource extends StObject {
     *
     */
   @js.native
-  sealed trait local extends EventSource
+  sealed trait local
+    extends StObject
+       with EventSource
   
   /**
     * Remote means event comes from remote user session.
     *
     */
   @js.native
-  sealed trait remote extends EventSource
+  sealed trait remote
+    extends StObject
+       with EventSource
 }

@@ -11,8 +11,8 @@ A batched diff-based DOM rendering strategy
 | Full name          | virtual-dom |
 | Keywords           | virtual, dom, vdom, vtree, diff, patch, browser |
 | # releases         | 0 |
-| # dependents       | 310 |
-| # downloads        | 578667 |
+| # dependents       | 319 |
+| # downloads        | 659703 |
 | # stars            | 35 |
 
 ## Links

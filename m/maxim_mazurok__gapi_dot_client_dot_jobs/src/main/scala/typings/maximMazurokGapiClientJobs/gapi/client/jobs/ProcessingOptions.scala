@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingOptions extends StObject {
   
   /** Optional. If set to `true`, the service does not attempt to resolve a more precise address for the job. */
-  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.native
+  var disableStreetAddressResolution: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. Option for job HTML content sanitization. Applied fields are: * description * applicationInfo.instruction * incentives * qualifications * responsibilities HTML tags in
     * these fields may be stripped if sanitiazation is not disabled. Defaults to HtmlSanitization.SIMPLE_FORMATTING_ONLY.
     */
-  var htmlSanitization: js.UndefOr[String] = js.native
+  var htmlSanitization: js.UndefOr[String] = js.undefined
 }
 object ProcessingOptions {
   

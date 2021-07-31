@@ -4,29 +4,28 @@ import typings.qlik.qlikStrings.buttongroup
 import typings.qlik.qlikStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyButtonGroup
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: buttongroup = js.native
+  var component: buttongroup
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[js.Array[ButtonGroupOption] | js.Function0[js.Array[ButtonGroupOption]]] = js.native
+  var options: js.UndefOr[js.Array[ButtonGroupOption] | js.Function0[js.Array[ButtonGroupOption]]] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertyButtonGroup: string = js.native
+  var type_CustomPropertyButtonGroup: string
 }
 object CustomPropertyButtonGroup {
   
   @scala.inline
-  def apply(component: buttongroup, `type`: string): CustomPropertyButtonGroup = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): CustomPropertyButtonGroup = {
+    val __obj = js.Dynamic.literal(component = "buttongroup")
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomPropertyButtonGroup]
   }
   

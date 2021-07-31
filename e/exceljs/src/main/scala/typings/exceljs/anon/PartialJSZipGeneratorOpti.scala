@@ -4,16 +4,14 @@ import typings.exceljs.exceljsStrings.DEFLATE
 import typings.exceljs.exceljsStrings.STORE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.JSZipGeneratorOptions> */
-@js.native
 trait PartialJSZipGeneratorOpti extends StObject {
   
-  var compression: js.UndefOr[STORE | DEFLATE] = js.native
+  var compression: js.UndefOr[STORE | DEFLATE] = js.undefined
   
-  var compressionOptions: js.UndefOr[Null | Level] = js.native
+  var compressionOptions: js.UndefOr[Null | Level] = js.undefined
 }
 object PartialJSZipGeneratorOpti {
   

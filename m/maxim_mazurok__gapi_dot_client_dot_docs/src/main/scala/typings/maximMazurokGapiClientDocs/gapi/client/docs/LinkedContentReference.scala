@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkedContentReference extends StObject {
   
   /** A reference to the linked chart. */
-  var sheetsChartReference: js.UndefOr[SheetsChartReference] = js.native
+  var sheetsChartReference: js.UndefOr[SheetsChartReference] = js.undefined
 }
 object LinkedContentReference {
   

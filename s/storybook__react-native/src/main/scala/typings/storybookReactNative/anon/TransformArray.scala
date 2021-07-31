@@ -2,13 +2,11 @@ package typings.storybookReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformArray extends StObject {
   
-  var transform: js.Array[TranslateY | TranslateXTranslateY] = js.native
+  var transform: js.Array[TranslateY | TranslateXTranslateY]
 }
 object TransformArray {
   

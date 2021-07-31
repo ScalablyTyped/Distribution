@@ -2,43 +2,41 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Closedat extends StObject {
   
-  var closed_at: String = js.native
+  var closed_at: String
   
-  var closed_issues: Double = js.native
+  var closed_issues: Double
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var creator: Avatarurl = js.native
+  var creator: Avatarurl
   
-  var description: String = js.native
+  var description: String
   
-  var due_on: String = js.native
+  var due_on: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var labels_url: String = js.native
+  var labels_url: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var number: Double = js.native
+  var number: Double
   
-  var open_issues: Double = js.native
+  var open_issues: Double
   
-  var state: String = js.native
+  var state: String
   
-  var title: String = js.native
+  var title: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object Closedat {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Face extends StObject {
   
   /**
     * Bounding box of the face.
     */
-  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.native
+  var BoundingBox: js.UndefOr[typings.awsSdk.rekognitionMod.BoundingBox] = js.undefined
   
   /**
     * Confidence level that the bounding box contains a face (and not a different object such as a tree).
     */
-  var Confidence: js.UndefOr[Percent] = js.native
+  var Confidence: js.UndefOr[Percent] = js.undefined
   
   /**
     * Identifier that you assign to all the faces in the input image.
     */
-  var ExternalImageId: js.UndefOr[typings.awsSdk.rekognitionMod.ExternalImageId] = js.native
+  var ExternalImageId: js.UndefOr[typings.awsSdk.rekognitionMod.ExternalImageId] = js.undefined
   
   /**
     * Unique identifier that Amazon Rekognition assigns to the face.
     */
-  var FaceId: js.UndefOr[typings.awsSdk.rekognitionMod.FaceId] = js.native
+  var FaceId: js.UndefOr[typings.awsSdk.rekognitionMod.FaceId] = js.undefined
   
   /**
     * Unique identifier that Amazon Rekognition assigns to the input image.
     */
-  var ImageId: js.UndefOr[typings.awsSdk.rekognitionMod.ImageId] = js.native
+  var ImageId: js.UndefOr[typings.awsSdk.rekognitionMod.ImageId] = js.undefined
 }
 object Face {
   

@@ -6,24 +6,24 @@ import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPathFromStateMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/getPathFromState", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/getPathFromState", JSImport.Namespace)
   @js.native
-  def default(state: State): String = js.native
-  @JSImport("@react-navigation/core/lib/typescript/src/getPathFromState", JSImport.Default)
-  @js.native
-  def default(state: State, options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(state: State): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(state: State, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(state.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var initialRouteName: js.UndefOr[String] = js.native
+    var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap = js.native
+    var screens: PathConfigMap
   }
   object Options {
     

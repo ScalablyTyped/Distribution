@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDashboardInput extends StObject {
   
   /**
     * The name of the dashboard to be described.
     */
-  var DashboardName: typings.awsSdk.cloudwatchMod.DashboardName = js.native
+  var DashboardName: typings.awsSdk.cloudwatchMod.DashboardName
 }
 object GetDashboardInput {
   

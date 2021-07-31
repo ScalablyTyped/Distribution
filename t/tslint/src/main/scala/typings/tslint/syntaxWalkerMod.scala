@@ -78,7 +78,6 @@ import typings.typescript.mod.WhileStatement
 import typings.typescript.mod.WithStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syntaxWalkerMod {

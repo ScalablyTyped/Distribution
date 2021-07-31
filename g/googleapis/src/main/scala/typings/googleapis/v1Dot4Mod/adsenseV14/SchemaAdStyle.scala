@@ -4,10 +4,8 @@ import typings.googleapis.anon.Background
 import typings.googleapis.anon.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAdStyle extends StObject {
   
   /**
@@ -15,23 +13,23 @@ trait SchemaAdStyle extends StObject {
     * hexadecimal characters, similar to HTML color codes, but without the
     * leading hash.
     */
-  var colors: js.UndefOr[Background] = js.native
+  var colors: js.UndefOr[Background] = js.undefined
   
   /**
     * The style of the corners in the ad (deprecated: never populated,
     * ignored).
     */
-  var corners: js.UndefOr[String] = js.native
+  var corners: js.UndefOr[String] = js.undefined
   
   /**
     * The font which is included in the style.
     */
-  var font: js.UndefOr[Size] = js.native
+  var font: js.UndefOr[Size] = js.undefined
   
   /**
     * Kind this is, in this case adsense#adStyle.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAdStyle {
   

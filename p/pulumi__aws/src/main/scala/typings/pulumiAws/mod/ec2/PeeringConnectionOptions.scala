@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "ec2.PeeringConnectionOptions")
@@ -27,6 +26,10 @@ class PeeringConnectionOptions protected ()
 /* static members */
 object PeeringConnectionOptions {
   
+  @JSImport("@pulumi/aws", "ec2.PeeringConnectionOptions")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get an existing PeeringConnectionOptions resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -36,24 +39,19 @@ object PeeringConnectionOptions {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/aws", "ec2.PeeringConnectionOptions.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = js.native
-  @JSImport("@pulumi/aws", "ec2.PeeringConnectionOptions.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = js.native
-  @JSImport("@pulumi/aws", "ec2.PeeringConnectionOptions.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = js.native
-  @JSImport("@pulumi/aws", "ec2.PeeringConnectionOptions.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState, opts: CustomResourceOptions): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState, opts: CustomResourceOptions): typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.peeringConnectionOptionsMod.PeeringConnectionOptions]
   
   /**
     * Returns true if the given object is an instance of PeeringConnectionOptions.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/aws", "ec2.PeeringConnectionOptions.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/peeringConnectionOptions.PeeringConnectionOptions */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/peeringConnectionOptions.PeeringConnectionOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/peeringConnectionOptions.PeeringConnectionOptions */ Boolean]
 }

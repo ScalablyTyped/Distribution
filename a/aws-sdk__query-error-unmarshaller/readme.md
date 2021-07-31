@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.2
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/query-error-unmarshaller |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 42 |
-| # downloads        | 65374 |
+| # releases         | 8 |
+| # dependents       | 0 |
+| # downloads        | 111471 |
 | # stars            | 0 |
 
 ## Links

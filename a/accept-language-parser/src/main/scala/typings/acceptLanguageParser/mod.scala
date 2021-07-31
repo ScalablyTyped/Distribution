@@ -2,38 +2,35 @@ package typings.acceptLanguageParser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("accept-language-parser", "parse")
+  @JSImport("accept-language-parser", JSImport.Namespace)
   @js.native
-  def parse(acceptLanguage: String): js.Array[Language] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("accept-language-parser", "pick")
-  @js.native
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String): T | Null = js.native
-  @JSImport("accept-language-parser", "pick")
-  @js.native
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String, options: PickOptions): T | Null = js.native
-  @JSImport("accept-language-parser", "pick")
-  @js.native
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language]): T | Null = js.native
-  @JSImport("accept-language-parser", "pick")
-  @js.native
-  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language], options: PickOptions): T | Null = js.native
+  @scala.inline
+  def parse(acceptLanguage: String): js.Array[Language] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(acceptLanguage.asInstanceOf[js.Any]).asInstanceOf[js.Array[Language]]
   
-  @js.native
+  @scala.inline
+  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: String, options: PickOptions): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def pick[T /* <: String */](supportedLanguages: js.Array[T], acceptLanguage: js.Array[Language], options: PickOptions): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("pick")(supportedLanguages.asInstanceOf[js.Any], acceptLanguage.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  
   trait Language extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var quality: Double = js.native
+    var quality: Double
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
     
-    var script: js.UndefOr[String | Null] = js.native
+    var script: js.UndefOr[String | Null] = js.undefined
   }
   object Language {
     
@@ -69,10 +66,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PickOptions extends StObject {
     
-    var loose: js.UndefOr[Boolean] = js.native
+    var loose: js.UndefOr[Boolean] = js.undefined
   }
   object PickOptions {
     

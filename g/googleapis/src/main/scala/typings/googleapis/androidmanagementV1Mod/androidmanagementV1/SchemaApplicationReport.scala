@@ -2,46 +2,44 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information reported about an installed app.
   */
-@js.native
 trait SchemaApplicationReport extends StObject {
   
   /**
     * The source of the package.
     */
-  var applicationSource: js.UndefOr[String] = js.native
+  var applicationSource: js.UndefOr[String] = js.undefined
   
   /**
     * The display name of the app.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * List of app events. The most recent 20 events are stored in the list.
     */
-  var events: js.UndefOr[js.Array[SchemaApplicationEvent]] = js.native
+  var events: js.UndefOr[js.Array[SchemaApplicationEvent]] = js.undefined
   
   /**
     * The package name of the app that installed this app.
     */
-  var installerPackageName: js.UndefOr[String] = js.native
+  var installerPackageName: js.UndefOr[String] = js.undefined
   
   /**
     * Package name of the app.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * The SHA-256 hash of the app&#39;s APK file, which can be used to verify
     * the app hasn&#39;t been modified. Each byte of the hash value is
     * represented as a two-digit hexadecimal number.
     */
-  var packageSha256Hash: js.UndefOr[String] = js.native
+  var packageSha256Hash: js.UndefOr[String] = js.undefined
   
   /**
     * The SHA-1 hash of each android.content.pm.Signature
@@ -49,23 +47,23 @@ trait SchemaApplicationReport extends StObject {
     * associated with the app package. Each byte of each hash value is
     * represented as a two-digit hexadecimal number.
     */
-  var signingKeyCertFingerprints: js.UndefOr[js.Array[String]] = js.native
+  var signingKeyCertFingerprints: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Application state.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * The app version code, which can be used to determine whether one version
     * is more recent than another.
     */
-  var versionCode: js.UndefOr[Double] = js.native
+  var versionCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The app version as displayed to the user.
     */
-  var versionName: js.UndefOr[String] = js.native
+  var versionName: js.UndefOr[String] = js.undefined
 }
 object SchemaApplicationReport {
   

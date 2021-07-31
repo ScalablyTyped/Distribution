@@ -2,7 +2,6 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * distance from one origin to one destination.
   * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseElement Maps JavaScript API}
   */
-@js.native
 trait DistanceMatrixResponseElement extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait DistanceMatrixResponseElement extends StObject {
     * unknown.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseElement.distance Maps JavaScript API}
     */
-  var distance: Distance = js.native
+  var distance: Distance
   
   /**
     * The duration for this origin-destination pairing. This property may be undefined as the duration may be
     * unknown.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseElement.duration Maps JavaScript API}
     */
-  var duration: Duration = js.native
+  var duration: Duration
   
   /**
     * The duration for this origin-destination pairing, taking into account the traffic conditions indicated by the
@@ -34,19 +32,19 @@ trait DistanceMatrixResponseElement extends StObject {
     * making the request.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseElement.duration_in_traffic Maps JavaScript API}
     */
-  var duration_in_traffic: Duration = js.native
+  var duration_in_traffic: Duration
   
   /**
     * The total fare for this origin-destination pairing. Only applicable to transit requests.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseElement.fare Maps JavaScript API}
     */
-  var fare: TransitFare = js.native
+  var fare: TransitFare
   
   /**
     * The status of this particular origin-destination pairing.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/distance-matrix#DistanceMatrixResponseElement.status Maps JavaScript API}
     */
-  var status: DistanceMatrixElementStatus = js.native
+  var status: DistanceMatrixElementStatus
 }
 object DistanceMatrixResponseElement {
   

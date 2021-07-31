@@ -4,29 +4,29 @@ import typings.webicon.svgIconMod.SvgIcon
 import typings.webicon.webiconBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object svgCumulativeIconSetMod {
   
-  @js.native
-  trait SvgCumulativeIconSet extends SvgIcon {
+  trait SvgCumulativeIconSet
+    extends StObject
+       with SvgIcon {
     
     /**
       * A value indicating whether the icons are loaded separately.
       */
-    var cumulative: `true` = js.native
+    var cumulative: `true`
     
     /**
       * The number of miliseconds to wait before downloading the icons.
       */
-    var waitDuration: js.UndefOr[Double] = js.native
+    var waitDuration: js.UndefOr[Double] = js.undefined
   }
   object SvgCumulativeIconSet {
     
     @scala.inline
-    def apply(cumulative: `true`): SvgCumulativeIconSet = {
-      val __obj = js.Dynamic.literal(cumulative = cumulative.asInstanceOf[js.Any])
+    def apply(): SvgCumulativeIconSet = {
+      val __obj = js.Dynamic.literal(cumulative = true)
       __obj.asInstanceOf[SvgCumulativeIconSet]
     }
     

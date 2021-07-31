@@ -5,11 +5,10 @@ import typings.angularCore.mod.Injector
 import typings.ionicAngular.valueAccessorMod.ValueAccessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@ionic/angular", "\u0275b")
 @js.native
 class ɵb protected () extends ValueAccessor {
-  def this(injector: Injector, el: ElementRef[_]) = this()
+  def this(injector: Injector, el: ElementRef[js.Any]) = this()
 }

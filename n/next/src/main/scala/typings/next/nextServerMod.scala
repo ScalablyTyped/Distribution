@@ -20,18 +20,18 @@ import typings.std.Error
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nextServerMod {
   
   @JSImport("next/dist/next-server/server/next-server", JSImport.Default)
   @js.native
-  class default () extends Server {
+  class default ()
+    extends StObject
+       with Server {
     def this(hasDirQuietConfDevCustomServer: ServerConstructor) = this()
   }
   
-  @js.native
   trait DynamicRouteItem extends StObject {
     
     var `match`: ReturnType[
@@ -44,9 +44,9 @@ object nextServerMod {
             `false` | (StringDictionary[String | js.Array[String]])
           ]
         ]
-      ] = js.native
+      ]
     
-    var page: String = js.native
+    var page: String
   }
   object DynamicRouteItem {
     
@@ -196,7 +196,7 @@ object nextServerMod {
       req: IncomingMessage,
       res: ServerResponse,
       pathname: String,
-      query: js.UndefOr[scala.Nothing],
+      query: Unit,
       parsedUrl: UrlWithParsedQuery
     ): js.Promise[Unit] = js.native
     def render(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
@@ -209,12 +209,7 @@ object nextServerMod {
     ): js.Promise[Unit] = js.native
     
     def render404(req: IncomingMessage, res: ServerResponse): js.Promise[Unit] = js.native
-    def render404(
-      req: IncomingMessage,
-      res: ServerResponse,
-      parsedUrl: js.UndefOr[scala.Nothing],
-      setHeaders: Boolean
-    ): js.Promise[Unit] = js.native
+    def render404(req: IncomingMessage, res: ServerResponse, parsedUrl: Unit, setHeaders: Boolean): js.Promise[Unit] = js.native
     def render404(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery): js.Promise[Unit] = js.native
     def render404(req: IncomingMessage, res: ServerResponse, parsedUrl: UrlWithParsedQuery, setHeaders: Boolean): js.Promise[Unit] = js.native
     
@@ -224,7 +219,7 @@ object nextServerMod {
       req: IncomingMessage,
       res: ServerResponse,
       pathname: String,
-      query: js.UndefOr[scala.Nothing],
+      query: Unit,
       setHeaders: Boolean
     ): js.Promise[Unit] = js.native
     def renderError(err: Null, req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
@@ -242,7 +237,7 @@ object nextServerMod {
       req: IncomingMessage,
       res: ServerResponse,
       pathname: String,
-      query: js.UndefOr[scala.Nothing],
+      query: Unit,
       setHeaders: Boolean
     ): js.Promise[Unit] = js.native
     def renderError(err: Error, req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
@@ -284,27 +279,26 @@ object nextServerMod {
     /* protected */ def setImmutableAssetCacheControl(res: ServerResponse): Unit = js.native
   }
   
-  @js.native
   trait ServerConstructor extends StObject {
     
     /**
       * Object what you would use in next.config.js - @default {}
       */
-    var conf: js.UndefOr[NextConfig] = js.native
+    var conf: js.UndefOr[NextConfig] = js.undefined
     
-    var customServer: js.UndefOr[Boolean] = js.native
+    var customServer: js.UndefOr[Boolean] = js.undefined
     
-    var dev: js.UndefOr[Boolean] = js.native
+    var dev: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Where the Next project is located - @default '.'
       */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * Hide error messages containing server information - @default false
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
   }
   object ServerConstructor {
     

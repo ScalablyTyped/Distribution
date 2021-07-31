@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FolderConfiguration extends StObject {
   
   /**
     * The action to take on the folder contents at the end of the folder configuration period.
     */
-  var Action: RetentionAction = js.native
+  var Action: RetentionAction
   
   /**
     * The folder name.
     */
-  var Name: FolderName = js.native
+  var Name: FolderName
   
   /**
     * The period of time at which the folder configuration action is applied.
     */
-  var Period: js.UndefOr[RetentionPeriod] = js.native
+  var Period: js.UndefOr[RetentionPeriod] = js.undefined
 }
 object FolderConfiguration {
   

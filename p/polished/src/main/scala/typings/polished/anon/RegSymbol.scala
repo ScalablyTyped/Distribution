@@ -4,23 +4,21 @@ import typings.polished.polishedStrings.Asterisk
 import typings.polished.polishedStrings.BackslashAsterisk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegSymbol extends StObject {
   
-  var infix: Notation = js.native
+  var infix: Notation
   
-  var regSymbol: BackslashAsterisk = js.native
+  var regSymbol: BackslashAsterisk
   
-  var symbol: Asterisk = js.native
+  var symbol: Asterisk
 }
 object RegSymbol {
   
   @scala.inline
-  def apply(infix: Notation, regSymbol: BackslashAsterisk, symbol: Asterisk): RegSymbol = {
-    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = regSymbol.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+  def apply(infix: Notation): RegSymbol = {
+    val __obj = js.Dynamic.literal(infix = infix.asInstanceOf[js.Any], regSymbol = "\\*", symbol = "*")
     __obj.asInstanceOf[RegSymbol]
   }
   

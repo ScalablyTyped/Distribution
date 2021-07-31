@@ -2,14 +2,12 @@ package typings.semanticUiSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-search.SemanticUI.Search.SelectorSettings._Impl, 'category'> */
-@js.native
 trait PickImplcategoryCategory extends StObject {
   
-  var category: String = js.native
+  var category: String
 }
 object PickImplcategoryCategory {
   

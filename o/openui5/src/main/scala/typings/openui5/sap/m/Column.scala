@@ -6,11 +6,12 @@ import typings.openui5.sap.ui.core.TextAlign
 import typings.openui5.sap.ui.core.VerticalAlign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Column extends Element {
+trait Column
+  extends StObject
+     with Element {
   
   /**
     * Apply text alignment of the Column to Text/Label/Link...TODO: This is so ugly to check content

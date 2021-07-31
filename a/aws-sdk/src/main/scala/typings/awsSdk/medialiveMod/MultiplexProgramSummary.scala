@@ -2,21 +2,19 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexProgramSummary extends StObject {
   
   /**
     * The MediaLive Channel associated with the program.
     */
-  var ChannelId: js.UndefOr[string] = js.native
+  var ChannelId: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the multiplex program.
     */
-  var ProgramName: js.UndefOr[string] = js.native
+  var ProgramName: js.UndefOr[string] = js.undefined
 }
 object MultiplexProgramSummary {
   

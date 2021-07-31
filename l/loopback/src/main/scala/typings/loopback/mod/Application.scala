@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -125,6 +124,10 @@ class Application protected () extends PersistedModel {
 }
 object Application {
   
+  @JSImport("loopback", "Application")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Authenticate the application id and key
     * @param {Any} appId
@@ -139,9 +142,8 @@ object Application {
     * - masterKe
     */
   /* static member */
-  @JSImport("loopback", "Application.authenticate")
-  @js.native
-  def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ Error, /* matched */ String, Unit]): Unit = js.native
+  @scala.inline
+  def authenticate(appId: js.Any, key: String, callback: js.Function2[/* err */ Error, /* matched */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("authenticate")(appId.asInstanceOf[js.Any], key.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Register a new application
@@ -151,9 +153,8 @@ object Application {
     * @param {() => void} callback  Callback function
     */
   /* static member */
-  @JSImport("loopback", "Application.register")
-  @js.native
-  def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def register(owner: String, name: String, options: js.Any, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(owner.asInstanceOf[js.Any], name.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Reset keys for the application instance
@@ -161,7 +162,6 @@ object Application {
     * @param {Error} err
     */
   /* static member */
-  @JSImport("loopback", "Application.resetKeys")
-  @js.native
-  def resetKeys(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
+  @scala.inline
+  def resetKeys(callback: js.Function1[/* err */ Error, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetKeys")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

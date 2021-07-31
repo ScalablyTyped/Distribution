@@ -1,21 +1,86 @@
 package typings.sharepoint.global
 
+import org.scalablytyped.runtime.StringDictionary
+import typings.sharepoint.ISPClientAutoFillData
 import typings.std.HTMLElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SPClientAutoFill")
 @js.native
 class SPClientAutoFill protected ()
-  extends typings.sharepoint.SPClientAutoFill {
+  extends StObject
+     with typings.sharepoint.SPClientAutoFill {
   def this(
     elmTextId: String,
     elmContainerId: String,
     fnPopulateAutoFill: js.Function1[/* targetElement */ HTMLInputElement, Unit]
   ) = this()
+  
+  /* CompleteClass */
+  var AllOptionData: StringDictionary[ISPClientAutoFillData] = js.native
+  
+  /* CompleteClass */
+  var AutoFillCallbackTimeoutID: String = js.native
+  
+  /* CompleteClass */
+  var AutoFillContainerId: String = js.native
+  
+  /* CompleteClass */
+  var AutoFillMenuId: String = js.native
+  
+  /* CompleteClass */
+  var AutoFillMinTextLength: Double = js.native
+  
+  /* CompleteClass */
+  var AutoFillTimeout: Double = js.native
+  
+  /* CompleteClass */
+  override def BlurAutoFill(): Unit = js.native
+  
+  /* CompleteClass */
+  override def CloseAutoFill(ojData: ISPClientAutoFillData): Unit = js.native
+  
+  /* CompleteClass */
+  var CurrentFocusOption: Double = js.native
+  
+  /* CompleteClass */
+  override def FocusAutoFill(): Unit = js.native
+  
+  /* CompleteClass */
+  override def FuncOnAutoFillClose(elmTextId: String, ojData: ISPClientAutoFillData): Unit = js.native
+  
+  /* CompleteClass */
+  override def FuncPopulateAutoFill(targetElement: HTMLElement): Unit = js.native
+  
+  /* CompleteClass */
+  override def IsAutoFillOpen(): Boolean = js.native
+  
+  /* CompleteClass */
+  override def PopulateAutoFill(
+    jsonObjSuggestions: js.Array[ISPClientAutoFillData],
+    fnOnAutoFillCloseFuncName: js.Function2[/* elmTextId */ String, /* objData */ ISPClientAutoFillData, Unit]
+  ): Unit = js.native
+  
+  /* CompleteClass */
+  override def SelectAutoFillOption(elemOption: HTMLElement): Unit = js.native
+  
+  /* CompleteClass */
+  override def SetAutoFillHeight(): Unit = js.native
+  
+  /* CompleteClass */
+  var TextElementId: String = js.native
+  
+  /* CompleteClass */
+  override def UpdateAutoFillMenuFocus(bMoveNextLink: Boolean): Unit = js.native
+  
+  /* CompleteClass */
+  override def UpdateAutoFillPosition(): Unit = js.native
+  
+  /* CompleteClass */
+  var VisibleItemCount: Double = js.native
 }
 object SPClientAutoFill {
   
@@ -32,20 +97,17 @@ object SPClientAutoFill {
   def DisplayTextProperty_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DisplayTextProperty")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSGlobal("SPClientAutoFill.GetAutoFillMenuItemFromOption")
-  @js.native
-  def GetAutoFillMenuItemFromOption(elmChild: HTMLElement): HTMLElement = js.native
+  @scala.inline
+  def GetAutoFillMenuItemFromOption(elmChild: HTMLElement): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillMenuItemFromOption")(elmChild.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
   
   /* static member */
-  @JSGlobal("SPClientAutoFill.GetAutoFillObjFromContainer")
-  @js.native
-  def GetAutoFillObjFromContainer(elmChild: HTMLElement): typings.sharepoint.SPClientAutoFill = js.native
+  @scala.inline
+  def GetAutoFillObjFromContainer(elmChild: HTMLElement): typings.sharepoint.SPClientAutoFill = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillObjFromContainer")(elmChild.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientAutoFill]
   
   // = 'AutoFillMenuOptionType';
   /* static member */
-  @JSGlobal("SPClientAutoFill.GetAutoFillObjFromInput")
-  @js.native
-  def GetAutoFillObjFromInput(elmText: HTMLInputElement): typings.sharepoint.SPClientAutoFill = js.native
+  @scala.inline
+  def GetAutoFillObjFromInput(elmText: HTMLInputElement): typings.sharepoint.SPClientAutoFill = ^.asInstanceOf[js.Dynamic].applyDynamic("GetAutoFillObjFromInput")(elmText.asInstanceOf[js.Any]).asInstanceOf[typings.sharepoint.SPClientAutoFill]
   
   /* static member */
   @JSGlobal("SPClientAutoFill.KeyProperty")

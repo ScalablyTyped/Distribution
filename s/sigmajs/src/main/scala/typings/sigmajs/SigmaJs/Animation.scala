@@ -3,13 +3,11 @@ package typings.sigmajs.SigmaJs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animation extends StObject {
   
-  def camera(camera: Camera, target: StringDictionary[js.Any], options: StringDictionary[js.Any]): Double = js.native
+  def camera(camera: Camera, target: StringDictionary[js.Any], options: StringDictionary[js.Any]): Double
 }
 object Animation {
   

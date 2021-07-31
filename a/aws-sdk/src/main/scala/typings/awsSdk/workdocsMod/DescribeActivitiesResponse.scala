@@ -2,21 +2,19 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeActivitiesResponse extends StObject {
   
   /**
     * The marker for the next set of results.
     */
-  var Marker: js.UndefOr[MarkerType] = js.native
+  var Marker: js.UndefOr[MarkerType] = js.undefined
   
   /**
     * The list of activities for the specified user and time period.
     */
-  var UserActivities: js.UndefOr[typings.awsSdk.workdocsMod.UserActivities] = js.native
+  var UserActivities: js.UndefOr[typings.awsSdk.workdocsMod.UserActivities] = js.undefined
 }
 object DescribeActivitiesResponse {
   

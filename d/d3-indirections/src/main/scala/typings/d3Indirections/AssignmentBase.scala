@@ -2,17 +2,15 @@ package typings.d3Indirections
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Base class for assigning values to existing indirections.
   */
-@js.native
 trait AssignmentBase extends StObject {
   
   /** Unique identifier of the indirection. */
-  var uid: String = js.native
+  var uid: String
 }
 object AssignmentBase {
   

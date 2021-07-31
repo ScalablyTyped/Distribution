@@ -7,26 +7,24 @@ import typings.sparkpost.sparkpostStrings.Success
 import typings.sparkpost.sparkpostStrings.submitted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransmissionSummary extends StObject {
   
   /** Name of the campaign */
-  var campaign_id: String = js.native
+  var campaign_id: String
   
   /** Content that will be used to construct a message */
-  var content: TemplateidString = js.native
+  var content: TemplateidString
   
   /** Description of the transmission */
-  var description: String = js.native
+  var description: String
   
   /** ID of the transmission */
-  var id: String = js.native
+  var id: String
   
   /** State of the transmission */
-  var state: submitted | Generating | Success | Canceled = js.native
+  var state: submitted | Generating | Success | Canceled
 }
 object TransmissionSummary {
   

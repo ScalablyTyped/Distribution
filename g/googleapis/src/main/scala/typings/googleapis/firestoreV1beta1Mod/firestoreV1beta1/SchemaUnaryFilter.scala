@@ -2,24 +2,22 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter with a single operand.
   */
-@js.native
 trait SchemaUnaryFilter extends StObject {
   
   /**
     * The field to which to apply the operator.
     */
-  var field: js.UndefOr[SchemaFieldReference] = js.native
+  var field: js.UndefOr[SchemaFieldReference] = js.undefined
   
   /**
     * The unary operator to apply.
     */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
 }
 object SchemaUnaryFilter {
   

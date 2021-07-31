@@ -2,33 +2,31 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentPoolQueue extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * The ID of the queue.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The name of the queue.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The pool used by this queue.
     */
-  var pool: TaskAgentPoolReference = js.native
+  var pool: TaskAgentPoolReference
   
   /**
     * The full http link to the resource.
     */
-  var url: String = js.native
+  var url: String
 }
 object AgentPoolQueue {
   

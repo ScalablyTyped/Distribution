@@ -5,43 +5,39 @@ import typings.libp2pNoise.basicMod.bytes
 import typings.libp2pNoise.handshakeMod.MessageBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object encoderMod {
   
-  @JSImport("libp2p-noise/dist/src/encoder", "decode0")
+  @JSImport("libp2p-noise/dist/src/encoder", JSImport.Namespace)
   @js.native
-  def decode0(input: bytes): MessageBuffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("libp2p-noise/dist/src/encoder", "decode1")
-  @js.native
-  def decode1(input: bytes): MessageBuffer = js.native
+  @scala.inline
+  def decode0(input: bytes): MessageBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode0")(input.asInstanceOf[js.Any]).asInstanceOf[MessageBuffer]
   
-  @JSImport("libp2p-noise/dist/src/encoder", "decode2")
-  @js.native
-  def decode2(input: bytes): MessageBuffer = js.native
+  @scala.inline
+  def decode1(input: bytes): MessageBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode1")(input.asInstanceOf[js.Any]).asInstanceOf[MessageBuffer]
   
-  @JSImport("libp2p-noise/dist/src/encoder", "encode0")
-  @js.native
-  def encode0(message: MessageBuffer): bytes = js.native
+  @scala.inline
+  def decode2(input: bytes): MessageBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode2")(input.asInstanceOf[js.Any]).asInstanceOf[MessageBuffer]
   
-  @JSImport("libp2p-noise/dist/src/encoder", "encode1")
-  @js.native
-  def encode1(message: MessageBuffer): bytes = js.native
+  @scala.inline
+  def encode0(message: MessageBuffer): bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("encode0")(message.asInstanceOf[js.Any]).asInstanceOf[bytes]
   
-  @JSImport("libp2p-noise/dist/src/encoder", "encode2")
-  @js.native
-  def encode2(message: MessageBuffer): bytes = js.native
+  @scala.inline
+  def encode1(message: MessageBuffer): bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("encode1")(message.asInstanceOf[js.Any]).asInstanceOf[bytes]
+  
+  @scala.inline
+  def encode2(message: MessageBuffer): bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("encode2")(message.asInstanceOf[js.Any]).asInstanceOf[bytes]
   
   object uint16BEDecode {
     
-    @JSImport("libp2p-noise/dist/src/encoder", "uint16BEDecode")
-    @js.native
-    def apply(data: typings.bl.mod.^): Double = js.native
-    @JSImport("libp2p-noise/dist/src/encoder", "uint16BEDecode")
-    @js.native
-    def apply(data: Buffer): Double = js.native
+    @scala.inline
+    def apply(data: typings.bl.mod.^): Double = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def apply(data: Buffer): Double = ^.asInstanceOf[js.Dynamic].apply(data.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
     @JSImport("libp2p-noise/dist/src/encoder", "uint16BEDecode")
     @js.native
     val ^ : js.Any = js.native
@@ -55,9 +51,9 @@ object encoderMod {
   
   object uint16BEEncode {
     
-    @JSImport("libp2p-noise/dist/src/encoder", "uint16BEEncode")
-    @js.native
-    def apply(value: Double, target: Buffer, offset: Double): Buffer = js.native
+    @scala.inline
+    def apply(value: Double, target: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], target.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    
     @JSImport("libp2p-noise/dist/src/encoder", "uint16BEEncode")
     @js.native
     val ^ : js.Any = js.native

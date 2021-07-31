@@ -2,15 +2,13 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderStyle extends StObject {
   
-  var borderStyle: String = js.native
+  var borderStyle: String
   
-  var padding: Double = js.native
+  var padding: Double
 }
 object BorderStyle {
   

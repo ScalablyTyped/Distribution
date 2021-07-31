@@ -5,12 +5,10 @@ import typings.awsSdkClientPinpointBrowser.awsSdkClientPinpointBrowserStrings.IN
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAttributeDimensionMod {
   
-  @js.native
   trait AttributeDimension extends StObject {
     
     /**
@@ -20,12 +18,12 @@ object typesAttributeDimensionMod {
       *
       * EXCLUSIVE - Endpoints that match the criteria are excluded from the segment.
       */
-    var AttributeType: js.UndefOr[INCLUSIVE | EXCLUSIVE | String] = js.native
+    var AttributeType: js.UndefOr[INCLUSIVE | EXCLUSIVE | String] = js.undefined
     
     /**
       * The criteria values for the segment dimension. Endpoints with matching attribute values are included or excluded from the segment, depending on the setting for Type.
       */
-    var Values: js.UndefOr[js.Array[String] | Iterable[String]] = js.native
+    var Values: js.UndefOr[js.Array[String] | Iterable[String]] = js.undefined
   }
   object AttributeDimension {
     
@@ -55,14 +53,15 @@ object typesAttributeDimensionMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledAttributeDimension extends AttributeDimension {
+  trait UnmarshalledAttributeDimension
+    extends StObject
+       with AttributeDimension {
     
     /**
       * The criteria values for the segment dimension. Endpoints with matching attribute values are included or excluded from the segment, depending on the setting for Type.
       */
     @JSName("Values")
-    var Values_UnmarshalledAttributeDimension: js.UndefOr[js.Array[String]] = js.native
+    var Values_UnmarshalledAttributeDimension: js.UndefOr[js.Array[String]] = js.undefined
   }
   object UnmarshalledAttributeDimension {
     

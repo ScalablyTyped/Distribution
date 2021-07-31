@@ -5,7 +5,6 @@ import typings.antdMobile.radioPropsTypeMod.RadioItemPropsType
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioItemMod {
@@ -31,14 +30,15 @@ object radioItemMod {
   trait RadioItem
     extends Component[RadioItemProps, js.Any, js.Any]
   
-  @js.native
-  trait RadioItemProps extends RadioItemPropsType {
+  trait RadioItemProps
+    extends StObject
+       with RadioItemPropsType {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var listPrefixCls: js.UndefOr[String] = js.native
+    var listPrefixCls: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object RadioItemProps {
     

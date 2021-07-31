@@ -2,31 +2,29 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Container extends StObject {
   
-  var container: String = js.native
+  var container: String
   
-  var description: String = js.native
+  var description: String
   
-  var footer: String = js.native
+  var footer: String
   
-  var icon: String = js.native
+  var icon: String
   
-  var iconExpanded: String = js.native
+  var iconExpanded: String
   
-  var number: String = js.native
+  var number: String
   
-  var requiredText: String = js.native
+  var requiredText: String
   
-  var title: String = js.native
+  var title: String
   
-  var titleExpandable: String = js.native
+  var titleExpandable: String
   
-  var titleOnError: String = js.native
+  var titleOnError: String
 }
 object Container {
   

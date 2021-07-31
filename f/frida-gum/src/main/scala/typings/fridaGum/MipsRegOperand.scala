@@ -3,22 +3,22 @@ package typings.fridaGum
 import typings.fridaGum.fridaGumStrings.reg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MipsRegOperand extends MipsOperand {
+trait MipsRegOperand
+  extends StObject
+     with MipsOperand {
   
-  var `type`: reg = js.native
+  var `type`: reg
   
-  var value: MipsRegister = js.native
+  var value: MipsRegister
 }
 object MipsRegOperand {
   
   @scala.inline
-  def apply(`type`: reg, value: MipsRegister): MipsRegOperand = {
+  def apply(value: MipsRegister): MipsRegOperand = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("reg")
     __obj.asInstanceOf[MipsRegOperand]
   }
   

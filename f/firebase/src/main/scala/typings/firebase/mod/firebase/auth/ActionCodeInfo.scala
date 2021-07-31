@@ -3,13 +3,11 @@ package typings.firebase.mod.firebase.auth
 import typings.firebase.anon.Email
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response from {@link firebase.auth.Auth.checkActionCode}.
   */
-@js.native
 trait ActionCodeInfo extends StObject {
   
   /**
@@ -35,7 +33,7 @@ trait ActionCodeInfo extends StObject {
     * `multiFactorInfo` is a {@link firebase.auth.Auth.PhoneMultiFactorInfo} object,
     * which contains the phone number.
     */
-  var data: Email = js.native
+  var data: Email
   
   /**
     * The type of operation that generated the action code. This could be:
@@ -55,7 +53,7 @@ trait ActionCodeInfo extends StObject {
     *     {@link firebase.User.sendEmailVerification}.</li>
     * </ul>
     */
-  var operation: String = js.native
+  var operation: String
 }
 object ActionCodeInfo {
   

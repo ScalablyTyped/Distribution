@@ -2,17 +2,15 @@ package typings.tcomb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StructOptions extends StObject {
   
-  var defaultProps: js.UndefOr[js.Object] = js.native
+  var defaultProps: js.UndefOr[js.Object] = js.undefined
   
-  var name: js.UndefOr[java.lang.String] = js.native
+  var name: js.UndefOr[java.lang.String] = js.undefined
   
-  var strict: js.UndefOr[scala.Boolean] = js.native
+  var strict: js.UndefOr[scala.Boolean] = js.undefined
 }
 object StructOptions {
   

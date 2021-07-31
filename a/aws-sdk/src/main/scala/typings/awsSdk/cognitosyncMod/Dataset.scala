@@ -2,46 +2,44 @@ package typings.awsSdk.cognitosyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dataset extends StObject {
   
   /**
     * Date on which the dataset was created.
     */
-  var CreationDate: js.UndefOr[Date] = js.native
+  var CreationDate: js.UndefOr[Date] = js.undefined
   
   /**
     * Total size in bytes of the records in this dataset.
     */
-  var DataStorage: js.UndefOr[Long] = js.native
+  var DataStorage: js.UndefOr[Long] = js.undefined
   
   /**
     * A string of up to 128 characters. Allowed characters are a-z, A-Z, 0-9, '_' (underscore), '-' (dash), and '.' (dot).
     */
-  var DatasetName: js.UndefOr[typings.awsSdk.cognitosyncMod.DatasetName] = js.native
+  var DatasetName: js.UndefOr[typings.awsSdk.cognitosyncMod.DatasetName] = js.undefined
   
   /**
     * A name-spaced GUID (for example, us-east-1:23EC4050-6AEA-7089-A2DD-08002EXAMPLE) created by Amazon Cognito. GUID generation is unique within a region.
     */
-  var IdentityId: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityId] = js.native
+  var IdentityId: js.UndefOr[typings.awsSdk.cognitosyncMod.IdentityId] = js.undefined
   
   /**
     * The device that made the last change to this dataset.
     */
-  var LastModifiedBy: js.UndefOr[String] = js.native
+  var LastModifiedBy: js.UndefOr[String] = js.undefined
   
   /**
     * Date when the dataset was last modified.
     */
-  var LastModifiedDate: js.UndefOr[Date] = js.native
+  var LastModifiedDate: js.UndefOr[Date] = js.undefined
   
   /**
     * Number of records in this dataset.
     */
-  var NumRecords: js.UndefOr[Long] = js.native
+  var NumRecords: js.UndefOr[Long] = js.undefined
 }
 object Dataset {
   

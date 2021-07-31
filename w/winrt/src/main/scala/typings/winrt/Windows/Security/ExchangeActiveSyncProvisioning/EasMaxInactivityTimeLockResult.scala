@@ -2,7 +2,6 @@ package typings.winrt.Windows.Security.ExchangeActiveSyncProvisioning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait EasMaxInactivityTimeLockResult extends StObject
 object EasMaxInactivityTimeLockResult extends StObject {
   
   @js.native
-  sealed trait canBeCompliant extends EasMaxInactivityTimeLockResult
+  sealed trait canBeCompliant
+    extends StObject
+       with EasMaxInactivityTimeLockResult
   
   @js.native
-  sealed trait compliant extends EasMaxInactivityTimeLockResult
+  sealed trait compliant
+    extends StObject
+       with EasMaxInactivityTimeLockResult
   
   @js.native
-  sealed trait invalidParameter extends EasMaxInactivityTimeLockResult
+  sealed trait invalidParameter
+    extends StObject
+       with EasMaxInactivityTimeLockResult
   
   @js.native
-  sealed trait notEvaluated extends EasMaxInactivityTimeLockResult
+  sealed trait notEvaluated
+    extends StObject
+       with EasMaxInactivityTimeLockResult
   
   @js.native
-  sealed trait requestedPolicyIsStricter extends EasMaxInactivityTimeLockResult
+  sealed trait requestedPolicyIsStricter
+    extends StObject
+       with EasMaxInactivityTimeLockResult
 }

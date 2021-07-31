@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridExcelExporterSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait GridExcelExporterSettings
     * An array of strings containing the keys for the columns that will not be exported.
     *
     */
-  var columnsToSkip: js.UndefOr[js.Array[_]] = js.native
+  var columnsToSkip: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Indicates whether all sublevel data will be exported, or only data under expanded rows.
@@ -27,18 +26,18 @@ trait GridExcelExporterSettings
     * "allRows" All sublevel data will be exported.
     * "expandedRows" Only data under expanded rows will be exported.
     */
-  var dataExportMode: js.UndefOr[String] = js.native
+  var dataExportMode: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the name of the excel file that will be generated.
     *
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /**
     * List of export settings which can be used with Grid Excel exporter
     */
-  var gridFeatureOptions: js.UndefOr[GridExcelExporterSettingsGridFeatureOptions] = js.native
+  var gridFeatureOptions: js.UndefOr[GridExcelExporterSettingsGridFeatureOptions] = js.undefined
   
   /**
     * Indicates whether excel table styles will be the same as grid styles. This is set to applied by default. Custom grid themes are not supported.
@@ -48,13 +47,13 @@ trait GridExcelExporterSettings
     * "none" The styles from the grid are not applied to the table region.
     * "applied" The styles from the grid are applied to the table region.
     */
-  var gridStyling: js.UndefOr[String] = js.native
+  var gridStyling: js.UndefOr[String] = js.undefined
   
   /**
     * List of strings containing the keys for the worksheet columns which will not be applied any filtering
     *
     */
-  var skipFilteringOn: js.UndefOr[js.Array[_]] = js.native
+  var skipFilteringOn: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Specifies the excel table style region. The following table styles are available:
@@ -63,13 +62,13 @@ trait GridExcelExporterSettings
     * TableStyleDark[1-11]
     *
     */
-  var tableStyle: js.UndefOr[String] = js.native
+  var tableStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the worksheet name where the igGrid will be exported.
     *
     */
-  var worksheetName: js.UndefOr[String] = js.native
+  var worksheetName: js.UndefOr[String] = js.undefined
 }
 object GridExcelExporterSettings {
   
@@ -83,7 +82,7 @@ object GridExcelExporterSettings {
   implicit class GridExcelExporterSettingsMutableBuilder[Self <: GridExcelExporterSettings] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setColumnsToSkip(value: js.Array[_]): Self = StObject.set(x, "columnsToSkip", value.asInstanceOf[js.Any])
+    def setColumnsToSkip(value: js.Array[js.Any]): Self = StObject.set(x, "columnsToSkip", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnsToSkipUndefined: Self = StObject.set(x, "columnsToSkip", js.undefined)
@@ -116,7 +115,7 @@ object GridExcelExporterSettings {
     def setGridStylingUndefined: Self = StObject.set(x, "gridStyling", js.undefined)
     
     @scala.inline
-    def setSkipFilteringOn(value: js.Array[_]): Self = StObject.set(x, "skipFilteringOn", value.asInstanceOf[js.Any])
+    def setSkipFilteringOn(value: js.Array[js.Any]): Self = StObject.set(x, "skipFilteringOn", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSkipFilteringOnUndefined: Self = StObject.set(x, "skipFilteringOn", js.undefined)

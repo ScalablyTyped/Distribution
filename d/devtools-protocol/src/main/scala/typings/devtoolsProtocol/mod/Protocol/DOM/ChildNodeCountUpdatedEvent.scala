@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildNodeCountUpdatedEvent extends StObject {
   
   /**
     * New node count.
     */
-  var childNodeCount: integer = js.native
+  var childNodeCount: integer
   
   /**
     * Id of the node that has changed.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object ChildNodeCountUpdatedEvent {
   

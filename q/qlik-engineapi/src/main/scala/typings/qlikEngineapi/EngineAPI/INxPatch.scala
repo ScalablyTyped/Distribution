@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxPatch...
   */
-@js.native
 trait INxPatch extends StObject {
   
   /**
     * Operation to perform.
     */
-  var qOp: NxPatchOpType = js.native
+  var qOp: NxPatchOpType
   
   /**
     * Path to the property to add, remove or replace.
     */
-  var qPath: String = js.native
+  var qPath: String
   
   /**
     * This parameter is not used in a remove operation.
@@ -27,7 +25,7 @@ trait INxPatch extends StObject {
     *
     * Examples: "false", "2", "\"New title\""
     */
-  var qValue: String = js.native
+  var qValue: String
 }
 object INxPatch {
   

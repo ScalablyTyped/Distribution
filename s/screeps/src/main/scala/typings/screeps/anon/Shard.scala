@@ -2,15 +2,13 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shard extends StObject {
   
-  var room: String = js.native
+  var room: String
   
-  var shard: String = js.native
+  var shard: String
 }
 object Shard {
   

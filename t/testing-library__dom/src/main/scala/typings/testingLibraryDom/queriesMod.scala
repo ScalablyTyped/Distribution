@@ -10,7 +10,6 @@ import typings.testingLibraryDom.queryHelpersMod.SelectorMatcherOptions
 import typings.testingLibraryDom.waitForMod.waitForOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queriesMod {
@@ -228,53 +227,54 @@ object queriesMod {
     js.Array[HTMLElement]
   ]
   
-  @js.native
-  trait ByRoleOptions extends MatcherOptions {
+  trait ByRoleOptions
+    extends StObject
+       with MatcherOptions {
     
     /**
       * If true only includes elements in the query set that are marked as
       * checked in the accessibility tree, i.e., `aria-checked="true"`
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true includes elements in the query set that are usually excluded from
       * the accessibility tree. `role="none"` or `role="presentation"` are included
       * in either case.
       */
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Includes elements with the `"heading"` role matching the indicated level,
       * either by the semantic HTML heading elements `<h1>-<h6>` or matching
       * the `aria-level` attribute.
       */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /**
       * Only considers  elements with the specified accessible name.
       */
     var name: js.UndefOr[
         String | RegExp | (js.Function2[/* accessibleName */ String, /* element */ Element, Boolean])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If true only includes elements in the query set that are marked as
       * pressed in the accessibility tree, i.e., `aria-pressed="true"`
       */
-    var pressed: js.UndefOr[Boolean] = js.native
+    var pressed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Includes every role used in the `role` attribute
       * For example *ByRole('progressbar', {queryFallbacks: true})` will find <div role="meter progressbar">`.
       */
-    var queryFallbacks: js.UndefOr[Boolean] = js.native
+    var queryFallbacks: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true only includes elements in the query set that are marked as
       * selected in the accessibility tree, i.e., `aria-selected="true"`
       */
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
   }
   object ByRoleOptions {
     

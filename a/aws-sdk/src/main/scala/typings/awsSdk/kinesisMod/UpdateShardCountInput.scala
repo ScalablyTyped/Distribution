@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateShardCountInput extends StObject {
   
   /**
     * The scaling type. Uniform scaling creates shards of equal size.
     */
-  var ScalingType: typings.awsSdk.kinesisMod.ScalingType = js.native
+  var ScalingType: typings.awsSdk.kinesisMod.ScalingType
   
   /**
     * The name of the stream.
     */
-  var StreamName: typings.awsSdk.kinesisMod.StreamName = js.native
+  var StreamName: typings.awsSdk.kinesisMod.StreamName
   
   /**
     * The new number of shards. This value has the following default limits. By default, you cannot do the following:    Set this value to more than double your current shard count for a stream.   Set this value below half your current shard count for a stream.   Set this value to more than 500 shards in a stream (the default limit for shard count per stream is 500 per account per region), unless you request a limit increase.   Scale a stream with more than 500 shards down unless you set this value to less than 500 shards.  
     */
-  var TargetShardCount: PositiveIntegerObject = js.native
+  var TargetShardCount: PositiveIntegerObject
 }
 object UpdateShardCountInput {
   

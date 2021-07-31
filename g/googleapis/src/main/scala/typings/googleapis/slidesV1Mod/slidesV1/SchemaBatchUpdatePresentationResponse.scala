@@ -2,30 +2,28 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message from a batch update.
   */
-@js.native
 trait SchemaBatchUpdatePresentationResponse extends StObject {
   
   /**
     * The presentation the updates were applied to.
     */
-  var presentationId: js.UndefOr[String] = js.native
+  var presentationId: js.UndefOr[String] = js.undefined
   
   /**
     * The reply of the updates.  This maps 1:1 with the updates, although
     * replies to some requests may be empty.
     */
-  var replies: js.UndefOr[js.Array[SchemaResponse]] = js.native
+  var replies: js.UndefOr[js.Array[SchemaResponse]] = js.undefined
   
   /**
     * The updated write control after applying the request.
     */
-  var writeControl: js.UndefOr[SchemaWriteControl] = js.native
+  var writeControl: js.UndefOr[SchemaWriteControl] = js.undefined
 }
 object SchemaBatchUpdatePresentationResponse {
   

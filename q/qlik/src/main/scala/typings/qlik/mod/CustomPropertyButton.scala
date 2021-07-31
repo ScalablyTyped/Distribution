@@ -3,23 +3,22 @@ package typings.qlik.mod
 import typings.qlik.qlikStrings.button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyButton
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  def action(data: VisualizationOptions): Unit = js.native
+  def action(data: VisualizationOptions): Unit
   
-  var component: button = js.native
+  var component: button
 }
 object CustomPropertyButton {
   
   @scala.inline
-  def apply(action: VisualizationOptions => Unit, component: button): CustomPropertyButton = {
-    val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), component = component.asInstanceOf[js.Any])
+  def apply(action: VisualizationOptions => Unit): CustomPropertyButton = {
+    val __obj = js.Dynamic.literal(action = js.Any.fromFunction1(action), component = "button")
     __obj.asInstanceOf[CustomPropertyButton]
   }
   

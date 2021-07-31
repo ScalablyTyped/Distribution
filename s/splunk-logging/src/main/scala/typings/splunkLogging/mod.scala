@@ -6,7 +6,6 @@ import typings.splunkLogging.splunkLoggingStrings.https
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,37 +29,36 @@ object mod {
     def send(context: SendContext): Unit = js.native
     def send(context: SendContext, callback: Callback): Unit = js.native
     
-    val serializedEventQueue: js.Array[_] = js.native
+    val serializedEventQueue: js.Array[js.Any] = js.native
   }
   
   type Callback = js.Function3[/* error */ js.UndefOr[Error], /* req */ js.Any, /* res */ js.Any, Unit]
   
-  @js.native
   trait Config extends StObject {
     
-    var batchInterval: js.UndefOr[Double] = js.native
+    var batchInterval: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var maxBatchCount: js.UndefOr[Double] = js.native
+    var maxBatchCount: js.UndefOr[Double] = js.undefined
     
-    var maxBatchSize: js.UndefOr[Double] = js.native
+    var maxBatchSize: js.UndefOr[Double] = js.undefined
     
-    var maxRetries: js.UndefOr[Double] = js.native
+    var maxRetries: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var protocol: js.UndefOr[http | https] = js.native
+    var protocol: js.UndefOr[http | https] = js.undefined
     
-    var token: String = js.native
+    var token: String
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Config {
     
@@ -146,14 +144,13 @@ object mod {
   
   type EventFormatter = js.Function2[/* message */ js.Any, /* severity */ String, js.Any]
   
-  @js.native
   trait SendContext extends StObject {
     
-    var message: js.Any = js.native
+    var message: js.Any
     
-    var metadata: js.UndefOr[SendContextMetadata] = js.native
+    var metadata: js.UndefOr[SendContextMetadata] = js.undefined
     
-    var severity: js.UndefOr[String] = js.native
+    var severity: js.UndefOr[String] = js.undefined
   }
   object SendContext {
     
@@ -183,16 +180,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SendContextMetadata extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
     
-    var sourcetype: js.UndefOr[String] = js.native
+    var sourcetype: js.UndefOr[String] = js.undefined
   }
   object SendContextMetadata {
     

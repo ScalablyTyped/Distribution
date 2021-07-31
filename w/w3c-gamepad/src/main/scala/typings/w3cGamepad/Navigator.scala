@@ -3,19 +3,17 @@ package typings.w3cGamepad
 import typings.w3cGamepad.Gamepad.GamepadList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Navigator extends StObject {
   
   /**
     * The currently connected and interacted-with gamepads. Gamepads must only appear in the list if they are currently connected to the user agent, and have been interacted with by the user. Otherwise, they must not appear in the list to avoid a malicious page from fingerprinting the user based on connected devices.
     * @readonly
     */
-  def getGamepads(): js.Array[typings.w3cGamepad.Gamepad.Gamepad] = js.native
+  def getGamepads(): js.Array[typings.w3cGamepad.Gamepad.Gamepad]
   
-  def webkitGetGamepads(): GamepadList = js.native
+  def webkitGetGamepads(): GamepadList
 }
 object Navigator {
   

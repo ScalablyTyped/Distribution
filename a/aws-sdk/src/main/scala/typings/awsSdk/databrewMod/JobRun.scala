@@ -2,81 +2,79 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobRun extends StObject {
   
   /**
     * The number of times that DataBrew has attempted to run the job.
     */
-  var Attempt: js.UndefOr[typings.awsSdk.databrewMod.Attempt] = js.native
+  var Attempt: js.UndefOr[typings.awsSdk.databrewMod.Attempt] = js.undefined
   
   /**
     * The date and time when the job completed processing.
     */
-  var CompletedOn: js.UndefOr[Date] = js.native
+  var CompletedOn: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the dataset for the job to process.
     */
-  var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.native
+  var DatasetName: js.UndefOr[typings.awsSdk.databrewMod.DatasetName] = js.undefined
   
   /**
     * A message indicating an error (if any) that was encountered when the job ran.
     */
-  var ErrorMessage: js.UndefOr[JobRunErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[JobRunErrorMessage] = js.undefined
   
   /**
     * The amount of time, in seconds, during which a job run consumed resources.
     */
-  var ExecutionTime: js.UndefOr[typings.awsSdk.databrewMod.ExecutionTime] = js.native
+  var ExecutionTime: js.UndefOr[typings.awsSdk.databrewMod.ExecutionTime] = js.undefined
   
   /**
     * The name of the job being processed during this run.
     */
-  var JobName: js.UndefOr[typings.awsSdk.databrewMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.databrewMod.JobName] = js.undefined
   
   /**
     * The name of an Amazon CloudWatch log group, where the job writes diagnostic messages when it runs.
     */
-  var LogGroupName: js.UndefOr[typings.awsSdk.databrewMod.LogGroupName] = js.native
+  var LogGroupName: js.UndefOr[typings.awsSdk.databrewMod.LogGroupName] = js.undefined
   
   /**
     * The current status of Amazon CloudWatch logging for the job run.
     */
-  var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.native
+  var LogSubscription: js.UndefOr[typings.awsSdk.databrewMod.LogSubscription] = js.undefined
   
   /**
     * One or more output artifacts from a job run.
     */
-  var Outputs: js.UndefOr[OutputList] = js.native
+  var Outputs: js.UndefOr[OutputList] = js.undefined
   
   /**
     * The set of steps processed by the job.
     */
-  var RecipeReference: js.UndefOr[typings.awsSdk.databrewMod.RecipeReference] = js.native
+  var RecipeReference: js.UndefOr[typings.awsSdk.databrewMod.RecipeReference] = js.undefined
   
   /**
     * The unique identifier of the job run.
     */
-  var RunId: js.UndefOr[JobRunId] = js.native
+  var RunId: js.UndefOr[JobRunId] = js.undefined
   
   /**
     * The identifier (the user name) of the user who initiated the job run. 
     */
-  var StartedBy: js.UndefOr[typings.awsSdk.databrewMod.StartedBy] = js.native
+  var StartedBy: js.UndefOr[typings.awsSdk.databrewMod.StartedBy] = js.undefined
   
   /**
     * The date and time when the job run began. 
     */
-  var StartedOn: js.UndefOr[Date] = js.native
+  var StartedOn: js.UndefOr[Date] = js.undefined
   
   /**
     * The current state of the job run entity itself.
     */
-  var State: js.UndefOr[JobRunState] = js.native
+  var State: js.UndefOr[JobRunState] = js.undefined
 }
 object JobRun {
   

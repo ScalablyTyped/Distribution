@@ -2,20 +2,20 @@ package typings.three.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BufferGeometryUtils {
   
-  @JSImport("three", "BufferGeometryUtils.computeTangents")
+  @JSImport("three", "BufferGeometryUtils")
   @js.native
-  def computeTangents(geometry: typings.three.bufferGeometryMod.BufferGeometry): Null = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("three", "BufferGeometryUtils.mergeBufferAttributes")
-  @js.native
-  def mergeBufferAttributes(attributes: js.Array[typings.three.bufferAttributeMod.BufferAttribute]): typings.three.bufferAttributeMod.BufferAttribute = js.native
+  @scala.inline
+  def computeTangents(geometry: typings.three.bufferGeometryMod.BufferGeometry): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("computeTangents")(geometry.asInstanceOf[js.Any]).asInstanceOf[Null]
   
-  @JSImport("three", "BufferGeometryUtils.mergeBufferGeometries")
-  @js.native
-  def mergeBufferGeometries(geometries: js.Array[typings.three.bufferGeometryMod.BufferGeometry]): typings.three.bufferGeometryMod.BufferGeometry = js.native
+  @scala.inline
+  def mergeBufferAttributes(attributes: js.Array[typings.three.bufferAttributeMod.BufferAttribute]): typings.three.bufferAttributeMod.BufferAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeBufferAttributes")(attributes.asInstanceOf[js.Any]).asInstanceOf[typings.three.bufferAttributeMod.BufferAttribute]
+  
+  @scala.inline
+  def mergeBufferGeometries(geometries: js.Array[typings.three.bufferGeometryMod.BufferGeometry]): typings.three.bufferGeometryMod.BufferGeometry = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeBufferGeometries")(geometries.asInstanceOf[js.Any]).asInstanceOf[typings.three.bufferGeometryMod.BufferGeometry]
 }

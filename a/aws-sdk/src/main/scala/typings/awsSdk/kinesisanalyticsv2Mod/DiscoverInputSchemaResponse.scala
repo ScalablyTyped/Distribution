@@ -2,31 +2,29 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscoverInputSchemaResponse extends StObject {
   
   /**
     * The schema inferred from the streaming source. It identifies the format of the data in the streaming source and how each data element maps to corresponding columns in the in-application stream that you can create.
     */
-  var InputSchema: js.UndefOr[SourceSchema] = js.native
+  var InputSchema: js.UndefOr[SourceSchema] = js.undefined
   
   /**
     * An array of elements, where each element corresponds to a row in a stream record (a stream record can have more than one row).
     */
-  var ParsedInputRecords: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ParsedInputRecords] = js.native
+  var ParsedInputRecords: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ParsedInputRecords] = js.undefined
   
   /**
     * The stream data that was modified by the processor specified in the InputProcessingConfiguration parameter.
     */
-  var ProcessedInputRecords: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ProcessedInputRecords] = js.native
+  var ProcessedInputRecords: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ProcessedInputRecords] = js.undefined
   
   /**
     * The raw stream data that was sampled to infer the schema.
     */
-  var RawInputRecords: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RawInputRecords] = js.native
+  var RawInputRecords: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RawInputRecords] = js.undefined
 }
 object DiscoverInputSchemaResponse {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SigningConfigurationOverrides extends StObject {
   
   /**
     * A specified override of the default encryption algorithm that is used in a code signing job.
     */
-  var encryptionAlgorithm: js.UndefOr[EncryptionAlgorithm] = js.native
+  var encryptionAlgorithm: js.UndefOr[EncryptionAlgorithm] = js.undefined
   
   /**
     * A specified override of the default hash algorithm that is used in a code signing job.
     */
-  var hashAlgorithm: js.UndefOr[HashAlgorithm] = js.native
+  var hashAlgorithm: js.UndefOr[HashAlgorithm] = js.undefined
 }
 object SigningConfigurationOverrides {
   

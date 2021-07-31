@@ -6,39 +6,39 @@ import typings.std.Record
 import typings.toughCookie.mod.CookieJar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GotOptions[E /* <: String | Null */] extends InternalRequestOptions {
+trait GotOptions[E /* <: String | Null */]
+  extends StObject
+     with InternalRequestOptions {
   
   @JSName("agent")
-  var agent_GotOptions: js.UndefOr[Agent | Boolean | AgentOptions] = js.native
+  var agent_GotOptions: js.UndefOr[Agent | Boolean | AgentOptions] = js.undefined
   
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
-  var cache: js.UndefOr[Cache] = js.native
+  var cache: js.UndefOr[Cache] = js.undefined
   
-  var cookieJar: js.UndefOr[CookieJar] = js.native
+  var cookieJar: js.UndefOr[CookieJar] = js.undefined
   
-  var decompress: js.UndefOr[Boolean] = js.native
+  var decompress: js.UndefOr[Boolean] = js.undefined
   
-  var encoding: js.UndefOr[E] = js.native
+  var encoding: js.UndefOr[E] = js.undefined
   
-  var followRedirect: js.UndefOr[Boolean] = js.native
+  var followRedirect: js.UndefOr[Boolean] = js.undefined
   
-  var query: js.UndefOr[(Record[String, _]) | URLSearchParams | String] = js.native
+  var query: js.UndefOr[(Record[String, js.Any]) | URLSearchParams | String] = js.undefined
   
-  var request: js.UndefOr[RequestFunction] = js.native
+  var request: js.UndefOr[RequestFunction] = js.undefined
   
-  var retry: js.UndefOr[Double | RetryOptions] = js.native
+  var retry: js.UndefOr[Double | RetryOptions] = js.undefined
   
-  var throwHttpErrors: js.UndefOr[Boolean] = js.native
+  var throwHttpErrors: js.UndefOr[Boolean] = js.undefined
   
   @JSName("timeout")
-  var timeout_GotOptions: js.UndefOr[Double | TimeoutOptions] = js.native
+  var timeout_GotOptions: js.UndefOr[Double | TimeoutOptions] = js.undefined
   
-  var useElectronNet: js.UndefOr[Boolean] = js.native
+  var useElectronNet: js.UndefOr[Boolean] = js.undefined
 }
 object GotOptions {
   
@@ -49,7 +49,7 @@ object GotOptions {
   }
   
   @scala.inline
-  implicit class GotOptionsMutableBuilder[Self <: GotOptions[_], E /* <: String | Null */] (val x: Self with GotOptions[E]) extends AnyVal {
+  implicit class GotOptionsMutableBuilder[Self <: GotOptions[?], E /* <: String | Null */] (val x: Self & GotOptions[E]) extends AnyVal {
     
     @scala.inline
     def setAgent(value: Agent | Boolean | AgentOptions): Self = StObject.set(x, "agent", value.asInstanceOf[js.Any])
@@ -94,7 +94,7 @@ object GotOptions {
     def setFollowRedirectUndefined: Self = StObject.set(x, "followRedirect", js.undefined)
     
     @scala.inline
-    def setQuery(value: (Record[String, _]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
+    def setQuery(value: (Record[String, js.Any]) | URLSearchParams | String): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setQueryUndefined: Self = StObject.set(x, "query", js.undefined)

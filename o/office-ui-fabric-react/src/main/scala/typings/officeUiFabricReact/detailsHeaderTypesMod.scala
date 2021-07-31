@@ -26,7 +26,6 @@ import typings.uifabricUtilities.selectionTypesMod.ISelection
 import typings.uifabricUtilities.selectionTypesMod.SelectionMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsHeaderTypesMod {
@@ -38,29 +37,36 @@ object detailsHeaderTypesMod {
   object SelectAllVisibility extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[SelectAllVisibility with Double] = js.native
+    def apply(value: Double): js.UndefOr[SelectAllVisibility & Double] = js.native
     
     @js.native
-    sealed trait hidden extends SelectAllVisibility
-    /* 1 */ val hidden: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.hidden with Double = js.native
+    sealed trait hidden
+      extends StObject
+         with SelectAllVisibility
+    /* 1 */ val hidden: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.hidden & Double = js.native
     
     @js.native
-    sealed trait none extends SelectAllVisibility
-    /* 0 */ val none: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.none with Double = js.native
+    sealed trait none
+      extends StObject
+         with SelectAllVisibility
+    /* 0 */ val none: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.none & Double = js.native
     
     @js.native
-    sealed trait visible extends SelectAllVisibility
-    /* 2 */ val visible: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.visible with Double = js.native
+    sealed trait visible
+      extends StObject
+         with SelectAllVisibility
+    /* 2 */ val visible: typings.officeUiFabricReact.detailsHeaderTypesMod.SelectAllVisibility.visible & Double = js.native
   }
   
-  @js.native
-  trait IColumnReorderHeaderProps extends IColumnReorderOptions {
+  trait IColumnReorderHeaderProps
+    extends StObject
+       with IColumnReorderOptions {
     
     /** Callback to notify the column dragEnd event to List
       * Need this to check whether the dragEnd has happened on
       * corresponding list or outside of the list
       */
-    var onColumnDragEnd: js.UndefOr[js.Function2[/* props */ DropLocation, /* event */ MouseEvent, Unit]] = js.native
+    var onColumnDragEnd: js.UndefOr[js.Function2[/* props */ DropLocation, /* event */ MouseEvent, Unit]] = js.undefined
   }
   object IColumnReorderHeaderProps {
     
@@ -81,14 +87,13 @@ object detailsHeaderTypesMod {
     }
   }
   
-  @js.native
   trait IColumnResizeDetails extends StObject {
     
-    var columnIndex: Double = js.native
+    var columnIndex: Double
     
-    var columnMinWidth: Double = js.native
+    var columnMinWidth: Double
     
-    var originX: js.UndefOr[Double] = js.native
+    var originX: js.UndefOr[Double] = js.undefined
   }
   object IColumnResizeDetails {
     
@@ -115,11 +120,10 @@ object detailsHeaderTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsHeader extends StObject {
     
     /** sets focus into the header */
-    def focus(): Boolean = js.native
+    def focus(): Boolean
   }
   object IDetailsHeader {
     
@@ -137,49 +141,49 @@ object detailsHeaderTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsHeaderBaseProps
-    extends ClassAttributes[DetailsHeaderBase]
+    extends StObject
+       with ClassAttributes[DetailsHeaderBase]
        with IDetailsItemProps {
     
     /** ariaLabel for the entire header */
-    var ariaLabel: js.UndefOr[String] = js.native
+    var ariaLabel: js.UndefOr[String] = js.undefined
     
     /** ariaLabel for the header checkbox that selects or deselects everything */
-    var ariaLabelForSelectAllCheckbox: js.UndefOr[String] = js.native
+    var ariaLabelForSelectAllCheckbox: js.UndefOr[String] = js.undefined
     
     /** ariaLabel for the selection column */
-    var ariaLabelForSelectionColumn: js.UndefOr[String] = js.native
+    var ariaLabelForSelectionColumn: js.UndefOr[String] = js.undefined
     
     /** ariaLabel for expand/collapse group button */
-    var ariaLabelForToggleAllGroupsButton: js.UndefOr[String] = js.native
+    var ariaLabelForToggleAllGroupsButton: js.UndefOr[String] = js.undefined
     
     /** Overriding class name */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Whether to collapse for all visibility */
-    var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.native
+    var collapseAllVisibility: js.UndefOr[CollapseAllVisibility] = js.undefined
     
     /** Column reordering options */
-    var columnReorderOptions: js.UndefOr[IColumnReorderOptions] = js.native
+    var columnReorderOptions: js.UndefOr[IColumnReorderOptions] = js.undefined
     
     /** Column reordering options */
-    var columnReorderProps: js.UndefOr[IColumnReorderHeaderProps] = js.native
+    var columnReorderProps: js.UndefOr[IColumnReorderHeaderProps] = js.undefined
     
     /** Ref to the component itself */
-    var componentRef: js.UndefOr[IRefObject[IDetailsHeader]] = js.native
+    var componentRef: js.UndefOr[IRefObject[IDetailsHeader]] = js.undefined
     
     /** Whether or not all is collapsed */
-    var isAllCollapsed: js.UndefOr[Boolean] = js.native
+    var isAllCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /** Layout mode - fixedColumns or justified */
-    var layoutMode: DetailsListLayoutMode = js.native
+    var layoutMode: DetailsListLayoutMode
     
     /** Minimum pixels to be moved before dragging is registered */
-    var minimumPixelsForDrag: js.UndefOr[Double] = js.native
+    var minimumPixelsForDrag: js.UndefOr[Double] = js.undefined
     
     /** Callback for when column is automatically resized */
-    var onColumnAutoResized: js.UndefOr[js.Function2[/* column */ IColumn, /* columnIndex */ Double, Unit]] = js.native
+    var onColumnAutoResized: js.UndefOr[js.Function2[/* column */ IColumn, /* columnIndex */ Double, Unit]] = js.undefined
     
     /** Callback for when the column is clicked */
     var onColumnClick: js.UndefOr[
@@ -188,7 +192,7 @@ object detailsHeaderTypesMod {
           /* column */ IColumn, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Callback for when the column needs to show a context menu */
     var onColumnContextMenu: js.UndefOr[
@@ -197,40 +201,40 @@ object detailsHeaderTypesMod {
           /* ev */ typings.react.mod.MouseEvent[HTMLElement, NativeMouseEvent], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** Callback for when column sizing has changed */
-    var onColumnIsSizingChanged: js.UndefOr[js.Function2[/* column */ IColumn, /* isSizing */ Boolean, Unit]] = js.native
+    var onColumnIsSizingChanged: js.UndefOr[js.Function2[/* column */ IColumn, /* isSizing */ Boolean, Unit]] = js.undefined
     
     /** Callback for when column is resized */
     var onColumnResized: js.UndefOr[
         js.Function3[/* column */ IColumn, /* newWidth */ Double, /* columnIndex */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** Callback to render a tooltip for the column header */
-    var onRenderColumnHeaderTooltip: js.UndefOr[IRenderFunction[IDetailsColumnRenderTooltipProps]] = js.native
+    var onRenderColumnHeaderTooltip: js.UndefOr[IRenderFunction[IDetailsColumnRenderTooltipProps]] = js.undefined
     
     /** If provided, can be used to render a custom checkbox */
-    var onRenderDetailsCheckbox: js.UndefOr[IRenderFunction[IDetailsCheckboxProps]] = js.native
+    var onRenderDetailsCheckbox: js.UndefOr[IRenderFunction[IDetailsCheckboxProps]] = js.undefined
     
     /** Callback for when collapse all is toggled */
-    var onToggleCollapseAll: js.UndefOr[js.Function1[/* isAllCollapsed */ Boolean, Unit]] = js.native
+    var onToggleCollapseAll: js.UndefOr[js.Function1[/* isAllCollapsed */ Boolean, Unit]] = js.undefined
     
     /** Select all button visibility */
-    var selectAllVisibility: js.UndefOr[SelectAllVisibility] = js.native
+    var selectAllVisibility: js.UndefOr[SelectAllVisibility] = js.undefined
     
     /** Call to provide customized styling that will layer on top of the variant rules. */
-    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsHeaderStyleProps, IDetailsHeaderStyles]] = js.native
+    var styles: js.UndefOr[IStyleFunctionOrObject[IDetailsHeaderStyleProps, IDetailsHeaderStyles]] = js.undefined
     
     /** Theme from the Higher Order Component */
-    var theme: js.UndefOr[ITheme] = js.native
+    var theme: js.UndefOr[ITheme] = js.undefined
     
     /**
       * Whether to use fast icon and check components. The icons can't be targeted by customization
       * but are still customizable via class names.
       * @defaultvalue true
       */
-    var useFastIcons: js.UndefOr[Boolean] = js.native
+    var useFastIcons: js.UndefOr[Boolean] = js.undefined
   }
   object IDetailsHeaderBaseProps {
     
@@ -402,26 +406,27 @@ object detailsHeaderTypesMod {
     }
   }
   
-  @js.native
-  trait IDetailsHeaderProps extends IDetailsHeaderBaseProps {
+  trait IDetailsHeaderProps
+    extends StObject
+       with IDetailsHeaderBaseProps {
     
     /**
       * Column metadata
       */
     @JSName("columns")
-    var columns_IDetailsHeaderProps: js.Array[IColumn] = js.native
+    var columns_IDetailsHeaderProps: js.Array[IColumn]
     
     /**
       * Selection mode
       */
     @JSName("selectionMode")
-    var selectionMode_IDetailsHeaderProps: SelectionMode = js.native
+    var selectionMode_IDetailsHeaderProps: SelectionMode
     
     /**
       * Selection from utilities
       */
     @JSName("selection")
-    var selection_IDetailsHeaderProps: ISelection[IObjectWithKey] = js.native
+    var selection_IDetailsHeaderProps: ISelection[IObjectWithKey]
   }
   object IDetailsHeaderProps {
     
@@ -453,16 +458,15 @@ object detailsHeaderTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsHeaderState extends StObject {
     
-    var columnResizeDetails: js.UndefOr[IColumnResizeDetails] = js.native
+    var columnResizeDetails: js.UndefOr[IColumnResizeDetails] = js.undefined
     
-    var isAllCollapsed: js.UndefOr[Boolean] = js.native
+    var isAllCollapsed: js.UndefOr[Boolean] = js.undefined
     
-    var isAllSelected: js.UndefOr[Boolean] = js.native
+    var isAllSelected: js.UndefOr[Boolean] = js.undefined
     
-    var isSizing: js.UndefOr[Boolean] = js.native
+    var isSizing: js.UndefOr[Boolean] = js.undefined
   }
   object IDetailsHeaderState {
     
@@ -502,32 +506,31 @@ object detailsHeaderTypesMod {
   }
   
   /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsHeader.types.IDetailsHeaderProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsHeader.types.IDetailsHeaderProps, 'className'> & {  isSelectAllHidden :boolean | undefined,   isAllSelected :boolean | undefined,   isResizingColumn :boolean | undefined,   isAllCollapsed :boolean | undefined,   isSizing :boolean | undefined,   isCheckboxHidden :boolean | undefined,   cellStyleProps :office-ui-fabric-react.office-ui-fabric-react/lib/components/DetailsList/DetailsRow.types.ICellStyleProps | undefined} */
-  @js.native
   trait IDetailsHeaderStyleProps extends StObject {
     
-    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.native
+    var cellStyleProps: js.UndefOr[ICellStyleProps] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Are all columns collapsed */
-    var isAllCollapsed: js.UndefOr[Boolean] = js.native
+    var isAllCollapsed: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the "select all" checkbox is checked */
-    var isAllSelected: js.UndefOr[Boolean] = js.native
+    var isAllSelected: js.UndefOr[Boolean] = js.undefined
     
     /** Whether checkbox is hidden  */
-    var isCheckboxHidden: js.UndefOr[Boolean] = js.native
+    var isCheckboxHidden: js.UndefOr[Boolean] = js.undefined
     
     /** Is column being resized */
-    var isResizingColumn: js.UndefOr[Boolean] = js.native
+    var isResizingColumn: js.UndefOr[Boolean] = js.undefined
     
     /** Whether to hide select all checkbox */
-    var isSelectAllHidden: js.UndefOr[Boolean] = js.native
+    var isSelectAllHidden: js.UndefOr[Boolean] = js.undefined
     
     /** Whether the header is sizing */
-    var isSizing: js.UndefOr[Boolean] = js.native
+    var isSizing: js.UndefOr[Boolean] = js.undefined
     
-    var theme: ITheme = js.native
+    var theme: ITheme
   }
   object IDetailsHeaderStyleProps {
     
@@ -593,55 +596,54 @@ object detailsHeaderTypesMod {
     }
   }
   
-  @js.native
   trait IDetailsHeaderStyles extends StObject {
     
-    var accessibleLabel: IStyle = js.native
+    var accessibleLabel: IStyle
     
     /**
       * @deprecated Not used
       */
-    var cellIsActionable: IStyle = js.native
+    var cellIsActionable: IStyle
     
-    var cellIsCheck: IStyle = js.native
-    
-    /**
-      * @deprecated Not used
-      */
-    var cellIsEmpty: IStyle = js.native
-    
-    var cellIsGroupExpander: IStyle = js.native
-    
-    var cellIsResizing: IStyle = js.native
-    
-    var cellSizer: IStyle = js.native
-    
-    var cellSizerEnd: IStyle = js.native
-    
-    var cellSizerStart: IStyle = js.native
+    var cellIsCheck: IStyle
     
     /**
       * @deprecated Not used
       */
-    var cellWrapperPadded: IStyle = js.native
+    var cellIsEmpty: IStyle
     
-    var check: IStyle = js.native
+    var cellIsGroupExpander: IStyle
     
-    var checkTooltip: IStyle = js.native
+    var cellIsResizing: IStyle
     
-    var collapseButton: IStyle = js.native
+    var cellSizer: IStyle
     
-    var dropHintCaretStyle: IStyle = js.native
+    var cellSizerEnd: IStyle
     
-    var dropHintCircleStyle: IStyle = js.native
+    var cellSizerStart: IStyle
     
-    var dropHintLineStyle: IStyle = js.native
+    /**
+      * @deprecated Not used
+      */
+    var cellWrapperPadded: IStyle
     
-    var dropHintStyle: IStyle = js.native
+    var check: IStyle
     
-    var root: IStyle = js.native
+    var checkTooltip: IStyle
     
-    var sizingOverlay: IStyle = js.native
+    var collapseButton: IStyle
+    
+    var dropHintCaretStyle: IStyle
+    
+    var dropHintCircleStyle: IStyle
+    
+    var dropHintLineStyle: IStyle
+    
+    var dropHintStyle: IStyle
+    
+    var root: IStyle
+    
+    var sizingOverlay: IStyle
   }
   object IDetailsHeaderStyles {
     
@@ -827,16 +829,15 @@ object detailsHeaderTypesMod {
     }
   }
   
-  @js.native
   trait IDropHintDetails extends StObject {
     
-    var dropHintElementRef: HTMLElement = js.native
+    var dropHintElementRef: HTMLElement
     
-    var endX: Double = js.native
+    var endX: Double
     
-    var originX: Double = js.native
+    var originX: Double
     
-    var startX: Double = js.native
+    var startX: Double
   }
   object IDropHintDetails {
     

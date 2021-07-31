@@ -2,17 +2,15 @@ package typings.seatsio.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Disabled extends StObject {
   
-  var disabled: js.Array[String] = js.native
+  var disabled: js.Array[String]
   
-  var enabled: js.Array[String] = js.native
+  var enabled: js.Array[String]
   
-  var readOnly: js.Array[String] = js.native
+  var readOnly: js.Array[String]
 }
 object Disabled {
   

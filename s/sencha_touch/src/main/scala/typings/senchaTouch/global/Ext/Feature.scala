@@ -3,13 +3,13 @@ package typings.senchaTouch.global.Ext
 import typings.senchaTouch.Ext.IClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.Feature")
 @js.native
 class Feature ()
-  extends typings.senchaTouch.Ext.Feature
+  extends StObject
+     with typings.senchaTouch.Ext.Feature
 /* static members */
 object Feature {
   
@@ -21,72 +21,59 @@ object Feature {
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callOverridden(arguments)
     * @returns Object Returns the result of calling the overridden method
     */
-  @JSGlobal("Ext.Feature.callOverridden")
-  @js.native
-  def callOverridden(): js.Any = js.native
-  @JSGlobal("Ext.Feature.callOverridden")
-  @js.native
-  def callOverridden(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callOverridden(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")().asInstanceOf[js.Any]
+  @scala.inline
+  def callOverridden(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callOverridden")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Call the parent method of the current method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callParent(arguments)
     * @returns Object Returns the result of calling the parent method
     */
-  @JSGlobal("Ext.Feature.callParent")
-  @js.native
-  def callParent(): js.Any = js.native
-  @JSGlobal("Ext.Feature.callParent")
-  @js.native
-  def callParent(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callParent(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")().asInstanceOf[js.Any]
+  @scala.inline
+  def callParent(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callParent")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] This method is used by an override to call the superclass method but bypass any overridden method
     * @param args Array/Arguments The arguments, either an array or the arguments object from the current method, for example: this.callSuper(arguments)
     * @returns Object Returns the result of calling the superclass method
     */
-  @JSGlobal("Ext.Feature.callSuper")
-  @js.native
-  def callSuper(): js.Any = js.native
-  @JSGlobal("Ext.Feature.callSuper")
-  @js.native
-  def callSuper(args: js.Any): js.Any = js.native
+  @scala.inline
+  def callSuper(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")().asInstanceOf[js.Any]
+  @scala.inline
+  def callSuper(args: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("callSuper")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method]  */
-  @JSGlobal("Ext.Feature.destroy")
-  @js.native
-  def destroy(): Unit = js.native
+  @scala.inline
+  def destroy(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroy")().asInstanceOf[Unit]
   
   /** [Method] Returns the initial configuration passed to constructor
     * @param name String When supplied, value for particular configuration option is returned, otherwise the full config object is returned.
     * @returns Object/Mixed
     */
-  @JSGlobal("Ext.Feature.getInitialConfig")
-  @js.native
-  def getInitialConfig(): js.Any = js.native
-  @JSGlobal("Ext.Feature.getInitialConfig")
-  @js.native
-  def getInitialConfig(name: java.lang.String): js.Any = js.native
+  @scala.inline
+  def getInitialConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")().asInstanceOf[js.Any]
+  @scala.inline
+  def getInitialConfig(name: java.lang.String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getInitialConfig")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Method] Verifies if a browser feature exists or not on the current device
     * @param value String The feature name to check.
     * @returns Boolean
     */
-  @JSGlobal("Ext.Feature.has")
-  @js.native
-  def has(): Boolean = js.native
-  @JSGlobal("Ext.Feature.has")
-  @js.native
-  def has(value: java.lang.String): Boolean = js.native
+  @scala.inline
+  def has(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")().asInstanceOf[Boolean]
+  @scala.inline
+  def has(value: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** [Method] Initialize configuration for this class
     * @param instanceConfig Object
     * @returns Object mixins The mixin prototypes as key - value pairs
     */
-  @JSGlobal("Ext.Feature.initConfig")
-  @js.native
-  def initConfig(): js.Any = js.native
-  @JSGlobal("Ext.Feature.initConfig")
-  @js.native
-  def initConfig(instanceConfig: js.Any): js.Any = js.native
+  @scala.inline
+  def initConfig(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")().asInstanceOf[js.Any]
+  @scala.inline
+  def initConfig(instanceConfig: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("initConfig")(instanceConfig.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   /** [Property] (Ext.Class) */
   @JSGlobal("Ext.Feature.self")
@@ -98,7 +85,6 @@ object Feature {
   /** [Method] Get the reference to the class from which this object was instantiated
     * @returns Ext.Class
     */
-  @JSGlobal("Ext.Feature.statics")
-  @js.native
-  def statics(): IClass = js.native
+  @scala.inline
+  def statics(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("statics")().asInstanceOf[IClass]
 }

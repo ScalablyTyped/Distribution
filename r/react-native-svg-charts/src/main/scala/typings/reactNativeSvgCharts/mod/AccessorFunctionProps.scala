@@ -2,15 +2,13 @@ package typings.reactNativeSvgCharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessorFunctionProps[T] extends StObject {
   
-  var index: Double = js.native
+  var index: Double
   
-  var item: T = js.native
+  var item: T
 }
 object AccessorFunctionProps {
   
@@ -21,7 +19,7 @@ object AccessorFunctionProps {
   }
   
   @scala.inline
-  implicit class AccessorFunctionPropsMutableBuilder[Self <: AccessorFunctionProps[_], T] (val x: Self with AccessorFunctionProps[T]) extends AnyVal {
+  implicit class AccessorFunctionPropsMutableBuilder[Self <: AccessorFunctionProps[?], T] (val x: Self & AccessorFunctionProps[T]) extends AnyVal {
     
     @scala.inline
     def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])

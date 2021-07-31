@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Document counts. */
-@js.native
 trait DocCounts extends StObject {
   
   /** Number of documents not successfully processed. */
-  var failed: js.UndefOr[Double] = js.native
+  var failed: js.UndefOr[Double] = js.undefined
   
   /** Number of pending documents. */
-  var pending: js.UndefOr[Double] = js.native
+  var pending: js.UndefOr[Double] = js.undefined
   
   /** Number of documents successfully processed. */
-  var successful: js.UndefOr[Double] = js.native
+  var successful: js.UndefOr[Double] = js.undefined
   
   /** Total number of documents. */
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
 }
 object DocCounts {
   

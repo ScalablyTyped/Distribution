@@ -7,16 +7,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of all columns of a table or spreadsheet.
   * @see com.sun.star.table.TableColumn
   */
-@js.native
 trait TableColumns
-  extends XTableColumns
+  extends StObject
+     with XTableColumns
      with XEnumerationAccess
      with XNameAccess
 object TableColumns {

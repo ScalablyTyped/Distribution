@@ -10,7 +10,6 @@ import typings.officeJs.OfficeExtension.LoadOption
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.4]
   */
 @js.native
-trait SettingCollection extends ClientObject {
+trait SettingCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Sets or adds the specified setting to the workbook.
@@ -32,7 +33,7 @@ trait SettingCollection extends ClientObject {
     */
   def add(key: String, value: String): Setting = js.native
   def add(key: String, value: js.Any): Setting = js.native
-  def add(key: String, value: js.Array[_]): Setting = js.native
+  def add(key: String, value: js.Array[js.Any]): Setting = js.native
   def add(key: String, value: Boolean): Setting = js.native
   def add(key: String, value: Double): Setting = js.native
   def add(key: String, value: Date): Setting = js.native
@@ -75,7 +76,7 @@ trait SettingCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): SettingCollection = js.native
-  def load(options: SettingCollectionLoadOptions with CollectionLoadOptions): SettingCollection = js.native
+  def load(options: SettingCollectionLoadOptions & CollectionLoadOptions): SettingCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): SettingCollection = js.native
   def load(propertyNames: String): SettingCollection = js.native
   def load(propertyNames: js.Array[String]): SettingCollection = js.native

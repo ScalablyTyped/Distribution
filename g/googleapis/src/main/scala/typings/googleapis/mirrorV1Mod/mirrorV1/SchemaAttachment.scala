@@ -2,37 +2,35 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents media content, such as a photo, that can be attached to a
   * timeline item.
   */
-@js.native
 trait SchemaAttachment extends StObject {
   
   /**
     * The MIME type of the attachment.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for the content.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the attachment.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the contentUrl is not available because the attachment
     * content is still being processed. If the caller wishes to retrieve the
     * content, it should try again later.
     */
-  var isProcessingContent: js.UndefOr[Boolean] = js.native
+  var isProcessingContent: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaAttachment {
   

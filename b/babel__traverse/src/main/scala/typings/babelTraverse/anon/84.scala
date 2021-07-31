@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.ArrayTypeAnnotation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `84` extends StObject {
   
-  var `type`: ArrayTypeAnnotation = js.native
+  var `type`: ArrayTypeAnnotation
 }
 object `84` {
   
   @scala.inline
-  def apply(`type`: ArrayTypeAnnotation): `84` = {
+  def apply(): `84` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayTypeAnnotation")
     __obj.asInstanceOf[`84`]
   }
   

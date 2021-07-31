@@ -2,21 +2,19 @@ package typings.awsSdk.eventbridgeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPartnerEventSourcesResponse extends StObject {
   
   /**
     * A token you can use in a subsequent operation to retrieve the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.eventbridgeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.eventbridgeMod.NextToken] = js.undefined
   
   /**
     * The list of partner event sources returned by the operation.
     */
-  var PartnerEventSources: js.UndefOr[PartnerEventSourceList] = js.native
+  var PartnerEventSources: js.UndefOr[PartnerEventSourceList] = js.undefined
 }
 object ListPartnerEventSourcesResponse {
   

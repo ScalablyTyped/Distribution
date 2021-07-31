@@ -2,31 +2,29 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SSHPublicKeyMetadata extends StObject {
   
   /**
     * The unique identifier for the SSH public key.
     */
-  var SSHPublicKeyId: publicKeyIdType = js.native
+  var SSHPublicKeyId: publicKeyIdType
   
   /**
     * The status of the SSH public key. Active means that the key can be used for authentication with an AWS CodeCommit repository. Inactive means that the key cannot be used.
     */
-  var Status: statusType = js.native
+  var Status: statusType
   
   /**
     * The date and time, in ISO 8601 date-time format, when the SSH public key was uploaded.
     */
-  var UploadDate: dateType = js.native
+  var UploadDate: dateType
   
   /**
     * The name of the IAM user associated with the SSH public key.
     */
-  var UserName: userNameType = js.native
+  var UserName: userNameType
 }
 object SSHPublicKeyMetadata {
   

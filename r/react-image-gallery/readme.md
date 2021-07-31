@@ -10,9 +10,9 @@ React carousel image gallery component with thumbnail and mobile support
 | ------------------ | :-------------: |
 | Full name          | react-image-gallery |
 | Keywords           | react, carousel, react-component, react-carousel, react-slideshow, react-gallery, react carousel, react slideshow, react gallery, image gallery, image slider, slideshow, gallery, slider |
-| # releases         | 19 |
-| # dependents       | 44 |
-| # downloads        | 2313075 |
+| # releases         | 15 |
+| # dependents       | 48 |
+| # downloads        | 2916321 |
 | # stars            | 12 |
 
 ## Links

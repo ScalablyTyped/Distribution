@@ -3,16 +3,16 @@ package typings.siesta.Siesta.Test.Action
 import typings.siesta.Siesta.Test.IAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @class
   */
-@js.native
-trait Done extends IAction {
+trait Done
+  extends StObject
+     with IAction {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
 }
 object Done {
   

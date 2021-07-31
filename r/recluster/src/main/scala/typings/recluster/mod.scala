@@ -4,17 +4,18 @@ import typings.node.childProcessMod.ChildProcess
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(file: String): Balancer = ^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any]).asInstanceOf[Balancer]
+  @scala.inline
+  def apply(file: String, options: BalancerOptions): Balancer = (^.asInstanceOf[js.Dynamic].apply(file.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Balancer]
+  
   @JSImport("recluster", JSImport.Namespace)
   @js.native
-  def apply(file: String): Balancer = js.native
-  @JSImport("recluster", JSImport.Namespace)
-  @js.native
-  def apply(file: String, options: BalancerOptions): Balancer = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("recluster", "Balancer")
   @js.native
@@ -33,32 +34,31 @@ object mod {
     def workers(): js.Array[ChildProcess] = js.native
   }
   
-  @js.native
   trait BalancerOptions extends StObject {
     
     /** arguments to pass to the worker (default: []) */
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
     /** max time between respawns when workers die */
-    var backoff: js.UndefOr[Double] = js.native
+    var backoff: js.UndefOr[Double] = js.undefined
     
     /** what to log to stdout (default: {respawns: true}) */
-    var log: js.UndefOr[LogOptions] = js.native
+    var log: js.UndefOr[LogOptions] = js.undefined
     
     /** logger to use, needs `log` method (default: console) */
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     /** when does the worker become ready? 'listening' or 'started' */
-    var readyWhen: js.UndefOr[String] = js.native
+    var readyWhen: js.UndefOr[String] = js.undefined
     
     /** min time between respawns when workers die */
-    var respawn: js.UndefOr[Double] = js.native
+    var respawn: js.UndefOr[Double] = js.undefined
     
     /** kill timeout for old workers after reload (sec) */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
     /** number of active workers */
-    var workers: js.UndefOr[Double] = js.native
+    var workers: js.UndefOr[Double] = js.undefined
   }
   object BalancerOptions {
     
@@ -124,10 +124,9 @@ object mod {
     }
   }
   
-  @js.native
   trait LogOptions extends StObject {
     
-    var respawns: js.UndefOr[Boolean] = js.native
+    var respawns: js.UndefOr[Boolean] = js.undefined
   }
   object LogOptions {
     
@@ -151,7 +150,7 @@ object mod {
   @js.native
   trait Logger extends StObject {
     
-    def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def log(message: Unit, optionalParams: js.Any*): Unit = js.native
   }
 }

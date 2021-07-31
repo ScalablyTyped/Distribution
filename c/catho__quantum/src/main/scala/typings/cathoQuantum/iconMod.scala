@@ -4,7 +4,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iconMod {
@@ -296,7 +295,7 @@ object iconMod {
     - typings.cathoQuantum.cathoQuantumStrings.exposure_plus_1
     - typings.cathoQuantum.cathoQuantumStrings.exposure_plus_2
     - typings.cathoQuantum.cathoQuantumStrings.exposure_zero
-    - typings.cathoQuantum.cathoQuantumStrings.extension
+    - typings.cathoQuantum.cathoQuantumStrings.`extension`
     - typings.cathoQuantum.cathoQuantumStrings.face
     - typings.cathoQuantum.cathoQuantumStrings.fast_forward
     - typings.cathoQuantum.cathoQuantumStrings.fast_rewind
@@ -1790,7 +1789,7 @@ object iconMod {
     def exposure_zero: typings.cathoQuantum.cathoQuantumStrings.exposure_zero = "exposure_zero".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.exposure_zero]
     
     @scala.inline
-    def extension: typings.cathoQuantum.cathoQuantumStrings.extension = "extension".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.extension]
+    def `extension`: typings.cathoQuantum.cathoQuantumStrings.`extension` = "extension".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.`extension`]
     
     @scala.inline
     def face: typings.cathoQuantum.cathoQuantumStrings.face = "face".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.face]
@@ -3734,14 +3733,13 @@ object iconMod {
     def zoom_out_map: typings.cathoQuantum.cathoQuantumStrings.zoom_out_map = "zoom_out_map".asInstanceOf[typings.cathoQuantum.cathoQuantumStrings.zoom_out_map]
   }
   
-  @js.native
   trait IconProps extends StObject {
     
-    var name: IconNames = js.native
+    var name: IconNames
     
-    var skin: js.UndefOr[String] = js.native
+    var skin: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object IconProps {
     

@@ -3,24 +3,22 @@ package typings.materialUiCore.anon
 import typings.materialUiCore.withStylesMod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.StyleRules<@material-ui/core.@material-ui/core/ListSubheader.ListSubheaderClassKey>> */
-@js.native
 trait PartialStyleRulesListSubh extends StObject {
   
-  var colorInherit: js.UndefOr[CSSProperties] = js.native
+  var colorInherit: js.UndefOr[CSSProperties] = js.undefined
   
-  var colorPrimary: js.UndefOr[CSSProperties] = js.native
+  var colorPrimary: js.UndefOr[CSSProperties] = js.undefined
   
-  var gutters: js.UndefOr[CSSProperties] = js.native
+  var gutters: js.UndefOr[CSSProperties] = js.undefined
   
-  var inset: js.UndefOr[CSSProperties] = js.native
+  var inset: js.UndefOr[CSSProperties] = js.undefined
   
-  var root: js.UndefOr[CSSProperties] = js.native
+  var root: js.UndefOr[CSSProperties] = js.undefined
   
-  var sticky: js.UndefOr[CSSProperties] = js.native
+  var sticky: js.UndefOr[CSSProperties] = js.undefined
 }
 object PartialStyleRulesListSubh {
   

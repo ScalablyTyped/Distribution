@@ -2,41 +2,39 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxisRangeChangedEventUIParam extends StObject {
   
   /**
     * Used to get reference to current chart axis object.
     */
-  var axis: js.UndefOr[js.Any] = js.native
+  var axis: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to chart object.
     */
-  var chart: js.UndefOr[js.Any] = js.native
+  var chart: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get new maximum value.
     */
-  var newMaximumValue: js.UndefOr[js.Any] = js.native
+  var newMaximumValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get new minimum value.
     */
-  var newMinimumValue: js.UndefOr[js.Any] = js.native
+  var newMinimumValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get old maximum value.
     */
-  var oldMaximumValue: js.UndefOr[js.Any] = js.native
+  var oldMaximumValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get old minimum value.
     */
-  var oldMinimumValue: js.UndefOr[js.Any] = js.native
+  var oldMinimumValue: js.UndefOr[js.Any] = js.undefined
 }
 object AxisRangeChangedEventUIParam {
   

@@ -11,7 +11,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object preloadFileMod {
@@ -99,7 +98,7 @@ object preloadFileMod {
       * @return [Number] The current file position.
       */
     /* InferMemberOverrides */
-    override def getPos(): Double with js.UndefOr[Double] = js.native
+    override def getPos(): Double & js.UndefOr[Double] = js.native
     
     /**
       * Read data from the file.

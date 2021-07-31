@@ -12,7 +12,7 @@ A Collection class for working with JavaScript arrays similiar to Laravel's coll
 | Keywords           | collections, arrays, laravel |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 1176 |
+| # downloads        | 1016 |
 | # stars            | 0 |
 
 ## Links

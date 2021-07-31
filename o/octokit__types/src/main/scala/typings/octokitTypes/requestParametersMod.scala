@@ -1,49 +1,41 @@
 package typings.octokitTypes
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.octokitTypes.anon.Format
+import typings.octokitTypes.anon.Previews
 import typings.octokitTypes.requestHeadersMod.RequestHeaders
 import typings.octokitTypes.requestRequestOptionsMod.RequestRequestOptions
 import typings.octokitTypes.urlMod.Url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestParametersMod {
   
-  @js.native
   trait RequestParameters
-    extends /**
-    * Any additional parameter will be passed as follows
-    * 1. URL parameter if `':parameter'` or `{parameter}` is part of `url`
-    * 2. Query parameter if `method` is `'GET'` or `'HEAD'`
-    * 3. Request body if `parameter` is `'data'`
-    * 4. JSON in the request body in the form of `body[parameter]` unless `parameter` key is `'data'`
-    */
-  /* parameter */ StringDictionary[js.Any] {
+    extends StObject
+       with /* k */ StringDictionary[js.Any] {
     
     /**
       * Base URL to be used when a relative URL is passed, such as `/orgs/:org`.
       * If `baseUrl` is `https://enterprise.acme-inc.com/api/v3`, then the request
       * will be sent to `https://enterprise.acme-inc.com/api/v3/orgs/:org`.
       */
-    var baseUrl: js.UndefOr[Url] = js.native
+    var baseUrl: js.UndefOr[Url] = js.undefined
     
     /**
       * HTTP headers. Use lowercase keys.
       */
-    var headers: js.UndefOr[RequestHeaders] = js.native
+    var headers: js.UndefOr[RequestHeaders] = js.undefined
     
     /**
       * Media type options, see {@link https://developer.github.com/v3/media/|GitHub Developer Guide}
       */
-    var mediaType: js.UndefOr[Format] = js.native
+    var mediaType: js.UndefOr[Previews] = js.undefined
     
     /**
       * Pass custom meta information for the request. The `request` object will be returned as is.
       */
-    var request: js.UndefOr[RequestRequestOptions] = js.native
+    var request: js.UndefOr[RequestRequestOptions] = js.undefined
   }
   object RequestParameters {
     
@@ -69,7 +61,7 @@ object requestParametersMod {
       def setHeadersUndefined: Self = StObject.set(x, "headers", js.undefined)
       
       @scala.inline
-      def setMediaType(value: Format): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
+      def setMediaType(value: Previews): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMediaTypeUndefined: Self = StObject.set(x, "mediaType", js.undefined)

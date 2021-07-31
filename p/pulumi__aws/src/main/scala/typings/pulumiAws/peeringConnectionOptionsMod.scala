@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peeringConnectionOptionsMod {
@@ -49,6 +48,10 @@ object peeringConnectionOptionsMod {
   /* static members */
   object PeeringConnectionOptions {
     
+    @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing PeeringConnectionOptions resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -58,29 +61,23 @@ object peeringConnectionOptionsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID]): PeeringConnectionOptions = js.native
-    @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): PeeringConnectionOptions = js.native
-    @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState): PeeringConnectionOptions = js.native
-    @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState, opts: CustomResourceOptions): PeeringConnectionOptions = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[PeeringConnectionOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PeeringConnectionOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState): PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[PeeringConnectionOptions]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PeeringConnectionOptionsState, opts: CustomResourceOptions): PeeringConnectionOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[PeeringConnectionOptions]
     
     /**
       * Returns true if the given object is an instance of PeeringConnectionOptions.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/peeringConnectionOptions", "PeeringConnectionOptions.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/peeringConnectionOptions.PeeringConnectionOptions */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/peeringConnectionOptions.PeeringConnectionOptions */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/peeringConnectionOptions.PeeringConnectionOptions */ Boolean]
   }
   
-  @js.native
   trait PeeringConnectionOptionsArgs extends StObject {
     
     /**
@@ -88,19 +85,19 @@ object peeringConnectionOptionsMod {
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that accepts
       * the peering connection (a maximum of one).
       */
-    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsAccepter]] = js.native
+    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsAccepter]] = js.undefined
     
     /**
       * A optional configuration block that allows for [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that requests
       * the peering connection (a maximum of one).
       */
-    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsRequester]] = js.native
+    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsRequester]] = js.undefined
     
     /**
       * The ID of the requester VPC peering connection.
       */
-    val vpcPeeringConnectionId: Input[String] = js.native
+    val vpcPeeringConnectionId: Input[String]
   }
   object PeeringConnectionOptionsArgs {
     
@@ -130,7 +127,6 @@ object peeringConnectionOptionsMod {
     }
   }
   
-  @js.native
   trait PeeringConnectionOptionsState extends StObject {
     
     /**
@@ -138,19 +134,19 @@ object peeringConnectionOptionsMod {
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that accepts
       * the peering connection (a maximum of one).
       */
-    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsAccepter]] = js.native
+    val accepter: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsAccepter]] = js.undefined
     
     /**
       * A optional configuration block that allows for [VPC Peering Connection]
       * (https://docs.aws.amazon.com/vpc/latest/peering/what-is-vpc-peering.html) options to be set for the VPC that requests
       * the peering connection (a maximum of one).
       */
-    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsRequester]] = js.native
+    val requester: js.UndefOr[Input[typings.pulumiAws.inputMod.ec2.PeeringConnectionOptionsRequester]] = js.undefined
     
     /**
       * The ID of the requester VPC peering connection.
       */
-    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.native
+    val vpcPeeringConnectionId: js.UndefOr[Input[String]] = js.undefined
   }
   object PeeringConnectionOptionsState {
     

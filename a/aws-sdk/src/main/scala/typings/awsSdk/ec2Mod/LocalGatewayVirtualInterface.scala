@@ -2,56 +2,54 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalGatewayVirtualInterface extends StObject {
   
   /**
     * The local address.
     */
-  var LocalAddress: js.UndefOr[String] = js.native
+  var LocalAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The Border Gateway Protocol (BGP) Autonomous System Number (ASN) of the local gateway.
     */
-  var LocalBgpAsn: js.UndefOr[Integer] = js.native
+  var LocalBgpAsn: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the local gateway.
     */
-  var LocalGatewayId: js.UndefOr[String] = js.native
+  var LocalGatewayId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the virtual interface.
     */
-  var LocalGatewayVirtualInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceId] = js.native
+  var LocalGatewayVirtualInterfaceId: js.UndefOr[typings.awsSdk.ec2Mod.LocalGatewayVirtualInterfaceId] = js.undefined
   
   /**
     * The AWS account ID that owns the local gateway virtual interface.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The peer address.
     */
-  var PeerAddress: js.UndefOr[String] = js.native
+  var PeerAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The peer BGP ASN.
     */
-  var PeerBgpAsn: js.UndefOr[Integer] = js.native
+  var PeerBgpAsn: js.UndefOr[Integer] = js.undefined
   
   /**
     * The tags assigned to the virtual interface.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VLAN.
     */
-  var Vlan: js.UndefOr[Integer] = js.native
+  var Vlan: js.UndefOr[Integer] = js.undefined
 }
 object LocalGatewayVirtualInterface {
   

@@ -2,23 +2,21 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGithubActionsBillingUser extends StObject {
   
-  var getGithubActionsBillingOrg: `651` = js.native
+  var getGithubActionsBillingOrg: `651`
   
-  var getGithubActionsBillingUser: `652` = js.native
+  var getGithubActionsBillingUser: `652`
   
-  var getGithubPackagesBillingOrg: `653` = js.native
+  var getGithubPackagesBillingOrg: `653`
   
-  var getGithubPackagesBillingUser: `654` = js.native
+  var getGithubPackagesBillingUser: `654`
   
-  var getSharedStorageBillingOrg: `655` = js.native
+  var getSharedStorageBillingOrg: `655`
   
-  var getSharedStorageBillingUser: `656` = js.native
+  var getSharedStorageBillingUser: `656`
 }
 object GetGithubActionsBillingUser {
   

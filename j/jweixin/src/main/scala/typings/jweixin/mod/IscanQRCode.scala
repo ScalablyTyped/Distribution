@@ -5,21 +5,21 @@ import typings.jweixin.jweixinNumbers.`0`
 import typings.jweixin.jweixinNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IscanQRCode extends BaseParams {
+trait IscanQRCode
+  extends StObject
+     with BaseParams {
   
-  var needResult: `0` | `1` = js.native
+  var needResult: `0` | `1`
   
   // 默认为0，扫描结果由微信处理，1则直接返回扫描结果，
-  var scanType: js.Array[typings.jweixin.mod.scanType] = js.native
+  var scanType: js.Array[typings.jweixin.mod.scanType]
   
   // 可以指定扫二维码还是一维码，默认二者都有
   // 当needResult 为 1 时，扫码返回的结果
   @JSName("success")
-  def success_MIscanQRCode(res: ResultStr): Unit = js.native
+  def success_MIscanQRCode(res: ResultStr): Unit
 }
 object IscanQRCode {
   

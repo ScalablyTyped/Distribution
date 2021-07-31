@@ -2,11 +2,12 @@ package typings.safariExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SafariExtensionContextMenuItem extends SafariEventTarget {
+trait SafariExtensionContextMenuItem
+  extends StObject
+     with SafariEventTarget {
   
   /**
     * The command identifier that the context menu item sends when activated.

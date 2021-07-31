@@ -8,7 +8,6 @@ import typings.officeUiFabricReact.hoverCardTypesMod.OpenCardMode
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoverCardBaseMod {
@@ -84,14 +83,13 @@ object hoverCardBaseMod {
     def defaultProps_=(x: CardDismissDelay): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IHoverCardState extends StObject {
     
-    var isHoverCardVisible: js.UndefOr[Boolean] = js.native
+    var isHoverCardVisible: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[ExpandingCardMode] = js.native
+    var mode: js.UndefOr[ExpandingCardMode] = js.undefined
     
-    var openMode: js.UndefOr[OpenCardMode] = js.native
+    var openMode: js.UndefOr[OpenCardMode] = js.undefined
   }
   object IHoverCardState {
     

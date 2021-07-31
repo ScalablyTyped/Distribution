@@ -3,18 +3,18 @@ package typings.activexLibreoffice.com_.sun.star.text
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to move a cursor word by word. */
-@js.native
-trait XWordCursor extends XTextCursor {
+trait XWordCursor
+  extends StObject
+     with XTextCursor {
   
   /**
     * moves the cursor to the end of the current word.
     * @returns `TRUE` if the cursor is now at the end of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoEndOfWord(bExpand: Boolean): Boolean = js.native
+  def gotoEndOfWord(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the next word.
@@ -23,7 +23,7 @@ trait XWordCursor extends XTextCursor {
     * example if it travels over empty paragraphs.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoNextWord(bExpand: Boolean): Boolean = js.native
+  def gotoNextWord(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the previous word.
@@ -32,19 +32,19 @@ trait XWordCursor extends XTextCursor {
     * example if it travels over empty paragraphs.
     * @returns `TRUE` if the cursor was moved. It returns `FALSE` it the cursor can not advance further.
     */
-  def gotoPreviousWord(bExpand: Boolean): Boolean = js.native
+  def gotoPreviousWord(bExpand: Boolean): Boolean
   
   /**
     * moves the cursor to the start of the current word.
     * @returns `TRUE` if the cursor is now at the start of a word, `FALSE` otherwise. If `FALSE` was returned the cursor will remain at its original position.
     */
-  def gotoStartOfWord(bExpand: Boolean): Boolean = js.native
+  def gotoStartOfWord(bExpand: Boolean): Boolean
   
   /** determines if the cursor is positioned at the end of a word. */
-  def isEndOfWord(): Boolean = js.native
+  def isEndOfWord(): Boolean
   
   /** determines if the cursor is positioned at the start of a word. */
-  def isStartOfWord(): Boolean = js.native
+  def isStartOfWord(): Boolean
 }
 object XWordCursor {
   

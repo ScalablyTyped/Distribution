@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedServiceActionAssociation extends StObject {
   
   /**
     * The error code. Valid values are listed below.
     */
-  var ErrorCode: js.UndefOr[ServiceActionAssociationErrorCode] = js.native
+  var ErrorCode: js.UndefOr[ServiceActionAssociationErrorCode] = js.undefined
   
   /**
     * A text description of the error.
     */
-  var ErrorMessage: js.UndefOr[ServiceActionAssociationErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[ServiceActionAssociationErrorMessage] = js.undefined
   
   /**
     * The product identifier. For example, prod-abcdzk7xy33qa.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The identifier of the provisioning artifact. For example, pa-4abcdjnxjj6ne.
     */
-  var ProvisioningArtifactId: js.UndefOr[Id] = js.native
+  var ProvisioningArtifactId: js.UndefOr[Id] = js.undefined
   
   /**
     * The self-service action identifier. For example, act-fs7abcd89wxyz.
     */
-  var ServiceActionId: js.UndefOr[Id] = js.native
+  var ServiceActionId: js.UndefOr[Id] = js.undefined
 }
 object FailedServiceActionAssociation {
   

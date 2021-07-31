@@ -6,10 +6,13 @@ import typings.indefiniteObservable.typesMod.Observer
 import typings.indefiniteObservable.typesMod.ObserverOrNext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("indefinite-observable", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("indefinite-observable", "IndefiniteObservable")
   @js.native
@@ -25,7 +28,6 @@ object mod {
     def this(connect: Connect[T]) = this()
   }
   
-  @JSImport("indefinite-observable", "wrapWithObserver")
-  @js.native
-  def wrapWithObserver[T](listener: ObserverOrNext[T]): Observer[T] = js.native
+  @scala.inline
+  def wrapWithObserver[T](listener: ObserverOrNext[T]): Observer[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapWithObserver")(listener.asInstanceOf[js.Any]).asInstanceOf[Observer[T]]
 }

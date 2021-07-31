@@ -2,7 +2,6 @@ package typings.paypalCheckoutComponents
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationMod {
@@ -14,7 +13,7 @@ object configurationMod {
   object ButtonColorOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ButtonColorOption with String] = js.native
+    def apply(value: String): js.UndefOr[ButtonColorOption & String] = js.native
     
     /**
       * Third alternate
@@ -23,8 +22,10 @@ object configurationMod {
       * we recommend this button as a third alternative.
       */
     @js.native
-    sealed trait Black extends ButtonColorOption
-    /* "black" */ val Black: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Black with String = js.native
+    sealed trait Black
+      extends StObject
+         with ButtonColorOption
+    /* "black" */ val Black: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Black & String = js.native
     
     /**
       * First alternate
@@ -33,8 +34,10 @@ object configurationMod {
       * which provides a halo of trust and security to your experience.
       */
     @js.native
-    sealed trait Blue extends ButtonColorOption
-    /* "blue" */ val Blue: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Blue with String = js.native
+    sealed trait Blue
+      extends StObject
+         with ButtonColorOption
+    /* "blue" */ val Blue: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Blue & String = js.native
     
     /**
       * Recommended
@@ -43,8 +46,10 @@ object configurationMod {
       * Use it on your website to leverage PayPal’s recognition and preference.
       */
     @js.native
-    sealed trait Gold extends ButtonColorOption
-    /* "gold" */ val Gold: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Gold with String = js.native
+    sealed trait Gold
+      extends StObject
+         with ButtonColorOption
+    /* "gold" */ val Gold: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Gold & String = js.native
     
     /**
       * Second alternate
@@ -53,8 +58,10 @@ object configurationMod {
       * we recommend this button color as a second alternative.
       */
     @js.native
-    sealed trait Silver extends ButtonColorOption
-    /* "silver" */ val Silver: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Silver with String = js.native
+    sealed trait Silver
+      extends StObject
+         with ButtonColorOption
+    /* "silver" */ val Silver: typings.paypalCheckoutComponents.configurationMod.ButtonColorOption.Silver & String = js.native
   }
   
   @js.native
@@ -64,43 +71,53 @@ object configurationMod {
   object ButtonLabelOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ButtonLabelOption with String] = js.native
+    def apply(value: String): js.UndefOr[ButtonLabelOption & String] = js.native
     
     /**
       * The Buy Now button. Initializes the checkout flow.
       * The default Buy Now button is unbranded. To include PayPal branding, set branding: true.
       */
     @js.native
-    sealed trait BuyNow extends ButtonLabelOption
-    /* "buynow" */ val BuyNow: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.BuyNow with String = js.native
+    sealed trait BuyNow
+      extends StObject
+         with ButtonLabelOption
+    /* "buynow" */ val BuyNow: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.BuyNow & String = js.native
     
     /**
       * The PayPal Checkout button. The default button.
       */
     @js.native
-    sealed trait Checkout extends ButtonLabelOption
-    /* "checkout" */ val Checkout: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Checkout with String = js.native
+    sealed trait Checkout
+      extends StObject
+         with ButtonLabelOption
+    /* "checkout" */ val Checkout: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Checkout & String = js.native
     
     /**
       * The PayPal Credit button. Initializes the credit flow. Cannot be used with any custom color option.
       */
     @js.native
-    sealed trait Credit extends ButtonLabelOption
-    /* "credit" */ val Credit: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Credit with String = js.native
+    sealed trait Credit
+      extends StObject
+         with ButtonLabelOption
+    /* "credit" */ val Credit: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Credit & String = js.native
     
     /**
       * The Pay With PayPal button. Initializes the checkout flow.
       */
     @js.native
-    sealed trait Pay extends ButtonLabelOption
-    /* "pay" */ val Pay: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Pay with String = js.native
+    sealed trait Pay
+      extends StObject
+         with ButtonLabelOption
+    /* "pay" */ val Pay: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.Pay & String = js.native
     
     /**
       * The generic PayPal button. Initializes the checkout flow. This button contains only the PayPal brand logo.
       */
     @js.native
-    sealed trait PayPal extends ButtonLabelOption
-    /* "paypal" */ val PayPal: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.PayPal with String = js.native
+    sealed trait PayPal
+      extends StObject
+         with ButtonLabelOption
+    /* "paypal" */ val PayPal: typings.paypalCheckoutComponents.configurationMod.ButtonLabelOption.PayPal & String = js.native
   }
   
   @js.native
@@ -110,7 +127,7 @@ object configurationMod {
   object ButtonShapeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ButtonShapeOption with String] = js.native
+    def apply(value: String): js.UndefOr[ButtonShapeOption & String] = js.native
     
     /**
       * Recommended
@@ -118,16 +135,20 @@ object configurationMod {
       * Its unique and powerful shape signifies PayPal in people’s minds.
       */
     @js.native
-    sealed trait Pill extends ButtonShapeOption
-    /* "pill" */ val Pill: typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption.Pill with String = js.native
+    sealed trait Pill
+      extends StObject
+         with ButtonShapeOption
+    /* "pill" */ val Pill: typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption.Pill & String = js.native
     
     /**
       * Use the rectangular button as an alternative for media such as mobile
       * where pill-shaped buttons might pose design challenges.
       */
     @js.native
-    sealed trait Rect extends ButtonShapeOption
-    /* "rect" */ val Rect: typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption.Rect with String = js.native
+    sealed trait Rect
+      extends StObject
+         with ButtonShapeOption
+    /* "rect" */ val Rect: typings.paypalCheckoutComponents.configurationMod.ButtonShapeOption.Rect & String = js.native
   }
   
   @js.native
@@ -137,21 +158,25 @@ object configurationMod {
   object ButtonSizeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ButtonSizeOption with String] = js.native
+    def apply(value: String): js.UndefOr[ButtonSizeOption & String] = js.native
     
     /**
       * 350 pixels by 40 pixels
       */
     @js.native
-    sealed trait Large extends ButtonSizeOption
-    /* "large" */ val Large: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Large with String = js.native
+    sealed trait Large
+      extends StObject
+         with ButtonSizeOption
+    /* "large" */ val Large: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Large & String = js.native
     
     /**
       * 250 pixels by 35 pixels
       */
     @js.native
-    sealed trait Medium extends ButtonSizeOption
-    /* "medium" */ val Medium: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Medium with String = js.native
+    sealed trait Medium
+      extends StObject
+         with ButtonSizeOption
+    /* "medium" */ val Medium: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Medium & String = js.native
     
     /**
       * Dynamic
@@ -159,16 +184,20 @@ object configurationMod {
       * Minimum width is 150px, maximum width is 500px.
       */
     @js.native
-    sealed trait Responsive extends ButtonSizeOption
-    /* "responsive" */ val Responsive: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Responsive with String = js.native
+    sealed trait Responsive
+      extends StObject
+         with ButtonSizeOption
+    /* "responsive" */ val Responsive: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Responsive & String = js.native
     
     /**
       * Recommended. Default.
       * 150 pixels by 25 pixels
       */
     @js.native
-    sealed trait Small extends ButtonSizeOption
-    /* "small" */ val Small: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Small with String = js.native
+    sealed trait Small
+      extends StObject
+         with ButtonSizeOption
+    /* "small" */ val Small: typings.paypalCheckoutComponents.configurationMod.ButtonSizeOption.Small & String = js.native
   }
   
   @js.native
@@ -178,29 +207,32 @@ object configurationMod {
   object Environment extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Environment with String] = js.native
+    def apply(value: String): js.UndefOr[Environment & String] = js.native
     
     @js.native
-    sealed trait Production extends Environment
-    /* "production" */ val Production: typings.paypalCheckoutComponents.configurationMod.Environment.Production with String = js.native
+    sealed trait Production
+      extends StObject
+         with Environment
+    /* "production" */ val Production: typings.paypalCheckoutComponents.configurationMod.Environment.Production & String = js.native
     
     @js.native
-    sealed trait Sandbox extends Environment
-    /* "sandbox" */ val Sandbox: typings.paypalCheckoutComponents.configurationMod.Environment.Sandbox with String = js.native
+    sealed trait Sandbox
+      extends StObject
+         with Environment
+    /* "sandbox" */ val Sandbox: typings.paypalCheckoutComponents.configurationMod.Environment.Sandbox & String = js.native
   }
   
-  @js.native
   trait ButtonStyle extends StObject {
     
-    var color: ButtonColorOption = js.native
+    var color: ButtonColorOption
     
-    var label: ButtonLabelOption = js.native
+    var label: ButtonLabelOption
     
-    var shape: ButtonShapeOption = js.native
+    var shape: ButtonShapeOption
     
-    var size: ButtonSizeOption = js.native
+    var size: ButtonSizeOption
     
-    var tagline: Boolean = js.native
+    var tagline: Boolean
   }
   object ButtonStyle {
     

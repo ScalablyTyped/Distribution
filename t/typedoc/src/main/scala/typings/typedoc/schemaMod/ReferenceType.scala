@@ -2,24 +2,24 @@ package typings.typedoc.schemaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Type */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ReferenceType, 'type' | 'name' | 'typeArguments'> */
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ @js.native
-trait ReferenceType extends SomeType {
+- typings.typedoc.schemaMod.__ModelToObject because Already inherited */ trait ReferenceType
+  extends StObject
+     with SomeType {
   
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
   
-  var name: ModelToObject[String] | String = js.native
+  var name: ModelToObject[String] | String
   
-  var `type`: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String) = js.native
+  var `type`: (ModelToObject[/* "reference" */ String]) | (/* "reference" */ String)
   
   var typeArguments: js.UndefOr[
     ModelToObject[js.UndefOr[js.Array[typings.typedoc.typesAbstractMod.Type]]] | js.Array[typings.typedoc.typesAbstractMod.Type]
-  ] = js.native
+  ] = js.undefined
 }
 object ReferenceType {
   

@@ -1,23 +1,31 @@
 package typings.wonderJs
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/utils/ClassUtils", JSImport.Namespace)
-@js.native
-object classUtilsMod extends js.Object {
-  @js.native
-  class ClassUtils () extends js.Object
+object classUtilsMod {
   
+  @JSImport("wonder.js/dist/es2015/utils/ClassUtils", "ClassUtils")
+  @js.native
+  class ClassUtils () extends StObject
   /* static members */
-  @js.native
-  object ClassUtils extends js.Object {
-    def addClass(className: String, _class: js.Any): Unit = js.native
-    def addClassNameAttributeToClass(className: String, _class: js.Any): Unit = js.native
-    def getClass(className: String): js.Any = js.native
-    def getClassNameByInstance(obj: js.Any): js.Any = js.native
+  object ClassUtils {
+    
+    @JSImport("wonder.js/dist/es2015/utils/ClassUtils", "ClassUtils")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def addClass(className: String, _class: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClass")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def addClassNameAttributeToClass(className: String, _class: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addClassNameAttributeToClass")(className.asInstanceOf[js.Any], _class.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def getClass(className: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(className.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def getClassNameByInstance(obj: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getClassNameByInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
-  
 }
-

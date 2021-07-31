@@ -2,26 +2,24 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateLicenseSpecificationsForResourceRequest extends StObject {
   
   /**
     * ARNs of the license configurations to add.
     */
-  var AddLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.native
+  var AddLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.undefined
   
   /**
     * ARNs of the license configurations to remove.
     */
-  var RemoveLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.native
+  var RemoveLicenseSpecifications: js.UndefOr[LicenseSpecifications] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the AWS resource.
     */
-  var ResourceArn: String = js.native
+  var ResourceArn: String
 }
 object UpdateLicenseSpecificationsForResourceRequest {
   

@@ -2,19 +2,19 @@ package typings.jointjs.mod.attributes
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SVGEllipseAttributes extends SVGAttributes {
+trait SVGEllipseAttributes
+  extends StObject
+     with SVGAttributes {
   
-  var cx: js.UndefOr[String | Double] = js.native
+  var cx: js.UndefOr[String | Double] = js.undefined
   
-  var cy: js.UndefOr[String | Double] = js.native
+  var cy: js.UndefOr[String | Double] = js.undefined
   
-  var rx: js.UndefOr[String | Double] = js.native
+  var rx: js.UndefOr[String | Double] = js.undefined
   
-  var ry: js.UndefOr[String | Double] = js.native
+  var ry: js.UndefOr[String | Double] = js.undefined
 }
 object SVGEllipseAttributes {
   

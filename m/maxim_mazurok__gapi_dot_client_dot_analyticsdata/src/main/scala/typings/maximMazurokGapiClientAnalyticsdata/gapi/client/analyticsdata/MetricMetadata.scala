@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAnalyticsdata.gapi.client.analyticsdata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MetricMetadata extends StObject {
   
   /** A metric name. Useable in [Metric](#Metric)'s `name`. For example, `eventCount`. */
-  var apiName: js.UndefOr[String] = js.native
+  var apiName: js.UndefOr[String] = js.undefined
   
   /** True if the metric is a custom metric for this property. */
-  var customDefinition: js.UndefOr[Boolean] = js.native
+  var customDefinition: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Still usable but deprecated names for this metric. If populated, this metric is available by either `apiName` or one of `deprecatedApiNames` for a period of time. After the
     * deprecation period, the metric will be available only by `apiName`.
     */
-  var deprecatedApiNames: js.UndefOr[js.Array[String]] = js.native
+  var deprecatedApiNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Description of how this metric is used and calculated. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The mathematical expression for this derived metric. Can be used in [Metric](#Metric)'s `expression` field for equivalent reports. Most metrics are not expressions, and for
     * non-expressions, this field is empty.
     */
-  var expression: js.UndefOr[String] = js.native
+  var expression: js.UndefOr[String] = js.undefined
   
   /** The type of this metric. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** This metric's name within the Google Analytics user interface. For example, `Event count`. */
-  var uiName: js.UndefOr[String] = js.native
+  var uiName: js.UndefOr[String] = js.undefined
 }
 object MetricMetadata {
   

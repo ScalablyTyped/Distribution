@@ -3,23 +3,24 @@ package typings.bufferCompare
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("buffer-compare", JSImport.Namespace)
-  @js.native
-  def apply(cmp: List, to: List): Double = js.native
-  @JSImport("buffer-compare", JSImport.Namespace)
-  @js.native
-  def apply[T](cmp: T, to: T): Double = js.native
+  @scala.inline
+  def apply(cmp: List, to: List): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def apply[T](cmp: T, to: T): Double = (^.asInstanceOf[js.Dynamic].apply(cmp.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  @JSImport("buffer-compare", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait List
-    extends /* index */ NumberDictionary[js.Any] {
+    extends StObject
+       with /* index */ NumberDictionary[js.Any] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object List {
     

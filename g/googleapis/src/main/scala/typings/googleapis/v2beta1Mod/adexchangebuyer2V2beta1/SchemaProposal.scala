@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,81 +12,80 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * create, or otherwise modify Private Auction or Preferred Deals deals
   * through the API.  Fields are updatable unless noted otherwise.
   */
-@js.native
 trait SchemaProposal extends StObject {
   
   /**
     * Reference to the buyer that will get billed for this proposal.
     * @OutputOnly
     */
-  var billedBuyer: js.UndefOr[SchemaBuyer] = js.native
+  var billedBuyer: js.UndefOr[SchemaBuyer] = js.undefined
   
   /**
     * Reference to the buyer on the proposal.  Note: This field may be set only
     * when creating the resource. Modifying this field while updating the
     * resource will result in an error.
     */
-  var buyer: js.UndefOr[SchemaBuyer] = js.native
+  var buyer: js.UndefOr[SchemaBuyer] = js.undefined
   
   /**
     * Contact information for the buyer.
     */
-  var buyerContacts: js.UndefOr[js.Array[SchemaContactInformation]] = js.native
+  var buyerContacts: js.UndefOr[js.Array[SchemaContactInformation]] = js.undefined
   
   /**
     * Private data for buyer. (hidden from seller).
     */
-  var buyerPrivateData: js.UndefOr[SchemaPrivateData] = js.native
+  var buyerPrivateData: js.UndefOr[SchemaPrivateData] = js.undefined
   
   /**
     * The deals associated with this proposal. For Private Auction proposals
     * (whose deals have NonGuaranteedAuctionTerms), there will only be one
     * deal.
     */
-  var deals: js.UndefOr[js.Array[SchemaDeal]] = js.native
+  var deals: js.UndefOr[js.Array[SchemaDeal]] = js.undefined
   
   /**
     * The name for the proposal.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * True if the proposal is being renegotiated. @OutputOnly
     */
-  var isRenegotiating: js.UndefOr[Boolean] = js.native
+  var isRenegotiating: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True, if the buyside inventory setup is complete for this proposal.
     * @OutputOnly
     */
-  var isSetupComplete: js.UndefOr[Boolean] = js.native
+  var isSetupComplete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The role of the last user that either updated the proposal or left a
     * comment. @OutputOnly
     */
-  var lastUpdaterOrCommentorRole: js.UndefOr[String] = js.native
+  var lastUpdaterOrCommentorRole: js.UndefOr[String] = js.undefined
   
   /**
     * The notes associated with this proposal. @OutputOnly
     */
-  var notes: js.UndefOr[js.Array[SchemaNote]] = js.native
+  var notes: js.UndefOr[js.Array[SchemaNote]] = js.undefined
   
   /**
     * Indicates whether the buyer/seller created the proposal. @OutputOnly
     */
-  var originatorRole: js.UndefOr[String] = js.native
+  var originatorRole: js.UndefOr[String] = js.undefined
   
   /**
     * Private auction ID if this proposal is a private auction proposal.
     * @OutputOnly
     */
-  var privateAuctionId: js.UndefOr[String] = js.native
+  var privateAuctionId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the proposal. @OutputOnly
     */
-  var proposalId: js.UndefOr[String] = js.native
+  var proposalId: js.UndefOr[String] = js.undefined
   
   /**
     * The revision number for the proposal. Each update to the proposal or the
@@ -98,29 +96,29 @@ trait SchemaProposal extends StObject {
     * operation to let the buyer know that a subsequent update was made.
     * @OutputOnly
     */
-  var proposalRevision: js.UndefOr[String] = js.native
+  var proposalRevision: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the proposal. @OutputOnly
     */
-  var proposalState: js.UndefOr[String] = js.native
+  var proposalState: js.UndefOr[String] = js.undefined
   
   /**
     * Reference to the seller on the proposal.  Note: This field may be set
     * only when creating the resource. Modifying this field while updating the
     * resource will result in an error.
     */
-  var seller: js.UndefOr[SchemaSeller] = js.native
+  var seller: js.UndefOr[SchemaSeller] = js.undefined
   
   /**
     * Contact information for the seller. @OutputOnly
     */
-  var sellerContacts: js.UndefOr[js.Array[SchemaContactInformation]] = js.native
+  var sellerContacts: js.UndefOr[js.Array[SchemaContactInformation]] = js.undefined
   
   /**
     * The time when the proposal was last revised. @OutputOnly
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaProposal {
   

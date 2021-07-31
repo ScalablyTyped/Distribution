@@ -4,7 +4,6 @@ import typings.primereact.menuItemMod.MenuItem
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbBreadCrumbMod {
@@ -21,18 +20,17 @@ object breadcrumbBreadCrumbMod {
     def this(props: BreadCrumbProps, context: js.Any) = this()
   }
   
-  @js.native
   trait BreadCrumbProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var home: js.UndefOr[js.Any] = js.native
+    var home: js.UndefOr[js.Any] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var model: js.UndefOr[js.Array[MenuItem]] = js.native
+    var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object BreadCrumbProps {
     

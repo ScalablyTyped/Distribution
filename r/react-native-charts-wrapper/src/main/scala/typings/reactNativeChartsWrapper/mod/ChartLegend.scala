@@ -18,49 +18,47 @@ import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.TOP
 import typings.reactNativeChartsWrapper.reactNativeChartsWrapperStrings.VERTICAL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegend extends StObject {
   
-  var custom: js.UndefOr[Colors] = js.native
+  var custom: js.UndefOr[Colors] = js.undefined
   
-  var direction: js.UndefOr[LEFT_TO_RIGHT | RIGHT_TO_LEFT] = js.native
+  var direction: js.UndefOr[LEFT_TO_RIGHT | RIGHT_TO_LEFT] = js.undefined
   
-  var drawInside: js.UndefOr[Boolean] = js.native
+  var drawInside: js.UndefOr[Boolean] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontStyle: js.UndefOr[Double] = js.native
+  var fontStyle: js.UndefOr[Double] = js.undefined
   
-  var fontWeight: js.UndefOr[Double] = js.native
+  var fontWeight: js.UndefOr[Double] = js.undefined
   
-  var form: js.UndefOr[NONE | EMPTY | DEFAULT | SQUARE | CIRCLE | LINE] = js.native
+  var form: js.UndefOr[NONE | EMPTY | DEFAULT | SQUARE | CIRCLE | LINE] = js.undefined
   
-  var formSize: js.UndefOr[Double] = js.native
+  var formSize: js.UndefOr[Double] = js.undefined
   
-  var formToTextSpace: js.UndefOr[Double] = js.native
+  var formToTextSpace: js.UndefOr[Double] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[LEFT | CENTER | RIGHT] = js.native
+  var horizontalAlignment: js.UndefOr[LEFT | CENTER | RIGHT] = js.undefined
   
-  var maxSizePercent: js.UndefOr[Double] = js.native
+  var maxSizePercent: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[HORIZONTAL | VERTICAL] = js.native
+  var orientation: js.UndefOr[HORIZONTAL | VERTICAL] = js.undefined
   
-  var textColor: js.UndefOr[Color] = js.native
+  var textColor: js.UndefOr[Color] = js.undefined
   
-  var textSize: js.UndefOr[Double] = js.native
+  var textSize: js.UndefOr[Double] = js.undefined
   
-  var verticalAlignment: js.UndefOr[TOP | CENTER | BOTTOM] = js.native
+  var verticalAlignment: js.UndefOr[TOP | CENTER | BOTTOM] = js.undefined
   
-  var wordWrapEnabled: js.UndefOr[Boolean] = js.native
+  var wordWrapEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var xEntrySpace: js.UndefOr[Double] = js.native
+  var xEntrySpace: js.UndefOr[Double] = js.undefined
   
-  var yEntrySpace: js.UndefOr[Double] = js.native
+  var yEntrySpace: js.UndefOr[Double] = js.undefined
 }
 object ChartLegend {
   

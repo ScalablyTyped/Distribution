@@ -2,13 +2,13 @@ package typings.svgo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluginRemoveRasterImages extends PluginConfig {
+trait PluginRemoveRasterImages
+  extends StObject
+     with PluginConfig {
   
-  var removeRasterImages: Boolean | js.Object = js.native
+  var removeRasterImages: Boolean | js.Object
 }
 object PluginRemoveRasterImages {
   

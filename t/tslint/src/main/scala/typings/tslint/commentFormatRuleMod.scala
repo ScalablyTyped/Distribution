@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commentFormatRuleMod {
@@ -22,13 +21,11 @@ object commentFormatRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/commentFormatRule", "Rule.IGNORE_PATTERN_FAILURE_FACTORY")
-    @js.native
-    def IGNORE_PATTERN_FAILURE_FACTORY(pattern: String): String = js.native
+    @scala.inline
+    def IGNORE_PATTERN_FAILURE_FACTORY(pattern: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("IGNORE_PATTERN_FAILURE_FACTORY")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("tslint/lib/rules/commentFormatRule", "Rule.IGNORE_WORDS_FAILURE_FACTORY")
-    @js.native
-    def IGNORE_WORDS_FAILURE_FACTORY(words: js.Array[String]): String = js.native
+    @scala.inline
+    def IGNORE_WORDS_FAILURE_FACTORY(words: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("IGNORE_WORDS_FAILURE_FACTORY")(words.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/commentFormatRule", "Rule.LEADING_SPACE_FAILURE")
     @js.native

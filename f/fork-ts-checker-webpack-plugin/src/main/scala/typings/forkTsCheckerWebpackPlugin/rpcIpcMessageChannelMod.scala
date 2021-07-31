@@ -3,15 +3,16 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.rpcMessageChannelMod.RpcMessageChannel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpcIpcMessageChannelMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc/RpcIpcMessageChannel", "createRpcIpcMessageChannel")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc/RpcIpcMessageChannel", JSImport.Namespace)
   @js.native
-  def createRpcIpcMessageChannel(servicePath: String): RpcMessageChannel = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/rpc/rpc-ipc/RpcIpcMessageChannel", "createRpcIpcMessageChannel")
-  @js.native
-  def createRpcIpcMessageChannel(servicePath: String, memoryLimit: Double): RpcMessageChannel = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createRpcIpcMessageChannel(servicePath: String): RpcMessageChannel = ^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any]).asInstanceOf[RpcMessageChannel]
+  @scala.inline
+  def createRpcIpcMessageChannel(servicePath: String, memoryLimit: Double): RpcMessageChannel = (^.asInstanceOf[js.Dynamic].applyDynamic("createRpcIpcMessageChannel")(servicePath.asInstanceOf[js.Any], memoryLimit.asInstanceOf[js.Any])).asInstanceOf[RpcMessageChannel]
 }

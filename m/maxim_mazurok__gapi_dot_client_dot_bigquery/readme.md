@@ -10,9 +10,9 @@ TypeScript typings for BigQuery API v2
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.bigquery |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 1 |
-| # downloads        | 3453 |
+| # downloads        | 3767 |
 | # stars            | 0 |
 
 ## Links

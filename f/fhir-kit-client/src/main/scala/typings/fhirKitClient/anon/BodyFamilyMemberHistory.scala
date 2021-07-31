@@ -3,28 +3,23 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.FamilyMemberHistory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyFamilyMemberHistory extends StObject {
   
-  var body: FamilyMemberHistory = js.native
+  var body: FamilyMemberHistory
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.FamilyMemberHistory = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.FamilyMemberHistory
 }
 object BodyFamilyMemberHistory {
   
   @scala.inline
-  def apply(
-    body: FamilyMemberHistory,
-    resourceType: typings.fhirKitClient.fhirKitClientStrings.FamilyMemberHistory
-  ): BodyFamilyMemberHistory = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: FamilyMemberHistory): BodyFamilyMemberHistory = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], resourceType = "FamilyMemberHistory")
     __obj.asInstanceOf[BodyFamilyMemberHistory]
   }
   

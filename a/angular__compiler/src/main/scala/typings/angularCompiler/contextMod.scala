@@ -8,7 +8,6 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -68,7 +67,7 @@ object contextMod {
       */
     def forkChildContext(index: Double, templateIndex: Double, meta: I18nMeta): I18nContext = js.native
     
-    def getSerializedPlaceholders(): Map[String, js.Array[_]] = js.native
+    def getSerializedPlaceholders(): Map[String, js.Array[js.Any]] = js.native
     
     def icus: js.Any = js.native
     
@@ -86,7 +85,7 @@ object contextMod {
     
     val meta: I18nMeta = js.native
     
-    var placeholders: Map[String, js.Array[_]] = js.native
+    var placeholders: Map[String, js.Array[js.Any]] = js.native
     
     /**
       * Reconciles child context into parent one once the end of the i18n block is reached (i18nEnd).

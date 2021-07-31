@@ -3,15 +3,13 @@ package typings.hapiHapi.mod
 import typings.hapiHapi.hapiHapiBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccessSetting extends StObject {
   
-  var entity: js.UndefOr[AccessEntity] = js.native
+  var entity: js.UndefOr[AccessEntity] = js.undefined
   
-  var scope: AccessScopes | `false` = js.native
+  var scope: AccessScopes | `false`
 }
 object AccessSetting {
   

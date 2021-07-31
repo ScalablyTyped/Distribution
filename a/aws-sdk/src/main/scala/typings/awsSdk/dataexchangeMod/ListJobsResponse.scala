@@ -2,21 +2,19 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsResponse extends StObject {
   
   /**
     * The jobs listed by the request.
     */
-  var Jobs: js.UndefOr[ListOfJobEntry] = js.native
+  var Jobs: js.UndefOr[ListOfJobEntry] = js.undefined
   
   /**
     * The token value retrieved from a previous call to access the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.dataexchangeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.dataexchangeMod.NextToken] = js.undefined
 }
 object ListJobsResponse {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the XYDiagram class.
   */
-@js.native
-trait ASPxClientXYDiagram extends ASPxClientXYDiagram2D {
+trait ASPxClientXYDiagram
+  extends StObject
+     with ASPxClientXYDiagram2D {
   
   /**
     * Gets a value indicating whether the diagram is rotated.
     */
-  var rotated: Boolean = js.native
+  var rotated: Boolean
 }
 object ASPxClientXYDiagram {
   

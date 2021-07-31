@@ -6,103 +6,101 @@ import typings.winrtUwp.Windows.Foundation.Collections.IVector
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an item in the feed. This class encapsulates information in the /rss/channel/item element in RSS 2.0 or the atom:entry element in Atom 1.0. */
-@js.native
 trait SyndicationItem extends StObject {
   
   /** Gets the list of custom attributes of the element. */
-  var attributeExtensions: IVector[SyndicationAttribute] = js.native
+  var attributeExtensions: IVector[SyndicationAttribute]
   
   /** Gets the authors of an item. This property represents the collection of all the atom:author elements under atom:entry. */
-  var authors: IVector[SyndicationPerson] = js.native
+  var authors: IVector[SyndicationPerson]
   
   /** Gets or sets the base URI for the element. This property represents the xml:base attribute on the element. It may be inherited from an ancestor element. */
-  var baseUri: Uri = js.native
+  var baseUri: Uri
   
   /** Gets a collection of categories of the feed. This property represents the collection of all the atom:category elements under atom:feed. */
-  var categories: IVector[SyndicationCategory] = js.native
+  var categories: IVector[SyndicationCategory]
   
   /** Gets or sets the Uniform Resource Identifier (URI) of the comments for the item. This property represents the /rss/channel/item/comments element. */
-  var commentsUri: Uri = js.native
+  var commentsUri: Uri
   
   /** Gets or sets the content of the item. */
-  var content: SyndicationContent = js.native
+  var content: SyndicationContent
   
   /** Gets a collection of the contributors of the feed. This property represents the collection of all the atom:contributor elements under atom:feed. */
-  var contributors: IVector[SyndicationPerson] = js.native
+  var contributors: IVector[SyndicationPerson]
   
   /** Gets the Uniform Resource Identifier (URI) of an editable media resource. */
-  var editMediaUri: Uri = js.native
+  var editMediaUri: Uri
   
   /** Gets the Uniform Resource Identifier (URI) of an editable resource. */
-  var editUri: Uri = js.native
+  var editUri: Uri
   
   /** Gets the list of child elements within the element. */
-  var elementExtensions: IVector[ISyndicationNode] = js.native
+  var elementExtensions: IVector[ISyndicationNode]
   
   /** Gets an ETag HTTP header. */
-  var etag: String = js.native
+  var etag: String
   
   /**
     * Generates the DOM object that represents this element, all the attributes and child elements including foreign markups. The only formats accepted by this method are Atom 1.0 and RSS 2.0.
     * @param format The format of the data.
     * @return The DOM object that represents this element, and all the attributes and child elements, including foreign markups.
     */
-  def getXmlDocument(format: SyndicationFormat): XmlDocument = js.native
+  def getXmlDocument(format: SyndicationFormat): XmlDocument
   
   /** Gets or sets the identifier for the syndication feed. */
-  var id: String = js.native
+  var id: String
   
   /** Gets the Uniform Resource Identifier (URI) of this item. AtomPubClient creates this property after new resource is created. */
-  var itemUri: Uri = js.native
+  var itemUri: Uri
   
   /** Gets or sets the language of the element. This property represents the xml:lang attribute on the element. It may be inherited from an ancestor element. It must be valid according to XML 1.0. */
-  var language: String = js.native
+  var language: String
   
   /** Gets or sets the most recent time the item was modified. This property represents the atom:updated element. */
-  var lastUpdatedTime: Date = js.native
+  var lastUpdatedTime: Date
   
   /** Gets the links contained in the item. */
-  var links: IVector[SyndicationLink] = js.native
+  var links: IVector[SyndicationLink]
   
   /**
     * Initializes the object from the given feed string, which can be in either RSS 2.0 or Atom 1.0 format.
     * @param item The feed string, which can be in either RSS 2.0 or Atom 1.0 format.
     */
-  def load(item: String): Unit = js.native
+  def load(item: String): Unit
   
   /**
     * Initializes the object from the given DOM object, which can contain XML content in either RSS 2.0 or Atom 1.0 format.
     * @param itemDocument The DOM object, which can contain XML content in either RSS 2.0 or Atom 1.0 format.
     */
-  def loadFromXml(itemDocument: XmlDocument): Unit = js.native
+  def loadFromXml(itemDocument: XmlDocument): Unit
   
   /** Gets or sets the local name of the element. */
-  var nodeName: String = js.native
+  var nodeName: String
   
   /** Gets or sets the namespace of the element. */
-  var nodeNamespace: String = js.native
+  var nodeNamespace: String
   
   /** Gets or sets the text content of the element. If the element contains only child elements, this property is NULL. */
-  var nodeValue: String = js.native
+  var nodeValue: String
   
   /** Gets or sets the date the item was published. */
-  var publishedDate: Date = js.native
+  var publishedDate: Date
   
   /** Gets or sets information about the rights of an item. This property represents the atom:rights element. */
-  var rights: ISyndicationText = js.native
+  var rights: ISyndicationText
   
   /** Gets or sets the source feed of the item. This property represents the atom:source element or the source element in RSS 2.0. */
-  var source: SyndicationFeed = js.native
+  var source: SyndicationFeed
   
   /** Gets or sets a summary of the item. */
-  var summary: ISyndicationText = js.native
+  var summary: ISyndicationText
   
   /** Gets or sets the title of the item. */
-  var title: ISyndicationText = js.native
+  var title: ISyndicationText
 }
 object SyndicationItem {
   

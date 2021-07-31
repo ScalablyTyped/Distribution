@@ -2,33 +2,31 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecognizerOptions extends StObject {
   
-  var direction: js.UndefOr[Double] = js.native
+  var direction: js.UndefOr[Double] = js.undefined
   
   var enable: js.UndefOr[
     Boolean | (js.Function2[/* recognizer */ Recognizer, /* inputData */ HammerInput, Boolean])
-  ] = js.native
+  ] = js.undefined
   
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var pointers: js.UndefOr[Double] = js.native
+  var pointers: js.UndefOr[Double] = js.undefined
   
-  var posThreshold: js.UndefOr[Double] = js.native
+  var posThreshold: js.UndefOr[Double] = js.undefined
   
-  var taps: js.UndefOr[Double] = js.native
+  var taps: js.UndefOr[Double] = js.undefined
   
-  var threshold: js.UndefOr[Double] = js.native
+  var threshold: js.UndefOr[Double] = js.undefined
   
-  var time: js.UndefOr[Double] = js.native
+  var time: js.UndefOr[Double] = js.undefined
   
-  var velocity: js.UndefOr[Double] = js.native
+  var velocity: js.UndefOr[Double] = js.undefined
 }
 object RecognizerOptions {
   

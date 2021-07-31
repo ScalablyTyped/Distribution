@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.ContinueStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `39` extends StObject {
   
-  var `type`: ContinueStatement = js.native
+  var `type`: ContinueStatement
 }
 object `39` {
   
   @scala.inline
-  def apply(`type`: ContinueStatement): `39` = {
+  def apply(): `39` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ContinueStatement")
     __obj.asInstanceOf[`39`]
   }
   

@@ -2,36 +2,34 @@ package typings.googleapis.doubleclickbidmanagerV1Mod.doubleclickbidmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to fetch stored line items.
   */
-@js.native
 trait SchemaDownloadLineItemsRequest extends StObject {
   
   /**
     * File specification (column names, types, order) in which the line items
     * will be returned. Default to EWF.
     */
-  var fileSpec: js.UndefOr[String] = js.native
+  var fileSpec: js.UndefOr[String] = js.undefined
   
   /**
     * Ids of the specified filter type used to filter line items to fetch. If
     * omitted, all the line items will be returned.
     */
-  var filterIds: js.UndefOr[js.Array[String]] = js.native
+  var filterIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Filter type used to filter line items to fetch.
     */
-  var filterType: js.UndefOr[String] = js.native
+  var filterType: js.UndefOr[String] = js.undefined
   
   /**
     * Format in which the line items will be returned. Default to CSV.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
 }
 object SchemaDownloadLineItemsRequest {
   

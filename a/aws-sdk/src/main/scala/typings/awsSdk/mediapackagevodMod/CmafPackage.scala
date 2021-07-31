@@ -2,24 +2,22 @@ package typings.awsSdk.mediapackagevodMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CmafPackage extends StObject {
   
-  var Encryption: js.UndefOr[CmafEncryption] = js.native
+  var Encryption: js.UndefOr[CmafEncryption] = js.undefined
   
   /**
     * A list of HLS manifest configurations.
     */
-  var HlsManifests: listOfHlsManifest = js.native
+  var HlsManifests: listOfHlsManifest
   
   /**
     * Duration (in seconds) of each fragment. Actual fragments will be
   rounded to the nearest multiple of the source fragment duration.
     */
-  var SegmentDurationSeconds: js.UndefOr[integer] = js.native
+  var SegmentDurationSeconds: js.UndefOr[integer] = js.undefined
 }
 object CmafPackage {
   

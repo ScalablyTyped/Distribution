@@ -3,28 +3,28 @@ package typings.canvaskitWasm.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SkFontMgr extends EmbindObject[SkFontMgr] {
+trait SkFontMgr
+  extends StObject
+     with EmbindObject[SkFontMgr] {
   
   /**
     * Return the number of font families loaded in this manager. Useful for debugging.
     */
-  def countFamilies(): Double = js.native
+  def countFamilies(): Double
   
   /**
     * Return the nth family name. Useful for debugging.
     * @param index
     */
-  def getFamilyName(index: Double): String = js.native
+  def getFamilyName(index: Double): String
   
   /**
     * Create a typeface for the specified bytes and return it.
     * @param fontData
     */
-  def makeTypefaceFromData(fontData: ArrayBuffer): SkTypeface = js.native
+  def makeTypefaceFromData(fontData: ArrayBuffer): SkTypeface
 }
 object SkFontMgr {
   

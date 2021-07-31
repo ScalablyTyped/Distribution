@@ -3,51 +3,49 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backup extends StObject {
   
   /** Output only. Capacity of the source file share when the backup was created. */
-  var capacityGb: js.UndefOr[String] = js.native
+  var capacityGb: js.UndefOr[String] = js.undefined
   
   /** Output only. The time when the backup was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** A description of the backup with 2048 characters or less. Requests with longer descriptions will be rejected. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Amount of bytes that will be downloaded if the backup is restored. This may be different than storage bytes, since sequential backups of the same disk will share
     * storage.
     */
-  var downloadBytes: js.UndefOr[String] = js.native
+  var downloadBytes: js.UndefOr[String] = js.undefined
   
   /** Resource labels to represent user provided metadata. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Output only. The resource name of the backup, in the format projects/{project_number}/locations/{location_id}/backups/{backup_id}. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Name of the file share in the source Cloud Filestore instance that the backup is created from. */
-  var sourceFileShare: js.UndefOr[String] = js.native
+  var sourceFileShare: js.UndefOr[String] = js.undefined
   
   /** The resource name of the source Cloud Filestore instance, in the format projects/{project_number}/locations/{location_id}/instances/{instance_id}, used to create this backup. */
-  var sourceInstance: js.UndefOr[String] = js.native
+  var sourceInstance: js.UndefOr[String] = js.undefined
   
   /** Output only. The service tier of the source Cloud Filestore instance that this backup is created from. */
-  var sourceInstanceTier: js.UndefOr[String] = js.native
+  var sourceInstanceTier: js.UndefOr[String] = js.undefined
   
   /** Output only. The backup state. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. The size of the storage used by the backup. As backups share storage, this number is expected to change with backup creation/deletion. */
-  var storageBytes: js.UndefOr[String] = js.native
+  var storageBytes: js.UndefOr[String] = js.undefined
 }
 object Backup {
   
@@ -88,7 +86,7 @@ object Backup {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientFile.maximMazurokGapiClientFileStrings.Backup & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

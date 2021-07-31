@@ -2,41 +2,39 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeProvisioningArtifactInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The product identifier.
     */
-  var ProductId: js.UndefOr[Id] = js.native
+  var ProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The product name.
     */
-  var ProductName: js.UndefOr[ProductViewName] = js.native
+  var ProductName: js.UndefOr[ProductViewName] = js.undefined
   
   /**
     * The identifier of the provisioning artifact.
     */
-  var ProvisioningArtifactId: js.UndefOr[Id] = js.native
+  var ProvisioningArtifactId: js.UndefOr[Id] = js.undefined
   
   /**
     * The provisioning artifact name.
     */
-  var ProvisioningArtifactName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactName] = js.native
+  var ProvisioningArtifactName: js.UndefOr[typings.awsSdk.servicecatalogMod.ProvisioningArtifactName] = js.undefined
   
   /**
     * Indicates whether a verbose level of detail is enabled.
     */
-  var Verbose: js.UndefOr[typings.awsSdk.servicecatalogMod.Verbose] = js.native
+  var Verbose: js.UndefOr[typings.awsSdk.servicecatalogMod.Verbose] = js.undefined
 }
 object DescribeProvisioningArtifactInput {
   

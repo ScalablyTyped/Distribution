@@ -7,7 +7,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kinesisvideosignalingchannelsMod {
@@ -17,22 +16,22 @@ object kinesisvideosignalingchannelsMod {
   /**
     * Constructs a service object. This object has one method for each API operation.
     */
-  class ^ () extends KinesisVideoSignalingChannels {
+  class ^ ()
+    extends StObject
+       with KinesisVideoSignalingChannels {
     def this(options: ClientConfiguration) = this()
   }
   
   type Answer = String
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -53,32 +52,34 @@ object kinesisvideosignalingchannelsMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   type ClientId = String
   
-  @js.native
   trait GetIceServerConfigRequest extends StObject {
     
     /**
       * The ARN of the signaling channel to be used for the peer-to-peer connection between configured peers. 
       */
-    var ChannelARN: ResourceARN = js.native
+    var ChannelARN: ResourceARN
     
     /**
       * Unique identifier for the viewer. Must be unique within the signaling channel.
       */
-    var ClientId: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.ClientId] = js.native
+    var ClientId: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.ClientId] = js.undefined
     
     /**
       * Specifies the desired service. Currently, TURN is the only valid value.
       */
-    var Service: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Service] = js.native
+    var Service: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Service] = js.undefined
     
     /**
       * An optional user ID to be associated with the credentials.
       */
-    var Username: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Username] = js.native
+    var Username: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Username] = js.undefined
   }
   object GetIceServerConfigRequest {
     
@@ -114,13 +115,12 @@ object kinesisvideosignalingchannelsMod {
     }
   }
   
-  @js.native
   trait GetIceServerConfigResponse extends StObject {
     
     /**
       * The list of ICE server information objects.
       */
-    var IceServerList: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.IceServerList] = js.native
+    var IceServerList: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.IceServerList] = js.undefined
   }
   object GetIceServerConfigResponse {
     
@@ -144,28 +144,27 @@ object kinesisvideosignalingchannelsMod {
     }
   }
   
-  @js.native
   trait IceServer extends StObject {
     
     /**
       * A password to login to the ICE server.
       */
-    var Password: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Password] = js.native
+    var Password: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Password] = js.undefined
     
     /**
       * The period of time, in seconds, during which the username and password are valid.
       */
-    var Ttl: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Ttl] = js.native
+    var Ttl: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Ttl] = js.undefined
     
     /**
       * An array of URIs, in the form specified in the I-D.petithuguenin-behave-turn-uris spec. These URIs provide the different addresses and/or protocols that can be used to reach the TURN server.
       */
-    var Uris: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Uris] = js.native
+    var Uris: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Uris] = js.undefined
     
     /**
       * A username to login to the ICE server.
       */
-    var Username: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Username] = js.native
+    var Username: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Username] = js.undefined
   }
   object IceServer {
     
@@ -213,7 +212,7 @@ object kinesisvideosignalingchannelsMod {
   - Dropped 'TURN' | string */ @js.native
   trait KinesisVideoSignalingChannels extends StObject {
     
-    var config: ConfigBase with ClientConfiguration = js.native
+    var config: ConfigBase & ClientConfiguration = js.native
     
     /**
       * Gets the Interactive Connectivity Establishment (ICE) server configuration information, including URIs, username, and password which can be used to configure the WebRTC connection. The ICE component uses this configuration information to setup the WebRTC connection, including authenticating with the Traversal Using Relays around NAT (TURN) relay server.  TURN is a protocol that is used to improve the connectivity of peer-to-peer applications. By providing a cloud-based relay service, TURN ensures that a connection can be established even when one or more peers are incapable of a direct peer-to-peer connection. For more information, see A REST API For Access To TURN Services.  You can invoke this API to establish a fallback mechanism in case either of the peers is unable to establish a direct peer-to-peer connection over a signaling channel. You must specify either a signaling channel ARN or the client ID in order to invoke this API.
@@ -250,23 +249,22 @@ object kinesisvideosignalingchannelsMod {
   
   type ResourceARN = String
   
-  @js.native
   trait SendAlexaOfferToMasterRequest extends StObject {
     
     /**
       * The ARN of the signaling channel by which Alexa and the master peer communicate.
       */
-    var ChannelARN: ResourceARN = js.native
+    var ChannelARN: ResourceARN
     
     /**
       * The base64-encoded SDP offer content.
       */
-    var MessagePayload: typings.awsSdk.kinesisvideosignalingchannelsMod.MessagePayload = js.native
+    var MessagePayload: typings.awsSdk.kinesisvideosignalingchannelsMod.MessagePayload
     
     /**
       * The unique identifier for the sender client.
       */
-    var SenderClientId: ClientId = js.native
+    var SenderClientId: ClientId
   }
   object SendAlexaOfferToMasterRequest {
     
@@ -290,13 +288,12 @@ object kinesisvideosignalingchannelsMod {
     }
   }
   
-  @js.native
   trait SendAlexaOfferToMasterResponse extends StObject {
     
     /**
       * The base64-encoded SDP answer content.
       */
-    var Answer: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Answer] = js.native
+    var Answer: js.UndefOr[typings.awsSdk.kinesisvideosignalingchannelsMod.Answer] = js.undefined
   }
   object SendAlexaOfferToMasterResponse {
     

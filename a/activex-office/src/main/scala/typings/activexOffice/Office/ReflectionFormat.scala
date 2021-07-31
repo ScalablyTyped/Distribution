@@ -2,28 +2,26 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReflectionFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Blur: Double = js.native
+  var Blur: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.ReflectionFormat_typekey")
-  var OfficeDotReflectionFormat_typekey: ReflectionFormat = js.native
+  var OfficeDotReflectionFormat_typekey: ReflectionFormat
   
-  var Offset: Double = js.native
+  var Offset: Double
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Transparency: Double = js.native
+  var Transparency: Double
   
-  var Type: MsoReflectionType = js.native
+  var Type: MsoReflectionType
 }
 object ReflectionFormat {
   

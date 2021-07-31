@@ -2,38 +2,36 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuItem extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var Checked: Boolean = js.native
+  var Checked: Boolean
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
   @JSName("Excel.MenuItem_typekey")
-  var ExcelDotMenuItem_typekey: MenuItem = js.native
+  var ExcelDotMenuItem_typekey: MenuItem
   
-  var HelpContextID: Double = js.native
+  var HelpContextID: Double
   
-  var HelpFile: String = js.native
+  var HelpFile: String
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var OnAction: String = js.native
+  var OnAction: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var StatusBar: String = js.native
+  var StatusBar: String
 }
 object MenuItem {
   

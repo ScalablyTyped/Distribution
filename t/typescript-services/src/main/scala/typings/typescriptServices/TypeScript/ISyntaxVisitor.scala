@@ -2,183 +2,181 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyntaxVisitor extends StObject {
   
-  def visitArgumentList(node: ArgumentListSyntax): js.Any = js.native
+  def visitArgumentList(node: ArgumentListSyntax): js.Any
   
-  def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): js.Any = js.native
+  def visitArrayLiteralExpression(node: ArrayLiteralExpressionSyntax): js.Any
   
-  def visitArrayType(node: ArrayTypeSyntax): js.Any = js.native
+  def visitArrayType(node: ArrayTypeSyntax): js.Any
   
-  def visitBinaryExpression(node: BinaryExpressionSyntax): js.Any = js.native
+  def visitBinaryExpression(node: BinaryExpressionSyntax): js.Any
   
-  def visitBlock(node: BlockSyntax): js.Any = js.native
+  def visitBlock(node: BlockSyntax): js.Any
   
-  def visitBreakStatement(node: BreakStatementSyntax): js.Any = js.native
+  def visitBreakStatement(node: BreakStatementSyntax): js.Any
   
-  def visitCallSignature(node: CallSignatureSyntax): js.Any = js.native
+  def visitCallSignature(node: CallSignatureSyntax): js.Any
   
-  def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): js.Any = js.native
+  def visitCaseSwitchClause(node: CaseSwitchClauseSyntax): js.Any
   
-  def visitCastExpression(node: CastExpressionSyntax): js.Any = js.native
+  def visitCastExpression(node: CastExpressionSyntax): js.Any
   
-  def visitCatchClause(node: CatchClauseSyntax): js.Any = js.native
+  def visitCatchClause(node: CatchClauseSyntax): js.Any
   
-  def visitClassDeclaration(node: ClassDeclarationSyntax): js.Any = js.native
+  def visitClassDeclaration(node: ClassDeclarationSyntax): js.Any
   
-  def visitConditionalExpression(node: ConditionalExpressionSyntax): js.Any = js.native
+  def visitConditionalExpression(node: ConditionalExpressionSyntax): js.Any
   
-  def visitConstraint(node: ConstraintSyntax): js.Any = js.native
+  def visitConstraint(node: ConstraintSyntax): js.Any
   
-  def visitConstructSignature(node: ConstructSignatureSyntax): js.Any = js.native
+  def visitConstructSignature(node: ConstructSignatureSyntax): js.Any
   
-  def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): js.Any = js.native
+  def visitConstructorDeclaration(node: ConstructorDeclarationSyntax): js.Any
   
-  def visitConstructorType(node: ConstructorTypeSyntax): js.Any = js.native
+  def visitConstructorType(node: ConstructorTypeSyntax): js.Any
   
-  def visitContinueStatement(node: ContinueStatementSyntax): js.Any = js.native
+  def visitContinueStatement(node: ContinueStatementSyntax): js.Any
   
-  def visitDebuggerStatement(node: DebuggerStatementSyntax): js.Any = js.native
+  def visitDebuggerStatement(node: DebuggerStatementSyntax): js.Any
   
-  def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): js.Any = js.native
+  def visitDefaultSwitchClause(node: DefaultSwitchClauseSyntax): js.Any
   
-  def visitDeleteExpression(node: DeleteExpressionSyntax): js.Any = js.native
+  def visitDeleteExpression(node: DeleteExpressionSyntax): js.Any
   
-  def visitDoStatement(node: DoStatementSyntax): js.Any = js.native
+  def visitDoStatement(node: DoStatementSyntax): js.Any
   
-  def visitElementAccessExpression(node: ElementAccessExpressionSyntax): js.Any = js.native
+  def visitElementAccessExpression(node: ElementAccessExpressionSyntax): js.Any
   
-  def visitElseClause(node: ElseClauseSyntax): js.Any = js.native
+  def visitElseClause(node: ElseClauseSyntax): js.Any
   
-  def visitEmptyStatement(node: EmptyStatementSyntax): js.Any = js.native
+  def visitEmptyStatement(node: EmptyStatementSyntax): js.Any
   
-  def visitEnumDeclaration(node: EnumDeclarationSyntax): js.Any = js.native
+  def visitEnumDeclaration(node: EnumDeclarationSyntax): js.Any
   
-  def visitEnumElement(node: EnumElementSyntax): js.Any = js.native
+  def visitEnumElement(node: EnumElementSyntax): js.Any
   
-  def visitEqualsValueClause(node: EqualsValueClauseSyntax): js.Any = js.native
+  def visitEqualsValueClause(node: EqualsValueClauseSyntax): js.Any
   
-  def visitExportAssignment(node: ExportAssignmentSyntax): js.Any = js.native
+  def visitExportAssignment(node: ExportAssignmentSyntax): js.Any
   
-  def visitExpressionStatement(node: ExpressionStatementSyntax): js.Any = js.native
+  def visitExpressionStatement(node: ExpressionStatementSyntax): js.Any
   
-  def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): js.Any = js.native
+  def visitExternalModuleReference(node: ExternalModuleReferenceSyntax): js.Any
   
-  def visitFinallyClause(node: FinallyClauseSyntax): js.Any = js.native
+  def visitFinallyClause(node: FinallyClauseSyntax): js.Any
   
-  def visitForInStatement(node: ForInStatementSyntax): js.Any = js.native
+  def visitForInStatement(node: ForInStatementSyntax): js.Any
   
-  def visitForStatement(node: ForStatementSyntax): js.Any = js.native
+  def visitForStatement(node: ForStatementSyntax): js.Any
   
-  def visitFunctionDeclaration(node: FunctionDeclarationSyntax): js.Any = js.native
+  def visitFunctionDeclaration(node: FunctionDeclarationSyntax): js.Any
   
-  def visitFunctionExpression(node: FunctionExpressionSyntax): js.Any = js.native
+  def visitFunctionExpression(node: FunctionExpressionSyntax): js.Any
   
-  def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): js.Any = js.native
+  def visitFunctionPropertyAssignment(node: FunctionPropertyAssignmentSyntax): js.Any
   
-  def visitFunctionType(node: FunctionTypeSyntax): js.Any = js.native
+  def visitFunctionType(node: FunctionTypeSyntax): js.Any
   
-  def visitGenericType(node: GenericTypeSyntax): js.Any = js.native
+  def visitGenericType(node: GenericTypeSyntax): js.Any
   
-  def visitGetAccessor(node: GetAccessorSyntax): js.Any = js.native
+  def visitGetAccessor(node: GetAccessorSyntax): js.Any
   
-  def visitHeritageClause(node: HeritageClauseSyntax): js.Any = js.native
+  def visitHeritageClause(node: HeritageClauseSyntax): js.Any
   
-  def visitIfStatement(node: IfStatementSyntax): js.Any = js.native
+  def visitIfStatement(node: IfStatementSyntax): js.Any
   
-  def visitImportDeclaration(node: ImportDeclarationSyntax): js.Any = js.native
+  def visitImportDeclaration(node: ImportDeclarationSyntax): js.Any
   
-  def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): js.Any = js.native
+  def visitIndexMemberDeclaration(node: IndexMemberDeclarationSyntax): js.Any
   
-  def visitIndexSignature(node: IndexSignatureSyntax): js.Any = js.native
+  def visitIndexSignature(node: IndexSignatureSyntax): js.Any
   
-  def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): js.Any = js.native
+  def visitInterfaceDeclaration(node: InterfaceDeclarationSyntax): js.Any
   
-  def visitInvocationExpression(node: InvocationExpressionSyntax): js.Any = js.native
+  def visitInvocationExpression(node: InvocationExpressionSyntax): js.Any
   
-  def visitLabeledStatement(node: LabeledStatementSyntax): js.Any = js.native
+  def visitLabeledStatement(node: LabeledStatementSyntax): js.Any
   
-  def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): js.Any = js.native
+  def visitMemberAccessExpression(node: MemberAccessExpressionSyntax): js.Any
   
-  def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): js.Any = js.native
+  def visitMemberFunctionDeclaration(node: MemberFunctionDeclarationSyntax): js.Any
   
-  def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): js.Any = js.native
+  def visitMemberVariableDeclaration(node: MemberVariableDeclarationSyntax): js.Any
   
-  def visitMethodSignature(node: MethodSignatureSyntax): js.Any = js.native
+  def visitMethodSignature(node: MethodSignatureSyntax): js.Any
   
-  def visitModuleDeclaration(node: ModuleDeclarationSyntax): js.Any = js.native
+  def visitModuleDeclaration(node: ModuleDeclarationSyntax): js.Any
   
-  def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): js.Any = js.native
+  def visitModuleNameModuleReference(node: ModuleNameModuleReferenceSyntax): js.Any
   
-  def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): js.Any = js.native
+  def visitObjectCreationExpression(node: ObjectCreationExpressionSyntax): js.Any
   
-  def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): js.Any = js.native
+  def visitObjectLiteralExpression(node: ObjectLiteralExpressionSyntax): js.Any
   
-  def visitObjectType(node: ObjectTypeSyntax): js.Any = js.native
+  def visitObjectType(node: ObjectTypeSyntax): js.Any
   
-  def visitOmittedExpression(node: OmittedExpressionSyntax): js.Any = js.native
+  def visitOmittedExpression(node: OmittedExpressionSyntax): js.Any
   
-  def visitParameter(node: ParameterSyntax): js.Any = js.native
+  def visitParameter(node: ParameterSyntax): js.Any
   
-  def visitParameterList(node: ParameterListSyntax): js.Any = js.native
+  def visitParameterList(node: ParameterListSyntax): js.Any
   
-  def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): js.Any = js.native
+  def visitParenthesizedArrowFunctionExpression(node: ParenthesizedArrowFunctionExpressionSyntax): js.Any
   
-  def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): js.Any = js.native
+  def visitParenthesizedExpression(node: ParenthesizedExpressionSyntax): js.Any
   
-  def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): js.Any = js.native
+  def visitPostfixUnaryExpression(node: PostfixUnaryExpressionSyntax): js.Any
   
-  def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): js.Any = js.native
+  def visitPrefixUnaryExpression(node: PrefixUnaryExpressionSyntax): js.Any
   
-  def visitPropertySignature(node: PropertySignatureSyntax): js.Any = js.native
+  def visitPropertySignature(node: PropertySignatureSyntax): js.Any
   
-  def visitQualifiedName(node: QualifiedNameSyntax): js.Any = js.native
+  def visitQualifiedName(node: QualifiedNameSyntax): js.Any
   
-  def visitReturnStatement(node: ReturnStatementSyntax): js.Any = js.native
+  def visitReturnStatement(node: ReturnStatementSyntax): js.Any
   
-  def visitSetAccessor(node: SetAccessorSyntax): js.Any = js.native
+  def visitSetAccessor(node: SetAccessorSyntax): js.Any
   
-  def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): js.Any = js.native
+  def visitSimpleArrowFunctionExpression(node: SimpleArrowFunctionExpressionSyntax): js.Any
   
-  def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): js.Any = js.native
+  def visitSimplePropertyAssignment(node: SimplePropertyAssignmentSyntax): js.Any
   
-  def visitSourceUnit(node: SourceUnitSyntax): js.Any = js.native
+  def visitSourceUnit(node: SourceUnitSyntax): js.Any
   
-  def visitSwitchStatement(node: SwitchStatementSyntax): js.Any = js.native
+  def visitSwitchStatement(node: SwitchStatementSyntax): js.Any
   
-  def visitThrowStatement(node: ThrowStatementSyntax): js.Any = js.native
+  def visitThrowStatement(node: ThrowStatementSyntax): js.Any
   
-  def visitToken(token: ISyntaxToken): js.Any = js.native
+  def visitToken(token: ISyntaxToken): js.Any
   
-  def visitTryStatement(node: TryStatementSyntax): js.Any = js.native
+  def visitTryStatement(node: TryStatementSyntax): js.Any
   
-  def visitTypeAnnotation(node: TypeAnnotationSyntax): js.Any = js.native
+  def visitTypeAnnotation(node: TypeAnnotationSyntax): js.Any
   
-  def visitTypeArgumentList(node: TypeArgumentListSyntax): js.Any = js.native
+  def visitTypeArgumentList(node: TypeArgumentListSyntax): js.Any
   
-  def visitTypeOfExpression(node: TypeOfExpressionSyntax): js.Any = js.native
+  def visitTypeOfExpression(node: TypeOfExpressionSyntax): js.Any
   
-  def visitTypeParameter(node: TypeParameterSyntax): js.Any = js.native
+  def visitTypeParameter(node: TypeParameterSyntax): js.Any
   
-  def visitTypeParameterList(node: TypeParameterListSyntax): js.Any = js.native
+  def visitTypeParameterList(node: TypeParameterListSyntax): js.Any
   
-  def visitTypeQuery(node: TypeQuerySyntax): js.Any = js.native
+  def visitTypeQuery(node: TypeQuerySyntax): js.Any
   
-  def visitVariableDeclaration(node: VariableDeclarationSyntax): js.Any = js.native
+  def visitVariableDeclaration(node: VariableDeclarationSyntax): js.Any
   
-  def visitVariableDeclarator(node: VariableDeclaratorSyntax): js.Any = js.native
+  def visitVariableDeclarator(node: VariableDeclaratorSyntax): js.Any
   
-  def visitVariableStatement(node: VariableStatementSyntax): js.Any = js.native
+  def visitVariableStatement(node: VariableStatementSyntax): js.Any
   
-  def visitVoidExpression(node: VoidExpressionSyntax): js.Any = js.native
+  def visitVoidExpression(node: VoidExpressionSyntax): js.Any
   
-  def visitWhileStatement(node: WhileStatementSyntax): js.Any = js.native
+  def visitWhileStatement(node: WhileStatementSyntax): js.Any
   
-  def visitWithStatement(node: WithStatementSyntax): js.Any = js.native
+  def visitWithStatement(node: WithStatementSyntax): js.Any
 }
 object ISyntaxVisitor {
   

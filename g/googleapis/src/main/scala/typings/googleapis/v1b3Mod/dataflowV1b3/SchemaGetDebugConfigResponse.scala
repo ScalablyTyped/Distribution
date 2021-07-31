@@ -2,19 +2,17 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to a get debug configuration request.
   */
-@js.native
 trait SchemaGetDebugConfigResponse extends StObject {
   
   /**
     * The encoded debug configuration for the requested component.
     */
-  var config: js.UndefOr[String] = js.native
+  var config: js.UndefOr[String] = js.undefined
 }
 object SchemaGetDebugConfigResponse {
   

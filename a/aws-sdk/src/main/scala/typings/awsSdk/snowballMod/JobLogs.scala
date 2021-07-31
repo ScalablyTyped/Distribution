@@ -2,26 +2,24 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobLogs extends StObject {
   
   /**
     * A link to an Amazon S3 presigned URL where the job completion report is located.
     */
-  var JobCompletionReportURI: js.UndefOr[String] = js.native
+  var JobCompletionReportURI: js.UndefOr[String] = js.undefined
   
   /**
     * A link to an Amazon S3 presigned URL where the job failure log is located.
     */
-  var JobFailureLogURI: js.UndefOr[String] = js.native
+  var JobFailureLogURI: js.UndefOr[String] = js.undefined
   
   /**
     * A link to an Amazon S3 presigned URL where the job success log is located.
     */
-  var JobSuccessLogURI: js.UndefOr[String] = js.native
+  var JobSuccessLogURI: js.UndefOr[String] = js.undefined
 }
 object JobLogs {
   

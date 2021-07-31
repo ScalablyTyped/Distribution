@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.PrintTaskConstructor
 import typings.arcgisJsApi.esri.PrintTaskProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printTaskMod extends Shortcut {
   
   @JSImport("esri/tasks/PrintTask", JSImport.Namespace)
   @js.native
-  val ^ : PrintTaskConstructor = js.native
+  val ^ : js.Object & PrintTaskConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/tasks/PrintTask", JSImport.Namespace)
@@ -23,12 +22,14 @@ object printTaskMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-PrintTask.html)
     */
-  class Class () extends PrintTask {
+  class Class ()
+    extends StObject
+       with PrintTask {
     def this(properties: PrintTaskProperties) = this()
   }
   
-  type _To = PrintTaskConstructor
+  type _To = js.Object & PrintTaskConstructor
   
   /* This means you don't have to write `^`, but can instead just say `printTaskMod.foo` */
-  override def _to: PrintTaskConstructor = ^
+  override def _to: js.Object & PrintTaskConstructor = ^
 }

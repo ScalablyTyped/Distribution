@@ -2,21 +2,19 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogFacebookResultSelection extends StObject {
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var gender: String = js.native
+  var gender: String
   
-  var id: String = js.native
+  var id: String
   
-  var last_name: String = js.native
+  var last_name: String
   
-  var name: String = js.native
+  var name: String
 }
 object DialogFacebookResultSelection {
   

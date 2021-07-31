@@ -2,38 +2,33 @@ package typings.isaac
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("isaac", "internals")
+  @JSImport("isaac", JSImport.Namespace)
   @js.native
-  def internals(): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("isaac", "prng")
-  @js.native
-  def prng(n: Double): Unit = js.native
+  @scala.inline
+  def internals(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("internals")().asInstanceOf[js.Any]
   
-  @JSImport("isaac", "rand")
-  @js.native
-  def rand(): Double = js.native
+  @scala.inline
+  def prng(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("prng")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("isaac", "random")
-  @js.native
-  def random(): Double = js.native
+  @scala.inline
+  def rand(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("rand")().asInstanceOf[Double]
   
-  @JSImport("isaac", "reset")
-  @js.native
-  def reset(): Unit = js.native
+  @scala.inline
+  def random(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("random")().asInstanceOf[Double]
   
-  @JSImport("isaac", "seed")
-  @js.native
-  def seed(s: String): Unit = js.native
-  @JSImport("isaac", "seed")
-  @js.native
-  def seed(s: js.Array[Double]): Unit = js.native
-  @JSImport("isaac", "seed")
-  @js.native
-  def seed(s: Double): Unit = js.native
+  @scala.inline
+  def reset(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def seed(s: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def seed(s: js.Array[Double]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def seed(s: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("seed")(s.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,8 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see AccessibleContext
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessible extends XInterface {
+trait XAccessible
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the {@link AccessibleContext} associated with this object.
@@ -34,7 +34,7 @@ trait XAccessible extends XInterface {
     * @returns A reference to the object that contains the actual accessibility information.
     * @see AccessibleContext
     */
-  val AccessibleContext: XAccessibleContext = js.native
+  val AccessibleContext: XAccessibleContext
   
   /**
     * Returns the {@link AccessibleContext} associated with this object.
@@ -45,7 +45,7 @@ trait XAccessible extends XInterface {
     * @returns A reference to the object that contains the actual accessibility information.
     * @see AccessibleContext
     */
-  def getAccessibleContext(): XAccessibleContext = js.native
+  def getAccessibleContext(): XAccessibleContext
 }
 object XAccessible {
   

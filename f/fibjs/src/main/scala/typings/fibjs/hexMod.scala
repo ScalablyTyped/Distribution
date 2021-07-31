@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,11 +11,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object hexMod {
   
-  @JSImport("hex", "decode")
+  @JSImport("hex", JSImport.Namespace)
   @js.native
-  def decode(data: String): ClassBuffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("hex", "encode")
-  @js.native
-  def encode(data: ClassBuffer): String = js.native
+  @scala.inline
+  def decode(data: String): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
+  
+  @scala.inline
+  def encode(data: ClassBuffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

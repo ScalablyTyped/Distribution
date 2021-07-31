@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabeledPrice extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var label: String = js.native
+  var label: String
 }
 object LabeledPrice {
   

@@ -5,14 +5,16 @@ import typings.ffmpegJs.mod.Worker.PostMessageOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(opts: Options): Result = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[Result]
+  
   @JSImport("ffmpeg.js", JSImport.Namespace)
   @js.native
-  def apply(opts: Options): Result = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ffmpeg.js", "Worker")
   @js.native
@@ -27,12 +29,11 @@ object mod {
   }
   object Worker {
     
-    @js.native
     trait Data extends StObject {
       
-      var data: String = js.native
+      var data: String
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object Data {
       
@@ -54,10 +55,9 @@ object mod {
       }
     }
     
-    @js.native
     trait OnMessageOptions extends StObject {
       
-      var data: Data = js.native
+      var data: Data
     }
     object OnMessageOptions {
       
@@ -75,12 +75,11 @@ object mod {
       }
     }
     
-    @js.native
     trait PostMessageOptions extends StObject {
       
-      var arguments: js.Array[String] = js.native
+      var arguments: js.Array[String]
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object PostMessageOptions {
       
@@ -106,18 +105,16 @@ object mod {
     }
   }
   
-  @JSImport("ffmpeg.js", "ffmpeg")
-  @js.native
-  def ffmpeg(opts: Options): Result = js.native
+  @scala.inline
+  def ffmpeg(opts: Options): Result = ^.asInstanceOf[js.Dynamic].applyDynamic("ffmpeg")(opts.asInstanceOf[js.Any]).asInstanceOf[Result]
   
-  @js.native
   trait Mount extends StObject {
     
-    var mountpoint: String = js.native
+    var mountpoint: String
     
-    var opts: Opts = js.native
+    var opts: Opts
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Mount {
     
@@ -142,24 +139,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var MEMFS: js.UndefOr[js.Array[Video]] = js.native
+    var MEMFS: js.UndefOr[js.Array[Video]] = js.undefined
     
-    var TOTAL_MEMORY: js.UndefOr[Double] = js.native
+    var TOTAL_MEMORY: js.UndefOr[Double] = js.undefined
     
-    var arguments: js.Array[String] = js.native
+    var arguments: js.Array[String]
     
-    var mounts: js.UndefOr[js.Array[Mount]] = js.native
+    var mounts: js.UndefOr[js.Array[Mount]] = js.undefined
     
-    var onExit: js.UndefOr[js.Function1[/* code */ js.Any, Unit]] = js.native
+    var onExit: js.UndefOr[js.Function1[/* code */ js.Any, Unit]] = js.undefined
     
-    var print: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var print: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
-    var printErr: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var printErr: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
     
-    var stdin: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.native
+    var stdin: js.UndefOr[js.Function1[/* data */ js.Any, Unit]] = js.undefined
   }
   object Options {
     
@@ -228,10 +224,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Opts extends StObject {
     
-    var root: String = js.native
+    var root: String
   }
   object Opts {
     
@@ -249,10 +244,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var MEMFS: js.Array[Video] = js.native
+    var MEMFS: js.Array[Video]
   }
   object Result {
     
@@ -273,12 +267,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Video extends StObject {
     
-    var data: Uint8Array = js.native
+    var data: Uint8Array
     
-    var name: String = js.native
+    var name: String
   }
   object Video {
     

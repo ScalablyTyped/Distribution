@@ -4,42 +4,42 @@ import typings.stringStripHtml.anon.LimitLinebreaksCount
 import typings.stringStripHtml.stringStripHtmlBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("string-strip-html", JSImport.Namespace)
-  @js.native
-  def apply(str: String): Output = js.native
-  @JSImport("string-strip-html", JSImport.Namespace)
-  @js.native
-  def apply(str: String, originalOpts: Options): Output = js.native
+  @scala.inline
+  def apply(str: String): Output = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[Output]
+  @scala.inline
+  def apply(str: String, originalOpts: Options): Output = (^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any], originalOpts.asInstanceOf[js.Any])).asInstanceOf[Output]
   
+  @JSImport("string-strip-html", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CallbackInput extends StObject {
     
     /** The index in the input string to start deleting from */
-    var deleteFrom: Double = js.native
+    var deleteFrom: Double
     
     /** The index in the input string to stop deleting */
-    var deleteTo: Double = js.native
+    var deleteTo: Double
     
     /** The string to replace the tag with */
-    var insert: String = js.native
+    var insert: String
     
     /**
       * The value returned by the default strip function.
       *
       * [deleteFrom, deleteTo, insert]
       */
-    var proposedReturn: js.Tuple3[Double, Double, js.UndefOr[String]] = js.native
+    var proposedReturn: js.Tuple3[Double, Double, js.UndefOr[String]]
     
     /** The range configuration */
-    var rangesArr: Range = js.native
+    var rangesArr: Range
     
     /** The HTML tag found */
-    var tag: Tag = js.native
+    var tag: Tag
   }
   object CallbackInput {
     
@@ -79,7 +79,6 @@ object mod {
     }
   }
   
-  @js.native
   trait DumpLinkHrefsNearby extends StObject {
     
     /**
@@ -87,27 +86,27 @@ object mod {
       *
       * Set it to Boolean true to enable it.
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, URL is inserted after any whatever was left after stripping the particular linked piece of code.
       * If you want, you can force all inserted URL's to be on a new line, separated by a blank line.
       */
-    var putOnNewLine: js.UndefOr[Boolean] = js.native
+    var putOnNewLine: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This string (default is an empty string) will be inserted in front of every URL.
       *
       * Set it to any string you want, for example [.
       */
-    var wrapHeads: js.UndefOr[String] = js.native
+    var wrapHeads: js.UndefOr[String] = js.undefined
     
     /**
       * This string (default is an empty string) will be inserted straight after every URL.
       *
       * Set it to any string you want, for example ].
       */
-    var wrapTails: js.UndefOr[String] = js.native
+    var wrapTails: js.UndefOr[String] = js.undefined
   }
   object DumpLinkHrefsNearby {
     
@@ -146,10 +145,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Log extends StObject {
     
-    var timeTakenInMilliseconds: Double = js.native
+    var timeTakenInMilliseconds: Double
   }
   object Log {
     
@@ -167,7 +165,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -176,25 +173,25 @@ object mod {
       * Gives you full control of the output and lets you tweak it.
       * See the dedicated chapter below called "opts.cb" with explanation and examples.
       */
-    var cb: js.UndefOr[js.Function1[/* input */ CallbackInput, Unit | Null | `false`]] = js.native
+    var cb: js.UndefOr[js.Function1[/* input */ CallbackInput, Unit | Null | `false`]] = js.undefined
     
     /** Used to customise the output of link URL's: to enable the feature, also customise the URL location and wrapping. */
-    var dumpLinkHrefsNearby: js.UndefOr[DumpLinkHrefsNearby | `false`] = js.native
+    var dumpLinkHrefsNearby: js.UndefOr[DumpLinkHrefsNearby | `false`] = js.undefined
     
     /** These tags will not be removed */
-    var ignoreTags: js.UndefOr[js.Array[String]] = js.native
+    var ignoreTags: js.UndefOr[js.Array[String]] = js.undefined
     
     /** If one or more tag names are given here, only these tags will be stripped, nothing else */
-    var onlyStripTags: js.UndefOr[js.Array[String]] = js.native
+    var onlyStripTags: js.UndefOr[js.Array[String]] = js.undefined
     
     /** By default, all escaped HTML entities for example &pound; input will be recursively decoded before HTML-stripping. You can turn it off here if you don't need it. */
-    var skipHtmlDecoding: js.UndefOr[Boolean] = js.native
+    var skipHtmlDecoding: js.UndefOr[Boolean] = js.undefined
     
     /** These tags will be removed from the opening tag up to closing tag, including content in-between opening and closing tags. Set it to something falsey to turn it off. */
-    var stripTogetherWithTheirContents: js.UndefOr[js.Array[String] | `false`] = js.native
+    var stripTogetherWithTheirContents: js.UndefOr[js.Array[String] | `false`] = js.undefined
     
     /** Used mainly in automated setups. It ensures non-spaces are not trimmed from the outer edges of a string. */
-    var trimOnlySpaces: js.UndefOr[Boolean] = js.native
+    var trimOnlySpaces: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -260,7 +257,6 @@ object mod {
     }
   }
   
-  @js.native
   trait Output extends StObject {
     
     /**
@@ -268,7 +264,7 @@ object mod {
       *
       * For example, [[0, 5], [30, 35]]. If you String.slice() each pair, you'll get HTML tag values.
       */
-    var allTagLocations: js.Array[js.Tuple2[Double, Double]] = js.native
+    var allTagLocations: js.Array[js.Tuple2[Double, Double]]
     
     /**
       * Array of zero or more arrays
@@ -276,24 +272,24 @@ object mod {
       * Only the tags that ended up stripped will be reported here.
       * Takes into account opts.ignoreTags and opts.onlyStripTags, unlike allTagLocations above. For example, [[0, 5], [30, 35]].
       */
-    var filteredTagLocations: js.Array[js.Tuple2[Double, Double]] = js.native
+    var filteredTagLocations: js.Array[js.Tuple2[Double, Double]]
     
     /**
       * Plain object
       *
       * For example, { timeTakenInMilliseconds: 6 }
       */
-    var log: Log = js.native
+    var log: Log
     
     /**
       * Array of one or more string range arrays OR null
       *
       * For example, if characters from index 0 to 5 and 30 to 35 were deleted, that would be [[0, 5], [30, 35]]
       */
-    var ranges: (js.Array[js.Tuple3[Double, Double, js.UndefOr[String]]]) | Null = js.native
+    var ranges: (js.Array[js.Tuple3[Double, Double, js.UndefOr[String]]]) | Null
     
     /** The string version where all ranges were applied to it. */
-    var result: String = js.native
+    var result: String
   }
   object Output {
     
@@ -304,7 +300,7 @@ object mod {
       log: Log,
       result: String
     ): Output = {
-      val __obj = js.Dynamic.literal(allTagLocations = allTagLocations.asInstanceOf[js.Any], filteredTagLocations = filteredTagLocations.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(allTagLocations = allTagLocations.asInstanceOf[js.Any], filteredTagLocations = filteredTagLocations.asInstanceOf[js.Any], log = log.asInstanceOf[js.Any], result = result.asInstanceOf[js.Any], ranges = null)
       __obj.asInstanceOf[Output]
     }
     
@@ -340,10 +336,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Range extends StObject {
     
-    var opts: LimitLinebreaksCount = js.native
+    var opts: LimitLinebreaksCount
   }
   object Range {
     
@@ -361,28 +356,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var attributes: js.Array[TagAttribute] = js.native
+    var attributes: js.Array[TagAttribute]
     
-    var lastClosingBracketAt: Double = js.native
+    var lastClosingBracketAt: Double
     
-    var lastOpeningBracketAt: Double = js.native
+    var lastOpeningBracketAt: Double
     
-    var leftOuterWhitespace: Double = js.native
+    var leftOuterWhitespace: Double
     
-    var name: String = js.native
+    var name: String
     
-    var nameContainsLetters: Boolean = js.native
+    var nameContainsLetters: Boolean
     
-    var nameEnds: Double = js.native
+    var nameEnds: Double
     
-    var nameStarts: Double = js.native
+    var nameStarts: Double
     
-    var onlyPlausible: Boolean = js.native
+    var onlyPlausible: Boolean
     
-    var slashPresent: Boolean = js.native
+    var slashPresent: Boolean
   }
   object Tag {
     
@@ -441,22 +435,21 @@ object mod {
     }
   }
   
-  @js.native
   trait TagAttribute extends StObject {
     
-    var equalsAt: Double = js.native
+    var equalsAt: Double
     
-    var name: String = js.native
+    var name: String
     
-    var nameEnds: Double = js.native
+    var nameEnds: Double
     
-    var nameStarts: Double = js.native
+    var nameStarts: Double
     
-    var value: String = js.native
+    var value: String
     
-    var valueEnds: Double = js.native
+    var valueEnds: Double
     
-    var valueStarts: Double = js.native
+    var valueStarts: Double
   }
   object TagAttribute {
     

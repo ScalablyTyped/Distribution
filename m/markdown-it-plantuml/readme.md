@@ -10,9 +10,9 @@ Plugin to create block-level uml diagrams for markdown-it markdown parser
 | ------------------ | :-------------: |
 | Full name          | markdown-it-plantuml |
 | Keywords           | markdown-it-plugin, markdown-it, markdown, uml, plantuml |
-| # releases         | 4 |
-| # dependents       | 12 |
-| # downloads        | 61861 |
+| # releases         | 3 |
+| # dependents       | 13 |
+| # downloads        | 67506 |
 | # stars            | 0 |
 
 ## Links

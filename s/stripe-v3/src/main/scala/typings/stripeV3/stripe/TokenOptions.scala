@@ -2,27 +2,25 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenOptions extends StObject {
   
-  var address_city: js.UndefOr[String] = js.native
+  var address_city: js.UndefOr[String] = js.undefined
   
-  var address_country: js.UndefOr[String] = js.native
+  var address_country: js.UndefOr[String] = js.undefined
   
-  var address_line1: js.UndefOr[String] = js.native
+  var address_line1: js.UndefOr[String] = js.undefined
   
-  var address_line2: js.UndefOr[String] = js.native
+  var address_line2: js.UndefOr[String] = js.undefined
   
-  var address_state: js.UndefOr[String] = js.native
+  var address_state: js.UndefOr[String] = js.undefined
   
-  var address_zip: js.UndefOr[String] = js.native
+  var address_zip: js.UndefOr[String] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object TokenOptions {
   

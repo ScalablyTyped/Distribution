@@ -6,52 +6,47 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("utif", "decode")
+  @JSImport("utif", JSImport.Namespace)
   @js.native
-  def decode(buffer: Buffer): js.Array[IFD] = js.native
-  @JSImport("utif", "decode")
-  @js.native
-  def decode(buffer: ArrayBuffer): js.Array[IFD] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("utif", "decodeImage")
-  @js.native
-  def decodeImage(buffer: Buffer, ifd: IFD): Unit = js.native
-  @JSImport("utif", "decodeImage")
-  @js.native
-  def decodeImage(buffer: ArrayBuffer, ifd: IFD): Unit = js.native
+  @scala.inline
+  def decode(buffer: Buffer): js.Array[IFD] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Array[IFD]]
+  @scala.inline
+  def decode(buffer: ArrayBuffer): js.Array[IFD] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Array[IFD]]
   
-  @JSImport("utif", "encode")
-  @js.native
-  def encode(ifds: js.Array[IFD]): ArrayBuffer = js.native
+  @scala.inline
+  def decodeImage(buffer: Buffer, ifd: IFD): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(buffer.asInstanceOf[js.Any], ifd.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def decodeImage(buffer: ArrayBuffer, ifd: IFD): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("decodeImage")(buffer.asInstanceOf[js.Any], ifd.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("utif", "encodeImage")
-  @js.native
-  def encodeImage(rgba: Uint8Array, w: Double, h: Double): ArrayBuffer = js.native
-  @JSImport("utif", "encodeImage")
-  @js.native
-  def encodeImage(rgba: Uint8Array, w: Double, h: Double, metadata: IFD): ArrayBuffer = js.native
+  @scala.inline
+  def encode(ifds: js.Array[IFD]): ArrayBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(ifds.asInstanceOf[js.Any]).asInstanceOf[ArrayBuffer]
   
-  @JSImport("utif", "replaceIMG")
-  @js.native
-  def replaceIMG(): Unit = js.native
+  @scala.inline
+  def encodeImage(rgba: Uint8Array, w: Double, h: Double): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeImage")(rgba.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
+  @scala.inline
+  def encodeImage(rgba: Uint8Array, w: Double, h: Double, metadata: IFD): ArrayBuffer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeImage")(rgba.asInstanceOf[js.Any], w.asInstanceOf[js.Any], h.asInstanceOf[js.Any], metadata.asInstanceOf[js.Any])).asInstanceOf[ArrayBuffer]
   
-  @JSImport("utif", "toRGBA8")
-  @js.native
-  def toRGBA8(ifd: IFD): Uint8Array = js.native
+  @scala.inline
+  def replaceIMG(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("replaceIMG")().asInstanceOf[Unit]
   
-  @js.native
-  trait IFD extends /* property */ StringDictionary[TiffTag | Double | Uint8Array] {
+  @scala.inline
+  def toRGBA8(ifd: IFD): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toRGBA8")(ifd.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
+  trait IFD
+    extends StObject
+       with /* property */ StringDictionary[TiffTag | Double | Uint8Array] {
     
-    var data: Uint8Array = js.native
+    var data: Uint8Array
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object IFD {
     

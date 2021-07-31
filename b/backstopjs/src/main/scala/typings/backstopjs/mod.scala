@@ -19,72 +19,69 @@ import typings.backstopjs.backstopjsStrings.tablet
 import typings.backstopjs.backstopjsStrings.test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("backstopjs", JSImport.Default)
+  @JSImport("backstopjs", JSImport.Namespace)
   @js.native
-  def default_approve(command: approve): js.Promise[Unit] = js.native
-  @JSImport("backstopjs", JSImport.Default)
-  @js.native
-  def default_approve(command: approve, options: typings.backstopjs.anon.Config): js.Promise[Unit] = js.native
-  @JSImport("backstopjs", JSImport.Default)
-  @js.native
-  def default_init(command: init): js.Promise[Unit] = js.native
-  @JSImport("backstopjs", JSImport.Default)
-  @js.native
-  def default_init(command: init, options: typings.backstopjs.anon.Config): js.Promise[Unit] = js.native
-  @JSImport("backstopjs", JSImport.Default)
-  @js.native
-  def default_reference(command: reference): js.Promise[Unit] = js.native
-  @JSImport("backstopjs", JSImport.Default)
-  @js.native
-  def default_reference(command: reference, options: typings.backstopjs.anon.Config): js.Promise[Unit] = js.native
-  @JSImport("backstopjs", JSImport.Default)
-  @js.native
-  def default_test(command: test): js.Promise[Unit] = js.native
-  @JSImport("backstopjs", JSImport.Default)
-  @js.native
-  def default_test(command: test, options: typings.backstopjs.anon.Config): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default_approve(command: approve): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default_approve(command: approve, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def default_init(command: init): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default_init(command: init, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def default_reference(command: reference): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default_reference(command: reference, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
+  def default_test(command: test): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default_test(command: test, options: typings.backstopjs.anon.Config): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(command.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait Config extends StObject {
     
-    var asyncCaptureLimit: js.UndefOr[Double] = js.native
+    var asyncCaptureLimit: js.UndefOr[Double] = js.undefined
     
-    var asyncCompareLimit: js.UndefOr[Double] = js.native
+    var asyncCompareLimit: js.UndefOr[Double] = js.undefined
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var ci: js.UndefOr[Format] = js.native
+    var ci: js.UndefOr[Format] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var debugWindow: js.UndefOr[Boolean] = js.native
+    var debugWindow: js.UndefOr[Boolean] = js.undefined
     
-    var dockerCommandTemplate: js.UndefOr[String] = js.native
+    var dockerCommandTemplate: js.UndefOr[String] = js.undefined
     
-    var engine: js.UndefOr[chromy | puppeteer] = js.native
+    var engine: js.UndefOr[chromy | puppeteer] = js.undefined
     
-    var engineOptions: js.UndefOr[Args] = js.native
+    var engineOptions: js.UndefOr[Args] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var onBeforeScript: js.UndefOr[String] = js.native
+    var onBeforeScript: js.UndefOr[String] = js.undefined
     
-    var onReadyScript: js.UndefOr[String] = js.native
+    var onReadyScript: js.UndefOr[String] = js.undefined
     
-    var paths: js.UndefOr[Bitmapsreference] = js.native
+    var paths: js.UndefOr[Bitmapsreference] = js.undefined
     
-    var report: js.UndefOr[js.Array[browser | CI | json]] = js.native
+    var report: js.UndefOr[js.Array[browser | CI | json]] = js.undefined
     
-    var resembleOutputOptions: js.UndefOr[ErrorColor] = js.native
+    var resembleOutputOptions: js.UndefOr[ErrorColor] = js.undefined
     
-    var scenarios: js.Array[Scenario] = js.native
+    var scenarios: js.Array[Scenario]
     
-    var viewports: js.Array[Viewport] = js.native
+    var viewports: js.Array[Viewport]
   }
   object Config {
     
@@ -201,12 +198,11 @@ object mod {
     }
   }
   
-  @js.native
   trait KeypressSelector extends StObject {
     
-    var keyPress: String = js.native
+    var keyPress: String
     
-    var selector: String = js.native
+    var selector: String
   }
   object KeypressSelector {
     
@@ -227,84 +223,84 @@ object mod {
     }
   }
   
-  @js.native
   trait Scenario
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
     // Allow for custom properties.
-    var clickSelector: js.UndefOr[String] = js.native
+    var clickSelector: js.UndefOr[String] = js.undefined
     
     // Click the specified DOM element prior to screenshot
-    var clickSelectors: js.UndefOr[js.Array[String]] = js.native
+    var clickSelectors: js.UndefOr[js.Array[String]] = js.undefined
     
     // Simulates multiple sequential click interactions
-    var cookiePath: js.UndefOr[String] = js.native
+    var cookiePath: js.UndefOr[String] = js.undefined
     
     // Import cookies in JSON format
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     // Wait for x milliseconds
-    var expect: js.UndefOr[Double] = js.native
+    var expect: js.UndefOr[Double] = js.undefined
     
     // Use with selectorExpansion true to expect number of results found
-    var hideSelectors: js.UndefOr[js.Array[String]] = js.native
+    var hideSelectors: js.UndefOr[js.Array[String]] = js.undefined
     
     // Selectors set to visibility: hidden
-    var hoverSelector: js.UndefOr[String] = js.native
+    var hoverSelector: js.UndefOr[String] = js.undefined
     
     // Move pointer over the given DOM element prior to screenshot
-    var hoverSelectors: js.UndefOr[js.Array[String]] = js.native
+    var hoverSelectors: js.UndefOr[js.Array[String]] = js.undefined
     
     // Simulates multiple sequential hover interactions
-    var keyPressSelector: js.UndefOr[KeypressSelector] = js.native
+    var keyPressSelector: js.UndefOr[KeypressSelector] = js.undefined
     
     // Press key in the DOM element prior to screenshot
-    var keyPressSelectors: js.UndefOr[js.Array[KeypressSelector]] = js.native
+    var keyPressSelectors: js.UndefOr[js.Array[KeypressSelector]] = js.undefined
     
     // Simulates multiple sequential keypress interactions
-    var label: String = js.native
+    var label: String
     
     // Tag saved with your reference images
-    var misMatchThreshold: js.UndefOr[Double] = js.native
+    var misMatchThreshold: js.UndefOr[Double] = js.undefined
     
     // Percentage of different pixels allowed to pass test
-    var onBeforeScript: js.UndefOr[String] = js.native
+    var onBeforeScript: js.UndefOr[String] = js.undefined
     
     // Used to set up browser state e.g. cookies
-    var onReadyScript: js.UndefOr[String] = js.native
+    var onReadyScript: js.UndefOr[String] = js.undefined
     
     // Used to modify UI state prior to screenshots e.g. hovers, clicks etc
-    var postInteractionWait: js.UndefOr[Double] = js.native
+    var postInteractionWait: js.UndefOr[Double] = js.undefined
     
     // Wait for selector (ms) after interacting with hover or click
-    var readyEvent: js.UndefOr[String] = js.native
+    var readyEvent: js.UndefOr[String] = js.undefined
     
     // Wait until this string has been logged to the console
-    var readySelector: js.UndefOr[String] = js.native
+    var readySelector: js.UndefOr[String] = js.undefined
     
     // Wait until this selector exists before continuing
-    var referenceUrl: js.UndefOr[String] = js.native
+    var referenceUrl: js.UndefOr[String] = js.undefined
     
     // Specify a different state or environment when creating reference
-    var removeSelectors: js.UndefOr[js.Array[String]] = js.native
+    var removeSelectors: js.UndefOr[js.Array[String]] = js.undefined
     
     // Selectors set to display: none
-    var requireSameDimensions: js.UndefOr[Boolean] = js.native
+    var requireSameDimensions: js.UndefOr[Boolean] = js.undefined
     
     // If true, take screenshots of all matching selector instances
-    var scrollToSelector: js.UndefOr[String] = js.native
+    var scrollToSelector: js.UndefOr[String] = js.undefined
     
     // Selectors to capture
-    var selectorExpansion: js.UndefOr[Boolean] = js.native
+    var selectorExpansion: js.UndefOr[Boolean] = js.undefined
     
     // If true, any change in selector size will trigger a failure
-    var selectors: js.UndefOr[js.Array[String]] = js.native
+    var selectors: js.UndefOr[js.Array[String]] = js.undefined
     
     // Scroll the specified DOM element into view prior to screenshots
-    var url: String = js.native
+    var url: String
     
     // The url of your app state
-    var viewports: js.UndefOr[js.Array[Viewport]] = js.native
+    var viewports: js.UndefOr[js.Array[Viewport]] = js.undefined
   }
   object Scenario {
     
@@ -504,14 +500,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ViewportLegacy extends Viewport {
+  trait ViewportLegacy
+    extends StObject
+       with Viewport {
     
-    var height: Double = js.native
+    var height: Double
     
-    var name: phone | tablet | desktop = js.native
+    var name: phone | tablet | desktop
     
-    var width: Double = js.native
+    var width: Double
   }
   object ViewportLegacy {
     
@@ -535,14 +532,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait ViewportNext extends Viewport {
+  trait ViewportNext
+    extends StObject
+       with Viewport {
     
-    var height: Double = js.native
+    var height: Double
     
-    var label: String = js.native
+    var label: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object ViewportNext {
     

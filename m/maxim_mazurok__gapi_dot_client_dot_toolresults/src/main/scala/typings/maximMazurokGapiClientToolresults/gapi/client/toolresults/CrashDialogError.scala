@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CrashDialogError extends StObject {
   
   /** The name of the package that caused the dialog. */
-  var crashPackage: js.UndefOr[String] = js.native
+  var crashPackage: js.UndefOr[String] = js.undefined
 }
 object CrashDialogError {
   

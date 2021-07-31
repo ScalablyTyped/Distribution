@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer/v1.4", "adexchangebuyer_v1_4.Resource$Marketplacenotes")
@@ -31,7 +30,7 @@ class ResourceMarketplacenotes protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaAddOrderNotesResponse] = js.native
   def insert(callback: BodyResponseCallback[SchemaAddOrderNotesResponse]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddOrderNotesResponse] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAddOrderNotesResponse] = js.native
   def insert(params: ParamsResourceMarketplacenotesInsert): GaxiosPromise[SchemaAddOrderNotesResponse] = js.native
   def insert(
     params: ParamsResourceMarketplacenotesInsert,
@@ -64,7 +63,7 @@ class ResourceMarketplacenotes protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGetOrderNotesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGetOrderNotesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetOrderNotesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetOrderNotesResponse] = js.native
   def list(params: ParamsResourceMarketplacenotesList): GaxiosPromise[SchemaGetOrderNotesResponse] = js.native
   def list(
     params: ParamsResourceMarketplacenotesList,

@@ -2,69 +2,67 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A visual element rendered on a page.
   */
-@js.native
 trait SchemaPageElement extends StObject {
   
   /**
     * The description of the page element. Combined with title to display alt
     * text.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A collection of page elements joined as a single unit.
     */
-  var elementGroup: js.UndefOr[SchemaGroup] = js.native
+  var elementGroup: js.UndefOr[SchemaGroup] = js.undefined
   
   /**
     * An image page element.
     */
-  var image: js.UndefOr[SchemaImage] = js.native
+  var image: js.UndefOr[SchemaImage] = js.undefined
   
   /**
     * A line page element.
     */
-  var line: js.UndefOr[SchemaLine] = js.native
+  var line: js.UndefOr[SchemaLine] = js.undefined
   
   /**
     * The object ID for this page element. Object IDs used by
     * google.apps.slides.v1.Page and google.apps.slides.v1.PageElement share
     * the same namespace.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * A generic shape.
     */
-  var shape: js.UndefOr[SchemaShape] = js.native
+  var shape: js.UndefOr[SchemaShape] = js.undefined
   
   /**
     * A linked chart embedded from Google Sheets. Unlinked charts are
     * represented as images.
     */
-  var sheetsChart: js.UndefOr[SchemaSheetsChart] = js.native
+  var sheetsChart: js.UndefOr[SchemaSheetsChart] = js.undefined
   
   /**
     * The size of the page element.
     */
-  var size: js.UndefOr[SchemaSize] = js.native
+  var size: js.UndefOr[SchemaSize] = js.undefined
   
   /**
     * A table page element.
     */
-  var table: js.UndefOr[SchemaTable] = js.native
+  var table: js.UndefOr[SchemaTable] = js.undefined
   
   /**
     * The title of the page element. Combined with description to display alt
     * text.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The transform of the page element.  The visual appearance of the page
@@ -75,17 +73,17 @@ trait SchemaPageElement extends StObject {
     * initial transform for the newly created Group is always the identity
     * transform.
     */
-  var transform: js.UndefOr[SchemaAffineTransform] = js.native
+  var transform: js.UndefOr[SchemaAffineTransform] = js.undefined
   
   /**
     * A video page element.
     */
-  var video: js.UndefOr[SchemaVideo] = js.native
+  var video: js.UndefOr[SchemaVideo] = js.undefined
   
   /**
     * A word art page element.
     */
-  var wordArt: js.UndefOr[SchemaWordArt] = js.native
+  var wordArt: js.UndefOr[SchemaWordArt] = js.undefined
 }
 object SchemaPageElement {
   

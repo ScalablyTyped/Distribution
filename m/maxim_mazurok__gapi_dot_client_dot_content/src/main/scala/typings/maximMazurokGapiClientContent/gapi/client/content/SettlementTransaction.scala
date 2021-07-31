@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettlementTransaction extends StObject {
   
   /** The amount for the transaction. */
-  var amount: js.UndefOr[SettlementTransactionAmount] = js.native
+  var amount: js.UndefOr[SettlementTransactionAmount] = js.undefined
   
   /** Identifiers of the transaction. */
-  var identifiers: js.UndefOr[SettlementTransactionIdentifiers] = js.native
+  var identifiers: js.UndefOr[SettlementTransactionIdentifiers] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#settlementTransaction`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Details of the transaction. */
-  var transaction: js.UndefOr[SettlementTransactionTransaction] = js.native
+  var transaction: js.UndefOr[SettlementTransactionTransaction] = js.undefined
 }
 object SettlementTransaction {
   

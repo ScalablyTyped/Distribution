@@ -5,15 +5,13 @@ import typings.atom.atomStrings.no
 import typings.atom.atomStrings.undecided
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2` extends StObject {
   
-  var newValue: limited | no | undecided = js.native
+  var newValue: limited | no | undecided
   
-  var oldValue: js.UndefOr[limited | no | undecided] = js.native
+  var oldValue: js.UndefOr[limited | no | undecided] = js.undefined
 }
 object `2` {
   

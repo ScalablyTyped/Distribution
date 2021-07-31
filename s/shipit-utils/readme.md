@@ -10,9 +10,9 @@ Typings are for version 1.4
 | ------------------ | :-------------: |
 | Full name          | shipit-utils |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 38 |
-| # downloads        | 255697 |
+| # downloads        | 248393 |
 | # stars            | 0 |
 
 ## Links

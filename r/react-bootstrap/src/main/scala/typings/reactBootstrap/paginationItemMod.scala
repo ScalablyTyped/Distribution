@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationItemMod {
@@ -18,10 +17,11 @@ object paginationItemMod {
   trait PaginationItem
     extends Component[PaginationItemProps, js.Object, js.Any]
   
-  @js.native
-  trait PaginationItemProps extends HTMLProps[PaginationItem] {
+  trait PaginationItemProps
+    extends StObject
+       with HTMLProps[PaginationItem] {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
   }
   object PaginationItemProps {
     

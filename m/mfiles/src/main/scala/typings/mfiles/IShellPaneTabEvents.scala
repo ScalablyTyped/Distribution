@@ -3,23 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellPaneTabEvents extends IEvents {
+trait IShellPaneTabEvents
+  extends StObject
+     with IEvents {
   
-  var OnHideTab: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnHideTab: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnShowTab: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnShowTab: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStop: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnTabSelected: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnTabSelected: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnTabUnselected: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnTabUnselected: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IShellPaneTabEvents {
   

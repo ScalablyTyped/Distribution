@@ -11,8 +11,8 @@ Dynamic JavaScript Heatmaps for the Web
 | Full name          | heatmap.js |
 | Keywords           | heatmap, heatmaps, heat map, heat maps, googlemaps heatmap, leaflet heatmap, leaflet |
 | # releases         | 0 |
-| # dependents       | 30 |
-| # downloads        | 358089 |
+| # dependents       | 40 |
+| # downloads        | 406773 |
 | # stars            | 1 |
 
 ## Links

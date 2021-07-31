@@ -2,17 +2,15 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Query extends StObject {
   
-  var query: js.Any = js.native
+  var query: js.Any
   
-  var scene: String = js.native
+  var scene: String
   
-  var shareTicket: String = js.native
+  var shareTicket: String
 }
 object Query {
   

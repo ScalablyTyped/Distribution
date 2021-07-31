@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchJob extends StObject {
   
   /** Time this patch job was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Description of the patch job. Length of the description is limited to 1024 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Display name for this patch job. This is not a unique identifier. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** If this patch job is a dry run, the agent reports that it has finished without running any updates on the VM instance. */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /** Duration of the patch job. After the duration ends, the patch job times out. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** If this patch job failed, this message provides information about the failure. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /** Summary of instance details. */
-  var instanceDetailsSummary: js.UndefOr[PatchJobInstanceDetailsSummary] = js.native
+  var instanceDetailsSummary: js.UndefOr[PatchJobInstanceDetailsSummary] = js.undefined
   
   /** Instances to patch. */
-  var instanceFilter: js.UndefOr[PatchInstanceFilter] = js.native
+  var instanceFilter: js.UndefOr[PatchInstanceFilter] = js.undefined
   
   /** Unique identifier for this patch job in the form `projects/∗/patchJobs/ *` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Patch configuration being applied. */
-  var patchConfig: js.UndefOr[PatchConfig] = js.native
+  var patchConfig: js.UndefOr[PatchConfig] = js.undefined
   
   /** Output only. Name of the patch deployment that created this patch job. */
-  var patchDeployment: js.UndefOr[String] = js.native
+  var patchDeployment: js.UndefOr[String] = js.undefined
   
   /** Reflects the overall progress of the patch job in the range of 0.0 being no progress to 100.0 being complete. */
-  var percentComplete: js.UndefOr[Double] = js.native
+  var percentComplete: js.UndefOr[Double] = js.undefined
   
   /** Rollout strategy being applied. */
-  var rollout: js.UndefOr[PatchRollout] = js.native
+  var rollout: js.UndefOr[PatchRollout] = js.undefined
   
   /** The current state of the PatchJob. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Last time this patch job was updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object PatchJob {
   

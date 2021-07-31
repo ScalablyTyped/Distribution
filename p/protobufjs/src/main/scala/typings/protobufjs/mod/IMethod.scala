@@ -3,29 +3,27 @@ package typings.protobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMethod extends StObject {
   
   /** Method options */
-  var options: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var options: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /** Whether requests are streamed */
-  var requestStream: js.UndefOr[Boolean] = js.native
+  var requestStream: js.UndefOr[Boolean] = js.undefined
   
   /** Request type */
-  var requestType: String = js.native
+  var requestType: String
   
   /** Whether responses are streamed */
-  var responseStream: js.UndefOr[Boolean] = js.native
+  var responseStream: js.UndefOr[Boolean] = js.undefined
   
   /** Response type */
-  var responseType: String = js.native
+  var responseType: String
   
   /** Method type */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object IMethod {
   

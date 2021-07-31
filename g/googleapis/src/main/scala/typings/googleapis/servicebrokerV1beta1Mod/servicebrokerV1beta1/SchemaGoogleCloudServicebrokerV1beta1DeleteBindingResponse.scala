@@ -2,13 +2,11 @@ package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the `DeleteBinding()` method.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1beta1DeleteBindingResponse extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaGoogleCloudServicebrokerV1beta1DeleteBindingResponse extends StObjec
     * error codes.
     * https://github.com/openservicebrokerapi/servicebroker/blob/master/spec.md#service-broker-errors
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * If broker executes operation asynchronously, this is the operation ID
     * that can be polled to check the completion status of said operation.
     */
-  var operation: js.UndefOr[String] = js.native
+  var operation: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1beta1DeleteBindingResponse {
   

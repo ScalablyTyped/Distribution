@@ -2,10 +2,8 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MMLorHTMLConfiguration extends StObject {
   
   /*This lets you set the preferred renderer on a browser-by-browser basis. You set the browser to either "MML" or
@@ -18,7 +16,7 @@ trait MMLorHTMLConfiguration extends StObject {
     * Note that users can still use the MathJax contextual menu to select a different renderer after the default
     * one has been chosen by MMLorHTML.js.
     */
-  var prefer: js.UndefOr[BrowserPreference] = js.native
+  var prefer: js.UndefOr[BrowserPreference] = js.undefined
 }
 object MMLorHTMLConfiguration {
   

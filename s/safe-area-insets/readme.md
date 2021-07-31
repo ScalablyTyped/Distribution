@@ -10,9 +10,9 @@ Use javascript to get the safe area insets.
 | ------------------ | :-------------: |
 | Full name          | safe-area-insets |
 | Keywords           | safari, iphonex, safeAreaInsets |
-| # releases         | 4 |
-| # dependents       | 3 |
-| # downloads        | 143139 |
+| # releases         | 3 |
+| # dependents       | 6 |
+| # downloads        | 207360 |
 | # stars            | 0 |
 
 ## Links

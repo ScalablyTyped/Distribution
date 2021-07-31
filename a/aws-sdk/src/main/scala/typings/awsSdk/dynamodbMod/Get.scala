@@ -2,31 +2,29 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Get extends StObject {
   
   /**
     * One or more substitution tokens for attribute names in the ProjectionExpression parameter.
     */
-  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.native
+  var ExpressionAttributeNames: js.UndefOr[ExpressionAttributeNameMap] = js.undefined
   
   /**
     * A map of attribute names to AttributeValue objects that specifies the primary key of the item to retrieve.
     */
-  var Key: typings.awsSdk.dynamodbMod.Key = js.native
+  var Key: typings.awsSdk.dynamodbMod.Key
   
   /**
     * A string that identifies one or more attributes of the specified item to retrieve from the table. The attributes in the expression must be separated by commas. If no attribute names are specified, then all attributes of the specified item are returned. If any of the requested attributes are not found, they do not appear in the result.
     */
-  var ProjectionExpression: js.UndefOr[typings.awsSdk.dynamodbMod.ProjectionExpression] = js.native
+  var ProjectionExpression: js.UndefOr[typings.awsSdk.dynamodbMod.ProjectionExpression] = js.undefined
   
   /**
     * The name of the table from which to retrieve the specified item.
     */
-  var TableName: typings.awsSdk.dynamodbMod.TableName = js.native
+  var TableName: typings.awsSdk.dynamodbMod.TableName
 }
 object Get {
   

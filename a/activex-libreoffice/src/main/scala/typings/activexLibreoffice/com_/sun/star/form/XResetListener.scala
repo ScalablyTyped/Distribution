@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,21 +15,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * calls XReset::resetted() on all its listeners
   * @see XReset
   */
-@js.native
-trait XResetListener extends XEventListener {
+trait XResetListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked before a component is reset.
     * @param rEvent the event happened.
     * @returns `TRUE` when reset was approved, `FALSE` when the reset operation should be canceled.
     */
-  def approveReset(rEvent: EventObject): Boolean = js.native
+  def approveReset(rEvent: EventObject): Boolean
   
   /**
     * is invoked when a component has been reset.
     * @param rEvent the event happened.
     */
-  def resetted(rEvent: EventObject): Unit = js.native
+  def resetted(rEvent: EventObject): Unit
 }
 object XResetListener {
   

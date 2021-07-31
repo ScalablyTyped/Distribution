@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,19 +20,13 @@ object mod {
     def add(target: js.Object, propName: String): GUIController = js.native
     def add(target: js.Object, propName: String, items: js.Array[Double | String]): GUIController = js.native
     def add(target: js.Object, propName: String, items: js.Object): GUIController = js.native
-    def add(
-      target: js.Object,
-      propName: String,
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      step: Double
-    ): GUIController = js.native
-    def add(target: js.Object, propName: String, min: js.UndefOr[scala.Nothing], max: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: js.UndefOr[scala.Nothing], max: Double, step: Double): GUIController = js.native
     def add(target: js.Object, propName: String, min: Double): GUIController = js.native
-    def add(target: js.Object, propName: String, min: Double, max: js.UndefOr[scala.Nothing], step: Double): GUIController = js.native
     def add(target: js.Object, propName: String, min: Double, max: Double): GUIController = js.native
     def add(target: js.Object, propName: String, min: Double, max: Double, step: Double): GUIController = js.native
+    def add(target: js.Object, propName: String, min: Double, max: Unit, step: Double): GUIController = js.native
+    def add(target: js.Object, propName: String, min: Unit, max: Double): GUIController = js.native
+    def add(target: js.Object, propName: String, min: Unit, max: Double, step: Double): GUIController = js.native
+    def add(target: js.Object, propName: String, min: Unit, max: Unit, step: Double): GUIController = js.native
     def add(target: js.Object, propName: String, status: Boolean): GUIController = js.native
     
     def addColor(target: js.Object, propName: String): GUIController = js.native
@@ -219,52 +212,51 @@ object mod {
     def updateDisplay(): GUIController = js.native
   }
   
-  @js.native
   trait GUIParams extends StObject {
     
     /**
       * Handles GUI's element placement for you.
       * @default true
       */
-    var autoPlace: js.UndefOr[Boolean] = js.native
+    var autoPlace: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, close/open button shows on top of the GUI.
       * @default false
       */
-    var closeOnTop: js.UndefOr[Boolean] = js.native
+    var closeOnTop: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, starts closed.
       * @default false
       */
-    var closed: js.UndefOr[Boolean] = js.native
+    var closed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, GUI is closed by the "h" keypress.
       * @default false
       */
-    var hideable: js.UndefOr[Boolean] = js.native
+    var hideable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * JSON object representing the saved state of this GUI.
       */
-    var load: js.UndefOr[js.Any] = js.native
+    var load: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The name of this GUI.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The identifier for a set of saved values.
       */
-    var preset: js.UndefOr[String] = js.native
+    var preset: js.UndefOr[String] = js.undefined
     
     /**
       * The width of GUI element.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object GUIParams {
     

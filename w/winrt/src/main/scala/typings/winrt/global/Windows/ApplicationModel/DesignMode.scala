@@ -2,13 +2,13 @@ package typings.winrt.global.Windows.ApplicationModel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Windows.ApplicationModel.DesignMode")
 @js.native
 class DesignMode ()
-  extends typings.winrt.Windows.ApplicationModel.DesignMode
+  extends StObject
+     with typings.winrt.Windows.ApplicationModel.DesignMode
 /* static members */
 object DesignMode {
   

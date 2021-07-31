@@ -2,19 +2,18 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 拨打电话 https://docs.alipay.com/mini/api/macke-call
-@js.native
 trait MakePhoneCallOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 需要拨打的电话号码
     */
-  var number: String = js.native
+  var number: String
 }
 object MakePhoneCallOptions {
   

@@ -5,47 +5,42 @@ import typings.std.Plugin
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("webpack-watched-glob-entries-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin
+  class ^ ()
+    extends StObject
+       with Plugin
+  @JSImport("webpack-watched-glob-entries-plugin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("webpack-watched-glob-entries-plugin", "getEntries")
-  @js.native
-  def getEntries(globs: js.Array[String]): js.Any = js.native
-  @JSImport("webpack-watched-glob-entries-plugin", "getEntries")
-  @js.native
-  def getEntries(globs: js.Array[String], globOptions: js.UndefOr[scala.Nothing], pluginOptions: PluginOptions): js.Any = js.native
-  @JSImport("webpack-watched-glob-entries-plugin", "getEntries")
-  @js.native
-  def getEntries(globs: js.Array[String], globOptions: IOptions): js.Any = js.native
-  @JSImport("webpack-watched-glob-entries-plugin", "getEntries")
-  @js.native
-  def getEntries(globs: js.Array[String], globOptions: IOptions, pluginOptions: PluginOptions): js.Any = js.native
+  @scala.inline
+  def getEntries(globs: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getEntries(globs: js.Array[String], globOptions: Unit, pluginOptions: PluginOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getEntries(globs: js.Array[String], globOptions: IOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getEntries(globs: js.Array[String], globOptions: IOptions, pluginOptions: PluginOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getEntries")(globs.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], pluginOptions.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /* static member */
-  @JSImport("webpack-watched-glob-entries-plugin", "getFiles")
-  @js.native
-  def getFiles(globString: String): Record[String, String] = js.native
-  @JSImport("webpack-watched-glob-entries-plugin", "getFiles")
-  @js.native
-  def getFiles(globString: String, globOptions: js.UndefOr[scala.Nothing], basename_as_entry_name: Boolean): Record[String, String] = js.native
-  @JSImport("webpack-watched-glob-entries-plugin", "getFiles")
-  @js.native
-  def getFiles(globString: String, globOptions: IOptions): Record[String, String] = js.native
-  @JSImport("webpack-watched-glob-entries-plugin", "getFiles")
-  @js.native
-  def getFiles(globString: String, globOptions: IOptions, basename_as_entry_name: Boolean): Record[String, String] = js.native
+  @scala.inline
+  def getFiles(globString: String): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def getFiles(globString: String, globOptions: Unit, basename_as_entry_name: Boolean): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], basename_as_entry_name.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def getFiles(globString: String, globOptions: IOptions): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
+  @scala.inline
+  def getFiles(globString: String, globOptions: IOptions, basename_as_entry_name: Boolean): Record[String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFiles")(globString.asInstanceOf[js.Any], globOptions.asInstanceOf[js.Any], basename_as_entry_name.asInstanceOf[js.Any])).asInstanceOf[Record[String, String]]
   
-  @js.native
   trait PluginOptions extends StObject {
     
-    var basename_as_entry_name: js.UndefOr[Boolean] = js.native
+    var basename_as_entry_name: js.UndefOr[Boolean] = js.undefined
   }
   object PluginOptions {
     

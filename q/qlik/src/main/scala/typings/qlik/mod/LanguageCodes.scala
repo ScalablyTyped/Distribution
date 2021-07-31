@@ -5,7 +5,6 @@ import typings.qlik.qlikStrings.`zh-TW`
 import typings.qlik.qlikStrings.ts_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object LanguageCodes {
@@ -33,7 +32,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.pt
     - typings.qlik.qlikStrings.`pt-BR`
   */
-  trait BrazilianPortuguese extends _ALL
+  trait BrazilianPortuguese
+    extends StObject
+       with _ALL
   object BrazilianPortuguese {
     
     @scala.inline
@@ -47,7 +48,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.nl
     - typings.qlik.qlikStrings.`nl-NL`
   */
-  trait Dutch extends _ALL
+  trait Dutch
+    extends StObject
+       with _ALL
   object Dutch {
     
     @scala.inline
@@ -61,7 +64,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.en
     - typings.qlik.qlikStrings.`en-US`
   */
-  trait English extends _ALL
+  trait English
+    extends StObject
+       with _ALL
   object English {
     
     @scala.inline
@@ -75,7 +80,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.fr
     - typings.qlik.qlikStrings.`fr-FR`
   */
-  trait French extends _ALL
+  trait French
+    extends StObject
+       with _ALL
   object French {
     
     @scala.inline
@@ -89,7 +96,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.de
     - typings.qlik.qlikStrings.`de-DE`
   */
-  trait German extends _ALL
+  trait German
+    extends StObject
+       with _ALL
   object German {
     
     @scala.inline
@@ -103,7 +112,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.it
     - typings.qlik.qlikStrings.`it-IT`
   */
-  trait Italian extends _ALL
+  trait Italian
+    extends StObject
+       with _ALL
   object Italian {
     
     @scala.inline
@@ -117,7 +128,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.ja
     - typings.qlik.qlikStrings.`ja-JP`
   */
-  trait Japanese extends _ALL
+  trait Japanese
+    extends StObject
+       with _ALL
   object Japanese {
     
     @scala.inline
@@ -131,7 +144,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.ko
     - typings.qlik.qlikStrings.`ko-KR`
   */
-  trait Korean extends _ALL
+  trait Korean
+    extends StObject
+       with _ALL
   object Korean {
     
     @scala.inline
@@ -145,7 +160,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.pl
     - typings.qlik.qlikStrings.`pl-PL`
   */
-  trait Polish extends _ALL
+  trait Polish
+    extends StObject
+       with _ALL
   object Polish {
     
     @scala.inline
@@ -159,7 +176,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.ru
     - typings.qlik.qlikStrings.`ru-RU`
   */
-  trait Russian extends _ALL
+  trait Russian
+    extends StObject
+       with _ALL
   object Russian {
     
     @scala.inline
@@ -175,7 +194,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.es
     - typings.qlik.qlikStrings.`es-ES`
   */
-  trait Spanish extends _ALL
+  trait Spanish
+    extends StObject
+       with _ALL
   object Spanish {
     
     @scala.inline
@@ -189,7 +210,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.sv
     - typings.qlik.qlikStrings.`sv-SE`
   */
-  trait Swedish extends _ALL
+  trait Swedish
+    extends StObject
+       with _ALL
   object Swedish {
     
     @scala.inline
@@ -205,7 +228,9 @@ object LanguageCodes {
     - typings.qlik.qlikStrings.ts_
     - typings.qlik.qlikStrings.`ts-TR`
   */
-  trait Turkish extends _ALL
+  trait Turkish
+    extends StObject
+       with _ALL
   object Turkish {
     
     @scala.inline

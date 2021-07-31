@@ -2,12 +2,10 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryRemoveOptionsMod {
   
-  @js.native
   trait RemoveOptions extends StObject {
     
     /**
@@ -16,25 +14,25 @@ object repositoryRemoveOptionsMod {
       * you can break them into 10 groups of 10,000 objects (by setting { chunk: 10000 }) and save each group separately.
       * This option is needed to perform very big insertions when you have issues with underlying driver parameter number limitation.
       */
-    var chunk: js.UndefOr[Double] = js.native
+    var chunk: js.UndefOr[Double] = js.undefined
     
     /**
       * Additional data to be passed with remove method.
       * This data can be used in subscribers then.
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Indicates if listeners and subscribers are called for this operation.
       * By default they are enabled, you can disable them by setting { listeners: false } in save/remove options.
       */
-    var listeners: js.UndefOr[Boolean] = js.native
+    var listeners: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default transactions are enabled and all queries in persistence operation are wrapped into the transaction.
       * You can disable this behaviour by setting { transaction: false } in the persistence options.
       */
-    var transaction: js.UndefOr[Boolean] = js.native
+    var transaction: js.UndefOr[Boolean] = js.undefined
   }
   object RemoveOptions {
     

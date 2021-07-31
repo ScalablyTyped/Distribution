@@ -5,40 +5,38 @@ import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkCheckBox extends StObject {
   
-  var Accelerator: String = js.native
+  var Accelerator: String
   
-  var Alignment: OlAlignment = js.native
+  var Alignment: OlAlignment
   
-  var BackColor: OLE_COLOR = js.native
+  var BackColor: OLE_COLOR
   
-  var BackStyle: OlBackStyle = js.native
+  var BackStyle: OlBackStyle
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  val Font: StdFont = js.native
+  val Font: StdFont
   
-  var ForeColor: OLE_COLOR = js.native
+  var ForeColor: OLE_COLOR
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkCheckBox_typekey")
-  var OutlookDotOlkCheckBox_typekey: OlkCheckBox = js.native
+  var OutlookDotOlkCheckBox_typekey: OlkCheckBox
   
-  var TripleState: Boolean = js.native
+  var TripleState: Boolean
   
-  var Value: js.Any = js.native
+  var Value: js.Any
   
-  var WordWrap: Boolean = js.native
+  var WordWrap: Boolean
 }
 object OlkCheckBox {
   

@@ -2,57 +2,55 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationEventFilter extends StObject {
   
   /**
     * A list of 12-digit AWS account numbers that contains the affected entities.
     */
-  var awsAccountIds: js.UndefOr[awsAccountIdsList] = js.native
+  var awsAccountIds: js.UndefOr[awsAccountIdsList] = js.undefined
   
-  var endTime: js.UndefOr[DateTimeRange] = js.native
+  var endTime: js.UndefOr[DateTimeRange] = js.undefined
   
   /**
     * A list of entity ARNs (unique identifiers).
     */
-  var entityArns: js.UndefOr[entityArnList] = js.native
+  var entityArns: js.UndefOr[entityArnList] = js.undefined
   
   /**
     * A list of entity identifiers, such as EC2 instance IDs (i-34ab692e) or EBS volumes (vol-426ab23e).
     */
-  var entityValues: js.UndefOr[entityValueList] = js.native
+  var entityValues: js.UndefOr[entityValueList] = js.undefined
   
   /**
     * A list of event status codes.
     */
-  var eventStatusCodes: js.UndefOr[eventStatusCodeList] = js.native
+  var eventStatusCodes: js.UndefOr[eventStatusCodeList] = js.undefined
   
   /**
     * A list of event type category codes (issue, scheduledChange, or accountNotification).
     */
-  var eventTypeCategories: js.UndefOr[eventTypeCategoryList] = js.native
+  var eventTypeCategories: js.UndefOr[eventTypeCategoryList] = js.undefined
   
   /**
     * A list of unique identifiers for event types. For example, "AWS_EC2_SYSTEM_MAINTENANCE_EVENT","AWS_RDS_MAINTENANCE_SCHEDULED". 
     */
-  var eventTypeCodes: js.UndefOr[eventTypeList] = js.native
+  var eventTypeCodes: js.UndefOr[eventTypeList] = js.undefined
   
-  var lastUpdatedTime: js.UndefOr[DateTimeRange] = js.native
+  var lastUpdatedTime: js.UndefOr[DateTimeRange] = js.undefined
   
   /**
     * A list of AWS Regions.
     */
-  var regions: js.UndefOr[regionList] = js.native
+  var regions: js.UndefOr[regionList] = js.undefined
   
   /**
     * The AWS services associated with the event. For example, EC2, RDS.
     */
-  var services: js.UndefOr[serviceList] = js.native
+  var services: js.UndefOr[serviceList] = js.undefined
   
-  var startTime: js.UndefOr[DateTimeRange] = js.native
+  var startTime: js.UndefOr[DateTimeRange] = js.undefined
 }
 object OrganizationEventFilter {
   

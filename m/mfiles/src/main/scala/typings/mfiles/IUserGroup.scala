@@ -2,27 +2,25 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserGroup extends StObject {
   
-  def AddMember(ID: Double): Unit = js.native
+  def AddMember(ID: Double): Unit
   
-  def Clone(): IUserGroup = js.native
+  def Clone(): IUserGroup
   
-  def CloneFrom(UserGroup: IUserGroup): Unit = js.native
+  def CloneFrom(UserGroup: IUserGroup): Unit
   
-  var ID: Double = js.native
+  var ID: Double
   
-  var Members: IIDs = js.native
+  var Members: IIDs
   
-  var Name: String = js.native
+  var Name: String
   
-  val Predefined: Boolean = js.native
+  val Predefined: Boolean
   
-  def RemoveMember(ID: Double): Unit = js.native
+  def RemoveMember(ID: Double): Unit
 }
 object IUserGroup {
   

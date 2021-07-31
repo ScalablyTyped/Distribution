@@ -2,10 +2,8 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationOptions extends StObject {
   
   /**
@@ -13,25 +11,25 @@ trait LocationOptions extends StObject {
     * For low-accuracies the implementation can avoid geolocation providers
     * that consume a significant amount of power (such as GPS).
     */
-  var accuracy: js.UndefOr[LocationAccuracy] = js.native
+  var accuracy: js.UndefOr[LocationAccuracy] = js.undefined
   
   /**
     * Receive updates only when the location has changed by at least this distance in meters.
     * Default value may depend on `accuracy` option.
     */
-  var distanceInterval: js.UndefOr[Double] = js.native
+  var distanceInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Android only) Specifies whether to ask the user to turn on improved accuracy location mode
     * which uses Wi-Fi, cell networks and GPS sensor. Defaults to `true`.
     */
-  var mayShowUserSettingsDialog: js.UndefOr[Boolean] = js.native
+  var mayShowUserSettingsDialog: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Android only) Minimum time to wait between each update in milliseconds.
     * Default value may depend on `accuracy` option.
     */
-  var timeInterval: js.UndefOr[Double] = js.native
+  var timeInterval: js.UndefOr[Double] = js.undefined
 }
 object LocationOptions {
   

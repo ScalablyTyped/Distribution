@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirstParent extends StObject {
   
-  var firstParent: scala.Double = js.native
+  var firstParent: scala.Double
   
-  var fullHistory: scala.Double = js.native
+  var fullHistory: scala.Double
   
-  var fullHistorySimplifyMerges: scala.Double = js.native
+  var fullHistorySimplifyMerges: scala.Double
   
-  var simplifiedHistory: scala.Double = js.native
+  var simplifiedHistory: scala.Double
 }
 object FirstParent {
   

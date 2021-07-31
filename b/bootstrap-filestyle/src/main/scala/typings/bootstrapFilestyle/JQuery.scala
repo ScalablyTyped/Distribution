@@ -16,7 +16,6 @@ import typings.bootstrapFilestyle.bootstrapFilestyleStrings.pushNameFiles
 import typings.bootstrapFilestyle.bootstrapFilestyleStrings.size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

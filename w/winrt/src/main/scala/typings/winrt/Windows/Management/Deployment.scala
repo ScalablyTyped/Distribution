@@ -6,7 +6,6 @@ import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Deployment {
@@ -18,13 +17,19 @@ object Deployment {
   object DeploymentOptions extends StObject {
     
     @js.native
-    sealed trait developmentMode extends DeploymentOptions
+    sealed trait developmentMode
+      extends StObject
+         with DeploymentOptions
     
     @js.native
-    sealed trait forceApplicationShutdown extends DeploymentOptions
+    sealed trait forceApplicationShutdown
+      extends StObject
+         with DeploymentOptions
     
     @js.native
-    sealed trait none extends DeploymentOptions
+    sealed trait none
+      extends StObject
+         with DeploymentOptions
   }
   
   @js.native
@@ -34,10 +39,14 @@ object Deployment {
   object DeploymentProgressState extends StObject {
     
     @js.native
-    sealed trait processing extends DeploymentProgressState
+    sealed trait processing
+      extends StObject
+         with DeploymentProgressState
     
     @js.native
-    sealed trait queued extends DeploymentProgressState
+    sealed trait queued
+      extends StObject
+         with DeploymentProgressState
   }
   
   @js.native
@@ -47,13 +56,19 @@ object Deployment {
   object PackageInstallState extends StObject {
     
     @js.native
-    sealed trait installed extends PackageInstallState
+    sealed trait installed
+      extends StObject
+         with PackageInstallState
     
     @js.native
-    sealed trait notInstalled extends PackageInstallState
+    sealed trait notInstalled
+      extends StObject
+         with PackageInstallState
     
     @js.native
-    sealed trait staged extends PackageInstallState
+    sealed trait staged
+      extends StObject
+         with PackageInstallState
   }
   
   @js.native
@@ -63,24 +78,31 @@ object Deployment {
   object PackageState extends StObject {
     
     @js.native
-    sealed trait licenseInvalid extends PackageState
+    sealed trait licenseInvalid
+      extends StObject
+         with PackageState
     
     @js.native
-    sealed trait modified extends PackageState
+    sealed trait modified
+      extends StObject
+         with PackageState
     
     @js.native
-    sealed trait normal extends PackageState
+    sealed trait normal
+      extends StObject
+         with PackageState
     
     @js.native
-    sealed trait tampered extends PackageState
+    sealed trait tampered
+      extends StObject
+         with PackageState
   }
   
-  @js.native
   trait DeploymentProgress extends StObject {
     
-    var percentage: Double = js.native
+    var percentage: Double
     
-    var state: DeploymentProgressState = js.native
+    var state: DeploymentProgressState
   }
   object DeploymentProgress {
     
@@ -101,8 +123,9 @@ object Deployment {
     }
   }
   
-  @js.native
-  trait DeploymentResult extends IDeploymentResult
+  trait DeploymentResult
+    extends StObject
+       with IDeploymentResult
   object DeploymentResult {
     
     @scala.inline
@@ -112,14 +135,13 @@ object Deployment {
     }
   }
   
-  @js.native
   trait IDeploymentResult extends StObject {
     
-    var activityId: String = js.native
+    var activityId: String
     
-    var errorText: String = js.native
+    var errorText: String
     
-    var extendedErrorCode: Double = js.native
+    var extendedErrorCode: Double
   }
   object IDeploymentResult {
     
@@ -175,12 +197,11 @@ object Deployment {
     def updatePackageAsync(packageUri: Uri, dependencyPackageUris: IIterable[Uri], deploymentOptions: DeploymentOptions): IAsyncOperationWithProgress[DeploymentResult, DeploymentProgress] = js.native
   }
   
-  @js.native
   trait IPackageUserInformation extends StObject {
     
-    var installState: PackageInstallState = js.native
+    var installState: PackageInstallState
     
-    var userSecurityId: String = js.native
+    var userSecurityId: String
   }
   object IPackageUserInformation {
     
@@ -202,10 +223,13 @@ object Deployment {
   }
   
   @js.native
-  trait PackageManager extends IPackageManager
+  trait PackageManager
+    extends StObject
+       with IPackageManager
   
-  @js.native
-  trait PackageUserInformation extends IPackageUserInformation
+  trait PackageUserInformation
+    extends StObject
+       with IPackageUserInformation
   object PackageUserInformation {
     
     @scala.inline

@@ -1,19 +1,21 @@
 package typings.agGrid
 
+import typings.agGrid.dragAndDropServiceMod.DragSourceType
 import typings.agGrid.dragAndDropServiceMod.DraggingEvent
 import typings.agGrid.dragAndDropServiceMod.DropTarget
 import typings.agGrid.gridPanelMod.GridPanel
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowDragFeatureMod {
   
   @JSImport("ag-grid/dist/lib/gridPanel/rowDragFeature", "RowDragFeature")
   @js.native
-  class RowDragFeature protected () extends DropTarget {
+  class RowDragFeature protected ()
+    extends StObject
+       with DropTarget {
     def this(eContainer: HTMLElement, gridPanel: GridPanel) = this()
     
     /* private */ def checkCenterForScrolling(pixel: js.Any): js.Any = js.native
@@ -36,6 +38,10 @@ object rowDragFeatureMod {
     
     var focusedCellController: js.Any = js.native
     
+    /** The main container that will get the drop. */
+    /* CompleteClass */
+    override def getContainer(): HTMLElement = js.native
+    
     @JSName("getIconName")
     def getIconName_MRowDragFeature(): String = js.native
     
@@ -44,6 +50,9 @@ object rowDragFeatureMod {
     var gridPanel: js.Any = js.native
     
     var intervalCount: js.Any = js.native
+    
+    /* CompleteClass */
+    override def isInterestedIn(`type`: DragSourceType): Boolean = js.native
     
     var lastDraggingEvent: js.Any = js.native
     

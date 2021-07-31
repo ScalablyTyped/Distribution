@@ -1,23 +1,21 @@
 package typings.vueCompilerCore.mod
 
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlainElementNode
-  extends ElementNode
-     with BaseElementNode {
+  extends StObject
+     with BaseElementNode
+     with ElementNode {
   
-  var codegenNode: js.UndefOr[VNodeCall | SimpleExpressionNode | CacheExpression] = js.native
+  var codegenNode: js.UndefOr[VNodeCall | SimpleExpressionNode | CacheExpression] = js.undefined
   
-  var ssrCodegenNode: js.UndefOr[TemplateLiteral] = js.native
+  var ssrCodegenNode: js.UndefOr[TemplateLiteral] = js.undefined
   
   @JSName("tagType")
-  var tagType_PlainElementNode: `0` = js.native
+  var tagType_PlainElementNode: `0`
 }
 object PlainElementNode {
   
@@ -28,12 +26,10 @@ object PlainElementNode {
     loc: SourceLocation,
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
-    tag: String,
-    tagType: `0`,
-    `type`: `1`
+    tag: String
   ): PlainElementNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = 0)
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[PlainElementNode]
   }
   

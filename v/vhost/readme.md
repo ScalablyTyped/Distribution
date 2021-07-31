@@ -11,8 +11,8 @@ virtual domain hosting
 | Full name          | vhost |
 | Keywords           | - |
 | # releases         | 1 |
-| # dependents       | 141 |
-| # downloads        | 6830922 |
+| # dependents       | 150 |
+| # downloads        | 6836365 |
 | # stars            | 54 |
 
 ## Links

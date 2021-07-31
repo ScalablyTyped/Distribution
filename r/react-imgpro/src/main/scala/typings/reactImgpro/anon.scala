@@ -3,17 +3,15 @@ package typings.reactImgpro
 import typings.reactImgpro.mod.ReactImgpro.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Amount extends StObject {
     
-    var amount: js.UndefOr[Double] = js.native
+    var amount: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
   }
   object Amount {
     
@@ -40,36 +38,35 @@ object anon {
     }
   }
   
-  @js.native
   trait Blue extends StObject {
     
-    var blue: js.UndefOr[Double] = js.native
+    var blue: js.UndefOr[Double] = js.undefined
     
-    var brighten: js.UndefOr[Double] = js.native
+    var brighten: js.UndefOr[Double] = js.undefined
     
-    var darken: js.UndefOr[Double] = js.native
+    var darken: js.UndefOr[Double] = js.undefined
     
-    var desaturate: js.UndefOr[Double] = js.native
+    var desaturate: js.UndefOr[Double] = js.undefined
     
-    var green: js.UndefOr[Double] = js.native
+    var green: js.UndefOr[Double] = js.undefined
     
-    var greyscale: js.UndefOr[Double] = js.native
+    var greyscale: js.UndefOr[Double] = js.undefined
     
-    var lighten: js.UndefOr[Double] = js.native
+    var lighten: js.UndefOr[Double] = js.undefined
     
-    var mix: js.UndefOr[Amount] = js.native
+    var mix: js.UndefOr[Amount] = js.undefined
     
-    var red: js.UndefOr[Double] = js.native
+    var red: js.UndefOr[Double] = js.undefined
     
-    var saturate: js.UndefOr[Double] = js.native
+    var saturate: js.UndefOr[Double] = js.undefined
     
-    var shade: js.UndefOr[Double] = js.native
+    var shade: js.UndefOr[Double] = js.undefined
     
-    var spin: js.UndefOr[Double] = js.native
+    var spin: js.UndefOr[Double] = js.undefined
     
-    var tint: js.UndefOr[Double] = js.native
+    var tint: js.UndefOr[Double] = js.undefined
     
-    var xor: js.UndefOr[Double] = js.native
+    var xor: js.UndefOr[Double] = js.undefined
   }
   object Blue {
     
@@ -168,12 +165,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Degree extends StObject {
     
-    var degree: Double = js.native
+    var degree: Double
     
-    var mode: Mode = js.native
+    var mode: Mode
   }
   object Degree {
     
@@ -194,12 +190,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -220,12 +215,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Horizontal extends StObject {
     
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
   }
   object Horizontal {
     

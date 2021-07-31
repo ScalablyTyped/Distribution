@@ -7,7 +7,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -15,57 +14,55 @@ object mod {
   
   object imageOverlay {
     
-    @JSImport("leaflet", "imageOverlay.rotated")
+    @JSImport("leaflet", "imageOverlay")
     @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
     def rotated(
       imgSrc: String,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression
-    ): Rotated = js.native
-    @JSImport("leaflet", "imageOverlay.rotated")
-    @js.native
+    ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any])).asInstanceOf[Rotated]
+    @scala.inline
     def rotated(
       imgSrc: String,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression,
       options: ImageOverlayOptions
-    ): Rotated = js.native
-    @JSImport("leaflet", "imageOverlay.rotated")
-    @js.native
+    ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rotated]
+    @scala.inline
     def rotated(
       imgSrc: HTMLCanvasElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression
-    ): Rotated = js.native
-    @JSImport("leaflet", "imageOverlay.rotated")
-    @js.native
+    ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any])).asInstanceOf[Rotated]
+    @scala.inline
     def rotated(
       imgSrc: HTMLCanvasElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression,
       options: ImageOverlayOptions
-    ): Rotated = js.native
-    @JSImport("leaflet", "imageOverlay.rotated")
-    @js.native
+    ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rotated]
+    @scala.inline
     def rotated(
       imgSrc: HTMLImageElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression
-    ): Rotated = js.native
-    @JSImport("leaflet", "imageOverlay.rotated")
-    @js.native
+    ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any])).asInstanceOf[Rotated]
+    @scala.inline
     def rotated(
       imgSrc: HTMLImageElement,
       topleft: LatLngExpression,
       topright: LatLngExpression,
       bottomleft: LatLngExpression,
       options: ImageOverlayOptions
-    ): Rotated = js.native
+    ): Rotated = (^.asInstanceOf[js.Dynamic].applyDynamic("rotated")(imgSrc.asInstanceOf[js.Any], topleft.asInstanceOf[js.Any], topright.asInstanceOf[js.Any], bottomleft.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Rotated]
   }
   
   object ImageOverlay_ {

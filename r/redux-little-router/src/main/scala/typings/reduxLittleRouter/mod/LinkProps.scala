@@ -4,33 +4,31 @@ import typings.reduxLittleRouter.anon.Payload
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkProps extends StObject {
   
-  var activeProps: js.UndefOr[ObjectLiteral[_]] = js.native
+  var activeProps: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var href: Href = js.native
+  var href: Href
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var onClick: js.UndefOr[js.Function1[/* event */ Event, _]] = js.native
+  var onClick: js.UndefOr[js.Function1[/* event */ Event, js.Any]] = js.undefined
   
-  var persistQuery: js.UndefOr[Boolean] = js.native
+  var persistQuery: js.UndefOr[Boolean] = js.undefined
   
-  var push: js.UndefOr[js.Function2[/* href */ Href, /* options */ LocationOptions, Payload]] = js.native
+  var push: js.UndefOr[js.Function2[/* href */ Href, /* options */ LocationOptions, Payload]] = js.undefined
   
-  var replace: js.UndefOr[js.Function2[/* href */ Href, /* options */ LocationOptions, Payload]] = js.native
+  var replace: js.UndefOr[js.Function2[/* href */ Href, /* options */ LocationOptions, Payload]] = js.undefined
   
-  var replaceState: js.UndefOr[Boolean] = js.native
+  var replaceState: js.UndefOr[Boolean] = js.undefined
   
-  var style: js.UndefOr[ObjectLiteral[_]] = js.native
+  var style: js.UndefOr[ObjectLiteral[js.Any]] = js.undefined
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object LinkProps {
   
@@ -44,7 +42,7 @@ object LinkProps {
   implicit class LinkPropsMutableBuilder[Self <: LinkProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setActiveProps(value: ObjectLiteral[_]): Self = StObject.set(x, "activeProps", value.asInstanceOf[js.Any])
+    def setActiveProps(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "activeProps", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setActivePropsUndefined: Self = StObject.set(x, "activeProps", js.undefined)
@@ -65,7 +63,7 @@ object LinkProps {
     def setLocationUndefined: Self = StObject.set(x, "location", js.undefined)
     
     @scala.inline
-    def setOnClick(value: /* event */ Event => _): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
+    def setOnClick(value: /* event */ Event => js.Any): Self = StObject.set(x, "onClick", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnClickUndefined: Self = StObject.set(x, "onClick", js.undefined)
@@ -95,7 +93,7 @@ object LinkProps {
     def setReplaceUndefined: Self = StObject.set(x, "replace", js.undefined)
     
     @scala.inline
-    def setStyle(value: ObjectLiteral[_]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    def setStyle(value: ObjectLiteral[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)

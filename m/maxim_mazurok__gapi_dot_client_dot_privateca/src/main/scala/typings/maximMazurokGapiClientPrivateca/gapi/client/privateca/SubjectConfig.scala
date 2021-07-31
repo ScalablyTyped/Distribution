@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubjectConfig extends StObject {
   
   /** Optional. The "common name" of the distinguished name. */
-  var commonName: js.UndefOr[String] = js.native
+  var commonName: js.UndefOr[String] = js.undefined
   
   /** Required. Contains distinguished name fields such as the location and organization. */
-  var subject: js.UndefOr[Subject] = js.native
+  var subject: js.UndefOr[Subject] = js.undefined
   
   /** Optional. The subject alternative name fields. */
-  var subjectAltName: js.UndefOr[SubjectAltNames] = js.native
+  var subjectAltName: js.UndefOr[SubjectAltNames] = js.undefined
 }
 object SubjectConfig {
   

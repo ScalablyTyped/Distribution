@@ -2,51 +2,49 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageLimit extends StObject {
   
   /**
     * The limit amount. If time-based, this amount is in minutes. If data-based, this amount is in terabytes (TB).
     */
-  var Amount: js.UndefOr[Long] = js.native
+  var Amount: js.UndefOr[Long] = js.undefined
   
   /**
     * The action that Amazon Redshift takes when the limit is reached. Possible values are:     log - To log an event in a system table. The default is log.    emit-metric - To emit CloudWatch metrics.    disable - To disable the feature until the next usage period begins.  
     */
-  var BreachAction: js.UndefOr[UsageLimitBreachAction] = js.native
+  var BreachAction: js.UndefOr[UsageLimitBreachAction] = js.undefined
   
   /**
     * The identifier of the cluster with a usage limit.
     */
-  var ClusterIdentifier: js.UndefOr[String] = js.native
+  var ClusterIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Redshift feature to which the limit applies.
     */
-  var FeatureType: js.UndefOr[UsageLimitFeatureType] = js.native
+  var FeatureType: js.UndefOr[UsageLimitFeatureType] = js.undefined
   
   /**
     * The type of limit. Depending on the feature type, this can be based on a time duration or data size.
     */
-  var LimitType: js.UndefOr[UsageLimitLimitType] = js.native
+  var LimitType: js.UndefOr[UsageLimitLimitType] = js.undefined
   
   /**
     * The time period that the amount applies to. A weekly period begins on Sunday. The default is monthly. 
     */
-  var Period: js.UndefOr[UsageLimitPeriod] = js.native
+  var Period: js.UndefOr[UsageLimitPeriod] = js.undefined
   
   /**
     * A list of tag instances.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The identifier of the usage limit.
     */
-  var UsageLimitId: js.UndefOr[String] = js.native
+  var UsageLimitId: js.UndefOr[String] = js.undefined
 }
 object UsageLimit {
   

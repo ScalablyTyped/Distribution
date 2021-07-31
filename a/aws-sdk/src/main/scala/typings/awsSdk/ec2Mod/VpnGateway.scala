@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnGateway extends StObject {
   
   /**
     * The private Autonomous System Number (ASN) for the Amazon side of a BGP session.
     */
-  var AmazonSideAsn: js.UndefOr[Long] = js.native
+  var AmazonSideAsn: js.UndefOr[Long] = js.undefined
   
   /**
     * The Availability Zone where the virtual private gateway was created, if applicable. This field may be empty or not returned.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the virtual private gateway.
     */
-  var State: js.UndefOr[VpnState] = js.native
+  var State: js.UndefOr[VpnState] = js.undefined
   
   /**
     * Any tags assigned to the virtual private gateway.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The type of VPN connection the virtual private gateway supports.
     */
-  var Type: js.UndefOr[GatewayType] = js.native
+  var Type: js.UndefOr[GatewayType] = js.undefined
   
   /**
     * Any VPCs attached to the virtual private gateway.
     */
-  var VpcAttachments: js.UndefOr[VpcAttachmentList] = js.native
+  var VpcAttachments: js.UndefOr[VpcAttachmentList] = js.undefined
   
   /**
     * The ID of the virtual private gateway.
     */
-  var VpnGatewayId: js.UndefOr[String] = js.native
+  var VpnGatewayId: js.UndefOr[String] = js.undefined
 }
 object VpnGateway {
   

@@ -2,11 +2,9 @@ package typings.reactInstantsearchCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-instantsearch-core.react-instantsearch-core.Hit<{  count :number,   isRefined :boolean,   label :string,   value :std.Array<string>}> */
-@js.native
 trait HitcountnumberisRefinedbo extends StObject {
   
   /**
@@ -15,17 +13,17 @@ trait HitcountnumberisRefinedbo extends StObject {
     * any searchable attributes, this object will only contain those keys and others
     * will not exist.
     */
-  var _highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[Value] = js.native
+  var _highlightResult: typings.reactInstantsearchCore.mod.HighlightResult[Value]
   
-  var count: Double = js.native
+  var count: Double
   
-  var isRefined: Boolean = js.native
+  var isRefined: Boolean
   
-  var label: String = js.native
+  var label: String
   
-  var objectID: String = js.native
+  var objectID: String
   
-  var value: js.Array[String] = js.native
+  var value: js.Array[String]
 }
 object HitcountnumberisRefinedbo {
   

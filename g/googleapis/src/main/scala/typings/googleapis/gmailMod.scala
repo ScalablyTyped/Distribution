@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gmailMod {
+  
+  @JSImport("googleapis/build/src/apis/gmail", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -66,9 +69,12 @@ object gmailMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/gmail", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/gmail", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -112,10 +118,9 @@ object gmailMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/gmail", "gmail")
-  @js.native
-  def gmail(options: Options): Gmail = js.native
-  @JSImport("googleapis/build/src/apis/gmail", "gmail")
-  @js.native
-  def gmail_v1(version: v1): Gmail = js.native
+  @scala.inline
+  def gmail(options: Options): Gmail = ^.asInstanceOf[js.Dynamic].applyDynamic("gmail")(options.asInstanceOf[js.Any]).asInstanceOf[Gmail]
+  
+  @scala.inline
+  def gmail_v1(version: v1): Gmail = ^.asInstanceOf[js.Dynamic].applyDynamic("gmail")(version.asInstanceOf[js.Any]).asInstanceOf[Gmail]
 }

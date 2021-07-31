@@ -3,13 +3,11 @@ package typings.reactNative.anon
 import typings.reactNative.mod.LayoutRectangle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layout extends StObject {
   
-  var layout: LayoutRectangle = js.native
+  var layout: LayoutRectangle
 }
 object Layout {
   

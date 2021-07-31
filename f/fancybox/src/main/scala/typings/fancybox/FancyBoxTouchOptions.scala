@@ -2,21 +2,19 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxTouchOptions extends StObject {
   
   /**
     * Continue movement after releasing mouse/touch when panning
     */
-  var momentum: js.UndefOr[Boolean] = js.native
+  var momentum: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Allow to drag content vertically
     */
-  var vertical: js.UndefOr[Boolean] = js.native
+  var vertical: js.UndefOr[Boolean] = js.undefined
 }
 object FancyBoxTouchOptions {
   

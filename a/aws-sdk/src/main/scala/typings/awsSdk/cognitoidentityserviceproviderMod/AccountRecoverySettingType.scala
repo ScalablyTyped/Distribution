@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountRecoverySettingType extends StObject {
   
   /**
     * The list of RecoveryOptionTypes.
     */
-  var RecoveryMechanisms: js.UndefOr[RecoveryMechanismsType] = js.native
+  var RecoveryMechanisms: js.UndefOr[RecoveryMechanismsType] = js.undefined
 }
 object AccountRecoverySettingType {
   

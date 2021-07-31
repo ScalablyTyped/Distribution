@@ -6,130 +6,112 @@ import typings.reactDocgenTypescript.parserMod.ComponentDoc
 import typings.reactDocgenTypescript.parserMod.ParserOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testUtilsMod {
   
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
+  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", JSImport.Namespace)
   @js.native
-  def check(componentName: String, expected: ExpectedComponents): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
-  def check(
-    componentName: String,
-    expected: ExpectedComponents,
-    exactProperties: js.UndefOr[scala.Nothing],
-    description: js.UndefOr[scala.Nothing],
-    parserOpts: ParserOptions
-  ): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
-  def check(
-    componentName: String,
-    expected: ExpectedComponents,
-    exactProperties: js.UndefOr[scala.Nothing],
-    description: String
-  ): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
-  def check(
-    componentName: String,
-    expected: ExpectedComponents,
-    exactProperties: js.UndefOr[scala.Nothing],
-    description: String,
-    parserOpts: ParserOptions
-  ): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
-  def check(
-    componentName: String,
-    expected: ExpectedComponents,
-    exactProperties: js.UndefOr[scala.Nothing],
-    description: Null,
-    parserOpts: ParserOptions
-  ): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
-  def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
-  def check(
-    componentName: String,
-    expected: ExpectedComponents,
-    exactProperties: Boolean,
-    description: js.UndefOr[scala.Nothing],
-    parserOpts: ParserOptions
-  ): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
-  def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean, description: String): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def check(componentName: String, expected: ExpectedComponents): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def check(componentName: String, expected: ExpectedComponents, exactProperties: Boolean, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Boolean,
     description: String,
     parserOpts: ParserOptions
-  ): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "check")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def check(
     componentName: String,
     expected: ExpectedComponents,
     exactProperties: Boolean,
     description: Null,
     parserOpts: ParserOptions
-  ): Unit = js.native
-  
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "checkComponent")
-  @js.native
-  def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "checkComponent")
-  @js.native
-  def checkComponent(
-    actual: js.Array[ComponentDoc],
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def check(
+    componentName: String,
     expected: ExpectedComponents,
-    exactProperties: js.UndefOr[scala.Nothing],
-    description: String
-  ): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "checkComponent")
-  @js.native
-  def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents, exactProperties: Boolean): Unit = js.native
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "checkComponent")
-  @js.native
+    exactProperties: Boolean,
+    description: Unit,
+    parserOpts: ParserOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def check(componentName: String, expected: ExpectedComponents, exactProperties: Unit, description: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def check(
+    componentName: String,
+    expected: ExpectedComponents,
+    exactProperties: Unit,
+    description: String,
+    parserOpts: ParserOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def check(
+    componentName: String,
+    expected: ExpectedComponents,
+    exactProperties: Unit,
+    description: Null,
+    parserOpts: ParserOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def check(
+    componentName: String,
+    expected: ExpectedComponents,
+    exactProperties: Unit,
+    description: Unit,
+    parserOpts: ParserOptions
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(componentName.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any], parserOpts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkComponent(actual: js.Array[ComponentDoc], expected: ExpectedComponents, exactProperties: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def checkComponent(
     actual: js.Array[ComponentDoc],
     expected: ExpectedComponents,
     exactProperties: Boolean,
     description: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def checkComponent(
+    actual: js.Array[ComponentDoc],
+    expected: ExpectedComponents,
+    exactProperties: Unit,
+    description: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("checkComponent")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], exactProperties.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-docgen-typescript/lib/@/tests/testUtils", "fixturePath")
-  @js.native
-  def fixturePath(componentName: String): String = js.native
+  @scala.inline
+  def fixturePath(componentName: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixturePath")(componentName.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type ExpectedComponent = StringDictionary[ExpectedProp]
   
   type ExpectedComponents = StringDictionary[ExpectedComponent]
   
-  @js.native
   trait ExpectedProp extends StObject {
     
-    var defaultValue: js.UndefOr[String | Double | Boolean | Null] = js.native
+    var defaultValue: js.UndefOr[String | Double | Boolean | Null] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var parent: js.UndefOr[FileName] = js.native
+    var parent: js.UndefOr[FileName] = js.undefined
     
-    var raw: js.UndefOr[String] = js.native
+    var raw: js.UndefOr[String] = js.undefined
     
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object ExpectedProp {
     

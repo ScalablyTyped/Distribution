@@ -2,31 +2,29 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageHistory extends StObject {
   
   /**
     * The date and time the user last sent an envelope.
     */
-  var lastSentDateTime: js.UndefOr[String] = js.native
+  var lastSentDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time the user last signed an envelope.
     */
-  var lastSignedDateTime: js.UndefOr[String] = js.native
+  var lastSignedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The number of envelopes the user has sent.
     */
-  var sentCount: js.UndefOr[String] = js.native
+  var sentCount: js.UndefOr[String] = js.undefined
   
   /**
     * The number of envelopes the user has signed.
     */
-  var signedCount: js.UndefOr[String] = js.native
+  var signedCount: js.UndefOr[String] = js.undefined
 }
 object UsageHistory {
   

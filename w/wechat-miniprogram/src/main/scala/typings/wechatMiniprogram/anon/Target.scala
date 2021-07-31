@@ -3,13 +3,11 @@ package typings.wechatMiniprogram.anon
 import typings.wechatMiniprogram.WechatMiniprogram.IAnyObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
-  var target: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject] = js.native
+  var target: typings.wechatMiniprogram.WechatMiniprogram.Target[IAnyObject]
 }
 object Target {
   

@@ -2,32 +2,30 @@ package typings.rockset.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollectionStats extends StObject {
   
   // number of documents in the collection
-  var doc_count: js.UndefOr[Double] = js.native
+  var doc_count: js.UndefOr[Double] = js.undefined
   
   // number between 0 and 1 that indicates progress of collection creation
-  var fill_progress: js.UndefOr[Double] = js.native
+  var fill_progress: js.UndefOr[Double] = js.undefined
   
   // milliseconds since Unix epoch Jan 1, 1970
-  var last_queried_ms: js.UndefOr[Double] = js.native
+  var last_queried_ms: js.UndefOr[Double] = js.undefined
   
   // milliseconds since Unix epoch Jan 1, 1970
-  var last_updated_ms: js.UndefOr[Double] = js.native
+  var last_updated_ms: js.UndefOr[Double] = js.undefined
   
   // number of documents purged from the collection
-  var purged_doc_count: js.UndefOr[Double] = js.native
+  var purged_doc_count: js.UndefOr[Double] = js.undefined
   
   // total collection size in bytes purged
-  var purged_doc_size: js.UndefOr[Double] = js.native
+  var purged_doc_size: js.UndefOr[Double] = js.undefined
   
   // total collection size in bytes
-  var total_size: js.UndefOr[Double] = js.native
+  var total_size: js.UndefOr[Double] = js.undefined
 }
 object CollectionStats {
   

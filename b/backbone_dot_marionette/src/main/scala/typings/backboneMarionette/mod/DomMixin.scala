@@ -2,29 +2,27 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomMixin extends StObject {
   
-  var appendChildren: js.Any = js.native
+  var appendChildren: js.Any
   
-  var beforeEl: js.Any = js.native
+  var beforeEl: js.Any
   
-  var createBuffer: js.Any = js.native
+  var createBuffer: js.Any
   
-  var detachContents: js.Any = js.native
+  var detachContents: js.Any
   
-  var detachEl: js.Any = js.native
+  var detachEl: js.Any
   
-  var findEls: js.Any = js.native
+  var findEls: js.Any
   
-  var removeEl: js.Any = js.native
+  var removeEl: js.Any
   
-  var replaceEl: js.Any = js.native
+  var replaceEl: js.Any
   
-  var setInnerContent: js.Any = js.native
+  var setInnerContent: js.Any
 }
 object DomMixin {
   

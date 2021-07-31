@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,17 +14,27 @@ sealed trait IconColor extends StObject
 object IconColor extends StObject {
   
   @js.native
-  sealed trait Critical extends IconColor
+  sealed trait Critical
+    extends StObject
+       with IconColor
   
   @js.native
-  sealed trait Default extends IconColor
+  sealed trait Default
+    extends StObject
+       with IconColor
   
   @js.native
-  sealed trait Negative extends IconColor
+  sealed trait Negative
+    extends StObject
+       with IconColor
   
   @js.native
-  sealed trait Neutral extends IconColor
+  sealed trait Neutral
+    extends StObject
+       with IconColor
   
   @js.native
-  sealed trait Positive extends IconColor
+  sealed trait Positive
+    extends StObject
+       with IconColor
 }

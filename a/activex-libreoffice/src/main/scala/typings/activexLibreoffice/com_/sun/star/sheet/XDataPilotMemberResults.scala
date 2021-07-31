@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.DataPilotSource
   * @see com.sun.star.sheet.XDataPilotResults
   */
-@js.native
-trait XDataPilotMemberResults extends XInterface {
+trait XDataPilotMemberResults
+  extends StObject
+     with XInterface {
   
   /** returns the sequence of results for the regarding data pilot source level. */
-  val Results: SafeArray[MemberResult] = js.native
+  val Results: SafeArray[MemberResult]
   
   /** returns the sequence of results for the regarding data pilot source level. */
-  def getResults(): SafeArray[MemberResult] = js.native
+  def getResults(): SafeArray[MemberResult]
 }
 object XDataPilotMemberResults {
   

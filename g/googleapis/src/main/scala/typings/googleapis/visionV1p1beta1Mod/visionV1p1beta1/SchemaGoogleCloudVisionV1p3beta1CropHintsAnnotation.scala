@@ -2,19 +2,17 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Set of crop hints that are used to generate new crops when serving images.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation extends StObject {
   
   /**
     * Crop hint results.
     */
-  var cropHints: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1CropHint]] = js.native
+  var cropHints: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p3beta1CropHint]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p3beta1CropHintsAnnotation {
   

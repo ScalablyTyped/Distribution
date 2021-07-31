@@ -3,7 +3,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,25 +12,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * out of order (or missing), and it is up to the consumer to interpret. The
   * timestamp of the event is in the enclosing WorkerMessage proto.
   */
-@js.native
 trait SchemaWorkerLifecycleEvent extends StObject {
   
   /**
     * The start time of this container. All events will report this so that
     * events can be grouped together across container/VM restarts.
     */
-  var containerStartTime: js.UndefOr[String] = js.native
+  var containerStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * The event being reported.
     */
-  var event: js.UndefOr[String] = js.native
+  var event: js.UndefOr[String] = js.undefined
   
   /**
     * Other stats that can accompany an event. E.g. {
     * &quot;downloaded_bytes&quot; : &quot;123456&quot; }
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaWorkerLifecycleEvent {
   

@@ -2,29 +2,29 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExternalReferenceEnvelope extends ExternalReferenceGeometry {
+trait ExternalReferenceEnvelope
+  extends StObject
+     with ExternalReferenceGeometry {
   
-  var mmax: js.UndefOr[Double] = js.native
+  var mmax: js.UndefOr[Double] = js.undefined
   
-  var mmin: js.UndefOr[Double] = js.native
+  var mmin: js.UndefOr[Double] = js.undefined
   
-  var spatialReference: js.UndefOr[ExternalReferenceSpatialReference] = js.native
+  var spatialReference: js.UndefOr[ExternalReferenceSpatialReference] = js.undefined
   
-  var xmax: js.UndefOr[Double] = js.native
+  var xmax: js.UndefOr[Double] = js.undefined
   
-  var xmin: js.UndefOr[Double] = js.native
+  var xmin: js.UndefOr[Double] = js.undefined
   
-  var ymax: js.UndefOr[Double] = js.native
+  var ymax: js.UndefOr[Double] = js.undefined
   
-  var ymin: js.UndefOr[Double] = js.native
+  var ymin: js.UndefOr[Double] = js.undefined
   
-  var zmax: js.UndefOr[Double] = js.native
+  var zmax: js.UndefOr[Double] = js.undefined
   
-  var zmin: js.UndefOr[Double] = js.native
+  var zmin: js.UndefOr[Double] = js.undefined
 }
 object ExternalReferenceEnvelope {
   

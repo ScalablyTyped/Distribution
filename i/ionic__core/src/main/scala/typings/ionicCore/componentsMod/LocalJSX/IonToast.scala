@@ -14,96 +14,94 @@ import typings.ionicCore.toastInterfaceMod.ToastButton
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonToast extends StObject {
   
   /**
     * If `true`, the toast will animate.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An array of buttons for the toast.
     */
-  var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.native
+  var buttons: js.UndefOr[js.Array[ToastButton | String]] = js.undefined
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * How many milliseconds to wait before hiding the toast. By default, it will show until `dismiss()` is called.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Animation to use when the toast is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * Header to be shown in the toast.
     */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animation to use when the toast is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * Message to be shown in the toast.
     */
-  var message: js.UndefOr[String | IonicSafeString] = js.native
+  var message: js.UndefOr[String | IonicSafeString] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted after the toast has dismissed.
     */
-  var onIonToastDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonToastDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted after the toast has presented.
     */
-  var onIonToastDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonToastDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted before the toast has dismissed.
     */
-  var onIonToastWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonToastWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted before the toast has presented.
     */
-  var onIonToastWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonToastWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * The position of the toast on the screen.
     */
-  var position: js.UndefOr[top | bottom | middle] = js.native
+  var position: js.UndefOr[top | bottom | middle] = js.undefined
   
   /**
     * If `true`, the toast will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object IonToast {
   
@@ -189,7 +187,7 @@ object IonToast {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnIonToastDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonToastDidDismiss", js.Any.fromFunction1(value))
+    def setOnIonToastDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonToastDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonToastDidDismissUndefined: Self = StObject.set(x, "onIonToastDidDismiss", js.undefined)
@@ -201,7 +199,7 @@ object IonToast {
     def setOnIonToastDidPresentUndefined: Self = StObject.set(x, "onIonToastDidPresent", js.undefined)
     
     @scala.inline
-    def setOnIonToastWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonToastWillDismiss", js.Any.fromFunction1(value))
+    def setOnIonToastWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonToastWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonToastWillDismissUndefined: Self = StObject.set(x, "onIonToastWillDismiss", js.undefined)

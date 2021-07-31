@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStandardsResponse extends StObject {
   
   /**
     * The pagination token to use to request the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.securityhubMod.NextToken] = js.undefined
   
   /**
     * A list of available standards.
     */
-  var Standards: js.UndefOr[typings.awsSdk.securityhubMod.Standards] = js.native
+  var Standards: js.UndefOr[typings.awsSdk.securityhubMod.Standards] = js.undefined
 }
 object DescribeStandardsResponse {
   

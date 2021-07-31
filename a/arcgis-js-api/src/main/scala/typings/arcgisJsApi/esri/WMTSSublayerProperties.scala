@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WMTSSublayerProperties extends StObject {
   
   /**
@@ -13,84 +11,84 @@ trait WMTSSublayerProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The full extent of the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#fullExtent)
     */
-  var fullExtent: js.UndefOr[ExtentProperties] = js.native
+  var fullExtent: js.UndefOr[ExtentProperties] = js.undefined
   
   /**
     * The unique ID assigned to the sublayer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#id)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The map image format (MIME type) to request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#imageFormat)
     */
-  var imageFormat: js.UndefOr[String] = js.native
+  var imageFormat: js.UndefOr[String] = js.undefined
   
   /**
     * Supported image formats as retrieved from the GetCapabilities request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#imageFormats)
     */
-  var imageFormats: js.UndefOr[js.Array[String]] = js.native
+  var imageFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The [WMTSLayer](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-WMTSLayer.html) to which the sublayer belongs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#layer)
     */
-  var layer: js.UndefOr[WMTSLayerProperties] = js.native
+  var layer: js.UndefOr[WMTSLayerProperties] = js.undefined
   
   /**
     * The [WMTSStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSStyle.html) to request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#styleId)
     */
-  var styleId: js.UndefOr[String] = js.native
+  var styleId: js.UndefOr[String] = js.undefined
   
   /**
     * A collection of supported [WMTSStyle](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSStyle.html)s as retrieved from the GetCapabilities request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#styles)
     */
-  var styles: js.UndefOr[CollectionProperties[WMTSStyleProperties]] = js.native
+  var styles: js.UndefOr[CollectionProperties[WMTSStyleProperties]] = js.undefined
   
   /**
     * The [TileMatrixSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html) to request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#tileMatrixSet)
     */
-  var tileMatrixSet: js.UndefOr[TileMatrixSetProperties] = js.native
+  var tileMatrixSet: js.UndefOr[TileMatrixSetProperties] = js.undefined
   
   /**
     * The id of the [TileMatrixSet](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html) to request.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#tileMatrixSetId)
     */
-  var tileMatrixSetId: js.UndefOr[String] = js.native
+  var tileMatrixSetId: js.UndefOr[String] = js.undefined
   
   /**
     * A collection of supported [TileMatrixSets](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-TileMatrixSet.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#tileMatrixSets)
     */
-  var tileMatrixSets: js.UndefOr[CollectionProperties[TileMatrixSetProperties]] = js.native
+  var tileMatrixSets: js.UndefOr[CollectionProperties[TileMatrixSetProperties]] = js.undefined
   
   /**
     * The title of the WMTS sublayer used to identify it in places such as the [LayerList](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList.html) and [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html) widgets.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-WMTSSublayer.html#title)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object WMTSSublayerProperties {
   

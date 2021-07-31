@@ -3,36 +3,34 @@ package typings.recurlyRecurlyJs.anon
 import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/elements.IndividualElementOptions & {  selector :string | undefined} */
-@js.native
 trait IndividualElementOptionss extends StObject {
   
   /**
     * Enables contextual input formatting, injecting spaces to match the card brand, and forcing numeric input on expiry
     * and cvv.
     */
-  var format: js.UndefOr[Boolean] = js.native
+  var format: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Modifies the input type of the expiry fields. 'text' - normal text input. 'mobileSelect' - if the user is using a
     * mobile device, a native select interface will appear. 'select' - A select field will display on all devices
     */
-  var inputType: js.UndefOr[String] = js.native
+  var inputType: js.UndefOr[String] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#common-field-style-properties|Common field style properties}
     */
-  var style: js.UndefOr[CommonElementStyle with Invalid] = js.native
+  var style: js.UndefOr[CommonElementStyle & Invalid] = js.undefined
   
   /**
     * tabIndex property to be applied to the outer iframe.
     */
-  var tabIndex: js.UndefOr[String] = js.native
+  var tabIndex: js.UndefOr[String] = js.undefined
 }
 object IndividualElementOptionss {
   
@@ -64,7 +62,7 @@ object IndividualElementOptionss {
     def setSelectorUndefined: Self = StObject.set(x, "selector", js.undefined)
     
     @scala.inline
-    def setStyle(value: CommonElementStyle with Invalid): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+    def setStyle(value: CommonElementStyle & Invalid): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)

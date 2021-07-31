@@ -2,21 +2,19 @@ package typings.reactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortController extends StObject {
   
   /**
     * Abort and signal to any observers that the associated activity is to be aborted.
     */
-  def abort(): Unit = js.native
+  def abort(): Unit
   
   /**
     * Returns the `AbortSignal` object associated with this object.
     */
-  val signal: AbortSignal = js.native
+  val signal: AbortSignal
 }
 object AbortController {
   

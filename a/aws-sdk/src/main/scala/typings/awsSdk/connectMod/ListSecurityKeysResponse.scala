@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSecurityKeysResponse extends StObject {
   
   /**
     * If there are additional results, this is the token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.undefined
   
   /**
     * The security keys.
     */
-  var SecurityKeys: js.UndefOr[SecurityKeysList] = js.native
+  var SecurityKeys: js.UndefOr[SecurityKeysList] = js.undefined
 }
 object ListSecurityKeysResponse {
   

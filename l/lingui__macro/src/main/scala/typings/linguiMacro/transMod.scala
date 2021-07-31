@@ -6,7 +6,6 @@ import typings.react.mod.ReactElement
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transMod {
@@ -18,20 +17,21 @@ object transMod {
   
   type Trans = Component[TransPropsWithoutI18n, js.Object, js.Any]
   
-  @js.native
-  trait TransPropsWithoutI18n extends RenderProps {
+  trait TransPropsWithoutI18n
+    extends StObject
+       with RenderProps {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var components: js.UndefOr[js.Array[ReactElement]] = js.native
+    var components: js.UndefOr[js.Array[ReactElement]] = js.undefined
     
-    var defaults: js.UndefOr[String] = js.native
+    var defaults: js.UndefOr[String] = js.undefined
     
-    var formats: js.UndefOr[js.Object] = js.native
+    var formats: js.UndefOr[js.Object] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var values: js.UndefOr[js.Object] = js.native
+    var values: js.UndefOr[js.Object] = js.undefined
   }
   object TransPropsWithoutI18n {
     

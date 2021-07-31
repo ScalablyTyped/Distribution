@@ -2,31 +2,29 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScanCodeData extends StObject {
   
   /**
     * 所扫码的字符集
     */
-  var charSet: String = js.native
+  var charSet: String
   
   /**
     * 当所扫的码为当前小程序的合法二维码时，会返回此字段，内容为二维码携带的 path
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * 所扫码的内容
     */
-  var result: String = js.native
+  var result: String
   
   /**
     * 所扫码的类型
     */
-  var scanType: typings.weixinApp.wx.scanType = js.native
+  var scanType: typings.weixinApp.wx.scanType
 }
 object ScanCodeData {
   

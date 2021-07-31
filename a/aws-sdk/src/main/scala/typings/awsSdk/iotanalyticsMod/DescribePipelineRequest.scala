@@ -2,16 +2,14 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePipelineRequest extends StObject {
   
   /**
     * The name of the pipeline whose information is retrieved.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
 }
 object DescribePipelineRequest {
   

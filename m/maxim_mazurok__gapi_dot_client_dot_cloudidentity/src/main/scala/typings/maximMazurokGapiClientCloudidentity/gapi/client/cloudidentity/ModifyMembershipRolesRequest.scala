@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudidentity.gapi.client.cloudidentity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyMembershipRolesRequest extends StObject {
   
   /** The `MembershipRole`s to be added. Adding or removing roles in the same request as updating roles is not supported. Must not be set if `update_roles_params` is set. */
-  var addRoles: js.UndefOr[js.Array[MembershipRole]] = js.native
+  var addRoles: js.UndefOr[js.Array[MembershipRole]] = js.undefined
   
   /**
     * The `name`s of the `MembershipRole`s to be removed. Adding or removing roles in the same request as updating roles is not supported. It is not possible to remove the `MEMBER`
     * `MembershipRole`. If you wish to delete a `Membership`, call MembershipsService.DeleteMembership instead. Must not contain `MEMBER`. Must not be set if `update_roles_params` is set.
     */
-  var removeRoles: js.UndefOr[js.Array[String]] = js.native
+  var removeRoles: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ModifyMembershipRolesRequest {
   

@@ -6,63 +6,61 @@ import typings.typescriptServices.TypeScript.SyntaxTree
 import typings.typescriptServices.TypeScript.TextSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILanguageService extends StObject {
   
-  def cleanupSemanticCache(): Unit = js.native
+  def cleanupSemanticCache(): Unit
   
-  def getBraceMatchingAtPosition(fileName: String, position: Double): js.Array[TextSpan] = js.native
+  def getBraceMatchingAtPosition(fileName: String, position: Double): js.Array[TextSpan]
   
-  def getBreakpointStatementAtPosition(fileName: String, position: Double): SpanInfo = js.native
+  def getBreakpointStatementAtPosition(fileName: String, position: Double): SpanInfo
   
-  def getCompilerOptionsDiagnostics(): js.Array[Diagnostic] = js.native
+  def getCompilerOptionsDiagnostics(): js.Array[Diagnostic]
   
-  def getCompletionEntryDetails(fileName: String, position: Double, entryName: String): CompletionEntryDetails = js.native
+  def getCompletionEntryDetails(fileName: String, position: Double, entryName: String): CompletionEntryDetails
   
-  def getCompletionsAtPosition(fileName: String, position: Double, isMemberCompletion: Boolean): CompletionInfo = js.native
+  def getCompletionsAtPosition(fileName: String, position: Double, isMemberCompletion: Boolean): CompletionInfo
   
-  def getDefinitionAtPosition(fileName: String, position: Double): js.Array[DefinitionInfo] = js.native
+  def getDefinitionAtPosition(fileName: String, position: Double): js.Array[DefinitionInfo]
   
-  def getEmitOutput(fileName: String): EmitOutput = js.native
+  def getEmitOutput(fileName: String): EmitOutput
   
-  def getFormattingEditsAfterKeystroke(fileName: String, position: Double, key: String, options: FormatCodeOptions): js.Array[TextEdit] = js.native
+  def getFormattingEditsAfterKeystroke(fileName: String, position: Double, key: String, options: FormatCodeOptions): js.Array[TextEdit]
   
-  def getFormattingEditsForDocument(fileName: String, minChar: Double, limChar: Double, options: FormatCodeOptions): js.Array[TextEdit] = js.native
+  def getFormattingEditsForDocument(fileName: String, minChar: Double, limChar: Double, options: FormatCodeOptions): js.Array[TextEdit]
   
-  def getFormattingEditsForRange(fileName: String, minChar: Double, limChar: Double, options: FormatCodeOptions): js.Array[TextEdit] = js.native
+  def getFormattingEditsForRange(fileName: String, minChar: Double, limChar: Double, options: FormatCodeOptions): js.Array[TextEdit]
   
-  def getFormattingEditsOnPaste(fileName: String, minChar: Double, limChar: Double, options: FormatCodeOptions): js.Array[TextEdit] = js.native
+  def getFormattingEditsOnPaste(fileName: String, minChar: Double, limChar: Double, options: FormatCodeOptions): js.Array[TextEdit]
   
-  def getImplementorsAtPosition(fileName: String, position: Double): js.Array[ReferenceEntry] = js.native
+  def getImplementorsAtPosition(fileName: String, position: Double): js.Array[ReferenceEntry]
   
-  def getIndentationAtPosition(fileName: String, position: Double, options: EditorOptions): Double = js.native
+  def getIndentationAtPosition(fileName: String, position: Double, options: EditorOptions): Double
   
-  def getNameOrDottedNameSpan(fileName: String, startPos: Double, endPos: Double): SpanInfo = js.native
+  def getNameOrDottedNameSpan(fileName: String, startPos: Double, endPos: Double): SpanInfo
   
-  def getNavigateToItems(searchValue: String): js.Array[NavigateToItem] = js.native
+  def getNavigateToItems(searchValue: String): js.Array[NavigateToItem]
   
-  def getOccurrencesAtPosition(fileName: String, position: Double): js.Array[ReferenceEntry] = js.native
+  def getOccurrencesAtPosition(fileName: String, position: Double): js.Array[ReferenceEntry]
   
-  def getOutliningRegions(fileName: String): js.Array[TextSpan] = js.native
+  def getOutliningRegions(fileName: String): js.Array[TextSpan]
   
-  def getReferencesAtPosition(fileName: String, position: Double): js.Array[ReferenceEntry] = js.native
+  def getReferencesAtPosition(fileName: String, position: Double): js.Array[ReferenceEntry]
   
-  def getScriptLexicalStructure(fileName: String): js.Array[NavigateToItem] = js.native
+  def getScriptLexicalStructure(fileName: String): js.Array[NavigateToItem]
   
-  def getSemanticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
+  def getSemanticDiagnostics(fileName: String): js.Array[Diagnostic]
   
-  def getSignatureAtPosition(fileName: String, position: Double): SignatureInfo = js.native
+  def getSignatureAtPosition(fileName: String, position: Double): SignatureInfo
   
-  def getSyntacticDiagnostics(fileName: String): js.Array[Diagnostic] = js.native
+  def getSyntacticDiagnostics(fileName: String): js.Array[Diagnostic]
   
-  def getSyntaxTree(fileName: String): SyntaxTree = js.native
+  def getSyntaxTree(fileName: String): SyntaxTree
   
-  def getTypeAtPosition(fileName: String, position: Double): TypeInfo = js.native
+  def getTypeAtPosition(fileName: String, position: Double): TypeInfo
   
-  def refresh(): Unit = js.native
+  def refresh(): Unit
 }
 object ILanguageService {
   

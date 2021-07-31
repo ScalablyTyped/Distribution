@@ -11,8 +11,8 @@ Persistent ordered mapping from strings
 | Full name          | orderedmap |
 | Keywords           | persistent, map |
 | # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 4872597 |
+| # dependents       | 10 |
+| # downloads        | 6566275 |
 | # stars            | 0 |
 
 ## Links

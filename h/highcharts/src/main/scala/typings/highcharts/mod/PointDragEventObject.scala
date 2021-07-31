@@ -3,36 +3,34 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.drag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointDragEventObject extends StObject {
   
   /**
     * New points during drag.
     */
-  var newPoints: Dictionary[PointDragDropObject] = js.native
+  var newPoints: Dictionary[PointDragDropObject]
   
   /**
     * Original data.
     */
-  var origin: DragDropPositionObject = js.native
+  var origin: DragDropPositionObject
   
   /**
     * Prevent default drag action.
     */
-  var preventDefault: js.Function = js.native
+  var preventDefault: js.Function
   
   /**
     * Target point that caused the event.
     */
-  var target: Point = js.native
+  var target: Point
   
   /**
     * Event type.
     */
-  var `type`: drag = js.native
+  var `type`: drag
 }
 object PointDragEventObject {
   
@@ -41,11 +39,10 @@ object PointDragEventObject {
     newPoints: Dictionary[PointDragDropObject],
     origin: DragDropPositionObject,
     preventDefault: js.Function,
-    target: Point,
-    `type`: drag
+    target: Point
   ): PointDragEventObject = {
     val __obj = js.Dynamic.literal(newPoints = newPoints.asInstanceOf[js.Any], origin = origin.asInstanceOf[js.Any], preventDefault = preventDefault.asInstanceOf[js.Any], target = target.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("drag")
     __obj.asInstanceOf[PointDragEventObject]
   }
   

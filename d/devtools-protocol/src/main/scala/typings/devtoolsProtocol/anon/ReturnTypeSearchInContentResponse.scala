@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.SearchInContentRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.SearchInContentResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeSearchInContentResponse extends StObject {
   
-  var paramsType: js.Array[SearchInContentRequest] = js.native
+  var paramsType: js.Array[SearchInContentRequest]
   
-  var returnType: SearchInContentResponse = js.native
+  var returnType: SearchInContentResponse
 }
 object ReturnTypeSearchInContentResponse {
   

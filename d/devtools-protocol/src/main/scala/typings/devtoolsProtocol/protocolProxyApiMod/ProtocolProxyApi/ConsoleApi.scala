@@ -4,33 +4,31 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.messageAdded
 import typings.devtoolsProtocol.mod.Protocol.Console.MessageAddedEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsoleApi extends StObject {
   
   /**
     * Does nothing.
     */
-  def clearMessages(): js.Promise[Unit] = js.native
+  def clearMessages(): js.Promise[Unit]
   
   /**
     * Disables console domain, prevents further console messages from being reported to the client.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables console domain, sends the messages collected so far to the client by means of the
     * `messageAdded` notification.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Issued when new console message is added.
     */
   @JSName("on")
-  def on_messageAdded(event: messageAdded, listener: js.Function1[/* params */ MessageAddedEvent, Unit]): Unit = js.native
+  def on_messageAdded(event: messageAdded, listener: js.Function1[/* params */ MessageAddedEvent, Unit]): Unit
 }
 object ConsoleApi {
   

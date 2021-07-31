@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the RangeBorderCollection object, for use in `rangeBorderCollection.set({ ... })`. */
-@js.native
 trait RangeBorderCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[RangeBorderData]] = js.native
+  var items: js.UndefOr[js.Array[RangeBorderData]] = js.undefined
   
   /**
     *
@@ -18,7 +16,7 @@ trait RangeBorderCollectionUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var tintAndShade: js.UndefOr[Double] = js.native
+  var tintAndShade: js.UndefOr[Double] = js.undefined
 }
 object RangeBorderCollectionUpdateData {
   

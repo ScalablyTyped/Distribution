@@ -2,49 +2,47 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRowFactory extends StObject {
   
-  def UpdateViewableRange(newRange: IRenderedRange): Unit = js.native
+  def UpdateViewableRange(newRange: IRenderedRange): Unit
   
-  var aggCache: js.Any = js.native
+  var aggCache: js.Any
   
-  def buildAggregateRow(aggEntity: js.Any, rowIndex: Double): IAggregate = js.native
+  def buildAggregateRow(aggEntity: js.Any, rowIndex: Double): IAggregate
   
-  def buildEntityRow(entity: js.Any, rowIndex: Double): IRow = js.native
+  def buildEntityRow(entity: js.Any, rowIndex: Double): IRow
   
-  var dataChanged: Boolean = js.native
+  var dataChanged: Boolean
   
-  def filteredRowsChanged(): Unit = js.native
+  def filteredRowsChanged(): Unit
   
-  def fixRowCache(): Unit = js.native
+  def fixRowCache(): Unit
   
-  def getGrouping(groups: js.Any): Unit = js.native
+  def getGrouping(groups: js.Any): Unit
   
-  var groupedData: js.Any = js.native
+  var groupedData: js.Any
   
-  var numberOfAggregates: Double = js.native
+  var numberOfAggregates: Double
   
-  var parentCache: js.Array[_] = js.native
+  var parentCache: js.Array[js.Any]
   
-  def parseGroupData(groupData: js.Any): Unit = js.native
+  def parseGroupData(groupData: js.Any): Unit
   
-  var parsedData: js.Array[_] = js.native
+  var parsedData: js.Array[js.Any]
   
-  def renderedChange(): Unit = js.native
+  def renderedChange(): Unit
   
-  def renderedChangeNoGroups(): Unit = js.native
+  def renderedChangeNoGroups(): Unit
   
-  var renderedRange: IRenderedRange = js.native
+  var renderedRange: IRenderedRange
   
-  var rowConfig: IRowConfig = js.native
+  var rowConfig: IRowConfig
   
-  var rowHeight: Double = js.native
+  var rowHeight: Double
   
-  var selectionProvider: ISelectionProvider = js.native
+  var selectionProvider: ISelectionProvider
 }
 object IRowFactory {
   
@@ -60,9 +58,9 @@ object IRowFactory {
     getGrouping: js.Any => Unit,
     groupedData: js.Any,
     numberOfAggregates: Double,
-    parentCache: js.Array[_],
+    parentCache: js.Array[js.Any],
     parseGroupData: js.Any => Unit,
-    parsedData: js.Array[_],
+    parsedData: js.Array[js.Any],
     renderedChange: () => Unit,
     renderedChangeNoGroups: () => Unit,
     renderedRange: IRenderedRange,
@@ -105,7 +103,7 @@ object IRowFactory {
     def setNumberOfAggregates(value: Double): Self = StObject.set(x, "numberOfAggregates", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParentCache(value: js.Array[_]): Self = StObject.set(x, "parentCache", value.asInstanceOf[js.Any])
+    def setParentCache(value: js.Array[js.Any]): Self = StObject.set(x, "parentCache", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentCacheVarargs(value: js.Any*): Self = StObject.set(x, "parentCache", js.Array(value :_*))
@@ -114,7 +112,7 @@ object IRowFactory {
     def setParseGroupData(value: js.Any => Unit): Self = StObject.set(x, "parseGroupData", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setParsedData(value: js.Array[_]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
+    def setParsedData(value: js.Array[js.Any]): Self = StObject.set(x, "parsedData", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParsedDataVarargs(value: js.Any*): Self = StObject.set(x, "parsedData", js.Array(value :_*))

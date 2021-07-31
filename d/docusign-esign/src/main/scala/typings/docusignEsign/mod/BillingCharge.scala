@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingCharge extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var allowedQuantity: js.UndefOr[String] = js.native
+  var allowedQuantity: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var blocked: js.UndefOr[String] = js.native
+  var blocked: js.UndefOr[String] = js.undefined
   
   /**
     * Provides information on what services the charge item is for.
@@ -47,39 +45,39 @@ trait BillingCharge extends StObject {
     * | seats | Included active seats charge |
     * | open_trust_certificate | OpenTrust Signer Certificate charge |
     */
-  var chargeName: js.UndefOr[String] = js.native
+  var chargeName: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var chargeType: js.UndefOr[String] = js.native
+  var chargeType: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var chargeUnitOfMeasure: js.UndefOr[String] = js.native
+  var chargeUnitOfMeasure: js.UndefOr[String] = js.undefined
   
-  var discounts: js.UndefOr[js.Array[BillingDiscount]] = js.native
+  var discounts: js.UndefOr[js.Array[BillingDiscount]] = js.undefined
   
-  var firstEffectiveDate: js.UndefOr[String] = js.native
+  var firstEffectiveDate: js.UndefOr[String] = js.undefined
   
-  var includedQuantity: js.UndefOr[String] = js.native
-  
-  /**
-    * Reserved: TBD
-    */
-  var incrementalQuantity: js.UndefOr[String] = js.native
-  
-  var lastEffectiveDate: js.UndefOr[String] = js.native
-  
-  var prices: js.UndefOr[js.Array[BillingPrice]] = js.native
+  var includedQuantity: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved: TBD
     */
-  var unitPrice: js.UndefOr[String] = js.native
+  var incrementalQuantity: js.UndefOr[String] = js.undefined
   
-  var usedQuantity: js.UndefOr[String] = js.native
+  var lastEffectiveDate: js.UndefOr[String] = js.undefined
+  
+  var prices: js.UndefOr[js.Array[BillingPrice]] = js.undefined
+  
+  /**
+    * Reserved: TBD
+    */
+  var unitPrice: js.UndefOr[String] = js.undefined
+  
+  var usedQuantity: js.UndefOr[String] = js.undefined
 }
 object BillingCharge {
   

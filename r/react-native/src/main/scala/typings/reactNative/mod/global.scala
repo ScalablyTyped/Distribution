@@ -2,7 +2,6 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -59,16 +58,16 @@ object global {
   @js.native
   trait Console_ extends StObject {
     
-    def debug(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def debug(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def debug(message: Unit, optionalParams: js.Any*): Unit = js.native
     
     /**
       * @deprecated Use LogBox.ignoreAllLogs(disable) instead
       */
     var disableYellowBox: Boolean = js.native
     
-    def error(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def error(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def error(message: Unit, optionalParams: js.Any*): Unit = js.native
     
     def group(): Unit = js.native
     def group(label: String): Unit = js.native
@@ -83,19 +82,19 @@ object global {
       */
     var ignoredYellowBox: js.Array[String] = js.native
     
-    def info(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def info(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def info(message: Unit, optionalParams: js.Any*): Unit = js.native
     
-    def log(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def log(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def log(message: Unit, optionalParams: js.Any*): Unit = js.native
     
     def table(data: js.Any*): Unit = js.native
     
-    def trace(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def trace(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def trace(message: Unit, optionalParams: js.Any*): Unit = js.native
     
-    def warn(message: js.UndefOr[scala.Nothing], optionalParams: js.Any*): Unit = js.native
     def warn(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def warn(message: Unit, optionalParams: js.Any*): Unit = js.native
   }
   
   type NodeRequire = js.Function1[/* id */ String, js.Any]

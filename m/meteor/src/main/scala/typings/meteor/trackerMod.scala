@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import typings.meteor.anon.OnError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trackerMod {
@@ -15,22 +14,21 @@ object trackerMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @js.native
     trait Computation extends StObject {
       
-      var firstRun: Boolean = js.native
+      var firstRun: Boolean
       
-      def invalidate(): Unit = js.native
+      def invalidate(): Unit
       
-      var invalidated: Boolean = js.native
+      var invalidated: Boolean
       
-      def onInvalidate(callback: js.Function): Unit = js.native
+      def onInvalidate(callback: js.Function): Unit
       
-      def onStop(callback: js.Function): Unit = js.native
+      def onStop(callback: js.Function): Unit
       
-      def stop(): Unit = js.native
+      def stop(): Unit
       
-      var stopped: Boolean = js.native
+      var stopped: Boolean
     }
     object Computation {
       
@@ -81,7 +79,9 @@ object trackerMod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("meteor/tracker", "Tracker.Dependency")
     @js.native
-    class DependencyCls () extends Dependency
+    class DependencyCls ()
+      extends StObject
+         with Dependency
     
     @scala.inline
     def Dependency_=(x: DependencyStatic): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Dependency")(x.asInstanceOf[js.Any])
@@ -92,16 +92,13 @@ object trackerMod {
     @scala.inline
     def active_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("active")(x.asInstanceOf[js.Any])
     
-    @JSImport("meteor/tracker", "Tracker.afterFlush")
-    @js.native
-    def afterFlush(callback: js.Function): Unit = js.native
+    @scala.inline
+    def afterFlush(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("afterFlush")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/tracker", "Tracker.autorun")
-    @js.native
-    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = js.native
-    @JSImport("meteor/tracker", "Tracker.autorun")
-    @js.native
-    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit], options: OnError): Computation = js.native
+    @scala.inline
+    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit]): Computation = ^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(runFunc.asInstanceOf[js.Any]).asInstanceOf[Computation]
+    @scala.inline
+    def autorun(runFunc: js.Function1[/* computation */ Computation, Unit], options: OnError): Computation = (^.asInstanceOf[js.Dynamic].applyDynamic("autorun")(runFunc.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Computation]
     
     @JSImport("meteor/tracker", "Tracker.currentComputation")
     @js.native
@@ -109,19 +106,18 @@ object trackerMod {
     @scala.inline
     def currentComputation_=(x: Computation): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentComputation")(x.asInstanceOf[js.Any])
     
-    @JSImport("meteor/tracker", "Tracker.flush")
-    @js.native
-    def flush(): Unit = js.native
+    @scala.inline
+    def flush(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Unit]
     
-    @JSImport("meteor/tracker", "Tracker.nonreactive")
-    @js.native
-    def nonreactive[T](func: js.Function0[T]): T = js.native
+    @scala.inline
+    def nonreactive[T](func: js.Function0[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("nonreactive")(func.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("meteor/tracker", "Tracker.onInvalidate")
-    @js.native
-    def onInvalidate(callback: js.Function): Unit = js.native
+    @scala.inline
+    def onInvalidate(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onInvalidate")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @js.native
-    trait DependencyStatic extends Instantiable0[Dependency]
+    trait DependencyStatic
+      extends StObject
+         with Instantiable0[Dependency]
   }
 }

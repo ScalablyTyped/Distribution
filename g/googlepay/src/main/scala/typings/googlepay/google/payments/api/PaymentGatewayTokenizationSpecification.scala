@@ -3,7 +3,6 @@ package typings.googlepay.google.payments.api
 import typings.googlepay.googlepayStrings.PAYMENT_GATEWAY
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,26 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * These parameters will be used to tokenize/transmit the
   * payment method returned to you in a format you can charge or reference.
   */
-@js.native
-trait PaymentGatewayTokenizationSpecification extends PaymentMethodTokenizationSpecification {
+trait PaymentGatewayTokenizationSpecification
+  extends StObject
+     with PaymentMethodTokenizationSpecification {
   
   /**
     * Specific parameters used for payment gateway tokenization.
     */
-  var parameters: PaymentGatewayTokenizationParameters = js.native
+  var parameters: PaymentGatewayTokenizationParameters
   
   /**
     * The type of payment method tokenization to apply to the selected
     * payment method.
     */
-  var `type`: PAYMENT_GATEWAY = js.native
+  var `type`: PAYMENT_GATEWAY
 }
 object PaymentGatewayTokenizationSpecification {
   
   @scala.inline
-  def apply(parameters: PaymentGatewayTokenizationParameters, `type`: PAYMENT_GATEWAY): PaymentGatewayTokenizationSpecification = {
+  def apply(parameters: PaymentGatewayTokenizationParameters): PaymentGatewayTokenizationSpecification = {
     val __obj = js.Dynamic.literal(parameters = parameters.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("PAYMENT_GATEWAY")
     __obj.asInstanceOf[PaymentGatewayTokenizationSpecification]
   }
   

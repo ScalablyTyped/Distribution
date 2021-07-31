@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -42,16 +41,15 @@ object mod {
   @js.native
   val Face: ComponentClass[FaceProps, ComponentState] = js.native
   
-  @js.native
   trait BackProps extends StObject {
     
-    var chilren: js.Array[Element] = js.native
+    var chilren: js.Array[Element]
     
-    var flipHorizontal: Boolean = js.native
+    var flipHorizontal: Boolean
     
-    var flipVertical: Boolean = js.native
+    var flipVertical: Boolean
     
-    var perspective: Double = js.native
+    var perspective: Double
   }
   object BackProps {
     
@@ -81,10 +79,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FaceProps extends StObject {
     
-    var chilren: js.Array[Element] = js.native
+    var chilren: js.Array[Element]
   }
   object FaceProps {
     
@@ -107,32 +104,31 @@ object mod {
   
   type FlipCard = Component[FlipCardProps, js.Object, js.Any]
   
-  @js.native
   trait FlipCardProps extends StObject {
     
-    var alignHeight: js.UndefOr[Boolean] = js.native
+    var alignHeight: js.UndefOr[Boolean] = js.undefined
     
-    var alignWidth: js.UndefOr[Boolean] = js.native
+    var alignWidth: js.UndefOr[Boolean] = js.undefined
     
-    var clickable: js.UndefOr[Boolean] = js.native
+    var clickable: js.UndefOr[Boolean] = js.undefined
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var flipHorizontal: js.UndefOr[Boolean] = js.native
+    var flipHorizontal: js.UndefOr[Boolean] = js.undefined
     
-    var flipVertical: js.UndefOr[Boolean] = js.native
+    var flipVertical: js.UndefOr[Boolean] = js.undefined
     
-    var friction: js.UndefOr[Double] = js.native
+    var friction: js.UndefOr[Double] = js.undefined
     
-    var onFlipEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFlipEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onFlipStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onFlipStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var perspective: js.UndefOr[Double] = js.native
+    var perspective: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var useNativeDriver: js.UndefOr[Boolean] = js.native
+    var useNativeDriver: js.UndefOr[Boolean] = js.undefined
   }
   object FlipCardProps {
     

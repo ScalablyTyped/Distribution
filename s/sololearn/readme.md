@@ -4,21 +4,18 @@
 Typings are for version 2.6.1
 
 ## Library description:
-Get SoloLearn data easily
+`sololearn` is now deprecated, and should **NOT** under any circumstances be used. [SoloLearn](https://www.sololearn.com) are updating their website, so this package will not work anymore, and will probably just throw loads of errors. I am very sorry, but
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | sololearn |
-| Keywords           | sololearn, data |
-| # releases         | 21 |
+| Keywords           | - |
+| # releases         | 32 |
 | # dependents       | 0 |
-| # downloads        | 1277 |
+| # downloads        | 2458 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/sololearnjs/sololearn#readme)
-- [Bugs](https://github.com/sololearnjs/sololearn/issues)
-- [Repository](https://github.com/sololearnjs/sololearn)
 - [Npm](https://www.npmjs.com/package/sololearn)
     
 

@@ -4,46 +4,88 @@ import typings.materializeCss.anon.PartialMaterialboxOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("materialize-css", "Materialbox")
 @js.native
 class Materialbox ()
-  extends typings.materializeCss.M.Materialbox
+  extends StObject
+     with typings.materializeCss.M.Materialbox {
+  
+  /**
+    * Caption if specified
+    */
+  /* CompleteClass */
+  var caption: String = js.native
+  
+  /**
+    * Close materialbox
+    */
+  /* CompleteClass */
+  override def close(): Unit = js.native
+  
+  /**
+    * If the materialbox is no longer being animated
+    */
+  /* CompleteClass */
+  var doneAnimating: Boolean = js.native
+  
+  /**
+    * Open materialbox
+    */
+  /* CompleteClass */
+  override def open(): Unit = js.native
+  
+  /**
+    * Original height of image
+    */
+  /* CompleteClass */
+  var originalHeight: Double = js.native
+  
+  /**
+    * Original width of image
+    */
+  /* CompleteClass */
+  var originalWidth: Double = js.native
+  
+  /**
+    * If the materialbox overlay is showing
+    */
+  /* CompleteClass */
+  var overlayActive: Boolean = js.native
+}
 object Materialbox {
+  
+  @JSImport("materialize-css", "Materialbox")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Get Instance
     */
   /* static member */
-  @JSImport("materialize-css", "Materialbox.getInstance")
-  @js.native
-  def getInstance(elem: Element): typings.materializeCss.M.Materialbox = js.native
+  @scala.inline
+  def getInstance(elem: Element): typings.materializeCss.M.Materialbox = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(elem.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Materialbox]
   
   /**
     * Init Materialboxes
     */
   /* static member */
-  @JSImport("materialize-css", "Materialbox.init")
-  @js.native
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any
-  ): js.Array[typings.materializeCss.M.Materialbox] = js.native
-  @JSImport("materialize-css", "Materialbox.init")
-  @js.native
+  ): js.Array[typings.materializeCss.M.Materialbox] = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.materializeCss.M.Materialbox]]
+  @scala.inline
   def init(
     els: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify MElements */ js.Any,
     options: PartialMaterialboxOptions
-  ): js.Array[typings.materializeCss.M.Materialbox] = js.native
+  ): js.Array[typings.materializeCss.M.Materialbox] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.materializeCss.M.Materialbox]]
   /**
     * Init Materialbox
     */
   /* static member */
-  @JSImport("materialize-css", "Materialbox.init")
-  @js.native
-  def init(els: Element): typings.materializeCss.M.Materialbox = js.native
-  @JSImport("materialize-css", "Materialbox.init")
-  @js.native
-  def init(els: Element, options: PartialMaterialboxOptions): typings.materializeCss.M.Materialbox = js.native
+  @scala.inline
+  def init(els: Element): typings.materializeCss.M.Materialbox = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any]).asInstanceOf[typings.materializeCss.M.Materialbox]
+  @scala.inline
+  def init(els: Element, options: PartialMaterialboxOptions): typings.materializeCss.M.Materialbox = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(els.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materializeCss.M.Materialbox]
 }

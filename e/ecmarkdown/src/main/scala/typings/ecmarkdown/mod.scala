@@ -4,7 +4,6 @@ import typings.ecmarkdown.nodeTypesMod.Node
 import typings.ecmarkdown.visitorMod.Observer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -49,7 +48,6 @@ object mod {
     x: /* import warning: ResolveTypeQueries.newMembers rewritten Couldn't resolve typeof Parser.parseFragment */ js.Any
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseFragment")(x.asInstanceOf[js.Any])
   
-  @JSImport("ecmarkdown/dist/ecmarkdown", "visit")
-  @js.native
-  def visit(node: Node, observer: Observer): Unit = js.native
+  @scala.inline
+  def visit(node: Node, observer: Observer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visit")(node.asInstanceOf[js.Any], observer.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

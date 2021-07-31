@@ -2,47 +2,45 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
-  var comment: String = js.native
+  var comment: String
   
-  var content: String = js.native
+  var content: String
   
-  var contentLeft: String = js.native
+  var contentLeft: String
   
-  var description: String = js.native
+  var description: String
   
-  var descriptionUnderInput: String = js.native
+  var descriptionUnderInput: String
   
-  var flowRoot: String = js.native
+  var flowRoot: String
   
-  var formGroup: String = js.native
+  var formGroup: String
   
-  var hasError: String = js.native
+  var hasError: String
   
-  var header: String = js.native
+  var header: String
   
-  var headerLeft: String = js.native
+  var headerLeft: String
   
-  var indent: Double = js.native
+  var indent: Double
   
-  var mainRoot: String = js.native
+  var mainRoot: String
   
-  var number: String = js.native
+  var number: String
   
-  var required: String = js.native
+  var required: String
   
-  var requiredText: String = js.native
+  var requiredText: String
   
-  var title: String = js.native
+  var title: String
   
-  var titleLeftRoot: String = js.native
+  var titleLeftRoot: String
   
-  var titleRequired: String = js.native
+  var titleRequired: String
 }
 object Content {
   

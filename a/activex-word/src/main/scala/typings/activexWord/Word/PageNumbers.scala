@@ -2,16 +2,15 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PageNumbers extends StObject {
   
   def Add(): PageNumber = js.native
-  def Add(PageNumberAlignment: js.UndefOr[scala.Nothing], FirstPage: js.Any): PageNumber = js.native
   def Add(PageNumberAlignment: js.Any): PageNumber = js.native
   def Add(PageNumberAlignment: js.Any, FirstPage: js.Any): PageNumber = js.native
+  def Add(PageNumberAlignment: Unit, FirstPage: js.Any): PageNumber = js.native
   
   val Application: typings.activexWord.Word.Application = js.native
   

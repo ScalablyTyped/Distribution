@@ -2,7 +2,6 @@ package typings.three
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheMod {
@@ -13,13 +12,11 @@ object cacheMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("three/src/loaders/Cache", "Cache.add")
-    @js.native
-    def add(key: String, file: js.Any): Unit = js.native
+    @scala.inline
+    def add(key: String, file: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(key.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("three/src/loaders/Cache", "Cache.clear")
-    @js.native
-    def clear(): Unit = js.native
+    @scala.inline
+    def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
     
     @JSImport("three/src/loaders/Cache", "Cache.enabled")
     @js.native
@@ -33,12 +30,10 @@ object cacheMod {
     @scala.inline
     def files_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("files")(x.asInstanceOf[js.Any])
     
-    @JSImport("three/src/loaders/Cache", "Cache.get")
-    @js.native
-    def get(key: String): js.Any = js.native
+    @scala.inline
+    def get(key: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("three/src/loaders/Cache", "Cache.remove")
-    @js.native
-    def remove(key: String): Unit = js.native
+    @scala.inline
+    def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
 }

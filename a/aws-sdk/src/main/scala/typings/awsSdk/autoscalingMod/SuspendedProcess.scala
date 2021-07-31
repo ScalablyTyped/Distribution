@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuspendedProcess extends StObject {
   
   /**
     * The name of the suspended process.
     */
-  var ProcessName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var ProcessName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The reason that the process was suspended.
     */
-  var SuspensionReason: js.UndefOr[XmlStringMaxLen255] = js.native
+  var SuspensionReason: js.UndefOr[XmlStringMaxLen255] = js.undefined
 }
 object SuspendedProcess {
   

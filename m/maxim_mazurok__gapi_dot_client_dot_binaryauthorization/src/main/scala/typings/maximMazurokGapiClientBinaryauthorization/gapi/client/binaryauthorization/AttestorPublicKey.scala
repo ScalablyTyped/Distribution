@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttestorPublicKey extends StObject {
   
   /**
@@ -13,22 +11,22 @@ trait AttestorPublicKey extends StObject {
     * `id` should be left blank. The BinAuthz API handlers will calculate the ID and fill it in automatically. BinAuthz computes this ID as the OpenPGP RFC4880 V4 fingerprint, represented
     * as upper-case hex. If `id` is provided by the caller, it will be overwritten by the API-calculated ID.
     */
-  var asciiArmoredPgpPublicKey: js.UndefOr[String] = js.native
+  var asciiArmoredPgpPublicKey: js.UndefOr[String] = js.undefined
   
   /** Optional. A descriptive comment. This field may be updated. */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of this public key. Signatures verified by BinAuthz must include the ID of the public key that can be used to verify them, and that ID must match the contents of this field
     * exactly. Additional restrictions on this field can be imposed based on which public key type is encapsulated. See the documentation on `public_key` cases below for details.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A raw PKIX SubjectPublicKeyInfo format public key. NOTE: `id` may be explicitly provided by the caller when using this type of public key, but it MUST be a valid RFC3986 URI. If
     * `id` is left blank, a default one will be computed based on the digest of the DER encoding of the public key.
     */
-  var pkixPublicKey: js.UndefOr[PkixPublicKey] = js.native
+  var pkixPublicKey: js.UndefOr[PkixPublicKey] = js.undefined
 }
 object AttestorPublicKey {
   

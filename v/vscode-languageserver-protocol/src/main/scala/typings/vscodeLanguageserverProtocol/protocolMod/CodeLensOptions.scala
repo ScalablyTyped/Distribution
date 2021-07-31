@@ -2,16 +2,16 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CodeLensOptions extends WorkDoneProgressOptions {
+trait CodeLensOptions
+  extends StObject
+     with WorkDoneProgressOptions {
   
   /**
     * Code lens has a resolve provider as well.
     */
-  var resolveProvider: js.UndefOr[Boolean] = js.native
+  var resolveProvider: js.UndefOr[Boolean] = js.undefined
 }
 object CodeLensOptions {
   

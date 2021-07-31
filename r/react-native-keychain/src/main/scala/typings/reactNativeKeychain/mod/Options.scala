@@ -2,29 +2,27 @@ package typings.reactNativeKeychain.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var accessControl: js.UndefOr[ACCESS_CONTROL] = js.native
+  var accessControl: js.UndefOr[ACCESS_CONTROL] = js.undefined
   
-  var accessGroup: js.UndefOr[String] = js.native
+  var accessGroup: js.UndefOr[String] = js.undefined
   
-  var accessible: js.UndefOr[ACCESSIBLE] = js.native
+  var accessible: js.UndefOr[ACCESSIBLE] = js.undefined
   
-  var authenticationPrompt: js.UndefOr[String | AuthenticationPrompt] = js.native
+  var authenticationPrompt: js.UndefOr[String | AuthenticationPrompt] = js.undefined
   
-  var authenticationType: js.UndefOr[AUTHENTICATION_TYPE] = js.native
+  var authenticationType: js.UndefOr[AUTHENTICATION_TYPE] = js.undefined
   
-  var rules: js.UndefOr[SECURITY_RULES] = js.native
+  var rules: js.UndefOr[SECURITY_RULES] = js.undefined
   
-  var securityLevel: js.UndefOr[SECURITY_LEVEL] = js.native
+  var securityLevel: js.UndefOr[SECURITY_LEVEL] = js.undefined
   
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
-  var storage: js.UndefOr[STORAGE_TYPE] = js.native
+  var storage: js.UndefOr[STORAGE_TYPE] = js.undefined
 }
 object Options {
   

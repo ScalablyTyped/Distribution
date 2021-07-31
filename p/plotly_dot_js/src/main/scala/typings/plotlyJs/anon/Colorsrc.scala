@@ -6,19 +6,17 @@ import typings.plotlyJs.plotlyJsStrings.radial
 import typings.plotlyJs.plotlyJsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colorsrc extends StObject {
   
-  var color: typings.plotlyJs.mod.Color = js.native
+  var color: typings.plotlyJs.mod.Color
   
-  var colorsrc: js.Any = js.native
+  var colorsrc: js.Any
   
-  var `type`: radial | horizontal | vertical | none = js.native
+  var `type`: radial | horizontal | vertical | none
   
-  var typesrc: js.Any = js.native
+  var typesrc: js.Any
 }
 object Colorsrc {
   

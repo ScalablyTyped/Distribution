@@ -9,33 +9,34 @@ import typings.gcStats.gcStatsStrings.stats
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): GCStatsEventEmitter = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[GCStatsEventEmitter]
+  
   @JSImport("gc-stats", JSImport.Namespace)
   @js.native
-  def apply(): GCStatsEventEmitter = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait GCStatistics extends StObject {
     
-    var after: MemoryStatistics = js.native
+    var after: MemoryStatistics
     
-    var before: MemoryStatistics = js.native
+    var before: MemoryStatistics
     
-    var diff: MemoryStatistics = js.native
+    var diff: MemoryStatistics
     
-    var endTime: Double = js.native
+    var endTime: Double
     
-    var gctype: `1` | `2` | `4` | `8` | `15` = js.native
+    var gctype: `1` | `2` | `4` | `8` | `15`
     
-    var pause: Double = js.native
+    var pause: Double
     
-    var pauseMS: Double = js.native
+    var pauseMS: Double
     
-    var startTime: Double = js.native
+    var startTime: Double
   }
   object GCStatistics {
     
@@ -98,31 +99,30 @@ object mod {
   
   type GCStatsListener = js.Function1[/* stats */ GCStatistics, Unit]
   
-  @js.native
   trait MemoryStatistics extends StObject {
     
-    var heapSizeLimit: Double = js.native
+    var heapSizeLimit: Double
     
-    var mallocedMemory: js.UndefOr[Double] = js.native
+    var mallocedMemory: js.UndefOr[Double] = js.undefined
     
     // became available with node 10+
-    var numberOfDetachedContexts: js.UndefOr[Double] = js.native
+    var numberOfDetachedContexts: js.UndefOr[Double] = js.undefined
     
     // became available with node 7+
-    var numberOfNativeContexts: js.UndefOr[Double] = js.native
+    var numberOfNativeContexts: js.UndefOr[Double] = js.undefined
     
     // became available with node 7+
-    var peakMallocedMemory: js.UndefOr[Double] = js.native
+    var peakMallocedMemory: js.UndefOr[Double] = js.undefined
     
-    var totalAvailableSize: Double = js.native
+    var totalAvailableSize: Double
     
-    var totalHeapExecutableSize: Double = js.native
+    var totalHeapExecutableSize: Double
     
-    var totalHeapSize: Double = js.native
+    var totalHeapSize: Double
     
-    var totalPhysicalSize: Double = js.native
+    var totalPhysicalSize: Double
     
-    var usedHeapSize: Double = js.native
+    var usedHeapSize: Double
   }
   object MemoryStatistics {
     

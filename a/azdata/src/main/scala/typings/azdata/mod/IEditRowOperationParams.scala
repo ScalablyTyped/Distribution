@@ -2,13 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEditRowOperationParams extends IEditSessionOperationParams {
+trait IEditRowOperationParams
+  extends StObject
+     with IEditSessionOperationParams {
   
-  var rowId: Double = js.native
+  var rowId: Double
 }
 object IEditRowOperationParams {
   

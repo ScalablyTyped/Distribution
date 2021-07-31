@@ -2,37 +2,35 @@ package typings.dagre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Class extends StObject {
     
-    var `class`: js.UndefOr[String] = js.native
+    var `class`: js.UndefOr[String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
-    var paddingX: js.UndefOr[Double] = js.native
+    var paddingX: js.UndefOr[Double] = js.undefined
     
-    var paddingY: js.UndefOr[Double] = js.native
+    var paddingY: js.UndefOr[Double] = js.undefined
     
-    var rx: js.UndefOr[Double] = js.native
+    var rx: js.UndefOr[Double] = js.undefined
     
-    var ry: js.UndefOr[Double] = js.native
+    var ry: js.UndefOr[Double] = js.undefined
     
-    var shape: js.UndefOr[String] = js.native
+    var shape: js.UndefOr[String] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Class {
     
@@ -107,14 +105,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Compound extends StObject {
     
-    var compound: js.UndefOr[Boolean] = js.native
+    var compound: js.UndefOr[Boolean] = js.undefined
     
-    var directed: js.UndefOr[Boolean] = js.native
+    var directed: js.UndefOr[Boolean] = js.undefined
     
-    var multigraph: js.UndefOr[Boolean] = js.native
+    var multigraph: js.UndefOr[Boolean] = js.undefined
   }
   object Compound {
     
@@ -147,12 +144,11 @@ object anon {
     }
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

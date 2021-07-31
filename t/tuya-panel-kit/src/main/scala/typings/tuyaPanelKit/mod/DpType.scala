@@ -2,13 +2,12 @@ package typings.tuyaPanelKit.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
   - typings.tuyaPanelKit.tuyaPanelKitStrings.bool
   - typings.tuyaPanelKit.tuyaPanelKitStrings.value
-  - typings.tuyaPanelKit.tuyaPanelKitStrings.enum
+  - typings.tuyaPanelKit.tuyaPanelKitStrings.`enum`
   - typings.tuyaPanelKit.tuyaPanelKitStrings.raw
   - typings.tuyaPanelKit.tuyaPanelKitStrings.string
   - typings.tuyaPanelKit.tuyaPanelKitStrings.bitmap
@@ -23,7 +22,7 @@ object DpType {
   def bool: typings.tuyaPanelKit.tuyaPanelKitStrings.bool = "bool".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.bool]
   
   @scala.inline
-  def enum: typings.tuyaPanelKit.tuyaPanelKitStrings.enum = "enum".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.enum]
+  def `enum`: typings.tuyaPanelKit.tuyaPanelKitStrings.`enum` = "enum".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.`enum`]
   
   @scala.inline
   def raw: typings.tuyaPanelKit.tuyaPanelKitStrings.raw = "raw".asInstanceOf[typings.tuyaPanelKit.tuyaPanelKitStrings.raw]

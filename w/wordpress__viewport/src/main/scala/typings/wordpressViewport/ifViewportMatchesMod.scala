@@ -3,10 +3,13 @@ package typings.wordpressViewport
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ifViewportMatchesMod {
+  
+  @JSImport("@wordpress/viewport/if-viewport-matches", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Higher-order component creator, creating a new component which renders if
@@ -24,7 +27,6 @@ object ifViewportMatchesMod {
     * ```
     */
   // prettier-ignore
-  @JSImport("@wordpress/viewport/if-viewport-matches", JSImport.Default)
-  @js.native
-  def default(query: String): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
+  @scala.inline
+  def default(query: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(query.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
 }

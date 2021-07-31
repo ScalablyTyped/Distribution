@@ -4,7 +4,6 @@ import typings.std.Iterable
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseMod {
@@ -19,26 +18,24 @@ object promiseMod {
   /* static members */
   object Promise {
     
-    @JSImport("meteor/promise", "Promise.async")
+    @JSImport("meteor/promise", "Promise")
     @js.native
-    def async[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, _] */, This, Args /* <: js.Array[_] */](fn: Fn): js.ThisFunction1[/* this */ This, /* args */ Args, Promise[ReturnType[Fn]]] = js.native
-    @JSImport("meteor/promise", "Promise.async")
-    @js.native
-    def async[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, _] */, This, Args /* <: js.Array[_] */](fn: Fn, allowReuseOfCurrentFiber: Boolean): js.ThisFunction1[/* this */ This, /* args */ Args, Promise[ReturnType[Fn]]] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("meteor/promise", "Promise.asyncApply")
-    @js.native
-    def asyncApply[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, _] */, This, Args /* <: js.Array[_] */](fn: Fn, context: This, args: Args): Promise[ReturnType[Fn]] = js.native
-    @JSImport("meteor/promise", "Promise.asyncApply")
-    @js.native
-    def asyncApply[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, _] */, This, Args /* <: js.Array[_] */](fn: Fn, context: This, args: Args, allowReuseOfCurrentFiber: Boolean): Promise[ReturnType[Fn]] = js.native
+    @scala.inline
+    def async[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, js.Any] */, This, Args /* <: js.Array[js.Any] */](fn: Fn): js.ThisFunction1[/* this */ This, /* args */ Args, Promise[ReturnType[Fn]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(fn.asInstanceOf[js.Any]).asInstanceOf[js.ThisFunction1[/* this */ This, /* args */ Args, Promise[ReturnType[Fn]]]]
+    @scala.inline
+    def async[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, js.Any] */, This, Args /* <: js.Array[js.Any] */](fn: Fn, allowReuseOfCurrentFiber: Boolean): js.ThisFunction1[/* this */ This, /* args */ Args, Promise[ReturnType[Fn]]] = (^.asInstanceOf[js.Dynamic].applyDynamic("async")(fn.asInstanceOf[js.Any], allowReuseOfCurrentFiber.asInstanceOf[js.Any])).asInstanceOf[js.ThisFunction1[/* this */ This, /* args */ Args, Promise[ReturnType[Fn]]]]
     
-    @JSImport("meteor/promise", "Promise.await")
-    @js.native
-    def await[T](value: js.Thenable[T]): T = js.native
+    @scala.inline
+    def asyncApply[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, js.Any] */, This, Args /* <: js.Array[js.Any] */](fn: Fn, context: This, args: Args): Promise[ReturnType[Fn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncApply")(fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Promise[ReturnType[Fn]]]
+    @scala.inline
+    def asyncApply[Fn /* <: js.ThisFunction1[/* this */ This, /* args */ Args, js.Any] */, This, Args /* <: js.Array[js.Any] */](fn: Fn, context: This, args: Args, allowReuseOfCurrentFiber: Boolean): Promise[ReturnType[Fn]] = (^.asInstanceOf[js.Dynamic].applyDynamic("asyncApply")(fn.asInstanceOf[js.Any], context.asInstanceOf[js.Any], args.asInstanceOf[js.Any], allowReuseOfCurrentFiber.asInstanceOf[js.Any])).asInstanceOf[Promise[ReturnType[Fn]]]
     
-    @JSImport("meteor/promise", "Promise.awaitAll")
-    @js.native
-    def awaitAll[T](values: Iterable[T | js.Thenable[T]]): js.Array[T] = js.native
+    @scala.inline
+    def await[T](value: js.Thenable[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("await")(value.asInstanceOf[js.Any]).asInstanceOf[T]
+    
+    @scala.inline
+    def awaitAll[T](values: Iterable[T | js.Thenable[T]]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("awaitAll")(values.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   }
 }

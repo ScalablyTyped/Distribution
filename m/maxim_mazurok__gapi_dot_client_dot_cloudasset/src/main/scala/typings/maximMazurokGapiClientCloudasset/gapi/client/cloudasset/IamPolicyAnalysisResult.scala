@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IamPolicyAnalysisResult extends StObject {
   
   /** The access control lists derived from the iam_binding that match or potentially match resource and access selectors specified in the request. */
-  var accessControlLists: js.UndefOr[js.Array[GoogleCloudAssetV1AccessControlList]] = js.native
+  var accessControlLists: js.UndefOr[js.Array[GoogleCloudAssetV1AccessControlList]] = js.undefined
   
   /** The [full resource name](https://cloud.google.com/asset-inventory/docs/resource-name-format) of the resource to which the iam_binding policy attaches. */
-  var attachedResourceFullName: js.UndefOr[String] = js.native
+  var attachedResourceFullName: js.UndefOr[String] = js.undefined
   
   /** Represents whether all analyses on the iam_binding have successfully finished. */
-  var fullyExplored: js.UndefOr[Boolean] = js.native
+  var fullyExplored: js.UndefOr[Boolean] = js.undefined
   
   /** The Cloud IAM policy binding under analysis. */
-  var iamBinding: js.UndefOr[Binding] = js.native
+  var iamBinding: js.UndefOr[Binding] = js.undefined
   
   /** The identity list derived from members of the iam_binding that match or potentially match identity selector specified in the request. */
-  var identityList: js.UndefOr[GoogleCloudAssetV1IdentityList] = js.native
+  var identityList: js.UndefOr[GoogleCloudAssetV1IdentityList] = js.undefined
 }
 object IamPolicyAnalysisResult {
   

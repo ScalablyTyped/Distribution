@@ -9,39 +9,39 @@ import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to search and replace properties. */
-@js.native
-trait XPropertyReplace extends XReplaceDescriptor {
+trait XPropertyReplace
+  extends StObject
+     with XReplaceDescriptor {
   
   /** @returns the attribute values which are used to replace the found occurrences. */
-  var ReplaceAttributes: SafeArray[PropertyValue] = js.native
+  var ReplaceAttributes: SafeArray[PropertyValue]
   
   /** @returns the attributes to search for. */
-  var SearchAttributes: SafeArray[PropertyValue] = js.native
+  var SearchAttributes: SafeArray[PropertyValue]
   
   /** provides the information if specific property values are searched, or just the existence of the specified properties. */
-  var ValueSearch: Boolean = js.native
+  var ValueSearch: Boolean
   
   /** @returns the attribute values which are used to replace the found occurrences. */
-  def getReplaceAttributes(): SafeArray[PropertyValue] = js.native
+  def getReplaceAttributes(): SafeArray[PropertyValue]
   
   /** @returns the attributes to search for. */
-  def getSearchAttributes(): SafeArray[PropertyValue] = js.native
+  def getSearchAttributes(): SafeArray[PropertyValue]
   
   /** provides the information if specific property values are searched, or just the existence of the specified properties. */
-  def getValueSearch(): Boolean = js.native
+  def getValueSearch(): Boolean
   
   /** sets the properties to replace the found occurrences. */
-  def setReplaceAttributes(aSearchAttribs: SeqEquiv[PropertyValue]): Unit = js.native
+  def setReplaceAttributes(aSearchAttribs: SeqEquiv[PropertyValue]): Unit
   
   /** sets the properties to search for. */
-  def setSearchAttributes(aSearchAttribs: SeqEquiv[PropertyValue]): Unit = js.native
+  def setSearchAttributes(aSearchAttribs: SeqEquiv[PropertyValue]): Unit
   
   /** specifies if specific property values are searched, or just the existence of the specified properties. */
-  def setValueSearch(bValueSearch: Boolean): Unit = js.native
+  def setValueSearch(bValueSearch: Boolean): Unit
 }
 object XPropertyReplace {
   

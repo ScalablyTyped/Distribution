@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "VertexFormat")
@@ -78,24 +77,18 @@ object VertexFormat {
   def POSITION_ONLY_=(x: VertexFormat): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("POSITION_ONLY")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("cesium", "VertexFormat.clone")
-  @js.native
-  def clone_(cartesian: VertexFormat): VertexFormat = js.native
-  @JSImport("cesium", "VertexFormat.clone")
-  @js.native
-  def clone_(cartesian: VertexFormat, result: VertexFormat): VertexFormat = js.native
+  @scala.inline
+  def clone_(cartesian: VertexFormat): VertexFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("clone")(cartesian.asInstanceOf[js.Any]).asInstanceOf[VertexFormat]
+  @scala.inline
+  def clone_(cartesian: VertexFormat, result: VertexFormat): VertexFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("clone")(cartesian.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[VertexFormat]
   
   /* static member */
-  @JSImport("cesium", "VertexFormat.unpack")
-  @js.native
-  def unpack(array: js.Array[Double]): VertexFormat = js.native
-  @JSImport("cesium", "VertexFormat.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: js.UndefOr[scala.Nothing], result: VertexFormat): VertexFormat = js.native
-  @JSImport("cesium", "VertexFormat.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double): VertexFormat = js.native
-  @JSImport("cesium", "VertexFormat.unpack")
-  @js.native
-  def unpack(array: js.Array[Double], startingIndex: Double, result: VertexFormat): VertexFormat = js.native
+  @scala.inline
+  def unpack(array: js.Array[Double]): VertexFormat = ^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any]).asInstanceOf[VertexFormat]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double): VertexFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any])).asInstanceOf[VertexFormat]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Double, result: VertexFormat): VertexFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[VertexFormat]
+  @scala.inline
+  def unpack(array: js.Array[Double], startingIndex: Unit, result: VertexFormat): VertexFormat = (^.asInstanceOf[js.Dynamic].applyDynamic("unpack")(array.asInstanceOf[js.Any], startingIndex.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[VertexFormat]
 }

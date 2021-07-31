@@ -3,17 +3,17 @@ package typings.stripe.mod.accounts
 import typings.stripe.mod.IDataOptionsWithMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IExternalAccountCreationOptions extends IDataOptionsWithMetadata {
+trait IExternalAccountCreationOptions
+  extends StObject
+     with IDataOptionsWithMetadata {
   
   /**
     * Only applicable on accounts (not customers or recipients). If you set this to true (or if this is the first external account being added
     * in this currency) this card will become the default external account for its currency.
     */
-  var default_for_currency: js.UndefOr[Boolean] = js.native
+  var default_for_currency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When adding a card to a customer, the parameter name is source. When
@@ -22,7 +22,7 @@ trait IExternalAccountCreationOptions extends IDataOptionsWithMetadata {
     * dictionary containing a user’s credit card details (with the options shown
     * below). Stripe will automatically validate the card.
     */
-  var external_account: String = js.native
+  var external_account: String
 }
 object IExternalAccountCreationOptions {
   

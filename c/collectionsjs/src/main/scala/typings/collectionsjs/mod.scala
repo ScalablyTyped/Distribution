@@ -2,22 +2,26 @@ package typings.collectionsjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("collectionsjs", JSImport.Default)
   @js.native
-  class default[T] () extends Collection[T] {
+  class default[T] ()
+    extends StObject
+       with Collection[T] {
     def this(items: js.Array[T]) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("collectionsjs", "default.macro")
+    @JSImport("collectionsjs", JSImport.Default)
     @js.native
-    def `macro`(name: String, callback: js.Function2[/* coll */ Collection[_], /* repeated */ js.Any, _]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def `macro`(name: String, callback: js.Function2[/* coll */ Collection[js.Any], /* repeated */ js.Any, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("macro")(name.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @js.native
@@ -99,7 +103,7 @@ object mod {
     
     def unique(): Collection[T] = js.native
     def unique(callback: String): Collection[T] = js.native
-    def unique(callback: js.Function1[/* item */ T, _]): Collection[T] = js.native
+    def unique(callback: js.Function1[/* item */ T, js.Any]): Collection[T] = js.native
     
     def values(): Collection[T] = js.native
     

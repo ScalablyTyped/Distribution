@@ -5,23 +5,21 @@ import typings.sharp.sharpStrings.eor
 import typings.sharp.sharpStrings.or
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoolEnum extends StObject {
   
-  var and: typings.sharp.sharpStrings.and = js.native
+  var and: typings.sharp.sharpStrings.and
   
-  var eor: typings.sharp.sharpStrings.eor = js.native
+  var eor: typings.sharp.sharpStrings.eor
   
-  var or: typings.sharp.sharpStrings.or = js.native
+  var or: typings.sharp.sharpStrings.or
 }
 object BoolEnum {
   
   @scala.inline
-  def apply(and: and, eor: eor, or: or): BoolEnum = {
-    val __obj = js.Dynamic.literal(and = and.asInstanceOf[js.Any], eor = eor.asInstanceOf[js.Any], or = or.asInstanceOf[js.Any])
+  def apply(): BoolEnum = {
+    val __obj = js.Dynamic.literal(and = "and", eor = "eor", or = "or")
     __obj.asInstanceOf[BoolEnum]
   }
   

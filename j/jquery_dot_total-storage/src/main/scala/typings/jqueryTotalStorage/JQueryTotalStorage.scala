@@ -2,7 +2,6 @@ package typings.jqueryTotalStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -29,9 +28,9 @@ trait JQueryTotalStorage extends StObject {
     * @param options Not implemented.
     */
   def apply(key: String): js.Any = js.native
-  def apply(key: String, value: js.UndefOr[scala.Nothing], options: JQueryTotalStorageOptions): js.Any = js.native
   def apply(key: String, value: js.Any): js.Any = js.native
   def apply(key: String, value: js.Any, options: JQueryTotalStorageOptions): js.Any = js.native
+  def apply(key: String, value: Unit, options: JQueryTotalStorageOptions): js.Any = js.native
   
   /**
     * @desc Delete item by key
@@ -42,7 +41,7 @@ trait JQueryTotalStorage extends StObject {
   /**
     * @desc Get all set values
     */
-  def getAll(): js.Array[_] = js.native
+  def getAll(): js.Array[js.Any] = js.native
   
   /**
     * @desc Get a key's value

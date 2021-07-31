@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,23 @@ sealed trait EnumReturnType extends StObject
 object EnumReturnType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumReturnType with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumReturnType & Double] = js.native
   
   @js.native
-  sealed trait RT_AUTO extends EnumReturnType
-  /* -1 */ val RT_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumReturnType.RT_AUTO with Double = js.native
+  sealed trait RT_AUTO
+    extends StObject
+       with EnumReturnType
+  /* -1 */ val RT_AUTO: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumReturnType.RT_AUTO & Double = js.native
   
   @js.native
-  sealed trait RT_BASE64 extends EnumReturnType
-  /* 2 */ val RT_BASE64: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumReturnType.RT_BASE64 with Double = js.native
+  sealed trait RT_BASE64
+    extends StObject
+       with EnumReturnType
+  /* 2 */ val RT_BASE64: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumReturnType.RT_BASE64 & Double = js.native
   
   @js.native
-  sealed trait RT_BINARY extends EnumReturnType
-  /* 1 */ val RT_BINARY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumReturnType.RT_BINARY with Double = js.native
+  sealed trait RT_BINARY
+    extends StObject
+       with EnumReturnType
+  /* 1 */ val RT_BINARY: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumReturnType.RT_BINARY & Double = js.native
 }

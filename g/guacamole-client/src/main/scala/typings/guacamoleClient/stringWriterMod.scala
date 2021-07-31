@@ -4,7 +4,6 @@ import typings.guacamoleClient.outputStreamMod.OutputStream
 import typings.guacamoleClient.statusMod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stringWriterMod {

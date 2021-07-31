@@ -2,7 +2,6 @@ package typings.jsonSchemaTyped.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.jsonSchemaTyped.jsonSchemaTypedStrings.`object`
   - typings.jsonSchemaTyped.jsonSchemaTypedStrings.string
 */
-trait JSONSchemaTypeName extends _JSONSchemaTypeValue
+trait JSONSchemaTypeName
+  extends StObject
+     with _JSONSchemaTypeValue
 object JSONSchemaTypeName {
   
   @scala.inline

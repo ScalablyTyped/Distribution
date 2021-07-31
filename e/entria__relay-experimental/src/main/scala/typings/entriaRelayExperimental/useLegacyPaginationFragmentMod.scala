@@ -11,15 +11,18 @@ import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useLegacyPaginationFragmentMod {
   
-  @JSImport("@entria/relay-experimental/lib/useLegacyPaginationFragment", "useLegacyPaginationFragment")
+  @JSImport("@entria/relay-experimental/lib/useLegacyPaginationFragment", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def useLegacyPaginationFragment[TQuery /* <: OperationType */, TKey /* <: StringDictionary[js.Any] | Null */](fragmentInput: GraphQLTaggedNode, parentFragmentRef: TKey): // tslint:disable-next-line no-unnecessary-generics
-  ReturnTypePaginationFragment[TQuery, TKey, NonNullableFragmentReturn[TKey] with NullableFragmentReturn[TKey]] = js.native
+  ReturnTypePaginationFragment[TQuery, TKey, NonNullableFragmentReturn[TKey] & NullableFragmentReturn[TKey]] = (^.asInstanceOf[js.Dynamic].applyDynamic("useLegacyPaginationFragment")(fragmentInput.asInstanceOf[js.Any], parentFragmentRef.asInstanceOf[js.Any])).asInstanceOf[// tslint:disable-next-line no-unnecessary-generics
+  ReturnTypePaginationFragment[TQuery, TKey, NonNullableFragmentReturn[TKey] & NullableFragmentReturn[TKey]]]
   
   type NonNullableFragmentReturn[TReturn] = ReturnType[NonNullableReturn[TReturn]]
   
@@ -29,24 +32,23 @@ object useLegacyPaginationFragmentMod {
   
   type NullableReturn[TFragmentData] = js.Function1[/* data */ js.UndefOr[TFragmentData | Null], TFragmentData | Null]
   
-  @js.native
   trait ReturnTypePaginationFragment[TQuery /* <: OperationType */, TKey, TFragmentData] extends StObject {
     
-    var data: TFragmentData = js.native
+    var data: TFragmentData
     
-    var hasNext: Boolean = js.native
+    var hasNext: Boolean
     
-    var hasPrevious: Boolean = js.native
+    var hasPrevious: Boolean
     
-    var isLoadingNext: Boolean = js.native
+    var isLoadingNext: Boolean
     
-    var isLoadingPrevious: Boolean = js.native
+    var isLoadingPrevious: Boolean
     
-    var loadNext: LoadMoreFn = js.native
+    var loadNext: LoadMoreFn
     
-    var loadPrevious: LoadMoreFn = js.native
+    var loadPrevious: LoadMoreFn
     
-    var refetch: RefetchFnDynamic[TQuery, TKey, Options] = js.native
+    var refetch: RefetchFnDynamic[TQuery, TKey, Options]
   }
   object ReturnTypePaginationFragment {
     
@@ -66,7 +68,7 @@ object useLegacyPaginationFragmentMod {
     }
     
     @scala.inline
-    implicit class ReturnTypePaginationFragmentMutableBuilder[Self <: ReturnTypePaginationFragment[_, _, _], TQuery /* <: OperationType */, TKey, TFragmentData] (val x: Self with (ReturnTypePaginationFragment[TQuery, TKey, TFragmentData])) extends AnyVal {
+    implicit class ReturnTypePaginationFragmentMutableBuilder[Self <: ReturnTypePaginationFragment[?, ?, ?], TQuery /* <: OperationType */, TKey, TFragmentData] (val x: Self & (ReturnTypePaginationFragment[TQuery, TKey, TFragmentData])) extends AnyVal {
       
       @scala.inline
       def setData(value: TFragmentData): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

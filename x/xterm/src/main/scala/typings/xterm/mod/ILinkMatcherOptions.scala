@@ -3,30 +3,28 @@ package typings.xterm.mod
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILinkMatcherOptions extends StObject {
   
   /**
     * A callback that fires when the mouse leaves a link. Note that this can
     * happen even when tooltipCallback hasn't fired for the link yet.
     */
-  var leaveCallback: js.UndefOr[js.Function0[Unit]] = js.native
+  var leaveCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * The index of the link from the regex.match(text) call. This defaults to 0
     * (for regular expressions without capture groups).
     */
-  var matchIndex: js.UndefOr[Double] = js.native
+  var matchIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The priority of the link matcher, this defines the order in which the
     * link matcher is evaluated relative to others, from highest to lowest. The
     * default value is 0.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * A callback that fires when the mouse hovers over a link for a period of
@@ -39,7 +37,7 @@ trait ILinkMatcherOptions extends StObject {
       /* location */ IViewportRange, 
       Boolean | Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A callback that validates whether to create an individual link, pass
@@ -47,7 +45,7 @@ trait ILinkMatcherOptions extends StObject {
     */
   var validationCallback: js.UndefOr[
     js.Function2[/* uri */ String, /* callback */ js.Function1[/* isValid */ Boolean, Unit], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A callback that fires when the mousedown and click events occur that
@@ -55,7 +53,7 @@ trait ILinkMatcherOptions extends StObject {
     * only activating a link when a certain modifier is held down, if not the
     * mouse event will continue propagation (eg. double click to select word).
     */
-  var willLinkActivate: js.UndefOr[js.Function2[/* event */ MouseEvent, /* uri */ String, Boolean]] = js.native
+  var willLinkActivate: js.UndefOr[js.Function2[/* event */ MouseEvent, /* uri */ String, Boolean]] = js.undefined
 }
 object ILinkMatcherOptions {
   

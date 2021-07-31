@@ -2,26 +2,24 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StocksOffice extends StObject {
   
   /**
     * The cost to upgrade the office, first value being the cursor amount,
     * Second one being, cursor level
     */
-  var cost: (js.Tuple2[Double, Double]) | PseudoNull = js.native
+  var cost: (js.Tuple2[Double, Double]) | PseudoNull
   
   /**
     * The description of the office, in HTML text
     */
-  var desc: String = js.native
+  var desc: String
   
-  var icon: Icon = js.native
+  var icon: Icon
   
-  var name: String = js.native
+  var name: String
 }
 object StocksOffice {
   

@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObj extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var AnimationOptions: js.UndefOr[PlusNativeObjAnimationOptions] = js.native
+  var AnimationOptions: js.UndefOr[PlusNativeObjAnimationOptions] = js.undefined
   
   /**
     * 原生动画窗口样式
@@ -27,7 +25,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var AnimationViewStyles: js.UndefOr[PlusNativeObjAnimationViewStyles] = js.native
+  var AnimationViewStyles: js.UndefOr[PlusNativeObjAnimationViewStyles] = js.undefined
   
   /**
     * 原生图片对象
@@ -35,14 +33,14 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var Bitmap: js.UndefOr[PlusNativeObjBitmap] = js.native
+  var Bitmap: js.UndefOr[PlusNativeObjBitmap] = js.undefined
   
   /**
     * JSON对象，保存图片的参数
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var BitmapSaveOptions: js.UndefOr[PlusNativeObjBitmapSaveOptions] = js.native
+  var BitmapSaveOptions: js.UndefOr[PlusNativeObjBitmapSaveOptions] = js.undefined
   
   /**
     * 原生图片轮播控件对象
@@ -50,7 +48,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ImageSlider: js.UndefOr[PlusNativeObjImageSlider] = js.native
+  var ImageSlider: js.UndefOr[PlusNativeObjImageSlider] = js.undefined
   
   /**
     * 图片轮播控件中图片项配置参数
@@ -58,7 +56,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ImageSliderImageStyles: js.UndefOr[PlusNativeObjImageSliderImageStyles] = js.native
+  var ImageSliderImageStyles: js.UndefOr[PlusNativeObjImageSliderImageStyles] = js.undefined
   
   /**
     * 图片轮播控件样式
@@ -66,7 +64,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ImageSliderStyles: js.UndefOr[PlusNativeObjImageSliderStyles] = js.native
+  var ImageSliderStyles: js.UndefOr[PlusNativeObjImageSliderStyles] = js.undefined
   
   /**
     * 输入框样式
@@ -75,7 +73,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var InputStyles: js.UndefOr[PlusNativeObjInputStyles] = js.native
+  var InputStyles: js.UndefOr[PlusNativeObjInputStyles] = js.undefined
   
   /**
     * 区域信息对象
@@ -83,7 +81,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var Position: js.UndefOr[PlusNativeObjPosition] = js.native
+  var Position: js.UndefOr[PlusNativeObjPosition] = js.undefined
   
   /**
     * 区域信息对象
@@ -91,7 +89,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var Rect: js.UndefOr[PlusNativeObjRect] = js.native
+  var Rect: js.UndefOr[PlusNativeObjRect] = js.undefined
   
   /**
     * 绘制区域样式对象
@@ -99,7 +97,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var RectStyles: js.UndefOr[PlusNativeObjRectStyles] = js.native
+  var RectStyles: js.UndefOr[PlusNativeObjRectStyles] = js.undefined
   
   /**
     * 富文本样式
@@ -107,7 +105,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var RichTextStyles: js.UndefOr[PlusNativeObjRichTextStyles] = js.native
+  var RichTextStyles: js.UndefOr[PlusNativeObjRichTextStyles] = js.undefined
   
   /**
     * 绘制文本样式对象
@@ -115,7 +113,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var TextStyles: js.UndefOr[PlusNativeObjTextStyles] = js.native
+  var TextStyles: js.UndefOr[PlusNativeObjTextStyles] = js.undefined
   
   /**
     * 原生控件对象
@@ -123,7 +121,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var View: js.UndefOr[PlusNativeObjView] = js.native
+  var View: js.UndefOr[PlusNativeObjView] = js.undefined
   
   /**
     * View控件动画参数
@@ -131,7 +129,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ViewAnimationOptions: js.UndefOr[PlusNativeObjViewAnimationOptions] = js.native
+  var ViewAnimationOptions: js.UndefOr[PlusNativeObjViewAnimationOptions] = js.undefined
   
   /**
     * View控件绘制元素参数
@@ -139,14 +137,14 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ViewDrawTagStyles: js.UndefOr[PlusNativeObjViewDrawTagStyles] = js.native
+  var ViewDrawTagStyles: js.UndefOr[PlusNativeObjViewDrawTagStyles] = js.undefined
   
   /**
     * View控件事件
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ViewEvents: js.UndefOr[PlusNativeObjViewEvents] = js.native
+  var ViewEvents: js.UndefOr[PlusNativeObjViewEvents] = js.undefined
   
   /**
     * JSON对象，View控件的系统状态栏区域样式
@@ -154,7 +152,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ViewStatusbarStyles: js.UndefOr[PlusNativeObjViewStatusbarStyles] = js.native
+  var ViewStatusbarStyles: js.UndefOr[PlusNativeObjViewStatusbarStyles] = js.undefined
   
   /**
     * View控件样式
@@ -162,7 +160,7 @@ trait PlusNativeObj extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var ViewStyles: js.UndefOr[PlusNativeObjViewStyles] = js.native
+  var ViewStyles: js.UndefOr[PlusNativeObjViewStyles] = js.undefined
 }
 object PlusNativeObj {
   

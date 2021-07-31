@@ -4,27 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDistributionMod {
   
-  @JSImport("@pulumi/aws/cloudfront/getDistribution", "getDistribution")
+  @JSImport("@pulumi/aws/cloudfront/getDistribution", JSImport.Namespace)
   @js.native
-  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] = js.native
-  @JSImport("@pulumi/aws/cloudfront/getDistribution", "getDistribution")
-  @js.native
-  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDistribution(args: GetDistributionArgs): js.Promise[GetDistributionResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDistribution")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDistributionResult]]
+  @scala.inline
+  def getDistribution(args: GetDistributionArgs, opts: InvokeOptions): js.Promise[GetDistributionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDistribution")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDistributionResult]]
+  
   trait GetDistributionArgs extends StObject {
     
     /**
       * The identifier for the distribution. For example: `EDFDVBD632BHDS5`.
       */
-    val id: String = js.native
+    val id: String
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetDistributionArgs {
     
@@ -48,59 +48,58 @@ object getDistributionMod {
     }
   }
   
-  @js.native
   trait GetDistributionResult extends StObject {
     
     /**
       * The ARN (Amazon Resource Name) for the distribution. For example: arn:aws:cloudfront::123456789012:distribution/EDFDVBD632BHDS5, where 123456789012 is your AWS account ID.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * The domain name corresponding to the distribution. For
       * example: `d604721fxaaqy9.cloudfront.net`.
       */
-    val domainName: String = js.native
+    val domainName: String
     
-    val enabled: Boolean = js.native
+    val enabled: Boolean
     
     /**
       * The current version of the distribution's information. For example:
       * `E2QWRUHAPOMQZL`.
       */
-    val etag: String = js.native
+    val etag: String
     
     /**
       * The CloudFront Route 53 zone ID that can be used to
       * route an [Alias Resource Record Set][7] to. This attribute is simply an
       * alias for the zone ID `Z2FDTNDATAQYW2`.
       */
-    val hostedZoneId: String = js.native
+    val hostedZoneId: String
     
     /**
       * The identifier for the distribution. For example: `EDFDVBD632BHDS5`.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The number of invalidation batches
       * currently in progress.
       */
-    val inProgressValidationBatches: Double = js.native
+    val inProgressValidationBatches: Double
     
     /**
       * The date and time the distribution was last modified.
       */
-    val lastModifiedTime: String = js.native
+    val lastModifiedTime: String
     
     /**
       * The current status of the distribution. `Deployed` if the
       * distribution's information is fully propagated throughout the Amazon
       * CloudFront system.
       */
-    val status: String = js.native
+    val status: String
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetDistributionResult {
     

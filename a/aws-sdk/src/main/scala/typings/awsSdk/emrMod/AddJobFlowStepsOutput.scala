@@ -2,16 +2,14 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddJobFlowStepsOutput extends StObject {
   
   /**
     * The identifiers of the list of steps added to the job flow.
     */
-  var StepIds: js.UndefOr[StepIdsList] = js.native
+  var StepIds: js.UndefOr[StepIdsList] = js.undefined
 }
 object AddJobFlowStepsOutput {
   

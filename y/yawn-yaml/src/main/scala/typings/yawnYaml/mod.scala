@@ -2,27 +2,39 @@ package typings.yawnYaml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("yawn-yaml", JSImport.Default)
   @js.native
-  class default protected () extends YAWN {
+  class default protected ()
+    extends StObject
+       with YAWN {
     def this(content: String) = this()
-  }
-  
-  @js.native
-  trait YAWN extends StObject {
     
-    def getRemark(path: String): String = js.native
+    /* CompleteClass */
+    override def getRemark(path: String): String = js.native
     
+    /* CompleteClass */
     var json: js.Any = js.native
     
-    def setRemark(path: String, remark: String): Boolean = js.native
+    /* CompleteClass */
+    override def setRemark(path: String, remark: String): Boolean = js.native
     
+    /* CompleteClass */
     var yaml: String = js.native
+  }
+  
+  trait YAWN extends StObject {
+    
+    def getRemark(path: String): String
+    
+    var json: js.Any
+    
+    def setRemark(path: String, remark: String): Boolean
+    
+    var yaml: String
   }
   object YAWN {
     

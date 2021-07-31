@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.IssuesGetEventResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersIssuesGetEventEndpoint extends StObject {
   
-  var parameters: IssuesGetEventEndpoint = js.native
+  var parameters: IssuesGetEventEndpoint
   
-  var request: IssuesGetEventRequestOptions = js.native
+  var request: IssuesGetEventRequestOptions
   
-  var response: OctokitResponse[IssuesGetEventResponseData] = js.native
+  var response: OctokitResponse[IssuesGetEventResponseData]
 }
 object ParametersIssuesGetEventEndpoint {
   

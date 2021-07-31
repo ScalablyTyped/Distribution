@@ -3,54 +3,52 @@ package typings.googleapis.servicebrokerV1beta1Mod.servicebrokerV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Plan message describes a Service Plan.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1beta1Plan extends StObject {
   
   /**
     * Specifies whether instances of the service can be bound to applications.
     * If not specified, `Service.bindable` will be presumed.
     */
-  var bindable: js.UndefOr[Boolean] = js.native
+  var bindable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Textual description of the plan. Optional.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the service is free.
     */
-  var free: js.UndefOr[Boolean] = js.native
+  var free: js.UndefOr[Boolean] = js.undefined
   
   /**
     * ID is a globally unique identifier used to uniquely identify the plan.
     * User must make no presumption about the format of this field.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A list of metadata for a service offering. Metadata is an arbitrary JSON
     * object.
     */
-  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var metadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * User friendly name of the plan. The name must be globally unique within
     * GCP project. Note, which is different from (&quot;This must be globally
     * unique within a platform marketplace&quot;).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Schema definitions for service instances and bindings for the plan.
     */
-  var schemas: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var schemas: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1beta1Plan {
   

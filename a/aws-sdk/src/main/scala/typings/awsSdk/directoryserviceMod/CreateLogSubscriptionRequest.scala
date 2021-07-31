@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateLogSubscriptionRequest extends StObject {
   
   /**
     * Identifier of the directory to which you want to subscribe and receive real-time logs to your specified CloudWatch log group.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * The name of the CloudWatch log group where the real-time domain controller logs are forwarded.
     */
-  var LogGroupName: typings.awsSdk.directoryserviceMod.LogGroupName = js.native
+  var LogGroupName: typings.awsSdk.directoryserviceMod.LogGroupName
 }
 object CreateLogSubscriptionRequest {
   

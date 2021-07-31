@@ -2,17 +2,15 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersGoogleProvidedPaymentOptions extends StObject {
   
   /**
     * If true, billing address will be returned.
     * Deprecated: Use facilitation_specification field instead.
     */
-  var billingAddressRequired: js.UndefOr[Boolean] = js.native
+  var billingAddressRequired: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This JSON blob captures the specification for how Google facilitates
@@ -51,13 +49,13 @@ trait GoogleActionsV2OrdersGoogleProvidedPaymentOptions extends StObject {
     *  }
     *  }
     */
-  var facilitationSpecification: js.UndefOr[String] = js.native
+  var facilitationSpecification: js.UndefOr[String] = js.undefined
   
   /**
     * If true, disallow prepaid cards from being used in the transaction.
     * Deprecated: Use facilitation_specification field instead.
     */
-  var prepaidCardDisallowed: js.UndefOr[Boolean] = js.native
+  var prepaidCardDisallowed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The app allows cards from any card network listed here being used in
@@ -65,7 +63,7 @@ trait GoogleActionsV2OrdersGoogleProvidedPaymentOptions extends StObject {
     * By default, Amex, Visa, MC and Discover are supported.
     * Deprecated: Use facilitation_specification field instead.
     */
-  var supportedCardNetworks: js.UndefOr[js.Array[GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks]] = js.native
+  var supportedCardNetworks: js.UndefOr[js.Array[GoogleActionsV2OrdersGoogleProvidedPaymentOptionsSupportedCardNetworks]] = js.undefined
   
   /**
     * Required field for requesting Google provided payment instrument.
@@ -74,7 +72,7 @@ trait GoogleActionsV2OrdersGoogleProvidedPaymentOptions extends StObject {
     * payment gateway.
     * Deprecated: Use facilitation_specification field instead.
     */
-  var tokenizationParameters: js.UndefOr[GoogleActionsV2OrdersPaymentMethodTokenizationParameters] = js.native
+  var tokenizationParameters: js.UndefOr[GoogleActionsV2OrdersPaymentMethodTokenizationParameters] = js.undefined
 }
 object GoogleActionsV2OrdersGoogleProvidedPaymentOptions {
   

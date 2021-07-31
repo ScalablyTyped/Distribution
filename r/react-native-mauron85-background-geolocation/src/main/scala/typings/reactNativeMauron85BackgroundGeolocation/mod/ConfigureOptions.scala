@@ -2,10 +2,8 @@ package typings.reactNativeMauron85BackgroundGeolocation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigureOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default 10000
     */
-  var activitiesInterval: js.UndefOr[Double] = js.native
+  var activitiesInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Activity type.
@@ -32,7 +30,7 @@ trait ConfigureOptions extends StObject {
     * @default "OtherNavigation"
     * @see {@link https://apple.co/2oHofpH|Apple docs}
     */
-  var activityType: js.UndefOr[iOSActivityType] = js.native
+  var activityType: js.UndefOr[iOSActivityType] = js.undefined
   
   /**
     * When enabled, the plugin will emit sounds for life-cycle events of background-geolocation! See debugging sounds table.
@@ -42,7 +40,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default false
     */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Desired accuracy in meters.
@@ -60,7 +58,7 @@ trait ConfigureOptions extends StObject {
     * @example
     * { desiredAccuracy: BackgroundGeolocation.LOW_ACCURACY }
     */
-  var desiredAccuracy: js.UndefOr[AccuracyLevel] = js.native
+  var desiredAccuracy: js.UndefOr[AccuracyLevel] = js.undefined
   
   /**
     * The minimum distance (measured in meters) a device must move horizontally before an update event is generated.
@@ -71,7 +69,7 @@ trait ConfigureOptions extends StObject {
     * @default 500
     * @see {@link https://apple.co/2oHo2CV|Apple docs}
     */
-  var distanceFilter: js.UndefOr[Double] = js.native
+  var distanceFilter: js.UndefOr[Double] = js.undefined
   
   /**
     * Fastest rate in milliseconds at which your app can handle location updates.
@@ -82,7 +80,7 @@ trait ConfigureOptions extends StObject {
     * @default 120000
     * @see {@link https://bit.ly/1x00RUu|Android docs}
     */
-  var fastestInterval: js.UndefOr[Double] = js.native
+  var fastestInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional HTTP headers sent along in HTTP request.
@@ -90,7 +88,7 @@ trait ConfigureOptions extends StObject {
     * Platform: all
     * Provider: all
     */
-  var httpHeaders: js.UndefOr[js.Any] = js.native
+  var httpHeaders: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The minimum time interval between location updates in milliseconds.
@@ -101,7 +99,7 @@ trait ConfigureOptions extends StObject {
     * @default 60000
     * @see {@link https://bit.ly/1x00RUu|Android docs}
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * Set location provider
@@ -116,7 +114,7 @@ trait ConfigureOptions extends StObject {
     * @example
     * { locationProvider: BackgroundGeolocation.RAW_PROVIDER }
     */
-  var locationProvider: js.UndefOr[LocationProvider] = js.native
+  var locationProvider: js.UndefOr[LocationProvider] = js.undefined
   
   /**
     * Limit maximum number of locations stored into db.
@@ -126,7 +124,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default 10000
     */
-  var maxLocations: js.UndefOr[Double] = js.native
+  var maxLocations: js.UndefOr[Double] = js.undefined
   
   /**
     * The accent color (hex triplet) to use for notification.
@@ -135,7 +133,7 @@ trait ConfigureOptions extends StObject {
     * Platform: Android
     * Provider: all
     */
-  var notificationIconColor: js.UndefOr[String] = js.native
+  var notificationIconColor: js.UndefOr[String] = js.undefined
   
   /**
     * The filename of a custom notification icon.
@@ -143,7 +141,7 @@ trait ConfigureOptions extends StObject {
     * Platform: Android
     * Provider: all
     */
-  var notificationIconLarge: js.UndefOr[String] = js.native
+  var notificationIconLarge: js.UndefOr[String] = js.undefined
   
   /**
     * The filename of a custom notification icon.
@@ -151,7 +149,7 @@ trait ConfigureOptions extends StObject {
     * Platform: Android
     * Provider: all
     */
-  var notificationIconSmall: js.UndefOr[String] = js.native
+  var notificationIconSmall: js.UndefOr[String] = js.undefined
   
   /**
     * Custom notification text in the drawer.
@@ -161,7 +159,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default "ENABLED"
     */
-  var notificationText: js.UndefOr[String] = js.native
+  var notificationText: js.UndefOr[String] = js.undefined
   
   /**
     * Custom notification title in the drawer.
@@ -170,7 +168,7 @@ trait ConfigureOptions extends StObject {
     * Provider: all
     * @default "Background tracking"
     */
-  var notificationTitle: js.UndefOr[String] = js.native
+  var notificationTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Enable/disable local notifications when tracking and syncing locations.
@@ -180,7 +178,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default true
     */
-  var notificationsEnabled: js.UndefOr[Boolean] = js.native
+  var notificationsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Pauses location updates when app is paused.
@@ -191,7 +189,7 @@ trait ConfigureOptions extends StObject {
     * @default false
     * @see {@link https://apple.co/2CbjEW2|Apple docs}
     */
-  var pauseLocationUpdates: js.UndefOr[Boolean] = js.native
+  var pauseLocationUpdates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Customization post template.
@@ -199,7 +197,7 @@ trait ConfigureOptions extends StObject {
     * Platform: all
     * Provider: all
     */
-  var postTemplate: js.UndefOr[js.Any] = js.native
+  var postTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Switch to less accurate significant changes and region monitory when in background.
@@ -209,7 +207,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default false
     */
-  var saveBatteryOnBackground: js.UndefOr[Boolean] = js.native
+  var saveBatteryOnBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allow location sync service to run in foreground state.
@@ -220,7 +218,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default false
     */
-  var startForeground: js.UndefOr[Boolean] = js.native
+  var startForeground: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Start background service on device boot.
@@ -230,7 +228,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default false
     */
-  var startOnBoot: js.UndefOr[Boolean] = js.native
+  var startOnBoot: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Stationary radius in meters.
@@ -241,12 +239,12 @@ trait ConfigureOptions extends StObject {
     *
     * @default 50
     */
-  var stationaryRadius: js.UndefOr[Double] = js.native
+  var stationaryRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated Stop location updates, when the STILL activity is detected.
     */
-  var stopOnStillActivity: js.UndefOr[Boolean] = js.native
+  var stopOnStillActivity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable this in order to force a stop() when the application terminated.
@@ -257,7 +255,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default true
     */
-  var stopOnTerminate: js.UndefOr[Boolean] = js.native
+  var stopOnTerminate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how many previously failed locations will be sent to server at once.
@@ -267,7 +265,7 @@ trait ConfigureOptions extends StObject {
     *
     * @default 100
     */
-  var syncThreshold: js.UndefOr[String] = js.native
+  var syncThreshold: js.UndefOr[String] = js.undefined
   
   /**
     * Server url where to send fail to post locations
@@ -275,7 +273,7 @@ trait ConfigureOptions extends StObject {
     * Platform: all
     * Provider: all
     */
-  var syncUrl: js.UndefOr[String] = js.native
+  var syncUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Server url where to send HTTP POST with recorded locations
@@ -283,7 +281,7 @@ trait ConfigureOptions extends StObject {
     * Platform: all
     * Provider: all
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ConfigureOptions {
   

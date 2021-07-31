@@ -4,15 +4,15 @@ import typings.victory.mod.DomainTuple
 import typings.victory.mod._DomainPropType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait X extends _DomainPropType {
+trait X
+  extends StObject
+     with _DomainPropType {
   
-  var x: js.UndefOr[DomainTuple] = js.native
+  var x: js.UndefOr[DomainTuple] = js.undefined
   
-  var y: DomainTuple = js.native
+  var y: DomainTuple
 }
 object X {
   

@@ -2,27 +2,25 @@ package typings.ace.AceAjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextMode extends StObject {
   
-  def autoOutdent(state: js.Any, doc: js.Any, row: js.Any): Unit = js.native
+  def autoOutdent(state: js.Any, doc: js.Any, row: js.Any): Unit
   
-  def checkOutdent(state: js.Any, line: js.Any, input: js.Any): Boolean = js.native
+  def checkOutdent(state: js.Any, line: js.Any, input: js.Any): Boolean
   
-  def createModeDelegates(mapping: js.Any): Unit = js.native
+  def createModeDelegates(mapping: js.Any): Unit
   
-  def createWorker(session: js.Any): js.Any = js.native
+  def createWorker(session: js.Any): js.Any
   
-  def getNextLineIndent(state: js.Any, line: js.Any, tab: js.Any): String = js.native
+  def getNextLineIndent(state: js.Any, line: js.Any, tab: js.Any): String
   
-  def getTokenizer(): js.Any = js.native
+  def getTokenizer(): js.Any
   
-  def toggleCommentLines(state: js.Any, doc: js.Any, startRow: js.Any, endRow: js.Any): Unit = js.native
+  def toggleCommentLines(state: js.Any, doc: js.Any, startRow: js.Any, endRow: js.Any): Unit
   
-  def transformAction(state: js.Any, action: js.Any, editor: js.Any, session: js.Any, param: js.Any): js.Any = js.native
+  def transformAction(state: js.Any, action: js.Any, editor: js.Any, session: js.Any, param: js.Any): js.Any
 }
 object TextMode {
   

@@ -2,20 +2,18 @@ package typings.googleapis.deploymentmanagerAlphaMod.deploymentmanagerAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Service Account used as a credential.
   */
-@js.native
 trait SchemaServiceAccount extends StObject {
   
   /**
     * The IAM service account email address like
     * test@myproject.iam.gserviceaccount.com
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
 }
 object SchemaServiceAccount {
   

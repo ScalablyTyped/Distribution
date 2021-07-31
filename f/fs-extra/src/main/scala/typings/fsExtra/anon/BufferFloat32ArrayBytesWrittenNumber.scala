@@ -3,15 +3,13 @@ package typings.fsExtra.anon
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BufferFloat32ArrayBytesWrittenNumber extends StObject {
   
-  var buffer: Float32Array = js.native
+  var buffer: Float32Array
   
-  var bytesWritten: Double = js.native
+  var bytesWritten: Double
 }
 object BufferFloat32ArrayBytesWrittenNumber {
   

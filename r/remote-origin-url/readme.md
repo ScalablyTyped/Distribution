@@ -10,9 +10,9 @@ Get the git remote origin URL from your local git repository. Remember! A remote
 | ------------------ | :-------------: |
 | Full name          | remote-origin-url |
 | Keywords           | git, git remote, git remote origin, node, node.js, origin, remote, remote origin, remote origin url, url |
-| # releases         | 2 |
-| # dependents       | 44 |
-| # downloads        | 3825129 |
+| # releases         | 0 |
+| # dependents       | 50 |
+| # downloads        | 4280616 |
 | # stars            | 0 |
 
 ## Links

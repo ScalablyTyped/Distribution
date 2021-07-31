@@ -15,7 +15,6 @@ import typings.vueCropperjs.vueCropperjsStrings.low
 import typings.vueCropperjs.vueCropperjsStrings.medium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -28,38 +27,37 @@ object mod extends Shortcut {
   @js.native
   val VueCropperJs: VueCropperJsConstructor = js.native
   
-  @js.native
   trait CanvasData extends StObject {
     
     /**
       * the height of the canvas
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * the offset left of the canvas
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * the natural height of the canvas (read only)
       */
-    var naturalHeight: Double = js.native
+    var naturalHeight: Double
     
     /**
       * the natural width of the canvas (read only)
       */
-    var naturalWidth: Double = js.native
+    var naturalWidth: Double
     
     /**
       * the offset top of the canvas
       */
-    var top: Double = js.native
+    var top: Double
     
     /**
       * the width of the canvas
       */
-    var width: Double = js.native
+    var width: Double
   }
   object CanvasData {
     
@@ -99,18 +97,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ContainerData extends StObject {
     
     /**
       * the current height of the container
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * the current width of the container
       */
-    var width: Double = js.native
+    var width: Double
   }
   object ContainerData {
     
@@ -131,28 +128,27 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CropBoxData extends StObject {
     
     /**
       * the height of the crop box
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * the offset left of the crop box
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * the offset top of the crop box
       */
-    var top: Double = js.native
+    var top: Double
     
     /**
       * the width of the crop box
       */
-    var width: Double = js.native
+    var width: Double
   }
   object CropBoxData {
     
@@ -179,53 +175,52 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CroppedCanvasOptions extends StObject {
     
     /**
       * a color to fill any alpha values in the output canvas, the default value is transparent.
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /**
       *  the destination height of the output canvas.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /**
       * set to change if images are smoothed (true, default) or not (false).
       */
-    var imageSmoothingEnabled: js.UndefOr[Boolean] = js.native
+    var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * set the quality of image smoothing, one of "low" (default), "medium", or "high".
       */
-    var imageSmoothingQuality: js.UndefOr[low | medium | high] = js.native
+    var imageSmoothingQuality: js.UndefOr[low | medium | high] = js.undefined
     
     /**
       * the maximum destination height of the output canvas, the default value is Infinity.
       */
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * the maximum destination width of the output canvas, the default value is Infinity.
       */
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * the minimum destination height of the output canvas, the default value is 0.
       */
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * the minimum destination width of the output canvas, the default value is 0.
       */
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * the destination width of the output canvas.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object CroppedCanvasOptions {
     
@@ -294,43 +289,42 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CropperData extends StObject {
     
     /**
       * the height of the cropped area
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * the rotated degrees of the image
       */
-    var rotate: Double = js.native
+    var rotate: Double
     
     /**
       * the scaling factor to apply on the abscissa of the image
       */
-    var scaleX: Double = js.native
+    var scaleX: Double
     
     /**
       * the scaling factor to apply on the ordinate of the image
       */
-    var scaleY: Double = js.native
+    var scaleY: Double
     
     /**
       * the width of the cropped area
       */
-    var width: Double = js.native
+    var width: Double
     
     /**
       * the offset left of the cropped area
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * the offset top of the cropped area
       */
-    var y: Double = js.native
+    var y: Double
   }
   object CropperData {
     
@@ -392,58 +386,57 @@ object mod extends Shortcut {
     def none: typings.vueCropperjs.vueCropperjsStrings.none = "none".asInstanceOf[typings.vueCropperjs.vueCropperjsStrings.none]
   }
   
-  @js.native
   trait ImageData extends StObject {
     
     /**
       * the aspect ratio of the image
       */
-    var aspectRatio: Double = js.native
+    var aspectRatio: Double
     
     /**
       * the height of the image
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * the offset left of the image
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * the natural height of the image
       */
-    var naturalHeight: Double = js.native
+    var naturalHeight: Double
     
     /**
       * the natural width of the image
       */
-    var naturalWidth: Double = js.native
+    var naturalWidth: Double
     
     /**
       * the rotated degrees of the image if rotated
       */
-    var rotate: Double = js.native
+    var rotate: Double
     
     /**
       * the scaling factor to apply on the abscissa of the image if scaled
       */
-    var scaleX: Double = js.native
+    var scaleX: Double
     
     /**
       * the scaling factor to apply on the ordinate of the image if scaled
       */
-    var scaleY: Double = js.native
+    var scaleY: Double
     
     /**
       * the offset top of the image
       */
-    var top: Double = js.native
+    var top: Double
     
     /**
       * the width of the image
       */
-    var width: Double = js.native
+    var width: Double
   }
   object ImageData {
     
@@ -500,7 +493,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait VueCropperJsConstructor extends VueConstructor[Vue] {
+  trait VueCropperJsConstructor
+    extends StObject
+       with VueConstructor[Vue] {
     
     def data(): Unit = js.native
     
@@ -682,94 +677,93 @@ object mod extends Shortcut {
     def zoomTo(ratio: Double, _originalEvent: Event): Unit = js.native
   }
   
-  @js.native
   trait VueCropperProps extends StObject {
     
-    var alt: String = js.native
+    var alt: String
     
-    var aspectRatio: Double = js.native
+    var aspectRatio: Double
     
-    var autoCrop: Type = js.native
+    var autoCrop: Type
     
-    var autoCropArea: Double = js.native
+    var autoCropArea: Double
     
-    var background: Type = js.native
+    var background: Type
     
-    var center: Type = js.native
+    var center: Type
     
-    var checkCrossOrigin: Type = js.native
+    var checkCrossOrigin: Type
     
-    var checkOrientation: Type = js.native
+    var checkOrientation: Type
     
-    var containerStyle: Record[String, _] = js.native
+    var containerStyle: Record[String, js.Any]
     
-    def crop(): Unit = js.native
+    def crop(): Unit
     
-    var cropBoxMovable: Type = js.native
+    var cropBoxMovable: Type
     
-    var cropBoxResizable: Type = js.native
+    var cropBoxResizable: Type
     
-    def cropend(): Unit = js.native
+    def cropend(): Unit
     
-    def cropmove(): Unit = js.native
+    def cropmove(): Unit
     
-    def cropstart(): Unit = js.native
+    def cropstart(): Unit
     
-    var data: Record[String, _] = js.native
+    var data: Record[String, js.Any]
     
-    var dragMode: String = js.native
+    var dragMode: String
     
-    var guides: Type = js.native
+    var guides: Type
     
-    var highlight: Type = js.native
+    var highlight: Type
     
-    var imgStyle: Record[String, _] = js.native
+    var imgStyle: Record[String, js.Any]
     
-    var initialAspectRatio: Double = js.native
+    var initialAspectRatio: Double
     
-    var minCanvasHeight: Double = js.native
+    var minCanvasHeight: Double
     
-    var minCanvasWidth: Double = js.native
+    var minCanvasWidth: Double
     
-    var minContainerHeight: Double = js.native
+    var minContainerHeight: Double
     
-    var minContainerWidth: Double = js.native
+    var minContainerWidth: Double
     
-    var minCropBoxHeight: Double = js.native
+    var minCropBoxHeight: Double
     
-    var minCropBoxWidth: Double = js.native
+    var minCropBoxWidth: Double
     
-    var modal: Type = js.native
+    var modal: Type
     
-    var movable: Type = js.native
+    var movable: Type
     
-    var preview: previewPropType = js.native
+    var preview: previewPropType
     
-    def ready(): Unit = js.native
+    def ready(): Unit
     
-    var responsive: Type = js.native
+    var responsive: Type
     
-    var restore: Type = js.native
+    var restore: Type
     
-    var rotatable: Type = js.native
+    var rotatable: Type
     
-    var scalable: Type = js.native
+    var scalable: Type
     
-    var src: Default = js.native
+    var src: Default
     
-    var toggleDragModeOnDblclick: Type = js.native
+    var toggleDragModeOnDblclick: Type
     
-    var viewMode: Double = js.native
+    var viewMode: Double
     
-    var wheelZoomRatio: Double = js.native
+    var wheelZoomRatio: Double
     
-    def zoom(): Unit = js.native
+    def zoom(): Unit
     
-    var zoomOnTouch: Type = js.native
+    var zoomOnTouch: Type
     
-    var zoomOnWheel: Type = js.native
+    var zoomOnWheel: Type
     
-    var zoomable: Type = js.native
+    var zoomable: Type
   }
   object VueCropperProps {
     
@@ -783,18 +777,18 @@ object mod extends Shortcut {
       center: Type,
       checkCrossOrigin: Type,
       checkOrientation: Type,
-      containerStyle: Record[String, _],
+      containerStyle: Record[String, js.Any],
       crop: () => Unit,
       cropBoxMovable: Type,
       cropBoxResizable: Type,
       cropend: () => Unit,
       cropmove: () => Unit,
       cropstart: () => Unit,
-      data: Record[String, _],
+      data: Record[String, js.Any],
       dragMode: String,
       guides: Type,
       highlight: Type,
-      imgStyle: Record[String, _],
+      imgStyle: Record[String, js.Any],
       initialAspectRatio: Double,
       minCanvasHeight: Double,
       minCanvasWidth: Double,
@@ -851,7 +845,7 @@ object mod extends Shortcut {
       def setCheckOrientation(value: Type): Self = StObject.set(x, "checkOrientation", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setContainerStyle(value: Record[String, _]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
+      def setContainerStyle(value: Record[String, js.Any]): Self = StObject.set(x, "containerStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCrop(value: () => Unit): Self = StObject.set(x, "crop", js.Any.fromFunction0(value))
@@ -872,7 +866,7 @@ object mod extends Shortcut {
       def setCropstart(value: () => Unit): Self = StObject.set(x, "cropstart", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setData(value: Record[String, _]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: Record[String, js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDragMode(value: String): Self = StObject.set(x, "dragMode", value.asInstanceOf[js.Any])
@@ -884,7 +878,7 @@ object mod extends Shortcut {
       def setHighlight(value: Type): Self = StObject.set(x, "highlight", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setImgStyle(value: Record[String, _]): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
+      def setImgStyle(value: Record[String, js.Any]): Self = StObject.set(x, "imgStyle", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInitialAspectRatio(value: Double): Self = StObject.set(x, "initialAspectRatio", value.asInstanceOf[js.Any])

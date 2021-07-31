@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.glue
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TriggerPredicate extends StObject {
   
   /**
     * A list of the conditions that determine when the trigger will fire. Defined below.
     */
-  var conditions: Input[js.Array[Input[TriggerPredicateCondition]]] = js.native
+  var conditions: Input[js.Array[Input[TriggerPredicateCondition]]]
   
   /**
     * How to handle multiple conditions. Defaults to `AND`. Valid values are `AND` or `ANY`.
     */
-  var logical: js.UndefOr[Input[String]] = js.native
+  var logical: js.UndefOr[Input[String]] = js.undefined
 }
 object TriggerPredicate {
   

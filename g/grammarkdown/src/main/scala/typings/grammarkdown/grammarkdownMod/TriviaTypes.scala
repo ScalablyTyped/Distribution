@@ -2,10 +2,10 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait TriviaTypes
-  extends HtmlTriviaTypes
+  extends StObject
+     with HtmlTriviaTypes
      with CommentTriviaTypes

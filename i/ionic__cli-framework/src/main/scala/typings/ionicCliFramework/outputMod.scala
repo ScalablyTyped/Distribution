@@ -6,7 +6,6 @@ import typings.logUpdate.mod.LogUpdate
 import typings.node.NodeJS.WritableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outputMod {
@@ -14,11 +13,15 @@ object outputMod {
   @JSImport("@ionic/cli-framework/lib/output", "LogUpdateOutputStrategy")
   @js.native
   class LogUpdateOutputStrategy ()
-    extends OutputStrategy
+    extends StObject
+       with OutputStrategy
        with RedrawLine {
     def this(hasStreamColors: LogUpdateOutputStrategyOptions) = this()
     
     val colors: Colors = js.native
+    
+    /* CompleteClass */
+    override def createTaskChain(): TaskChain = js.native
     
     /**
     		Log to `stdout` by overwriting the previous output in the terminal.
@@ -43,22 +46,32 @@ object outputMod {
     /* protected */ def logUpdate(text: String*): Unit = js.native
     @JSName("logUpdate")
     val logUpdate_Original: LogUpdate = js.native
+    
+    /* CompleteClass */
+    override val stream: WritableStream = js.native
   }
   
   @JSImport("@ionic/cli-framework/lib/output", "StreamOutputStrategy")
   @js.native
-  class StreamOutputStrategy protected () extends OutputStrategy {
+  class StreamOutputStrategy protected ()
+    extends StObject
+       with OutputStrategy {
     def this(hasStreamColors: StreamOutputStrategyOptions) = this()
     
     val colors: Colors = js.native
+    
+    /* CompleteClass */
+    override def createTaskChain(): TaskChain = js.native
+    
+    /* CompleteClass */
+    override val stream: WritableStream = js.native
   }
   
-  @js.native
   trait LogUpdateOutputStrategyOptions extends StObject {
     
-    val colors: js.UndefOr[Colors] = js.native
+    val colors: js.UndefOr[Colors] = js.undefined
     
-    val stream: js.UndefOr[WritableStream] = js.native
+    val stream: js.UndefOr[WritableStream] = js.undefined
   }
   object LogUpdateOutputStrategyOptions {
     
@@ -85,12 +98,11 @@ object outputMod {
     }
   }
   
-  @js.native
   trait OutputStrategy extends StObject {
     
-    def createTaskChain(): TaskChain = js.native
+    def createTaskChain(): TaskChain
     
-    val stream: WritableStream = js.native
+    val stream: WritableStream
   }
   object OutputStrategy {
     
@@ -118,12 +130,11 @@ object outputMod {
     def redrawLine(msg: String): Unit = js.native
   }
   
-  @js.native
   trait StreamOutputStrategyOptions extends StObject {
     
-    val colors: js.UndefOr[Colors] = js.native
+    val colors: js.UndefOr[Colors] = js.undefined
     
-    val stream: WritableStream = js.native
+    val stream: WritableStream
   }
   object StreamOutputStrategyOptions {
     

@@ -3,25 +3,23 @@ package typings.reactInstantsearchCore.mod
 import typings.reactInstantsearchCore.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NumericMenuExposed extends StObject {
   
   /** the name of the attribute in the records */
-  var attribute: String = js.native
+  var attribute: String
   
   /** the value of the item selected by default, follow the shape of a string with a pattern of '{start}:{end}'. */
-  var defaultRefinement: js.UndefOr[String] = js.native
+  var defaultRefinement: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** List of options. With a text label, and upper and lower bounds. */
-  var items: js.Array[End] = js.native
+  var items: js.Array[End]
   
   /** (...args: any[]) => any to modify the items being displayed, e.g. for filtering or sorting them. Takes an items as parameter and expects it back in return. */
-  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+  var transformItems: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
 }
 object NumericMenuExposed {
   
@@ -56,7 +54,7 @@ object NumericMenuExposed {
     def setItemsVarargs(value: End*): Self = StObject.set(x, "items", js.Array(value :_*))
     
     @scala.inline
-    def setTransformItems(value: /* repeated */ js.Any => _): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
+    def setTransformItems(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "transformItems", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTransformItemsUndefined: Self = StObject.set(x, "transformItems", js.undefined)

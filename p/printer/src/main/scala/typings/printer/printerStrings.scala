@@ -3,13 +3,14 @@ package typings.printer
 import typings.printer.mod.JobStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object printerStrings {
   
   @js.native
-  sealed trait ABORTED extends JobStatus
+  sealed trait ABORTED
+    extends StObject
+       with JobStatus
   @scala.inline
   def ABORTED: ABORTED = "ABORTED".asInstanceOf[ABORTED]
   
@@ -24,7 +25,9 @@ object printerStrings {
   def CANCEL: CANCEL = "CANCEL".asInstanceOf[CANCEL]
   
   @js.native
-  sealed trait CANCELLED extends JobStatus
+  sealed trait CANCELLED
+    extends StObject
+       with JobStatus
   @scala.inline
   def CANCELLED: CANCELLED = "CANCELLED".asInstanceOf[CANCELLED]
   
@@ -39,7 +42,9 @@ object printerStrings {
   def JPEG: JPEG = "JPEG".asInstanceOf[JPEG]
   
   @js.native
-  sealed trait PAUSED extends JobStatus
+  sealed trait PAUSED
+    extends StObject
+       with JobStatus
   @scala.inline
   def PAUSED: PAUSED = "PAUSED".asInstanceOf[PAUSED]
   
@@ -49,7 +54,9 @@ object printerStrings {
   def PDF: PDF = "PDF".asInstanceOf[PDF]
   
   @js.native
-  sealed trait PENDING extends JobStatus
+  sealed trait PENDING
+    extends StObject
+       with JobStatus
   @scala.inline
   def PENDING: PENDING = "PENDING".asInstanceOf[PENDING]
   
@@ -59,12 +66,16 @@ object printerStrings {
   def POSTSCRIPT: POSTSCRIPT = "POSTSCRIPT".asInstanceOf[POSTSCRIPT]
   
   @js.native
-  sealed trait PRINTED extends JobStatus
+  sealed trait PRINTED
+    extends StObject
+       with JobStatus
   @scala.inline
   def PRINTED: PRINTED = "PRINTED".asInstanceOf[PRINTED]
   
   @js.native
-  sealed trait PRINTING extends JobStatus
+  sealed trait PRINTING
+    extends StObject
+       with JobStatus
   @scala.inline
   def PRINTING: PRINTING = "PRINTING".asInstanceOf[PRINTING]
   

@@ -4,7 +4,6 @@ import typings.primereact.menuItemMod.MenuItem
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object megaMenuMod {
@@ -21,18 +20,17 @@ object megaMenuMod {
     def this(props: MegaMenuProps, context: js.Any) = this()
   }
   
-  @js.native
   trait MegaMenuProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var model: js.UndefOr[js.Array[MenuItem]] = js.native
+    var model: js.UndefOr[js.Array[MenuItem]] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object MegaMenuProps {
     

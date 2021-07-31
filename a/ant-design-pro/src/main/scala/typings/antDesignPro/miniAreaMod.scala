@@ -4,7 +4,6 @@ import typings.antDesignPro.anon.Y
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object miniAreaMod {
@@ -14,20 +13,19 @@ object miniAreaMod {
   class default ()
     extends Component[IMiniAreaProps, js.Any, js.Any]
   
-  @js.native
   trait IAxis extends StObject {
     
-    var grid: js.Any = js.native
+    var grid: js.Any
     
-    var gridAlign: js.Any = js.native
+    var gridAlign: js.Any
     
-    var labels: js.Any = js.native
+    var labels: js.Any
     
-    var line: js.Any = js.native
+    var line: js.Any
     
-    var tickLine: js.Any = js.native
+    var tickLine: js.Any
     
-    var title: js.Any = js.native
+    var title: js.Any
   }
   object IAxis {
     
@@ -60,24 +58,23 @@ object miniAreaMod {
     }
   }
   
-  @js.native
   trait IMiniAreaProps extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var data: js.Array[Y] = js.native
+    var data: js.Array[Y]
     
-    var height: Double = js.native
+    var height: Double
     
-    var line: js.UndefOr[Boolean] = js.native
+    var line: js.UndefOr[Boolean] = js.undefined
     
-    var xAxis: js.UndefOr[IAxis] = js.native
+    var xAxis: js.UndefOr[IAxis] = js.undefined
     
-    var yAxis: js.UndefOr[IAxis] = js.native
+    var yAxis: js.UndefOr[IAxis] = js.undefined
   }
   object IMiniAreaProps {
     

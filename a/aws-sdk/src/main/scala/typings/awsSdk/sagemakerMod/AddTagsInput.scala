@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTagsInput extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the resource that you want to tag.
     */
-  var ResourceArn: typings.awsSdk.sagemakerMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.sagemakerMod.ResourceArn
   
   /**
     * An array of Tag objects. Each tag is a key-value pair. Only the key parameter is required. If you don't specify a value, Amazon SageMaker sets the value to an empty string. 
     */
-  var Tags: TagList = js.native
+  var Tags: TagList
 }
 object AddTagsInput {
   

@@ -3,7 +3,6 @@ package typings.materialUiCore
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shapeMod extends Shortcut {
@@ -12,10 +11,9 @@ object shapeMod extends Shortcut {
   @js.native
   val default: Shape = js.native
   
-  @js.native
   trait Shape extends StObject {
     
-    var borderRadius: Double = js.native
+    var borderRadius: Double
   }
   object Shape {
     
@@ -34,10 +32,9 @@ object shapeMod extends Shortcut {
   }
   
   /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/shape.Shape> */
-  @js.native
   trait ShapeOptions extends StObject {
     
-    var borderRadius: js.UndefOr[Double] = js.native
+    var borderRadius: js.UndefOr[Double] = js.undefined
   }
   object ShapeOptions {
     

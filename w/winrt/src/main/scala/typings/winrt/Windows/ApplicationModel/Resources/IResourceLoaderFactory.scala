@@ -2,13 +2,11 @@ package typings.winrt.Windows.ApplicationModel.Resources
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IResourceLoaderFactory extends StObject {
   
-  def createResourceLoaderByName(name: String): ResourceLoader = js.native
+  def createResourceLoaderByName(name: String): ResourceLoader
 }
 object IResourceLoaderFactory {
   

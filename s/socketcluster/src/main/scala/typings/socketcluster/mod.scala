@@ -15,7 +15,6 @@ import typings.socketcluster.socketclusterStrings.workerStart
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,27 +24,27 @@ object mod {
   class ^ () extends SocketCluster {
     def this(options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any) = this()
   }
+  @JSImport("socketcluster", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("socketcluster", "create")
-  @js.native
-  def create(): SocketCluster = js.native
-  @JSImport("socketcluster", "create")
-  @js.native
+  @scala.inline
+  def create(): SocketCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SocketCluster]
+  @scala.inline
   def create(
     options: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SCServer.SCServerOptions */ js.Any
-  ): SocketCluster = js.native
+  ): SocketCluster = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[SocketCluster]
   
-  @js.native
   trait BrokerExitInfo extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var signal: String = js.native
+    var signal: String
   }
   object BrokerExitInfo {
     
@@ -72,14 +71,13 @@ object mod {
     }
   }
   
-  @js.native
   trait BrokerStartInfo extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var respawn: Boolean = js.native
+    var respawn: Boolean
   }
   object BrokerStartInfo {
     
@@ -121,14 +119,13 @@ object mod {
     def yellow: typings.socketcluster.socketclusterStrings.yellow = "yellow".asInstanceOf[typings.socketcluster.socketclusterStrings.yellow]
   }
   
-  @js.native
   trait KillWorkersOptions extends StObject {
     
     // Shut down the workers immediately without waiting for termination timeout.
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
     
     // Shut down the cluster master (load balancer) as well as all the workers.
-    var killClusterMaster: js.UndefOr[Boolean] = js.native
+    var killClusterMaster: js.UndefOr[Boolean] = js.undefined
   }
   object KillWorkersOptions {
     
@@ -242,16 +239,15 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait WorkerClusterExitInfo extends StObject {
     
-    var childProcess: ChildProcess = js.native
+    var childProcess: ChildProcess
     
-    var code: Double = js.native
+    var code: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var signal: String = js.native
+    var signal: String
   }
   object WorkerClusterExitInfo {
     
@@ -278,12 +274,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WorkerClusterReadyInfo extends StObject {
     
-    var childProcess: ChildProcess = js.native
+    var childProcess: ChildProcess
     
-    var pid: Double = js.native
+    var pid: Double
   }
   object WorkerClusterReadyInfo {
     
@@ -304,12 +299,11 @@ object mod {
     }
   }
   
-  @js.native
   trait WorkerClusterStartInfo extends StObject {
     
-    var childProcess: ChildProcess = js.native
+    var childProcess: ChildProcess
     
-    var pid: Double = js.native
+    var pid: Double
   }
   object WorkerClusterStartInfo {
     
@@ -330,16 +324,15 @@ object mod {
     }
   }
   
-  @js.native
   trait WorkerExitInfo extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var signal: String = js.native
+    var signal: String
   }
   object WorkerExitInfo {
     
@@ -366,14 +359,13 @@ object mod {
     }
   }
   
-  @js.native
   trait WorkerStartInfo extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var respawn: Boolean = js.native
+    var respawn: Boolean
   }
   object WorkerStartInfo {
     

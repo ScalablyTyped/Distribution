@@ -10,9 +10,9 @@ A light-weight module that brings window.fetch to node.js
 | ------------------ | :-------------: |
 | Full name          | node-fetch |
 | Keywords           | fetch, http, promise |
-| # releases         | 15 |
-| # dependents       | 10445 |
-| # downloads        | 692547207 |
+| # releases         | 16 |
+| # dependents       | 12860 |
+| # downloads        | 859724266 |
 | # stars            | 179 |
 
 ## Links

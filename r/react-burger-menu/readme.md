@@ -10,9 +10,9 @@ An off-canvas sidebar component with a collection of effects and styles using CS
 | ------------------ | :-------------: |
 | Full name          | react-burger-menu |
 | Keywords           | component, hamburger, menu, react, react-component |
-| # releases         | 23 |
-| # dependents       | 66 |
-| # downloads        | 1869631 |
+| # releases         | 28 |
+| # dependents       | 67 |
+| # downloads        | 1907246 |
 | # stars            | 13 |
 
 ## Links

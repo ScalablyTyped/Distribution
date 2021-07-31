@@ -2,47 +2,45 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Convert extends StObject {
   
-  var HRatio: Double = js.native
+  var HRatio: Double
   
-  var VRatio: Double = js.native
+  var VRatio: Double
   
-  def convert(d: Double): Double = js.native
+  def convert(d: Double): Double
   
-  def convertX(d: Double): Double = js.native
+  def convertX(d: Double): Double
   
-  def convertY(d: Double): Double = js.native
+  def convertY(d: Double): Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var isIos: Boolean = js.native
+  var isIos: Boolean
   
-  var isIphoneX: Boolean = js.native
+  var isIphoneX: Boolean
   
-  var isSmallH: Boolean = js.native
+  var isSmallH: Boolean
   
-  var isSmallW: Boolean = js.native
+  var isSmallW: Boolean
   
-  var isWeb: Boolean = js.native
+  var isWeb: Boolean
   
-  var statusBarHeight: Double = js.native
+  var statusBarHeight: Double
   
-  var topBarHeight: Double = js.native
+  var topBarHeight: Double
   
-  var viewHeight: Double = js.native
+  var viewHeight: Double
   
-  var viewWidth: Double = js.native
+  var viewWidth: Double
   
-  var width: Double = js.native
+  var width: Double
   
-  var winHeight: Double = js.native
+  var winHeight: Double
   
-  var winWidth: Double = js.native
+  var winWidth: Double
 }
 object Convert {
   

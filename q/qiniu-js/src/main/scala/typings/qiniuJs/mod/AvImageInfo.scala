@@ -2,19 +2,17 @@ package typings.qiniuJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvImageInfo extends StObject {
   
-  var colorModel: String = js.native
+  var colorModel: String
   
-  var format: String = js.native
+  var format: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object AvImageInfo {
   

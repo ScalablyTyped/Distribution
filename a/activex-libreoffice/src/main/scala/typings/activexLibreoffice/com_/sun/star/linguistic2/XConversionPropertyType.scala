@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.ConversionPropertyType
   * @since OOo 2.0
   */
-@js.native
-trait XConversionPropertyType extends XInterface {
+trait XConversionPropertyType
+  extends StObject
+     with XInterface {
   
   /**
     * returns the property type for the specified entry.
@@ -26,7 +26,7 @@ trait XConversionPropertyType extends XInterface {
     * @param aRightText the right text of the dictionary entry.
     * @returns returns the property type for the entry with the specified left text.
     */
-  def getPropertyType(aLeftText: String, aRightText: String): Double = js.native
+  def getPropertyType(aLeftText: String, aRightText: String): Double
   
   /**
     * sets the property type for the specified entry.
@@ -36,7 +36,7 @@ trait XConversionPropertyType extends XInterface {
     * @param aRightText the right text of the dictionary entry.
     * @param nPropertyType the property type to be set for the entry
     */
-  def setPropertyType(aLeftText: String, aRightText: String, nPropertyType: Double): Unit = js.native
+  def setPropertyType(aLeftText: String, aRightText: String, nPropertyType: Double): Unit
 }
 object XConversionPropertyType {
   

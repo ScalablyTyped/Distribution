@@ -4,7 +4,6 @@ import typings.datejs.sugarpak.IDateLiteral
 import typings.datejs.sugarpak.IOrientation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** DateJS Public Static Methods */
@@ -76,9 +75,9 @@ trait DateConstructor extends StObject {
   
   /** Gets the timezone offset if given a culture-specific string which is a valid full or abbreviated timezone name and a boolean indicating whether daylight savings time is in effect. */
   def getTimezoneOffset(): Double = js.native
-  def getTimezoneOffset(timezoneAbbreviation: js.UndefOr[scala.Nothing], isDayLightSavingsTime: Boolean): Double = js.native
   def getTimezoneOffset(timezoneAbbreviation: String): Double = js.native
   def getTimezoneOffset(timezoneAbbreviation: String, isDayLightSavingsTime: Boolean): Double = js.native
+  def getTimezoneOffset(timezoneAbbreviation: Unit, isDayLightSavingsTime: Boolean): Double = js.native
   
   /** Returns true if the given year is a leap year, false otherwise. */
   def isLeapYear(year: Double): Boolean = js.native

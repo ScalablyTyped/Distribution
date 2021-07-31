@@ -2,25 +2,23 @@ package typings.c3.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AxesOptions extends StObject {
   
   /**
     * Switch x and y axis position.
     */
-  var rotated: js.UndefOr[Boolean] = js.native
+  var rotated: js.UndefOr[Boolean] = js.undefined
   
   /** x axis configuration. */
-  var x: js.UndefOr[XAxisConfiguration] = js.native
+  var x: js.UndefOr[XAxisConfiguration] = js.undefined
   
   /** y axis configuration. */
-  var y: js.UndefOr[YAxisConfigurationWithTime] = js.native
+  var y: js.UndefOr[YAxisConfigurationWithTime] = js.undefined
   
   /** y2 axis configuration. */
-  var y2: js.UndefOr[YAxisConfiguration] = js.native
+  var y2: js.UndefOr[YAxisConfiguration] = js.undefined
 }
 object AxesOptions {
   

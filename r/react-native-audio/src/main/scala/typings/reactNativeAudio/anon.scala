@@ -2,19 +2,17 @@ package typings.reactNativeAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AudioFileURL extends StObject {
     
-    var audioFileURL: String = js.native
+    var audioFileURL: String
     
-    var base64: String = js.native
+    var base64: String
     
-    var status: String = js.native
+    var status: String
   }
   object AudioFileURL {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait CurrentTime extends StObject {
     
-    var currentTime: Double = js.native
+    var currentTime: Double
   }
   object CurrentTime {
     

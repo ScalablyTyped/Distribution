@@ -2,21 +2,19 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartRemediationExecutionResponse extends StObject {
   
   /**
     * For resources that have failed to start execution, the API returns a resource key object.
     */
-  var FailedItems: js.UndefOr[ResourceKeys] = js.native
+  var FailedItems: js.UndefOr[ResourceKeys] = js.undefined
   
   /**
     * Returns a failure message. For example, the resource is already compliant.
     */
-  var FailureMessage: js.UndefOr[String] = js.native
+  var FailureMessage: js.UndefOr[String] = js.undefined
 }
 object StartRemediationExecutionResponse {
   

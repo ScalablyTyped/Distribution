@@ -7,7 +7,6 @@ import typings.openui5.sap.ui.core.Title
 import typings.openui5.sap.ui.core.Toolbar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object form {
@@ -22,17 +21,25 @@ object form {
   object SimpleFormLayout extends StObject {
     
     @js.native
-    sealed trait GridLayout extends SimpleFormLayout
+    sealed trait GridLayout
+      extends StObject
+         with SimpleFormLayout
     
     @js.native
-    sealed trait ResponsiveGridLayout extends SimpleFormLayout
+    sealed trait ResponsiveGridLayout
+      extends StObject
+         with SimpleFormLayout
     
     @js.native
-    sealed trait ResponsiveLayout extends SimpleFormLayout
+    sealed trait ResponsiveLayout
+      extends StObject
+         with SimpleFormLayout
   }
   
   @js.native
-  trait Form extends Control {
+  trait Form
+    extends StObject
+       with Control {
     
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -80,7 +87,7 @@ object form {
       * <code>ariaLabelledBy</code>.
       * @since 1.28.0
       */
-    def getAriaLabelledBy(): js.Array[_] = js.native
+    def getAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Gets current value of property <code>editable</code>.Applies a device and theme specific line-height
@@ -153,7 +160,7 @@ object form {
       * @since 1.28.0
       * @returns An array of the removed elements (might be empty)
       */
-    def removeAllAriaLabelledBy(): js.Array[_] = js.native
+    def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Removes all the controls from the aggregation <code>formContainers</code>.Additionally, it
@@ -229,7 +236,9 @@ object form {
   }
   
   @js.native
-  trait FormContainer extends Element {
+  trait FormContainer
+    extends StObject
+       with Element {
     
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -271,7 +280,7 @@ object form {
       * <code>ariaLabelledBy</code>.
       * @since 1.36.0
       */
-    def getAriaLabelledBy(): js.Array[_] = js.native
+    def getAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Gets current value of property <code>expandable</code>.Defines if the <code>FormContainer</code> is
@@ -343,7 +352,7 @@ object form {
       * @since 1.36.0
       * @returns An array of the removed elements (might be empty)
       */
-    def removeAllAriaLabelledBy(): js.Array[_] = js.native
+    def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Removes all the controls from the aggregation <code>formElements</code>.Additionally, it unregisters
@@ -419,7 +428,9 @@ object form {
   }
   
   @js.native
-  trait FormElement extends Element {
+  trait FormElement
+    extends StObject
+       with Element {
     
     /**
       * Adds some field to the aggregation <code>fields</code>.
@@ -526,7 +537,9 @@ object form {
   }
   
   @js.native
-  trait FormLayout extends Control {
+  trait FormLayout
+    extends StObject
+       with Control {
     
     /**
       * Gets current value of property <code>backgroundDesign</code>.Specifies the background color of the
@@ -550,7 +563,9 @@ object form {
   }
   
   @js.native
-  trait GridContainerData extends LayoutData {
+  trait GridContainerData
+    extends StObject
+       with LayoutData {
     
     /**
       * Gets current value of property <code>halfGrid</code>.If set, the container takes half the width of
@@ -575,7 +590,9 @@ object form {
   }
   
   @js.native
-  trait GridElementData extends LayoutData {
+  trait GridElementData
+    extends StObject
+       with LayoutData {
     
     /**
       * Gets current value of property <code>hCells</code>.Number of cells in horizontal direction.If set to
@@ -618,7 +635,9 @@ object form {
   }
   
   @js.native
-  trait GridLayout extends FormLayout {
+  trait GridLayout
+    extends StObject
+       with FormLayout {
     
     /**
       * Gets current value of property <code>singleColumn</code>.If set, the grid renders only one
@@ -644,7 +663,9 @@ object form {
   }
   
   @js.native
-  trait ResponsiveGridLayout extends FormLayout {
+  trait ResponsiveGridLayout
+    extends StObject
+       with FormLayout {
     
     /**
       * Gets current value of property <code>adjustLabelSpan</code>.If set, the usage of
@@ -984,10 +1005,14 @@ object form {
   }
   
   @js.native
-  trait ResponsiveLayout extends FormLayout
+  trait ResponsiveLayout
+    extends StObject
+       with FormLayout
   
   @js.native
-  trait SimpleForm extends Control {
+  trait SimpleForm
+    extends StObject
+       with Control {
     
     /**
       * Adds some ariaLabelledBy into the association <code>ariaLabelledBy</code>.
@@ -1046,7 +1071,7 @@ object form {
       * <code>ariaLabelledBy</code>.
       * @since 1.32.0
       */
-    def getAriaLabelledBy(): js.Array[_] = js.native
+    def getAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Gets current value of property <code>backgroundDesign</code>.Specifies the background color of the
@@ -1325,7 +1350,7 @@ object form {
       * @since 1.32.0
       * @returns An array of the removed elements (might be empty)
       */
-    def removeAllAriaLabelledBy(): js.Array[_] = js.native
+    def removeAllAriaLabelledBy(): js.Array[js.Any] = js.native
     
     /**
       * Removes all the controls from the aggregation <code>content</code>.Additionally, it unregisters them

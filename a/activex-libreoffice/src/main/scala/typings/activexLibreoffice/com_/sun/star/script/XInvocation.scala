@@ -6,27 +6,27 @@ import typings.activexLibreoffice.com_.sun.star.beans.XIntrospectionAccess
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gives access to an object's methods and properties. Container access is available through {@link com.sun.star.container.XIndexContainer} , {@link
   * com.sun.star.container.XNameContainer} and {@link com.sun.star.container.XEnumerationAccess} .
   */
-@js.native
-trait XInvocation extends XInterface {
+trait XInvocation
+  extends StObject
+     with XInterface {
   
   /** returns the introspection from this object or `NULL` if the object does not provide this information. */
-  val Introspection: XIntrospectionAccess = js.native
+  val Introspection: XIntrospectionAccess
   
   /** returns the introspection from this object or `NULL` if the object does not provide this information. */
-  def getIntrospection(): XIntrospectionAccess = js.native
+  def getIntrospection(): XIntrospectionAccess
   
   /**
     * returns the value of the property with the specified name.
     * @param aPropertyName specifies the name of the property.
     */
-  def getValue(aPropertyName: String): js.Any = js.native
+  def getValue(aPropertyName: String): js.Any
   
   /**
     * returns `TRUE` if the method with the specified name exists, else `FALSE` .
@@ -34,7 +34,7 @@ trait XInvocation extends XInterface {
     * This optimizes the calling sequence ( {@link XInvocation.hasMethod()} , {@link XInvocation.invoke()} )!
     * @@param aName        specifies the name of the method.
     */
-  def hasMethod(aName: String): Boolean = js.native
+  def hasMethod(aName: String): Boolean
   
   /**
     * returns `TRUE` if the property with the specified name exists, else `FALSE` . <p>This optimizes the calling sequence
@@ -50,7 +50,7 @@ trait XInvocation extends XInterface {
     *     XInvocation::setValue() )!
     * @@param aName    specifies the name of the property.
     */
-  def hasProperty(aName: String): Boolean = js.native
+  def hasProperty(aName: String): Boolean
   
   /**
     * provides access to methods exposed by an object.
@@ -61,10 +61,10 @@ trait XInvocation extends XInterface {
     */
   def invoke(
     aFunctionName: String,
-    aParams: SeqEquiv[_],
+    aParams: SeqEquiv[js.Any],
     aOutParamIndex: js.Array[SeqEquiv[Double]],
-    aOutParam: js.Array[SeqEquiv[_]]
-  ): js.Any = js.native
+    aOutParam: js.Array[SeqEquiv[js.Any]]
+  ): js.Any
   
   /**
     * sets a value to the property with the specified name.
@@ -72,7 +72,7 @@ trait XInvocation extends XInterface {
     * If the underlying object implements an {@link com.sun.star.container.XNameContainer} , then this method will insert the value if there is no such
     * **aPropertyName** .
     */
-  def setValue(aPropertyName: String, aValue: js.Any): Unit = js.native
+  def setValue(aPropertyName: String, aValue: js.Any): Unit
 }
 object XInvocation {
   
@@ -84,7 +84,7 @@ object XInvocation {
     getValue: String => js.Any,
     hasMethod: String => Boolean,
     hasProperty: String => Boolean,
-    invoke: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any,
+    invoke: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     setValue: (String, js.Any) => Unit
@@ -112,7 +112,9 @@ object XInvocation {
     def setIntrospection(value: XIntrospectionAccess): Self = StObject.set(x, "Introspection", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInvoke(value: (String, SeqEquiv[_], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[_]]) => js.Any): Self = StObject.set(x, "invoke", js.Any.fromFunction4(value))
+    def setInvoke(
+      value: (String, SeqEquiv[js.Any], js.Array[SeqEquiv[Double]], js.Array[SeqEquiv[js.Any]]) => js.Any
+    ): Self = StObject.set(x, "invoke", js.Any.fromFunction4(value))
     
     @scala.inline
     def setSetValue(value: (String, js.Any) => Unit): Self = StObject.set(x, "setValue", js.Any.fromFunction2(value))

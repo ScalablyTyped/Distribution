@@ -16,7 +16,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elliptic", "ec")
@@ -33,12 +32,12 @@ class ec protected () extends StObject {
   def genKeyPair(options: GenKeyPairOptions): KeyPair = js.native
   
   def getKeyRecoveryParam(
-    e: js.UndefOr[scala.Nothing],
+    e: Unit,
     signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
   ): Double = js.native
   def getKeyRecoveryParam(
-    e: js.UndefOr[scala.Nothing],
+    e: Unit,
     signature: SignatureInput,
     Q: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any,
     enc: String
@@ -144,56 +143,48 @@ object ec {
   }
   object KeyPair {
     
-    @JSImport("elliptic", "ec.KeyPair.fromPrivate")
+    @JSImport("elliptic", "ec.KeyPair")
     @js.native
-    def fromPrivate(ec: ec, priv: String): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPrivate")
-    @js.native
-    def fromPrivate(ec: ec, priv: String, enc: String): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPrivate")
-    @js.native
-    def fromPrivate(ec: ec, priv: KeyPair): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPrivate")
-    @js.native
-    def fromPrivate(ec: ec, priv: KeyPair, enc: String): KeyPair = js.native
-    /* static member */
-    @JSImport("elliptic", "ec.KeyPair.fromPrivate")
-    @js.native
-    def fromPrivate(ec: ec, priv: Buffer): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPrivate")
-    @js.native
-    def fromPrivate(ec: ec, priv: Buffer, enc: String): KeyPair = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: String): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: String, enc: String): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: X): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: X, enc: String): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: KeyPair): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: KeyPair, enc: String): KeyPair = js.native
+    @scala.inline
+    def fromPrivate(ec: ec, priv: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPrivate(ec: ec, priv: String, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPrivate(ec: ec, priv: KeyPair): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPrivate(ec: ec, priv: KeyPair, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
     /* static member */
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: Buffer): KeyPair = js.native
-    @JSImport("elliptic", "ec.KeyPair.fromPublic")
-    @js.native
-    def fromPublic(ec: ec, pub: Buffer, enc: String): KeyPair = js.native
+    @scala.inline
+    def fromPrivate(ec: ec, priv: Buffer): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPrivate(ec: ec, priv: Buffer, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPrivate")(ec.asInstanceOf[js.Any], priv.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    
+    @scala.inline
+    def fromPublic(ec: ec, pub: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPublic(ec: ec, pub: String, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPublic(ec: ec, pub: X): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPublic(ec: ec, pub: X, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPublic(ec: ec, pub: KeyPair): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPublic(ec: ec, pub: KeyPair, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    /* static member */
+    @scala.inline
+    def fromPublic(ec: ec, pub: Buffer): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
+    @scala.inline
+    def fromPublic(ec: ec, pub: Buffer, enc: String): KeyPair = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPublic")(ec.asInstanceOf[js.Any], pub.asInstanceOf[js.Any], enc.asInstanceOf[js.Any])).asInstanceOf[KeyPair]
   }
   
   @JSImport("elliptic", "ec.Signature")
   @js.native
-  class Signature protected () extends _SignatureInput {
+  class Signature protected ()
+    extends StObject
+       with _SignatureInput {
     def this(options: SignatureInput) = this()
     def this(options: SignatureInput, enc: String) = this()
     
@@ -207,16 +198,15 @@ object ec {
     def toDER(enc: String): js.Any = js.native
   }
   
-  @js.native
   trait GenKeyPairOptions extends StObject {
     
-    var entropy: js.Any = js.native
+    var entropy: js.Any
     
-    var entropyEnc: js.UndefOr[String] = js.native
+    var entropyEnc: js.UndefOr[String] = js.undefined
     
-    var pers: js.UndefOr[js.Any] = js.native
+    var pers: js.UndefOr[js.Any] = js.undefined
     
-    var persEnc: js.UndefOr[String] = js.native
+    var persEnc: js.UndefOr[String] = js.undefined
   }
   object GenKeyPairOptions {
     
@@ -252,16 +242,15 @@ object ec {
     }
   }
   
-  @js.native
   trait KeyPairOptions extends StObject {
     
-    var priv: js.UndefOr[Buffer] = js.native
+    var priv: js.UndefOr[Buffer] = js.undefined
     
-    var privEnc: js.UndefOr[String] = js.native
+    var privEnc: js.UndefOr[String] = js.undefined
     
-    var pub: js.UndefOr[Buffer] = js.native
+    var pub: js.UndefOr[Buffer] = js.undefined
     
-    var pubEnc: js.UndefOr[String] = js.native
+    var pubEnc: js.UndefOr[String] = js.undefined
   }
   object KeyPairOptions {
     
@@ -300,18 +289,17 @@ object ec {
     }
   }
   
-  @js.native
   trait SignOptions extends StObject {
     
-    var canonical: js.UndefOr[Boolean] = js.native
+    var canonical: js.UndefOr[Boolean] = js.undefined
     
     var k: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var pers: js.UndefOr[js.Any] = js.native
+    var pers: js.UndefOr[js.Any] = js.undefined
     
-    var persEnc: js.UndefOr[String] = js.native
+    var persEnc: js.UndefOr[String] = js.undefined
   }
   object SignOptions {
     
@@ -352,14 +340,15 @@ object ec {
     }
   }
   
-  @js.native
-  trait SignatureOptions extends _SignatureInput {
+  trait SignatureOptions
+    extends StObject
+       with _SignatureInput {
     
-    var r: BNInput = js.native
+    var r: BNInput
     
-    var recoveryParam: js.UndefOr[Double] = js.native
+    var recoveryParam: js.UndefOr[Double] = js.undefined
     
-    var s: BNInput = js.native
+    var s: BNInput
   }
   object SignatureOptions {
     

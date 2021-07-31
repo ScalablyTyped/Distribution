@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginInformation extends StObject {
   
   /**
     * Contains a token that can be used for authentication in API calls instead of using the user name and password.
     */
-  var apiPassword: js.UndefOr[String] = js.native
+  var apiPassword: js.UndefOr[String] = js.undefined
   
   /**
     * The list of accounts that authenticating user is a member of.
     */
-  var loginAccounts: js.UndefOr[js.Array[LoginAccount]] = js.native
+  var loginAccounts: js.UndefOr[js.Array[LoginAccount]] = js.undefined
 }
 object LoginInformation {
   

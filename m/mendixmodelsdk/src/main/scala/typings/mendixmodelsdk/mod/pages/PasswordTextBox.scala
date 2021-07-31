@@ -12,7 +12,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -45,9 +44,8 @@ object PasswordTextBox {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -58,9 +56,8 @@ object PasswordTextBox {
     *  7.7.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInBuildingBlockUnderWidget")
-  @js.native
-  def createInBuildingBlockUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -71,9 +68,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInBuildingBlockUnderWidgets")
-  @js.native
-  def createInBuildingBlockUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInBuildingBlockUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.BuildingBlock): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBuildingBlockUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -84,9 +80,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInDataViewUnderFooterWidget")
-  @js.native
-  def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -97,9 +92,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInDataViewUnderFooterWidgets")
-  @js.native
-  def createInDataViewUnderFooterWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderFooterWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderFooterWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -110,9 +104,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInDataViewUnderWidget")
-  @js.native
-  def createInDataViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -123,9 +116,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInDataViewUnderWidgets")
-  @js.native
-  def createInDataViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInDataViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DataView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -136,9 +128,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInDivContainerUnderWidget")
-  @js.native
-  def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInDivContainerUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -149,9 +140,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInDivContainerUnderWidgets")
-  @js.native
-  def createInDivContainerUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInDivContainerUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.DivContainer): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDivContainerUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -162,9 +152,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInGroupBoxUnderWidget")
-  @js.native
-  def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -175,9 +164,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInGroupBoxUnderWidgets")
-  @js.native
-  def createInGroupBoxUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInGroupBoxUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.GroupBox): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInGroupBoxUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -188,9 +176,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInHeaderUnderLeftWidget")
-  @js.native
-  def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -201,9 +188,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInHeaderUnderLeftWidgets")
-  @js.native
-  def createInHeaderUnderLeftWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderLeftWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderLeftWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -214,9 +200,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInHeaderUnderRightWidget")
-  @js.native
-  def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidget(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -227,9 +212,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInHeaderUnderRightWidgets")
-  @js.native
-  def createInHeaderUnderRightWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInHeaderUnderRightWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Header): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInHeaderUnderRightWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -240,9 +224,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInLayoutCallArgumentUnderWidget")
-  @js.native
-  def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -253,9 +236,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInLayoutCallArgumentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInLayoutCallArgumentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -266,9 +248,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInLayoutGridColumnUnderWidget")
-  @js.native
-  def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -279,9 +260,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInLayoutGridColumnUnderWidgets")
-  @js.native
-  def createInLayoutGridColumnUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInLayoutGridColumnUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.LayoutGridColumn): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutGridColumnUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -292,9 +272,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInLayoutUnderWidget")
-  @js.native
-  def createInLayoutUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInLayoutUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -305,9 +284,8 @@ object PasswordTextBox {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInLayoutUnderWidgets")
-  @js.native
-  def createInLayoutUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInLayoutUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Layout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -318,9 +296,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInListViewTemplateUnderWidget")
-  @js.native
-  def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -331,9 +308,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInListViewTemplateUnderWidgets")
-  @js.native
-  def createInListViewTemplateUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInListViewTemplateUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListViewTemplate): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewTemplateUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -344,9 +320,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInListViewUnderWidget")
-  @js.native
-  def createInListViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInListViewUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -357,9 +332,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInListViewUnderWidgets")
-  @js.native
-  def createInListViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInListViewUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ListView): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInListViewUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -370,9 +344,8 @@ object PasswordTextBox {
     *  7.1.0 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInMasterDetailRegionUnderWidget")
-  @js.native
-  def createInMasterDetailRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.MasterDetailRegion): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInMasterDetailRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.MasterDetailRegion): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInMasterDetailRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -383,9 +356,8 @@ object PasswordTextBox {
     *  7.23.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInNativeLayoutCallArgumentUnderWidgets")
-  @js.native
-  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutCallArgumentUnderWidgets(container: NativeLayoutCallArgument): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutCallArgumentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -396,9 +368,8 @@ object PasswordTextBox {
     *  8.5.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInNativeLayoutContentUnderSidebarWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderSidebarWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderSidebarWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderSidebarWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -409,9 +380,8 @@ object PasswordTextBox {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInNativeLayoutContentUnderWidgets")
-  @js.native
-  def createInNativeLayoutContentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutContentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NativeLayoutContent): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -422,9 +392,8 @@ object PasswordTextBox {
     *  7.22.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInNativeLayoutUnderHeaderWidget")
-  @js.native
-  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutUnderHeaderWidget(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderHeaderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -435,9 +404,8 @@ object PasswordTextBox {
     *  7.21.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInNativeLayoutUnderWidgets")
-  @js.native
-  def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInNativeLayoutUnderWidgets(container: NativeLayout): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNativeLayoutUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -448,9 +416,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInNavigationListItemUnderWidget")
-  @js.native
-  def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -461,9 +428,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInNavigationListItemUnderWidgets")
-  @js.native
-  def createInNavigationListItemUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInNavigationListItemUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.NavigationListItem): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInNavigationListItemUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -474,9 +440,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInScrollContainerRegionUnderWidget")
-  @js.native
-  def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -487,9 +452,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInScrollContainerRegionUnderWidgets")
-  @js.native
-  def createInScrollContainerRegionUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInScrollContainerRegionUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.ScrollContainerRegion): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInScrollContainerRegionUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -500,9 +464,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInSnippetUnderWidget")
-  @js.native
-  def createInSnippetUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInSnippetUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -513,9 +476,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInSnippetUnderWidgets")
-  @js.native
-  def createInSnippetUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInSnippetUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.Snippet): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSnippetUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -526,9 +488,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInSplitPaneUnderFirstWidget")
-  @js.native
-  def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -539,9 +500,8 @@ object PasswordTextBox {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInSplitPaneUnderFirstWidgets")
-  @js.native
-  def createInSplitPaneUnderFirstWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderFirstWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderFirstWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -552,9 +512,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInSplitPaneUnderSecondWidget")
-  @js.native
-  def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidget(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -565,9 +524,8 @@ object PasswordTextBox {
     *  7.15.0 to 7.23.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInSplitPaneUnderSecondWidgets")
-  @js.native
-  def createInSplitPaneUnderSecondWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInSplitPaneUnderSecondWidgets(container: typings.mendixmodelsdk.pagesMod.pages.SplitPane): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInSplitPaneUnderSecondWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -578,9 +536,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInTabPageUnderWidget")
-  @js.native
-  def createInTabPageUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInTabPageUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -591,9 +548,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInTabPageUnderWidgets")
-  @js.native
-  def createInTabPageUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInTabPageUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TabPage): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTabPageUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -604,9 +560,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInTableCellUnderWidget")
-  @js.native
-  def createInTableCellUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInTableCellUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -617,9 +572,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInTableCellUnderWidgets")
-  @js.native
-  def createInTableCellUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInTableCellUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TableCell): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTableCellUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -630,9 +584,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInTemplateGridContentsUnderWidget")
-  @js.native
-  def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidget(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidget")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -643,9 +596,8 @@ object PasswordTextBox {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInTemplateGridContentsUnderWidgets")
-  @js.native
-  def createInTemplateGridContentsUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInTemplateGridContentsUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInTemplateGridContentsUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -656,9 +608,8 @@ object PasswordTextBox {
     *  7.0.2 to 7.14.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInVerticalFlowUnderWidgets")
-  @js.native
-  def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInVerticalFlowUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.VerticalFlow): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInVerticalFlowUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -669,9 +620,8 @@ object PasswordTextBox {
     *  8.0.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInWebLayoutContentUnderWidgets")
-  @js.native
-  def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.WebLayoutContent): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInWebLayoutContentUnderWidgets(container: typings.mendixmodelsdk.pagesMod.pages.WebLayoutContent): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebLayoutContentUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /**
     * Creates and returns a new PasswordTextBox instance in the SDK and on the server.
@@ -682,9 +632,8 @@ object PasswordTextBox {
     *  8.2.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.PasswordTextBox.createInWidgetValueUnderWidgets")
-  @js.native
-  def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = js.native
+  @scala.inline
+  def createInWidgetValueUnderWidgets(container: WidgetValue): typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWidgetValueUnderWidgets")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.PasswordTextBox]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.PasswordTextBox.structureTypeName")

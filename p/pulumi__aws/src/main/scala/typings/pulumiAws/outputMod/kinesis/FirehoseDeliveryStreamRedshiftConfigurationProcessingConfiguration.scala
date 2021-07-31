@@ -2,23 +2,21 @@ package typings.pulumiAws.outputMod.kinesis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration extends StObject {
   
   /**
     * Enables or disables data processing.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of data processors. More details are given below
     */
   var processors: js.UndefOr[
     js.Array[FirehoseDeliveryStreamRedshiftConfigurationProcessingConfigurationProcessor]
-  ] = js.native
+  ] = js.undefined
 }
 object FirehoseDeliveryStreamRedshiftConfigurationProcessingConfiguration {
   

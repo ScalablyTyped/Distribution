@@ -2,36 +2,34 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateObjectRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the Directory in which the object will be created. For more information, see arns.
     */
-  var DirectoryArn: Arn = js.native
+  var DirectoryArn: Arn
   
   /**
     * The name of link that is used to attach this object to a parent.
     */
-  var LinkName: js.UndefOr[typings.awsSdk.clouddirectoryMod.LinkName] = js.native
+  var LinkName: js.UndefOr[typings.awsSdk.clouddirectoryMod.LinkName] = js.undefined
   
   /**
     * The attribute map whose attribute ARN contains the key and attribute value as the map value.
     */
-  var ObjectAttributeList: js.UndefOr[AttributeKeyAndValueList] = js.native
+  var ObjectAttributeList: js.UndefOr[AttributeKeyAndValueList] = js.undefined
   
   /**
     * If specified, the parent reference to which this object will be attached.
     */
-  var ParentReference: js.UndefOr[ObjectReference] = js.native
+  var ParentReference: js.UndefOr[ObjectReference] = js.undefined
   
   /**
     * A list of schema facets to be associated with the object. Do not provide minor version components. See SchemaFacet for details.
     */
-  var SchemaFacets: SchemaFacetList = js.native
+  var SchemaFacets: SchemaFacetList
 }
 object CreateObjectRequest {
   

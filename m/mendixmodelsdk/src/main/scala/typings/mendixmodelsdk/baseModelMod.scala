@@ -609,7 +609,6 @@ import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlElement
 import typings.mendixmodelsdk.xmlschemasMod.xmlschemas.XmlSchemaEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseModelMod {
@@ -833,1697 +832,1696 @@ object baseModelMod {
     def findXmlSchemaByQualifiedName(qname: String): IXmlSchema | Null = js.native
   }
   
-  @js.native
   trait ConcreteModelElements extends StObject {
     
     @JSName("AppServices$AppServiceAction")
-    var AppServices$AppServiceAction: AppServiceAction = js.native
+    var AppServices$AppServiceAction: AppServiceAction
     
     @JSName("AppServices$AppServiceActionParameter")
-    var AppServices$AppServiceActionParameter: AppServiceActionParameter = js.native
+    var AppServices$AppServiceActionParameter: AppServiceActionParameter
     
     @JSName("AppServices$Msd")
-    var AppServices$Msd: Msd = js.native
+    var AppServices$Msd: Msd
     
     @JSName("AppServices$MsdAssociation")
-    var AppServices$MsdAssociation: MsdAssociation = js.native
+    var AppServices$MsdAssociation: MsdAssociation
     
     @JSName("AppServices$MsdAttribute")
-    var AppServices$MsdAttribute: MsdAttribute = js.native
+    var AppServices$MsdAttribute: MsdAttribute
     
     @JSName("AppServices$MsdDomainModel")
-    var AppServices$MsdDomainModel: MsdDomainModel = js.native
+    var AppServices$MsdDomainModel: MsdDomainModel
     
     @JSName("AppServices$MsdEntity")
-    var AppServices$MsdEntity: MsdEntity = js.native
+    var AppServices$MsdEntity: MsdEntity
     
     @JSName("AppServices$MsdEnumeration")
-    var AppServices$MsdEnumeration: MsdEnumeration = js.native
+    var AppServices$MsdEnumeration: MsdEnumeration
     
     @JSName("AppServices$MsdEnumerationContainer")
-    var AppServices$MsdEnumerationContainer: MsdEnumerationContainer = js.native
+    var AppServices$MsdEnumerationContainer: MsdEnumerationContainer
     
     @JSName("AppServices$MsdEnumerationValue")
-    var AppServices$MsdEnumerationValue: MsdEnumerationValue = js.native
+    var AppServices$MsdEnumerationValue: MsdEnumerationValue
     
     @JSName("AppServices$MsdMetadata")
-    var AppServices$MsdMetadata: MsdMetadata = js.native
+    var AppServices$MsdMetadata: MsdMetadata
     
     @JSName("AppServices$MsdMicroflow")
-    var AppServices$MsdMicroflow: MsdMicroflow = js.native
+    var AppServices$MsdMicroflow: MsdMicroflow
     
     @JSName("AppServices$MsdMicroflowParameter")
-    var AppServices$MsdMicroflowParameter: MsdMicroflowParameter = js.native
+    var AppServices$MsdMicroflowParameter: MsdMicroflowParameter
     
     @JSName("AppServices$MsdText")
-    var AppServices$MsdText: MsdText = js.native
+    var AppServices$MsdText: MsdText
     
     @JSName("AppServices$MsdVersion")
-    var AppServices$MsdVersion: MsdVersion = js.native
+    var AppServices$MsdVersion: MsdVersion
     
     @JSName("CodeActions$BasicParameterType")
-    var CodeActions$BasicParameterType: BasicParameterType = js.native
+    var CodeActions$BasicParameterType: BasicParameterType
     
     @JSName("CodeActions$BooleanType")
-    var CodeActions$BooleanType: BooleanType = js.native
+    var CodeActions$BooleanType: BooleanType
     
     @JSName("CodeActions$ConcreteEntityType")
-    var CodeActions$ConcreteEntityType: ConcreteEntityType = js.native
+    var CodeActions$ConcreteEntityType: ConcreteEntityType
     
     @JSName("CodeActions$DateTimeType")
-    var CodeActions$DateTimeType: DateTimeType = js.native
+    var CodeActions$DateTimeType: DateTimeType
     
     @JSName("CodeActions$DecimalType")
-    var CodeActions$DecimalType: DecimalType = js.native
+    var CodeActions$DecimalType: DecimalType
     
     @JSName("CodeActions$EntityTypeParameterType")
-    var CodeActions$EntityTypeParameterType: EntityTypeParameterType = js.native
+    var CodeActions$EntityTypeParameterType: EntityTypeParameterType
     
     @JSName("CodeActions$EnumerationType")
-    var CodeActions$EnumerationType: EnumerationType = js.native
+    var CodeActions$EnumerationType: EnumerationType
     
     @JSName("CodeActions$FloatType")
-    var CodeActions$FloatType: FloatType = js.native
+    var CodeActions$FloatType: FloatType
     
     @JSName("CodeActions$IntegerType")
-    var CodeActions$IntegerType: IntegerType = js.native
+    var CodeActions$IntegerType: IntegerType
     
     @JSName("CodeActions$ListType")
-    var CodeActions$ListType: ListType = js.native
+    var CodeActions$ListType: ListType
     
     @JSName("CodeActions$MicroflowActionInfo")
-    var CodeActions$MicroflowActionInfo: MicroflowActionInfo = js.native
+    var CodeActions$MicroflowActionInfo: MicroflowActionInfo
     
     @JSName("CodeActions$ParameterizedEntityType")
-    var CodeActions$ParameterizedEntityType: ParameterizedEntityType = js.native
+    var CodeActions$ParameterizedEntityType: ParameterizedEntityType
     
     @JSName("CodeActions$StringTemplateParameterType")
-    var CodeActions$StringTemplateParameterType: StringTemplateParameterType = js.native
+    var CodeActions$StringTemplateParameterType: StringTemplateParameterType
     
     @JSName("CodeActions$StringType")
-    var CodeActions$StringType: StringType = js.native
+    var CodeActions$StringType: StringType
     
     @JSName("CodeActions$TypeParameter")
-    var CodeActions$TypeParameter: TypeParameter = js.native
+    var CodeActions$TypeParameter: TypeParameter
     
     @JSName("CodeActions$VoidType")
-    var CodeActions$VoidType: VoidType = js.native
+    var CodeActions$VoidType: VoidType
     
     @JSName("CustomWidgets$CustomWidget")
-    var CustomWidgets$CustomWidget: CustomWidget = js.native
+    var CustomWidgets$CustomWidget: CustomWidget
     
     @JSName("CustomWidgets$CustomWidgetDatabaseSource")
-    var CustomWidgets$CustomWidgetDatabaseSource: CustomWidgetDatabaseSource = js.native
+    var CustomWidgets$CustomWidgetDatabaseSource: CustomWidgetDatabaseSource
     
     @JSName("CustomWidgets$CustomWidgetType")
-    var CustomWidgets$CustomWidgetType: CustomWidgetType = js.native
+    var CustomWidgets$CustomWidgetType: CustomWidgetType
     
     @JSName("CustomWidgets$CustomWidgetXPathSource")
-    var CustomWidgets$CustomWidgetXPathSource: CustomWidgetXPathSource = js.native
+    var CustomWidgets$CustomWidgetXPathSource: CustomWidgetXPathSource
     
     @JSName("CustomWidgets$WidgetEnumerationValue")
-    var CustomWidgets$WidgetEnumerationValue: WidgetEnumerationValue = js.native
+    var CustomWidgets$WidgetEnumerationValue: WidgetEnumerationValue
     
     @JSName("CustomWidgets$WidgetObject")
-    var CustomWidgets$WidgetObject: WidgetObject = js.native
+    var CustomWidgets$WidgetObject: WidgetObject
     
     @JSName("CustomWidgets$WidgetObjectType")
-    var CustomWidgets$WidgetObjectType: WidgetObjectType = js.native
+    var CustomWidgets$WidgetObjectType: WidgetObjectType
     
     @JSName("CustomWidgets$WidgetProperty")
-    var CustomWidgets$WidgetProperty: WidgetProperty = js.native
+    var CustomWidgets$WidgetProperty: WidgetProperty
     
     @JSName("CustomWidgets$WidgetPropertyType")
-    var CustomWidgets$WidgetPropertyType: WidgetPropertyType = js.native
+    var CustomWidgets$WidgetPropertyType: WidgetPropertyType
     
     @JSName("CustomWidgets$WidgetReturnType")
-    var CustomWidgets$WidgetReturnType: WidgetReturnType = js.native
+    var CustomWidgets$WidgetReturnType: WidgetReturnType
     
     @JSName("CustomWidgets$WidgetTranslation")
-    var CustomWidgets$WidgetTranslation: WidgetTranslation = js.native
+    var CustomWidgets$WidgetTranslation: WidgetTranslation
     
     @JSName("CustomWidgets$WidgetValue")
-    var CustomWidgets$WidgetValue: WidgetValue = js.native
+    var CustomWidgets$WidgetValue: WidgetValue
     
     @JSName("CustomWidgets$WidgetValueType")
-    var CustomWidgets$WidgetValueType: WidgetValueType = js.native
+    var CustomWidgets$WidgetValueType: WidgetValueType
     
     @JSName("DataSets$DataSetAccess")
-    var DataSets$DataSetAccess: DataSetAccess = js.native
+    var DataSets$DataSetAccess: DataSetAccess
     
     @JSName("DataSets$DataSetColumn")
-    var DataSets$DataSetColumn: DataSetColumn = js.native
+    var DataSets$DataSetColumn: DataSetColumn
     
     @JSName("DataSets$DataSetConstraintAccess")
-    var DataSets$DataSetConstraintAccess: DataSetConstraintAccess = js.native
+    var DataSets$DataSetConstraintAccess: DataSetConstraintAccess
     
     @JSName("DataSets$DataSetDateTimeConstraint")
-    var DataSets$DataSetDateTimeConstraint: DataSetDateTimeConstraint = js.native
+    var DataSets$DataSetDateTimeConstraint: DataSetDateTimeConstraint
     
     @JSName("DataSets$DataSetModuleRoleAccess")
-    var DataSets$DataSetModuleRoleAccess: DataSetModuleRoleAccess = js.native
+    var DataSets$DataSetModuleRoleAccess: DataSetModuleRoleAccess
     
     @JSName("DataSets$DataSetNumericConstraint")
-    var DataSets$DataSetNumericConstraint: DataSetNumericConstraint = js.native
+    var DataSets$DataSetNumericConstraint: DataSetNumericConstraint
     
     @JSName("DataSets$DataSetObjectConstraint")
-    var DataSets$DataSetObjectConstraint: DataSetObjectConstraint = js.native
+    var DataSets$DataSetObjectConstraint: DataSetObjectConstraint
     
     @JSName("DataSets$DataSetParameter")
-    var DataSets$DataSetParameter: DataSetParameter = js.native
+    var DataSets$DataSetParameter: DataSetParameter
     
     @JSName("DataSets$DataSetParameterAccess")
-    var DataSets$DataSetParameterAccess: DataSetParameterAccess = js.native
+    var DataSets$DataSetParameterAccess: DataSetParameterAccess
     
     @JSName("DataSets$JavaDataSetSource")
-    var DataSets$JavaDataSetSource: JavaDataSetSource = js.native
+    var DataSets$JavaDataSetSource: JavaDataSetSource
     
     @JSName("DataSets$OqlDataSetSource")
-    var DataSets$OqlDataSetSource: OqlDataSetSource = js.native
+    var DataSets$OqlDataSetSource: OqlDataSetSource
     
     @JSName("DataTypes$BinaryType")
-    var DataTypes$BinaryType: BinaryType = js.native
+    var DataTypes$BinaryType: BinaryType
     
     @JSName("DataTypes$BooleanType")
-    var DataTypes$BooleanType: typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType = js.native
+    var DataTypes$BooleanType: typings.mendixmodelsdk.datatypesMod.datatypes.BooleanType
     
     @JSName("DataTypes$DateTimeType")
-    var DataTypes$DateTimeType: typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType = js.native
+    var DataTypes$DateTimeType: typings.mendixmodelsdk.datatypesMod.datatypes.DateTimeType
     
     @JSName("DataTypes$DecimalType")
-    var DataTypes$DecimalType: typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType = js.native
+    var DataTypes$DecimalType: typings.mendixmodelsdk.datatypesMod.datatypes.DecimalType
     
     @JSName("DataTypes$EmptyType")
-    var DataTypes$EmptyType: EmptyType = js.native
+    var DataTypes$EmptyType: EmptyType
     
     @JSName("DataTypes$EnumerationType")
-    var DataTypes$EnumerationType: typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType = js.native
+    var DataTypes$EnumerationType: typings.mendixmodelsdk.datatypesMod.datatypes.EnumerationType
     
     @JSName("DataTypes$FloatType")
-    var DataTypes$FloatType: typings.mendixmodelsdk.datatypesMod.datatypes.FloatType = js.native
+    var DataTypes$FloatType: typings.mendixmodelsdk.datatypesMod.datatypes.FloatType
     
     @JSName("DataTypes$IntegerType")
-    var DataTypes$IntegerType: typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType = js.native
+    var DataTypes$IntegerType: typings.mendixmodelsdk.datatypesMod.datatypes.IntegerType
     
     @JSName("DataTypes$ListType")
-    var DataTypes$ListType: typings.mendixmodelsdk.datatypesMod.datatypes.ListType = js.native
+    var DataTypes$ListType: typings.mendixmodelsdk.datatypesMod.datatypes.ListType
     
     @JSName("DataTypes$ObjectType")
-    var DataTypes$ObjectType: ObjectType = js.native
+    var DataTypes$ObjectType: ObjectType
     
     @JSName("DataTypes$StringType")
-    var DataTypes$StringType: typings.mendixmodelsdk.datatypesMod.datatypes.StringType = js.native
+    var DataTypes$StringType: typings.mendixmodelsdk.datatypesMod.datatypes.StringType
     
     @JSName("DataTypes$UnknownType")
-    var DataTypes$UnknownType: UnknownType = js.native
+    var DataTypes$UnknownType: UnknownType
     
     @JSName("DataTypes$VoidType")
-    var DataTypes$VoidType: typings.mendixmodelsdk.datatypesMod.datatypes.VoidType = js.native
+    var DataTypes$VoidType: typings.mendixmodelsdk.datatypesMod.datatypes.VoidType
     
     @JSName("DocumentTemplates$ConditionSettings")
-    var DocumentTemplates$ConditionSettings: ConditionSettings = js.native
+    var DocumentTemplates$ConditionSettings: ConditionSettings
     
     @JSName("DocumentTemplates$DataGrid")
-    var DocumentTemplates$DataGrid: DataGrid = js.native
+    var DocumentTemplates$DataGrid: DataGrid
     
     @JSName("DocumentTemplates$DataGridCell")
-    var DocumentTemplates$DataGridCell: DataGridCell = js.native
+    var DocumentTemplates$DataGridCell: DataGridCell
     
     @JSName("DocumentTemplates$DataGridColumn")
-    var DocumentTemplates$DataGridColumn: DataGridColumn = js.native
+    var DocumentTemplates$DataGridColumn: DataGridColumn
     
     @JSName("DocumentTemplates$DataView")
-    var DocumentTemplates$DataView: DataView = js.native
+    var DocumentTemplates$DataView: DataView
     
     @JSName("DocumentTemplates$DataViewContents")
-    var DocumentTemplates$DataViewContents: DataViewContents = js.native
+    var DocumentTemplates$DataViewContents: DataViewContents
     
     @JSName("DocumentTemplates$DocumentTemplateParameter")
-    var DocumentTemplates$DocumentTemplateParameter: DocumentTemplateParameter = js.native
+    var DocumentTemplates$DocumentTemplateParameter: DocumentTemplateParameter
     
     @JSName("DocumentTemplates$DynamicImageViewer")
-    var DocumentTemplates$DynamicImageViewer: DynamicImageViewer = js.native
+    var DocumentTemplates$DynamicImageViewer: DynamicImageViewer
     
     @JSName("DocumentTemplates$DynamicLabel")
-    var DocumentTemplates$DynamicLabel: DynamicLabel = js.native
+    var DocumentTemplates$DynamicLabel: DynamicLabel
     
     @JSName("DocumentTemplates$Footer")
-    var DocumentTemplates$Footer: Footer = js.native
+    var DocumentTemplates$Footer: Footer
     
     @JSName("DocumentTemplates$GridSortBar")
-    var DocumentTemplates$GridSortBar: GridSortBar = js.native
+    var DocumentTemplates$GridSortBar: GridSortBar
     
     @JSName("DocumentTemplates$GridSortItem")
-    var DocumentTemplates$GridSortItem: GridSortItem = js.native
+    var DocumentTemplates$GridSortItem: GridSortItem
     
     @JSName("DocumentTemplates$Header")
-    var DocumentTemplates$Header: Header = js.native
+    var DocumentTemplates$Header: Header
     
     @JSName("DocumentTemplates$LineBreak")
-    var DocumentTemplates$LineBreak: LineBreak = js.native
+    var DocumentTemplates$LineBreak: LineBreak
     
     @JSName("DocumentTemplates$PageBreak")
-    var DocumentTemplates$PageBreak: PageBreak = js.native
+    var DocumentTemplates$PageBreak: PageBreak
     
     @JSName("DocumentTemplates$StaticImageViewer")
-    var DocumentTemplates$StaticImageViewer: StaticImageViewer = js.native
+    var DocumentTemplates$StaticImageViewer: StaticImageViewer
     
     @JSName("DocumentTemplates$StaticLabel")
-    var DocumentTemplates$StaticLabel: StaticLabel = js.native
+    var DocumentTemplates$StaticLabel: StaticLabel
     
     @JSName("DocumentTemplates$Style")
-    var DocumentTemplates$Style: Style = js.native
+    var DocumentTemplates$Style: Style
     
     @JSName("DocumentTemplates$Table")
-    var DocumentTemplates$Table: Table = js.native
+    var DocumentTemplates$Table: Table
     
     @JSName("DocumentTemplates$TableCell")
-    var DocumentTemplates$TableCell: TableCell = js.native
+    var DocumentTemplates$TableCell: TableCell
     
     @JSName("DocumentTemplates$TableRow")
-    var DocumentTemplates$TableRow: TableRow = js.native
+    var DocumentTemplates$TableRow: TableRow
     
     @JSName("DocumentTemplates$TemplateGrid")
-    var DocumentTemplates$TemplateGrid: TemplateGrid = js.native
+    var DocumentTemplates$TemplateGrid: TemplateGrid
     
     @JSName("DocumentTemplates$TemplateGridContents")
-    var DocumentTemplates$TemplateGridContents: TemplateGridContents = js.native
+    var DocumentTemplates$TemplateGridContents: TemplateGridContents
     
     @JSName("DocumentTemplates$Title")
-    var DocumentTemplates$Title: Title = js.native
+    var DocumentTemplates$Title: Title
     
     @JSName("DomainModels$AccessRule")
-    var DomainModels$AccessRule: AccessRule = js.native
+    var DomainModels$AccessRule: AccessRule
     
     @JSName("DomainModels$Annotation")
-    var DomainModels$Annotation: Annotation = js.native
+    var DomainModels$Annotation: Annotation
     
     @JSName("DomainModels$Association")
-    var DomainModels$Association: Association = js.native
+    var DomainModels$Association: Association
     
     @JSName("DomainModels$AssociationCapabilities")
-    var DomainModels$AssociationCapabilities: AssociationCapabilities = js.native
+    var DomainModels$AssociationCapabilities: AssociationCapabilities
     
     @JSName("DomainModels$AssociationDeleteBehavior")
-    var DomainModels$AssociationDeleteBehavior: AssociationDeleteBehavior = js.native
+    var DomainModels$AssociationDeleteBehavior: AssociationDeleteBehavior
     
     @JSName("DomainModels$AssociationRef")
-    var DomainModels$AssociationRef: AssociationRef = js.native
+    var DomainModels$AssociationRef: AssociationRef
     
     @JSName("DomainModels$Attribute")
-    var DomainModels$Attribute: Attribute = js.native
+    var DomainModels$Attribute: Attribute
     
     @JSName("DomainModels$AttributeCapabilities")
-    var DomainModels$AttributeCapabilities: AttributeCapabilities = js.native
+    var DomainModels$AttributeCapabilities: AttributeCapabilities
     
     @JSName("DomainModels$AttributeRef")
-    var DomainModels$AttributeRef: AttributeRef = js.native
+    var DomainModels$AttributeRef: AttributeRef
     
     @JSName("DomainModels$AutoNumberAttributeType")
-    var DomainModels$AutoNumberAttributeType: AutoNumberAttributeType = js.native
+    var DomainModels$AutoNumberAttributeType: AutoNumberAttributeType
     
     @JSName("DomainModels$BinaryAttributeType")
-    var DomainModels$BinaryAttributeType: BinaryAttributeType = js.native
+    var DomainModels$BinaryAttributeType: BinaryAttributeType
     
     @JSName("DomainModels$BooleanAttributeType")
-    var DomainModels$BooleanAttributeType: BooleanAttributeType = js.native
+    var DomainModels$BooleanAttributeType: BooleanAttributeType
     
     @JSName("DomainModels$CalculatedValue")
-    var DomainModels$CalculatedValue: CalculatedValue = js.native
+    var DomainModels$CalculatedValue: CalculatedValue
     
     @JSName("DomainModels$CrossAssociation")
-    var DomainModels$CrossAssociation: CrossAssociation = js.native
+    var DomainModels$CrossAssociation: CrossAssociation
     
     @JSName("DomainModels$CurrencyAttributeType")
-    var DomainModels$CurrencyAttributeType: CurrencyAttributeType = js.native
+    var DomainModels$CurrencyAttributeType: CurrencyAttributeType
     
     @JSName("DomainModels$DateTimeAttributeType")
-    var DomainModels$DateTimeAttributeType: DateTimeAttributeType = js.native
+    var DomainModels$DateTimeAttributeType: DateTimeAttributeType
     
     @JSName("DomainModels$DecimalAttributeType")
-    var DomainModels$DecimalAttributeType: DecimalAttributeType = js.native
+    var DomainModels$DecimalAttributeType: DecimalAttributeType
     
     @JSName("DomainModels$DirectEntityRef")
-    var DomainModels$DirectEntityRef: DirectEntityRef = js.native
+    var DomainModels$DirectEntityRef: DirectEntityRef
     
     @JSName("DomainModels$Entity")
-    var DomainModels$Entity: Entity = js.native
+    var DomainModels$Entity: Entity
     
     @JSName("DomainModels$EntityCapabilities")
-    var DomainModels$EntityCapabilities: EntityCapabilities = js.native
+    var DomainModels$EntityCapabilities: EntityCapabilities
     
     @JSName("DomainModels$EntityKey")
-    var DomainModels$EntityKey: EntityKey = js.native
+    var DomainModels$EntityKey: EntityKey
     
     @JSName("DomainModels$EntityKeyPart")
-    var DomainModels$EntityKeyPart: EntityKeyPart = js.native
+    var DomainModels$EntityKeyPart: EntityKeyPart
     
     @JSName("DomainModels$EntityRefStep")
-    var DomainModels$EntityRefStep: EntityRefStep = js.native
+    var DomainModels$EntityRefStep: EntityRefStep
     
     @JSName("DomainModels$EnumerationAttributeType")
-    var DomainModels$EnumerationAttributeType: EnumerationAttributeType = js.native
+    var DomainModels$EnumerationAttributeType: EnumerationAttributeType
     
     @JSName("DomainModels$EqualsToRuleInfo")
-    var DomainModels$EqualsToRuleInfo: EqualsToRuleInfo = js.native
+    var DomainModels$EqualsToRuleInfo: EqualsToRuleInfo
     
     @JSName("DomainModels$EventHandler")
-    var DomainModels$EventHandler: EventHandler = js.native
+    var DomainModels$EventHandler: EventHandler
     
     @JSName("DomainModels$FloatAttributeType")
-    var DomainModels$FloatAttributeType: FloatAttributeType = js.native
+    var DomainModels$FloatAttributeType: FloatAttributeType
     
     @JSName("DomainModels$Generalization")
-    var DomainModels$Generalization: Generalization = js.native
+    var DomainModels$Generalization: Generalization
     
     @JSName("DomainModels$HashedStringAttributeType")
-    var DomainModels$HashedStringAttributeType: HashedStringAttributeType = js.native
+    var DomainModels$HashedStringAttributeType: HashedStringAttributeType
     
     @JSName("DomainModels$Index")
-    var DomainModels$Index: Index = js.native
+    var DomainModels$Index: Index
     
     @JSName("DomainModels$IndexedAttribute")
-    var DomainModels$IndexedAttribute: IndexedAttribute = js.native
+    var DomainModels$IndexedAttribute: IndexedAttribute
     
     @JSName("DomainModels$IndirectEntityRef")
-    var DomainModels$IndirectEntityRef: IndirectEntityRef = js.native
+    var DomainModels$IndirectEntityRef: IndirectEntityRef
     
     @JSName("DomainModels$IntegerAttributeType")
-    var DomainModels$IntegerAttributeType: IntegerAttributeType = js.native
+    var DomainModels$IntegerAttributeType: IntegerAttributeType
     
     @JSName("DomainModels$LongAttributeType")
-    var DomainModels$LongAttributeType: LongAttributeType = js.native
+    var DomainModels$LongAttributeType: LongAttributeType
     
     @JSName("DomainModels$MaxLengthRuleInfo")
-    var DomainModels$MaxLengthRuleInfo: MaxLengthRuleInfo = js.native
+    var DomainModels$MaxLengthRuleInfo: MaxLengthRuleInfo
     
     @JSName("DomainModels$MemberAccess")
-    var DomainModels$MemberAccess: MemberAccess = js.native
+    var DomainModels$MemberAccess: MemberAccess
     
     @JSName("DomainModels$NoGeneralization")
-    var DomainModels$NoGeneralization: NoGeneralization = js.native
+    var DomainModels$NoGeneralization: NoGeneralization
     
     @JSName("DomainModels$RangeRuleInfo")
-    var DomainModels$RangeRuleInfo: RangeRuleInfo = js.native
+    var DomainModels$RangeRuleInfo: RangeRuleInfo
     
     @JSName("DomainModels$RegExRuleInfo")
-    var DomainModels$RegExRuleInfo: RegExRuleInfo = js.native
+    var DomainModels$RegExRuleInfo: RegExRuleInfo
     
     @JSName("DomainModels$RequiredRuleInfo")
-    var DomainModels$RequiredRuleInfo: RequiredRuleInfo = js.native
+    var DomainModels$RequiredRuleInfo: RequiredRuleInfo
     
     @JSName("DomainModels$StoredValue")
-    var DomainModels$StoredValue: StoredValue = js.native
+    var DomainModels$StoredValue: StoredValue
     
     @JSName("DomainModels$StringAttributeType")
-    var DomainModels$StringAttributeType: StringAttributeType = js.native
+    var DomainModels$StringAttributeType: StringAttributeType
     
     @JSName("DomainModels$UniqueRuleInfo")
-    var DomainModels$UniqueRuleInfo: UniqueRuleInfo = js.native
+    var DomainModels$UniqueRuleInfo: UniqueRuleInfo
     
     @JSName("DomainModels$ValidationRule")
-    var DomainModels$ValidationRule: ValidationRule = js.native
+    var DomainModels$ValidationRule: ValidationRule
     
     @JSName("Enumerations$Condition")
-    var Enumerations$Condition: Condition = js.native
+    var Enumerations$Condition: Condition
     
     @JSName("Enumerations$EnumerationValue")
-    var Enumerations$EnumerationValue: EnumerationValue = js.native
+    var Enumerations$EnumerationValue: EnumerationValue
     
     @JSName("ExportMappings$ExportObjectMappingElement")
-    var ExportMappings$ExportObjectMappingElement: ExportObjectMappingElement = js.native
+    var ExportMappings$ExportObjectMappingElement: ExportObjectMappingElement
     
     @JSName("ExportMappings$ExportValueMappingElement")
-    var ExportMappings$ExportValueMappingElement: ExportValueMappingElement = js.native
+    var ExportMappings$ExportValueMappingElement: ExportValueMappingElement
     
     @JSName("Expressions$BinaryExpression")
-    var Expressions$BinaryExpression: BinaryExpression = js.native
+    var Expressions$BinaryExpression: BinaryExpression
     
     @JSName("Expressions$BooleanLiteral")
-    var Expressions$BooleanLiteral: BooleanLiteral = js.native
+    var Expressions$BooleanLiteral: BooleanLiteral
     
     @JSName("Expressions$ConstantRefExpression")
-    var Expressions$ConstantRefExpression: ConstantRefExpression = js.native
+    var Expressions$ConstantRefExpression: ConstantRefExpression
     
     @JSName("Expressions$EmptyLiteral")
-    var Expressions$EmptyLiteral: EmptyLiteral = js.native
+    var Expressions$EmptyLiteral: EmptyLiteral
     
     @JSName("Expressions$EnumerationValueRefExpression")
-    var Expressions$EnumerationValueRefExpression: EnumerationValueRefExpression = js.native
+    var Expressions$EnumerationValueRefExpression: EnumerationValueRefExpression
     
     @JSName("Expressions$FloatLiteral")
-    var Expressions$FloatLiteral: FloatLiteral = js.native
+    var Expressions$FloatLiteral: FloatLiteral
     
     @JSName("Expressions$FunctionCallExpression")
-    var Expressions$FunctionCallExpression: FunctionCallExpression = js.native
+    var Expressions$FunctionCallExpression: FunctionCallExpression
     
     @JSName("Expressions$GlobalVariableRef")
-    var Expressions$GlobalVariableRef: GlobalVariableRef = js.native
+    var Expressions$GlobalVariableRef: GlobalVariableRef
     
     @JSName("Expressions$IfExpression")
-    var Expressions$IfExpression: IfExpression = js.native
+    var Expressions$IfExpression: IfExpression
     
     @JSName("Expressions$IntegerLiteral")
-    var Expressions$IntegerLiteral: IntegerLiteral = js.native
+    var Expressions$IntegerLiteral: IntegerLiteral
     
     @JSName("Expressions$NoExpression")
-    var Expressions$NoExpression: NoExpression = js.native
+    var Expressions$NoExpression: NoExpression
     
     @JSName("Expressions$NoVariableRef")
-    var Expressions$NoVariableRef: NoVariableRef = js.native
+    var Expressions$NoVariableRef: NoVariableRef
     
     @JSName("Expressions$ParenthesisExpression")
-    var Expressions$ParenthesisExpression: ParenthesisExpression = js.native
+    var Expressions$ParenthesisExpression: ParenthesisExpression
     
     @JSName("Expressions$StringLiteral")
-    var Expressions$StringLiteral: StringLiteral = js.native
+    var Expressions$StringLiteral: StringLiteral
     
     @JSName("Expressions$UnaryExpression")
-    var Expressions$UnaryExpression: UnaryExpression = js.native
+    var Expressions$UnaryExpression: UnaryExpression
     
     @JSName("Expressions$UnparsableExpression")
-    var Expressions$UnparsableExpression: UnparsableExpression = js.native
+    var Expressions$UnparsableExpression: UnparsableExpression
     
     @JSName("Expressions$VariableRefExpression")
-    var Expressions$VariableRefExpression: VariableRefExpression = js.native
+    var Expressions$VariableRefExpression: VariableRefExpression
     
     @JSName("Images$Image")
-    var Images$Image: Image = js.native
+    var Images$Image: Image
     
     @JSName("ImportMappings$ImportObjectMappingElement")
-    var ImportMappings$ImportObjectMappingElement: ImportObjectMappingElement = js.native
+    var ImportMappings$ImportObjectMappingElement: ImportObjectMappingElement
     
     @JSName("ImportMappings$ImportValueMappingElement")
-    var ImportMappings$ImportValueMappingElement: ImportValueMappingElement = js.native
+    var ImportMappings$ImportValueMappingElement: ImportValueMappingElement
     
     @JSName("JavaActions$BasicParameterType")
-    var JavaActions$BasicParameterType: typings.mendixmodelsdk.javaactionsMod.javaactions.BasicParameterType = js.native
+    var JavaActions$BasicParameterType: typings.mendixmodelsdk.javaactionsMod.javaactions.BasicParameterType
     
     @JSName("JavaActions$BooleanType")
-    var JavaActions$BooleanType: typings.mendixmodelsdk.javaactionsMod.javaactions.BooleanType = js.native
+    var JavaActions$BooleanType: typings.mendixmodelsdk.javaactionsMod.javaactions.BooleanType
     
     @JSName("JavaActions$ConcreteEntityType")
-    var JavaActions$ConcreteEntityType: typings.mendixmodelsdk.javaactionsMod.javaactions.ConcreteEntityType = js.native
+    var JavaActions$ConcreteEntityType: typings.mendixmodelsdk.javaactionsMod.javaactions.ConcreteEntityType
     
     @JSName("JavaActions$DateTimeType")
-    var JavaActions$DateTimeType: typings.mendixmodelsdk.javaactionsMod.javaactions.DateTimeType = js.native
+    var JavaActions$DateTimeType: typings.mendixmodelsdk.javaactionsMod.javaactions.DateTimeType
     
     @JSName("JavaActions$DecimalType")
-    var JavaActions$DecimalType: typings.mendixmodelsdk.javaactionsMod.javaactions.DecimalType = js.native
+    var JavaActions$DecimalType: typings.mendixmodelsdk.javaactionsMod.javaactions.DecimalType
     
     @JSName("JavaActions$EntityTypeParameterType")
-    var JavaActions$EntityTypeParameterType: typings.mendixmodelsdk.javaactionsMod.javaactions.EntityTypeParameterType = js.native
+    var JavaActions$EntityTypeParameterType: typings.mendixmodelsdk.javaactionsMod.javaactions.EntityTypeParameterType
     
     @JSName("JavaActions$EnumerationType")
-    var JavaActions$EnumerationType: typings.mendixmodelsdk.javaactionsMod.javaactions.EnumerationType = js.native
+    var JavaActions$EnumerationType: typings.mendixmodelsdk.javaactionsMod.javaactions.EnumerationType
     
     @JSName("JavaActions$ExportMappingJavaActionParameterType")
-    var JavaActions$ExportMappingJavaActionParameterType: ExportMappingJavaActionParameterType = js.native
+    var JavaActions$ExportMappingJavaActionParameterType: ExportMappingJavaActionParameterType
     
     @JSName("JavaActions$ExportMappingParameterType")
-    var JavaActions$ExportMappingParameterType: ExportMappingParameterType = js.native
+    var JavaActions$ExportMappingParameterType: ExportMappingParameterType
     
     @JSName("JavaActions$FloatType")
-    var JavaActions$FloatType: typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType = js.native
+    var JavaActions$FloatType: typings.mendixmodelsdk.javaactionsMod.javaactions.FloatType
     
     @JSName("JavaActions$ImportMappingJavaActionParameterType")
-    var JavaActions$ImportMappingJavaActionParameterType: ImportMappingJavaActionParameterType = js.native
+    var JavaActions$ImportMappingJavaActionParameterType: ImportMappingJavaActionParameterType
     
     @JSName("JavaActions$ImportMappingParameterType")
-    var JavaActions$ImportMappingParameterType: ImportMappingParameterType = js.native
+    var JavaActions$ImportMappingParameterType: ImportMappingParameterType
     
     @JSName("JavaActions$IntegerType")
-    var JavaActions$IntegerType: typings.mendixmodelsdk.javaactionsMod.javaactions.IntegerType = js.native
+    var JavaActions$IntegerType: typings.mendixmodelsdk.javaactionsMod.javaactions.IntegerType
     
     @JSName("JavaActions$JavaActionParameter")
-    var JavaActions$JavaActionParameter: JavaActionParameter = js.native
+    var JavaActions$JavaActionParameter: JavaActionParameter
     
     @JSName("JavaActions$ListType")
-    var JavaActions$ListType: typings.mendixmodelsdk.javaactionsMod.javaactions.ListType = js.native
+    var JavaActions$ListType: typings.mendixmodelsdk.javaactionsMod.javaactions.ListType
     
     @JSName("JavaActions$MicroflowActionInfo")
-    var JavaActions$MicroflowActionInfo: typings.mendixmodelsdk.javaactionsMod.javaactions.MicroflowActionInfo = js.native
+    var JavaActions$MicroflowActionInfo: typings.mendixmodelsdk.javaactionsMod.javaactions.MicroflowActionInfo
     
     @JSName("JavaActions$MicroflowJavaActionParameterType")
-    var JavaActions$MicroflowJavaActionParameterType: MicroflowJavaActionParameterType = js.native
+    var JavaActions$MicroflowJavaActionParameterType: MicroflowJavaActionParameterType
     
     @JSName("JavaActions$MicroflowParameterType")
-    var JavaActions$MicroflowParameterType: MicroflowParameterType = js.native
+    var JavaActions$MicroflowParameterType: MicroflowParameterType
     
     @JSName("JavaActions$ParameterizedEntityType")
-    var JavaActions$ParameterizedEntityType: typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType = js.native
+    var JavaActions$ParameterizedEntityType: typings.mendixmodelsdk.javaactionsMod.javaactions.ParameterizedEntityType
     
     @JSName("JavaActions$StringType")
-    var JavaActions$StringType: typings.mendixmodelsdk.javaactionsMod.javaactions.StringType = js.native
+    var JavaActions$StringType: typings.mendixmodelsdk.javaactionsMod.javaactions.StringType
     
     @JSName("JavaActions$TypeParameter")
-    var JavaActions$TypeParameter: typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter = js.native
+    var JavaActions$TypeParameter: typings.mendixmodelsdk.javaactionsMod.javaactions.TypeParameter
     
     @JSName("JavaScriptActions$JavaScriptActionParameter")
-    var JavaScriptActions$JavaScriptActionParameter: JavaScriptActionParameter = js.native
+    var JavaScriptActions$JavaScriptActionParameter: JavaScriptActionParameter
     
     @JSName("JavaScriptActions$NanoflowJavaScriptActionParameterType")
-    var JavaScriptActions$NanoflowJavaScriptActionParameterType: NanoflowJavaScriptActionParameterType = js.native
+    var JavaScriptActions$NanoflowJavaScriptActionParameterType: NanoflowJavaScriptActionParameterType
     
     @JSName("JsonStructures$JsonElement")
-    var JsonStructures$JsonElement: JsonElement = js.native
+    var JsonStructures$JsonElement: JsonElement
     
     @JSName("Kafka$KafkaMappedValue")
-    var Kafka$KafkaMappedValue: KafkaMappedValue = js.native
+    var Kafka$KafkaMappedValue: KafkaMappedValue
     
     @JSName("Kafka$KafkaRemoteEntitySource")
-    var Kafka$KafkaRemoteEntitySource: KafkaRemoteEntitySource = js.native
+    var Kafka$KafkaRemoteEntitySource: KafkaRemoteEntitySource
     
     @JSName("Kafka$PublishedKafkaResource")
-    var Kafka$PublishedKafkaResource: PublishedKafkaResource = js.native
+    var Kafka$PublishedKafkaResource: PublishedKafkaResource
     
     @JSName("Mappings$MappingMicroflowCall")
-    var Mappings$MappingMicroflowCall: MappingMicroflowCall = js.native
+    var Mappings$MappingMicroflowCall: MappingMicroflowCall
     
     @JSName("Mappings$MappingMicroflowParameter")
-    var Mappings$MappingMicroflowParameter: MappingMicroflowParameter = js.native
+    var Mappings$MappingMicroflowParameter: MappingMicroflowParameter
     
     @JSName("Menus$MenuItem")
-    var Menus$MenuItem: MenuItem = js.native
+    var Menus$MenuItem: MenuItem
     
     @JSName("Menus$MenuItemCollection")
-    var Menus$MenuItemCollection: MenuItemCollection = js.native
+    var Menus$MenuItemCollection: MenuItemCollection
     
     @JSName("MessageDefinitions$AssociationElement")
-    var MessageDefinitions$AssociationElement: AssociationElement = js.native
+    var MessageDefinitions$AssociationElement: AssociationElement
     
     @JSName("MessageDefinitions$AttributeElement")
-    var MessageDefinitions$AttributeElement: AttributeElement = js.native
+    var MessageDefinitions$AttributeElement: AttributeElement
     
     @JSName("MessageDefinitions$EntityElement")
-    var MessageDefinitions$EntityElement: EntityElement = js.native
+    var MessageDefinitions$EntityElement: EntityElement
     
     @JSName("MessageDefinitions$EntityMessageDefinition")
-    var MessageDefinitions$EntityMessageDefinition: EntityMessageDefinition = js.native
+    var MessageDefinitions$EntityMessageDefinition: EntityMessageDefinition
     
     @JSName("MessageDefinitions$ExposedAssociation")
-    var MessageDefinitions$ExposedAssociation: ExposedAssociation = js.native
+    var MessageDefinitions$ExposedAssociation: ExposedAssociation
     
     @JSName("MessageDefinitions$ExposedAttribute")
-    var MessageDefinitions$ExposedAttribute: ExposedAttribute = js.native
+    var MessageDefinitions$ExposedAttribute: ExposedAttribute
     
     @JSName("MessageDefinitions$ExposedEntity")
-    var MessageDefinitions$ExposedEntity: ExposedEntity = js.native
+    var MessageDefinitions$ExposedEntity: ExposedEntity
     
     @JSName("Microflows$ActionActivity")
-    var Microflows$ActionActivity: ActionActivity = js.native
+    var Microflows$ActionActivity: ActionActivity
     
     @JSName("Microflows$AdvancedRequestHandling")
-    var Microflows$AdvancedRequestHandling: AdvancedRequestHandling = js.native
+    var Microflows$AdvancedRequestHandling: AdvancedRequestHandling
     
     @JSName("Microflows$AggregateListAction")
-    var Microflows$AggregateListAction: AggregateListAction = js.native
+    var Microflows$AggregateListAction: AggregateListAction
     
     @JSName("Microflows$Annotation")
-    var Microflows$Annotation: typings.mendixmodelsdk.microflowsMod.microflows.Annotation = js.native
+    var Microflows$Annotation: typings.mendixmodelsdk.microflowsMod.microflows.Annotation
     
     @JSName("Microflows$AnnotationFlow")
-    var Microflows$AnnotationFlow: AnnotationFlow = js.native
+    var Microflows$AnnotationFlow: AnnotationFlow
     
     @JSName("Microflows$AppServiceCallAction")
-    var Microflows$AppServiceCallAction: AppServiceCallAction = js.native
+    var Microflows$AppServiceCallAction: AppServiceCallAction
     
     @JSName("Microflows$AppServiceCallParameterMapping")
-    var Microflows$AppServiceCallParameterMapping: AppServiceCallParameterMapping = js.native
+    var Microflows$AppServiceCallParameterMapping: AppServiceCallParameterMapping
     
     @JSName("Microflows$AssociationRetrieveSource")
-    var Microflows$AssociationRetrieveSource: AssociationRetrieveSource = js.native
+    var Microflows$AssociationRetrieveSource: AssociationRetrieveSource
     
     @JSName("Microflows$BasicCodeActionParameterValue")
-    var Microflows$BasicCodeActionParameterValue: BasicCodeActionParameterValue = js.native
+    var Microflows$BasicCodeActionParameterValue: BasicCodeActionParameterValue
     
     @JSName("Microflows$BasicJavaActionParameterValue")
-    var Microflows$BasicJavaActionParameterValue: BasicJavaActionParameterValue = js.native
+    var Microflows$BasicJavaActionParameterValue: BasicJavaActionParameterValue
     
     @JSName("Microflows$BinaryRequestHandling")
-    var Microflows$BinaryRequestHandling: BinaryRequestHandling = js.native
+    var Microflows$BinaryRequestHandling: BinaryRequestHandling
     
     @JSName("Microflows$BreakEvent")
-    var Microflows$BreakEvent: BreakEvent = js.native
+    var Microflows$BreakEvent: BreakEvent
     
     @JSName("Microflows$CastAction")
-    var Microflows$CastAction: CastAction = js.native
+    var Microflows$CastAction: CastAction
     
     @JSName("Microflows$ChangeListAction")
-    var Microflows$ChangeListAction: ChangeListAction = js.native
+    var Microflows$ChangeListAction: ChangeListAction
     
     @JSName("Microflows$ChangeObjectAction")
-    var Microflows$ChangeObjectAction: ChangeObjectAction = js.native
+    var Microflows$ChangeObjectAction: ChangeObjectAction
     
     @JSName("Microflows$ChangeVariableAction")
-    var Microflows$ChangeVariableAction: ChangeVariableAction = js.native
+    var Microflows$ChangeVariableAction: ChangeVariableAction
     
     @JSName("Microflows$CloseFormAction")
-    var Microflows$CloseFormAction: CloseFormAction = js.native
+    var Microflows$CloseFormAction: CloseFormAction
     
     @JSName("Microflows$CommitAction")
-    var Microflows$CommitAction: CommitAction = js.native
+    var Microflows$CommitAction: CommitAction
     
     @JSName("Microflows$ConstantRange")
-    var Microflows$ConstantRange: ConstantRange = js.native
+    var Microflows$ConstantRange: ConstantRange
     
     @JSName("Microflows$Contains")
-    var Microflows$Contains: Contains = js.native
+    var Microflows$Contains: Contains
     
     @JSName("Microflows$ContinueEvent")
-    var Microflows$ContinueEvent: ContinueEvent = js.native
+    var Microflows$ContinueEvent: ContinueEvent
     
     @JSName("Microflows$CreateListAction")
-    var Microflows$CreateListAction: CreateListAction = js.native
+    var Microflows$CreateListAction: CreateListAction
     
     @JSName("Microflows$CreateObjectAction")
-    var Microflows$CreateObjectAction: CreateObjectAction = js.native
+    var Microflows$CreateObjectAction: CreateObjectAction
     
     @JSName("Microflows$CreateVariableAction")
-    var Microflows$CreateVariableAction: CreateVariableAction = js.native
+    var Microflows$CreateVariableAction: CreateVariableAction
     
     @JSName("Microflows$CustomRange")
-    var Microflows$CustomRange: CustomRange = js.native
+    var Microflows$CustomRange: CustomRange
     
     @JSName("Microflows$CustomRequestHandling")
-    var Microflows$CustomRequestHandling: CustomRequestHandling = js.native
+    var Microflows$CustomRequestHandling: CustomRequestHandling
     
     @JSName("Microflows$DatabaseRetrieveSource")
-    var Microflows$DatabaseRetrieveSource: DatabaseRetrieveSource = js.native
+    var Microflows$DatabaseRetrieveSource: DatabaseRetrieveSource
     
     @JSName("Microflows$DeleteAction")
-    var Microflows$DeleteAction: DeleteAction = js.native
+    var Microflows$DeleteAction: DeleteAction
     
     @JSName("Microflows$DocumentTemplateParameterMapping")
-    var Microflows$DocumentTemplateParameterMapping: DocumentTemplateParameterMapping = js.native
+    var Microflows$DocumentTemplateParameterMapping: DocumentTemplateParameterMapping
     
     @JSName("Microflows$DownloadFileAction")
-    var Microflows$DownloadFileAction: DownloadFileAction = js.native
+    var Microflows$DownloadFileAction: DownloadFileAction
     
     @JSName("Microflows$EndEvent")
-    var Microflows$EndEvent: EndEvent = js.native
+    var Microflows$EndEvent: EndEvent
     
     @JSName("Microflows$EntityTypeCodeActionParameterValue")
-    var Microflows$EntityTypeCodeActionParameterValue: EntityTypeCodeActionParameterValue = js.native
+    var Microflows$EntityTypeCodeActionParameterValue: EntityTypeCodeActionParameterValue
     
     @JSName("Microflows$EntityTypeJavaActionParameterValue")
-    var Microflows$EntityTypeJavaActionParameterValue: EntityTypeJavaActionParameterValue = js.native
+    var Microflows$EntityTypeJavaActionParameterValue: EntityTypeJavaActionParameterValue
     
     @JSName("Microflows$EnumerationCase")
-    var Microflows$EnumerationCase: EnumerationCase = js.native
+    var Microflows$EnumerationCase: EnumerationCase
     
     @JSName("Microflows$ErrorEvent")
-    var Microflows$ErrorEvent: ErrorEvent = js.native
+    var Microflows$ErrorEvent: ErrorEvent
     
     @JSName("Microflows$ExclusiveMerge")
-    var Microflows$ExclusiveMerge: ExclusiveMerge = js.native
+    var Microflows$ExclusiveMerge: ExclusiveMerge
     
     @JSName("Microflows$ExclusiveSplit")
-    var Microflows$ExclusiveSplit: ExclusiveSplit = js.native
+    var Microflows$ExclusiveSplit: ExclusiveSplit
     
     @JSName("Microflows$ExportMappingJavaActionParameterValue")
-    var Microflows$ExportMappingJavaActionParameterValue: ExportMappingJavaActionParameterValue = js.native
+    var Microflows$ExportMappingJavaActionParameterValue: ExportMappingJavaActionParameterValue
     
     @JSName("Microflows$ExportMappingParameterValue")
-    var Microflows$ExportMappingParameterValue: ExportMappingParameterValue = js.native
+    var Microflows$ExportMappingParameterValue: ExportMappingParameterValue
     
     @JSName("Microflows$ExportXmlAction")
-    var Microflows$ExportXmlAction: ExportXmlAction = js.native
+    var Microflows$ExportXmlAction: ExportXmlAction
     
     @JSName("Microflows$ExpressionSplitCondition")
-    var Microflows$ExpressionSplitCondition: ExpressionSplitCondition = js.native
+    var Microflows$ExpressionSplitCondition: ExpressionSplitCondition
     
     @JSName("Microflows$FileDocumentExport")
-    var Microflows$FileDocumentExport: FileDocumentExport = js.native
+    var Microflows$FileDocumentExport: FileDocumentExport
     
     @JSName("Microflows$Filter")
-    var Microflows$Filter: Filter = js.native
+    var Microflows$Filter: Filter
     
     @JSName("Microflows$Find")
-    var Microflows$Find: Find = js.native
+    var Microflows$Find: Find
     
     @JSName("Microflows$FormDataPart")
-    var Microflows$FormDataPart: FormDataPart = js.native
+    var Microflows$FormDataPart: FormDataPart
     
     @JSName("Microflows$FormDataRequestHandling")
-    var Microflows$FormDataRequestHandling: FormDataRequestHandling = js.native
+    var Microflows$FormDataRequestHandling: FormDataRequestHandling
     
     @JSName("Microflows$GenerateDocumentAction")
-    var Microflows$GenerateDocumentAction: GenerateDocumentAction = js.native
+    var Microflows$GenerateDocumentAction: GenerateDocumentAction
     
     @JSName("Microflows$Head")
-    var Microflows$Head: Head = js.native
+    var Microflows$Head: Head
     
     @JSName("Microflows$HttpConfiguration")
-    var Microflows$HttpConfiguration: HttpConfiguration = js.native
+    var Microflows$HttpConfiguration: HttpConfiguration
     
     @JSName("Microflows$HttpHeaderEntry")
-    var Microflows$HttpHeaderEntry: HttpHeaderEntry = js.native
+    var Microflows$HttpHeaderEntry: HttpHeaderEntry
     
     @JSName("Microflows$ImportMappingCall")
-    var Microflows$ImportMappingCall: ImportMappingCall = js.native
+    var Microflows$ImportMappingCall: ImportMappingCall
     
     @JSName("Microflows$ImportMappingJavaActionParameterValue")
-    var Microflows$ImportMappingJavaActionParameterValue: ImportMappingJavaActionParameterValue = js.native
+    var Microflows$ImportMappingJavaActionParameterValue: ImportMappingJavaActionParameterValue
     
     @JSName("Microflows$ImportMappingParameterValue")
-    var Microflows$ImportMappingParameterValue: ImportMappingParameterValue = js.native
+    var Microflows$ImportMappingParameterValue: ImportMappingParameterValue
     
     @JSName("Microflows$ImportXmlAction")
-    var Microflows$ImportXmlAction: ImportXmlAction = js.native
+    var Microflows$ImportXmlAction: ImportXmlAction
     
     @JSName("Microflows$InheritanceCase")
-    var Microflows$InheritanceCase: InheritanceCase = js.native
+    var Microflows$InheritanceCase: InheritanceCase
     
     @JSName("Microflows$InheritanceSplit")
-    var Microflows$InheritanceSplit: InheritanceSplit = js.native
+    var Microflows$InheritanceSplit: InheritanceSplit
     
     @JSName("Microflows$Intersect")
-    var Microflows$Intersect: Intersect = js.native
+    var Microflows$Intersect: Intersect
     
     @JSName("Microflows$JavaActionCallAction")
-    var Microflows$JavaActionCallAction: JavaActionCallAction = js.native
+    var Microflows$JavaActionCallAction: JavaActionCallAction
     
     @JSName("Microflows$JavaActionParameterMapping")
-    var Microflows$JavaActionParameterMapping: JavaActionParameterMapping = js.native
+    var Microflows$JavaActionParameterMapping: JavaActionParameterMapping
     
     @JSName("Microflows$JavaScriptActionCallAction")
-    var Microflows$JavaScriptActionCallAction: JavaScriptActionCallAction = js.native
+    var Microflows$JavaScriptActionCallAction: JavaScriptActionCallAction
     
     @JSName("Microflows$JavaScriptActionParameterMapping")
-    var Microflows$JavaScriptActionParameterMapping: JavaScriptActionParameterMapping = js.native
+    var Microflows$JavaScriptActionParameterMapping: JavaScriptActionParameterMapping
     
     @JSName("Microflows$ListEquals")
-    var Microflows$ListEquals: ListEquals = js.native
+    var Microflows$ListEquals: ListEquals
     
     @JSName("Microflows$ListOperationAction")
-    var Microflows$ListOperationAction: ListOperationAction = js.native
+    var Microflows$ListOperationAction: ListOperationAction
     
     @JSName("Microflows$LogMessageAction")
-    var Microflows$LogMessageAction: LogMessageAction = js.native
+    var Microflows$LogMessageAction: LogMessageAction
     
     @JSName("Microflows$LoopedActivity")
-    var Microflows$LoopedActivity: LoopedActivity = js.native
+    var Microflows$LoopedActivity: LoopedActivity
     
     @JSName("Microflows$MappingRequestHandling")
-    var Microflows$MappingRequestHandling: MappingRequestHandling = js.native
+    var Microflows$MappingRequestHandling: MappingRequestHandling
     
     @JSName("Microflows$MemberChange")
-    var Microflows$MemberChange: MemberChange = js.native
+    var Microflows$MemberChange: MemberChange
     
     @JSName("Microflows$MicroflowCall")
-    var Microflows$MicroflowCall: MicroflowCall = js.native
+    var Microflows$MicroflowCall: MicroflowCall
     
     @JSName("Microflows$MicroflowCallAction")
-    var Microflows$MicroflowCallAction: MicroflowCallAction = js.native
+    var Microflows$MicroflowCallAction: MicroflowCallAction
     
     @JSName("Microflows$MicroflowCallParameterMapping")
-    var Microflows$MicroflowCallParameterMapping: MicroflowCallParameterMapping = js.native
+    var Microflows$MicroflowCallParameterMapping: MicroflowCallParameterMapping
     
     @JSName("Microflows$MicroflowJavaActionParameterValue")
-    var Microflows$MicroflowJavaActionParameterValue: MicroflowJavaActionParameterValue = js.native
+    var Microflows$MicroflowJavaActionParameterValue: MicroflowJavaActionParameterValue
     
     @JSName("Microflows$MicroflowObjectCollection")
-    var Microflows$MicroflowObjectCollection: MicroflowObjectCollection = js.native
+    var Microflows$MicroflowObjectCollection: MicroflowObjectCollection
     
     @JSName("Microflows$MicroflowParameter")
-    var Microflows$MicroflowParameter: MicroflowParameter = js.native
+    var Microflows$MicroflowParameter: MicroflowParameter
     
     @JSName("Microflows$MicroflowParameterObject")
-    var Microflows$MicroflowParameterObject: MicroflowParameterObject = js.native
+    var Microflows$MicroflowParameterObject: MicroflowParameterObject
     
     @JSName("Microflows$MicroflowParameterValue")
-    var Microflows$MicroflowParameterValue: MicroflowParameterValue = js.native
+    var Microflows$MicroflowParameterValue: MicroflowParameterValue
     
     @JSName("Microflows$NanoflowCall")
-    var Microflows$NanoflowCall: NanoflowCall = js.native
+    var Microflows$NanoflowCall: NanoflowCall
     
     @JSName("Microflows$NanoflowCallAction")
-    var Microflows$NanoflowCallAction: NanoflowCallAction = js.native
+    var Microflows$NanoflowCallAction: NanoflowCallAction
     
     @JSName("Microflows$NanoflowCallParameterMapping")
-    var Microflows$NanoflowCallParameterMapping: NanoflowCallParameterMapping = js.native
+    var Microflows$NanoflowCallParameterMapping: NanoflowCallParameterMapping
     
     @JSName("Microflows$NanoflowParameter")
-    var Microflows$NanoflowParameter: NanoflowParameter = js.native
+    var Microflows$NanoflowParameter: NanoflowParameter
     
     @JSName("Microflows$NoCase")
-    var Microflows$NoCase: NoCase = js.native
+    var Microflows$NoCase: NoCase
     
     @JSName("Microflows$OpenUserTaskAction")
-    var Microflows$OpenUserTaskAction: OpenUserTaskAction = js.native
+    var Microflows$OpenUserTaskAction: OpenUserTaskAction
     
     @JSName("Microflows$PrimitiveTypedTemplateArgument")
-    var Microflows$PrimitiveTypedTemplateArgument: PrimitiveTypedTemplateArgument = js.native
+    var Microflows$PrimitiveTypedTemplateArgument: PrimitiveTypedTemplateArgument
     
     @JSName("Microflows$ProxyConfiguration")
-    var Microflows$ProxyConfiguration: ProxyConfiguration = js.native
+    var Microflows$ProxyConfiguration: ProxyConfiguration
     
     @JSName("Microflows$PushToClientAction")
-    var Microflows$PushToClientAction: PushToClientAction = js.native
+    var Microflows$PushToClientAction: PushToClientAction
     
     @JSName("Microflows$RestCallAction")
-    var Microflows$RestCallAction: RestCallAction = js.native
+    var Microflows$RestCallAction: RestCallAction
     
     @JSName("Microflows$ResultHandling")
-    var Microflows$ResultHandling: ResultHandling = js.native
+    var Microflows$ResultHandling: ResultHandling
     
     @JSName("Microflows$RetrieveAction")
-    var Microflows$RetrieveAction: RetrieveAction = js.native
+    var Microflows$RetrieveAction: RetrieveAction
     
     @JSName("Microflows$RollbackAction")
-    var Microflows$RollbackAction: RollbackAction = js.native
+    var Microflows$RollbackAction: RollbackAction
     
     @JSName("Microflows$RuleCall")
-    var Microflows$RuleCall: RuleCall = js.native
+    var Microflows$RuleCall: RuleCall
     
     @JSName("Microflows$RuleCallParameterMapping")
-    var Microflows$RuleCallParameterMapping: RuleCallParameterMapping = js.native
+    var Microflows$RuleCallParameterMapping: RuleCallParameterMapping
     
     @JSName("Microflows$RuleParameter")
-    var Microflows$RuleParameter: RuleParameter = js.native
+    var Microflows$RuleParameter: RuleParameter
     
     @JSName("Microflows$RuleSplitCondition")
-    var Microflows$RuleSplitCondition: RuleSplitCondition = js.native
+    var Microflows$RuleSplitCondition: RuleSplitCondition
     
     @JSName("Microflows$SequenceFlow")
-    var Microflows$SequenceFlow: SequenceFlow = js.native
+    var Microflows$SequenceFlow: SequenceFlow
     
     @JSName("Microflows$SetTaskOutcomeAction")
-    var Microflows$SetTaskOutcomeAction: SetTaskOutcomeAction = js.native
+    var Microflows$SetTaskOutcomeAction: SetTaskOutcomeAction
     
     @JSName("Microflows$ShowHomePageAction")
-    var Microflows$ShowHomePageAction: ShowHomePageAction = js.native
+    var Microflows$ShowHomePageAction: ShowHomePageAction
     
     @JSName("Microflows$ShowMessageAction")
-    var Microflows$ShowMessageAction: ShowMessageAction = js.native
+    var Microflows$ShowMessageAction: ShowMessageAction
     
     @JSName("Microflows$ShowPageAction")
-    var Microflows$ShowPageAction: ShowPageAction = js.native
+    var Microflows$ShowPageAction: ShowPageAction
     
     @JSName("Microflows$SimpleRequestHandling")
-    var Microflows$SimpleRequestHandling: SimpleRequestHandling = js.native
+    var Microflows$SimpleRequestHandling: SimpleRequestHandling
     
     @JSName("Microflows$Sort")
-    var Microflows$Sort: Sort = js.native
+    var Microflows$Sort: Sort
     
     @JSName("Microflows$SortItem")
-    var Microflows$SortItem: SortItem = js.native
+    var Microflows$SortItem: SortItem
     
     @JSName("Microflows$SortItemList")
-    var Microflows$SortItemList: SortItemList = js.native
+    var Microflows$SortItemList: SortItemList
     
     @JSName("Microflows$StartEvent")
-    var Microflows$StartEvent: StartEvent = js.native
+    var Microflows$StartEvent: StartEvent
     
     @JSName("Microflows$StringTemplate")
-    var Microflows$StringTemplate: StringTemplate = js.native
+    var Microflows$StringTemplate: StringTemplate
     
     @JSName("Microflows$StringTemplateParameterValue")
-    var Microflows$StringTemplateParameterValue: StringTemplateParameterValue = js.native
+    var Microflows$StringTemplateParameterValue: StringTemplateParameterValue
     
     @JSName("Microflows$Subtract")
-    var Microflows$Subtract: Subtract = js.native
+    var Microflows$Subtract: Subtract
     
     @JSName("Microflows$SynchronizeAction")
-    var Microflows$SynchronizeAction: SynchronizeAction = js.native
+    var Microflows$SynchronizeAction: SynchronizeAction
     
     @JSName("Microflows$Tail")
-    var Microflows$Tail: Tail = js.native
+    var Microflows$Tail: Tail
     
     @JSName("Microflows$TemplateArgument")
-    var Microflows$TemplateArgument: TemplateArgument = js.native
+    var Microflows$TemplateArgument: TemplateArgument
     
     @JSName("Microflows$TextTemplate")
-    var Microflows$TextTemplate: TextTemplate = js.native
+    var Microflows$TextTemplate: TextTemplate
     
     @JSName("Microflows$TypedTemplate")
-    var Microflows$TypedTemplate: TypedTemplate = js.native
+    var Microflows$TypedTemplate: TypedTemplate
     
     @JSName("Microflows$Union")
-    var Microflows$Union: Union = js.native
+    var Microflows$Union: Union
     
     @JSName("Microflows$ValidationFeedbackAction")
-    var Microflows$ValidationFeedbackAction: ValidationFeedbackAction = js.native
+    var Microflows$ValidationFeedbackAction: ValidationFeedbackAction
     
     @JSName("Microflows$VariableExport")
-    var Microflows$VariableExport: VariableExport = js.native
+    var Microflows$VariableExport: VariableExport
     
     @JSName("Microflows$WebServiceCallAction")
-    var Microflows$WebServiceCallAction: WebServiceCallAction = js.native
+    var Microflows$WebServiceCallAction: WebServiceCallAction
     
     @JSName("Microflows$WebServiceOperationAdvancedParameterMapping")
-    var Microflows$WebServiceOperationAdvancedParameterMapping: WebServiceOperationAdvancedParameterMapping = js.native
+    var Microflows$WebServiceOperationAdvancedParameterMapping: WebServiceOperationAdvancedParameterMapping
     
     @JSName("Microflows$WebServiceOperationSimpleParameterMapping")
-    var Microflows$WebServiceOperationSimpleParameterMapping: WebServiceOperationSimpleParameterMapping = js.native
+    var Microflows$WebServiceOperationSimpleParameterMapping: WebServiceOperationSimpleParameterMapping
     
     @JSName("Microflows$WorkflowCallAction")
-    var Microflows$WorkflowCallAction: WorkflowCallAction = js.native
+    var Microflows$WorkflowCallAction: WorkflowCallAction
     
     @JSName("Nanoflows$NanoflowParameterValue")
-    var Nanoflows$NanoflowParameterValue: NanoflowParameterValue = js.native
+    var Nanoflows$NanoflowParameterValue: NanoflowParameterValue
     
     @JSName("NativePages$BottomBarItem")
-    var NativePages$BottomBarItem: BottomBarItem = js.native
+    var NativePages$BottomBarItem: BottomBarItem
     
     @JSName("NativePages$NativeLayoutCallArgument")
-    var NativePages$NativeLayoutCallArgument: NativeLayoutCallArgument = js.native
+    var NativePages$NativeLayoutCallArgument: NativeLayoutCallArgument
     
     @JSName("NativePages$NativePageClientAction")
-    var NativePages$NativePageClientAction: NativePageClientAction = js.native
+    var NativePages$NativePageClientAction: NativePageClientAction
     
     @JSName("NativePages$NativePlaceholder")
-    var NativePages$NativePlaceholder: NativePlaceholder = js.native
+    var NativePages$NativePlaceholder: NativePlaceholder
     
     @JSName("Navigation$HomePage")
-    var Navigation$HomePage: HomePage = js.native
+    var Navigation$HomePage: HomePage
     
     @JSName("Navigation$NativeNavigationProfile")
-    var Navigation$NativeNavigationProfile: NativeNavigationProfile = js.native
+    var Navigation$NativeNavigationProfile: NativeNavigationProfile
     
     @JSName("Navigation$NavigationProfile")
-    var Navigation$NavigationProfile: NavigationProfile = js.native
+    var Navigation$NavigationProfile: NavigationProfile
     
     @JSName("Navigation$OfflineEntityConfig")
-    var Navigation$OfflineEntityConfig: OfflineEntityConfig = js.native
+    var Navigation$OfflineEntityConfig: OfflineEntityConfig
     
     @JSName("Navigation$RoleBasedHomePage")
-    var Navigation$RoleBasedHomePage: RoleBasedHomePage = js.native
+    var Navigation$RoleBasedHomePage: RoleBasedHomePage
     
     @JSName("Navigation$RoleBasedNativeHomePage")
-    var Navigation$RoleBasedNativeHomePage: RoleBasedNativeHomePage = js.native
+    var Navigation$RoleBasedNativeHomePage: RoleBasedNativeHomePage
     
     @JSName("Pages$ActionButton")
-    var Pages$ActionButton: ActionButton = js.native
+    var Pages$ActionButton: ActionButton
     
     @JSName("Pages$Appearance")
-    var Pages$Appearance: Appearance = js.native
+    var Pages$Appearance: Appearance
     
     @JSName("Pages$AssociationSource")
-    var Pages$AssociationSource: AssociationSource = js.native
+    var Pages$AssociationSource: AssociationSource
     
     @JSName("Pages$BackButton")
-    var Pages$BackButton: BackButton = js.native
+    var Pages$BackButton: BackButton
     
     @JSName("Pages$CallNanoflowClientAction")
-    var Pages$CallNanoflowClientAction: CallNanoflowClientAction = js.native
+    var Pages$CallNanoflowClientAction: CallNanoflowClientAction
     
     @JSName("Pages$CallWorkflowClientAction")
-    var Pages$CallWorkflowClientAction: CallWorkflowClientAction = js.native
+    var Pages$CallWorkflowClientAction: CallWorkflowClientAction
     
     @JSName("Pages$CancelButton")
-    var Pages$CancelButton: CancelButton = js.native
+    var Pages$CancelButton: CancelButton
     
     @JSName("Pages$CancelChangesClientAction")
-    var Pages$CancelChangesClientAction: CancelChangesClientAction = js.native
+    var Pages$CancelChangesClientAction: CancelChangesClientAction
     
     @JSName("Pages$CheckBox")
-    var Pages$CheckBox: CheckBox = js.native
+    var Pages$CheckBox: CheckBox
     
     @JSName("Pages$ClientTemplate")
-    var Pages$ClientTemplate: ClientTemplate = js.native
+    var Pages$ClientTemplate: ClientTemplate
     
     @JSName("Pages$ClientTemplateParameter")
-    var Pages$ClientTemplateParameter: ClientTemplateParameter = js.native
+    var Pages$ClientTemplateParameter: ClientTemplateParameter
     
     @JSName("Pages$ClosePageClientAction")
-    var Pages$ClosePageClientAction: ClosePageClientAction = js.native
+    var Pages$ClosePageClientAction: ClosePageClientAction
     
     @JSName("Pages$ComparisonSearchField")
-    var Pages$ComparisonSearchField: ComparisonSearchField = js.native
+    var Pages$ComparisonSearchField: ComparisonSearchField
     
     @JSName("Pages$ConditionalEditabilitySettings")
-    var Pages$ConditionalEditabilitySettings: ConditionalEditabilitySettings = js.native
+    var Pages$ConditionalEditabilitySettings: ConditionalEditabilitySettings
     
     @JSName("Pages$ConditionalVisibilitySettings")
-    var Pages$ConditionalVisibilitySettings: ConditionalVisibilitySettings = js.native
+    var Pages$ConditionalVisibilitySettings: ConditionalVisibilitySettings
     
     @JSName("Pages$ConfirmationInfo")
-    var Pages$ConfirmationInfo: ConfirmationInfo = js.native
+    var Pages$ConfirmationInfo: ConfirmationInfo
     
     @JSName("Pages$CreateObjectClientAction")
-    var Pages$CreateObjectClientAction: CreateObjectClientAction = js.native
+    var Pages$CreateObjectClientAction: CreateObjectClientAction
     
     @JSName("Pages$DataGrid")
-    var Pages$DataGrid: typings.mendixmodelsdk.pagesMod.pages.DataGrid = js.native
+    var Pages$DataGrid: typings.mendixmodelsdk.pagesMod.pages.DataGrid
     
     @JSName("Pages$DataGridAddButton")
-    var Pages$DataGridAddButton: DataGridAddButton = js.native
+    var Pages$DataGridAddButton: DataGridAddButton
     
     @JSName("Pages$DataGridExportToCSVButton")
-    var Pages$DataGridExportToCSVButton: DataGridExportToCSVButton = js.native
+    var Pages$DataGridExportToCSVButton: DataGridExportToCSVButton
     
     @JSName("Pages$DataGridExportToExcelButton")
-    var Pages$DataGridExportToExcelButton: DataGridExportToExcelButton = js.native
+    var Pages$DataGridExportToExcelButton: DataGridExportToExcelButton
     
     @JSName("Pages$DataGridRemoveButton")
-    var Pages$DataGridRemoveButton: DataGridRemoveButton = js.native
+    var Pages$DataGridRemoveButton: DataGridRemoveButton
     
     @JSName("Pages$DataView")
-    var Pages$DataView: typings.mendixmodelsdk.pagesMod.pages.DataView = js.native
+    var Pages$DataView: typings.mendixmodelsdk.pagesMod.pages.DataView
     
     @JSName("Pages$DataViewActionButton")
-    var Pages$DataViewActionButton: DataViewActionButton = js.native
+    var Pages$DataViewActionButton: DataViewActionButton
     
     @JSName("Pages$DataViewCancelButton")
-    var Pages$DataViewCancelButton: DataViewCancelButton = js.native
+    var Pages$DataViewCancelButton: DataViewCancelButton
     
     @JSName("Pages$DataViewCloseButton")
-    var Pages$DataViewCloseButton: DataViewCloseButton = js.native
+    var Pages$DataViewCloseButton: DataViewCloseButton
     
     @JSName("Pages$DataViewControlBar")
-    var Pages$DataViewControlBar: DataViewControlBar = js.native
+    var Pages$DataViewControlBar: DataViewControlBar
     
     @JSName("Pages$DataViewSaveButton")
-    var Pages$DataViewSaveButton: DataViewSaveButton = js.native
+    var Pages$DataViewSaveButton: DataViewSaveButton
     
     @JSName("Pages$DataViewSource")
-    var Pages$DataViewSource: DataViewSource = js.native
+    var Pages$DataViewSource: DataViewSource
     
     @JSName("Pages$DatabaseConstraint")
-    var Pages$DatabaseConstraint: DatabaseConstraint = js.native
+    var Pages$DatabaseConstraint: DatabaseConstraint
     
     @JSName("Pages$DatePicker")
-    var Pages$DatePicker: DatePicker = js.native
+    var Pages$DatePicker: DatePicker
     
     @JSName("Pages$DeleteClientAction")
-    var Pages$DeleteClientAction: DeleteClientAction = js.native
+    var Pages$DeleteClientAction: DeleteClientAction
     
     @JSName("Pages$DesignPropertyValue")
-    var Pages$DesignPropertyValue: DesignPropertyValue = js.native
+    var Pages$DesignPropertyValue: DesignPropertyValue
     
     @JSName("Pages$DivContainer")
-    var Pages$DivContainer: DivContainer = js.native
+    var Pages$DivContainer: DivContainer
     
     @JSName("Pages$DropDown")
-    var Pages$DropDown: DropDown = js.native
+    var Pages$DropDown: DropDown
     
     @JSName("Pages$DropDownButton")
-    var Pages$DropDownButton: DropDownButton = js.native
+    var Pages$DropDownButton: DropDownButton
     
     @JSName("Pages$DropDownButtonItem")
-    var Pages$DropDownButtonItem: DropDownButtonItem = js.native
+    var Pages$DropDownButtonItem: DropDownButtonItem
     
     @JSName("Pages$DropDownSearchField")
-    var Pages$DropDownSearchField: DropDownSearchField = js.native
+    var Pages$DropDownSearchField: DropDownSearchField
     
     @JSName("Pages$DynamicImageViewer")
-    var Pages$DynamicImageViewer: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer = js.native
+    var Pages$DynamicImageViewer: typings.mendixmodelsdk.pagesMod.pages.DynamicImageViewer
     
     @JSName("Pages$DynamicText")
-    var Pages$DynamicText: DynamicText = js.native
+    var Pages$DynamicText: DynamicText
     
     @JSName("Pages$EditPageTemplateType")
-    var Pages$EditPageTemplateType: EditPageTemplateType = js.native
+    var Pages$EditPageTemplateType: EditPageTemplateType
     
     @JSName("Pages$FileManager")
-    var Pages$FileManager: FileManager = js.native
+    var Pages$FileManager: FileManager
     
     @JSName("Pages$FormattingInfo")
-    var Pages$FormattingInfo: FormattingInfo = js.native
+    var Pages$FormattingInfo: FormattingInfo
     
     @JSName("Pages$GlyphIcon")
-    var Pages$GlyphIcon: GlyphIcon = js.native
+    var Pages$GlyphIcon: GlyphIcon
     
     @JSName("Pages$GridActionButton")
-    var Pages$GridActionButton: GridActionButton = js.native
+    var Pages$GridActionButton: GridActionButton
     
     @JSName("Pages$GridColumn")
-    var Pages$GridColumn: GridColumn = js.native
+    var Pages$GridColumn: GridColumn
     
     @JSName("Pages$GridControlBar")
-    var Pages$GridControlBar: GridControlBar = js.native
+    var Pages$GridControlBar: GridControlBar
     
     @JSName("Pages$GridDatabaseSource")
-    var Pages$GridDatabaseSource: GridDatabaseSource = js.native
+    var Pages$GridDatabaseSource: GridDatabaseSource
     
     @JSName("Pages$GridDeleteButton")
-    var Pages$GridDeleteButton: GridDeleteButton = js.native
+    var Pages$GridDeleteButton: GridDeleteButton
     
     @JSName("Pages$GridDeselectAllButton")
-    var Pages$GridDeselectAllButton: GridDeselectAllButton = js.native
+    var Pages$GridDeselectAllButton: GridDeselectAllButton
     
     @JSName("Pages$GridEditButton")
-    var Pages$GridEditButton: GridEditButton = js.native
+    var Pages$GridEditButton: GridEditButton
     
     @JSName("Pages$GridNewButton")
-    var Pages$GridNewButton: GridNewButton = js.native
+    var Pages$GridNewButton: GridNewButton
     
     @JSName("Pages$GridSearchButton")
-    var Pages$GridSearchButton: GridSearchButton = js.native
+    var Pages$GridSearchButton: GridSearchButton
     
     @JSName("Pages$GridSelectAllButton")
-    var Pages$GridSelectAllButton: GridSelectAllButton = js.native
+    var Pages$GridSelectAllButton: GridSelectAllButton
     
     @JSName("Pages$GridSortBar")
-    var Pages$GridSortBar: typings.mendixmodelsdk.pagesMod.pages.GridSortBar = js.native
+    var Pages$GridSortBar: typings.mendixmodelsdk.pagesMod.pages.GridSortBar
     
     @JSName("Pages$GridSortItem")
-    var Pages$GridSortItem: typings.mendixmodelsdk.pagesMod.pages.GridSortItem = js.native
+    var Pages$GridSortItem: typings.mendixmodelsdk.pagesMod.pages.GridSortItem
     
     @JSName("Pages$GridXPathSource")
-    var Pages$GridXPathSource: GridXPathSource = js.native
+    var Pages$GridXPathSource: GridXPathSource
     
     @JSName("Pages$GroupBox")
-    var Pages$GroupBox: GroupBox = js.native
+    var Pages$GroupBox: GroupBox
     
     @JSName("Pages$Header")
-    var Pages$Header: typings.mendixmodelsdk.pagesMod.pages.Header = js.native
+    var Pages$Header: typings.mendixmodelsdk.pagesMod.pages.Header
     
     @JSName("Pages$HorizontalSplitPane")
-    var Pages$HorizontalSplitPane: HorizontalSplitPane = js.native
+    var Pages$HorizontalSplitPane: HorizontalSplitPane
     
     @JSName("Pages$ImageIcon")
-    var Pages$ImageIcon: ImageIcon = js.native
+    var Pages$ImageIcon: ImageIcon
     
     @JSName("Pages$ImageUploader")
-    var Pages$ImageUploader: ImageUploader = js.native
+    var Pages$ImageUploader: ImageUploader
     
     @JSName("Pages$ImageViewerSource")
-    var Pages$ImageViewerSource: ImageViewerSource = js.native
+    var Pages$ImageViewerSource: ImageViewerSource
     
     @JSName("Pages$InputReferenceSetSelector")
-    var Pages$InputReferenceSetSelector: InputReferenceSetSelector = js.native
+    var Pages$InputReferenceSetSelector: InputReferenceSetSelector
     
     @JSName("Pages$Label")
-    var Pages$Label: Label = js.native
+    var Pages$Label: Label
     
     @JSName("Pages$LayoutCall")
-    var Pages$LayoutCall: LayoutCall = js.native
+    var Pages$LayoutCall: LayoutCall
     
     @JSName("Pages$LayoutCallArgument")
-    var Pages$LayoutCallArgument: LayoutCallArgument = js.native
+    var Pages$LayoutCallArgument: LayoutCallArgument
     
     @JSName("Pages$LayoutGrid")
-    var Pages$LayoutGrid: LayoutGrid = js.native
+    var Pages$LayoutGrid: LayoutGrid
     
     @JSName("Pages$LayoutGridColumn")
-    var Pages$LayoutGridColumn: LayoutGridColumn = js.native
+    var Pages$LayoutGridColumn: LayoutGridColumn
     
     @JSName("Pages$LayoutGridRow")
-    var Pages$LayoutGridRow: LayoutGridRow = js.native
+    var Pages$LayoutGridRow: LayoutGridRow
     
     @JSName("Pages$LayoutParameter")
-    var Pages$LayoutParameter: LayoutParameter = js.native
+    var Pages$LayoutParameter: LayoutParameter
     
     @JSName("Pages$LinkButton")
-    var Pages$LinkButton: LinkButton = js.native
+    var Pages$LinkButton: LinkButton
     
     @JSName("Pages$ListView")
-    var Pages$ListView: ListView = js.native
+    var Pages$ListView: ListView
     
     @JSName("Pages$ListViewDatabaseSource")
-    var Pages$ListViewDatabaseSource: ListViewDatabaseSource = js.native
+    var Pages$ListViewDatabaseSource: ListViewDatabaseSource
     
     @JSName("Pages$ListViewSearch")
-    var Pages$ListViewSearch: ListViewSearch = js.native
+    var Pages$ListViewSearch: ListViewSearch
     
     @JSName("Pages$ListViewTemplate")
-    var Pages$ListViewTemplate: ListViewTemplate = js.native
+    var Pages$ListViewTemplate: ListViewTemplate
     
     @JSName("Pages$ListViewXPathSource")
-    var Pages$ListViewXPathSource: ListViewXPathSource = js.native
+    var Pages$ListViewXPathSource: ListViewXPathSource
     
     @JSName("Pages$ListenTargetSource")
-    var Pages$ListenTargetSource: ListenTargetSource = js.native
+    var Pages$ListenTargetSource: ListenTargetSource
     
     @JSName("Pages$LoginButton")
-    var Pages$LoginButton: LoginButton = js.native
+    var Pages$LoginButton: LoginButton
     
     @JSName("Pages$LoginIdTextBox")
-    var Pages$LoginIdTextBox: LoginIdTextBox = js.native
+    var Pages$LoginIdTextBox: LoginIdTextBox
     
     @JSName("Pages$LogoutButton")
-    var Pages$LogoutButton: LogoutButton = js.native
+    var Pages$LogoutButton: LogoutButton
     
     @JSName("Pages$MasterDetail")
-    var Pages$MasterDetail: MasterDetail = js.native
+    var Pages$MasterDetail: MasterDetail
     
     @JSName("Pages$MasterDetailDetailRegion")
-    var Pages$MasterDetailDetailRegion: MasterDetailDetailRegion = js.native
+    var Pages$MasterDetailDetailRegion: MasterDetailDetailRegion
     
     @JSName("Pages$MasterDetailMasterRegion")
-    var Pages$MasterDetailMasterRegion: MasterDetailMasterRegion = js.native
+    var Pages$MasterDetailMasterRegion: MasterDetailMasterRegion
     
     @JSName("Pages$MenuBar")
-    var Pages$MenuBar: MenuBar = js.native
+    var Pages$MenuBar: MenuBar
     
     @JSName("Pages$MenuDocumentSource")
-    var Pages$MenuDocumentSource: MenuDocumentSource = js.native
+    var Pages$MenuDocumentSource: MenuDocumentSource
     
     @JSName("Pages$MicroflowClientAction")
-    var Pages$MicroflowClientAction: MicroflowClientAction = js.native
+    var Pages$MicroflowClientAction: MicroflowClientAction
     
     @JSName("Pages$MicroflowParameterMapping")
-    var Pages$MicroflowParameterMapping: MicroflowParameterMapping = js.native
+    var Pages$MicroflowParameterMapping: MicroflowParameterMapping
     
     @JSName("Pages$MicroflowSettings")
-    var Pages$MicroflowSettings: MicroflowSettings = js.native
+    var Pages$MicroflowSettings: MicroflowSettings
     
     @JSName("Pages$MicroflowSource")
-    var Pages$MicroflowSource: MicroflowSource = js.native
+    var Pages$MicroflowSource: MicroflowSource
     
     @JSName("Pages$NanoflowParameterMapping")
-    var Pages$NanoflowParameterMapping: NanoflowParameterMapping = js.native
+    var Pages$NanoflowParameterMapping: NanoflowParameterMapping
     
     @JSName("Pages$NanoflowSource")
-    var Pages$NanoflowSource: NanoflowSource = js.native
+    var Pages$NanoflowSource: NanoflowSource
     
     @JSName("Pages$NativeLayoutContent")
-    var Pages$NativeLayoutContent: NativeLayoutContent = js.native
+    var Pages$NativeLayoutContent: NativeLayoutContent
     
     @JSName("Pages$NavigationList")
-    var Pages$NavigationList: NavigationList = js.native
+    var Pages$NavigationList: NavigationList
     
     @JSName("Pages$NavigationListItem")
-    var Pages$NavigationListItem: NavigationListItem = js.native
+    var Pages$NavigationListItem: NavigationListItem
     
     @JSName("Pages$NavigationSource")
-    var Pages$NavigationSource: NavigationSource = js.native
+    var Pages$NavigationSource: NavigationSource
     
     @JSName("Pages$NavigationTree")
-    var Pages$NavigationTree: NavigationTree = js.native
+    var Pages$NavigationTree: NavigationTree
     
     @JSName("Pages$NewButton")
-    var Pages$NewButton: NewButton = js.native
+    var Pages$NewButton: NewButton
     
     @JSName("Pages$NoClientAction")
-    var Pages$NoClientAction: NoClientAction = js.native
+    var Pages$NoClientAction: NoClientAction
     
     @JSName("Pages$OfflineSchema")
-    var Pages$OfflineSchema: OfflineSchema = js.native
+    var Pages$OfflineSchema: OfflineSchema
     
     @JSName("Pages$OfflineSchemaFetchInstruction")
-    var Pages$OfflineSchemaFetchInstruction: OfflineSchemaFetchInstruction = js.native
+    var Pages$OfflineSchemaFetchInstruction: OfflineSchemaFetchInstruction
     
     @JSName("Pages$OnClickEnlarge")
-    var Pages$OnClickEnlarge: OnClickEnlarge = js.native
+    var Pages$OnClickEnlarge: OnClickEnlarge
     
     @JSName("Pages$OnClickMicroflow")
-    var Pages$OnClickMicroflow: OnClickMicroflow = js.native
+    var Pages$OnClickMicroflow: OnClickMicroflow
     
     @JSName("Pages$OnClickNothing")
-    var Pages$OnClickNothing: OnClickNothing = js.native
+    var Pages$OnClickNothing: OnClickNothing
     
     @JSName("Pages$OpenLinkClientAction")
-    var Pages$OpenLinkClientAction: OpenLinkClientAction = js.native
+    var Pages$OpenLinkClientAction: OpenLinkClientAction
     
     @JSName("Pages$OpenUserTaskClientAction")
-    var Pages$OpenUserTaskClientAction: OpenUserTaskClientAction = js.native
+    var Pages$OpenUserTaskClientAction: OpenUserTaskClientAction
     
     @JSName("Pages$OpenWorkflowClientAction")
-    var Pages$OpenWorkflowClientAction: OpenWorkflowClientAction = js.native
+    var Pages$OpenWorkflowClientAction: OpenWorkflowClientAction
     
     @JSName("Pages$PageClientAction")
-    var Pages$PageClientAction: PageClientAction = js.native
+    var Pages$PageClientAction: PageClientAction
     
     @JSName("Pages$PageForSpecialization")
-    var Pages$PageForSpecialization: PageForSpecialization = js.native
+    var Pages$PageForSpecialization: PageForSpecialization
     
     @JSName("Pages$PageSettings")
-    var Pages$PageSettings: PageSettings = js.native
+    var Pages$PageSettings: PageSettings
     
     @JSName("Pages$PageVariable")
-    var Pages$PageVariable: PageVariable = js.native
+    var Pages$PageVariable: PageVariable
     
     @JSName("Pages$PasswordTextBox")
-    var Pages$PasswordTextBox: PasswordTextBox = js.native
+    var Pages$PasswordTextBox: PasswordTextBox
     
     @JSName("Pages$Placeholder")
-    var Pages$Placeholder: Placeholder = js.native
+    var Pages$Placeholder: Placeholder
     
     @JSName("Pages$RadioButtonGroup")
-    var Pages$RadioButtonGroup: RadioButtonGroup = js.native
+    var Pages$RadioButtonGroup: RadioButtonGroup
     
     @JSName("Pages$RangeSearchField")
-    var Pages$RangeSearchField: RangeSearchField = js.native
+    var Pages$RangeSearchField: RangeSearchField
     
     @JSName("Pages$ReferenceSelector")
-    var Pages$ReferenceSelector: ReferenceSelector = js.native
+    var Pages$ReferenceSelector: ReferenceSelector
     
     @JSName("Pages$ReferenceSetSelector")
-    var Pages$ReferenceSetSelector: ReferenceSetSelector = js.native
+    var Pages$ReferenceSetSelector: ReferenceSetSelector
     
     @JSName("Pages$ReferenceSetSource")
-    var Pages$ReferenceSetSource: ReferenceSetSource = js.native
+    var Pages$ReferenceSetSource: ReferenceSetSource
     
     @JSName("Pages$RegularPageTemplateType")
-    var Pages$RegularPageTemplateType: RegularPageTemplateType = js.native
+    var Pages$RegularPageTemplateType: RegularPageTemplateType
     
     @JSName("Pages$RetrievalQuery")
-    var Pages$RetrievalQuery: RetrievalQuery = js.native
+    var Pages$RetrievalQuery: RetrievalQuery
     
     @JSName("Pages$RetrievalQueryParameter")
-    var Pages$RetrievalQueryParameter: RetrievalQueryParameter = js.native
+    var Pages$RetrievalQueryParameter: RetrievalQueryParameter
     
     @JSName("Pages$RetrievalSchema")
-    var Pages$RetrievalSchema: RetrievalSchema = js.native
+    var Pages$RetrievalSchema: RetrievalSchema
     
     @JSName("Pages$SaveButton")
-    var Pages$SaveButton: SaveButton = js.native
+    var Pages$SaveButton: SaveButton
     
     @JSName("Pages$SaveChangesClientAction")
-    var Pages$SaveChangesClientAction: SaveChangesClientAction = js.native
+    var Pages$SaveChangesClientAction: SaveChangesClientAction
     
     @JSName("Pages$ScrollContainer")
-    var Pages$ScrollContainer: ScrollContainer = js.native
+    var Pages$ScrollContainer: ScrollContainer
     
     @JSName("Pages$ScrollContainerRegion")
-    var Pages$ScrollContainerRegion: ScrollContainerRegion = js.native
+    var Pages$ScrollContainerRegion: ScrollContainerRegion
     
     @JSName("Pages$SearchBar")
-    var Pages$SearchBar: SearchBar = js.native
+    var Pages$SearchBar: SearchBar
     
     @JSName("Pages$SelectButton")
-    var Pages$SelectButton: SelectButton = js.native
+    var Pages$SelectButton: SelectButton
     
     @JSName("Pages$SelectPageTemplateType")
-    var Pages$SelectPageTemplateType: SelectPageTemplateType = js.native
+    var Pages$SelectPageTemplateType: SelectPageTemplateType
     
     @JSName("Pages$SelectorDatabaseSource")
-    var Pages$SelectorDatabaseSource: SelectorDatabaseSource = js.native
+    var Pages$SelectorDatabaseSource: SelectorDatabaseSource
     
     @JSName("Pages$SelectorMicroflowSource")
-    var Pages$SelectorMicroflowSource: SelectorMicroflowSource = js.native
+    var Pages$SelectorMicroflowSource: SelectorMicroflowSource
     
     @JSName("Pages$SelectorXPathSource")
-    var Pages$SelectorXPathSource: SelectorXPathSource = js.native
+    var Pages$SelectorXPathSource: SelectorXPathSource
     
     @JSName("Pages$SetTaskOutcomeClientAction")
-    var Pages$SetTaskOutcomeClientAction: SetTaskOutcomeClientAction = js.native
+    var Pages$SetTaskOutcomeClientAction: SetTaskOutcomeClientAction
     
     @JSName("Pages$SidebarToggleButton")
-    var Pages$SidebarToggleButton: SidebarToggleButton = js.native
+    var Pages$SidebarToggleButton: SidebarToggleButton
     
     @JSName("Pages$SignOutClientAction")
-    var Pages$SignOutClientAction: SignOutClientAction = js.native
+    var Pages$SignOutClientAction: SignOutClientAction
     
     @JSName("Pages$SimpleMenuBar")
-    var Pages$SimpleMenuBar: SimpleMenuBar = js.native
+    var Pages$SimpleMenuBar: SimpleMenuBar
     
     @JSName("Pages$SnippetCall")
-    var Pages$SnippetCall: SnippetCall = js.native
+    var Pages$SnippetCall: SnippetCall
     
     @JSName("Pages$SnippetCallWidget")
-    var Pages$SnippetCallWidget: SnippetCallWidget = js.native
+    var Pages$SnippetCallWidget: SnippetCallWidget
     
     @JSName("Pages$StaticImageViewer")
-    var Pages$StaticImageViewer: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer = js.native
+    var Pages$StaticImageViewer: typings.mendixmodelsdk.pagesMod.pages.StaticImageViewer
     
     @JSName("Pages$StaticOrDynamicString")
-    var Pages$StaticOrDynamicString: StaticOrDynamicString = js.native
+    var Pages$StaticOrDynamicString: StaticOrDynamicString
     
     @JSName("Pages$SyncButton")
-    var Pages$SyncButton: SyncButton = js.native
+    var Pages$SyncButton: SyncButton
     
     @JSName("Pages$SyncClientAction")
-    var Pages$SyncClientAction: SyncClientAction = js.native
+    var Pages$SyncClientAction: SyncClientAction
     
     @JSName("Pages$TabContainer")
-    var Pages$TabContainer: TabContainer = js.native
+    var Pages$TabContainer: TabContainer
     
     @JSName("Pages$TabPage")
-    var Pages$TabPage: TabPage = js.native
+    var Pages$TabPage: TabPage
     
     @JSName("Pages$Table")
-    var Pages$Table: typings.mendixmodelsdk.pagesMod.pages.Table = js.native
+    var Pages$Table: typings.mendixmodelsdk.pagesMod.pages.Table
     
     @JSName("Pages$TableCell")
-    var Pages$TableCell: typings.mendixmodelsdk.pagesMod.pages.TableCell = js.native
+    var Pages$TableCell: typings.mendixmodelsdk.pagesMod.pages.TableCell
     
     @JSName("Pages$TableColumn")
-    var Pages$TableColumn: TableColumn = js.native
+    var Pages$TableColumn: TableColumn
     
     @JSName("Pages$TableRow")
-    var Pages$TableRow: typings.mendixmodelsdk.pagesMod.pages.TableRow = js.native
+    var Pages$TableRow: typings.mendixmodelsdk.pagesMod.pages.TableRow
     
     @JSName("Pages$TemplateGrid")
-    var Pages$TemplateGrid: typings.mendixmodelsdk.pagesMod.pages.TemplateGrid = js.native
+    var Pages$TemplateGrid: typings.mendixmodelsdk.pagesMod.pages.TemplateGrid
     
     @JSName("Pages$TemplateGridContents")
-    var Pages$TemplateGridContents: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents = js.native
+    var Pages$TemplateGridContents: typings.mendixmodelsdk.pagesMod.pages.TemplateGridContents
     
     @JSName("Pages$TemplatePlaceholder")
-    var Pages$TemplatePlaceholder: TemplatePlaceholder = js.native
+    var Pages$TemplatePlaceholder: TemplatePlaceholder
     
     @JSName("Pages$TextArea")
-    var Pages$TextArea: TextArea = js.native
+    var Pages$TextArea: TextArea
     
     @JSName("Pages$TextBox")
-    var Pages$TextBox: TextBox = js.native
+    var Pages$TextBox: TextBox
     
     @JSName("Pages$Title")
-    var Pages$Title: typings.mendixmodelsdk.pagesMod.pages.Title = js.native
+    var Pages$Title: typings.mendixmodelsdk.pagesMod.pages.Title
     
     @JSName("Pages$UserTaskTemplateType")
-    var Pages$UserTaskTemplateType: UserTaskTemplateType = js.native
+    var Pages$UserTaskTemplateType: UserTaskTemplateType
     
     @JSName("Pages$ValidationMessage")
-    var Pages$ValidationMessage: ValidationMessage = js.native
+    var Pages$ValidationMessage: ValidationMessage
     
     @JSName("Pages$VerticalFlow")
-    var Pages$VerticalFlow: VerticalFlow = js.native
+    var Pages$VerticalFlow: VerticalFlow
     
     @JSName("Pages$VerticalSplitPane")
-    var Pages$VerticalSplitPane: VerticalSplitPane = js.native
+    var Pages$VerticalSplitPane: VerticalSplitPane
     
     @JSName("Pages$WebLayoutContent")
-    var Pages$WebLayoutContent: WebLayoutContent = js.native
+    var Pages$WebLayoutContent: WebLayoutContent
     
     @JSName("Pages$WidgetValidation")
-    var Pages$WidgetValidation: WidgetValidation = js.native
+    var Pages$WidgetValidation: WidgetValidation
     
     @JSName("Pages$WorkflowOverviewTemplateType")
-    var Pages$WorkflowOverviewTemplateType: WorkflowOverviewTemplateType = js.native
+    var Pages$WorkflowOverviewTemplateType: WorkflowOverviewTemplateType
     
     @JSName("Projects$OneTimeConversionMarker")
-    var Projects$OneTimeConversionMarker: OneTimeConversionMarker = js.native
+    var Projects$OneTimeConversionMarker: OneTimeConversionMarker
     
     @JSName("Reports$BasicReport")
-    var Reports$BasicReport: BasicReport = js.native
+    var Reports$BasicReport: BasicReport
     
     @JSName("Reports$BasicReportAggregate")
-    var Reports$BasicReportAggregate: BasicReportAggregate = js.native
+    var Reports$BasicReportAggregate: BasicReportAggregate
     
     @JSName("Reports$BasicReportColumn")
-    var Reports$BasicReportColumn: BasicReportColumn = js.native
+    var Reports$BasicReportColumn: BasicReportColumn
     
     @JSName("Reports$ReportButton")
-    var Reports$ReportButton: ReportButton = js.native
+    var Reports$ReportButton: ReportButton
     
     @JSName("Reports$ReportChart")
-    var Reports$ReportChart: ReportChart = js.native
+    var Reports$ReportChart: ReportChart
     
     @JSName("Reports$ReportChartSeries")
-    var Reports$ReportChartSeries: ReportChartSeries = js.native
+    var Reports$ReportChartSeries: ReportChartSeries
     
     @JSName("Reports$ReportDateRangeField")
-    var Reports$ReportDateRangeField: ReportDateRangeField = js.native
+    var Reports$ReportDateRangeField: ReportDateRangeField
     
     @JSName("Reports$ReportDateRangeSelector")
-    var Reports$ReportDateRangeSelector: ReportDateRangeSelector = js.native
+    var Reports$ReportDateRangeSelector: ReportDateRangeSelector
     
     @JSName("Reports$ReportDropDown")
-    var Reports$ReportDropDown: ReportDropDown = js.native
+    var Reports$ReportDropDown: ReportDropDown
     
     @JSName("Reports$ReportPane")
-    var Reports$ReportPane: ReportPane = js.native
+    var Reports$ReportPane: ReportPane
     
     @JSName("Reports$ReportZoomInfo")
-    var Reports$ReportZoomInfo: ReportZoomInfo = js.native
+    var Reports$ReportZoomInfo: ReportZoomInfo
     
     @JSName("Reports$ReportZoomMapping")
-    var Reports$ReportZoomMapping: ReportZoomMapping = js.native
+    var Reports$ReportZoomMapping: ReportZoomMapping
     
     @JSName("Rest$CorsConfiguration")
-    var Rest$CorsConfiguration: CorsConfiguration = js.native
+    var Rest$CorsConfiguration: CorsConfiguration
     
     @JSName("Rest$MetadataReference")
-    var Rest$MetadataReference: MetadataReference = js.native
+    var Rest$MetadataReference: MetadataReference
     
     @JSName("Rest$ODataKey")
-    var Rest$ODataKey: ODataKey = js.native
+    var Rest$ODataKey: ODataKey
     
     @JSName("Rest$ODataKeyPart")
-    var Rest$ODataKeyPart: ODataKeyPart = js.native
+    var Rest$ODataKeyPart: ODataKeyPart
     
     @JSName("Rest$ODataMappedValue")
-    var Rest$ODataMappedValue: ODataMappedValue = js.native
+    var Rest$ODataMappedValue: ODataMappedValue
     
     @JSName("Rest$ODataRemoteAssociationSource")
-    var Rest$ODataRemoteAssociationSource: ODataRemoteAssociationSource = js.native
+    var Rest$ODataRemoteAssociationSource: ODataRemoteAssociationSource
     
     @JSName("Rest$ODataRemoteEntitySource")
-    var Rest$ODataRemoteEntitySource: ODataRemoteEntitySource = js.native
+    var Rest$ODataRemoteEntitySource: ODataRemoteEntitySource
     
     @JSName("Rest$PublishedRestResource")
-    var Rest$PublishedRestResource: PublishedRestResource = js.native
+    var Rest$PublishedRestResource: PublishedRestResource
     
     @JSName("Rest$PublishedRestServiceOperation")
-    var Rest$PublishedRestServiceOperation: PublishedRestServiceOperation = js.native
+    var Rest$PublishedRestServiceOperation: PublishedRestServiceOperation
     
     @JSName("Rest$PublishedRestServiceResource")
-    var Rest$PublishedRestServiceResource: PublishedRestServiceResource = js.native
+    var Rest$PublishedRestServiceResource: PublishedRestServiceResource
     
     @JSName("Rest$RestOperationParameter")
-    var Rest$RestOperationParameter: RestOperationParameter = js.native
+    var Rest$RestOperationParameter: RestOperationParameter
     
     @JSName("Security$DemoUser")
-    var Security$DemoUser: DemoUser = js.native
+    var Security$DemoUser: DemoUser
     
     @JSName("Security$FileDocumentAccessRuleContainer")
-    var Security$FileDocumentAccessRuleContainer: FileDocumentAccessRuleContainer = js.native
+    var Security$FileDocumentAccessRuleContainer: FileDocumentAccessRuleContainer
     
     @JSName("Security$ImageAccessRuleContainer")
-    var Security$ImageAccessRuleContainer: ImageAccessRuleContainer = js.native
+    var Security$ImageAccessRuleContainer: ImageAccessRuleContainer
     
     @JSName("Security$ModuleRole")
-    var Security$ModuleRole: ModuleRole = js.native
+    var Security$ModuleRole: ModuleRole
     
     @JSName("Security$PasswordPolicySettings")
-    var Security$PasswordPolicySettings: PasswordPolicySettings = js.native
+    var Security$PasswordPolicySettings: PasswordPolicySettings
     
     @JSName("Security$UserRole")
-    var Security$UserRole: UserRole = js.native
+    var Security$UserRole: UserRole
     
     @JSName("Settings$ActionActivityDefaultColor")
-    var Settings$ActionActivityDefaultColor: ActionActivityDefaultColor = js.native
+    var Settings$ActionActivityDefaultColor: ActionActivityDefaultColor
     
     @JSName("Settings$Certificate")
-    var Settings$Certificate: Certificate = js.native
+    var Settings$Certificate: Certificate
     
     @JSName("Settings$CertificateSettings")
-    var Settings$CertificateSettings: CertificateSettings = js.native
+    var Settings$CertificateSettings: CertificateSettings
     
     @JSName("Settings$Configuration")
-    var Settings$Configuration: Configuration = js.native
+    var Settings$Configuration: Configuration
     
     @JSName("Settings$ConfigurationSettings")
-    var Settings$ConfigurationSettings: ConfigurationSettings = js.native
+    var Settings$ConfigurationSettings: ConfigurationSettings
     
     @JSName("Settings$ConstantValue")
-    var Settings$ConstantValue: ConstantValue = js.native
+    var Settings$ConstantValue: ConstantValue
     
     @JSName("Settings$CustomSetting")
-    var Settings$CustomSetting: CustomSetting = js.native
+    var Settings$CustomSetting: CustomSetting
     
     @JSName("Settings$IntegrationProjectSettingsPart")
-    var Settings$IntegrationProjectSettingsPart: IntegrationProjectSettingsPart = js.native
+    var Settings$IntegrationProjectSettingsPart: IntegrationProjectSettingsPart
     
     @JSName("Settings$JavaActionsSettings")
-    var Settings$JavaActionsSettings: JavaActionsSettings = js.native
+    var Settings$JavaActionsSettings: JavaActionsSettings
     
     @JSName("Settings$Language")
-    var Settings$Language: Language = js.native
+    var Settings$Language: Language
     
     @JSName("Settings$LanguageSettings")
-    var Settings$LanguageSettings: LanguageSettings = js.native
+    var Settings$LanguageSettings: LanguageSettings
     
     @JSName("Settings$ModelerSettings")
-    var Settings$ModelerSettings: ModelerSettings = js.native
+    var Settings$ModelerSettings: ModelerSettings
     
     @JSName("Settings$RuntimeSettings")
-    var Settings$RuntimeSettings: RuntimeSettings = js.native
+    var Settings$RuntimeSettings: RuntimeSettings
     
     @JSName("Settings$WebUIProjectSettingsPart")
-    var Settings$WebUIProjectSettingsPart: WebUIProjectSettingsPart = js.native
+    var Settings$WebUIProjectSettingsPart: WebUIProjectSettingsPart
     
     @JSName("Settings$WorkflowsProjectSettingsPart")
-    var Settings$WorkflowsProjectSettingsPart: WorkflowsProjectSettingsPart = js.native
+    var Settings$WorkflowsProjectSettingsPart: WorkflowsProjectSettingsPart
     
     @JSName("Texts$SystemText")
-    var Texts$SystemText: SystemText = js.native
+    var Texts$SystemText: SystemText
     
     @JSName("Texts$Text")
-    var Texts$Text: Text = js.native
+    var Texts$Text: Text
     
     @JSName("Texts$Translation")
-    var Texts$Translation: Translation = js.native
+    var Texts$Translation: Translation
     
     @JSName("WebServices$DataAssociation")
-    var WebServices$DataAssociation: DataAssociation = js.native
+    var WebServices$DataAssociation: DataAssociation
     
     @JSName("WebServices$DataAttribute")
-    var WebServices$DataAttribute: DataAttribute = js.native
+    var WebServices$DataAttribute: DataAttribute
     
     @JSName("WebServices$DataEntity")
-    var WebServices$DataEntity: DataEntity = js.native
+    var WebServices$DataEntity: DataEntity
     
     @JSName("WebServices$OperationInfo")
-    var WebServices$OperationInfo: OperationInfo = js.native
+    var WebServices$OperationInfo: OperationInfo
     
     @JSName("WebServices$PartEncoding")
-    var WebServices$PartEncoding: PartEncoding = js.native
+    var WebServices$PartEncoding: PartEncoding
     
     @JSName("WebServices$PublishedOperation")
-    var WebServices$PublishedOperation: PublishedOperation = js.native
+    var WebServices$PublishedOperation: PublishedOperation
     
     @JSName("WebServices$PublishedParameter")
-    var WebServices$PublishedParameter: PublishedParameter = js.native
+    var WebServices$PublishedParameter: PublishedParameter
     
     @JSName("WebServices$RpcMessagePartElement")
-    var WebServices$RpcMessagePartElement: RpcMessagePartElement = js.native
+    var WebServices$RpcMessagePartElement: RpcMessagePartElement
     
     @JSName("WebServices$RpcOperationElement")
-    var WebServices$RpcOperationElement: RpcOperationElement = js.native
+    var WebServices$RpcOperationElement: RpcOperationElement
     
     @JSName("WebServices$ServiceInfo")
-    var WebServices$ServiceInfo: ServiceInfo = js.native
+    var WebServices$ServiceInfo: ServiceInfo
     
     @JSName("WebServices$SystemIdDataAttribute")
-    var WebServices$SystemIdDataAttribute: SystemIdDataAttribute = js.native
+    var WebServices$SystemIdDataAttribute: SystemIdDataAttribute
     
     @JSName("WebServices$VersionedService")
-    var WebServices$VersionedService: VersionedService = js.native
+    var WebServices$VersionedService: VersionedService
     
     @JSName("WebServices$WsdlDescription")
-    var WebServices$WsdlDescription: WsdlDescription = js.native
+    var WebServices$WsdlDescription: WsdlDescription
     
     @JSName("WebServices$WsdlEntry")
-    var WebServices$WsdlEntry: WsdlEntry = js.native
+    var WebServices$WsdlEntry: WsdlEntry
     
     @JSName("Workflows$BooleanSplitOutcome")
-    var Workflows$BooleanSplitOutcome: BooleanSplitOutcome = js.native
+    var Workflows$BooleanSplitOutcome: BooleanSplitOutcome
     
     @JSName("Workflows$CallMicroflowTask")
-    var Workflows$CallMicroflowTask: CallMicroflowTask = js.native
+    var Workflows$CallMicroflowTask: CallMicroflowTask
     
     @JSName("Workflows$CallWorkflowActivity")
-    var Workflows$CallWorkflowActivity: CallWorkflowActivity = js.native
+    var Workflows$CallWorkflowActivity: CallWorkflowActivity
     
     @JSName("Workflows$EndWorkflowActivity")
-    var Workflows$EndWorkflowActivity: EndWorkflowActivity = js.native
+    var Workflows$EndWorkflowActivity: EndWorkflowActivity
     
     @JSName("Workflows$EnumerationValueSplitOutcome")
-    var Workflows$EnumerationValueSplitOutcome: EnumerationValueSplitOutcome = js.native
+    var Workflows$EnumerationValueSplitOutcome: EnumerationValueSplitOutcome
     
     @JSName("Workflows$ExclusiveSplitActivity")
-    var Workflows$ExclusiveSplitActivity: ExclusiveSplitActivity = js.native
+    var Workflows$ExclusiveSplitActivity: ExclusiveSplitActivity
     
     @JSName("Workflows$Flow")
-    var Workflows$Flow: Flow = js.native
+    var Workflows$Flow: Flow
     
     @JSName("Workflows$ParallelSplitActivity")
-    var Workflows$ParallelSplitActivity: ParallelSplitActivity = js.native
+    var Workflows$ParallelSplitActivity: ParallelSplitActivity
     
     @JSName("Workflows$ParallelSplitOutcome")
-    var Workflows$ParallelSplitOutcome: ParallelSplitOutcome = js.native
+    var Workflows$ParallelSplitOutcome: ParallelSplitOutcome
     
     @JSName("Workflows$UserTask")
-    var Workflows$UserTask: UserTask = js.native
+    var Workflows$UserTask: UserTask
     
     @JSName("Workflows$WorkflowTaskOutcome")
-    var Workflows$WorkflowTaskOutcome: WorkflowTaskOutcome = js.native
+    var Workflows$WorkflowTaskOutcome: WorkflowTaskOutcome
     
     @JSName("Workflows$XPathBasedUserSource")
-    var Workflows$XPathBasedUserSource: XPathBasedUserSource = js.native
+    var Workflows$XPathBasedUserSource: XPathBasedUserSource
     
     @JSName("XmlSchemas$XmlElement")
-    var XmlSchemas$XmlElement: XmlElement = js.native
+    var XmlSchemas$XmlElement: XmlElement
     
     @JSName("XmlSchemas$XmlSchemaEntry")
-    var XmlSchemas$XmlSchemaEntry: XmlSchemaEntry = js.native
+    var XmlSchemas$XmlSchemaEntry: XmlSchemaEntry
   }
   object ConcreteModelElements {
     
@@ -4483,7 +4481,9 @@ object baseModelMod {
   }
   
   @js.native
-  trait IBaseModel extends IAbstractModel {
+  trait IBaseModel
+    extends StObject
+       with IAbstractModel {
     
     def allBuildingBlocks(): js.Array[IBuildingBlock] = js.native
     
@@ -4698,7 +4698,9 @@ object baseModelMod {
   }
   
   @js.native
-  trait IModel extends IBaseModel {
+  trait IModel
+    extends StObject
+       with IBaseModel {
     
     /**
       * Given a qualified name, returns a Module.

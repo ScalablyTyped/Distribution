@@ -1,0 +1,49 @@
+package typings.fpTs.mod
+
+import typings.fpTs.compactableMod.Compactable
+import typings.fpTs.compactableMod.Compactable1
+import typings.fpTs.compactableMod.Compactable2
+import typings.fpTs.compactableMod.Compactable2C
+import typings.fpTs.compactableMod.Compactable3C
+import typings.fpTs.compactableMod.CompactableComposition
+import typings.fpTs.compactableMod.CompactableComposition11
+import typings.fpTs.compactableMod.CompactableComposition12
+import typings.fpTs.compactableMod.CompactableComposition21
+import typings.fpTs.compactableMod.CompactableComposition22
+import typings.fpTs.compactableMod.CompactableComposition22C
+import typings.fpTs.compactableMod.CompactableComposition23C
+import typings.fpTs.compactableMod.CompactableComposition2C1
+import typings.fpTs.functorMod.Functor
+import typings.fpTs.functorMod.Functor1
+import typings.fpTs.functorMod.Functor2
+import typings.fpTs.functorMod.Functor2C
+import typings.fpTs.functorMod.Functor3C
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+object compactable {
+  
+  @JSImport("fp-ts", "compactable")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Functor1[F], G: Compactable1[G] & Functor1[G]): CompactableComposition11[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition11[F, G]]
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Functor1[F], G: Compactable2[G] & Functor2[G]): CompactableComposition12[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition12[F, G]]
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */](F: Functor2[F], G: Compactable1[G] & Functor1[G]): CompactableComposition21[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition21[F, G]]
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */](F: Functor2[F], G: Compactable2[G] & Functor2[G]): CompactableComposition22[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition22[F, G]]
+  @scala.inline
+  def getCompactableComposition[F, G](F: Functor[F], G: Compactable[G] & Functor[G]): CompactableComposition[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition[F, G]]
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Functor1[F], G: (Compactable2C[G, E]) & (Functor2C[G, E])): CompactableComposition12[F, G] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition12[F, G]]
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS */ js.Any */, E](F: Functor2C[F, E], G: Compactable1[G] & Functor1[G]): CompactableComposition2C1[F, G, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition2C1[F, G, E]]
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, E](F: Functor2[F], G: (Compactable2C[G, E]) & (Functor2C[G, E])): CompactableComposition22C[F, G, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition22C[F, G, E]]
+  @scala.inline
+  def getCompactableComposition[F /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS2 */ js.Any */, G /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify URIS3 */ js.Any */, E](F: Functor2[F], G: (Compactable3C[G, E]) & (Functor3C[G, E])): CompactableComposition23C[F, G, E] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCompactableComposition")(F.asInstanceOf[js.Any], G.asInstanceOf[js.Any])).asInstanceOf[CompactableComposition23C[F, G, E]]
+}

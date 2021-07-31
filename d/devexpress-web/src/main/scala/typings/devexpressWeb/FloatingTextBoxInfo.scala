@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains floating text boxes settings.
   */
-@js.native
-trait FloatingTextBoxInfo extends FloatingObjectInfo {
+trait FloatingTextBoxInfo
+  extends StObject
+     with FloatingObjectInfo {
   
   /**
     * Gets the sub-document representing the floating text box's content.
     */
-  val contentSubDocument: SubDocument = js.native
+  val contentSubDocument: SubDocument
 }
 object FloatingTextBoxInfo {
   

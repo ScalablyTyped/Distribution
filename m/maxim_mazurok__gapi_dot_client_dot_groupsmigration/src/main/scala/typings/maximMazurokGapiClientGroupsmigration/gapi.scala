@@ -4,7 +4,6 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientGroupsmigration.anon.Accesstoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -21,14 +20,13 @@ object gapi {
         def insert(request: Accesstoken): Request[Groups] = js.native
       }
       
-      @js.native
       trait Groups extends StObject {
         
         /** The kind of insert resource this is. */
-        var kind: js.UndefOr[String] = js.native
+        var kind: js.UndefOr[String] = js.undefined
         
         /** The status of the insert request. */
-        var responseCode: js.UndefOr[String] = js.native
+        var responseCode: js.UndefOr[String] = js.undefined
       }
       object Groups {
         

@@ -4,7 +4,6 @@ import typings.iitc.iitctypesMod.IITC.Portal
 import typings.leaflet.mod.LayerGroup_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ornamentsMod {
@@ -36,11 +35,11 @@ object ornamentsMod {
       
       var OVERLAY_SIZE: Double = js.native
       
-      var _beacons: LayerGroup_[_] = js.native
+      var _beacons: LayerGroup_[js.Any] = js.native
       
-      var _frackers: LayerGroup_[_] = js.native
+      var _frackers: LayerGroup_[js.Any] = js.native
       
-      var _layer: LayerGroup_[_] = js.native
+      var _layer: LayerGroup_[js.Any] = js.native
       
       def addPortal(portal: Portal): Unit = js.native
       

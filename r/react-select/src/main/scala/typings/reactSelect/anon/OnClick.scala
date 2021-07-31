@@ -2,17 +2,15 @@ package typings.reactSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnClick extends StObject {
   
-  def onClick(event: js.Any): Unit = js.native
+  def onClick(event: js.Any): Unit
   
-  def onMouseDown(event: js.Any): Unit = js.native
+  def onMouseDown(event: js.Any): Unit
   
-  def onTouchEnd(event: js.Any): Unit = js.native
+  def onTouchEnd(event: js.Any): Unit
 }
 object OnClick {
   

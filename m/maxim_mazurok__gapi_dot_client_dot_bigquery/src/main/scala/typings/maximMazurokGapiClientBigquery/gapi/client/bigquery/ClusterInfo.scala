@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterInfo extends StObject {
   
   /** Centroid id. */
-  var centroidId: js.UndefOr[String] = js.native
+  var centroidId: js.UndefOr[String] = js.undefined
   
   /** Cluster radius, the average distance from centroid to each point assigned to the cluster. */
-  var clusterRadius: js.UndefOr[Double] = js.native
+  var clusterRadius: js.UndefOr[Double] = js.undefined
   
   /** Cluster size, the total number of points assigned to the cluster. */
-  var clusterSize: js.UndefOr[String] = js.native
+  var clusterSize: js.UndefOr[String] = js.undefined
 }
 object ClusterInfo {
   

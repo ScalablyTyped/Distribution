@@ -3,21 +3,19 @@ package typings.phaser.Phaser.Types.Core
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyboardInputConfig extends StObject {
   
   /**
     * `preventDefault` will be called on every non-modified key which has a key code in this array. By default it is empty.
     */
-  var capture: js.UndefOr[js.Array[integer]] = js.native
+  var capture: js.UndefOr[js.Array[integer]] = js.undefined
   
   /**
     * Where the Keyboard Manager listens for keyboard input events.
     */
-  var target: js.UndefOr[js.Any] = js.native
+  var target: js.UndefOr[js.Any] = js.undefined
 }
 object KeyboardInputConfig {
   

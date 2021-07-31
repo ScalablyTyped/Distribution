@@ -2,14 +2,14 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TupleTypeReference extends TypeReference {
+trait TupleTypeReference
+  extends StObject
+     with TypeReference {
   
   @JSName("target")
-  var target_TupleTypeReference: TupleType = js.native
+  var target_TupleTypeReference: TupleType
 }
 object TupleTypeReference {
   

@@ -6,14 +6,15 @@ import typings.playable.logoTypesMod.ILogoControl
 import typings.playable.logoTypesMod.ILogoViewConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object logoMod {
   
   @JSImport("playable/dist/src/modules/ui/controls/logo/logo", JSImport.Default)
   @js.native
-  class default protected () extends Logo {
+  class default protected ()
+    extends StObject
+       with Logo {
     def this(hasEventEmitterTextMapTooltipServiceTheme: TextMap) = this()
   }
   object default {
@@ -53,7 +54,9 @@ object logoMod {
   }
   
   @js.native
-  trait Logo extends ILogoControl {
+  trait Logo
+    extends StObject
+       with ILogoControl {
     
     var _bindCallbacks: js.Any = js.native
     

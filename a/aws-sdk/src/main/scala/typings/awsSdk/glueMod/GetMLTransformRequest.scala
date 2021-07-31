@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMLTransformRequest extends StObject {
   
   /**
     * The unique identifier of the transform, generated at the time that the transform was created.
     */
-  var TransformId: HashString = js.native
+  var TransformId: HashString
 }
 object GetMLTransformRequest {
   

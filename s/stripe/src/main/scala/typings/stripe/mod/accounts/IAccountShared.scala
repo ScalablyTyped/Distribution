@@ -7,28 +7,26 @@ import typings.stripe.stripeStrings.company
 import typings.stripe.stripeStrings.individual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccountShared extends StObject {
   
   /**
     * Optional information related to the business.
     */
-  var business_profile: js.UndefOr[Mcc] = js.native
+  var business_profile: js.UndefOr[Mcc] = js.undefined
   
   /**
     * The business type. Can be individual or company.
     */
-  var business_type: js.UndefOr[individual | company] = js.native
+  var business_type: js.UndefOr[individual | company] = js.undefined
   
   /**
     * Three-letter ISO currency code representing the default currency for the
     * account. This must be a currency that Stripe supports in the account’s
     * country.
     */
-  var default_currency: js.UndefOr[String] = js.native
+  var default_currency: js.UndefOr[String] = js.undefined
   
   /**
     * Email address of the account holder. For standalone accounts, this is used
@@ -36,14 +34,14 @@ trait IAccountShared extends StObject {
     * accounts, this is only to make the account easier to identify to you: Stripe
     * will not email the account holder.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Internal-only description of the product being sold or service being
     * provided by this account. It’s used by Stripe for risk and underwriting
     * purposes.
     */
-  var product_description: js.UndefOr[String] = js.native
+  var product_description: js.UndefOr[String] = js.undefined
   
   /**
     * The set of capabilities you want to unlock for this account (US only).
@@ -51,19 +49,19 @@ trait IAccountShared extends StObject {
     * requirements and Stripe has verified them. An account may have some of
     * its requested capabilities be active and some be inactive.
     */
-  var requested_capabilities: js.UndefOr[js.Array[String]] = js.native
+  var requested_capabilities: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Account options for customizing how the account functions within Stripe.
     */
-  var settings: js.UndefOr[Branding] = js.native
+  var settings: js.UndefOr[Branding] = js.undefined
   
   /**
     * Details on who accepted the Stripe terms of service, and when they
     * accepted it. See our updating managed accounts guide for more
     * information
     */
-  var tos_acceptance: js.UndefOr[Date] = js.native
+  var tos_acceptance: js.UndefOr[Date] = js.undefined
 }
 object IAccountShared {
   

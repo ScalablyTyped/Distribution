@@ -2,32 +2,30 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // name change to avoid conflict with base ecmascript Symbol
-@js.native
 trait NovaSymbol extends StObject {
   
-  val comment: String | Null = js.native
+  val comment: String | Null
   
-  val displayName: String = js.native
+  val displayName: String
   
-  val name: String = js.native
+  val name: String
   
-  val nameRange: Range = js.native
+  val nameRange: Range
   
-  val parent: NovaSymbol | Null = js.native
+  val parent: NovaSymbol | Null
   
-  val range: Range = js.native
+  val range: Range
   
-  val `type`: NovaSymbolType = js.native
+  val `type`: NovaSymbolType
 }
 object NovaSymbol {
   
   @scala.inline
   def apply(displayName: String, name: String, nameRange: Range, range: Range, `type`: NovaSymbolType): NovaSymbol = {
-    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameRange = nameRange.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(displayName = displayName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameRange = nameRange.asInstanceOf[js.Any], range = range.asInstanceOf[js.Any], comment = null, parent = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[NovaSymbol]
   }

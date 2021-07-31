@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebPropertySummary extends StObject {
   
   /** Web property ID of the form UA-XXXXX-YY. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Internal ID for this web property. */
-  var internalWebPropertyId: js.UndefOr[String] = js.native
+  var internalWebPropertyId: js.UndefOr[String] = js.undefined
   
   /** Resource type for Analytics WebPropertySummary. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Level for this web property. Possible values are STANDARD or PREMIUM. */
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
   /** Web property name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** List of profiles under this web property. */
-  var profiles: js.UndefOr[js.Array[ProfileSummary]] = js.native
+  var profiles: js.UndefOr[js.Array[ProfileSummary]] = js.undefined
   
   /** Indicates whether this web property is starred or not. */
-  var starred: js.UndefOr[Boolean] = js.native
+  var starred: js.UndefOr[Boolean] = js.undefined
   
   /** Website url for this web property. */
-  var websiteUrl: js.UndefOr[String] = js.native
+  var websiteUrl: js.UndefOr[String] = js.undefined
 }
 object WebPropertySummary {
   

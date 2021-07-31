@@ -4,7 +4,6 @@ import typings.angularCore.mod.ModuleWithProviders
 import typings.ionicCore.utilsConfigMod.IonicConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionicModuleMod {
@@ -15,11 +14,13 @@ object ionicModuleMod {
   /* static members */
   object IonicModule {
     
-    @JSImport("@ionic/angular/ionic-module", "IonicModule.forRoot")
+    @JSImport("@ionic/angular/ionic-module", "IonicModule")
     @js.native
-    def forRoot(): ModuleWithProviders[IonicModule] = js.native
-    @JSImport("@ionic/angular/ionic-module", "IonicModule.forRoot")
-    @js.native
-    def forRoot(config: IonicConfig): ModuleWithProviders[IonicModule] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def forRoot(): ModuleWithProviders[IonicModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")().asInstanceOf[ModuleWithProviders[IonicModule]]
+    @scala.inline
+    def forRoot(config: IonicConfig): ModuleWithProviders[IonicModule] = ^.asInstanceOf[js.Dynamic].applyDynamic("forRoot")(config.asInstanceOf[js.Any]).asInstanceOf[ModuleWithProviders[IonicModule]]
   }
 }

@@ -2,19 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PullInstantiationHelpers {
   
-  @js.native
   trait MutableTypeArgumentMap extends StObject {
     
-    var createdDuplicateTypeArgumentMap: Boolean = js.native
+    var createdDuplicateTypeArgumentMap: Boolean
     
-    def ensureTypeArgumentCopy(): Unit = js.native
+    def ensureTypeArgumentCopy(): Unit
     
-    var typeParameterArgumentMap: TypeArgumentMap = js.native
+    var typeParameterArgumentMap: TypeArgumentMap
   }
   object MutableTypeArgumentMap {
     

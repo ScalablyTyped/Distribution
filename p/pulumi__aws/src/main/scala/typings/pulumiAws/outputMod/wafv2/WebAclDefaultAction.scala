@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclDefaultAction extends StObject {
   
   /**
     * Specifies that AWS WAF should allow requests by default.
     */
-  var allow: js.UndefOr[WebAclDefaultActionAllow] = js.native
+  var allow: js.UndefOr[WebAclDefaultActionAllow] = js.undefined
   
   /**
     * Specifies that AWS WAF should block requests by default.
     */
-  var block: js.UndefOr[WebAclDefaultActionBlock] = js.native
+  var block: js.UndefOr[WebAclDefaultActionBlock] = js.undefined
 }
 object WebAclDefaultAction {
   

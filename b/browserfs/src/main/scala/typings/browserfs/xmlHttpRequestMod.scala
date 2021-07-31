@@ -12,7 +12,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlHttpRequestMod {
@@ -40,20 +39,23 @@ object xmlHttpRequestMod {
     def this(listingUrlOrObj: js.Object) = this()
     def this(listingUrlOrObj: String, prefixUrl: String) = this()
     def this(listingUrlOrObj: js.Object, prefixUrl: String) = this()
-    def this(listingUrlOrObj: String, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
     def this(listingUrlOrObj: String, prefixUrl: String, deprecateMsg: Boolean) = this()
-    def this(listingUrlOrObj: js.Object, prefixUrl: js.UndefOr[scala.Nothing], deprecateMsg: Boolean) = this()
+    def this(listingUrlOrObj: String, prefixUrl: Unit, deprecateMsg: Boolean) = this()
     def this(listingUrlOrObj: js.Object, prefixUrl: String, deprecateMsg: Boolean) = this()
+    def this(listingUrlOrObj: js.Object, prefixUrl: Unit, deprecateMsg: Boolean) = this()
   }
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/backend/XmlHttpRequest", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Construct an XmlHttpRequest file system backend with the given options.
       */
-    @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.Create")
-    @js.native
-    def Create(opts: XmlHttpRequestOptions, cb: BFSCallback[XmlHttpRequest]): Unit = js.native
+    @scala.inline
+    def Create(opts: XmlHttpRequestOptions, cb: BFSCallback[XmlHttpRequest]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * **Deprecated. Please use XmlHttpRequest.Create() method instead to construct XmlHttpRequest objects.**
@@ -62,23 +64,14 @@ object xmlHttpRequestMod {
       * Uses the base URL as the URL prefix for fetched files.
       * @param cb Called when the file system has been instantiated, or if an error occurs.
       */
-    @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.FromURL")
-    @js.native
-    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest]): Unit = js.native
-    @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.FromURL")
-    @js.native
-    def FromURL(
-      url: String,
-      cb: BFSCallback[XmlHttpRequest],
-      baseUrl: js.UndefOr[scala.Nothing],
-      deprecateMsg: Boolean
-    ): Unit = js.native
-    @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.FromURL")
-    @js.native
-    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = js.native
-    @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.FromURL")
-    @js.native
-    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = js.native
+    @scala.inline
+    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: String, deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def FromURL(url: String, cb: BFSCallback[XmlHttpRequest], baseUrl: Unit, deprecateMsg: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("FromURL")(url.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], baseUrl.asInstanceOf[js.Any], deprecateMsg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.Name")
     @js.native
@@ -88,9 +81,8 @@ object xmlHttpRequestMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @JSImport("browserfs/dist/node/backend/XmlHttpRequest", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -130,7 +122,7 @@ object xmlHttpRequestMod {
     override def chownSync(p: String, isLchown: Boolean, uid: Double, gid: Double): Unit = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     def empty(): Unit = js.native
     
@@ -249,12 +241,11 @@ object xmlHttpRequestMod {
     override def writeFile(fname: String, data: js.Any, encoding: Null, flag: FileFlag, mode: Double, cb: BFSOneArgCallback): Unit = js.native
   }
   
-  @js.native
   trait XmlHttpRequestOptions extends StObject {
     
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
-    var index: js.UndefOr[String | js.Object] = js.native
+    var index: js.UndefOr[String | js.Object] = js.undefined
   }
   object XmlHttpRequestOptions {
     

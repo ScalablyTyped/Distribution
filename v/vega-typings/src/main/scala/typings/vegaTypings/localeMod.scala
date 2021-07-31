@@ -6,17 +6,15 @@ import typings.vegaTypings.utilMod.Vector2
 import typings.vegaTypings.utilMod.Vector7
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeMod {
   
-  @js.native
   trait Locale extends StObject {
     
-    var number: js.UndefOr[NumberLocale] = js.native
+    var number: js.UndefOr[NumberLocale] = js.undefined
     
-    var time: js.UndefOr[TimeLocale] = js.native
+    var time: js.UndefOr[TimeLocale] = js.undefined
   }
   object Locale {
     
@@ -43,48 +41,47 @@ object localeMod {
     }
   }
   
-  @js.native
   trait NumberLocale extends StObject {
     
     /**
       * The currency prefix and suffix (e.g., ["$", ""]).
       */
-    var currency: Vector2[String] = js.native
+    var currency: Vector2[String]
     
     /**
       * The decimal point (e.g., ".").
       */
-    var decimal: String = js.native
+    var decimal: String
     
     /**
       * The array of group sizes (e.g., [3]), cycled as needed.
       */
-    var grouping: js.Array[Double] = js.native
+    var grouping: js.Array[Double]
     
     /**
       * The minus sign (defaults to hyphen-minus, "-").
       */
-    var minus: js.UndefOr[String] = js.native
+    var minus: js.UndefOr[String] = js.undefined
     
     /**
       * The not-a-number value (defaults to "NaN").
       */
-    var nan: js.UndefOr[String] = js.native
+    var nan: js.UndefOr[String] = js.undefined
     
     /**
       * An array of ten strings to replace the numerals 0-9.
       */
-    var numerals: js.UndefOr[Vector10[String]] = js.native
+    var numerals: js.UndefOr[Vector10[String]] = js.undefined
     
     /**
       * The percent sign (defaults to "%").
       */
-    var percent: js.UndefOr[String] = js.native
+    var percent: js.UndefOr[String] = js.undefined
     
     /**
       * The group separator (e.g., ",").
       */
-    var thousands: String = js.native
+    var thousands: String
   }
   object NumberLocale {
     
@@ -138,48 +135,47 @@ object localeMod {
     }
   }
   
-  @js.native
   trait TimeLocale extends StObject {
     
     /**
       * The date (%x) format specifier (e.g., "%m/%d/%Y").
       */
-    var date: String = js.native
+    var date: String
     
     /**
       * The date and time (%c) format specifier (e.g., "%a %b %e %X %Y").
       */
-    var dateTime: String = js.native
+    var dateTime: String
     
     /**
       * The full names of the weekdays, starting with Sunday.
       */
-    var days: Vector7[String] = js.native
+    var days: Vector7[String]
     
     /**
       * The full names of the months (starting with January).
       */
-    var months: Vector12[String] = js.native
+    var months: Vector12[String]
     
     /**
       * The A.M. and P.M. equivalents (e.g., ["AM", "PM"]).
       */
-    var periods: Vector2[String] = js.native
+    var periods: Vector2[String]
     
     /**
       * The abbreviated names of the weekdays, starting with Sunday.
       */
-    var shortDays: Vector7[String] = js.native
+    var shortDays: Vector7[String]
     
     /**
       * The abbreviated names of the months (starting with January).
       */
-    var shortMonths: Vector12[String] = js.native
+    var shortMonths: Vector12[String]
     
     /**
       * The time (%X) format specifier (e.g., "%H:%M:%S").
       */
-    var time: String = js.native
+    var time: String
   }
   object TimeLocale {
     

@@ -12,53 +12,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait summaryStatisticsForAgeSummaryStatisticsForAgeParams extends Object {
+trait summaryStatisticsForAgeSummaryStatisticsForAgeParams
+  extends StObject
+     with Object {
   
   /**
     * The end time for the age calculation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
-  var endTime: Date | String | Double = js.native
+  var endTime: Date | String | Double
   
   /**
     * The layer from which to generate age statistics for the given `startTime` and `endTime`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Allows for cancelable requests.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
-  var signal: js.UndefOr[AbortSignal] = js.native
+  var signal: js.UndefOr[AbortSignal] = js.undefined
   
   /**
     * The start time for the age calculation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
-  var startTime: Date | String | Double = js.native
+  var startTime: Date | String | Double
   
   /**
     * The desired units of the age result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-summaryStatisticsForAge.html#summaryStatisticsForAge)
     */
-  var unit: years | months | days | hours | minutes | seconds = js.native
+  var unit: years | months | days | hours | minutes | seconds
   
   /**
     * The view in which features will be rendered.
     *
     * [Read more...](global.html)
     */
-  var view: js.UndefOr[MapView | SceneView] = js.native
+  var view: js.UndefOr[MapView | SceneView] = js.undefined
 }
 object summaryStatisticsForAgeSummaryStatisticsForAgeParams {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLogPatternSetsResponse extends StObject {
   
   /**
     * The list of log pattern sets.
     */
-  var LogPatternSets: js.UndefOr[LogPatternSetList] = js.native
+  var LogPatternSets: js.UndefOr[LogPatternSetList] = js.undefined
   
   /**
     * The token used to retrieve the next page of results. This value is null when there are no more results to return. 
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.native
+  var ResourceGroupName: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceGroupName] = js.undefined
 }
 object ListLogPatternSetsResponse {
   

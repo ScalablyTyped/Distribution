@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetEntry extends StObject {
   
   /**
     * The presigned URI of the data set item.
     */
-  var dataURI: js.UndefOr[PresignedURI] = js.native
+  var dataURI: js.UndefOr[PresignedURI] = js.undefined
   
   /**
     * The name of the data set item.
     */
-  var entryName: js.UndefOr[EntryName] = js.native
+  var entryName: js.UndefOr[EntryName] = js.undefined
 }
 object DatasetEntry {
   

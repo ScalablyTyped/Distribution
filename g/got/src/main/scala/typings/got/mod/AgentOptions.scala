@@ -3,15 +3,13 @@ package typings.got.mod
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AgentOptions extends StObject {
   
-  var http: Agent = js.native
+  var http: Agent
   
-  var https: typings.node.httpsMod.Agent = js.native
+  var https: typings.node.httpsMod.Agent
 }
 object AgentOptions {
   

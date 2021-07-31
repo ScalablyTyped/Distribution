@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLoadBalancerTlsCertificatesResult extends StObject {
   
   /**
     * An array of LoadBalancerTlsCertificate objects describing your SSL/TLS certificates.
     */
-  var tlsCertificates: js.UndefOr[LoadBalancerTlsCertificateList] = js.native
+  var tlsCertificates: js.UndefOr[LoadBalancerTlsCertificateList] = js.undefined
 }
 object GetLoadBalancerTlsCertificatesResult {
   

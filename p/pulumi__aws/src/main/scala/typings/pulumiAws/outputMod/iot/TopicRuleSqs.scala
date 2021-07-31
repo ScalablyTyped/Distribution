@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.iot
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleSqs extends StObject {
   
   /**
     * The URL of the Amazon SQS queue.
     */
-  var queueUrl: String = js.native
+  var queueUrl: String
   
   /**
     * The ARN of the IAM role that grants access.
     */
-  var roleArn: String = js.native
+  var roleArn: String
   
   /**
     * Specifies whether to use Base64 encoding.
     */
-  var useBase64: Boolean = js.native
+  var useBase64: Boolean
 }
 object TopicRuleSqs {
   

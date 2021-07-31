@@ -15,7 +15,6 @@ import typings.reactMdUtils.typesTypesMod.LabelRequiredForA11y
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
@@ -24,9 +23,9 @@ object menuMod {
   @js.native
   val Menu: ForwardRefExoticComponent[PickBaseMenuPropshiddenvi | PickBaseMenuPropshiddenviAbout] = js.native
   
-  @js.native
   trait BaseMenuProps
-    extends HTMLAttributes[HTMLDivElement]
+    extends StObject
+       with HTMLAttributes[HTMLDivElement]
        with OverridableCSSTransitionProps
        with RenderConditionalPortalProps {
     
@@ -48,13 +47,13 @@ object menuMod {
       * };
       * ```
       */
-    var anchor: js.UndefOr[PositionAnchor] = js.native
+    var anchor: js.UndefOr[PositionAnchor] = js.undefined
     
     /**
       * Boolean if the menu should no longer close when the page is resized.
       * Instead, it'll automatically update its position within the viewport.
       */
-    var closeOnResize: js.UndefOr[Boolean] = js.native
+    var closeOnResize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the menu should not be closed when the page is scrolled.
@@ -62,21 +61,21 @@ object menuMod {
       * normally don't want to enable this prop as the menu won't close if the menu
       * control element is no longer in the viewport.
       */
-    var closeOnScroll: js.UndefOr[Boolean] = js.native
+    var closeOnScroll: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The id of the control element that toggles the menu. This is required so
       * that the menu can be positioned to this element and is normally a
       * `<button>`.
       */
-    var controlId: String = js.native
+    var controlId: String
     
     /**
       * The element that should be focused first when opened. This can either be
       * the first or last focusable item in the menu, or a query selector string to
       * find an element.
       */
-    var defaultFocus: js.UndefOr[first | last | String] = js.native
+    var defaultFocus: js.UndefOr[first | last | String] = js.undefined
     
     /**
       * Boolean if the close on outside click logic should consider the control
@@ -85,41 +84,41 @@ object menuMod {
       * normally should remain `false` otherwise since the control element has it's
       * own toggle logic that conflicts with this close click.
       */
-    var disableControlClickOkay: js.UndefOr[Boolean] = js.native
+    var disableControlClickOkay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the menu should be rendered horizontally instead of vertically.
       */
-    var horizontal: js.UndefOr[Boolean] = js.native
+    var horizontal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The id for the menu. This is required for a11y.
       */
     @JSName("id")
-    var id_BaseMenuProps: String = js.native
+    var id_BaseMenuProps: String
     
     /**
       * A function to call that should set the `visible` prop to false.
       */
-    def onRequestClose(): Unit = js.native
+    def onRequestClose(): Unit
     
     /**
       * Optional options to pass down to the `useFixedPositionin` hook styles to
       * change how the menu is fixed to the `MenuButton`.
       */
-    var positionOptions: js.UndefOr[MenuPositionOptions] = js.native
+    var positionOptions: js.UndefOr[MenuPositionOptions] = js.undefined
     
     /**
       * The role for the menu. This should normally just be `"menu"`, but I might
       * expand on it to implement the `"listbox"` or other menu like widgets.
       */
     @JSName("role")
-    var role_BaseMenuProps: js.UndefOr[menu] = js.native
+    var role_BaseMenuProps: js.UndefOr[menu] = js.undefined
     
     /**
       * Boolean if the menu is currently visible.
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object BaseMenuProps {
     
@@ -195,30 +194,29 @@ object menuMod {
   }
   
   /* Inlined std.Omit<@react-md/utils.@react-md/utils.FixedPositionOptions, 'container' | 'element' | 'anchor'> */
-  @js.native
   trait MenuPositionOptions extends StObject {
     
-    var disableSwapping: js.UndefOr[Boolean] = js.native
+    var disableSwapping: js.UndefOr[Boolean] = js.undefined
     
-    var disableVHBounds: js.UndefOr[Boolean] = js.native
+    var disableVHBounds: js.UndefOr[Boolean] = js.undefined
     
-    var initialX: js.UndefOr[Double] = js.native
+    var initialX: js.UndefOr[Double] = js.undefined
     
-    var initialY: js.UndefOr[Double] = js.native
+    var initialY: js.UndefOr[Double] = js.undefined
     
-    var preventOverlap: js.UndefOr[Boolean] = js.native
+    var preventOverlap: js.UndefOr[Boolean] = js.undefined
     
-    var transformOrigin: js.UndefOr[Boolean] = js.native
+    var transformOrigin: js.UndefOr[Boolean] = js.undefined
     
-    var vhMargin: js.UndefOr[Double] = js.native
+    var vhMargin: js.UndefOr[Double] = js.undefined
     
-    var vwMargin: js.UndefOr[Double] = js.native
+    var vwMargin: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[PositionWidth] = js.native
+    var width: js.UndefOr[PositionWidth] = js.undefined
     
-    var xMargin: js.UndefOr[Double] = js.native
+    var xMargin: js.UndefOr[Double] = js.undefined
     
-    var yMargin: js.UndefOr[Double] = js.native
+    var yMargin: js.UndefOr[Double] = js.undefined
   }
   object MenuPositionOptions {
     

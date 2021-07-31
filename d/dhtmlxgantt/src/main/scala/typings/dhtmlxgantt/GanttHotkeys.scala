@@ -2,15 +2,13 @@ package typings.dhtmlxgantt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttHotkeys extends StObject {
   
-  var edit_cancel: Double = js.native
+  var edit_cancel: Double
   
-  var edit_save: Double = js.native
+  var edit_save: Double
 }
 object GanttHotkeys {
   

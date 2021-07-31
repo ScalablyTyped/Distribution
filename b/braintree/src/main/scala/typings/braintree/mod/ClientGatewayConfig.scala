@@ -2,15 +2,15 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientGatewayConfig extends GatewayConfig {
+trait ClientGatewayConfig
+  extends StObject
+     with GatewayConfig {
   
-  var clientId: String = js.native
+  var clientId: String
   
-  var clientSecret: String = js.native
+  var clientSecret: String
 }
 object ClientGatewayConfig {
   

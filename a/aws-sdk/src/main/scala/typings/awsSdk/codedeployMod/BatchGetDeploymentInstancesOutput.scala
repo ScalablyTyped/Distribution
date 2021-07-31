@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetDeploymentInstancesOutput extends StObject {
   
   /**
     * Information about errors that might have occurred during the API call.
     */
-  var errorMessage: js.UndefOr[ErrorMessage] = js.native
+  var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * Information about the instance.
     */
-  var instancesSummary: js.UndefOr[InstanceSummaryList] = js.native
+  var instancesSummary: js.UndefOr[InstanceSummaryList] = js.undefined
 }
 object BatchGetDeploymentInstancesOutput {
   

@@ -2,20 +2,18 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Nested where Postgre Statement
   */
-@js.native
 trait WherePGStatement extends StObject {
   
   @JSName("$all")
-  var $all: js.Array[String | Double] = js.native
+  var $all: js.Array[String | Double]
   
   @JSName("$any")
-  var $any: js.Array[String | Double] = js.native
+  var $any: js.Array[String | Double]
 }
 object WherePGStatement {
   

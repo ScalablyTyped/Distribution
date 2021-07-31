@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,37 +14,36 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the row it was first associated with (what is now row 6). If the associated
   * object is deleted its metadata is deleted too.
   */
-@js.native
 trait SchemaDeveloperMetadata extends StObject {
   
   /**
     * The location where the metadata is associated.
     */
-  var location: js.UndefOr[SchemaDeveloperMetadataLocation] = js.native
+  var location: js.UndefOr[SchemaDeveloperMetadataLocation] = js.undefined
   
   /**
     * The spreadsheet-scoped unique ID that identifies the metadata. IDs may be
     * specified when metadata is created, otherwise one will be randomly
     * generated and assigned. Must be positive.
     */
-  var metadataId: js.UndefOr[Double] = js.native
+  var metadataId: js.UndefOr[Double] = js.undefined
   
   /**
     * The metadata key. There may be multiple metadata in a spreadsheet with
     * the same key.  Developer metadata must always have a key specified.
     */
-  var metadataKey: js.UndefOr[String] = js.native
+  var metadataKey: js.UndefOr[String] = js.undefined
   
   /**
     * Data associated with the metadata&#39;s key.
     */
-  var metadataValue: js.UndefOr[String] = js.native
+  var metadataValue: js.UndefOr[String] = js.undefined
   
   /**
     * The metadata visibility.  Developer metadata must always have a
     * visibility specified.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaDeveloperMetadata {
   

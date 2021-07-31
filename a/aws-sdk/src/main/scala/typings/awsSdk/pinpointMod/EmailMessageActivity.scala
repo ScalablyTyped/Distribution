@@ -2,31 +2,29 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailMessageActivity extends StObject {
   
   /**
     * Specifies the sender address for an email message that's sent to participants in the journey.
     */
-  var MessageConfig: js.UndefOr[JourneyEmailMessage] = js.native
+  var MessageConfig: js.UndefOr[JourneyEmailMessage] = js.undefined
   
   /**
     * The unique identifier for the next activity to perform, after the message is sent.
     */
-  var NextActivity: js.UndefOr[string] = js.native
+  var NextActivity: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the email message template to use for the message. If specified, this value must match the name of an existing message template.
     */
-  var TemplateName: js.UndefOr[string] = js.native
+  var TemplateName: js.UndefOr[string] = js.undefined
   
   /**
     * The unique identifier for the version of the email template to use for the message. If specified, this value must match the identifier for an existing template version. To retrieve a list of versions and version identifiers for a template, use the Template Versions resource. If you don't specify a value for this property, Amazon Pinpoint uses the active version of the template. The active version is typically the version of a template that's been most recently reviewed and approved for use, depending on your workflow. It isn't necessarily the latest version of a template.
     */
-  var TemplateVersion: js.UndefOr[string] = js.native
+  var TemplateVersion: js.UndefOr[string] = js.undefined
 }
 object EmailMessageActivity {
   

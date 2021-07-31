@@ -11,8 +11,8 @@ Convert the result of `process.hrtime()` to seconds, milliseconds, nanoseconds
 | Full name          | convert-hrtime |
 | Keywords           | process, hrtime, time, highres, perf, performance, bench, benchmark, measure, seconds, milliseconds, nanoseconds |
 | # releases         | 2 |
-| # dependents       | 47 |
-| # downloads        | 16515387 |
+| # dependents       | 52 |
+| # downloads        | 19861838 |
 | # stars            | 1 |
 
 ## Links

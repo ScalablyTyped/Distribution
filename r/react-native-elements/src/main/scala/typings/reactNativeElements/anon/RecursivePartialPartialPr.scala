@@ -7,34 +7,32 @@ import typings.reactNativeElements.mod.ButtonInformation
 import typings.reactNativeElements.mod.RecursivePartial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-native-elements.react-native-elements.RecursivePartial<std.Partial<react-native-elements.react-native-elements.PricingCardProps>> */
-@js.native
 trait RecursivePartialPartialPr extends StObject {
   
-  var button: js.UndefOr[RecursivePartial[js.UndefOr[ButtonInformation]]] = js.native
+  var button: js.UndefOr[RecursivePartial[js.UndefOr[ButtonInformation]]] = js.undefined
   
-  var color: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var color: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var containerStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
   
-  var info: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[String]]]] = js.native
+  var info: js.UndefOr[RecursivePartial[js.UndefOr[js.Array[String]]]] = js.undefined
   
-  var infoStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var infoStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var onButtonPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.native
+  var onButtonPress: js.UndefOr[RecursivePartial[js.UndefOr[js.Function0[Unit]]]] = js.undefined
   
-  var price: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var price: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var pricingStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var pricingStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.native
+  var title: js.UndefOr[RecursivePartial[js.UndefOr[String]]] = js.undefined
   
-  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.native
+  var titleStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[TextStyle]]]] = js.undefined
   
-  var wrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.native
+  var wrapperStyle: js.UndefOr[RecursivePartial[js.UndefOr[StyleProp[ViewStyle]]]] = js.undefined
 }
 object RecursivePartialPartialPr {
   

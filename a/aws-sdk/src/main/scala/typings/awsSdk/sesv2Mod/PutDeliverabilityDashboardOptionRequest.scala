@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutDeliverabilityDashboardOptionRequest extends StObject {
   
   /**
     * Specifies whether to enable the Deliverability dashboard. To enable the dashboard, set this value to true.
     */
-  var DashboardEnabled: Enabled = js.native
+  var DashboardEnabled: Enabled
   
   /**
     * An array of objects, one for each verified domain that you use to send email and enabled the Deliverability dashboard for.
     */
-  var SubscribedDomains: js.UndefOr[DomainDeliverabilityTrackingOptions] = js.native
+  var SubscribedDomains: js.UndefOr[DomainDeliverabilityTrackingOptions] = js.undefined
 }
 object PutDeliverabilityDashboardOptionRequest {
   

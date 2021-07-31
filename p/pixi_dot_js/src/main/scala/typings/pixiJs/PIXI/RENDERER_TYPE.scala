@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,11 +22,17 @@ sealed trait RENDERER_TYPE extends StObject
 object RENDERER_TYPE extends StObject {
   
   @js.native
-  sealed trait CANVAS extends RENDERER_TYPE
+  sealed trait CANVAS
+    extends StObject
+       with RENDERER_TYPE
   
   @js.native
-  sealed trait UNKNOWN extends RENDERER_TYPE
+  sealed trait UNKNOWN
+    extends StObject
+       with RENDERER_TYPE
   
   @js.native
-  sealed trait WEBGL extends RENDERER_TYPE
+  sealed trait WEBGL
+    extends StObject
+       with RENDERER_TYPE
 }

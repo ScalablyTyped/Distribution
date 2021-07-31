@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaterfallChartSpec extends StObject {
   
   /** The line style for the connector lines. */
-  var connectorLineStyle: js.UndefOr[LineStyle] = js.native
+  var connectorLineStyle: js.UndefOr[LineStyle] = js.undefined
   
   /** The domain data (horizontal axis) for the waterfall chart. */
-  var domain: js.UndefOr[WaterfallChartDomain] = js.native
+  var domain: js.UndefOr[WaterfallChartDomain] = js.undefined
   
   /** True to interpret the first value as a total. */
-  var firstValueIsTotal: js.UndefOr[Boolean] = js.native
+  var firstValueIsTotal: js.UndefOr[Boolean] = js.undefined
   
   /** True to hide connector lines between columns. */
-  var hideConnectorLines: js.UndefOr[Boolean] = js.native
+  var hideConnectorLines: js.UndefOr[Boolean] = js.undefined
   
   /** The data this waterfall chart is visualizing. */
-  var series: js.UndefOr[js.Array[WaterfallChartSeries]] = js.native
+  var series: js.UndefOr[js.Array[WaterfallChartSeries]] = js.undefined
   
   /** The stacked type. */
-  var stackedType: js.UndefOr[String] = js.native
+  var stackedType: js.UndefOr[String] = js.undefined
 }
 object WaterfallChartSpec {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsS3BucketServerSideEncryptionByDefault extends StObject {
   
   /**
     * AWS KMS customer master key (CMK) ID to use for the default encryption.
     */
-  var KMSMasterKeyID: js.UndefOr[NonEmptyString] = js.native
+  var KMSMasterKeyID: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Server-side encryption algorithm to use for the default encryption.
     */
-  var SSEAlgorithm: js.UndefOr[NonEmptyString] = js.native
+  var SSEAlgorithm: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsS3BucketServerSideEncryptionByDefault {
   

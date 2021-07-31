@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   var customValues: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Environment with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Environment & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Environment {
   
@@ -30,7 +28,7 @@ object Environment {
     def setCustomValues(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Environment with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientContaineranalysis.maximMazurokGapiClientContaineranalysisStrings.Environment & TopLevel[js.Any]
     ): Self = StObject.set(x, "customValues", value.asInstanceOf[js.Any])
     
     @scala.inline

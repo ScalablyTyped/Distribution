@@ -5,23 +5,21 @@ import typings.highcharts.highchartsNumbers.`0`
 import typings.highcharts.highchartsNumbers.`100`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotBellcurveOptions extends StObject {
   
   /**
     * (Highcharts) Accessibility options for a series.
     */
-  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[SeriesAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highmaps) Whether all areas of the map defined in `mapData` should be
     * rendered. If `true`, areas which don't correspond to a data point, are
     * rendered as `null` points. If `false`, those areas are skipped.
     */
-  var allAreas: js.UndefOr[Boolean] = js.native
+  var allAreas: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Allow this series' points to be selected by clicking on the
@@ -32,7 +30,7 @@ trait PlotBellcurveOptions extends StObject {
     *
     * And alternative way of selecting points is through dragging.
     */
-  var allowPointSelect: js.UndefOr[Boolean] = js.native
+  var allowPointSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the initial animation when a series is
@@ -52,7 +50,7 @@ trait PlotBellcurveOptions extends StObject {
     * Due to poor performance, animation is disabled in old IE browsers for
     * several chart types.
     */
-  var animation: js.UndefOr[Boolean | PlotBellcurveAnimationOptions | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | PlotBellcurveAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts) For some series, there is a limit that shuts down initial
@@ -61,7 +59,7 @@ trait PlotBellcurveOptions extends StObject {
     * not run if there is more than 250 points totally. To disable this cap,
     * set `animationLimit` to `Infinity`.
     */
-  var animationLimit: js.UndefOr[Double] = js.native
+  var animationLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) The border color of the map areas.
@@ -69,7 +67,7 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the border stroke is given in the `.highcharts-point`
     * class.
     */
-  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var borderColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highmaps) The border width of each map area.
@@ -77,14 +75,14 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the border stroke width is given in the
     * `.highcharts-point` class.
     */
-  var borderWidth: js.UndefOr[Double] = js.native
+  var borderWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) An additional class name to apply to the series' graphical
     * elements. This option does not replace default class names of the
     * graphical element.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Disable this option to allow series rendering in the whole
@@ -92,7 +90,7 @@ trait PlotBellcurveOptions extends StObject {
     *
     * **Note:** Clipping should be always enabled when chart.zoomType is set
     */
-  var clip: js.UndefOr[Boolean] = js.native
+  var clip: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) The main color of the series. In line type series it applies
@@ -106,7 +104,7 @@ trait PlotBellcurveOptions extends StObject {
     * `.highcharts-series-{n}` class, or individual classes given by the
     * `className` option.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) When using dual or multiple color axes,
@@ -118,14 +116,14 @@ trait PlotBellcurveOptions extends StObject {
     * Since v7.2.0 the option can also be an axis id or an axis index instead
     * of a boolean flag.
     */
-  var colorAxis: js.UndefOr[Boolean | Double | String] = js.native
+  var colorAxis: js.UndefOr[Boolean | Double | String] = js.undefined
   
   /**
     * (Highcharts) Styled mode only. A specific color index to use for the
     * series, so its graphic representations are given the class name
     * `highcharts-color-{n}`.
     */
-  var colorIndex: js.UndefOr[Double] = js.native
+  var colorIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps) Determines what data value should be
@@ -133,7 +131,7 @@ trait PlotBellcurveOptions extends StObject {
     * `min` and `max` if some custom point property is used or if approximation
     * for data grouping is set to `'sum'`.
     */
-  var colorKey: js.UndefOr[String] = js.native
+  var colorKey: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) Compare the values of the series against the first non-null,
@@ -143,13 +141,13 @@ trait PlotBellcurveOptions extends StObject {
     * the development of the series against each other. Adds a `change` field
     * to every point object.
     */
-  var compare: js.UndefOr[String] = js.native
+  var compare: js.UndefOr[String] = js.undefined
   
   /**
     * (Highstock) When compare is `percent`, this option dictates whether to
     * use 0 or 100 as the base of comparison.
     */
-  var compareBase: js.UndefOr[`0` | `100`] = js.native
+  var compareBase: js.UndefOr[`0` | `100`] = js.undefined
   
   /**
     * (Highstock) Defines if comparison should start from the first point
@@ -160,19 +158,19 @@ trait PlotBellcurveOptions extends StObject {
     * range will have 0% (`compareStart=true`) or should have been already
     * calculated according to the previous point (`compareStart=false`).
     */
-  var compareStart: js.UndefOr[Boolean] = js.native
+  var compareStart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Polar charts only. Whether to connect the ends of a line
     * series plot across the extremes.
     */
-  var connectEnds: js.UndefOr[Boolean] = js.native
+  var connectEnds: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gantt) Override Pathfinder connector options for a series. Requires
     * Highcharts Gantt to be loaded.
     */
-  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.native
+  var connectors: js.UndefOr[SeriesConnectorsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When true, each point or column edge is
@@ -182,7 +180,7 @@ trait PlotBellcurveOptions extends StObject {
     * cases, setting `crisp` to `false` may look better, even though each
     * column is rendered blurry.
     */
-  var crisp: js.UndefOr[Boolean] = js.native
+  var crisp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) When the series contains less points than the
@@ -194,7 +192,7 @@ trait PlotBellcurveOptions extends StObject {
     * fall within the plot area. The advantage of cropping away invisible
     * points is to increase performance on large series.
     */
-  var cropThreshold: js.UndefOr[Double] = js.native
+  var cropThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) You can set the cursor to "pointer" if you have click events
@@ -204,14 +202,14 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the series cursor can be set with the same classes as
     * listed under series.color.
     */
-  var cursor: js.UndefOr[String | CursorValue] = js.native
+  var cursor: js.UndefOr[String | CursorValue] = js.undefined
   
   /**
     * (Highcharts) A reserved subspace to store options and values for
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[_]] = js.native
+  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * (Highcharts) Name of the dash style to use for the graph, or for some
@@ -220,7 +218,7 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the stroke dash-array can be set with the same classes as
     * listed under series.color.
     */
-  var dashStyle: js.UndefOr[DashStyleValue] = js.native
+  var dashStyle: js.UndefOr[DashStyleValue] = js.undefined
   
   /**
     * (Highstock) Data grouping is the concept of sampling the data values into
@@ -236,7 +234,7 @@ trait PlotBellcurveOptions extends StObject {
     * of the first point instance are copied over to the group point. This can
     * be altered through a custom `approximation` callback function.
     */
-  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.native
+  var dataGrouping: js.UndefOr[DataGroupingOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for the series data
@@ -249,32 +247,32 @@ trait PlotBellcurveOptions extends StObject {
     * `.highcharts-data-label-box` and `.highcharts-data-label` class names
     * (see example).
     */
-  var dataLabels: js.UndefOr[PlotBellcurveDataLabelsOptions | js.Array[PlotBellcurveDataLabelsOptions]] = js.native
+  var dataLabels: js.UndefOr[PlotBellcurveDataLabelsOptions | js.Array[PlotBellcurveDataLabelsOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock) Options for the series data sorting.
     */
-  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotBellcurveDataSortingOptions] = js.native
+  var dataSorting: js.UndefOr[DataSortingOptionsObject | PlotBellcurveDataSortingOptions] = js.undefined
   
   /**
     * (Highcharts) A description of the series to add to the screen reader
     * information about the series.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Enable or disable the mouse tracking for a specific series.
     * This includes point tooltips and click events on graphs and points. For
     * large datasets it improves performance.
     */
-  var enableMouseTracking: js.UndefOr[Boolean] = js.native
+  var enableMouseTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) General event handlers for the series items. These event
     * hooks can also be attached to the series at run time using the
     * `Highcharts.addEvent` function.
     */
-  var events: js.UndefOr[SeriesEventsOptionsObject] = js.native
+  var events: js.UndefOr[SeriesEventsOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Fill color or gradient for the area. When `null`,
@@ -283,7 +281,7 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the fill color can be set with the `.highcharts-area`
     * class name.
     */
-  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var fillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Fill opacity for the area. When you set an
@@ -295,7 +293,7 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the fill opacity can be set with the `.highcharts-area`
     * class name.
     */
-  var fillOpacity: js.UndefOr[Double] = js.native
+  var fillOpacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Determines whether the series should look for the nearest
@@ -307,7 +305,7 @@ trait PlotBellcurveOptions extends StObject {
     * Applies only to series types using nearest neighbor search (not direct
     * hover) for tooltip.
     */
-  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.native
+  var findNearestPointBy: js.UndefOr[OptionsFindNearestPointByValue] = js.undefined
   
   /**
     * (Highstock) Defines when to display a gap in the graph, together with the
@@ -324,7 +322,7 @@ trait PlotBellcurveOptions extends StObject {
     * series. In a stock chart, intraday data is available for daytime hours,
     * while gaps will appear in nights and weekends.
     */
-  var gapSize: js.UndefOr[Double] = js.native
+  var gapSize: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Together with gapSize, this option defines where to draw gaps
@@ -338,7 +336,7 @@ trait PlotBellcurveOptions extends StObject {
     * values, which on a datetime axis is milliseconds. This also applies to
     * the navigator series that inherits gap options from the base series.
     */
-  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.native
+  var gapUnit: js.UndefOr[OptionsGapUnitValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the Y extremes of the total
@@ -346,7 +344,7 @@ trait PlotBellcurveOptions extends StObject {
     * axis. By default, the Y axis adjusts to the min and max of the visible
     * data. Cartesian series only.
     */
-  var getExtremesFromAll: js.UndefOr[Boolean] = js.native
+  var getExtremesFromAll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) When set to `false` will prevent the series data from being
@@ -355,13 +353,13 @@ trait PlotBellcurveOptions extends StObject {
     * Since version 6.0.0 until 7.1.0 the option was existing undocumented as
     * `includeInCSVExport`.
     */
-  var includeInDataExport: js.UndefOr[Boolean] = js.native
+  var includeInDataExport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) This option allows to define the length of the bell curve. A
     * unit of the length of the bell curve is standard deviation.
     */
-  var intervals: js.UndefOr[Double] = js.native
+  var intervals: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) What property to join the `mapData` to the value data. For
@@ -379,14 +377,14 @@ trait PlotBellcurveOptions extends StObject {
     * points and have a backend that can preprocess the data into a parallel
     * array of the mapData.
     */
-  var joinBy: js.UndefOr[String | js.Array[String]] = js.native
+  var joinBy: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * (Highcharts) An array specifying which option maps to which key in the
     * data point array. This makes it convenient to work with unstructured data
     * arrays from different sources.
     */
-  var keys: js.UndefOr[js.Array[String]] = js.native
+  var keys: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Series labels are placed as close to the
@@ -397,17 +395,17 @@ trait PlotBellcurveOptions extends StObject {
     * The series labels currently work with series types having a `graph` or an
     * `area`.
     */
-  var label: js.UndefOr[SeriesLabelOptionsObject] = js.native
+  var label: js.UndefOr[SeriesLabelOptionsObject] = js.undefined
   
   /**
     * (Highstock) The line marks the last price from all points.
     */
-  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.native
+  var lastPrice: js.UndefOr[SeriesLastPriceOptionsObject] = js.undefined
   
   /**
     * (Highstock) The line marks the last price from visible range of points.
     */
-  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.native
+  var lastVisiblePrice: js.UndefOr[SeriesLastVisiblePriceOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) A separate color for the graph line. By default
@@ -418,19 +416,19 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the line stroke can be set with the `.highcharts-graph`
     * class name.
     */
-  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var lineColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Pixel width of the graph line.
     */
-  var lineWidth: js.UndefOr[Double] = js.native
+  var lineWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) The SVG value used for the `stroke-linecap` and
     * `stroke-linejoin` of a line graph. Round means that lines are rounded in
     * the ends and bends.
     */
-  var linecap: js.UndefOr[SeriesLinecapValue] = js.native
+  var linecap: js.UndefOr[SeriesLinecapValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The id of another series to link to.
@@ -442,7 +440,7 @@ trait PlotBellcurveOptions extends StObject {
     * own sorting definition, the linked series will be sorted in the same
     * order as the master one.
     */
-  var linkedTo: js.UndefOr[String] = js.native
+  var linkedTo: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Options for the point markers of line-like series.
@@ -453,7 +451,7 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, the markers can be styled with the `.highcharts-point`,
     * `.highcharts-point-hover` and `.highcharts-point-select` class names.
     */
-  var marker: js.UndefOr[PointMarkerOptionsObject] = js.native
+  var marker: js.UndefOr[PointMarkerOptionsObject] = js.undefined
   
   /**
     * (Highstock) Options for the corresponding navigator series if
@@ -463,7 +461,7 @@ trait PlotBellcurveOptions extends StObject {
     * These options are merged with options in navigator.series, and will take
     * precedence if the same option is defined both places.
     */
-  var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.native
+  var navigatorOptions: js.UndefOr[PlotSeriesOptions] = js.undefined
   
   /**
     * (Highcharts) The color for the parts of the graph or points that are
@@ -471,7 +469,7 @@ trait PlotBellcurveOptions extends StObject {
     * color. Using `negativeColor` is equivalent to applying a zone with value
     * of 0.
     */
-  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var negativeColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) A separate color for the negative part of the area.
@@ -479,24 +477,24 @@ trait PlotBellcurveOptions extends StObject {
     * In styled mode, a negative color is set with the `.highcharts-negative`
     * class name.
     */
-  var negativeFillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var negativeFillColor: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts) Opacity of a series parts: line, fill (e.g. area) and
     * dataLabels.
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Properties for each single point.
     */
-  var point: js.UndefOr[PlotSeriesPointOptions] = js.native
+  var point: js.UndefOr[PlotSeriesPointOptions] = js.undefined
   
   /**
     * (Highcharts) Same as accessibility.pointDescriptionFormatter, but for an
     * individual series. Overrides the chart wide configuration.
     */
-  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.native
+  var pointDescriptionFormatter: js.UndefOr[js.Function] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Possible values: `"on"`, `"between"`,
@@ -523,7 +521,7 @@ trait PlotBellcurveOptions extends StObject {
     *
     * Defaults to `undefined` in cartesian charts, `"between"` in polar charts.
     */
-  var pointPlacement: js.UndefOr[Double | String] = js.native
+  var pointPlacement: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highstock) The width of each point on the x axis. For example in a
@@ -533,7 +531,7 @@ trait PlotBellcurveOptions extends StObject {
     * * 1000 milliseconds). This is normally computed automatically, but this
     * option can be used to override the automatic value.
     */
-  var pointRange: js.UndefOr[Double] = js.native
+  var pointRange: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) If no x values are given for the points in
@@ -541,34 +539,34 @@ trait PlotBellcurveOptions extends StObject {
     * series contains one yearly value starting from 1945, set pointStart to
     * 1945.
     */
-  var pointStart: js.UndefOr[Double] = js.native
+  var pointStart: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Defines how many points should be plotted within 1 interval.
     * See `plotOptions.bellcurve.intervals`.
     */
-  var pointsInInterval: js.UndefOr[Double] = js.native
+  var pointsInInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Whether to select the series initially. If `showCheckbox` is
     * true, the checkbox next to the series name in the legend will be checked
     * for a selected series.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to apply a drop shadow to the graph line. Since 2.3
     * the shadow can be an object configuration containing `color`, `offsetX`,
     * `offsetY`, `opacity` and `width`.
     */
-  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.native
+  var shadow: js.UndefOr[Boolean | ShadowOptionsObject] = js.undefined
   
   /**
     * (Highcharts) If true, a checkbox is displayed next to the legend item to
     * allow selecting the series. The state of the checkbox is determined by
     * the `selected` option.
     */
-  var showCheckbox: js.UndefOr[Boolean] = js.native
+  var showCheckbox: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) Whether to display this particular series or series type in
@@ -576,19 +574,19 @@ trait PlotBellcurveOptions extends StObject {
     * series are not. Since v7.2.0 it is possible to show series that use
     * colorAxis by setting this option to `true`.
     */
-  var showInLegend: js.UndefOr[Boolean] = js.native
+  var showInLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highstock) Whether or not to show the series in the navigator. Takes
     * precedence over navigator.baseSeries if defined.
     */
-  var showInNavigator: js.UndefOr[Boolean] = js.native
+  var showInNavigator: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) If set to `true`, the accessibility module will skip past
     * the points in this series for keyboard navigation.
     */
-  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.native
+  var skipKeyboardNavigation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) When this is true, the series will not cause the
@@ -599,9 +597,9 @@ trait PlotBellcurveOptions extends StObject {
     * make the Y axis show negative values according to the `minPadding`
     * option. If `softThreshold` is `true`, the Y axis starts at 0.
     */
-  var softThreshold: js.UndefOr[Boolean] = js.native
+  var softThreshold: js.UndefOr[Boolean] = js.undefined
   
-  var states: js.UndefOr[SeriesStatesOptionsObject] = js.native
+  var states: js.UndefOr[SeriesStatesOptionsObject] = js.undefined
   
   /**
     * (Highcharts) Sticky tracking of mouse events. When true, the `mouseOut`
@@ -616,7 +614,7 @@ trait PlotBellcurveOptions extends StObject {
     * **Note:** The boost module will force this option because of technical
     * limitations.
     */
-  var stickyTracking: js.UndefOr[Boolean] = js.native
+  var stickyTracking: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock) The Y axis value to serve as the base for the
@@ -631,20 +629,20 @@ trait PlotBellcurveOptions extends StObject {
     * * If `Infinity` or `-Infinity`, the area between the graph and the
     * corresponding Y axis extreme is filled (since v6.1.0).
     */
-  var threshold: js.UndefOr[Double | Null] = js.native
+  var threshold: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * (Highcharts) A configuration object for the tooltip rendering of each
     * single series. Properties are inherited from tooltip, but only the
     * following properties can be defined on a series level.
     */
-  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.native
+  var tooltip: js.UndefOr[SeriesTooltipOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock) Whether the whole area or just the line should
     * respond to mouseover tooltips and other mouse or touch events.
     */
-  var trackByArea: js.UndefOr[Boolean] = js.native
+  var trackByArea: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) When a series contains a data array that
@@ -657,22 +655,22 @@ trait PlotBellcurveOptions extends StObject {
     * Note: In boost mode turbo threshold is forced. Only array of numbers or
     * two dimensional arrays are allowed.
     */
-  var turboThreshold: js.UndefOr[Double] = js.native
+  var turboThreshold: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) Set the initial visibility of the series.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highmaps) Define the z index of the series.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock) Defines the Axis on which the zones are applied.
     */
-  var zoneAxis: js.UndefOr[String] = js.native
+  var zoneAxis: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock) An array defining zones within a series. Zones
@@ -684,7 +682,7 @@ trait PlotBellcurveOptions extends StObject {
     * `.highcharts-zone-{n}` class, or custom classed from the `className`
     * option (view live demo).
     */
-  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.native
+  var zones: js.UndefOr[js.Array[SeriesZonesOptionsObject]] = js.undefined
 }
 object PlotBellcurveOptions {
   
@@ -824,7 +822,7 @@ object PlotBellcurveOptions {
     def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)
     
     @scala.inline
-    def setCustom(value: Dictionary[_]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

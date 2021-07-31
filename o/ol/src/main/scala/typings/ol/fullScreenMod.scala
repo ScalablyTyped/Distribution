@@ -7,7 +7,6 @@ import typings.std.HTMLElement
 import typings.std.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fullScreenMod {
@@ -38,22 +37,21 @@ object fullScreenMod {
     def un_leavefullscreen(`type`: leavefullscreen, listener: js.Function1[/* evt */ typings.ol.eventMod.default, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var keys: js.UndefOr[Boolean] = js.native
+    var keys: js.UndefOr[Boolean] = js.undefined
     
-    var label: js.UndefOr[String | Text | HTMLElement] = js.native
+    var label: js.UndefOr[String | Text | HTMLElement] = js.undefined
     
-    var labelActive: js.UndefOr[String | Text | HTMLElement] = js.native
+    var labelActive: js.UndefOr[String | Text | HTMLElement] = js.undefined
     
-    var source: js.UndefOr[HTMLElement | String] = js.native
+    var source: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var target: js.UndefOr[HTMLElement | String] = js.native
+    var target: js.UndefOr[HTMLElement | String] = js.undefined
     
-    var tipLabel: js.UndefOr[String] = js.native
+    var tipLabel: js.UndefOr[String] = js.undefined
   }
   object Options {
     

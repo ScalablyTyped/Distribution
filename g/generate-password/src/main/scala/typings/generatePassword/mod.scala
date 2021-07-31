@@ -2,43 +2,41 @@ package typings.generatePassword
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("generate-password", "generate")
+  @JSImport("generate-password", JSImport.Namespace)
   @js.native
-  def generate(): String = js.native
-  @JSImport("generate-password", "generate")
-  @js.native
-  def generate(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("generate-password", "generateMultiple")
-  @js.native
-  def generateMultiple(amount: Double): js.Array[String] = js.native
-  @JSImport("generate-password", "generateMultiple")
-  @js.native
-  def generateMultiple(amount: Double, options: Options): js.Array[String] = js.native
+  @scala.inline
+  def generate(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[String]
+  @scala.inline
+  def generate(options: Options): String = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @js.native
+  @scala.inline
+  def generateMultiple(amount: Double): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("generateMultiple")(amount.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def generateMultiple(amount: Double, options: Options): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("generateMultiple")(amount.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait Options extends StObject {
     
-    var exclude: js.UndefOr[String] = js.native
+    var exclude: js.UndefOr[String] = js.undefined
     
-    var excludeSimilarCharacters: js.UndefOr[Boolean] = js.native
+    var excludeSimilarCharacters: js.UndefOr[Boolean] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var lowercase: js.UndefOr[Boolean] = js.native
+    var lowercase: js.UndefOr[Boolean] = js.undefined
     
-    var numbers: js.UndefOr[Boolean] = js.native
+    var numbers: js.UndefOr[Boolean] = js.undefined
     
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
-    var symbols: js.UndefOr[Boolean] = js.native
+    var symbols: js.UndefOr[Boolean] = js.undefined
     
-    var uppercase: js.UndefOr[Boolean] = js.native
+    var uppercase: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

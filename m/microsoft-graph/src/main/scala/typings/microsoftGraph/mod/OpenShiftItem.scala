@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenShiftItem extends ShiftItem {
+trait OpenShiftItem
+  extends StObject
+     with ShiftItem {
   
   // Count of the number of slots for the given open shift.
-  var openSlotCount: js.UndefOr[Double] = js.native
+  var openSlotCount: js.UndefOr[Double] = js.undefined
 }
 object OpenShiftItem {
   

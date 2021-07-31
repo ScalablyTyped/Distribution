@@ -2,13 +2,11 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITelemetry extends StObject {
   
-  def sendCommand(command: String, args: js.Array[String]): js.Promise[Unit] = js.native
+  def sendCommand(command: String, args: js.Array[String]): js.Promise[Unit]
 }
 object ITelemetry {
   

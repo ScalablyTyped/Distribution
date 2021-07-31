@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer.gapi.client.adexchangebuye
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreativesList extends StObject {
   
   /** A list of creatives. */
-  var items: js.UndefOr[js.Array[Creative]] = js.native
+  var items: js.UndefOr[js.Array[Creative]] = js.undefined
   
   /** Resource type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Continuation token used to page through creatives. To retrieve the next page of results, set the next request's "pageToken" value to this. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object CreativesList {
   

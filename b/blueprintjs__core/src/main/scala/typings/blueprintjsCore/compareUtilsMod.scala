@@ -3,72 +3,55 @@ package typings.blueprintjsCore
 import typings.blueprintjsCore.anon.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object compareUtilsMod {
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "arraysEqual")
+  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", JSImport.Namespace)
   @js.native
-  def arraysEqual(arrA: js.Array[_], arrB: js.Array[_]): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "arraysEqual")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def arraysEqual(arrA: js.Array[js.Any], arrB: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def arraysEqual(
-    arrA: js.Array[_],
-    arrB: js.Array[_],
+    arrA: js.Array[js.Any],
+    arrB: js.Array[js.Any],
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "deepCompareKeys")
-  @js.native
-  def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "deepCompareKeys")
-  @js.native
-  def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = js.native
+  @scala.inline
+  def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: js.UndefOr[scala.Nothing], keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: js.UndefOr[scala.Nothing], objB: T): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: js.UndefOr[scala.Nothing], objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](
-    objA: js.UndefOr[scala.Nothing],
-    objB: js.UndefOr[scala.Nothing],
-    keys: js.Array[/* keyof T */ String]
-  ): js.Array[Key[T]] = js.native
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")().asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "shallowCompareKeys")
-  @js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "shallowCompareKeys")
-  @js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils/compareUtils", "shallowCompareKeys")
-  @js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = js.native
+  @scala.inline
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait IKeyAllowlist[T] extends StObject {
     
-    var include: js.Array[/* keyof T */ String] = js.native
+    var include: js.Array[/* keyof T */ String]
   }
   object IKeyAllowlist {
     
@@ -79,7 +62,7 @@ object compareUtilsMod {
     }
     
     @scala.inline
-    implicit class IKeyAllowlistMutableBuilder[Self <: IKeyAllowlist[_], T] (val x: Self with IKeyAllowlist[T]) extends AnyVal {
+    implicit class IKeyAllowlistMutableBuilder[Self <: IKeyAllowlist[?], T] (val x: Self & IKeyAllowlist[T]) extends AnyVal {
       
       @scala.inline
       def setInclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
@@ -91,10 +74,9 @@ object compareUtilsMod {
   
   type IKeyBlacklist[T] = IKeyDenylist[T]
   
-  @js.native
   trait IKeyDenylist[T] extends StObject {
     
-    var exclude: js.Array[/* keyof T */ String] = js.native
+    var exclude: js.Array[/* keyof T */ String]
   }
   object IKeyDenylist {
     
@@ -105,7 +87,7 @@ object compareUtilsMod {
     }
     
     @scala.inline
-    implicit class IKeyDenylistMutableBuilder[Self <: IKeyDenylist[_], T] (val x: Self with IKeyDenylist[T]) extends AnyVal {
+    implicit class IKeyDenylistMutableBuilder[Self <: IKeyDenylist[?], T] (val x: Self & IKeyDenylist[T]) extends AnyVal {
       
       @scala.inline
       def setExclude(value: js.Array[/* keyof T */ String]): Self = StObject.set(x, "exclude", value.asInstanceOf[js.Any])

@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WindowsMinimumOperatingSystem extends StObject {
   
   // Windows version 10.0 or later.
-  var v10_0: js.UndefOr[Boolean] = js.native
+  var v10_0: js.UndefOr[Boolean] = js.undefined
   
   // Windows version 8.0 or later.
-  var v8_0: js.UndefOr[Boolean] = js.native
+  var v8_0: js.UndefOr[Boolean] = js.undefined
   
   // Windows version 8.1 or later.
-  var v8_1: js.UndefOr[Boolean] = js.native
+  var v8_1: js.UndefOr[Boolean] = js.undefined
 }
 object WindowsMinimumOperatingSystem {
   

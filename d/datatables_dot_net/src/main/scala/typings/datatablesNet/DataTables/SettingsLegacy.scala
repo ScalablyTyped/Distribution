@@ -3,7 +3,6 @@ package typings.datatablesNet.DataTables
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -21,11 +20,11 @@ trait SettingsLegacy extends StObject {
   
   var aIds: js.Any = js.native
   
-  var aLengthMenu: js.Array[_] = js.native
+  var aLengthMenu: js.Array[js.Any] = js.native
   
-  var aaSorting: js.Array[js.Array[_]] = js.native
+  var aaSorting: js.Array[js.Array[js.Any]] = js.native
   
-  var aaSortingFixed: js.Array[js.Array[_]] = js.native
+  var aaSortingFixed: js.Array[js.Array[js.Any]] = js.native
   
   var aanFeatures: js.Array[js.Array[ArrayStringNode]] = js.native
   
@@ -39,31 +38,31 @@ trait SettingsLegacy extends StObject {
   
   var aoData: js.Array[RowLegacy] = js.native
   
-  var aoDestroyCallback: js.Array[_] = js.native
+  var aoDestroyCallback: js.Array[js.Any] = js.native
   
   var aoDrawCallback: js.Array[FunctionDrawCallback] = js.native
   
-  var aoFooter: js.Array[_] = js.native
+  var aoFooter: js.Array[js.Any] = js.native
   
   var aoFooterCallback: js.Array[FunctionFooterCallback] = js.native
   
-  var aoHeader: js.Array[_] = js.native
+  var aoHeader: js.Array[js.Any] = js.native
   
   var aoHeaderCallback: js.Array[FunctionHeaderCallback] = js.native
   
   var aoInitComplete: js.Array[FunctionInitComplete] = js.native
   
-  var aoOpenRows: js.Array[_] = js.native
+  var aoOpenRows: js.Array[js.Any] = js.native
   
   var aoPreDrawCallback: js.Array[FunctionPreDrawCallback] = js.native
   
-  var aoPreSearchCols: js.Array[_] = js.native
+  var aoPreSearchCols: js.Array[js.Any] = js.native
   
   var aoRowCallback: js.Array[FunctionRowCallback] = js.native
   
   var aoRowCreatedCallback: js.Array[FunctionCreateRow] = js.native
   
-  var aoServerParams: js.Array[_] = js.native
+  var aoServerParams: js.Array[js.Any] = js.native
   
   var aoStateLoad: js.Array[FunctionStateLoadCallback] = js.native
   

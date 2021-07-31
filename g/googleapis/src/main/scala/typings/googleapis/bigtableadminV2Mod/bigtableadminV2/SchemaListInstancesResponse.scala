@@ -2,13 +2,11 @@ package typings.googleapis.bigtableadminV2Mod.bigtableadminV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for BigtableInstanceAdmin.ListInstances.
   */
-@js.native
 trait SchemaListInstancesResponse extends StObject {
   
   /**
@@ -19,17 +17,17 @@ trait SchemaListInstancesResponse extends StObject {
     * partial information returned. Values are of the form
     * `projects/&lt;project&gt;/locations/&lt;zone_id&gt;`
     */
-  var failedLocations: js.UndefOr[js.Array[String]] = js.native
+  var failedLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The list of requested instances.
     */
-  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.native
+  var instances: js.UndefOr[js.Array[SchemaInstance]] = js.undefined
   
   /**
     * DEPRECATED: This field is unused and ignored.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListInstancesResponse {
   

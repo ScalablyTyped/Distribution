@@ -4,15 +4,13 @@ import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveXObjectNameMap extends StObject {
   
-  var StdFont: typings.activexStdole.stdole.StdFont = js.native
+  var StdFont: typings.activexStdole.stdole.StdFont
   
-  var StdPicture: typings.activexStdole.stdole.StdPicture = js.native
+  var StdPicture: typings.activexStdole.stdole.StdPicture
 }
 object ActiveXObjectNameMap {
   

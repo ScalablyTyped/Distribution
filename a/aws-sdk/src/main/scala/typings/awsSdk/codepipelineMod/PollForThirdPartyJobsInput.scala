@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollForThirdPartyJobsInput extends StObject {
   
   /**
     * Represents information about an action type.
     */
-  var actionTypeId: ActionTypeId = js.native
+  var actionTypeId: ActionTypeId
   
   /**
     * The maximum number of jobs to return in a poll for jobs call.
     */
-  var maxBatchSize: js.UndefOr[MaxBatchSize] = js.native
+  var maxBatchSize: js.UndefOr[MaxBatchSize] = js.undefined
 }
 object PollForThirdPartyJobsInput {
   

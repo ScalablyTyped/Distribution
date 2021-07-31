@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -47,9 +46,9 @@ class PanelModelBase ()
     * @param index element index in the elements array
     */
   def addNewQuestion(questionType: String): Question = js.native
-  def addNewQuestion(questionType: String, name: js.UndefOr[scala.Nothing], index: Double): Question = js.native
   def addNewQuestion(questionType: String, name: String): Question = js.native
   def addNewQuestion(questionType: String, name: String, index: Double): Question = js.native
+  def addNewQuestion(questionType: String, name: Unit, index: Double): Question = js.native
   
   /**
     * Add a panel into Panel or Page.  Returns true if the panel added successfully. Otherwise returns false.
@@ -64,9 +63,9 @@ class PanelModelBase ()
     * @param list
     */
   def addPanelsIntoList(list: js.Array[IPanel]): Unit = js.native
-  def addPanelsIntoList(list: js.Array[IPanel], visibleOnly: js.UndefOr[scala.Nothing], includingDesignTime: Boolean): Unit = js.native
   def addPanelsIntoList(list: js.Array[IPanel], visibleOnly: Boolean): Unit = js.native
   def addPanelsIntoList(list: js.Array[IPanel], visibleOnly: Boolean, includingDesignTime: Boolean): Unit = js.native
+  def addPanelsIntoList(list: js.Array[IPanel], visibleOnly: Unit, includingDesignTime: Boolean): Unit = js.native
   
   /**
     * Add a question into Panel or Page. Returns true if the question added successfully. Otherwise returns false.
@@ -82,9 +81,9 @@ class PanelModelBase ()
     * @param visibleOnly set it to true to get visible questions only
     */
   def addQuestionsToList(list: js.Array[IQuestion]): Unit = js.native
-  def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: js.UndefOr[scala.Nothing], includingDesignTime: Boolean): Unit = js.native
   def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: Boolean): Unit = js.native
   def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: Boolean, includingDesignTime: Boolean): Unit = js.native
+  def addQuestionsToList(list: js.Array[IQuestion], visibleOnly: Unit, includingDesignTime: Boolean): Unit = js.native
   
   /* protected */ def beforeSetVisibleIndex(index: Double): Double = js.native
   
@@ -176,6 +175,9 @@ class PanelModelBase ()
     */
   def getElementByName(name: String): IElement = js.native
   
+  /* CompleteClass */
+  override def getErrorCustomText(text: String, error: SurveyError): String = js.native
+  
   def getFirstQuestionToFocus(): Question = js.native
   def getFirstQuestionToFocus(withError: Boolean): Question = js.native
   
@@ -183,9 +185,18 @@ class PanelModelBase ()
   
   def getLayoutType(): String = js.native
   
+  /* CompleteClass */
+  override def getLocale(): String = js.native
+  
+  /* CompleteClass */
+  override def getMarkdownHtml(text: String): String = js.native
+  
   def getPanel(): IPanel = js.native
   
   /* protected */ def getPanelStartIndex(index: Double): Double = js.native
+  
+  /* CompleteClass */
+  override def getProcessedText(text: String): String = js.native
   
   /**
     * Returns the question by its name
@@ -220,13 +231,13 @@ class PanelModelBase ()
     * @param focusOnFirstError set it to true to focus on the first question that doesn't pass the validation
     */
   def hasErrors(): Boolean = js.native
-  def hasErrors(fireCallback: js.UndefOr[scala.Nothing], focusOnFirstError: js.UndefOr[scala.Nothing], rec: js.Any): Boolean = js.native
-  def hasErrors(fireCallback: js.UndefOr[scala.Nothing], focusOnFirstError: Boolean): Boolean = js.native
-  def hasErrors(fireCallback: js.UndefOr[scala.Nothing], focusOnFirstError: Boolean, rec: js.Any): Boolean = js.native
   def hasErrors(fireCallback: Boolean): Boolean = js.native
-  def hasErrors(fireCallback: Boolean, focusOnFirstError: js.UndefOr[scala.Nothing], rec: js.Any): Boolean = js.native
   def hasErrors(fireCallback: Boolean, focusOnFirstError: Boolean): Boolean = js.native
   def hasErrors(fireCallback: Boolean, focusOnFirstError: Boolean, rec: js.Any): Boolean = js.native
+  def hasErrors(fireCallback: Boolean, focusOnFirstError: Unit, rec: js.Any): Boolean = js.native
+  def hasErrors(fireCallback: Unit, focusOnFirstError: Boolean): Boolean = js.native
+  def hasErrors(fireCallback: Unit, focusOnFirstError: Boolean, rec: js.Any): Boolean = js.native
+  def hasErrors(fireCallback: Unit, focusOnFirstError: Unit, rec: js.Any): Boolean = js.native
   
   /* protected */ def hasErrorsCore(rec: js.Any): Unit = js.native
   
@@ -266,7 +277,7 @@ class PanelModelBase ()
   val locRequiredErrorText: LocalizableString = js.native
   
   /* InferMemberOverrides */
-  override def locStrsChanged(): Unit with js.Any = js.native
+  override def locStrsChanged(): Unit & js.Any = js.native
   
   val locTitle: LocalizableString = js.native
   
@@ -343,6 +354,9 @@ class PanelModelBase ()
   val root: PanelModelBase = js.native
   
   val rows: js.Array[QuestionRowModel] = js.native
+  
+  /* CompleteClass */
+  override def runCondition(values: HashTable[js.Any], properties: HashTable[js.Any]): js.Any = js.native
   
   /**
     * PanelModel or PageModel title property.

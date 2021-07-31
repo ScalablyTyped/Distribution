@@ -3,20 +3,18 @@ package typings.chromeApps.chrome.networking.onc
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WiMAXProperties[M /* <: ManagedObject */, B] extends StObject {
   
   /** Whether the network should be connected automatically. */
-  var AutoConnect: js.UndefOr[B] = js.native
+  var AutoConnect: js.UndefOr[B] = js.undefined
   
   /** The network EAP properties. */
-  var EAP: js.UndefOr[EAPProperties] = js.native
+  var EAP: js.UndefOr[EAPProperties] = js.undefined
   
   /** The network signal strength. */
-  var SignalStrength: js.UndefOr[integer] = js.native
+  var SignalStrength: js.UndefOr[integer] = js.undefined
 }
 object WiMAXProperties {
   
@@ -27,7 +25,7 @@ object WiMAXProperties {
   }
   
   @scala.inline
-  implicit class WiMAXPropertiesMutableBuilder[Self <: WiMAXProperties[_, _], M /* <: ManagedObject */, B] (val x: Self with (WiMAXProperties[M, B])) extends AnyVal {
+  implicit class WiMAXPropertiesMutableBuilder[Self <: WiMAXProperties[?, ?], M /* <: ManagedObject */, B] (val x: Self & (WiMAXProperties[M, B])) extends AnyVal {
     
     @scala.inline
     def setAutoConnect(value: B): Self = StObject.set(x, "AutoConnect", value.asInstanceOf[js.Any])

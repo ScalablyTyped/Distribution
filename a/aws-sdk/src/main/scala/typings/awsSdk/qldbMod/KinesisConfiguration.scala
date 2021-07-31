@@ -2,21 +2,19 @@ package typings.awsSdk.qldbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KinesisConfiguration extends StObject {
   
   /**
     * Enables QLDB to publish multiple data records in a single Kinesis Data Streams record. To learn more, see KPL Key Concepts in the Amazon Kinesis Data Streams Developer Guide.
     */
-  var AggregationEnabled: js.UndefOr[Boolean] = js.native
+  var AggregationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Kinesis data stream resource.
     */
-  var StreamArn: Arn = js.native
+  var StreamArn: Arn
 }
 object KinesisConfiguration {
   

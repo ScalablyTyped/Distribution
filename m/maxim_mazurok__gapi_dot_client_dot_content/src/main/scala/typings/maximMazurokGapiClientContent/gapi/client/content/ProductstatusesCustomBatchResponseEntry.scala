@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductstatusesCustomBatchResponseEntry extends StObject {
   
   /** The ID of the request entry this entry responds to. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** A list of errors, if the request failed. */
-  var errors: js.UndefOr[Errors] = js.native
+  var errors: js.UndefOr[Errors] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#productstatusesCustomBatchResponseEntry`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The requested product status. Only defined if the request was successful. */
-  var productStatus: js.UndefOr[ProductStatus] = js.native
+  var productStatus: js.UndefOr[ProductStatus] = js.undefined
 }
 object ProductstatusesCustomBatchResponseEntry {
   

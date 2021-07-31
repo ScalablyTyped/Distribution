@@ -2,37 +2,35 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextParams extends StObject {
   
-  var txt: js.UndefOr[ImgixParamType] = js.native
+  var txt: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-align`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-align`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-clip`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-clip`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-color`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-color`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-fit`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-fit`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-font`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-font`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-lig`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-lig`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-line`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-line`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-line-color`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-line-color`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-pad`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-pad`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-shad`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-shad`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-size`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-size`: js.UndefOr[ImgixParamType] = js.undefined
   
-  var `txt-width`: js.UndefOr[ImgixParamType] = js.native
+  var `txt-width`: js.UndefOr[ImgixParamType] = js.undefined
 }
 object TextParams {
   

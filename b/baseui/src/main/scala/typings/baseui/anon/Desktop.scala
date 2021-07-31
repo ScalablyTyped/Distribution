@@ -4,15 +4,13 @@ import typings.baseui.baseuiStrings.horizontal
 import typings.baseui.baseuiStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Desktop extends StObject {
   
-  var desktop: js.UndefOr[horizontal | vertical] = js.native
+  var desktop: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var mobile: js.UndefOr[horizontal | vertical] = js.native
+  var mobile: js.UndefOr[horizontal | vertical] = js.undefined
 }
 object Desktop {
   

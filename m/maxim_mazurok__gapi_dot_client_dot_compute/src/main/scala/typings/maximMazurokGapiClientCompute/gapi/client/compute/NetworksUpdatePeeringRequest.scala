@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworksUpdatePeeringRequest extends StObject {
   
-  var networkPeering: js.UndefOr[NetworkPeering] = js.native
+  var networkPeering: js.UndefOr[NetworkPeering] = js.undefined
 }
 object NetworksUpdatePeeringRequest {
   

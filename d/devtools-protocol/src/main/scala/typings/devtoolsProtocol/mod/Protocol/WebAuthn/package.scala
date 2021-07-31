@@ -1,11 +1,8 @@
-package typings.devtoolsProtocol.mod.Protocol
+package typings.devtoolsProtocol.mod.Protocol.WebAuthn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-package object WebAuthn {
-  
-  type AuthenticatorId = java.lang.String
-}
+
+type AuthenticatorId = java.lang.String

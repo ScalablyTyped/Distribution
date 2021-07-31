@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PointData extends StObject {
   
   /** The time interval associated with the point. */
-  var timeInterval: js.UndefOr[TimeInterval] = js.native
+  var timeInterval: js.UndefOr[TimeInterval] = js.undefined
   
   /** The values that make up the point. */
-  var values: js.UndefOr[js.Array[TypedValue]] = js.native
+  var values: js.UndefOr[js.Array[TypedValue]] = js.undefined
 }
 object PointData {
   

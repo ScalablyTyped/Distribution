@@ -4,96 +4,94 @@ import typings.phaser.MatterJS.BodyType
 import typings.phaser.MatterJS.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatterCollisionData extends StObject {
   
   /**
     * A reference to the dominant axis body.
     */
-  var axisBody: BodyType = js.native
+  var axisBody: BodyType
   
   /**
     * The index of the dominant collision axis vector (edge normal)
     */
-  var axisNumber: Double = js.native
+  var axisNumber: Double
   
   /**
     * A reference to the first body involved in the collision.
     */
-  var bodyA: BodyType = js.native
+  var bodyA: BodyType
   
   /**
     * A reference to the second body involved in the collision.
     */
-  var bodyB: BodyType = js.native
+  var bodyB: BodyType
   
   /**
     * Have the pair collided or not?
     */
-  var collided: Boolean = js.native
+  var collided: Boolean
   
   /**
     * The depth of the collision on the minimum overlap.
     */
-  var depth: Double = js.native
+  var depth: Double
   
   /**
     * The resulting friction from the collision.
     */
-  var friction: Double = js.native
+  var friction: Double
   
   /**
     * The resulting static friction from the collision.
     */
-  var frictionStatic: Double = js.native
+  var frictionStatic: Double
   
   /**
     * The resulting inverse mass from the collision.
     */
-  var inverseMass: Double = js.native
+  var inverseMass: Double
   
   /**
     * The collision normal, facing away from Body A.
     */
-  var normal: Vector = js.native
+  var normal: Vector
   
   /**
     * A reference to the parent of Body A, or to Body A itself if it has no parent.
     */
-  var parentA: BodyType = js.native
+  var parentA: BodyType
   
   /**
     * A reference to the parent of Body B, or to Body B itself if it has no parent.
     */
-  var parentB: BodyType = js.native
+  var parentB: BodyType
   
   /**
     * The penetration distances between the two bodies.
     */
-  var penetration: Vector = js.native
+  var penetration: Vector
   
   /**
     * The resulting restitution from the collision.
     */
-  var restitution: Double = js.native
+  var restitution: Double
   
   /**
     * The resulting slop from the collision.
     */
-  var slop: Double = js.native
+  var slop: Double
   
   /**
     * An array of support points, either exactly one or two points.
     */
-  var supports: js.Array[Vector] = js.native
+  var supports: js.Array[Vector]
   
   /**
     * The tangent of the collision normal.
     */
-  var tangent: Vector = js.native
+  var tangent: Vector
 }
 object MatterCollisionData {
   

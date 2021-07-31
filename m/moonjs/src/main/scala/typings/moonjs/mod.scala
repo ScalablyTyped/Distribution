@@ -11,7 +11,6 @@ import typings.std.Record
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -19,35 +18,47 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("moonjs", JSImport.Namespace)
   @js.native
-  class ^[Props /* <: String */, Data, Methods] () extends Instance[Data with Methods with (Record[Props, _])] {
+  class ^[Props /* <: String */, Data, Methods] ()
+    extends StObject
+       with Instance[Data & Methods & (Record[Props, js.Any])] {
     def this(options: ConstructorOptions[Props, Data, Methods]) = this()
   }
   @JSImport("moonjs", JSImport.Namespace)
   @js.native
   val ^ : MoonStatic = js.native
   
-  type ComponentOptions[Props /* <: String */, Data, Methods] = (ComponentOptionsProperties[Props, js.Function0[Data], Methods]) with (ThisType[Instance[Data with Methods with (Record[Props, _])]])
+  trait ComponentOptions[Props /* <: String */, Data, Methods]
+    extends StObject
+       with ComponentOptionsProperties[Props, js.Function0[Data], Methods]
+       with ThisType[Instance[Data & Methods & (Record[Props, js.Any])]]
+  object ComponentOptions {
+    
+    @scala.inline
+    def apply[Props /* <: String */, Data, Methods](): ComponentOptions[Props, Data, Methods] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ComponentOptions[Props, Data, Methods]]
+    }
+  }
   
-  @js.native
   trait ComponentOptionsProperties[Props /* <: String */, Data, Methods] extends StObject {
     
-    var data: js.UndefOr[Data] = js.native
+    var data: js.UndefOr[Data] = js.undefined
     
-    var el: js.UndefOr[String | HTMLElement] = js.native
+    var el: js.UndefOr[String | HTMLElement] = js.undefined
     
-    var functional: js.UndefOr[`true`] = js.native
+    var functional: js.UndefOr[`true`] = js.undefined
     
-    var hooks: js.UndefOr[LifecycleHooks] = js.native
+    var hooks: js.UndefOr[LifecycleHooks] = js.undefined
     
-    var methods: js.UndefOr[Methods] = js.native
+    var methods: js.UndefOr[Methods] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var props: js.UndefOr[js.Array[Props]] = js.native
+    var props: js.UndefOr[js.Array[Props]] = js.undefined
     
-    var render: js.UndefOr[js.Function2[/* h */ CreateElement, /* ctx */ js.Any, VDomElement]] = js.native
+    var render: js.UndefOr[js.Function2[/* h */ CreateElement, /* ctx */ js.Any, VDomElement]] = js.undefined
     
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
   }
   object ComponentOptionsProperties {
     
@@ -58,7 +69,7 @@ object mod extends Shortcut {
     }
     
     @scala.inline
-    implicit class ComponentOptionsPropertiesMutableBuilder[Self <: ComponentOptionsProperties[_, _, _], Props /* <: String */, Data, Methods] (val x: Self with (ComponentOptionsProperties[Props, Data, Methods])) extends AnyVal {
+    implicit class ComponentOptionsPropertiesMutableBuilder[Self <: ComponentOptionsProperties[?, ?, ?], Props /* <: String */, Data, Methods] (val x: Self & (ComponentOptionsProperties[Props, Data, Methods])) extends AnyVal {
       
       @scala.inline
       def setData(value: Data): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
@@ -119,52 +130,48 @@ object mod extends Shortcut {
     }
   }
   
-  type ConstructorOptions[Props /* <: String */, Data, Methods] = (ComponentOptionsProperties[Props, js.Function0[Data] | Data, Methods]) with (ThisType[Instance[Data with Methods with (Record[Props, _])]])
+  trait ConstructorOptions[Props /* <: String */, Data, Methods]
+    extends StObject
+       with ComponentOptionsProperties[Props, js.Function0[Data] | Data, Methods]
+       with ThisType[Instance[Data & Methods & (Record[Props, js.Any])]]
+  object ConstructorOptions {
+    
+    @scala.inline
+    def apply[Props /* <: String */, Data, Methods](): ConstructorOptions[Props, Data, Methods] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ConstructorOptions[Props, Data, Methods]]
+    }
+  }
   
   @js.native
   trait CreateElement extends StObject {
     
-    def apply(tag: String, attrs: Record[String, _]): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, _], metadata: js.UndefOr[scala.Nothing], children: String): VDomElement = js.native
-    def apply(
-      tag: String,
-      attrs: Record[String, _],
-      metadata: js.UndefOr[scala.Nothing],
-      children: js.Array[VDomElement]
-    ): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, _], metadata: js.Any): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, _], metadata: js.Any, children: String): VDomElement = js.native
-    def apply(tag: String, attrs: Record[String, _], metadata: js.Any, children: js.Array[VDomElement]): VDomElement = js.native
-    def apply(tag: Instance[js.Object], attrs: Record[String, _]): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, js.Any]): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, js.Any], metadata: js.Any): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, js.Any], metadata: js.Any, children: String): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, js.Any], metadata: js.Any, children: js.Array[VDomElement]): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, js.Any], metadata: Unit, children: String): VDomElement = js.native
+    def apply(tag: String, attrs: Record[String, js.Any], metadata: Unit, children: js.Array[VDomElement]): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any]): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any], metadata: js.Any): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any], metadata: js.Any, children: String): VDomElement = js.native
     def apply(
       tag: Instance[js.Object],
-      attrs: Record[String, _],
-      metadata: js.UndefOr[scala.Nothing],
-      children: String
-    ): VDomElement = js.native
-    def apply(
-      tag: Instance[js.Object],
-      attrs: Record[String, _],
-      metadata: js.UndefOr[scala.Nothing],
-      children: js.Array[VDomElement]
-    ): VDomElement = js.native
-    def apply(tag: Instance[js.Object], attrs: Record[String, _], metadata: js.Any): VDomElement = js.native
-    def apply(tag: Instance[js.Object], attrs: Record[String, _], metadata: js.Any, children: String): VDomElement = js.native
-    def apply(
-      tag: Instance[js.Object],
-      attrs: Record[String, _],
+      attrs: Record[String, js.Any],
       metadata: js.Any,
       children: js.Array[VDomElement]
     ): VDomElement = js.native
-    def apply(tag: Numbersigntext, attrs: Record[String, _]): VDomElement = js.native
+    def apply(tag: Instance[js.Object], attrs: Record[String, js.Any], metadata: Unit, children: String): VDomElement = js.native
     def apply(
-      tag: Numbersigntext,
-      attrs: Record[String, _],
-      metadata: js.UndefOr[scala.Nothing],
-      children: String
+      tag: Instance[js.Object],
+      attrs: Record[String, js.Any],
+      metadata: Unit,
+      children: js.Array[VDomElement]
     ): VDomElement = js.native
-    def apply(tag: Numbersigntext, attrs: Record[String, _], metadata: js.Any): VDomElement = js.native
-    def apply(tag: Numbersigntext, attrs: Record[String, _], metadata: js.Any, children: String): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, js.Any]): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, js.Any], metadata: js.Any): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, js.Any], metadata: js.Any, children: String): VDomElement = js.native
+    def apply(tag: Numbersigntext, attrs: Record[String, js.Any], metadata: Unit, children: String): VDomElement = js.native
   }
   
   @js.native
@@ -176,7 +183,7 @@ object mod extends Shortcut {
     def build(): Unit = js.native
     
     def callMethod[K /* <: /* keyof Data */ String */](methodName: K): js.Any = js.native
-    def callMethod[K /* <: /* keyof Data */ String */](methodName: K, params: js.Array[_]): js.Any = js.native
+    def callMethod[K /* <: /* keyof Data */ String */](methodName: K, params: js.Array[js.Any]): js.Any = js.native
     
     def destroy(): Unit = js.native
     
@@ -188,9 +195,9 @@ object mod extends Shortcut {
     def mount(selector: String): Unit = js.native
     
     def off(): Unit = js.native
-    def off(eventName: js.UndefOr[scala.Nothing], listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
     def off(eventName: String): Unit = js.native
     def off(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
+    def off(eventName: Unit, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
     
     def on(eventName: String, listener: js.Function1[/* event */ Event, Unit]): Unit = js.native
     
@@ -200,16 +207,15 @@ object mod extends Shortcut {
     ): Unit = js.native
   }
   
-  @js.native
   trait LifecycleHooks extends StObject {
     
-    var destroyed: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroyed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var init: js.UndefOr[js.Function0[Unit]] = js.native
+    var init: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var mounted: js.UndefOr[js.Function0[Unit]] = js.native
+    var mounted: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var updated: js.UndefOr[js.Function0[Unit]] = js.native
+    var updated: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object LifecycleHooks {
     
@@ -248,18 +254,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MoonConfig extends StObject {
     
-    var delimiters: js.Array[String] = js.native
+    var delimiters: js.Array[String]
     
-    def keycodes(codemap: Record[String, Double]): Unit = js.native
+    def keycodes(codemap: Record[String, Double]): Unit
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var silent: Boolean = js.native
+    var silent: Boolean
     
-    var version: String = js.native
+    var version: String
   }
   object MoonConfig {
     
@@ -300,14 +305,17 @@ object mod extends Shortcut {
   
   @js.native
   trait MoonConstructor
-    extends Instantiable0[Instance[js.Object with (Record[String, _])]]
+    extends StObject
+       with Instantiable0[Instance[js.Object & (Record[String, js.Any])]]
        with Instantiable1[
           /* options */ ConstructorOptions[String, js.Object, js.Object], 
-          Instance[js.Object with (Record[String, _])]
+          Instance[js.Object & (Record[String, js.Any])]
         ]
   
   @js.native
-  trait MoonStatic extends MoonConstructor {
+  trait MoonStatic
+    extends StObject
+       with MoonConstructor {
     
     def compile(template: String): Unit = js.native
     
@@ -322,18 +330,17 @@ object mod extends Shortcut {
     def use(plugin: js.Object): Unit = js.native
   }
   
-  @js.native
   trait VDomElement extends StObject {
     
-    var children: js.Array[VDomElement] = js.native
+    var children: js.Array[VDomElement]
     
-    var meta: js.Object = js.native
+    var meta: js.Object
     
-    var props: Record[String, _] = js.native
+    var props: Record[String, js.Any]
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var `val`: String = js.native
+    var `val`: String
   }
   object VDomElement {
     
@@ -341,7 +348,7 @@ object mod extends Shortcut {
     def apply(
       children: js.Array[VDomElement],
       meta: js.Object,
-      props: Record[String, _],
+      props: Record[String, js.Any],
       `type`: String,
       `val`: String
     ): VDomElement = {
@@ -364,7 +371,7 @@ object mod extends Shortcut {
       def setMeta(value: js.Object): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProps(value: Record[String, _]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      def setProps(value: Record[String, js.Any]): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

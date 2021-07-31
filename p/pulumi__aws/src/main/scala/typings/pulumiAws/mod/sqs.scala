@@ -15,10 +15,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqs {
+  
+  @JSImport("@pulumi/aws", "sqs")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws", "sqs.Queue")
   @js.native
@@ -33,11 +36,15 @@ object sqs {
       */
     def this(name: String) = this()
     def this(name: String, args: QueueArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: QueueArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Queue {
+    
+    @JSImport("@pulumi/aws", "sqs.Queue")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Queue resource's state with the given name, ID, and optional extra
@@ -48,26 +55,21 @@ object sqs {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sqs.Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.sqsQueueMod.Queue = js.native
-    @JSImport("@pulumi/aws", "sqs.Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.sqsQueueMod.Queue = js.native
-    @JSImport("@pulumi/aws", "sqs.Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueueState): typings.pulumiAws.sqsQueueMod.Queue = js.native
-    @JSImport("@pulumi/aws", "sqs.Queue.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): typings.pulumiAws.sqsQueueMod.Queue = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.sqsQueueMod.Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sqsQueueMod.Queue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.sqsQueueMod.Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sqsQueueMod.Queue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueueState): typings.pulumiAws.sqsQueueMod.Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sqsQueueMod.Queue]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueueState, opts: CustomResourceOptions): typings.pulumiAws.sqsQueueMod.Queue = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.sqsQueueMod.Queue]
     
     /**
       * Returns true if the given object is an instance of Queue.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sqs.Queue.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sqs/queue.Queue */ Boolean]
   }
   
   @JSImport("@pulumi/aws", "sqs.QueueEventSubscription")
@@ -85,7 +87,7 @@ object sqs {
       name: String,
       queue: typings.pulumiAws.sqsQueueMod.Queue,
       handler: QueueEventHandler,
-      args: js.UndefOr[scala.Nothing],
+      args: Unit,
       opts: ComponentResourceOptions
     ) = this()
     def this(
@@ -114,6 +116,10 @@ object sqs {
   /* static members */
   object QueuePolicy {
     
+    @JSImport("@pulumi/aws", "sqs.QueuePolicy")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing QueuePolicy resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -123,34 +129,27 @@ object sqs {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws", "sqs.QueuePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.queuePolicyMod.QueuePolicy = js.native
-    @JSImport("@pulumi/aws", "sqs.QueuePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.queuePolicyMod.QueuePolicy = js.native
-    @JSImport("@pulumi/aws", "sqs.QueuePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueuePolicyState): typings.pulumiAws.queuePolicyMod.QueuePolicy = js.native
-    @JSImport("@pulumi/aws", "sqs.QueuePolicy.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: QueuePolicyState, opts: CustomResourceOptions): typings.pulumiAws.queuePolicyMod.QueuePolicy = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.queuePolicyMod.QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queuePolicyMod.QueuePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.queuePolicyMod.QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queuePolicyMod.QueuePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueuePolicyState): typings.pulumiAws.queuePolicyMod.QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queuePolicyMod.QueuePolicy]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: QueuePolicyState, opts: CustomResourceOptions): typings.pulumiAws.queuePolicyMod.QueuePolicy = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.queuePolicyMod.QueuePolicy]
     
     /**
       * Returns true if the given object is an instance of QueuePolicy.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws", "sqs.QueuePolicy.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/sqs/queuePolicy.QueuePolicy */ Boolean]
   }
   
-  @JSImport("@pulumi/aws", "sqs.getQueue")
-  @js.native
-  def getQueue(args: GetQueueArgs): js.Promise[GetQueueResult] = js.native
-  @JSImport("@pulumi/aws", "sqs.getQueue")
-  @js.native
-  def getQueue(args: GetQueueArgs, opts: InvokeOptions): js.Promise[GetQueueResult] = js.native
+  @scala.inline
+  def getQueue(args: GetQueueArgs): js.Promise[GetQueueResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetQueueResult]]
+  @scala.inline
+  def getQueue(args: GetQueueArgs, opts: InvokeOptions): js.Promise[GetQueueResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getQueue")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetQueueResult]]
   
   /* augmented module */
   object pulumiAwsSqsQueueAugmentingMod {
@@ -163,12 +162,7 @@ object sqs {
         * with options to control the behavior of the subscription.
         */
       def onEvent(name: String, handler: QueueEventHandler): typings.pulumiAws.sqsMixinsMod.QueueEventSubscription = js.native
-      def onEvent(
-        name: String,
-        handler: QueueEventHandler,
-        args: js.UndefOr[scala.Nothing],
-        opts: ComponentResourceOptions
-      ): typings.pulumiAws.sqsMixinsMod.QueueEventSubscription = js.native
+      def onEvent(name: String, handler: QueueEventHandler, args: Unit, opts: ComponentResourceOptions): typings.pulumiAws.sqsMixinsMod.QueueEventSubscription = js.native
       def onEvent(name: String, handler: QueueEventHandler, args: QueueEventSubscriptionArgs): typings.pulumiAws.sqsMixinsMod.QueueEventSubscription = js.native
       def onEvent(
         name: String,

@@ -2,27 +2,25 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompletionEntryDetails extends StObject {
   
-  var codeActions: js.UndefOr[js.Array[CodeAction]] = js.native
+  var codeActions: js.UndefOr[js.Array[CodeAction]] = js.undefined
   
-  var displayParts: js.Array[SymbolDisplayPart] = js.native
+  var displayParts: js.Array[SymbolDisplayPart]
   
-  var documentation: js.UndefOr[js.Array[SymbolDisplayPart]] = js.native
+  var documentation: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
-  var kindModifiers: java.lang.String = js.native
+  var kindModifiers: java.lang.String
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var source: js.UndefOr[js.Array[SymbolDisplayPart]] = js.native
+  var source: js.UndefOr[js.Array[SymbolDisplayPart]] = js.undefined
   
-  var tags: js.UndefOr[js.Array[JSDocTagInfo]] = js.native
+  var tags: js.UndefOr[js.Array[JSDocTagInfo]] = js.undefined
 }
 object CompletionEntryDetails {
   

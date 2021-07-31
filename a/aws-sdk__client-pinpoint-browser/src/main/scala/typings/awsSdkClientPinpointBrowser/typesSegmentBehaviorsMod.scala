@@ -4,18 +4,16 @@ import typings.awsSdkClientPinpointBrowser.typesRecencyDimensionMod.RecencyDimen
 import typings.awsSdkClientPinpointBrowser.typesRecencyDimensionMod.UnmarshalledRecencyDimension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesSegmentBehaviorsMod {
   
-  @js.native
   trait SegmentBehaviors extends StObject {
     
     /**
       * The recency of use.
       */
-    var Recency: js.UndefOr[RecencyDimension] = js.native
+    var Recency: js.UndefOr[RecencyDimension] = js.undefined
   }
   object SegmentBehaviors {
     
@@ -36,14 +34,15 @@ object typesSegmentBehaviorsMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledSegmentBehaviors extends SegmentBehaviors {
+  trait UnmarshalledSegmentBehaviors
+    extends StObject
+       with SegmentBehaviors {
     
     /**
       * The recency of use.
       */
     @JSName("Recency")
-    var Recency_UnmarshalledSegmentBehaviors: js.UndefOr[UnmarshalledRecencyDimension] = js.native
+    var Recency_UnmarshalledSegmentBehaviors: js.UndefOr[UnmarshalledRecencyDimension] = js.undefined
   }
   object UnmarshalledSegmentBehaviors {
     

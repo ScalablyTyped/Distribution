@@ -2,19 +2,19 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.typescriptServices.TypeScript.IASTSpan because Already inherited
-- typings.typescriptServices.TypeScript.ICallExpression because var conflicts: _end, _start. Inlined expression, argumentList */ @js.native
-trait InvocationExpression extends AST {
+- typings.typescriptServices.TypeScript.ICallExpression because var conflicts: _end, _start. Inlined expression, argumentList */ trait InvocationExpression
+  extends StObject
+     with AST {
   
-  var argumentList: ArgumentList = js.native
+  var argumentList: ArgumentList
   
-  var expression: AST = js.native
+  var expression: AST
   
-  def structuralEquals(ast: InvocationExpression, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: InvocationExpression, includingPosition: Boolean): Boolean
 }
 object InvocationExpression {
   

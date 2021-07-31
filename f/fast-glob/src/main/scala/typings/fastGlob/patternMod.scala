@@ -5,97 +5,79 @@ import typings.fastGlob.typesMod.Pattern
 import typings.fastGlob.typesMod.PatternRe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object patternMod {
   
-  @JSImport("fast-glob/out/utils/pattern", "convertPatternsToRe")
+  @JSImport("fast-glob/out/utils/pattern", JSImport.Namespace)
   @js.native
-  def convertPatternsToRe(patterns: js.Array[Pattern], options: MicromatchOptions): js.Array[PatternRe] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fast-glob/out/utils/pattern", "convertToNegativePattern")
-  @js.native
-  def convertToNegativePattern(pattern: Pattern): Pattern = js.native
+  @scala.inline
+  def convertPatternsToRe(patterns: js.Array[Pattern], options: MicromatchOptions): js.Array[PatternRe] = (^.asInstanceOf[js.Dynamic].applyDynamic("convertPatternsToRe")(patterns.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[PatternRe]]
   
-  @JSImport("fast-glob/out/utils/pattern", "convertToPositivePattern")
-  @js.native
-  def convertToPositivePattern(pattern: Pattern): Pattern = js.native
+  @scala.inline
+  def convertToNegativePattern(pattern: Pattern): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToNegativePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Pattern]
   
-  @JSImport("fast-glob/out/utils/pattern", "endsWithSlashGlobStar")
-  @js.native
-  def endsWithSlashGlobStar(pattern: Pattern): Boolean = js.native
+  @scala.inline
+  def convertToPositivePattern(pattern: Pattern): Pattern = ^.asInstanceOf[js.Dynamic].applyDynamic("convertToPositivePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Pattern]
   
-  @JSImport("fast-glob/out/utils/pattern", "expandBraceExpansion")
-  @js.native
-  def expandBraceExpansion(pattern: Pattern): js.Array[Pattern] = js.native
+  @scala.inline
+  def endsWithSlashGlobStar(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("endsWithSlashGlobStar")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fast-glob/out/utils/pattern", "expandPatternsWithBraceExpansion")
-  @js.native
-  def expandPatternsWithBraceExpansion(patterns: js.Array[Pattern]): js.Array[Pattern] = js.native
+  @scala.inline
+  def expandBraceExpansion(pattern: Pattern): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandBraceExpansion")(pattern.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
   
-  @JSImport("fast-glob/out/utils/pattern", "getBaseDirectory")
-  @js.native
-  def getBaseDirectory(pattern: Pattern): String = js.native
+  @scala.inline
+  def expandPatternsWithBraceExpansion(patterns: js.Array[Pattern]): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("expandPatternsWithBraceExpansion")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
   
-  @JSImport("fast-glob/out/utils/pattern", "getNegativePatterns")
-  @js.native
-  def getNegativePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = js.native
+  @scala.inline
+  def getBaseDirectory(pattern: Pattern): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseDirectory")(pattern.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("fast-glob/out/utils/pattern", "getPatternParts")
-  @js.native
-  def getPatternParts(pattern: Pattern, options: MicromatchOptions): js.Array[Pattern] = js.native
+  @scala.inline
+  def getNegativePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("getNegativePatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
   
-  @JSImport("fast-glob/out/utils/pattern", "getPositivePatterns")
-  @js.native
-  def getPositivePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = js.native
+  @scala.inline
+  def getPatternParts(pattern: Pattern, options: MicromatchOptions): js.Array[Pattern] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPatternParts")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Pattern]]
   
-  @JSImport("fast-glob/out/utils/pattern", "hasGlobStar")
-  @js.native
-  def hasGlobStar(pattern: Pattern): Boolean = js.native
+  @scala.inline
+  def getPositivePatterns(patterns: js.Array[Pattern]): js.Array[Pattern] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPositivePatterns")(patterns.asInstanceOf[js.Any]).asInstanceOf[js.Array[Pattern]]
   
-  @JSImport("fast-glob/out/utils/pattern", "isAffectDepthOfReadingPattern")
-  @js.native
-  def isAffectDepthOfReadingPattern(pattern: Pattern): Boolean = js.native
+  @scala.inline
+  def hasGlobStar(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasGlobStar")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fast-glob/out/utils/pattern", "isDynamicPattern")
-  @js.native
-  def isDynamicPattern(pattern: Pattern): Boolean = js.native
-  @JSImport("fast-glob/out/utils/pattern", "isDynamicPattern")
-  @js.native
-  def isDynamicPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = js.native
+  @scala.inline
+  def isAffectDepthOfReadingPattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAffectDepthOfReadingPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fast-glob/out/utils/pattern", "isNegativePattern")
-  @js.native
-  def isNegativePattern(pattern: Pattern): Boolean = js.native
+  @scala.inline
+  def isDynamicPattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isDynamicPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDynamicPattern")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("fast-glob/out/utils/pattern", "isPositivePattern")
-  @js.native
-  def isPositivePattern(pattern: Pattern): Boolean = js.native
+  @scala.inline
+  def isNegativePattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNegativePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fast-glob/out/utils/pattern", "isStaticPattern")
-  @js.native
-  def isStaticPattern(pattern: Pattern): Boolean = js.native
-  @JSImport("fast-glob/out/utils/pattern", "isStaticPattern")
-  @js.native
-  def isStaticPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = js.native
+  @scala.inline
+  def isPositivePattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPositivePattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("fast-glob/out/utils/pattern", "makeRe")
-  @js.native
-  def makeRe(pattern: Pattern, options: MicromatchOptions): PatternRe = js.native
+  @scala.inline
+  def isStaticPattern(pattern: Pattern): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStaticPattern")(pattern.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isStaticPattern(pattern: Pattern, options: PatternTypeOptions): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isStaticPattern")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("fast-glob/out/utils/pattern", "matchAny")
-  @js.native
-  def matchAny(entry: String, patternsRe: js.Array[PatternRe]): Boolean = js.native
+  @scala.inline
+  def makeRe(pattern: Pattern, options: MicromatchOptions): PatternRe = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRe")(pattern.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PatternRe]
   
-  @js.native
+  @scala.inline
+  def matchAny(entry: String, patternsRe: js.Array[PatternRe]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("matchAny")(entry.asInstanceOf[js.Any], patternsRe.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait PatternTypeOptions extends StObject {
     
-    var braceExpansion: js.UndefOr[Boolean] = js.native
+    var braceExpansion: js.UndefOr[Boolean] = js.undefined
     
-    var caseSensitiveMatch: js.UndefOr[Boolean] = js.native
+    var caseSensitiveMatch: js.UndefOr[Boolean] = js.undefined
     
-    var extglob: js.UndefOr[Boolean] = js.native
+    var extglob: js.UndefOr[Boolean] = js.undefined
   }
   object PatternTypeOptions {
     

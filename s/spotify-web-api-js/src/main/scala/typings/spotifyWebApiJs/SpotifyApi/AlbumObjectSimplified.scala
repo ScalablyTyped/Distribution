@@ -3,33 +3,31 @@ package typings.spotifyWebApiJs.SpotifyApi
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.album
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Simplified Album Object
   * [album object (simplified)](https://developer.spotify.com/web-api/object-model/#album-object-simplified)
   */
-@js.native
 trait AlbumObjectSimplified extends StObject {
   
-  var album_type: String = js.native
+  var album_type: String
   
-  var available_markets: js.UndefOr[js.Array[String]] = js.native
+  var available_markets: js.UndefOr[js.Array[String]] = js.undefined
   
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var images: js.Array[ImageObject] = js.native
+  var images: js.Array[ImageObject]
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: album = js.native
+  var `type`: album
   
-  var uri: String = js.native
+  var uri: String
 }
 object AlbumObjectSimplified {
   
@@ -41,11 +39,10 @@ object AlbumObjectSimplified {
     id: String,
     images: js.Array[ImageObject],
     name: String,
-    `type`: album,
     uri: String
   ): AlbumObjectSimplified = {
     val __obj = js.Dynamic.literal(album_type = album_type.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("album")
     __obj.asInstanceOf[AlbumObjectSimplified]
   }
   

@@ -20,40 +20,38 @@ import typings.chromeApps.chromeAppsStrings.progress_
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<chrome-apps.chrome.notifications.NotificationOptions> */
-@js.native
 trait PartialNotificationOption extends StObject {
   
-  var appIconMaskUrl: js.UndefOr[String] = js.native
+  var appIconMaskUrl: js.UndefOr[String] = js.undefined
   
-  var buttons: js.UndefOr[js.Array[ButtonOptions]] = js.native
+  var buttons: js.UndefOr[js.Array[ButtonOptions]] = js.undefined
   
-  var contextMessage: js.UndefOr[String] = js.native
+  var contextMessage: js.UndefOr[String] = js.undefined
   
-  var eventTime: js.UndefOr[double] = js.native
+  var eventTime: js.UndefOr[double] = js.undefined
   
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
-  var isClickable: js.UndefOr[Boolean] = js.native
+  var isClickable: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.UndefOr[js.Array[ItemOptions]] = js.native
+  var items: js.UndefOr[js.Array[ItemOptions]] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[`-2` | `-1` | `0` | `1` | `2`] = js.native
+  var priority: js.UndefOr[`-2` | `-1` | `0` | `1` | `2`] = js.undefined
   
-  var progress: js.UndefOr[integer] = js.native
+  var progress: js.UndefOr[integer] = js.undefined
   
-  var requireInteraction: js.UndefOr[Boolean] = js.native
+  var requireInteraction: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   var `type`: js.UndefOr[
     ToStringLiteral[
@@ -64,7 +62,7 @@ trait PartialNotificationOption extends StObject {
         basic_ | image_ | list_ | progress_
       ]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object PartialNotificationOption {
   

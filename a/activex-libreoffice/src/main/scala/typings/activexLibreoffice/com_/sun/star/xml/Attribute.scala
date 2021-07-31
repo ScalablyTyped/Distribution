@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.xml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A struct to keep information of an element's attribute. */
-@js.native
 trait Attribute extends StObject {
   
   /** the attribute name */
-  var Name: String = js.native
+  var Name: String
   
   /** the attribute namespace URL */
-  var NamespaceURL: String = js.native
+  var NamespaceURL: String
   
   /** the attribute value */
-  var Value: String = js.native
+  var Value: String
 }
 object Attribute {
   

@@ -2,32 +2,32 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SizeSliderProperties extends SmartMappingSliderBaseProperties {
+trait SizeSliderProperties
+  extends StObject
+     with SmartMappingSliderBaseProperties {
   
   /**
     * The size stops from the [SizeVariable](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-visualVariables-SizeVariable.html) to link to the slider.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#stops)
     */
-  var stops: js.UndefOr[js.Array[SizeStopProperties]] = js.native
+  var stops: js.UndefOr[js.Array[SizeStopProperties]] = js.undefined
   
   /**
     * Exposes various properties of the widget that can be styled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#style)
     */
-  var style: js.UndefOr[SizeSliderStyleProperties] = js.native
+  var style: js.UndefOr[SizeSliderStyleProperties] = js.undefined
   
   /**
     * The view model for the SizeSlider widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-smartMapping-SizeSlider.html#viewModel)
     */
-  var viewModel: js.UndefOr[SizeSliderViewModelProperties] = js.native
+  var viewModel: js.UndefOr[SizeSliderViewModelProperties] = js.undefined
 }
 object SizeSliderProperties {
   

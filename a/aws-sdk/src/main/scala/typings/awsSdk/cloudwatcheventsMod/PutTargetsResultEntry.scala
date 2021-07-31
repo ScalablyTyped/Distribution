@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutTargetsResultEntry extends StObject {
   
   /**
     * The error code that indicates why the target addition failed. If the value is ConcurrentModificationException, too many requests were made at the same time.
     */
-  var ErrorCode: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorCode] = js.native
+  var ErrorCode: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorCode] = js.undefined
   
   /**
     * The error message that explains why the target addition failed.
     */
-  var ErrorMessage: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorMessage] = js.native
+  var ErrorMessage: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.ErrorMessage] = js.undefined
   
   /**
     * The ID of the target.
     */
-  var TargetId: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.TargetId] = js.native
+  var TargetId: js.UndefOr[typings.awsSdk.cloudwatcheventsMod.TargetId] = js.undefined
 }
 object PutTargetsResultEntry {
   

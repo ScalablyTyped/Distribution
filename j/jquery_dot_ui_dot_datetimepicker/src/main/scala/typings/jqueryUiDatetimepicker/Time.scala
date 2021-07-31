@@ -2,21 +2,19 @@ package typings.jqueryUiDatetimepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Time extends StObject {
   
-  var hour: js.UndefOr[Double] = js.native
+  var hour: js.UndefOr[Double] = js.undefined
   
-  var millisecond: js.UndefOr[Double] = js.native
+  var millisecond: js.UndefOr[Double] = js.undefined
   
-  var minute: js.UndefOr[Double] = js.native
+  var minute: js.UndefOr[Double] = js.undefined
   
-  var second: js.UndefOr[Double] = js.native
+  var second: js.UndefOr[Double] = js.undefined
   
-  var timezone: js.UndefOr[String] = js.native
+  var timezone: js.UndefOr[String] = js.undefined
 }
 object Time {
   

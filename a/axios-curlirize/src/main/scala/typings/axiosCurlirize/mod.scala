@@ -4,24 +4,24 @@ import typings.axios.mod.AxiosInstance
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(instance: AxiosInstance): Unit = ^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(instance: AxiosInstance, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].apply(instance.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("axios-curlirize", JSImport.Namespace)
   @js.native
-  def apply(instance: AxiosInstance): Unit = js.native
-  @JSImport("axios-curlirize", JSImport.Namespace)
-  @js.native
-  def apply(instance: AxiosInstance, callback: Callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function2[/* result */ Result, /* error */ Error, Unit]
   
-  @js.native
   trait Result extends StObject {
     
-    var command: String = js.native
+    var command: String
   }
   object Result {
     

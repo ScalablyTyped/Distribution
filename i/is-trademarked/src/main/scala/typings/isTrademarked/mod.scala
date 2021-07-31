@@ -4,22 +4,22 @@ import typings.isTrademarked.isTrademarkedBooleans.`false`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("is-trademarked", JSImport.Namespace)
-  @js.native
-  def apply(searchTerm: String): js.Promise[`false` | js.Array[TrademarkedData]] = js.native
-  @JSImport("is-trademarked", JSImport.Namespace)
-  @js.native
-  def apply(searchTerm: String, opts: Options): js.Promise[`false` | js.Array[TrademarkedData]] = js.native
+  @scala.inline
+  def apply(searchTerm: String): js.Promise[`false` | js.Array[TrademarkedData]] = ^.asInstanceOf[js.Dynamic].apply(searchTerm.asInstanceOf[js.Any]).asInstanceOf[js.Promise[`false` | js.Array[TrademarkedData]]]
+  @scala.inline
+  def apply(searchTerm: String, opts: Options): js.Promise[`false` | js.Array[TrademarkedData]] = (^.asInstanceOf[js.Dynamic].apply(searchTerm.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[`false` | js.Array[TrademarkedData]]]
   
+  @JSImport("is-trademarked", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -40,18 +40,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TrademarkedData extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var reg: Date = js.native
+    var reg: Date
     
-    var serviceCode: String = js.native
+    var serviceCode: String
     
-    var sn: String = js.native
+    var sn: String
     
-    var wordmark: String = js.native
+    var wordmark: String
   }
   object TrademarkedData {
     

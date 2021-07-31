@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlacierJobParameters extends StObject {
   
   /**
     * Retrieval tier at which the restore will be processed.
     */
-  var Tier: typings.awsSdk.s3Mod.Tier = js.native
+  var Tier: typings.awsSdk.s3Mod.Tier
 }
 object GlacierJobParameters {
   

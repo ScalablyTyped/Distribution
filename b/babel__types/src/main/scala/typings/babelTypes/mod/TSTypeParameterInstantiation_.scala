@@ -3,25 +3,24 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSTypeParameterInstantiation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSTypeParameterInstantiation_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var params: js.Array[TSType] = js.native
+  var params: js.Array[TSType]
   
   @JSName("type")
-  var type_TSTypeParameterInstantiation_ : TSTypeParameterInstantiation = js.native
+  var type_TSTypeParameterInstantiation_ : TSTypeParameterInstantiation
 }
 object TSTypeParameterInstantiation_ {
   
   @scala.inline
-  def apply(params: js.Array[TSType], `type`: TSTypeParameterInstantiation): TSTypeParameterInstantiation_ = {
-    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(params: js.Array[TSType]): TSTypeParameterInstantiation_ = {
+    val __obj = js.Dynamic.literal(params = params.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSTypeParameterInstantiation")
     __obj.asInstanceOf[TSTypeParameterInstantiation_]
   }
   

@@ -12,7 +12,7 @@ React native wheel picker iOS style with android.
 | Keywords           | react-native, picker, wheel |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 26360 |
+| # downloads        | 23706 |
 | # stars            | 0 |
 
 ## Links

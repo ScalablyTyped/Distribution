@@ -2,66 +2,64 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTrialComponentRequest extends StObject {
   
   /**
     * The name of the component as displayed. The name doesn't need to be unique. If DisplayName isn't specified, TrialComponentName is displayed.
     */
-  var DisplayName: js.UndefOr[ExperimentEntityName] = js.native
+  var DisplayName: js.UndefOr[ExperimentEntityName] = js.undefined
   
   /**
     * When the component ended.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Replaces all of the component's input artifacts with the specified artifacts.
     */
-  var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.native
+  var InputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
   /**
     * The input artifacts to remove from the component.
     */
-  var InputArtifactsToRemove: js.UndefOr[ListTrialComponentKey256] = js.native
+  var InputArtifactsToRemove: js.UndefOr[ListTrialComponentKey256] = js.undefined
   
   /**
     * Replaces all of the component's output artifacts with the specified artifacts.
     */
-  var OutputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.native
+  var OutputArtifacts: js.UndefOr[TrialComponentArtifacts] = js.undefined
   
   /**
     * The output artifacts to remove from the component.
     */
-  var OutputArtifactsToRemove: js.UndefOr[ListTrialComponentKey256] = js.native
+  var OutputArtifactsToRemove: js.UndefOr[ListTrialComponentKey256] = js.undefined
   
   /**
     * Replaces all of the component's hyperparameters with the specified hyperparameters.
     */
-  var Parameters: js.UndefOr[TrialComponentParameters] = js.native
+  var Parameters: js.UndefOr[TrialComponentParameters] = js.undefined
   
   /**
     * The hyperparameters to remove from the component.
     */
-  var ParametersToRemove: js.UndefOr[ListTrialComponentKey256] = js.native
+  var ParametersToRemove: js.UndefOr[ListTrialComponentKey256] = js.undefined
   
   /**
     * When the component started.
     */
-  var StartTime: js.UndefOr[Timestamp] = js.native
+  var StartTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The new status of the component.
     */
-  var Status: js.UndefOr[TrialComponentStatus] = js.native
+  var Status: js.UndefOr[TrialComponentStatus] = js.undefined
   
   /**
     * The name of the component to update.
     */
-  var TrialComponentName: ExperimentEntityName = js.native
+  var TrialComponentName: ExperimentEntityName
 }
 object UpdateTrialComponentRequest {
   

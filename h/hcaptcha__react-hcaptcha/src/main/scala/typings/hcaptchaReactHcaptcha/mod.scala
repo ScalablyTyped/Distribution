@@ -8,7 +8,6 @@ import typings.hcaptchaReactHcaptcha.hcaptchaReactHcaptchaStrings.normal
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -30,28 +29,27 @@ object mod {
     def resetCaptcha(): Unit = js.native
   }
   
-  @js.native
   trait HCaptchaProps extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var languageOverride: js.UndefOr[String] = js.native
+    var languageOverride: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* event */ String, _]] = js.native
+    var onError: js.UndefOr[js.Function1[/* event */ String, js.Any]] = js.undefined
     
-    var onExpire: js.UndefOr[js.Function0[_]] = js.native
+    var onExpire: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
-    var onVerify: js.UndefOr[js.Function1[/* token */ String, _]] = js.native
+    var onVerify: js.UndefOr[js.Function1[/* token */ String, js.Any]] = js.undefined
     
-    var reCaptchaCompat: js.UndefOr[Boolean] = js.native
+    var reCaptchaCompat: js.UndefOr[Boolean] = js.undefined
     
-    var sitekey: String = js.native
+    var sitekey: String
     
-    var size: js.UndefOr[normal | compact | invisible] = js.native
+    var size: js.UndefOr[normal | compact | invisible] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[light | dark] = js.native
+    var theme: js.UndefOr[light | dark] = js.undefined
   }
   object HCaptchaProps {
     
@@ -77,19 +75,19 @@ object mod {
       def setLanguageOverrideUndefined: Self = StObject.set(x, "languageOverride", js.undefined)
       
       @scala.inline
-      def setOnError(value: /* event */ String => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      def setOnError(value: /* event */ String => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
       
       @scala.inline
-      def setOnExpire(value: () => _): Self = StObject.set(x, "onExpire", js.Any.fromFunction0(value))
+      def setOnExpire(value: () => js.Any): Self = StObject.set(x, "onExpire", js.Any.fromFunction0(value))
       
       @scala.inline
       def setOnExpireUndefined: Self = StObject.set(x, "onExpire", js.undefined)
       
       @scala.inline
-      def setOnVerify(value: /* token */ String => _): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
+      def setOnVerify(value: /* token */ String => js.Any): Self = StObject.set(x, "onVerify", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnVerifyUndefined: Self = StObject.set(x, "onVerify", js.undefined)
@@ -123,16 +121,15 @@ object mod {
     }
   }
   
-  @js.native
   trait HCaptchaState extends StObject {
     
-    var captchaId: String = js.native
+    var captchaId: String
     
-    var elementId: String = js.native
+    var elementId: String
     
-    var isApiReady: Boolean = js.native
+    var isApiReady: Boolean
     
-    var isRemoved: Boolean = js.native
+    var isRemoved: Boolean
   }
   object HCaptchaState {
     

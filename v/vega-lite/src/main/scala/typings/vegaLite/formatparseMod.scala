@@ -9,10 +9,13 @@ import typings.vegaLite.transformMod.FilterTransform
 import typings.vegaTypings.transformMod.FormulaTransform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatparseMod {
+  
+  @JSImport("vega-lite/build/src/compile/data/formatparse", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compile/data/formatparse", "ParseNode")
   @js.native
@@ -36,30 +39,29 @@ object formatparseMod {
   /* static members */
   object ParseNode {
     
+    @JSImport("vega-lite/build/src/compile/data/formatparse", "ParseNode")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a parse node from a data.format.parse and updates ancestorParse.
       */
-    @JSImport("vega-lite/build/src/compile/data/formatparse", "ParseNode.makeExplicit")
-    @js.native
-    def makeExplicit(parent: DataFlowNode, model: Model, ancestorParse: AncestorParse): ParseNode = js.native
+    @scala.inline
+    def makeExplicit(parent: DataFlowNode, model: Model, ancestorParse: AncestorParse): ParseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeExplicit")(parent.asInstanceOf[js.Any], model.asInstanceOf[js.Any], ancestorParse.asInstanceOf[js.Any])).asInstanceOf[ParseNode]
     
     /**
       * Creates a parse node from "explicit" parse and "implicit" parse and updates ancestorParse.
       */
-    @JSImport("vega-lite/build/src/compile/data/formatparse", "ParseNode.makeWithAncestors")
-    @js.native
-    def makeWithAncestors(parent: DataFlowNode, explicit: Parse, `implicit`: Parse, ancestorParse: AncestorParse): ParseNode = js.native
+    @scala.inline
+    def makeWithAncestors(parent: DataFlowNode, explicit: Parse, `implicit`: Parse, ancestorParse: AncestorParse): ParseNode = (^.asInstanceOf[js.Dynamic].applyDynamic("makeWithAncestors")(parent.asInstanceOf[js.Any], explicit.asInstanceOf[js.Any], `implicit`.asInstanceOf[js.Any], ancestorParse.asInstanceOf[js.Any])).asInstanceOf[ParseNode]
   }
   
-  @JSImport("vega-lite/build/src/compile/data/formatparse", "getImplicitFromEncoding")
-  @js.native
-  def getImplicitFromEncoding(model: Model): Record[String, String] = js.native
+  @scala.inline
+  def getImplicitFromEncoding(model: Model): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromEncoding")(model.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
   
-  @JSImport("vega-lite/build/src/compile/data/formatparse", "getImplicitFromFilterTransform")
-  @js.native
-  def getImplicitFromFilterTransform(transform: FilterTransform): Record[String, String] = js.native
+  @scala.inline
+  def getImplicitFromFilterTransform(transform: FilterTransform): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromFilterTransform")(transform.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
   
-  @JSImport("vega-lite/build/src/compile/data/formatparse", "getImplicitFromSelection")
-  @js.native
-  def getImplicitFromSelection(model: Model): Record[String, String] = js.native
+  @scala.inline
+  def getImplicitFromSelection(model: Model): Record[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImplicitFromSelection")(model.asInstanceOf[js.Any]).asInstanceOf[Record[String, String]]
 }

@@ -2,26 +2,24 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Browser extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Next(): Unit = js.native
+  def Next(): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Previous(): Unit = js.native
+  def Previous(): Unit
   
-  var Target: WdBrowseTarget = js.native
+  var Target: WdBrowseTarget
   
   @JSName("Word.Browser_typekey")
-  var WordDotBrowser_typekey: Browser = js.native
+  var WordDotBrowser_typekey: Browser
 }
 object Browser {
   

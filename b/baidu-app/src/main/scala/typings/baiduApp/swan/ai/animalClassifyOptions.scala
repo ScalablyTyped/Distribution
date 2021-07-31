@@ -3,24 +3,23 @@ package typings.baiduApp.swan.ai
 import typings.baiduApp.swan.BaseOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 用于检测和识别图片中的动物信息
   */
-@js.native
 trait animalClassifyOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var image: String = js.native
+  var image: String
   
   // 返回预测得分top结果数，默认为6
   @JSName("success")
-  var success_animalClassifyOptions: js.UndefOr[js.Function1[/* res */ animalClassifyResponse, Unit]] = js.native
+  var success_animalClassifyOptions: js.UndefOr[js.Function1[/* res */ animalClassifyResponse, Unit]] = js.undefined
   
   // 图像资源地址
-  var top_num: js.UndefOr[Double] = js.native
+  var top_num: js.UndefOr[Double] = js.undefined
 }
 object animalClassifyOptions {
   

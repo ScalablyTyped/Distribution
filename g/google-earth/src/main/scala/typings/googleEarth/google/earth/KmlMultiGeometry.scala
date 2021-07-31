@@ -2,16 +2,16 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlMultiGeometry extends KmlObject {
+trait KmlMultiGeometry
+  extends StObject
+     with KmlObject {
   
   /**
     * The collection of geometries that are children of this multi-geometry.
     */
-  def getGeometries(): GEGeometryContainer = js.native
+  def getGeometries(): GEGeometryContainer
 }
 object KmlMultiGeometry {
   

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodeGcm.anon.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -108,28 +107,27 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait IMessageOptions extends StObject {
     
-    var collapseKey: js.UndefOr[String] = js.native
+    var collapseKey: js.UndefOr[String] = js.undefined
     
-    var contentAvailable: js.UndefOr[Boolean] = js.native
+    var contentAvailable: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.UndefOr[StringDictionary[String]] = js.native
+    var data: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var delayWhileIdle: js.UndefOr[Boolean] = js.native
+    var delayWhileIdle: js.UndefOr[Boolean] = js.undefined
     
-    var dryRun: js.UndefOr[Boolean] = js.native
+    var dryRun: js.UndefOr[Boolean] = js.undefined
     
-    var mutableContent: js.UndefOr[Boolean] = js.native
+    var mutableContent: js.UndefOr[Boolean] = js.undefined
     
-    var notification: js.UndefOr[INotificationOptions] = js.native
+    var notification: js.UndefOr[INotificationOptions] = js.undefined
     
-    var priority: js.UndefOr[String] = js.native
+    var priority: js.UndefOr[String] = js.undefined
     
-    var restrictedPackageName: js.UndefOr[String] = js.native
+    var restrictedPackageName: js.UndefOr[String] = js.undefined
     
-    var timeToLive: js.UndefOr[Double] = js.native
+    var timeToLive: js.UndefOr[Double] = js.undefined
   }
   object IMessageOptions {
     
@@ -204,32 +202,31 @@ object mod {
     }
   }
   
-  @js.native
   trait INotificationOptions extends StObject {
     
-    var badge: js.UndefOr[String] = js.native
+    var badge: js.UndefOr[String] = js.undefined
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var body_loc_args: js.UndefOr[String] = js.native
+    var body_loc_args: js.UndefOr[String] = js.undefined
     
-    var body_loc_key: js.UndefOr[String] = js.native
+    var body_loc_key: js.UndefOr[String] = js.undefined
     
-    var click_action: js.UndefOr[String] = js.native
+    var click_action: js.UndefOr[String] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var icon: String = js.native
+    var icon: String
     
-    var sound: js.UndefOr[String] = js.native
+    var sound: js.UndefOr[String] = js.undefined
     
-    var tag: js.UndefOr[String] = js.native
+    var tag: js.UndefOr[String] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var title_loc_args: js.UndefOr[String] = js.native
+    var title_loc_args: js.UndefOr[String] = js.undefined
     
-    var title_loc_key: js.UndefOr[String] = js.native
+    var title_loc_key: js.UndefOr[String] = js.undefined
   }
   object INotificationOptions {
     
@@ -310,20 +307,19 @@ object mod {
     }
   }
   
-  @js.native
   trait IRecipient extends StObject {
     
-    var condition: js.UndefOr[String] = js.native
+    var condition: js.UndefOr[String] = js.undefined
     
-    var notificationKey: js.UndefOr[String] = js.native
+    var notificationKey: js.UndefOr[String] = js.undefined
     
-    var registrationIds: js.UndefOr[js.Array[String]] = js.native
+    var registrationIds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var registrationTokens: js.UndefOr[js.Array[String]] = js.native
+    var registrationTokens: js.UndefOr[js.Array[String]] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
     
-    var topic: js.UndefOr[String] = js.native
+    var topic: js.UndefOr[String] = js.undefined
   }
   object IRecipient {
     
@@ -380,18 +376,17 @@ object mod {
     }
   }
   
-  @js.native
   trait IResponseBody extends StObject {
     
-    var canonical_ids: Double = js.native
+    var canonical_ids: Double
     
-    var failure: Double = js.native
+    var failure: Double
     
-    var multicast_id: js.UndefOr[Double] = js.native
+    var multicast_id: js.UndefOr[Double] = js.undefined
     
-    var results: js.UndefOr[js.Array[Error]] = js.native
+    var results: js.UndefOr[js.Array[Error]] = js.undefined
     
-    var success: Double = js.native
+    var success: Double
   }
   object IResponseBody {
     
@@ -430,14 +425,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ISenderOptions extends StObject {
     
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ISenderOptions {
     
@@ -470,12 +464,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ISenderSendOptions extends StObject {
     
-    var backoff: js.UndefOr[Double] = js.native
+    var backoff: js.UndefOr[Double] = js.undefined
     
-    var retries: js.UndefOr[Double] = js.native
+    var retries: js.UndefOr[Double] = js.undefined
   }
   object ISenderSendOptions {
     

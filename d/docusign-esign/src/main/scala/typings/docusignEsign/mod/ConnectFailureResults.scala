@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectFailureResults extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ConnectFailureResults extends StObject {
     js.Array[
       /* This object contains details about a Connect failure result. */ ConnectFailureResult
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ConnectFailureResults {
   

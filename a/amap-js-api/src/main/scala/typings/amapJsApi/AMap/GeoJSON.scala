@@ -1,22 +1,18 @@
 package typings.amapJsApi.AMap
 
 import typings.amapJsApi.AMap.GeoJSON.GeoJSONObject
-import typings.amapJsApi.amapJsApiStrings.Feature
-import typings.amapJsApi.amapJsApiStrings.FeatureCollection
-import typings.amapJsApi.amapJsApiStrings.GeometryCollection
 import typings.amapJsApi.amapJsApiStrings.LineString
 import typings.amapJsApi.amapJsApiStrings.MultiLineString
 import typings.amapJsApi.amapJsApiStrings.MultiPoint
 import typings.amapJsApi.amapJsApiStrings.MultiPolygon
-import typings.amapJsApi.amapJsApiStrings.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GeoJSON[ExtraData]
-  extends OverlayGroup[Overlay[js.Any], ExtraData] {
+  extends StObject
+     with OverlayGroup[Overlay[js.Any], ExtraData] {
   
   def importData(obj: js.Array[GeoJSONObject]): Unit = js.native
   /**
@@ -44,18 +40,17 @@ object GeoJSON {
       features: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.GeoJSONObject */ js.Object
         ],
-      properties: js.Any,
-      `type`: FeatureCollection
+      properties: js.Any
     ): typings.amapJsApi.anon.Features = {
       val __obj = js.Dynamic.literal(features = features.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("FeatureCollection")
       __obj.asInstanceOf[typings.amapJsApi.anon.Features]
     }
     
     @scala.inline
-    def Geometry(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any, `type`: Feature): typings.amapJsApi.anon.Geometry = {
+    def Geometry(geometry: typings.amapJsApi.AMap.GeoJSON.Geometry, properties: js.Any): typings.amapJsApi.anon.Geometry = {
       val __obj = js.Dynamic.literal(geometry = geometry.asInstanceOf[js.Any], properties = properties.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Feature")
       __obj.asInstanceOf[typings.amapJsApi.anon.Geometry]
     }
   }
@@ -70,9 +65,9 @@ object GeoJSON {
   object Geometry {
     
     @scala.inline
-    def Coordinates(coordinates: js.Tuple2[Double, Double], `type`: Point): typings.amapJsApi.anon.Coordinates = {
+    def Coordinates(coordinates: js.Tuple2[Double, Double]): typings.amapJsApi.anon.Coordinates = {
       val __obj = js.Dynamic.literal(coordinates = coordinates.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("Point")
       __obj.asInstanceOf[typings.amapJsApi.anon.Coordinates]
     }
     
@@ -97,34 +92,32 @@ object GeoJSON {
     def Geometries(
       geometries: js.Array[
           /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias amap-js-api.AMap.GeoJSON.Geometry */ js.Object
-        ],
-      `type`: GeometryCollection
+        ]
     ): typings.amapJsApi.anon.Geometries = {
       val __obj = js.Dynamic.literal(geometries = geometries.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("GeometryCollection")
       __obj.asInstanceOf[typings.amapJsApi.anon.Geometries]
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var coordsToLatLng: js.UndefOr[js.Function1[/* lnglat */ LngLat, LngLat]] = js.native
+    var coordsToLatLng: js.UndefOr[js.Function1[/* lnglat */ LngLat, LngLat]] = js.undefined
     
     // internal
-    var coordsToLatLngs: js.UndefOr[js.Function1[/* lnglats */ js.Array[LngLat], js.Array[LngLat]]] = js.native
+    var coordsToLatLngs: js.UndefOr[js.Function1[/* lnglats */ js.Array[LngLat], js.Array[LngLat]]] = js.undefined
     
     /**
       * 要加载的标准GeoJSON对象
       */
-    var geoJSON: js.UndefOr[GeoJSONObject | js.Array[GeoJSONObject]] = js.native
+    var geoJSON: js.UndefOr[GeoJSONObject | js.Array[GeoJSONObject]] = js.undefined
     
     /**
       * 指定点要素的绘制方式
       * @param obj GeoJSON对象
       * @param lnglat 点的位置
       */
-    var getMarker: js.UndefOr[js.Function2[/* obj */ GeoJSONObject, /* lnglat */ LngLat, Marker[_]]] = js.native
+    var getMarker: js.UndefOr[js.Function2[/* obj */ GeoJSONObject, /* lnglat */ LngLat, Marker[js.Any]]] = js.undefined
     
     /**
       * 指定面要素的绘制方式
@@ -132,8 +125,8 @@ object GeoJSON {
       * @param lnglats 面的路径
       */
     var getPolygon: js.UndefOr[
-        js.Function2[/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat], Polygon[_]]
-      ] = js.native
+        js.Function2[/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat], Polygon[js.Any]]
+      ] = js.undefined
     
     /**
       * 指定线要素的绘制方式
@@ -141,8 +134,8 @@ object GeoJSON {
       * @param lnglats 线的路径
       */
     var getPolyline: js.UndefOr[
-        js.Function2[/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat], Polyline[_]]
-      ] = js.native
+        js.Function2[/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat], Polyline[js.Any]]
+      ] = js.undefined
   }
   object Options {
     
@@ -177,19 +170,19 @@ object GeoJSON {
       def setGeoJSONVarargs(value: GeoJSONObject*): Self = StObject.set(x, "geoJSON", js.Array(value :_*))
       
       @scala.inline
-      def setGetMarker(value: (/* obj */ GeoJSONObject, /* lnglat */ LngLat) => Marker[_]): Self = StObject.set(x, "getMarker", js.Any.fromFunction2(value))
+      def setGetMarker(value: (/* obj */ GeoJSONObject, /* lnglat */ LngLat) => Marker[js.Any]): Self = StObject.set(x, "getMarker", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetMarkerUndefined: Self = StObject.set(x, "getMarker", js.undefined)
       
       @scala.inline
-      def setGetPolygon(value: (/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat]) => Polygon[_]): Self = StObject.set(x, "getPolygon", js.Any.fromFunction2(value))
+      def setGetPolygon(value: (/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat]) => Polygon[js.Any]): Self = StObject.set(x, "getPolygon", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetPolygonUndefined: Self = StObject.set(x, "getPolygon", js.undefined)
       
       @scala.inline
-      def setGetPolyline(value: (/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat]) => Polyline[_]): Self = StObject.set(x, "getPolyline", js.Any.fromFunction2(value))
+      def setGetPolyline(value: (/* obj */ GeoJSONObject, /* lnglats */ js.Array[LngLat]) => Polyline[js.Any]): Self = StObject.set(x, "getPolyline", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetPolylineUndefined: Self = StObject.set(x, "getPolyline", js.undefined)

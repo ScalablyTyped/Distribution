@@ -5,11 +5,12 @@ import typings.std.HTMLElement
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait dashboard extends baseview {
+trait dashboard
+  extends StObject
+     with baseview {
   
   @JSName("$dragCreate")
   def $dragCreate(source: HTMLElement, event: Event): HTMLElement = js.native
@@ -39,7 +40,7 @@ trait dashboard extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def clearAll(): Unit = js.native
   
@@ -66,8 +67,8 @@ trait dashboard extends baseview {
   def restore(state: js.Any): Unit = js.native
   def restore(state: js.Any, factory: WebixCallback): Unit = js.native
   
-  def serialize(): js.Array[_] = js.native
-  def serialize(serializer: WebixCallback): js.Array[_] = js.native
+  def serialize(): js.Array[js.Any] = js.native
+  def serialize(serializer: WebixCallback): js.Array[js.Any] = js.native
   
   def showBatch(name: String): Unit = js.native
   def showBatch(name: String, mode: Boolean): Unit = js.native

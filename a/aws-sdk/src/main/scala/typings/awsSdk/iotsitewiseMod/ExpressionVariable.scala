@@ -2,21 +2,19 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExpressionVariable extends StObject {
   
   /**
     * The friendly name of the variable to be used in the expression.
     */
-  var name: VariableName = js.native
+  var name: VariableName
   
   /**
     * The variable that identifies an asset property from which to use values.
     */
-  var value: VariableValue = js.native
+  var value: VariableValue
 }
 object ExpressionVariable {
   

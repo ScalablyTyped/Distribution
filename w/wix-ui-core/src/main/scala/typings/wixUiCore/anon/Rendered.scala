@@ -1,0 +1,30 @@
+package typings.wixUiCore.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait Rendered extends StObject {
+  
+  var rendered: Boolean
+  
+  var token: js.Any
+}
+object Rendered {
+  
+  @scala.inline
+  def apply(rendered: Boolean, token: js.Any): Rendered = {
+    val __obj = js.Dynamic.literal(rendered = rendered.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Rendered]
+  }
+  
+  @scala.inline
+  implicit class RenderedMutableBuilder[Self <: Rendered] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setRendered(value: Boolean): Self = StObject.set(x, "rendered", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setToken(value: js.Any): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+  }
+}

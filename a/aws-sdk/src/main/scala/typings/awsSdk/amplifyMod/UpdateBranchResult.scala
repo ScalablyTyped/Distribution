@@ -2,16 +2,14 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBranchResult extends StObject {
   
   /**
     *  The branch for an Amplify app, which maps to a third-party repository branch. 
     */
-  var branch: Branch = js.native
+  var branch: Branch
 }
 object UpdateBranchResult {
   

@@ -4,18 +4,20 @@ import typings.fbemitter.mod.EventEmitter
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appLoadingMod {
+  
+  @JSImport("expo/build/launch/AppLoading", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("expo/build/launch/AppLoading", JSImport.Default)
   @js.native
   class default () extends AppLoading
   
-  @JSImport("expo/build/launch/AppLoading", "getAppLoadingLifecycleEmitter")
-  @js.native
-  def getAppLoadingLifecycleEmitter(): EventEmitter = js.native
+  @scala.inline
+  def getAppLoadingLifecycleEmitter(): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("getAppLoadingLifecycleEmitter")().asInstanceOf[EventEmitter]
   
   @js.native
   trait AppLoading

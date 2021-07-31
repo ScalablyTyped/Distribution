@@ -2,13 +2,13 @@ package typings.johnnyFive.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IMUMPU6050Option extends IMUGeneralOption {
+trait IMUMPU6050Option
+  extends StObject
+     with IMUGeneralOption {
   
-  var address: Double = js.native
+  var address: Double
 }
 object IMUMPU6050Option {
   

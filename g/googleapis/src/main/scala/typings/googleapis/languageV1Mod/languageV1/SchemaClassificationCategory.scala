@@ -2,26 +2,24 @@ package typings.googleapis.languageV1Mod.languageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a category returned from the text classifier.
   */
-@js.native
 trait SchemaClassificationCategory extends StObject {
   
   /**
     * The classifier&#39;s confidence of the category. Number represents how
     * certain the classifier is that this category represents the given text.
     */
-  var confidence: js.UndefOr[Double] = js.native
+  var confidence: js.UndefOr[Double] = js.undefined
   
   /**
     * The name of the category representing the document, from the [predefined
     * taxonomy](/natural-language/docs/categories).
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaClassificationCategory {
   

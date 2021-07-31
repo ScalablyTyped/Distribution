@@ -26,76 +26,70 @@ import typings.wordpressBlocks.wordpressBlocksStrings.tag
 import typings.wordpressBlocks.wordpressBlocksStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserMod {
   
-  @JSImport("@wordpress/blocks/api/parser", "getBlockAttributes")
+  @JSImport("@wordpress/blocks/api/parser", JSImport.Namespace)
   @js.native
-  def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, _] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "getBlockAttributes")
-  @js.native
-  def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, _]): Record[String, _] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "getBlockAttributes")
-  @js.native
-  def getBlockAttributes[T /* <: Block[_] */](blockTypeOrName: T, innerHTML: String): js.Any = js.native
-  @JSImport("@wordpress/blocks/api/parser", "getBlockAttributes")
-  @js.native
-  def getBlockAttributes[T /* <: Block[_] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, _]): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@wordpress/blocks/api/parser", "parse")
-  @js.native
-  def parse(content: String): js.Array[BlockInstance[StringDictionary[_]]] = js.native
+  @scala.inline
+  def getBlockAttributes(blockTypeOrName: String, innerHTML: String): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def getBlockAttributes(blockTypeOrName: String, innerHTML: String, attributes: Record[String, js.Any]): Record[String, js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Record[String, js.Any]]
+  @scala.inline
+  def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getBlockAttributes[T /* <: Block[js.Any] */](blockTypeOrName: T, innerHTML: String, attributes: Record[String, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getBlockAttributes")(blockTypeOrName.asInstanceOf[js.Any], innerHTML.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
-  def parseWithAttributeSchema(innerHTML: String, schema: Attributetypeboolean): js.UndefOr[Boolean] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
-  def parseWithAttributeSchema(innerHTML: String, schema: Attribute): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
-  def parseWithAttributeSchema(innerHTML: String, schema: Children): js.Array[ReactChild] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
-  def parseWithAttributeSchema(innerHTML: String, schema: HTML): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
-  def parseWithAttributeSchema(innerHTML: String, schema: Node): Element | Null = js.native
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
+  @scala.inline
+  def parse(content: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(content.asInstanceOf[js.Any]).asInstanceOf[js.Array[BlockInstance[StringDictionary[js.Any]]]]
+  
+  @scala.inline
+  def parseWithAttributeSchema(innerHTML: String, schema: Attributetypeboolean): js.UndefOr[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Boolean]]
+  @scala.inline
+  def parseWithAttributeSchema(innerHTML: String, schema: Attribute): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def parseWithAttributeSchema(innerHTML: String, schema: Children): js.Array[ReactChild] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.Array[ReactChild]]
+  @scala.inline
+  def parseWithAttributeSchema(innerHTML: String, schema: HTML): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def parseWithAttributeSchema(innerHTML: String, schema: Node): Element | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[Element | Null]
+  @scala.inline
   def parseWithAttributeSchema(innerHTML: String, schema: Tag): js.UndefOr[
     /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
-  ] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
-  def parseWithAttributeSchema(innerHTML: String, schema: Text): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/blocks/api/parser", "parseWithAttributeSchema")
-  @js.native
-  def parseWithAttributeSchema[T /* <: Record[String, Source[_]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[
+    /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 173 */ js.Any
+  ]]
+  @scala.inline
+  def parseWithAttributeSchema(innerHTML: String, schema: Text): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def parseWithAttributeSchema[T /* <: Record[String, Source[js.Any]] */](innerHTML: String, schema: Query[T]): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema with TopLevel[T] = js.native
+    */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parseWithAttributeSchema")(innerHTML.asInstanceOf[js.Any], schema.asInstanceOf[js.Any])).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ k in keyof T ]: @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<T[k]>}
+    */ typings.wordpressBlocks.wordpressBlocksStrings.parseWithAttributeSchema & TopLevel[T]]
   
   object Schema {
     
-    @js.native
     trait Attribute
-      extends Source[js.Any] {
+      extends StObject
+         with Source[js.Any] {
       
-      var attribute: String = js.native
+      var attribute: String
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
       
-      var source: attribute = js.native
+      var source: attribute
       
-      var `type`: js.UndefOr[string | boolean] = js.native
+      var `type`: js.UndefOr[string | boolean] = js.undefined
     }
     object Attribute {
       
       @scala.inline
-      def apply(attribute: String, source: attribute): Attribute = {
-        val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+      def apply(attribute: String): Attribute = {
+        val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
         __obj.asInstanceOf[Attribute]
       }
       
@@ -122,19 +116,19 @@ object parserMod {
       }
     }
     
-    @js.native
     trait Children
-      extends Source[js.Any] {
+      extends StObject
+         with Source[js.Any] {
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
       
-      var source: children = js.native
+      var source: children
     }
     object Children {
       
       @scala.inline
-      def apply(source: children): Children = {
-        val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+      def apply(): Children = {
+        val __obj = js.Dynamic.literal(source = "children")
         __obj.asInstanceOf[Children]
       }
       
@@ -152,23 +146,23 @@ object parserMod {
       }
     }
     
-    @js.native
     trait HTML
-      extends Source[js.Any] {
+      extends StObject
+         with Source[js.Any] {
       
       var multiline: js.UndefOr[
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 120 */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
       
-      var source: html = js.native
+      var source: html
     }
     object HTML {
       
       @scala.inline
-      def apply(source: html): HTML = {
-        val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+      def apply(): HTML = {
+        val __obj = js.Dynamic.literal(source = "html")
         __obj.asInstanceOf[HTML]
       }
       
@@ -192,19 +186,19 @@ object parserMod {
       }
     }
     
-    @js.native
     trait Node
-      extends Source[js.Any] {
+      extends StObject
+         with Source[js.Any] {
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
       
-      var source: node = js.native
+      var source: node
     }
     object Node {
       
       @scala.inline
-      def apply(source: node): Node = {
-        val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+      def apply(): Node = {
+        val __obj = js.Dynamic.literal(source = "node")
         __obj.asInstanceOf[Node]
       }
       
@@ -222,25 +216,26 @@ object parserMod {
       }
     }
     
-    @js.native
-    trait Query[T] extends Source[T] {
+    trait Query[T]
+      extends StObject
+         with Source[T] {
       
-      var query: T = js.native
+      var query: T
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
       
-      var source: query_ = js.native
+      var source: query_
     }
     object Query {
       
       @scala.inline
-      def apply[T](query: T, source: query_): Query[T] = {
-        val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+      def apply[T](query: T): Query[T] = {
+        val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], source = "query")
         __obj.asInstanceOf[Query[T]]
       }
       
       @scala.inline
-      implicit class QueryMutableBuilder[Self <: Query[_], T] (val x: Self with Query[T]) extends AnyVal {
+      implicit class QueryMutableBuilder[Self <: Query[?], T] (val x: Self & Query[T]) extends AnyVal {
         
         @scala.inline
         def setQuery(value: T): Self = StObject.set(x, "query", value.asInstanceOf[js.Any])
@@ -256,19 +251,19 @@ object parserMod {
       }
     }
     
-    @js.native
     trait Tag
-      extends Source[js.Any] {
+      extends StObject
+         with Source[js.Any] {
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
       
-      var source: tag = js.native
+      var source: tag
     }
     object Tag {
       
       @scala.inline
-      def apply(source: tag): Tag = {
-        val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+      def apply(): Tag = {
+        val __obj = js.Dynamic.literal(source = "tag")
         __obj.asInstanceOf[Tag]
       }
       
@@ -286,19 +281,19 @@ object parserMod {
       }
     }
     
-    @js.native
     trait Text
-      extends Source[js.Any] {
+      extends StObject
+         with Source[js.Any] {
       
-      var selector: js.UndefOr[String] = js.native
+      var selector: js.UndefOr[String] = js.undefined
       
-      var source: text = js.native
+      var source: text
     }
     object Text {
       
       @scala.inline
-      def apply(source: text): Text = {
-        val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+      def apply(): Text = {
+        val __obj = js.Dynamic.literal(source = "text")
         __obj.asInstanceOf[Text]
       }
       
@@ -330,54 +325,54 @@ object parserMod {
   object Source {
     
     @scala.inline
-    def Attribute(attribute: String, source: attribute): typings.wordpressBlocks.parserMod.Schema.Attribute = {
-      val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    def Attribute(attribute: String): typings.wordpressBlocks.parserMod.Schema.Attribute = {
+      val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Attribute]
     }
     
     @scala.inline
-    def Children(source: children): typings.wordpressBlocks.parserMod.Schema.Children = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    def Children(): typings.wordpressBlocks.parserMod.Schema.Children = {
+      val __obj = js.Dynamic.literal(source = "children")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Children]
     }
     
     @scala.inline
-    def HTML(source: html): typings.wordpressBlocks.parserMod.Schema.HTML = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    def HTML(): typings.wordpressBlocks.parserMod.Schema.HTML = {
+      val __obj = js.Dynamic.literal(source = "html")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.HTML]
     }
     
     @scala.inline
-    def Node(source: node): typings.wordpressBlocks.parserMod.Schema.Node = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    def Node(): typings.wordpressBlocks.parserMod.Schema.Node = {
+      val __obj = js.Dynamic.literal(source = "node")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Node]
     }
     
     @scala.inline
-    def Query[T](query: T, source: query_): typings.wordpressBlocks.parserMod.Schema.Query[T] = {
-      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+    def Query[T](query: T): typings.wordpressBlocks.parserMod.Schema.Query[T] = {
+      val __obj = js.Dynamic.literal(query = query.asInstanceOf[js.Any], source = "query")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Query[T]]
     }
     
     @scala.inline
-    def Tag(source: tag): typings.wordpressBlocks.parserMod.Schema.Tag = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    def Tag(): typings.wordpressBlocks.parserMod.Schema.Tag = {
+      val __obj = js.Dynamic.literal(source = "tag")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Tag]
     }
     
     @scala.inline
-    def Text(source: text): typings.wordpressBlocks.parserMod.Schema.Text = {
-      val __obj = js.Dynamic.literal(source = source.asInstanceOf[js.Any])
+    def Text(): typings.wordpressBlocks.parserMod.Schema.Text = {
+      val __obj = js.Dynamic.literal(source = "text")
       __obj.asInstanceOf[typings.wordpressBlocks.parserMod.Schema.Text]
     }
   }
   
   /* Rewritten from type alias, can be one of: 
     - java.lang.String
-    - js.UndefOr[scala.Nothing]
+    - scala.Unit
     - / * import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof any ]: any[k] extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer V>? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<@wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<V>> * / object : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<U[k]> * / object}
-    * / typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue with org.scalablytyped.runtime.TopLevel[js.Any]
+    * / typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue & org.scalablytyped.runtime.TopLevel[js.Any]
     - typings.wordpressBlocks.wordpressBlocksStrings.a
     - typings.wordpressBlocks.wordpressBlocksStrings.abbr
     - typings.wordpressBlocks.wordpressBlocksStrings.address
@@ -558,7 +553,7 @@ object parserMod {
   type SourceReturnValue[T] = js.UndefOr[
     _SourceReturnValue[T] | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in keyof any ]: any[k] extends @wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<infer V>? / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<@wordpress/blocks.@wordpress/blocks/api/parser.Schema.Query<V>> * / object : / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @wordpress/blocks.@wordpress/blocks/api/parser.SourceReturnValue<U[k]> * / object}
-    */ typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue with TopLevel[js.Any]) | js.Array[ReactChild] | String | Element | Null | Boolean
+    */ typings.wordpressBlocks.wordpressBlocksStrings.SourceReturnValue & TopLevel[js.Any]) | js.Array[ReactChild] | String | Element | Null | Boolean
   ]
   
   trait _SourceReturnValue[T] extends StObject

@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientGridView.BatchEditRowValidating event.
   */
-@js.native
-trait ASPxClientGridViewBatchEditRowValidatingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientGridViewBatchEditRowValidatingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the row's key.
     */
-  var key: js.Any = js.native
+  var key: js.Any
   
   /**
     * Provides validation information of a row currently being validated.
     */
-  var validationInfo: js.Any = js.native
+  var validationInfo: js.Any
   
   /**
     * Gets the processed row's visible index.
     */
-  var visibleIndex: Double = js.native
+  var visibleIndex: Double
 }
 object ASPxClientGridViewBatchEditRowValidatingEventArgs {
   

@@ -3,7 +3,6 @@ package typings.twitchExt
 import typings.twitchExt.Twitch.ext.features.ChangedKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twitchExtStrings {
@@ -114,12 +113,16 @@ object twitchExtStrings {
   def in_review: in_review = "in_review".asInstanceOf[in_review]
   
   @js.native
-  sealed trait isBitsEnabled extends ChangedKey
+  sealed trait isBitsEnabled
+    extends StObject
+       with ChangedKey
   @scala.inline
   def isBitsEnabled: isBitsEnabled = "isBitsEnabled".asInstanceOf[isBitsEnabled]
   
   @js.native
-  sealed trait isChatEnabled extends ChangedKey
+  sealed trait isChatEnabled
+    extends StObject
+       with ChangedKey
   @scala.inline
   def isChatEnabled: isChatEnabled = "isChatEnabled".asInstanceOf[isChatEnabled]
   
@@ -139,7 +142,9 @@ object twitchExtStrings {
   def isPaused: isPaused = "isPaused".asInstanceOf[isPaused]
   
   @js.native
-  sealed trait isSubscriptionStatusAvailable extends ChangedKey
+  sealed trait isSubscriptionStatusAvailable
+    extends StObject
+       with ChangedKey
   @scala.inline
   def isSubscriptionStatusAvailable: isSubscriptionStatusAvailable = "isSubscriptionStatusAvailable".asInstanceOf[isSubscriptionStatusAvailable]
   

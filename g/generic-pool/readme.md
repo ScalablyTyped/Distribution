@@ -10,9 +10,9 @@ Generic resource pooling for Node.JS
 | ------------------ | :-------------: |
 | Full name          | generic-pool |
 | Keywords           | pool, pooling, throttle |
-| # releases         | 6 |
-| # dependents       | 503 |
-| # downloads        | 35516954 |
+| # releases         | 3 |
+| # dependents       | 528 |
+| # downloads        | 36745662 |
 | # stars            | 35 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParticipantAssociation extends BaseElement {
+trait ParticipantAssociation
+  extends StObject
+     with BaseElement {
   
-  var innerParticipantRef: Participant = js.native
+  var innerParticipantRef: Participant
   
-  var outerParticipantRef: Participant = js.native
+  var outerParticipantRef: Participant
 }
 object ParticipantAssociation {
   

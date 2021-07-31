@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchedValueRange extends StObject {
   
   /** The DataFilters from the request that matched the range of values. */
-  var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.native
+  var dataFilters: js.UndefOr[js.Array[DataFilter]] = js.undefined
   
   /** The values matched by the DataFilter. */
-  var valueRange: js.UndefOr[ValueRange] = js.native
+  var valueRange: js.UndefOr[ValueRange] = js.undefined
 }
 object MatchedValueRange {
   

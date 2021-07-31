@@ -3,14 +3,12 @@ package typings.googleapis.cloudprivatecatalogV1beta1Mod.cloudprivatecatalogV1be
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The readonly representation of a product computed with a given resource
   * context.
   */
-@js.native
 trait SchemaGoogleCloudPrivatecatalogV1beta1Product extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaGoogleCloudPrivatecatalogV1beta1Product extends StObject {
     * following values:  * `google.deploymentmanager.Template` *
     * `google.cloudprivatecatalog.ListingOnly`
     */
-  var assetType: js.UndefOr[String] = js.native
+  var assetType: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time when the product was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The display metadata to describe the product. The JSON
@@ -59,24 +57,24 @@ trait SchemaGoogleCloudPrivatecatalogV1beta1Product extends StObject {
     * required: - name - description - signup_url additionalProperties: false
     * ```
     */
-  var displayMetadata: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var displayMetadata: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Output only. The icon URI of the product.
     */
-  var iconUri: js.UndefOr[String] = js.native
+  var iconUri: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The resource name of the target product, in the format of
     * `products/a-z*[a-z0-9]&#39;.  A unique identifier for the product under a
     * catalog.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time when the product was last updated.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogV1beta1Product {
   

@@ -2,56 +2,54 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The current certificate provisioning status information for a domain.
   */
-@js.native
 trait SchemaDomainProvisioning extends StObject {
   
   /**
     * The TXT records (for the certificate challenge) that were found at the
     * last DNS fetch.
     */
-  var certChallengeDiscoveredTxt: js.UndefOr[js.Array[String]] = js.native
+  var certChallengeDiscoveredTxt: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The DNS challenge for generating a certificate.
     */
-  var certChallengeDns: js.UndefOr[SchemaCertDnsChallenge] = js.native
+  var certChallengeDns: js.UndefOr[SchemaCertDnsChallenge] = js.undefined
   
   /**
     * The HTTP challenge for generating a certificate.
     */
-  var certChallengeHttp: js.UndefOr[SchemaCertHttpChallenge] = js.native
+  var certChallengeHttp: js.UndefOr[SchemaCertHttpChallenge] = js.undefined
   
   /**
     * The certificate provisioning status; updated when Firebase Hosting
     * provisions an SSL certificate for the domain.
     */
-  var certStatus: js.UndefOr[String] = js.native
+  var certStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The IPs found at the last DNS fetch.
     */
-  var discoveredIps: js.UndefOr[js.Array[String]] = js.native
+  var discoveredIps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The time at which the last DNS fetch occurred.
     */
-  var dnsFetchTime: js.UndefOr[String] = js.native
+  var dnsFetchTime: js.UndefOr[String] = js.undefined
   
   /**
     * The DNS record match status as of the last DNS fetch.
     */
-  var dnsStatus: js.UndefOr[String] = js.native
+  var dnsStatus: js.UndefOr[String] = js.undefined
   
   /**
     * The list of IPs to which the domain is expected to resolve.
     */
-  var expectedIps: js.UndefOr[js.Array[String]] = js.native
+  var expectedIps: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaDomainProvisioning {
   

@@ -3,39 +3,37 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFScheduledJobType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScheduledJob extends StObject {
   
-  val BackupVaultJob: IBackupJob = js.native
+  val BackupVaultJob: IBackupJob
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  val ExportContentJob: IExportContentJob = js.native
+  val ExportContentJob: IExportContentJob
   
-  var ID: Double = js.native
+  var ID: Double
   
-  val ImportContentJob: IImportContentJob = js.native
+  val ImportContentJob: IImportContentJob
   
-  var JobName: String = js.native
+  var JobName: String
   
-  var JobType: MFScheduledJobType = js.native
+  var JobType: MFScheduledJobType
   
-  val OptimizeVaultJob: IOptimizeVaultJob = js.native
+  val OptimizeVaultJob: IOptimizeVaultJob
   
-  def SetBackupVaultJob(BackupVaultJob: IBackupJob): Unit = js.native
+  def SetBackupVaultJob(BackupVaultJob: IBackupJob): Unit
   
-  def SetExportContentJob(ExportContentJob: IExportContentJob): Unit = js.native
+  def SetExportContentJob(ExportContentJob: IExportContentJob): Unit
   
-  def SetImportContentJob(ImportContentJob: IImportContentJob): Unit = js.native
+  def SetImportContentJob(ImportContentJob: IImportContentJob): Unit
   
-  def SetOptimizeVaultJob(OptimizeVaultJob: IOptimizeVaultJob): Unit = js.native
+  def SetOptimizeVaultJob(OptimizeVaultJob: IOptimizeVaultJob): Unit
   
-  var Temporary: Boolean = js.native
+  var Temporary: Boolean
   
-  var Triggers: IScheduledJobTriggers = js.native
+  var Triggers: IScheduledJobTriggers
 }
 object IScheduledJob {
   

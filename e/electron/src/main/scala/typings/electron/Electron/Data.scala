@@ -2,24 +2,22 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
   /**
     * The title of the URL at `text`.
     */
-  var bookmark: js.UndefOr[String] = js.native
+  var bookmark: js.UndefOr[String] = js.undefined
   
-  var html: js.UndefOr[String] = js.native
+  var html: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[NativeImage_] = js.native
+  var image: js.UndefOr[NativeImage_] = js.undefined
   
-  var rtf: js.UndefOr[String] = js.native
+  var rtf: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object Data {
   

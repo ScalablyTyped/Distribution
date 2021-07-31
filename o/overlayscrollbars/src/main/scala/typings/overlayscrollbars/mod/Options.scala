@@ -7,39 +7,37 @@ import typings.overlayscrollbars.anon.OnContentSizeChanged
 import typings.overlayscrollbars.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var autoUpdate: js.UndefOr[Boolean | Null] = js.native
+  var autoUpdate: js.UndefOr[Boolean | Null] = js.undefined
   
-  var autoUpdateInterval: js.UndefOr[Double] = js.native
+  var autoUpdateInterval: js.UndefOr[Double] = js.undefined
   
-  var callbacks: js.UndefOr[OnContentSizeChanged] = js.native
+  var callbacks: js.UndefOr[OnContentSizeChanged] = js.undefined
   
-  var className: js.UndefOr[String | Null] = js.native
+  var className: js.UndefOr[String | Null] = js.undefined
   
-  var clipAlways: js.UndefOr[Boolean] = js.native
+  var clipAlways: js.UndefOr[Boolean] = js.undefined
   
-  var nativeScrollbarsOverlaid: js.UndefOr[Initialize] = js.native
+  var nativeScrollbarsOverlaid: js.UndefOr[Initialize] = js.undefined
   
-  var normalizeRTL: js.UndefOr[Boolean] = js.native
+  var normalizeRTL: js.UndefOr[Boolean] = js.undefined
   
-  var overflowBehavior: js.UndefOr[`0`] = js.native
+  var overflowBehavior: js.UndefOr[`0`] = js.undefined
   
-  var paddingAbsolute: js.UndefOr[Boolean] = js.native
+  var paddingAbsolute: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[ResizeBehavior] = js.native
+  var resize: js.UndefOr[ResizeBehavior] = js.undefined
   
-  var scrollbars: js.UndefOr[AutoHide] = js.native
+  var scrollbars: js.UndefOr[AutoHide] = js.undefined
   
-  var sizeAutoCapable: js.UndefOr[Boolean] = js.native
+  var sizeAutoCapable: js.UndefOr[Boolean] = js.undefined
   
-  var textarea: js.UndefOr[DynHeight] = js.native
+  var textarea: js.UndefOr[DynHeight] = js.undefined
   
-  var updateOnLoad: js.UndefOr[String | js.Array[String] | Null] = js.native
+  var updateOnLoad: js.UndefOr[String | js.Array[String] | Null] = js.undefined
 }
 object Options {
   

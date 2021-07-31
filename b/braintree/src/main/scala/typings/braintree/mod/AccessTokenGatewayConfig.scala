@@ -2,13 +2,13 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AccessTokenGatewayConfig extends GatewayConfig {
+trait AccessTokenGatewayConfig
+  extends StObject
+     with GatewayConfig {
   
-  var accessToken: String = js.native
+  var accessToken: String
 }
 object AccessTokenGatewayConfig {
   

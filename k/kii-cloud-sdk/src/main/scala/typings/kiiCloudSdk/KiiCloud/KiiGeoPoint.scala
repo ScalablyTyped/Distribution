@@ -2,24 +2,22 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents Geo Point.
   */
-@js.native
 trait KiiGeoPoint extends StObject {
   
   /**
     * Return the latitide of this point.
     */
-  def getLatitude(): Double = js.native
+  def getLatitude(): Double
   
   /**
     * Return the longitude of this point.
     */
-  def getLongitude(): Double = js.native
+  def getLongitude(): Double
 }
 object KiiGeoPoint {
   

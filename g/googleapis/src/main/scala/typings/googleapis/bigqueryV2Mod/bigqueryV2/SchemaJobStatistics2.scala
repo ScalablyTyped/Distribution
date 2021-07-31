@@ -3,21 +3,19 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import typings.googleapis.anon.NameSlotMs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaJobStatistics2 extends StObject {
   
   /**
     * [Output-only] Billing tier for the job.
     */
-  var billingTier: js.UndefOr[Double] = js.native
+  var billingTier: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output-only] Whether the query result was fetched from the query cache.
     */
-  var cacheHit: js.UndefOr[Boolean] = js.native
+  var cacheHit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The DDL operation performed, possibly dependent on the pre-existence of
@@ -30,66 +28,66 @@ trait SchemaJobStatistics2 extends StObject {
     * TABLE, and the table already exists. &quot;DROP&quot;: The query deleted
     * the DDL target.
     */
-  var ddlOperationPerformed: js.UndefOr[String] = js.native
+  var ddlOperationPerformed: js.UndefOr[String] = js.undefined
   
   /**
     * The DDL target routine. Present only for CREATE/DROP FUNCTION/PROCEDURE
     * queries.
     */
-  var ddlTargetRoutine: js.UndefOr[SchemaRoutineReference] = js.native
+  var ddlTargetRoutine: js.UndefOr[SchemaRoutineReference] = js.undefined
   
   /**
     * The DDL target table. Present only for CREATE/DROP TABLE/VIEW queries.
     */
-  var ddlTargetTable: js.UndefOr[SchemaTableReference] = js.native
+  var ddlTargetTable: js.UndefOr[SchemaTableReference] = js.undefined
   
   /**
     * [Output-only] The original estimate of bytes processed for the job.
     */
-  var estimatedBytesProcessed: js.UndefOr[String] = js.native
+  var estimatedBytesProcessed: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only, Beta] Information about create model query job progress.
     */
-  var modelTraining: js.UndefOr[SchemaBigQueryModelTraining] = js.native
+  var modelTraining: js.UndefOr[SchemaBigQueryModelTraining] = js.undefined
   
   /**
     * [Output-only, Beta] Deprecated; do not use.
     */
-  var modelTrainingCurrentIteration: js.UndefOr[Double] = js.native
+  var modelTrainingCurrentIteration: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output-only, Beta] Deprecated; do not use.
     */
-  var modelTrainingExpectedTotalIteration: js.UndefOr[String] = js.native
+  var modelTrainingExpectedTotalIteration: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] The number of rows affected by a DML statement. Present
     * only for DML statements INSERT, UPDATE or DELETE.
     */
-  var numDmlAffectedRows: js.UndefOr[String] = js.native
+  var numDmlAffectedRows: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Describes execution plan for the query.
     */
-  var queryPlan: js.UndefOr[js.Array[SchemaExplainQueryStage]] = js.native
+  var queryPlan: js.UndefOr[js.Array[SchemaExplainQueryStage]] = js.undefined
   
   /**
     * [Output-only] Referenced tables for the job. Queries that reference more
     * than 50 tables will not have a complete list.
     */
-  var referencedTables: js.UndefOr[js.Array[SchemaTableReference]] = js.native
+  var referencedTables: js.UndefOr[js.Array[SchemaTableReference]] = js.undefined
   
   /**
     * [Output-only] Job resource usage breakdown by reservation.
     */
-  var reservationUsage: js.UndefOr[js.Array[NameSlotMs]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[NameSlotMs]] = js.undefined
   
   /**
     * [Output-only] The schema of the results. Present only for successful dry
     * run of non-legacy SQL queries.
     */
-  var schema: js.UndefOr[SchemaTableSchema] = js.native
+  var schema: js.UndefOr[SchemaTableSchema] = js.undefined
   
   /**
     * The type of query statement, if valid. Possible values (new values might
@@ -111,22 +109,22 @@ trait SchemaJobStatistics2 extends StObject {
     * &quot;ALTER_TABLE&quot;: ALTER TABLE query. &quot;ALTER_VIEW&quot;: ALTER
     * VIEW query.
     */
-  var statementType: js.UndefOr[String] = js.native
+  var statementType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] [Beta] Describes a timeline of job execution.
     */
-  var timeline: js.UndefOr[js.Array[SchemaQueryTimelineSample]] = js.native
+  var timeline: js.UndefOr[js.Array[SchemaQueryTimelineSample]] = js.undefined
   
   /**
     * [Output-only] Total bytes billed for the job.
     */
-  var totalBytesBilled: js.UndefOr[String] = js.native
+  var totalBytesBilled: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Total bytes processed for the job.
     */
-  var totalBytesProcessed: js.UndefOr[String] = js.native
+  var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] For dry-run jobs, totalBytesProcessed is an estimate and
@@ -135,24 +133,24 @@ trait SchemaJobStatistics2 extends StObject {
     * precise. LOWER_BOUND: estimate is lower bound of what the query would
     * cost. UPPER_BOUND: estimate is upper bound of what the query would cost.
     */
-  var totalBytesProcessedAccuracy: js.UndefOr[String] = js.native
+  var totalBytesProcessedAccuracy: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Total number of partitions processed from all partitioned
     * tables referenced in the job.
     */
-  var totalPartitionsProcessed: js.UndefOr[String] = js.native
+  var totalPartitionsProcessed: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] Slot-milliseconds for the job.
     */
-  var totalSlotMs: js.UndefOr[String] = js.native
+  var totalSlotMs: js.UndefOr[String] = js.undefined
   
   /**
     * Standard SQL only: list of undeclared query parameters detected during a
     * dry run validation.
     */
-  var undeclaredQueryParameters: js.UndefOr[js.Array[SchemaQueryParameter]] = js.native
+  var undeclaredQueryParameters: js.UndefOr[js.Array[SchemaQueryParameter]] = js.undefined
 }
 object SchemaJobStatistics2 {
   

@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The clinical service(s) being documented
   */
-@js.native
-trait CompositionEvent extends BackboneElement {
+trait CompositionEvent
+  extends StObject
+     with BackboneElement {
   
   /**
     * Code(s) that apply to the event being documented
     */
-  var code: js.UndefOr[js.Array[CodeableConcept]] = js.native
+  var code: js.UndefOr[js.Array[CodeableConcept]] = js.undefined
   
   /**
     * The event(s) being documented
     */
-  var detail: js.UndefOr[js.Array[Reference]] = js.native
+  var detail: js.UndefOr[js.Array[Reference]] = js.undefined
   
   /**
     * The period covered by the documentation
     */
-  var period: js.UndefOr[Period] = js.native
+  var period: js.UndefOr[Period] = js.undefined
 }
 object CompositionEvent {
   

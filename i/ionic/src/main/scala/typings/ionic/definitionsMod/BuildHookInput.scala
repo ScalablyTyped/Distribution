@@ -4,15 +4,15 @@ import typings.ionic.ionicStrings.buildColonafter
 import typings.ionic.ionicStrings.buildColonbefore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BuildHookInput extends HookInput {
+trait BuildHookInput
+  extends StObject
+     with HookInput {
   
-  val build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions = js.native
+  val build: AngularBuildOptions | IonicAngularBuildOptions | Ionic1BuildOptions
   
-  val name: buildColonbefore | buildColonafter = js.native
+  val name: buildColonbefore | buildColonafter
 }
 object BuildHookInput {
   

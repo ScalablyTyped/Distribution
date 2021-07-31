@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,4 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "BatchDrawCall")
 @js.native
 class BatchDrawCall ()
-  extends typings.pixiJs.PIXI.BatchDrawCall
+  extends StObject
+     with typings.pixiJs.PIXI.BatchDrawCall {
+  
+  /**
+    * data for uniforms or custom webgl state
+    * @member {object} PIXI.BatchDrawCall#data
+    */
+  /* CompleteClass */
+  var data: js.Any = js.native
+}

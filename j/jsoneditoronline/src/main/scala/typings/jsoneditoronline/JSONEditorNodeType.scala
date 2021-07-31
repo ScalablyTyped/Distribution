@@ -2,17 +2,15 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorNodeType extends StObject {
   
-  var className: String = js.native
+  var className: String
   
-  var title: String = js.native
+  var title: String
   
-  var value: String = js.native
+  var value: String
 }
 object JSONEditorNodeType {
   

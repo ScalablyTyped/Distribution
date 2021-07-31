@@ -7,12 +7,12 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Matchers[T]
-  extends Instantiable3[/* env */ Env, /* actual */ T, /* spec */ Env, js.Any]
+  extends StObject
+     with Instantiable3[/* env */ Env, /* actual */ T, /* spec */ Env, js.Any]
      with Instantiable4[/* env */ Env, /* actual */ T, /* spec */ Env, /* isNot */ Boolean, js.Any] {
   
   var actual: T = js.native
@@ -42,9 +42,9 @@ trait Matchers[T]
   def toBe(expected: Expected[T], expectationFailOutput: js.Any): Boolean = js.native
   
   def toBeCloseTo(expected: Double): Boolean = js.native
-  def toBeCloseTo(expected: Double, precision: js.UndefOr[scala.Nothing], expectationFailOutput: js.Any): Boolean = js.native
   def toBeCloseTo(expected: Double, precision: js.Any): Boolean = js.native
   def toBeCloseTo(expected: Double, precision: js.Any, expectationFailOutput: js.Any): Boolean = js.native
+  def toBeCloseTo(expected: Double, precision: Unit, expectationFailOutput: js.Any): Boolean = js.native
   
   def toBeDefined(): Boolean = js.native
   def toBeDefined(expectationFailOutput: js.Any): Boolean = js.native
@@ -149,11 +149,11 @@ trait Matchers[T]
   def toThrow(expected: js.Any): Boolean = js.native
   
   def toThrowError(): Boolean = js.native
-  def toThrowError(expected: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
-  def toThrowError(expected: js.UndefOr[scala.Nothing], message: RegExp): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error]): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: String): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: RegExp): Boolean = js.native
+  def toThrowError(expected: Unit, message: String): Boolean = js.native
+  def toThrowError(expected: Unit, message: RegExp): Boolean = js.native
   def toThrowError(message: String): Boolean = js.native
   def toThrowError(message: RegExp): Boolean = js.native
   

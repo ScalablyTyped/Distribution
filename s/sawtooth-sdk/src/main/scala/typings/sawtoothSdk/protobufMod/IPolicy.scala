@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.Policy.IEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPolicy extends StObject {
   
   /** Policy entries */
-  var entries: js.UndefOr[js.Array[IEntry] | Null] = js.native
+  var entries: js.UndefOr[js.Array[IEntry] | Null] = js.undefined
   
   /** Policy name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object IPolicy {
   

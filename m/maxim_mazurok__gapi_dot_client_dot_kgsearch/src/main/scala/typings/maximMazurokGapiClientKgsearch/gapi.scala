@@ -4,7 +4,6 @@ import typings.gapiClient.gapi.client.Request
 import typings.maximMazurokGapiClientKgsearch.anon.Accesstoken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -24,17 +23,16 @@ object gapi {
         def search(request: Accesstoken): Request[SearchResponse] = js.native
       }
       
-      @js.native
       trait SearchResponse extends StObject {
         
         /** The local context applicable for the response. See more details at http://www.w3.org/TR/json-ld/#context-definitions. */
-        var `@context`: js.UndefOr[js.Any] = js.native
+        var `@context`: js.UndefOr[js.Any] = js.undefined
         
         /** The schema type of top-level JSON-LD object, e.g. ItemList. */
-        var `@type`: js.UndefOr[js.Any] = js.native
+        var `@type`: js.UndefOr[js.Any] = js.undefined
         
         /** The item list of search results. */
-        var itemListElement: js.UndefOr[js.Array[_]] = js.native
+        var itemListElement: js.UndefOr[js.Array[js.Any]] = js.undefined
       }
       object SearchResponse {
         
@@ -60,7 +58,7 @@ object gapi {
           def `set@typeUndefined`: Self = StObject.set(x, "@type", js.undefined)
           
           @scala.inline
-          def setItemListElement(value: js.Array[_]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
+          def setItemListElement(value: js.Array[js.Any]): Self = StObject.set(x, "itemListElement", value.asInstanceOf[js.Any])
           
           @scala.inline
           def setItemListElementUndefined: Self = StObject.set(x, "itemListElement", js.undefined)

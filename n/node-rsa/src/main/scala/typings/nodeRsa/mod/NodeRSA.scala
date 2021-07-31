@@ -5,7 +5,6 @@ import typings.nodeRsa.nodeRsaStrings.buffer
 import typings.nodeRsa.nodeRsaStrings.json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -75,9 +74,9 @@ trait NodeRSA extends StObject {
     * @param exponent public exponent. 65537 by default.
     */
   def generateKeyPair(): NodeRSA = js.native
-  def generateKeyPair(bits: js.UndefOr[scala.Nothing], exponent: Double): NodeRSA = js.native
   def generateKeyPair(bits: Double): NodeRSA = js.native
   def generateKeyPair(bits: Double, exponent: Double): NodeRSA = js.native
+  def generateKeyPair(bits: Unit, exponent: Double): NodeRSA = js.native
   
   /**
     * Return key size in bits.
@@ -127,11 +126,6 @@ trait NodeRSA extends StObject {
   def verify(data: Buffer, signature: String, sourceEncoding: Encoding, signatureEncoding: Encoding): Boolean = js.native
   def verify(data: Buffer, signature: Buffer): Boolean = js.native
   def verify(data: Buffer, signature: Buffer, sourceEncoding: Encoding): Boolean = js.native
-  def verify(
-    data: Data,
-    signature: String,
-    sourceEncoding: js.UndefOr[scala.Nothing],
-    signatureEncoding: Encoding
-  ): Boolean = js.native
+  def verify(data: Data, signature: String, sourceEncoding: Unit, signatureEncoding: Encoding): Boolean = js.native
   def verify(data: Data, signature: Buffer): Boolean = js.native
 }

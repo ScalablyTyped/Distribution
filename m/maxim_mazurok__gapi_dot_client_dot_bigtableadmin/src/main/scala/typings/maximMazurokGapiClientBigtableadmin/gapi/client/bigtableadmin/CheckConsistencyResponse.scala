@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckConsistencyResponse extends StObject {
   
   /** True only if the token is consistent. A token is consistent if replication has caught up with the restrictions specified in the request. */
-  var consistent: js.UndefOr[Boolean] = js.native
+  var consistent: js.UndefOr[Boolean] = js.undefined
 }
 object CheckConsistencyResponse {
   

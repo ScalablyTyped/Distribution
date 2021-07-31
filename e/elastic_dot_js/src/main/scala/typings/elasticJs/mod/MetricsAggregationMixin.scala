@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "MetricsAggregationMixin")
 @js.native
-class MetricsAggregationMixin () extends Aggregation {
+class MetricsAggregationMixin ()
+  extends StObject
+     with Aggregation {
   
   /*
     The type of ejs object.  For internal use only.

@@ -2,25 +2,23 @@ package typings.amazonConnectStreams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ChatAutoAccept extends StObject {
     
-    val chatAutoAccept: Boolean = js.native
+    val chatAutoAccept: Boolean
     
-    val connectionData: String = js.native
+    val connectionData: String
     
-    val customerName: String | Null = js.native
+    val customerName: String | Null
   }
   object ChatAutoAccept {
     
     @scala.inline
     def apply(chatAutoAccept: Boolean, connectionData: String): ChatAutoAccept = {
-      val __obj = js.Dynamic.literal(chatAutoAccept = chatAutoAccept.asInstanceOf[js.Any], connectionData = connectionData.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(chatAutoAccept = chatAutoAccept.asInstanceOf[js.Any], connectionData = connectionData.asInstanceOf[js.Any], customerName = null)
       __obj.asInstanceOf[ChatAutoAccept]
     }
     
@@ -41,12 +39,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Expiry extends StObject {
     
-    val expiry: String = js.native
+    val expiry: String
     
-    val participantToken: String = js.native
+    val participantToken: String
   }
   object Expiry {
     
@@ -67,12 +64,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Name {
     

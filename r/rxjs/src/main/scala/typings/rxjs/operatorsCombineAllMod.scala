@@ -2,21 +2,21 @@ package typings.rxjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorsCombineAllMod {
   
-  @JSImport("rxjs/operators/combineAll", "combineAll")
+  @JSImport("rxjs/operators/combineAll", JSImport.Namespace)
   @js.native
-  def combineAll[T](): js.Any = js.native
-  @JSImport("rxjs/operators/combineAll", "combineAll")
-  @js.native
-  def combineAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any = js.native
-  @JSImport("rxjs/operators/combineAll", "combineAll")
-  @js.native
-  def combineAll_TR[T, R](): js.Any = js.native
-  @JSImport("rxjs/operators/combineAll", "combineAll")
-  @js.native
-  def combineAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def combineAll[T](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")().asInstanceOf[js.Any]
+  @scala.inline
+  def combineAll[R](project: js.Function1[/* repeated */ js.Any, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def combineAll_TR[T, R](): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")().asInstanceOf[js.Any]
+  @scala.inline
+  def combineAll_TR[T, R](project: js.Function1[/* repeated */ T, R]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("combineAll")(project.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

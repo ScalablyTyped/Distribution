@@ -2,19 +2,17 @@ package typings.rmcNukaCarousel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextAlign extends StObject {
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var position: String = js.native
+  var position: String
   
-  var textAlign: String = js.native
+  var textAlign: String
   
-  var width: String = js.native
+  var width: String
 }
 object TextAlign {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDownloadUrlForLayerResponse extends StObject {
   
   /**
     * The pre-signed Amazon S3 download URL for the requested layer.
     */
-  var downloadUrl: js.UndefOr[Url] = js.native
+  var downloadUrl: js.UndefOr[Url] = js.undefined
   
   /**
     * The digest of the image layer to download.
     */
-  var layerDigest: js.UndefOr[LayerDigest] = js.native
+  var layerDigest: js.UndefOr[LayerDigest] = js.undefined
 }
 object GetDownloadUrlForLayerResponse {
   

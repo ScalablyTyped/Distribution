@@ -4,11 +4,12 @@ import typings.kendoUi.JQuery
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Validator extends Widget {
+trait Validator
+  extends StObject
+     with Widget {
   
   def errors(): js.Any = js.native
   

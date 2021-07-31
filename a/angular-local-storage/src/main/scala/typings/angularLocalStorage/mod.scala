@@ -5,7 +5,6 @@ import typings.angular.mod.IServiceProvider
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -66,31 +65,13 @@ object mod {
             * Returns: deregistration function for this listener.
             */
           def bind(scope: IScope, property: String): js.Function0[Unit] = js.native
-          def bind(
-            scope: IScope,
-            property: String,
-            value: js.UndefOr[scala.Nothing],
-            key: js.UndefOr[scala.Nothing],
-            storageType: StorageType
-          ): js.Function0[Unit] = js.native
-          def bind(scope: IScope, property: String, value: js.UndefOr[scala.Nothing], key: String): js.Function0[Unit] = js.native
-          def bind(
-            scope: IScope,
-            property: String,
-            value: js.UndefOr[scala.Nothing],
-            key: String,
-            storageType: StorageType
-          ): js.Function0[Unit] = js.native
           def bind(scope: IScope, property: String, value: js.Any): js.Function0[Unit] = js.native
-          def bind(
-            scope: IScope,
-            property: String,
-            value: js.Any,
-            key: js.UndefOr[scala.Nothing],
-            storageType: StorageType
-          ): js.Function0[Unit] = js.native
           def bind(scope: IScope, property: String, value: js.Any, key: String): js.Function0[Unit] = js.native
           def bind(scope: IScope, property: String, value: js.Any, key: String, storageType: StorageType): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: js.Any, key: Unit, storageType: StorageType): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: Unit, key: String): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: Unit, key: String, storageType: StorageType): js.Function0[Unit] = js.native
+          def bind(scope: IScope, property: String, value: Unit, key: Unit, storageType: StorageType): js.Function0[Unit] = js.native
           
           /**
             * Change the local storage prefix during execution
@@ -103,7 +84,7 @@ object mod {
             * Note: Optionally takes a regular expression string and removes matching.
             */
           def clearAll(): Boolean = js.native
-          def clearAll(regularExpression: js.UndefOr[scala.Nothing], storageType: StorageType): Boolean = js.native
+          def clearAll(regularExpression: Unit, storageType: StorageType): Boolean = js.native
           def clearAll(regularExpression: RegExp): Boolean = js.native
           def clearAll(regularExpression: RegExp, storageType: StorageType): Boolean = js.native
           
@@ -170,21 +151,22 @@ object mod {
         }
         
         // tslint:disable-next-line interface-name
-        @js.native
-        trait ILocalStorageServiceProvider extends IServiceProvider {
+        trait ILocalStorageServiceProvider
+          extends StObject
+             with IServiceProvider {
           
           /**
             * If localStorage is not supported, the library will default to cookies instead. This behavior can be disabled
             * default: true
             */
-          def setDefaultToCookie(shouldDefault: Boolean): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider = js.native
+          def setDefaultToCookie(shouldDefault: Boolean): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
           
           /**
             * Send signals for each of the following actions:
             * @param setItem default: true
             * @param removeItem default: false
             */
-          def setNotify(setItem: Boolean, removeItem: Boolean): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider = js.native
+          def setNotify(setItem: Boolean, removeItem: Boolean): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
           
           /**
             * Setter for the prefix
@@ -196,7 +178,7 @@ object mod {
             * });
             * @param prefix default: ls.<your-key>
             */
-          def setPrefix(prefix: String): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider = js.native
+          def setPrefix(prefix: String): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
           
           /**
             * Setter for cookie config
@@ -204,7 +186,7 @@ object mod {
             * @param path the web path the cookie represents. default: '/'
             * @param secure to store cookies as secure. default: false
             */
-          def setStorageCookie(exp: Double, path: String, secure: Boolean): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider = js.native
+          def setStorageCookie(exp: Double, path: String, secure: Boolean): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
           
           /**
             * Set the cookie domain, since this runs inside a the config() block,
@@ -213,13 +195,13 @@ object mod {
             * use a hardcoded string or window.location.
             * No default value
             */
-          def setStorageCookieDomain(domain: String): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider = js.native
+          def setStorageCookieDomain(domain: String): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
           
           /**
             * Setter for the storageType
             * localstorage or sessionStorage. default: localStorage
             */
-          def setStorageType(storageType: String): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider = js.native
+          def setStorageType(storageType: String): typings.angularLocalStorage.mod.angularAugmentingMod.local.storage.ILocalStorageServiceProvider
         }
         object ILocalStorageServiceProvider {
           

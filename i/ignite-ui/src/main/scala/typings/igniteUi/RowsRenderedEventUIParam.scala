@@ -3,21 +3,19 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowsRenderedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to the grid's table body.
     */
-  var tbody: js.UndefOr[Element] = js.native
+  var tbody: js.UndefOr[Element] = js.undefined
 }
 object RowsRenderedEventUIParam {
   

@@ -5,14 +5,15 @@ import typings.heremaps.H.geo.MultiLineString
 import typings.heremaps.H.map.provider.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class represents a polyline in geo-space. It is defined by a path containing the vertices of a polyline (lat, lng, alt values) and a pen to use when tracing the path on the map.
   */
 @js.native
-trait Polyline extends GeoShape {
+trait Polyline
+  extends StObject
+     with GeoShape {
   
   /**
     * This method adds a listener for a specific event.
@@ -23,14 +24,9 @@ trait Polyline extends GeoShape {
     * @param opt_scope {{}=} - An object defining the scope for the handler function
     */
   def addEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
-  def addEventListener(
-    `type`: String,
-    handler: js.Function0[Unit],
-    opt_capture: js.UndefOr[scala.Nothing],
-    opt_scope: js.Object
-  ): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
+  def addEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Unit, opt_scope: js.Object): Unit = js.native
   
   /**
     * Clips the geometry of the Polyline to a rectangular area
@@ -68,14 +64,9 @@ trait Polyline extends GeoShape {
     * @param opt_scope {{}=} - An object defining the scope for the handler function
     */
   def removeEventListener(`type`: String, handler: js.Function0[Unit]): Unit = js.native
-  def removeEventListener(
-    `type`: String,
-    handler: js.Function0[Unit],
-    opt_capture: js.UndefOr[scala.Nothing],
-    opt_scope: js.Object
-  ): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean): Unit = js.native
   def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Boolean, opt_scope: js.Object): Unit = js.native
+  def removeEventListener(`type`: String, handler: js.Function0[Unit], opt_capture: Unit, opt_scope: js.Object): Unit = js.native
   
   /**
     * To set the polyline's geometry. If the given geometry is modified afterwards, it must be set again via setGeometry(geometry) to not violate the integrity of the polyline.
@@ -99,24 +90,23 @@ object Polyline {
     * an object.
     * @property data {*} - Optional arbitrary data to be stored with this map object. This data can be retrieved by calling getData
     */
-  @js.native
   trait Options extends StObject {
     
-    var arrows: js.UndefOr[ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options] = js.native
+    var arrows: js.UndefOr[ArrowStyle | typings.heremaps.H.map.ArrowStyle.Options] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var provider: js.UndefOr[Provider] = js.native
+    var provider: js.UndefOr[Provider] = js.undefined
     
-    var style: js.UndefOr[SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options] = js.native
+    var style: js.UndefOr[SpatialStyle | typings.heremaps.H.map.SpatialStyle.Options] = js.undefined
     
-    var visibility: js.UndefOr[Boolean] = js.native
+    var visibility: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

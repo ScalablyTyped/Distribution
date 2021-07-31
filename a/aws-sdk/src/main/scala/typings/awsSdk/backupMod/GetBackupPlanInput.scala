@@ -2,21 +2,19 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBackupPlanInput extends StObject {
   
   /**
     * Uniquely identifies a backup plan.
     */
-  var BackupPlanId: String = js.native
+  var BackupPlanId: String
   
   /**
     * Unique, randomly generated, Unicode, UTF-8 encoded strings that are at most 1,024 bytes long. Version IDs cannot be edited.
     */
-  var VersionId: js.UndefOr[String] = js.native
+  var VersionId: js.UndefOr[String] = js.undefined
 }
 object GetBackupPlanInput {
   

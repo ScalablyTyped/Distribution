@@ -6,30 +6,28 @@ import typings.popperjsCore.typesMod.Padding
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@popperjs/core.@popperjs/core/lib/modifiers/flip.Options> */
-@js.native
 trait PartialOptionsAllowedAutoPlacements extends StObject {
   
-  var allowedAutoPlacements: js.UndefOr[js.Array[typings.popperjsCore.enumsMod.Placement]] = js.native
+  var allowedAutoPlacements: js.UndefOr[js.Array[typings.popperjsCore.enumsMod.Placement]] = js.undefined
   
-  var altAxis: js.UndefOr[Boolean] = js.native
+  var altAxis: js.UndefOr[Boolean] = js.undefined
   
-  var altBoundary: js.UndefOr[Boolean] = js.native
+  var altBoundary: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[Boundary] = js.native
+  var boundary: js.UndefOr[Boundary] = js.undefined
   
-  var fallbackPlacements: js.UndefOr[js.Array[typings.popperjsCore.enumsMod.Placement]] = js.native
+  var fallbackPlacements: js.UndefOr[js.Array[typings.popperjsCore.enumsMod.Placement]] = js.undefined
   
-  var flipVariations: js.UndefOr[Boolean] = js.native
+  var flipVariations: js.UndefOr[Boolean] = js.undefined
   
-  var mainAxis: js.UndefOr[Boolean] = js.native
+  var mainAxis: js.UndefOr[Boolean] = js.undefined
   
-  var padding: js.UndefOr[Padding] = js.native
+  var padding: js.UndefOr[Padding] = js.undefined
   
-  var rootBoundary: js.UndefOr[RootBoundary] = js.native
+  var rootBoundary: js.UndefOr[RootBoundary] = js.undefined
 }
 object PartialOptionsAllowedAutoPlacements {
   

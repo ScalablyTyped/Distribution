@@ -16,7 +16,6 @@ import typings.std.WeakMapConstructor
 import typings.std.WeakSetConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -81,42 +80,41 @@ object anon {
     def trunc(x: Double): Double = js.native
   }
   
-  @js.native
   trait Asinh extends StObject {
     
-    def acosh(x: Double): Double = js.native
+    def acosh(x: Double): Double
     
-    def asinh(x: Double): Double = js.native
+    def asinh(x: Double): Double
     
-    def atanh(x: Double): Double = js.native
+    def atanh(x: Double): Double
     
-    def cbrt(x: Double): Double = js.native
+    def cbrt(x: Double): Double
     
-    def clz32(x: Double): Double = js.native
+    def clz32(x: Double): Double
     
-    def cosh(x: Double): Double = js.native
+    def cosh(x: Double): Double
     
-    def expm1(x: Double): Double = js.native
+    def expm1(x: Double): Double
     
-    def fround(x: Double): Double = js.native
+    def fround(x: Double): Double
     
-    def hypot(values: Double*): Double = js.native
+    def hypot(values: Double*): Double
     
-    def imul(x: Double, y: Double): Double = js.native
+    def imul(x: Double, y: Double): Double
     
-    def log10(x: Double): Double = js.native
+    def log10(x: Double): Double
     
-    def log1p(x: Double): Double = js.native
+    def log1p(x: Double): Double
     
-    def log2(x: Double): Double = js.native
+    def log2(x: Double): Double
     
-    def sign(x: Double): Double = js.native
+    def sign(x: Double): Double
     
-    def sinh(x: Double): Double = js.native
+    def sinh(x: Double): Double
     
-    def tanh(x: Double): Double = js.native
+    def tanh(x: Double): Double
     
-    def trunc(x: Double): Double = js.native
+    def trunc(x: Double): Double
   }
   object Asinh {
     
@@ -216,7 +214,7 @@ object anon {
     
     def defineProperty(o: js.Any, propertyKey: PropertyKey, attributes: PropertyDescriptor): js.Any = js.native
     
-    def entries(`object`: js.Any): Array[_] = js.native
+    def entries(`object`: js.Any): Array[js.Any] = js.native
     
     def freeze[T](o: T): T = js.native
     
@@ -251,7 +249,7 @@ object anon {
     
     def setPrototypeOf(o: js.Any, proto: js.Any): js.Any = js.native
     
-    def values(`object`: js.Any): Array[_] = js.native
+    def values(`object`: js.Any): Array[js.Any] = js.native
   }
   
   @js.native
@@ -287,12 +285,11 @@ object anon {
     def unescapeHTML(text: java.lang.String): java.lang.String = js.native
   }
   
-  @js.native
   trait Bind extends StObject {
     
-    def bind(target: Function, thisArg: js.Any, argArray: js.Any*): js.Any = js.native
+    def bind(target: Function, thisArg: js.Any, argArray: js.Any*): js.Any
     
-    def part(target: Function, args: js.Any*): js.Any = js.native
+    def part(target: Function, args: js.Any*): js.Any
   }
   object Bind {
     
@@ -337,9 +334,9 @@ object anon {
     ): Boolean = js.native
     
     def fill[T](array: ArrayLike[T], value: T): Array[T] = js.native
-    def fill[T](array: ArrayLike[T], value: T, start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
     def fill[T](array: ArrayLike[T], value: T, start: Double): Array[T] = js.native
     def fill[T](array: ArrayLike[T], value: T, start: Double, end: Double): Array[T] = js.native
+    def fill[T](array: ArrayLike[T], value: T, start: Unit, end: Double): Array[T] = js.native
     
     def filter[T](
       array: ArrayLike[T],
@@ -487,9 +484,9 @@ object anon {
     def shift[T](array: ArrayLike[T]): T = js.native
     
     def slice[T](array: ArrayLike[T]): Array[T] = js.native
-    def slice[T](array: ArrayLike[T], start: js.UndefOr[scala.Nothing], end: Double): Array[T] = js.native
     def slice[T](array: ArrayLike[T], start: Double): Array[T] = js.native
     def slice[T](array: ArrayLike[T], start: Double, end: Double): Array[T] = js.native
+    def slice[T](array: ArrayLike[T], start: Unit, end: Double): Array[T] = js.native
     
     def some[T](
       array: ArrayLike[T],
@@ -504,8 +501,8 @@ object anon {
     def sort[T](array: ArrayLike[T]): Array[T] = js.native
     def sort[T](array: ArrayLike[T], compareFn: js.Function2[/* a */ T, /* b */ T, Double]): Array[T] = js.native
     
-    def splice[T](array: ArrayLike[T], start: Double, deleteCount: js.UndefOr[scala.Nothing], items: T*): Array[T] = js.native
     def splice[T](array: ArrayLike[T], start: Double, deleteCount: Double, items: T*): Array[T] = js.native
+    def splice[T](array: ArrayLike[T], start: Double, deleteCount: Unit, items: T*): Array[T] = js.native
     
     def turn[T](
       array: ArrayLike[T],
@@ -532,10 +529,9 @@ object anon {
     def values[T](array: ArrayLike[T]): IterableIterator[T] = js.native
   }
   
-  @js.native
   trait Escape extends StObject {
     
-    def escape(str: java.lang.String): java.lang.String = js.native
+    def escape(str: java.lang.String): java.lang.String
   }
   object Escape {
     
@@ -579,9 +575,9 @@ object anon {
   trait TypeofReflect extends StObject {
     
     @JSName("apply")
-    def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[_]): js.Any = js.native
+    def apply(target: Function, thisArgument: js.Any, argumentsList: ArrayLike[js.Any]): js.Any = js.native
     
-    def construct(target: Function, argumentsList: ArrayLike[_]): js.Any = js.native
+    def construct(target: Function, argumentsList: ArrayLike[js.Any]): js.Any = js.native
     
     /**
       * Define a unique metadata entry on the target.
@@ -674,9 +670,9 @@ object anon {
       *  result = Reflect.getMetadataKeys(Example);
       * ```
       */
-    def getMetadataKeys(target: Object): Array[_] = js.native
-    def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
-    def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
+    def getMetadataKeys(target: Object): Array[js.Any] = js.native
+    def getMetadataKeys(target: Object, targetKey: java.lang.String): Array[js.Any] = js.native
+    def getMetadataKeys(target: Object, targetKey: js.Symbol): Array[js.Any] = js.native
     
     /**
       * Gets the metadata value for the provided metadata key on the target object.
@@ -715,9 +711,9 @@ object anon {
       *  result = Reflect.getOwnMetadataKeys(Example);
       * ```
       */
-    def getOwnMetadataKeys(target: Object): Array[_] = js.native
-    def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[_] = js.native
-    def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[_] = js.native
+    def getOwnMetadataKeys(target: Object): Array[js.Any] = js.native
+    def getOwnMetadataKeys(target: Object, targetKey: java.lang.String): Array[js.Any] = js.native
+    def getOwnMetadataKeys(target: Object, targetKey: js.Symbol): Array[js.Any] = js.native
     
     def getOwnPropertyDescriptor(target: js.Any, propertyKey: PropertyKey): PropertyDescriptor = js.native
     
@@ -836,8 +832,8 @@ object anon {
     
     val Date: Format = js.native
     
-    def Dict(): typings.coreJs.Dict[_] = js.native
-    def Dict(value: js.Any): typings.coreJs.Dict[_] = js.native
+    def Dict(): typings.coreJs.Dict[js.Any] = js.native
+    def Dict(value: js.Any): typings.coreJs.Dict[js.Any] = js.native
     def Dict[T](value: typings.coreJs.Dict[T]): typings.coreJs.Dict[T] = js.native
     @JSName("Dict")
     val Dict_Original: DictConstructor = js.native
@@ -879,7 +875,7 @@ object anon {
     
     def delay(msec: Double): js.Promise[Unit] = js.native
     
-    def getIterator[T](iterable: Iterable[T]): Iterator[T, _, js.UndefOr[scala.Nothing]] = js.native
+    def getIterator[T](iterable: Iterable[T]): Iterator[T, js.Any, Unit] = js.native
     
     val global: js.Any = js.native
     
@@ -890,11 +886,11 @@ object anon {
     
     def setImmediate(expression: js.Any, args: js.Any*): Double = js.native
     
-    def setInterval(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
     def setInterval(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
+    def setInterval(handler: js.Any, timeout: Unit, args: js.Any*): Double = js.native
     
-    def setTimeout(handler: js.Any, timeout: js.UndefOr[scala.Nothing], args: js.Any*): Double = js.native
     def setTimeout(handler: js.Any, timeout: js.Any, args: js.Any*): Double = js.native
+    def setTimeout(handler: js.Any, timeout: Unit, args: js.Any*): Double = js.native
     
     val version: java.lang.String = js.native
   }

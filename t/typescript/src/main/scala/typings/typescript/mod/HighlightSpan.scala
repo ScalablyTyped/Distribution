@@ -3,21 +3,19 @@ package typings.typescript.mod
 import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightSpan extends StObject {
   
-  var contextSpan: js.UndefOr[TextSpan] = js.native
+  var contextSpan: js.UndefOr[TextSpan] = js.undefined
   
-  var fileName: js.UndefOr[java.lang.String] = js.native
+  var fileName: js.UndefOr[java.lang.String] = js.undefined
   
-  var isInString: js.UndefOr[`true`] = js.native
+  var isInString: js.UndefOr[`true`] = js.undefined
   
-  var kind: HighlightSpanKind = js.native
+  var kind: HighlightSpanKind
   
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object HighlightSpan {
   

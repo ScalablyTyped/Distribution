@@ -5,18 +5,19 @@ import typings.std.RegExp
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("named-regexp-groups", JSImport.Namespace)
   @js.native
-  class ^ () extends NamedRegExp {
+  class ^ ()
+    extends StObject
+       with NamedRegExp {
     def this(pattern: String) = this()
     def this(pattern: RegExp) = this()
-    def this(pattern: js.UndefOr[scala.Nothing], flags: String) = this()
     def this(pattern: String, flags: String) = this()
+    def this(pattern: Unit, flags: String) = this()
     def this(pattern: RegExp, flags: String) = this()
   }
   
@@ -53,7 +54,9 @@ object mod {
   }
   
   @js.native
-  trait NamedRegExpExecArray extends RegExpExecArray {
+  trait NamedRegExpExecArray
+    extends StObject
+       with RegExpExecArray {
     
     @JSName("groups")
     var groups_NamedRegExpExecArray: StringDictionary[String] = js.native

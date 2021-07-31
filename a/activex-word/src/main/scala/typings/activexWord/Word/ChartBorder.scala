@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartBorder extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Color: js.Any = js.native
+  var Color: js.Any
   
-  var ColorIndex: js.Any = js.native
+  var ColorIndex: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var LineStyle: js.Any = js.native
+  var LineStyle: js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Weight: js.Any = js.native
+  var Weight: js.Any
   
   @JSName("Word.ChartBorder_typekey")
-  var WordDotChartBorder_typekey: ChartBorder = js.native
+  var WordDotChartBorder_typekey: ChartBorder
 }
 object ChartBorder {
   

@@ -2,11 +2,11 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEventWorkflowController extends IEventController {
+trait IEventWorkflowController
+  extends StObject
+     with IEventController {
   
   var onAfterEventFiring: js.UndefOr[
     js.Function3[
@@ -15,7 +15,7 @@ trait IEventWorkflowController extends IEventController {
       /* event */ js.UndefOr[IEvent[js.Object, js.Object]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   var onBeforeEventFiring: js.UndefOr[
     js.Function3[
@@ -24,7 +24,7 @@ trait IEventWorkflowController extends IEventController {
       /* event */ js.UndefOr[IEvent[js.Object, js.Object]], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IEventWorkflowController {
   

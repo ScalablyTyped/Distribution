@@ -2,26 +2,24 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelIngestionRequest extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The ID of the dataset used in the ingestion.
     */
-  var DataSetId: java.lang.String = js.native
+  var DataSetId: java.lang.String
   
   /**
     * An ID for the ingestion.
     */
-  var IngestionId: typings.awsSdk.quicksightMod.IngestionId = js.native
+  var IngestionId: typings.awsSdk.quicksightMod.IngestionId
 }
 object CancelIngestionRequest {
   

@@ -3,13 +3,14 @@ package typings.chance
 import typings.chance.Chance._FalsyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chanceBooleans {
   
   @js.native
-  sealed trait `false` extends _FalsyType
+  sealed trait `false`
+    extends StObject
+       with _FalsyType
   @scala.inline
   def `false`: `false` = false.asInstanceOf[`false`]
   

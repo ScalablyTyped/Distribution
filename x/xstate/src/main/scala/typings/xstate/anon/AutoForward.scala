@@ -2,17 +2,15 @@ package typings.xstate.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoForward extends StObject {
   
-  var autoForward: js.UndefOr[Boolean] = js.native
+  var autoForward: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var sync: js.UndefOr[Boolean] = js.native
+  var sync: js.UndefOr[Boolean] = js.undefined
 }
 object AutoForward {
   

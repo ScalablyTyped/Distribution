@@ -6,14 +6,15 @@ import typings.mendixmodelsdk.configurationMod.configuration.ISdkConfig
 import typings.mendixmodelsdk.imodelserverclientMod.IModelServerClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelServerClientImplMod {
   
   @JSImport("mendixmodelsdk/dist/sdk/internal/ModelServerClientImpl", "ModelServerClientImpl")
   @js.native
-  class ModelServerClientImpl protected () extends IModelServerClient {
+  class ModelServerClientImpl protected ()
+    extends StObject
+       with IModelServerClient {
     def this(config: ISdkConfig) = this()
     
     var MAX_PARALLEL_REQUESTS: js.Any = js.native
@@ -34,7 +35,7 @@ object modelServerClientImplMod {
       workingCopyId: String,
       filePath: String,
       outFilePath: String,
-      callback: ICallback[_],
+      callback: ICallback[js.Any],
       errorCallback: IErrorCallback
     ): Unit = js.native
     

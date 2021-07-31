@@ -3,17 +3,15 @@ package typings.vegaLite.anon
 import typings.vegaTypings.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events extends StObject {
   
-  var events: js.Array[Stream] = js.native
+  var events: js.Array[Stream]
   
-  var force: Boolean = js.native
+  var force: Boolean
   
-  var update: String = js.native
+  var update: String
 }
 object Events {
   

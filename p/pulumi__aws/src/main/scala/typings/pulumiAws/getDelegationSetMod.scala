@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDelegationSetMod {
   
-  @JSImport("@pulumi/aws/route53/getDelegationSet", "getDelegationSet")
+  @JSImport("@pulumi/aws/route53/getDelegationSet", JSImport.Namespace)
   @js.native
-  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = js.native
-  @JSImport("@pulumi/aws/route53/getDelegationSet", "getDelegationSet")
-  @js.native
-  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDelegationSet(args: GetDelegationSetArgs): js.Promise[GetDelegationSetResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDelegationSetResult]]
+  @scala.inline
+  def getDelegationSet(args: GetDelegationSetArgs, opts: InvokeOptions): js.Promise[GetDelegationSetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDelegationSet")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDelegationSetResult]]
+  
   trait GetDelegationSetArgs extends StObject {
     
     /**
       * The Hosted Zone id of the desired delegation set.
       */
-    val id: String = js.native
+    val id: String
   }
   object GetDelegationSetArgs {
     
@@ -39,14 +39,13 @@ object getDelegationSetMod {
     }
   }
   
-  @js.native
   trait GetDelegationSetResult extends StObject {
     
-    val callerReference: String = js.native
+    val callerReference: String
     
-    val id: String = js.native
+    val id: String
     
-    val nameServers: js.Array[String] = js.native
+    val nameServers: js.Array[String]
   }
   object GetDelegationSetResult {
     

@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DispatchPeriodicSyncEventRequest extends StObject {
   
-  var origin: String = js.native
+  var origin: String
   
-  var registrationId: RegistrationID = js.native
+  var registrationId: RegistrationID
   
-  var tag: String = js.native
+  var tag: String
 }
 object DispatchPeriodicSyncEventRequest {
   

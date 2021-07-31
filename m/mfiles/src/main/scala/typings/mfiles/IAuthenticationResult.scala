@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAuthenticationResult extends StObject {
   
-  val Intermediate: IAuthenticationResultIntermediate = js.native
+  val Intermediate: IAuthenticationResultIntermediate
   
-  val ServerFinal: IAuthenticationResultServerFinal = js.native
+  val ServerFinal: IAuthenticationResultServerFinal
   
-  val VaultFinal: IAuthenticationResultVaultFinal = js.native
+  val VaultFinal: IAuthenticationResultVaultFinal
 }
 object IAuthenticationResult {
   

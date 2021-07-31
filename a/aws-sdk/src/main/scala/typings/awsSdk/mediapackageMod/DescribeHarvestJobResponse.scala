@@ -2,57 +2,55 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeHarvestJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) assigned to the HarvestJob.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the Channel that the HarvestJob will harvest from.
     */
-  var ChannelId: js.UndefOr[string] = js.native
+  var ChannelId: js.UndefOr[string] = js.undefined
   
   /**
     * The time the HarvestJob was submitted
     */
-  var CreatedAt: js.UndefOr[string] = js.native
+  var CreatedAt: js.UndefOr[string] = js.undefined
   
   /**
     * The end of the time-window which will be harvested.
     */
-  var EndTime: js.UndefOr[string] = js.native
+  var EndTime: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the HarvestJob. The ID must be unique within the region
   and it cannot be changed after the HarvestJob is submitted.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the OriginEndpoint that the HarvestJob will harvest from.
   This cannot be changed after the HarvestJob is submitted.
     */
-  var OriginEndpointId: js.UndefOr[string] = js.native
+  var OriginEndpointId: js.UndefOr[string] = js.undefined
   
-  var S3Destination: js.UndefOr[typings.awsSdk.mediapackageMod.S3Destination] = js.native
+  var S3Destination: js.UndefOr[typings.awsSdk.mediapackageMod.S3Destination] = js.undefined
   
   /**
     * The start of the time-window which will be harvested.
     */
-  var StartTime: js.UndefOr[string] = js.native
+  var StartTime: js.UndefOr[string] = js.undefined
   
   /**
     * The current status of the HarvestJob. Consider setting up a CloudWatch Event to listen for
   HarvestJobs as they succeed or fail. In the event of failure, the CloudWatch Event will
   include an explanation of why the HarvestJob failed.
     */
-  var Status: js.UndefOr[typings.awsSdk.mediapackageMod.Status] = js.native
+  var Status: js.UndefOr[typings.awsSdk.mediapackageMod.Status] = js.undefined
 }
 object DescribeHarvestJobResponse {
   

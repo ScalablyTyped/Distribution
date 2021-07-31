@@ -3,25 +3,24 @@ package typings.eventEmitter
 import typings.eventEmitter.mod.Emitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pipeMod {
   
-  @JSImport("event-emitter/pipe", JSImport.Namespace)
-  @js.native
-  def apply(source: Emitter, target: Emitter): EmitterPipe = js.native
-  @JSImport("event-emitter/pipe", JSImport.Namespace)
-  @js.native
-  def apply(source: Emitter, target: Emitter, emitMethodName: String): EmitterPipe = js.native
-  @JSImport("event-emitter/pipe", JSImport.Namespace)
-  @js.native
-  def apply(source: Emitter, target: Emitter, emitMethodName: js.Symbol): EmitterPipe = js.native
+  @scala.inline
+  def apply(source: Emitter, target: Emitter): EmitterPipe = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[EmitterPipe]
+  @scala.inline
+  def apply(source: Emitter, target: Emitter, emitMethodName: String): EmitterPipe = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], emitMethodName.asInstanceOf[js.Any])).asInstanceOf[EmitterPipe]
+  @scala.inline
+  def apply(source: Emitter, target: Emitter, emitMethodName: js.Symbol): EmitterPipe = (^.asInstanceOf[js.Dynamic].apply(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], emitMethodName.asInstanceOf[js.Any])).asInstanceOf[EmitterPipe]
   
+  @JSImport("event-emitter/pipe", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait EmitterPipe extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
   }
   object EmitterPipe {
     

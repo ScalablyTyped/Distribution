@@ -43,7 +43,6 @@ import typings.std.RegExp
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -114,1148 +113,801 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("access")(x.asInstanceOf[js.Any])
   
-  @JSImport("hexo-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: js.Any): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: js.Any, options: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: js.Any, options: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "appendFile")
-  @js.native
-  def appendFile(path: String, data: js.Any, options: AppendFileOptions): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "appendFile")
-  @js.native
+  @scala.inline
+  def appendFile(path: String, data: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def appendFile(path: String, data: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def appendFile(path: String, data: js.Any, options: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def appendFile(path: String, data: js.Any, options: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def appendFile(path: String, data: js.Any, options: AppendFileOptions): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
   def appendFile(
     path: String,
     data: js.Any,
     options: AppendFileOptions,
     callback: js.Function1[/* err */ js.Any, Unit]
-  ): typings.bluebird.mod.^[Unit] = js.native
+  ): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "appendFileSync")
-  @js.native
-  def appendFileSync(path: String, data: js.Any): Unit = js.native
-  @JSImport("hexo-fs", "appendFileSync")
-  @js.native
-  def appendFileSync(path: String, data: js.Any, options: String): Unit = js.native
-  @JSImport("hexo-fs", "appendFileSync")
-  @js.native
-  def appendFileSync(path: String, data: js.Any, options: AppendFileOptions): Unit = js.native
+  @scala.inline
+  def appendFileSync(path: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(path: String, data: js.Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def appendFileSync(path: String, data: js.Any, options: AppendFileOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "chmod")
-  @js.native
-  def chmod(path: PathLike, mode: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "chmod")
-  @js.native
-  def chmod(path: PathLike, mode: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def chmod(path: PathLike, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def chmod(path: PathLike, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "chmodSync")
-  @js.native
-  def chmodSync(path: PathLike, mode: Mode): Unit = js.native
+  @scala.inline
+  def chmodSync(path: PathLike, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "chown")
-  @js.native
-  def chown(path: PathLike, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def chown(path: PathLike, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "chownSync")
-  @js.native
-  def chownSync(path: PathLike, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def chownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "close")
-  @js.native
-  def close(fd: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def close(fd: Double): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "closeSync")
-  @js.native
-  def closeSync(fd: Double): Unit = js.native
+  @scala.inline
+  def closeSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("closeSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "copyDir")
-  @js.native
-  def copyDir(src: String, dest: String): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "copyDir")
-  @js.native
+  @scala.inline
+  def copyDir(src: String, dest: String): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
   def copyDir(
     src: String,
     dest: String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "copyDir")
-  @js.native
+  ): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
   def copyDir(
     src: String,
     dest: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "copyDir")
-  @js.native
-  def copyDir(src: String, dest: String, options: DirectoryOptions): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "copyDir")
-  @js.native
+  ): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
+  def copyDir(src: String, dest: String, options: DirectoryOptions): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
   def copyDir(
     src: String,
     dest: String,
     options: DirectoryOptions,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[js.Array[String]] = js.native
+  ): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyDir")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
   
-  @JSImport("hexo-fs", "copyFile")
-  @js.native
-  def copyFile(src: PathLike, dest: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "copyFile")
-  @js.native
-  def copyFile(src: PathLike, dest: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def copyFile(src: PathLike, dest: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def copyFile(src: PathLike, dest: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyFile")(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike): typings.node.fsMod.ReadStream = js.native
-  @JSImport("hexo-fs", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike, options: String): typings.node.fsMod.ReadStream = js.native
-  @JSImport("hexo-fs", "createReadStream")
-  @js.native
-  def createReadStream(path: PathLike, options: AutoClose): typings.node.fsMod.ReadStream = js.native
+  @scala.inline
+  def createReadStream(path: PathLike): typings.node.fsMod.ReadStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.ReadStream]
+  @scala.inline
+  def createReadStream(path: PathLike, options: String): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
+  @scala.inline
+  def createReadStream(path: PathLike, options: AutoClose): typings.node.fsMod.ReadStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createReadStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.ReadStream]
   
-  @JSImport("hexo-fs", "createWriteStream")
-  @js.native
-  def createWriteStream(path: PathLike): typings.node.fsMod.WriteStream = js.native
-  @JSImport("hexo-fs", "createWriteStream")
-  @js.native
-  def createWriteStream(path: PathLike, options: String): typings.node.fsMod.WriteStream = js.native
-  @JSImport("hexo-fs", "createWriteStream")
-  @js.native
-  def createWriteStream(path: PathLike, options: EmitClose): typings.node.fsMod.WriteStream = js.native
+  @scala.inline
+  def createWriteStream(path: PathLike): typings.node.fsMod.WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.WriteStream]
+  @scala.inline
+  def createWriteStream(path: PathLike, options: String): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
+  @scala.inline
+  def createWriteStream(path: PathLike, options: EmitClose): typings.node.fsMod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("createWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.WriteStream]
   
-  @JSImport("hexo-fs", "emptyDir")
-  @js.native
-  def emptyDir(path: String): typings.bluebird.mod.^[String | js.Array[String]] = js.native
-  @JSImport("hexo-fs", "emptyDir")
-  @js.native
+  @scala.inline
+  def emptyDir(path: String): typings.bluebird.mod.^[String | js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String | js.Array[String]]]
+  @scala.inline
   def emptyDir(
     path: String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String | js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[String | js.Array[String]] = js.native
-  @JSImport("hexo-fs", "emptyDir")
-  @js.native
+  ): typings.bluebird.mod.^[String | js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | js.Array[String]]]
+  @scala.inline
   def emptyDir(
     path: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String | js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[String | js.Array[String]] = js.native
-  @JSImport("hexo-fs", "emptyDir")
-  @js.native
-  def emptyDir(path: String, options: DirectoryOptionsexcludeAr): typings.bluebird.mod.^[String | js.Array[String]] = js.native
-  @JSImport("hexo-fs", "emptyDir")
-  @js.native
+  ): typings.bluebird.mod.^[String | js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | js.Array[String]]]
+  @scala.inline
+  def emptyDir(path: String, options: DirectoryOptionsexcludeAr): typings.bluebird.mod.^[String | js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | js.Array[String]]]
+  @scala.inline
   def emptyDir(
     path: String,
     options: DirectoryOptionsexcludeAr,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String | js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[String | js.Array[String]] = js.native
+  ): typings.bluebird.mod.^[String | js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | js.Array[String]]]
   
-  @JSImport("hexo-fs", "emptyDirSync")
-  @js.native
-  def emptyDirSync(path: String): String | js.Array[String] = js.native
-  @JSImport("hexo-fs", "emptyDirSync")
-  @js.native
-  def emptyDirSync(path: String, options: js.UndefOr[scala.Nothing], parent: String): String | js.Array[String] = js.native
-  @JSImport("hexo-fs", "emptyDirSync")
-  @js.native
-  def emptyDirSync(path: String, options: DirectoryOptionsexcludeAr): String | js.Array[String] = js.native
-  @JSImport("hexo-fs", "emptyDirSync")
-  @js.native
-  def emptyDirSync(path: String, options: DirectoryOptionsexcludeAr, parent: String): String | js.Array[String] = js.native
+  @scala.inline
+  def emptyDirSync(path: String): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def emptyDirSync(path: String, options: Unit, parent: String): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def emptyDirSync(path: String, options: DirectoryOptionsexcludeAr): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def emptyDirSync(path: String, options: DirectoryOptionsexcludeAr, parent: String): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("emptyDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
   
-  @JSImport("hexo-fs", "ensurePath")
-  @js.native
-  def ensurePath(path: String): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "ensurePath")
-  @js.native
-  def ensurePath(path: String, callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): typings.bluebird.mod.^[String] = js.native
+  @scala.inline
+  def ensurePath(path: String): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensurePath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def ensurePath(path: String, callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensurePath")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
-  @JSImport("hexo-fs", "ensurePathSync")
-  @js.native
-  def ensurePathSync(path: String): String = js.native
+  @scala.inline
+  def ensurePathSync(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ensurePathSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hexo-fs", "ensureWriteStream")
-  @js.native
-  def ensureWriteStream(path: String): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
-  @JSImport("hexo-fs", "ensureWriteStream")
-  @js.native
+  @scala.inline
+  def ensureWriteStream(path: String): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStream")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream]]
+  @scala.inline
   def ensureWriteStream(
     path: String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[typings.gracefulFs.mod.WriteStream], Unit]
-  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
-  @JSImport("hexo-fs", "ensureWriteStream")
-  @js.native
-  def ensureWriteStream(
-    path: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[typings.gracefulFs.mod.WriteStream], Unit]
-  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
-  @JSImport("hexo-fs", "ensureWriteStream")
-  @js.native
-  def ensureWriteStream(path: String, options: String): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
-  @JSImport("hexo-fs", "ensureWriteStream")
-  @js.native
+  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStream")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream]]
+  @scala.inline
+  def ensureWriteStream(path: String, options: String): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream]]
+  @scala.inline
   def ensureWriteStream(
     path: String,
     options: String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[typings.gracefulFs.mod.WriteStream], Unit]
-  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
-  @JSImport("hexo-fs", "ensureWriteStream")
-  @js.native
-  def ensureWriteStream(path: String, options: typings.hexoFs.anon.AutoClose): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
-  @JSImport("hexo-fs", "ensureWriteStream")
-  @js.native
+  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream]]
+  @scala.inline
+  def ensureWriteStream(
+    path: String,
+    options: Unit,
+    callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[typings.gracefulFs.mod.WriteStream], Unit]
+  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream]]
+  @scala.inline
+  def ensureWriteStream(path: String, options: typings.hexoFs.anon.AutoClose): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream]]
+  @scala.inline
   def ensureWriteStream(
     path: String,
     options: typings.hexoFs.anon.AutoClose,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[typings.gracefulFs.mod.WriteStream], Unit]
-  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = js.native
+  ): typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStream")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.WriteStream]]
   
-  @JSImport("hexo-fs", "ensureWriteStreamSync")
-  @js.native
-  def ensureWriteStreamSync(path: String): typings.gracefulFs.mod.WriteStream = js.native
-  @JSImport("hexo-fs", "ensureWriteStreamSync")
-  @js.native
-  def ensureWriteStreamSync(path: String, options: String): typings.gracefulFs.mod.WriteStream = js.native
-  @JSImport("hexo-fs", "ensureWriteStreamSync")
-  @js.native
-  def ensureWriteStreamSync(path: String, options: typings.hexoFs.anon.AutoClose): typings.gracefulFs.mod.WriteStream = js.native
+  @scala.inline
+  def ensureWriteStreamSync(path: String): typings.gracefulFs.mod.WriteStream = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStreamSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.gracefulFs.mod.WriteStream]
+  @scala.inline
+  def ensureWriteStreamSync(path: String, options: String): typings.gracefulFs.mod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStreamSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.gracefulFs.mod.WriteStream]
+  @scala.inline
+  def ensureWriteStreamSync(path: String, options: typings.hexoFs.anon.AutoClose): typings.gracefulFs.mod.WriteStream = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureWriteStreamSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.gracefulFs.mod.WriteStream]
   
-  @JSImport("hexo-fs", "escapeBOM")
-  @js.native
-  def escapeBOM(str: String): String = js.native
+  @scala.inline
+  def escapeBOM(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeBOM")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hexo-fs", "escapeEOL")
-  @js.native
-  def escapeEOL(str: String): String = js.native
+  @scala.inline
+  def escapeEOL(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeEOL")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("hexo-fs", "exists")
-  @js.native
-  def exists(path: PathLike): typings.bluebird.mod.^[Boolean] = js.native
-  @JSImport("hexo-fs", "exists")
-  @js.native
-  def exists(path: PathLike, callback: js.Function1[/* exist */ Boolean, Unit]): typings.bluebird.mod.^[Boolean] = js.native
+  @scala.inline
+  def exists(path: PathLike): typings.bluebird.mod.^[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Boolean]]
+  @scala.inline
+  def exists(path: PathLike, callback: js.Function1[/* exist */ Boolean, Unit]): typings.bluebird.mod.^[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Boolean]]
   
-  @JSImport("hexo-fs", "existsSync")
-  @js.native
-  def existsSync(path: PathLike): Boolean = js.native
+  @scala.inline
+  def existsSync(path: PathLike): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("existsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("hexo-fs", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "fchmod")
-  @js.native
-  def fchmod(fd: Double, mode: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def fchmod(fd: Double, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def fchmod(fd: Double, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmod")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "fchmodSync")
-  @js.native
-  def fchmodSync(fd: Double, mode: Mode): Unit = js.native
+  @scala.inline
+  def fchmodSync(fd: Double, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchmodSync")(fd.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "fchown")
-  @js.native
-  def fchown(fd: Double, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def fchown(fd: Double, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("fchown")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "fchownSync")
-  @js.native
-  def fchownSync(fd: Double, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def fchownSync(fd: Double, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fchownSync")(fd.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "fstat")
-  @js.native
-  def fstat(fd: Double): typings.bluebird.mod.^[typings.gracefulFs.mod.Stats] = js.native
+  @scala.inline
+  def fstat(fd: Double): typings.bluebird.mod.^[typings.gracefulFs.mod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("fstat")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.Stats]]
   
-  @JSImport("hexo-fs", "fstatSync")
-  @js.native
-  def fstatSync(fd: Double): typings.node.fsMod.Stats = js.native
+  @scala.inline
+  def fstatSync(fd: Double): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fstatSync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
   
-  @JSImport("hexo-fs", "fsync")
-  @js.native
-  def fsync(fd: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def fsync(fd: Double): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("fsync")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "fsyncSync")
-  @js.native
-  def fsyncSync(fd: Double): Unit = js.native
+  @scala.inline
+  def fsyncSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fsyncSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "ftruncate")
-  @js.native
-  def ftruncate(fd: Double, len: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def ftruncate(fd: Double): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def ftruncate(fd: Double, len: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncate")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "ftruncateSync")
-  @js.native
-  def ftruncateSync(fd: Double): Unit = js.native
-  @JSImport("hexo-fs", "ftruncateSync")
-  @js.native
-  def ftruncateSync(fd: Double, len: Double): Unit = js.native
+  @scala.inline
+  def ftruncateSync(fd: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def ftruncateSync(fd: Double, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ftruncateSync")(fd.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: String, mtime: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: String, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: String, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Double, mtime: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Double, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Date, mtime: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Date, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "futimes")
-  @js.native
-  def futimes(fd: Double, atime: Date, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def futimes(fd: Double, atime: String, mtime: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: String, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: String, mtime: Date): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Double, mtime: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Double, mtime: Date): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Date, mtime: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Date, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def futimes(fd: Double, atime: Date, mtime: Date): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("futimes")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: String, mtime: String): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: String, mtime: Double): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: String, mtime: Date): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Double, mtime: String): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Double, mtime: Date): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Date, mtime: String): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Date, mtime: Double): Unit = js.native
-  @JSImport("hexo-fs", "futimesSync")
-  @js.native
-  def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = js.native
+  @scala.inline
+  def futimesSync(fd: Double, atime: String, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: String, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: String, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Double, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Double, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Date, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Date, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def futimesSync(fd: Double, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("futimesSync")(fd.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "lchmod")
-  @js.native
-  def lchmod(path: PathLike, mode: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "lchmod")
-  @js.native
-  def lchmod(path: PathLike, mode: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def lchmod(path: PathLike, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def lchmod(path: PathLike, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "lchmodSync")
-  @js.native
-  def lchmodSync(path: PathLike, mode: Mode): Unit = js.native
+  @scala.inline
+  def lchmodSync(path: PathLike, mode: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchmodSync")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "lchown")
-  @js.native
-  def lchown(path: PathLike, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def lchown(path: PathLike, uid: Double, gid: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("lchown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "lchownSync")
-  @js.native
-  def lchownSync(path: PathLike, uid: Double, gid: Double): Unit = js.native
+  @scala.inline
+  def lchownSync(path: PathLike, uid: Double, gid: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lchownSync")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "link")
-  @js.native
-  def link(existingPath: PathLike, newPath: PathLike): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def link(existingPath: PathLike, newPath: PathLike): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "linkSync")
-  @js.native
-  def linkSync(existingPath: PathLike, newPath: PathLike): Unit = js.native
+  @scala.inline
+  def linkSync(existingPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("linkSync")(existingPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "listDir")
-  @js.native
-  def listDir(path: String): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "listDir")
-  @js.native
+  @scala.inline
+  def listDir(path: String): typings.bluebird.mod.^[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDir")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
   def listDir(
     path: String,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "listDir")
-  @js.native
+  ): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
   def listDir(
     path: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "listDir")
-  @js.native
-  def listDir(path: String, options: DirectoryOptions): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "listDir")
-  @js.native
+  ): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
+  def listDir(path: String, options: DirectoryOptions): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
   def listDir(
     path: String,
     options: DirectoryOptions,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[js.Array[String]], Unit]
-  ): typings.bluebird.mod.^[js.Array[String]] = js.native
+  ): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
   
-  @JSImport("hexo-fs", "listDirSync")
-  @js.native
-  def listDirSync(path: String): String | js.Array[String] = js.native
-  @JSImport("hexo-fs", "listDirSync")
-  @js.native
-  def listDirSync(path: String, options: js.UndefOr[scala.Nothing], parent: String): String | js.Array[String] = js.native
-  @JSImport("hexo-fs", "listDirSync")
-  @js.native
-  def listDirSync(path: String, options: DirectoryOptions): String | js.Array[String] = js.native
-  @JSImport("hexo-fs", "listDirSync")
-  @js.native
-  def listDirSync(path: String, options: DirectoryOptions, parent: String): String | js.Array[String] = js.native
+  @scala.inline
+  def listDirSync(path: String): String | js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDirSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def listDirSync(path: String, options: Unit, parent: String): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def listDirSync(path: String, options: DirectoryOptions): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
+  @scala.inline
+  def listDirSync(path: String, options: DirectoryOptions, parent: String): String | js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("listDirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], parent.asInstanceOf[js.Any])).asInstanceOf[String | js.Array[String]]
   
-  @JSImport("hexo-fs", "lstat")
-  @js.native
-  def lstat(path: PathLike): typings.bluebird.mod.^[typings.gracefulFs.mod.Stats] = js.native
+  @scala.inline
+  def lstat(path: PathLike): typings.bluebird.mod.^[typings.gracefulFs.mod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("lstat")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.Stats]]
   
-  @JSImport("hexo-fs", "lstatSync")
-  @js.native
-  def lstatSync(path: PathLike): typings.node.fsMod.Stats = js.native
+  @scala.inline
+  def lstatSync(path: PathLike): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("lstatSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
   
-  @JSImport("hexo-fs", "mkdir")
-  @js.native
-  def mkdir(path: PathLike): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "mkdir")
-  @js.native
-  def mkdir(path: PathLike, mode: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "mkdir")
-  @js.native
-  def mkdir(path: PathLike, mode: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def mkdir(path: PathLike): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def mkdir(path: PathLike, mode: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def mkdir(path: PathLike, mode: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdir")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike): js.UndefOr[String] = js.native
-  @JSImport("hexo-fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
-  @JSImport("hexo-fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
-  @JSImport("hexo-fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
-  @JSImport("hexo-fs", "mkdirSync")
-  @js.native
-  def mkdirSync(path: PathLike, options: Mode): js.UndefOr[String] = js.native
-  @JSImport("hexo-fs", "mkdirSync")
-  @js.native
-  def mkdirSync_Unit(path: PathLike): Unit = js.native
-  @JSImport("hexo-fs", "mkdirSync")
-  @js.native
-  def mkdirSync_Unit(path: PathLike, options: Mode): Unit = js.native
+  @scala.inline
+  def mkdirSync(path: PathLike): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def mkdirSync(path: PathLike, options: Mode): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("hexo-fs", "mkdirs")
-  @js.native
-  def mkdirs(path: PathLike): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "mkdirs")
-  @js.native
-  def mkdirs(path: PathLike, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def mkdirSync_Unit(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def mkdirSync_Unit(path: PathLike, options: Mode): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "mkdirsSync")
-  @js.native
-  def mkdirsSync(path: String): Unit = js.native
+  @scala.inline
+  def mkdirs(path: PathLike): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def mkdirs(path: PathLike, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("mkdirs")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "open")
-  @js.native
-  def open(path: PathLike, flags: String): typings.bluebird.mod.^[Double] = js.native
-  @JSImport("hexo-fs", "open")
-  @js.native
-  def open(path: PathLike, flags: String, mode: String): typings.bluebird.mod.^[Double] = js.native
-  @JSImport("hexo-fs", "open")
-  @js.native
-  def open(path: PathLike, flags: String, mode: Double): typings.bluebird.mod.^[Double] = js.native
-  @JSImport("hexo-fs", "open")
-  @js.native
-  def open(path: PathLike, flags: Double): typings.bluebird.mod.^[Double] = js.native
-  @JSImport("hexo-fs", "open")
-  @js.native
-  def open(path: PathLike, flags: Double, mode: String): typings.bluebird.mod.^[Double] = js.native
-  @JSImport("hexo-fs", "open")
-  @js.native
-  def open(path: PathLike, flags: Double, mode: Double): typings.bluebird.mod.^[Double] = js.native
+  @scala.inline
+  def mkdirsSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("mkdirsSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "openSync")
-  @js.native
-  def openSync(path: PathLike, flags: OpenMode): Double = js.native
-  @JSImport("hexo-fs", "openSync")
-  @js.native
-  def openSync(path: PathLike, flags: OpenMode, mode: Mode): Double = js.native
+  @scala.inline
+  def open(path: PathLike, flags: String): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
+  @scala.inline
+  def open(path: PathLike, flags: String, mode: String): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
+  @scala.inline
+  def open(path: PathLike, flags: String, mode: Double): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
+  @scala.inline
+  def open(path: PathLike, flags: Double): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
+  @scala.inline
+  def open(path: PathLike, flags: Double, mode: String): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
+  @scala.inline
+  def open(path: PathLike, flags: Double, mode: Double): typings.bluebird.mod.^[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Double]]
   
-  @JSImport("hexo-fs", "read")
-  @js.native
-  def read(fd: Double, buffer: Buffer, offset: Double, length: Double): typings.bluebird.mod.^[typings.hexoFs.anon.Buffer] = js.native
-  @JSImport("hexo-fs", "read")
-  @js.native
-  def read(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[typings.hexoFs.anon.Buffer] = js.native
-  @JSImport("hexo-fs", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double): typings.bluebird.mod.^[BytesRead] = js.native
-  @JSImport("hexo-fs", "read")
-  @js.native
-  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[BytesRead] = js.native
+  @scala.inline
+  def openSync(path: PathLike, flags: OpenMode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def openSync(path: PathLike, flags: OpenMode, mode: Mode): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("hexo-fs", "readFile")
-  @js.native
-  def readFile(path: Double): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
-  def readFile(path: Double, callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
+  @scala.inline
+  def read(fd: Double, buffer: Buffer, offset: Double, length: Double): typings.bluebird.mod.^[typings.hexoFs.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.hexoFs.anon.Buffer]]
+  @scala.inline
+  def read(fd: Double, buffer: Buffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[typings.hexoFs.anon.Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[typings.hexoFs.anon.Buffer]]
+  @scala.inline
+  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double): typings.bluebird.mod.^[BytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesRead]]
+  @scala.inline
+  def read(fd: Double, buffer: Uint8Array, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[BytesRead] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesRead]]
+  
+  @scala.inline
+  def readFile(path: Double): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readFile(path: Double, callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
   def readFile(
     path: Double,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]
-  ): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
-  def readFile(path: Double, options: Escape): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
+  ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readFile(path: Double, options: Escape): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
   def readFile(
     path: Double,
     options: Escape,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]
-  ): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
-  def readFile(path: PathLike): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
-  def readFile(path: PathLike, callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
+  ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readFile(path: PathLike): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readFile(path: PathLike, callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
   def readFile(
     path: PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]
-  ): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
-  def readFile(path: PathLike, options: Escape): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readFile")
-  @js.native
+  ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readFile(path: PathLike, options: Escape): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
   def readFile(
     path: PathLike,
     options: Escape,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[String], Unit]
-  ): typings.bluebird.mod.^[String] = js.native
+  ): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readFile")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
-  @JSImport("hexo-fs", "readFileSync")
-  @js.native
-  def readFileSync(path: Double): String = js.native
-  @JSImport("hexo-fs", "readFileSync")
-  @js.native
-  def readFileSync(path: Double, options: Escape): String = js.native
-  @JSImport("hexo-fs", "readFileSync")
-  @js.native
-  def readFileSync(path: PathLike): String = js.native
-  @JSImport("hexo-fs", "readFileSync")
-  @js.native
-  def readFileSync(path: PathLike, options: Escape): String = js.native
+  @scala.inline
+  def readFileSync(path: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(path: Double, options: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def readFileSync(path: PathLike, options: Escape): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("hexo-fs", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView): Double = js.native
-  @JSImport("hexo-fs", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-  @JSImport("hexo-fs", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-  @JSImport("hexo-fs", "readSync")
-  @js.native
-  def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = js.native
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def readSync(fd: Double, buffer: ArrayBufferView, opts: ReadSyncOptions): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("readSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("hexo-fs", "readdir")
-  @js.native
-  def readdir(path: PathLike): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: String): typings.bluebird.mod.^[js.Array[String | Buffer]] = js.native
-  @JSImport("hexo-fs", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: Encoding): typings.bluebird.mod.^[js.Array[String]] = js.native
-  @JSImport("hexo-fs", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: `0`): typings.bluebird.mod.^[js.Array[Buffer]] = js.native
-  @JSImport("hexo-fs", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: `1`): typings.bluebird.mod.^[js.Array[String | Buffer]] = js.native
-  @JSImport("hexo-fs", "readdir")
-  @js.native
-  def readdir(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[js.Array[String]] = js.native
+  @scala.inline
+  def readdir(path: PathLike): typings.bluebird.mod.^[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
+  def readdir(path: PathLike, options: String): typings.bluebird.mod.^[js.Array[String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String | Buffer]]]
+  @scala.inline
+  def readdir(path: PathLike, options: Encoding): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
+  @scala.inline
+  def readdir(path: PathLike, options: `0`): typings.bluebird.mod.^[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[Buffer]]]
+  @scala.inline
+  def readdir(path: PathLike, options: `1`): typings.bluebird.mod.^[js.Array[String | Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String | Buffer]]]
+  @scala.inline
+  def readdir(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[String]]]
   
-  @JSImport("hexo-fs", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike): js.Array[Buffer | String] = js.native
-  @JSImport("hexo-fs", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = js.native
-  @JSImport("hexo-fs", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFi): js.Array[Buffer | String] = js.native
-  @JSImport("hexo-fs", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Array[Dirent] = js.native
-  @JSImport("hexo-fs", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = js.native
-  @JSImport("hexo-fs", "readdirSync")
-  @js.native
-  def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = js.native
-  @JSImport("hexo-fs", "readdirSync")
-  @js.native
-  def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = js.native
+  @scala.inline
+  def readdirSync(path: PathLike): js.Array[Buffer | String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[Buffer | String]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: BufferEncoding): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFi): js.Array[Buffer | String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer | String]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: BaseEncodingOptionswithFiEncoding): js.Array[Dirent] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Dirent]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: typings.node.anon.Encoding): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
+  @scala.inline
+  def readdirSync(path: PathLike, options: WithFileTypes): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("hexo-fs", "readdir")
-  @js.native
-  def readdir_buffer(path: PathLike, options: buffer): typings.bluebird.mod.^[js.Array[Buffer]] = js.native
+  @scala.inline
+  def readdirSync_buffer(path: PathLike, options: buffer): js.Array[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Buffer]]
   
-  @JSImport("hexo-fs", "readlink")
-  @js.native
-  def readlink(path: PathLike): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readlink")
-  @js.native
-  def readlink(path: PathLike, options: String): typings.bluebird.mod.^[String | Buffer] = js.native
-  @JSImport("hexo-fs", "readlink")
-  @js.native
-  def readlink(path: PathLike, options: `0`): typings.bluebird.mod.^[Buffer] = js.native
-  @JSImport("hexo-fs", "readlink")
-  @js.native
-  def readlink(path: PathLike, options: `1`): typings.bluebird.mod.^[String | Buffer] = js.native
-  @JSImport("hexo-fs", "readlink")
-  @js.native
-  def readlink(path: PathLike, options: `2`): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "readlink")
-  @js.native
-  def readlink(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[String] = js.native
+  @scala.inline
+  def readdir_buffer(path: PathLike, options: buffer): typings.bluebird.mod.^[js.Array[Buffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[js.Array[Buffer]]]
   
-  @JSImport("hexo-fs", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike): String = js.native
-  @JSImport("hexo-fs", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: String): String | Buffer = js.native
-  @JSImport("hexo-fs", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: BufferEncoding): String = js.native
-  @JSImport("hexo-fs", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: BaseEncodingOptions): String = js.native
-  @JSImport("hexo-fs", "readlinkSync")
-  @js.native
-  def readlinkSync(path: PathLike, options: BufferEncodingOption): Buffer = js.native
-  @JSImport("hexo-fs", "readlinkSync")
-  @js.native
-  def readlinkSync_Union(path: PathLike): String | Buffer = js.native
-  @JSImport("hexo-fs", "readlinkSync")
-  @js.native
-  def readlinkSync_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = js.native
+  @scala.inline
+  def readlink(path: PathLike): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readlink(path: PathLike, options: String): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
+  @scala.inline
+  def readlink(path: PathLike, options: `0`): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
+  @scala.inline
+  def readlink(path: PathLike, options: `1`): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
+  @scala.inline
+  def readlink(path: PathLike, options: `2`): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def readlink(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
-  @JSImport("hexo-fs", "readlink")
-  @js.native
-  def readlink_buffer(path: PathLike, options: buffer): typings.bluebird.mod.^[Buffer] = js.native
+  @scala.inline
+  def readlinkSync(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: String): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: BaseEncodingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def readlinkSync(path: PathLike, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("hexo-fs", "realpath")
-  @js.native
-  def realpath(path: PathLike): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "realpath")
-  @js.native
-  def realpath(path: PathLike, options: String): typings.bluebird.mod.^[String | Buffer] = js.native
-  @JSImport("hexo-fs", "realpath")
-  @js.native
-  def realpath(path: PathLike, options: `0`): typings.bluebird.mod.^[Buffer] = js.native
-  @JSImport("hexo-fs", "realpath")
-  @js.native
-  def realpath(path: PathLike, options: `1`): typings.bluebird.mod.^[String | Buffer] = js.native
-  @JSImport("hexo-fs", "realpath")
-  @js.native
-  def realpath(path: PathLike, options: `2`): typings.bluebird.mod.^[String] = js.native
-  @JSImport("hexo-fs", "realpath")
-  @js.native
-  def realpath(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[String] = js.native
+  @scala.inline
+  def readlinkSync_Union(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+  @scala.inline
+  def readlinkSync_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readlinkSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+  
+  @scala.inline
+  def readlink_buffer(path: PathLike, options: buffer): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("readlink")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
+  
+  @scala.inline
+  def realpath(path: PathLike): typings.bluebird.mod.^[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def realpath(path: PathLike, options: String): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
+  @scala.inline
+  def realpath(path: PathLike, options: `0`): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
+  @scala.inline
+  def realpath(path: PathLike, options: `1`): typings.bluebird.mod.^[String | Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String | Buffer]]
+  @scala.inline
+  def realpath(path: PathLike, options: `2`): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
+  @scala.inline
+  def realpath(path: PathLike, options: BufferEncoding): typings.bluebird.mod.^[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[String]]
   
   object realpathSync {
     
-    @JSImport("hexo-fs", "realpathSync")
-    @js.native
-    def apply(path: PathLike): String = js.native
-    @JSImport("hexo-fs", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: String): String | Buffer = js.native
-    @JSImport("hexo-fs", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: BufferEncoding): String = js.native
-    @JSImport("hexo-fs", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: BaseEncodingOptions): String = js.native
-    @JSImport("hexo-fs", "realpathSync")
-    @js.native
-    def apply(path: PathLike, options: BufferEncodingOption): Buffer = js.native
+    @scala.inline
+    def apply(path: PathLike): String = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(path: PathLike, options: String): String | Buffer = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+    @scala.inline
+    def apply(path: PathLike, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(path: PathLike, options: BaseEncodingOptions): String = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(path: PathLike, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
     
-    @JSImport("hexo-fs", "realpathSync.native")
+    @JSImport("hexo-fs", "realpathSync")
     @js.native
-    def native(path: PathLike): String = js.native
-    @JSImport("hexo-fs", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: String): String | Buffer = js.native
-    @JSImport("hexo-fs", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: BufferEncoding): String = js.native
-    @JSImport("hexo-fs", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: BaseEncodingOptions): String = js.native
-    @JSImport("hexo-fs", "realpathSync.native")
-    @js.native
-    def native(path: PathLike, options: BufferEncodingOption): Buffer = js.native
-    @JSImport("hexo-fs", "realpathSync.native")
-    @js.native
-    def native_Union(path: PathLike): String | Buffer = js.native
-    @JSImport("hexo-fs", "realpathSync.native")
-    @js.native
-    def native_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def native(path: PathLike): String = ^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def native(path: PathLike, options: String): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
+    @scala.inline
+    def native(path: PathLike, options: BufferEncoding): String = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def native(path: PathLike, options: BaseEncodingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def native(path: PathLike, options: BufferEncodingOption): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+    
+    @scala.inline
+    def native_Union(path: PathLike): String | Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any]).asInstanceOf[String | Buffer]
+    @scala.inline
+    def native_Union(path: PathLike, options: BaseEncodingOptions): String | Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String | Buffer]
   }
   
-  @JSImport("hexo-fs", "realpath")
-  @js.native
-  def realpath_buffer(path: PathLike, options: buffer): typings.bluebird.mod.^[Buffer] = js.native
+  @scala.inline
+  def realpath_buffer(path: PathLike, options: buffer): typings.bluebird.mod.^[Buffer] = (^.asInstanceOf[js.Dynamic].applyDynamic("realpath")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Buffer]]
   
-  @JSImport("hexo-fs", "rename")
-  @js.native
-  def rename(oldPath: PathLike, newPath: PathLike): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def rename(oldPath: PathLike, newPath: PathLike): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "renameSync")
-  @js.native
-  def renameSync(oldPath: PathLike, newPath: PathLike): Unit = js.native
+  @scala.inline
+  def renameSync(oldPath: PathLike, newPath: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("renameSync")(oldPath.asInstanceOf[js.Any], newPath.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "rmdir")
-  @js.native
-  def rmdir(path: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "rmdir")
-  @js.native
-  def rmdir(path: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def rmdir(path: String): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def rmdir(path: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rmdir")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "rmdirSync")
-  @js.native
-  def rmdirSync(path: String): Unit = js.native
+  @scala.inline
+  def rmdirSync(path: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("rmdirSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "stat")
-  @js.native
-  def stat(path: PathLike): typings.bluebird.mod.^[typings.gracefulFs.mod.Stats] = js.native
+  @scala.inline
+  def stat(path: PathLike): typings.bluebird.mod.^[typings.gracefulFs.mod.Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[typings.gracefulFs.mod.Stats]]
   
-  @JSImport("hexo-fs", "statSync")
-  @js.native
-  def statSync(path: PathLike): typings.node.fsMod.Stats = js.native
-  @JSImport("hexo-fs", "statSync")
-  @js.native
-  def statSync(path: PathLike, options: BigIntOptions): BigIntStats = js.native
-  @JSImport("hexo-fs", "statSync")
-  @js.native
-  def statSync(path: PathLike, options: StatOptions): typings.node.fsMod.Stats | BigIntStats = js.native
+  @scala.inline
+  def statSync(path: PathLike): typings.node.fsMod.Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any]).asInstanceOf[typings.node.fsMod.Stats]
+  @scala.inline
+  def statSync(path: PathLike, options: BigIntOptions): BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[BigIntStats]
+  @scala.inline
+  def statSync(path: PathLike, options: StatOptions): typings.node.fsMod.Stats | BigIntStats = (^.asInstanceOf[js.Dynamic].applyDynamic("statSync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.node.fsMod.Stats | BigIntStats]
   
-  @JSImport("hexo-fs", "symlink")
-  @js.native
-  def symlink(target: PathLike, path: PathLike): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "symlink")
-  @js.native
-  def symlink(target: PathLike, path: PathLike, `type`: String): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def symlink(target: PathLike, path: PathLike): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def symlink(target: PathLike, path: PathLike, `type`: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symlink")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "symlinkSync")
-  @js.native
-  def symlinkSync(target: PathLike, path: PathLike): Unit = js.native
-  @JSImport("hexo-fs", "symlinkSync")
-  @js.native
-  def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = js.native
+  @scala.inline
+  def symlinkSync(target: PathLike, path: PathLike): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def symlinkSync(target: PathLike, path: PathLike, `type`: Type): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("symlinkSync")(target.asInstanceOf[js.Any], path.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "truncate")
-  @js.native
-  def truncate(path: PathLike): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "truncate")
-  @js.native
-  def truncate(path: PathLike, len: Double): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def truncate(path: PathLike): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def truncate(path: PathLike, len: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("truncate")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "truncateSync")
-  @js.native
-  def truncateSync(path: PathLike): Unit = js.native
-  @JSImport("hexo-fs", "truncateSync")
-  @js.native
-  def truncateSync(path: PathLike, len: Double): Unit = js.native
+  @scala.inline
+  def truncateSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def truncateSync(path: PathLike, len: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("truncateSync")(path.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "unlink")
-  @js.native
-  def unlink(path: PathLike): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def unlink(path: PathLike): typings.bluebird.mod.^[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("unlink")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "unlinkSync")
-  @js.native
-  def unlinkSync(path: PathLike): Unit = js.native
+  @scala.inline
+  def unlinkSync(path: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unlinkSync")(path.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "unwatchFile")
-  @js.native
-  def unwatchFile(filename: PathLike): Unit = js.native
-  @JSImport("hexo-fs", "unwatchFile")
-  @js.native
+  @scala.inline
+  def unwatchFile(filename: PathLike): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def unwatchFile(
     filename: PathLike,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unwatchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: String, mtime: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: String, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: String, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Double, mtime: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Double, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Date, mtime: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Date, mtime: Double): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "utimes")
-  @js.native
-  def utimes(path: PathLike, atime: Date, mtime: Date): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def utimes(path: PathLike, atime: String, mtime: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: String, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: String, mtime: Date): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: Double, mtime: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: Double, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: Double, mtime: Date): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: Date, mtime: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: Date, mtime: Double): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def utimes(path: PathLike, atime: Date, mtime: Date): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("utimes")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: String, mtime: String): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: String, mtime: Double): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: String, mtime: Date): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: String): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: Double): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Double, mtime: Date): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: String): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: Double): Unit = js.native
-  @JSImport("hexo-fs", "utimesSync")
-  @js.native
-  def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = js.native
+  @scala.inline
+  def utimesSync(path: PathLike, atime: String, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: String, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: String, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Double, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Double, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Double, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Date, mtime: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Date, mtime: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def utimesSync(path: PathLike, atime: Date, mtime: Date): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("utimesSync")(path.asInstanceOf[js.Any], atime.asInstanceOf[js.Any], mtime.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "watch")
-  @js.native
-  def watch(path: String): typings.bluebird.mod.^[FSWatcher] = js.native
-  @JSImport("hexo-fs", "watch")
-  @js.native
+  @scala.inline
+  def watch(path: String): typings.bluebird.mod.^[FSWatcher] = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
+  @scala.inline
   def watch(
     path: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[FSWatcher], Unit]
-  ): typings.bluebird.mod.^[FSWatcher] = js.native
-  @JSImport("hexo-fs", "watch")
-  @js.native
-  def watch(path: String, options: WatchOptions): typings.bluebird.mod.^[FSWatcher] = js.native
-  @JSImport("hexo-fs", "watch")
-  @js.native
+  ): typings.bluebird.mod.^[FSWatcher] = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
+  @scala.inline
+  def watch(path: String, options: WatchOptions): typings.bluebird.mod.^[FSWatcher] = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
+  @scala.inline
   def watch(
     path: String,
     options: WatchOptions,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[FSWatcher], Unit]
-  ): typings.bluebird.mod.^[FSWatcher] = js.native
-  @JSImport("hexo-fs", "watch")
-  @js.native
-  def watch(path: js.Array[String]): typings.bluebird.mod.^[FSWatcher] = js.native
-  @JSImport("hexo-fs", "watch")
-  @js.native
+  ): typings.bluebird.mod.^[FSWatcher] = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
+  @scala.inline
+  def watch(path: js.Array[String]): typings.bluebird.mod.^[FSWatcher] = ^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
+  @scala.inline
   def watch(
     path: js.Array[String],
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[FSWatcher], Unit]
-  ): typings.bluebird.mod.^[FSWatcher] = js.native
-  @JSImport("hexo-fs", "watch")
-  @js.native
-  def watch(path: js.Array[String], options: WatchOptions): typings.bluebird.mod.^[FSWatcher] = js.native
-  @JSImport("hexo-fs", "watch")
-  @js.native
+  ): typings.bluebird.mod.^[FSWatcher] = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
+  @scala.inline
+  def watch(path: js.Array[String], options: WatchOptions): typings.bluebird.mod.^[FSWatcher] = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
+  @scala.inline
   def watch(
     path: js.Array[String],
     options: WatchOptions,
     callback: js.Function2[/* err */ js.Any, /* value */ js.UndefOr[FSWatcher], Unit]
-  ): typings.bluebird.mod.^[FSWatcher] = js.native
+  ): typings.bluebird.mod.^[FSWatcher] = (^.asInstanceOf[js.Dynamic].applyDynamic("watch")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[FSWatcher]]
   
-  @JSImport("hexo-fs", "watchFile")
-  @js.native
+  @scala.inline
   def watchFile(
     filename: PathLike,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
-  @JSImport("hexo-fs", "watchFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def watchFile(
     filename: PathLike,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
-  @JSImport("hexo-fs", "watchFile")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def watchFile(
     filename: PathLike,
     options: Interval,
     listener: js.Function2[/* curr */ typings.node.fsMod.Stats, /* prev */ typings.node.fsMod.Stats, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("watchFile")(filename.asInstanceOf[js.Any], options.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write(fd: Double, string: js.Any): typings.bluebird.mod.^[BufferBytesWritten] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write(fd: Double, string: js.Any, position: js.UndefOr[scala.Nothing], encoding: String): typings.bluebird.mod.^[BufferBytesWritten] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write(fd: Double, string: js.Any, position: Double): typings.bluebird.mod.^[BufferBytesWritten] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write(fd: Double, string: js.Any, position: Double, encoding: String): typings.bluebird.mod.^[BufferBytesWritten] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write(fd: Double, string: js.Any, position: Null, encoding: String): typings.bluebird.mod.^[BufferBytesWritten] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](
-    fd: Double,
-    buffer: TBuffer,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: js.UndefOr[scala.Nothing], length: Double, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double, length: js.UndefOr[scala.Nothing], position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double, length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](
-    fd: Double,
-    buffer: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](
-    fd: Double,
-    buffer: js.UndefOr[scala.Nothing],
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](
-    fd: Double,
-    buffer: js.UndefOr[scala.Nothing],
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
-  @JSImport("hexo-fs", "write")
-  @js.native
-  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: js.UndefOr[scala.Nothing], offset: Double, length: Double, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = js.native
+  @scala.inline
+  def write(fd: Double, string: js.Any): typings.bluebird.mod.^[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, string: js.Any, position: Double): typings.bluebird.mod.^[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, string: js.Any, position: Double, encoding: String): typings.bluebird.mod.^[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, string: js.Any, position: Null, encoding: String): typings.bluebird.mod.^[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BufferBytesWritten]]
+  @scala.inline
+  def write(fd: Double, string: js.Any, position: Unit, encoding: String): typings.bluebird.mod.^[BufferBytesWritten] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BufferBytesWritten]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = ^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double, length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Double, length: Unit, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Unit, length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Unit, length: Double, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: TBuffer, offset: Unit, length: Unit, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: Unit, offset: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: Unit, offset: Double, length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: Unit, offset: Double, length: Double, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: Unit, offset: Double, length: Unit, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: Unit, offset: Unit, length: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: Unit, offset: Unit, length: Double, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
+  @scala.inline
+  def write[TBuffer /* <: Buffer | Uint8Array */](fd: Double, buffer: Unit, offset: Unit, length: Unit, position: Double): typings.bluebird.mod.^[BytesWritten[TBuffer]] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[BytesWritten[TBuffer]]]
   
-  @JSImport("hexo-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: js.Any): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "writeFile")
-  @js.native
-  def writeFile(
-    path: String,
-    data: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* err */ js.Any, Unit]
-  ): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: js.Any, options: String): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: js.Any, options: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: js.Any, options: Flag): typings.bluebird.mod.^[Unit] = js.native
-  @JSImport("hexo-fs", "writeFile")
-  @js.native
-  def writeFile(path: String, data: js.Any, options: Flag, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = js.native
+  @scala.inline
+  def writeFile(path: String, data: js.Any): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFile(path: String, data: js.Any, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFile(path: String, data: js.Any, options: String): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFile(path: String, data: js.Any, options: String, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFile(path: String, data: js.Any, options: Unit, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFile(path: String, data: js.Any, options: Flag): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
+  @scala.inline
+  def writeFile(path: String, data: js.Any, options: Flag, callback: js.Function1[/* err */ js.Any, Unit]): typings.bluebird.mod.^[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[Unit]]
   
-  @JSImport("hexo-fs", "writeFileSync")
-  @js.native
-  def writeFileSync(path: String, data: js.Any): Unit = js.native
-  @JSImport("hexo-fs", "writeFileSync")
-  @js.native
-  def writeFileSync(path: String, data: js.Any, options: String): Unit = js.native
-  @JSImport("hexo-fs", "writeFileSync")
-  @js.native
-  def writeFileSync(path: String, data: js.Any, options: Flag): Unit = js.native
+  @scala.inline
+  def writeFileSync(path: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: String, data: js.Any, options: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeFileSync(path: String, data: js.Any, options: Flag): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFileSync")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: js.UndefOr[scala.Nothing], length: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Double,
-    position: Double
-  ): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: js.UndefOr[scala.Nothing],
-    length: Null,
-    position: Double
-  ): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: Double,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(
-    fd: Double,
-    buffer: ArrayBufferView,
-    offset: Null,
-    length: js.UndefOr[scala.Nothing],
-    position: Double
-  ): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: js.UndefOr[scala.Nothing], encoding: BufferEncoding): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: Double): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = js.native
-  @JSImport("hexo-fs", "writeSync")
-  @js.native
-  def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = js.native
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Double, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Null, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Double, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Null, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, buffer: ArrayBufferView, offset: Unit, length: Unit, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Double, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Null, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def writeSync(fd: Double, string: String, position: Unit, encoding: BufferEncoding): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("writeSync")(fd.asInstanceOf[js.Any], string.asInstanceOf[js.Any], position.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
   trait AppendFileOptions extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
     
-    var mode: js.UndefOr[String | Double] = js.native
+    var mode: js.UndefOr[String | Double] = js.undefined
   }
   object AppendFileOptions {
     
@@ -1291,12 +943,11 @@ object mod {
     }
   }
   
-  @js.native
   trait DirectoryOptions extends StObject {
     
-    var ignoreHidden: js.UndefOr[Boolean] = js.native
+    var ignoreHidden: js.UndefOr[Boolean] = js.undefined
     
-    var ignorePattern: js.UndefOr[RegExp] = js.native
+    var ignorePattern: js.UndefOr[RegExp] = js.undefined
   }
   object DirectoryOptions {
     

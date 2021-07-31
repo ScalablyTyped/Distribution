@@ -4,14 +4,12 @@ import typings.typedoc.schemaMod.ModelToObject
 import typings.typedoc.schemaMod._ModelToObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<typedoc.typedoc/dist/lib/serialization/schema.TypeParameterType, 'type'> */
-@js.native
 trait PickTypeParameterTypetype extends StObject {
   
-  var `type`: ModelToObject[String] | String = js.native
+  var `type`: ModelToObject[String] | String
 }
 object PickTypeParameterTypetype {
   

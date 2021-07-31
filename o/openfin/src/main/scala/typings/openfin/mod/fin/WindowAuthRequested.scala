@@ -3,13 +3,13 @@ package typings.openfin.mod.fin
 import typings.openfin.anon.Host
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowAuthRequested extends WindowEvent {
+trait WindowAuthRequested
+  extends StObject
+     with WindowEvent {
   
-  var authInfo: Host = js.native
+  var authInfo: Host
 }
 object WindowAuthRequested {
   

@@ -6,23 +6,28 @@ import typings.reactBigCalendar.mod.View
 import typings.reactBigCalendar.mod.ViewKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactBigCalendarStrings {
   
   @js.native
-  sealed trait AGENDA extends ViewKey
+  sealed trait AGENDA
+    extends StObject
+       with ViewKey
   @scala.inline
   def AGENDA: AGENDA = "AGENDA".asInstanceOf[AGENDA]
   
   @js.native
-  sealed trait DATE extends NavigateAction
+  sealed trait DATE
+    extends StObject
+       with NavigateAction
   @scala.inline
   def DATE: DATE = "DATE".asInstanceOf[DATE]
   
   @js.native
-  sealed trait DAY extends ViewKey
+  sealed trait DAY
+    extends StObject
+       with ViewKey
   @scala.inline
   def DAY: DAY = "DAY".asInstanceOf[DAY]
   
@@ -37,17 +42,23 @@ object reactBigCalendarStrings {
   def LEFT: LEFT = "LEFT".asInstanceOf[LEFT]
   
   @js.native
-  sealed trait MONTH extends ViewKey
+  sealed trait MONTH
+    extends StObject
+       with ViewKey
   @scala.inline
   def MONTH: MONTH = "MONTH".asInstanceOf[MONTH]
   
   @js.native
-  sealed trait NEXT extends NavigateAction
+  sealed trait NEXT
+    extends StObject
+       with NavigateAction
   @scala.inline
   def NEXT: NEXT = "NEXT".asInstanceOf[NEXT]
   
   @js.native
-  sealed trait PREV extends NavigateAction
+  sealed trait PREV
+    extends StObject
+       with NavigateAction
   @scala.inline
   def PREV: PREV = "PREV".asInstanceOf[PREV]
   
@@ -57,7 +68,9 @@ object reactBigCalendarStrings {
   def RIGHT: RIGHT = "RIGHT".asInstanceOf[RIGHT]
   
   @js.native
-  sealed trait TODAY extends NavigateAction
+  sealed trait TODAY
+    extends StObject
+       with NavigateAction
   @scala.inline
   def TODAY: TODAY = "TODAY".asInstanceOf[TODAY]
   
@@ -67,17 +80,23 @@ object reactBigCalendarStrings {
   def UP: UP = "UP".asInstanceOf[UP]
   
   @js.native
-  sealed trait WEEK extends ViewKey
+  sealed trait WEEK
+    extends StObject
+       with ViewKey
   @scala.inline
   def WEEK: WEEK = "WEEK".asInstanceOf[WEEK]
   
   @js.native
-  sealed trait WORK_WEEK extends ViewKey
+  sealed trait WORK_WEEK
+    extends StObject
+       with ViewKey
   @scala.inline
   def WORK_WEEK: WORK_WEEK = "WORK_WEEK".asInstanceOf[WORK_WEEK]
   
   @js.native
-  sealed trait agenda_ extends View
+  sealed trait agenda_
+    extends StObject
+       with View
   @scala.inline
   def agenda_ : agenda_ = "agenda".asInstanceOf[agenda_]
   
@@ -87,7 +106,9 @@ object reactBigCalendarStrings {
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait day_ extends View
+  sealed trait day_
+    extends StObject
+       with View
   @scala.inline
   def day_ : day_ = "day".asInstanceOf[day_]
   
@@ -102,7 +123,9 @@ object reactBigCalendarStrings {
   def ignoreEvents: ignoreEvents = "ignoreEvents".asInstanceOf[ignoreEvents]
   
   @js.native
-  sealed trait month_ extends View
+  sealed trait month_
+    extends StObject
+       with View
   @scala.inline
   def month_ : month_ = "month".asInstanceOf[month_]
   
@@ -112,12 +135,16 @@ object reactBigCalendarStrings {
   def move: move = "move".asInstanceOf[move]
   
   @js.native
-  sealed trait `no-overlap` extends DayLayoutAlgorithm
+  sealed trait `no-overlap`
+    extends StObject
+       with DayLayoutAlgorithm
   @scala.inline
   def `no-overlap`: `no-overlap` = "no-overlap".asInstanceOf[`no-overlap`]
   
   @js.native
-  sealed trait overlap extends DayLayoutAlgorithm
+  sealed trait overlap
+    extends StObject
+       with DayLayoutAlgorithm
   @scala.inline
   def overlap: overlap = "overlap".asInstanceOf[overlap]
   
@@ -132,12 +159,16 @@ object reactBigCalendarStrings {
   def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait week_ extends View
+  sealed trait week_
+    extends StObject
+       with View
   @scala.inline
   def week_ : week_ = "week".asInstanceOf[week_]
   
   @js.native
-  sealed trait work_week_ extends View
+  sealed trait work_week_
+    extends StObject
+       with View
   @scala.inline
   def work_week_ : work_week_ = "work_week".asInstanceOf[work_week_]
 }

@@ -12,7 +12,7 @@ Authentication token strategy for Passport.
 | Keywords           | passport, local, auth, authn, authentication, token |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 100046 |
+| # downloads        | 130629 |
 | # stars            | 0 |
 
 ## Links

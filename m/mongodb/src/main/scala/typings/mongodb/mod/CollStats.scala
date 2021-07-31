@@ -3,92 +3,90 @@ package typings.mongodb.mod
 import typings.mongodb.anon.Dictindex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollStats extends StObject {
   
   /**
     * Average object size in bytes.
     */
-  var avgObjSize: scala.Double = js.native
+  var avgObjSize: scala.Double
   
   /**
     * `true` if the collection is capped.
     */
-  var capped: Boolean = js.native
+  var capped: Boolean
   
   /**
     * Number of documents.
     */
-  var count: scala.Double = js.native
+  var count: scala.Double
   
-  var indexDetails: js.UndefOr[js.Any] = js.native
+  var indexDetails: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Size of specific indexes in bytes.
     */
-  var indexSizes: Dictindex = js.native
+  var indexSizes: Dictindex
   
   /**
     * Size of the most recently created extent in bytes.
     */
-  var lastExtentSize: scala.Double = js.native
+  var lastExtentSize: scala.Double
   
   /**
     * The maximum number of documents that may be present in a capped collection.
     */
-  var max: scala.Double = js.native
+  var max: scala.Double
   
   /**
     * The maximum size of a capped collection.
     */
-  var maxSize: scala.Double = js.native
+  var maxSize: scala.Double
   
   /**
     * Number of indexes.
     */
-  var nindexes: scala.Double = js.native
+  var nindexes: scala.Double
   
   /**
     * Namespace.
     */
-  var ns: String = js.native
+  var ns: String
   
   /**
     * Number of extents (contiguously allocated chunks of datafile space).
     */
-  var numExtents: scala.Double = js.native
+  var numExtents: scala.Double
   
-  var ok: scala.Double = js.native
+  var ok: scala.Double
   
   /**
     * Padding can speed up updates if documents grow.
     */
-  var paddingFactor: scala.Double = js.native
+  var paddingFactor: scala.Double
   
   /**
     * Collection size in bytes.
     */
-  var size: scala.Double = js.native
+  var size: scala.Double
   
   /**
     * (Pre)allocated space for the collection in bytes.
     */
-  var storageSize: scala.Double = js.native
+  var storageSize: scala.Double
   
   /**
     * Total index size in bytes.
     */
-  var totalIndexSize: scala.Double = js.native
+  var totalIndexSize: scala.Double
   
   /**
     * A number that indicates the user-set flags on the collection. userFlags only appears when using the mmapv1 storage engine.
     */
-  var userFlags: js.UndefOr[scala.Double] = js.native
+  var userFlags: js.UndefOr[scala.Double] = js.undefined
   
-  var wiredTiger: js.UndefOr[WiredTigerData] = js.native
+  var wiredTiger: js.UndefOr[WiredTigerData] = js.undefined
 }
 object CollStats {
   

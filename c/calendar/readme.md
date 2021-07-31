@@ -11,8 +11,8 @@ calendar generator
 | Full name          | calendar |
 | Keywords           | - |
 | # releases         | 2 |
-| # dependents       | 29 |
-| # downloads        | 765818 |
+| # dependents       | 28 |
+| # downloads        | 827032 |
 | # stars            | 5 |
 
 ## Links

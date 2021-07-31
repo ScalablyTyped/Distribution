@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetV2LoggingOptionsResponse extends StObject {
   
   /**
     * The default log level.
     */
-  var defaultLogLevel: js.UndefOr[LogLevel] = js.native
+  var defaultLogLevel: js.UndefOr[LogLevel] = js.undefined
   
   /**
     * Disables all logs.
     */
-  var disableAllLogs: js.UndefOr[DisableAllLogs] = js.native
+  var disableAllLogs: js.UndefOr[DisableAllLogs] = js.undefined
   
   /**
     * The IAM role ARN AWS IoT uses to write to your CloudWatch logs.
     */
-  var roleArn: js.UndefOr[AwsArn] = js.native
+  var roleArn: js.UndefOr[AwsArn] = js.undefined
 }
 object GetV2LoggingOptionsResponse {
   

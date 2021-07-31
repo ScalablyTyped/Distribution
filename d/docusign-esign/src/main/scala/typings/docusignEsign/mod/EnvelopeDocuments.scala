@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvelopeDocuments extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait EnvelopeDocuments extends StObject {
     */
   var envelopeDocuments: js.UndefOr[
     js.Array[/* This object contains details about the envelope document. */ EnvelopeDocument]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The envelope ID of the envelope status that failed to post.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
 }
 object EnvelopeDocuments {
   

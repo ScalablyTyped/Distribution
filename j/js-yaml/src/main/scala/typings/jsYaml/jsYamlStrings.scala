@@ -3,13 +3,14 @@ package typings.jsYaml
 import typings.jsYaml.mod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsYamlStrings {
   
   @js.native
-  sealed trait close extends EventType
+  sealed trait close
+    extends StObject
+       with EventType
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   
@@ -19,7 +20,9 @@ object jsYamlStrings {
   def mapping: mapping = "mapping".asInstanceOf[mapping]
   
   @js.native
-  sealed trait open extends EventType
+  sealed trait open
+    extends StObject
+       with EventType
   @scala.inline
   def open: open = "open".asInstanceOf[open]
   

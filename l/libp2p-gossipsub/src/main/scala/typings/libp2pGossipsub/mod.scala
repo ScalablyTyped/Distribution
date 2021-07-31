@@ -28,7 +28,6 @@ import typings.std.Set
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -65,72 +64,192 @@ object mod {
   @scala.inline
   def multicodec_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("multicodec")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait GossipInputOptions extends StObject {
     
     /**
       * D sets the optimal degree for a Gossipsub topic mesh.
       */
-    var D: Double = js.native
+    var D: Double
     
     /**
       * Dhi sets the upper bound on the number of peers we keep in a Gossipsub topic mesh.
       */
-    var Dhi: Double = js.native
+    var Dhi: Double
     
     /**
       * Dlazy affects how many peers we will emit gossip to at each heartbeat.
       */
-    var Dlazy: Double = js.native
+    var Dlazy: Double
     
     /**
       * Dlo sets the lower bound on the number of peers we keep in a Gossipsub topic mesh.
       */
-    var Dlo: Double = js.native
+    var Dlo: Double
     
     /**
       * Dout sets the quota for the number of outbound connections to maintain in a topic mesh.
       */
-    var Dout: Double = js.native
+    var Dout: Double
     
     /**
       * Dscore affects how peers are selected when pruning a mesh due to over subscription.
       */
-    var Dscore: Double = js.native
+    var Dscore: Double
     
-    var directPeers: js.Array[AddrInfo] = js.native
+    var directPeers: js.Array[AddrInfo]
     
-    var doPX: Boolean = js.native
+    var doPX: Boolean
     
-    var emitSelf: Boolean = js.native
+    var emitSelf: Boolean
     
-    var fallbackToFloodsub: Boolean = js.native
+    var fallbackToFloodsub: Boolean
     
-    var floodPublish: Boolean = js.native
+    var floodPublish: Boolean
     
-    var globalSignaturePolicy: String = js.native
+    var globalSignaturePolicy: String
     
-    var gossipIncoming: Boolean = js.native
+    var gossipIncoming: Boolean
     
-    var messageCache: MessageCache = js.native
+    var messageCache: MessageCache
     
-    def msgIdFn(msg: InMessage): Uint8Array = js.native
+    def msgIdFn(msg: InMessage): Uint8Array
     @JSName("msgIdFn")
-    var msgIdFn_Original: MessageIdFunction = js.native
+    var msgIdFn_Original: MessageIdFunction
     
-    var scoreParams: PartialPeerScoreParams = js.native
+    var scoreParams: PartialPeerScoreParams
     
-    var scoreThresholds: PartialPeerScoreThreshold = js.native
+    var scoreThresholds: PartialPeerScoreThreshold
+  }
+  object GossipInputOptions {
+    
+    @scala.inline
+    def apply(
+      D: Double,
+      Dhi: Double,
+      Dlazy: Double,
+      Dlo: Double,
+      Dout: Double,
+      Dscore: Double,
+      directPeers: js.Array[AddrInfo],
+      doPX: Boolean,
+      emitSelf: Boolean,
+      fallbackToFloodsub: Boolean,
+      floodPublish: Boolean,
+      globalSignaturePolicy: String,
+      gossipIncoming: Boolean,
+      messageCache: MessageCache,
+      msgIdFn: /* msg */ InMessage => Uint8Array,
+      scoreParams: PartialPeerScoreParams,
+      scoreThresholds: PartialPeerScoreThreshold
+    ): GossipInputOptions = {
+      val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], emitSelf = emitSelf.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], floodPublish = floodPublish.asInstanceOf[js.Any], globalSignaturePolicy = globalSignaturePolicy.asInstanceOf[js.Any], gossipIncoming = gossipIncoming.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GossipInputOptions]
+    }
+    
+    @scala.inline
+    implicit class GossipInputOptionsMutableBuilder[Self <: GossipInputOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setD(value: Double): Self = StObject.set(x, "D", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDhi(value: Double): Self = StObject.set(x, "Dhi", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDirectPeers(value: js.Array[AddrInfo]): Self = StObject.set(x, "directPeers", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDirectPeersVarargs(value: AddrInfo*): Self = StObject.set(x, "directPeers", js.Array(value :_*))
+      
+      @scala.inline
+      def setDlazy(value: Double): Self = StObject.set(x, "Dlazy", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDlo(value: Double): Self = StObject.set(x, "Dlo", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDoPX(value: Boolean): Self = StObject.set(x, "doPX", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDout(value: Double): Self = StObject.set(x, "Dout", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDscore(value: Double): Self = StObject.set(x, "Dscore", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setEmitSelf(value: Boolean): Self = StObject.set(x, "emitSelf", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFallbackToFloodsub(value: Boolean): Self = StObject.set(x, "fallbackToFloodsub", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFloodPublish(value: Boolean): Self = StObject.set(x, "floodPublish", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGlobalSignaturePolicy(value: String): Self = StObject.set(x, "globalSignaturePolicy", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setGossipIncoming(value: Boolean): Self = StObject.set(x, "gossipIncoming", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMessageCache(value: MessageCache): Self = StObject.set(x, "messageCache", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMsgIdFn(value: /* msg */ InMessage => Uint8Array): Self = StObject.set(x, "msgIdFn", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setScoreParams(value: PartialPeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScoreThresholds(value: PartialPeerScoreThreshold): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
-  trait GossipOptions extends GossipInputOptions {
+  trait GossipOptions
+    extends StObject
+       with GossipInputOptions {
     
     @JSName("scoreParams")
-    var scoreParams_GossipOptions: PeerScoreParams = js.native
+    var scoreParams_GossipOptions: PeerScoreParams
     
     @JSName("scoreThresholds")
-    var scoreThresholds_GossipOptions: PeerScoreThresholds = js.native
+    var scoreThresholds_GossipOptions: PeerScoreThresholds
+  }
+  object GossipOptions {
+    
+    @scala.inline
+    def apply(
+      D: Double,
+      Dhi: Double,
+      Dlazy: Double,
+      Dlo: Double,
+      Dout: Double,
+      Dscore: Double,
+      directPeers: js.Array[AddrInfo],
+      doPX: Boolean,
+      emitSelf: Boolean,
+      fallbackToFloodsub: Boolean,
+      floodPublish: Boolean,
+      globalSignaturePolicy: String,
+      gossipIncoming: Boolean,
+      messageCache: MessageCache,
+      msgIdFn: /* msg */ InMessage => Uint8Array,
+      scoreParams: PeerScoreParams,
+      scoreThresholds: PeerScoreThresholds
+    ): GossipOptions = {
+      val __obj = js.Dynamic.literal(D = D.asInstanceOf[js.Any], Dhi = Dhi.asInstanceOf[js.Any], Dlazy = Dlazy.asInstanceOf[js.Any], Dlo = Dlo.asInstanceOf[js.Any], Dout = Dout.asInstanceOf[js.Any], Dscore = Dscore.asInstanceOf[js.Any], directPeers = directPeers.asInstanceOf[js.Any], doPX = doPX.asInstanceOf[js.Any], emitSelf = emitSelf.asInstanceOf[js.Any], fallbackToFloodsub = fallbackToFloodsub.asInstanceOf[js.Any], floodPublish = floodPublish.asInstanceOf[js.Any], globalSignaturePolicy = globalSignaturePolicy.asInstanceOf[js.Any], gossipIncoming = gossipIncoming.asInstanceOf[js.Any], messageCache = messageCache.asInstanceOf[js.Any], msgIdFn = js.Any.fromFunction1(msgIdFn), scoreParams = scoreParams.asInstanceOf[js.Any], scoreThresholds = scoreThresholds.asInstanceOf[js.Any])
+      __obj.asInstanceOf[GossipOptions]
+    }
+    
+    @scala.inline
+    implicit class GossipOptionsMutableBuilder[Self <: GossipOptions] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setScoreParams(value: PeerScoreParams): Self = StObject.set(x, "scoreParams", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setScoreThresholds(value: PeerScoreThresholds): Self = StObject.set(x, "scoreThresholds", value.asInstanceOf[js.Any])
+    }
   }
   
   @js.native

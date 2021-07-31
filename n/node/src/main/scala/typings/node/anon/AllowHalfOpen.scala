@@ -2,15 +2,13 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowHalfOpen extends StObject {
   
-  var allowHalfOpen: js.UndefOr[Boolean] = js.native
+  var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
   
-  var pauseOnConnect: js.UndefOr[Boolean] = js.native
+  var pauseOnConnect: js.UndefOr[Boolean] = js.undefined
 }
 object AllowHalfOpen {
   

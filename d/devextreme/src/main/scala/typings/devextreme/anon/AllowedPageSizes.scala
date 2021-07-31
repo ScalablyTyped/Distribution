@@ -3,23 +3,21 @@ package typings.devextreme.anon
 import typings.devextreme.devextremeStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowedPageSizes extends StObject {
   
-  var allowedPageSizes: js.UndefOr[js.Array[Double] | auto] = js.native
+  var allowedPageSizes: js.UndefOr[js.Array[Double] | auto] = js.undefined
   
-  var infoText: js.UndefOr[String] = js.native
+  var infoText: js.UndefOr[String] = js.undefined
   
-  var showInfo: js.UndefOr[Boolean] = js.native
+  var showInfo: js.UndefOr[Boolean] = js.undefined
   
-  var showNavigationButtons: js.UndefOr[Boolean] = js.native
+  var showNavigationButtons: js.UndefOr[Boolean] = js.undefined
   
-  var showPageSizeSelector: js.UndefOr[Boolean] = js.native
+  var showPageSizeSelector: js.UndefOr[Boolean] = js.undefined
   
-  var visible: js.UndefOr[Boolean | auto] = js.native
+  var visible: js.UndefOr[Boolean | auto] = js.undefined
 }
 object AllowedPageSizes {
   

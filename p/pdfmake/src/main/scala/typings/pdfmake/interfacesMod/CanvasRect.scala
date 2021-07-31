@@ -3,33 +3,32 @@ package typings.pdfmake.interfacesMod
 import typings.pdfmake.pdfmakeStrings.rect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasRect
-  extends CanvasLineElement
+  extends StObject
+     with CanvasLineElement
      with CanvasFilledElement
      with CanvasElement {
   
-  var h: Double = js.native
+  var h: Double
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
-  var `type`: rect = js.native
+  var `type`: rect
   
-  var w: Double = js.native
+  var w: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object CanvasRect {
   
   @scala.inline
-  def apply(h: Double, `type`: rect, w: Double, x: Double, y: Double): CanvasRect = {
+  def apply(h: Double, w: Double, x: Double, y: Double): CanvasRect = {
     val __obj = js.Dynamic.literal(h = h.asInstanceOf[js.Any], w = w.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("rect")
     __obj.asInstanceOf[CanvasRect]
   }
   

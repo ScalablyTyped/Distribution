@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueuingStrategy[T] extends StObject {
   
-  var highWaterMark: js.UndefOr[Double] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[QueuingStrategySizeCallback[T]] = js.native
+  var size: js.UndefOr[QueuingStrategySizeCallback[T]] = js.undefined
 }
 object QueuingStrategy {
   
@@ -21,7 +19,7 @@ object QueuingStrategy {
   }
   
   @scala.inline
-  implicit class QueuingStrategyMutableBuilder[Self <: QueuingStrategy[_], T] (val x: Self with QueuingStrategy[T]) extends AnyVal {
+  implicit class QueuingStrategyMutableBuilder[Self <: QueuingStrategy[?], T] (val x: Self & QueuingStrategy[T]) extends AnyVal {
     
     @scala.inline
     def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])

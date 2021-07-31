@@ -2,25 +2,23 @@ package typings.googleapis.videointelligenceV1Mod.videointelligenceV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Video annotation request.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest extends StObject {
   
   /**
     * Requested video annotation features.
     */
-  var features: js.UndefOr[js.Array[String]] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The video data bytes. If unset, the input video(s) should be specified
     * via `input_uri`. If set, `input_uri` should be unset.
     */
-  var inputContent: js.UndefOr[String] = js.native
+  var inputContent: js.UndefOr[String] = js.undefined
   
   /**
     * Input video location. Currently, only [Google Cloud
@@ -34,7 +32,7 @@ trait SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest extends StObject 
     * embedded in the request as `input_content`. If set, `input_content`
     * should be unset.
     */
-  var inputUri: js.UndefOr[String] = js.native
+  var inputUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional cloud region where annotation should take place. Supported cloud
@@ -42,7 +40,7 @@ trait SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest extends StObject 
     * region is specified, a region will be determined based on video file
     * location.
     */
-  var locationId: js.UndefOr[String] = js.native
+  var locationId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional location where the output (in JSON format) should be stored.
@@ -52,12 +50,12 @@ trait SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest extends StObject 
     * google.rpc.Code.INVALID_ARGUMENT). For more information, see [Request
     * URIs](/storage/docs/reference-uris).
     */
-  var outputUri: js.UndefOr[String] = js.native
+  var outputUri: js.UndefOr[String] = js.undefined
   
   /**
     * Additional video context and/or feature-specific parameters.
     */
-  var videoContext: js.UndefOr[SchemaGoogleCloudVideointelligenceV1VideoContext] = js.native
+  var videoContext: js.UndefOr[SchemaGoogleCloudVideointelligenceV1VideoContext] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1AnnotateVideoRequest {
   

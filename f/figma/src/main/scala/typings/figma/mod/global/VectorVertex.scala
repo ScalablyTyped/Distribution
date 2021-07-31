@@ -2,23 +2,21 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorVertex extends StObject {
   
-  val cornerRadius: js.UndefOr[Double] = js.native
+  val cornerRadius: js.UndefOr[Double] = js.undefined
   
-  val handleMirroring: js.UndefOr[HandleMirroring] = js.native
+  val handleMirroring: js.UndefOr[HandleMirroring] = js.undefined
   
-  val strokeCap: js.UndefOr[StrokeCap] = js.native
+  val strokeCap: js.UndefOr[StrokeCap] = js.undefined
   
-  val strokeJoin: js.UndefOr[StrokeJoin] = js.native
+  val strokeJoin: js.UndefOr[StrokeJoin] = js.undefined
   
-  val x: Double = js.native
+  val x: Double
   
-  val y: Double = js.native
+  val y: Double
 }
 object VectorVertex {
   

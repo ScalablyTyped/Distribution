@@ -23,7 +23,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeSelectorMod {
@@ -33,49 +32,48 @@ object rangeSelectorMod {
   @js.native
   class RangeSelector protected ()
     extends Component[
-          RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
+          RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color])) = this()
+    def this(props: RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color])) = this()
     def this(
-      props: RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]),
+      props: RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/RangeSelector", "RangeSelector")
   @js.native
   val RangeSelector: ComponentClass[
-    RangeSelectorProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
+    RangeSelectorProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], color]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait RangeSelectorProps extends StObject {
     
-    var color: js.UndefOr[ColorType] = js.native
+    var color: js.UndefOr[ColorType] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var invert: js.UndefOr[Boolean] = js.native
+    var invert: js.UndefOr[Boolean] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var messages: js.UndefOr[Lower] = js.native
+    var messages: js.UndefOr[Lower] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var opacity: js.UndefOr[weak | medium | strong | String | Boolean] = js.native
+    var opacity: js.UndefOr[weak | medium | strong | String | Boolean] = js.undefined
     
-    var round: js.UndefOr[xsmall | small | medium | large | full | String] = js.native
+    var round: js.UndefOr[xsmall | small | medium | large | full | String] = js.undefined
     
-    var size: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | String] = js.native
+    var size: js.UndefOr[xxsmall | xsmall | small | medium | large | xlarge | full | String] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
     
-    var values: js.Array[Double] = js.native
+    var values: js.Array[Double]
   }
   object RangeSelectorProps {
     

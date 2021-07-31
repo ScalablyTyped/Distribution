@@ -2,16 +2,14 @@ package typings.awsSdk.fsxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateFileSystemAliasesResponse extends StObject {
   
   /**
     * An array of one or more DNS aliases that Amazon FSx is attempting to disassociate from the file system.
     */
-  var Aliases: js.UndefOr[typings.awsSdk.fsxMod.Aliases] = js.native
+  var Aliases: js.UndefOr[typings.awsSdk.fsxMod.Aliases] = js.undefined
 }
 object DisassociateFileSystemAliasesResponse {
   

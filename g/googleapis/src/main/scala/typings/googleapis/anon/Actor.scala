@@ -2,31 +2,29 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actor extends StObject {
   
-  var actor: js.UndefOr[Verification] = js.native
+  var actor: js.UndefOr[Verification] = js.undefined
   
-  var attachments: js.UndefOr[js.Array[Content]] = js.native
+  var attachments: js.UndefOr[js.Array[Content]] = js.undefined
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var objectType: js.UndefOr[String] = js.native
+  var objectType: js.UndefOr[String] = js.undefined
   
-  var originalContent: js.UndefOr[String] = js.native
+  var originalContent: js.UndefOr[String] = js.undefined
   
-  var plusoners: js.UndefOr[SelfLink] = js.native
+  var plusoners: js.UndefOr[SelfLink] = js.undefined
   
-  var replies: js.UndefOr[SelfLink] = js.native
+  var replies: js.UndefOr[SelfLink] = js.undefined
   
-  var resharers: js.UndefOr[SelfLink] = js.native
+  var resharers: js.UndefOr[SelfLink] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Actor {
   

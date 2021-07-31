@@ -2,16 +2,16 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IEventTimestamped[T] extends IEvent[T] {
+trait IEventTimestamped[T]
+  extends StObject
+     with IEvent[T] {
   
   /**
     * The engine.timing.timestamp of the event
     */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object IEventTimestamped {
   
@@ -22,7 +22,7 @@ object IEventTimestamped {
   }
   
   @scala.inline
-  implicit class IEventTimestampedMutableBuilder[Self <: IEventTimestamped[_], T] (val x: Self with IEventTimestamped[T]) extends AnyVal {
+  implicit class IEventTimestampedMutableBuilder[Self <: IEventTimestamped[?], T] (val x: Self & IEventTimestamped[T]) extends AnyVal {
     
     @scala.inline
     def setTimestamp(value: Double): Self = StObject.set(x, "timestamp", value.asInstanceOf[js.Any])

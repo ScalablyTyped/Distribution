@@ -3,11 +3,12 @@ package typings.canvaskitWasm.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkCanvas extends EmbindObject[SkCanvas] {
+trait SkCanvas
+  extends StObject
+     with EmbindObject[SkCanvas] {
   
   /**
     * Fills the current clip with the given color using Src BlendMode.
@@ -88,7 +89,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     srcRects: InputFlattenedRectangleArray,
     dstXforms: InputFlattenedRSXFormArray,
     paint: SkPaint,
-    blendMode: js.UndefOr[scala.Nothing],
+    blendMode: Unit,
     colors: ColorIntArray
   ): Unit = js.native
   def drawAtlas(
@@ -397,9 +398,9 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     y: Double,
     w: Double,
     h: Double,
-    alphaType: js.UndefOr[scala.Nothing],
-    colorType: js.UndefOr[scala.Nothing],
-    colorSpace: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
+    colorType: Unit,
+    colorSpace: Unit,
     dstRowBytes: Double
   ): Uint8Array = js.native
   def readPixels(
@@ -407,8 +408,8 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     y: Double,
     w: Double,
     h: Double,
-    alphaType: js.UndefOr[scala.Nothing],
-    colorType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
+    colorType: Unit,
     colorSpace: ColorSpace
   ): Uint8Array = js.native
   def readPixels(
@@ -416,27 +417,20 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     y: Double,
     w: Double,
     h: Double,
-    alphaType: js.UndefOr[scala.Nothing],
-    colorType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
+    colorType: Unit,
     colorSpace: ColorSpace,
     dstRowBytes: Double
   ): Uint8Array = js.native
+  def readPixels(x: Double, y: Double, w: Double, h: Double, alphaType: Unit, colorType: ColorType): Uint8Array = js.native
   def readPixels(
     x: Double,
     y: Double,
     w: Double,
     h: Double,
-    alphaType: js.UndefOr[scala.Nothing],
-    colorType: ColorType
-  ): Uint8Array = js.native
-  def readPixels(
-    x: Double,
-    y: Double,
-    w: Double,
-    h: Double,
-    alphaType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
     colorType: ColorType,
-    colorSpace: js.UndefOr[scala.Nothing],
+    colorSpace: Unit,
     dstRowBytes: Double
   ): Uint8Array = js.native
   def readPixels(
@@ -444,7 +438,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     y: Double,
     w: Double,
     h: Double,
-    alphaType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
     colorType: ColorType,
     colorSpace: ColorSpace
   ): Uint8Array = js.native
@@ -453,7 +447,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     y: Double,
     w: Double,
     h: Double,
-    alphaType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
     colorType: ColorType,
     colorSpace: ColorSpace,
     dstRowBytes: Double
@@ -465,8 +459,8 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     w: Double,
     h: Double,
     alphaType: AlphaType,
-    colorType: js.UndefOr[scala.Nothing],
-    colorSpace: js.UndefOr[scala.Nothing],
+    colorType: Unit,
+    colorSpace: Unit,
     dstRowBytes: Double
   ): Uint8Array = js.native
   def readPixels(
@@ -475,7 +469,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     w: Double,
     h: Double,
     alphaType: AlphaType,
-    colorType: js.UndefOr[scala.Nothing],
+    colorType: Unit,
     colorSpace: ColorSpace
   ): Uint8Array = js.native
   def readPixels(
@@ -484,7 +478,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     w: Double,
     h: Double,
     alphaType: AlphaType,
-    colorType: js.UndefOr[scala.Nothing],
+    colorType: Unit,
     colorSpace: ColorSpace,
     dstRowBytes: Double
   ): Uint8Array = js.native
@@ -496,7 +490,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     h: Double,
     alphaType: AlphaType,
     colorType: ColorType,
-    colorSpace: js.UndefOr[scala.Nothing],
+    colorSpace: Unit,
     dstRowBytes: Double
   ): Uint8Array = js.native
   def readPixels(
@@ -556,50 +550,33 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     * @param flags
     */
   def saveLayer(): Double = js.native
-  def saveLayer(
-    paint: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[InputRect],
-    backdrop: js.UndefOr[scala.Nothing],
-    flags: SaveLayerFlag
-  ): Double = js.native
-  def saveLayer(
-    paint: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[InputRect],
-    backdrop: Null,
-    flags: SaveLayerFlag
-  ): Double = js.native
-  def saveLayer(paint: js.UndefOr[scala.Nothing], bounds: js.UndefOr[InputRect], backdrop: SkImageFilter): Double = js.native
-  def saveLayer(
-    paint: js.UndefOr[scala.Nothing],
-    bounds: js.UndefOr[InputRect],
-    backdrop: SkImageFilter,
-    flags: SaveLayerFlag
-  ): Double = js.native
-  def saveLayer(
-    paint: js.UndefOr[scala.Nothing],
-    bounds: Null,
-    backdrop: js.UndefOr[scala.Nothing],
-    flags: SaveLayerFlag
-  ): Double = js.native
-  def saveLayer(paint: js.UndefOr[scala.Nothing], bounds: Null, backdrop: Null, flags: SaveLayerFlag): Double = js.native
-  def saveLayer(paint: js.UndefOr[scala.Nothing], bounds: Null, backdrop: SkImageFilter): Double = js.native
-  def saveLayer(paint: js.UndefOr[scala.Nothing], bounds: Null, backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
-  def saveLayer(paint: js.UndefOr[scala.Nothing], bounds: InputRect): Double = js.native
+  def saveLayer(paint: Unit, bounds: Null, backdrop: Null, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: Null, backdrop: Unit, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: Null, backdrop: SkImageFilter): Double = js.native
+  def saveLayer(paint: Unit, bounds: Null, backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: Unit, backdrop: Null, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: Unit, backdrop: Unit, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: Unit, backdrop: SkImageFilter): Double = js.native
+  def saveLayer(paint: Unit, bounds: Unit, backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: InputRect): Double = js.native
+  def saveLayer(paint: Unit, bounds: InputRect, backdrop: Null, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: InputRect, backdrop: Unit, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: Unit, bounds: InputRect, backdrop: SkImageFilter): Double = js.native
+  def saveLayer(paint: Unit, bounds: InputRect, backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
   def saveLayer(paint: SkPaint): Double = js.native
-  def saveLayer(
-    paint: SkPaint,
-    bounds: js.UndefOr[InputRect],
-    backdrop: js.UndefOr[scala.Nothing],
-    flags: SaveLayerFlag
-  ): Double = js.native
-  def saveLayer(paint: SkPaint, bounds: js.UndefOr[InputRect], backdrop: Null, flags: SaveLayerFlag): Double = js.native
-  def saveLayer(paint: SkPaint, bounds: js.UndefOr[InputRect], backdrop: SkImageFilter): Double = js.native
-  def saveLayer(paint: SkPaint, bounds: js.UndefOr[InputRect], backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
-  def saveLayer(paint: SkPaint, bounds: Null, backdrop: js.UndefOr[scala.Nothing], flags: SaveLayerFlag): Double = js.native
   def saveLayer(paint: SkPaint, bounds: Null, backdrop: Null, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: Null, backdrop: Unit, flags: SaveLayerFlag): Double = js.native
   def saveLayer(paint: SkPaint, bounds: Null, backdrop: SkImageFilter): Double = js.native
   def saveLayer(paint: SkPaint, bounds: Null, backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: Unit, backdrop: Null, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: Unit, backdrop: Unit, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: Unit, backdrop: SkImageFilter): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: Unit, backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
   def saveLayer(paint: SkPaint, bounds: InputRect): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: InputRect, backdrop: Null, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: InputRect, backdrop: Unit, flags: SaveLayerFlag): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: InputRect, backdrop: SkImageFilter): Double = js.native
+  def saveLayer(paint: SkPaint, bounds: InputRect, backdrop: SkImageFilter, flags: SaveLayerFlag): Double = js.native
   
   /**
     * Scales the current matrix by sx on the x-axis and sy on the y-axis.
@@ -631,8 +608,8 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     srcHeight: Double,
     destX: Double,
     destY: Double,
-    alphaType: js.UndefOr[scala.Nothing],
-    colorType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
+    colorType: Unit,
     colorSpace: ColorSpace
   ): Boolean = js.native
   def writePixels(
@@ -641,7 +618,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     srcHeight: Double,
     destX: Double,
     destY: Double,
-    alphaType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
     colorType: ColorType
   ): Boolean = js.native
   def writePixels(
@@ -650,7 +627,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     srcHeight: Double,
     destX: Double,
     destY: Double,
-    alphaType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
     colorType: ColorType,
     colorSpace: ColorSpace
   ): Boolean = js.native
@@ -669,7 +646,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     destX: Double,
     destY: Double,
     alphaType: AlphaType,
-    colorType: js.UndefOr[scala.Nothing],
+    colorType: Unit,
     colorSpace: ColorSpace
   ): Boolean = js.native
   def writePixels(
@@ -710,8 +687,8 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     srcHeight: Double,
     destX: Double,
     destY: Double,
-    alphaType: js.UndefOr[scala.Nothing],
-    colorType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
+    colorType: Unit,
     colorSpace: ColorSpace
   ): Boolean = js.native
   def writePixels(
@@ -720,7 +697,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     srcHeight: Double,
     destX: Double,
     destY: Double,
-    alphaType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
     colorType: ColorType
   ): Boolean = js.native
   def writePixels(
@@ -729,7 +706,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     srcHeight: Double,
     destX: Double,
     destY: Double,
-    alphaType: js.UndefOr[scala.Nothing],
+    alphaType: Unit,
     colorType: ColorType,
     colorSpace: ColorSpace
   ): Boolean = js.native
@@ -748,7 +725,7 @@ trait SkCanvas extends EmbindObject[SkCanvas] {
     destX: Double,
     destY: Double,
     alphaType: AlphaType,
-    colorType: js.UndefOr[scala.Nothing],
+    colorType: Unit,
     colorSpace: ColorSpace
   ): Boolean = js.native
   def writePixels(

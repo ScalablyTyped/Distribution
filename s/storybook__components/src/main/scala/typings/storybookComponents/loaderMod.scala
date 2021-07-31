@@ -12,7 +12,6 @@ import typings.storybookComponents.anon.PickDetailedHTMLPropsHTML
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loaderMod {
@@ -22,7 +21,7 @@ object loaderMod {
   val Loader: FunctionComponent[
     ComponentProps[
       FunctionComponent[
-        LoaderProps with (ComponentProps[
+        LoaderProps & (ComponentProps[
           /* import warning: importer.ImportType#apply Failed type conversion: typeof ProgressWrapper */ js.Any
         ])
       ]
@@ -32,7 +31,7 @@ object loaderMod {
   @JSImport("@storybook/components/dist/Loader/Loader", "PureLoader")
   @js.native
   val PureLoader: FunctionComponent[
-    LoaderProps with (ComponentProps[
+    LoaderProps & (ComponentProps[
       StyledComponent[
         DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], 
         PickDetailedHTMLPropsHTML, 
@@ -41,14 +40,13 @@ object loaderMod {
     ])
   ] = js.native
   
-  @js.native
   trait LoaderProps extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var progress: js.UndefOr[Progress] = js.native
+    var progress: js.UndefOr[Progress] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object LoaderProps {
     
@@ -81,14 +79,13 @@ object loaderMod {
     }
   }
   
-  @js.native
   trait Progress extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var modules: js.UndefOr[Complete] = js.native
+    var modules: js.UndefOr[Complete] = js.undefined
     
-    var value: Double = js.native
+    var value: Double
   }
   object Progress {
     

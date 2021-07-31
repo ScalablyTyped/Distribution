@@ -3,17 +3,15 @@ package typings.sinonChrome
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Content extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var example: js.UndefOr[String] = js.native
+    var example: js.UndefOr[String] = js.undefined
   }
   object Content {
     
@@ -37,14 +35,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Description extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var message: String = js.native
+    var message: String
     
-    var placeholders: js.UndefOr[StringDictionary[Content]] = js.native
+    var placeholders: js.UndefOr[StringDictionary[Content]] = js.undefined
   }
   object Description {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetStreamingDistributionConfigResult extends StObject {
   
   /**
     * The current version of the configuration. For example: E2QWRUHAPOMQZL. 
     */
-  var ETag: js.UndefOr[String] = js.native
+  var ETag: js.UndefOr[String] = js.undefined
   
   /**
     * The streaming distribution's configuration information.
     */
-  var StreamingDistributionConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.StreamingDistributionConfig] = js.native
+  var StreamingDistributionConfig: js.UndefOr[typings.awsSdk.cloudfrontMod.StreamingDistributionConfig] = js.undefined
 }
 object GetStreamingDistributionConfigResult {
   

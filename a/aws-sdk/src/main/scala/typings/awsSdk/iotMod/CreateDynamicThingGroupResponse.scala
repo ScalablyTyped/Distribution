@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDynamicThingGroupResponse extends StObject {
   
   /**
     * The dynamic thing group index name.
     */
-  var indexName: js.UndefOr[IndexName] = js.native
+  var indexName: js.UndefOr[IndexName] = js.undefined
   
   /**
     * The dynamic thing group search query string.
     */
-  var queryString: js.UndefOr[QueryString] = js.native
+  var queryString: js.UndefOr[QueryString] = js.undefined
   
   /**
     * The dynamic thing group query version.
     */
-  var queryVersion: js.UndefOr[QueryVersion] = js.native
+  var queryVersion: js.UndefOr[QueryVersion] = js.undefined
   
   /**
     * The dynamic thing group ARN.
     */
-  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.native
+  var thingGroupArn: js.UndefOr[ThingGroupArn] = js.undefined
   
   /**
     * The dynamic thing group ID.
     */
-  var thingGroupId: js.UndefOr[ThingGroupId] = js.native
+  var thingGroupId: js.UndefOr[ThingGroupId] = js.undefined
   
   /**
     * The dynamic thing group name.
     */
-  var thingGroupName: js.UndefOr[ThingGroupName] = js.native
+  var thingGroupName: js.UndefOr[ThingGroupName] = js.undefined
 }
 object CreateDynamicThingGroupResponse {
   

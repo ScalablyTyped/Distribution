@@ -11,8 +11,8 @@ Parses JavaScript objects into XML
 | Full name          | js2xmlparser |
 | Keywords           | convert, converter, javascript, js, json, object, objects, parse, parser, xml |
 | # releases         | 3 |
-| # dependents       | 206 |
-| # downloads        | 37469324 |
+| # dependents       | 213 |
+| # downloads        | 45980548 |
 | # stars            | 23 |
 
 ## Links

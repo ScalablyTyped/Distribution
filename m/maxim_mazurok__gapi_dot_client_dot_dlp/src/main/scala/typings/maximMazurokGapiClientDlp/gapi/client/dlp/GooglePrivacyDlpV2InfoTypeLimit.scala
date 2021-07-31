@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2InfoTypeLimit extends StObject {
   
   /**
     * Type of information the findings limit applies to. Only one limit per info_type should be provided. If InfoTypeLimit does not have an info_type, the DLP API applies the limit
     * against all info_types that are found but not specified in another InfoTypeLimit.
     */
-  var infoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.native
+  var infoType: js.UndefOr[GooglePrivacyDlpV2InfoType] = js.undefined
   
   /** Max findings limit for the given infoType. */
-  var maxFindings: js.UndefOr[Double] = js.native
+  var maxFindings: js.UndefOr[Double] = js.undefined
 }
 object GooglePrivacyDlpV2InfoTypeLimit {
   

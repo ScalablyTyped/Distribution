@@ -2,39 +2,37 @@ package typings.googleAppsScript.GoogleAppsScript.BigQuery_.Schema
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dataset extends StObject {
   
-  var access: js.UndefOr[js.Array[DatasetAccess]] = js.native
+  var access: js.UndefOr[js.Array[DatasetAccess]] = js.undefined
   
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
-  var datasetReference: js.UndefOr[DatasetReference] = js.native
+  var datasetReference: js.UndefOr[DatasetReference] = js.undefined
   
-  var defaultPartitionExpirationMs: js.UndefOr[String] = js.native
+  var defaultPartitionExpirationMs: js.UndefOr[String] = js.undefined
   
-  var defaultTableExpirationMs: js.UndefOr[String] = js.native
+  var defaultTableExpirationMs: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var labels: js.UndefOr[js.Object] = js.native
+  var labels: js.UndefOr[js.Object] = js.undefined
   
-  var lastModifiedTime: js.UndefOr[String] = js.native
+  var lastModifiedTime: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object Dataset {
   

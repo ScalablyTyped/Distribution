@@ -2,17 +2,15 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseLayer extends StObject {
   
-  var BaseLayer: js.UndefOr[String] = js.native
+  var BaseLayer: js.UndefOr[String] = js.undefined
   
-  var Layers: js.UndefOr[js.Array[String]] = js.native
+  var Layers: js.UndefOr[js.Array[String]] = js.undefined
   
-  var Type: String = js.native
+  var Type: String
 }
 object BaseLayer {
   

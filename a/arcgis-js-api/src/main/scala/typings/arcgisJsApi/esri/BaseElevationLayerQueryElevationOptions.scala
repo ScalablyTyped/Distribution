@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseElevationLayerQueryElevationOptions extends Object {
+trait BaseElevationLayerQueryElevationOptions
+  extends StObject
+     with Object {
   
   /**
     * Controls the horizontal resolution (cell size) in meters from which elevation data is sampled (defaults to `auto`).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
     */
-  var demResolution: js.UndefOr[Double | String] = js.native
+  var demResolution: js.UndefOr[Double | String] = js.undefined
   
   /**
     * The value to use when there is no data available.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
     */
-  var noDataValue: js.UndefOr[Double] = js.native
+  var noDataValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Indicates whether to return additional sample information for each coordinate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-BaseElevationLayer.html#queryElevation)
     */
-  var returnSampleInfo: js.UndefOr[Boolean] = js.native
+  var returnSampleInfo: js.UndefOr[Boolean] = js.undefined
 }
 object BaseElevationLayerQueryElevationOptions {
   

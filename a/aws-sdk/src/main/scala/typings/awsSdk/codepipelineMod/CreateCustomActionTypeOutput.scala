@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCustomActionTypeOutput extends StObject {
   
   /**
     * Returns information about the details of an action type.
     */
-  var actionType: ActionType = js.native
+  var actionType: ActionType
   
   /**
     * Specifies the tags applied to the custom action.
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateCustomActionTypeOutput {
   

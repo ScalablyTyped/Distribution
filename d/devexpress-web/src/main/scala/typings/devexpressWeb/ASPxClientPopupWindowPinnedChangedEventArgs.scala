@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientPopupControlBase.PinnedChanged event.
   */
-@js.native
-trait ASPxClientPopupWindowPinnedChangedEventArgs extends ASPxClientPopupWindowEventArgs {
+trait ASPxClientPopupWindowPinnedChangedEventArgs
+  extends StObject
+     with ASPxClientPopupWindowEventArgs {
   
   /**
     * Gets a value indicating whether the processed popup window has been pinned.
     */
-  var pinned: Boolean = js.native
+  var pinned: Boolean
 }
 object ASPxClientPopupWindowPinnedChangedEventArgs {
   

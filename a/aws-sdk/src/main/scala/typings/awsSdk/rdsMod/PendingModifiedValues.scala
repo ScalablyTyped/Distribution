@@ -2,83 +2,81 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PendingModifiedValues extends StObject {
   
   /**
     *  Contains the new AllocatedStorage size for the DB instance that will be applied or is currently being applied. 
     */
-  var AllocatedStorage: js.UndefOr[IntegerOptional] = js.native
+  var AllocatedStorage: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Specifies the pending number of days for which automated backups are retained.
     */
-  var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.native
+  var BackupRetentionPeriod: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * Specifies the identifier of the CA certificate for the DB instance.
     */
-  var CACertificateIdentifier: js.UndefOr[String] = js.native
+  var CACertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  Contains the new DBInstanceClass for the DB instance that will be applied or is currently being applied. 
     */
-  var DBInstanceClass: js.UndefOr[String] = js.native
+  var DBInstanceClass: js.UndefOr[String] = js.undefined
   
   /**
     *  Contains the new DBInstanceIdentifier for the DB instance that will be applied or is currently being applied. 
     */
-  var DBInstanceIdentifier: js.UndefOr[String] = js.native
+  var DBInstanceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The new DB subnet group for the DB instance. 
     */
-  var DBSubnetGroupName: js.UndefOr[String] = js.native
+  var DBSubnetGroupName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the database engine version.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the new Provisioned IOPS value for the DB instance that will be applied or is currently being applied.
     */
-  var Iops: js.UndefOr[IntegerOptional] = js.native
+  var Iops: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The license model for the DB instance. Valid values: license-included | bring-your-own-license | general-public-license 
     */
-  var LicenseModel: js.UndefOr[String] = js.native
+  var LicenseModel: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the pending or currently-in-progress change of the master credentials for the DB instance.
     */
-  var MasterUserPassword: js.UndefOr[String] = js.native
+  var MasterUserPassword: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates that the Single-AZ DB instance is to change to a Multi-AZ deployment.
     */
-  var MultiAZ: js.UndefOr[BooleanOptional] = js.native
+  var MultiAZ: js.UndefOr[BooleanOptional] = js.undefined
   
-  var PendingCloudwatchLogsExports: js.UndefOr[typings.awsSdk.rdsMod.PendingCloudwatchLogsExports] = js.native
+  var PendingCloudwatchLogsExports: js.UndefOr[typings.awsSdk.rdsMod.PendingCloudwatchLogsExports] = js.undefined
   
   /**
     * Specifies the pending port for the DB instance.
     */
-  var Port: js.UndefOr[IntegerOptional] = js.native
+  var Port: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The number of CPU cores and the number of threads per core for the DB instance class of the DB instance.
     */
-  var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.native
+  var ProcessorFeatures: js.UndefOr[ProcessorFeatureList] = js.undefined
   
   /**
     * Specifies the storage type to be associated with the DB instance.
     */
-  var StorageType: js.UndefOr[String] = js.native
+  var StorageType: js.UndefOr[String] = js.undefined
 }
 object PendingModifiedValues {
   

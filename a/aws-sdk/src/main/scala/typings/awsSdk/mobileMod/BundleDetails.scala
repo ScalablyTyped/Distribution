@@ -2,23 +2,21 @@ package typings.awsSdk.mobileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BundleDetails extends StObject {
   
-  var availablePlatforms: js.UndefOr[Platforms] = js.native
+  var availablePlatforms: js.UndefOr[Platforms] = js.undefined
   
-  var bundleId: js.UndefOr[BundleId] = js.native
+  var bundleId: js.UndefOr[BundleId] = js.undefined
   
-  var description: js.UndefOr[BundleDescription] = js.native
+  var description: js.UndefOr[BundleDescription] = js.undefined
   
-  var iconUrl: js.UndefOr[IconUrl] = js.native
+  var iconUrl: js.UndefOr[IconUrl] = js.undefined
   
-  var title: js.UndefOr[BundleTitle] = js.native
+  var title: js.UndefOr[BundleTitle] = js.undefined
   
-  var version: js.UndefOr[BundleVersion] = js.native
+  var version: js.UndefOr[BundleVersion] = js.undefined
 }
 object BundleDetails {
   

@@ -3,30 +3,29 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlNode
-  extends ValueNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with ValueNodeType {
   
-  var innerSpacingAfter: js.UndefOr[String] = js.native
+  var innerSpacingAfter: js.UndefOr[String] = js.undefined
   
-  var innerSpacingBefore: js.UndefOr[String] = js.native
+  var innerSpacingBefore: js.UndefOr[String] = js.undefined
   
-  var stringType: js.UndefOr[String] = js.native
+  var stringType: js.UndefOr[String] = js.undefined
   
-  var `type`: url = js.native
+  var `type`: url
   
-  var url: String = js.native
+  var url: String
 }
 object UrlNode {
   
   @scala.inline
-  def apply(`type`: url, url: String): UrlNode = {
+  def apply(url: String): UrlNode = {
     val __obj = js.Dynamic.literal(url = url.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("url")
     __obj.asInstanceOf[UrlNode]
   }
   

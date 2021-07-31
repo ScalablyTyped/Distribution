@@ -6,7 +6,6 @@ import typings.react.mod.ClassicComponentClass
 import typings.react.mod.ComponentState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,18 +21,17 @@ object mod extends Shortcut {
   @js.native
   val default: ClassicComponentClass[ReactShowMoreProps] = js.native
   
-  @js.native
   trait ReactShowMoreProps extends StObject {
     
-    var anchorClass: js.UndefOr[String] = js.native
+    var anchorClass: js.UndefOr[String] = js.undefined
     
-    var children: js.UndefOr[String] = js.native
+    var children: js.UndefOr[String] = js.undefined
     
-    var less: js.UndefOr[String] = js.native
+    var less: js.UndefOr[String] = js.undefined
     
-    var lines: js.UndefOr[Double] = js.native
+    var lines: js.UndefOr[Double] = js.undefined
     
-    var more: js.UndefOr[String] = js.native
+    var more: js.UndefOr[String] = js.undefined
   }
   object ReactShowMoreProps {
     

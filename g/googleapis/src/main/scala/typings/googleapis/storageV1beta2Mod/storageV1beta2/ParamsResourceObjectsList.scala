@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceObjectsList extends StandardParameters {
+trait ParamsResourceObjectsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Name of the bucket in which to look for objects.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * Returns results in a directory-like mode. items will contain only objects
@@ -29,34 +29,34 @@ trait ParamsResourceObjectsList extends StandardParameters {
     * name, truncated after the delimiter, returned in prefixes. Duplicate
     * prefixes are omitted.
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /**
     * Maximum number of items plus prefixes to return. As duplicate prefixes
     * are omitted, fewer total results may be returned than requested.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * A previously-returned page token representing part of the larger set of
     * results to view.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Filter results to objects whose names begin with this prefix.
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * Set of properties to return. Defaults to noAcl.
     */
-  var projection: js.UndefOr[String] = js.native
+  var projection: js.UndefOr[String] = js.undefined
   
   /**
     * If true, lists all versions of a file as distinct results.
     */
-  var versions: js.UndefOr[Boolean] = js.native
+  var versions: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourceObjectsList {
   

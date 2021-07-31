@@ -2,24 +2,22 @@ package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about vulnerable or missing HTTP Headers.
   */
-@js.native
 trait SchemaVulnerableHeaders extends StObject {
   
   /**
     * List of vulnerable headers.
     */
-  var headers: js.UndefOr[js.Array[SchemaHeader]] = js.native
+  var headers: js.UndefOr[js.Array[SchemaHeader]] = js.undefined
   
   /**
     * List of missing headers.
     */
-  var missingHeaders: js.UndefOr[js.Array[SchemaHeader]] = js.native
+  var missingHeaders: js.UndefOr[js.Array[SchemaHeader]] = js.undefined
 }
 object SchemaVulnerableHeaders {
   

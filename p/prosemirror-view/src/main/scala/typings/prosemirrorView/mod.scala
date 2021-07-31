@@ -48,10 +48,13 @@ import typings.std.UIEvent
 import typings.std.WheelEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("prosemirror-view", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("prosemirror-view", "Decoration")
   @js.native
@@ -77,17 +80,28 @@ object mod {
   /* static members */
   object Decoration {
     
+    @JSImport("prosemirror-view", "Decoration")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Creates an inline decoration, which adds the given attributes to
+      * each inline node between `from` and `to`.
+      */
+    @scala.inline
+    def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T & InlineDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & InlineDecorationSpec]]
+    @scala.inline
+    def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T & InlineDecorationSpec): Decoration[T & InlineDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("inline")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & InlineDecorationSpec]]
+    
     /**
       * Creates a node decoration. `from` and `to` should point precisely
       * before and after a node in the document. That node, and only that
       * node, will receive the given attributes.
       */
-    @JSImport("prosemirror-view", "Decoration.node")
-    @js.native
-    def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T] = js.native
-    @JSImport("prosemirror-view", "Decoration.node")
-    @js.native
-    def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T): Decoration[T] = js.native
+    @scala.inline
+    def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[Decoration[T]]
+    @scala.inline
+    def node[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T): Decoration[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("node")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T]]
     
     /**
       * Creates a widget decoration, which is a DOM node that's shown in
@@ -97,48 +111,36 @@ object mod {
       * also directly pass a DOM node. getPos can be used to find the
       * widget's current document position.
       */
-    @JSImport("prosemirror-view", "Decoration.widget")
-    @js.native
+    @scala.inline
     def widget[T /* <: js.Object */](
       pos: Double,
-      toDOM: js.Function2[/* view */ EditorView[_], /* getPos */ js.Function0[Double], Node]
-    ): Decoration[T with WidgetDecorationSpec] = js.native
-    @JSImport("prosemirror-view", "Decoration.widget")
-    @js.native
+      toDOM: js.Function2[/* view */ EditorView[js.Any], /* getPos */ js.Function0[Double], Node]
+    ): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
+    @scala.inline
     def widget[T /* <: js.Object */](
       pos: Double,
-      toDOM: js.Function2[/* view */ EditorView[_], /* getPos */ js.Function0[Double], Node],
-      spec: T with WidgetDecorationSpec
-    ): Decoration[T with WidgetDecorationSpec] = js.native
-    @JSImport("prosemirror-view", "Decoration.widget")
-    @js.native
-    def widget[T /* <: js.Object */](pos: Double, toDOM: Node): Decoration[T with WidgetDecorationSpec] = js.native
-    @JSImport("prosemirror-view", "Decoration.widget")
-    @js.native
-    def widget[T /* <: js.Object */](pos: Double, toDOM: Node, spec: T with WidgetDecorationSpec): Decoration[T with WidgetDecorationSpec] = js.native
-    
-    /**
-      * Creates an inline decoration, which adds the given attributes to
-      * each inline node between `from` and `to`.
-      */
-    @JSImport("prosemirror-view", "Decoration.inline")
-    @js.native
-    def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs): Decoration[T with InlineDecorationSpec] = js.native
-    @JSImport("prosemirror-view", "Decoration.inline")
-    @js.native
-    def `inline`[T /* <: js.Object */](from: Double, to: Double, attrs: DecorationAttrs, spec: T with InlineDecorationSpec): Decoration[T with InlineDecorationSpec] = js.native
+      toDOM: js.Function2[/* view */ EditorView[js.Any], /* getPos */ js.Function0[Double], Node],
+      spec: T & WidgetDecorationSpec
+    ): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
+    @scala.inline
+    def widget[T /* <: js.Object */](pos: Double, toDOM: Node): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
+    @scala.inline
+    def widget[T /* <: js.Object */](pos: Double, toDOM: Node, spec: T & WidgetDecorationSpec): Decoration[T & WidgetDecorationSpec] = (^.asInstanceOf[js.Dynamic].applyDynamic("widget")(pos.asInstanceOf[js.Any], toDOM.asInstanceOf[js.Any], spec.asInstanceOf[js.Any])).asInstanceOf[Decoration[T & WidgetDecorationSpec]]
   }
   
   @JSImport("prosemirror-view", "DecorationSet")
   @js.native
-  class DecorationSet[S /* <: Schema[_, _] */] () extends StObject {
+  class DecorationSet[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
     
     /**
       * Add the given array of decorations to the ones in the set,
       * producing a new set. Needs access to the current document to
       * create the appropriate tree structure.
       */
-    def add(doc: typings.prosemirrorModel.mod.Node[S], decorations: js.Array[Decoration[StringDictionary[_]]]): DecorationSet[S] = js.native
+    def add(
+      doc: typings.prosemirrorModel.mod.Node[S],
+      decorations: js.Array[Decoration[StringDictionary[js.Any]]]
+    ): DecorationSet[S] = js.native
     
     /**
       * Find all decorations in this set which touch the given range
@@ -148,26 +150,14 @@ object mod {
       * considered. When `predicate` isn't given, all decorations are
       * assumed to match.
       */
-    def find(): js.Array[Decoration[StringDictionary[_]]] = js.native
-    def find(
-      start: js.UndefOr[scala.Nothing],
-      end: js.UndefOr[scala.Nothing],
-      predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]
-    ): js.Array[Decoration[StringDictionary[_]]] = js.native
-    def find(start: js.UndefOr[scala.Nothing], end: Double): js.Array[Decoration[StringDictionary[_]]] = js.native
-    def find(
-      start: js.UndefOr[scala.Nothing],
-      end: Double,
-      predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]
-    ): js.Array[Decoration[StringDictionary[_]]] = js.native
-    def find(start: Double): js.Array[Decoration[StringDictionary[_]]] = js.native
-    def find(
-      start: Double,
-      end: js.UndefOr[scala.Nothing],
-      predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]
-    ): js.Array[Decoration[StringDictionary[_]]] = js.native
-    def find(start: Double, end: Double): js.Array[Decoration[StringDictionary[_]]] = js.native
-    def find(start: Double, end: Double, predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]): js.Array[Decoration[StringDictionary[_]]] = js.native
+    def find(): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
+    def find(start: Double): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
+    def find(start: Double, end: Double): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
+    def find(start: Double, end: Double, predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
+    def find(start: Double, end: Unit, predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
+    def find(start: Unit, end: Double): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
+    def find(start: Unit, end: Double, predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
+    def find(start: Unit, end: Unit, predicate: js.Function1[/* spec */ StringDictionary[js.Any], Boolean]): js.Array[Decoration[StringDictionary[js.Any]]] = js.native
     
     /**
       * Map the set of decorations in response to a change in the
@@ -180,7 +170,7 @@ object mod {
       * Create a new set that contains the decorations in this set, minus
       * the ones in the given array.
       */
-    def remove(decorations: js.Array[Decoration[StringDictionary[_]]]): DecorationSet[S] = js.native
+    def remove(decorations: js.Array[Decoration[StringDictionary[js.Any]]]): DecorationSet[S] = js.native
   }
   /* static members */
   object DecorationSet {
@@ -193,9 +183,11 @@ object mod {
       * Create a set of decorations, using the structure of the given
       * document.
       */
-    @JSImport("prosemirror-view", "DecorationSet.create")
-    @js.native
-    def create[S /* <: Schema[_, _] */](doc: typings.prosemirrorModel.mod.Node[S], decorations: js.Array[Decoration[StringDictionary[_]]]): DecorationSet[S] = js.native
+    @scala.inline
+    def create[S /* <: Schema[js.Any, js.Any] */](
+      doc: typings.prosemirrorModel.mod.Node[S],
+      decorations: js.Array[Decoration[StringDictionary[js.Any]]]
+    ): DecorationSet[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(doc.asInstanceOf[js.Any], decorations.asInstanceOf[js.Any])).asInstanceOf[DecorationSet[S]]
     
     /**
       * The empty set of decorations.
@@ -209,9 +201,9 @@ object mod {
   
   @JSImport("prosemirror-view", "EditorView")
   @js.native
-  class EditorView[S /* <: Schema[_, _] */] protected () extends StObject {
-    def this(place: js.UndefOr[scala.Nothing], props: DirectEditorProps[S]) = this()
+  class EditorView[S /* <: Schema[js.Any, js.Any] */] protected () extends StObject {
     def this(place: js.Function1[/* p */ Node, Unit], props: DirectEditorProps[S]) = this()
+    def this(place: Unit, props: DirectEditorProps[S]) = this()
     def this(place: Mount, props: DirectEditorProps[S]) = this()
     /**
       * Create a view. `place` may be a DOM node that the editor should
@@ -408,7 +400,7 @@ object mod {
       * directly).
       */
     def someProp(propName: String): js.Any = js.native
-    def someProp(propName: String, f: js.Function1[/* prop */ js.Any, _]): js.Any = js.native
+    def someProp(propName: String, f: js.Function1[/* prop */ js.Any, js.Any]): js.Any = js.native
     
     /**
       * The view's current [state](#state.EditorState).
@@ -430,24 +422,20 @@ object mod {
     ): Unit = js.native
   }
   
-  @JSImport("prosemirror-view", "__endComposition")
-  @js.native
-  def endComposition(view: EditorView[_]): Boolean = js.native
-  @JSImport("prosemirror-view", "__endComposition")
-  @js.native
-  def endComposition(view: EditorView[_], forceUpdate: Boolean): Boolean = js.native
+  @scala.inline
+  def endComposition(view: EditorView[js.Any]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("__endComposition")(view.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def endComposition(view: EditorView[js.Any], forceUpdate: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("__endComposition")(view.asInstanceOf[js.Any], forceUpdate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("prosemirror-view", "__parseFromClipboard")
-  @js.native
-  def parseFromClipboard[S /* <: Schema[_, _] */](view: EditorView[S], text: String, html: String, plainText: Boolean, $context: ResolvedPos[S]): Slice[S] = js.native
+  @scala.inline
+  def parseFromClipboard[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], text: String, html: String, plainText: Boolean, $context: ResolvedPos[S]): Slice[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("__parseFromClipboard")(view.asInstanceOf[js.Any], text.asInstanceOf[js.Any], html.asInstanceOf[js.Any], plainText.asInstanceOf[js.Any], $context.asInstanceOf[js.Any])).asInstanceOf[Slice[S]]
   
-  @JSImport("prosemirror-view", "__serializeForClipboard")
-  @js.native
-  def serializeForClipboard[S /* <: Schema[_, _] */](view: EditorView[S], slice: Slice[S]): Dom = js.native
+  @scala.inline
+  def serializeForClipboard[S /* <: Schema[js.Any, js.Any] */](view: EditorView[S], slice: Slice[S]): Dom = (^.asInstanceOf[js.Dynamic].applyDynamic("__serializeForClipboard")(view.asInstanceOf[js.Any], slice.asInstanceOf[js.Any])).asInstanceOf[Dom]
   
-  @js.native
   trait DecorationAttrs
-    extends /**
+    extends StObject
+       with /**
     * Specify additional attrs that will be mapped directly to the
     * target node's DOM attributes.
     */
@@ -457,18 +445,18 @@ object mod {
       * A CSS class name or a space-separated set of class names to be
       * _added_ to the classes that the node already had.
       */
-    var `class`: js.UndefOr[String | Null] = js.native
+    var `class`: js.UndefOr[String | Null] = js.undefined
     
     /**
       * When non-null, the target node is wrapped in a DOM element of
       * this type (and the other attributes are applied to this element).
       */
-    var nodeName: js.UndefOr[String | Null] = js.native
+    var nodeName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * A string of CSS to be _added_ to the node's existing `style` property.
       */
-    var style: js.UndefOr[String | Null] = js.native
+    var style: js.UndefOr[String | Null] = js.undefined
   }
   object DecorationAttrs {
     
@@ -510,9 +498,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait DirectEditorProps[S /* <: Schema[_, _] */]
-    extends EditorProps[js.Any, S] {
+  trait DirectEditorProps[S /* <: Schema[js.Any, js.Any] */]
+    extends StObject
+       with EditorProps[js.Any, S] {
     
     /**
       * The callback over which to send transactions (state updates)
@@ -529,17 +517,17 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Transaction<S> */ /* tr */ js.Any, 
           Unit
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The current state of the editor.
       */
-    var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any = js.native
+    var state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
   }
   object DirectEditorProps {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](
+    def apply[S /* <: Schema[js.Any, js.Any] */](
       state: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ js.Any
     ): DirectEditorProps[S] = {
       val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any])
@@ -547,7 +535,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class DirectEditorPropsMutableBuilder[Self <: DirectEditorProps[_], S /* <: Schema[_, _] */] (val x: Self with DirectEditorProps[S]) extends AnyVal {
+    implicit class DirectEditorPropsMutableBuilder[Self <: DirectEditorProps[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & DirectEditorProps[S]) extends AnyVal {
       
       @scala.inline
       def setDispatchTransaction(
@@ -571,8 +559,7 @@ object mod {
     }
   }
   
-  @js.native
-  trait EditorProps[ThisT, S /* <: Schema[_, _] */] extends StObject {
+  trait EditorProps[ThisT, S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
     /**
       * Control the DOM attributes of the editable element. May be either
@@ -590,14 +577,14 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* p */ js.Any, 
           js.UndefOr[StringDictionary[String] | Null | Unit]
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The [parser](#model.DOMParser) to use when reading content from
       * the clipboard. When not given, the value of the
       * [`domParser`](#view.EditorProps.domParser) prop is used.
       */
-    var clipboardParser: js.UndefOr[DOMParser[S] | Null] = js.native
+    var clipboardParser: js.UndefOr[DOMParser[S] | Null] = js.undefined
     
     /**
       * The DOM serializer to use when putting content onto the
@@ -605,7 +592,7 @@ object mod {
       * [`DOMSerializer.fromSchema`](#model.DOMSerializer^fromSchema)
       * will be used.
       */
-    var clipboardSerializer: js.UndefOr[DOMSerializer[S] | Null] = js.native
+    var clipboardSerializer: js.UndefOr[DOMSerializer[S] | Null] = js.undefined
     
     /**
       * A function to parse text from the clipboard into a document
@@ -625,7 +612,7 @@ object mod {
           /* plain */ Boolean, 
           Slice[S]
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function that will be called to get the text for the current
@@ -633,7 +620,7 @@ object mod {
       * editor will use [`textBetween`](#model.Node.textBetween) on the
       * selected range.
       */
-    var clipboardTextSerializer: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], String]) | Null] = js.native
+    var clipboardTextSerializer: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], String]) | Null] = js.undefined
     
     /**
       * Can be used to override the way a selection is created when
@@ -647,7 +634,7 @@ object mod {
           /* head */ ResolvedPos[S], 
           js.UndefOr[Selection | Null]
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A set of [document decorations](#view.Decoration) to show in the
@@ -659,7 +646,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
           js.UndefOr[DecorationSet[S] | Null]
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The [parser](#model.DOMParser) to use when reading editor changes
@@ -667,7 +654,7 @@ object mod {
       * [`DOMParser.fromSchema`](#model.DOMParser^fromSchema) on the
       * editor's schema.
       */
-    var domParser: js.UndefOr[DOMParser[S] | Null] = js.native
+    var domParser: js.UndefOr[DOMParser[S] | Null] = js.undefined
     
     /**
       * When this returns false, the content of the view is not directly
@@ -679,7 +666,7 @@ object mod {
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify EditorState<S> */ /* state */ js.Any, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the editor is clicked, after `handleClickOn` handlers
@@ -693,7 +680,7 @@ object mod {
           /* event */ MouseEvent, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called for each node around a click, from the inside out. The
@@ -710,7 +697,7 @@ object mod {
           /* direct */ Boolean, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Can be an object mapping DOM event type names to functions that
@@ -721,7 +708,7 @@ object mod {
       * `preventDefault` yourself (or not, if you want to allow the
       * default behavior).
       */
-    var handleDOMEvents: js.UndefOr[(HandleDOMEventsProp[ThisT, S]) | Null] = js.native
+    var handleDOMEvents: js.UndefOr[(HandleDOMEventsProp[ThisT, S]) | Null] = js.undefined
     
     /**
       * Called when the editor is double-clicked, after `handleDoubleClickOn`.
@@ -734,7 +721,7 @@ object mod {
           /* event */ MouseEvent, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called for each node around a double click.
@@ -750,7 +737,7 @@ object mod {
           /* direct */ Boolean, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when something is dropped on the editor. `moved` will be
@@ -766,21 +753,21 @@ object mod {
           /* moved */ Boolean, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the editor receives a `keydown` event.
       */
     var handleKeyDown: js.UndefOr[
         (js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Handler for `keypress` events.
       */
     var handleKeyPress: js.UndefOr[
         (js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Can be used to override the behavior of pasting. `slice` is the
@@ -795,7 +782,7 @@ object mod {
           /* slice */ Slice[S], 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the view, after updating its state, tries to scroll
@@ -803,7 +790,7 @@ object mod {
       * indicate that it did not handle the scrolling and further
       * handlers or the default behavior should be tried.
       */
-    var handleScrollToSelection: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* view */ EditorView[S], Boolean]) | Null] = js.native
+    var handleScrollToSelection: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* view */ EditorView[S], Boolean]) | Null] = js.undefined
     
     /**
       * Whenever the user directly input text, this handler is called
@@ -819,7 +806,7 @@ object mod {
           /* text */ String, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the editor is triple-clicked, after `handleTripleClickOn`.
@@ -832,7 +819,7 @@ object mod {
           /* event */ MouseEvent, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called for each node around a triple click.
@@ -848,7 +835,7 @@ object mod {
           /* direct */ Boolean, 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Allows you to pass custom rendering and behavior logic for nodes
@@ -872,36 +859,36 @@ object mod {
             /* node */ typings.prosemirrorModel.mod.Node[S], 
             /* view */ EditorView[S], 
             /* getPos */ js.Function0[Double] | Boolean, 
-            /* decorations */ js.Array[Decoration[StringDictionary[_]]], 
+            /* decorations */ js.Array[Decoration[StringDictionary[js.Any]]], 
             NodeView[S]
           ]
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Determines the extra space (in pixels) that is left above or
       * below the cursor when it is scrolled into view. Defaults to 5.
       */
-    var scrollMargin: js.UndefOr[Double | Right | Null] = js.native
+    var scrollMargin: js.UndefOr[Double | Right | Null] = js.undefined
     
     /**
       * Determines the distance (in pixels) between the cursor and the
       * end of the visible viewport at which point, when scrolling the
       * cursor into view, scrolling takes place. Defaults to 0.
       */
-    var scrollThreshold: js.UndefOr[Double | Right | Null] = js.native
+    var scrollThreshold: js.UndefOr[Double | Right | Null] = js.undefined
     
     /**
       * Can be used to transform pasted content before it is applied to
       * the document.
       */
-    var transformPasted: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], Slice[S]]) | Null] = js.native
+    var transformPasted: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* p */ Slice[S], Slice[S]]) | Null] = js.undefined
     
     /**
       * Can be used to transform pasted HTML text, _before_ it is parsed,
       * for example to clean it up.
       */
-    var transformPastedHTML: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* html */ String, String]) | Null] = js.native
+    var transformPastedHTML: js.UndefOr[(js.ThisFunction1[/* this */ ThisT, /* html */ String, String]) | Null] = js.undefined
     
     /**
       * Transform pasted plain text. The `plain` flag will be true when
@@ -909,18 +896,18 @@ object mod {
       */
     var transformPastedText: js.UndefOr[
         (js.ThisFunction2[/* this */ ThisT, /* text */ String, /* plain */ Boolean, String]) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object EditorProps {
     
     @scala.inline
-    def apply[ThisT, S /* <: Schema[_, _] */](): EditorProps[ThisT, S] = {
+    def apply[ThisT, S /* <: Schema[js.Any, js.Any] */](): EditorProps[ThisT, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[EditorProps[ThisT, S]]
     }
     
     @scala.inline
-    implicit class EditorPropsMutableBuilder[Self <: EditorProps[_, _], ThisT, S /* <: Schema[_, _] */] (val x: Self with (EditorProps[ThisT, S])) extends AnyVal {
+    implicit class EditorPropsMutableBuilder[Self <: EditorProps[?, ?], ThisT, S /* <: Schema[js.Any, js.Any] */] (val x: Self & (EditorProps[ThisT, S])) extends AnyVal {
       
       @scala.inline
       def setAttributes(
@@ -1248,7 +1235,7 @@ object mod {
                 /* node */ typings.prosemirrorModel.mod.Node[S], 
                 /* view */ EditorView[S], 
                 /* getPos */ js.Function0[Double] | Boolean, 
-                /* decorations */ js.Array[Decoration[StringDictionary[_]]], 
+                /* decorations */ js.Array[Decoration[StringDictionary[js.Any]]], 
                 NodeView[S]
               ]
             ]
@@ -1308,279 +1295,279 @@ object mod {
   }
   
   /* Inlined std.Partial<{[ K in keyof std.DocumentEventMap ]: (this : ThisT, view : prosemirror-view.prosemirror-view.EditorView<S>, event : std.DocumentEventMap[K]): boolean}> & {[key: string] : (this : ThisT, view : prosemirror-view.prosemirror-view.EditorView<S>, event : any): boolean} */
-  @js.native
-  trait HandleDOMEventsProp[ThisT, S /* <: Schema[_, _] */]
-    extends /* key */ StringDictionary[
+  trait HandleDOMEventsProp[ThisT, S /* <: Schema[js.Any, js.Any] */]
+    extends StObject
+       with /* key */ StringDictionary[
           js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ js.Any, Boolean]
         ] {
     
     var abort: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ UIEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var animationcancel: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var animationend: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var animationiteration: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var animationstart: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ AnimationEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var auxclick: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var blur: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var cancel: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var canplay: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var canplaythrough: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var change: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var click: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var close: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var contextmenu: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var copy: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ClipboardEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var cuechange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var cut: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ClipboardEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var dblclick: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var drag: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var dragend: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var dragenter: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var dragexit: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var dragleave: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var dragover: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var dragstart: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var drop: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ DragEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var durationchange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var emptied: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var ended: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var error: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ErrorEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var focus: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var focusin: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var focusout: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ FocusEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var fullscreenchange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var fullscreenerror: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var gotpointercapture: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var input: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var invalid: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var keydown: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var keypress: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var keyup: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ KeyboardEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var load: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var loadeddata: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var loadedmetadata: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var loadstart: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var lostpointercapture: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var mousedown: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var mouseenter: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var mouseleave: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var mousemove: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var mouseout: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var mouseover: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var mouseup: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ MouseEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var paste: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ ClipboardEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pause: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var play: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var playing: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointercancel: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerdown: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerenter: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerleave: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerlockchange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerlockerror: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointermove: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerout: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerover: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var pointerup: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ PointerEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var progress: js.UndefOr[
         js.ThisFunction2[
@@ -1589,27 +1576,27 @@ object mod {
           /* event */ ProgressEvent[EventTarget], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ratechange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var readystatechange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var reset: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var resize: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ UIEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var scroll: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var securitypolicyviolation: js.UndefOr[
         js.ThisFunction2[
@@ -1618,106 +1605,106 @@ object mod {
           /* event */ SecurityPolicyViolationEvent, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     var seeked: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var seeking: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var select: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var selectionchange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var selectstart: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var stalled: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var submit: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var suspend: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var timeupdate: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var toggle: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var touchcancel: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var touchend: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var touchmove: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var touchstart: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TouchEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var transitioncancel: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var transitionend: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var transitionrun: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var transitionstart: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ TransitionEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var visibilitychange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var volumechange: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var waiting: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ Event, Boolean]
-      ] = js.native
+      ] = js.undefined
     
     var wheel: js.UndefOr[
         js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ WheelEvent, Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object HandleDOMEventsProp {
     
     @scala.inline
-    def apply[ThisT, S /* <: Schema[_, _] */](): HandleDOMEventsProp[ThisT, S] = {
+    def apply[ThisT, S /* <: Schema[js.Any, js.Any] */](): HandleDOMEventsProp[ThisT, S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[HandleDOMEventsProp[ThisT, S]]
     }
     
     @scala.inline
-    implicit class HandleDOMEventsPropMutableBuilder[Self <: HandleDOMEventsProp[_, _], ThisT, S /* <: Schema[_, _] */] (val x: Self with (HandleDOMEventsProp[ThisT, S])) extends AnyVal {
+    implicit class HandleDOMEventsPropMutableBuilder[Self <: HandleDOMEventsProp[?, ?], ThisT, S /* <: Schema[js.Any, js.Any] */] (val x: Self & (HandleDOMEventsProp[ThisT, S])) extends AnyVal {
       
       @scala.inline
       def setAbort(value: js.ThisFunction2[/* this */ ThisT, /* view */ EditorView[S], /* event */ UIEvent, Boolean]): Self = StObject.set(x, "abort", value.asInstanceOf[js.Any])
@@ -2415,13 +2402,12 @@ object mod {
     }
   }
   
-  @js.native
   trait InlineDecorationSpec extends StObject {
     
     /**
       * Determines how the right side of the decoration is mapped.
       */
-    var inclusiveEnd: js.UndefOr[Boolean | Null] = js.native
+    var inclusiveEnd: js.UndefOr[Boolean | Null] = js.undefined
     
     /**
       * Determines how the left side of the decoration is
@@ -2430,7 +2416,7 @@ object mod {
       * won't include the new content, but you can set this to `true`
       * to make it inclusive.
       */
-    var inclusiveStart: js.UndefOr[Boolean | Null] = js.native
+    var inclusiveStart: js.UndefOr[Boolean | Null] = js.undefined
   }
   object InlineDecorationSpec {
     
@@ -2463,8 +2449,7 @@ object mod {
     }
   }
   
-  @js.native
-  trait NodeView[S /* <: Schema[_, _] */] extends StObject {
+  trait NodeView[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
     /**
       * The DOM node that should hold the node's content. Only meaningful
@@ -2474,25 +2459,25 @@ object mod {
       * is not present, the node view itself is responsible for rendering
       * (or deciding not to render) its child nodes.
       */
-    var contentDOM: js.UndefOr[Node | Null] = js.native
+    var contentDOM: js.UndefOr[Node | Null] = js.undefined
     
     /**
       * When defining a `selectNode` method, you should also provide a
       * `deselectNode` method to remove the effect again.
       */
-    var deselectNode: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var deselectNode: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
     /**
       * Called when the node view is removed from the editor or the whole
       * editor is destroyed.
       */
-    var destroy: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
     /**
       * The outer DOM node that represents the document node. When not
       * given, the default strategy is used to create a DOM node.
       */
-    var dom: js.UndefOr[Node | Null] = js.native
+    var dom: js.UndefOr[Node | Null] = js.undefined
     
     /**
       * Called when a DOM
@@ -2504,13 +2489,13 @@ object mod {
       * re-parse the range around the mutation, true if it can safely be
       * ignored.
       */
-    var ignoreMutation: js.UndefOr[(js.Function1[/* p */ MutationRecord | Target, Boolean]) | Null] = js.native
+    var ignoreMutation: js.UndefOr[(js.Function1[/* p */ MutationRecord | Target, Boolean]) | Null] = js.undefined
     
     /**
       * Can be used to override the way the node's selected status (as a
       * node selection) is displayed.
       */
-    var selectNode: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var selectNode: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
     /**
       * This will be called to handle setting the selection inside the
@@ -2521,14 +2506,14 @@ object mod {
       */
     var setSelection: js.UndefOr[
         (js.Function3[/* anchor */ Double, /* head */ Double, /* root */ Document, Unit]) | Null
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Can be used to prevent the editor view from trying to handle some
       * or all DOM events that bubble up from the node view. Events for
       * which this returns true are not handled by the editor.
       */
-    var stopEvent: js.UndefOr[(js.Function1[/* event */ Event, Boolean]) | Null] = js.native
+    var stopEvent: js.UndefOr[(js.Function1[/* event */ Event, Boolean]) | Null] = js.undefined
     
     /**
       * When given, this will be called when the view is updating itself.
@@ -2543,21 +2528,21 @@ object mod {
     var update: js.UndefOr[
         (js.Function2[
           /* node */ typings.prosemirrorModel.mod.Node[S], 
-          /* decorations */ js.Array[Decoration[StringDictionary[_]]], 
+          /* decorations */ js.Array[Decoration[StringDictionary[js.Any]]], 
           Boolean
         ]) | Null
-      ] = js.native
+      ] = js.undefined
   }
   object NodeView {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](): NodeView[S] = {
+    def apply[S /* <: Schema[js.Any, js.Any] */](): NodeView[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[NodeView[S]]
     }
     
     @scala.inline
-    implicit class NodeViewMutableBuilder[Self <: NodeView[_], S /* <: Schema[_, _] */] (val x: Self with NodeView[S]) extends AnyVal {
+    implicit class NodeViewMutableBuilder[Self <: NodeView[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & NodeView[S]) extends AnyVal {
       
       @scala.inline
       def setContentDOM(value: Node): Self = StObject.set(x, "contentDOM", value.asInstanceOf[js.Any])
@@ -2633,7 +2618,7 @@ object mod {
       
       @scala.inline
       def setUpdate(
-        value: (/* node */ typings.prosemirrorModel.mod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[_]]]) => Boolean
+        value: (/* node */ typings.prosemirrorModel.mod.Node[S], /* decorations */ js.Array[Decoration[StringDictionary[js.Any]]]) => Boolean
       ): Self = StObject.set(x, "update", js.Any.fromFunction2(value))
       
       @scala.inline
@@ -2644,7 +2629,6 @@ object mod {
     }
   }
   
-  @js.native
   trait WidgetDecorationSpec extends StObject {
     
     /**
@@ -2658,12 +2642,12 @@ object mod {
       * the behavior of some event handler, they should get
       * different keys.
       */
-    var key: js.UndefOr[String | Null] = js.native
+    var key: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The precise set of marks to draw around the widget.
       */
-    var marks: js.UndefOr[js.Array[Mark[_]] | Null] = js.native
+    var marks: js.UndefOr[js.Array[Mark[js.Any]] | Null] = js.undefined
     
     /**
       * Controls which side of the document position this widget is
@@ -2682,13 +2666,13 @@ object mod {
       * the widget is wrapped in—those of the node before when
       * negative, those of the node after when positive.
       */
-    var side: js.UndefOr[Double | Null] = js.native
+    var side: js.UndefOr[Double | Null] = js.undefined
     
     /**
       * Can be used to control which DOM events, when they bubble out
       * of this widget, the editor view should ignore.
       */
-    var stopEvent: js.UndefOr[(js.Function1[/* event */ Event, Boolean]) | Null] = js.native
+    var stopEvent: js.UndefOr[(js.Function1[/* event */ Event, Boolean]) | Null] = js.undefined
   }
   object WidgetDecorationSpec {
     
@@ -2711,7 +2695,7 @@ object mod {
       def setKeyUndefined: Self = StObject.set(x, "key", js.undefined)
       
       @scala.inline
-      def setMarks(value: js.Array[Mark[_]]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
+      def setMarks(value: js.Array[Mark[js.Any]]): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarksNull: Self = StObject.set(x, "marks", null)

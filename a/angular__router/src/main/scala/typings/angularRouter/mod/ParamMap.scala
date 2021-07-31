@@ -2,10 +2,8 @@ package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamMap extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ParamMap extends StObject {
     * or the first value if the parameter has multiple values,
     * or `null` when there is no such parameter.
     */
-  def get(name: String): String | Null = js.native
+  def get(name: String): String | Null
   
   /**
     * Retrieves multiple values for a parameter.
@@ -24,17 +22,17 @@ trait ParamMap extends StObject {
     * or an empty array if there is no such parameter.
     *
     */
-  def getAll(name: String): js.Array[String] = js.native
+  def getAll(name: String): js.Array[String]
   
   /**
     * Reports whether the map contains a given parameter.
     * @param name The parameter name.
     * @returns True if the map contains the given parameter, false otherwise.
     */
-  def has(name: String): Boolean = js.native
+  def has(name: String): Boolean
   
   /** Names of the parameters in the map. */
-  val keys: js.Array[String] = js.native
+  val keys: js.Array[String]
 }
 object ParamMap {
   

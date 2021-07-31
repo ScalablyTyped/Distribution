@@ -3,13 +3,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines a job to be run by the Cloud Dataflow service.
   */
-@js.native
 trait SchemaJob extends StObject {
   
   /**
@@ -21,19 +19,19 @@ trait SchemaJob extends StObject {
     * retried attempts to create a job. By default, the field is empty and, in
     * that case, the service ignores it.
     */
-  var clientRequestId: js.UndefOr[String] = js.native
+  var clientRequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp when the job was initially created. Immutable and set by
     * the Cloud Dataflow service.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * If this is specified, the job&#39;s initial state is populated from the
     * given snapshot.
     */
-  var createdFromSnapshotId: js.UndefOr[String] = js.native
+  var createdFromSnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the job.  Jobs are created in the
@@ -43,36 +41,36 @@ trait SchemaJob extends StObject {
     * made.  This field may be mutated by the Cloud Dataflow service; callers
     * cannot mutate it.
     */
-  var currentState: js.UndefOr[String] = js.native
+  var currentState: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp associated with the current state.
     */
-  var currentStateTime: js.UndefOr[String] = js.native
+  var currentStateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The environment for the job.
     */
-  var environment: js.UndefOr[SchemaEnvironment] = js.native
+  var environment: js.UndefOr[SchemaEnvironment] = js.undefined
   
   /**
     * Deprecated.
     */
-  var executionInfo: js.UndefOr[SchemaJobExecutionInfo] = js.native
+  var executionInfo: js.UndefOr[SchemaJobExecutionInfo] = js.undefined
   
   /**
     * The unique ID of this job.  This field is set by the Cloud Dataflow
     * service when the Job is created, and is immutable for the life of the
     * job.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * This field is populated by the Dataflow service to support filtering jobs
     * by the metadata values provided here. Populated for ListJobs and all
     * GetJob views SUMMARY and higher.
     */
-  var jobMetadata: js.UndefOr[SchemaJobMetadata] = js.native
+  var jobMetadata: js.UndefOr[SchemaJobMetadata] = js.undefined
   
   /**
     * User-defined labels for this job.  The labels map can contain no more
@@ -82,14 +80,14 @@ trait SchemaJob extends StObject {
     * [\p{Ll}\p{Lo}\p{N}_-]{0,63} * Both keys and values are additionally
     * constrained to be &lt;= 128 bytes in size.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The [regional endpoint]
     * (https://cloud.google.com/dataflow/docs/concepts/regional-endpoints) that
     * contains this job.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The user-specified Cloud Dataflow job name.  Only one Job with a given
@@ -98,7 +96,7 @@ trait SchemaJob extends StObject {
     * returns the existing Job.  The name must match the regular expression
     * `[a-z]([-a-z0-9]{0,38}[a-z0-9])?`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Preliminary field: The format of this data may change at any time. A
@@ -106,12 +104,12 @@ trait SchemaJob extends StObject {
     * Created by Cloud Dataflow service.  Only retrieved with
     * JOB_VIEW_DESCRIPTION or JOB_VIEW_ALL.
     */
-  var pipelineDescription: js.UndefOr[SchemaPipelineDescription] = js.native
+  var pipelineDescription: js.UndefOr[SchemaPipelineDescription] = js.undefined
   
   /**
     * The ID of the Cloud Platform project that the job belongs to.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * If this job is an update of an existing job, this field is the job ID of
@@ -119,13 +117,13 @@ trait SchemaJob extends StObject {
     * job by specifying it here. The job named here is stopped, and its
     * intermediate state is transferred to this job.
     */
-  var replaceJobId: js.UndefOr[String] = js.native
+  var replaceJobId: js.UndefOr[String] = js.undefined
   
   /**
     * If another job is an update of this job (and thus, this job is in
     * `JOB_STATE_UPDATED`), this field contains the ID of that job.
     */
-  var replacedByJobId: js.UndefOr[String] = js.native
+  var replacedByJobId: js.UndefOr[String] = js.undefined
   
   /**
     * The job&#39;s requested state.  `UpdateJob` may be used to switch between
@@ -135,13 +133,13 @@ trait SchemaJob extends StObject {
     * irrevocably terminating the job if it has not already reached a terminal
     * state.
     */
-  var requestedState: js.UndefOr[String] = js.native
+  var requestedState: js.UndefOr[String] = js.undefined
   
   /**
     * This field may be mutated by the Cloud Dataflow service; callers cannot
     * mutate it.
     */
-  var stageStates: js.UndefOr[js.Array[SchemaExecutionStageState]] = js.native
+  var stageStates: js.UndefOr[js.Array[SchemaExecutionStageState]] = js.undefined
   
   /**
     * The timestamp when the job was started (transitioned to
@@ -151,18 +149,18 @@ trait SchemaJob extends StObject {
     * jobs, start_time always equals to create_time and is immutable and set by
     * the Cloud Dataflow service.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Exactly one of step or steps_location should be specified.  The top-level
     * steps that constitute the entire job.
     */
-  var steps: js.UndefOr[js.Array[SchemaStep]] = js.native
+  var steps: js.UndefOr[js.Array[SchemaStep]] = js.undefined
   
   /**
     * The GCS location where the steps are stored.
     */
-  var stepsLocation: js.UndefOr[String] = js.native
+  var stepsLocation: js.UndefOr[String] = js.undefined
   
   /**
     * A set of files the system should be aware of that are used for temporary
@@ -172,18 +170,18 @@ trait SchemaJob extends StObject {
     * storage.googleapis.com/{bucket}/{object}
     * bucket.storage.googleapis.com/{object}
     */
-  var tempFiles: js.UndefOr[js.Array[String]] = js.native
+  var tempFiles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The map of transform name prefixes of the job to be replaced to the
     * corresponding name prefixes of the new job.
     */
-  var transformNameMapping: js.UndefOr[StringDictionary[String]] = js.native
+  var transformNameMapping: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The type of Cloud Dataflow job.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaJob {
   

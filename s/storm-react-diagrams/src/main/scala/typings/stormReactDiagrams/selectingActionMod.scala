@@ -5,7 +5,6 @@ import typings.stormReactDiagrams.baseActionMod.BaseAction
 import typings.stormReactDiagrams.diagramModelMod.DiagramModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectingActionMod {

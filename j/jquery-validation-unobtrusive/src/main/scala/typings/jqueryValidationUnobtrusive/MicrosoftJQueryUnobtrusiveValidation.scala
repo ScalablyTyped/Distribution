@@ -7,19 +7,17 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object MicrosoftJQueryUnobtrusiveValidation {
   
-  @js.native
   trait Adapter extends StObject {
     
-    var adapt: js.Function = js.native
+    var adapt: js.Function
     
-    var name: String = js.native
+    var name: String
     
-    var params: js.Array[String] = js.native
+    var params: js.Array[String]
   }
   object Adapter {
     
@@ -47,7 +45,9 @@ object MicrosoftJQueryUnobtrusiveValidation {
   }
   
   @js.native
-  trait Adapters extends Array[Adapter] {
+  trait Adapters
+    extends StObject
+       with Array[Adapter] {
     
     def add(adapterName: String, fn: js.Function): Adapters = js.native
     def add(adapterName: String, params: js.Array[String], fn: js.Function): Adapters = js.native
@@ -57,18 +57,10 @@ object MicrosoftJQueryUnobtrusiveValidation {
     
     def addMethod(
       adapterName: String,
-      fn: js.Function3[/* value */ String, /* element */ Element, /* params */ js.Any, _]
+      fn: js.Function3[/* value */ String, /* element */ Element, /* params */ js.Any, js.Any]
     ): Adapters = js.native
     
     def addMinMax(adapterName: String, minRuleName: String, maxRuleName: String, minMaxRuleName: String): Adapters = js.native
-    def addMinMax(
-      adapterName: String,
-      minRuleName: String,
-      maxRuleName: String,
-      minMaxRuleName: String,
-      minAttribute: js.UndefOr[scala.Nothing],
-      maxAttribute: String
-    ): Adapters = js.native
     def addMinMax(
       adapterName: String,
       minRuleName: String,
@@ -82,6 +74,14 @@ object MicrosoftJQueryUnobtrusiveValidation {
       maxRuleName: String,
       minMaxRuleName: String,
       minAttribute: String,
+      maxAttribute: String
+    ): Adapters = js.native
+    def addMinMax(
+      adapterName: String,
+      minRuleName: String,
+      maxRuleName: String,
+      minMaxRuleName: String,
+      minAttribute: Unit,
       maxAttribute: String
     ): Adapters = js.native
     

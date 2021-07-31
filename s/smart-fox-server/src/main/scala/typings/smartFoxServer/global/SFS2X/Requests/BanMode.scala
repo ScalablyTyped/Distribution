@@ -2,13 +2,13 @@ package typings.smartFoxServer.global.SFS2X.Requests
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("SFS2X.Requests.BanMode")
 @js.native
 class BanMode ()
-  extends typings.smartFoxServer.SFS2X.Requests.BanMode
+  extends StObject
+     with typings.smartFoxServer.SFS2X.Requests.BanMode
 /* static members */
 object BanMode {
   

@@ -5,10 +5,13 @@ import typings.ltx.elementMod.Node
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-xmpp-core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-xmpp-core", "Connection")
   @js.native
@@ -36,8 +39,8 @@ object mod {
   class JID protected () extends StObject {
     def this(local: String) = this()
     def this(local: String, domain: String) = this()
-    def this(local: String, domain: js.UndefOr[scala.Nothing], resource: String) = this()
     def this(local: String, domain: String, resource: String) = this()
+    def this(local: String, domain: Unit, resource: String) = this()
     
     /**
       * Convenience method to distinguish users
@@ -97,15 +100,17 @@ object mod {
   
   object SRV {
     
+    @JSImport("node-xmpp-core", "SRV")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * returns a lazy iterator which can be restarted via connection.connect()
       */
-    @JSImport("node-xmpp-core", "SRV.connect")
-    @js.native
-    def connect(): js.Any = js.native
-    @JSImport("node-xmpp-core", "SRV.connect")
-    @js.native
-    def connect(opts: js.Any): js.Any = js.native
+    @scala.inline
+    def connect(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")().asInstanceOf[js.Any]
+    @scala.inline
+    def connect(opts: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(opts.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   }
   
   @JSImport("node-xmpp-core", "Stanza")
@@ -124,28 +129,21 @@ object mod {
     var `type`: String = js.native
   }
   
-  @JSImport("node-xmpp-core", "createElement")
-  @js.native
-  def createElement(name: String, attrs: js.UndefOr[scala.Nothing], children: Node*): typings.ltx.elementMod.Element = js.native
-  @JSImport("node-xmpp-core", "createElement")
-  @js.native
-  def createElement(name: String, attrs: String, children: Node*): typings.ltx.elementMod.Element = js.native
-  @JSImport("node-xmpp-core", "createElement")
-  @js.native
-  def createElement(name: String, attrs: StringDictionary[js.Any], children: Node*): typings.ltx.elementMod.Element = js.native
+  @scala.inline
+  def createElement(name: String, attrs: String, children: Node*): typings.ltx.elementMod.Element = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.ltx.elementMod.Element]
+  @scala.inline
+  def createElement(name: String, attrs: StringDictionary[js.Any], children: Node*): typings.ltx.elementMod.Element = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.ltx.elementMod.Element]
+  @scala.inline
+  def createElement(name: String, attrs: Unit, children: Node*): typings.ltx.elementMod.Element = (^.asInstanceOf[js.Dynamic].applyDynamic("createElement")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any], children.asInstanceOf[js.Any])).asInstanceOf[typings.ltx.elementMod.Element]
   
-  @JSImport("node-xmpp-core", "createStanza")
-  @js.native
-  def createStanza(name: String): typings.ltx.mod.Element = js.native
-  @JSImport("node-xmpp-core", "createStanza")
-  @js.native
-  def createStanza(name: String, attrs: js.Any): typings.ltx.mod.Element = js.native
+  @scala.inline
+  def createStanza(name: String): typings.ltx.mod.Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createStanza")(name.asInstanceOf[js.Any]).asInstanceOf[typings.ltx.mod.Element]
+  @scala.inline
+  def createStanza(name: String, attrs: js.Any): typings.ltx.mod.Element = (^.asInstanceOf[js.Dynamic].applyDynamic("createStanza")(name.asInstanceOf[js.Any], attrs.asInstanceOf[js.Any])).asInstanceOf[typings.ltx.mod.Element]
   
-  @JSImport("node-xmpp-core", "escapeXML")
-  @js.native
-  def escapeXML(s: String): String = js.native
+  @scala.inline
+  def escapeXML(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXML")(s.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("node-xmpp-core", "escapeXMLText")
-  @js.native
-  def escapeXMLText(s: String): String = js.native
+  @scala.inline
+  def escapeXMLText(s: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeXMLText")(s.asInstanceOf[js.Any]).asInstanceOf[String]
 }

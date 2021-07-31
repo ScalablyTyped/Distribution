@@ -2,16 +2,14 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateCampaignResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the campaign.
     */
-  var campaignArn: js.UndefOr[Arn] = js.native
+  var campaignArn: js.UndefOr[Arn] = js.undefined
 }
 object CreateCampaignResponse {
   

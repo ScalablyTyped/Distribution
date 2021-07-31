@@ -2,13 +2,13 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IExpressionSyntax extends ISyntaxNodeOrToken {
+trait IExpressionSyntax
+  extends StObject
+     with ISyntaxNodeOrToken {
   
-  def isExpression(): Boolean = js.native
+  def isExpression(): Boolean
 }
 object IExpressionSyntax {
   

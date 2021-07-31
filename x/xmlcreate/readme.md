@@ -12,7 +12,7 @@ Simple XML builder for Node.js
 | Keywords           | build, builder, create, creator, xml |
 | # releases         | 5 |
 | # dependents       | 4 |
-| # downloads        | 31443579 |
+| # downloads        | 39633751 |
 | # stars            | 1 |
 
 ## Links

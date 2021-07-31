@@ -4,29 +4,27 @@ import typings.nodeHueApi.anon.Alert
 import typings.nodeHueApi.anon.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILight extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var manufacturername: String = js.native
+  var manufacturername: String
   
-  var modelid: String = js.native
+  var modelid: String
   
-  var name: String = js.native
+  var name: String
   
-  var pointsymbol: js.UndefOr[`1`] = js.native
+  var pointsymbol: js.UndefOr[`1`] = js.undefined
   
-  var state: Alert = js.native
+  var state: Alert
   
-  var swversion: String = js.native
+  var swversion: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var uniqueid: String = js.native
+  var uniqueid: String
 }
 object ILight {
   

@@ -16,7 +16,6 @@ import typings.reactNativeDatepicker.reactNativeDatepickerStrings.time
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,32 +35,31 @@ object mod {
     def onPressDate(): Unit = js.native
   }
   
-  @js.native
   trait DatePickerCustomStylesProps extends StObject {
     
-    var btnCancel: js.UndefOr[StyleProp[_]] = js.native
+    var btnCancel: js.UndefOr[StyleProp[js.Any]] = js.undefined
     
-    var btnConfirm: js.UndefOr[StyleProp[_]] = js.native
+    var btnConfirm: js.UndefOr[StyleProp[js.Any]] = js.undefined
     
-    var btnTextCancel: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var btnTextCancel: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var btnTextConfirm: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var btnTextConfirm: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var dateIcon: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var dateIcon: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var dateInput: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dateInput: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var datePicker: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var datePicker: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var datePickerCon: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var datePickerCon: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var dateText: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var dateText: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
-    var dateTouchBody: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var dateTouchBody: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var disabled: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var disabled: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var placeholderText: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var placeholderText: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   }
   object DatePickerCustomStylesProps {
     
@@ -75,7 +73,7 @@ object mod {
     implicit class DatePickerCustomStylesPropsMutableBuilder[Self <: DatePickerCustomStylesProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBtnCancel(value: StyleProp[_]): Self = StObject.set(x, "btnCancel", value.asInstanceOf[js.Any])
+      def setBtnCancel(value: StyleProp[js.Any]): Self = StObject.set(x, "btnCancel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBtnCancelNull: Self = StObject.set(x, "btnCancel", null)
@@ -84,7 +82,7 @@ object mod {
       def setBtnCancelUndefined: Self = StObject.set(x, "btnCancel", js.undefined)
       
       @scala.inline
-      def setBtnConfirm(value: StyleProp[_]): Self = StObject.set(x, "btnConfirm", value.asInstanceOf[js.Any])
+      def setBtnConfirm(value: StyleProp[js.Any]): Self = StObject.set(x, "btnConfirm", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBtnConfirmNull: Self = StObject.set(x, "btnConfirm", null)
@@ -184,76 +182,75 @@ object mod {
     }
   }
   
-  @js.native
   trait DatePickerProps extends StObject {
     
-    var TouchableComponent: js.UndefOr[Component[js.Object, js.Object, _]] = js.native
+    var TouchableComponent: js.UndefOr[Component[js.Object, js.Object, js.Any]] = js.undefined
     
-    var allowFontScaling: js.UndefOr[Boolean] = js.native
+    var allowFontScaling: js.UndefOr[Boolean] = js.undefined
     
     var androidMode: js.UndefOr[
         typings.reactNativeDatepicker.reactNativeDatepickerStrings.default | calendar | spinner
-      ] = js.native
+      ] = js.undefined
     
-    var cancelBtnTestID: js.UndefOr[String] = js.native
+    var cancelBtnTestID: js.UndefOr[String] = js.undefined
     
-    var cancelBtnText: js.UndefOr[String] = js.native
+    var cancelBtnText: js.UndefOr[String] = js.undefined
     
-    var confirmBtnTestID: js.UndefOr[String] = js.native
+    var confirmBtnTestID: js.UndefOr[String] = js.undefined
     
-    var confirmBtnText: js.UndefOr[String] = js.native
+    var confirmBtnText: js.UndefOr[String] = js.undefined
     
-    var customStyles: js.UndefOr[DatePickerCustomStylesProps] = js.native
+    var customStyles: js.UndefOr[DatePickerCustomStylesProps] = js.undefined
     
-    var date: js.UndefOr[String | Date | Moment] = js.native
+    var date: js.UndefOr[String | Date | Moment] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
-    var getDateStr: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
+    var getDateStr: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var hideText: js.UndefOr[Boolean] = js.native
+    var hideText: js.UndefOr[Boolean] = js.undefined
     
-    var iconComponent: js.UndefOr[Element] = js.native
+    var iconComponent: js.UndefOr[Element] = js.undefined
     
-    var iconSource: js.UndefOr[ImageURISource] = js.native
+    var iconSource: js.UndefOr[ImageURISource] = js.undefined
     
-    var is24Hour: js.UndefOr[Boolean] = js.native
+    var is24Hour: js.UndefOr[Boolean] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var maxDate: js.UndefOr[String | Date] = js.native
+    var maxDate: js.UndefOr[String | Date] = js.undefined
     
-    var minDate: js.UndefOr[String | Date] = js.native
+    var minDate: js.UndefOr[String | Date] = js.undefined
     
-    var minuteInterval: js.UndefOr[Double] = js.native
+    var minuteInterval: js.UndefOr[Double] = js.undefined
     
-    var modalOnResponderTerminationRequest: js.UndefOr[js.Function1[/* e */ js.Any, Boolean]] = js.native
+    var modalOnResponderTerminationRequest: js.UndefOr[js.Function1[/* e */ js.Any, Boolean]] = js.undefined
     
-    var mode: js.UndefOr[date | datetime | time] = js.native
+    var mode: js.UndefOr[date | datetime | time] = js.undefined
     
-    var onCloseModal: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCloseModal: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onDateChange: js.UndefOr[js.Function2[/* dateStr */ String, /* date */ Date, Unit]] = js.native
+    var onDateChange: js.UndefOr[js.Function2[/* dateStr */ String, /* date */ Date, Unit]] = js.undefined
     
-    var onOpenModal: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpenModal: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onPressMask: js.UndefOr[js.Function0[Unit]] = js.native
+    var onPressMask: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var showIcon: js.UndefOr[Boolean] = js.native
+    var showIcon: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[_]] = js.native
+    var style: js.UndefOr[StyleProp[js.Any]] = js.undefined
     
-    var testID: js.UndefOr[String] = js.native
+    var testID: js.UndefOr[String] = js.undefined
     
-    var timeZoneOffsetInMinutes: js.UndefOr[Double] = js.native
+    var timeZoneOffsetInMinutes: js.UndefOr[Double] = js.undefined
   }
   object DatePickerProps {
     
@@ -441,7 +438,7 @@ object mod {
       def setShowIconUndefined: Self = StObject.set(x, "showIcon", js.undefined)
       
       @scala.inline
-      def setStyle(value: StyleProp[_]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
+      def setStyle(value: StyleProp[js.Any]): Self = StObject.set(x, "style", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStyleNull: Self = StObject.set(x, "style", null)
@@ -462,7 +459,7 @@ object mod {
       def setTimeZoneOffsetInMinutesUndefined: Self = StObject.set(x, "timeZoneOffsetInMinutes", js.undefined)
       
       @scala.inline
-      def setTouchableComponent(value: Component[js.Object, js.Object, _]): Self = StObject.set(x, "TouchableComponent", value.asInstanceOf[js.Any])
+      def setTouchableComponent(value: Component[js.Object, js.Object, js.Any]): Self = StObject.set(x, "TouchableComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTouchableComponentUndefined: Self = StObject.set(x, "TouchableComponent", js.undefined)

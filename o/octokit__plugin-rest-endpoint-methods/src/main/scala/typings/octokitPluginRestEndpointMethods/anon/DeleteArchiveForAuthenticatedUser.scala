@@ -2,55 +2,53 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteArchiveForAuthenticatedUser extends StObject {
   
-  var cancelImport: `763` = js.native
+  var cancelImport: `763`
   
-  var deleteArchiveForAuthenticatedUser: `764` = js.native
+  var deleteArchiveForAuthenticatedUser: `764`
   
-  var deleteArchiveForOrg: `765` = js.native
+  var deleteArchiveForOrg: `765`
   
-  var downloadArchiveForOrg: `766` = js.native
+  var downloadArchiveForOrg: `766`
   
-  var getArchiveForAuthenticatedUser: `767` = js.native
+  var getArchiveForAuthenticatedUser: `767`
   
-  var getCommitAuthors: `768` = js.native
+  var getCommitAuthors: `768`
   
-  var getImportStatus: `769` = js.native
+  var getImportStatus: `769`
   
-  var getLargeFiles: `770` = js.native
+  var getLargeFiles: `770`
   
-  var getStatusForAuthenticatedUser: `771` = js.native
+  var getStatusForAuthenticatedUser: `771`
   
-  var getStatusForOrg: `772` = js.native
+  var getStatusForOrg: `772`
   
-  var listForAuthenticatedUser: `773` = js.native
+  var listForAuthenticatedUser: `773`
   
-  var listForOrg: `774` = js.native
+  var listForOrg: `774`
   
-  var listReposForOrg: `775` = js.native
+  var listReposForOrg: `775`
   
-  var listReposForUser: `776` = js.native
+  var listReposForUser: `776`
   
-  var mapCommitAuthor: `777` = js.native
+  var mapCommitAuthor: `777`
   
-  var setLfsPreference: `778` = js.native
+  var setLfsPreference: `778`
   
-  var startForAuthenticatedUser: `779` = js.native
+  var startForAuthenticatedUser: `779`
   
-  var startForOrg: `780` = js.native
+  var startForOrg: `780`
   
-  var startImport: `781` = js.native
+  var startImport: `781`
   
-  var unlockRepoForAuthenticatedUser: `782` = js.native
+  var unlockRepoForAuthenticatedUser: `782`
   
-  var unlockRepoForOrg: `783` = js.native
+  var unlockRepoForOrg: `783`
   
-  var updateImport: `784` = js.native
+  var updateImport: `784`
 }
 object DeleteArchiveForAuthenticatedUser {
   

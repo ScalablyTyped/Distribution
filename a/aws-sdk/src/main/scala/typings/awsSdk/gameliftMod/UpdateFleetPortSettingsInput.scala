@@ -2,26 +2,24 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFleetPortSettingsInput extends StObject {
   
   /**
     * A unique identifier for a fleet to update port settings for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: FleetIdOrArn = js.native
+  var FleetId: FleetIdOrArn
   
   /**
     * A collection of port settings to be added to the fleet resource.
     */
-  var InboundPermissionAuthorizations: js.UndefOr[IpPermissionsList] = js.native
+  var InboundPermissionAuthorizations: js.UndefOr[IpPermissionsList] = js.undefined
   
   /**
     * A collection of port settings to be removed from the fleet resource.
     */
-  var InboundPermissionRevocations: js.UndefOr[IpPermissionsList] = js.native
+  var InboundPermissionRevocations: js.UndefOr[IpPermissionsList] = js.undefined
 }
 object UpdateFleetPortSettingsInput {
   

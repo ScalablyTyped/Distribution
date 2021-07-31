@@ -18,7 +18,6 @@ import typings.consul.mod.Agent.Service
 import typings.consul.mod.Agent.ServicesOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -237,10 +236,11 @@ object Agent {
   }
   object Check {
     
-    @js.native
-    trait DeregisterOptions extends CommonOptions {
+    trait DeregisterOptions
+      extends StObject
+         with CommonOptions {
       
-      var id: String = js.native
+      var id: String
     }
     object DeregisterOptions {
       
@@ -258,12 +258,13 @@ object Agent {
       }
     }
     
-    @js.native
-    trait FailOptions extends CommonOptions {
+    trait FailOptions
+      extends StObject
+         with CommonOptions {
       
-      var id: String = js.native
+      var id: String
       
-      var note: js.UndefOr[String] = js.native
+      var note: js.UndefOr[String] = js.undefined
     }
     object FailOptions {
       
@@ -289,12 +290,13 @@ object Agent {
     
     type ListOptions = CommonOptions
     
-    @js.native
-    trait PassOptions extends CommonOptions {
+    trait PassOptions
+      extends StObject
+         with CommonOptions {
       
-      var id: String = js.native
+      var id: String
       
-      var note: js.UndefOr[String] = js.native
+      var note: js.UndefOr[String] = js.undefined
     }
     object PassOptions {
       
@@ -318,26 +320,27 @@ object Agent {
       }
     }
     
-    @js.native
-    trait RegisterOptions extends CommonOptions {
+    trait RegisterOptions
+      extends StObject
+         with CommonOptions {
       
-      var http: js.UndefOr[String] = js.native
+      var http: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var interval: js.UndefOr[String] = js.native
+      var interval: js.UndefOr[String] = js.undefined
       
-      var name: String = js.native
+      var name: String
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var script: js.UndefOr[String] = js.native
+      var script: js.UndefOr[String] = js.undefined
       
-      var serviceid: js.UndefOr[String] = js.native
+      var serviceid: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var ttl: js.UndefOr[String] = js.native
+      var ttl: js.UndefOr[String] = js.undefined
     }
     object RegisterOptions {
       
@@ -403,12 +406,13 @@ object Agent {
       }
     }
     
-    @js.native
-    trait WarnOptions extends CommonOptions {
+    trait WarnOptions
+      extends StObject
+         with CommonOptions {
       
-      var id: String = js.native
+      var id: String
       
-      var note: js.UndefOr[String] = js.native
+      var note: js.UndefOr[String] = js.undefined
     }
     object WarnOptions {
       
@@ -434,14 +438,17 @@ object Agent {
   }
   
   @js.native
-  trait CheckStatic extends Instantiable1[/* consul */ Consul, Check]
+  trait CheckStatic
+    extends StObject
+       with Instantiable1[/* consul */ Consul, Check]
   
   type ChecksOptions = ListOptions
   
-  @js.native
-  trait ForceLeaveOptions extends CommonOptions {
+  trait ForceLeaveOptions
+    extends StObject
+       with CommonOptions {
     
-    var node: String = js.native
+    var node: String
   }
   object ForceLeaveOptions {
     
@@ -459,10 +466,11 @@ object Agent {
     }
   }
   
-  @js.native
-  trait JoinOptions extends CommonOptions {
+  trait JoinOptions
+    extends StObject
+       with CommonOptions {
     
-    var address: String = js.native
+    var address: String
   }
   object JoinOptions {
     
@@ -480,12 +488,13 @@ object Agent {
     }
   }
   
-  @js.native
-  trait MaintenanceOptions extends CommonOptions {
+  trait MaintenanceOptions
+    extends StObject
+       with CommonOptions {
     
-    var enable: Boolean = js.native
+    var enable: Boolean
     
-    var reason: js.UndefOr[String] = js.native
+    var reason: js.UndefOr[String] = js.undefined
   }
   object MaintenanceOptions {
     
@@ -509,8 +518,9 @@ object Agent {
     }
   }
   
-  @js.native
-  trait MembersOptions extends CommonOptions
+  trait MembersOptions
+    extends StObject
+       with CommonOptions
   object MembersOptions {
     
     @scala.inline
@@ -586,10 +596,11 @@ object Agent {
   }
   object Service {
     
-    @js.native
-    trait DeregisterOptions extends CommonOptions {
+    trait DeregisterOptions
+      extends StObject
+         with CommonOptions {
       
-      var id: String = js.native
+      var id: String
     }
     object DeregisterOptions {
       
@@ -609,14 +620,15 @@ object Agent {
     
     type ListOptions = CommonOptions
     
-    @js.native
-    trait MaintenanceOptions extends CommonOptions {
+    trait MaintenanceOptions
+      extends StObject
+         with CommonOptions {
       
-      var enable: Boolean = js.native
+      var enable: Boolean
       
-      var id: String = js.native
+      var id: String
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
     }
     object MaintenanceOptions {
       
@@ -643,20 +655,19 @@ object Agent {
       }
     }
     
-    @js.native
     trait RegisterCheck extends StObject {
       
-      var http: js.UndefOr[String] = js.native
+      var http: js.UndefOr[String] = js.undefined
       
-      var interval: js.UndefOr[String] = js.native
+      var interval: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var script: js.UndefOr[String] = js.native
+      var script: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var ttl: js.UndefOr[String] = js.native
+      var ttl: js.UndefOr[String] = js.undefined
     }
     object RegisterCheck {
       
@@ -707,22 +718,23 @@ object Agent {
       }
     }
     
-    @js.native
-    trait RegisterOptions extends CommonOptions {
+    trait RegisterOptions
+      extends StObject
+         with CommonOptions {
       
-      var address: js.UndefOr[String] = js.native
+      var address: js.UndefOr[String] = js.undefined
       
-      var check: js.UndefOr[RegisterCheck] = js.native
+      var check: js.UndefOr[RegisterCheck] = js.undefined
       
-      var checks: js.UndefOr[js.Array[RegisterCheck]] = js.native
+      var checks: js.UndefOr[js.Array[RegisterCheck]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var name: String = js.native
+      var name: String
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
       
-      var tags: js.UndefOr[js.Array[String]] = js.native
+      var tags: js.UndefOr[js.Array[String]] = js.undefined
     }
     object RegisterOptions {
       
@@ -784,7 +796,9 @@ object Agent {
   }
   
   @js.native
-  trait ServiceStatic extends Instantiable1[/* consul */ Consul, Service]
+  trait ServiceStatic
+    extends StObject
+       with Instantiable1[/* consul */ Consul, Service]
   
   type ServicesOptions = typings.consul.mod.Agent.Service.ListOptions
 }

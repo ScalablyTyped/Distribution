@@ -2,42 +2,40 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Walls extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Walls_typekey")
-  var ExcelDotWalls_typekey: Walls = js.native
+  var ExcelDotWalls_typekey: Walls
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Interior: typings.activexExcel.Excel.Interior = js.native
+  val Interior: typings.activexExcel.Excel.Interior
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Paste(): Unit = js.native
+  def Paste(): Unit
   
-  var PictureType: XlChartPictureType = js.native
+  var PictureType: XlChartPictureType
   
-  var PictureUnit: Double = js.native
+  var PictureUnit: Double
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Thickness: Double = js.native
+  var Thickness: Double
 }
 object Walls {
   

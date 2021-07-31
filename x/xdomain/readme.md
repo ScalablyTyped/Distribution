@@ -12,7 +12,7 @@ A pure JavaScript CORS alternative
 | Keywords           | cors, ie8, polyfill |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 37470 |
+| # downloads        | 44726 |
 | # stars            | 0 |
 
 ## Links

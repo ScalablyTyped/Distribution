@@ -3,12 +3,11 @@ package typings.extjs.Ext
 import typings.extjs.Ext.form.field.IField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEditor
-  extends typings.extjs.Ext.container.IContainer {
+  extends StObject
+     with typings.extjs.Ext.container.IContainer {
   
   /** [Method] private
     * @param ct Object
@@ -17,73 +16,73 @@ trait IEditor
   @JSName("afterRender")
   var afterRender_IEditor: js.UndefOr[
     js.Function2[/* ct */ js.UndefOr[js.Any], /* position */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var alignment: js.UndefOr[java.lang.String] = js.native
+  var alignment: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var allowBlur: js.UndefOr[Boolean] = js.native
+  var allowBlur: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean/Object) */
-  var autoSize: js.UndefOr[js.Any] = js.native
+  var autoSize: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Cancels the editing process and hides the editor without persisting any changes
     * @param remainVisible Boolean Override the default behavior and keep the editor visible after cancel
     */
-  var cancelEdit: js.UndefOr[js.Function1[/* remainVisible */ js.UndefOr[Boolean], Unit]] = js.native
+  var cancelEdit: js.UndefOr[js.Function1[/* remainVisible */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var cancelOnEsc: js.UndefOr[Boolean] = js.native
+  var cancelOnEsc: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Ends the editing process persists the changed value to the underlying field and hides the editor
     * @param remainVisible Boolean Override the default behavior and keep the editor visible after edit
     */
-  var completeEdit: js.UndefOr[js.Function1[/* remainVisible */ js.UndefOr[Boolean], Unit]] = js.native
+  var completeEdit: js.UndefOr[js.Function1[/* remainVisible */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var completeOnEnter: js.UndefOr[Boolean] = js.native
+  var completeOnEnter: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Ext.form.field.Field) */
-  var field: js.UndefOr[IField] = js.native
+  var field: js.UndefOr[IField] = js.undefined
   
   /** [Method] Gets the data value of the editor
     * @returns Object The data value
     */
-  var getValue: js.UndefOr[js.Function0[_]] = js.native
+  var getValue: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var hideEl: js.UndefOr[Boolean] = js.native
+  var hideEl: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var ignoreNoChange: js.UndefOr[Boolean] = js.native
+  var ignoreNoChange: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Number[]) */
-  var offsets: js.UndefOr[Array] = js.native
+  var offsets: js.UndefOr[Array] = js.undefined
   
   /** [Method] private */
   @JSName("onHide")
-  var onHide_IEditor: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHide_IEditor: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] private */
   @JSName("onShow")
-  var onShow_IEditor: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow_IEditor: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (String/HTMLElement/Ext.Element) */
-  var parentEl: js.UndefOr[js.Any] = js.native
+  var parentEl: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Realigns the editor to the bound field based on the current alignment config value
     * @param autoSize Boolean True to size the field to the dimensions of the bound element.
     */
-  var realign: js.UndefOr[js.Function1[/* autoSize */ js.UndefOr[Boolean], Unit]] = js.native
+  var realign: js.UndefOr[js.Function1[/* autoSize */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var revertInvalid: js.UndefOr[Boolean] = js.native
+  var revertInvalid: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sets the data value of the editor
     * @param value Object Any valid value supported by the underlying field
     */
-  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.native
+  var setValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Starts the editing process and shows the editor
     * @param el String/HTMLElement/Ext.Element The element to edit
@@ -91,16 +90,16 @@ trait IEditor
     */
   var startEdit: js.UndefOr[
     js.Function2[/* el */ js.UndefOr[js.Any], /* value */ js.UndefOr[java.lang.String], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var swallowKeys: js.UndefOr[Boolean] = js.native
+  var swallowKeys: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var updateEl: js.UndefOr[Boolean] = js.native
+  var updateEl: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object IEditor {
   
@@ -168,7 +167,7 @@ object IEditor {
     def setFieldUndefined: Self = StObject.set(x, "field", js.undefined)
     
     @scala.inline
-    def setGetValue(value: () => _): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
+    def setGetValue(value: () => js.Any): Self = StObject.set(x, "getValue", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetValueUndefined: Self = StObject.set(x, "getValue", js.undefined)

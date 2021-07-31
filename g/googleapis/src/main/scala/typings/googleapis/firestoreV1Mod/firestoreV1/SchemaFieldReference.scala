@@ -2,16 +2,14 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A reference to a field, such as `max(messages.time) as max_time`.
   */
-@js.native
 trait SchemaFieldReference extends StObject {
   
-  var fieldPath: js.UndefOr[String] = js.native
+  var fieldPath: js.UndefOr[String] = js.undefined
 }
 object SchemaFieldReference {
   

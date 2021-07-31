@@ -2,13 +2,11 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The batch request containing multiple report request.
   */
-@js.native
 trait SchemaGetReportsRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGetReportsRequest extends StObject {
     * maximum of 5 requests. All requests should have the same `dateRanges`,
     * `viewId`, `segments`, `samplingLevel`, and `cohortGroup`.
     */
-  var reportRequests: js.UndefOr[js.Array[SchemaReportRequest]] = js.native
+  var reportRequests: js.UndefOr[js.Array[SchemaReportRequest]] = js.undefined
   
   /**
     * Enables [resource based
@@ -28,7 +26,7 @@ trait SchemaGetReportsRequest extends StObject {
     * documentation](/analytics/devguides/reporting/core/v4/limits-quotas#analytics_reporting_api_v4)
     * for details.
     */
-  var useResourceQuotas: js.UndefOr[Boolean] = js.native
+  var useResourceQuotas: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGetReportsRequest {
   

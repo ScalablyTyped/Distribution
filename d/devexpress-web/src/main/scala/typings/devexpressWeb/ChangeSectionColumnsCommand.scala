@@ -2,25 +2,23 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to change the settings of individual section columns.
   */
-@js.native
 trait ChangeSectionColumnsCommand extends StObject {
   
   /**
     * Executes the ChangeSectionColumnsCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param columns An array of SectionColumn objects.
     */
-  def execute(columns: js.Array[SectionColumn]): Boolean = js.native
+  def execute(columns: js.Array[SectionColumn]): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): CommandState[js.Array[SectionColumn]] = js.native
+  def getState(): CommandState[js.Array[SectionColumn]]
 }
 object ChangeSectionColumnsCommand {
   

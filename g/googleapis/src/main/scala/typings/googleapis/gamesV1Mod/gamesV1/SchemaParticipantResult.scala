@@ -2,32 +2,30 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for a result for a match participant.
   */
-@js.native
 trait SchemaParticipantResult extends StObject {
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#participantResult.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the participant.
     */
-  var participantId: js.UndefOr[String] = js.native
+  var participantId: js.UndefOr[String] = js.undefined
   
   /**
     * The placement or ranking of the participant in the match results; a
     * number from one to the number of participants in the match. Multiple
     * participants may have the same placing value in case of a type.
     */
-  var placing: js.UndefOr[Double] = js.native
+  var placing: js.UndefOr[Double] = js.undefined
   
   /**
     * The result of the participant for this match. Possible values are:   -
@@ -40,7 +38,7 @@ trait SchemaParticipantResult extends StObject {
     * &quot;MATCH_RESULT_DISAGREED&quot; - Different clients reported different
     * results for this participant.
     */
-  var result: js.UndefOr[String] = js.native
+  var result: js.UndefOr[String] = js.undefined
 }
 object SchemaParticipantResult {
   

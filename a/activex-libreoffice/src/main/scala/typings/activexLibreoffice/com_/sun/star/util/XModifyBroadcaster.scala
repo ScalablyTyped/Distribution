@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The modified object must post the modification events immediately after the modification is performed.
   */
-@js.native
-trait XModifyBroadcaster extends XInterface {
+trait XModifyBroadcaster
+  extends StObject
+     with XInterface {
   
   /** adds the specified listener to receive events "modified." */
-  def addModifyListener(aListener: XModifyListener): Unit = js.native
+  def addModifyListener(aListener: XModifyListener): Unit
   
   /** removes the specified listener. */
-  def removeModifyListener(aListener: XModifyListener): Unit = js.native
+  def removeModifyListener(aListener: XModifyListener): Unit
 }
 object XModifyBroadcaster {
   

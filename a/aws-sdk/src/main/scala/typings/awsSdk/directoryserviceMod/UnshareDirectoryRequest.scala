@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnshareDirectoryRequest extends StObject {
   
   /**
     * The identifier of the AWS Managed Microsoft AD directory that you want to stop sharing.
     */
-  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId = js.native
+  var DirectoryId: typings.awsSdk.directoryserviceMod.DirectoryId
   
   /**
     * Identifier for the directory consumer account with whom the directory has to be unshared.
     */
-  var UnshareTarget: typings.awsSdk.directoryserviceMod.UnshareTarget = js.native
+  var UnshareTarget: typings.awsSdk.directoryserviceMod.UnshareTarget
 }
 object UnshareDirectoryRequest {
   

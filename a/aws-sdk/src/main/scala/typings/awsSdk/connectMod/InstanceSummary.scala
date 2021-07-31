@@ -2,56 +2,54 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the instance.
     */
-  var Arn: js.UndefOr[ARN] = js.native
+  var Arn: js.UndefOr[ARN] = js.undefined
   
   /**
     * When the instance was created.
     */
-  var CreatedTime: js.UndefOr[Timestamp_] = js.native
+  var CreatedTime: js.UndefOr[Timestamp_] = js.undefined
   
   /**
     * The identifier of the instance.
     */
-  var Id: js.UndefOr[InstanceId] = js.native
+  var Id: js.UndefOr[InstanceId] = js.undefined
   
   /**
     * The identity management type of the instance.
     */
-  var IdentityManagementType: js.UndefOr[DirectoryType] = js.native
+  var IdentityManagementType: js.UndefOr[DirectoryType] = js.undefined
   
   /**
     * Whether inbound calls are enabled.
     */
-  var InboundCallsEnabled: js.UndefOr[typings.awsSdk.connectMod.InboundCallsEnabled] = js.native
+  var InboundCallsEnabled: js.UndefOr[typings.awsSdk.connectMod.InboundCallsEnabled] = js.undefined
   
   /**
     * The alias of the instance.
     */
-  var InstanceAlias: js.UndefOr[DirectoryAlias] = js.native
+  var InstanceAlias: js.UndefOr[DirectoryAlias] = js.undefined
   
   /**
     * The state of the instance.
     */
-  var InstanceStatus: js.UndefOr[typings.awsSdk.connectMod.InstanceStatus] = js.native
+  var InstanceStatus: js.UndefOr[typings.awsSdk.connectMod.InstanceStatus] = js.undefined
   
   /**
     * Whether outbound calls are enabled.
     */
-  var OutboundCallsEnabled: js.UndefOr[typings.awsSdk.connectMod.OutboundCallsEnabled] = js.native
+  var OutboundCallsEnabled: js.UndefOr[typings.awsSdk.connectMod.OutboundCallsEnabled] = js.undefined
   
   /**
     * The service role of the instance.
     */
-  var ServiceRole: js.UndefOr[ARN] = js.native
+  var ServiceRole: js.UndefOr[ARN] = js.undefined
 }
 object InstanceSummary {
   

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageRbmStandaloneCard extends StObject {
   
   /** Required. Card content. */
-  var cardContent: js.UndefOr[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent] = js.native
+  var cardContent: js.UndefOr[GoogleCloudDialogflowV2beta1IntentMessageRbmCardContent] = js.undefined
   
   /** Required. Orientation of the card. */
-  var cardOrientation: js.UndefOr[String] = js.native
+  var cardOrientation: js.UndefOr[String] = js.undefined
   
   /** Required if orientation is horizontal. Image preview alignment for standalone cards with horizontal layout. */
-  var thumbnailImageAlignment: js.UndefOr[String] = js.native
+  var thumbnailImageAlignment: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageRbmStandaloneCard {
   

@@ -24,19 +24,21 @@ import typings.wordpressEditor.wordpressEditorStrings.disableCustomColors
 import typings.wordpressEditor.wordpressEditorStrings.hasColorsToChoose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object deprecatedMod {
+  
+  @JSImport("@wordpress/editor/components/deprecated", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@wordpress/editor/components/deprecated", "AlignmentToolbar")
   @js.native
   val AlignmentToolbar: ComponentType[Props] = js.native
   
   // tslint:disable-next-line:no-unnecessary-generics
-  @JSImport("@wordpress/editor/components/deprecated", "Autocomplete")
-  @js.native
-  def Autocomplete[T](props: typings.wordpressComponents.autocompleteMod.Autocomplete.Props[T]): Element = js.native
+  @scala.inline
+  def Autocomplete[T](props: typings.wordpressComponents.autocompleteMod.Autocomplete.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Autocomplete")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/editor/components/deprecated", "BlockAlignmentToolbar")
   @js.native
@@ -136,13 +138,11 @@ object deprecatedMod {
   @js.native
   val InspectorControls: TypeofApplySlot = js.native
   
-  @JSImport("@wordpress/editor/components/deprecated", "MediaPlaceholder")
-  @js.native
-  def MediaPlaceholder[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaPlaceholderMod.MediaPlaceholder.Props[T]): Element = js.native
+  @scala.inline
+  def MediaPlaceholder[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaPlaceholderMod.MediaPlaceholder.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaPlaceholder")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@wordpress/editor/components/deprecated", "MediaUpload")
-  @js.native
-  def MediaUpload[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props[T]): Element = js.native
+  @scala.inline
+  def MediaUpload[T /* <: Boolean */](props: typings.wordpressBlockEditor.mediaUploadMod.MediaUpload.Props[T]): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("MediaUpload")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   @JSImport("@wordpress/editor/components/deprecated", "MediaUploadCheck")
   @js.native
@@ -216,69 +216,59 @@ object deprecatedMod {
   @js.native
   val WritingFlow: ComponentType[typings.wordpressBlockEditor.writingFlowMod.WritingFlow.Props] = js.native
   
-  @JSImport("@wordpress/editor/components/deprecated", "createCustomColorsHOC")
-  @js.native
+  @scala.inline
   def createCustomColorsHOC[T /* <: js.Array[String] */](colorsArray: js.Array[EditorColor]): js.Function1[
     /* colorNames */ T, 
-    js.Function1[/* component */ ComponentType[_], ComponentType[_]]
-  ] = js.native
+    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createCustomColorsHOC")(colorsArray.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* colorNames */ T, 
+    js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]
+  ]]
   
-  @JSImport("@wordpress/editor/components/deprecated", "getColorClassName")
-  @js.native
-  def getColorClassName(): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "getColorClassName")
-  @js.native
-  def getColorClassName(colorContextName: js.UndefOr[scala.Nothing], colorSlug: String): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "getColorClassName")
-  @js.native
-  def getColorClassName(colorContextName: String): js.UndefOr[String] = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "getColorClassName")
-  @js.native
-  def getColorClassName(colorContextName: String, colorSlug: String): String = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "getColorClassName")
-  @js.native
-  def getColorClassName_Union(colorContextName: String, colorSlug: String): js.UndefOr[String] = js.native
+  @scala.inline
+  def getColorClassName(): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")().asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def getColorClassName(colorContextName: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def getColorClassName(colorContextName: String, colorSlug: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any], colorSlug.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getColorClassName(colorContextName: Unit, colorSlug: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any], colorSlug.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/editor/components/deprecated", "getColorObjectByAttributeValues")
-  @js.native
-  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: js.UndefOr[scala.Nothing], customColor: String): EditorColor | PickEditorColorcolor = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "getColorObjectByAttributeValues")
-  @js.native
-  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: String, customColor: String): EditorColor | PickEditorColorcolor = js.native
+  @scala.inline
+  def getColorClassName_Union(colorContextName: String, colorSlug: String): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorClassName")(colorContextName.asInstanceOf[js.Any], colorSlug.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("@wordpress/editor/components/deprecated", "getColorObjectByColorValue")
-  @js.native
-  def getColorObjectByColorValue(colors: js.Array[EditorColor]): js.UndefOr[EditorColor] = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "getColorObjectByColorValue")
-  @js.native
-  def getColorObjectByColorValue(colors: js.Array[EditorColor], colorValue: String): js.UndefOr[EditorColor] = js.native
+  @scala.inline
+  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: String, customColor: String): EditorColor | PickEditorColorcolor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByAttributeValues")(colors.asInstanceOf[js.Any], definedColor.asInstanceOf[js.Any], customColor.asInstanceOf[js.Any])).asInstanceOf[EditorColor | PickEditorColorcolor]
+  @scala.inline
+  def getColorObjectByAttributeValues(colors: js.Array[EditorColor], definedColor: Unit, customColor: String): EditorColor | PickEditorColorcolor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByAttributeValues")(colors.asInstanceOf[js.Any], definedColor.asInstanceOf[js.Any], customColor.asInstanceOf[js.Any])).asInstanceOf[EditorColor | PickEditorColorcolor]
   
-  @JSImport("@wordpress/editor/components/deprecated", "getFontSize")
-  @js.native
-  def getFontSize(
-    fontSizes: js.Array[EditorFontSize],
-    fontSizeAttribute: js.UndefOr[scala.Nothing],
-    customFontSizeAttribute: Double
-  ): PartialEditorFontSizePick = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "getFontSize")
-  @js.native
-  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: String, customFontSizeAttribute: Double): PartialEditorFontSizePick = js.native
+  @scala.inline
+  def getColorObjectByColorValue(colors: js.Array[EditorColor]): js.UndefOr[EditorColor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByColorValue")(colors.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[EditorColor]]
+  @scala.inline
+  def getColorObjectByColorValue(colors: js.Array[EditorColor], colorValue: String): js.UndefOr[EditorColor] = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorObjectByColorValue")(colors.asInstanceOf[js.Any], colorValue.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[EditorColor]]
+  
+  @scala.inline
+  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: String, customFontSizeAttribute: Double): PartialEditorFontSizePick = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontSize")(fontSizes.asInstanceOf[js.Any], fontSizeAttribute.asInstanceOf[js.Any], customFontSizeAttribute.asInstanceOf[js.Any])).asInstanceOf[PartialEditorFontSizePick]
+  @scala.inline
+  def getFontSize(fontSizes: js.Array[EditorFontSize], fontSizeAttribute: Unit, customFontSizeAttribute: Double): PartialEditorFontSizePick = (^.asInstanceOf[js.Dynamic].applyDynamic("getFontSize")(fontSizes.asInstanceOf[js.Any], fontSizeAttribute.asInstanceOf[js.Any], customFontSizeAttribute.asInstanceOf[js.Any])).asInstanceOf[PartialEditorFontSizePick]
   
   @JSImport("@wordpress/editor/components/deprecated", "getFontSizeClass")
   @js.native
   val getFontSizeClass: js.Function1[/* fontSizeSlug */ String, String] = js.native
   
   // prettier-ignore
-  @JSImport("@wordpress/editor/components/deprecated", "withColorContext")
-  @js.native
-  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps with OwnProps, ComponentState]): ComponentType[
-    (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
-  ] = js.native
-  @JSImport("@wordpress/editor/components/deprecated", "withColorContext")
-  @js.native
-  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps with OwnProps]): ComponentType[
-    (Omit[_, colors | disableCustomColors | hasColorsToChoose]) with (Omit[ProvidedProps, hasColorsToChoose])
-  ] = js.native
+  @scala.inline
+  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: ComponentClass[ProvidedProps & OwnProps, ComponentState]): ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ]]
+  @scala.inline
+  def withColorContext[ProvidedProps /* <: PartialProps */, OwnProps /* <: js.Any */](component: FunctionComponent[ProvidedProps & OwnProps]): ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withColorContext")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[
+    (Omit[js.Any, colors | disableCustomColors | hasColorsToChoose]) & (Omit[ProvidedProps, hasColorsToChoose])
+  ]]
   
   @JSImport("@wordpress/editor/components/deprecated", "withColors")
   @js.native

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.carbonIconsReact.mod.CarbonIconType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object humidity16Mod extends Shortcut {

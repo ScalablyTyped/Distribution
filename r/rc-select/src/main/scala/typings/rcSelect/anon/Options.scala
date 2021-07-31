@@ -2,13 +2,11 @@ package typings.rcSelect.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options[OptionsType /* <: js.Array[js.Object] */] extends StObject {
   
-  var options: OptionsType = js.native
+  var options: OptionsType
 }
 object Options {
   
@@ -19,7 +17,7 @@ object Options {
   }
   
   @scala.inline
-  implicit class OptionsMutableBuilder[Self <: Options[_], OptionsType /* <: js.Array[js.Object] */] (val x: Self with Options[OptionsType]) extends AnyVal {
+  implicit class OptionsMutableBuilder[Self <: Options[?], OptionsType /* <: js.Array[js.Object] */] (val x: Self & Options[OptionsType]) extends AnyVal {
     
     @scala.inline
     def setOptions(value: OptionsType): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])

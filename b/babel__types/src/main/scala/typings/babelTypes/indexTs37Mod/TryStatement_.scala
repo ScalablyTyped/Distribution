@@ -3,30 +3,29 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TryStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TryStatement_
-  extends Statement
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TryStatement_
+  extends StObject
+     with BaseNode
+     with Statement {
   
-  var block: BlockStatement_ = js.native
+  var block: BlockStatement_
   
-  var finalizer: BlockStatement_ | Null = js.native
+  var finalizer: BlockStatement_ | Null
   
-  var handler: CatchClause_ | Null = js.native
+  var handler: CatchClause_ | Null
   
   @JSName("type")
-  var type_TryStatement_ : TryStatement = js.native
+  var type_TryStatement_ : TryStatement
 }
 object TryStatement_ {
   
   @scala.inline
-  def apply(block: BlockStatement_, `type`: TryStatement): TryStatement_ = {
-    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(block: BlockStatement_): TryStatement_ = {
+    val __obj = js.Dynamic.literal(block = block.asInstanceOf[js.Any], end = null, finalizer = null, handler = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TryStatement")
     __obj.asInstanceOf[TryStatement_]
   }
   

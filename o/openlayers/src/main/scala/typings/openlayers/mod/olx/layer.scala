@@ -15,25 +15,23 @@ import typings.openlayers.mod.source.VectorTile
 import typings.openlayers.mod.style.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layer {
   
-  @js.native
   trait BaseOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object BaseOptions {
     
@@ -84,22 +82,21 @@ object layer {
     }
   }
   
-  @js.native
   trait GroupOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var layers: js.UndefOr[js.Array[Base] | Collection[Base]] = js.native
+    var layers: js.UndefOr[js.Array[Base] | Collection[Base]] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object GroupOptions {
     
@@ -159,32 +156,31 @@ object layer {
     }
   }
   
-  @js.native
   trait HeatmapOptions extends StObject {
     
-    var blur: js.UndefOr[Double] = js.native
+    var blur: js.UndefOr[Double] = js.undefined
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var gradient: js.UndefOr[js.Array[String]] = js.native
+    var gradient: js.UndefOr[js.Array[String]] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var shadow: js.UndefOr[Double] = js.native
+    var shadow: js.UndefOr[Double] = js.undefined
     
-    var source: Vector = js.native
+    var source: Vector
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var weight: String | (js.Function1[/* feature */ Feature, Double]) = js.native
+    var weight: String | (js.Function1[/* feature */ Feature, Double])
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object HeatmapOptions {
     
@@ -271,24 +267,23 @@ object layer {
     }
   }
   
-  @js.native
   trait ImageOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var source: Image = js.native
+    var source: Image
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ImageOptions {
     
@@ -348,22 +343,21 @@ object layer {
     }
   }
   
-  @js.native
   trait LayerOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var source: js.UndefOr[Source] = js.native
+    var source: js.UndefOr[Source] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object LayerOptions {
     
@@ -420,28 +414,27 @@ object layer {
     }
   }
   
-  @js.native
   trait TileOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var preload: js.UndefOr[Double] = js.native
+    var preload: js.UndefOr[Double] = js.undefined
     
-    var source: Tile = js.native
+    var source: Tile
     
-    var useInterimTilesOnError: js.UndefOr[Boolean] = js.native
+    var useInterimTilesOnError: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object TileOptions {
     
@@ -513,38 +506,37 @@ object layer {
     }
   }
   
-  @js.native
   trait VectorOptions extends StObject {
     
-    var declutter: js.UndefOr[Boolean] = js.native
+    var declutter: js.UndefOr[Boolean] = js.undefined
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var renderBuffer: js.UndefOr[Double] = js.native
+    var renderBuffer: js.UndefOr[Double] = js.undefined
     
-    var renderMode: js.UndefOr[VectorRenderType | String] = js.native
+    var renderMode: js.UndefOr[VectorRenderType | String] = js.undefined
     
-    var renderOrder: js.UndefOr[js.Function2[/* feature1 */ Feature, /* feature2 */ Feature, Double]] = js.native
+    var renderOrder: js.UndefOr[js.Function2[/* feature1 */ Feature, /* feature2 */ Feature, Double]] = js.undefined
     
-    var source: Vector = js.native
+    var source: Vector
     
-    var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+    var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
     
-    var updateWhileAnimating: js.UndefOr[Boolean] = js.native
+    var updateWhileAnimating: js.UndefOr[Boolean] = js.undefined
     
-    var updateWhileInteracting: js.UndefOr[Boolean] = js.native
+    var updateWhileInteracting: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object VectorOptions {
     
@@ -678,36 +670,35 @@ object layer {
     def vector: typings.openlayers.openlayersStrings.vector = "vector".asInstanceOf[typings.openlayers.openlayersStrings.vector]
   }
   
-  @js.native
   trait VectorTileOptions extends StObject {
     
-    var extent: js.UndefOr[Extent_] = js.native
+    var extent: js.UndefOr[Extent_] = js.undefined
     
-    var map: js.UndefOr[Map] = js.native
+    var map: js.UndefOr[Map] = js.undefined
     
-    var maxResolution: js.UndefOr[Double] = js.native
+    var maxResolution: js.UndefOr[Double] = js.undefined
     
-    var minResolution: js.UndefOr[Double] = js.native
+    var minResolution: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var renderBuffer: js.UndefOr[Double] = js.native
+    var renderBuffer: js.UndefOr[Double] = js.undefined
     
-    var renderMode: js.UndefOr[VectorTileRenderType | String] = js.native
+    var renderMode: js.UndefOr[VectorTileRenderType | String] = js.undefined
     
-    var renderOrder: js.UndefOr[js.Function2[/* feature1 */ Feature, /* feature2 */ Feature, Double]] = js.native
+    var renderOrder: js.UndefOr[js.Function2[/* feature1 */ Feature, /* feature2 */ Feature, Double]] = js.undefined
     
-    var source: js.UndefOr[VectorTile] = js.native
+    var source: js.UndefOr[VectorTile] = js.undefined
     
-    var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.native
+    var style: js.UndefOr[Style | js.Array[Style] | StyleFunction] = js.undefined
     
-    var updateWhileAnimating: js.UndefOr[Boolean] = js.native
+    var updateWhileAnimating: js.UndefOr[Boolean] = js.undefined
     
-    var updateWhileInteracting: js.UndefOr[Boolean] = js.native
+    var updateWhileInteracting: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object VectorTileOptions {
     

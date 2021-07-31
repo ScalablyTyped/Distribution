@@ -4,25 +4,23 @@ import typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Acti
 import typings.watsonDeveloperCloud.compareComplyV1Mod.UpdateBatchConstants.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `updateBatch` operation. */
-@js.native
 trait UpdateBatchParams extends StObject {
   
   /** The action you want to perform on the specified batch-processing job. */
-  var action: Action | String = js.native
+  var action: Action | String
   
   /** The ID of the batch-processing job you want to update. */
-  var batch_id: String = js.native
+  var batch_id: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /** The analysis model to be used by the service. For the **Element classification** and **Compare two documents** methods, the default is `contracts`. For the **Extract tables** method, the default is `tables`. These defaults apply to the standalone methods as well as to the methods' use in batch-processing requests. */
-  var model: js.UndefOr[Model | String] = js.native
+  var model: js.UndefOr[Model | String] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object UpdateBatchParams {
   

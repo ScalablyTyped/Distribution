@@ -12,7 +12,7 @@ The lodash method `_.capitalize` exported as a module.
 | Keywords           | lodash-modularized, capitalize |
 | # releases         | 0 |
 | # dependents       | 102 |
-| # downloads        | 22183824 |
+| # downloads        | 26734641 |
 | # stars            | 0 |
 
 ## Links

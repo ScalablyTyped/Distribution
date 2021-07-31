@@ -2,21 +2,19 @@ package typings.awsSdk.translateMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTerminologiesResponse extends StObject {
   
   /**
     *  If the response to the ListTerminologies was truncated, the NextToken fetches the next group of custom terminologies.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.translateMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.translateMod.NextToken] = js.undefined
   
   /**
     * The properties list of the custom terminologies returned on the list request.
     */
-  var TerminologyPropertiesList: js.UndefOr[typings.awsSdk.translateMod.TerminologyPropertiesList] = js.native
+  var TerminologyPropertiesList: js.UndefOr[typings.awsSdk.translateMod.TerminologyPropertiesList] = js.undefined
 }
 object ListTerminologiesResponse {
   

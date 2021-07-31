@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientApigateway.gapi.client.apigateway
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApigatewayGatewayConfig extends StObject {
   
   /** Required. Backend settings that are applied to all backends of the Gateway. */
-  var backendConfig: js.UndefOr[ApigatewayBackendConfig] = js.native
+  var backendConfig: js.UndefOr[ApigatewayBackendConfig] = js.undefined
 }
 object ApigatewayGatewayConfig {
   

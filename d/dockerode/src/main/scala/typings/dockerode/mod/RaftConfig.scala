@@ -2,21 +2,19 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaftConfig extends StObject {
   
-  var ElectionTick: js.UndefOr[Double] = js.native
+  var ElectionTick: js.UndefOr[Double] = js.undefined
   
-  var HeartbeatTick: js.UndefOr[Double] = js.native
+  var HeartbeatTick: js.UndefOr[Double] = js.undefined
   
-  var KeepOldSnapshots: js.UndefOr[Double] = js.native
+  var KeepOldSnapshots: js.UndefOr[Double] = js.undefined
   
-  var LogEntriesForSlowFollowers: js.UndefOr[Double] = js.native
+  var LogEntriesForSlowFollowers: js.UndefOr[Double] = js.undefined
   
-  var SnapshotInterval: js.UndefOr[Double] = js.native
+  var SnapshotInterval: js.UndefOr[Double] = js.undefined
 }
 object RaftConfig {
   

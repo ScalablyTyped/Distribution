@@ -2,31 +2,29 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSdkRequest extends StObject {
   
   /**
     * A string-to-string key-value map of query parameters sdkType-dependent properties of the SDK. For sdkType of objectivec or swift, a parameter named classPrefix is required. For sdkType of android, parameters named groupId, artifactId, artifactVersion, and invokerPackage are required. For sdkType of java, parameters named serviceName and javaPackageName are required. 
     */
-  var parameters: js.UndefOr[MapOfStringToString] = js.native
+  var parameters: js.UndefOr[MapOfStringToString] = js.undefined
   
   /**
     * [Required] The string identifier of the associated RestApi.
     */
-  var restApiId: String = js.native
+  var restApiId: String
   
   /**
     * [Required] The language for the generated SDK. Currently java, javascript, android, objectivec (for iOS), swift (for iOS), and ruby are supported.
     */
-  var sdkType: String = js.native
+  var sdkType: String
   
   /**
     * [Required] The name of the Stage that the SDK will use.
     */
-  var stageName: String = js.native
+  var stageName: String
 }
 object GetSdkRequest {
   

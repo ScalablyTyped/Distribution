@@ -6,7 +6,6 @@ import typings.redlock.redlockStrings.clientError
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -62,11 +61,18 @@ object mod {
     */
   @JSImport("redlock", "LockError")
   @js.native
-  class LockError () extends Error {
+  class LockError ()
+    extends StObject
+       with Error {
     def this(message: String) = this()
     
     var attempts: Double = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     @JSName("name")
     val name_LockError: typings.redlock.redlockStrings.LockError = js.native
   }
@@ -98,7 +104,6 @@ object mod {
     */
   type LockScriptFunction = js.Function1[/* origScript */ String, String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -107,7 +112,7 @@ object mod {
       *
       * Default is 0.01
       */
-    var driftFactor: js.UndefOr[Double] = js.native
+    var driftFactor: js.UndefOr[Double] = js.undefined
     
     /**
       * LUA script to run on the Redis server to extend a lock's ttl.
@@ -116,7 +121,7 @@ object mod {
       * Redlock has a default script.
       * Only override if you know it's necessary to do so.
       */
-    var extendScript: js.UndefOr[ExtendScriptFunction | String] = js.native
+    var extendScript: js.UndefOr[ExtendScriptFunction | String] = js.undefined
     
     /**
       * LUA script to run on the Redis server to lock a resource.
@@ -125,7 +130,7 @@ object mod {
       * Redlock has a default script.
       * Only override if you know it's necessary to do so.
       */
-    var lockScript: js.UndefOr[LockScriptFunction | String] = js.native
+    var lockScript: js.UndefOr[LockScriptFunction | String] = js.undefined
     
     /**
       * The max number of times Redlock will attempt
@@ -133,14 +138,14 @@ object mod {
       *
       * Default is 10
       */
-    var retryCount: js.UndefOr[Double] = js.native
+    var retryCount: js.UndefOr[Double] = js.undefined
     
     /**
       * The time in milliseconds between attempts.
       *
       * Default is 200
       */
-    var retryDelay: js.UndefOr[Double] = js.native
+    var retryDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The max time in ms randomly added to retries
@@ -149,7 +154,7 @@ object mod {
       *
       * Default is 100
       */
-    var retryJitter: js.UndefOr[Double] = js.native
+    var retryJitter: js.UndefOr[Double] = js.undefined
     
     /**
       * LUA script to run on the Redis server to unlock a resource.
@@ -158,7 +163,7 @@ object mod {
       * Redlock has a default script.
       * Only override if you know it's necessary to do so.
       */
-    var unlockScript: js.UndefOr[UnlockScriptFunction | String] = js.native
+    var unlockScript: js.UndefOr[UnlockScriptFunction | String] = js.undefined
   }
   object Options {
     

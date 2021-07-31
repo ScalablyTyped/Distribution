@@ -2,32 +2,30 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rectangle extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/rectangle
   /**
     * The height of the rectangle (must be an integer).
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * The width of the rectangle (must be an integer).
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * The x coordinate of the origin of the rectangle (must be an integer).
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y coordinate of the origin of the rectangle (must be an integer).
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Rectangle {
   

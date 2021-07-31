@@ -5,7 +5,6 @@ import typings.node.vmMod.RunningScriptOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,30 +17,30 @@ object mod {
     * @return {String} Converted JavaScript string with async/await injected
     * @api public
     */
-  @JSImport("degenerator", JSImport.Namespace)
-  @js.native
-  def apply(code: String, _names: DegeneratorNames): String = js.native
-  @JSImport("degenerator", JSImport.Namespace)
-  @js.native
-  def apply(code: String, _names: DegeneratorNames, hasOutput: DegeneratorOptions): String = js.native
+  @scala.inline
+  def apply(code: String, _names: DegeneratorNames): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], _names.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(code: String, _names: DegeneratorNames, hasOutput: DegeneratorOptions): String = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], _names.asInstanceOf[js.Any], hasOutput.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("degenerator", "compile")
+  @JSImport("degenerator", JSImport.Namespace)
   @js.native
-  def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames): T = js.native
-  @JSImport("degenerator", "compile")
-  @js.native
-  def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames, options: CompileOptions): T = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames): T = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], returnName.asInstanceOf[js.Any], names.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def compile[T /* <: js.Function */](code: String, returnName: String, names: DegeneratorNames, options: CompileOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("compile")(code.asInstanceOf[js.Any], returnName.asInstanceOf[js.Any], names.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
   @JSImport("degenerator", "supportsAsync")
   @js.native
   val supportsAsync: Boolean = js.native
   
-  @js.native
   trait CompileOptions
-    extends RunningScriptOptions
-       with DegeneratorOptions {
+    extends StObject
+       with DegeneratorOptions
+       with RunningScriptOptions {
     
-    var sandbox: js.UndefOr[Context] = js.native
+    var sandbox: js.UndefOr[Context] = js.undefined
   }
   object CompileOptions {
     
@@ -66,10 +65,9 @@ object mod {
   
   type DegeneratorNames = js.Array[DegeneratorName]
   
-  @js.native
   trait DegeneratorOptions extends StObject {
     
-    var output: js.UndefOr[DegeneratorOutput] = js.native
+    var output: js.UndefOr[DegeneratorOutput] = js.undefined
   }
   object DegeneratorOptions {
     

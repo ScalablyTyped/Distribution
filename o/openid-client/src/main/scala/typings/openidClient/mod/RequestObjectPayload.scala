@@ -2,21 +2,21 @@ package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestObjectPayload extends AuthorizationParameters {
+trait RequestObjectPayload
+  extends StObject
+     with AuthorizationParameters {
   
-  var aud: js.UndefOr[String] = js.native
+  var aud: js.UndefOr[String] = js.undefined
   
-  var exp: js.UndefOr[Double] = js.native
+  var exp: js.UndefOr[Double] = js.undefined
   
-  var iat: js.UndefOr[Double] = js.native
+  var iat: js.UndefOr[Double] = js.undefined
   
-  var iss: js.UndefOr[String] = js.native
+  var iss: js.UndefOr[String] = js.undefined
   
-  var jti: js.UndefOr[String] = js.native
+  var jti: js.UndefOr[String] = js.undefined
 }
 object RequestObjectPayload {
   

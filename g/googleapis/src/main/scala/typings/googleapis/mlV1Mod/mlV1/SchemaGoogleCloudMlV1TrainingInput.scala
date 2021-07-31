@@ -2,7 +2,6 @@ package typings.googleapis.mlV1Mod.mlV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,18 +13,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * href=&quot;/ml-engine/docs/tensorflow/training-jobs&quot;&gt;submitting a
   * training job&lt;/a&gt;.
   */
-@js.native
 trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
   
   /**
     * Optional. Command line arguments to pass to the program.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The set of Hyperparameters to tune.
     */
-  var hyperparameters: js.UndefOr[SchemaGoogleCloudMlV1HyperparameterSpec] = js.native
+  var hyperparameters: js.UndefOr[SchemaGoogleCloudMlV1HyperparameterSpec] = js.undefined
   
   /**
     * Optional. A Google Cloud Storage path in which to store training outputs
@@ -34,7 +32,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * benefit of specifying this field is that Cloud ML validates the path for
     * use in training.
     */
-  var jobDir: js.UndefOr[String] = js.native
+  var jobDir: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The configuration for your master worker.  You should only set
@@ -47,7 +45,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * about [configuring custom
     * containers](/ml-engine/docs/distributed-training-containers).
     */
-  var masterConfig: js.UndefOr[SchemaGoogleCloudMlV1ReplicaConfig] = js.native
+  var masterConfig: js.UndefOr[SchemaGoogleCloudMlV1ReplicaConfig] = js.undefined
   
   /**
     * Optional. Specifies the type of virtual machine to use for your training
@@ -107,14 +105,14 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * types](/ml-engine/docs/tensorflow/machine-types#compute-engine-machine-types).
     * You must set this value when `scaleTier` is set to `CUSTOM`.
     */
-  var masterType: js.UndefOr[String] = js.native
+  var masterType: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Google Cloud Storage location of the packages with the
     * training program and any additional dependencies. The maximum number of
     * package URIs is 100.
     */
-  var packageUris: js.UndefOr[js.Array[String]] = js.native
+  var packageUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The configuration for parameter servers.  You should only set
@@ -128,7 +126,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * more about [configuring custom
     * containers](/ml-engine/docs/distributed-training-containers).
     */
-  var parameterServerConfig: js.UndefOr[SchemaGoogleCloudMlV1ReplicaConfig] = js.native
+  var parameterServerConfig: js.UndefOr[SchemaGoogleCloudMlV1ReplicaConfig] = js.undefined
   
   /**
     * Optional. The number of parameter server replicas to use for the training
@@ -137,7 +135,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * is set to `CUSTOM`.If you set this value, you must also set
     * `parameter_server_type`.  The default value is zero.
     */
-  var parameterServerCount: js.UndefOr[String] = js.native
+  var parameterServerCount: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Specifies the type of virtual machine to use for your training
@@ -148,12 +146,12 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * machine types.  This value must be present when `scaleTier` is set to
     * `CUSTOM` and `parameter_server_count` is greater than zero.
     */
-  var parameterServerType: js.UndefOr[String] = js.native
+  var parameterServerType: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Python module name to run after installing the packages.
     */
-  var pythonModule: js.UndefOr[String] = js.native
+  var pythonModule: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The version of Python used in training. If not set, the default
@@ -163,7 +161,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * href=&quot;/ml-engine/docs/runtime-version-list&quot;&gt;runtime
     * versions&lt;/a&gt;.
     */
-  var pythonVersion: js.UndefOr[String] = js.native
+  var pythonVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The Google Compute Engine region to run the training job in.
@@ -171,7 +169,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * href=&quot;/ml-engine/docs/tensorflow/regions&quot;&gt;available
     * regions&lt;/a&gt; for ML Engine services.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The Cloud ML Engine runtime version to use for training. If not
@@ -182,13 +180,13 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * href=&quot;/ml-engine/docs/versioning&quot;&gt;how to manage runtime
     * versions&lt;/a&gt;.
     */
-  var runtimeVersion: js.UndefOr[String] = js.native
+  var runtimeVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Specifies the machine types, the number of replicas for workers
     * and parameter servers.
     */
-  var scaleTier: js.UndefOr[String] = js.native
+  var scaleTier: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The configuration for workers.  You should only set
@@ -201,7 +199,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * the value of `masterConfig.imageUri`. Learn more about [configuring
     * custom containers](/ml-engine/docs/distributed-training-containers).
     */
-  var workerConfig: js.UndefOr[SchemaGoogleCloudMlV1ReplicaConfig] = js.native
+  var workerConfig: js.UndefOr[SchemaGoogleCloudMlV1ReplicaConfig] = js.undefined
   
   /**
     * Optional. The number of worker replicas to use for the training job. Each
@@ -210,7 +208,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * set this value, you must also set `worker_type`.  The default value is
     * zero.
     */
-  var workerCount: js.UndefOr[String] = js.native
+  var workerCount: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Specifies the type of virtual machine to use for your training
@@ -224,7 +222,7 @@ trait SchemaGoogleCloudMlV1TrainingInput extends StObject {
     * This value must be present when `scaleTier` is set to `CUSTOM` and
     * `workerCount` is greater than zero.
     */
-  var workerType: js.UndefOr[String] = js.native
+  var workerType: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudMlV1TrainingInput {
   

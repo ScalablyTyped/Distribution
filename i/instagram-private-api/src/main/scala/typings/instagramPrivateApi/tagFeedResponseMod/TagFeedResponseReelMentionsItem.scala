@@ -2,29 +2,27 @@ package typings.instagramPrivateApi.tagFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFeedResponseReelMentionsItem extends StObject {
   
-  var height: Double | String = js.native
+  var height: Double | String
   
-  var is_hidden: Double = js.native
+  var is_hidden: Double
   
-  var is_pinned: Double = js.native
+  var is_pinned: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var user: TagFeedResponseUser = js.native
+  var user: TagFeedResponseUser
   
-  var width: Double | String = js.native
+  var width: Double | String
   
-  var x: Double | String = js.native
+  var x: Double | String
   
-  var y: Double | String = js.native
+  var y: Double | String
   
-  var z: Double = js.native
+  var z: Double
 }
 object TagFeedResponseReelMentionsItem {
   

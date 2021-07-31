@@ -44,7 +44,6 @@ import typings.reactSpinkit.reactSpinkitStrings.wave
 import typings.reactSpinkit.reactSpinkitStrings.wordpress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -59,42 +58,41 @@ object mod extends Shortcut {
   }
   @JSImport("react-spinkit", JSImport.Namespace)
   @js.native
-  val ^ : Spinner = js.native
+  val ^ : js.Object & Spinner = js.native
   
   type Spinner = ComponentClass[SpinnerProps, ComponentState]
   
-  @js.native
   trait SpinnerProps extends StObject {
     
     /**
       * Component className.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Programmatically set the color of the spinners (does not work
       * for circle or folding-cube); this can either be a hex value or a color word
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /**
       * Set the time before the spinner fades in
       */
-    var fadeIn: js.UndefOr[full | half | quarter | none] = js.native
+    var fadeIn: js.UndefOr[full | half | quarter | none] = js.undefined
     
     /**
       * Specify spinner to use.
       */
     var name: js.UndefOr[
         `three-bounce` | `double-bounce` | `rotating-plane` | `folding-cube` | wave | `wandering-cubes` | pulse | `chasing-dots` | circle | `cube-grid` | wordpress | `ball-grid-beat` | `ball-grid-pulse` | `line-spin-fade-loader` | `ball-spin-fade-loader` | `ball-pulse-rise` | `line-scale` | `line-scale-pulse-out` | `line-scale-pulse-out-rapid` | `line-scale-party` | `ball-triangle-path` | `ball-scale-ripple-multiple` | `ball-pulse-sync` | `ball-beat` | `ball-scale-multiple` | `ball-zig-zag` | `ball-zig-zag-deflect` | `ball-clip-rotate` | `ball-clip-rotate-pulse` | `ball-clip-rotate-multiple` | `ball-scale-ripple` | `triangle-skew-spin` | pacman
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Change the default "spinner" className.
       */
-    var overrideSpinnerClassName: js.UndefOr[String] = js.native
+    var overrideSpinnerClassName: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SpinnerProps {
     
@@ -147,8 +145,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Spinner
+  type _To = js.Object & Spinner
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Spinner = ^
+  override def _to: js.Object & Spinner = ^
 }

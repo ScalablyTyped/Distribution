@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PositionedObjectPositioning extends StObject {
   
   /** The layout of this positioned object. */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * The offset of the left edge of the positioned object relative to the beginning of the Paragraph it is tethered to. The exact positioning of the object can depend on other content in
     * the document and the document's styling.
     */
-  var leftOffset: js.UndefOr[Dimension] = js.native
+  var leftOffset: js.UndefOr[Dimension] = js.undefined
   
   /**
     * The offset of the top edge of the positioned object relative to the beginning of the Paragraph it is tethered to. The exact positioning of the object can depend on other content in
     * the document and the document's styling.
     */
-  var topOffset: js.UndefOr[Dimension] = js.native
+  var topOffset: js.UndefOr[Dimension] = js.undefined
 }
 object PositionedObjectPositioning {
   

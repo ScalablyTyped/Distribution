@@ -2,25 +2,23 @@ package typings.vkOpenapi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Domain extends StObject {
     
-    var domain: String = js.native
+    var domain: String
     
-    var first_name: String = js.native
+    var first_name: String
     
-    var href: String = js.native
+    var href: String
     
-    var id: String = js.native
+    var id: String
     
-    var last_name: String = js.native
+    var last_name: String
     
-    var nickname: String = js.native
+    var nickname: String
   }
   object Domain {
     

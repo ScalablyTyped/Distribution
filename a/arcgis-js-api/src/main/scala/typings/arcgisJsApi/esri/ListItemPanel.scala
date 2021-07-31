@@ -3,10 +3,8 @@ package typings.arcgisJsApi.esri
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItemPanel extends StObject {
   
   /**
@@ -14,56 +12,56 @@ trait ListItemPanel extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className)
     */
-  var className: String = js.native
+  var className: String
   
   /**
     * The content displayed in the ListItem panel.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#content)
     */
-  var content: Widget_ | HTMLElement | String | js.Array[_] = js.native
+  var content: Widget_ | HTMLElement | String | js.Array[js.Any]
   
   /**
     * The URL or data URI of an image used to represent the panel.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image)
     */
-  var image: String = js.native
+  var image: String
   
   /**
     * The panel's parent ListItem that represents a layer in the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#listItem)
     */
-  var listItem: ListItem = js.native
+  var listItem: ListItem
   
   /**
     * Indicates if the panel's content is open and visible to the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#open)
     */
-  var open: Boolean = js.native
+  var open: Boolean
   
   /**
     * The title of the panel.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#title)
     */
-  var title: String = js.native
+  var title: String
   
   /**
     * Indicates if the node containing the [image](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#image) or [icon font](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#className) is visible to the user.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-LayerList-ListItemPanel.html#visible)
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ListItemPanel {
   
   @scala.inline
   def apply(
     className: String,
-    content: Widget_ | HTMLElement | String | js.Array[_],
+    content: Widget_ | HTMLElement | String | js.Array[js.Any],
     image: String,
     listItem: ListItem,
     open: Boolean,
@@ -81,7 +79,7 @@ object ListItemPanel {
     def setClassName(value: String): Self = StObject.set(x, "className", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setContent(value: Widget_ | HTMLElement | String | js.Array[_]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: Widget_ | HTMLElement | String | js.Array[js.Any]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContentVarargs(value: js.Any*): Self = StObject.set(x, "content", js.Array(value :_*))

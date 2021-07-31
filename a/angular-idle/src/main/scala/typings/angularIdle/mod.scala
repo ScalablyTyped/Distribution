@@ -4,7 +4,6 @@ import typings.angular.mod.IRequestConfig
 import typings.angular.mod.IServiceProvider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -16,7 +15,9 @@ object mod {
       * Used to configure the Idle service.
       */
     @js.native
-    trait IIdleProvider extends IServiceProvider {
+    trait IIdleProvider
+      extends StObject
+         with IServiceProvider {
       
       def autoResume(enabled: String): Unit = js.native
       /**
@@ -69,60 +70,59 @@ object mod {
       * an action that triggers a watched DOM event that bubbles up to document.body, this will reset the
       * idle/warning state and start the process over again.
       */
-    @js.native
     trait IIdleService extends StObject {
       
       /**
         * Gets the current idle value
         */
-      def getIdle(): Double = js.native
+      def getIdle(): Double
       
       /**
         * Gets the current timeout value
         */
-      def getTimeout(): Double = js.native
+      def getTimeout(): Double
       
       /**
         * Whether or not the user appears to be idle.
         */
-      def idling(): Boolean = js.native
+      def idling(): Boolean
       
       /**
         * Manually trigger the idle interrupt that normally occurs during user activity.
         */
-      def interrupt(): js.Any = js.native
+      def interrupt(): js.Any
       
       /**
         * Whether user has timed out (meaning idleDuration + timeout has passed without any activity)
         */
-      def isExpired(): Boolean = js.native
+      def isExpired(): Boolean
       
       /**
         * Whether or not the watch() has been called and it is watching for idleness.
         */
-      def running(): Boolean = js.native
+      def running(): Boolean
       
       /**
         * Updates the idle value (see IdleProvider.idle()) and
         * restarts the watch if its running.
         */
-      def setIdle(idle: Double): Unit = js.native
+      def setIdle(idle: Double): Unit
       
       /**
         * Updates the timeout value (see IdleProvider.timeout()) and
         * restarts the watch if its running.
         */
-      def setTimeout(timeout: Double): Unit = js.native
+      def setTimeout(timeout: Double): Unit
       
       /**
         * Stops watching for idleness, and resets the idle/warning state.
         */
-      def unwatch(): Unit = js.native
+      def unwatch(): Unit
       
       /**
         * Starts watching for idleness, or resets the idle/warning state and continues watching.
         */
-      def watch(): Unit = js.native
+      def watch(): Unit
     }
     object IIdleService {
       
@@ -182,7 +182,9 @@ object mod {
       * Used to configure the Keepalive service.
       */
     @js.native
-    trait IKeepAliveProvider extends IServiceProvider {
+    trait IKeepAliveProvider
+      extends StObject
+         with IServiceProvider {
       
       /**
         * If configured, options will be used to issue a request using $http.
@@ -210,29 +212,28 @@ object mod {
       * when a user becomes idle or returns from idle, respectively. It is also started automatically when
       * Idle.watch() is called. This can be disabled by configuring the IdleProvider.
       */
-    @js.native
     trait IKeepAliveService extends StObject {
       
       /**
         * Performs one ping only.
         */
-      def ping(): Unit = js.native
+      def ping(): Unit
       
       /**
         * Changes the interval value at runtime.
         * You will need to restart the pinging process by calling start() manually for the changes to be reflected.
         */
-      def setInterval(seconds: Double): Unit = js.native
+      def setInterval(seconds: Double): Unit
       
       /**
         * Starts pinging periodically until stop() is called.
         */
-      def start(): Unit = js.native
+      def start(): Unit
       
       /**
         * Stops pinging.
         */
-      def stop(): Unit = js.native
+      def stop(): Unit
     }
     object IKeepAliveService {
       
@@ -262,15 +263,16 @@ object mod {
     /**
       * Used to configure the Title service.
       */
-    @js.native
-    trait ITitleProvider extends IServiceProvider {
+    trait ITitleProvider
+      extends StObject
+         with IServiceProvider {
       
       /**
         * Enables or disables the Title functionality.
         *
         * @param enabled Boolean, default is true.
         */
-      def enabled(enabled: Boolean): Unit = js.native
+      def enabled(enabled: Boolean): Unit
     }
     object ITitleProvider {
       

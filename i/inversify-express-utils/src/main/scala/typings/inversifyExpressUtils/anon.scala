@@ -6,17 +6,15 @@ import typings.inversifyExpressUtils.interfacesMod.interfaces.ControllerMethodMe
 import typings.inversifyExpressUtils.interfacesMod.interfaces.ControllerParameterMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var route: String = js.native
+    var route: String
   }
   object Args {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Controller extends StObject {
     
-    var controller: js.Any = js.native
+    var controller: js.Any
     
-    var endpoints: js.Array[Args] = js.native
+    var endpoints: js.Array[Args]
   }
   object Controller {
     
@@ -72,14 +69,13 @@ object anon {
     }
   }
   
-  @js.native
   trait ControllerMetadata extends StObject {
     
-    var controllerMetadata: typings.inversifyExpressUtils.interfacesMod.interfaces.ControllerMetadata = js.native
+    var controllerMetadata: typings.inversifyExpressUtils.interfacesMod.interfaces.ControllerMetadata
     
-    var methodMetadata: js.Array[ControllerMethodMetadata] = js.native
+    var methodMetadata: js.Array[ControllerMethodMetadata]
     
-    var parameterMetadata: ControllerParameterMetadata = js.native
+    var parameterMetadata: ControllerParameterMetadata
   }
   object ControllerMetadata {
     
@@ -111,5 +107,7 @@ object anon {
   }
   
   @js.native
-  trait Instantiable extends Instantiable0[AuthProvider]
+  trait Instantiable
+    extends StObject
+       with Instantiable0[AuthProvider]
 }

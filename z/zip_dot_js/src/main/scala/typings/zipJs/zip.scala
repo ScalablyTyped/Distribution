@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zip {
@@ -34,18 +33,18 @@ object zip {
     def getData(
       writer: Writer,
       onend: js.Function1[/* result */ js.Any, Unit],
-      onprogress: js.UndefOr[scala.Nothing],
-      checkCrc32: Boolean
-    ): Unit = js.native
-    def getData(
-      writer: Writer,
-      onend: js.Function1[/* result */ js.Any, Unit],
       onprogress: js.Function2[/* progress */ Double, /* total */ Double, Unit]
     ): Unit = js.native
     def getData(
       writer: Writer,
       onend: js.Function1[/* result */ js.Any, Unit],
       onprogress: js.Function2[/* progress */ Double, /* total */ Double, Unit],
+      checkCrc32: Boolean
+    ): Unit = js.native
+    def getData(
+      writer: Writer,
+      onend: js.Function1[/* result */ js.Any, Unit],
+      onprogress: Unit,
       checkCrc32: Boolean
     ): Unit = js.native
     
@@ -80,18 +79,17 @@ object zip {
   
   type TextWriter = Writer
   
-  @js.native
   trait WriteOptions extends StObject {
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var directory: js.UndefOr[Boolean] = js.native
+    var directory: js.UndefOr[Boolean] = js.undefined
     
-    var lastModDate: js.UndefOr[Date] = js.native
+    var lastModDate: js.UndefOr[Date] = js.undefined
     
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object WriteOptions {
     
@@ -166,13 +164,6 @@ object zip {
       name: String,
       reader: Reader,
       onend: js.Function0[Unit],
-      onprogress: js.UndefOr[scala.Nothing],
-      options: WriteOptions
-    ): Unit = js.native
-    def add(
-      name: String,
-      reader: Reader,
-      onend: js.Function0[Unit],
       onprogress: js.Function2[/* progress */ Double, /* total */ Double, Unit]
     ): Unit = js.native
     def add(
@@ -182,6 +173,7 @@ object zip {
       onprogress: js.Function2[/* progress */ Double, /* total */ Double, Unit],
       options: WriteOptions
     ): Unit = js.native
+    def add(name: String, reader: Reader, onend: js.Function0[Unit], onprogress: Unit, options: WriteOptions): Unit = js.native
     
     def close(callback: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   }

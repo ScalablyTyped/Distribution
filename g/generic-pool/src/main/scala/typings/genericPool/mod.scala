@@ -4,10 +4,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("generic-pool", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("generic-pool", "Pool")
   @js.native
@@ -46,21 +49,18 @@ object mod {
     def use[U](cb: js.Function1[/* resource */ T, U | js.Thenable[U]]): js.Thenable[U] = js.native
   }
   
-  @JSImport("generic-pool", "createPool")
-  @js.native
-  def createPool[T](factory: Factory[T]): Pool[T] = js.native
-  @JSImport("generic-pool", "createPool")
-  @js.native
-  def createPool[T](factory: Factory[T], opts: Options): Pool[T] = js.native
+  @scala.inline
+  def createPool[T](factory: Factory[T]): Pool[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(factory.asInstanceOf[js.Any]).asInstanceOf[Pool[T]]
+  @scala.inline
+  def createPool[T](factory: Factory[T], opts: Options): Pool[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createPool")(factory.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pool[T]]
   
-  @js.native
   trait Factory[T] extends StObject {
     
-    def create(): js.Thenable[T] = js.native
+    def create(): js.Thenable[T]
     
-    def destroy(client: T): js.Thenable[Unit] = js.native
+    def destroy(client: T): js.Thenable[Unit]
     
-    var validate: js.UndefOr[js.Function1[/* client */ T, js.Thenable[Boolean]]] = js.native
+    var validate: js.UndefOr[js.Function1[/* client */ T, js.Thenable[Boolean]]] = js.undefined
   }
   object Factory {
     
@@ -71,7 +71,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class FactoryMutableBuilder[Self <: Factory[_], T] (val x: Self with Factory[T]) extends AnyVal {
+    implicit class FactoryMutableBuilder[Self <: Factory[?], T] (val x: Self & Factory[T]) extends AnyVal {
       
       @scala.inline
       def setCreate(value: () => js.Thenable[T]): Self = StObject.set(x, "create", js.Any.fromFunction0(value))
@@ -87,34 +87,33 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var acquireTimeoutMillis: js.UndefOr[Double] = js.native
+    var acquireTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var autostart: js.UndefOr[Boolean] = js.native
+    var autostart: js.UndefOr[Boolean] = js.undefined
     
-    var evictionRunIntervalMillis: js.UndefOr[Double] = js.native
+    var evictionRunIntervalMillis: js.UndefOr[Double] = js.undefined
     
-    var fifo: js.UndefOr[Boolean] = js.native
+    var fifo: js.UndefOr[Boolean] = js.undefined
     
-    var idleTimeoutMillis: js.UndefOr[Double] = js.native
+    var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var maxWaitingClients: js.UndefOr[Double] = js.native
+    var maxWaitingClients: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var numTestsPerEvictionRun: js.UndefOr[Double] = js.native
+    var numTestsPerEvictionRun: js.UndefOr[Double] = js.undefined
     
-    var priorityRange: js.UndefOr[Double] = js.native
+    var priorityRange: js.UndefOr[Double] = js.undefined
     
-    var softIdleTimeoutMillis: js.UndefOr[Double] = js.native
+    var softIdleTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var testOnBorrow: js.UndefOr[Boolean] = js.native
+    var testOnBorrow: js.UndefOr[Boolean] = js.undefined
     
-    var testOnReturn: js.UndefOr[Boolean] = js.native
+    var testOnReturn: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

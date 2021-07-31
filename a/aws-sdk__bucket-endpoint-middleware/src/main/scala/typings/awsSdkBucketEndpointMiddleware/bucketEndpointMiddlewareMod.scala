@@ -3,36 +3,36 @@ package typings.awsSdkBucketEndpointMiddleware
 import typings.awsSdkTypes.middlewareMod.BuildMiddleware
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bucketEndpointMiddlewareMod {
   
-  @JSImport("@aws-sdk/bucket-endpoint-middleware/build/bucketEndpointMiddleware", "bucketEndpointMiddleware")
+  @JSImport("@aws-sdk/bucket-endpoint-middleware/build/bucketEndpointMiddleware", JSImport.Namespace)
   @js.native
-  def bucketEndpointMiddleware(): BuildMiddleware[_, _] = js.native
-  @JSImport("@aws-sdk/bucket-endpoint-middleware/build/bucketEndpointMiddleware", "bucketEndpointMiddleware")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def bucketEndpointMiddleware(): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")().asInstanceOf[BuildMiddleware[js.Any, js.Any]]
+  @scala.inline
   def bucketEndpointMiddleware(
     hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint: bucketEndpointMiddlewareConfiguration
-  ): BuildMiddleware[_, _] = js.native
+  ): BuildMiddleware[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("bucketEndpointMiddleware")(hasForcePathStylePreformedBucketEndpointUseAccelerateEndpointUseDualstackEndpoint.asInstanceOf[js.Any]).asInstanceOf[BuildMiddleware[js.Any, js.Any]]
   
-  @js.native
   trait BucketEndpointAwareInput extends StObject {
     
     @JSName("$bucketEndpoint")
-    var $bucketEndpoint: js.UndefOr[Boolean] = js.native
+    var $bucketEndpoint: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$forcePathStyle")
-    var $forcePathStyle: js.UndefOr[Boolean] = js.native
+    var $forcePathStyle: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$useAccelerateEndpoint")
-    var $useAccelerateEndpoint: js.UndefOr[Boolean] = js.native
+    var $useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$useDualstackEndpoint")
-    var $useDualstackEndpoint: js.UndefOr[Boolean] = js.native
+    var $useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined
     
-    var Bucket: String = js.native
+    var Bucket: String
   }
   object BucketEndpointAwareInput {
     
@@ -74,16 +74,15 @@ object bucketEndpointMiddlewareMod {
     }
   }
   
-  @js.native
   trait bucketEndpointMiddlewareConfiguration extends StObject {
     
-    var forcePathStyle: js.UndefOr[Boolean] = js.native
+    var forcePathStyle: js.UndefOr[Boolean] = js.undefined
     
-    var preformedBucketEndpoint: js.UndefOr[Boolean] = js.native
+    var preformedBucketEndpoint: js.UndefOr[Boolean] = js.undefined
     
-    var useAccelerateEndpoint: js.UndefOr[Boolean] = js.native
+    var useAccelerateEndpoint: js.UndefOr[Boolean] = js.undefined
     
-    var useDualstackEndpoint: js.UndefOr[Boolean] = js.native
+    var useDualstackEndpoint: js.UndefOr[Boolean] = js.undefined
   }
   object bucketEndpointMiddlewareConfiguration {
     

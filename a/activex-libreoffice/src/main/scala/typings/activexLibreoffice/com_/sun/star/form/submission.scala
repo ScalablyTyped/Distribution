@@ -7,35 +7,35 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object submission {
   
   /** is implemented by components which support submitting data. */
-  @js.native
-  trait XSubmission extends XInterface {
+  trait XSubmission
+    extends StObject
+       with XInterface {
     
     /**
       * registers the given listener to be notified when a submission occurs
       * @param listener the listener to register
       * @throws com::sun::star::lang::NoSupportException when the component does not support external components vetoing the submission
       */
-    def addSubmissionVetoListener(listener: XSubmissionVetoListener): Unit = js.native
+    def addSubmissionVetoListener(listener: XSubmissionVetoListener): Unit
     
     /**
       * revokes a listener which has previously been registered to be notified when a submission occurs
       * @param listener the listener to revoke
       * @throws com::sun::star::lang::NoSupportException when the component does not support external components vetoing the submission
       */
-    def removeSubmissionVetoListener(listener: XSubmissionVetoListener): Unit = js.native
+    def removeSubmissionVetoListener(listener: XSubmissionVetoListener): Unit
     
     /**
       * tells the component to submit data
       * @throws com::sun::star::util::VetoException if the submission has been vetoed. Usually, this indicates that not all requirements for the submission, e.g.
       * @throws com::sun::star::lang::WrappedTargetException if an error occurred during invoking the submission target
       */
-    def submit(): Unit = js.native
+    def submit(): Unit
     
     /**
       * tells the component to submit data
@@ -43,7 +43,7 @@ object submission {
       * @throws com::sun::star::util::VetoException if the submission has been vetoed. Usually, this indicates that not all requirements for the submission, e.g.
       * @throws com::sun::star::lang::WrappedTargetException if an error occurred during invoking the submission target
       */
-    def submitWithInteraction(aHandler: XInteractionHandler): Unit = js.native
+    def submitWithInteraction(aHandler: XInteractionHandler): Unit
   }
   object XSubmission {
     
@@ -82,11 +82,12 @@ object submission {
     * is implemented by a component which allows access to a component which can submit data.
     * @see XSubmission
     */
-  @js.native
-  trait XSubmissionSupplier extends XInterface {
+  trait XSubmissionSupplier
+    extends StObject
+       with XInterface {
     
     /** specifies the {@link XSubmission} instance to which the submission request should be delegated. */
-    var Submission: XSubmission = js.native
+    var Submission: XSubmission
   }
   object XSubmissionSupplier {
     
@@ -113,15 +114,16 @@ object submission {
     * is implement by components which want to observe (and probably veto) the submission of data.
     * @see XSubmission
     */
-  @js.native
-  trait XSubmissionVetoListener extends XEventListener {
+  trait XSubmissionVetoListener
+    extends StObject
+       with XEventListener {
     
     /**
       * is invoked when a component, at which the listener has been registered, is about to submit its data.
       * @param event The submission event. The {@link com.sun.star.lang.EventObject.Source} member of the structure describes the component which is about to su
       * @throws com::sun::star::util::VetoException when the submission is vetoed. {@link com.sun.star.uno.Exception.Message} should contain a justification for
       */
-    def submitting(event: EventObject): Unit = js.native
+    def submitting(event: EventObject): Unit
   }
   object XSubmissionVetoListener {
     

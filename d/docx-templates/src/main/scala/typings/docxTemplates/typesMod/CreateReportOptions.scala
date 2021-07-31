@@ -5,31 +5,29 @@ import typings.docxTemplates.anon.ModifiedSandbox
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateReportOptions extends StObject {
   
-  var additionalJsContext: js.Object = js.native
+  var additionalJsContext: js.Object
   
-  var cmdDelimiter: js.Tuple2[String, String] = js.native
+  var cmdDelimiter: js.Tuple2[String, String]
   
-  var errorHandler: ErrorHandler | Null = js.native
+  var errorHandler: ErrorHandler | Null
   
-  var failFast: Boolean = js.native
+  var failFast: Boolean
   
-  var fixSmartQuotes: Boolean = js.native
+  var fixSmartQuotes: Boolean
   
-  var literalXmlDelimiter: String = js.native
+  var literalXmlDelimiter: String
   
-  var noSandbox: Boolean = js.native
+  var noSandbox: Boolean
   
-  var processLineBreaks: Boolean = js.native
+  var processLineBreaks: Boolean
   
-  var rejectNullish: Boolean = js.native
+  var rejectNullish: Boolean
   
-  var runJs: js.UndefOr[RunJSFunc] = js.native
+  var runJs: js.UndefOr[RunJSFunc] = js.undefined
 }
 object CreateReportOptions {
   
@@ -44,7 +42,7 @@ object CreateReportOptions {
     processLineBreaks: Boolean,
     rejectNullish: Boolean
   ): CreateReportOptions = {
-    val __obj = js.Dynamic.literal(additionalJsContext = additionalJsContext.asInstanceOf[js.Any], cmdDelimiter = cmdDelimiter.asInstanceOf[js.Any], failFast = failFast.asInstanceOf[js.Any], fixSmartQuotes = fixSmartQuotes.asInstanceOf[js.Any], literalXmlDelimiter = literalXmlDelimiter.asInstanceOf[js.Any], noSandbox = noSandbox.asInstanceOf[js.Any], processLineBreaks = processLineBreaks.asInstanceOf[js.Any], rejectNullish = rejectNullish.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(additionalJsContext = additionalJsContext.asInstanceOf[js.Any], cmdDelimiter = cmdDelimiter.asInstanceOf[js.Any], failFast = failFast.asInstanceOf[js.Any], fixSmartQuotes = fixSmartQuotes.asInstanceOf[js.Any], literalXmlDelimiter = literalXmlDelimiter.asInstanceOf[js.Any], noSandbox = noSandbox.asInstanceOf[js.Any], processLineBreaks = processLineBreaks.asInstanceOf[js.Any], rejectNullish = rejectNullish.asInstanceOf[js.Any], errorHandler = null)
     __obj.asInstanceOf[CreateReportOptions]
   }
   

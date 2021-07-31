@@ -2,16 +2,14 @@ package typings.jqueryPjax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQuerySupport extends StObject {
   
   /**
     * A boolean value indicates if pjax is supported by the browser.
     */
-  var pjax: Boolean = js.native
+  var pjax: Boolean
 }
 object JQuerySupport {
   

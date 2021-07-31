@@ -10,11 +10,12 @@ import typings.nvd3.nvd3Strings.top
 import typings.nvd3.nvd3Strings.value
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PieChart extends Chart {
+trait PieChart
+  extends StObject
+     with Chart {
   
   /*Specifies each slice size, by an inner and a outer radius. Values between 0 and 1*/
   def arcsRadius(): js.Array[ArcsRadius] = js.native
@@ -115,19 +116,19 @@ trait PieChart extends Chart {
   
   def legend(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def legend(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
@@ -163,19 +164,19 @@ trait PieChart extends Chart {
   
   def pie(
     selection: Selection_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
   def pie(
     transition: Transition_[
-      _ | js.Array[_], 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ _, 
+      js.Any | js.Array[js.Any], 
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for Datum */ js.Any, 
       BaseType, 
-      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ _
+      /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for PDatum */ js.Any
     ],
     args: js.Any*
   ): js.Any = js.native
@@ -238,9 +239,9 @@ trait PieChart extends Chart {
   def width(value: Double): this.type = js.native
   
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(): js.Function1[/* d */ js.Any, _] = js.native
+  def x(): js.Function1[/* d */ js.Any, js.Any] = js.native
   /* Proxy function to return the X value so adjustments can be made if needed. For pie/donut chart this returns the key for the slice.*/
-  def x(func: js.Function1[/* d */ js.Any, _]): this.type = js.native
+  def x(func: js.Function1[/* d */ js.Any, js.Any]): this.type = js.native
   
   /*Proxy function to return the Y value so adjustments can be made if needed.For pie/ donut chart this returns the value for the slice.*/
   def y(): js.Function1[/* d */ js.Any, Double] = js.native

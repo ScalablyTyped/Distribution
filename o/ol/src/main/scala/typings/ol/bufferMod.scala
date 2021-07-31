@@ -7,16 +7,57 @@ import typings.std.Uint32Array
 import typings.std.Uint32ArrayConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bufferMod {
   
+  @JSImport("ol/webgl/Buffer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("ol/webgl/Buffer", JSImport.Default)
   @js.native
-  class default protected () extends WebGLArrayBuffer {
+  class default protected ()
+    extends StObject
+       with WebGLArrayBuffer {
     def this(`type`: Double) = this()
     def this(`type`: Double, opt_usage: Double) = this()
+    
+    /**
+      * Populates the buffer with an array of the given size (all values will be zeroes).
+      */
+    /* CompleteClass */
+    override def fromArray(array: js.Array[Double]): Unit = js.native
+    
+    /**
+      * Populates the buffer with a raw binary array buffer.
+      */
+    /* CompleteClass */
+    override def fromArrayBuffer(buffer: ArrayBuffer): Unit = js.native
+    
+    /**
+      * Will return null if the buffer was not initialized
+      */
+    /* CompleteClass */
+    override def getArray(): Float32Array | Uint32Array = js.native
+    
+    /**
+      * Will return 0 if the buffer is not initialized
+      */
+    /* CompleteClass */
+    override def getSize(): Double = js.native
+    
+    /* CompleteClass */
+    override def getType(): Double = js.native
+    
+    /* CompleteClass */
+    override def getUsage(): Double = js.native
+    
+    /**
+      * Populates the buffer with an array of the given size (all values will be zeroes).
+      */
+    /* CompleteClass */
+    override def ofSize(size: Double): Unit = js.native
   }
   
   @js.native
@@ -26,56 +67,60 @@ object bufferMod {
   object BufferUsage extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[BufferUsage with Double] = js.native
+    def apply(value: Double): js.UndefOr[BufferUsage & Double] = js.native
     
     @js.native
-    sealed trait DYNAMIC_DRAW extends BufferUsage
-    /* 35048 */ val DYNAMIC_DRAW: typings.ol.bufferMod.BufferUsage.DYNAMIC_DRAW with Double = js.native
+    sealed trait DYNAMIC_DRAW
+      extends StObject
+         with BufferUsage
+    /* 35048 */ val DYNAMIC_DRAW: typings.ol.bufferMod.BufferUsage.DYNAMIC_DRAW & Double = js.native
     
     @js.native
-    sealed trait STATIC_DRAW extends BufferUsage
-    /* 35044 */ val STATIC_DRAW: typings.ol.bufferMod.BufferUsage.STATIC_DRAW with Double = js.native
+    sealed trait STATIC_DRAW
+      extends StObject
+         with BufferUsage
+    /* 35044 */ val STATIC_DRAW: typings.ol.bufferMod.BufferUsage.STATIC_DRAW & Double = js.native
     
     @js.native
-    sealed trait STREAM_DRAW extends BufferUsage
-    /* 35040 */ val STREAM_DRAW: typings.ol.bufferMod.BufferUsage.STREAM_DRAW with Double = js.native
+    sealed trait STREAM_DRAW
+      extends StObject
+         with BufferUsage
+    /* 35040 */ val STREAM_DRAW: typings.ol.bufferMod.BufferUsage.STREAM_DRAW & Double = js.native
   }
   
-  @JSImport("ol/webgl/Buffer", "getArrayClassForType")
-  @js.native
-  def getArrayClassForType(`type`: Double): Float32ArrayConstructor | Uint32ArrayConstructor = js.native
+  @scala.inline
+  def getArrayClassForType(`type`: Double): Float32ArrayConstructor | Uint32ArrayConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("getArrayClassForType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Float32ArrayConstructor | Uint32ArrayConstructor]
   
-  @js.native
   trait WebGLArrayBuffer extends StObject {
     
     /**
       * Populates the buffer with an array of the given size (all values will be zeroes).
       */
-    def fromArray(array: js.Array[Double]): Unit = js.native
+    def fromArray(array: js.Array[Double]): Unit
     
     /**
       * Populates the buffer with a raw binary array buffer.
       */
-    def fromArrayBuffer(buffer: ArrayBuffer): Unit = js.native
+    def fromArrayBuffer(buffer: ArrayBuffer): Unit
     
     /**
       * Will return null if the buffer was not initialized
       */
-    def getArray(): Float32Array | Uint32Array = js.native
+    def getArray(): Float32Array | Uint32Array
     
     /**
       * Will return 0 if the buffer is not initialized
       */
-    def getSize(): Double = js.native
+    def getSize(): Double
     
-    def getType(): Double = js.native
+    def getType(): Double
     
-    def getUsage(): Double = js.native
+    def getUsage(): Double
     
     /**
       * Populates the buffer with an array of the given size (all values will be zeroes).
       */
-    def ofSize(size: Double): Unit = js.native
+    def ofSize(size: Double): Unit
   }
   object WebGLArrayBuffer {
     

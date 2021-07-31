@@ -3,136 +3,136 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryHierarchyItem extends WorkItemTrackingResource {
+trait QueryHierarchyItem
+  extends StObject
+     with WorkItemTrackingResource {
   
   /**
     * The child query items inside a query folder.
     */
-  var children: js.Array[QueryHierarchyItem] = js.native
+  var children: js.Array[QueryHierarchyItem]
   
   /**
     * The clauses for a flat query.
     */
-  var clauses: WorkItemQueryClause = js.native
+  var clauses: WorkItemQueryClause
   
   /**
     * The columns of the query.
     */
-  var columns: js.Array[WorkItemFieldReference] = js.native
+  var columns: js.Array[WorkItemFieldReference]
   
   /**
     * The identity who created the query item.
     */
-  var createdBy: IdentityReference = js.native
+  var createdBy: IdentityReference
   
   /**
     * When the query item was created.
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * The link query mode.
     */
-  var filterOptions: LinkQueryMode = js.native
+  var filterOptions: LinkQueryMode
   
   /**
     * If this is a query folder, indicates if it contains any children.
     */
-  var hasChildren: Boolean = js.native
+  var hasChildren: Boolean
   
   /**
     * The id of the query item.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Indicates if this query item is deleted.
     */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
   /**
     * Indicates if this is a query folder or a query.
     */
-  var isFolder: Boolean = js.native
+  var isFolder: Boolean
   
   /**
     * Indicates if the WIQL of this query is invalid. This could be due to invalid syntax or a no longer valid area/iteration path.
     */
-  var isInvalidSyntax: Boolean = js.native
+  var isInvalidSyntax: Boolean
   
   /**
     * Indicates if this query item is public or private.
     */
-  var isPublic: Boolean = js.native
+  var isPublic: Boolean
   
   /**
     * The identity who last ran the query.
     */
-  var lastExecutedBy: IdentityReference = js.native
+  var lastExecutedBy: IdentityReference
   
   /**
     * When the query was last run.
     */
-  var lastExecutedDate: Date = js.native
+  var lastExecutedDate: Date
   
   /**
     * The identity who last modified the query item.
     */
-  var lastModifiedBy: IdentityReference = js.native
+  var lastModifiedBy: IdentityReference
   
   /**
     * When the query item was last modified.
     */
-  var lastModifiedDate: Date = js.native
+  var lastModifiedDate: Date
   
   /**
     * The link query clause.
     */
-  var linkClauses: WorkItemQueryClause = js.native
+  var linkClauses: WorkItemQueryClause
   
   /**
     * The name of the query item.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The path of the query item.
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * The recursion option for use in a tree query.
     */
-  var queryRecursionOption: QueryRecursionOption = js.native
+  var queryRecursionOption: QueryRecursionOption
   
   /**
     * The type of query.
     */
-  var queryType: QueryType = js.native
+  var queryType: QueryType
   
   /**
     * The sort columns of the query.
     */
-  var sortColumns: js.Array[WorkItemQuerySortColumn] = js.native
+  var sortColumns: js.Array[WorkItemQuerySortColumn]
   
   /**
     * The source clauses in a tree or one-hop link query.
     */
-  var sourceClauses: WorkItemQueryClause = js.native
+  var sourceClauses: WorkItemQueryClause
   
   /**
     * The target clauses in a tree or one-hop link query.
     */
-  var targetClauses: WorkItemQueryClause = js.native
+  var targetClauses: WorkItemQueryClause
   
   /**
     * The WIQL text of the query
     */
-  var wiql: String = js.native
+  var wiql: String
 }
 object QueryHierarchyItem {
   

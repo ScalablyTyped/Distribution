@@ -10,9 +10,9 @@ Use mustache, including partials, in Express 3
 | ------------------ | :-------------: |
 | Full name          | mustache-express |
 | Keywords           | - |
-| # releases         | 3 |
-| # dependents       | 51 |
-| # downloads        | 575677 |
+| # releases         | 2 |
+| # dependents       | 53 |
+| # downloads        | 834603 |
 | # stars            | 2 |
 
 ## Links

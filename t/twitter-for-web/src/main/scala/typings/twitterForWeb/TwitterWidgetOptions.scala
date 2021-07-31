@@ -2,39 +2,37 @@ package typings.twitterForWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The interface for additional configuration for all widgets.
   */
-@js.native
 trait TwitterWidgetOptions extends StObject {
   
   /**
     * Enable Do Not Track for this widget.
     */
-  var dnt: js.UndefOr[Boolean] = js.native
+  var dnt: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of hashtags to be appended to default Tweet text where appropriate.
     */
-  var hashtags: js.UndefOr[String] = js.native
+  var hashtags: js.UndefOr[String] = js.undefined
   
   /**
     * The language in which to render a widget, if supported.
     */
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
   /**
     * A list of Twitter screen names to be suggested for following after a Tweet is posted.
     */
-  var related: js.UndefOr[String] = js.native
+  var related: js.UndefOr[String] = js.undefined
   
   /**
     * A Twitter user mentioned in the default Tweet text as /via @user where appropriate.
     */
-  var via: js.UndefOr[String] = js.native
+  var via: js.UndefOr[String] = js.undefined
 }
 object TwitterWidgetOptions {
   

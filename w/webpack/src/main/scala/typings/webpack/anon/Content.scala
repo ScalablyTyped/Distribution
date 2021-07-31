@@ -7,46 +7,46 @@ import typings.webpack.webpackStrings.`object`
 import typings.webpack.webpackStrings.require
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Content extends DllReferencePluginOptions {
+trait Content
+  extends StObject
+     with DllReferencePluginOptions {
   
   /**
   			 * The mappings from request to module info
   			 */
-  var content: DllReferencePluginOptionsContent = js.native
+  var content: DllReferencePluginOptionsContent
   
   /**
   			 * (absolute path) context of requests in the manifest (or content property)
   			 */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
   			 * Extensions used to resolve modules in the dll bundle (only used when using 'scope')
   			 */
-  var extensions: js.UndefOr[js.Array[String]] = js.native
+  var extensions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
   			 * The name where the dll is exposed (external name)
   			 */
-  var name: String = js.native
+  var name: String
   
   /**
   			 * Prefix which is used for accessing the content of the dll
   			 */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
   /**
   			 * How the dll is exposed (libraryTarget)
   			 */
-  var sourceType: js.UndefOr[DllReferencePluginOptionsSourceType] = js.native
+  var sourceType: js.UndefOr[DllReferencePluginOptionsSourceType] = js.undefined
   
   /**
   			 * The way how the export of the dll bundle is used
   			 */
-  var `type`: js.UndefOr[require | `object`] = js.native
+  var `type`: js.UndefOr[require | `object`] = js.undefined
 }
 object Content {
   

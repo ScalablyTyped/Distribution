@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientPeople.gapi.client.people
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
   /** Output only. The display name formatted according to the locale specified by the viewer's account or the `Accept-Language` HTTP header. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. The display name with the last name first formatted according to the locale specified by the viewer's account or the `Accept-Language` HTTP header. */
-  var displayNameLastFirst: js.UndefOr[String] = js.native
+  var displayNameLastFirst: js.UndefOr[String] = js.undefined
   
   /** The family name. */
-  var familyName: js.UndefOr[String] = js.native
+  var familyName: js.UndefOr[String] = js.undefined
   
   /** The given name. */
-  var givenName: js.UndefOr[String] = js.native
+  var givenName: js.UndefOr[String] = js.undefined
   
   /** The honorific prefixes, such as `Mrs.` or `Dr.` */
-  var honorificPrefix: js.UndefOr[String] = js.native
+  var honorificPrefix: js.UndefOr[String] = js.undefined
   
   /** The honorific suffixes, such as `Jr.` */
-  var honorificSuffix: js.UndefOr[String] = js.native
+  var honorificSuffix: js.UndefOr[String] = js.undefined
   
   /** Metadata about the name. */
-  var metadata: js.UndefOr[FieldMetadata] = js.native
+  var metadata: js.UndefOr[FieldMetadata] = js.undefined
   
   /** The middle name(s). */
-  var middleName: js.UndefOr[String] = js.native
+  var middleName: js.UndefOr[String] = js.undefined
   
   /** The family name spelled as it sounds. */
-  var phoneticFamilyName: js.UndefOr[String] = js.native
+  var phoneticFamilyName: js.UndefOr[String] = js.undefined
   
   /** The full name spelled as it sounds. */
-  var phoneticFullName: js.UndefOr[String] = js.native
+  var phoneticFullName: js.UndefOr[String] = js.undefined
   
   /** The given name spelled as it sounds. */
-  var phoneticGivenName: js.UndefOr[String] = js.native
+  var phoneticGivenName: js.UndefOr[String] = js.undefined
   
   /** The honorific prefixes spelled as they sound. */
-  var phoneticHonorificPrefix: js.UndefOr[String] = js.native
+  var phoneticHonorificPrefix: js.UndefOr[String] = js.undefined
   
   /** The honorific suffixes spelled as they sound. */
-  var phoneticHonorificSuffix: js.UndefOr[String] = js.native
+  var phoneticHonorificSuffix: js.UndefOr[String] = js.undefined
   
   /** The middle name(s) spelled as they sound. */
-  var phoneticMiddleName: js.UndefOr[String] = js.native
+  var phoneticMiddleName: js.UndefOr[String] = js.undefined
   
   /** The free form name value. */
-  var unstructuredName: js.UndefOr[String] = js.native
+  var unstructuredName: js.UndefOr[String] = js.undefined
 }
 object Name {
   

@@ -2,7 +2,6 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,5 +17,5 @@ trait igTemplating extends StObject {
     * @param args If function is provided as the second parameter, then this parameter is the arguments for the function.
     */
   def tmpl(template: String, data: js.Object): String = js.native
-  def tmpl(template: String, data: js.Object, args: js.Array[_]): String = js.native
+  def tmpl(template: String, data: js.Object, args: js.Array[js.Any]): String = js.native
 }

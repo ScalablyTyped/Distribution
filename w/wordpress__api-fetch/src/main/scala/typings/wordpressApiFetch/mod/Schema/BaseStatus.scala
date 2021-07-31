@@ -4,27 +4,26 @@ import typings.std.Record
 import typings.wordpressApiFetch.anon.Dictk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseStatus
-  extends BaseResponse
+  extends StObject
+     with BaseResponse
      with Status[js.Any] {
   
-  var name: String = js.native
+  var name: String
   
-  var `private`: Boolean = js.native
+  var `private`: Boolean
   
-  var `protected`: Boolean = js.native
+  var `protected`: Boolean
   
-  var public: Boolean = js.native
+  var public: Boolean
   
-  var queryable: Boolean = js.native
+  var queryable: Boolean
   
-  var show_in_list: Boolean = js.native
+  var show_in_list: Boolean
   
-  var slug: String = js.native
+  var slug: String
 }
 object BaseStatus {
   

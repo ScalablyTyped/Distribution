@@ -5,29 +5,29 @@ import typings.awsSdkClientDynamodbNode.typesReplicaSettingsDescriptionMod.Unmar
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDescribeGlobalTableSettingsOutputMod {
   
-  @js.native
-  trait DescribeGlobalTableSettingsOutput extends OutputTypesUnion {
+  trait DescribeGlobalTableSettingsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The name of the global table.</p>
       */
-    var GlobalTableName: js.UndefOr[String] = js.native
+    var GlobalTableName: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The region specific settings for the global table.</p>
       */
-    var ReplicaSettings: js.UndefOr[js.Array[UnmarshalledReplicaSettingsDescription]] = js.native
+    var ReplicaSettings: js.UndefOr[js.Array[UnmarshalledReplicaSettingsDescription]] = js.undefined
   }
   object DescribeGlobalTableSettingsOutput {
     

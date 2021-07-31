@@ -2,23 +2,21 @@ package typings.ariClient.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spy extends StObject {
   
-  var app: String = js.native
+  var app: String
   
-  var appArgs: js.UndefOr[String] = js.native
+  var appArgs: js.UndefOr[String] = js.undefined
   
-  var channelId: String = js.native
+  var channelId: String
   
-  var snoopId: String = js.native
+  var snoopId: String
   
-  var spy: js.UndefOr[String] = js.native
+  var spy: js.UndefOr[String] = js.undefined
   
-  var whisper: js.UndefOr[String] = js.native
+  var whisper: js.UndefOr[String] = js.undefined
 }
 object Spy {
   

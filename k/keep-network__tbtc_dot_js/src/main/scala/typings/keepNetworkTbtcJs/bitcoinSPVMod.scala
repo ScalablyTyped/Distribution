@@ -2,7 +2,6 @@ package typings.keepNetworkTbtcJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bitcoinSPVMod {
@@ -19,16 +18,15 @@ object bitcoinSPVMod {
     def verifyMerkleProof(proofHex: String, txHash: String, index: Double, blockHeight: Double): Boolean = js.native
   }
   
-  @js.native
   trait Proof extends StObject {
     
-    var chainHeaders: String = js.native
+    var chainHeaders: String
     
-    var merkleProof: String = js.native
+    var merkleProof: String
     
-    var tx: String = js.native
+    var tx: String
     
-    var txInBlockIndex: String = js.native
+    var txInBlockIndex: String
   }
   object Proof {
     

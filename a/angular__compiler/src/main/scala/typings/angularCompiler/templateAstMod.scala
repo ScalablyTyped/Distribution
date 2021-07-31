@@ -18,36 +18,69 @@ import typings.angularCompiler.lifecycleReflectorMod.LifecycleHooks
 import typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateAstMod {
   
+  @JSImport("@angular/compiler/src/template_parser/template_ast", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@angular/compiler/src/template_parser/template_ast", "AttrAst")
   @js.native
-  class AttrAst protected () extends TemplateAst {
+  class AttrAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(name: String, value: String, sourceSpan: ParseSourceSpan) = this()
     
     var name: String = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundDirectivePropertyAst")
   @js.native
-  class BoundDirectivePropertyAst protected () extends TemplateAst {
+  class BoundDirectivePropertyAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(directiveName: String, templateName: String, value: ASTWithSource, sourceSpan: ParseSourceSpan) = this()
     
     var directiveName: String = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var templateName: String = js.native
     
     var value: ASTWithSource = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundElementPropertyAst")
   @js.native
-  class BoundElementPropertyAst protected () extends TemplateAst {
+  class BoundElementPropertyAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(
       name: String,
       `type`: PropertyBindingType,
@@ -71,23 +104,40 @@ object templateAstMod {
     
     var securityContext: SecurityContext = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var `type`: PropertyBindingType = js.native
     
     var unit: String | Null = js.native
     
     var value: ASTWithSource = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   /* static members */
   object BoundElementPropertyAst {
     
-    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundElementPropertyAst.fromBoundProperty")
+    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundElementPropertyAst")
     @js.native
-    def fromBoundProperty(prop: BoundElementProperty): BoundElementPropertyAst = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromBoundProperty(prop: BoundElementProperty): BoundElementPropertyAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBoundProperty")(prop.asInstanceOf[js.Any]).asInstanceOf[BoundElementPropertyAst]
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst")
   @js.native
-  class BoundEventAst protected () extends TemplateAst {
+  class BoundEventAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(
       name: String,
       target: String,
@@ -133,42 +183,69 @@ object templateAstMod {
     
     var phase: String | Null = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var target: String | Null = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   /* static members */
   object BoundEventAst {
     
-    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst.calcFullName")
+    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst")
     @js.native
-    def calcFullName(name: String): String = js.native
-    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst.calcFullName")
-    @js.native
-    def calcFullName(name: String, target: String): String = js.native
-    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst.calcFullName")
-    @js.native
-    def calcFullName(name: String, target: String, phase: String): String = js.native
-    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst.calcFullName")
-    @js.native
-    def calcFullName(name: String, target: Null, phase: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundEventAst.fromParsedEvent")
-    @js.native
-    def fromParsedEvent(event: ParsedEvent): BoundEventAst = js.native
+    @scala.inline
+    def calcFullName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def calcFullName(name: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def calcFullName(name: String, target: String, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def calcFullName(name: String, target: Null, phase: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcFullName")(name.asInstanceOf[js.Any], target.asInstanceOf[js.Any], phase.asInstanceOf[js.Any])).asInstanceOf[String]
+    
+    @scala.inline
+    def fromParsedEvent(event: ParsedEvent): BoundEventAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedEvent")(event.asInstanceOf[js.Any]).asInstanceOf[BoundEventAst]
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "BoundTextAst")
   @js.native
-  class BoundTextAst protected () extends TemplateAst {
+  class BoundTextAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(value: ASTWithSource, ngContentIndex: Double, sourceSpan: ParseSourceSpan) = this()
     
     var ngContentIndex: Double = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: ASTWithSource = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "DirectiveAst")
   @js.native
-  class DirectiveAst protected () extends TemplateAst {
+  class DirectiveAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(
       directive: CompileDirectiveSummary,
       inputs: js.Array[BoundDirectivePropertyAst],
@@ -187,11 +264,25 @@ object templateAstMod {
     var hostProperties: js.Array[BoundElementPropertyAst] = js.native
     
     var inputs: js.Array[BoundDirectivePropertyAst] = js.native
+    
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "ElementAst")
   @js.native
-  class ElementAst protected () extends TemplateAst {
+  class ElementAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(
       name: String,
       attrs: js.Array[AttrAst],
@@ -274,11 +365,25 @@ object templateAstMod {
     var queryMatches: js.Array[QueryMatch] = js.native
     
     var references: js.Array[ReferenceAst] = js.native
+    
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "EmbeddedTemplateAst")
   @js.native
-  class EmbeddedTemplateAst protected () extends TemplateAst {
+  class EmbeddedTemplateAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(
       attrs: js.Array[AttrAst],
       outputs: js.Array[BoundEventAst],
@@ -311,26 +416,93 @@ object templateAstMod {
     
     var references: js.Array[ReferenceAst] = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var variables: js.Array[VariableAst] = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "NgContentAst")
   @js.native
-  class NgContentAst protected () extends TemplateAst {
+  class NgContentAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(index: Double, ngContentIndex: Double, sourceSpan: ParseSourceSpan) = this()
     
     var index: Double = js.native
     
     var ngContentIndex: Double = js.native
+    
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "NullTemplateVisitor")
   @js.native
-  class NullTemplateVisitor () extends TemplateAstVisitor
+  class NullTemplateVisitor ()
+    extends StObject
+       with TemplateAstVisitor {
+    
+    /* CompleteClass */
+    override def visitAttr(ast: AttrAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitBoundText(ast: BoundTextAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitDirective(ast: DirectiveAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitDirectiveProperty(ast: BoundDirectivePropertyAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitElement(ast: ElementAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitElementProperty(ast: BoundElementPropertyAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitEmbeddedTemplate(ast: EmbeddedTemplateAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitEvent(ast: BoundEventAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitNgContent(ast: NgContentAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitReference(ast: ReferenceAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitText(ast: TextAst, context: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def visitVariable(ast: VariableAst, context: js.Any): js.Any = js.native
+  }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "ProviderAst")
   @js.native
-  class ProviderAst protected () extends TemplateAst {
+  class ProviderAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(
       token: CompileTokenMetadata,
       multiProvider: Boolean,
@@ -354,7 +526,19 @@ object templateAstMod {
     
     var providers: js.Array[CompileProviderMetadata] = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var token: CompileTokenMetadata = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @js.native
@@ -364,27 +548,37 @@ object templateAstMod {
   object ProviderAstType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ProviderAstType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ProviderAstType & Double] = js.native
     
     @js.native
-    sealed trait Builtin extends ProviderAstType
-    /* 4 */ val Builtin: typings.angularCompiler.templateAstMod.ProviderAstType.Builtin with Double = js.native
+    sealed trait Builtin
+      extends StObject
+         with ProviderAstType
+    /* 4 */ val Builtin: typings.angularCompiler.templateAstMod.ProviderAstType.Builtin & Double = js.native
     
     @js.native
-    sealed trait Component extends ProviderAstType
-    /* 2 */ val Component: typings.angularCompiler.templateAstMod.ProviderAstType.Component with Double = js.native
+    sealed trait Component
+      extends StObject
+         with ProviderAstType
+    /* 2 */ val Component: typings.angularCompiler.templateAstMod.ProviderAstType.Component & Double = js.native
     
     @js.native
-    sealed trait Directive extends ProviderAstType
-    /* 3 */ val Directive: typings.angularCompiler.templateAstMod.ProviderAstType.Directive with Double = js.native
+    sealed trait Directive
+      extends StObject
+         with ProviderAstType
+    /* 3 */ val Directive: typings.angularCompiler.templateAstMod.ProviderAstType.Directive & Double = js.native
     
     @js.native
-    sealed trait PrivateService extends ProviderAstType
-    /* 1 */ val PrivateService: typings.angularCompiler.templateAstMod.ProviderAstType.PrivateService with Double = js.native
+    sealed trait PrivateService
+      extends StObject
+         with ProviderAstType
+    /* 1 */ val PrivateService: typings.angularCompiler.templateAstMod.ProviderAstType.PrivateService & Double = js.native
     
     @js.native
-    sealed trait PublicService extends ProviderAstType
-    /* 0 */ val PublicService: typings.angularCompiler.templateAstMod.ProviderAstType.PublicService with Double = js.native
+    sealed trait PublicService
+      extends StObject
+         with ProviderAstType
+    /* 0 */ val PublicService: typings.angularCompiler.templateAstMod.ProviderAstType.PublicService & Double = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "RecursiveTemplateAstVisitor")
@@ -397,57 +591,100 @@ object templateAstMod {
           /* visit */ js.Function1[/* children */ js.UndefOr[js.Array[TemplateAst]], Unit], 
           Unit
         ]
-    ): js.Array[_] = js.native
+    ): js.Array[js.Any] = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "ReferenceAst")
   @js.native
-  class ReferenceAst protected () extends TemplateAst {
+  class ReferenceAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(name: String, value: CompileTokenMetadata, originalValue: String, sourceSpan: ParseSourceSpan) = this()
     
     var name: String = js.native
     
     var originalValue: String = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: CompileTokenMetadata = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "TextAst")
   @js.native
-  class TextAst protected () extends TemplateAst {
+  class TextAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(value: String, ngContentIndex: Double, sourceSpan: ParseSourceSpan) = this()
     
     var ngContentIndex: Double = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     var value: String = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   
   @JSImport("@angular/compiler/src/template_parser/template_ast", "VariableAst")
   @js.native
-  class VariableAst protected () extends TemplateAst {
+  class VariableAst protected ()
+    extends StObject
+       with TemplateAst {
     def this(name: String, value: String, sourceSpan: ParseSourceSpan) = this()
     def this(name: String, value: String, sourceSpan: ParseSourceSpan, valueSpan: ParseSourceSpan) = this()
     
     val name: String = js.native
     
+    /**
+      * The source span from which this node was parsed.
+      */
+    /* CompleteClass */
+    var sourceSpan: ParseSourceSpan = js.native
+    
     val value: String = js.native
     
     val valueSpan: js.UndefOr[ParseSourceSpan] = js.native
+    
+    /**
+      * Visit this node and possibly transform it.
+      */
+    /* CompleteClass */
+    override def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
   }
   /* static members */
   object VariableAst {
     
-    @JSImport("@angular/compiler/src/template_parser/template_ast", "VariableAst.fromParsedVariable")
+    @JSImport("@angular/compiler/src/template_parser/template_ast", "VariableAst")
     @js.native
-    def fromParsedVariable(v: ParsedVariable): VariableAst = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromParsedVariable(v: ParsedVariable): VariableAst = ^.asInstanceOf[js.Dynamic].applyDynamic("fromParsedVariable")(v.asInstanceOf[js.Any]).asInstanceOf[VariableAst]
   }
   
-  @JSImport("@angular/compiler/src/template_parser/template_ast", "templateVisitAll")
-  @js.native
-  def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst]): js.Array[_] = js.native
-  @JSImport("@angular/compiler/src/template_parser/template_ast", "templateVisitAll")
-  @js.native
-  def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst], context: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("templateVisitAll")(visitor.asInstanceOf[js.Any], asts.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def templateVisitAll(visitor: TemplateAstVisitor, asts: js.Array[TemplateAst], context: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("templateVisitAll")(visitor.asInstanceOf[js.Any], asts.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.angularCompiler.angularCompilerNumbers.`0`
@@ -475,12 +712,11 @@ object templateAstMod {
     def Style: `3` = 3.asInstanceOf[`3`]
   }
   
-  @js.native
   trait QueryMatch extends StObject {
     
-    var queryId: Double = js.native
+    var queryId: Double
     
-    var value: CompileTokenMetadata = js.native
+    var value: CompileTokenMetadata
   }
   object QueryMatch {
     
@@ -501,18 +737,17 @@ object templateAstMod {
     }
   }
   
-  @js.native
   trait TemplateAst extends StObject {
     
     /**
       * The source span from which this node was parsed.
       */
-    var sourceSpan: ParseSourceSpan = js.native
+    var sourceSpan: ParseSourceSpan
     
     /**
       * Visit this node and possibly transform it.
       */
-    def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any = js.native
+    def visit(visitor: TemplateAstVisitor, context: js.Any): js.Any
   }
   object TemplateAst {
     
@@ -535,34 +770,33 @@ object templateAstMod {
   
   type TemplateAstPath = AstPath[TemplateAst]
   
-  @js.native
   trait TemplateAstVisitor extends StObject {
     
-    var visit: js.UndefOr[js.Function2[/* ast */ TemplateAst, /* context */ js.Any, _]] = js.native
+    var visit: js.UndefOr[js.Function2[/* ast */ TemplateAst, /* context */ js.Any, js.Any]] = js.undefined
     
-    def visitAttr(ast: AttrAst, context: js.Any): js.Any = js.native
+    def visitAttr(ast: AttrAst, context: js.Any): js.Any
     
-    def visitBoundText(ast: BoundTextAst, context: js.Any): js.Any = js.native
+    def visitBoundText(ast: BoundTextAst, context: js.Any): js.Any
     
-    def visitDirective(ast: DirectiveAst, context: js.Any): js.Any = js.native
+    def visitDirective(ast: DirectiveAst, context: js.Any): js.Any
     
-    def visitDirectiveProperty(ast: BoundDirectivePropertyAst, context: js.Any): js.Any = js.native
+    def visitDirectiveProperty(ast: BoundDirectivePropertyAst, context: js.Any): js.Any
     
-    def visitElement(ast: ElementAst, context: js.Any): js.Any = js.native
+    def visitElement(ast: ElementAst, context: js.Any): js.Any
     
-    def visitElementProperty(ast: BoundElementPropertyAst, context: js.Any): js.Any = js.native
+    def visitElementProperty(ast: BoundElementPropertyAst, context: js.Any): js.Any
     
-    def visitEmbeddedTemplate(ast: EmbeddedTemplateAst, context: js.Any): js.Any = js.native
+    def visitEmbeddedTemplate(ast: EmbeddedTemplateAst, context: js.Any): js.Any
     
-    def visitEvent(ast: BoundEventAst, context: js.Any): js.Any = js.native
+    def visitEvent(ast: BoundEventAst, context: js.Any): js.Any
     
-    def visitNgContent(ast: NgContentAst, context: js.Any): js.Any = js.native
+    def visitNgContent(ast: NgContentAst, context: js.Any): js.Any
     
-    def visitReference(ast: ReferenceAst, context: js.Any): js.Any = js.native
+    def visitReference(ast: ReferenceAst, context: js.Any): js.Any
     
-    def visitText(ast: TextAst, context: js.Any): js.Any = js.native
+    def visitText(ast: TextAst, context: js.Any): js.Any
     
-    def visitVariable(ast: VariableAst, context: js.Any): js.Any = js.native
+    def visitVariable(ast: VariableAst, context: js.Any): js.Any
   }
   object TemplateAstVisitor {
     
@@ -589,7 +823,7 @@ object templateAstMod {
     implicit class TemplateAstVisitorMutableBuilder[Self <: TemplateAstVisitor] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setVisit(value: (/* ast */ TemplateAst, /* context */ js.Any) => _): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
+      def setVisit(value: (/* ast */ TemplateAst, /* context */ js.Any) => js.Any): Self = StObject.set(x, "visit", js.Any.fromFunction2(value))
       
       @scala.inline
       def setVisitAttr(value: (AttrAst, js.Any) => js.Any): Self = StObject.set(x, "visitAttr", js.Any.fromFunction2(value))

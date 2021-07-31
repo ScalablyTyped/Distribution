@@ -2,35 +2,33 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instances list response.
   */
-@js.native
 trait SchemaInstancesListResponse extends StObject {
   
   /**
     * List of database instance resources.
     */
-  var items: js.UndefOr[js.Array[SchemaDatabaseInstance]] = js.native
+  var items: js.UndefOr[js.Array[SchemaDatabaseInstance]] = js.undefined
   
   /**
     * This is always sql#instancesList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The continuation token, used to page through large result sets. Provide
     * this value in a subsequent request to return the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * List of warnings that ocurred while handling the request.
     */
-  var warnings: js.UndefOr[js.Array[SchemaApiWarning]] = js.native
+  var warnings: js.UndefOr[js.Array[SchemaApiWarning]] = js.undefined
 }
 object SchemaInstancesListResponse {
   

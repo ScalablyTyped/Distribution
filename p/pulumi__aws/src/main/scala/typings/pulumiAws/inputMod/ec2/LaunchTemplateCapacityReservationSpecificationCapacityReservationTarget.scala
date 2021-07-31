@@ -3,16 +3,14 @@ package typings.pulumiAws.inputMod.ec2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget extends StObject {
   
   /**
     * The ID of the Capacity Reservation to target.
     */
-  var capacityReservationId: js.UndefOr[Input[String]] = js.native
+  var capacityReservationId: js.UndefOr[Input[String]] = js.undefined
 }
 object LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget {
   

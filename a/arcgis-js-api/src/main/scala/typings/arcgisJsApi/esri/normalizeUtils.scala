@@ -2,7 +2,6 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,11 +13,7 @@ trait normalizeUtils extends StObject {
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-normalizeUtils.html#normalizeCentralMeridian)
     */
   def normalizeCentralMeridian(geometries: js.Array[Geometry_]): js.Promise[js.Array[Geometry_]] = js.native
-  def normalizeCentralMeridian(
-    geometries: js.Array[Geometry_],
-    geometryService: js.UndefOr[scala.Nothing],
-    requestOptions: js.Any
-  ): js.Promise[js.Array[Geometry_]] = js.native
+  def normalizeCentralMeridian(geometries: js.Array[Geometry_], geometryService: Unit, requestOptions: js.Any): js.Promise[js.Array[Geometry_]] = js.native
   def normalizeCentralMeridian(geometries: js.Array[Geometry_], geometryService: GeometryService): js.Promise[js.Array[Geometry_]] = js.native
   def normalizeCentralMeridian(geometries: js.Array[Geometry_], geometryService: GeometryService, requestOptions: js.Any): js.Promise[js.Array[Geometry_]] = js.native
 }

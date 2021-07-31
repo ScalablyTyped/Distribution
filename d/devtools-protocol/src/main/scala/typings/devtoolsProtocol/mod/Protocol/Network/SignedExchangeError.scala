@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedExchangeError extends StObject {
   
   /**
     * The field which caused the error.
     */
-  var errorField: js.UndefOr[SignedExchangeErrorField] = js.native
+  var errorField: js.UndefOr[SignedExchangeErrorField] = js.undefined
   
   /**
     * Error message.
     */
-  var message: String = js.native
+  var message: String
   
   /**
     * The index of the signature which caused the error.
     */
-  var signatureIndex: js.UndefOr[integer] = js.native
+  var signatureIndex: js.UndefOr[integer] = js.undefined
 }
 object SignedExchangeError {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeChannelModeratedByAppInstanceUserRequest extends StObject {
   
   /**
     * The ARN of the app instance user in the moderated channel.
     */
-  var AppInstanceUserArn: ChimeArn = js.native
+  var AppInstanceUserArn: ChimeArn
   
   /**
     * The ARN of the moderated channel.
     */
-  var ChannelArn: ChimeArn = js.native
+  var ChannelArn: ChimeArn
 }
 object DescribeChannelModeratedByAppInstanceUserRequest {
   

@@ -4,21 +4,19 @@ import typings.chrome.chromeStrings.eight
 import typings.chrome.chromeStrings.seven
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EIGHT extends StObject {
   
-  var EIGHT: eight = js.native
+  var EIGHT: eight
   
-  var SEVEN: seven = js.native
+  var SEVEN: seven
 }
 object EIGHT {
   
   @scala.inline
-  def apply(EIGHT: eight, SEVEN: seven): EIGHT = {
-    val __obj = js.Dynamic.literal(EIGHT = EIGHT.asInstanceOf[js.Any], SEVEN = SEVEN.asInstanceOf[js.Any])
+  def apply(): EIGHT = {
+    val __obj = js.Dynamic.literal(EIGHT = "eight", SEVEN = "seven")
     __obj.asInstanceOf[EIGHT]
   }
   

@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSc
     */
   var recordColumns: js.Array[
     ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordColumn
-  ] = js.native
+  ]
   
   /**
     * Specifies the encoding of the records in the streaming source. For example, `UTF-8`.
     */
-  var recordEncoding: js.UndefOr[String] = js.native
+  var recordEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the format of the records on the streaming source.
     */
-  var recordFormat: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat = js.native
+  var recordFormat: ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchemaRecordFormat
 }
 object ApplicationApplicationConfigurationSqlApplicationConfigurationInputInputSchema {
   

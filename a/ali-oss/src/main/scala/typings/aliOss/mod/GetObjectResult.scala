@@ -2,16 +2,14 @@ package typings.aliOss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectResult extends StObject {
   
-  var content: js.UndefOr[js.Any] = js.native
+  var content: js.UndefOr[js.Any] = js.undefined
   
   // file content buffer if file parameter is null or ignore
-  var res: NormalSuccessResponse = js.native
+  var res: NormalSuccessResponse
 }
 object GetObjectResult {
   

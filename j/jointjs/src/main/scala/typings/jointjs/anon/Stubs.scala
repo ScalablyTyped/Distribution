@@ -2,13 +2,11 @@ package typings.jointjs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stubs extends StObject {
   
-  var stubs: js.UndefOr[Double] = js.native
+  var stubs: js.UndefOr[Double] = js.undefined
 }
 object Stubs {
   

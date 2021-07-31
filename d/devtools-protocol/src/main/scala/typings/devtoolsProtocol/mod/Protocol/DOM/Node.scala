@@ -4,153 +4,151 @@ import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
   /**
     * Attributes of the `Element` node in the form of flat array `[name1, value1, name2, value2]`.
     */
-  var attributes: js.UndefOr[js.Array[String]] = js.native
+  var attributes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The BackendNodeId for this node.
     */
-  var backendNodeId: BackendNodeId = js.native
+  var backendNodeId: BackendNodeId
   
   /**
     * Base URL that `Document` or `FrameOwner` node uses for URL completion.
     */
-  var baseURL: js.UndefOr[String] = js.native
+  var baseURL: js.UndefOr[String] = js.undefined
   
   /**
     * Child count for `Container` nodes.
     */
-  var childNodeCount: js.UndefOr[integer] = js.native
+  var childNodeCount: js.UndefOr[integer] = js.undefined
   
   /**
     * Child nodes of this node when requested with children.
     */
-  var children: js.UndefOr[js.Array[Node]] = js.native
+  var children: js.UndefOr[js.Array[Node]] = js.undefined
   
   /**
     * Content document for frame owner elements.
     */
-  var contentDocument: js.UndefOr[Node] = js.native
+  var contentDocument: js.UndefOr[Node] = js.undefined
   
   /**
     * Distributed nodes for given insertion point.
     */
-  var distributedNodes: js.UndefOr[js.Array[BackendNode]] = js.native
+  var distributedNodes: js.UndefOr[js.Array[BackendNode]] = js.undefined
   
   /**
     * Document URL that `Document` or `FrameOwner` node points to.
     */
-  var documentURL: js.UndefOr[String] = js.native
+  var documentURL: js.UndefOr[String] = js.undefined
   
   /**
     * Frame ID for frame owner elements.
     */
-  var frameId: js.UndefOr[FrameId] = js.native
+  var frameId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Import document for the HTMLImport links.
     */
-  var importedDocument: js.UndefOr[Node] = js.native
+  var importedDocument: js.UndefOr[Node] = js.undefined
   
   /**
     * `DocumentType`'s internalSubset.
     */
-  var internalSubset: js.UndefOr[String] = js.native
+  var internalSubset: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the node is SVG.
     */
-  var isSVG: js.UndefOr[Boolean] = js.native
+  var isSVG: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `Node`'s localName.
     */
-  var localName: String = js.native
+  var localName: String
   
   /**
     * `Attr`'s name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Node identifier that is passed into the rest of the DOM messages as the `nodeId`. Backend
     * will only push node with given `id` once. It is aware of all requested nodes and will only
     * fire DOM events for nodes known to the client.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
   
   /**
     * `Node`'s nodeName.
     */
-  var nodeName: String = js.native
+  var nodeName: String
   
   /**
     * `Node`'s nodeType.
     */
-  var nodeType: integer = js.native
+  var nodeType: integer
   
   /**
     * `Node`'s nodeValue.
     */
-  var nodeValue: String = js.native
+  var nodeValue: String
   
   /**
     * The id of the parent node if any.
     */
-  var parentId: js.UndefOr[NodeId] = js.native
+  var parentId: js.UndefOr[NodeId] = js.undefined
   
   /**
     * Pseudo elements associated with this node.
     */
-  var pseudoElements: js.UndefOr[js.Array[Node]] = js.native
+  var pseudoElements: js.UndefOr[js.Array[Node]] = js.undefined
   
   /**
     * Pseudo element type for this node.
     */
-  var pseudoType: js.UndefOr[PseudoType] = js.native
+  var pseudoType: js.UndefOr[PseudoType] = js.undefined
   
   /**
     * `DocumentType`'s publicId.
     */
-  var publicId: js.UndefOr[String] = js.native
+  var publicId: js.UndefOr[String] = js.undefined
   
   /**
     * Shadow root type.
     */
-  var shadowRootType: js.UndefOr[ShadowRootType] = js.native
+  var shadowRootType: js.UndefOr[ShadowRootType] = js.undefined
   
   /**
     * Shadow root list for given element host.
     */
-  var shadowRoots: js.UndefOr[js.Array[Node]] = js.native
+  var shadowRoots: js.UndefOr[js.Array[Node]] = js.undefined
   
   /**
     * `DocumentType`'s systemId.
     */
-  var systemId: js.UndefOr[String] = js.native
+  var systemId: js.UndefOr[String] = js.undefined
   
   /**
     * Content document fragment for template elements.
     */
-  var templateContent: js.UndefOr[Node] = js.native
+  var templateContent: js.UndefOr[Node] = js.undefined
   
   /**
     * `Attr`'s value.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
   
   /**
     * `Document`'s XML version in case of XML documents.
     */
-  var xmlVersion: js.UndefOr[String] = js.native
+  var xmlVersion: js.UndefOr[String] = js.undefined
 }
 object Node {
   

@@ -2,12 +2,13 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: replace to interface https://developers.google.com/maps/documentation/javascript/reference/overlay-view#MapCanvasProjection
 @js.native
-trait MapCanvasProjection extends MVCObject {
+trait MapCanvasProjection
+  extends StObject
+     with MVCObject {
   
   def fromContainerPixelToLatLng(pixel: Point): LatLng = js.native
   def fromContainerPixelToLatLng(pixel: Point, nowrap: Boolean): LatLng = js.native

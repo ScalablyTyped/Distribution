@@ -4,17 +4,15 @@ import typings.nodeRedRegistry.mod.NodeCredentials
 import typings.nodeRedRegistry.mod.NodeSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Credentials[TCreds, TSets] extends StObject {
     
-    var credentials: js.UndefOr[NodeCredentials[TCreds]] = js.native
+    var credentials: js.UndefOr[NodeCredentials[TCreds]] = js.undefined
     
-    var settings: js.UndefOr[NodeSettings[TSets]] = js.native
+    var settings: js.UndefOr[NodeSettings[TSets]] = js.undefined
   }
   object Credentials {
     
@@ -25,7 +23,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials[_, _], TCreds, TSets] (val x: Self with (Credentials[TCreds, TSets])) extends AnyVal {
+    implicit class CredentialsMutableBuilder[Self <: Credentials[?, ?], TCreds, TSets] (val x: Self & (Credentials[TCreds, TSets])) extends AnyVal {
       
       @scala.inline
       def setCredentials(value: NodeCredentials[TCreds]): Self = StObject.set(x, "credentials", value.asInstanceOf[js.Any])

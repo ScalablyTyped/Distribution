@@ -2,16 +2,14 @@ package typings.googleapis.v2betaMod.deploymentmanagerV2beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDeployment extends StObject {
   
   /**
     * An optional user-provided description of the deployment.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Provides a fingerprint to use in requests to modify a deployment, such as
@@ -23,14 +21,14 @@ trait SchemaDeployment extends StObject {
     * after every request to modify data. To get the latest fingerprint value,
     * perform a get() request to a deployment.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Creation timestamp in RFC3339 text format.
     */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /**
     * Map of labels; provided by the client when the resource is created or
@@ -40,13 +38,13 @@ trait SchemaDeployment extends StObject {
     * characters long and must conform to the regular expression
     * ([a-z]([-a-z0-9]*[a-z0-9])?)?
     */
-  var labels: js.UndefOr[js.Array[SchemaDeploymentLabelEntry]] = js.native
+  var labels: js.UndefOr[js.Array[SchemaDeploymentLabelEntry]] = js.undefined
   
   /**
     * Output only. URL of the manifest representing the last manifest that was
     * successfully deployed.
     */
-  var manifest: js.UndefOr[String] = js.native
+  var manifest: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the resource; provided by the client when the resource is
@@ -57,35 +55,35 @@ trait SchemaDeployment extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The Operation that most recently ran, or is currently
     * running, on this deployment.
     */
-  var operation: js.UndefOr[SchemaOperation] = js.native
+  var operation: js.UndefOr[SchemaOperation] = js.undefined
   
   /**
     * Output only. Server defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Input Only] The parameters that define your deployment, including the
     * deployment configuration and relevant templates.
     */
-  var target: js.UndefOr[SchemaTargetConfiguration] = js.native
+  var target: js.UndefOr[SchemaTargetConfiguration] = js.undefined
   
   /**
     * Output only. If Deployment Manager is currently updating or previewing an
     * update to this deployment, the updated configuration appears here.
     */
-  var update: js.UndefOr[SchemaDeploymentUpdate] = js.native
+  var update: js.UndefOr[SchemaDeploymentUpdate] = js.undefined
   
   /**
     * Output only. Update timestamp in RFC3339 text format.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDeployment {
   

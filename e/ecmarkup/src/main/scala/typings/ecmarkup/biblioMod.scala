@@ -13,28 +13,27 @@ import typings.ecmarkup.ecmarkupStrings.term
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object biblioMod {
   
-  @js.native
   trait AlgorithmBiblioEntry
-    extends BiblioEntryBase
+    extends StObject
+       with BiblioEntryBase
        with BiblioEntry {
     
     @JSName("aoid")
-    var aoid_AlgorithmBiblioEntry: String = js.native
+    var aoid_AlgorithmBiblioEntry: String
     
     @JSName("type")
-    var type_AlgorithmBiblioEntry: op = js.native
+    var type_AlgorithmBiblioEntry: op
   }
   object AlgorithmBiblioEntry {
     
     @scala.inline
-    def apply(aoid: String, referencingIds: js.Array[String], `type`: op): AlgorithmBiblioEntry = {
+    def apply(aoid: String, referencingIds: js.Array[String]): AlgorithmBiblioEntry = {
       val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("op")
       __obj.asInstanceOf[AlgorithmBiblioEntry]
     }
     
@@ -63,9 +62,9 @@ object biblioMod {
   object BiblioEntry {
     
     @scala.inline
-    def AlgorithmBiblioEntry(aoid: String, referencingIds: js.Array[String], `type`: op): typings.ecmarkup.biblioMod.AlgorithmBiblioEntry = {
+    def AlgorithmBiblioEntry(aoid: String, referencingIds: js.Array[String]): typings.ecmarkup.biblioMod.AlgorithmBiblioEntry = {
       val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("op")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.AlgorithmBiblioEntry]
     }
     
@@ -76,11 +75,10 @@ object biblioMod {
       number: String | Double,
       referencingIds: js.Array[String],
       title: String,
-      titleHTML: String,
-      `type`: clause
+      titleHTML: String
     ): typings.ecmarkup.biblioMod.ClauseBiblioEntry = {
       val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleHTML = titleHTML.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("clause")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.ClauseBiblioEntry]
     }
     
@@ -98,57 +96,56 @@ object biblioMod {
     }
     
     @scala.inline
-    def ProductionBiblioEntry(name: String, referencingIds: js.Array[String], `type`: production): typings.ecmarkup.biblioMod.ProductionBiblioEntry = {
+    def ProductionBiblioEntry(name: String, referencingIds: js.Array[String]): typings.ecmarkup.biblioMod.ProductionBiblioEntry = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("production")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.ProductionBiblioEntry]
     }
     
     @scala.inline
-    def StepBiblioEntry(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double], `type`: step): typings.ecmarkup.biblioMod.StepBiblioEntry = {
+    def StepBiblioEntry(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double]): typings.ecmarkup.biblioMod.StepBiblioEntry = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], stepNumbers = stepNumbers.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("step")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.StepBiblioEntry]
     }
     
     @scala.inline
-    def TermBiblioEntry(refId: String, referencingIds: js.Array[String], term: String, `type`: term): typings.ecmarkup.biblioMod.TermBiblioEntry = {
+    def TermBiblioEntry(refId: String, referencingIds: js.Array[String], term: String): typings.ecmarkup.biblioMod.TermBiblioEntry = {
       val __obj = js.Dynamic.literal(refId = refId.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("term")
       __obj.asInstanceOf[typings.ecmarkup.biblioMod.TermBiblioEntry]
     }
   }
   
-  @js.native
   trait BiblioEntryBase extends StObject {
     
-    var aoid: js.UndefOr[String] = js.native
+    var aoid: js.UndefOr[String] = js.undefined
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var clauseId: js.UndefOr[String] = js.native
+    var clauseId: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
-    var number: js.UndefOr[String | Double] = js.native
+    var number: js.UndefOr[String | Double] = js.undefined
     
-    var refId: js.UndefOr[String] = js.native
+    var refId: js.UndefOr[String] = js.undefined
     
-    var referencingIds: js.Array[String] = js.native
+    var referencingIds: js.Array[String]
     
-    var term: js.UndefOr[String] = js.native
+    var term: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object BiblioEntryBase {
     
@@ -245,27 +242,27 @@ object biblioMod {
     }
   }
   
-  @js.native
   trait ClauseBiblioEntry
-    extends BiblioEntryBase
+    extends StObject
+       with BiblioEntryBase
        with BiblioEntry {
     
     @JSName("aoid")
-    var aoid_ClauseBiblioEntry: String = js.native
+    var aoid_ClauseBiblioEntry: String
     
     @JSName("id")
-    var id_ClauseBiblioEntry: String = js.native
+    var id_ClauseBiblioEntry: String
     
     @JSName("number")
-    var number_ClauseBiblioEntry: String | Double = js.native
+    var number_ClauseBiblioEntry: String | Double
     
-    var titleHTML: String = js.native
+    var titleHTML: String
     
     @JSName("title")
-    var title_ClauseBiblioEntry: String = js.native
+    var title_ClauseBiblioEntry: String
     
     @JSName("type")
-    var type_ClauseBiblioEntry: clause = js.native
+    var type_ClauseBiblioEntry: clause
   }
   object ClauseBiblioEntry {
     
@@ -276,11 +273,10 @@ object biblioMod {
       number: String | Double,
       referencingIds: js.Array[String],
       title: String,
-      titleHTML: String,
-      `type`: clause
+      titleHTML: String
     ): ClauseBiblioEntry = {
       val __obj = js.Dynamic.literal(aoid = aoid.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], titleHTML = titleHTML.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("clause")
       __obj.asInstanceOf[ClauseBiblioEntry]
     }
     
@@ -307,21 +303,21 @@ object biblioMod {
     }
   }
   
-  @js.native
   trait FigureBiblioEntry
-    extends BiblioEntryBase
+    extends StObject
+       with BiblioEntryBase
        with BiblioEntry {
     
     @JSName("id")
-    var id_FigureBiblioEntry: String = js.native
+    var id_FigureBiblioEntry: String
     
-    var node: HTMLElement = js.native
+    var node: HTMLElement
     
     @JSName("number")
-    var number_FigureBiblioEntry: String | Double = js.native
+    var number_FigureBiblioEntry: String | Double
     
     @JSName("type")
-    var type_FigureBiblioEntry: table | figure | example | note = js.native
+    var type_FigureBiblioEntry: table | figure | example | note
   }
   object FigureBiblioEntry {
     
@@ -355,23 +351,23 @@ object biblioMod {
     }
   }
   
-  @js.native
   trait ProductionBiblioEntry
-    extends BiblioEntryBase
+    extends StObject
+       with BiblioEntryBase
        with BiblioEntry {
     
     @JSName("name")
-    var name_ProductionBiblioEntry: String = js.native
+    var name_ProductionBiblioEntry: String
     
     @JSName("type")
-    var type_ProductionBiblioEntry: production = js.native
+    var type_ProductionBiblioEntry: production
   }
   object ProductionBiblioEntry {
     
     @scala.inline
-    def apply(name: String, referencingIds: js.Array[String], `type`: production): ProductionBiblioEntry = {
+    def apply(name: String, referencingIds: js.Array[String]): ProductionBiblioEntry = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("production")
       __obj.asInstanceOf[ProductionBiblioEntry]
     }
     
@@ -386,25 +382,25 @@ object biblioMod {
     }
   }
   
-  @js.native
   trait StepBiblioEntry
-    extends BiblioEntryBase
+    extends StObject
+       with BiblioEntryBase
        with BiblioEntry {
     
     @JSName("id")
-    var id_StepBiblioEntry: String = js.native
+    var id_StepBiblioEntry: String
     
-    var stepNumbers: js.Array[Double] = js.native
+    var stepNumbers: js.Array[Double]
     
     @JSName("type")
-    var type_StepBiblioEntry: step = js.native
+    var type_StepBiblioEntry: step
   }
   object StepBiblioEntry {
     
     @scala.inline
-    def apply(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double], `type`: step): StepBiblioEntry = {
+    def apply(id: String, referencingIds: js.Array[String], stepNumbers: js.Array[Double]): StepBiblioEntry = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], stepNumbers = stepNumbers.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("step")
       __obj.asInstanceOf[StepBiblioEntry]
     }
     
@@ -425,26 +421,26 @@ object biblioMod {
     }
   }
   
-  @js.native
   trait TermBiblioEntry
-    extends BiblioEntryBase
+    extends StObject
+       with BiblioEntryBase
        with BiblioEntry {
     
     @JSName("refId")
-    var refId_TermBiblioEntry: String = js.native
+    var refId_TermBiblioEntry: String
     
     @JSName("term")
-    var term_TermBiblioEntry: String = js.native
+    var term_TermBiblioEntry: String
     
     @JSName("type")
-    var type_TermBiblioEntry: term = js.native
+    var type_TermBiblioEntry: term
   }
   object TermBiblioEntry {
     
     @scala.inline
-    def apply(refId: String, referencingIds: js.Array[String], term: String, `type`: term): TermBiblioEntry = {
+    def apply(refId: String, referencingIds: js.Array[String], term: String): TermBiblioEntry = {
       val __obj = js.Dynamic.literal(refId = refId.asInstanceOf[js.Any], referencingIds = referencingIds.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("term")
       __obj.asInstanceOf[TermBiblioEntry]
     }
     

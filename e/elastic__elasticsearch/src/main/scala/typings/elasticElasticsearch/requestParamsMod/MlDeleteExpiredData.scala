@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlDeleteExpiredData[T] extends Generic {
+trait MlDeleteExpiredData[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var job_id: js.UndefOr[String] = js.native
+  var job_id: js.UndefOr[String] = js.undefined
   
-  var requests_per_second: js.UndefOr[Double] = js.native
+  var requests_per_second: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object MlDeleteExpiredData {
   
@@ -25,7 +25,7 @@ object MlDeleteExpiredData {
   }
   
   @scala.inline
-  implicit class MlDeleteExpiredDataMutableBuilder[Self <: MlDeleteExpiredData[_], T] (val x: Self with MlDeleteExpiredData[T]) extends AnyVal {
+  implicit class MlDeleteExpiredDataMutableBuilder[Self <: MlDeleteExpiredData[?], T] (val x: Self & MlDeleteExpiredData[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

@@ -3,12 +3,10 @@ package typings.std
 import typings.std.stdStrings.anyfunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WebAssembly {
   
-  @js.native
   trait CompileError extends StObject
   
   /* Rewritten from type alias, can be one of: 
@@ -21,10 +19,11 @@ object WebAssembly {
   
   type Exports = Record[java.lang.String, ExportValue]
   
-  @js.native
-  trait Global extends _ExportValue {
+  trait Global
+    extends StObject
+       with _ExportValue {
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Global {
     
@@ -42,12 +41,11 @@ object WebAssembly {
     }
   }
   
-  @js.native
   trait GlobalDescriptor extends StObject {
     
-    var mutable: js.UndefOr[scala.Boolean] = js.native
+    var mutable: js.UndefOr[scala.Boolean] = js.undefined
     
-    var value: ValueType = js.native
+    var value: ValueType
   }
   object GlobalDescriptor {
     
@@ -97,10 +95,9 @@ object WebAssembly {
   
   type Imports = Record[java.lang.String, ModuleImports]
   
-  @js.native
   trait Instance extends StObject {
     
-    val exports: Exports = js.native
+    val exports: Exports
   }
   object Instance {
     
@@ -118,15 +115,15 @@ object WebAssembly {
     }
   }
   
-  @js.native
   trait LinkError extends StObject
   
-  @js.native
-  trait Memory extends _ExportValue {
+  trait Memory
+    extends StObject
+       with _ExportValue {
     
-    val buffer: ArrayBuffer = js.native
+    val buffer: ArrayBuffer
     
-    def grow(delta: Double): Double = js.native
+    def grow(delta: Double): Double
   }
   object Memory {
     
@@ -147,12 +144,11 @@ object WebAssembly {
     }
   }
   
-  @js.native
   trait MemoryDescriptor extends StObject {
     
-    var initial: Double = js.native
+    var initial: Double
     
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
   }
   object MemoryDescriptor {
     
@@ -176,15 +172,13 @@ object WebAssembly {
     }
   }
   
-  @js.native
   trait Module extends StObject
   
-  @js.native
   trait ModuleExportDescriptor extends StObject {
     
-    var kind: ImportExportKind = js.native
+    var kind: ImportExportKind
     
-    var name: java.lang.String = js.native
+    var name: java.lang.String
   }
   object ModuleExportDescriptor {
     
@@ -205,14 +199,13 @@ object WebAssembly {
     }
   }
   
-  @js.native
   trait ModuleImportDescriptor extends StObject {
     
-    var kind: ImportExportKind = js.native
+    var kind: ImportExportKind
     
-    var module: java.lang.String = js.native
+    var module: java.lang.String
     
-    var name: java.lang.String = js.native
+    var name: java.lang.String
   }
   object ModuleImportDescriptor {
     
@@ -238,11 +231,12 @@ object WebAssembly {
   
   type ModuleImports = Record[java.lang.String, ImportValue]
   
-  @js.native
   trait RuntimeError extends StObject
   
   @js.native
-  trait Table extends _ExportValue {
+  trait Table
+    extends StObject
+       with _ExportValue {
     
     def get(index: Double): js.Function | Null = js.native
     
@@ -254,14 +248,13 @@ object WebAssembly {
     def set(index: Double, value: js.Function): Unit = js.native
   }
   
-  @js.native
   trait TableDescriptor extends StObject {
     
-    var element: TableKind = js.native
+    var element: TableKind
     
-    var initial: Double = js.native
+    var initial: Double
     
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
   }
   object TableDescriptor {
     
@@ -312,12 +305,11 @@ object WebAssembly {
     def i64: typings.std.stdStrings.i64 = "i64".asInstanceOf[typings.std.stdStrings.i64]
   }
   
-  @js.native
   trait WebAssemblyInstantiatedSource extends StObject {
     
-    var instance: Instance = js.native
+    var instance: Instance
     
-    var module: Module = js.native
+    var module: Module
   }
   object WebAssemblyInstantiatedSource {
     

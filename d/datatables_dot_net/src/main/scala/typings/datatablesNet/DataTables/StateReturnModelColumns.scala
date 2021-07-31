@@ -2,15 +2,13 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateReturnModelColumns extends StObject {
   
-  var search: SearchSettings = js.native
+  var search: SearchSettings
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object StateReturnModelColumns {
   

@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NormalPullDecl extends PullDecl {
+trait NormalPullDecl
+  extends StObject
+     with PullDecl {
   
-  var _rootDecl: RootPullDecl = js.native
+  var _rootDecl: RootPullDecl
   
-  var parentDecl: js.Any = js.native
+  var parentDecl: js.Any
   
-  var parentPath: js.Any = js.native
+  var parentPath: js.Any
 }
 object NormalPullDecl {
   

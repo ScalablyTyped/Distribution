@@ -16,7 +16,6 @@ import typings.std.MouseEvent
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object listMod {
@@ -115,13 +114,13 @@ object listMod {
     
     var needle: Double = js.native
     
-    def onEnd(e: TouchEvent with MouseEvent): Unit = js.native
+    def onEnd(e: TouchEvent & MouseEvent): Unit = js.native
     
     def onKeyDown(e: KeyboardEvent[Element]): Unit = js.native
     
     def onMouseMove(e: MouseEvent): Unit = js.native
     
-    def onMouseOrTouchStart(e: MouseEvent with TouchEvent): Unit = js.native
+    def onMouseOrTouchStart(e: MouseEvent & TouchEvent): Unit = js.native
     
     def onMove(clientX: Double, clientY: Double): js.UndefOr[Null] = js.native
     

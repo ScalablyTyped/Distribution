@@ -2,23 +2,21 @@ package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthUserData extends StObject {
   
-  var first_name: String = js.native
+  var first_name: String
   
-  var hash: String = js.native
+  var hash: String
   
-  var last_name: String = js.native
+  var last_name: String
   
-  var photo: String = js.native
+  var photo: String
   
-  var photo_rec: String = js.native
+  var photo_rec: String
   
-  var uid: Double = js.native
+  var uid: Double
 }
 object AuthUserData {
   

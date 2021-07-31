@@ -55,7 +55,6 @@ import typings.rbx.rbxStrings.white
 import typings.rbx.rbxStrings.widescreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object variablesMod {
@@ -163,32 +162,31 @@ object variablesMod {
   }
   
   /* Inlined rbx.rbx/types.Prefer<rbx.rbx/base/helpers/variables.VariablesOverrides, rbx.rbx/base/helpers/variables.VariablesDefaults> */
-  @js.native
   trait Variables extends StObject {
     
-    var badgeSizes: small | medium | large = js.native
+    var badgeSizes: small | medium | large
     
-    var breakpoints: mobile | tablet | desktop | widescreen | fullhd | touch = js.native
+    var breakpoints: mobile | tablet | desktop | widescreen | fullhd | touch
     
-    var breakpointsLimited: mobile | fullhd | touch = js.native
+    var breakpointsLimited: mobile | fullhd | touch
     
-    var colors: primary | success | info | warning | danger | light | dark | white | black | link = js.native
+    var colors: primary | success | info | warning | danger | light | dark | white | black | link
     
-    var displays: block | flex | `inline` | `inline-block` | `inline-flex` = js.native
+    var displays: block | flex | `inline` | `inline-block` | `inline-flex`
     
-    var floatPulledAlignments: left | right = js.native
+    var floatPulledAlignments: left | right
     
-    var shades: `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis` = js.native
+    var shades: `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
     
-    var textAlignments: centered | justified | left | right = js.native
+    var textAlignments: centered | justified | left | right
     
-    var textSizes: `1` | `2` | `3` | `4` | `5` | `6` | `7` = js.native
+    var textSizes: `1` | `2` | `3` | `4` | `5` | `6` | `7`
     
-    var textTransforms: capitalized | lowercase | uppercase = js.native
+    var textTransforms: capitalized | lowercase | uppercase
     
-    var textWeights: light | medium | normal | semibold | bold = js.native
+    var textWeights: light | medium | normal | semibold | bold
     
-    var tooltipPositions: top | right | bottom | left = js.native
+    var tooltipPositions: top | right | bottom | left
   }
   object Variables {
     
@@ -254,32 +252,31 @@ object variablesMod {
     }
   }
   
-  @js.native
   trait VariablesDefaults extends StObject {
     
-    var badgeSizes: small | medium | large = js.native
+    var badgeSizes: small | medium | large
     
-    var breakpoints: mobile | tablet | desktop | widescreen | fullhd | touch = js.native
+    var breakpoints: mobile | tablet | desktop | widescreen | fullhd | touch
     
-    var breakpointsLimited: mobile | fullhd | touch = js.native
+    var breakpointsLimited: mobile | fullhd | touch
     
-    var colors: primary | success | info | warning | danger | light | dark | white | black | link = js.native
+    var colors: primary | success | info | warning | danger | light | dark | white | black | link
     
-    var displays: block | flex | `inline` | `inline-block` | `inline-flex` = js.native
+    var displays: block | flex | `inline` | `inline-block` | `inline-flex`
     
-    var floatPulledAlignments: left | right = js.native
+    var floatPulledAlignments: left | right
     
-    var shades: `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis` = js.native
+    var shades: `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
     
-    var textAlignments: centered | justified | left | right = js.native
+    var textAlignments: centered | justified | left | right
     
-    var textSizes: `1` | `2` | `3` | `4` | `5` | `6` | `7` = js.native
+    var textSizes: `1` | `2` | `3` | `4` | `5` | `6` | `7`
     
-    var textTransforms: capitalized | lowercase | uppercase = js.native
+    var textTransforms: capitalized | lowercase | uppercase
     
-    var textWeights: light | medium | normal | semibold | bold = js.native
+    var textWeights: light | medium | normal | semibold | bold
     
-    var tooltipPositions: top | right | bottom | left = js.native
+    var tooltipPositions: top | right | bottom | left
   }
   object VariablesDefaults {
     
@@ -345,32 +342,31 @@ object variablesMod {
     }
   }
   
-  @js.native
   trait VariablesDefinitions extends StObject {
     
-    var badgeSizes: ReadonlyArraystringnumber = js.native
+    var badgeSizes: ReadonlyArraystringnumber
     
-    var breakpoints: ReadonlyArraystringnumber = js.native
+    var breakpoints: ReadonlyArraystringnumber
     
-    var breakpointsLimited: ReadonlyArraystringnumber = js.native
+    var breakpointsLimited: ReadonlyArraystringnumber
     
-    var colors: ReadonlyArraystringnumber = js.native
+    var colors: ReadonlyArraystringnumber
     
-    var displays: ReadonlyArraystringnumber = js.native
+    var displays: ReadonlyArraystringnumber
     
-    var floatPulledAlignments: ReadonlyArraystringnumber = js.native
+    var floatPulledAlignments: ReadonlyArraystringnumber
     
-    var shades: ReadonlyArraystringnumber = js.native
+    var shades: ReadonlyArraystringnumber
     
-    var textAlignments: ReadonlyArraystringnumber = js.native
+    var textAlignments: ReadonlyArraystringnumber
     
-    var textSizes: ReadonlyArraystringnumber = js.native
+    var textSizes: ReadonlyArraystringnumber
     
-    var textTransforms: ReadonlyArraystringnumber = js.native
+    var textTransforms: ReadonlyArraystringnumber
     
-    var textWeights: ReadonlyArraystringnumber = js.native
+    var textWeights: ReadonlyArraystringnumber
     
-    var tooltipPositions: ReadonlyArraystringnumber = js.native
+    var tooltipPositions: ReadonlyArraystringnumber
   }
   object VariablesDefinitions {
     
@@ -434,6 +430,5 @@ object variablesMod {
     }
   }
   
-  @js.native
   trait VariablesOverrides extends StObject
 }

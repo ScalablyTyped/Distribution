@@ -2,7 +2,6 @@ package typings.surveyKnockout.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("survey-knockout", "QuestionRatingModel")
@@ -54,7 +53,7 @@ class QuestionRatingModel protected () extends Question {
     * @see rateMax
     * @see rateStep
     */
-  var rateValues: js.Array[_] = js.native
+  var rateValues: js.Array[js.Any] = js.native
   
   def rateValuesChangedCallback(): Unit = js.native
   

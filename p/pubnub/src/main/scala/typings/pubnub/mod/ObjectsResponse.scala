@@ -2,15 +2,13 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectsResponse[DataType] extends StObject {
   
-  var data: DataType = js.native
+  var data: DataType
   
-  var status: Double = js.native
+  var status: Double
 }
 object ObjectsResponse {
   
@@ -21,7 +19,7 @@ object ObjectsResponse {
   }
   
   @scala.inline
-  implicit class ObjectsResponseMutableBuilder[Self <: ObjectsResponse[_], DataType] (val x: Self with ObjectsResponse[DataType]) extends AnyVal {
+  implicit class ObjectsResponseMutableBuilder[Self <: ObjectsResponse[?], DataType] (val x: Self & ObjectsResponse[DataType]) extends AnyVal {
     
     @scala.inline
     def setData(value: DataType): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

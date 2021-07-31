@@ -2,67 +2,65 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallFunctionOnRequest extends StObject {
   
   /**
     * Call arguments. All call arguments must belong to the same JavaScript world as the target
     * object.
     */
-  var arguments: js.UndefOr[js.Array[CallArgument]] = js.native
+  var arguments: js.UndefOr[js.Array[CallArgument]] = js.undefined
   
   /**
     * Whether execution should `await` for resulting value and return once awaited promise is
     * resolved.
     */
-  var awaitPromise: js.UndefOr[Boolean] = js.native
+  var awaitPromise: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies execution context which global object will be used to call function on. Either
     * executionContextId or objectId should be specified.
     */
-  var executionContextId: js.UndefOr[ExecutionContextId] = js.native
+  var executionContextId: js.UndefOr[ExecutionContextId] = js.undefined
   
   /**
     * Declaration of the function to call.
     */
-  var functionDeclaration: String = js.native
+  var functionDeclaration: String
   
   /**
     * Whether preview should be generated for the result.
     */
-  var generatePreview: js.UndefOr[Boolean] = js.native
+  var generatePreview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Symbolic group name that can be used to release multiple objects. If objectGroup is not
     * specified and objectId is, objectGroup will be inherited from object.
     */
-  var objectGroup: js.UndefOr[String] = js.native
+  var objectGroup: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the object to call function on. Either objectId or executionContextId should
     * be specified.
     */
-  var objectId: js.UndefOr[RemoteObjectId] = js.native
+  var objectId: js.UndefOr[RemoteObjectId] = js.undefined
   
   /**
     * Whether the result is expected to be a JSON object which should be sent by value.
     */
-  var returnByValue: js.UndefOr[Boolean] = js.native
+  var returnByValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * In silent mode exceptions thrown during evaluation are not reported and do not pause
     * execution. Overrides `setPauseOnException` state.
     */
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether execution should be treated as initiated by user in the UI.
     */
-  var userGesture: js.UndefOr[Boolean] = js.native
+  var userGesture: js.UndefOr[Boolean] = js.undefined
 }
 object CallFunctionOnRequest {
   

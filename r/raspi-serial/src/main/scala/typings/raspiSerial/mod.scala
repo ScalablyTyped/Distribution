@@ -33,7 +33,6 @@ import typings.raspiSerial.raspiSerialStrings.space
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -104,20 +103,19 @@ object mod {
   
   type ErrorCallback = js.Function1[/* err */ Error | String, Unit]
   
-  @js.native
   trait Options extends StObject {
     
     var baudRate: js.UndefOr[
         `115200` | `57600` | `38400` | `19200` | `9600` | `4800` | `2400` | `1800` | `1200` | `600` | `300` | `200` | `150` | `134` | `110` | `75` | `50` | Double
-      ] = js.native
+      ] = js.undefined
     
-    var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.native
+    var dataBits: js.UndefOr[`8` | `7` | `6` | `5`] = js.undefined
     
-    var parity: js.UndefOr[none | even | mark | odd | space] = js.native
+    var parity: js.UndefOr[none | even | mark | odd | space] = js.undefined
     
-    var portId: js.UndefOr[String] = js.native
+    var portId: js.UndefOr[String] = js.undefined
     
-    var stopBits: js.UndefOr[`1` | `2`] = js.native
+    var stopBits: js.UndefOr[`1` | `2`] = js.undefined
   }
   object Options {
     

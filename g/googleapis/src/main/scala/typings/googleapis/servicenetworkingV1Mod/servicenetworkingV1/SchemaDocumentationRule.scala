@@ -2,25 +2,23 @@ package typings.googleapis.servicenetworkingV1Mod.servicenetworkingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A documentation rule provides information about individual API elements.
   */
-@js.native
 trait SchemaDocumentationRule extends StObject {
   
   /**
     * Deprecation description of the selected element(s). It can be provided if
     * an element is marked as `deprecated`.
     */
-  var deprecationDescription: js.UndefOr[String] = js.native
+  var deprecationDescription: js.UndefOr[String] = js.undefined
   
   /**
     * Description of the selected API(s).
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The selector is a comma-separated list of patterns. Each pattern is a
@@ -31,7 +29,7 @@ trait SchemaDocumentationRule extends StObject {
     * more components. To specify a default for all applicable elements, the
     * whole pattern &quot;*&quot; is used.
     */
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
 }
 object SchemaDocumentationRule {
   

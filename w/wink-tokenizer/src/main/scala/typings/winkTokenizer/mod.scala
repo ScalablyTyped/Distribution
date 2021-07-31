@@ -3,7 +3,6 @@ package typings.winkTokenizer
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,9 @@ object mod {
   /**
     * create a tokenizer instance
     */
-  class ^ () extends Tokenizer
+  class ^ ()
+    extends StObject
+       with Tokenizer
   
   /**
     * It defines 0 or more properties from the list of 14 properties.
@@ -24,80 +25,79 @@ object mod {
     * Whatever tokens are created like this are tagged as alien
     * and z is the finger print code of this token type.
     */
-  @js.native
   trait Config extends StObject {
     
     /**
       * such as $ or £ symbols
       * @default true
       */
-    var currency: js.UndefOr[Boolean] = js.native
+    var currency: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var email: js.UndefOr[Boolean] = js.native
+    var email: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var emoji: js.UndefOr[Boolean] = js.native
+    var emoji: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var emoticon: js.UndefOr[Boolean] = js.native
+    var emoticon: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var hashtag: js.UndefOr[Boolean] = js.native
+    var hashtag: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var mention: js.UndefOr[Boolean] = js.native
+    var mention: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var number: js.UndefOr[Boolean] = js.native
+    var number: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ordinals like 1st , 2nd , 3rd , 4th or 12th or 91st
       * @default true
       */
-    var ordinal: js.UndefOr[Boolean] = js.native
+    var ordinal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var punctuation: js.UndefOr[Boolean] = js.native
+    var punctuation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var quoted_phrase: js.UndefOr[Boolean] = js.native
+    var quoted_phrase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var symbol: js.UndefOr[Boolean] = js.native
+    var symbol: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var time: js.UndefOr[Boolean] = js.native
+    var time: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var url: js.UndefOr[Boolean] = js.native
+    var url: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var word: js.UndefOr[Boolean] = js.native
+    var word: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -262,12 +262,11 @@ object mod {
     def word: typings.winkTokenizer.winkTokenizerStrings.word = "word".asInstanceOf[typings.winkTokenizer.winkTokenizerStrings.word]
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var tag: Tag = js.native
+    var tag: Tag
     
-    var value: String = js.native
+    var value: String
   }
   object Token {
     

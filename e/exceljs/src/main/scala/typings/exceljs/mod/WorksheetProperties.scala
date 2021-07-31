@@ -3,43 +3,41 @@ package typings.exceljs.mod
 import typings.exceljs.anon.PartialColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetProperties extends StObject {
   
   /**
   	 * Default column width (optional)
   	 */
-  var defaultColWidth: js.UndefOr[Double] = js.native
+  var defaultColWidth: js.UndefOr[Double] = js.undefined
   
   /**
   	 * Default row height (default: 15)
   	 */
-  var defaultRowHeight: Double = js.native
+  var defaultRowHeight: Double
   
   /**
   	 * default: 55
   	 */
-  var dyDescent: Double = js.native
+  var dyDescent: Double
   
   /**
   	 * The worksheet column outline level (default: 0)
   	 */
-  var outlineLevelCol: Double = js.native
+  var outlineLevelCol: Double
   
   /**
   	 * The worksheet row outline level (default: 0)
   	 */
-  var outlineLevelRow: Double = js.native
+  var outlineLevelRow: Double
   
-  var showGridLines: Boolean = js.native
+  var showGridLines: Boolean
   
   /**
   	 * Color of the tab
   	 */
-  var tabColor: PartialColor = js.native
+  var tabColor: PartialColor
 }
 object WorksheetProperties {
   

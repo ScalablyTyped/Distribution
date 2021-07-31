@@ -2,22 +2,20 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents an account passed into the Account Manager on Glass.
   */
-@js.native
 trait SchemaAccount extends StObject {
   
-  var authTokens: js.UndefOr[js.Array[SchemaAuthToken]] = js.native
+  var authTokens: js.UndefOr[js.Array[SchemaAuthToken]] = js.undefined
   
-  var features: js.UndefOr[js.Array[String]] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var userData: js.UndefOr[js.Array[SchemaUserData]] = js.native
+  var userData: js.UndefOr[js.Array[SchemaUserData]] = js.undefined
 }
 object SchemaAccount {
   

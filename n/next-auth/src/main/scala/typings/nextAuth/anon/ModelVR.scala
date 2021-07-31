@@ -3,15 +3,13 @@ package typings.nextAuth.anon
 import typings.nextAuth.adaptersMod.TypeORMVerificationRequestModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelVR[VR /* <: TypeORMVerificationRequestModel */] extends StObject {
   
-  var model: VR = js.native
+  var model: VR
   
-  var schema: typings.nextAuth.adaptersMod.Schema[VR] = js.native
+  var schema: typings.nextAuth.adaptersMod.Schema[VR]
 }
 object ModelVR {
   
@@ -22,7 +20,7 @@ object ModelVR {
   }
   
   @scala.inline
-  implicit class ModelVRMutableBuilder[Self <: ModelVR[_], VR /* <: TypeORMVerificationRequestModel */] (val x: Self with ModelVR[VR]) extends AnyVal {
+  implicit class ModelVRMutableBuilder[Self <: ModelVR[?], VR /* <: TypeORMVerificationRequestModel */] (val x: Self & ModelVR[VR]) extends AnyVal {
     
     @scala.inline
     def setModel(value: VR): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])

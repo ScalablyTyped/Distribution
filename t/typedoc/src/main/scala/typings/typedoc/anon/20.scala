@@ -3,19 +3,17 @@ package typings.typedoc.anon
 import typings.typedoc.typedocStrings.excludeNotExported
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `20` extends StObject {
   
-  var name: excludeNotExported = js.native
+  var name: excludeNotExported
 }
 object `20` {
   
   @scala.inline
-  def apply(name: excludeNotExported): `20` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `20` = {
+    val __obj = js.Dynamic.literal(name = "excludeNotExported")
     __obj.asInstanceOf[`20`]
   }
   

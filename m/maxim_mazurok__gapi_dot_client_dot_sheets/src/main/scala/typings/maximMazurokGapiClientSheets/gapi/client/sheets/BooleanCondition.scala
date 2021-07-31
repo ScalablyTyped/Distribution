@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BooleanCondition extends StObject {
   
   /** The type of condition. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * The values of the condition. The number of supported values depends on the condition type. Some support zero values, others one or two values, and ConditionType.ONE_OF_LIST supports
     * an arbitrary number of values.
     */
-  var values: js.UndefOr[js.Array[ConditionValue]] = js.native
+  var values: js.UndefOr[js.Array[ConditionValue]] = js.undefined
 }
 object BooleanCondition {
   

@@ -2,10 +2,8 @@ package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SetOptions extends StObject {
     * in its data argument. Fields omitted from the set() call remain
     * untouched.
     */
-  val merge: js.UndefOr[Boolean] = js.native
+  val merge: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Changes the behavior of set() calls to only replace the specified field
@@ -23,7 +21,7 @@ trait SetOptions extends StObject {
     * It is an error to pass a SetOptions object to a set() call that is
     * missing a value for any of the fields specified here.
     */
-  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.native
+  val mergeFields: js.UndefOr[js.Array[String | FieldPath]] = js.undefined
 }
 object SetOptions {
   

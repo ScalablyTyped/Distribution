@@ -2,18 +2,16 @@ package typings.materializeCss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<materialize-css.M.FloatingActionButton, 'open' | 'close' | 'destroy'> */
-@js.native
 trait PickFloatingActionButtono extends StObject {
   
-  var close: js.UndefOr[js.Any] = js.native
+  var close: js.UndefOr[js.Any] = js.undefined
   
-  var destroy: js.UndefOr[js.Any] = js.native
+  var destroy: js.UndefOr[js.Any] = js.undefined
   
-  var open: js.UndefOr[js.Any] = js.native
+  var open: js.UndefOr[js.Any] = js.undefined
 }
 object PickFloatingActionButtono {
   

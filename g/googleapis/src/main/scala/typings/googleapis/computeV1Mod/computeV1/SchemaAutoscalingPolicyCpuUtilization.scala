@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * CPU utilization policy.
   */
-@js.native
 trait SchemaAutoscalingPolicyCpuUtilization extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaAutoscalingPolicyCpuUtilization extends StObject {
     * you specified or until the average utilization reaches the target
     * utilization.
     */
-  var utilizationTarget: js.UndefOr[Double] = js.native
+  var utilizationTarget: js.UndefOr[Double] = js.undefined
 }
 object SchemaAutoscalingPolicyCpuUtilization {
   

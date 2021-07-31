@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridAppendRowsOnDemandLocale
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait IgGridAppendRowsOnDemandLocale
     * Specifies caption text for the "load more data" button.
     *
     */
-  var loadMoreDataButtonText: js.UndefOr[String] = js.native
+  var loadMoreDataButtonText: js.UndefOr[String] = js.undefined
 }
 object IgGridAppendRowsOnDemandLocale {
   

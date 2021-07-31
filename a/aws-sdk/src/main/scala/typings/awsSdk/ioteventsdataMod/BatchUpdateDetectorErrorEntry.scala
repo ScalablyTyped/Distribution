@@ -2,26 +2,24 @@ package typings.awsSdk.ioteventsdataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateDetectorErrorEntry extends StObject {
   
   /**
     * The code of the error.
     */
-  var errorCode: js.UndefOr[ErrorCode] = js.native
+  var errorCode: js.UndefOr[ErrorCode] = js.undefined
   
   /**
     * A message describing the error.
     */
-  var errorMessage: js.UndefOr[ErrorMessage] = js.native
+  var errorMessage: js.UndefOr[ErrorMessage] = js.undefined
   
   /**
     * The "messageId" of the update request that caused the error. (The value of the "messageId" in the update request "Detector" object.)
     */
-  var messageId: js.UndefOr[MessageId] = js.native
+  var messageId: js.UndefOr[MessageId] = js.undefined
 }
 object BatchUpdateDetectorErrorEntry {
   

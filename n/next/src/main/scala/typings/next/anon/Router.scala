@@ -2,13 +2,11 @@ package typings.next.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Router extends StObject {
   
-  var router: typings.next.routerMod.Router = js.native
+  var router: typings.next.routerMod.Router
 }
 object Router {
   

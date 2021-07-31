@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropagatingVgw extends StObject {
   
   /**
     * The ID of the virtual private gateway.
     */
-  var GatewayId: js.UndefOr[String] = js.native
+  var GatewayId: js.UndefOr[String] = js.undefined
 }
 object PropagatingVgw {
   

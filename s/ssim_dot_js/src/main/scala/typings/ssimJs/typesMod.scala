@@ -14,19 +14,19 @@ import typings.std.Uint8Array
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
-  trait ImageData extends ImageMatrix {
+  trait ImageData
+    extends StObject
+       with ImageMatrix {
     
-    val data: Uint8ClampedArray = js.native
+    val data: Uint8ClampedArray
     
-    val height: Double = js.native
+    val height: Double
     
-    val width: Double = js.native
+    val width: Double
   }
   object ImageData {
     
@@ -83,17 +83,11 @@ object typesMod {
   
   type Images = js.Tuple3[ImageData, ImageData, Options]
   
-  /* Inlined ssim.js.ssim.js/dist/types.Matrix & {  mssim :number} */
-  @js.native
-  trait MSSIMMatrix extends StObject {
+  trait MSSIMMatrix
+    extends StObject
+       with Matrix {
     
-    var data: js.Array[Double] = js.native
-    
-    var height: Double = js.native
-    
-    var mssim: Double = js.native
-    
-    var width: Double = js.native
+    var mssim: Double
   }
   object MSSIMMatrix {
     
@@ -107,32 +101,21 @@ object typesMod {
     implicit class MSSIMMatrixMutableBuilder[Self <: MSSIMMatrix] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setData(value: js.Array[Double]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDataVarargs(value: Double*): Self = StObject.set(x, "data", js.Array(value :_*))
-      
-      @scala.inline
-      def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setMssim(value: Double): Self = StObject.set(x, "mssim", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setWidth(value: Double): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     }
   }
   
   type Matrices = js.Tuple3[Matrix, Matrix, Options]
   
-  @js.native
-  trait Matrix extends ImageMatrix {
+  trait Matrix
+    extends StObject
+       with ImageMatrix {
     
-    var data: js.Array[Double] = js.native
+    var data: js.Array[Double]
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Matrix {
     
@@ -159,24 +142,23 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var bitDepth: Double = js.native
+    var bitDepth: Double
     
-    var downsample: original | fast | `false` = js.native
+    var downsample: original | fast | `false`
     
-    var k1: Double = js.native
+    var k1: Double
     
-    var k2: Double = js.native
+    var k2: Double
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var rgb2grayVersion: original | integer = js.native
+    var rgb2grayVersion: original | integer
     
-    var ssim: fast | original | bezkrovny | weber = js.native
+    var ssim: fast | original | bezkrovny | weber
     
-    var windowSize: Double = js.native
+    var windowSize: Double
   }
   object Options {
     

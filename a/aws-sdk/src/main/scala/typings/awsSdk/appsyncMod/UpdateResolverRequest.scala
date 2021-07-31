@@ -2,61 +2,59 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResolverRequest extends StObject {
   
   /**
     * The API ID.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * The caching configuration for the resolver.
     */
-  var cachingConfig: js.UndefOr[CachingConfig] = js.native
+  var cachingConfig: js.UndefOr[CachingConfig] = js.undefined
   
   /**
     * The new data source name.
     */
-  var dataSourceName: js.UndefOr[ResourceName] = js.native
+  var dataSourceName: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The new field name.
     */
-  var fieldName: ResourceName = js.native
+  var fieldName: ResourceName
   
   /**
     * The resolver type.    UNIT: A UNIT resolver type. A UNIT resolver is the default resolver type. A UNIT resolver enables you to execute a GraphQL query against a single data source.    PIPELINE: A PIPELINE resolver type. A PIPELINE resolver enables you to execute a series of Function in a serial manner. You can use a pipeline resolver to execute a GraphQL query against multiple data sources.  
     */
-  var kind: js.UndefOr[ResolverKind] = js.native
+  var kind: js.UndefOr[ResolverKind] = js.undefined
   
   /**
     * The PipelineConfig.
     */
-  var pipelineConfig: js.UndefOr[PipelineConfig] = js.native
+  var pipelineConfig: js.UndefOr[PipelineConfig] = js.undefined
   
   /**
     * The new request mapping template. A resolver uses a request mapping template to convert a GraphQL expression into a format that a data source can understand. Mapping templates are written in Apache Velocity Template Language (VTL). VTL request mapping templates are optional when using a Lambda data source. For all other data sources, VTL request and response mapping templates are required.
     */
-  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var requestMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
     * The new response mapping template.
     */
-  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.native
+  var responseMappingTemplate: js.UndefOr[MappingTemplate] = js.undefined
   
   /**
     * The SyncConfig for a resolver attached to a versioned datasource.
     */
-  var syncConfig: js.UndefOr[SyncConfig] = js.native
+  var syncConfig: js.UndefOr[SyncConfig] = js.undefined
   
   /**
     * The new type name.
     */
-  var typeName: ResourceName = js.native
+  var typeName: ResourceName
 }
 object UpdateResolverRequest {
   

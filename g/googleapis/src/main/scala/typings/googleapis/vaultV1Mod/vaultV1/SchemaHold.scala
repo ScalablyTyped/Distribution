@@ -2,7 +2,6 @@ package typings.googleapis.vaultV1Mod.vaultV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,47 +10,46 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * configured to either apply to an explicitly configured set of accounts, or
   * can be applied to all members of an organizational unit.
   */
-@js.native
 trait SchemaHold extends StObject {
   
   /**
     * If set, the hold applies to the enumerated accounts and org_unit must be
     * empty.
     */
-  var accounts: js.UndefOr[js.Array[SchemaHeldAccount]] = js.native
+  var accounts: js.UndefOr[js.Array[SchemaHeldAccount]] = js.undefined
   
   /**
     * The corpus to be searched.
     */
-  var corpus: js.UndefOr[String] = js.native
+  var corpus: js.UndefOr[String] = js.undefined
   
   /**
     * The unique immutable ID of the hold. Assigned during creation.
     */
-  var holdId: js.UndefOr[String] = js.native
+  var holdId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the hold.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * If set, the hold applies to all members of the organizational unit and
     * accounts must be empty. This property is mutable. For groups holds, set
     * the accounts field.
     */
-  var orgUnit: js.UndefOr[SchemaHeldOrgUnit] = js.native
+  var orgUnit: js.UndefOr[SchemaHeldOrgUnit] = js.undefined
   
   /**
     * The corpus-specific query. If set, the corpusQuery must match corpus
     * type.
     */
-  var query: js.UndefOr[SchemaCorpusQuery] = js.native
+  var query: js.UndefOr[SchemaCorpusQuery] = js.undefined
   
   /**
     * The last time this hold was modified.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaHold {
   

@@ -2,31 +2,29 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutliningSpan extends StObject {
   
   /**
     * Whether or not this region should be automatically collapsed when
     * the 'Collapse to Definitions' command is invoked.
     */
-  var autoCollapse: Boolean = js.native
+  var autoCollapse: Boolean
   
   /** The text to display in the editor for the collapsed region. */
-  var bannerText: java.lang.String = js.native
+  var bannerText: java.lang.String
   
   /** The span of the document to display when the user hovers over the collapsed span. */
-  var hintSpan: TextSpan = js.native
+  var hintSpan: TextSpan
   
   /**
     * Classification of the contents of the span
     */
-  var kind: OutliningSpanKind = js.native
+  var kind: OutliningSpanKind
   
   /** The span of the document to actually collapse. */
-  var textSpan: TextSpan = js.native
+  var textSpan: TextSpan
 }
 object OutliningSpan {
   

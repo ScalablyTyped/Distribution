@@ -10,7 +10,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions")
@@ -18,7 +17,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class MethodOptions () extends Message {
   
   def addUninterpretedOption(): UninterpretedOption = js.native
-  def addUninterpretedOption(value: js.UndefOr[scala.Nothing], index: Double): UninterpretedOption = js.native
+  def addUninterpretedOption(value: Unit, index: Double): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption): UninterpretedOption = js.native
   def addUninterpretedOption(value: UninterpretedOption, index: Double): UninterpretedOption = js.native
   
@@ -58,28 +57,32 @@ object MethodOptions {
   object IdempotencyLevel extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[IdempotencyLevel with Double] = js.native
+    def apply(value: Double): js.UndefOr[IdempotencyLevel & Double] = js.native
     
     @js.native
-    sealed trait IDEMPOTENCY_UNKNOWN extends IdempotencyLevel
-    /* 0 */ val IDEMPOTENCY_UNKNOWN: typings.googleProtobuf.descriptorPbMod.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN with Double = js.native
+    sealed trait IDEMPOTENCY_UNKNOWN
+      extends StObject
+         with IdempotencyLevel
+    /* 0 */ val IDEMPOTENCY_UNKNOWN: typings.googleProtobuf.descriptorPbMod.MethodOptions.IdempotencyLevel.IDEMPOTENCY_UNKNOWN & Double = js.native
     
     @js.native
-    sealed trait IDEMPOTENT extends IdempotencyLevel
-    /* 2 */ val IDEMPOTENT: typings.googleProtobuf.descriptorPbMod.MethodOptions.IdempotencyLevel.IDEMPOTENT with Double = js.native
+    sealed trait IDEMPOTENT
+      extends StObject
+         with IdempotencyLevel
+    /* 2 */ val IDEMPOTENT: typings.googleProtobuf.descriptorPbMod.MethodOptions.IdempotencyLevel.IDEMPOTENT & Double = js.native
     
     @js.native
-    sealed trait NO_SIDE_EFFECTS extends IdempotencyLevel
-    /* 1 */ val NO_SIDE_EFFECTS: typings.googleProtobuf.descriptorPbMod.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS with Double = js.native
+    sealed trait NO_SIDE_EFFECTS
+      extends StObject
+         with IdempotencyLevel
+    /* 1 */ val NO_SIDE_EFFECTS: typings.googleProtobuf.descriptorPbMod.MethodOptions.IdempotencyLevel.NO_SIDE_EFFECTS & Double = js.native
   }
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): MethodOptions = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): MethodOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[MethodOptions]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: MethodOptions, reader: BinaryReader): MethodOptions = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: MethodOptions, reader: BinaryReader): MethodOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[MethodOptions]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions.extensions")
   @js.native
@@ -94,22 +97,19 @@ object MethodOptions {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: MethodOptions, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: MethodOptions, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodOptions.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: MethodOptions): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: MethodOptions): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var deprecated: js.UndefOr[Boolean] = js.native
+    var deprecated: js.UndefOr[Boolean] = js.undefined
     
-    var idempotencyLevel: js.UndefOr[IdempotencyLevel] = js.native
+    var idempotencyLevel: js.UndefOr[IdempotencyLevel] = js.undefined
     
-    var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject] = js.native
+    var uninterpretedOptionList: js.Array[typings.googleProtobuf.descriptorPbMod.UninterpretedOption.AsObject]
   }
   object AsObject {
     

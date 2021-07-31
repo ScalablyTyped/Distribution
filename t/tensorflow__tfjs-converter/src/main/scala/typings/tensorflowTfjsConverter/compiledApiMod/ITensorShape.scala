@@ -3,17 +3,15 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import typings.tensorflowTfjsConverter.compiledApiMod.TensorShape.IDim
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITensorShape extends StObject {
   
   /** TensorShape dim */
-  var dim: js.UndefOr[js.Array[IDim] | Null] = js.native
+  var dim: js.UndefOr[js.Array[IDim] | Null] = js.undefined
   
   /** TensorShape unknownRank */
-  var unknownRank: js.UndefOr[Boolean | Null] = js.native
+  var unknownRank: js.UndefOr[Boolean | Null] = js.undefined
 }
 object ITensorShape {
   

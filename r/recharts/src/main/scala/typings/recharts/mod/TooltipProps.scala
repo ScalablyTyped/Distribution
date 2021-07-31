@@ -5,51 +5,51 @@ import typings.react.mod.ReactNode
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TooltipProps extends Animatable {
+trait TooltipProps
+  extends StObject
+     with Animatable {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var allowEscapeViewBox: js.UndefOr[AllowEscapeViewBox] = js.native
+  var allowEscapeViewBox: js.UndefOr[AllowEscapeViewBox] = js.undefined
   
-  var content: js.UndefOr[ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps]] = js.native
+  var content: js.UndefOr[ReactElement | StatelessComponent[js.Any] | ContentRenderer[TooltipProps]] = js.undefined
   
-  var contentStyle: js.UndefOr[js.Object] = js.native
+  var contentStyle: js.UndefOr[js.Object] = js.undefined
   
-  var coordinate: js.UndefOr[Coordinate] = js.native
+  var coordinate: js.UndefOr[Coordinate] = js.undefined
   
-  var cursor: js.UndefOr[Boolean | js.Object | ReactElement | StatelessComponent[_]] = js.native
+  var cursor: js.UndefOr[Boolean | js.Object | ReactElement | StatelessComponent[js.Any]] = js.undefined
   
-  var filterNull: js.UndefOr[Boolean] = js.native
+  var filterNull: js.UndefOr[Boolean] = js.undefined
   
-  var formatter: js.UndefOr[TooltipFormatter] = js.native
+  var formatter: js.UndefOr[TooltipFormatter] = js.undefined
   
-  var itemSorter: js.UndefOr[ItemSorter[TooltipPayload]] = js.native
+  var itemSorter: js.UndefOr[ItemSorter[TooltipPayload]] = js.undefined
   
-  var itemStyle: js.UndefOr[js.Object] = js.native
+  var itemStyle: js.UndefOr[js.Object] = js.undefined
   
-  var label: js.UndefOr[String | Double] = js.native
+  var label: js.UndefOr[String | Double] = js.undefined
   
-  var labelFormatter: js.UndefOr[LabelFormatter] = js.native
+  var labelFormatter: js.UndefOr[LabelFormatter] = js.undefined
   
-  var labelStyle: js.UndefOr[js.Object] = js.native
+  var labelStyle: js.UndefOr[js.Object] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var payload: js.UndefOr[js.Array[TooltipPayload]] = js.native
+  var payload: js.UndefOr[js.Array[TooltipPayload]] = js.undefined
   
-  var position: js.UndefOr[Coordinate] = js.native
+  var position: js.UndefOr[Coordinate] = js.undefined
   
-  var separator: js.UndefOr[String] = js.native
+  var separator: js.UndefOr[String] = js.undefined
   
-  var useTranslate3d: js.UndefOr[Boolean] = js.native
+  var useTranslate3d: js.UndefOr[Boolean] = js.undefined
   
-  var viewBox: js.UndefOr[ViewBox] = js.native
+  var viewBox: js.UndefOr[ViewBox] = js.undefined
   
-  var wrapperStyle: js.UndefOr[js.Object] = js.native
+  var wrapperStyle: js.UndefOr[js.Object] = js.undefined
 }
 object TooltipProps {
   
@@ -75,7 +75,7 @@ object TooltipProps {
     def setAllowEscapeViewBoxUndefined: Self = StObject.set(x, "allowEscapeViewBox", js.undefined)
     
     @scala.inline
-    def setContent(value: ReactElement | StatelessComponent[_] | ContentRenderer[TooltipProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
+    def setContent(value: ReactElement | StatelessComponent[js.Any] | ContentRenderer[TooltipProps]): Self = StObject.set(x, "content", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContentFunction1(value: TooltipProps => ReactNode): Self = StObject.set(x, "content", js.Any.fromFunction1(value))
@@ -96,7 +96,7 @@ object TooltipProps {
     def setCoordinateUndefined: Self = StObject.set(x, "coordinate", js.undefined)
     
     @scala.inline
-    def setCursor(value: Boolean | js.Object | ReactElement | StatelessComponent[_]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
+    def setCursor(value: Boolean | js.Object | ReactElement | StatelessComponent[js.Any]): Self = StObject.set(x, "cursor", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCursorUndefined: Self = StObject.set(x, "cursor", js.undefined)

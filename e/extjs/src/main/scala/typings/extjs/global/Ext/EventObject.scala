@@ -4,13 +4,13 @@ import typings.extjs.Ext.util.IPoint
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.EventObject")
 @js.native
 class EventObject ()
-  extends typings.extjs.Ext.EventObject
+  extends StObject
+     with typings.extjs.Ext.EventObject
 /* static members */
 object EventObject {
   
@@ -663,12 +663,10 @@ object EventObject {
   /** [Method] Correctly scales a given wheel delta
     * @param delta Number The delta value.
     */
-  @JSGlobal("Ext.EventObject.correctWheelDelta")
-  @js.native
-  def correctWheelDelta(): Unit = js.native
-  @JSGlobal("Ext.EventObject.correctWheelDelta")
-  @js.native
-  def correctWheelDelta(delta: Double): Unit = js.native
+  @scala.inline
+  def correctWheelDelta(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("correctWheelDelta")().asInstanceOf[Unit]
+  @scala.inline
+  def correctWheelDelta(delta: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("correctWheelDelta")(delta.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.EventObject.ctrlKey")
@@ -680,37 +678,32 @@ object EventObject {
   /** [Method] Gets the character code for the event
     * @returns Number
     */
-  @JSGlobal("Ext.EventObject.getCharCode")
-  @js.native
-  def getCharCode(): Double = js.native
+  @scala.inline
+  def getCharCode(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCharCode")().asInstanceOf[Double]
   
   /** [Method] Returns a normalized keyCode for the event
     * @returns Number The key code
     */
-  @JSGlobal("Ext.EventObject.getKey")
-  @js.native
-  def getKey(): Double = js.native
+  @scala.inline
+  def getKey(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKey")().asInstanceOf[Double]
   
   /** [Method] Gets the x coordinate of the event
     * @returns Number
     */
-  @JSGlobal("Ext.EventObject.getPageX")
-  @js.native
-  def getPageX(): Double = js.native
+  @scala.inline
+  def getPageX(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageX")().asInstanceOf[Double]
   
   /** [Method] Gets the y coordinate of the event
     * @returns Number
     */
-  @JSGlobal("Ext.EventObject.getPageY")
-  @js.native
-  def getPageY(): Double = js.native
+  @scala.inline
+  def getPageY(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getPageY")().asInstanceOf[Double]
   
   /** [Method] Returns a point object that consists of the object coordinates
     * @returns Ext.util.Point point
     */
-  @JSGlobal("Ext.EventObject.getPoint")
-  @js.native
-  def getPoint(): IPoint = js.native
+  @scala.inline
+  def getPoint(): IPoint = ^.asInstanceOf[js.Dynamic].applyDynamic("getPoint")().asInstanceOf[IPoint]
   
   /** [Method] Gets the related target
     * @param selector String A simple selector to filter the target or look for an ancestor of the target
@@ -718,30 +711,22 @@ object EventObject {
     * @param returnEl Boolean True to return a Ext.Element object instead of DOM node
     * @returns HTMLElement
     */
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(selector: java.lang.String): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(selector: java.lang.String, maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getRelatedTarget")
-  @js.native
-  def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
+  @scala.inline
+  def getRelatedTarget(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")().asInstanceOf[HTMLElement]
+  @scala.inline
+  def getRelatedTarget(selector: java.lang.String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getRelatedTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getRelatedTarget(selector: java.lang.String, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getRelatedTarget(selector: Unit, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getRelatedTarget(selector: Unit, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getRelatedTarget(selector: Unit, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getRelatedTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /** [Method] Gets the target for the event
     * @param selector String A simple selector to filter the target or look for an ancestor of the target
@@ -749,101 +734,82 @@ object EventObject {
     * @param returnEl Boolean True to return a Ext.Element object instead of DOM node
     * @returns HTMLElement
     */
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(selector: js.UndefOr[scala.Nothing], maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(selector: java.lang.String): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(selector: java.lang.String, maxDepth: js.UndefOr[scala.Nothing], returnEl: Boolean): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = js.native
-  @JSGlobal("Ext.EventObject.getTarget")
-  @js.native
-  def getTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = js.native
+  @scala.inline
+  def getTarget(): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")().asInstanceOf[HTMLElement]
+  @scala.inline
+  def getTarget(selector: java.lang.String): HTMLElement = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any]).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getTarget(selector: java.lang.String, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getTarget(selector: java.lang.String, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getTarget(selector: java.lang.String, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getTarget(selector: Unit, maxDepth: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getTarget(selector: Unit, maxDepth: js.Any, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
+  @scala.inline
+  def getTarget(selector: Unit, maxDepth: Unit, returnEl: Boolean): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(selector.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], returnEl.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
   
   /** [Method] Normalizes mouse wheel y delta across browsers
     * @returns Number The mouse wheel y-delta
     */
-  @JSGlobal("Ext.EventObject.getWheelDelta")
-  @js.native
-  def getWheelDelta(): Double = js.native
+  @scala.inline
+  def getWheelDelta(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDelta")().asInstanceOf[Double]
   
   /** [Method] Returns the mouse wheel deltas for this event
     * @returns Object An object with "x" and "y" properties holding the mouse wheel deltas.
     */
-  @JSGlobal("Ext.EventObject.getWheelDeltas")
-  @js.native
-  def getWheelDeltas(): js.Any = js.native
+  @scala.inline
+  def getWheelDeltas(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getWheelDeltas")().asInstanceOf[js.Any]
   
   /** [Method] Gets the x coordinate of the event
     * @returns Number
     */
-  @JSGlobal("Ext.EventObject.getX")
-  @js.native
-  def getX(): Double = js.native
+  @scala.inline
+  def getX(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getX")().asInstanceOf[Double]
   
   /** [Method] Gets the page coordinates of the event
     * @returns Number[] The xy values like [x, y]
     */
-  @JSGlobal("Ext.EventObject.getXY")
-  @js.native
-  def getXY(): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def getXY(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getXY")().asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Gets the y coordinate of the event
     * @returns Number
     */
-  @JSGlobal("Ext.EventObject.getY")
-  @js.native
-  def getY(): Double = js.native
+  @scala.inline
+  def getY(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getY")().asInstanceOf[Double]
   
   /** [Method] Returns true if the control meta shift or alt key was pressed during this event
     * @returns Boolean
     */
-  @JSGlobal("Ext.EventObject.hasModifier")
-  @js.native
-  def hasModifier(): Boolean = js.native
+  @scala.inline
+  def hasModifier(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasModifier")().asInstanceOf[Boolean]
   
   /** [Method] Injects a DOM event using the data in this object and optionally a new target
     * @param target Ext.Element/HTMLElement If specified, the target for the event. This is likely to be used when relaying a DOM event. If not specified, getTarget is used to determine the target.
     */
-  @JSGlobal("Ext.EventObject.injectEvent")
-  @js.native
-  def injectEvent(): Unit = js.native
-  @JSGlobal("Ext.EventObject.injectEvent")
-  @js.native
-  def injectEvent(target: js.Any): Unit = js.native
+  @scala.inline
+  def injectEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectEvent")().asInstanceOf[Unit]
+  @scala.inline
+  def injectEvent(target: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("injectEvent")(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /** [Method] Checks if the key pressed was a navigation key
     * @returns Boolean True if the press is a navigation keypress
     */
-  @JSGlobal("Ext.EventObject.isNavKeyPress")
-  @js.native
-  def isNavKeyPress(): Boolean = js.native
+  @scala.inline
+  def isNavKeyPress(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNavKeyPress")().asInstanceOf[Boolean]
   
   /** [Method] Checks if the key pressed was a special key
     * @returns Boolean True if the press is a special keypress
     */
-  @JSGlobal("Ext.EventObject.isSpecialKey")
-  @js.native
-  def isSpecialKey(): Boolean = js.native
+  @scala.inline
+  def isSpecialKey(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSpecialKey")().asInstanceOf[Boolean]
   
   /** [Method] Prevents the browsers default handling of the event  */
-  @JSGlobal("Ext.EventObject.preventDefault")
-  @js.native
-  def preventDefault(): Unit = js.native
+  @scala.inline
+  def preventDefault(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("preventDefault")().asInstanceOf[Unit]
   
   /** [Property] (Boolean) */
   @JSGlobal("Ext.EventObject.shiftKey")
@@ -853,14 +819,12 @@ object EventObject {
   def shiftKey_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("shiftKey")(x.asInstanceOf[js.Any])
   
   /** [Method] Stop the event preventDefault and stopPropagation  */
-  @JSGlobal("Ext.EventObject.stopEvent")
-  @js.native
-  def stopEvent(): Unit = js.native
+  @scala.inline
+  def stopEvent(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopEvent")().asInstanceOf[Unit]
   
   /** [Method] Cancels bubbling of the event  */
-  @JSGlobal("Ext.EventObject.stopPropagation")
-  @js.native
-  def stopPropagation(): Unit = js.native
+  @scala.inline
+  def stopPropagation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopPropagation")().asInstanceOf[Unit]
   
   /** [Method] Returns true if the target of this event is a child of el
     * @param el String/HTMLElement/Ext.Element The id, DOM element or Ext.Element to check
@@ -868,28 +832,20 @@ object EventObject {
     * @param allowEl Boolean true to also check if the passed element is the target or related target
     * @returns Boolean
     */
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(): Boolean = js.native
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(el: js.UndefOr[scala.Nothing], related: js.UndefOr[scala.Nothing], allowEl: Boolean): Boolean = js.native
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(el: js.UndefOr[scala.Nothing], related: Boolean): Boolean = js.native
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(el: js.UndefOr[scala.Nothing], related: Boolean, allowEl: Boolean): Boolean = js.native
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(el: js.Any): Boolean = js.native
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(el: js.Any, related: js.UndefOr[scala.Nothing], allowEl: Boolean): Boolean = js.native
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(el: js.Any, related: Boolean): Boolean = js.native
-  @JSGlobal("Ext.EventObject.within")
-  @js.native
-  def within(el: js.Any, related: Boolean, allowEl: Boolean): Boolean = js.native
+  @scala.inline
+  def within(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("within")().asInstanceOf[Boolean]
+  @scala.inline
+  def within(el: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def within(el: js.Any, related: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def within(el: js.Any, related: Boolean, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def within(el: js.Any, related: Unit, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def within(el: Unit, related: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def within(el: Unit, related: Boolean, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def within(el: Unit, related: Unit, allowEl: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("within")(el.asInstanceOf[js.Any], related.asInstanceOf[js.Any], allowEl.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

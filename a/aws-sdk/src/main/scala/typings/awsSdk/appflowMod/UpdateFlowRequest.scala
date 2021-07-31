@@ -2,38 +2,36 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFlowRequest extends StObject {
   
   /**
     *  A description of the flow. 
     */
-  var description: js.UndefOr[FlowDescription] = js.native
+  var description: js.UndefOr[FlowDescription] = js.undefined
   
   /**
     *  The configuration that controls how Amazon AppFlow transfers data to the destination connector. 
     */
-  var destinationFlowConfigList: DestinationFlowConfigList = js.native
+  var destinationFlowConfigList: DestinationFlowConfigList
   
   /**
     *  The specified name of the flow. Spaces are not allowed. Use underscores (_) or hyphens (-) only. 
     */
-  var flowName: FlowName = js.native
+  var flowName: FlowName
   
-  var sourceFlowConfig: js.UndefOr[SourceFlowConfig] = js.native
+  var sourceFlowConfig: js.UndefOr[SourceFlowConfig] = js.undefined
   
   /**
     *  A list of tasks that Amazon AppFlow performs while transferring the data in the flow run. 
     */
-  var tasks: Tasks = js.native
+  var tasks: Tasks
   
   /**
     *  The trigger settings that determine how and when the flow runs. 
     */
-  var triggerConfig: TriggerConfig = js.native
+  var triggerConfig: TriggerConfig
 }
 object UpdateFlowRequest {
   

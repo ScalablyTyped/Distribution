@@ -9,58 +9,59 @@ import typings.awsSdkTypes.utilMod.Provider
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/middleware-rds-presignedurl", "buildCrossRegionPresignedUrl")
+  @JSImport("@aws-sdk/middleware-rds-presignedurl", JSImport.Namespace)
   @js.native
-  def buildCrossRegionPresignedUrl[Input /* <: RDSInput */, Output /* <: js.Object */](
-    hasSourceIdentifierKeyRegionCredentialsEndpointBase64EncoderUtf8DecoderSha256: BuildRDSPresignedUrlParameters
-  ): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def buildCrossRegionPresignedUrl[Input /* <: RDSInput */, Output /* <: js.Object */](
+    hasSourceIdentifierKeyRegionProviderCredentialsProviderEndpointProviderBase64EncoderUtf8DecoderSha256: BuildRDSPresignedUrlParameters
+  ): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("buildCrossRegionPresignedUrl")(hasSourceIdentifierKeyRegionProviderCredentialsProviderEndpointProviderBase64EncoderUtf8DecoderSha256.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  
   trait BuildRDSPresignedUrlParameters extends StObject {
     
     /**
       * Encoder to encode the blob input when generate presigned URL
       */
-    var base64Encoder: Encoder = js.native
+    var base64Encoder: Encoder
     
     /**
       * Credentials provider used to sign the presigned URL
       */
-    var credentials: Provider[Credentials] = js.native
+    var credentials: Provider[Credentials]
     
     /**
       * Endpoint provider of the original request.
       */
     var endpoint: Provider[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ _
-      ] = js.native
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
+      ]
     
     /**
       * Region provider used to sign the presigned URL
       */
-    var region: Provider[String] = js.native
+    var region: Provider[String]
     
     /**
       * Hashing class used by signer
       */
-    var sha256: HashConstructor = js.native
+    var sha256: HashConstructor
     
     /**
       * A special input parameter that can either be a name or ARN.
       * The middleware will determine whether to generate presigned URL
       * according to this parameter.
       */
-    var sourceIdentifierKey: String = js.native
+    var sourceIdentifierKey: String
     
     /**
       * Decoder to decode input string when generate presigned URL
       */
-    var utf8Decoder: Decoder = js.native
+    var utf8Decoder: Decoder
   }
   object BuildRDSPresignedUrlParameters {
     
@@ -69,7 +70,7 @@ object mod {
       base64Encoder: /* input */ Uint8Array => String,
       credentials: () => js.Promise[Credentials],
       endpoint: () => js.Promise[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
         ],
       region: () => js.Promise[String],
       sha256: HashConstructor,
@@ -92,7 +93,7 @@ object mod {
       @scala.inline
       def setEndpoint(
         value: () => js.Promise[
-              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ _
+              /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
             ]
       ): Self = StObject.set(x, "endpoint", js.Any.fromFunction0(value))
       

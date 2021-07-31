@@ -4,12 +4,14 @@ import typings.std.ClassDecorator
 import typings.typeorm.typesTreeTypesMod.TreeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeTreeMod {
   
-  @JSImport("typeorm/decorator/tree/Tree", "Tree")
+  @JSImport("typeorm/decorator/tree/Tree", JSImport.Namespace)
   @js.native
-  def Tree(`type`: TreeType): ClassDecorator = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Tree(`type`: TreeType): ClassDecorator = ^.asInstanceOf[js.Dynamic].applyDynamic("Tree")(`type`.asInstanceOf[js.Any]).asInstanceOf[ClassDecorator]
 }

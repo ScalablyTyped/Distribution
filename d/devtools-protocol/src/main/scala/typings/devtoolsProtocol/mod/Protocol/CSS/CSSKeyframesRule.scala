@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSKeyframesRule extends StObject {
   
   /**
     * Animation name.
     */
-  var animationName: Value = js.native
+  var animationName: Value
   
   /**
     * List of keyframes.
     */
-  var keyframes: js.Array[CSSKeyframeRule] = js.native
+  var keyframes: js.Array[CSSKeyframeRule]
 }
 object CSSKeyframesRule {
   

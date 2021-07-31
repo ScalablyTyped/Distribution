@@ -4,56 +4,56 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISizeModel extends IBase {
+trait ISizeModel
+  extends StObject
+     with IBase {
   
   /** [Property] (Boolean) */
-  var auto: js.UndefOr[Boolean] = js.native
+  var auto: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var calculated: js.UndefOr[Boolean] = js.native
+  var calculated: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var calculatedFromConfigured: js.UndefOr[Boolean] = js.native
+  var calculatedFromConfigured: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var calculatedFromNatural: js.UndefOr[Boolean] = js.native
+  var calculatedFromNatural: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var calculatedFromShrinkWrap: js.UndefOr[Boolean] = js.native
+  var calculatedFromShrinkWrap: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var configured: js.UndefOr[Boolean] = js.native
+  var configured: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var constrainedMax: js.UndefOr[Boolean] = js.native
+  var constrainedMax: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var constrainedMin: js.UndefOr[Boolean] = js.native
+  var constrainedMin: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Boolean) */
-  var fixed: js.UndefOr[Boolean] = js.native
+  var fixed: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (String) */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** [Property] (Object) */
-  var names: js.UndefOr[js.Any] = js.native
+  var names: js.UndefOr[js.Any] = js.undefined
   
   /** [Property] (Boolean) */
-  var natural: js.UndefOr[Boolean] = js.native
+  var natural: js.UndefOr[Boolean] = js.undefined
   
   /** [Property] (Number) */
-  var ordinal: js.UndefOr[Double] = js.native
+  var ordinal: js.UndefOr[Double] = js.undefined
   
   /** [Property] (Object[]) */
-  var pairsByHeightOrdinal: js.UndefOr[Array] = js.native
+  var pairsByHeightOrdinal: js.UndefOr[Array] = js.undefined
   
   /** [Property] (Boolean) */
-  var shrinkWrap: js.UndefOr[Boolean] = js.native
+  var shrinkWrap: js.UndefOr[Boolean] = js.undefined
 }
 object ISizeModel {
   

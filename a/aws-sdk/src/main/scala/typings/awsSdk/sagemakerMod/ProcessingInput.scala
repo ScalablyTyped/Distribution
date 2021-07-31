@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProcessingInput extends StObject {
   
   /**
     * The name of the inputs for the processing job.
     */
-  var InputName: String = js.native
+  var InputName: String
   
   /**
     * The S3 inputs for the processing job. 
     */
-  var S3Input: ProcessingS3Input = js.native
+  var S3Input: ProcessingS3Input
 }
 object ProcessingInput {
   

@@ -10,9 +10,9 @@ unist utility to visit nodes
 | ------------------ | :-------------: |
 | Full name          | unist-util-visit |
 | Keywords           | unist, unist-util, util, utility, remark, retext, rehype, mdast, hast, xast, nlcst, natural, language, markdown, html, xml, tree, ast, node, visit, walk |
-| # releases         | 5 |
-| # dependents       | 879 |
-| # downloads        | 146801747 |
+| # releases         | 6 |
+| # dependents       | 983 |
+| # downloads        | 202077464 |
 | # stars            | 1 |
 
 ## Links

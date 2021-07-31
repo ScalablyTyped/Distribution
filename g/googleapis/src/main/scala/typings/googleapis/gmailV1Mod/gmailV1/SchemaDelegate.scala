@@ -2,7 +2,6 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * well as view and add contacts, for the delegator&#39;s account. See
   * &quot;Set up mail delegation&quot; for more information about delegates.
   */
-@js.native
 trait SchemaDelegate extends StObject {
   
   /**
     * The email address of the delegate.
     */
-  var delegateEmail: js.UndefOr[String] = js.native
+  var delegateEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether this address has been verified and can act as a
     * delegate for the account. Read-only.
     */
-  var verificationStatus: js.UndefOr[String] = js.native
+  var verificationStatus: js.UndefOr[String] = js.undefined
 }
 object SchemaDelegate {
   

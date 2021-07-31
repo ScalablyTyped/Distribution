@@ -2,26 +2,26 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UsedInsight extends Entity {
+trait UsedInsight
+  extends StObject
+     with Entity {
   
   // Information about when the item was last viewed or modified by the user. Read only.
-  var lastUsed: js.UndefOr[NullableOption[UsageDetails]] = js.native
+  var lastUsed: js.UndefOr[NullableOption[UsageDetails]] = js.undefined
   
   /**
     * Used for navigating to the item that was used. For file attachments, the type is fileAttachment. For linked
     * attachments, the type is driveItem.
     */
-  var resource: js.UndefOr[NullableOption[Entity]] = js.native
+  var resource: js.UndefOr[NullableOption[Entity]] = js.undefined
   
   // Reference properties of the used document, such as the url and type of the document. Read-only
-  var resourceReference: js.UndefOr[NullableOption[ResourceReference]] = js.native
+  var resourceReference: js.UndefOr[NullableOption[ResourceReference]] = js.undefined
   
   // Properties that you can use to visualize the document in your experience. Read-only
-  var resourceVisualization: js.UndefOr[NullableOption[ResourceVisualization]] = js.native
+  var resourceVisualization: js.UndefOr[NullableOption[ResourceVisualization]] = js.undefined
 }
 object UsedInsight {
   

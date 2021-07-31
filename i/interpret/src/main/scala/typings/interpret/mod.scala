@@ -6,7 +6,6 @@ import typings.interpret.anon.Extensions
 import typings.node.NodeModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,14 +20,31 @@ object mod {
   
   type Extension = String | ExtensionDescriptor | (js.Array[String | ExtensionDescriptor])
   
-  @js.native
   trait ExtensionDescriptor extends StObject {
     
-    var module: String = js.native
+    var module: String
     
-    def register(hook: Hook): Unit = js.native
+    def register(hook: Hook): Unit
     @JSName("register")
-    var register_Original: RegisterFn = js.native
+    var register_Original: RegisterFn
+  }
+  object ExtensionDescriptor {
+    
+    @scala.inline
+    def apply(module: String, register: /* hook */ Hook => Unit): ExtensionDescriptor = {
+      val __obj = js.Dynamic.literal(module = module.asInstanceOf[js.Any], register = js.Any.fromFunction1(register))
+      __obj.asInstanceOf[ExtensionDescriptor]
+    }
+    
+    @scala.inline
+    implicit class ExtensionDescriptorMutableBuilder[Self <: ExtensionDescriptor] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setModule(value: String): Self = StObject.set(x, "module", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setRegister(value: /* hook */ Hook => Unit): Self = StObject.set(x, "register", js.Any.fromFunction1(value))
+    }
   }
   
   type Extensions_ = StringDictionary[Extension | Null]

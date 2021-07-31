@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,17 +17,23 @@ object ASPxClientSpreadsheetEditMode extends StObject {
     * Specifies that the element currently being edited is the spreadsheet cell.
     */
   @js.native
-  sealed trait Cell extends ASPxClientSpreadsheetEditMode
+  sealed trait Cell
+    extends StObject
+       with ASPxClientSpreadsheetEditMode
   
   /**
     * Specifies that the element currently being edited is the cell's comment.
     */
   @js.native
-  sealed trait Comment extends ASPxClientSpreadsheetEditMode
+  sealed trait Comment
+    extends StObject
+       with ASPxClientSpreadsheetEditMode
   
   /**
     * Specifies that no elements are currently being edited.
     */
   @js.native
-  sealed trait None extends ASPxClientSpreadsheetEditMode
+  sealed trait None
+    extends StObject
+       with ASPxClientSpreadsheetEditMode
 }

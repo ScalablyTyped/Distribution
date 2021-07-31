@@ -2,7 +2,6 @@ package typings.winrt.Windows.Foundation.Metadata
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,14 +11,22 @@ sealed trait MarshalingType extends StObject
 object MarshalingType extends StObject {
   
   @js.native
-  sealed trait agile extends MarshalingType
+  sealed trait agile
+    extends StObject
+       with MarshalingType
   
   @js.native
-  sealed trait invalidMarshaling extends MarshalingType
+  sealed trait invalidMarshaling
+    extends StObject
+       with MarshalingType
   
   @js.native
-  sealed trait none extends MarshalingType
+  sealed trait none
+    extends StObject
+       with MarshalingType
   
   @js.native
-  sealed trait standard extends MarshalingType
+  sealed trait standard
+    extends StObject
+       with MarshalingType
 }

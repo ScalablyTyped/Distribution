@@ -4,19 +4,17 @@ import typings.amapJsSdk.AMap.Pixel
 import typings.amapJsSdk.AMap.Size
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var imageOffset: js.UndefOr[Pixel] = js.native
+  var imageOffset: js.UndefOr[Pixel] = js.undefined
   
-  var imageSize: js.UndefOr[Size] = js.native
+  var imageSize: js.UndefOr[Size] = js.undefined
   
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
 }
 object Image {
   

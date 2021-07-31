@@ -2,7 +2,6 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,45 +10,44 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This interface is intended to be used by mime renderer extensions
   * to define a document opener that uses its renderer factory.
   */
-@js.native
 trait IDocumentWidgetFactoryOptions extends StObject {
   
   /**
     * The file types for which the factory should be the default.
     */
-  val defaultFor: js.UndefOr[js.Array[String]] = js.native
+  val defaultFor: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The file types for which the factory should be the default for rendering,
     * if that is different than the default factory (which may be for editing)
     * If undefined, then it will fall back on the default file type.
     */
-  val defaultRendered: js.UndefOr[js.Array[String]] = js.native
+  val defaultRendered: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The file types the widget can view.
     */
-  val fileTypes: js.Array[String] = js.native
+  val fileTypes: js.Array[String]
   
   /**
     * The name of the document model type.
     */
-  val modelName: js.UndefOr[String] = js.native
+  val modelName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the widget to display in dialogs.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * The primary file type of the widget.
     */
-  val primaryFileType: String = js.native
+  val primaryFileType: String
   
   /**
     * A function returning a list of toolbar items to add to the toolbar.
     */
-  val toolbarFactory: js.UndefOr[js.Function1[/* widget */ js.UndefOr[IRenderer], js.Array[IToolbarItem]]] = js.native
+  val toolbarFactory: js.UndefOr[js.Function1[/* widget */ js.UndefOr[IRenderer], js.Array[IToolbarItem]]] = js.undefined
 }
 object IDocumentWidgetFactoryOptions {
   

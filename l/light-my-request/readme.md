@@ -10,9 +10,9 @@ Fake HTTP injection library
 | ------------------ | :-------------: |
 | Full name          | light-my-request |
 | Keywords           | http, inject, fake, request, server |
-| # releases         | 19 |
-| # dependents       | 7 |
-| # downloads        | 4744416 |
+| # releases         | 25 |
+| # dependents       | 9 |
+| # downloads        | 6966408 |
 | # stars            | 1 |
 
 ## Links

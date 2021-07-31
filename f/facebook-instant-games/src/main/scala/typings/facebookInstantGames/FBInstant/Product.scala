@@ -2,44 +2,42 @@ package typings.facebookInstantGames.FBInstant
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a game's product information.
   */
-@js.native
 trait Product extends StObject {
   
   /**
     * The product description
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A link to the product's associated image
     */
-  var imageURI: js.UndefOr[String] = js.native
+  var imageURI: js.UndefOr[String] = js.undefined
   
   /**
     * The price of the product
     */
-  var price: String = js.native
+  var price: String
   
   /**
     * The currency code for the product
     */
-  var priceCurrencyCode: String = js.native
+  var priceCurrencyCode: String
   
   /**
     * The product's game-specified identifier
     */
-  var productID: String = js.native
+  var productID: String
   
   /**
     * The title of the product
     */
-  var title: String = js.native
+  var title: String
 }
 object Product {
   

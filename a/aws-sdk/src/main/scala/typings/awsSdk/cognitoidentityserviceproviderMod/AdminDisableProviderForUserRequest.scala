@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminDisableProviderForUserRequest extends StObject {
   
   /**
     * The user to be disabled.
     */
-  var User: ProviderUserIdentifierType = js.native
+  var User: ProviderUserIdentifierType
   
   /**
     * The user pool ID for the user pool.
     */
-  var UserPoolId: StringType = js.native
+  var UserPoolId: StringType
 }
 object AdminDisableProviderForUserRequest {
   

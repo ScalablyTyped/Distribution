@@ -3,29 +3,27 @@ package typings.ibmMobilefirst.WL
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Client {
   
-  @js.native
   trait AbstractChallengeHandler extends StObject {
     
-    def handleChallenge(challenge: js.Any): Boolean = js.native
+    def handleChallenge(challenge: js.Any): Boolean
     
-    def isCustomResponse(transport: js.Any): Boolean = js.native
+    def isCustomResponse(transport: js.Any): Boolean
     
-    def submitAdapterAuthentication(invocationData: ChallengehandlerInvocationData, options: ChallengeHandlerAuthenticationOptions): Unit = js.native
+    def submitAdapterAuthentication(invocationData: ChallengehandlerInvocationData, options: ChallengeHandlerAuthenticationOptions): Unit
     
-    def submitFailure(error: String): Unit = js.native
+    def submitFailure(error: String): Unit
     
     def submitLoginForm(
       reqURL: String,
       options: ChallengeHandlerSubmitLoginFormOptions,
       submitLoginFormCallback: js.Function1[/* transport */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    def submitSuccess(): Unit = js.native
+    def submitSuccess(): Unit
   }
   object AbstractChallengeHandler {
     
@@ -67,17 +65,15 @@ object Client {
     }
   }
   
-  @js.native
   trait ChallengeHandlerAuthenticationOptions extends StObject
   
-  @js.native
   trait ChallengeHandlerSubmitLoginFormOptions extends StObject {
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var parameters: js.UndefOr[js.Object] = js.native
+    var parameters: js.UndefOr[js.Object] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ChallengeHandlerSubmitLoginFormOptions {
     
@@ -110,19 +106,18 @@ object Client {
     }
   }
   
-  @js.native
   trait ChallengehandlerInvocationData extends StObject {
     
-    var adapter: String = js.native
+    var adapter: String
     
-    var parameters: js.Array[_] = js.native
+    var parameters: js.Array[js.Any]
     
-    var procedure: String = js.native
+    var procedure: String
   }
   object ChallengehandlerInvocationData {
     
     @scala.inline
-    def apply(adapter: String, parameters: js.Array[_], procedure: String): ChallengehandlerInvocationData = {
+    def apply(adapter: String, parameters: js.Array[js.Any], procedure: String): ChallengehandlerInvocationData = {
       val __obj = js.Dynamic.literal(adapter = adapter.asInstanceOf[js.Any], parameters = parameters.asInstanceOf[js.Any], procedure = procedure.asInstanceOf[js.Any])
       __obj.asInstanceOf[ChallengehandlerInvocationData]
     }
@@ -134,7 +129,7 @@ object Client {
       def setAdapter(value: String): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParameters(value: js.Array[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParametersVarargs(value: js.Any*): Self = StObject.set(x, "parameters", js.Array(value :_*))
@@ -144,14 +139,13 @@ object Client {
     }
   }
   
-  @js.native
   trait ConnectOptions extends StObject {
     
-    def onFailure(response: FailureResponse): Unit = js.native
+    def onFailure(response: FailureResponse): Unit
     
-    def onSuccess(response: ResponseBase): Unit = js.native
+    def onSuccess(response: ResponseBase): Unit
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ConnectOptions {
     
@@ -178,12 +172,11 @@ object Client {
     }
   }
   
-  @js.native
   trait EventTransmissionPolicy extends StObject {
     
-    var eventStorageEnabled: js.UndefOr[Boolean] = js.native
+    var eventStorageEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
   }
   object EventTransmissionPolicy {
     
@@ -210,51 +203,52 @@ object Client {
     }
   }
   
-  @js.native
-  trait InitOptions extends Options {
+  trait InitOptions
+    extends StObject
+       with Options {
     
-    var authenticator: js.UndefOr[js.Object] = js.native
+    var authenticator: js.UndefOr[js.Object] = js.undefined
     
-    var autoHideSplash: js.UndefOr[Boolean] = js.native
+    var autoHideSplash: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated. If you would like your application to connect to the Worklight Server, use WL.Client.connect().
       */
-    var connectOnStartup: js.UndefOr[Boolean] = js.native
+    var connectOnStartup: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @deprecated since version 6.2. Use WL.Logger.config function with an object specifying the level instead.
       */
-    var enableLogger: js.UndefOr[Boolean] = js.native
+    var enableLogger: js.UndefOr[Boolean] = js.undefined
     
-    var heartBeatIntervalInSecs: js.UndefOr[Double] = js.native
+    var heartBeatIntervalInSecs: js.UndefOr[Double] = js.undefined
     
-    var messages: js.UndefOr[String] = js.native
+    var messages: js.UndefOr[String] = js.undefined
     
-    var onConnectionFailure: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onConnectionFailure: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    var onDisabledCookies: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onDisabledCookies: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
     /**
       * @deprecated since version 5.0.6. Instead, use onErrorRemoteDisableDenial.
       */
-    var onErrorAppVersionAccessDenial: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onErrorAppVersionAccessDenial: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    var onErrorRemoteDisableDenial: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onErrorRemoteDisableDenial: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    def onGetCustomDeviceProvisioningProperties(resumeDeviceProvisioningProcess: js.Function1[/* data */ js.Any, Unit]): Unit = js.native
+    def onGetCustomDeviceProvisioningProperties(resumeDeviceProvisioningProcess: js.Function1[/* data */ js.Any, Unit]): Unit
     
-    var onRequestTimeout: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onRequestTimeout: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    var onUnsupportedBrowser: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onUnsupportedBrowser: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    var onUnsupportedVersion: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onUnsupportedVersion: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    var onUserInstanceAccessViolation: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.native
+    var onUserInstanceAccessViolation: js.UndefOr[js.Function1[/* response */ FailureResponse, Unit]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var validateArguments: js.UndefOr[Boolean] = js.native
+    var validateArguments: js.UndefOr[Boolean] = js.undefined
   }
   object InitOptions {
     
@@ -368,16 +362,15 @@ object Client {
     }
   }
   
-  @js.native
   trait ProcedureInvocationData extends StObject {
     
-    var adapter: String = js.native
+    var adapter: String
     
-    var compressResponse: js.UndefOr[Boolean] = js.native
+    var compressResponse: js.UndefOr[Boolean] = js.undefined
     
-    var parameters: js.UndefOr[js.Array[_]] = js.native
+    var parameters: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var procedure: String = js.native
+    var procedure: String
   }
   object ProcedureInvocationData {
     
@@ -400,7 +393,7 @@ object Client {
       def setCompressResponseUndefined: Self = StObject.set(x, "compressResponse", js.undefined)
       
       @scala.inline
-      def setParameters(value: js.Array[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -413,13 +406,14 @@ object Client {
     }
   }
   
-  @js.native
-  trait ProcedureInvocationOptions extends Options {
+  trait ProcedureInvocationOptions
+    extends StObject
+       with Options {
     
     @JSName("onSuccess")
-    def onSuccess_MProcedureInvocationOptions(response: ProcedureResponse): Unit = js.native
+    def onSuccess_MProcedureInvocationOptions(response: ProcedureResponse): Unit
     
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object ProcedureInvocationOptions {
     
@@ -440,12 +434,11 @@ object Client {
     }
   }
   
-  @js.native
   trait ProcedureInvocationResult extends StObject {
     
-    var errors: js.UndefOr[js.Array[String]] = js.native
+    var errors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var isSuccessful: Boolean = js.native
+    var isSuccessful: Boolean
   }
   object ProcedureInvocationResult {
     
@@ -472,12 +465,13 @@ object Client {
     }
   }
   
-  @js.native
-  trait ProcedureResponse extends ResponseBase {
+  trait ProcedureResponse
+    extends StObject
+       with ResponseBase {
     
-    var invocationResult: js.UndefOr[ProcedureInvocationResult] = js.native
+    var invocationResult: js.UndefOr[ProcedureInvocationResult] = js.undefined
     
-    var parameters: js.UndefOr[js.Array[_]] = js.native
+    var parameters: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object ProcedureResponse {
     
@@ -509,7 +503,7 @@ object Client {
       def setInvocationResultUndefined: Self = StObject.set(x, "invocationResult", js.undefined)
       
       @scala.inline
-      def setParameters(value: js.Array[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+      def setParameters(value: js.Array[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -519,10 +513,9 @@ object Client {
     }
   }
   
-  @js.native
   trait SharedTokenObject extends StObject {
     
-    var key: String = js.native
+    var key: String
   }
   object SharedTokenObject {
     

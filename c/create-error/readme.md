@@ -11,8 +11,8 @@ Simple helper for sub-classing the Error object
 | Full name          | create-error |
 | Keywords           | errors |
 | # releases         | 0 |
-| # dependents       | 74 |
-| # downloads        | 6365294 |
+| # dependents       | 69 |
+| # downloads        | 7271434 |
 | # stars            | 2 |
 
 ## Links

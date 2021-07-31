@@ -13,56 +13,53 @@ import typings.std.Partial
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("riot", "component")
+  @JSImport("riot", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def component[Props, State](shell: RiotComponentShell[Props, State]): js.Function3[
     /* el */ HTMLElement, 
     /* initialProps */ js.UndefOr[Props], 
     /* meta */ js.UndefOr[ParentScope], 
     RiotComponent[Props, State]
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("component")(shell.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* el */ HTMLElement, 
+    /* initialProps */ js.UndefOr[Props], 
+    /* meta */ js.UndefOr[ParentScope], 
+    RiotComponent[Props, State]
+  ]]
   
-  @JSImport("riot", "install")
-  @js.native
-  def install(plugin: ComponentEnhancer): InstalledPluginsSet = js.native
+  @scala.inline
+  def install(plugin: ComponentEnhancer): InstalledPluginsSet = ^.asInstanceOf[js.Dynamic].applyDynamic("install")(plugin.asInstanceOf[js.Any]).asInstanceOf[InstalledPluginsSet]
   
-  @JSImport("riot", "mount")
-  @js.native
-  def mount[Props, State](selector: String): js.Array[RiotComponent[Props, State]] = js.native
-  @JSImport("riot", "mount")
-  @js.native
-  def mount[Props, State](selector: String, initialProps: Props): js.Array[RiotComponent[Props, State]] = js.native
-  @JSImport("riot", "mount")
-  @js.native
-  def mount[Props, State](selector: String, initialProps: Props, componentName: String): js.Array[RiotComponent[Props, State]] = js.native
-  @JSImport("riot", "mount")
-  @js.native
-  def mount[Props, State](selector: String, initialProps: js.UndefOr[scala.Nothing], componentName: String): js.Array[RiotComponent[Props, State]] = js.native
+  @scala.inline
+  def mount[Props, State](selector: String): js.Array[RiotComponent[Props, State]] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any]).asInstanceOf[js.Array[RiotComponent[Props, State]]]
+  @scala.inline
+  def mount[Props, State](selector: String, initialProps: Props): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
+  @scala.inline
+  def mount[Props, State](selector: String, initialProps: Props, componentName: String): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
+  @scala.inline
+  def mount[Props, State](selector: String, initialProps: Unit, componentName: String): js.Array[RiotComponent[Props, State]] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(selector.asInstanceOf[js.Any], initialProps.asInstanceOf[js.Any], componentName.asInstanceOf[js.Any])).asInstanceOf[js.Array[RiotComponent[Props, State]]]
   
-  @JSImport("riot", "pure")
-  @js.native
-  def pure[InitialProps, Context, FactoryFunction](func: FactoryFunction): FactoryFunction = js.native
+  @scala.inline
+  def pure[InitialProps, Context, FactoryFunction](func: FactoryFunction): FactoryFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("pure")(func.asInstanceOf[js.Any]).asInstanceOf[FactoryFunction]
   
-  @JSImport("riot", "register")
-  @js.native
-  def register[Props, State](componentName: String, shell: RiotComponentShell[Props, State]): RegisteredComponentsMap = js.native
+  @scala.inline
+  def register[Props, State](componentName: String, shell: RiotComponentShell[Props, State]): RegisteredComponentsMap = (^.asInstanceOf[js.Dynamic].applyDynamic("register")(componentName.asInstanceOf[js.Any], shell.asInstanceOf[js.Any])).asInstanceOf[RegisteredComponentsMap]
   
-  @JSImport("riot", "uninstall")
-  @js.native
-  def uninstall(plugin: ComponentEnhancer): InstalledPluginsSet = js.native
+  @scala.inline
+  def uninstall(plugin: ComponentEnhancer): InstalledPluginsSet = ^.asInstanceOf[js.Dynamic].applyDynamic("uninstall")(plugin.asInstanceOf[js.Any]).asInstanceOf[InstalledPluginsSet]
   
-  @JSImport("riot", "unmount")
-  @js.native
-  def unmount(selector: String, keepRootElement: Boolean): js.Array[HTMLElement] = js.native
+  @scala.inline
+  def unmount(selector: String, keepRootElement: Boolean): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("unmount")(selector.asInstanceOf[js.Any], keepRootElement.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
   
-  @JSImport("riot", "unregister")
-  @js.native
-  def unregister(componentName: String): RegisteredComponentsMap = js.native
+  @scala.inline
+  def unregister(componentName: String): RegisteredComponentsMap = ^.asInstanceOf[js.Dynamic].applyDynamic("unregister")(componentName.asInstanceOf[js.Any]).asInstanceOf[RegisteredComponentsMap]
   
   @JSImport("riot", "version")
   @js.native
@@ -76,36 +73,70 @@ object mod {
   
   type RegisteredComponentsMap = Map[String, js.Function0[RiotComponent[js.Object, js.Object]]]
   
-  @js.native
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
+  - typings.riot.mod.RiotComponentExport because Inheritance from two classes. Inlined state, components, shouldUpdate, onBeforeMount, onMounted, onBeforeUpdate, onUpdated, onBeforeUnmount, onUnmounted */ @js.native
   trait RiotComponent[Props, State]
-    extends RiotComponentExport[Props, State]
-       with RiotCoreComponent[Props, State]
-  
-  @js.native
-  trait RiotComponentExport[Props, State]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with RiotCoreComponent[Props, State] {
     
     // optional alias to map the children component names
     var components: js.UndefOr[StringDictionary[RiotComponentShell[Props, State]]] = js.native
     
     // lifecycle methods
-    var onBeforeMount: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.native
+    var onBeforeMount: js.UndefOr[js.Function2[Props, State, Unit]] = js.native
     
-    var onBeforeUnmount: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.native
+    var onBeforeUnmount: js.UndefOr[js.Function2[Props, State, Unit]] = js.native
     
-    var onBeforeUpdate: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.native
+    var onBeforeUpdate: js.UndefOr[js.Function2[Props, State, Unit]] = js.native
     
-    var onMounted: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.native
+    var onMounted: js.UndefOr[js.Function2[Props, State, Unit]] = js.native
     
-    var onUnmounted: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.native
+    var onUnmounted: js.UndefOr[js.Function2[Props, State, Unit]] = js.native
     
-    var onUpdated: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.native
+    var onUpdated: js.UndefOr[js.Function2[Props, State, Unit]] = js.native
     
     // state handling methods
-    var shouldUpdate: js.UndefOr[js.Function2[/* newProps */ Props, /* currentProps */ Props, Boolean]] = js.native
+    var shouldUpdate: js.UndefOr[js.Function2[Props, Props, Boolean]] = js.native
     
     // optional on the component object
     var state: js.UndefOr[State] = js.native
+  }
+  
+  trait RiotComponentExport[Props, State]
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
+    
+    // optional alias to map the children component names
+    var components: js.UndefOr[StringDictionary[RiotComponentShell[Props, State]]] = js.undefined
+    
+    // lifecycle methods
+    var onBeforeMount: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+    
+    var onBeforeUnmount: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+    
+    var onBeforeUpdate: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+    
+    var onMounted: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+    
+    var onUnmounted: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+    
+    var onUpdated: js.UndefOr[js.Function2[/* currentProps */ Props, /* currentState */ State, Unit]] = js.undefined
+    
+    // state handling methods
+    var shouldUpdate: js.UndefOr[js.Function2[/* newProps */ Props, /* currentProps */ Props, Boolean]] = js.undefined
+    
+    // optional on the component object
+    var state: js.UndefOr[State] = js.undefined
   }
   object RiotComponentExport {
     
@@ -116,7 +147,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class RiotComponentExportMutableBuilder[Self <: RiotComponentExport[_, _], Props, State] (val x: Self with (RiotComponentExport[Props, State])) extends AnyVal {
+    implicit class RiotComponentExportMutableBuilder[Self <: RiotComponentExport[?, ?], Props, State] (val x: Self & (RiotComponentExport[Props, State])) extends AnyVal {
       
       @scala.inline
       def setComponents(value: StringDictionary[RiotComponentShell[Props, State]]): Self = StObject.set(x, "components", value.asInstanceOf[js.Any])
@@ -174,34 +205,33 @@ object mod {
     }
   }
   
-  @js.native
   trait RiotComponentShell[Props, State] extends StObject {
     
-    val css: js.UndefOr[String] = js.native
+    val css: js.UndefOr[String] = js.undefined
     
-    val exports: js.UndefOr[js.Function0[(RiotComponentExport[Props, State]) | js.Object]] = js.native
+    val exports: js.UndefOr[js.Function0[(RiotComponentExport[Props, State]) | js.Object]] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     def template(
       template: js.Function,
       expressionTypes: ExpressionType,
       bindingTypes: BindingType,
-      getComponent: js.Function1[/* componentName */ String, _]
-    ): TemplateChunk[_, _] = js.native
+      getComponent: js.Function1[/* componentName */ String, js.Any]
+    ): TemplateChunk[js.Any, js.Any]
   }
   object RiotComponentShell {
     
     @scala.inline
     def apply[Props, State](
-      template: (js.Function, ExpressionType, BindingType, js.Function1[/* componentName */ String, _]) => TemplateChunk[_, _]
+      template: (js.Function, ExpressionType, BindingType, js.Function1[/* componentName */ String, js.Any]) => TemplateChunk[js.Any, js.Any]
     ): RiotComponentShell[Props, State] = {
       val __obj = js.Dynamic.literal(template = js.Any.fromFunction4(template))
       __obj.asInstanceOf[RiotComponentShell[Props, State]]
     }
     
     @scala.inline
-    implicit class RiotComponentShellMutableBuilder[Self <: RiotComponentShell[_, _], Props, State] (val x: Self with (RiotComponentShell[Props, State])) extends AnyVal {
+    implicit class RiotComponentShellMutableBuilder[Self <: RiotComponentShell[?, ?], Props, State] (val x: Self & (RiotComponentShell[Props, State])) extends AnyVal {
       
       @scala.inline
       def setCss(value: String): Self = StObject.set(x, "css", value.asInstanceOf[js.Any])
@@ -223,7 +253,7 @@ object mod {
       
       @scala.inline
       def setTemplate(
-        value: (js.Function, ExpressionType, BindingType, js.Function1[/* componentName */ String, _]) => TemplateChunk[_, _]
+        value: (js.Function, ExpressionType, BindingType, js.Function1[/* componentName */ String, js.Any]) => TemplateChunk[js.Any, js.Any]
       ): Self = StObject.set(x, "template", js.Any.fromFunction4(value))
     }
   }
@@ -241,7 +271,7 @@ object mod {
     def mount(element: HTMLElement): RiotComponent[Props, State] = js.native
     def mount(element: HTMLElement, initialState: State): RiotComponent[Props, State] = js.native
     def mount(element: HTMLElement, initialState: State, parentScope: js.Object): RiotComponent[Props, State] = js.native
-    def mount(element: HTMLElement, initialState: js.UndefOr[scala.Nothing], parentScope: js.Object): RiotComponent[Props, State] = js.native
+    def mount(element: HTMLElement, initialState: Unit, parentScope: js.Object): RiotComponent[Props, State] = js.native
     
     val name: js.UndefOr[String] = js.native
     
@@ -255,7 +285,7 @@ object mod {
     def unmount(keepRootElement: Boolean): RiotComponent[Props, State] = js.native
     
     def update(): RiotComponent[Props, State] = js.native
-    def update(newState: js.UndefOr[scala.Nothing], parentScope: js.Object): RiotComponent[Props, State] = js.native
+    def update(newState: Unit, parentScope: js.Object): RiotComponent[Props, State] = js.native
     def update(newState: Partial[State]): RiotComponent[Props, State] = js.native
     def update(newState: Partial[State], parentScope: js.Object): RiotComponent[Props, State] = js.native
   }

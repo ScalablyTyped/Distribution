@@ -2,16 +2,14 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskAgentPoolMaintenanceRetentionPolicy extends StObject {
   
   /**
     * Number of records to keep for maintenance job executed with this definition.
     */
-  var numberOfHistoryRecordsToKeep: Double = js.native
+  var numberOfHistoryRecordsToKeep: Double
 }
 object TaskAgentPoolMaintenanceRetentionPolicy {
   

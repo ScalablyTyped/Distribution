@@ -2,17 +2,15 @@ package typings.reactNativeMaterialUi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RightElementPressEvent extends StObject {
   
-  var action: String = js.native
+  var action: String
   
-  var index: Double = js.native
+  var index: Double
   
-  var result: js.UndefOr[js.Any] = js.native
+  var result: js.UndefOr[js.Any] = js.undefined
 }
 object RightElementPressEvent {
   

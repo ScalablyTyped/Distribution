@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientGenomics.gapi.client.genomics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerReleasedEvent extends StObject {
   
   /** The worker's instance name. */
-  var instance: js.UndefOr[String] = js.native
+  var instance: js.UndefOr[String] = js.undefined
   
   /** The zone the worker was running in. */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object WorkerReleasedEvent {
   

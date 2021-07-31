@@ -3,17 +3,15 @@ package typings.postmark.anon
 import typings.postmark.messageSupportingTypesMod.LinkClickLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClickLocation extends StObject {
   
-  var ClickLocation: LinkClickLocation = js.native
+  var ClickLocation: LinkClickLocation
   
-  var Link: String = js.native
+  var Link: String
   
-  var Summary: String = js.native
+  var Summary: String
 }
 object ClickLocation {
   

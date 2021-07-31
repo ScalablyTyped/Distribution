@@ -2,17 +2,15 @@ package typings.openfin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object crashReporterOptionMod {
   
-  @js.native
   trait CrashReporterOption extends StObject {
     
-    var diagnosticMode: Boolean = js.native
+    var diagnosticMode: Boolean
     
-    var isRunning: js.UndefOr[Boolean] = js.native
+    var isRunning: js.UndefOr[Boolean] = js.undefined
   }
   object CrashReporterOption {
     

@@ -16,7 +16,6 @@ import typings.uirouterCore.urlMatcherMod.UrlMatcher
 import typings.uirouterCore.urlRuleMod.UrlRuleFactory
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlRouterMod {
@@ -51,9 +50,9 @@ object urlRouterMod {
       * @returns Returns the fully compiled URL, or `null` if `params` fail validation against `urlMatcher`
       */
     def href(urlMatcher: UrlMatcher): String = js.native
-    def href(urlMatcher: UrlMatcher, params: js.UndefOr[scala.Nothing], options: Absolute): String = js.native
     def href(urlMatcher: UrlMatcher, params: js.Any): String = js.native
     def href(urlMatcher: UrlMatcher, params: js.Any, options: Absolute): String = js.native
+    def href(urlMatcher: UrlMatcher, params: Unit, options: Absolute): String = js.native
     
     /** @deprecated use [[UrlRules.initial]]*/
     def initial(handler: String): Unit = js.native
@@ -90,7 +89,7 @@ object urlRouterMod {
       * @param options
       */
     def push(urlMatcher: UrlMatcher): Unit = js.native
-    def push(urlMatcher: UrlMatcher, params: js.UndefOr[scala.Nothing], options: Replace): Unit = js.native
+    def push(urlMatcher: UrlMatcher, params: Unit, options: Replace): Unit = js.native
     def push(urlMatcher: UrlMatcher, params: RawParams): Unit = js.native
     def push(urlMatcher: UrlMatcher, params: RawParams, options: Replace): Unit = js.native
     

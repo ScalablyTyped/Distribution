@@ -10,9 +10,9 @@ Pluggable browser scroll management
 | ------------------ | :-------------: |
 | Full name          | scroll-behavior |
 | Keywords           | scroll |
-| # releases         | 6 |
+| # releases         | 5 |
 | # dependents       | 52 |
-| # downloads        | 15765042 |
+| # downloads        | 13041534 |
 | # stars            | 8 |
 
 ## Links

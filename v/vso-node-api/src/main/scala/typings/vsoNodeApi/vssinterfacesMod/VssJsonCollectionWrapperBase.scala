@@ -2,13 +2,11 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VssJsonCollectionWrapperBase extends StObject {
   
-  var count: Double = js.native
+  var count: Double
 }
 object VssJsonCollectionWrapperBase {
   

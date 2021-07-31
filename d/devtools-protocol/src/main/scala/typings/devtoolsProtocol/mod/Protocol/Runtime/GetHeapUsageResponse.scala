@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetHeapUsageResponse extends StObject {
   
   /**
     * Allocated heap size in bytes.
     */
-  var totalSize: Double = js.native
+  var totalSize: Double
   
   /**
     * Used heap size in bytes.
     */
-  var usedSize: Double = js.native
+  var usedSize: Double
 }
 object GetHeapUsageResponse {
   

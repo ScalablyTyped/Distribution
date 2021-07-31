@@ -2,17 +2,15 @@ package typings.arangodb.Foxx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionTransport extends StObject {
   
-  var clear: js.UndefOr[js.Function1[/* res */ Response, Unit]] = js.native
+  var clear: js.UndefOr[js.Function1[/* res */ Response, Unit]] = js.undefined
   
-  var get: js.UndefOr[js.Function1[/* req */ Request, String | Null]] = js.native
+  var get: js.UndefOr[js.Function1[/* req */ Request, String | Null]] = js.undefined
   
-  var set: js.UndefOr[js.Function2[/* res */ Response, /* sid */ String, Unit]] = js.native
+  var set: js.UndefOr[js.Function2[/* res */ Response, /* sid */ String, Unit]] = js.undefined
 }
 object SessionTransport {
   

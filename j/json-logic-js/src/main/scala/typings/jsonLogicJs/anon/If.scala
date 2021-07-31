@@ -3,13 +3,13 @@ package typings.jsonLogicJs.anon
 import typings.jsonLogicJs.mod._RulesLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait If extends _RulesLogic {
+trait If
+  extends StObject
+     with _RulesLogic {
   
-  var `if`: Array[js.Any] = js.native
+  var `if`: Array[js.Any]
 }
 object If {
   

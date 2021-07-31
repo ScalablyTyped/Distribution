@@ -2,28 +2,26 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/Tooltip/Tooltip.TooltipClassKey>> */
-@js.native
 trait PartialClassNameMapToolti extends StObject {
   
-  var popper: js.UndefOr[String] = js.native
+  var popper: js.UndefOr[String] = js.undefined
   
-  var popperInteractive: js.UndefOr[String] = js.native
+  var popperInteractive: js.UndefOr[String] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
   
-  var tooltipPlacementBottom: js.UndefOr[String] = js.native
+  var tooltipPlacementBottom: js.UndefOr[String] = js.undefined
   
-  var tooltipPlacementLeft: js.UndefOr[String] = js.native
+  var tooltipPlacementLeft: js.UndefOr[String] = js.undefined
   
-  var tooltipPlacementRight: js.UndefOr[String] = js.native
+  var tooltipPlacementRight: js.UndefOr[String] = js.undefined
   
-  var tooltipPlacementTop: js.UndefOr[String] = js.native
+  var tooltipPlacementTop: js.UndefOr[String] = js.undefined
   
-  var touch: js.UndefOr[String] = js.native
+  var touch: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapToolti {
   

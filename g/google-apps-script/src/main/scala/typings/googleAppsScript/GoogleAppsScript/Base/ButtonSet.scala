@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,14 +27,22 @@ sealed trait ButtonSet extends StObject
 object ButtonSet extends StObject {
   
   @js.native
-  sealed trait OK extends ButtonSet
+  sealed trait OK
+    extends StObject
+       with ButtonSet
   
   @js.native
-  sealed trait OK_CANCEL extends ButtonSet
+  sealed trait OK_CANCEL
+    extends StObject
+       with ButtonSet
   
   @js.native
-  sealed trait YES_NO extends ButtonSet
+  sealed trait YES_NO
+    extends StObject
+       with ButtonSet
   
   @js.native
-  sealed trait YES_NO_CANCEL extends ButtonSet
+  sealed trait YES_NO_CANCEL
+    extends StObject
+       with ButtonSet
 }

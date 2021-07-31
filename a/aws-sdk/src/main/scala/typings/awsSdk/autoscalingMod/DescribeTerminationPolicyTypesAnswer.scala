@@ -2,16 +2,14 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTerminationPolicyTypesAnswer extends StObject {
   
   /**
     * The termination policies supported by Amazon EC2 Auto Scaling: OldestInstance, OldestLaunchConfiguration, NewestInstance, ClosestToNextInstanceHour, Default, OldestLaunchTemplate, and AllocationStrategy.
     */
-  var TerminationPolicyTypes: js.UndefOr[TerminationPolicies] = js.native
+  var TerminationPolicyTypes: js.UndefOr[TerminationPolicies] = js.undefined
 }
 object DescribeTerminationPolicyTypesAnswer {
   

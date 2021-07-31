@@ -2,24 +2,22 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalPolicy extends StObject {
   
   /**
     * If true, only policy networks may auto connect.
     * @default false
     */
-  var AllowOnlyPolicyNetworksToAutoconnect: js.UndefOr[Boolean] = js.native
+  var AllowOnlyPolicyNetworksToAutoconnect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, only policy networks may be connected to
     * and no new networks may be added or configured.
     * @default false
     */
-  var AllowOnlyPolicyNetworksToConnect: js.UndefOr[Boolean] = js.native
+  var AllowOnlyPolicyNetworksToConnect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of blacklisted networks.
@@ -27,7 +25,7 @@ trait GlobalPolicy extends StObject {
     * Networks can be whitelisted again by specifying an explicit network configuration.
     * @default []
     */
-  var BlacklistedHexSSIDs: js.UndefOr[js.Array[String]] = js.native
+  var BlacklistedHexSSIDs: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GlobalPolicy {
   

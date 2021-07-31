@@ -2,33 +2,31 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxEventLogging Class */
-@js.native
 trait FaxEventLogging extends StObject {
   
   @JSName("FAXCOMEXLib.FaxEventLogging_typekey")
-  var FAXCOMEXLibDotFaxEventLogging_typekey: FaxEventLogging = js.native
+  var FAXCOMEXLibDotFaxEventLogging_typekey: FaxEventLogging
   
   /** Detail level of event logs for general (other) events */
-  var GeneralEventsLevel: FAX_LOG_LEVEL_ENUM = js.native
+  var GeneralEventsLevel: FAX_LOG_LEVEL_ENUM
   
   /** Detail level of event logs for inbound fax events */
-  var InboundEventsLevel: FAX_LOG_LEVEL_ENUM = js.native
+  var InboundEventsLevel: FAX_LOG_LEVEL_ENUM
   
   /** Detail level of event logs for initialization events */
-  var InitEventsLevel: FAX_LOG_LEVEL_ENUM = js.native
+  var InitEventsLevel: FAX_LOG_LEVEL_ENUM
   
   /** Detail level of event logs for outbound fax events */
-  var OutboundEventsLevel: FAX_LOG_LEVEL_ENUM = js.native
+  var OutboundEventsLevel: FAX_LOG_LEVEL_ENUM
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
 }
 object FaxEventLogging {
   

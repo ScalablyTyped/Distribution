@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchSynonymsResponse extends StObject {
   
   /**
     * The list of synonyms.
     */
-  var hits: js.Array[Synonym] = js.native
+  var hits: js.Array[Synonym]
   
   /**
     * The number of synonyms on the list.
     */
-  var nbHits: Double = js.native
+  var nbHits: Double
 }
 object SearchSynonymsResponse {
   

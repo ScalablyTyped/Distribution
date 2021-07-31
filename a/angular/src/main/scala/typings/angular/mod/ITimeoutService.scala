@@ -2,7 +2,6 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ///////////////////////////////////////////////////////////////////////////
@@ -13,34 +12,34 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 trait ITimeoutService extends StObject {
   
   def apply(): IPromise[Unit] = js.native
-  def apply(delay: js.UndefOr[scala.Nothing], invokeApply: Boolean): IPromise[Unit] = js.native
   def apply(delay: Double): IPromise[Unit] = js.native
   def apply(delay: Double, invokeApply: Boolean): IPromise[Unit] = js.native
+  def apply(delay: Unit, invokeApply: Boolean): IPromise[Unit] = js.native
   def apply[T](
     fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
-    delay: js.UndefOr[scala.Nothing],
-    invokeApply: js.UndefOr[scala.Nothing],
-    args: js.Any*
-  ): IPromise[T] = js.native
-  def apply[T](
-    fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
-    delay: js.UndefOr[scala.Nothing],
+    delay: Double,
     invokeApply: Boolean,
     args: js.Any*
   ): IPromise[T] = js.native
   def apply[T](
     fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
     delay: Double,
-    invokeApply: js.UndefOr[scala.Nothing],
+    invokeApply: Unit,
     args: js.Any*
   ): IPromise[T] = js.native
   def apply[T](
     fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
-    delay: Double,
+    delay: Unit,
     invokeApply: Boolean,
+    args: js.Any*
+  ): IPromise[T] = js.native
+  def apply[T](
+    fn: js.Function1[/* repeated */ js.Any, T | IPromise[T]],
+    delay: Unit,
+    invokeApply: Unit,
     args: js.Any*
   ): IPromise[T] = js.native
   
   def cancel(): Boolean = js.native
-  def cancel(promise: IPromise[_]): Boolean = js.native
+  def cancel(promise: IPromise[js.Any]): Boolean = js.native
 }

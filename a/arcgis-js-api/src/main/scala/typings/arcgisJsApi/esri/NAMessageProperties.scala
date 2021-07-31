@@ -10,10 +10,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.informative
 import typings.arcgisJsApi.arcgisJsApiStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NAMessageProperties extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait NAMessageProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-NAMessage.html#description)
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The network analyst message type.
@@ -30,7 +28,7 @@ trait NAMessageProperties extends StObject {
     */
   var `type`: js.UndefOr[
     informative | `process-definition` | `process-start` | `process-stop` | warning | error | empty | abort
-  ] = js.native
+  ] = js.undefined
 }
 object NAMessageProperties {
   

@@ -2,44 +2,42 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EAPProperties extends StObject {
   
-  var AnonymousIdentity: js.UndefOr[String] = js.native
+  var AnonymousIdentity: js.UndefOr[String] = js.undefined
   
   /** @since Chrome 60. */
-  var ClientCertPKCS11Id: js.UndefOr[String] = js.native
+  var ClientCertPKCS11Id: js.UndefOr[String] = js.undefined
   
-  var ClientCertPattern: js.UndefOr[CertPattern] = js.native
+  var ClientCertPattern: js.UndefOr[CertPattern] = js.undefined
   
-  var ClientCertRef: js.UndefOr[String] = js.native
+  var ClientCertRef: js.UndefOr[String] = js.undefined
   
-  var ClientCertType: js.UndefOr[typings.chromeApps.chrome.networking.onc.ClientCertType] = js.native
+  var ClientCertType: js.UndefOr[typings.chromeApps.chrome.networking.onc.ClientCertType] = js.undefined
   
-  var Identity: js.UndefOr[String] = js.native
+  var Identity: js.UndefOr[String] = js.undefined
   
-  var Inner: js.UndefOr[String] = js.native
+  var Inner: js.UndefOr[String] = js.undefined
   
   /** The outer EAP type. Required by ONC, but may not be provided when translating from Shill. */
-  var Outer: js.UndefOr[String] = js.native
+  var Outer: js.UndefOr[String] = js.undefined
   
-  var Password: js.UndefOr[String] = js.native
+  var Password: js.UndefOr[String] = js.undefined
   
-  var SaveCredentials: js.UndefOr[Boolean] = js.native
+  var SaveCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var ServerCAPEMs: js.UndefOr[js.Array[String]] = js.native
+  var ServerCAPEMs: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ServerCARefs: js.UndefOr[js.Array[String]] = js.native
+  var ServerCARefs: js.UndefOr[js.Array[String]] = js.undefined
   
   /** @since Chrome 60. */
-  var SubjectMatch: js.UndefOr[ManagedDOMString] = js.native
+  var SubjectMatch: js.UndefOr[ManagedDOMString] = js.undefined
   
-  var UseProactiveKeyCaching: js.UndefOr[Boolean] = js.native
+  var UseProactiveKeyCaching: js.UndefOr[Boolean] = js.undefined
   
-  var UseSytemCAs: js.UndefOr[Boolean] = js.native
+  var UseSytemCAs: js.UndefOr[Boolean] = js.undefined
 }
 object EAPProperties {
   

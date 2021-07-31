@@ -3,29 +3,27 @@ package typings.ipp.anon
 import typings.ipp.mod.CharacterSet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ippattributefidelity extends StObject {
   
-  var `attributes-charset`: js.UndefOr[CharacterSet] = js.native
+  var `attributes-charset`: js.UndefOr[CharacterSet] = js.undefined
   
-  var `attributes-natural-language`: js.UndefOr[String] = js.native
+  var `attributes-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `ipp-attribute-fidelity`: js.UndefOr[Boolean] = js.native
+  var `ipp-attribute-fidelity`: js.UndefOr[Boolean] = js.undefined
   
-  var `job-impressions`: js.UndefOr[Double] = js.native
+  var `job-impressions`: js.UndefOr[Double] = js.undefined
   
-  var `job-k-octets`: js.UndefOr[Double] = js.native
+  var `job-k-octets`: js.UndefOr[Double] = js.undefined
   
-  var `job-media-sheets`: js.UndefOr[Double] = js.native
+  var `job-media-sheets`: js.UndefOr[Double] = js.undefined
   
-  var `job-name`: js.UndefOr[String] = js.native
+  var `job-name`: js.UndefOr[String] = js.undefined
   
-  var `printer-uri`: js.UndefOr[String] = js.native
+  var `printer-uri`: js.UndefOr[String] = js.undefined
   
-  var `requesting-user-name`: String = js.native
+  var `requesting-user-name`: String
 }
 object Ippattributefidelity {
   

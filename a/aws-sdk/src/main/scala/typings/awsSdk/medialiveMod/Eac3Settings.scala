@@ -2,111 +2,109 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Eac3Settings extends StObject {
   
   /**
     * When set to attenuate3Db, applies a 3 dB attenuation to the surround channels. Only used for 3/2 coding mode.
     */
-  var AttenuationControl: js.UndefOr[Eac3AttenuationControl] = js.native
+  var AttenuationControl: js.UndefOr[Eac3AttenuationControl] = js.undefined
   
   /**
     * Average bitrate in bits/second. Valid bitrates depend on the coding mode.
     */
-  var Bitrate: js.UndefOr[double] = js.native
+  var Bitrate: js.UndefOr[double] = js.undefined
   
   /**
     * Specifies the bitstream mode (bsmod) for the emitted E-AC-3 stream. See ATSC A/52-2012 (Annex E) for background on these values.
     */
-  var BitstreamMode: js.UndefOr[Eac3BitstreamMode] = js.native
+  var BitstreamMode: js.UndefOr[Eac3BitstreamMode] = js.undefined
   
   /**
     * Dolby Digital Plus coding mode. Determines number of channels.
     */
-  var CodingMode: js.UndefOr[Eac3CodingMode] = js.native
+  var CodingMode: js.UndefOr[Eac3CodingMode] = js.undefined
   
   /**
     * When set to enabled, activates a DC highpass filter for all input channels.
     */
-  var DcFilter: js.UndefOr[Eac3DcFilter] = js.native
+  var DcFilter: js.UndefOr[Eac3DcFilter] = js.undefined
   
   /**
     * Sets the dialnorm for the output. If blank and input audio is Dolby Digital Plus, dialnorm will be passed through.
     */
-  var Dialnorm: js.UndefOr[integerMin1Max31] = js.native
+  var Dialnorm: js.UndefOr[integerMin1Max31] = js.undefined
   
   /**
     * Sets the Dolby dynamic range compression profile.
     */
-  var DrcLine: js.UndefOr[Eac3DrcLine] = js.native
+  var DrcLine: js.UndefOr[Eac3DrcLine] = js.undefined
   
   /**
     * Sets the profile for heavy Dolby dynamic range compression, ensures that the instantaneous signal peaks do not exceed specified levels.
     */
-  var DrcRf: js.UndefOr[Eac3DrcRf] = js.native
+  var DrcRf: js.UndefOr[Eac3DrcRf] = js.undefined
   
   /**
     * When encoding 3/2 audio, setting to lfe enables the LFE channel
     */
-  var LfeControl: js.UndefOr[Eac3LfeControl] = js.native
+  var LfeControl: js.UndefOr[Eac3LfeControl] = js.undefined
   
   /**
     * When set to enabled, applies a 120Hz lowpass filter to the LFE channel prior to encoding. Only valid with codingMode32 coding mode.
     */
-  var LfeFilter: js.UndefOr[Eac3LfeFilter] = js.native
+  var LfeFilter: js.UndefOr[Eac3LfeFilter] = js.undefined
   
   /**
     * Left only/Right only center mix level. Only used for 3/2 coding mode.
     */
-  var LoRoCenterMixLevel: js.UndefOr[double] = js.native
+  var LoRoCenterMixLevel: js.UndefOr[double] = js.undefined
   
   /**
     * Left only/Right only surround mix level. Only used for 3/2 coding mode.
     */
-  var LoRoSurroundMixLevel: js.UndefOr[double] = js.native
+  var LoRoSurroundMixLevel: js.UndefOr[double] = js.undefined
   
   /**
     * Left total/Right total center mix level. Only used for 3/2 coding mode.
     */
-  var LtRtCenterMixLevel: js.UndefOr[double] = js.native
+  var LtRtCenterMixLevel: js.UndefOr[double] = js.undefined
   
   /**
     * Left total/Right total surround mix level. Only used for 3/2 coding mode.
     */
-  var LtRtSurroundMixLevel: js.UndefOr[double] = js.native
+  var LtRtSurroundMixLevel: js.UndefOr[double] = js.undefined
   
   /**
     * When set to followInput, encoder metadata will be sourced from the DD, DD+, or DolbyE decoder that supplied this audio data. If audio was not supplied from one of these streams, then the static metadata settings will be used.
     */
-  var MetadataControl: js.UndefOr[Eac3MetadataControl] = js.native
+  var MetadataControl: js.UndefOr[Eac3MetadataControl] = js.undefined
   
   /**
     * When set to whenPossible, input DD+ audio will be passed through if it is present on the input. This detection is dynamic over the life of the transcode. Inputs that alternate between DD+ and non-DD+ content will have a consistent DD+ output as the system alternates between passthrough and encoding.
     */
-  var PassthroughControl: js.UndefOr[Eac3PassthroughControl] = js.native
+  var PassthroughControl: js.UndefOr[Eac3PassthroughControl] = js.undefined
   
   /**
     * When set to shift90Degrees, applies a 90-degree phase shift to the surround channels. Only used for 3/2 coding mode.
     */
-  var PhaseControl: js.UndefOr[Eac3PhaseControl] = js.native
+  var PhaseControl: js.UndefOr[Eac3PhaseControl] = js.undefined
   
   /**
     * Stereo downmix preference. Only used for 3/2 coding mode.
     */
-  var StereoDownmix: js.UndefOr[Eac3StereoDownmix] = js.native
+  var StereoDownmix: js.UndefOr[Eac3StereoDownmix] = js.undefined
   
   /**
     * When encoding 3/2 audio, sets whether an extra center back surround channel is matrix encoded into the left and right surround channels.
     */
-  var SurroundExMode: js.UndefOr[Eac3SurroundExMode] = js.native
+  var SurroundExMode: js.UndefOr[Eac3SurroundExMode] = js.undefined
   
   /**
     * When encoding 2/0 audio, sets whether Dolby Surround is matrix encoded into the two channels.
     */
-  var SurroundMode: js.UndefOr[Eac3SurroundMode] = js.native
+  var SurroundMode: js.UndefOr[Eac3SurroundMode] = js.undefined
 }
 object Eac3Settings {
   

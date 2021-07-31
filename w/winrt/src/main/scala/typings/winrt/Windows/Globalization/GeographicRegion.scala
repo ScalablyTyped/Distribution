@@ -3,11 +3,11 @@ package typings.winrt.Windows.Globalization
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeographicRegion extends IGeographicRegion
+trait GeographicRegion
+  extends StObject
+     with IGeographicRegion
 object GeographicRegion {
   
   @scala.inline

@@ -7,16 +7,18 @@ import typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableInputMod.Describ
 import typings.awsSdkClientDynamodbNode.typesDescribeGlobalTableOutputMod.DescribeGlobalTableOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object describeGlobalTableCommandMod {
   
   @JSImport("@aws-sdk/client-dynamodb-node/commands/DescribeGlobalTableCommand", "DescribeGlobalTableCommand")
   @js.native
-  class DescribeGlobalTableCommand protected () extends Command[
+  class DescribeGlobalTableCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           DescribeGlobalTableInput, 
           OutputTypesUnion, 
@@ -25,9 +27,21 @@ object describeGlobalTableCommandMod {
         ] {
     def this(input: DescribeGlobalTableInput) = this()
     
+    /* CompleteClass */
+    override val input: DescribeGlobalTableInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[DescribeGlobalTableInput, DescribeGlobalTableOutput] = js.native
+    
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: DynamoDBResolvedConfiguration
+    ): Handler[DescribeGlobalTableInput, DescribeGlobalTableOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: DynamoDBResolvedConfiguration,
+      options: js.Any
     ): Handler[DescribeGlobalTableInput, DescribeGlobalTableOutput] = js.native
   }
 }

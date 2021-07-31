@@ -5,21 +5,19 @@ import typings.csstype.mod.BorderColorProperty
 import typings.csstype.mod.BorderStyleProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MjmlDividerProps extends StObject {
   
-  var borderColor: js.UndefOr[BorderColorProperty] = js.native
+  var borderColor: js.UndefOr[BorderColorProperty] = js.undefined
   
-  var borderStyle: js.UndefOr[BorderStyleProperty] = js.native
+  var borderStyle: js.UndefOr[BorderStyleProperty] = js.undefined
   
-  var borderWidth: js.UndefOr[String | Double] = js.native
+  var borderWidth: js.UndefOr[String | Double] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.native
+  var containerBackgroundColor: js.UndefOr[BackgroundColorProperty] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object MjmlDividerProps {
   

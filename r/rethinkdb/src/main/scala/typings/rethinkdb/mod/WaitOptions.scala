@@ -2,15 +2,13 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WaitOptions extends StObject {
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var waitFor: js.UndefOr[typings.rethinkdb.mod.waitFor] = js.native
+  var waitFor: js.UndefOr[typings.rethinkdb.mod.waitFor] = js.undefined
 }
 object WaitOptions {
   

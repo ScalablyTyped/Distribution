@@ -3,25 +3,23 @@ package typings.mfiles
 import typings.mfiles.MFiles.MFPermission
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessControlEntryData extends StObject {
   
-  var AttachObjectsPermission: MFPermission = js.native
+  var AttachObjectsPermission: MFPermission
   
-  var ChangePermissionsPermission: MFPermission = js.native
+  var ChangePermissionsPermission: MFPermission
   
-  def Clone(): IAccessControlEntryData = js.native
+  def Clone(): IAccessControlEntryData
   
-  var DeletePermission: MFPermission = js.native
+  var DeletePermission: MFPermission
   
-  var EditPermission: MFPermission = js.native
+  var EditPermission: MFPermission
   
-  var ReadPermission: MFPermission = js.native
+  var ReadPermission: MFPermission
   
-  def SetAllPermissions(Permission: MFPermission): Unit = js.native
+  def SetAllPermissions(Permission: MFPermission): Unit
 }
 object IAccessControlEntryData {
   

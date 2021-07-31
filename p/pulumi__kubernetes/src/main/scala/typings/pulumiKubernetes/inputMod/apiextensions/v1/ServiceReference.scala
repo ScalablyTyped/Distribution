@@ -3,34 +3,32 @@ package typings.pulumiKubernetes.inputMod.apiextensions.v1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ServiceReference holds a reference to Service.legacy.k8s.io
   */
-@js.native
 trait ServiceReference extends StObject {
   
   /**
     * name is the name of the service. Required
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * namespace is the namespace of the service. Required
     */
-  var namespace: Input[String] = js.native
+  var namespace: Input[String]
   
   /**
     * path is an optional URL path at which the webhook will be contacted.
     */
-  var path: js.UndefOr[Input[String]] = js.native
+  var path: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * port is an optional service port at which the webhook will be contacted. `port` should be a valid port number (1-65535, inclusive). Defaults to 443 for backward compatibility.
     */
-  var port: js.UndefOr[Input[Double]] = js.native
+  var port: js.UndefOr[Input[Double]] = js.undefined
 }
 object ServiceReference {
   

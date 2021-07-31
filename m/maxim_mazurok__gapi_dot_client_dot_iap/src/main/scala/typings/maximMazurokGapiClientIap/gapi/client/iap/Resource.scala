@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resource extends StObject {
   
   /**
@@ -19,8 +17,8 @@ trait Resource extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Name of the resource on which conditions will be evaluated. Must use the Relative Resource Name of the resource, which is the URI path of the resource without the leading "/".
@@ -28,21 +26,21 @@ trait Resource extends StObject {
     * conditions with rules on resource names. For a `list` permission check, the resource.name value must be set to the parent resource. If the parent resource is a project, this field
     * should be left unset.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service this resource belongs to. It is configured using the official_service_name of the Service as defined in service configurations under
     * //configs/cloud/resourcetypes. For example, the official_service_name of cloud resource manager service is set as 'cloudresourcemanager.googleapis.com' according to
     * //configs/cloud/resourcetypes/google/cloud/resourcemanager/prod.yaml
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
   
   /**
     * The public resource type name of the resource on which conditions will be evaluated. It is configured using the official_name of the ResourceType as defined in service
     * configurations under //configs/cloud/resourcetypes. For example, the official_name for GCP projects is set as 'cloudresourcemanager.googleapis.com/Project' according to
     * //configs/cloud/resourcetypes/google/cloud/resourcemanager/prod.yaml For details see go/iam-conditions-integration-guide.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Resource {
   
@@ -59,7 +57,7 @@ object Resource {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientIap.maximMazurokGapiClientIapStrings.Resource & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

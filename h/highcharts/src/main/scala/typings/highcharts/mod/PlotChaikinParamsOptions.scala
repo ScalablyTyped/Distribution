@@ -2,23 +2,21 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotChaikinParamsOptions extends StObject {
   
   /**
     * (Highstock) Periods for Chaikin Oscillator calculations.
     */
-  var periods: js.UndefOr[js.Array[Double]] = js.native
+  var periods: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * (Highstock) The id of volume series which is mandatory. For example using
     * OHLC data, volumeSeriesID='volume' means the indicator will be calculated
     * using OHLC and volume values.
     */
-  var volumeSeriesID: js.UndefOr[String] = js.native
+  var volumeSeriesID: js.UndefOr[String] = js.undefined
 }
 object PlotChaikinParamsOptions {
   

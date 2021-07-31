@@ -6,7 +6,6 @@ import typings.react.mod.Ref
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -15,23 +14,22 @@ object typesMod {
   @js.native
   val refPropType: Requireable[Ref[js.Any]] = js.native
   
-  @js.native
   trait RefProps extends StObject {
     
-    var children: ReactElement = js.native
+    var children: ReactElement
     
     /**
       * Called when a child component will be mounted or updated.
       *
       * @param node - Referred node.
       */
-    var innerRef: Ref[HTMLElement] = js.native
+    var innerRef: Ref[HTMLElement]
   }
   object RefProps {
     
     @scala.inline
     def apply(children: ReactElement): RefProps = {
-      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], innerRef = null)
       __obj.asInstanceOf[RefProps]
     }
     

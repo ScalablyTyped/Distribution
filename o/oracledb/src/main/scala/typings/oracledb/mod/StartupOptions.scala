@@ -2,10 +2,8 @@ package typings.oracledb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartupOptions extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait StartupOptions extends StObject {
     * 
     * @default false
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The path and filename for a text file containing Oracle Database initialization parameters. If pfile is not set, then the database server-side parameter file is used.
     */
-  var pfile: js.UndefOr[String] = js.native
+  var pfile: js.UndefOr[String] = js.undefined
   
   /**
     * After the database is started, access is restricted to users who have the CREATE_SESSION and RESTRICTED SESSION privileges. The default is false.
     * 
     * @default false
     */
-  var restrict: js.UndefOr[Boolean] = js.native
+  var restrict: js.UndefOr[Boolean] = js.undefined
 }
 object StartupOptions {
   

@@ -2,16 +2,14 @@ package typings.swaggerExpressMiddleware.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CookieParserOptionItem extends StObject {
   
   /**
     *  an object that is passed to cookie.parse as the second option
     */
-  var options: js.UndefOr[js.Any] = js.native
+  var options: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A string or array used for signing cookies.
@@ -19,7 +17,7 @@ trait CookieParserOptionItem extends StObject {
     * If a string is provided, this is used as the secret.
     * If an array is provided, an attempt will be made to unsign the cookie with each secret in order.
     */
-  var secret: js.UndefOr[String | js.Array[String]] = js.native
+  var secret: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object CookieParserOptionItem {
   

@@ -23,7 +23,6 @@ import typings.reactNativeTextInputMask.reactNativeTextInputMaskStrings.sentence
 import typings.reactNativeTextInputMask.reactNativeTextInputMaskStrings.words
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,9 +34,9 @@ object mod {
   
   type TextInputMask = Component[TextInputMaskProps, js.Object, js.Any]
   
-  @js.native
   trait TextInputMaskProps
-    extends ViewProps
+    extends StObject
+       with ViewProps
        with TextInputIOSProps
        with TextInputAndroidProps {
     
@@ -48,7 +47,7 @@ object mod {
       * Specifies whether fonts should scale to respect Text Size accessibility settings.
       * The default is `true`.
       */
-    var allowFontScaling: js.UndefOr[Boolean] = js.native
+    var allowFontScaling: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Can tell TextInput to automatically capitalize certain characters.
@@ -59,49 +58,49 @@ object mod {
       *
       * https://facebook.github.io/react-native/docs/textinput.html#autocapitalize
       */
-    var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.native
+    var autoCapitalize: js.UndefOr[none | sentences | words | characters] = js.undefined
     
     /**
       * If false, disables auto-correct.
       * The default value is true.
       */
-    var autoCorrect: js.UndefOr[Boolean] = js.native
+    var autoCorrect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, focuses the input on componentDidMount.
       * The default value is false.
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, the text field will blur when submitted.
       * The default value is true.
       */
-    var blurOnSubmit: js.UndefOr[Boolean] = js.native
+    var blurOnSubmit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, caret is hidden. The default value is false.
       */
-    var caretHidden: js.UndefOr[Boolean] = js.native
+    var caretHidden: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Provides an initial value that will change when the user starts typing.
       * Useful for simple use-cases where you don't want to deal with listening to events
       * and updating the value prop to keep the controlled state in sync.
       */
-    var defaultValue: js.UndefOr[String] = js.native
+    var defaultValue: js.UndefOr[String] = js.undefined
     
     /**
       * If false, text is not editable. The default value is true.
       */
-    var editable: js.UndefOr[Boolean] = js.native
+    var editable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Used to connect to an InputAccessoryView. Not part of react-natives documentation, but present in examples and
       * code.
       * See https://facebook.github.io/react-native/docs/inputaccessoryview.html for more information.
       */
-    var inputAccessoryViewID: js.UndefOr[String] = js.native
+    var inputAccessoryViewID: js.UndefOr[String] = js.undefined
     
     /**
       * enum("default", 'numeric', 'email-address', "ascii-capable", 'numbers-and-punctuation', 'url', 'number-pad', 'phone-pad', 'name-phone-pad',
@@ -111,34 +110,34 @@ object mod {
       * The following values work on iOS: - ascii-capable - numbers-and-punctuation - url - number-pad - name-phone-pad - decimal-pad - twitter - web-search
       * The following values work on Android: - visible-password
       */
-    var keyboardType: js.UndefOr[KeyboardTypeOptions] = js.native
+    var keyboardType: js.UndefOr[KeyboardTypeOptions] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var maskDefaultValue: js.UndefOr[Boolean] = js.native
+    var maskDefaultValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Limits the maximum number of characters that can be entered.
       * Use this instead of implementing the logic in JS to avoid flicker.
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, the text input can be multiple lines. The default value is false.
       */
-    var multiline: js.UndefOr[Boolean] = js.native
+    var multiline: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Callback that is called when the text input is blurred
       */
-    var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]] = js.undefined
     
     /**
       * Callback that is called when the text input's text changes.
       */
-    var onChange: js.UndefOr[js.Function1[/* event */ NativeEvent, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ NativeEvent, Unit]] = js.undefined
     
-    var onChangeText: onChangeTextCallback = js.native
+    var onChangeText: onChangeTextCallback
     
     /**
       * Callback that is called when the text input's content size changes.
@@ -147,17 +146,17 @@ object mod {
       *
       * Only called for multiline text inputs.
       */
-    var onContentSizeChange: js.UndefOr[js.Function1[/* event */ NativeEventContentSizeHeight, Unit]] = js.native
+    var onContentSizeChange: js.UndefOr[js.Function1[/* event */ NativeEventContentSizeHeight, Unit]] = js.undefined
     
     /**
       * Callback that is called when text input ends.
       */
-    var onEndEditing: js.UndefOr[js.Function1[/* event */ NativeEventText, Unit]] = js.native
+    var onEndEditing: js.UndefOr[js.Function1[/* event */ NativeEventText, Unit]] = js.undefined
     
     /**
       * Callback that is called when the text input is focused
       */
-    var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputFocusEventData], Unit]] = js.undefined
     
     /**
       * Callback that is called when a key is pressed.
@@ -168,7 +167,7 @@ object mod {
       * Fires before onChange callbacks.
       * Note: on Android only the inputs from soft keyboard are handled, not the hardware keyboard inputs.
       */
-    var onKeyPress: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]] = js.native
+    var onKeyPress: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputKeyPressEventData], Unit]] = js.undefined
     
     /**
       * Invoked on content scroll with
@@ -176,65 +175,65 @@ object mod {
       *
       * May also contain other properties from ScrollEvent but on Android contentSize is not provided for performance reasons.
       */
-    var onScroll: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputScrollEventData], Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TextInputScrollEventData], Unit]] = js.undefined
     
     /**
       * Callback that is called when the text input selection is changed.
       */
     var onSelectionChange: js.UndefOr[
         js.Function1[/* e */ NativeSyntheticEvent[TextInputSelectionChangeEventData], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback that is called when the text input's submit button is pressed.
       */
-    var onSubmitEditing: js.UndefOr[js.Function1[/* event */ NativeEventText, Unit]] = js.native
+    var onSubmitEditing: js.UndefOr[js.Function1[/* event */ NativeEventText, Unit]] = js.undefined
     
     /**
       * The string that will be rendered before text input has been entered
       */
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
     /**
       * The text color of the placeholder string
       */
-    var placeholderTextColor: js.UndefOr[String] = js.native
+    var placeholderTextColor: js.UndefOr[String] = js.undefined
     
-    var refInput: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.native
+    var refInput: js.UndefOr[js.Function1[/* ref */ js.Any, Unit]] = js.undefined
     
     /**
       * enum('default', 'go', 'google', 'join', 'next', 'route', 'search', 'send', 'yahoo', 'done', 'emergency-call')
       * Determines how the return key should look.
       */
-    var returnKeyType: js.UndefOr[ReturnKeyTypeOptions] = js.native
+    var returnKeyType: js.UndefOr[ReturnKeyTypeOptions] = js.undefined
     
     /**
       * If true, the text input obscures the text entered so that sensitive text like passwords stay secure.
       * The default value is false.
       */
-    var secureTextEntry: js.UndefOr[Boolean] = js.native
+    var secureTextEntry: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If true, all text will automatically be selected on focus
       */
-    var selectTextOnFocus: js.UndefOr[Boolean] = js.native
+    var selectTextOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The start and end of the text input's selection. Set start and end to
       * the same value to position the cursor.
       */
-    var selection: js.UndefOr[End] = js.native
+    var selection: js.UndefOr[End] = js.undefined
     
     /**
       * The highlight (and cursor on ios) color of the text input
       */
-    var selectionColor: js.UndefOr[String] = js.native
+    var selectionColor: js.UndefOr[String] = js.undefined
     
     /**
       * Styles
       */
     @JSName("style")
-    var style_TextInputMaskProps: js.UndefOr[StyleProp[TextStyle]] = js.native
+    var style_TextInputMaskProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
     
     /**
       * The value to show for the text input. TextInput is a controlled component,
@@ -243,7 +242,7 @@ object mod {
       * In addition to simply setting the same value, either set editable={false},
       * or set/update maxLength to prevent unwanted edits without flicker.
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object TextInputMaskProps {
     

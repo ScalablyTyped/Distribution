@@ -6,23 +6,21 @@ import typings.devextreme.mod.DevExpress.viz.dxPieChart
 import typings.devextreme.mod.DevExpress.viz.piePointObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Points extends StObject {
   
-  var component: js.UndefOr[dxPieChart] = js.native
+  var component: js.UndefOr[dxPieChart] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.native
+  var event: js.UndefOr[typings.devextreme.mod.DevExpress.events.event] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var points: js.UndefOr[js.Array[piePointObject]] = js.native
+  var points: js.UndefOr[js.Array[piePointObject]] = js.undefined
   
-  var target: js.UndefOr[String | Double] = js.native
+  var target: js.UndefOr[String | Double] = js.undefined
 }
 object Points {
   

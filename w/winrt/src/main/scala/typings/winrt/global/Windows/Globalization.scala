@@ -1,6 +1,8 @@
 package typings.winrt.global.Windows
 
+import typings.std.Date
 import typings.winrt.Windows.Foundation.Collections.IIterable
+import typings.winrt.Windows.Foundation.Collections.IIterator
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat
 import typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat
@@ -9,9 +11,11 @@ import typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat
 import typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat
 import typings.winrt.Windows.Globalization.DateTimeFormatting.SecondFormat
 import typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat
+import typings.winrt.Windows.UI.Text.FontStretch
+import typings.winrt.Windows.UI.Text.FontStyle
+import typings.winrt.Windows.UI.Text.FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Globalization {
@@ -19,7 +23,8 @@ object Globalization {
   @JSGlobal("Windows.Globalization.ApplicationLanguages")
   @js.native
   class ApplicationLanguages ()
-    extends typings.winrt.Windows.Globalization.ApplicationLanguages
+    extends StObject
+       with typings.winrt.Windows.Globalization.ApplicationLanguages
   /* static members */
   object ApplicationLanguages {
     
@@ -49,7 +54,8 @@ object Globalization {
   @JSGlobal("Windows.Globalization.Calendar")
   @js.native
   class Calendar ()
-    extends typings.winrt.Windows.Globalization.Calendar {
+    extends StObject
+       with typings.winrt.Windows.Globalization.Calendar {
     def this(languages: IIterable[String]) = this()
     def this(languages: IIterable[String], calendar: String, clock: String) = this()
   }
@@ -57,7 +63,8 @@ object Globalization {
   @JSGlobal("Windows.Globalization.CalendarIdentifiers")
   @js.native
   class CalendarIdentifiers ()
-    extends typings.winrt.Windows.Globalization.CalendarIdentifiers
+    extends StObject
+       with typings.winrt.Windows.Globalization.CalendarIdentifiers
   /* static members */
   object CalendarIdentifiers {
     
@@ -123,7 +130,8 @@ object Globalization {
   @JSGlobal("Windows.Globalization.ClockIdentifiers")
   @js.native
   class ClockIdentifiers ()
-    extends typings.winrt.Windows.Globalization.ClockIdentifiers
+    extends StObject
+       with typings.winrt.Windows.Globalization.ClockIdentifiers
   /* static members */
   object ClockIdentifiers {
     
@@ -149,12 +157,25 @@ object Globalization {
     @JSGlobal("Windows.Globalization.Collation.CharacterGrouping")
     @js.native
     class CharacterGrouping ()
-      extends typings.winrt.Windows.Globalization.Collation.CharacterGrouping
+      extends StObject
+         with typings.winrt.Windows.Globalization.Collation.CharacterGrouping {
+      
+      /* CompleteClass */
+      var first: String = js.native
+      
+      /* CompleteClass */
+      var label: String = js.native
+    }
     
     @JSGlobal("Windows.Globalization.Collation.CharacterGroupings")
     @js.native
     class CharacterGroupings ()
-      extends typings.winrt.Windows.Globalization.Collation.CharacterGroupings
+      extends StObject
+         with typings.winrt.Windows.Globalization.Collation.CharacterGroupings {
+      
+      /* CompleteClass */
+      override def first(): IIterator[typings.winrt.Windows.Globalization.Collation.CharacterGrouping] = js.native
+    }
   }
   
   object DateTimeFormatting {
@@ -162,7 +183,8 @@ object Globalization {
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DateTimeFormatter")
     @js.native
     class DateTimeFormatter protected ()
-      extends typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter {
+      extends StObject
+         with typings.winrt.Windows.Globalization.DateTimeFormatting.DateTimeFormatter {
       def this(formatTemplate: String) = this()
       def this(formatTemplate: String, languages: IIterable[String]) = this()
       def this(hourFormat: HourFormat, minuteFormat: MinuteFormat, secondFormat: SecondFormat) = this()
@@ -202,6 +224,57 @@ object Globalization {
         calendar: String,
         clock: String
       ) = this()
+      
+      /* CompleteClass */
+      var calendar: String = js.native
+      
+      /* CompleteClass */
+      var clock: String = js.native
+      
+      /* CompleteClass */
+      override def format(value: Date): String = js.native
+      
+      /* CompleteClass */
+      var geographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var includeDay: DayFormat = js.native
+      
+      /* CompleteClass */
+      var includeDayOfWeek: DayOfWeekFormat = js.native
+      
+      /* CompleteClass */
+      var includeHour: HourFormat = js.native
+      
+      /* CompleteClass */
+      var includeMinute: MinuteFormat = js.native
+      
+      /* CompleteClass */
+      var includeMonth: MonthFormat = js.native
+      
+      /* CompleteClass */
+      var includeSecond: SecondFormat = js.native
+      
+      /* CompleteClass */
+      var includeYear: YearFormat = js.native
+      
+      /* CompleteClass */
+      var languages: IVectorView[String] = js.native
+      
+      /* CompleteClass */
+      var numeralSystem: String = js.native
+      
+      /* CompleteClass */
+      var patterns: IVectorView[String] = js.native
+      
+      /* CompleteClass */
+      var resolvedGeographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var resolvedLanguage: String = js.native
+      
+      /* CompleteClass */
+      var template: String = js.native
     }
     /* static members */
     object DateTimeFormatter {
@@ -240,11 +313,11 @@ object Globalization {
     object DayFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat & Double] = js.native
       
-      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.default with Double = js.native
+      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.default & Double = js.native
       
-      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.none with Double = js.native
+      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.DayFormat.none & Double = js.native
     }
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.DayOfWeekFormat")
@@ -252,17 +325,15 @@ object Globalization {
     object DayOfWeekFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[
-            typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat with Double
-          ] = js.native
+      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat & Double] = js.native
       
-      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.default with Double = js.native
+      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.default & Double = js.native
       
-      /* 2 */ val abbreviated: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.abbreviated with Double = js.native
+      /* 2 */ val abbreviated: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.abbreviated & Double = js.native
       
-      /* 3 */ val full: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.full with Double = js.native
+      /* 3 */ val full: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.full & Double = js.native
       
-      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.none with Double = js.native
+      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.DayOfWeekFormat.none & Double = js.native
     }
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.HourFormat")
@@ -270,11 +341,11 @@ object Globalization {
     object HourFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat & Double] = js.native
       
-      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat.default with Double = js.native
+      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat.default & Double = js.native
       
-      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat.none with Double = js.native
+      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.HourFormat.none & Double = js.native
     }
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.MinuteFormat")
@@ -282,11 +353,11 @@ object Globalization {
     object MinuteFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat & Double] = js.native
       
-      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.default with Double = js.native
+      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.default & Double = js.native
       
-      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.none with Double = js.native
+      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.MinuteFormat.none & Double = js.native
     }
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.MonthFormat")
@@ -294,17 +365,17 @@ object Globalization {
     object MonthFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat & Double] = js.native
       
-      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.default with Double = js.native
+      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.default & Double = js.native
       
-      /* 2 */ val abbreviated: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.abbreviated with Double = js.native
+      /* 2 */ val abbreviated: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.abbreviated & Double = js.native
       
-      /* 3 */ val full: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.full with Double = js.native
+      /* 3 */ val full: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.full & Double = js.native
       
-      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.none with Double = js.native
+      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.none & Double = js.native
       
-      /* 4 */ val numeric: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.numeric with Double = js.native
+      /* 4 */ val numeric: typings.winrt.Windows.Globalization.DateTimeFormatting.MonthFormat.numeric & Double = js.native
     }
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.SecondFormat")
@@ -312,11 +383,11 @@ object Globalization {
     object SecondFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.SecondFormat with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.SecondFormat & Double] = js.native
       
-      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.SecondFormat.default with Double = js.native
+      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.SecondFormat.default & Double = js.native
       
-      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.SecondFormat.none with Double = js.native
+      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.SecondFormat.none & Double = js.native
     }
     
     @JSGlobal("Windows.Globalization.DateTimeFormatting.YearFormat")
@@ -324,15 +395,15 @@ object Globalization {
     object YearFormat extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat & Double] = js.native
       
-      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.default with Double = js.native
+      /* 1 */ val default: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.default & Double = js.native
       
-      /* 2 */ val abbreviated: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.abbreviated with Double = js.native
+      /* 2 */ val abbreviated: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.abbreviated & Double = js.native
       
-      /* 3 */ val full: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.full with Double = js.native
+      /* 3 */ val full: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.full & Double = js.native
       
-      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.none with Double = js.native
+      /* 0 */ val none: typings.winrt.Windows.Globalization.DateTimeFormatting.YearFormat.none & Double = js.native
     }
   }
   
@@ -341,21 +412,21 @@ object Globalization {
   object DayOfWeek extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DayOfWeek with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.winrt.Windows.Globalization.DayOfWeek & Double] = js.native
     
-    /* 5 */ val friday: typings.winrt.Windows.Globalization.DayOfWeek.friday with Double = js.native
+    /* 5 */ val friday: typings.winrt.Windows.Globalization.DayOfWeek.friday & Double = js.native
     
-    /* 1 */ val monday: typings.winrt.Windows.Globalization.DayOfWeek.monday with Double = js.native
+    /* 1 */ val monday: typings.winrt.Windows.Globalization.DayOfWeek.monday & Double = js.native
     
-    /* 6 */ val saturday: typings.winrt.Windows.Globalization.DayOfWeek.saturday with Double = js.native
+    /* 6 */ val saturday: typings.winrt.Windows.Globalization.DayOfWeek.saturday & Double = js.native
     
-    /* 0 */ val sunday: typings.winrt.Windows.Globalization.DayOfWeek.sunday with Double = js.native
+    /* 0 */ val sunday: typings.winrt.Windows.Globalization.DayOfWeek.sunday & Double = js.native
     
-    /* 4 */ val thursday: typings.winrt.Windows.Globalization.DayOfWeek.thursday with Double = js.native
+    /* 4 */ val thursday: typings.winrt.Windows.Globalization.DayOfWeek.thursday & Double = js.native
     
-    /* 2 */ val tuesday: typings.winrt.Windows.Globalization.DayOfWeek.tuesday with Double = js.native
+    /* 2 */ val tuesday: typings.winrt.Windows.Globalization.DayOfWeek.tuesday & Double = js.native
     
-    /* 3 */ val wednesday: typings.winrt.Windows.Globalization.DayOfWeek.wednesday with Double = js.native
+    /* 3 */ val wednesday: typings.winrt.Windows.Globalization.DayOfWeek.wednesday & Double = js.native
   }
   
   object Fonts {
@@ -363,35 +434,124 @@ object Globalization {
     @JSGlobal("Windows.Globalization.Fonts.LanguageFont")
     @js.native
     class LanguageFont ()
-      extends typings.winrt.Windows.Globalization.Fonts.LanguageFont
+      extends StObject
+         with typings.winrt.Windows.Globalization.Fonts.LanguageFont {
+      
+      /* CompleteClass */
+      var fontFamily: String = js.native
+      
+      /* CompleteClass */
+      var fontStretch: FontStretch = js.native
+      
+      /* CompleteClass */
+      var fontStyle: FontStyle = js.native
+      
+      /* CompleteClass */
+      var fontWeight: FontWeight = js.native
+      
+      /* CompleteClass */
+      var scaleFactor: Double = js.native
+    }
     
     @JSGlobal("Windows.Globalization.Fonts.LanguageFontGroup")
     @js.native
     class LanguageFontGroup protected ()
-      extends typings.winrt.Windows.Globalization.Fonts.LanguageFontGroup {
+      extends StObject
+         with typings.winrt.Windows.Globalization.Fonts.LanguageFontGroup {
       def this(languageTag: String) = this()
+      
+      /* CompleteClass */
+      var documentAlternate1Font: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var documentAlternate2Font: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var documentHeadingFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var fixedWidthTextFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var modernDocumentFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var traditionalDocumentFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var uICaptionFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var uIHeadingFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var uINotificationHeadingFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var uITextFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
+      
+      /* CompleteClass */
+      var uITitleFont: typings.winrt.Windows.Globalization.Fonts.LanguageFont = js.native
     }
   }
   
   @JSGlobal("Windows.Globalization.GeographicRegion")
   @js.native
   class GeographicRegion ()
-    extends typings.winrt.Windows.Globalization.GeographicRegion {
+    extends StObject
+       with typings.winrt.Windows.Globalization.GeographicRegion {
     def this(geographicRegionCode: String) = this()
+    
+    /* CompleteClass */
+    var code: String = js.native
+    
+    /* CompleteClass */
+    var codeThreeDigit: String = js.native
+    
+    /* CompleteClass */
+    var codeThreeLetter: String = js.native
+    
+    /* CompleteClass */
+    var codeTwoLetter: String = js.native
+    
+    /* CompleteClass */
+    var currenciesInUse: IVectorView[String] = js.native
+    
+    /* CompleteClass */
+    var displayName: String = js.native
+    
+    /* CompleteClass */
+    var nativeName: String = js.native
   }
   /* static members */
   object GeographicRegion {
     
-    @JSGlobal("Windows.Globalization.GeographicRegion.isSupported")
+    @JSGlobal("Windows.Globalization.GeographicRegion")
     @js.native
-    def isSupported(geographicRegionCode: String): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isSupported(geographicRegionCode: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSupported")(geographicRegionCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   @JSGlobal("Windows.Globalization.Language")
   @js.native
   class Language protected ()
-    extends typings.winrt.Windows.Globalization.Language {
+    extends StObject
+       with typings.winrt.Windows.Globalization.Language {
     def this(languageTag: String) = this()
+    
+    /* CompleteClass */
+    var displayName: String = js.native
+    
+    /* CompleteClass */
+    var languageTag: String = js.native
+    
+    /* CompleteClass */
+    var nativeName: String = js.native
+    
+    /* CompleteClass */
+    var script: String = js.native
   }
   /* static members */
   object Language {
@@ -406,9 +566,8 @@ object Globalization {
     @scala.inline
     def currentInputMethodLanguageTag_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("currentInputMethodLanguageTag")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("Windows.Globalization.Language.isWellFormed")
-    @js.native
-    def isWellFormed(languageTag: String): Boolean = js.native
+    @scala.inline
+    def isWellFormed(languageTag: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isWellFormed")(languageTag.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
   object NumberFormatting {
@@ -416,30 +575,229 @@ object Globalization {
     @JSGlobal("Windows.Globalization.NumberFormatting.CurrencyFormatter")
     @js.native
     class CurrencyFormatter protected ()
-      extends typings.winrt.Windows.Globalization.NumberFormatting.CurrencyFormatter {
+      extends StObject
+         with typings.winrt.Windows.Globalization.NumberFormatting.CurrencyFormatter {
       def this(currencyCode: String) = this()
       def this(currencyCode: String, languages: IIterable[String], geographicRegion: String) = this()
+      
+      /* CompleteClass */
+      var currency: String = js.native
+      
+      /* CompleteClass */
+      override def format(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatDouble(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatUInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      var fractionDigits: Double = js.native
+      
+      /* CompleteClass */
+      var geographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var integerDigits: Double = js.native
+      
+      /* CompleteClass */
+      var isDecimalPointAlwaysDisplayed: Boolean = js.native
+      
+      /* CompleteClass */
+      var isGrouped: Boolean = js.native
+      
+      /* CompleteClass */
+      var languages: IVectorView[String] = js.native
+      
+      /* CompleteClass */
+      var numeralSystem: String = js.native
+      
+      /* CompleteClass */
+      override def parseDouble(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseUInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      var resolvedGeographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var resolvedLanguage: String = js.native
     }
     
     @JSGlobal("Windows.Globalization.NumberFormatting.DecimalFormatter")
     @js.native
     class DecimalFormatter ()
-      extends typings.winrt.Windows.Globalization.NumberFormatting.DecimalFormatter {
+      extends StObject
+         with typings.winrt.Windows.Globalization.NumberFormatting.DecimalFormatter {
       def this(languages: IIterable[String], geographicRegion: String) = this()
+      
+      /* CompleteClass */
+      override def format(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatDouble(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatUInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      var fractionDigits: Double = js.native
+      
+      /* CompleteClass */
+      var geographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var integerDigits: Double = js.native
+      
+      /* CompleteClass */
+      var isDecimalPointAlwaysDisplayed: Boolean = js.native
+      
+      /* CompleteClass */
+      var isGrouped: Boolean = js.native
+      
+      /* CompleteClass */
+      var languages: IVectorView[String] = js.native
+      
+      /* CompleteClass */
+      var numeralSystem: String = js.native
+      
+      /* CompleteClass */
+      override def parseDouble(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseUInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      var resolvedGeographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var resolvedLanguage: String = js.native
     }
     
     @JSGlobal("Windows.Globalization.NumberFormatting.PercentFormatter")
     @js.native
     class PercentFormatter ()
-      extends typings.winrt.Windows.Globalization.NumberFormatting.PercentFormatter {
+      extends StObject
+         with typings.winrt.Windows.Globalization.NumberFormatting.PercentFormatter {
       def this(languages: IIterable[String], geographicRegion: String) = this()
+      
+      /* CompleteClass */
+      override def format(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatDouble(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatUInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      var fractionDigits: Double = js.native
+      
+      /* CompleteClass */
+      var geographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var integerDigits: Double = js.native
+      
+      /* CompleteClass */
+      var isDecimalPointAlwaysDisplayed: Boolean = js.native
+      
+      /* CompleteClass */
+      var isGrouped: Boolean = js.native
+      
+      /* CompleteClass */
+      var languages: IVectorView[String] = js.native
+      
+      /* CompleteClass */
+      var numeralSystem: String = js.native
+      
+      /* CompleteClass */
+      override def parseDouble(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseUInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      var resolvedGeographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var resolvedLanguage: String = js.native
     }
     
     @JSGlobal("Windows.Globalization.NumberFormatting.PermilleFormatter")
     @js.native
     class PermilleFormatter ()
-      extends typings.winrt.Windows.Globalization.NumberFormatting.PermilleFormatter {
+      extends StObject
+         with typings.winrt.Windows.Globalization.NumberFormatting.PermilleFormatter {
       def this(languages: IIterable[String], geographicRegion: String) = this()
+      
+      /* CompleteClass */
+      override def format(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatDouble(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      override def formatUInt(value: Double): String = js.native
+      
+      /* CompleteClass */
+      var fractionDigits: Double = js.native
+      
+      /* CompleteClass */
+      var geographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var integerDigits: Double = js.native
+      
+      /* CompleteClass */
+      var isDecimalPointAlwaysDisplayed: Boolean = js.native
+      
+      /* CompleteClass */
+      var isGrouped: Boolean = js.native
+      
+      /* CompleteClass */
+      var languages: IVectorView[String] = js.native
+      
+      /* CompleteClass */
+      var numeralSystem: String = js.native
+      
+      /* CompleteClass */
+      override def parseDouble(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      override def parseUInt(text: String): Double = js.native
+      
+      /* CompleteClass */
+      var resolvedGeographicRegion: String = js.native
+      
+      /* CompleteClass */
+      var resolvedLanguage: String = js.native
     }
   }
 }

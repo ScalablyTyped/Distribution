@@ -2,19 +2,19 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdentityProvider extends Entity {
+trait IdentityProvider
+  extends StObject
+     with Entity {
   
-  var clientId: js.UndefOr[NullableOption[String]] = js.native
+  var clientId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var clientSecret: js.UndefOr[NullableOption[String]] = js.native
+  var clientSecret: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var name: js.UndefOr[NullableOption[String]] = js.native
+  var name: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object IdentityProvider {
   

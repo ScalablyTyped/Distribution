@@ -2,15 +2,13 @@ package typings.meteor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Canonical extends StObject {
   
-  var canonical: js.UndefOr[Boolean] = js.native
+  var canonical: js.UndefOr[Boolean] = js.undefined
   
-  var indent: js.UndefOr[Boolean | Double | String] = js.native
+  var indent: js.UndefOr[Boolean | Double | String] = js.undefined
 }
 object Canonical {
   

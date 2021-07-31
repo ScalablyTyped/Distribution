@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebApplication extends StObject {
   
   // Home page or landing page of the application.
-  var homePageUrl: js.UndefOr[NullableOption[String]] = js.native
+  var homePageUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies whether this web application can request tokens using the OAuth 2.0 implicit flow.
-  var implicitGrantSettings: js.UndefOr[NullableOption[ImplicitGrantSettings]] = js.native
+  var implicitGrantSettings: js.UndefOr[NullableOption[ImplicitGrantSettings]] = js.undefined
   
   /**
     * Specifies the URL that will be used by Microsoft's authorization service to logout an user using front-channel,
     * back-channel or SAML logout protocols.
     */
-  var logoutUrl: js.UndefOr[NullableOption[String]] = js.native
+  var logoutUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Specifies the URLs where user tokens are sent for sign-in, or the redirect URIs where OAuth 2.0 authorization codes and
     * access tokens are sent.
     */
-  var redirectUris: js.UndefOr[js.Array[String]] = js.native
+  var redirectUris: js.UndefOr[js.Array[String]] = js.undefined
 }
 object WebApplication {
   

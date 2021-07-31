@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.egjsAxes.axesMod.AxesOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axisManagerMod {
@@ -39,7 +38,7 @@ object axisManagerMod {
     
     def map(
       pos: Axis,
-      callback: js.Function3[/* value */ Double, /* key */ String, /* options */ AxisOption, _]
+      callback: js.Function3[/* value */ Double, /* key */ String, /* options */ AxisOption, js.Any]
     ): js.Any = js.native
     
     def moveTo(pos: Axis): StringDictionary[Axis] = js.native
@@ -51,21 +50,23 @@ object axisManagerMod {
   /* static members */
   object AxisManager {
     
-    @JSImport("@egjs/axes/AxisManager", "AxisManager.equal")
+    @JSImport("@egjs/axes/AxisManager", "AxisManager")
     @js.native
-    def equal(target: Axis, base: Axis): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def equal(target: Axis, base: Axis): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(target.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   }
   
   type Axis = StringDictionary[Double]
   
-  @js.native
   trait AxisOption extends StObject {
     
-    var bounce: js.UndefOr[Double | js.Array[Double]] = js.native
+    var bounce: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var circular: js.UndefOr[Boolean | js.Array[Boolean]] = js.native
+    var circular: js.UndefOr[Boolean | js.Array[Boolean]] = js.undefined
     
-    var range: js.UndefOr[js.Array[Double]] = js.native
+    var range: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object AxisOption {
     

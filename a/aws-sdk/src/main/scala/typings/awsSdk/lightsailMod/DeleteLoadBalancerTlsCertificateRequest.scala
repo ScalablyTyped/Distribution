@@ -2,26 +2,24 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteLoadBalancerTlsCertificateRequest extends StObject {
   
   /**
     * The SSL/TLS certificate name.
     */
-  var certificateName: ResourceName = js.native
+  var certificateName: ResourceName
   
   /**
     * When true, forces the deletion of an SSL/TLS certificate. There can be two certificates associated with a Lightsail load balancer: the primary and the backup. The force parameter is required when the primary SSL/TLS certificate is in use by an instance attached to the load balancer.
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The load balancer name.
     */
-  var loadBalancerName: ResourceName = js.native
+  var loadBalancerName: ResourceName
 }
 object DeleteLoadBalancerTlsCertificateRequest {
   

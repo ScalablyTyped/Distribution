@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListClustersResult extends StObject {
   
   /**
     * Each ClusterListEntry object contains a cluster's state, a cluster's ID, and other important status information.
     */
-  var ClusterListEntries: js.UndefOr[ClusterListEntryList] = js.native
+  var ClusterListEntries: js.UndefOr[ClusterListEntryList] = js.undefined
   
   /**
     * HTTP requests are stateless. If you use the automatically generated NextToken value in your next ClusterListEntry call, your list of returned clusters will start from this point in the array.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListClustersResult {
   

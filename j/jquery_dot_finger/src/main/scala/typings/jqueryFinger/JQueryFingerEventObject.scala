@@ -3,11 +3,12 @@ package typings.jqueryFinger
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait JQueryFingerEventObject extends JQueryEventObject {
+trait JQueryFingerEventObject
+  extends StObject
+     with JQueryEventObject {
   
   /**
     * The absolute x delta since the last event.

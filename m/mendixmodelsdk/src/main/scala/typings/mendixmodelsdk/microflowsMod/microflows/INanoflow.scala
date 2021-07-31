@@ -4,7 +4,6 @@ import typings.mendixmodelsdk.instancesMod.IList
 import typings.mendixmodelsdk.securityMod.security.IModuleRole
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.10.0: introduced
   */
 @js.native
-trait INanoflow extends IMicroflowBase {
+trait INanoflow
+  extends StObject
+     with IMicroflowBase {
   
   /**
     * In version 7.23.0: added public

@@ -2,24 +2,22 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database list response.
   */
-@js.native
 trait SchemaDatabasesListResponse extends StObject {
   
   /**
     * List of database resources in the instance.
     */
-  var items: js.UndefOr[js.Array[SchemaDatabase]] = js.native
+  var items: js.UndefOr[js.Array[SchemaDatabase]] = js.undefined
   
   /**
     * This is always sql#databasesList.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaDatabasesListResponse {
   

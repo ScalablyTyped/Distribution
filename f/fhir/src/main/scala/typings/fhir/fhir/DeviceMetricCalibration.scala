@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes the calibrations that have been performed or that are required to be performed
   */
-@js.native
-trait DeviceMetricCalibration extends BackboneElement {
+trait DeviceMetricCalibration
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'state'.
     */
-  var _state: js.UndefOr[Element] = js.native
+  var _state: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'time'.
     */
-  var _time: js.UndefOr[Element] = js.native
+  var _time: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * not-calibrated | calibration-required | calibrated | unspecified
     */
-  var state: js.UndefOr[code] = js.native
+  var state: js.UndefOr[code] = js.undefined
   
   /**
     * Describes the time last calibration has been performed
     */
-  var time: js.UndefOr[instant] = js.native
+  var time: js.UndefOr[instant] = js.undefined
   
   /**
     * unspecified | offset | gain | two-point
     */
-  var `type`: js.UndefOr[code] = js.native
+  var `type`: js.UndefOr[code] = js.undefined
 }
 object DeviceMetricCalibration {
   

@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * see: https://en.wikipedia.org/wiki/Flyweight_pattern for more on the Flyweight pattern
   */
-@js.native
 trait TNode extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait TNode extends StObject {
     * This array can contain flags that will indicate "special attributes" (attributes with
     * namespaces, attributes extracted from bindings and outputs).
     */
-  var attrs: TAttributes | Null = js.native
+  var attrs: TAttributes | Null
   
   /**
     * First child of the current node.
@@ -41,7 +39,7 @@ trait TNode extends StObject {
     * For component nodes, the child will always be a ContentChild (in same view).
     * For embedded view nodes, the child will be in their child view.
     */
-  var child: TNode | Null = js.native
+  var child: TNode | Null
   
   /**
     * Stores the head/tail index of the class bindings.
@@ -56,7 +54,7 @@ trait TNode extends StObject {
     * This is used by `insertTStylingBinding` to know where the next styling binding should be
     * inserted so that they can be sorted in priority order.
     */
-  var classBindings: TStylingRange = js.native
+  var classBindings: TStylingRange
   
   /**
     * A collection of all class static values for an element (including from host).
@@ -67,7 +65,7 @@ trait TNode extends StObject {
     * - There are one or more initial classes on an directive/component host
     *   (e.g. `@Directive({host: {class: "SOME_CLASS" } }`)
     */
-  var classes: String | Null = js.native
+  var classes: String | Null
   
   /**
     * A collection of all class static values for an element excluding host sources.
@@ -80,7 +78,7 @@ trait TNode extends StObject {
     * `tNode.attrs`, we would have to concatenate the attributes on every template pass. Instead,
     * we process once on first create pass and store here.
     */
-  var classesWithoutHost: String | Null = js.native
+  var classesWithoutHost: String | Null
   
   /**
     * Stores final exclusive index of the directives.
@@ -89,14 +87,14 @@ trait TNode extends StObject {
     * `HostBindingFunction` `vars` (or null if no bindings.) Therefore `directiveEnd` is used to set
     * `LFrame.bindingRootIndex` before `HostBindingFunction` is executed.
     */
-  var directiveEnd: Double = js.native
+  var directiveEnd: Double
   
   /**
     * Stores starting index of the directives.
     *
     * NOTE: The first directive is always component (if present).
     */
-  var directiveStart: Double = js.native
+  var directiveStart: Double
   
   /**
     * Stores the last directive which had a styling instruction.
@@ -114,13 +112,13 @@ trait TNode extends StObject {
     * collected from the `DirectiveDef.hostAttrs`. A styling instruction needs to collect all data
     * since last styling instruction.
     */
-  var directiveStylingLast: Double = js.native
+  var directiveStylingLast: Double
   
   /**
     * Stores if Node isComponent, isProjected, hasContentQuery, hasClassInput and hasStyleInput
     * etc.
     */
-  var flags: TNodeFlags = js.native
+  var flags: TNodeFlags
   
   /**
     * Index of the TNode in TView.data and corresponding native element in LView.
@@ -130,10 +128,10 @@ trait TNode extends StObject {
     *
     * If index is -1, this is a dynamically created container node or embedded view node.
     */
-  var index: Double = js.native
+  var index: Double
   
   /** Information about input properties that need to be set once from attribute data. */
-  var initialInputs: js.UndefOr[InitialInputData | Null] = js.native
+  var initialInputs: js.UndefOr[InitialInputData | Null] = js.undefined
   
   /**
     * The index of the closest injector in this node's LView.
@@ -149,13 +147,13 @@ trait TNode extends StObject {
     * If tNode.injectorIndex === tNode.parent.injectorIndex, then the index belongs to a parent
     * injector.
     */
-  var injectorIndex: Double = js.native
+  var injectorIndex: Double
   
   /**
     * Input data for all directives on this node. `null` means that there are no directives with
     * inputs on this node.
     */
-  var inputs: PropertyAliases | Null = js.native
+  var inputs: PropertyAliases | Null
   
   /**
     * Insert before existing DOM node index.
@@ -208,7 +206,7 @@ trait TNode extends StObject {
     * has not yet been created. For this reason the `ɵɵi18nStart` creates a `TNodeType.Placeholder`
     * `TNode` at that location. See `TNodeType.Placeholder` for more information.
     */
-  var insertBeforeIndex: InsertBeforeIndex = js.native
+  var insertBeforeIndex: InsertBeforeIndex
   
   /**
     * A set of local names under which a given element is exported in a template and
@@ -227,7 +225,7 @@ trait TNode extends StObject {
     * - `<my-cmpt #foo #bar="directiveExportAs">` => `["foo", myCmptIdx, "bar", directiveIdx]`
     * - `<div #foo #bar="directiveExportAs">` => `["foo", -1, "bar", directiveIdx]`
     */
-  var localNames: (js.Array[String | Double]) | Null = js.native
+  var localNames: (js.Array[String | Double]) | Null
   
   /**
     * Same as `TNode.attrs` but contains merged data across all directive host bindings.
@@ -240,19 +238,19 @@ trait TNode extends StObject {
     * - Directives' `hostAttrs`
     * - Template `TNode.attrs` associated with the current `TNode`.
     */
-  var mergedAttrs: TAttributes | Null = js.native
+  var mergedAttrs: TAttributes | Null
   
   /**
     * The next sibling node. Necessary so we can propagate through the root nodes of a view
     * to insert them or remove them from the DOM.
     */
-  var next: TNode | Null = js.native
+  var next: TNode | Null
   
   /**
     * Output data for all directives on this node. `null` means that there are no directives with
     * outputs on this node.
     */
-  var outputs: PropertyAliases | Null = js.native
+  var outputs: PropertyAliases | Null
   
   /**
     * Parent node (in the same view only).
@@ -268,7 +266,7 @@ trait TNode extends StObject {
     *
     * If this is an inline view node (V), the parent will be its container.
     */
-  var parent: ɵangularPackagesCoreCoreBh | TContainerNode | Null = js.native
+  var parent: ɵangularPackagesCoreCoreBh | TContainerNode | Null
   
   /**
     * List of projected TNodes for a given component host element OR index into the said nodes.
@@ -309,7 +307,7 @@ trait TNode extends StObject {
     * If `projection` is of type `RNode[][]` than we have a collection of native nodes passed as
     * projectable nodes during dynamic component creation.
     */
-  var projection: (js.Array[TNode | js.Array[RNode]]) | Double | Null = js.native
+  var projection: (js.Array[TNode | js.Array[RNode]]) | Double | Null
   
   /**
     * The next projected sibling. Since in Angular content projection works on the node-by-node
@@ -317,13 +315,13 @@ trait TNode extends StObject {
     * (target view). At the same time we need to keep initial relationship between nodes as
     * expressed in content view.
     */
-  var projectionNext: TNode | Null = js.native
+  var projectionNext: TNode | Null
   
   /**
     * Stores indexes of property bindings. This field is only set in the ngDevMode and holds
     * indexes of property bindings so TestBed can get bound property metadata for a given node.
     */
-  var propertyBindings: js.Array[Double] | Null = js.native
+  var propertyBindings: js.Array[Double] | Null
   
   /**
     * This number stores two values using its bits:
@@ -331,7 +329,7 @@ trait TNode extends StObject {
     * - the index of the first provider on that node (first 16 bits)
     * - the count of view providers from the component on this node (last 16 bits)
     */
-  var providerIndexes: TNodeProviderIndexes = js.native
+  var providerIndexes: TNodeProviderIndexes
   
   /**
     * A `KeyValueArray` version of residual `classes`.
@@ -342,7 +340,7 @@ trait TNode extends StObject {
     * - `null`: initialized but `classes` is `null`
     * - `KeyValueArray`: parsed version of `classes`.
     */
-  var residualClasses: js.UndefOr[KeyValueArray[_] | Null] = js.native
+  var residualClasses: js.UndefOr[KeyValueArray[js.Any] | Null] = js.undefined
   
   /**
     * A `KeyValueArray` version of residual `styles`.
@@ -371,7 +369,7 @@ trait TNode extends StObject {
     * - `null`: initialized but `styles` is `null`
     * - `KeyValueArray`: parsed version of `styles`.
     */
-  var residualStyles: js.UndefOr[KeyValueArray[_] | Null] = js.native
+  var residualStyles: js.UndefOr[KeyValueArray[js.Any] | Null] = js.undefined
   
   /**
     * Stores the head/tail index of the class bindings.
@@ -386,7 +384,7 @@ trait TNode extends StObject {
     * This is used by `insertTStylingBinding` to know where the next styling binding should be
     * inserted so that they can be sorted in priority order.
     */
-  var styleBindings: TStylingRange = js.native
+  var styleBindings: TStylingRange
   
   /**
     * A collection of all `style` static values for an element (including from host).
@@ -397,7 +395,7 @@ trait TNode extends StObject {
     * - There are one or more initial `style`s on a directive/component host
     *   (e.g. `@Directive({host: {style: "width:200px;" } }`)
     */
-  var styles: String | Null = js.native
+  var styles: String | Null
   
   /**
     * A collection of all `style` static values for an element excluding host sources.
@@ -410,7 +408,7 @@ trait TNode extends StObject {
     * would have to concatenate the attributes on every template pass. Instead, we process once on
     * first create pass and store here.
     */
-  var stylesWithoutHost: String | Null = js.native
+  var stylesWithoutHost: String | Null
   
   /**
     * The TView or TViews attached to this node.
@@ -432,10 +430,10 @@ trait TNode extends StObject {
     *
     * If this TNode corresponds to an element, tViews will be null .
     */
-  var tViews: TView | js.Array[TView] | Null = js.native
+  var tViews: TView | js.Array[TView] | Null
   
   /** The type of the TNode. See TNodeType. */
-  var `type`: TNodeType = js.native
+  var `type`: TNodeType
   
   /**
     * The value name associated with this node.
@@ -444,7 +442,7 @@ trait TNode extends StObject {
     *   `TNodeType.Element`: tag name
     *   `TNodeType.ICUContainer`: `TIcu`
     */
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object TNode {
   
@@ -462,7 +460,7 @@ object TNode {
     `type`: TNodeType,
     value: js.Any
   ): TNode = {
-    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, child = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projection = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null, tViews = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TNode]
   }
@@ -609,7 +607,7 @@ object TNode {
     def setProviderIndexes(value: TNodeProviderIndexes): Self = StObject.set(x, "providerIndexes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResidualClasses(value: KeyValueArray[_]): Self = StObject.set(x, "residualClasses", value.asInstanceOf[js.Any])
+    def setResidualClasses(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualClasses", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResidualClassesNull: Self = StObject.set(x, "residualClasses", null)
@@ -618,7 +616,7 @@ object TNode {
     def setResidualClassesUndefined: Self = StObject.set(x, "residualClasses", js.undefined)
     
     @scala.inline
-    def setResidualStyles(value: KeyValueArray[_]): Self = StObject.set(x, "residualStyles", value.asInstanceOf[js.Any])
+    def setResidualStyles(value: KeyValueArray[js.Any]): Self = StObject.set(x, "residualStyles", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setResidualStylesNull: Self = StObject.set(x, "residualStyles", null)

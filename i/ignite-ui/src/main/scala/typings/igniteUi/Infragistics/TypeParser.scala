@@ -2,32 +2,30 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeParser extends StObject {
   
-  def empty(): Unit = js.native
+  def empty(): Unit
   
-  def isNullOrUndefined(obj: js.Object): Unit = js.native
+  def isNullOrUndefined(obj: js.Object): Unit
   
-  def num(): Unit = js.native
+  def num(): Unit
   
-  def toBool(obj: js.Object): Unit = js.native
+  def toBool(obj: js.Object): Unit
   
   /**
     * L.A. 18 June 2012 Fixing bug #113265 Column 'date' shows empty values as 'NaN'
     *
     * @param obj
     */
-  def toDate(obj: js.Object): Unit = js.native
+  def toDate(obj: js.Object): Unit
   
-  def toNumber(obj: js.Object): Unit = js.native
+  def toNumber(obj: js.Object): Unit
   
-  def toStr(obj: js.Object): Unit = js.native
+  def toStr(obj: js.Object): Unit
   
-  def toTime(obj: js.Object): Unit = js.native
+  def toTime(obj: js.Object): Unit
 }
 object TypeParser {
   

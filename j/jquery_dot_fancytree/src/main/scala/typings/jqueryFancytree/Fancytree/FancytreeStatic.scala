@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,9 +17,9 @@ trait FancytreeStatic extends StObject {
   
   /** Return a function that executes *fn* at most every *timeout* ms. */
   def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T): T = js.native
-  def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T, invokeAsap: js.UndefOr[scala.Nothing], ctx: js.Any): T = js.native
   def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T, invokeAsap: Boolean): T = js.native
   def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T, invokeAsap: Boolean, ctx: js.Any): T = js.native
+  def debounce[T /* <: js.Function1[/* repeated */ js.Any, Unit] */](timeout: Double, fn: T, invokeAsap: Unit, ctx: js.Any): T = js.native
   
   def debug(msg: String): Unit = js.native
   

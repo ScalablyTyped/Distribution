@@ -3,15 +3,13 @@ package typings.kdbxweb.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait editingState extends StObject {
   
-  var added: js.Array[Date] = js.native
+  var added: js.Array[Date]
   
-  var deleted: js.Array[Date] = js.native
+  var deleted: js.Array[Date]
 }
 object editingState {
   

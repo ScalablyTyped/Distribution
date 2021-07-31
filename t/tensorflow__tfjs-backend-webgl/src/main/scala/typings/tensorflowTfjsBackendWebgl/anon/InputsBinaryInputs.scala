@@ -4,15 +4,13 @@ import typings.tensorflowTfjsBackendWebgl.backendWebglMod.MathBackendWebGL
 import typings.tensorflowTfjsCore.kernelNamesMod.BinaryInputs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputsBinaryInputs extends StObject {
   
-  var backend: MathBackendWebGL = js.native
+  var backend: MathBackendWebGL
   
-  var inputs: BinaryInputs = js.native
+  var inputs: BinaryInputs
 }
 object InputsBinaryInputs {
   

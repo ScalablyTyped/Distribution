@@ -19,7 +19,6 @@ import typings.webpackPluginServe.webpackPluginServeStrings.`refresh-on-failure`
 import typings.webpackPluginServe.webpackPluginServeStrings.minimal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -55,12 +54,11 @@ object mod {
     def websocket(): Unit = js.native
   }
   
-  @js.native
   trait StaticObject extends StObject {
     
-    var glob: js.UndefOr[String | js.Array[String]] = js.native
+    var glob: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var options: js.UndefOr[GlobbyOptions] = js.native
+    var options: js.UndefOr[GlobbyOptions] = js.undefined
   }
   object StaticObject {
     
@@ -90,42 +88,41 @@ object mod {
     }
   }
   
-  @js.native
   trait WebpackPluginServeOptions extends StObject {
     
-    var client: js.UndefOr[Address] = js.native
+    var client: js.UndefOr[Address] = js.undefined
     
-    var compress: js.UndefOr[Boolean] = js.native
+    var compress: js.UndefOr[Boolean] = js.undefined
     
-    var historyFallback: js.UndefOr[Boolean | Options] = js.native
+    var historyFallback: js.UndefOr[Boolean | Options] = js.undefined
     
-    var hmr: js.UndefOr[Boolean | `refresh-on-failure`] = js.native
+    var hmr: js.UndefOr[Boolean | `refresh-on-failure`] = js.undefined
     
-    var host: js.UndefOr[String | js.Promise[String]] = js.native
+    var host: js.UndefOr[String | js.Promise[String]] = js.undefined
     
-    var http2: js.UndefOr[Boolean | ServerOptions | SecureServerOptions] = js.native
+    var http2: js.UndefOr[Boolean | ServerOptions | SecureServerOptions] = js.undefined
     
-    var https: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.native
+    var https: js.UndefOr[typings.node.httpsMod.ServerOptions] = js.undefined
     
-    var liveReload: js.UndefOr[Boolean] = js.native
+    var liveReload: js.UndefOr[Boolean] = js.undefined
     
-    var log: js.UndefOr[Level] = js.native
+    var log: js.UndefOr[Level] = js.undefined
     
     var middleware: js.UndefOr[
         js.Function2[/* app */ ^[DefaultState, DefaultContext], /* builtins */ Builtins, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var open: js.UndefOr[Boolean | App] = js.native
+    var open: js.UndefOr[Boolean | App] = js.undefined
     
-    var port: js.UndefOr[Double | js.Promise[Double]] = js.native
+    var port: js.UndefOr[Double | js.Promise[Double]] = js.undefined
     
-    var progress: js.UndefOr[Boolean | minimal] = js.native
+    var progress: js.UndefOr[Boolean | minimal] = js.undefined
     
-    var static: js.UndefOr[String | js.Array[String] | StaticObject] = js.native
+    var static: js.UndefOr[String | js.Array[String] | StaticObject] = js.undefined
     
-    var status: js.UndefOr[Boolean] = js.native
+    var status: js.UndefOr[Boolean] = js.undefined
     
-    var waitForBuild: js.UndefOr[Boolean] = js.native
+    var waitForBuild: js.UndefOr[Boolean] = js.undefined
   }
   object WebpackPluginServeOptions {
     

@@ -9,14 +9,15 @@ import typings.node.urlMod.UrlWithParsedQuery
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nextServerMod {
   
   @JSImport("next-server/dist/server/next-server", JSImport.Default)
   @js.native
-  class default () extends Server {
+  class default ()
+    extends StObject
+       with Server {
     def this(hasDirStaticMarkupQuietConf: ServerConstructor) = this()
   }
   
@@ -89,7 +90,7 @@ object nextServerMod {
       req: IncomingMessage,
       res: ServerResponse,
       pathname: String,
-      query: js.UndefOr[scala.Nothing],
+      query: Unit,
       parsedUrl: UrlWithParsedQuery
     ): js.Promise[Unit] = js.native
     def render(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
@@ -109,10 +110,10 @@ object nextServerMod {
     def renderError(err: Error, req: IncomingMessage, res: ServerResponse, pathname: String): js.Promise[Unit] = js.native
     def renderError(err: Error, req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[Unit] = js.native
     
-    def renderErrorToHTML(err: Null, req: IncomingMessage, res: ServerResponse, _pathname: String): js.Promise[_] = js.native
-    def renderErrorToHTML(err: Null, req: IncomingMessage, res: ServerResponse, _pathname: String, query: ParsedUrlQuery): js.Promise[_] = js.native
-    def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String): js.Promise[_] = js.native
-    def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String, query: ParsedUrlQuery): js.Promise[_] = js.native
+    def renderErrorToHTML(err: Null, req: IncomingMessage, res: ServerResponse, _pathname: String): js.Promise[js.Any] = js.native
+    def renderErrorToHTML(err: Null, req: IncomingMessage, res: ServerResponse, _pathname: String, query: ParsedUrlQuery): js.Promise[js.Any] = js.native
+    def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String): js.Promise[js.Any] = js.native
+    def renderErrorToHTML(err: Error, req: IncomingMessage, res: ServerResponse, _pathname: String, query: ParsedUrlQuery): js.Promise[js.Any] = js.native
     
     var renderOpts: AmpBindInitData = js.native
     
@@ -121,7 +122,7 @@ object nextServerMod {
       req: IncomingMessage,
       res: ServerResponse,
       pathname: String,
-      query: js.UndefOr[scala.Nothing],
+      query: Unit,
       hasAmphtmlDataOnlyHasAmp: Amphtml
     ): js.Promise[String | Null] = js.native
     def renderToHTML(req: IncomingMessage, res: ServerResponse, pathname: String, query: ParsedUrlQuery): js.Promise[String | Null] = js.native
@@ -156,25 +157,24 @@ object nextServerMod {
     var setImmutableAssetCacheControl: js.Any = js.native
   }
   
-  @js.native
   trait ServerConstructor extends StObject {
     
     /**
       * Object what you would use in next.config.js - @default {}
       */
-    var conf: js.UndefOr[NextConfig] = js.native
+    var conf: js.UndefOr[NextConfig] = js.undefined
     
     /**
       * Where the Next project is located - @default '.'
       */
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
     /**
       * Hide error messages containing server information - @default false
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var staticMarkup: js.UndefOr[Boolean] = js.native
+    var staticMarkup: js.UndefOr[Boolean] = js.undefined
   }
   object ServerConstructor {
     

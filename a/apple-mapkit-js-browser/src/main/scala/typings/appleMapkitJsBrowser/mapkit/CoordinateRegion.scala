@@ -2,50 +2,48 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A rectangular area on a map defined by a center coordinate and a span,
   * expressed in degrees of latitude and longitude.
   */
-@js.native
 trait CoordinateRegion extends StObject {
   
   /**
     * The center point of the region.
     */
-  var center: Coordinate = js.native
+  var center: Coordinate
   
   /**
     * Returns a copy of the calling coordinate region.
     */
-  def copy(): CoordinateRegion = js.native
+  def copy(): CoordinateRegion
   
   /**
     * Returns a Boolean value indicating whether two regions are equal.
     */
-  def equals(anotherRegion: CoordinateRegion): Boolean = js.native
+  def equals(anotherRegion: CoordinateRegion): Boolean
   
   /**
     * The distance provided in meters or the longest distance derived from the center point to the region’s bounding box.
     */
-  val radius: Double = js.native
+  val radius: Double
   
   /**
     * The horizontal and vertical span representing the amount of map to display.
     */
-  var span: CoordinateSpan = js.native
+  var span: CoordinateSpan
   
   /**
     * Returns the bounding region that corresponds to the calling coordinate region.
     */
-  def toBoundingRegion(): BoundingRegion = js.native
+  def toBoundingRegion(): BoundingRegion
   
   /**
     * Returns the map rectangle that corresponds to the calling coordinate region.
     */
-  def toMapRect(): MapRect = js.native
+  def toMapRect(): MapRect
 }
 object CoordinateRegion {
   

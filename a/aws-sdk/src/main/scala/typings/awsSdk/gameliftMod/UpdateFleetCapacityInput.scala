@@ -2,31 +2,29 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFleetCapacityInput extends StObject {
   
   /**
     * Number of EC2 instances you want this fleet to host.
     */
-  var DesiredInstances: js.UndefOr[WholeNumber] = js.native
+  var DesiredInstances: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * A unique identifier for a fleet to update capacity for. You can use either the fleet ID or ARN value.
     */
-  var FleetId: FleetIdOrArn = js.native
+  var FleetId: FleetIdOrArn
   
   /**
     * The maximum value allowed for the fleet's instance count. Default if not set is 1.
     */
-  var MaxSize: js.UndefOr[WholeNumber] = js.native
+  var MaxSize: js.UndefOr[WholeNumber] = js.undefined
   
   /**
     * The minimum value allowed for the fleet's instance count. Default if not set is 0.
     */
-  var MinSize: js.UndefOr[WholeNumber] = js.native
+  var MinSize: js.UndefOr[WholeNumber] = js.undefined
 }
 object UpdateFleetCapacityInput {
   

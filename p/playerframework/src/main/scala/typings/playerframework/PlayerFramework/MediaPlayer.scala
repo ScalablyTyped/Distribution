@@ -9,7 +9,6 @@ import typings.winrt.Windows.Media.MediaExtensionManager
 import typings.winrt.Windows.Media.Protection.MediaProtectionManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,9 +41,9 @@ trait MediaPlayer extends StObject {
     * @param language String The BCP47 language tag of the track. For example "en" for English or "fr" for French
     **/
   def addTextTrack(kind: String): Unit = js.native
-  def addTextTrack(kind: String, label: js.UndefOr[scala.Nothing], language: String): Unit = js.native
   def addTextTrack(kind: String, label: String): Unit = js.native
   def addTextTrack(kind: String, label: String, language: String): Unit = js.native
+  def addTextTrack(kind: String, label: Unit, language: String): Unit = js.native
   
   /**
     * Gets or sets the current advertising state of the player.
@@ -59,7 +58,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the audio tracks for the current media source.
     **/
-  var audioTracks: js.Array[_] = js.native
+  var audioTracks: js.Array[js.Any] = js.native
   
   /**
     * Gets or sets a value that indicates whether to automatically start buffering the current media source.
@@ -94,7 +93,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the buffered time ranges for the current media source.
     **/
-  var buffered: js.Array[_] = js.native
+  var buffered: js.Array[js.Any] = js.native
   
   /**
     * Returns a value that specifies whether the player can play a given media type.
@@ -107,7 +106,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the caption and subtitle tracks for the current media source.
     **/
-  var captionTracks: js.Array[_] = js.native
+  var captionTracks: js.Array[js.Any] = js.native
   
   /**
     * Raises the captionsinvoked event used to indicate that closed options should be toggled on/off or
@@ -789,7 +788,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets the played time ranges for the current media source.
     **/
-  var played: js.Array[_] = js.native
+  var played: js.Array[js.Any] = js.native
   
   /**
     * Gets or sets the current state of the player.
@@ -805,7 +804,7 @@ trait MediaPlayer extends StObject {
   /*
     * Gets the plugins associated with the player.
     **/
-  var plugins: js.Array[_] = js.native
+  var plugins: js.Array[js.Any] = js.native
   
   //TODO: (type: ?, read - only)
   /*
@@ -897,7 +896,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets or sets the media sources to be considered.
     **/
-  var sources: js.Array[_] = js.native
+  var sources: js.Array[js.Any] = js.native
   
   //TODO: (type: Array, read / write)
   /**
@@ -934,7 +933,7 @@ trait MediaPlayer extends StObject {
   /**
     * Gets or sets the tracks for the player.
     **/
-  var tracks: js.Array[_] = js.native
+  var tracks: js.Array[js.Any] = js.native
   
   /**
     * Updates the player and its plugins with the specified media source(e.g.the current playlist item).

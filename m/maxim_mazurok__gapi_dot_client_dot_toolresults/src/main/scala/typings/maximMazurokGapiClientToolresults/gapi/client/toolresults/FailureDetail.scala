@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureDetail extends StObject {
   
   /** If the failure was severe because the system (app) under test crashed. */
-  var crashed: js.UndefOr[Boolean] = js.native
+  var crashed: js.UndefOr[Boolean] = js.undefined
   
   /** If the device ran out of memory during a test, causing the test to crash. */
-  var deviceOutOfMemory: js.UndefOr[Boolean] = js.native
+  var deviceOutOfMemory: js.UndefOr[Boolean] = js.undefined
   
   /** If the Roboscript failed to complete successfully, e.g., because a Roboscript action or assertion failed or a Roboscript action could not be matched during the entire crawl. */
-  var failedRoboscript: js.UndefOr[Boolean] = js.native
+  var failedRoboscript: js.UndefOr[Boolean] = js.undefined
   
   /** If an app is not installed and thus no test can be run with the app. This might be caused by trying to run a test on an unsupported platform. */
-  var notInstalled: js.UndefOr[Boolean] = js.native
+  var notInstalled: js.UndefOr[Boolean] = js.undefined
   
   /** If a native process (including any other than the app) crashed. */
-  var otherNativeCrash: js.UndefOr[Boolean] = js.native
+  var otherNativeCrash: js.UndefOr[Boolean] = js.undefined
   
   /** If the test overran some time limit, and that is why it failed. */
-  var timedOut: js.UndefOr[Boolean] = js.native
+  var timedOut: js.UndefOr[Boolean] = js.undefined
   
   /** If the robo was unable to crawl the app; perhaps because the app did not start. */
-  var unableToCrawl: js.UndefOr[Boolean] = js.native
+  var unableToCrawl: js.UndefOr[Boolean] = js.undefined
 }
 object FailureDetail {
   

@@ -2,18 +2,20 @@ package typings.inversifyExpressUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
+  
+  @JSImport("inversify-express-utils/dts/constants", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("inversify-express-utils/dts/constants", "DEFAULT_ROUTING_ROOT_PATH")
   @js.native
   val DEFAULT_ROUTING_ROOT_PATH: /* "/" */ String = js.native
   
-  @JSImport("inversify-express-utils/dts/constants", "DUPLICATED_CONTROLLER_NAME")
-  @js.native
-  def DUPLICATED_CONTROLLER_NAME(name: String): String = js.native
+  @scala.inline
+  def DUPLICATED_CONTROLLER_NAME(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("DUPLICATED_CONTROLLER_NAME")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object METADATA_KEY {
     
@@ -58,43 +60,61 @@ object constantsMod {
   object PARAMETER_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[PARAMETER_TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[PARAMETER_TYPE & Double] = js.native
     
     @js.native
-    sealed trait BODY extends PARAMETER_TYPE
-    /* 4 */ val BODY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.BODY with Double = js.native
+    sealed trait BODY
+      extends StObject
+         with PARAMETER_TYPE
+    /* 4 */ val BODY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.BODY & Double = js.native
     
     @js.native
-    sealed trait COOKIES extends PARAMETER_TYPE
-    /* 6 */ val COOKIES: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.COOKIES with Double = js.native
+    sealed trait COOKIES
+      extends StObject
+         with PARAMETER_TYPE
+    /* 6 */ val COOKIES: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.COOKIES & Double = js.native
     
     @js.native
-    sealed trait HEADERS extends PARAMETER_TYPE
-    /* 5 */ val HEADERS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.HEADERS with Double = js.native
+    sealed trait HEADERS
+      extends StObject
+         with PARAMETER_TYPE
+    /* 5 */ val HEADERS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.HEADERS & Double = js.native
     
     @js.native
-    sealed trait NEXT extends PARAMETER_TYPE
-    /* 7 */ val NEXT: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.NEXT with Double = js.native
+    sealed trait NEXT
+      extends StObject
+         with PARAMETER_TYPE
+    /* 7 */ val NEXT: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.NEXT & Double = js.native
     
     @js.native
-    sealed trait PARAMS extends PARAMETER_TYPE
-    /* 2 */ val PARAMS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PARAMS with Double = js.native
+    sealed trait PARAMS
+      extends StObject
+         with PARAMETER_TYPE
+    /* 2 */ val PARAMS: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PARAMS & Double = js.native
     
     @js.native
-    sealed trait PRINCIPAL extends PARAMETER_TYPE
-    /* 8 */ val PRINCIPAL: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PRINCIPAL with Double = js.native
+    sealed trait PRINCIPAL
+      extends StObject
+         with PARAMETER_TYPE
+    /* 8 */ val PRINCIPAL: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.PRINCIPAL & Double = js.native
     
     @js.native
-    sealed trait QUERY extends PARAMETER_TYPE
-    /* 3 */ val QUERY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.QUERY with Double = js.native
+    sealed trait QUERY
+      extends StObject
+         with PARAMETER_TYPE
+    /* 3 */ val QUERY: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.QUERY & Double = js.native
     
     @js.native
-    sealed trait REQUEST extends PARAMETER_TYPE
-    /* 0 */ val REQUEST: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.REQUEST with Double = js.native
+    sealed trait REQUEST
+      extends StObject
+         with PARAMETER_TYPE
+    /* 0 */ val REQUEST: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.REQUEST & Double = js.native
     
     @js.native
-    sealed trait RESPONSE extends PARAMETER_TYPE
-    /* 1 */ val RESPONSE: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.RESPONSE with Double = js.native
+    sealed trait RESPONSE
+      extends StObject
+         with PARAMETER_TYPE
+    /* 1 */ val RESPONSE: typings.inversifyExpressUtils.constantsMod.PARAMETER_TYPE.RESPONSE & Double = js.native
   }
   
   object TYPE {

@@ -3,23 +3,21 @@ package typings.chromecastCafSender.cast.framework
 import typings.chrome.chrome.cast.media.PlayerState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedPlayerState extends StObject {
   
-  var currentTime: Double = js.native
+  var currentTime: Double
   
-  var isPaused: Boolean = js.native
+  var isPaused: Boolean
   
-  var mediaInfo: PlayerState | Null = js.native
+  var mediaInfo: PlayerState | Null
 }
 object SavedPlayerState {
   
   @scala.inline
   def apply(currentTime: Double, isPaused: Boolean): SavedPlayerState = {
-    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(currentTime = currentTime.asInstanceOf[js.Any], isPaused = isPaused.asInstanceOf[js.Any], mediaInfo = null)
     __obj.asInstanceOf[SavedPlayerState]
   }
   

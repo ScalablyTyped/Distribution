@@ -18,7 +18,6 @@ import typings.std.Omit
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object worldMapMod {
@@ -27,36 +26,35 @@ object worldMapMod {
   @JSImport("grommet/components/WorldMap", "WorldMap")
   @js.native
   class WorldMap protected ()
-    extends Component[WorldMapProps with (Omit[SVGProps[SVGSVGElement], color]), ComponentState, js.Any] {
-    def this(props: WorldMapProps with (Omit[SVGProps[SVGSVGElement], color])) = this()
-    def this(props: WorldMapProps with (Omit[SVGProps[SVGSVGElement], color]), context: js.Any) = this()
+    extends Component[WorldMapProps & (Omit[SVGProps[SVGSVGElement], color]), ComponentState, js.Any] {
+    def this(props: WorldMapProps & (Omit[SVGProps[SVGSVGElement], color])) = this()
+    def this(props: WorldMapProps & (Omit[SVGProps[SVGSVGElement], color]), context: js.Any) = this()
   }
   @JSImport("grommet/components/WorldMap", "WorldMap")
   @js.native
-  val WorldMap: ComponentClass[WorldMapProps with (Omit[SVGProps[SVGSVGElement], color]), ComponentState] = js.native
+  val WorldMap: ComponentClass[WorldMapProps & (Omit[SVGProps[SVGSVGElement], color]), ComponentState] = js.native
   
-  @js.native
   trait WorldMapProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var color: js.UndefOr[ColorType] = js.native
+    var color: js.UndefOr[ColorType] = js.undefined
     
-    var continents: js.UndefOr[js.Array[Name]] = js.native
+    var continents: js.UndefOr[js.Array[Name]] = js.undefined
     
-    var fill: js.UndefOr[FillType] = js.native
+    var fill: js.UndefOr[FillType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var hoverColor: js.UndefOr[String | Dark] = js.native
+    var hoverColor: js.UndefOr[String | Dark] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onSelectPlace: js.UndefOr[js.Function1[/* place */ js.Array[Double], Unit]] = js.native
+    var onSelectPlace: js.UndefOr[js.Function1[/* place */ js.Array[Double], Unit]] = js.undefined
     
-    var places: js.UndefOr[js.Array[Location]] = js.native
+    var places: js.UndefOr[js.Array[Location]] = js.undefined
   }
   object WorldMapProps {
     

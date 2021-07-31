@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RadialGaugeOptions extends StObject {
   
-  var gaugeArea: js.UndefOr[RadialGaugeGaugeArea] = js.native
+  var gaugeArea: js.UndefOr[RadialGaugeGaugeArea] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pointer: js.UndefOr[js.Array[RadialGaugePointerItem]] = js.native
+  var pointer: js.UndefOr[js.Array[RadialGaugePointerItem]] = js.undefined
   
-  var renderAs: js.UndefOr[String] = js.native
+  var renderAs: js.UndefOr[String] = js.undefined
   
-  var scale: js.UndefOr[RadialGaugeScale] = js.native
+  var scale: js.UndefOr[RadialGaugeScale] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var transitions: js.UndefOr[Boolean] = js.native
+  var transitions: js.UndefOr[Boolean] = js.undefined
 }
 object RadialGaugeOptions {
   

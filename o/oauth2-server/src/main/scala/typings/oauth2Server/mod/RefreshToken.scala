@@ -4,25 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An interface representing the refresh token and associated data.
   */
-@js.native
 trait RefreshToken
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var client: Client = js.native
+  var client: Client
   
-  var refreshToken: String = js.native
+  var refreshToken: String
   
-  var refreshTokenExpiresAt: js.UndefOr[Date] = js.native
+  var refreshTokenExpiresAt: js.UndefOr[Date] = js.undefined
   
-  var scope: js.UndefOr[String | js.Array[String]] = js.native
+  var scope: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var user: User = js.native
+  var user: User
 }
 object RefreshToken {
   

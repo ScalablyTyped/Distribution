@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Responses to this message
   */
-@js.native
-trait MessageDefinitionAllowedResponse extends BackboneElement {
+trait MessageDefinitionAllowedResponse
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'situation'.
     */
-  var _situation: js.UndefOr[Element] = js.native
+  var _situation: js.UndefOr[Element] = js.undefined
   
   /**
     * Reference to allowed message definition response
     */
-  var message: Reference = js.native
+  var message: Reference
   
   /**
     * When should this response be used
     */
-  var situation: js.UndefOr[markdown] = js.native
+  var situation: js.UndefOr[markdown] = js.undefined
 }
 object MessageDefinitionAllowedResponse {
   

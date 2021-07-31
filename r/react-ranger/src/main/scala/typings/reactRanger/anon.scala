@@ -2,17 +2,15 @@ package typings.reactRanger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GetPercentageForValue extends StObject {
     
-    def getPercentageForValue(`val`: Double, min: Double, max: Double): Double = js.native
+    def getPercentageForValue(`val`: Double, min: Double, max: Double): Double
     
-    def getValueForClientX(clientX: Double, trackDims: js.Object, min: Double, max: Double): Double = js.native
+    def getValueForClientX(clientX: Double, trackDims: js.Object, min: Double, max: Double): Double
   }
   object GetPercentageForValue {
     

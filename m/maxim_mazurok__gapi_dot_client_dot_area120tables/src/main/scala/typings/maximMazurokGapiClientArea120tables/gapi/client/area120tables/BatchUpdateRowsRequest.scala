@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientArea120tables.gapi.client.area120tables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchUpdateRowsRequest extends StObject {
   
   /** Required. The request messages specifying the rows to update. A maximum of 500 rows can be modified in a single batch. */
-  var requests: js.UndefOr[js.Array[UpdateRowRequest]] = js.native
+  var requests: js.UndefOr[js.Array[UpdateRowRequest]] = js.undefined
 }
 object BatchUpdateRowsRequest {
   

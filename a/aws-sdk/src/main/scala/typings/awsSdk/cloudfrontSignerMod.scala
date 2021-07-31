@@ -7,7 +7,6 @@ import typings.awsSdk.cloudfrontSignerMod.Signer.SignerOptionsWithoutPolicy
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudfrontSignerMod {
@@ -64,14 +63,13 @@ object cloudfrontSignerMod {
   }
   object Signer {
     
-    @js.native
     trait CannedPolicy extends StObject {
       
-      var `CloudFront-Expires`: Double = js.native
+      var `CloudFront-Expires`: Double
       
-      var `CloudFront-Key-Pair-Id`: String = js.native
+      var `CloudFront-Key-Pair-Id`: String
       
-      var `CloudFront-Signature`: String = js.native
+      var `CloudFront-Signature`: String
     }
     object CannedPolicy {
       
@@ -98,14 +96,13 @@ object cloudfrontSignerMod {
       }
     }
     
-    @js.native
     trait CustomPolicy extends StObject {
       
-      var `CloudFront-Key-Pair-Id`: String = js.native
+      var `CloudFront-Key-Pair-Id`: String
       
-      var `CloudFront-Policy`: String = js.native
+      var `CloudFront-Policy`: String
       
-      var `CloudFront-Signature`: String = js.native
+      var `CloudFront-Signature`: String
     }
     object CustomPolicy {
       
@@ -132,13 +129,12 @@ object cloudfrontSignerMod {
       }
     }
     
-    @js.native
     trait SignerOptionsWithPolicy extends StObject {
       
       /**
         * A CloudFront JSON policy. Required unless you pass in a url and an expiry time. 
         */
-      var policy: String = js.native
+      var policy: String
     }
     object SignerOptionsWithPolicy {
       
@@ -156,18 +152,17 @@ object cloudfrontSignerMod {
       }
     }
     
-    @js.native
     trait SignerOptionsWithoutPolicy extends StObject {
       
       /**
         * A Unix UTC timestamp indicating when the signature should expire. Required unless you pass in a full policy.
         */
-      var expires: Double = js.native
+      var expires: Double
       
       /**
         * The URL to which the signature will grant access. Required unless you pass in a full policy.
         */
-      var url: String = js.native
+      var url: String
     }
     object SignerOptionsWithoutPolicy {
       

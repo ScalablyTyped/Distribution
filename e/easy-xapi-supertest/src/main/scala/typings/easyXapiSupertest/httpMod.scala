@@ -8,7 +8,6 @@ import typings.easyXapiSupertest.streamMod.Readable
 import typings.easyXapiSupertest.streamMod.Writable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
@@ -43,32 +42,24 @@ object httpMod {
   @scala.inline
   def METHODS_=(x: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("METHODS")(x.asInstanceOf[js.Any])
   
-  @JSImport("http", "createClient")
-  @js.native
-  def createClient(): js.Any = js.native
-  @JSImport("http", "createClient")
-  @js.native
-  def createClient(port: js.UndefOr[scala.Nothing], host: String): js.Any = js.native
-  @JSImport("http", "createClient")
-  @js.native
-  def createClient(port: Double): js.Any = js.native
-  @JSImport("http", "createClient")
-  @js.native
-  def createClient(port: Double, host: String): js.Any = js.native
+  @scala.inline
+  def createClient(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[js.Any]
+  @scala.inline
+  def createClient(port: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def createClient(port: Double, host: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def createClient(port: Unit, host: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createClient")(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("http", "createServer")
-  @js.native
-  def createServer(): Server = js.native
-  @JSImport("http", "createServer")
-  @js.native
-  def createServer(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): Server = js.native
+  @scala.inline
+  def createServer(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Server]
+  @scala.inline
+  def createServer(requestListener: js.Function2[/* request */ IncomingMessage, /* response */ ServerResponse, Unit]): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(requestListener.asInstanceOf[js.Any]).asInstanceOf[Server]
   
-  @JSImport("http", "get")
-  @js.native
-  def get(options: js.Any): ClientRequest = js.native
-  @JSImport("http", "get")
-  @js.native
-  def get(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+  @scala.inline
+  def get(options: js.Any): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def get(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
   @JSImport("http", "globalAgent")
   @js.native
@@ -76,36 +67,33 @@ object httpMod {
   @scala.inline
   def globalAgent_=(x: Agent): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("globalAgent")(x.asInstanceOf[js.Any])
   
-  @JSImport("http", "request")
-  @js.native
-  def request(options: js.Any): ClientRequest = js.native
-  @JSImport("http", "request")
-  @js.native
-  def request(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = js.native
+  @scala.inline
+  def request(options: js.Any): ClientRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any]).asInstanceOf[ClientRequest]
+  @scala.inline
+  def request(options: js.Any, callback: js.Function1[/* res */ IncomingMessage, Unit]): ClientRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ClientRequest]
   
-  @js.native
   trait AgentOptions extends StObject {
     
     /**
     		 * Keep sockets around in a pool to be used by other requests in the future. Default = false
     		 */
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
     /**
     		 * When using HTTP KeepAlive, how often to send TCP KeepAlive packets over sockets being kept alive. Default = 1000.
     		 * Only relevant if keepAlive is set to true.
     		 */
-    var keepAliveMsecs: js.UndefOr[Double] = js.native
+    var keepAliveMsecs: js.UndefOr[Double] = js.undefined
     
     /**
     		 * Maximum number of sockets to leave open in a free state. Only relevant if keepAlive is set to true. Default = 256.
     		 */
-    var maxFreeSockets: js.UndefOr[Double] = js.native
+    var maxFreeSockets: js.UndefOr[Double] = js.undefined
     
     /**
     		 * Maximum number of sockets to allow per host. Default for Node 0.10 is 5, default for Node 0.12 is Infinity
     		 */
-    var maxSockets: js.UndefOr[Double] = js.native
+    var maxSockets: js.UndefOr[Double] = js.undefined
   }
   object AgentOptions {
     
@@ -149,25 +137,25 @@ object httpMod {
     
     def abort(): Unit = js.native
     
-    def end(data: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
     def end(data: js.Any): Unit = js.native
     def end(data: js.Any, encoding: String): Unit = js.native
+    def end(data: Unit, encoding: String): Unit = js.native
     
     def setNoDelay(): Unit = js.native
     def setNoDelay(noDelay: Boolean): Unit = js.native
     
     def setSocketKeepAlive(): Unit = js.native
-    def setSocketKeepAlive(enable: js.UndefOr[scala.Nothing], initialDelay: Double): Unit = js.native
     def setSocketKeepAlive(enable: Boolean): Unit = js.native
     def setSocketKeepAlive(enable: Boolean, initialDelay: Double): Unit = js.native
+    def setSocketKeepAlive(enable: Unit, initialDelay: Double): Unit = js.native
     
     def setTimeout(timeout: Double): Unit = js.native
     def setTimeout(timeout: Double, callback: js.Function): Unit = js.native
     
     def write(chunk: js.Any): Unit = js.native
     def write(chunk: js.Any, encoding: String): Unit = js.native
-    def write(str: String, encoding: js.UndefOr[scala.Nothing], fd: String): Boolean = js.native
     def write(str: String, encoding: String, fd: String): Boolean = js.native
+    def write(str: String, encoding: Unit, fd: String): Boolean = js.native
   }
   
   type ClientResponse = IncomingMessage
@@ -223,20 +211,15 @@ object httpMod {
     def listen(path: String): Server = js.native
     def listen(path: String, callback: js.Function): Server = js.native
     def listen(port: Double): Server = js.native
-    def listen(
-      port: Double,
-      hostname: js.UndefOr[scala.Nothing],
-      backlog: js.UndefOr[scala.Nothing],
-      callback: js.Function
-    ): Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double): Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], backlog: Double, callback: js.Function): Server = js.native
-    def listen(port: Double, hostname: js.UndefOr[scala.Nothing], callback: js.Function): Server = js.native
     def listen(port: Double, hostname: String): Server = js.native
-    def listen(port: Double, hostname: String, backlog: js.UndefOr[scala.Nothing], callback: js.Function): Server = js.native
     def listen(port: Double, hostname: String, backlog: Double): Server = js.native
     def listen(port: Double, hostname: String, backlog: Double, callback: js.Function): Server = js.native
+    def listen(port: Double, hostname: String, backlog: Unit, callback: js.Function): Server = js.native
     def listen(port: Double, hostname: String, callback: js.Function): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Double, callback: js.Function): Server = js.native
+    def listen(port: Double, hostname: Unit, backlog: Unit, callback: js.Function): Server = js.native
+    def listen(port: Double, hostname: Unit, callback: js.Function): Server = js.native
     
     var maxHeadersCount: Double = js.native
   }
@@ -252,9 +235,9 @@ object httpMod {
     
     def addTrailers(headers: js.Any): Unit = js.native
     
-    def end(data: js.UndefOr[scala.Nothing], encoding: String): Unit = js.native
     def end(data: js.Any): Unit = js.native
     def end(data: js.Any, encoding: String): Unit = js.native
+    def end(data: Unit, encoding: String): Unit = js.native
     
     def getHeader(name: String): String = js.native
     
@@ -268,15 +251,15 @@ object httpMod {
     
     def write(chunk: js.Any): js.Any = js.native
     def write(chunk: js.Any, encoding: String): js.Any = js.native
-    def write(str: String, encoding: js.UndefOr[scala.Nothing], fd: String): Boolean = js.native
     def write(str: String, encoding: String, fd: String): Boolean = js.native
+    def write(str: String, encoding: Unit, fd: String): Boolean = js.native
     
     def writeContinue(): Unit = js.native
     
     def writeHead(statusCode: Double): Unit = js.native
     def writeHead(statusCode: Double, headers: js.Any): Unit = js.native
-    def writeHead(statusCode: Double, reasonPhrase: js.UndefOr[scala.Nothing], headers: js.Any): Unit = js.native
     def writeHead(statusCode: Double, reasonPhrase: String): Unit = js.native
     def writeHead(statusCode: Double, reasonPhrase: String, headers: js.Any): Unit = js.native
+    def writeHead(statusCode: Double, reasonPhrase: Unit, headers: js.Any): Unit = js.native
   }
 }

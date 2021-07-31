@@ -6,7 +6,6 @@ import typings.std.RegExp
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,18 +17,20 @@ object mod {
     * @param {LintCallback} callback Callback (err, result) function.
     * @returns {void}
     */
+  @scala.inline
+  def apply(options: Options, callback: LintCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("markdownlint", JSImport.Namespace)
   @js.native
-  def apply(options: Options, callback: LintCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Gets the (semantic) version of the library.
     *
     * @returns {string} SemVer string.
     */
-  @JSImport("markdownlint", "getVersion")
-  @js.native
-  def getVersion(): String = js.native
+  @scala.inline
+  def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
   
   /**
     * Read specified configuration file.
@@ -40,18 +41,14 @@ object mod {
     * @param {ReadConfigCallback} [callback] Callback (err, result) function.
     * @returns {void}
     */
-  @JSImport("markdownlint", "readConfig")
-  @js.native
-  def readConfig(file: String, parsers: js.Array[ConfigurationParser]): Unit = js.native
-  @JSImport("markdownlint", "readConfig")
-  @js.native
-  def readConfig(file: String, parsers: js.Array[ConfigurationParser], callback: ReadConfigCallback): Unit = js.native
-  @JSImport("markdownlint", "readConfig")
-  @js.native
-  def readConfig(file: String, parsers: ReadConfigCallback): Unit = js.native
-  @JSImport("markdownlint", "readConfig")
-  @js.native
-  def readConfig(file: String, parsers: ReadConfigCallback, callback: ReadConfigCallback): Unit = js.native
+  @scala.inline
+  def readConfig(file: String, parsers: js.Array[ConfigurationParser]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readConfig(file: String, parsers: js.Array[ConfigurationParser], callback: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readConfig(file: String, parsers: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def readConfig(file: String, parsers: ReadConfigCallback, callback: ReadConfigCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfig")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Read specified configuration file synchronously.
@@ -60,12 +57,10 @@ object mod {
     * @param {ConfigurationParser[]} [parsers] Parsing function(s).
     * @returns {Configuration} Configuration object.
     */
-  @JSImport("markdownlint", "readConfigSync")
-  @js.native
-  def readConfigSync(file: String): Configuration = js.native
-  @JSImport("markdownlint", "readConfigSync")
-  @js.native
-  def readConfigSync(file: String, parsers: js.Array[ConfigurationParser]): Configuration = js.native
+  @scala.inline
+  def readConfigSync(file: String): Configuration = ^.asInstanceOf[js.Dynamic].applyDynamic("readConfigSync")(file.asInstanceOf[js.Any]).asInstanceOf[Configuration]
+  @scala.inline
+  def readConfigSync(file: String, parsers: js.Array[ConfigurationParser]): Configuration = (^.asInstanceOf[js.Dynamic].applyDynamic("readConfigSync")(file.asInstanceOf[js.Any], parsers.asInstanceOf[js.Any])).asInstanceOf[Configuration]
   
   /**
     * Lint specified Markdown files synchronously.
@@ -73,9 +68,8 @@ object mod {
     * @param {Options} options Configuration options.
     * @returns {LintResults} Results object.
     */
-  @JSImport("markdownlint", "sync")
-  @js.native
-  def sync(options: Options): LintResults = js.native
+  @scala.inline
+  def sync(options: Options): LintResults = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(options.asInstanceOf[js.Any]).asInstanceOf[LintResults]
   
   /**
     * Configuration object for linting rules. For a detailed schema, see
@@ -91,23 +85,22 @@ object mod {
   /**
     * Fix information.
     */
-  @js.native
   trait FixInfo extends StObject {
     
     /**
       * Count of characters to delete.
       */
-    var deleteCount: js.UndefOr[Double] = js.native
+    var deleteCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Column of the fix (1-based).
       */
-    var editColumn: js.UndefOr[Double] = js.native
+    var editColumn: js.UndefOr[Double] = js.undefined
     
     /**
       * Text to insert (after deleting).
       */
-    var insertText: js.UndefOr[String] = js.native
+    var insertText: js.UndefOr[String] = js.undefined
   }
   object FixInfo {
     
@@ -148,48 +141,47 @@ object mod {
   /**
     * Lint error.
     */
-  @js.native
   trait LintError extends StObject {
     
     /**
       * Context for the error.
       */
-    var errorContext: String = js.native
+    var errorContext: String
     
     /**
       * Detail about the error.
       */
-    var errorDetail: String = js.native
+    var errorDetail: String
     
     /**
       * Column number (1-based) and length.
       */
-    var errorRange: js.Array[Double] = js.native
+    var errorRange: js.Array[Double]
     
     /**
       * Fix information.
       */
-    var fixInfo: FixInfo = js.native
+    var fixInfo: FixInfo
     
     /**
       * Line number (1-based).
       */
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
     /**
       * Rule description.
       */
-    var ruleDescription: String = js.native
+    var ruleDescription: String
     
     /**
       * Link to more information.
       */
-    var ruleInformation: String = js.native
+    var ruleInformation: String
     
     /**
       * Rule name(s).
       */
-    var ruleNames: js.Array[String] = js.native
+    var ruleNames: js.Array[String]
   }
   object LintError {
     
@@ -251,83 +243,82 @@ object mod {
   /**
     * Markdown-It token.
     */
-  @js.native
   trait MarkdownItToken extends StObject {
     
     /**
       * HTML attributes.
       */
-    var attrs: js.Array[js.Array[String]] = js.native
+    var attrs: js.Array[js.Array[String]]
     
     /**
       * Block-level token.
       */
-    var block: Boolean = js.native
+    var block: Boolean
     
     /**
       * Child nodes.
       */
-    var children: js.Array[MarkdownItToken] = js.native
+    var children: js.Array[MarkdownItToken]
     
     /**
       * Tag contents.
       */
-    var content: String = js.native
+    var content: String
     
     /**
       * Ignore element.
       */
-    var hidden: Boolean = js.native
+    var hidden: Boolean
     
     /**
       * Fence info.
       */
-    var info: String = js.native
+    var info: String
     
     /**
       * Nesting level.
       */
-    var level: Double = js.native
+    var level: Double
     
     /**
       * Line content.
       */
-    var line: String = js.native
+    var line: String
     
     /**
       * Line number (1-based).
       */
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
     /**
       * Beginning/ending line numbers.
       */
-    var map: js.Array[Double] = js.native
+    var map: js.Array[Double]
     
     /**
       * Markup text.
       */
-    var markup: String = js.native
+    var markup: String
     
     /**
       * Arbitrary data.
       */
-    var meta: js.Any = js.native
+    var meta: js.Any
     
     /**
       * Level change.
       */
-    var nesting: Double = js.native
+    var nesting: Double
     
     /**
       * HTML tag name.
       */
-    var tag: String = js.native
+    var tag: String
     
     /**
       * Token type.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object MarkdownItToken {
     
@@ -416,53 +407,52 @@ object mod {
   /**
     * Configuration options.
     */
-  @js.native
   trait Options extends StObject {
     
     /**
       * Configuration object.
       */
-    var config: js.UndefOr[Configuration] = js.native
+    var config: js.UndefOr[Configuration] = js.undefined
     
     /**
       * Custom rules.
       */
-    var customRules: js.UndefOr[js.Array[Rule] | Rule] = js.native
+    var customRules: js.UndefOr[js.Array[Rule] | Rule] = js.undefined
     
     /**
       * Files to lint.
       */
-    var files: js.UndefOr[js.Array[String] | String] = js.native
+    var files: js.UndefOr[js.Array[String] | String] = js.undefined
     
     /**
       * Front matter pattern.
       */
-    var frontMatter: js.UndefOr[RegExp] = js.native
+    var frontMatter: js.UndefOr[RegExp] = js.undefined
     
     /**
       * True to catch exceptions.
       */
-    var handleRuleFailures: js.UndefOr[Boolean] = js.native
+    var handleRuleFailures: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Additional plugins.
       */
-    var markdownItPlugins: js.UndefOr[js.Array[js.Array[_]]] = js.native
+    var markdownItPlugins: js.UndefOr[js.Array[js.Array[js.Any]]] = js.undefined
     
     /**
       * True to ignore HTML directives.
       */
-    var noInlineConfig: js.UndefOr[Boolean] = js.native
+    var noInlineConfig: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Results object version.
       */
-    var resultVersion: js.UndefOr[Double] = js.native
+    var resultVersion: js.UndefOr[Double] = js.undefined
     
     /**
       * Strings to lint.
       */
-    var strings: js.UndefOr[StringDictionary[String]] = js.native
+    var strings: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object Options {
     
@@ -512,7 +502,7 @@ object mod {
       def setHandleRuleFailuresUndefined: Self = StObject.set(x, "handleRuleFailures", js.undefined)
       
       @scala.inline
-      def setMarkdownItPlugins(value: js.Array[js.Array[_]]): Self = StObject.set(x, "markdownItPlugins", value.asInstanceOf[js.Any])
+      def setMarkdownItPlugins(value: js.Array[js.Array[js.Any]]): Self = StObject.set(x, "markdownItPlugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMarkdownItPluginsUndefined: Self = StObject.set(x, "markdownItPlugins", js.undefined)
@@ -553,38 +543,78 @@ object mod {
   /**
     * Rule definition.
     */
-  @js.native
   trait Rule extends StObject {
     
     /**
       * Rule description.
       */
-    var description: String = js.native
+    var description: String
     
     /**
       * Rule implementation.
       */
-    def function(params: RuleParams, onError: RuleOnError): Unit = js.native
+    def function(params: RuleParams, onError: RuleOnError): Unit
     /**
       * Rule implementation.
       */
     @JSName("function")
-    var function_Original: RuleFunction = js.native
+    var function_Original: RuleFunction
     
     /**
       * Link to more information.
       */
-    var information: js.UndefOr[URL] = js.native
+    var information: js.UndefOr[URL] = js.undefined
     
     /**
       * Rule name(s).
       */
-    var names: js.Array[String] = js.native
+    var names: js.Array[String]
     
     /**
       * Rule tag(s).
       */
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
+  }
+  object Rule {
+    
+    @scala.inline
+    def apply(
+      description: String,
+      function: (/* params */ RuleParams, /* onError */ RuleOnError) => Unit,
+      names: js.Array[String],
+      tags: js.Array[String]
+    ): Rule = {
+      val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], function = js.Any.fromFunction2(function), names = names.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Rule]
+    }
+    
+    @scala.inline
+    implicit class RuleMutableBuilder[Self <: Rule] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setFunction(value: (/* params */ RuleParams, /* onError */ RuleOnError) => Unit): Self = StObject.set(x, "function", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setInformation(value: URL): Self = StObject.set(x, "information", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setInformationUndefined: Self = StObject.set(x, "information", js.undefined)
+      
+      @scala.inline
+      def setNames(value: js.Array[String]): Self = StObject.set(x, "names", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setNamesVarargs(value: String*): Self = StObject.set(x, "names", js.Array(value :_*))
+      
+      @scala.inline
+      def setTags(value: js.Array[String]): Self = StObject.set(x, "tags", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setTagsVarargs(value: String*): Self = StObject.set(x, "tags", js.Array(value :_*))
+    }
   }
   
   /**
@@ -605,28 +635,27 @@ object mod {
   /**
     * Fix information for RuleOnErrorInfo.
     */
-  @js.native
   trait RuleOnErrorFixInfo extends StObject {
     
     /**
       * Count of characters to delete.
       */
-    var deleteCount: js.UndefOr[Double] = js.native
+    var deleteCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Column of the fix (1-based).
       */
-    var editColumn: js.UndefOr[Double] = js.native
+    var editColumn: js.UndefOr[Double] = js.undefined
     
     /**
       * Text to insert (after deleting).
       */
-    var insertText: js.UndefOr[String] = js.native
+    var insertText: js.UndefOr[String] = js.undefined
     
     /**
       * Line number (1-based).
       */
-    var lineNumber: js.UndefOr[Double] = js.native
+    var lineNumber: js.UndefOr[Double] = js.undefined
   }
   object RuleOnErrorFixInfo {
     
@@ -668,33 +697,32 @@ object mod {
   /**
     * Fix information for RuleOnError callback.
     */
-  @js.native
   trait RuleOnErrorInfo extends StObject {
     
     /**
       * Context for the error.
       */
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
     /**
       * Details about the error.
       */
-    var details: js.UndefOr[String] = js.native
+    var details: js.UndefOr[String] = js.undefined
     
     /**
       * Fix information.
       */
-    var fixInfo: js.UndefOr[RuleOnErrorFixInfo] = js.native
+    var fixInfo: js.UndefOr[RuleOnErrorFixInfo] = js.undefined
     
     /**
       * Line number (1-based).
       */
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
     /**
       * Column number (1-based) and length.
       */
-    var range: js.UndefOr[js.Array[Double]] = js.native
+    var range: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object RuleOnErrorInfo {
     
@@ -742,33 +770,32 @@ object mod {
   /**
     * Rule parameters.
     */
-  @js.native
   trait RuleParams extends StObject {
     
     /**
       * Rule configuration.
       */
-    var config: RuleConfiguration = js.native
+    var config: RuleConfiguration
     
     /**
       * Front matter lines.
       */
-    var frontMatterLines: js.Array[String] = js.native
+    var frontMatterLines: js.Array[String]
     
     /**
       * File/string lines.
       */
-    var lines: js.Array[String] = js.native
+    var lines: js.Array[String]
     
     /**
       * File/string name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * markdown-it token objects.
       */
-    var tokens: js.Array[MarkdownItToken] = js.native
+    var tokens: js.Array[MarkdownItToken]
   }
   object RuleParams {
     

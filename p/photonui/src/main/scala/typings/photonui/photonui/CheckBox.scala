@@ -5,13 +5,13 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckBox extends Widget {
+trait CheckBox
+  extends StObject
+     with Widget {
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object CheckBox {
   

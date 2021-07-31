@@ -2,76 +2,76 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.fridaGum.CpuContext because Already inherited */ @js.native
-trait MipsCpuContext extends PortableCpuContext {
+- typings.fridaGum.CpuContext because Already inherited */ trait MipsCpuContext
+  extends StObject
+     with PortableCpuContext {
   
-  var a0: NativePointer = js.native
+  var a0: NativePointer
   
-  var a1: NativePointer = js.native
+  var a1: NativePointer
   
-  var a2: NativePointer = js.native
+  var a2: NativePointer
   
-  var a3: NativePointer = js.native
+  var a3: NativePointer
   
-  var at: NativePointer = js.native
+  var at: NativePointer
   
-  var fp: NativePointer = js.native
+  var fp: NativePointer
   
-  var gp: NativePointer = js.native
+  var gp: NativePointer
   
-  var hi: NativePointer = js.native
+  var hi: NativePointer
   
-  var k0: NativePointer = js.native
+  var k0: NativePointer
   
-  var k1: NativePointer = js.native
+  var k1: NativePointer
   
-  var lo: NativePointer = js.native
+  var lo: NativePointer
   
-  var ra: NativePointer = js.native
+  var ra: NativePointer
   
-  var s0: NativePointer = js.native
+  var s0: NativePointer
   
-  var s1: NativePointer = js.native
+  var s1: NativePointer
   
-  var s2: NativePointer = js.native
+  var s2: NativePointer
   
-  var s3: NativePointer = js.native
+  var s3: NativePointer
   
-  var s4: NativePointer = js.native
+  var s4: NativePointer
   
-  var s5: NativePointer = js.native
+  var s5: NativePointer
   
-  var s6: NativePointer = js.native
+  var s6: NativePointer
   
-  var s7: NativePointer = js.native
+  var s7: NativePointer
   
-  var t0: NativePointer = js.native
+  var t0: NativePointer
   
-  var t1: NativePointer = js.native
+  var t1: NativePointer
   
-  var t2: NativePointer = js.native
+  var t2: NativePointer
   
-  var t3: NativePointer = js.native
+  var t3: NativePointer
   
-  var t4: NativePointer = js.native
+  var t4: NativePointer
   
-  var t5: NativePointer = js.native
+  var t5: NativePointer
   
-  var t6: NativePointer = js.native
+  var t6: NativePointer
   
-  var t7: NativePointer = js.native
+  var t7: NativePointer
   
-  var t8: NativePointer = js.native
+  var t8: NativePointer
   
-  var t9: NativePointer = js.native
+  var t9: NativePointer
   
-  var v0: NativePointer = js.native
+  var v0: NativePointer
   
-  var v1: NativePointer = js.native
+  var v1: NativePointer
 }
 object MipsCpuContext {
   

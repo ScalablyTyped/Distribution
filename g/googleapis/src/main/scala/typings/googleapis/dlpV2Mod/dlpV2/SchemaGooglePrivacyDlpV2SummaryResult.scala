@@ -2,25 +2,23 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection that informs the user the number of times a particular
   * `TransformationResultCode` and error details occurred.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2SummaryResult extends StObject {
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
   /**
     * A place for warnings or errors to show up if a transformation didn&#39;t
     * work as expected.
     */
-  var details: js.UndefOr[String] = js.native
+  var details: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2SummaryResult {
   

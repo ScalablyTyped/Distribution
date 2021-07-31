@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CreditDisplay")
@@ -11,8 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class CreditDisplay protected () extends StObject {
   def this(container: HTMLElement) = this()
   def this(container: HTMLElement, delimiter: String) = this()
-  def this(container: HTMLElement, delimiter: js.UndefOr[scala.Nothing], viewport: HTMLElement) = this()
   def this(container: HTMLElement, delimiter: String, viewport: HTMLElement) = this()
+  def this(container: HTMLElement, delimiter: Unit, viewport: HTMLElement) = this()
   
   def addCredit(credit: Credit): Unit = js.native
   

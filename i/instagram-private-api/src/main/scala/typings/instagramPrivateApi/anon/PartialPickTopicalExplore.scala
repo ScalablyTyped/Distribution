@@ -3,22 +3,20 @@ package typings.instagramPrivateApi.anon
 import typings.instagramPrivateApi.commonTypesMod.IgAppModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<instagram-private-api.instagram-private-api/dist/feeds.TopicalExploreFeed, 'sessionId' | 'clusterId' | 'lat' | 'lng' | 'module'>> */
-@js.native
 trait PartialPickTopicalExplore extends StObject {
   
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
-  var lat: js.UndefOr[String | Double] = js.native
+  var lat: js.UndefOr[String | Double] = js.undefined
   
-  var lng: js.UndefOr[String | Double] = js.native
+  var lng: js.UndefOr[String | Double] = js.undefined
   
-  var module: js.UndefOr[IgAppModule] = js.native
+  var module: js.UndefOr[IgAppModule] = js.undefined
   
-  var sessionId: js.UndefOr[String] = js.native
+  var sessionId: js.UndefOr[String] = js.undefined
 }
 object PartialPickTopicalExplore {
   

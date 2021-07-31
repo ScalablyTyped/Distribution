@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,14 +22,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * and they cannot be overtaken by visible separators.
   * @see com.sun.star.text.TextTable
   */
-@js.native
 trait TableColumnSeparator extends StObject {
   
   /** determines if the separator is visible. */
-  var IsVisible: Boolean = js.native
+  var IsVisible: Boolean
   
   /** contains the position of the separator. */
-  var Position: Double = js.native
+  var Position: Double
 }
 object TableColumnSeparator {
   

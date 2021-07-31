@@ -2,26 +2,24 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterJobDefinitionResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the job definition.
     */
-  var jobDefinitionArn: String = js.native
+  var jobDefinitionArn: String
   
   /**
     * The name of the job definition.
     */
-  var jobDefinitionName: String = js.native
+  var jobDefinitionName: String
   
   /**
     * The revision of the job definition.
     */
-  var revision: Integer = js.native
+  var revision: Integer
 }
 object RegisterJobDefinitionResponse {
   

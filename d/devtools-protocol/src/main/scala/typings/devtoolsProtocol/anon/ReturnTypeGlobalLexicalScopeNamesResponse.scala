@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.GlobalLexicalScopeNamesRequ
 import typings.devtoolsProtocol.mod.Protocol.Runtime.GlobalLexicalScopeNamesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGlobalLexicalScopeNamesResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GlobalLexicalScopeNamesRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GlobalLexicalScopeNamesRequest]]
   
-  var returnType: GlobalLexicalScopeNamesResponse = js.native
+  var returnType: GlobalLexicalScopeNamesResponse
 }
 object ReturnTypeGlobalLexicalScopeNamesResponse {
   

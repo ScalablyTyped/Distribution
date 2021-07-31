@@ -2,7 +2,6 @@ package typings.ibmCloudSdkCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1Mod {
@@ -111,18 +110,17 @@ object v1Mod {
     var userAccessToken: js.Any = js.native
   }
   
-  @js.native
   trait IamTokenData extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
     
-    var expiration: Double = js.native
+    var expiration: Double
     
-    var expires_in: Double = js.native
+    var expires_in: Double
     
-    var refresh_token: String = js.native
+    var refresh_token: String
     
-    var token_type: String = js.native
+    var token_type: String
   }
   object IamTokenData {
     
@@ -158,14 +156,13 @@ object v1Mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var iamAccessToken: js.UndefOr[String] = js.native
+    var iamAccessToken: js.UndefOr[String] = js.undefined
     
-    var iamApikey: js.UndefOr[String] = js.native
+    var iamApikey: js.UndefOr[String] = js.undefined
     
-    var iamUrl: js.UndefOr[String] = js.native
+    var iamUrl: js.UndefOr[String] = js.undefined
   }
   object Options {
     

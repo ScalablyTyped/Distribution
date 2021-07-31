@@ -4,7 +4,6 @@ import typings.pixiJs.anon.Antialias
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,10 +27,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Application")
 @js.native
 class Application ()
-  extends typings.pixiJs.PIXI.Application {
+  extends StObject
+     with typings.pixiJs.PIXI.Application {
   def this(options: Antialias) = this()
 }
 object Application {
+  
+  @JSImport("pixi.js", "Application")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Register a middleware plugin for the application
@@ -39,7 +43,6 @@ object Application {
     * @param {PIXI.Application.Plugin} plugin - Plugin being installed
     */
   /* static member */
-  @JSImport("pixi.js", "Application.registerPlugin")
-  @js.native
-  def registerPlugin(plugin: Plugin): Unit = js.native
+  @scala.inline
+  def registerPlugin(plugin: Plugin): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

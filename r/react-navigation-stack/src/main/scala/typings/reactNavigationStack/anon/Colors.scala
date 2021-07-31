@@ -2,15 +2,13 @@ package typings.reactNavigationStack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Colors extends StObject {
   
-  var colors: Background = js.native
+  var colors: Background
   
-  var dark: Boolean = js.native
+  var dark: Boolean
 }
 object Colors {
   

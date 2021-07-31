@@ -2,57 +2,55 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisposePackageVersionsRequest extends StObject {
   
   /**
     *  The name of the package with the versions you want to dispose. 
     */
   @JSName("package")
-  var _package: PackageName = js.native
+  var _package: PackageName
   
   /**
     *  The name of the domain that contains the repository you want to dispose. 
     */
-  var domain: DomainName = js.native
+  var domain: DomainName
   
   /**
     *  The 12-digit account number of the AWS account that owns the domain. It does not include dashes or spaces. 
     */
-  var domainOwner: js.UndefOr[AccountId] = js.native
+  var domainOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     *  The expected status of the package version to dispose. Valid values are:     Published     Unfinished     Unlisted     Archived     Disposed   
     */
-  var expectedStatus: js.UndefOr[PackageVersionStatus] = js.native
+  var expectedStatus: js.UndefOr[PackageVersionStatus] = js.undefined
   
   /**
     *  A format that specifies the type of package versions you want to dispose. The valid values are:     npm     pypi     maven   
     */
-  var format: PackageFormat = js.native
+  var format: PackageFormat
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  The name of the repository that contains the package versions you want to dispose. 
     */
-  var repository: RepositoryName = js.native
+  var repository: RepositoryName
   
   /**
     *  The revisions of the package versions you want to dispose. 
     */
-  var versionRevisions: js.UndefOr[PackageVersionRevisionMap] = js.native
+  var versionRevisions: js.UndefOr[PackageVersionRevisionMap] = js.undefined
   
   /**
     *  The versions of the package you want to dispose. 
     */
-  var versions: PackageVersionList = js.native
+  var versions: PackageVersionList
 }
 object DisposePackageVersionsRequest {
   

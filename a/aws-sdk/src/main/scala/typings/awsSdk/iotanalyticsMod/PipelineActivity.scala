@@ -2,61 +2,59 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineActivity extends StObject {
   
   /**
     * Adds other attributes based on existing attributes in the message.
     */
-  var addAttributes: js.UndefOr[AddAttributesActivity] = js.native
+  var addAttributes: js.UndefOr[AddAttributesActivity] = js.undefined
   
   /**
     * Determines the source of the messages to be processed.
     */
-  var channel: js.UndefOr[ChannelActivity] = js.native
+  var channel: js.UndefOr[ChannelActivity] = js.undefined
   
   /**
     * Specifies where to store the processed message data.
     */
-  var datastore: js.UndefOr[DatastoreActivity] = js.native
+  var datastore: js.UndefOr[DatastoreActivity] = js.undefined
   
   /**
     * Adds data from the AWS IoT device registry to your message.
     */
-  var deviceRegistryEnrich: js.UndefOr[DeviceRegistryEnrichActivity] = js.native
+  var deviceRegistryEnrich: js.UndefOr[DeviceRegistryEnrichActivity] = js.undefined
   
   /**
     * Adds information from the AWS IoT Device Shadow service to a message.
     */
-  var deviceShadowEnrich: js.UndefOr[DeviceShadowEnrichActivity] = js.native
+  var deviceShadowEnrich: js.UndefOr[DeviceShadowEnrichActivity] = js.undefined
   
   /**
     * Filters a message based on its attributes.
     */
-  var filter: js.UndefOr[FilterActivity] = js.native
+  var filter: js.UndefOr[FilterActivity] = js.undefined
   
   /**
     * Runs a Lambda function to modify the message.
     */
-  var lambda: js.UndefOr[LambdaActivity] = js.native
+  var lambda: js.UndefOr[LambdaActivity] = js.undefined
   
   /**
     * Computes an arithmetic expression using the message's attributes and adds it to the message.
     */
-  var math: js.UndefOr[MathActivity] = js.native
+  var math: js.UndefOr[MathActivity] = js.undefined
   
   /**
     * Removes attributes from a message.
     */
-  var removeAttributes: js.UndefOr[RemoveAttributesActivity] = js.native
+  var removeAttributes: js.UndefOr[RemoveAttributesActivity] = js.undefined
   
   /**
     * Creates a new message using only the specified attributes from the original message. 
     */
-  var selectAttributes: js.UndefOr[SelectAttributesActivity] = js.native
+  var selectAttributes: js.UndefOr[SelectAttributesActivity] = js.undefined
 }
 object PipelineActivity {
   

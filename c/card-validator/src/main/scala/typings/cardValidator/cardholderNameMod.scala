@@ -3,15 +3,16 @@ package typings.cardValidator
 import typings.cardValidator.typesMod.Verification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cardholderNameMod {
   
-  @JSImport("card-validator/dist/cardholder-name", "cardholderName")
+  @JSImport("card-validator/dist/cardholder-name", JSImport.Namespace)
   @js.native
-  def cardholderName(value: String): Verification = js.native
-  @JSImport("card-validator/dist/cardholder-name", "cardholderName")
-  @js.native
-  def cardholderName(value: js.Any): Verification = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def cardholderName(value: String): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
+  @scala.inline
+  def cardholderName(value: js.Any): Verification = ^.asInstanceOf[js.Dynamic].applyDynamic("cardholderName")(value.asInstanceOf[js.Any]).asInstanceOf[Verification]
 }

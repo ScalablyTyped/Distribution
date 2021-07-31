@@ -10,59 +10,54 @@ import typings.json8Patch.json8PatchStrings.replace
 import typings.json8Patch.json8PatchStrings.test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("json8-patch", "apply")
+  @JSImport("json8-patch", JSImport.Namespace)
   @js.native
-  def apply(doc: js.Any, patch: JsonPatch): ApplyResult = js.native
-  @JSImport("json8-patch", "apply")
-  @js.native
-  def apply(doc: js.Any, patch: JsonPatch, options: Reversible): ApplyResult = js.native
-  @JSImport("json8-patch", "apply")
-  @js.native
-  def apply(doc: js.Any, patch: JsonPatch, options: `0`): ApplyResultWithRevert = js.native
-  @JSImport("json8-patch", "apply")
-  @js.native
-  def apply_ApplyResultWithRevert(doc: js.Any, patch: JsonPatch): ApplyResultWithRevert = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("json8-patch", "diff")
-  @js.native
-  def diff(doc1: js.Any, doc2: js.Any): JsonPatch = js.native
+  @scala.inline
+  def apply(doc: js.Any, patch: JsonPatch): ApplyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[ApplyResult]
+  @scala.inline
+  def apply(doc: js.Any, patch: JsonPatch, options: Reversible): ApplyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ApplyResult]
+  @scala.inline
+  def apply(doc: js.Any, patch: JsonPatch, options: `0`): ApplyResultWithRevert = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ApplyResultWithRevert]
   
-  @JSImport("json8-patch", "patch")
-  @js.native
-  def patch(doc: js.Any, patch: JsonPatch): PatchResult = js.native
-  @JSImport("json8-patch", "patch")
-  @js.native
-  def patch(doc: js.Any, patch: JsonPatch, options: Reversible): PatchResult = js.native
-  @JSImport("json8-patch", "patch")
-  @js.native
-  def patch(doc: js.Any, patch: JsonPatch, options: `0`): PatchResultWithRevert = js.native
-  @JSImport("json8-patch", "patch")
-  @js.native
-  def patch_PatchResultWithRevert(doc: js.Any, patch: JsonPatch): PatchResultWithRevert = js.native
+  @scala.inline
+  def apply_ApplyResultWithRevert(doc: js.Any, patch: JsonPatch): ApplyResultWithRevert = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[ApplyResultWithRevert]
   
-  @JSImport("json8-patch", "revert")
-  @js.native
-  def revert(doc: js.Any, revertPatch: JsonPatch): ApplyResult = js.native
+  @scala.inline
+  def diff(doc1: js.Any, doc2: js.Any): JsonPatch = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(doc1.asInstanceOf[js.Any], doc2.asInstanceOf[js.Any])).asInstanceOf[JsonPatch]
   
-  @js.native
+  @scala.inline
+  def patch(doc: js.Any, patch: JsonPatch): PatchResult = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[PatchResult]
+  @scala.inline
+  def patch(doc: js.Any, patch: JsonPatch, options: Reversible): PatchResult = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PatchResult]
+  @scala.inline
+  def patch(doc: js.Any, patch: JsonPatch, options: `0`): PatchResultWithRevert = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PatchResultWithRevert]
+  
+  @scala.inline
+  def patch_PatchResultWithRevert(doc: js.Any, patch: JsonPatch): PatchResultWithRevert = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(doc.asInstanceOf[js.Any], patch.asInstanceOf[js.Any])).asInstanceOf[PatchResultWithRevert]
+  
+  @scala.inline
+  def revert(doc: js.Any, revertPatch: JsonPatch): ApplyResult = (^.asInstanceOf[js.Dynamic].applyDynamic("revert")(doc.asInstanceOf[js.Any], revertPatch.asInstanceOf[js.Any])).asInstanceOf[ApplyResult]
+  
   trait AddOperation
-    extends BaseOperation
+    extends StObject
+       with BaseOperation
        with JsonPatchOperation {
     
-    var op: add = js.native
+    var op: add
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object AddOperation {
     
     @scala.inline
-    def apply(op: add, path: String, value: js.Any): AddOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): AddOperation = {
+      val __obj = js.Dynamic.literal(op = "add", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[AddOperation]
     }
     
@@ -77,10 +72,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ApplyResult extends StObject {
     
-    var doc: js.Any = js.native
+    var doc: js.Any
   }
   object ApplyResult {
     
@@ -98,10 +92,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait ApplyResultWithRevert extends ApplyResult {
+  trait ApplyResultWithRevert
+    extends StObject
+       with ApplyResult {
     
-    var revert: JsonPatch = js.native
+    var revert: JsonPatch
   }
   object ApplyResultWithRevert {
     
@@ -122,10 +117,9 @@ object mod {
     }
   }
   
-  @js.native
   trait BaseOperation extends StObject {
     
-    var path: String = js.native
+    var path: String
   }
   object BaseOperation {
     
@@ -143,20 +137,20 @@ object mod {
     }
   }
   
-  @js.native
   trait CopyOperation
-    extends BaseOperation
+    extends StObject
+       with BaseOperation
        with JsonPatchOperation {
     
-    var from: js.Any = js.native
+    var from: js.Any
     
-    var op: copy = js.native
+    var op: copy
   }
   object CopyOperation {
     
     @scala.inline
-    def apply(from: js.Any, op: copy, path: String): CopyOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(from: js.Any, path: String): CopyOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "copy", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[CopyOperation]
     }
     
@@ -185,56 +179,56 @@ object mod {
   object JsonPatchOperation {
     
     @scala.inline
-    def AddOperation(op: add, path: String, value: js.Any): typings.json8Patch.mod.AddOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def AddOperation(path: String, value: js.Any): typings.json8Patch.mod.AddOperation = {
+      val __obj = js.Dynamic.literal(op = "add", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.json8Patch.mod.AddOperation]
     }
     
     @scala.inline
-    def CopyOperation(from: js.Any, op: copy, path: String): typings.json8Patch.mod.CopyOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def CopyOperation(from: js.Any, path: String): typings.json8Patch.mod.CopyOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "copy", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.json8Patch.mod.CopyOperation]
     }
     
     @scala.inline
-    def MoveOperation(from: js.Any, op: move, path: String): typings.json8Patch.mod.MoveOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def MoveOperation(from: js.Any, path: String): typings.json8Patch.mod.MoveOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "move", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.json8Patch.mod.MoveOperation]
     }
     
     @scala.inline
-    def RemoveOperation(op: remove, path: String): typings.json8Patch.mod.RemoveOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def RemoveOperation(path: String): typings.json8Patch.mod.RemoveOperation = {
+      val __obj = js.Dynamic.literal(op = "remove", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.json8Patch.mod.RemoveOperation]
     }
     
     @scala.inline
-    def ReplaceOperation(op: replace, path: String, value: js.Any): typings.json8Patch.mod.ReplaceOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def ReplaceOperation(path: String, value: js.Any): typings.json8Patch.mod.ReplaceOperation = {
+      val __obj = js.Dynamic.literal(op = "replace", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.json8Patch.mod.ReplaceOperation]
     }
     
     @scala.inline
-    def TestOperation(op: test, path: String, value: js.Any): typings.json8Patch.mod.TestOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def TestOperation(path: String, value: js.Any): typings.json8Patch.mod.TestOperation = {
+      val __obj = js.Dynamic.literal(op = "test", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.json8Patch.mod.TestOperation]
     }
   }
   
-  @js.native
   trait MoveOperation
-    extends BaseOperation
+    extends StObject
+       with BaseOperation
        with JsonPatchOperation {
     
-    var from: js.Any = js.native
+    var from: js.Any
     
-    var op: move = js.native
+    var op: move
   }
   object MoveOperation {
     
     @scala.inline
-    def apply(from: js.Any, op: move, path: String): MoveOperation = {
-      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(from: js.Any, path: String): MoveOperation = {
+      val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], op = "move", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[MoveOperation]
     }
     
@@ -253,18 +247,18 @@ object mod {
   
   type PatchResultWithRevert = ApplyResultWithRevert
   
-  @js.native
   trait RemoveOperation
-    extends BaseOperation
+    extends StObject
+       with BaseOperation
        with JsonPatchOperation {
     
-    var op: remove = js.native
+    var op: remove
   }
   object RemoveOperation {
     
     @scala.inline
-    def apply(op: remove, path: String): RemoveOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any])
+    def apply(path: String): RemoveOperation = {
+      val __obj = js.Dynamic.literal(op = "remove", path = path.asInstanceOf[js.Any])
       __obj.asInstanceOf[RemoveOperation]
     }
     
@@ -276,20 +270,20 @@ object mod {
     }
   }
   
-  @js.native
   trait ReplaceOperation
-    extends BaseOperation
+    extends StObject
+       with BaseOperation
        with JsonPatchOperation {
     
-    var op: replace = js.native
+    var op: replace
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object ReplaceOperation {
     
     @scala.inline
-    def apply(op: replace, path: String, value: js.Any): ReplaceOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): ReplaceOperation = {
+      val __obj = js.Dynamic.literal(op = "replace", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[ReplaceOperation]
     }
     
@@ -304,20 +298,20 @@ object mod {
     }
   }
   
-  @js.native
   trait TestOperation
-    extends BaseOperation
+    extends StObject
+       with BaseOperation
        with JsonPatchOperation {
     
-    var op: test = js.native
+    var op: test
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object TestOperation {
     
     @scala.inline
-    def apply(op: test, path: String, value: js.Any): TestOperation = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    def apply(path: String, value: js.Any): TestOperation = {
+      val __obj = js.Dynamic.literal(op = "test", path = path.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
       __obj.asInstanceOf[TestOperation]
     }
     

@@ -18,13 +18,14 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @js.native
-  trait DatePickerEvent extends Event {
+  trait DatePickerEvent
+    extends StObject
+       with Event {
     
     var date: Date = js.native
     
@@ -33,7 +34,6 @@ object mod {
     var view: String = js.native
   }
   
-  @js.native
   trait DatepickerOptions extends StObject {
     
     /**
@@ -41,21 +41,21 @@ object mod {
       *
       * Default: `false`
       */
-    var autoHide: js.UndefOr[Boolean] = js.native
+    var autoHide: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Pick the initial date automatically when initialized.
       *
       * Default: `false`
       */
-    var autoPick: js.UndefOr[Boolean] = js.native
+    var autoPick: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Show the datepicker automatically when initialized.
       *
       * Default: `false`
       */
-    var autoShow: js.UndefOr[Boolean] = js.native
+    var autoShow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A element for putting the datepicker. If not set, the datepicker will be appended to
@@ -63,52 +63,52 @@ object mod {
       *
       * > Only works when the `inline` option set to `true`.
       */
-    var container: js.UndefOr[Element | JQuery[HTMLElement] | String | Null] = js.native
+    var container: js.UndefOr[Element | JQuery[HTMLElement] | String | Null] = js.undefined
     
     /**
       * The initial date. If not set, will use the current date by default.
       */
-    var date: js.UndefOr[Date | String] = js.native
+    var date: js.UndefOr[Date | String] = js.undefined
     
     /**
       * Days' name of the week.
       *
       * Default: `['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']`
       */
-    var days: js.UndefOr[js.Array[String]] = js.native
+    var days: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Shortest days' name.
       *
       * Default: `['Su', 'Mo', 'Tu', 'We', 'Th', 'Fr', 'Sa']`
       */
-    var daysMin: js.UndefOr[js.Array[String]] = js.native
+    var daysMin: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Shorter days' name.
       *
       * Default: `['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat']`
       */
-    var daysShort: js.UndefOr[js.Array[String]] = js.native
+    var daysShort: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * CSS class for a disabled item.
       *
       * Default: `disabled`
       */
-    var disabledClass: js.UndefOr[String] = js.native
+    var disabledClass: js.UndefOr[String] = js.undefined
     
     /**
       * The end view date. All the dates after this date will be disabled.
       */
-    var endDate: js.UndefOr[Date | String] = js.native
+    var endDate: js.UndefOr[Date | String] = js.undefined
     
     /**
       * Filter each date item. If it returns `false`, the related date will be disabled.
       */
     var filter: js.UndefOr[
         js.Function2[/* date */ Date, /* view */ day | month | year, js.UndefOr[Boolean]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The date string format.
@@ -120,19 +120,19 @@ object mod {
       * * Month: `mm`, `m`
       * * Day: `dd`, `d`
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * A shortcut of the "hide.datepicker" event.
       */
-    var hide: js.UndefOr[js.Function1[/* event */ DatePickerEvent, Unit]] = js.native
+    var hide: js.UndefOr[js.Function1[/* event */ DatePickerEvent, Unit]] = js.undefined
     
     /**
       * CSS class for highlight date item.
       *
       * Default: `highlighted`
       */
-    var highlightedClass: js.UndefOr[String] = js.native
+    var highlightedClass: js.UndefOr[String] = js.undefined
     
     /**
       * Enable inline mode.
@@ -140,62 +140,62 @@ object mod {
       * If the element is not an input element, will append the datepicker to the element.
       * If the `container` option is set, will append the datepicker to the container.
       */
-    var `inline`: js.UndefOr[Boolean] = js.native
+    var `inline`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A element tag for each item of years, months and days.
       *
       * Default: `li`
       */
-    var itemTag: js.UndefOr[String] = js.native
+    var itemTag: js.UndefOr[String] = js.undefined
     
     /**
       * The ISO language code. If not set, will use the built-in language (`en-US`) by default.
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /**
       * Months' name.
       *
       * Default: `['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December']`
       */
-    var months: js.UndefOr[js.Array[String]] = js.native
+    var months: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Shorter months' name.
       *
       * Default: `['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec']`
       */
-    var monthsShort: js.UndefOr[js.Array[String]] = js.native
+    var monthsShort: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The offset top or bottom of the datepicker from the element.
       *
       * Default: `10`
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * A shortcut of the "pick.datepicker" event.
       */
-    var pick: js.UndefOr[js.Function1[/* event */ DatePickerEvent, Unit]] = js.native
+    var pick: js.UndefOr[js.Function1[/* event */ DatePickerEvent, Unit]] = js.undefined
     
     /**
       * CSS class for a muted item.
       *
       * Default: `picked`
       */
-    var pickedClass: js.UndefOr[String] = js.native
+    var pickedClass: js.UndefOr[String] = js.undefined
     
     /**
       * A shortcut of the "show.datepicker" event.
       */
-    var show: js.UndefOr[js.Function1[/* event */ DatePickerEvent, Unit]] = js.native
+    var show: js.UndefOr[js.Function1[/* event */ DatePickerEvent, Unit]] = js.undefined
     
     /**
       * The start view date. All the dates before this date will be disabled.
       */
-    var startDate: js.UndefOr[Date | String] = js.native
+    var startDate: js.UndefOr[Date | String] = js.undefined
     
     /**
       * The start view when initialized.
@@ -207,7 +207,7 @@ object mod {
       * * `1`: months
       * * `2`: years
       */
-    var startView: js.UndefOr[`0` | `1` | `2`] = js.native
+    var startView: js.UndefOr[`0` | `1` | `2`] = js.undefined
     
     /**
       * The template of the datepicker.
@@ -245,12 +245,12 @@ object mod {
       *
       * **Note**: All the data-view attributes must be set when you customize it.
       */
-    var template: js.UndefOr[String] = js.native
+    var template: js.UndefOr[String] = js.undefined
     
     /**
       * A element for triggering the datepicker.
       */
-    var trigger: js.UndefOr[Element | JQuery[HTMLElement] | String | Null] = js.native
+    var trigger: js.UndefOr[Element | JQuery[HTMLElement] | String | Null] = js.undefined
     
     /**
       * The start day of the week.
@@ -265,26 +265,26 @@ object mod {
       * * `5`: Friday
       * * `6`: Saturday
       */
-    var weekStart: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.native
+    var weekStart: js.UndefOr[`0` | `1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
     
     /**
       * Show year before month on the datepicker header.
       *
       * Default: `false`
       */
-    var yearFirst: js.UndefOr[Boolean] = js.native
+    var yearFirst: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A string suffix to the year number.
       */
-    var yearSuffix: js.UndefOr[String] = js.native
+    var yearSuffix: js.UndefOr[String] = js.undefined
     
     /**
       * The CSS `z-index` style for the datepicker.
       *
       * Default: `1`
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object DatepickerOptions {
     

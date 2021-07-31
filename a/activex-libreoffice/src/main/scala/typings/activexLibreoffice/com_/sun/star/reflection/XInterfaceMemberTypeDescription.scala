@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,32 +11,33 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XInterfaceAttributeTypeDescription
   * @see XInterfaceMethodTypeDescription
   */
-@js.native
-trait XInterfaceMemberTypeDescription extends XTypeDescription {
+trait XInterfaceMemberTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns name of member
     * @returns member name
     */
-  val MemberName: String = js.native
+  val MemberName: String
   
   /**
     * Returns the position the member including all inherited members of base interfaces.
     * @returns position of member
     */
-  val Position: Double = js.native
+  val Position: Double
   
   /**
     * Returns name of member
     * @returns member name
     */
-  def getMemberName(): String = js.native
+  def getMemberName(): String
   
   /**
     * Returns the position the member including all inherited members of base interfaces.
     * @returns position of member
     */
-  def getPosition(): Double = js.native
+  def getPosition(): Double
 }
 object XInterfaceMemberTypeDescription {
   

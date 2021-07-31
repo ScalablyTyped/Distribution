@@ -12,7 +12,6 @@ import typings.msRestAzure.mod.AzureServiceClientOptions
 import typings.msRestAzure.mod.CloudErrorParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object managedApplicationClientMod {
@@ -52,13 +51,13 @@ object managedApplicationClientMod {
     def this(
       credentials: ServiceClientCredentials,
       subscriptionId: String,
-      baseUri: js.UndefOr[scala.Nothing],
+      baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
     def this(
       credentials: ServiceClientCredentials,
       subscriptionId: String,
-      baseUri: String,
+      baseUri: Unit,
       options: AzureServiceClientOptions
     ) = this()
   }
@@ -98,13 +97,13 @@ object managedApplicationClientMod {
     def this(
       credentials: ServiceClientCredentials,
       subscriptionId: String,
-      baseUri: js.UndefOr[scala.Nothing],
+      baseUri: String,
       options: AzureServiceClientOptions
     ) = this()
     def this(
       credentials: ServiceClientCredentials,
       subscriptionId: String,
-      baseUri: String,
+      baseUri: Unit,
       options: AzureServiceClientOptions
     ) = this()
     

@@ -2,46 +2,44 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchTemplate extends StObject {
   
   /**
     * The time launch template was created.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.native
+  var CreateTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The principal that created the launch template. 
     */
-  var CreatedBy: js.UndefOr[String] = js.native
+  var CreatedBy: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the default version of the launch template.
     */
-  var DefaultVersionNumber: js.UndefOr[Long] = js.native
+  var DefaultVersionNumber: js.UndefOr[Long] = js.undefined
   
   /**
     * The version number of the latest version of the launch template.
     */
-  var LatestVersionNumber: js.UndefOr[Long] = js.native
+  var LatestVersionNumber: js.UndefOr[Long] = js.undefined
   
   /**
     * The ID of the launch template.
     */
-  var LaunchTemplateId: js.UndefOr[String] = js.native
+  var LaunchTemplateId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the launch template.
     */
-  var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.native
+  var LaunchTemplateName: js.UndefOr[typings.awsSdk.ec2Mod.LaunchTemplateName] = js.undefined
   
   /**
     * The tags for the launch template.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object LaunchTemplate {
   

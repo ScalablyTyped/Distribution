@@ -2,13 +2,11 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.degreeCentrality
   */
-@js.native
 trait SearchDegreeCentralityOptions extends StObject {
   
   /**
@@ -18,22 +16,22 @@ trait SearchDegreeCentralityOptions extends StObject {
     * disregards number of edges and solely uses the edge weights
     * in the centrality calculation.
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether the directed indegree and outdegree centrality is calculated (true) or
     * whether the undirected centrality is calculated (false, default).
     */
-  var directed: js.UndefOr[Boolean] = js.native
+  var directed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The root node (selector or collection) for which the
     * centrality calculation is made.
     */
-  var root: NodeSingular | Selector = js.native
+  var root: NodeSingular | Selector
   
   /**  A function that returns the weight for the edge. */
-  var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, Double]] = js.native
+  var weight: js.UndefOr[js.Function1[/* edge */ EdgeSingular, Double]] = js.undefined
 }
 object SearchDegreeCentralityOptions {
   

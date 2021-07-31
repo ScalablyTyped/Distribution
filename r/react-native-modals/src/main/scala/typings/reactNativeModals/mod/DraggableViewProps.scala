@@ -4,27 +4,25 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DraggableViewProps extends StObject {
   
-  var onMove: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onMove: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onRelease: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onRelease: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onSwipeOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onSwipeOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onSwiping: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onSwiping: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var onSwipingOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.native
+  var onSwipingOut: js.UndefOr[js.Function1[/* event */ DragEvent, Unit]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var swipeDirection: js.UndefOr[SwipeDirection | js.Array[SwipeDirection]] = js.native
+  var swipeDirection: js.UndefOr[SwipeDirection | js.Array[SwipeDirection]] = js.undefined
   
-  var swipeThreshold: js.UndefOr[Double] = js.native
+  var swipeThreshold: js.UndefOr[Double] = js.undefined
 }
 object DraggableViewProps {
   

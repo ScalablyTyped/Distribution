@@ -2,31 +2,29 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventTypeSummary extends StObject {
   
   /**
     * The system-generated ID of the event.
     */
-  var EventTypeId: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeId] = js.native
+  var EventTypeId: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeId] = js.undefined
   
   /**
     * The name of the event.
     */
-  var EventTypeName: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeName] = js.native
+  var EventTypeName: js.UndefOr[typings.awsSdk.codestarnotificationsMod.EventTypeName] = js.undefined
   
   /**
     * The resource type of the event.
     */
-  var ResourceType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ResourceType] = js.native
+  var ResourceType: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ResourceType] = js.undefined
   
   /**
     * The name of the service for which the event applies.
     */
-  var ServiceName: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ServiceName] = js.native
+  var ServiceName: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ServiceName] = js.undefined
 }
 object EventTypeSummary {
   

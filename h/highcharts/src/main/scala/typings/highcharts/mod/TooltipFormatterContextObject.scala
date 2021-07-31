@@ -2,31 +2,29 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipFormatterContextObject extends StObject {
   
-  var color: ColorString | GradientColorObject | PatternObject = js.native
+  var color: ColorString | GradientColorObject | PatternObject
   
-  var colorIndex: js.UndefOr[Double] = js.native
+  var colorIndex: js.UndefOr[Double] = js.undefined
   
-  var key: Double = js.native
+  var key: Double
   
-  var percentage: js.UndefOr[Double] = js.native
+  var percentage: js.UndefOr[Double] = js.undefined
   
-  var point: Point = js.native
+  var point: Point
   
-  var points: js.UndefOr[js.Array[TooltipFormatterContextObject]] = js.native
+  var points: js.UndefOr[js.Array[TooltipFormatterContextObject]] = js.undefined
   
-  var series: Series = js.native
+  var series: Series
   
-  var total: js.UndefOr[Double] = js.native
+  var total: js.UndefOr[Double] = js.undefined
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object TooltipFormatterContextObject {
   

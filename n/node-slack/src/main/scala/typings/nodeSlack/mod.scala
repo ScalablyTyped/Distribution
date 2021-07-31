@@ -3,34 +3,34 @@ package typings.nodeSlack
 import typings.request.mod.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("node-slack", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Slack {
+  class ^ protected ()
+    extends StObject
+       with Slack {
     def this(hookUrl: String) = this()
     def this(hookUrl: String, option: Option) = this()
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var attachments: js.UndefOr[js.Array[_]] = js.native
+    var attachments: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var icon_emoji: js.UndefOr[String] = js.native
+    var icon_emoji: js.UndefOr[String] = js.undefined
     
-    var link_names: js.UndefOr[Double] = js.native
+    var link_names: js.UndefOr[Double] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var unfurl_links: js.UndefOr[Boolean] = js.native
+    var unfurl_links: js.UndefOr[Boolean] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Message {
     
@@ -44,7 +44,7 @@ object mod {
     implicit class MessageMutableBuilder[Self <: Message] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAttachments(value: js.Array[_]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
+      def setAttachments(value: js.Array[js.Any]): Self = StObject.set(x, "attachments", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAttachmentsUndefined: Self = StObject.set(x, "attachments", js.undefined)
@@ -87,10 +87,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Option extends StObject {
     
-    var proxy: String = js.native
+    var proxy: String
   }
   object Option {
     
@@ -108,24 +107,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var channel_id: js.UndefOr[String] = js.native
+    var channel_id: js.UndefOr[String] = js.undefined
     
-    var channel_name: js.UndefOr[String] = js.native
+    var channel_name: js.UndefOr[String] = js.undefined
     
-    var team_id: js.UndefOr[String] = js.native
+    var team_id: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
     
-    var token: js.UndefOr[String] = js.native
+    var token: js.UndefOr[String] = js.undefined
     
-    var user_id: js.UndefOr[String] = js.native
+    var user_id: js.UndefOr[String] = js.undefined
     
-    var user_name: js.UndefOr[String] = js.native
+    var user_name: js.UndefOr[String] = js.undefined
   }
   object Query {
     
@@ -200,10 +198,9 @@ object mod {
     def send(message: Message, callback: SendCallback): Request = js.native
   }
   
-  @js.native
   trait TextResponse extends StObject {
     
-    var text: String = js.native
+    var text: String
   }
   object TextResponse {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionAtRest extends StObject {
   
   /**
     * The encryption-at-rest mode for encrypting Data Catalog data.
     */
-  var CatalogEncryptionMode: typings.awsSdk.glueMod.CatalogEncryptionMode = js.native
+  var CatalogEncryptionMode: typings.awsSdk.glueMod.CatalogEncryptionMode
   
   /**
     * The ID of the AWS KMS key to use for encryption at rest.
     */
-  var SseAwsKmsKeyId: js.UndefOr[NameString] = js.native
+  var SseAwsKmsKeyId: js.UndefOr[NameString] = js.undefined
 }
 object EncryptionAtRest {
   

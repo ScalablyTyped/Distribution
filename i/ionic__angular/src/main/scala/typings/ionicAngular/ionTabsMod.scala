@@ -8,7 +8,6 @@ import typings.ionicAngular.proxiesMod.IonTabBar
 import typings.ionicAngular.stackUtilsMod.StackEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionTabsMod {

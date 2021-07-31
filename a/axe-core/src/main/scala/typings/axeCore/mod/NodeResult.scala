@@ -3,31 +3,29 @@ package typings.axeCore.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeResult extends StObject {
   
-  var all: js.Array[CheckResult] = js.native
+  var all: js.Array[CheckResult]
   
-  var ancestry: js.UndefOr[js.Array[String]] = js.native
+  var ancestry: js.UndefOr[js.Array[String]] = js.undefined
   
-  var any: js.Array[CheckResult] = js.native
+  var any: js.Array[CheckResult]
   
-  var element: js.UndefOr[HTMLElement] = js.native
+  var element: js.UndefOr[HTMLElement] = js.undefined
   
-  var failureSummary: js.UndefOr[String] = js.native
+  var failureSummary: js.UndefOr[String] = js.undefined
   
-  var html: String = js.native
+  var html: String
   
-  var impact: js.UndefOr[ImpactValue] = js.native
+  var impact: js.UndefOr[ImpactValue] = js.undefined
   
-  var none: js.Array[CheckResult] = js.native
+  var none: js.Array[CheckResult]
   
-  var target: js.Array[String] = js.native
+  var target: js.Array[String]
   
-  var xpath: js.UndefOr[js.Array[String]] = js.native
+  var xpath: js.UndefOr[js.Array[String]] = js.undefined
 }
 object NodeResult {
   

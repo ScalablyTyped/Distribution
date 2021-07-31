@@ -10,9 +10,9 @@ Node compatible event emitter with extra features
 | ------------------ | :-------------: |
 | Full name          | @hapi/podium |
 | Keywords           | emitter, event |
-| # releases         | 10 |
+| # releases         | 9 |
 | # dependents       | 4 |
-| # downloads        | 11024959 |
+| # downloads        | 13788178 |
 | # stars            | 0 |
 
 ## Links

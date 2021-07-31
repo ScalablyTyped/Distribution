@@ -2,10 +2,8 @@ package typings.twineSugarcube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Controls extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait Controls extends StObject {
     * @example
     * Config.history.controls = false;
     */
-  var controls: Boolean = js.native
+  var controls: Boolean
   
   /**
     * Sets the maximum number of states (moments) to which the history is allowed to grow. Should the history exceed the limit,
@@ -31,7 +29,7 @@ trait Controls extends StObject {
     * // Limit the history to 150 states
     * Config.history.maxStates = 150;
     */
-  var maxStates: Double = js.native
+  var maxStates: Double
 }
 object Controls {
   

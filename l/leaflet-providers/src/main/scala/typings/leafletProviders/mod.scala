@@ -5,7 +5,6 @@ import typings.leaflet.mod.TileLayerOptions
 import typings.leafletProviders.mod.TileLayer_.Provider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -27,14 +26,13 @@ object mod {
       @js.native
       val providers: ProvidersMap = js.native
       
-      @js.native
       trait ProviderConfig extends StObject {
         
-        var options: js.UndefOr[TileLayerOptions] = js.native
+        var options: js.UndefOr[TileLayerOptions] = js.undefined
         
-        var url: String = js.native
+        var url: String
         
-        var variants: js.UndefOr[StringDictionary[String | ProviderConfig]] = js.native
+        var variants: js.UndefOr[StringDictionary[String | ProviderConfig]] = js.undefined
       }
       object ProviderConfig {
         
@@ -70,14 +68,15 @@ object mod {
   
   object tileLayer {
     
-    @JSImport("leaflet", "tileLayer.provider")
+    @JSImport("leaflet", "tileLayer")
     @js.native
-    def provider(provider: String): Provider = js.native
-    @JSImport("leaflet", "tileLayer.provider")
-    @js.native
-    def provider(provider: String, options: StringDictionary[String]): Provider = js.native
-    @JSImport("leaflet", "tileLayer.provider")
-    @js.native
-    def provider(provider: String, options: TileLayerOptions): Provider = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def provider(provider: String): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any]).asInstanceOf[Provider]
+    @scala.inline
+    def provider(provider: String, options: StringDictionary[String]): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
+    @scala.inline
+    def provider(provider: String, options: TileLayerOptions): Provider = (^.asInstanceOf[js.Dynamic].applyDynamic("provider")(provider.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Provider]
   }
 }

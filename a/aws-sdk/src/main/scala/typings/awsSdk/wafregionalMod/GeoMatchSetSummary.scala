@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoMatchSetSummary extends StObject {
   
   /**
     * The GeoMatchSetId for an GeoMatchSet. You can use GeoMatchSetId in a GetGeoMatchSet request to get detailed information about an GeoMatchSet.
     */
-  var GeoMatchSetId: ResourceId = js.native
+  var GeoMatchSetId: ResourceId
   
   /**
     * A friendly name or description of the GeoMatchSet. You can't change the name of an GeoMatchSet after you create it.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
 }
 object GeoMatchSetSummary {
   

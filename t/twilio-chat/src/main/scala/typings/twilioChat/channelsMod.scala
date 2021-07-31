@@ -15,7 +15,6 @@ import typings.twilioMcsClient.mod.McsClient
 import typings.twilioSync.mod.SyncClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object channelsMod {
@@ -128,7 +127,7 @@ object channelsMod {
     
     def getChannel(sid: String): js.Promise[typings.twilioChat.channelMod.Channel] = js.native
     
-    def getChannels(args: js.Any): js.Promise[_] = js.native
+    def getChannels(args: js.Any): js.Promise[js.Any] = js.native
     
     var getMap: js.Any = js.native
     
@@ -169,24 +168,23 @@ object channelsMod {
     }
   }
   
-  @js.native
   trait ChannelsServices extends StObject {
     
-    var consumptionHorizon: ConsumptionHorizon = js.native
+    var consumptionHorizon: ConsumptionHorizon
     
-    var mcsClient: McsClient = js.native
+    var mcsClient: McsClient
     
-    var network: Network = js.native
+    var network: Network
     
-    var session: Session = js.native
+    var session: Session
     
-    var syncClient: SyncClient = js.native
+    var syncClient: SyncClient
     
-    var syncList: SyncList = js.native
+    var syncList: SyncList
     
-    var typingIndicator: TypingIndicator = js.native
+    var typingIndicator: TypingIndicator
     
-    var users: Users = js.native
+    var users: Users
   }
   object ChannelsServices {
     

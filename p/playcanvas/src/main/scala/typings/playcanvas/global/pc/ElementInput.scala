@@ -4,7 +4,6 @@ import typings.playcanvas.anon.UseMouse
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,35 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.ElementInput")
 @js.native
 class ElementInput protected ()
-  extends typings.playcanvas.pc.ElementInput {
+  extends StObject
+     with typings.playcanvas.pc.ElementInput {
   def this(domElement: Element) = this()
   def this(domElement: Element, options: UseMouse) = this()
+  
+  /**
+    * Add a {@link pc.ElementComponent} to the internal list of ElementComponents that are being checked for input.
+    * @param element - The ElementComponent.
+    */
+  /* CompleteClass */
+  override def addElement(element: typings.playcanvas.pc.ElementComponent): Unit = js.native
+  
+  /**
+    * Attach mouse and touch events to a DOM element.
+    * @param domElement - The DOM element.
+    */
+  /* CompleteClass */
+  override def attach(domElement: Element): Unit = js.native
+  
+  /**
+    * Remove mouse and touch events from the DOM element that it is attached to.
+    */
+  /* CompleteClass */
+  override def detach(): Unit = js.native
+  
+  /**
+    * Remove a {@link pc.ElementComponent} from the internal list of ElementComponents that are being checked for input.
+    * @param element - The ElementComponent.
+    */
+  /* CompleteClass */
+  override def removeElement(element: typings.playcanvas.pc.ElementComponent): Unit = js.native
 }

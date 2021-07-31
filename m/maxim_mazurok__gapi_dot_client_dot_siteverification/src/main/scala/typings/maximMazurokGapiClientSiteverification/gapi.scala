@@ -10,7 +10,6 @@ import typings.maximMazurokGapiClientSiteverification.anon.Oauthtoken
 import typings.maximMazurokGapiClientSiteverification.anon.PrettyPrint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gapi {
@@ -19,14 +18,13 @@ object gapi {
     
     object siteverification {
       
-      @js.native
       trait SiteVerificationWebResourceGettokenRequest extends StObject {
         
         /** The site for which a verification token will be generated. */
-        var site: js.UndefOr[Identifier] = js.native
+        var site: js.UndefOr[Identifier] = js.undefined
         
         /** The verification method that will be used to verify this site. For sites, 'FILE' or 'META' methods may be used. For domains, only 'DNS' may be used. */
-        var verificationMethod: js.UndefOr[String] = js.native
+        var verificationMethod: js.UndefOr[String] = js.undefined
       }
       object SiteVerificationWebResourceGettokenRequest {
         
@@ -53,17 +51,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait SiteVerificationWebResourceGettokenResponse extends StObject {
         
         /**
           * The verification method to use in conjunction with this token. For FILE, the token should be placed in the top-level directory of the site, stored inside a file of the same name.
           * For META, the token should be placed in the HEAD tag of the default page that is loaded for the site. For DNS, the token should be placed in a TXT record of the domain.
           */
-        var method: js.UndefOr[String] = js.native
+        var method: js.UndefOr[String] = js.undefined
         
         /** The verification token. The token must be placed appropriately in order for verification to succeed. */
-        var token: js.UndefOr[String] = js.native
+        var token: js.UndefOr[String] = js.undefined
       }
       object SiteVerificationWebResourceGettokenResponse {
         
@@ -90,11 +87,10 @@ object gapi {
         }
       }
       
-      @js.native
       trait SiteVerificationWebResourceListResponse extends StObject {
         
         /** The list of sites that are owned by the authenticated user. */
-        var items: js.UndefOr[js.Array[SiteVerificationWebResourceResource]] = js.native
+        var items: js.UndefOr[js.Array[SiteVerificationWebResourceResource]] = js.undefined
       }
       object SiteVerificationWebResourceListResponse {
         
@@ -118,17 +114,16 @@ object gapi {
         }
       }
       
-      @js.native
       trait SiteVerificationWebResourceResource extends StObject {
         
         /** The string used to identify this site. This value should be used in the "id" portion of the REST URL for the Get, Update, and Delete operations. */
-        var id: js.UndefOr[String] = js.native
+        var id: js.UndefOr[String] = js.undefined
         
         /** The email addresses of all verified owners. */
-        var owners: js.UndefOr[js.Array[String]] = js.native
+        var owners: js.UndefOr[js.Array[String]] = js.undefined
         
         /** The address and type of a site that is verified or will be verified. */
-        var site: js.UndefOr[Identifier] = js.native
+        var site: js.UndefOr[Identifier] = js.undefined
       }
       object SiteVerificationWebResourceResource {
         

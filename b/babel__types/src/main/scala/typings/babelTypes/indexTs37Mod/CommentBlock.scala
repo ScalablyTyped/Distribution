@@ -2,29 +2,22 @@ package typings.babelTypes.indexTs37Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentBlock
-  extends BaseComment
+  extends StObject
+     with BaseComment
      with Comment {
   
   @JSName("type")
-  var type_CommentBlock: typings.babelTypes.babelTypesStrings.CommentBlock = js.native
+  var type_CommentBlock: typings.babelTypes.babelTypesStrings.CommentBlock
 }
 object CommentBlock {
   
   @scala.inline
-  def apply(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelTypes.babelTypesStrings.CommentBlock,
-    value: String
-  ): CommentBlock = {
+  def apply(end: Double, loc: SourceLocation, start: Double, value: String): CommentBlock = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CommentBlock")
     __obj.asInstanceOf[CommentBlock]
   }
   

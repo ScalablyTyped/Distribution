@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents signer information for a signed CMS message which contains a set of properties. */
-@js.native
 trait CmsSignerInfo extends StObject {
   
   /** Gets or sets the signer certificate that is used to sign the message. */
-  var certificate: Certificate = js.native
+  var certificate: Certificate
   
   /** Gets or sets the hash algorithm that is used to sign the CMS message. */
-  var hashAlgorithmName: String = js.native
+  var hashAlgorithmName: String
   
   /** Gets the RFC3161 unauthenticated timestamp information. */
-  var timestampInfo: CmsTimestampInfo = js.native
+  var timestampInfo: CmsTimestampInfo
 }
 object CmsSignerInfo {
   

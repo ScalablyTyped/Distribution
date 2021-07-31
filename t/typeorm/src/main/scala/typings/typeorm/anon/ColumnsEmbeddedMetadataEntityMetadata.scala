@@ -4,19 +4,17 @@ import typings.typeorm.metadataArgsUniqueMetadataArgsMod.UniqueMetadataArgs
 import typings.typeorm.metadataColumnMetadataMod.ColumnMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnsEmbeddedMetadataEntityMetadata extends StObject {
   
-  var args: js.UndefOr[UniqueMetadataArgs] = js.native
+  var args: js.UndefOr[UniqueMetadataArgs] = js.undefined
   
-  var columns: js.UndefOr[js.Array[ColumnMetadata]] = js.native
+  var columns: js.UndefOr[js.Array[ColumnMetadata]] = js.undefined
   
-  var embeddedMetadata: js.UndefOr[typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata] = js.native
+  var embeddedMetadata: js.UndefOr[typings.typeorm.metadataEmbeddedMetadataMod.EmbeddedMetadata] = js.undefined
   
-  var entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata = js.native
+  var entityMetadata: typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 }
 object ColumnsEmbeddedMetadataEntityMetadata {
   

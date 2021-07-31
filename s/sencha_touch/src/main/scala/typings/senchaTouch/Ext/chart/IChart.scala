@@ -3,37 +3,37 @@ package typings.senchaTouch.Ext.chart
 import typings.senchaTouch.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChart extends IAbstractChart {
+trait IChart
+  extends StObject
+     with IAbstractChart {
   
   /** [Config Option] (Boolean) */
-  var flipXY: js.UndefOr[Boolean] = js.native
+  var flipXY: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Returns the value of flipXY
     * @returns Boolean
     */
-  var getFlipXY: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getFlipXY: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Method] Returns the value of innerRegion
     * @returns Array
     */
-  var getInnerRegion: js.UndefOr[js.Function0[Array]] = js.native
+  var getInnerRegion: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Layout the axes and series  */
-  var performLayout: js.UndefOr[js.Function0[Unit]] = js.native
+  var performLayout: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets the value of flipXY
     * @param flipXY Boolean The new value.
     */
-  var setFlipXY: js.UndefOr[js.Function1[/* flipXY */ js.UndefOr[Boolean], Unit]] = js.native
+  var setFlipXY: js.UndefOr[js.Function1[/* flipXY */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of innerRegion
     * @param innerRegion Array The new value.
     */
-  var setInnerRegion: js.UndefOr[js.Function1[/* innerRegion */ js.UndefOr[Array], Unit]] = js.native
+  var setInnerRegion: js.UndefOr[js.Function1[/* innerRegion */ js.UndefOr[Array], Unit]] = js.undefined
 }
 object IChart {
   

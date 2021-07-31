@@ -6,33 +6,31 @@ import typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBro
 import typings.awsSdkClientCognitoIdentityBrowser.awsSdkClientCognitoIdentityBrowserStrings.StartsWith
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMappingRuleMod {
   
-  @js.native
   trait MappingRule extends StObject {
     
     /**
       * <p>The claim name that must be present in the token, for example, "isAdmin" or "paid".</p>
       */
-    var Claim: String = js.native
+    var Claim: String
     
     /**
       * <p>The match condition that specifies how closely the claim value in the IdP token must match <code>Value</code>.</p>
       */
-    var MatchType: Equals | Contains | StartsWith | NotEqual | String = js.native
+    var MatchType: Equals | Contains | StartsWith | NotEqual | String
     
     /**
       * <p>The role ARN.</p>
       */
-    var RoleARN: String = js.native
+    var RoleARN: String
     
     /**
       * <p>A brief string that the claim must match, for example, "paid" or "yes".</p>
       */
-    var Value: String = js.native
+    var Value: String
   }
   object MappingRule {
     

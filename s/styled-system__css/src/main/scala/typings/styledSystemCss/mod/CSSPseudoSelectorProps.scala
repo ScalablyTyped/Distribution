@@ -2,345 +2,345 @@ package typings.styledSystemCss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {[ K in csstype.csstype.Pseudos ]:? @styled-system/css.@styled-system/css.SystemStyleObject} */
-@js.native
-trait CSSPseudoSelectorProps extends _SystemStyleObject {
+trait CSSPseudoSelectorProps
+  extends StObject
+     with _SystemStyleObject {
   
   @JSName(":-khtml-any-link")
-  var `Colon-khtml-any-link`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-khtml-any-link`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-any-link")
-  var `Colon-moz-any-link`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-any-link`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-any()")
-  var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-anyLeftparenthesisRightparenthesis`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-dir")
-  var `Colon-moz-dir`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-dir`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-focusring")
-  var `Colon-moz-focusring`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-focusring`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-full-screen")
-  var `Colon-moz-full-screen`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-full-screen`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-placeholder")
-  var `Colon-moz-placeholder`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-placeholder`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-read-only")
-  var `Colon-moz-read-only`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-read-only`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-moz-read-write")
-  var `Colon-moz-read-write`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-moz-read-write`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-ms-fullscreen")
-  var `Colon-ms-fullscreen`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-ms-fullscreen`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-ms-input-placeholder")
-  var `Colon-ms-input-placeholder`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-ms-input-placeholder`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-webkit-any-link")
-  var `Colon-webkit-any-link`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-webkit-any-link`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-webkit-any()")
-  var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-webkit-anyLeftparenthesisRightparenthesis`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":-webkit-full-screen")
-  var `Colon-webkit-full-screen`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colon-webkit-full-screen`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-moz-placeholder")
-  var `ColonColon-moz-placeholder`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-moz-placeholder`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-moz-progress-bar")
-  var `ColonColon-moz-progress-bar`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-moz-progress-bar`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-moz-range-progress")
-  var `ColonColon-moz-range-progress`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-moz-range-progress`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-moz-range-thumb")
-  var `ColonColon-moz-range-thumb`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-moz-range-thumb`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-moz-range-track")
-  var `ColonColon-moz-range-track`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-moz-range-track`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-moz-selection")
-  var `ColonColon-moz-selection`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-moz-selection`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-backdrop")
-  var `ColonColon-ms-backdrop`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-backdrop`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-browse")
-  var `ColonColon-ms-browse`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-browse`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-check")
-  var `ColonColon-ms-check`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-check`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-clear")
-  var `ColonColon-ms-clear`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-clear`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-fill")
-  var `ColonColon-ms-fill`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-fill`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-fill-lower")
-  var `ColonColon-ms-fill-lower`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-fill-lower`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-fill-upper")
-  var `ColonColon-ms-fill-upper`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-fill-upper`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-input-placeholder")
-  var `ColonColon-ms-input-placeholder`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-input-placeholder`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-reveal")
-  var `ColonColon-ms-reveal`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-reveal`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-thumb")
-  var `ColonColon-ms-thumb`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-thumb`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-ticks-after")
-  var `ColonColon-ms-ticks-after`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-ticks-after`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-ticks-before")
-  var `ColonColon-ms-ticks-before`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-ticks-before`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-tooltip")
-  var `ColonColon-ms-tooltip`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-tooltip`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-track")
-  var `ColonColon-ms-track`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-track`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-ms-value")
-  var `ColonColon-ms-value`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-ms-value`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-webkit-backdrop")
-  var `ColonColon-webkit-backdrop`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-webkit-backdrop`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-webkit-input-placeholder")
-  var `ColonColon-webkit-input-placeholder`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-webkit-input-placeholder`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-webkit-progress-bar")
-  var `ColonColon-webkit-progress-bar`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-webkit-progress-bar`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-webkit-progress-inner-value")
-  var `ColonColon-webkit-progress-inner-value`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-webkit-progress-inner-value`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-webkit-progress-value")
-  var `ColonColon-webkit-progress-value`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-webkit-progress-value`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-webkit-slider-runnable-track")
-  var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-webkit-slider-runnable-track`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::-webkit-slider-thumb")
-  var `ColonColon-webkit-slider-thumb`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColon-webkit-slider-thumb`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::after")
-  var ColonColonafter: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonafter: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::backdrop")
-  var ColonColonbackdrop: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonbackdrop: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::before")
-  var ColonColonbefore: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonbefore: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::cue")
-  var ColonColoncue: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColoncue: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::cue-region")
-  var `ColonColoncue-region`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColoncue-region`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::first-letter")
-  var `ColonColonfirst-letter`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColonfirst-letter`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::first-line")
-  var `ColonColonfirst-line`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColonfirst-line`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::grammar-error")
-  var `ColonColongrammar-error`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColongrammar-error`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::marker")
-  var ColonColonmarker: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonmarker: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::part")
-  var ColonColonpart: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonpart: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::placeholder")
-  var ColonColonplaceholder: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonplaceholder: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::selection")
-  var ColonColonselection: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonselection: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::slotted")
-  var ColonColonslotted: js.UndefOr[SystemStyleObject] = js.native
+  var ColonColonslotted: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName("::spelling-error")
-  var `ColonColonspelling-error`: js.UndefOr[SystemStyleObject] = js.native
+  var `ColonColonspelling-error`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":active")
-  var Colonactive: js.UndefOr[SystemStyleObject] = js.native
+  var Colonactive: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":after")
-  var Colonafter: js.UndefOr[SystemStyleObject] = js.native
+  var Colonafter: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":any-link")
-  var `Colonany-link`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonany-link`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":before")
-  var Colonbefore: js.UndefOr[SystemStyleObject] = js.native
+  var Colonbefore: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":blank")
-  var Colonblank: js.UndefOr[SystemStyleObject] = js.native
+  var Colonblank: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":checked")
-  var Colonchecked: js.UndefOr[SystemStyleObject] = js.native
+  var Colonchecked: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":default")
-  var Colondefault: js.UndefOr[SystemStyleObject] = js.native
+  var Colondefault: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":defined")
-  var Colondefined: js.UndefOr[SystemStyleObject] = js.native
+  var Colondefined: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":dir")
-  var Colondir: js.UndefOr[SystemStyleObject] = js.native
+  var Colondir: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":disabled")
-  var Colondisabled: js.UndefOr[SystemStyleObject] = js.native
+  var Colondisabled: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":empty")
-  var Colonempty: js.UndefOr[SystemStyleObject] = js.native
+  var Colonempty: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":enabled")
-  var Colonenabled: js.UndefOr[SystemStyleObject] = js.native
+  var Colonenabled: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":first")
-  var Colonfirst: js.UndefOr[SystemStyleObject] = js.native
+  var Colonfirst: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":first-child")
-  var `Colonfirst-child`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonfirst-child`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":first-letter")
-  var `Colonfirst-letter`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonfirst-letter`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":first-line")
-  var `Colonfirst-line`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonfirst-line`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":first-of-type")
-  var `Colonfirst-of-type`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonfirst-of-type`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":focus")
-  var Colonfocus: js.UndefOr[SystemStyleObject] = js.native
+  var Colonfocus: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":focus-visible")
-  var `Colonfocus-visible`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonfocus-visible`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":focus-within")
-  var `Colonfocus-within`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonfocus-within`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":fullscreen")
-  var Colonfullscreen: js.UndefOr[SystemStyleObject] = js.native
+  var Colonfullscreen: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":has")
-  var Colonhas: js.UndefOr[SystemStyleObject] = js.native
+  var Colonhas: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":host")
-  var Colonhost: js.UndefOr[SystemStyleObject] = js.native
+  var Colonhost: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":host-context")
-  var `Colonhost-context`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonhost-context`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":hover")
-  var Colonhover: js.UndefOr[SystemStyleObject] = js.native
+  var Colonhover: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":in-range")
-  var `Colonin-range`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonin-range`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":indeterminate")
-  var Colonindeterminate: js.UndefOr[SystemStyleObject] = js.native
+  var Colonindeterminate: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":invalid")
-  var Coloninvalid: js.UndefOr[SystemStyleObject] = js.native
+  var Coloninvalid: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":is")
-  var Colonis: js.UndefOr[SystemStyleObject] = js.native
+  var Colonis: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":lang")
-  var Colonlang: js.UndefOr[SystemStyleObject] = js.native
+  var Colonlang: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":last-child")
-  var `Colonlast-child`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonlast-child`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":last-of-type")
-  var `Colonlast-of-type`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonlast-of-type`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":left")
-  var Colonleft: js.UndefOr[SystemStyleObject] = js.native
+  var Colonleft: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":link")
-  var Colonlink: js.UndefOr[SystemStyleObject] = js.native
+  var Colonlink: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":matches()")
-  var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[SystemStyleObject] = js.native
+  var ColonmatchesLeftparenthesisRightparenthesis: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":not")
-  var Colonnot: js.UndefOr[SystemStyleObject] = js.native
+  var Colonnot: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":nth-child")
-  var `Colonnth-child`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonnth-child`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":nth-last-child")
-  var `Colonnth-last-child`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonnth-last-child`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":nth-last-of-type")
-  var `Colonnth-last-of-type`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonnth-last-of-type`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":nth-of-type")
-  var `Colonnth-of-type`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonnth-of-type`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":only-child")
-  var `Colononly-child`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colononly-child`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":only-of-type")
-  var `Colononly-of-type`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colononly-of-type`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":optional")
-  var Colonoptional: js.UndefOr[SystemStyleObject] = js.native
+  var Colonoptional: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":out-of-range")
-  var `Colonout-of-range`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonout-of-range`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":placeholder-shown")
-  var `Colonplaceholder-shown`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonplaceholder-shown`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":read-only")
-  var `Colonread-only`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonread-only`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":read-write")
-  var `Colonread-write`: js.UndefOr[SystemStyleObject] = js.native
+  var `Colonread-write`: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":required")
-  var Colonrequired: js.UndefOr[SystemStyleObject] = js.native
+  var Colonrequired: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":right")
-  var Colonright: js.UndefOr[SystemStyleObject] = js.native
+  var Colonright: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":root")
-  var Colonroot: js.UndefOr[SystemStyleObject] = js.native
+  var Colonroot: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":scope")
-  var Colonscope: js.UndefOr[SystemStyleObject] = js.native
+  var Colonscope: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":target")
-  var Colontarget: js.UndefOr[SystemStyleObject] = js.native
+  var Colontarget: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":valid")
-  var Colonvalid: js.UndefOr[SystemStyleObject] = js.native
+  var Colonvalid: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":visited")
-  var Colonvisited: js.UndefOr[SystemStyleObject] = js.native
+  var Colonvisited: js.UndefOr[SystemStyleObject] = js.undefined
   
   @JSName(":where")
-  var Colonwhere: js.UndefOr[SystemStyleObject] = js.native
+  var Colonwhere: js.UndefOr[SystemStyleObject] = js.undefined
 }
 object CSSPseudoSelectorProps {
   

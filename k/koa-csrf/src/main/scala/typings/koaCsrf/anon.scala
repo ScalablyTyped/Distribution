@@ -2,25 +2,23 @@ package typings.koaCsrf
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DisableQuery extends StObject {
     
-    var disableQuery: js.UndefOr[Boolean] = js.native
+    var disableQuery: js.UndefOr[Boolean] = js.undefined
     
-    var excludedMethods: js.UndefOr[js.Array[String]] = js.native
+    var excludedMethods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var invalidSessionSecretMessage: js.UndefOr[String] = js.native
+    var invalidSessionSecretMessage: js.UndefOr[String] = js.undefined
     
-    var invalidSessionSecretStatusCode: js.UndefOr[Double] = js.native
+    var invalidSessionSecretStatusCode: js.UndefOr[Double] = js.undefined
     
-    var invalidTokenMessage: js.UndefOr[String] = js.native
+    var invalidTokenMessage: js.UndefOr[String] = js.undefined
     
-    var invalidTokenStatusCode: js.UndefOr[Double] = js.native
+    var invalidTokenStatusCode: js.UndefOr[Double] = js.undefined
   }
   object DisableQuery {
     

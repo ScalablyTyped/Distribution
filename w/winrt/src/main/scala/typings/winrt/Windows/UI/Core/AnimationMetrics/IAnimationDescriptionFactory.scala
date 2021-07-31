@@ -2,13 +2,11 @@ package typings.winrt.Windows.UI.Core.AnimationMetrics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAnimationDescriptionFactory extends StObject {
   
-  def createInstance(effect: AnimationEffect, target: AnimationEffectTarget): AnimationDescription = js.native
+  def createInstance(effect: AnimationEffect, target: AnimationEffectTarget): AnimationDescription
 }
 object IAnimationDescriptionFactory {
   

@@ -7,12 +7,11 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.xml.crypto.XUriBinding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureCreator
-  extends XReferenceResolvedListener
+  extends StObject
+     with XReferenceResolvedListener
      with XReferenceCollector
      with XSignatureCreationResultBroadcaster
      with XBlockerMonitor
@@ -28,7 +27,7 @@ object SignatureCreator {
     addSignatureCreationResultListener: XSignatureCreationResultListener => Unit,
     endMission: () => Boolean,
     getUriBinding: String => XInputStream,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     referenceResolved: Double => Unit,
     release: () => Unit,

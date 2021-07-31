@@ -2,14 +2,12 @@ package typings.semanticUiNag.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-nag.SemanticUI.NagSettings._Impl, 'silent'> */
-@js.native
 trait PickImplsilent extends StObject {
   
-  var silent: Boolean = js.native
+  var silent: Boolean
 }
 object PickImplsilent {
   

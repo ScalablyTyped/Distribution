@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientManagedidentities.gapi.client.managedident
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalResource extends StObject {
   
-  var domains: DomainsResource = js.native
+  var domains: DomainsResource
   
-  var operations: OperationsResource = js.native
+  var operations: OperationsResource
 }
 object GlobalResource {
   

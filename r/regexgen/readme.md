@@ -11,8 +11,8 @@ Generate regular expressions that match a set of strings
 | Full name          | regexgen |
 | Keywords           | regex, trie, regular, expression |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 1162441 |
+| # dependents       | 12 |
+| # downloads        | 868327 |
 | # stars            | 8 |
 
 ## Links

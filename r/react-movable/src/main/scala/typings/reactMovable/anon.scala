@@ -3,23 +3,21 @@ package typings.reactMovable
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Canceled extends StObject {
     
-    def canceled(position: Double): String = js.native
+    def canceled(position: Double): String
     
-    def dropped(from: Double, to: Double): String = js.native
+    def dropped(from: Double, to: Double): String
     
-    def item(position: Double): String = js.native
+    def item(position: Double): String
     
-    def lifted(position: Double): String = js.native
+    def lifted(position: Double): String
     
-    def moved(position: Double, up: Boolean): String = js.native
+    def moved(position: Double, up: Boolean): String
   }
   object Canceled {
     
@@ -55,32 +53,31 @@ object anon {
     }
   }
   
-  @js.native
   trait InitialX extends StObject {
     
-    var initialX: Double = js.native
+    var initialX: Double
     
-    var initialY: Double = js.native
+    var initialY: Double
     
-    var itemDragged: Double = js.native
+    var itemDragged: Double
     
-    var itemDraggedOutOfBounds: Double = js.native
+    var itemDraggedOutOfBounds: Double
     
-    var liveText: String = js.native
+    var liveText: String
     
-    var scrollWindow: Boolean = js.native
+    var scrollWindow: Boolean
     
-    var scrollingSpeed: Double = js.native
+    var scrollingSpeed: Double
     
-    var selectedItem: Double = js.native
+    var selectedItem: Double
     
-    var targetHeight: Double = js.native
+    var targetHeight: Double
     
-    var targetWidth: Double = js.native
+    var targetWidth: Double
     
-    var targetX: Double = js.native
+    var targetX: Double
     
-    var targetY: Double = js.native
+    var targetY: Double
   }
   object InitialX {
     
@@ -144,15 +141,14 @@ object anon {
     }
   }
   
-  @js.native
   trait Ref extends StObject {
     
-    var ref: RefObject[_] = js.native
+    var ref: RefObject[js.Any]
   }
   object Ref {
     
     @scala.inline
-    def apply(ref: RefObject[_]): Ref = {
+    def apply(ref: RefObject[js.Any]): Ref = {
       val __obj = js.Dynamic.literal(ref = ref.asInstanceOf[js.Any])
       __obj.asInstanceOf[Ref]
     }
@@ -161,14 +157,13 @@ object anon {
     implicit class RefMutableBuilder[Self <: Ref] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setRef(value: RefObject[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: RefObject[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait ScrollingSpeed extends StObject {
     
-    var scrollingSpeed: Double = js.native
+    var scrollingSpeed: Double
   }
   object ScrollingSpeed {
     

@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The device resources for the user.
   */
-@js.native
 trait SchemaDevicesListResponse extends StObject {
   
   /**
     * A managed device.
     */
-  var device: js.UndefOr[js.Array[SchemaDevice]] = js.native
+  var device: js.UndefOr[js.Array[SchemaDevice]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#devicesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaDevicesListResponse {
   

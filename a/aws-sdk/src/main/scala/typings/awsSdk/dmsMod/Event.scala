@@ -2,36 +2,34 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
   /**
     * The date of the event.
     */
-  var Date: js.UndefOr[TStamp] = js.native
+  var Date: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The event categories available for the specified source type.
     */
-  var EventCategories: js.UndefOr[EventCategoriesList] = js.native
+  var EventCategories: js.UndefOr[EventCategoriesList] = js.undefined
   
   /**
     * The event message.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
   
   /**
     *  The identifier of an event source.
     */
-  var SourceIdentifier: js.UndefOr[String] = js.native
+  var SourceIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | endpoint | replication-task
     */
-  var SourceType: js.UndefOr[typings.awsSdk.dmsMod.SourceType] = js.native
+  var SourceType: js.UndefOr[typings.awsSdk.dmsMod.SourceType] = js.undefined
 }
 object Event {
   

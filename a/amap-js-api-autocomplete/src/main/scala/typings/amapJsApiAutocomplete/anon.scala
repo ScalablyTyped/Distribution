@@ -2,15 +2,13 @@ package typings.amapJsApiAutocomplete
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Info extends StObject {
     
-    var info: String = js.native
+    var info: String
   }
   object Info {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Tip extends StObject {
     
-    var tip: typings.amapJsApiAutocomplete.AMap.Autocomplete.Tip = js.native
+    var tip: typings.amapJsApiAutocomplete.AMap.Autocomplete.Tip
   }
   object Tip {
     

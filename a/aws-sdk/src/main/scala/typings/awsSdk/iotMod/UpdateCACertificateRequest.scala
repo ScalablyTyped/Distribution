@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCACertificateRequest extends StObject {
   
   /**
     * The CA certificate identifier.
     */
-  var certificateId: CertificateId = js.native
+  var certificateId: CertificateId
   
   /**
     * The new value for the auto registration status. Valid values are: "ENABLE" or "DISABLE".
     */
-  var newAutoRegistrationStatus: js.UndefOr[AutoRegistrationStatus] = js.native
+  var newAutoRegistrationStatus: js.UndefOr[AutoRegistrationStatus] = js.undefined
   
   /**
     * The updated status of the CA certificate.  Note: The status value REGISTER_INACTIVE is deprecated and should not be used.
     */
-  var newStatus: js.UndefOr[CACertificateStatus] = js.native
+  var newStatus: js.UndefOr[CACertificateStatus] = js.undefined
   
   /**
     * Information about the registration configuration.
     */
-  var registrationConfig: js.UndefOr[RegistrationConfig] = js.native
+  var registrationConfig: js.UndefOr[RegistrationConfig] = js.undefined
   
   /**
     * If true, removes auto registration.
     */
-  var removeAutoRegistration: js.UndefOr[RemoveAutoRegistration] = js.native
+  var removeAutoRegistration: js.UndefOr[RemoveAutoRegistration] = js.undefined
 }
 object UpdateCACertificateRequest {
   

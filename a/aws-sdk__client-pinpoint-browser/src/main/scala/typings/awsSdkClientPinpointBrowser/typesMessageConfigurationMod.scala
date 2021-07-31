@@ -8,48 +8,46 @@ import typings.awsSdkClientPinpointBrowser.typesMessageMod.Message
 import typings.awsSdkClientPinpointBrowser.typesMessageMod.UnmarshalledMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMessageConfigurationMod {
   
-  @js.native
   trait MessageConfiguration extends StObject {
     
     /**
       * The message that the campaign delivers to ADM channels. Overrides the default message.
       */
-    var ADMMessage: js.UndefOr[Message] = js.native
+    var ADMMessage: js.UndefOr[Message] = js.undefined
     
     /**
       * The message that the campaign delivers to APNS channels. Overrides the default message.
       */
-    var APNSMessage: js.UndefOr[Message] = js.native
+    var APNSMessage: js.UndefOr[Message] = js.undefined
     
     /**
       * The message that the campaign delivers to Baidu channels. Overrides the default message.
       */
-    var BaiduMessage: js.UndefOr[Message] = js.native
+    var BaiduMessage: js.UndefOr[Message] = js.undefined
     
     /**
       * The default message for all channels.
       */
-    var DefaultMessage: js.UndefOr[Message] = js.native
+    var DefaultMessage: js.UndefOr[Message] = js.undefined
     
     /**
       * The email message configuration.
       */
-    var EmailMessage: js.UndefOr[CampaignEmailMessage] = js.native
+    var EmailMessage: js.UndefOr[CampaignEmailMessage] = js.undefined
     
     /**
       * The message that the campaign delivers to GCM channels. Overrides the default message.
       */
-    var GCMMessage: js.UndefOr[Message] = js.native
+    var GCMMessage: js.UndefOr[Message] = js.undefined
     
     /**
       * The SMS message configuration.
       */
-    var SMSMessage: js.UndefOr[CampaignSmsMessage] = js.native
+    var SMSMessage: js.UndefOr[CampaignSmsMessage] = js.undefined
   }
   object MessageConfiguration {
     
@@ -106,50 +104,51 @@ object typesMessageConfigurationMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledMessageConfiguration extends MessageConfiguration {
+  trait UnmarshalledMessageConfiguration
+    extends StObject
+       with MessageConfiguration {
     
     /**
       * The message that the campaign delivers to ADM channels. Overrides the default message.
       */
     @JSName("ADMMessage")
-    var ADMMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.native
+    var ADMMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.undefined
     
     /**
       * The message that the campaign delivers to APNS channels. Overrides the default message.
       */
     @JSName("APNSMessage")
-    var APNSMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.native
+    var APNSMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.undefined
     
     /**
       * The message that the campaign delivers to Baidu channels. Overrides the default message.
       */
     @JSName("BaiduMessage")
-    var BaiduMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.native
+    var BaiduMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.undefined
     
     /**
       * The default message for all channels.
       */
     @JSName("DefaultMessage")
-    var DefaultMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.native
+    var DefaultMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.undefined
     
     /**
       * The email message configuration.
       */
     @JSName("EmailMessage")
-    var EmailMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledCampaignEmailMessage] = js.native
+    var EmailMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledCampaignEmailMessage] = js.undefined
     
     /**
       * The message that the campaign delivers to GCM channels. Overrides the default message.
       */
     @JSName("GCMMessage")
-    var GCMMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.native
+    var GCMMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledMessage] = js.undefined
     
     /**
       * The SMS message configuration.
       */
     @JSName("SMSMessage")
-    var SMSMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledCampaignSmsMessage] = js.native
+    var SMSMessage_UnmarshalledMessageConfiguration: js.UndefOr[UnmarshalledCampaignSmsMessage] = js.undefined
   }
   object UnmarshalledMessageConfiguration {
     

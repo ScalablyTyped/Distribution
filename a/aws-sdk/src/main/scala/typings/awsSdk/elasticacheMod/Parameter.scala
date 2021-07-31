@@ -2,56 +2,54 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /**
     * The valid range of values for the parameter.
     */
-  var AllowedValues: js.UndefOr[String] = js.native
+  var AllowedValues: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether a change to the parameter is applied immediately or requires a reboot for the change to be applied. You can force a reboot or wait until the next maintenance window's reboot. For more information, see Rebooting a Cluster.
     */
-  var ChangeType: js.UndefOr[typings.awsSdk.elasticacheMod.ChangeType] = js.native
+  var ChangeType: js.UndefOr[typings.awsSdk.elasticacheMod.ChangeType] = js.undefined
   
   /**
     * The valid data type for the parameter.
     */
-  var DataType: js.UndefOr[String] = js.native
+  var DataType: js.UndefOr[String] = js.undefined
   
   /**
     * A description of the parameter.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether (true) or not (false) the parameter can be modified. Some parameters have security or operational implications that prevent them from being changed.
     */
-  var IsModifiable: js.UndefOr[Boolean] = js.native
+  var IsModifiable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The earliest cache engine version to which the parameter can apply.
     */
-  var MinimumEngineVersion: js.UndefOr[String] = js.native
+  var MinimumEngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the parameter.
     */
-  var ParameterName: js.UndefOr[String] = js.native
+  var ParameterName: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the parameter.
     */
-  var ParameterValue: js.UndefOr[String] = js.native
+  var ParameterValue: js.UndefOr[String] = js.undefined
   
   /**
     * The source of the parameter.
     */
-  var Source: js.UndefOr[String] = js.native
+  var Source: js.UndefOr[String] = js.undefined
 }
 object Parameter {
   

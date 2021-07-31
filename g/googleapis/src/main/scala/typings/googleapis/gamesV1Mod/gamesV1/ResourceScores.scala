@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/games/v1", "games_v1.Resource$Scores")
@@ -40,7 +39,7 @@ class ResourceScores protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaPlayerLeaderboardScoreListResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaPlayerLeaderboardScoreListResponse]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerLeaderboardScoreListResponse] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayerLeaderboardScoreListResponse] = js.native
   def get(params: ParamsResourceScoresGet): GaxiosPromise[SchemaPlayerLeaderboardScoreListResponse] = js.native
   def get(
     params: ParamsResourceScoresGet,
@@ -77,7 +76,7 @@ class ResourceScores protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def list(callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardScores] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def list(params: ParamsResourceScoresList): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def list(params: ParamsResourceScoresList, callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
   def list(
@@ -114,7 +113,7 @@ class ResourceScores protected () extends StObject {
     */
   def listWindow(): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def listWindow(callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
-  def listWindow(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLeaderboardScores] = js.native
+  def listWindow(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def listWindow(params: ParamsResourceScoresListwindow): GaxiosPromise[SchemaLeaderboardScores] = js.native
   def listWindow(params: ParamsResourceScoresListwindow, callback: BodyResponseCallback[SchemaLeaderboardScores]): Unit = js.native
   def listWindow(
@@ -146,7 +145,7 @@ class ResourceScores protected () extends StObject {
     */
   def submit(): GaxiosPromise[SchemaPlayerScoreResponse] = js.native
   def submit(callback: BodyResponseCallback[SchemaPlayerScoreResponse]): Unit = js.native
-  def submit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerScoreResponse] = js.native
+  def submit(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayerScoreResponse] = js.native
   def submit(params: ParamsResourceScoresSubmit): GaxiosPromise[SchemaPlayerScoreResponse] = js.native
   def submit(params: ParamsResourceScoresSubmit, callback: BodyResponseCallback[SchemaPlayerScoreResponse]): Unit = js.native
   def submit(
@@ -176,7 +175,7 @@ class ResourceScores protected () extends StObject {
     */
   def submitMultiple(): GaxiosPromise[SchemaPlayerScoreListResponse] = js.native
   def submitMultiple(callback: BodyResponseCallback[SchemaPlayerScoreListResponse]): Unit = js.native
-  def submitMultiple(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerScoreListResponse] = js.native
+  def submitMultiple(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayerScoreListResponse] = js.native
   def submitMultiple(params: ParamsResourceScoresSubmitmultiple): GaxiosPromise[SchemaPlayerScoreListResponse] = js.native
   def submitMultiple(
     params: ParamsResourceScoresSubmitmultiple,

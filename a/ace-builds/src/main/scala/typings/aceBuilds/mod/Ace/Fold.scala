@@ -2,29 +2,27 @@ package typings.aceBuilds.mod.Ace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fold extends StObject {
   
-  def addSubFold(fold: Fold): Fold = js.native
+  def addSubFold(fold: Fold): Fold
   
-  var end: Point = js.native
+  var end: Point
   
-  var foldLine: js.UndefOr[FoldLine] = js.native
+  var foldLine: js.UndefOr[FoldLine] = js.undefined
   
-  var range: Range = js.native
+  var range: Range
   
-  def restoreRange(range: Range): Unit = js.native
+  def restoreRange(range: Range): Unit
   
-  var sameRow: Boolean = js.native
+  var sameRow: Boolean
   
-  def setFoldLine(foldLine: FoldLine): Unit = js.native
+  def setFoldLine(foldLine: FoldLine): Unit
   
-  var start: Point = js.native
+  var start: Point
   
-  var subFolds: js.Array[Fold] = js.native
+  var subFolds: js.Array[Fold]
 }
 object Fold {
   

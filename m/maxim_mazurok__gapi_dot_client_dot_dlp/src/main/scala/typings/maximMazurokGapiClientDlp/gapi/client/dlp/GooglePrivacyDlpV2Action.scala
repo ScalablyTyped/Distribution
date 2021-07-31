@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2Action extends StObject {
   
   /** Enable email notification for project owners and editors on job's completion/failure. */
-  var jobNotificationEmails: js.UndefOr[js.Any] = js.native
+  var jobNotificationEmails: js.UndefOr[js.Any] = js.undefined
   
   /** Publish a notification to a pubsub topic. */
-  var pubSub: js.UndefOr[GooglePrivacyDlpV2PublishToPubSub] = js.native
+  var pubSub: js.UndefOr[GooglePrivacyDlpV2PublishToPubSub] = js.undefined
   
   /** Publish findings to Cloud Datahub. */
-  var publishFindingsToCloudDataCatalog: js.UndefOr[js.Any] = js.native
+  var publishFindingsToCloudDataCatalog: js.UndefOr[js.Any] = js.undefined
   
   /** Publish summary to Cloud Security Command Center (Alpha). */
-  var publishSummaryToCscc: js.UndefOr[js.Any] = js.native
+  var publishSummaryToCscc: js.UndefOr[js.Any] = js.undefined
   
   /** Enable Stackdriver metric dlp.googleapis.com/finding_count. */
-  var publishToStackdriver: js.UndefOr[js.Any] = js.native
+  var publishToStackdriver: js.UndefOr[js.Any] = js.undefined
   
   /** Save resulting findings in a provided location. */
-  var saveFindings: js.UndefOr[GooglePrivacyDlpV2SaveFindings] = js.native
+  var saveFindings: js.UndefOr[GooglePrivacyDlpV2SaveFindings] = js.undefined
 }
 object GooglePrivacyDlpV2Action {
   

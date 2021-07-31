@@ -11,8 +11,8 @@ abstract base class for crypto-streams
 | Full name          | cipher-base |
 | Keywords           | cipher, stream |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 404170942 |
+| # dependents       | 65 |
+| # downloads        | 493646435 |
 | # stars            | 0 |
 
 ## Links

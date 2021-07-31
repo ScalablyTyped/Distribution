@@ -2,36 +2,34 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExclusionPreview extends StObject {
   
   /**
     * The system-defined attributes for the exclusion preview.
     */
-  var attributes: js.UndefOr[AttributeList] = js.native
+  var attributes: js.UndefOr[AttributeList] = js.undefined
   
   /**
     * The description of the exclusion preview.
     */
-  var description: Text = js.native
+  var description: Text
   
   /**
     * The recommendation for the exclusion preview.
     */
-  var recommendation: Text = js.native
+  var recommendation: Text
   
   /**
     * The AWS resources for which the exclusion preview pertains.
     */
-  var scopes: ScopeList = js.native
+  var scopes: ScopeList
   
   /**
     * The name of the exclusion preview.
     */
-  var title: Text = js.native
+  var title: Text
 }
 object ExclusionPreview {
   

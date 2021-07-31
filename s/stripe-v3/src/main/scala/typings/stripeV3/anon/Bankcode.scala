@@ -2,27 +2,25 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bankcode extends StObject {
   
-  var bank_code: String | Null = js.native
+  var bank_code: String | Null
   
-  var country: String | Null = js.native
+  var country: String | Null
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var last4: String = js.native
+  var last4: String
   
-  var mandate_reference: String = js.native
+  var mandate_reference: String
 }
 object Bankcode {
   
   @scala.inline
   def apply(fingerprint: String, last4: String, mandate_reference: String): Bankcode = {
-    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], mandate_reference = mandate_reference.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(fingerprint = fingerprint.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], mandate_reference = mandate_reference.asInstanceOf[js.Any], bank_code = null, country = null)
     __obj.asInstanceOf[Bankcode]
   }
   

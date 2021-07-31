@@ -4,27 +4,28 @@ import typings.algoliaCacheCommon.mod.Cache
 import typings.std.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@algolia/cache-browser-local-storage", "createBrowserLocalStorageCache")
+  @JSImport("@algolia/cache-browser-local-storage", JSImport.Namespace)
   @js.native
-  def createBrowserLocalStorageCache(options: BrowserLocalStorageOptions): Cache = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def createBrowserLocalStorageCache(options: BrowserLocalStorageOptions): Cache = ^.asInstanceOf[js.Dynamic].applyDynamic("createBrowserLocalStorageCache")(options.asInstanceOf[js.Any]).asInstanceOf[Cache]
+  
   trait BrowserLocalStorageOptions extends StObject {
     
     /**
       * The cache key.
       */
-    val key: String = js.native
+    val key: String
     
     /**
       * The native local storage implementation.
       */
-    val localStorage: js.UndefOr[Storage] = js.native
+    val localStorage: js.UndefOr[Storage] = js.undefined
   }
   object BrowserLocalStorageOptions {
     

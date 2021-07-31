@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressBlockEditor.blockVerticalAlignmentToolbarMod.BlockVerticalAlignmentToolbar.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockVerticalAlignmentToolbarMod {
@@ -24,14 +23,13 @@ object blockVerticalAlignmentToolbarMod {
   
   object BlockVerticalAlignmentToolbar {
     
-    @js.native
     trait Props extends StObject {
       
-      var children: js.UndefOr[scala.Nothing] = js.native
+      var children: js.UndefOr[scala.Nothing] = js.undefined
       
-      def onChange(newValue: Value): Unit = js.native
+      def onChange(newValue: Value): Unit
       
-      var value: Value = js.native
+      var value: Value
     }
     object Props {
       
@@ -59,7 +57,7 @@ object blockVerticalAlignmentToolbarMod {
       - typings.wordpressBlockEditor.wordpressBlockEditorStrings.bottom
       - typings.wordpressBlockEditor.wordpressBlockEditorStrings.center
       - typings.wordpressBlockEditor.wordpressBlockEditorStrings.top
-      - js.UndefOr[scala.Nothing]
+      - scala.Unit
     */
     type Value = js.UndefOr[_Value]
     

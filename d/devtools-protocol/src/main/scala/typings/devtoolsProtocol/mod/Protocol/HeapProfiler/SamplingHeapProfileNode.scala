@@ -4,31 +4,29 @@ import typings.devtoolsProtocol.mod.Protocol.Runtime.CallFrame
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SamplingHeapProfileNode extends StObject {
   
   /**
     * Function location.
     */
-  var callFrame: CallFrame = js.native
+  var callFrame: CallFrame
   
   /**
     * Child nodes.
     */
-  var children: js.Array[SamplingHeapProfileNode] = js.native
+  var children: js.Array[SamplingHeapProfileNode]
   
   /**
     * Node id. Ids are unique across all profiles collected between startSampling and stopSampling.
     */
-  var id: integer = js.native
+  var id: integer
   
   /**
     * Allocations size in bytes for the node excluding children.
     */
-  var selfSize: Double = js.native
+  var selfSize: Double
 }
 object SamplingHeapProfileNode {
   

@@ -2,29 +2,27 @@ package typings.openfin.mod.fin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenFinDesktop extends StObject {
   
-  var Application: OpenFinApplicationStatic = js.native
+  var Application: OpenFinApplicationStatic
   
-  var ExternalApplication: OpenFinExternalApplicationStatic = js.native
+  var ExternalApplication: OpenFinExternalApplicationStatic
   
-  var Frame: OpenFinFrameStatic = js.native
+  var Frame: OpenFinFrameStatic
   
-  var GlobalHotkey: OpenFinGlobalHotkey = js.native
+  var GlobalHotkey: OpenFinGlobalHotkey
   
-  var InterApplicationBus: OpenFinInterApplicationBus = js.native
+  var InterApplicationBus: OpenFinInterApplicationBus
   
-  var Notification: OpenFinNotificationStatic = js.native
+  var Notification: OpenFinNotificationStatic
   
-  var System: OpenFinSystem = js.native
+  var System: OpenFinSystem
   
-  var Window: OpenFinWindowStatic = js.native
+  var Window: OpenFinWindowStatic
   
-  def main(f: js.Function0[_]): Unit = js.native
+  def main(f: js.Function0[js.Any]): Unit
 }
 object OpenFinDesktop {
   
@@ -38,7 +36,7 @@ object OpenFinDesktop {
     Notification: OpenFinNotificationStatic,
     System: OpenFinSystem,
     Window: OpenFinWindowStatic,
-    main: js.Function0[_] => Unit
+    main: js.Function0[js.Any] => Unit
   ): OpenFinDesktop = {
     val __obj = js.Dynamic.literal(Application = Application.asInstanceOf[js.Any], ExternalApplication = ExternalApplication.asInstanceOf[js.Any], Frame = Frame.asInstanceOf[js.Any], GlobalHotkey = GlobalHotkey.asInstanceOf[js.Any], InterApplicationBus = InterApplicationBus.asInstanceOf[js.Any], Notification = Notification.asInstanceOf[js.Any], System = System.asInstanceOf[js.Any], Window = Window.asInstanceOf[js.Any], main = js.Any.fromFunction1(main))
     __obj.asInstanceOf[OpenFinDesktop]
@@ -63,7 +61,7 @@ object OpenFinDesktop {
     def setInterApplicationBus(value: OpenFinInterApplicationBus): Self = StObject.set(x, "InterApplicationBus", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMain(value: js.Function0[_] => Unit): Self = StObject.set(x, "main", js.Any.fromFunction1(value))
+    def setMain(value: js.Function0[js.Any] => Unit): Self = StObject.set(x, "main", js.Any.fromFunction1(value))
     
     @scala.inline
     def setNotification(value: OpenFinNotificationStatic): Self = StObject.set(x, "Notification", value.asInstanceOf[js.Any])

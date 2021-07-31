@@ -2,21 +2,19 @@ package typings.googleCloudTasks.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetryConfig extends StObject {
   
-  var maxAttempts: Double = js.native
+  var maxAttempts: Double
   
-  var maxBackoff: String = js.native
+  var maxBackoff: String
   
-  var maxDoublings: Double = js.native
+  var maxDoublings: Double
   
-  var maxRetryDuration: String = js.native
+  var maxRetryDuration: String
   
-  var minBackoff: String = js.native
+  var minBackoff: String
 }
 object RetryConfig {
   

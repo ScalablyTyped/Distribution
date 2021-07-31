@@ -2,7 +2,6 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -36,7 +35,7 @@ trait RoomVisual extends StObject {
     * Returns a compact representation of all visuals added in the room in the current tick.
     * @returns A string with visuals data. There's not much you can do with the string besides store them for later.
     */
-  def export(): String = js.native
+  def `export`(): String = js.native
   
   /**
     * Get the stored size of all visuals added in the room in the current tick.

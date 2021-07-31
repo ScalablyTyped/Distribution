@@ -2,18 +2,16 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined gitlab.gitlab/dist/types/core/infrastructure.Sudo & {  keepN :string,   olderThan :string} */
-@js.native
 trait SudokeepNstringolderThans extends StObject {
   
-  var keepN: String = js.native
+  var keepN: String
   
-  var olderThan: String = js.native
+  var olderThan: String
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
 }
 object SudokeepNstringolderThans {
   

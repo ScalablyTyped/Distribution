@@ -2,21 +2,19 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingMetrics extends StObject {
   
   /**
     * The area under the curve. This summarizes true positive rate (TPR) and false positive rate (FPR) across all possible model score thresholds. A model with no predictive power has an AUC of 0.5, whereas a perfect model has a score of 1.0.
     */
-  var auc: js.UndefOr[float] = js.native
+  var auc: js.UndefOr[float] = js.undefined
   
   /**
     * The data points details.
     */
-  var metricDataPoints: js.UndefOr[metricDataPointsList] = js.native
+  var metricDataPoints: js.UndefOr[metricDataPointsList] = js.undefined
 }
 object TrainingMetrics {
   

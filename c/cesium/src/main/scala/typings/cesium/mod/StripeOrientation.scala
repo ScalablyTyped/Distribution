@@ -2,7 +2,6 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait StripeOrientation extends StObject
 object StripeOrientation extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[StripeOrientation with Double] = js.native
+  def apply(value: Double): js.UndefOr[StripeOrientation & Double] = js.native
   
   @js.native
-  sealed trait HORIZONTAL extends StripeOrientation
-  /* 0 */ val HORIZONTAL: typings.cesium.mod.StripeOrientation.HORIZONTAL with Double = js.native
+  sealed trait HORIZONTAL
+    extends StObject
+       with StripeOrientation
+  /* 0 */ val HORIZONTAL: typings.cesium.mod.StripeOrientation.HORIZONTAL & Double = js.native
   
   @js.native
-  sealed trait VERTICAL extends StripeOrientation
-  /* 1 */ val VERTICAL: typings.cesium.mod.StripeOrientation.VERTICAL with Double = js.native
+  sealed trait VERTICAL
+    extends StObject
+       with StripeOrientation
+  /* 1 */ val VERTICAL: typings.cesium.mod.StripeOrientation.VERTICAL & Double = js.native
 }

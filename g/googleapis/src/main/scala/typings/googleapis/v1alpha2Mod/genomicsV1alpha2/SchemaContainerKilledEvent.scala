@@ -2,7 +2,6 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Currently, this only occurs when the container outlives the timeout
   * specified by the user.
   */
-@js.native
 trait SchemaContainerKilledEvent extends StObject {
   
   /**
     * The numeric ID of the action that started the container.
     */
-  var actionId: js.UndefOr[Double] = js.native
+  var actionId: js.UndefOr[Double] = js.undefined
 }
 object SchemaContainerKilledEvent {
   

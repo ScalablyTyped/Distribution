@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,12 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XBreakIterator
   * @see XTextConversion
   */
-@js.native
 trait Boundary extends StObject {
   
-  var endPos: Double = js.native
+  var endPos: Double
   
-  var startPos: Double = js.native
+  var startPos: Double
 }
 object Boundary {
   

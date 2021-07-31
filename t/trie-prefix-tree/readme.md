@@ -12,7 +12,7 @@ Create and modify trie prefix structures, extract word lists including anagrams 
 | Keywords           | javascript, trie, words |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 51640 |
+| # downloads        | 75266 |
 | # stars            | 1 |
 
 ## Links

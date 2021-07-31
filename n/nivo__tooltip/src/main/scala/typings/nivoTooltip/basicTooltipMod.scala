@@ -6,7 +6,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object basicTooltipMod {
@@ -15,25 +14,24 @@ object basicTooltipMod {
   @js.native
   val BasicTooltip: NamedExoticComponent[BasicTooltipProps] = js.native
   
-  @js.native
   trait BasicTooltipProps extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var enableChip: js.UndefOr[Boolean] = js.native
+    var enableChip: js.UndefOr[Boolean] = js.undefined
     
     var format: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DataFormatter */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var id: ReactNode = js.native
+    var id: ReactNode
     
     /**
       * @deprecated This should be replaced by custom tooltip components.
       */
-    var renderContent: js.UndefOr[js.Function0[Element]] = js.native
+    var renderContent: js.UndefOr[js.Function0[Element]] = js.undefined
     
-    var value: js.UndefOr[Double | String | Date] = js.native
+    var value: js.UndefOr[Double | String | Date] = js.undefined
   }
   object BasicTooltipProps {
     

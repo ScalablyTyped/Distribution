@@ -3,21 +3,19 @@ package typings.fabric.anon
 import typings.fabric.fabricImplMod.Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Corner extends StObject {
   
-  var corner: String = js.native
+  var corner: String
   
-  var originX: String = js.native
+  var originX: String
   
-  var originY: String = js.native
+  var originY: String
   
-  var original: Object = js.native
+  var original: Object
   
-  var width: Double = js.native
+  var width: Double
 }
 object Corner {
   

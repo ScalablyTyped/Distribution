@@ -4,33 +4,31 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codepipeline {
   
-  @js.native
   trait PipelineArtifactStore extends StObject {
     
     /**
       * The encryption key block AWS CodePipeline uses to encrypt the data in the artifact store, such as an AWS Key Management Service (AWS KMS) key. If you don't specify a key, AWS CodePipeline uses the default key for Amazon Simple Storage Service (Amazon S3). An `encryptionKey` block is documented below.
       */
-    var encryptionKey: js.UndefOr[Input[PipelineArtifactStoreEncryptionKey]] = js.native
+    var encryptionKey: js.UndefOr[Input[PipelineArtifactStoreEncryptionKey]] = js.undefined
     
     /**
       * The location where AWS CodePipeline stores artifacts for a pipeline; currently only `S3` is supported.
       */
-    var location: Input[String] = js.native
+    var location: Input[String]
     
     /**
       * The region where the artifact store is located. Required for a cross-region CodePipeline, do not provide for a single-region CodePipeline.
       */
-    var region: js.UndefOr[Input[String]] = js.native
+    var region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the artifact store, such as Amazon S3
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
   }
   object PipelineArtifactStore {
     
@@ -64,18 +62,17 @@ object codepipeline {
     }
   }
   
-  @js.native
   trait PipelineArtifactStoreEncryptionKey extends StObject {
     
     /**
       * The KMS key ARN or ID
       */
-    var id: Input[String] = js.native
+    var id: Input[String]
     
     /**
       * The type of key; currently only `KMS` is supported
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
   }
   object PipelineArtifactStoreEncryptionKey {
     
@@ -97,18 +94,17 @@ object codepipeline {
     }
   }
   
-  @js.native
   trait PipelineStage extends StObject {
     
     /**
       * The action(s) to include in the stage. Defined as an `action` block below
       */
-    var actions: Input[js.Array[Input[PipelineStageAction]]] = js.native
+    var actions: Input[js.Array[Input[PipelineStageAction]]]
     
     /**
       * The name of the stage.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
   }
   object PipelineStage {
     
@@ -132,68 +128,67 @@ object codepipeline {
     }
   }
   
-  @js.native
   trait PipelineStageAction extends StObject {
     
     /**
       * A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Possible values are `Approval`, `Build`, `Deploy`, `Invoke`, `Source` and `Test`.
       */
-    var category: Input[String] = js.native
+    var category: Input[String]
     
     /**
       * A map of the action declaration's configuration. Configurations options for action types and providers can be found in the [Pipeline Structure Reference](http://docs.aws.amazon.com/codepipeline/latest/userguide/reference-pipeline-structure.html#action-requirements) and [Action Structure Reference](https://docs.aws.amazon.com/codepipeline/latest/userguide/action-reference.html) documentation.
       */
-    var configuration: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    var configuration: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * A list of artifact names to be worked on.
       */
-    var inputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var inputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The action declaration's name.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * The namespace all output variables will be accessed from.
       */
-    var namespace: js.UndefOr[Input[String]] = js.native
+    var namespace: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A list of artifact names to output. Output artifact names must be unique within a pipeline.
       */
-    var outputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    var outputArtifacts: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The creator of the action being called. Possible values are `AWS`, `Custom` and `ThirdParty`.
       */
-    var owner: Input[String] = js.native
+    var owner: Input[String]
     
     /**
       * The provider of the service being called by the action. Valid providers are determined by the action category. For example, an action in the Deploy category type might have a provider of AWS CodeDeploy, which would be specified as CodeDeploy.
       */
-    var provider: Input[String] = js.native
+    var provider: Input[String]
     
     /**
       * The region in which to run the action.
       */
-    var region: js.UndefOr[Input[String]] = js.native
+    var region: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the IAM service role that will perform the declared action. This is assumed through the roleArn for the pipeline.
       */
-    var roleArn: js.UndefOr[Input[String]] = js.native
+    var roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The order in which actions are run.
       */
-    var runOrder: js.UndefOr[Input[Double]] = js.native
+    var runOrder: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A string that identifies the action type.
       */
-    var version: Input[String] = js.native
+    var version: Input[String]
   }
   object PipelineStageAction {
     
@@ -277,18 +272,17 @@ object codepipeline {
     }
   }
   
-  @js.native
   trait WebhookAuthenticationConfiguration extends StObject {
     
     /**
       * A valid CIDR block for `IP` filtering. Required for `IP`.
       */
-    var allowedIpRange: js.UndefOr[Input[String]] = js.native
+    var allowedIpRange: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The shared secret for the GitHub repository webhook. Set this as `secret` in your `githubRepositoryWebhook`'s `configuration` block. Required for `GITHUB_HMAC`.
       */
-    var secretToken: js.UndefOr[Input[String]] = js.native
+    var secretToken: js.UndefOr[Input[String]] = js.undefined
   }
   object WebhookAuthenticationConfiguration {
     
@@ -315,18 +309,17 @@ object codepipeline {
     }
   }
   
-  @js.native
   trait WebhookFilter extends StObject {
     
     /**
       * The [JSON path](https://github.com/json-path/JsonPath) to filter on.
       */
-    var jsonPath: Input[String] = js.native
+    var jsonPath: Input[String]
     
     /**
       * The value to match on (e.g. `refs/heads/{Branch}`). See [AWS docs](https://docs.aws.amazon.com/codepipeline/latest/APIReference/API_WebhookFilterRule.html) for details.
       */
-    var matchEquals: Input[String] = js.native
+    var matchEquals: Input[String]
   }
   object WebhookFilter {
     

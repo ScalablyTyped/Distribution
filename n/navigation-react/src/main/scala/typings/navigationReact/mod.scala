@@ -15,7 +15,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLAnchorElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -90,18 +89,19 @@ object mod {
     def this(props: RefreshLinkProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait FluentLinkProps extends LinkProps {
+  trait FluentLinkProps
+    extends StObject
+       with LinkProps {
     
     /**
       * The function that fluently navigates to a State
       */
-    def navigate(fluentNavigator: FluentNavigator): FluentNavigator = js.native
+    def navigate(fluentNavigator: FluentNavigator): FluentNavigator
     
     /**
       * Indicates whether to inherit the current context
       */
-    var withContext: js.UndefOr[Boolean] = js.native
+    var withContext: js.UndefOr[Boolean] = js.undefined
   }
   object FluentLinkProps {
     
@@ -125,22 +125,22 @@ object mod {
     }
   }
   
-  @js.native
   trait LinkProps
-    extends AnchorHTMLAttributes[HTMLAnchorElement]
-       with ClassAttributes[HTMLAnchorElement] {
+    extends StObject
+       with ClassAttributes[HTMLAnchorElement]
+       with AnchorHTMLAttributes[HTMLAnchorElement] {
     
     /**
       * Determines the effect on browser history
       */
-    var historyAction: js.UndefOr[add | replace | none] = js.native
+    var historyAction: js.UndefOr[add | replace | none] = js.undefined
     
     /**
       * Handles Link click events
       */
     var navigating: js.UndefOr[
         js.Function2[/* e */ MouseEvent[HTMLAnchorElement, NativeMouseEvent], /* link */ String, Boolean]
-      ] = js.native
+      ] = js.undefined
   }
   object LinkProps {
     
@@ -167,13 +167,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait NavigationBackLinkProps extends LinkProps {
+  trait NavigationBackLinkProps
+    extends StObject
+       with LinkProps {
     
     /**
       * Starting at 1, The number of Crumb steps to go back
       */
-    var distance: Double = js.native
+    var distance: Double
   }
   object NavigationBackLinkProps {
     
@@ -191,33 +192,32 @@ object mod {
     }
   }
   
-  @js.native
   trait NavigationEvent extends StObject {
     
     /**
       * The current asynchronous data
       */
-    var asyncData: js.Any = js.native
+    var asyncData: js.Any
     
     /**
       * The NavigationData for the current State
       */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /**
       * The last State displayed before the current State
       */
-    var oldState: State = js.native
+    var oldState: State
     
     /**
       * The current State
       */
-    var state: State = js.native
+    var state: State
     
     /**
       * State navigator for the current context
       */
-    var stateNavigator: typings.navigation.mod.StateNavigator = js.native
+    var stateNavigator: typings.navigation.mod.StateNavigator
   }
   object NavigationEvent {
     
@@ -253,13 +253,14 @@ object mod {
     }
   }
   
-  @js.native
-  trait NavigationLinkProps extends RefreshLinkProps {
+  trait NavigationLinkProps
+    extends StObject
+       with RefreshLinkProps {
     
     /**
       * The key of the State to navigate to
       */
-    var stateKey: String = js.native
+    var stateKey: String
   }
   object NavigationLinkProps {
     
@@ -277,38 +278,39 @@ object mod {
     }
   }
   
-  @js.native
-  trait RefreshLinkProps extends LinkProps {
+  trait RefreshLinkProps
+    extends StObject
+       with LinkProps {
     
     /**
       * The Css Class to display when the Link is active
       */
-    var activeCssClass: js.UndefOr[String] = js.native
+    var activeCssClass: js.UndefOr[String] = js.undefined
     
     /**
       * The style to display when the Link is active
       */
-    var activeStyle: js.UndefOr[js.Any] = js.native
+    var activeStyle: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The data to add from the current NavigationData
       */
-    var currentDataKeys: js.UndefOr[String | js.Array[String]] = js.native
+    var currentDataKeys: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Indicates whether the Link is disabled when active
       */
-    var disableActive: js.UndefOr[Boolean] = js.native
+    var disableActive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates whether to include all the current NavigationData
       */
-    var includeCurrentData: js.UndefOr[Boolean] = js.native
+    var includeCurrentData: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The NavigationData to pass
       */
-    var navigationData: js.UndefOr[js.Any] = js.native
+    var navigationData: js.UndefOr[js.Any] = js.undefined
   }
   object RefreshLinkProps {
     

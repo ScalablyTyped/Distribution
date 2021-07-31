@@ -11,8 +11,8 @@ Walk the primary nodes of an esprima parse tree - fast.
 | Full name          | esprima-walk |
 | Keywords           | esprima, parse, parser, source, code, ast, syntax, tree, walk, walker, traverse, fast, quick, quickly, performant, performance |
 | # releases         | 0 |
-| # dependents       | 40 |
-| # downloads        | 168130 |
+| # dependents       | 38 |
+| # downloads        | 172381 |
 | # stars            | 1 |
 
 ## Links

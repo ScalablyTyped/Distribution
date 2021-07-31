@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateTemplatePermissionsResponse extends StObject {
   
   /**
     * A list of resource permissions to be set on the template.
     */
-  var Permissions: js.UndefOr[ResourcePermissionList] = js.native
+  var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the template.
     */
-  var TemplateArn: js.UndefOr[Arn] = js.native
+  var TemplateArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ID for the template.
     */
-  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.native
+  var TemplateId: js.UndefOr[RestrictiveResourceId] = js.undefined
 }
 object UpdateTemplatePermissionsResponse {
   

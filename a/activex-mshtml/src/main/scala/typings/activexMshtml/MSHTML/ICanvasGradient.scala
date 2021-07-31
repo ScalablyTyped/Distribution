@@ -2,16 +2,14 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICanvasGradient extends StObject {
   
   @JSName("MSHTML.ICanvasGradient_typekey")
-  var MSHTMLDotICanvasGradient_typekey: ICanvasGradient = js.native
+  var MSHTMLDotICanvasGradient_typekey: ICanvasGradient
   
-  def addColorStop(offset: Double, color: String): Unit = js.native
+  def addColorStop(offset: Double, color: String): Unit
 }
 object ICanvasGradient {
   

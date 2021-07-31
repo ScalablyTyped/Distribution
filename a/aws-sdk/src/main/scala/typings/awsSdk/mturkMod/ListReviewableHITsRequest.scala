@@ -2,31 +2,29 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReviewableHITsRequest extends StObject {
   
   /**
     *  The ID of the HIT type of the HITs to consider for the query. If not specified, all HITs for the Reviewer are considered 
     */
-  var HITTypeId: js.UndefOr[EntityId] = js.native
+  var HITTypeId: js.UndefOr[EntityId] = js.undefined
   
   /**
     *  Limit the number of results returned. 
     */
-  var MaxResults: js.UndefOr[ResultSize] = js.native
+  var MaxResults: js.UndefOr[ResultSize] = js.undefined
   
   /**
     * Pagination Token
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  Can be either Reviewable or Reviewing. Reviewable is the default value. 
     */
-  var Status: js.UndefOr[ReviewableHITStatus] = js.native
+  var Status: js.UndefOr[ReviewableHITStatus] = js.undefined
 }
 object ListReviewableHITsRequest {
   

@@ -3,17 +3,17 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
 - typings.extjs.Ext.IClass because Already inherited
 - typings.extjs.Ext.IBase because Already inherited
-- typings.extjs.Ext.util.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultSortDirection, sortRoot, sorters, isSortable, generateComparator, getFirstSorter, initSortable, sort */ @js.native
-trait IMixedCollection extends IAbstractMixedCollection {
+- typings.extjs.Ext.util.ISortable because var conflicts: alias, alternateClassName, callOverridden, callParent, callSuper, config, extend, getInitialConfig, inheritableStatics, initConfig, mixins, requires, self, singleton, statics, uses. Inlined defaultSortDirection, sortRoot, sorters, isSortable, generateComparator, getFirstSorter, initSortable, sort */ trait IMixedCollection
+  extends StObject
+     with IAbstractMixedCollection {
   
   /** [Config Option] (String) */
-  var defaultSortDirection: js.UndefOr[String] = js.native
+  var defaultSortDirection: js.UndefOr[String] = js.undefined
   
   /** [Method] Calculates the insertion index of the new item based upon the comparison function passed or the current sort order
     * @param newItem Object The new object to find the insertion position of.
@@ -22,38 +22,38 @@ trait IMixedCollection extends IAbstractMixedCollection {
     */
   var findInsertionIndex: js.UndefOr[
     js.Function2[/* newItem */ js.UndefOr[js.Any], /* sorterFn */ js.UndefOr[js.Any], Double]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Returns a comparator function which compares two items and returns 1 0 or 1 depending on the currently defined set  */
-  var generateComparator: js.UndefOr[js.Function0[Unit]] = js.native
+  var generateComparator: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Gets the first sorter from the sorters collection excluding any groupers that may be in place
     * @returns Ext.util.Sorter The sorter, null if none exist
     */
-  var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.native
+  var getFirstSorter: js.UndefOr[js.Function0[ISorter]] = js.undefined
   
   /** [Method] Performs initialization of this mixin  */
-  var initSortable: js.UndefOr[js.Function0[Unit]] = js.native
+  var initSortable: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Property] (Boolean) */
-  var isSortable: js.UndefOr[Boolean] = js.native
+  var isSortable: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Reorders each of the items based on a mapping from old index to new index
     * @param mapping Object Mapping from old item index to new item index
     */
-  var reorder: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.native
+  var reorder: js.UndefOr[js.Function1[/* mapping */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sorts the data in the Store by one or more of its properties
     * @param sorters String/Ext.util.Sorter[] Either a string name of one of the fields in this Store's configured Model, or an array of sorter configurations.
     * @param direction String The overall direction to sort the data by.
     * @returns Ext.util.Sorter[]
     */
-  var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[String], Array]] = js.native
+  var sort: js.UndefOr[js.Function2[js.UndefOr[js.Any], js.UndefOr[String], Array]] = js.undefined
   
   /** [Method] Sorts the collection by a single sorter function
     * @param sorterFn Function The function to sort by
     */
-  var sortBy: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.native
+  var sortBy: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sorts this collection by keys
     * @param direction String 'ASC' or 'DESC'. Defaults to 'ASC'.
@@ -61,13 +61,13 @@ trait IMixedCollection extends IAbstractMixedCollection {
     */
   var sortByKey: js.UndefOr[
     js.Function2[/* direction */ js.UndefOr[String], /* fn */ js.UndefOr[js.Any], Unit]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var sortRoot: js.UndefOr[String] = js.native
+  var sortRoot: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (Ext.util.Sorter[]/Object[]) */
-  var sorters: js.UndefOr[js.Any] = js.native
+  var sorters: js.UndefOr[js.Any] = js.undefined
 }
 object IMixedCollection {
   

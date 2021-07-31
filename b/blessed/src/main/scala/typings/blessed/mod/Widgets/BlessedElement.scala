@@ -4,7 +4,6 @@ import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO: scrollable - Note: If the scrollable option is enabled, Element inherits all methods from ScrollableBox.

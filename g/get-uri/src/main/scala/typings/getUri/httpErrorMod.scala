@@ -3,24 +3,38 @@ package typings.getUri
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpErrorMod {
   
   @JSImport("get-uri/dist/http-error", JSImport.Default)
   @js.native
-  class default protected () extends HTTPError {
+  class default protected ()
+    extends StObject
+       with HTTPError {
     def this(statusCode: Double) = this()
     def this(statusCode: Double, message: String) = this()
-  }
-  
-  @js.native
-  trait HTTPError extends Error {
     
+    /* CompleteClass */
     var code: String = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /* CompleteClass */
     var statusCode: Double = js.native
+  }
+  
+  trait HTTPError
+    extends StObject
+       with Error {
+    
+    var code: String
+    
+    var statusCode: Double
   }
   object HTTPError {
     

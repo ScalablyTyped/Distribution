@@ -1,49 +1,37 @@
 package typings.envCi.mod
 
-import typings.envCi.envCiBooleans.`true`
 import typings.envCi.envCiStrings.Wercker
 import typings.envCi.envCiStrings.wercker_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WerckerEnv
-  extends KnownCiEnv
-     with CiEnvBase {
+  extends StObject
+     with CiEnvBase
+     with KnownCiEnv {
   
-  var branch: String = js.native
+  var branch: String
   
-  var build: String = js.native
+  var build: String
   
-  var buildUrl: String = js.native
+  var buildUrl: String
   
-  var commit: String = js.native
+  var commit: String
   
-  var name: Wercker = js.native
+  var name: Wercker
   
-  var root: String = js.native
+  var root: String
   
-  var service: wercker_ = js.native
+  var service: wercker_
   
-  var slug: String = js.native
+  var slug: String
 }
 object WerckerEnv {
   
   @scala.inline
-  def apply(
-    branch: String,
-    build: String,
-    buildUrl: String,
-    commit: String,
-    isCi: `true`,
-    name: Wercker,
-    root: String,
-    service: wercker_,
-    slug: String
-  ): WerckerEnv = {
-    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = isCi.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], root = root.asInstanceOf[js.Any], service = service.asInstanceOf[js.Any], slug = slug.asInstanceOf[js.Any])
+  def apply(branch: String, build: String, buildUrl: String, commit: String, root: String, slug: String): WerckerEnv = {
+    val __obj = js.Dynamic.literal(branch = branch.asInstanceOf[js.Any], build = build.asInstanceOf[js.Any], buildUrl = buildUrl.asInstanceOf[js.Any], commit = commit.asInstanceOf[js.Any], isCi = true, name = "Wercker", root = root.asInstanceOf[js.Any], service = "wercker", slug = slug.asInstanceOf[js.Any])
     __obj.asInstanceOf[WerckerEnv]
   }
   

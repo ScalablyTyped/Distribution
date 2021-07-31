@@ -2,28 +2,26 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerTimeout extends StObject {
   
-  var grpc: js.UndefOr[GrpcTimeout] = js.native
+  var grpc: js.UndefOr[GrpcTimeout] = js.undefined
   
   /**
     * An object that represents types of timeouts. 
     */
-  var http: js.UndefOr[HttpTimeout] = js.native
+  var http: js.UndefOr[HttpTimeout] = js.undefined
   
   /**
     * An object that represents types of timeouts. 
     */
-  var http2: js.UndefOr[HttpTimeout] = js.native
+  var http2: js.UndefOr[HttpTimeout] = js.undefined
   
   /**
     * An object that represents types of timeouts. 
     */
-  var tcp: js.UndefOr[TcpTimeout] = js.native
+  var tcp: js.UndefOr[TcpTimeout] = js.undefined
 }
 object ListenerTimeout {
   

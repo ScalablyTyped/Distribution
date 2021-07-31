@@ -3,7 +3,6 @@ package typings.qIo
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //TODO add support for q-io/http-apps
@@ -13,50 +12,49 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 //     for some ideas see https://typescript.codeplex.com/discussions/461587#post1105930
 object QioFS {
   
-  @js.native
   trait NodeStats extends StObject {
     
-    var atime: Date = js.native
+    var atime: Date
     
-    var blksize: Double = js.native
+    var blksize: Double
     
-    var blocks: Double = js.native
+    var blocks: Double
     
-    var ctime: Date = js.native
+    var ctime: Date
     
-    var dev: Double = js.native
+    var dev: Double
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var ino: Double = js.native
+    var ino: Double
     
-    def isBlockDevice(): Boolean = js.native
+    def isBlockDevice(): Boolean
     
-    def isCharacterDevice(): Boolean = js.native
+    def isCharacterDevice(): Boolean
     
-    def isDirectory(): Boolean = js.native
+    def isDirectory(): Boolean
     
-    def isFIFO(): Boolean = js.native
+    def isFIFO(): Boolean
     
-    def isFile(): Boolean = js.native
+    def isFile(): Boolean
     
-    def isSocket(): Boolean = js.native
+    def isSocket(): Boolean
     
-    def isSymbolicLink(): Boolean = js.native
+    def isSymbolicLink(): Boolean
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var mtime: Date = js.native
+    var mtime: Date
     
-    var nlink: Double = js.native
+    var nlink: Double
     
-    var node: NodeStats = js.native
+    var node: NodeStats
     
-    var rdev: Double = js.native
+    var rdev: Double
     
-    var size: Double = js.native
+    var size: Double
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object NodeStats {
     
@@ -160,12 +158,11 @@ object QioFS {
   //export function glob(pattern):Q.Promise<string[]>;
   //export function match(pattern, path:string):Q.Promise<string[]>;
   //TODO link this to node.js FS module (no lazy clones)
-  @js.native
   trait Stats extends StObject {
     
-    var node: NodeStats = js.native
+    var node: NodeStats
     
-    var size: Double = js.native
+    var size: Double
   }
   object Stats {
     

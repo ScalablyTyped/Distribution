@@ -7,43 +7,50 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-mongo-sanitize", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
     /* next */ NextFunction, 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
+  @scala.inline
+  def apply(options: MongoSanitizeOptions): js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
+    /* res */ Response_[js.Any], 
+    /* next */ NextFunction, 
+    Unit
+  ]]
+  
   @JSImport("express-mongo-sanitize", JSImport.Namespace)
   @js.native
-  def apply(options: MongoSanitizeOptions): js.Function3[
-    /* req */ Request_[ParamsDictionary, _, _, Query], 
-    /* res */ Response_[_], 
-    /* next */ NextFunction, 
-    Unit
-  ] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("express-mongo-sanitize", "has")
-  @js.native
-  def has(payload: js.Any): Boolean = js.native
+  @scala.inline
+  def has(payload: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("has")(payload.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("express-mongo-sanitize", "sanitize")
-  @js.native
-  def sanitize[T](payload: T): T = js.native
-  @JSImport("express-mongo-sanitize", "sanitize")
-  @js.native
-  def sanitize[T](payload: T, options: MongoSanitizeOptions): T = js.native
+  @scala.inline
+  def sanitize[T](payload: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(payload.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def sanitize[T](payload: T, options: MongoSanitizeOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("sanitize")(payload.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @js.native
   trait MongoSanitizeOptions extends StObject {
     
-    var replaceWith: js.Any = js.native
+    var replaceWith: js.Any
   }
   object MongoSanitizeOptions {
     

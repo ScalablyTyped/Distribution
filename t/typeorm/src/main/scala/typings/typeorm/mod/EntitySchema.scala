@@ -4,7 +4,6 @@ import typings.typeorm.commonEntityTargetMod._EntityTarget
 import typings.typeorm.entitySchemaEntitySchemaOptionsMod.EntitySchemaOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm", "EntitySchema")

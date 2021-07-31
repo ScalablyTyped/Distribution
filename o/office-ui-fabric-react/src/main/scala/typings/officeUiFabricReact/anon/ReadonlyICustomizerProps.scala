@@ -7,20 +7,18 @@ import typings.uifabricUtilities.customizationsMod.ISettingsFunction
 import typings.uifabricUtilities.customizerContextMod.ICustomizerContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@uifabric/utilities.@uifabric/utilities/lib/customizations/Customizer.types.ICustomizerProps> */
-@js.native
 trait ReadonlyICustomizerProps extends StObject {
   
-  val componentRef: js.UndefOr[IRefObject[_]] = js.native
+  val componentRef: js.UndefOr[IRefObject[js.Any]] = js.undefined
   
-  val contextTransform: js.UndefOr[js.Function1[/* context */ ReadonlyICustomizerContex, ICustomizerContext]] = js.native
+  val contextTransform: js.UndefOr[js.Function1[/* context */ ReadonlyICustomizerContex, ICustomizerContext]] = js.undefined
   
-  val scopedSettings: js.UndefOr[ISettings | ISettingsFunction] = js.native
+  val scopedSettings: js.UndefOr[ISettings | ISettingsFunction] = js.undefined
   
-  val settings: js.UndefOr[ISettings | ISettingsFunction] = js.native
+  val settings: js.UndefOr[ISettings | ISettingsFunction] = js.undefined
 }
 object ReadonlyICustomizerProps {
   
@@ -34,10 +32,10 @@ object ReadonlyICustomizerProps {
   implicit class ReadonlyICustomizerPropsMutableBuilder[Self <: ReadonlyICustomizerProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setComponentRef(value: IRefObject[_]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
+    def setComponentRef(value: IRefObject[js.Any]): Self = StObject.set(x, "componentRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentRefFunction1(value: /* ref */ _ | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
+    def setComponentRefFunction1(value: /* ref */ js.Any | Null => scala.Unit): Self = StObject.set(x, "componentRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setComponentRefUndefined: Self = StObject.set(x, "componentRef", js.undefined)

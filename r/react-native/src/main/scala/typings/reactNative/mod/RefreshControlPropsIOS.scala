@@ -2,26 +2,26 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RefreshControlPropsIOS extends ViewProps {
+trait RefreshControlPropsIOS
+  extends StObject
+     with ViewProps {
   
   /**
     * The color of the refresh indicator.
     */
-  var tintColor: js.UndefOr[ColorValue] = js.native
+  var tintColor: js.UndefOr[ColorValue] = js.undefined
   
   /**
     * The title displayed under the refresh indicator.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * Title color.
     */
-  var titleColor: js.UndefOr[ColorValue] = js.native
+  var titleColor: js.UndefOr[ColorValue] = js.undefined
 }
 object RefreshControlPropsIOS {
   

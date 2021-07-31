@@ -2,51 +2,49 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetResourceDefinitionResponse extends StObject {
   
   /**
     * The ARN of the definition.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the definition was created.
     */
-  var CreationTimestamp: js.UndefOr[string] = js.native
+  var CreationTimestamp: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the definition.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the definition was last updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[string] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the latest version associated with the definition.
     */
-  var LatestVersion: js.UndefOr[string] = js.native
+  var LatestVersion: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the latest version associated with the definition.
     */
-  var LatestVersionArn: js.UndefOr[string] = js.native
+  var LatestVersionArn: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the definition.
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
   
   /**
     * Tag(s) attached to the resource arn.
     */
-  var tags: js.UndefOr[Tags] = js.native
+  var tags: js.UndefOr[Tags] = js.undefined
 }
 object GetResourceDefinitionResponse {
   

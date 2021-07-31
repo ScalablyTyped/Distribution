@@ -7,7 +7,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a GetSubscriptionRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new GetSubscriptionRequest.
   * @param [properties] Properties to set
   */
-class GetSubscriptionRequest () extends IGetSubscriptionRequest {
+class GetSubscriptionRequest ()
+  extends StObject
+     with IGetSubscriptionRequest {
   def this(properties: IGetSubscriptionRequest) = this()
   
   /** GetSubscriptionRequest subscription. */
@@ -32,18 +33,20 @@ class GetSubscriptionRequest () extends IGetSubscriptionRequest {
 }
 object GetSubscriptionRequest {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new GetSubscriptionRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns GetSubscriptionRequest instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.create")
-  @js.native
-  def create(): GetSubscriptionRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.create")
-  @js.native
-  def create(properties: IGetSubscriptionRequest): GetSubscriptionRequest = js.native
+  @scala.inline
+  def create(): GetSubscriptionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[GetSubscriptionRequest]
+  @scala.inline
+  def create(properties: IGetSubscriptionRequest): GetSubscriptionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[GetSubscriptionRequest]
   
   /**
     * Decodes a GetSubscriptionRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object GetSubscriptionRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.decode")
-  @js.native
-  def decode(reader: Reader): GetSubscriptionRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): GetSubscriptionRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): GetSubscriptionRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): GetSubscriptionRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): GetSubscriptionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSubscriptionRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): GetSubscriptionRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetSubscriptionRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): GetSubscriptionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSubscriptionRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): GetSubscriptionRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[GetSubscriptionRequest]
   
   /**
     * Decodes a GetSubscriptionRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object GetSubscriptionRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): GetSubscriptionRequest = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): GetSubscriptionRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): GetSubscriptionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSubscriptionRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): GetSubscriptionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[GetSubscriptionRequest]
   
   /**
     * Encodes the specified GetSubscriptionRequest message. Does not implicitly {@link google.pubsub.v1.GetSubscriptionRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object GetSubscriptionRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.encode")
-  @js.native
-  def encode(message: IGetSubscriptionRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.encode")
-  @js.native
-  def encode(message: IGetSubscriptionRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IGetSubscriptionRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IGetSubscriptionRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified GetSubscriptionRequest message, length delimited. Does not implicitly {@link google.pubsub.v1.GetSubscriptionRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object GetSubscriptionRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetSubscriptionRequest): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IGetSubscriptionRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IGetSubscriptionRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IGetSubscriptionRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a GetSubscriptionRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object GetSubscriptionRequest {
     * @returns GetSubscriptionRequest
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): GetSubscriptionRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): GetSubscriptionRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[GetSubscriptionRequest]
   
   /**
     * Creates a plain object from a GetSubscriptionRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object GetSubscriptionRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.toObject")
-  @js.native
-  def toObject(message: GetSubscriptionRequest): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.toObject")
-  @js.native
-  def toObject(message: GetSubscriptionRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: GetSubscriptionRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: GetSubscriptionRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a GetSubscriptionRequest message.
@@ -140,7 +130,6 @@ object GetSubscriptionRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.pubsub.v1.GetSubscriptionRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

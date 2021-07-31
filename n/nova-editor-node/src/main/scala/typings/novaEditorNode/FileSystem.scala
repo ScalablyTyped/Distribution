@@ -4,7 +4,6 @@ import typings.novaEditorNode.anon.CURRENT
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,9 +54,9 @@ trait FileSystem extends StObject {
   ): Unit = js.native
   
   def open(path: String): FileBinaryMode | FileTextMode = js.native
-  def open(path: String, mode: js.UndefOr[scala.Nothing], encoding: Encoding): FileBinaryMode | FileTextMode = js.native
   def open(path: String, mode: String): FileBinaryMode | FileTextMode = js.native
   def open(path: String, mode: String, encoding: Encoding): FileBinaryMode | FileTextMode = js.native
+  def open(path: String, mode: Unit, encoding: Encoding): FileBinaryMode | FileTextMode = js.native
   
   def remove(path: String): Unit = js.native
   

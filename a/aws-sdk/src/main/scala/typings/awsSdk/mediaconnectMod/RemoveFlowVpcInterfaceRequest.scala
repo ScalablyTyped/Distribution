@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveFlowVpcInterfaceRequest extends StObject {
   
   /**
     * The flow that you want to remove a VPC interface from.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * The name of the VPC interface that you want to remove.
     */
-  var VpcInterfaceName: string = js.native
+  var VpcInterfaceName: string
 }
 object RemoveFlowVpcInterfaceRequest {
   

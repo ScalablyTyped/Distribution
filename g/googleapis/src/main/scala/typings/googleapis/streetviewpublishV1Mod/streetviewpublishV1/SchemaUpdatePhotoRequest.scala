@@ -2,20 +2,18 @@ package typings.googleapis.streetviewpublishV1Mod.streetviewpublishV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to update the metadata of a Photo. Updating the pixels of a photo
   * is not supported.
   */
-@js.native
 trait SchemaUpdatePhotoRequest extends StObject {
   
   /**
     * Required. Photo object containing the new metadata.
     */
-  var photo: js.UndefOr[SchemaPhoto] = js.native
+  var photo: js.UndefOr[SchemaPhoto] = js.undefined
   
   /**
     * Mask that identifies fields on the photo metadata to update. If not
@@ -31,7 +29,7 @@ trait SchemaUpdatePhotoRequest extends StObject {
     * and `UpdatePhotoRequest.photo.connections` is empty, all connections are
     * removed.&lt;/aside&gt;
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdatePhotoRequest {
   

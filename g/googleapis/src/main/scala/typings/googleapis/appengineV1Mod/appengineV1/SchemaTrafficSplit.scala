@@ -3,14 +3,12 @@ package typings.googleapis.appengineV1Mod.appengineV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Traffic routing configuration for versions within a single service. Traffic
   * splits define how traffic directed to the service is assigned to versions.
   */
-@js.native
 trait SchemaTrafficSplit extends StObject {
   
   /**
@@ -23,14 +21,14 @@ trait SchemaTrafficSplit extends StObject {
     * for IP-based splits and up to three decimal places is supported for
     * cookie-based splits.
     */
-  var allocations: js.UndefOr[StringDictionary[Double]] = js.native
+  var allocations: js.UndefOr[StringDictionary[Double]] = js.undefined
   
   /**
     * Mechanism used to determine which version a request is sent to. The
     * traffic selection algorithm will be stable for either type until
     * allocations are changed.
     */
-  var shardBy: js.UndefOr[String] = js.native
+  var shardBy: js.UndefOr[String] = js.undefined
 }
 object SchemaTrafficSplit {
   

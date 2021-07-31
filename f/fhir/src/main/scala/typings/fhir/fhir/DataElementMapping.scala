@@ -2,54 +2,54 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * External specification mapped to
   */
-@js.native
-trait DataElementMapping extends BackboneElement {
+trait DataElementMapping
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'comment'.
     */
-  var _comment: js.UndefOr[Element] = js.native
+  var _comment: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'identity'.
     */
-  var _identity: js.UndefOr[Element] = js.native
+  var _identity: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'uri'.
     */
-  var _uri: js.UndefOr[Element] = js.native
+  var _uri: js.UndefOr[Element] = js.undefined
   
   /**
     * Versions, issues, scope limitations, etc.
     */
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
   /**
     * Internal id when this mapping is used
     */
-  var identity: id = js.native
+  var identity: id
   
   /**
     * Names what this mapping refers to
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what this mapping refers to
     */
-  var uri: js.UndefOr[typings.fhir.fhir.uri] = js.native
+  var uri: js.UndefOr[typings.fhir.fhir.uri] = js.undefined
 }
 object DataElementMapping {
   

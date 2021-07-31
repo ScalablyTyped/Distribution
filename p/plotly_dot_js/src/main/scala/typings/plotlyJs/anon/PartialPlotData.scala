@@ -123,239 +123,237 @@ import typings.plotlyJs.plotlyJsStrings.zPlussignyPlussignxPlussigntext
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.PlotData> */
-@js.native
 trait PartialPlotData extends StObject {
   
-  var autobinx: js.UndefOr[Boolean] = js.native
+  var autobinx: js.UndefOr[Boolean] = js.undefined
   
-  var boxmean: js.UndefOr[Boolean | sd] = js.native
+  var boxmean: js.UndefOr[Boolean | sd] = js.undefined
   
-  var boxpoints: js.UndefOr[all | outliers | suspectedoutliers | `false`] = js.native
+  var boxpoints: js.UndefOr[all | outliers | suspectedoutliers | `false`] = js.undefined
   
-  var branchvalues: js.UndefOr[total | remainder] = js.native
+  var branchvalues: js.UndefOr[total | remainder] = js.undefined
   
-  var colorscale: js.UndefOr[ColorScale] = js.native
+  var colorscale: js.UndefOr[ColorScale] = js.undefined
   
-  var connectgaps: js.UndefOr[Boolean] = js.native
+  var connectgaps: js.UndefOr[Boolean] = js.undefined
   
-  var customdata: js.UndefOr[js.Array[js.Array[Datum] | Datum]] = js.native
+  var customdata: js.UndefOr[js.Array[js.Array[Datum] | Datum]] = js.undefined
   
-  var delta: js.UndefOr[PartialDelta] = js.native
+  var delta: js.UndefOr[PartialDelta] = js.undefined
   
-  var direction: js.UndefOr[clockwise | counterclockwise] = js.native
+  var direction: js.UndefOr[clockwise | counterclockwise] = js.undefined
   
-  var domain: js.UndefOr[Partialrowsnumbercolumnsn] = js.native
+  var domain: js.UndefOr[Partialrowsnumbercolumnsn] = js.undefined
   
-  var error_x: js.UndefOr[ErrorBar] = js.native
+  var error_x: js.UndefOr[ErrorBar] = js.undefined
   
-  var error_y: js.UndefOr[ErrorBar] = js.native
+  var error_y: js.UndefOr[ErrorBar] = js.undefined
   
-  var fill: js.UndefOr[none | tozeroy | tozerox | tonexty | tonextx | toself | tonext] = js.native
+  var fill: js.UndefOr[none | tozeroy | tozerox | tonexty | tonextx | toself | tonext] = js.undefined
   
-  var fillcolor: js.UndefOr[String] = js.native
+  var fillcolor: js.UndefOr[String] = js.undefined
   
-  var gauge: js.UndefOr[PartialGauge] = js.native
+  var gauge: js.UndefOr[PartialGauge] = js.undefined
   
-  var groupnorm: js.UndefOr[_empty | fraction | percent] = js.native
+  var groupnorm: js.UndefOr[_empty | fraction | percent] = js.undefined
   
-  var histfunc: js.UndefOr[count | sum | avg | min | max] = js.native
+  var histfunc: js.UndefOr[count | sum | avg | min | max] = js.undefined
   
-  var hole: js.UndefOr[Double] = js.native
+  var hole: js.UndefOr[Double] = js.undefined
   
   var hoverinfo: js.UndefOr[
     all | name | none | skip | text | x | xPlussigntext | xPlussignname | xPlussigny | xPlussignyPlussigntext | xPlussignyPlussignname | xPlussignyPlussignz | xPlussignyPlussignzPlussigntext | xPlussignyPlussignzPlussignname | y | yPlussignname | yPlussignx | yPlussigntext | yPlussignxPlussigntext | yPlussignxPlussignname | yPlussignz | yPlussignzPlussigntext | yPlussignzPlussignname | yPlussignxPlussignz | yPlussignxPlussignzPlussigntext | yPlussignxPlussignzPlussignname | z | zPlussignx | zPlussignxPlussigntext | zPlussignxPlussignname | zPlussignyPlussignx | zPlussignyPlussignxPlussigntext | zPlussignyPlussignxPlussignname | zPlussignxPlussigny | zPlussignxPlussignyPlussigntext | zPlussignxPlussignyPlussignname
-  ] = js.native
+  ] = js.undefined
   
-  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.native
+  var hoverlabel: js.UndefOr[PartialHoverLabelAlign] = js.undefined
   
-  var hoveron: js.UndefOr[points | fills] = js.native
+  var hoveron: js.UndefOr[points | fills] = js.undefined
   
-  var hovertemplate: js.UndefOr[String | js.Array[String]] = js.native
+  var hovertemplate: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var hovertext: js.UndefOr[String | js.Array[String]] = js.native
+  var hovertext: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var i: js.UndefOr[TypedArray] = js.native
+  var i: js.UndefOr[TypedArray] = js.undefined
   
-  var ids: js.UndefOr[js.Array[String]] = js.native
+  var ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var j: js.UndefOr[TypedArray] = js.native
+  var j: js.UndefOr[TypedArray] = js.undefined
   
-  var jitter: js.UndefOr[Double] = js.native
+  var jitter: js.UndefOr[Double] = js.undefined
   
-  var k: js.UndefOr[TypedArray] = js.native
+  var k: js.UndefOr[TypedArray] = js.undefined
   
-  var labels: js.UndefOr[js.Array[Datum]] = js.native
+  var labels: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var lat: js.UndefOr[js.Array[Datum]] = js.native
+  var lat: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var legendgroup: js.UndefOr[String] = js.native
+  var legendgroup: js.UndefOr[String] = js.undefined
   
-  var level: js.UndefOr[String] = js.native
+  var level: js.UndefOr[String] = js.undefined
   
-  var line: js.UndefOr[PartialScatterLine] = js.native
+  var line: js.UndefOr[PartialScatterLine] = js.undefined
   
   @JSName("line.color")
-  var lineDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var lineDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
   @JSName("line.dash")
-  var lineDotdash: js.UndefOr[Dash] = js.native
+  var lineDotdash: js.UndefOr[Dash] = js.undefined
   
   @JSName("line.shape")
-  var lineDotshape: js.UndefOr[linear | spline | hv | vh | hvh | vhv] = js.native
+  var lineDotshape: js.UndefOr[linear | spline | hv | vh | hvh | vhv] = js.undefined
   
   @JSName("line.simplify")
-  var lineDotsimplify: js.UndefOr[Boolean] = js.native
+  var lineDotsimplify: js.UndefOr[Boolean] = js.undefined
   
   @JSName("line.smoothing")
-  var lineDotsmoothing: js.UndefOr[Double] = js.native
+  var lineDotsmoothing: js.UndefOr[Double] = js.undefined
   
   @JSName("line.width")
-  var lineDotwidth: js.UndefOr[Double] = js.native
+  var lineDotwidth: js.UndefOr[Double] = js.undefined
   
-  var lon: js.UndefOr[js.Array[Datum]] = js.native
+  var lon: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var marker: js.UndefOr[PartialPlotMarker] = js.native
+  var marker: js.UndefOr[PartialPlotMarker] = js.undefined
   
   @JSName("marker.color")
-  var markerDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var markerDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
   @JSName("marker.colorbar")
-  var markerDotcolorbar: js.UndefOr[js.Object] = js.native
+  var markerDotcolorbar: js.UndefOr[js.Object] = js.undefined
   
   @JSName("marker.colorscale")
-  var markerDotcolorscale: js.UndefOr[ColorScale | js.Array[ColorScale]] = js.native
+  var markerDotcolorscale: js.UndefOr[ColorScale | js.Array[ColorScale]] = js.undefined
   
   @JSName("marker.line")
-  var markerDotline: js.UndefOr[PartialScatterMarkerLine] = js.native
+  var markerDotline: js.UndefOr[PartialScatterMarkerLine] = js.undefined
   
   @JSName("marker.line.color")
-  var markerDotlineDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var markerDotlineDotcolor: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
   @JSName("marker.line.colorscale")
-  var markerDotlineDotcolorscale: js.UndefOr[ColorScale | js.Array[ColorScale]] = js.native
+  var markerDotlineDotcolorscale: js.UndefOr[ColorScale | js.Array[ColorScale]] = js.undefined
   
   @JSName("marker.maxdisplayed")
-  var markerDotmaxdisplayed: js.UndefOr[Double] = js.native
+  var markerDotmaxdisplayed: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.opacity")
-  var markerDotopacity: js.UndefOr[Double | js.Array[Double]] = js.native
+  var markerDotopacity: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
   @JSName("marker.pad.b")
-  var markerDotpadDotb: js.UndefOr[Double] = js.native
+  var markerDotpadDotb: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.pad.l")
-  var markerDotpadDotl: js.UndefOr[Double] = js.native
+  var markerDotpadDotl: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.pad.r")
-  var markerDotpadDotr: js.UndefOr[Double] = js.native
+  var markerDotpadDotr: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.pad.t")
-  var markerDotpadDott: js.UndefOr[Double] = js.native
+  var markerDotpadDott: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.showscale")
-  var markerDotshowscale: js.UndefOr[Boolean] = js.native
+  var markerDotshowscale: js.UndefOr[Boolean] = js.undefined
   
   @JSName("marker.size")
-  var markerDotsize: js.UndefOr[Double | (js.Array[js.Array[Double] | Double])] = js.native
+  var markerDotsize: js.UndefOr[Double | (js.Array[js.Array[Double] | Double])] = js.undefined
   
   @JSName("marker.sizemax")
-  var markerDotsizemax: js.UndefOr[Double] = js.native
+  var markerDotsizemax: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.sizemin")
-  var markerDotsizemin: js.UndefOr[Double] = js.native
+  var markerDotsizemin: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.sizemode")
-  var markerDotsizemode: js.UndefOr[diameter | area] = js.native
+  var markerDotsizemode: js.UndefOr[diameter | area] = js.undefined
   
   @JSName("marker.sizeref")
-  var markerDotsizeref: js.UndefOr[Double] = js.native
+  var markerDotsizeref: js.UndefOr[Double] = js.undefined
   
   @JSName("marker.symbol")
-  var markerDotsymbol: js.UndefOr[MarkerSymbol | js.Array[MarkerSymbol]] = js.native
+  var markerDotsymbol: js.UndefOr[MarkerSymbol | js.Array[MarkerSymbol]] = js.undefined
   
   var mode: js.UndefOr[
     lines | markers | text | linesPlussignmarkers | textPlussignmarkers | textPlussignlines | textPlussignlinesPlussignmarkers | none | gauge | number | delta | numberPlussigndelta | gaugePlussignnumber | gaugePlussignnumberPlussigndelta | gaugePlussigndelta
-  ] = js.native
+  ] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var number: js.UndefOr[PartialPlotNumber] = js.native
+  var number: js.UndefOr[PartialPlotNumber] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[v | h] = js.native
+  var orientation: js.UndefOr[v | h] = js.undefined
   
-  var parents: js.UndefOr[js.Array[String]] = js.native
+  var parents: js.UndefOr[js.Array[String]] = js.undefined
   
-  var pointpos: js.UndefOr[Double] = js.native
+  var pointpos: js.UndefOr[Double] = js.undefined
   
-  var r: js.UndefOr[js.Array[Datum]] = js.native
+  var r: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var selectedpoints: js.UndefOr[js.Array[Datum]] = js.native
+  var selectedpoints: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var showlegend: js.UndefOr[Boolean] = js.native
+  var showlegend: js.UndefOr[Boolean] = js.undefined
   
-  var showscale: js.UndefOr[Boolean] = js.native
+  var showscale: js.UndefOr[Boolean] = js.undefined
   
-  var stackgaps: js.UndefOr[(`infer zero`) | interpolate] = js.native
+  var stackgaps: js.UndefOr[(`infer zero`) | interpolate] = js.undefined
   
-  var stackgroup: js.UndefOr[String] = js.native
+  var stackgroup: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String | js.Array[String]] = js.native
+  var text: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var textfont: js.UndefOr[PartialFont] = js.native
+  var textfont: js.UndefOr[PartialFont] = js.undefined
   
   var textinfo: js.UndefOr[
     label | labelPlussigntext | labelPlussignvalue | labelPlussignpercent | labelPlussigntextPlussignvalue | labelPlussigntextPlussignpercent | labelPlussignvaluePlussignpercent | text | textPlussignvalue | textPlussignpercent | textPlussignvaluePlussignpercent | value | valuePlussignpercent | percent | none
-  ] = js.native
+  ] = js.undefined
   
   var textposition: js.UndefOr[
     (`top left`) | (`top center`) | (`top right`) | (`middle left`) | (`middle center`) | (`middle right`) | (`bottom left`) | (`bottom center`) | (`bottom right`) | inside | outside | auto | none
-  ] = js.native
+  ] = js.undefined
   
-  var theta: js.UndefOr[js.Array[Datum]] = js.native
+  var theta: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var title: js.UndefOr[PartialDataTitle] = js.native
+  var title: js.UndefOr[PartialDataTitle] = js.undefined
   
-  var transforms: js.UndefOr[js.Array[DataTransform]] = js.native
+  var transforms: js.UndefOr[js.Array[DataTransform]] = js.undefined
   
-  var transpose: js.UndefOr[Boolean] = js.native
+  var transpose: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: js.UndefOr[PlotType] = js.native
+  var `type`: js.UndefOr[PlotType] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
   
-  var values: js.UndefOr[js.Array[Datum]] = js.native
+  var values: js.UndefOr[js.Array[Datum]] = js.undefined
   
-  var visible: js.UndefOr[Boolean | legendonly] = js.native
+  var visible: js.UndefOr[Boolean | legendonly] = js.undefined
   
-  var width: js.UndefOr[Double | js.Array[Double]] = js.native
+  var width: js.UndefOr[Double | js.Array[Double]] = js.undefined
   
-  var x: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.native
+  var x: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
   
-  var xaxis: js.UndefOr[String] = js.native
+  var xaxis: js.UndefOr[String] = js.undefined
   
-  var xbins: js.UndefOr[End] = js.native
+  var xbins: js.UndefOr[End] = js.undefined
   
-  var xgap: js.UndefOr[Double] = js.native
+  var xgap: js.UndefOr[Double] = js.undefined
   
-  var xy: js.UndefOr[Float32Array] = js.native
+  var xy: js.UndefOr[Float32Array] = js.undefined
   
-  var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.native
+  var y: js.UndefOr[(js.Array[js.Array[Datum] | Datum]) | TypedArray] = js.undefined
   
-  var yaxis: js.UndefOr[String] = js.native
+  var yaxis: js.UndefOr[String] = js.undefined
   
-  var ygap: js.UndefOr[Double] = js.native
+  var ygap: js.UndefOr[Double] = js.undefined
   
-  var z: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.native
+  var z: js.UndefOr[(js.Array[(js.Array[js.Array[Datum] | Datum]) | Datum]) | TypedArray] = js.undefined
   
-  var zsmooth: js.UndefOr[fast | best | `false`] = js.native
+  var zsmooth: js.UndefOr[fast | best | `false`] = js.undefined
 }
 object PartialPlotData {
   

@@ -7,25 +7,23 @@ import typings.reactOnsenui.reactOnsenuiNumbers.`270`
 import typings.reactOnsenui.reactOnsenuiNumbers.`90`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FixedWidth extends StObject {
   
-  var fixedWidth: js.UndefOr[Boolean] = js.native
+  var fixedWidth: js.UndefOr[Boolean] = js.undefined
   
-  var icon: js.UndefOr[String | ModifiersString] = js.native
+  var icon: js.UndefOr[String | ModifiersString] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var rotate: js.UndefOr[`90` | `180` | `270`] = js.native
+  var rotate: js.UndefOr[`90` | `180` | `270`] = js.undefined
   
-  var size: js.UndefOr[Double | ModifiersNumber] = js.native
+  var size: js.UndefOr[Double | ModifiersNumber] = js.undefined
   
-  var spin: js.UndefOr[Boolean] = js.native
+  var spin: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object FixedWidth {
   

@@ -2,13 +2,11 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Translates to IAM Policy bindings (without auditing at this level)
   */
-@js.native
 trait SchemaPolicyBinding extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaPolicyBinding extends StObject {
     * prefix and ID. For example, `user:{emailId}`, `serviceAccount:{emailId}`,
     * `group:{emailId}`.
     */
-  var members: js.UndefOr[js.Array[String]] = js.native
+  var members: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Role. (https://cloud.google.com/iam/docs/understanding-roles) For
     * example, `roles/viewer`, `roles/editor`, or `roles/owner`.
     */
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
 }
 object SchemaPolicyBinding {
   

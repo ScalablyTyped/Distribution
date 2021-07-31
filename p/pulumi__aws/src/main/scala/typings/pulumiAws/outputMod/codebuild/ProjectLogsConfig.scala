@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codebuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectLogsConfig extends StObject {
   
   /**
     * Configuration for the builds to store logs to CloudWatch
     */
-  var cloudwatchLogs: js.UndefOr[ProjectLogsConfigCloudwatchLogs] = js.native
+  var cloudwatchLogs: js.UndefOr[ProjectLogsConfigCloudwatchLogs] = js.undefined
   
   /**
     * Configuration for the builds to store logs to S3.
     */
-  var s3Logs: js.UndefOr[ProjectLogsConfigS3Logs] = js.native
+  var s3Logs: js.UndefOr[ProjectLogsConfigS3Logs] = js.undefined
 }
 object ProjectLogsConfig {
   

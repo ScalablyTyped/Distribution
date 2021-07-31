@@ -9,29 +9,27 @@ import typings.astTypes.kindsMod.TSTypeAnnotationKind
 import typings.astTypes.kindsMod.TSTypeParameterDeclarationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Declare extends StObject {
   
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var declare: js.UndefOr[Boolean] = js.native
+  var declare: js.UndefOr[Boolean] = js.undefined
   
-  var generator: js.UndefOr[Boolean] = js.native
+  var generator: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[IdentifierKind | Null] = js.native
+  var id: js.UndefOr[IdentifierKind | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var params: js.Array[PatternKind] = js.native
+  var params: js.Array[PatternKind]
   
-  var returnType: js.UndefOr[TSTypeAnnotationKind | NoopKind | Null] = js.native
+  var returnType: js.UndefOr[TSTypeAnnotationKind | NoopKind | Null] = js.undefined
   
-  var typeParameters: js.UndefOr[TSTypeParameterDeclarationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TSTypeParameterDeclarationKind | Null] = js.undefined
 }
 object Declare {
   

@@ -3,10 +3,8 @@ package typings.webrtc
 import typings.webrtc.W3C.DoubleRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaTrackCapabilities extends StObject {
   
   //width: number | W3C.LongRange;
@@ -18,7 +16,7 @@ trait MediaTrackCapabilities extends StObject {
   //sampleRate: number | W3C.LongRange;
   //sampleSize: number | W3C.LongRange;
   //echoCancellation: boolean[];
-  var latency: js.UndefOr[DoubleRange] = js.native
+  var latency: js.UndefOr[DoubleRange] = js.undefined
 }
 object MediaTrackCapabilities {
   

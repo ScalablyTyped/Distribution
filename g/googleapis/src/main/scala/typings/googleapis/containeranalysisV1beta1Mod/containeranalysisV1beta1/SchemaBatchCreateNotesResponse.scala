@@ -2,19 +2,17 @@ package typings.googleapis.containeranalysisV1beta1Mod.containeranalysisV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for creating notes in batch.
   */
-@js.native
 trait SchemaBatchCreateNotesResponse extends StObject {
   
   /**
     * The notes that were created.
     */
-  var notes: js.UndefOr[js.Array[SchemaNote]] = js.native
+  var notes: js.UndefOr[js.Array[SchemaNote]] = js.undefined
 }
 object SchemaBatchCreateNotesResponse {
   

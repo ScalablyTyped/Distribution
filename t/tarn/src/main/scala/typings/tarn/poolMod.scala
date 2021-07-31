@@ -23,7 +23,6 @@ import typings.tarn.tarnStrings.stopReaping
 import typings.tarn.tarnStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object poolMod {
@@ -88,7 +87,7 @@ object poolMod {
     @JSName("creator")
     var creator_Original: CallbackOrPromise[T] = js.native
     
-    def destroy(): js.Promise[PromiseInspection[_ | Unit]] = js.native
+    def destroy(): js.Promise[PromiseInspection[js.Any | Unit]] = js.native
     
     var destroyTimeoutMillis: Double = js.native
     
@@ -187,36 +186,118 @@ object poolMod {
   
   type CallbackOrPromise[T] = js.Function1[/* cb */ Callback[T], js.Any | js.Function0[js.Promise[T]]]
   
-  @js.native
   trait PoolOptions[T] extends StObject {
     
-    var acquireTimeoutMillis: js.UndefOr[Double] = js.native
+    var acquireTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    def create(cb: Callback[T]): js.Any | js.Function0[js.Promise[T]] = js.native
+    def create(cb: Callback[T]): js.Any | js.Function0[js.Promise[T]]
     
-    var createRetryIntervalMillis: js.UndefOr[Double] = js.native
+    var createRetryIntervalMillis: js.UndefOr[Double] = js.undefined
     
-    var createTimeoutMillis: js.UndefOr[Double] = js.native
+    var createTimeoutMillis: js.UndefOr[Double] = js.undefined
     
     @JSName("create")
-    var create_Original: CallbackOrPromise[T] = js.native
+    var create_Original: CallbackOrPromise[T]
     
-    def destroy(resource: T): js.Any = js.native
+    def destroy(resource: T): js.Any
     
-    var destroyTimeoutMillis: js.UndefOr[Double] = js.native
+    var destroyTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var idleTimeoutMillis: js.UndefOr[Double] = js.native
+    var idleTimeoutMillis: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[js.Function1[/* msg */ String, _]] = js.native
+    var log: js.UndefOr[js.Function1[/* msg */ String, js.Any]] = js.undefined
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var propagateCreateError: js.UndefOr[Boolean] = js.native
+    var propagateCreateError: js.UndefOr[Boolean] = js.undefined
     
-    var reapIntervalMillis: js.UndefOr[Double] = js.native
+    var reapIntervalMillis: js.UndefOr[Double] = js.undefined
     
-    var validate: js.UndefOr[js.Function1[/* resource */ T, Boolean]] = js.native
+    var validate: js.UndefOr[js.Function1[/* resource */ T, Boolean]] = js.undefined
+  }
+  object PoolOptions {
+    
+    @scala.inline
+    def apply[T](
+      create: /* cb */ Callback[T] => js.Any | js.Function0[js.Promise[T]],
+      destroy: T => js.Any,
+      max: Double,
+      min: Double
+    ): PoolOptions[T] = {
+      val __obj = js.Dynamic.literal(create = js.Any.fromFunction1(create), destroy = js.Any.fromFunction1(destroy), max = max.asInstanceOf[js.Any], min = min.asInstanceOf[js.Any])
+      __obj.asInstanceOf[PoolOptions[T]]
+    }
+    
+    @scala.inline
+    implicit class PoolOptionsMutableBuilder[Self <: PoolOptions[?], T] (val x: Self & PoolOptions[T]) extends AnyVal {
+      
+      @scala.inline
+      def setAcquireTimeoutMillis(value: Double): Self = StObject.set(x, "acquireTimeoutMillis", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setAcquireTimeoutMillisUndefined: Self = StObject.set(x, "acquireTimeoutMillis", js.undefined)
+      
+      @scala.inline
+      def setCreate(value: /* cb */ Callback[T] => js.Any | js.Function0[js.Promise[T]]): Self = StObject.set(x, "create", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setCreateRetryIntervalMillis(value: Double): Self = StObject.set(x, "createRetryIntervalMillis", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCreateRetryIntervalMillisUndefined: Self = StObject.set(x, "createRetryIntervalMillis", js.undefined)
+      
+      @scala.inline
+      def setCreateTimeoutMillis(value: Double): Self = StObject.set(x, "createTimeoutMillis", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setCreateTimeoutMillisUndefined: Self = StObject.set(x, "createTimeoutMillis", js.undefined)
+      
+      @scala.inline
+      def setDestroy(value: T => js.Any): Self = StObject.set(x, "destroy", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setDestroyTimeoutMillis(value: Double): Self = StObject.set(x, "destroyTimeoutMillis", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setDestroyTimeoutMillisUndefined: Self = StObject.set(x, "destroyTimeoutMillis", js.undefined)
+      
+      @scala.inline
+      def setIdleTimeoutMillis(value: Double): Self = StObject.set(x, "idleTimeoutMillis", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setIdleTimeoutMillisUndefined: Self = StObject.set(x, "idleTimeoutMillis", js.undefined)
+      
+      @scala.inline
+      def setLog(value: /* msg */ String => js.Any): Self = StObject.set(x, "log", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setLogUndefined: Self = StObject.set(x, "log", js.undefined)
+      
+      @scala.inline
+      def setMax(value: Double): Self = StObject.set(x, "max", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setMin(value: Double): Self = StObject.set(x, "min", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPropagateCreateError(value: Boolean): Self = StObject.set(x, "propagateCreateError", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPropagateCreateErrorUndefined: Self = StObject.set(x, "propagateCreateError", js.undefined)
+      
+      @scala.inline
+      def setReapIntervalMillis(value: Double): Self = StObject.set(x, "reapIntervalMillis", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReapIntervalMillisUndefined: Self = StObject.set(x, "reapIntervalMillis", js.undefined)
+      
+      @scala.inline
+      def setValidate(value: /* resource */ T => Boolean): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setValidateUndefined: Self = StObject.set(x, "validate", js.undefined)
+    }
   }
 }

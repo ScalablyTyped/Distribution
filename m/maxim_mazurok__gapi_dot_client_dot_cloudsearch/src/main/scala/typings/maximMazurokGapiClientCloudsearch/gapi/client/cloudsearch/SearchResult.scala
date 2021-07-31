@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchResult extends StObject {
   
   /**
     * If source is clustered, provide list of clustered results. There will only be one level of clustered results. If current source is not enabled for clustering, this field will be
     * empty.
     */
-  var clusteredResults: js.UndefOr[js.Array[SearchResult]] = js.native
+  var clusteredResults: js.UndefOr[js.Array[SearchResult]] = js.undefined
   
   /** Debugging information about this search result. */
-  var debugInfo: js.UndefOr[ResultDebugInfo] = js.native
+  var debugInfo: js.UndefOr[ResultDebugInfo] = js.undefined
   
   /** Metadata of the search result. */
-  var metadata: js.UndefOr[Metadata] = js.native
+  var metadata: js.UndefOr[Metadata] = js.undefined
   
   /** The concatenation of all snippets (summaries) available for this result. */
-  var snippet: js.UndefOr[Snippet] = js.native
+  var snippet: js.UndefOr[Snippet] = js.undefined
   
   /** Title of the search result. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The URL of the search result. The URL contains a Google redirect to the actual item. This URL is signed and shouldn't be changed. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SearchResult {
   

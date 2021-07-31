@@ -2,44 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Permission extends Entity {
+trait Permission
+  extends StObject
+     with Entity {
   
   /**
     * A format of yyyy-MM-ddTHH:mm:ssZ of DateTimeOffset indicates the expiration time of the permission. DateTime.MinValue
     * indicates there is no expiration set for this permission. Optional.
     */
-  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var expirationDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // For user type permissions, the details of the users &amp; applications for this permission. Read-only.
-  var grantedTo: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var grantedTo: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   // For link type permissions, the details of the users to whom permission was granted. Read-only.
-  var grantedToIdentities: js.UndefOr[NullableOption[js.Array[IdentitySet]]] = js.native
+  var grantedToIdentities: js.UndefOr[NullableOption[js.Array[IdentitySet]]] = js.undefined
   
   /**
     * This indicates whether password is set for this permission, it's only showing in response. Optional and Read-only and
     * for OneDrive Personal only.
     */
-  var hasPassword: js.UndefOr[NullableOption[Boolean]] = js.native
+  var hasPassword: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Provides a reference to the ancestor of the current permission, if it is inherited from an ancestor. Read-only.
-  var inheritedFrom: js.UndefOr[NullableOption[ItemReference]] = js.native
+  var inheritedFrom: js.UndefOr[NullableOption[ItemReference]] = js.undefined
   
   // Details of any associated sharing invitation for this permission. Read-only.
-  var invitation: js.UndefOr[NullableOption[SharingInvitation]] = js.native
+  var invitation: js.UndefOr[NullableOption[SharingInvitation]] = js.undefined
   
   // Provides the link details of the current permission, if it is a link type permissions. Read-only.
-  var link: js.UndefOr[NullableOption[SharingLink]] = js.native
+  var link: js.UndefOr[NullableOption[SharingLink]] = js.undefined
   
   // The type of permission, e.g. read. See below for the full list of roles. Read-only.
-  var roles: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var roles: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // A unique token that can be used to access this shared item via the **shares** API. Read-only.
-  var shareId: js.UndefOr[NullableOption[String]] = js.native
+  var shareId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object Permission {
   

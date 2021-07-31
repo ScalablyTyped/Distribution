@@ -9,16 +9,16 @@ Strips HTML tags from strings. No parser, accepts mixed sources.
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | string-strip-html |
-| Keywords           | code, extract, from, html, mixed, remove, separate, stri, string, strip, tags, templating, text, xhtml |
-| # releases         | 92 |
-| # dependents       | 22 |
-| # downloads        | 686311 |
+| Keywords           | code, extract, from, html, jsp, mixed, remove, separate, stri, string, strip, tags, templating, text, xhtml |
+| # releases         | 89 |
+| # dependents       | 26 |
+| # downloads        | 1101224 |
 | # stars            | 0 |
 
 ## Links
 - [Homepage](https://codsen.com/os/string-strip-html/)
-- [Bugs](https://gitlab.com/codsen/codsen/issues)
-- [Repository](https://gitlab.com/codsen/codsen)
+- [Bugs](https://github.com/codsen/codsen/issues)
+- [Repository](https://github.com/codsen/codsen)
 - [Npm](https://www.npmjs.com/package/string-strip-html)
     
 

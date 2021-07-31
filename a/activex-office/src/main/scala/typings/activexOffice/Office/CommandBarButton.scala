@@ -3,7 +3,6 @@ package typings.activexOffice.Office
 import typings.activexStdole.stdole.IPictureDisp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,7 +21,7 @@ trait CommandBarButton extends StObject {
   val Control: js.Any = js.native
   
   def Copy(): CommandBarControl = js.native
-  def Copy(Bar: js.UndefOr[scala.Nothing], Before: Double): CommandBarControl = js.native
+  def Copy(Bar: Unit, Before: Double): CommandBarControl = js.native
   def Copy(Bar: CommandBar): CommandBarControl = js.native
   def Copy(Bar: CommandBar, Before: Double): CommandBarControl = js.native
   
@@ -64,7 +63,7 @@ trait CommandBarButton extends StObject {
   var Mask: IPictureDisp = js.native
   
   def Move(): CommandBarControl = js.native
-  def Move(Bar: js.UndefOr[scala.Nothing], Before: Double): CommandBarControl = js.native
+  def Move(Bar: Unit, Before: Double): CommandBarControl = js.native
   def Move(Bar: CommandBar): CommandBarControl = js.native
   def Move(Bar: CommandBar, Before: Double): CommandBarControl = js.native
   

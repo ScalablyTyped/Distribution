@@ -3,13 +3,11 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Database instance settings.
   */
-@js.native
 trait SchemaSettings extends StObject {
   
   /**
@@ -23,13 +21,13 @@ trait SchemaSettings extends StObject {
     * 15 minutes of inactivity. Instances with PER_PACKAGE pricing turn off
     * after 12 hours of inactivity.
     */
-  var activationPolicy: js.UndefOr[String] = js.native
+  var activationPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * The App Engine app IDs that can access this instance. First Generation
     * instances only.
     */
-  var authorizedGaeApplications: js.UndefOr[js.Array[String]] = js.native
+  var authorizedGaeApplications: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Availability type (PostgreSQL instances only). Potential values: ZONAL:
@@ -38,42 +36,42 @@ trait SchemaSettings extends StObject {
     * one zone in a region (it is highly available). For more information, see
     * Overview of the High Availability Configuration.
     */
-  var availabilityType: js.UndefOr[String] = js.native
+  var availabilityType: js.UndefOr[String] = js.undefined
   
   /**
     * The daily backup configuration for the instance.
     */
-  var backupConfiguration: js.UndefOr[SchemaBackupConfiguration] = js.native
+  var backupConfiguration: js.UndefOr[SchemaBackupConfiguration] = js.undefined
   
   /**
     * Configuration specific to read replica instances. Indicates whether
     * database flags for crash-safe replication are enabled. This property is
     * only applicable to First Generation instances.
     */
-  var crashSafeReplicationEnabled: js.UndefOr[Boolean] = js.native
+  var crashSafeReplicationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The size of data disk, in GB. The data disk size minimum is 10GB. Not
     * used for First Generation instances.
     */
-  var dataDiskSizeGb: js.UndefOr[String] = js.native
+  var dataDiskSizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * The type of data disk: PD_SSD (default) or PD_HDD. Not used for First
     * Generation instances.
     */
-  var dataDiskType: js.UndefOr[String] = js.native
+  var dataDiskType: js.UndefOr[String] = js.undefined
   
   /**
     * The database flags passed to the instance at startup.
     */
-  var databaseFlags: js.UndefOr[js.Array[SchemaDatabaseFlags]] = js.native
+  var databaseFlags: js.UndefOr[js.Array[SchemaDatabaseFlags]] = js.undefined
   
   /**
     * Configuration specific to read replica instances. Indicates whether
     * replication is enabled or not.
     */
-  var databaseReplicationEnabled: js.UndefOr[Boolean] = js.native
+  var databaseReplicationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The settings for IP Management. This allows to enable or disable the
@@ -81,12 +79,12 @@ trait SchemaSettings extends StObject {
     * instance. The IPv4 address cannot be disabled for Second Generation
     * instances.
     */
-  var ipConfiguration: js.UndefOr[SchemaIpConfiguration] = js.native
+  var ipConfiguration: js.UndefOr[SchemaIpConfiguration] = js.undefined
   
   /**
     * This is always sql#settings.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The location preference settings. This allows the instance to be located
@@ -94,27 +92,27 @@ trait SchemaSettings extends StObject {
     * for better performance. App Engine co-location is only applicable to
     * First Generation instances.
     */
-  var locationPreference: js.UndefOr[SchemaLocationPreference] = js.native
+  var locationPreference: js.UndefOr[SchemaLocationPreference] = js.undefined
   
   /**
     * The maintenance window for this instance. This specifies when the
     * instance can be restarted for maintenance purposes. Not used for First
     * Generation instances.
     */
-  var maintenanceWindow: js.UndefOr[SchemaMaintenanceWindow] = js.native
+  var maintenanceWindow: js.UndefOr[SchemaMaintenanceWindow] = js.undefined
   
   /**
     * The pricing plan for this instance. This can be either PER_USE or
     * PACKAGE. Only PER_USE is supported for Second Generation instances.
     */
-  var pricingPlan: js.UndefOr[String] = js.native
+  var pricingPlan: js.UndefOr[String] = js.undefined
   
   /**
     * The type of replication this instance uses. This can be either
     * ASYNCHRONOUS or SYNCHRONOUS. This property is only applicable to First
     * Generation instances.
     */
-  var replicationType: js.UndefOr[String] = js.native
+  var replicationType: js.UndefOr[String] = js.undefined
   
   /**
     * The version of instance settings. This is a required field for update
@@ -122,20 +120,20 @@ trait SchemaSettings extends StObject {
     * update, use the most recent settingsVersion value for this instance and
     * do not try to update this value.
     */
-  var settingsVersion: js.UndefOr[String] = js.native
+  var settingsVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration to increase storage size automatically. The default value
     * is true. Not used for First Generation instances.
     */
-  var storageAutoResize: js.UndefOr[Boolean] = js.native
+  var storageAutoResize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum size to which storage capacity can be automatically
     * increased. The default value is 0, which specifies that there is no
     * limit. Not used for First Generation instances.
     */
-  var storageAutoResizeLimit: js.UndefOr[String] = js.native
+  var storageAutoResizeLimit: js.UndefOr[String] = js.undefined
   
   /**
     * The tier (or machine type) for this instance, for example
@@ -144,13 +142,13 @@ trait SchemaSettings extends StObject {
     * instance is First or Second Generation. For more information, see
     * Instance Settings.
     */
-  var tier: js.UndefOr[String] = js.native
+  var tier: js.UndefOr[String] = js.undefined
   
   /**
     * User-provided labels, represented as a dictionary where each label is a
     * single key value pair.
     */
-  var userLabels: js.UndefOr[StringDictionary[String]] = js.native
+  var userLabels: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaSettings {
   

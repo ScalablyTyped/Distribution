@@ -3,25 +3,25 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.playbackTimeUpdated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PlaybackTimeUpdatedEvent extends Event {
+trait PlaybackTimeUpdatedEvent
+  extends StObject
+     with Event {
   
-  var time: Double | Null = js.native
+  var time: Double | Null
   
-  var timeToEnd: Double = js.native
+  var timeToEnd: Double
   
   @JSName("type")
-  var type_PlaybackTimeUpdatedEvent: playbackTimeUpdated = js.native
+  var type_PlaybackTimeUpdatedEvent: playbackTimeUpdated
 }
 object PlaybackTimeUpdatedEvent {
   
   @scala.inline
-  def apply(timeToEnd: Double, `type`: playbackTimeUpdated): PlaybackTimeUpdatedEvent = {
-    val __obj = js.Dynamic.literal(timeToEnd = timeToEnd.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(timeToEnd: Double): PlaybackTimeUpdatedEvent = {
+    val __obj = js.Dynamic.literal(timeToEnd = timeToEnd.asInstanceOf[js.Any], time = null)
+    __obj.updateDynamic("type")("playbackTimeUpdated")
     __obj.asInstanceOf[PlaybackTimeUpdatedEvent]
   }
   

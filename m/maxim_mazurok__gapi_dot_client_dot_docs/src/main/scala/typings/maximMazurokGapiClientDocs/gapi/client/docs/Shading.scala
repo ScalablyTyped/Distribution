@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shading extends StObject {
   
   /** The background color of this paragraph shading. */
-  var backgroundColor: js.UndefOr[OptionalColor] = js.native
+  var backgroundColor: js.UndefOr[OptionalColor] = js.undefined
 }
 object Shading {
   

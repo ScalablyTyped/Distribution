@@ -2,43 +2,41 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMSymbolLayerBase extends StObject {
   
   /**
     * A value indicating whether the color set at the basic properties level is applied to the symbol layer. If the symbol layer is color locked then changes made to the color in the basic properties will not be applied to the symbol layer.
     */
-  var colorLocked: js.UndefOr[Boolean] = js.native
+  var colorLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the geometric effects that are applied to the symbol layer. Effects dynamically alter the feature geometry when the symbology is applied. Multiple effects applied to a symbol layer are rendered sequentially.
     */
-  var effects: js.UndefOr[js.Array[CIMGeometricEffectType]] = js.native
+  var effects: js.UndefOr[js.Array[CIMGeometricEffectType]] = js.undefined
   
   /**
     * A value indicating whether the symbol layer is visible. The symbol layer draws only when enabled. Currently, an invisible layer is not considered in any transformations when in a 3D context.
     */
-  var enable: js.UndefOr[Boolean] = js.native
+  var enable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The internal name of the symbol layer used for symbol level drawing.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A value indicating whether or not the symbol layer should overprint in press printing.
     */
-  var overprint: js.UndefOr[Boolean] = js.native
+  var overprint: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The primitive name.
     */
-  var primitiveName: js.UndefOr[String] = js.native
+  var primitiveName: js.UndefOr[String] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object CIMSymbolLayerBase {
   

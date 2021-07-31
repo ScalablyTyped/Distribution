@@ -1,18 +1,14 @@
 package typings.tensorflowTfjsLayers.coreMod
 
-import typings.tensorflowTfjsLayers.kerasFormatCommonMod.Shape
 import typings.tensorflowTfjsLayers.topologyMod.Layer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@tensorflow/tfjs-layers/dist/layers/core", "Reshape")
 @js.native
 class Reshape protected () extends Layer {
   def this(args: ReshapeLayerArgs) = this()
-  
-  def computeOutputShape(inputShape: Shape): Shape = js.native
   
   /**
     * Finds and replaces a missing dimension in output shape.

@@ -14,86 +14,84 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("ganache-core", "default.provider")
+    @JSImport("ganache-core", JSImport.Default)
     @js.native
-    def provider(): Provider = js.native
-    @JSImport("ganache-core", "default.provider")
-    @js.native
-    def provider(opts: IProviderOptions): Provider = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("ganache-core", "default.server")
-    @js.native
-    def server(): Server = js.native
-    @JSImport("ganache-core", "default.server")
-    @js.native
-    def server(opts: IServerOptions): Server = js.native
+    @scala.inline
+    def provider(): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("provider")().asInstanceOf[Provider]
+    @scala.inline
+    def provider(opts: IProviderOptions): Provider = ^.asInstanceOf[js.Dynamic].applyDynamic("provider")(opts.asInstanceOf[js.Any]).asInstanceOf[Provider]
+    
+    @scala.inline
+    def server(): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[Server]
+    @scala.inline
+    def server(opts: IServerOptions): Server = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(opts.asInstanceOf[js.Any]).asInstanceOf[Server]
   }
   
   object Ganache {
     
-    @js.native
     trait IProviderOptions extends StObject {
       
-      var account_keys_path: js.UndefOr[String] = js.native
+      var account_keys_path: js.UndefOr[String] = js.undefined
       
-      var accounts: js.UndefOr[js.Array[js.Object]] = js.native
+      var accounts: js.UndefOr[js.Array[js.Object]] = js.undefined
       
-      var allowUnlimitedContractSize: js.UndefOr[Boolean] = js.native
+      var allowUnlimitedContractSize: js.UndefOr[Boolean] = js.undefined
       
-      var blockTime: js.UndefOr[Double] = js.native
+      var blockTime: js.UndefOr[Double] = js.undefined
       
-      var db_path: js.UndefOr[String] = js.native
+      var db_path: js.UndefOr[String] = js.undefined
       
-      var debug: js.UndefOr[Boolean] = js.native
+      var debug: js.UndefOr[Boolean] = js.undefined
       
-      var default_balance_ether: js.UndefOr[Double] = js.native
+      var default_balance_ether: js.UndefOr[Double] = js.undefined
       
-      var fork: js.UndefOr[String | js.Object] = js.native
+      var fork: js.UndefOr[String | js.Object] = js.undefined
       
-      var forkCacheSize: js.UndefOr[Double] = js.native
+      var forkCacheSize: js.UndefOr[Double] = js.undefined
       
-      var fork_block_number: js.UndefOr[String | Double] = js.native
+      var fork_block_number: js.UndefOr[String | Double] = js.undefined
       
-      var gasLimit: js.UndefOr[String | Double] = js.native
+      var gasLimit: js.UndefOr[String | Double] = js.undefined
       
-      var gasPrice: js.UndefOr[String] = js.native
+      var gasPrice: js.UndefOr[String] = js.undefined
       
-      var hardfork: js.UndefOr[byzantium | constantinople | petersburg | istanbul | muirGlacier] = js.native
+      var hardfork: js.UndefOr[byzantium | constantinople | petersburg | istanbul | muirGlacier] = js.undefined
       
-      var hd_path: js.UndefOr[String] = js.native
+      var hd_path: js.UndefOr[String] = js.undefined
       
-      var locked: js.UndefOr[Boolean] = js.native
+      var locked: js.UndefOr[Boolean] = js.undefined
       
-      var logger: js.UndefOr[Log] = js.native
+      var logger: js.UndefOr[Log] = js.undefined
       
-      var mnemonic: js.UndefOr[String] = js.native
+      var mnemonic: js.UndefOr[String] = js.undefined
       
-      var networkId: js.UndefOr[Double] = js.native
+      var networkId: js.UndefOr[Double] = js.undefined
       
-      var network_id: js.UndefOr[Double] = js.native
+      var network_id: js.UndefOr[Double] = js.undefined
       
-      var port: js.UndefOr[Double] = js.native
+      var port: js.UndefOr[Double] = js.undefined
       
-      var seed: js.UndefOr[js.Any] = js.native
+      var seed: js.UndefOr[js.Any] = js.undefined
       
-      var time: js.UndefOr[Date] = js.native
+      var time: js.UndefOr[Date] = js.undefined
       
-      var total_accounts: js.UndefOr[Double] = js.native
+      var total_accounts: js.UndefOr[Double] = js.undefined
       
-      var unlocked_accounts: js.UndefOr[js.Array[String]] = js.native
+      var unlocked_accounts: js.UndefOr[js.Array[String]] = js.undefined
       
-      var verbose: js.UndefOr[Boolean] = js.native
+      var verbose: js.UndefOr[Boolean] = js.undefined
       
-      var vmErrorsOnRPCResponse: js.UndefOr[Boolean] = js.native
+      var vmErrorsOnRPCResponse: js.UndefOr[Boolean] = js.undefined
       
-      var ws: js.UndefOr[Boolean] = js.native
+      var ws: js.UndefOr[Boolean] = js.undefined
     }
     object IProviderOptions {
       
@@ -276,10 +274,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait IServerOptions extends IProviderOptions {
+    trait IServerOptions
+      extends StObject
+         with IProviderOptions {
       
-      var keepAliveTimeout: js.UndefOr[Double] = js.native
+      var keepAliveTimeout: js.UndefOr[Double] = js.undefined
     }
     object IServerOptions {
       
@@ -300,23 +299,22 @@ object mod {
       }
     }
     
-    @js.native
     trait Provider extends StObject {
       
-      def close(callback: js.Function): Unit = js.native
+      def close(callback: js.Function): Unit
       
-      def on(`type`: String, callback: js.Function0[Unit]): Unit = js.native
+      def on(`type`: String, callback: js.Function0[Unit]): Unit
       
-      def once(`type`: String, callback: js.Function0[Unit]): Unit = js.native
+      def once(`type`: String, callback: js.Function0[Unit]): Unit
       
-      def removeAllListeners(`type`: String): Unit = js.native
+      def removeAllListeners(`type`: String): Unit
       
-      def removeListener(`type`: String, callback: js.Function0[Unit]): Unit = js.native
+      def removeListener(`type`: String, callback: js.Function0[Unit]): Unit
       
       def send(
         payload: JsonRpcPayload,
         callback: js.Function2[/* error */ Error | Null, /* result */ js.UndefOr[JsonRpcResponse], Unit]
-      ): Unit = js.native
+      ): Unit
     }
     object Provider {
       
@@ -366,21 +364,20 @@ object mod {
     }
   }
   
-  @js.native
   trait JsonRpcPayload extends StObject {
     
-    var id: js.UndefOr[String | Double] = js.native
+    var id: js.UndefOr[String | Double] = js.undefined
     
-    var jsonrpc: String = js.native
+    var jsonrpc: String
     
-    var method: String = js.native
+    var method: String
     
-    var params: js.Array[_] = js.native
+    var params: js.Array[js.Any]
   }
   object JsonRpcPayload {
     
     @scala.inline
-    def apply(jsonrpc: String, method: String, params: js.Array[_]): JsonRpcPayload = {
+    def apply(jsonrpc: String, method: String, params: js.Array[js.Any]): JsonRpcPayload = {
       val __obj = js.Dynamic.literal(jsonrpc = jsonrpc.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
       __obj.asInstanceOf[JsonRpcPayload]
     }
@@ -401,23 +398,22 @@ object mod {
       def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsVarargs(value: js.Any*): Self = StObject.set(x, "params", js.Array(value :_*))
     }
   }
   
-  @js.native
   trait JsonRpcResponse extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var id: Double = js.native
+    var id: Double
     
-    var jsonrpc: String = js.native
+    var jsonrpc: String
     
-    var result: js.UndefOr[js.Any] = js.native
+    var result: js.UndefOr[js.Any] = js.undefined
   }
   object JsonRpcResponse {
     

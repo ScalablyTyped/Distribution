@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,33 +15,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param dynamic - Whether this batch is dynamic (supports transforming mesh instances at runtime).
   * @param batchGroupId - Link this batch to a specific batch group. This is done automatically with default batches.
   */
-@js.native
 trait Batch extends StObject {
   
   /**
     * Link this batch to a specific batch group. This is done automatically with default batches.
     */
-  var batchGroupId: js.UndefOr[Double] = js.native
+  var batchGroupId: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether this batch is dynamic (supports transforming mesh instances at runtime).
     */
-  var dynamic: Boolean = js.native
+  var dynamic: Boolean
   
   /**
     * A single combined mesh instance, the result of batching.
     */
-  var meshInstance: MeshInstance = js.native
+  var meshInstance: MeshInstance
   
   /**
     * A handy model object.
     */
-  var model: Model = js.native
+  var model: Model
   
   /**
     * An array of original mesh instances, from which this batch was generated.
     */
-  var origMeshInstances: js.Array[MeshInstance] = js.native
+  var origMeshInstances: js.Array[MeshInstance]
 }
 object Batch {
   

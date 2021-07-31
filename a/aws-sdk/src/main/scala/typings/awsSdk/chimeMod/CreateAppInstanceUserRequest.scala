@@ -2,36 +2,34 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAppInstanceUserRequest extends StObject {
   
   /**
     * The ARN of the app instance request.
     */
-  var AppInstanceArn: ChimeArn = js.native
+  var AppInstanceArn: ChimeArn
   
   /**
     * The user ID of the app instance.
     */
-  var AppInstanceUserId: UserId = js.native
+  var AppInstanceUserId: UserId
   
   /**
     * The token assigned to the user requesting an app instance.
     */
-  var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken = js.native
+  var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken
   
   /**
     * The request's metadata. Limited to a 1KB string in UTF-8.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * The user's name.
     */
-  var Name: UserName = js.native
+  var Name: UserName
 }
 object CreateAppInstanceUserRequest {
   

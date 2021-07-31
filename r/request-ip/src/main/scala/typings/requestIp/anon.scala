@@ -2,15 +2,13 @@ package typings.requestIp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait RemoteAddress extends StObject {
     
-    var remoteAddress: js.UndefOr[String] = js.native
+    var remoteAddress: js.UndefOr[String] = js.undefined
   }
   object RemoteAddress {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Socket extends StObject {
     
-    var remoteAddress: js.UndefOr[String] = js.native
+    var remoteAddress: js.UndefOr[String] = js.undefined
     
-    var socket: js.UndefOr[RemoteAddress] = js.native
+    var socket: js.UndefOr[RemoteAddress] = js.undefined
   }
   object Socket {
     

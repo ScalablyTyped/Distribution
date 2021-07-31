@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OMathBorderBox extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val E: OMath = js.native
+  val E: OMath
   
-  var HideBot: Boolean = js.native
+  var HideBot: Boolean
   
-  var HideLeft: Boolean = js.native
+  var HideLeft: Boolean
   
-  var HideRight: Boolean = js.native
+  var HideRight: Boolean
   
-  var HideTop: Boolean = js.native
+  var HideTop: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var StrikeBLTR: Boolean = js.native
+  var StrikeBLTR: Boolean
   
-  var StrikeH: Boolean = js.native
+  var StrikeH: Boolean
   
-  var StrikeTLBR: Boolean = js.native
+  var StrikeTLBR: Boolean
   
-  var StrikeV: Boolean = js.native
+  var StrikeV: Boolean
   
   @JSName("Word.OMathBorderBox_typekey")
-  var WordDotOMathBorderBox_typekey: OMathBorderBox = js.native
+  var WordDotOMathBorderBox_typekey: OMathBorderBox
 }
 object OMathBorderBox {
   

@@ -10,9 +10,9 @@ TypeScript typings for Binary Authorization API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.binaryauthorization |
 | Keywords           | - |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 938 |
+| # downloads        | 1025 |
 | # stars            | 0 |
 
 ## Links

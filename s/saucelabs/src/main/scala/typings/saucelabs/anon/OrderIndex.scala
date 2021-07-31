@@ -2,19 +2,17 @@ package typings.saucelabs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderIndex extends StObject {
   
-  var metricNames: js.Array[String] = js.native
+  var metricNames: js.Array[String]
   
-  var orderIndex: Double = js.native
+  var orderIndex: Double
   
-  var regimeEnd: js.UndefOr[Double] = js.native
+  var regimeEnd: js.UndefOr[Double] = js.undefined
   
-  var regimeStart: js.UndefOr[Double] = js.native
+  var regimeStart: js.UndefOr[Double] = js.undefined
 }
 object OrderIndex {
   

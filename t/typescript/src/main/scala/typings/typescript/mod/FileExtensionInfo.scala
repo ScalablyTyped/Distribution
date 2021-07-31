@@ -2,23 +2,22 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileExtensionInfo extends StObject {
   
-  var extension: java.lang.String = js.native
+  var `extension`: java.lang.String
   
-  var isMixedContent: Boolean = js.native
+  var isMixedContent: Boolean
   
-  var scriptKind: js.UndefOr[ScriptKind] = js.native
+  var scriptKind: js.UndefOr[ScriptKind] = js.undefined
 }
 object FileExtensionInfo {
   
   @scala.inline
-  def apply(extension: java.lang.String, isMixedContent: Boolean): FileExtensionInfo = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], isMixedContent = isMixedContent.asInstanceOf[js.Any])
+  def apply(`extension`: java.lang.String, isMixedContent: Boolean): FileExtensionInfo = {
+    val __obj = js.Dynamic.literal(isMixedContent = isMixedContent.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FileExtensionInfo]
   }
   

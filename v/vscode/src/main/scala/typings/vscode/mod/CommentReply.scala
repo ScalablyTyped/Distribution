@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommentReply extends StObject {
   
   /**
     * The value in the comment editor
     */
-  var text: String = js.native
+  var text: String
   
   /**
     * The active [comment thread](#CommentThread)
     */
-  var thread: CommentThread = js.native
+  var thread: CommentThread
 }
 object CommentReply {
   

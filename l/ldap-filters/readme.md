@@ -12,7 +12,7 @@ Library for generating, parsing, and evaluating LDAP filters
 | Keywords           | ldap, filter, parser, generate, evaluate, match |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3125 |
+| # downloads        | 3508 |
 | # stars            | 2 |
 
 ## Links

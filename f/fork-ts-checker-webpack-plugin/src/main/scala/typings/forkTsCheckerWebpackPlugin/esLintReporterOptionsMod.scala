@@ -3,21 +3,19 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.eslintMod.CLIEngineOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esLintReporterOptionsMod {
   
-  @js.native
   trait EsLintReporterOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var files: String | js.Array[String] = js.native
+    var files: String | js.Array[String]
     
-    var memoryLimit: js.UndefOr[Double] = js.native
+    var memoryLimit: js.UndefOr[Double] = js.undefined
     
-    var options: js.UndefOr[CLIEngineOptions] = js.native
+    var options: js.UndefOr[CLIEngineOptions] = js.undefined
   }
   object EsLintReporterOptions {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MarkerRecordedEventAttributes extends StObject {
   
   /**
     * The ID of the DecisionTaskCompleted event corresponding to the decision task that resulted in the RecordMarker decision that requested this marker. This information can be useful for diagnosing problems by tracing back the chain of events leading up to this event.
     */
-  var decisionTaskCompletedEventId: EventId = js.native
+  var decisionTaskCompletedEventId: EventId
   
   /**
     * The details of the marker.
     */
-  var details: js.UndefOr[Data] = js.native
+  var details: js.UndefOr[Data] = js.undefined
   
   /**
     * The name of the marker.
     */
-  var markerName: MarkerName = js.native
+  var markerName: MarkerName
 }
 object MarkerRecordedEventAttributes {
   

@@ -2,25 +2,23 @@ package typings.moment.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait argThresholdOpts extends StObject {
   
-  var M: js.UndefOr[Double] = js.native
+  var M: js.UndefOr[Double] = js.undefined
   
-  var d: js.UndefOr[Double] = js.native
+  var d: js.UndefOr[Double] = js.undefined
   
-  var h: js.UndefOr[Double] = js.native
+  var h: js.UndefOr[Double] = js.undefined
   
-  var m: js.UndefOr[Double] = js.native
+  var m: js.UndefOr[Double] = js.undefined
   
-  var s: js.UndefOr[Double] = js.native
+  var s: js.UndefOr[Double] = js.undefined
   
-  var ss: js.UndefOr[Double] = js.native
+  var ss: js.UndefOr[Double] = js.undefined
   
-  var w: js.UndefOr[Double | Unit] = js.native
+  var w: js.UndefOr[Double | Unit] = js.undefined
 }
 object argThresholdOpts {
   

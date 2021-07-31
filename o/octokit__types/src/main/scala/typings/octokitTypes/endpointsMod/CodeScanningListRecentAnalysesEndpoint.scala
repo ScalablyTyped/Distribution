@@ -2,25 +2,23 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CodeScanningListRecentAnalysesEndpoint extends StObject {
   
-  var owner: String = js.native
+  var owner: String
   
   /**
     * Set a full Git reference to list alerts for a specific branch. The `ref` must be formatted as `refs/heads/<branch name>`.
     */
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
   
-  var repo: String = js.native
+  var repo: String
   
   /**
     * Set a single code scanning tool name to filter alerts by tool.
     */
-  var tool_name: js.UndefOr[String] = js.native
+  var tool_name: js.UndefOr[String] = js.undefined
 }
 object CodeScanningListRecentAnalysesEndpoint {
   

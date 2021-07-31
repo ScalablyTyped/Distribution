@@ -2,10 +2,13 @@ package typings.romans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("romans", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("romans", "allChars")
   @js.native
@@ -15,11 +18,9 @@ object mod {
   @js.native
   val allNumerals: js.Array[Double] = js.native
   
-  @JSImport("romans", "deromanize")
-  @js.native
-  def deromanize(romanStr: String): Double = js.native
+  @scala.inline
+  def deromanize(romanStr: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deromanize")(romanStr.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("romans", "romanize")
-  @js.native
-  def romanize(decimal: Double): String = js.native
+  @scala.inline
+  def romanize(decimal: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("romanize")(decimal.asInstanceOf[js.Any]).asInstanceOf[String]
 }

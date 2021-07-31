@@ -2,32 +2,31 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForStatement
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode
      with Statement {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var conditionExpression: js.UndefOr[Expression] = js.native
+  var conditionExpression: js.UndefOr[Expression] = js.undefined
   
-  var initExpression: js.UndefOr[SimpleStatement] = js.native
+  var initExpression: js.UndefOr[SimpleStatement] = js.undefined
   
-  var loopExpression: js.UndefOr[ExpressionStatement] = js.native
+  var loopExpression: js.UndefOr[ExpressionStatement] = js.undefined
   
   @JSName("type")
-  var type_ForStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement = js.native
+  var type_ForStatement: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement
 }
 object ForStatement {
   
   @scala.inline
-  def apply(body: Statement, `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ForStatement): ForStatement = {
+  def apply(body: Statement): ForStatement = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForStatement")
     __obj.asInstanceOf[ForStatement]
   }
   

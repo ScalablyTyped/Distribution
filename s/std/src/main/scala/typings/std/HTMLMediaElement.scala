@@ -4,12 +4,13 @@ import typings.std.stdStrings.encrypted
 import typings.std.stdStrings.waitingforkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Adds to HTMLElement the properties and methods needed to support basic media-related capabilities that are common to audio and video. */
 @js.native
-trait HTMLMediaElement extends HTMLElement {
+trait HTMLMediaElement
+  extends StObject
+     with HTMLElement {
   
   val HAVE_CURRENT_DATA: Double = js.native
   
@@ -29,42 +30,52 @@ trait HTMLMediaElement extends HTMLElement {
   
   val NETWORK_NO_SOURCE: Double = js.native
   
-  @JSName("addEventListener")
-  def addEventListener_encrypted(
-    `type`: encrypted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_encrypted(
-    `type`: encrypted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("addEventListener")
-  def addEventListener_encrypted(
-    `type`: encrypted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(`type`: java.lang.String, listener: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def addEventListener(
+    `type`: java.lang.String,
+    listener: EventListenerOrEventListenerObject,
     options: AddEventListenerOptions
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_waitingforkey(`type`: waitingforkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def addEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, js.Any]
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, js.Any],
+    options: AddEventListenerOptions
+  ): Unit = js.native
+  @JSName("addEventListener")
+  def addEventListener_waitingforkey(`type`: waitingforkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_waitingforkey(
     `type`: waitingforkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_waitingforkey(
     `type`: waitingforkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: AddEventListenerOptions
   ): Unit = js.native
   
   def addTextTrack(kind: TextTrackKind): TextTrack = js.native
-  def addTextTrack(kind: TextTrackKind, label: js.UndefOr[scala.Nothing], language: java.lang.String): TextTrack = js.native
   def addTextTrack(kind: TextTrackKind, label: java.lang.String): TextTrack = js.native
   def addTextTrack(kind: TextTrackKind, label: java.lang.String, language: java.lang.String): TextTrack = js.native
+  def addTextTrack(kind: TextTrackKind, label: Unit, language: java.lang.String): TextTrack = js.native
   
   /**
     * Gets or sets a value that indicates whether to start playing the media automatically.
@@ -144,9 +155,9 @@ trait HTMLMediaElement extends HTMLElement {
     */
   val networkState: Double = js.native
   
-  var onencrypted: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]) | Null = js.native
+  var onencrypted: (js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, js.Any]) | Null = js.native
   
-  var onwaitingforkey: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]) | Null = js.native
+  var onwaitingforkey: (js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]) | Null = js.native
   
   /**
     * Pauses the current playback and sets paused to TRUE. This can be used to test whether the media is playing or paused. You can also use the pause or play events to tell whether the media is playing or not.
@@ -180,35 +191,45 @@ trait HTMLMediaElement extends HTMLElement {
   
   val readyState: Double = js.native
   
-  @JSName("removeEventListener")
-  def removeEventListener_encrypted(
-    `type`: encrypted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _]
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_encrypted(
-    `type`: encrypted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
-    options: scala.Boolean
-  ): Unit = js.native
-  @JSName("removeEventListener")
-  def removeEventListener_encrypted(
-    `type`: encrypted,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, _],
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(`type`: java.lang.String, callback: EventListenerOrEventListenerObject, options: scala.Boolean): Unit = js.native
+  /* InferMemberOverrides */
+  override def removeEventListener(
+    `type`: java.lang.String,
+    callback: EventListenerOrEventListenerObject,
     options: EventListenerOptions
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_waitingforkey(`type`: waitingforkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _]): Unit = js.native
+  def removeEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, js.Any]
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, js.Any],
+    options: scala.Boolean
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_encrypted(
+    `type`: encrypted,
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ MediaEncryptedEvent, js.Any],
+    options: EventListenerOptions
+  ): Unit = js.native
+  @JSName("removeEventListener")
+  def removeEventListener_waitingforkey(`type`: waitingforkey, listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_waitingforkey(
     `type`: waitingforkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: scala.Boolean
   ): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_waitingforkey(
     `type`: waitingforkey,
-    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, _],
+    listener: js.ThisFunction1[/* this */ this.type, /* ev */ Event, js.Any],
     options: EventListenerOptions
   ): Unit = js.native
   

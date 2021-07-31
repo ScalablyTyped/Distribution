@@ -6,21 +6,18 @@ import typings.std.AsyncIterableIterator
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
-  def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: String,
     filter: FilterFunction[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
   /**
   	Promisify an event by waiting for it to be emitted.
   	@param emitter - Event emitter object. Should have either a `.on()`/`.addListener()`/`.addEventListener()` and `.off()`/`.removeListener()`/`.removeEventListener()` method, like the [Node.js `EventEmitter`](https://nodejs.org/api/events.html) and [DOM events](https://developer.mozilla.org/en-US/docs/Web/Events).
@@ -48,68 +45,58 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
-  def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  @scala.inline
+  def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: String,
     options: MultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: String,
     options: Options[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
-  def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Array[String | js.Symbol]): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
+  def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Array[String | js.Symbol]): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[String | js.Symbol],
     filter: FilterFunction[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
-  def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
+  def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: js.Array[String | js.Symbol],
     options: MultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[String | js.Symbol],
     options: Options[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
-  def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Symbol): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
+  def apply[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Symbol): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
     filter: FilterFunction[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
-  def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
+  def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: js.Symbol,
     options: MultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[EmittedType] = js.native
-  @JSImport("p-event", JSImport.Namespace)
-  @js.native
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
+  @scala.inline
   def apply[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
     options: Options[js.Array[EmittedType]]
-  ): CancelablePromise[EmittedType] = js.native
+  ): CancelablePromise[EmittedType] = (^.asInstanceOf[js.Dynamic].apply(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[EmittedType]]
   
   @JSImport("p-event", JSImport.Namespace)
   @js.native
@@ -128,8 +115,19 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("p-event", "TimeoutError")
   @js.native
-  class TimeoutErrorCls () extends TimeoutErrorClass {
+  class TimeoutErrorCls ()
+    extends StObject
+       with TimeoutErrorClass {
     def this(message: String) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_TimeoutErrorClass: typings.pEvent.pEventStrings.TimeoutError = js.native
   }
   
   @scala.inline
@@ -138,16 +136,14 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pEvent */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @JSImport("p-event", "iterator")
-  @js.native
-  def iterator[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
+  @scala.inline
+  def iterator[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: String): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: String,
     filter: FilterFunction[js.Array[EmittedType]]
-  ): AsyncIterableIterator[EmittedType] = js.native
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
   /**
   	@returns An [async iterator](https://2ality.com/2016/10/asynchronous-iteration.html) that lets you asynchronously iterate over events of `event` emitted from `emitter`. The iterator ends when `emitter` emits an event matching any of the events defined in `resolutionEvents`, or rejects if `emitter` emits any of the events defined in the `rejectionEvents` option.
   	@example
@@ -164,116 +160,100 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-event", "iterator")
-  @js.native
-  def iterator[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  @scala.inline
+  def iterator[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: String,
     options: IteratorMultiArgumentsOptions[EmittedType]
-  ): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: String,
     options: IteratorOptions[js.Array[EmittedType]]
-  ): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
-  def iterator[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Array[String | js.Symbol]): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
+  def iterator[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Array[String | js.Symbol]): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[String | js.Symbol],
     filter: FilterFunction[js.Array[EmittedType]]
-  ): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
-  def iterator[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
+  def iterator[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: js.Array[String | js.Symbol],
     options: IteratorMultiArgumentsOptions[EmittedType]
-  ): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[String | js.Symbol],
     options: IteratorOptions[js.Array[EmittedType]]
-  ): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
-  def iterator[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Symbol): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
+  def iterator[EventName /* <: String | js.Symbol */, EmittedType](emitter: Emitter[EventName, js.Array[EmittedType]], event: js.Symbol): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
     filter: FilterFunction[js.Array[EmittedType]]
-  ): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
-  def iterator[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
+  def iterator[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: js.Symbol,
     options: IteratorMultiArgumentsOptions[EmittedType]
-  ): AsyncIterableIterator[EmittedType] = js.native
-  @JSImport("p-event", "iterator")
-  @js.native
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
+  @scala.inline
   def iterator[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
     options: IteratorOptions[js.Array[EmittedType]]
-  ): AsyncIterableIterator[EmittedType] = js.native
+  ): AsyncIterableIterator[EmittedType] = (^.asInstanceOf[js.Dynamic].applyDynamic("iterator")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterableIterator[EmittedType]]
   
   /**
   	Wait for multiple event emissions. Returns an array.
   	*/
-  @JSImport("p-event", "multiple")
-  @js.native
-  def multiple[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  @scala.inline
+  def multiple[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: String,
     options: MultipleMultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[js.Array[EmittedType]] = js.native
-  @JSImport("p-event", "multiple")
-  @js.native
+  ): CancelablePromise[js.Array[EmittedType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[EmittedType]]]
+  @scala.inline
   def multiple[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: String,
     options: MultipleOptions[js.Array[EmittedType]]
-  ): CancelablePromise[js.Array[EmittedType]] = js.native
-  @JSImport("p-event", "multiple")
-  @js.native
-  def multiple[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  ): CancelablePromise[js.Array[EmittedType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[EmittedType]]]
+  @scala.inline
+  def multiple[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: js.Array[String | js.Symbol],
     options: MultipleMultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[js.Array[EmittedType]] = js.native
-  @JSImport("p-event", "multiple")
-  @js.native
+  ): CancelablePromise[js.Array[EmittedType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[EmittedType]]]
+  @scala.inline
   def multiple[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Array[String | js.Symbol],
     options: MultipleOptions[js.Array[EmittedType]]
-  ): CancelablePromise[js.Array[EmittedType]] = js.native
-  @JSImport("p-event", "multiple")
-  @js.native
-  def multiple[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](
+  ): CancelablePromise[js.Array[EmittedType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[EmittedType]]]
+  @scala.inline
+  def multiple[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](
     emitter: Emitter[EventName, EmittedType],
     event: js.Symbol,
     options: MultipleMultiArgumentsOptions[EmittedType]
-  ): CancelablePromise[js.Array[EmittedType]] = js.native
-  @JSImport("p-event", "multiple")
-  @js.native
+  ): CancelablePromise[js.Array[EmittedType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[EmittedType]]]
+  @scala.inline
   def multiple[EventName /* <: String | js.Symbol */, EmittedType](
     emitter: Emitter[EventName, js.Array[EmittedType]],
     event: js.Symbol,
     options: MultipleOptions[js.Array[EmittedType]]
-  ): CancelablePromise[js.Array[EmittedType]] = js.native
+  ): CancelablePromise[js.Array[EmittedType]] = (^.asInstanceOf[js.Dynamic].applyDynamic("multiple")(emitter.asInstanceOf[js.Any], event.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[CancelablePromise[js.Array[EmittedType]]]
   
-  type AddRemoveListener[EventName /* <: String | js.Symbol */, Arguments /* <: js.Array[_] */] = js.Function2[
+  type AddRemoveListener[EventName /* <: String | js.Symbol */, Arguments /* <: js.Array[js.Any] */] = js.Function2[
     /* event */ EventName, 
     /* listener */ js.Function1[/* arguments */ Arguments, Unit], 
     Unit
@@ -286,31 +266,30 @@ object mod {
     def cancel(): Unit = js.native
   }
   
-  @js.native
-  trait Emitter[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */] extends StObject {
+  trait Emitter[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */] extends StObject {
     
-    var addEventListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.native
+    var addEventListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.undefined
     
-    var addListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.native
+    var addListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.undefined
     
-    var off: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.native
+    var off: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.undefined
     
-    var on: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.native
+    var on: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.undefined
     
-    var removeEventListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.native
+    var removeEventListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.undefined
     
-    var removeListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.native
+    var removeListener: js.UndefOr[AddRemoveListener[EventName, EmittedType]] = js.undefined
   }
   object Emitter {
     
     @scala.inline
-    def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */](): Emitter[EventName, EmittedType] = {
+    def apply[EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */](): Emitter[EventName, EmittedType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Emitter[EventName, EmittedType]]
     }
     
     @scala.inline
-    implicit class EmitterMutableBuilder[Self <: Emitter[_, _], EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[_] */] (val x: Self with (Emitter[EventName, EmittedType])) extends AnyVal {
+    implicit class EmitterMutableBuilder[Self <: Emitter[?, ?], EventName /* <: String | js.Symbol */, EmittedType /* <: js.Array[js.Any] */] (val x: Self & (Emitter[EventName, EmittedType])) extends AnyVal {
       
       @scala.inline
       def setAddEventListener(value: (EventName, /* listener */ js.Function1[EmittedType, Unit]) => Unit): Self = StObject.set(x, "addEventListener", js.Any.fromFunction2(value))
@@ -350,55 +329,57 @@ object mod {
     }
   }
   
-  type FilterFunction[ElementType /* <: js.Array[_] */] = js.Function1[/* arguments */ ElementType, Boolean]
+  type FilterFunction[ElementType /* <: js.Array[js.Any] */] = js.Function1[/* arguments */ ElementType, Boolean]
   
-  @js.native
-  trait IteratorMultiArgumentsOptions[EmittedType /* <: js.Array[_] */] extends IteratorOptions[EmittedType] {
+  trait IteratorMultiArgumentsOptions[EmittedType /* <: js.Array[js.Any] */]
+    extends StObject
+       with IteratorOptions[EmittedType] {
     
     @JSName("multiArgs")
-    var multiArgs_IteratorMultiArgumentsOptions: `true` = js.native
+    var multiArgs_IteratorMultiArgumentsOptions: `true`
   }
   object IteratorMultiArgumentsOptions {
     
     @scala.inline
-    def apply[EmittedType /* <: js.Array[_] */](multiArgs: `true`): IteratorMultiArgumentsOptions[EmittedType] = {
-      val __obj = js.Dynamic.literal(multiArgs = multiArgs.asInstanceOf[js.Any])
+    def apply[EmittedType /* <: js.Array[js.Any] */](): IteratorMultiArgumentsOptions[EmittedType] = {
+      val __obj = js.Dynamic.literal(multiArgs = true)
       __obj.asInstanceOf[IteratorMultiArgumentsOptions[EmittedType]]
     }
     
     @scala.inline
-    implicit class IteratorMultiArgumentsOptionsMutableBuilder[Self <: IteratorMultiArgumentsOptions[_], EmittedType /* <: js.Array[_] */] (val x: Self with IteratorMultiArgumentsOptions[EmittedType]) extends AnyVal {
+    implicit class IteratorMultiArgumentsOptionsMutableBuilder[Self <: IteratorMultiArgumentsOptions[?], EmittedType /* <: js.Array[js.Any] */] (val x: Self & IteratorMultiArgumentsOptions[EmittedType]) extends AnyVal {
       
       @scala.inline
       def setMultiArgs(value: `true`): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait IteratorOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedType] {
+  trait IteratorOptions[EmittedType /* <: js.Array[js.Any] */]
+    extends StObject
+       with Options[EmittedType] {
     
     /**
     		Maximum number of events for the iterator before it ends. When the limit is reached, the iterator will be marked as `done`. This option is useful to paginate events, for example, fetching 10 events per page.
     		@default Infinity
     		*/
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
     /**
     		Events that will end the iterator.
     		@default []
     		*/
-    var resolutionEvents: js.UndefOr[js.Array[String | js.Symbol]] = js.native
+    var resolutionEvents: js.UndefOr[js.Array[String | js.Symbol]] = js.undefined
   }
   object IteratorOptions {
     
     @scala.inline
-    def apply[EmittedType /* <: js.Array[_] */](): IteratorOptions[EmittedType] = {
+    def apply[EmittedType /* <: js.Array[js.Any] */](): IteratorOptions[EmittedType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[IteratorOptions[EmittedType]]
     }
     
     @scala.inline
-    implicit class IteratorOptionsMutableBuilder[Self <: IteratorOptions[_], EmittedType /* <: js.Array[_] */] (val x: Self with IteratorOptions[EmittedType]) extends AnyVal {
+    implicit class IteratorOptionsMutableBuilder[Self <: IteratorOptions[?], EmittedType /* <: js.Array[js.Any] */] (val x: Self & IteratorOptions[EmittedType]) extends AnyVal {
       
       @scala.inline
       def setLimit(value: Double): Self = StObject.set(x, "limit", value.asInstanceOf[js.Any])
@@ -417,57 +398,60 @@ object mod {
     }
   }
   
-  @js.native
-  trait MultiArgumentsOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedType] {
+  trait MultiArgumentsOptions[EmittedType /* <: js.Array[js.Any] */]
+    extends StObject
+       with Options[EmittedType] {
     
     @JSName("multiArgs")
-    val multiArgs_MultiArgumentsOptions: `true` = js.native
+    val multiArgs_MultiArgumentsOptions: `true`
   }
   object MultiArgumentsOptions {
     
     @scala.inline
-    def apply[EmittedType /* <: js.Array[_] */](multiArgs: `true`): MultiArgumentsOptions[EmittedType] = {
-      val __obj = js.Dynamic.literal(multiArgs = multiArgs.asInstanceOf[js.Any])
+    def apply[EmittedType /* <: js.Array[js.Any] */](): MultiArgumentsOptions[EmittedType] = {
+      val __obj = js.Dynamic.literal(multiArgs = true)
       __obj.asInstanceOf[MultiArgumentsOptions[EmittedType]]
     }
     
     @scala.inline
-    implicit class MultiArgumentsOptionsMutableBuilder[Self <: MultiArgumentsOptions[_], EmittedType /* <: js.Array[_] */] (val x: Self with MultiArgumentsOptions[EmittedType]) extends AnyVal {
+    implicit class MultiArgumentsOptionsMutableBuilder[Self <: MultiArgumentsOptions[?], EmittedType /* <: js.Array[js.Any] */] (val x: Self & MultiArgumentsOptions[EmittedType]) extends AnyVal {
       
       @scala.inline
       def setMultiArgs(value: `true`): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MultipleMultiArgumentsOptions[EmittedType /* <: js.Array[_] */] extends MultipleOptions[EmittedType] {
+  trait MultipleMultiArgumentsOptions[EmittedType /* <: js.Array[js.Any] */]
+    extends StObject
+       with MultipleOptions[EmittedType] {
     
     @JSName("multiArgs")
-    val multiArgs_MultipleMultiArgumentsOptions: `true` = js.native
+    val multiArgs_MultipleMultiArgumentsOptions: `true`
   }
   object MultipleMultiArgumentsOptions {
     
     @scala.inline
-    def apply[EmittedType /* <: js.Array[_] */](count: Double, multiArgs: `true`): MultipleMultiArgumentsOptions[EmittedType] = {
-      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], multiArgs = multiArgs.asInstanceOf[js.Any])
+    def apply[EmittedType /* <: js.Array[js.Any] */](count: Double): MultipleMultiArgumentsOptions[EmittedType] = {
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], multiArgs = true)
       __obj.asInstanceOf[MultipleMultiArgumentsOptions[EmittedType]]
     }
     
     @scala.inline
-    implicit class MultipleMultiArgumentsOptionsMutableBuilder[Self <: MultipleMultiArgumentsOptions[_], EmittedType /* <: js.Array[_] */] (val x: Self with MultipleMultiArgumentsOptions[EmittedType]) extends AnyVal {
+    implicit class MultipleMultiArgumentsOptionsMutableBuilder[Self <: MultipleMultiArgumentsOptions[?], EmittedType /* <: js.Array[js.Any] */] (val x: Self & MultipleMultiArgumentsOptions[EmittedType]) extends AnyVal {
       
       @scala.inline
       def setMultiArgs(value: `true`): Self = StObject.set(x, "multiArgs", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
-  trait MultipleOptions[EmittedType /* <: js.Array[_] */] extends Options[EmittedType] {
+  trait MultipleOptions[EmittedType /* <: js.Array[js.Any] */]
+    extends StObject
+       with Options[EmittedType] {
     
     /**
     		The number of times the event needs to be emitted before the promise resolves.
     		*/
-    val count: Double = js.native
+    val count: Double
     
     /**
     		Whether to resolve the promise immediately. Emitting one of the `rejectionEvents` won't throw an error.
@@ -496,18 +480,18 @@ object mod {
     		//=> ['Jack', 'Mark']
     		```
     		*/
-    val resolveImmediately: js.UndefOr[Boolean] = js.native
+    val resolveImmediately: js.UndefOr[Boolean] = js.undefined
   }
   object MultipleOptions {
     
     @scala.inline
-    def apply[EmittedType /* <: js.Array[_] */](count: Double): MultipleOptions[EmittedType] = {
+    def apply[EmittedType /* <: js.Array[js.Any] */](count: Double): MultipleOptions[EmittedType] = {
       val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any])
       __obj.asInstanceOf[MultipleOptions[EmittedType]]
     }
     
     @scala.inline
-    implicit class MultipleOptionsMutableBuilder[Self <: MultipleOptions[_], EmittedType /* <: js.Array[_] */] (val x: Self with MultipleOptions[EmittedType]) extends AnyVal {
+    implicit class MultipleOptionsMutableBuilder[Self <: MultipleOptions[?], EmittedType /* <: js.Array[js.Any] */] (val x: Self & MultipleOptions[EmittedType]) extends AnyVal {
       
       @scala.inline
       def setCount(value: Double): Self = StObject.set(x, "count", value.asInstanceOf[js.Any])
@@ -520,8 +504,7 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options[EmittedType /* <: js.Array[_] */] extends StObject {
+  trait Options[EmittedType /* <: js.Array[js.Any] */] extends StObject {
     
     /**
     		Filter function for accepting an event.
@@ -535,7 +518,7 @@ object mod {
     		})();
     		```
     		*/
-    val filter: js.UndefOr[FilterFunction[EmittedType]] = js.native
+    val filter: js.UndefOr[FilterFunction[EmittedType]] = js.undefined
     
     /**
     		By default, the promisified function will only return the first argument from the event callback, which works fine for most APIs. This option can be useful for APIs that return multiple arguments in the callback. Turning this on will make it return an array of all arguments from the callback, instead of just the first argument. This also applies to rejections.
@@ -549,30 +532,30 @@ object mod {
     		})();
     		```
     		*/
-    val multiArgs: js.UndefOr[Boolean] = js.native
+    val multiArgs: js.UndefOr[Boolean] = js.undefined
     
     /**
     		Events that will reject the promise.
     		@default ['error']
     		*/
-    val rejectionEvents: js.UndefOr[js.Array[String | js.Symbol]] = js.native
+    val rejectionEvents: js.UndefOr[js.Array[String | js.Symbol]] = js.undefined
     
     /**
     		Time in milliseconds before timing out.
     		@default Infinity
     		*/
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
     @scala.inline
-    def apply[EmittedType /* <: js.Array[_] */](): Options[EmittedType] = {
+    def apply[EmittedType /* <: js.Array[js.Any] */](): Options[EmittedType] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options[EmittedType]]
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], EmittedType /* <: js.Array[_] */] (val x: Self with Options[EmittedType]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], EmittedType /* <: js.Array[js.Any] */] (val x: Self & Options[EmittedType]) extends AnyVal {
       
       @scala.inline
       def setFilter(value: EmittedType => Boolean): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
@@ -603,17 +586,18 @@ object mod {
     }
   }
   
-  @js.native
-  trait TimeoutErrorClass extends Error {
+  trait TimeoutErrorClass
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_TimeoutErrorClass: typings.pEvent.pEventStrings.TimeoutError = js.native
+    val name_TimeoutErrorClass: typings.pEvent.pEventStrings.TimeoutError
   }
   object TimeoutErrorClass {
     
     @scala.inline
-    def apply(message: String, name: typings.pEvent.pEventStrings.TimeoutError): TimeoutErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def apply(message: String): TimeoutErrorClass = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "TimeoutError")
       __obj.asInstanceOf[TimeoutErrorClass]
     }
     

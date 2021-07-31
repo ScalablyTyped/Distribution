@@ -9,26 +9,24 @@ import typings.gaeaModel.gaeaModelStrings.viewport
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrentDragComponentInfo extends StObject {
   
-  var comboInfo: js.UndefOr[Source] = js.native
+  var comboInfo: js.UndefOr[Source] = js.undefined
   
   // 开始拖拽在父级中的位置
-  var dragStartIndex: Double = js.native
+  var dragStartIndex: Double
   
   // 开始拖拽父级的 dom
-  var dragStartParentElement: HTMLElement = js.native
+  var dragStartParentElement: HTMLElement
   
-  var newInfo: js.UndefOr[UniqueKey] = js.native
+  var newInfo: js.UndefOr[UniqueKey] = js.undefined
   
   // 类型
-  var `type`: `new` | combo | viewport = js.native
+  var `type`: `new` | combo | viewport
   
-  var viewportInfo: js.UndefOr[MapUniqueKey] = js.native
+  var viewportInfo: js.UndefOr[MapUniqueKey] = js.undefined
 }
 object CurrentDragComponentInfo {
   

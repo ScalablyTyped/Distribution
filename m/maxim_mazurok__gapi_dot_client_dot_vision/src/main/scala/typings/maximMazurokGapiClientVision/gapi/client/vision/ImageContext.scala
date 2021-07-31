@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageContext extends StObject {
   
   /** Parameters for crop hints annotation request. */
-  var cropHintsParams: js.UndefOr[CropHintsParams] = js.native
+  var cropHintsParams: js.UndefOr[CropHintsParams] = js.undefined
   
   /**
     * List of languages to use for TEXT_DETECTION. In most cases, an empty value yields the best results since it enables automatic language detection. For languages based on the Latin
@@ -17,16 +15,16 @@ trait ImageContext extends StObject {
     * be a significant hindrance if the hint is wrong). Text detection returns an error if one or more of the specified languages is not one of the [supported
     * languages](https://cloud.google.com/vision/docs/languages).
     */
-  var languageHints: js.UndefOr[js.Array[String]] = js.native
+  var languageHints: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Not used. */
-  var latLongRect: js.UndefOr[LatLongRect] = js.native
+  var latLongRect: js.UndefOr[LatLongRect] = js.undefined
   
   /** Parameters for product search. */
-  var productSearchParams: js.UndefOr[ProductSearchParams] = js.native
+  var productSearchParams: js.UndefOr[ProductSearchParams] = js.undefined
   
   /** Parameters for web detection. */
-  var webDetectionParams: js.UndefOr[WebDetectionParams] = js.native
+  var webDetectionParams: js.UndefOr[WebDetectionParams] = js.undefined
 }
 object ImageContext {
   

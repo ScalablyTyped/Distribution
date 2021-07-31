@@ -7,21 +7,19 @@ import typings.astTypes.kindsMod.PatternKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Guard extends StObject {
   
-  var body: BlockStatementKind = js.native
+  var body: BlockStatementKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var guard: js.UndefOr[ExpressionKind | Null] = js.native
+  var guard: js.UndefOr[ExpressionKind | Null] = js.undefined
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var param: js.UndefOr[PatternKind | Null] = js.native
+  var param: js.UndefOr[PatternKind | Null] = js.undefined
 }
 object Guard {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageFailure extends StObject {
   
   /**
     * The code associated with the failure.
     */
-  var failureCode: js.UndefOr[ImageFailureCode] = js.native
+  var failureCode: js.UndefOr[ImageFailureCode] = js.undefined
   
   /**
     * The reason for the failure.
     */
-  var failureReason: js.UndefOr[ImageFailureReason] = js.native
+  var failureReason: js.UndefOr[ImageFailureReason] = js.undefined
   
   /**
     * The image ID associated with the failure.
     */
-  var imageId: js.UndefOr[ImageIdentifier] = js.native
+  var imageId: js.UndefOr[ImageIdentifier] = js.undefined
 }
 object ImageFailure {
   

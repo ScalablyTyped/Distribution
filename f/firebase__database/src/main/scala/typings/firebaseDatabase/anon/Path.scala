@@ -2,15 +2,13 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Path[T] extends StObject {
   
-  var path: typings.firebaseDatabase.pathMod.Path = js.native
+  var path: typings.firebaseDatabase.pathMod.Path
   
-  var value: T = js.native
+  var value: T
 }
 object Path {
   
@@ -21,7 +19,7 @@ object Path {
   }
   
   @scala.inline
-  implicit class PathMutableBuilder[Self <: Path[_], T] (val x: Self with Path[T]) extends AnyVal {
+  implicit class PathMutableBuilder[Self <: Path[?], T] (val x: Self & Path[T]) extends AnyVal {
     
     @scala.inline
     def setPath(value: typings.firebaseDatabase.pathMod.Path): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])

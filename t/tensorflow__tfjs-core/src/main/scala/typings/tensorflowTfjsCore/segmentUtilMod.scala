@@ -4,33 +4,32 @@ import typings.tensorflowTfjsCore.distTensorMod.Tensor
 import typings.tensorflowTfjsCore.distTypesMod.Rank
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentUtilMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/segment_util", "collectGatherOpShapeInfo")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/segment_util", JSImport.Namespace)
   @js.native
-  def collectGatherOpShapeInfo(x: Tensor[Rank], indices: Tensor[Rank], axis: Double): GatherOpShapeInfo = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/segment_util", "computeOutShape")
-  @js.native
-  def computeOutShape(aShape: js.Array[Double], axis: Double, numSegments: Double): js.Array[Double] = js.native
+  @scala.inline
+  def collectGatherOpShapeInfo(x: Tensor[Rank], indices: Tensor[Rank], axis: Double): GatherOpShapeInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("collectGatherOpShapeInfo")(x.asInstanceOf[js.Any], indices.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[GatherOpShapeInfo]
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/segment_util", "segOpComputeOptimalWindowSize")
-  @js.native
-  def segOpComputeOptimalWindowSize(inSize: Double, numSegments: Double): Double = js.native
+  @scala.inline
+  def computeOutShape(aShape: js.Array[Double], axis: Double, numSegments: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeOutShape")(aShape.asInstanceOf[js.Any], axis.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @js.native
+  @scala.inline
+  def segOpComputeOptimalWindowSize(inSize: Double, numSegments: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("segOpComputeOptimalWindowSize")(inSize.asInstanceOf[js.Any], numSegments.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
   trait GatherOpShapeInfo extends StObject {
     
-    var batchSize: Double = js.native
+    var batchSize: Double
     
-    var dimSize: Double = js.native
+    var dimSize: Double
     
-    var outputShape: js.Array[Double] = js.native
+    var outputShape: js.Array[Double]
     
-    var sliceSize: Double = js.native
+    var sliceSize: Double
   }
   object GatherOpShapeInfo {
     
@@ -60,16 +59,15 @@ object segmentUtilMod {
     }
   }
   
-  @js.native
   trait SegOpInfo extends StObject {
     
-    var batchSize: Double = js.native
+    var batchSize: Double
     
-    var inSize: Double = js.native
+    var inSize: Double
     
-    var numSegments: Double = js.native
+    var numSegments: Double
     
-    var windowSize: Double = js.native
+    var windowSize: Double
   }
   object SegOpInfo {
     

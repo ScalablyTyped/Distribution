@@ -4,14 +4,16 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.astTypes.astTypesMod.Fork
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scopeMod {
   
-  @JSImport("ast-types/lib/scope", JSImport.Default)
+  @JSImport("ast-types/lib/scope", JSImport.Namespace)
   @js.native
-  def default(fork: Fork): ScopeConstructor = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(fork: Fork): ScopeConstructor = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(fork.asInstanceOf[js.Any]).asInstanceOf[ScopeConstructor]
   
   @js.native
   trait Scope extends StObject {
@@ -57,7 +59,8 @@ object scopeMod {
   
   @js.native
   trait ScopeConstructor
-    extends Instantiable2[/* path */ js.Any, /* parentScope */ js.Any, Scope] {
+    extends StObject
+       with Instantiable2[/* path */ js.Any, /* parentScope */ js.Any, Scope] {
     
     def isEstablishedBy(node: js.Any): js.Any = js.native
   }

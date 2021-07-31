@@ -2,15 +2,13 @@ package typings.bson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Relaxed extends StObject {
     
-    var relaxed: js.UndefOr[Boolean] = js.native
+    var relaxed: js.UndefOr[Boolean] = js.undefined
   }
   object Relaxed {
     

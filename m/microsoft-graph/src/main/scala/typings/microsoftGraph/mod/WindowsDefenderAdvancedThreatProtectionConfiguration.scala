@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsDefenderAdvancedThreatProtectionConfiguration extends DeviceConfiguration {
+trait WindowsDefenderAdvancedThreatProtectionConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Windows Defender AdvancedThreatProtection 'Allow Sample Sharing' Rule
-  var allowSampleSharing: js.UndefOr[Boolean] = js.native
+  var allowSampleSharing: js.UndefOr[Boolean] = js.undefined
   
   // Expedite Windows Defender Advanced Threat Protection telemetry reporting frequency.
-  var enableExpeditedTelemetryReporting: js.UndefOr[Boolean] = js.native
+  var enableExpeditedTelemetryReporting: js.UndefOr[Boolean] = js.undefined
 }
 object WindowsDefenderAdvancedThreatProtectionConfiguration {
   

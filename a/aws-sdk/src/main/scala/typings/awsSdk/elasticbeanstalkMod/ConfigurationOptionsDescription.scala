@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationOptionsDescription extends StObject {
   
   /**
     *  A list of ConfigurationOptionDescription. 
     */
-  var Options: js.UndefOr[ConfigurationOptionDescriptionsList] = js.native
+  var Options: js.UndefOr[ConfigurationOptionDescriptionsList] = js.undefined
   
   /**
     * The ARN of the platform version.
     */
-  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
+  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.undefined
   
   /**
     * The name of the solution stack these configuration options belong to.
     */
-  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.native
+  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.undefined
 }
 object ConfigurationOptionsDescription {
   

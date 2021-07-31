@@ -7,7 +7,6 @@ import typings.postcssModulesLocalByDefault.postcssModulesLocalByDefaultStrings.
 import typings.postcssModulesLocalByDefault.postcssModulesLocalByDefaultStrings.pure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,12 +17,11 @@ object mod extends Shortcut {
   
   type LocalByDefault = Plugin_[Options]
   
-  @js.native
   trait Options extends StObject {
     
-    var mode: js.UndefOr[global | local | pure] = js.native
+    var mode: js.UndefOr[global | local | pure] = js.undefined
     
-    var rewriteUrl: js.UndefOr[js.Function2[/* global */ Boolean, /* url */ String, String]] = js.native
+    var rewriteUrl: js.UndefOr[js.Function2[/* global */ Boolean, /* url */ String, String]] = js.undefined
   }
   object Options {
     

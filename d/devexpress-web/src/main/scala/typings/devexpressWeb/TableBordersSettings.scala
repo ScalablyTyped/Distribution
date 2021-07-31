@@ -2,49 +2,47 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains settings to define table borders.
   */
-@js.native
 trait TableBordersSettings extends StObject {
   
   /**
     * Gets or sets the background color of table borders.
     */
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
   /**
     * Gets or sets the bottom border's settings.
     */
-  var bottom: TableBorderSettings = js.native
+  var bottom: TableBorderSettings
   
   /**
     * Gets or sets the inside horizontal border's settings.
     */
-  var insideHorizontal: TableBorderSettings = js.native
+  var insideHorizontal: TableBorderSettings
   
   /**
     * Gets or sets the inside vertical border's settings.
     */
-  var insideVertical: TableBorderSettings = js.native
+  var insideVertical: TableBorderSettings
   
   /**
     * Gets or sets the left border's settings.
     */
-  var left: TableBorderSettings = js.native
+  var left: TableBorderSettings
   
   /**
     * Gets or sets the right border's settings.
     */
-  var right: TableBorderSettings = js.native
+  var right: TableBorderSettings
   
   /**
     * Gets or sets the top border's settings.
     */
-  var top: TableBorderSettings = js.native
+  var top: TableBorderSettings
 }
 object TableBordersSettings {
   

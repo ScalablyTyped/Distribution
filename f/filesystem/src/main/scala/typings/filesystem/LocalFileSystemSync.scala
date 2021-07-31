@@ -2,39 +2,37 @@ package typings.filesystem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalFileSystemSync extends StObject {
   
   /**
     * Used for storage that should not be removed by the user agent without application or user permission.
     */
-  var PERSISTENT: Double = js.native
+  var PERSISTENT: Double
   
   /**
     * Used for storage with no guarantee of persistence.
     */
-  var TEMPORARY: Double = js.native
+  var TEMPORARY: Double
   
   /**
     * Requests a filesystem in which to store application data.
     * @param type Whether the filesystem requested should be persistent, as defined above. Use one of TEMPORARY or PERSISTENT.
     * @param size This is an indicator of how much storage space, in bytes, the application expects to need.
     */
-  def requestFileSystemSync(`type`: Double, size: Double): FileSystemSync = js.native
+  def requestFileSystemSync(`type`: Double, size: Double): FileSystemSync
   
   /**
     * Allows the user to look up the Entry for a file or directory referred to by a local URL.
     * @param url A URL referring to a local file in a filesystem accessable via this API.
     */
-  def resolveLocalFileSystemSyncURL(url: String): EntrySync = js.native
+  def resolveLocalFileSystemSyncURL(url: String): EntrySync
   
   /**
     * see requestFileSystemSync
     */
-  def webkitRequestFileSystemSync(`type`: Double, size: Double): FileSystemSync = js.native
+  def webkitRequestFileSystemSync(`type`: Double, size: Double): FileSystemSync
 }
 object LocalFileSystemSync {
   

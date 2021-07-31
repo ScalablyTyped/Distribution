@@ -8,93 +8,91 @@ import typings.auth0Lock.auth0LockStrings.signUp
 import typings.auth0Lock.auth0LockStrings.small
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Auth0LockConstructorOptions extends StObject {
   
-  var _enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.native
+  var _enableIdPInitiatedLogin: js.UndefOr[Boolean] = js.undefined
   
-  var _enableImpersonation: js.UndefOr[Boolean] = js.native
+  var _enableImpersonation: js.UndefOr[Boolean] = js.undefined
   
-  var additionalSignUpFields: js.UndefOr[js.Array[Auth0LockAdditionalSignUpField]] = js.native
+  var additionalSignUpFields: js.UndefOr[js.Array[Auth0LockAdditionalSignUpField]] = js.undefined
   
-  var allowAutocomplete: js.UndefOr[Boolean] = js.native
+  var allowAutocomplete: js.UndefOr[Boolean] = js.undefined
   
-  var allowForgotPassword: js.UndefOr[Boolean] = js.native
+  var allowForgotPassword: js.UndefOr[Boolean] = js.undefined
   
-  var allowLogin: js.UndefOr[Boolean] = js.native
+  var allowLogin: js.UndefOr[Boolean] = js.undefined
   
-  var allowPasswordAutocomplete: js.UndefOr[Boolean] = js.native
+  var allowPasswordAutocomplete: js.UndefOr[Boolean] = js.undefined
   
-  var allowShowPassword: js.UndefOr[Boolean] = js.native
+  var allowShowPassword: js.UndefOr[Boolean] = js.undefined
   
-  var allowSignUp: js.UndefOr[Boolean] = js.native
+  var allowSignUp: js.UndefOr[Boolean] = js.undefined
   
-  var allowedConnections: js.UndefOr[js.Array[String]] = js.native
+  var allowedConnections: js.UndefOr[js.Array[String]] = js.undefined
   
-  var assetsUrl: js.UndefOr[String] = js.native
+  var assetsUrl: js.UndefOr[String] = js.undefined
   
-  var auth: js.UndefOr[Auth0LockAuthOptions] = js.native
+  var auth: js.UndefOr[Auth0LockAuthOptions] = js.undefined
   
-  var autoclose: js.UndefOr[Boolean] = js.native
+  var autoclose: js.UndefOr[Boolean] = js.undefined
   
-  var autofocus: js.UndefOr[Boolean] = js.native
+  var autofocus: js.UndefOr[Boolean] = js.undefined
   
-  var avatar: js.UndefOr[Auth0LockAvatarOptions | Null] = js.native
+  var avatar: js.UndefOr[Auth0LockAvatarOptions | Null] = js.undefined
   
-  var clientBaseUrl: js.UndefOr[String] = js.native
+  var clientBaseUrl: js.UndefOr[String] = js.undefined
   
-  var closable: js.UndefOr[Boolean] = js.native
+  var closable: js.UndefOr[Boolean] = js.undefined
   
-  var configurationBaseUrl: js.UndefOr[String] = js.native
+  var configurationBaseUrl: js.UndefOr[String] = js.undefined
   
-  var container: js.UndefOr[String] = js.native
+  var container: js.UndefOr[String] = js.undefined
   
-  var defaultADUsernameFromEmailPrefix: js.UndefOr[Boolean] = js.native
+  var defaultADUsernameFromEmailPrefix: js.UndefOr[Boolean] = js.undefined
   
-  var defaultDatabaseConnection: js.UndefOr[String] = js.native
+  var defaultDatabaseConnection: js.UndefOr[String] = js.undefined
   
-  var defaultEnterpriseConnection: js.UndefOr[String] = js.native
+  var defaultEnterpriseConnection: js.UndefOr[String] = js.undefined
   
-  var flashMessage: js.UndefOr[Auth0LockFlashMessageOptions] = js.native
+  var flashMessage: js.UndefOr[Auth0LockFlashMessageOptions] = js.undefined
   
-  var forgotPasswordLink: js.UndefOr[String] = js.native
+  var forgotPasswordLink: js.UndefOr[String] = js.undefined
   
-  var hashCleanup: js.UndefOr[Boolean] = js.native
+  var hashCleanup: js.UndefOr[Boolean] = js.undefined
   
-  var initialScreen: js.UndefOr[login | signUp | forgotPassword] = js.native
+  var initialScreen: js.UndefOr[login | signUp | forgotPassword] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var languageBaseUrl: js.UndefOr[String] = js.native
+  var languageBaseUrl: js.UndefOr[String] = js.undefined
   
-  var languageDictionary: js.UndefOr[js.Any] = js.native
+  var languageDictionary: js.UndefOr[js.Any] = js.undefined
   
-  var leeway: js.UndefOr[Double] = js.native
+  var leeway: js.UndefOr[Double] = js.undefined
   
-  var loginAfterSignUp: js.UndefOr[Boolean] = js.native
+  var loginAfterSignUp: js.UndefOr[Boolean] = js.undefined
   
-  var mustAcceptTerms: js.UndefOr[Boolean] = js.native
+  var mustAcceptTerms: js.UndefOr[Boolean] = js.undefined
   
-  var oidcConformant: js.UndefOr[Boolean] = js.native
+  var oidcConformant: js.UndefOr[Boolean] = js.undefined
   
-  var popupOptions: js.UndefOr[Auth0LockPopupOptions] = js.native
+  var popupOptions: js.UndefOr[Auth0LockPopupOptions] = js.undefined
   
-  var prefill: js.UndefOr[Email] = js.native
+  var prefill: js.UndefOr[Email] = js.undefined
   
-  var rememberLastLogin: js.UndefOr[Boolean] = js.native
+  var rememberLastLogin: js.UndefOr[Boolean] = js.undefined
   
-  var scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.native
+  var scrollGlobalMessagesIntoView: js.UndefOr[Boolean] = js.undefined
   
-  var signupLink: js.UndefOr[String] = js.native
+  var signupLink: js.UndefOr[String] = js.undefined
   
-  var socialButtonStyle: js.UndefOr[big | small] = js.native
+  var socialButtonStyle: js.UndefOr[big | small] = js.undefined
   
-  var theme: js.UndefOr[Auth0LockThemeOptions] = js.native
+  var theme: js.UndefOr[Auth0LockThemeOptions] = js.undefined
   
-  var usernameStyle: js.UndefOr[String] = js.native
+  var usernameStyle: js.UndefOr[String] = js.undefined
 }
 object Auth0LockConstructorOptions {
   

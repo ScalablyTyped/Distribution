@@ -2,19 +2,17 @@ package typings.googleapis.scriptV1Mod.scriptV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A set of functions. No duplicates are permitted.
   */
-@js.native
 trait SchemaGoogleAppsScriptTypeFunctionSet extends StObject {
   
   /**
     * A list of functions composing the set.
     */
-  var values: js.UndefOr[js.Array[SchemaGoogleAppsScriptTypeFunction]] = js.native
+  var values: js.UndefOr[js.Array[SchemaGoogleAppsScriptTypeFunction]] = js.undefined
 }
 object SchemaGoogleAppsScriptTypeFunctionSet {
   

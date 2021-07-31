@@ -2,15 +2,13 @@ package typings.baseui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Option extends StObject {
   
-  var option: js.UndefOr[typings.baseui.selectMod.Option] = js.native
+  var option: js.UndefOr[typings.baseui.selectMod.Option] = js.undefined
   
-  var optionState: Disabled = js.native
+  var optionState: Disabled
 }
 object Option {
   

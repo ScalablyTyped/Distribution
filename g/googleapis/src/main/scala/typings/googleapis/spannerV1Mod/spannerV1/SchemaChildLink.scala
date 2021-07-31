@@ -2,20 +2,18 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata associated with a parent-child relationship appearing in a
   * PlanNode.
   */
-@js.native
 trait SchemaChildLink extends StObject {
   
   /**
     * The node to which the link points.
     */
-  var childIndex: js.UndefOr[Double] = js.native
+  var childIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The type of the link. For example, in Hash Joins this could be used to
@@ -23,7 +21,7 @@ trait SchemaChildLink extends StObject {
     * of the child being an output variable, to represent the tag associated
     * with the output variable.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * Only present if the child node is SCALAR and corresponds to an output
@@ -34,7 +32,7 @@ trait SchemaChildLink extends StObject {
     * corresponding `variable` fields will be set to the variable names
     * assigned to the columns.
     */
-  var variable: js.UndefOr[String] = js.native
+  var variable: js.UndefOr[String] = js.undefined
 }
 object SchemaChildLink {
   

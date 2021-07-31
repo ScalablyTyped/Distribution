@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * See [MediaStream](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream) for details.
   */
-@js.native
 trait MediaStream extends StObject {
   
   /**
@@ -22,14 +20,14 @@ trait MediaStream extends StObject {
     *
     * See [active](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream/active) for details.
     */
-  var active: Boolean = js.native
+  var active: Boolean
   
   /**
     * (Read-only) A [`DOMString`](https://developer.mozilla.org/en-US/docs/Web/API/DOMString) containing 36 characters denoting a universally unique identifier (UUID) for the object.
     *
     * See [MediaStream.id](https://developer.mozilla.org/en-US/docs/Web/API/MediaStream/id) for details.
     */
-  var id: String = js.native
+  var id: String
 }
 object MediaStream {
   

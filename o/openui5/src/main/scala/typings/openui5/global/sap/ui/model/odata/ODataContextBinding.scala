@@ -3,13 +3,13 @@ package typings.openui5.global.sap.ui.model.odata
 import typings.openui5.sap.ui.model.Model
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.ui.model.odata.ODataContextBinding")
 @js.native
 abstract class ODataContextBinding protected ()
-  extends typings.openui5.sap.ui.model.odata.ODataContextBinding {
+  extends StObject
+     with typings.openui5.sap.ui.model.odata.ODataContextBinding {
   /**
     * Constructor for odata.ODataContextBinding
     * @param oModel undefined

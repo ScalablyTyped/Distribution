@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MutableClusterInfo extends StObject {
   
   /**
@@ -13,44 +11,44 @@ trait MutableClusterInfo extends StObject {
     Specifies the size of the EBS volume and the ID of the associated broker.
     
     */
-  var BrokerEBSVolumeInfo: js.UndefOr[listOfBrokerEBSVolumeInfo] = js.native
+  var BrokerEBSVolumeInfo: js.UndefOr[listOfBrokerEBSVolumeInfo] = js.undefined
   
   /**
     * 
     Information about the changes in the configuration of the brokers.
     
     */
-  var ConfigurationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConfigurationInfo] = js.native
+  var ConfigurationInfo: js.UndefOr[typings.awsSdk.kafkaMod.ConfigurationInfo] = js.undefined
   
   /**
     * 
     Specifies which Apache Kafka metrics Amazon MSK gathers and sends to Amazon CloudWatch for this cluster.
     
     */
-  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.native
+  var EnhancedMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.EnhancedMonitoring] = js.undefined
   
   /**
     * 
     The Kafka version.
     
     */
-  var KafkaVersion: js.UndefOr[string] = js.native
+  var KafkaVersion: js.UndefOr[string] = js.undefined
   
-  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.native
+  var LoggingInfo: js.UndefOr[typings.awsSdk.kafkaMod.LoggingInfo] = js.undefined
   
   /**
     * 
     The number of broker nodes in the cluster.
     
     */
-  var NumberOfBrokerNodes: js.UndefOr[integer] = js.native
+  var NumberOfBrokerNodes: js.UndefOr[integer] = js.undefined
   
   /**
     * 
     The settings for open monitoring.
     
     */
-  var OpenMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.OpenMonitoring] = js.native
+  var OpenMonitoring: js.UndefOr[typings.awsSdk.kafkaMod.OpenMonitoring] = js.undefined
 }
 object MutableClusterInfo {
   

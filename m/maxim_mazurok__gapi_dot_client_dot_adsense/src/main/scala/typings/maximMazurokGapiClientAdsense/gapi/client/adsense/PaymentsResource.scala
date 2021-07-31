@@ -5,7 +5,6 @@ import typings.maximMazurokGapiClientAdsense.anon.AccountIdAlt
 import typings.maximMazurokGapiClientAdsense.anon.FieldsKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

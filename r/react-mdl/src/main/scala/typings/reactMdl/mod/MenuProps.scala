@@ -3,20 +3,19 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MenuProps
-  extends HTMLProps[js.Any]
+  extends StObject
+     with HTMLProps[js.Any]
      with RippleComponent {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   @JSName("target")
-  var target_MenuProps: String = js.native
+  var target_MenuProps: String
   
-  var valign: js.UndefOr[String] = js.native
+  var valign: js.UndefOr[String] = js.undefined
 }
 object MenuProps {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentSequenceStep extends StObject {
   
   /** Specifies if the step immediately precedes or can be any time before the next step. */
-  var matchType: js.UndefOr[String] = js.native
+  var matchType: js.UndefOr[String] = js.undefined
   
   /** A sequence is specified with a list of Or grouped filters which are combined with `AND` operator. */
-  var orFiltersForSegment: js.UndefOr[js.Array[OrFiltersForSegment]] = js.native
+  var orFiltersForSegment: js.UndefOr[js.Array[OrFiltersForSegment]] = js.undefined
 }
 object SegmentSequenceStep {
   

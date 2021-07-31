@@ -4,17 +4,15 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICameraCaptureUI extends StObject {
   
-  def captureFileAsync(mode: CameraCaptureUIMode): IAsyncOperation[StorageFile] = js.native
+  def captureFileAsync(mode: CameraCaptureUIMode): IAsyncOperation[StorageFile]
   
-  var photoSettings: CameraCaptureUIPhotoCaptureSettings = js.native
+  var photoSettings: CameraCaptureUIPhotoCaptureSettings
   
-  var videoSettings: CameraCaptureUIVideoCaptureSettings = js.native
+  var videoSettings: CameraCaptureUIVideoCaptureSettings
 }
 object ICameraCaptureUI {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextArrayOptions extends StObject {
   
   /**
     * The name of an analysis scheme for a text-array field.
     */
-  var AnalysisScheme: js.UndefOr[Word] = js.native
+  var AnalysisScheme: js.UndefOr[Word] = js.undefined
   
   /**
     * A value to use for the field if the field isn't specified for a document.
     */
-  var DefaultValue: js.UndefOr[FieldValue] = js.native
+  var DefaultValue: js.UndefOr[FieldValue] = js.undefined
   
   /**
     * Whether highlights can be returned for the field.
     */
-  var HighlightEnabled: js.UndefOr[Boolean] = js.native
+  var HighlightEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the contents of the field can be returned in the search results.
     */
-  var ReturnEnabled: js.UndefOr[Boolean] = js.native
+  var ReturnEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of source fields to map to the field. 
     */
-  var SourceFields: js.UndefOr[FieldNameCommaList] = js.native
+  var SourceFields: js.UndefOr[FieldNameCommaList] = js.undefined
 }
 object TextArrayOptions {
   

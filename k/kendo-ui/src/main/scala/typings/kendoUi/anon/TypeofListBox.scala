@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.ListBox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofListBox extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ListBox = js.native
+  def extend(proto: js.Object): ListBox
   
   /* static member */
-  var fn: ListBox = js.native
+  var fn: ListBox
 }
 object TypeofListBox {
   

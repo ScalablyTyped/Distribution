@@ -4,43 +4,41 @@ import typings.wampy.wampyStrings.loose
 import typings.wampy.wampyStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WampyOptions extends StObject {
   
-  var authid: js.UndefOr[String] = js.native
+  var authid: js.UndefOr[String] = js.undefined
   
-  var authmethods: js.UndefOr[js.Array[String]] = js.native
+  var authmethods: js.UndefOr[js.Array[String]] = js.undefined
   
-  var autoReconnect: js.UndefOr[Boolean] = js.native
+  var autoReconnect: js.UndefOr[Boolean] = js.undefined
   
-  var helloCustomDetails: js.UndefOr[js.Any] = js.native
+  var helloCustomDetails: js.UndefOr[js.Any] = js.undefined
   
-  var maxRetries: js.UndefOr[Double] = js.native
+  var maxRetries: js.UndefOr[Double] = js.undefined
   
-  var onChallenge: js.UndefOr[ChallengeCallback] = js.native
+  var onChallenge: js.UndefOr[ChallengeCallback] = js.undefined
   
-  var onClose: js.UndefOr[Callback] = js.native
+  var onClose: js.UndefOr[Callback] = js.undefined
   
-  var onConnect: js.UndefOr[Callback] = js.native
+  var onConnect: js.UndefOr[Callback] = js.undefined
   
-  var onError: js.UndefOr[Callback] = js.native
+  var onError: js.UndefOr[Callback] = js.undefined
   
-  var onReconnect: js.UndefOr[Callback] = js.native
+  var onReconnect: js.UndefOr[Callback] = js.undefined
   
-  var onReconnectSuccess: js.UndefOr[Callback] = js.native
+  var onReconnectSuccess: js.UndefOr[Callback] = js.undefined
   
-  var realm: js.UndefOr[String] = js.native
+  var realm: js.UndefOr[String] = js.undefined
   
-  var reconnectInterval: js.UndefOr[Double] = js.native
+  var reconnectInterval: js.UndefOr[Double] = js.undefined
   
-  var serializer: js.UndefOr[js.Any] = js.native
+  var serializer: js.UndefOr[js.Any] = js.undefined
   
-  var urlValidation: js.UndefOr[strict | loose] = js.native
+  var urlValidation: js.UndefOr[strict | loose] = js.undefined
   
-  var ws: js.UndefOr[js.Any] = js.native
+  var ws: js.UndefOr[js.Any] = js.undefined
 }
 object WampyOptions {
   

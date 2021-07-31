@@ -13,106 +13,104 @@ import typings.ckeditor.ckeditorStrings.text
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://docs.com/ckeditor4/latest/api/CKEDITOR_config.html
-@js.native
 trait config extends StObject {
   
-  var allowedContent: js.UndefOr[Boolean | allowedContentRules] = js.native
+  var allowedContent: js.UndefOr[Boolean | allowedContentRules] = js.undefined
   
-  var autoEmbed_widget: js.UndefOr[String | (js.Function1[/* url */ String, String])] = js.native
+  var autoEmbed_widget: js.UndefOr[String | (js.Function1[/* url */ String, String])] = js.undefined
   
-  var autoGrow_bottomSpace: js.UndefOr[Double] = js.native
+  var autoGrow_bottomSpace: js.UndefOr[Double] = js.undefined
   
-  var autoGrow_maxHeight: js.UndefOr[Double] = js.native
+  var autoGrow_maxHeight: js.UndefOr[Double] = js.undefined
   
-  var autoGrow_minHeight: js.UndefOr[Double] = js.native
+  var autoGrow_minHeight: js.UndefOr[Double] = js.undefined
   
-  var autoGrow_onStartup: js.UndefOr[Boolean] = js.native
+  var autoGrow_onStartup: js.UndefOr[Boolean] = js.undefined
   
-  var autoUpdateElement: js.UndefOr[Boolean] = js.native
+  var autoUpdateElement: js.UndefOr[Boolean] = js.undefined
   
-  var baseFloatZIndex: js.UndefOr[Double] = js.native
+  var baseFloatZIndex: js.UndefOr[Double] = js.undefined
   
-  var baseHref: js.UndefOr[String] = js.native
+  var baseHref: js.UndefOr[String] = js.undefined
   
-  var basicEntities: js.UndefOr[Boolean] = js.native
+  var basicEntities: js.UndefOr[Boolean] = js.undefined
   
-  var blockedKeystrokes: js.UndefOr[js.Array[Double]] = js.native
+  var blockedKeystrokes: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var bodyClass: js.UndefOr[String] = js.native
+  var bodyClass: js.UndefOr[String] = js.undefined
   
-  var bodyId: js.UndefOr[String] = js.native
+  var bodyId: js.UndefOr[String] = js.undefined
   
-  var browserContextMenuOnCtrl: js.UndefOr[Boolean] = js.native
+  var browserContextMenuOnCtrl: js.UndefOr[Boolean] = js.undefined
   
-  var clipboard_defaultContentType: js.UndefOr[html | text] = js.native
+  var clipboard_defaultContentType: js.UndefOr[html | text] = js.undefined
   
-  var clipboard_notificationDuration: js.UndefOr[Double] = js.native
+  var clipboard_notificationDuration: js.UndefOr[Double] = js.undefined
   
-  var cloudServices_tokenUrl: js.UndefOr[String] = js.native
+  var cloudServices_tokenUrl: js.UndefOr[String] = js.undefined
   
-  var cloudServices_uploadUrl: js.UndefOr[String] = js.native
+  var cloudServices_uploadUrl: js.UndefOr[String] = js.undefined
   
-  var coceSnippet_theme: js.UndefOr[String] = js.native
+  var coceSnippet_theme: js.UndefOr[String] = js.undefined
   
-  var codeSnippetGeshi_url: js.UndefOr[String] = js.native
+  var codeSnippetGeshi_url: js.UndefOr[String] = js.undefined
   
-  var codeSnippet_codeClass: js.UndefOr[String] = js.native
+  var codeSnippet_codeClass: js.UndefOr[String] = js.undefined
   
-  var codeSnippet_languages: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var codeSnippet_languages: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var colorButton_backStyle: js.UndefOr[styleObject] = js.native
+  var colorButton_backStyle: js.UndefOr[styleObject] = js.undefined
   
-  var colorButton_colors: js.UndefOr[String] = js.native
+  var colorButton_colors: js.UndefOr[String] = js.undefined
   
-  var colorButton_colorsPerRow: js.UndefOr[Double] = js.native
+  var colorButton_colorsPerRow: js.UndefOr[Double] = js.undefined
   
-  var colorButton_enableAutomatic: js.UndefOr[Boolean] = js.native
+  var colorButton_enableAutomatic: js.UndefOr[Boolean] = js.undefined
   
-  var colorButton_enableMore: js.UndefOr[Boolean] = js.native
+  var colorButton_enableMore: js.UndefOr[Boolean] = js.undefined
   
-  var colorButton_foreStyle: js.UndefOr[styleObject] = js.native
+  var colorButton_foreStyle: js.UndefOr[styleObject] = js.undefined
   
-  var colorButton_normalizeBackground: js.UndefOr[Boolean] = js.native
+  var colorButton_normalizeBackground: js.UndefOr[Boolean] = js.undefined
   
-  var contentsCss: js.UndefOr[String | js.Array[String]] = js.native
+  var contentsCss: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var contentsLangDirection: js.UndefOr[String] = js.native
+  var contentsLangDirection: js.UndefOr[String] = js.undefined
   
-  var contentsLanguage: js.UndefOr[String] = js.native
+  var contentsLanguage: js.UndefOr[String] = js.undefined
   
-  var copyFormatting_allowRules: js.UndefOr[String] = js.native
+  var copyFormatting_allowRules: js.UndefOr[String] = js.undefined
   
-  var copyFormatting_allowedContexts: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var copyFormatting_allowedContexts: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
-  var copyFormatting_keystrokeCopy: js.UndefOr[Double] = js.native
+  var copyFormatting_keystrokeCopy: js.UndefOr[Double] = js.undefined
   
-  var copyFormatting_keystrokePaste: js.UndefOr[Double] = js.native
+  var copyFormatting_keystrokePaste: js.UndefOr[Double] = js.undefined
   
-  var copyFormatting_outerCursor: js.UndefOr[Boolean] = js.native
+  var copyFormatting_outerCursor: js.UndefOr[Boolean] = js.undefined
   
-  var coreStyles_bold: js.UndefOr[styleObject] = js.native
+  var coreStyles_bold: js.UndefOr[styleObject] = js.undefined
   
-  var coreStyles_italic: js.UndefOr[styleObject] = js.native
+  var coreStyles_italic: js.UndefOr[styleObject] = js.undefined
   
-  var coreStyles_strike: js.UndefOr[styleObject] = js.native
+  var coreStyles_strike: js.UndefOr[styleObject] = js.undefined
   
-  var coreStyles_subscript: js.UndefOr[styleObject] = js.native
+  var coreStyles_subscript: js.UndefOr[styleObject] = js.undefined
   
-  var coreStyles_superscript: js.UndefOr[styleObject] = js.native
+  var coreStyles_superscript: js.UndefOr[styleObject] = js.undefined
   
-  var coreStyles_underline: js.UndefOr[styleObject] = js.native
+  var coreStyles_underline: js.UndefOr[styleObject] = js.undefined
   
-  var customConfig: js.UndefOr[String] = js.native
+  var customConfig: js.UndefOr[String] = js.undefined
   
-  var dataIndentationChars: js.UndefOr[String] = js.native
+  var dataIndentationChars: js.UndefOr[String] = js.undefined
   
-  var defaultLanguage: js.UndefOr[String] = js.native
+  var defaultLanguage: js.UndefOr[String] = js.undefined
   
-  var devtools_styles: js.UndefOr[String] = js.native
+  var devtools_styles: js.UndefOr[String] = js.undefined
   
   var devtools_textCallback: js.UndefOr[
     js.Function4[
@@ -122,419 +120,419 @@ trait config extends StObject {
       /* tabName */ String, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var dialog_backgroundCoverColor: js.UndefOr[String] = js.native
+  var dialog_backgroundCoverColor: js.UndefOr[String] = js.undefined
   
-  var dialog_backgroundCoverOpacity: js.UndefOr[Double] = js.native
+  var dialog_backgroundCoverOpacity: js.UndefOr[Double] = js.undefined
   
-  var dialog_buttonsOrder: js.UndefOr[String] = js.native
+  var dialog_buttonsOrder: js.UndefOr[String] = js.undefined
   
-  var dialog_magnetDistance: js.UndefOr[Double] = js.native
+  var dialog_magnetDistance: js.UndefOr[Double] = js.undefined
   
-  var dialog_noConfirmCancel: js.UndefOr[Boolean] = js.native
+  var dialog_noConfirmCancel: js.UndefOr[Boolean] = js.undefined
   
-  var dialog_startupFocusTab: js.UndefOr[Boolean] = js.native
+  var dialog_startupFocusTab: js.UndefOr[Boolean] = js.undefined
   
-  var disableNativeObjectResizing: js.UndefOr[Boolean] = js.native
+  var disableNativeObjectResizing: js.UndefOr[Boolean] = js.undefined
   
-  var disableNativeReadonlyStyling: js.UndefOr[Boolean] = js.native
+  var disableNativeReadonlyStyling: js.UndefOr[Boolean] = js.undefined
   
-  var disableNativeSpellChecker: js.UndefOr[Boolean] = js.native
+  var disableNativeSpellChecker: js.UndefOr[Boolean] = js.undefined
   
-  var disableNativeTableHandles: js.UndefOr[Boolean] = js.native
+  var disableNativeTableHandles: js.UndefOr[Boolean] = js.undefined
   
-  var disallowedContent: js.UndefOr[disallowedContentRules] = js.native
+  var disallowedContent: js.UndefOr[disallowedContentRules] = js.undefined
   
-  var div_wrapTable: js.UndefOr[Boolean] = js.native
+  var div_wrapTable: js.UndefOr[Boolean] = js.undefined
   
-  var docType: js.UndefOr[String] = js.native
+  var docType: js.UndefOr[String] = js.undefined
   
-  var easyimage_class: js.UndefOr[String] = js.native
+  var easyimage_class: js.UndefOr[String] = js.undefined
   
-  var easyimage_defaultStyle: js.UndefOr[String] = js.native
+  var easyimage_defaultStyle: js.UndefOr[String] = js.undefined
   
-  var easyimage_styles: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var easyimage_styles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var easyimage_toolbar: js.UndefOr[js.Array[String] | String] = js.native
+  var easyimage_toolbar: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var emailProtection: js.UndefOr[String] = js.native
+  var emailProtection: js.UndefOr[String] = js.undefined
   
-  var embed_provider: js.UndefOr[String] = js.native
+  var embed_provider: js.UndefOr[String] = js.undefined
   
-  var emoji_emojiListUrl: js.UndefOr[String] = js.native
+  var emoji_emojiListUrl: js.UndefOr[String] = js.undefined
   
-  var emoji_minChars: js.UndefOr[Double] = js.native
+  var emoji_minChars: js.UndefOr[Double] = js.undefined
   
-  var enableContextMenu: js.UndefOr[Boolean] = js.native
+  var enableContextMenu: js.UndefOr[Boolean] = js.undefined
   
-  var enableTabKeyTools: js.UndefOr[Boolean] = js.native
+  var enableTabKeyTools: js.UndefOr[Boolean] = js.undefined
   
-  var enterMode: js.UndefOr[Double] = js.native
+  var enterMode: js.UndefOr[Double] = js.undefined
   
-  var entities: js.UndefOr[Boolean] = js.native
+  var entities: js.UndefOr[Boolean] = js.undefined
   
-  var entities_additional: js.UndefOr[String] = js.native
+  var entities_additional: js.UndefOr[String] = js.undefined
   
-  var entities_greek: js.UndefOr[Boolean] = js.native
+  var entities_greek: js.UndefOr[Boolean] = js.undefined
   
-  var entities_latin: js.UndefOr[Boolean] = js.native
+  var entities_latin: js.UndefOr[Boolean] = js.undefined
   
-  var entities_processNumerical: js.UndefOr[Boolean | String] = js.native
+  var entities_processNumerical: js.UndefOr[Boolean | String] = js.undefined
   
-  var extraAllowedContent: js.UndefOr[allowedContentRules] = js.native
+  var extraAllowedContent: js.UndefOr[allowedContentRules] = js.undefined
   
-  var extraPlugins: js.UndefOr[String] = js.native
+  var extraPlugins: js.UndefOr[String] = js.undefined
   
-  var fileTools_defaultFileName: js.UndefOr[String] = js.native
+  var fileTools_defaultFileName: js.UndefOr[String] = js.undefined
   
-  var fileTools_requestHeaders: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var fileTools_requestHeaders: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var filebrowserBrowseUrl: js.UndefOr[String] = js.native
+  var filebrowserBrowseUrl: js.UndefOr[String] = js.undefined
   
-  var filebrowserFlashBrowseUrl: js.UndefOr[String] = js.native
+  var filebrowserFlashBrowseUrl: js.UndefOr[String] = js.undefined
   
-  var filebrowserFlashUploadUrl: js.UndefOr[String] = js.native
+  var filebrowserFlashUploadUrl: js.UndefOr[String] = js.undefined
   
-  var filebrowserImageBrowseLinkUrl: js.UndefOr[String] = js.native
+  var filebrowserImageBrowseLinkUrl: js.UndefOr[String] = js.undefined
   
-  var filebrowserImageBrowseUrl: js.UndefOr[String] = js.native
+  var filebrowserImageBrowseUrl: js.UndefOr[String] = js.undefined
   
-  var filebrowserImageUploadUrl: js.UndefOr[String] = js.native
+  var filebrowserImageUploadUrl: js.UndefOr[String] = js.undefined
   
-  var filebrowserUploadMethod: js.UndefOr[String] = js.native
+  var filebrowserUploadMethod: js.UndefOr[String] = js.undefined
   
-  var filebrowserUploadUrl: js.UndefOr[String] = js.native
+  var filebrowserUploadUrl: js.UndefOr[String] = js.undefined
   
-  var filebrowserWindowFeatures: js.UndefOr[String] = js.native
+  var filebrowserWindowFeatures: js.UndefOr[String] = js.undefined
   
-  var filebrowserWindowHeight: js.UndefOr[Double | String] = js.native
+  var filebrowserWindowHeight: js.UndefOr[Double | String] = js.undefined
   
-  var filebrowserWindowWidth: js.UndefOr[Double | String] = js.native
+  var filebrowserWindowWidth: js.UndefOr[Double | String] = js.undefined
   
   var fillEmptyBlocks: js.UndefOr[
     Boolean | (js.Function1[/* element */ typings.ckeditor.CKEDITOR.htmlParser.element, Boolean])
-  ] = js.native
+  ] = js.undefined
   
-  var find_highlight: js.UndefOr[styleObject] = js.native
+  var find_highlight: js.UndefOr[styleObject] = js.undefined
   
-  var flashAddEmbedTag: js.UndefOr[Boolean] = js.native
+  var flashAddEmbedTag: js.UndefOr[Boolean] = js.undefined
   
-  var flashConvertOnEdit: js.UndefOr[Boolean] = js.native
+  var flashConvertOnEdit: js.UndefOr[Boolean] = js.undefined
   
-  var flashEmbedTagOnly: js.UndefOr[Boolean] = js.native
+  var flashEmbedTagOnly: js.UndefOr[Boolean] = js.undefined
   
-  var floatSpaceDockedOffsetX: js.UndefOr[Double] = js.native
+  var floatSpaceDockedOffsetX: js.UndefOr[Double] = js.undefined
   
-  var floatSpaceDockedOffsetY: js.UndefOr[Double] = js.native
+  var floatSpaceDockedOffsetY: js.UndefOr[Double] = js.undefined
   
-  var floatSpacePinnedOffsetX: js.UndefOr[Double] = js.native
+  var floatSpacePinnedOffsetX: js.UndefOr[Double] = js.undefined
   
-  var floatSpacePinnedOffsetY: js.UndefOr[Double] = js.native
+  var floatSpacePinnedOffsetY: js.UndefOr[Double] = js.undefined
   
-  var floatSpacePreferRight: js.UndefOr[Boolean] = js.native
+  var floatSpacePreferRight: js.UndefOr[Boolean] = js.undefined
   
-  var fontSize_defaultLabel: js.UndefOr[String] = js.native
+  var fontSize_defaultLabel: js.UndefOr[String] = js.undefined
   
-  var fontSize_sizes: js.UndefOr[String] = js.native
+  var fontSize_sizes: js.UndefOr[String] = js.undefined
   
-  var fontSize_style: js.UndefOr[styleObject] = js.native
+  var fontSize_style: js.UndefOr[styleObject] = js.undefined
   
-  var font_defaultLabel: js.UndefOr[String] = js.native
+  var font_defaultLabel: js.UndefOr[String] = js.undefined
   
-  var font_names: js.UndefOr[String] = js.native
+  var font_names: js.UndefOr[String] = js.undefined
   
-  var font_style: js.UndefOr[styleObject] = js.native
+  var font_style: js.UndefOr[styleObject] = js.undefined
   
-  var forceEnterMode: js.UndefOr[Boolean] = js.native
+  var forceEnterMode: js.UndefOr[Boolean] = js.undefined
   
-  var forcePasteAsPlainText: js.UndefOr[Boolean] = js.native
+  var forcePasteAsPlainText: js.UndefOr[Boolean] = js.undefined
   
-  var forceSimpleAmpersand: js.UndefOr[Boolean] = js.native
+  var forceSimpleAmpersand: js.UndefOr[Boolean] = js.undefined
   
-  var format_address: js.UndefOr[styleObject] = js.native
+  var format_address: js.UndefOr[styleObject] = js.undefined
   
-  var format_div: js.UndefOr[styleObject] = js.native
+  var format_div: js.UndefOr[styleObject] = js.undefined
   
-  var format_h1: js.UndefOr[styleObject] = js.native
+  var format_h1: js.UndefOr[styleObject] = js.undefined
   
-  var format_h2: js.UndefOr[styleObject] = js.native
+  var format_h2: js.UndefOr[styleObject] = js.undefined
   
-  var format_h3: js.UndefOr[styleObject] = js.native
+  var format_h3: js.UndefOr[styleObject] = js.undefined
   
-  var format_h4: js.UndefOr[styleObject] = js.native
+  var format_h4: js.UndefOr[styleObject] = js.undefined
   
-  var format_h5: js.UndefOr[styleObject] = js.native
+  var format_h5: js.UndefOr[styleObject] = js.undefined
   
-  var format_h6: js.UndefOr[styleObject] = js.native
+  var format_h6: js.UndefOr[styleObject] = js.undefined
   
-  var format_p: js.UndefOr[styleObject] = js.native
+  var format_p: js.UndefOr[styleObject] = js.undefined
   
-  var format_pre: js.UndefOr[styleObject] = js.native
+  var format_pre: js.UndefOr[styleObject] = js.undefined
   
-  var format_tags: js.UndefOr[String] = js.native
+  var format_tags: js.UndefOr[String] = js.undefined
   
-  var fullPage: js.UndefOr[Boolean] = js.native
+  var fullPage: js.UndefOr[Boolean] = js.undefined
   
-  var grayt_autoStartup: js.UndefOr[Boolean] = js.native
+  var grayt_autoStartup: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
-  var htmlEncodeOutput: js.UndefOr[Boolean] = js.native
+  var htmlEncodeOutput: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreEmptyParagraph: js.UndefOr[Boolean] = js.native
+  var ignoreEmptyParagraph: js.UndefOr[Boolean] = js.undefined
   
-  var image2_alignClasses: js.UndefOr[js.Array[String]] = js.native
+  var image2_alignClasses: js.UndefOr[js.Array[String]] = js.undefined
   
-  var image2_altRequired: js.UndefOr[Boolean] = js.native
+  var image2_altRequired: js.UndefOr[Boolean] = js.undefined
   
-  var image2_captionedClass: js.UndefOr[String] = js.native
+  var image2_captionedClass: js.UndefOr[String] = js.undefined
   
-  var image2_disableResizer: js.UndefOr[Boolean] = js.native
+  var image2_disableResizer: js.UndefOr[Boolean] = js.undefined
   
-  var image2_prefillDimensions: js.UndefOr[Boolean] = js.native
+  var image2_prefillDimensions: js.UndefOr[Boolean] = js.undefined
   
-  var imageUploadUrl: js.UndefOr[String] = js.native
+  var imageUploadUrl: js.UndefOr[String] = js.undefined
   
-  var image_prefillDimensions: js.UndefOr[Boolean] = js.native
+  var image_prefillDimensions: js.UndefOr[Boolean] = js.undefined
   
-  var image_previewText: js.UndefOr[String] = js.native
+  var image_previewText: js.UndefOr[String] = js.undefined
   
-  var image_removeLinkByEmptyUrl: js.UndefOr[Boolean] = js.native
+  var image_removeLinkByEmptyUrl: js.UndefOr[Boolean] = js.undefined
   
-  var indentClasses: js.UndefOr[js.Array[String]] = js.native
+  var indentClasses: js.UndefOr[js.Array[String]] = js.undefined
   
-  var indentOffset: js.UndefOr[Double] = js.native
+  var indentOffset: js.UndefOr[Double] = js.undefined
   
-  var indentUnit: js.UndefOr[String] = js.native
+  var indentUnit: js.UndefOr[String] = js.undefined
   
-  var jqueryOverrideVal: js.UndefOr[Boolean] = js.native
+  var jqueryOverrideVal: js.UndefOr[Boolean] = js.undefined
   
-  var justifyClasses: js.UndefOr[js.Array[String]] = js.native
+  var justifyClasses: js.UndefOr[js.Array[String]] = js.undefined
   
-  var keystrokes: js.UndefOr[js.Array[js.Tuple2[Double, String]]] = js.native
+  var keystrokes: js.UndefOr[js.Array[js.Tuple2[Double, String]]] = js.undefined
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var language_list: js.UndefOr[js.Array[String]] = js.native
+  var language_list: js.UndefOr[js.Array[String]] = js.undefined
   
-  var linkJavaScriptLinksAllowed: js.UndefOr[Boolean] = js.native
+  var linkJavaScriptLinksAllowed: js.UndefOr[Boolean] = js.undefined
   
-  var linkShowAdvancedTab: js.UndefOr[Boolean] = js.native
+  var linkShowAdvancedTab: js.UndefOr[Boolean] = js.undefined
   
-  var linkShowTargetTab: js.UndefOr[Boolean] = js.native
+  var linkShowTargetTab: js.UndefOr[Boolean] = js.undefined
   
-  var magicline_color: js.UndefOr[String] = js.native
+  var magicline_color: js.UndefOr[String] = js.undefined
   
-  var magicline_everywhere: js.UndefOr[Boolean] = js.native
+  var magicline_everywhere: js.UndefOr[Boolean] = js.undefined
   
-  var magicline_holdDistance: js.UndefOr[Double] = js.native
+  var magicline_holdDistance: js.UndefOr[Double] = js.undefined
   
-  var magicline_keystrokeNext: js.UndefOr[Double] = js.native
+  var magicline_keystrokeNext: js.UndefOr[Double] = js.undefined
   
-  var magicline_keystrokePrevious: js.UndefOr[Double] = js.native
+  var magicline_keystrokePrevious: js.UndefOr[Double] = js.undefined
   
-  var magicline_tabuList: js.UndefOr[js.Array[String]] = js.native
+  var magicline_tabuList: js.UndefOr[js.Array[String]] = js.undefined
   
-  var magicline_triggerOffset: js.UndefOr[Double] = js.native
+  var magicline_triggerOffset: js.UndefOr[Double] = js.undefined
   
-  var mathJaxClass: js.UndefOr[String] = js.native
+  var mathJaxClass: js.UndefOr[String] = js.undefined
   
-  var mathJaxLib: js.UndefOr[String] = js.native
+  var mathJaxLib: js.UndefOr[String] = js.undefined
   
-  var menu_groups: js.UndefOr[String] = js.native
+  var menu_groups: js.UndefOr[String] = js.undefined
   
-  var menu_subMenuDelay: js.UndefOr[Double] = js.native
+  var menu_subMenuDelay: js.UndefOr[Double] = js.undefined
   
-  var newpage_html: js.UndefOr[String] = js.native
+  var newpage_html: js.UndefOr[String] = js.undefined
   
-  var notification_duration: js.UndefOr[Double] = js.native
+  var notification_duration: js.UndefOr[Double] = js.undefined
   
-  var on: js.UndefOr[eventObject] = js.native
+  var on: js.UndefOr[eventObject] = js.undefined
   
-  var pasteFilter: js.UndefOr[String] = js.native
+  var pasteFilter: js.UndefOr[String] = js.undefined
   
-  var pasteFromWordCleanupFile: js.UndefOr[String] = js.native
+  var pasteFromWordCleanupFile: js.UndefOr[String] = js.undefined
   
-  var pasteFromWordNumberedHeadingToList: js.UndefOr[Boolean] = js.native
+  var pasteFromWordNumberedHeadingToList: js.UndefOr[Boolean] = js.undefined
   
-  var pasteFromWordPromptCleanup: js.UndefOr[Boolean] = js.native
+  var pasteFromWordPromptCleanup: js.UndefOr[Boolean] = js.undefined
   
-  var pasteFromWordRemoveFontStyles: js.UndefOr[Boolean] = js.native
+  var pasteFromWordRemoveFontStyles: js.UndefOr[Boolean] = js.undefined
   
-  var pasteFromWordRemoveStyles: js.UndefOr[Boolean] = js.native
+  var pasteFromWordRemoveStyles: js.UndefOr[Boolean] = js.undefined
   
-  var pasteFromWord_heuristicsEdgeList: js.UndefOr[Boolean] = js.native
+  var pasteFromWord_heuristicsEdgeList: js.UndefOr[Boolean] = js.undefined
   
-  var pasteFromWord_inlineImages: js.UndefOr[Boolean] = js.native
+  var pasteFromWord_inlineImages: js.UndefOr[Boolean] = js.undefined
   
-  var plugins: js.UndefOr[String] = js.native
+  var plugins: js.UndefOr[String] = js.undefined
   
-  var protectedSource: js.UndefOr[js.Array[RegExp]] = js.native
+  var protectedSource: js.UndefOr[js.Array[RegExp]] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var removeButtons: js.UndefOr[String] = js.native
+  var removeButtons: js.UndefOr[String] = js.undefined
   
-  var removeDialogTabs: js.UndefOr[String] = js.native
+  var removeDialogTabs: js.UndefOr[String] = js.undefined
   
-  var removeFormatAttributes: js.UndefOr[String] = js.native
+  var removeFormatAttributes: js.UndefOr[String] = js.undefined
   
-  var removeFormatTags: js.UndefOr[String] = js.native
+  var removeFormatTags: js.UndefOr[String] = js.undefined
   
-  var removePlugins: js.UndefOr[String] = js.native
+  var removePlugins: js.UndefOr[String] = js.undefined
   
-  var resize_dir: js.UndefOr[String] = js.native
+  var resize_dir: js.UndefOr[String] = js.undefined
   
-  var resize_enabled: js.UndefOr[Boolean] = js.native
+  var resize_enabled: js.UndefOr[Boolean] = js.undefined
   
-  var resize_maxHeight: js.UndefOr[Double] = js.native
+  var resize_maxHeight: js.UndefOr[Double] = js.undefined
   
-  var resize_maxWidth: js.UndefOr[Double] = js.native
+  var resize_maxWidth: js.UndefOr[Double] = js.undefined
   
-  var resize_minHeight: js.UndefOr[Double] = js.native
+  var resize_minHeight: js.UndefOr[Double] = js.undefined
   
-  var resize_minWidth: js.UndefOr[Double] = js.native
+  var resize_minWidth: js.UndefOr[Double] = js.undefined
   
-  var scayt_autoStartup: js.UndefOr[Boolean] = js.native
+  var scayt_autoStartup: js.UndefOr[Boolean] = js.undefined
   
-  var scayt_contextCommands: js.UndefOr[String] = js.native
+  var scayt_contextCommands: js.UndefOr[String] = js.undefined
   
-  var scayt_contextMenuItemsOrder: js.UndefOr[String] = js.native
+  var scayt_contextMenuItemsOrder: js.UndefOr[String] = js.undefined
   
-  var scayt_customDictionaryIds: js.UndefOr[String] = js.native
+  var scayt_customDictionaryIds: js.UndefOr[String] = js.undefined
   
-  var scayt_customerId: js.UndefOr[String] = js.native
+  var scayt_customerId: js.UndefOr[String] = js.undefined
   
-  var scayt_disableOptionsStorage: js.UndefOr[String | js.Array[String]] = js.native
+  var scayt_disableOptionsStorage: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var scayt_elementsToIgnore: js.UndefOr[String] = js.native
+  var scayt_elementsToIgnore: js.UndefOr[String] = js.undefined
   
-  var scayt_handleCheckDirty: js.UndefOr[String] = js.native
+  var scayt_handleCheckDirty: js.UndefOr[String] = js.undefined
   
-  var scayt_handleUndoRedo: js.UndefOr[String] = js.native
+  var scayt_handleUndoRedo: js.UndefOr[String] = js.undefined
   
-  var scayt_ignoreAllCapsWords: js.UndefOr[Boolean] = js.native
+  var scayt_ignoreAllCapsWords: js.UndefOr[Boolean] = js.undefined
   
-  var scayt_ignoreDomainNames: js.UndefOr[Boolean] = js.native
+  var scayt_ignoreDomainNames: js.UndefOr[Boolean] = js.undefined
   
-  var scayt_ignoreWordsWithMixedCases: js.UndefOr[Boolean] = js.native
+  var scayt_ignoreWordsWithMixedCases: js.UndefOr[Boolean] = js.undefined
   
-  var scayt_ignoreWordsWithNumbers: js.UndefOr[Boolean] = js.native
+  var scayt_ignoreWordsWithNumbers: js.UndefOr[Boolean] = js.undefined
   
-  var scayt_inlineModeImmediateMarkup: js.UndefOr[Boolean] = js.native
+  var scayt_inlineModeImmediateMarkup: js.UndefOr[Boolean] = js.undefined
   
-  var scayt_maxSuggestions: js.UndefOr[Double] = js.native
+  var scayt_maxSuggestions: js.UndefOr[Double] = js.undefined
   
-  var scayt_minWordLength: js.UndefOr[Double] = js.native
+  var scayt_minWordLength: js.UndefOr[Double] = js.undefined
   
-  var scayt_moreSuggestions: js.UndefOr[String] = js.native
+  var scayt_moreSuggestions: js.UndefOr[String] = js.undefined
   
-  var scayt_multiLanguageMode: js.UndefOr[Boolean] = js.native
+  var scayt_multiLanguageMode: js.UndefOr[Boolean] = js.undefined
   
-  var scayt_multiLanguageStyles: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var scayt_multiLanguageStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var scayt_sLang: js.UndefOr[String] = js.native
+  var scayt_sLang: js.UndefOr[String] = js.undefined
   
-  var scayt_serviceHost: js.UndefOr[String] = js.native
+  var scayt_serviceHost: js.UndefOr[String] = js.undefined
   
-  var scayt_servicePath: js.UndefOr[String] = js.native
+  var scayt_servicePath: js.UndefOr[String] = js.undefined
   
-  var scayt_servicePort: js.UndefOr[String] = js.native
+  var scayt_servicePort: js.UndefOr[String] = js.undefined
   
-  var scayt_serviceProtocol: js.UndefOr[String] = js.native
+  var scayt_serviceProtocol: js.UndefOr[String] = js.undefined
   
-  var scayt_srcUrl: js.UndefOr[String] = js.native
+  var scayt_srcUrl: js.UndefOr[String] = js.undefined
   
-  var scayt_uiTabs: js.UndefOr[String] = js.native
+  var scayt_uiTabs: js.UndefOr[String] = js.undefined
   
-  var scayt_userDictionaryName: js.UndefOr[String] = js.native
+  var scayt_userDictionaryName: js.UndefOr[String] = js.undefined
   
-  var sharedSpaces: js.UndefOr[sharedSpace] = js.native
+  var sharedSpaces: js.UndefOr[sharedSpace] = js.undefined
   
-  var shiftEnterMode: js.UndefOr[Double] = js.native
+  var shiftEnterMode: js.UndefOr[Double] = js.undefined
   
-  var skin: js.UndefOr[String] = js.native
+  var skin: js.UndefOr[String] = js.undefined
   
-  var smiley_columns: js.UndefOr[Double] = js.native
+  var smiley_columns: js.UndefOr[Double] = js.undefined
   
-  var smiley_descriptions: js.UndefOr[js.Array[String]] = js.native
+  var smiley_descriptions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var smiley_images: js.UndefOr[js.Array[String]] = js.native
+  var smiley_images: js.UndefOr[js.Array[String]] = js.undefined
   
-  var smiley_path: js.UndefOr[String] = js.native
+  var smiley_path: js.UndefOr[String] = js.undefined
   
-  var sourceAreaTabSize: js.UndefOr[Double] = js.native
+  var sourceAreaTabSize: js.UndefOr[Double] = js.undefined
   
-  var specialChars: js.UndefOr[js.Array[String | (js.Tuple2[String, String])]] = js.native
+  var specialChars: js.UndefOr[js.Array[String | (js.Tuple2[String, String])]] = js.undefined
   
-  var startupFocus: js.UndefOr[String | Boolean] = js.native
+  var startupFocus: js.UndefOr[String | Boolean] = js.undefined
   
-  var startupMode: js.UndefOr[String] = js.native
+  var startupMode: js.UndefOr[String] = js.undefined
   
-  var startupOutlineBlocks: js.UndefOr[Boolean] = js.native
+  var startupOutlineBlocks: js.UndefOr[Boolean] = js.undefined
   
-  var startupShowBorders: js.UndefOr[Boolean] = js.native
+  var startupShowBorders: js.UndefOr[Boolean] = js.undefined
   
-  var stylesSet: js.UndefOr[String | Boolean | js.Array[styleObject]] = js.native
+  var stylesSet: js.UndefOr[String | Boolean | js.Array[styleObject]] = js.undefined
   
-  var stylesheetParser_skipSelectors: js.UndefOr[RegExp] = js.native
+  var stylesheetParser_skipSelectors: js.UndefOr[RegExp] = js.undefined
   
-  var stylesheetParser_validSelectors: js.UndefOr[RegExp] = js.native
+  var stylesheetParser_validSelectors: js.UndefOr[RegExp] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var tabSpaces: js.UndefOr[Double] = js.native
+  var tabSpaces: js.UndefOr[Double] = js.undefined
   
-  var templates: js.UndefOr[String] = js.native
+  var templates: js.UndefOr[String] = js.undefined
   
-  var templates_files: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var templates_files: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var templates_replaceContent: js.UndefOr[Boolean] = js.native
+  var templates_replaceContent: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String | Boolean] = js.native
+  var title: js.UndefOr[String | Boolean] = js.undefined
   
-  var toolbar: js.UndefOr[String | (js.Array[String | js.Array[String] | Groups]) | Null] = js.native
+  var toolbar: js.UndefOr[String | (js.Array[String | js.Array[String] | Groups]) | Null] = js.undefined
   
-  var toolbarCanCollapse: js.UndefOr[Boolean] = js.native
+  var toolbarCanCollapse: js.UndefOr[Boolean] = js.undefined
   
-  var toolbarGroupCycling: js.UndefOr[Boolean] = js.native
+  var toolbarGroupCycling: js.UndefOr[Boolean] = js.undefined
   
-  var toolbarGroups: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.toolbarGroups | String]] = js.native
+  var toolbarGroups: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.toolbarGroups | String]] = js.undefined
   
-  var toolbarLocation: js.UndefOr[String] = js.native
+  var toolbarLocation: js.UndefOr[String] = js.undefined
   
-  var toolbarStartupExpanded: js.UndefOr[Boolean] = js.native
+  var toolbarStartupExpanded: js.UndefOr[Boolean] = js.undefined
   
-  var uiColor: js.UndefOr[String] = js.native
+  var uiColor: js.UndefOr[String] = js.undefined
   
-  var undoStackSize: js.UndefOr[Double] = js.native
+  var undoStackSize: js.UndefOr[Double] = js.undefined
   
-  var uploadUrl: js.UndefOr[String] = js.native
+  var uploadUrl: js.UndefOr[String] = js.undefined
   
-  var useComputedState: js.UndefOr[Boolean] = js.native
+  var useComputedState: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
   
-  var wsc_cmd: js.UndefOr[String] = js.native
+  var wsc_cmd: js.UndefOr[String] = js.undefined
   
-  var wsc_customDictionaryIds: js.UndefOr[String] = js.native
+  var wsc_customDictionaryIds: js.UndefOr[String] = js.undefined
   
-  var wsc_customLoaderScript: js.UndefOr[String] = js.native
+  var wsc_customLoaderScript: js.UndefOr[String] = js.undefined
   
-  var wsc_customerId: js.UndefOr[String] = js.native
+  var wsc_customerId: js.UndefOr[String] = js.undefined
   
-  var wsc_height: js.UndefOr[String] = js.native
+  var wsc_height: js.UndefOr[String] = js.undefined
   
-  var wsc_lang: js.UndefOr[String] = js.native
+  var wsc_lang: js.UndefOr[String] = js.undefined
   
-  var wsc_left: js.UndefOr[String] = js.native
+  var wsc_left: js.UndefOr[String] = js.undefined
   
-  var wsc_top: js.UndefOr[String] = js.native
+  var wsc_top: js.UndefOr[String] = js.undefined
   
-  var wsc_userDictionaryName: js.UndefOr[String] = js.native
+  var wsc_userDictionaryName: js.UndefOr[String] = js.undefined
   
-  var wsc_width: js.UndefOr[String] = js.native
+  var wsc_width: js.UndefOr[String] = js.undefined
 }
 object config {
   
@@ -2139,18 +2137,17 @@ object config {
     def setWsc_widthUndefined: Self = StObject.set(x, "wsc_width", js.undefined)
   }
   
-  @js.native
   trait styleObject extends StObject {
     
-    var attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var element: String = js.native
+    var element: String
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var overrides: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var overrides: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var styles: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var styles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object styleObject {
     

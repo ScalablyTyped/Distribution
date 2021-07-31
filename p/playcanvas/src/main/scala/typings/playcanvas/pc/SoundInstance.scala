@@ -4,7 +4,6 @@ import typings.std.AudioBufferSourceNode
 import typings.std.AudioNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,7 +35,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param [options.onEnd = null] - Function called when the instance ends.
   */
 @js.native
-trait SoundInstance extends EventHandler {
+trait SoundInstance
+  extends StObject
+     with EventHandler {
   
   /**
     * Clears any external nodes set by {@link pc.SoundInstance#setExternalNodes}.

@@ -6,7 +6,6 @@ import typings.std.NodeList
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -22,14 +21,13 @@ object mod extends Shortcut {
     Unit
   ]
   
-  @js.native
   trait SVGInjectorOptions extends StObject {
     
     /**
       * Callback to run during each SVG injection. The SVG element is passed if
       * the injection was successful.
       */
-    var each: js.UndefOr[js.Function1[/* svg */ SVGElement | String, Unit]] = js.native
+    var each: js.UndefOr[js.Function1[/* svg */ SVGElement | String, Unit]] = js.undefined
     
     /**
       * Whether to run scripts blocks found in the SVG.
@@ -39,12 +37,12 @@ object mod extends Shortcut {
       * 'once' — Only run scripts once for each SVG.
       * 'never' — Ignore scripts (default)
       */
-    var evalScripts: js.UndefOr[String] = js.native
+    var evalScripts: js.UndefOr[String] = js.undefined
     
     /**
       * Location of fallback pngs, if desired.
       */
-    var pngFallback: js.UndefOr[String] = js.native
+    var pngFallback: js.UndefOr[String] = js.undefined
   }
   object SVGInjectorOptions {
     

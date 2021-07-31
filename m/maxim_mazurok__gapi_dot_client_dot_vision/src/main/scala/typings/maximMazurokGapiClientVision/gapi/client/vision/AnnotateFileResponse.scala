@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotateFileResponse extends StObject {
   
   /** If set, represents the error message for the failed request. The `responses` field will not be set in this case. */
-  var error: js.UndefOr[Status] = js.native
+  var error: js.UndefOr[Status] = js.undefined
   
   /** Information about the file for which this response is generated. */
-  var inputConfig: js.UndefOr[InputConfig] = js.native
+  var inputConfig: js.UndefOr[InputConfig] = js.undefined
   
   /** Individual responses to images found within the file. This field will be empty if the `error` field is set. */
-  var responses: js.UndefOr[js.Array[AnnotateImageResponse]] = js.native
+  var responses: js.UndefOr[js.Array[AnnotateImageResponse]] = js.undefined
   
   /** This field gives the total number of pages in the file. */
-  var totalPages: js.UndefOr[Double] = js.native
+  var totalPages: js.UndefOr[Double] = js.undefined
 }
 object AnnotateFileResponse {
   

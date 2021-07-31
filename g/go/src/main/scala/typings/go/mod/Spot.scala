@@ -2,7 +2,6 @@ package typings.go.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -391,16 +390,14 @@ object Spot {
     * @param {string} str
     */
   /* static member */
-  @JSImport("go", "Spot.parse")
-  @js.native
-  def parse(str: String): Spot = js.native
+  @scala.inline
+  def parse(str: String): Spot = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[Spot]
   
   /**
     * This static function can be used to write out a Spot as a string that can be read by Spot.parse.
     * @param {Spot} val
     */
   /* static member */
-  @JSImport("go", "Spot.stringify")
-  @js.native
-  def stringify(`val`: Spot): String = js.native
+  @scala.inline
+  def stringify(`val`: Spot): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

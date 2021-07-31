@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * that need to attach files.
   * When a route changes successfully, we ensure that the collection is cleared.
   */
-@js.native
 trait IFileManager extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait IFileManager extends StObject {
     * @description
     *  Removes all files from the manager
     */
-  def clearFiles(): Unit = js.native
+  def clearFiles(): Unit
   
   /**
     * @ngdoc function
@@ -38,7 +36,7 @@ trait IFileManager extends StObject {
     * @description
     *  Returns all of the files attached to the file manager
     */
-  def getFiles(): js.Array[IFile] = js.native
+  def getFiles(): js.Array[IFile]
   
   /**
     * @ngdoc function
@@ -50,7 +48,7 @@ trait IFileManager extends StObject {
     *  Attaches files to the current manager for the current editor for a particular property, if an empty array is set
     *   for the files collection that effectively clears the files for the specified editor.
     */
-  def setFiles(propertyAlias: String, files: js.Array[IFile]): Unit = js.native
+  def setFiles(propertyAlias: String, files: js.Array[IFile]): Unit
 }
 object IFileManager {
   

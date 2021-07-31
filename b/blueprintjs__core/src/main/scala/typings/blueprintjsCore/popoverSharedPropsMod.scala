@@ -25,7 +25,6 @@ import typings.std.Event
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popoverSharedPropsMod {
@@ -146,9 +145,9 @@ object popoverSharedPropsMod {
     def TOP_RIGHT_=(x: `top-right`): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TOP_RIGHT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IPopoverSharedProps
-    extends IOverlayableProps
+    extends StObject
+       with IOverlayableProps
        with IProps {
     
     /**
@@ -157,7 +156,7 @@ object popoverSharedPropsMod {
       * Popper will find the correct DOM element itself.
       * @default "scrollParent"
       */
-    var boundary: js.UndefOr[Boundary] = js.native
+    var boundary: js.UndefOr[Boundary] = js.undefined
     
     /**
       * When enabled, clicks inside a `Classes.POPOVER_DISMISS` element
@@ -166,19 +165,19 @@ object popoverSharedPropsMod {
       * @see http://blueprintjs.com/docs/#core/components/popover.closing-on-click
       * @default false
       */
-    var captureDismiss: js.UndefOr[Boolean] = js.native
+    var captureDismiss: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Initial opened state when uncontrolled.
       * @default false
       */
-    var defaultIsOpen: js.UndefOr[Boolean] = js.native
+    var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevents the popover from appearing when `true`.
       * @default false
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The amount of time in milliseconds the popover should remain open after
@@ -186,7 +185,7 @@ object popoverSharedPropsMod {
       * over the target before it expires.
       * @default 300
       */
-    var hoverCloseDelay: js.UndefOr[Double] = js.native
+    var hoverCloseDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of time in milliseconds the popover should wait before opening
@@ -194,14 +193,14 @@ object popoverSharedPropsMod {
       * mouses away from the target before it expires.
       * @default 150
       */
-    var hoverOpenDelay: js.UndefOr[Double] = js.native
+    var hoverOpenDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether a popover that uses a `Portal` should automatically inherit the
       * dark theme from its parent.
       * @default true
       */
-    var inheritDarkTheme: js.UndefOr[Boolean] = js.native
+    var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether the popover is visible. Passing this prop puts the popover in
@@ -210,21 +209,21 @@ object popoverSharedPropsMod {
       * popover will remain closed.
       * @default undefined
       */
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to apply minimal styling to this popover or tooltip. Minimal popovers
       * do not have an arrow pointing to their target and use a subtler animation.
       * @default false
       */
-    var minimal: js.UndefOr[Boolean] = js.native
+    var minimal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Popper modifier options, passed directly to internal Popper instance. See
       * https://popper.js.org/docs/modifiers/ for complete
       * details.
       */
-    var modifiers: js.UndefOr[Modifiers] = js.native
+    var modifiers: js.UndefOr[Modifiers] = js.undefined
     
     /**
       * Callback invoked in controlled mode when the popover open state *would*
@@ -236,7 +235,7 @@ object popoverSharedPropsMod {
           /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Whether the popover should open when its target is focused. If `true`,
@@ -244,12 +243,12 @@ object popoverSharedPropsMod {
       * navigation.
       * @default true
       */
-    var openOnTargetFocus: js.UndefOr[Boolean] = js.native
+    var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A space-delimited string of class names applied to the popover element.
       */
-    var popoverClassName: js.UndefOr[String] = js.native
+    var popoverClassName: js.UndefOr[String] = js.undefined
     
     /**
       * The position (relative to the target) at which the popover should appear.
@@ -259,18 +258,18 @@ object popoverSharedPropsMod {
       * user scrolls around.
       * @default "auto"
       */
-    var position: js.UndefOr[PopoverPosition] = js.native
+    var position: js.UndefOr[PopoverPosition] = js.undefined
     
     /**
       * Space-delimited string of class names applied to the target element.
       */
-    var targetClassName: js.UndefOr[String] = js.native
+    var targetClassName: js.UndefOr[String] = js.undefined
     
     /**
       * HTML props to spread to target element. Use `targetTagName` to change
       * the type of element rendered. Note that `ref` is not supported.
       */
-    var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
+    var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     /**
       * HTML tag name for the target element. This must be an HTML element to
@@ -282,7 +281,7 @@ object popoverSharedPropsMod {
       */
     var targetTagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * HTML tag name for the wrapper element, which also receives the
@@ -291,7 +290,7 @@ object popoverSharedPropsMod {
       */
     var wrapperTagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object IPopoverSharedProps {
     

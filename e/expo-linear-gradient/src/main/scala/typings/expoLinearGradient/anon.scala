@@ -7,19 +7,17 @@ import typings.react.mod.ReactNode
 import typings.reactNative.mod.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Colors extends StObject {
     
     /**
       * An array of colors that represent stops in the gradient. At least two colors are required
       * (for a single-color background, use the `style.backgroundColor` prop on a `View` component).
       */
-    var colors: js.Array[String] = js.native
+    var colors: js.Array[String]
     
     /**
       * An object `{ x: number; y: number }` or array `[x, y]` that represents the point
@@ -29,7 +27,7 @@ object anon {
       *
       * **On web**, this only changes the angle of the gradient because CSS gradients don't support changing the end position.
       */
-    var end: js.UndefOr[LinearGradientPoint | Null] = js.native
+    var end: js.UndefOr[LinearGradientPoint | Null] = js.undefined
     
     /**
       * An array that contains `number`s ranging from 0 to 1, inclusive, and is the same length as the `colors` property.
@@ -42,7 +40,7 @@ object anon {
       *
       * The color-stop locations must be ascending from least to greatest.
       */
-    var locations: js.UndefOr[js.Array[Double] | Null] = js.native
+    var locations: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
     /**
       * An object `{ x: number; y: number }` or array `[x, y]` that represents the point
@@ -52,7 +50,7 @@ object anon {
       *
       * **On web**, this only changes the angle of the gradient because CSS gradients don't support changing the starting position.
       */
-    var start: js.UndefOr[LinearGradientPoint | Null] = js.native
+    var start: js.UndefOr[LinearGradientPoint | Null] = js.undefined
   }
   object Colors {
     
@@ -104,18 +102,17 @@ object anon {
   }
   
   /* Inlined react.react.PropsWithChildren<{  colors :std.Array<number>,   locations :std.Array<number> | null | undefined,   startPoint :expo-linear-gradient.expo-linear-gradient/build/NativeLinearGradient.types.NativeLinearGradientPoint | null | undefined,   endPoint :expo-linear-gradient.expo-linear-gradient/build/NativeLinearGradient.types.NativeLinearGradientPoint | null | undefined}> */
-  @js.native
   trait PropsWithChildrencolorsAr extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var colors: js.Array[Double] = js.native
+    var colors: js.Array[Double]
     
-    var endPoint: js.UndefOr[NativeLinearGradientPoint | Null] = js.native
+    var endPoint: js.UndefOr[NativeLinearGradientPoint | Null] = js.undefined
     
-    var locations: js.UndefOr[js.Array[Double] | Null] = js.native
+    var locations: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
-    var startPoint: js.UndefOr[NativeLinearGradientPoint | Null] = js.native
+    var startPoint: js.UndefOr[NativeLinearGradientPoint | Null] = js.undefined
   }
   object PropsWithChildrencolorsAr {
     
@@ -173,7 +170,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofView extends Instantiable0[View] {
+  trait TypeofView
+    extends StObject
+       with Instantiable0[View] {
     
     /**
       * Is 3D Touch / Force Touch available (i.e. will touch events include `force`)
@@ -182,12 +181,11 @@ object anon {
     var forceTouchAvailable: Boolean = js.native
   }
   
-  @js.native
   trait X extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object X {
     

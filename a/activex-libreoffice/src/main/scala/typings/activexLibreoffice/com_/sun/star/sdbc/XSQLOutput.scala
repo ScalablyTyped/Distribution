@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,99 +21,100 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `XSQLOutput.writeXXX` methods to write data from the {@link com.sun.star.sdbc.XSQLData} object to the `XSQLOutput` output stream as the representation
   * of a SQL user-defined type.
   */
-@js.native
-trait XSQLOutput extends XInterface {
+trait XSQLOutput
+  extends StObject
+     with XInterface {
   
   /**
     * writes an array to the stream.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeArray(x: XArray): Unit = js.native
+  def writeArray(x: XArray): Unit
   
   /**
     * writes the next attribute to the stream as a stream of uninterpreted bytes.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeBinaryStream(x: XInputStream): Unit = js.native
+  def writeBinaryStream(x: XInputStream): Unit
   
   /**
     * writes a BLOB to the stream.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeBlob(x: XBlob): Unit = js.native
+  def writeBlob(x: XBlob): Unit
   
   /**
     * writes the next attribute to the stream as boolean.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeBoolean(x: Boolean): Unit = js.native
+  def writeBoolean(x: Boolean): Unit
   
   /**
     * writes the next attribute to the stream as byte.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeByte(x: Double): Unit = js.native
+  def writeByte(x: Double): Unit
   
   /**
     * writes the next attribute to the stream as byte sequence.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeBytes(x: SeqEquiv[Double]): Unit = js.native
+  def writeBytes(x: SeqEquiv[Double]): Unit
   
   /**
     * writes the next attribute to the stream as a stream of Unicode string.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeCharacterStream(x: XInputStream): Unit = js.native
+  def writeCharacterStream(x: XInputStream): Unit
   
   /**
     * writes a CLOB to the stream.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeClob(x: XClob): Unit = js.native
+  def writeClob(x: XClob): Unit
   
   /**
     * writes the next attribute to the stream as a date.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeDate(x: Date): Unit = js.native
+  def writeDate(x: Date): Unit
   
   /**
     * writes the next attribute to the stream as double.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeDouble(x: Double): Unit = js.native
+  def writeDouble(x: Double): Unit
   
   /**
     * writes the next attribute to the stream as float.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeFloat(x: Double): Unit = js.native
+  def writeFloat(x: Double): Unit
   
   /**
     * writes the next attribute to the stream as long.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeInt(x: Double): Unit = js.native
+  def writeInt(x: Double): Unit
   
   /**
     * writes the next attribute to the stream as hyper.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeLong(x: Double): Unit = js.native
+  def writeLong(x: Double): Unit
   
   /**
     * writes to the stream the data contained in the given `XSQLData` object.
@@ -127,49 +127,49 @@ trait XSQLOutput extends XInterface {
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeObject(x: XSQLData): Unit = js.native
+  def writeObject(x: XSQLData): Unit
   
   /**
     * writes a REF(&lt;structured-type&gt;) to the stream.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeRef(x: XRef): Unit = js.native
+  def writeRef(x: XRef): Unit
   
   /**
     * writes the next attribute to the stream as short.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeShort(x: Double): Unit = js.native
+  def writeShort(x: Double): Unit
   
   /**
     * writes the next attribute to the stream as a string.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeString(x: String): Unit = js.native
+  def writeString(x: String): Unit
   
   /**
     * writes a structured-type to the stream.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeStruct(x: XStruct): Unit = js.native
+  def writeStruct(x: XStruct): Unit
   
   /**
     * writes the next attribute to the stream as a time.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeTime(x: Time): Unit = js.native
+  def writeTime(x: Time): Unit
   
   /**
     * writes the next attribute to the stream as a datetime.
     * @param x the value to pass to the database.
     * @throws SQLException if a database access error occurs.
     */
-  def writeTimestamp(x: DateTime): Unit = js.native
+  def writeTimestamp(x: DateTime): Unit
 }
 object XSQLOutput {
   

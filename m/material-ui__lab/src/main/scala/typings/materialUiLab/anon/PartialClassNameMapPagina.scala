@@ -2,16 +2,14 @@ package typings.materialUiLab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/lab.@material-ui/lab/Pagination/Pagination.PaginationClassKey>> */
-@js.native
 trait PartialClassNameMapPagina extends StObject {
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
-  var ul: js.UndefOr[String] = js.native
+  var ul: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapPagina {
   

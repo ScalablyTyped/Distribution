@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetBreakpointResponse extends StObject {
   
   /** Breakpoint resource. The field `id` is guaranteed to be set (in addition to the echoed fields). */
-  var breakpoint: js.UndefOr[Breakpoint] = js.native
+  var breakpoint: js.UndefOr[Breakpoint] = js.undefined
 }
 object SetBreakpointResponse {
   

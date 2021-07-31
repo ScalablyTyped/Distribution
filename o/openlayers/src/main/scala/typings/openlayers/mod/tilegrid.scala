@@ -5,10 +5,13 @@ import typings.openlayers.mod.olx.tilegrid.WMTSOptions
 import typings.openlayers.mod.olx.tilegrid.XYZOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tilegrid {
+  
+  @JSImport("openlayers", "tilegrid")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @classdesc
@@ -41,7 +44,7 @@ object tilegrid {
       * @param callback Function called with each tile coordinate.
       * @api
       */
-    def forEachTileCoord(extent: Extent_, zoom: Double, callback: js.Function1[/* coords */ TileCoord, _]): Unit = js.native
+    def forEachTileCoord(extent: Extent_, zoom: Double, callback: js.Function1[/* coords */ TileCoord, js.Any]): Unit = js.native
     
     /**
       * Get the maximum zoom level for the grid.
@@ -168,6 +171,10 @@ object tilegrid {
   }
   object WMTS {
     
+    @JSImport("openlayers", "tilegrid.WMTS")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a tile grid from a WMTS capabilities matrix set.
       * @param matrixSet An object representing a matrixSet in the
@@ -178,12 +185,10 @@ object tilegrid {
       * @api
       */
     /* static member */
-    @JSImport("openlayers", "tilegrid.WMTS.createFromCapabilitiesMatrixSet")
-    @js.native
-    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject): WMTS = js.native
-    @JSImport("openlayers", "tilegrid.WMTS.createFromCapabilitiesMatrixSet")
-    @js.native
-    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject, opt_extent: Extent_): WMTS = js.native
+    @scala.inline
+    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject): WMTS = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any]).asInstanceOf[WMTS]
+    @scala.inline
+    def createFromCapabilitiesMatrixSet(matrixSet: GlobalObject, opt_extent: Extent_): WMTS = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromCapabilitiesMatrixSet")(matrixSet.asInstanceOf[js.Any], opt_extent.asInstanceOf[js.Any])).asInstanceOf[WMTS]
   }
   
   /**
@@ -192,10 +197,8 @@ object tilegrid {
     * @return Tile grid instance.
     * @api
     */
-  @JSImport("openlayers", "tilegrid.createXYZ")
-  @js.native
-  def createXYZ(): TileGrid = js.native
-  @JSImport("openlayers", "tilegrid.createXYZ")
-  @js.native
-  def createXYZ(opt_options: XYZOptions): TileGrid = js.native
+  @scala.inline
+  def createXYZ(): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")().asInstanceOf[TileGrid]
+  @scala.inline
+  def createXYZ(opt_options: XYZOptions): TileGrid = ^.asInstanceOf[js.Dynamic].applyDynamic("createXYZ")(opt_options.asInstanceOf[js.Any]).asInstanceOf[TileGrid]
 }

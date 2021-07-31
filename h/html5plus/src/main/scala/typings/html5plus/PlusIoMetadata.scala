@@ -3,7 +3,6 @@ package typings.html5plus
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
   */
-@js.native
 trait PlusIoMetadata extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait PlusIoMetadata extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var directoryCount: js.UndefOr[Double] = js.native
+  var directoryCount: js.UndefOr[Double] = js.undefined
   
   /**
     * 目录的文件数
@@ -29,14 +27,14 @@ trait PlusIoMetadata extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var fileCount: js.UndefOr[Double] = js.native
+  var fileCount: js.UndefOr[Double] = js.undefined
   
   /**
     * 文件或目录的最后修改时间
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var modificationTime: js.UndefOr[Date] = js.native
+  var modificationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * 文件的大小
@@ -44,7 +42,7 @@ trait PlusIoMetadata extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/io.html](http://www.html5plus.org/doc/zh_cn/io.html)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
 }
 object PlusIoMetadata {
   

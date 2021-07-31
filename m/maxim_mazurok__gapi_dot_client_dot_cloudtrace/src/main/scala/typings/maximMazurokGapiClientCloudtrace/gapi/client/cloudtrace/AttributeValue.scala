@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudtrace.gapi.client.cloudtrace
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeValue extends StObject {
   
   /** A Boolean value represented by `true` or `false`. */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /** A 64-bit signed integer. */
-  var intValue: js.UndefOr[String] = js.native
+  var intValue: js.UndefOr[String] = js.undefined
   
   /** A string up to 256 bytes long. */
-  var stringValue: js.UndefOr[TruncatableString] = js.native
+  var stringValue: js.UndefOr[TruncatableString] = js.undefined
 }
 object AttributeValue {
   

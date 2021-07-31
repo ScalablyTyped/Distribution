@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XLogHandler
   * @since OOo 2.3
   */
-@js.native
 trait XLogFormatter extends StObject {
   
   /**
@@ -21,14 +19,14 @@ trait XLogFormatter extends StObject {
     *
     * For instance, a formatter might produce table-like plain text output, and could return a table-head string (potentially including line breaks) here.
     */
-  val Head: String = js.native
+  val Head: String
   
   /**
     * returns the footer string for the log
     *
     * This can be used to generate a footer string, which by the {@link XLogHandler} is emitted to its output channel before it is finally being closed.
     */
-  val Tail: String = js.native
+  val Tail: String
   
   /**
     * formats the given log record for output
@@ -36,7 +34,7 @@ trait XLogFormatter extends StObject {
     * A {@link XLogHandler} will call this method to format a given log record. The resulting string will be emitted to the handler's output channel,
     * without processing it any further (except possibly encoding it with the handler's `Encoding` ).
     */
-  def format(Record: LogRecord): String = js.native
+  def format(Record: LogRecord): String
   
   /**
     * returns the header string for the log
@@ -46,14 +44,14 @@ trait XLogFormatter extends StObject {
     *
     * For instance, a formatter might produce table-like plain text output, and could return a table-head string (potentially including line breaks) here.
     */
-  def getHead(): String = js.native
+  def getHead(): String
   
   /**
     * returns the footer string for the log
     *
     * This can be used to generate a footer string, which by the {@link XLogHandler} is emitted to its output channel before it is finally being closed.
     */
-  def getTail(): String = js.native
+  def getTail(): String
 }
 object XLogFormatter {
   

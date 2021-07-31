@@ -2,27 +2,25 @@ package typings.storybookUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `112` extends StObject {
   
-  var `1`: Boolean = js.native
+  var `1`: Boolean
   
-  var `1-11`: Boolean = js.native
+  var `1-11`: Boolean
   
-  var `1-12`: Boolean = js.native
+  var `1-12`: Boolean
   
-  var `1-12-121`: Boolean = js.native
+  var `1-12-121`: Boolean
   
-  var `1-12-122`: Boolean = js.native
+  var `1-12-122`: Boolean
   
-  var `2`: Boolean = js.native
+  var `2`: Boolean
   
-  var `2-21`: Boolean = js.native
+  var `2-21`: Boolean
   
-  var `2-22`: Boolean = js.native
+  var `2-22`: Boolean
 }
 object `112` {
   

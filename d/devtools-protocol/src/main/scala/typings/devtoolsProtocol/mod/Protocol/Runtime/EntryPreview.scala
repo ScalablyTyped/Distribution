@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntryPreview extends StObject {
   
   /**
     * Preview of the key. Specified for map-like collection entries.
     */
-  var key: js.UndefOr[ObjectPreview] = js.native
+  var key: js.UndefOr[ObjectPreview] = js.undefined
   
   /**
     * Preview of the value.
     */
-  var value: ObjectPreview = js.native
+  var value: ObjectPreview
 }
 object EntryPreview {
   

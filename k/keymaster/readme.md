@@ -10,9 +10,9 @@ library for defining and dispatching keyboard shortcuts
 | ------------------ | :-------------: |
 | Full name          | keymaster |
 | Keywords           | - |
-| # releases         | 1 |
-| # dependents       | 58 |
-| # downloads        | 3847353 |
+| # releases         | 0 |
+| # dependents       | 69 |
+| # downloads        | 4043312 |
 | # stars            | 13 |
 
 ## Links

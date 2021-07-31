@@ -6,7 +6,6 @@ import typings.devextreme.mod.global.Promise
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -42,7 +41,7 @@ trait PivotGridDataSource extends StObject {
   /**
     * [descr:PivotGridDataSource.expandHeaderItem(area, path)]
     */
-  def expandHeaderItem(area: String, path: js.Array[_]): Unit = js.native
+  def expandHeaderItem(area: String, path: js.Array[js.Any]): Unit = js.native
   
   def field(id: String): js.Any = js.native
   def field(id: String, options: js.Any): Unit = js.native
@@ -91,7 +90,7 @@ trait PivotGridDataSource extends StObject {
   /**
     * [descr:PivotGridDataSource.load()]
     */
-  def load(): Promise[_] with JQueryPromise[_] = js.native
+  def load(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   
   /**
     * [descr:PivotGridDataSource.off(eventName)]
@@ -114,7 +113,7 @@ trait PivotGridDataSource extends StObject {
   /**
     * [descr:PivotGridDataSource.reload()]
     */
-  def reload(): Promise[_] with JQueryPromise[_] = js.native
+  def reload(): Promise[js.Any] & JQueryPromise[js.Any] = js.native
   
   /**
     * [descr:PivotGridDataSource.state()]

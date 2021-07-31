@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Location information about a resource.
   */
-@js.native
 trait SchemaResourceLocation extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaResourceLocation extends StObject {
     * &#39;original_locations&#39; field. For example:
     * &quot;europe-west1-a&quot;     &quot;us-east1&quot;     &quot;nam3&quot;
     */
-  var currentLocations: js.UndefOr[js.Array[String]] = js.native
+  var currentLocations: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The locations of a resource prior to the execution of the operation.
@@ -27,7 +25,7 @@ trait SchemaResourceLocation extends StObject {
     * fields. For example:      &quot;europe-west1-a&quot; &quot;us-east1&quot;
     * &quot;nam3&quot;
     */
-  var originalLocations: js.UndefOr[js.Array[String]] = js.native
+  var originalLocations: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaResourceLocation {
   

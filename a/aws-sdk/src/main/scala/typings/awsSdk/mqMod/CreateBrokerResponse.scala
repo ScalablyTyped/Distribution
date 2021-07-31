@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBrokerResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the broker.
     */
-  var BrokerArn: js.UndefOr[string] = js.native
+  var BrokerArn: js.UndefOr[string] = js.undefined
   
   /**
     * The unique ID that Amazon MQ generates for the broker.
     */
-  var BrokerId: js.UndefOr[string] = js.native
+  var BrokerId: js.UndefOr[string] = js.undefined
 }
 object CreateBrokerResponse {
   

@@ -12,17 +12,15 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Abbr extends StObject {
     
-    var abbr: js.UndefOr[Boolean] = js.native
+    var abbr: js.UndefOr[Boolean] = js.undefined
     
-    var context: js.UndefOr[Boolean] = js.native
+    var context: js.UndefOr[Boolean] = js.undefined
   }
   object Abbr {
     
@@ -49,20 +47,19 @@ object anon {
     }
   }
   
-  @js.native
   trait Abbreviation extends StObject {
     
-    def abbreviation(): String = js.native
+    def abbreviation(): String
     
-    def adjective(): String = js.native
+    def adjective(): String
     
-    def ingverb(): String = js.native
+    def ingverb(): String
     
-    def noun(): String = js.native
+    def noun(): String
     
-    def phrase(): String = js.native
+    def phrase(): String
     
-    def verb(): String = js.native
+    def verb(): String
   }
   object Abbreviation {
     
@@ -106,225 +103,115 @@ object anon {
   trait Abstract extends StObject {
     
     def `abstract`(): String = js.native
-    def `abstract`(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def `abstract`(width: Double): String = js.native
     def `abstract`(width: Double, height: Double): String = js.native
+    def `abstract`(width: Unit, height: Double): String = js.native
     
     def animals(): String = js.native
-    def animals(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def animals(width: Double): String = js.native
     def animals(width: Double, height: Double): String = js.native
+    def animals(width: Unit, height: Double): String = js.native
     
     def avatar(): String = js.native
     
     def business(): String = js.native
-    def business(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def business(width: Double): String = js.native
     def business(width: Double, height: Double): String = js.native
+    def business(width: Unit, height: Double): String = js.native
     
     def cats(): String = js.native
-    def cats(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def cats(width: Double): String = js.native
     def cats(width: Double, height: Double): String = js.native
+    def cats(width: Unit, height: Double): String = js.native
     
     def city(): String = js.native
-    def city(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def city(width: Double): String = js.native
     def city(width: Double, height: Double): String = js.native
+    def city(width: Unit, height: Double): String = js.native
     
     def dataUri(): String = js.native
-    def dataUri(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], color: String): String = js.native
-    def dataUri(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
-    def dataUri(width: js.UndefOr[scala.Nothing], height: Double, color: String): String = js.native
     def dataUri(width: Double): String = js.native
-    def dataUri(width: Double, height: js.UndefOr[scala.Nothing], color: String): String = js.native
     def dataUri(width: Double, height: Double): String = js.native
     def dataUri(width: Double, height: Double, color: String): String = js.native
+    def dataUri(width: Double, height: Unit, color: String): String = js.native
+    def dataUri(width: Unit, height: Double): String = js.native
+    def dataUri(width: Unit, height: Double, color: String): String = js.native
+    def dataUri(width: Unit, height: Unit, color: String): String = js.native
     
     def fashion(): String = js.native
-    def fashion(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def fashion(width: Double): String = js.native
     def fashion(width: Double, height: Double): String = js.native
+    def fashion(width: Unit, height: Double): String = js.native
     
     def food(): String = js.native
-    def food(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def food(width: Double): String = js.native
     def food(width: Double, height: Double): String = js.native
+    def food(width: Unit, height: Double): String = js.native
     
     def image(): String = js.native
     
     def imageUrl(): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      category: js.UndefOr[scala.Nothing],
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      category: js.UndefOr[scala.Nothing],
-      randomize: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      category: js.UndefOr[scala.Nothing],
-      randomize: Boolean,
-      https: Boolean
-    ): String = js.native
-    def imageUrl(width: js.UndefOr[scala.Nothing], height: js.UndefOr[scala.Nothing], category: String): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      category: String,
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      category: String,
-      randomize: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: js.UndefOr[scala.Nothing],
-      category: String,
-      randomize: Boolean,
-      https: Boolean
-    ): String = js.native
-    def imageUrl(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      category: js.UndefOr[scala.Nothing],
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      category: js.UndefOr[scala.Nothing],
-      randomize: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      category: js.UndefOr[scala.Nothing],
-      randomize: Boolean,
-      https: Boolean
-    ): String = js.native
-    def imageUrl(width: js.UndefOr[scala.Nothing], height: Double, category: String): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      category: String,
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
-    def imageUrl(width: js.UndefOr[scala.Nothing], height: Double, category: String, randomize: Boolean): String = js.native
-    def imageUrl(
-      width: js.UndefOr[scala.Nothing],
-      height: Double,
-      category: String,
-      randomize: Boolean,
-      https: Boolean
-    ): String = js.native
     def imageUrl(width: Double): String = js.native
-    def imageUrl(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      category: js.UndefOr[scala.Nothing],
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      category: js.UndefOr[scala.Nothing],
-      randomize: Boolean
-    ): String = js.native
-    def imageUrl(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      category: js.UndefOr[scala.Nothing],
-      randomize: Boolean,
-      https: Boolean
-    ): String = js.native
-    def imageUrl(width: Double, height: js.UndefOr[scala.Nothing], category: String): String = js.native
-    def imageUrl(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      category: String,
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
-    def imageUrl(width: Double, height: js.UndefOr[scala.Nothing], category: String, randomize: Boolean): String = js.native
-    def imageUrl(
-      width: Double,
-      height: js.UndefOr[scala.Nothing],
-      category: String,
-      randomize: Boolean,
-      https: Boolean
-    ): String = js.native
     def imageUrl(width: Double, height: Double): String = js.native
-    def imageUrl(
-      width: Double,
-      height: Double,
-      category: js.UndefOr[scala.Nothing],
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
-    def imageUrl(width: Double, height: Double, category: js.UndefOr[scala.Nothing], randomize: Boolean): String = js.native
-    def imageUrl(
-      width: Double,
-      height: Double,
-      category: js.UndefOr[scala.Nothing],
-      randomize: Boolean,
-      https: Boolean
-    ): String = js.native
     def imageUrl(width: Double, height: Double, category: String): String = js.native
-    def imageUrl(
-      width: Double,
-      height: Double,
-      category: String,
-      randomize: js.UndefOr[scala.Nothing],
-      https: Boolean
-    ): String = js.native
     def imageUrl(width: Double, height: Double, category: String, randomize: Boolean): String = js.native
     def imageUrl(width: Double, height: Double, category: String, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Double, height: Double, category: String, randomize: Unit, https: Boolean): String = js.native
+    def imageUrl(width: Double, height: Double, category: Unit, randomize: Boolean): String = js.native
+    def imageUrl(width: Double, height: Double, category: Unit, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Double, height: Double, category: Unit, randomize: Unit, https: Boolean): String = js.native
+    def imageUrl(width: Double, height: Unit, category: String): String = js.native
+    def imageUrl(width: Double, height: Unit, category: String, randomize: Boolean): String = js.native
+    def imageUrl(width: Double, height: Unit, category: String, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Double, height: Unit, category: String, randomize: Unit, https: Boolean): String = js.native
+    def imageUrl(width: Double, height: Unit, category: Unit, randomize: Boolean): String = js.native
+    def imageUrl(width: Double, height: Unit, category: Unit, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Double, height: Unit, category: Unit, randomize: Unit, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Double): String = js.native
+    def imageUrl(width: Unit, height: Double, category: String): String = js.native
+    def imageUrl(width: Unit, height: Double, category: String, randomize: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Double, category: String, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Double, category: String, randomize: Unit, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Double, category: Unit, randomize: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Double, category: Unit, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Double, category: Unit, randomize: Unit, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Unit, category: String): String = js.native
+    def imageUrl(width: Unit, height: Unit, category: String, randomize: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Unit, category: String, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Unit, category: String, randomize: Unit, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Unit, category: Unit, randomize: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Unit, category: Unit, randomize: Boolean, https: Boolean): String = js.native
+    def imageUrl(width: Unit, height: Unit, category: Unit, randomize: Unit, https: Boolean): String = js.native
     
     def nature(): String = js.native
-    def nature(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def nature(width: Double): String = js.native
     def nature(width: Double, height: Double): String = js.native
+    def nature(width: Unit, height: Double): String = js.native
     
     def nightlife(): String = js.native
-    def nightlife(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def nightlife(width: Double): String = js.native
     def nightlife(width: Double, height: Double): String = js.native
+    def nightlife(width: Unit, height: Double): String = js.native
     
     def people(): String = js.native
-    def people(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def people(width: Double): String = js.native
     def people(width: Double, height: Double): String = js.native
+    def people(width: Unit, height: Double): String = js.native
     
     def sports(): String = js.native
-    def sports(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def sports(width: Double): String = js.native
     def sports(width: Double, height: Double): String = js.native
+    def sports(width: Unit, height: Double): String = js.native
     
     def technics(): String = js.native
-    def technics(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def technics(width: Double): String = js.native
     def technics(width: Double, height: Double): String = js.native
+    def technics(width: Unit, height: Double): String = js.native
     
     def transport(): String = js.native
-    def transport(width: js.UndefOr[scala.Nothing], height: Double): String = js.native
     def transport(width: Double): String = js.native
     def transport(width: Double, height: Double): String = js.native
+    def transport(width: Unit, height: Double): String = js.native
   }
   
   @js.native
@@ -336,26 +223,21 @@ object anon {
     def accountName(): String = js.native
     
     def amount(): String = js.native
-    def amount(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      dec: js.UndefOr[scala.Nothing],
-      symbol: String
-    ): String = js.native
-    def amount(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dec: Double): String = js.native
-    def amount(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dec: Double, symbol: String): String = js.native
-    def amount(min: js.UndefOr[scala.Nothing], max: Double): String = js.native
-    def amount(min: js.UndefOr[scala.Nothing], max: Double, dec: js.UndefOr[scala.Nothing], symbol: String): String = js.native
-    def amount(min: js.UndefOr[scala.Nothing], max: Double, dec: Double): String = js.native
-    def amount(min: js.UndefOr[scala.Nothing], max: Double, dec: Double, symbol: String): String = js.native
     def amount(min: Double): String = js.native
-    def amount(min: Double, max: js.UndefOr[scala.Nothing], dec: js.UndefOr[scala.Nothing], symbol: String): String = js.native
-    def amount(min: Double, max: js.UndefOr[scala.Nothing], dec: Double): String = js.native
-    def amount(min: Double, max: js.UndefOr[scala.Nothing], dec: Double, symbol: String): String = js.native
     def amount(min: Double, max: Double): String = js.native
-    def amount(min: Double, max: Double, dec: js.UndefOr[scala.Nothing], symbol: String): String = js.native
     def amount(min: Double, max: Double, dec: Double): String = js.native
     def amount(min: Double, max: Double, dec: Double, symbol: String): String = js.native
+    def amount(min: Double, max: Double, dec: Unit, symbol: String): String = js.native
+    def amount(min: Double, max: Unit, dec: Double): String = js.native
+    def amount(min: Double, max: Unit, dec: Double, symbol: String): String = js.native
+    def amount(min: Double, max: Unit, dec: Unit, symbol: String): String = js.native
+    def amount(min: Unit, max: Double): String = js.native
+    def amount(min: Unit, max: Double, dec: Double): String = js.native
+    def amount(min: Unit, max: Double, dec: Double, symbol: String): String = js.native
+    def amount(min: Unit, max: Double, dec: Unit, symbol: String): String = js.native
+    def amount(min: Unit, max: Unit, dec: Double): String = js.native
+    def amount(min: Unit, max: Unit, dec: Double, symbol: String): String = js.native
+    def amount(min: Unit, max: Unit, dec: Unit, symbol: String): String = js.native
     
     def bic(): String = js.native
     
@@ -380,13 +262,13 @@ object anon {
     def litecoinAddress(): String = js.native
     
     def mask(): String = js.native
-    def mask(length: js.UndefOr[scala.Nothing], parens: js.UndefOr[scala.Nothing], elipsis: Boolean): String = js.native
-    def mask(length: js.UndefOr[scala.Nothing], parens: Boolean): String = js.native
-    def mask(length: js.UndefOr[scala.Nothing], parens: Boolean, elipsis: Boolean): String = js.native
     def mask(length: Double): String = js.native
-    def mask(length: Double, parens: js.UndefOr[scala.Nothing], elipsis: Boolean): String = js.native
     def mask(length: Double, parens: Boolean): String = js.native
     def mask(length: Double, parens: Boolean, elipsis: Boolean): String = js.native
+    def mask(length: Double, parens: Unit, elipsis: Boolean): String = js.native
+    def mask(length: Unit, parens: Boolean): String = js.native
+    def mask(length: Unit, parens: Boolean, elipsis: Boolean): String = js.native
+    def mask(length: Unit, parens: Unit, elipsis: Boolean): String = js.native
     
     def routingNumber(): String = js.native
     
@@ -431,16 +313,16 @@ object anon {
     
     def objectElement(): String = js.native
     def objectElement(`object`: StringDictionary[js.Any]): String = js.native
-    def objectElement[T](`object`: js.UndefOr[scala.Nothing], field: js.Any): T = js.native
     def objectElement[T](`object`: StringDictionary[T], field: js.Any): T = js.native
+    def objectElement[T](`object`: Unit, field: js.Any): T = js.native
     @JSName("objectElement")
     def objectElement_T_T[T](): T = js.native
     @JSName("objectElement")
     def objectElement_T_T[T](`object`: StringDictionary[T]): T = js.native
     @JSName("objectElement")
-    def objectElement_key(`object`: js.UndefOr[scala.Nothing], field: key): String = js.native
-    @JSName("objectElement")
     def objectElement_key(`object`: StringDictionary[js.Any], field: key): String = js.native
+    @JSName("objectElement")
+    def objectElement_key(`object`: Unit, field: key): String = js.native
     
     def uuid(): String = js.native
     
@@ -457,17 +339,13 @@ object anon {
     def avatar(): String = js.native
     
     def color(): String = js.native
-    def color(
-      baseRed255: js.UndefOr[scala.Nothing],
-      baseGreen255: js.UndefOr[scala.Nothing],
-      baseBlue255: Double
-    ): String = js.native
-    def color(baseRed255: js.UndefOr[scala.Nothing], baseGreen255: Double): String = js.native
-    def color(baseRed255: js.UndefOr[scala.Nothing], baseGreen255: Double, baseBlue255: Double): String = js.native
     def color(baseRed255: Double): String = js.native
-    def color(baseRed255: Double, baseGreen255: js.UndefOr[scala.Nothing], baseBlue255: Double): String = js.native
     def color(baseRed255: Double, baseGreen255: Double): String = js.native
     def color(baseRed255: Double, baseGreen255: Double, baseBlue255: Double): String = js.native
+    def color(baseRed255: Double, baseGreen255: Unit, baseBlue255: Double): String = js.native
+    def color(baseRed255: Unit, baseGreen255: Double): String = js.native
+    def color(baseRed255: Unit, baseGreen255: Double, baseBlue255: Double): String = js.native
+    def color(baseRed255: Unit, baseGreen255: Unit, baseBlue255: Double): String = js.native
     
     def domainName(): String = js.native
     
@@ -476,18 +354,18 @@ object anon {
     def domainWord(): String = js.native
     
     def email(): String = js.native
-    def email(firstName: js.UndefOr[scala.Nothing], lastName: js.UndefOr[scala.Nothing], provider: String): String = js.native
-    def email(firstName: js.UndefOr[scala.Nothing], lastName: String): String = js.native
-    def email(firstName: js.UndefOr[scala.Nothing], lastName: String, provider: String): String = js.native
     def email(firstName: String): String = js.native
-    def email(firstName: String, lastName: js.UndefOr[scala.Nothing], provider: String): String = js.native
     def email(firstName: String, lastName: String): String = js.native
     def email(firstName: String, lastName: String, provider: String): String = js.native
+    def email(firstName: String, lastName: Unit, provider: String): String = js.native
+    def email(firstName: Unit, lastName: String): String = js.native
+    def email(firstName: Unit, lastName: String, provider: String): String = js.native
+    def email(firstName: Unit, lastName: Unit, provider: String): String = js.native
     
     def exampleEmail(): String = js.native
-    def exampleEmail(firstName: js.UndefOr[scala.Nothing], lastName: String): String = js.native
     def exampleEmail(firstName: String): String = js.native
     def exampleEmail(firstName: String, lastName: String): String = js.native
+    def exampleEmail(firstName: Unit, lastName: String): String = js.native
     
     def ip(): String = js.native
     
@@ -497,54 +375,29 @@ object anon {
     def mac(sep: String): String = js.native
     
     def password(): String = js.native
-    def password(
-      len: js.UndefOr[scala.Nothing],
-      memorable: js.UndefOr[scala.Nothing],
-      pattern: js.UndefOr[scala.Nothing],
-      prefix: String
-    ): String = js.native
-    def password(len: js.UndefOr[scala.Nothing], memorable: js.UndefOr[scala.Nothing], pattern: String): String = js.native
-    def password(
-      len: js.UndefOr[scala.Nothing],
-      memorable: js.UndefOr[scala.Nothing],
-      pattern: String,
-      prefix: String
-    ): String = js.native
-    def password(len: js.UndefOr[scala.Nothing], memorable: js.UndefOr[scala.Nothing], pattern: RegExp): String = js.native
-    def password(
-      len: js.UndefOr[scala.Nothing],
-      memorable: js.UndefOr[scala.Nothing],
-      pattern: RegExp,
-      prefix: String
-    ): String = js.native
-    def password(len: js.UndefOr[scala.Nothing], memorable: Boolean): String = js.native
-    def password(
-      len: js.UndefOr[scala.Nothing],
-      memorable: Boolean,
-      pattern: js.UndefOr[scala.Nothing],
-      prefix: String
-    ): String = js.native
-    def password(len: js.UndefOr[scala.Nothing], memorable: Boolean, pattern: String): String = js.native
-    def password(len: js.UndefOr[scala.Nothing], memorable: Boolean, pattern: String, prefix: String): String = js.native
-    def password(len: js.UndefOr[scala.Nothing], memorable: Boolean, pattern: RegExp): String = js.native
-    def password(len: js.UndefOr[scala.Nothing], memorable: Boolean, pattern: RegExp, prefix: String): String = js.native
     def password(len: Double): String = js.native
-    def password(
-      len: Double,
-      memorable: js.UndefOr[scala.Nothing],
-      pattern: js.UndefOr[scala.Nothing],
-      prefix: String
-    ): String = js.native
-    def password(len: Double, memorable: js.UndefOr[scala.Nothing], pattern: String): String = js.native
-    def password(len: Double, memorable: js.UndefOr[scala.Nothing], pattern: String, prefix: String): String = js.native
-    def password(len: Double, memorable: js.UndefOr[scala.Nothing], pattern: RegExp): String = js.native
-    def password(len: Double, memorable: js.UndefOr[scala.Nothing], pattern: RegExp, prefix: String): String = js.native
     def password(len: Double, memorable: Boolean): String = js.native
-    def password(len: Double, memorable: Boolean, pattern: js.UndefOr[scala.Nothing], prefix: String): String = js.native
     def password(len: Double, memorable: Boolean, pattern: String): String = js.native
     def password(len: Double, memorable: Boolean, pattern: String, prefix: String): String = js.native
+    def password(len: Double, memorable: Boolean, pattern: Unit, prefix: String): String = js.native
     def password(len: Double, memorable: Boolean, pattern: RegExp): String = js.native
     def password(len: Double, memorable: Boolean, pattern: RegExp, prefix: String): String = js.native
+    def password(len: Double, memorable: Unit, pattern: String): String = js.native
+    def password(len: Double, memorable: Unit, pattern: String, prefix: String): String = js.native
+    def password(len: Double, memorable: Unit, pattern: Unit, prefix: String): String = js.native
+    def password(len: Double, memorable: Unit, pattern: RegExp): String = js.native
+    def password(len: Double, memorable: Unit, pattern: RegExp, prefix: String): String = js.native
+    def password(len: Unit, memorable: Boolean): String = js.native
+    def password(len: Unit, memorable: Boolean, pattern: String): String = js.native
+    def password(len: Unit, memorable: Boolean, pattern: String, prefix: String): String = js.native
+    def password(len: Unit, memorable: Boolean, pattern: Unit, prefix: String): String = js.native
+    def password(len: Unit, memorable: Boolean, pattern: RegExp): String = js.native
+    def password(len: Unit, memorable: Boolean, pattern: RegExp, prefix: String): String = js.native
+    def password(len: Unit, memorable: Unit, pattern: String): String = js.native
+    def password(len: Unit, memorable: Unit, pattern: String, prefix: String): String = js.native
+    def password(len: Unit, memorable: Unit, pattern: Unit, prefix: String): String = js.native
+    def password(len: Unit, memorable: Unit, pattern: RegExp): String = js.native
+    def password(len: Unit, memorable: Unit, pattern: RegExp, prefix: String): String = js.native
     
     def protocol(): String = js.native
     
@@ -553,9 +406,9 @@ object anon {
     def userAgent(): String = js.native
     
     def userName(): String = js.native
-    def userName(firstName: js.UndefOr[scala.Nothing], lastName: String): String = js.native
     def userName(firstName: String): String = js.native
     def userName(firstName: String, lastName: String): String = js.native
+    def userName(firstName: Unit, lastName: String): String = js.native
   }
   
   @js.native
@@ -569,35 +422,35 @@ object anon {
     def between(from: Date, to: Date): Date = js.native
     
     def future(): Date = js.native
-    def future(years: js.UndefOr[scala.Nothing], refDate: String): Date = js.native
-    def future(years: js.UndefOr[scala.Nothing], refDate: Date): Date = js.native
     def future(years: Double): Date = js.native
     def future(years: Double, refDate: String): Date = js.native
     def future(years: Double, refDate: Date): Date = js.native
+    def future(years: Unit, refDate: String): Date = js.native
+    def future(years: Unit, refDate: Date): Date = js.native
     
     def month(): String = js.native
     def month(options: Abbr): String = js.native
     
     def past(): Date = js.native
-    def past(years: js.UndefOr[scala.Nothing], refDate: String): Date = js.native
-    def past(years: js.UndefOr[scala.Nothing], refDate: Date): Date = js.native
     def past(years: Double): Date = js.native
     def past(years: Double, refDate: String): Date = js.native
     def past(years: Double, refDate: Date): Date = js.native
+    def past(years: Unit, refDate: String): Date = js.native
+    def past(years: Unit, refDate: Date): Date = js.native
     
     def recent(): Date = js.native
-    def recent(days: js.UndefOr[scala.Nothing], refDate: String): Date = js.native
-    def recent(days: js.UndefOr[scala.Nothing], refDate: Date): Date = js.native
     def recent(days: Double): Date = js.native
     def recent(days: Double, refDate: String): Date = js.native
     def recent(days: Double, refDate: Date): Date = js.native
+    def recent(days: Unit, refDate: String): Date = js.native
+    def recent(days: Unit, refDate: Date): Date = js.native
     
     def soon(): Date = js.native
-    def soon(days: js.UndefOr[scala.Nothing], refDate: String): Date = js.native
-    def soon(days: js.UndefOr[scala.Nothing], refDate: Date): Date = js.native
     def soon(days: Double): Date = js.native
     def soon(days: Double, refDate: String): Date = js.native
     def soon(days: Double, refDate: Date): Date = js.native
+    def soon(days: Unit, refDate: String): Date = js.native
+    def soon(days: Unit, refDate: Date): Date = js.native
     
     def weekday(): String = js.native
     def weekday(options: Abbr): String = js.native
@@ -669,31 +522,31 @@ object anon {
     def direction(useAbbr: Boolean): String = js.native
     
     def latitude(): String = js.native
-    def latitude(max: js.UndefOr[scala.Nothing], min: js.UndefOr[scala.Nothing], precision: Double): String = js.native
-    def latitude(max: js.UndefOr[scala.Nothing], min: Double): String = js.native
-    def latitude(max: js.UndefOr[scala.Nothing], min: Double, precision: Double): String = js.native
     def latitude(max: Double): String = js.native
-    def latitude(max: Double, min: js.UndefOr[scala.Nothing], precision: Double): String = js.native
     def latitude(max: Double, min: Double): String = js.native
     def latitude(max: Double, min: Double, precision: Double): String = js.native
+    def latitude(max: Double, min: Unit, precision: Double): String = js.native
+    def latitude(max: Unit, min: Double): String = js.native
+    def latitude(max: Unit, min: Double, precision: Double): String = js.native
+    def latitude(max: Unit, min: Unit, precision: Double): String = js.native
     
     def longitude(): String = js.native
-    def longitude(max: js.UndefOr[scala.Nothing], min: js.UndefOr[scala.Nothing], precision: Double): String = js.native
-    def longitude(max: js.UndefOr[scala.Nothing], min: Double): String = js.native
-    def longitude(max: js.UndefOr[scala.Nothing], min: Double, precision: Double): String = js.native
     def longitude(max: Double): String = js.native
-    def longitude(max: Double, min: js.UndefOr[scala.Nothing], precision: Double): String = js.native
     def longitude(max: Double, min: Double): String = js.native
     def longitude(max: Double, min: Double, precision: Double): String = js.native
+    def longitude(max: Double, min: Unit, precision: Double): String = js.native
+    def longitude(max: Unit, min: Double): String = js.native
+    def longitude(max: Unit, min: Double, precision: Double): String = js.native
+    def longitude(max: Unit, min: Unit, precision: Double): String = js.native
     
     def nearbyGPSCoordinate(): js.Array[String] = js.native
-    def nearbyGPSCoordinate(coordinate: js.UndefOr[scala.Nothing], radius: js.UndefOr[scala.Nothing], isMetric: Boolean): js.Array[String] = js.native
-    def nearbyGPSCoordinate(coordinate: js.UndefOr[scala.Nothing], radius: Double): js.Array[String] = js.native
-    def nearbyGPSCoordinate(coordinate: js.UndefOr[scala.Nothing], radius: Double, isMetric: Boolean): js.Array[String] = js.native
     def nearbyGPSCoordinate(coordinate: String): js.Array[String] = js.native
-    def nearbyGPSCoordinate(coordinate: String, radius: js.UndefOr[scala.Nothing], isMetric: Boolean): js.Array[String] = js.native
     def nearbyGPSCoordinate(coordinate: String, radius: Double): js.Array[String] = js.native
     def nearbyGPSCoordinate(coordinate: String, radius: Double, isMetric: Boolean): js.Array[String] = js.native
+    def nearbyGPSCoordinate(coordinate: String, radius: Unit, isMetric: Boolean): js.Array[String] = js.native
+    def nearbyGPSCoordinate(coordinate: Unit, radius: Double): js.Array[String] = js.native
+    def nearbyGPSCoordinate(coordinate: Unit, radius: Double, isMetric: Boolean): js.Array[String] = js.native
+    def nearbyGPSCoordinate(coordinate: Unit, radius: Unit, isMetric: Boolean): js.Array[String] = js.native
     
     def ordinalDirection(): String = js.native
     def ordinalDirection(useAbbr: Boolean): String = js.native
@@ -722,16 +575,15 @@ object anon {
     def zipCodeByState(state: String): String = js.native
   }
   
-  @js.native
   trait Collation extends StObject {
     
-    def collation(): String = js.native
+    def collation(): String
     
-    def column(): String = js.native
+    def column(): String
     
-    def engine(): String = js.native
+    def engine(): String
     
-    def `type`(): String = js.native
+    def `type`(): String
   }
   object Collation {
     
@@ -767,26 +619,21 @@ object anon {
     def department(): String = js.native
     
     def price(): String = js.native
-    def price(
-      min: js.UndefOr[scala.Nothing],
-      max: js.UndefOr[scala.Nothing],
-      dec: js.UndefOr[scala.Nothing],
-      symbol: String
-    ): String = js.native
-    def price(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dec: Double): String = js.native
-    def price(min: js.UndefOr[scala.Nothing], max: js.UndefOr[scala.Nothing], dec: Double, symbol: String): String = js.native
-    def price(min: js.UndefOr[scala.Nothing], max: Double): String = js.native
-    def price(min: js.UndefOr[scala.Nothing], max: Double, dec: js.UndefOr[scala.Nothing], symbol: String): String = js.native
-    def price(min: js.UndefOr[scala.Nothing], max: Double, dec: Double): String = js.native
-    def price(min: js.UndefOr[scala.Nothing], max: Double, dec: Double, symbol: String): String = js.native
     def price(min: Double): String = js.native
-    def price(min: Double, max: js.UndefOr[scala.Nothing], dec: js.UndefOr[scala.Nothing], symbol: String): String = js.native
-    def price(min: Double, max: js.UndefOr[scala.Nothing], dec: Double): String = js.native
-    def price(min: Double, max: js.UndefOr[scala.Nothing], dec: Double, symbol: String): String = js.native
     def price(min: Double, max: Double): String = js.native
-    def price(min: Double, max: Double, dec: js.UndefOr[scala.Nothing], symbol: String): String = js.native
     def price(min: Double, max: Double, dec: Double): String = js.native
     def price(min: Double, max: Double, dec: Double, symbol: String): String = js.native
+    def price(min: Double, max: Double, dec: Unit, symbol: String): String = js.native
+    def price(min: Double, max: Unit, dec: Double): String = js.native
+    def price(min: Double, max: Unit, dec: Double, symbol: String): String = js.native
+    def price(min: Double, max: Unit, dec: Unit, symbol: String): String = js.native
+    def price(min: Unit, max: Double): String = js.native
+    def price(min: Unit, max: Double, dec: Double): String = js.native
+    def price(min: Unit, max: Double, dec: Double, symbol: String): String = js.native
+    def price(min: Unit, max: Double, dec: Unit, symbol: String): String = js.native
+    def price(min: Unit, max: Unit, dec: Double): String = js.native
+    def price(min: Unit, max: Unit, dec: Double, symbol: String): String = js.native
+    def price(min: Unit, max: Unit, dec: Unit, symbol: String): String = js.native
     
     def product(): String = js.native
     
@@ -814,9 +661,9 @@ object anon {
     def fileExt(mimeType: String): String = js.native
     
     def fileName(): String = js.native
-    def fileName(ext: js.UndefOr[scala.Nothing], `type`: String): String = js.native
     def fileName(ext: String): String = js.native
     def fileName(ext: String, `type`: String): String = js.native
+    def fileName(ext: Unit, `type`: String): String = js.native
     
     def filePath(): String = js.native
     
@@ -850,14 +697,14 @@ object anon {
     def repeatString(string: String, num: Double): String = js.native
     
     def replaceCreditCardSymbols(): String = js.native
-    def replaceCreditCardSymbols(string: js.UndefOr[scala.Nothing], symbol: String): String = js.native
     def replaceCreditCardSymbols(string: String): String = js.native
     def replaceCreditCardSymbols(string: String, symbol: String): String = js.native
+    def replaceCreditCardSymbols(string: Unit, symbol: String): String = js.native
     
     def replaceSymbolWithNumber(): String = js.native
-    def replaceSymbolWithNumber(string: js.UndefOr[scala.Nothing], symbol: String): String = js.native
     def replaceSymbolWithNumber(string: String): String = js.native
     def replaceSymbolWithNumber(string: String, symbol: String): String = js.native
+    def replaceSymbolWithNumber(string: Unit, symbol: String): String = js.native
     
     def replaceSymbols(): String = js.native
     def replaceSymbols(string: String): String = js.native
@@ -871,12 +718,11 @@ object anon {
     def userCard(): UserCard = js.native
   }
   
-  @js.native
   trait Count extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var upcase: js.UndefOr[Boolean] = js.native
+    var upcase: js.UndefOr[Boolean] = js.undefined
   }
   object Count {
     
@@ -907,13 +753,13 @@ object anon {
   trait FindName extends StObject {
     
     def findName(): String = js.native
-    def findName(firstName: js.UndefOr[scala.Nothing], lastName: js.UndefOr[scala.Nothing], gender: Double): String = js.native
-    def findName(firstName: js.UndefOr[scala.Nothing], lastName: String): String = js.native
-    def findName(firstName: js.UndefOr[scala.Nothing], lastName: String, gender: Double): String = js.native
     def findName(firstName: String): String = js.native
-    def findName(firstName: String, lastName: js.UndefOr[scala.Nothing], gender: Double): String = js.native
     def findName(firstName: String, lastName: String): String = js.native
     def findName(firstName: String, lastName: String, gender: Double): String = js.native
+    def findName(firstName: String, lastName: Unit, gender: Double): String = js.native
+    def findName(firstName: Unit, lastName: String): String = js.native
+    def findName(firstName: Unit, lastName: String, gender: Double): String = js.native
+    def findName(firstName: Unit, lastName: Unit, gender: Double): String = js.native
     
     def firstName(): String = js.native
     def firstName(gender: Double): String = js.native
@@ -939,22 +785,21 @@ object anon {
     def title(): String = js.native
   }
   
-  @js.native
   trait Fuel extends StObject {
     
-    def color(): String = js.native
+    def color(): String
     
-    def fuel(): String = js.native
+    def fuel(): String
     
-    def manufacturer(): String = js.native
+    def manufacturer(): String
     
-    def model(): String = js.native
+    def model(): String
     
-    def `type`(): String = js.native
+    def `type`(): String
     
-    def vehicle(): String = js.native
+    def vehicle(): String
     
-    def vin(): String = js.native
+    def vin(): String
   }
   object Fuel {
     
@@ -999,10 +844,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Genre extends StObject {
     
-    def genre(): String = js.native
+    def genre(): String
   }
   object Genre {
     
@@ -1030,14 +874,14 @@ object anon {
     def paragraph(sentenceCount: Double): String = js.native
     
     def paragraphs(): String = js.native
-    def paragraphs(paragraphCount: js.UndefOr[scala.Nothing], separator: String): String = js.native
     def paragraphs(paragraphCount: Double): String = js.native
     def paragraphs(paragraphCount: Double, separator: String): String = js.native
+    def paragraphs(paragraphCount: Unit, separator: String): String = js.native
     
     def sentence(): String = js.native
-    def sentence(wordCount: js.UndefOr[scala.Nothing], range: Double): String = js.native
     def sentence(wordCount: Double): String = js.native
     def sentence(wordCount: Double, range: Double): String = js.native
+    def sentence(wordCount: Unit, range: Double): String = js.native
     
     def sentences(): String = js.native
     def sentences(sentenceCount: Double): String = js.native
@@ -1055,14 +899,13 @@ object anon {
     def words(num: Double): String = js.native
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var precision: js.UndefOr[Double] = js.native
+    var precision: js.UndefOr[Double] = js.undefined
   }
   object Max {
     
@@ -1095,10 +938,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Merge extends StObject {
     
-    var merge: Boolean = js.native
+    var merge: Boolean
   }
   object Merge {
     

@@ -2,34 +2,32 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The validity states that an element can be in, with respect to constraint validation. Together, they help explain why an element's value fails to validate, if it's not valid. */
-@js.native
 trait ValidityState extends StObject {
   
-  val badInput: scala.Boolean = js.native
+  val badInput: scala.Boolean
   
-  val customError: scala.Boolean = js.native
+  val customError: scala.Boolean
   
-  val patternMismatch: scala.Boolean = js.native
+  val patternMismatch: scala.Boolean
   
-  val rangeOverflow: scala.Boolean = js.native
+  val rangeOverflow: scala.Boolean
   
-  val rangeUnderflow: scala.Boolean = js.native
+  val rangeUnderflow: scala.Boolean
   
-  val stepMismatch: scala.Boolean = js.native
+  val stepMismatch: scala.Boolean
   
-  val tooLong: scala.Boolean = js.native
+  val tooLong: scala.Boolean
   
-  val tooShort: scala.Boolean = js.native
+  val tooShort: scala.Boolean
   
-  val typeMismatch: scala.Boolean = js.native
+  val typeMismatch: scala.Boolean
   
-  val valid: scala.Boolean = js.native
+  val valid: scala.Boolean
   
-  val valueMissing: scala.Boolean = js.native
+  val valueMissing: scala.Boolean
 }
 object ValidityState {
   

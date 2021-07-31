@@ -2,16 +2,16 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AzureRestApiResponseModel extends AzureRestApiRequestModel {
+trait AzureRestApiResponseModel
+  extends StObject
+     with AzureRestApiRequestModel {
   
   /**
     * Gets or sets the Asset operation status
     */
-  var operationStatus: RestApiResponseStatusModel = js.native
+  var operationStatus: RestApiResponseStatusModel
 }
 object AzureRestApiResponseModel {
   

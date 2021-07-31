@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteInvitationsResponse extends StObject {
   
   /**
     * The list of AWS accounts for which the invitations were not deleted. For each account, the list includes the account ID and the email address.
     */
-  var UnprocessedAccounts: js.UndefOr[ResultList] = js.native
+  var UnprocessedAccounts: js.UndefOr[ResultList] = js.undefined
 }
 object DeleteInvitationsResponse {
   

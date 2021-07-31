@@ -7,15 +7,13 @@ import typings.contentfulManagement.entryMod.Entry
 import typings.contentfulManagement.entryMod.EntryProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofentry extends StObject {
   
-  def wrapEntry(http: AxiosInstance, data: EntryProp): Entry = js.native
+  def wrapEntry(http: AxiosInstance, data: EntryProp): Entry
   
-  def wrapEntryCollection(http: AxiosInstance, data: CollectionProp[EntryProp]): Collection[Entry, EntryProp] = js.native
+  def wrapEntryCollection(http: AxiosInstance, data: CollectionProp[EntryProp]): Collection[Entry, EntryProp]
 }
 object Typeofentry {
   

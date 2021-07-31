@@ -2,38 +2,36 @@ package typings.awsSdkClientXrayNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesHttpMod {
   
-  @js.native
   trait Http extends StObject {
     
     /**
       * <p>The IP address of the requestor.</p>
       */
-    var ClientIp: js.UndefOr[String] = js.native
+    var ClientIp: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The request method.</p>
       */
-    var HttpMethod: js.UndefOr[String] = js.native
+    var HttpMethod: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The response status.</p>
       */
-    var HttpStatus: js.UndefOr[Double] = js.native
+    var HttpStatus: js.UndefOr[Double] = js.undefined
     
     /**
       * <p>The request URL.</p>
       */
-    var HttpURL: js.UndefOr[String] = js.native
+    var HttpURL: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The request's user agent string.</p>
       */
-    var UserAgent: js.UndefOr[String] = js.native
+    var UserAgent: js.UndefOr[String] = js.undefined
   }
   object Http {
     

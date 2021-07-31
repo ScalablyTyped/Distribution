@@ -2,20 +2,18 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // TODO find source documentation
-@js.native
 trait FusionTablesStyle extends StObject {
   
-  var markerOptions: js.UndefOr[FusionTablesMarkerOptions] = js.native
+  var markerOptions: js.UndefOr[FusionTablesMarkerOptions] = js.undefined
   
-  var polygonOptions: js.UndefOr[FusionTablesPolygonOptions] = js.native
+  var polygonOptions: js.UndefOr[FusionTablesPolygonOptions] = js.undefined
   
-  var polylineOptions: js.UndefOr[FusionTablesPolylineOptions] = js.native
+  var polylineOptions: js.UndefOr[FusionTablesPolylineOptions] = js.undefined
   
-  var where: js.UndefOr[String] = js.native
+  var where: js.UndefOr[String] = js.undefined
 }
 object FusionTablesStyle {
   

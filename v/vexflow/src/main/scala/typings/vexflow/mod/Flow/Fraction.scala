@@ -2,29 +2,30 @@ package typings.vexflow.mod.Flow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("vexflow", "Flow.Fraction")
 @js.native
 class Fraction protected ()
-  extends typings.vexflow.Vex.Flow.Fraction {
+  extends StObject
+     with typings.vexflow.Vex.Flow.Fraction {
   def this(numerator: Double, denominator: Double) = this()
 }
 object Fraction {
   
-  /* static member */
-  @JSImport("vexflow", "Flow.Fraction.GCD")
+  @JSImport("vexflow", "Flow.Fraction")
   @js.native
-  def GCD(a: Double, b: Double): Double = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("vexflow", "Flow.Fraction.LCM")
-  @js.native
-  def LCM(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def GCD(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GCD")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* static member */
-  @JSImport("vexflow", "Flow.Fraction.LCMM")
-  @js.native
-  def LCMM(a: Double, b: Double): Double = js.native
+  @scala.inline
+  def LCM(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("LCM")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  /* static member */
+  @scala.inline
+  def LCMM(a: Double, b: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("LCMM")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

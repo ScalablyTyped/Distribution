@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This is a simple container allowing the access to OLE storages. The subcomponents are either OLE storages themselves or streams.
   */
-@js.native
 trait XOLESimpleStorage
-  extends XNameContainer
+  extends StObject
+     with XNameContainer
      with XComponent
      with XTransactedObject
      with XClassifiedObject

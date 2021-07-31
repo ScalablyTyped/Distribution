@@ -2,21 +2,19 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaScreenshotCluster extends StObject {
   
   /**
     * A string that describes the activity of every screen in the cluster.
     */
-  var activity: js.UndefOr[String] = js.native
+  var activity: js.UndefOr[String] = js.undefined
   
   /**
     * A unique identifier for the cluster.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * A singular screen that represents the cluster as a whole. This screen
@@ -24,12 +22,12 @@ trait SchemaScreenshotCluster extends StObject {
     * at the clusters, only the key screen from each cluster will be shown.
     * Which screen is the key screen is determined by the ClusteringAlgorithm
     */
-  var keyScreen: js.UndefOr[SchemaScreen] = js.native
+  var keyScreen: js.UndefOr[SchemaScreen] = js.undefined
   
   /**
     * Full list of screens.
     */
-  var screens: js.UndefOr[js.Array[SchemaScreen]] = js.native
+  var screens: js.UndefOr[js.Array[SchemaScreen]] = js.undefined
 }
 object SchemaScreenshotCluster {
   

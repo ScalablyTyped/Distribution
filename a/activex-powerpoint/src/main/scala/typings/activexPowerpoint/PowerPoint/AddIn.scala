@@ -3,34 +3,32 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddIn extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoLoad: MsoTriState = js.native
+  var AutoLoad: MsoTriState
   
-  var DisplayAlerts: MsoTriState = js.native
+  var DisplayAlerts: MsoTriState
   
-  val FullName: String = js.native
+  val FullName: String
   
-  var Loaded: MsoTriState = js.native
+  var Loaded: MsoTriState
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Path: String = js.native
+  val Path: String
   
   @JSName("PowerPoint.AddIn_typekey")
-  var PowerPointDotAddIn_typekey: AddIn = js.native
+  var PowerPointDotAddIn_typekey: AddIn
   
-  var Registered: MsoTriState = js.native
+  var Registered: MsoTriState
   
-  val RegisteredInHKLM: MsoTriState = js.native
+  val RegisteredInHKLM: MsoTriState
 }
 object AddIn {
   

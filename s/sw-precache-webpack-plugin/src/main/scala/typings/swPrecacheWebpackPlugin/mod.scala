@@ -5,33 +5,35 @@ import typings.std.RegExp
 import typings.swPrecacheWebpackPlugin.anon.ChunkName
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sw-precache-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: Options) = this()
   }
   
-  @js.native
-  trait Options extends _Options {
+  trait Options
+    extends StObject
+       with _Options {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var filepath: js.UndefOr[String] = js.native
+    var filepath: js.UndefOr[String] = js.undefined
     
     // override sw-precache options
     @JSName("importScripts")
-    var importScripts_Options: js.UndefOr[js.Array[String | ChunkName]] = js.native
+    var importScripts_Options: js.UndefOr[js.Array[String | ChunkName]] = js.undefined
     
-    var mergeStaticsConfig: js.UndefOr[Boolean] = js.native
+    var mergeStaticsConfig: js.UndefOr[Boolean] = js.undefined
     
-    var minify: js.UndefOr[Boolean] = js.native
+    var minify: js.UndefOr[Boolean] = js.undefined
     
-    var staticFileGlobsIgnorePatterns: js.UndefOr[js.Array[RegExp]] = js.native
+    var staticFileGlobsIgnorePatterns: js.UndefOr[js.Array[RegExp]] = js.undefined
   }
   object Options {
     
@@ -91,12 +93,12 @@ object mod {
   type SWPrecacheWebpackPlugin = Plugin
   
   // workaround to override parent types
-  @js.native
   trait _Options
-    extends typings.swPrecache.mod.Options {
+    extends StObject
+       with typings.swPrecache.mod.Options {
     
     @JSName("importScripts")
-    var importScripts__Options: js.UndefOr[js.Any] = js.native
+    var importScripts__Options: js.UndefOr[js.Any] = js.undefined
   }
   object _Options {
     

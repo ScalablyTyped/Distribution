@@ -4,7 +4,6 @@ import typings.fullpageJs.anon.ToSections
 import typings.fullpageJs.fullpageJsStrings.all
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,19 +2,17 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppearTransition extends StObject {
   
-  var appearTransition: Boolean = js.native
+  var appearTransition: Boolean
   
-  var percent: Double = js.native
+  var percent: Double
   
-  var position: String = js.native
+  var position: String
   
-  var unfilled: Boolean = js.native
+  var unfilled: Boolean
 }
 object AppearTransition {
   

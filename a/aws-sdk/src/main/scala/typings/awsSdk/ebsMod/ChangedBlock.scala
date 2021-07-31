@@ -2,26 +2,24 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangedBlock extends StObject {
   
   /**
     * The block index.
     */
-  var BlockIndex: js.UndefOr[typings.awsSdk.ebsMod.BlockIndex] = js.native
+  var BlockIndex: js.UndefOr[typings.awsSdk.ebsMod.BlockIndex] = js.undefined
   
   /**
     * The block token for the block index of the FirstSnapshotId specified in the ListChangedBlocks operation. This value is absent if the first snapshot does not have the changed block that is on the second snapshot.
     */
-  var FirstBlockToken: js.UndefOr[BlockToken] = js.native
+  var FirstBlockToken: js.UndefOr[BlockToken] = js.undefined
   
   /**
     * The block token for the block index of the SecondSnapshotId specified in the ListChangedBlocks operation.
     */
-  var SecondBlockToken: js.UndefOr[BlockToken] = js.native
+  var SecondBlockToken: js.UndefOr[BlockToken] = js.undefined
 }
 object ChangedBlock {
   

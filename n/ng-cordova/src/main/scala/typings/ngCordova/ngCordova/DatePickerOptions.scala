@@ -3,55 +3,53 @@ package typings.ngCordova.ngCordova
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatePickerOptions extends StObject {
   
-  var allowFutureDates: js.UndefOr[Boolean] = js.native
+  var allowFutureDates: js.UndefOr[Boolean] = js.undefined
   
-  var allowOldDates: js.UndefOr[Boolean] = js.native
+  var allowOldDates: js.UndefOr[Boolean] = js.undefined
   
-  var androidTheme: js.UndefOr[AndroidTheme] = js.native
+  var androidTheme: js.UndefOr[AndroidTheme] = js.undefined
   
-  var cancelButtonColor: js.UndefOr[String] = js.native
+  var cancelButtonColor: js.UndefOr[String] = js.undefined
   
-  var cancelButtonLabel: js.UndefOr[String] = js.native
+  var cancelButtonLabel: js.UndefOr[String] = js.undefined
   
-  var cancelText: js.UndefOr[String] = js.native
+  var cancelText: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[Date | String | Double] = js.native
+  var date: js.UndefOr[Date | String | Double] = js.undefined
   
-  var doneButtonColor: js.UndefOr[String] = js.native
+  var doneButtonColor: js.UndefOr[String] = js.undefined
   
-  var doneButtonLabel: js.UndefOr[String] = js.native
+  var doneButtonLabel: js.UndefOr[String] = js.undefined
   
-  var is24Hour: js.UndefOr[Boolean] = js.native
+  var is24Hour: js.UndefOr[Boolean] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var maxDate: js.UndefOr[Date | String | Double] = js.native
+  var maxDate: js.UndefOr[Date | String | Double] = js.undefined
   
-  var minDate: js.UndefOr[Date | String | Double] = js.native
+  var minDate: js.UndefOr[Date | String | Double] = js.undefined
   
-  var minuteInterval: js.UndefOr[Double] = js.native
+  var minuteInterval: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var nowText: js.UndefOr[String] = js.native
+  var nowText: js.UndefOr[String] = js.undefined
   
-  var okText: js.UndefOr[String] = js.native
+  var okText: js.UndefOr[String] = js.undefined
   
-  var popoverArrowDirection: js.UndefOr[String] = js.native
+  var popoverArrowDirection: js.UndefOr[String] = js.undefined
   
-  var titleText: js.UndefOr[String] = js.native
+  var titleText: js.UndefOr[String] = js.undefined
   
-  var todayText: js.UndefOr[String] = js.native
+  var todayText: js.UndefOr[String] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object DatePickerOptions {
   

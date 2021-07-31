@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,14 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XContent
   * @version 1.0
   */
-@js.native
-trait XContentEventListener extends XEventListener {
+trait XContentEventListener
+  extends StObject
+     with XEventListener {
   
   /**
     * gets called whenever a content wishes to notify changes.
     * @param evt the event.
     */
-  def contentEvent(evt: ContentEvent): Unit = js.native
+  def contentEvent(evt: ContentEvent): Unit
 }
 object XContentEventListener {
   

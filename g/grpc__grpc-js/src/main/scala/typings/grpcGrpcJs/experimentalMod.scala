@@ -15,10 +15,13 @@ import typings.grpcGrpcJs.subchannelMod.SubchannelAddress
 import typings.grpcGrpcJs.uriParserMod.GrpcUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object experimentalMod {
+  
+  @JSImport("@grpc/grpc-js/build/src/experimental", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@grpc/grpc-js/build/src/experimental", "BackoffTimeout")
   @js.native
@@ -52,15 +55,15 @@ object experimentalMod {
   object PickResultType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.grpcGrpcJs.pickerMod.PickResultType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.grpcGrpcJs.pickerMod.PickResultType & Double] = js.native
     
-    /* 0 */ val COMPLETE: typings.grpcGrpcJs.pickerMod.PickResultType.COMPLETE with Double = js.native
+    /* 0 */ val COMPLETE: typings.grpcGrpcJs.pickerMod.PickResultType.COMPLETE & Double = js.native
     
-    /* 3 */ val DROP: typings.grpcGrpcJs.pickerMod.PickResultType.DROP with Double = js.native
+    /* 3 */ val DROP: typings.grpcGrpcJs.pickerMod.PickResultType.DROP & Double = js.native
     
-    /* 1 */ val QUEUE: typings.grpcGrpcJs.pickerMod.PickResultType.QUEUE with Double = js.native
+    /* 1 */ val QUEUE: typings.grpcGrpcJs.pickerMod.PickResultType.QUEUE & Double = js.native
     
-    /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.pickerMod.PickResultType.TRANSIENT_FAILURE with Double = js.native
+    /* 2 */ val TRANSIENT_FAILURE: typings.grpcGrpcJs.pickerMod.PickResultType.TRANSIENT_FAILURE & Double = js.native
   }
   
   @JSImport("@grpc/grpc-js/build/src/experimental", "QueuePicker")
@@ -77,31 +80,24 @@ object experimentalMod {
     def this(status: StatusObject) = this()
   }
   
-  @JSImport("@grpc/grpc-js/build/src/experimental", "createGoogleDefaultCredentials")
-  @js.native
-  def createGoogleDefaultCredentials(): ChannelCredentials = js.native
+  @scala.inline
+  def createGoogleDefaultCredentials(): ChannelCredentials = ^.asInstanceOf[js.Dynamic].applyDynamic("createGoogleDefaultCredentials")().asInstanceOf[ChannelCredentials]
   
-  @JSImport("@grpc/grpc-js/build/src/experimental", "getFirstUsableConfig")
-  @js.native
-  def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig | Null = js.native
+  @scala.inline
+  def getFirstUsableConfig(configs: js.Array[LoadBalancingConfig]): LoadBalancingConfig | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getFirstUsableConfig")(configs.asInstanceOf[js.Any]).asInstanceOf[LoadBalancingConfig | Null]
   
-  @JSImport("@grpc/grpc-js/build/src/experimental", "registerLoadBalancerType")
-  @js.native
-  def registerLoadBalancerType(typeName: String, loadBalancerType: LoadBalancerConstructor): Unit = js.native
+  @scala.inline
+  def registerLoadBalancerType(typeName: String, loadBalancerType: LoadBalancerConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoadBalancerType")(typeName.asInstanceOf[js.Any], loadBalancerType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@grpc/grpc-js/build/src/experimental", "registerResolver")
-  @js.native
-  def registerResolver(scheme: String, resolverClass: ResolverConstructor): Unit = js.native
+  @scala.inline
+  def registerResolver(scheme: String, resolverClass: ResolverConstructor): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerResolver")(scheme.asInstanceOf[js.Any], resolverClass.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@grpc/grpc-js/build/src/experimental", "subchannelAddressToString")
-  @js.native
-  def subchannelAddressToString(address: SubchannelAddress): String = js.native
+  @scala.inline
+  def subchannelAddressToString(address: SubchannelAddress): String = ^.asInstanceOf[js.Dynamic].applyDynamic("subchannelAddressToString")(address.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@grpc/grpc-js/build/src/experimental", "trace")
-  @js.native
-  def trace(severity: LogVerbosity, tracer: String, text: String): Unit = js.native
+  @scala.inline
+  def trace(severity: LogVerbosity, tracer: String, text: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("trace")(severity.asInstanceOf[js.Any], tracer.asInstanceOf[js.Any], text.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@grpc/grpc-js/build/src/experimental", "uriToString")
-  @js.native
-  def uriToString(uri: GrpcUri): String = js.native
+  @scala.inline
+  def uriToString(uri: GrpcUri): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uriToString")(uri.asInstanceOf[js.Any]).asInstanceOf[String]
 }

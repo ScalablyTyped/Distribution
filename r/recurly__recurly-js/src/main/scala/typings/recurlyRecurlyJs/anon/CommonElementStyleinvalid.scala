@@ -3,106 +3,104 @@ package typings.recurlyRecurlyJs.anon
 import typings.recurlyRecurlyJs.elementsMod.CommonElementStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @recurly/recurly-js.@recurly/recurly-js/lib/elements.CommonElementStyle & {  invalid :@recurly/recurly-js.@recurly/recurly-js/lib/elements.CommonElementStyle | undefined,   placeholder :{  color :string | undefined,   fontWeight :string | undefined,   content :{  number :string | undefined,   expiry :string | undefined,   cvv :string | undefined} | undefined} | undefined} */
-@js.native
 trait CommonElementStyleinvalid extends StObject {
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/color|color}
     */
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-family|font-family}
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-feature-settings|feature-settings}
     */
-  var fontFeatureSettings: js.UndefOr[String] = js.native
+  var fontFeatureSettings: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-kerning|font-kerning}
     */
-  var fontKerning: js.UndefOr[String] = js.native
+  var fontKerning: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-size|font-size}
     */
-  var fontSize: js.UndefOr[String] = js.native
+  var fontSize: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-smoothing|font-smoothing}
     */
-  var fontSmooth: js.UndefOr[String] = js.native
+  var fontSmooth: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-stretch|font-stretch}
     */
-  var fontStretch: js.UndefOr[String] = js.native
+  var fontStretch: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-style|font-style}
     */
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-variant|font-variant}
     */
-  var fontVariant: js.UndefOr[String] = js.native
+  var fontVariant: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/font-weight|font-weight}
     */
-  var fontWeight: js.UndefOr[String] = js.native
+  var fontWeight: js.UndefOr[String] = js.undefined
   
   /**
     * Style to apply to input elements when they contain an invalid value.
     *
     * @see {@link https://developers.recurly.com/reference/recurly-js/index.html#styling-the-individual-card-elements|Styling the invididual card elements}
     */
-  var invalid: js.UndefOr[CommonElementStyle] = js.native
+  var invalid: js.UndefOr[CommonElementStyle] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/letter-spacing|letter-spacing}
     */
-  var letterSpacing: js.UndefOr[String] = js.native
+  var letterSpacing: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/line-height|line-height}
     */
-  var lineHeight: js.UndefOr[String] = js.native
+  var lineHeight: js.UndefOr[String] = js.undefined
   
-  var placeholder: js.UndefOr[Content] = js.native
+  var placeholder: js.UndefOr[Content] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-align|text-align}
     */
-  var textAlign: js.UndefOr[String] = js.native
+  var textAlign: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-decoration|text-decoration}
     */
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-rendering|text-rendering}
     */
-  var textRendering: js.UndefOr[String] = js.native
+  var textRendering: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-shadow|text-shadow}
     */
-  var textShadow: js.UndefOr[String] = js.native
+  var textShadow: js.UndefOr[String] = js.undefined
   
   /**
     * @see {@link https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform|text-transform}
     */
-  var textTransform: js.UndefOr[String] = js.native
+  var textTransform: js.UndefOr[String] = js.undefined
 }
 object CommonElementStyleinvalid {
   

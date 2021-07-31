@@ -2,17 +2,17 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FitBoundsOptions extends FlyToOptions {
+trait FitBoundsOptions
+  extends StObject
+     with FlyToOptions {
   
-  var linear: js.UndefOr[Boolean] = js.native
+  var linear: js.UndefOr[Boolean] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var padding: js.UndefOr[Double | PaddingOptions] = js.native
+  var padding: js.UndefOr[Double | PaddingOptions] = js.undefined
 }
 object FitBoundsOptions {
   

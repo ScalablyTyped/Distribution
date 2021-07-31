@@ -14,13 +14,15 @@ import typings.tensorflowTfjsCore.distTypesMod.RecursiveArray
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object image {
   
-  @JSImport("@tensorflow/tfjs", "image.cropAndResize")
+  @JSImport("@tensorflow/tfjs", "image")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def cropAndResize(
     image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -34,42 +36,32 @@ object image {
     cropSize: js.Tuple2[Double, Double],
     method: js.UndefOr[nearest | bilinear],
     extrapolationValue: js.UndefOr[Double]
-  ): Tensor[R4] = js.native
+  ): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("cropAndResize")(image.asInstanceOf[js.Any], boxes.asInstanceOf[js.Any], boxInd.asInstanceOf[js.Any], cropSize.asInstanceOf[js.Any], method.asInstanceOf[js.Any], extrapolationValue.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
   
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: String): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: js.Array[Uint8Array]): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: Boolean): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: Double): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: Float32Array): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: Int32Array): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: Uint8Array): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
-  def flipLeftRight(image: Tensor[R4]): Tensor[R4] = js.native
-  @JSImport("@tensorflow/tfjs", "image.flipLeftRight")
-  @js.native
+  @scala.inline
+  def flipLeftRight(image: String): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
+  def flipLeftRight(image: js.Array[Uint8Array]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
+  def flipLeftRight(image: Boolean): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
+  def flipLeftRight(image: Double): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
+  def flipLeftRight(image: Float32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
+  def flipLeftRight(image: Int32Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
+  def flipLeftRight(image: Uint8Array): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
+  def flipLeftRight(image: Tensor[R4]): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
+  @scala.inline
   def flipLeftRight(
     image: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ]
-  ): Tensor[R4] = js.native
+  ): Tensor[R4] = ^.asInstanceOf[js.Dynamic].applyDynamic("flipLeftRight")(image.asInstanceOf[js.Any]).asInstanceOf[Tensor[R4]]
   
-  @JSImport("@tensorflow/tfjs", "image.nonMaxSuppression")
-  @js.native
+  @scala.inline
   def nonMaxSuppression(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -80,10 +72,9 @@ object image {
     maxOutputSize: Double,
     iouThreshold: js.UndefOr[Double],
     scoreThreshold: js.UndefOr[Double]
-  ): Tensor[R1] = js.native
+  ): Tensor[R1] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppression")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[Tensor[R1]]
   
-  @JSImport("@tensorflow/tfjs", "image.nonMaxSuppressionAsync")
-  @js.native
+  @scala.inline
   def nonMaxSuppressionAsync(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -94,10 +85,9 @@ object image {
     maxOutputSize: Double,
     iouThreshold: js.UndefOr[Double],
     scoreThreshold: js.UndefOr[Double]
-  ): js.Promise[Tensor[R1]] = js.native
+  ): js.Promise[Tensor[R1]] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tensor[R1]]]
   
-  @JSImport("@tensorflow/tfjs", "image.nonMaxSuppressionPadded")
-  @js.native
+  @scala.inline
   def nonMaxSuppressionPadded(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -109,10 +99,9 @@ object image {
     iouThreshold: js.UndefOr[Double],
     scoreThreshold: js.UndefOr[Double],
     padToMaxOutputSize: js.UndefOr[Boolean]
-  ): NamedTensorMap = js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionPadded")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @JSImport("@tensorflow/tfjs", "image.nonMaxSuppressionPaddedAsync")
-  @js.native
+  @scala.inline
   def nonMaxSuppressionPaddedAsync(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -124,10 +113,9 @@ object image {
     iouThreshold: js.UndefOr[Double],
     scoreThreshold: js.UndefOr[Double],
     padToMaxOutputSize: js.UndefOr[Boolean]
-  ): js.Promise[NamedTensorMap] = js.native
+  ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionPaddedAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
   
-  @JSImport("@tensorflow/tfjs", "image.nonMaxSuppressionWithScore")
-  @js.native
+  @scala.inline
   def nonMaxSuppressionWithScore(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -139,10 +127,9 @@ object image {
     iouThreshold: js.UndefOr[Double],
     scoreThreshold: js.UndefOr[Double],
     softNmsSigma: js.UndefOr[Double]
-  ): NamedTensorMap = js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionWithScore")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @JSImport("@tensorflow/tfjs", "image.nonMaxSuppressionWithScoreAsync")
-  @js.native
+  @scala.inline
   def nonMaxSuppressionWithScoreAsync(
     boxes: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -154,142 +141,105 @@ object image {
     iouThreshold: js.UndefOr[Double],
     scoreThreshold: js.UndefOr[Double],
     softNmsSigma: js.UndefOr[Double]
-  ): js.Promise[NamedTensorMap] = js.native
+  ): js.Promise[NamedTensorMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionWithScoreAsync")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[js.Promise[NamedTensorMap]]
   
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double]): Tensor[R3] = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double], alignCorners: Boolean): Tensor[R3] = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
-  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
+  @scala.inline
+  def resizeBilinear(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double]): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+  @scala.inline
+  def resizeBilinear(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double], alignCorners: Boolean): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeBilinear[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ],
     size: js.Tuple2[Double, Double]
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeBilinear")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def resizeBilinear[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ],
     size: js.Tuple2[Double, Double],
     alignCorners: Boolean
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeBilinear")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double]): Tensor[R3] = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double], alignCorners: Boolean): Tensor[R3] = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
-  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
+  @scala.inline
+  def resizeNearestNeighbor(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double]): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+  @scala.inline
+  def resizeNearestNeighbor(images: Tensor[R3 | R4], size: js.Tuple2[Double, Double], alignCorners: Boolean): Tensor[R3] = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[Tensor[R3]]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: String, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: js.Array[Uint8Array], size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Boolean, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Double, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Float32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Int32Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](images: Uint8Array, size: js.Tuple2[Double, Double], alignCorners: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ],
     size: js.Tuple2[Double, Double]
-  ): T = js.native
-  @JSImport("@tensorflow/tfjs", "image.resizeNearestNeighbor")
-  @js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
   def resizeNearestNeighbor[T /* <: Tensor[R3 | R4] */](
     images: RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
     ],
     size: js.Tuple2[Double, Double],
     alignCorners: Boolean
-  ): T = js.native
+  ): T = (^.asInstanceOf[js.Dynamic].applyDynamic("resizeNearestNeighbor")(images.asInstanceOf[js.Any], size.asInstanceOf[js.Any], alignCorners.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("@tensorflow/tfjs", "image.rotateWithOffset")
-  @js.native
+  @scala.inline
   def rotateWithOffset(
     image: String | Double | Boolean | Uint8Array | Int32Array | Float32Array | (RecursiveArray[
       js.Array[Double] | Boolean | Double | Float32Array | Int32Array | String | Uint8Array
@@ -297,5 +247,5 @@ object image {
     radians: Double,
     fillValue: js.UndefOr[Double | (js.Tuple3[Double, Double, Double])],
     center: js.UndefOr[Double | (js.Tuple2[Double, Double])]
-  ): Tensor[R4] = js.native
+  ): Tensor[R4] = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateWithOffset")(image.asInstanceOf[js.Any], radians.asInstanceOf[js.Any], fillValue.asInstanceOf[js.Any], center.asInstanceOf[js.Any])).asInstanceOf[Tensor[R4]]
 }

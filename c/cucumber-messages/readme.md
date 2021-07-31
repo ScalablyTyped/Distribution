@@ -10,9 +10,9 @@ Protocol Buffer messages for Cucumber's inter-process communication
 | ------------------ | :-------------: |
 | Full name          | cucumber-messages |
 | Keywords           | - |
-| # releases         | 26 |
+| # releases         | 15 |
 | # dependents       | 10 |
-| # downloads        | 1386671 |
+| # downloads        | 2493389 |
 | # stars            | 0 |
 
 ## Links

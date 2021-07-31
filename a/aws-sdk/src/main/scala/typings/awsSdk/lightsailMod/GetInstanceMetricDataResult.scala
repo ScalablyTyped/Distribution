@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstanceMetricDataResult extends StObject {
   
   /**
     * An array of objects that describe the metric data returned.
     */
-  var metricData: js.UndefOr[MetricDatapointList] = js.native
+  var metricData: js.UndefOr[MetricDatapointList] = js.undefined
   
   /**
     * The name of the metric returned.
     */
-  var metricName: js.UndefOr[InstanceMetricName] = js.native
+  var metricName: js.UndefOr[InstanceMetricName] = js.undefined
 }
 object GetInstanceMetricDataResult {
   

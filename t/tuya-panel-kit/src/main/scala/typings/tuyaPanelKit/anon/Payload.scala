@@ -3,29 +3,28 @@ package typings.tuyaPanelKit.anon
 import typings.tuyaPanelKit.tuyaPanelKitStrings.NAVIGATE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Payload
-  extends typings.tuyaPanelKit.commonActionsMod.Action {
+  extends StObject
+     with typings.tuyaPanelKit.commonActionsMod.Action {
   
-  var payload: Merge | KeyMerge = js.native
-  
-  // tslint:disable-next-line no-redundant-undefined
-  var source: js.UndefOr[String] = js.native
+  var payload: Merge | KeyMerge
   
   // tslint:disable-next-line no-redundant-undefined
-  var target: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
   
-  var `type`: NAVIGATE = js.native
+  // tslint:disable-next-line no-redundant-undefined
+  var target: js.UndefOr[String] = js.undefined
+  
+  var `type`: NAVIGATE
 }
 object Payload {
   
   @scala.inline
-  def apply(payload: Merge | KeyMerge, `type`: NAVIGATE): Payload = {
+  def apply(payload: Merge | KeyMerge): Payload = {
     val __obj = js.Dynamic.literal(payload = payload.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NAVIGATE")
     __obj.asInstanceOf[Payload]
   }
   

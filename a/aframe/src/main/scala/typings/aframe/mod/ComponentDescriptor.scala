@@ -2,28 +2,26 @@ package typings.aframe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ComponentDescriptor[T /* <: Component[_, System[_]] */] extends StObject {
+trait ComponentDescriptor[T /* <: Component[js.Any, System[js.Any]] */] extends StObject {
   
-  var Component: ComponentConstructor[T] = js.native
+  var Component: ComponentConstructor[T]
   
-  var dependencies: js.UndefOr[js.Array[String]] = js.native
+  var dependencies: js.UndefOr[js.Array[String]] = js.undefined
   
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
 }
 object ComponentDescriptor {
   
   @scala.inline
-  def apply[T /* <: Component[_, System[_]] */](Component: ComponentConstructor[T]): ComponentDescriptor[T] = {
+  def apply[T /* <: Component[js.Any, System[js.Any]] */](Component: ComponentConstructor[T]): ComponentDescriptor[T] = {
     val __obj = js.Dynamic.literal(Component = Component.asInstanceOf[js.Any])
     __obj.asInstanceOf[ComponentDescriptor[T]]
   }
   
   @scala.inline
-  implicit class ComponentDescriptorMutableBuilder[Self <: ComponentDescriptor[_], T /* <: Component[_, System[_]] */] (val x: Self with ComponentDescriptor[T]) extends AnyVal {
+  implicit class ComponentDescriptorMutableBuilder[Self <: ComponentDescriptor[?], T /* <: Component[js.Any, System[js.Any]] */] (val x: Self & ComponentDescriptor[T]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: ComponentConstructor[T]): Self = StObject.set(x, "Component", value.asInstanceOf[js.Any])

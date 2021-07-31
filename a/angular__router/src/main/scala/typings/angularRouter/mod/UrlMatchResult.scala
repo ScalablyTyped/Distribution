@@ -3,15 +3,13 @@ package typings.angularRouter.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlMatchResult extends StObject {
   
-  var consumed: js.Array[UrlSegment] = js.native
+  var consumed: js.Array[UrlSegment]
   
-  var posParams: js.UndefOr[StringDictionary[UrlSegment]] = js.native
+  var posParams: js.UndefOr[StringDictionary[UrlSegment]] = js.undefined
 }
 object UrlMatchResult {
   

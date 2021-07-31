@@ -8,27 +8,27 @@ import typings.typescript.mod.WatchOptions
 import typings.typescript.typescriptStrings.discover
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DiscoverTypings extends TypingInstallerRequestWithProjectName {
+trait DiscoverTypings
+  extends StObject
+     with TypingInstallerRequestWithProjectName {
   
-  val cachePath: js.UndefOr[String] = js.native
+  val cachePath: js.UndefOr[String] = js.undefined
   
-  val compilerOptions: CompilerOptions = js.native
+  val compilerOptions: CompilerOptions
   
-  val fileNames: js.Array[String] = js.native
+  val fileNames: js.Array[String]
   
-  val kind: discover = js.native
+  val kind: discover
   
-  val projectRootPath: Path = js.native
+  val projectRootPath: Path
   
-  val typeAcquisition: TypeAcquisition = js.native
+  val typeAcquisition: TypeAcquisition
   
-  val unresolvedImports: SortedReadonlyArray[String] = js.native
+  val unresolvedImports: SortedReadonlyArray[String]
   
-  val watchOptions: js.UndefOr[WatchOptions] = js.native
+  val watchOptions: js.UndefOr[WatchOptions] = js.undefined
 }
 object DiscoverTypings {
   
@@ -36,13 +36,12 @@ object DiscoverTypings {
   def apply(
     compilerOptions: CompilerOptions,
     fileNames: js.Array[String],
-    kind: discover,
     projectName: String,
     projectRootPath: Path,
     typeAcquisition: TypeAcquisition,
     unresolvedImports: SortedReadonlyArray[String]
   ): DiscoverTypings = {
-    val __obj = js.Dynamic.literal(compilerOptions = compilerOptions.asInstanceOf[js.Any], fileNames = fileNames.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], projectName = projectName.asInstanceOf[js.Any], projectRootPath = projectRootPath.asInstanceOf[js.Any], typeAcquisition = typeAcquisition.asInstanceOf[js.Any], unresolvedImports = unresolvedImports.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(compilerOptions = compilerOptions.asInstanceOf[js.Any], fileNames = fileNames.asInstanceOf[js.Any], kind = "discover", projectName = projectName.asInstanceOf[js.Any], projectRootPath = projectRootPath.asInstanceOf[js.Any], typeAcquisition = typeAcquisition.asInstanceOf[js.Any], unresolvedImports = unresolvedImports.asInstanceOf[js.Any])
     __obj.asInstanceOf[DiscoverTypings]
   }
   

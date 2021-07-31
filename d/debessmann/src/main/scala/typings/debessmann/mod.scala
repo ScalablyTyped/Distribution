@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -46,10 +45,9 @@ object mod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var dm: DM = js.native
+      var dm: DM
     }
     object Window {
       

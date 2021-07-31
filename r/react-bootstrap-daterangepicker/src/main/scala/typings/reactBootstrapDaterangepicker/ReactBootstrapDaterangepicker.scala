@@ -5,7 +5,6 @@ import typings.react.mod.CSSProperties
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ReactBootstrapDaterangepicker {
@@ -14,26 +13,27 @@ object ReactBootstrapDaterangepicker {
   
   type EventHandler = js.Function2[/* event */ js.UndefOr[js.Any], /* picker */ js.UndefOr[js.Any], js.Any]
   
-  @js.native
-  trait Props extends Options {
+  trait Props
+    extends StObject
+       with Options {
     
-    var containerClass: js.UndefOr[String] = js.native
+    var containerClass: js.UndefOr[String] = js.undefined
     
-    var containerStyles: js.UndefOr[CSSProperties] = js.native
+    var containerStyles: js.UndefOr[CSSProperties] = js.undefined
     
-    var onApply: js.UndefOr[EventHandler] = js.native
+    var onApply: js.UndefOr[EventHandler] = js.undefined
     
-    var onCancel: js.UndefOr[EventHandler] = js.native
+    var onCancel: js.UndefOr[EventHandler] = js.undefined
     
-    var onEvent: js.UndefOr[EventHandler] = js.native
+    var onEvent: js.UndefOr[EventHandler] = js.undefined
     
-    var onHide: js.UndefOr[EventHandler] = js.native
+    var onHide: js.UndefOr[EventHandler] = js.undefined
     
-    var onHideCalendar: js.UndefOr[EventHandler] = js.native
+    var onHideCalendar: js.UndefOr[EventHandler] = js.undefined
     
-    var onShow: js.UndefOr[EventHandler] = js.native
+    var onShow: js.UndefOr[EventHandler] = js.undefined
     
-    var onShowCalendar: js.UndefOr[EventHandler] = js.native
+    var onShowCalendar: js.UndefOr[EventHandler] = js.undefined
   }
   object Props {
     

@@ -2,16 +2,14 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBLEDeviceCharacteristicsSuccessCallbackResult extends StObject {
   
   /** 设备特征值列表 */
-  var characteristics: js.Array[BLECharacteristic] = js.native
+  var characteristics: js.Array[BLECharacteristic]
   
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object GetBLEDeviceCharacteristicsSuccessCallbackResult {
   

@@ -6,7 +6,6 @@ import typings.phaser.MatterJS.ConstraintType
 import typings.phaser.MatterJS.ICompositeDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,8 +21,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("MatterJS.Composite")
 @js.native
 class Composite ()
-  extends typings.phaser.MatterJS.Composite
+  extends StObject
+     with typings.phaser.MatterJS.Composite
 object Composite {
+  
+  @JSGlobal("MatterJS.Composite")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Generic add function. Adds one or many body(s), constraint(s) or a composite(s) to the given composite.
@@ -34,15 +38,12 @@ object Composite {
     * @return {composite} The original composite with the objects added
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.add")
-  @js.native
-  def add(composite: CompositeType, `object`: BodyType): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.add")
-  @js.native
-  def add(composite: CompositeType, `object`: CompositeType): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.add")
-  @js.native
-  def add(composite: CompositeType, `object`: ConstraintType): CompositeType = js.native
+  @scala.inline
+  def add(composite: CompositeType, `object`: BodyType): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  @scala.inline
+  def add(composite: CompositeType, `object`: CompositeType): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  @scala.inline
+  def add(composite: CompositeType, `object`: ConstraintType): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Returns all bodies in the given composite, including all bodies in its children, recursively.
@@ -51,9 +52,8 @@ object Composite {
     * @return {body[]} All the bodies
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.allBodies")
-  @js.native
-  def allBodies(composite: CompositeType): js.Array[BodyType] = js.native
+  @scala.inline
+  def allBodies(composite: CompositeType): js.Array[BodyType] = ^.asInstanceOf[js.Dynamic].applyDynamic("allBodies")(composite.asInstanceOf[js.Any]).asInstanceOf[js.Array[BodyType]]
   
   /**
     * Returns all composites in the given composite, including all composites in its children, recursively.
@@ -62,9 +62,8 @@ object Composite {
     * @return {composite[]} All the composites
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.allComposites")
-  @js.native
-  def allComposites(composite: CompositeType): js.Array[CompositeType] = js.native
+  @scala.inline
+  def allComposites(composite: CompositeType): js.Array[CompositeType] = ^.asInstanceOf[js.Dynamic].applyDynamic("allComposites")(composite.asInstanceOf[js.Any]).asInstanceOf[js.Array[CompositeType]]
   
   /**
     * Returns all constraints in the given composite, including all constraints in its children, recursively.
@@ -73,9 +72,8 @@ object Composite {
     * @return {constraint[]} All the constraints
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.allConstraints")
-  @js.native
-  def allConstraints(composite: CompositeType): js.Array[ConstraintType] = js.native
+  @scala.inline
+  def allConstraints(composite: CompositeType): js.Array[ConstraintType] = ^.asInstanceOf[js.Dynamic].applyDynamic("allConstraints")(composite.asInstanceOf[js.Any]).asInstanceOf[js.Array[ConstraintType]]
   
   /**
     * Removes all bodies, constraints and composites from the given composite.
@@ -86,12 +84,10 @@ object Composite {
     * @param {boolean} [deep=false]
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.clear")
-  @js.native
-  def clear(composite: CompositeType, keepStatic: Boolean): Unit = js.native
-  @JSGlobal("MatterJS.Composite.clear")
-  @js.native
-  def clear(composite: CompositeType, keepStatic: Boolean, deep: Boolean): Unit = js.native
+  @scala.inline
+  def clear(composite: CompositeType, keepStatic: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(composite.asInstanceOf[js.Any], keepStatic.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def clear(composite: CompositeType, keepStatic: Boolean, deep: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("clear")(composite.asInstanceOf[js.Any], keepStatic.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Creates a new composite. The options parameter is an object that specifies any properties you wish to override the defaults.
@@ -101,12 +97,10 @@ object Composite {
     * @return {composite} A new composite
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.create")
-  @js.native
-  def create(): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.create")
-  @js.native
-  def create(options: ICompositeDefinition): CompositeType = js.native
+  @scala.inline
+  def create(): CompositeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CompositeType]
+  @scala.inline
+  def create(options: ICompositeDefinition): CompositeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[CompositeType]
   
   /**
     * Searches the composite recursively for an object matching the type and id supplied, null if not found.
@@ -117,9 +111,8 @@ object Composite {
     * @return {object} The requested object, if found
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.get")
-  @js.native
-  def get(composite: CompositeType, id: Double, `type`: String): BodyType | CompositeType | ConstraintType = js.native
+  @scala.inline
+  def get(composite: CompositeType, id: Double, `type`: String): BodyType | CompositeType | ConstraintType = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(composite.asInstanceOf[js.Any], id.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[BodyType | CompositeType | ConstraintType]
   
   /**
     * Moves the given object(s) from compositeA to compositeB (equal to a remove followed by an add).
@@ -130,13 +123,12 @@ object Composite {
     * @return {composite} Returns compositeA
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.move")
-  @js.native
+  @scala.inline
   def move(
     compositeA: CompositeType,
     objects: js.Array[BodyType | CompositeType | ConstraintType],
     compositeB: CompositeType
-  ): CompositeType = js.native
+  ): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(compositeA.asInstanceOf[js.Any], objects.asInstanceOf[js.Any], compositeB.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Assigns new ids for all objects in the composite, recursively.
@@ -145,9 +137,8 @@ object Composite {
     * @return {composite} Returns composite
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.rebase")
-  @js.native
-  def rebase(composite: CompositeType): CompositeType = js.native
+  @scala.inline
+  def rebase(composite: CompositeType): CompositeType = ^.asInstanceOf[js.Dynamic].applyDynamic("rebase")(composite.asInstanceOf[js.Any]).asInstanceOf[CompositeType]
   
   /**
     * Generic remove function. Removes one or many body(s), constraint(s) or a composite(s) to the given composite.
@@ -160,24 +151,18 @@ object Composite {
     * @return {composite} The original composite with the objects removed
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.remove")
-  @js.native
-  def remove(composite: CompositeType, `object`: BodyType): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.remove")
-  @js.native
-  def remove(composite: CompositeType, `object`: BodyType, deep: Boolean): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.remove")
-  @js.native
-  def remove(composite: CompositeType, `object`: CompositeType): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.remove")
-  @js.native
-  def remove(composite: CompositeType, `object`: CompositeType, deep: Boolean): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.remove")
-  @js.native
-  def remove(composite: CompositeType, `object`: ConstraintType): CompositeType = js.native
-  @JSGlobal("MatterJS.Composite.remove")
-  @js.native
-  def remove(composite: CompositeType, `object`: ConstraintType, deep: Boolean): CompositeType = js.native
+  @scala.inline
+  def remove(composite: CompositeType, `object`: BodyType): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  @scala.inline
+  def remove(composite: CompositeType, `object`: BodyType, deep: Boolean): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  @scala.inline
+  def remove(composite: CompositeType, `object`: CompositeType): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  @scala.inline
+  def remove(composite: CompositeType, `object`: CompositeType, deep: Boolean): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  @scala.inline
+  def remove(composite: CompositeType, `object`: ConstraintType): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
+  @scala.inline
+  def remove(composite: CompositeType, `object`: ConstraintType, deep: Boolean): CompositeType = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(composite.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], deep.asInstanceOf[js.Any])).asInstanceOf[CompositeType]
   
   /**
     * Rotates all children in the composite by a given angle about the given point, without imparting any angular velocity.
@@ -188,17 +173,15 @@ object Composite {
     * @param {bool} [recursive=true]
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.rotate")
-  @js.native
-  def rotate(composite: CompositeType, rotation: Double, point: typings.phaser.MatterJS.Vector): Unit = js.native
-  @JSGlobal("MatterJS.Composite.rotate")
-  @js.native
+  @scala.inline
+  def rotate(composite: CompositeType, rotation: Double, point: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(composite.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def rotate(
     composite: CompositeType,
     rotation: Double,
     point: typings.phaser.MatterJS.Vector,
     recursive: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(composite.asInstanceOf[js.Any], rotation.asInstanceOf[js.Any], point.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Scales all children in the composite, including updating physical properties (mass, area, axes, inertia), from a world-space point.
@@ -210,18 +193,16 @@ object Composite {
     * @param {bool} [recursive=true]
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.scale")
-  @js.native
-  def scale(composite: CompositeType, scaleX: Double, scaleY: Double, point: typings.phaser.MatterJS.Vector): Unit = js.native
-  @JSGlobal("MatterJS.Composite.scale")
-  @js.native
+  @scala.inline
+  def scale(composite: CompositeType, scaleX: Double, scaleY: Double, point: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(composite.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def scale(
     composite: CompositeType,
     scaleX: Double,
     scaleY: Double,
     point: typings.phaser.MatterJS.Vector,
     recursive: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(composite.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets the composite's `isModified` flag.
@@ -234,23 +215,14 @@ object Composite {
     * @param {boolean} [updateChildren=false]
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.setModified")
-  @js.native
-  def setModified(composite: CompositeType, isModified: Boolean): Unit = js.native
-  @JSGlobal("MatterJS.Composite.setModified")
-  @js.native
-  def setModified(
-    composite: CompositeType,
-    isModified: Boolean,
-    updateParents: js.UndefOr[scala.Nothing],
-    updateChildren: Boolean
-  ): Unit = js.native
-  @JSGlobal("MatterJS.Composite.setModified")
-  @js.native
-  def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean): Unit = js.native
-  @JSGlobal("MatterJS.Composite.setModified")
-  @js.native
-  def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = js.native
+  @scala.inline
+  def setModified(composite: CompositeType, isModified: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any], updateParents.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setModified(composite: CompositeType, isModified: Boolean, updateParents: Boolean, updateChildren: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any], updateParents.asInstanceOf[js.Any], updateChildren.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setModified(composite: CompositeType, isModified: Boolean, updateParents: Unit, updateChildren: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setModified")(composite.asInstanceOf[js.Any], isModified.asInstanceOf[js.Any], updateParents.asInstanceOf[js.Any], updateChildren.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Translates all children in the composite by a given vector relative to their current positions,
@@ -261,10 +233,8 @@ object Composite {
     * @param {bool} [recursive=true]
     */
   /* static member */
-  @JSGlobal("MatterJS.Composite.translate")
-  @js.native
-  def translate(composite: CompositeType, translation: typings.phaser.MatterJS.Vector): Unit = js.native
-  @JSGlobal("MatterJS.Composite.translate")
-  @js.native
-  def translate(composite: CompositeType, translation: typings.phaser.MatterJS.Vector, recursive: Boolean): Unit = js.native
+  @scala.inline
+  def translate(composite: CompositeType, translation: typings.phaser.MatterJS.Vector): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(composite.asInstanceOf[js.Any], translation.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def translate(composite: CompositeType, translation: typings.phaser.MatterJS.Vector, recursive: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(composite.asInstanceOf[js.Any], translation.asInstanceOf[js.Any], recursive.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The relations between entities found in the content. */
-@js.native
 trait RelationsResult extends StObject {
   
   /** Entity mentions that are involved in the relation. */
-  var arguments: js.UndefOr[js.Array[RelationArgument]] = js.native
+  var arguments: js.UndefOr[js.Array[RelationArgument]] = js.undefined
   
   /** Confidence score for the relation. Higher values indicate greater confidence. */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
   /** The sentence that contains the relation. */
-  var sentence: js.UndefOr[String] = js.native
+  var sentence: js.UndefOr[String] = js.undefined
   
   /** The type of the relation. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object RelationsResult {
   

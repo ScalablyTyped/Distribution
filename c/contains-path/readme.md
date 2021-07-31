@@ -11,8 +11,8 @@ Return true if a file path contains the given path.
 | Full name          | contains-path |
 | Keywords           | contains, directory, dirname, exec, ext, extname, file, filepath, fp, has, match, matches, path, regex, test |
 | # releases         | 0 |
-| # dependents       | 50 |
-| # downloads        | 272341453 |
+| # dependents       | 62 |
+| # downloads        | 345233060 |
 | # stars            | 1 |
 
 ## Links

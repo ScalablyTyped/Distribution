@@ -2,22 +2,20 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MsSmoothOutputSettings extends StObject {
   
   /**
     * Only applicable when this output is referencing an H.265 video description.
   Specifies whether MP4 segments should be packaged as HEV1 or HVC1.
     */
-  var H265PackagingType: js.UndefOr[MsSmoothH265PackagingType] = js.native
+  var H265PackagingType: js.UndefOr[MsSmoothH265PackagingType] = js.undefined
   
   /**
     * String concatenated to the end of the destination filename.  Required for multiple outputs of the same type.
     */
-  var NameModifier: js.UndefOr[string] = js.native
+  var NameModifier: js.UndefOr[string] = js.undefined
 }
 object MsSmoothOutputSettings {
   

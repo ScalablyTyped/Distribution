@@ -6,31 +6,32 @@ import typings.rcTrigger.interfaceMod.TransitionNameType
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object maskMod {
   
-  @JSImport("rc-trigger/es/Popup/Mask", JSImport.Default)
+  @JSImport("rc-trigger/es/Popup/Mask", JSImport.Namespace)
   @js.native
-  def default(props: MaskProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: MaskProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait MaskProps extends StObject {
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var maskAnimation: js.UndefOr[AnimationType] = js.native
+    var maskAnimation: js.UndefOr[AnimationType] = js.undefined
     
-    var maskMotion: js.UndefOr[CSSMotionProps] = js.native
+    var maskMotion: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var maskTransitionName: js.UndefOr[TransitionNameType] = js.native
+    var maskTransitionName: js.UndefOr[TransitionNameType] = js.undefined
     
-    var prefixCls: String = js.native
+    var prefixCls: String
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object MaskProps {
     

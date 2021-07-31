@@ -8,7 +8,6 @@ import typings.react.mod.Context
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object contextMod {
@@ -17,40 +16,39 @@ object contextMod {
   @js.native
   val SelectContext: Context[ContextProps] = js.native
   
-  @js.native
   trait ContextProps extends StObject {
     
-    var checkable: Boolean | ReactNode = js.native
+    var checkable: Boolean | ReactNode
     
-    var checkedKeys: js.Array[Key] = js.native
+    var checkedKeys: js.Array[Key]
     
-    var halfCheckedKeys: js.Array[Key] = js.native
+    var halfCheckedKeys: js.Array[Key]
     
-    def loadData(treeNode: LegacyDataNode): js.Promise[_] = js.native
+    def loadData(treeNode: LegacyDataNode): js.Promise[js.Any]
     
-    def onTreeExpand(keys: js.Array[Key]): Unit = js.native
+    def onTreeExpand(keys: js.Array[Key]): Unit
     
-    def onTreeLoad(loadedKeys: js.Array[Key]): Unit = js.native
+    def onTreeLoad(loadedKeys: js.Array[Key]): Unit
     
-    var showTreeIcon: Boolean = js.native
+    var showTreeIcon: Boolean
     
-    var switcherIcon: IconType = js.native
+    var switcherIcon: IconType
     
-    var treeDefaultExpandAll: Boolean = js.native
+    var treeDefaultExpandAll: Boolean
     
-    var treeDefaultExpandedKeys: js.Array[Key] = js.native
+    var treeDefaultExpandedKeys: js.Array[Key]
     
-    var treeExpandedKeys: js.Array[Key] = js.native
+    var treeExpandedKeys: js.Array[Key]
     
-    var treeIcon: IconType = js.native
+    var treeIcon: IconType
     
-    var treeLine: Boolean = js.native
+    var treeLine: Boolean
     
-    var treeLoadedKeys: js.Array[Key] = js.native
+    var treeLoadedKeys: js.Array[Key]
     
-    var treeMotion: js.Any = js.native
+    var treeMotion: js.Any
     
-    var treeNodeFilterProp: String = js.native
+    var treeNodeFilterProp: String
   }
   object ContextProps {
     
@@ -58,7 +56,7 @@ object contextMod {
     def apply(
       checkedKeys: js.Array[Key],
       halfCheckedKeys: js.Array[Key],
-      loadData: LegacyDataNode => js.Promise[_],
+      loadData: LegacyDataNode => js.Promise[js.Any],
       onTreeExpand: js.Array[Key] => Unit,
       onTreeLoad: js.Array[Key] => Unit,
       showTreeIcon: Boolean,
@@ -96,7 +94,7 @@ object contextMod {
       def setHalfCheckedKeysVarargs(value: Key*): Self = StObject.set(x, "halfCheckedKeys", js.Array(value :_*))
       
       @scala.inline
-      def setLoadData(value: LegacyDataNode => js.Promise[_]): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
+      def setLoadData(value: LegacyDataNode => js.Promise[js.Any]): Self = StObject.set(x, "loadData", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnTreeExpand(value: js.Array[Key] => Unit): Self = StObject.set(x, "onTreeExpand", js.Any.fromFunction1(value))

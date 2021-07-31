@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1beta1Mod.serviceusageV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * whether the subsequent cross-origin request is       # allowed to proceed.
   * - name: library-example.googleapis.com       allow_cors: true
   */
-@js.native
 trait SchemaEndpoint extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait SchemaEndpoint extends StObject {
     * please specify multiple google.api.Endpoint for each of the intended
     * aliases.  Additional names that this endpoint will be hosted on.
     */
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Allowing
@@ -35,17 +33,17 @@ trait SchemaEndpoint extends StObject {
     * used by the browser to determine whether the subsequent cross-origin
     * request is allowed to proceed.
     */
-  var allowCors: js.UndefOr[Boolean] = js.native
+  var allowCors: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The list of features enabled on this endpoint.
     */
-  var features: js.UndefOr[js.Array[String]] = js.native
+  var features: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The canonical name of this endpoint.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The specification of an Internet routable address of API frontend that
@@ -54,7 +52,7 @@ trait SchemaEndpoint extends StObject {
     * either a valid IPv4 address or a fully-qualified domain name. For
     * example, &quot;8.8.8.8&quot; or &quot;myservice.appspot.com&quot;.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object SchemaEndpoint {
   

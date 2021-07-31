@@ -2,13 +2,11 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PiiTokenOptions extends StObject {
   
-  var personal_id_number: String = js.native
+  var personal_id_number: String
 }
 object PiiTokenOptions {
   

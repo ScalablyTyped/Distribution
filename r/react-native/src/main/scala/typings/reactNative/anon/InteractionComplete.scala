@@ -2,15 +2,13 @@ package typings.reactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InteractionComplete extends StObject {
   
-  var interactionComplete: String = js.native
+  var interactionComplete: String
   
-  var interactionStart: String = js.native
+  var interactionStart: String
 }
 object InteractionComplete {
   

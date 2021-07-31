@@ -2,22 +2,20 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrdersSetLineItemMetadataRequest extends StObject {
   
-  var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.native
+  var annotations: js.UndefOr[js.Array[OrderMerchantProvidedAnnotation]] = js.undefined
   
   /** The ID of the line item to set metadata. Either lineItemId or productId is required. */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /** The ID of the operation. Unique across all operations for a given order. */
-  var operationId: js.UndefOr[String] = js.native
+  var operationId: js.UndefOr[String] = js.undefined
   
   /** The ID of the product to set metadata. This is the REST ID used in the products service. Either lineItemId or productId is required. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
 }
 object OrdersSetLineItemMetadataRequest {
   

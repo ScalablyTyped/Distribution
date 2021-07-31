@@ -9,23 +9,23 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.open
 import typings.elasticElasticsearch.elasticElasticsearchStrings.query_then_fetch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RankEval[T] extends Generic {
+trait RankEval[T]
+  extends StObject
+     with Generic {
   
-  var allow_no_indices: js.UndefOr[Boolean] = js.native
+  var allow_no_indices: js.UndefOr[Boolean] = js.undefined
   
-  var body: T = js.native
+  var body: T
   
-  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.native
+  var expand_wildcards: js.UndefOr[open | closed | hidden | none | all] = js.undefined
   
-  var ignore_unavailable: js.UndefOr[Boolean] = js.native
+  var ignore_unavailable: js.UndefOr[Boolean] = js.undefined
   
-  var index: js.UndefOr[String | js.Array[String]] = js.native
+  var index: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var search_type: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.native
+  var search_type: js.UndefOr[query_then_fetch | dfs_query_then_fetch] = js.undefined
 }
 object RankEval {
   
@@ -36,7 +36,7 @@ object RankEval {
   }
   
   @scala.inline
-  implicit class RankEvalMutableBuilder[Self <: RankEval[_], T] (val x: Self with RankEval[T]) extends AnyVal {
+  implicit class RankEvalMutableBuilder[Self <: RankEval[?], T] (val x: Self & RankEval[T]) extends AnyVal {
     
     @scala.inline
     def setAllow_no_indices(value: Boolean): Self = StObject.set(x, "allow_no_indices", value.asInstanceOf[js.Any])

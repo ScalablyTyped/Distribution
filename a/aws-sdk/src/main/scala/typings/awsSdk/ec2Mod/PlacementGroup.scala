@@ -2,41 +2,39 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlacementGroup extends StObject {
   
   /**
     * The ID of the placement group.
     */
-  var GroupId: js.UndefOr[String] = js.native
+  var GroupId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the placement group.
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of partitions. Valid only if strategy is set to partition.
     */
-  var PartitionCount: js.UndefOr[Integer] = js.native
+  var PartitionCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The state of the placement group.
     */
-  var State: js.UndefOr[PlacementGroupState] = js.native
+  var State: js.UndefOr[PlacementGroupState] = js.undefined
   
   /**
     * The placement strategy.
     */
-  var Strategy: js.UndefOr[PlacementStrategy] = js.native
+  var Strategy: js.UndefOr[PlacementStrategy] = js.undefined
   
   /**
     * Any tags applied to the placement group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object PlacementGroup {
   

@@ -5,34 +5,32 @@ import typings.octokitTypes.octokitTypesStrings.all
 import typings.octokitTypes.octokitTypesStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsCreateSelfHostedRunnerGroupForOrgEndpoint extends StObject {
   
   /**
     * Name of the runner group.
     */
-  var name: String = js.native
+  var name: String
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * List of runner IDs to add to the runner group.
     */
-  var runners: js.UndefOr[js.Array[Double]] = js.native
+  var runners: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * List of repository IDs that can access the runner group.
     */
-  var selected_repository_ids: js.UndefOr[js.Array[Double]] = js.native
+  var selected_repository_ids: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * Visibility of a runner group. You can select all repositories, select individual repositories, or limit access to private repositories. Can be one of: `all`, `selected`, or `private`.
     */
-  var visibility: js.UndefOr[selected | all | `private`] = js.native
+  var visibility: js.UndefOr[selected | all | `private`] = js.undefined
 }
 object ActionsCreateSelfHostedRunnerGroupForOrgEndpoint {
   

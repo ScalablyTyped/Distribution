@@ -2,17 +2,15 @@ package typings.firebaseDatabase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait D extends StObject {
   
-  var d: js.Any = js.native
+  var d: js.Any
   
-  var seg: Double = js.native
+  var seg: Double
   
-  var ts: Double = js.native
+  var ts: Double
 }
 object D {
   

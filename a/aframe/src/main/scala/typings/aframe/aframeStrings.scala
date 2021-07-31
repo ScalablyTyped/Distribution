@@ -4,7 +4,6 @@ import typings.aframe.mod.PropertyTypes
 import typings.aframe.mod.SceneEvents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aframeStrings {
@@ -35,17 +34,23 @@ object aframeStrings {
   def alternateReverse: alternateReverse = "alternateReverse".asInstanceOf[alternateReverse]
   
   @js.native
-  sealed trait array extends PropertyTypes
+  sealed trait array
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait asset extends PropertyTypes
+  sealed trait asset
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def asset: asset = "asset".asInstanceOf[asset]
   
   @js.native
-  sealed trait audio extends PropertyTypes
+  sealed trait audio
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def audio: audio = "audio".asInstanceOf[audio]
   
@@ -55,7 +60,9 @@ object aframeStrings {
   def backwards: backwards = "backwards".asInstanceOf[backwards]
   
   @js.native
-  sealed trait boolean extends PropertyTypes
+  sealed trait boolean
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -75,7 +82,9 @@ object aframeStrings {
   def `child-detached`: `child-detached` = "child-detached".asInstanceOf[`child-detached`]
   
   @js.native
-  sealed trait color extends PropertyTypes
+  sealed trait color
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def color: color = "color".asInstanceOf[color]
   
@@ -95,12 +104,16 @@ object aframeStrings {
   def componentremoved: componentremoved = "componentremoved".asInstanceOf[componentremoved]
   
   @js.native
-  sealed trait `enter-vr` extends SceneEvents
+  sealed trait `enter-vr`
+    extends StObject
+       with SceneEvents
   @scala.inline
   def `enter-vr`: `enter-vr` = "enter-vr".asInstanceOf[`enter-vr`]
   
   @js.native
-  sealed trait `exit-vr` extends SceneEvents
+  sealed trait `exit-vr`
+    extends StObject
+       with SceneEvents
   @scala.inline
   def `exit-vr`: `exit-vr` = "exit-vr".asInstanceOf[`exit-vr`]
   
@@ -125,22 +138,30 @@ object aframeStrings {
   def indefinite: indefinite = "indefinite".asInstanceOf[indefinite]
   
   @js.native
-  sealed trait int extends PropertyTypes
+  sealed trait int
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def int: int = "int".asInstanceOf[int]
   
   @js.native
-  sealed trait loaded extends SceneEvents
+  sealed trait loaded
+    extends StObject
+       with SceneEvents
   @scala.inline
   def loaded: loaded = "loaded".asInstanceOf[loaded]
   
   @js.native
-  sealed trait map extends PropertyTypes
+  sealed trait map
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def map: map = "map".asInstanceOf[map]
   
   @js.native
-  sealed trait model extends PropertyTypes
+  sealed trait model
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def model: model = "model".asInstanceOf[model]
   
@@ -155,7 +176,9 @@ object aframeStrings {
   def normal: normal = "normal".asInstanceOf[normal]
   
   @js.native
-  sealed trait number extends PropertyTypes
+  sealed trait number
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -175,7 +198,9 @@ object aframeStrings {
   def position: position = "position".asInstanceOf[position]
   
   @js.native
-  sealed trait renderstart extends SceneEvents
+  sealed trait renderstart
+    extends StObject
+       with SceneEvents
   @scala.inline
   def renderstart: renderstart = "renderstart".asInstanceOf[renderstart]
   
@@ -200,12 +225,16 @@ object aframeStrings {
   def schemachanged: schemachanged = "schemachanged".asInstanceOf[schemachanged]
   
   @js.native
-  sealed trait selector extends PropertyTypes
+  sealed trait selector
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def selector: selector = "selector".asInstanceOf[selector]
   
   @js.native
-  sealed trait selectorAll extends PropertyTypes
+  sealed trait selectorAll
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def selectorAll: selectorAll = "selectorAll".asInstanceOf[selectorAll]
   
@@ -220,22 +249,30 @@ object aframeStrings {
   def stateremoved: stateremoved = "stateremoved".asInstanceOf[stateremoved]
   
   @js.native
-  sealed trait string extends PropertyTypes
+  sealed trait string
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait vec2 extends PropertyTypes
+  sealed trait vec2
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def vec2: vec2 = "vec2".asInstanceOf[vec2]
   
   @js.native
-  sealed trait vec3 extends PropertyTypes
+  sealed trait vec3
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def vec3: vec3 = "vec3".asInstanceOf[vec3]
   
   @js.native
-  sealed trait vec4 extends PropertyTypes
+  sealed trait vec4
+    extends StObject
+       with PropertyTypes
   @scala.inline
   def vec4: vec4 = "vec4".asInstanceOf[vec4]
 }

@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * adds a property to specify the referenced column. This is used to specify foreign keys.
   * @see com.sun.star.sdbcx.KeyColumn
   */
-@js.native
-trait KeyColumnDescriptor extends Descriptor {
+trait KeyColumnDescriptor
+  extends StObject
+     with Descriptor {
   
   /** is the name of a reference column out of the referenced table. */
-  var RelatedColumn: String = js.native
+  var RelatedColumn: String
 }
 object KeyColumnDescriptor {
   

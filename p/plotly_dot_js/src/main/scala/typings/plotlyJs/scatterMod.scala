@@ -4,17 +4,15 @@ import typings.plotlyJs.anon.ColorColor
 import typings.plotlyJs.anon.Partialopacitynumbercolor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scatterMod {
   
-  @js.native
   trait ScatterSelectedMarker extends StObject {
     
-    var marker: Partialopacitynumbercolor = js.native
+    var marker: Partialopacitynumbercolor
     
-    var textfont: ColorColor = js.native
+    var textfont: ColorColor
   }
   object ScatterSelectedMarker {
     

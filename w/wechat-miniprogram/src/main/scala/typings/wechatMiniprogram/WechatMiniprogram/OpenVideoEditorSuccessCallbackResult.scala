@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenVideoEditorSuccessCallbackResult extends StObject {
   
   /** 剪辑后生成的视频文件的时长，单位毫秒（ms） */
-  var duration: Double = js.native
+  var duration: Double
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** 剪辑后生成的视频文件大小，单位字节数（byte） */
-  var size: Double = js.native
+  var size: Double
   
   /** 编辑后生成的视频文件的临时路径 */
-  var tempFilePath: String = js.native
+  var tempFilePath: String
   
   /** 编辑后生成的缩略图文件的临时路径 */
-  var tempThumbPath: String = js.native
+  var tempThumbPath: String
 }
 object OpenVideoEditorSuccessCallbackResult {
   

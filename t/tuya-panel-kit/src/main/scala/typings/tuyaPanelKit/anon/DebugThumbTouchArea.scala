@@ -4,21 +4,19 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugThumbTouchArea extends StObject {
   
-  var container: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var container: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var debugThumbTouchArea: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var debugThumbTouchArea: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var thumb: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var thumb: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var touchArea: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var touchArea: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var track: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var track: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object DebugThumbTouchArea {
   

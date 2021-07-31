@@ -9,23 +9,24 @@ import typings.tensorflowTfjsCore.distTypesMod.TypedArray
 import typings.tensorflowTfjsCore.tensorTypesMod.NamedTensorMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object kernelImpls {
   
-  @JSImport("@tensorflow/tfjs-core", "kernel_impls.nonMaxSuppressionV3Impl")
+  @JSImport("@tensorflow/tfjs-core", "kernel_impls")
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def nonMaxSuppressionV3Impl(
     boxes: TypedArray,
     scores: TypedArray,
     maxOutputSize: Double,
     iouThreshold: Double,
     scoreThreshold: Double
-  ): Tensor1D = js.native
+  ): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV3Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
   
-  @JSImport("@tensorflow/tfjs-core", "kernel_impls.nonMaxSuppressionV4Impl")
-  @js.native
+  @scala.inline
   def nonMaxSuppressionV4Impl(
     boxes: TypedArray,
     scores: TypedArray,
@@ -33,10 +34,9 @@ object kernelImpls {
     iouThreshold: Double,
     scoreThreshold: Double,
     padToMaxOutputSize: Boolean
-  ): NamedTensorMap = js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV4Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], padToMaxOutputSize.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @JSImport("@tensorflow/tfjs-core", "kernel_impls.nonMaxSuppressionV5Impl")
-  @js.native
+  @scala.inline
   def nonMaxSuppressionV5Impl(
     boxes: TypedArray,
     scores: TypedArray,
@@ -44,21 +44,17 @@ object kernelImpls {
     iouThreshold: Double,
     scoreThreshold: Double,
     softNmsSigma: Double
-  ): NamedTensorMap = js.native
+  ): NamedTensorMap = (^.asInstanceOf[js.Dynamic].applyDynamic("nonMaxSuppressionV5Impl")(boxes.asInstanceOf[js.Any], scores.asInstanceOf[js.Any], maxOutputSize.asInstanceOf[js.Any], iouThreshold.asInstanceOf[js.Any], scoreThreshold.asInstanceOf[js.Any], softNmsSigma.asInstanceOf[js.Any])).asInstanceOf[NamedTensorMap]
   
-  @JSImport("@tensorflow/tfjs-core", "kernel_impls.split")
-  @js.native
-  def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T, sizeSplits: js.Array[Double], axis: Double): js.Array[T] = js.native
+  @scala.inline
+  def split[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: T, sizeSplits: js.Array[Double], axis: Double): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("split")(x.asInstanceOf[js.Any], sizeSplits.asInstanceOf[js.Any], axis.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@tensorflow/tfjs-core", "kernel_impls.tile")
-  @js.native
-  def tile[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](xBuf: typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, DataType], reps: js.Array[Double]): Tensor[R] = js.native
+  @scala.inline
+  def tile[R /* <: typings.tensorflowTfjsCore.distTypesMod.Rank */](xBuf: typings.tensorflowTfjsCore.distTensorMod.TensorBuffer[R, DataType], reps: js.Array[Double]): Tensor[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("tile")(xBuf.asInstanceOf[js.Any], reps.asInstanceOf[js.Any])).asInstanceOf[Tensor[R]]
   
-  @JSImport("@tensorflow/tfjs-core", "kernel_impls.topkImpl")
-  @js.native
-  def topkImpl[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TypedArray, xShape: js.Array[Double], xDtype: NumericDataType, k: Double, sorted: Boolean): js.Tuple2[T, T] = js.native
+  @scala.inline
+  def topkImpl[T /* <: Tensor[typings.tensorflowTfjsCore.distTypesMod.Rank] */](x: TypedArray, xShape: js.Array[Double], xDtype: NumericDataType, k: Double, sorted: Boolean): js.Tuple2[T, T] = (^.asInstanceOf[js.Dynamic].applyDynamic("topkImpl")(x.asInstanceOf[js.Any], xShape.asInstanceOf[js.Any], xDtype.asInstanceOf[js.Any], k.asInstanceOf[js.Any], sorted.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[T, T]]
   
-  @JSImport("@tensorflow/tfjs-core", "kernel_impls.whereImpl")
-  @js.native
-  def whereImpl(condShape: js.Array[Double], condVals: TypedArray): Tensor2D = js.native
+  @scala.inline
+  def whereImpl(condShape: js.Array[Double], condVals: TypedArray): Tensor2D = (^.asInstanceOf[js.Dynamic].applyDynamic("whereImpl")(condShape.asInstanceOf[js.Any], condVals.asInstanceOf[js.Any])).asInstanceOf[Tensor2D]
 }

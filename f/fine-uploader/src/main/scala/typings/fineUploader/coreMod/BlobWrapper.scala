@@ -3,21 +3,19 @@ package typings.fineUploader.coreMod
 import typings.std.Blob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlobWrapper extends StObject {
   
   /**
     * the bytes of the `Blob` object being uploaded
     */
-  var blob: js.UndefOr[Blob] = js.native
+  var blob: js.UndefOr[Blob] = js.undefined
   
   /**
     * the name of the `Blob`
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object BlobWrapper {
   

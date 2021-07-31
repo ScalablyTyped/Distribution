@@ -11,7 +11,6 @@ import typings.react.mod.global.JSX.Element
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -38,7 +37,7 @@ trait ComponentDidCatch extends StObject {
     ]
   ] = js.native
   
-  var componentRef: RefObject[_] = js.native
+  var componentRef: RefObject[js.Any] = js.native
   
   var componentWillMount: js.UndefOr[js.Function0[Unit]] = js.native
   
@@ -55,9 +54,9 @@ trait ComponentDidCatch extends StObject {
   def forceUpdate(): Unit = js.native
   def forceUpdate(callback: js.Function0[Unit]): Unit = js.native
   
-  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Any, /* prevState */ js.Any, _]] = js.native
+  var getSnapshotBeforeUpdate: js.UndefOr[js.Function2[/* prevProps */ js.Any, /* prevState */ js.Any, js.Any]] = js.native
   
-  val props: js.Any with ReadonlychildrenReactNode = js.native
+  val props: js.Any & ReadonlychildrenReactNode = js.native
   
   var refs: StringDictionary[ReactInstance] = js.native
   

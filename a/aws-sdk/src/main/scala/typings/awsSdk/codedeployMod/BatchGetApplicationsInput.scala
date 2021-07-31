@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetApplicationsInput extends StObject {
   
   /**
     * A list of application names separated by spaces. The maximum number of application names you can specify is 100.
     */
-  var applicationNames: ApplicationsList = js.native
+  var applicationNames: ApplicationsList
 }
 object BatchGetApplicationsInput {
   

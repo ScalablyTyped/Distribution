@@ -31,7 +31,6 @@ import typings.semanticUiReact.semanticUiReactStrings.tiny
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modalModalMod {
@@ -66,7 +65,9 @@ object modalModalMod {
   }
   
   @js.native
-  trait ModalComponent extends ComponentClass[ModalProps, ComponentState] {
+  trait ModalComponent
+    extends StObject
+       with ComponentClass[ModalProps, ComponentState] {
     
     var Actions: ComponentClass[ModalActionsProps, ComponentState] = js.native
     
@@ -79,9 +80,9 @@ object modalModalMod {
     var Header: StatelessComponent[ModalHeaderProps] = js.native
   }
   
-  @js.native
   trait ModalProps
-    extends StrictModalProps
+    extends StObject
+       with StrictModalProps
        with /* key */ StringDictionary[js.Any]
   object ModalProps {
     
@@ -92,38 +93,39 @@ object modalModalMod {
     }
   }
   
-  @js.native
-  trait StrictModalProps extends StrictPortalProps {
+  trait StrictModalProps
+    extends StObject
+       with StrictPortalProps {
     
     /** Shorthand for Modal.Actions. Typically an array of button shorthand. */
-    var actions: js.UndefOr[SemanticShorthandItem[ModalActionsProps]] = js.native
+    var actions: js.UndefOr[SemanticShorthandItem[ModalActionsProps]] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** A Modal can reduce its complexity */
-    var basic: js.UndefOr[Boolean] = js.native
+    var basic: js.UndefOr[Boolean] = js.undefined
     
     /** A modal can be vertically centered in the viewport. */
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Icon. */
-    var closeIcon: js.UndefOr[js.Any] = js.native
+    var closeIcon: js.UndefOr[js.Any] = js.undefined
     
     /** Whether or not the Modal should close when the dimmer is clicked. */
-    var closeOnDimmerClick: js.UndefOr[Boolean] = js.native
+    var closeOnDimmerClick: js.UndefOr[Boolean] = js.undefined
     
     /** A Modal can be passed content via shorthand. */
-    var content: js.UndefOr[SemanticShorthandItem[ModalContentProps]] = js.native
+    var content: js.UndefOr[SemanticShorthandItem[ModalContentProps]] = js.undefined
     
     /** A modal can appear in a dimmer. */
-    var dimmer: js.UndefOr[`true` | blurring | inverted | SemanticShorthandItem[ModalDimmerProps]] = js.native
+    var dimmer: js.UndefOr[`true` | blurring | inverted | SemanticShorthandItem[ModalDimmerProps]] = js.undefined
     
     /** A Modal can be passed header via shorthand. */
-    var header: js.UndefOr[SemanticShorthandItem[ModalHeaderProps]] = js.native
+    var header: js.UndefOr[SemanticShorthandItem[ModalHeaderProps]] = js.undefined
     
     /**
       * Action onClick handler when using shorthand `actions`.
@@ -133,7 +135,7 @@ object modalModalMod {
       */
     var onActionClick: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when a close event happens.
@@ -144,7 +146,7 @@ object modalModalMod {
     @JSName("onClose")
     var onClose_StrictModalProps: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the portal is mounted on the DOM.
@@ -153,7 +155,7 @@ object modalModalMod {
       * @param {object} data - All props.
       */
     @JSName("onMount")
-    var onMount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.native
+    var onMount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.undefined
     
     /**
       * Called when an open event happens.
@@ -164,7 +166,7 @@ object modalModalMod {
     @JSName("onOpen")
     var onOpen_StrictModalProps: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ ModalProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Called when the portal is unmounted from the DOM.
@@ -173,13 +175,13 @@ object modalModalMod {
       * @param {object} data - All props.
       */
     @JSName("onUnmount")
-    var onUnmount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.native
+    var onUnmount_StrictModalProps: js.UndefOr[js.Function2[/* nothing */ Null, /* data */ ModalProps, Unit]] = js.undefined
     
     /** A modal can vary in size. */
-    var size: js.UndefOr[mini | tiny | small | large | fullscreen] = js.native
+    var size: js.UndefOr[mini | tiny | small | large | fullscreen] = js.undefined
     
     /** Custom styles. */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object StrictModalProps {
     

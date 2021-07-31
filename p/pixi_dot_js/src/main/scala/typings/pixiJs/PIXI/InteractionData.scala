@@ -6,7 +6,6 @@ import typings.std.Touch
 import typings.std.TouchEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -54,7 +53,7 @@ trait InteractionData extends StObject {
     *  to the DisplayObject
     */
   def getLocalPosition(displayObject: DisplayObject): Point = js.native
-  def getLocalPosition(displayObject: DisplayObject, point: js.UndefOr[scala.Nothing], globalPos: Point): Point = js.native
+  def getLocalPosition(displayObject: DisplayObject, point: Unit, globalPos: Point): Point = js.native
   def getLocalPosition(displayObject: DisplayObject, point: Point): Point = js.native
   def getLocalPosition(displayObject: DisplayObject, point: Point, globalPos: Point): Point = js.native
   

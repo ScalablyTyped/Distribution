@@ -3,24 +3,22 @@ package typings.ckeditorCkeditor5Utils.mod
 import typings.ckeditorCkeditor5Utils.ckeditorCkeditor5UtilsStrings.delete
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteChange extends StObject {
   
-  var howMany: Double = js.native
+  var howMany: Double
   
-  var index: Double = js.native
+  var index: Double
   
-  var `type`: delete = js.native
+  var `type`: delete
 }
 object DeleteChange {
   
   @scala.inline
-  def apply(howMany: Double, index: Double, `type`: delete): DeleteChange = {
+  def apply(howMany: Double, index: Double): DeleteChange = {
     val __obj = js.Dynamic.literal(howMany = howMany.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("delete")
     __obj.asInstanceOf[DeleteChange]
   }
   

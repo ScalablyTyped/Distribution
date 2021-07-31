@@ -6,19 +6,17 @@ import typings.braintreeWebDropIn.braintreeWebDropInStrings.black
 import typings.braintreeWebDropIn.braintreeWebDropInStrings.white
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait applePayCreateOptions extends StObject {
   
-  var applePaySessionVersion: js.UndefOr[Double] = js.native
+  var applePaySessionVersion: js.UndefOr[Double] = js.undefined
   
-  var buttonStyle: js.UndefOr[black | white | `white-outline`] = js.native
+  var buttonStyle: js.UndefOr[black | white | `white-outline`] = js.undefined
   
-  var displayName: String = js.native
+  var displayName: String
   
-  var paymentRequest: ApplePayPaymentRequest = js.native
+  var paymentRequest: ApplePayPaymentRequest
 }
 object applePayCreateOptions {
   

@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Update the properties of a Shape.
   */
-@js.native
 trait SchemaUpdateShapePropertiesRequest extends StObject {
   
   /**
@@ -20,17 +18,17 @@ trait SchemaUpdateShapePropertiesRequest extends StObject {
     * property to its default value, include its field name in the field mask
     * but leave the field itself unset.
     */
-  var fields: js.UndefOr[String] = js.native
+  var fields: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the shape the updates are applied to.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The shape properties to update.
     */
-  var shapeProperties: js.UndefOr[SchemaShapeProperties] = js.native
+  var shapeProperties: js.UndefOr[SchemaShapeProperties] = js.undefined
 }
 object SchemaUpdateShapePropertiesRequest {
   

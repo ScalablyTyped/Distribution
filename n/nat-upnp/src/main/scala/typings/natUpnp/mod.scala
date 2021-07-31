@@ -16,41 +16,52 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("nat-upnp", "createClient")
+  @JSImport("nat-upnp", JSImport.Namespace)
   @js.native
-  def createClient(): Client = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("createClient")().asInstanceOf[Client]
   
   object device {
+    
+    @JSImport("nat-upnp", "device")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Create a gateway device object with the specified url
       * @param url
       */
-    @JSImport("nat-upnp", "device.create")
-    @js.native
-    def create(url: String): Device_ = js.native
+    @scala.inline
+    def create(url: String): Device_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(url.asInstanceOf[js.Any]).asInstanceOf[Device_]
   }
   
   object ssdp {
     
+    @JSImport("nat-upnp", "ssdp")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Create a Simple Service Discovery Protocol client
       */
-    @JSImport("nat-upnp", "ssdp.create")
-    @js.native
-    def create(): Ssdp_ = js.native
+    @scala.inline
+    def create(): Ssdp_ = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Ssdp_]
   }
   
   object utils {
     
-    @JSImport("nat-upnp", "utils.getNamespace")
+    @JSImport("nat-upnp", "utils")
     @js.native
-    def getNamespace(data: _empty, uri: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getNamespace(data: _empty, uri: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getNamespace")(data.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   type CB[T] = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[T], Unit]
@@ -106,7 +117,6 @@ object mod {
   
   type DeletePortMappingOpts = StandardOpts
   
-  @js.native
   trait Device_ extends StObject {
     
     /**
@@ -114,7 +124,7 @@ object mod {
       * @param types List of service types to lookf or
       * @param callback
       */
-    def getService(types: js.Array[String], callback: CB[ControlURL]): Unit = js.native
+    def getService(types: js.Array[String], callback: CB[ControlURL]): Unit
     
     /**
       * Parse out available services
@@ -122,7 +132,7 @@ object mod {
       * @param info
       * @returns the available devices and services in array form
       */
-    def parseDescription(info: `0`): Devices = js.native
+    def parseDescription(info: `0`): Devices
     
     /**
       * Perform a SSDP/UPNP request
@@ -130,7 +140,7 @@ object mod {
       * @param args arguments of said action
       * @param callback Callback to be run when completed, or on error
       */
-    def run(action: String, args: js.Array[String], callback: CB[RawResponse]): Unit = js.native
+    def run(action: String, args: js.Array[String], callback: CB[RawResponse]): Unit
   }
   object Device_ {
     
@@ -158,12 +168,11 @@ object mod {
     }
   }
   
-  @js.native
   trait GetMappingOpts extends StObject {
     
-    var description: js.UndefOr[RegExp | String] = js.native
+    var description: js.UndefOr[RegExp | String] = js.undefined
     
-    var local: js.UndefOr[Boolean] = js.native
+    var local: js.UndefOr[Boolean] = js.undefined
   }
   object GetMappingOpts {
     
@@ -190,22 +199,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Mapping extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var enabled: Boolean = js.native
+    var enabled: Boolean
     
-    var local: Boolean = js.native
+    var local: Boolean
     
-    var `private`: Port = js.native
+    var `private`: Port
     
-    var protocol: String = js.native
+    var protocol: String
     
-    var public: Port = js.native
+    var public: Port
     
-    var ttl: Double = js.native
+    var ttl: Double
   }
   object Mapping {
     
@@ -250,12 +258,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait NewPortMappingOpts extends StandardOpts {
+  trait NewPortMappingOpts
+    extends StObject
+       with StandardOpts {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var ttl: js.UndefOr[Double] = js.native
+    var ttl: js.UndefOr[Double] = js.undefined
   }
   object NewPortMappingOpts {
     
@@ -282,36 +291,35 @@ object mod {
     }
   }
   
-  @js.native
   trait RawDevice extends StObject {
     
-    var UDN: String = js.native
+    var UDN: String
     
-    var UPC: String = js.native
+    var UPC: String
     
-    var deviceList: js.UndefOr[Device] = js.native
+    var deviceList: js.UndefOr[Device] = js.undefined
     
-    var deviceType: String = js.native
+    var deviceType: String
     
-    var friendlyName: String = js.native
+    var friendlyName: String
     
-    var manufacturer: String = js.native
+    var manufacturer: String
     
-    var manufacturerURL: String = js.native
+    var manufacturerURL: String
     
-    var modelDescription: String = js.native
+    var modelDescription: String
     
-    var modelName: String = js.native
+    var modelName: String
     
-    var modelNumber: String = js.native
+    var modelNumber: String
     
-    var modelURL: String = js.native
+    var modelURL: String
     
-    var presentationURL: String = js.native
+    var presentationURL: String
     
-    var serialNumber: String = js.native
+    var serialNumber: String
     
-    var serviceList: js.UndefOr[Service] = js.native
+    var serviceList: js.UndefOr[Service] = js.undefined
   }
   object RawDevice {
     
@@ -389,18 +397,17 @@ object mod {
   
   type RawResponse = Partial[Record[String, Dictkey]]
   
-  @js.native
   trait RawService extends StObject {
     
-    var SCPDURL: js.UndefOr[String] = js.native
+    var SCPDURL: js.UndefOr[String] = js.undefined
     
-    var controlURL: js.UndefOr[String] = js.native
+    var controlURL: js.UndefOr[String] = js.undefined
     
-    var eventSubURL: js.UndefOr[String] = js.native
+    var eventSubURL: js.UndefOr[String] = js.undefined
     
-    var serviceId: String = js.native
+    var serviceId: String
     
-    var serviceType: String = js.native
+    var serviceType: String
   }
   object RawService {
     
@@ -457,14 +464,13 @@ object mod {
     def search(device: String, promise: EventEmitter): EventEmitter = js.native
   }
   
-  @js.native
   trait StandardOpts extends StObject {
     
-    var `private`: js.UndefOr[Double | Null | Host] = js.native
+    var `private`: js.UndefOr[Double | Null | Host] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var public: js.UndefOr[Double | Null | Host] = js.native
+    var public: js.UndefOr[Double | Null | Host] = js.undefined
   }
   object StandardOpts {
     

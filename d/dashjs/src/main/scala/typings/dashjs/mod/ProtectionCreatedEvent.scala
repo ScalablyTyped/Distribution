@@ -3,25 +3,25 @@ package typings.dashjs.mod
 import typings.dashjs.dashjsStrings.public_protectioncreated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ProtectionCreatedEvent extends Event {
+trait ProtectionCreatedEvent
+  extends StObject
+     with Event {
   
-  var controller: js.Object = js.native
+  var controller: js.Object
   
-  var manifest: js.Object = js.native
+  var manifest: js.Object
   
   @JSName("type")
-  var type_ProtectionCreatedEvent: public_protectioncreated = js.native
+  var type_ProtectionCreatedEvent: public_protectioncreated
 }
 object ProtectionCreatedEvent {
   
   @scala.inline
-  def apply(controller: js.Object, manifest: js.Object, `type`: public_protectioncreated): ProtectionCreatedEvent = {
+  def apply(controller: js.Object, manifest: js.Object): ProtectionCreatedEvent = {
     val __obj = js.Dynamic.literal(controller = controller.asInstanceOf[js.Any], manifest = manifest.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("public_protectioncreated")
     __obj.asInstanceOf[ProtectionCreatedEvent]
   }
   

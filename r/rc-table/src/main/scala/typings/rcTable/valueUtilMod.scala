@@ -5,33 +5,31 @@ import typings.rcTable.interfaceMod.Key
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object valueUtilMod {
   
-  @JSImport("rc-table/lib/utils/valueUtil", "getColumnsKey")
+  @JSImport("rc-table/lib/utils/valueUtil", JSImport.Namespace)
   @js.native
-  def getColumnsKey(columns: js.Array[GetColumnKeyColumn]): js.Array[String | Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rc-table/lib/utils/valueUtil", "getPathValue")
-  @js.native
-  def getPathValue[ValueType, ObjectType /* <: js.Object */](record: ObjectType, path: DataIndex): ValueType = js.native
+  @scala.inline
+  def getColumnsKey(columns: js.Array[GetColumnKeyColumn]): js.Array[String | Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColumnsKey")(columns.asInstanceOf[js.Any]).asInstanceOf[js.Array[String | Double]]
   
-  @JSImport("rc-table/lib/utils/valueUtil", "mergeObject")
-  @js.native
-  def mergeObject[ReturnObject /* <: js.Object */](objects: Partial[ReturnObject]*): ReturnObject = js.native
+  @scala.inline
+  def getPathValue[ValueType, ObjectType /* <: js.Object */](record: ObjectType, path: DataIndex): ValueType = (^.asInstanceOf[js.Dynamic].applyDynamic("getPathValue")(record.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[ValueType]
   
-  @JSImport("rc-table/lib/utils/valueUtil", "validateValue")
-  @js.native
-  def validateValue[T](`val`: T): Boolean = js.native
+  @scala.inline
+  def mergeObject[ReturnObject /* <: js.Object */](objects: Partial[ReturnObject]*): ReturnObject = ^.asInstanceOf[js.Dynamic].applyDynamic("mergeObject")(objects.asInstanceOf[js.Any]).asInstanceOf[ReturnObject]
   
-  @js.native
+  @scala.inline
+  def validateValue[T](`val`: T): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   trait GetColumnKeyColumn extends StObject {
     
-    var dataIndex: js.UndefOr[DataIndex] = js.native
+    var dataIndex: js.UndefOr[DataIndex] = js.undefined
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
   }
   object GetColumnKeyColumn {
     

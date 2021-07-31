@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -17,7 +16,9 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("firebase-client", JSImport.Namespace)
   @js.native
-  class Class protected () extends FirebaseClient {
+  class Class protected ()
+    extends StObject
+       with FirebaseClient {
     /**
       * Creates a new FirebaseClient given the provided configuration
       */
@@ -25,7 +26,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait FirebaseClient extends /**
+  trait FirebaseClient
+    extends StObject
+       with /**
     * Creates a new FirebaseClient given the provided configuration
     */
   Instantiable1[/* config */ FirebaseConfig, FirebaseClient] {
@@ -67,18 +70,17 @@ object mod extends Shortcut {
     def update[T](path: String, value: T): Promise[T] = js.native
   }
   
-  @js.native
   trait FirebaseConfig extends StObject {
     
     /**
       * Token for authorisation
       */
-    var auth: String = js.native
+    var auth: String
     
     /**
       * path for the Firebase instance
       */
-    var url: String = js.native
+    var url: String
   }
   object FirebaseConfig {
     
@@ -99,13 +101,12 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PushResponse extends StObject {
     
     /**
       * Name ref (key) of the child resource
       */
-    var name: String = js.native
+    var name: String
   }
   object PushResponse {
     

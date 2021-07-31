@@ -2,24 +2,24 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientHtmlEditor.BeforePaste event.
   */
-@js.native
-trait ASPxClientHtmlEditorBeforePasteEventArgs extends ASPxClientEventArgs {
+trait ASPxClientHtmlEditorBeforePasteEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
   
   /**
     * Gets or sets the HTML markup that is about to be pasted to the ASPxHtmlEditor's content.
     */
-  var html: String = js.native
+  var html: String
 }
 object ASPxClientHtmlEditorBeforePasteEventArgs {
   

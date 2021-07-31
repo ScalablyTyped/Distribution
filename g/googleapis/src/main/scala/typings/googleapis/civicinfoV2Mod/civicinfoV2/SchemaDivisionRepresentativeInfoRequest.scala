@@ -2,16 +2,14 @@ package typings.googleapis.civicinfoV2Mod.civicinfoV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to look up representative information for a single division.
   */
-@js.native
 trait SchemaDivisionRepresentativeInfoRequest extends StObject {
   
-  var contextParams: js.UndefOr[SchemaContextParams] = js.native
+  var contextParams: js.UndefOr[SchemaContextParams] = js.undefined
 }
 object SchemaDivisionRepresentativeInfoRequest {
   

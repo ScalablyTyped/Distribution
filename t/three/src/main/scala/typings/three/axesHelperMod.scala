@@ -6,7 +6,6 @@ import typings.three.lineSegmentsMod.LineSegments
 import typings.three.materialMod.Material
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object axesHelperMod {

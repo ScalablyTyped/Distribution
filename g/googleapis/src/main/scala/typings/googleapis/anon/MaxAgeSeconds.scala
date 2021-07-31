@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxAgeSeconds extends StObject {
   
-  var maxAgeSeconds: js.UndefOr[Double] = js.native
+  var maxAgeSeconds: js.UndefOr[Double] = js.undefined
   
-  var method: js.UndefOr[js.Array[String]] = js.native
+  var method: js.UndefOr[js.Array[String]] = js.undefined
   
-  var origin: js.UndefOr[js.Array[String]] = js.native
+  var origin: js.UndefOr[js.Array[String]] = js.undefined
   
-  var responseHeader: js.UndefOr[js.Array[String]] = js.native
+  var responseHeader: js.UndefOr[js.Array[String]] = js.undefined
 }
 object MaxAgeSeconds {
   

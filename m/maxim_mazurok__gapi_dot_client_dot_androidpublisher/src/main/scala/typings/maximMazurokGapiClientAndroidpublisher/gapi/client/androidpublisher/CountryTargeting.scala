@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CountryTargeting extends StObject {
   
   /** Countries to target, specified as two letter [CLDR codes](https://unicode.org/cldr/charts/latest/supplemental/territory_containment_un_m_49.html). */
-  var countries: js.UndefOr[js.Array[String]] = js.native
+  var countries: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Include "rest of world" as well as explicitly targeted countries. */
-  var includeRestOfWorld: js.UndefOr[Boolean] = js.native
+  var includeRestOfWorld: js.UndefOr[Boolean] = js.undefined
 }
 object CountryTargeting {
   

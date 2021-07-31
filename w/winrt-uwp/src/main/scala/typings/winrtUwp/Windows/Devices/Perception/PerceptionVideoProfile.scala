@@ -4,34 +4,32 @@ import typings.winrtUwp.Windows.Graphics.Imaging.BitmapAlphaMode
 import typings.winrtUwp.Windows.Graphics.Imaging.BitmapPixelFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a Windows.Devices.Perception video profile. */
-@js.native
 trait PerceptionVideoProfile extends StObject {
   
   /** Gets the bitmap alpha mode. */
-  var bitmapAlphaMode: BitmapAlphaMode = js.native
+  var bitmapAlphaMode: BitmapAlphaMode
   
   /** Gets the bitmap pixel format. */
-  var bitmapPixelFormat: BitmapPixelFormat = js.native
+  var bitmapPixelFormat: BitmapPixelFormat
   
   /** Gets the time duration of each frame. */
-  var frameDuration: Double = js.native
+  var frameDuration: Double
   
   /** Gets the frame height, in pixels. */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * A comparison function used to determine if two IPerceptionVideoProfile objects are equivalent.
     * @param other The IPerceptionVideoProfile object to compare to this one.
     * @return True if the two video profiles are equivalent, otherwise false.
     */
-  def isEqual(other: PerceptionVideoProfile): Boolean = js.native
+  def isEqual(other: PerceptionVideoProfile): Boolean
   
   /** Gets the frame width, in pixels. */
-  var width: Double = js.native
+  var width: Double
 }
 object PerceptionVideoProfile {
   

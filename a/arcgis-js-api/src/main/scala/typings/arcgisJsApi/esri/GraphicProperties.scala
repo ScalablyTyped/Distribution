@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GraphicProperties extends StObject {
   
   /**
@@ -13,42 +11,42 @@ trait GraphicProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#attributes)
     */
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The geometry that defines the graphic's location.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#geometry)
     */
-  var geometry: js.UndefOr[GeometryProperties] = js.native
+  var geometry: js.UndefOr[GeometryProperties] = js.undefined
   
   /**
     * If applicable, references the layer in which the graphic is stored.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#layer)
     */
-  var layer: js.UndefOr[LayerProperties] = js.native
+  var layer: js.UndefOr[LayerProperties] = js.undefined
   
   /**
     * The template for displaying content in a [Popup](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html) when the graphic is selected.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#popupTemplate)
     */
-  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.native
+  var popupTemplate: js.UndefOr[PopupTemplateProperties] = js.undefined
   
   /**
     * The [Symbol](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-Symbol.html) for the graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#symbol)
     */
-  var symbol: js.UndefOr[SymbolProperties] = js.native
+  var symbol: js.UndefOr[SymbolProperties] = js.undefined
   
   /**
     * Indicates the visibility of the graphic.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html#visible)
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object GraphicProperties {
   

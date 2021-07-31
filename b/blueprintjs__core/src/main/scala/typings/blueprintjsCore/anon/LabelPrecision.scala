@@ -2,13 +2,11 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelPrecision extends StObject {
   
-  var labelPrecision: Double = js.native
+  var labelPrecision: Double
 }
 object LabelPrecision {
   

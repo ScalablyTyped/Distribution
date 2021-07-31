@@ -2,52 +2,50 @@ package typings.googleapis.containerV1Mod.containerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SetNodePoolAutoscalingRequest sets the autoscaler settings of a node pool.
   */
-@js.native
 trait SchemaSetNodePoolAutoscalingRequest extends StObject {
   
   /**
     * Autoscaling configuration for the node pool.
     */
-  var autoscaling: js.UndefOr[SchemaNodePoolAutoscaling] = js.native
+  var autoscaling: js.UndefOr[SchemaNodePoolAutoscaling] = js.undefined
   
   /**
     * Deprecated. The name of the cluster to upgrade. This field has been
     * deprecated and replaced by the name field.
     */
-  var clusterId: js.UndefOr[String] = js.native
+  var clusterId: js.UndefOr[String] = js.undefined
   
   /**
     * The name (project, location, cluster, node pool) of the node pool to set
     * autoscaler settings. Specified in the format
     * &#39;projects/x/locations/x/clusters/x/nodePools/ *&#39;.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the node pool to upgrade. This field has been
     * deprecated and replaced by the name field.
     */
-  var nodePoolId: js.UndefOr[String] = js.native
+  var nodePoolId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The Google Developers Console [project ID or project
     * number](https://support.google.com/cloud/answer/6158840). This field has
     * been deprecated and replaced by the name field.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. The name of the Google Compute Engine
     * [zone](/compute/docs/zones#available) in which the cluster resides. This
     * field has been deprecated and replaced by the name field.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaSetNodePoolAutoscalingRequest {
   

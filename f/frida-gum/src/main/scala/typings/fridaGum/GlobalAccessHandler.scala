@@ -2,16 +2,14 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalAccessHandler extends StObject {
   
   /**
     * Queries which additional globals exist.
     */
-  def enumerate(): js.Array[String] = js.native
+  def enumerate(): js.Array[String]
   
   /**
     * Called whenever an attempt to access a non-existent global variable is
@@ -19,7 +17,7 @@ trait GlobalAccessHandler extends StObject {
     *
     * @param property Name of non-existent global that is being accessed.
     */
-  def get(property: String): js.Any = js.native
+  def get(property: String): js.Any
 }
 object GlobalAccessHandler {
   

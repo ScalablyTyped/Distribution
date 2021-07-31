@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompatibleImage extends StObject {
   
   /**
     * The unique identifier for an individual Snow device AMI.
     */
-  var AmiId: js.UndefOr[String] = js.native
+  var AmiId: js.UndefOr[String] = js.undefined
   
   /**
     * The optional name of a compatible image.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
 }
 object CompatibleImage {
   

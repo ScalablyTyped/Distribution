@@ -4,25 +4,23 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBackgroundTransferOperation extends StObject {
   
-  var costPolicy: BackgroundTransferCostPolicy = js.native
+  var costPolicy: BackgroundTransferCostPolicy
   
-  def getResponseInformation(): ResponseInformation = js.native
+  def getResponseInformation(): ResponseInformation
   
-  def getResultStreamAt(position: Double): IInputStream = js.native
+  def getResultStreamAt(position: Double): IInputStream
   
-  var group: String = js.native
+  var group: String
   
-  var guid: String = js.native
+  var guid: String
   
-  var method: String = js.native
+  var method: String
   
-  var requestedUri: Uri = js.native
+  var requestedUri: Uri
 }
 object IBackgroundTransferOperation {
   

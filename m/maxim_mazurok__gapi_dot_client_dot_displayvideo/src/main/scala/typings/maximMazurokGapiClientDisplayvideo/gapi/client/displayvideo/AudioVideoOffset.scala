@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioVideoOffset extends StObject {
   
   /** The offset in percentage of the audio or video duration. */
-  var percentage: js.UndefOr[String] = js.native
+  var percentage: js.UndefOr[String] = js.undefined
   
   /** The offset in seconds from the start of the audio or video. */
-  var seconds: js.UndefOr[String] = js.native
+  var seconds: js.UndefOr[String] = js.undefined
 }
 object AudioVideoOffset {
   

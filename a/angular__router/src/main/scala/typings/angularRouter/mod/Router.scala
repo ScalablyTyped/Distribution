@@ -17,7 +17,6 @@ import typings.rxjs.mod.Observable_
 import typings.std.URIError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "Router")
@@ -37,7 +36,7 @@ class Router protected () extends StObject {
     * Creates the router service.
     */
   def this(
-    rootComponentType: Type[_],
+    rootComponentType: Type[js.Any],
     urlSerializer: UrlSerializer,
     rootContexts: ChildrenOutletContexts,
     location: Location,
@@ -100,8 +99,8 @@ class Router protected () extends StObject {
     * router.createUrlTree(['../../team/44/user/22'], {relativeTo: route});
     * ```
     */
-  def createUrlTree(commands: js.Array[_]): UrlTree = js.native
-  def createUrlTree(commands: js.Array[_], navigationExtras: UrlCreationOptions): UrlTree = js.native
+  def createUrlTree(commands: js.Array[js.Any]): UrlTree = js.native
+  def createUrlTree(commands: js.Array[js.Any], navigationExtras: UrlCreationOptions): UrlTree = js.native
   
   var currentNavigation: js.Any = js.native
   
@@ -196,8 +195,8 @@ class Router protected () extends StObject {
     * @see [Routing and Navigation guide](guide/router)
     *
     */
-  def navigate(commands: js.Array[_]): js.Promise[Boolean] = js.native
-  def navigate(commands: js.Array[_], extras: NavigationExtras): js.Promise[Boolean] = js.native
+  def navigate(commands: js.Array[js.Any]): js.Promise[Boolean] = js.native
+  def navigate(commands: js.Array[js.Any], extras: NavigationExtras): js.Promise[Boolean] = js.native
   
   /**
     * Navigates to a view using an absolute route path.

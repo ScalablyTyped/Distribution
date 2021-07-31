@@ -5,7 +5,6 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.RmDirOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

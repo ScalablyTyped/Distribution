@@ -2,39 +2,37 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectTypeAdmin extends StObject {
   
-  def Clone(): IObjectTypeAdmin = js.native
+  def Clone(): IObjectTypeAdmin
   
-  var ColumnMappings: IObjectTypeColumnMappings = js.native
+  var ColumnMappings: IObjectTypeColumnMappings
   
-  var ConnectionString: String = js.native
+  var ConnectionString: String
   
-  var DefaultForAutomaticPermissions: IAutomaticPermissions = js.native
+  var DefaultForAutomaticPermissions: IAutomaticPermissions
   
-  var DeleteStatement: String = js.native
+  var DeleteStatement: String
   
-  var InsertIntoStatement: String = js.native
+  var InsertIntoStatement: String
   
-  var NamedValueNamespaces: INamedValueNamespaces = js.native
+  var NamedValueNamespaces: INamedValueNamespaces
   
-  var ObjectType: IObjectType = js.native
+  var ObjectType: IObjectType
   
-  var SelectExtIDStatement: String = js.native
+  var SelectExtIDStatement: String
   
-  var SelectStatement: String = js.native
+  var SelectStatement: String
   
-  var SelectStatementOneRecord: String = js.native
+  var SelectStatementOneRecord: String
   
-  var SemanticAliases: ISemanticAliases = js.native
+  var SemanticAliases: ISemanticAliases
   
-  var Translatable: Boolean = js.native
+  var Translatable: Boolean
   
-  var UpdateStatement: String = js.native
+  var UpdateStatement: String
 }
 object IObjectTypeAdmin {
   

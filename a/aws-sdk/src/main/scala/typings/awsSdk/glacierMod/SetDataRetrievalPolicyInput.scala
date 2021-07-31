@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDataRetrievalPolicyInput extends StObject {
   
   /**
     * The data retrieval policy in JSON format.
     */
-  var Policy: js.UndefOr[DataRetrievalPolicy] = js.native
+  var Policy: js.UndefOr[DataRetrievalPolicy] = js.undefined
   
   /**
     * The AccountId value is the AWS account ID. This value must match the AWS account ID associated with the credentials used to sign the request. You can either specify an AWS account ID or optionally a single '-' (hyphen), in which case Amazon Glacier uses the AWS account ID associated with the credentials used to sign the request. If you specify your account ID, do not include any hyphens ('-') in the ID.
     */
-  var accountId: String = js.native
+  var accountId: String
 }
 object SetDataRetrievalPolicyInput {
   

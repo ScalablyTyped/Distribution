@@ -6,31 +6,32 @@ import typings.diagnosticChannelPublishers.anon.Port
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tediousPubMod {
   
-  @JSImport("diagnostic-channel-publishers/dist/src/tedious.pub", "enable")
+  @JSImport("diagnostic-channel-publishers/dist/src/tedious.pub", JSImport.Namespace)
   @js.native
-  def enable(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def enable(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enable")().asInstanceOf[Unit]
   
   @JSImport("diagnostic-channel-publishers/dist/src/tedious.pub", "tedious")
   @js.native
   val tedious: IModulePatcher = js.native
   
-  @js.native
   trait ITediousData extends StObject {
     
-    var database: Port = js.native
+    var database: Port
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var query: Plan = js.native
+    var query: Plan
     
-    var result: js.UndefOr[ITediousResult] = js.native
+    var result: js.UndefOr[ITediousResult] = js.undefined
   }
   object ITediousData {
     
@@ -66,12 +67,11 @@ object tediousPubMod {
     }
   }
   
-  @js.native
   trait ITediousResult extends StObject {
     
-    var rowCount: Double = js.native
+    var rowCount: Double
     
-    var rows: js.Any = js.native
+    var rows: js.Any
   }
   object ITediousResult {
     

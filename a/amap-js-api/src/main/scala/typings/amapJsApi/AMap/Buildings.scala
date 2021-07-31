@@ -3,11 +3,12 @@ package typings.amapJsApi.AMap
 import typings.amapJsApi.AMap.Buildings.Style
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Buildings extends Layer {
+trait Buildings
+  extends StObject
+     with Layer {
   
   /**
     * 按区域设置楼块的颜色
@@ -17,18 +18,17 @@ trait Buildings extends Layer {
 }
 object Buildings {
   
-  @js.native
   trait AreaStyle extends StObject {
     
-    var color1: String = js.native
+    var color1: String
     
-    var color2: js.UndefOr[String] = js.native
+    var color2: js.UndefOr[String] = js.undefined
     
-    var path: js.Array[LocationValue] = js.native
+    var path: js.Array[LocationValue]
     
-    var rejectTexture: js.UndefOr[Boolean] = js.native
+    var rejectTexture: js.UndefOr[Boolean] = js.undefined
     
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object AreaStyle {
     
@@ -70,39 +70,39 @@ object Buildings {
     }
   }
   
-  @js.native
   trait Options
-    extends typings.amapJsApi.AMap.Layer.Options {
+    extends StObject
+       with typings.amapJsApi.AMap.Layer.Options {
     
     /**
       * 高度比例系数，可控制3D视图下的楼块高度
       */
-    var heightFactor: js.UndefOr[Double] = js.native
+    var heightFactor: js.UndefOr[Double] = js.undefined
     
     // inner
-    var merge: js.UndefOr[Boolean] = js.native
+    var merge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 不透明度
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var sort: js.UndefOr[Boolean] = js.native
+    var sort: js.UndefOr[Boolean] = js.undefined
     
     /**
       *     是否可见
       */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 层级
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * 可见级别范围
       */
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     
@@ -159,12 +159,11 @@ object Buildings {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var areas: js.Array[AreaStyle] = js.native
+    var areas: js.Array[AreaStyle]
     
-    var hideWithoutStyle: js.UndefOr[Boolean] = js.native
+    var hideWithoutStyle: js.UndefOr[Boolean] = js.undefined
   }
   object Style {
     

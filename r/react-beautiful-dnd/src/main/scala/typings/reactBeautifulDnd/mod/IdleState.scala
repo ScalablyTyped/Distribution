@@ -3,23 +3,23 @@ package typings.reactBeautifulDnd.mod
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.IDLE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IdleState extends State {
+trait IdleState
+  extends StObject
+     with State {
   
-  var completed: js.UndefOr[CompletedDrag] = js.native
+  var completed: js.UndefOr[CompletedDrag] = js.undefined
   
-  var phase: IDLE = js.native
+  var phase: IDLE
   
-  var shouldFlush: Boolean = js.native
+  var shouldFlush: Boolean
 }
 object IdleState {
   
   @scala.inline
-  def apply(phase: IDLE, shouldFlush: Boolean): IdleState = {
-    val __obj = js.Dynamic.literal(phase = phase.asInstanceOf[js.Any], shouldFlush = shouldFlush.asInstanceOf[js.Any])
+  def apply(shouldFlush: Boolean): IdleState = {
+    val __obj = js.Dynamic.literal(phase = "IDLE", shouldFlush = shouldFlush.asInstanceOf[js.Any])
     __obj.asInstanceOf[IdleState]
   }
   

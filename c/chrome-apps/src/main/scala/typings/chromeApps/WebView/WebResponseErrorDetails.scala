@@ -5,14 +5,14 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebResponseErrorDetails extends WebResponseCacheDetails {
+trait WebResponseErrorDetails
+  extends StObject
+     with WebResponseCacheDetails {
   
   /** The error description. This string is not guaranteed to remain backwards compatible between releases. You must not parse and act based upon its content. */
-  var error: String = js.native
+  var error: String
 }
 object WebResponseErrorDetails {
   

@@ -3,26 +3,24 @@ package typings.protobufjs.mod.common
 import typings.protobufjs.protobufjsNumbers.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a google.protobuf.Value message. */
-@js.native
 trait IValue extends StObject {
   
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var listValue: js.UndefOr[IListValue] = js.native
+  var listValue: js.UndefOr[IListValue] = js.undefined
   
-  var nullValue: js.UndefOr[`0`] = js.native
+  var nullValue: js.UndefOr[`0`] = js.undefined
   
-  var numberValue: js.UndefOr[Double] = js.native
+  var numberValue: js.UndefOr[Double] = js.undefined
   
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
-  var structValue: js.UndefOr[IStruct] = js.native
+  var structValue: js.UndefOr[IStruct] = js.undefined
 }
 object IValue {
   

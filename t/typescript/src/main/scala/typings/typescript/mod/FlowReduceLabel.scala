@@ -2,19 +2,18 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowReduceLabel
-  extends FlowNodeBase
+  extends StObject
+     with FlowNodeBase
      with FlowNode {
   
-  var antecedent: FlowNode = js.native
+  var antecedent: FlowNode
   
-  var antecedents: js.Array[FlowNode] = js.native
+  var antecedents: js.Array[FlowNode]
   
-  var target: FlowLabel = js.native
+  var target: FlowLabel
 }
 object FlowReduceLabel {
   

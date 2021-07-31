@@ -14,21 +14,24 @@ import typings.stylableCore.stylableProcessorMod.StylableMeta
 import typings.stylableCore.stylableTransformerMod.StylableTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableResolverMod {
+  
+  @JSImport("@stylable/core/cjs/stylable-resolver", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@stylable/core/cjs/stylable-resolver", "StylableResolver")
   @js.native
   class StylableResolver protected () extends StObject {
     def this(
       fileProcessor: FileProcessor[StylableMeta],
-      requireModule: js.Function1[/* modulePath */ String, _]
+      requireModule: js.Function1[/* modulePath */ String, js.Any]
     ) = this()
     
     def deepResolve(): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
-    def deepResolve(maybeImport: js.UndefOr[scala.Nothing], path: js.Array[StylableSymbol]): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
+    def deepResolve(maybeImport: Unit, path: js.Array[StylableSymbol]): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
     def deepResolve(maybeImport: StylableSymbol): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
     def deepResolve(maybeImport: StylableSymbol, path: js.Array[StylableSymbol]): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
     
@@ -44,48 +47,12 @@ object stylableResolverMod {
     def resolveElement(meta: StylableMeta, symbol: StylableSymbol): (CSSResolve[ClassSymbol | ElementSymbol]) | Null = js.native
     
     def resolveExtends(meta: StylableMeta, className: String): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
-    def resolveExtends(
-      meta: StylableMeta,
-      className: String,
-      isElement: js.UndefOr[scala.Nothing],
-      transformer: js.UndefOr[scala.Nothing],
-      reportError: js.Function6[
-          /* res */ CSSResolve[StylableSymbol] | JSResolve | Null, 
-          /* extend */ ImportSymbol | ClassSymbol | ElementSymbol, 
-          /* extendPath */ js.Array[CSSResolve[ClassSymbol | ElementSymbol]], 
-          /* meta */ StylableMeta, 
-          /* className */ String, 
-          /* isElement */ Boolean, 
-          Unit
-        ]
-    ): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
-    def resolveExtends(
-      meta: StylableMeta,
-      className: String,
-      isElement: js.UndefOr[scala.Nothing],
-      transformer: StylableTransformer
-    ): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
-    def resolveExtends(
-      meta: StylableMeta,
-      className: String,
-      isElement: js.UndefOr[scala.Nothing],
-      transformer: StylableTransformer,
-      reportError: js.Function6[
-          /* res */ CSSResolve[StylableSymbol] | JSResolve | Null, 
-          /* extend */ ImportSymbol | ClassSymbol | ElementSymbol, 
-          /* extendPath */ js.Array[CSSResolve[ClassSymbol | ElementSymbol]], 
-          /* meta */ StylableMeta, 
-          /* className */ String, 
-          /* isElement */ Boolean, 
-          Unit
-        ]
-    ): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
     def resolveExtends(meta: StylableMeta, className: String, isElement: Boolean): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
     def resolveExtends(
       meta: StylableMeta,
       className: String,
       isElement: Boolean,
-      transformer: js.UndefOr[scala.Nothing],
+      transformer: Unit,
       reportError: js.Function6[
           /* res */ CSSResolve[StylableSymbol] | JSResolve | Null, 
           /* extend */ ImportSymbol | ClassSymbol | ElementSymbol, 
@@ -112,6 +79,37 @@ object stylableResolverMod {
           Unit
         ]
     ): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
+    def resolveExtends(
+      meta: StylableMeta,
+      className: String,
+      isElement: Unit,
+      transformer: Unit,
+      reportError: js.Function6[
+          /* res */ CSSResolve[StylableSymbol] | JSResolve | Null, 
+          /* extend */ ImportSymbol | ClassSymbol | ElementSymbol, 
+          /* extendPath */ js.Array[CSSResolve[ClassSymbol | ElementSymbol]], 
+          /* meta */ StylableMeta, 
+          /* className */ String, 
+          /* isElement */ Boolean, 
+          Unit
+        ]
+    ): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
+    def resolveExtends(meta: StylableMeta, className: String, isElement: Unit, transformer: StylableTransformer): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
+    def resolveExtends(
+      meta: StylableMeta,
+      className: String,
+      isElement: Unit,
+      transformer: StylableTransformer,
+      reportError: js.Function6[
+          /* res */ CSSResolve[StylableSymbol] | JSResolve | Null, 
+          /* extend */ ImportSymbol | ClassSymbol | ElementSymbol, 
+          /* extendPath */ js.Array[CSSResolve[ClassSymbol | ElementSymbol]], 
+          /* meta */ StylableMeta, 
+          /* className */ String, 
+          /* isElement */ Boolean, 
+          Unit
+        ]
+    ): js.Array[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
     
     def resolveImport(importSymbol: ImportSymbol): CSSResolve[StylableSymbol] | JSResolve | Null = js.native
     
@@ -124,51 +122,51 @@ object stylableResolverMod {
     def resolvePath(path: String): String = js.native
     def resolvePath(path: String, context: String): String = js.native
     
-    def resolveSymbolOrigin(symbol: js.UndefOr[scala.Nothing], meta: StylableMeta): CSSResolve[StylableSymbol] | Null = js.native
-    def resolveSymbolOrigin(symbol: js.UndefOr[scala.Nothing], meta: StylableMeta, path: js.Array[StylableSymbol]): CSSResolve[StylableSymbol] | Null = js.native
+    def resolveSymbolOrigin(symbol: Unit, meta: StylableMeta): CSSResolve[StylableSymbol] | Null = js.native
+    def resolveSymbolOrigin(symbol: Unit, meta: StylableMeta, path: js.Array[StylableSymbol]): CSSResolve[StylableSymbol] | Null = js.native
     def resolveSymbolOrigin(symbol: StylableSymbol, meta: StylableMeta): CSSResolve[StylableSymbol] | Null = js.native
     def resolveSymbolOrigin(symbol: StylableSymbol, meta: StylableMeta, path: js.Array[StylableSymbol]): CSSResolve[StylableSymbol] | Null = js.native
     
     def validateImports(meta: StylableMeta, diagnostics: Diagnostics): Unit = js.native
   }
   
-  @JSImport("@stylable/core/cjs/stylable-resolver", "isInPath")
-  @js.native
+  @scala.inline
   def isInPath(
     extendPath: js.Array[CSSResolve[ClassSymbol | ElementSymbol]],
-    hasSymbolMeta: CSSResolve[ClassSymbol | ElementSymbol]
-  ): js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]] = js.native
+    hasHasName1HasSource1: CSSResolve[ClassSymbol | ElementSymbol]
+  ): js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]] = (^.asInstanceOf[js.Dynamic].applyDynamic("isInPath")(extendPath.asInstanceOf[js.Any], hasHasName1HasSource1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[CSSResolve[ClassSymbol | ElementSymbol]]]
   
   object resolverWarnings {
     
-    @JSImport("@stylable/core/cjs/stylable-resolver", "resolverWarnings.UNKNOWN_IMPORTED_FILE")
+    @JSImport("@stylable/core/cjs/stylable-resolver", "resolverWarnings")
     @js.native
-    def UNKNOWN_IMPORTED_FILE(path: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@stylable/core/cjs/stylable-resolver", "resolverWarnings.UNKNOWN_IMPORTED_SYMBOL")
-    @js.native
-    def UNKNOWN_IMPORTED_SYMBOL(name: String, path: String): String = js.native
+    @scala.inline
+    def UNKNOWN_IMPORTED_FILE(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_FILE")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def UNKNOWN_IMPORTED_SYMBOL(name: String, path: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("UNKNOWN_IMPORTED_SYMBOL")(name.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
-  @js.native
   trait CSSResolve[T /* <: StylableSymbol */] extends StObject {
     
-    var _kind: css = js.native
+    var _kind: css
     
-    var meta: StylableMeta = js.native
+    var meta: StylableMeta
     
-    var symbol: T = js.native
+    var symbol: T
   }
   object CSSResolve {
     
     @scala.inline
-    def apply[T /* <: StylableSymbol */](_kind: css, meta: StylableMeta, symbol: T): CSSResolve[T] = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    def apply[T /* <: StylableSymbol */](meta: StylableMeta, symbol: T): CSSResolve[T] = {
+      val __obj = js.Dynamic.literal(_kind = "css", meta = meta.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[CSSResolve[T]]
     }
     
     @scala.inline
-    implicit class CSSResolveMutableBuilder[Self <: CSSResolve[_], T /* <: StylableSymbol */] (val x: Self with CSSResolve[T]) extends AnyVal {
+    implicit class CSSResolveMutableBuilder[Self <: CSSResolve[?], T /* <: StylableSymbol */] (val x: Self & CSSResolve[T]) extends AnyVal {
       
       @scala.inline
       def setMeta(value: StylableMeta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
@@ -181,20 +179,19 @@ object stylableResolverMod {
     }
   }
   
-  @js.native
   trait JSResolve extends StObject {
     
-    var _kind: js_ = js.native
+    var _kind: js_
     
-    var meta: Null = js.native
+    var meta: Null
     
-    var symbol: js.Any = js.native
+    var symbol: js.Any
   }
   object JSResolve {
     
     @scala.inline
-    def apply(_kind: js_, meta: Null, symbol: js.Any): JSResolve = {
-      val __obj = js.Dynamic.literal(_kind = _kind.asInstanceOf[js.Any], meta = meta.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    def apply(meta: Null, symbol: js.Any): JSResolve = {
+      val __obj = js.Dynamic.literal(_kind = "js", meta = meta.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
       __obj.asInstanceOf[JSResolve]
     }
     

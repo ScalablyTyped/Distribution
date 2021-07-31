@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBigtableOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaBigtableOptions extends StObject {
     * the table schema and their values are read as BYTES. During a query only
     * the column families referenced in that query are read from Bigtable.
     */
-  var columnFamilies: js.UndefOr[js.Array[SchemaBigtableColumnFamily]] = js.native
+  var columnFamilies: js.UndefOr[js.Array[SchemaBigtableColumnFamily]] = js.undefined
   
   /**
     * [Optional] If field is true, then the column families that are not
@@ -25,7 +23,7 @@ trait SchemaBigtableOptions extends StObject {
     * Otherwise, they are read with BYTES type values. The default value is
     * false.
     */
-  var ignoreUnspecifiedColumnFamilies: js.UndefOr[Boolean] = js.native
+  var ignoreUnspecifiedColumnFamilies: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] If field is true, then the rowkey column families will be read
@@ -33,7 +31,7 @@ trait SchemaBigtableOptions extends StObject {
     * and users need to manually cast them with CAST if necessary. The default
     * value is false.
     */
-  var readRowkeyAsString: js.UndefOr[Boolean] = js.native
+  var readRowkeyAsString: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaBigtableOptions {
   

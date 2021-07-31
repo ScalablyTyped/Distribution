@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.io
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * calls to {@link com.sun.star.io.XOutputStream.writeBytes()} .
   * @since OOo 2.0
   */
-@js.native
 trait XAsyncOutputMonitor extends StObject {
   
   /**
@@ -30,7 +28,7 @@ trait XAsyncOutputMonitor extends StObject {
     * stored on a stable physical medium, like a hard disk (and it is completely unspecified whether `flush` should give this guarantee).
     * @throws com::sun::star::io::IOException if any previous call to {@link com.sun.star.io.XOutputStream.writeBytes()} encountered such an error, but has not
     */
-  def waitForCompletion(): Unit = js.native
+  def waitForCompletion(): Unit
 }
 object XAsyncOutputMonitor {
   

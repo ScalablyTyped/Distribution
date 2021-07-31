@@ -5,48 +5,63 @@ import typings.mockjs.mod.RandomImageFormatString
 import typings.mockjs.mod.RandomWebProtocal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mockjsStrings {
   
   @js.native
-  sealed trait cid extends RandomWebProtocal
+  sealed trait cid
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def cid: cid = "cid".asInstanceOf[cid]
   
   @js.native
-  sealed trait day extends RandomDateUtilString
+  sealed trait day
+    extends StObject
+       with RandomDateUtilString
   @scala.inline
   def day: day = "day".asInstanceOf[day]
   
   @js.native
-  sealed trait ftp extends RandomWebProtocal
+  sealed trait ftp
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def ftp: ftp = "ftp".asInstanceOf[ftp]
   
   @js.native
-  sealed trait gif extends RandomImageFormatString
+  sealed trait gif
+    extends StObject
+       with RandomImageFormatString
   @scala.inline
   def gif: gif = "gif".asInstanceOf[gif]
   
   @js.native
-  sealed trait gopher extends RandomWebProtocal
+  sealed trait gopher
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def gopher: gopher = "gopher".asInstanceOf[gopher]
   
   @js.native
-  sealed trait hour extends RandomDateUtilString
+  sealed trait hour
+    extends StObject
+       with RandomDateUtilString
   @scala.inline
   def hour: hour = "hour".asInstanceOf[hour]
   
   @js.native
-  sealed trait http extends RandomWebProtocal
+  sealed trait http
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def http: http = "http".asInstanceOf[http]
   
   @js.native
-  sealed trait jpg extends RandomImageFormatString
+  sealed trait jpg
+    extends StObject
+       with RandomImageFormatString
   @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
   
@@ -56,32 +71,44 @@ object mockjsStrings {
   def lower: lower = "lower".asInstanceOf[lower]
   
   @js.native
-  sealed trait mailto extends RandomWebProtocal
+  sealed trait mailto
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def mailto: mailto = "mailto".asInstanceOf[mailto]
   
   @js.native
-  sealed trait mid extends RandomWebProtocal
+  sealed trait mid
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def mid: mid = "mid".asInstanceOf[mid]
   
   @js.native
-  sealed trait minute extends RandomDateUtilString
+  sealed trait minute
+    extends StObject
+       with RandomDateUtilString
   @scala.inline
   def minute: minute = "minute".asInstanceOf[minute]
   
   @js.native
-  sealed trait month extends RandomDateUtilString
+  sealed trait month
+    extends StObject
+       with RandomDateUtilString
   @scala.inline
   def month: month = "month".asInstanceOf[month]
   
   @js.native
-  sealed trait news extends RandomWebProtocal
+  sealed trait news
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def news: news = "news".asInstanceOf[news]
   
   @js.native
-  sealed trait nntp extends RandomWebProtocal
+  sealed trait nntp
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def nntp: nntp = "nntp".asInstanceOf[nntp]
   
@@ -91,22 +118,30 @@ object mockjsStrings {
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait png extends RandomImageFormatString
+  sealed trait png
+    extends StObject
+       with RandomImageFormatString
   @scala.inline
   def png: png = "png".asInstanceOf[png]
   
   @js.native
-  sealed trait prospero extends RandomWebProtocal
+  sealed trait prospero
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def prospero: prospero = "prospero".asInstanceOf[prospero]
   
   @js.native
-  sealed trait rlogin extends RandomWebProtocal
+  sealed trait rlogin
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def rlogin: rlogin = "rlogin".asInstanceOf[rlogin]
   
   @js.native
-  sealed trait second extends RandomDateUtilString
+  sealed trait second
+    extends StObject
+       with RandomDateUtilString
   @scala.inline
   def second: second = "second".asInstanceOf[second]
   
@@ -116,12 +151,16 @@ object mockjsStrings {
   def symbol: symbol = "symbol".asInstanceOf[symbol]
   
   @js.native
-  sealed trait telnet extends RandomWebProtocal
+  sealed trait telnet
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def telnet: telnet = "telnet".asInstanceOf[telnet]
   
   @js.native
-  sealed trait tn3270 extends RandomWebProtocal
+  sealed trait tn3270
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def tn3270: tn3270 = "tn3270".asInstanceOf[tn3270]
   
@@ -131,17 +170,23 @@ object mockjsStrings {
   def upper: upper = "upper".asInstanceOf[upper]
   
   @js.native
-  sealed trait wais extends RandomWebProtocal
+  sealed trait wais
+    extends StObject
+       with RandomWebProtocal
   @scala.inline
   def wais: wais = "wais".asInstanceOf[wais]
   
   @js.native
-  sealed trait week extends RandomDateUtilString
+  sealed trait week
+    extends StObject
+       with RandomDateUtilString
   @scala.inline
   def week: week = "week".asInstanceOf[week]
   
   @js.native
-  sealed trait year extends RandomDateUtilString
+  sealed trait year
+    extends StObject
+       with RandomDateUtilString
   @scala.inline
   def year: year = "year".asInstanceOf[year]
 }

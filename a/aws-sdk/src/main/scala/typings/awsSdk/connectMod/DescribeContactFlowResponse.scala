@@ -2,16 +2,14 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeContactFlowResponse extends StObject {
   
   /**
     * Information about the contact flow.
     */
-  var ContactFlow: js.UndefOr[typings.awsSdk.connectMod.ContactFlow] = js.native
+  var ContactFlow: js.UndefOr[typings.awsSdk.connectMod.ContactFlow] = js.undefined
 }
 object DescribeContactFlowResponse {
   

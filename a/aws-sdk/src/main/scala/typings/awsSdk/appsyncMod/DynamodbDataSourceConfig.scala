@@ -2,36 +2,34 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamodbDataSourceConfig extends StObject {
   
   /**
     * The AWS Region.
     */
-  var awsRegion: String = js.native
+  var awsRegion: String
   
   /**
     * The DeltaSyncConfig for a versioned datasource.
     */
-  var deltaSyncConfig: js.UndefOr[DeltaSyncConfig] = js.native
+  var deltaSyncConfig: js.UndefOr[DeltaSyncConfig] = js.undefined
   
   /**
     * The table name.
     */
-  var tableName: String = js.native
+  var tableName: String
   
   /**
     * Set to TRUE to use Amazon Cognito credentials with this data source.
     */
-  var useCallerCredentials: js.UndefOr[Boolean] = js.native
+  var useCallerCredentials: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to TRUE to use Conflict Detection and Resolution with this data source.
     */
-  var versioned: js.UndefOr[Boolean] = js.native
+  var versioned: js.UndefOr[Boolean] = js.undefined
 }
 object DynamodbDataSourceConfig {
   

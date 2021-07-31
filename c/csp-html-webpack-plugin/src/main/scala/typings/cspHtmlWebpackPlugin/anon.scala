@@ -8,13 +8,11 @@ import typings.cspHtmlWebpackPlugin.mod.HtmlPluginData
 import typings.cspHtmlWebpackPlugin.mod.Policy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined csp-html-webpack-plugin.csp-html-webpack-plugin.AdditionalOptions & {  policy :csp-html-webpack-plugin.csp-html-webpack-plugin.Policy | undefined} */
-  @js.native
   trait AdditionalOptionspolicyPo extends StObject {
     
     /**
@@ -26,27 +24,27 @@ object anon {
       * * If `enabled` is set the false, it will disable generating a CSP for
       *   all instances of HtmlWebpackPlugin in your webpack config.
       */
-    var enabled: js.UndefOr[Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])] = js.native
+    var enabled: js.UndefOr[Boolean | (js.Function1[/* htmlPluginData */ HtmlPluginData, Boolean])] = js.undefined
     
     /**
       * A `<string, boolean>` entry for which policy rules are allowed to
       * include hashes.
       */
-    var hashEnabled: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var hashEnabled: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
     /**
       * The hashing method. Your node version must also accept this hashing
       * method.
       */
-    var hashingMethod: js.UndefOr[sha256 | sha384 | sha512] = js.native
+    var hashingMethod: js.UndefOr[sha256 | sha384 | sha512] = js.undefined
     
     /**
       * A `<string, boolean>` entry for which policy rules are allowed to
       * include nonces.
       */
-    var nonceEnabled: js.UndefOr[StringDictionary[Boolean]] = js.native
+    var nonceEnabled: js.UndefOr[StringDictionary[Boolean]] = js.undefined
     
-    var policy: js.UndefOr[Policy] = js.native
+    var policy: js.UndefOr[Policy] = js.undefined
   }
   object AdditionalOptionspolicyPo {
     

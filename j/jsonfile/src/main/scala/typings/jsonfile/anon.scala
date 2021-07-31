@@ -13,27 +13,25 @@ import typings.node.fsMod.PathLike
 import typings.node.fsMod.WriteFileOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait EOL extends StObject {
     
-    var EOL: js.UndefOr[String] = js.native
+    var EOL: js.UndefOr[String] = js.undefined
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
     
-    var fs: js.UndefOr[FS] = js.native
+    var fs: js.UndefOr[FS] = js.undefined
     
-    var mode: js.UndefOr[String | Double] = js.native
+    var mode: js.UndefOr[String | Double] = js.undefined
     
-    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, _]] = js.native
+    var replacer: js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]] = js.undefined
     
-    var spaces: js.UndefOr[String | Double] = js.native
+    var spaces: js.UndefOr[String | Double] = js.undefined
   }
   object EOL {
     
@@ -80,7 +78,7 @@ object anon {
       def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
       
       @scala.inline
-      def setReplacer(value: (/* key */ String, /* value */ js.Any) => _): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
+      def setReplacer(value: (/* key */ String, /* value */ js.Any) => js.Any): Self = StObject.set(x, "replacer", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReplacerUndefined: Self = StObject.set(x, "replacer", js.undefined)
@@ -93,18 +91,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
     
-    var fs: js.UndefOr[FS] = js.native
+    var fs: js.UndefOr[FS] = js.undefined
     
-    var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, _]] = js.native
+    var reviver: js.UndefOr[js.Function2[/* key */ js.Any, /* value */ js.Any, js.Any]] = js.undefined
     
-    var throws: js.UndefOr[Boolean] = js.native
+    var throws: js.UndefOr[Boolean] = js.undefined
   }
   object Encoding {
     
@@ -139,7 +136,7 @@ object anon {
       def setFsUndefined: Self = StObject.set(x, "fs", js.undefined)
       
       @scala.inline
-      def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => _): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
+      def setReviver(value: (/* key */ js.Any, /* value */ js.Any) => js.Any): Self = StObject.set(x, "reviver", js.Any.fromFunction2(value))
       
       @scala.inline
       def setReviverUndefined: Self = StObject.set(x, "reviver", js.undefined)
@@ -186,17 +183,17 @@ object anon {
     def apply(path: Double, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = js.native
     def apply(
       path: Double,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
-    ): Unit = js.native
-    def apply(
-      path: Double,
       options: String,
       callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
     ): Unit = js.native
     def apply(
       path: Double,
       options: Null,
+      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+    ): Unit = js.native
+    def apply(
+      path: Double,
+      options: Unit,
       callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
     ): Unit = js.native
     def apply(
@@ -217,17 +214,17 @@ object anon {
     def apply(path: PathLike, callback: js.Function2[/* err */ ErrnoException | Null, /* data */ Buffer, Unit]): Unit = js.native
     def apply(
       path: PathLike,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
-    ): Unit = js.native
-    def apply(
-      path: PathLike,
       options: String,
       callback: js.Function2[ErrnoException | Null, Buffer | (/* data */ String), Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
       options: Null,
+      callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
+    ): Unit = js.native
+    def apply(
+      path: PathLike,
+      options: Unit,
       callback: js.Function2[ErrnoException | Null, (/* data */ Buffer) | String, Unit]
     ): Unit = js.native
     def apply(

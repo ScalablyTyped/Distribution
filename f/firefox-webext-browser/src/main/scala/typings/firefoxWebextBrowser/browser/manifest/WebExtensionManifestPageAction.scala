@@ -2,25 +2,23 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestPageAction extends StObject {
   
-  var browser_style: js.UndefOr[Boolean] = js.native
+  var browser_style: js.UndefOr[Boolean] = js.undefined
   
-  var default_icon: js.UndefOr[IconPath] = js.native
+  var default_icon: js.UndefOr[IconPath] = js.undefined
   
-  var default_popup: js.UndefOr[String] = js.native
+  var default_popup: js.UndefOr[String] = js.undefined
   
-  var default_title: js.UndefOr[String] = js.native
+  var default_title: js.UndefOr[String] = js.undefined
   
-  var hide_matches: js.UndefOr[js.Array[MatchPatternRestricted]] = js.native
+  var hide_matches: js.UndefOr[js.Array[MatchPatternRestricted]] = js.undefined
   
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
-  var show_matches: js.UndefOr[js.Array[MatchPattern]] = js.native
+  var show_matches: js.UndefOr[js.Array[MatchPattern]] = js.undefined
 }
 object WebExtensionManifestPageAction {
   

@@ -4,10 +4,8 @@ import typings.meshblu.Meshblu.Connection
 import typings.meshblu.Meshblu.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeshbluStatic extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait MeshbluStatic extends StObject {
     * @param opt
     * @returns A Meshblu Connection.
     */
-  def createConnection(opt: ConnectionOptions): Connection = js.native
+  def createConnection(opt: ConnectionOptions): Connection
 }
 object MeshbluStatic {
   

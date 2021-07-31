@@ -20,51 +20,50 @@ import typings.uifabricFoundation.libIslotsMod.ISlotProp
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackItemTypesMod {
   
   type IStackItemComponent = IComponent[IStackItemProps, IStackItemTokens, IStackItemStyles, IStackItemProps, js.Object]
   
-  @js.native
   trait IStackItemProps
-    extends IStackItemSlots
+    extends StObject
+       with IStackItemSlots
        with IStyleableComponentProps[IStackItemProps, IStackItemTokens, IStackItemStyles] {
     
     /**
       * Defines how to align the StackItem along the x-axis (for vertical Stacks) or the y-axis (for horizontal Stacks).
       */
-    var align: js.UndefOr[auto | stretch | baseline | start | center | end] = js.native
+    var align: js.UndefOr[auto | stretch | baseline | start | center | end] = js.undefined
     
     /**
       * Defines whether the StackItem should be prevented from shrinking.
       * This can be used to prevent a StackItem from shrinking when it is inside of a Stack that has shrinking items.
       * @defaultvalue false
       */
-    var disableShrink: js.UndefOr[Boolean] = js.native
+    var disableShrink: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Defines how much to grow the StackItem in proportion to its siblings.
       */
-    var grow: js.UndefOr[Boolean | Double | inherit | initial | unset] = js.native
+    var grow: js.UndefOr[Boolean | Double | inherit | initial | unset] = js.undefined
     
     /**
       * Defines order of the StackItem.
       * @defaultvalue 0
       */
-    var order: js.UndefOr[Double | String] = js.native
+    var order: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Defines at what ratio should the StackItem shrink to fit the available space.
       */
-    var shrink: js.UndefOr[Boolean | Double | inherit | initial | unset] = js.native
+    var shrink: js.UndefOr[Boolean | Double | inherit | initial | unset] = js.undefined
     
     /**
       * Defines whether the StackItem should take up 100% of the height of its parent.
       * @defaultvalue true
       */
-    var verticalFill: js.UndefOr[Boolean] = js.native
+    var verticalFill: js.UndefOr[Boolean] = js.undefined
   }
   object IStackItemProps {
     
@@ -117,10 +116,9 @@ object stackItemTypesMod {
   
   type IStackItemSlot = ISlotProp[IStackItemProps, scala.Nothing]
   
-  @js.native
   trait IStackItemSlots extends StObject {
     
-    var root: js.UndefOr[IHTMLSlot] = js.native
+    var root: js.UndefOr[IHTMLSlot] = js.undefined
   }
   object IStackItemSlots {
     
@@ -142,10 +140,9 @@ object stackItemTypesMod {
   }
   
   /* Inlined office-ui-fabric-react.office-ui-fabric-react/lib/Foundation.IComponentStyles<office-ui-fabric-react.office-ui-fabric-react/lib/components/Stack/StackItem/StackItem.types.IStackItemSlots> */
-  @js.native
   trait IStackItemStyles extends StObject {
     
-    var root: js.UndefOr[IStyle] = js.native
+    var root: js.UndefOr[IStyle] = js.undefined
   }
   object IStackItemStyles {
     
@@ -178,18 +175,17 @@ object stackItemTypesMod {
   
   type IStackItemTokenReturnType = ReturnType[Extract[ITokenFunctionOrObject[IStackItemProps, IStackItemTokens], js.Function]]
   
-  @js.native
   trait IStackItemTokens extends StObject {
     
     /**
       * Defines the margin to be applied to the StackItem relative to its container.
       */
-    var margin: js.UndefOr[Double | String] = js.native
+    var margin: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Defines the padding to be applied to the StackItem contents relative to its border.
       */
-    var padding: js.UndefOr[Double | String] = js.native
+    var padding: js.UndefOr[Double | String] = js.undefined
   }
   object IStackItemTokens {
     

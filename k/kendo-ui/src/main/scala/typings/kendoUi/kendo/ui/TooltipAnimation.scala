@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipAnimation extends StObject {
   
-  var close: js.UndefOr[TooltipAnimationClose] = js.native
+  var close: js.UndefOr[TooltipAnimationClose] = js.undefined
   
-  var open: js.UndefOr[TooltipAnimationOpen] = js.native
+  var open: js.UndefOr[TooltipAnimationOpen] = js.undefined
 }
 object TooltipAnimation {
   

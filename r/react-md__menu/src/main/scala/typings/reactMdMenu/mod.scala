@@ -25,18 +25,21 @@ import typings.std.HTMLElement
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@react-md/menu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@react-md/menu", "DropdownMenu")
   @js.native
-  val DropdownMenu: ForwardRefExoticComponent[DropdownMenuProps with RefAttributes[HTMLButtonElement]] = js.native
+  val DropdownMenu: ForwardRefExoticComponent[DropdownMenuProps & RefAttributes[HTMLButtonElement]] = js.native
   
   @JSImport("@react-md/menu", "DropdownMenuItem")
   @js.native
-  val DropdownMenuItem: ForwardRefExoticComponent[DropdownMenuItemProps with RefAttributes[HTMLLIElement]] = js.native
+  val DropdownMenuItem: ForwardRefExoticComponent[DropdownMenuItemProps & RefAttributes[HTMLLIElement]] = js.native
   
   @JSImport("@react-md/menu", "Menu")
   @js.native
@@ -44,34 +47,30 @@ object mod {
   
   @JSImport("@react-md/menu", "MenuButton")
   @js.native
-  val MenuButton: ForwardRefExoticComponent[MenuButtonProps with RefAttributes[HTMLButtonElement]] = js.native
+  val MenuButton: ForwardRefExoticComponent[MenuButtonProps & RefAttributes[HTMLButtonElement]] = js.native
   
   @JSImport("@react-md/menu", "MenuItem")
   @js.native
-  val MenuItem: ForwardRefExoticComponent[MenuItemProps with RefAttributes[HTMLLIElement]] = js.native
+  val MenuItem: ForwardRefExoticComponent[MenuItemProps & RefAttributes[HTMLLIElement]] = js.native
   
   @JSImport("@react-md/menu", "MenuItemLink")
   @js.native
   val MenuItemLink: ForwardRefExoticComponent[
-    (MenuItemLinkProps with RefAttributes[HTMLAnchorElement]) | (MenuItemLinkProps with ListItemLinkWithComponentProps with RefAttributes[HTMLAnchorElement])
+    (MenuItemLinkProps & RefAttributes[HTMLAnchorElement]) | (MenuItemLinkProps & ListItemLinkWithComponentProps & RefAttributes[HTMLAnchorElement])
   ] = js.native
   
   @JSImport("@react-md/menu", "MenuItemSeparator")
   @js.native
-  val MenuItemSeparator: ForwardRefExoticComponent[MenuItemSeparatorProps with RefAttributes[DividerElement]] = js.native
+  val MenuItemSeparator: ForwardRefExoticComponent[MenuItemSeparatorProps & RefAttributes[DividerElement]] = js.native
   
-  @JSImport("@react-md/menu", "defaultMenuItemRenderer")
-  @js.native
-  def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = js.native
+  @scala.inline
+  def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuItemRenderer")(item.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @JSImport("@react-md/menu", "defaultMenuRenderer")
-  @js.native
-  def defaultMenuRenderer(hasHorizontalChildrenProps: LabelRequiredForA11y[AllInjectedMenuProps]): ReactElement = js.native
+  @scala.inline
+  def defaultMenuRenderer(hasHorizontalChildrenProps: LabelRequiredForA11y[AllInjectedMenuProps]): ReactElement = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuRenderer")(hasHorizontalChildrenProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
   
-  @JSImport("@react-md/menu", "useContextMenu")
-  @js.native
-  def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = js.native
-  @JSImport("@react-md/menu", "useContextMenu")
-  @js.native
-  def useContextMenu[CE /* <: HTMLElement */](hasIdRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = js.native
+  @scala.inline
+  def useContextMenu[CE /* <: HTMLElement */](): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")().asInstanceOf[ReturnValue[CE]]
+  @scala.inline
+  def useContextMenu[CE /* <: HTMLElement */](hasIdPropRefAnchorClassNamesDisableDeselect: Options): ReturnValue[CE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useContextMenu")(hasIdPropRefAnchorClassNamesDisableDeselect.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[CE]]
 }

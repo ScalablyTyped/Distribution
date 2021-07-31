@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a location that may contain latitude and longitude data or venue data. */
-@js.native
 trait Geoposition extends StObject {
   
   /** Unsupported API. */
-  var civicAddress: CivicAddress = js.native
+  var civicAddress: CivicAddress
   
   /** The latitude and longitude associated with a geographic location. */
-  var coordinate: Geocoordinate = js.native
+  var coordinate: Geocoordinate
   
   /** Represents the venue associated with a geographic location. */
-  var venueData: VenueData = js.native
+  var venueData: VenueData
 }
 object Geoposition {
   

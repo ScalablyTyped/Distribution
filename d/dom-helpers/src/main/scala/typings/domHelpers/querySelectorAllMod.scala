@@ -4,15 +4,16 @@ import typings.std.Document
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object querySelectorAllMod {
   
-  @JSImport("dom-helpers/cjs/querySelectorAll", JSImport.Default)
+  @JSImport("dom-helpers/cjs/querySelectorAll", JSImport.Namespace)
   @js.native
-  def default(element: Document, selector: String): js.Array[HTMLElement] = js.native
-  @JSImport("dom-helpers/cjs/querySelectorAll", JSImport.Default)
-  @js.native
-  def default(element: HTMLElement, selector: String): js.Array[HTMLElement] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(element: Document, selector: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
+  @scala.inline
+  def default(element: HTMLElement, selector: String): js.Array[HTMLElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[js.Array[HTMLElement]]
 }

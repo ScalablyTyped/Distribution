@@ -3,19 +3,18 @@ package typings.dargs
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[String | Boolean | Double | js.Array[String]] {
+    extends StObject
+       with /* key */ StringDictionary[String | Boolean | Double | js.Array[String]] {
     
-    var `--`: js.UndefOr[js.Array[String]] = js.native
+    var `--`: js.UndefOr[js.Array[String]] = js.undefined
     
     @JSName("_")
-    var _underscore: js.UndefOr[js.Array[String]] = js.native
+    var _underscore: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Dictkey {
     

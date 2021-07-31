@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Devices.Geolocation
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Unsupported API. */
-@js.native
 trait CivicAddress extends StObject {
   
   /** Unsupported API. */
-  var city: String = js.native
+  var city: String
   
   /** Unsupported API. */
-  var country: String = js.native
+  var country: String
   
   /** Unsupported API. */
-  var postalCode: String = js.native
+  var postalCode: String
   
   /** Unsupported API. */
-  var state: String = js.native
+  var state: String
   
   /** Unsupported API. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object CivicAddress {
   

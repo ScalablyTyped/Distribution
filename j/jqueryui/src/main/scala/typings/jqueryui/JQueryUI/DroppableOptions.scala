@@ -2,27 +2,27 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DroppableOptions extends DroppableEvents {
+trait DroppableOptions
+  extends StObject
+     with DroppableEvents {
   
-  var accept: js.UndefOr[js.Any] = js.native
+  var accept: js.UndefOr[js.Any] = js.undefined
   
-  var activeClass: js.UndefOr[String] = js.native
+  var activeClass: js.UndefOr[String] = js.undefined
   
-  var addClasses: js.UndefOr[Boolean] = js.native
+  var addClasses: js.UndefOr[Boolean] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var greedy: js.UndefOr[Boolean] = js.native
+  var greedy: js.UndefOr[Boolean] = js.undefined
   
-  var hoverClass: js.UndefOr[String] = js.native
+  var hoverClass: js.UndefOr[String] = js.undefined
   
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
   
-  var tolerance: js.UndefOr[String] = js.native
+  var tolerance: js.UndefOr[String] = js.undefined
 }
 object DroppableOptions {
   

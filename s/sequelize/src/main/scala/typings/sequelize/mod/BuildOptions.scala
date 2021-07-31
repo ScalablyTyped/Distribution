@@ -2,31 +2,31 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for Model.build method
   */
-@js.native
-trait BuildOptions extends ReturningOptions {
+trait BuildOptions
+  extends StObject
+     with ReturningOptions {
   
   /**
     * an array of include options - Used to build prefetched/included model instances. See `set`
     *
     * TODO: See set
     */
-  var include: js.UndefOr[js.Array[(Model[_, _, _]) | IncludeOptions]] = js.native
+  var include: js.UndefOr[js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]] = js.undefined
   
   /**
     * Is this record new
     */
-  var isNewRecord: js.UndefOr[Boolean] = js.native
+  var isNewRecord: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, values will ignore field and virtual setters.
     */
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
 }
 object BuildOptions {
   
@@ -40,7 +40,7 @@ object BuildOptions {
   implicit class BuildOptionsMutableBuilder[Self <: BuildOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setInclude(value: js.Array[(Model[_, _, _]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
+    def setInclude(value: js.Array[(Model[js.Any, js.Any, js.Any]) | IncludeOptions]): Self = StObject.set(x, "include", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setIncludeUndefined: Self = StObject.set(x, "include", js.undefined)

@@ -2,11 +2,12 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Hotspot extends Overlay {
+trait Hotspot
+  extends StObject
+     with Overlay {
   
   def getPosition(): Point = js.native
   

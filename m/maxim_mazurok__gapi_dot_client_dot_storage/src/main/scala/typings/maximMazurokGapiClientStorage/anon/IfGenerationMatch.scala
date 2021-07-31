@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientStorage.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfGenerationMatch extends StObject {
   
   /**
     * Only perform the composition if the generation of the source object that would be used matches this value. If this value and a generation are both specified, they must be
     * the same value or the call will fail.
     */
-  var ifGenerationMatch: js.UndefOr[String] = js.native
+  var ifGenerationMatch: js.UndefOr[String] = js.undefined
 }
 object IfGenerationMatch {
   

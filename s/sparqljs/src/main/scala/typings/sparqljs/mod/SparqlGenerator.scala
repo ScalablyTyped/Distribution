@@ -2,15 +2,13 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparqlGenerator extends StObject {
   
-  def createGenerator(): js.Any = js.native
+  def createGenerator(): js.Any
   
-  def stringify(query: SparqlQuery): String = js.native
+  def stringify(query: SparqlQuery): String
 }
 object SparqlGenerator {
   

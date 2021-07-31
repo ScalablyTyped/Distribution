@@ -2,23 +2,21 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriteUpdateOperation[TSchema] extends StObject {
   
-  var arrayFilters: js.UndefOr[js.Array[js.Object]] = js.native
+  var arrayFilters: js.UndefOr[js.Array[js.Object]] = js.undefined
   
-  var collation: js.UndefOr[js.Object] = js.native
+  var collation: js.UndefOr[js.Object] = js.undefined
   
-  var filter: FilterQuery[TSchema] = js.native
+  var filter: FilterQuery[TSchema]
   
-  var hint: js.UndefOr[String | js.Object] = js.native
+  var hint: js.UndefOr[String | js.Object] = js.undefined
   
-  var update: UpdateQuery[TSchema] = js.native
+  var update: UpdateQuery[TSchema]
   
-  var upsert: js.UndefOr[Boolean] = js.native
+  var upsert: js.UndefOr[Boolean] = js.undefined
 }
 object BulkWriteUpdateOperation {
   
@@ -29,7 +27,7 @@ object BulkWriteUpdateOperation {
   }
   
   @scala.inline
-  implicit class BulkWriteUpdateOperationMutableBuilder[Self <: BulkWriteUpdateOperation[_], TSchema] (val x: Self with BulkWriteUpdateOperation[TSchema]) extends AnyVal {
+  implicit class BulkWriteUpdateOperationMutableBuilder[Self <: BulkWriteUpdateOperation[?], TSchema] (val x: Self & BulkWriteUpdateOperation[TSchema]) extends AnyVal {
     
     @scala.inline
     def setArrayFilters(value: js.Array[js.Object]): Self = StObject.set(x, "arrayFilters", value.asInstanceOf[js.Any])

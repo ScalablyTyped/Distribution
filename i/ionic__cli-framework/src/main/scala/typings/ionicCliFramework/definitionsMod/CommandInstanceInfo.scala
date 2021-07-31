@@ -3,17 +3,15 @@ package typings.ionicCliFramework.definitionsMod
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommandInstanceInfo[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
   
-  var env: ProcessEnv = js.native
+  var env: ProcessEnv
   
-  var executor: IExecutor[C, N, M, I, O] = js.native
+  var executor: IExecutor[C, N, M, I, O]
   
-  var location: NamespaceLocateResult[C, N, M, I, O] = js.native
+  var location: NamespaceLocateResult[C, N, M, I, O]
 }
 object CommandInstanceInfo {
   
@@ -28,7 +26,7 @@ object CommandInstanceInfo {
   }
   
   @scala.inline
-  implicit class CommandInstanceInfoMutableBuilder[Self <: CommandInstanceInfo[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (CommandInstanceInfo[C, N, M, I, O])) extends AnyVal {
+  implicit class CommandInstanceInfoMutableBuilder[Self <: CommandInstanceInfo[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (CommandInstanceInfo[C, N, M, I, O])) extends AnyVal {
     
     @scala.inline
     def setEnv(value: ProcessEnv): Self = StObject.set(x, "env", value.asInstanceOf[js.Any])

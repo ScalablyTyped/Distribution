@@ -2,17 +2,15 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CursorPositionParameters extends StObject {
   
   /** ID of the candidate to select. */
-  var candidateID: Double = js.native
+  var candidateID: Double
   
   /** ID of the context that owns the candidate window. */
-  var contextID: Double = js.native
+  var contextID: Double
 }
 object CursorPositionParameters {
   

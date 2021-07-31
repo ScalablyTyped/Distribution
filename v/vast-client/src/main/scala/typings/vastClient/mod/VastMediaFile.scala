@@ -2,37 +2,35 @@ package typings.vastClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VastMediaFile extends StObject {
   
-  var apiFramework: String | Null = js.native
+  var apiFramework: String | Null
   
-  var bitrate: Double = js.native
+  var bitrate: Double
   
-  var codec: String | Null = js.native
+  var codec: String | Null
   
-  var deliveryType: String = js.native
+  var deliveryType: String
   
-  var fileURL: String | Null = js.native
+  var fileURL: String | Null
   
-  var height: Double = js.native
+  var height: Double
   
-  var id: String | Null = js.native
+  var id: String | Null
   
-  var maintainAspectRatio: Boolean | Null = js.native
+  var maintainAspectRatio: Boolean | Null
   
-  var maxBitrate: Double = js.native
+  var maxBitrate: Double
   
-  var mimeType: String | Null = js.native
+  var mimeType: String | Null
   
-  var minBitrate: Double = js.native
+  var minBitrate: Double
   
-  var scalable: Boolean | Null = js.native
+  var scalable: Boolean | Null
   
-  var width: Double = js.native
+  var width: Double
 }
 object VastMediaFile {
   
@@ -45,7 +43,7 @@ object VastMediaFile {
     minBitrate: Double,
     width: Double
   ): VastMediaFile = {
-    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], deliveryType = deliveryType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxBitrate = maxBitrate.asInstanceOf[js.Any], minBitrate = minBitrate.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(bitrate = bitrate.asInstanceOf[js.Any], deliveryType = deliveryType.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], maxBitrate = maxBitrate.asInstanceOf[js.Any], minBitrate = minBitrate.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], apiFramework = null, codec = null, fileURL = null, id = null, maintainAspectRatio = null, mimeType = null, scalable = null)
     __obj.asInstanceOf[VastMediaFile]
   }
   

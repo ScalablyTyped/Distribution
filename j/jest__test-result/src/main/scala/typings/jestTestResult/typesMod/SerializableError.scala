@@ -2,19 +2,17 @@ package typings.jestTestResult.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerializableError extends StObject {
   
-  var code: js.UndefOr[js.Any] = js.native
+  var code: js.UndefOr[js.Any] = js.undefined
   
-  var message: String = js.native
+  var message: String
   
-  var stack: js.UndefOr[String | Null] = js.native
+  var stack: js.UndefOr[String | Null] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SerializableError {
   

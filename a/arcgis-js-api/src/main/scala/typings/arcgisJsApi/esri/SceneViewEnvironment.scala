@@ -4,46 +4,46 @@ import typings.arcgisJsApi.HashMap
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewEnvironment extends AnonymousAccessor {
+trait SceneViewEnvironment
+  extends StObject
+     with AnonymousAccessor {
   
   /**
     * Atmosphere conditions of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphere] = js.native
+  var atmosphere: js.UndefOr[SceneViewEnvironmentAtmosphere] = js.undefined
   
   /**
     * Indicates whether atmosphere visualization is enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var atmosphereEnabled: js.UndefOr[Boolean] = js.native
+  var atmosphereEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies how the background of the scene (which lies behind sky, stars and atmosphere) should be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var background: js.UndefOr[Background] = js.native
+  var background: js.UndefOr[Background] = js.undefined
   
   /**
     * Lighting conditions of the scene.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var lighting: js.UndefOr[SceneViewEnvironmentLighting] = js.native
+  var lighting: js.UndefOr[SceneViewEnvironmentLighting] = js.undefined
   
   /**
     * Indicates whether stars visualization is enabled.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html#environment)
     */
-  var starsEnabled: js.UndefOr[Boolean] = js.native
+  var starsEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object SceneViewEnvironment {
   
@@ -54,7 +54,7 @@ object SceneViewEnvironment {
     propertyIsEnumerable: PropertyKey => Boolean,
     set: (js.UndefOr[
       js.Function2[/* propertyName */ String, /* value */ js.Any, SceneViewEnvironment]
-    ]) with (js.UndefOr[js.Function1[/* props */ HashMap[_], SceneViewEnvironment]])
+    ]) & (js.UndefOr[js.Function1[/* props */ HashMap[js.Any], SceneViewEnvironment]])
   ): SceneViewEnvironment = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), set = set.asInstanceOf[js.Any])
     __obj.asInstanceOf[SceneViewEnvironment]

@@ -2,23 +2,21 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CorePhysicalKeyStatus extends StObject {
   
-  var isExtendedKey: Boolean = js.native
+  var isExtendedKey: Boolean
   
-  var isKeyReleased: Boolean = js.native
+  var isKeyReleased: Boolean
   
-  var isMenuKeyDown: Boolean = js.native
+  var isMenuKeyDown: Boolean
   
-  var repeatCount: Double = js.native
+  var repeatCount: Double
   
-  var scanCode: Double = js.native
+  var scanCode: Double
   
-  var wasKeyDown: Boolean = js.native
+  var wasKeyDown: Boolean
 }
 object CorePhysicalKeyStatus {
   

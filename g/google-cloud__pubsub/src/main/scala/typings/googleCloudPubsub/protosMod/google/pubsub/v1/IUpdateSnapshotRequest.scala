@@ -3,18 +3,16 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 import typings.googleCloudPubsub.protosMod.google.protobuf.IFieldMask
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of an UpdateSnapshotRequest. */
-@js.native
 trait IUpdateSnapshotRequest extends StObject {
   
   /** UpdateSnapshotRequest snapshot */
-  var snapshot: js.UndefOr[ISnapshot | Null] = js.native
+  var snapshot: js.UndefOr[ISnapshot | Null] = js.undefined
   
   /** UpdateSnapshotRequest updateMask */
-  var updateMask: js.UndefOr[IFieldMask | Null] = js.native
+  var updateMask: js.UndefOr[IFieldMask | Null] = js.undefined
 }
 object IUpdateSnapshotRequest {
   

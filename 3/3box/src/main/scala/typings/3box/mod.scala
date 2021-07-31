@@ -15,123 +15,105 @@ import typings.`3box`.anon.ProfileServer
 import typings.`3box`.anon.SignJWT
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("3box", JSImport.Namespace)
   @js.native
-  class ^ () extends Box
+  class ^ ()
+    extends StObject
+       with Box
+  @JSImport("3box", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("3box", "create")
-  @js.native
-  def create(ethereumProvider: js.Any): js.Promise[Box] = js.native
+  @scala.inline
+  def create(ethereumProvider: js.Any): js.Promise[Box] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(ethereumProvider.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Box]]
   
   /* static member */
-  @JSImport("3box", "getConfig")
-  @js.native
-  def getConfig(address: String): js.Promise[js.Object] = js.native
-  @JSImport("3box", "getConfig")
-  @js.native
-  def getConfig(address: String, opts: ProfileServer): js.Promise[js.Object] = js.native
+  @scala.inline
+  def getConfig(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def getConfig(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @JSImport("3box", "getProfile")
-  @js.native
-  def getProfile(address: String): js.Promise[_] = js.native
-  @JSImport("3box", "getProfile")
-  @js.native
-  def getProfile(address: String, opts: Blocklist): js.Promise[_] = js.native
+  @scala.inline
+  def getProfile(address: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def getProfile(address: String, opts: Blocklist): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfile")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
   /* static member */
-  @JSImport("3box", "getProfiles")
-  @js.native
-  def getProfiles(address: String): js.Promise[js.Object] = js.native
-  @JSImport("3box", "getProfiles")
-  @js.native
-  def getProfiles(address: String, opts: ProfileServer): js.Promise[js.Object] = js.native
+  @scala.inline
+  def getProfiles(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def getProfiles(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getProfiles")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @JSImport("3box", "getSpace")
-  @js.native
-  def getSpace(address: String, name: String): js.Promise[js.Object] = js.native
-  @JSImport("3box", "getSpace")
-  @js.native
-  def getSpace(address: String, name: String, opts: BlocklistMetadata): js.Promise[js.Object] = js.native
+  @scala.inline
+  def getSpace(address: String, name: String): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def getSpace(address: String, name: String, opts: BlocklistMetadata): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpace")(address.asInstanceOf[js.Any], name.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @JSImport("3box", "getThread")
-  @js.native
-  def getThread(space: String, name: String, firstModerator: String, members: Boolean): js.Promise[js.Array[ThreadPost]] = js.native
-  @JSImport("3box", "getThread")
-  @js.native
-  def getThread(space: String, name: String, firstModerator: String, members: Boolean, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = js.native
+  @scala.inline
+  def getThread(space: String, name: String, firstModerator: String, members: Boolean): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
+  @scala.inline
+  def getThread(space: String, name: String, firstModerator: String, members: Boolean, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThread")(space.asInstanceOf[js.Any], name.asInstanceOf[js.Any], firstModerator.asInstanceOf[js.Any], members.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
   
   /* static member */
-  @JSImport("3box", "getThreadByAddress")
-  @js.native
-  def getThreadByAddress(address: String): js.Promise[js.Array[ThreadPost]] = js.native
-  @JSImport("3box", "getThreadByAddress")
-  @js.native
-  def getThreadByAddress(address: String, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = js.native
+  @scala.inline
+  def getThreadByAddress(address: String): js.Promise[js.Array[ThreadPost]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getThreadByAddress")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
+  @scala.inline
+  def getThreadByAddress(address: String, opts: ProfileServer): js.Promise[js.Array[ThreadPost]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getThreadByAddress")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[ThreadPost]]]
   
   /* static member */
-  @JSImport("3box", "getVerifiedAccounts")
-  @js.native
-  def getVerifiedAccounts(profile: js.Object): js.Promise[js.Object] = js.native
+  @scala.inline
+  def getVerifiedAccounts(profile: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerifiedAccounts")(profile.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
   object idUtils {
     
-    @JSImport("3box", "idUtils.isClaim")
+    @JSImport("3box", "idUtils")
     @js.native
-    def isClaim(claim: String): js.Promise[Boolean] = js.native
-    @JSImport("3box", "idUtils.isClaim")
-    @js.native
-    def isClaim(claim: String, opts: Audience): js.Promise[Boolean] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("3box", "idUtils.isMuportDID")
-    @js.native
-    def isMuportDID(address: String): js.Promise[Boolean] = js.native
+    @scala.inline
+    def isClaim(claim: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isClaim")(claim.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    @scala.inline
+    def isClaim(claim: String, opts: Audience): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("isClaim")(claim.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("3box", "idUtils.verifyClaim")
-    @js.native
-    def verifyClaim(claim: String): js.Promise[js.Object] = js.native
-    @JSImport("3box", "idUtils.verifyClaim")
-    @js.native
-    def verifyClaim(claim: String, opts: Audience): js.Promise[js.Object] = js.native
+    @scala.inline
+    def isMuportDID(address: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMuportDID")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
+    
+    @scala.inline
+    def verifyClaim(claim: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyClaim")(claim.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+    @scala.inline
+    def verifyClaim(claim: String, opts: Audience): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyClaim")(claim.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   }
   
   /* static member */
-  @JSImport("3box", "isLoggedIn")
-  @js.native
-  def isLoggedIn(address: String): Boolean = js.native
+  @scala.inline
+  def isLoggedIn(address: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedIn")(address.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* static member */
-  @JSImport("3box", "listSpaces")
-  @js.native
-  def listSpaces(address: String): js.Promise[js.Object] = js.native
-  @JSImport("3box", "listSpaces")
-  @js.native
-  def listSpaces(address: String, opts: ProfileServer): js.Promise[js.Object] = js.native
+  @scala.inline
+  def listSpaces(address: String): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def listSpaces(address: String, opts: ProfileServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSpaces")(address.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   /* static member */
-  @JSImport("3box", "openBox")
-  @js.native
-  def openBox(address: String, ethereumProvider: js.Any): js.Promise[Box] = js.native
-  @JSImport("3box", "openBox")
-  @js.native
-  def openBox(address: String, ethereumProvider: js.Any, opts: AddressServer): js.Promise[Box] = js.native
+  @scala.inline
+  def openBox(address: String, ethereumProvider: js.Any): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
+  @scala.inline
+  def openBox(address: String, ethereumProvider: js.Any, opts: AddressServer): js.Promise[Box] = (^.asInstanceOf[js.Dynamic].applyDynamic("openBox")(address.asInstanceOf[js.Any], ethereumProvider.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Box]]
   
   /* static member */
-  @JSImport("3box", "profileGraphQL")
-  @js.native
-  def profileGraphQL(query: js.Object): js.Promise[js.Object] = js.native
-  @JSImport("3box", "profileGraphQL")
-  @js.native
-  def profileGraphQL(query: js.Object, opts: GraphqlServer): js.Promise[js.Object] = js.native
+  @scala.inline
+  def profileGraphQL(query: js.Object): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  @scala.inline
+  def profileGraphQL(query: js.Object, opts: GraphqlServer): js.Promise[js.Object] = (^.asInstanceOf[js.Dynamic].applyDynamic("profileGraphQL")(query.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Object]]
   
   @js.native
   trait Box extends StObject {
@@ -164,12 +146,11 @@ object mod {
     var syncDone: js.Promise[Space] = js.native
   }
   
-  @js.native
   trait Link extends StObject {
     
-    var proof: String = js.native
+    var proof: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Link {
     
@@ -191,12 +172,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Query {
     
@@ -245,12 +225,12 @@ object mod {
   @js.native
   trait Storage extends StObject {
     
-    def all(): js.Promise[js.UndefOr[js.Array[_]]] = js.native
-    def all(opts: Metadata): js.Promise[js.UndefOr[js.Array[_]]] = js.native
+    def all(): js.Promise[js.UndefOr[js.Array[js.Any]]] = js.native
+    def all(opts: Metadata): js.Promise[js.UndefOr[js.Array[js.Any]]] = js.native
     
-    def get(key: String): js.Promise[_] = js.native
+    def get(key: String): js.Promise[js.Any] = js.native
     
-    def getMetadata(key: String): js.Promise[_] = js.native
+    def getMetadata(key: String): js.Promise[js.Any] = js.native
     
     def log(): js.Array[StorageLog] = js.native
     
@@ -258,19 +238,18 @@ object mod {
     
     def set(key: String, value: js.Any): js.Promise[Boolean] = js.native
     
-    def setMultiple(keys: js.Array[String], values: js.Array[_]): js.Promise[Boolean] = js.native
+    def setMultiple(keys: js.Array[String], values: js.Array[js.Any]): js.Promise[Boolean] = js.native
   }
   
-  @js.native
   trait StorageLog extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var op: String = js.native
+    var op: String
     
-    var timeStamp: Double = js.native
+    var timeStamp: Double
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object StorageLog {
     
@@ -320,16 +299,15 @@ object mod {
     def post(message: js.Any, to: String): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait ThreadPost extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var message: js.Any = js.native
+    var message: js.Any
     
-    var postId: String = js.native
+    var postId: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
   }
   object ThreadPost {
     

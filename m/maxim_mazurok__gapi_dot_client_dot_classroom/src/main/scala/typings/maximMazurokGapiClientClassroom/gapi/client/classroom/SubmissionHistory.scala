@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubmissionHistory extends StObject {
   
   /** The grade history information of the submission, if present. */
-  var gradeHistory: js.UndefOr[GradeHistory] = js.native
+  var gradeHistory: js.UndefOr[GradeHistory] = js.undefined
   
   /** The state history information of the submission, if present. */
-  var stateHistory: js.UndefOr[StateHistory] = js.native
+  var stateHistory: js.UndefOr[StateHistory] = js.undefined
 }
 object SubmissionHistory {
   

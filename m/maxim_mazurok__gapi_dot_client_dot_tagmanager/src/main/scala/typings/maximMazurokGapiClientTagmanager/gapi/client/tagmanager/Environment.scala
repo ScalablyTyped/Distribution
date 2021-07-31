@@ -2,65 +2,63 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Environment extends StObject {
   
   /** GTM Account ID. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** The environment authorization code. */
-  var authorizationCode: js.UndefOr[String] = js.native
+  var authorizationCode: js.UndefOr[String] = js.undefined
   
   /** The last update time-stamp for the authorization code. */
-  var authorizationTimestamp: js.UndefOr[String] = js.native
+  var authorizationTimestamp: js.UndefOr[String] = js.undefined
   
   /** GTM Container ID. */
-  var containerId: js.UndefOr[String] = js.native
+  var containerId: js.UndefOr[String] = js.undefined
   
   /** Represents a link to a container version. */
-  var containerVersionId: js.UndefOr[String] = js.native
+  var containerVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * The environment description. Can be set or changed only on USER type environments. @mutable tagmanager.accounts.containers.environments.create @mutable
     * tagmanager.accounts.containers.environments.update
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not to enable debug by default for the environment. @mutable tagmanager.accounts.containers.environments.create @mutable
     * tagmanager.accounts.containers.environments.update
     */
-  var enableDebug: js.UndefOr[Boolean] = js.native
+  var enableDebug: js.UndefOr[Boolean] = js.undefined
   
   /** GTM Environment ID uniquely identifies the GTM Environment. */
-  var environmentId: js.UndefOr[String] = js.native
+  var environmentId: js.UndefOr[String] = js.undefined
   
   /** The fingerprint of the GTM environment as computed at storage time. This value is recomputed whenever the environment is modified. */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The environment display name. Can be set or changed only on USER type environments. @mutable tagmanager.accounts.containers.environments.create @mutable
     * tagmanager.accounts.containers.environments.update
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** GTM Environment's API relative path. */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /** Auto generated link to the tag manager UI */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
   
   /** The type of this environment. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /** Default preview page url for the environment. @mutable tagmanager.accounts.containers.environments.create @mutable tagmanager.accounts.containers.environments.update */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /** Represents a link to a quick preview of a workspace. */
-  var workspaceId: js.UndefOr[String] = js.native
+  var workspaceId: js.UndefOr[String] = js.undefined
 }
 object Environment {
   

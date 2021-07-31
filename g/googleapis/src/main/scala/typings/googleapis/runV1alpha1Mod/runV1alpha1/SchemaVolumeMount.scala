@@ -2,20 +2,18 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VolumeMount describes a mounting of a Volume within a container.
   */
-@js.native
 trait SchemaVolumeMount extends StObject {
   
   /**
     * Path within the container at which the volume should be mounted.  Must
     * not contain &#39;:&#39;.
     */
-  var mountPath: js.UndefOr[String] = js.native
+  var mountPath: js.UndefOr[String] = js.undefined
   
   /**
     * mountPropagation determines how mounts are propagated from the host to
@@ -23,24 +21,24 @@ trait SchemaVolumeMount extends StObject {
     * MountPropagationHostToContainer is used. This field is beta in 1.10.
     * +optional
     */
-  var mountPropagation: js.UndefOr[String] = js.native
+  var mountPropagation: js.UndefOr[String] = js.undefined
   
   /**
     * This must match the Name of a Volume.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Mounted read-only if true, read-write otherwise (false or unspecified).
     * Defaults to false. +optional
     */
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Path within the volume from which the container&#39;s volume should be
     * mounted. Defaults to &quot;&quot; (volume&#39;s root). +optional
     */
-  var subPath: js.UndefOr[String] = js.native
+  var subPath: js.UndefOr[String] = js.undefined
 }
 object SchemaVolumeMount {
   

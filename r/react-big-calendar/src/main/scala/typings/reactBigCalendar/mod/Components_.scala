@@ -6,42 +6,40 @@ import typings.reactBigCalendar.anon.DateHeader
 import typings.reactBigCalendar.anon.Header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Components_[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends StObject {
   
-  var agenda: js.UndefOr[Date[TEvent]] = js.native
+  var agenda: js.UndefOr[Date[TEvent]] = js.undefined
   
-  var dateCellWrapper: js.UndefOr[ComponentType[js.Object]] = js.native
+  var dateCellWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var day: js.UndefOr[Header[TEvent]] = js.native
+  var day: js.UndefOr[Header[TEvent]] = js.undefined
   
-  var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.native
+  var event: js.UndefOr[ComponentType[EventProps[TEvent]]] = js.undefined
   
-  var eventContainerWrapper: js.UndefOr[ComponentType[js.Object]] = js.native
+  var eventContainerWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var eventWrapper: js.UndefOr[ComponentType[EventWrapperProps[TEvent]]] = js.native
+  var eventWrapper: js.UndefOr[ComponentType[EventWrapperProps[TEvent]]] = js.undefined
   
   /**
     * component used as a header for each column in the TimeGridHeader
     */
-  var header: js.UndefOr[ComponentType[HeaderProps]] = js.native
+  var header: js.UndefOr[ComponentType[HeaderProps]] = js.undefined
   
-  var month: js.UndefOr[DateHeader[TEvent]] = js.native
+  var month: js.UndefOr[DateHeader[TEvent]] = js.undefined
   
-  var resourceHeader: js.UndefOr[ComponentType[ResourceHeaderProps]] = js.native
+  var resourceHeader: js.UndefOr[ComponentType[ResourceHeaderProps]] = js.undefined
   
-  var timeGutterHeader: js.UndefOr[ComponentType[js.Object]] = js.native
+  var timeGutterHeader: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var timeGutterWrapper: js.UndefOr[ComponentType[js.Object]] = js.native
+  var timeGutterWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var timeSlotWrapper: js.UndefOr[ComponentType[js.Object]] = js.native
+  var timeSlotWrapper: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var toolbar: js.UndefOr[ComponentType[ToolbarProps[TEvent, TResource]]] = js.native
+  var toolbar: js.UndefOr[ComponentType[ToolbarProps[TEvent, TResource]]] = js.undefined
   
-  var week: js.UndefOr[Header[TEvent]] = js.native
+  var week: js.UndefOr[Header[TEvent]] = js.undefined
 }
 object Components_ {
   
@@ -52,7 +50,7 @@ object Components_ {
   }
   
   @scala.inline
-  implicit class Components_MutableBuilder[Self <: Components_[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (Components_[TEvent, TResource])) extends AnyVal {
+  implicit class Components_MutableBuilder[Self <: Components_[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (Components_[TEvent, TResource])) extends AnyVal {
     
     @scala.inline
     def setAgenda(value: Date[TEvent]): Self = StObject.set(x, "agenda", value.asInstanceOf[js.Any])

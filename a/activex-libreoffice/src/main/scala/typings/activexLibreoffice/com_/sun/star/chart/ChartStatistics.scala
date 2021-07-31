@@ -7,12 +7,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** offers statistical properties for the data in the chart. It is available for a single data row and for the whole diagram. */
-@js.native
-trait ChartStatistics extends XPropertySet {
+trait ChartStatistics
+  extends StObject
+     with XPropertySet {
   
   /**
     * specifies the upper limit of the error range of a data row.
@@ -21,7 +21,7 @@ trait ChartStatistics extends XPropertySet {
     * @see ConstantErrorLow
     * @see ErrorCategory
     */
-  var ConstantErrorHigh: Double = js.native
+  var ConstantErrorHigh: Double
   
   /**
     * specifies the lower limit of the error range of a data row.
@@ -30,19 +30,19 @@ trait ChartStatistics extends XPropertySet {
     * @see ConstantErrorHigh
     * @see ErrorCategory
     */
-  var ConstantErrorLow: Double = js.native
+  var ConstantErrorLow: Double
   
   /** contains a cell range string for negative error bars. This property is used when the ErrorBarCategory is set to ErrorBarCategory::FROM_DATA. */
-  var ErrorBarRangeNegative: String = js.native
+  var ErrorBarRangeNegative: String
   
   /** contains a cell range string for positive error bars. This property is used when the ErrorBarCategory is set to ErrorBarCategory::FROM_DATA. */
-  var ErrorBarRangePositive: String = js.native
+  var ErrorBarRangePositive: String
   
   /**
     * determines the style of the error bars. Use this instead of ErrorCategory
     * @see ErrorBarStyle
     */
-  var ErrorBarStyle: Double = js.native
+  var ErrorBarStyle: Double
   
   /**
     * determines the type of error to indicate.
@@ -54,7 +54,7 @@ trait ChartStatistics extends XPropertySet {
     * @see ConstantErrorHigh
     * @see ErrorIndicator
     */
-  var ErrorCategory: ChartErrorCategory = js.native
+  var ErrorCategory: ChartErrorCategory
   
   /**
     * determines how the error is indicated.
@@ -62,7 +62,7 @@ trait ChartStatistics extends XPropertySet {
     * You can enable indicators pointing up, down or both.
     * @see ErrorCategory
     */
-  var ErrorIndicator: ChartErrorIndicatorType = js.native
+  var ErrorIndicator: ChartErrorIndicatorType
   
   /**
     * specifies the percentage for the margin of errors.
@@ -72,10 +72,10 @@ trait ChartStatistics extends XPropertySet {
     * this setting is effective if the {@link ChartStatistics.ErrorCategory} is set to ChartErrorCategory::ERROR_MARGIN.
     * @see ErrorCategory
     */
-  var ErrorMargin: Double = js.native
+  var ErrorMargin: Double
   
   /** determines if the mean value for a data row is displayed as a line. */
-  var MeanValue: Boolean = js.native
+  var MeanValue: Boolean
   
   /**
     * specifies the percentage that is used to display error bars.
@@ -85,13 +85,13 @@ trait ChartStatistics extends XPropertySet {
     * this setting is effective if the {@link ChartStatistics.ErrorCategory} is set to ChartErrorCategory::PERCENT.
     * @see ErrorCategory
     */
-  var PercentageError: Double = js.native
+  var PercentageError: Double
   
   /**
     * determines a type of regression for the data row values.
     * @see ChartRegressionCurveType
     */
-  var RegressionCurves: ChartRegressionCurveType = js.native
+  var RegressionCurves: ChartRegressionCurveType
 }
 object ChartStatistics {
   

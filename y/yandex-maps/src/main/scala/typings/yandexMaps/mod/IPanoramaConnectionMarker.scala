@@ -3,12 +3,11 @@ package typings.yandexMaps.mod
 import typings.yandexMaps.mod.data.Manager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPanoramaConnectionMarker
-  extends IPanoramaConnection
+  extends StObject
+     with IPanoramaConnection
      with IPanoramaMarker
 object IPanoramaConnectionMarker {
   

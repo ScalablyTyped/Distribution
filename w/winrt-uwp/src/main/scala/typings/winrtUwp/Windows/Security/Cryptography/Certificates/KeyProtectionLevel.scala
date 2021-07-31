@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object KeyProtectionLevel extends StObject {
   
   /** The user is notified through a dialog box when the private key is created or used. */
   @js.native
-  sealed trait consentOnly extends KeyProtectionLevel
+  sealed trait consentOnly
+    extends StObject
+       with KeyProtectionLevel
   
   /** The user is prompted to enter a fingerprint verification for the key when the key is created or used. */
   @js.native
-  sealed trait consentWithFingerprint extends KeyProtectionLevel
+  sealed trait consentWithFingerprint
+    extends StObject
+       with KeyProtectionLevel
   
   /** The user is prompted to enter a password for the key when the key is created or used. */
   @js.native
-  sealed trait consentWithPassword extends KeyProtectionLevel
+  sealed trait consentWithPassword
+    extends StObject
+       with KeyProtectionLevel
   
   /** No strong key protection. */
   @js.native
-  sealed trait noConsent extends KeyProtectionLevel
+  sealed trait noConsent
+    extends StObject
+       with KeyProtectionLevel
 }

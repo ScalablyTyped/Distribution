@@ -2,28 +2,28 @@ package typings.empower
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("empower", JSImport.Namespace)
-  @js.native
-  def apply(originalAssert: js.Any, formatter: js.Any): js.Any = js.native
-  @JSImport("empower", JSImport.Namespace)
-  @js.native
-  def apply(originalAssert: js.Any, formatter: js.Any, options: Options): js.Any = js.native
+  @scala.inline
+  def apply(originalAssert: js.Any, formatter: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].apply(originalAssert.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(originalAssert: js.Any, formatter: js.Any, options: Options): js.Any = (^.asInstanceOf[js.Dynamic].apply(originalAssert.asInstanceOf[js.Any], formatter.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
+  @JSImport("empower", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var destructive: js.UndefOr[Boolean] = js.native
+    var destructive: js.UndefOr[Boolean] = js.undefined
     
-    var modifyMessageOnRethrow: js.UndefOr[Boolean] = js.native
+    var modifyMessageOnRethrow: js.UndefOr[Boolean] = js.undefined
     
-    var patterns: js.UndefOr[js.Array[String]] = js.native
+    var patterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var saveContextOnRethrow: js.UndefOr[Boolean] = js.native
+    var saveContextOnRethrow: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

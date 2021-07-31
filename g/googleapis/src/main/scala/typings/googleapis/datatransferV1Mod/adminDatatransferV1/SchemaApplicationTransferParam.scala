@@ -2,25 +2,23 @@ package typings.googleapis.datatransferV1Mod.adminDatatransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Template for application transfer parameters.
   */
-@js.native
 trait SchemaApplicationTransferParam extends StObject {
   
   /**
     * The type of the transfer parameter. eg: &#39;PRIVACY_LEVEL&#39;
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * The value of the coressponding transfer parameter. eg: &#39;PRIVATE&#39;
     * or &#39;SHARED&#39;
     */
-  var value: js.UndefOr[js.Array[String]] = js.native
+  var value: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaApplicationTransferParam {
   

@@ -2,13 +2,11 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentPath extends StObject {
   
-  var componentPath: js.UndefOr[String] = js.native
+  var componentPath: js.UndefOr[String] = js.undefined
 }
 object ComponentPath {
   

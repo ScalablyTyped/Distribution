@@ -3,32 +3,31 @@ package typings.moji
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(moji: String): Moji = ^.asInstanceOf[js.Dynamic].apply(moji.asInstanceOf[js.Any]).asInstanceOf[Moji]
+  
   @JSImport("moji", JSImport.Namespace)
   @js.native
-  def apply(moji: String): Moji = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("moji", "addMojisyu")
-  @js.native
-  def addMojisyu(`type`: String, mojisyu: MojisyuRange): Unit = js.native
-  @JSImport("moji", "addMojisyu")
-  @js.native
-  def addMojisyu(`type`: String, mojisyu: MojisyuRegExp): Unit = js.native
+  @scala.inline
+  def addMojisyu(`type`: String, mojisyu: MojisyuRange): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMojisyu")(`type`.asInstanceOf[js.Any], mojisyu.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addMojisyu(`type`: String, mojisyu: MojisyuRegExp): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMojisyu")(`type`.asInstanceOf[js.Any], mojisyu.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Moji extends StObject {
     
-    def convert(beforeType: Mojisyu, afterType: Mojisyu): Moji = js.native
+    def convert(beforeType: Mojisyu, afterType: Mojisyu): Moji
     
-    def filter(`type`: Mojisyu): Moji = js.native
+    def filter(`type`: Mojisyu): Moji
     
-    def reject(`type`: Mojisyu): Moji = js.native
+    def reject(`type`: Mojisyu): Moji
     
-    def trim(): Moji = js.native
+    def trim(): Moji
   }
   object Moji {
     
@@ -98,12 +97,11 @@ object mod {
     def ZS: typings.moji.mojiStrings.ZS = "ZS".asInstanceOf[typings.moji.mojiStrings.ZS]
   }
   
-  @js.native
   trait MojisyuRange extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object MojisyuRange {
     
@@ -124,12 +122,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MojisyuRegExp extends StObject {
     
-    var list: js.Array[String] = js.native
+    var list: js.Array[String]
     
-    var regexp: RegExp = js.native
+    var regexp: RegExp
   }
   object MojisyuRegExp {
     

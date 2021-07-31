@@ -2,16 +2,14 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioPidSelection extends StObject {
   
   /**
     * Selects a specific PID from within a source.
     */
-  var Pid: integerMin0Max8191 = js.native
+  var Pid: integerMin0Max8191
 }
 object AudioPidSelection {
   

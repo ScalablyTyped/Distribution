@@ -3,25 +3,25 @@ package typings.happypack
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("happypack", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Plugin {
+  class ^ protected ()
+    extends StObject
+       with Plugin {
     def this(options: PluginOptions) = this()
   }
   
-  @js.native
   trait PluginOptions extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var loaders: js.Any = js.native
+    var loaders: js.Any
     
-    var threads: js.UndefOr[Double] = js.native
+    var threads: js.UndefOr[Double] = js.undefined
   }
   object PluginOptions {
     

@@ -2,7 +2,6 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,24 +11,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interfaces
   */
 // chayns.utils.getJwtPayload()
-@js.native
 trait JwtPaylod extends StObject {
   
-  var FacebookUserID: String = js.native
+  var FacebookUserID: String
   
-  var FirstName: String = js.native
+  var FirstName: String
   
-  var LastName: String = js.native
+  var LastName: String
   
-  var LocationID: Double = js.native
+  var LocationID: Double
   
-  var LoginType: Double = js.native
+  var LoginType: Double
   
-  var PersonID: String = js.native
+  var PersonID: String
   
-  var TobitUserID: Double = js.native
+  var TobitUserID: Double
   
-  var isAdmin: Boolean = js.native
+  var isAdmin: Boolean
 }
 object JwtPaylod {
   

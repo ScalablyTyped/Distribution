@@ -2,66 +2,64 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LegendKey extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
   @JSName("Excel.LegendKey_typekey")
-  var ExcelDotLegendKey_typekey: LegendKey = js.native
+  var ExcelDotLegendKey_typekey: LegendKey
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  val Height: Double = js.native
+  val Height: Double
   
-  val Interior: typings.activexExcel.Excel.Interior = js.native
+  val Interior: typings.activexExcel.Excel.Interior
   
-  var InvertIfNegative: Boolean = js.native
+  var InvertIfNegative: Boolean
   
-  val Left: Double = js.native
+  val Left: Double
   
-  var MarkerBackgroundColor: Double = js.native
+  var MarkerBackgroundColor: Double
   
-  var MarkerBackgroundColorIndex: XlColorIndex = js.native
+  var MarkerBackgroundColorIndex: XlColorIndex
   
-  var MarkerForegroundColor: Double = js.native
+  var MarkerForegroundColor: Double
   
-  var MarkerForegroundColorIndex: XlColorIndex = js.native
+  var MarkerForegroundColorIndex: XlColorIndex
   
-  var MarkerSize: Double = js.native
+  var MarkerSize: Double
   
-  var MarkerStyle: XlMarkerStyle = js.native
+  var MarkerStyle: XlMarkerStyle
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PictureType: Double = js.native
+  var PictureType: Double
   
-  var PictureUnit: Double = js.native
+  var PictureUnit: Double
   
-  var PictureUnit2: Double = js.native
+  var PictureUnit2: Double
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Shadow: Boolean = js.native
+  var Shadow: Boolean
   
-  var Smooth: Boolean = js.native
+  var Smooth: Boolean
   
-  val Top: Double = js.native
+  val Top: Double
   
-  val Width: Double = js.native
+  val Width: Double
 }
 object LegendKey {
   

@@ -2,25 +2,23 @@ package typings.googleapis.storageV1Mod.storageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A subscription to receive Google PubSub notifications.
   */
-@js.native
 trait SchemaServiceAccount extends StObject {
   
   /**
     * The ID of the notification.
     */
-  var email_address: js.UndefOr[String] = js.native
+  var email_address: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of item this is. For notifications, this is always
     * storage#notification.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaServiceAccount {
   

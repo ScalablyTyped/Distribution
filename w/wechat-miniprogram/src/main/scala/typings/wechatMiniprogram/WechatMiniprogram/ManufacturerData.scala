@@ -3,18 +3,16 @@ package typings.wechatMiniprogram.WechatMiniprogram
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 广播的制造商信息, 仅安卓支持 */
-@js.native
 trait ManufacturerData extends StObject {
   
   /** 制造商ID，0x 开头的十六进制 */
-  var manufacturerId: String = js.native
+  var manufacturerId: String
   
   /** 制造商信息 */
-  var manufacturerSpecificData: js.UndefOr[ArrayBuffer] = js.native
+  var manufacturerSpecificData: js.UndefOr[ArrayBuffer] = js.undefined
 }
 object ManufacturerData {
   

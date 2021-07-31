@@ -2,19 +2,17 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** QueryRelationsFilter. */
-@js.native
 trait QueryRelationsFilter extends StObject {
   
   /** A comma-separated list of document IDs to include in the query. */
-  var document_ids: js.UndefOr[js.Array[String]] = js.native
+  var document_ids: js.UndefOr[js.Array[String]] = js.undefined
   
-  var entity_types: js.UndefOr[QueryFilterType] = js.native
+  var entity_types: js.UndefOr[QueryFilterType] = js.undefined
   
-  var relation_types: js.UndefOr[QueryFilterType] = js.native
+  var relation_types: js.UndefOr[QueryFilterType] = js.undefined
 }
 object QueryRelationsFilter {
   

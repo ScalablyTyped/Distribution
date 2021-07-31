@@ -11,8 +11,8 @@ Conditionally add a middleware to express with some common patterns.
 | Full name          | express-unless |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 69 |
-| # downloads        | 10592951 |
+| # dependents       | 73 |
+| # downloads        | 14152765 |
 | # stars            | 8 |
 
 ## Links

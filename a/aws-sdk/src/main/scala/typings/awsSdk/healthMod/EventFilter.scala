@@ -2,76 +2,74 @@ package typings.awsSdk.healthMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventFilter extends StObject {
   
   /**
     * A list of AWS availability zones.
     */
-  var availabilityZones: js.UndefOr[typings.awsSdk.healthMod.availabilityZones] = js.native
+  var availabilityZones: js.UndefOr[typings.awsSdk.healthMod.availabilityZones] = js.undefined
   
   /**
     * A list of dates and times that the event ended.
     */
-  var endTimes: js.UndefOr[dateTimeRangeList] = js.native
+  var endTimes: js.UndefOr[dateTimeRangeList] = js.undefined
   
   /**
     * A list of entity ARNs (unique identifiers).
     */
-  var entityArns: js.UndefOr[entityArnList] = js.native
+  var entityArns: js.UndefOr[entityArnList] = js.undefined
   
   /**
     * A list of entity identifiers, such as EC2 instance IDs (i-34ab692e) or EBS volumes (vol-426ab23e).
     */
-  var entityValues: js.UndefOr[entityValueList] = js.native
+  var entityValues: js.UndefOr[entityValueList] = js.undefined
   
   /**
     * A list of event ARNs (unique identifiers). For example: "arn:aws:health:us-east-1::event/EC2/EC2_INSTANCE_RETIREMENT_SCHEDULED/EC2_INSTANCE_RETIREMENT_SCHEDULED_ABC123-CDE456", "arn:aws:health:us-west-1::event/EBS/AWS_EBS_LOST_VOLUME/AWS_EBS_LOST_VOLUME_CHI789_JKL101" 
     */
-  var eventArns: js.UndefOr[eventArnList] = js.native
+  var eventArns: js.UndefOr[eventArnList] = js.undefined
   
   /**
     * A list of event status codes.
     */
-  var eventStatusCodes: js.UndefOr[eventStatusCodeList] = js.native
+  var eventStatusCodes: js.UndefOr[eventStatusCodeList] = js.undefined
   
   /**
     * A list of event type category codes (issue, scheduledChange, or accountNotification).
     */
-  var eventTypeCategories: js.UndefOr[eventTypeCategoryList] = js.native
+  var eventTypeCategories: js.UndefOr[eventTypeCategoryList] = js.undefined
   
   /**
     * A list of unique identifiers for event types. For example, "AWS_EC2_SYSTEM_MAINTENANCE_EVENT","AWS_RDS_MAINTENANCE_SCHEDULED". 
     */
-  var eventTypeCodes: js.UndefOr[eventTypeList] = js.native
+  var eventTypeCodes: js.UndefOr[eventTypeList] = js.undefined
   
   /**
     * A list of dates and times that the event was last updated.
     */
-  var lastUpdatedTimes: js.UndefOr[dateTimeRangeList] = js.native
+  var lastUpdatedTimes: js.UndefOr[dateTimeRangeList] = js.undefined
   
   /**
     * A list of AWS regions.
     */
-  var regions: js.UndefOr[regionList] = js.native
+  var regions: js.UndefOr[regionList] = js.undefined
   
   /**
     * The AWS services associated with the event. For example, EC2, RDS.
     */
-  var services: js.UndefOr[serviceList] = js.native
+  var services: js.UndefOr[serviceList] = js.undefined
   
   /**
     * A list of dates and times that the event began.
     */
-  var startTimes: js.UndefOr[dateTimeRangeList] = js.native
+  var startTimes: js.UndefOr[dateTimeRangeList] = js.undefined
   
   /**
     * A map of entity tags attached to the affected entity.  Currently, the tags property isn't supported. 
     */
-  var tags: js.UndefOr[tagFilter] = js.native
+  var tags: js.UndefOr[tagFilter] = js.undefined
 }
 object EventFilter {
   

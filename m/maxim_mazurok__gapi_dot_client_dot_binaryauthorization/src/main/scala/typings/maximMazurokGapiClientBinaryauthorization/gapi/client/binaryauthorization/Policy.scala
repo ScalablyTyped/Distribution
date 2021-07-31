@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Policy extends StObject {
   
   /**
     * Optional. Admission policy allowlisting. A matching admission request will always be permitted. This feature is typically used to exclude Google or third-party infrastructure images
     * from Binary Authorization policies.
     */
-  var admissionWhitelistPatterns: js.UndefOr[js.Array[AdmissionWhitelistPattern]] = js.native
+  var admissionWhitelistPatterns: js.UndefOr[js.Array[AdmissionWhitelistPattern]] = js.undefined
   
   /**
     * Optional. Per-cluster admission rules. Cluster spec format: `location.clusterId`. There can be at most one admission rule per cluster spec. A `location` is either a compute zone
@@ -22,26 +20,26 @@ trait Policy extends StObject {
   var clusterAdmissionRules: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.binaryauthorization.gapi.client.binaryauthorization.AdmissionRule}
-    */ typings.maximMazurokGapiClientBinaryauthorization.maximMazurokGapiClientBinaryauthorizationStrings.Policy with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBinaryauthorization.maximMazurokGapiClientBinaryauthorizationStrings.Policy & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. Default admission rule for a cluster without a per-cluster, per- kubernetes-service-account, or per-istio-service-identity admission rule. */
-  var defaultAdmissionRule: js.UndefOr[AdmissionRule] = js.native
+  var defaultAdmissionRule: js.UndefOr[AdmissionRule] = js.undefined
   
   /** Optional. A descriptive comment. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. Controls the evaluation of a Google-maintained global admission policy for common system-level images. Images not covered by the global policy will be subject to the
     * project admission policy. This setting has no effect when specified inside a global admission policy.
     */
-  var globalPolicyEvaluationMode: js.UndefOr[String] = js.native
+  var globalPolicyEvaluationMode: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name, in the format `projects/∗/policy`. There is at most one policy per project. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. Time when the policy was last updated. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Policy {
   
@@ -67,7 +65,7 @@ object Policy {
     def setClusterAdmissionRules(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.binaryauthorization.gapi.client.binaryauthorization.AdmissionRule}
-      */ typings.maximMazurokGapiClientBinaryauthorization.maximMazurokGapiClientBinaryauthorizationStrings.Policy with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBinaryauthorization.maximMazurokGapiClientBinaryauthorizationStrings.Policy & TopLevel[js.Any]
     ): Self = StObject.set(x, "clusterAdmissionRules", value.asInstanceOf[js.Any])
     
     @scala.inline

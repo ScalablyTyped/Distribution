@@ -2,46 +2,44 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchProvisionedProductsInput extends StObject {
   
   /**
     * The language code.    en - English (default)    jp - Japanese    zh - Chinese  
     */
-  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.native
+  var AcceptLanguage: js.UndefOr[typings.awsSdk.servicecatalogMod.AcceptLanguage] = js.undefined
   
   /**
     * The access level to use to obtain results. The default is User.
     */
-  var AccessLevelFilter: js.UndefOr[typings.awsSdk.servicecatalogMod.AccessLevelFilter] = js.native
+  var AccessLevelFilter: js.UndefOr[typings.awsSdk.servicecatalogMod.AccessLevelFilter] = js.undefined
   
   /**
     * The search filters. When the key is SearchQuery, the searchable fields are arn, createdTime, id, lastRecordId, idempotencyToken, name, physicalId, productId, provisioningArtifact, type, status, tags, userArn, userArnSession, lastProvisioningRecordId, lastSuccessfulProvisioningRecordId, productName, and provisioningArtifactName. Example: "SearchQuery":["status:AVAILABLE"] 
     */
-  var Filters: js.UndefOr[ProvisionedProductFilters] = js.native
+  var Filters: js.UndefOr[ProvisionedProductFilters] = js.undefined
   
   /**
     * The maximum number of items to return with this call.
     */
-  var PageSize: js.UndefOr[SearchProvisionedProductsPageSize] = js.native
+  var PageSize: js.UndefOr[SearchProvisionedProductsPageSize] = js.undefined
   
   /**
     * The page token for the next set of results. To retrieve the first set of results, use null.
     */
-  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.native
+  var PageToken: js.UndefOr[typings.awsSdk.servicecatalogMod.PageToken] = js.undefined
   
   /**
     * The sort field. If no value is specified, the results are not sorted. The valid values are arn, id, name, and lastRecordId.
     */
-  var SortBy: js.UndefOr[SortField] = js.native
+  var SortBy: js.UndefOr[SortField] = js.undefined
   
   /**
     * The sort order. If no value is specified, the results are not sorted.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.servicecatalogMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.servicecatalogMod.SortOrder] = js.undefined
 }
 object SearchProvisionedProductsInput {
   

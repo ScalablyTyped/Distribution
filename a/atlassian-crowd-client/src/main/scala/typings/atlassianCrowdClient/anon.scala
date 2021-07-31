@@ -3,21 +3,19 @@ package typings.atlassianCrowdClient
 import typings.atlassianCrowdClient.userMod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Active extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var attributes: js.Any = js.native
+    var attributes: js.Any
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object Active {
     
@@ -59,18 +57,13 @@ object anon {
     def get(groupname: String, childname: String, nested: Boolean): js.Promise[String] = js.native
     
     def list(groupname: String): js.Promise[js.Array[String]] = js.native
-    def list(
-      groupname: String,
-      nested: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: Double
-    ): js.Promise[js.Array[String]] = js.native
-    def list(groupname: String, nested: js.UndefOr[scala.Nothing], startIndex: Double): js.Promise[js.Array[String]] = js.native
-    def list(groupname: String, nested: js.UndefOr[scala.Nothing], startIndex: Double, maxResults: Double): js.Promise[js.Array[String]] = js.native
     def list(groupname: String, nested: Boolean): js.Promise[js.Array[String]] = js.native
-    def list(groupname: String, nested: Boolean, startIndex: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[js.Array[String]] = js.native
     def list(groupname: String, nested: Boolean, startIndex: Double): js.Promise[js.Array[String]] = js.native
     def list(groupname: String, nested: Boolean, startIndex: Double, maxResults: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Boolean, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double, maxResults: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String]] = js.native
     
     def remove(groupname: String, childname: String): js.Promise[Unit] = js.native
   }
@@ -84,18 +77,13 @@ object anon {
     def get(groupname: String, parentname: String, nested: Boolean): js.Promise[String] = js.native
     
     def list(groupname: String): js.Promise[js.Array[String]] = js.native
-    def list(
-      groupname: String,
-      nested: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: Double
-    ): js.Promise[js.Array[String]] = js.native
-    def list(groupname: String, nested: js.UndefOr[scala.Nothing], startIndex: Double): js.Promise[js.Array[String]] = js.native
-    def list(groupname: String, nested: js.UndefOr[scala.Nothing], startIndex: Double, maxResults: Double): js.Promise[js.Array[String]] = js.native
     def list(groupname: String, nested: Boolean): js.Promise[js.Array[String]] = js.native
-    def list(groupname: String, nested: Boolean, startIndex: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[js.Array[String]] = js.native
     def list(groupname: String, nested: Boolean, startIndex: Double): js.Promise[js.Array[String]] = js.native
     def list(groupname: String, nested: Boolean, startIndex: Double, maxResults: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Boolean, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double, maxResults: Double): js.Promise[js.Array[String]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String]] = js.native
   }
   
   @js.native
@@ -117,10 +105,9 @@ object anon {
     def update(username: String, user: ^): js.Promise[^] = js.native
   }
   
-  @js.native
   trait Authenticate extends StObject {
     
-    def authenticate(username: String, password: String): js.Promise[^] = js.native
+    def authenticate(username: String, password: String): js.Promise[^]
   }
   object Authenticate {
     
@@ -161,15 +148,14 @@ object anon {
     var users: Get = js.native
   }
   
-  @js.native
   trait Cookie extends StObject {
     
-    def cookie(): js.Promise[_] = js.native
+    def cookie(): js.Promise[js.Any]
   }
   object Cookie {
     
     @scala.inline
-    def apply(cookie: () => js.Promise[_]): Cookie = {
+    def apply(cookie: () => js.Promise[js.Any]): Cookie = {
       val __obj = js.Dynamic.literal(cookie = js.Any.fromFunction0(cookie))
       __obj.asInstanceOf[Cookie]
     }
@@ -178,7 +164,7 @@ object anon {
     implicit class CookieMutableBuilder[Self <: Cookie] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCookie(value: () => js.Promise[_]): Self = StObject.set(x, "cookie", js.Any.fromFunction0(value))
+      def setCookie(value: () => js.Promise[js.Any]): Self = StObject.set(x, "cookie", js.Any.fromFunction0(value))
     }
   }
   
@@ -186,7 +172,7 @@ object anon {
   trait Create extends StObject {
     
     def create(username: String, password: String): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
-    def create(username: String, password: String, validationFactors: js.UndefOr[scala.Nothing], duration: Double): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+    def create(username: String, password: String, validationFactors: Unit, duration: Double): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
     def create(
       username: String,
       password: String,
@@ -200,7 +186,7 @@ object anon {
     ): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
     
     def createUnvalidated(username: String): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
-    def createUnvalidated(username: String, validationFactors: js.UndefOr[scala.Nothing], duration: Double): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
+    def createUnvalidated(username: String, validationFactors: Unit, duration: Double): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
     def createUnvalidated(username: String, validationFactors: typings.atlassianCrowdClient.validationFactorsMod.^): js.Promise[typings.atlassianCrowdClient.sessionMod.^] = js.native
     def createUnvalidated(
       username: String,
@@ -228,68 +214,21 @@ object anon {
     def get(groupname: String, username: String, nested: Boolean): js.Promise[String] = js.native
     
     def list(groupname: String): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: js.UndefOr[scala.Nothing],
-      expand: Boolean
-    ): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: Double
-    ): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: Double,
-      expand: Boolean
-    ): js.Promise[js.Array[String | ^]] = js.native
-    def list(groupname: String, nested: js.UndefOr[scala.Nothing], startIndex: Double): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: js.UndefOr[scala.Nothing],
-      startIndex: Double,
-      maxResults: js.UndefOr[scala.Nothing],
-      expand: Boolean
-    ): js.Promise[js.Array[String | ^]] = js.native
-    def list(groupname: String, nested: js.UndefOr[scala.Nothing], startIndex: Double, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: js.UndefOr[scala.Nothing],
-      startIndex: Double,
-      maxResults: Double,
-      expand: Boolean
-    ): js.Promise[js.Array[String | ^]] = js.native
     def list(groupname: String, nested: Boolean): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: Boolean,
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: js.UndefOr[scala.Nothing],
-      expand: Boolean
-    ): js.Promise[js.Array[String | ^]] = js.native
-    def list(groupname: String, nested: Boolean, startIndex: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: Boolean,
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: Double,
-      expand: Boolean
-    ): js.Promise[js.Array[String | ^]] = js.native
     def list(groupname: String, nested: Boolean, startIndex: Double): js.Promise[js.Array[String | ^]] = js.native
-    def list(
-      groupname: String,
-      nested: Boolean,
-      startIndex: Double,
-      maxResults: js.UndefOr[scala.Nothing],
-      expand: Boolean
-    ): js.Promise[js.Array[String | ^]] = js.native
     def list(groupname: String, nested: Boolean, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
     def list(groupname: String, nested: Boolean, startIndex: Double, maxResults: Double, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Boolean, startIndex: Double, maxResults: Unit, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Boolean, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Boolean, startIndex: Unit, maxResults: Double, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Boolean, startIndex: Unit, maxResults: Unit, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double, maxResults: Double, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Double, maxResults: Unit, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Unit, maxResults: Double, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
+    def list(groupname: String, nested: Unit, startIndex: Unit, maxResults: Unit, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
     
     def remove(groupname: String, username: String): js.Promise[Unit] = js.native
   }
@@ -298,46 +237,35 @@ object anon {
   trait Group extends StObject {
     
     def group(restriction: String): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(
-      restriction: String,
-      expand: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: Double
-    ): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: js.UndefOr[scala.Nothing], startIndex: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: js.UndefOr[scala.Nothing], startIndex: Double, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
     def group(restriction: String, expand: Boolean): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
-    def group(restriction: String, expand: Boolean, startIndex: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
     def group(restriction: String, expand: Boolean, startIndex: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
     def group(restriction: String, expand: Boolean, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
+    def group(restriction: String, expand: Boolean, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
+    def group(restriction: String, expand: Unit, startIndex: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
+    def group(restriction: String, expand: Unit, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
+    def group(restriction: String, expand: Unit, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | typings.atlassianCrowdClient.groupMod.^]] = js.native
     
     def user(restriction: String): js.Promise[js.Array[String | ^]] = js.native
-    def user(
-      restriction: String,
-      expand: js.UndefOr[scala.Nothing],
-      startIndex: js.UndefOr[scala.Nothing],
-      maxResults: Double
-    ): js.Promise[js.Array[String | ^]] = js.native
-    def user(restriction: String, expand: js.UndefOr[scala.Nothing], startIndex: Double): js.Promise[js.Array[String | ^]] = js.native
-    def user(restriction: String, expand: js.UndefOr[scala.Nothing], startIndex: Double, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
     def user(restriction: String, expand: Boolean): js.Promise[js.Array[String | ^]] = js.native
-    def user(restriction: String, expand: Boolean, startIndex: js.UndefOr[scala.Nothing], maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
     def user(restriction: String, expand: Boolean, startIndex: Double): js.Promise[js.Array[String | ^]] = js.native
     def user(restriction: String, expand: Boolean, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
+    def user(restriction: String, expand: Boolean, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
+    def user(restriction: String, expand: Unit, startIndex: Double): js.Promise[js.Array[String | ^]] = js.native
+    def user(restriction: String, expand: Unit, startIndex: Double, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
+    def user(restriction: String, expand: Unit, startIndex: Unit, maxResults: Double): js.Promise[js.Array[String | ^]] = js.native
   }
   
-  @js.native
   trait List extends StObject {
     
-    def list(username: String): js.Promise[typings.atlassianCrowdClient.attributesMod.^] = js.native
+    def list(username: String): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
     
-    var password: Reset = js.native
+    var password: Reset
     
-    def remove(username: String, attributename: String): js.Promise[Unit] = js.native
+    def remove(username: String, attributename: String): js.Promise[Unit]
     
-    def set(username: String, attributes: typings.atlassianCrowdClient.attributesMod.^): js.Promise[typings.atlassianCrowdClient.attributesMod.^] = js.native
+    def set(username: String, attributes: typings.atlassianCrowdClient.attributesMod.^): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
     
-    var username: Request = js.native
+    var username: Request
   }
   object List {
     
@@ -375,10 +303,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object Name {
     
@@ -396,12 +323,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Password extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    val password: String = js.native
+    val password: String
   }
   object Password {
     
@@ -422,14 +348,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Remove extends StObject {
     
-    def list(groupname: String): js.Promise[typings.atlassianCrowdClient.attributesMod.^] = js.native
+    def list(groupname: String): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
     
-    def remove(groupname: String, attributename: String): js.Promise[Unit] = js.native
+    def remove(groupname: String, attributename: String): js.Promise[Unit]
     
-    def set(groupname: String, attributes: typings.atlassianCrowdClient.attributesMod.^): js.Promise[typings.atlassianCrowdClient.attributesMod.^] = js.native
+    def set(groupname: String, attributes: typings.atlassianCrowdClient.attributesMod.^): js.Promise[typings.atlassianCrowdClient.attributesMod.^]
   }
   object Remove {
     
@@ -459,10 +384,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    def request(email: String): js.Promise[Unit] = js.native
+    def request(email: String): js.Promise[Unit]
   }
   object Request {
     
@@ -480,12 +404,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Reset extends StObject {
     
-    def reset(username: String): js.Promise[Unit] = js.native
+    def reset(username: String): js.Promise[Unit]
     
-    def set(username: String, password: String): js.Promise[Unit] = js.native
+    def set(username: String, password: String): js.Promise[Unit]
   }
   object Reset {
     
@@ -506,10 +429,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: String = js.native
+    var value: String
   }
   object Value {
     

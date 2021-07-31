@@ -2,19 +2,17 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SummaryMailSection extends StObject {
   
-  var htmlContent: String = js.native
+  var htmlContent: String
   
-  var rank: Double = js.native
+  var rank: Double
   
-  var sectionType: MailSectionType = js.native
+  var sectionType: MailSectionType
   
-  var title: String = js.native
+  var title: String
 }
 object SummaryMailSection {
   

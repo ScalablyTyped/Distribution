@@ -2,23 +2,21 @@ package typings.three.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InnerRadius extends StObject {
   
-  var innerRadius: Double = js.native
+  var innerRadius: Double
   
-  var outerRadius: Double = js.native
+  var outerRadius: Double
   
-  var phiSegments: Double = js.native
+  var phiSegments: Double
   
-  var thetaLength: Double = js.native
+  var thetaLength: Double
   
-  var thetaSegments: Double = js.native
+  var thetaSegments: Double
   
-  var thetaStart: Double = js.native
+  var thetaStart: Double
 }
 object InnerRadius {
   

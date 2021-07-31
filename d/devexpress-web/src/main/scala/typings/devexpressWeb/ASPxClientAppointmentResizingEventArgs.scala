@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientScheduler.AppointmentResizing event.
   */
-@js.native
-trait ASPxClientAppointmentResizingEventArgs extends ASPxClientEventArgs {
+trait ASPxClientAppointmentResizingEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies whether or not an appointment can be resized to the new time interval.
     */
-  var allow: Boolean = js.native
+  var allow: Boolean
   
   /**
     * Gets the resized appointment's identifier.
     */
-  var appointmentId: String = js.native
+  var appointmentId: String
   
   /**
     * Gets a mouse event object related to the current appointment resizing operation.
     */
-  var mouseEvent: js.Any = js.native
+  var mouseEvent: js.Any
   
   /**
     * Gets the appointment's interval after resizing.
     */
-  var newInterval: ASPxClientTimeInterval = js.native
+  var newInterval: ASPxClientTimeInterval
   
   /**
     * Gets the appointment's interval before resizing.
     */
-  var oldInterval: ASPxClientTimeInterval = js.native
+  var oldInterval: ASPxClientTimeInterval
 }
 object ASPxClientAppointmentResizingEventArgs {
   

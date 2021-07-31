@@ -5,15 +5,16 @@ import typings.react.mod.CSSProperties
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useStretchStyleMod {
   
-  @JSImport("rc-trigger/es/Popup/useStretchStyle", JSImport.Default)
+  @JSImport("rc-trigger/es/Popup/useStretchStyle", JSImport.Namespace)
   @js.native
-  def default(): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = js.native
-  @JSImport("rc-trigger/es/Popup/useStretchStyle", JSImport.Default)
-  @js.native
-  def default(stretch: StretchType): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]]]
+  @scala.inline
+  def default(stretch: StretchType): js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(stretch.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[CSSProperties, js.Function1[/* element */ HTMLElement, Unit]]]
 }

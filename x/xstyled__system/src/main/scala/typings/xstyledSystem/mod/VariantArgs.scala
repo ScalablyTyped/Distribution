@@ -2,19 +2,17 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VariantArgs extends StObject {
   
-  var default: js.UndefOr[String | Double] = js.native
+  var default: js.UndefOr[String | Double] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var prop: js.UndefOr[String] = js.native
+  var prop: js.UndefOr[String] = js.undefined
   
-  var variants: js.UndefOr[js.Object] = js.native
+  var variants: js.UndefOr[js.Object] = js.undefined
 }
 object VariantArgs {
   

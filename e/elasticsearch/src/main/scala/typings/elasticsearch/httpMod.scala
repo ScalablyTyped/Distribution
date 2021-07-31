@@ -2,26 +2,48 @@ package typings.elasticsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
   
   @JSImport("elasticsearch/src/lib/connectors/http", JSImport.Namespace)
   @js.native
-  class ^ protected () extends HttpConnector {
+  class ^ protected ()
+    extends StObject
+       with HttpConnector {
     def this(host: js.Any, config: js.Any) = this()
+    
+    // onStatusSet(handler: (status: any) => void): void;
+    /* CompleteClass */
+    override def createAgent(config: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def makeAgentConfig(config: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def makeReqParams(params: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def request(
+      params: js.Any,
+      callback: js.Function4[
+          /* error */ js.Any, 
+          /* response */ js.Any, 
+          /* status */ js.Any, 
+          /* headers */ js.Any, 
+          Unit
+        ]
+    ): Unit = js.native
   }
   
-  @js.native
   trait HttpConnector extends StObject {
     
     // onStatusSet(handler: (status: any) => void): void;
-    def createAgent(config: js.Any): js.Any = js.native
+    def createAgent(config: js.Any): js.Any
     
-    def makeAgentConfig(config: js.Any): js.Any = js.native
+    def makeAgentConfig(config: js.Any): js.Any
     
-    def makeReqParams(params: js.Any): js.Any = js.native
+    def makeReqParams(params: js.Any): js.Any
     
     def request(
       params: js.Any,
@@ -32,7 +54,7 @@ object httpMod {
           /* headers */ js.Any, 
           Unit
         ]
-    ): Unit = js.native
+    ): Unit
   }
   object HttpConnector {
     

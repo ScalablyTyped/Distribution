@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrainingJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the training job.
     */
-  var TrainingJobArn: typings.awsSdk.sagemakerMod.TrainingJobArn = js.native
+  var TrainingJobArn: typings.awsSdk.sagemakerMod.TrainingJobArn
 }
 object CreateTrainingJobResponse {
   

@@ -4,17 +4,15 @@ import typings.devextreme.devextremeStrings.asc
 import typings.devextreme.devextremeStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupColumn extends StObject {
   
-  var groupColumn: js.UndefOr[String] = js.native
+  var groupColumn: js.UndefOr[String] = js.undefined
   
-  var sortOrder: js.UndefOr[asc | desc] = js.native
+  var sortOrder: js.UndefOr[asc | desc] = js.undefined
   
-  var summaryItem: js.UndefOr[String | Double] = js.native
+  var summaryItem: js.UndefOr[String | Double] = js.undefined
 }
 object GroupColumn {
   

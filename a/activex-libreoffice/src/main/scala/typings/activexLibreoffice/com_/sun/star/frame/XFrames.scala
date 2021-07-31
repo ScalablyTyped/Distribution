@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,21 +14,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XFrame
   * @see Frame
   */
-@js.native
-trait XFrames extends XIndexAccess {
+trait XFrames
+  extends StObject
+     with XIndexAccess {
   
   /**
     * appends the specified {@link Frame} to the list of sub-frames.
     * @param xFrame new frame for inserting into this container
     */
-  def append(xFrame: XFrame): Unit = js.native
+  def append(xFrame: XFrame): Unit
   
   /**
     * provides access to the list of all currently existing frames inside this container and their sub frames
     * @param nSearchFlags use combinations of {@link FrameSearchFlag} to specify which frames should be found
     * @returns all frames of this container and all available frames of the whole frame tree which match search parameter **SearchFlags**
     */
-  def queryFrames(nSearchFlags: Double): SafeArray[XFrame] = js.native
+  def queryFrames(nSearchFlags: Double): SafeArray[XFrame]
   
   /**
     * removes the frame from its container.
@@ -38,7 +38,7 @@ trait XFrames extends XIndexAccess {
     * method.
     * @param xFrame frame which should be removed from this container
     */
-  def remove(xFrame: XFrame): Unit = js.native
+  def remove(xFrame: XFrame): Unit
 }
 object XFrames {
   

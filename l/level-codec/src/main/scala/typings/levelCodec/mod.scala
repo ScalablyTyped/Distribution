@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,14 +23,14 @@ object mod {
     def encodeBatch(ops: js.Any, opts: CodecOptions): js.Any = js.native
     
     def encodeKey(key: js.Any): js.Any = js.native
-    def encodeKey(key: js.Any, opts: js.UndefOr[scala.Nothing], batchOpts: CodecOptions): js.Any = js.native
+    def encodeKey(key: js.Any, opts: Unit, batchOpts: CodecOptions): js.Any = js.native
     def encodeKey(key: js.Any, opts: CodecOptions): js.Any = js.native
     def encodeKey(key: js.Any, opts: CodecOptions, batchOpts: CodecOptions): js.Any = js.native
     
     def encodeLtgt(ltgt: js.Any): js.Any = js.native
     
     def encodeValue(value: js.Any): js.Any = js.native
-    def encodeValue(value: js.Any, opts: js.UndefOr[scala.Nothing], batchOpts: CodecOptions): js.Any = js.native
+    def encodeValue(value: js.Any, opts: Unit, batchOpts: CodecOptions): js.Any = js.native
     def encodeValue(value: js.Any, opts: CodecOptions): js.Any = js.native
     def encodeValue(value: js.Any, opts: CodecOptions, batchOpts: CodecOptions): js.Any = js.native
     
@@ -49,29 +48,30 @@ object mod {
   @JSImport("level-codec", "Codec")
   @js.native
   class CodecCls ()
-    extends typings.levelCodec.mod.Codec {
+    extends StObject
+       with typings.levelCodec.mod.Codec {
     def this(options: CodecOptions) = this()
   }
   
   @js.native
   trait CodecConstructor
-    extends Instantiable0[typings.levelCodec.mod.Codec]
+    extends StObject
+       with Instantiable0[typings.levelCodec.mod.Codec]
        with Instantiable1[/* options */ CodecOptions, typings.levelCodec.mod.Codec] {
     
     def apply(): typings.levelCodec.mod.Codec = js.native
     def apply(options: CodecOptions): typings.levelCodec.mod.Codec = js.native
   }
   
-  @js.native
   trait CodecEncoder extends StObject {
     
-    var buffer: Boolean = js.native
+    var buffer: Boolean
     
-    def decode(`val`: js.Any): js.Any = js.native
+    def decode(`val`: js.Any): js.Any
     
-    def encode(`val`: js.Any): js.Any = js.native
+    def encode(`val`: js.Any): js.Any
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CodecEncoder {
     
@@ -99,12 +99,11 @@ object mod {
     }
   }
   
-  @js.native
   trait CodecOptions extends StObject {
     
-    var keyEncoding: js.UndefOr[String | CodecEncoder] = js.native
+    var keyEncoding: js.UndefOr[String | CodecEncoder] = js.undefined
     
-    var valueEncoding: js.UndefOr[String | CodecEncoder] = js.native
+    var valueEncoding: js.UndefOr[String | CodecEncoder] = js.undefined
   }
   object CodecOptions {
     

@@ -7,7 +7,6 @@ import org.scalablytyped.runtime.Instantiable5
 import typings.firebaseDatabase.repoInfoMod.RepoInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transportMod {
@@ -25,13 +24,8 @@ object transportMod {
       */
     def this(connId: String, repoInfo: RepoInfo) = this()
     def this(connId: String, repoInfo: RepoInfo, transportSessionId: String) = this()
-    def this(
-      connId: String,
-      repoInfo: RepoInfo,
-      transportSessionId: js.UndefOr[scala.Nothing],
-      lastSessionId: String
-    ) = this()
     def this(connId: String, repoInfo: RepoInfo, transportSessionId: String, lastSessionId: String) = this()
+    def this(connId: String, repoInfo: RepoInfo, transportSessionId: Unit, lastSessionId: String) = this()
     
     /**
       * Bytes received since connection started.
@@ -74,20 +68,21 @@ object transportMod {
   
   @js.native
   trait TransportConstructor
-    extends Instantiable2[/* connId */ String, /* repoInfo */ RepoInfo, Transport]
+    extends StObject
+       with Instantiable2[/* connId */ String, /* repoInfo */ RepoInfo, Transport]
        with Instantiable3[/* connId */ String, /* repoInfo */ RepoInfo, /* applicationId */ String, Transport]
        with Instantiable4[
           /* connId */ String, 
           /* repoInfo */ RepoInfo, 
-          js.UndefOr[/* applicationId */ String], 
+          (/* applicationId */ String) | (/* applicationId */ Unit), 
           /* transportSessionId */ String, 
           Transport
         ]
        with Instantiable5[
           /* connId */ String, 
           /* repoInfo */ RepoInfo, 
-          js.UndefOr[/* applicationId */ String], 
-          js.UndefOr[/* transportSessionId */ String], 
+          (/* applicationId */ String) | (/* applicationId */ Unit), 
+          (/* transportSessionId */ String) | (/* transportSessionId */ Unit), 
           /* lastSessionId */ String, 
           Transport
         ] {

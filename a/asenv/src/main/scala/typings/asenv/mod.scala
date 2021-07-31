@@ -2,32 +2,29 @@ package typings.asenv
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("asenv", "getEnv")
+  @JSImport("asenv", JSImport.Namespace)
   @js.native
-  def getEnv(): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("asenv", "isDevelopment")
-  @js.native
-  def isDevelopment(): Boolean = js.native
+  @scala.inline
+  def getEnv(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[String]
   
-  @JSImport("asenv", "isProduction")
-  @js.native
-  def isProduction(): Boolean = js.native
+  @scala.inline
+  def isDevelopment(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDevelopment")().asInstanceOf[Boolean]
   
-  @JSImport("asenv", "isTest")
-  @js.native
-  def isTest(): Boolean = js.native
+  @scala.inline
+  def isProduction(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isProduction")().asInstanceOf[Boolean]
   
-  @JSImport("asenv", "setEnv")
-  @js.native
-  def setEnv(env: String): Unit = js.native
+  @scala.inline
+  def isTest(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTest")().asInstanceOf[Boolean]
   
-  @JSImport("asenv", "unlessProduction")
-  @js.native
-  def unlessProduction(handle: js.Function0[_]): js.Any = js.native
+  @scala.inline
+  def setEnv(env: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def unlessProduction(handle: js.Function0[js.Any]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unlessProduction")(handle.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

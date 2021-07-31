@@ -2,33 +2,31 @@ package typings.reactReconciler.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactContext[T] extends StObject {
   
-  var Consumer: ReactContext[T] = js.native
+  var Consumer: ReactContext[T]
   
   @JSName("$$typeof")
-  var DollarDollartypeof: js.Symbol | Double = js.native
+  var DollarDollartypeof: js.Symbol | Double
   
-  var Provider: ReactProviderType[T] = js.native
+  var Provider: ReactProviderType[T]
   
-  var _calculateChangedBits: (js.Function2[/* a */ T, /* b */ T, Double]) | Null = js.native
+  var _calculateChangedBits: (js.Function2[/* a */ T, /* b */ T, Double]) | Null
   
   // DEV only
-  var _currentRenderer: js.UndefOr[js.Object | Null] = js.native
+  var _currentRenderer: js.UndefOr[js.Object | Null] = js.undefined
   
-  var _currentRenderer2: js.UndefOr[js.Object | Null] = js.native
+  var _currentRenderer2: js.UndefOr[js.Object | Null] = js.undefined
   
-  var _currentValue: T = js.native
+  var _currentValue: T
   
-  var _currentValue2: T = js.native
+  var _currentValue2: T
   
-  var _threadCount: Double = js.native
+  var _threadCount: Double
   
-  def unstable_read(): T = js.native
+  def unstable_read(): T
 }
 object ReactContext {
   
@@ -42,13 +40,13 @@ object ReactContext {
     _threadCount: Double,
     unstable_read: () => T
   ): ReactContext[T] = {
-    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], _currentValue = _currentValue.asInstanceOf[js.Any], _currentValue2 = _currentValue2.asInstanceOf[js.Any], _threadCount = _threadCount.asInstanceOf[js.Any], unstable_read = js.Any.fromFunction0(unstable_read))
+    val __obj = js.Dynamic.literal(Consumer = Consumer.asInstanceOf[js.Any], Provider = Provider.asInstanceOf[js.Any], _currentValue = _currentValue.asInstanceOf[js.Any], _currentValue2 = _currentValue2.asInstanceOf[js.Any], _threadCount = _threadCount.asInstanceOf[js.Any], unstable_read = js.Any.fromFunction0(unstable_read), _calculateChangedBits = null)
     __obj.updateDynamic("$$typeof")(DollarDollartypeof.asInstanceOf[js.Any])
     __obj.asInstanceOf[ReactContext[T]]
   }
   
   @scala.inline
-  implicit class ReactContextMutableBuilder[Self <: ReactContext[_], T] (val x: Self with ReactContext[T]) extends AnyVal {
+  implicit class ReactContextMutableBuilder[Self <: ReactContext[?], T] (val x: Self & ReactContext[T]) extends AnyVal {
     
     @scala.inline
     def setConsumer(value: ReactContext[T]): Self = StObject.set(x, "Consumer", value.asInstanceOf[js.Any])

@@ -1,42 +1,77 @@
 package typings.i18nextFsBackend
 
+import typings.i18next.i18nextStrings.`3rdParty`
+import typings.i18next.i18nextStrings.backend
+import typings.i18next.i18nextStrings.i18nFormat
+import typings.i18next.i18nextStrings.languageDetector
+import typings.i18next.i18nextStrings.logger
+import typings.i18next.i18nextStrings.postProcessor
 import typings.i18next.mod.BackendModule
 import typings.i18next.mod.InitOptions
 import typings.i18next.mod.ReadCallback
 import typings.i18next.mod.Services
-import typings.i18nextFsBackend.i18nextFsBackendStrings.backend
 import typings.i18nextFsBackend.mod.i18nextFsBackend.i18nextFsBackendOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("i18next-fs-backend", JSImport.Default)
   @js.native
-  class default protected () extends Backend {
+  class default protected ()
+    extends StObject
+       with Backend {
     def this(services: Services, backendOptions: i18nextFsBackendOptions, i18nextOptions: InitOptions) = this()
+    
+    /** Save the missing translation */
+    /* CompleteClass */
+    override def create(languages: js.Array[String], namespace: String, key: String, fallbackValue: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def init(services: Services, backendOptions: i18nextFsBackendOptions, i18nextOptions: InitOptions): Unit = js.native
+    
+    /* CompleteClass */
+    override def queue(lng: String, namespace: String, key: String, fallbackValue: String, callback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def read(language: String, namespace: String, callback: ReadCallback): Unit = js.native
+    
+    /* CompleteClass */
+    var `type`: backend | logger | languageDetector | postProcessor | i18nFormat | `3rdParty` = js.native
+    /* CompleteClass */
+    @JSName("type")
+    var type_Backend: typings.i18nextFsBackend.i18nextFsBackendStrings.backend = js.native
+    /* CompleteClass */
+    @JSName("type")
+    var type_BackendModule: backend = js.native
+    
+    /* CompleteClass */
+    override def write(): Unit = js.native
+    
+    /* CompleteClass */
+    override def writeFile(lng: String, namespace: String): Unit = js.native
   }
   /* static members */
   object default {
     
     @JSImport("i18next-fs-backend", "default.type")
     @js.native
-    val `type`: backend = js.native
+    val `type`: typings.i18nextFsBackend.i18nextFsBackendStrings.backend = js.native
   }
   
-  @js.native
-  trait Backend extends BackendModule[i18nextFsBackendOptions] {
+  trait Backend
+    extends StObject
+       with BackendModule[i18nextFsBackendOptions] {
     
-    def queue(lng: String, namespace: String, key: String, fallbackValue: String, callback: js.Any): Unit = js.native
+    def queue(lng: String, namespace: String, key: String, fallbackValue: String, callback: js.Any): Unit
     
     @JSName("type")
-    var type_Backend: backend = js.native
+    var type_Backend: typings.i18nextFsBackend.i18nextFsBackendStrings.backend
     
-    def write(): Unit = js.native
+    def write(): Unit
     
-    def writeFile(lng: String, namespace: String): Unit = js.native
+    def writeFile(lng: String, namespace: String): Unit
   }
   object Backend {
     
@@ -46,12 +81,11 @@ object mod {
       init: (Services, i18nextFsBackendOptions, InitOptions) => Unit,
       queue: (String, String, String, String, js.Any) => Unit,
       read: (String, String, ReadCallback) => Unit,
-      `type`: backend,
       write: () => Unit,
       writeFile: (String, String) => Unit
     ): Backend = {
       val __obj = js.Dynamic.literal(create = js.Any.fromFunction4(create), init = js.Any.fromFunction3(init), queue = js.Any.fromFunction5(queue), read = js.Any.fromFunction3(read), write = js.Any.fromFunction0(write), writeFile = js.Any.fromFunction2(writeFile))
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("backend")
       __obj.asInstanceOf[Backend]
     }
     
@@ -62,7 +96,7 @@ object mod {
       def setQueue(value: (String, String, String, String, js.Any) => Unit): Self = StObject.set(x, "queue", js.Any.fromFunction5(value))
       
       @scala.inline
-      def setType(value: backend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: typings.i18nextFsBackend.i18nextFsBackendStrings.backend): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setWrite(value: () => Unit): Self = StObject.set(x, "write", js.Any.fromFunction0(value))
@@ -74,10 +108,9 @@ object mod {
   
   object i18next {
     
-    @js.native
     trait InitOptions extends StObject {
       
-      var backend: js.UndefOr[i18nextFsBackendOptions] = js.native
+      var backend: js.UndefOr[i18nextFsBackendOptions] = js.undefined
     }
     object InitOptions {
       
@@ -101,18 +134,17 @@ object mod {
   
   object i18nextFsBackend {
     
-    @js.native
     trait i18nextFsBackendOptions extends StObject {
       
-      var addPath: js.UndefOr[String] = js.native
+      var addPath: js.UndefOr[String] = js.undefined
       
-      var ident: js.UndefOr[Double] = js.native
+      var ident: js.UndefOr[Double] = js.undefined
       
-      var loadPath: js.UndefOr[String | loadPathFunction] = js.native
+      var loadPath: js.UndefOr[String | loadPathFunction] = js.undefined
       
-      var parse: js.UndefOr[js.Function1[/* data */ String, _]] = js.native
+      var parse: js.UndefOr[js.Function1[/* data */ String, js.Any]] = js.undefined
       
-      var stringify: js.UndefOr[js.Function1[/* data */ js.Any, String]] = js.native
+      var stringify: js.UndefOr[js.Function1[/* data */ js.Any, String]] = js.undefined
     }
     object i18nextFsBackendOptions {
       
@@ -147,7 +179,7 @@ object mod {
         def setLoadPathUndefined: Self = StObject.set(x, "loadPath", js.undefined)
         
         @scala.inline
-        def setParse(value: /* data */ String => _): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
+        def setParse(value: /* data */ String => js.Any): Self = StObject.set(x, "parse", js.Any.fromFunction1(value))
         
         @scala.inline
         def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)

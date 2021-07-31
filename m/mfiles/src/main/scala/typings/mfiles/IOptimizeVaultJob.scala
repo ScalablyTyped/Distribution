@@ -2,25 +2,23 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IOptimizeVaultJob extends StObject {
   
-  var GarbageCollectFiles: Boolean = js.native
+  var GarbageCollectFiles: Boolean
   
-  def GetNumberOfSteps(): Double = js.native
+  def GetNumberOfSteps(): Double
   
-  def GetOneBasedIndexOfStep(CurrentStep: Double): Double = js.native
+  def GetOneBasedIndexOfStep(CurrentStep: Double): Double
   
-  def GetStepProgressText(CurrentStep: Double): String = js.native
+  def GetStepProgressText(CurrentStep: Double): String
   
-  def Set(GuidVault: String, Thorough: Boolean): Unit = js.native
+  def Set(GuidVault: String, Thorough: Boolean): Unit
   
-  val Thorough: Boolean = js.native
+  val Thorough: Boolean
   
-  val VaultGUID: String = js.native
+  val VaultGUID: String
 }
 object IOptimizeVaultJob {
   

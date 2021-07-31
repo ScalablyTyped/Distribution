@@ -2,27 +2,25 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareTicket extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 要拉取的 key 列表
     */
-  var keyList: js.Array[String] = js.native
+  var keyList: js.Array[String]
   
   /**
     * 群分享对应的 shareTicket
     */
-  var shareTicket: String = js.native
+  var shareTicket: String
   
-  var success: js.UndefOr[js.Function1[/* res */ `2`, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ `2`, Unit]] = js.undefined
 }
 object ShareTicket {
   

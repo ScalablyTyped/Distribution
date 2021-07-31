@@ -7,7 +7,6 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayScrollbarsComponentMod {
@@ -16,15 +15,16 @@ object overlayScrollbarsComponentMod {
   @js.native
   val OverlayScrollbarsComponent: FC[OverlayScrollbarsComponentProps] = js.native
   
-  @js.native
-  trait OverlayScrollbarsComponentProps extends HTMLAttributes[HTMLDivElement] {
+  trait OverlayScrollbarsComponentProps
+    extends StObject
+       with HTMLAttributes[HTMLDivElement] {
     
     @JSName("children")
-    var children_OverlayScrollbarsComponentProps: js.UndefOr[js.Any] = js.native
+    var children_OverlayScrollbarsComponentProps: js.UndefOr[js.Any] = js.undefined
     
-    var extensions: js.UndefOr[Extensions] = js.native
+    var extensions: js.UndefOr[Extensions] = js.undefined
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
   }
   object OverlayScrollbarsComponentProps {
     

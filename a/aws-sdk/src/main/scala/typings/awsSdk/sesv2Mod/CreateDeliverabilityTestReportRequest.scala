@@ -2,31 +2,29 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeliverabilityTestReportRequest extends StObject {
   
   /**
     * The HTML body of the message that you sent when you performed the predictive inbox placement test.
     */
-  var Content: EmailContent = js.native
+  var Content: EmailContent
   
   /**
     * The email address that the predictive inbox placement test email was sent from.
     */
-  var FromEmailAddress: EmailAddress = js.native
+  var FromEmailAddress: EmailAddress
   
   /**
     * A unique name that helps you to identify the predictive inbox placement test when you retrieve the results.
     */
-  var ReportName: js.UndefOr[typings.awsSdk.sesv2Mod.ReportName] = js.native
+  var ReportName: js.UndefOr[typings.awsSdk.sesv2Mod.ReportName] = js.undefined
   
   /**
     * An array of objects that define the tags (keys and values) that you want to associate with the predictive inbox placement test.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDeliverabilityTestReportRequest {
   

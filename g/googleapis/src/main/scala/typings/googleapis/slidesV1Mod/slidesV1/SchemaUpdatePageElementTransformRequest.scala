@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,23 +10,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * which can change their visual appearance. See the documentation for
   * PageElement.transform for more details.
   */
-@js.native
 trait SchemaUpdatePageElementTransformRequest extends StObject {
   
   /**
     * The apply mode of the transform update.
     */
-  var applyMode: js.UndefOr[String] = js.native
+  var applyMode: js.UndefOr[String] = js.undefined
   
   /**
     * The object ID of the page element to update.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The input transform matrix used to update the page element.
     */
-  var transform: js.UndefOr[SchemaAffineTransform] = js.native
+  var transform: js.UndefOr[SchemaAffineTransform] = js.undefined
 }
 object SchemaUpdatePageElementTransformRequest {
   

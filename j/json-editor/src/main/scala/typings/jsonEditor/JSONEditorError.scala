@@ -2,17 +2,15 @@ package typings.jsonEditor
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorError extends StObject {
   
-  var message: String = js.native
+  var message: String
   
-  var path: String = js.native
+  var path: String
   
-  var property: String = js.native
+  var property: String
 }
 object JSONEditorError {
   

@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.`fill-extrusion`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FillExtrusionLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[FillExtrusionLayout] = js.native
+  var layout: js.UndefOr[FillExtrusionLayout] = js.undefined
   
-  var paint: js.UndefOr[FillExtrusionPaint] = js.native
+  var paint: js.UndefOr[FillExtrusionPaint] = js.undefined
   
-  var `type`: `fill-extrusion` = js.native
+  var `type`: `fill-extrusion`
 }
 object FillExtrusionLayer {
   
   @scala.inline
-  def apply(id: String, `type`: `fill-extrusion`): FillExtrusionLayer = {
+  def apply(id: String): FillExtrusionLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("fill-extrusion")
     __obj.asInstanceOf[FillExtrusionLayer]
   }
   

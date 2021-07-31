@@ -2,51 +2,49 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateGraphqlApiRequest extends StObject {
   
   /**
     * A list of additional authentication providers for the GraphqlApi API.
     */
-  var additionalAuthenticationProviders: js.UndefOr[AdditionalAuthenticationProviders] = js.native
+  var additionalAuthenticationProviders: js.UndefOr[AdditionalAuthenticationProviders] = js.undefined
   
   /**
     * The authentication type: API key, AWS IAM, OIDC, or Amazon Cognito user pools.
     */
-  var authenticationType: AuthenticationType = js.native
+  var authenticationType: AuthenticationType
   
   /**
     * The Amazon CloudWatch Logs configuration.
     */
-  var logConfig: js.UndefOr[LogConfig] = js.native
+  var logConfig: js.UndefOr[LogConfig] = js.undefined
   
   /**
     * A user-supplied name for the GraphqlApi.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The OpenID Connect configuration.
     */
-  var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.native
+  var openIDConnectConfig: js.UndefOr[OpenIDConnectConfig] = js.undefined
   
   /**
     * A TagMap object.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
   
   /**
     * The Amazon Cognito user pool configuration.
     */
-  var userPoolConfig: js.UndefOr[UserPoolConfig] = js.native
+  var userPoolConfig: js.UndefOr[UserPoolConfig] = js.undefined
   
   /**
     * A flag indicating whether to enable X-Ray tracing for the GraphqlApi.
     */
-  var xrayEnabled: js.UndefOr[Boolean] = js.native
+  var xrayEnabled: js.UndefOr[Boolean] = js.undefined
 }
 object CreateGraphqlApiRequest {
   

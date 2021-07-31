@@ -2,10 +2,8 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppendFileFailCallbackResult extends StObject {
   
   /** 错误信息
@@ -15,7 +13,7 @@ trait AppendFileFailCallbackResult extends StObject {
     * - 'fail illegal operation on a directory, open "${filePath}"': 指定的 filePath 是一个已经存在的目录;
     * - 'fail permission denied, open ${dirPath}': 指定的 filePath 路径没有写权限;
     * - 'fail sdcard not mounted': 指定的 filePath 是一个已经存在的目录; */
-  var errMsg: String = js.native
+  var errMsg: String
 }
 object AppendFileFailCallbackResult {
   

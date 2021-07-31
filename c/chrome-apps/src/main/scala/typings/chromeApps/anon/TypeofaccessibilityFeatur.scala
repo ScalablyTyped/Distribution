@@ -3,82 +3,80 @@ package typings.chromeApps.anon
 import typings.chromeApps.chrome.accessibilityFeatures.AccessibilityFeaturesSetting
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofaccessibilityFeatur extends StObject {
   
   /**
     * get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     * @since Chrome 42.
     */
-  val animationPolicy: AccessibilityFeaturesSetting = js.native
+  val animationPolicy: AccessibilityFeaturesSetting
   
   /**
     * Auto mouse click after mouse stops moving. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     */
-  val autoclick: AccessibilityFeaturesSetting = js.native
+  val autoclick: AccessibilityFeaturesSetting
   
   /**
     * Caret highlighting. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     * @since Chrome 51.
     */
-  val caretHighlight: AccessibilityFeaturesSetting = js.native
+  val caretHighlight: AccessibilityFeaturesSetting
   
   /**
     * Cursor highlighting. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     * @since Chrome 51.
     */
-  val cursorHighlight: AccessibilityFeaturesSetting = js.native
+  val cursorHighlight: AccessibilityFeaturesSetting
   
   /**
     * Focus highlighting. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     * @since Chrome 51.
     */
-  val focusHighlight: AccessibilityFeaturesSetting = js.native
+  val focusHighlight: AccessibilityFeaturesSetting
   
   /**
     * High contrast rendering mode. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     */
-  val highContrast: AccessibilityFeaturesSetting = js.native
+  val highContrast: AccessibilityFeaturesSetting
   
   /**
     * Enlarged cursor. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     */
-  val largeCursor: AccessibilityFeaturesSetting = js.native
+  val largeCursor: AccessibilityFeaturesSetting
   
   /**
     * Full screen magnification. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     */
-  val screenMagnifier: AccessibilityFeaturesSetting = js.native
+  val screenMagnifier: AccessibilityFeaturesSetting
   
   /**
     * Select-to-speak. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     * @since Chrome 51.
     */
-  val selectToSpeak: AccessibilityFeaturesSetting = js.native
+  val selectToSpeak: AccessibilityFeaturesSetting
   
   /**
     * Spoken feedback (text-to-speech). The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     */
-  val spokenFeedback: AccessibilityFeaturesSetting = js.native
+  val spokenFeedback: AccessibilityFeaturesSetting
   
   /**
     * Sticky modifier keys (like shift or alt). The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     */
-  val stickyKeys: AccessibilityFeaturesSetting = js.native
+  val stickyKeys: AccessibilityFeaturesSetting
   
   /**
     * Switch access. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     * @since Chrome 51.
     */
-  val switchAccess: AccessibilityFeaturesSetting = js.native
+  val switchAccess: AccessibilityFeaturesSetting
   
   /**
     * Virtual on-screen keyboard. The value indicates whether the feature is enabled or not. get() requires accessibilityFeatures.read permission. set() and clear() require accessibilityFeatures.modify permission.
     */
-  val virtualKeyboard: AccessibilityFeaturesSetting = js.native
+  val virtualKeyboard: AccessibilityFeaturesSetting
 }
 object TypeofaccessibilityFeatur {
   

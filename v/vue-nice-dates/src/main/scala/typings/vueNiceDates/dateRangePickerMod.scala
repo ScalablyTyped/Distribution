@@ -8,13 +8,14 @@ import typings.vueNiceDates.anon.HasTouchedEndDate
 import typings.vueNiceDates.sharedMod.DateRangePickerProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateRangePickerMod {
   
   @js.native
-  trait DateRangePicker extends VueConstructor[Vue] {
+  trait DateRangePicker
+    extends StObject
+       with VueConstructor[Vue] {
     
     def date(): HasTouchedEndDate = js.native
     

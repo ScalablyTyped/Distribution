@@ -2,47 +2,45 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadLocalization extends StObject {
   
-  var cancel: js.UndefOr[String] = js.native
+  var cancel: js.UndefOr[String] = js.undefined
   
-  var clearSelectedFiles: js.UndefOr[String] = js.native
+  var clearSelectedFiles: js.UndefOr[String] = js.undefined
   
-  var dropFilesHere: js.UndefOr[String] = js.native
+  var dropFilesHere: js.UndefOr[String] = js.undefined
   
-  var headerStatusUploaded: js.UndefOr[String] = js.native
+  var headerStatusUploaded: js.UndefOr[String] = js.undefined
   
-  var headerStatusUploading: js.UndefOr[String] = js.native
+  var headerStatusUploading: js.UndefOr[String] = js.undefined
   
-  var invalidFileExtension: js.UndefOr[String] = js.native
+  var invalidFileExtension: js.UndefOr[String] = js.undefined
   
-  var invalidFiles: js.UndefOr[String] = js.native
+  var invalidFiles: js.UndefOr[String] = js.undefined
   
-  var invalidMaxFileSize: js.UndefOr[String] = js.native
+  var invalidMaxFileSize: js.UndefOr[String] = js.undefined
   
-  var invalidMinFileSize: js.UndefOr[String] = js.native
+  var invalidMinFileSize: js.UndefOr[String] = js.undefined
   
-  var remove: js.UndefOr[String] = js.native
+  var remove: js.UndefOr[String] = js.undefined
   
-  var retry: js.UndefOr[String] = js.native
+  var retry: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[String] = js.native
+  var select: js.UndefOr[String] = js.undefined
   
-  var statusFailed: js.UndefOr[String] = js.native
+  var statusFailed: js.UndefOr[String] = js.undefined
   
-  var statusUploaded: js.UndefOr[String] = js.native
+  var statusUploaded: js.UndefOr[String] = js.undefined
   
-  var statusUploading: js.UndefOr[String] = js.native
+  var statusUploading: js.UndefOr[String] = js.undefined
   
-  var uploadFail: js.UndefOr[String] = js.native
+  var uploadFail: js.UndefOr[String] = js.undefined
   
-  var uploadSelectedFiles: js.UndefOr[String] = js.native
+  var uploadSelectedFiles: js.UndefOr[String] = js.undefined
   
-  var uploadSuccess: js.UndefOr[String] = js.native
+  var uploadSuccess: js.UndefOr[String] = js.undefined
 }
 object UploadLocalization {
   

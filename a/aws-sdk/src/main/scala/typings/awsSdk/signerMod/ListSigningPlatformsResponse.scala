@@ -2,21 +2,19 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSigningPlatformsResponse extends StObject {
   
   /**
     * Value for specifying the next set of paginated results to return.
     */
-  var nextToken: js.UndefOr[String] = js.native
+  var nextToken: js.UndefOr[String] = js.undefined
   
   /**
     * A list of all platforms that match the request parameters.
     */
-  var platforms: js.UndefOr[SigningPlatforms] = js.native
+  var platforms: js.UndefOr[SigningPlatforms] = js.undefined
 }
 object ListSigningPlatformsResponse {
   

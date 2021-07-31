@@ -2,21 +2,19 @@ package typings.googleapis.dnsV1beta2Mod.dnsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaManagedZonePeeringConfigTargetNetwork extends StObject {
   
-  var deactivateTime: js.UndefOr[String] = js.native
+  var deactivateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dns#managedZonePeeringConfigTargetNetwork&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var networkUrl: js.UndefOr[String] = js.native
+  var networkUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedZonePeeringConfigTargetNetwork {
   

@@ -2,15 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkbookFunctionResult extends Entity {
+trait WorkbookFunctionResult
+  extends StObject
+     with Entity {
   
-  var error: js.UndefOr[NullableOption[String]] = js.native
+  var error: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var value: js.UndefOr[NullableOption[_]] = js.native
+  var value: js.UndefOr[NullableOption[js.Any]] = js.undefined
 }
 object WorkbookFunctionResult {
   
@@ -33,7 +33,7 @@ object WorkbookFunctionResult {
     def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
     
     @scala.inline
-    def setValue(value: NullableOption[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: NullableOption[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueNull: Self = StObject.set(x, "value", null)

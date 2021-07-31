@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1CsidriverMod {
@@ -27,7 +26,7 @@ object v1CsidriverMod {
       */
     def this(name: String) = this()
     def this(name: String, args: CSIDriverArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: CSIDriverArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -53,6 +52,10 @@ object v1CsidriverMod {
   /* static members */
   object CSIDriver {
     
+    @JSImport("@pulumi/kubernetes/storage/v1/csidriver", "CSIDriver")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing CSIDriver resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -61,44 +64,40 @@ object v1CsidriverMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/storage/v1/csidriver", "CSIDriver.get")
-    @js.native
-    def get(name: String, id: Input[ID]): CSIDriver = js.native
-    @JSImport("@pulumi/kubernetes/storage/v1/csidriver", "CSIDriver.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): CSIDriver = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): CSIDriver = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[CSIDriver]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): CSIDriver = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[CSIDriver]
     
     /**
       * Returns true if the given object is an instance of CSIDriver.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/storage/v1/csidriver", "CSIDriver.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/csidriver.CSIDriver */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/csidriver.CSIDriver */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/storage/v1/csidriver.CSIDriver */ Boolean]
   }
   
-  @js.native
   trait CSIDriverArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1]] = js.native
+    val apiVersion: js.UndefOr[Input[storageDotk8sDotioSlashv1]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CSIDriver]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.CSIDriver]] = js.undefined
     
     /**
       * Standard object metadata. metadata.Name indicates the name of the CSI driver that this object refers to; it MUST be the same name returned by the CSI GetPluginName() call for that driver. The driver name must be 63 characters or less, beginning and ending with an alphanumeric character ([a-z0-9A-Z]) with dashes (-), dots (.), and alphanumerics between. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
     
     /**
       * Specification of the CSI Driver.
       */
-    val spec: Input[typings.pulumiKubernetes.inputMod.storage.v1.CSIDriverSpec] = js.native
+    val spec: Input[typings.pulumiKubernetes.inputMod.storage.v1.CSIDriverSpec]
   }
   object CSIDriverArgs {
     

@@ -3,62 +3,60 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `Version` is the collection of configuration and [static
   * files](sites.versions.files) that determine how a site is displayed.
   */
-@js.native
 trait SchemaVersion extends StObject {
   
   /**
     * The configuration for the behavior of the site. This configuration exists
     * in the [`firebase.json`](/docs/cli/#the_firebasejson_file) file.
     */
-  var config: js.UndefOr[SchemaServingConfig] = js.native
+  var config: js.UndefOr[SchemaServingConfig] = js.undefined
   
   /**
     * Output only. The time at which the version was created.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Identifies the user who created the version.
     */
-  var createUser: js.UndefOr[SchemaActingUser] = js.native
+  var createUser: js.UndefOr[SchemaActingUser] = js.undefined
   
   /**
     * Output only. The time at which the version was `DELETED`.
     */
-  var deleteTime: js.UndefOr[String] = js.native
+  var deleteTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Identifies the user who `DELETED` the version.
     */
-  var deleteUser: js.UndefOr[SchemaActingUser] = js.native
+  var deleteUser: js.UndefOr[SchemaActingUser] = js.undefined
   
   /**
     * Output only. The total number of files associated with the version.
     * &lt;br&gt;This value is calculated after a version is `FINALIZED`.
     */
-  var fileCount: js.UndefOr[String] = js.native
+  var fileCount: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The time at which the version was `FINALIZED`.
     */
-  var finalizeTime: js.UndefOr[String] = js.native
+  var finalizeTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Identifies the user who `FINALIZED` the version.
     */
-  var finalizeUser: js.UndefOr[SchemaActingUser] = js.native
+  var finalizeUser: js.UndefOr[SchemaActingUser] = js.undefined
   
   /**
     * The labels used for extra metadata and/or filtering.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The unique identifier for a version, in the format:
@@ -66,7 +64,7 @@ trait SchemaVersion extends StObject {
     * This name is provided in the response body when you call the
     * [`CreateVersion`](../sites.versions/create) endpoint.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The deploy status of a version. &lt;br&gt; &lt;br&gt;For a successful
@@ -80,13 +78,13 @@ trait SchemaVersion extends StObject {
     * status of a version to `DELETED` by calling the
     * [`DeleteVersion`](sites.versions/delete) endpoint.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The total stored bytesize of the version. &lt;br&gt;This
     * value is calculated after a version is `FINALIZED`.
     */
-  var versionBytes: js.UndefOr[String] = js.native
+  var versionBytes: js.UndefOr[String] = js.undefined
 }
 object SchemaVersion {
   

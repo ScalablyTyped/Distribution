@@ -2,26 +2,24 @@ package typings.googleCloudTextToSpeech.mod.google.cloud.texttospeech.v1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a Voice. */
-@js.native
 trait IVoice extends StObject {
   
   /** Voice languageCodes */
-  var languageCodes: js.UndefOr[js.Array[String] | Null] = js.native
+  var languageCodes: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** Voice name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
   
   /** Voice naturalSampleRateHertz */
-  var naturalSampleRateHertz: js.UndefOr[Double | Null] = js.native
+  var naturalSampleRateHertz: js.UndefOr[Double | Null] = js.undefined
   
   /** Voice ssmlGender */
   var ssmlGender: js.UndefOr[
     SsmlVoiceGender | (/* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof google.cloud.texttospeech.v1beta1.SsmlVoiceGender * / any */ String) | Null
-  ] = js.native
+  ] = js.undefined
 }
 object IVoice {
   

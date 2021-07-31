@@ -10,9 +10,9 @@ TypeScript typings for Pub/Sub Lite API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.pubsublite |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 68 |
+| # downloads        | 1064 |
 | # stars            | 0 |
 
 ## Links

@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[SymbolLayout] = js.native
+  var layout: js.UndefOr[SymbolLayout] = js.undefined
   
-  var paint: js.UndefOr[SymbolPaint] = js.native
+  var paint: js.UndefOr[SymbolPaint] = js.undefined
   
-  var `type`: symbol = js.native
+  var `type`: symbol
 }
 object SymbolLayer {
   
   @scala.inline
-  def apply(id: String, `type`: symbol): SymbolLayer = {
+  def apply(id: String): SymbolLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("symbol")
     __obj.asInstanceOf[SymbolLayer]
   }
   

@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetPullRequestReviewProtectionResp
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetPullRequestReviewProtectionEndpoint extends StObject {
   
-  var parameters: ReposGetPullRequestReviewProtectionEndpoint = js.native
+  var parameters: ReposGetPullRequestReviewProtectionEndpoint
   
-  var request: ReposGetPullRequestReviewProtectionRequestOptions = js.native
+  var request: ReposGetPullRequestReviewProtectionRequestOptions
   
-  var response: OctokitResponse[ReposGetPullRequestReviewProtectionResponseData] = js.native
+  var response: OctokitResponse[ReposGetPullRequestReviewProtectionResponseData]
 }
 object ParametersReposGetPullRequestReviewProtectionEndpoint {
   

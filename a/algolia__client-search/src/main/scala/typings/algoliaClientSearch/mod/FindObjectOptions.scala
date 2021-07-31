@@ -2,23 +2,21 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindObjectOptions extends StObject {
   
   /**
     * If the underlying find object options should paginate
     * over a search method.
     */
-  val paginate: js.UndefOr[Boolean] = js.native
+  val paginate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The query used by the underlying find object to
     * find the object.
     */
-  val query: js.UndefOr[String] = js.native
+  val query: js.UndefOr[String] = js.undefined
 }
 object FindObjectOptions {
   

@@ -3,22 +3,20 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 import typings.googleapis.anon.EarlyStop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBqmlTrainingRun extends StObject {
   
   /**
     * [Output-only, Beta] List of each iteration results.
     */
-  var iterationResults: js.UndefOr[js.Array[SchemaBqmlIterationResult]] = js.native
+  var iterationResults: js.UndefOr[js.Array[SchemaBqmlIterationResult]] = js.undefined
   
   /**
     * [Output-only, Beta] Training run start time in milliseconds since the
     * epoch.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only, Beta] Different state applicable for a training run. IN
@@ -26,7 +24,7 @@ trait SchemaBqmlTrainingRun extends StObject {
     * a non-retryable failure. SUCCEEDED: Training run successfully completed.
     * CANCELLED: Training run cancelled by the user.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only, Beta] Training options used by this training run. These
@@ -36,7 +34,7 @@ trait SchemaBqmlTrainingRun extends StObject {
     * explicitly specified in the input query will be copied from the previous
     * training run.
     */
-  var trainingOptions: js.UndefOr[EarlyStop] = js.native
+  var trainingOptions: js.UndefOr[EarlyStop] = js.undefined
 }
 object SchemaBqmlTrainingRun {
   

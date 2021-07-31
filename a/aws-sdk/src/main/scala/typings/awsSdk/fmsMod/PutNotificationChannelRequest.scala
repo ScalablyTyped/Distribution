@@ -2,21 +2,19 @@ package typings.awsSdk.fmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutNotificationChannelRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that allows Amazon SNS to record AWS Firewall Manager activity. 
     */
-  var SnsRoleName: ResourceArn = js.native
+  var SnsRoleName: ResourceArn
   
   /**
     * The Amazon Resource Name (ARN) of the SNS topic that collects notifications from AWS Firewall Manager.
     */
-  var SnsTopicArn: ResourceArn = js.native
+  var SnsTopicArn: ResourceArn
 }
 object PutNotificationChannelRequest {
   

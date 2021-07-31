@@ -4,33 +4,33 @@ import typings.got.gotBooleans.`true`
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GotFormOptions[E /* <: String | Null */] extends GotOptions[E] {
+trait GotFormOptions[E /* <: String | Null */]
+  extends StObject
+     with GotOptions[E] {
   
-  var body: js.UndefOr[Record[String, _]] = js.native
+  var body: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var form: `true` = js.native
+  var form: `true`
   
-  var hooks: js.UndefOr[Hooks[GotFormOptions[E], Record[String, _]]] = js.native
+  var hooks: js.UndefOr[Hooks[GotFormOptions[E], Record[String, js.Any]]] = js.undefined
   
-  var json: js.UndefOr[Boolean] = js.native
+  var json: js.UndefOr[Boolean] = js.undefined
 }
 object GotFormOptions {
   
   @scala.inline
-  def apply[E /* <: String | Null */](form: `true`): GotFormOptions[E] = {
-    val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any])
+  def apply[E /* <: String | Null */](): GotFormOptions[E] = {
+    val __obj = js.Dynamic.literal(form = true)
     __obj.asInstanceOf[GotFormOptions[E]]
   }
   
   @scala.inline
-  implicit class GotFormOptionsMutableBuilder[Self <: GotFormOptions[_], E /* <: String | Null */] (val x: Self with GotFormOptions[E]) extends AnyVal {
+  implicit class GotFormOptionsMutableBuilder[Self <: GotFormOptions[?], E /* <: String | Null */] (val x: Self & GotFormOptions[E]) extends AnyVal {
     
     @scala.inline
-    def setBody(value: Record[String, _]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
+    def setBody(value: Record[String, js.Any]): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBodyUndefined: Self = StObject.set(x, "body", js.undefined)
@@ -39,7 +39,7 @@ object GotFormOptions {
     def setForm(value: `true`): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setHooks(value: Hooks[GotFormOptions[E], Record[String, _]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
+    def setHooks(value: Hooks[GotFormOptions[E], Record[String, js.Any]]): Self = StObject.set(x, "hooks", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHooksUndefined: Self = StObject.set(x, "hooks", js.undefined)

@@ -2,15 +2,13 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HostIp extends StObject {
   
-  var HostIp: String = js.native
+  var HostIp: String
   
-  var HostPort: String = js.native
+  var HostPort: String
 }
 object HostIp {
   

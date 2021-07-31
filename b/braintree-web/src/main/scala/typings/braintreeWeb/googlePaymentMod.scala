@@ -9,7 +9,6 @@ import typings.braintreeWeb.coreMod.callback
 import typings.googlepay.google.payments.api.PaymentDataRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googlePaymentMod {
@@ -18,7 +17,7 @@ object googlePaymentMod {
   trait GooglePayment extends StObject {
     
     def create(options: GoogleMerchantId): Unit = js.native
-    def create(options: GoogleMerchantId, callback: callback[_]): Unit = js.native
+    def create(options: GoogleMerchantId, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Create a configuration object for use in the `loadPaymentData` method.
@@ -202,7 +201,7 @@ object googlePaymentMod {
     def create_Promise(options: GoogleMerchantId): js.Promise[GooglePayment] = js.native
     
     def parseResponse(response: js.Any): Unit = js.native
-    def parseResponse(response: js.Any, callback: callback[_]): Unit = js.native
+    def parseResponse(response: js.Any, callback: callback[js.Any]): Unit = js.native
     /**
       * Parse the response from the tokenization.
       * @example with callback
@@ -235,18 +234,17 @@ object googlePaymentMod {
     def parseResponse_Promise(response: js.Any): js.Promise[GooglePaymentTokenizePayload] = js.native
   }
   
-  @js.native
   trait GooglePaymentTokenizePayload extends StObject {
     
-    var binData: Commercial = js.native
+    var binData: Commercial
     
-    var description: String = js.native
+    var description: String
     
-    var details: Bin = js.native
+    var details: Bin
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object GooglePaymentTokenizePayload {
     

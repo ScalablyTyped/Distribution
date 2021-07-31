@@ -2,36 +2,34 @@ package typings.winrtUwp.Windows.Security.Cryptography.Certificates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the usages of a certificate key. */
-@js.native
 trait CertificateKeyUsages extends StObject {
   
   /** Gets or sets if the key is for cRLSign. */
-  var crlSign: Boolean = js.native
+  var crlSign: Boolean
   
   /** Gets or sets if the key is for data encipherment. */
-  var dataEncipherment: Boolean = js.native
+  var dataEncipherment: Boolean
   
   /** Gets or sets if the key is for digital signature. */
-  var digitalSignature: Boolean = js.native
+  var digitalSignature: Boolean
   
   /** Gets or sets if the key is for encipher only. */
-  var encipherOnly: Boolean = js.native
+  var encipherOnly: Boolean
   
   /** Gets or sets if the key is for key agreement. */
-  var keyAgreement: Boolean = js.native
+  var keyAgreement: Boolean
   
   /** Gets or sets if the key is for key certificate sign. */
-  var keyCertificateSign: Boolean = js.native
+  var keyCertificateSign: Boolean
   
   /** Gets or sets if the key is for key encipherment. */
-  var keyEncipherment: Boolean = js.native
+  var keyEncipherment: Boolean
   
   /** Gets or sets if the key is for non-repudiation. */
-  var nonRepudiation: Boolean = js.native
+  var nonRepudiation: Boolean
 }
 object CertificateKeyUsages {
   

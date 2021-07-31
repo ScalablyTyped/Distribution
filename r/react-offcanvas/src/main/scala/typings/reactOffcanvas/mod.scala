@@ -10,7 +10,6 @@ import typings.reactOffcanvas.reactOffcanvasStrings.push
 import typings.reactOffcanvas.reactOffcanvasStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,22 +50,21 @@ object mod {
     def this(props: OffCanvasMenuProps, context: js.Any) = this()
   }
   
-  @js.native
   trait OffCanvasBodyProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var isMenuOpened: js.UndefOr[Boolean] = js.native
+    var isMenuOpened: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[left | right] = js.native
+    var position: js.UndefOr[left | right] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object OffCanvasBodyProps {
     
@@ -123,22 +121,21 @@ object mod {
     }
   }
   
-  @js.native
   trait OffCanvasMenuProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var isMenuOpened: js.UndefOr[Boolean] = js.native
+    var isMenuOpened: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[left | right] = js.native
+    var position: js.UndefOr[left | right] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object OffCanvasMenuProps {
     
@@ -195,20 +192,19 @@ object mod {
     }
   }
   
-  @js.native
   trait OffCanvasProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var effect: js.UndefOr[push | overlay | parallax] = js.native
+    var effect: js.UndefOr[push | overlay | parallax] = js.undefined
     
-    var isMenuOpened: js.UndefOr[Boolean] = js.native
+    var isMenuOpened: js.UndefOr[Boolean] = js.undefined
     
-    var position: js.UndefOr[left | right] = js.native
+    var position: js.UndefOr[left | right] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object OffCanvasProps {
     

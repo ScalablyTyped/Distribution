@@ -9,10 +9,13 @@ import typings.std.Window
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("log4javascript", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("log4javascript", "AjaxAppender")
   @js.native
@@ -215,76 +218,12 @@ object mod {
     	 */
     def this(container: HTMLElement) = this()
     def this(container: HTMLElement, lazyInit: Boolean) = this()
-    def this(container: HTMLElement, lazyInit: js.UndefOr[scala.Nothing], initiallyMinimized: Boolean) = this()
     def this(container: HTMLElement, lazyInit: Boolean, initiallyMinimized: Boolean) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: Boolean
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean
-    ) = this()
+    def this(container: HTMLElement, lazyInit: Unit, initiallyMinimized: Boolean) = this()
     def this(container: HTMLElement, lazyInit: Boolean, initiallyMinimized: Boolean, useDocumentWrite: Boolean) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: Boolean,
-      width: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: Boolean,
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
+    def this(container: HTMLElement, lazyInit: Boolean, initiallyMinimized: Unit, useDocumentWrite: Boolean) = this()
+    def this(container: HTMLElement, lazyInit: Unit, initiallyMinimized: Boolean, useDocumentWrite: Boolean) = this()
+    def this(container: HTMLElement, lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Boolean) = this()
     def this(
       container: HTMLElement,
       lazyInit: Boolean,
@@ -294,63 +233,56 @@ object mod {
     ) = this()
     def this(
       container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
+      lazyInit: Boolean,
       initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
+      useDocumentWrite: Unit,
+      width: Double
     ) = this()
     def this(
       container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
+      lazyInit: Boolean,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Double
     ) = this()
     def this(
       container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
+      lazyInit: Boolean,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Unit,
+      width: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
       initiallyMinimized: Boolean,
       useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
+      width: Double
     ) = this()
     def this(
       container: HTMLElement,
-      lazyInit: js.UndefOr[scala.Nothing],
+      lazyInit: Unit,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Unit,
+      width: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Unit,
+      width: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Boolean,
       initiallyMinimized: Boolean,
       useDocumentWrite: Boolean,
       width: Double,
@@ -359,32 +291,16 @@ object mod {
     def this(
       container: HTMLElement,
       lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      container: HTMLElement,
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
+      initiallyMinimized: Boolean,
       useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
+      width: Unit,
       height: Double
     ) = this()
     def this(
       container: HTMLElement,
       lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Unit,
       width: Double,
       height: Double
     ) = this()
@@ -392,32 +308,104 @@ object mod {
       container: HTMLElement,
       lazyInit: Boolean,
       initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
+      useDocumentWrite: Unit,
+      width: Unit,
       height: Double
     ) = this()
     def this(
       container: HTMLElement,
       lazyInit: Boolean,
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Boolean,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Boolean,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Unit,
       width: Double,
       height: Double
     ) = this()
     def this(
       container: HTMLElement,
       lazyInit: Boolean,
-      initiallyMinimized: Boolean,
-      useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
+      initiallyMinimized: Unit,
+      useDocumentWrite: Unit,
+      width: Unit,
       height: Double
     ) = this()
     def this(
       container: HTMLElement,
-      lazyInit: Boolean,
+      lazyInit: Unit,
       initiallyMinimized: Boolean,
       useDocumentWrite: Boolean,
       width: Double,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Boolean,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Unit,
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Unit,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Unit,
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      container: HTMLElement,
+      lazyInit: Unit,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Unit,
+      width: Unit,
       height: Double
     ) = this()
     
@@ -427,7 +415,7 @@ object mod {
     	 */
     def addCommandLineFunction(
       functionName: String,
-      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, _]
+      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, js.Any]
     ): Unit = js.native
     
     /**
@@ -595,8 +583,8 @@ object mod {
   	 */
   class JsonLayout () extends Layout {
     def this(readable: Boolean) = this()
-    def this(readable: js.UndefOr[scala.Nothing], combineMessages: Boolean) = this()
     def this(readable: Boolean, combineMessages: Boolean) = this()
+    def this(readable: Unit, combineMessages: Boolean) = this()
     
     /**
     	 * Returns whether or not to each log message is formatted with line breaks and tabs.
@@ -629,7 +617,7 @@ object mod {
     /**
     	 * Used internally by log4javascript in constructing formatted output for some layouts.
     	 */
-    def getDataValues(loggingEvent: LoggingEvent): js.Array[_] = js.native
+    def getDataValues(loggingEvent: LoggingEvent): js.Array[js.Any] = js.native
     
     /**
     	 * Returns whether the layout has any custom fields.
@@ -677,39 +665,55 @@ object mod {
   object Level extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Level with Double] = js.native
+    def apply(value: Double): js.UndefOr[Level & Double] = js.native
     
     @js.native
-    sealed trait ALL extends Level
-    /* 0 */ val ALL: typings.log4javascript.mod.Level.ALL with Double = js.native
+    sealed trait ALL
+      extends StObject
+         with Level
+    /* 0 */ val ALL: typings.log4javascript.mod.Level.ALL & Double = js.native
     
     @js.native
-    sealed trait DEBUG extends Level
-    /* 2 */ val DEBUG: typings.log4javascript.mod.Level.DEBUG with Double = js.native
+    sealed trait DEBUG
+      extends StObject
+         with Level
+    /* 2 */ val DEBUG: typings.log4javascript.mod.Level.DEBUG & Double = js.native
     
     @js.native
-    sealed trait ERROR extends Level
-    /* 5 */ val ERROR: typings.log4javascript.mod.Level.ERROR with Double = js.native
+    sealed trait ERROR
+      extends StObject
+         with Level
+    /* 5 */ val ERROR: typings.log4javascript.mod.Level.ERROR & Double = js.native
     
     @js.native
-    sealed trait FATAL extends Level
-    /* 6 */ val FATAL: typings.log4javascript.mod.Level.FATAL with Double = js.native
+    sealed trait FATAL
+      extends StObject
+         with Level
+    /* 6 */ val FATAL: typings.log4javascript.mod.Level.FATAL & Double = js.native
     
     @js.native
-    sealed trait INFO extends Level
-    /* 3 */ val INFO: typings.log4javascript.mod.Level.INFO with Double = js.native
+    sealed trait INFO
+      extends StObject
+         with Level
+    /* 3 */ val INFO: typings.log4javascript.mod.Level.INFO & Double = js.native
     
     @js.native
-    sealed trait OFF extends Level
-    /* 7 */ val OFF: typings.log4javascript.mod.Level.OFF with Double = js.native
+    sealed trait OFF
+      extends StObject
+         with Level
+    /* 7 */ val OFF: typings.log4javascript.mod.Level.OFF & Double = js.native
     
     @js.native
-    sealed trait TRACE extends Level
-    /* 1 */ val TRACE: typings.log4javascript.mod.Level.TRACE with Double = js.native
+    sealed trait TRACE
+      extends StObject
+         with Level
+    /* 1 */ val TRACE: typings.log4javascript.mod.Level.TRACE & Double = js.native
     
     @js.native
-    sealed trait WARN extends Level
-    /* 4 */ val WARN: typings.log4javascript.mod.Level.WARN with Double = js.native
+    sealed trait WARN
+      extends StObject
+         with Level
+    /* 4 */ val WARN: typings.log4javascript.mod.Level.WARN & Double = js.native
   }
   
   @JSImport("log4javascript", "Logger")
@@ -818,7 +822,7 @@ object mod {
     /**
     	 * Generic logging method used by wrapper methods such as debug, error etc.
     	 */
-    def log(level: Level, params: js.Array[_]): Unit = js.native
+    def log(level: Level, params: js.Array[js.Any]): Unit = js.native
     
     var name: String = js.native
     
@@ -885,7 +889,7 @@ object mod {
     
     var logger: Logger = js.native
     
-    var messages: js.Array[_] = js.native
+    var messages: js.Array[js.Any] = js.native
     
     var milliseconds: Double = js.native
     
@@ -988,164 +992,20 @@ object mod {
   	 */
   class PopUpAppender () extends Appender {
     def this(lazyInit: Boolean) = this()
-    def this(lazyInit: js.UndefOr[scala.Nothing], initiallyMinimized: Boolean) = this()
     def this(lazyInit: Boolean, initiallyMinimized: Boolean) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean
-    ) = this()
-    def this(lazyInit: js.UndefOr[scala.Nothing], initiallyMinimized: Boolean, useDocumentWrite: Boolean) = this()
-    def this(lazyInit: Boolean, initiallyMinimized: js.UndefOr[scala.Nothing], useDocumentWrite: Boolean) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Boolean) = this()
     def this(lazyInit: Boolean, initiallyMinimized: Boolean, useDocumentWrite: Boolean) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: Boolean,
-      width: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double
-    ) = this()
+    def this(lazyInit: Boolean, initiallyMinimized: Unit, useDocumentWrite: Boolean) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Boolean, useDocumentWrite: Boolean) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Boolean) = this()
     def this(lazyInit: Boolean, initiallyMinimized: Boolean, useDocumentWrite: Boolean, width: Double) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: js.UndefOr[scala.Nothing],
-      initiallyMinimized: Boolean,
-      useDocumentWrite: Boolean,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: js.UndefOr[scala.Nothing],
-      useDocumentWrite: Boolean,
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: Boolean,
-      useDocumentWrite: js.UndefOr[scala.Nothing],
-      width: Double,
-      height: Double
-    ) = this()
-    def this(
-      lazyInit: Boolean,
-      initiallyMinimized: Boolean,
-      useDocumentWrite: Boolean,
-      width: js.UndefOr[scala.Nothing],
-      height: Double
-    ) = this()
+    def this(lazyInit: Boolean, initiallyMinimized: Boolean, useDocumentWrite: Unit, width: Double) = this()
+    def this(lazyInit: Boolean, initiallyMinimized: Unit, useDocumentWrite: Boolean, width: Double) = this()
+    def this(lazyInit: Boolean, initiallyMinimized: Unit, useDocumentWrite: Unit, width: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Boolean, useDocumentWrite: Boolean, width: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Boolean, useDocumentWrite: Unit, width: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Boolean, width: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Unit, width: Double) = this()
     def this(
       lazyInit: Boolean,
       initiallyMinimized: Boolean,
@@ -1153,6 +1013,63 @@ object mod {
       width: Double,
       height: Double
     ) = this()
+    def this(
+      lazyInit: Boolean,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Boolean,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(
+      lazyInit: Boolean,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Unit,
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      lazyInit: Boolean,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Unit,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(
+      lazyInit: Boolean,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      lazyInit: Boolean,
+      initiallyMinimized: Unit,
+      useDocumentWrite: Boolean,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(lazyInit: Boolean, initiallyMinimized: Unit, useDocumentWrite: Unit, width: Double, height: Double) = this()
+    def this(lazyInit: Boolean, initiallyMinimized: Unit, useDocumentWrite: Unit, width: Unit, height: Double) = this()
+    def this(
+      lazyInit: Unit,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Boolean,
+      width: Double,
+      height: Double
+    ) = this()
+    def this(
+      lazyInit: Unit,
+      initiallyMinimized: Boolean,
+      useDocumentWrite: Boolean,
+      width: Unit,
+      height: Double
+    ) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Boolean, useDocumentWrite: Unit, width: Double, height: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Boolean, useDocumentWrite: Unit, width: Unit, height: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Boolean, width: Double, height: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Boolean, width: Unit, height: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Unit, width: Double, height: Double) = this()
+    def this(lazyInit: Unit, initiallyMinimized: Unit, useDocumentWrite: Unit, width: Unit, height: Double) = this()
     
     /**
     	 * Adds a function with the name specified to the list of functions available on the command line. This feature may be used
@@ -1160,7 +1077,7 @@ object mod {
     	 */
     def addCommandLineFunction(
       functionName: String,
-      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, _]
+      commandLineFunction: js.Function3[/* appender */ Appender, /* args */ js.Any, /* returnValue */ AppendResult, js.Any]
     ): Unit = js.native
     
     /**
@@ -1371,100 +1288,81 @@ object mod {
     def this(combineMessages: Boolean) = this()
   }
   
-  @JSImport("log4javascript", "addEventListener")
-  @js.native
+  @scala.inline
   def addEventListener(
     eventType: String,
     listener: js.Function3[/* sender */ js.Any, /* eventType */ String, /* eventArgs */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("log4javascript", "dispatchEvent")
-  @js.native
-  def dispatchEvent(eventType: String, eventArgs: js.Any): Unit = js.native
+  @scala.inline
+  def dispatchEvent(eventType: String, eventArgs: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatchEvent")(eventType.asInstanceOf[js.Any], eventArgs.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("log4javascript", "evalInScope")
-  @js.native
-  def evalInScope(expr: String): js.Any = js.native
+  @scala.inline
+  def evalInScope(expr: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("evalInScope")(expr.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("log4javascript", "getDefaultLogger")
-  @js.native
-  def getDefaultLogger(): Logger = js.native
+  @scala.inline
+  def getDefaultLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLogger")().asInstanceOf[Logger]
   
-  @JSImport("log4javascript", "getLogger")
-  @js.native
-  def getLogger(): Logger = js.native
-  @JSImport("log4javascript", "getLogger")
-  @js.native
-  def getLogger(loggerName: String): Logger = js.native
+  @scala.inline
+  def getLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")().asInstanceOf[Logger]
+  @scala.inline
+  def getLogger(loggerName: String): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getLogger")(loggerName.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
-  @JSImport("log4javascript", "getNullLogger")
-  @js.native
-  def getNullLogger(): Logger = js.native
+  @scala.inline
+  def getNullLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getNullLogger")().asInstanceOf[Logger]
   
-  @JSImport("log4javascript", "getRootLogger")
-  @js.native
-  def getRootLogger(): Logger = js.native
+  @scala.inline
+  def getRootLogger(): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("getRootLogger")().asInstanceOf[Logger]
   
-  @JSImport("log4javascript", "isEnabled")
-  @js.native
-  def isEnabled(): Boolean = js.native
+  @scala.inline
+  def isEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnabled")().asInstanceOf[Boolean]
   
   object logLog {
     
-    @JSImport("log4javascript", "logLog.debug")
+    @JSImport("log4javascript", "logLog")
     @js.native
-    def debug(message: String): Unit = js.native
-    @JSImport("log4javascript", "logLog.debug")
-    @js.native
-    def debug(message: String, exception: Error): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("log4javascript", "logLog.displayDebug")
-    @js.native
-    def displayDebug(): Unit = js.native
+    @scala.inline
+    def debug(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def debug(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("debug")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("log4javascript", "logLog.error")
-    @js.native
-    def error(message: String): Unit = js.native
-    @JSImport("log4javascript", "logLog.error")
-    @js.native
-    def error(message: String, exception: Error): Unit = js.native
+    @scala.inline
+    def displayDebug(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("displayDebug")().asInstanceOf[Unit]
     
-    @JSImport("log4javascript", "logLog.setAlertAllErrors")
-    @js.native
-    def setAlertAllErrors(alertAllErrors: Boolean): Unit = js.native
+    @scala.inline
+    def error(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def error(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("error")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("log4javascript", "logLog.setQuietMode")
-    @js.native
-    def setQuietMode(quietMode: Boolean): Unit = js.native
+    @scala.inline
+    def setAlertAllErrors(alertAllErrors: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlertAllErrors")(alertAllErrors.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("log4javascript", "logLog.warn")
-    @js.native
-    def warn(message: String): Unit = js.native
-    @JSImport("log4javascript", "logLog.warn")
-    @js.native
-    def warn(message: String, exception: Error): Unit = js.native
+    @scala.inline
+    def setQuietMode(quietMode: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setQuietMode")(quietMode.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def warn(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def warn(message: String, exception: Error): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any], exception.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @JSImport("log4javascript", "removeEventListener")
-  @js.native
+  @scala.inline
   def removeEventListener(
     eventType: String,
     listener: js.Function3[/* sender */ js.Any, /* eventType */ String, /* eventArgs */ js.Any, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEventListener")(eventType.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("log4javascript", "resetConfiguration")
-  @js.native
-  def resetConfiguration(): Unit = js.native
+  @scala.inline
+  def resetConfiguration(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetConfiguration")().asInstanceOf[Unit]
   
-  @JSImport("log4javascript", "setEnabled")
-  @js.native
-  def setEnabled(enabled: Boolean): Unit = js.native
+  @scala.inline
+  def setEnabled(enabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(enabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("log4javascript", "setEventTypes")
-  @js.native
-  def setEventTypes(eventTypes: js.Array[String]): Unit = js.native
+  @scala.inline
+  def setEventTypes(eventTypes: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEventTypes")(eventTypes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("log4javascript", "setShowStackTraces")
-  @js.native
-  def setShowStackTraces(show: Boolean): Unit = js.native
+  @scala.inline
+  def setShowStackTraces(show: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setShowStackTraces")(show.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

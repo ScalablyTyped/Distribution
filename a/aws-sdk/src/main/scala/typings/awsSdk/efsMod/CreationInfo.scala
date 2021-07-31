@@ -2,26 +2,24 @@ package typings.awsSdk.efsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreationInfo extends StObject {
   
   /**
     * Specifies the POSIX group ID to apply to the RootDirectory. Accepts values from 0 to 2^32 (4294967295).
     */
-  var OwnerGid: typings.awsSdk.efsMod.OwnerGid = js.native
+  var OwnerGid: typings.awsSdk.efsMod.OwnerGid
   
   /**
     * Specifies the POSIX user ID to apply to the RootDirectory. Accepts values from 0 to 2^32 (4294967295).
     */
-  var OwnerUid: typings.awsSdk.efsMod.OwnerUid = js.native
+  var OwnerUid: typings.awsSdk.efsMod.OwnerUid
   
   /**
     * Specifies the POSIX permissions to apply to the RootDirectory, in the format of an octal number representing the file's mode bits.
     */
-  var Permissions: typings.awsSdk.efsMod.Permissions = js.native
+  var Permissions: typings.awsSdk.efsMod.Permissions
 }
 object CreationInfo {
   

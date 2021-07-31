@@ -5,17 +5,15 @@ import typings.axios.mod.AxiosRequestConfig
 import typings.axios.mod.AxiosResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Password extends StObject {
     
-    var password: String = js.native
+    var password: String
     
-    var username: String = js.native
+    var username: String
   }
   object Password {
     
@@ -36,19 +34,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var request: AxiosInterceptorManager[AxiosRequestConfig] = js.native
+    var request: AxiosInterceptorManager[AxiosRequestConfig]
     
-    var response: AxiosInterceptorManager[AxiosResponse[_]] = js.native
+    var response: AxiosInterceptorManager[AxiosResponse[js.Any]]
   }
   object Request {
     
     @scala.inline
     def apply(
       request: AxiosInterceptorManager[AxiosRequestConfig],
-      response: AxiosInterceptorManager[AxiosResponse[_]]
+      response: AxiosInterceptorManager[AxiosResponse[js.Any]]
     ): Request = {
       val __obj = js.Dynamic.literal(request = request.asInstanceOf[js.Any], response = response.asInstanceOf[js.Any])
       __obj.asInstanceOf[Request]
@@ -61,7 +58,7 @@ object anon {
       def setRequest(value: AxiosInterceptorManager[AxiosRequestConfig]): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setResponse(value: AxiosInterceptorManager[AxiosResponse[_]]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
+      def setResponse(value: AxiosInterceptorManager[AxiosResponse[js.Any]]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])
     }
   }
 }

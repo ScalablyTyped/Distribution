@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Element
 import typings.openui5.sap.ui.core.RenderManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MenuItemBase extends Element {
+trait MenuItemBase
+  extends StObject
+     with Element {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>select</code> event of this

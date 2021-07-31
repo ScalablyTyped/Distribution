@@ -3,21 +3,20 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectionCollectionSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var multipleSelection: js.UndefOr[Boolean] = js.native
+  var multipleSelection: js.UndefOr[Boolean] = js.undefined
   
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
-  var subscribers: js.UndefOr[SelectionCollectionSettingsSubscribers] = js.native
+  var subscribers: js.UndefOr[SelectionCollectionSettingsSubscribers] = js.undefined
 }
 object SelectionCollectionSettings {
   

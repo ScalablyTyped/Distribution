@@ -2,27 +2,25 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDeviceWatcher extends StObject {
   
-  var onadded: js.Any = js.native
+  var onadded: js.Any
   
-  var onenumerationcompleted: js.Any = js.native
+  var onenumerationcompleted: js.Any
   
-  var onremoved: js.Any = js.native
+  var onremoved: js.Any
   
-  var onstopped: js.Any = js.native
+  var onstopped: js.Any
   
-  var onupdated: js.Any = js.native
+  var onupdated: js.Any
   
-  def start(): Unit = js.native
+  def start(): Unit
   
-  var status: DeviceWatcherStatus = js.native
+  var status: DeviceWatcherStatus
   
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object IDeviceWatcher {
   

@@ -2,57 +2,55 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*************************
   * model interfaces
   ************************/
 /** Analysis results for each requested feature. */
-@js.native
 trait AnalysisResults extends StObject {
   
   /** Text that was used in the analysis. */
-  var analyzed_text: js.UndefOr[String] = js.native
+  var analyzed_text: js.UndefOr[String] = js.undefined
   
   /** The categories that the service assigned to the analyzed text. */
-  var categories: js.UndefOr[js.Array[CategoriesResult]] = js.native
+  var categories: js.UndefOr[js.Array[CategoriesResult]] = js.undefined
   
   /** The general concepts referenced or alluded to in the analyzed text. */
-  var concepts: js.UndefOr[js.Array[ConceptsResult]] = js.native
+  var concepts: js.UndefOr[js.Array[ConceptsResult]] = js.undefined
   
   /** The anger, disgust, fear, joy, or sadness conveyed by the content. */
-  var emotion: js.UndefOr[EmotionResult] = js.native
+  var emotion: js.UndefOr[EmotionResult] = js.undefined
   
   /** The entities detected in the analyzed text. */
-  var entities: js.UndefOr[js.Array[EntitiesResult]] = js.native
+  var entities: js.UndefOr[js.Array[EntitiesResult]] = js.undefined
   
   /** The keywords from the analyzed text. */
-  var keywords: js.UndefOr[js.Array[KeywordsResult]] = js.native
+  var keywords: js.UndefOr[js.Array[KeywordsResult]] = js.undefined
   
   /** Language used to analyze the text. */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /** Webpage metadata, such as the author and the title of the page. */
-  var metadata: js.UndefOr[AnalysisResultsMetadata] = js.native
+  var metadata: js.UndefOr[AnalysisResultsMetadata] = js.undefined
   
   /** The relationships between entities in the content. */
-  var relations: js.UndefOr[js.Array[RelationsResult]] = js.native
+  var relations: js.UndefOr[js.Array[RelationsResult]] = js.undefined
   
   /** URL of the webpage that was analyzed. */
-  var retrieved_url: js.UndefOr[String] = js.native
+  var retrieved_url: js.UndefOr[String] = js.undefined
   
   /** Sentences parsed into `subject`, `action`, and `object` form. */
-  var semantic_roles: js.UndefOr[js.Array[SemanticRolesResult]] = js.native
+  var semantic_roles: js.UndefOr[js.Array[SemanticRolesResult]] = js.undefined
   
   /** The sentiment of the content. */
-  var sentiment: js.UndefOr[SentimentResult] = js.native
+  var sentiment: js.UndefOr[SentimentResult] = js.undefined
   
   /** Tokens and sentences returned from syntax analysis. */
-  var syntax: js.UndefOr[SyntaxResult] = js.native
+  var syntax: js.UndefOr[SyntaxResult] = js.undefined
   
   /** API usage information for the request. */
-  var usage: js.UndefOr[AnalysisResultsUsage] = js.native
+  var usage: js.UndefOr[AnalysisResultsUsage] = js.undefined
 }
 object AnalysisResults {
   

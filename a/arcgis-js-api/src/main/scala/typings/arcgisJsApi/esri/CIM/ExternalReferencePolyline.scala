@@ -2,21 +2,21 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExternalReferencePolyline extends ExternalReferenceGeometry {
+trait ExternalReferencePolyline
+  extends StObject
+     with ExternalReferenceGeometry {
   
-  var curvePath: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.native
+  var curvePath: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.undefined
   
-  var hasM: js.UndefOr[Boolean] = js.native
+  var hasM: js.UndefOr[Boolean] = js.undefined
   
-  var hasZ: js.UndefOr[Boolean] = js.native
+  var hasZ: js.UndefOr[Boolean] = js.undefined
   
-  var paths: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.native
+  var paths: js.UndefOr[js.Array[js.Array[js.Array[Double]]]] = js.undefined
   
-  var spatialReference: js.UndefOr[ExternalReferenceSpatialReference] = js.native
+  var spatialReference: js.UndefOr[ExternalReferenceSpatialReference] = js.undefined
 }
 object ExternalReferencePolyline {
   

@@ -2,23 +2,21 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLoadingMethods extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def indicator(): Unit = js.native
+  def indicator(): Unit
   
-  def indicatorElement(): Unit = js.native
+  def indicatorElement(): Unit
   
-  def refreshPos(): Unit = js.native
+  def refreshPos(): Unit
   
-  def show(refresh: js.Object): Unit = js.native
+  def show(refresh: js.Object): Unit
 }
 object IgLoadingMethods {
   

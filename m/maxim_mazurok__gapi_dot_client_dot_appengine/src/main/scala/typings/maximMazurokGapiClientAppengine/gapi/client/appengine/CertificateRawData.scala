@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CertificateRawData extends StObject {
   
   /**
     * Unencrypted PEM encoded RSA private key. This field is set once on certificate creation and then encrypted. The key size must be 2048 bits or fewer. Must include the header and
     * footer. Example: -----BEGIN RSA PRIVATE KEY----- -----END RSA PRIVATE KEY----- @InputOnly
     */
-  var privateKey: js.UndefOr[String] = js.native
+  var privateKey: js.UndefOr[String] = js.undefined
   
   /**
     * PEM encoded x.509 public key certificate. This field is set once on certificate creation. Must include the header and footer. Example: -----BEGIN CERTIFICATE----- -----END
     * CERTIFICATE-----
     */
-  var publicCertificate: js.UndefOr[String] = js.native
+  var publicCertificate: js.UndefOr[String] = js.undefined
 }
 object CertificateRawData {
   

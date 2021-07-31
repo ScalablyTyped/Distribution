@@ -2,38 +2,36 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appautoscaling {
   
-  @js.native
   trait PolicyStepScalingPolicyConfiguration extends StObject {
     
     /**
       * Specifies whether the adjustment is an absolute number or a percentage of the current capacity. Valid values are `ChangeInCapacity`, `ExactCapacity`, and `PercentChangeInCapacity`.
       */
-    var adjustmentType: js.UndefOr[String] = js.native
+    var adjustmentType: js.UndefOr[String] = js.undefined
     
     /**
       * The amount of time, in seconds, after a scaling activity completes and before the next scaling activity can start.
       */
-    var cooldown: js.UndefOr[Double] = js.native
+    var cooldown: js.UndefOr[Double] = js.undefined
     
     /**
       * The aggregation type for the policy's metrics. Valid values are "Minimum", "Maximum", and "Average". Without a value, AWS will treat the aggregation type as "Average".
       */
-    var metricAggregationType: js.UndefOr[String] = js.native
+    var metricAggregationType: js.UndefOr[String] = js.undefined
     
     /**
       * The minimum number to adjust your scalable dimension as a result of a scaling activity. If the adjustment type is PercentChangeInCapacity, the scaling policy changes the scalable dimension of the scalable target by this amount.
       */
-    var minAdjustmentMagnitude: js.UndefOr[Double] = js.native
+    var minAdjustmentMagnitude: js.UndefOr[Double] = js.undefined
     
     /**
       * A set of adjustments that manage scaling. These have the following structure:
       */
-    var stepAdjustments: js.UndefOr[js.Array[PolicyStepScalingPolicyConfigurationStepAdjustment]] = js.native
+    var stepAdjustments: js.UndefOr[js.Array[PolicyStepScalingPolicyConfigurationStepAdjustment]] = js.undefined
   }
   object PolicyStepScalingPolicyConfiguration {
     
@@ -81,23 +79,22 @@ object appautoscaling {
     }
   }
   
-  @js.native
   trait PolicyStepScalingPolicyConfigurationStepAdjustment extends StObject {
     
     /**
       * The lower bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as negative infinity.
       */
-    var metricIntervalLowerBound: js.UndefOr[String] = js.native
+    var metricIntervalLowerBound: js.UndefOr[String] = js.undefined
     
     /**
       * The upper bound for the difference between the alarm threshold and the CloudWatch metric. Without a value, AWS will treat this bound as infinity. The upper bound must be greater than the lower bound.
       */
-    var metricIntervalUpperBound: js.UndefOr[String] = js.native
+    var metricIntervalUpperBound: js.UndefOr[String] = js.undefined
     
     /**
       * The number of members by which to scale, when the adjustment bounds are breached. A positive value scales up. A negative value scales down.
       */
-    var scalingAdjustment: Double = js.native
+    var scalingAdjustment: Double
   }
   object PolicyStepScalingPolicyConfigurationStepAdjustment {
     
@@ -127,38 +124,37 @@ object appautoscaling {
     }
   }
   
-  @js.native
   trait PolicyTargetTrackingScalingPolicyConfiguration extends StObject {
     
     /**
       * A custom CloudWatch metric. Documentation can be found  at: [AWS Customized Metric Specification](https://docs.aws.amazon.com/autoscaling/ec2/APIReference/API_CustomizedMetricSpecification.html). See supported fields below.
       */
-    var customizedMetricSpecification: js.UndefOr[PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification] = js.native
+    var customizedMetricSpecification: js.UndefOr[PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification] = js.undefined
     
     /**
       * Indicates whether scale in by the target tracking policy is disabled. If the value is true, scale in is disabled and the target tracking policy won't remove capacity from the scalable resource. Otherwise, scale in is enabled and the target tracking policy can remove capacity from the scalable resource. The default value is `false`.
       */
-    var disableScaleIn: js.UndefOr[Boolean] = js.native
+    var disableScaleIn: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A predefined metric. See supported fields below.
       */
-    var predefinedMetricSpecification: js.UndefOr[PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification] = js.native
+    var predefinedMetricSpecification: js.UndefOr[PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification] = js.undefined
     
     /**
       * The amount of time, in seconds, after a scale in activity completes before another scale in activity can start.
       */
-    var scaleInCooldown: js.UndefOr[Double] = js.native
+    var scaleInCooldown: js.UndefOr[Double] = js.undefined
     
     /**
       * The amount of time, in seconds, after a scale out activity completes before another scale out activity can start.
       */
-    var scaleOutCooldown: js.UndefOr[Double] = js.native
+    var scaleOutCooldown: js.UndefOr[Double] = js.undefined
     
     /**
       * The target value for the metric.
       */
-    var targetValue: Double = js.native
+    var targetValue: Double
   }
   object PolicyTargetTrackingScalingPolicyConfiguration {
     
@@ -206,7 +202,6 @@ object appautoscaling {
     }
   }
   
-  @js.native
   trait PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification extends StObject {
     
     /**
@@ -216,27 +211,27 @@ object appautoscaling {
         js.Array[
           PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The name of the metric.
       */
-    var metricName: String = js.native
+    var metricName: String
     
     /**
       * The namespace of the metric.
       */
-    var namespace: String = js.native
+    var namespace: String
     
     /**
       * The statistic of the metric. Valid values: `Average`, `Minimum`, `Maximum`, `SampleCount`, and `Sum`.
       */
-    var statistic: String = js.native
+    var statistic: String
     
     /**
       * The unit of the metric.
       */
-    var unit: js.UndefOr[String] = js.native
+    var unit: js.UndefOr[String] = js.undefined
   }
   object PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecification {
     
@@ -279,18 +274,17 @@ object appautoscaling {
     }
   }
   
-  @js.native
   trait PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension extends StObject {
     
     /**
       * The name of the policy. Must be between 1 and 255 characters in length.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Value of the dimension.
       */
-    var value: String = js.native
+    var value: String
   }
   object PolicyTargetTrackingScalingPolicyConfigurationCustomizedMetricSpecificationDimension {
     
@@ -311,18 +305,17 @@ object appautoscaling {
     }
   }
   
-  @js.native
   trait PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification extends StObject {
     
     /**
       * The metric type.
       */
-    var predefinedMetricType: String = js.native
+    var predefinedMetricType: String
     
     /**
       * Reserved for future use. Must be less than or equal to 1023 characters in length.
       */
-    var resourceLabel: js.UndefOr[String] = js.native
+    var resourceLabel: js.UndefOr[String] = js.undefined
   }
   object PolicyTargetTrackingScalingPolicyConfigurationPredefinedMetricSpecification {
     
@@ -346,18 +339,17 @@ object appautoscaling {
     }
   }
   
-  @js.native
   trait ScheduledActionScalableTargetAction extends StObject {
     
     /**
       * The maximum capacity.
       */
-    var maxCapacity: js.UndefOr[Double] = js.native
+    var maxCapacity: js.UndefOr[Double] = js.undefined
     
     /**
       * The minimum capacity.
       */
-    var minCapacity: js.UndefOr[Double] = js.native
+    var minCapacity: js.UndefOr[Double] = js.undefined
   }
   object ScheduledActionScalableTargetAction {
     

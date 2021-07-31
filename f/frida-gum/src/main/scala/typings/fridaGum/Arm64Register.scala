@@ -2,7 +2,6 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -174,7 +173,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.fridaGum.fridaGumStrings.q30
   - typings.fridaGum.fridaGumStrings.q31
 */
-trait Arm64Register extends _Arm64CallArgument
+trait Arm64Register
+  extends StObject
+     with _Arm64CallArgument
 object Arm64Register {
   
   @scala.inline

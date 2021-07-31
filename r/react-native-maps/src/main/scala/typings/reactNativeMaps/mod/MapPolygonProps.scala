@@ -3,39 +3,39 @@ package typings.reactNativeMaps.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MapPolygonProps extends ViewProps {
+trait MapPolygonProps
+  extends StObject
+     with ViewProps {
   
-  var coordinates: js.Array[LatLng] = js.native
+  var coordinates: js.Array[LatLng]
   
-  var fillColor: js.UndefOr[String] = js.native
+  var fillColor: js.UndefOr[String] = js.undefined
   
-  var geodesic: js.UndefOr[Boolean] = js.native
+  var geodesic: js.UndefOr[Boolean] = js.undefined
   
-  var holes: js.UndefOr[js.Array[js.Array[LatLng]]] = js.native
+  var holes: js.UndefOr[js.Array[js.Array[LatLng]]] = js.undefined
   
-  var lineCap: js.UndefOr[LineCapType] = js.native
+  var lineCap: js.UndefOr[LineCapType] = js.undefined
   
-  var lineDashPattern: js.UndefOr[js.Array[Double]] = js.native
+  var lineDashPattern: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var lineDashPhase: js.UndefOr[Double] = js.native
+  var lineDashPhase: js.UndefOr[Double] = js.undefined
   
-  var lineJoin: js.UndefOr[LineJoinType] = js.native
+  var lineJoin: js.UndefOr[LineJoinType] = js.undefined
   
-  var miterLimit: js.UndefOr[Double] = js.native
+  var miterLimit: js.UndefOr[Double] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ MapEvent[js.Object], Unit]] = js.undefined
   
-  var strokeColor: js.UndefOr[String] = js.native
+  var strokeColor: js.UndefOr[String] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double] = js.native
+  var strokeWidth: js.UndefOr[Double] = js.undefined
   
-  var tappable: js.UndefOr[Boolean] = js.native
+  var tappable: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object MapPolygonProps {
   

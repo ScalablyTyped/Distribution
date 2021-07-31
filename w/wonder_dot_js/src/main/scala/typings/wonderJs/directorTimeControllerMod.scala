@@ -1,27 +1,34 @@
 package typings.wonderJs
 
 import typings.wonderJs.timeControllerMod.TimeController
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/utils/time/DirectorTimeController", JSImport.Namespace)
-@js.native
-object directorTimeControllerMod extends js.Object {
+object directorTimeControllerMod {
+  
+  @JSImport("wonder.js/dist/es2015/utils/time/DirectorTimeController", "DirectorTimeController")
   @js.native
   class DirectorTimeController () extends TimeController {
+    
     var deltaTime: Double = js.native
+    
     var fps: Double = js.native
+    
     var gameTime: Double = js.native
+    
     var isTimeChange: Boolean = js.native
+    
     def tick(time: Double): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object DirectorTimeController extends js.Object {
-    def create(): DirectorTimeController = js.native
+  object DirectorTimeController {
+    
+    @JSImport("wonder.js/dist/es2015/utils/time/DirectorTimeController", "DirectorTimeController")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): DirectorTimeController = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[DirectorTimeController]
   }
-  
 }
-

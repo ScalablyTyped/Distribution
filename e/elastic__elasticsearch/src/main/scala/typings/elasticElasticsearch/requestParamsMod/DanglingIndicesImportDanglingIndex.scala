@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DanglingIndicesImportDanglingIndex extends Generic {
+trait DanglingIndicesImportDanglingIndex
+  extends StObject
+     with Generic {
   
-  var accept_data_loss: js.UndefOr[Boolean] = js.native
+  var accept_data_loss: js.UndefOr[Boolean] = js.undefined
   
-  var index_uuid: String = js.native
+  var index_uuid: String
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object DanglingIndicesImportDanglingIndex {
   

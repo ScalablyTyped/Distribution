@@ -8,43 +8,40 @@ import typings.passportClientCert.passportClientCertBooleans.`false`
 import typings.passportClientCert.passportClientCertBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Strategy * / any */ @JSImport("passport-client-cert", "Strategy")
+  @JSImport("passport-client-cert", "Strategy")
   @js.native
   class Strategy protected () extends StObject {
     def this(verify: VerifyFunction) = this()
     def this(options: StrategyOptionsWithRequest, verify: VerifyFunctionWithRequest) = this()
     def this(options: StrategyOptions, verify: VerifyFunction) = this()
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Object): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Object): Unit = js.native
     
     var name: String = js.native
   }
   
-  @js.native
   trait PeerCertificate extends StObject {
     
-    var fingerprint: String = js.native
+    var fingerprint: String
     
-    var issuer: Certificate = js.native
+    var issuer: Certificate
     
-    var issuerInfo: Certificate = js.native
+    var issuerInfo: Certificate
     
-    var raw: js.Any = js.native
+    var raw: js.Any
     
-    var serialNumber: String = js.native
+    var serialNumber: String
     
-    var subject: Certificate = js.native
+    var subject: Certificate
     
-    var valid_from: String = js.native
+    var valid_from: String
     
-    var valid_to: String = js.native
+    var valid_to: String
   }
   object PeerCertificate {
     
@@ -92,10 +89,9 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptions extends StObject {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object StrategyOptions {
     
@@ -116,16 +112,15 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionsWithRequest extends StObject {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(passReqToCallback: `true`): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(passReqToCallback = passReqToCallback.asInstanceOf[js.Any])
+    def apply(): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(passReqToCallback = true)
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     
@@ -153,10 +148,9 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait VerifyOptions extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object VerifyOptions {
     

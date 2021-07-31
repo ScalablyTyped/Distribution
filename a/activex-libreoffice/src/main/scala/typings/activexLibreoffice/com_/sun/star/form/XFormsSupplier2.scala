@@ -4,12 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** extends the {@link XFormsSupplier} with convenience methods */
-@js.native
-trait XFormsSupplier2 extends XFormsSupplier {
+trait XFormsSupplier2
+  extends StObject
+     with XFormsSupplier {
   
   /**
     * determines whether there are currently forms available at all
@@ -20,7 +20,7 @@ trait XFormsSupplier2 extends XFormsSupplier {
     * Semantically, {@link hasForms()} is equivalent to calling XElementAccess::hasElements() on the container returned by {@link XFormsSupplier.getForms()}
     * . But when using the latter, the implementation is forced to create a empty container, which might be potentially expensive.
     */
-  def hasForms(): Boolean = js.native
+  def hasForms(): Boolean
 }
 object XFormsSupplier2 {
   

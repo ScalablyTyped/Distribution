@@ -2,15 +2,15 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TokenHandshake extends AbstractHandshake {
+trait TokenHandshake
+  extends StObject
+     with AbstractHandshake {
   
-  var authData: TokenAuthData = js.native
+  var authData: TokenAuthData
   
-  var token: String = js.native
+  var token: String
 }
 object TokenHandshake {
   

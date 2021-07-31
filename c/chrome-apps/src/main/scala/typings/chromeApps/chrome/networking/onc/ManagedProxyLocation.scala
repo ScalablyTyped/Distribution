@@ -2,17 +2,15 @@ package typings.chromeApps.chrome.networking.onc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ManagedProxyLocation extends StObject {
   
   /** The proxy IP address host. */
-  var Host: js.UndefOr[ManagedDOMString] = js.native
+  var Host: js.UndefOr[ManagedDOMString] = js.undefined
   
   /** The port to use for the proxy */
-  var Port: js.UndefOr[ManagedLong] = js.native
+  var Port: js.UndefOr[ManagedLong] = js.undefined
 }
 object ManagedProxyLocation {
   

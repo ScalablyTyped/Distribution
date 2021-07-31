@@ -12,90 +12,89 @@ import typings.saucelabs.saucelabsStrings.PORTRAIT
 import typings.saucelabs.saucelabsStrings.X86
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceDescriptor
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var abiType: js.UndefOr[String] = js.native
+  var abiType: js.UndefOr[String] = js.undefined
   
-  var apiLevel: js.UndefOr[Double] = js.native
+  var apiLevel: js.UndefOr[Double] = js.undefined
   
-  var cpuCores: js.UndefOr[Double] = js.native
+  var cpuCores: js.UndefOr[Double] = js.undefined
   
-  var cpuFrequency: js.UndefOr[Double] = js.native
+  var cpuFrequency: js.UndefOr[Double] = js.undefined
   
-  var cpuType: js.UndefOr[ARM | X86] = js.native
+  var cpuType: js.UndefOr[ARM | X86] = js.undefined
   
-  var defaultOrientation: js.UndefOr[PORTRAIT | LANDSCAPE] = js.native
+  var defaultOrientation: js.UndefOr[PORTRAIT | LANDSCAPE] = js.undefined
   
-  var deviceFamily: js.UndefOr[ANY | IPHONE | IPAD] = js.native
+  var deviceFamily: js.UndefOr[ANY | IPHONE | IPAD] = js.undefined
   
-  var disableMtp: js.UndefOr[Boolean] = js.native
+  var disableMtp: js.UndefOr[Boolean] = js.undefined
   
-  var dpi: js.UndefOr[Double] = js.native
+  var dpi: js.UndefOr[Double] = js.undefined
   
-  var dpiName: js.UndefOr[String] = js.native
+  var dpiName: js.UndefOr[String] = js.undefined
   
-  var hasOnScreenButtons: js.UndefOr[Boolean] = js.native
+  var hasOnScreenButtons: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[Id] = js.native
+  var id: js.UndefOr[Id] = js.undefined
   
-  var internalOrientation: js.UndefOr[PORTRAIT | LANDSCAPE] = js.native
+  var internalOrientation: js.UndefOr[PORTRAIT | LANDSCAPE] = js.undefined
   
-  var internalStorageSize: js.UndefOr[Double] = js.native
+  var internalStorageSize: js.UndefOr[Double] = js.undefined
   
-  var isAlternativeIoEnabled: js.UndefOr[Boolean] = js.native
+  var isAlternativeIoEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var isArm: js.UndefOr[Boolean] = js.native
+  var isArm: js.UndefOr[Boolean] = js.undefined
   
-  var isKeyGuardDisabled: js.UndefOr[Boolean] = js.native
+  var isKeyGuardDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var isPrivate: js.UndefOr[Boolean] = js.native
+  var isPrivate: js.UndefOr[Boolean] = js.undefined
   
-  var isRooted: js.UndefOr[Boolean] = js.native
+  var isRooted: js.UndefOr[Boolean] = js.undefined
   
-  var isTablet: js.UndefOr[Boolean] = js.native
+  var isTablet: js.UndefOr[Boolean] = js.undefined
   
-  var manufacturer: js.UndefOr[js.Array[String]] = js.native
+  var manufacturer: js.UndefOr[js.Array[String]] = js.undefined
   
-  var modelNumber: js.UndefOr[String] = js.native
+  var modelNumber: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var os: js.UndefOr[ANDROID | IOS] = js.native
+  var os: js.UndefOr[ANDROID | IOS] = js.undefined
   
-  var osVersion: js.UndefOr[String] = js.native
+  var osVersion: js.UndefOr[String] = js.undefined
   
-  var pixelsPerPoint: js.UndefOr[Double] = js.native
+  var pixelsPerPoint: js.UndefOr[Double] = js.undefined
   
-  var ramSize: js.UndefOr[Double] = js.native
+  var ramSize: js.UndefOr[Double] = js.undefined
   
-  var resolutionHeight: js.UndefOr[Double] = js.native
+  var resolutionHeight: js.UndefOr[Double] = js.undefined
   
-  var resolutionWidth: js.UndefOr[Double] = js.native
+  var resolutionWidth: js.UndefOr[Double] = js.undefined
   
-  var screenSize: js.UndefOr[Double] = js.native
+  var screenSize: js.UndefOr[Double] = js.undefined
   
-  var sdCardSize: js.UndefOr[Double] = js.native
+  var sdCardSize: js.UndefOr[Double] = js.undefined
   
-  var supportsAppiumWebAppTesting: js.UndefOr[Boolean] = js.native
+  var supportsAppiumWebAppTesting: js.UndefOr[Boolean] = js.undefined
   
-  var supportsGlobalProxy: js.UndefOr[Boolean] = js.native
+  var supportsGlobalProxy: js.UndefOr[Boolean] = js.undefined
   
-  var supportsManualWebTesting: js.UndefOr[Boolean] = js.native
+  var supportsManualWebTesting: js.UndefOr[Boolean] = js.undefined
   
-  var supportsMinicapSocketConnection: js.UndefOr[Boolean] = js.native
+  var supportsMinicapSocketConnection: js.UndefOr[Boolean] = js.undefined
   
-  var supportsMockLocations: js.UndefOr[Boolean] = js.native
+  var supportsMockLocations: js.UndefOr[Boolean] = js.undefined
   
-  var supportsMultiTouch: js.UndefOr[Boolean] = js.native
+  var supportsMultiTouch: js.UndefOr[Boolean] = js.undefined
   
-  var supportsQualityReport: js.UndefOr[Boolean] = js.native
+  var supportsQualityReport: js.UndefOr[Boolean] = js.undefined
   
-  var supportsXcuiTest: js.UndefOr[Boolean] = js.native
+  var supportsXcuiTest: js.UndefOr[Boolean] = js.undefined
 }
 object DeviceDescriptor {
   

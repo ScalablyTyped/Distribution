@@ -2,33 +2,31 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StageState extends StObject {
   
   /**
     * The state of the stage.
     */
-  var actionStates: js.UndefOr[ActionStateList] = js.native
+  var actionStates: js.UndefOr[ActionStateList] = js.undefined
   
-  var inboundExecution: js.UndefOr[StageExecution] = js.native
+  var inboundExecution: js.UndefOr[StageExecution] = js.undefined
   
   /**
     * The state of the inbound transition, which is either enabled or disabled.
     */
-  var inboundTransitionState: js.UndefOr[TransitionState] = js.native
+  var inboundTransitionState: js.UndefOr[TransitionState] = js.undefined
   
   /**
     * Information about the latest execution in the stage, including its ID and status.
     */
-  var latestExecution: js.UndefOr[StageExecution] = js.native
+  var latestExecution: js.UndefOr[StageExecution] = js.undefined
   
   /**
     * The name of the stage.
     */
-  var stageName: js.UndefOr[StageName] = js.native
+  var stageName: js.UndefOr[StageName] = js.undefined
 }
 object StageState {
   

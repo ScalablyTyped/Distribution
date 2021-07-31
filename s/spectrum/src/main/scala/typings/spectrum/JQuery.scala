@@ -18,7 +18,6 @@ import typings.spectrum.spectrumStrings.toggle
 import typings.tinycolor2.mod.Instance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,7 +29,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_dragstartspectrum(
     events: dragstartDotspectrum,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* color */ Instance, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* color */ Instance, js.Any]
   ): JQuery = js.native
   /**
     * Called at the end of a drag event on either hue slider, alpha slider, or main color picker areas.
@@ -38,7 +37,7 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_dragstopspectrum(
     events: dragstopDotspectrum,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* color */ Instance, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* color */ Instance, js.Any]
   ): JQuery = js.native
   
   // in most cases this is JQuery except for the get method which returns a tinycolorInstance
@@ -94,11 +93,11 @@ trait JQuery extends StObject {
   @JSName("spectrum")
   def spectrum_option(methodName: option): JQuery = js.native
   @JSName("spectrum")
-  def spectrum_option(methodName: option, optionName: js.UndefOr[scala.Nothing], newOptionValue: js.Any): JQuery = js.native
-  @JSName("spectrum")
   def spectrum_option(methodName: option, optionName: String): JQuery = js.native
   @JSName("spectrum")
   def spectrum_option(methodName: option, optionName: String, newOptionValue: js.Any): JQuery = js.native
+  @JSName("spectrum")
+  def spectrum_option(methodName: option, optionName: Unit, newOptionValue: js.Any): JQuery = js.native
   /**
     * Resets the positioning of the container element.
     * This could be used if the colorpicker was hidden when initialized,

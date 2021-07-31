@@ -4,16 +4,16 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.vsoNodeApi.formInputInterfacesMod.InputValuesQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldValuesQuery extends InputValuesQuery {
+trait FieldValuesQuery
+  extends StObject
+     with InputValuesQuery {
   
   @JSName("inputValues")
-  var inputValues_FieldValuesQuery: js.Array[FieldInputValues] = js.native
+  var inputValues_FieldValuesQuery: js.Array[FieldInputValues]
   
-  var scope: String = js.native
+  var scope: String
 }
 object FieldValuesQuery {
   

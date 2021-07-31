@@ -2,15 +2,13 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RejectUnauthorized extends StObject {
   
-  var rejectUnauthorized: js.UndefOr[Boolean] = js.native
+  var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
   
-  var requestCert: js.UndefOr[Boolean] = js.native
+  var requestCert: js.UndefOr[Boolean] = js.undefined
 }
 object RejectUnauthorized {
   

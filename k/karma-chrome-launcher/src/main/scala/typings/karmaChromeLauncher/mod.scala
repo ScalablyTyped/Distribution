@@ -2,13 +2,11 @@ package typings.karmaChromeLauncher
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait CustomLauncher extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object mod {
       * One reason to do this is to have a permanent Chrome user data directory inside the project directory
       * to be able to install plugins there (e.g. JetBrains IDE Support plugin).
       */
-    var chromeDataDir: js.UndefOr[String] = js.native
+    var chromeDataDir: js.UndefOr[String] = js.undefined
   }
   object CustomLauncher {
     

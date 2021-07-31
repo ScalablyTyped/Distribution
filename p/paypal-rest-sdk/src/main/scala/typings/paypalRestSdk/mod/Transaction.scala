@@ -4,39 +4,37 @@ import typings.paypalRestSdk.anon.Allowedpaymentmethod
 import typings.paypalRestSdk.anon.Items
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transaction extends StObject {
   
-  var amount: Amount = js.native
+  var amount: Amount
   
-  var custom: js.UndefOr[String] = js.native
+  var custom: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var invoice_number: js.UndefOr[String] = js.native
+  var invoice_number: js.UndefOr[String] = js.undefined
   
-  var item_list: js.UndefOr[Items] = js.native
+  var item_list: js.UndefOr[Items] = js.undefined
   
-  var note_to_payee: js.UndefOr[String] = js.native
+  var note_to_payee: js.UndefOr[String] = js.undefined
   
-  var notify_url: js.UndefOr[String] = js.native
+  var notify_url: js.UndefOr[String] = js.undefined
   
-  var order_url: js.UndefOr[String] = js.native
+  var order_url: js.UndefOr[String] = js.undefined
   
-  var payee: js.UndefOr[Payee] = js.native
+  var payee: js.UndefOr[Payee] = js.undefined
   
-  var payment_options: js.UndefOr[Allowedpaymentmethod] = js.native
+  var payment_options: js.UndefOr[Allowedpaymentmethod] = js.undefined
   
-  var purchase_order: js.UndefOr[String] = js.native
+  var purchase_order: js.UndefOr[String] = js.undefined
   
-  var reference_id: js.UndefOr[String] = js.native
+  var reference_id: js.UndefOr[String] = js.undefined
   
-  val related_resources: js.UndefOr[js.Array[RelatedResources]] = js.native
+  val related_resources: js.UndefOr[js.Array[RelatedResources]] = js.undefined
   
-  var soft_descriptor: js.UndefOr[String] = js.native
+  var soft_descriptor: js.UndefOr[String] = js.undefined
 }
 object Transaction {
   

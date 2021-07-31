@@ -3,32 +3,31 @@ package typings.ctrlTinycolor
 import typings.ctrlTinycolor.distMod.TinyColor_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fromRatioMod {
   
-  @JSImport("@ctrl/tinycolor/dist/from-ratio", "fromRatio")
+  @JSImport("@ctrl/tinycolor/dist/from-ratio", JSImport.Namespace)
   @js.native
-  def fromRatio(ratio: RatioInput): TinyColor_ = js.native
-  @JSImport("@ctrl/tinycolor/dist/from-ratio", "fromRatio")
-  @js.native
-  def fromRatio(ratio: RatioInput, opts: js.Any): TinyColor_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ctrl/tinycolor/dist/from-ratio", "legacyRandom")
-  @js.native
-  def legacyRandom(): TinyColor_ = js.native
+  @scala.inline
+  def fromRatio(ratio: RatioInput): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any]).asInstanceOf[TinyColor_]
+  @scala.inline
+  def fromRatio(ratio: RatioInput, opts: js.Any): TinyColor_ = (^.asInstanceOf[js.Dynamic].applyDynamic("fromRatio")(ratio.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[TinyColor_]
   
-  @js.native
+  @scala.inline
+  def legacyRandom(): TinyColor_ = ^.asInstanceOf[js.Dynamic].applyDynamic("legacyRandom")().asInstanceOf[TinyColor_]
+  
   trait RatioInput extends StObject {
     
-    var a: js.UndefOr[Double | String] = js.native
+    var a: js.UndefOr[Double | String] = js.undefined
     
-    var b: Double | String = js.native
+    var b: Double | String
     
-    var g: Double | String = js.native
+    var g: Double | String
     
-    var r: Double | String = js.native
+    var r: Double | String
   }
   object RatioInput {
     

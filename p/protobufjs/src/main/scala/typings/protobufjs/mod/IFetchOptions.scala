@@ -2,17 +2,15 @@ package typings.protobufjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFetchOptions extends StObject {
   
   /** Whether expecting a binary response */
-  var binary: js.UndefOr[Boolean] = js.native
+  var binary: js.UndefOr[Boolean] = js.undefined
   
   /** If `true`, forces the use of XMLHttpRequest */
-  var xhr: js.UndefOr[Boolean] = js.native
+  var xhr: js.UndefOr[Boolean] = js.undefined
 }
 object IFetchOptions {
   

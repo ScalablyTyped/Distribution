@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyNameSuggestion extends StObject {
   
   /**
     * A suggested property name based on what you entered in the search textbox in the Amazon SageMaker console.
     */
-  var PropertyName: js.UndefOr[ResourcePropertyName] = js.native
+  var PropertyName: js.UndefOr[ResourcePropertyName] = js.undefined
 }
 object PropertyNameSuggestion {
   

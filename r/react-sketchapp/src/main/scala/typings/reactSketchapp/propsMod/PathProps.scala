@@ -2,12 +2,11 @@ package typings.reactSketchapp.propsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathProps
-  extends FillProps
+  extends StObject
+     with FillProps
      with StrokeProps
      with ClipProps
      with TransformProps

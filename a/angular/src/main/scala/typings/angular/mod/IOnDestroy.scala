@@ -2,14 +2,12 @@ package typings.angular.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for the $onDestroy lifecycle hook
   * https://docs.angularjs.org/api/ng/service/$compile#life-cycle-hooks
   */
-@js.native
 trait IOnDestroy extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait IOnDestroy extends StObject {
     * watches and event handlers.
     */
   @JSName("$onDestroy")
-  def $onDestroy(): Unit = js.native
+  def $onDestroy(): Unit
 }
 object IOnDestroy {
   

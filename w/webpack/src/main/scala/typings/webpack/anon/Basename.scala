@@ -2,21 +2,19 @@ package typings.webpack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Basename extends StObject {
   
-  var basename: String = js.native
+  var basename: String
   
-  var chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any = js.native
+  var chunk: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_Chunk */ js.Any
   
-  var filename: String = js.native
+  var filename: String
   
-  var hash: String = js.native
+  var hash: String
   
-  var query: String = js.native
+  var query: String
 }
 object Basename {
   

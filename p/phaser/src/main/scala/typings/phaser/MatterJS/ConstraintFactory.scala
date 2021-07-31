@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConstraintFactory extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait ConstraintFactory extends StObject {
     * @param {} options
     * @return {constraint} constraint
     */
-  def create(options: IConstraintDefinition): ConstraintType = js.native
+  def create(options: IConstraintDefinition): ConstraintType
 }
 object ConstraintFactory {
   

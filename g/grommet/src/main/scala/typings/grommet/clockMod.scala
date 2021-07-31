@@ -27,7 +27,6 @@ import typings.std.HTMLDivElement
 import typings.std.SVGSVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clockMod {
@@ -37,47 +36,46 @@ object clockMod {
   @js.native
   class Clock protected ()
     extends Component[
-          ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
+          ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement])) = this()
+    def this(props: ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement])) = this()
     def this(
-      props: ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]),
+      props: ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/Clock", "Clock")
   @js.native
   val Clock: ComponentClass[
-    ClockProps with ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
+    ClockProps & ((DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]) | SVGProps[SVGSVGElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait ClockProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var hourLimit: js.UndefOr[`12` | `24`] = js.native
+    var hourLimit: js.UndefOr[`12` | `24`] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* time */ String, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* time */ String, Unit]] = js.undefined
     
-    var precision: js.UndefOr[hours | minutes | seconds] = js.native
+    var precision: js.UndefOr[hours | minutes | seconds] = js.undefined
     
-    var run: js.UndefOr[Boolean | backward | forward] = js.native
+    var run: js.UndefOr[Boolean | backward | forward] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
     
-    var time: js.UndefOr[String] = js.native
+    var time: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[analog | digital] = js.native
+    var `type`: js.UndefOr[analog | digital] = js.undefined
   }
   object ClockProps {
     

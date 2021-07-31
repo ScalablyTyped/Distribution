@@ -2,21 +2,19 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Horizontal extends StObject {
   
   /**
     * Distance for horizontal direction. Defaults to 25.
     */
-  var horizontal: js.UndefOr[Double] = js.native
+  var horizontal: js.UndefOr[Double] = js.undefined
   
   /**
     * Distance for vertical direction. Defaults to 135.
     */
-  var vertical: js.UndefOr[Double] = js.native
+  var vertical: js.UndefOr[Double] = js.undefined
 }
 object Horizontal {
   

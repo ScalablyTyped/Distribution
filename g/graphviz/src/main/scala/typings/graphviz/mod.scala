@@ -3,32 +3,33 @@ package typings.graphviz
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("graphviz", "digraph")
+  @JSImport("graphviz", JSImport.Namespace)
   @js.native
-  def digraph(id: String): Graph_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("graphviz", "graph")
-  @js.native
-  def graph(id: String): Graph_ = js.native
+  @scala.inline
+  def digraph(id: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("digraph")(id.asInstanceOf[js.Any]).asInstanceOf[Graph_]
   
-  @JSImport("graphviz", "parse")
-  @js.native
-  def parse(path: String, callback: ParseCallback): Unit = js.native
-  @JSImport("graphviz", "parse")
-  @js.native
-  def parse(path: String, callback: ParseCallback, errback: ErrorCallback): Unit = js.native
+  @scala.inline
+  def graph(id: String): Graph_ = ^.asInstanceOf[js.Dynamic].applyDynamic("graph")(id.asInstanceOf[js.Any]).asInstanceOf[Graph_]
+  
+  @scala.inline
+  def parse(path: String, callback: ParseCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def parse(path: String, callback: ParseCallback, errback: ErrorCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], errback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type Edge = HasAttributes
   
   type ErrorCallback = js.Function3[/* code */ Double, /* stdout */ String, /* stderr */ String, Unit]
   
   @js.native
-  trait Graph_ extends HasAttributes {
+  trait Graph_
+    extends StObject
+       with HasAttributes {
     
     // Subgraph (cluster) API
     def addCluster(id: String): Graph_ = js.native
@@ -87,12 +88,11 @@ object mod {
     var use: RenderEngine = js.native
   }
   
-  @js.native
   trait HasAttributes extends StObject {
     
-    def get(name: String): PossibleValue = js.native
+    def get(name: String): PossibleValue
     
-    def set(name: String, value: PossibleValue): Unit = js.native
+    def set(name: String, value: PossibleValue): Unit
   }
   object HasAttributes {
     
@@ -113,10 +113,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait Node extends HasAttributes {
+  trait Node
+    extends StObject
+       with HasAttributes {
     
-    val id: String = js.native
+    val id: String
   }
   object Node {
     
@@ -172,40 +173,39 @@ object mod {
     def twopi: typings.graphviz.graphvizStrings.twopi = "twopi".asInstanceOf[typings.graphviz.graphvizStrings.twopi]
   }
   
-  @js.native
   trait RenderOptions extends StObject {
     
     /**
       * edge options
       */
-    var E: js.UndefOr[Options] = js.native
+    var E: js.UndefOr[Options] = js.undefined
     
     /**
       * graph options
       */
-    var G: js.UndefOr[Options] = js.native
+    var G: js.UndefOr[Options] = js.undefined
     
     /**
       * node options
       */
-    var N: js.UndefOr[Options] = js.native
+    var N: js.UndefOr[Options] = js.undefined
     
     /**
       * Graphviz path
       * @default $PATH
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * graphviz output file type
       */
-    var `type`: RenderType = js.native
+    var `type`: RenderType
     
     /**
       * Graphviz command to use
       * @default dot
       */
-    var use: js.UndefOr[RenderEngine] = js.native
+    var use: js.UndefOr[RenderEngine] = js.undefined
   }
   object RenderOptions {
     

@@ -2,24 +2,22 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter used to determine the points of interest to include or exclude on a map or local search.
   */
-@js.native
 trait PointOfInterestFilter extends StObject {
   
   /**
     * Returns a Boolean value that indicates whether the filter excludes the provided point of interest category.
     */
-  def excludesCategory(category: PointOfInterestCategory): Boolean = js.native
+  def excludesCategory(category: PointOfInterestCategory): Boolean
   
   /**
     * Returns a Boolean value that indicates whether the filter includes the provided point of interest category.
     */
-  def includesCategory(category: PointOfInterestCategory): Boolean = js.native
+  def includesCategory(category: PointOfInterestCategory): Boolean
 }
 object PointOfInterestFilter {
   

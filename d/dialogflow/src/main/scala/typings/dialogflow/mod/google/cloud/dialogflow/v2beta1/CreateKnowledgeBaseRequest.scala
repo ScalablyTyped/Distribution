@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a CreateKnowledgeBaseRequest. */
@@ -17,7 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new CreateKnowledgeBaseRequest.
   * @param [properties] Properties to set
   */
-class CreateKnowledgeBaseRequest () extends ICreateKnowledgeBaseRequest {
+class CreateKnowledgeBaseRequest ()
+  extends StObject
+     with ICreateKnowledgeBaseRequest {
   def this(properties: ICreateKnowledgeBaseRequest) = this()
   
   /** CreateKnowledgeBaseRequest parent. */
@@ -32,18 +33,20 @@ class CreateKnowledgeBaseRequest () extends ICreateKnowledgeBaseRequest {
 }
 object CreateKnowledgeBaseRequest {
   
+  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new CreateKnowledgeBaseRequest instance using the specified properties.
     * @param [properties] Properties to set
     * @returns CreateKnowledgeBaseRequest instance
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.create")
-  @js.native
-  def create(): CreateKnowledgeBaseRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.create")
-  @js.native
-  def create(properties: ICreateKnowledgeBaseRequest): CreateKnowledgeBaseRequest = js.native
+  @scala.inline
+  def create(): CreateKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[CreateKnowledgeBaseRequest]
+  @scala.inline
+  def create(properties: ICreateKnowledgeBaseRequest): CreateKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[CreateKnowledgeBaseRequest]
   
   /**
     * Decodes a CreateKnowledgeBaseRequest message from the specified reader or buffer.
@@ -54,18 +57,14 @@ object CreateKnowledgeBaseRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.decode")
-  @js.native
-  def decode(reader: Reader): CreateKnowledgeBaseRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): CreateKnowledgeBaseRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array): CreateKnowledgeBaseRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): CreateKnowledgeBaseRequest = js.native
+  @scala.inline
+  def decode(reader: Reader): CreateKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateKnowledgeBaseRequest]
+  @scala.inline
+  def decode(reader: Reader, length: Double): CreateKnowledgeBaseRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateKnowledgeBaseRequest]
+  @scala.inline
+  def decode(reader: Uint8Array): CreateKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateKnowledgeBaseRequest]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): CreateKnowledgeBaseRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[CreateKnowledgeBaseRequest]
   
   /**
     * Decodes a CreateKnowledgeBaseRequest message from the specified reader or buffer, length delimited.
@@ -75,12 +74,10 @@ object CreateKnowledgeBaseRequest {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): CreateKnowledgeBaseRequest = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): CreateKnowledgeBaseRequest = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): CreateKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateKnowledgeBaseRequest]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): CreateKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[CreateKnowledgeBaseRequest]
   
   /**
     * Encodes the specified CreateKnowledgeBaseRequest message. Does not implicitly {@link google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.verify|verify} messages.
@@ -89,12 +86,10 @@ object CreateKnowledgeBaseRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.encode")
-  @js.native
-  def encode(message: ICreateKnowledgeBaseRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.encode")
-  @js.native
-  def encode(message: ICreateKnowledgeBaseRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: ICreateKnowledgeBaseRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: ICreateKnowledgeBaseRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified CreateKnowledgeBaseRequest message, length delimited. Does not implicitly {@link google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.verify|verify} messages.
@@ -103,12 +98,10 @@ object CreateKnowledgeBaseRequest {
     * @returns Writer
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICreateKnowledgeBaseRequest): Writer = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: ICreateKnowledgeBaseRequest, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: ICreateKnowledgeBaseRequest): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: ICreateKnowledgeBaseRequest, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a CreateKnowledgeBaseRequest message from a plain object. Also converts values to their respective internal types.
@@ -116,9 +109,8 @@ object CreateKnowledgeBaseRequest {
     * @returns CreateKnowledgeBaseRequest
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): CreateKnowledgeBaseRequest = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): CreateKnowledgeBaseRequest = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[CreateKnowledgeBaseRequest]
   
   /**
     * Creates a plain object from a CreateKnowledgeBaseRequest message. Also converts values to other types if specified.
@@ -127,12 +119,10 @@ object CreateKnowledgeBaseRequest {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.toObject")
-  @js.native
-  def toObject(message: CreateKnowledgeBaseRequest): StringDictionary[js.Any] = js.native
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.toObject")
-  @js.native
-  def toObject(message: CreateKnowledgeBaseRequest, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: CreateKnowledgeBaseRequest): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: CreateKnowledgeBaseRequest, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a CreateKnowledgeBaseRequest message.
@@ -140,7 +130,6 @@ object CreateKnowledgeBaseRequest {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("dialogflow/protos/protos", "google.cloud.dialogflow.v2beta1.CreateKnowledgeBaseRequest.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

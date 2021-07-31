@@ -5,7 +5,6 @@ import typings.node.readlineMod.Key
 import typings.rxjs.mod.Observable_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
@@ -16,55 +15,57 @@ object eventsMod {
     * @param readline
     * The readline-object to observe.
     */
+  @scala.inline
+  def apply(readline: Interface): Events = ^.asInstanceOf[js.Dynamic].apply(readline.asInstanceOf[js.Any]).asInstanceOf[Events]
+  
   @JSImport("inquirer/lib/utils/events", JSImport.Namespace)
   @js.native
-  def apply(readline: Interface): Events = js.native
+  val ^ : js.Any = js.native
   
   /**
     * A set of events.
     */
-  @js.native
   trait Events extends StObject {
     
     /**
       * The event-flow of the `aKey`-event.
       */
-    var aKey: Observable_[KeyDescriptor] = js.native
+    var aKey: Observable_[KeyDescriptor]
     
     /**
       * The event-flow of the `iKey`-event.
       */
-    var iKey: Observable_[KeyDescriptor] = js.native
+    var iKey: Observable_[KeyDescriptor]
     
     /**
       * The event-flow of the `keypress`-event of the readline-object.
       */
-    var keypress: Observable_[KeyDescriptor] = js.native
+    var keypress: Observable_[KeyDescriptor]
     
     /**
       * The event-flow of the `line`-event of the readline-object.
       */
-    var line: Observable_[String] = js.native
+    var line: Observable_[String]
     
     /**
       * The event-flow of the `normalizedDownKey`-event.
       */
-    var normalizedDownKey: Observable_[KeyDescriptor] = js.native
+    var normalizedDownKey: Observable_[KeyDescriptor]
     
     /**
       * The event-flow of the `normalizedUpKey`-event.
       */
-    var normalizedUpKey: Observable_[KeyDescriptor] = js.native
+    var normalizedUpKey: Observable_[KeyDescriptor]
     
     /**
       * The event-flow of the `numberKey`-event.
       */
-    var numberKey: Observable_[KeyDescriptor] = js.native
+    var numberKey: Observable_[KeyDescriptor]
     
     /**
       * The event-flow of the `spaceKey`-event.
       */
-    var spaceKey: Observable_[KeyDescriptor] = js.native
+    var spaceKey: Observable_[KeyDescriptor]
   }
   object Events {
     
@@ -115,18 +116,17 @@ object eventsMod {
   /**
     * Provides a description about a key.
     */
-  @js.native
   trait KeyDescriptor extends StObject {
     
     /**
       * Thedescription of the key.
       */
-    var key: Key = js.native
+    var key: Key
     
     /**
       * The value of the key.
       */
-    var value: String = js.native
+    var value: String
   }
   object KeyDescriptor {
     

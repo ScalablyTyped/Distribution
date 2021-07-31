@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSlider
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,77 +16,77 @@ trait IgSlider
   /**
     * Get or set whether the slide handle will animate when it is moved.
     */
-  var animate: js.UndefOr[Boolean] = js.native
+  var animate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the slider bookmark click event. Fired when a bookmark is clicked.
     */
-  var bookmarkClick: js.UndefOr[BookmarkClickEvent] = js.native
+  var bookmarkClick: js.UndefOr[BookmarkClickEvent] = js.undefined
   
   /**
     * Defines the slider bookmark hit event. Fired when the slider handle passes after the bookmark value.
     */
-  var bookmarkHit: js.UndefOr[BookmarkHitEvent] = js.native
+  var bookmarkHit: js.UndefOr[BookmarkHitEvent] = js.undefined
   
   /**
     * Get or set the bookmarks array.
     */
-  var bookmarks: js.UndefOr[IgSliderBookmarks] = js.native
+  var bookmarks: js.UndefOr[IgSliderBookmarks] = js.undefined
   
   /**
     * Defines the slider value change event. Fired when the value of the slider changes. It fires after the slide event.
     */
-  var change: js.UndefOr[ChangeEvent] = js.native
+  var change: js.UndefOr[ChangeEvent] = js.undefined
   
   /**
     * Get or set the slider range maximum value.
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /**
     * Get or set the slider range minimum value.
     */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /**
     * Get or set the slider orientation.
     */
-  var orientation: js.UndefOr[js.Any] = js.native
+  var orientation: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get or set the whether to show bookmarks title on bookmark hover or not.
     */
-  var showBookmarkTitle: js.UndefOr[Boolean] = js.native
+  var showBookmarkTitle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Defines the slide event. Fired when the user is sliding with mouse.
     */
-  var slide: js.UndefOr[SlideEvent] = js.native
+  var slide: js.UndefOr[SlideEvent] = js.undefined
   
   /**
     * Defines the slide start event.
     */
-  var start: js.UndefOr[StartEvent] = js.native
+  var start: js.UndefOr[StartEvent] = js.undefined
   
   /**
     * Get or set the step with which the value is increased.
     */
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
   /**
     * Defines the slide stop event. Fired to mark the end of a sliding action.
     */
-  var stop: js.UndefOr[StopEvent] = js.native
+  var stop: js.UndefOr[StopEvent] = js.undefined
   
   /**
     * Get or set whether the handle will be moved to the bookmark position when a bookmark is clicked.
     */
-  var syncHandleWithBookmark: js.UndefOr[Boolean] = js.native
+  var syncHandleWithBookmark: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Get or set the slider value.
     */
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object IgSlider {
   

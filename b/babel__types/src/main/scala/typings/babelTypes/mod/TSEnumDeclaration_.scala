@@ -3,35 +3,34 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSEnumDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSEnumDeclaration_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait TSEnumDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with Statement {
   
-  var const: Boolean | Null = js.native
+  var const: Boolean | Null
   
-  var declare: Boolean | Null = js.native
+  var declare: Boolean | Null
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var initializer: Expression | Null = js.native
+  var initializer: Expression | Null
   
-  var members: js.Array[TSEnumMember_] = js.native
+  var members: js.Array[TSEnumMember_]
   
   @JSName("type")
-  var type_TSEnumDeclaration_ : TSEnumDeclaration = js.native
+  var type_TSEnumDeclaration_ : TSEnumDeclaration
 }
 object TSEnumDeclaration_ {
   
   @scala.inline
-  def apply(id: Identifier_, members: js.Array[TSEnumMember_], `type`: TSEnumDeclaration): TSEnumDeclaration_ = {
-    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(id: Identifier_, members: js.Array[TSEnumMember_]): TSEnumDeclaration_ = {
+    val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], members = members.asInstanceOf[js.Any], const = null, declare = null, end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("TSEnumDeclaration")
     __obj.asInstanceOf[TSEnumDeclaration_]
   }
   

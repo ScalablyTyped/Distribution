@@ -2,19 +2,17 @@ package typings.gatsbyCli.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var column: js.Any = js.native
+  var column: js.Any
   
-  var filePath: js.Any = js.native
+  var filePath: js.Any
   
-  var line: js.Any = js.native
+  var line: js.Any
   
-  var path: js.Any = js.native
+  var path: js.Any
 }
 object Column {
   

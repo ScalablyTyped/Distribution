@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedEBookAssignment extends Entity {
+trait ManagedEBookAssignment
+  extends StObject
+     with Entity {
   
   // The install intent for eBook. Possible values are: available, required, uninstall, availableWithoutEnrollment.
-  var installIntent: js.UndefOr[InstallIntent] = js.native
+  var installIntent: js.UndefOr[InstallIntent] = js.undefined
   
   // The assignment target for eBook.
-  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.native
+  var target: js.UndefOr[NullableOption[DeviceAndAppManagementAssignmentTarget]] = js.undefined
 }
 object ManagedEBookAssignment {
   

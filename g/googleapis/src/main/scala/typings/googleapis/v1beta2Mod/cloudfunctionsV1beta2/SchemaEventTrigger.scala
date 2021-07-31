@@ -2,14 +2,12 @@ package typings.googleapis.v1beta2Mod.cloudfunctionsV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes EventTrigger, used to request events be sent from another
   * service.
   */
-@js.native
 trait SchemaEventTrigger extends StObject {
   
   /**
@@ -22,12 +20,12 @@ trait SchemaEventTrigger extends StObject {
     * Firebase Realtime Database:
     * `providers/google.firebase.database/eventTypes/ref.write`
     */
-  var eventType: js.UndefOr[String] = js.native
+  var eventType: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies policy for failed executions.
     */
-  var failurePolicy: js.UndefOr[SchemaFailurePolicy] = js.native
+  var failurePolicy: js.UndefOr[SchemaFailurePolicy] = js.undefined
   
   /**
     * Which instance of the source&#39;s service should send events. E.g. for
@@ -36,7 +34,7 @@ trait SchemaEventTrigger extends StObject {
     * source that only supports one instance per-project, this should be the
     * name of the project (`projects/x)
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * The hostname of the service that should be observed.  If no string is
@@ -44,7 +42,7 @@ trait SchemaEventTrigger extends StObject {
     * example, `storage.googleapis.com` is the default for all event types in
     * the `google.storage` namespace.
     */
-  var service: js.UndefOr[String] = js.native
+  var service: js.UndefOr[String] = js.undefined
 }
 object SchemaEventTrigger {
   

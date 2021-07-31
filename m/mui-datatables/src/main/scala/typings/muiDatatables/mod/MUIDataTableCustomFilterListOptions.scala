@@ -3,10 +3,8 @@ package typings.muiDatatables.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableCustomFilterListOptions extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MUIDataTableCustomFilterListOptions extends StObject {
     *
     * [Example](https://github.com/gregnb/mui-datatables/blob/master/examples/customize-filter/index.js)
     */
-  var render: js.UndefOr[js.Function1[/* value */ js.Any, ReactNode]] = js.native
+  var render: js.UndefOr[js.Function1[/* value */ js.Any, ReactNode]] = js.undefined
   
   /**
     * Function that returns a filterList allowing for custom filter updates
@@ -29,7 +27,7 @@ trait MUIDataTableCustomFilterListOptions extends StObject {
       /* index */ Double, 
       js.Array[js.Array[String]]
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object MUIDataTableCustomFilterListOptions {
   

@@ -17,21 +17,19 @@ import typings.grommet.grommetStrings.zoomIn
 import typings.grommet.grommetStrings.zoomOut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Delay extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.native
+  var size: js.UndefOr[xsmall | small | medium | large | xlarge] = js.undefined
   
   var `type`: js.UndefOr[
     fadeIn | fadeOut | jiggle | pulse | slideUp | slideDown | slideLeft | slideRight | zoomIn | zoomOut
-  ] = js.native
+  ] = js.undefined
 }
 object Delay {
   

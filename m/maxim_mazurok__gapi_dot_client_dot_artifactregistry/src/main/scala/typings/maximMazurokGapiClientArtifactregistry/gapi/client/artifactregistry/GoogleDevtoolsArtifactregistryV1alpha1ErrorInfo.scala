@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientArtifactregistry.gapi.client.artifactregis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo extends StObject {
   
   /** The detailed error status. */
-  var error: js.UndefOr[Status] = js.native
+  var error: js.UndefOr[Status] = js.undefined
   
   /** Google Cloud Storage location requested. */
-  var gcsSource: js.UndefOr[GoogleDevtoolsArtifactregistryV1alpha1GcsSource] = js.native
+  var gcsSource: js.UndefOr[GoogleDevtoolsArtifactregistryV1alpha1GcsSource] = js.undefined
 }
 object GoogleDevtoolsArtifactregistryV1alpha1ErrorInfo {
   

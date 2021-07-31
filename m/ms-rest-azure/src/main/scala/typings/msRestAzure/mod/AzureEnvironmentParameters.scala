@@ -2,101 +2,99 @@ package typings.msRestAzure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AzureEnvironmentParameters extends StObject {
   
   /**
     * The Active Directory login endpoint.
     */
-  var activeDirectoryEndpointUrl: String = js.native
+  var activeDirectoryEndpointUrl: String
   
   /**
     * The Active Directory api version.
     */
-  var activeDirectoryGraphApiVersion: String = js.native
+  var activeDirectoryGraphApiVersion: String
   
   /**
     * The Active Directory Graph resource ID.
     */
-  var activeDirectoryGraphResourceId: String = js.native
+  var activeDirectoryGraphResourceId: String
   
   /**
     * The resource ID to obtain AD tokens for (token audience).
     */
-  var activeDirectoryResourceId: String = js.native
+  var activeDirectoryResourceId: String
   
   /**
     * The data lake analytics job and catalog service dns suffix.
     */
-  var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: String = js.native
+  var azureDataLakeAnalyticsCatalogAndJobEndpointSuffix: String
   
   /**
     * The data lake store filesystem service dns suffix.
     */
-  var azureDataLakeStoreFileSystemEndpointSuffix: String = js.native
+  var azureDataLakeStoreFileSystemEndpointSuffix: String
   
   /**
     * The Azure Batch resource ID.
     */
-  var batchResourceId: String = js.native
+  var batchResourceId: String
   
   /**
     * The template gallery endpoint.
     */
-  var galleryEndpointUrl: String = js.native
+  var galleryEndpointUrl: String
   
   /**
     * The keyvault service dns suffix.
     */
-  var keyVaultDnsSuffix: String = js.native
+  var keyVaultDnsSuffix: String
   
   /**
     * The management service endpoint.
     */
-  var managementEndpointUrl: String = js.native
+  var managementEndpointUrl: String
   
   /**
     * The Environment name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The management portal URL.
     */
-  var portalUrl: String = js.native
+  var portalUrl: String
   
   /**
     * The publish settings file URL.
     */
-  var publishingProfileUrl: String = js.native
+  var publishingProfileUrl: String
   
   /**
     * The resource management endpoint.
     */
-  var resourceManagerEndpointUrl: String = js.native
+  var resourceManagerEndpointUrl: String
   
   /**
     * The sql server management endpoint for mobile commands.
     */
-  var sqlManagementEndpointUrl: String = js.native
+  var sqlManagementEndpointUrl: String
   
   /**
     * The dns suffix for sql servers.
     */
-  var sqlServerHostnameSuffix: String = js.native
+  var sqlServerHostnameSuffix: String
   
   /**
     * The endpoint suffix for storage accounts.
     */
-  var storageEndpointSuffix: String = js.native
+  var storageEndpointSuffix: String
   
   /**
     * Determines whether the authentication endpoint should be validated with Azure AD. Default value is true.
     */
-  var validateAuthority: Boolean = js.native
+  var validateAuthority: Boolean
 }
 object AzureEnvironmentParameters {
   

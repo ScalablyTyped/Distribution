@@ -2,37 +2,35 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisabledAsDuplicateOfDefault extends StObject {
   
-  var disabled: scala.Double = js.native
+  var disabled: scala.Double
   
-  var disabledAsDuplicateOfDefault: scala.Double = js.native
+  var disabledAsDuplicateOfDefault: scala.Double
   
-  var disabledByAdmin: scala.Double = js.native
+  var disabledByAdmin: scala.Double
   
-  var disabledBySystem: scala.Double = js.native
+  var disabledBySystem: scala.Double
   
-  var disabledInactiveIdentity: scala.Double = js.native
+  var disabledInactiveIdentity: scala.Double
   
-  var disabledInvalidPathClause: scala.Double = js.native
+  var disabledInvalidPathClause: scala.Double
   
-  var disabledInvalidRoleExpression: scala.Double = js.native
+  var disabledInvalidRoleExpression: scala.Double
   
-  var disabledMessageQueueNotSupported: scala.Double = js.native
+  var disabledMessageQueueNotSupported: scala.Double
   
-  var disabledMissingIdentity: scala.Double = js.native
+  var disabledMissingIdentity: scala.Double
   
-  var enabled: scala.Double = js.native
+  var enabled: scala.Double
   
-  var enabledOnProbation: scala.Double = js.native
+  var enabledOnProbation: scala.Double
   
-  var jailedByNotificationsVolume: scala.Double = js.native
+  var jailedByNotificationsVolume: scala.Double
   
-  var pendingDeletion: scala.Double = js.native
+  var pendingDeletion: scala.Double
 }
 object DisabledAsDuplicateOfDefault {
   

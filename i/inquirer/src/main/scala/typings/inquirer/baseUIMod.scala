@@ -5,7 +5,6 @@ import typings.inquirer.mod.prompts.PromptBase
 import typings.node.readlineMod.Interface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseUIMod {
@@ -21,35 +20,60 @@ object baseUIMod {
     * @param options
     * The input- and output-stream of the ui.
     */
-  class ^ () extends UI {
+  class ^ ()
+    extends StObject
+       with UI {
     def this(options: StreamOptions) = this()
-  }
-  
-  /**
-    * Represents a ui.
-    */
-  @js.native
-  trait UI extends StObject {
     
     /**
       * Gets or sets the currently active prompt.
       */
+    /* CompleteClass */
     var activePrompt: PromptBase = js.native
     
     /**
       * Releases all unmanaged resources.
       */
-    /* protected */ def close(): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def close(): Unit = js.native
     
     /**
       * Handles a forced exit of the application.
       */
-    /* protected */ def onForceClose(): Unit = js.native
+    /* CompleteClass */
+    /* protected */ override def onForceClose(): Unit = js.native
     
     /**
       * Gets or sets an object for performing read from and write to the console.
       */
+    /* CompleteClass */
     var rl: Interface = js.native
+  }
+  
+  /**
+    * Represents a ui.
+    */
+  trait UI extends StObject {
+    
+    /**
+      * Gets or sets the currently active prompt.
+      */
+    var activePrompt: PromptBase
+    
+    /**
+      * Releases all unmanaged resources.
+      */
+    /* protected */ def close(): Unit
+    
+    /**
+      * Handles a forced exit of the application.
+      */
+    /* protected */ def onForceClose(): Unit
+    
+    /**
+      * Gets or sets an object for performing read from and write to the console.
+      */
+    var rl: Interface
   }
   object UI {
     

@@ -2,15 +2,15 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConnectionTypeResponse extends Response {
+trait ConnectionTypeResponse
+  extends StObject
+     with Response {
   
-  val connection_type: String = js.native
+  val connection_type: String
   
-  var ip_address: js.UndefOr[String] = js.native
+  var ip_address: js.UndefOr[String] = js.undefined
 }
 object ConnectionTypeResponse {
   

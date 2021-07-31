@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object base64vlqMod {
   
-  @JSImport("base64vlq", "decode")
+  @JSImport("base64vlq", JSImport.Namespace)
   @js.native
-  def decode(data: String): js.Array[_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("base64vlq", "encode")
-  @js.native
-  def encode(data: js.Array[_]): String = js.native
-  @JSImport("base64vlq", "encode")
-  @js.native
-  def encode(data: Double): String = js.native
+  @scala.inline
+  def decode(data: String): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
+  
+  @scala.inline
+  def encode(data: js.Array[js.Any]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def encode(data: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[String]
 }

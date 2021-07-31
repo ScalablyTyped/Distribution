@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSourceCredentialsOutput extends StObject {
   
   /**
     *  A list of SourceCredentialsInfo objects. Each SourceCredentialsInfo object includes the authentication type, token ARN, and type of source provider for one set of credentials. 
     */
-  var sourceCredentialsInfos: js.UndefOr[SourceCredentialsInfos] = js.native
+  var sourceCredentialsInfos: js.UndefOr[SourceCredentialsInfos] = js.undefined
 }
 object ListSourceCredentialsOutput {
   

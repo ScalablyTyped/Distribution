@@ -2,19 +2,17 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Secondary IP range of a usable subnetwork.
   */
-@js.native
 trait SchemaUsableSubnetworkSecondaryRange extends StObject {
   
   /**
     * The range of IP addresses belonging to this subnetwork secondary range.
     */
-  var ipCidrRange: js.UndefOr[String] = js.native
+  var ipCidrRange: js.UndefOr[String] = js.undefined
   
   /**
     * The name associated with this subnetwork secondary range, used when
@@ -22,7 +20,7 @@ trait SchemaUsableSubnetworkSecondaryRange extends StObject {
     * characters long, and comply with RFC1035. The name must be unique within
     * the subnetwork.
     */
-  var rangeName: js.UndefOr[String] = js.native
+  var rangeName: js.UndefOr[String] = js.undefined
 }
 object SchemaUsableSubnetworkSecondaryRange {
   

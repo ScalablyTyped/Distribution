@@ -2,15 +2,13 @@ package typings.lokijs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsyncResponses extends StObject {
   
-  var asyncResponses: js.UndefOr[Boolean] = js.native
+  var asyncResponses: js.UndefOr[Boolean] = js.undefined
   
-  var asyncTimeout: js.UndefOr[Double] = js.native
+  var asyncTimeout: js.UndefOr[Double] = js.undefined
 }
 object AsyncResponses {
   

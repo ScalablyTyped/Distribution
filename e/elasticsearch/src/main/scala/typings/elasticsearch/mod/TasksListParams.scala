@@ -4,25 +4,25 @@ import typings.elasticsearch.elasticsearchStrings.nodes
 import typings.elasticsearch.elasticsearchStrings.parents
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TasksListParams extends GenericParams {
+trait TasksListParams
+  extends StObject
+     with GenericParams {
   
-  var actions: js.UndefOr[NameList] = js.native
+  var actions: js.UndefOr[NameList] = js.undefined
   
-  var detailed: js.UndefOr[Boolean] = js.native
+  var detailed: js.UndefOr[Boolean] = js.undefined
   
-  var groupBy: js.UndefOr[nodes | parents] = js.native
+  var groupBy: js.UndefOr[nodes | parents] = js.undefined
   
-  var nodeId: js.UndefOr[NameList] = js.native
+  var nodeId: js.UndefOr[NameList] = js.undefined
   
-  var parentNode: js.UndefOr[String] = js.native
+  var parentNode: js.UndefOr[String] = js.undefined
   
-  var parentTask: js.UndefOr[String] = js.native
+  var parentTask: js.UndefOr[String] = js.undefined
   
-  var waitForCompletion: js.UndefOr[Boolean] = js.native
+  var waitForCompletion: js.UndefOr[Boolean] = js.undefined
 }
 object TasksListParams {
   

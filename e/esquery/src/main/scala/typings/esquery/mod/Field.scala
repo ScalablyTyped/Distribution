@@ -3,28 +3,27 @@ package typings.esquery.mod
 import typings.esquery.esqueryStrings.field
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
 // Atoms
 //
-@js.native
 trait Field
-  extends Atom
+  extends StObject
+     with Atom
      with Selector {
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_Field: field = js.native
+  var type_Field: field
 }
 object Field {
   
   @scala.inline
-  def apply(name: String, `type`: field): Field = {
+  def apply(name: String): Field = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("field")
     __obj.asInstanceOf[Field]
   }
   

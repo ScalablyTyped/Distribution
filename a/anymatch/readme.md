@@ -11,8 +11,8 @@ Matches strings against configurable strings, globs, regular expressions, and/or
 | Full name          | anymatch |
 | Keywords           | match, any, string, file, fs, list, glob, regex, regexp, regular, expression, function |
 | # releases         | 7 |
-| # dependents       | 309 |
-| # downloads        | 913946043 |
+| # dependents       | 359 |
+| # downloads        | 1232526642 |
 | # stars            | 17 |
 
 ## Links

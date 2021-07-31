@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IamPolicyAnalysis extends StObject {
   
   /** The analysis query. */
-  var analysisQuery: js.UndefOr[IamPolicyAnalysisQuery] = js.native
+  var analysisQuery: js.UndefOr[IamPolicyAnalysisQuery] = js.undefined
   
   /** A list of IamPolicyAnalysisResult that matches the analysis query, or empty if no result is found. */
-  var analysisResults: js.UndefOr[js.Array[IamPolicyAnalysisResult]] = js.native
+  var analysisResults: js.UndefOr[js.Array[IamPolicyAnalysisResult]] = js.undefined
   
   /** Represents whether all entries in the analysis_results have been fully explored to answer the query. */
-  var fullyExplored: js.UndefOr[Boolean] = js.native
+  var fullyExplored: js.UndefOr[Boolean] = js.undefined
   
   /** A list of non-critical errors happened during the query handling. */
-  var nonCriticalErrors: js.UndefOr[js.Array[IamPolicyAnalysisState]] = js.native
+  var nonCriticalErrors: js.UndefOr[js.Array[IamPolicyAnalysisState]] = js.undefined
 }
 object IamPolicyAnalysis {
   

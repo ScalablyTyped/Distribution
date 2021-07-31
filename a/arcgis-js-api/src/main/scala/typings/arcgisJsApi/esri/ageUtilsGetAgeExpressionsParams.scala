@@ -11,39 +11,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ageUtilsGetAgeExpressionsParams extends Object {
+trait ageUtilsGetAgeExpressionsParams
+  extends StObject
+     with Object {
   
   /**
     * The end time for the age calculation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
     */
-  var endTime: Date | String | Double = js.native
+  var endTime: Date | String | Double
   
   /**
     * The layer from which to generate age statistics for the given `startTime` and `endTime`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
     */
-  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | SceneLayer | CSVLayer | GeoJSONLayer
   
   /**
     * The start time for the age calculation.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
     */
-  var startTime: Date | String | Double = js.native
+  var startTime: Date | String | Double
   
   /**
     * The desired units of the age result.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-support-ageUtils.html#getAgeExpressions)
     */
-  var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.native
+  var unit: js.UndefOr[years | months | days | hours | minutes | seconds] = js.undefined
 }
 object ageUtilsGetAgeExpressionsParams {
   

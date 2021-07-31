@@ -3,33 +3,31 @@ package typings.babelTypes.indexTs37Mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseNode extends StObject {
   
-  var end: Double | Null = js.native
+  var end: Double | Null
   
-  var extra: js.UndefOr[Record[String, _]] = js.native
+  var extra: js.UndefOr[Record[String, js.Any]] = js.undefined
   
-  var innerComments: js.Array[Comment] | Null = js.native
+  var innerComments: js.Array[Comment] | Null
   
-  var leadingComments: js.Array[Comment] | Null = js.native
+  var leadingComments: js.Array[Comment] | Null
   
-  var loc: SourceLocation | Null = js.native
+  var loc: SourceLocation | Null
   
-  var start: Double | Null = js.native
+  var start: Double | Null
   
-  var trailingComments: js.Array[Comment] | Null = js.native
+  var trailingComments: js.Array[Comment] | Null
   
-  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any = js.native
+  var `type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any
 }
 object BaseNode {
   
   @scala.inline
   def apply(`type`: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 242 */ js.Any): BaseNode = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[BaseNode]
   }
@@ -44,7 +42,7 @@ object BaseNode {
     def setEndNull: Self = StObject.set(x, "end", null)
     
     @scala.inline
-    def setExtra(value: Record[String, _]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
+    def setExtra(value: Record[String, js.Any]): Self = StObject.set(x, "extra", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setExtraUndefined: Self = StObject.set(x, "extra", js.undefined)

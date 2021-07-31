@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interaction request handler. */
-@js.native
-trait XInteractionHandler extends XInterface {
+trait XInteractionHandler
+  extends StObject
+     with XInterface {
   
   /** Handle an interaction request. */
-  def handle(Request: XInteractionRequest): Unit = js.native
+  def handle(Request: XInteractionRequest): Unit
 }
 object XInteractionHandler {
   

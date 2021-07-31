@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an inclinometer reading. */
-@js.native
 trait InclinometerReading extends StObject {
   
   /** Gets the rotation in degrees around the x-axis. */
-  var pitchDegrees: Double = js.native
+  var pitchDegrees: Double
   
   /** Gets the rotation in degrees around the y-axis. */
-  var rollDegrees: Double = js.native
+  var rollDegrees: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
   
   /** Gets the inclinometer's z-axis accuracy. */
-  var yawAccuracy: MagnetometerAccuracy = js.native
+  var yawAccuracy: MagnetometerAccuracy
   
   /** Gets the rotation in degrees around the z-axis. */
-  var yawDegrees: Double = js.native
+  var yawDegrees: Double
 }
 object InclinometerReading {
   

@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.naturalLanguageClassifierV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Response from the classifier for multiple phrases. */
-@js.native
 trait ClassificationCollection extends StObject {
   
   /** Unique identifier for this classifier. */
-  var classifier_id: js.UndefOr[String] = js.native
+  var classifier_id: js.UndefOr[String] = js.undefined
   
   /** An array of classifier responses for each submitted phrase. */
-  var collection: js.UndefOr[js.Array[CollectionItem]] = js.native
+  var collection: js.UndefOr[js.Array[CollectionItem]] = js.undefined
   
   /** Link to the classifier. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object ClassificationCollection {
   

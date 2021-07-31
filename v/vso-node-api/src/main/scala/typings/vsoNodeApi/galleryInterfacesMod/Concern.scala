@@ -3,16 +3,16 @@ package typings.vsoNodeApi.galleryInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Concern extends QnAItem {
+trait Concern
+  extends StObject
+     with QnAItem {
   
   /**
     * Category of the concern
     */
-  var category: ConcernCategory = js.native
+  var category: ConcernCategory
 }
 object Concern {
   

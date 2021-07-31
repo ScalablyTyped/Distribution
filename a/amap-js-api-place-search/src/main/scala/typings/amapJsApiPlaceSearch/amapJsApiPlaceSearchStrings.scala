@@ -3,7 +3,6 @@ package typings.amapJsApiPlaceSearch
 import typings.amapJsApiPlaceSearch.AMap.PlaceSearch.SearchStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiPlaceSearchStrings {
@@ -49,12 +48,16 @@ object amapJsApiPlaceSearchStrings {
   def click: click = "click".asInstanceOf[click]
   
   @js.native
-  sealed trait complete extends SearchStatus
+  sealed trait complete
+    extends StObject
+       with SearchStatus
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait error extends SearchStatus
+  sealed trait error
+    extends StObject
+       with SearchStatus
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
@@ -89,7 +92,9 @@ object amapJsApiPlaceSearchStrings {
   def newpc: newpc = "newpc".asInstanceOf[newpc]
   
   @js.native
-  sealed trait no_data extends SearchStatus
+  sealed trait no_data
+    extends StObject
+       with SearchStatus
   @scala.inline
   def no_data: no_data = "no_data".asInstanceOf[no_data]
   

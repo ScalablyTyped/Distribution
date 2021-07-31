@@ -18,7 +18,6 @@ import typings.amapJsApiRiding.anon.Info
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AMap {
@@ -30,19 +29,27 @@ object AMap {
   object RidingPolicy extends StObject {
     
     @js.native
-    sealed trait DEFAULT extends RidingPolicy
+    sealed trait DEFAULT
+      extends StObject
+         with RidingPolicy
     
     // 推荐路线
     @js.native
-    sealed trait FASTEST extends RidingPolicy
+    sealed trait FASTEST
+      extends StObject
+         with RidingPolicy
     
     // 推荐路线及最快路线综合
     @js.native
-    sealed trait RECOMMENDED extends RidingPolicy
+    sealed trait RECOMMENDED
+      extends StObject
+         with RidingPolicy
   }
   
   @js.native
-  trait Riding extends EventEmitter {
+  trait Riding
+    extends StObject
+       with EventEmitter {
     
     /**
       * 清除搜索的结果
@@ -81,12 +88,11 @@ object AMap {
   }
   object Riding {
     
-    @js.native
     trait EventMap extends StObject {
       
-      var complete: Event_[typings.amapJsApiRiding.amapJsApiRidingStrings.complete, SearchResult] = js.native
+      var complete: Event_[typings.amapJsApiRiding.amapJsApiRidingStrings.complete, SearchResult]
       
-      var error: Event_[typings.amapJsApiRiding.amapJsApiRidingStrings.error, Info] = js.native
+      var error: Event_[typings.amapJsApiRiding.amapJsApiRidingStrings.error, Info]
     }
     object EventMap {
       
@@ -107,47 +113,46 @@ object AMap {
       }
     }
     
-    @js.native
     trait Options extends StObject {
       
       /**
         * 用于控制在路径规划结束后，是否自动调整地图视野使绘制的路线处于视口的可见范围
         */
-      var autoFitView: js.UndefOr[Boolean] = js.native
+      var autoFitView: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 设置隐藏路径规划的起始点图标，设置为true：隐藏图标；设置false：显示图标 默认值为：false
         */
-      var hideMarkers: js.UndefOr[Boolean] = js.native
+      var hideMarkers: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 使用map属性时，绘制的规划线路是否显示描边，默认为true
         */
-      var isOutline: js.UndefOr[Boolean] = js.native
+      var isOutline: js.UndefOr[Boolean] = js.undefined
       
       /**
         * AMap.Map对象, 展现结果的地图实例。
         * 当指定此参数后，搜索结果的标注、线路等均会自动添加到此地图上
         */
-      var map: js.UndefOr[Map] = js.native
+      var map: js.UndefOr[Map] = js.undefined
       
       /**
         * 使用map属性时，绘制的规划线路是否显示描边，默认为"white"
         */
-      var outlineColor: js.UndefOr[String] = js.native
+      var outlineColor: js.UndefOr[String] = js.undefined
       
       /**
         * 结果列表的HTML容器id或容器元素，提供此参数后，结果列表将在此容器中进行展示
         */
-      var panel: js.UndefOr[String | HTMLElement] = js.native
+      var panel: js.UndefOr[String | HTMLElement] = js.undefined
       
       /**
         * 骑行路线规划策略
         */
-      var policy: js.UndefOr[RidingPolicy] = js.native
+      var policy: js.UndefOr[RidingPolicy] = js.undefined
       
       // internal
-      var showDir: js.UndefOr[Boolean] = js.native
+      var showDir: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -210,23 +215,22 @@ object AMap {
       }
     }
     
-    @js.native
     trait Poi extends StObject {
       
       /**
         * 坐标
         */
-      var location: LngLat = js.native
+      var location: LngLat
       
       /**
         * 名称
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * 类型
         */
-      var `type`: start | end = js.native
+      var `type`: start | end
     }
     object Poi {
       
@@ -251,23 +255,22 @@ object AMap {
       }
     }
     
-    @js.native
     trait RideRoute extends StObject {
       
       /**
         * 起点到终点总步行距离，单位：米
         */
-      var distance: Double = js.native
+      var distance: Double
       
       /**
         * 路段列表，以道路名称作为分段依据，将整个骑行导航方案分隔成若干路段
         */
-      var rides: js.Array[RideStep] = js.native
+      var rides: js.Array[RideStep]
       
       /**
         * 步行时间预计，单位：秒
         */
-      var time: Double = js.native
+      var time: Double
     }
     object RideRoute {
       
@@ -294,60 +297,59 @@ object AMap {
       }
     }
     
-    @js.native
     trait RideStep extends StObject {
       
       /**
         * 本骑行子路段完成后动作
         */
-      var action: String = js.native
+      var action: String
       
       /**
         * @deprecated
         * 本骑行子路段完成后辅助动作，一般为到达某个目的地时返回
         * 文档中有此字段但是实际代码中并没有返回
         */
-      var assist_action: js.UndefOr[String] = js.native
+      var assist_action: js.UndefOr[String] = js.undefined
       
       /**
         * 此路段距离，单位：米
         */
-      var distance: Double = js.native
+      var distance: Double
       
       /**
         * 本路段的终点坐标
         */
-      var end_location: LngLat = js.native
+      var end_location: LngLat
       
       /**
         * 此路段说明，如“沿北京南站路骑行565米右转”
         */
-      var instruction: String = js.native
+      var instruction: String
       
       /**
         * 步行方向
         */
-      var orientation: String = js.native
+      var orientation: String
       
       /**
         * 此路段坐标集合
         */
-      var path: js.Array[LngLat] = js.native
+      var path: js.Array[LngLat]
       
       /**
         * 道路
         */
-      var road: String = js.native
+      var road: String
       
       /**
         * 本路段的起点坐标
         */
-      var start_location: LngLat = js.native
+      var start_location: LngLat
       
       /**
         * 此路段预计使用时间，单位：秒
         */
-      var time: Double = js.native
+      var time: Double
     }
     object RideStep {
       
@@ -408,11 +410,10 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchPoint extends StObject {
       
       // 地点名称
-      var keyword: String = js.native
+      var keyword: String
     }
     object SearchPoint {
       
@@ -460,20 +461,20 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResultBase
-      extends SearchResultCommon
+      extends StObject
+         with SearchResultCommon
          with SearchResult {
       
       /**
         * 骑行导航终点
         */
-      var end: js.UndefOr[Poi] = js.native
+      var end: js.UndefOr[Poi] = js.undefined
       
       /**
         * 骑行导航起点
         */
-      var start: js.UndefOr[Poi] = js.native
+      var start: js.UndefOr[Poi] = js.undefined
     }
     object SearchResultBase {
       
@@ -500,33 +501,32 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResultCommon extends StObject {
       
       /**
         * 骑行导航路段数目
         */
-      var count: Double = js.native
+      var count: Double
       
       /**
         * 骑行导航终点坐标
         */
-      var destination: LngLat = js.native
+      var destination: LngLat
       
       /**
         * 成功状态说明
         */
-      var info: String = js.native
+      var info: String
       
       /**
         * 骑行导航起点坐标
         */
-      var origin: LngLat = js.native
+      var origin: LngLat
       
       /**
         * 骑行规划路线列表
         */
-      var routes: js.Array[RideRoute] = js.native
+      var routes: js.Array[RideRoute]
     }
     object SearchResultCommon {
       
@@ -559,30 +559,30 @@ object AMap {
       }
     }
     
-    @js.native
     trait SearchResultExt
-      extends SearchResultCommon
+      extends StObject
+         with SearchResultCommon
          with SearchResult {
       
       /**
         * 骑行导航终点名称
         */
-      var destinationName: String = js.native
+      var destinationName: String
       
       /**
         * 骑行导航终点
         */
-      var end: PoiExt = js.native
+      var end: PoiExt
       
       /**
         * 骑行导航起点名称
         */
-      var originName: String = js.native
+      var originName: String
       
       /**
         * 骑行导航起点
         */
-      var start: PoiExt = js.native
+      var start: PoiExt
     }
     object SearchResultExt {
       

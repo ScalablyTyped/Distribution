@@ -2,31 +2,29 @@ package typings.uikit.mod.UIkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIkitStickyOptions extends StObject {
   
-  var animation: js.UndefOr[String | Boolean] = js.native
+  var animation: js.UndefOr[String | Boolean] = js.undefined
   
-  var bottom: js.UndefOr[Boolean | String] = js.native
+  var bottom: js.UndefOr[Boolean | String] = js.undefined
   
-  var `cls-active`: js.UndefOr[String] = js.native
+  var `cls-active`: js.UndefOr[String] = js.undefined
   
-  var `cls-inactive`: js.UndefOr[String] = js.native
+  var `cls-inactive`: js.UndefOr[String] = js.undefined
   
-  var media: js.UndefOr[Double | String | Boolean] = js.native
+  var media: js.UndefOr[Double | String | Boolean] = js.undefined
   
-  var offset: js.UndefOr[Double | String] = js.native
+  var offset: js.UndefOr[Double | String] = js.undefined
   
-  var `show-on-up`: js.UndefOr[Boolean] = js.native
+  var `show-on-up`: js.UndefOr[Boolean] = js.undefined
   
-  var `target-offset`: js.UndefOr[Boolean | Double] = js.native
+  var `target-offset`: js.UndefOr[Boolean | Double] = js.undefined
   
-  var top: js.UndefOr[Double | String] = js.native
+  var top: js.UndefOr[Double | String] = js.undefined
   
-  var `width-element`: js.UndefOr[String | Boolean] = js.native
+  var `width-element`: js.UndefOr[String | Boolean] = js.undefined
 }
 object UIkitStickyOptions {
   

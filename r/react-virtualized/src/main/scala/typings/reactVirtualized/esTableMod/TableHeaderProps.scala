@@ -3,23 +3,21 @@ package typings.reactVirtualized.esTableMod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableHeaderProps extends StObject {
   
-  var columnData: js.UndefOr[js.Any] = js.native
+  var columnData: js.UndefOr[js.Any] = js.undefined
   
-  var dataKey: String = js.native
+  var dataKey: String
   
-  var disableSort: js.UndefOr[Boolean] = js.native
+  var disableSort: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var sortBy: js.UndefOr[String] = js.native
+  var sortBy: js.UndefOr[String] = js.undefined
   
-  var sortDirection: js.UndefOr[SortDirectionType] = js.native
+  var sortDirection: js.UndefOr[SortDirectionType] = js.undefined
 }
 object TableHeaderProps {
   

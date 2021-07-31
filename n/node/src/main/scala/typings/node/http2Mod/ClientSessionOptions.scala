@@ -6,18 +6,18 @@ import typings.node.streamMod.Duplex
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientSessionOptions extends SessionOptions {
+trait ClientSessionOptions
+  extends StObject
+     with SessionOptions {
   
   @JSName("createConnection")
-  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ SessionOptions, Duplex]] = js.native
+  var createConnection_ClientSessionOptions: js.UndefOr[js.Function2[/* authority */ URL_, /* option */ SessionOptions, Duplex]] = js.undefined
   
-  var maxReservedRemoteStreams: js.UndefOr[Double] = js.native
+  var maxReservedRemoteStreams: js.UndefOr[Double] = js.undefined
   
-  var protocol: js.UndefOr[httpColon | httpsColon] = js.native
+  var protocol: js.UndefOr[httpColon | httpsColon] = js.undefined
 }
 object ClientSessionOptions {
   

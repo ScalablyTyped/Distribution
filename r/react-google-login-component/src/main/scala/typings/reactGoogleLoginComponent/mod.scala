@@ -6,7 +6,6 @@ import typings.reactGoogleLoginComponent.anon.Accesstoken
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,9 @@ object mod {
     def this(props: GoogleLoginProps, context: js.Any) = this()
   }
   
-  @js.native
   trait GoogleLoginInfo extends StObject {
     
-    def getAuthResponse(): Accesstoken = js.native
+    def getAuthResponse(): Accesstoken
   }
   object GoogleLoginInfo {
     
@@ -44,20 +42,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait GoogleLoginProps extends ButtonHTMLAttributes[HTMLButtonElement] {
+  trait GoogleLoginProps
+    extends StObject
+       with ButtonHTMLAttributes[HTMLButtonElement] {
     
-    var buttonText: js.UndefOr[String] = js.native
+    var buttonText: js.UndefOr[String] = js.undefined
     
-    var fetchBasicProfile: js.UndefOr[Boolean] = js.native
+    var fetchBasicProfile: js.UndefOr[Boolean] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    def responseHandler(response: GoogleLoginInfo): Unit = js.native
+    def responseHandler(response: GoogleLoginInfo): Unit
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var socialId: String = js.native
+    var socialId: String
   }
   object GoogleLoginProps {
     

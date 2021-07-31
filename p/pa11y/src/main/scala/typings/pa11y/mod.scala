@@ -4,21 +4,21 @@ import typings.puppeteer.mod.Browser
 import typings.puppeteer.mod.Page
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("pa11y", JSImport.Namespace)
-  @js.native
-  def apply(url: String): js.Promise[Results] = js.native
-  @JSImport("pa11y", JSImport.Namespace)
-  @js.native
-  def apply(url: String, options: Options): js.Promise[Results] = js.native
+  @scala.inline
+  def apply(url: String): js.Promise[Results] = ^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Results]]
+  @scala.inline
+  def apply(url: String, options: Options): js.Promise[Results] = (^.asInstanceOf[js.Dynamic].apply(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Results]]
   
-  @JSImport("pa11y", "isValidAction")
+  @JSImport("pa11y", JSImport.Namespace)
   @js.native
-  def isValidAction(action: String): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isValidAction(action: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidAction")(action.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /* Rewritten from type alias, can be one of: 
     - typings.pa11y.pa11yStrings.Section508
@@ -42,12 +42,11 @@ object mod {
     def WCAG2AAA: typings.pa11y.pa11yStrings.WCAG2AAA = "WCAG2AAA".asInstanceOf[typings.pa11y.pa11yStrings.WCAG2AAA]
   }
   
-  @js.native
   trait LaunchConfig extends StObject {
     
-    var executablePath: String = js.native
+    var executablePath: String
     
-    var ignoreHTTPSErrors: Boolean = js.native
+    var ignoreHTTPSErrors: Boolean
   }
   object LaunchConfig {
     
@@ -68,14 +67,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LogConfig extends StObject {
     
-    var debug: js.UndefOr[js.Function0[Unit]] = js.native
+    var debug: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function0[Unit]] = js.native
+    var error: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var info: js.UndefOr[js.Function0[Unit]] = js.native
+    var info: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object LogConfig {
     
@@ -108,63 +106,62 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var actions: js.UndefOr[js.Array[String]] = js.native
+    var actions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var browser: js.UndefOr[Browser] = js.native
+    var browser: js.UndefOr[Browser] = js.undefined
     
-    var chromeLaunchConfig: js.UndefOr[LaunchConfig] = js.native
+    var chromeLaunchConfig: js.UndefOr[LaunchConfig] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var hideElements: js.UndefOr[String] = js.native
+    var hideElements: js.UndefOr[String] = js.undefined
     
-    var ignore: js.UndefOr[js.Array[String]] = js.native
+    var ignore: js.UndefOr[js.Array[String]] = js.undefined
     
-    var ignoreUrl: js.UndefOr[Boolean] = js.native
+    var ignoreUrl: js.UndefOr[Boolean] = js.undefined
     
-    var includeNotices: js.UndefOr[Boolean] = js.native
+    var includeNotices: js.UndefOr[Boolean] = js.undefined
     
-    var includeWarnings: js.UndefOr[Boolean] = js.native
+    var includeWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var log: js.UndefOr[LogConfig] = js.native
+    var log: js.UndefOr[LogConfig] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var page: js.UndefOr[Page] = js.native
+    var page: js.UndefOr[Page] = js.undefined
     
-    var pages: js.UndefOr[js.Array[Page]] = js.native
+    var pages: js.UndefOr[js.Array[Page]] = js.undefined
     
-    var postData: js.UndefOr[String] = js.native
+    var postData: js.UndefOr[String] = js.undefined
     
-    var reporter: js.UndefOr[String] = js.native
+    var reporter: js.UndefOr[String] = js.undefined
     
-    var rootElement: js.UndefOr[String] = js.native
+    var rootElement: js.UndefOr[String] = js.undefined
     
-    var rules: js.UndefOr[js.Array[String]] = js.native
+    var rules: js.UndefOr[js.Array[String]] = js.undefined
     
-    var runners: js.UndefOr[js.Array[String]] = js.native
+    var runners: js.UndefOr[js.Array[String]] = js.undefined
     
-    var screenCapture: js.UndefOr[String] = js.native
+    var screenCapture: js.UndefOr[String] = js.undefined
     
-    var standard: js.UndefOr[AccessibilityStandard] = js.native
+    var standard: js.UndefOr[AccessibilityStandard] = js.undefined
     
-    var threshold: js.UndefOr[Double] = js.native
+    var threshold: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var userAgent: js.UndefOr[String] = js.native
+    var userAgent: js.UndefOr[String] = js.undefined
     
     var viewport: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Viewport */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     @JSName("wait")
-    var wait_FOptions: js.UndefOr[Double] = js.native
+    var wait_FOptions: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -352,20 +349,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ResultIssue extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var context: String = js.native
+    var context: String
     
-    var message: String = js.native
+    var message: String
     
-    var selector: String = js.native
+    var selector: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var typeCode: Double = js.native
+    var typeCode: Double
   }
   object ResultIssue {
     
@@ -399,14 +395,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
-    var documentTitle: String = js.native
+    var documentTitle: String
     
-    var issues: js.Array[ResultIssue] = js.native
+    var issues: js.Array[ResultIssue]
     
-    var pageUrl: String = js.native
+    var pageUrl: String
   }
   object Results {
     

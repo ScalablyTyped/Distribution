@@ -2,15 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SocialSignInOptions extends StObject {
   
-  var access_token: String = js.native
+  var access_token: String
   
-  var connection: String = js.native
+  var connection: String
 }
 object SocialSignInOptions {
   

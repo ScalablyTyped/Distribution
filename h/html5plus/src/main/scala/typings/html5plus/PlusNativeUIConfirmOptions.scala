@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
   */
-@js.native
 trait PlusNativeUIConfirmOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait PlusNativeUIConfirmOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var buttons: js.UndefOr[js.Array[_]] = js.native
+  var buttons: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * 确认对话框显示的标题
@@ -27,7 +25,7 @@ trait PlusNativeUIConfirmOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * 对话框在屏幕中的垂直分享对齐方式
@@ -39,7 +37,7 @@ trait PlusNativeUIConfirmOptions extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeui.html](http://www.html5plus.org/doc/zh_cn/nativeui.html)
     */
-  var verticalAlign: js.UndefOr[String] = js.native
+  var verticalAlign: js.UndefOr[String] = js.undefined
 }
 object PlusNativeUIConfirmOptions {
   
@@ -53,7 +51,7 @@ object PlusNativeUIConfirmOptions {
   implicit class PlusNativeUIConfirmOptionsMutableBuilder[Self <: PlusNativeUIConfirmOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+    def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setButtonsUndefined: Self = StObject.set(x, "buttons", js.undefined)

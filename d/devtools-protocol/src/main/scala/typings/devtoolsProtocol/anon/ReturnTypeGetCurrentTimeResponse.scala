@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Animation.GetCurrentTimeRequest
 import typings.devtoolsProtocol.mod.Protocol.Animation.GetCurrentTimeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetCurrentTimeResponse extends StObject {
   
-  var paramsType: js.Array[GetCurrentTimeRequest] = js.native
+  var paramsType: js.Array[GetCurrentTimeRequest]
   
-  var returnType: GetCurrentTimeResponse = js.native
+  var returnType: GetCurrentTimeResponse
 }
 object ReturnTypeGetCurrentTimeResponse {
   

@@ -45,7 +45,6 @@ import typings.primus.primusStrings.websockets
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -56,14 +55,17 @@ object mod {
     def this(server: Server) = this()
     def this(server: Server, options: PrimusOptions) = this()
   }
+  @JSImport("primus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("primus", "Socket")
   @js.native
   class Socket () extends Stream {
     def this(options: SocketOptions) = this()
     def this(url: String) = this()
-    def this(url: js.UndefOr[scala.Nothing], options: SocketOptions) = this()
     def this(url: String, options: SocketOptions) = this()
+    def this(url: Unit, options: SocketOptions) = this()
     
     def destroy(): Unit = js.native
     
@@ -108,25 +110,19 @@ object mod {
     def write(data: js.Any): this.type = js.native
   }
   
-  @JSImport("primus", "createServer")
-  @js.native
-  def createServer(): Primus = js.native
-  @JSImport("primus", "createServer")
-  @js.native
-  def createServer(fn: js.Function1[/* spark */ Spark, Unit]): Primus = js.native
-  @JSImport("primus", "createServer")
-  @js.native
-  def createServer(fn: js.Function1[/* spark */ Spark, Unit], options: PrimusOptions): Primus = js.native
-  @JSImport("primus", "createServer")
-  @js.native
-  def createServer(options: PrimusOptions): Primus = js.native
+  @scala.inline
+  def createServer(): Primus = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")().asInstanceOf[Primus]
+  @scala.inline
+  def createServer(fn: js.Function1[/* spark */ Spark, Unit]): Primus = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(fn.asInstanceOf[js.Any]).asInstanceOf[Primus]
+  @scala.inline
+  def createServer(fn: js.Function1[/* spark */ Spark, Unit], options: PrimusOptions): Primus = (^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Primus]
+  @scala.inline
+  def createServer(options: PrimusOptions): Primus = ^.asInstanceOf[js.Dynamic].applyDynamic("createServer")(options.asInstanceOf[js.Any]).asInstanceOf[Primus]
   
-  @JSImport("primus", "createSocket")
-  @js.native
-  def createSocket(): Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket] = js.native
-  @JSImport("primus", "createSocket")
-  @js.native
-  def createSocket(options: PrimusOptions): Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket] = js.native
+  @scala.inline
+  def createSocket(): Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")().asInstanceOf[Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket]]
+  @scala.inline
+  def createSocket(options: PrimusOptions): Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSocket")(options.asInstanceOf[js.Any]).asInstanceOf[Instantiable1[/* options */ js.UndefOr[SocketOptions], Socket]]
   
   type AuthorizationHandler = js.Function2[
     /* req */ IncomingMessage, 
@@ -136,12 +132,11 @@ object mod {
   
   type Middleware = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, Unit]
   
-  @js.native
   trait Parser extends StObject {
     
-    def decoder(data: js.Any, fn: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
+    def decoder(data: js.Any, fn: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit
     
-    def encoder(data: js.Any, fn: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit = js.native
+    def encoder(data: js.Any, fn: js.Function2[/* error */ Error, /* response */ js.Any, Unit]): Unit
   }
   object Parser {
     
@@ -185,9 +180,9 @@ object mod {
     def enable(name: String): this.type = js.native
     
     def end(): Unit = js.native
-    def end(data: js.UndefOr[scala.Nothing], options: Reconnect): Unit = js.native
     def end(data: js.Any): Unit = js.native
     def end(data: js.Any, options: Reconnect): Unit = js.native
+    def end(data: Unit, options: Reconnect): Unit = js.native
     
     def forEach(cb: js.Function1[/* spark */ Spark, Boolean]): this.type = js.native
     def forEach(
@@ -234,54 +229,53 @@ object mod {
     def transform_outgoing(`type`: outgoing, fn: js.Function1[/* packet */ PrimusPacket, Unit]): this.type = js.native
     
     def use(fn: js.Function0[Middleware]): this.type = js.native
-    def use(fn: js.Function0[Middleware], options: js.UndefOr[scala.Nothing], level: Double): this.type = js.native
     def use(fn: js.Function0[Middleware], options: js.Object): this.type = js.native
     def use(fn: js.Function0[Middleware], options: js.Object, level: Double): this.type = js.native
+    def use(fn: js.Function0[Middleware], options: Unit, level: Double): this.type = js.native
     def use(name: String, fn: js.Function0[Middleware]): this.type = js.native
-    def use(name: String, fn: js.Function0[Middleware], options: js.UndefOr[scala.Nothing], level: Double): this.type = js.native
     def use(name: String, fn: js.Function0[Middleware], options: js.Object): this.type = js.native
     def use(name: String, fn: js.Function0[Middleware], options: js.Object, level: Double): this.type = js.native
+    def use(name: String, fn: js.Function0[Middleware], options: Unit, level: Double): this.type = js.native
     
     def write(data: js.Any): Unit = js.native
   }
   
-  @js.native
   trait PrimusOptions extends StObject {
     
-    var authorization: js.UndefOr[AuthorizationHandler] = js.native
+    var authorization: js.UndefOr[AuthorizationHandler] = js.undefined
     
-    var compression: js.UndefOr[Boolean] = js.native
+    var compression: js.UndefOr[Boolean] = js.undefined
     
-    var credentials: js.UndefOr[Boolean] = js.native
+    var credentials: js.UndefOr[Boolean] = js.undefined
     
-    var exposed: js.UndefOr[Boolean] = js.native
+    var exposed: js.UndefOr[Boolean] = js.undefined
     
-    var global: js.UndefOr[String] = js.native
+    var global: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[Boolean] = js.native
+    var headers: js.UndefOr[Boolean] = js.undefined
     
-    var idGenerator: js.UndefOr[js.Function0[String]] = js.native
+    var idGenerator: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var maxAge: js.UndefOr[String] = js.native
+    var maxAge: js.UndefOr[String] = js.undefined
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
-    var methods: js.UndefOr[String] = js.native
+    var methods: js.UndefOr[String] = js.undefined
     
     // Cors
-    var origins: js.UndefOr[String] = js.native
+    var origins: js.UndefOr[String] = js.undefined
     
-    var parser: js.UndefOr[String | Parser] = js.native
+    var parser: js.UndefOr[String | Parser] = js.undefined
     
-    var pathname: js.UndefOr[String] = js.native
+    var pathname: js.UndefOr[String] = js.undefined
     
-    var pingInterval: js.UndefOr[Double] = js.native
+    var pingInterval: js.UndefOr[Double] = js.undefined
     
-    var plugin: js.UndefOr[String | js.Object] = js.native
+    var plugin: js.UndefOr[String | js.Object] = js.undefined
     
-    var transformer: js.UndefOr[websockets | engineDotio | browserchannel | sockjs | faye | uws] = js.native
+    var transformer: js.UndefOr[websockets | engineDotio | browserchannel | sockjs | faye | uws] = js.undefined
     
-    var transport: js.UndefOr[js.Object] = js.native
+    var transport: js.UndefOr[js.Object] = js.undefined
   }
   object PrimusOptions {
     
@@ -400,10 +394,9 @@ object mod {
     }
   }
   
-  @js.native
   trait PrimusPacket extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
   }
   object PrimusPacket {
     
@@ -422,28 +415,27 @@ object mod {
   }
   
   /* Inlined parent std.Required<primus.primus.ReconnectOpts> */
-  @js.native
   trait ReconnectEventOpts extends StObject {
     
-    var attempt: Double = js.native
+    var attempt: Double
     
-    var backoff: Boolean = js.native
+    var backoff: Boolean
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var factor: Double = js.native
+    var factor: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var `reconnect timeout`: Double = js.native
+    var `reconnect timeout`: Double
     
-    var retries: Double = js.native
+    var retries: Double
     
-    var scheduled: Double = js.native
+    var scheduled: Double
     
-    var start: Double = js.native
+    var start: Double
   }
   object ReconnectEventOpts {
     
@@ -500,18 +492,17 @@ object mod {
     }
   }
   
-  @js.native
   trait ReconnectOpts extends StObject {
     
-    var factor: js.UndefOr[Double] = js.native
+    var factor: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var `reconnect timeout`: js.UndefOr[Double] = js.native
+    var `reconnect timeout`: js.UndefOr[Double] = js.undefined
     
-    var retries: js.UndefOr[Double | Null] = js.native
+    var retries: js.UndefOr[Double | Null] = js.undefined
   }
   object ReconnectOpts {
     
@@ -559,27 +550,26 @@ object mod {
     }
   }
   
-  @js.native
   trait SocketOptions extends StObject {
     
-    var manual: js.UndefOr[Boolean] = js.native
+    var manual: js.UndefOr[Boolean] = js.undefined
     
-    var network: js.UndefOr[Boolean] = js.native
+    var network: js.UndefOr[Boolean] = js.undefined
     
-    var pingTimeout: js.UndefOr[Double] = js.native
+    var pingTimeout: js.UndefOr[Double] = js.undefined
     
-    var queueSize: js.UndefOr[Double] = js.native
+    var queueSize: js.UndefOr[Double] = js.undefined
     
     // https://github.com/unshiftio/recovery
-    var reconnect: js.UndefOr[Factor] = js.native
+    var reconnect: js.UndefOr[Factor] = js.undefined
     
-    var strategy: js.UndefOr[String | (js.Array[disconnect | online | timeout])] = js.native
+    var strategy: js.UndefOr[String | (js.Array[disconnect | online | timeout])] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var transport: js.UndefOr[js.Object] = js.native
+    var transport: js.UndefOr[js.Object] = js.undefined
     
-    var websockets: js.UndefOr[Boolean] = js.native
+    var websockets: js.UndefOr[Boolean] = js.undefined
   }
   object SocketOptions {
     
@@ -663,9 +653,9 @@ object mod {
     var emits_Original: emits = js.native
     
     def end(): Unit = js.native
-    def end(data: js.UndefOr[scala.Nothing], options: Reconnect): Unit = js.native
     def end(data: js.Any): Unit = js.native
     def end(data: js.Any, options: Reconnect): Unit = js.native
+    def end(data: Unit, options: Reconnect): Unit = js.native
     
     var headers: IncomingHttpHeaders = js.native
     

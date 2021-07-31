@@ -2,24 +2,22 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PricingSchedulePricingPeriod extends StObject {
   
-  var endDate: js.UndefOr[String] = js.native
+  var endDate: js.UndefOr[String] = js.undefined
   
   /** Comments for this pricing period. */
-  var pricingComment: js.UndefOr[String] = js.native
+  var pricingComment: js.UndefOr[String] = js.undefined
   
   /** Rate or cost of this pricing period in nanos (i.e., multipled by 1000000000). Acceptable values are 0 to 1000000000000000000, inclusive. */
-  var rateOrCostNanos: js.UndefOr[String] = js.native
+  var rateOrCostNanos: js.UndefOr[String] = js.undefined
   
-  var startDate: js.UndefOr[String] = js.native
+  var startDate: js.UndefOr[String] = js.undefined
   
   /** Units of this pricing period. Acceptable values are 0 to 10000000000, inclusive. */
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
 }
 object PricingSchedulePricingPeriod {
   

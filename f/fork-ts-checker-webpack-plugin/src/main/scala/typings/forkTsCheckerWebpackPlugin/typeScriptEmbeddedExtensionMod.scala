@@ -6,10 +6,13 @@ import typings.forkTsCheckerWebpackPlugin.forkTsCheckerWebpackPluginStrings.Dott
 import typings.forkTsCheckerWebpackPlugin.typeScriptExtensionMod.TypeScriptExtension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typeScriptEmbeddedExtensionMod {
+  
+  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/extension/TypeScriptEmbeddedExtension", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * It handles most of the logic required to process embedded TypeScript code (like in Vue components or MDX)
@@ -19,16 +22,14 @@ object typeScriptEmbeddedExtensionMod {
     * @param getEmbeddedSource  Function that returns embedded TypeScript source text and extension that this file
     *                           would have if it would be a regular TypeScript file
     */
-  @JSImport("fork-ts-checker-webpack-plugin/lib/typescript-reporter/extension/TypeScriptEmbeddedExtension", "createTypeScriptEmbeddedExtension")
-  @js.native
-  def createTypeScriptEmbeddedExtension(hasEmbeddedExtensionsGetEmbeddedSource: TypeScriptEmbeddedExtensionHost): TypeScriptExtension = js.native
+  @scala.inline
+  def createTypeScriptEmbeddedExtension(hasEmbeddedExtensionsGetEmbeddedSource: TypeScriptEmbeddedExtensionHost): TypeScriptExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createTypeScriptEmbeddedExtension")(hasEmbeddedExtensionsGetEmbeddedSource.asInstanceOf[js.Any]).asInstanceOf[TypeScriptExtension]
   
-  @js.native
   trait TypeScriptEmbeddedExtensionHost extends StObject {
     
-    var embeddedExtensions: js.Array[String] = js.native
+    var embeddedExtensions: js.Array[String]
     
-    def getEmbeddedSource(fileName: String): js.UndefOr[TypeScriptEmbeddedSource] = js.native
+    def getEmbeddedSource(fileName: String): js.UndefOr[TypeScriptEmbeddedSource]
   }
   object TypeScriptEmbeddedExtensionHost {
     
@@ -55,18 +56,18 @@ object typeScriptEmbeddedExtensionMod {
     }
   }
   
-  @js.native
   trait TypeScriptEmbeddedSource extends StObject {
     
-    var extension: Dotts | Dottsx | Dotjs = js.native
+    var `extension`: Dotts | Dottsx | Dotjs
     
-    var sourceText: String = js.native
+    var sourceText: String
   }
   object TypeScriptEmbeddedSource {
     
     @scala.inline
-    def apply(extension: Dotts | Dottsx | Dotjs, sourceText: String): TypeScriptEmbeddedSource = {
-      val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], sourceText = sourceText.asInstanceOf[js.Any])
+    def apply(`extension`: Dotts | Dottsx | Dotjs, sourceText: String): TypeScriptEmbeddedSource = {
+      val __obj = js.Dynamic.literal(sourceText = sourceText.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TypeScriptEmbeddedSource]
     }
     

@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cyclomaticComplexityRuleMod {
@@ -30,12 +29,10 @@ object cyclomaticComplexityRuleMod {
     @scala.inline
     def DEFAULT_THRESHOLD_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_THRESHOLD")(x.asInstanceOf[js.Any])
     
-    @JSImport("tslint/lib/rules/cyclomaticComplexityRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(expected: Double, actual: Double): String = js.native
-    @JSImport("tslint/lib/rules/cyclomaticComplexityRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(expected: Double, actual: Double, name: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING(expected: Double, actual: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def FAILURE_STRING(expected: Double, actual: Double, name: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(expected.asInstanceOf[js.Any], actual.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/cyclomaticComplexityRule", "Rule.MINIMUM_THRESHOLD")
     @js.native

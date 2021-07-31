@@ -8,7 +8,6 @@ import typings.web3CoreSubscriptions.web3CoreSubscriptionsStrings.data
 import typings.web3CoreSubscriptions.web3CoreSubscriptionsStrings.error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -51,7 +50,7 @@ object mod {
     
     def attachToObject(obj: js.Any): Unit = js.native
     
-    def buildCall(): js.Function0[_] = js.native
+    def buildCall(): js.Function0[js.Any] = js.native
     
     var name: String = js.native
     
@@ -64,18 +63,17 @@ object mod {
     var `type`: String = js.native
   }
   
-  @js.native
   trait SubscriptionModel extends StObject {
     
-    var inputFormatter: js.Array[js.Function0[Unit]] = js.native
+    var inputFormatter: js.Array[js.Function0[Unit]]
     
-    def outputFormatter(): Unit = js.native
+    def outputFormatter(): Unit
     
-    var params: Double = js.native
+    var params: Double
     
-    def subscriptionHandler(): Unit = js.native
+    def subscriptionHandler(): Unit
     
-    var subscriptionName: String = js.native
+    var subscriptionName: String
   }
   object SubscriptionModel {
     
@@ -114,14 +112,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SubscriptionOptions extends StObject {
     
-    var requestManager: js.Any = js.native
+    var requestManager: js.Any
     
-    var subscription: String = js.native
+    var subscription: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SubscriptionOptions {
     
@@ -148,14 +145,13 @@ object mod {
   
   type SubscriptionsModel = StringDictionary[SubscriptionModel]
   
-  @js.native
   trait SubscriptionsOptions extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var subscriptions: SubscriptionsModel = js.native
+    var subscriptions: SubscriptionsModel
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object SubscriptionsOptions {
     

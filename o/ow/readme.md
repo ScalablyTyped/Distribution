@@ -10,9 +10,9 @@ Function argument validation for humans
 | ------------------ | :-------------: |
 | Full name          | ow |
 | Keywords           | type, types, check, checking, guard, guards, assert, assertion, predicate, predicates, is, validate, validation, utility, util, typeof, instanceof, object |
-| # releases         | 17 |
-| # dependents       | 223 |
-| # downloads        | 9078245 |
+| # releases         | 16 |
+| # dependents       | 241 |
+| # downloads        | 14843689 |
 | # stars            | 1 |
 
 ## Links

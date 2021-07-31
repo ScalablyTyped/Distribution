@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to multiple properties with a single call. */
-@js.native
-trait XMultiPropertySet extends XInterface {
+trait XMultiPropertySet
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object to which this interface belongs. NULL is returned if the obj
     * @see XPropertySet.getPropertySetInfo
     */
-  val PropertySetInfo: XPropertySetInfo = js.native
+  val PropertySetInfo: XPropertySetInfo
   
   /**
     * adds an {@link XPropertiesChangeListener} to the specified property with the specified names.
@@ -29,26 +29,26 @@ trait XMultiPropertySet extends XInterface {
     * @param xListener contains the listener for the property change events.
     * @see removePropertiesChangeListener
     */
-  def addPropertiesChangeListener(aPropertyNames: SeqEquiv[String], xListener: XPropertiesChangeListener): Unit = js.native
+  def addPropertiesChangeListener(aPropertyNames: SeqEquiv[String], xListener: XPropertiesChangeListener): Unit
   
   /**
     * fires a sequence of PropertyChangeEvents to the specified listener.
     * @param aPropertyNames specifies the sorted names of the properties.
     * @param xListener contains the listener for the property change events.
     */
-  def firePropertiesChangeEvent(aPropertyNames: SeqEquiv[String], xListener: XPropertiesChangeListener): Unit = js.native
+  def firePropertiesChangeEvent(aPropertyNames: SeqEquiv[String], xListener: XPropertiesChangeListener): Unit
   
   /**
     * @returns the {@link XPropertySetInfo} interface, which describes all properties of the object to which this interface belongs. NULL is returned if the obj
     * @see XPropertySet.getPropertySetInfo
     */
-  def getPropertySetInfo(): XPropertySetInfo = js.native
+  def getPropertySetInfo(): XPropertySetInfo
   
   /**
     * @param aPropertyNames specifies the names of the properties. This sequence must be alphabetically sorted.
     * @returns a sequence of all values of the properties which are specified by their names.  The order of the values in the returned sequence will be the same
     */
-  def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[_] = js.native
+  def getPropertyValues(aPropertyNames: SeqEquiv[String]): SafeArray[js.Any]
   
   /**
     * removes an {@link XPropertiesChangeListener} from the listener list.
@@ -59,7 +59,7 @@ trait XMultiPropertySet extends XInterface {
     * @param xListener contains the listener to be removed.
     * @see addPropertiesChangeListener
     */
-  def removePropertiesChangeListener(xListener: XPropertiesChangeListener): Unit = js.native
+  def removePropertiesChangeListener(xListener: XPropertiesChangeListener): Unit
   
   /**
     * sets the values to the properties with the specified names.
@@ -71,7 +71,7 @@ trait XMultiPropertySet extends XInterface {
     * @throws IllegalArgumentException if one of the new values cannot be converted to the type of the underlying property by an identity or widening conversion.
     * @throws com::sun::star::lang:WrappedTargetException if the implementation has an internal reason for the exception. In this case the original exception i
     */
-  def setPropertyValues(aPropertyNames: SeqEquiv[String], aValues: SeqEquiv[_]): Unit = js.native
+  def setPropertyValues(aPropertyNames: SeqEquiv[String], aValues: SeqEquiv[js.Any]): Unit
 }
 object XMultiPropertySet {
   
@@ -82,11 +82,11 @@ object XMultiPropertySet {
     addPropertiesChangeListener: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     firePropertiesChangeEvent: (SeqEquiv[String], XPropertiesChangeListener) => Unit,
     getPropertySetInfo: () => XPropertySetInfo,
-    getPropertyValues: SeqEquiv[String] => SafeArray[_],
+    getPropertyValues: SeqEquiv[String] => SafeArray[js.Any],
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removePropertiesChangeListener: XPropertiesChangeListener => Unit,
-    setPropertyValues: (SeqEquiv[String], SeqEquiv[_]) => Unit
+    setPropertyValues: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit
   ): XMultiPropertySet = {
     val __obj = js.Dynamic.literal(PropertySetInfo = PropertySetInfo.asInstanceOf[js.Any], acquire = js.Any.fromFunction0(acquire), addPropertiesChangeListener = js.Any.fromFunction2(addPropertiesChangeListener), firePropertiesChangeEvent = js.Any.fromFunction2(firePropertiesChangeEvent), getPropertySetInfo = js.Any.fromFunction0(getPropertySetInfo), getPropertyValues = js.Any.fromFunction1(getPropertyValues), queryInterface = js.Any.fromFunction1(queryInterface), release = js.Any.fromFunction0(release), removePropertiesChangeListener = js.Any.fromFunction1(removePropertiesChangeListener), setPropertyValues = js.Any.fromFunction2(setPropertyValues))
     __obj.asInstanceOf[XMultiPropertySet]
@@ -105,7 +105,7 @@ object XMultiPropertySet {
     def setGetPropertySetInfo(value: () => XPropertySetInfo): Self = StObject.set(x, "getPropertySetInfo", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetPropertyValues(value: SeqEquiv[String] => SafeArray[_]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction1(value))
+    def setGetPropertyValues(value: SeqEquiv[String] => SafeArray[js.Any]): Self = StObject.set(x, "getPropertyValues", js.Any.fromFunction1(value))
     
     @scala.inline
     def setPropertySetInfo(value: XPropertySetInfo): Self = StObject.set(x, "PropertySetInfo", value.asInstanceOf[js.Any])
@@ -114,6 +114,6 @@ object XMultiPropertySet {
     def setRemovePropertiesChangeListener(value: XPropertiesChangeListener => Unit): Self = StObject.set(x, "removePropertiesChangeListener", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setSetPropertyValues(value: (SeqEquiv[String], SeqEquiv[_]) => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction2(value))
+    def setSetPropertyValues(value: (SeqEquiv[String], SeqEquiv[js.Any]) => Unit): Self = StObject.set(x, "setPropertyValues", js.Any.fromFunction2(value))
   }
 }

@@ -6,15 +6,40 @@ import typings.playable.previewFullSizeTypesMod.IPreviewFullSize
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object previewFullSizeMod {
   
   @JSImport("playable/dist/src/modules/ui/preview-full-size/preview-full-size", JSImport.Default)
   @js.native
-  class default protected () extends PreviewFullsize {
+  class default protected ()
+    extends StObject
+       with PreviewFullsize {
     def this(hasPreviewServiceRootContainer: PreviewService) = this()
+    
+    /* CompleteClass */
+    var _currentFrame: js.Any = js.native
+    
+    /* CompleteClass */
+    var _initUI: js.Any = js.native
+    
+    /* CompleteClass */
+    var _previewService: js.Any = js.native
+    
+    /* CompleteClass */
+    override def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getElement(): HTMLElement = js.native
+    
+    /* CompleteClass */
+    override def hide(): Unit = js.native
+    
+    /* CompleteClass */
+    override def showAt(second: Double): Unit = js.native
+    
+    /* CompleteClass */
+    var view: typings.playable.previewFullSizeViewMod.default = js.native
   }
   /* static members */
   object default {
@@ -42,16 +67,17 @@ object previewFullSizeMod {
     def moduleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("moduleName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait PreviewFullsize extends IPreviewFullSize {
+  trait PreviewFullsize
+    extends StObject
+       with IPreviewFullSize {
     
-    var _currentFrame: js.Any = js.native
+    var _currentFrame: js.Any
     
-    var _initUI: js.Any = js.native
+    var _initUI: js.Any
     
-    var _previewService: js.Any = js.native
+    var _previewService: js.Any
     
-    var view: typings.playable.previewFullSizeViewMod.default = js.native
+    var view: typings.playable.previewFullSizeViewMod.default
   }
   object PreviewFullsize {
     

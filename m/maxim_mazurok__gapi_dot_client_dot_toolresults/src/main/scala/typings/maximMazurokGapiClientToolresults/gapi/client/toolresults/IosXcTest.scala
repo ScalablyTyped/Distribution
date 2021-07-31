@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IosXcTest extends StObject {
   
   /** Bundle ID of the app. */
-  var bundleId: js.UndefOr[String] = js.native
+  var bundleId: js.UndefOr[String] = js.undefined
   
   /** Xcode version that the test was run with. */
-  var xcodeVersion: js.UndefOr[String] = js.native
+  var xcodeVersion: js.UndefOr[String] = js.undefined
 }
 object IosXcTest {
   

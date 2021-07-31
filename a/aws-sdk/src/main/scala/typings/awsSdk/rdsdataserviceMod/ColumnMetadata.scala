@@ -2,81 +2,79 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColumnMetadata extends StObject {
   
   /**
     * The type of the column.
     */
-  var arrayBaseColumnType: js.UndefOr[Integer] = js.native
+  var arrayBaseColumnType: js.UndefOr[Integer] = js.undefined
   
   /**
     * A value that indicates whether the column increments automatically.
     */
-  var isAutoIncrement: js.UndefOr[Boolean] = js.native
+  var isAutoIncrement: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether the column is case-sensitive.
     */
-  var isCaseSensitive: js.UndefOr[Boolean] = js.native
+  var isCaseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether the column contains currency values.
     */
-  var isCurrency: js.UndefOr[Boolean] = js.native
+  var isCurrency: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A value that indicates whether an integer column is signed.
     */
-  var isSigned: js.UndefOr[Boolean] = js.native
+  var isSigned: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The label for the column.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the column.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A value that indicates whether the column is nullable.
     */
-  var nullable: js.UndefOr[Integer] = js.native
+  var nullable: js.UndefOr[Integer] = js.undefined
   
   /**
     * The precision value of a decimal number column.
     */
-  var precision: js.UndefOr[Integer] = js.native
+  var precision: js.UndefOr[Integer] = js.undefined
   
   /**
     * The scale value of a decimal number column.
     */
-  var scale: js.UndefOr[Integer] = js.native
+  var scale: js.UndefOr[Integer] = js.undefined
   
   /**
     * The name of the schema that owns the table that includes the column.
     */
-  var schemaName: js.UndefOr[String] = js.native
+  var schemaName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the table that includes the column.
     */
-  var tableName: js.UndefOr[String] = js.native
+  var tableName: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the column.
     */
-  var `type`: js.UndefOr[Integer] = js.native
+  var `type`: js.UndefOr[Integer] = js.undefined
   
   /**
     * The database-specific data type of the column.
     */
-  var typeName: js.UndefOr[String] = js.native
+  var typeName: js.UndefOr[String] = js.undefined
 }
 object ColumnMetadata {
   

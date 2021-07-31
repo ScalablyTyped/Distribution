@@ -10,21 +10,19 @@ import typings.stripe.stripeStrings.max_approvals
 import typings.stripe.stripeStrings.spending_limits
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
   /**
     * Entity which the authorization control acts on. One of account, card, or cardholder.
     */
-  var entity: account | cardholder | card = js.native
+  var entity: account | cardholder | card
   
   /**
     * Name of the authorization control. One of allowed_categories, blocked_categories, max_amount, max_approvals, or spending_limits.
     */
-  var name: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits = js.native
+  var name: allowed_categories | blocked_categories | max_amount | max_approvals | spending_limits
 }
 object Entity {
   

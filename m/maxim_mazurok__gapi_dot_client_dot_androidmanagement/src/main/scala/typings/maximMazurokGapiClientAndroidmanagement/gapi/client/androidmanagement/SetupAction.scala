@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAndroidmanagement.gapi.client.androidmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetupAction extends StObject {
   
   /** Description of this action. */
-  var description: js.UndefOr[UserFacingMessage] = js.native
+  var description: js.UndefOr[UserFacingMessage] = js.undefined
   
   /** An action to launch an app. */
-  var launchApp: js.UndefOr[LaunchAppAction] = js.native
+  var launchApp: js.UndefOr[LaunchAppAction] = js.undefined
   
   /** Title of this action. */
-  var title: js.UndefOr[UserFacingMessage] = js.native
+  var title: js.UndefOr[UserFacingMessage] = js.undefined
 }
 object SetupAction {
   

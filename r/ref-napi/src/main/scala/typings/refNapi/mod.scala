@@ -4,7 +4,6 @@ import typings.refNapi.anon.FnCall
 import typings.refNapi.mod.global.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,73 +24,54 @@ object mod {
   @scala.inline
   def NULL_POINTER_=(x: Buffer): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NULL_POINTER")(x.asInstanceOf[js.Any])
   
-  @JSImport("ref-napi", "_reinterpret")
-  @js.native
-  def _reinterpret(buffer: Buffer, size: Double): Buffer = js.native
-  @JSImport("ref-napi", "_reinterpret")
-  @js.native
-  def _reinterpret(buffer: Buffer, size: Double, offset: Double): Buffer = js.native
+  @scala.inline
+  def _reinterpret(buffer: Buffer, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("_reinterpret")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def _reinterpret(buffer: Buffer, size: Double, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("_reinterpret")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "_reinterpretUntilZeros")
-  @js.native
-  def _reinterpretUntilZeros(buffer: Buffer, size: Double): Buffer = js.native
-  @JSImport("ref-napi", "_reinterpretUntilZeros")
-  @js.native
-  def _reinterpretUntilZeros(buffer: Buffer, size: Double, offset: Double): Buffer = js.native
+  @scala.inline
+  def _reinterpretUntilZeros(buffer: Buffer, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("_reinterpretUntilZeros")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def _reinterpretUntilZeros(buffer: Buffer, size: Double, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("_reinterpretUntilZeros")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "_writeObject")
-  @js.native
-  def _writeObject(buffer: Buffer, offset: Double, `object`: js.Object): Unit = js.native
+  @scala.inline
+  def _writeObject(buffer: Buffer, offset: Double, `object`: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_writeObject")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "_writePointer")
-  @js.native
-  def _writePointer(buffer: Buffer, offset: Double, pointer: Buffer): Unit = js.native
+  @scala.inline
+  def _writePointer(buffer: Buffer, offset: Double, pointer: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_writePointer")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "address")
-  @js.native
-  def address(buffer: Buffer): Double = js.native
+  @scala.inline
+  def address(buffer: Buffer): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("address")(buffer.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("ref-napi", "alloc")
-  @js.native
-  def alloc(`type`: String): Buffer = js.native
-  @JSImport("ref-napi", "alloc")
-  @js.native
-  def alloc(`type`: String, value: js.Any): Buffer = js.native
-  @JSImport("ref-napi", "alloc")
-  @js.native
-  def alloc(`type`: Type): Buffer = js.native
-  @JSImport("ref-napi", "alloc")
-  @js.native
-  def alloc(`type`: Type, value: js.Any): Buffer = js.native
+  @scala.inline
+  def alloc(`type`: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def alloc(`type`: String, value: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def alloc(`type`: Type): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def alloc(`type`: Type, value: js.Any): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("alloc")(`type`.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "allocCString")
-  @js.native
-  def allocCString(string: String): Buffer = js.native
-  @JSImport("ref-napi", "allocCString")
-  @js.native
-  def allocCString(string: String, encoding: String): Buffer = js.native
+  @scala.inline
+  def allocCString(string: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("allocCString")(string.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def allocCString(string: String, encoding: String): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("allocCString")(string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "_attach")
-  @js.native
-  def attach(buffer: Buffer, `object`: js.Object): Unit = js.native
+  @scala.inline
+  def attach(buffer: Buffer, `object`: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("_attach")(buffer.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "coerceType")
-  @js.native
-  def coerceType(`type`: String): Type = js.native
-  @JSImport("ref-napi", "coerceType")
-  @js.native
-  def coerceType(`type`: Type): Type = js.native
+  @scala.inline
+  def coerceType(`type`: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
+  @scala.inline
+  def coerceType(`type`: Type): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("coerceType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
   
-  @JSImport("ref-napi", "deref")
-  @js.native
-  def deref(buffer: Buffer): js.Any = js.native
+  @scala.inline
+  def deref(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deref")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("ref-napi", "derefType")
-  @js.native
-  def derefType(`type`: String): Type = js.native
-  @JSImport("ref-napi", "derefType")
-  @js.native
-  def derefType(`type`: Type): Type = js.native
+  @scala.inline
+  def derefType(`type`: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
+  @scala.inline
+  def derefType(`type`: Type): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("derefType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
   
   @JSImport("ref-napi", "endianness")
   @js.native
@@ -99,122 +79,88 @@ object mod {
   @scala.inline
   def endianness_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("endianness")(x.asInstanceOf[js.Any])
   
-  @JSImport("ref-napi", "get")
-  @js.native
-  def get(buffer: Buffer): js.Any = js.native
-  @JSImport("ref-napi", "get")
-  @js.native
-  def get(buffer: Buffer, offset: js.UndefOr[scala.Nothing], `type`: String): js.Any = js.native
-  @JSImport("ref-napi", "get")
-  @js.native
-  def get(buffer: Buffer, offset: js.UndefOr[scala.Nothing], `type`: Type): js.Any = js.native
-  @JSImport("ref-napi", "get")
-  @js.native
-  def get(buffer: Buffer, offset: Double): js.Any = js.native
-  @JSImport("ref-napi", "get")
-  @js.native
-  def get(buffer: Buffer, offset: Double, `type`: String): js.Any = js.native
-  @JSImport("ref-napi", "get")
-  @js.native
-  def get(buffer: Buffer, offset: Double, `type`: Type): js.Any = js.native
+  @scala.inline
+  def get(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def get(buffer: Buffer, offset: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(buffer: Buffer, offset: Double, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(buffer: Buffer, offset: Double, `type`: Type): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(buffer: Buffer, offset: Unit, `type`: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def get(buffer: Buffer, offset: Unit, `type`: Type): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ref-napi", "getType")
-  @js.native
-  def getType(buffer: Buffer): Type = js.native
+  @scala.inline
+  def getType(buffer: Buffer): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("getType")(buffer.asInstanceOf[js.Any]).asInstanceOf[Type]
   
-  @JSImport("ref-napi", "isNull")
-  @js.native
-  def isNull(buffer: Buffer): Boolean = js.native
+  @scala.inline
+  def isNull(buffer: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(buffer.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ref-napi", "readCString")
-  @js.native
-  def readCString(buffer: Buffer): String = js.native
-  @JSImport("ref-napi", "readCString")
-  @js.native
-  def readCString(buffer: Buffer, offset: Double): String = js.native
+  @scala.inline
+  def readCString(buffer: Buffer): String = ^.asInstanceOf[js.Dynamic].applyDynamic("readCString")(buffer.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def readCString(buffer: Buffer, offset: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("readCString")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("ref-napi", "readInt64BE")
-  @js.native
-  def readInt64BE(buffer: Buffer): js.Any = js.native
-  @JSImport("ref-napi", "readInt64BE")
-  @js.native
-  def readInt64BE(buffer: Buffer, offset: Double): js.Any = js.native
+  @scala.inline
+  def readInt64BE(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readInt64BE")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def readInt64BE(buffer: Buffer, offset: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt64BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ref-napi", "readInt64LE")
-  @js.native
-  def readInt64LE(buffer: Buffer): js.Any = js.native
-  @JSImport("ref-napi", "readInt64LE")
-  @js.native
-  def readInt64LE(buffer: Buffer, offset: Double): js.Any = js.native
+  @scala.inline
+  def readInt64LE(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readInt64LE")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def readInt64LE(buffer: Buffer, offset: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readInt64LE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ref-napi", "readObject")
-  @js.native
-  def readObject(buffer: Buffer): js.Object = js.native
-  @JSImport("ref-napi", "readObject")
-  @js.native
-  def readObject(buffer: Buffer, offset: Double): js.Object = js.native
+  @scala.inline
+  def readObject(buffer: Buffer): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("readObject")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def readObject(buffer: Buffer, offset: Double): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("readObject")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("ref-napi", "readPointer")
-  @js.native
-  def readPointer(buffer: Buffer): Buffer = js.native
-  @JSImport("ref-napi", "readPointer")
-  @js.native
-  def readPointer(buffer: Buffer, offset: js.UndefOr[scala.Nothing], length: Double): Buffer = js.native
-  @JSImport("ref-napi", "readPointer")
-  @js.native
-  def readPointer(buffer: Buffer, offset: Double): Buffer = js.native
-  @JSImport("ref-napi", "readPointer")
-  @js.native
-  def readPointer(buffer: Buffer, offset: Double, length: Double): Buffer = js.native
+  @scala.inline
+  def readPointer(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("readPointer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  @scala.inline
+  def readPointer(buffer: Buffer, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readPointer")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def readPointer(buffer: Buffer, offset: Double, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readPointer")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def readPointer(buffer: Buffer, offset: Unit, length: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("readPointer")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "readUInt64BE")
-  @js.native
-  def readUInt64BE(buffer: Buffer): js.Any = js.native
-  @JSImport("ref-napi", "readUInt64BE")
-  @js.native
-  def readUInt64BE(buffer: Buffer, offset: Double): js.Any = js.native
+  @scala.inline
+  def readUInt64BE(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readUInt64BE")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def readUInt64BE(buffer: Buffer, offset: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt64BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ref-napi", "readUInt64LE")
-  @js.native
-  def readUInt64LE(buffer: Buffer): js.Any = js.native
-  @JSImport("ref-napi", "readUInt64LE")
-  @js.native
-  def readUInt64LE(buffer: Buffer, offset: Double): js.Any = js.native
+  @scala.inline
+  def readUInt64LE(buffer: Buffer): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readUInt64LE")(buffer.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def readUInt64LE(buffer: Buffer, offset: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("readUInt64LE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("ref-napi", "ref")
-  @js.native
-  def ref(buffer: Buffer): Buffer = js.native
+  @scala.inline
+  def ref(buffer: Buffer): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("ref")(buffer.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "refType")
-  @js.native
-  def refType(`type`: String): Type = js.native
-  @JSImport("ref-napi", "refType")
-  @js.native
-  def refType(`type`: Type): Type = js.native
+  @scala.inline
+  def refType(`type`: String): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
+  @scala.inline
+  def refType(`type`: Type): Type = ^.asInstanceOf[js.Dynamic].applyDynamic("refType")(`type`.asInstanceOf[js.Any]).asInstanceOf[Type]
   
-  @JSImport("ref-napi", "reinterpret")
-  @js.native
-  def reinterpret(buffer: Buffer, size: Double): Buffer = js.native
-  @JSImport("ref-napi", "reinterpret")
-  @js.native
-  def reinterpret(buffer: Buffer, size: Double, offset: Double): Buffer = js.native
+  @scala.inline
+  def reinterpret(buffer: Buffer, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("reinterpret")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def reinterpret(buffer: Buffer, size: Double, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("reinterpret")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "reinterpretUntilZeros")
-  @js.native
-  def reinterpretUntilZeros(buffer: Buffer, size: Double): Buffer = js.native
-  @JSImport("ref-napi", "reinterpretUntilZeros")
-  @js.native
-  def reinterpretUntilZeros(buffer: Buffer, size: Double, offset: Double): Buffer = js.native
+  @scala.inline
+  def reinterpretUntilZeros(buffer: Buffer, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("reinterpretUntilZeros")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def reinterpretUntilZeros(buffer: Buffer, size: Double, offset: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("reinterpretUntilZeros")(buffer.asInstanceOf[js.Any], size.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("ref-napi", "set")
-  @js.native
-  def set(buffer: Buffer, offset: Double, value: js.Any): Unit = js.native
-  @JSImport("ref-napi", "set")
-  @js.native
-  def set(buffer: Buffer, offset: Double, value: js.Any, `type`: String): Unit = js.native
-  @JSImport("ref-napi", "set")
-  @js.native
-  def set(buffer: Buffer, offset: Double, value: js.Any, `type`: Type): Unit = js.native
+  @scala.inline
+  def set(buffer: Buffer, offset: Double, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(buffer: Buffer, offset: Double, value: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(buffer: Buffer, offset: Double, value: js.Any, `type`: Type): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object types {
     
@@ -382,62 +328,51 @@ object mod {
     def void_=(x: Type): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("void")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("ref-napi", "writeCString")
-  @js.native
-  def writeCString(buffer: Buffer, offset: Double, string: String): Unit = js.native
-  @JSImport("ref-napi", "writeCString")
-  @js.native
-  def writeCString(buffer: Buffer, offset: Double, string: String, encoding: String): Unit = js.native
+  @scala.inline
+  def writeCString(buffer: Buffer, offset: Double, string: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeCString")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeCString(buffer: Buffer, offset: Double, string: String, encoding: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeCString")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], string.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "writeInt64BE")
-  @js.native
-  def writeInt64BE(buffer: Buffer, offset: Double, input: String): Unit = js.native
-  @JSImport("ref-napi", "writeInt64BE")
-  @js.native
-  def writeInt64BE(buffer: Buffer, offset: Double, input: Double): Unit = js.native
+  @scala.inline
+  def writeInt64BE(buffer: Buffer, offset: Double, input: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInt64BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeInt64BE(buffer: Buffer, offset: Double, input: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInt64BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "writeInt64LE")
-  @js.native
-  def writeInt64LE(buffer: Buffer, offset: Double, input: String): Unit = js.native
-  @JSImport("ref-napi", "writeInt64LE")
-  @js.native
-  def writeInt64LE(buffer: Buffer, offset: Double, input: Double): Unit = js.native
+  @scala.inline
+  def writeInt64LE(buffer: Buffer, offset: Double, input: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInt64LE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeInt64LE(buffer: Buffer, offset: Double, input: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeInt64LE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "writeObject")
-  @js.native
-  def writeObject(buffer: Buffer, offset: Double, `object`: js.Object): Unit = js.native
+  @scala.inline
+  def writeObject(buffer: Buffer, offset: Double, `object`: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeObject")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "writePointer")
-  @js.native
-  def writePointer(buffer: Buffer, offset: Double, pointer: Buffer): Unit = js.native
+  @scala.inline
+  def writePointer(buffer: Buffer, offset: Double, pointer: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writePointer")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], pointer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ref-napi", "writeUInt64BE")
-  @js.native
-  def writeUInt64BE(buffer: Buffer, offset: Double, input: String): Unit = js.native
-  @JSImport("ref-napi", "writeUInt64BE")
-  @js.native
-  def writeUInt64BE(buffer: Buffer, offset: Double, input: Double): Unit = js.native
+  @scala.inline
+  def writeUInt64BE(buffer: Buffer, offset: Double, input: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt64BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def writeUInt64BE(buffer: Buffer, offset: Double, input: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("writeUInt64BE")(buffer.asInstanceOf[js.Any], offset.asInstanceOf[js.Any], input.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Type extends StObject {
     
     /** The alignment of this datatype when placed inside a struct. */
-    var alignment: js.UndefOr[Double] = js.native
+    var alignment: js.UndefOr[Double] = js.undefined
     
     /** To invoke when `ref.get` is invoked on a buffer of this type. */
-    def get(buffer: Buffer, offset: Double): js.Any = js.native
+    def get(buffer: Buffer, offset: Double): js.Any
     
     /** The current level of indirection of the buffer. */
-    var indirection: Double = js.native
+    var indirection: Double
     
     /** The name to use during debugging for this datatype. */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** To invoke when `ref.set` is invoked on a buffer of this type. */
-    def set(buffer: Buffer, offset: Double, value: js.Any): Unit = js.native
+    def set(buffer: Buffer, offset: Double, value: js.Any): Unit
     
     /** The size in bytes required to hold this datatype. */
-    var size: Double = js.native
+    var size: Double
   }
   object Type {
     
@@ -483,77 +418,76 @@ object mod {
   
   object global {
     
-    @js.native
     trait Buffer extends StObject {
       
-      def address(buffer: this.type): Double = js.native
+      def address(buffer: this.type): Double
       @JSName("address")
-      var address_Original: js.Function1[/* buffer */ this.type, Double] = js.native
+      var address_Original: js.Function1[/* buffer */ this.type, Double]
       
-      def deref(buffer: this.type): js.Any = js.native
+      def deref(buffer: this.type): js.Any
       @JSName("deref")
-      var deref_Original: js.Function1[/* buffer */ this.type, _] = js.native
+      var deref_Original: js.Function1[/* buffer */ this.type, js.Any]
       
-      def isNull(buffer: this.type): Boolean = js.native
+      def isNull(buffer: this.type): Boolean
       @JSName("isNull")
-      var isNull_Original: js.Function1[/* buffer */ this.type, Boolean] = js.native
+      var isNull_Original: js.Function1[/* buffer */ this.type, Boolean]
       
-      def readCString(buffer: this.type): String = js.native
-      def readCString(buffer: this.type, offset: Double): String = js.native
+      def readCString(buffer: this.type): String
+      def readCString(buffer: this.type, offset: Double): String
       @JSName("readCString")
-      var readCString_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], String] = js.native
+      var readCString_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], String]
       
-      def readInt64BE(buffer: this.type): js.Any = js.native
-      def readInt64BE(buffer: this.type, offset: Double): js.Any = js.native
+      def readInt64BE(buffer: this.type): js.Any
+      def readInt64BE(buffer: this.type, offset: Double): js.Any
       @JSName("readInt64BE")
-      var readInt64BE_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], _] = js.native
+      var readInt64BE_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], js.Any]
       
-      def readInt64LE(buffer: this.type): js.Any = js.native
-      def readInt64LE(buffer: this.type, offset: Double): js.Any = js.native
+      def readInt64LE(buffer: this.type): js.Any
+      def readInt64LE(buffer: this.type, offset: Double): js.Any
       @JSName("readInt64LE")
-      var readInt64LE_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], _] = js.native
+      var readInt64LE_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], js.Any]
       
-      def readObject(buffer: this.type): js.Object = js.native
-      def readObject(buffer: this.type, offset: Double): js.Object = js.native
+      def readObject(buffer: this.type): js.Object
+      def readObject(buffer: this.type, offset: Double): js.Object
       @JSName("readObject")
-      var readObject_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], js.Object] = js.native
+      var readObject_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], js.Object]
       
-      def readPointer(buffer: this.type): this.type = js.native
-      def readPointer(buffer: this.type, offset: js.UndefOr[scala.Nothing], length: Double): this.type = js.native
-      def readPointer(buffer: this.type, offset: Double): this.type = js.native
-      def readPointer(buffer: this.type, offset: Double, length: Double): this.type = js.native
+      def readPointer(buffer: this.type): this.type
+      def readPointer(buffer: this.type, offset: Double): this.type
+      def readPointer(buffer: this.type, offset: Double, length: Double): this.type
+      def readPointer(buffer: this.type, offset: Unit, length: Double): this.type
       @JSName("readPointer")
       var readPointer_Original: js.Function3[
             /* buffer */ this.type, 
             /* offset */ js.UndefOr[Double], 
             /* length */ js.UndefOr[Double], 
             this.type
-          ] = js.native
+          ]
       
-      def readUInt64BE(buffer: this.type): js.Any = js.native
-      def readUInt64BE(buffer: this.type, offset: Double): js.Any = js.native
+      def readUInt64BE(buffer: this.type): js.Any
+      def readUInt64BE(buffer: this.type, offset: Double): js.Any
       @JSName("readUInt64BE")
-      var readUInt64BE_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], _] = js.native
+      var readUInt64BE_Original: js.Function2[/* buffer */ this.type, /* offset */ js.UndefOr[Double], js.Any]
       
-      def ref(buffer: this.type): this.type = js.native
+      def ref(buffer: this.type): this.type
       @JSName("ref")
-      var ref_Original: js.Function1[/* buffer */ this.type, this.type] = js.native
+      var ref_Original: js.Function1[/* buffer */ this.type, this.type]
       
-      def reinterpret(buffer: this.type, size: Double): this.type = js.native
-      def reinterpret(buffer: this.type, size: Double, offset: Double): this.type = js.native
+      def reinterpret(buffer: this.type, size: Double): this.type
+      def reinterpret(buffer: this.type, size: Double, offset: Double): this.type
       
-      def reinterpretUntilZeros(buffer: this.type, size: Double): this.type = js.native
-      def reinterpretUntilZeros(buffer: this.type, size: Double, offset: Double): this.type = js.native
+      def reinterpretUntilZeros(buffer: this.type, size: Double): this.type
+      def reinterpretUntilZeros(buffer: this.type, size: Double, offset: Double): this.type
       @JSName("reinterpretUntilZeros")
-      var reinterpretUntilZeros_Original: js.Function3[/* buffer */ this.type, /* size */ Double, /* offset */ js.UndefOr[Double], this.type] = js.native
+      var reinterpretUntilZeros_Original: js.Function3[/* buffer */ this.type, /* size */ Double, /* offset */ js.UndefOr[Double], this.type]
       
       @JSName("reinterpret")
-      var reinterpret_Original: js.Function3[/* buffer */ this.type, /* size */ Double, /* offset */ js.UndefOr[Double], this.type] = js.native
+      var reinterpret_Original: js.Function3[/* buffer */ this.type, /* size */ Double, /* offset */ js.UndefOr[Double], this.type]
       
-      var `type`: js.UndefOr[Type] = js.native
+      var `type`: js.UndefOr[Type] = js.undefined
       
-      def writeCString(buffer: this.type, offset: Double, string: String): Unit = js.native
-      def writeCString(buffer: this.type, offset: Double, string: String, encoding: String): Unit = js.native
+      def writeCString(buffer: this.type, offset: Double, string: String): Unit
+      def writeCString(buffer: this.type, offset: Double, string: String, encoding: String): Unit
       @JSName("writeCString")
       var writeCString_Original: js.Function4[
             /* buffer */ this.type, 
@@ -561,30 +495,123 @@ object mod {
             /* string */ String, 
             /* encoding */ js.UndefOr[String], 
             Unit
-          ] = js.native
+          ]
       
-      def writeInt64BE(buffer: Buffer, offset: Double, input: String): Unit = js.native
-      def writeInt64BE(buffer: Buffer, offset: Double, input: Double): Unit = js.native
+      def writeInt64BE(buffer: Buffer, offset: Double, input: String): Unit
+      def writeInt64BE(buffer: Buffer, offset: Double, input: Double): Unit
       @JSName("writeInt64BE")
-      var writeInt64BE_Original: FnCall = js.native
+      var writeInt64BE_Original: FnCall
       
-      def writeInt64LE(buffer: Buffer, offset: Double, input: String): Unit = js.native
-      def writeInt64LE(buffer: Buffer, offset: Double, input: Double): Unit = js.native
+      def writeInt64LE(buffer: Buffer, offset: Double, input: String): Unit
+      def writeInt64LE(buffer: Buffer, offset: Double, input: Double): Unit
       @JSName("writeInt64LE")
-      var writeInt64LE_Original: FnCall = js.native
+      var writeInt64LE_Original: FnCall
       
-      def writeObject(buffer: this.type, offset: Double, `object`: js.Object): Unit = js.native
+      def writeObject(buffer: this.type, offset: Double, `object`: js.Object): Unit
       @JSName("writeObject")
-      var writeObject_Original: js.Function3[/* buffer */ this.type, /* offset */ Double, /* object */ js.Object, Unit] = js.native
+      var writeObject_Original: js.Function3[/* buffer */ this.type, /* offset */ Double, /* object */ js.Object, Unit]
       
-      def writePointer(buffer: this.type, offset: Double, pointer: this.type): Unit = js.native
+      def writePointer(buffer: this.type, offset: Double, pointer: this.type): Unit
       @JSName("writePointer")
-      var writePointer_Original: js.Function3[/* buffer */ this.type, /* offset */ Double, /* pointer */ this.type, Unit] = js.native
+      var writePointer_Original: js.Function3[/* buffer */ this.type, /* offset */ Double, /* pointer */ this.type, Unit]
       
-      def writeUInt64BE(buffer: Buffer, offset: Double, input: String): Unit = js.native
-      def writeUInt64BE(buffer: Buffer, offset: Double, input: Double): Unit = js.native
+      def writeUInt64BE(buffer: Buffer, offset: Double, input: String): Unit
+      def writeUInt64BE(buffer: Buffer, offset: Double, input: Double): Unit
       @JSName("writeUInt64BE")
-      var writeUInt64BE_Original: FnCall = js.native
+      var writeUInt64BE_Original: FnCall
+    }
+    object Buffer {
+      
+      @scala.inline
+      def apply(
+        address: Buffer => Double,
+        deref: Buffer => js.Any,
+        isNull: Buffer => Boolean,
+        readCString: (Buffer, /* offset */ js.UndefOr[Double]) => String,
+        readInt64BE: (Buffer, /* offset */ js.UndefOr[Double]) => js.Any,
+        readInt64LE: (Buffer, /* offset */ js.UndefOr[Double]) => js.Any,
+        readObject: (Buffer, /* offset */ js.UndefOr[Double]) => js.Object,
+        readPointer: (Buffer, /* offset */ js.UndefOr[Double], /* length */ js.UndefOr[Double]) => Buffer,
+        readUInt64BE: (Buffer, /* offset */ js.UndefOr[Double]) => js.Any,
+        ref: Buffer => Buffer,
+        reinterpret: (Buffer, /* size */ Double, /* offset */ js.UndefOr[Double]) => Buffer,
+        reinterpretUntilZeros: (Buffer, /* size */ Double, /* offset */ js.UndefOr[Double]) => Buffer,
+        writeCString: (Buffer, /* offset */ Double, /* string */ String, /* encoding */ js.UndefOr[String]) => Unit,
+        writeInt64BE: FnCall,
+        writeInt64LE: FnCall,
+        writeObject: (Buffer, /* offset */ Double, /* object */ js.Object) => Unit,
+        writePointer: (Buffer, /* offset */ Double, Buffer) => Unit,
+        writeUInt64BE: FnCall
+      ): Buffer = {
+        val __obj = js.Dynamic.literal(address = js.Any.fromFunction1(address), deref = js.Any.fromFunction1(deref), isNull = js.Any.fromFunction1(isNull), readCString = js.Any.fromFunction2(readCString), readInt64BE = js.Any.fromFunction2(readInt64BE), readInt64LE = js.Any.fromFunction2(readInt64LE), readObject = js.Any.fromFunction2(readObject), readPointer = js.Any.fromFunction3(readPointer), readUInt64BE = js.Any.fromFunction2(readUInt64BE), ref = js.Any.fromFunction1(ref), reinterpret = js.Any.fromFunction3(reinterpret), reinterpretUntilZeros = js.Any.fromFunction3(reinterpretUntilZeros), writeCString = js.Any.fromFunction4(writeCString), writeInt64BE = writeInt64BE.asInstanceOf[js.Any], writeInt64LE = writeInt64LE.asInstanceOf[js.Any], writeObject = js.Any.fromFunction3(writeObject), writePointer = js.Any.fromFunction3(writePointer), writeUInt64BE = writeUInt64BE.asInstanceOf[js.Any])
+        __obj.asInstanceOf[Buffer]
+      }
+      
+      @scala.inline
+      implicit class BufferMutableBuilder[Self <: Buffer] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setAddress(value: Buffer => Double): Self = StObject.set(x, "address", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setDeref(value: Buffer => js.Any): Self = StObject.set(x, "deref", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setIsNull(value: Buffer => Boolean): Self = StObject.set(x, "isNull", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setReadCString(value: (Buffer, /* offset */ js.UndefOr[Double]) => String): Self = StObject.set(x, "readCString", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setReadInt64BE(value: (Buffer, /* offset */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "readInt64BE", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setReadInt64LE(value: (Buffer, /* offset */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "readInt64LE", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setReadObject(value: (Buffer, /* offset */ js.UndefOr[Double]) => js.Object): Self = StObject.set(x, "readObject", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setReadPointer(value: (Buffer, /* offset */ js.UndefOr[Double], /* length */ js.UndefOr[Double]) => Buffer): Self = StObject.set(x, "readPointer", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setReadUInt64BE(value: (Buffer, /* offset */ js.UndefOr[Double]) => js.Any): Self = StObject.set(x, "readUInt64BE", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setRef(value: Buffer => Buffer): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+        
+        @scala.inline
+        def setReinterpret(value: (Buffer, /* size */ Double, /* offset */ js.UndefOr[Double]) => Buffer): Self = StObject.set(x, "reinterpret", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setReinterpretUntilZeros(value: (Buffer, /* size */ Double, /* offset */ js.UndefOr[Double]) => Buffer): Self = StObject.set(x, "reinterpretUntilZeros", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
+        
+        @scala.inline
+        def setWriteCString(
+          value: (Buffer, /* offset */ Double, /* string */ String, /* encoding */ js.UndefOr[String]) => Unit
+        ): Self = StObject.set(x, "writeCString", js.Any.fromFunction4(value))
+        
+        @scala.inline
+        def setWriteInt64BE(value: FnCall): Self = StObject.set(x, "writeInt64BE", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setWriteInt64LE(value: FnCall): Self = StObject.set(x, "writeInt64LE", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setWriteObject(value: (Buffer, /* offset */ Double, /* object */ js.Object) => Unit): Self = StObject.set(x, "writeObject", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setWritePointer(value: (Buffer, /* offset */ Double, Buffer) => Unit): Self = StObject.set(x, "writePointer", js.Any.fromFunction3(value))
+        
+        @scala.inline
+        def setWriteUInt64BE(value: FnCall): Self = StObject.set(x, "writeUInt64BE", value.asInstanceOf[js.Any])
+      }
     }
   }
 }

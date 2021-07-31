@@ -2,10 +2,8 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2OrdersOrder extends StObject {
   
   /**
@@ -15,32 +13,32 @@ trait GoogleActionsV2OrdersOrder extends StObject {
     * presented to users is the user_visible_order_id, which may be a different,
     * more user-friendly value.
     */
-  var actionOrderId: js.UndefOr[String] = js.native
+  var actionOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * If requested, customer info e.g. email will be passed back to the app.
     */
-  var customerInfo: js.UndefOr[GoogleActionsV2OrdersCustomerInfo] = js.native
+  var customerInfo: js.UndefOr[GoogleActionsV2OrdersCustomerInfo] = js.undefined
   
   /**
     * Reflect back the proposed order that caused the order.
     */
-  var finalOrder: js.UndefOr[GoogleActionsV2OrdersProposedOrder] = js.native
+  var finalOrder: js.UndefOr[GoogleActionsV2OrdersProposedOrder] = js.undefined
   
   /**
     * Order id assigned by Google.
     */
-  var googleOrderId: js.UndefOr[String] = js.native
+  var googleOrderId: js.UndefOr[String] = js.undefined
   
   /**
     * Date and time the order was created.
     */
-  var orderDate: js.UndefOr[String] = js.native
+  var orderDate: js.UndefOr[String] = js.undefined
   
   /**
     * Payment related info for the order.
     */
-  var paymentInfo: js.UndefOr[GoogleActionsV2OrdersPaymentInfo] = js.native
+  var paymentInfo: js.UndefOr[GoogleActionsV2OrdersPaymentInfo] = js.undefined
 }
 object GoogleActionsV2OrdersOrder {
   

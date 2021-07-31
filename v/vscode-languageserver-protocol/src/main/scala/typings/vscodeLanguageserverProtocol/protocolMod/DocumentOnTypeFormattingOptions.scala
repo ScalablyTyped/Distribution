@@ -2,21 +2,19 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentOnTypeFormattingOptions extends StObject {
   
   /**
     * A character on which formatting should be triggered, like `}`.
     */
-  var firstTriggerCharacter: String = js.native
+  var firstTriggerCharacter: String
   
   /**
     * More trigger characters.
     */
-  var moreTriggerCharacter: js.UndefOr[js.Array[String]] = js.native
+  var moreTriggerCharacter: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DocumentOnTypeFormattingOptions {
   

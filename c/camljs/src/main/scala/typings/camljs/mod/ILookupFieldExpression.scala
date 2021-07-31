@@ -2,29 +2,27 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILookupFieldExpression extends StObject {
   
   /** Specifies that lookup id value will be used. */
-  def Id(): INumberFieldExpression = js.native
+  def Id(): INumberFieldExpression
   
   /** Specifies that lookup value will be used and this value is of type Boolean */
-  def ValueAsBoolean(): IBooleanFieldExpression = js.native
+  def ValueAsBoolean(): IBooleanFieldExpression
   
   /** Specifies that lookup value will be used and this value is of type Date */
-  def ValueAsDate(): IDateTimeFieldExpression = js.native
+  def ValueAsDate(): IDateTimeFieldExpression
   
   /** Specifies that lookup value will be used and this value is of type DateTime */
-  def ValueAsDateTime(): IDateTimeFieldExpression = js.native
+  def ValueAsDateTime(): IDateTimeFieldExpression
   
   /** Specifies that lookup value will be used and this value is of type Number */
-  def ValueAsNumber(): INumberFieldExpression = js.native
+  def ValueAsNumber(): INumberFieldExpression
   
   /** Specifies that lookup value will be used and this value is of type Text */
-  def ValueAsText(): ITextFieldExpression = js.native
+  def ValueAsText(): ITextFieldExpression
 }
 object ILookupFieldExpression {
   

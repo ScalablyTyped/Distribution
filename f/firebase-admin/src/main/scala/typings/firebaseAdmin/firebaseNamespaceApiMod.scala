@@ -15,10 +15,13 @@ import typings.firebaseAdmin.storageMod.storage.Storage
 import typings.node.httpMod.Agent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaseNamespaceApiMod {
+  
+  @JSImport("firebase-admin/lib/firebase-namespace-api", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("firebase-admin/lib/firebase-namespace-api", "SDK_VERSION")
   @js.native
@@ -26,12 +29,14 @@ object firebaseNamespaceApiMod {
   
   object app {
     
+    @scala.inline
+    def apply(): App = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[App]
+    @scala.inline
+    def apply(name: String): App = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[App]
+    
     @JSImport("firebase-admin/lib/firebase-namespace-api", "app")
     @js.native
-    def apply(): App = js.native
-    @JSImport("firebase-admin/lib/firebase-namespace-api", "app")
-    @js.native
-    def apply(name: String): App = js.native
+    val ^ : js.Any = js.native
     
     /**
       * A Firebase app holds the initialization information for a collection of
@@ -129,20 +134,15 @@ object firebaseNamespaceApiMod {
   @js.native
   val apps: js.Array[App | Null] = js.native
   
-  @JSImport("firebase-admin/lib/firebase-namespace-api", "initializeApp")
-  @js.native
-  def initializeApp(): App = js.native
-  @JSImport("firebase-admin/lib/firebase-namespace-api", "initializeApp")
-  @js.native
-  def initializeApp(options: js.UndefOr[scala.Nothing], name: String): App = js.native
-  @JSImport("firebase-admin/lib/firebase-namespace-api", "initializeApp")
-  @js.native
-  def initializeApp(options: AppOptions): App = js.native
-  @JSImport("firebase-admin/lib/firebase-namespace-api", "initializeApp")
-  @js.native
-  def initializeApp(options: AppOptions, name: String): App = js.native
+  @scala.inline
+  def initializeApp(): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")().asInstanceOf[App]
+  @scala.inline
+  def initializeApp(options: Unit, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
+  @scala.inline
+  def initializeApp(options: AppOptions): App = ^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any]).asInstanceOf[App]
+  @scala.inline
+  def initializeApp(options: AppOptions, name: String): App = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeApp")(options.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[App]
   
-  @js.native
   trait AppOptions extends StObject {
     
     /**
@@ -152,7 +152,7 @@ object firebaseNamespaceApiMod {
       * See [Initialize the SDK](/docs/admin/setup#initialize_the_sdk) for detailed
       * documentation and code samples.
       */
-    var credential: js.UndefOr[Credential] = js.native
+    var credential: js.UndefOr[Credential] = js.undefined
     
     /**
       * The object to use as the [`auth`](/docs/reference/security/database/#auth)
@@ -166,12 +166,12 @@ object firebaseNamespaceApiMod {
       * [Authenticate with limited privileges](/docs/database/admin/start#authenticate-with-limited-privileges)
       * for detailed documentation and code samples.
       */
-    var databaseAuthVariableOverride: js.UndefOr[js.Object | Null] = js.native
+    var databaseAuthVariableOverride: js.UndefOr[js.Object | Null] = js.undefined
     
     /**
       * The URL of the Realtime Database from which to read and write data.
       */
-    var databaseURL: js.UndefOr[String] = js.native
+    var databaseURL: js.UndefOr[String] = js.undefined
     
     /**
       * An [HTTP Agent](https://nodejs.org/api/http.html#http_class_http_agent)
@@ -184,25 +184,25 @@ object firebaseNamespaceApiMod {
       * instances also do not use this HTTP Agent, but instead support
       * specifying an HTTP Agent in the corresponding factory methods.
       */
-    var httpAgent: js.UndefOr[Agent] = js.native
+    var httpAgent: js.UndefOr[Agent] = js.undefined
     
     /**
       * The ID of the Google Cloud project associated with the App.
       */
-    var projectId: js.UndefOr[String] = js.native
+    var projectId: js.UndefOr[String] = js.undefined
     
     /**
       * The ID of the service account to be used for signing custom tokens. This
       * can be found in the `client_email` field of a service account JSON file.
       */
-    var serviceAccountId: js.UndefOr[String] = js.native
+    var serviceAccountId: js.UndefOr[String] = js.undefined
     
     /**
       * The name of the Google Cloud Storage bucket used for storing application data.
       * Use only the bucket name without any prefixes or additions (do *not* prefix
       * the name with "gs://").
       */
-    var storageBucket: js.UndefOr[String] = js.native
+    var storageBucket: js.UndefOr[String] = js.undefined
   }
   object AppOptions {
     
@@ -262,19 +262,18 @@ object firebaseNamespaceApiMod {
     }
   }
   
-  @js.native
   trait FirebaseArrayIndexError extends StObject {
     
     /**
       * The error object.
       */
-    var error: FirebaseError = js.native
+    var error: FirebaseError
     
     /**
       * The index of the errored item within the original array passed as part of the
       * called API method.
       */
-    var index: Double = js.native
+    var index: Double
   }
   object FirebaseArrayIndexError {
     
@@ -295,7 +294,6 @@ object firebaseNamespaceApiMod {
     }
   }
   
-  @js.native
   trait FirebaseError extends StObject {
     
     /**
@@ -306,7 +304,7 @@ object firebaseNamespaceApiMod {
       * While the message for a given error can change, the code will remain the same
       * between backward-compatible versions of the Firebase SDK.
       */
-    var code: String = js.native
+    var code: String
     
     /**
       * An explanatory message for the error that just occurred.
@@ -315,7 +313,7 @@ object firebaseNamespaceApiMod {
       * it generally does not convey meaningful information to end users,
       * this message should not be displayed in your application.
       */
-    var message: String = js.native
+    var message: String
     
     /**
       * A string value containing the execution backtrace when the error originally
@@ -325,12 +323,12 @@ object firebaseNamespaceApiMod {
       * {@link https://firebase.google.com/support/ Firebase Support} to help
       * explain the cause of an error.
       */
-    var stack: js.UndefOr[String] = js.native
+    var stack: js.UndefOr[String] = js.undefined
     
     /**
       * @return A JSON-serializable representation of this object.
       */
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
   }
   object FirebaseError {
     

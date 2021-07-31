@@ -1,31 +1,30 @@
 package typings.echarts.anon
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaStyleItemStyle extends js.Object {
+trait AreaStyleItemStyle extends StObject {
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.areaStyle
     */
-  var areaStyle: js.UndefOr[Opacity] = js.native
+  var areaStyle: js.UndefOr[Opacity] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.itemStyle
     */
-  var itemStyle: js.UndefOr[BarBorderWidth] = js.native
+  var itemStyle: js.UndefOr[BarBorderWidth] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.label
     */
-  var label: js.UndefOr[Distance] = js.native
+  var label: js.UndefOr[Distance] = js.undefined
   
   /**
     * @see https://echarts.apache.org/en/option.html#series-radar.data.emphasis.lineStyle
     */
-  var lineStyle: js.UndefOr[ShadowBlur] = js.native
+  var lineStyle: js.UndefOr[ShadowBlur] = js.undefined
 }
 object AreaStyleItemStyle {
   
@@ -36,42 +35,30 @@ object AreaStyleItemStyle {
   }
   
   @scala.inline
-  implicit class AreaStyleItemStyleOps[Self <: AreaStyleItemStyle] (val x: Self) extends AnyVal {
+  implicit class AreaStyleItemStyleMutableBuilder[Self <: AreaStyleItemStyle] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
+    def setAreaStyle(value: Opacity): Self = StObject.set(x, "areaStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
+    def setAreaStyleUndefined: Self = StObject.set(x, "areaStyle", js.undefined)
     
     @scala.inline
-    def set(key: String, value: js.Any): Self = {
-      x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-      x
-    }
+    def setItemStyle(value: BarBorderWidth): Self = StObject.set(x, "itemStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setAreaStyle(value: Opacity): Self = this.set("areaStyle", value.asInstanceOf[js.Any])
+    def setItemStyleUndefined: Self = StObject.set(x, "itemStyle", js.undefined)
     
     @scala.inline
-    def deleteAreaStyle: Self = this.set("areaStyle", js.undefined)
+    def setLabel(value: Distance): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setItemStyle(value: BarBorderWidth): Self = this.set("itemStyle", value.asInstanceOf[js.Any])
+    def setLabelUndefined: Self = StObject.set(x, "label", js.undefined)
     
     @scala.inline
-    def deleteItemStyle: Self = this.set("itemStyle", js.undefined)
+    def setLineStyle(value: ShadowBlur): Self = StObject.set(x, "lineStyle", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setLabel(value: Distance): Self = this.set("label", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLabel: Self = this.set("label", js.undefined)
-    
-    @scala.inline
-    def setLineStyle(value: ShadowBlur): Self = this.set("lineStyle", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def deleteLineStyle: Self = this.set("lineStyle", js.undefined)
+    def setLineStyleUndefined: Self = StObject.set(x, "lineStyle", js.undefined)
   }
 }

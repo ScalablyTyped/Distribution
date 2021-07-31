@@ -2,28 +2,26 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PowerForms extends StObject {
   
   /**
     * The id of the user who created the PowerForm. This property is returned in a response only when you set the `include_created_by` query parameter to **true**.
     */
-  var createdBy: js.UndefOr[String] = js.native
+  var createdBy: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the PowerForm was created.
     */
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * For a PowerForm that is sent by email, this is the body of the email message sent to the recipients.
     *
     * Maximum length: 10000 characters.
     */
-  var emailBody: js.UndefOr[String] = js.native
+  var emailBody: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the envelope name for the envelopes that the PowerForm generates. One option is to make this property the same as the subject from the template.
@@ -32,25 +30,25 @@ trait PowerForms extends StObject {
     * see [Template Email Subject Merge Fields](https://developers.docusign.com/esign-rest-api/reference/Templates/Templates/create#template-email-subject-merge-fields).
     *
     */
-  var emailSubject: js.UndefOr[String] = js.native
+  var emailSubject: js.UndefOr[String] = js.undefined
   
   /**
     * An array of envelope objects that contain information about the envelopes that are associated with the PowerForm.
     */
-  var envelopes: js.UndefOr[js.Array[Envelope]] = js.native
+  var envelopes: js.UndefOr[js.Array[Envelope]] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The instructions that display on the landing page for the first recipient. These instructions are important if the recipient
     * accesses the PowerForm by a method other than email. When you include instructions, they display as an introduction after the recipient accesses the PowerForm.
     */
-  var instructions: js.UndefOr[String] = js.native
+  var instructions: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, indicates that the PowerForm is active and can be sent to recipients. This is the default value.
@@ -60,22 +58,22 @@ trait PowerForms extends StObject {
     *
     * If a recipient attempts to sign an inactive PowerForm, an error message informs the recipient that the document is not active and suggests that they contact the sender.
     */
-  var isActive: js.UndefOr[String] = js.native
+  var isActive: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the PowerForm was last used.
     */
-  var lastUsed: js.UndefOr[String] = js.native
+  var lastUsed: js.UndefOr[String] = js.undefined
   
   /**
     * The length of time before the same recipient can sign the same PowerForm again. This property is used in combination with the `limitUseIntervalUnits` property.
     */
-  var limitUseInterval: js.UndefOr[String] = js.native
+  var limitUseInterval: js.UndefOr[String] = js.undefined
   
   /**
     * When **true**, the `limitUseInterval` is enabled.
     */
-  var limitUseIntervalEnabled: js.UndefOr[String] = js.native
+  var limitUseIntervalEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * The units associated with the `limitUseInterval`. Valid values are:
@@ -89,27 +87,27 @@ trait PowerForms extends StObject {
     * For example, to limit a recipient to signing once per year, set the `limitUseInterval` to 365 and the `limitUseIntervalUnits` to `days`.
     *
     */
-  var limitUseIntervalUnits: js.UndefOr[String] = js.native
+  var limitUseIntervalUnits: js.UndefOr[String] = js.undefined
   
   /**
     * When set to **true**, you can set a maximum number of uses for the PowerForm.
     */
-  var maxUseEnabled: js.UndefOr[String] = js.native
+  var maxUseEnabled: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the PowerForm.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the PowerForm.
     */
-  var powerFormId: js.UndefOr[String] = js.native
+  var powerFormId: js.UndefOr[String] = js.undefined
   
   /**
     * The URL for the PowerForm.
     */
-  var powerFormUrl: js.UndefOr[String] = js.native
+  var powerFormUrl: js.UndefOr[String] = js.undefined
   
   /**
     * An array of `powerFormRecipient` objects.
@@ -122,19 +120,19 @@ trait PowerForms extends StObject {
       /* **Note**: For a self-service PowerForm on a website, you can specify the intended recipients generically (for example, use `Member` as the `Name`),
     and omit personal details such as `email`. */ PowerFormRecipient
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the sender.
     *
     * **Note**: The default sender for a PowerForm is the PowerForm Administrator who created it.
     */
-  var senderName: js.UndefOr[String] = js.native
+  var senderName: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the sender.
     */
-  var senderUserId: js.UndefOr[String] = js.native
+  var senderUserId: js.UndefOr[String] = js.undefined
   
   /**
     * The signing method to use. Valid values are:
@@ -147,32 +145,32 @@ trait PowerForms extends StObject {
     *
     * For more information about signing modes, see the [overview of the Create method](https://developers.docusign.com/esign-rest-api/reference/PowerForms/PowerForms/create).
     */
-  var signingMode: js.UndefOr[String] = js.native
+  var signingMode: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the template used to create the PowerForm.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the template used to create the PowerForm.
     */
-  var templateName: js.UndefOr[String] = js.native
+  var templateName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of times the PowerForm has been used.
     */
-  var timesUsed: js.UndefOr[String] = js.native
+  var timesUsed: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the PowerForm.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * The number of times that the PowerForm can still be used. If no use limit is set, the value is `Unlimited`.
     */
-  var usesRemaining: js.UndefOr[String] = js.native
+  var usesRemaining: js.UndefOr[String] = js.undefined
 }
 object PowerForms {
   

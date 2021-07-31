@@ -3,15 +3,15 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.spreadsheet.Sheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpreadsheetRenameSheetEvent extends SpreadsheetEvent {
+trait SpreadsheetRenameSheetEvent
+  extends StObject
+     with SpreadsheetEvent {
   
-  var newSheetName: js.UndefOr[String] = js.native
+  var newSheetName: js.UndefOr[String] = js.undefined
   
-  var sheet: js.UndefOr[Sheet] = js.native
+  var sheet: js.UndefOr[Sheet] = js.undefined
 }
 object SpreadsheetRenameSheetEvent {
   

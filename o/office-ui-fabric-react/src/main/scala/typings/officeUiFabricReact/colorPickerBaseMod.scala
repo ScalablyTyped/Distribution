@@ -9,7 +9,6 @@ import typings.officeUiFabricReact.interfacesMod.IColor
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorPickerBaseMod {
@@ -51,6 +50,10 @@ object colorPickerBaseMod {
       * @param newColor - Updated color
       */
     var _updateColor: js.Any = js.native
+    
+    /** The currently selected color. */
+    /* CompleteClass */
+    var color: IColor = js.native
     
     @JSName("componentDidUpdate")
     def componentDidUpdate_MColorPickerBase(prevProps: ReadonlyIColorPickerProps, prevState: ReadonlyIColorPickerState): Unit = js.native
@@ -100,14 +103,13 @@ object colorPickerBaseMod {
     def t: typings.officeUiFabricReact.officeUiFabricReactStrings.t = "t".asInstanceOf[typings.officeUiFabricReact.officeUiFabricReactStrings.t]
   }
   
-  @js.native
   trait IColorPickerState extends StObject {
     
     /** Most recently selected color */
-    var color: IColor = js.native
+    var color: IColor
     
     /** Color component currently being edited via a text field (if intermediate value is invalid) */
-    var editingColor: js.UndefOr[typings.officeUiFabricReact.anon.Component] = js.native
+    var editingColor: js.UndefOr[typings.officeUiFabricReact.anon.Component] = js.undefined
   }
   object IColorPickerState {
     

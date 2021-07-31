@@ -2,14 +2,14 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OpenedFileRequestedEventOptions extends RequestedEventOptions {
+trait OpenedFileRequestedEventOptions
+  extends StObject
+     with RequestedEventOptions {
   
   /** A request ID used to open the file. */
-  var openRequestId: Double = js.native
+  var openRequestId: Double
 }
 object OpenedFileRequestedEventOptions {
   

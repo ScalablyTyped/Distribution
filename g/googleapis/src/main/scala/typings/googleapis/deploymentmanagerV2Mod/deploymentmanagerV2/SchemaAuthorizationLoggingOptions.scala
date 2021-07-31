@@ -2,19 +2,17 @@ package typings.googleapis.deploymentmanagerV2Mod.deploymentmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authorization-related information used by Cloud Audit Logging.
   */
-@js.native
 trait SchemaAuthorizationLoggingOptions extends StObject {
   
   /**
     * The type of the permission that was checked.
     */
-  var permissionType: js.UndefOr[String] = js.native
+  var permissionType: js.UndefOr[String] = js.undefined
 }
 object SchemaAuthorizationLoggingOptions {
   

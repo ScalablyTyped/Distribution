@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestedTableCellStyle extends StObject {
   
   /**
     * A TableCellStyle that only includes the changes made in this suggestion. This can be used along with the table_cell_style_suggestion_state to see which fields have changed and their
     * new values.
     */
-  var tableCellStyle: js.UndefOr[TableCellStyle] = js.native
+  var tableCellStyle: js.UndefOr[TableCellStyle] = js.undefined
   
   /** A mask that indicates which of the fields on the base TableCellStyle have been changed in this suggestion. */
-  var tableCellStyleSuggestionState: js.UndefOr[TableCellStyleSuggestionState] = js.native
+  var tableCellStyleSuggestionState: js.UndefOr[TableCellStyleSuggestionState] = js.undefined
 }
 object SuggestedTableCellStyle {
   

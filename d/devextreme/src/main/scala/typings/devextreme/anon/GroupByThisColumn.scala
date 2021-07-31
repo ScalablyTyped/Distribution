@@ -2,21 +2,19 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupByThisColumn extends StObject {
   
-  var groupByThisColumn: js.UndefOr[String] = js.native
+  var groupByThisColumn: js.UndefOr[String] = js.undefined
   
-  var groupContinuedMessage: js.UndefOr[String] = js.native
+  var groupContinuedMessage: js.UndefOr[String] = js.undefined
   
-  var groupContinuesMessage: js.UndefOr[String] = js.native
+  var groupContinuesMessage: js.UndefOr[String] = js.undefined
   
-  var ungroup: js.UndefOr[String] = js.native
+  var ungroup: js.UndefOr[String] = js.undefined
   
-  var ungroupAll: js.UndefOr[String] = js.native
+  var ungroupAll: js.UndefOr[String] = js.undefined
 }
 object GroupByThisColumn {
   

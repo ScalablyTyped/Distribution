@@ -2,23 +2,43 @@ package typings.sentryUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instrumentMod {
   
-  @JSImport("@sentry/utils/dist/instrument", "addInstrumentationHandler")
+  @JSImport("@sentry/utils/dist/instrument", JSImport.Namespace)
   @js.native
-  def addInstrumentationHandler(handler: InstrumentHandler): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def addInstrumentationHandler(handler: InstrumentHandler): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addInstrumentationHandler")(handler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
   trait InstrumentHandler extends StObject {
     
-    def callback(data: js.Any): Unit = js.native
+    def callback(data: js.Any): Unit
     @JSName("callback")
-    var callback_Original: InstrumentHandlerCallback = js.native
+    var callback_Original: InstrumentHandlerCallback
     
-    var `type`: InstrumentHandlerType = js.native
+    var `type`: InstrumentHandlerType
+  }
+  object InstrumentHandler {
+    
+    @scala.inline
+    def apply(callback: /* data */ js.Any => Unit, `type`: InstrumentHandlerType): InstrumentHandler = {
+      val __obj = js.Dynamic.literal(callback = js.Any.fromFunction1(callback))
+      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.asInstanceOf[InstrumentHandler]
+    }
+    
+    @scala.inline
+    implicit class InstrumentHandlerMutableBuilder[Self <: InstrumentHandler] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setCallback(value: /* data */ js.Any => Unit): Self = StObject.set(x, "callback", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setType(value: InstrumentHandlerType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    }
   }
   
   type InstrumentHandlerCallback = js.Function1[/* data */ js.Any, Unit]

@@ -2,40 +2,38 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about a mobile carrier that can be targeted by ads.
   */
-@js.native
 trait SchemaMobileCarrier extends StObject {
   
   /**
     * Country code of the country to which this mobile carrier belongs.
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * DART ID of the country to which this mobile carrier belongs.
     */
-  var countryDartId: js.UndefOr[String] = js.native
+  var countryDartId: js.UndefOr[String] = js.undefined
   
   /**
     * ID of this mobile carrier.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#mobileCarrier&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of this mobile carrier.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaMobileCarrier {
   

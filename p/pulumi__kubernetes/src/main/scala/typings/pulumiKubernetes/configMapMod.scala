@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMapMod {
@@ -27,7 +26,7 @@ object configMapMod {
       */
     def this(name: String) = this()
     def this(name: String, args: ConfigMapArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ConfigMapArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -63,6 +62,10 @@ object configMapMod {
   /* static members */
   object ConfigMap {
     
+    @JSImport("@pulumi/kubernetes/core/v1/configMap", "ConfigMap")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ConfigMap resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -71,54 +74,50 @@ object configMapMod {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/configMap", "ConfigMap.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ConfigMap = js.native
-    @JSImport("@pulumi/kubernetes/core/v1/configMap", "ConfigMap.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ConfigMap = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ConfigMap = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ConfigMap]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): ConfigMap = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ConfigMap]
     
     /**
       * Returns true if the given object is an instance of ConfigMap.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes/core/v1/configMap", "ConfigMap.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/configMap.ConfigMap */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/configMap.ConfigMap */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/core/v1/configMap.ConfigMap */ Boolean]
   }
   
-  @js.native
   trait ConfigMapArgs extends StObject {
     
     /**
       * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
       */
-    val apiVersion: js.UndefOr[Input[v1]] = js.native
+    val apiVersion: js.UndefOr[Input[v1]] = js.undefined
     
     /**
       * BinaryData contains the binary data. Each key must consist of alphanumeric characters, '-', '_' or '.'. BinaryData can contain byte sequences that are not in the UTF-8 range. The keys stored in BinaryData must not overlap with the ones in the Data field, this is enforced during validation process. Using this field will require 1.10+ apiserver and kubelet.
       */
-    val binaryData: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val binaryData: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Data contains the configuration data. Each key must consist of alphanumeric characters, '-', '_' or '.'. Values with non-UTF-8 byte sequences must use the BinaryData field. The keys stored in Data must not overlap with the keys in the BinaryData field, this is enforced during validation process.
       */
-    val data: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val data: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Immutable, if set to true, ensures that data stored in the ConfigMap cannot be updated (only object metadata can be modified). If not set to true, the field can be modified at any time. Defaulted to nil. This is a beta field enabled by ImmutableEphemeralVolumes feature gate.
       */
-    val immutable: js.UndefOr[Input[Boolean]] = js.native
+    val immutable: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
       */
-    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ConfigMap]] = js.native
+    val kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.ConfigMap]] = js.undefined
     
     /**
       * Standard object's metadata. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#metadata
       */
-    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.native
+    val metadata: js.UndefOr[Input[typings.pulumiKubernetes.inputMod.meta.v1.ObjectMeta]] = js.undefined
   }
   object ConfigMapArgs {
     

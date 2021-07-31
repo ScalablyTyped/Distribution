@@ -2,26 +2,24 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A screen, usually the one on which the current window is being rendered, and is obtained using window.screen. */
-@js.native
 trait Screen extends StObject {
   
-  val availHeight: Double = js.native
+  val availHeight: Double
   
-  val availWidth: Double = js.native
+  val availWidth: Double
   
-  val colorDepth: Double = js.native
+  val colorDepth: Double
   
-  val height: Double = js.native
+  val height: Double
   
-  val orientation: ScreenOrientation = js.native
+  val orientation: ScreenOrientation
   
-  val pixelDepth: Double = js.native
+  val pixelDepth: Double
   
-  val width: Double = js.native
+  val width: Double
 }
 object Screen {
   

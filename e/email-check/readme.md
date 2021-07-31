@@ -12,7 +12,7 @@ Async Node JS module to check if an email address exists
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 121996 |
+| # downloads        | 124343 |
 | # stars            | 4 |
 
 ## Links

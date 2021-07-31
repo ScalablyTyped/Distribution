@@ -3,16 +3,31 @@ package typings.googleCloudCommon.utilMod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MakeAuthenticatedRequestOptions extends StObject {
   
-  def onAuthenticated(): Unit = js.native
-  def onAuthenticated(err: Null, reqOpts: DecorateRequestOptions): Unit = js.native
-  def onAuthenticated(err: Error): Unit = js.native
-  def onAuthenticated(err: Error, reqOpts: DecorateRequestOptions): Unit = js.native
+  def onAuthenticated(): Unit
+  def onAuthenticated(err: Null, reqOpts: DecorateRequestOptions): Unit
+  def onAuthenticated(err: Error): Unit
+  def onAuthenticated(err: Error, reqOpts: DecorateRequestOptions): Unit
   @JSName("onAuthenticated")
-  var onAuthenticated_Original: OnAuthenticatedCallback = js.native
+  var onAuthenticated_Original: OnAuthenticatedCallback
+}
+object MakeAuthenticatedRequestOptions {
+  
+  @scala.inline
+  def apply(
+    onAuthenticated: (/* err */ Error | Null, /* reqOpts */ js.UndefOr[DecorateRequestOptions]) => Unit
+  ): MakeAuthenticatedRequestOptions = {
+    val __obj = js.Dynamic.literal(onAuthenticated = js.Any.fromFunction2(onAuthenticated))
+    __obj.asInstanceOf[MakeAuthenticatedRequestOptions]
+  }
+  
+  @scala.inline
+  implicit class MakeAuthenticatedRequestOptionsMutableBuilder[Self <: MakeAuthenticatedRequestOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setOnAuthenticated(value: (/* err */ Error | Null, /* reqOpts */ js.UndefOr[DecorateRequestOptions]) => Unit): Self = StObject.set(x, "onAuthenticated", js.Any.fromFunction2(value))
+  }
 }

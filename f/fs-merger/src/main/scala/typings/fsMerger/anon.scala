@@ -11,17 +11,15 @@ import typings.node.fsMod.Dirent
 import typings.node.fsMod.PathLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait At extends StObject {
     
-    var at: Double = js.native
+    var at: Double
     
-    var relativePath: String = js.native
+    var relativePath: String
   }
   object At {
     
@@ -42,12 +40,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Encoding extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var flag: js.UndefOr[String] = js.native
+    var flag: js.UndefOr[String] = js.undefined
   }
   object Encoding {
     
@@ -86,12 +83,12 @@ object anon {
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: js.UndefOr[scala.Nothing],
+      options: Null,
       callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
       path: PathLike,
-      options: Null,
+      options: Unit,
       callback: js.Function2[ErrnoException | Null, /* files */ js.Array[Buffer | String], Unit]
     ): Unit = js.native
     def apply(
@@ -126,12 +123,11 @@ object anon {
     ): Unit = js.native
   }
   
-  @js.native
   trait WithFileTypes extends StObject {
     
-    var encoding: js.UndefOr[String | Null] = js.native
+    var encoding: js.UndefOr[String | Null] = js.undefined
     
-    var withFileTypes: js.UndefOr[`false`] = js.native
+    var withFileTypes: js.UndefOr[`false`] = js.undefined
   }
   object WithFileTypes {
     

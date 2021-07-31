@@ -3,13 +3,13 @@ package typings.vsoNodeApi.notificationInterfacesMod
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActorNotificationReason extends NotificationReason {
+trait ActorNotificationReason
+  extends StObject
+     with NotificationReason {
   
-  var matchedRoles: js.Array[String] = js.native
+  var matchedRoles: js.Array[String]
 }
 object ActorNotificationReason {
   

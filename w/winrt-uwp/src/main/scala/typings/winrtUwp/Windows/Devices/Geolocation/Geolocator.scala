@@ -8,14 +8,13 @@ import typings.winrtUwp.winrtUwpStrings.positionchanged
 import typings.winrtUwp.winrtUwpStrings.statuschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to the current geographic location. */
 @js.native
 trait Geolocator extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_positionchanged(`type`: positionchanged, listener: TypedEventHandler[Geolocator, PositionChangedEventArgs]): Unit = js.native
   @JSName("addEventListener")
@@ -47,18 +46,18 @@ trait Geolocator extends StObject {
   var movementThreshold: Double = js.native
   
   /** Raised when the location is updated. */
-  def onpositionchanged(ev: PositionChangedEventArgs with WinRTEvent[Geolocator]): Unit = js.native
+  def onpositionchanged(ev: PositionChangedEventArgs & WinRTEvent[Geolocator]): Unit = js.native
   /** Raised when the location is updated. */
   @JSName("onpositionchanged")
   var onpositionchanged_Original: TypedEventHandler[Geolocator, PositionChangedEventArgs] = js.native
   
   /** Raised when the ability of the Geolocator to provide updated location changes. */
-  def onstatuschanged(ev: StatusChangedEventArgs with WinRTEvent[Geolocator]): Unit = js.native
+  def onstatuschanged(ev: StatusChangedEventArgs & WinRTEvent[Geolocator]): Unit = js.native
   /** Raised when the ability of the Geolocator to provide updated location changes. */
   @JSName("onstatuschanged")
   var onstatuschanged_Original: TypedEventHandler[Geolocator, StatusChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_positionchanged(`type`: positionchanged, listener: TypedEventHandler[Geolocator, PositionChangedEventArgs]): Unit = js.native
   @JSName("removeEventListener")

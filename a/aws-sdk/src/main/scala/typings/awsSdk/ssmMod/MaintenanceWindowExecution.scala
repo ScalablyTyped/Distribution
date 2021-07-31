@@ -2,41 +2,39 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowExecution extends StObject {
   
   /**
     * The time the execution finished.
     */
-  var EndTime: js.UndefOr[DateTime] = js.native
+  var EndTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The time the execution started.
     */
-  var StartTime: js.UndefOr[DateTime] = js.native
+  var StartTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The status of the execution.
     */
-  var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.native
+  var Status: js.UndefOr[MaintenanceWindowExecutionStatus] = js.undefined
   
   /**
     * The details explaining the Status. Only available for certain status values.
     */
-  var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.native
+  var StatusDetails: js.UndefOr[MaintenanceWindowExecutionStatusDetails] = js.undefined
   
   /**
     * The ID of the maintenance window execution.
     */
-  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.native
+  var WindowExecutionId: js.UndefOr[MaintenanceWindowExecutionId] = js.undefined
   
   /**
     * The ID of the maintenance window.
     */
-  var WindowId: js.UndefOr[MaintenanceWindowId] = js.native
+  var WindowId: js.UndefOr[MaintenanceWindowId] = js.undefined
 }
 object MaintenanceWindowExecution {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupstaggingapiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourcesInput extends StObject {
   
   /**
     * A list of ARNs. An ARN (Amazon Resource Name) uniquely identifies a resource. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces in the AWS General Reference.
     */
-  var ResourceARNList: typings.awsSdk.resourcegroupstaggingapiMod.ResourceARNList = js.native
+  var ResourceARNList: typings.awsSdk.resourcegroupstaggingapiMod.ResourceARNList
   
   /**
     * A list of the tag keys that you want to remove from the specified resources.
     */
-  var TagKeys: TagKeyListForUntag = js.native
+  var TagKeys: TagKeyListForUntag
 }
 object UntagResourcesInput {
   

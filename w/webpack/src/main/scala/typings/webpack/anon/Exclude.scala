@@ -5,41 +5,41 @@ import typings.webpack.webpackOptionsMod.RuleSetConditionsAbsolute
 import typings.webpack.webpackOptionsMod._RuleSetConditionAbsolute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Exclude extends _RuleSetConditionAbsolute {
+trait Exclude
+  extends StObject
+     with _RuleSetConditionAbsolute {
   
   /**
   			 * Logical AND
   			 */
-  var and: js.UndefOr[RuleSetConditionsAbsolute] = js.native
+  var and: js.UndefOr[RuleSetConditionsAbsolute] = js.undefined
   
   /**
   			 * Exclude all modules matching any of these conditions
   			 */
-  var exclude: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var exclude: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   			 * Exclude all modules matching not any of these conditions
   			 */
-  var include: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var include: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
   
   /**
   			 * Logical NOT
   			 */
-  var not: js.UndefOr[RuleSetConditionsAbsolute] = js.native
+  var not: js.UndefOr[RuleSetConditionsAbsolute] = js.undefined
   
   /**
   			 * Logical OR
   			 */
-  var or: js.UndefOr[RuleSetConditionsAbsolute] = js.native
+  var or: js.UndefOr[RuleSetConditionsAbsolute] = js.undefined
   
   /**
   			 * Exclude all modules matching any of these conditions
   			 */
-  var test: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.native
+  var test: js.UndefOr[RuleSetConditionOrConditionsAbsolute] = js.undefined
 }
 object Exclude {
   

@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Web.Syndication
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains progress information for a data transfer operation. */
-@js.native
 trait TransferProgress extends StObject {
   
   /** The number of bytes received. */
-  var bytesRetrieved: Double = js.native
+  var bytesRetrieved: Double
   
   /** The number of bytes sent. */
-  var bytesSent: Double = js.native
+  var bytesSent: Double
   
   /** The total number of bytes that will be received during the transfer operation. */
-  var totalBytesToRetrieve: Double = js.native
+  var totalBytesToRetrieve: Double
   
   /** The total number of bytes that will be sent during the transfer operation. */
-  var totalBytesToSend: Double = js.native
+  var totalBytesToSend: Double
 }
 object TransferProgress {
   

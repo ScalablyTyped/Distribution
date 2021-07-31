@@ -2,14 +2,12 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateCheckDetails extends StObject {
   
   /** The version of the available update. */
-  var version: String = js.native
+  var version: String
 }
 object UpdateCheckDetails {
   

@@ -6,35 +6,33 @@ import typings.stripe.stripeStrings.enabled
 import typings.stripe.stripeStrings.webhook_endpoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webhookEndpoints {
   
-  @js.native
   trait IWebhookCreateOptions extends StObject {
     
     /**
       * Events sent to this endpoint will be generated with this Stripe Version instead of your
       * account’s default Stripe Version.
       */
-    var api_version: js.UndefOr[String] = js.native
+    var api_version: js.UndefOr[String] = js.undefined
     
     /**
       * If true, this endpoint will receive events from connected accounts instead of just your account.
       */
-    var connect: js.UndefOr[Boolean] = js.native
+    var connect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The list of enabled events for this webhook endpoint.
       * Use '*' to enable all events, except those that require explicit selection.
       */
-    var enabled_events: js.Array[EventType] = js.native
+    var enabled_events: js.Array[EventType]
     
     /**
       * The URL of the webhook endpoint
       */
-    var url: String = js.native
+    var url: String
   }
   object IWebhookCreateOptions {
     
@@ -70,64 +68,65 @@ object webhookEndpoints {
     }
   }
   
-  @js.native
-  trait IWebhookEndpoint extends IObject {
+  trait IWebhookEndpoint
+    extends StObject
+       with IObject {
     
     /**
       * The Stripe API version used to render data.
       */
-    var api_version: String = js.native
+    var api_version: String
     
     /**
       * ID of the Application.
       */
-    var application: String | Null = js.native
+    var application: String | Null
     
     /**
       * Time at which the object was created. Measured in seconds since the Unix epoch.
       */
-    var created: Double = js.native
+    var created: Double
     
     /**
       * The list of enabled events for this webhook endpoint.
       * Use '*' to enable all events, except those that require explicit selection.
       */
-    var enabled_events: js.Array[EventType] = js.native
+    var enabled_events: js.Array[EventType]
     
-    var id: String = js.native
+    var id: String
     
     /**
       * Has the value `true` if the object exists in live mode or the value `false` if the object exists in test mode.
       */
-    var livemode: Boolean = js.native
+    var livemode: Boolean
     
     /**
       * Set of key-value pairs that you can attach to an object.
       * This can be useful for storing additional information about
       * the object in a structured format.
       */
-    var metadata: js.UndefOr[IMetadata] = js.native
+    var metadata: js.UndefOr[IMetadata] = js.undefined
     
     /**
       * Value is 'webhook_endpoint'
       */
     @JSName("object")
-    var object_IWebhookEndpoint: webhook_endpoint = js.native
+    var object_IWebhookEndpoint: webhook_endpoint
     
     /**
       * The endpoint’s secret, used to generate webhook signatures. Only returned at creation.
       */
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
     /**
       * The status of the webhook.
       */
-    var status: enabled | disabled = js.native
+    var status: enabled | disabled
     
     /**
       * The URL of the webhook endpoint.
       */
-    var url: String = js.native
+    var url: String
   }
   object IWebhookEndpoint {
     
@@ -138,12 +137,11 @@ object webhookEndpoints {
       enabled_events: js.Array[EventType],
       id: String,
       livemode: Boolean,
-      `object`: webhook_endpoint,
       status: enabled | disabled,
       url: String
     ): IWebhookEndpoint = {
-      val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], enabled_events = enabled_events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(api_version = api_version.asInstanceOf[js.Any], created = created.asInstanceOf[js.Any], enabled_events = enabled_events.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], livemode = livemode.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], url = url.asInstanceOf[js.Any], application = null)
+      __obj.updateDynamic("object")("webhook_endpoint")
       __obj.asInstanceOf[IWebhookEndpoint]
     }
     
@@ -197,31 +195,30 @@ object webhookEndpoints {
     }
   }
   
-  @js.native
   trait IWebhookUpdateOptions extends StObject {
     
     /**
       * If true, it disables the webhookendpoint.
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The list of enabled events for this webhook endpoint.
       * Use '*' to enable all events, except those that require explicit selection.
       */
-    var enabled_events: js.UndefOr[js.Array[EventType]] = js.native
+    var enabled_events: js.UndefOr[js.Array[EventType]] = js.undefined
     
     /**
       * Set of key-value pairs that you can attach to an object.
       * This can be useful for storing additional information about
       * the object in a structured format.
       */
-    var metadata: js.UndefOr[IMetadata] = js.native
+    var metadata: js.UndefOr[IMetadata] = js.undefined
     
     /**
       * The URL of the webhook endpoint.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IWebhookUpdateOptions {
     

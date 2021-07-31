@@ -6,7 +6,6 @@ import typings.vscodeLanguageserverProtocol.protocolMod.CompletionParams
 import typings.vscodeLanguageserverProtocol.protocolMod.CompletionRegistrationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CompletionRequest {

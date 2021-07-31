@@ -3,41 +3,39 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioSpriteFileConfig extends StObject {
   
   /**
     * The audio configuration options.
     */
-  var audioConfig: js.UndefOr[js.Any] = js.native
+  var audioConfig: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The absolute or relative URL to load the audio file from.
     */
-  var audioURL: js.UndefOr[js.Object] = js.native
+  var audioURL: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Extra XHR Settings specifically for the audio file.
     */
-  var audioXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var audioXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
   
   /**
     * The absolute or relative URL to load the json file from. Or a well formed JSON object to use instead.
     */
-  var jsonURL: String = js.native
+  var jsonURL: String
   
   /**
     * Extra XHR Settings specifically for the json file.
     */
-  var jsonXhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var jsonXhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
   
   /**
     * The key of the file. Must be unique within both the Loader and the Audio Cache.
     */
-  var key: String = js.native
+  var key: String
 }
 object AudioSpriteFileConfig {
   

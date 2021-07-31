@@ -5,36 +5,36 @@ import typings.react.mod.ComponentState
 import typings.react.mod.StatelessComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](SourceComponent: ComponentClass[T, ComponentState]): ComponentClass[T, ComponentState] = ^.asInstanceOf[js.Dynamic].apply(SourceComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[T, ComponentState]]
+  @scala.inline
+  def apply[T](SourceComponent: StatelessComponent[T]): ComponentClass[T, ComponentState] = ^.asInstanceOf[js.Dynamic].apply(SourceComponent.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[T, ComponentState]]
+  
   @JSImport("react-timeout", JSImport.Namespace)
   @js.native
-  def apply[T](SourceComponent: ComponentClass[T, ComponentState]): ComponentClass[T, ComponentState] = js.native
-  @JSImport("react-timeout", JSImport.Namespace)
-  @js.native
-  def apply[T](SourceComponent: StatelessComponent[T]): ComponentClass[T, ComponentState] = js.native
+  val ^ : js.Any = js.native
   
   type Id = Double
   
-  @js.native
   trait ReactTimeoutProps extends StObject {
     
-    var cancelAnimationFrame: js.UndefOr[js.Function1[/* id */ Id, Unit]] = js.native
+    var cancelAnimationFrame: js.UndefOr[js.Function1[/* id */ Id, Unit]] = js.undefined
     
-    var clearImmediate: js.UndefOr[js.Function1[/* id */ Id, Unit]] = js.native
+    var clearImmediate: js.UndefOr[js.Function1[/* id */ Id, Unit]] = js.undefined
     
-    var clearInterval: js.UndefOr[js.Function1[/* id */ Id, Unit]] = js.native
+    var clearInterval: js.UndefOr[js.Function1[/* id */ Id, Unit]] = js.undefined
     
-    var clearTimeout: js.UndefOr[js.Function1[/* timer */ Timer, Unit]] = js.native
+    var clearTimeout: js.UndefOr[js.Function1[/* timer */ Timer, Unit]] = js.undefined
     
-    var requestAnimationFrame: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, Unit], Id]] = js.native
+    var requestAnimationFrame: js.UndefOr[js.Function1[/* callback */ js.Function1[/* repeated */ js.Any, Unit], Id]] = js.undefined
     
     var setImmediate: js.UndefOr[
         js.Function2[/* callback */ js.Function1[/* repeated */ js.Any, Unit], /* repeated */ js.Any, Id]
-      ] = js.native
+      ] = js.undefined
     
     var setInterval: js.UndefOr[
         js.Function3[
@@ -43,7 +43,7 @@ object mod {
           /* repeated */ js.Any, 
           Id
         ]
-      ] = js.native
+      ] = js.undefined
     
     var setTimeout: js.UndefOr[
         js.Function3[
@@ -52,7 +52,7 @@ object mod {
           /* repeated */ js.Any, 
           Timer
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object ReactTimeoutProps {
     

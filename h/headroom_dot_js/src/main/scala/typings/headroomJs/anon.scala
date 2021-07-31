@@ -2,61 +2,59 @@ package typings.headroomJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Bottom extends StObject {
     
     /**
       * when at bottom of scroll area
       * @default 'headroom--bottom'
       */
-    var bottom: js.UndefOr[String] = js.native
+    var bottom: js.UndefOr[String] = js.undefined
     
     /**
       * when frozen method has been called
       * @default 'headroom--frozen'
       */
-    var frozen: js.UndefOr[String] = js.native
+    var frozen: js.UndefOr[String] = js.undefined
     
     /**
       * when element is initialised
       * @default 'headroom'
       */
-    var initial: js.UndefOr[String] = js.native
+    var initial: js.UndefOr[String] = js.undefined
     
     /**
       * when not at bottom of scroll area
       * @default 'headroom--not-bottom'
       */
-    var notBottom: js.UndefOr[String] = js.native
+    var notBottom: js.UndefOr[String] = js.undefined
     
     /**
       * when below offset
       * @default 'headroom--not-top'
       */
-    var notTop: js.UndefOr[String] = js.native
+    var notTop: js.UndefOr[String] = js.undefined
     
     /**
       * when scrolling up
       * @default 'headroom--pinned'
       */
-    var pinned: js.UndefOr[String] = js.native
+    var pinned: js.UndefOr[String] = js.undefined
     
     /**
       * when above offset
       * @default 'headroom--top'
       */
-    var top: js.UndefOr[String] = js.native
+    var top: js.UndefOr[String] = js.undefined
     
     /**
       * when scrolling down
       * @default 'headroom--unpinned'
       */
-    var unpinned: js.UndefOr[String] = js.native
+    var unpinned: js.UndefOr[String] = js.undefined
   }
   object Bottom {
     

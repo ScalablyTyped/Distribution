@@ -2,20 +2,18 @@ package typings.googleapis.driveV3Mod.driveV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A list of Team Drives.
   */
-@js.native
 trait SchemaTeamDriveList extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;drive#teamDriveList&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The page token for the next page of Team Drives. This will be absent if
@@ -23,13 +21,13 @@ trait SchemaTeamDriveList extends StObject {
     * rejected for any reason, it should be discarded, and pagination should be
     * restarted from the first page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of Team Drives. If nextPageToken is populated, then this list
     * may be incomplete and an additional page of results should be fetched.
     */
-  var teamDrives: js.UndefOr[js.Array[SchemaTeamDrive]] = js.native
+  var teamDrives: js.UndefOr[js.Array[SchemaTeamDrive]] = js.undefined
 }
 object SchemaTeamDriveList {
   

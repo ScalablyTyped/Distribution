@@ -12,7 +12,7 @@ Single component release of popup
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 30649 |
+| # downloads        | 26224 |
 | # stars            | 0 |
 
 ## Links

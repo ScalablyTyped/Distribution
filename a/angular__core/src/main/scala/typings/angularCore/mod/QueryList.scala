@@ -4,16 +4,17 @@ import typings.rxjs.mod.Observable_
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "QueryList")
 @js.native
-class QueryList[T] () extends Iterable[T] {
+class QueryList[T] ()
+  extends StObject
+     with Iterable[T] {
   
   var _results: js.Any = js.native
   
-  val changes: Observable_[_] = js.native
+  val changes: Observable_[js.Any] = js.native
   
   /** internal */
   def destroy(): Unit = js.native
@@ -71,7 +72,7 @@ class QueryList[T] () extends Iterable[T] {
     *
     * @param resultsTree The query results to store
     */
-  def reset(resultsTree: js.Array[T | js.Array[_]]): Unit = js.native
+  def reset(resultsTree: js.Array[T | js.Array[js.Any]]): Unit = js.native
   
   /** internal */
   def setDirty(): Unit = js.native

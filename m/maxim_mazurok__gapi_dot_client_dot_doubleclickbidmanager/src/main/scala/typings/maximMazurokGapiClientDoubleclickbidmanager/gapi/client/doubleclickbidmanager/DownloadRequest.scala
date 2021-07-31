@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DownloadRequest extends StObject {
   
   /**
     * File types that will be returned. If INVENTORY_SOURCE is requested, no other file types may be requested. Acceptable values are: - "AD" - "AD_GROUP" - "CAMPAIGN" - "INSERTION_ORDER"
     * - "INVENTORY_SOURCE" - "LINE_ITEM"
     */
-  var fileTypes: js.UndefOr[js.Array[String]] = js.native
+  var fileTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The IDs of the specified filter type. This is used to filter entities to fetch. At least one ID must be specified. */
-  var filterIds: js.UndefOr[js.Array[String]] = js.native
+  var filterIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Filter type used to filter entities to fetch. PARTNER_ID and INVENTORY_SOURCE_ID may only be used when downloading inventory sources. */
-  var filterType: js.UndefOr[String] = js.native
+  var filterType: js.UndefOr[String] = js.undefined
   
   /** SDF Version (column names, types, order) in which the entities will be returned. Default to 5. */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object DownloadRequest {
   

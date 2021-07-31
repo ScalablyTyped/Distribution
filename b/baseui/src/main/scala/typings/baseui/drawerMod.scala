@@ -24,21 +24,19 @@ import typings.std.KeyboardEvent
 import typings.styletronReact.mod.StyletronComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object drawerMod {
   
-  @js.native
   trait ANCHOR extends StObject {
     
-    var bottom: typings.baseui.baseuiStrings.bottom = js.native
+    var bottom: typings.baseui.baseuiStrings.bottom
     
-    var left: typings.baseui.baseuiStrings.left = js.native
+    var left: typings.baseui.baseuiStrings.left
     
-    var right: typings.baseui.baseuiStrings.right = js.native
+    var right: typings.baseui.baseuiStrings.right
     
-    var top: typings.baseui.baseuiStrings.top = js.native
+    var top: typings.baseui.baseuiStrings.top
   }
   object ANCHOR {
     
@@ -63,14 +61,13 @@ object drawerMod {
     }
   }
   
-  @js.native
   trait CLOSE_SOURCE extends StObject {
     
-    var backdrop: typings.baseui.baseuiStrings.backdrop = js.native
+    var backdrop: typings.baseui.baseuiStrings.backdrop
     
-    var closeButton: typings.baseui.baseuiStrings.closeButton = js.native
+    var closeButton: typings.baseui.baseuiStrings.closeButton
     
-    var escape: escape_ = js.native
+    var escape: escape_
   }
   object CLOSE_SOURCE {
     
@@ -117,7 +114,7 @@ object drawerMod {
     
     def getChildren(): ReactNode = js.native
     
-    def getRef(component: String): Ref[_] = js.native
+    def getRef(component: String): Ref[js.Any] = js.native
     
     def getSharedProps(): SharedStylePropsArgchildr = js.native
     
@@ -141,14 +138,13 @@ object drawerMod {
     def triggerClose_escape(source: escape_): Unit = js.native
   }
   
-  @js.native
   trait SIZE extends StObject {
     
-    var default: default_ = js.native
+    var default: default_
     
-    var auto: typings.baseui.baseuiStrings.auto = js.native
+    var auto: typings.baseui.baseuiStrings.auto
     
-    var full: typings.baseui.baseuiStrings.full = js.native
+    var full: typings.baseui.baseuiStrings.full
   }
   object SIZE {
     
@@ -170,14 +166,13 @@ object drawerMod {
     }
   }
   
-  @js.native
   trait SIZE_DIMENSIONS extends StObject {
     
-    var default: `500px` = js.native
+    var default: `500px`
     
-    var auto: typings.baseui.baseuiStrings.auto = js.native
+    var auto: typings.baseui.baseuiStrings.auto
     
-    var full: `100Percentsign` = js.native
+    var full: `100Percentsign`
   }
   object SIZE_DIMENSIONS {
     
@@ -219,28 +214,27 @@ object drawerMod {
   @js.native
   val StyledRoot: StyletronComponent[js.Any] = js.native
   
-  @js.native
   trait DrawerOverrides extends StObject {
     
     var Backdrop: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Close: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var DrawerBody: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var DrawerContainer: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     var Root: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Override<SharedStylePropsArg> */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object DrawerOverrides {
     
@@ -295,36 +289,35 @@ object drawerMod {
     }
   }
   
-  @js.native
   trait DrawerProps extends StObject {
     
-    var anchor: js.UndefOr[left | right | top | bottom | String] = js.native
+    var anchor: js.UndefOr[left | right | top | bottom | String] = js.undefined
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var closeable: js.UndefOr[Boolean] = js.native
+    var closeable: js.UndefOr[Boolean] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var mountNode: js.UndefOr[HTMLElement] = js.native
+    var mountNode: js.UndefOr[HTMLElement] = js.undefined
     
-    var onBackdropClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], _]] = js.native
+    var onBackdropClick: js.UndefOr[js.Function1[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], js.Any]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* args */ CloseSource, _]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* args */ CloseSource, js.Any]] = js.undefined
     
-    var onEscapeKeyDown: js.UndefOr[js.Function1[/* event */ typings.react.mod.KeyboardEvent[HTMLElement], _]] = js.native
+    var onEscapeKeyDown: js.UndefOr[js.Function1[/* event */ typings.react.mod.KeyboardEvent[HTMLElement], js.Any]] = js.undefined
     
-    var overrides: js.UndefOr[DrawerOverrides] = js.native
+    var overrides: js.UndefOr[DrawerOverrides] = js.undefined
     
-    var renderAll: js.UndefOr[Boolean] = js.native
+    var renderAll: js.UndefOr[Boolean] = js.undefined
     
-    var showBackdrop: js.UndefOr[Boolean] = js.native
+    var showBackdrop: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[default_ | full | auto | String] = js.native
+    var size: js.UndefOr[default_ | full | auto | String] = js.undefined
   }
   object DrawerProps {
     
@@ -380,19 +373,19 @@ object drawerMod {
       def setMountNodeUndefined: Self = StObject.set(x, "mountNode", js.undefined)
       
       @scala.inline
-      def setOnBackdropClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => _): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
+      def setOnBackdropClick(value: /* event */ MouseEvent[HTMLElement, NativeMouseEvent] => js.Any): Self = StObject.set(x, "onBackdropClick", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnBackdropClickUndefined: Self = StObject.set(x, "onBackdropClick", js.undefined)
       
       @scala.inline
-      def setOnClose(value: /* args */ CloseSource => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      def setOnClose(value: /* args */ CloseSource => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       @scala.inline
-      def setOnEscapeKeyDown(value: /* event */ typings.react.mod.KeyboardEvent[HTMLElement] => _): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
+      def setOnEscapeKeyDown(value: /* event */ typings.react.mod.KeyboardEvent[HTMLElement] => js.Any): Self = StObject.set(x, "onEscapeKeyDown", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnEscapeKeyDownUndefined: Self = StObject.set(x, "onEscapeKeyDown", js.undefined)
@@ -423,12 +416,11 @@ object drawerMod {
     }
   }
   
-  @js.native
   trait DrawerState extends StObject {
     
-    var isVisible: Boolean = js.native
+    var isVisible: Boolean
     
-    var mounted: Boolean = js.native
+    var mounted: Boolean
   }
   object DrawerState {
     
@@ -449,28 +441,27 @@ object drawerMod {
     }
   }
   
-  @js.native
   trait SharedStylePropsArg extends StObject {
     
     @JSName("$anchor")
-    var $anchor: js.UndefOr[left | right | top | bottom] = js.native
+    var $anchor: js.UndefOr[left | right | top | bottom] = js.undefined
     
     @JSName("$animating")
-    var $animating: js.UndefOr[Boolean] = js.native
+    var $animating: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$closeable")
-    var $closeable: js.UndefOr[Boolean] = js.native
+    var $closeable: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isOpen")
-    var $isOpen: js.UndefOr[Boolean] = js.native
+    var $isOpen: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$isVisible")
-    var $isVisible: js.UndefOr[Boolean] = js.native
+    var $isVisible: js.UndefOr[Boolean] = js.undefined
     
     @JSName("$size")
-    var $size: js.UndefOr[default_ | full | auto] = js.native
+    var $size: js.UndefOr[default_ | full | auto] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object SharedStylePropsArg {
     

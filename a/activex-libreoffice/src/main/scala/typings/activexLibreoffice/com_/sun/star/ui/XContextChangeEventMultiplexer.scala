@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * The XEventMultiplexer interface is typically implemented as a singleton
   */
-@js.native
-trait XContextChangeEventMultiplexer extends XInterface {
+trait XContextChangeEventMultiplexer
+  extends StObject
+     with XInterface {
   
   /**
     * Add an event listener that is called only when events are broadcast for the specified event focus.
@@ -25,17 +25,17 @@ trait XContextChangeEventMultiplexer extends XInterface {
     * @param xEventFocus An empty reference is a valid value. In this case the registered listener will be called for every event broadcast, regardless of its
     * @throws com::sun::star::lang::IllegalArgumentException
     */
-  def addContextChangeEventListener(xListener: XContextChangeEventListener, xEventFocus: XInterface): Unit = js.native
+  def addContextChangeEventListener(xListener: XContextChangeEventListener, xEventFocus: XInterface): Unit
   
   /** Call all event listeners that where added for the specified event focus. */
-  def broadcastContextChangeEvent(aEvent: ContextChangeEventObject, xEventFocus: XInterface): Unit = js.native
+  def broadcastContextChangeEvent(aEvent: ContextChangeEventObject, xEventFocus: XInterface): Unit
   
   /**
     * Remove an event listener for all event foci.
     * @param xListener An empty reference results in an InvalidArgumentException. It is not an error when the listener is not registered for any event focus.
     * @throws com::sun::star::lang::IllegalArgumentException
     */
-  def removeAllContextChangeEventListeners(xListener: XContextChangeEventListener): Unit = js.native
+  def removeAllContextChangeEventListeners(xListener: XContextChangeEventListener): Unit
   
   /**
     * Remove an event listener for the specified event focus.
@@ -45,7 +45,7 @@ trait XContextChangeEventMultiplexer extends XInterface {
     * @param xEventFocus The listener is only removed for this event focus. An empty reference is a valid value.
     * @throws com::sun::star::lang::IllegalArgumentException
     */
-  def removeContextChangeEventListener(xListener: XContextChangeEventListener, xEventFocus: XInterface): Unit = js.native
+  def removeContextChangeEventListener(xListener: XContextChangeEventListener, xEventFocus: XInterface): Unit
 }
 object XContextChangeEventMultiplexer {
   

@@ -2,15 +2,13 @@ package typings.limeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessageChannel extends StObject {
   
-  def onMessage(message: Message): js.Any = js.native
+  def onMessage(message: Message): js.Any
   
-  def sendMessage(message: Message): Unit = js.native
+  def sendMessage(message: Message): Unit
 }
 object IMessageChannel {
   

@@ -8,27 +8,28 @@ import typings.prompts.promptsBooleans.`false`
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("prompts", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: String */](questions: js.Array[PromptObject[T]]): js.Promise[Answers[T]] = js.native
-  @JSImport("prompts", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: String */](questions: js.Array[PromptObject[T]], options: Options): js.Promise[Answers[T]] = js.native
-  @JSImport("prompts", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: String */](questions: PromptObject[T]): js.Promise[Answers[T]] = js.native
-  @JSImport("prompts", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: String */](questions: PromptObject[T], options: Options): js.Promise[Answers[T]] = js.native
+  @scala.inline
+  def apply[T /* <: String */](questions: js.Array[PromptObject[T]]): js.Promise[Answers[T]] = ^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Answers[T]]]
+  @scala.inline
+  def apply[T /* <: String */](questions: js.Array[PromptObject[T]], options: Options): js.Promise[Answers[T]] = (^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Answers[T]]]
+  @scala.inline
+  def apply[T /* <: String */](questions: PromptObject[T]): js.Promise[Answers[T]] = ^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Answers[T]]]
+  @scala.inline
+  def apply[T /* <: String */](questions: PromptObject[T], options: Options): js.Promise[Answers[T]] = (^.asInstanceOf[js.Dynamic].apply(questions.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Answers[T]]]
   
-  @JSImport("prompts", "inject")
+  @JSImport("prompts", JSImport.Namespace)
   @js.native
-  def inject(arr: js.Array[_]): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def inject(arr: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(arr.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def `override`(obj: StringDictionary[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("override")(obj.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   // Circular reference from prompts
   @JSImport("prompts", "prompt")
@@ -37,68 +38,60 @@ object mod {
   
   object prompts {
     
-    @JSImport("prompts", "prompts.autocomplete")
+    @JSImport("prompts", "prompts")
     @js.native
-    def autocomplete(args: PromptObject[String]): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("prompts", "prompts.confirm")
-    @js.native
-    def confirm(args: PromptObject[String]): Unit = js.native
+    @scala.inline
+    def autocomplete(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("autocomplete")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("prompts", "prompts.date")
-    @js.native
-    def date(args: PromptObject[String]): js.Any = js.native
+    @scala.inline
+    def confirm(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("confirm")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("prompts", "prompts.invisible")
-    @js.native
-    def invisible(args: PromptObject[String]): js.Any = js.native
+    @scala.inline
+    def date(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("prompts", "prompts.list")
-    @js.native
-    def list(args: PromptObject[String]): js.Any = js.native
+    @scala.inline
+    def invisible(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("invisible")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("prompts", "prompts.multiselect")
-    @js.native
-    def multiselect(args: PromptObject[String]): js.Any = js.native
+    @scala.inline
+    def list(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("prompts", "prompts.number")
-    @js.native
-    def number(args: PromptObject[String]): Unit = js.native
+    @scala.inline
+    def multiselect(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("multiselect")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("prompts", "prompts.password")
-    @js.native
-    def password(args: PromptObject[String]): js.Any = js.native
+    @scala.inline
+    def number(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("prompts", "prompts.select")
-    @js.native
-    def select(args: PromptObject[String]): Unit = js.native
+    @scala.inline
+    def password(args: PromptObject[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(args.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("prompts", "prompts.text")
-    @js.native
-    def text(args: PromptObject[String]): Unit = js.native
+    @scala.inline
+    def select(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("prompts", "prompts.toggle")
-    @js.native
-    def toggle(args: PromptObject[String]): Unit = js.native
+    @scala.inline
+    def text(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    
+    @scala.inline
+    def toggle(args: PromptObject[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("toggle")(args.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   type Answers[T /* <: String */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ id in T ]: any}
-    */ typings.prompts.promptsStrings.Answers with TopLevel[js.Any]
+    */ typings.prompts.promptsStrings.Answers & TopLevel[js.Any]
   
   // Based upon: https://github.com/terkelg/prompts/blob/d7d2c37a0009e3235b2e88a7d5cdbb114ac271b2/lib/elements/select.js#L29
-  @js.native
   trait Choice extends StObject {
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var selected: js.UndefOr[Boolean] = js.native
+    var selected: js.UndefOr[Boolean] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Choice {
     
@@ -139,19 +132,18 @@ object mod {
   
   type Falsy = js.UndefOr[`false` | Null]
   
-  @js.native
   trait Options extends StObject {
     
-    var onCancel: js.UndefOr[js.Function2[/* prompt */ PromptObject[String], /* answers */ js.Any, Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function2[/* prompt */ PromptObject[String], /* answers */ js.Any, Unit]] = js.undefined
     
     var onSubmit: js.UndefOr[
         js.Function3[
           /* prompt */ PromptObject[String], 
           /* answer */ js.Any, 
-          /* answers */ js.Array[_], 
+          /* answers */ js.Array[js.Any], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -171,7 +163,9 @@ object mod {
       def setOnCancelUndefined: Self = StObject.set(x, "onCancel", js.undefined)
       
       @scala.inline
-      def setOnSubmit(value: (/* prompt */ PromptObject[String], /* answer */ js.Any, /* answers */ js.Array[_]) => Unit): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
+      def setOnSubmit(
+        value: (/* prompt */ PromptObject[String], /* answer */ js.Any, /* answers */ js.Array[js.Any]) => Unit
+      ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
       @scala.inline
       def setOnSubmitUndefined: Self = StObject.set(x, "onSubmit", js.undefined)
@@ -180,56 +174,57 @@ object mod {
   
   type PrevCaller[T /* <: String */, R] = js.Function3[/* prev */ js.Any, /* values */ Answers[T], /* prompt */ PromptObject[String], R]
   
-  @js.native
   trait PromptObject[T /* <: String */] extends StObject {
     
-    var active: js.UndefOr[String] = js.native
+    var active: js.UndefOr[String] = js.undefined
     
-    var choices: js.UndefOr[js.Array[Choice]] = js.native
+    var choices: js.UndefOr[js.Array[Choice]] = js.undefined
     
-    var float: js.UndefOr[Boolean] = js.native
+    var float: js.UndefOr[Boolean] = js.undefined
     
-    var format: js.UndefOr[PrevCaller[T, Unit]] = js.native
+    var format: js.UndefOr[PrevCaller[T, Unit]] = js.undefined
     
-    var hint: js.UndefOr[String] = js.native
+    var hint: js.UndefOr[String] = js.undefined
     
-    var inactive: js.UndefOr[String] = js.native
+    var inactive: js.UndefOr[String] = js.undefined
     
-    var increment: js.UndefOr[Double] = js.native
+    var increment: js.UndefOr[Double] = js.undefined
     
-    var initial: js.UndefOr[String | Double | Boolean | Date] = js.native
+    var initial: js.UndefOr[String | Double | Boolean | Date] = js.undefined
     
-    var instructions: js.UndefOr[String | Boolean] = js.native
+    var instructions: js.UndefOr[String | Boolean] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var mask: js.UndefOr[String] = js.native
+    var mask: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var message: js.UndefOr[ValueOrFunc[String]] = js.native
+    var message: js.UndefOr[ValueOrFunc[String]] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var name: ValueOrFunc[T] = js.native
+    var name: ValueOrFunc[T]
     
-    var onState: js.UndefOr[PrevCaller[T, Unit]] = js.native
+    var onState: js.UndefOr[PrevCaller[T, Unit]] = js.undefined
     
-    var round: js.UndefOr[Double] = js.native
+    var round: js.UndefOr[Double] = js.undefined
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
     
-    var stdin: js.UndefOr[Readable] = js.native
+    var stdin: js.UndefOr[Readable] = js.undefined
     
-    var stdout: js.UndefOr[Writable] = js.native
+    var stdout: js.UndefOr[Writable] = js.undefined
     
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
-    var suggest: js.UndefOr[js.Function2[/* input */ js.Any, /* choices */ js.Array[Choice], js.Promise[_]]] = js.native
+    var suggest: js.UndefOr[
+        js.Function2[/* input */ js.Any, /* choices */ js.Array[Choice], js.Promise[js.Any]]
+      ] = js.undefined
     
-    var `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy]) = js.native
+    var `type`: PromptType | Falsy | (PrevCaller[T, PromptType | Falsy])
     
-    var validate: js.UndefOr[PrevCaller[T, Boolean | String | (js.Promise[Boolean | String])]] = js.native
+    var validate: js.UndefOr[PrevCaller[T, Boolean | String | (js.Promise[Boolean | String])]] = js.undefined
   }
   object PromptObject {
     
@@ -240,7 +235,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PromptObjectMutableBuilder[Self <: PromptObject[_], T /* <: String */] (val x: Self with PromptObject[T]) extends AnyVal {
+    implicit class PromptObjectMutableBuilder[Self <: PromptObject[?], T /* <: String */] (val x: Self & PromptObject[T]) extends AnyVal {
       
       @scala.inline
       def setActive(value: String): Self = StObject.set(x, "active", value.asInstanceOf[js.Any])
@@ -377,7 +372,7 @@ object mod {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
       
       @scala.inline
-      def setSuggest(value: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[_]): Self = StObject.set(x, "suggest", js.Any.fromFunction2(value))
+      def setSuggest(value: (/* input */ js.Any, /* choices */ js.Array[Choice]) => js.Promise[js.Any]): Self = StObject.set(x, "suggest", js.Any.fromFunction2(value))
       
       @scala.inline
       def setSuggestUndefined: Self = StObject.set(x, "suggest", js.undefined)
@@ -461,8 +456,4 @@ object mod {
   }
   
   type ValueOrFunc[T /* <: String */] = T | (PrevCaller[T, T])
-  
-  @JSImport("prompts", "override")
-  @js.native
-  def `override`(obj: StringDictionary[js.Any]): Unit = js.native
 }

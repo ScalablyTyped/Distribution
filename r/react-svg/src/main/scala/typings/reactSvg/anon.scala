@@ -4,36 +4,34 @@ import typings.propTypes.mod.Requireable
 import typings.propTypes.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AfterInjection extends StObject {
     
-    def afterInjection(): js.UndefOr[scala.Nothing] = js.native
+    def afterInjection(): Unit
     
-    def beforeInjection(): js.UndefOr[scala.Nothing] = js.native
+    def beforeInjection(): Unit
     
-    var evalScripts: String = js.native
+    var evalScripts: String
     
-    var fallback: Null = js.native
+    var fallback: Null
     
-    var loading: Null = js.native
+    var loading: Null
     
-    var renumerateIRIElements: Boolean = js.native
+    var renumerateIRIElements: Boolean
     
-    var useRequestCache: Boolean = js.native
+    var useRequestCache: Boolean
     
-    var wrapper: String = js.native
+    var wrapper: String
   }
   object AfterInjection {
     
     @scala.inline
     def apply(
-      afterInjection: () => js.UndefOr[scala.Nothing],
-      beforeInjection: () => js.UndefOr[scala.Nothing],
+      afterInjection: () => Unit,
+      beforeInjection: () => Unit,
       evalScripts: String,
       fallback: Null,
       loading: Null,
@@ -49,10 +47,10 @@ object anon {
     implicit class AfterInjectionMutableBuilder[Self <: AfterInjection] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAfterInjection(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "afterInjection", js.Any.fromFunction0(value))
+      def setAfterInjection(value: () => Unit): Self = StObject.set(x, "afterInjection", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setBeforeInjection(value: () => js.UndefOr[scala.Nothing]): Self = StObject.set(x, "beforeInjection", js.Any.fromFunction0(value))
+      def setBeforeInjection(value: () => Unit): Self = StObject.set(x, "beforeInjection", js.Any.fromFunction0(value))
       
       @scala.inline
       def setEvalScripts(value: String): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
@@ -74,33 +72,32 @@ object anon {
     }
   }
   
-  @js.native
   trait BeforeInjection extends StObject {
     
-    var afterInjection: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var afterInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var beforeInjection: Requireable[js.Function1[/* repeated */ _, _]] = js.native
+    var beforeInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]
     
-    var evalScripts: Requireable[String] = js.native
+    var evalScripts: Requireable[String]
     
-    var fallback: Requireable[String | js.Object] = js.native
+    var fallback: Requireable[String | js.Object]
     
-    var loading: Requireable[String | js.Object] = js.native
+    var loading: Requireable[String | js.Object]
     
-    var renumerateIRIElements: Requireable[Boolean] = js.native
+    var renumerateIRIElements: Requireable[Boolean]
     
-    var src: Validator[String] = js.native
+    var src: Validator[String]
     
-    var useRequestCache: Requireable[Boolean] = js.native
+    var useRequestCache: Requireable[Boolean]
     
-    var wrapper: Requireable[String] = js.native
+    var wrapper: Requireable[String]
   }
   object BeforeInjection {
     
     @scala.inline
     def apply(
-      afterInjection: Requireable[js.Function1[/* repeated */ _, _]],
-      beforeInjection: Requireable[js.Function1[/* repeated */ _, _]],
+      afterInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
+      beforeInjection: Requireable[js.Function1[/* repeated */ js.Any, js.Any]],
       evalScripts: Requireable[String],
       fallback: Requireable[String | js.Object],
       loading: Requireable[String | js.Object],
@@ -117,10 +114,10 @@ object anon {
     implicit class BeforeInjectionMutableBuilder[Self <: BeforeInjection] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAfterInjection(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "afterInjection", value.asInstanceOf[js.Any])
+      def setAfterInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "afterInjection", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setBeforeInjection(value: Requireable[js.Function1[/* repeated */ _, _]]): Self = StObject.set(x, "beforeInjection", value.asInstanceOf[js.Any])
+      def setBeforeInjection(value: Requireable[js.Function1[/* repeated */ js.Any, js.Any]]): Self = StObject.set(x, "beforeInjection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEvalScripts(value: Requireable[String]): Self = StObject.set(x, "evalScripts", value.asInstanceOf[js.Any])
@@ -145,12 +142,11 @@ object anon {
     }
   }
   
-  @js.native
   trait HasError extends StObject {
     
-    var hasError: Boolean = js.native
+    var hasError: Boolean
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
   }
   object HasError {
     

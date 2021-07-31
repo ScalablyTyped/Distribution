@@ -2,33 +2,31 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEventProvider extends StObject {
   
-  def assignEvents(): Unit = js.native
+  def assignEvents(): Unit
   
-  def assignGridEventHandlers(): Unit = js.native
+  def assignGridEventHandlers(): Unit
   
-  var colToMove: IColumn = js.native
+  var colToMove: IColumn
   
-  def dragOver(event: js.Any): Unit = js.native
+  def dragOver(event: js.Any): Unit
   
-  def dragStart(event: js.Any): Unit = js.native
+  def dragStart(event: js.Any): Unit
   
-  var groupToMove: js.Any = js.native
+  var groupToMove: js.Any
   
-  def onGroupDrop(event: js.Any): Unit = js.native
+  def onGroupDrop(event: js.Any): Unit
   
-  def onGroupMouseDown(event: js.Any): Unit = js.native
+  def onGroupMouseDown(event: js.Any): Unit
   
-  def onHeaderDrop(event: js.Any): Unit = js.native
+  def onHeaderDrop(event: js.Any): Unit
   
-  def onHeaderMouseDown(event: js.Any): Unit = js.native
+  def onHeaderMouseDown(event: js.Any): Unit
   
-  def setDraggables(): Unit = js.native
+  def setDraggables(): Unit
 }
 object IEventProvider {
   

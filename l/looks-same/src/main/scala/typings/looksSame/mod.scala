@@ -5,7 +5,6 @@ import typings.node.Buffer
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,12 +15,10 @@ object mod {
     * @param image2 The second image
     * @param callback Call when finish compare
     */
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: String, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: String, options: js.Object, callback: LooksSameCallback): Unit = js.native
+  @scala.inline
+  def apply(image1: String, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: String, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Compare two images with options
     * @param image1 The first image
@@ -29,111 +26,86 @@ object mod {
     * @param options The options passed to looksSame function
     * @param callback Call when finish compare
     */
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: BoundedImage, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: Buffer, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: String, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: String, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: String, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: BoundedImage, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: Buffer, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: BoundedImage, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: String, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: String, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: BoundedImage, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: Buffer, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = js.native
-  @JSImport("looks-same", JSImport.Namespace)
-  @js.native
-  def apply(image1: Buffer, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = js.native
+  @scala.inline
+  def apply(image1: String, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: String, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: String, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: String, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: String, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: String, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: String, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: BoundedImage, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: String, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: String, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: String, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: BoundedImage, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: BoundedImage, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: BoundedImage, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: Buffer, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: Buffer, options: js.Object, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(image1: Buffer, image2: Buffer, options: LooksSameOptions, callback: LooksSameCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(image1.asInstanceOf[js.Any], image2.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("looks-same", "colors")
+  @JSImport("looks-same", JSImport.Namespace)
   @js.native
-  def colors(color1: Color, color2: Color, options: Tolerance): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("looks-same", "createDiff")
-  @js.native
+  @scala.inline
+  def colors(color1: Color, color2: Color, options: Tolerance): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("colors")(color1.asInstanceOf[js.Any], color2.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def createDiff(
     options: CreateDiffAsBufferOptions,
-    callback: js.Function2[/* error */ Error | Null, /* buffer */ Buffer, _]
-  ): Unit = js.native
-  @JSImport("looks-same", "createDiff")
-  @js.native
-  def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ Error | Null, _]): Unit = js.native
+    callback: js.Function2[/* error */ Error | Null, /* buffer */ Buffer, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def createDiff(options: CreateDiffOptions, callback: js.Function1[/* error */ Error | Null, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createDiff")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * bounded image
     */
-  @js.native
   trait BoundedImage extends StObject {
     
     /**
       * bounding coordinates
       */
-    var boundingBox: CoordBounds = js.native
+    var boundingBox: CoordBounds
     
     /**
       * image path or buffer
       */
-    var source: String | Buffer = js.native
+    var source: String | Buffer
   }
   object BoundedImage {
     
@@ -157,23 +129,22 @@ object mod {
   /**
     * Pass to looksSame.colors function
     */
-  @js.native
   trait Color extends StObject {
     
     /**
       * Blue
       */
-    var B: Double = js.native
+    var B: Double
     
     /**
       * Green
       */
-    var G: Double = js.native
+    var G: Double
     
     /**
       * Red
       */
-    var R: Double = js.native
+    var R: Double
   }
   object Color {
     
@@ -200,28 +171,27 @@ object mod {
   /**
     * coordinate bounds
     */
-  @js.native
   trait CoordBounds extends StObject {
     
     /**
       * Y-coordinate of bottom right corner
       */
-    var bottom: Double = js.native
+    var bottom: Double
     
     /**
       * X-coordinate of upper left corner
       */
-    var left: Double = js.native
+    var left: Double
     
     /**
       * X-coordinate of bottom right corner
       */
-    var right: Double = js.native
+    var right: Double
     
     /**
       * Y-coordinate of upper left corner
       */
-    var top: Double = js.native
+    var top: Double
   }
   object CoordBounds {
     
@@ -251,49 +221,48 @@ object mod {
   /**
     * The options passed to looksSame.createDiff function without diff
     */
-  @js.native
   trait CreateDiffAsBufferOptions extends StObject {
     
     /**
       * makes the search algorithm of the antialiasing less strict
       */
-    var antialiasingTolerance: js.UndefOr[Double] = js.native
+    var antialiasingTolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * The current image
       */
-    var current: String | Buffer | BoundedImage = js.native
+    var current: String | Buffer | BoundedImage
     
     /**
       * Color to highlight the differences
       * e.g. '#ff00ff'
       */
-    var highlightColor: String = js.native
+    var highlightColor: String
     
     /**
       * Ability to ignore antialiasing
       */
-    var ignoreAntialiasing: js.UndefOr[Boolean] = js.native
+    var ignoreAntialiasing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Ability to ignore text caret
       */
-    var ignoreCaret: js.UndefOr[Boolean] = js.native
+    var ignoreCaret: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The baseline image
       */
-    var reference: String | Buffer | BoundedImage = js.native
+    var reference: String | Buffer | BoundedImage
     
     /**
       * strict comparsion
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ΔE value that will be treated as error in non-strict mode
       */
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
   }
   object CreateDiffAsBufferOptions {
     
@@ -354,13 +323,14 @@ object mod {
   /**
     * The options passed to looksSame.createDiff function
     */
-  @js.native
-  trait CreateDiffOptions extends CreateDiffAsBufferOptions {
+  trait CreateDiffOptions
+    extends StObject
+       with CreateDiffAsBufferOptions {
     
     /**
       * The diff image path to store
       */
-    var diff: String = js.native
+    var diff: String
   }
   object CreateDiffOptions {
     
@@ -388,7 +358,6 @@ object mod {
   /**
     * The options passed to looksSame function
     */
-  @js.native
   trait LooksSameOptions extends StObject {
     
     /**
@@ -399,54 +368,54 @@ object mod {
       *
       * We recommend that you don't increase this value above 10. If you need to increase more than 10 then this is definitely not antialiasing.
       */
-    var antialiasingTolerance: js.UndefOr[Double] = js.native
+    var antialiasingTolerance: js.UndefOr[Double] = js.undefined
     
     /**
       * Radius for every diff cluster
       */
-    var clustersSize: js.UndefOr[Double] = js.native
+    var clustersSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Some images has difference while comparing because of antialiasing.
       * These diffs will be ignored by default. You can use ignoreAntialiasing option with false value to disable ignoring such diffs.
       * In that way antialiased pixels will be marked as diffs.
       */
-    var ignoreAntialiasing: js.UndefOr[Boolean] = js.native
+    var ignoreAntialiasing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Text caret in text input elements it is a pain for visual regression tasks, because it is always blinks.
       * These diffs will be ignored by default. You can use `ignoreCaret` option with `false` value to disable ignoring such diffs.
       * In that way text caret will be marked as diffs.
       */
-    var ignoreCaret: js.UndefOr[Boolean] = js.native
+    var ignoreCaret: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Some devices can have different proportion between physical and logical screen resolutions also known as pixel ratio.
       * Default value for this proportion is 1.
       * This param also affects the comparison result, so it can be set manually with pixelRatio option.
       */
-    var pixelRatio: js.UndefOr[Double] = js.native
+    var pixelRatio: js.UndefOr[Double] = js.undefined
     
     /**
       * Responsible for diff bounds clustering
       */
-    var shouldCluster: js.UndefOr[Boolean] = js.native
+    var shouldCluster: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Responsible for diff area which will be returned  when comparing images.
       * Diff bounds will contain the whole diff if stopOnFirstFail is false and only first diff pixel - otherwise.
       */
-    var stopOnFirstFail: js.UndefOr[Boolean] = js.native
+    var stopOnFirstFail: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default, it will detect only noticeable differences. If you wish to detect any difference, use strict options.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * You can also adjust the ΔE value that will be treated as error in non-strict mode.
       */
-    var tolerance: js.UndefOr[Double] = js.native
+    var tolerance: js.UndefOr[Double] = js.undefined
   }
   object LooksSameOptions {
     
@@ -518,23 +487,22 @@ object mod {
   /**
     * The result obtained from the function.
   */
-  @js.native
   trait LooksSameResult extends StObject {
     
     /**
       * diff bounds for not equal images
       */
-    var diffBounds: js.UndefOr[CoordBounds] = js.native
+    var diffBounds: js.UndefOr[CoordBounds] = js.undefined
     
     /**
       * diff clusters for not equal images
       */
-    var diffClusters: js.UndefOr[js.Array[CoordBounds]] = js.native
+    var diffClusters: js.UndefOr[js.Array[CoordBounds]] = js.undefined
     
     /**
       * true if images are equal, false - otherwise
       */
-    var equal: js.UndefOr[Boolean] = js.native
+    var equal: js.UndefOr[Boolean] = js.undefined
   }
   object LooksSameResult {
     

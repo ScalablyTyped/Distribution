@@ -6,15 +6,13 @@ import typings.broccoliNodeApi.broccoliNodeApiStrings.source
 import typings.broccoliNodeApi.broccoliNodeApiStrings.transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @js.native
   trait BuildChangeObject extends StObject {
     
-    var changedNodes: js.Array[Boolean] = js.native
+    var changedNodes: js.Array[Boolean]
   }
   object BuildChangeObject {
     
@@ -42,15 +40,15 @@ object mod {
     def build(buildChangeObject: BuildChangeObject): js.Promise[Unit] | Unit = js.native
   }
   
-  @js.native
   trait FeatureSet
-    extends /* feature */ StringDictionary[js.UndefOr[Boolean]] {
+    extends StObject
+       with /* feature */ StringDictionary[js.UndefOr[Boolean]] {
     
-    var needsCacheFlag: js.UndefOr[Boolean] = js.native
+    var needsCacheFlag: js.UndefOr[Boolean] = js.undefined
     
-    var persistentOutputFlag: js.UndefOr[Boolean] = js.native
+    var persistentOutputFlag: js.UndefOr[Boolean] = js.undefined
     
-    var sourceDirectories: js.UndefOr[Boolean] = js.native
+    var sourceDirectories: js.UndefOr[Boolean] = js.undefined
   }
   object FeatureSet {
     
@@ -100,19 +98,18 @@ object mod {
     def __broccoliGetInfo__ : typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__ = "__broccoliGetInfo__".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.__broccoliGetInfo__]
   }
   
-  @js.native
   trait NodeCommon[T /* <: NodeInfo */] extends StObject {
     
     /**
       The node's feature set, indicating the API version
       */
-    var __broccoliFeatures__ : FeatureSet = js.native
+    var __broccoliFeatures__ : FeatureSet
     
     /**
       A function to be called by the Builder, taking the Builder's feature set as
       an argument and returning a `NodeInfo` object
       */
-    def __broccoliGetInfo__(builderFeatures: FeatureSet): T = js.native
+    def __broccoliGetInfo__(builderFeatures: FeatureSet): T
   }
   object NodeCommon {
     
@@ -123,7 +120,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class NodeCommonMutableBuilder[Self <: NodeCommon[_], T /* <: NodeInfo */] (val x: Self with NodeCommon[T]) extends AnyVal {
+    implicit class NodeCommonMutableBuilder[Self <: NodeCommon[?], T /* <: NodeInfo */] (val x: Self & NodeCommon[T]) extends AnyVal {
       
       @scala.inline
       def set__broccoliFeatures__(value: FeatureSet): Self = StObject.set(x, "__broccoliFeatures__", value.asInstanceOf[js.Any])
@@ -176,32 +173,31 @@ object mod {
     def watched: typings.broccoliNodeApi.broccoliNodeApiStrings.watched = "watched".asInstanceOf[typings.broccoliNodeApi.broccoliNodeApiStrings.watched]
   }
   
-  @js.native
   trait NodeInfoCommon[T /* <: NodeType */] extends StObject {
     
     /**
       A description of this particular node. Useful to tell multiple instances of
       the same plugin apart during debugging. Example: `'vendor directories'`
       */
-    var annotation: js.UndefOr[String | Null] = js.native
+    var annotation: js.UndefOr[String | Null] = js.undefined
     
     /**
       A stack trace generated when the node constructor ran. Useful for telling
       where a given node was instantiated during debugging. This is `(new
       Error).stack` without the first line.
       */
-    var instantiationStack: String = js.native
+    var instantiationStack: String
     
     /**
       The name of the plugin that this node is an instance of. Example:
       `'BroccoliMergeTrees'`
       */
-    var name: String = js.native
+    var name: String
     
     /**
       Either `'transform'` or `'source'`, indicating the node type.
       */
-    var nodeType: T = js.native
+    var nodeType: T
   }
   object NodeInfoCommon {
     
@@ -212,7 +208,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class NodeInfoCommonMutableBuilder[Self <: NodeInfoCommon[_], T /* <: NodeType */] (val x: Self with NodeInfoCommon[T]) extends AnyVal {
+    implicit class NodeInfoCommonMutableBuilder[Self <: NodeInfoCommon[?], T /* <: NodeType */] (val x: Self & NodeInfoCommon[T]) extends AnyVal {
       
       @scala.inline
       def setAnnotation(value: String): Self = StObject.set(x, "annotation", value.asInstanceOf[js.Any])
@@ -234,12 +230,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NodeInfoMap extends StObject {
     
-    var source: SourceNodeInfo = js.native
+    var source: SourceNodeInfo
     
-    var transform: TransformNodeInfo = js.native
+    var transform: TransformNodeInfo
   }
   object NodeInfoMap {
     
@@ -260,12 +255,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NodeMap extends StObject {
     
-    var source: SourceNode = js.native
+    var source: SourceNode
     
-    var transform: TransformNode = js.native
+    var transform: TransformNode
   }
   object NodeMap {
     
@@ -294,13 +288,14 @@ object mod {
   
   type SourceNode = NodeCommon[SourceNodeInfo]
   
-  @js.native
-  trait SourceNodeInfo extends NodeInfoCommon[source] {
+  trait SourceNodeInfo
+    extends StObject
+       with NodeInfoCommon[source] {
     
     /**
       A path to an existing directory on disk, relative to the current working directory.
       */
-    var sourceDirectory: String = js.native
+    var sourceDirectory: String
     
     /**
       If false, changed files in the sourceDirectory will not trigger rebuilds
@@ -308,19 +303,13 @@ object mod {
       instructs the Broccoli file system watcher to watch the sourceDirectory
       recursively and trigger a rebuild whenever a file changes.
       */
-    var watched: Boolean = js.native
+    var watched: Boolean
   }
   object SourceNodeInfo {
     
     @scala.inline
-    def apply(
-      instantiationStack: String,
-      name: String,
-      nodeType: source,
-      sourceDirectory: String,
-      watched: Boolean
-    ): SourceNodeInfo = {
-      val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], sourceDirectory = sourceDirectory.asInstanceOf[js.Any], watched = watched.asInstanceOf[js.Any])
+    def apply(instantiationStack: String, name: String, sourceDirectory: String, watched: Boolean): SourceNodeInfo = {
+      val __obj = js.Dynamic.literal(instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nodeType = "source", sourceDirectory = sourceDirectory.asInstanceOf[js.Any], watched = watched.asInstanceOf[js.Any])
       __obj.asInstanceOf[SourceNodeInfo]
     }
     
@@ -337,8 +326,9 @@ object mod {
   
   type TransformNode = NodeCommon[TransformNodeInfo]
   
-  @js.native
-  trait TransformNodeInfo extends NodeInfoCommon[transform] {
+  trait TransformNodeInfo
+    extends StObject
+       with NodeInfoCommon[transform] {
     
     /**
       The Builder will call this function once after it has called `setup`. This
@@ -357,25 +347,25 @@ object mod {
       that is resolved on completion of the asynchronous work, or rejected if
       there is an error. Return values other than promises are ignored.
       */
-    def getCallbackObject(): CallbackObject = js.native
+    def getCallbackObject(): CallbackObject
     
     /**
       Zero or more Broccoli nodes to be used as input to this node.
       */
-    var inputNodes: js.Array[InputNode] = js.native
+    var inputNodes: js.Array[InputNode]
     
     /**
       If false, a cache directory will not be created. If true, a cache directory
       will be created and its path will be available as this.cachePath.
       */
-    var needsCache: Boolean = js.native
+    var needsCache: Boolean
     
     /**
       If false, then between rebuilds, the Builder will delete the outputPath
       directory recursively and recreate it as an empty directory. If true,
       the Builder will do nothing.
       */
-    var persistentOutput: Boolean = js.native
+    var persistentOutput: Boolean
     
     /**
       The `Builder` will call this function once before the first build. This
@@ -393,19 +383,19 @@ object mod {
       If a `cachePath` is not needed/desired, a plugin can opt-out of its creation
       via the `needsCache` flag metioned below.
       */
-    def setup(features: FeatureSet, options: CachePath): Unit = js.native
+    def setup(features: FeatureSet, options: CachePath): Unit
     
     /**
       If true, a change object will be passed to the build method which contains
       information about which input has changed since the last build. Defaults to false.
       */
-    var trackInputChanges: Boolean = js.native
+    var trackInputChanges: Boolean
     
     /**
       If true, memoization will not be applied and the build method will always be 
       called regardless if the inputNodes have changed. Defaults to false.
       */
-    var volatile: Boolean = js.native
+    var volatile: Boolean
   }
   object TransformNodeInfo {
     
@@ -416,13 +406,12 @@ object mod {
       instantiationStack: String,
       name: String,
       needsCache: Boolean,
-      nodeType: transform,
       persistentOutput: Boolean,
       setup: (FeatureSet, CachePath) => Unit,
       trackInputChanges: Boolean,
       volatile: Boolean
     ): TransformNodeInfo = {
-      val __obj = js.Dynamic.literal(getCallbackObject = js.Any.fromFunction0(getCallbackObject), inputNodes = inputNodes.asInstanceOf[js.Any], instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsCache = needsCache.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], persistentOutput = persistentOutput.asInstanceOf[js.Any], setup = js.Any.fromFunction2(setup), trackInputChanges = trackInputChanges.asInstanceOf[js.Any], volatile = volatile.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(getCallbackObject = js.Any.fromFunction0(getCallbackObject), inputNodes = inputNodes.asInstanceOf[js.Any], instantiationStack = instantiationStack.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], needsCache = needsCache.asInstanceOf[js.Any], nodeType = "transform", persistentOutput = persistentOutput.asInstanceOf[js.Any], setup = js.Any.fromFunction2(setup), trackInputChanges = trackInputChanges.asInstanceOf[js.Any], volatile = volatile.asInstanceOf[js.Any])
       __obj.asInstanceOf[TransformNodeInfo]
     }
     

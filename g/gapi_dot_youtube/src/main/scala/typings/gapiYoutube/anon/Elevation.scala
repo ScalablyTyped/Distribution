@@ -2,26 +2,24 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Elevation extends StObject {
   
   /**
     * Altitude above the WGS 84 reference ellipsoid, in meters.
     */
-  var elevation: Double = js.native
+  var elevation: Double
   
   /**
     * Latitude in degrees.
     */
-  var latitude: Double = js.native
+  var latitude: Double
   
   /**
     * Longitude in degrees.
     */
-  var longitude: Double = js.native
+  var longitude: Double
 }
 object Elevation {
   

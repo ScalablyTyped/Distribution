@@ -2,35 +2,35 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GalleryImage extends GalleryItem {
+trait GalleryImage
+  extends StObject
+     with GalleryItem {
   
-  var animated: Boolean = js.native
+  var animated: Boolean
   
-  var bandwidth: Double = js.native
+  var bandwidth: Double
   
-  var deletehash: js.UndefOr[String] = js.native
+  var deletehash: js.UndefOr[String] = js.undefined
   
-  var gifv: js.UndefOr[String] = js.native
+  var gifv: js.UndefOr[String] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var looping: js.UndefOr[Boolean] = js.native
+  var looping: js.UndefOr[Boolean] = js.undefined
   
-  var mp4: js.UndefOr[String] = js.native
+  var mp4: js.UndefOr[String] = js.undefined
   
-  var section: String = js.native
+  var section: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var webm: js.UndefOr[String] = js.native
+  var webm: js.UndefOr[String] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object GalleryImage {
   

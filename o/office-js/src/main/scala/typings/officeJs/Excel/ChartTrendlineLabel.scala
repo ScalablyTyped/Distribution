@@ -15,7 +15,6 @@ import typings.officeJs.officeJsStrings.Right
 import typings.officeJs.officeJsStrings.Top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.8]
   */
 @js.native
-trait ChartTrendlineLabel extends ClientObject {
+trait ChartTrendlineLabel
+  extends StObject
+     with ClientObject {
   
   /**
     *

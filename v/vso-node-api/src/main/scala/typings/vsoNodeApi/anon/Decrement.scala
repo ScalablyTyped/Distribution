@@ -2,21 +2,19 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Decrement extends StObject {
   
-  var decrement: scala.Double = js.native
+  var decrement: scala.Double
   
-  var delete: scala.Double = js.native
+  var delete: scala.Double
   
-  var increment: scala.Double = js.native
+  var increment: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var set: scala.Double = js.native
+  var set: scala.Double
 }
 object Decrement {
   

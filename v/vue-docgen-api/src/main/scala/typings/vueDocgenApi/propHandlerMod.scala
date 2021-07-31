@@ -7,42 +7,39 @@ import typings.babelTypes.mod.TSType
 import typings.vueInbrowserCompilerUtils.typesMod.PropDescriptor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propHandlerMod {
   
-  @JSImport("vue-docgen-api/dist/script-handlers/propHandler", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/script-handlers/propHandler", JSImport.Namespace)
   @js.native
-  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[_, _]): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vue-docgen-api/dist/script-handlers/propHandler", "describeDefault")
-  @js.native
+  @scala.inline
+  def default(documentation: typings.vueDocgenApi.documentationMod.default, path: NodePath[js.Any, js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(documentation.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
+  @scala.inline
   def describeDefault(
-    propPropertiesPath: js.Array[NodePath[ObjectProperty_ | ObjectMethod_, _]],
+    propPropertiesPath: js.Array[NodePath[ObjectProperty_ | ObjectMethod_, js.Any]],
     propDescriptor: PropDescriptor,
     propType: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeDefault")(propPropertiesPath.asInstanceOf[js.Any], propDescriptor.asInstanceOf[js.Any], propType.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vue-docgen-api/dist/script-handlers/propHandler", "describeRequired")
-  @js.native
+  @scala.inline
   def describeRequired(
-    propPropertiesPath: js.Array[NodePath[ObjectProperty_ | ObjectMethod_, _]],
+    propPropertiesPath: js.Array[NodePath[ObjectProperty_ | ObjectMethod_, js.Any]],
     propDescriptor: PropDescriptor
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeRequired")(propPropertiesPath.asInstanceOf[js.Any], propDescriptor.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vue-docgen-api/dist/script-handlers/propHandler", "describeType")
-  @js.native
+  @scala.inline
   def describeType(
-    propPropertiesPath: js.Array[NodePath[ObjectProperty_ | ObjectMethod_, _]],
+    propPropertiesPath: js.Array[NodePath[ObjectProperty_ | ObjectMethod_, js.Any]],
     propDescriptor: PropDescriptor
-  ): js.UndefOr[String] = js.native
+  ): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("describeType")(propPropertiesPath.asInstanceOf[js.Any], propDescriptor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("vue-docgen-api/dist/script-handlers/propHandler", "extractValuesFromTags")
-  @js.native
-  def extractValuesFromTags(propDescriptor: PropDescriptor): Unit = js.native
+  @scala.inline
+  def extractValuesFromTags(propDescriptor: PropDescriptor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("extractValuesFromTags")(propDescriptor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vue-docgen-api/dist/script-handlers/propHandler", "getValuesFromTypeAnnotation")
-  @js.native
-  def getValuesFromTypeAnnotation(`type`: TSType): js.UndefOr[js.Array[String]] = js.native
+  @scala.inline
+  def getValuesFromTypeAnnotation(`type`: TSType): js.UndefOr[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getValuesFromTypeAnnotation")(`type`.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[js.Array[String]]]
 }

@@ -2,40 +2,108 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMsoChartFormat extends StObject {
   
-  def Adjustments(Index: Double): Double = js.native
+  def Adjustments(Index: Double): Double
   @JSName("Adjustments")
-  val Adjustments_Original: Adjustments = js.native
+  val Adjustments_Original: Adjustments
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var AutoShapeType: MsoAutoShapeType = js.native
+  var AutoShapeType: MsoAutoShapeType
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Fill: FillFormat = js.native
+  val Fill: FillFormat
   
-  val Glow: GlowFormat = js.native
+  val Glow: GlowFormat
   
-  val Line: LineFormat = js.native
+  val Line: LineFormat
   
   @JSName("Office.IMsoChartFormat_typekey")
-  var OfficeDotIMsoChartFormat_typekey: IMsoChartFormat = js.native
+  var OfficeDotIMsoChartFormat_typekey: IMsoChartFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val PictureFormat: typings.activexOffice.Office.PictureFormat = js.native
+  val PictureFormat: typings.activexOffice.Office.PictureFormat
   
-  val Shadow: ShadowFormat = js.native
+  val Shadow: ShadowFormat
   
-  val SoftEdge: SoftEdgeFormat = js.native
+  val SoftEdge: SoftEdgeFormat
   
-  val TextFrame2: typings.activexOffice.Office.TextFrame2 = js.native
+  val TextFrame2: typings.activexOffice.Office.TextFrame2
   
-  val ThreeD: ThreeDFormat = js.native
+  val ThreeD: ThreeDFormat
+}
+object IMsoChartFormat {
+  
+  @scala.inline
+  def apply(
+    Adjustments: Adjustments,
+    Application: js.Any,
+    AutoShapeType: MsoAutoShapeType,
+    Creator: Double,
+    Fill: FillFormat,
+    Glow: GlowFormat,
+    Line: LineFormat,
+    OfficeDotIMsoChartFormat_typekey: IMsoChartFormat,
+    Parent: js.Any,
+    PictureFormat: PictureFormat,
+    Shadow: ShadowFormat,
+    SoftEdge: SoftEdgeFormat,
+    TextFrame2: TextFrame2,
+    ThreeD: ThreeDFormat
+  ): IMsoChartFormat = {
+    val __obj = js.Dynamic.literal(Adjustments = Adjustments.asInstanceOf[js.Any], Application = Application.asInstanceOf[js.Any], AutoShapeType = AutoShapeType.asInstanceOf[js.Any], Creator = Creator.asInstanceOf[js.Any], Fill = Fill.asInstanceOf[js.Any], Glow = Glow.asInstanceOf[js.Any], Line = Line.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any], PictureFormat = PictureFormat.asInstanceOf[js.Any], Shadow = Shadow.asInstanceOf[js.Any], SoftEdge = SoftEdge.asInstanceOf[js.Any], TextFrame2 = TextFrame2.asInstanceOf[js.Any], ThreeD = ThreeD.asInstanceOf[js.Any])
+    __obj.updateDynamic("Office.IMsoChartFormat_typekey")(OfficeDotIMsoChartFormat_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[IMsoChartFormat]
+  }
+  
+  @scala.inline
+  implicit class IMsoChartFormatMutableBuilder[Self <: IMsoChartFormat] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAdjustments(value: Adjustments): Self = StObject.set(x, "Adjustments", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setApplication(value: js.Any): Self = StObject.set(x, "Application", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setAutoShapeType(value: MsoAutoShapeType): Self = StObject.set(x, "AutoShapeType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCreator(value: Double): Self = StObject.set(x, "Creator", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFill(value: FillFormat): Self = StObject.set(x, "Fill", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGlow(value: GlowFormat): Self = StObject.set(x, "Glow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLine(value: LineFormat): Self = StObject.set(x, "Line", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOfficeDotIMsoChartFormat_typekey(value: IMsoChartFormat): Self = StObject.set(x, "Office.IMsoChartFormat_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPictureFormat(value: PictureFormat): Self = StObject.set(x, "PictureFormat", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setShadow(value: ShadowFormat): Self = StObject.set(x, "Shadow", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSoftEdge(value: SoftEdgeFormat): Self = StObject.set(x, "SoftEdge", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTextFrame2(value: TextFrame2): Self = StObject.set(x, "TextFrame2", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setThreeD(value: ThreeDFormat): Self = StObject.set(x, "ThreeD", value.asInstanceOf[js.Any])
+  }
 }

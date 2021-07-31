@@ -6,7 +6,6 @@ import typings.antdMobile.paginationMod.PaginationProps
 import typings.antdMobile.paginationMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile", "Pagination")

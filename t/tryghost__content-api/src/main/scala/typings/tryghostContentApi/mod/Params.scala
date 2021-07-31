@@ -2,25 +2,23 @@ package typings.tryghostContentApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Params extends StObject {
   
-  var fields: js.UndefOr[ArrayOrValue[FieldParam]] = js.native
+  var fields: js.UndefOr[ArrayOrValue[FieldParam]] = js.undefined
   
-  var filter: js.UndefOr[ArrayOrValue[FilterParam]] = js.native
+  var filter: js.UndefOr[ArrayOrValue[FilterParam]] = js.undefined
   
-  var formats: js.UndefOr[ArrayOrValue[FormatParam]] = js.native
+  var formats: js.UndefOr[ArrayOrValue[FormatParam]] = js.undefined
   
-  var include: js.UndefOr[ArrayOrValue[IncludeParam]] = js.native
+  var include: js.UndefOr[ArrayOrValue[IncludeParam]] = js.undefined
   
-  var limit: js.UndefOr[ArrayOrValue[LimitParam]] = js.native
+  var limit: js.UndefOr[ArrayOrValue[LimitParam]] = js.undefined
   
-  var order: js.UndefOr[ArrayOrValue[OrderParam]] = js.native
+  var order: js.UndefOr[ArrayOrValue[OrderParam]] = js.undefined
   
-  var page: js.UndefOr[ArrayOrValue[PageParam]] = js.native
+  var page: js.UndefOr[ArrayOrValue[PageParam]] = js.undefined
 }
 object Params {
   

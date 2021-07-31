@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1ProductCatalogItem extends StObject {
   
   /** Optional. The available quantity of the item. */
-  var availableQuantity: js.UndefOr[String] = js.native
+  var availableQuantity: js.UndefOr[String] = js.undefined
   
   /** Optional. Canonical URL directly linking to the item detail page with a length limit of 5 KiB.. */
-  var canonicalProductUri: js.UndefOr[String] = js.native
+  var canonicalProductUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A map to pass the costs associated with the product. For example: {"manufacturing": 45.5} The profit of selling this item is computed like so: * If 'exactPrice' is
@@ -22,23 +20,23 @@ trait GoogleCloudRecommendationengineV1beta1ProductCatalogItem extends StObject 
   var costs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Optional. Only required if the price is set. Currency code for price/costs. Use three-character ISO-4217 code. */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /** Optional. The exact product price. */
-  var exactPrice: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice] = js.native
+  var exactPrice: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductCatalogItemExactPrice] = js.undefined
   
   /** Optional. Product images for the catalog item. */
-  var images: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1Image]] = js.native
+  var images: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1Image]] = js.undefined
   
   /** Optional. The product price range. */
-  var priceRange: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange] = js.native
+  var priceRange: js.UndefOr[GoogleCloudRecommendationengineV1beta1ProductCatalogItemPriceRange] = js.undefined
   
   /** Optional. Online stock state of the catalog item. Default is `IN_STOCK`. */
-  var stockState: js.UndefOr[String] = js.native
+  var stockState: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
   
@@ -67,7 +65,7 @@ object GoogleCloudRecommendationengineV1beta1ProductCatalogItem {
     def setCosts(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1ProductCatalogItem & TopLevel[js.Any]
     ): Self = StObject.set(x, "costs", value.asInstanceOf[js.Any])
     
     @scala.inline

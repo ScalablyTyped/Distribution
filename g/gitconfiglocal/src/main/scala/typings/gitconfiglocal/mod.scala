@@ -5,24 +5,24 @@ import typings.gitconfiglocal.gitconfiglocalBooleans.`false`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(dir: String, cb: callback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(dir: String, options: Options, cb: callback): Unit = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("gitconfiglocal", JSImport.Namespace)
   @js.native
-  def apply(dir: String, cb: callback): Unit = js.native
-  @JSImport("gitconfiglocal", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, options: Options, cb: callback): Unit = js.native
+  val ^ : js.Any = js.native
   
   type GitConfig = StringDictionary[js.Any]
   
-  @js.native
   trait Options extends StObject {
     
-    var gitDir: js.UndefOr[String] = js.native
+    var gitDir: js.UndefOr[String] = js.undefined
   }
   object Options {
     

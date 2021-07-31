@@ -10,21 +10,19 @@ import typings.octokitTypes.octokitTypesStrings.commit
 import typings.octokitTypes.octokitTypesStrings.tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitCreateTreeParamsTree extends StObject {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[`100644` | `100755` | `040000` | `160000` | `120000`] = js.native
+  var mode: js.UndefOr[`100644` | `100755` | `040000` | `160000` | `120000`] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var sha: js.UndefOr[String | Null] = js.native
+  var sha: js.UndefOr[String | Null] = js.undefined
   
-  var `type`: js.UndefOr[blob | tree | commit] = js.native
+  var `type`: js.UndefOr[blob | tree | commit] = js.undefined
 }
 object GitCreateTreeParamsTree {
   

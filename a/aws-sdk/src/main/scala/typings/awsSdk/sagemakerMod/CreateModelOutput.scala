@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateModelOutput extends StObject {
   
   /**
     * The ARN of the model created in Amazon SageMaker.
     */
-  var ModelArn: typings.awsSdk.sagemakerMod.ModelArn = js.native
+  var ModelArn: typings.awsSdk.sagemakerMod.ModelArn
 }
 object CreateModelOutput {
   

@@ -7,137 +7,135 @@ import typings.std.Date
 import typings.vis.anon.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineOptions extends StObject {
   
-  var align: js.UndefOr[TimelineAlignType] = js.native
+  var align: js.UndefOr[TimelineAlignType] = js.undefined
   
-  var autoResize: js.UndefOr[Boolean] = js.native
+  var autoResize: js.UndefOr[Boolean] = js.undefined
   
-  var clickToUse: js.UndefOr[Boolean] = js.native
+  var clickToUse: js.UndefOr[Boolean] = js.undefined
   
-  var configure: js.UndefOr[TimelineOptionsConfigureType] = js.native
+  var configure: js.UndefOr[TimelineOptionsConfigureType] = js.undefined
   
-  var dataAttributes: js.UndefOr[TimelineOptionsDataAttributesType] = js.native
+  var dataAttributes: js.UndefOr[TimelineOptionsDataAttributesType] = js.undefined
   
-  var editable: js.UndefOr[TimelineOptionsEditableType] = js.native
+  var editable: js.UndefOr[TimelineOptionsEditableType] = js.undefined
   
-  var end: js.UndefOr[DateType] = js.native
+  var end: js.UndefOr[DateType] = js.undefined
   
-  var format: js.UndefOr[TimelineFormatOption] = js.native
+  var format: js.UndefOr[TimelineFormatOption] = js.undefined
   
-  var groupEditable: js.UndefOr[TimelineOptionsGroupEditableType] = js.native
+  var groupEditable: js.UndefOr[TimelineOptionsGroupEditableType] = js.undefined
   
-  var groupOrder: js.UndefOr[TimelineOptionsGroupOrderType] = js.native
+  var groupOrder: js.UndefOr[TimelineOptionsGroupOrderType] = js.undefined
   
-  var groupOrderSwap: js.UndefOr[TimelineOptionsGroupOrderSwapFunction] = js.native
+  var groupOrderSwap: js.UndefOr[TimelineOptionsGroupOrderSwapFunction] = js.undefined
   
-  var groupTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.native
+  var groupTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
   
-  var height: js.UndefOr[HeightWidthType] = js.native
+  var height: js.UndefOr[HeightWidthType] = js.undefined
   
-  var hiddenDates: js.UndefOr[TimelineOptionsHiddenDatesType] = js.native
+  var hiddenDates: js.UndefOr[TimelineOptionsHiddenDatesType] = js.undefined
   
-  var horizontalScroll: js.UndefOr[Boolean] = js.native
+  var horizontalScroll: js.UndefOr[Boolean] = js.undefined
   
-  var itemsAlwaysDraggable: js.UndefOr[TimelineOptionsItemsAlwaysDraggableType] = js.native
+  var itemsAlwaysDraggable: js.UndefOr[TimelineOptionsItemsAlwaysDraggableType] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var locales: js.UndefOr[Locales] = js.native
+  var locales: js.UndefOr[Locales] = js.undefined
   
-  var margin: js.UndefOr[TimelineOptionsMarginType] = js.native
+  var margin: js.UndefOr[TimelineOptionsMarginType] = js.undefined
   
-  var max: js.UndefOr[DateType] = js.native
+  var max: js.UndefOr[DateType] = js.undefined
   
-  var maxHeight: js.UndefOr[HeightWidthType] = js.native
+  var maxHeight: js.UndefOr[HeightWidthType] = js.undefined
   
-  var maxMinorChars: js.UndefOr[Double] = js.native
+  var maxMinorChars: js.UndefOr[Double] = js.undefined
   
-  var min: js.UndefOr[DateType] = js.native
+  var min: js.UndefOr[DateType] = js.undefined
   
-  var minHeight: js.UndefOr[HeightWidthType] = js.native
+  var minHeight: js.UndefOr[HeightWidthType] = js.undefined
   
-  var moment: js.UndefOr[MomentConstructor] = js.native
+  var moment: js.UndefOr[MomentConstructor] = js.undefined
   
-  var moveable: js.UndefOr[Boolean] = js.native
+  var moveable: js.UndefOr[Boolean] = js.undefined
   
-  var multiselect: js.UndefOr[Boolean] = js.native
+  var multiselect: js.UndefOr[Boolean] = js.undefined
   
-  var multiselectPerGroup: js.UndefOr[Boolean] = js.native
+  var multiselectPerGroup: js.UndefOr[Boolean] = js.undefined
   
-  var onAdd: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.native
+  var onAdd: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
   
-  var onAddGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.native
+  var onAddGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
   
-  var onInitialDrawComplete: js.UndefOr[js.Function0[Unit]] = js.native
+  var onInitialDrawComplete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onMove: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.native
+  var onMove: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
   
-  var onMoveGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.native
+  var onMoveGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
   
-  var onMoving: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.native
+  var onMoving: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
   
-  var onRemove: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.native
+  var onRemove: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
   
-  var onRemoveGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.native
+  var onRemoveGroup: js.UndefOr[TimelineOptionsGroupCallbackFunction] = js.undefined
   
-  var onUpdate: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.native
+  var onUpdate: js.UndefOr[TimelineOptionsItemCallbackFunction] = js.undefined
   
-  var order: js.UndefOr[TimelineOptionsComparisonFunction] = js.native
+  var order: js.UndefOr[TimelineOptionsComparisonFunction] = js.undefined
   
-  var orientation: js.UndefOr[TimelineOptionsOrientationType] = js.native
+  var orientation: js.UndefOr[TimelineOptionsOrientationType] = js.undefined
   
-  var rollingMode: js.UndefOr[TimelineRollingModeOption] = js.native
+  var rollingMode: js.UndefOr[TimelineRollingModeOption] = js.undefined
   
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
   
-  var selectable: js.UndefOr[Boolean] = js.native
+  var selectable: js.UndefOr[Boolean] = js.undefined
   
-  var showCurrentTime: js.UndefOr[Boolean] = js.native
+  var showCurrentTime: js.UndefOr[Boolean] = js.undefined
   
-  var showMajorLabels: js.UndefOr[Boolean] = js.native
+  var showMajorLabels: js.UndefOr[Boolean] = js.undefined
   
-  var showMinorLabels: js.UndefOr[Boolean] = js.native
+  var showMinorLabels: js.UndefOr[Boolean] = js.undefined
   
-  var showTooltips: js.UndefOr[Boolean] = js.native
+  var showTooltips: js.UndefOr[Boolean] = js.undefined
   
-  var snap: js.UndefOr[TimelineOptionsSnapFunction] = js.native
+  var snap: js.UndefOr[TimelineOptionsSnapFunction] = js.undefined
   
-  var stack: js.UndefOr[Boolean] = js.native
+  var stack: js.UndefOr[Boolean] = js.undefined
   
-  var stackSubgroups: js.UndefOr[Boolean] = js.native
+  var stackSubgroups: js.UndefOr[Boolean] = js.undefined
   
-  var start: js.UndefOr[DateType] = js.native
+  var start: js.UndefOr[DateType] = js.undefined
   
-  var template: js.UndefOr[TimelineOptionsTemplateFunction] = js.native
+  var template: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
   
-  var throttleRedraw: js.UndefOr[Double] = js.native
+  var throttleRedraw: js.UndefOr[Double] = js.undefined
   
-  var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.native
+  var timeAxis: js.UndefOr[TimelineTimeAxisOption] = js.undefined
   
-  var tooltip: js.UndefOr[TimelineTooltipOption] = js.native
+  var tooltip: js.UndefOr[TimelineTooltipOption] = js.undefined
   
-  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | Template] = js.native
+  var tooltipOnItemUpdateTime: js.UndefOr[Boolean | Template] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var verticalScroll: js.UndefOr[Boolean] = js.native
+  var verticalScroll: js.UndefOr[Boolean] = js.undefined
   
-  var visibleFrameTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.native
+  var visibleFrameTemplate: js.UndefOr[TimelineOptionsTemplateFunction] = js.undefined
   
-  var width: js.UndefOr[HeightWidthType] = js.native
+  var width: js.UndefOr[HeightWidthType] = js.undefined
   
-  var zoomKey: js.UndefOr[String] = js.native
+  var zoomKey: js.UndefOr[String] = js.undefined
   
-  var zoomMax: js.UndefOr[Double] = js.native
+  var zoomMax: js.UndefOr[Double] = js.undefined
   
-  var zoomMin: js.UndefOr[Double] = js.native
+  var zoomMin: js.UndefOr[Double] = js.undefined
   
-  var zoomable: js.UndefOr[Boolean] = js.native
+  var zoomable: js.UndefOr[Boolean] = js.undefined
 }
 object TimelineOptions {
   

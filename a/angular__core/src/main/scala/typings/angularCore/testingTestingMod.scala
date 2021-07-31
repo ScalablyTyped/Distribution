@@ -30,10 +30,13 @@ import typings.std.Error
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testingTestingMod {
+  
+  @JSImport("@angular/core/testing/testing", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/core/testing/testing", "ComponentFixture")
   @js.native
@@ -109,7 +112,7 @@ object testingTestingMod {
     /**
       * The ElementRef for the element at the root of the component.
       */
-    var elementRef: ElementRef[_] = js.native
+    var elementRef: ElementRef[js.Any] = js.native
     
     /**
       * Return whether the fixture is currently stable or has async tasks that have not been completed
@@ -127,7 +130,7 @@ object testingTestingMod {
     /**
       * Get a promise that resolves when the ui state is stable following animations.
       */
-    def whenRenderingDone(): js.Promise[_] = js.native
+    def whenRenderingDone(): js.Promise[js.Any] = js.native
     
     /**
       * Get a promise that resolves when the fixture is stable.
@@ -135,7 +138,7 @@ object testingTestingMod {
       * This can be used to resume testing after events have triggered asynchronous activity or
       * asynchronous change detection.
       */
-    def whenStable(): js.Promise[_] = js.native
+    def whenStable(): js.Promise[js.Any] = js.native
   }
   
   @JSImport("@angular/core/testing/testing", "ComponentFixtureAutoDetect")
@@ -155,13 +158,13 @@ object testingTestingMod {
     
     var _moduleDef: js.Any = js.native
     
-    def inject(tokens: js.Array[_], fn: js.Function): js.Function0[_] = js.native
+    def inject(tokens: js.Array[js.Any], fn: js.Function): js.Function0[js.Any] = js.native
   }
   
   @js.native
   trait TestBed extends StObject {
     
-    def compileComponents(): js.Promise[_] = js.native
+    def compileComponents(): js.Promise[js.Any] = js.native
     
     def configureCompiler(config: Providers): Unit = js.native
     
@@ -169,8 +172,8 @@ object testingTestingMod {
     
     def createComponent[T](component: Type[T]): ComponentFixture[T] = js.native
     
-    def execute(tokens: js.Array[_], fn: js.Function): js.Any = js.native
-    def execute(tokens: js.Array[_], fn: js.Function, context: js.Any): js.Any = js.native
+    def execute(tokens: js.Array[js.Any], fn: js.Function): js.Any = js.native
+    def execute(tokens: js.Array[js.Any], fn: js.Function, context: js.Any): js.Any = js.native
     
     /** @deprecated from v9.0.0 use TestBed.inject */
     def get(token: js.Any): js.Any = js.native
@@ -178,15 +181,19 @@ object testingTestingMod {
     def get[T](token: InjectionToken[T]): js.Any = js.native
     def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = js.native
     def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    def get[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): js.Any = js.native
     /** @deprecated from v9.0.0 use TestBed.inject */
     def get[T](token: Type[T]): js.Any = js.native
     def get[T](token: Type[T], notFoundValue: T): js.Any = js.native
     def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    def get[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): js.Any = js.native
     
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef): Unit = js.native
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): Unit = js.native
+    def initTestEnvironment(ngModule: js.Array[Type[js.Any]], platform: PlatformRef): Unit = js.native
+    def initTestEnvironment(
+      ngModule: js.Array[Type[js.Any]],
+      platform: PlatformRef,
+      aotSummaries: js.Function0[js.Array[js.Any]]
+    ): Unit = js.native
     /**
       * Initialize the environment for testing with a compiler factory, a PlatformRef, and an
       * angular module. These are common to every test in the suite.
@@ -198,24 +205,24 @@ object testingTestingMod {
       * Test modules and platforms for individual platforms are available from
       * '@angular/<platform_name>/testing'.
       */
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef): Unit = js.native
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): Unit = js.native
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef): Unit = js.native
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef, aotSummaries: js.Function0[js.Array[js.Any]]): Unit = js.native
     
     def inject[T](token: AbstractType[T]): T | Null = js.native
     def inject[T](token: AbstractType[T], notFoundValue: T): T = js.native
     def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    def inject[T](token: AbstractType[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
     def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: AbstractType[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
     def inject[T](token: InjectionToken[T]): T | Null = js.native
     def inject[T](token: InjectionToken[T], notFoundValue: T): T = js.native
     def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
     def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
     def inject[T](token: Type[T]): T | Null = js.native
     def inject[T](token: Type[T], notFoundValue: T): T = js.native
     def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    def inject[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
     def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
     @JSName("inject")
     def inject_T_T[T](token: AbstractType[T]): T = js.native
     @JSName("inject")
@@ -223,15 +230,15 @@ object testingTestingMod {
     @JSName("inject")
     def inject_T_T[T](token: Type[T]): T = js.native
     
-    var ngModule: Type[_] | js.Array[Type[_]] = js.native
+    var ngModule: Type[js.Any] | js.Array[Type[js.Any]] = js.native
     
-    def overrideComponent(component: Type[_], `override`: MetadataOverride[Component]): Unit = js.native
+    def overrideComponent(component: Type[js.Any], `override`: MetadataOverride[Component]): Unit = js.native
     
-    def overrideDirective(directive: Type[_], `override`: MetadataOverride[Directive]): Unit = js.native
+    def overrideDirective(directive: Type[js.Any], `override`: MetadataOverride[Directive]): Unit = js.native
     
-    def overrideModule(ngModule: Type[_], `override`: MetadataOverride[NgModule]): Unit = js.native
+    def overrideModule(ngModule: Type[js.Any], `override`: MetadataOverride[NgModule]): Unit = js.native
     
-    def overridePipe(pipe: Type[_], `override`: MetadataOverride[Pipe]): Unit = js.native
+    def overridePipe(pipe: Type[js.Any], `override`: MetadataOverride[Pipe]): Unit = js.native
     
     /**
       * Overwrites all providers for the given token with the given provider definition.
@@ -240,7 +247,7 @@ object testingTestingMod {
     def overrideProvider(token: js.Any, provider: UseFactory): Unit = js.native
     def overrideProvider(token: js.Any, provider: UseValue): Unit = js.native
     
-    def overrideTemplateUsingTestingModule(component: Type[_], template: String): Unit = js.native
+    def overrideTemplateUsingTestingModule(component: Type[js.Any], template: String): Unit = js.native
     
     var platform: PlatformRef = js.native
     
@@ -259,7 +266,8 @@ object testingTestingMod {
   @JSImport("@angular/core/testing/testing", "TestBed")
   @js.native
   class TestBedCls protected ()
-    extends typings.angularCore.testingTestingMod.TestBed {
+    extends StObject
+       with typings.angularCore.testingTestingMod.TestBed {
     def this(args: js.Any*) = this()
   }
   
@@ -270,68 +278,52 @@ object testingTestingMod {
     def insertRootElement(rootElementId: String): Unit = js.native
   }
   
-  @JSImport("@angular/core/testing/testing", "async")
-  @js.native
-  def async(fn: js.Function): js.Function1[/* done */ js.Any, _] = js.native
+  @scala.inline
+  def async(fn: js.Function): js.Function1[/* done */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("async")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* done */ js.Any, js.Any]]
   
   @JSImport("@angular/core/testing/testing", "__core_private_testing_placeholder__")
   @js.native
   val corePrivateTestingPlaceholder: /* "" */ String = js.native
   
-  @JSImport("@angular/core/testing/testing", "discardPeriodicTasks")
-  @js.native
-  def discardPeriodicTasks(): Unit = js.native
+  @scala.inline
+  def discardPeriodicTasks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("discardPeriodicTasks")().asInstanceOf[Unit]
   
-  @JSImport("@angular/core/testing/testing", "fakeAsync")
-  @js.native
-  def fakeAsync(fn: js.Function): js.Function1[/* repeated */ js.Any, _] = js.native
+  @scala.inline
+  def fakeAsync(fn: js.Function): js.Function1[/* repeated */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("fakeAsync")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* repeated */ js.Any, js.Any]]
   
-  @JSImport("@angular/core/testing/testing", "flush")
-  @js.native
-  def flush(): Double = js.native
-  @JSImport("@angular/core/testing/testing", "flush")
-  @js.native
-  def flush(maxTurns: Double): Double = js.native
+  @scala.inline
+  def flush(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")().asInstanceOf[Double]
+  @scala.inline
+  def flush(maxTurns: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(maxTurns.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@angular/core/testing/testing", "flushMicrotasks")
-  @js.native
-  def flushMicrotasks(): Unit = js.native
+  @scala.inline
+  def flushMicrotasks(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("flushMicrotasks")().asInstanceOf[Unit]
   
-  @JSImport("@angular/core/testing/testing", "getTestBed")
-  @js.native
-  def getTestBed(): typings.angularCore.testingTestingMod.TestBed = js.native
+  @scala.inline
+  def getTestBed(): typings.angularCore.testingTestingMod.TestBed = ^.asInstanceOf[js.Dynamic].applyDynamic("getTestBed")().asInstanceOf[typings.angularCore.testingTestingMod.TestBed]
   
-  @JSImport("@angular/core/testing/testing", "inject")
-  @js.native
-  def inject(tokens: js.Array[_], fn: js.Function): js.Function0[_] = js.native
+  @scala.inline
+  def inject(tokens: js.Array[js.Any], fn: js.Function): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(tokens.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
   
-  @JSImport("@angular/core/testing/testing", "resetFakeAsyncZone")
-  @js.native
-  def resetFakeAsyncZone(): Unit = js.native
+  @scala.inline
+  def resetFakeAsyncZone(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetFakeAsyncZone")().asInstanceOf[Unit]
   
-  @JSImport("@angular/core/testing/testing", "tick")
-  @js.native
-  def tick(): Unit = js.native
-  @JSImport("@angular/core/testing/testing", "tick")
-  @js.native
-  def tick(millis: js.UndefOr[scala.Nothing], tickOptions: ProcessNewMacroTasksSynchronously): Unit = js.native
-  @JSImport("@angular/core/testing/testing", "tick")
-  @js.native
-  def tick(millis: Double): Unit = js.native
-  @JSImport("@angular/core/testing/testing", "tick")
-  @js.native
-  def tick(millis: Double, tickOptions: ProcessNewMacroTasksSynchronously): Unit = js.native
+  @scala.inline
+  def tick(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tick")().asInstanceOf[Unit]
+  @scala.inline
+  def tick(millis: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("tick")(millis.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def tick(millis: Double, tickOptions: ProcessNewMacroTasksSynchronously): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(millis.asInstanceOf[js.Any], tickOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def tick(millis: Unit, tickOptions: ProcessNewMacroTasksSynchronously): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(millis.asInstanceOf[js.Any], tickOptions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@angular/core/testing/testing", "waitForAsync")
-  @js.native
-  def waitForAsync(fn: js.Function): js.Function1[/* done */ js.Any, _] = js.native
+  @scala.inline
+  def waitForAsync(fn: js.Function): js.Function1[/* done */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAsync")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* done */ js.Any, js.Any]]
   
-  @JSImport("@angular/core/testing/testing", "withModule")
-  @js.native
-  def withModule(moduleDef: TestModuleMetadata): InjectSetupWrapper = js.native
-  @JSImport("@angular/core/testing/testing", "withModule")
-  @js.native
-  def withModule(moduleDef: TestModuleMetadata, fn: js.Function): js.Function0[_] = js.native
+  @scala.inline
+  def withModule(moduleDef: TestModuleMetadata): InjectSetupWrapper = ^.asInstanceOf[js.Dynamic].applyDynamic("withModule")(moduleDef.asInstanceOf[js.Any]).asInstanceOf[InjectSetupWrapper]
+  @scala.inline
+  def withModule(moduleDef: TestModuleMetadata, fn: js.Function): js.Function0[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("withModule")(moduleDef.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Function0[js.Any]]
   
   @JSImport("@angular/core/testing/testing", "\u0275MetadataOverrider")
   @js.native
@@ -361,7 +353,7 @@ object testingTestingMod {
       * Returns the component type that is stored in the given error.
       * This can be used for errors created by compileModule...
       */
-    def getComponentFromError(error: Error): Type[_] | Null = js.native
+    def getComponentFromError(error: Error): Type[js.Any] | Null = js.native
     
     def injector: Injector = js.native
     
@@ -369,15 +361,15 @@ object testingTestingMod {
       * Allows to pass the compile summary from AOT compilation to the JIT compiler,
       * so that it can use the code generated by AOT.
       */
-    def loadAotSummaries(summaries: js.Function0[js.Array[_]]): Unit = js.native
+    def loadAotSummaries(summaries: js.Function0[js.Array[js.Any]]): Unit = js.native
     
-    def overrideComponent(component: Type[_], overrides: MetadataOverride[Component]): Unit = js.native
+    def overrideComponent(component: Type[js.Any], overrides: MetadataOverride[Component]): Unit = js.native
     
-    def overrideDirective(directive: Type[_], overrides: MetadataOverride[Directive]): Unit = js.native
+    def overrideDirective(directive: Type[js.Any], overrides: MetadataOverride[Directive]): Unit = js.native
     
-    def overrideModule(module: Type[_], overrides: MetadataOverride[NgModule]): Unit = js.native
+    def overrideModule(module: Type[js.Any], overrides: MetadataOverride[NgModule]): Unit = js.native
     
-    def overridePipe(directive: Type[_], overrides: MetadataOverride[Pipe]): Unit = js.native
+    def overridePipe(directive: Type[js.Any], overrides: MetadataOverride[Pipe]): Unit = js.native
   }
   
   @JSImport("@angular/core/testing/testing", "\u0275TestingCompilerFactory")
@@ -391,7 +383,8 @@ object testingTestingMod {
   @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a")
   @js.native
   class ɵangularPackagesCoreTestingTestingA ()
-    extends typings.angularCore.testingTestingMod.TestBed {
+    extends StObject
+       with typings.angularCore.testingTestingMod.TestBed {
     
     var _activeFixtures: js.Any = js.native
     
@@ -442,77 +435,69 @@ object testingTestingMod {
   /* static members */
   object ɵangularPackagesCoreTestingTestingA {
     
+    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Compile components with a `templateUrl` for the test's NgModule.
       * It is necessary to call this function
       * as fetching urls is asynchronous.
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.compileComponents")
-    @js.native
-    def compileComponents(): js.Promise[_] = js.native
+    @scala.inline
+    def compileComponents(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileComponents")().asInstanceOf[js.Promise[js.Any]]
     
     /**
       * Allows overriding default compiler providers and settings
       * which are defined in test_injector.js
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.configureCompiler")
-    @js.native
-    def configureCompiler(config: Providers): TestBedStatic = js.native
+    @scala.inline
+    def configureCompiler(config: Providers): TestBedStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("configureCompiler")(config.asInstanceOf[js.Any]).asInstanceOf[TestBedStatic]
     
     /**
       * Allows overriding default providers, directives, pipes, modules of the test injector,
       * which are defined in test_injector.js
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.configureTestingModule")
-    @js.native
-    def configureTestingModule(moduleDef: TestModuleMetadata): TestBedStatic = js.native
+    @scala.inline
+    def configureTestingModule(moduleDef: TestModuleMetadata): TestBedStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("configureTestingModule")(moduleDef.asInstanceOf[js.Any]).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.createComponent")
-    @js.native
-    def createComponent[T](component: Type[T]): ComponentFixture[T] = js.native
+    @scala.inline
+    def createComponent[T](component: Type[T]): ComponentFixture[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentFixture[T]]
     
     /**
       * @deprecated from v9.0.0 use TestBed.inject
       * @suppress {duplicate}
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get(token: js.Any): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: InjectionToken[T]): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    @scala.inline
+    def get(token: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def get(token: js.Any, notFoundValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     /** @deprecated from v9.0.0 use TestBed.inject */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: Type[T]): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: Type[T], notFoundValue: T): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.get")
-    @js.native
-    def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    @scala.inline
+    def get[T](token: Type[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: Type[T], notFoundValue: T): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef): ɵangularPackagesCoreTestingTestingA = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): ɵangularPackagesCoreTestingTestingA = js.native
+    @scala.inline
+    def initTestEnvironment(ngModule: js.Array[Type[js.Any]], platform: PlatformRef): ɵangularPackagesCoreTestingTestingA = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[ɵangularPackagesCoreTestingTestingA]
+    @scala.inline
+    def initTestEnvironment(
+      ngModule: js.Array[Type[js.Any]],
+      platform: PlatformRef,
+      aotSummaries: js.Function0[js.Array[js.Any]]
+    ): ɵangularPackagesCoreTestingTestingA = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], aotSummaries.asInstanceOf[js.Any])).asInstanceOf[ɵangularPackagesCoreTestingTestingA]
     /**
       * Initialize the environment for testing with a compiler factory, a PlatformRef, and an
       * angular module. These are common to every test in the suite.
@@ -524,99 +509,73 @@ object testingTestingMod {
       * Test modules and platforms for individual platforms are available from
       * '@angular/<platform_name>/testing'.
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef): ɵangularPackagesCoreTestingTestingA = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): ɵangularPackagesCoreTestingTestingA = js.native
+    @scala.inline
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef): ɵangularPackagesCoreTestingTestingA = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[ɵangularPackagesCoreTestingTestingA]
+    @scala.inline
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef, aotSummaries: js.Function0[js.Array[js.Any]]): ɵangularPackagesCoreTestingTestingA = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], aotSummaries.asInstanceOf[js.Any])).asInstanceOf[ɵangularPackagesCoreTestingTestingA]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: AbstractType[T]): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: T): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T]): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: T): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: Type[T]): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: T): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject_T_T[T](token: AbstractType[T]): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject_T_T[T](token: InjectionToken[T]): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.inject")
-    @js.native
-    def inject_T_T[T](token: Type[T]): T = js.native
+    @scala.inline
+    def inject[T](token: AbstractType[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: Unit, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: InjectionToken[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: Type[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overrideComponent")
-    @js.native
-    def overrideComponent(component: Type[_], `override`: MetadataOverride[Component]): TestBedStatic = js.native
+    @scala.inline
+    def inject_T_T[T](token: AbstractType[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def inject_T_T[T](token: InjectionToken[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def inject_T_T[T](token: Type[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overrideDirective")
-    @js.native
-    def overrideDirective(directive: Type[_], `override`: MetadataOverride[Directive]): TestBedStatic = js.native
+    @scala.inline
+    def overrideComponent(component: Type[js.Any], `override`: MetadataOverride[Component]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideComponent")(component.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overrideModule")
-    @js.native
-    def overrideModule(ngModule: Type[_], `override`: MetadataOverride[NgModule]): TestBedStatic = js.native
+    @scala.inline
+    def overrideDirective(directive: Type[js.Any], `override`: MetadataOverride[Directive]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideDirective")(directive.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overridePipe")
-    @js.native
-    def overridePipe(pipe: Type[_], `override`: MetadataOverride[Pipe]): TestBedStatic = js.native
+    @scala.inline
+    def overrideModule(ngModule: Type[js.Any], `override`: MetadataOverride[NgModule]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideModule")(ngModule.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
+    
+    @scala.inline
+    def overridePipe(pipe: Type[js.Any], `override`: MetadataOverride[Pipe]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overridePipe")(pipe.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
     /**
       * Overwrites all providers for the given token with the given provider definition.
       *
       * Note: This works for JIT and AOTed components as well.
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overrideProvider")
-    @js.native
-    def overrideProvider(token: js.Any, provider: Deps): TestBedStatic = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overrideProvider")
-    @js.native
-    def overrideProvider(token: js.Any, provider: UseValue): TestBedStatic = js.native
+    @scala.inline
+    def overrideProvider(token: js.Any, provider: Deps): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideProvider")(token.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
+    @scala.inline
+    def overrideProvider(token: js.Any, provider: UseValue): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideProvider")(token.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overrideTemplate")
-    @js.native
-    def overrideTemplate(component: Type[_], template: String): TestBedStatic = js.native
+    @scala.inline
+    def overrideTemplate(component: Type[js.Any], template: String): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideTemplate")(component.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
     /**
       * Overrides the template of the given component, compiling the template
@@ -624,26 +583,24 @@ object testingTestingMod {
       *
       * Note: This works for JIT and AOTed components as well.
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.overrideTemplateUsingTestingModule")
-    @js.native
-    def overrideTemplateUsingTestingModule(component: Type[_], template: String): TestBedStatic = js.native
+    @scala.inline
+    def overrideTemplateUsingTestingModule(component: Type[js.Any], template: String): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideTemplateUsingTestingModule")(component.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
     /**
       * Reset the providers for the test injector.
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.resetTestEnvironment")
-    @js.native
-    def resetTestEnvironment(): Unit = js.native
+    @scala.inline
+    def resetTestEnvironment(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTestEnvironment")().asInstanceOf[Unit]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_a.resetTestingModule")
-    @js.native
-    def resetTestingModule(): TestBedStatic = js.native
+    @scala.inline
+    def resetTestingModule(): TestBedStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTestingModule")().asInstanceOf[TestBedStatic]
   }
   
   @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b")
   @js.native
   class ɵangularPackagesCoreTestingTestingB ()
-    extends typings.angularCore.testingTestingMod.TestBed {
+    extends StObject
+       with typings.angularCore.testingTestingMod.TestBed {
     
     var _activeFixtures: js.Any = js.native
     
@@ -674,70 +631,62 @@ object testingTestingMod {
   /* static members */
   object ɵangularPackagesCoreTestingTestingB {
     
+    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Compile components with a `templateUrl` for the test's NgModule.
       * It is necessary to call this function
       * as fetching urls is asynchronous.
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.compileComponents")
-    @js.native
-    def compileComponents(): js.Promise[_] = js.native
+    @scala.inline
+    def compileComponents(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("compileComponents")().asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.configureCompiler")
-    @js.native
-    def configureCompiler(config: Providers): TestBedStatic = js.native
+    @scala.inline
+    def configureCompiler(config: Providers): TestBedStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("configureCompiler")(config.asInstanceOf[js.Any]).asInstanceOf[TestBedStatic]
     
     /**
       * Allows overriding default providers, directives, pipes, modules of the test injector,
       * which are defined in test_injector.js
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.configureTestingModule")
-    @js.native
-    def configureTestingModule(moduleDef: TestModuleMetadata): TestBedStatic = js.native
+    @scala.inline
+    def configureTestingModule(moduleDef: TestModuleMetadata): TestBedStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("configureTestingModule")(moduleDef.asInstanceOf[js.Any]).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.createComponent")
-    @js.native
-    def createComponent[T](component: Type[T]): ComponentFixture[T] = js.native
+    @scala.inline
+    def createComponent[T](component: Type[T]): ComponentFixture[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createComponent")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentFixture[T]]
     
     /** @deprecated from v9.0.0 use TestBed.inject */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get(token: js.Any): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get(token: js.Any, notFoundValue: js.Any): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: InjectionToken[T]): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    @scala.inline
+    def get(token: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def get(token: js.Any, notFoundValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     /** @deprecated from v9.0.0 use TestBed.inject */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: Type[T]): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: Type[T], notFoundValue: T): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.get")
-    @js.native
-    def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    @scala.inline
+    def get[T](token: Type[T]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: Type[T], notFoundValue: T): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def get[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): typings.angularCore.testingTestingMod.TestBed = js.native
+    @scala.inline
+    def initTestEnvironment(ngModule: js.Array[Type[js.Any]], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.testingTestingMod.TestBed]
+    @scala.inline
+    def initTestEnvironment(
+      ngModule: js.Array[Type[js.Any]],
+      platform: PlatformRef,
+      aotSummaries: js.Function0[js.Array[js.Any]]
+    ): typings.angularCore.testingTestingMod.TestBed = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], aotSummaries.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.testingTestingMod.TestBed]
     /**
       * Initialize the environment for testing with a compiler factory, a PlatformRef, and an
       * angular module. These are common to every test in the suite.
@@ -751,94 +700,68 @@ object testingTestingMod {
       *
       * @publicApi
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.initTestEnvironment")
-    @js.native
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): typings.angularCore.testingTestingMod.TestBed = js.native
+    @scala.inline
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.testingTestingMod.TestBed]
+    @scala.inline
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef, aotSummaries: js.Function0[js.Array[js.Any]]): typings.angularCore.testingTestingMod.TestBed = (^.asInstanceOf[js.Dynamic].applyDynamic("initTestEnvironment")(ngModule.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], aotSummaries.asInstanceOf[js.Any])).asInstanceOf[typings.angularCore.testingTestingMod.TestBed]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: AbstractType[T]): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: T): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T]): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: T): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: Type[T]): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: T): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject_T_T[T](token: AbstractType[T]): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject_T_T[T](token: InjectionToken[T]): T = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.inject")
-    @js.native
-    def inject_T_T[T](token: Type[T]): T = js.native
+    @scala.inline
+    def inject[T](token: AbstractType[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: AbstractType[T], notFoundValue: Unit, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: InjectionToken[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: Type[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: T): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+    @scala.inline
+    def inject[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): T = (^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any], notFoundValue.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[T]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overrideComponent")
-    @js.native
-    def overrideComponent(component: Type[_], `override`: MetadataOverride[Component]): TestBedStatic = js.native
+    @scala.inline
+    def inject_T_T[T](token: AbstractType[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def inject_T_T[T](token: InjectionToken[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
+    @scala.inline
+    def inject_T_T[T](token: Type[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("inject")(token.asInstanceOf[js.Any]).asInstanceOf[T]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overrideDirective")
-    @js.native
-    def overrideDirective(directive: Type[_], `override`: MetadataOverride[Directive]): TestBedStatic = js.native
+    @scala.inline
+    def overrideComponent(component: Type[js.Any], `override`: MetadataOverride[Component]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideComponent")(component.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overrideModule")
-    @js.native
-    def overrideModule(ngModule: Type[_], `override`: MetadataOverride[NgModule]): TestBedStatic = js.native
+    @scala.inline
+    def overrideDirective(directive: Type[js.Any], `override`: MetadataOverride[Directive]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideDirective")(directive.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overridePipe")
-    @js.native
-    def overridePipe(pipe: Type[_], `override`: MetadataOverride[Pipe]): TestBedStatic = js.native
+    @scala.inline
+    def overrideModule(ngModule: Type[js.Any], `override`: MetadataOverride[NgModule]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideModule")(ngModule.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overrideProvider")
-    @js.native
-    def overrideProvider(token: js.Any, provider: Deps): TestBedStatic = js.native
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overrideProvider")
-    @js.native
-    def overrideProvider(token: js.Any, provider: UseValue): TestBedStatic = js.native
+    @scala.inline
+    def overridePipe(pipe: Type[js.Any], `override`: MetadataOverride[Pipe]): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overridePipe")(pipe.asInstanceOf[js.Any], `override`.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overrideTemplate")
-    @js.native
-    def overrideTemplate(component: Type[_], template: String): TestBedStatic = js.native
+    @scala.inline
+    def overrideProvider(token: js.Any, provider: Deps): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideProvider")(token.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
+    @scala.inline
+    def overrideProvider(token: js.Any, provider: UseValue): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideProvider")(token.asInstanceOf[js.Any], provider.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
+    
+    @scala.inline
+    def overrideTemplate(component: Type[js.Any], template: String): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideTemplate")(component.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
     /**
       * Overrides the template of the given component, compiling the template
@@ -846,36 +769,31 @@ object testingTestingMod {
       *
       * Note: This works for JIT and AOTed components as well.
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.overrideTemplateUsingTestingModule")
-    @js.native
-    def overrideTemplateUsingTestingModule(component: Type[_], template: String): TestBedStatic = js.native
+    @scala.inline
+    def overrideTemplateUsingTestingModule(component: Type[js.Any], template: String): TestBedStatic = (^.asInstanceOf[js.Dynamic].applyDynamic("overrideTemplateUsingTestingModule")(component.asInstanceOf[js.Any], template.asInstanceOf[js.Any])).asInstanceOf[TestBedStatic]
     
     /**
       * Reset the providers for the test injector.
       *
       * @publicApi
       */
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.resetTestEnvironment")
-    @js.native
-    def resetTestEnvironment(): Unit = js.native
+    @scala.inline
+    def resetTestEnvironment(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTestEnvironment")().asInstanceOf[Unit]
     
-    @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_b.resetTestingModule")
-    @js.native
-    def resetTestingModule(): TestBedStatic = js.native
+    @scala.inline
+    def resetTestingModule(): TestBedStatic = ^.asInstanceOf[js.Dynamic].applyDynamic("resetTestingModule")().asInstanceOf[TestBedStatic]
   }
   
-  @JSImport("@angular/core/testing/testing", "\u0275angular_packages_core_testing_testing_c")
-  @js.native
-  def ɵangularPackagesCoreTestingTestingC(): ɵangularPackagesCoreTestingTestingB = js.native
+  @scala.inline
+  def ɵangularPackagesCoreTestingTestingC(): ɵangularPackagesCoreTestingTestingB = ^.asInstanceOf[js.Dynamic].applyDynamic("\u0275angular_packages_core_testing_testing_c")().asInstanceOf[ɵangularPackagesCoreTestingTestingB]
   
-  @js.native
   trait MetadataOverride[T] extends StObject {
     
-    var add: js.UndefOr[Partial[T]] = js.native
+    var add: js.UndefOr[Partial[T]] = js.undefined
     
-    var remove: js.UndefOr[Partial[T]] = js.native
+    var remove: js.UndefOr[Partial[T]] = js.undefined
     
-    var set: js.UndefOr[Partial[T]] = js.native
+    var set: js.UndefOr[Partial[T]] = js.undefined
   }
   object MetadataOverride {
     
@@ -886,7 +804,7 @@ object testingTestingMod {
     }
     
     @scala.inline
-    implicit class MetadataOverrideMutableBuilder[Self <: MetadataOverride[_], T] (val x: Self with MetadataOverride[T]) extends AnyVal {
+    implicit class MetadataOverrideMutableBuilder[Self <: MetadataOverride[?], T] (val x: Self & MetadataOverride[T]) extends AnyVal {
       
       @scala.inline
       def setAdd(value: Partial[T]): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
@@ -910,14 +828,15 @@ object testingTestingMod {
   
   @js.native
   trait TestBedStatic
-    extends Instantiable1[/* args (repeated) */ js.Any, typings.angularCore.testingTestingMod.TestBed] {
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, typings.angularCore.testingTestingMod.TestBed] {
     
     /**
       * Compile components with a `templateUrl` for the test's NgModule.
       * It is necessary to call this function
       * as fetching urls is asynchronous.
       */
-    def compileComponents(): js.Promise[_] = js.native
+    def compileComponents(): js.Promise[js.Any] = js.native
     
     /**
       * Allows overriding default compiler providers and settings
@@ -939,33 +858,37 @@ object testingTestingMod {
     def get[T](token: InjectionToken[T]): js.Any = js.native
     def get[T](token: InjectionToken[T], notFoundValue: T): js.Any = js.native
     def get[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    def get[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    def get[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): js.Any = js.native
     /** @deprecated from v9.0.0 use TestBed.inject */
     def get[T](token: Type[T]): js.Any = js.native
     def get[T](token: Type[T], notFoundValue: T): js.Any = js.native
     def get[T](token: Type[T], notFoundValue: T, flags: InjectFlags): js.Any = js.native
-    def get[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): js.Any = js.native
+    def get[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): js.Any = js.native
     
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = js.native
-    def initTestEnvironment(ngModule: js.Array[Type[_]], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): typings.angularCore.testingTestingMod.TestBed = js.native
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = js.native
-    def initTestEnvironment(ngModule: Type[_], platform: PlatformRef, aotSummaries: js.Function0[js.Array[_]]): typings.angularCore.testingTestingMod.TestBed = js.native
+    def initTestEnvironment(ngModule: js.Array[Type[js.Any]], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = js.native
+    def initTestEnvironment(
+      ngModule: js.Array[Type[js.Any]],
+      platform: PlatformRef,
+      aotSummaries: js.Function0[js.Array[js.Any]]
+    ): typings.angularCore.testingTestingMod.TestBed = js.native
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef): typings.angularCore.testingTestingMod.TestBed = js.native
+    def initTestEnvironment(ngModule: Type[js.Any], platform: PlatformRef, aotSummaries: js.Function0[js.Array[js.Any]]): typings.angularCore.testingTestingMod.TestBed = js.native
     
     def inject[T](token: AbstractType[T]): T | Null = js.native
     def inject[T](token: AbstractType[T], notFoundValue: T): T = js.native
     def inject[T](token: AbstractType[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    def inject[T](token: AbstractType[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
     def inject[T](token: AbstractType[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: AbstractType[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
     def inject[T](token: InjectionToken[T]): T | Null = js.native
     def inject[T](token: InjectionToken[T], notFoundValue: T): T = js.native
     def inject[T](token: InjectionToken[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    def inject[T](token: InjectionToken[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
     def inject[T](token: InjectionToken[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: InjectionToken[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
     def inject[T](token: Type[T]): T | Null = js.native
     def inject[T](token: Type[T], notFoundValue: T): T = js.native
     def inject[T](token: Type[T], notFoundValue: T, flags: InjectFlags): T = js.native
-    def inject[T](token: Type[T], notFoundValue: js.UndefOr[scala.Nothing], flags: InjectFlags): T = js.native
     def inject[T](token: Type[T], notFoundValue: Null, flags: InjectFlags): T | Null = js.native
+    def inject[T](token: Type[T], notFoundValue: Unit, flags: InjectFlags): T = js.native
     @JSName("inject")
     def inject_T_T[T](token: AbstractType[T]): T = js.native
     @JSName("inject")
@@ -973,13 +896,13 @@ object testingTestingMod {
     @JSName("inject")
     def inject_T_T[T](token: Type[T]): T = js.native
     
-    def overrideComponent(component: Type[_], `override`: MetadataOverride[Component]): TestBedStatic = js.native
+    def overrideComponent(component: Type[js.Any], `override`: MetadataOverride[Component]): TestBedStatic = js.native
     
-    def overrideDirective(directive: Type[_], `override`: MetadataOverride[Directive]): TestBedStatic = js.native
+    def overrideDirective(directive: Type[js.Any], `override`: MetadataOverride[Directive]): TestBedStatic = js.native
     
-    def overrideModule(ngModule: Type[_], `override`: MetadataOverride[NgModule]): TestBedStatic = js.native
+    def overrideModule(ngModule: Type[js.Any], `override`: MetadataOverride[NgModule]): TestBedStatic = js.native
     
-    def overridePipe(pipe: Type[_], `override`: MetadataOverride[Pipe]): TestBedStatic = js.native
+    def overridePipe(pipe: Type[js.Any], `override`: MetadataOverride[Pipe]): TestBedStatic = js.native
     
     /**
       * Overwrites all providers for the given token with the given provider definition.
@@ -990,7 +913,7 @@ object testingTestingMod {
     def overrideProvider(token: js.Any, provider: UseFactory): TestBedStatic = js.native
     def overrideProvider(token: js.Any, provider: UseValue): TestBedStatic = js.native
     
-    def overrideTemplate(component: Type[_], template: String): TestBedStatic = js.native
+    def overrideTemplate(component: Type[js.Any], template: String): TestBedStatic = js.native
     
     /**
       * Overrides the template of the given component, compiling the template
@@ -998,7 +921,7 @@ object testingTestingMod {
       *
       * Note: This works for JIT and AOTed components as well.
       */
-    def overrideTemplateUsingTestingModule(component: Type[_], template: String): TestBedStatic = js.native
+    def overrideTemplateUsingTestingModule(component: Type[js.Any], template: String): TestBedStatic = js.native
     
     /**
       * Reset the providers for the test injector.
@@ -1008,18 +931,17 @@ object testingTestingMod {
     def resetTestingModule(): TestBedStatic = js.native
   }
   
-  @js.native
   trait TestModuleMetadata extends StObject {
     
-    var aotSummaries: js.UndefOr[js.Function0[js.Array[_]]] = js.native
+    var aotSummaries: js.UndefOr[js.Function0[js.Array[js.Any]]] = js.undefined
     
-    var declarations: js.UndefOr[js.Array[_]] = js.native
+    var declarations: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var imports: js.UndefOr[js.Array[_]] = js.native
+    var imports: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var providers: js.UndefOr[js.Array[_]] = js.native
+    var providers: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var schemas: js.UndefOr[js.Array[SchemaMetadata | js.Array[_]]] = js.native
+    var schemas: js.UndefOr[js.Array[SchemaMetadata | js.Array[js.Any]]] = js.undefined
   }
   object TestModuleMetadata {
     
@@ -1033,13 +955,13 @@ object testingTestingMod {
     implicit class TestModuleMetadataMutableBuilder[Self <: TestModuleMetadata] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAotSummaries(value: () => js.Array[_]): Self = StObject.set(x, "aotSummaries", js.Any.fromFunction0(value))
+      def setAotSummaries(value: () => js.Array[js.Any]): Self = StObject.set(x, "aotSummaries", js.Any.fromFunction0(value))
       
       @scala.inline
       def setAotSummariesUndefined: Self = StObject.set(x, "aotSummaries", js.undefined)
       
       @scala.inline
-      def setDeclarations(value: js.Array[_]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
+      def setDeclarations(value: js.Array[js.Any]): Self = StObject.set(x, "declarations", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDeclarationsUndefined: Self = StObject.set(x, "declarations", js.undefined)
@@ -1048,7 +970,7 @@ object testingTestingMod {
       def setDeclarationsVarargs(value: js.Any*): Self = StObject.set(x, "declarations", js.Array(value :_*))
       
       @scala.inline
-      def setImports(value: js.Array[_]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
+      def setImports(value: js.Array[js.Any]): Self = StObject.set(x, "imports", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setImportsUndefined: Self = StObject.set(x, "imports", js.undefined)
@@ -1057,7 +979,7 @@ object testingTestingMod {
       def setImportsVarargs(value: js.Any*): Self = StObject.set(x, "imports", js.Array(value :_*))
       
       @scala.inline
-      def setProviders(value: js.Array[_]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
+      def setProviders(value: js.Array[js.Any]): Self = StObject.set(x, "providers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProvidersUndefined: Self = StObject.set(x, "providers", js.undefined)
@@ -1066,7 +988,7 @@ object testingTestingMod {
       def setProvidersVarargs(value: js.Any*): Self = StObject.set(x, "providers", js.Array(value :_*))
       
       @scala.inline
-      def setSchemas(value: js.Array[SchemaMetadata | js.Array[_]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+      def setSchemas(value: js.Array[SchemaMetadata | js.Array[js.Any]]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)

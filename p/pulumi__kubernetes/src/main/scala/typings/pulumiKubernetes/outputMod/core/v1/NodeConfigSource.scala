@@ -2,19 +2,17 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NodeConfigSource specifies a source of node configuration. Exactly one subfield (excluding metadata) must be non-nil.
   */
-@js.native
 trait NodeConfigSource extends StObject {
   
   /**
     * ConfigMap is a reference to a Node's ConfigMap
     */
-  var configMap: ConfigMapNodeConfigSource = js.native
+  var configMap: ConfigMapNodeConfigSource
 }
 object NodeConfigSource {
   

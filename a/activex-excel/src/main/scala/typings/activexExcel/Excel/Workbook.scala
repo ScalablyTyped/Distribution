@@ -31,20 +31,19 @@ import typings.activexOffice.Office.WorkflowTemplates
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Workbook extends StObject {
   
   def AcceptAllChanges(): Unit = js.native
-  def AcceptAllChanges(When: js.UndefOr[scala.Nothing], Who: js.UndefOr[scala.Nothing], Where: js.Any): Unit = js.native
-  def AcceptAllChanges(When: js.UndefOr[scala.Nothing], Who: js.Any): Unit = js.native
-  def AcceptAllChanges(When: js.UndefOr[scala.Nothing], Who: js.Any, Where: js.Any): Unit = js.native
   def AcceptAllChanges(When: js.Any): Unit = js.native
-  def AcceptAllChanges(When: js.Any, Who: js.UndefOr[scala.Nothing], Where: js.Any): Unit = js.native
   def AcceptAllChanges(When: js.Any, Who: js.Any): Unit = js.native
   def AcceptAllChanges(When: js.Any, Who: js.Any, Where: js.Any): Unit = js.native
+  def AcceptAllChanges(When: js.Any, Who: Unit, Where: js.Any): Unit = js.native
+  def AcceptAllChanges(When: Unit, Who: js.Any): Unit = js.native
+  def AcceptAllChanges(When: Unit, Who: js.Any, Where: js.Any): Unit = js.native
+  def AcceptAllChanges(When: Unit, Who: Unit, Where: js.Any): Unit = js.native
   
   var AcceptLabelsInFormulas: Boolean = js.native
   
@@ -85,11 +84,11 @@ trait Workbook extends StObject {
   @JSName("ChangeFileAccess")
   def ChangeFileAccess_2(Mode: `2`): Unit = js.native
   @JSName("ChangeFileAccess")
-  def ChangeFileAccess_2(Mode: `2`, WritePassword: js.UndefOr[scala.Nothing], Notify: Boolean): Unit = js.native
-  @JSName("ChangeFileAccess")
   def ChangeFileAccess_2(Mode: `2`, WritePassword: String): Unit = js.native
   @JSName("ChangeFileAccess")
   def ChangeFileAccess_2(Mode: `2`, WritePassword: String, Notify: Boolean): Unit = js.native
+  @JSName("ChangeFileAccess")
+  def ChangeFileAccess_2(Mode: `2`, WritePassword: Unit, Notify: Boolean): Unit = js.native
   
   var ChangeHistoryDuration: Double = js.native
   
@@ -109,73 +108,49 @@ trait Workbook extends StObject {
   def CheckIn(SaveChanges: js.Any): Unit = js.native
   
   def CheckInWithVersion(): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    Comments: js.UndefOr[scala.Nothing],
-    MakePublic: js.UndefOr[scala.Nothing],
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    Comments: js.UndefOr[scala.Nothing],
-    MakePublic: js.Any,
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    Comments: js.Any,
-    MakePublic: js.UndefOr[scala.Nothing],
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: js.UndefOr[scala.Nothing], Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean): Unit = js.native
-  def CheckInWithVersion(
-    SaveChanges: Boolean,
-    Comments: js.UndefOr[scala.Nothing],
-    MakePublic: js.UndefOr[scala.Nothing],
-    VersionType: js.Any
-  ): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.UndefOr[scala.Nothing], MakePublic: js.Any, VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any): Unit = js.native
-  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.UndefOr[scala.Nothing], VersionType: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any): Unit = js.native
   def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Boolean, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: js.Any, MakePublic: Unit, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: js.Any, VersionType: js.Any): Unit = js.native
+  def CheckInWithVersion(SaveChanges: Unit, Comments: Unit, MakePublic: Unit, VersionType: js.Any): Unit = js.native
   
   @JSName("CheckIn")
   def CheckIn_true(SaveChanges: `true`): Unit = js.native
   @JSName("CheckIn")
-  def CheckIn_true(SaveChanges: `true`, Comments: js.UndefOr[scala.Nothing], MakePublic: Boolean): Unit = js.native
-  @JSName("CheckIn")
   def CheckIn_true(SaveChanges: `true`, Comments: String): Unit = js.native
   @JSName("CheckIn")
   def CheckIn_true(SaveChanges: `true`, Comments: String, MakePublic: Boolean): Unit = js.native
+  @JSName("CheckIn")
+  def CheckIn_true(SaveChanges: `true`, Comments: Unit, MakePublic: Boolean): Unit = js.native
   
   def Close(): Unit = js.native
-  def Close(
-    SaveChanges: js.UndefOr[scala.Nothing],
-    Filename: js.UndefOr[scala.Nothing],
-    RouteWorkbook: Boolean
-  ): Unit = js.native
   def Close(SaveChanges: Boolean): Unit = js.native
-  def Close(SaveChanges: Boolean, Filename: js.UndefOr[scala.Nothing], RouteWorkbook: Boolean): Unit = js.native
+  def Close(SaveChanges: Boolean, Filename: Unit, RouteWorkbook: Boolean): Unit = js.native
+  def Close(SaveChanges: Unit, Filename: Unit, RouteWorkbook: Boolean): Unit = js.native
   @JSName("Close")
   def Close_true(SaveChanges: `true`): Unit = js.native
-  @JSName("Close")
-  def Close_true(SaveChanges: `true`, Filename: js.UndefOr[scala.Nothing], RouteWorkbook: Boolean): Unit = js.native
   @JSName("Close")
   def Close_true(SaveChanges: `true`, Filename: String): Unit = js.native
   @JSName("Close")
   def Close_true(SaveChanges: `true`, Filename: String, RouteWorkbook: Boolean): Unit = js.native
+  @JSName("Close")
+  def Close_true(SaveChanges: `true`, Filename: Unit, RouteWorkbook: Boolean): Unit = js.native
   
   val CodeName: String = js.native
   
   def Colors(Index: Double): Double = js.native
   @JSName("Colors")
-  var Colors_Original: SafeArray[Double] with (js.Function1[/* Index */ Double, Double]) = js.native
+  var Colors_Original: SafeArray[Double] & (js.Function1[/* Index */ Double, Double]) = js.native
   
   def CommandBars(Index: String): CommandBar = js.native
   def CommandBars(Index: Double): CommandBar = js.native
@@ -303,332 +278,23 @@ trait Workbook extends StObject {
   var Final: Boolean = js.native
   
   def FollowHyperlink(Address: String): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(Address: String, SubAddress: js.UndefOr[scala.Nothing], NewWindow: Boolean): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: js.UndefOr[scala.Nothing],
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
   def FollowHyperlink(Address: String, SubAddress: String): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String,
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: js.UndefOr[scala.Nothing],
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
   def FollowHyperlink(Address: String, SubAddress: String, NewWindow: Boolean): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: String, NewWindow: Boolean, AddHistory: Unit, ExtraInfo: String): Unit = js.native
   def FollowHyperlink(
     Address: String,
     SubAddress: String,
     NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: js.UndefOr[scala.Nothing],
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: js.UndefOr[scala.Nothing],
-    Method: MsoExtraInfoMethod,
-    HeaderInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: String
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
+    AddHistory: Unit,
     ExtraInfo: String,
-    Method: js.UndefOr[scala.Nothing],
+    Method: Unit,
     HeaderInfo: String
   ): Unit = js.native
   def FollowHyperlink(
     Address: String,
     SubAddress: String,
     NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
+    AddHistory: Unit,
     ExtraInfo: String,
     Method: MsoExtraInfoMethod
   ): Unit = js.native
@@ -636,7 +302,7 @@ trait Workbook extends StObject {
     Address: String,
     SubAddress: String,
     NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
+    AddHistory: Unit,
     ExtraInfo: String,
     Method: MsoExtraInfoMethod,
     HeaderInfo: String
@@ -645,23 +311,43 @@ trait Workbook extends StObject {
     Address: String,
     SubAddress: String,
     NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray
-  ): Unit = js.native
-  def FollowHyperlink(
-    Address: String,
-    SubAddress: String,
-    NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
-    ExtraInfo: ByteArray,
-    Method: js.UndefOr[scala.Nothing],
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: Unit,
     HeaderInfo: String
   ): Unit = js.native
   def FollowHyperlink(
     Address: String,
     SubAddress: String,
     NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: String, NewWindow: Boolean, AddHistory: Unit, ExtraInfo: ByteArray): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Boolean,
+    AddHistory: Unit,
     ExtraInfo: ByteArray,
     Method: MsoExtraInfoMethod
   ): Unit = js.native
@@ -669,7 +355,248 @@ trait Workbook extends StObject {
     Address: String,
     SubAddress: String,
     NewWindow: Boolean,
-    AddHistory: js.UndefOr[scala.Nothing],
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: String, NewWindow: Unit, AddHistory: Unit, ExtraInfo: String): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: String, NewWindow: Unit, AddHistory: Unit, ExtraInfo: ByteArray): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: String,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: Unit, NewWindow: Boolean): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: Unit, NewWindow: Boolean, AddHistory: Unit, ExtraInfo: String): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: Unit, NewWindow: Boolean, AddHistory: Unit, ExtraInfo: ByteArray): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Boolean,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: Unit, NewWindow: Unit, AddHistory: Unit, ExtraInfo: String): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: String,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: Unit,
+    Method: MsoExtraInfoMethod,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(Address: String, SubAddress: Unit, NewWindow: Unit, AddHistory: Unit, ExtraInfo: ByteArray): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: Unit,
+    HeaderInfo: String
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
+    ExtraInfo: ByteArray,
+    Method: MsoExtraInfoMethod
+  ): Unit = js.native
+  def FollowHyperlink(
+    Address: String,
+    SubAddress: Unit,
+    NewWindow: Unit,
+    AddHistory: Unit,
     ExtraInfo: ByteArray,
     Method: MsoExtraInfoMethod,
     HeaderInfo: String
@@ -700,25 +627,25 @@ trait Workbook extends StObject {
   var HighlightChangesOnScreen: Boolean = js.native
   
   def HighlightChangesOptions(): Unit = js.native
-  def HighlightChangesOptions(When: js.UndefOr[scala.Nothing], Who: js.UndefOr[scala.Nothing], Where: String): Unit = js.native
-  def HighlightChangesOptions(When: js.UndefOr[scala.Nothing], Who: String): Unit = js.native
-  def HighlightChangesOptions(When: js.UndefOr[scala.Nothing], Who: String, Where: String): Unit = js.native
+  def HighlightChangesOptions(When: Unit, Who: String): Unit = js.native
+  def HighlightChangesOptions(When: Unit, Who: String, Where: String): Unit = js.native
+  def HighlightChangesOptions(When: Unit, Who: Unit, Where: String): Unit = js.native
   def HighlightChangesOptions(When: XlHighlightChangesTime): Unit = js.native
-  def HighlightChangesOptions(When: XlHighlightChangesTime, Who: js.UndefOr[scala.Nothing], Where: String): Unit = js.native
   def HighlightChangesOptions(When: XlHighlightChangesTime, Who: String): Unit = js.native
   def HighlightChangesOptions(When: XlHighlightChangesTime, Who: String, Where: String): Unit = js.native
+  def HighlightChangesOptions(When: XlHighlightChangesTime, Who: Unit, Where: String): Unit = js.native
   @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyone(When: js.UndefOr[scala.Nothing], Who: Everyone): Unit = js.native
+  def HighlightChangesOptions_Everyone(When: Unit, Who: Everyone): Unit = js.native
   @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyone(When: js.UndefOr[scala.Nothing], Who: Everyone, Where: String): Unit = js.native
+  def HighlightChangesOptions_Everyone(When: Unit, Who: Everyone, Where: String): Unit = js.native
   @JSName("HighlightChangesOptions")
   def HighlightChangesOptions_Everyone(When: XlHighlightChangesTime, Who: Everyone): Unit = js.native
   @JSName("HighlightChangesOptions")
   def HighlightChangesOptions_Everyone(When: XlHighlightChangesTime, Who: Everyone, Where: String): Unit = js.native
   @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyonebutme(When: js.UndefOr[scala.Nothing], Who: `Everyone but me`): Unit = js.native
+  def HighlightChangesOptions_Everyonebutme(When: Unit, Who: `Everyone but me`): Unit = js.native
   @JSName("HighlightChangesOptions")
-  def HighlightChangesOptions_Everyonebutme(When: js.UndefOr[scala.Nothing], Who: `Everyone but me`, Where: String): Unit = js.native
+  def HighlightChangesOptions_Everyonebutme(When: Unit, Who: `Everyone but me`, Where: String): Unit = js.native
   @JSName("HighlightChangesOptions")
   def HighlightChangesOptions_Everyonebutme(When: XlHighlightChangesTime, Who: `Everyone but me`): Unit = js.native
   @JSName("HighlightChangesOptions")
@@ -739,7 +666,7 @@ trait Workbook extends StObject {
   var Keywords: String = js.native
   
   def LinkInfo(Name: String, LinkInfo: XlLinkInfo): js.Any = js.native
-  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: js.UndefOr[scala.Nothing], EditionRef: String): js.Any = js.native
+  def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: Unit, EditionRef: String): js.Any = js.native
   def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType): js.Any = js.native
   def LinkInfo(Name: String, LinkInfo: XlLinkInfo, Type: XlLinkInfoType, EditionRef: String): js.Any = js.native
   
@@ -764,10 +691,10 @@ trait Workbook extends StObject {
   
   val Name: String = js.native
   
-  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: js.UndefOr[scala.Nothing], RefersTo: String): typings.activexExcel.Excel.Name = js.native
-  def Names(Index: js.UndefOr[scala.Nothing], IndexLocal: String): typings.activexExcel.Excel.Name = js.native
   def Names(Index: String): typings.activexExcel.Excel.Name = js.native
   def Names(Index: Double): typings.activexExcel.Excel.Name = js.native
+  def Names(Index: Unit, IndexLocal: String): typings.activexExcel.Excel.Name = js.native
+  def Names(Index: Unit, IndexLocal: Unit, RefersTo: String): typings.activexExcel.Excel.Name = js.native
   @JSName("Names")
   val Names_Original: Names = js.native
   
@@ -780,9 +707,9 @@ trait Workbook extends StObject {
   var OnSheetDeactivate: String = js.native
   
   def OpenLinks(Name: String): Unit = js.native
-  def OpenLinks(Name: String, ReadOnly: js.UndefOr[scala.Nothing], Type: XlLink): Unit = js.native
   def OpenLinks(Name: String, ReadOnly: Boolean): Unit = js.native
   def OpenLinks(Name: String, ReadOnly: Boolean, Type: XlLink): Unit = js.native
+  def OpenLinks(Name: String, ReadOnly: Unit, Type: XlLink): Unit = js.native
   
   val Parent: js.Any = js.native
   
@@ -819,7 +746,7 @@ trait Workbook extends StObject {
     SaveData: js.UndefOr[Boolean],
     HasAutoFormat: js.UndefOr[Boolean],
     AutoPage: js.UndefOr[PivotTableWizardAutoPage[TSourceType]],
-    Reserved: js.UndefOr[scala.Nothing],
+    Reserved: Unit,
     BackgroundQuery: js.UndefOr[Boolean],
     OptimizeCache: js.UndefOr[Boolean],
     PageFieldOrder: js.UndefOr[XlOrder],
@@ -848,13 +775,13 @@ trait Workbook extends StObject {
   def PrintPreview(EnableChanges: Boolean): Unit = js.native
   
   def Protect(): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], Structure: js.UndefOr[scala.Nothing], Windows: Boolean): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], Structure: Boolean): Unit = js.native
-  def Protect(Password: js.UndefOr[scala.Nothing], Structure: Boolean, Windows: Boolean): Unit = js.native
   def Protect(Password: String): Unit = js.native
-  def Protect(Password: String, Structure: js.UndefOr[scala.Nothing], Windows: Boolean): Unit = js.native
   def Protect(Password: String, Structure: Boolean): Unit = js.native
   def Protect(Password: String, Structure: Boolean, Windows: Boolean): Unit = js.native
+  def Protect(Password: String, Structure: Unit, Windows: Boolean): Unit = js.native
+  def Protect(Password: Unit, Structure: Boolean): Unit = js.native
+  def Protect(Password: Unit, Structure: Boolean, Windows: Boolean): Unit = js.native
+  def Protect(Password: Unit, Structure: Unit, Windows: Boolean): Unit = js.native
   
   def ProtectSharing(
     Filename: js.UndefOr[String],
@@ -887,13 +814,13 @@ trait Workbook extends StObject {
   def RefreshAll(): Unit = js.native
   
   def RejectAllChanges(): Unit = js.native
-  def RejectAllChanges(When: js.UndefOr[scala.Nothing], Who: js.UndefOr[scala.Nothing], Where: js.Any): Unit = js.native
-  def RejectAllChanges(When: js.UndefOr[scala.Nothing], Who: js.Any): Unit = js.native
-  def RejectAllChanges(When: js.UndefOr[scala.Nothing], Who: js.Any, Where: js.Any): Unit = js.native
   def RejectAllChanges(When: js.Any): Unit = js.native
-  def RejectAllChanges(When: js.Any, Who: js.UndefOr[scala.Nothing], Where: js.Any): Unit = js.native
   def RejectAllChanges(When: js.Any, Who: js.Any): Unit = js.native
   def RejectAllChanges(When: js.Any, Who: js.Any, Where: js.Any): Unit = js.native
+  def RejectAllChanges(When: js.Any, Who: Unit, Where: js.Any): Unit = js.native
+  def RejectAllChanges(When: Unit, Who: js.Any): Unit = js.native
+  def RejectAllChanges(When: Unit, Who: js.Any, Where: js.Any): Unit = js.native
+  def RejectAllChanges(When: Unit, Who: Unit, Where: js.Any): Unit = js.native
   
   def ReloadAs(Encoding: MsoEncoding): Unit = js.native
   
@@ -950,74 +877,39 @@ trait Workbook extends StObject {
   var Saved: Boolean = js.native
   
   def SendFaxOverInternet(): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: String): Unit = js.native
-  def SendFaxOverInternet(Recipients: js.UndefOr[scala.Nothing], Subject: String, ShowMessage: Boolean): Unit = js.native
   def SendFaxOverInternet(Recipients: String): Unit = js.native
-  def SendFaxOverInternet(Recipients: String, Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
   def SendFaxOverInternet(Recipients: String, Subject: String): Unit = js.native
   def SendFaxOverInternet(Recipients: String, Subject: String, ShowMessage: Boolean): Unit = js.native
+  def SendFaxOverInternet(Recipients: String, Subject: Unit, ShowMessage: Boolean): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: String): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: String, ShowMessage: Boolean): Unit = js.native
+  def SendFaxOverInternet(Recipients: Unit, Subject: Unit, ShowMessage: Boolean): Unit = js.native
   
   def SendForReview(): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: Boolean
-  ): Unit = js.native
-  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: Boolean,
-    IncludeAttachment: Boolean
-  ): Unit = js.native
-  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: String): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: String,
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: Boolean
-  ): Unit = js.native
-  def SendForReview(Recipients: js.UndefOr[scala.Nothing], Subject: String, ShowMessage: Boolean): Unit = js.native
-  def SendForReview(
-    Recipients: js.UndefOr[scala.Nothing],
-    Subject: String,
-    ShowMessage: Boolean,
-    IncludeAttachment: Boolean
-  ): Unit = js.native
   def SendForReview(Recipients: String): Unit = js.native
-  def SendForReview(
-    Recipients: String,
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: Boolean
-  ): Unit = js.native
-  def SendForReview(Recipients: String, Subject: js.UndefOr[scala.Nothing], ShowMessage: Boolean): Unit = js.native
-  def SendForReview(
-    Recipients: String,
-    Subject: js.UndefOr[scala.Nothing],
-    ShowMessage: Boolean,
-    IncludeAttachment: Boolean
-  ): Unit = js.native
   def SendForReview(Recipients: String, Subject: String): Unit = js.native
-  def SendForReview(
-    Recipients: String,
-    Subject: String,
-    ShowMessage: js.UndefOr[scala.Nothing],
-    IncludeAttachment: Boolean
-  ): Unit = js.native
   def SendForReview(Recipients: String, Subject: String, ShowMessage: Boolean): Unit = js.native
   def SendForReview(Recipients: String, Subject: String, ShowMessage: Boolean, IncludeAttachment: Boolean): Unit = js.native
+  def SendForReview(Recipients: String, Subject: String, ShowMessage: Unit, IncludeAttachment: Boolean): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Boolean): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: Boolean): Unit = js.native
+  def SendForReview(Recipients: String, Subject: Unit, ShowMessage: Unit, IncludeAttachment: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Boolean, IncludeAttachment: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: String, ShowMessage: Unit, IncludeAttachment: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Boolean, IncludeAttachment: Boolean): Unit = js.native
+  def SendForReview(Recipients: Unit, Subject: Unit, ShowMessage: Unit, IncludeAttachment: Boolean): Unit = js.native
   
   def SendMail(Recipients: String): Unit = js.native
-  def SendMail(Recipients: String, Subject: js.UndefOr[scala.Nothing], ReturnReceipt: Boolean): Unit = js.native
   def SendMail(Recipients: String, Subject: String): Unit = js.native
   def SendMail(Recipients: String, Subject: String, ReturnReceipt: Boolean): Unit = js.native
+  def SendMail(Recipients: String, Subject: Unit, ReturnReceipt: Boolean): Unit = js.native
   def SendMail(Recipients: SafeArray[String]): Unit = js.native
-  def SendMail(Recipients: SafeArray[String], Subject: js.UndefOr[scala.Nothing], ReturnReceipt: Boolean): Unit = js.native
   def SendMail(Recipients: SafeArray[String], Subject: String): Unit = js.native
   def SendMail(Recipients: SafeArray[String], Subject: String, ReturnReceipt: Boolean): Unit = js.native
+  def SendMail(Recipients: SafeArray[String], Subject: Unit, ReturnReceipt: Boolean): Unit = js.native
   
   /**
     * Macintosh only
@@ -1040,75 +932,75 @@ trait Workbook extends StObject {
   def SetLinkOnData(Name: String, Procedure: String): Unit = js.native
   
   def SetPasswordEncryptionOptions(): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: js.UndefOr[scala.Nothing],
-    PasswordEncryptionAlgorithm: js.UndefOr[scala.Nothing],
-    PasswordEncryptionKeyLength: js.UndefOr[scala.Nothing],
-    PasswordEncryptionFileProperties: Boolean
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: js.UndefOr[scala.Nothing],
-    PasswordEncryptionAlgorithm: js.UndefOr[scala.Nothing],
-    PasswordEncryptionKeyLength: Double
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: js.UndefOr[scala.Nothing],
-    PasswordEncryptionAlgorithm: js.UndefOr[scala.Nothing],
-    PasswordEncryptionKeyLength: Double,
-    PasswordEncryptionFileProperties: Boolean
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(PasswordEncryptionProvider: js.UndefOr[scala.Nothing], PasswordEncryptionAlgorithm: String): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: js.UndefOr[scala.Nothing],
-    PasswordEncryptionAlgorithm: String,
-    PasswordEncryptionKeyLength: js.UndefOr[scala.Nothing],
-    PasswordEncryptionFileProperties: Boolean
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: js.UndefOr[scala.Nothing],
-    PasswordEncryptionAlgorithm: String,
-    PasswordEncryptionKeyLength: Double
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: js.UndefOr[scala.Nothing],
-    PasswordEncryptionAlgorithm: String,
-    PasswordEncryptionKeyLength: Double,
-    PasswordEncryptionFileProperties: Boolean
-  ): Unit = js.native
   def SetPasswordEncryptionOptions(PasswordEncryptionProvider: String): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: String,
-    PasswordEncryptionAlgorithm: js.UndefOr[scala.Nothing],
-    PasswordEncryptionKeyLength: js.UndefOr[scala.Nothing],
-    PasswordEncryptionFileProperties: Boolean
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: String,
-    PasswordEncryptionAlgorithm: js.UndefOr[scala.Nothing],
-    PasswordEncryptionKeyLength: Double
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: String,
-    PasswordEncryptionAlgorithm: js.UndefOr[scala.Nothing],
-    PasswordEncryptionKeyLength: Double,
-    PasswordEncryptionFileProperties: Boolean
-  ): Unit = js.native
   def SetPasswordEncryptionOptions(PasswordEncryptionProvider: String, PasswordEncryptionAlgorithm: String): Unit = js.native
   def SetPasswordEncryptionOptions(
     PasswordEncryptionProvider: String,
     PasswordEncryptionAlgorithm: String,
-    PasswordEncryptionKeyLength: js.UndefOr[scala.Nothing],
-    PasswordEncryptionFileProperties: Boolean
-  ): Unit = js.native
-  def SetPasswordEncryptionOptions(
-    PasswordEncryptionProvider: String,
-    PasswordEncryptionAlgorithm: String,
     PasswordEncryptionKeyLength: Double
   ): Unit = js.native
   def SetPasswordEncryptionOptions(
     PasswordEncryptionProvider: String,
     PasswordEncryptionAlgorithm: String,
     PasswordEncryptionKeyLength: Double,
+    PasswordEncryptionFileProperties: Boolean
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: String,
+    PasswordEncryptionAlgorithm: String,
+    PasswordEncryptionKeyLength: Unit,
+    PasswordEncryptionFileProperties: Boolean
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: String,
+    PasswordEncryptionAlgorithm: Unit,
+    PasswordEncryptionKeyLength: Double
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: String,
+    PasswordEncryptionAlgorithm: Unit,
+    PasswordEncryptionKeyLength: Double,
+    PasswordEncryptionFileProperties: Boolean
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: String,
+    PasswordEncryptionAlgorithm: Unit,
+    PasswordEncryptionKeyLength: Unit,
+    PasswordEncryptionFileProperties: Boolean
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(PasswordEncryptionProvider: Unit, PasswordEncryptionAlgorithm: String): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: Unit,
+    PasswordEncryptionAlgorithm: String,
+    PasswordEncryptionKeyLength: Double
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: Unit,
+    PasswordEncryptionAlgorithm: String,
+    PasswordEncryptionKeyLength: Double,
+    PasswordEncryptionFileProperties: Boolean
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: Unit,
+    PasswordEncryptionAlgorithm: String,
+    PasswordEncryptionKeyLength: Unit,
+    PasswordEncryptionFileProperties: Boolean
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: Unit,
+    PasswordEncryptionAlgorithm: Unit,
+    PasswordEncryptionKeyLength: Double
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: Unit,
+    PasswordEncryptionAlgorithm: Unit,
+    PasswordEncryptionKeyLength: Double,
+    PasswordEncryptionFileProperties: Boolean
+  ): Unit = js.native
+  def SetPasswordEncryptionOptions(
+    PasswordEncryptionProvider: Unit,
+    PasswordEncryptionAlgorithm: Unit,
+    PasswordEncryptionKeyLength: Unit,
     PasswordEncryptionFileProperties: Boolean
   ): Unit = js.native
   
@@ -1169,9 +1061,9 @@ trait Workbook extends StObject {
   def UpdateFromFile(): Unit = js.native
   
   def UpdateLink(): Unit = js.native
-  def UpdateLink(Name: js.UndefOr[scala.Nothing], Type: XlLinkType): Unit = js.native
   def UpdateLink(Name: String): Unit = js.native
   def UpdateLink(Name: String, Type: XlLinkType): Unit = js.native
+  def UpdateLink(Name: Unit, Type: XlLinkType): Unit = js.native
   
   var UpdateLinks: XlUpdateLinks = js.native
   
@@ -1179,7 +1071,7 @@ trait Workbook extends StObject {
   
   var UserControl: Boolean = js.native
   
-  val UserStatus: SafeArray[_] = js.native
+  val UserStatus: SafeArray[js.Any] = js.native
   
   val VBASigned: Boolean = js.native
   
@@ -1207,14 +1099,14 @@ trait Workbook extends StObject {
   val WriteReservedBy: String = js.native
   
   def XmlImport(Url: String, ImportMap: XmlMap): XlXmlImportResult = js.native
-  def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: js.UndefOr[scala.Nothing], Destination: js.Any): XlXmlImportResult = js.native
   def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Boolean): XlXmlImportResult = js.native
   def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Boolean, Destination: js.Any): XlXmlImportResult = js.native
+  def XmlImport(Url: String, ImportMap: XmlMap, Overwrite: Unit, Destination: js.Any): XlXmlImportResult = js.native
   
   def XmlImportXml(Data: String, ImportMap: XmlMap): XlXmlImportResult = js.native
-  def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: js.UndefOr[scala.Nothing], Destination: js.Any): XlXmlImportResult = js.native
   def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Boolean): XlXmlImportResult = js.native
   def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Boolean, Destination: js.Any): XlXmlImportResult = js.native
+  def XmlImportXml(Data: String, ImportMap: XmlMap, Overwrite: Unit, Destination: js.Any): XlXmlImportResult = js.native
   
   def XmlMaps(Index: String): XmlMap = js.native
   def XmlMaps(Index: Double): XmlMap = js.native
@@ -1240,13 +1132,13 @@ trait Workbook extends StObject {
   ): Unit = js.native
   
   def _Protect(): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], Structure: js.UndefOr[scala.Nothing], Windows: js.Any): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], Structure: js.Any): Unit = js.native
-  def _Protect(Password: js.UndefOr[scala.Nothing], Structure: js.Any, Windows: js.Any): Unit = js.native
   def _Protect(Password: js.Any): Unit = js.native
-  def _Protect(Password: js.Any, Structure: js.UndefOr[scala.Nothing], Windows: js.Any): Unit = js.native
   def _Protect(Password: js.Any, Structure: js.Any): Unit = js.native
   def _Protect(Password: js.Any, Structure: js.Any, Windows: js.Any): Unit = js.native
+  def _Protect(Password: js.Any, Structure: Unit, Windows: js.Any): Unit = js.native
+  def _Protect(Password: Unit, Structure: js.Any): Unit = js.native
+  def _Protect(Password: Unit, Structure: js.Any, Windows: js.Any): Unit = js.native
+  def _Protect(Password: Unit, Structure: Unit, Windows: js.Any): Unit = js.native
   
   def _ProtectSharing(
     Filename: js.UndefOr[js.Any],

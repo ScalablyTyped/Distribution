@@ -2,25 +2,23 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Platform Type List Response
   */
-@js.native
 trait SchemaPlatformTypesListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;dfareporting#platformTypesListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Platform type collection.
     */
-  var platformTypes: js.UndefOr[js.Array[SchemaPlatformType]] = js.native
+  var platformTypes: js.UndefOr[js.Array[SchemaPlatformType]] = js.undefined
 }
 object SchemaPlatformTypesListResponse {
   

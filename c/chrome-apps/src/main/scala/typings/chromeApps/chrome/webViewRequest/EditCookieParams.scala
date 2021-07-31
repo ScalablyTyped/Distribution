@@ -2,7 +2,6 @@ package typings.chromeApps.chrome.webViewRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T First parameter type
   * @template K Second parameter type
   */
-@js.native
 trait EditCookieParams[T, K] extends StObject {
   
   /**
     * Filter for cookies that will be modified.
     * All empty entries are ignored.
     */
-  var filter: T = js.native
+  var filter: T
   
   /**
     * Attributes that shall be overridden in cookies that machted the filter
     * Attributes that are set to an empty string are removed.
     */
-  var modification: K = js.native
+  var modification: K
 }
 object EditCookieParams {
   
@@ -34,7 +32,7 @@ object EditCookieParams {
   }
   
   @scala.inline
-  implicit class EditCookieParamsMutableBuilder[Self <: EditCookieParams[_, _], T, K] (val x: Self with (EditCookieParams[T, K])) extends AnyVal {
+  implicit class EditCookieParamsMutableBuilder[Self <: EditCookieParams[?, ?], T, K] (val x: Self & (EditCookieParams[T, K])) extends AnyVal {
     
     @scala.inline
     def setFilter(value: T): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])

@@ -2,21 +2,19 @@ package typings.awsSdk.elasticinferenceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     *  The ARN of the Elastic Inference Accelerator to tag. 
     */
-  var resourceArn: ResourceARN_ = js.native
+  var resourceArn: ResourceARN_
   
   /**
     *  The tags to add to the Elastic Inference Accelerator. 
     */
-  var tags: TagMap = js.native
+  var tags: TagMap
 }
 object TagResourceRequest {
   

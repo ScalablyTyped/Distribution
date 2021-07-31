@@ -2,17 +2,15 @@ package typings.reactVirtualized.esTableMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableCellDataGetterParams extends StObject {
   
-  var columnData: js.UndefOr[js.Any] = js.native
+  var columnData: js.UndefOr[js.Any] = js.undefined
   
-  var dataKey: String = js.native
+  var dataKey: String
   
-  var rowData: js.Any = js.native
+  var rowData: js.Any
 }
 object TableCellDataGetterParams {
   

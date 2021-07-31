@@ -3,29 +3,27 @@ package typings.googleapis.bigtableadminV1Mod.bigtableadminV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The metadata for the Operation returned by CreateCluster.
   */
-@js.native
 trait SchemaCreateClusterMetadata extends StObject {
   
   /**
     * The time at which the operation failed or was completed successfully.
     */
-  var finishTime: js.UndefOr[String] = js.native
+  var finishTime: js.UndefOr[String] = js.undefined
   
   /**
     * The request that prompted the initiation of this CreateCluster operation.
     */
-  var originalRequest: js.UndefOr[SchemaCreateClusterRequest] = js.native
+  var originalRequest: js.UndefOr[SchemaCreateClusterRequest] = js.undefined
   
   /**
     * The time at which the original request was received.
     */
-  var requestTime: js.UndefOr[String] = js.native
+  var requestTime: js.UndefOr[String] = js.undefined
   
   /**
     * Keys: the full `name` of each table that existed in the instance when
@@ -36,7 +34,7 @@ trait SchemaCreateClusterMetadata extends StObject {
     * how much of a table&#39;s data has been copied to the newly-created
     * cluster so far.
     */
-  var tables: js.UndefOr[StringDictionary[SchemaTableProgress]] = js.native
+  var tables: js.UndefOr[StringDictionary[SchemaTableProgress]] = js.undefined
 }
 object SchemaCreateClusterMetadata {
   

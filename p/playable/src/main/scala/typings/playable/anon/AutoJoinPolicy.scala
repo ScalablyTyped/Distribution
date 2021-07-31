@@ -2,15 +2,13 @@ package typings.playable.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoJoinPolicy extends StObject {
   
-  var AutoJoinPolicy: ORIGINSCOPED = js.native
+  var AutoJoinPolicy: ORIGINSCOPED
   
-  var media: DEFAULTMEDIARECEIVERAPPID = js.native
+  var media: DEFAULTMEDIARECEIVERAPPID
 }
 object AutoJoinPolicy {
   

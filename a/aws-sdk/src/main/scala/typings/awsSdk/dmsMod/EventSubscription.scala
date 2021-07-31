@@ -2,56 +2,54 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSubscription extends StObject {
   
   /**
     * The AWS DMS event notification subscription Id.
     */
-  var CustSubscriptionId: js.UndefOr[String] = js.native
+  var CustSubscriptionId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS customer account associated with the AWS DMS event notification subscription.
     */
-  var CustomerAwsId: js.UndefOr[String] = js.native
+  var CustomerAwsId: js.UndefOr[String] = js.undefined
   
   /**
     * Boolean value that indicates if the event subscription is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A lists of event categories.
     */
-  var EventCategoriesList: js.UndefOr[typings.awsSdk.dmsMod.EventCategoriesList] = js.native
+  var EventCategoriesList: js.UndefOr[typings.awsSdk.dmsMod.EventCategoriesList] = js.undefined
   
   /**
     * The topic ARN of the AWS DMS event notification subscription.
     */
-  var SnsTopicArn: js.UndefOr[String] = js.native
+  var SnsTopicArn: js.UndefOr[String] = js.undefined
   
   /**
     * A list of source Ids for the event subscription.
     */
-  var SourceIdsList: js.UndefOr[typings.awsSdk.dmsMod.SourceIdsList] = js.native
+  var SourceIdsList: js.UndefOr[typings.awsSdk.dmsMod.SourceIdsList] = js.undefined
   
   /**
     *  The type of AWS DMS resource that generates events.  Valid values: replication-instance | replication-server | security-group | replication-task
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the AWS DMS event notification subscription. Constraints: Can be one of the following: creating | modifying | deleting | active | no-permission | topic-not-exist The status "no-permission" indicates that AWS DMS no longer has permission to post to the SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The time the AWS DMS event notification subscription was created.
     */
-  var SubscriptionCreationTime: js.UndefOr[String] = js.native
+  var SubscriptionCreationTime: js.UndefOr[String] = js.undefined
 }
 object EventSubscription {
   

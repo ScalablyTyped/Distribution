@@ -2,14 +2,12 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a rule that describes one or more match conditions along with
   * the action to be taken when traffic matches this condition (allow or deny).
   */
-@js.native
 trait SchemaSecurityPolicyRule extends StObject {
   
   /**
@@ -17,19 +15,19 @@ trait SchemaSecurityPolicyRule extends StObject {
     * currently be either &quot;allow&quot; or &quot;deny()&quot; where valid
     * values for status are 403, 404, and 502.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The direction in which this rule applies. This field may only be
     * specified when versioned_expr is set to FIREWALL.
     */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /**
     * Denotes whether to enable logging for a particular rule. If logging is
@@ -38,24 +36,24 @@ trait SchemaSecurityPolicyRule extends StObject {
     * cannot enable logging on &quot;goto_next&quot; rules.  This field may
     * only be specified when the versioned_expr is set to FIREWALL.
     */
-  var enableLogging: js.UndefOr[Boolean] = js.native
+  var enableLogging: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Output only] Type of the resource. Always compute#securityPolicyRule for
     * security policy rules
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A match condition that incoming traffic is evaluated against. If it
     * evaluates to true, the corresponding ?action? is enforced.
     */
-  var `match`: js.UndefOr[SchemaSecurityPolicyRuleMatcher] = js.native
+  var `match`: js.UndefOr[SchemaSecurityPolicyRuleMatcher] = js.undefined
   
   /**
     * If set to true, the specified action is not enforced.
     */
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An integer indicating the priority of a rule in the list. The priority
@@ -63,19 +61,19 @@ trait SchemaSecurityPolicyRule extends StObject {
     * from highest to lowest priority where 0 is the highest priority and
     * 2147483647 is the lowest prority.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /**
     * Must be specified if the action is &quot;rate_based_blacklist&quot; or
     * &quot;throttle&quot;. Cannot be specified for any other actions.
     */
-  var rateLimitOptions: js.UndefOr[SchemaSecurityPolicyRuleRateLimitOptions] = js.native
+  var rateLimitOptions: js.UndefOr[SchemaSecurityPolicyRuleRateLimitOptions] = js.undefined
   
   /**
     * [Output Only] Calculation of the complexity of a single firewall security
     * policy rule.
     */
-  var ruleTupleCount: js.UndefOr[Double] = js.native
+  var ruleTupleCount: js.UndefOr[Double] = js.undefined
   
   /**
     * A list of network resource URLs to which this rule applies. This field
@@ -83,7 +81,7 @@ trait SchemaSecurityPolicyRule extends StObject {
     * left blank, all VMs within the organization will receive the rule.  This
     * field may only be specified when versioned_expr is set to FIREWALL.
     */
-  var targetResources: js.UndefOr[js.Array[String]] = js.native
+  var targetResources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaSecurityPolicyRule {
   

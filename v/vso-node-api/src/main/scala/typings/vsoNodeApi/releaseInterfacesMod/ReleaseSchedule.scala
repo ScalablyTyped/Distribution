@@ -2,36 +2,34 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseSchedule extends StObject {
   
   /**
     * Days of the week to release
     */
-  var daysToRelease: ScheduleDays = js.native
+  var daysToRelease: ScheduleDays
   
   /**
     * Team Foundation Job Definition Job Id
     */
-  var jobId: String = js.native
+  var jobId: String
   
   /**
     * Local time zone hour to start
     */
-  var startHours: Double = js.native
+  var startHours: Double
   
   /**
     * Local time zone minute to start
     */
-  var startMinutes: Double = js.native
+  var startMinutes: Double
   
   /**
     * Time zone Id of release schedule, such as 'UTC'
     */
-  var timeZoneId: String = js.native
+  var timeZoneId: String
 }
 object ReleaseSchedule {
   

@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspacesGetImageMod {
   
-  @JSImport("@pulumi/aws/workspaces/getImage", "getImage")
+  @JSImport("@pulumi/aws/workspaces/getImage", JSImport.Namespace)
   @js.native
-  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = js.native
-  @JSImport("@pulumi/aws/workspaces/getImage", "getImage")
-  @js.native
-  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getImage(args: GetImageArgs): js.Promise[GetImageResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetImageResult]]
+  @scala.inline
+  def getImage(args: GetImageArgs, opts: InvokeOptions): js.Promise[GetImageResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getImage")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetImageResult]]
+  
   trait GetImageArgs extends StObject {
     
     /**
       * The ID of the image.
       */
-    val imageId: String = js.native
+    val imageId: String
   }
   object GetImageArgs {
     
@@ -39,37 +39,36 @@ object workspacesGetImageMod {
     }
   }
   
-  @js.native
   trait GetImageResult extends StObject {
     
     /**
       * The description of the image.
       */
-    val description: String = js.native
+    val description: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val imageId: String = js.native
+    val imageId: String
     
     /**
       * The name of the image.
       */
-    val name: String = js.native
+    val name: String
     
-    val operatingSystemType: String = js.native
+    val operatingSystemType: String
     
     /**
       * Specifies whether the image is running on dedicated hardware. When Bring Your Own License (BYOL) is enabled, this value is set to DEDICATED. For more information, see [Bring Your Own Windows Desktop Images](https://docs.aws.amazon.com/workspaces/latest/adminguide/byol-windows-images.html).
       */
-    val requiredTenancy: String = js.native
+    val requiredTenancy: String
     
     /**
       * The status of the image.
       */
-    val state: String = js.native
+    val state: String
   }
   object GetImageResult {
     

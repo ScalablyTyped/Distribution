@@ -4,17 +4,15 @@ import typings.monacoEditor.mod.CancellationToken
 import typings.monacoEditor.mod.editor.ITextModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinkProvider extends StObject {
   
-  def provideLinks(model: ITextModel, token: CancellationToken): ProviderResult[ILinksList] = js.native
+  def provideLinks(model: ITextModel, token: CancellationToken): ProviderResult[ILinksList]
   
   var resolveLink: js.UndefOr[
     js.Function2[/* link */ ILink, /* token */ CancellationToken, ProviderResult[ILink]]
-  ] = js.native
+  ] = js.undefined
 }
 object LinkProvider {
   

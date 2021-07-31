@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Styles that apply to a table.
   */
-@js.native
 trait SchemaTableStyle extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaTableStyle extends StObject {
     * and rows contain cells, similar to HTML. So the properties for a row can
     * be found on the row&#39;s table_row_style.
     */
-  var tableColumnProperties: js.UndefOr[js.Array[SchemaTableColumnProperties]] = js.native
+  var tableColumnProperties: js.UndefOr[js.Array[SchemaTableColumnProperties]] = js.undefined
 }
 object SchemaTableStyle {
   

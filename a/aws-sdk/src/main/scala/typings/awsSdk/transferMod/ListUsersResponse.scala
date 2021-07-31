@@ -2,26 +2,24 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUsersResponse extends StObject {
   
   /**
     * When you can get additional results from the ListUsers call, a NextToken parameter is returned in the output. You can then pass in a subsequent command to the NextToken parameter to continue listing additional users.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.transferMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.transferMod.NextToken] = js.undefined
   
   /**
     * A system-assigned unique identifier for a server that the users are assigned to.
     */
-  var ServerId: typings.awsSdk.transferMod.ServerId = js.native
+  var ServerId: typings.awsSdk.transferMod.ServerId
   
   /**
     * Returns the user accounts and their properties for the ServerId value that you specify.
     */
-  var Users: ListedUsers = js.native
+  var Users: ListedUsers
 }
 object ListUsersResponse {
   

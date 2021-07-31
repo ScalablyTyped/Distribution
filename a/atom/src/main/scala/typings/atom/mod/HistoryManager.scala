@@ -3,10 +3,8 @@ package typings.atom.mod
 import typings.atom.anon.Reloaded
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryManager extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait HistoryManager extends StObject {
     *  Note: This is not a privacy function - other traces will still exist, e.g.
     *  window state.
     */
-  def clearProjects(): Unit = js.native
+  def clearProjects(): Unit
   
   /** Obtain a list of previously opened projects. */
-  def getProjects(): js.Array[ProjectHistory] = js.native
+  def getProjects(): js.Array[ProjectHistory]
   
   /** Invoke the given callback when the list of projects changes. */
-  def onDidChangeProjects(callback: js.Function1[/* args */ Reloaded, Unit]): Disposable = js.native
+  def onDidChangeProjects(callback: js.Function1[/* args */ Reloaded, Unit]): Disposable
 }
 object HistoryManager {
   

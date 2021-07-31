@@ -2,33 +2,31 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Between extends StObject {
   
-  var between: js.UndefOr[String] = js.native
+  var between: js.UndefOr[String] = js.undefined
   
-  var contains: js.UndefOr[String] = js.native
+  var contains: js.UndefOr[String] = js.undefined
   
-  var endsWith: js.UndefOr[String] = js.native
+  var endsWith: js.UndefOr[String] = js.undefined
   
-  var equal: js.UndefOr[String] = js.native
+  var equal: js.UndefOr[String] = js.undefined
   
-  var greaterThan: js.UndefOr[String] = js.native
+  var greaterThan: js.UndefOr[String] = js.undefined
   
-  var greaterThanOrEqual: js.UndefOr[String] = js.native
+  var greaterThanOrEqual: js.UndefOr[String] = js.undefined
   
-  var lessThan: js.UndefOr[String] = js.native
+  var lessThan: js.UndefOr[String] = js.undefined
   
-  var lessThanOrEqual: js.UndefOr[String] = js.native
+  var lessThanOrEqual: js.UndefOr[String] = js.undefined
   
-  var notContains: js.UndefOr[String] = js.native
+  var notContains: js.UndefOr[String] = js.undefined
   
-  var notEqual: js.UndefOr[String] = js.native
+  var notEqual: js.UndefOr[String] = js.undefined
   
-  var startsWith: js.UndefOr[String] = js.native
+  var startsWith: js.UndefOr[String] = js.undefined
 }
 object Between {
   

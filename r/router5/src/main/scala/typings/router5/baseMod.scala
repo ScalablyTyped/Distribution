@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object baseMod {
@@ -13,17 +12,17 @@ object baseMod {
   
   type DoneFn = js.Function2[/* err */ js.UndefOr[js.Any], /* state */ js.UndefOr[State], Unit]
   
-  @js.native
   trait NavigationOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var reload: js.UndefOr[Boolean] = js.native
+    var reload: js.UndefOr[Boolean] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var skipTransition: js.UndefOr[Boolean] = js.native
+    var skipTransition: js.UndefOr[Boolean] = js.undefined
   }
   object NavigationOptions {
     
@@ -64,12 +63,11 @@ object baseMod {
   
   type Params = Record[String, js.Any]
   
-  @js.native
   trait SimpleState extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var params: Params = js.native
+    var params: Params
   }
   object SimpleState {
     
@@ -90,16 +88,15 @@ object baseMod {
     }
   }
   
-  @js.native
   trait State extends StObject {
     
-    var meta: js.UndefOr[StateMeta] = js.native
+    var meta: js.UndefOr[StateMeta] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var params: Params = js.native
+    var params: Params
     
-    var path: String = js.native
+    var path: String
   }
   object State {
     
@@ -129,18 +126,17 @@ object baseMod {
     }
   }
   
-  @js.native
   trait StateMeta extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var options: NavigationOptions = js.native
+    var options: NavigationOptions
     
-    var params: Params = js.native
+    var params: Params
     
-    var redirected: Boolean = js.native
+    var redirected: Boolean
     
-    var source: js.UndefOr[String] = js.native
+    var source: js.UndefOr[String] = js.undefined
   }
   object StateMeta {
     

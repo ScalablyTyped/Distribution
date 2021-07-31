@@ -2,16 +2,14 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteScheduleRequest extends StObject {
   
   /**
     * The name of the schedule to be deleted.
     */
-  var Name: ScheduleName = js.native
+  var Name: ScheduleName
 }
 object DeleteScheduleRequest {
   

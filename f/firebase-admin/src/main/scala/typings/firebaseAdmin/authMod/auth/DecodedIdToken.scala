@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebaseAdmin.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,9 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [ID Token section of the OpenID Connect spec](http://openid.net/specs/openid-connect-core-1_0.html#IDToken)
   * for more information about the specific properties below.
   */
-@js.native
 trait DecodedIdToken
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
   /**
     * The audience for which this token is intended.
@@ -27,7 +26,7 @@ trait DecodedIdToken
     * identifier for your Firebase project, which can be found in [your project's
     * settings](https://console.firebase.google.com/project/_/settings/general/android:com.random.android).
     */
-  var aud: String = js.native
+  var aud: String
   
   /**
     * Time, in seconds since the Unix epoch, when the end-user authentication
@@ -38,18 +37,18 @@ trait DecodedIdToken
     * SDKs will refresh a user's ID tokens every hour. Each ID token will have a
     * different [`iat`](#iat) value, but the same `auth_time` value.
     */
-  var auth_time: Double = js.native
+  var auth_time: Double
   
   /**
     * The email of the user to whom the ID token belongs, if available.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Whether or not the email of the user to whom the ID token belongs is
     * verified, provided the user has an email.
     */
-  var email_verified: js.UndefOr[Boolean] = js.native
+  var email_verified: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID token's expiration time, in seconds since the Unix epoch. That is, the
@@ -58,7 +57,7 @@ trait DecodedIdToken
     * The Firebase SDKs transparently refresh ID tokens every hour, issuing a new
     * ID token with up to a one hour expiration.
     */
-  var exp: Double = js.native
+  var exp: Double
   
   /**
     * Information about the sign in event, including which sign in provider was
@@ -67,7 +66,7 @@ trait DecodedIdToken
     * This data is provided by the Firebase Authentication service and is a
     * reserved claim in the ID token.
     */
-  var firebase: Dictkey = js.native
+  var firebase: Dictkey
   
   /**
     * The ID token's issued-at time, in seconds since the Unix epoch. That is, the
@@ -79,7 +78,7 @@ trait DecodedIdToken
     * user session corresponding to the ID token initially occurred, see the
     * [`auth_time`](#auth_time) property.
     */
-  var iat: Double = js.native
+  var iat: Double
   
   /**
     * The issuer identifier for the issuer of the response.
@@ -88,24 +87,24 @@ trait DecodedIdToken
     * `https://securetoken.google.com/<PROJECT_ID>`, where `<PROJECT_ID>` is the
     * same project ID specified in the [`aud`](#aud) property.
     */
-  var iss: String = js.native
+  var iss: String
   
   /**
     * The phone number of the user to whom the ID token belongs, if available.
     */
-  var phone_number: js.UndefOr[String] = js.native
+  var phone_number: js.UndefOr[String] = js.undefined
   
   /**
     * The photo URL for the user to whom the ID token belongs, if available.
     */
-  var picture: js.UndefOr[String] = js.native
+  var picture: js.UndefOr[String] = js.undefined
   
   /**
     * The `uid` corresponding to the user who the ID token belonged to.
     *
     * As a convenience, this value is copied over to the [`uid`](#uid) property.
     */
-  var sub: String = js.native
+  var sub: String
   
   /**
     * The `uid` corresponding to the user who the ID token belonged to.
@@ -113,7 +112,7 @@ trait DecodedIdToken
     * This value is not actually in the JWT token claims itself. It is added as a
     * convenience, and is set as the value of the [`sub`](#sub) property.
     */
-  var uid: String = js.native
+  var uid: String
 }
 object DecodedIdToken {
   

@@ -6,26 +6,26 @@ import typings.wegameApi.anon.Width
 import typings.wegameApi.wx.types.AdStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InterstitialAd extends BannerAd {
+trait InterstitialAd
+  extends StObject
+     with BannerAd {
   
   /**
     * 加载视频广告
     */
-  def load(): js.Promise[Unit] = js.native
+  def load(): js.Promise[Unit]
   
   /**
     * 监听用户点击 关闭广告 按钮的事件
     */
-  def offClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
+  def offClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit
   
   /**
     * 监听用户点击 关闭广告 按钮的事件
     */
-  def onClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit = js.native
+  def onClose(callback: js.Function1[/* res */ IsEnded, Unit]): Unit
 }
 object InterstitialAd {
   

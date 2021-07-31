@@ -3,21 +3,21 @@ package typings.stripe.mod.resources
 import typings.stripe.mod.IListOptionsCreated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPlanListOptions extends IListOptionsCreated {
+trait IPlanListOptions
+  extends StObject
+     with IListOptionsCreated {
   
   /**
     * Only return plans that are active or inactive (e.g., pass false to list all inactive products).
     */
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Only return plans for the given product.
     */
-  var product: js.UndefOr[String] = js.native
+  var product: js.UndefOr[String] = js.undefined
 }
 object IPlanListOptions {
   

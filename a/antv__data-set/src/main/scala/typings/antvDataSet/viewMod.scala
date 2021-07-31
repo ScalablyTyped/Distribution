@@ -78,7 +78,6 @@ import typings.antvDataSet.statisticsMod.StatisticsApi
 import typings.wolfy87Eventemitter.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object viewMod {
@@ -93,7 +92,7 @@ object viewMod {
        with GeoApi {
     def this(dataSet: DataSet) = this()
     def this(options: ViewOptions) = this()
-    def this(dataSet: js.UndefOr[scala.Nothing], options: ViewOptions) = this()
+    def this(dataSet: Unit, options: ViewOptions) = this()
     def this(dataSet: DataSet, options: ViewOptions) = this()
     
     var _GridHexJSON: js.Any = js.native
@@ -122,6 +121,9 @@ object viewMod {
     
     def addRow(row: js.Any): Unit = js.native
     
+    /* CompleteClass */
+    override def average(column: String): Double = js.native
+    
     /**
       * 关联的数据集
       */
@@ -132,15 +134,27 @@ object viewMod {
       */
     var dataType: String = js.native
     
-    var edges: js.Array[_] = js.native
+    var edges: js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def extent(column: String): Double = js.native
     
     def findRow(query: js.Any): js.Any = js.native
     
-    def findRows(query: js.Any): js.Array[_] = js.native
+    def findRows(query: js.Any): js.Array[js.Any] = js.native
     
-    def getColumn(columnName: String): js.Array[_] = js.native
+    /* CompleteClass */
+    override def getAllEdges(): js.Array[js.Any] = js.native
     
-    def getColumnData(columnName: String): js.Array[_] = js.native
+    /* CompleteClass */
+    override def getAllLinks(): js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def getAllNodes(): js.Array[js.Any] = js.native
+    
+    def getColumn(columnName: String): js.Array[js.Any] = js.native
+    
+    def getColumnData(columnName: String): js.Array[js.Any] = js.native
     
     def getColumnIndex(columnName: String): Double = js.native
     
@@ -148,7 +162,7 @@ object viewMod {
     
     def getColumnNames(): js.Array[String] = js.native
     
-    def getSubset(startRowIndex: Double, endRowIndex: Double, columnNames: js.Array[String]): js.Array[_] = js.native
+    def getSubset(startRowIndex: Double, endRowIndex: Double, columnNames: js.Array[String]): js.Array[js.Any] = js.native
     
     var graph: Edges = js.native
     
@@ -167,19 +181,49 @@ object viewMod {
       */
     var loose: Boolean = js.native
     
-    var nodes: js.Array[_] = js.native
+    /* CompleteClass */
+    override def max(column: String): Double = js.native
+    
+    /* CompleteClass */
+    override def mean(column: String): Double = js.native
+    
+    /* CompleteClass */
+    override def median(column: String): Double = js.native
+    
+    /* CompleteClass */
+    override def min(column: String): Double = js.native
+    
+    /* CompleteClass */
+    override def mode(column: String): Double = js.native
+    
+    var nodes: js.Array[js.Any] = js.native
     
     /**
       * 原始数据
       */
-    var origin: js.Array[_] = js.native
+    var origin: js.Array[js.Any] = js.native
+    
+    /* CompleteClass */
+    override def product(column: String): Double = js.native
+    
+    /* CompleteClass */
+    override def quantile(column: String, percent: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def quantiles(column: String, percents: js.Array[Double]): js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    override def quantilesByFraction(column: String, fraction: Double): Double = js.native
+    
+    /* CompleteClass */
+    override def range(column: String): js.Tuple2[Double, Double] = js.native
     
     def removeRow(index: Double): Unit = js.native
     
     /**
       * 存储处理后的数据
       */
-    var rows: js.Array[_] = js.native
+    var rows: js.Array[js.Any] = js.native
     
     /**
       * 载入数据
@@ -197,8 +241,17 @@ object viewMod {
           GeoJSON | HexJSON | TopoJSON | csv | diagram | dsv | geo | geojson_ | graph | hex | `hex-json` | hexjson_ | hierarchy | topojson_ | tree | tsv
         ]
     ): View = js.native
-    def source(source: js.Array[_]): View = js.native
+    def source(source: js.Array[js.Any]): View = js.native
     def source(source: View): View = js.native
+    
+    /* CompleteClass */
+    override def standardDeviation(column: String): Double = js.native
+    
+    /* CompleteClass */
+    override def sum(column: String): Double = js.native
+    
+    /* CompleteClass */
+    override def sumSimple(column: String): Double = js.native
     
     def toString(prettyPrint: Boolean): String = js.native
     
@@ -311,9 +364,12 @@ object viewMod {
     /**
       * 已应用的 transform
       */
-    var transforms: js.Array[TransformOptions[_]] = js.native
+    var transforms: js.Array[TransformOptions[js.Any]] = js.native
     
     def updateRow(index: Double, newRow: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def variance(column: String): Double = js.native
     
     /**
       *
@@ -334,14 +390,13 @@ object viewMod {
     def DataSet_=(x: TypeofDataSetInstantiable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DataSet")(x.asInstanceOf[js.Any])
   }
   
-  type ConnectorOptions[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] = TypeT[T] with (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/connector-params.ConnectorParams[T][1] */ js.Any)
+  type ConnectorOptions[T /* <: csv | tsv | dsv | graph | diagram | hex | hexjson_ | `hex-json` | HexJSON | geo | geojson_ | GeoJSON | hierarchy | tree | topojson_ | TopoJSON */] = TypeT[T] & (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/connector-params.ConnectorParams[T][1] */ js.Any)
   
-  @js.native
   trait CustomSource extends StObject {
     
-    var options: js.Any = js.native
+    var options: js.Any
     
-    var source: js.Any = js.native
+    var source: js.Any
   }
   object CustomSource {
     
@@ -362,12 +417,11 @@ object viewMod {
     }
   }
   
-  type TransformOptions[T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] = Type[T] with (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/transform-params.TransformsParams[T] */ js.Any)
+  type TransformOptions[T /* <: filter | map | pick | rename | `rename-fields` | reverse | default | sort | sortBy | `sort-by` | subset | partition | group | groups | fold | `fill-rows` | fillRows | impute | aggregate | summary | percent | proportion | regression | kernelDotdensity | `kernel-smoothDotdensity` | kernelDotregression | `kernel-smoothDotregression` | binDothistogram | binDotdot | binDothexagon | binDothex | hexbin | binDotquantile | binDotrectangle | binDotrect | treemap | hierarchyDottreemap | adjacency | hierarchyDotpartition | voronoi | diagramDotvoronoi | diagramDotsankey | sankey | diagramDotarc | arc | geoDotregion | geoDotprojection | geoDotcentroid | `tag-cloud` | `word-cloud` */] = Type[T] & (/* import warning: importer.ImportType#apply Failed type conversion: @antv/data-set.@antv/data-set/lib/transform-params.TransformsParams[T] */ js.Any)
   
-  @js.native
   trait ViewOptions extends StObject {
     
-    var watchingStates: js.UndefOr[js.Array[String]] = js.native
+    var watchingStates: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ViewOptions {
     

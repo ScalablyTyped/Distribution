@@ -2,36 +2,34 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScheduledTriggerProperties extends StObject {
   
   /**
     *  Specifies whether a scheduled flow has an incremental data transfer or a complete data transfer for each flow run. 
     */
-  var dataPullMode: js.UndefOr[DataPullMode] = js.native
+  var dataPullMode: js.UndefOr[DataPullMode] = js.undefined
   
   /**
     *  Specifies the scheduled end time for a schedule-triggered flow. 
     */
-  var scheduleEndTime: js.UndefOr[Date] = js.native
+  var scheduleEndTime: js.UndefOr[Date] = js.undefined
   
   /**
     *  The scheduling expression that determines when and how often the rule runs. 
     */
-  var scheduleExpression: ScheduleExpression = js.native
+  var scheduleExpression: ScheduleExpression
   
   /**
     *  Specifies the scheduled start time for a schedule-triggered flow. 
     */
-  var scheduleStartTime: js.UndefOr[Date] = js.native
+  var scheduleStartTime: js.UndefOr[Date] = js.undefined
   
   /**
     *  Specifies the time zone used when referring to the date and time of a scheduled-triggered flow. 
     */
-  var timezone: js.UndefOr[Timezone] = js.native
+  var timezone: js.UndefOr[Timezone] = js.undefined
 }
 object ScheduledTriggerProperties {
   

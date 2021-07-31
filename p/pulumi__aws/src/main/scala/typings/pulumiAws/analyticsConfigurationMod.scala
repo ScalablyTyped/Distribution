@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object analyticsConfigurationMod {
@@ -50,6 +49,10 @@ object analyticsConfigurationMod {
   /* static members */
   object AnalyticsConfiguration {
     
+    @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AnalyticsConfiguration resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -59,50 +62,44 @@ object analyticsConfigurationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AnalyticsConfiguration = js.native
-    @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AnalyticsConfiguration = js.native
-    @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): AnalyticsConfiguration = js.native
-    @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): AnalyticsConfiguration = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AnalyticsConfigurationState, opts: CustomResourceOptions): AnalyticsConfiguration = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsConfiguration]
     
     /**
       * Returns true if the given object is an instance of AnalyticsConfiguration.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/s3/analyticsConfiguration", "AnalyticsConfiguration.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/s3/analyticsConfiguration.AnalyticsConfiguration */ Boolean]
   }
   
-  @js.native
   trait AnalyticsConfigurationArgs extends StObject {
     
     /**
       * The name of the bucket this analytics configuration is associated with.
       */
-    val bucket: Input[String] = js.native
+    val bucket: Input[String]
     
     /**
       * Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
       */
-    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]] = js.native
+    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]] = js.undefined
     
     /**
       * Unique identifier of the analytics configuration for the bucket.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration for the analytics data export (documented below).
       */
-    val storageClassAnalysis: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]] = js.native
+    val storageClassAnalysis: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]] = js.undefined
   }
   object AnalyticsConfigurationArgs {
     
@@ -138,28 +135,27 @@ object analyticsConfigurationMod {
     }
   }
   
-  @js.native
   trait AnalyticsConfigurationState extends StObject {
     
     /**
       * The name of the bucket this analytics configuration is associated with.
       */
-    val bucket: js.UndefOr[Input[String]] = js.native
+    val bucket: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Object filtering that accepts a prefix, tags, or a logical AND of prefix and tags (documented below).
       */
-    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]] = js.native
+    val filter: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationFilter]] = js.undefined
     
     /**
       * Unique identifier of the analytics configuration for the bucket.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Configuration for the analytics data export (documented below).
       */
-    val storageClassAnalysis: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]] = js.native
+    val storageClassAnalysis: js.UndefOr[Input[typings.pulumiAws.inputMod.s3.AnalyticsConfigurationStorageClassAnalysis]] = js.undefined
   }
   object AnalyticsConfigurationState {
     

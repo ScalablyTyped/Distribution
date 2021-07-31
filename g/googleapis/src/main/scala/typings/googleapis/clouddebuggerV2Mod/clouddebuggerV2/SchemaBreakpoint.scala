@@ -3,32 +3,30 @@ package typings.googleapis.clouddebuggerV2Mod.clouddebuggerV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the breakpoint specification, status and results.
   */
-@js.native
 trait SchemaBreakpoint extends StObject {
   
   /**
     * Action that the agent should perform when the code at the breakpoint
     * location is hit.
     */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /**
     * Condition that triggers the breakpoint. The condition is a compound
     * boolean expression composed using expressions in a programming language
     * at the source location.
     */
-  var condition: js.UndefOr[String] = js.native
+  var condition: js.UndefOr[String] = js.undefined
   
   /**
     * Time this breakpoint was created by the server in seconds resolution.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * Values of evaluated expressions at breakpoint time. The evaluated
@@ -38,7 +36,7 @@ trait SchemaBreakpoint extends StObject {
     * expression. If the expression cannot be evaluated, the `status` inside
     * the `Variable` will indicate an error and contain the error text.
     */
-  var evaluatedExpressions: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var evaluatedExpressions: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
   
   /**
     * List of read-only expressions to evaluate at the breakpoint location. The
@@ -46,40 +44,40 @@ trait SchemaBreakpoint extends StObject {
     * the source location. If the breakpoint action is `LOG`, the evaluated
     * expressions are included in log statements.
     */
-  var expressions: js.UndefOr[js.Array[String]] = js.native
+  var expressions: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Time this breakpoint was finalized as seen by the server in seconds
     * resolution.
     */
-  var finalTime: js.UndefOr[String] = js.native
+  var finalTime: js.UndefOr[String] = js.undefined
   
   /**
     * Breakpoint identifier, unique in the scope of the debuggee.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * When true, indicates that this is a final result and the breakpoint state
     * will not change from here on.
     */
-  var isFinalState: js.UndefOr[Boolean] = js.native
+  var isFinalState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A set of custom breakpoint properties, populated by the agent, to be
     * displayed to the user.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Breakpoint source location.
     */
-  var location: js.UndefOr[SchemaSourceLocation] = js.native
+  var location: js.UndefOr[SchemaSourceLocation] = js.undefined
   
   /**
     * Indicates the severity of the log. Only relevant when action is `LOG`.
     */
-  var logLevel: js.UndefOr[String] = js.native
+  var logLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Only relevant when action is `LOG`. Defines the message to log when the
@@ -89,13 +87,13 @@ trait SchemaBreakpoint extends StObject {
     * `log_message_format` are not logged.  Example: `Message received, id =
     * $0, count = $1` with `expressions` = `[ message.id, message.count ]`.
     */
-  var logMessageFormat: js.UndefOr[String] = js.native
+  var logMessageFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The stack at breakpoint time, where stack_frames[0] represents the most
     * recently entered function.
     */
-  var stackFrames: js.UndefOr[js.Array[SchemaStackFrame]] = js.native
+  var stackFrames: js.UndefOr[js.Array[SchemaStackFrame]] = js.undefined
   
   /**
     * Breakpoint status.  The status includes an error flag and a human
@@ -107,12 +105,12 @@ trait SchemaBreakpoint extends StObject {
     * referring to location *   `Field f not found in class C` referring to
     * condition
     */
-  var status: js.UndefOr[SchemaStatusMessage] = js.native
+  var status: js.UndefOr[SchemaStatusMessage] = js.undefined
   
   /**
     * E-mail address of the user that created this breakpoint
     */
-  var userEmail: js.UndefOr[String] = js.native
+  var userEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The `variable_table` exists to aid with computation, memory and network
@@ -126,7 +124,7 @@ trait SchemaBreakpoint extends StObject {
     * from the referencing variable. The effective variable is a merge of the
     * referencing variable and the referenced variable.
     */
-  var variableTable: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var variableTable: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
 }
 object SchemaBreakpoint {
   

@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait NetworkManager extends Service {
   ): Request[AssociateLinkResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_NetworkManager: ConfigBase with ClientConfiguration = js.native
+  var config_NetworkManager: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a new device in a global network. If you specify both a site ID and a location, the location of the site is used for visualization in the Network Manager console.

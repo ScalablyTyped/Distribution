@@ -13,53 +13,51 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropdownProps extends StObject {
   
-  var error: js.UndefOr[Boolean] = js.native
+  var error: js.UndefOr[Boolean] = js.undefined
   
-  var getOptionLabel: js.UndefOr[js.Function1[/* args */ OptionState, ReactNode]] = js.native
+  var getOptionLabel: js.UndefOr[js.Function1[/* args */ OptionState, ReactNode]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var innerRef: js.UndefOr[Ref[_]] = js.native
+  var innerRef: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var isLoading: js.UndefOr[Boolean] = js.native
+  var isLoading: js.UndefOr[Boolean] = js.undefined
   
-  var keyboardControlNode: js.UndefOr[Ref[_]] = js.native
+  var keyboardControlNode: js.UndefOr[Ref[js.Any]] = js.undefined
   
-  var labelKey: js.UndefOr[String] = js.native
+  var labelKey: js.UndefOr[String] = js.undefined
   
-  var maxDropdownHeight: js.UndefOr[String] = js.native
+  var maxDropdownHeight: js.UndefOr[String] = js.undefined
   
-  var multi: js.UndefOr[Boolean] = js.native
+  var multi: js.UndefOr[Boolean] = js.undefined
   
-  var noResultsMsg: js.UndefOr[ReactNode] = js.native
+  var noResultsMsg: js.UndefOr[ReactNode] = js.undefined
   
-  var onActiveDescendantChange: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.native
+  var onActiveDescendantChange: js.UndefOr[js.Function1[/* id */ js.UndefOr[String], Unit]] = js.undefined
   
-  var onItemSelect: js.UndefOr[OnItemSelect] = js.native
+  var onItemSelect: js.UndefOr[OnItemSelect] = js.undefined
   
-  var options: js.UndefOr[Value] = js.native
+  var options: js.UndefOr[Value] = js.undefined
   
-  var overrides: js.UndefOr[DropdownOverrides] = js.native
+  var overrides: js.UndefOr[DropdownOverrides] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var searchable: js.UndefOr[Boolean] = js.native
+  var searchable: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[mini | default_ | compact | large_] = js.native
+  var size: js.UndefOr[mini | default_ | compact | large_] = js.undefined
   
-  var `type`: js.UndefOr[select | search] = js.native
+  var `type`: js.UndefOr[select | search] = js.undefined
   
-  var value: js.UndefOr[Value] = js.native
+  var value: js.UndefOr[Value] = js.undefined
   
-  var valueKey: js.UndefOr[String] = js.native
+  var valueKey: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object DropdownProps {
   
@@ -91,10 +89,10 @@ object DropdownProps {
     def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
     
     @scala.inline
-    def setInnerRef(value: Ref[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+    def setInnerRef(value: Ref[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+    def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
     
     @scala.inline
     def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
@@ -109,10 +107,10 @@ object DropdownProps {
     def setIsLoadingUndefined: Self = StObject.set(x, "isLoading", js.undefined)
     
     @scala.inline
-    def setKeyboardControlNode(value: Ref[_]): Self = StObject.set(x, "keyboardControlNode", value.asInstanceOf[js.Any])
+    def setKeyboardControlNode(value: Ref[js.Any]): Self = StObject.set(x, "keyboardControlNode", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setKeyboardControlNodeFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "keyboardControlNode", js.Any.fromFunction1(value))
+    def setKeyboardControlNodeFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "keyboardControlNode", js.Any.fromFunction1(value))
     
     @scala.inline
     def setKeyboardControlNodeNull: Self = StObject.set(x, "keyboardControlNode", null)

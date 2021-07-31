@@ -2,13 +2,11 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to split the selected table cells based on the specified options.
   */
-@js.native
 trait SplitTableCellsCommand extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SplitTableCellsCommand extends StObject {
     * @param columnCount An integer value specifying a number of columns in the split table cells.
     * @param mergeBeforeSplit true to merge the selected cells before the splitting; otherwise, false.
     */
-  def execute(rowCount: Double, columnCount: Double, mergeBeforeSplit: Boolean): Boolean = js.native
+  def execute(rowCount: Double, columnCount: Double, mergeBeforeSplit: Boolean): Boolean
   
   /**
     * Gets information about the command's state.
     */
-  def getState(): SimpleCommandState = js.native
+  def getState(): SimpleCommandState
 }
 object SplitTableCellsCommand {
   

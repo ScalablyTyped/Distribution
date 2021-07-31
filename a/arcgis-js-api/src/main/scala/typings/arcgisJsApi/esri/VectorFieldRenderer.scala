@@ -17,12 +17,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.`vector-field`
 import typings.arcgisJsApi.arcgisJsApiStrings.`wind-speed`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait VectorFieldRenderer
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**

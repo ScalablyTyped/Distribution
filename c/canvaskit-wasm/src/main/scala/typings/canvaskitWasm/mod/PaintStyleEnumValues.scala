@@ -2,15 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PaintStyleEnumValues extends EmbindEnum {
+trait PaintStyleEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Fill: PaintStyle = js.native
+  var Fill: PaintStyle
   
-  var Stroke: PaintStyle = js.native
+  var Stroke: PaintStyle
 }
 object PaintStyleEnumValues {
   

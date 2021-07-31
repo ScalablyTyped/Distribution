@@ -3,7 +3,6 @@ package typings.typesettable
 import typings.typesettable.contextsMod.IRulerFactoryContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractMeasurerMod {
@@ -40,12 +39,11 @@ object abstractMeasurerMod {
     def HEIGHT_TEXT_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HEIGHT_TEXT")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IDimensions extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object IDimensions {
     

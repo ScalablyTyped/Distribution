@@ -2,26 +2,24 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateEntityToThingRequest extends StObject {
   
   /**
     * The ID of the device to be associated with the thing. The ID should be in the following format.  urn:tdm:REGION/ACCOUNT ID/default:device:DEVICENAME 
     */
-  var entityId: Urn = js.native
+  var entityId: Urn
   
   /**
     * The version of the user's namespace. Defaults to the latest version of the user's namespace.
     */
-  var namespaceVersion: js.UndefOr[Version] = js.native
+  var namespaceVersion: js.UndefOr[Version] = js.undefined
   
   /**
     * The name of the thing to which the entity is to be associated.
     */
-  var thingName: ThingName = js.native
+  var thingName: ThingName
 }
 object AssociateEntityToThingRequest {
   

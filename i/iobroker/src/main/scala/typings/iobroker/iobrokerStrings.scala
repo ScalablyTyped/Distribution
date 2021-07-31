@@ -7,7 +7,6 @@ import typings.iobroker.objectsMod.global.ioBroker.Languages
 import typings.iobroker.objectsMod.global.ioBroker.ObjectType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iobrokerStrings {
@@ -48,12 +47,16 @@ object iobrokerStrings {
   def acl: acl = "acl".asInstanceOf[acl]
   
   @js.native
-  sealed trait adapter extends ObjectType
+  sealed trait adapter
+    extends StObject
+       with ObjectType
   @scala.inline
   def adapter: adapter = "adapter".asInstanceOf[adapter]
   
   @js.native
-  sealed trait array extends CommonType
+  sealed trait array
+    extends StObject
+       with CommonType
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
@@ -68,17 +71,23 @@ object iobrokerStrings {
   def average: average = "average".asInstanceOf[average]
   
   @js.native
-  sealed trait boolean extends CommonType
+  sealed trait boolean
+    extends StObject
+       with CommonType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
   @js.native
-  sealed trait channel extends ObjectType
+  sealed trait channel
+    extends StObject
+       with ObjectType
   @scala.inline
   def channel: channel = "channel".asInstanceOf[channel]
   
   @js.native
-  sealed trait chart extends ObjectType
+  sealed trait chart
+    extends StObject
+       with ObjectType
   @scala.inline
   def chart: chart = "chart".asInstanceOf[chart]
   
@@ -88,7 +97,9 @@ object iobrokerStrings {
   def cloud: cloud = "cloud".asInstanceOf[cloud]
   
   @js.native
-  sealed trait config extends ObjectType
+  sealed trait config
+    extends StObject
+       with ObjectType
   @scala.inline
   def config: config = "config".asInstanceOf[config]
   
@@ -103,7 +114,9 @@ object iobrokerStrings {
   def create: create = "create".asInstanceOf[create]
   
   @js.native
-  sealed trait daemon extends InstanceMode
+  sealed trait daemon
+    extends StObject
+       with InstanceMode
   @scala.inline
   def daemon: daemon = "daemon".asInstanceOf[daemon]
   
@@ -113,12 +126,16 @@ object iobrokerStrings {
   def darwin: darwin = "darwin".asInstanceOf[darwin]
   
   @js.native
-  sealed trait de extends Languages
+  sealed trait de
+    extends StObject
+       with Languages
   @scala.inline
   def de: de = "de".asInstanceOf[de]
   
   @js.native
-  sealed trait debug extends LogLevel
+  sealed trait debug
+    extends StObject
+       with LogLevel
   @scala.inline
   def debug: debug = "debug".asInstanceOf[debug]
   
@@ -128,27 +145,37 @@ object iobrokerStrings {
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait device extends ObjectType
+  sealed trait device
+    extends StObject
+       with ObjectType
   @scala.inline
   def device: device = "device".asInstanceOf[device]
   
   @js.native
-  sealed trait en extends Languages
+  sealed trait en
+    extends StObject
+       with Languages
   @scala.inline
   def en: en = "en".asInstanceOf[en]
   
   @js.native
-  sealed trait enum extends ObjectType
+  sealed trait `enum`
+    extends StObject
+       with ObjectType
   @scala.inline
-  def enum: enum = "enum".asInstanceOf[enum]
+  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait es extends Languages
+  sealed trait es
+    extends StObject
+       with Languages
   @scala.inline
   def es: es = "es".asInstanceOf[es]
   
@@ -158,32 +185,44 @@ object iobrokerStrings {
   def execute: execute = "execute".asInstanceOf[execute]
   
   @js.native
-  sealed trait extension extends InstanceMode
+  sealed trait `extension`
+    extends StObject
+       with InstanceMode
   @scala.inline
-  def extension: extension = "extension".asInstanceOf[extension]
+  def `extension`: `extension` = "extension".asInstanceOf[`extension`]
   
   @js.native
-  sealed trait file extends CommonType
+  sealed trait file
+    extends StObject
+       with CommonType
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   
   @js.native
-  sealed trait folder extends ObjectType
+  sealed trait folder
+    extends StObject
+       with ObjectType
   @scala.inline
   def folder: folder = "folder".asInstanceOf[folder]
   
   @js.native
-  sealed trait fr extends Languages
+  sealed trait fr
+    extends StObject
+       with Languages
   @scala.inline
   def fr: fr = "fr".asInstanceOf[fr]
   
   @js.native
-  sealed trait group extends ObjectType
+  sealed trait group
+    extends StObject
+       with ObjectType
   @scala.inline
   def group: group = "group".asInstanceOf[group]
   
   @js.native
-  sealed trait host extends ObjectType
+  sealed trait host
+    extends StObject
+       with ObjectType
   @scala.inline
   def host: host = "host".asInstanceOf[host]
   
@@ -194,18 +233,23 @@ object iobrokerStrings {
   
   @js.native
   sealed trait info
-    extends LogLevel
+    extends StObject
+       with LogLevel
        with ObjectType
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
   @js.native
-  sealed trait instance extends ObjectType
+  sealed trait instance
+    extends StObject
+       with ObjectType
   @scala.inline
   def instance: instance = "instance".asInstanceOf[instance]
   
   @js.native
-  sealed trait it extends Languages
+  sealed trait it
+    extends StObject
+       with Languages
   @scala.inline
   def it: it = "it".asInstanceOf[it]
   
@@ -240,7 +284,9 @@ object iobrokerStrings {
   def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait meta extends ObjectType
+  sealed trait meta
+    extends StObject
+       with ObjectType
   @scala.inline
   def meta: meta = "meta".asInstanceOf[meta]
   
@@ -265,27 +311,37 @@ object iobrokerStrings {
   def minmax: minmax = "minmax".asInstanceOf[minmax]
   
   @js.native
-  sealed trait mixed extends CommonType
+  sealed trait mixed
+    extends StObject
+       with CommonType
   @scala.inline
   def mixed: mixed = "mixed".asInstanceOf[mixed]
   
   @js.native
-  sealed trait nl extends Languages
+  sealed trait nl
+    extends StObject
+       with Languages
   @scala.inline
   def nl: nl = "nl".asInstanceOf[nl]
   
   @js.native
-  sealed trait none extends InstanceMode
+  sealed trait none
+    extends StObject
+       with InstanceMode
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait number extends CommonType
+  sealed trait number
+    extends StObject
+       with CommonType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
   @js.native
-  sealed trait `object` extends CommonType
+  sealed trait `object`
+    extends StObject
+       with CommonType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -295,7 +351,9 @@ object iobrokerStrings {
   def objectChange: objectChange = "objectChange".asInstanceOf[objectChange]
   
   @js.native
-  sealed trait once extends InstanceMode
+  sealed trait once
+    extends StObject
+       with InstanceMode
   @scala.inline
   def once: once = "once".asInstanceOf[once]
   
@@ -305,7 +363,9 @@ object iobrokerStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait pl extends Languages
+  sealed trait pl
+    extends StObject
+       with Languages
   @scala.inline
   def pl: pl = "pl".asInstanceOf[pl]
   
@@ -315,7 +375,9 @@ object iobrokerStrings {
   def poll: poll = "poll".asInstanceOf[poll]
   
   @js.native
-  sealed trait pt extends Languages
+  sealed trait pt
+    extends StObject
+       with Languages
   @scala.inline
   def pt: pt = "pt".asInstanceOf[pt]
   
@@ -335,17 +397,23 @@ object iobrokerStrings {
   def ready: ready = "ready".asInstanceOf[ready]
   
   @js.native
-  sealed trait ru extends Languages
+  sealed trait ru
+    extends StObject
+       with Languages
   @scala.inline
   def ru: ru = "ru".asInstanceOf[ru]
   
   @js.native
-  sealed trait schedule extends InstanceMode
+  sealed trait schedule
+    extends StObject
+       with InstanceMode
   @scala.inline
   def schedule: schedule = "schedule".asInstanceOf[schedule]
   
   @js.native
-  sealed trait script extends ObjectType
+  sealed trait script
+    extends StObject
+       with ObjectType
   @scala.inline
   def script: script = "script".asInstanceOf[script]
   
@@ -355,12 +423,16 @@ object iobrokerStrings {
   def sendto: sendto = "sendto".asInstanceOf[sendto]
   
   @js.native
-  sealed trait silly extends LogLevel
+  sealed trait silly
+    extends StObject
+       with LogLevel
   @scala.inline
   def silly: silly = "silly".asInstanceOf[silly]
   
   @js.native
-  sealed trait state extends ObjectType
+  sealed trait state
+    extends StObject
+       with ObjectType
   @scala.inline
   def state: state = "state".asInstanceOf[state]
   
@@ -370,12 +442,16 @@ object iobrokerStrings {
   def stateChange: stateChange = "stateChange".asInstanceOf[stateChange]
   
   @js.native
-  sealed trait string extends CommonType
+  sealed trait string
+    extends StObject
+       with CommonType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait subscribe extends InstanceMode
+  sealed trait subscribe
+    extends StObject
+       with InstanceMode
   @scala.inline
   def subscribe: subscribe = "subscribe".asInstanceOf[subscribe]
   
@@ -390,7 +466,9 @@ object iobrokerStrings {
   def unload: unload = "unload".asInstanceOf[unload]
   
   @js.native
-  sealed trait user extends ObjectType
+  sealed trait user
+    extends StObject
+       with ObjectType
   @scala.inline
   def user: user = "user".asInstanceOf[user]
   
@@ -400,7 +478,9 @@ object iobrokerStrings {
   def users: users = "users".asInstanceOf[users]
   
   @js.native
-  sealed trait warn extends LogLevel
+  sealed trait warn
+    extends StObject
+       with LogLevel
   @scala.inline
   def warn: warn = "warn".asInstanceOf[warn]
   
@@ -415,7 +495,9 @@ object iobrokerStrings {
   def write: write = "write".asInstanceOf[write]
   
   @js.native
-  sealed trait `zh-cn` extends Languages
+  sealed trait `zh-cn`
+    extends StObject
+       with Languages
   @scala.inline
   def `zh-cn`: `zh-cn` = "zh-cn".asInstanceOf[`zh-cn`]
 }

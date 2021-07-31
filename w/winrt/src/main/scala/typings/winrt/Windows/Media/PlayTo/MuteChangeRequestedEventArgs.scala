@@ -2,11 +2,11 @@ package typings.winrt.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MuteChangeRequestedEventArgs extends IMuteChangeRequestedEventArgs
+trait MuteChangeRequestedEventArgs
+  extends StObject
+     with IMuteChangeRequestedEventArgs
 object MuteChangeRequestedEventArgs {
   
   @scala.inline

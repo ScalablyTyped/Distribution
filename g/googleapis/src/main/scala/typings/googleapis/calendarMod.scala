@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarMod {
+  
+  @JSImport("googleapis/build/src/apis/calendar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object calendarMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/calendar", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/calendar", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object calendarMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/calendar", "calendar")
-  @js.native
-  def calendar(options: Options): Calendar = js.native
-  @JSImport("googleapis/build/src/apis/calendar", "calendar")
-  @js.native
-  def calendar_v3(version: v3): Calendar = js.native
+  @scala.inline
+  def calendar(options: Options): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(options.asInstanceOf[js.Any]).asInstanceOf[Calendar]
+  
+  @scala.inline
+  def calendar_v3(version: v3): Calendar = ^.asInstanceOf[js.Dynamic].applyDynamic("calendar")(version.asInstanceOf[js.Any]).asInstanceOf[Calendar]
 }

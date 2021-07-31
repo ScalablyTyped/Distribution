@@ -10,9 +10,9 @@ Crazy fast http radix based router
 | ------------------ | :-------------: |
 | Full name          | find-my-way |
 | Keywords           | http, router, radix, fast, speed |
-| # releases         | 23 |
-| # dependents       | 66 |
-| # downloads        | 8734631 |
+| # releases         | 17 |
+| # dependents       | 72 |
+| # downloads        | 10091977 |
 | # stars            | 5 |
 
 ## Links

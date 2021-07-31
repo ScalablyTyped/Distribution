@@ -5,16 +5,17 @@ import typings.nodePgMigrate.extensionsTypesMod.CreateExtension
 import typings.nodePgMigrate.extensionsTypesMod.DropExtension
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object extensionsMod {
   
-  @JSImport("node-pg-migrate/dist/operations/extensions", "createExtension")
+  @JSImport("node-pg-migrate/dist/operations/extensions", JSImport.Namespace)
   @js.native
-  def createExtension(mOptions: MigrationOptions): CreateExtension = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-pg-migrate/dist/operations/extensions", "dropExtension")
-  @js.native
-  def dropExtension(mOptions: MigrationOptions): DropExtension = js.native
+  @scala.inline
+  def createExtension(mOptions: MigrationOptions): CreateExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("createExtension")(mOptions.asInstanceOf[js.Any]).asInstanceOf[CreateExtension]
+  
+  @scala.inline
+  def dropExtension(mOptions: MigrationOptions): DropExtension = ^.asInstanceOf[js.Dynamic].applyDynamic("dropExtension")(mOptions.asInstanceOf[js.Any]).asInstanceOf[DropExtension]
 }

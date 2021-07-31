@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SiteVideoSettings extends StObject {
   
   /** Settings for the companion creatives of video creatives served to this site. */
-  var companionSettings: js.UndefOr[SiteCompanionSetting] = js.native
+  var companionSettings: js.UndefOr[SiteCompanionSetting] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#siteVideoSettings". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Whether OBA icons are enabled for this placement. */
-  var obaEnabled: js.UndefOr[Boolean] = js.native
+  var obaEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Settings for the OBA icon of video creatives served to this site. This will act as default for new placements created under this site. */
-  var obaSettings: js.UndefOr[ObaIcon] = js.native
+  var obaSettings: js.UndefOr[ObaIcon] = js.undefined
   
   /** Orientation of a site template used for video. This will act as default for new placements created under this site. */
-  var orientation: js.UndefOr[String] = js.native
+  var orientation: js.UndefOr[String] = js.undefined
   
   /** Settings for the skippability of video creatives served to this site. This will act as default for new placements created under this site. */
-  var skippableSettings: js.UndefOr[SiteSkippableSetting] = js.native
+  var skippableSettings: js.UndefOr[SiteSkippableSetting] = js.undefined
   
   /** Settings for the transcodes of video creatives served to this site. This will act as default for new placements created under this site. */
-  var transcodeSettings: js.UndefOr[SiteTranscodeSetting] = js.native
+  var transcodeSettings: js.UndefOr[SiteTranscodeSetting] = js.undefined
 }
 object SiteVideoSettings {
   

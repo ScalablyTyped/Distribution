@@ -5,29 +5,29 @@ import typings.awsSdkClientCodecommitNode.typesPullRequestEventMod.UnmarshalledP
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDescribePullRequestEventsOutputMod {
   
-  @js.native
-  trait DescribePullRequestEventsOutput extends OutputTypesUnion {
+  trait DescribePullRequestEventsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An enumeration token that can be used in a request to return the next batch of the results.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Information about the pull request events.</p>
       */
-    var pullRequestEvents: js.Array[UnmarshalledPullRequestEvent] = js.native
+    var pullRequestEvents: js.Array[UnmarshalledPullRequestEvent]
   }
   object DescribePullRequestEventsOutput {
     

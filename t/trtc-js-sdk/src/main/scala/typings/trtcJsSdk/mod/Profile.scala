@@ -2,23 +2,21 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Profile extends StObject {
   
   /** 比特率 kbs */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /** 帧率 */
-  var frameRate: Double = js.native
+  var frameRate: Double
   
   /** 视频高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 视频宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object Profile {
   

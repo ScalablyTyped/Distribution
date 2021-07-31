@@ -12,7 +12,7 @@ Featherlight is a very lightweight jQuery lightbox plugin. It's simple yet flexi
 | Keywords           | ajax, customizable, dialog, easy, fancy, fast, html5, image, jquery, lightbox, lightweight, minimal, modal, popup, simple, slim, small, ui, window, jquery-plugin, ecosystem:jquery |
 | # releases         | 2 |
 | # dependents       | 6 |
-| # downloads        | 191229 |
+| # downloads        | 218604 |
 | # stars            | 0 |
 
 ## Links

@@ -2,15 +2,15 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpatialReferenceWkt extends SpatialReference {
+trait SpatialReferenceWkt
+  extends StObject
+     with SpatialReference {
   
-  var latestWkt: js.UndefOr[String] = js.native
+  var latestWkt: js.UndefOr[String] = js.undefined
   
-  var wkt: js.UndefOr[String] = js.native
+  var wkt: js.UndefOr[String] = js.undefined
 }
 object SpatialReferenceWkt {
   

@@ -2,10 +2,8 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstancesResumeRequest extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait SchemaInstancesResumeRequest extends StObject {
     * protected with a customer-supplied encryption key it should not be
     * specified.
     */
-  var disks: js.UndefOr[js.Array[SchemaCustomerEncryptionKeyProtectedDisk]] = js.native
+  var disks: js.UndefOr[js.Array[SchemaCustomerEncryptionKeyProtectedDisk]] = js.undefined
   
   /**
     * Decrypts data associated with an instance that is protected with a
@@ -23,7 +21,7 @@ trait SchemaInstancesResumeRequest extends StObject {
     * protected with a customer-supplied encryption key, the correct key must
     * be provided otherwise the instance resume will not succeed.
     */
-  var instanceEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var instanceEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
 }
 object SchemaInstancesResumeRequest {
   

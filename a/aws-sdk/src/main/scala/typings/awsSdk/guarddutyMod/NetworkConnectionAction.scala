@@ -2,46 +2,44 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConnectionAction extends StObject {
   
   /**
     * Indicates whether EC2 blocked the network connection to your instance.
     */
-  var Blocked: js.UndefOr[Boolean] = js.native
+  var Blocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The network connection direction.
     */
-  var ConnectionDirection: js.UndefOr[String] = js.native
+  var ConnectionDirection: js.UndefOr[String] = js.undefined
   
   /**
     * The local IP information of the connection.
     */
-  var LocalIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalIpDetails] = js.native
+  var LocalIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalIpDetails] = js.undefined
   
   /**
     * The local port information of the connection.
     */
-  var LocalPortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalPortDetails] = js.native
+  var LocalPortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.LocalPortDetails] = js.undefined
   
   /**
     * The network connection protocol.
     */
-  var Protocol: js.UndefOr[String] = js.native
+  var Protocol: js.UndefOr[String] = js.undefined
   
   /**
     * The remote IP information of the connection.
     */
-  var RemoteIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemoteIpDetails] = js.native
+  var RemoteIpDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemoteIpDetails] = js.undefined
   
   /**
     * The remote port information of the connection.
     */
-  var RemotePortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemotePortDetails] = js.native
+  var RemotePortDetails: js.UndefOr[typings.awsSdk.guarddutyMod.RemotePortDetails] = js.undefined
 }
 object NetworkConnectionAction {
   

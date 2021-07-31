@@ -3,19 +3,19 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MoreButtonClickedEventArgs extends ProcessingModeEventArgs {
+trait MoreButtonClickedEventArgs
+  extends StObject
+     with ProcessingModeEventArgs {
   
-  var handled: Boolean = js.native
+  var handled: Boolean
   
-  val interval: BootstrapTimeInterval = js.native
+  val interval: BootstrapTimeInterval
   
-  val resource: String = js.native
+  val resource: String
   
-  val targetDateTime: Date = js.native
+  val targetDateTime: Date
 }
 object MoreButtonClickedEventArgs {
   

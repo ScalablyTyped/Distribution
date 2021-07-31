@@ -2,7 +2,6 @@ package typings.highcharts.sonificationMod.highchartsAugmentingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,7 +52,7 @@ trait Instrument extends StObject {
     *        Data to send to the onEnd callback functions.
     */
   def stop(immediately: Boolean): Unit = js.native
-  def stop(immediately: Boolean, onStopped: js.UndefOr[scala.Nothing], callbackData: js.Any): Unit = js.native
   def stop(immediately: Boolean, onStopped: js.Function): Unit = js.native
   def stop(immediately: Boolean, onStopped: js.Function, callbackData: js.Any): Unit = js.native
+  def stop(immediately: Boolean, onStopped: Unit, callbackData: js.Any): Unit = js.native
 }

@@ -12,7 +12,7 @@ File system-based approach for handling routes in Express.
 | Keywords           | express, route, fs, file, system |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 372 |
+| # downloads        | 616 |
 | # stars            | 0 |
 
 ## Links

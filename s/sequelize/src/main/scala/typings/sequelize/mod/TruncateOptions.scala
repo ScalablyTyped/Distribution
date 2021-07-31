@@ -2,15 +2,14 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options passed to Model.destroy in addition to truncate
   */
-@js.native
 trait TruncateOptions
-  extends LoggingOptions
+  extends StObject
+     with LoggingOptions
      with SearchPathOptions {
   
   /**
@@ -19,14 +18,14 @@ trait TruncateOptions
     *
     * Defaults to false;
     */
-  var cascade: js.UndefOr[Boolean] = js.native
+  var cascade: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Delete instead of setting deletedAt to current timestamp (only applicable if paranoid is enabled)
     *
     * Defaults to false;
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
 }
 object TruncateOptions {
   

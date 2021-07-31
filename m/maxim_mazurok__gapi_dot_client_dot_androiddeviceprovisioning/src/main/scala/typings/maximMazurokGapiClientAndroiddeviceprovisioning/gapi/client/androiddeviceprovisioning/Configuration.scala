@@ -2,56 +2,54 @@ package typings.maximMazurokGapiClientAndroiddeviceprovisioning.gapi.client.andr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Configuration extends StObject {
   
   /** Required. The name of the organization. Zero-touch enrollment shows this organization name to device users during device provisioning. */
-  var companyName: js.UndefOr[String] = js.native
+  var companyName: js.UndefOr[String] = js.undefined
   
   /** Output only. The ID of the configuration. Assigned by the server. */
-  var configurationId: js.UndefOr[String] = js.native
+  var configurationId: js.UndefOr[String] = js.undefined
   
   /**
     * Required. A short name that describes the configuration's purpose. For example, _Sales team_ or _Temporary employees_. The zero-touch enrollment portal displays this name to IT
     * admins.
     */
-  var configurationName: js.UndefOr[String] = js.native
+  var configurationName: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The email address that device users can contact to get help. Zero-touch enrollment shows this email address to device users before device provisioning. The value is
     * validated on input.
     */
-  var contactEmail: js.UndefOr[String] = js.native
+  var contactEmail: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The telephone number that device users can call, using another device, to get help. Zero-touch enrollment shows this number to device users before device provisioning.
     * Accepts numerals, spaces, the plus sign, hyphens, and parentheses.
     */
-  var contactPhone: js.UndefOr[String] = js.native
+  var contactPhone: js.UndefOr[String] = js.undefined
   
   /**
     * A message, containing one or two sentences, to help device users get help or give them more details about what’s happening to their device. Zero-touch enrollment shows this message
     * before the device is provisioned.
     */
-  var customMessage: js.UndefOr[String] = js.native
+  var customMessage: js.UndefOr[String] = js.undefined
   
   /** The JSON-formatted EMM provisioning extras that are passed to the DPC. */
-  var dpcExtras: js.UndefOr[String] = js.native
+  var dpcExtras: js.UndefOr[String] = js.undefined
   
   /** Required. The resource name of the selected DPC (device policy controller) in the format `customers/[CUSTOMER_ID]/dpcs/ *`. To list the supported DPCs, call `customers.dpcs.list`. */
-  var dpcResourcePath: js.UndefOr[String] = js.native
+  var dpcResourcePath: js.UndefOr[String] = js.undefined
   
   /**
     * Required. Whether this is the default configuration that zero-touch enrollment applies to any new devices the organization purchases in the future. Only one customer configuration
     * can be the default. Setting this value to `true`, changes the previous default configuration's `isDefault` value to `false`.
     */
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. The API resource name in the format `customers/[CUSTOMER_ID]/configurations/[CONFIGURATION_ID]`. Assigned by the server. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object Configuration {
   

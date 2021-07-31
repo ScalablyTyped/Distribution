@@ -5,21 +5,20 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItemContentProps
-  extends MDLHTMLAttributes
+  extends StObject
+     with MDLHTMLAttributes
      with DOMAttributes[ListItemContent] {
   
-  var avatar: js.UndefOr[String | Element] = js.native
+  var avatar: js.UndefOr[String | Element] = js.undefined
   
-  var icon: js.UndefOr[String | Element] = js.native
+  var icon: js.UndefOr[String | Element] = js.undefined
   
-  var subtitle: js.UndefOr[ReactNode] = js.native
+  var subtitle: js.UndefOr[ReactNode] = js.undefined
   
-  var useBodyClass: js.UndefOr[Boolean] = js.native
+  var useBodyClass: js.UndefOr[Boolean] = js.undefined
 }
 object ListItemContentProps {
   

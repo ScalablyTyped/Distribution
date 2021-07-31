@@ -3,7 +3,6 @@ package typings.vegaTypings.scaleMod
 import typings.vegaTypings.axisMod._TickCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vegaTypings.vegaTypingsStrings.month
   - typings.vegaTypings.vegaTypingsStrings.year
 */
-trait TimeInterval extends _TickCount
+trait TimeInterval
+  extends StObject
+     with _TickCount
 object TimeInterval {
   
   @scala.inline

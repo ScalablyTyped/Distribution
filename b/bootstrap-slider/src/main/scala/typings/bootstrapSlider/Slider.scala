@@ -3,7 +3,6 @@ package typings.bootstrapSlider
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -79,9 +78,9 @@ trait Slider extends StObject {
     * If optional triggerChangeEvent parameter is true, 'change' events will be triggered.
     */
   def setValue(newValue: Double): this.type = js.native
-  def setValue(newValue: Double, triggerSlideEvent: js.UndefOr[scala.Nothing], triggerChangeEvent: Boolean): this.type = js.native
   def setValue(newValue: Double, triggerSlideEvent: Boolean): this.type = js.native
   def setValue(newValue: Double, triggerSlideEvent: Boolean, triggerChangeEvent: Boolean): this.type = js.native
+  def setValue(newValue: Double, triggerSlideEvent: Unit, triggerChangeEvent: Boolean): this.type = js.native
   
   /**
     * Toggles the slider between enabled and disabled

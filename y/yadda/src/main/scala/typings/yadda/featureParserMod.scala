@@ -4,30 +4,30 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.yadda.languageMod.Library
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object featureParserMod {
   
   @JSImport("yadda/lib/parsers/FeatureParser", JSImport.Namespace)
   @js.native
-  class ^ () extends FeatureParser {
+  class ^ ()
+    extends StObject
+       with FeatureParser {
     def this(language: typings.yadda.languageMod.^[Library]) = this()
     def this(options: Options) = this()
   }
   
   type AnnotationsExport = StringDictionary[String]
   
-  @js.native
   trait FeatureExport extends StObject {
     
-    var annotations: AnnotationsExport = js.native
+    var annotations: AnnotationsExport
     
-    var description: String = js.native
+    var description: String
     
-    var scenarios: js.Array[ScenarioExport] = js.native
+    var scenarios: js.Array[ScenarioExport]
     
-    var title: String = js.native
+    var title: String
   }
   object FeatureExport {
     
@@ -69,14 +69,13 @@ object featureParserMod {
     def parse(text: String, next: js.Function1[/* specification */ SpecificationExport, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var language: js.UndefOr[typings.yadda.languageMod.^[Library]] = js.native
+    var language: js.UndefOr[typings.yadda.languageMod.^[Library]] = js.undefined
     
-    var leftPlaceholderChar: String = js.native
+    var leftPlaceholderChar: String
     
-    var rightPlaceholderChar: String = js.native
+    var rightPlaceholderChar: String
   }
   object Options {
     
@@ -103,16 +102,15 @@ object featureParserMod {
     }
   }
   
-  @js.native
   trait ScenarioExport extends StObject {
     
-    var annotations: AnnotationsExport = js.native
+    var annotations: AnnotationsExport
     
-    var description: String = js.native
+    var description: String
     
-    var steps: js.Array[String] = js.native
+    var steps: js.Array[String]
     
-    var title: String = js.native
+    var title: String
   }
   object ScenarioExport {
     

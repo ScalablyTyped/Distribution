@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.Office.MailboxEnums.DelegatePermissions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,18 +19,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait SharedProperties extends StObject {
   
   /**
     * The permissions that the delegate has on a shared folder.
     */
-  var delegatePermissions: DelegatePermissions = js.native
+  var delegatePermissions: DelegatePermissions
   
   /**
     * The email address of the owner of a shared item.
     */
-  var owner: String = js.native
+  var owner: String
   
   /**
     * The location of the owner's mailbox for the delegate's access. This location may differ based on the Outlook client.
@@ -40,7 +38,7 @@ trait SharedProperties extends StObject {
     *
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     */
-  var targetMailbox: String = js.native
+  var targetMailbox: String
   
   /**
     * The REST API's base URL (currently https://outlook.office.com/api).
@@ -49,7 +47,7 @@ trait SharedProperties extends StObject {
     *
     * Example usage: `targetRestUrl + "/{api_version}/users/" + targetMailbox + "/{REST_operation}"`
     */
-  var targetRestUrl: String = js.native
+  var targetRestUrl: String
 }
 object SharedProperties {
   

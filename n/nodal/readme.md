@@ -10,9 +10,9 @@ An API Server and Framework for node.js
 | ------------------ | :-------------: |
 | Full name          | nodal |
 | Keywords           | framework, api, application, branding, server, modular, nodal |
-| # releases         | 13 |
+| # releases         | 7 |
 | # dependents       | 0 |
-| # downloads        | 8155 |
+| # downloads        | 8999 |
 | # stars            | 8 |
 
 ## Links

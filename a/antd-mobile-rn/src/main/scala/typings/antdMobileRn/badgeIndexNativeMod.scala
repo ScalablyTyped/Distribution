@@ -8,7 +8,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object badgeIndexNativeMod {
@@ -34,12 +33,13 @@ object badgeIndexNativeMod {
   trait Badge
     extends Component[BadgeNativeProps, js.Any, js.Any]
   
-  @js.native
-  trait BadgeNativeProps extends BadgePropsTypes {
+  trait BadgeNativeProps
+    extends StObject
+       with BadgePropsTypes {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[IBadgeStyle] = js.native
+    var styles: js.UndefOr[IBadgeStyle] = js.undefined
   }
   object BadgeNativeProps {
     

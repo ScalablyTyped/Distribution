@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalRangeBorderCollection object, for use in `conditionalRangeBorderCollection.set({ ... })`. */
-@js.native
 trait ConditionalRangeBorderCollectionUpdateData extends StObject {
   
   /**
@@ -15,9 +13,9 @@ trait ConditionalRangeBorderCollectionUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var bottom: js.UndefOr[ConditionalRangeBorderUpdateData] = js.native
+  var bottom: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
   
-  var items: js.UndefOr[js.Array[ConditionalRangeBorderData]] = js.native
+  var items: js.UndefOr[js.Array[ConditionalRangeBorderData]] = js.undefined
   
   /**
     *
@@ -25,7 +23,7 @@ trait ConditionalRangeBorderCollectionUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var left: js.UndefOr[ConditionalRangeBorderUpdateData] = js.native
+  var left: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
   
   /**
     *
@@ -33,7 +31,7 @@ trait ConditionalRangeBorderCollectionUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var right: js.UndefOr[ConditionalRangeBorderUpdateData] = js.native
+  var right: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait ConditionalRangeBorderCollectionUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var top: js.UndefOr[ConditionalRangeBorderUpdateData] = js.native
+  var top: js.UndefOr[ConditionalRangeBorderUpdateData] = js.undefined
 }
 object ConditionalRangeBorderCollectionUpdateData {
   

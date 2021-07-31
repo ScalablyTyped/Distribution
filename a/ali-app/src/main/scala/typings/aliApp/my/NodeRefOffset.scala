@@ -2,23 +2,21 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeRefOffset extends StObject {
   
   /** 节点的dataset */
-  var dataset: js.Any = js.native
+  var dataset: js.Any
   
   /** 节点的ID */
-  var id: String = js.native
+  var id: String
   
   /** 节点的水平滚动位置 */
-  var scrollLeft: Double = js.native
+  var scrollLeft: Double
   
   /** 节点的竖直滚动位置 */
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object NodeRefOffset {
   

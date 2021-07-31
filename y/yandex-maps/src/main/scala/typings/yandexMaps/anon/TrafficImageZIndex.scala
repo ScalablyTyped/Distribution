@@ -2,17 +2,15 @@ package typings.yandexMaps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficImageZIndex extends StObject {
   
-  var trafficImageZIndex: js.UndefOr[Double] = js.native
+  var trafficImageZIndex: js.UndefOr[Double] = js.undefined
   
-  var trafficInfoZIndex: js.UndefOr[Double] = js.native
+  var trafficInfoZIndex: js.UndefOr[Double] = js.undefined
   
-  var trafficJamZIndex: js.UndefOr[Double] = js.native
+  var trafficJamZIndex: js.UndefOr[Double] = js.undefined
 }
 object TrafficImageZIndex {
   

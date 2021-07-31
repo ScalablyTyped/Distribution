@@ -3,7 +3,6 @@ package typings.mongorito.mod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mongorito", "ObjectId")
@@ -37,43 +36,36 @@ object ObjectId {
     * @param {string} hexString create a ObjectId from a passed in 24 byte hexstring.
     * @return {ObjectId} return the created ObjectId
     */
-  @JSImport("mongorito", "ObjectId.createFromHexString")
-  @js.native
-  def createFromHexString(hexString: String): typings.bson.mod.ObjectId = js.native
+  @scala.inline
+  def createFromHexString(hexString: String): typings.bson.mod.ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromHexString")(hexString.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.ObjectId]
   
   /**
     * Creates an ObjectId from a second based number, with the rest of the ObjectId zeroed out. Used for comparisons or sorting the ObjectId.
     * @param {number} time an integer number representing a number of seconds.
     * @return {ObjectId} return the created ObjectId
     */
-  @JSImport("mongorito", "ObjectId.createFromTime")
-  @js.native
-  def createFromTime(time: Double): typings.bson.mod.ObjectId = js.native
+  @scala.inline
+  def createFromTime(time: Double): typings.bson.mod.ObjectId = ^.asInstanceOf[js.Dynamic].applyDynamic("createFromTime")(time.asInstanceOf[js.Any]).asInstanceOf[typings.bson.mod.ObjectId]
   
   /**
     * Generate a 12 byte id string used in ObjectId's
     * @param {number} time optional parameter allowing to pass in a second based timestamp.
     * @return {string} return the 12 byte id binary string.
     */
-  @JSImport("mongorito", "ObjectId.generate")
-  @js.native
-  def generate(): Buffer = js.native
-  @JSImport("mongorito", "ObjectId.generate")
-  @js.native
-  def generate(time: Double): Buffer = js.native
+  @scala.inline
+  def generate(): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")().asInstanceOf[Buffer]
+  @scala.inline
+  def generate(time: Double): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(time.asInstanceOf[js.Any]).asInstanceOf[Buffer]
   
   /**
     * Checks if a value is a valid bson ObjectId
     *
     * @return {boolean} return true if the value is a valid bson ObjectId, return false otherwise.
     */
-  @JSImport("mongorito", "ObjectId.isValid")
-  @js.native
-  def isValid(id: String): Boolean = js.native
-  @JSImport("mongorito", "ObjectId.isValid")
-  @js.native
-  def isValid(id: Double): Boolean = js.native
-  @JSImport("mongorito", "ObjectId.isValid")
-  @js.native
-  def isValid(id: typings.bson.mod.ObjectId): Boolean = js.native
+  @scala.inline
+  def isValid(id: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(id: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isValid(id: typings.bson.mod.ObjectId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(id.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

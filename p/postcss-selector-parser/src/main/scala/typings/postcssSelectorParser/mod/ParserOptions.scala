@@ -3,17 +3,15 @@ package typings.postcssSelectorParser.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParserOptions extends StObject {
   
-  var css: String = js.native
+  var css: String
   
-  def error(message: String, options: ErrorOptions): Error = js.native
+  def error(message: String, options: ErrorOptions): Error
   
-  var options: Options = js.native
+  var options: Options
 }
 object ParserOptions {
   

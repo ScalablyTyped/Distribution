@@ -3,17 +3,15 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.multi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events extends StObject {
   
   var events: js.Array[
     /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @node-red/editor-client.@node-red/editor-client.HistoryEvent */ js.Object
-  ] = js.native
+  ]
   
-  var t: multi = js.native
+  var t: multi
 }
 object Events {
   
@@ -21,10 +19,9 @@ object Events {
   def apply(
     events: js.Array[
       /* import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @node-red/editor-client.@node-red/editor-client.HistoryEvent */ js.Object
-    ],
-    t: multi
+    ]
   ): Events = {
-    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], t = t.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(events = events.asInstanceOf[js.Any], t = "multi")
     __obj.asInstanceOf[Events]
   }
   

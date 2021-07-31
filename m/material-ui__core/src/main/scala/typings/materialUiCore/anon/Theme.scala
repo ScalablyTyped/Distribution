@@ -2,13 +2,11 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Theme extends StObject {
   
-  var theme: typings.materialUiCore.createMuiThemeMod.Theme = js.native
+  var theme: typings.materialUiCore.createMuiThemeMod.Theme
 }
 object Theme {
   

@@ -10,9 +10,9 @@ Parses a Dockerfile and returns an array of commands.
 | ------------------ | :-------------: |
 | Full name          | docker-file-parser |
 | Keywords           | dockerfile, docker, parser |
-| # releases         | 1 |
-| # dependents       | 24 |
-| # downloads        | 988785 |
+| # releases         | 2 |
+| # dependents       | 26 |
+| # downloads        | 951023 |
 | # stars            | 2 |
 
 ## Links

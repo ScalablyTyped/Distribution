@@ -2,23 +2,21 @@ package typings.webpack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object limitChunkCountPluginMod {
   
-  @js.native
   trait LimitChunkCountPluginOptions extends StObject {
     
     /**
     	 * Limit the maximum number of chunks using a value greater greater than or equal to 1
     	 */
-    var maxChunks: js.UndefOr[Double] = js.native
+    var maxChunks: js.UndefOr[Double] = js.undefined
     
     /**
     	 * Set a minimum chunk size
     	 */
-    var minChunkSize: js.UndefOr[Double] = js.native
+    var minChunkSize: js.UndefOr[Double] = js.undefined
   }
   object LimitChunkCountPluginOptions {
     

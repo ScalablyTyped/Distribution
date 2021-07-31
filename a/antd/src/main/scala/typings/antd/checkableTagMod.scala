@@ -7,7 +7,6 @@ import typings.std.HTMLSpanElement
 import typings.std.MouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkableTagMod extends Shortcut {
@@ -16,26 +15,25 @@ object checkableTagMod extends Shortcut {
   @js.native
   val default: FC[CheckableTagProps] = js.native
   
-  @js.native
   trait CheckableTagProps extends StObject {
     
     /**
       * @description       it is an absolute controlled component and has no uncontrolled mode.
       * @description.zh-CN 该组件为完全受控组件，不支持非受控用法。
       */
-    var checked: Boolean = js.native
+    var checked: Boolean
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* checked */ Boolean, Unit]] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function1[/* e */ typings.react.mod.MouseEvent[HTMLSpanElement, MouseEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object CheckableTagProps {
     

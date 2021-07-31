@@ -5,7 +5,6 @@ import typings.std.MediaStreamConstraints
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,20 +13,19 @@ object mod extends Shortcut {
   @js.native
   val default: IAdapter = js.native
   
-  @js.native
   trait IAdapter extends StObject {
     
-    var browserDetails: IBrowserDetails = js.native
+    var browserDetails: IBrowserDetails
     
-    var browserShim: js.UndefOr[IChromeShim | IEdgeShim | IFirefoxShim | ISafariShim] = js.native
+    var browserShim: js.UndefOr[IChromeShim | IEdgeShim | IFirefoxShim | ISafariShim] = js.undefined
     
-    var commonShim: ICommonShim = js.native
+    var commonShim: ICommonShim
     
-    def disableLog(disable: Boolean): Unit = js.native
+    def disableLog(disable: Boolean): Unit
     
-    def disableWarnings(disable: Boolean): Unit = js.native
+    def disableWarnings(disable: Boolean): Unit
     
-    def extractVersion(uastring: String, expr: String, pos: Double): Double = js.native
+    def extractVersion(uastring: String, expr: String, pos: Double): Double
   }
   object IAdapter {
     
@@ -69,14 +67,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait IBrowserDetails extends StObject {
     
-    var browser: String = js.native
+    var browser: String
     
-    var supportsUnifiedPlan: js.UndefOr[Boolean] = js.native
+    var supportsUnifiedPlan: js.UndefOr[Boolean] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object IBrowserDetails {
     
@@ -106,26 +103,25 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait IChromeShim extends StObject {
     
-    def fixNegotiationNeeded(window: Window): Unit = js.native
+    def fixNegotiationNeeded(window: Window): Unit
     
-    def shimAddTrackRemoveTrack(window: Window): Unit = js.native
+    def shimAddTrackRemoveTrack(window: Window): Unit
     
-    def shimAddTrackRemoveTrackWithNative(window: Window): Unit = js.native
+    def shimAddTrackRemoveTrackWithNative(window: Window): Unit
     
-    def shimGetSendersWithDtmf(window: Window): Unit = js.native
+    def shimGetSendersWithDtmf(window: Window): Unit
     
-    def shimGetStats(window: Window): Unit = js.native
+    def shimGetStats(window: Window): Unit
     
-    def shimMediaStream(window: Window): Unit = js.native
+    def shimMediaStream(window: Window): Unit
     
-    def shimOnTrack(window: Window): Unit = js.native
+    def shimOnTrack(window: Window): Unit
     
-    def shimPeerConnection(window: Window): Unit = js.native
+    def shimPeerConnection(window: Window): Unit
     
-    def shimSenderReceiverGetStats(window: Window): Unit = js.native
+    def shimSenderReceiverGetStats(window: Window): Unit
   }
   object IChromeShim {
     
@@ -177,18 +173,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ICommonShim extends StObject {
     
-    def removeAllowExtmapMixed(window: Window): Unit = js.native
+    def removeAllowExtmapMixed(window: Window): Unit
     
-    def shimConnectionState(window: Window): Unit = js.native
+    def shimConnectionState(window: Window): Unit
     
-    def shimMaxMessageSize(window: Window): Unit = js.native
+    def shimMaxMessageSize(window: Window): Unit
     
-    def shimRTCIceCandidate(window: Window): Unit = js.native
+    def shimRTCIceCandidate(window: Window): Unit
     
-    def shimSendThrowTypeError(window: Window): Unit = js.native
+    def shimSendThrowTypeError(window: Window): Unit
   }
   object ICommonShim {
     
@@ -224,12 +219,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait IEdgeShim extends StObject {
     
-    def shimPeerConnection(window: Window): Unit = js.native
+    def shimPeerConnection(window: Window): Unit
     
-    def shimReplaceTrack(window: Window): Unit = js.native
+    def shimReplaceTrack(window: Window): Unit
   }
   object IEdgeShim {
     
@@ -250,20 +244,19 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait IFirefoxShim extends StObject {
     
-    def shimOnTrack(window: Window): Unit = js.native
+    def shimOnTrack(window: Window): Unit
     
-    def shimPeerConnection(window: Window): Unit = js.native
+    def shimPeerConnection(window: Window): Unit
     
-    def shimRTCDataChannel(window: Window): Unit = js.native
+    def shimRTCDataChannel(window: Window): Unit
     
-    def shimReceiverGetStats(window: Window): Unit = js.native
+    def shimReceiverGetStats(window: Window): Unit
     
-    def shimRemoveStream(window: Window): Unit = js.native
+    def shimRemoveStream(window: Window): Unit
     
-    def shimSenderGetStats(window: Window): Unit = js.native
+    def shimSenderGetStats(window: Window): Unit
   }
   object IFirefoxShim {
     
@@ -303,24 +296,23 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ISafariShim extends StObject {
     
-    def shimCallbacksAPI(window: Window): Unit = js.native
+    def shimCallbacksAPI(window: Window): Unit
     
-    def shimConstraints(constraints: MediaStreamConstraints): Unit = js.native
+    def shimConstraints(constraints: MediaStreamConstraints): Unit
     
-    def shimCreateOfferLegacy(window: Window): Unit = js.native
+    def shimCreateOfferLegacy(window: Window): Unit
     
-    def shimGetUserMedia(window: Window): Unit = js.native
+    def shimGetUserMedia(window: Window): Unit
     
-    def shimLocalStreamsAPI(window: Window): Unit = js.native
+    def shimLocalStreamsAPI(window: Window): Unit
     
-    def shimRTCIceServerUrls(window: Window): Unit = js.native
+    def shimRTCIceServerUrls(window: Window): Unit
     
-    def shimRemoteStreamsAPI(window: Window): Unit = js.native
+    def shimRemoteStreamsAPI(window: Window): Unit
     
-    def shimTrackEventTransceiver(window: Window): Unit = js.native
+    def shimTrackEventTransceiver(window: Window): Unit
   }
   object ISafariShim {
     

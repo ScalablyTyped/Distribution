@@ -8,14 +8,15 @@ import typings.officeJs.OfficeExtension.ClientResult
 import typings.officeJs.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait PageBreakCollection extends ClientObject {
+trait PageBreakCollection
+  extends StObject
+     with ClientObject {
   
   def add(pageBreakRange: String): PageBreak = js.native
   /**
@@ -56,7 +57,7 @@ trait PageBreakCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): PageBreakCollection = js.native
-  def load(options: PageBreakCollectionLoadOptions with CollectionLoadOptions): PageBreakCollection = js.native
+  def load(options: PageBreakCollectionLoadOptions & CollectionLoadOptions): PageBreakCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): PageBreakCollection = js.native
   def load(propertyNames: String): PageBreakCollection = js.native
   def load(propertyNames: js.Array[String]): PageBreakCollection = js.native

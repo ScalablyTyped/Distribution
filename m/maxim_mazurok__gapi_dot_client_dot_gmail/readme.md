@@ -10,9 +10,9 @@ TypeScript typings for Gmail API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.gmail |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 11 |
 | # dependents       | 1 |
-| # downloads        | 59 |
+| # downloads        | 21133 |
 | # stars            | 0 |
 
 ## Links

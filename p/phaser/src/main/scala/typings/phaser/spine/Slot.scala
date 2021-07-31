@@ -2,35 +2,33 @@ package typings.phaser.spine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Slot extends StObject {
   
-  var attachment: js.Any = js.native
+  var attachment: js.Any
   
-  var attachmentTime: js.Any = js.native
+  var attachmentTime: js.Any
   
-  var bone: Bone = js.native
+  var bone: Bone
   
-  var color: Color = js.native
+  var color: Color
   
-  var darkColor: Color = js.native
+  var darkColor: Color
   
-  var data: SlotData = js.native
+  var data: SlotData
   
-  var deform: js.Array[Double] = js.native
+  var deform: js.Array[Double]
   
-  def getAttachment(): Attachment = js.native
+  def getAttachment(): Attachment
   
-  def getAttachmentTime(): Double = js.native
+  def getAttachmentTime(): Double
   
-  def setAttachment(attachment: Attachment): Unit = js.native
+  def setAttachment(attachment: Attachment): Unit
   
-  def setAttachmentTime(time: Double): Unit = js.native
+  def setAttachmentTime(time: Double): Unit
   
-  def setToSetupPose(): Unit = js.native
+  def setToSetupPose(): Unit
 }
 object Slot {
   

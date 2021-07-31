@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectsResource extends StObject {
   
-  var alertPolicies: AlertPoliciesResource = js.native
+  var alertPolicies: AlertPoliciesResource
   
-  var collectdTimeSeries: CollectdTimeSeriesResource = js.native
+  var collectdTimeSeries: CollectdTimeSeriesResource
   
-  var groups: GroupsResource = js.native
+  var groups: GroupsResource
   
-  var metricDescriptors: MetricDescriptorsResource = js.native
+  var metricDescriptors: MetricDescriptorsResource
   
-  var monitoredResourceDescriptors: MonitoredResourceDescriptorsResource = js.native
+  var monitoredResourceDescriptors: MonitoredResourceDescriptorsResource
   
-  var notificationChannelDescriptors: NotificationChannelDescriptorsResource = js.native
+  var notificationChannelDescriptors: NotificationChannelDescriptorsResource
   
-  var notificationChannels: NotificationChannelsResource = js.native
+  var notificationChannels: NotificationChannelsResource
   
-  var timeSeries: TimeSeriesResource = js.native
+  var timeSeries: TimeSeriesResource
   
-  var uptimeCheckConfigs: UptimeCheckConfigsResource = js.native
+  var uptimeCheckConfigs: UptimeCheckConfigsResource
 }
 object ProjectsResource {
   

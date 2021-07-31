@@ -2,26 +2,24 @@ package typings.vsoNodeApi.workItemTrackingProcessDefinitionsInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormLayout extends StObject {
   
   /**
     * Gets and sets extensions list
     */
-  var extensions: js.Array[Extension] = js.native
+  var extensions: js.Array[Extension]
   
   /**
     * Top level tabs of the layout.
     */
-  var pages: js.Array[Page] = js.native
+  var pages: js.Array[Page]
   
   /**
     * Headers controls of the layout.
     */
-  var systemControls: js.Array[Control] = js.native
+  var systemControls: js.Array[Control]
 }
 object FormLayout {
   

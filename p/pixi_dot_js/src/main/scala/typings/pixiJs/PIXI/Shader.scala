@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait Shader extends StObject {
   
   /**
@@ -19,14 +17,14 @@ trait Shader extends StObject {
     *
     * @member {PIXI.Program} PIXI.Shader#program
     */
-  var program: Program = js.native
+  var program: Program
   
   /**
     * Shader uniform values, shortcut for `uniformGroup.uniforms`
     * @readonly
     * @member {object}
     */
-  val uniforms: js.Any = js.native
+  val uniforms: js.Any
 }
 object Shader {
   

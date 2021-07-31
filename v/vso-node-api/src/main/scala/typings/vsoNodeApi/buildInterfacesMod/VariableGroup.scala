@@ -3,28 +3,28 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VariableGroup extends VariableGroupReference {
+trait VariableGroup
+  extends StObject
+     with VariableGroupReference {
   
   /**
     * The description.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * The name of the variable group.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The type of the variable group.
     */
-  var `type`: String = js.native
+  var `type`: String
   
-  var variables: StringDictionary[BuildDefinitionVariable] = js.native
+  var variables: StringDictionary[BuildDefinitionVariable]
 }
 object VariableGroup {
   

@@ -3,19 +3,19 @@ package typings.stylus.mod.Stylus.Nodes
 import typings.stylus.anon.Column
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait If extends Node {
+trait If
+  extends StObject
+     with Node {
   
-  var block: Block = js.native
+  var block: Block
   
-  var cond: Expression = js.native
+  var cond: Expression
   
-  var elses: js.Array[Expression] = js.native
+  var elses: js.Array[Expression]
   
-  var negate: scala.Boolean = js.native
+  var negate: scala.Boolean
 }
 object If {
   

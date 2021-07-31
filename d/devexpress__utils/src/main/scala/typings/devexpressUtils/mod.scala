@@ -3,7 +3,6 @@ package typings.devexpressUtils
 import typings.std.RegExpExecArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -54,14 +53,13 @@ object mod {
     @scala.inline
     def Firefox_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Firefox")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/browser", "Browser.GetBrowserVersion")
-    @js.native
+    @scala.inline
     def GetBrowserVersion(
       userAgent: String,
       matches: RegExpExecArray,
       tridentPattern: String,
       ieCompatibleVersionString: String
-    ): Double = js.native
+    ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("GetBrowserVersion")(userAgent.asInstanceOf[js.Any], matches.asInstanceOf[js.Any], tridentPattern.asInstanceOf[js.Any], ieCompatibleVersionString.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.HardwareAcceleration")
     @js.native
@@ -75,12 +73,10 @@ object mod {
     @scala.inline
     def IE_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("IE")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/browser", "Browser.IdentUserAgent")
-    @js.native
-    def IdentUserAgent(userAgent: String): Unit = js.native
-    @JSImport("@devexpress/utils/lib/browser", "Browser.IdentUserAgent")
-    @js.native
-    def IdentUserAgent(userAgent: String, ignoreDocumentMode: Boolean): Unit = js.native
+    @scala.inline
+    def IdentUserAgent(userAgent: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("IdentUserAgent")(userAgent.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def IdentUserAgent(userAgent: String, ignoreDocumentMode: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("IdentUserAgent")(userAgent.asInstanceOf[js.Any], ignoreDocumentMode.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.Info")
     @js.native
@@ -215,22 +211,19 @@ object mod {
     @scala.inline
     def _foo_=(x: Unit): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_foo")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/browser", "Browser.fillDocumentElementBrowserTypeClassNames")
-    @js.native
-    def fillDocumentElementBrowserTypeClassNames(browserTypesOrderedList: js.Array[String]): Unit = js.native
+    @scala.inline
+    def fillDocumentElementBrowserTypeClassNames(browserTypesOrderedList: js.Array[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("fillDocumentElementBrowserTypeClassNames")(browserTypesOrderedList.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("@devexpress/utils/lib/browser", "Browser.fillUserAgentInfo")
-    @js.native
-    def fillUserAgentInfo(browserTypesOrderedList: js.Array[String], browserType: String, version: Double, platform: String): Unit = js.native
-    @JSImport("@devexpress/utils/lib/browser", "Browser.fillUserAgentInfo")
-    @js.native
+    @scala.inline
+    def fillUserAgentInfo(browserTypesOrderedList: js.Array[String], browserType: String, version: Double, platform: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillUserAgentInfo")(browserTypesOrderedList.asInstanceOf[js.Any], browserType.asInstanceOf[js.Any], version.asInstanceOf[js.Any], platform.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def fillUserAgentInfo(
       browserTypesOrderedList: js.Array[String],
       browserType: String,
       version: Double,
       platform: String,
       isSamsungAndroidDevice: Boolean
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fillUserAgentInfo")(browserTypesOrderedList.asInstanceOf[js.Any], browserType.asInstanceOf[js.Any], version.asInstanceOf[js.Any], platform.asInstanceOf[js.Any], isSamsungAndroidDevice.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("@devexpress/utils/lib/browser", "Browser.getIECompatibleVersionString")
     @js.native
@@ -256,8 +249,7 @@ object mod {
     @scala.inline
     def indentPlatformMajorVersion_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("indentPlatformMajorVersion")(x.asInstanceOf[js.Any])
     
-    @JSImport("@devexpress/utils/lib/browser", "Browser.isTouchEnabled")
-    @js.native
-    def isTouchEnabled(): Boolean = js.native
+    @scala.inline
+    def isTouchEnabled(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTouchEnabled")().asInstanceOf[Boolean]
   }
 }

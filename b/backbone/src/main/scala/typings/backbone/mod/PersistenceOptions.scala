@@ -3,19 +3,17 @@ package typings.backbone.mod
 import typings.jquery.JQueryXHR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PersistenceOptions extends StObject {
   
-  var beforeSend: js.UndefOr[js.Function1[/* jqxhr */ JQueryXHR, Unit]] = js.native
+  var beforeSend: js.UndefOr[js.Function1[/* jqxhr */ JQueryXHR, Unit]] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var emulateHTTP: js.UndefOr[Boolean] = js.native
+  var emulateHTTP: js.UndefOr[Boolean] = js.undefined
   
-  var emulateJSON: js.UndefOr[Boolean] = js.native
+  var emulateJSON: js.UndefOr[Boolean] = js.undefined
   
   var error: js.UndefOr[
     js.Function3[
@@ -24,7 +22,7 @@ trait PersistenceOptions extends StObject {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   // TODO: copy all parameters from JQueryAjaxSettings except success/error callbacks?
   var success: js.UndefOr[
@@ -34,11 +32,11 @@ trait PersistenceOptions extends StObject {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object PersistenceOptions {
   

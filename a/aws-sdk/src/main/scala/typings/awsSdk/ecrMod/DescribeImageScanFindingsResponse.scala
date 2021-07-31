@@ -2,38 +2,36 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeImageScanFindingsResponse extends StObject {
   
-  var imageId: js.UndefOr[ImageIdentifier] = js.native
+  var imageId: js.UndefOr[ImageIdentifier] = js.undefined
   
   /**
     * The information contained in the image scan findings.
     */
-  var imageScanFindings: js.UndefOr[ImageScanFindings] = js.native
+  var imageScanFindings: js.UndefOr[ImageScanFindings] = js.undefined
   
   /**
     * The current state of the scan.
     */
-  var imageScanStatus: js.UndefOr[ImageScanStatus] = js.native
+  var imageScanStatus: js.UndefOr[ImageScanStatus] = js.undefined
   
   /**
     * The nextToken value to include in a future DescribeImageScanFindings request. When the results of a DescribeImageScanFindings request exceed maxResults, this value can be used to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * The registry ID associated with the request.
     */
-  var registryId: js.UndefOr[RegistryId] = js.native
+  var registryId: js.UndefOr[RegistryId] = js.undefined
   
   /**
     * The repository name associated with the request.
     */
-  var repositoryName: js.UndefOr[RepositoryName] = js.native
+  var repositoryName: js.UndefOr[RepositoryName] = js.undefined
 }
 object DescribeImageScanFindingsResponse {
   

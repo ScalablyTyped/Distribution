@@ -2,17 +2,15 @@ package typings.swaggerSchemaOfficial.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocs] = js.native
+  var externalDocs: js.UndefOr[ExternalDocs] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object Tag {
   

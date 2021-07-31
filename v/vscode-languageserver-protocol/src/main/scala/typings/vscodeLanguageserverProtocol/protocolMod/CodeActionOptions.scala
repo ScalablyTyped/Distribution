@@ -3,11 +3,11 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.CodeActionKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CodeActionOptions extends WorkDoneProgressOptions {
+trait CodeActionOptions
+  extends StObject
+     with WorkDoneProgressOptions {
   
   /**
     * CodeActionKinds that this server may return.
@@ -15,7 +15,7 @@ trait CodeActionOptions extends WorkDoneProgressOptions {
     * The list of kinds may be generic, such as `CodeActionKind.Refactor`, or the server
     * may list out every specific kind they provide.
     */
-  var codeActionKinds: js.UndefOr[js.Array[CodeActionKind]] = js.native
+  var codeActionKinds: js.UndefOr[js.Array[CodeActionKind]] = js.undefined
 }
 object CodeActionOptions {
   

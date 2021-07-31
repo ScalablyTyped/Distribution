@@ -5,7 +5,6 @@ import typings.three.cameraMod.Camera
 import typings.three.threeBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object orthographicCameraMod {
@@ -23,15 +22,8 @@ object orthographicCameraMod {
     	 */
     def this(left: Double, right: Double, top: Double, bottom: Double) = this()
     def this(left: Double, right: Double, top: Double, bottom: Double, near: Double) = this()
-    def this(
-      left: Double,
-      right: Double,
-      top: Double,
-      bottom: Double,
-      near: js.UndefOr[scala.Nothing],
-      far: Double
-    ) = this()
     def this(left: Double, right: Double, top: Double, bottom: Double, near: Double, far: Double) = this()
+    def this(left: Double, right: Double, top: Double, bottom: Double, near: Unit, far: Double) = this()
     
     /**
     	 * Camera frustum bottom plane.

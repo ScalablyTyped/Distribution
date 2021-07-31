@@ -7,7 +7,6 @@ import typings.std.SafeArray
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,28 +25,13 @@ trait PivotCache extends StObject {
   var Connection: String = js.native
   
   def CreatePivotTable(TableDestination: Range): PivotTable = js.native
-  def CreatePivotTable(
-    TableDestination: Range,
-    TableName: js.UndefOr[scala.Nothing],
-    ReadData: js.UndefOr[scala.Nothing],
-    DefaultVersion: js.Any
-  ): PivotTable = js.native
-  def CreatePivotTable(TableDestination: Range, TableName: js.UndefOr[scala.Nothing], ReadData: Boolean): PivotTable = js.native
-  def CreatePivotTable(
-    TableDestination: Range,
-    TableName: js.UndefOr[scala.Nothing],
-    ReadData: Boolean,
-    DefaultVersion: js.Any
-  ): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String): PivotTable = js.native
-  def CreatePivotTable(
-    TableDestination: Range,
-    TableName: String,
-    ReadData: js.UndefOr[scala.Nothing],
-    DefaultVersion: js.Any
-  ): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Boolean): PivotTable = js.native
   def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Boolean, DefaultVersion: js.Any): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: String, ReadData: Unit, DefaultVersion: js.Any): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Boolean): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Boolean, DefaultVersion: js.Any): PivotTable = js.native
+  def CreatePivotTable(TableDestination: Range, TableName: Unit, ReadData: Unit, DefaultVersion: js.Any): PivotTable = js.native
   
   val Creator: XlCreator = js.native
   
@@ -100,9 +84,9 @@ trait PivotCache extends StObject {
   var RobustConnect: XlRobustConnect = js.native
   
   def SaveAsODC(ODCFileName: String): Unit = js.native
-  def SaveAsODC(ODCFileName: String, Description: js.UndefOr[scala.Nothing], Keywords: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String): Unit = js.native
   def SaveAsODC(ODCFileName: String, Description: String, Keywords: String): Unit = js.native
+  def SaveAsODC(ODCFileName: String, Description: Unit, Keywords: String): Unit = js.native
   
   var SavePassword: Boolean = js.native
   

@@ -10,14 +10,15 @@ import typings.std.NodeList
 import typings.std.ParentNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("awesomplete", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Awesomplete {
+  class ^ protected ()
+    extends StObject
+       with Awesomplete {
     def this(input: String) = this()
     def this(input: Element) = this()
     def this(input: HTMLElement) = this()
@@ -30,18 +31,14 @@ object mod {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("awesomplete", "$$")
-  @js.native
-  def $(expr: String): NodeList = js.native
-  @JSImport("awesomplete", "$$")
-  @js.native
-  def $(expr: String, con: js.Any): NodeList = js.native
-  @JSImport("awesomplete", "$$")
-  @js.native
-  def $(expr: ParentNode): NodeList = js.native
-  @JSImport("awesomplete", "$$")
-  @js.native
-  def $(expr: ParentNode, con: js.Any): NodeList = js.native
+  @scala.inline
+  def $(expr: String): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any]).asInstanceOf[NodeList]
+  @scala.inline
+  def $(expr: String, con: js.Any): NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[NodeList]
+  @scala.inline
+  def $(expr: ParentNode): NodeList = ^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any]).asInstanceOf[NodeList]
+  @scala.inline
+  def $(expr: ParentNode, con: js.Any): NodeList = (^.asInstanceOf[js.Dynamic].applyDynamic("$$")(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[NodeList]
   
   /* static member */
   @JSImport("awesomplete", "DATA")
@@ -90,34 +87,30 @@ object mod {
   /* static member */
   object _empty {
     
+    @scala.inline
+    def apply(expr: String): String | Element = ^.asInstanceOf[js.Dynamic].apply(expr.asInstanceOf[js.Any]).asInstanceOf[String | Element]
+    @scala.inline
+    def apply(expr: String, con: ParentNode): String | Element = (^.asInstanceOf[js.Dynamic].apply(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[String | Element]
+    @scala.inline
+    def apply(expr: Element): String | Element = ^.asInstanceOf[js.Dynamic].apply(expr.asInstanceOf[js.Any]).asInstanceOf[String | Element]
+    @scala.inline
+    def apply(expr: Element, con: ParentNode): String | Element = (^.asInstanceOf[js.Dynamic].apply(expr.asInstanceOf[js.Any], con.asInstanceOf[js.Any])).asInstanceOf[String | Element]
+    
     @JSImport("awesomplete", "$")
     @js.native
-    def apply(expr: String): String | Element = js.native
-    @JSImport("awesomplete", "$")
-    @js.native
-    def apply(expr: String, con: ParentNode): String | Element = js.native
-    @JSImport("awesomplete", "$")
-    @js.native
-    def apply(expr: Element): String | Element = js.native
-    @JSImport("awesomplete", "$")
-    @js.native
-    def apply(expr: Element, con: ParentNode): String | Element = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("awesomplete", "$.create")
-    @js.native
-    def create(tag: String, o: js.Any): HTMLElement = js.native
+    @scala.inline
+    def create(tag: String, o: js.Any): HTMLElement = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(tag.asInstanceOf[js.Any], o.asInstanceOf[js.Any])).asInstanceOf[HTMLElement]
     
-    @JSImport("awesomplete", "$.fire")
-    @js.native
-    def fire(target: EventTarget, `type`: String, properties: js.Any): js.Any = js.native
+    @scala.inline
+    def fire(target: EventTarget, `type`: String, properties: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("fire")(target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], properties.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("awesomplete", "$.regExpEscape")
-    @js.native
-    def regExpEscape(s: Replace): js.Any = js.native
+    @scala.inline
+    def regExpEscape(s: Replace): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("regExpEscape")(s.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("awesomplete", "$.siblingIndex")
-    @js.native
-    def siblingIndex(el: Element): Double = js.native
+    @scala.inline
+    def siblingIndex(el: Element): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("siblingIndex")(el.asInstanceOf[js.Any]).asInstanceOf[Double]
   }
   
   /* static member */
@@ -155,7 +148,7 @@ object mod {
     def previous(): Unit = js.native
     
     def select(): Unit = js.native
-    def select(selected: js.UndefOr[scala.Nothing], originalTarget: HTMLElement): Unit = js.native
+    def select(selected: Unit, originalTarget: HTMLElement): Unit = js.native
     def select(selected: HTMLElement): Unit = js.native
     def select(selected: HTMLElement, originalTarget: HTMLElement): Unit = js.native
     
@@ -166,26 +159,25 @@ object mod {
     var ul: HTMLElement = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var autoFirst: js.UndefOr[Boolean] = js.native
+    var autoFirst: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.UndefOr[js.Function2[/* item */ Suggestion, /* input */ String, String]] = js.native
+    var data: js.UndefOr[js.Function2[/* item */ Suggestion, /* input */ String, String]] = js.undefined
     
-    var filter: js.UndefOr[js.Function2[/* text */ String, /* input */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function2[/* text */ String, /* input */ String, Boolean]] = js.undefined
     
-    var item: js.UndefOr[js.Function2[/* text */ String, /* input */ String, HTMLElement]] = js.native
+    var item: js.UndefOr[js.Function2[/* text */ String, /* input */ String, HTMLElement]] = js.undefined
     
-    var list: js.UndefOr[String | (js.Array[String | (js.Tuple2[String, String]) | Value]) | Element] = js.native
+    var list: js.UndefOr[String | (js.Array[String | (js.Tuple2[String, String]) | Value]) | Element] = js.undefined
     
-    var maxItems: js.UndefOr[Double] = js.native
+    var maxItems: js.UndefOr[Double] = js.undefined
     
-    var minChars: js.UndefOr[Double] = js.native
+    var minChars: js.UndefOr[Double] = js.undefined
     
-    var replace: js.UndefOr[js.Function1[/* suggestion */ String | Suggestion, Unit]] = js.native
+    var replace: js.UndefOr[js.Function1[/* suggestion */ String | Suggestion, Unit]] = js.undefined
     
-    var sort: js.UndefOr[Boolean | SortFunction] = js.native
+    var sort: js.UndefOr[Boolean | SortFunction] = js.undefined
   }
   object Options {
     

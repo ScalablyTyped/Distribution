@@ -2,26 +2,24 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateOutboundCrossClusterSearchConnectionRequest extends StObject {
   
   /**
     * Specifies the connection alias that will be used by the customer for this connection.
     */
-  var ConnectionAlias: typings.awsSdk.esMod.ConnectionAlias = js.native
+  var ConnectionAlias: typings.awsSdk.esMod.ConnectionAlias
   
   /**
     * Specifies the DomainInformation for the destination Elasticsearch domain.
     */
-  var DestinationDomainInfo: DomainInformation = js.native
+  var DestinationDomainInfo: DomainInformation
   
   /**
     * Specifies the DomainInformation for the source Elasticsearch domain.
     */
-  var SourceDomainInfo: DomainInformation = js.native
+  var SourceDomainInfo: DomainInformation
 }
 object CreateOutboundCrossClusterSearchConnectionRequest {
   

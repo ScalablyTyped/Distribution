@@ -2,36 +2,34 @@ package typings.lifeomicAttempt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@lifeomic/attempt", "defaultCalculateDelay")
+  @JSImport("@lifeomic/attempt", JSImport.Namespace)
   @js.native
-  def defaultCalculateDelay[T](context: AttemptContext, options: AttemptOptions[T]): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@lifeomic/attempt", "retry")
-  @js.native
-  def retry[T](attemptFunc: AttemptFunction[T]): js.Promise[T] = js.native
-  @JSImport("@lifeomic/attempt", "retry")
-  @js.native
-  def retry[T](attemptFunc: AttemptFunction[T], attemptOptions: PartialAttemptOptions[T]): js.Promise[T] = js.native
+  @scala.inline
+  def defaultCalculateDelay[T](context: AttemptContext, options: AttemptOptions[T]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultCalculateDelay")(context.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@lifeomic/attempt", "sleep")
-  @js.native
-  def sleep(delay: Double): js.Promise[js.Object] = js.native
+  @scala.inline
+  def retry[T](attemptFunc: AttemptFunction[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("retry")(attemptFunc.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def retry[T](attemptFunc: AttemptFunction[T], attemptOptions: PartialAttemptOptions[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(attemptFunc.asInstanceOf[js.Any], attemptOptions.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
-  @js.native
+  @scala.inline
+  def sleep(delay: Double): js.Promise[js.Object] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(delay.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Object]]
+  
   trait AttemptContext extends StObject {
     
-    def abort(): Unit = js.native
+    def abort(): Unit
     
-    var aborted: Boolean = js.native
+    var aborted: Boolean
     
-    var attemptNum: Double = js.native
+    var attemptNum: Double
     
-    var attemptsRemaining: Double = js.native
+    var attemptsRemaining: Double
   }
   object AttemptContext {
     
@@ -60,32 +58,31 @@ object mod {
   
   type AttemptFunction[T] = js.Function2[/* context */ AttemptContext, /* options */ AttemptOptions[T], js.Promise[T]]
   
-  @js.native
   trait AttemptOptions[T] extends StObject {
     
-    val beforeAttempt: BeforeAttempt[T] | Null = js.native
+    val beforeAttempt: BeforeAttempt[T] | Null
     
-    val calculateDelay: CalculateDelay[T] | Null = js.native
+    val calculateDelay: CalculateDelay[T] | Null
     
-    val delay: Double = js.native
+    val delay: Double
     
-    val factor: Double = js.native
+    val factor: Double
     
-    val handleError: HandleError[T] | Null = js.native
+    val handleError: HandleError[T] | Null
     
-    val handleTimeout: HandleTimeout[T] | Null = js.native
+    val handleTimeout: HandleTimeout[T] | Null
     
-    val initialDelay: Double = js.native
+    val initialDelay: Double
     
-    val jitter: Boolean = js.native
+    val jitter: Boolean
     
-    val maxAttempts: Double = js.native
+    val maxAttempts: Double
     
-    val maxDelay: Double = js.native
+    val maxDelay: Double
     
-    val minDelay: Double = js.native
+    val minDelay: Double
     
-    val timeout: Double = js.native
+    val timeout: Double
   }
   object AttemptOptions {
     
@@ -100,12 +97,12 @@ object mod {
       minDelay: Double,
       timeout: Double
     ): AttemptOptions[T] = {
-      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], factor = factor.asInstanceOf[js.Any], initialDelay = initialDelay.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], maxDelay = maxDelay.asInstanceOf[js.Any], minDelay = minDelay.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(delay = delay.asInstanceOf[js.Any], factor = factor.asInstanceOf[js.Any], initialDelay = initialDelay.asInstanceOf[js.Any], jitter = jitter.asInstanceOf[js.Any], maxAttempts = maxAttempts.asInstanceOf[js.Any], maxDelay = maxDelay.asInstanceOf[js.Any], minDelay = minDelay.asInstanceOf[js.Any], timeout = timeout.asInstanceOf[js.Any], beforeAttempt = null, calculateDelay = null, handleError = null, handleTimeout = null)
       __obj.asInstanceOf[AttemptOptions[T]]
     }
     
     @scala.inline
-    implicit class AttemptOptionsMutableBuilder[Self <: AttemptOptions[_], T] (val x: Self with AttemptOptions[T]) extends AnyVal {
+    implicit class AttemptOptionsMutableBuilder[Self <: AttemptOptions[?], T] (val x: Self & AttemptOptions[T]) extends AnyVal {
       
       @scala.inline
       def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))
@@ -166,32 +163,31 @@ object mod {
   type HandleTimeout[T] = js.Function2[/* context */ AttemptContext, /* options */ AttemptOptions[T], js.Promise[T]]
   
   /* Inlined {readonly [ P in keyof @lifeomic/attempt.@lifeomic/attempt.AttemptOptions<T> ]:? @lifeomic/attempt.@lifeomic/attempt.AttemptOptions<T>[P]} */
-  @js.native
   trait PartialAttemptOptions[T] extends StObject {
     
-    val beforeAttempt: js.UndefOr[BeforeAttempt[T] | Null] = js.native
+    val beforeAttempt: js.UndefOr[BeforeAttempt[T] | Null] = js.undefined
     
-    val calculateDelay: js.UndefOr[CalculateDelay[T] | Null] = js.native
+    val calculateDelay: js.UndefOr[CalculateDelay[T] | Null] = js.undefined
     
-    val delay: js.UndefOr[Double] = js.native
+    val delay: js.UndefOr[Double] = js.undefined
     
-    val factor: js.UndefOr[Double] = js.native
+    val factor: js.UndefOr[Double] = js.undefined
     
-    val handleError: js.UndefOr[HandleError[T] | Null] = js.native
+    val handleError: js.UndefOr[HandleError[T] | Null] = js.undefined
     
-    val handleTimeout: js.UndefOr[HandleTimeout[T] | Null] = js.native
+    val handleTimeout: js.UndefOr[HandleTimeout[T] | Null] = js.undefined
     
-    val initialDelay: js.UndefOr[Double] = js.native
+    val initialDelay: js.UndefOr[Double] = js.undefined
     
-    val jitter: js.UndefOr[Boolean] = js.native
+    val jitter: js.UndefOr[Boolean] = js.undefined
     
-    val maxAttempts: js.UndefOr[Double] = js.native
+    val maxAttempts: js.UndefOr[Double] = js.undefined
     
-    val maxDelay: js.UndefOr[Double] = js.native
+    val maxDelay: js.UndefOr[Double] = js.undefined
     
-    val minDelay: js.UndefOr[Double] = js.native
+    val minDelay: js.UndefOr[Double] = js.undefined
     
-    val timeout: js.UndefOr[Double] = js.native
+    val timeout: js.UndefOr[Double] = js.undefined
   }
   object PartialAttemptOptions {
     
@@ -202,7 +198,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class PartialAttemptOptionsMutableBuilder[Self <: PartialAttemptOptions[_], T] (val x: Self with PartialAttemptOptions[T]) extends AnyVal {
+    implicit class PartialAttemptOptionsMutableBuilder[Self <: PartialAttemptOptions[?], T] (val x: Self & PartialAttemptOptions[T]) extends AnyVal {
       
       @scala.inline
       def setBeforeAttempt(value: (/* context */ AttemptContext, /* options */ AttemptOptions[T]) => Unit): Self = StObject.set(x, "beforeAttempt", js.Any.fromFunction2(value))

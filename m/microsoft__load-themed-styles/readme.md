@@ -10,9 +10,9 @@ Loads themed styles.
 | ------------------ | :-------------: |
 | Full name          | @microsoft/load-themed-styles |
 | Keywords           | - |
-| # releases         | 206 |
-| # dependents       | 43 |
-| # downloads        | 3811165 |
+| # releases         | 201 |
+| # dependents       | 45 |
+| # downloads        | 4132162 |
 | # stars            | 1 |
 
 ## Links

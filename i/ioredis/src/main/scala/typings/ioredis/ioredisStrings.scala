@@ -4,7 +4,6 @@ import typings.ioredis.mod.NodeRole
 import typings.ioredis.mod.SecureVersion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ioredisStrings {
@@ -85,22 +84,30 @@ object ioredisStrings {
   def SET: SET = "SET".asInstanceOf[SET]
   
   @js.native
-  sealed trait TLSv1 extends SecureVersion
+  sealed trait TLSv1
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1: TLSv1 = "TLSv1".asInstanceOf[TLSv1]
   
   @js.native
-  sealed trait TLSv1Dot1 extends SecureVersion
+  sealed trait TLSv1Dot1
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1Dot1: TLSv1Dot1 = "TLSv1.1".asInstanceOf[TLSv1Dot1]
   
   @js.native
-  sealed trait TLSv1Dot2 extends SecureVersion
+  sealed trait TLSv1Dot2
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1Dot2: TLSv1Dot2 = "TLSv1.2".asInstanceOf[TLSv1Dot2]
   
   @js.native
-  sealed trait TLSv1Dot3 extends SecureVersion
+  sealed trait TLSv1Dot3
+    extends StObject
+       with SecureVersion
   @scala.inline
   def TLSv1Dot3: TLSv1Dot3 = "TLSv1.3".asInstanceOf[TLSv1Dot3]
   
@@ -115,7 +122,9 @@ object ioredisStrings {
   def WITHSCORES: WITHSCORES = "WITHSCORES".asInstanceOf[WITHSCORES]
   
   @js.native
-  sealed trait all extends NodeRole
+  sealed trait all
+    extends StObject
+       with NodeRole
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
@@ -130,7 +139,9 @@ object ioredisStrings {
   def group_ : group_ = "group".asInstanceOf[group_]
   
   @js.native
-  sealed trait master extends NodeRole
+  sealed trait master
+    extends StObject
+       with NodeRole
   @scala.inline
   def master: master = "master".asInstanceOf[master]
   
@@ -145,7 +156,9 @@ object ioredisStrings {
   def maxlen_ : maxlen_ = "maxlen".asInstanceOf[maxlen_]
   
   @js.native
-  sealed trait slave extends NodeRole
+  sealed trait slave
+    extends StObject
+       with NodeRole
   @scala.inline
   def slave: slave = "slave".asInstanceOf[slave]
 }

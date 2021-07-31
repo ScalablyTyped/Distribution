@@ -13,36 +13,34 @@ import typings.ionicReact.ionicReactStrings.submit
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<@ionic/react.@ionic/react/dist/types/components/navigation/IonBackButton.Props> */
-@js.native
 trait ReadonlyProps extends StObject {
   
-  val `class`: js.UndefOr[String] = js.native
+  val `class`: js.UndefOr[String] = js.undefined
   
-  val className: js.UndefOr[String] = js.native
+  val className: js.UndefOr[String] = js.undefined
   
-  val color: js.UndefOr[Color] = js.native
+  val color: js.UndefOr[Color] = js.undefined
   
-  val defaultHref: js.UndefOr[String] = js.native
+  val defaultHref: js.UndefOr[String] = js.undefined
   
-  val disabled: js.UndefOr[Boolean] = js.native
+  val disabled: js.UndefOr[Boolean] = js.undefined
   
-  val icon: js.UndefOr[Ios | String] = js.native
+  val icon: js.UndefOr[Ios | String] = js.undefined
   
-  val mode: js.UndefOr[ios | md] = js.native
+  val mode: js.UndefOr[ios | md] = js.undefined
   
-  val ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.native
+  val ref: js.UndefOr[RefObject[HTMLIonBackButtonElement]] = js.undefined
   
-  val routerAnimation: js.UndefOr[AnimationBuilder] = js.native
+  val routerAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
-  val style: js.UndefOr[StringDictionary[js.Any]] = js.native
+  val style: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  val text: js.UndefOr[String | Null] = js.native
+  val text: js.UndefOr[String | Null] = js.undefined
   
-  val `type`: js.UndefOr[submit | reset | button] = js.native
+  val `type`: js.UndefOr[submit | reset | button] = js.undefined
 }
 object ReadonlyProps {
   

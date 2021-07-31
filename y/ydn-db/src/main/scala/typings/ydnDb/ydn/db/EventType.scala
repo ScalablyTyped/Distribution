@@ -2,7 +2,6 @@ package typings.ydnDb.ydn.db
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,20 +11,32 @@ sealed trait EventType extends StObject
 object EventType extends StObject {
   
   @js.native
-  sealed trait created extends EventType
+  sealed trait created
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait deleted extends EventType
+  sealed trait deleted
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait error extends EventType
+  sealed trait error
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait fail extends EventType
+  sealed trait fail
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait ready extends EventType
+  sealed trait ready
+    extends StObject
+       with EventType
   
   @js.native
-  sealed trait updated extends EventType
+  sealed trait updated
+    extends StObject
+       with EventType
 }

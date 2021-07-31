@@ -2,17 +2,15 @@ package typings.pubnub.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Apns extends StObject {
   
-  var apns: js.Object = js.native
+  var apns: js.Object
   
-  var fcm: js.Object = js.native
+  var fcm: js.Object
   
-  var mpns: js.Object = js.native
+  var mpns: js.Object
 }
 object Apns {
   

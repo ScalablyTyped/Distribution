@@ -2,18 +2,19 @@ package typings.gatsbyCli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object packageManagerMod {
   
-  @JSImport("gatsby-cli/lib/util/package-manager", "getPackageManager")
+  @JSImport("gatsby-cli/lib/util/package-manager", JSImport.Namespace)
   @js.native
-  def getPackageManager(): PackageManager = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-cli/lib/util/package-manager", "setPackageManager")
-  @js.native
-  def setPackageManager(packageManager: PackageManager): Unit = js.native
+  @scala.inline
+  def getPackageManager(): PackageManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageManager")().asInstanceOf[PackageManager]
+  
+  @scala.inline
+  def setPackageManager(packageManager: PackageManager): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setPackageManager")(packageManager.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.gatsbyCli.gatsbyCliStrings.yarn

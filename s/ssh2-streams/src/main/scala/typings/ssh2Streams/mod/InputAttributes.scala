@@ -3,23 +3,21 @@ package typings.ssh2Streams.mod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputAttributes extends StObject {
   
-  var atime: js.UndefOr[Double | Date] = js.native
+  var atime: js.UndefOr[Double | Date] = js.undefined
   
-  var gid: js.UndefOr[Double] = js.native
+  var gid: js.UndefOr[Double] = js.undefined
   
-  var mode: js.UndefOr[Double | String] = js.native
+  var mode: js.UndefOr[Double | String] = js.undefined
   
-  var mtime: js.UndefOr[Double | Date] = js.native
+  var mtime: js.UndefOr[Double | Date] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var uid: js.UndefOr[Double] = js.native
+  var uid: js.UndefOr[Double] = js.undefined
 }
 object InputAttributes {
   

@@ -2,24 +2,22 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * On-premises instance configuration.
   */
-@js.native
 trait SchemaOnPremisesConfiguration extends StObject {
   
   /**
     * The host and port of the on-premises instance in host:port format
     */
-  var hostPort: js.UndefOr[String] = js.native
+  var hostPort: js.UndefOr[String] = js.undefined
   
   /**
     * This is always sql#onPremisesConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaOnPremisesConfiguration {
   

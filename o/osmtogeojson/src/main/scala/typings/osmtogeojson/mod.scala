@@ -6,7 +6,6 @@ import typings.osmtogeojson.mod.OsmJSON.OsmJSONObject
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,14 +28,15 @@ object mod {
     
     type Coordinate3d = js.Tuple3[Double, Double, Double]
     
-    @js.native
-    trait Feature extends GeoJSONObject {
+    trait Feature
+      extends StObject
+         with GeoJSONObject {
       
-      var geometry: Geometry = js.native
+      var geometry: Geometry
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var properties: js.Any = js.native
+      var properties: js.Any
     }
     object Feature {
       
@@ -64,10 +64,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait FeatureCollection extends GeoJSONObject {
+    trait FeatureCollection
+      extends StObject
+         with GeoJSONObject {
       
-      var features: js.Array[Feature] = js.native
+      var features: js.Array[Feature]
     }
     object FeatureCollection {
       
@@ -89,10 +90,9 @@ object mod {
       }
     }
     
-    @js.native
     trait GeoJSONObject extends StObject {
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object GeoJSONObject {
       
@@ -111,10 +111,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait Geometry extends GeoJSONObject {
+    trait Geometry
+      extends StObject
+         with GeoJSONObject {
       
-      var coordinates: Coordinate | (js.Array[js.Array[Coordinate] | Coordinate]) = js.native
+      var coordinates: Coordinate | (js.Array[js.Array[Coordinate] | Coordinate])
     }
     object Geometry {
       
@@ -136,10 +137,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait GeometryCollection extends GeoJSONObject {
+    trait GeometryCollection
+      extends StObject
+         with GeoJSONObject {
       
-      var geometries: js.Array[Geometry] = js.native
+      var geometries: js.Array[Geometry]
     }
     object GeometryCollection {
       
@@ -162,26 +164,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * If true, the resulting GeoJSON feature's properties will be a simple key-value list instead of a structured json object (with separate tags and metadata). default: false
       */
-    var flatProperties: js.UndefOr[Boolean] = js.native
+    var flatProperties: js.UndefOr[Boolean] = js.undefined
     
     //TODO: type function
     /**
       * Either a json object or callback function that is used to determine if a closed way should be treated as a Polygon or LineString.
       */
-    var polygonFeatures: js.UndefOr[js.Any | js.Function] = js.native
+    var polygonFeatures: js.UndefOr[js.Any | js.Function] = js.undefined
     
     /**
       * Either a blacklist of tag keys or a callback function. Will be used to decide if a feature is interesting enough for its own GeoJSON feature.
       */
-    var uninterestingTags: js.UndefOr[StringDictionary[Boolean] | js.Function] = js.native
+    var uninterestingTags: js.UndefOr[StringDictionary[Boolean] | js.Function] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -222,24 +223,23 @@ object mod {
   
   object OsmJSON {
     
-    @js.native
     trait Element extends StObject {
       
-      var changeset: js.UndefOr[Double] = js.native
+      var changeset: js.UndefOr[Double] = js.undefined
       
-      var id: Double = js.native
+      var id: Double
       
-      var tags: js.UndefOr[StringDictionary[String]] = js.native
+      var tags: js.UndefOr[StringDictionary[String]] = js.undefined
       
-      var timestamp: js.UndefOr[String] = js.native
+      var timestamp: js.UndefOr[String] = js.undefined
       
-      var `type`: String = js.native
+      var `type`: String
       
-      var uid: js.UndefOr[Double] = js.native
+      var uid: js.UndefOr[Double] = js.undefined
       
-      var user: js.UndefOr[String] = js.native
+      var user: js.UndefOr[String] = js.undefined
       
-      var version: js.UndefOr[Double] = js.native
+      var version: js.UndefOr[Double] = js.undefined
     }
     object Element {
       
@@ -297,14 +297,13 @@ object mod {
       }
     }
     
-    @js.native
     trait Member extends StObject {
       
-      var ref: Double = js.native
+      var ref: Double
       
-      var role: String = js.native
+      var role: String
       
-      var `type`: String = js.native
+      var `type`: String
     }
     object Member {
       
@@ -329,12 +328,13 @@ object mod {
       }
     }
     
-    @js.native
-    trait Node extends Element {
+    trait Node
+      extends StObject
+         with Element {
       
-      var lat: Double = js.native
+      var lat: Double
       
-      var lon: Double = js.native
+      var lon: Double
     }
     object Node {
       
@@ -356,10 +356,9 @@ object mod {
       }
     }
     
-    @js.native
     trait OsmJSONObject extends StObject {
       
-      var elements: js.Array[Node | Way | Relationship] = js.native
+      var elements: js.Array[Node | Way | Relationship]
     }
     object OsmJSONObject {
       
@@ -380,10 +379,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait Relationship extends Element {
+    trait Relationship
+      extends StObject
+         with Element {
       
-      var members: js.Array[Member] = js.native
+      var members: js.Array[Member]
     }
     object Relationship {
       
@@ -405,10 +405,11 @@ object mod {
       }
     }
     
-    @js.native
-    trait Way extends Element {
+    trait Way
+      extends StObject
+         with Element {
       
-      var nodes: js.Array[Double] = js.native
+      var nodes: js.Array[Double]
     }
     object Way {
       

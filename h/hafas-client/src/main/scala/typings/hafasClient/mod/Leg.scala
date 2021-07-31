@@ -2,82 +2,80 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Leg of journey
   */
-@js.native
 trait Leg extends StObject {
   
-  var alternatives: js.UndefOr[js.Array[Alternative]] = js.native
+  var alternatives: js.UndefOr[js.Array[Alternative]] = js.undefined
   
-  var arrival: js.UndefOr[String] = js.native
+  var arrival: js.UndefOr[String] = js.undefined
   
-  var arrivalDelay: js.UndefOr[Double] = js.native
+  var arrivalDelay: js.UndefOr[Double] = js.undefined
   
-  var arrivalPlatform: js.UndefOr[String] = js.native
+  var arrivalPlatform: js.UndefOr[String] = js.undefined
   
-  var cancelled: js.UndefOr[Boolean] = js.native
+  var cancelled: js.UndefOr[Boolean] = js.undefined
   
-  var cycle: js.UndefOr[Cycle] = js.native
+  var cycle: js.UndefOr[Cycle] = js.undefined
   
-  var departure: js.UndefOr[String] = js.native
+  var departure: js.UndefOr[String] = js.undefined
   
-  var departureDelay: js.UndefOr[Double] = js.native
+  var departureDelay: js.UndefOr[Double] = js.undefined
   
-  var departurePlatform: js.UndefOr[String] = js.native
+  var departurePlatform: js.UndefOr[String] = js.undefined
   
-  var destination: Station | Stop = js.native
+  var destination: Station | Stop
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var line: js.UndefOr[Line] = js.native
+  var line: js.UndefOr[Line] = js.undefined
   
-  var loadFactor: js.UndefOr[String] = js.native
+  var loadFactor: js.UndefOr[String] = js.undefined
   
-  var operator: js.UndefOr[Double] = js.native
+  var operator: js.UndefOr[Double] = js.undefined
   
-  var origin: Station | Stop = js.native
+  var origin: Station | Stop
   
-  var plannedArrival: js.UndefOr[String] = js.native
+  var plannedArrival: js.UndefOr[String] = js.undefined
   
-  var plannedArrivalPlatform: js.UndefOr[String] = js.native
+  var plannedArrivalPlatform: js.UndefOr[String] = js.undefined
   
-  var plannedDeparture: js.UndefOr[String] = js.native
+  var plannedDeparture: js.UndefOr[String] = js.undefined
   
-  var plannedDeparturePlatform: js.UndefOr[String] = js.native
+  var plannedDeparturePlatform: js.UndefOr[String] = js.undefined
   
-  var polyline: js.UndefOr[FeatureCollection] = js.native
+  var polyline: js.UndefOr[FeatureCollection] = js.undefined
   
-  var price: js.UndefOr[Price] = js.native
+  var price: js.UndefOr[Price] = js.undefined
   
-  var prognosedArrival: js.UndefOr[String] = js.native
+  var prognosedArrival: js.UndefOr[String] = js.undefined
   
-  var prognosedArrivalPlatform: js.UndefOr[String] = js.native
+  var prognosedArrivalPlatform: js.UndefOr[String] = js.undefined
   
-  var prognosedDeparture: js.UndefOr[String] = js.native
+  var prognosedDeparture: js.UndefOr[String] = js.undefined
   
-  var prognosedDeparturePlatform: js.UndefOr[String] = js.native
+  var prognosedDeparturePlatform: js.UndefOr[String] = js.undefined
   
-  var public: js.UndefOr[Boolean] = js.native
+  var public: js.UndefOr[Boolean] = js.undefined
   
-  var reachable: js.UndefOr[Boolean] = js.native
+  var reachable: js.UndefOr[Boolean] = js.undefined
   
-  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.native
+  var remarks: js.UndefOr[js.Array[Hint | Warning]] = js.undefined
   
-  var schedule: js.UndefOr[Double] = js.native
+  var schedule: js.UndefOr[Double] = js.undefined
   
-  var stopovers: js.UndefOr[js.Array[StopOver]] = js.native
+  var stopovers: js.UndefOr[js.Array[StopOver]] = js.undefined
   
-  var transfer: js.UndefOr[Boolean] = js.native
+  var transfer: js.UndefOr[Boolean] = js.undefined
   
-  var tripId: js.UndefOr[String] = js.native
+  var tripId: js.UndefOr[String] = js.undefined
   
-  var walking: js.UndefOr[Boolean] = js.native
+  var walking: js.UndefOr[Boolean] = js.undefined
 }
 object Leg {
   

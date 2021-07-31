@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElasticsearchDomainDomainEndpointOptions extends StObject {
   
   /**
     * Whether to require that all traffic to the domain arrive over HTTPS.
     */
-  var EnforceHTTPS: js.UndefOr[Boolean] = js.native
+  var EnforceHTTPS: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The TLS security policy to apply to the HTTPS endpoint of the Elasticsearch domain. Valid values:    Policy-Min-TLS-1-0-2019-07, which supports TLSv1.0 and higher    Policy-Min-TLS-1-2-2019-07, which only supports TLSv1.2  
     */
-  var TLSSecurityPolicy: js.UndefOr[NonEmptyString] = js.native
+  var TLSSecurityPolicy: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsElasticsearchDomainDomainEndpointOptions {
   

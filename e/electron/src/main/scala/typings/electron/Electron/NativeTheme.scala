@@ -7,11 +7,12 @@ import typings.electron.electronStrings.updated
 import typings.node.eventsMod.global.NodeJS.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait NativeTheme extends EventEmitter {
+trait NativeTheme
+  extends StObject
+     with EventEmitter {
   
   @JSName("addListener")
   def addListener_updated(event: updated, listener: js.Function): this.type = js.native

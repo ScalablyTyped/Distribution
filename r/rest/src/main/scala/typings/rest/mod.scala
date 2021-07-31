@@ -4,36 +4,32 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.when.When.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(path: String): ResponsePromise = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+  @scala.inline
+  def apply(request: Request): ResponsePromise = ^.asInstanceOf[js.Dynamic].apply(request.asInstanceOf[js.Any]).asInstanceOf[ResponsePromise]
+  
   @JSImport("rest", JSImport.Namespace)
   @js.native
-  def apply(path: String): ResponsePromise = js.native
-  @JSImport("rest", JSImport.Namespace)
-  @js.native
-  def apply(request: Request): ResponsePromise = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rest", "getDefaultClient")
-  @js.native
-  def getDefaultClient(): Client = js.native
+  @scala.inline
+  def getDefaultClient(): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultClient")().asInstanceOf[Client]
   
-  @JSImport("rest", "resetDefaultClient")
-  @js.native
-  def resetDefaultClient(): Unit = js.native
+  @scala.inline
+  def resetDefaultClient(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetDefaultClient")().asInstanceOf[Unit]
   
-  @JSImport("rest", "setDefaultClient")
-  @js.native
-  def setDefaultClient(client: Client): Unit = js.native
+  @scala.inline
+  def setDefaultClient(client: Client): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultClient")(client.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("rest", "wrap")
-  @js.native
-  def wrap[T](interceptor: Interceptor[T]): Client = js.native
-  @JSImport("rest", "wrap")
-  @js.native
-  def wrap[T](interceptor: Interceptor[T], config: T): Client = js.native
+  @scala.inline
+  def wrap[T](interceptor: Interceptor[T]): Client = ^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(interceptor.asInstanceOf[js.Any]).asInstanceOf[Client]
+  @scala.inline
+  def wrap[T](interceptor: Interceptor[T], config: T): Client = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(interceptor.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Client]
   
   @js.native
   trait Client extends StObject {
@@ -51,37 +47,53 @@ object mod {
   
   type Interceptor[T] = js.Function2[/* parent */ js.UndefOr[Client], /* config */ js.UndefOr[T], Client]
   
-  @js.native
   trait Meta extends StObject {
     
-    var arguments: js.Any = js.native
+    var arguments: js.Any
     
-    def client(path: String): ResponsePromise = js.native
-    def client(request: Request): ResponsePromise = js.native
+    def client(path: String): ResponsePromise
+    def client(request: Request): ResponsePromise
     @JSName("client")
-    var client_Original: Client = js.native
+    var client_Original: Client
+  }
+  object Meta {
+    
+    @scala.inline
+    def apply(arguments: js.Any, client: Client): Meta = {
+      val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any], client = client.asInstanceOf[js.Any])
+      __obj.asInstanceOf[Meta]
+    }
+    
+    @scala.inline
+    implicit class MetaMutableBuilder[Self <: Meta] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setArguments(value: js.Any): Self = StObject.set(x, "arguments", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setClient(value: Client): Self = StObject.set(x, "client", value.asInstanceOf[js.Any])
+    }
   }
   
-  @js.native
   trait Request extends StObject {
     
-    var cancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var cancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var canceled: js.UndefOr[Boolean] = js.native
+    var canceled: js.UndefOr[Boolean] = js.undefined
     
-    var entity: js.UndefOr[js.Any] = js.native
+    var entity: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[js.Any] = js.native
+    var headers: js.UndefOr[js.Any] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var mixin: js.UndefOr[js.Any] = js.native
+    var mixin: js.UndefOr[js.Any] = js.undefined
     
-    var originator: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], ResponsePromise]] = js.native
+    var originator: js.UndefOr[js.Function1[/* request */ js.UndefOr[this.type], ResponsePromise]] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object Request {
     
@@ -150,18 +162,17 @@ object mod {
     }
   }
   
-  @js.native
   trait Response extends StObject {
     
-    var entity: js.Any = js.native
+    var entity: js.Any
     
-    var headers: Headers = js.native
+    var headers: Headers
     
-    var raw: js.Any = js.native
+    var raw: js.Any
     
-    var request: Request = js.native
+    var request: Request
     
-    var status: Status = js.native
+    var status: Status
   }
   object Response {
     
@@ -192,23 +203,24 @@ object mod {
   }
   
   @js.native
-  trait ResponsePromise extends Promise[Response] {
+  trait ResponsePromise
+    extends StObject
+       with Promise[Response] {
     
-    def entity(): Promise[_] = js.native
+    def entity(): Promise[js.Any] = js.native
     
-    def header(headerName: String): Promise[_] = js.native
+    def header(headerName: String): Promise[js.Any] = js.native
     
     def headers(): Promise[Headers] = js.native
     
     def status(): Promise[Double] = js.native
   }
   
-  @js.native
   trait Status extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Status {
     

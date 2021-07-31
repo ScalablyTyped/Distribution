@@ -3,32 +3,30 @@ package typings.amapJsApi.anon
 import typings.amapJsApi.AMap.LngLat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsIndoorPOI extends StObject {
   
   /**
     * 热点id
     */
-  var id: String = js.native
+  var id: String
   
   // internal
   /**
     * 是否室内热点
     */
-  var isIndoorPOI: Boolean = js.native
+  var isIndoorPOI: Boolean
   
   /**
     * 经纬度坐标
     */
-  var lnglat: LngLat = js.native
+  var lnglat: LngLat
   
   /**
     * 热点名称
     */
-  var name: String = js.native
+  var name: String
 }
 object IsIndoorPOI {
   

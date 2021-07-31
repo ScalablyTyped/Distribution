@@ -3,20 +3,18 @@ package typings.foundationSites.FoundationSites
 import typings.foundationSites.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://get.foundation/sites/docs/accordion.html#javascript-reference
-@js.native
 trait Accordion extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def down($target: JQuery, firstTime: Boolean): Unit = js.native
+  def down($target: JQuery, firstTime: Boolean): Unit
   
-  def toggle($target: JQuery): Unit = js.native
+  def toggle($target: JQuery): Unit
   
-  def up($target: JQuery): Unit = js.native
+  def up($target: JQuery): Unit
 }
 object Accordion {
   

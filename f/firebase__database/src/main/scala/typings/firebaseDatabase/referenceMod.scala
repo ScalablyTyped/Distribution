@@ -13,7 +13,6 @@ import typings.firebaseDatabase.transactionResultMod.TransactionResult
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object referenceMod {
@@ -75,16 +74,16 @@ object referenceMod {
       * @return {!Reference}
       */
     def push(): Reference = js.native
-    def push(value: js.UndefOr[scala.Nothing], onComplete: js.Function1[/* a */ Error | Null, Unit]): Reference = js.native
     def push(value: js.Any): Reference = js.native
     def push(value: js.Any, onComplete: js.Function1[/* a */ Error | Null, Unit]): Reference = js.native
+    def push(value: Unit, onComplete: js.Function1[/* a */ Error | Null, Unit]): Reference = js.native
     
     /**
       * @param {function(?Error)=} onComplete
       * @return {!Promise}
       */
-    def remove(): js.Promise[_] = js.native
-    def remove(onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
+    def remove(): js.Promise[js.Any] = js.native
+    def remove(onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
     
     def root: Reference = js.native
     
@@ -93,20 +92,20 @@ object referenceMod {
       * @param {function(?Error)=} onComplete
       * @return {!Promise}
       */
-    def set(newVal: js.Any): js.Promise[_] = js.native
-    def set(newVal: js.Any, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
+    def set(newVal: js.Any): js.Promise[js.Any] = js.native
+    def set(newVal: js.Any, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
     
     /**
       * @param {string|number|null} priority
       * @param {function(?Error)=} onComplete
       * @return {!Promise}
       */
-    def setPriority(): js.Promise[_] = js.native
-    def setPriority(priority: String): js.Promise[_] = js.native
-    def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
-    def setPriority(priority: Double): js.Promise[_] = js.native
-    def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
-    def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
+    def setPriority(): js.Promise[js.Any] = js.native
+    def setPriority(priority: String): js.Promise[js.Any] = js.native
+    def setPriority(priority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
+    def setPriority(priority: Double): js.Promise[js.Any] = js.native
+    def setPriority(priority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
+    def setPriority(priority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
     
     /**
       * @param {*} newVal
@@ -114,24 +113,21 @@ object referenceMod {
       * @param {function(?Error)=} onComplete
       * @return {!Promise}
       */
-    def setWithPriority(newVal: js.Any): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
-    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
+    def setWithPriority(newVal: js.Any): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: String): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: String, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Double): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Double, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
+    def setWithPriority(newVal: js.Any, newPriority: Null, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
     
     def `then`[TResult1, TResult2](): js.Promise[TResult1 | TResult2] = js.native
-    def `then`[TResult1, TResult2](
-      onfulfilled: js.UndefOr[scala.Nothing],
-      onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
-    ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]]): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](
       onfulfilled: js.Function1[/* value */ Reference, TResult1 | js.Thenable[TResult1]],
       onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]
     ): js.Promise[TResult1 | TResult2] = js.native
     def `then`[TResult1, TResult2](onfulfilled: Null, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
+    def `then`[TResult1, TResult2](onfulfilled: Unit, onrejected: js.Function1[/* reason */ js.Any, TResult2 | js.Thenable[TResult2]]): js.Promise[TResult1 | TResult2] = js.native
     @JSName("then")
     var then_Original: FnCallOnfulfilledOnrejected = js.native
     
@@ -141,31 +137,29 @@ object referenceMod {
       * @param {boolean=} applyLocally
       * @return {!Promise}
       */
-    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, _]): js.Promise[TransactionResult] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any]): js.Promise[TransactionResult] = js.native
     def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
-      onComplete: js.UndefOr[scala.Nothing],
-      applyLocally: Boolean
-    ): js.Promise[TransactionResult] = js.native
-    def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
+      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
       onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, Unit]
     ): js.Promise[TransactionResult] = js.native
     def transaction(
-      transactionUpdate: js.Function1[/* a */ js.Any, _],
+      transactionUpdate: js.Function1[/* a */ js.Any, js.Any],
       onComplete: js.Function3[/* a */ Error | Null, /* b */ Boolean, /* c */ DataSnapshot | Null, Unit],
       applyLocally: Boolean
     ): js.Promise[TransactionResult] = js.native
+    def transaction(transactionUpdate: js.Function1[/* a */ js.Any, js.Any], onComplete: Unit, applyLocally: Boolean): js.Promise[TransactionResult] = js.native
     
     /**
       * @param {!Object} objectToMerge
       * @param {function(?Error)=} onComplete
       * @return {!Promise}
       */
-    def update(objectToMerge: js.Object): js.Promise[_] = js.native
-    def update(objectToMerge: js.Object, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[_] = js.native
+    def update(objectToMerge: js.Object): js.Promise[js.Any] = js.native
+    def update(objectToMerge: js.Object, onComplete: js.Function1[/* a */ Error | Null, Unit]): js.Promise[js.Any] = js.native
   }
   
   @js.native
-  trait ReferenceConstructor extends Instantiable2[/* repo */ Repo, /* path */ Path, Reference]
+  trait ReferenceConstructor
+    extends StObject
+       with Instantiable2[/* repo */ Repo, /* path */ Path, Reference]
 }

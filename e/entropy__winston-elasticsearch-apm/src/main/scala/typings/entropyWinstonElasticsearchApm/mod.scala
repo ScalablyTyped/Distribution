@@ -4,7 +4,6 @@ import typings.elasticApmNode.mod.Agent
 import typings.winstonTransport.mod.TransportStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,11 @@ object mod {
     def log_MElasticsearchApm(info: js.Any, next: js.Function0[Unit]): js.Any = js.native
   }
   
-  @js.native
-  trait ElasticsearchApmOptions extends TransportStreamOptions {
+  trait ElasticsearchApmOptions
+    extends StObject
+       with TransportStreamOptions {
     
-    var apm: Agent = js.native
+    var apm: Agent
   }
   object ElasticsearchApmOptions {
     

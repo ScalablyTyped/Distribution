@@ -9,10 +9,13 @@ import typings.istanbulLibSourceMaps.istanbulLibSourceMapsStrings.memory
 import typings.sourceMap.mod.RawSourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("istanbul-lib-source-maps", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("istanbul-lib-source-maps", "SourceStore")
   @js.native
@@ -23,37 +26,34 @@ object mod {
     def registerSource(filepath: String, sourceText: String): Unit = js.native
   }
   
-  @JSImport("istanbul-lib-source-maps", "createSourceMapStore")
-  @js.native
-  def createSourceMapStore(): MapStore = js.native
-  @JSImport("istanbul-lib-source-maps", "createSourceMapStore")
-  @js.native
-  def createSourceMapStore(options: PartialMapStoreOptions): MapStore = js.native
+  @scala.inline
+  def createSourceMapStore(): MapStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapStore")().asInstanceOf[MapStore]
+  @scala.inline
+  def createSourceMapStore(options: PartialMapStoreOptions): MapStore = ^.asInstanceOf[js.Dynamic].applyDynamic("createSourceMapStore")(options.asInstanceOf[js.Any]).asInstanceOf[MapStore]
   
-  @js.native
   trait MapStore extends StObject {
     
-    def addInputSourceMapsSync(coverageData: js.Any): Unit = js.native
+    def addInputSourceMapsSync(coverageData: js.Any): Unit
     
-    var baseDir: String | Null = js.native
+    var baseDir: String | Null
     
-    var data: StringDictionary[Data] = js.native
+    var data: StringDictionary[Data]
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    def getSourceMapSync(filePath: String): js.Any = js.native
+    def getSourceMapSync(filePath: String): js.Any
     
-    def registerMap(filename: String, sourceMap: RawSourceMap): Unit = js.native
+    def registerMap(filename: String, sourceMap: RawSourceMap): Unit
     
-    def registerURL(transformedFilePath: String, sourceMapUrl: String): Unit = js.native
+    def registerURL(transformedFilePath: String, sourceMapUrl: String): Unit
     
-    def sourceFinder(filePath: String): String = js.native
+    def sourceFinder(filePath: String): String
     
-    var sourceStore: SourceStore = js.native
+    var sourceStore: SourceStore
     
-    def transformCoverage(coverageMap: CoverageMap): js.Promise[CoverageMap] = js.native
+    def transformCoverage(coverageMap: CoverageMap): js.Promise[CoverageMap]
     
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object MapStore {
     
@@ -70,7 +70,7 @@ object mod {
       transformCoverage: CoverageMap => js.Promise[CoverageMap],
       verbose: Boolean
     ): MapStore = {
-      val __obj = js.Dynamic.literal(addInputSourceMapsSync = js.Any.fromFunction1(addInputSourceMapsSync), data = data.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), getSourceMapSync = js.Any.fromFunction1(getSourceMapSync), registerMap = js.Any.fromFunction2(registerMap), registerURL = js.Any.fromFunction2(registerURL), sourceFinder = js.Any.fromFunction1(sourceFinder), sourceStore = sourceStore.asInstanceOf[js.Any], transformCoverage = js.Any.fromFunction1(transformCoverage), verbose = verbose.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(addInputSourceMapsSync = js.Any.fromFunction1(addInputSourceMapsSync), data = data.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), getSourceMapSync = js.Any.fromFunction1(getSourceMapSync), registerMap = js.Any.fromFunction2(registerMap), registerURL = js.Any.fromFunction2(registerURL), sourceFinder = js.Any.fromFunction1(sourceFinder), sourceStore = sourceStore.asInstanceOf[js.Any], transformCoverage = js.Any.fromFunction1(transformCoverage), verbose = verbose.asInstanceOf[js.Any], baseDir = null)
       __obj.asInstanceOf[MapStore]
     }
     
@@ -115,16 +115,15 @@ object mod {
     }
   }
   
-  @js.native
   trait MapStoreOptions extends StObject {
     
-    var baseDir: String = js.native
+    var baseDir: String
     
-    var sourceStore: memory | file = js.native
+    var sourceStore: memory | file
     
-    var tmpdir: String = js.native
+    var tmpdir: String
     
-    var verbose: Boolean = js.native
+    var verbose: Boolean
   }
   object MapStoreOptions {
     

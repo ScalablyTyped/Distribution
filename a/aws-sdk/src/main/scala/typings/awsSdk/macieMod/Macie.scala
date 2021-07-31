@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -41,7 +40,7 @@ trait Macie extends Service {
   ): Request[AssociateS3ResourcesResult, AWSError] = js.native
   
   @JSName("config")
-  var config_Macie: ConfigBase with ClientConfiguration = js.native
+  var config_Macie: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Removes the specified member account from Amazon Macie Classic.

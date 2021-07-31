@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudshell.gapi.client.cloudshell
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartEnvironmentMetadata extends StObject {
   
   /** Current state of the environment being started. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object StartEnvironmentMetadata {
   

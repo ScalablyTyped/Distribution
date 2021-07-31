@@ -2,15 +2,13 @@ package typings.vscodeLanguageclient.clientMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvideResolveFeature[T1 /* <: js.Function */, T2 /* <: js.Function */] extends StObject {
   
-  var provide: T1 = js.native
+  var provide: T1
   
-  var resolve: T2 = js.native
+  var resolve: T2
 }
 object ProvideResolveFeature {
   
@@ -21,7 +19,7 @@ object ProvideResolveFeature {
   }
   
   @scala.inline
-  implicit class ProvideResolveFeatureMutableBuilder[Self <: ProvideResolveFeature[_, _], T1 /* <: js.Function */, T2 /* <: js.Function */] (val x: Self with (ProvideResolveFeature[T1, T2])) extends AnyVal {
+  implicit class ProvideResolveFeatureMutableBuilder[Self <: ProvideResolveFeature[?, ?], T1 /* <: js.Function */, T2 /* <: js.Function */] (val x: Self & (ProvideResolveFeature[T1, T2])) extends AnyVal {
     
     @scala.inline
     def setProvide(value: T1): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])

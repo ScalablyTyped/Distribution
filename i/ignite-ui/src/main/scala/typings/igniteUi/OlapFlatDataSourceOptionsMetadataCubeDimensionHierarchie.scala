@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,26 +15,26 @@ trait OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie
   /**
     * A caption for the hierarchy.
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * The path to be used when displaying the hierarchy in the user interface.
     *                                 Nested folders are indicated by a backslash (\).
     *                                 The folder hierarchy will appear under parent dimension node.
     */
-  var displayFolder: js.UndefOr[String] = js.native
+  var displayFolder: js.UndefOr[String] = js.undefined
   
   /**
     * An array of level metadata objects.
     */
-  var levels: js.UndefOr[js.Array[OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchieLevel]] = js.native
+  var levels: js.UndefOr[js.Array[OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchieLevel]] = js.undefined
   
   /**
     * Optional="false" A name for the hierarchy.
     *                                 The unique name of the hierarchy is formed using the following pattern:
     *                                 [<parentDimension.name>].[<hierarchyMetadata.name>]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie {
   

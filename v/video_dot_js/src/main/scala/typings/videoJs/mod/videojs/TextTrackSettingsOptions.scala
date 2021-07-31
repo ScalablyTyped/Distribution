@@ -2,13 +2,13 @@ package typings.videoJs.mod.videojs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextTrackSettingsOptions extends ModalDialogOptions {
+trait TextTrackSettingsOptions
+  extends StObject
+     with ModalDialogOptions {
   
-  var persistTextTrackSettings: js.UndefOr[Boolean] = js.native
+  var persistTextTrackSettings: js.UndefOr[Boolean] = js.undefined
 }
 object TextTrackSettingsOptions {
   

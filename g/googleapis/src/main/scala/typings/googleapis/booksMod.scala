@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object booksMod {
+  
+  @JSImport("googleapis/build/src/apis/books", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -66,9 +69,12 @@ object booksMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/books", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/books", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -112,10 +118,9 @@ object booksMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/books", "books")
-  @js.native
-  def books(options: Options): Books = js.native
-  @JSImport("googleapis/build/src/apis/books", "books")
-  @js.native
-  def books_v1(version: v1): Books = js.native
+  @scala.inline
+  def books(options: Options): Books = ^.asInstanceOf[js.Dynamic].applyDynamic("books")(options.asInstanceOf[js.Any]).asInstanceOf[Books]
+  
+  @scala.inline
+  def books_v1(version: v1): Books = ^.asInstanceOf[js.Dynamic].applyDynamic("books")(version.asInstanceOf[js.Any]).asInstanceOf[Books]
 }

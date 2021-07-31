@@ -3,27 +3,27 @@ package typings.protobufjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.protobufjs.mod.AnyNestedObject because Already inherited */ @js.native
-trait IType extends INamespace {
+- typings.protobufjs.mod.AnyNestedObject because Already inherited */ trait IType
+  extends StObject
+     with INamespace {
   
   /** Extension ranges */
-  var extensions: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var extensions: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
   
   /** Field descriptors */
-  var fields: StringDictionary[IField] = js.native
+  var fields: StringDictionary[IField]
   
   /** Whether a legacy group or not */
-  var group: js.UndefOr[Boolean] = js.native
+  var group: js.UndefOr[Boolean] = js.undefined
   
   /** Oneof descriptors */
-  var oneofs: js.UndefOr[StringDictionary[IOneOf]] = js.native
+  var oneofs: js.UndefOr[StringDictionary[IOneOf]] = js.undefined
   
   /** Reserved ranges */
-  var reserved: js.UndefOr[js.Array[js.Array[Double]]] = js.native
+  var reserved: js.UndefOr[js.Array[js.Array[Double]]] = js.undefined
 }
 object IType {
   

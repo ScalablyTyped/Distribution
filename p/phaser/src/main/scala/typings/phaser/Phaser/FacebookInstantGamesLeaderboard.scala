@@ -5,7 +5,6 @@ import typings.phaser.Phaser.Events.EventEmitter
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `getLeaderboard()` method of the main plugin.
   */
 @js.native
-trait FacebookInstantGamesLeaderboard extends EventEmitter {
+trait FacebookInstantGamesLeaderboard
+  extends StObject
+     with EventEmitter {
   
   /**
     * The ID of the context that the leaderboard is associated with, or null if the leaderboard is not tied to a particular context.
@@ -67,7 +68,7 @@ trait FacebookInstantGamesLeaderboard extends EventEmitter {
     * @param offset The offset from the top of the leaderboard that entries will be fetched from. Default 0.
     */
   def getScores(): this.type = js.native
-  def getScores(count: js.UndefOr[scala.Nothing], offset: integer): this.type = js.native
+  def getScores(count: Unit, offset: integer): this.type = js.native
   def getScores(count: integer): this.type = js.native
   def getScores(count: integer, offset: integer): this.type = js.native
   

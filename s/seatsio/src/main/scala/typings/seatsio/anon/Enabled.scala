@@ -2,17 +2,15 @@ package typings.seatsio.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enabled extends StObject {
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var multiSelect: Boolean = js.native
+  var multiSelect: Boolean
   
-  var zoomOnSelect: Boolean = js.native
+  var zoomOnSelect: Boolean
 }
 object Enabled {
   

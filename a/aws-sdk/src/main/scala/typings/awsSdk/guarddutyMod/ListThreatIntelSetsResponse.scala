@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListThreatIntelSetsResponse extends StObject {
   
   /**
     * The pagination parameter to be used on the next list operation to retrieve more items.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * The IDs of the ThreatIntelSet resources.
     */
-  var ThreatIntelSetIds: typings.awsSdk.guarddutyMod.ThreatIntelSetIds = js.native
+  var ThreatIntelSetIds: typings.awsSdk.guarddutyMod.ThreatIntelSetIds
 }
 object ListThreatIntelSetsResponse {
   

@@ -2,10 +2,8 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOM extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait DOM extends StObject {
     * This can be useful after multiple calls to `domcolumns.add()` with `skipUpdate` set to true.
     * This way we improve performance by generating the DOM only once.
     */
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object DOM {
   

@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a mobile broadband PIN operation. */
-@js.native
 trait MobileBroadbandPinOperationResult extends StObject {
   
   /** Gets the number of PIN entry attempts remaining until the mobile broadband PIN is blocked. */
-  var attemptsRemaining: Double = js.native
+  var attemptsRemaining: Double
   
   /** Gets a value indicating whether the PIN operation was successful. */
-  var isSuccessful: Boolean = js.native
+  var isSuccessful: Boolean
 }
 object MobileBroadbandPinOperationResult {
   

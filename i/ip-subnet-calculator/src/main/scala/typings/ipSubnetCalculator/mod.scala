@@ -2,88 +2,74 @@ package typings.ipSubnetCalculator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ip-subnet-calculator", "calculate")
+  @JSImport("ip-subnet-calculator", JSImport.Namespace)
   @js.native
-  def calculate(ipStart: String, ipEnd: String): js.Array[SubnetResult] = js.native
-  @JSImport("ip-subnet-calculator", "calculate")
-  @js.native
-  def calculate(ipStart: String, ipEnd: Double): js.Array[SubnetResult] = js.native
-  @JSImport("ip-subnet-calculator", "calculate")
-  @js.native
-  def calculate(ipStart: Double, ipEnd: String): js.Array[SubnetResult] = js.native
-  @JSImport("ip-subnet-calculator", "calculate")
-  @js.native
-  def calculate(ipStart: Double, ipEnd: Double): js.Array[SubnetResult] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ip-subnet-calculator", "calculateCIDRPrefix")
-  @js.native
-  def calculateCIDRPrefix(ip: String, subnetMask: String): SubnetResult = js.native
-  @JSImport("ip-subnet-calculator", "calculateCIDRPrefix")
-  @js.native
-  def calculateCIDRPrefix(ip: String, subnetMask: Double): SubnetResult = js.native
-  @JSImport("ip-subnet-calculator", "calculateCIDRPrefix")
-  @js.native
-  def calculateCIDRPrefix(ip: Double, subnetMask: String): SubnetResult = js.native
-  @JSImport("ip-subnet-calculator", "calculateCIDRPrefix")
-  @js.native
-  def calculateCIDRPrefix(ip: Double, subnetMask: Double): SubnetResult = js.native
+  @scala.inline
+  def calculate(ipStart: String, ipEnd: String): js.Array[SubnetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculate")(ipStart.asInstanceOf[js.Any], ipEnd.asInstanceOf[js.Any])).asInstanceOf[js.Array[SubnetResult]]
+  @scala.inline
+  def calculate(ipStart: String, ipEnd: Double): js.Array[SubnetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculate")(ipStart.asInstanceOf[js.Any], ipEnd.asInstanceOf[js.Any])).asInstanceOf[js.Array[SubnetResult]]
+  @scala.inline
+  def calculate(ipStart: Double, ipEnd: String): js.Array[SubnetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculate")(ipStart.asInstanceOf[js.Any], ipEnd.asInstanceOf[js.Any])).asInstanceOf[js.Array[SubnetResult]]
+  @scala.inline
+  def calculate(ipStart: Double, ipEnd: Double): js.Array[SubnetResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("calculate")(ipStart.asInstanceOf[js.Any], ipEnd.asInstanceOf[js.Any])).asInstanceOf[js.Array[SubnetResult]]
   
-  @JSImport("ip-subnet-calculator", "calculateSubnetMask")
-  @js.native
-  def calculateSubnetMask(ip: String, prefixSize: Double): SubnetResult = js.native
-  @JSImport("ip-subnet-calculator", "calculateSubnetMask")
-  @js.native
-  def calculateSubnetMask(ip: Double, prefixSize: Double): SubnetResult = js.native
+  @scala.inline
+  def calculateCIDRPrefix(ip: String, subnetMask: String): SubnetResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateCIDRPrefix")(ip.asInstanceOf[js.Any], subnetMask.asInstanceOf[js.Any])).asInstanceOf[SubnetResult]
+  @scala.inline
+  def calculateCIDRPrefix(ip: String, subnetMask: Double): SubnetResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateCIDRPrefix")(ip.asInstanceOf[js.Any], subnetMask.asInstanceOf[js.Any])).asInstanceOf[SubnetResult]
+  @scala.inline
+  def calculateCIDRPrefix(ip: Double, subnetMask: String): SubnetResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateCIDRPrefix")(ip.asInstanceOf[js.Any], subnetMask.asInstanceOf[js.Any])).asInstanceOf[SubnetResult]
+  @scala.inline
+  def calculateCIDRPrefix(ip: Double, subnetMask: Double): SubnetResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateCIDRPrefix")(ip.asInstanceOf[js.Any], subnetMask.asInstanceOf[js.Any])).asInstanceOf[SubnetResult]
   
-  @JSImport("ip-subnet-calculator", "isDecimalIp")
-  @js.native
-  def isDecimalIp(ipNum: Double): Boolean = js.native
+  @scala.inline
+  def calculateSubnetMask(ip: String, prefixSize: Double): SubnetResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSubnetMask")(ip.asInstanceOf[js.Any], prefixSize.asInstanceOf[js.Any])).asInstanceOf[SubnetResult]
+  @scala.inline
+  def calculateSubnetMask(ip: Double, prefixSize: Double): SubnetResult = (^.asInstanceOf[js.Dynamic].applyDynamic("calculateSubnetMask")(ip.asInstanceOf[js.Any], prefixSize.asInstanceOf[js.Any])).asInstanceOf[SubnetResult]
   
-  @JSImport("ip-subnet-calculator", "isIp")
-  @js.native
-  def isIp(ipStr: String): Boolean = js.native
+  @scala.inline
+  def isDecimalIp(ipNum: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDecimalIp")(ipNum.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ip-subnet-calculator", "toDecimal")
-  @js.native
-  def toDecimal(ip: String): Double = js.native
-  @JSImport("ip-subnet-calculator", "toDecimal")
-  @js.native
-  def toDecimal(ip: Double): Double = js.native
+  @scala.inline
+  def isIp(ipStr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIp")(ipStr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ip-subnet-calculator", "toString")
-  @js.native
-  def toString_(num: String): String = js.native
-  @JSImport("ip-subnet-calculator", "toString")
-  @js.native
-  def toString_(num: Double): String = js.native
+  @scala.inline
+  def toDecimal(ip: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def toDecimal(ip: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("toDecimal")(ip.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def toString_(num: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def toString_(num: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(num.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait SubnetResult extends StObject {
     
-    var invertedMask: Double = js.native
+    var invertedMask: Double
     
-    var invertedMaskStr: String = js.native
+    var invertedMaskStr: String
     
-    var invertedSize: Double = js.native
+    var invertedSize: Double
     
-    var ipHigh: Double = js.native
+    var ipHigh: Double
     
-    var ipHighStr: String = js.native
+    var ipHighStr: String
     
-    var ipLow: Double = js.native
+    var ipLow: Double
     
-    var ipLowStr: String = js.native
+    var ipLowStr: String
     
-    var prefixMask: Double = js.native
+    var prefixMask: Double
     
-    var prefixMaskStr: String = js.native
+    var prefixMaskStr: String
     
-    var prefixSize: Double = js.native
+    var prefixSize: Double
   }
   object SubnetResult {
     

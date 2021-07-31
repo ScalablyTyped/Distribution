@@ -3,36 +3,34 @@ package typings.firefoxWebextBrowser.browser.runtime
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object containing information about the script context that sent a message or request. */
-@js.native
 trait MessageSender extends StObject {
   
   /**
     * The frame that opened the connection. 0 for top-level frames, positive for child frames. This will only be set when `tab` is set.
     */
-  var frameId: js.UndefOr[Double] = js.native
+  var frameId: js.UndefOr[Double] = js.undefined
   
   /** The ID of the extension or app that opened the connection, if any. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The `tabs.Tab` which opened the connection, if any. This property will **only** be present when the connection was opened from a tab (including content scripts), and **only** if the receiver is an extension, not an app.
     */
-  var tab: js.UndefOr[Tab] = js.native
+  var tab: js.UndefOr[Tab] = js.undefined
   
   /**
     * The TLS channel ID of the page or frame that opened the connection, if requested by the extension or app, and if available.
     * @deprecated Unsupported on Firefox at this time.
     */
-  var tlsChannelId: js.UndefOr[String] = js.native
+  var tlsChannelId: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the page or frame that opened the connection. If the sender is in an iframe, it will be iframe's URL not the URL of the page which hosts it.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object MessageSender {
   

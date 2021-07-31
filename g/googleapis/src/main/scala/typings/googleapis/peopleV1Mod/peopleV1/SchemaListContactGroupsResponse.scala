@@ -2,35 +2,33 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response to a list contact groups request.
   */
-@js.native
 trait SchemaListContactGroupsResponse extends StObject {
   
   /**
     * The list of contact groups. Members of the contact groups are not
     * populated.
     */
-  var contactGroups: js.UndefOr[js.Array[SchemaContactGroup]] = js.native
+  var contactGroups: js.UndefOr[js.Array[SchemaContactGroup]] = js.undefined
   
   /**
     * The token that can be used to retrieve the next page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The token that can be used to retrieve changes since the last request.
     */
-  var nextSyncToken: js.UndefOr[String] = js.native
+  var nextSyncToken: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of items in the list without pagination.
     */
-  var totalItems: js.UndefOr[Double] = js.native
+  var totalItems: js.UndefOr[Double] = js.undefined
 }
 object SchemaListContactGroupsResponse {
   

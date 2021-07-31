@@ -2,16 +2,14 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemCount extends StObject {
   
   /**
     * The number of videos in the playlist.
     */
-  var itemCount: Double = js.native
+  var itemCount: Double
 }
 object ItemCount {
   

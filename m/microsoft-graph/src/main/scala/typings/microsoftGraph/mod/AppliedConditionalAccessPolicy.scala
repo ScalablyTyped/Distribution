@@ -2,32 +2,30 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppliedConditionalAccessPolicy extends StObject {
   
   // Refers to the Name of the conditional access policy (example: 'Require MFA for Salesforce').
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Refers to the grant controls enforced by the conditional access policy (example: 'Require multi-factor
     * authentication').
     */
-  var enforcedGrantControls: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var enforcedGrantControls: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Refers to the session controls enforced by the conditional access policy (example: 'Require app enforced controls').
-  var enforcedSessionControls: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var enforcedSessionControls: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   // Unique GUID of the conditional access policy.
-  var id: js.UndefOr[NullableOption[String]] = js.native
+  var id: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Indicates the result of the CA policy that was triggered. Possible values are:successfailurenotApplied - Policy isn't
     * applied because policy conditions were not met.notEnabled - This is due to the policy in disabled state.
     */
-  var result: js.UndefOr[NullableOption[AppliedConditionalAccessPolicyResult]] = js.native
+  var result: js.UndefOr[NullableOption[AppliedConditionalAccessPolicyResult]] = js.undefined
 }
 object AppliedConditionalAccessPolicy {
   

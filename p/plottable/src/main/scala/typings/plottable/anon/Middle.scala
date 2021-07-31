@@ -5,23 +5,21 @@ import typings.plottable.plottableStrings.middle
 import typings.plottable.plottableStrings.start
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Middle extends StObject {
   
-  var end: typings.plottable.plottableStrings.end = js.native
+  var end: typings.plottable.plottableStrings.end
   
-  var middle: typings.plottable.plottableStrings.middle = js.native
+  var middle: typings.plottable.plottableStrings.middle
   
-  var start: typings.plottable.plottableStrings.start = js.native
+  var start: typings.plottable.plottableStrings.start
 }
 object Middle {
   
   @scala.inline
-  def apply(end: end, middle: middle, start: start): Middle = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], middle = middle.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
+  def apply(): Middle = {
+    val __obj = js.Dynamic.literal(end = "end", middle = "middle", start = "start")
     __obj.asInstanceOf[Middle]
   }
   

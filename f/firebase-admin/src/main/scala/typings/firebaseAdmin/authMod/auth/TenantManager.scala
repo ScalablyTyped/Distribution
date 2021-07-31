@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -70,9 +69,9 @@ trait TenantManager extends StObject {
     *   a batch of downloaded tenants and the next page token.
     */
   def listTenants(): js.Promise[ListTenantsResult] = js.native
-  def listTenants(maxResults: js.UndefOr[scala.Nothing], pageToken: String): js.Promise[ListTenantsResult] = js.native
   def listTenants(maxResults: Double): js.Promise[ListTenantsResult] = js.native
   def listTenants(maxResults: Double, pageToken: String): js.Promise[ListTenantsResult] = js.native
+  def listTenants(maxResults: Unit, pageToken: String): js.Promise[ListTenantsResult] = js.native
   
   /**
     * Updates an existing tenant configuration.

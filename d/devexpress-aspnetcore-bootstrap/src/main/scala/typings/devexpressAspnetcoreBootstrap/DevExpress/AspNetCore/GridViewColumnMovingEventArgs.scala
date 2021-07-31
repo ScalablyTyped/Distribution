@@ -2,21 +2,21 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridViewColumnMovingEventArgs extends EventArgs {
+trait GridViewColumnMovingEventArgs
+  extends StObject
+     with EventArgs {
   
-  var allow: Boolean = js.native
+  var allow: Boolean
   
-  val destinationColumn: BootstrapGridViewColumn = js.native
+  val destinationColumn: BootstrapGridViewColumn
   
-  val isDropBefore: Boolean = js.native
+  val isDropBefore: Boolean
   
-  val isGroupPanel: Boolean = js.native
+  val isGroupPanel: Boolean
   
-  val sourceColumn: BootstrapGridViewColumn = js.native
+  val sourceColumn: BootstrapGridViewColumn
 }
 object GridViewColumnMovingEventArgs {
   

@@ -2,31 +2,31 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkSheet extends Sheet {
+trait WorkSheet
+  extends StObject
+     with Sheet {
   
   /** AutoFilter info */
   @JSName("!autofilter")
-  var Exclamationmarkautofilter: js.UndefOr[AutoFilterInfo] = js.native
+  var Exclamationmarkautofilter: js.UndefOr[AutoFilterInfo] = js.undefined
   
   /** Column Info */
   @JSName("!cols")
-  var Exclamationmarkcols: js.UndefOr[js.Array[ColInfo]] = js.native
+  var Exclamationmarkcols: js.UndefOr[js.Array[ColInfo]] = js.undefined
   
   /** Merge Ranges */
   @JSName("!merges")
-  var Exclamationmarkmerges: js.UndefOr[js.Array[Range]] = js.native
+  var Exclamationmarkmerges: js.UndefOr[js.Array[Range]] = js.undefined
   
   /** Worksheet Protection info */
   @JSName("!protect")
-  var Exclamationmarkprotect: js.UndefOr[ProtectInfo] = js.native
+  var Exclamationmarkprotect: js.UndefOr[ProtectInfo] = js.undefined
   
   /** Row Info */
   @JSName("!rows")
-  var Exclamationmarkrows: js.UndefOr[js.Array[RowInfo]] = js.native
+  var Exclamationmarkrows: js.UndefOr[js.Array[RowInfo]] = js.undefined
 }
 object WorkSheet {
   

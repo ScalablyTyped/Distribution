@@ -28,120 +28,135 @@ import typings.std.Response
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object najaMod {
   
   @JSImport("naja/src/Naja", "HttpError")
   @js.native
-  class HttpError () extends Error {
+  class HttpError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     val response: Response = js.native
   }
   
   @JSImport("naja/src/Naja", "Naja")
   @js.native
-  class Naja () extends EventTarget {
+  class Naja ()
+    extends StObject
+       with EventTarget {
     
     val VERSION: Double = js.native
     
     @JSName("addEventListener")
-    def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, _]): Unit = js.native
+    def addEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_before(`type`: before, listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, _]): Unit = js.native
+    def addEventListener_before(`type`: before, listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_before(
       `type`: before,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_before(
       `type`: before,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, js.Any],
       options: AddEventListenerOptions
-    ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_complete(`type`: complete, listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, _]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_complete(
-      `type`: complete,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, _],
-      options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_complete(
       `type`: complete,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_complete(
+      `type`: complete,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, js.Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_complete(
+      `type`: complete,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, _]): Unit = js.native
+    def addEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_init(`type`: init, listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, _]): Unit = js.native
+    def addEventListener_init(`type`: init, listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_init(
       `type`: init,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_init(
       `type`: init,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, _]): Unit = js.native
+    def addEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_start(
       `type`: start,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_start(
       `type`: start,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, js.Any],
       options: AddEventListenerOptions
-    ): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, _]): Unit = js.native
-    @JSName("addEventListener")
-    def addEventListener_success(
-      `type`: success,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, _],
-      options: Boolean
     ): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_success(
       `type`: success,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, js.Any]
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_success(
+      `type`: success,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, js.Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("addEventListener")
+    def addEventListener_success(
+      `type`: success,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -155,118 +170,124 @@ object najaMod {
     def initialize(defaultOptions: Options): Unit = js.native
     
     def makeRequest(method: String, url: String): js.Promise[Payload] = js.native
-    def makeRequest(method: String, url: String, data: js.UndefOr[scala.Nothing], options: Options): js.Promise[Payload] = js.native
     def makeRequest(method: String, url: String, data: js.Any): js.Promise[Payload] = js.native
     def makeRequest(method: String, url: String, data: js.Any, options: Options): js.Promise[Payload] = js.native
     def makeRequest(method: String, url: String, data: Null, options: Options): js.Promise[Payload] = js.native
+    def makeRequest(method: String, url: String, data: Unit, options: Options): js.Promise[Payload] = js.native
     def makeRequest(method: String, url: URL): js.Promise[Payload] = js.native
-    def makeRequest(method: String, url: URL, data: js.UndefOr[scala.Nothing], options: Options): js.Promise[Payload] = js.native
     def makeRequest(method: String, url: URL, data: js.Any): js.Promise[Payload] = js.native
     def makeRequest(method: String, url: URL, data: js.Any, options: Options): js.Promise[Payload] = js.native
     def makeRequest(method: String, url: URL, data: Null, options: Options): js.Promise[Payload] = js.native
+    def makeRequest(method: String, url: URL, data: Unit, options: Options): js.Promise[Payload] = js.native
     
     val redirectHandler: RedirectHandler = js.native
     
-    def registerExtension(extension: Extension): Unit = js.native
+    def registerExtension(`extension`: Extension): Unit = js.native
     
     def removeEventListener(`type`: String, listener: Null, options: AddEventListenerOptions): Unit = js.native
     def removeEventListener(`type`: String, listener: EventListenerOrEventListenerObject, options: AddEventListenerOptions): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, _]): Unit = js.native
+    def removeEventListener_abort(`type`: abort, listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_abort(
       `type`: abort,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ AbortEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_before(`type`: before, listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, _]): Unit = js.native
+    def removeEventListener_before(`type`: before, listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_before(
       `type`: before,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_before(
       `type`: before,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ BeforeEvent, js.Any],
       options: AddEventListenerOptions
-    ): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_complete(`type`: complete, listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, _]): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_complete(
-      `type`: complete,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, _],
-      options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_complete(
       `type`: complete,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, js.Any]
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_complete(
+      `type`: complete,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, js.Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_complete(
+      `type`: complete,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ CompleteEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, _]): Unit = js.native
+    def removeEventListener_error(`type`: error, listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_error(
       `type`: error,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ ErrorEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_init(`type`: init, listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, _]): Unit = js.native
+    def removeEventListener_init(`type`: init, listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_init(
       `type`: init,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_init(
       `type`: init,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ InitEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, _]): Unit = js.native
+    def removeEventListener_start(`type`: start, listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_start(
       `type`: start,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, js.Any],
       options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_start(
       `type`: start,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ StartEvent, js.Any],
       options: AddEventListenerOptions
-    ): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_success(`type`: success, listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, _]): Unit = js.native
-    @JSName("removeEventListener")
-    def removeEventListener_success(
-      `type`: success,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, _],
-      options: Boolean
     ): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_success(
       `type`: success,
-      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, _],
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, js.Any]
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_success(
+      `type`: success,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, js.Any],
+      options: Boolean
+    ): Unit = js.native
+    @JSName("removeEventListener")
+    def removeEventListener_success(
+      `type`: success,
+      listener: js.ThisFunction1[/* this */ this.type, /* event */ SuccessEvent, js.Any],
       options: AddEventListenerOptions
     ): Unit = js.native
     
@@ -285,10 +306,9 @@ object najaMod {
   
   type ErrorEvent = CustomEvent[Request]
   
-  @js.native
   trait Extension extends StObject {
     
-    def initialize(naja: Naja): Unit = js.native
+    def initialize(naja: Naja): Unit
   }
   object Extension {
     
@@ -308,22 +328,21 @@ object najaMod {
   
   type InitEvent = CustomEvent[DefaultOptions]
   
-  @js.native
   trait NajaEventMap extends StObject {
     
-    var abort: AbortEvent = js.native
+    var abort: AbortEvent
     
-    var before: BeforeEvent = js.native
+    var before: BeforeEvent
     
-    var complete: CompleteEvent = js.native
+    var complete: CompleteEvent
     
-    var error: ErrorEvent = js.native
+    var error: ErrorEvent
     
-    var init: InitEvent = js.native
+    var init: InitEvent
     
-    var start: StartEvent = js.native
+    var start: StartEvent
     
-    var success: SuccessEvent = js.native
+    var success: SuccessEvent
   }
   object NajaEventMap {
     
@@ -367,11 +386,11 @@ object najaMod {
     }
   }
   
-  @js.native
   trait Options
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var fetch: js.UndefOr[RequestInit] = js.native
+    var fetch: js.UndefOr[RequestInit] = js.undefined
   }
   object Options {
     
@@ -392,17 +411,17 @@ object najaMod {
     }
   }
   
-  @js.native
   trait Payload
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var postGet: js.UndefOr[Boolean] = js.native
+    var postGet: js.UndefOr[Boolean] = js.undefined
     
-    var redirect: js.UndefOr[String] = js.native
+    var redirect: js.UndefOr[String] = js.undefined
     
-    var snippets: js.UndefOr[StringDictionary[String]] = js.native
+    var snippets: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object Payload {
     

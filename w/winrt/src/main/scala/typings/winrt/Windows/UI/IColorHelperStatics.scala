@@ -2,13 +2,11 @@ package typings.winrt.Windows.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IColorHelperStatics extends StObject {
   
-  def fromArgb(a: Double, r: Double, g: Double, b: Double): Color = js.native
+  def fromArgb(a: Double, r: Double, g: Double, b: Double): Color
 }
 object IColorHelperStatics {
   

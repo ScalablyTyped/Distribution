@@ -2,33 +2,31 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var onExported: js.UndefOr[js.Function] = js.native
+  var onExported: js.UndefOr[js.Function] = js.undefined
   
-  var onExporting: js.UndefOr[js.Function] = js.native
+  var onExporting: js.UndefOr[js.Function] = js.undefined
   
-  var onFileSaving: js.UndefOr[js.Function] = js.native
+  var onFileSaving: js.UndefOr[js.Function] = js.undefined
   
-  var proxyUrl: js.UndefOr[String] = js.native
+  var proxyUrl: js.UndefOr[String] = js.undefined
   
-  var svgToCanvas: js.UndefOr[js.Function] = js.native
+  var svgToCanvas: js.UndefOr[js.Function] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BackgroundColor {
   

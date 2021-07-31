@@ -2,15 +2,13 @@ package typings.vkOpenapi.vk.OpenAPI.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PollOptions extends StObject {
   
-  var pageUrl: js.UndefOr[String] = js.native
+  var pageUrl: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PollOptions {
   

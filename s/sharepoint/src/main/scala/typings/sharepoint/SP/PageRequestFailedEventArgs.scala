@@ -4,17 +4,17 @@ import typings.microsoftAjax.Sys.EventArgs
 import typings.microsoftAjax.Sys.Net.WebRequestExecutor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PageRequestFailedEventArgs extends EventArgs {
+trait PageRequestFailedEventArgs
+  extends StObject
+     with EventArgs {
   
-  def get_errorMessage(): String = js.native
+  def get_errorMessage(): String
   
-  def get_executor(): WebRequestExecutor = js.native
+  def get_executor(): WebRequestExecutor
   
-  def get_isErrorPage(): Boolean = js.native
+  def get_isErrorPage(): Boolean
 }
 object PageRequestFailedEventArgs {
   

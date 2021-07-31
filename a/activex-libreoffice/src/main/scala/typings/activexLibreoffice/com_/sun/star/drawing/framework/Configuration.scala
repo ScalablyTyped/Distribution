@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,15 +13,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Most likely use is the {@link XConfigurationController.restoreConfiguration()} method.
   * @see XConfiguration for a description of the configuration.
   */
-@js.native
-trait Configuration extends XConfiguration {
+trait Configuration
+  extends StObject
+     with XConfiguration {
   
   /**
     * Create an empty configuration.
     *
     * This should not be necessary very often. Changes to an existing configuration are more likely.
     */
-  def create(): Unit = js.native
+  def create(): Unit
 }
 object Configuration {
   

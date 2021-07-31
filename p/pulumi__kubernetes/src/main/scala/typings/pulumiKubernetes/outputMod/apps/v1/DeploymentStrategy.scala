@@ -2,24 +2,22 @@ package typings.pulumiKubernetes.outputMod.apps.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DeploymentStrategy describes how to replace existing pods with new ones.
   */
-@js.native
 trait DeploymentStrategy extends StObject {
   
   /**
     * Rolling update config params. Present only if DeploymentStrategyType = RollingUpdate.
     */
-  var rollingUpdate: RollingUpdateDeployment = js.native
+  var rollingUpdate: RollingUpdateDeployment
   
   /**
     * Type of deployment. Can be "Recreate" or "RollingUpdate". Default is RollingUpdate.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object DeploymentStrategy {
   

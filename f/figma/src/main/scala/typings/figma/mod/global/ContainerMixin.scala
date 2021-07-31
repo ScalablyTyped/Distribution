@@ -2,18 +2,16 @@ package typings.figma.mod.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerMixin extends StObject {
   
   // DEPRECATED: use 'fills' instead
-  var backgroundStyleId: String = js.native
+  var backgroundStyleId: String
   
-  var backgrounds: js.Array[Paint] = js.native
+  var backgrounds: js.Array[Paint]
   
-  var expanded: Boolean = js.native
+  var expanded: Boolean
 }
 object ContainerMixin {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientLanguage.gapi.client.language
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sentence extends StObject {
   
   /** For calls to AnalyzeSentiment or if AnnotateTextRequest.Features.extract_document_sentiment is set to true, this field will contain the sentiment for the sentence. */
-  var sentiment: js.UndefOr[Sentiment] = js.native
+  var sentiment: js.UndefOr[Sentiment] = js.undefined
   
   /** The sentence text. */
-  var text: js.UndefOr[TextSpan] = js.native
+  var text: js.UndefOr[TextSpan] = js.undefined
 }
 object Sentence {
   

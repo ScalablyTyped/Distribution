@@ -11,57 +11,55 @@ import typings.uniApp.uniAppStrings.PUT
 import typings.uniApp.uniAppStrings.TRACE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
   /**
     * 结束的回调函数（调用成功、失败都会执行）
     */
-  var complete: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.undefined
   
   /**
     * 请求的参数
     */
-  var data: js.UndefOr[String | js.Object | ArrayBuffer] = js.native
+  var data: js.UndefOr[String | js.Object | ArrayBuffer] = js.undefined
   
   /**
     * 如果设为json，会尝试对返回的数据做一次 JSON.parse
     */
-  var dataType: js.UndefOr[String] = js.native
+  var dataType: js.UndefOr[String] = js.undefined
   
   /**
     * 失败的回调函数
     */
-  var fail: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* result */ GeneralCallbackResult, Unit]] = js.undefined
   
   /**
     * 设置请求的 header，header 中不能设置 Referer。
     */
-  var header: js.UndefOr[js.Any] = js.native
+  var header: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 默认为 GET
     * 可以是：OPTIONS，GET，HEAD，POST，PUT，DELETE，TRACE，CONNECT
     */
-  var method: js.UndefOr[OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.native
+  var method: js.UndefOr[OPTIONS | GET | HEAD | POST | PUT | DELETE | TRACE | CONNECT] = js.undefined
   
   /**
     * 设置响应的数据类型。合法值：text、arraybuffer
     */
-  var responseType: js.UndefOr[String] = js.native
+  var responseType: js.UndefOr[String] = js.undefined
   
   /**
     * 成功返回的回调函数
     */
-  var success: js.UndefOr[js.Function1[/* result */ RequestSuccessCallbackResult, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* result */ RequestSuccessCallbackResult, Unit]] = js.undefined
   
   /**
     * 资源url
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object RequestOptions {
   

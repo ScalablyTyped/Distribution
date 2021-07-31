@@ -9,7 +9,6 @@ import typings.three.materialMod.MaterialParameters
 import typings.three.uniformsLibMod.IUniform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shaderMaterialMod {
@@ -107,34 +106,35 @@ object shaderMaterialMod {
     var wireframeLinewidth: Double = js.native
   }
   
-  @js.native
-  trait ShaderMaterialParameters extends MaterialParameters {
+  trait ShaderMaterialParameters
+    extends StObject
+       with MaterialParameters {
     
-    var clipping: js.UndefOr[Boolean] = js.native
+    var clipping: js.UndefOr[Boolean] = js.undefined
     
-    var extensions: js.UndefOr[Derivatives] = js.native
+    var extensions: js.UndefOr[Derivatives] = js.undefined
     
-    var fragmentShader: js.UndefOr[String] = js.native
+    var fragmentShader: js.UndefOr[String] = js.undefined
     
-    var glslVersion: js.UndefOr[GLSLVersion] = js.native
+    var glslVersion: js.UndefOr[GLSLVersion] = js.undefined
     
-    var lights: js.UndefOr[Boolean] = js.native
+    var lights: js.UndefOr[Boolean] = js.undefined
     
-    var linewidth: js.UndefOr[Double] = js.native
+    var linewidth: js.UndefOr[Double] = js.undefined
     
-    var morphNormals: js.UndefOr[Boolean] = js.native
+    var morphNormals: js.UndefOr[Boolean] = js.undefined
     
-    var morphTargets: js.UndefOr[Boolean] = js.native
+    var morphTargets: js.UndefOr[Boolean] = js.undefined
     
-    var skinning: js.UndefOr[Boolean] = js.native
+    var skinning: js.UndefOr[Boolean] = js.undefined
     
-    var uniforms: js.UndefOr[StringDictionary[IUniform]] = js.native
+    var uniforms: js.UndefOr[StringDictionary[IUniform]] = js.undefined
     
-    var vertexShader: js.UndefOr[String] = js.native
+    var vertexShader: js.UndefOr[String] = js.undefined
     
-    var wireframe: js.UndefOr[Boolean] = js.native
+    var wireframe: js.UndefOr[Boolean] = js.undefined
     
-    var wireframeLinewidth: js.UndefOr[Double] = js.native
+    var wireframeLinewidth: js.UndefOr[Double] = js.undefined
   }
   object ShaderMaterialParameters {
     

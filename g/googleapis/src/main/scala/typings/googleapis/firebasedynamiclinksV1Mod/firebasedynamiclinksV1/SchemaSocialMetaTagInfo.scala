@@ -2,30 +2,28 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Parameters for social meta tag params. Used to set meta tag data for link
   * previews on social sites.
   */
-@js.native
 trait SchemaSocialMetaTagInfo extends StObject {
   
   /**
     * A short description of the link. Optional.
     */
-  var socialDescription: js.UndefOr[String] = js.native
+  var socialDescription: js.UndefOr[String] = js.undefined
   
   /**
     * An image url string. Optional.
     */
-  var socialImageLink: js.UndefOr[String] = js.native
+  var socialImageLink: js.UndefOr[String] = js.undefined
   
   /**
     * Title to be displayed. Optional.
     */
-  var socialTitle: js.UndefOr[String] = js.native
+  var socialTitle: js.UndefOr[String] = js.undefined
 }
 object SchemaSocialMetaTagInfo {
   

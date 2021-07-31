@@ -3,75 +3,73 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinition extends StObject {
   
-  var agentExecution: TaskExecution = js.native
+  var agentExecution: TaskExecution
   
-  var author: String = js.native
+  var author: String
   
-  var category: String = js.native
+  var category: String
   
-  var contentsUploaded: Boolean = js.native
+  var contentsUploaded: Boolean
   
-  var contributionIdentifier: String = js.native
+  var contributionIdentifier: String
   
-  var contributionVersion: String = js.native
+  var contributionVersion: String
   
-  var dataSourceBindings: js.Array[DataSourceBinding] = js.native
+  var dataSourceBindings: js.Array[DataSourceBinding]
   
-  var definitionType: String = js.native
+  var definitionType: String
   
-  var demands: js.Array[_] = js.native
+  var demands: js.Array[js.Any]
   
-  var description: String = js.native
+  var description: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var execution: StringDictionary[js.Any] = js.native
+  var execution: StringDictionary[js.Any]
   
-  var friendlyName: String = js.native
+  var friendlyName: String
   
-  var groups: js.Array[TaskGroupDefinition] = js.native
+  var groups: js.Array[TaskGroupDefinition]
   
-  var helpMarkDown: String = js.native
+  var helpMarkDown: String
   
-  var hostType: String = js.native
+  var hostType: String
   
-  var iconUrl: String = js.native
+  var iconUrl: String
   
-  var id: String = js.native
+  var id: String
   
-  var inputs: js.Array[TaskInputDefinition] = js.native
+  var inputs: js.Array[TaskInputDefinition]
   
-  var instanceNameFormat: String = js.native
+  var instanceNameFormat: String
   
-  var minimumAgentVersion: String = js.native
+  var minimumAgentVersion: String
   
-  var name: String = js.native
+  var name: String
   
-  var packageLocation: String = js.native
+  var packageLocation: String
   
-  var packageType: String = js.native
+  var packageType: String
   
-  var preview: Boolean = js.native
+  var preview: Boolean
   
-  var releaseNotes: String = js.native
+  var releaseNotes: String
   
-  var runsOn: js.Array[String] = js.native
+  var runsOn: js.Array[String]
   
-  var serverOwned: Boolean = js.native
+  var serverOwned: Boolean
   
-  var sourceDefinitions: js.Array[TaskSourceDefinition] = js.native
+  var sourceDefinitions: js.Array[TaskSourceDefinition]
   
-  var sourceLocation: String = js.native
+  var sourceLocation: String
   
-  var version: TaskVersion = js.native
+  var version: TaskVersion
   
-  var visibility: js.Array[String] = js.native
+  var visibility: js.Array[String]
 }
 object TaskDefinition {
   
@@ -85,7 +83,7 @@ object TaskDefinition {
     contributionVersion: String,
     dataSourceBindings: js.Array[DataSourceBinding],
     definitionType: String,
-    demands: js.Array[_],
+    demands: js.Array[js.Any],
     description: String,
     disabled: Boolean,
     execution: StringDictionary[js.Any],
@@ -145,7 +143,7 @@ object TaskDefinition {
     def setDefinitionType(value: String): Self = StObject.set(x, "definitionType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDemands(value: js.Array[_]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
+    def setDemands(value: js.Array[js.Any]): Self = StObject.set(x, "demands", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDemandsVarargs(value: js.Any*): Self = StObject.set(x, "demands", js.Array(value :_*))

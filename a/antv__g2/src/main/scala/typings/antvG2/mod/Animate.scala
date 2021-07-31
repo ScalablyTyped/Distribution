@@ -2,13 +2,11 @@ package typings.antvG2.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Animate extends StObject {
   
-  def registerAnimation(animationType: String, animationName: String, animationFun: js.Any): Unit = js.native
+  def registerAnimation(animationType: String, animationName: String, animationFun: js.Any): Unit
 }
 object Animate {
   

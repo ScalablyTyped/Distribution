@@ -10,10 +10,13 @@ import typings.std.Node
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("html_codesniffer", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("html_codesniffer", "ERROR")
   @js.native
@@ -25,6 +28,10 @@ object mod {
   
   object Util {
     
+    @JSImport("html_codesniffer", "Util")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Convert a hue-saturation-value structure into an RGB structure.
       *
@@ -34,9 +41,8 @@ object mod {
       *
       * @param hsvColour A HSV structure to convert.
       */
-    @JSImport("html_codesniffer", "Util.HSVtosRGB")
-    @js.native
-    def HSVtosRGB(hsvColour: HsvColour): Colour = js.native
+    @scala.inline
+    def HSVtosRGB(hsvColour: HsvColour): Colour = ^.asInstanceOf[js.Dynamic].applyDynamic("HSVtosRGB")(hsvColour.asInstanceOf[js.Any]).asInstanceOf[Colour]
     
     /**
       * Convert an RGB colour structure to a hex colour.
@@ -48,9 +54,8 @@ object mod {
       *
       * @param colour Structure with "red", "green" and "blue" elements.
       */
-    @JSImport("html_codesniffer", "Util.RGBtoColourStr")
-    @js.native
-    def RGBtoColourStr(colou: Colour): String = js.native
+    @scala.inline
+    def RGBtoColourStr(colou: Colour): String = ^.asInstanceOf[js.Dynamic].applyDynamic("RGBtoColourStr")(colou.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Convert a colour string to a structure with red/green/blue/alpha elements.
@@ -60,19 +65,15 @@ object mod {
       *
       * @param colour The colour to convert.
       */
-    @JSImport("html_codesniffer", "Util.colourStrToRGB")
-    @js.native
-    def colourStrToRGB(colour: String): Colour = js.native
+    @scala.inline
+    def colourStrToRGB(colour: String): Colour = ^.asInstanceOf[js.Dynamic].applyDynamic("colourStrToRGB")(colour.asInstanceOf[js.Any]).asInstanceOf[Colour]
     
-    @JSImport("html_codesniffer", "Util.contains")
-    @js.native
-    def contains(parent: Document, child: DocumentType): Boolean = js.native
-    @JSImport("html_codesniffer", "Util.contains")
-    @js.native
-    def contains(parent: Document, child: Element): Boolean = js.native
-    @JSImport("html_codesniffer", "Util.contains")
-    @js.native
-    def contains(parent: Element, child: DocumentType): Boolean = js.native
+    @scala.inline
+    def contains(parent: Document, child: DocumentType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def contains(parent: Document, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def contains(parent: Element, child: DocumentType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     /**
       * Returns true if the passed child is contained by the passed parent.
       *
@@ -82,9 +83,8 @@ object mod {
       * @param parent The parent element or document.
       * @param child The child.
       */
-    @JSImport("html_codesniffer", "Util.contains")
-    @js.native
-    def contains(parent: Element, child: Element): Boolean = js.native
+    @scala.inline
+    def contains(parent: Element, child: Element): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * Calculate the contrast ratio between two colours.
@@ -98,9 +98,8 @@ object mod {
       * @param colour1 The first colour to compare.
       * @param colour2 The second colour to compare.
       */
-    @JSImport("html_codesniffer", "Util.contrastRatio")
-    @js.native
-    def contrastRatio(colour1: String, colour2: String): Double = js.native
+    @scala.inline
+    def contrastRatio(colour1: String, colour2: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("contrastRatio")(colour1.asInstanceOf[js.Any], colour2.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Iterate parent nodes of an element.
@@ -108,9 +107,8 @@ object mod {
       * @param node Node to search from.
       * @param cb Callback function providing each parent node.
       */
-    @JSImport("html_codesniffer", "Util.eachParentNode")
-    @js.native
-    def eachParentNode(node: Node, cb: js.Function1[/* parent */ Node, Unit]): Unit = js.native
+    @scala.inline
+    def eachParentNode(node: Node, cb: js.Function1[/* parent */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("eachParentNode")(node.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Find a parent node matching a selector.
@@ -118,9 +116,8 @@ object mod {
       * @param node  Node to search from.
       * @param selector The selector to search.
       */
-    @JSImport("html_codesniffer", "Util.findParentNode")
-    @js.native
-    def findParentNode(node: Node, selector: String): Node | Null = js.native
+    @scala.inline
+    def findParentNode(node: Node, selector: String): Node | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findParentNode")(node.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[Node | Null]
     
     /**
       * Get the accessible name.
@@ -128,9 +125,8 @@ object mod {
       * @param element Element to process.
       * @param top Scoped container element.
       */
-    @JSImport("html_codesniffer", "Util.getAccessibleName")
-    @js.native
-    def getAccessibleName(element: Node, top: Node): String = js.native
+    @scala.inline
+    def getAccessibleName(element: Node, top: Node): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessibleName")(element.asInstanceOf[js.Any], top.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * Returns all elements that are visible to the accessibility API.
@@ -138,9 +134,8 @@ object mod {
       * @param element The parent element to search.
       * @param selector Optional selector to pass to
       */
-    @JSImport("html_codesniffer", "Util.getAllElements")
-    @js.native
-    def getAllElements(element: Element, selector: String): ArrayLike[Element] = js.native
+    @scala.inline
+    def getAllElements(element: Element, selector: String): ArrayLike[Element] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAllElements")(element.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[ArrayLike[Element]]
     
     /**
       * Return expected cell headers from a table.
@@ -162,9 +157,8 @@ object mod {
       *
       * @param table The table to test.
       */
-    @JSImport("html_codesniffer", "Util.getCellHeaders")
-    @js.native
-    def getCellHeaders(table: Element): js.Array[CellHeaderInfo] = js.native
+    @scala.inline
+    def getCellHeaders(table: Element): js.Array[CellHeaderInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCellHeaders")(table.asInstanceOf[js.Any]).asInstanceOf[js.Array[CellHeaderInfo]]
     
     /**
       * Get the document type being tested.
@@ -176,9 +170,8 @@ object mod {
       *
       * @param document The document being tested.
       */
-    @JSImport("html_codesniffer", "Util.getDocumentType")
-    @js.native
-    def getDocumentType(document: Document): DocumentType = js.native
+    @scala.inline
+    def getDocumentType(document: Document): DocumentType = ^.asInstanceOf[js.Dynamic].applyDynamic("getDocumentType")(document.asInstanceOf[js.Any]).asInstanceOf[DocumentType]
     
     /**
       * Gets the text contents of an element.
@@ -187,24 +180,20 @@ object mod {
       * @param [includeAlt=true] Include alt text from images.
       * @returns The text contents.
       */
-    @JSImport("html_codesniffer", "Util.getElementTextContent")
-    @js.native
-    def getElementTextContent(element: Element): String = js.native
-    @JSImport("html_codesniffer", "Util.getElementTextContent")
-    @js.native
-    def getElementTextContent(element: Element, includeAlt: Boolean): String = js.native
+    @scala.inline
+    def getElementTextContent(element: Element): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def getElementTextContent(element: Element, includeAlt: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getElementTextContent")(element.asInstanceOf[js.Any], includeAlt.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("html_codesniffer", "Util.getElementWindow")
-    @js.native
-    def getElementWindow(element: Document): Window = js.native
+    @scala.inline
+    def getElementWindow(element: Document): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementWindow")(element.asInstanceOf[js.Any]).asInstanceOf[Window]
     /**
       * Get the window object relating to the passed element.
       *
       * @param element The element (or document) to pass.
       */
-    @JSImport("html_codesniffer", "Util.getElementWindow")
-    @js.native
-    def getElementWindow(element: Element): Window = js.native
+    @scala.inline
+    def getElementWindow(element: Element): Window = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementWindow")(element.asInstanceOf[js.Any]).asInstanceOf[Window]
     
     /**
       * Get the next sibling element.
@@ -219,18 +208,14 @@ object mod {
       * @param [tagName=null]  Only match this tag. If null, match any. Not case-sensitive.
       * @param [immediate=false] Only match if the tag in tagName is the immediately following non-whitespace node.
       */
-    @JSImport("html_codesniffer", "Util.getNextSiblingElement")
-    @js.native
-    def getNextSiblingElement(element: Node): ChildNode | Null = js.native
-    @JSImport("html_codesniffer", "Util.getNextSiblingElement")
-    @js.native
-    def getNextSiblingElement(element: Node, tagName: js.UndefOr[scala.Nothing], immediate: Boolean): ChildNode | Null = js.native
-    @JSImport("html_codesniffer", "Util.getNextSiblingElement")
-    @js.native
-    def getNextSiblingElement(element: Node, tagName: String): ChildNode | Null = js.native
-    @JSImport("html_codesniffer", "Util.getNextSiblingElement")
-    @js.native
-    def getNextSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = js.native
+    @scala.inline
+    def getNextSiblingElement(element: Node): ChildNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any]).asInstanceOf[ChildNode | Null]
+    @scala.inline
+    def getNextSiblingElement(element: Node, tagName: String): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    @scala.inline
+    def getNextSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    @scala.inline
+    def getNextSiblingElement(element: Node, tagName: Unit, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
     
     /**
       * Get the previous sibling element.
@@ -245,45 +230,38 @@ object mod {
       * @param [tagName=null] Only match this tag. If null, match any. Not case-sensitive.
       * @param [immediate=false] Only match if the tag in tagName is the immediately preceding non-whitespace node.
       */
-    @JSImport("html_codesniffer", "Util.getPreviousSiblingElement")
-    @js.native
-    def getPreviousSiblingElement(element: Node): ChildNode | Null = js.native
-    @JSImport("html_codesniffer", "Util.getPreviousSiblingElement")
-    @js.native
-    def getPreviousSiblingElement(element: Node, tagName: js.UndefOr[scala.Nothing], immediate: Boolean): ChildNode | Null = js.native
-    @JSImport("html_codesniffer", "Util.getPreviousSiblingElement")
-    @js.native
-    def getPreviousSiblingElement(element: Node, tagName: String): ChildNode | Null = js.native
-    @JSImport("html_codesniffer", "Util.getPreviousSiblingElement")
-    @js.native
-    def getPreviousSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = js.native
+    @scala.inline
+    def getPreviousSiblingElement(element: Node): ChildNode | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any]).asInstanceOf[ChildNode | Null]
+    @scala.inline
+    def getPreviousSiblingElement(element: Node, tagName: String): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    @scala.inline
+    def getPreviousSiblingElement(element: Node, tagName: String, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
+    @scala.inline
+    def getPreviousSiblingElement(element: Node, tagName: Unit, immediate: Boolean): ChildNode | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getPreviousSiblingElement")(element.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], immediate.asInstanceOf[js.Any])).asInstanceOf[ChildNode | Null]
     
     /**
       * Get the text content of a DOM node.
       *
       * @param element Element to process.
       */
-    @JSImport("html_codesniffer", "Util.getTextContent")
-    @js.native
-    def getTextContent(element: Node): String = js.native
+    @scala.inline
+    def getTextContent(element: Node): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTextContent")(element.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Returns true if the element has a valid aria label.
       *
       * @param element The element we are checking.
       */
-    @JSImport("html_codesniffer", "Util.hasValidAriaLabel")
-    @js.native
-    def hasValidAriaLabel(element: Element): Boolean = js.native
+    @scala.inline
+    def hasValidAriaLabel(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasValidAriaLabel")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the element is deliberately hidden from Accessibility APIs.
       *
       * @param element The element to check.
       */
-    @JSImport("html_codesniffer", "Util.isAccessibilityHidden")
-    @js.native
-    def isAccessibilityHidden(element: Element): Boolean = js.native
+    @scala.inline
+    def isAccessibilityHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAccessibilityHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the element is deliberately hidden from Accessibility APIs using ARIA hidden.
@@ -292,9 +270,8 @@ object mod {
       *
       * @param element The element to check.
       */
-    @JSImport("html_codesniffer", "Util.isAriaHidden")
-    @js.native
-    def isAriaHidden(element: Element): Boolean = js.native
+    @scala.inline
+    def isAriaHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAriaHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return true if an element is disabled.
@@ -304,45 +281,40 @@ object mod {
       *
       * @param element The element that is hiding, or not.
       */
-    @JSImport("html_codesniffer", "Util.isDisabled")
-    @js.native
-    def isDisabled(element: Element): Boolean = js.native
+    @scala.inline
+    def isDisabled(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isDisabled")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the element is able to be focused .
       *
       * @param element DOM Node to test.
       */
-    @JSImport("html_codesniffer", "Util.isFocusable")
-    @js.native
-    def isFocusable(element: Element): Boolean = js.native
+    @scala.inline
+    def isFocusable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFocusable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return true if an element is in a document.
       *
       * @param element The element that is in a doc, or not.
       */
-    @JSImport("html_codesniffer", "Util.isInDocument")
-    @js.native
-    def isInDocument(element: Element): Boolean = js.native
+    @scala.inline
+    def isInDocument(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInDocument")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the element is able to be accessed via the keyboard.
       *
       * @param element DOM Node to test.
       */
-    @JSImport("html_codesniffer", "Util.isKeyboardNavigable")
-    @js.native
-    def isKeyboardNavigable(element: Element): Boolean = js.native
+    @scala.inline
+    def isKeyboardNavigable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardNavigable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the element is able to be focused by keyboard tabbing.
       *
       * @param element DOM Node to test.
       */
-    @JSImport("html_codesniffer", "Util.isKeyboardTabbable")
-    @js.native
-    def isKeyboardTabbable(element: Element): Boolean = js.native
+    @scala.inline
+    def isKeyboardTabbable(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardTabbable")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the table passed is a layout table.
@@ -353,18 +325,16 @@ object mod {
       *
       * @param table The table to check.
       */
-    @JSImport("html_codesniffer", "Util.isLayoutTable")
-    @js.native
-    def isLayoutTable(table: Element): Boolean = js.native
+    @scala.inline
+    def isLayoutTable(table: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLayoutTable")(table.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns TRUE if the provided node name is not a valid phrasing node.
       *
       * @param nodeName The node name to test.
       */
-    @JSImport("html_codesniffer", "Util.isPhrasingNode")
-    @js.native
-    def isPhrasingNode(nodeName: String): Boolean = js.native
+    @scala.inline
+    def isPhrasingNode(nodeName: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPhrasingNode")(nodeName.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Returns true if the string is "empty" according to WCAG standards.
@@ -376,9 +346,8 @@ object mod {
       *
       * @param string The potentially empty string.
       */
-    @JSImport("html_codesniffer", "Util.isStringEmpty")
-    @js.native
-    def isStringEmpty(string: String): Boolean = js.native
+    @scala.inline
+    def isStringEmpty(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStringEmpty")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Return true if an element is hidden visually.
@@ -388,9 +357,8 @@ object mod {
       *
       * @param element The element that is hiding, or not.
       */
-    @JSImport("html_codesniffer", "Util.isVisuallyHidden")
-    @js.native
-    def isVisuallyHidden(element: Element): Boolean = js.native
+    @scala.inline
+    def isVisuallyHidden(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isVisuallyHidden")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Calculate relative luminescence for a colour in the sRGB colour profile.
@@ -404,9 +372,8 @@ object mod {
       *
       * @param colour The colour to calculate from.
       */
-    @JSImport("html_codesniffer", "Util.relativeLum")
-    @js.native
-    def relativeLum(colour: String): Double = js.native
+    @scala.inline
+    def relativeLum(colour: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeLum")(colour.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Convert an RGB colour into hue-saturation-value.
@@ -422,12 +389,10 @@ object mod {
       *
       * @param colour A colour to convert.
       */
-    @JSImport("html_codesniffer", "Util.sRGBtoHSV")
-    @js.native
-    def sRGBtoHSV(colour: String): HsvColour = js.native
-    @JSImport("html_codesniffer", "Util.sRGBtoHSV")
-    @js.native
-    def sRGBtoHSV(colour: Colour): HsvColour = js.native
+    @scala.inline
+    def sRGBtoHSV(colour: String): HsvColour = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGBtoHSV")(colour.asInstanceOf[js.Any]).asInstanceOf[HsvColour]
+    @scala.inline
+    def sRGBtoHSV(colour: Colour): HsvColour = ^.asInstanceOf[js.Dynamic].applyDynamic("sRGBtoHSV")(colour.asInstanceOf[js.Any]).asInstanceOf[HsvColour]
     
     /**
       * Return the appropriate computed style object for an element.
@@ -436,12 +401,10 @@ object mod {
       *
       * @param element An element with style.
       */
-    @JSImport("html_codesniffer", "Util.style")
-    @js.native
-    def style(element: Element): CSSStyleDeclaration = js.native
-    @JSImport("html_codesniffer", "Util.style")
-    @js.native
-    def style(element: Element, pseudo: String): CSSStyleDeclaration = js.native
+    @scala.inline
+    def style(element: Element): CSSStyleDeclaration = ^.asInstanceOf[js.Dynamic].applyDynamic("style")(element.asInstanceOf[js.Any]).asInstanceOf[CSSStyleDeclaration]
+    @scala.inline
+    def style(element: Element, pseudo: String): CSSStyleDeclaration = (^.asInstanceOf[js.Dynamic].applyDynamic("style")(element.asInstanceOf[js.Any], pseudo.asInstanceOf[js.Any])).asInstanceOf[CSSStyleDeclaration]
     
     /**
       * Test for the correct headers attributes on table cell elements.
@@ -461,25 +424,22 @@ object mod {
       *
       * @param element Table element to test upon.
       */
-    @JSImport("html_codesniffer", "Util.testTableHeaders")
-    @js.native
-    def testTableHeaders(element: Node): TestTableHeadersResult = js.native
+    @scala.inline
+    def testTableHeaders(element: Node): TestTableHeadersResult = ^.asInstanceOf[js.Dynamic].applyDynamic("testTableHeaders")(element.asInstanceOf[js.Any]).asInstanceOf[TestTableHeadersResult]
     
     /**
       * Trim off excess spaces on either side.
       *
       * @param string The string with potentially extraneous whitespace.
       */
-    @JSImport("html_codesniffer", "Util.trim")
-    @js.native
-    def trim(string: String): String = js.native
+    @scala.inline
+    def trim(string: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("trim")(string.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @js.native
     trait CellHeaderInfo extends StObject {
       
-      var cell: Element = js.native
+      var cell: Element
       
-      var headers: String = js.native
+      var headers: String
     }
     object CellHeaderInfo {
       
@@ -500,16 +460,15 @@ object mod {
       }
     }
     
-    @js.native
     trait Colour extends StObject {
       
-      var alpha: Double = js.native
+      var alpha: Double
       
-      var blue: Double = js.native
+      var blue: Double
       
-      var green: Double = js.native
+      var green: Double
       
-      var red: Double = js.native
+      var red: Double
     }
     object Colour {
       
@@ -570,14 +529,13 @@ object mod {
       def xhtml5: typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml5 = "xhtml5".asInstanceOf[typings.htmlCodesniffer.htmlCodesnifferStrings.xhtml5]
     }
     
-    @js.native
     trait HeaderInfo extends StObject {
       
-      var actual: String = js.native
+      var actual: String
       
-      var element: Element = js.native
+      var element: Element
       
-      var expected: String = js.native
+      var expected: String
     }
     object HeaderInfo {
       
@@ -601,14 +559,13 @@ object mod {
       }
     }
     
-    @js.native
     trait HsvColour extends StObject {
       
-      var hue: Double = js.native
+      var hue: Double
       
-      var saturation: Double = js.native
+      var saturation: Double
       
-      var value: Double = js.native
+      var value: Double
     }
     object HsvColour {
       
@@ -632,29 +589,28 @@ object mod {
       }
     }
     
-    @js.native
     trait TestTableHeadersResult extends StObject {
       
       /** Whether scope is allowed to satisfy the association requirement (ie. max one row/one column). */
-      var allowScope: Boolean = js.native
+      var allowScope: Boolean
       
       /** Whether headers have been correctly used. */
-      var correct: Boolean = js.native
+      var correct: Boolean
       
       /** Array of elements without headers attribute. */
-      var missingTd: js.Array[Element] = js.native
+      var missingTd: js.Array[Element]
       
       /** Array of th elements without IDs. */
-      var missingThId: js.Array[Element] = js.native
+      var missingThId: js.Array[Element]
       
       /** Whether header association at all is required. */
-      var required: Boolean = js.native
+      var required: Boolean
       
       /** Whether headers attribute has been used on at least one table data (td) cell. */
-      var used: Boolean = js.native
+      var used: Boolean
       
       /** Array of elements where headers attr is incorrect. */
-      var wrongHeaders: js.Array[HeaderInfo] = js.native
+      var wrongHeaders: js.Array[HeaderInfo]
     }
     object TestTableHeadersResult {
       
@@ -712,111 +668,80 @@ object mod {
   @js.native
   val WARNING: /* 2 */ Double = js.native
   
-  @JSImport("html_codesniffer", "addMessage")
-  @js.native
-  def addMessage(`type`: Double, element: Element, msg: String, code: String): Unit = js.native
-  @JSImport("html_codesniffer", "addMessage")
-  @js.native
-  def addMessage(`type`: Double, element: Element, msg: String, code: String, data: MessageData): Unit = js.native
+  @scala.inline
+  def addMessage(`type`: Double, element: Element, msg: String, code: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(`type`.asInstanceOf[js.Any], element.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addMessage(`type`: Double, element: Element, msg: String, code: String, data: MessageData): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addMessage")(`type`.asInstanceOf[js.Any], element.asInstanceOf[js.Any], msg.asInstanceOf[js.Any], code.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("html_codesniffer", "getMessages")
-  @js.native
-  def getMessages(): js.Array[Message] = js.native
+  @scala.inline
+  def getMessages(): js.Array[Message] = ^.asInstanceOf[js.Dynamic].applyDynamic("getMessages")().asInstanceOf[js.Array[Message]]
   
-  @JSImport("html_codesniffer", "getTranslation")
-  @js.native
-  def getTranslation(text: String): String = js.native
+  @scala.inline
+  def getTranslation(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTranslation")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("html_codesniffer", "isFullDoc")
-  @js.native
-  def isFullDoc(content: String): Boolean = js.native
-  @JSImport("html_codesniffer", "isFullDoc")
-  @js.native
-  def isFullDoc(content: Element): Boolean = js.native
+  @scala.inline
+  def isFullDoc(content: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullDoc")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isFullDoc(content: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFullDoc")(content.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   @JSImport("html_codesniffer", "lang")
   @js.native
   val lang: String = js.native
   
-  @JSImport("html_codesniffer", "loadStandard")
-  @js.native
-  def loadStandard(standard: String, callback: Callback): Unit = js.native
-  @JSImport("html_codesniffer", "loadStandard")
-  @js.native
-  def loadStandard(standard: String, callback: Callback, failCallback: FailCallback): Unit = js.native
+  @scala.inline
+  def loadStandard(standard: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStandard")(standard.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def loadStandard(standard: String, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("loadStandard")(standard.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("html_codesniffer", "process")
-  @js.native
-  def process(standard: String, content: String, callback: Callback): Unit = js.native
-  @JSImport("html_codesniffer", "process")
-  @js.native
-  def process(
-    standard: String,
-    content: String,
-    callback: Callback,
-    failCallback: js.UndefOr[scala.Nothing],
-    language: String
-  ): Unit = js.native
-  @JSImport("html_codesniffer", "process")
-  @js.native
-  def process(standard: String, content: String, callback: Callback, failCallback: FailCallback): Unit = js.native
-  @JSImport("html_codesniffer", "process")
-  @js.native
+  @scala.inline
+  def process(standard: String, content: String, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def process(standard: String, content: String, callback: Callback, failCallback: Unit, language: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def process(standard: String, content: String, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def process(
     standard: String,
     content: String,
     callback: Callback,
     failCallback: FailCallback,
     language: String
-  ): Unit = js.native
-  @JSImport("html_codesniffer", "process")
-  @js.native
-  def process(standard: String, content: Element, callback: Callback): Unit = js.native
-  @JSImport("html_codesniffer", "process")
-  @js.native
-  def process(
-    standard: String,
-    content: Element,
-    callback: Callback,
-    failCallback: js.UndefOr[scala.Nothing],
-    language: String
-  ): Unit = js.native
-  @JSImport("html_codesniffer", "process")
-  @js.native
-  def process(standard: String, content: Element, callback: Callback, failCallback: FailCallback): Unit = js.native
-  @JSImport("html_codesniffer", "process")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def process(standard: String, content: Element, callback: Callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def process(standard: String, content: Element, callback: Callback, failCallback: Unit, language: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def process(standard: String, content: Element, callback: Callback, failCallback: FailCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def process(
     standard: String,
     content: Element,
     callback: Callback,
     failCallback: FailCallback,
     language: String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("process")(standard.asInstanceOf[js.Any], content.asInstanceOf[js.Any], callback.asInstanceOf[js.Any], failCallback.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("html_codesniffer", "run")
-  @js.native
-  def run(callback: Callback, content: String): String = js.native
-  @JSImport("html_codesniffer", "run")
-  @js.native
-  def run(callback: Callback, content: Node): String = js.native
+  @scala.inline
+  def run(callback: Callback, content: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def run(callback: Callback, content: Node): String = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(callback.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[String]
   
   type Callback = js.Function0[Unit]
   
   type FailCallback = js.Function0[Unit]
   
-  @js.native
   trait Message extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var data: js.UndefOr[MessageData] = js.native
+    var data: js.UndefOr[MessageData] = js.undefined
     
-    var element: Element = js.native
+    var element: Element
     
-    var msg: String = js.native
+    var msg: String
     
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object Message {
     

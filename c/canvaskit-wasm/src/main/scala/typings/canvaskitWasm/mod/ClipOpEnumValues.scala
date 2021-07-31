@@ -2,15 +2,15 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClipOpEnumValues extends EmbindEnum {
+trait ClipOpEnumValues
+  extends StObject
+     with EmbindEnum {
   
-  var Difference: ClipOp = js.native
+  var Difference: ClipOp
   
-  var Intersect: ClipOp = js.native
+  var Intersect: ClipOp
 }
 object ClipOpEnumValues {
   

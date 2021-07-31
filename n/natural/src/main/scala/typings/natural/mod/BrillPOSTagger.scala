@@ -2,17 +2,15 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BrillPOSTagger extends StObject {
   
-  var lexicon: Lexicon = js.native
+  var lexicon: Lexicon
   
-  var ruleSet: RuleSet = js.native
+  var ruleSet: RuleSet
   
-  def tag(sentence: js.Array[String]): js.Array[js.Array[String]] = js.native
+  def tag(sentence: js.Array[String]): js.Array[js.Array[String]]
 }
 object BrillPOSTagger {
   

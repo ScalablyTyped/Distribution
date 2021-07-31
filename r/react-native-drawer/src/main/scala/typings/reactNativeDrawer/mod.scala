@@ -15,7 +15,6 @@ import typings.reactNativeDrawer.reactNativeDrawerStrings.static
 import typings.reactNativeDrawer.reactNativeDrawerStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,162 +34,161 @@ object mod {
     def open(): Unit = js.native
   }
   
-  @js.native
   trait DrawerProperties extends StObject {
     
     /**
       * Toggle drawer when double tap occurs within pan mask?
       */
-    var acceptDoubleTap: js.UndefOr[Boolean] = js.native
+    var acceptDoubleTap: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow for drawer pan (on touch drag). Set to false to effectively
       * disable the drawer while still allowing programmatic control
       */
-    var acceptPan: js.UndefOr[Boolean] = js.native
+    var acceptPan: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Allow Pan when drawer is 'open'
       */
-    var acceptPanOnDrawer: js.UndefOr[Boolean] = js.native
+    var acceptPanOnDrawer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Toggle drawer when any tap occurs within pan mask?
       */
-    var acceptTap: js.UndefOr[Boolean] = js.native
+    var acceptTap: js.UndefOr[Boolean] = js.undefined
     
     // Gestures
     /**
       * If true, will capture all gestures inside of the pan mask. If 'open' will
       * only capture when drawer is open
       */
-    var captureGestures: js.UndefOr[Boolean | open | closed] = js.native
+    var captureGestures: js.UndefOr[Boolean | open | closed] = js.undefined
     
     /**
       * Same as openDrawerOffset, except defines left hand margin when drawer is closed
       */
-    var closedDrawerOffset: js.UndefOr[js.Function0[Double] | Double] = js.native
+    var closedDrawerOffset: js.UndefOr[js.Function0[Double] | Double] = js.undefined
     
     // Important
     /**
       * Menu component
       */
-    var content: js.UndefOr[ReactNode] = js.native
+    var content: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * If true the drawer can not be opened and will not respond to pans
       */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * (Android-only) Sets the elevation of the drawer using Android's underlying elevation API
       */
-    var elevation: js.UndefOr[Double] = js.native
+    var elevation: js.UndefOr[Double] = js.undefined
     
     /**
       * Initialize with drawer open
       */
-    var initializeOpen: js.UndefOr[Double] = js.native
+    var initializeOpen: js.UndefOr[Double] = js.undefined
     
     /**
       * If true, attempts to handle only horizontal swipes, making it play well with a child ScrollView
       */
-    var negotiatePan: js.UndefOr[Boolean] = js.native
+    var negotiatePan: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Will be called immediately after the drawer has entered the closed state
       */
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Ccallback fired at the start of a close animation
       */
-    var onCloseStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCloseStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback fired when a drag gesture starts.
       */
-    var onDragStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDragStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     // Event Handlers
     /**
       * Will be called immediately after the drawer has entered the open state
       */
-    var onOpen: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Callback fired at the start of an open animation
       */
-    var onOpenStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpenStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If true will trigger drawer open, if false will trigger close.
       */
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Can either be a integer (pixel value) or decimal (ratio of screen width). Defines the right hand margin when
       * the drawer is open. Or, can be function which returns offset
       */
-    var openDrawerOffset: js.UndefOr[(js.Function1[/* viewport */ ScaledSize, Double]) | Double] = js.native
+    var openDrawerOffset: js.UndefOr[(js.Function1[/* viewport */ ScaledSize, Double]) | Double] = js.undefined
     
     /**
       * Ratio of screen width that is valid for the start of a pan close action. If null -> defaults to max(.05, openDrawerOffset)
       */
-    var panCloseMask: js.UndefOr[Double] = js.native
+    var panCloseMask: js.UndefOr[Double] = js.undefined
     
     /**
       * Ratio of screen width that is valid for the start of a pan open action. If null -> defaults to max(.05, closedDrawerOffset)
       */
-    var panOpenMask: js.UndefOr[Double] = js.native
+    var panOpenMask: js.UndefOr[Double] = js.undefined
     
     // Additional Configurations
     /**
       * Ratio of screen width that must be travelled to trigger a drawer open/close
       */
-    var panThreshold: js.UndefOr[Double] = js.native
+    var panThreshold: js.UndefOr[Double] = js.undefined
     
     /**
       * which side the drawer should be on.
       */
-    var side: js.UndefOr[left | right | top | bottom] = js.native
+    var side: js.UndefOr[left | right | top | bottom] = js.undefined
     
     /**
       * Styles for the drawer, main, drawerOverlay and mainOverlay container Views
       */
-    var styles: js.UndefOr[DrawerStyles] = js.native
+    var styles: js.UndefOr[DrawerStyles] = js.undefined
     
     /**
       * Same as acceptTap, except only for close
       */
-    var tapToClose: js.UndefOr[Boolean] = js.native
+    var tapToClose: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The duration of the open/close animation
       */
-    var tweenDuration: js.UndefOr[Double] = js.native
+    var tweenDuration: js.UndefOr[Double] = js.undefined
     
     /**
       *  A easing type supported by tween-functions
       */
-    var tweenEasing: js.UndefOr[TweenFunctions] = js.native
+    var tweenEasing: js.UndefOr[TweenFunctions] = js.undefined
     
     // Animation / Tween
     /**
       * Takes in the pan ratio (decimal 0 to 1) that represents the tween percent. Returns an object of
       * native props to be set on the constituent views
       */
-    var tweenHandler: js.UndefOr[js.Function1[/* ratio */ Double, NestedViewStyles]] = js.native
+    var tweenHandler: js.UndefOr[js.Function1[/* ratio */ Double, NestedViewStyles]] = js.undefined
     
     /**
       * Type of drawer
       */
-    var `type`: js.UndefOr[displace | overlay | static] = js.native
+    var `type`: js.UndefOr[displace | overlay | static] = js.undefined
     
     /**
       * if true will run InteractionManager for open/close animations.
       */
-    var useInteractionManager: js.UndefOr[Boolean] = js.native
+    var useInteractionManager: js.UndefOr[Boolean] = js.undefined
   }
   object DrawerProperties {
     
@@ -385,10 +383,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait DrawerStyles extends NestedViewStyles {
+  trait DrawerStyles
+    extends StObject
+       with NestedViewStyles {
     
-    var drawer: js.UndefOr[ViewStyle] = js.native
+    var drawer: js.UndefOr[ViewStyle] = js.undefined
   }
   object DrawerStyles {
     
@@ -409,14 +408,13 @@ object mod {
     }
   }
   
-  @js.native
   trait NestedViewStyles extends StObject {
     
-    var drawerOverlay: js.UndefOr[ViewStyle] = js.native
+    var drawerOverlay: js.UndefOr[ViewStyle] = js.undefined
     
-    var main: js.UndefOr[ViewStyle] = js.native
+    var main: js.UndefOr[ViewStyle] = js.undefined
     
-    var mainOverlay: js.UndefOr[ViewStyle] = js.native
+    var mainOverlay: js.UndefOr[ViewStyle] = js.undefined
   }
   object NestedViewStyles {
     

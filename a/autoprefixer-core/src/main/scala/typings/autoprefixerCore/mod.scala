@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.autoprefixerCore.anon.Inline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,14 +12,13 @@ object mod extends Shortcut {
   @js.native
   val ^ : Exports = js.native
   
-  @js.native
   trait Config extends StObject {
     
-    var browsers: js.UndefOr[js.Array[String]] = js.native
+    var browsers: js.UndefOr[js.Array[String]] = js.undefined
     
-    var cascade: js.UndefOr[Boolean] = js.native
+    var cascade: js.UndefOr[Boolean] = js.undefined
     
-    var remove: js.UndefOr[Boolean] = js.native
+    var remove: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     
@@ -69,16 +67,15 @@ object mod extends Shortcut {
     def process(css: String, opts: Options): Result = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var map: js.UndefOr[Inline] = js.native
+    var map: js.UndefOr[Inline] = js.undefined
     
-    var safe: js.UndefOr[Boolean] = js.native
+    var safe: js.UndefOr[Boolean] = js.undefined
     
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -128,14 +125,13 @@ object mod extends Shortcut {
     def process(css: String, opts: Options): Result = js.native
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var css: String = js.native
+    var css: String
     
-    var map: String = js.native
+    var map: String
     
-    var opts: Options = js.native
+    var opts: Options
   }
   object Result {
     

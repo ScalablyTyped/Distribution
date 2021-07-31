@@ -3,7 +3,6 @@ package typings.reactGamepad
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -229,14 +228,13 @@ object mod {
     def RightTrigger: typings.reactGamepad.reactGamepadStrings.RightTrigger = "RightTrigger".asInstanceOf[typings.reactGamepad.reactGamepadStrings.RightTrigger]
   }
   
-  @js.native
   trait Layout extends StObject {
     
-    var axis: js.Array[InvertibleAxis | Null] = js.native
+    var axis: js.Array[InvertibleAxis | Null]
     
-    var buttonAxis: js.Array[InvertibleAxis | Null] = js.native
+    var buttonAxis: js.Array[InvertibleAxis | Null]
     
-    var buttons: js.Array[Button | Null] = js.native
+    var buttons: js.Array[Button | Null]
   }
   object Layout {
     
@@ -273,130 +271,129 @@ object mod {
     }
   }
   
-  @js.native
   trait Props extends StObject {
     
     /**
       * Threshold below which the axis values will be rounded to 0.0 Default: 0.08
       */
-    var deadZone: js.UndefOr[Double] = js.native
+    var deadZone: js.UndefOr[Double] = js.undefined
     
     /**
       * The index of the gamepad to use, from 0 to 4 Default: 0
       */
-    var gamepadIndex: js.UndefOr[Double] = js.native
+    var gamepadIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * Layout to use, from Gamepad.layouts. For now, only Gamepad.layouts.XBOX exists Default: Gamepad.layouts.XBOX
       */
-    var layout: js.UndefOr[Layout] = js.native
+    var layout: js.UndefOr[Layout] = js.undefined
     
     /**
       * triggered when the A button is pressed.
       */
-    var onA: js.UndefOr[js.Function0[Unit]] = js.native
+    var onA: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * triggered when an axis is changed.
       */
     var onAxisChange: js.UndefOr[
         js.Function3[/* axisName */ Axis, /* value */ Double, /* previousValue */ Double, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * triggered when the B button is pressed.
       */
-    var onB: js.UndefOr[js.Function0[Unit]] = js.native
+    var onB: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * triggered when a button is pushed or released.
       */
-    var onButtonChange: js.UndefOr[js.Function2[/* buttonName */ Button, /* pressed */ Boolean, Unit]] = js.native
+    var onButtonChange: js.UndefOr[js.Function2[/* buttonName */ Button, /* pressed */ Boolean, Unit]] = js.undefined
     
     /**
       * triggered when a button is pushed.
       */
-    var onButtonDown: js.UndefOr[js.Function1[/* buttonName */ Button, Unit]] = js.native
+    var onButtonDown: js.UndefOr[js.Function1[/* buttonName */ Button, Unit]] = js.undefined
     
     /**
       * triggered when a button is released.
       */
-    var onButtonUp: js.UndefOr[js.Function1[/* buttonName */ Button, Unit]] = js.native
+    var onButtonUp: js.UndefOr[js.Function1[/* buttonName */ Button, Unit]] = js.undefined
     
     /**
       * triggered when the gamepad connects. Will be Triggered at least once after the Gamepad component is mounted.
       */
-    var onConnect: js.UndefOr[js.Function1[/* gamepadIndex */ Double, Unit]] = js.native
+    var onConnect: js.UndefOr[js.Function1[/* gamepadIndex */ Double, Unit]] = js.undefined
     
     /**
       * triggered when the gamepad disconnects.
       */
-    var onDisconnect: js.UndefOr[js.Function1[/* gamepadIndex */ Double, Unit]] = js.native
+    var onDisconnect: js.UndefOr[js.Function1[/* gamepadIndex */ Double, Unit]] = js.undefined
     
     /**
       * Triggered when the D Pad Down button is pressed or the Left Stick is pushed down (above stickThreshold).
       */
-    var onDown: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDown: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the LB button is pressed.
       */
-    var onLB: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLB: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the LS button is pressed.
       */
-    var onLS: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLS: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the LT button is pressed.
       */
-    var onLT: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLT: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the D Pad Left button is pressed or the Left Stick is pushed left (above stickThreshold).
       */
-    var onLeft: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLeft: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the RB button is pressed.
       */
-    var onRB: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRB: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the RS button is pressed.
       */
-    var onRS: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRS: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the RT button is pressed.
       */
-    var onRT: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRT: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the D Pad Right button is pressed or the Left Stick is pushed right (above stickThreshold).
       */
-    var onRight: js.UndefOr[js.Function0[Unit]] = js.native
+    var onRight: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the D Pad Up button is pressed or the Left Stick is pushed up (above stickThreshold).
       */
-    var onUp: js.UndefOr[js.Function0[Unit]] = js.native
+    var onUp: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * triggered when the X button is pressed.
       */
-    var onX: js.UndefOr[js.Function0[Unit]] = js.native
+    var onX: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Triggered when the Y button is pressed.
       */
-    var onY: js.UndefOr[js.Function0[Unit]] = js.native
+    var onY: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Threshold above which onUp, onDown,onLeft,onRight are Triggered for the left stick Default: 0.75
       */
-    var stickThreshold: js.UndefOr[Double] = js.native
+    var stickThreshold: js.UndefOr[Double] = js.undefined
   }
   object Props {
     

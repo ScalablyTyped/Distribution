@@ -10,19 +10,20 @@ import typings.luminoCoreutils.jsonMod.ReadonlyPartialJSONValue
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object JSONExt {
     
-    @JSImport("@lumino/coreutils", "JSONExt.deepCopy")
+    @JSImport("@lumino/coreutils", "JSONExt")
     @js.native
-    def deepCopy(value: String): String = js.native
-    @JSImport("@lumino/coreutils", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: js.Array[ReadonlyPartialJSONValue]): js.Array[ReadonlyPartialJSONValue] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def deepCopy(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def deepCopy(value: js.Array[ReadonlyPartialJSONValue]): js.Array[ReadonlyPartialJSONValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[js.Array[ReadonlyPartialJSONValue]]
     /**
       * Create a deep copy of a JSON value.
       *
@@ -30,18 +31,14 @@ object mod {
       *
       * @returns A deep copy of the given JSON value.
       */
-    @JSImport("@lumino/coreutils", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: Boolean): Boolean = js.native
-    @JSImport("@lumino/coreutils", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: Double): Double = js.native
-    @JSImport("@lumino/coreutils", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: Null): Null = js.native
-    @JSImport("@lumino/coreutils", "JSONExt.deepCopy")
-    @js.native
-    def deepCopy(value: ReadonlyPartialJSONObject): ReadonlyPartialJSONObject = js.native
+    @scala.inline
+    def deepCopy(value: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+    @scala.inline
+    def deepCopy(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def deepCopy(value: Null): Null = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[Null]
+    @scala.inline
+    def deepCopy(value: ReadonlyPartialJSONObject): ReadonlyPartialJSONObject = ^.asInstanceOf[js.Dynamic].applyDynamic("deepCopy")(value.asInstanceOf[js.Any]).asInstanceOf[ReadonlyPartialJSONObject]
     
     /**
       * Compare two JSON values for deep equality.
@@ -52,9 +49,8 @@ object mod {
       *
       * @returns `true` if the values are equivalent, `false` otherwise.
       */
-    @JSImport("@lumino/coreutils", "JSONExt.deepEqual")
-    @js.native
-    def deepEqual(first: ReadonlyPartialJSONValue, second: ReadonlyPartialJSONValue): Boolean = js.native
+    @scala.inline
+    def deepEqual(first: ReadonlyPartialJSONValue, second: ReadonlyPartialJSONValue): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(first.asInstanceOf[js.Any], second.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     /**
       * A shared frozen empty JSONArray
@@ -77,9 +73,8 @@ object mod {
       *
       * @returns `true` if the value is a an array, `false` otherwise.
       */
-    @JSImport("@lumino/coreutils", "JSONExt.isArray")
-    @js.native
-    def isArray(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean = js.native
+    @scala.inline
+    def isArray(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @lumino/coreutils.@lumino/coreutils/types/json.JSONArray */ Boolean]
     
     /**
       * Test whether a JSON value is an object.
@@ -88,9 +83,8 @@ object mod {
       *
       * @returns `true` if the value is a an object, `false` otherwise.
       */
-    @JSImport("@lumino/coreutils", "JSONExt.isObject")
-    @js.native
-    def isObject(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean = js.native
+    @scala.inline
+    def isObject(value: JSONValue | PartialJSONValue | ReadonlyJSONValue | ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @lumino/coreutils.@lumino/coreutils/types/json.JSONObject */ Boolean]
     
     /**
       * Test whether a JSON value is a primitive.
@@ -99,9 +93,8 @@ object mod {
       *
       * @returns `true` if the value is a primitive,`false` otherwise.
       */
-    @JSImport("@lumino/coreutils", "JSONExt.isPrimitive")
-    @js.native
-    def isPrimitive(value: ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean = js.native
+    @scala.inline
+    def isPrimitive(value: ReadonlyPartialJSONValue): /* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isPrimitive")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @lumino/coreutils.@lumino/coreutils/types/json.JSONPrimitive */ Boolean]
   }
   
   @JSImport("@lumino/coreutils", "MimeData")
@@ -118,6 +111,10 @@ object mod {
     extends typings.luminoCoreutils.promiseMod.PromiseDelegate[T]
   
   object Random {
+    
+    @JSImport("@lumino/coreutils", "Random")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * A function which generates random bytes.
@@ -136,9 +133,8 @@ object mod {
       *   - `require('crypto').randomBytes
       *   - `Math.random`
       */
-    @JSImport("@lumino/coreutils", "Random.getRandomValues")
-    @js.native
-    def getRandomValues(buffer: Uint8Array): Unit = js.native
+    @scala.inline
+    def getRandomValues(buffer: Uint8Array): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getRandomValues")(buffer.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   @JSImport("@lumino/coreutils", "Token")
@@ -155,6 +151,10 @@ object mod {
   
   object UUID {
     
+    @JSImport("@lumino/coreutils", "UUID")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * A function which generates UUID v4 identifiers.
       *
@@ -167,8 +167,7 @@ object mod {
       * turn will use the underlying `crypto` module of the platform if
       * it is available. The fallback for randomness is `Math.random`.
       */
-    @JSImport("@lumino/coreutils", "UUID.uuid4")
-    @js.native
-    def uuid4(): String = js.native
+    @scala.inline
+    def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
   }
 }

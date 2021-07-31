@@ -2,69 +2,69 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Variant in sequence
   */
-@js.native
-trait SequenceVariant extends BackboneElement {
+trait SequenceVariant
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'cigar'.
     */
-  var _cigar: js.UndefOr[Element] = js.native
+  var _cigar: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'end'.
     */
-  var _end: js.UndefOr[Element] = js.native
+  var _end: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'observedAllele'.
     */
-  var _observedAllele: js.UndefOr[Element] = js.native
+  var _observedAllele: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'referenceAllele'.
     */
-  var _referenceAllele: js.UndefOr[Element] = js.native
+  var _referenceAllele: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'start'.
     */
-  var _start: js.UndefOr[Element] = js.native
+  var _start: js.UndefOr[Element] = js.undefined
   
   /**
     * Extended CIGAR string for aligning the sequence with reference bases
     */
-  var cigar: js.UndefOr[String] = js.native
+  var cigar: js.UndefOr[String] = js.undefined
   
   /**
     * End position of the variant on the reference sequence
     */
-  var end: js.UndefOr[integer] = js.native
+  var end: js.UndefOr[integer] = js.undefined
   
   /**
     * Allele that was observed
     */
-  var observedAllele: js.UndefOr[String] = js.native
+  var observedAllele: js.UndefOr[String] = js.undefined
   
   /**
     * Allele in the reference sequence
     */
-  var referenceAllele: js.UndefOr[String] = js.native
+  var referenceAllele: js.UndefOr[String] = js.undefined
   
   /**
     * Start position of the variant on the  reference sequence
     */
-  var start: js.UndefOr[integer] = js.native
+  var start: js.UndefOr[integer] = js.undefined
   
   /**
     * Pointer to observed variant information
     */
-  var variantPointer: js.UndefOr[Reference] = js.native
+  var variantPointer: js.UndefOr[Reference] = js.undefined
 }
 object SequenceVariant {
   

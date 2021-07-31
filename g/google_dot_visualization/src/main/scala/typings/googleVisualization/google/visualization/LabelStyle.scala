@@ -2,17 +2,15 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelStyle extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var fontName: String = js.native
+  var fontName: String
   
-  var fontSize: Double = js.native
+  var fontSize: Double
 }
 object LabelStyle {
   

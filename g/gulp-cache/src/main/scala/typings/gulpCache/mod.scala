@@ -9,7 +9,6 @@ import typings.node.streamMod.Transform
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,14 +24,13 @@ object mod extends Shortcut {
   
   object gc {
     
-    @js.native
     trait ICacheOptions extends StObject {
       
       /**
         * Specifies the name of the directory where the cache
         * is to be stored.
         */
-      var cacheDirName: String = js.native
+      var cacheDirName: String
     }
     object ICacheOptions {
       
@@ -55,15 +53,15 @@ object mod extends Shortcut {
       */
     @js.native
     trait IGulpCache
-      extends Instantiable1[/* options */ ICacheOptions, js.Any]
+      extends StObject
+         with Instantiable1[/* options */ ICacheOptions, js.Any]
     
-    @js.native
     trait IGulpCacheOptions extends StObject {
       
       /**
         * The cache instance to use for caching.
         */
-      var fileCache: js.UndefOr[IGulpCache] = js.native
+      var fileCache: js.UndefOr[IGulpCache] = js.undefined
       
       /**
         * The hash generator to use.
@@ -74,23 +72,23 @@ object mod extends Shortcut {
               /* callback */ js.UndefOr[js.Function2[/* err */ js.Any, /* result */ String, Unit]], 
               String | js.Promise[String]
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * The name of the bucket which stores the cached objects.
         * Default value = 'default'
         */
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
       /**
         * Value representing the success of a task.
         */
-      var success: js.UndefOr[Boolean | Predicate[_]] = js.native
+      var success: js.UndefOr[Boolean | Predicate[js.Any]] = js.undefined
       
       /**
         * Content that is to be cached.
         */
-      var value: js.UndefOr[js.Function1[/* result */ js.Any, js.Object | js.Promise[js.Object] | String]] = js.native
+      var value: js.UndefOr[js.Function1[/* result */ js.Any, js.Object | js.Promise[js.Object] | String]] = js.undefined
     }
     object IGulpCacheOptions {
       
@@ -124,10 +122,10 @@ object mod extends Shortcut {
         def setNameUndefined: Self = StObject.set(x, "name", js.undefined)
         
         @scala.inline
-        def setSuccess(value: Boolean | Predicate[_]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
+        def setSuccess(value: Boolean | Predicate[js.Any]): Self = StObject.set(x, "success", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setSuccessFunction1(value: _ => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
+        def setSuccessFunction1(value: js.Any => Boolean): Self = StObject.set(x, "success", js.Any.fromFunction1(value))
         
         @scala.inline
         def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)

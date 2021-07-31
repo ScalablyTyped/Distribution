@@ -5,103 +5,101 @@ import typings.webix.webix.EventHash
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait selectConfig extends StObject {
   
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var attributes: js.UndefOr[js.Any] = js.native
+  var attributes: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var bottomLabel: js.UndefOr[String] = js.native
+  var bottomLabel: js.UndefOr[String] = js.undefined
   
-  var bottomPadding: js.UndefOr[Double] = js.native
+  var bottomPadding: js.UndefOr[Double] = js.undefined
   
-  var click: js.UndefOr[WebixCallback] = js.native
+  var click: js.UndefOr[WebixCallback] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var format: js.UndefOr[js.Any] = js.native
+  var format: js.UndefOr[js.Any] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var hotkey: js.UndefOr[String] = js.native
+  var hotkey: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var inputAlign: js.UndefOr[String] = js.native
+  var inputAlign: js.UndefOr[String] = js.undefined
   
-  var inputHeight: js.UndefOr[Double] = js.native
+  var inputHeight: js.UndefOr[Double] = js.undefined
   
-  var inputWidth: js.UndefOr[Double] = js.native
+  var inputWidth: js.UndefOr[Double] = js.undefined
   
-  var invalid: js.UndefOr[Boolean] = js.native
+  var invalid: js.UndefOr[Boolean] = js.undefined
   
-  var invalidMessage: js.UndefOr[String] = js.native
+  var invalidMessage: js.UndefOr[String] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var labelAlign: js.UndefOr[String] = js.native
+  var labelAlign: js.UndefOr[String] = js.undefined
   
-  var labelPosition: js.UndefOr[String] = js.native
+  var labelPosition: js.UndefOr[String] = js.undefined
   
-  var labelWidth: js.UndefOr[Double] = js.native
+  var labelWidth: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var options: js.UndefOr[js.Array[_] | String] = js.native
+  var options: js.UndefOr[js.Array[js.Any] | String] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var popup: js.UndefOr[String] = js.native
+  var popup: js.UndefOr[String] = js.undefined
   
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
-  var relatedAction: js.UndefOr[String] = js.native
+  var relatedAction: js.UndefOr[String] = js.undefined
   
-  var relatedView: js.UndefOr[String] = js.native
+  var relatedView: js.UndefOr[String] = js.undefined
   
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
-  var suggest: js.UndefOr[js.Any] = js.native
+  var suggest: js.UndefOr[js.Any] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.undefined
   
-  var validate: js.UndefOr[WebixCallback] = js.native
+  var validate: js.UndefOr[WebixCallback] = js.undefined
   
-  var validateEvent: js.UndefOr[String] = js.native
+  var validateEvent: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[String | Double] = js.native
+  var value: js.UndefOr[String | Double] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object selectConfig {
   
@@ -151,7 +149,7 @@ object selectConfig {
     def setBottomPaddingUndefined: Self = StObject.set(x, "bottomPadding", js.undefined)
     
     @scala.inline
-    def setClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
+    def setClick(value: WebixCallback): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
@@ -307,7 +305,7 @@ object selectConfig {
     def setOnUndefined: Self = StObject.set(x, "on", js.undefined)
     
     @scala.inline
-    def setOptions(value: js.Array[_] | String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
+    def setOptions(value: js.Array[js.Any] | String): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
@@ -364,7 +362,7 @@ object selectConfig {
     def setTooltipUndefined: Self = StObject.set(x, "tooltip", js.undefined)
     
     @scala.inline
-    def setValidate(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "validate", js.Any.fromFunction1(value))
+    def setValidate(value: WebixCallback): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValidateEvent(value: String): Self = StObject.set(x, "validateEvent", value.asInstanceOf[js.Any])

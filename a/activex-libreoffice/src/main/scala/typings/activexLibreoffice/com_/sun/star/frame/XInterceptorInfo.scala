@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XDispatchProviderInterception
   * @see XDispatchProviderInterceptor
   */
-@js.native
-trait XInterceptorInfo extends XInterface {
+trait XInterceptorInfo
+  extends StObject
+     with XInterface {
   
   /**
     * returns the URL list for interception.
@@ -26,7 +26,7 @@ trait XInterceptorInfo extends XInterface {
     * Wildcards inside the URLs are allowed to register the interceptor for URLs too, which can have optional arguments (e.g. "..#.." or "..?..").
     * @returns a list of URLs which are handled by this interceptor
     */
-  val InterceptedURLs: SafeArray[String] = js.native
+  val InterceptedURLs: SafeArray[String]
   
   /**
     * returns the URL list for interception.
@@ -34,7 +34,7 @@ trait XInterceptorInfo extends XInterface {
     * Wildcards inside the URLs are allowed to register the interceptor for URLs too, which can have optional arguments (e.g. "..#.." or "..?..").
     * @returns a list of URLs which are handled by this interceptor
     */
-  def getInterceptedURLs(): SafeArray[String] = js.native
+  def getInterceptedURLs(): SafeArray[String]
 }
 object XInterceptorInfo {
   

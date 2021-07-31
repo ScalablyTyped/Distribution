@@ -10,10 +10,8 @@ import typings.hapi.hapiBooleans.`false`
 import typings.mimos.mod.MimosOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerOptions extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait ServerOptions extends StObject {
     * restrict the server to only those coming from the same host.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsaddress)
     */
-  var address: js.UndefOr[String] = js.native
+  var address: js.UndefOr[String] = js.undefined
   
   /**
     * Default value: {}.
@@ -31,7 +29,7 @@ trait ServerOptions extends StObject {
     * state.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsapp)
     */
-  var app: js.UndefOr[ServerOptionsApp] = js.native
+  var app: js.UndefOr[ServerOptionsApp] = js.undefined
   
   /**
     * Default value: true.
@@ -39,7 +37,7 @@ trait ServerOptions extends StObject {
     * Cannot be set to true along with a port value.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsautolisten)
     */
-  var autoListen: js.UndefOr[Boolean] = js.native
+  var autoListen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default value: { engine: require('catbox-memory' }.
@@ -58,13 +56,13 @@ trait ServerOptions extends StObject {
     * * * other options passed to the catbox strategy used. Other options are only passed to catbox when engine above is a class or function and ignored if engine is a catbox engine object).
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionscache)
     */
-  var cache: js.UndefOr[CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]] = js.native
+  var cache: js.UndefOr[CacheProvider[ClientOptions] | ServerOptionsCache | js.Array[ServerOptionsCache]] = js.undefined
   
   /**
     * Default value: { minBytes: 1024 }.
     * Defines server handling of content encoding requests. If false, response content encoding is disabled and no compression is performed by the server.
     */
-  var compression: js.UndefOr[Boolean | ServerOptionsCompression] = js.native
+  var compression: js.UndefOr[Boolean | ServerOptionsCompression] = js.undefined
   
   /**
     * Default value: { request: ['implementation'] }.
@@ -77,13 +75,13 @@ trait ServerOptions extends StObject {
     * or request to ['error']. To turn off all output set the log or request to false. To display all server logs, set the log or request to '*'. To disable all debug information, set debug to
     * false.
     */
-  var debug: js.UndefOr[`false` | Log] = js.native
+  var debug: js.UndefOr[`false` | Log] = js.undefined
   
   /**
     * Default value: the operating system hostname and if not available, to 'localhost'.
     * The public hostname or IP address. Used to set server.info.host and server.info.uri and as address is none provided.
     */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /**
     * Default value: none.
@@ -91,7 +89,7 @@ trait ServerOptions extends StObject {
     * If the listener needs to be manually started, set autoListen to false.
     * If the listener uses TLS, set tls to true.
     */
-  var listener: js.UndefOr[typings.node.httpMod.Server] = js.native
+  var listener: js.UndefOr[typings.node.httpMod.Server] = js.undefined
   
   /**
     * Default value: { sampleInterval: 0 }.
@@ -101,7 +99,7 @@ trait ServerOptions extends StObject {
     * * maxRssBytes - maximum process RSS size over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     * * maxEventLoopDelay - maximum event loop delay duration in milliseconds over which incoming requests are rejected with an HTTP Server Timeout (503) response. Defaults to 0 (no limit).
     */
-  var load: js.UndefOr[Concurrent] = js.native
+  var load: js.UndefOr[Concurrent] = js.undefined
   
   /**
     * Default value: none.
@@ -113,26 +111,26 @@ trait ServerOptions extends StObject {
     * * * predicate - method with signature function(mime) when this mime type is found in the database, this function will execute to allows customizations.
     * [See docs](https://github.com/hapijs/hapi/blob/master/API.md#-serveroptionsmime)
     */
-  var mime: js.UndefOr[MimosOptions] = js.native
+  var mime: js.UndefOr[MimosOptions] = js.undefined
   
   /**
     * Default value: {}.
     * Plugin-specific configuration which can later be accessed via server.settings.plugins. plugins is an object where each key is a plugin name and the value is the configuration. Note the
     * difference between server.settings.plugins which is used to store static configuration values and server.plugins which is meant for storing run-time state.
     */
-  var plugins: js.UndefOr[PluginSpecificConfiguration] = js.native
+  var plugins: js.UndefOr[PluginSpecificConfiguration] = js.undefined
   
   /**
     * Default value: 0 (an ephemeral port).
     * The TCP port the server will listen to. Defaults the next available port when the server is started (and assigned to server.info.port).
     * If port is a string containing a '/' character, it is used as a UNIX domain socket path. If it starts with '\.\pipe', it is used as a Windows named pipe.
     */
-  var port: js.UndefOr[Double | String] = js.native
+  var port: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Query parameter configuration.
     */
-  var query: js.UndefOr[Parser] = js.native
+  var query: js.UndefOr[Parser] = js.undefined
   
   /**
     * Default value: { isCaseSensitive: true, stripTrailingSlash: false }.
@@ -140,13 +138,13 @@ trait ServerOptions extends StObject {
     * * isCaseSensitive - determines whether the paths '/example' and '/EXAMPLE' are considered different resources. Defaults to true.
     * * stripTrailingSlash - removes trailing slashes on incoming paths. Defaults to false.
     */
-  var router: js.UndefOr[IsCaseSensitive] = js.native
+  var router: js.UndefOr[IsCaseSensitive] = js.undefined
   
   /**
     * Default value: none.
     * A route options object used as the default configuration for every route.
     */
-  var routes: js.UndefOr[RouteOptions] = js.native
+  var routes: js.UndefOr[RouteOptions] = js.undefined
   
   /**
     * Default value:
@@ -162,19 +160,19 @@ trait ServerOptions extends StObject {
     */
   // TODO I am not sure if I need to use all the server.state() definition (like the default value) OR only the options below. The v16 use "any" here.
   // state?: ServerStateCookieOptions;
-  var state: js.UndefOr[Encoding] = js.native
+  var state: js.UndefOr[Encoding] = js.undefined
   
   /**
     * Default value: none.
     * Used to create an HTTPS connection. The tls object is passed unchanged to the node HTTPS server as described in the node HTTPS documentation.
     */
-  var tls: js.UndefOr[Boolean | typings.node.httpsMod.ServerOptions] = js.native
+  var tls: js.UndefOr[Boolean | typings.node.httpsMod.ServerOptions] = js.undefined
   
   /**
     * Default value: constructed from runtime server information.
     * The full public URI without the path (e.g. 'http://example.com:8080'). If present, used as the server server.info.uri, otherwise constructed from the server settings.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object ServerOptions {
   

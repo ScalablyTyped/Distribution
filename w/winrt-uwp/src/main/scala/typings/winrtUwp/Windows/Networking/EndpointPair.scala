@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Networking
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the local endpoint and remote endpoint for a network connection used by network apps. */
-@js.native
 trait EndpointPair extends StObject {
   
   /** Get or set the local hostname for the EndpointPair object. */
-  var localHostName: HostName = js.native
+  var localHostName: HostName
   
   /** Get or set the local service name for the EndpointPair object. */
-  var localServiceName: String = js.native
+  var localServiceName: String
   
   /** Get or set the remote hostname for the EndpointPair object. */
-  var remoteHostName: HostName = js.native
+  var remoteHostName: HostName
   
   /** Get or set the remote service name for the EndpointPair object. */
-  var remoteServiceName: String = js.native
+  var remoteServiceName: String
 }
 object EndpointPair {
   

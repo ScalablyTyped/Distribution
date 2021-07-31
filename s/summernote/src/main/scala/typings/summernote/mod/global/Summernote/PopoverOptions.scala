@@ -3,17 +3,15 @@ package typings.summernote.mod.global.Summernote
 import typings.summernote.summernoteStrings.link
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PopoverOptions extends StObject {
   
-  var air: js.UndefOr[popoverAirDef] = js.native
+  var air: js.UndefOr[popoverAirDef] = js.undefined
   
-  var image: js.UndefOr[popoverImageDef] = js.native
+  var image: js.UndefOr[popoverImageDef] = js.undefined
   
-  var link: js.UndefOr[popoverLinkDef] = js.native
+  var link: js.UndefOr[popoverLinkDef] = js.undefined
 }
 object PopoverOptions {
   

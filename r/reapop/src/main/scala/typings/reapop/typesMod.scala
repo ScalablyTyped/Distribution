@@ -3,40 +3,38 @@ package typings.reapop
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   /* Inlined std.Partial<reapop.reapop/dist/reducers/notifications/types.Notification> */
-  @js.native
   trait NewNotification extends StObject {
     
-    var allowHTML: js.UndefOr[Boolean] = js.native
+    var allowHTML: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[NotificationButton]] = js.native
+    var buttons: js.UndefOr[js.Array[NotificationButton]] = js.undefined
     
-    var dismissAfter: js.UndefOr[Double] = js.native
+    var dismissAfter: js.UndefOr[Double] = js.undefined
     
-    var dismissible: js.UndefOr[Boolean] = js.native
+    var dismissible: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
     
-    var showDismissButton: js.UndefOr[Boolean] = js.native
+    var showDismissButton: js.UndefOr[Boolean] = js.undefined
     
-    var status: js.UndefOr[Status] = js.native
+    var status: js.UndefOr[Status] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object NewNotification {
     
@@ -132,35 +130,35 @@ object typesMod {
     }
   }
   
-  @js.native
   trait Notification
-    extends /* index */ StringDictionary[js.Any] {
+    extends StObject
+       with /* index */ StringDictionary[js.Any] {
     
-    var allowHTML: js.UndefOr[Boolean] = js.native
+    var allowHTML: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.Array[NotificationButton] = js.native
+    var buttons: js.Array[NotificationButton]
     
-    var dismissAfter: js.UndefOr[Double] = js.native
+    var dismissAfter: js.UndefOr[Double] = js.undefined
     
-    var dismissible: js.UndefOr[Boolean] = js.native
+    var dismissible: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var image: js.UndefOr[String] = js.native
+    var image: js.UndefOr[String] = js.undefined
     
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
-    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onAdd: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onDismiss: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var position: Position = js.native
+    var position: Position
     
-    var showDismissButton: js.UndefOr[Boolean] = js.native
+    var showDismissButton: js.UndefOr[Boolean] = js.undefined
     
-    var status: Status = js.native
+    var status: Status
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Notification {
     
@@ -244,14 +242,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait NotificationButton extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var primary: js.UndefOr[Boolean] = js.native
+    var primary: js.UndefOr[Boolean] = js.undefined
   }
   object NotificationButton {
     

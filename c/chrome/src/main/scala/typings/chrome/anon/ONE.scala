@@ -4,21 +4,19 @@ import typings.chrome.chromeStrings.one
 import typings.chrome.chromeStrings.two
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ONE extends StObject {
   
-  var ONE: one = js.native
+  var ONE: one
   
-  var TWO: two = js.native
+  var TWO: two
 }
 object ONE {
   
   @scala.inline
-  def apply(ONE: one, TWO: two): ONE = {
-    val __obj = js.Dynamic.literal(ONE = ONE.asInstanceOf[js.Any], TWO = TWO.asInstanceOf[js.Any])
+  def apply(): ONE = {
+    val __obj = js.Dynamic.literal(ONE = "one", TWO = "two")
     __obj.asInstanceOf[ONE]
   }
   

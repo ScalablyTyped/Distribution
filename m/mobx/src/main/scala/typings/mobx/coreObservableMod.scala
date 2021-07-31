@@ -6,61 +6,52 @@ import typings.mobx.utilsMod.Lambda
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreObservableMod {
   
-  @JSImport("mobx/lib/core/observable", "addObserver")
+  @JSImport("mobx/lib/core/observable", JSImport.Namespace)
   @js.native
-  def addObserver(observable: IObservable, node: IDerivation): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mobx/lib/core/observable", "endBatch")
-  @js.native
-  def endBatch(): Unit = js.native
+  @scala.inline
+  def addObserver(observable: IObservable, node: IDerivation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addObserver")(observable.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/observable", "getObservers")
-  @js.native
-  def getObservers(observable: IObservable): Set[IDerivation] = js.native
+  @scala.inline
+  def endBatch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("endBatch")().asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/observable", "hasObservers")
-  @js.native
-  def hasObservers(observable: IObservable): Boolean = js.native
+  @scala.inline
+  def getObservers(observable: IObservable): Set[IDerivation] = ^.asInstanceOf[js.Dynamic].applyDynamic("getObservers")(observable.asInstanceOf[js.Any]).asInstanceOf[Set[IDerivation]]
   
-  @JSImport("mobx/lib/core/observable", "propagateChangeConfirmed")
-  @js.native
-  def propagateChangeConfirmed(observable: IObservable): Unit = js.native
+  @scala.inline
+  def hasObservers(observable: IObservable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("hasObservers")(observable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("mobx/lib/core/observable", "propagateChanged")
-  @js.native
-  def propagateChanged(observable: IObservable): Unit = js.native
+  @scala.inline
+  def propagateChangeConfirmed(observable: IObservable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("propagateChangeConfirmed")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/observable", "propagateMaybeChanged")
-  @js.native
-  def propagateMaybeChanged(observable: IObservable): Unit = js.native
+  @scala.inline
+  def propagateChanged(observable: IObservable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("propagateChanged")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/observable", "queueForUnobservation")
-  @js.native
-  def queueForUnobservation(observable: IObservable): Unit = js.native
+  @scala.inline
+  def propagateMaybeChanged(observable: IObservable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("propagateMaybeChanged")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/observable", "removeObserver")
-  @js.native
-  def removeObserver(observable: IObservable, node: IDerivation): Unit = js.native
+  @scala.inline
+  def queueForUnobservation(observable: IObservable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("queueForUnobservation")(observable.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/observable", "reportObserved")
-  @js.native
-  def reportObserved(observable: IObservable): Boolean = js.native
+  @scala.inline
+  def removeObserver(observable: IObservable, node: IDerivation): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeObserver")(observable.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("mobx/lib/core/observable", "startBatch")
-  @js.native
-  def startBatch(): Unit = js.native
+  @scala.inline
+  def reportObserved(observable: IObservable): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("reportObserved")(observable.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def startBatch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startBatch")().asInstanceOf[Unit]
+  
   trait IDepTreeNode extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var observing: js.UndefOr[js.Array[IObservable]] = js.native
+    var observing: js.UndefOr[js.Array[IObservable]] = js.undefined
   }
   object IDepTreeNode {
     
@@ -87,33 +78,34 @@ object coreObservableMod {
     }
   }
   
-  @js.native
-  trait IObservable extends IDepTreeNode {
+  trait IObservable
+    extends StObject
+       with IDepTreeNode {
     
-    var diffValue: Double = js.native
+    var diffValue: Double
     
-    var isBeingObserved: Boolean = js.native
+    var isBeingObserved: Boolean
     
-    var isPendingUnobservation: Boolean = js.native
+    var isPendingUnobservation: Boolean
     
     /**
       * Id of the derivation *run* that last accessed this observable.
       * If this id equals the *run* id of the current derivation,
       * the dependency is already established
       */
-    var lastAccessedBy: Double = js.native
+    var lastAccessedBy: Double
     
-    var lowestObserverState: IDerivationState = js.native
+    var lowestObserverState: IDerivationState
     
-    var observers: Set[IDerivation] = js.native
+    var observers: Set[IDerivation]
     
-    def onBecomeObserved(): Unit = js.native
+    def onBecomeObserved(): Unit
     
-    var onBecomeObservedListeners: js.UndefOr[Set[Lambda]] = js.native
+    var onBecomeObservedListeners: js.UndefOr[Set[Lambda]] = js.undefined
     
-    def onBecomeUnobserved(): Unit = js.native
+    def onBecomeUnobserved(): Unit
     
-    var onBecomeUnobservedListeners: js.UndefOr[Set[Lambda]] = js.native
+    var onBecomeUnobservedListeners: js.UndefOr[Set[Lambda]] = js.undefined
   }
   object IObservable {
     

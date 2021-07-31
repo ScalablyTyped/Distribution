@@ -4,7 +4,6 @@ import typings.grammarkdown.grammarkdownMod.SyntaxKind.ButKeyword
 import typings.grammarkdown.grammarkdownMod.SyntaxKind.NotKeyword
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "ButNotSymbol")
@@ -13,26 +12,11 @@ class ButNotSymbol protected ()
   extends LexicalSymbolBase[typings.grammarkdown.grammarkdownMod.SyntaxKind.ButNotSymbol] {
   def this(left: LexicalSymbol) = this()
   def this(left: LexicalSymbol, butKeyword: Token[ButKeyword]) = this()
-  def this(left: LexicalSymbol, butKeyword: js.UndefOr[scala.Nothing], notKeyword: Token[NotKeyword]) = this()
+  def this(left: LexicalSymbol, butKeyword: Unit, notKeyword: Token[NotKeyword]) = this()
   def this(left: LexicalSymbol, butKeyword: Token[ButKeyword], notKeyword: Token[NotKeyword]) = this()
-  def this(
-    left: LexicalSymbol,
-    butKeyword: js.UndefOr[scala.Nothing],
-    notKeyword: js.UndefOr[scala.Nothing],
-    right: LexicalSymbol
-  ) = this()
-  def this(
-    left: LexicalSymbol,
-    butKeyword: js.UndefOr[scala.Nothing],
-    notKeyword: Token[NotKeyword],
-    right: LexicalSymbol
-  ) = this()
-  def this(
-    left: LexicalSymbol,
-    butKeyword: Token[ButKeyword],
-    notKeyword: js.UndefOr[scala.Nothing],
-    right: LexicalSymbol
-  ) = this()
+  def this(left: LexicalSymbol, butKeyword: Unit, notKeyword: Unit, right: LexicalSymbol) = this()
+  def this(left: LexicalSymbol, butKeyword: Unit, notKeyword: Token[NotKeyword], right: LexicalSymbol) = this()
+  def this(left: LexicalSymbol, butKeyword: Token[ButKeyword], notKeyword: Unit, right: LexicalSymbol) = this()
   def this(
     left: LexicalSymbol,
     butKeyword: Token[ButKeyword],

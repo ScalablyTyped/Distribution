@@ -2,31 +2,29 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateConnectionInput extends StObject {
   
   /**
     * The name of the connection to be created. The name must be unique in the calling AWS account.
     */
-  var ConnectionName: typings.awsSdk.codestarconnectionsMod.ConnectionName = js.native
+  var ConnectionName: typings.awsSdk.codestarconnectionsMod.ConnectionName
   
   /**
     * The Amazon Resource Name (ARN) of the host associated with the connection to be created.
     */
-  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.native
+  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.undefined
   
   /**
     * The name of the external provider where your third-party code repository is configured. The valid provider type is Bitbucket.
     */
-  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.native
+  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.undefined
   
   /**
     * The key-value pair to use when tagging the resource.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateConnectionInput {
   

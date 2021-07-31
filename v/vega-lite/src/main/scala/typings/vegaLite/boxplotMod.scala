@@ -18,10 +18,13 @@ import typings.vegaLite.vegaLiteStrings.ticks
 import typings.vegaLite.vegaLiteStrings.tukey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxplotMod {
+  
+  @JSImport("vega-lite/build/src/compositemark/boxplot", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("vega-lite/build/src/compositemark/boxplot", "BOXPLOT")
   @js.native
@@ -35,22 +38,19 @@ object boxplotMod {
   @js.native
   val boxPlotNormalizer: CompositeMarkNormalizer[boxplot] = js.native
   
-  @JSImport("vega-lite/build/src/compositemark/boxplot", "getBoxPlotType")
-  @js.native
-  def getBoxPlotType(extent: Double): `min-max` | tukey = js.native
-  @JSImport("vega-lite/build/src/compositemark/boxplot", "getBoxPlotType")
-  @js.native
-  def getBoxPlotType_minmax(extent: `min-max`): `min-max` | tukey = js.native
+  @scala.inline
+  def getBoxPlotType(extent: Double): `min-max` | tukey = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxPlotType")(extent.asInstanceOf[js.Any]).asInstanceOf[`min-max` | tukey]
   
-  @JSImport("vega-lite/build/src/compositemark/boxplot", "normalizeBoxPlot")
-  @js.native
-  def normalizeBoxPlot(spec: GenericUnitSpec[Encoding[String], BoxPlot | BoxPlotDef], hasConfig: NormalizerParams): NormalizedLayerSpec = js.native
+  @scala.inline
+  def getBoxPlotType_minmax(extent: `min-max`): `min-max` | tukey = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoxPlotType")(extent.asInstanceOf[js.Any]).asInstanceOf[`min-max` | tukey]
+  
+  @scala.inline
+  def normalizeBoxPlot(spec: GenericUnitSpec[Encoding[String], BoxPlot | BoxPlotDef], hasConfig: NormalizerParams): NormalizedLayerSpec = (^.asInstanceOf[js.Dynamic].applyDynamic("normalizeBoxPlot")(spec.asInstanceOf[js.Any], hasConfig.asInstanceOf[js.Any])).asInstanceOf[NormalizedLayerSpec]
   
   type BoxPlot = boxplot
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>>[P]} */ @js.native
-  trait BoxPlotConfig extends StObject {
+  - Dropped {[ P in keyof std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>> ]:? std.Record<vega-lite.vega-lite/build/src/compositemark/boxplot.BoxPlotPart, boolean | vega-lite.vega-lite/build/src/mark.MarkConfig<vega-lite.vega-lite/build/src/expr.ExprOrSignalRef>>[P]} */ trait BoxPlotConfig extends StObject {
     
     /**
       * The extent of the whiskers. Available options include:
@@ -59,10 +59,10 @@ object boxplotMod {
       *
       * __Default value:__ `1.5`.
       */
-    var extent: js.UndefOr[`min-max` | Double] = js.native
+    var extent: js.UndefOr[`min-max` | Double] = js.undefined
     
     /** Size of the box and median tick of a box plot */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object BoxPlotConfig {
     
@@ -89,13 +89,12 @@ object boxplotMod {
     }
   }
   
-  @js.native
   trait BoxPlotConfigMixins extends StObject {
     
     /**
       * Box Config
       */
-    var boxplot: js.UndefOr[BoxPlotConfig] = js.native
+    var boxplot: js.UndefOr[BoxPlotConfig] = js.undefined
   }
   object BoxPlotConfigMixins {
     
@@ -116,7 +115,7 @@ object boxplotMod {
     }
   }
   
-  type BoxPlotDef = GenericCompositeMarkDef[BoxPlot] with BoxPlotConfig with Orient
+  type BoxPlotDef = GenericCompositeMarkDef[BoxPlot] & BoxPlotConfig & Orient
   
   /* Rewritten from type alias, can be one of: 
     - typings.vegaLite.vegaLiteStrings.box

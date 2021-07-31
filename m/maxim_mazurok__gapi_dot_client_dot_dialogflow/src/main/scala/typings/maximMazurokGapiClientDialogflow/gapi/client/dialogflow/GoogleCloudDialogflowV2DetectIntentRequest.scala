@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2DetectIntentRequest extends StObject {
   
   /**
     * The natural language speech audio to be processed. This field should be populated iff `query_input` is set to an input audio config. A single request can contain up to 1 minute of
     * speech audio data.
     */
-  var inputAudio: js.UndefOr[String] = js.native
+  var inputAudio: js.UndefOr[String] = js.undefined
   
   /** Instructs the speech synthesizer how to generate the output audio. If this field is not set and agent-level speech synthesizer is not configured, no output audio is generated. */
-  var outputAudioConfig: js.UndefOr[GoogleCloudDialogflowV2OutputAudioConfig] = js.native
+  var outputAudioConfig: js.UndefOr[GoogleCloudDialogflowV2OutputAudioConfig] = js.undefined
   
   /**
     * Mask for output_audio_config indicating which settings in this request-level config should override speech synthesizer settings defined at agent-level. If unspecified or empty,
     * output_audio_config replaces the agent-level config in its entirety.
     */
-  var outputAudioConfigMask: js.UndefOr[String] = js.native
+  var outputAudioConfigMask: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The input specification. It can be set to: 1. an audio config which instructs the speech recognizer how to process the speech audio, 2. a conversational query in the form
     * of text, or 3. an event that specifies which intent to trigger.
     */
-  var queryInput: js.UndefOr[GoogleCloudDialogflowV2QueryInput] = js.native
+  var queryInput: js.UndefOr[GoogleCloudDialogflowV2QueryInput] = js.undefined
   
   /** The parameters of this query. */
-  var queryParams: js.UndefOr[GoogleCloudDialogflowV2QueryParameters] = js.native
+  var queryParams: js.UndefOr[GoogleCloudDialogflowV2QueryParameters] = js.undefined
 }
 object GoogleCloudDialogflowV2DetectIntentRequest {
   

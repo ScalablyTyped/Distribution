@@ -69,7 +69,6 @@ import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestHandler
 import typings.vsoNodeApi.vsoBaseInterfacesMod.IRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testApiMod {
@@ -173,182 +172,9 @@ object testApiMod {
     def getPlanById(project: String, planId: Double): js.Promise[TestPlan] = js.native
     
     def getPlans(project: String): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean,
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(project: String, owner: js.UndefOr[scala.Nothing], skip: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      includePlanDetails: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      includePlanDetails: Boolean,
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(project: String, owner: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean,
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(project: String, owner: js.UndefOr[scala.Nothing], skip: Double, top: Double): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: Double,
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: Double,
-      includePlanDetails: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: Double,
-      includePlanDetails: Boolean,
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
     def getPlans(project: String, owner: String): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean,
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(project: String, owner: String, skip: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      includePlanDetails: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      includePlanDetails: Boolean,
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
     def getPlans(project: String, owner: String, skip: Double): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      includePlanDetails: Boolean,
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
     def getPlans(project: String, owner: String, skip: Double, top: Double): js.Promise[js.Array[TestPlan]] = js.native
-    def getPlans(
-      project: String,
-      owner: String,
-      skip: Double,
-      top: Double,
-      includePlanDetails: js.UndefOr[scala.Nothing],
-      filterActivePlans: Boolean
-    ): js.Promise[js.Array[TestPlan]] = js.native
     def getPlans(project: String, owner: String, skip: Double, top: Double, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
     def getPlans(
       project: String,
@@ -356,6 +182,137 @@ object testApiMod {
       skip: Double,
       top: Double,
       includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: String,
+      skip: Double,
+      top: Double,
+      includePlanDetails: Unit,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: String, skip: Double, top: Unit, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: String,
+      skip: Double,
+      top: Unit,
+      includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: String,
+      skip: Double,
+      top: Unit,
+      includePlanDetails: Unit,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: String, skip: Unit, top: Double): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: String, skip: Unit, top: Double, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: String,
+      skip: Unit,
+      top: Double,
+      includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: String,
+      skip: Unit,
+      top: Double,
+      includePlanDetails: Unit,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: String, skip: Unit, top: Unit, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: String,
+      skip: Unit,
+      top: Unit,
+      includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: String,
+      skip: Unit,
+      top: Unit,
+      includePlanDetails: Unit,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: Unit, skip: Double): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: Unit, skip: Double, top: Double): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: Unit, skip: Double, top: Double, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Double,
+      top: Double,
+      includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Double,
+      top: Double,
+      includePlanDetails: Unit,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: Unit, skip: Double, top: Unit, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Double,
+      top: Unit,
+      includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Double,
+      top: Unit,
+      includePlanDetails: Unit,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: Unit, skip: Unit, top: Double): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: Unit, skip: Unit, top: Double, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Unit,
+      top: Double,
+      includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Unit,
+      top: Double,
+      includePlanDetails: Unit,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(project: String, owner: Unit, skip: Unit, top: Unit, includePlanDetails: Boolean): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Unit,
+      top: Unit,
+      includePlanDetails: Boolean,
+      filterActivePlans: Boolean
+    ): js.Promise[js.Array[TestPlan]] = js.native
+    def getPlans(
+      project: String,
+      owner: Unit,
+      skip: Unit,
+      top: Unit,
+      includePlanDetails: Unit,
       filterActivePlans: Boolean
     ): js.Promise[js.Array[TestPlan]] = js.native
     
@@ -376,27 +333,27 @@ object testApiMod {
     ): js.Promise[js.Array[TestPoint]] = js.native
     
     def getPointsByQuery(query: TestPointsQuery, project: String): js.Promise[TestPointsQuery] = js.native
-    def getPointsByQuery(query: TestPointsQuery, project: String, skip: js.UndefOr[scala.Nothing], top: Double): js.Promise[TestPointsQuery] = js.native
     def getPointsByQuery(query: TestPointsQuery, project: String, skip: Double): js.Promise[TestPointsQuery] = js.native
     def getPointsByQuery(query: TestPointsQuery, project: String, skip: Double, top: Double): js.Promise[TestPointsQuery] = js.native
+    def getPointsByQuery(query: TestPointsQuery, project: String, skip: Unit, top: Double): js.Promise[TestPointsQuery] = js.native
     
     def getResultGroupsByBuild(project: String, buildId: Double, publishContext: String): js.Promise[TestResultsGroupsForBuild] = js.native
     def getResultGroupsByBuild(project: String, buildId: Double, publishContext: String, fields: js.Array[String]): js.Promise[TestResultsGroupsForBuild] = js.native
     
     def getResultGroupsByRelease(project: String, releaseId: Double, publishContext: String): js.Promise[TestResultsGroupsForRelease] = js.native
-    def getResultGroupsByRelease(
-      project: String,
-      releaseId: Double,
-      publishContext: String,
-      releaseEnvId: js.UndefOr[scala.Nothing],
-      fields: js.Array[String]
-    ): js.Promise[TestResultsGroupsForRelease] = js.native
     def getResultGroupsByRelease(project: String, releaseId: Double, publishContext: String, releaseEnvId: Double): js.Promise[TestResultsGroupsForRelease] = js.native
     def getResultGroupsByRelease(
       project: String,
       releaseId: Double,
       publishContext: String,
       releaseEnvId: Double,
+      fields: js.Array[String]
+    ): js.Promise[TestResultsGroupsForRelease] = js.native
+    def getResultGroupsByRelease(
+      project: String,
+      releaseId: Double,
+      publishContext: String,
+      releaseEnvId: Unit,
       fields: js.Array[String]
     ): js.Promise[TestResultsGroupsForRelease] = js.native
     
@@ -416,66 +373,8 @@ object testApiMod {
     def getTestConfigurationById(project: String, testConfigurationId: Double): js.Promise[TestConfiguration] = js.native
     
     def getTestConfigurations(project: String): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      continuationToken: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      continuationToken: String
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      continuationToken: String,
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(project: String, skip: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      continuationToken: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(project: String, skip: js.UndefOr[scala.Nothing], top: Double, continuationToken: String): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      continuationToken: String,
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
     def getTestConfigurations(project: String, skip: Double): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      continuationToken: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(project: String, skip: Double, top: js.UndefOr[scala.Nothing], continuationToken: String): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      continuationToken: String,
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
     def getTestConfigurations(project: String, skip: Double, top: Double): js.Promise[js.Array[TestConfiguration]] = js.native
-    def getTestConfigurations(
-      project: String,
-      skip: Double,
-      top: Double,
-      continuationToken: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestConfiguration]] = js.native
     def getTestConfigurations(project: String, skip: Double, top: Double, continuationToken: String): js.Promise[js.Array[TestConfiguration]] = js.native
     def getTestConfigurations(
       project: String,
@@ -484,6 +383,17 @@ object testApiMod {
       continuationToken: String,
       includeAllProperties: Boolean
     ): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Double, top: Double, continuationToken: Unit, includeAllProperties: Boolean): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Double, top: Unit, continuationToken: String): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Double, top: Unit, continuationToken: String, includeAllProperties: Boolean): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Double, top: Unit, continuationToken: Unit, includeAllProperties: Boolean): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Unit, top: Double): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Unit, top: Double, continuationToken: String): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Unit, top: Double, continuationToken: String, includeAllProperties: Boolean): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Unit, top: Double, continuationToken: Unit, includeAllProperties: Boolean): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Unit, top: Unit, continuationToken: String): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Unit, top: Unit, continuationToken: String, includeAllProperties: Boolean): js.Promise[js.Array[TestConfiguration]] = js.native
+    def getTestConfigurations(project: String, skip: Unit, top: Unit, continuationToken: Unit, includeAllProperties: Boolean): js.Promise[js.Array[TestConfiguration]] = js.native
     
     def getTestIteration(project: String, runId: Double, testCaseResultId: Double, iterationId: Double): js.Promise[TestIterationDetailsModel] = js.native
     def getTestIteration(
@@ -507,86 +417,8 @@ object testApiMod {
     def getTestResultById(project: String, runId: Double, testCaseResultId: Double, detailsToInclude: ResultDetails): js.Promise[TestCaseResult] = js.native
     
     def getTestResultDetailsForBuild(project: String, buildId: Double): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String,
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: js.UndefOr[scala.Nothing], groupBy: String): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: String,
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: String,
-      filter: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: String,
-      filter: String,
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: String): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: String,
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: String,
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: String,
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String,
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: String, groupBy: String): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: String,
-      groupBy: String,
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: String, groupBy: String, filter: String): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForBuild(
       project: String,
@@ -596,94 +428,69 @@ object testApiMod {
       filter: String,
       orderby: String
     ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: String,
+      groupBy: String,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: String, groupBy: Unit, filter: String): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: String,
+      groupBy: Unit,
+      filter: String,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: String,
+      groupBy: Unit,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: Unit, groupBy: String): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: Unit, groupBy: String, filter: String): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: Unit,
+      groupBy: String,
+      filter: String,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: Unit,
+      groupBy: String,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(project: String, buildId: Double, publishContext: Unit, groupBy: Unit, filter: String): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: Unit,
+      groupBy: Unit,
+      filter: String,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: Unit,
+      groupBy: Unit,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
     
     def getTestResultDetailsForRelease(project: String, releaseId: Double, releaseEnvId: Double): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String,
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: String,
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: String,
-      filter: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      groupBy: String,
-      filter: String,
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForRelease(project: String, releaseId: Double, releaseEnvId: Double, publishContext: String): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: String,
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: String,
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: String,
-      groupBy: js.UndefOr[scala.Nothing],
-      filter: String,
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForRelease(project: String, releaseId: Double, releaseEnvId: Double, publishContext: String, groupBy: String): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForRelease(
       project: String,
@@ -691,15 +498,6 @@ object testApiMod {
       releaseEnvId: Double,
       publishContext: String,
       groupBy: String,
-      filter: js.UndefOr[scala.Nothing],
-      orderby: String
-    ): js.Promise[TestResultsDetails] = js.native
-    def getTestResultDetailsForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: String,
-      groupBy: String,
       filter: String
     ): js.Promise[TestResultsDetails] = js.native
     def getTestResultDetailsForRelease(
@@ -711,88 +509,133 @@ object testApiMod {
       filter: String,
       orderby: String
     ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: String,
+      groupBy: String,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: String,
+      groupBy: Unit,
+      filter: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: String,
+      groupBy: Unit,
+      filter: String,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: String,
+      groupBy: Unit,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(project: String, releaseId: Double, releaseEnvId: Double, publishContext: Unit, groupBy: String): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      groupBy: String,
+      filter: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      groupBy: String,
+      filter: String,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      groupBy: String,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      groupBy: Unit,
+      filter: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      groupBy: Unit,
+      filter: String,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
+    def getTestResultDetailsForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      groupBy: Unit,
+      filter: Unit,
+      orderby: String
+    ): js.Promise[TestResultsDetails] = js.native
     
     def getTestResults(project: String, runId: Double): js.Promise[js.Array[TestCaseResult]] = js.native
+    def getTestResults(project: String, runId: Double, detailsToInclude: Unit, skip: Double): js.Promise[js.Array[TestCaseResult]] = js.native
+    def getTestResults(project: String, runId: Double, detailsToInclude: Unit, skip: Double, top: Double): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(
       project: String,
       runId: Double,
-      detailsToInclude: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
+      detailsToInclude: Unit,
+      skip: Double,
+      top: Double,
       outcomes: js.Array[TestOutcome]
     ): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(
       project: String,
       runId: Double,
-      detailsToInclude: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: Double
+      detailsToInclude: Unit,
+      skip: Double,
+      top: Unit,
+      outcomes: js.Array[TestOutcome]
     ): js.Promise[js.Array[TestCaseResult]] = js.native
+    def getTestResults(project: String, runId: Double, detailsToInclude: Unit, skip: Unit, top: Double): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(
       project: String,
       runId: Double,
-      detailsToInclude: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
+      detailsToInclude: Unit,
+      skip: Unit,
       top: Double,
       outcomes: js.Array[TestOutcome]
     ): js.Promise[js.Array[TestCaseResult]] = js.native
-    def getTestResults(project: String, runId: Double, detailsToInclude: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(
       project: String,
       runId: Double,
-      detailsToInclude: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      outcomes: js.Array[TestOutcome]
-    ): js.Promise[js.Array[TestCaseResult]] = js.native
-    def getTestResults(
-      project: String,
-      runId: Double,
-      detailsToInclude: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: Double
-    ): js.Promise[js.Array[TestCaseResult]] = js.native
-    def getTestResults(
-      project: String,
-      runId: Double,
-      detailsToInclude: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: Double,
+      detailsToInclude: Unit,
+      skip: Unit,
+      top: Unit,
       outcomes: js.Array[TestOutcome]
     ): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(project: String, runId: Double, detailsToInclude: ResultDetails): js.Promise[js.Array[TestCaseResult]] = js.native
-    def getTestResults(
-      project: String,
-      runId: Double,
-      detailsToInclude: ResultDetails,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      outcomes: js.Array[TestOutcome]
-    ): js.Promise[js.Array[TestCaseResult]] = js.native
-    def getTestResults(
-      project: String,
-      runId: Double,
-      detailsToInclude: ResultDetails,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double
-    ): js.Promise[js.Array[TestCaseResult]] = js.native
-    def getTestResults(
-      project: String,
-      runId: Double,
-      detailsToInclude: ResultDetails,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      outcomes: js.Array[TestOutcome]
-    ): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(project: String, runId: Double, detailsToInclude: ResultDetails, skip: Double): js.Promise[js.Array[TestCaseResult]] = js.native
-    def getTestResults(
-      project: String,
-      runId: Double,
-      detailsToInclude: ResultDetails,
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      outcomes: js.Array[TestOutcome]
-    ): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(project: String, runId: Double, detailsToInclude: ResultDetails, skip: Double, top: Double): js.Promise[js.Array[TestCaseResult]] = js.native
     def getTestResults(
       project: String,
@@ -800,6 +643,31 @@ object testApiMod {
       detailsToInclude: ResultDetails,
       skip: Double,
       top: Double,
+      outcomes: js.Array[TestOutcome]
+    ): js.Promise[js.Array[TestCaseResult]] = js.native
+    def getTestResults(
+      project: String,
+      runId: Double,
+      detailsToInclude: ResultDetails,
+      skip: Double,
+      top: Unit,
+      outcomes: js.Array[TestOutcome]
+    ): js.Promise[js.Array[TestCaseResult]] = js.native
+    def getTestResults(project: String, runId: Double, detailsToInclude: ResultDetails, skip: Unit, top: Double): js.Promise[js.Array[TestCaseResult]] = js.native
+    def getTestResults(
+      project: String,
+      runId: Double,
+      detailsToInclude: ResultDetails,
+      skip: Unit,
+      top: Double,
+      outcomes: js.Array[TestOutcome]
+    ): js.Promise[js.Array[TestCaseResult]] = js.native
+    def getTestResults(
+      project: String,
+      runId: Double,
+      detailsToInclude: ResultDetails,
+      skip: Unit,
+      top: Unit,
       outcomes: js.Array[TestOutcome]
     ): js.Promise[js.Array[TestCaseResult]] = js.native
     
@@ -832,195 +700,15 @@ object testApiMod {
     ): js.Promise[js.Array[TestRun]] = js.native
     
     def getTestSessions(teamContext: TeamContext): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: js.UndefOr[scala.Nothing],
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource,
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean,
-      source: js.UndefOr[scala.Nothing],
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean,
-      source: TestSessionSource
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean,
-      source: TestSessionSource,
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(teamContext: TeamContext, period: js.UndefOr[scala.Nothing], allSessions: Boolean): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: Boolean,
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: js.UndefOr[scala.Nothing],
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: Boolean,
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: Boolean,
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource,
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: Boolean,
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: Boolean,
-      includeAllProperties: Boolean,
-      source: js.UndefOr[scala.Nothing],
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: Boolean,
-      includeAllProperties: Boolean,
-      source: TestSessionSource
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: js.UndefOr[scala.Nothing],
-      allSessions: Boolean,
-      includeAllProperties: Boolean,
-      source: TestSessionSource,
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
     def getTestSessions(teamContext: TeamContext, period: Double): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: js.UndefOr[scala.Nothing],
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource,
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean,
-      source: js.UndefOr[scala.Nothing],
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean,
-      source: TestSessionSource
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: js.UndefOr[scala.Nothing],
-      includeAllProperties: Boolean,
-      source: TestSessionSource,
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
     def getTestSessions(teamContext: TeamContext, period: Double, allSessions: Boolean): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: Boolean,
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: js.UndefOr[scala.Nothing],
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: Boolean,
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource
-    ): js.Promise[js.Array[TestSession]] = js.native
-    def getTestSessions(
-      teamContext: TeamContext,
-      period: Double,
-      allSessions: Boolean,
-      includeAllProperties: js.UndefOr[scala.Nothing],
-      source: TestSessionSource,
-      includeOnlyCompletedSessions: Boolean
-    ): js.Promise[js.Array[TestSession]] = js.native
     def getTestSessions(teamContext: TeamContext, period: Double, allSessions: Boolean, includeAllProperties: Boolean): js.Promise[js.Array[TestSession]] = js.native
     def getTestSessions(
       teamContext: TeamContext,
       period: Double,
       allSessions: Boolean,
       includeAllProperties: Boolean,
-      source: js.UndefOr[scala.Nothing],
+      source: Unit,
       includeOnlyCompletedSessions: Boolean
     ): js.Promise[js.Array[TestSession]] = js.native
     def getTestSessions(
@@ -1035,6 +723,171 @@ object testApiMod {
       period: Double,
       allSessions: Boolean,
       includeAllProperties: Boolean,
+      source: TestSessionSource,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Boolean,
+      includeAllProperties: Unit,
+      source: Unit,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Boolean,
+      includeAllProperties: Unit,
+      source: TestSessionSource
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Boolean,
+      includeAllProperties: Unit,
+      source: TestSessionSource,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(teamContext: TeamContext, period: Double, allSessions: Unit, includeAllProperties: Boolean): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Unit,
+      includeAllProperties: Boolean,
+      source: Unit,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Unit,
+      includeAllProperties: Boolean,
+      source: TestSessionSource
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Unit,
+      includeAllProperties: Boolean,
+      source: TestSessionSource,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Unit,
+      includeAllProperties: Unit,
+      source: Unit,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Unit,
+      includeAllProperties: Unit,
+      source: TestSessionSource
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Double,
+      allSessions: Unit,
+      includeAllProperties: Unit,
+      source: TestSessionSource,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(teamContext: TeamContext, period: Unit, allSessions: Boolean): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(teamContext: TeamContext, period: Unit, allSessions: Boolean, includeAllProperties: Boolean): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Boolean,
+      includeAllProperties: Boolean,
+      source: Unit,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Boolean,
+      includeAllProperties: Boolean,
+      source: TestSessionSource
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Boolean,
+      includeAllProperties: Boolean,
+      source: TestSessionSource,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Boolean,
+      includeAllProperties: Unit,
+      source: Unit,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Boolean,
+      includeAllProperties: Unit,
+      source: TestSessionSource
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Boolean,
+      includeAllProperties: Unit,
+      source: TestSessionSource,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(teamContext: TeamContext, period: Unit, allSessions: Unit, includeAllProperties: Boolean): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Unit,
+      includeAllProperties: Boolean,
+      source: Unit,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Unit,
+      includeAllProperties: Boolean,
+      source: TestSessionSource
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Unit,
+      includeAllProperties: Boolean,
+      source: TestSessionSource,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Unit,
+      includeAllProperties: Unit,
+      source: Unit,
+      includeOnlyCompletedSessions: Boolean
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Unit,
+      includeAllProperties: Unit,
+      source: TestSessionSource
+    ): js.Promise[js.Array[TestSession]] = js.native
+    def getTestSessions(
+      teamContext: TeamContext,
+      period: Unit,
+      allSessions: Unit,
+      includeAllProperties: Unit,
       source: TestSessionSource,
       includeOnlyCompletedSessions: Boolean
     ): js.Promise[js.Array[TestSession]] = js.native
@@ -1045,86 +898,8 @@ object testApiMod {
     def getTestSuiteById(project: String, planId: Double, suiteId: Double, includeChildSuites: Boolean): js.Promise[TestSuite] = js.native
     
     def getTestSuitesForPlan(project: String, planId: Double): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      asTreeView: Boolean
-    ): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: Double
-    ): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: js.UndefOr[scala.Nothing],
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      asTreeView: Boolean
-    ): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: js.UndefOr[scala.Nothing], skip: Double): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      asTreeView: Boolean
-    ): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: Double
-    ): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: js.UndefOr[scala.Nothing],
-      skip: Double,
-      top: Double,
-      asTreeView: Boolean
-    ): js.Promise[js.Array[TestSuite]] = js.native
     def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Boolean): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: Boolean,
-      skip: js.UndefOr[scala.Nothing],
-      top: js.UndefOr[scala.Nothing],
-      asTreeView: Boolean
-    ): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: Boolean,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double
-    ): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: Boolean,
-      skip: js.UndefOr[scala.Nothing],
-      top: Double,
-      asTreeView: Boolean
-    ): js.Promise[js.Array[TestSuite]] = js.native
     def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Boolean, skip: Double): js.Promise[js.Array[TestSuite]] = js.native
-    def getTestSuitesForPlan(
-      project: String,
-      planId: Double,
-      includeSuites: Boolean,
-      skip: Double,
-      top: js.UndefOr[scala.Nothing],
-      asTreeView: Boolean
-    ): js.Promise[js.Array[TestSuite]] = js.native
     def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Boolean, skip: Double, top: Double): js.Promise[js.Array[TestSuite]] = js.native
     def getTestSuitesForPlan(
       project: String,
@@ -1134,13 +909,52 @@ object testApiMod {
       top: Double,
       asTreeView: Boolean
     ): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(
+      project: String,
+      planId: Double,
+      includeSuites: Boolean,
+      skip: Double,
+      top: Unit,
+      asTreeView: Boolean
+    ): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Boolean, skip: Unit, top: Double): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(
+      project: String,
+      planId: Double,
+      includeSuites: Boolean,
+      skip: Unit,
+      top: Double,
+      asTreeView: Boolean
+    ): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(
+      project: String,
+      planId: Double,
+      includeSuites: Boolean,
+      skip: Unit,
+      top: Unit,
+      asTreeView: Boolean
+    ): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Unit, skip: Double): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Unit, skip: Double, top: Double): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(
+      project: String,
+      planId: Double,
+      includeSuites: Unit,
+      skip: Double,
+      top: Double,
+      asTreeView: Boolean
+    ): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Unit, skip: Double, top: Unit, asTreeView: Boolean): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Unit, skip: Unit, top: Double): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Unit, skip: Unit, top: Double, asTreeView: Boolean): js.Promise[js.Array[TestSuite]] = js.native
+    def getTestSuitesForPlan(project: String, planId: Double, includeSuites: Unit, skip: Unit, top: Unit, asTreeView: Boolean): js.Promise[js.Array[TestSuite]] = js.native
     
     def getTestVariableById(project: String, testVariableId: Double): js.Promise[TestVariable] = js.native
     
     def getTestVariables(project: String): js.Promise[js.Array[TestVariable]] = js.native
-    def getTestVariables(project: String, skip: js.UndefOr[scala.Nothing], top: Double): js.Promise[js.Array[TestVariable]] = js.native
     def getTestVariables(project: String, skip: Double): js.Promise[js.Array[TestVariable]] = js.native
     def getTestVariables(project: String, skip: Double, top: Double): js.Promise[js.Array[TestVariable]] = js.native
+    def getTestVariables(project: String, skip: Unit, top: Double): js.Promise[js.Array[TestVariable]] = js.native
     
     def publishTestResultDocument(document: TestResultDocument, project: String, runId: Double): js.Promise[TestResultDocument] = js.native
     
@@ -1155,206 +969,14 @@ object testApiMod {
     def queryTestResultHistory(filter: ResultsFilter, project: String): js.Promise[TestResultHistory] = js.native
     
     def queryTestResultWorkItems(project: String, workItemCategory: String): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date,
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date,
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date,
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double,
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double,
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double,
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double,
-      maxCompleteDate: Date
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double,
-      maxCompleteDate: Date,
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double,
-      maxCompleteDate: Date,
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: js.UndefOr[scala.Nothing],
-      testCaseId: Double,
-      maxCompleteDate: Date,
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(project: String, workItemCategory: String, automatedTestName: String): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date,
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date,
-      days: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: js.UndefOr[scala.Nothing],
-      maxCompleteDate: Date,
-      days: Double,
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(project: String, workItemCategory: String, automatedTestName: String, testCaseId: Double): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
       project: String,
       workItemCategory: String,
       automatedTestName: String,
       testCaseId: Double,
-      maxCompleteDate: js.UndefOr[scala.Nothing],
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: Double,
-      maxCompleteDate: js.UndefOr[scala.Nothing],
+      maxCompleteDate: Unit,
       days: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
@@ -1362,8 +984,17 @@ object testApiMod {
       workItemCategory: String,
       automatedTestName: String,
       testCaseId: Double,
-      maxCompleteDate: js.UndefOr[scala.Nothing],
+      maxCompleteDate: Unit,
       days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Double,
+      maxCompleteDate: Unit,
+      days: Unit,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
@@ -1379,15 +1010,6 @@ object testApiMod {
       automatedTestName: String,
       testCaseId: Double,
       maxCompleteDate: Date,
-      days: js.UndefOr[scala.Nothing],
-      workItemCount: Double
-    ): js.Promise[js.Array[WorkItemReference]] = js.native
-    def queryTestResultWorkItems(
-      project: String,
-      workItemCategory: String,
-      automatedTestName: String,
-      testCaseId: Double,
-      maxCompleteDate: Date,
       days: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
     def queryTestResultWorkItems(
@@ -1399,36 +1021,196 @@ object testApiMod {
       days: Double,
       workItemCount: Double
     ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Double,
+      maxCompleteDate: Date,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Unit,
+      maxCompleteDate: Unit,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Unit,
+      maxCompleteDate: Unit,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Unit,
+      maxCompleteDate: Unit,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Unit,
+      maxCompleteDate: Date
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Unit,
+      maxCompleteDate: Date,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Unit,
+      maxCompleteDate: Date,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: String,
+      testCaseId: Unit,
+      maxCompleteDate: Date,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(project: String, workItemCategory: String, automatedTestName: Unit, testCaseId: Double): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: Unit,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: Unit,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: Unit,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: Date
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: Date,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: Date,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Double,
+      maxCompleteDate: Date,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Unit,
+      maxCompleteDate: Unit,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Unit,
+      maxCompleteDate: Unit,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Unit,
+      maxCompleteDate: Unit,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Unit,
+      maxCompleteDate: Date
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Unit,
+      maxCompleteDate: Date,
+      days: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Unit,
+      maxCompleteDate: Date,
+      days: Double,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
+    def queryTestResultWorkItems(
+      project: String,
+      workItemCategory: String,
+      automatedTestName: Unit,
+      testCaseId: Unit,
+      maxCompleteDate: Date,
+      days: Unit,
+      workItemCount: Double
+    ): js.Promise[js.Array[WorkItemReference]] = js.native
     
     def queryTestResultsReportForBuild(project: String, buildId: Double): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      includeFailureDetails: js.UndefOr[scala.Nothing],
-      buildToCompare: BuildReference
-    ): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      includeFailureDetails: Boolean
-    ): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      includeFailureDetails: Boolean,
-      buildToCompare: BuildReference
-    ): js.Promise[TestResultSummary] = js.native
     def queryTestResultsReportForBuild(project: String, buildId: Double, publishContext: String): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForBuild(
-      project: String,
-      buildId: Double,
-      publishContext: String,
-      includeFailureDetails: js.UndefOr[scala.Nothing],
-      buildToCompare: BuildReference
-    ): js.Promise[TestResultSummary] = js.native
     def queryTestResultsReportForBuild(project: String, buildId: Double, publishContext: String, includeFailureDetails: Boolean): js.Promise[TestResultSummary] = js.native
     def queryTestResultsReportForBuild(
       project: String,
@@ -1437,45 +1219,36 @@ object testApiMod {
       includeFailureDetails: Boolean,
       buildToCompare: BuildReference
     ): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: String,
+      includeFailureDetails: Unit,
+      buildToCompare: BuildReference
+    ): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForBuild(project: String, buildId: Double, publishContext: Unit, includeFailureDetails: Boolean): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: Unit,
+      includeFailureDetails: Boolean,
+      buildToCompare: BuildReference
+    ): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForBuild(
+      project: String,
+      buildId: Double,
+      publishContext: Unit,
+      includeFailureDetails: Unit,
+      buildToCompare: BuildReference
+    ): js.Promise[TestResultSummary] = js.native
     
     def queryTestResultsReportForRelease(project: String, releaseId: Double, releaseEnvId: Double): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      includeFailureDetails: js.UndefOr[scala.Nothing],
-      releaseToCompare: ReleaseReference
-    ): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      includeFailureDetails: Boolean
-    ): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: js.UndefOr[scala.Nothing],
-      includeFailureDetails: Boolean,
-      releaseToCompare: ReleaseReference
-    ): js.Promise[TestResultSummary] = js.native
     def queryTestResultsReportForRelease(project: String, releaseId: Double, releaseEnvId: Double, publishContext: String): js.Promise[TestResultSummary] = js.native
     def queryTestResultsReportForRelease(
       project: String,
       releaseId: Double,
       releaseEnvId: Double,
       publishContext: String,
-      includeFailureDetails: js.UndefOr[scala.Nothing],
-      releaseToCompare: ReleaseReference
-    ): js.Promise[TestResultSummary] = js.native
-    def queryTestResultsReportForRelease(
-      project: String,
-      releaseId: Double,
-      releaseEnvId: Double,
-      publishContext: String,
       includeFailureDetails: Boolean
     ): js.Promise[TestResultSummary] = js.native
     def queryTestResultsReportForRelease(
@@ -1484,6 +1257,37 @@ object testApiMod {
       releaseEnvId: Double,
       publishContext: String,
       includeFailureDetails: Boolean,
+      releaseToCompare: ReleaseReference
+    ): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: String,
+      includeFailureDetails: Unit,
+      releaseToCompare: ReleaseReference
+    ): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      includeFailureDetails: Boolean
+    ): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      includeFailureDetails: Boolean,
+      releaseToCompare: ReleaseReference
+    ): js.Promise[TestResultSummary] = js.native
+    def queryTestResultsReportForRelease(
+      project: String,
+      releaseId: Double,
+      releaseEnvId: Double,
+      publishContext: Unit,
+      includeFailureDetails: Unit,
       releaseToCompare: ReleaseReference
     ): js.Promise[TestResultSummary] = js.native
     

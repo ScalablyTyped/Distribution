@@ -3,120 +3,118 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 import typings.maximMazurokGapiClientSqladmin.anon.Available
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatabaseInstance extends StObject {
   
   /**
     * *SECOND_GEN*: Cloud SQL database instance. *EXTERNAL*: A database server that is not managed by Google. This property is read-only; use the *tier* property in the *settings* object
     * to determine the database type.
     */
-  var backendType: js.UndefOr[String] = js.native
+  var backendType: js.UndefOr[String] = js.undefined
   
   /** Connection name of the Cloud SQL instance used in connection strings. */
-  var connectionName: js.UndefOr[String] = js.native
+  var connectionName: js.UndefOr[String] = js.undefined
   
   /**
     * The current disk usage of the instance in bytes. This property has been deprecated. Use the "cloudsql.googleapis.com/database/disk/bytes_used" metric in Cloud Monitoring API
     * instead. Please see this announcement for details.
     */
-  var currentDiskSize: js.UndefOr[String] = js.native
+  var currentDiskSize: js.UndefOr[String] = js.undefined
   
   /**
     * The database engine type and version. The *databaseVersion* field cannot be changed after instance creation. MySQL instances: *MYSQL_8_0*, *MYSQL_5_7* (default), or *MYSQL_5_6*.
     * PostgreSQL instances: *POSTGRES_9_6*, *POSTGRES_10*, *POSTGRES_11* or *POSTGRES_12* (default). SQL Server instances: *SQLSERVER_2017_STANDARD* (default),
     * *SQLSERVER_2017_ENTERPRISE*, *SQLSERVER_2017_EXPRESS*, or *SQLSERVER_2017_WEB*.
     */
-  var databaseVersion: js.UndefOr[String] = js.native
+  var databaseVersion: js.UndefOr[String] = js.undefined
   
   /** Disk encryption configuration specific to an instance. Applies only to Second Generation instances. */
-  var diskEncryptionConfiguration: js.UndefOr[DiskEncryptionConfiguration] = js.native
+  var diskEncryptionConfiguration: js.UndefOr[DiskEncryptionConfiguration] = js.undefined
   
   /** Disk encryption status specific to an instance. Applies only to Second Generation instances. */
-  var diskEncryptionStatus: js.UndefOr[DiskEncryptionStatus] = js.native
+  var diskEncryptionStatus: js.UndefOr[DiskEncryptionStatus] = js.undefined
   
   /** This field is deprecated and will be removed from a future version of the API. Use the *settings.settingsVersion* field instead. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** The name and status of the failover replica. This property is applicable only to Second Generation instances. */
-  var failoverReplica: js.UndefOr[Available] = js.native
+  var failoverReplica: js.UndefOr[Available] = js.undefined
   
   /**
     * The Compute Engine zone that the instance is currently serving from. This value could be different from the zone that was specified when the instance was created if the instance has
     * failed over to its secondary zone.
     */
-  var gceZone: js.UndefOr[String] = js.native
+  var gceZone: js.UndefOr[String] = js.undefined
   
   /**
     * The instance type. This can be one of the following. *CLOUD_SQL_INSTANCE*: A Cloud SQL instance that is not replicating from a primary instance. *ON_PREMISES_INSTANCE*: An instance
     * running on the customer's premises. *READ_REPLICA_INSTANCE*: A Cloud SQL instance configured as a read-replica.
     */
-  var instanceType: js.UndefOr[String] = js.native
+  var instanceType: js.UndefOr[String] = js.undefined
   
   /** The assigned IP addresses for the instance. */
-  var ipAddresses: js.UndefOr[js.Array[IpMapping]] = js.native
+  var ipAddresses: js.UndefOr[js.Array[IpMapping]] = js.undefined
   
   /** The IPv6 address assigned to the instance. (Deprecated) This property was applicable only to First Generation instances. */
-  var ipv6Address: js.UndefOr[String] = js.native
+  var ipv6Address: js.UndefOr[String] = js.undefined
   
   /** This is always *sql#instance*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The name of the instance which will act as primary in the replication setup. */
-  var masterInstanceName: js.UndefOr[String] = js.native
+  var masterInstanceName: js.UndefOr[String] = js.undefined
   
   /** The maximum disk size of the instance in bytes. */
-  var maxDiskSize: js.UndefOr[String] = js.native
+  var maxDiskSize: js.UndefOr[String] = js.undefined
   
   /** Name of the Cloud SQL instance. This does not include the project ID. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Configuration specific to on-premises instances. */
-  var onPremisesConfiguration: js.UndefOr[OnPremisesConfiguration] = js.native
+  var onPremisesConfiguration: js.UndefOr[OnPremisesConfiguration] = js.undefined
   
   /** The project ID of the project containing the Cloud SQL instance. The Google apps domain is prefixed if applicable. */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * The geographical region. Can be *us-central* (*FIRST_GEN* instances only) *us-central1* (*SECOND_GEN* instances only) *asia-east1* or *europe-west1*. Defaults to *us-central* or
     * *us-central1* depending on the instance type. The region cannot be changed after instance creation.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /** Configuration specific to failover replicas and read replicas. */
-  var replicaConfiguration: js.UndefOr[ReplicaConfiguration] = js.native
+  var replicaConfiguration: js.UndefOr[ReplicaConfiguration] = js.undefined
   
   /** The replicas of the instance. */
-  var replicaNames: js.UndefOr[js.Array[String]] = js.native
+  var replicaNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Initial root password. Use only on creation. */
-  var rootPassword: js.UndefOr[String] = js.native
+  var rootPassword: js.UndefOr[String] = js.undefined
   
   /** The status indicating if instance satisfies physical zone separation. Reserved for future use. */
-  var satisfiesPzs: js.UndefOr[Boolean] = js.native
+  var satisfiesPzs: js.UndefOr[Boolean] = js.undefined
   
   /** The start time of any upcoming scheduled maintenance for this instance. */
-  var scheduledMaintenance: js.UndefOr[SqlScheduledMaintenance] = js.native
+  var scheduledMaintenance: js.UndefOr[SqlScheduledMaintenance] = js.undefined
   
   /**
     * The Compute Engine zone that the failover instance is currently serving from for a regional instance. This value could be different from the zone that was specified when the
     * instance was created if the instance has failed over to its secondary/failover zone. Reserved for future use.
     */
-  var secondaryGceZone: js.UndefOr[String] = js.native
+  var secondaryGceZone: js.UndefOr[String] = js.undefined
   
   /** The URI of this resource. */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /** SSL configuration. */
-  var serverCaCert: js.UndefOr[SslCert] = js.native
+  var serverCaCert: js.UndefOr[SslCert] = js.undefined
   
   /** The service account email address assigned to the instance. This property is applicable only to Second Generation instances. */
-  var serviceAccountEmailAddress: js.UndefOr[String] = js.native
+  var serviceAccountEmailAddress: js.UndefOr[String] = js.undefined
   
   /** The user settings. */
-  var settings: js.UndefOr[Settings] = js.native
+  var settings: js.UndefOr[Settings] = js.undefined
   
   /**
     * The current serving state of the Cloud SQL instance. This can be one of the following. *SQL_INSTANCE_STATE_UNSPECIFIED*: The state of the instance is unknown. *RUNNABLE*: The
@@ -124,10 +122,10 @@ trait DatabaseInstance extends StObject {
     * billing. for example due to problems with billing. *PENDING_DELETE*: The instance is being deleted. *PENDING_CREATE*: The instance is being created. *MAINTENANCE*: The instance is
     * down for maintenance. *FAILED*: The instance creation failed.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** If the instance state is SUSPENDED, the reason for the suspension. */
-  var suspensionReason: js.UndefOr[js.Array[String]] = js.native
+  var suspensionReason: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DatabaseInstance {
   

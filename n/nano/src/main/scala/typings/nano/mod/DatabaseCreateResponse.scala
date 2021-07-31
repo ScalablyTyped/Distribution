@@ -2,24 +2,22 @@ package typings.nano.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -------------------------------------
 // Database scope request and response
 // -------------------------------------
 // http://docs.couchdb.org/en/latest/api/database/common.html#put--db
-@js.native
 trait DatabaseCreateResponse extends StObject {
   
   // Error type. Available if response code is 4xx
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   // Operation status. Available in case of success
-  var ok: js.UndefOr[Boolean] = js.native
+  var ok: js.UndefOr[Boolean] = js.undefined
   
   // Error description. Available if response code is 4xx
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
 }
 object DatabaseCreateResponse {
   

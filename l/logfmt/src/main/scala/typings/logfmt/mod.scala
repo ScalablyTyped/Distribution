@@ -12,7 +12,6 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,10 +19,12 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("logfmt", JSImport.Namespace)
   @js.native
-  class ^ () extends Logfmt
+  class ^ ()
+    extends StObject
+       with Logfmt
   @JSImport("logfmt", JSImport.Namespace)
   @js.native
-  val ^ : LogfmtStatic = js.native
+  val ^ : js.Object & LogfmtStatic = js.native
   
   type HTTPHandler = js.Function3[
     /* req */ IncomingMessage, 
@@ -45,9 +46,9 @@ object mod extends Shortcut {
     def error(err: Error, id: String): Unit = js.native
     
     def log(): Unit = js.native
-    def log(data: js.UndefOr[scala.Nothing], stream: WritableStream): Unit = js.native
     def log(data: js.Object): Unit = js.native
     def log(data: js.Object, stream: WritableStream): Unit = js.native
+    def log(data: Unit, stream: WritableStream): Unit = js.native
     
     var maxErrorLines: Double = js.native
     
@@ -57,7 +58,7 @@ object mod extends Shortcut {
     
     def requestLogger(): HTTPHandler = js.native
     def requestLogger(formatter: RequestLoggerFormatter): HTTPHandler = js.native
-    def requestLogger(options: js.UndefOr[scala.Nothing], formatter: RequestLoggerFormatter): HTTPHandler = js.native
+    def requestLogger(options: Unit, formatter: RequestLoggerFormatter): HTTPHandler = js.native
     def requestLogger(options: RequestLoggerOptions): HTTPHandler = js.native
     def requestLogger(options: RequestLoggerOptions, formatter: RequestLoggerFormatter): HTTPHandler = js.native
     @JSName("requestLogger")
@@ -79,7 +80,8 @@ object mod extends Shortcut {
   
   @js.native
   trait LogfmtStatic
-    extends Logfmt
+    extends StObject
+       with Logfmt
        with Instantiable0[Logfmt]
   
   @js.native
@@ -87,7 +89,7 @@ object mod extends Shortcut {
     
     def apply(): HTTPHandler = js.native
     def apply(formatter: RequestLoggerFormatter): HTTPHandler = js.native
-    def apply(options: js.UndefOr[scala.Nothing], formatter: RequestLoggerFormatter): HTTPHandler = js.native
+    def apply(options: Unit, formatter: RequestLoggerFormatter): HTTPHandler = js.native
     def apply(options: RequestLoggerOptions): HTTPHandler = js.native
     def apply(options: RequestLoggerOptions, formatter: RequestLoggerFormatter): HTTPHandler = js.native
     
@@ -96,12 +98,11 @@ object mod extends Shortcut {
   
   type RequestLoggerFormatter = js.Function2[/* req */ IncomingMessage, /* res */ ServerResponse, js.Object]
   
-  @js.native
   trait RequestLoggerOptions extends StObject {
     
-    var elapsed: js.UndefOr[String] = js.native
+    var elapsed: js.UndefOr[String] = js.undefined
     
-    var immediate: js.UndefOr[Boolean] = js.native
+    var immediate: js.UndefOr[Boolean] = js.undefined
   }
   object RequestLoggerOptions {
     
@@ -128,10 +129,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait WritableStream extends StObject {
     
-    def write(data: String): Unit = js.native
+    def write(data: String): Unit
   }
   object WritableStream {
     
@@ -149,8 +149,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = LogfmtStatic
+  type _To = js.Object & LogfmtStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: LogfmtStatic = ^
+  override def _to: js.Object & LogfmtStatic = ^
 }

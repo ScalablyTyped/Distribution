@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirebasedynamiclinks.gapi.client.firebased
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Suffix extends StObject {
   
   /** Only applies to Option.CUSTOM. */
-  var customSuffix: js.UndefOr[String] = js.native
+  var customSuffix: js.UndefOr[String] = js.undefined
   
   /** Suffix option. */
-  var option: js.UndefOr[String] = js.native
+  var option: js.UndefOr[String] = js.undefined
 }
 object Suffix {
   

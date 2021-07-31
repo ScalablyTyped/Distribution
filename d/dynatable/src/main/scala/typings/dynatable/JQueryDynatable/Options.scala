@@ -2,25 +2,23 @@ package typings.dynatable.JQueryDynatable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var dataset: js.UndefOr[Dataset] = js.native
+  var dataset: js.UndefOr[Dataset] = js.undefined
   
-  var features: js.UndefOr[Features] = js.native
+  var features: js.UndefOr[Features] = js.undefined
   
-  var inputs: js.UndefOr[Inputs] = js.native
+  var inputs: js.UndefOr[Inputs] = js.undefined
   
-  var params: js.UndefOr[Params] = js.native
+  var params: js.UndefOr[Params] = js.undefined
   
-  var readers: js.UndefOr[Readers] = js.native
+  var readers: js.UndefOr[Readers] = js.undefined
   
-  var table: js.UndefOr[Table] = js.native
+  var table: js.UndefOr[Table] = js.undefined
   
-  var writers: js.UndefOr[Writers] = js.native
+  var writers: js.UndefOr[Writers] = js.undefined
 }
 object Options {
   

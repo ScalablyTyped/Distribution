@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sample extends StObject {
   
   /**
     * The number of rows in the sample.
     */
-  var Size: js.UndefOr[SampleSize] = js.native
+  var Size: js.UndefOr[SampleSize] = js.undefined
   
   /**
     * The way in which DataBrew obtains rows from a dataset.
     */
-  var Type: SampleType = js.native
+  var Type: SampleType
 }
 object Sample {
   

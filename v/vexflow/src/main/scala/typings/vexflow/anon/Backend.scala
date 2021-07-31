@@ -2,23 +2,21 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Backend extends StObject {
   
-  var backend: Double = js.native
+  var backend: Double
   
-  var background: String = js.native
+  var background: String
   
-  var context: js.Any = js.native
+  var context: js.Any
   
-  var elementId: String = js.native
+  var elementId: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Backend {
   

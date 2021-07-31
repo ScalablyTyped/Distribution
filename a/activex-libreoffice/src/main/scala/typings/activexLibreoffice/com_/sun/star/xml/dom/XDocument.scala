@@ -3,23 +3,23 @@ package typings.activexLibreoffice.com_.sun.star.xml.dom
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XDocument extends XNode {
+trait XDocument
+  extends StObject
+     with XNode {
   
   /** The Document Type Declaration (see DocumentType) associated with this document. */
-  val Doctype: XDocumentType = js.native
+  val Doctype: XDocumentType
   
   /** This is a convenience attribute that allows direct access to the child node that is the root element of the document. */
-  val DocumentElement: XElement = js.native
+  val DocumentElement: XElement
   
   /** The DOMImplementation object that handles this document. */
-  val Implementation: XDOMImplementation = js.native
+  val Implementation: XDOMImplementation
   
   /** Creates an Attr of the given name. Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the specified name contains an illegal character. */
-  def createAttribute(name: String): XAttr = js.native
+  def createAttribute(name: String): XAttr
   
   /**
     * Creates an attribute of the given qualified name and namespace URI. Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the specified
@@ -29,25 +29,25 @@ trait XDocument extends XNode {
     * different from " http://www.w3.org/2000/xmlns/". NOT_SUPPORTED_ERR: Always thrown if the current document does not support the "XML" feature, since
     * namespaces were defined by XML.
     */
-  def createAttributeNS(namespaceURI: String, qualifiedName: String): XAttr = js.native
+  def createAttributeNS(namespaceURI: String, qualifiedName: String): XAttr
   
   /**
     * Creates a CDATASection node whose value is the specified string. Throws: {@link DOMException} - NOT_SUPPORTED_ERR: Raised if this document is an HTML
     * document.
     */
-  def createCDATASection(data: String): XCDATASection = js.native
+  def createCDATASection(data: String): XCDATASection
   
   /** Creates a Comment node given the specified string. */
-  def createComment(data: String): XComment = js.native
+  def createComment(data: String): XComment
   
   /** Creates an empty DocumentFragment object. */
-  def createDocumentFragment(): XDocumentFragment = js.native
+  def createDocumentFragment(): XDocumentFragment
   
   /**
     * Creates an element of the type specified. Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the specified name contains an illegal
     * character.
     */
-  def createElement(tagName: String): XElement = js.native
+  def createElement(tagName: String): XElement
   
   /**
     * Creates an element of the given qualified name and namespace URI. Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the specified
@@ -56,50 +56,50 @@ trait XDocument extends XNode {
     * and the namespaceURI is different from " http://www.w3.org/XML/1998/namespace" . NOT_SUPPORTED_ERR: Always thrown if the current document does not
     * support the "XML" feature, since namespaces were defined by XML.
     */
-  def createElementNS(namespaceURI: String, qualifiedName: String): XElement = js.native
+  def createElementNS(namespaceURI: String, qualifiedName: String): XElement
   
   /**
     * Throws: {@link DOMException} - NOT_SUPPORTED_ERR: Raised if the type of node being imported is not supported. Creates an EntityReference object.
     * Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the specified name contains an illegal character. NOT_SUPPORTED_ERR: Raised if this
     * document is an HTML document.
     */
-  def createEntityReference(name: String): XEntityReference = js.native
+  def createEntityReference(name: String): XEntityReference
   
   /**
     * Creates a ProcessingInstruction node given the specified name and data strings. Throws: {@link DOMException} - INVALID_CHARACTER_ERR: Raised if the
     * specified target contains an illegal character. NOT_SUPPORTED_ERR: Raised if this document is an HTML document.
     */
-  def createProcessingInstruction(target: String, data: String): XProcessingInstruction = js.native
+  def createProcessingInstruction(target: String, data: String): XProcessingInstruction
   
   /** Creates a Text node given the specified string. */
-  def createTextNode(data: String): XText = js.native
+  def createTextNode(data: String): XText
   
   /** The Document Type Declaration (see DocumentType) associated with this document. */
-  def getDoctype(): XDocumentType = js.native
+  def getDoctype(): XDocumentType
   
   /** This is a convenience attribute that allows direct access to the child node that is the root element of the document. */
-  def getDocumentElement(): XElement = js.native
+  def getDocumentElement(): XElement
   
   /** Returns the Element whose ID is given by elementId. */
-  def getElementById(elementId: String): XElement = js.native
+  def getElementById(elementId: String): XElement
   
   /** Returns a NodeList of all the Elements with a given tag name in the order in which they are encountered in a preorder traversal of the Document tree. */
-  def getElementsByTagName(tagname: String): XNodeList = js.native
+  def getElementsByTagName(tagname: String): XNodeList
   
   /**
     * Returns a NodeList of all the Elements with a given local name and namespace URI in the order in which they are encountered in a preorder traversal of
     * the Document tree.
     */
-  def getElementsByTagNameNS(namespaceURI: String, localName: String): XNodeList = js.native
+  def getElementsByTagNameNS(namespaceURI: String, localName: String): XNodeList
   
   /** The DOMImplementation object that handles this document. */
-  def getImplementation(): XDOMImplementation = js.native
+  def getImplementation(): XDOMImplementation
   
   /**
     * Imports a node from another document to this document. Throws: {@link DOMException} - NOT_SUPPORTED_ERR: Raised if the type of node being imported is
     * not supported.
     */
-  def importNode(importedNode: XNode, deep: Boolean): XNode = js.native
+  def importNode(importedNode: XNode, deep: Boolean): XNode
 }
 object XDocument {
   

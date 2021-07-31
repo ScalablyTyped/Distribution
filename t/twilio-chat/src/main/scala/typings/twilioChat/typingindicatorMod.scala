@@ -5,7 +5,6 @@ import typings.twilioChat.transportMod.Transport
 import typings.twilioNotifications.mod.Notifications
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typingindicatorMod {
@@ -65,12 +64,11 @@ object typingindicatorMod {
     def typingTimeout: Double = js.native
   }
   
-  @js.native
   trait TypingIndicatorServices extends StObject {
     
-    var notificationClient: Notifications = js.native
+    var notificationClient: Notifications
     
-    var transport: Transport = js.native
+    var transport: Transport
   }
   object TypingIndicatorServices {
     

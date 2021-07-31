@@ -5,37 +5,35 @@ import typings.jose.mod.JWT.VerifyOptions
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined next-auth.next-auth/jwt.JWTDecodeParams & {  token :string} */
-@js.native
 trait JWTDecodeParamstokenstrin extends StObject {
   
-  var decryptionKey: js.UndefOr[String] = js.native
+  var decryptionKey: js.UndefOr[String] = js.undefined
   
-  var decryptionOptions: js.UndefOr[DecryptOptions] = js.native
+  var decryptionOptions: js.UndefOr[DecryptOptions] = js.undefined
   
-  var encryption: js.UndefOr[Boolean] = js.native
+  var encryption: js.UndefOr[Boolean] = js.undefined
   
-  var encryptionKey: js.UndefOr[String] = js.native
+  var encryptionKey: js.UndefOr[String] = js.undefined
   
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
-  var secret: String | Buffer = js.native
+  var secret: String | Buffer
   
-  var signingKey: js.UndefOr[String] = js.native
+  var signingKey: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] with String = js.native
+  var token: js.UndefOr[String] & String
   
-  var verificationKey: js.UndefOr[String] = js.native
+  var verificationKey: js.UndefOr[String] = js.undefined
   
-  var verificationOptions: js.UndefOr[VerifyOptions] = js.native
+  var verificationOptions: js.UndefOr[VerifyOptions] = js.undefined
 }
 object JWTDecodeParamstokenstrin {
   
   @scala.inline
-  def apply(secret: String | Buffer, token: js.UndefOr[String] with String): JWTDecodeParamstokenstrin = {
+  def apply(secret: String | Buffer, token: js.UndefOr[String] & String): JWTDecodeParamstokenstrin = {
     val __obj = js.Dynamic.literal(secret = secret.asInstanceOf[js.Any], token = token.asInstanceOf[js.Any])
     __obj.asInstanceOf[JWTDecodeParamstokenstrin]
   }
@@ -83,7 +81,7 @@ object JWTDecodeParamstokenstrin {
     def setSigningKeyUndefined: Self = StObject.set(x, "signingKey", js.undefined)
     
     @scala.inline
-    def setToken(value: js.UndefOr[String] with String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
+    def setToken(value: js.UndefOr[String] & String): Self = StObject.set(x, "token", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerificationKey(value: String): Self = StObject.set(x, "verificationKey", value.asInstanceOf[js.Any])

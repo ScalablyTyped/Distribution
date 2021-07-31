@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the focus settings for a frame in a variable photo sequence. */
-@js.native
 trait FrameFocusControl extends StObject {
   
   /** Gets or sets the focus value for a frame in a variable photo sequence. */
-  var value: Double = js.native
+  var value: Double
 }
 object FrameFocusControl {
   

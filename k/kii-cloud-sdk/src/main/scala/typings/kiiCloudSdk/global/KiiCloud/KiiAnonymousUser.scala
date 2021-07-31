@@ -2,7 +2,6 @@ package typings.kiiCloudSdk.global.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,4 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("KiiCloud.KiiAnonymousUser")
 @js.native
 class KiiAnonymousUser ()
-  extends typings.kiiCloudSdk.KiiCloud.KiiAnonymousUser
+  extends StObject
+     with typings.kiiCloudSdk.KiiCloud.KiiAnonymousUser {
+  
+  /**
+    * Returns the ID of Anonymous user.
+    */
+  /* CompleteClass */
+  override def getID(): String = js.native
+}

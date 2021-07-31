@@ -5,7 +5,6 @@ import typings.awsSdk.credentialsMod.Credentials
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sharedIniFileCredentialsMod {
@@ -19,18 +18,17 @@ object sharedIniFileCredentialsMod {
     def this(options: SharedIniFileCredentialsOptions) = this()
   }
   
-  @js.native
   trait SharedIniFileCredentialsOptions extends StObject {
     
-    var callback: js.UndefOr[js.Function1[/* err */ js.UndefOr[Error], Unit]] = js.native
+    var callback: js.UndefOr[js.Function1[/* err */ js.UndefOr[Error], Unit]] = js.undefined
     
-    var disableAssumeRole: js.UndefOr[Boolean] = js.native
+    var disableAssumeRole: js.UndefOr[Boolean] = js.undefined
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var httpOptions: js.UndefOr[HTTPOptions] = js.native
+    var httpOptions: js.UndefOr[HTTPOptions] = js.undefined
     
-    var profile: js.UndefOr[String] = js.native
+    var profile: js.UndefOr[String] = js.undefined
     
     var tokenCodeFn: js.UndefOr[
         js.Function2[
@@ -38,7 +36,7 @@ object sharedIniFileCredentialsMod {
           /* callback */ js.Function2[/* err */ js.UndefOr[Error], /* token */ js.UndefOr[String], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object SharedIniFileCredentialsOptions {
     

@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,6 +9,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/dictation
   */
 object Dictation {
+  
+  @JSGlobal("Dictation")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Starts dictation._
@@ -19,10 +22,8 @@ object Dictation {
     * device.
     * @see https://docs.scriptable.app/dictation/#start
     */
-  @JSGlobal("Dictation.start")
-  @js.native
-  def start(): js.Promise[String] = js.native
-  @JSGlobal("Dictation.start")
-  @js.native
-  def start(locale: String): js.Promise[String] = js.native
+  @scala.inline
+  def start(): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def start(locale: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(locale.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

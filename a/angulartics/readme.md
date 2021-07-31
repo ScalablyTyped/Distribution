@@ -12,7 +12,7 @@ Vendor-agnostic web analytics for AngularJS applications
 | Keywords           | angular, analytics, tracking, google analytics, google tag manager, woopra, splunk, piwik, page tracking, event tracking, scroll tracking, inspectlet |
 | # releases         | 1 |
 | # dependents       | 31 |
-| # downloads        | 1469355 |
+| # downloads        | 1380450 |
 | # stars            | 2 |
 
 ## Links

@@ -2,14 +2,12 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A `ResultsCachePolicy` is used for fine-grained control over how action
   * outputs are stored in the CAS and Action Cache.
   */
-@js.native
 trait SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy extends StObject {
     * every server will have their own supported range of priorities, and will
     * decide how these map into retention/eviction policy.
     */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
 }
 object SchemaBuildBazelRemoteExecutionV2ResultsCachePolicy {
   

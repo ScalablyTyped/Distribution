@@ -2,28 +2,26 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSecurityPolicyRuleMatcherConfig extends StObject {
   
   /**
     * CIDR IP address range.  This field may only be specified when
     * versioned_expr is set to FIREWALL.
     */
-  var destIpRanges: js.UndefOr[js.Array[String]] = js.native
+  var destIpRanges: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Pairs of IP protocols and ports that the rule should match.  This field
     * may only be specified when versioned_expr is set to FIREWALL.
     */
-  var destPorts: js.UndefOr[js.Array[SchemaSecurityPolicyRuleMatcherConfigDestinationPort]] = js.native
+  var destPorts: js.UndefOr[js.Array[SchemaSecurityPolicyRuleMatcherConfigDestinationPort]] = js.undefined
   
   /**
     * CIDR IP address range.
     */
-  var srcIpRanges: js.UndefOr[js.Array[String]] = js.native
+  var srcIpRanges: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaSecurityPolicyRuleMatcherConfig {
   

@@ -3,22 +3,20 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.VersionedTextDocumentIdentifier
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DidSaveTextDocumentParams extends StObject {
   
   /**
     * Optional the content when saved. Depends on the includeText value
     * when the save notification was requested.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
   /**
     * The document that was closed.
     */
-  var textDocument: VersionedTextDocumentIdentifier = js.native
+  var textDocument: VersionedTextDocumentIdentifier
 }
 object DidSaveTextDocumentParams {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleFirestoreAdminV1Field extends StObject {
   
   /**
     * The index configuration for this field. If unset, field indexing will revert to the configuration defined by the `ancestor_field`. To explicitly remove all indexes for this field,
     * specify an index config with an empty list of indexes.
     */
-  var indexConfig: js.UndefOr[GoogleFirestoreAdminV1IndexConfig] = js.native
+  var indexConfig: js.UndefOr[GoogleFirestoreAdminV1IndexConfig] = js.undefined
   
   /**
     * A field name of the form `projects/{project_id}/databases/{database_id}/collectionGroups/{collection_id}/fields/{field_path}` A field path may be a simple field name, e.g. `address`
@@ -24,7 +22,7 @@ trait GoogleFirestoreAdminV1Field extends StObject {
     * `projects/{project_id}/databases/{database_id}/collectionGroups/__default__/fields/ *` Indexes defined on this `Field` will be applied to all fields which do not have their own
     * `Field` index configuration.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleFirestoreAdminV1Field {
   

@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ComponentClass[P, S]
-  extends Instantiable1[/* props */ P, Component[P, S]]
+  extends StObject
+     with Instantiable1[/* props */ P, Component[P, S]]
      with Instantiable2[/* props */ P, /* context */ js.Any, Component[P, S]] {
   
   var defaultProps: js.UndefOr[Partial[P]] = js.native

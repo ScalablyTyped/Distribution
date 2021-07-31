@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Media.Protection.PlayReady
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Specifies the format for the ITA serialized data. */
@@ -12,10 +11,10 @@ object PlayReadyITADataFormat extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyITADataFormat with Double
+    typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyITADataFormat & Double
   ] = js.native
   
-  /* 0 */ val serializedProperties: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyITADataFormat.serializedProperties with Double = js.native
+  /* 0 */ val serializedProperties: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyITADataFormat.serializedProperties & Double = js.native
   
-  /* 1 */ val serializedProperties_WithContentProtectionWrapper: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyITADataFormat.serializedProperties_WithContentProtectionWrapper with Double = js.native
+  /* 1 */ val serializedProperties_WithContentProtectionWrapper: typings.winrtUwp.Windows.Media.Protection.PlayReady.PlayReadyITADataFormat.serializedProperties_WithContentProtectionWrapper & Double = js.native
 }

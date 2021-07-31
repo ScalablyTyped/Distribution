@@ -7,167 +7,107 @@ import typings.sololearn.sololearnStrings.php_
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("sololearn", "getCode")
+  @JSImport("sololearn", JSImport.Namespace)
   @js.native
-  def getCode(id: String): js.Promise[Code] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sololearn", "getLeaderboard")
-  @js.native
-  def getLeaderboard(): js.Promise[js.Array[Leader]] = js.native
-  @JSImport("sololearn", "getLeaderboard")
-  @js.native
-  def getLeaderboard(lang: String): js.Promise[js.Array[Leader]] = js.native
+  @scala.inline
+  def getCode(id: String): js.Promise[Code] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCode")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Code]]
   
-  @JSImport("sololearn", "getQuestion")
-  @js.native
-  def getQuestion(id: Double): js.Promise[Question] = js.native
+  @scala.inline
+  def getLeaderboard(): js.Promise[js.Array[Leader]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeaderboard")().asInstanceOf[js.Promise[js.Array[Leader]]]
+  @scala.inline
+  def getLeaderboard(lang: String): js.Promise[js.Array[Leader]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLeaderboard")(lang.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Leader]]]
   
-  @JSImport("sololearn", "getUser")
-  @js.native
-  def getUser(id: Double): js.Promise[User] = js.native
+  @scala.inline
+  def getQuestion(id: Double): js.Promise[Question] = ^.asInstanceOf[js.Dynamic].applyDynamic("getQuestion")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Question]]
   
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(
-    searchQuery: js.UndefOr[scala.Nothing],
-    order: js.UndefOr[scala.Nothing],
-    language: js.UndefOr[scala.Nothing],
-    page: Double
-  ): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: js.UndefOr[scala.Nothing], order: js.UndefOr[scala.Nothing], language: CodeLanguage): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(
-    searchQuery: js.UndefOr[scala.Nothing],
-    order: js.UndefOr[scala.Nothing],
-    language: CodeLanguage,
-    page: Double
-  ): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: js.UndefOr[scala.Nothing], order: js.UndefOr[scala.Nothing], language: _empty): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(
-    searchQuery: js.UndefOr[scala.Nothing],
-    order: js.UndefOr[scala.Nothing],
-    language: _empty,
-    page: Double
-  ): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: js.UndefOr[scala.Nothing], order: CodeOrder): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(
-    searchQuery: js.UndefOr[scala.Nothing],
-    order: CodeOrder,
-    language: js.UndefOr[scala.Nothing],
-    page: Double
-  ): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: js.UndefOr[scala.Nothing], order: CodeOrder, language: CodeLanguage): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: js.UndefOr[scala.Nothing], order: CodeOrder, language: CodeLanguage, page: Double): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: js.UndefOr[scala.Nothing], order: CodeOrder, language: _empty): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: js.UndefOr[scala.Nothing], order: CodeOrder, language: _empty, page: Double): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(
-    searchQuery: String,
-    order: js.UndefOr[scala.Nothing],
-    language: js.UndefOr[scala.Nothing],
-    page: Double
-  ): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: js.UndefOr[scala.Nothing], language: CodeLanguage): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: js.UndefOr[scala.Nothing], language: CodeLanguage, page: Double): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: js.UndefOr[scala.Nothing], language: _empty): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: js.UndefOr[scala.Nothing], language: _empty, page: Double): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: CodeOrder): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: CodeOrder, language: js.UndefOr[scala.Nothing], page: Double): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: CodeOrder, language: CodeLanguage): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: CodeOrder, language: CodeLanguage, page: Double): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: CodeOrder, language: _empty): js.Promise[js.Array[Code]] = js.native
-  @JSImport("sololearn", "searchCodes")
-  @js.native
-  def searchCodes(searchQuery: String, order: CodeOrder, language: _empty, page: Double): js.Promise[js.Array[Code]] = js.native
+  @scala.inline
+  def getUser(id: Double): js.Promise[User] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[User]]
   
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(): js.Promise[js.Array[Question]] = js.native
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(searchQuery: js.UndefOr[scala.Nothing], order: js.UndefOr[scala.Nothing], page: Double): js.Promise[js.Array[Question]] = js.native
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(searchQuery: js.UndefOr[scala.Nothing], order: QuestionOrder): js.Promise[js.Array[Question]] = js.native
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(searchQuery: js.UndefOr[scala.Nothing], order: QuestionOrder, page: Double): js.Promise[js.Array[Question]] = js.native
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(searchQuery: String): js.Promise[js.Array[Question]] = js.native
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(searchQuery: String, order: js.UndefOr[scala.Nothing], page: Double): js.Promise[js.Array[Question]] = js.native
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(searchQuery: String, order: QuestionOrder): js.Promise[js.Array[Question]] = js.native
-  @JSImport("sololearn", "searchQuestions")
-  @js.native
-  def searchQuestions(searchQuery: String, order: QuestionOrder, page: Double): js.Promise[js.Array[Question]] = js.native
+  @scala.inline
+  def searchCodes(): js.Promise[js.Array[Code]] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")().asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String): js.Promise[js.Array[Code]] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: Unit, language: Unit, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: Unit, language: CodeLanguage): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: Unit, language: CodeLanguage, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: Unit, language: _empty): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: Unit, language: _empty, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: CodeOrder): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: CodeOrder, language: Unit, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: CodeOrder, language: CodeLanguage): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: CodeOrder, language: CodeLanguage, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: CodeOrder, language: _empty): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: String, order: CodeOrder, language: _empty, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: Unit, language: Unit, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: Unit, language: CodeLanguage): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: Unit, language: CodeLanguage, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: Unit, language: _empty): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: Unit, language: _empty, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: CodeOrder): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: CodeOrder, language: Unit, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: CodeOrder, language: CodeLanguage): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: CodeOrder, language: CodeLanguage, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: CodeOrder, language: _empty): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
+  @scala.inline
+  def searchCodes(searchQuery: Unit, order: CodeOrder, language: _empty, page: Double): js.Promise[js.Array[Code]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchCodes")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], language.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Code]]]
   
-  @js.native
+  @scala.inline
+  def searchQuestions(): js.Promise[js.Array[Question]] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")().asInstanceOf[js.Promise[js.Array[Question]]]
+  @scala.inline
+  def searchQuestions(searchQuery: String): js.Promise[js.Array[Question]] = ^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")(searchQuery.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[Question]]]
+  @scala.inline
+  def searchQuestions(searchQuery: String, order: Unit, page: Double): js.Promise[js.Array[Question]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Question]]]
+  @scala.inline
+  def searchQuestions(searchQuery: String, order: QuestionOrder): js.Promise[js.Array[Question]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Question]]]
+  @scala.inline
+  def searchQuestions(searchQuery: String, order: QuestionOrder, page: Double): js.Promise[js.Array[Question]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Question]]]
+  @scala.inline
+  def searchQuestions(searchQuery: Unit, order: Unit, page: Double): js.Promise[js.Array[Question]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Question]]]
+  @scala.inline
+  def searchQuestions(searchQuery: Unit, order: QuestionOrder): js.Promise[js.Array[Question]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Question]]]
+  @scala.inline
+  def searchQuestions(searchQuery: Unit, order: QuestionOrder, page: Double): js.Promise[js.Array[Question]] = (^.asInstanceOf[js.Dynamic].applyDynamic("searchQuestions")(searchQuery.asInstanceOf[js.Any], order.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Question]]]
+  
   trait Answer extends StObject {
     
     /** The author's SoloLearn ID */
-    var author: Double = js.native
+    var author: Double
     
     /** The content of the answer */
-    var content: String = js.native
+    var content: String
     
     /** The date the answer was written */
-    var date: Date = js.native
+    var date: Date
     
     /** The amount of upvotes the answer has */
-    var upvotes: Double = js.native
+    var upvotes: Double
   }
   object Answer {
     
@@ -448,35 +388,34 @@ object mod {
     def freeCodeCamp: typings.sololearn.sololearnStrings.freeCodeCamp = "freeCodeCamp".asInstanceOf[typings.sololearn.sololearnStrings.freeCodeCamp]
   }
   
-  @js.native
   trait Code extends StObject {
     
     /** The author's SoloLearn ID */
-    var author: Double = js.native
+    var author: Double
     
     /** The code's ID */
-    var id: String = js.native
+    var id: String
     
     /** The language the code is written in */
-    var language: CodeLanguage = js.native
+    var language: CodeLanguage
     
     /** The date of the last modification made to the code, or `null` if it is unknown */
-    var lastModified: Date | Null = js.native
+    var lastModified: Date | Null
     
     /** The name of the code */
-    var name: String = js.native
+    var name: String
     
     /** `true` if the code is public, `false` if it is private */
-    var public: Boolean = js.native
+    var public: Boolean
     
     /** The amount of upvotes the code has */
-    var upvotes: Double = js.native
+    var upvotes: Double
   }
   object Code {
     
     @scala.inline
     def apply(author: Double, id: String, language: CodeLanguage, name: String, public: Boolean, upvotes: Double): Code = {
-      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], upvotes = upvotes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(author = author.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], public = public.asInstanceOf[js.Any], upvotes = upvotes.asInstanceOf[js.Any], lastModified = null)
       __obj.asInstanceOf[Code]
     }
     
@@ -577,23 +516,22 @@ object mod {
     def trending: typings.sololearn.sololearnStrings.trending = "trending".asInstanceOf[typings.sololearn.sololearnStrings.trending]
   }
   
-  @js.native
   trait Course extends StObject {
     
     /** The level the user is on for that course */
-    var level: Double = js.native
+    var level: Double
     
     /** The status of the user for that course */
-    var status: Status = js.native
+    var status: Status
     
     /** The amount of XP the user has in that course */
-    var xp: Double = js.native
+    var xp: Double
   }
   object Course {
     
     @scala.inline
     def apply(level: Double, xp: Double): Course = {
-      val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any], status = null)
       __obj.asInstanceOf[Course]
     }
     
@@ -688,32 +626,31 @@ object mod {
     def jQuery: typings.sololearn.sololearnStrings.jQuery = "jQuery".asInstanceOf[typings.sololearn.sololearnStrings.jQuery]
   }
   
-  @js.native
   trait Leader extends StObject {
     
     /** The user's ID */
-    var id: Double = js.native
+    var id: Double
     
     /** The level the user is on for the specified course or overall */
-    var level: Double = js.native
+    var level: Double
     
     /** The user's name */
-    var name: String = js.native
+    var name: String
     
     /** The user's rank on the leaderboard (`1` - `10`) */
-    var rank: Double = js.native
+    var rank: Double
     
     /** The status of the user for the specified course or overall */
-    var status: Status = js.native
+    var status: Status
     
     /** The amount of XP the user has in the specified course or overall */
-    var xp: Double = js.native
+    var xp: Double
   }
   object Leader {
     
     @scala.inline
     def apply(id: Double, level: Double, name: String, rank: Double, xp: Double): Leader = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], rank = rank.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any], status = null)
       __obj.asInstanceOf[Leader]
     }
     
@@ -743,35 +680,34 @@ object mod {
     }
   }
   
-  @js.native
   trait Question extends StObject {
     
     /** An array of the top 20 answers to the question, sorted by upvotes. This does not include the best answer */
-    var answers: js.Array[Answer] = js.native
+    var answers: js.Array[Answer]
     
     /** The author's SoloLearn ID */
-    var author: Double = js.native
+    var author: Double
     
     /** The answer that is marked as best, or `null` if there is no best answer */
-    var bestAnswer: Answer | Null = js.native
+    var bestAnswer: Answer | Null
     
     /** The content of the question */
-    var content: String = js.native
+    var content: String
     
     /** The date the question was written */
-    var date: Date = js.native
+    var date: Date
     
     /** The question's ID */
-    var id: Double = js.native
+    var id: Double
     
     /** The tags that the question has */
-    var tags: js.Array[String] = js.native
+    var tags: js.Array[String]
     
     /** The title of the question */
-    var title: String = js.native
+    var title: String
     
     /** The amount of upvotes the question has */
-    var upvotes: Double = js.native
+    var upvotes: Double
   }
   object Question {
     
@@ -786,7 +722,7 @@ object mod {
       title: String,
       upvotes: Double
     ): Question = {
-      val __obj = js.Dynamic.literal(answers = answers.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], upvotes = upvotes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(answers = answers.asInstanceOf[js.Any], author = author.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], date = date.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], tags = tags.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], upvotes = upvotes.asInstanceOf[js.Any], bestAnswer = null)
       __obj.asInstanceOf[Question]
     }
     
@@ -858,39 +794,38 @@ object mod {
   */
   type Status = _Status | Null
   
-  @js.native
   trait User extends StObject {
     
     /**
       * An array of the user's badges where each badge is a `string`.
       * The array is sorted by when the user recieved the badge, the last item in the array is the first badge they got, the first item in the array is their latest badge
       */
-    var badges: js.Array[Badge] = js.native
+    var badges: js.Array[Badge]
     
     /** An array of the user's certificates, where each certificate is a `string` which is the name of the course the certificate is associated to */
-    var certificates: js.Array[CourseName] = js.native
+    var certificates: js.Array[CourseName]
     
     /** An array of the user's codes ordered descendingly by the number of upvotes the code has, this will only return public codes */
-    var codes: js.Array[Code] = js.native
+    var codes: js.Array[Code]
     
     /** An object where the property is the name of the course (see all course names [here](https://github.com/sololearnts/sololearn#coursename)) */
     var courses: /** The name of the course */
-    StringDictionary[Course] = js.native
+    StringDictionary[Course]
     
     /** The user's ID */
-    var id: Double = js.native
+    var id: Double
     
     /** The level the user is on */
-    var level: Double = js.native
+    var level: Double
     
     /** The user's name */
-    var name: String = js.native
+    var name: String
     
     /** The user's overall status */
-    var status: Status = js.native
+    var status: Status
     
     /** The amount of XP the user has */
-    var xp: Double = js.native
+    var xp: Double
   }
   object User {
     
@@ -906,7 +841,7 @@ object mod {
       name: String,
       xp: Double
     ): User = {
-      val __obj = js.Dynamic.literal(badges = badges.asInstanceOf[js.Any], certificates = certificates.asInstanceOf[js.Any], codes = codes.asInstanceOf[js.Any], courses = courses.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(badges = badges.asInstanceOf[js.Any], certificates = certificates.asInstanceOf[js.Any], codes = codes.asInstanceOf[js.Any], courses = courses.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], xp = xp.asInstanceOf[js.Any], status = null)
       __obj.asInstanceOf[User]
     }
     

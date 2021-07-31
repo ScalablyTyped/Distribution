@@ -2,46 +2,44 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyCredential extends StObject {
   
   // Custom key identifier
-  var customKeyIdentifier: js.UndefOr[NullableOption[Double]] = js.native
+  var customKeyIdentifier: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Friendly name for the key. Optional.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The date and time at which the credential expires.The Timestamp type represents date and time information using ISO
     * 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'
     */
-  var endDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var endDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The certificate's raw data in byte array converted to Base64 string; for example,
     * [System.Convert]::ToBase64String($Cert.GetRawCertData()).
     */
-  var key: js.UndefOr[NullableOption[Double]] = js.native
+  var key: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The unique identifier (GUID) for the key.
-  var keyId: js.UndefOr[NullableOption[String]] = js.native
+  var keyId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * The date and time at which the credential becomes valid.The Timestamp type represents date and time information using
     * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'
     */
-  var startDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var startDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The type of key credential; for example, 'Symmetric'.
-  var `type`: js.UndefOr[NullableOption[String]] = js.native
+  var `type`: js.UndefOr[NullableOption[String]] = js.undefined
   
   // A string that describes the purpose for which the key can be used; for example, 'Verify'.
-  var usage: js.UndefOr[NullableOption[String]] = js.native
+  var usage: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object KeyCredential {
   

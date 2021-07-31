@@ -4,48 +4,48 @@ import typings.devextreme.anon.Model
 import typings.devextreme.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DOMComponentOptions[T] extends ComponentOptions[T] {
+trait DOMComponentOptions[T]
+  extends StObject
+     with ComponentOptions[T] {
   
   /**
     * [descr:DOMComponent.Options.bindingOptions]
     */
-  var bindingOptions: js.UndefOr[js.Any] = js.native
+  var bindingOptions: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:DOMComponent.Options.elementAttr]
     */
-  var elementAttr: js.UndefOr[js.Any] = js.native
+  var elementAttr: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:DOMComponent.Options.height]
     */
-  var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+  var height: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
   
   /**
     * [descr:DOMComponent.Options.onDisposing]
     */
   @JSName("onDisposing")
-  var onDisposing_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Model[T], _]] = js.native
+  var onDisposing_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Model[T], js.Any]] = js.undefined
   
   /**
     * [descr:DOMComponent.Options.onOptionChanged]
     */
   @JSName("onOptionChanged")
-  var onOptionChanged_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Name[T], _]] = js.native
+  var onOptionChanged_DOMComponentOptions: js.UndefOr[js.Function1[/* e */ Name[T], js.Any]] = js.undefined
   
   /**
     * [descr:DOMComponent.Options.rtlEnabled]
     */
-  var rtlEnabled: js.UndefOr[Boolean] = js.native
+  var rtlEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:DOMComponent.Options.width]
     */
-  var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.native
+  var width: js.UndefOr[Double | String | (js.Function0[Double | String])] = js.undefined
 }
 object DOMComponentOptions {
   
@@ -56,7 +56,7 @@ object DOMComponentOptions {
   }
   
   @scala.inline
-  implicit class DOMComponentOptionsMutableBuilder[Self <: DOMComponentOptions[_], T] (val x: Self with DOMComponentOptions[T]) extends AnyVal {
+  implicit class DOMComponentOptionsMutableBuilder[Self <: DOMComponentOptions[?], T] (val x: Self & DOMComponentOptions[T]) extends AnyVal {
     
     @scala.inline
     def setBindingOptions(value: js.Any): Self = StObject.set(x, "bindingOptions", value.asInstanceOf[js.Any])
@@ -80,13 +80,13 @@ object DOMComponentOptions {
     def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setOnDisposing(value: /* e */ Model[T] => _): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
+    def setOnDisposing(value: /* e */ Model[T] => js.Any): Self = StObject.set(x, "onDisposing", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDisposingUndefined: Self = StObject.set(x, "onDisposing", js.undefined)
     
     @scala.inline
-    def setOnOptionChanged(value: /* e */ Name[T] => _): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
+    def setOnOptionChanged(value: /* e */ Name[T] => js.Any): Self = StObject.set(x, "onOptionChanged", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnOptionChangedUndefined: Self = StObject.set(x, "onOptionChanged", js.undefined)

@@ -2,15 +2,13 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScriptingResult extends StObject {
   
-  var operationId: String = js.native
+  var operationId: String
   
-  var script: String = js.native
+  var script: String
 }
 object ScriptingResult {
   

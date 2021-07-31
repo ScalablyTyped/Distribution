@@ -8,17 +8,15 @@ import typings.tensorflowTfjsLayers.trainingConfigMod.TrainingConfig
 import typings.tensorflowTfjsLayers.typesMod.BaseSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object modelSerializationMod {
   
-  @js.native
   trait KerasFileSerialization extends StObject {
     
-    var model_config: ModelSerialization | SequentialSerialization | LegacySequentialSerialization = js.native
+    var model_config: ModelSerialization | SequentialSerialization | LegacySequentialSerialization
     
-    var training_config: TrainingConfig = js.native
+    var training_config: TrainingConfig
   }
   object KerasFileSerialization {
     
@@ -42,22 +40,21 @@ object modelSerializationMod {
     }
   }
   
-  @js.native
   trait LegacySequentialSerialization extends StObject {
     
-    var backend: js.UndefOr[String] = js.native
+    var backend: js.UndefOr[String] = js.undefined
     
-    var class_name: Sequential = js.native
+    var class_name: Sequential
     
-    var config: js.Array[LayerSerialization] = js.native
+    var config: js.Array[LayerSerialization]
     
-    var keras_version: js.UndefOr[String] = js.native
+    var keras_version: js.UndefOr[String] = js.undefined
   }
   object LegacySequentialSerialization {
     
     @scala.inline
-    def apply(class_name: Sequential, config: js.Array[LayerSerialization]): LegacySequentialSerialization = {
-      val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
+    def apply(config: js.Array[LayerSerialization]): LegacySequentialSerialization = {
+      val __obj = js.Dynamic.literal(class_name = "Sequential", config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[LegacySequentialSerialization]
     }
     
@@ -87,16 +84,15 @@ object modelSerializationMod {
     }
   }
   
-  @js.native
   trait ModelConfig extends StObject {
     
-    var input_layers: js.Array[TensorKeyArray] = js.native
+    var input_layers: js.Array[TensorKeyArray]
     
-    var layers: js.Array[LayerSerialization] = js.native
+    var layers: js.Array[LayerSerialization]
     
-    var name: String = js.native
+    var name: String
     
-    var output_layers: js.Array[TensorKeyArray] = js.native
+    var output_layers: js.Array[TensorKeyArray]
   }
   object ModelConfig {
     
@@ -137,18 +133,19 @@ object modelSerializationMod {
     }
   }
   
-  @js.native
-  trait ModelSerialization extends BaseSerialization[Model, ModelConfig] {
+  trait ModelSerialization
+    extends StObject
+       with BaseSerialization[Model, ModelConfig] {
     
-    var backend: js.UndefOr[String] = js.native
+    var backend: js.UndefOr[String] = js.undefined
     
-    var keras_version: js.UndefOr[String] = js.native
+    var keras_version: js.UndefOr[String] = js.undefined
   }
   object ModelSerialization {
     
     @scala.inline
-    def apply(class_name: Model, config: ModelConfig): ModelSerialization = {
-      val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
+    def apply(config: ModelConfig): ModelSerialization = {
+      val __obj = js.Dynamic.literal(class_name = "Model", config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[ModelSerialization]
     }
     
@@ -169,10 +166,9 @@ object modelSerializationMod {
     }
   }
   
-  @js.native
   trait SequentialConfig extends StObject {
     
-    var layers: js.Array[LayerSerialization] = js.native
+    var layers: js.Array[LayerSerialization]
   }
   object SequentialConfig {
     
@@ -193,18 +189,19 @@ object modelSerializationMod {
     }
   }
   
-  @js.native
-  trait SequentialSerialization extends BaseSerialization[Sequential, SequentialConfig] {
+  trait SequentialSerialization
+    extends StObject
+       with BaseSerialization[Sequential, SequentialConfig] {
     
-    var backend: js.UndefOr[String] = js.native
+    var backend: js.UndefOr[String] = js.undefined
     
-    var keras_version: js.UndefOr[String] = js.native
+    var keras_version: js.UndefOr[String] = js.undefined
   }
   object SequentialSerialization {
     
     @scala.inline
-    def apply(class_name: Sequential, config: SequentialConfig): SequentialSerialization = {
-      val __obj = js.Dynamic.literal(class_name = class_name.asInstanceOf[js.Any], config = config.asInstanceOf[js.Any])
+    def apply(config: SequentialConfig): SequentialSerialization = {
+      val __obj = js.Dynamic.literal(class_name = "Sequential", config = config.asInstanceOf[js.Any])
       __obj.asInstanceOf[SequentialSerialization]
     }
     

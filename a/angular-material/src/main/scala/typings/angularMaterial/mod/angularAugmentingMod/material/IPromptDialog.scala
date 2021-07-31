@@ -2,11 +2,12 @@ package typings.angularMaterial.mod.angularAugmentingMod.material
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait IPromptDialog extends IPresetDialog[IPromptDialog] {
+trait IPromptDialog
+  extends StObject
+     with IPresetDialog[IPromptDialog] {
   
   def cancel(cancel: String): IPromptDialog = js.native
   

@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * receives a description of a configuration layer as a sequence of events.
   * @since OOo 1.1.2
   */
-@js.native
-trait XLayerHandler extends XInterface {
+trait XLayerHandler
+  extends StObject
+     with XInterface {
   
   /**
     * receives notification that a new item is started.
@@ -29,7 +29,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplaceNode(aName: String, aAttributes: Double): Unit = js.native
+  def addOrReplaceNode(aName: String, aAttributes: Double): Unit
   
   /**
     * receives notification that a new item based on a particular template is started.
@@ -45,7 +45,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addOrReplaceNodeFromTemplate(aName: String, aTemplate: TemplateIdentifier, aAttributes: Double): Unit = js.native
+  def addOrReplaceNodeFromTemplate(aName: String, aTemplate: TemplateIdentifier, aAttributes: Double): Unit
   
   /**
     * receives notification that a property having a `VOID` value is added to the current node.
@@ -58,7 +58,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't an extensible node in progress currentlyif a property with that nam
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addProperty(aName: String, aAttributes: Double, aType: `type`): Unit = js.native
+  def addProperty(aName: String, aAttributes: Double, aType: `type`): Unit
   
   /**
     * receives notification that a property having a non- `VOID` value is added to the current node.
@@ -71,7 +71,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't an extensible node in progress currentlyif a property with that nam
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def addPropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit = js.native
+  def addPropertyWithValue(aName: String, aAttributes: Double, aValue: js.Any): Unit
   
   /**
     * receives notification that a node is dropped from a set.
@@ -81,7 +81,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a set node in progress currentlyif there already was a change to a
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def dropNode(aName: String): Unit = js.native
+  def dropNode(aName: String): Unit
   
   /**
     * receives notification that a layer description is complete.
@@ -90,7 +90,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the layerif there is a unfinished subnode in progre
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endLayer(): Unit = js.native
+  def endLayer(): Unit
   
   /**
     * receives notification that a node description is complete.
@@ -100,7 +100,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the nodeif no node is started at all**Not every imp
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endNode(): Unit = js.native
+  def endNode(): Unit
   
   /**
     * receives notification that a property description is complete.
@@ -109,7 +109,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if invalid data is detected in the propertyif no property is started at all**Not e
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def endProperty(): Unit = js.native
+  def endProperty(): Unit
   
   /**
     * receives notification that a description of a node override is started.
@@ -123,7 +123,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a layer in progressif there already was a change to that nodeif the
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def overrideNode(aName: String, aAttributes: Double, bClear: Boolean): Unit = js.native
+  def overrideNode(aName: String, aAttributes: Double, bClear: Boolean): Unit
   
   /**
     * receives notification that an existing property is modified.
@@ -137,7 +137,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a group or extensible node in progress currentlyif there already wa
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def overrideProperty(aName: String, aAttributes: Double, aType: `type`, bClear: Boolean): Unit = js.native
+  def overrideProperty(aName: String, aAttributes: Double, aType: `type`, bClear: Boolean): Unit
   
   /**
     * receives notification that the value of the current property is overridden.
@@ -146,7 +146,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property in progress currentlyif there already was a change to th
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValue(aValue: js.Any): Unit = js.native
+  def setPropertyValue(aValue: js.Any): Unit
   
   /**
     * receives notification that the value of the current localized property is overridden for a specific locale .
@@ -156,7 +156,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there isn't a property in progress currentlyif the current property isn't local
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit = js.native
+  def setPropertyValueForLocale(aValue: js.Any, aLocale: String): Unit
   
   /**
     * receives notification that a layer description is started for a component.
@@ -165,7 +165,7 @@ trait XLayerHandler extends XInterface {
     * @throws com::sun::star::configuration::backend::MalformedDataException if there is an unfinished layer in progress
     * @throws com::sun::star::lang::WrappedTargetException if an error occurs processing the event.
     */
-  def startLayer(): Unit = js.native
+  def startLayer(): Unit
 }
 object XLayerHandler {
   

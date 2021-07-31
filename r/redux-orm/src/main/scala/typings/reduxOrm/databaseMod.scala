@@ -9,15 +9,17 @@ import typings.std.Extract
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object databaseMod {
   
-  @JSImport("redux-orm/db/Database", JSImport.Default)
+  @JSImport("redux-orm/db/Database", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -26,13 +28,17 @@ object databaseMod {
     I, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-    */ typings.reduxOrm.reduxOrmStrings.default with TopLevel[I]
-  ] = js.native
+    */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(schemaSpec.asInstanceOf[js.Any]).asInstanceOf[Database[
+    I, 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
+    */ typings.reduxOrm.reduxOrmStrings.default & TopLevel[I]
+  ]]
   
-  @JSImport("redux-orm/db/Database", "createDatabase")
-  @js.native
+  @scala.inline
   def createDatabase[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -41,12 +47,16 @@ object databaseMod {
     I, 
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-    */ typings.reduxOrm.reduxOrmStrings.createDatabase with TopLevel[I]
-  ] = js.native
+    */ typings.reduxOrm.reduxOrmStrings.createDatabase & TopLevel[I]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("createDatabase")(schemaSpec.asInstanceOf[js.Any]).asInstanceOf[Database[
+    I, 
+    /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
+    */ typings.reduxOrm.reduxOrmStrings.createDatabase & TopLevel[I]
+  ]]
   
-  @js.native
   trait Database[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -59,7 +69,7 @@ object databaseMod {
       *
       * @return a {@link Table} instance matching given `tableName` or `undefined` if no such table exists.
       */
-    def describe[K /* <: /* keyof Tables */ String */](tableName: K): /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any = js.native
+    def describe[K /* <: /* keyof Tables */ String */](tableName: K): /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any
     
     /**
       * Returns the empty database state.
@@ -68,7 +78,7 @@ object databaseMod {
       *
       * @return empty state
       */
-    def getEmptyState(): OrmState[I] = js.native
+    def getEmptyState(): OrmState[I]
     
     /**
       * Execute a query against a given state.
@@ -82,7 +92,7 @@ object databaseMod {
       *
       * @return a {@link QueryResult} containing 0 to many {@link QueryResult.rows}.
       */
-    def query(querySpec: QuerySpec, state: OrmState[I]): QueryResult[js.Object] = js.native
+    def query(querySpec: QuerySpec, state: OrmState[I]): QueryResult[js.Object]
     
     /**
       * Apply an update to a given state.
@@ -97,13 +107,13 @@ object databaseMod {
       *
       * @return a {@link UpdateResult} containing 0 to many {@link QueryResult.rows}.
       */
-    def update(updateSpec: UpdateSpec[_], tx: Transaction, state: OrmState[I]): UpdateResult[I, js.Object] = js.native
+    def update(updateSpec: UpdateSpec[js.Any], tx: Transaction, state: OrmState[I]): UpdateResult[I, js.Object]
   }
   object Database {
     
     @scala.inline
     def apply[I /* <: IndexedModelClasses[
-        _, 
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -112,20 +122,20 @@ object databaseMod {
       describe: js.Any => /* import warning: importer.ImportType#apply Failed type conversion: Tables[K] */ js.Any,
       getEmptyState: () => OrmState[I],
       query: (QuerySpec, OrmState[I]) => QueryResult[js.Object],
-      update: (UpdateSpec[_], Transaction, OrmState[I]) => UpdateResult[I, js.Object]
+      update: (UpdateSpec[js.Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]
     ): Database[I, Tables] = {
       val __obj = js.Dynamic.literal(describe = js.Any.fromFunction1(describe), getEmptyState = js.Any.fromFunction0(getEmptyState), query = js.Any.fromFunction2(query), update = js.Any.fromFunction3(update))
       __obj.asInstanceOf[Database[I, Tables]]
     }
     
     @scala.inline
-    implicit class DatabaseMutableBuilder[Self <: Database[_, _], I /* <: IndexedModelClasses[
-        _, 
+    implicit class DatabaseMutableBuilder[Self <: Database[?, ?], I /* <: IndexedModelClasses[
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */, Tables] (val x: Self with (Database[I, Tables])) extends AnyVal {
+      ] */, Tables] (val x: Self & (Database[I, Tables])) extends AnyVal {
       
       @scala.inline
       def setDescribe(
@@ -139,7 +149,7 @@ object databaseMod {
       def setQuery(value: (QuerySpec, OrmState[I]) => QueryResult[js.Object]): Self = StObject.set(x, "query", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setUpdate(value: (UpdateSpec[_], Transaction, OrmState[I]) => UpdateResult[I, js.Object]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
+      def setUpdate(value: (UpdateSpec[js.Any], Transaction, OrmState[I]) => UpdateResult[I, js.Object]): Self = StObject.set(x, "update", js.Any.fromFunction3(value))
     }
   }
   
@@ -147,7 +157,7 @@ object databaseMod {
   trait DatabaseCreator extends StObject {
     
     def apply[I /* <: IndexedModelClasses[
-        _, 
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -156,16 +166,15 @@ object databaseMod {
         I, 
         /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.Table<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.DatabaseCreator with TopLevel[I]
+      */ typings.reduxOrm.reduxOrmStrings.DatabaseCreator & TopLevel[I]
       ] = js.native
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var clauses: js.Array[QueryClause[js.Object]] = js.native
+    var clauses: js.Array[QueryClause[js.Object]]
     
-    var table: String = js.native
+    var table: String
   }
   object Query {
     
@@ -189,12 +198,11 @@ object databaseMod {
     }
   }
   
-  @js.native
   trait QueryClause[Payload /* <: js.Object */] extends StObject {
     
-    var payload: Payload = js.native
+    var payload: Payload
     
-    var `type`: QueryType = js.native
+    var `type`: QueryType
   }
   object QueryClause {
     
@@ -206,7 +214,7 @@ object databaseMod {
     }
     
     @scala.inline
-    implicit class QueryClauseMutableBuilder[Self <: QueryClause[_], Payload /* <: js.Object */] (val x: Self with QueryClause[Payload]) extends AnyVal {
+    implicit class QueryClauseMutableBuilder[Self <: QueryClause[?], Payload /* <: js.Object */] (val x: Self & QueryClause[Payload]) extends AnyVal {
       
       @scala.inline
       def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
@@ -216,10 +224,9 @@ object databaseMod {
     }
   }
   
-  @js.native
   trait QueryResult[Row /* <: Record[String, Serializable] */] extends StObject {
     
-    var rows: js.Array[Row] = js.native
+    var rows: js.Array[Row]
   }
   object QueryResult {
     
@@ -230,7 +237,7 @@ object databaseMod {
     }
     
     @scala.inline
-    implicit class QueryResultMutableBuilder[Self <: QueryResult[_], Row /* <: Record[String, Serializable] */] (val x: Self with QueryResult[Row]) extends AnyVal {
+    implicit class QueryResultMutableBuilder[Self <: QueryResult[?], Row /* <: Record[String, Serializable] */] (val x: Self & QueryResult[Row]) extends AnyVal {
       
       @scala.inline
       def setRows(value: js.Array[Row]): Self = StObject.set(x, "rows", value.asInstanceOf[js.Any])
@@ -240,10 +247,9 @@ object databaseMod {
     }
   }
   
-  @js.native
   trait QuerySpec extends StObject {
     
-    var query: Query = js.native
+    var query: Query
   }
   object QuerySpec {
     
@@ -263,9 +269,8 @@ object databaseMod {
   
   type QueryType = /* "REDUX_ORM_FILTER" */ String
   
-  @js.native
   trait SchemaSpec[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -274,13 +279,13 @@ object databaseMod {
     
     var tables: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.ModelTableOpts<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.SchemaSpec with TopLevel[I] = js.native
+      */ typings.reduxOrm.reduxOrmStrings.SchemaSpec & TopLevel[I]
   }
   object SchemaSpec {
     
     @scala.inline
     def apply[I /* <: IndexedModelClasses[
-        _, 
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -288,36 +293,35 @@ object databaseMod {
       ] */](
       tables: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof I ]: redux-orm.redux-orm/db/Table.ModelTableOpts<I[K]>}
-      */ typings.reduxOrm.reduxOrmStrings.SchemaSpec with TopLevel[I]
+      */ typings.reduxOrm.reduxOrmStrings.SchemaSpec & TopLevel[I]
     ): SchemaSpec[I] = {
       val __obj = js.Dynamic.literal(tables = tables.asInstanceOf[js.Any])
       __obj.asInstanceOf[SchemaSpec[I]]
     }
     
     @scala.inline
-    implicit class SchemaSpecMutableBuilder[Self <: SchemaSpec[_], I /* <: IndexedModelClasses[
-        _, 
+    implicit class SchemaSpecMutableBuilder[Self <: SchemaSpec[?], I /* <: IndexedModelClasses[
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */] (val x: Self with SchemaSpec[I]) extends AnyVal {
+      ] */] (val x: Self & SchemaSpec[I]) extends AnyVal {
       
       @scala.inline
       def setTables(
         value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
       {[ K in keyof I ]: redux-orm.redux-orm/db/Table.ModelTableOpts<I[K]>}
-        */ typings.reduxOrm.reduxOrmStrings.SchemaSpec with TopLevel[I]
+        */ typings.reduxOrm.reduxOrmStrings.SchemaSpec & TopLevel[I]
       ): Self = StObject.set(x, "tables", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Transaction extends StObject {
     
-    var batchToken: BatchToken = js.native
+    var batchToken: BatchToken
     
-    var withMutations: Boolean = js.native
+    var withMutations: Boolean
   }
   object Transaction {
     
@@ -338,26 +342,25 @@ object databaseMod {
     }
   }
   
-  @js.native
   trait UpdateResult[I /* <: IndexedModelClasses[
-    _, 
+    js.Any, 
     Extract[
       /* keyof any */ String, 
       /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
     ]
   ] */, Payload /* <: js.Object */] extends StObject {
     
-    var payload: Payload = js.native
+    var payload: Payload
     
-    var state: OrmState[I] = js.native
+    var state: OrmState[I]
     
-    var status: UpdateStatus = js.native
+    var status: UpdateStatus
   }
   object UpdateResult {
     
     @scala.inline
     def apply[I /* <: IndexedModelClasses[
-        _, 
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
@@ -368,13 +371,13 @@ object databaseMod {
     }
     
     @scala.inline
-    implicit class UpdateResultMutableBuilder[Self <: UpdateResult[_, _], I /* <: IndexedModelClasses[
-        _, 
+    implicit class UpdateResultMutableBuilder[Self <: UpdateResult[?, ?], I /* <: IndexedModelClasses[
+        js.Any, 
         Extract[
           /* keyof any */ String, 
           /* import warning: importer.ImportType#apply Failed type conversion: any[keyof any]['modelName'] */ js.Any
         ]
-      ] */, Payload /* <: js.Object */] (val x: Self with (UpdateResult[I, Payload])) extends AnyVal {
+      ] */, Payload /* <: js.Object */] (val x: Self & (UpdateResult[I, Payload])) extends AnyVal {
       
       @scala.inline
       def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
@@ -387,14 +390,13 @@ object databaseMod {
     }
   }
   
-  @js.native
   trait UpdateSpec[Payload] extends StObject {
     
-    var action: UpdateType = js.native
+    var action: UpdateType
     
-    var payload: js.UndefOr[Payload] = js.native
+    var payload: js.UndefOr[Payload] = js.undefined
     
-    var query: js.UndefOr[Query] = js.native
+    var query: js.UndefOr[Query] = js.undefined
   }
   object UpdateSpec {
     
@@ -405,7 +407,7 @@ object databaseMod {
     }
     
     @scala.inline
-    implicit class UpdateSpecMutableBuilder[Self <: UpdateSpec[_], Payload] (val x: Self with UpdateSpec[Payload]) extends AnyVal {
+    implicit class UpdateSpecMutableBuilder[Self <: UpdateSpec[?], Payload] (val x: Self & UpdateSpec[Payload]) extends AnyVal {
       
       @scala.inline
       def setAction(value: UpdateType): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])

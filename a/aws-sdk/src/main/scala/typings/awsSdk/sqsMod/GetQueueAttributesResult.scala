@@ -2,16 +2,14 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetQueueAttributesResult extends StObject {
   
   /**
     * A map of attributes to their respective values.
     */
-  var Attributes: js.UndefOr[QueueAttributeMap] = js.native
+  var Attributes: js.UndefOr[QueueAttributeMap] = js.undefined
 }
 object GetQueueAttributesResult {
   

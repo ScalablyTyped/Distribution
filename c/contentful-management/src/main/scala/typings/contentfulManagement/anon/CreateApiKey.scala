@@ -39,7 +39,6 @@ import typings.contentfulManagement.webhookMod.WebHooks
 import typings.contentfulManagement.webhookMod.WebhookProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -860,8 +859,8 @@ trait CreateApiKey extends StObject {
     * .catch(console.error)
     * ```
     */
-  def getContentTypeSnapshots(contentTypeId: String): js.Promise[Collection[Snapshot[_], SnapshotProps[_]]] = js.native
-  def getContentTypeSnapshots(contentTypeId: String, query: QueryOptions): js.Promise[Collection[Snapshot[_], SnapshotProps[_]]] = js.native
+  def getContentTypeSnapshots(contentTypeId: String): js.Promise[Collection[Snapshot[js.Any], SnapshotProps[js.Any]]] = js.native
+  def getContentTypeSnapshots(contentTypeId: String, query: QueryOptions): js.Promise[Collection[Snapshot[js.Any], SnapshotProps[js.Any]]] = js.native
   
   /**
     * Gets a collection of Content Types
@@ -974,8 +973,8 @@ trait CreateApiKey extends StObject {
     * .catch(console.error)
     * ```
     */
-  def getEntrySnapshots(entryId: String): js.Promise[Collection[Snapshot[_], SnapshotProps[_]]] = js.native
-  def getEntrySnapshots(entryId: String, query: QueryOptions): js.Promise[Collection[Snapshot[_], SnapshotProps[_]]] = js.native
+  def getEntrySnapshots(entryId: String): js.Promise[Collection[Snapshot[js.Any], SnapshotProps[js.Any]]] = js.native
+  def getEntrySnapshots(entryId: String, query: QueryOptions): js.Promise[Collection[Snapshot[js.Any], SnapshotProps[js.Any]]] = js.native
   
   /**
     * Gets an environment

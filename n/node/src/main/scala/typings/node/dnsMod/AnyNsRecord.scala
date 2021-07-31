@@ -3,22 +3,22 @@ package typings.node.dnsMod
 import typings.node.nodeStrings.NS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnyNsRecord extends AnyRecord {
+trait AnyNsRecord
+  extends StObject
+     with AnyRecord {
   
-  var `type`: NS = js.native
+  var `type`: NS
   
-  var value: String = js.native
+  var value: String
 }
 object AnyNsRecord {
   
   @scala.inline
-  def apply(`type`: NS, value: String): AnyNsRecord = {
+  def apply(value: String): AnyNsRecord = {
     val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("NS")
     __obj.asInstanceOf[AnyNsRecord]
   }
   

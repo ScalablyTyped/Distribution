@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Playback
 import typings.winrtUwp.Windows.WinRTError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an error that occurred trying to resolve a MediaPlaybackItem . */
-@js.native
 trait MediaPlaybackItemError extends StObject {
   
   /** Gets the error code associated with the playback item error. */
-  var errorCode: MediaPlaybackItemErrorCode = js.native
+  var errorCode: MediaPlaybackItemErrorCode
   
   /** Gets the extended error code for the MediaPlaybackItem error. */
-  var extendedError: WinRTError = js.native
+  var extendedError: WinRTError
 }
 object MediaPlaybackItemError {
   

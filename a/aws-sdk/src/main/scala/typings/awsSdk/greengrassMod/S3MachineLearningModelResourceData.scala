@@ -2,23 +2,21 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3MachineLearningModelResourceData extends StObject {
   
   /**
     * The absolute local path of the resource inside the Lambda environment.
     */
-  var DestinationPath: js.UndefOr[string] = js.native
+  var DestinationPath: js.UndefOr[string] = js.undefined
   
-  var OwnerSetting: js.UndefOr[ResourceDownloadOwnerSetting] = js.native
+  var OwnerSetting: js.UndefOr[ResourceDownloadOwnerSetting] = js.undefined
   
   /**
     * The URI of the source model in an S3 bucket. The model package must be in tar.gz or .zip format.
     */
-  var S3Uri: js.UndefOr[string] = js.native
+  var S3Uri: js.UndefOr[string] = js.undefined
 }
 object S3MachineLearningModelResourceData {
   

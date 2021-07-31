@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buffered extends StObject {
   
   /** 百分比 */
-  var buffered: Double = js.native
+  var buffered: Double
 }
 object Buffered {
   

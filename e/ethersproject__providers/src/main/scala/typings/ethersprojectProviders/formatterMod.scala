@@ -7,10 +7,13 @@ import typings.ethersprojectAbstractProvider.mod.TransactionResponse
 import typings.ethersprojectBignumber.mod.BigNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formatterMod {
+  
+  @JSImport("@ethersproject/providers/lib/formatter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/providers/lib/formatter", "Formatter")
   @js.native
@@ -72,42 +75,37 @@ object formatterMod {
   /* static members */
   object Formatter {
     
-    @JSImport("@ethersproject/providers/lib/formatter", "Formatter.allowFalsish")
+    @JSImport("@ethersproject/providers/lib/formatter", "Formatter")
     @js.native
-    def allowFalsish(format: FormatFunc, replaceValue: js.Any): FormatFunc = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@ethersproject/providers/lib/formatter", "Formatter.allowNull")
-    @js.native
-    def allowNull(format: FormatFunc): FormatFunc = js.native
-    @JSImport("@ethersproject/providers/lib/formatter", "Formatter.allowNull")
-    @js.native
-    def allowNull(format: FormatFunc, nullValue: js.Any): FormatFunc = js.native
+    @scala.inline
+    def allowFalsish(format: FormatFunc, replaceValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowFalsish")(format.asInstanceOf[js.Any], replaceValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
     
-    @JSImport("@ethersproject/providers/lib/formatter", "Formatter.arrayOf")
-    @js.native
-    def arrayOf(format: FormatFunc): FormatFunc = js.native
+    @scala.inline
+    def allowNull(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    @scala.inline
+    def allowNull(format: FormatFunc, nullValue: js.Any): FormatFunc = (^.asInstanceOf[js.Dynamic].applyDynamic("allowNull")(format.asInstanceOf[js.Any], nullValue.asInstanceOf[js.Any])).asInstanceOf[FormatFunc]
     
-    @JSImport("@ethersproject/providers/lib/formatter", "Formatter.check")
-    @js.native
-    def check(format: StringDictionary[FormatFunc], `object`: js.Any): js.Any = js.native
+    @scala.inline
+    def arrayOf(format: FormatFunc): FormatFunc = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayOf")(format.asInstanceOf[js.Any]).asInstanceOf[FormatFunc]
+    
+    @scala.inline
+    def check(format: StringDictionary[FormatFunc], `object`: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(format.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
-  @JSImport("@ethersproject/providers/lib/formatter", "isCommunityResourcable")
-  @js.native
-  def isCommunityResourcable(value: js.Any): /* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean = js.native
+  @scala.inline
+  def isCommunityResourcable(value: js.Any): /* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResourcable")(value.asInstanceOf[js.Any]).asInstanceOf[/* is @ethersproject/providers.@ethersproject/providers/lib/formatter.CommunityResourcable */ Boolean]
   
-  @JSImport("@ethersproject/providers/lib/formatter", "isCommunityResource")
-  @js.native
-  def isCommunityResource(value: js.Any): Boolean = js.native
+  @scala.inline
+  def isCommunityResource(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCommunityResource")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@ethersproject/providers/lib/formatter", "showThrottleMessage")
-  @js.native
-  def showThrottleMessage(): Unit = js.native
+  @scala.inline
+  def showThrottleMessage(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showThrottleMessage")().asInstanceOf[Unit]
   
-  @js.native
   trait CommunityResourcable extends StObject {
     
-    def isCommunityResource(): Boolean = js.native
+    def isCommunityResource(): Boolean
   }
   object CommunityResourcable {
     
@@ -129,24 +127,23 @@ object formatterMod {
   
   type FormatFuncs = StringDictionary[FormatFunc]
   
-  @js.native
   trait Formats extends StObject {
     
-    var block: FormatFuncs = js.native
+    var block: FormatFuncs
     
-    var blockWithTransactions: FormatFuncs = js.native
+    var blockWithTransactions: FormatFuncs
     
-    var filter: FormatFuncs = js.native
+    var filter: FormatFuncs
     
-    var filterLog: FormatFuncs = js.native
+    var filterLog: FormatFuncs
     
-    var receipt: FormatFuncs = js.native
+    var receipt: FormatFuncs
     
-    var receiptLog: FormatFuncs = js.native
+    var receiptLog: FormatFuncs
     
-    var transaction: FormatFuncs = js.native
+    var transaction: FormatFuncs
     
-    var transactionRequest: FormatFuncs = js.native
+    var transactionRequest: FormatFuncs
   }
   object Formats {
     

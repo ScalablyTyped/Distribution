@@ -2,15 +2,15 @@ package typings.winrt.Windows.ApplicationModel.Activation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISearchActivatedEventArgs extends IActivatedEventArgs {
+trait ISearchActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var language: String = js.native
+  var language: String
   
-  var queryText: String = js.native
+  var queryText: String
 }
 object ISearchActivatedEventArgs {
   

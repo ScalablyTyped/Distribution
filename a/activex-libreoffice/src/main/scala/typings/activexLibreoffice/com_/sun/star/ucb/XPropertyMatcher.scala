@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Checks whether a set of properties matches a set of search criteria.
   * @see XPropertyMatcherFactory.
   */
-@js.native
-trait XPropertyMatcher extends XInterface {
+trait XPropertyMatcher
+  extends StObject
+     with XInterface {
   
   /**
     * Checks whether a set of properties matches the given search criteria.
@@ -20,7 +20,7 @@ trait XPropertyMatcher extends XInterface {
     * @param Environment The environment to use when accessing the property set via the given {@link Command} Processor. It may be null.
     * @returns `TRUE` if the properties match, `FALSE` otherwise.
     */
-  def matches(Properties: XCommandProcessor, Environment: XCommandEnvironment): Boolean = js.native
+  def matches(Properties: XCommandProcessor, Environment: XCommandEnvironment): Boolean
 }
 object XPropertyMatcher {
   

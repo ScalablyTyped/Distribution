@@ -2,29 +2,27 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Avg extends StObject {
   
-  var avg: js.UndefOr[String] = js.native
+  var avg: js.UndefOr[String] = js.undefined
   
-  var avgOtherColumn: js.UndefOr[String] = js.native
+  var avgOtherColumn: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[String] = js.native
+  var count: js.UndefOr[String] = js.undefined
   
-  var max: js.UndefOr[String] = js.native
+  var max: js.UndefOr[String] = js.undefined
   
-  var maxOtherColumn: js.UndefOr[String] = js.native
+  var maxOtherColumn: js.UndefOr[String] = js.undefined
   
-  var min: js.UndefOr[String] = js.native
+  var min: js.UndefOr[String] = js.undefined
   
-  var minOtherColumn: js.UndefOr[String] = js.native
+  var minOtherColumn: js.UndefOr[String] = js.undefined
   
-  var sum: js.UndefOr[String] = js.native
+  var sum: js.UndefOr[String] = js.undefined
   
-  var sumOtherColumn: js.UndefOr[String] = js.native
+  var sumOtherColumn: js.UndefOr[String] = js.undefined
 }
 object Avg {
   

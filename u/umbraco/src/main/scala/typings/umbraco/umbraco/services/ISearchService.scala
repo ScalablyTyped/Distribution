@@ -3,7 +3,6 @@ package typings.umbraco.umbraco.services
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,7 +14,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Service for handling the main application search, can currently search content, media and members
   *
   */
-@js.native
 trait ISearchService extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait ISearchService extends StObject {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching items
     */
-  def searchAll(args: ISearchArgs): IPromise[_] = js.native
+  def searchAll(args: ISearchArgs): IPromise[js.Any]
   
   /**
     * @ngdoc method
@@ -42,7 +40,7 @@ trait ISearchService extends StObject {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching content items
     */
-  def searchContent(args: ISearchArgs): IPromise[js.Array[ISearchContent]] = js.native
+  def searchContent(args: ISearchArgs): IPromise[js.Array[ISearchContent]]
   
   /**
     * @ngdoc method
@@ -55,7 +53,7 @@ trait ISearchService extends StObject {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching media items
     */
-  def searchMedia(args: ISearchArgs): IPromise[js.Array[ISearchMedia]] = js.native
+  def searchMedia(args: ISearchArgs): IPromise[js.Array[ISearchMedia]]
   
   /**
     * @ngdoc method
@@ -68,13 +66,13 @@ trait ISearchService extends StObject {
     * @param {String} args.term seach term
     * @returns {Promise} returns promise containing all matching members
     */
-  def searchMembers(args: ISearchArgs): IPromise[js.Array[ISearchMember]] = js.native
+  def searchMembers(args: ISearchArgs): IPromise[js.Array[ISearchMember]]
 }
 object ISearchService {
   
   @scala.inline
   def apply(
-    searchAll: ISearchArgs => IPromise[_],
+    searchAll: ISearchArgs => IPromise[js.Any],
     searchContent: ISearchArgs => IPromise[js.Array[ISearchContent]],
     searchMedia: ISearchArgs => IPromise[js.Array[ISearchMedia]],
     searchMembers: ISearchArgs => IPromise[js.Array[ISearchMember]]
@@ -87,7 +85,7 @@ object ISearchService {
   implicit class ISearchServiceMutableBuilder[Self <: ISearchService] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setSearchAll(value: ISearchArgs => IPromise[_]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
+    def setSearchAll(value: ISearchArgs => IPromise[js.Any]): Self = StObject.set(x, "searchAll", js.Any.fromFunction1(value))
     
     @scala.inline
     def setSearchContent(value: ISearchArgs => IPromise[js.Array[ISearchContent]]): Self = StObject.set(x, "searchContent", js.Any.fromFunction1(value))

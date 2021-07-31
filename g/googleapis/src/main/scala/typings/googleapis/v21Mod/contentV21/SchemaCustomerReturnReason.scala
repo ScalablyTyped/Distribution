@@ -2,15 +2,13 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCustomerReturnReason extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var reasonCode: js.UndefOr[String] = js.native
+  var reasonCode: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomerReturnReason {
   

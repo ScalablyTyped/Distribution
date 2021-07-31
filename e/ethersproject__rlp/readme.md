@@ -10,9 +10,9 @@ Recursive-Length Prefix (RLP) coder.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/rlp |
 | Keywords           | Ethereum, ethers, rlp |
-| # releases         | 23 |
-| # dependents       | 17 |
-| # downloads        | 1728542 |
+| # releases         | 26 |
+| # dependents       | 24 |
+| # downloads        | 2859389 |
 | # stars            | 0 |
 
 ## Links

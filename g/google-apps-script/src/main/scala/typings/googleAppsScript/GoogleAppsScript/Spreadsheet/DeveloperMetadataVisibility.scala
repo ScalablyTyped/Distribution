@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait DeveloperMetadataVisibility extends StObject
 object DeveloperMetadataVisibility extends StObject {
   
   @js.native
-  sealed trait DOCUMENT extends DeveloperMetadataVisibility
+  sealed trait DOCUMENT
+    extends StObject
+       with DeveloperMetadataVisibility
   
   @js.native
-  sealed trait PROJECT extends DeveloperMetadataVisibility
+  sealed trait PROJECT
+    extends StObject
+       with DeveloperMetadataVisibility
 }

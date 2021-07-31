@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * k-anonymity metric, used for analysis of reidentification risk.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2KAnonymityConfig extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaGooglePrivacyDlpV2KAnonymityConfig extends StObject {
     * note: a maximum of 1000 rows can be associated to a single entity ID. If
     * more rows are associated with the same entity ID, some might be ignored.
     */
-  var entityId: js.UndefOr[SchemaGooglePrivacyDlpV2EntityId] = js.native
+  var entityId: js.UndefOr[SchemaGooglePrivacyDlpV2EntityId] = js.undefined
   
   /**
     * Set of fields to compute k-anonymity over. When multiple fields are
@@ -30,7 +28,7 @@ trait SchemaGooglePrivacyDlpV2KAnonymityConfig extends StObject {
     * supported so long as they are not structs themselves or nested within a
     * repeated field.
     */
-  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.native
+  var quasiIds: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2FieldId]] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2KAnonymityConfig {
   

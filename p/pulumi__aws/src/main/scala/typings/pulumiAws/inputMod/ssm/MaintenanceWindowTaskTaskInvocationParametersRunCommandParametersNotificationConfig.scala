@@ -3,26 +3,24 @@ package typings.pulumiAws.inputMod.ssm
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) for a Simple Notification Service (SNS) topic. Run Command pushes notifications about command status changes to this topic.
     */
-  var notificationArn: js.UndefOr[Input[String]] = js.native
+  var notificationArn: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The different events for which you can receive notifications. Valid values: `All`, `InProgress`, `Success`, `TimedOut`, `Cancelled`, and `Failed`
     */
-  var notificationEvents: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+  var notificationEvents: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
   
   /**
     * When specified with `Command`, receive notification when the status of a command changes. When specified with `Invocation`, for commands sent to multiple instances, receive notification on a per-instance basis when the status of a command changes. Valid values: `Command` and `Invocation`
     */
-  var notificationType: js.UndefOr[Input[String]] = js.native
+  var notificationType: js.UndefOr[Input[String]] = js.undefined
 }
 object MaintenanceWindowTaskTaskInvocationParametersRunCommandParametersNotificationConfig {
   

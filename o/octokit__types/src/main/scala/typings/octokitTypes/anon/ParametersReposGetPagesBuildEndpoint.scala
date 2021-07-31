@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetPagesBuildResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetPagesBuildEndpoint extends StObject {
   
-  var parameters: ReposGetPagesBuildEndpoint = js.native
+  var parameters: ReposGetPagesBuildEndpoint
   
-  var request: ReposGetPagesBuildRequestOptions = js.native
+  var request: ReposGetPagesBuildRequestOptions
   
-  var response: OctokitResponse[ReposGetPagesBuildResponseData] = js.native
+  var response: OctokitResponse[ReposGetPagesBuildResponseData]
 }
 object ParametersReposGetPagesBuildEndpoint {
   

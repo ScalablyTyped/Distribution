@@ -2,7 +2,6 @@ package typings.gamequery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -81,9 +80,9 @@ trait JQuery extends StObject {
   
   def setAnimation(): JQuery = js.native
   def setAnimation(animation: Double): JQuery = js.native
-  def setAnimation(animation: Double, callback: js.Function0[_]): JQuery = js.native
+  def setAnimation(animation: Double, callback: js.Function0[js.Any]): JQuery = js.native
   def setAnimation(animation: Animation): JQuery = js.native
-  def setAnimation(animation: Animation, callback: js.Function0[_]): JQuery = js.native
+  def setAnimation(animation: Animation, callback: js.Function0[js.Any]): JQuery = js.native
   
   def startGame(): JQuery = js.native
   def startGame(callback: js.Function0[Unit]): JQuery = js.native

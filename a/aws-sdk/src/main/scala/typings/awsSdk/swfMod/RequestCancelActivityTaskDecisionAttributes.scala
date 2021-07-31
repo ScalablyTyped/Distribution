@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestCancelActivityTaskDecisionAttributes extends StObject {
   
   /**
     * The activityId of the activity task to be canceled.
     */
-  var activityId: ActivityId = js.native
+  var activityId: ActivityId
 }
 object RequestCancelActivityTaskDecisionAttributes {
   

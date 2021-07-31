@@ -2,14 +2,12 @@ package typings.activexLibreoffice.com_.sun.star.awt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides access to the style settings of a component */
-@js.native
 trait XStyleSettingsSupplier extends StObject {
   
-  var StyleSettings: XStyleSettings = js.native
+  var StyleSettings: XStyleSettings
 }
 object XStyleSettingsSupplier {
   

@@ -2,7 +2,6 @@ package typings.googleapis.containeranalysisV1alpha1Mod.containeranalysisV1alpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,13 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Absence of an occurrence linked to this note for a resource indicates that
   * analysis hasn&#39;t started.
   */
-@js.native
 trait SchemaDiscovery extends StObject {
   
   /**
     * The kind of analysis that is handled by this discovery.
     */
-  var analysisKind: js.UndefOr[String] = js.native
+  var analysisKind: js.UndefOr[String] = js.undefined
 }
 object SchemaDiscovery {
   

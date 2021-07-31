@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsElbLoadBalancerBackendServerDescription extends StObject {
   
   /**
     * The port on which the EC2 instance is listening.
     */
-  var InstancePort: js.UndefOr[Integer] = js.native
+  var InstancePort: js.UndefOr[Integer] = js.undefined
   
   /**
     * The names of the policies that are enabled for the EC2 instance.
     */
-  var PolicyNames: js.UndefOr[StringList] = js.native
+  var PolicyNames: js.UndefOr[StringList] = js.undefined
 }
 object AwsElbLoadBalancerBackendServerDescription {
   

@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,8 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * document structure, see the guide to
   * extending Google Docs.
   */
-@js.native
-trait EquationFunctionArgumentSeparator extends Element
+trait EquationFunctionArgumentSeparator
+  extends StObject
+     with Element
 object EquationFunctionArgumentSeparator {
   
   @scala.inline

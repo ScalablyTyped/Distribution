@@ -2,13 +2,13 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VertexAttachment extends Attachment {
+trait VertexAttachment
+  extends StObject
+     with Attachment {
   
-  var bones: js.Array[Double] = js.native
+  var bones: js.Array[Double]
   
   def computeWorldVertices(
     slot: Slot,
@@ -17,19 +17,19 @@ trait VertexAttachment extends Attachment {
     worldVertices: ArrayLike[Double],
     offset: Double,
     stride: Double
-  ): Unit = js.native
+  ): Unit
   
-  def computeWorldVerticesOld(slot: Slot, worldVertices: ArrayLike[Double]): Unit = js.native
+  def computeWorldVerticesOld(slot: Slot, worldVertices: ArrayLike[Double]): Unit
   
-  def copyTo(attachment: VertexAttachment): Unit = js.native
+  def copyTo(attachment: VertexAttachment): Unit
   
-  var deformAttachment: VertexAttachment = js.native
+  var deformAttachment: VertexAttachment
   
-  var id: Double = js.native
+  var id: Double
   
-  var vertices: ArrayLike[Double] = js.native
+  var vertices: ArrayLike[Double]
   
-  var worldVerticesLength: Double = js.native
+  var worldVerticesLength: Double
 }
 object VertexAttachment {
   

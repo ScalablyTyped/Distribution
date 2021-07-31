@@ -2,10 +2,8 @@ package typings.igniteUi.Infragistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgValidatorEmailRule extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait IgValidatorEmailRule extends StObject {
     *
     * @param message The unformatted error message the validator intends to display.
     */
-  def formatMessage(message: String): String = js.native
+  def formatMessage(message: String): String
   
   /**
     * Gets the error message type to get from locale settings (matching as "<type>Message>"). Returns the rule name by default.
@@ -21,16 +19,16 @@ trait IgValidatorEmailRule extends StObject {
     *
     * @param options
     */
-  def getMessageType(options: js.Object): String = js.native
+  def getMessageType(options: js.Object): String
   
   /**
     * Gets an errorMessage from either the rule or field/global options.
     *
     * @param options
     */
-  def getRuleMessage(options: js.Object): String = js.native
+  def getRuleMessage(options: js.Object): String
   
-  def isValid(options: js.Object, value: js.Object): Unit = js.native
+  def isValid(options: js.Object, value: js.Object): Unit
   
   /**
     * Checks if rule should run on the current field and/or value.
@@ -38,7 +36,7 @@ trait IgValidatorEmailRule extends StObject {
     * @param options Options for the validator, if fields are used this parameter is already populated with inherited ones.
     * @param value The stringified value to check.
     */
-  def shouldRun(options: js.Object, value: String): Boolean = js.native
+  def shouldRun(options: js.Object, value: String): Boolean
 }
 object IgValidatorEmailRule {
   

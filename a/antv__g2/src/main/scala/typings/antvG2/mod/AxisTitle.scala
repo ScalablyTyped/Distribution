@@ -6,34 +6,32 @@ import typings.antvG2.antvG2Strings.start
 import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 坐标轴线
   */
-@js.native
 trait AxisTitle extends StObject {
   
   /**
     * 是否需要自动旋转，默认为 `true`
     */
-  var autoRotate: js.UndefOr[Boolean] = js.native
+  var autoRotate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 数值，设置坐标轴标题距离坐标轴线的距离
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * 标题的显示位置（相对于坐标轴线）
     */
-  var position: js.UndefOr[start | center | end] = js.native
+  var position: js.UndefOr[start | center | end] = js.undefined
   
   /**
     * 设置标题的文本样式
     */
-  var textStyle: js.UndefOr[text] = js.native
+  var textStyle: js.UndefOr[text] = js.undefined
 }
 object AxisTitle {
   

@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Definition of a cart item.
   */
-@js.native
 trait DisplayItem extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait DisplayItem extends StObject {
     *
     * This field is required.
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * Price of this item.
@@ -25,7 +23,7 @@ trait DisplayItem extends StObject {
     * format:
     * `^[0-9]+(\.[0-9][0-9])?$` (e.g., `"10.45"`)
     */
-  var price: String = js.native
+  var price: String
   
   /**
     * The status of a DisplayItem.
@@ -33,7 +31,7 @@ trait DisplayItem extends StObject {
     * This field is optional and default value is
     * [[DisplayItemStatus|`FINAL`]] if absent.
     */
-  var status: js.UndefOr[DisplayItemStatus] = js.native
+  var status: js.UndefOr[DisplayItemStatus] = js.undefined
   
   /**
     * Type of displayed line item, this is going to be used for analysis
@@ -41,7 +39,7 @@ trait DisplayItem extends StObject {
     *
     * This field is required.
     */
-  var `type`: DisplayItemType = js.native
+  var `type`: DisplayItemType
 }
 object DisplayItem {
   

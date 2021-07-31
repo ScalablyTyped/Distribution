@@ -2,19 +2,17 @@ package typings.scroller
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Left extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
     
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object Left {
     
@@ -38,12 +36,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PageX extends StObject {
     
-    var pageX: Double = js.native
+    var pageX: Double
     
-    var pageY: Double = js.native
+    var pageY: Double
   }
   object PageX {
     
@@ -64,12 +61,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Top extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Top {
     

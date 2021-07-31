@@ -4,45 +4,39 @@ import typings.searchParams.encodeMod.IOptions
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("search-params", "build")
+  @JSImport("search-params", JSImport.Namespace)
   @js.native
-  def build[T /* <: Record[String, _] */](params: T): String = js.native
-  @JSImport("search-params", "build")
-  @js.native
-  def build[T /* <: Record[String, _] */](params: T, opts: IOptions): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("search-params", "keep")
-  @js.native
-  def keep(path: String, paramsToKeep: js.Array[String]): IKeepResponse = js.native
-  @JSImport("search-params", "keep")
-  @js.native
-  def keep(path: String, paramsToKeep: js.Array[String], opts: IOptions): IKeepResponse = js.native
+  @scala.inline
+  def build[T /* <: Record[String, js.Any] */](params: T): String = ^.asInstanceOf[js.Dynamic].applyDynamic("build")(params.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def build[T /* <: Record[String, js.Any] */](params: T, opts: IOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("build")(params.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("search-params", "omit")
-  @js.native
-  def omit(path: String, paramsToOmit: js.Array[String]): IOmitResponse = js.native
-  @JSImport("search-params", "omit")
-  @js.native
-  def omit(path: String, paramsToOmit: js.Array[String], opts: IOptions): IOmitResponse = js.native
+  @scala.inline
+  def keep(path: String, paramsToKeep: js.Array[String]): IKeepResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(path.asInstanceOf[js.Any], paramsToKeep.asInstanceOf[js.Any])).asInstanceOf[IKeepResponse]
+  @scala.inline
+  def keep(path: String, paramsToKeep: js.Array[String], opts: IOptions): IKeepResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("keep")(path.asInstanceOf[js.Any], paramsToKeep.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IKeepResponse]
   
-  @JSImport("search-params", "parse")
-  @js.native
-  def parse[T /* <: Record[String, _] */](path: String): T = js.native
-  @JSImport("search-params", "parse")
-  @js.native
-  def parse[T /* <: Record[String, _] */](path: String, opts: IOptions): T = js.native
+  @scala.inline
+  def omit(path: String, paramsToOmit: js.Array[String]): IOmitResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(path.asInstanceOf[js.Any], paramsToOmit.asInstanceOf[js.Any])).asInstanceOf[IOmitResponse]
+  @scala.inline
+  def omit(path: String, paramsToOmit: js.Array[String], opts: IOptions): IOmitResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("omit")(path.asInstanceOf[js.Any], paramsToOmit.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[IOmitResponse]
   
-  @js.native
+  @scala.inline
+  def parse[T /* <: Record[String, js.Any] */](path: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def parse[T /* <: Record[String, js.Any] */](path: String, opts: IOptions): T = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(path.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   trait IKeepResponse extends StObject {
     
-    var keptParams: js.Object = js.native
+    var keptParams: js.Object
     
-    var querystring: String = js.native
+    var querystring: String
   }
   object IKeepResponse {
     
@@ -63,12 +57,11 @@ object mod {
     }
   }
   
-  @js.native
   trait IOmitResponse extends StObject {
     
-    var querystring: String = js.native
+    var querystring: String
     
-    var removedParams: js.Object = js.native
+    var removedParams: js.Object
   }
   object IOmitResponse {
     

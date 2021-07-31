@@ -2,31 +2,31 @@ package typings.protonNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaRectangleProps extends AreaBaseProps {
+trait AreaRectangleProps
+  extends StObject
+     with AreaBaseProps {
   
   /**
     * The height of the rectangle.
     */
-  var height: Double | String = js.native
+  var height: Double | String
   
   /**
     * The width of the rectangle.
     */
-  var width: Double | String = js.native
+  var width: Double | String
   
   /**
     * The x coordinate of the rectangles top left corner.
     */
-  var x: Double | String = js.native
+  var x: Double | String
   
   /**
     * The y coordinate of the rectangles top left corner.
     */
-  var y: Double | String = js.native
+  var y: Double | String
 }
 object AreaRectangleProps {
   

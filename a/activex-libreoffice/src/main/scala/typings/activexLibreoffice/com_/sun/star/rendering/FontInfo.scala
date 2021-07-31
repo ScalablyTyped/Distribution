@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 import typings.activexLibreoffice.com_.sun.star.util.TriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This structure provides information about a specific font.
   * @since OOo 2.0
   */
-@js.native
 trait FontInfo extends StObject {
   
   /**
@@ -20,21 +18,21 @@ trait FontInfo extends StObject {
     *
     * Note: outlined fonts are now specified with "outline" as part of the family name.
     */
-  var FamilyName: String = js.native
+  var FamilyName: String
   
   /**
     * The PANOSE font classification.
     *
     * TODO: Document semantics in {@link Panose.idl}
     */
-  var FontDescription: Panose = js.native
+  var FontDescription: Panose
   
   /**
     * Specifies whether the font is a symbol font.
     *
     * If yes, text written in this symbol font does not have a specified meaning.
     */
-  var IsSymbolFont: TriState = js.native
+  var IsSymbolFont: TriState
   
   /**
     * Set to true, if the font is usable for vertical text output.
@@ -42,14 +40,14 @@ trait FontInfo extends StObject {
     * Vertical fonts have subtle differences to horizontal ones, e.g. rotated or differently shaped glyphs, or special rotated versions of normally upright
     * glyphs (e.g. brackets).
     */
-  var IsVertical: TriState = js.native
+  var IsVertical: TriState
   
   /**
     * The name of the specific font style within its family.
     *
     * For example, oblique, italic, or narrow.
     */
-  var StyleName: String = js.native
+  var StyleName: String
   
   /**
     * This value specifies which Unicode ranges are supported by this font.
@@ -62,13 +60,13 @@ trait FontInfo extends StObject {
     * int128 UNICODE_RANGE_LATIN_EXTENDED_B = 4; ... const int128 UNICODE_RANGE_MASK_LATIN = 1; const int128 UNICODE_RANGE_MASK_CJK = (31<<48) + (3<<55) +
     * (1<<59); const int128 UNICODE_RANGE_MASK_CTL = (1<<11) + (1<<13) + (0x3FFF<<15) + (0x0FFF<<70);
     */
-  var UnicodeRanges0: Double = js.native
+  var UnicodeRanges0: Double
   
-  var UnicodeRanges1: Double = js.native
+  var UnicodeRanges1: Double
   
-  var UnicodeRanges2: Double = js.native
+  var UnicodeRanges2: Double
   
-  var UnicodeRanges3: Double = js.native
+  var UnicodeRanges3: Double
 }
 object FontInfo {
   

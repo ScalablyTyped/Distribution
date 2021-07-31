@@ -2,13 +2,11 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RevisionSpec holds the desired state of the Revision (from the client).
   */
-@js.native
 trait SchemaRevisionSpec extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaRevisionSpec extends StObject {
     * Multi) for the Revision. Defaults to Multi. Deprecated in favor of
     * ContainerConcurrency. +optional
     */
-  var concurrencyModel: js.UndefOr[String] = js.native
+  var concurrencyModel: js.UndefOr[String] = js.undefined
   
   /**
     * Container defines the unit of execution for this Revision. In the context
@@ -25,7 +23,7 @@ trait SchemaRevisionSpec extends StObject {
     * documented here:
     * https://github.com/knative/serving/blob/master/docs/runtime-contract.md
     */
-  var container: js.UndefOr[SchemaContainer] = js.native
+  var container: js.UndefOr[SchemaContainer] = js.undefined
   
   /**
     * ContainerConcurrency specifies the maximum allowed in-flight (concurrent)
@@ -34,19 +32,19 @@ trait SchemaRevisionSpec extends StObject {
     * value. - `1` not-thread-safe. Single concurrency - `2-N` thread-safe, max
     * concurrency of N
     */
-  var containerConcurrency: js.UndefOr[Double] = js.native
+  var containerConcurrency: js.UndefOr[Double] = js.undefined
   
   /**
     * Deprecated and not currently populated by Cloud Run. See
     * metadata.generation instead, which is the sequence number containing the
     * latest generation of the desired state.  Read-only.
     */
-  var generation: js.UndefOr[Double] = js.native
+  var generation: js.UndefOr[Double] = js.undefined
   
   /**
     * Not currently used by Cloud Run.
     */
-  var serviceAccountName: js.UndefOr[String] = js.native
+  var serviceAccountName: js.UndefOr[String] = js.undefined
   
   /**
     * ServingState holds a value describing the state the resources are in for
@@ -54,13 +52,13 @@ trait SchemaRevisionSpec extends StObject {
     * is expected that the system will manipulate this based on routability and
     * load.  Populated by the system. Read-only.
     */
-  var servingState: js.UndefOr[String] = js.native
+  var servingState: js.UndefOr[String] = js.undefined
   
   /**
     * TimeoutSeconds holds the max duration the instance is allowed for
     * responding to a request. Not currently used by Cloud Run.
     */
-  var timeoutSeconds: js.UndefOr[Double] = js.native
+  var timeoutSeconds: js.UndefOr[Double] = js.undefined
 }
 object SchemaRevisionSpec {
   

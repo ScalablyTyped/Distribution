@@ -2,17 +2,15 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunOptions extends StObject {
   
   /** if true returns the repeat view (cached) data */
-  var repeatView: js.UndefOr[Boolean] = js.native
+  var repeatView: js.UndefOr[Boolean] = js.undefined
   
   /** the test run number for multiple runs tests (default: 1, first test) */
-  var run: js.UndefOr[Double] = js.native
+  var run: js.UndefOr[Double] = js.undefined
 }
 object RunOptions {
   

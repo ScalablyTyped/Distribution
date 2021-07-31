@@ -2,11 +2,12 @@ package typings.ejWebAll.ej
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecurrenceEditor extends Widget_ {
+trait RecurrenceEditor
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -34,24 +35,23 @@ trait RecurrenceEditor extends Widget_ {
 }
 object RecurrenceEditor {
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** When set to true, event gets canceled.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** Returns the Recurrence Editor model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** Returns the recurrence rule value.
       */
-    var recurrenceRule: js.UndefOr[String] = js.native
+    var recurrenceRule: js.UndefOr[String] = js.undefined
     
     /** Returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -90,68 +90,67 @@ object RecurrenceEditor {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers whenever any of the Recurrence Editor's value is changed.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Accepts the custom CSS class name, that defines user-defined styles and themes to be applied on partial or complete elements of the Recurrence Editor.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Sets the date format for the datepickers available within the Recurrence Editor.
       */
-    var dateFormat: js.UndefOr[String] = js.native
+    var dateFormat: js.UndefOr[String] = js.undefined
     
     /** When set to true, renders the Recurrence Editor options from Right-to-Left direction.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** When set to true, enables the spin button of numeric textboxes within the Recurrence Editor.
       * @Default {true}
       */
-    var enableSpinners: js.UndefOr[Boolean] = js.native
+    var enableSpinners: js.UndefOr[Boolean] = js.undefined
     
     /** Sets the starting day of the week.
       * @Default {null}
       */
-    var firstDayOfWeek: js.UndefOr[String] = js.native
+    var firstDayOfWeek: js.UndefOr[String] = js.undefined
     
     /** Defines the collection of recurrence frequencies within Recurrence Editor such as Never, Daily, Weekly, Monthly, Yearly and Every Weekday.
       * @Default {[never, daily, weekly, monthly, yearly, everyweekday]}
       */
-    var frequencies: js.UndefOr[js.Array[_]] = js.native
+    var frequencies: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Sets the specific culture to the Recurrence Editor.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the maximum date limit to display on the datepickers used within the Recurrence Editor. Setting maxDate with specific date value disallows the datepickers within the
       * Recurrence Editor to navigate beyond that date.
       * @Default {new Date(2099, 12, 31)}
       */
-    var maxDate: js.UndefOr[js.Any] = js.native
+    var maxDate: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the minimum date limit to display on the datepickers defined within the Recurrence Editor. Setting minDate with specific date value disallows the datepickers within
       * Recurrence Editor to navigate beyond that date.
       * @Default {new Date(1900, 01, 01)}
       */
-    var minDate: js.UndefOr[js.Any] = js.native
+    var minDate: js.UndefOr[js.Any] = js.undefined
     
     /** Sets the active/current repeat type(frequency) on Recurrence Editor based on the index value provided. For example, setting the value 1 will initially set the repeat type as Daily
       * and display its related options.
       * @Default {0}
       */
-    var selectedRecurrenceType: js.UndefOr[Double] = js.native
+    var selectedRecurrenceType: js.UndefOr[Double] = js.undefined
     
     /** Sets the start date of the recurrence. The Recurrence Editor initially displays the current date as its start date.
       * @Default {new Date()}
       */
-    var startDate: js.UndefOr[js.Any] = js.native
+    var startDate: js.UndefOr[js.Any] = js.undefined
   }
   object Model {
     
@@ -201,7 +200,7 @@ object RecurrenceEditor {
       def setFirstDayOfWeekUndefined: Self = StObject.set(x, "firstDayOfWeek", js.undefined)
       
       @scala.inline
-      def setFrequencies(value: js.Array[_]): Self = StObject.set(x, "frequencies", value.asInstanceOf[js.Any])
+      def setFrequencies(value: js.Array[js.Any]): Self = StObject.set(x, "frequencies", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFrequenciesUndefined: Self = StObject.set(x, "frequencies", js.undefined)

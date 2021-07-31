@@ -3,12 +3,15 @@ package typings.octokitTypes
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getResponseTypeFromEndpointMethodMod {
   
-  type AnyFunction = js.Function1[/* repeated */ js.Any, js.Any]
+  @js.native
+  trait AnyFunction extends StObject {
+    
+    def apply(args: js.Any*): js.Any = js.native
+  }
   
   type GetResponseDataTypeFromEndpointMethod[T /* <: AnyFunction */] = /* import warning: importer.ImportType#apply Failed type conversion: @octokit/types.@octokit/types/dist-types/GetResponseTypeFromEndpointMethod.Unwrap<std.ReturnType<T>>['data'] */ js.Any
   

@@ -2,25 +2,23 @@ package typings.devextreme.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HighlightCaseSensitive extends StObject {
   
-  var highlightCaseSensitive: js.UndefOr[Boolean] = js.native
+  var highlightCaseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  var highlightSearchText: js.UndefOr[Boolean] = js.native
+  var highlightSearchText: js.UndefOr[Boolean] = js.undefined
   
-  var placeholder: js.UndefOr[String] = js.native
+  var placeholder: js.UndefOr[String] = js.undefined
   
-  var searchVisibleColumnsOnly: js.UndefOr[Boolean] = js.native
+  var searchVisibleColumnsOnly: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object HighlightCaseSensitive {
   

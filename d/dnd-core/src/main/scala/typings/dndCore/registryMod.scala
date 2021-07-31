@@ -5,10 +5,13 @@ import typings.dndCore.interfacesMod.SourceIdPayload
 import typings.dndCore.interfacesMod.TargetIdPayload
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registryMod {
+  
+  @JSImport("dnd-core/lib/actions/registry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("dnd-core/lib/actions/registry", "ADD_SOURCE")
   @js.native
@@ -26,19 +29,15 @@ object registryMod {
   @js.native
   val REMOVE_TARGET: /* "dnd-core/REMOVE_TARGET" */ String = js.native
   
-  @JSImport("dnd-core/lib/actions/registry", "addSource")
-  @js.native
-  def addSource(sourceId: String): Action[SourceIdPayload] = js.native
+  @scala.inline
+  def addSource(sourceId: String): Action[SourceIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("addSource")(sourceId.asInstanceOf[js.Any]).asInstanceOf[Action[SourceIdPayload]]
   
-  @JSImport("dnd-core/lib/actions/registry", "addTarget")
-  @js.native
-  def addTarget(targetId: String): Action[TargetIdPayload] = js.native
+  @scala.inline
+  def addTarget(targetId: String): Action[TargetIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("addTarget")(targetId.asInstanceOf[js.Any]).asInstanceOf[Action[TargetIdPayload]]
   
-  @JSImport("dnd-core/lib/actions/registry", "removeSource")
-  @js.native
-  def removeSource(sourceId: String): Action[SourceIdPayload] = js.native
+  @scala.inline
+  def removeSource(sourceId: String): Action[SourceIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeSource")(sourceId.asInstanceOf[js.Any]).asInstanceOf[Action[SourceIdPayload]]
   
-  @JSImport("dnd-core/lib/actions/registry", "removeTarget")
-  @js.native
-  def removeTarget(targetId: String): Action[TargetIdPayload] = js.native
+  @scala.inline
+  def removeTarget(targetId: String): Action[TargetIdPayload] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTarget")(targetId.asInstanceOf[js.Any]).asInstanceOf[Action[TargetIdPayload]]
 }

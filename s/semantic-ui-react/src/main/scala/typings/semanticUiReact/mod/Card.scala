@@ -2,10 +2,11 @@ package typings.semanticUiReact.mod
 
 import typings.react.mod.Component
 import typings.react.mod.ComponentState
+import typings.semanticUiReact.cardCardMod.CardComponent
 import typings.semanticUiReact.cardCardMod.CardProps
+import typings.semanticUiReact.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -15,4 +16,9 @@ class Card protected ()
   extends Component[CardProps, ComponentState, js.Any] {
   def this(props: CardProps) = this()
   def this(props: CardProps, context: js.Any) = this()
+}
+object Card {
+  
+  @scala.inline
+  def apply: CardComponent = ^.asInstanceOf[js.Dynamic].selectDynamic("Card").asInstanceOf[CardComponent]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.mediatailorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bumper extends StObject {
   
   /**
     * The URL for the end bumper asset. 
     */
-  var EndUrl: js.UndefOr[string] = js.native
+  var EndUrl: js.UndefOr[string] = js.undefined
   
   /**
     * The URL for the start bumper asset. 
     */
-  var StartUrl: js.UndefOr[string] = js.native
+  var StartUrl: js.UndefOr[string] = js.undefined
 }
 object Bumper {
   

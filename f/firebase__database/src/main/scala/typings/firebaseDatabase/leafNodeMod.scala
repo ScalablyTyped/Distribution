@@ -4,14 +4,15 @@ import typings.firebaseDatabase.miscMod.Indexable
 import typings.firebaseDatabase.nodeMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object leafNodeMod {
   
   @JSImport("@firebase/database/dist/src/core/snap/LeafNode", "LeafNode")
   @js.native
-  class LeafNode protected () extends Node {
+  class LeafNode protected ()
+    extends StObject
+       with Node {
     /**
       * @implements {Node}
       * @param {!(string|number|boolean|Object)} value_ The value to store in this leaf node.

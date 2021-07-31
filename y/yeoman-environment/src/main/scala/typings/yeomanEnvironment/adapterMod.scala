@@ -7,7 +7,6 @@ import typings.std.Console
 import typings.yeomanEnvironment.anon.LoggerDefaultCategories
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object adapterMod {
@@ -20,7 +19,9 @@ object adapterMod {
     */
   @JSImport("yeoman-environment/lib/adapter", JSImport.Namespace)
   @js.native
-  class ^ protected () extends TerminalAdapter {
+  class ^ protected ()
+    extends StObject
+       with TerminalAdapter {
     /**
       * Initializes a new instance of the `TerminalAdapter` class.
       *
@@ -32,13 +33,12 @@ object adapterMod {
   /**
     * Provides options for creating an adapter.
     */
-  @js.native
   trait AdapterOptions extends StObject {
     
     /**
       * A console-object for logging messages.
       */
-    var console: js.UndefOr[Console] = js.native
+    var console: js.UndefOr[Console] = js.undefined
   }
   object AdapterOptions {
     

@@ -2,19 +2,17 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Eventtypes extends StObject {
   
-  var event_types: js.UndefOr[js.Array[String]] = js.native
+  var event_types: js.UndefOr[js.Array[String]] = js.undefined
   
-  var gender: js.UndefOr[String] = js.native
+  var gender: js.UndefOr[String] = js.undefined
   
-  var lang: js.UndefOr[String] = js.native
+  var lang: js.UndefOr[String] = js.undefined
   
-  var voice_name: String = js.native
+  var voice_name: String
 }
 object Eventtypes {
   

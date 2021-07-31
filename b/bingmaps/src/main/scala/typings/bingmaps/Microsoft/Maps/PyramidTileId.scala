@@ -2,29 +2,27 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PyramidTileId extends StObject {
   
   /** The height of the tile. */
-  var pixelHeight: Double = js.native
+  var pixelHeight: Double
   
   /** The width of the tile. */
-  var pixelWidth: Double = js.native
+  var pixelWidth: Double
   
   /** The quadkey ID of the tile. */
-  var quadKey: String = js.native
+  var quadKey: String
   
   /** The x tile coordinate. */
-  var x: Double = js.native
+  var x: Double
   
   /** The y tile coordinate. */
-  var y: Double = js.native
+  var y: Double
   
   /** The zoom level of the tile. */
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object PyramidTileId {
   

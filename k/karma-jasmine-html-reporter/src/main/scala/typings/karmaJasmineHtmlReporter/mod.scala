@@ -2,13 +2,11 @@ package typings.karmaJasmineHtmlReporter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
@@ -16,7 +14,7 @@ object mod {
       * because it's already handled by another reporter
       * See {@link https://github.com/dfederm/karma-jasmine-html-reporter#with-options}
       */
-    var jasmineHtmlReporter: js.UndefOr[JasmineHtmlReporterOptions] = js.native
+    var jasmineHtmlReporter: js.UndefOr[JasmineHtmlReporterOptions] = js.undefined
   }
   object ConfigOptions {
     
@@ -37,16 +35,15 @@ object mod {
     }
   }
   
-  @js.native
   trait JasmineHtmlReporterOptions extends StObject {
     
     /**
       * Suppress all messages (overrides other suppress settings)
       */
-    var suppressAll: js.UndefOr[Boolean] = js.native
+    var suppressAll: js.UndefOr[Boolean] = js.undefined
     
     /** Suppress failed messages */
-    var suppressFailed: js.UndefOr[Boolean] = js.native
+    var suppressFailed: js.UndefOr[Boolean] = js.undefined
   }
   object JasmineHtmlReporterOptions {
     

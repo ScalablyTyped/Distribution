@@ -3,23 +3,25 @@ package typings.bmapgl
 import typings.bmapgl.BMapGL.DrawingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BMapGLLib {
   
-  type Callback = js.Function1[/* repeated */ js.Any, Unit]
-  
   @js.native
+  trait Callback extends StObject {
+    
+    def apply(args: js.Any*): Unit = js.native
+  }
+  
   trait DistanceTool extends StObject {
     
-    def addEventListener(event: String, handler: Callback): Unit = js.native
+    def addEventListener(event: String, handler: Callback): Unit
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def open(): Unit = js.native
+    def open(): Unit
     
-    def removeEventListener(event: String, handler: Callback): Unit = js.native
+    def removeEventListener(event: String, handler: Callback): Unit
   }
   object DistanceTool {
     
@@ -51,24 +53,23 @@ object BMapGLLib {
     }
   }
   
-  @js.native
   trait DrawingManager extends StObject {
     
-    def addEventListener(event: String, handler: Callback): Unit = js.native
+    def addEventListener(event: String, handler: Callback): Unit
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def disableCalculate(): Unit = js.native
+    def disableCalculate(): Unit
     
-    def enableCalculate(): Unit = js.native
+    def enableCalculate(): Unit
     
-    def getDrawingMode(): DrawingType = js.native
+    def getDrawingMode(): DrawingType
     
-    def open(): Unit = js.native
+    def open(): Unit
     
-    def removeEventListener(event: String, handler: Callback): Unit = js.native
+    def removeEventListener(event: String, handler: Callback): Unit
     
-    def setDrawingMode(drawingType: DrawingType): Unit = js.native
+    def setDrawingMode(drawingType: DrawingType): Unit
   }
   object DrawingManager {
     

@@ -47,7 +47,6 @@ import typings.devtoolsProtocol.mod.Protocol.CSS.TakeCoverageDeltaResponse
 import typings.devtoolsProtocol.mod.Protocol.CSS.TrackComputedStyleUpdatesRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

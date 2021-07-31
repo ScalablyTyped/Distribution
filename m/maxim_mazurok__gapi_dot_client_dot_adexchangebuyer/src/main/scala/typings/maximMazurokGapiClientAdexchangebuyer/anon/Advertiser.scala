@@ -2,49 +2,47 @@ package typings.maximMazurokGapiClientAdexchangebuyer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Advertiser extends StObject {
   
-  var advertiser: js.UndefOr[String] = js.native
+  var advertiser: js.UndefOr[String] = js.undefined
   
   /** The app icon, for app download ads. */
-  var appIcon: js.UndefOr[Height] = js.native
+  var appIcon: js.UndefOr[Height] = js.undefined
   
   /** A long description of the ad. */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /** A label for the button that the user is supposed to click. */
-  var callToAction: js.UndefOr[String] = js.native
+  var callToAction: js.UndefOr[String] = js.undefined
   
   /** The URL that the browser/SDK will load when the user clicks the ad. */
-  var clickLinkUrl: js.UndefOr[String] = js.native
+  var clickLinkUrl: js.UndefOr[String] = js.undefined
   
   /** The URL to use for click tracking. */
-  var clickTrackingUrl: js.UndefOr[String] = js.native
+  var clickTrackingUrl: js.UndefOr[String] = js.undefined
   
   /** A short title for the ad. */
-  var headline: js.UndefOr[String] = js.native
+  var headline: js.UndefOr[String] = js.undefined
   
   /** A large image. */
-  var image: js.UndefOr[Height] = js.native
+  var image: js.UndefOr[Height] = js.undefined
   
   /** The URLs are called when the impression is rendered. */
-  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.native
+  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A smaller image, for the advertiser logo. */
-  var logo: js.UndefOr[Height] = js.native
+  var logo: js.UndefOr[Height] = js.undefined
   
   /** The price of the promoted app including the currency info. */
-  var price: js.UndefOr[String] = js.native
+  var price: js.UndefOr[String] = js.undefined
   
   /** The app rating in the app store. Must be in the range [0-5]. */
-  var starRating: js.UndefOr[Double] = js.native
+  var starRating: js.UndefOr[Double] = js.undefined
   
   /** The URL of the XML VAST for a native ad. Note this is a separate field from resource.video_url. */
-  var videoURL: js.UndefOr[String] = js.native
+  var videoURL: js.UndefOr[String] = js.undefined
 }
 object Advertiser {
   

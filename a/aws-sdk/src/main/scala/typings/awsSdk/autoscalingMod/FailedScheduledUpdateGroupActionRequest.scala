@@ -2,26 +2,24 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedScheduledUpdateGroupActionRequest extends StObject {
   
   /**
     * The error code.
     */
-  var ErrorCode: js.UndefOr[XmlStringMaxLen64] = js.native
+  var ErrorCode: js.UndefOr[XmlStringMaxLen64] = js.undefined
   
   /**
     * The error message accompanying the error code.
     */
-  var ErrorMessage: js.UndefOr[XmlString] = js.native
+  var ErrorMessage: js.UndefOr[XmlString] = js.undefined
   
   /**
     * The name of the scheduled action.
     */
-  var ScheduledActionName: XmlStringMaxLen255 = js.native
+  var ScheduledActionName: XmlStringMaxLen255
 }
 object FailedScheduledUpdateGroupActionRequest {
   

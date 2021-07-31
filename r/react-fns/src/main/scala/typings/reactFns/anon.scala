@@ -2,15 +2,13 @@ package typings.reactFns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait IsLoading extends StObject {
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
   }
   object IsLoading {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Latitude extends StObject {
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object Latitude {
     
@@ -55,10 +52,9 @@ object anon {
   }
   
   /* Inlined std.Partial<react-fns.react-fns/dist/Scroll/Scroll.ScrollConfig> */
-  @js.native
   trait PartialScrollConfig extends StObject {
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
   }
   object PartialScrollConfig {
     
@@ -80,10 +76,9 @@ object anon {
   }
   
   /* Inlined std.Partial<react-fns.react-fns/dist/WindowSize/WindowSize.WindowSizeConfig> */
-  @js.native
   trait PartialWindowSizeConfig extends StObject {
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
   }
   object PartialWindowSizeConfig {
     

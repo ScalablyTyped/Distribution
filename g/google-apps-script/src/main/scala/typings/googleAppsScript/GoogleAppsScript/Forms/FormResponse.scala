@@ -3,7 +3,6 @@ package typings.googleAppsScript.GoogleAppsScript.Forms
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,32 +26,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       }
   *     }
   */
-@js.native
 trait FormResponse extends StObject {
   
-  def getEditResponseUrl(): String = js.native
+  def getEditResponseUrl(): String
   
-  def getGradableItemResponses(): js.Array[ItemResponse] = js.native
+  def getGradableItemResponses(): js.Array[ItemResponse]
   
-  def getGradableResponseForItem(item: Item): ItemResponse = js.native
+  def getGradableResponseForItem(item: Item): ItemResponse
   
-  def getId(): String = js.native
+  def getId(): String
   
-  def getItemResponses(): js.Array[ItemResponse] = js.native
+  def getItemResponses(): js.Array[ItemResponse]
   
-  def getRespondentEmail(): String = js.native
+  def getRespondentEmail(): String
   
-  def getResponseForItem(item: Item): ItemResponse = js.native
+  def getResponseForItem(item: Item): ItemResponse
   
-  def getTimestamp(): Date = js.native
+  def getTimestamp(): Date
   
-  def submit(): FormResponse = js.native
+  def submit(): FormResponse
   
-  def toPrefilledUrl(): String = js.native
+  def toPrefilledUrl(): String
   
-  def withItemGrade(gradedResponse: ItemResponse): FormResponse = js.native
+  def withItemGrade(gradedResponse: ItemResponse): FormResponse
   
-  def withItemResponse(response: ItemResponse): FormResponse = js.native
+  def withItemResponse(response: ItemResponse): FormResponse
 }
 object FormResponse {
   

@@ -4,7 +4,6 @@ import typings.jquery.JQueryAjaxSettings
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -76,7 +75,7 @@ trait DynaTreeNode extends StObject {
   def reload(force: Boolean): Unit = js.native
   
   def reloadChildren(): Unit = js.native
-  def reloadChildren(callback: js.Function2[/* node */ this.type, /* isOk */ Boolean, _]): Unit = js.native
+  def reloadChildren(callback: js.Function2[/* node */ this.type, /* isOk */ Boolean, js.Any]): Unit = js.native
   
   def remove(): Unit = js.native
   
@@ -95,12 +94,12 @@ trait DynaTreeNode extends StObject {
   def setTitle(title: String): Unit = js.native
   
   def sortChildren(): Unit = js.native
-  def sortChildren(cmp: js.UndefOr[scala.Nothing], deep: Boolean): Unit = js.native
   def sortChildren(cmp: js.Function2[/* a */ this.type, /* b */ this.type, Double]): Unit = js.native
   def sortChildren(cmp: js.Function2[/* a */ this.type, /* b */ this.type, Double], deep: Boolean): Unit = js.native
+  def sortChildren(cmp: Unit, deep: Boolean): Unit = js.native
   
   def toDict(recursive: Boolean): js.Any = js.native
-  def toDict(recursive: Boolean, callback: js.Function1[/* node */ js.Any, _]): js.Any = js.native
+  def toDict(recursive: Boolean, callback: js.Function1[/* node */ js.Any, js.Any]): js.Any = js.native
   
   def toggleExpand(): Unit = js.native
   

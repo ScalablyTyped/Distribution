@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlexProps[TLength] extends StObject {
   
   val flex: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object FlexProps {
   
@@ -23,12 +21,12 @@ object FlexProps {
   }
   
   @scala.inline
-  implicit class FlexPropsMutableBuilder[Self <: FlexProps[_], TLength] (val x: Self with FlexProps[TLength]) extends AnyVal {
+  implicit class FlexPropsMutableBuilder[Self <: FlexProps[?], TLength] (val x: Self & FlexProps[TLength]) extends AnyVal {
     
     @scala.inline
     def setFlex(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any
         ]
     ): Self = StObject.set(x, "flex", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object FlexProps {
     def setFlexUndefined: Self = StObject.set(x, "flex", js.undefined)
     
     @scala.inline
-    def setFlexVarargs(value: js.Any*): Self = StObject.set(x, "flex", js.Array(value :_*))
+    def setFlexVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Flex<TLength> */ js.Any)*
+    ): Self = StObject.set(x, "flex", js.Array(value :_*))
   }
 }

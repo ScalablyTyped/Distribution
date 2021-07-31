@@ -18,21 +18,19 @@ import typings.rdfJs.mod.Variable
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Datatype extends StObject {
     
-    var datatype: TermTypeValue = js.native
+    var datatype: TermTypeValue
     
-    var language: PropType[Literal, typings.rdfExt.rdfExtStrings.language] = js.native
+    var language: PropType[Literal, typings.rdfExt.rdfExtStrings.language]
     
-    var termType: PropType[Literal, typings.rdfExt.rdfExtStrings.termType] = js.native
+    var termType: PropType[Literal, typings.rdfExt.rdfExtStrings.termType]
     
-    var value: PropType[Literal, typings.rdfExt.rdfExtStrings.value] = js.native
+    var value: PropType[Literal, typings.rdfExt.rdfExtStrings.value]
   }
   object Datatype {
     
@@ -64,16 +62,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Graph extends StObject {
     
-    var graph: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.graph], toJSON]] = js.native
+    var graph: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.graph], toJSON]]
     
-    var `object`: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.`object`], toJSON]] = js.native
+    var `object`: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.`object`], toJSON]]
     
-    var predicate: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.predicate], toJSON]] = js.native
+    var predicate: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.predicate], toJSON]]
     
-    var subject: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.subject], toJSON]] = js.native
+    var subject: ReturnType[PropType[PropType[QuadExt, typings.rdfExt.rdfExtStrings.subject], toJSON]]
   }
   object Graph {
     
@@ -106,12 +103,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TermType extends StObject {
     
-    var termType: PropType[BlankNode, typings.rdfExt.rdfExtStrings.termType] = js.native
+    var termType: PropType[BlankNode, typings.rdfExt.rdfExtStrings.termType]
     
-    var value: PropType[BlankNode, typings.rdfExt.rdfExtStrings.value] = js.native
+    var value: PropType[BlankNode, typings.rdfExt.rdfExtStrings.value]
   }
   object TermType {
     
@@ -132,12 +128,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TermTypePropType extends StObject {
     
-    var termType: PropType[Variable, typings.rdfExt.rdfExtStrings.termType] = js.native
+    var termType: PropType[Variable, typings.rdfExt.rdfExtStrings.termType]
     
-    var value: PropType[Variable, typings.rdfExt.rdfExtStrings.value] = js.native
+    var value: PropType[Variable, typings.rdfExt.rdfExtStrings.value]
   }
   object TermTypePropType {
     
@@ -158,12 +153,11 @@ object anon {
     }
   }
   
-  @js.native
   trait TermTypeValue extends StObject {
     
-    var termType: PropType[NamedNode[String], typings.rdfExt.rdfExtStrings.termType] = js.native
+    var termType: PropType[NamedNode[String], typings.rdfExt.rdfExtStrings.termType]
     
-    var value: PropType[NamedNode[String], typings.rdfExt.rdfExtStrings.value] = js.native
+    var value: PropType[NamedNode[String], typings.rdfExt.rdfExtStrings.value]
   }
   object TermTypeValue {
     
@@ -184,12 +178,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var termType: PropType[DefaultGraph, typings.rdfExt.rdfExtStrings.termType] = js.native
+    var termType: PropType[DefaultGraph, typings.rdfExt.rdfExtStrings.termType]
     
-    var value: PropType[DefaultGraph, typings.rdfExt.rdfExtStrings.value] = js.native
+    var value: PropType[DefaultGraph, typings.rdfExt.rdfExtStrings.value]
   }
   object Value {
     

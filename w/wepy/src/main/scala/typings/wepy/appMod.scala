@@ -5,14 +5,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.wepy.anon.Pages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appMod {
   
   @JSImport("wepy/app", JSImport.Default)
   @js.native
-  class default () extends app
+  class default ()
+    extends StObject
+       with app
   
   /* Rewritten from type alias, can be one of: 
     - typings.wepy.wepyStrings.requestfix
@@ -28,14 +29,13 @@ object appMod {
     def requestfix: typings.wepy.wepyStrings.requestfix = "requestfix".asInstanceOf[typings.wepy.wepyStrings.requestfix]
   }
   
-  @js.native
   trait AppConfig extends StObject {
     
-    var appEvents: js.UndefOr[js.Array[String]] = js.native
+    var appEvents: js.UndefOr[js.Array[String]] = js.undefined
     
-    var noPromiseAPI: js.UndefOr[js.Array[String] | StringDictionary[Boolean]] = js.native
+    var noPromiseAPI: js.UndefOr[js.Array[String] | StringDictionary[Boolean]] = js.undefined
     
-    var pageEvents: js.UndefOr[js.Array[String]] = js.native
+    var pageEvents: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AppConfig {
     
@@ -78,7 +78,9 @@ object appMod {
   }
   
   @js.native
-  trait AppConstructor extends Instantiable0[app]
+  trait AppConstructor
+    extends StObject
+       with Instantiable0[app]
   
   @js.native
   trait app extends StObject {

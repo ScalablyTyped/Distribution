@@ -2,23 +2,21 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiplexVideoSettings extends StObject {
   
   /**
     * The constant bitrate configuration for the video encode.
   When this field is defined, StatmuxSettings must be undefined.
     */
-  var ConstantBitrate: js.UndefOr[integerMin100000Max100000000] = js.native
+  var ConstantBitrate: js.UndefOr[integerMin100000Max100000000] = js.undefined
   
   /**
     * Statmux rate control settings.
   When this field is defined, ConstantBitrate must be undefined.
     */
-  var StatmuxSettings: js.UndefOr[MultiplexStatmuxVideoSettings] = js.native
+  var StatmuxSettings: js.UndefOr[MultiplexStatmuxVideoSettings] = js.undefined
 }
 object MultiplexVideoSettings {
   

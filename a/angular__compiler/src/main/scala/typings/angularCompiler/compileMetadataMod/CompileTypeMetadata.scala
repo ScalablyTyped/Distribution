@@ -3,15 +3,15 @@ package typings.angularCompiler.compileMetadataMod
 import typings.angularCompiler.lifecycleReflectorMod.LifecycleHooks
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CompileTypeMetadata extends CompileIdentifierMetadata {
+trait CompileTypeMetadata
+  extends StObject
+     with CompileIdentifierMetadata {
   
-  var diDeps: js.Array[CompileDiDependencyMetadata] = js.native
+  var diDeps: js.Array[CompileDiDependencyMetadata]
   
-  var lifecycleHooks: js.Array[LifecycleHooks] = js.native
+  var lifecycleHooks: js.Array[LifecycleHooks]
 }
 object CompileTypeMetadata {
   

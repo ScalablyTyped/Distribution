@@ -2,7 +2,6 @@ package typings.activexShell.Shell32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,14 +14,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **ShellFolderViewOC** object by calling **SetFolderView**. Then, when an **EnumDone** or **SelectionChanged** event is fired, the **ShellFolderViewOC** object
   * forwards the event to its own handler for processing.
   */
-@js.native
 trait ShellFolderViewOC extends StObject {
   
   /** Set the ShellFolderView object to monitor events of. */
-  def SetFolderView(pdisp: ShellFolderView): Unit = js.native
+  def SetFolderView(pdisp: ShellFolderView): Unit
   
   @JSName("Shell32.ShellFolderViewOC_typekey")
-  var Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC = js.native
+  var Shell32DotShellFolderViewOC_typekey: ShellFolderViewOC
 }
 object ShellFolderViewOC {
   

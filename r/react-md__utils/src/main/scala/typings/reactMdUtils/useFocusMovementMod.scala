@@ -7,22 +7,25 @@ import typings.reactMdUtils.useKeyboardMovementMod.KeyboardMovementProviders
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFocusMovementMod {
   
-  @JSImport("@react-md/utils/types/wia-aria/movement/useFocusMovement", "useFocusMovement")
+  @JSImport("@react-md/utils/types/wia-aria/movement/useFocusMovement", JSImport.Namespace)
   @js.native
-  def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait KeyboardFocusOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] extends BaseKeyboardMovementOptions[D, CE, IE] {
+  @scala.inline
+  def useFocusMovement[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */](hasDefaultFocusedIndexOnChangeOptions: KeyboardFocusOptions[D, CE, IE]): KeyboardMovementProviders[CE, IE] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusMovement")(hasDefaultFocusedIndexOnChangeOptions.asInstanceOf[js.Any]).asInstanceOf[KeyboardMovementProviders[CE, IE]]
+  
+  trait KeyboardFocusOptions[D, CE /* <: HTMLElement */, IE /* <: HTMLElement */]
+    extends StObject
+       with BaseKeyboardMovementOptions[D, CE, IE] {
     
     /**
       * The index that should be focused by default.
       */
-    var defaultFocusedIndex: js.UndefOr[Double] = js.native
+    var defaultFocusedIndex: js.UndefOr[Double] = js.undefined
   }
   object KeyboardFocusOptions {
     
@@ -39,7 +42,7 @@ object useFocusMovementMod {
     }
     
     @scala.inline
-    implicit class KeyboardFocusOptionsMutableBuilder[Self <: KeyboardFocusOptions[_, _, _], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self with (KeyboardFocusOptions[D, CE, IE])) extends AnyVal {
+    implicit class KeyboardFocusOptionsMutableBuilder[Self <: KeyboardFocusOptions[?, ?, ?], D, CE /* <: HTMLElement */, IE /* <: HTMLElement */] (val x: Self & (KeyboardFocusOptions[D, CE, IE])) extends AnyVal {
       
       @scala.inline
       def setDefaultFocusedIndex(value: Double): Self = StObject.set(x, "defaultFocusedIndex", value.asInstanceOf[js.Any])

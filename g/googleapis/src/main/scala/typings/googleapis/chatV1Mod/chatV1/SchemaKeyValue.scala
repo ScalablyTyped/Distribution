@@ -2,57 +2,55 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A UI element contains a key (label) and a value (content). And this element
   * may also contain some actions such as onclick button.
   */
-@js.native
 trait SchemaKeyValue extends StObject {
   
   /**
     * The text of the bottom label. Formatted text supported.
     */
-  var bottomLabel: js.UndefOr[String] = js.native
+  var bottomLabel: js.UndefOr[String] = js.undefined
   
   /**
     * A button that can be clicked to trigger an action.
     */
-  var button: js.UndefOr[SchemaButton] = js.native
+  var button: js.UndefOr[SchemaButton] = js.undefined
   
   /**
     * The text of the content. Formatted text supported and always required.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * If the content should be multiline.
     */
-  var contentMultiline: js.UndefOr[Boolean] = js.native
+  var contentMultiline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An enum value that will be replaced by the Chat API with the
     * corresponding icon image.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * The icon specified by a URL.
     */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The onclick action. Only the top label, bottom label and content region
     * are clickable.
     */
-  var onClick: js.UndefOr[SchemaOnClick] = js.native
+  var onClick: js.UndefOr[SchemaOnClick] = js.undefined
   
   /**
     * The text of the top label. Formatted text supported.
     */
-  var topLabel: js.UndefOr[String] = js.native
+  var topLabel: js.UndefOr[String] = js.undefined
 }
 object SchemaKeyValue {
   

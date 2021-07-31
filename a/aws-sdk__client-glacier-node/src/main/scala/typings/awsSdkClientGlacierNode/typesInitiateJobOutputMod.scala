@@ -4,34 +4,34 @@ import typings.awsSdkClientGlacierNode.outputTypesUnionMod._OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInitiateJobOutputMod {
   
-  @js.native
-  trait InitiateJobOutput extends _OutputTypesUnion {
+  trait InitiateJobOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The ID of the job.</p>
       */
-    var jobId: js.UndefOr[String] = js.native
+    var jobId: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The path to the location of where the select results are stored.</p>
       */
-    var jobOutputPath: js.UndefOr[String] = js.native
+    var jobOutputPath: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The relative URI path of the job.</p>
       */
-    var location: js.UndefOr[String] = js.native
+    var location: js.UndefOr[String] = js.undefined
   }
   object InitiateJobOutput {
     

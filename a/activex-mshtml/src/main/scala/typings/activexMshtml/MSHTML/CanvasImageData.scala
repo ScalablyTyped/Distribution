@@ -2,20 +2,18 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasImageData extends StObject {
   
   @JSName("MSHTML.CanvasImageData_typekey")
-  var MSHTMLDotCanvasImageData_typekey: CanvasImageData = js.native
+  var MSHTMLDotCanvasImageData_typekey: CanvasImageData
   
-  val data: js.Any = js.native
+  val data: js.Any
   
-  val height: Double = js.native
+  val height: Double
   
-  val width: Double = js.native
+  val width: Double
 }
 object CanvasImageData {
   

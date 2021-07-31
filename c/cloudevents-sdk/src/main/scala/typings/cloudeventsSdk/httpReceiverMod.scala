@@ -4,7 +4,6 @@ import typings.cloudeventsSdk.anon.V03
 import typings.cloudeventsSdk.cloudeventMod.CloudEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpReceiverMod {

@@ -2,7 +2,6 @@ package typings.termSize
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,16 +15,18 @@ object mod {
   //=> {columns: 143, rows: 24}
   ```
   */
+  @scala.inline
+  def apply(): Size = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Size]
+  
   @JSImport("term-size", JSImport.Namespace)
   @js.native
-  def apply(): Size = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Size extends StObject {
     
-    var columns: Double = js.native
+    var columns: Double
     
-    var rows: Double = js.native
+    var rows: Double
   }
   object Size {
     

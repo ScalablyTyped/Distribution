@@ -3,13 +3,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request for ExecuteSql and ExecuteStreamingSql.
   */
-@js.native
 trait SchemaExecuteSqlRequest extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait SchemaExecuteSqlRequest extends StObject {
     * of the SQL statement parameters. See the definition of Type for more
     * information about SQL types.
     */
-  var paramTypes: js.UndefOr[StringDictionary[SchemaType]] = js.native
+  var paramTypes: js.UndefOr[StringDictionary[SchemaType]] = js.undefined
   
   /**
     * The SQL string can contain parameter placeholders. A parameter
@@ -34,7 +32,7 @@ trait SchemaExecuteSqlRequest extends StObject {
     * whose keys are parameter names, and whose values are the corresponding
     * parameter values.
     */
-  var params: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var params: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * If present, results will be restricted to the specified partition
@@ -42,14 +40,14 @@ trait SchemaExecuteSqlRequest extends StObject {
     * for the values of fields common to this message and the
     * PartitionQueryRequest message used to create this partition_token.
     */
-  var partitionToken: js.UndefOr[String] = js.native
+  var partitionToken: js.UndefOr[String] = js.undefined
   
   /**
     * Used to control the amount of debugging information returned in
     * ResultSetStats. If partition_token is set, query_mode can only be set to
     * QueryMode.NORMAL.
     */
-  var queryMode: js.UndefOr[String] = js.native
+  var queryMode: js.UndefOr[String] = js.undefined
   
   /**
     * If this request is resuming a previously interrupted SQL statement
@@ -58,7 +56,7 @@ trait SchemaExecuteSqlRequest extends StObject {
     * execution to resume where the last one left off. The rest of the request
     * parameters must exactly match the request that yielded this token.
     */
-  var resumeToken: js.UndefOr[String] = js.native
+  var resumeToken: js.UndefOr[String] = js.undefined
   
   /**
     * A per-transaction sequence number used to identify this request. This
@@ -70,12 +68,12 @@ trait SchemaExecuteSqlRequest extends StObject {
     * response as the first execution.  Required for DML statements. Ignored
     * for queries.
     */
-  var seqno: js.UndefOr[String] = js.native
+  var seqno: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The SQL string.
     */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
   
   /**
     * The transaction to use. If none is provided, the default is a temporary
@@ -87,7 +85,7 @@ trait SchemaExecuteSqlRequest extends StObject {
     * or begin a new transaction.  Partitioned DML requires an existing
     * PartitionedDml transaction ID.
     */
-  var transaction: js.UndefOr[SchemaTransactionSelector] = js.native
+  var transaction: js.UndefOr[SchemaTransactionSelector] = js.undefined
 }
 object SchemaExecuteSqlRequest {
   

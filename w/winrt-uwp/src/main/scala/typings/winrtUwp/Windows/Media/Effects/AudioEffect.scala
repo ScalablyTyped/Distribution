@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Effects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an audio effect. */
-@js.native
 trait AudioEffect extends StObject {
   
   /** Gets the type of the audio effect. */
-  var audioEffectType: AudioEffectType = js.native
+  var audioEffectType: AudioEffectType
 }
 object AudioEffect {
   

@@ -3,23 +3,24 @@ package typings.taskGraphRunner
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[Item, Result](opts: Opts[Item, Result]): js.Promise[Results[Item, Result]] = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Results[Item, Result]]]
+  
   @JSImport("task-graph-runner", JSImport.Namespace)
   @js.native
-  def apply[Item, Result](opts: Opts[Item, Result]): js.Promise[Results[Item, Result]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Opts[Item, Result] extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var graph: Map[Item, js.Array[Item]] = js.native
+    var graph: Map[Item, js.Array[Item]]
     
-    def task(item: Item): Result = js.native
+    def task(item: Item): Result
   }
   object Opts {
     
@@ -30,7 +31,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptsMutableBuilder[Self <: Opts[_, _], Item, Result] (val x: Self with (Opts[Item, Result])) extends AnyVal {
+    implicit class OptsMutableBuilder[Self <: Opts[?, ?], Item, Result] (val x: Self & (Opts[Item, Result])) extends AnyVal {
       
       @scala.inline
       def setForce(value: Boolean): Self = StObject.set(x, "force", value.asInstanceOf[js.Any])
@@ -46,12 +47,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Results[Item, Result] extends StObject {
     
-    var safe: Boolean = js.native
+    var safe: Boolean
     
-    var values: Map[Item, Result] = js.native
+    var values: Map[Item, Result]
   }
   object Results {
     
@@ -62,7 +62,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ResultsMutableBuilder[Self <: Results[_, _], Item, Result] (val x: Self with (Results[Item, Result])) extends AnyVal {
+    implicit class ResultsMutableBuilder[Self <: Results[?, ?], Item, Result] (val x: Self & (Results[Item, Result])) extends AnyVal {
       
       @scala.inline
       def setSafe(value: Boolean): Self = StObject.set(x, "safe", value.asInstanceOf[js.Any])

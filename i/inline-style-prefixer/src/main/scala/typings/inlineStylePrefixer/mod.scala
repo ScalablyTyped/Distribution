@@ -3,14 +3,16 @@ package typings.inlineStylePrefixer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("inline-style-prefixer", "createPrefixer")
+  @JSImport("inline-style-prefixer", JSImport.Namespace)
   @js.native
-  def createPrefixer(staticData: StaticData): Prefix_ = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createPrefixer(staticData: StaticData): Prefix_ = ^.asInstanceOf[js.Dynamic].applyDynamic("createPrefixer")(staticData.asInstanceOf[js.Any]).asInstanceOf[Prefix_]
   
   @JSImport("inline-style-prefixer", "prefix")
   @js.native
@@ -26,12 +28,11 @@ object mod {
   
   type Prefix_ = js.Function1[/* style */ js.Any, js.Any]
   
-  @js.native
   trait StaticData extends StObject {
     
-    var plugins: js.Array[Plugin] = js.native
+    var plugins: js.Array[Plugin]
     
-    var prefixMap: Record[String, js.Array[String]] = js.native
+    var prefixMap: Record[String, js.Array[String]]
   }
   object StaticData {
     

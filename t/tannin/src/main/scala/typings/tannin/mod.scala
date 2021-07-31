@@ -5,14 +5,15 @@ import typings.std.TimerHandler
 import typings.tannin.anon.Dictkey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("tannin", JSImport.Default)
   @js.native
-  class default protected () extends Tannin {
+  class default protected ()
+    extends StObject
+       with Tannin {
     /**
       * Tannin constructor.
       *
@@ -24,12 +25,15 @@ object mod {
     def this(data: StringDictionary[Dictkey]) = this()
     def this(data: StringDictionary[Dictkey], options: TanninOptions) = this()
   }
-  @JSImport("tannin", JSImport.Default)
-  @js.native
-  def default(data: StringDictionary[Dictkey]): Unit = js.native
-  @JSImport("tannin", JSImport.Default)
-  @js.native
-  def default(data: StringDictionary[Dictkey], options: TanninOptions): Unit = js.native
+  object default {
+    
+    @JSImport("tannin", JSImport.Default)
+    @js.native
+    def apply(data: StringDictionary[Dictkey]): Unit = js.native
+    @JSImport("tannin", JSImport.Default)
+    @js.native
+    def apply(data: StringDictionary[Dictkey], options: TanninOptions): Unit = js.native
+  }
   
   @js.native
   trait Tannin extends StObject {
@@ -43,13 +47,13 @@ object mod {
     var data: TanninLocaleData = js.native
     
     def dcnpgettext(domain: String, context: String, singular: String): String = js.native
-    def dcnpgettext(domain: String, context: String, singular: String, plural: js.UndefOr[scala.Nothing], n: Double): String = js.native
     def dcnpgettext(domain: String, context: String, singular: String, plural: String): String = js.native
     def dcnpgettext(domain: String, context: String, singular: String, plural: String, n: Double): String = js.native
+    def dcnpgettext(domain: String, context: String, singular: String, plural: Unit, n: Double): String = js.native
     def dcnpgettext(domain: String, context: Unit, singular: String): String = js.native
-    def dcnpgettext(domain: String, context: Unit, singular: String, plural: js.UndefOr[scala.Nothing], n: Double): String = js.native
     def dcnpgettext(domain: String, context: Unit, singular: String, plural: String): String = js.native
     def dcnpgettext(domain: String, context: Unit, singular: String, plural: String, n: Double): String = js.native
+    def dcnpgettext(domain: String, context: Unit, singular: String, plural: Unit, n: Double): String = js.native
     
     def getPluralForm(domain: String, n: Double): Double = js.native
     
@@ -70,24 +74,23 @@ object mod {
     var pluralForms: StringDictionary[js.Function] = js.native
   }
   
-  @js.native
   trait TanninDomainMetadata extends StObject {
     
     /**
       * Domain name.
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * Language code.
       */
-    var lang: js.UndefOr[String] = js.native
+    var lang: js.UndefOr[String] = js.undefined
     
     /**
       * Plural forms expression or
       *  function evaluator.
       */
-    var plural_forms: js.UndefOr[TimerHandler] = js.native
+    var plural_forms: js.UndefOr[TimerHandler] = js.undefined
   }
   object TanninDomainMetadata {
     
@@ -122,12 +125,12 @@ object mod {
   
   type TanninLocaleData = StringDictionary[Dictkey]
   
-  @js.native
   trait TanninLocaleDomain
-    extends /* key */ StringDictionary[TanninDomainMetadata | (js.Tuple2[String, String])] {
+    extends StObject
+       with /* key */ StringDictionary[TanninDomainMetadata | (js.Tuple2[String, String])] {
     
     @JSName("")
-    var _empty: TanninDomainMetadata | (js.Tuple2[String, String]) = js.native
+    var _empty: TanninDomainMetadata | (js.Tuple2[String, String])
   }
   object TanninLocaleDomain {
     
@@ -146,18 +149,17 @@ object mod {
     }
   }
   
-  @js.native
   trait TanninOptions extends StObject {
     
     /**
       * Joiner in string lookup with context.
       */
-    var contextDelimiter: js.UndefOr[String] = js.native
+    var contextDelimiter: js.UndefOr[String] = js.undefined
     
     /**
       * Callback to invoke when key missing.
       */
-    var onMissingKey: js.UndefOr[js.Function] = js.native
+    var onMissingKey: js.UndefOr[js.Function] = js.undefined
   }
   object TanninOptions {
     

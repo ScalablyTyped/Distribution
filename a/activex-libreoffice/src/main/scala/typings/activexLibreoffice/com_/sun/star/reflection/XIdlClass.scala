@@ -7,31 +7,31 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information reflecting an UNO type. */
-@js.native
-trait XIdlClass[T] extends XInterface {
+trait XIdlClass[T]
+  extends StObject
+     with XInterface {
   
   /**
     * If the reflected type is an array, then you get a {@link XIdlArray} interface to modify instances of the array type. ;  If the reflected type is not
     * an array, then a null-reference is returned.
     * @returns interface to modify array instances (or null-reference)
     */
-  val Array: XIdlArray = js.native
+  val Array: XIdlArray
   
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  val Classes: SafeArray[XIdlClass[_]] = js.native
+  val Classes: SafeArray[XIdlClass[js.Any]]
   
   /**
     * If the reflected type is an array or sequence, then this method returns a {@link XIdlClass} interface reflecting the element.
     * @returns reflection interface of the element type of an array or sequence type (null-reference otherwise).
     */
-  val ComponentType: XIdlClass[_] = js.native
+  val ComponentType: XIdlClass[js.Any]
   
   /**
     * If the reflected type is an interface, struct or union, then you get a sequence of {@link XIdlField} interfaces reflecting all fields (/interface
@@ -39,13 +39,13 @@ trait XIdlClass[T] extends XInterface {
     * interface, struct or union or the interface, struct or union does not have any field (/interface attribute), then an empty sequence is returned.
     * @returns all field (/interface attribute) reflections (or empty sequence)
     */
-  val Fields: SafeArray[XIdlField] = js.native
+  val Fields: SafeArray[XIdlField]
   
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  val Interfaces: SafeArray[XIdlClass[_]] = js.native
+  val Interfaces: SafeArray[XIdlClass[js.Any]]
   
   /**
     * If the reflected type is an interface, then you get a sequence of {@link XIdlMethod} interfaces reflecting all methods of the interface. This also
@@ -53,69 +53,69 @@ trait XIdlClass[T] extends XInterface {
     * null-reference is returned.
     * @returns all method reflections (or empty sequence)
     */
-  val Methods: SafeArray[XIdlMethod] = js.native
+  val Methods: SafeArray[XIdlMethod]
   
   /**
     * Returns the fully-qualified name of the reflected type.
     * @returns the fully-qualified name of the type
     */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * If the reflected type is an interface, then the returned sequence of {@link XIdlClass} reflect the base interfaces. ;  If the reflected type is not an
     * interface or an interface that is not derived from another, then an empty sequence is returned.
     * @returns all base interfaces of an interface type or an empty sequence.
     */
-  val Superclasses: SafeArray[XIdlClass[_]] = js.native
+  val Superclasses: SafeArray[XIdlClass[js.Any]]
   
   /**
     * Returns the {@link com.sun.star.uno.TypeClass} of the reflected type.
     * @returns type class of the reflected type.
     */
-  val TypeClass: typings.activexLibreoffice.com_.sun.star.uno.TypeClass = js.native
+  val TypeClass: typings.activexLibreoffice.com_.sun.star.uno.TypeClass
   
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  val Uik: typings.activexLibreoffice.com_.sun.star.uno.Uik = js.native
+  val Uik: typings.activexLibreoffice.com_.sun.star.uno.Uik
   
   /**
     * This method creates instances of the reflected type.
     * @param obj pure out parameter to pass the created instance
     */
-  def createObject(obj: js.Array[T]): Unit = js.native
+  def createObject(obj: js.Array[T]): Unit
   
   /**
     * Tests whether two reflecting objects reflect the same type.
     * @returns true, if the objects reflect the same type, false otherwise.
     */
-  def equals(Type: XIdlClass[_]): Boolean = js.native
+  def equals(Type: XIdlClass[js.Any]): Boolean
   
   /**
     * If the reflected type is an array, then you get a {@link XIdlArray} interface to modify instances of the array type. ;  If the reflected type is not
     * an array, then a null-reference is returned.
     * @returns interface to modify array instances (or null-reference)
     */
-  def getArray(): XIdlArray = js.native
+  def getArray(): XIdlArray
   
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  def getClass(aName: String): XIdlClass[_] = js.native
+  def getClass(aName: String): XIdlClass[js.Any]
   
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  def getClasses(): SafeArray[XIdlClass[_]] = js.native
+  def getClasses(): SafeArray[XIdlClass[js.Any]]
   
   /**
     * If the reflected type is an array or sequence, then this method returns a {@link XIdlClass} interface reflecting the element.
     * @returns reflection interface of the element type of an array or sequence type (null-reference otherwise).
     */
-  def getComponentType(): XIdlClass[_] = js.native
+  def getComponentType(): XIdlClass[js.Any]
   
   /**
     * If the reflected type is an interface, struct or union, then you get a {@link XIdlField} interface reflecting the demanded field (/interface
@@ -124,7 +124,7 @@ trait XIdlClass[T] extends XInterface {
     * @param aName name of the demanded field reflection
     * @returns demanded field (/interface attribute) reflection (or null-reference)
     */
-  def getField(aName: String): XIdlField = js.native
+  def getField(aName: String): XIdlField
   
   /**
     * If the reflected type is an interface, struct or union, then you get a sequence of {@link XIdlField} interfaces reflecting all fields (/interface
@@ -132,13 +132,13 @@ trait XIdlClass[T] extends XInterface {
     * interface, struct or union or the interface, struct or union does not have any field (/interface attribute), then an empty sequence is returned.
     * @returns all field (/interface attribute) reflections (or empty sequence)
     */
-  def getFields(): SafeArray[XIdlField] = js.native
+  def getFields(): SafeArray[XIdlField]
   
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  def getInterfaces(): SafeArray[XIdlClass[_]] = js.native
+  def getInterfaces(): SafeArray[XIdlClass[js.Any]]
   
   /**
     * If the reflected type is an interface, then you get a {@link XIdlMethod} interface reflecting the demanded method by name. ;  If the reflected type is
@@ -146,7 +146,7 @@ trait XIdlClass[T] extends XInterface {
     * @param aName name of demanded method reflection
     * @returns demanded method reflection (or null-reference)
     */
-  def getMethod(aName: String): XIdlMethod = js.native
+  def getMethod(aName: String): XIdlMethod
   
   /**
     * If the reflected type is an interface, then you get a sequence of {@link XIdlMethod} interfaces reflecting all methods of the interface. This also
@@ -154,71 +154,71 @@ trait XIdlClass[T] extends XInterface {
     * null-reference is returned.
     * @returns all method reflections (or empty sequence)
     */
-  def getMethods(): SafeArray[XIdlMethod] = js.native
+  def getMethods(): SafeArray[XIdlMethod]
   
   /**
     * Returns the fully-qualified name of the reflected type.
     * @returns the fully-qualified name of the type
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * If the reflected type is an interface, then the returned sequence of {@link XIdlClass} reflect the base interfaces. ;  If the reflected type is not an
     * interface or an interface that is not derived from another, then an empty sequence is returned.
     * @returns all base interfaces of an interface type or an empty sequence.
     */
-  def getSuperclasses(): SafeArray[XIdlClass[_]] = js.native
+  def getSuperclasses(): SafeArray[XIdlClass[js.Any]]
   
   /**
     * Returns the {@link com.sun.star.uno.TypeClass} of the reflected type.
     * @returns type class of the reflected type.
     */
-  def getTypeClass(): typings.activexLibreoffice.com_.sun.star.uno.TypeClass = js.native
+  def getTypeClass(): typings.activexLibreoffice.com_.sun.star.uno.TypeClass
   
   /**
     * Deprecated. Do not call.
     * @deprecated Deprecated
     */
-  def getUik(): typings.activexLibreoffice.com_.sun.star.uno.Uik = js.native
+  def getUik(): typings.activexLibreoffice.com_.sun.star.uno.Uik
   
   /**
     * Tests whether values of this reflected type are assignable from values of a second one ( `xType` ).
     * @param xType another reflected type
     * @returns true, if values of this reflected type are assignable from values of `xType` .
     */
-  def isAssignableFrom(xType: XIdlClass[_]): Boolean = js.native
+  def isAssignableFrom(xType: XIdlClass[js.Any]): Boolean
 }
 object XIdlClass {
   
   @scala.inline
   def apply[T](
     Array: XIdlArray,
-    Classes: SafeArray[XIdlClass[_]],
-    ComponentType: XIdlClass[_],
+    Classes: SafeArray[XIdlClass[js.Any]],
+    ComponentType: XIdlClass[js.Any],
     Fields: SafeArray[XIdlField],
-    Interfaces: SafeArray[XIdlClass[_]],
+    Interfaces: SafeArray[XIdlClass[js.Any]],
     Methods: SafeArray[XIdlMethod],
     Name: String,
-    Superclasses: SafeArray[XIdlClass[_]],
+    Superclasses: SafeArray[XIdlClass[js.Any]],
     TypeClass: TypeClass,
     Uik: Uik,
     acquire: () => Unit,
     createObject: js.Array[T] => Unit,
-    equals_ : XIdlClass[_] => Boolean,
+    equals_ : XIdlClass[js.Any] => Boolean,
     getArray: () => XIdlArray,
-    getClass_ : String => XIdlClass[_],
-    getClasses: () => SafeArray[XIdlClass[_]],
-    getComponentType: () => XIdlClass[_],
+    getClass_ : String => XIdlClass[js.Any],
+    getClasses: () => SafeArray[XIdlClass[js.Any]],
+    getComponentType: () => XIdlClass[js.Any],
     getField: String => XIdlField,
     getFields: () => SafeArray[XIdlField],
-    getInterfaces: () => SafeArray[XIdlClass[_]],
+    getInterfaces: () => SafeArray[XIdlClass[js.Any]],
     getMethod: String => XIdlMethod,
     getMethods: () => SafeArray[XIdlMethod],
     getName: () => String,
-    getSuperclasses: () => SafeArray[XIdlClass[_]],
+    getSuperclasses: () => SafeArray[XIdlClass[js.Any]],
     getTypeClass: () => TypeClass,
     getUik: () => Uik,
-    isAssignableFrom: XIdlClass[_] => Boolean,
+    isAssignableFrom: XIdlClass[js.Any] => Boolean,
     queryInterface: `type` => js.Any,
     release: () => Unit
   ): XIdlClass[T] = {
@@ -229,22 +229,22 @@ object XIdlClass {
   }
   
   @scala.inline
-  implicit class XIdlClassMutableBuilder[Self <: XIdlClass[_], T] (val x: Self with XIdlClass[T]) extends AnyVal {
+  implicit class XIdlClassMutableBuilder[Self <: XIdlClass[?], T] (val x: Self & XIdlClass[T]) extends AnyVal {
     
     @scala.inline
     def setArray(value: XIdlArray): Self = StObject.set(x, "Array", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setClasses(value: SafeArray[XIdlClass[_]]): Self = StObject.set(x, "Classes", value.asInstanceOf[js.Any])
+    def setClasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Classes", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setComponentType(value: XIdlClass[_]): Self = StObject.set(x, "ComponentType", value.asInstanceOf[js.Any])
+    def setComponentType(value: XIdlClass[js.Any]): Self = StObject.set(x, "ComponentType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCreateObject(value: js.Array[T] => Unit): Self = StObject.set(x, "createObject", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setEquals_(value: XIdlClass[_] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
+    def setEquals_(value: XIdlClass[js.Any] => Boolean): Self = StObject.set(x, "equals", js.Any.fromFunction1(value))
     
     @scala.inline
     def setFields(value: SafeArray[XIdlField]): Self = StObject.set(x, "Fields", value.asInstanceOf[js.Any])
@@ -253,13 +253,13 @@ object XIdlClass {
     def setGetArray(value: () => XIdlArray): Self = StObject.set(x, "getArray", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetClass_(value: String => XIdlClass[_]): Self = StObject.set(x, "getClass", js.Any.fromFunction1(value))
+    def setGetClass_(value: String => XIdlClass[js.Any]): Self = StObject.set(x, "getClass", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setGetClasses(value: () => SafeArray[XIdlClass[_]]): Self = StObject.set(x, "getClasses", js.Any.fromFunction0(value))
+    def setGetClasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getClasses", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetComponentType(value: () => XIdlClass[_]): Self = StObject.set(x, "getComponentType", js.Any.fromFunction0(value))
+    def setGetComponentType(value: () => XIdlClass[js.Any]): Self = StObject.set(x, "getComponentType", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetField(value: String => XIdlField): Self = StObject.set(x, "getField", js.Any.fromFunction1(value))
@@ -268,7 +268,7 @@ object XIdlClass {
     def setGetFields(value: () => SafeArray[XIdlField]): Self = StObject.set(x, "getFields", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetInterfaces(value: () => SafeArray[XIdlClass[_]]): Self = StObject.set(x, "getInterfaces", js.Any.fromFunction0(value))
+    def setGetInterfaces(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getInterfaces", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetMethod(value: String => XIdlMethod): Self = StObject.set(x, "getMethod", js.Any.fromFunction1(value))
@@ -280,7 +280,7 @@ object XIdlClass {
     def setGetName(value: () => String): Self = StObject.set(x, "getName", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setGetSuperclasses(value: () => SafeArray[XIdlClass[_]]): Self = StObject.set(x, "getSuperclasses", js.Any.fromFunction0(value))
+    def setGetSuperclasses(value: () => SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "getSuperclasses", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTypeClass(value: () => TypeClass): Self = StObject.set(x, "getTypeClass", js.Any.fromFunction0(value))
@@ -289,10 +289,10 @@ object XIdlClass {
     def setGetUik(value: () => Uik): Self = StObject.set(x, "getUik", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setInterfaces(value: SafeArray[XIdlClass[_]]): Self = StObject.set(x, "Interfaces", value.asInstanceOf[js.Any])
+    def setInterfaces(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Interfaces", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIsAssignableFrom(value: XIdlClass[_] => Boolean): Self = StObject.set(x, "isAssignableFrom", js.Any.fromFunction1(value))
+    def setIsAssignableFrom(value: XIdlClass[js.Any] => Boolean): Self = StObject.set(x, "isAssignableFrom", js.Any.fromFunction1(value))
     
     @scala.inline
     def setMethods(value: SafeArray[XIdlMethod]): Self = StObject.set(x, "Methods", value.asInstanceOf[js.Any])
@@ -301,7 +301,7 @@ object XIdlClass {
     def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSuperclasses(value: SafeArray[XIdlClass[_]]): Self = StObject.set(x, "Superclasses", value.asInstanceOf[js.Any])
+    def setSuperclasses(value: SafeArray[XIdlClass[js.Any]]): Self = StObject.set(x, "Superclasses", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTypeClass(value: TypeClass): Self = StObject.set(x, "TypeClass", value.asInstanceOf[js.Any])

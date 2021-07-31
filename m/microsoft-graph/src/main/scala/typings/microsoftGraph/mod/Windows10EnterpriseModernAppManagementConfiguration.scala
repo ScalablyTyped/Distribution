@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Windows10EnterpriseModernAppManagementConfiguration extends DeviceConfiguration {
+trait Windows10EnterpriseModernAppManagementConfiguration
+  extends StObject
+     with DeviceConfiguration {
   
   // Indicates whether or not to uninstall a fixed list of built-in Windows apps.
-  var uninstallBuiltInApps: js.UndefOr[Boolean] = js.native
+  var uninstallBuiltInApps: js.UndefOr[Boolean] = js.undefined
 }
 object Windows10EnterpriseModernAppManagementConfiguration {
   

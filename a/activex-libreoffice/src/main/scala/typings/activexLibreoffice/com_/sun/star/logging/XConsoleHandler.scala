@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * .
   * @since OOo 2.3
   */
-@js.native
-trait XConsoleHandler extends XLogHandler {
+trait XConsoleHandler
+  extends StObject
+     with XLogHandler {
   
   /**
     * denotes the {@link LogLevel} threshold used to determine to which console the events should be logged.
@@ -24,7 +24,7 @@ trait XConsoleHandler extends XLogHandler {
     *
     * The default value for this attribute is {@link LogLevel.SEVERE} .
     */
-  var Threshold: Double = js.native
+  var Threshold: Double
 }
 object XConsoleHandler {
   

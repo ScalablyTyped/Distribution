@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.mobile.ui.View
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofView extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): View = js.native
+  def extend(proto: js.Object): View
   
   /* static member */
-  var fn: View = js.native
+  var fn: View
 }
 object TypeofView {
   

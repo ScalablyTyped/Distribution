@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeUserPoolResponse extends StObject {
   
   /**
     * The container of metadata returned by the server to describe the pool.
     */
-  var UserPool: js.UndefOr[UserPoolType] = js.native
+  var UserPool: js.UndefOr[UserPoolType] = js.undefined
 }
 object DescribeUserPoolResponse {
   

@@ -6,26 +6,24 @@ import typings.octokitTypes.octokitTypesStrings.note
 import typings.octokitTypes.octokitTypesStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Severity extends StObject {
   
   /**
     * A short description of the rule used to detect the alert.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * A unique identifier for the rule used to detect the alert.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * The severity of the alert.
     */
-  var severity: none | note | warning | error = js.native
+  var severity: none | note | warning | error
 }
 object Severity {
   

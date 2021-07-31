@@ -2,21 +2,19 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQuery extends StObject {
   
-  var from: User = js.native
+  var from: User
   
-  var id: String = js.native
+  var id: String
   
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
-  var offset: String = js.native
+  var offset: String
   
-  var query: String = js.native
+  var query: String
 }
 object InlineQuery {
   

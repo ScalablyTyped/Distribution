@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.winjs.anon.KeyCode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,20 +12,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 **/
 object XYFocus {
   
-  @js.native
   trait IRect extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: Double = js.native
+    var top: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object IRect {
     
@@ -67,34 +65,34 @@ object XYFocus {
   
   @js.native
   trait XYFocusEvent
-    extends CustomEvent[js.Any] {
+    extends StObject
+       with CustomEvent[js.Any] {
     
     @JSName("detail")
     var detail_XYFocusEvent: KeyCode = js.native
   }
   
-  @js.native
   trait XYFocusOptions extends StObject {
     
     /**
       * The focus scope, only children of this element are considered in the calculation.
       **/
-    var focusRoot: js.UndefOr[HTMLElement] = js.native
+    var focusRoot: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * A rectangle indicating where focus came from before the current state.
       **/
-    var historyRect: js.UndefOr[IRect] = js.native
+    var historyRect: js.UndefOr[IRect] = js.undefined
     
     /**
       * The element from which to calculate the next focusable element; if specified, referenceRect is ignored.
       **/
-    var referenceElement: js.UndefOr[HTMLElement] = js.native
+    var referenceElement: js.UndefOr[HTMLElement] = js.undefined
     
     /**
       * The rectangle from which to calculate next focusable element; ignored if referenceElement is also specified.
       **/
-    var referenceRect: js.UndefOr[IRect] = js.native
+    var referenceRect: js.UndefOr[IRect] = js.undefined
   }
   object XYFocusOptions {
     

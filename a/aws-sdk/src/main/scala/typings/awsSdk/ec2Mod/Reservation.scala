@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reservation extends StObject {
   
   /**
     * [EC2-Classic only] The security groups.
     */
-  var Groups: js.UndefOr[GroupIdentifierList] = js.native
+  var Groups: js.UndefOr[GroupIdentifierList] = js.undefined
   
   /**
     * The instances.
     */
-  var Instances: js.UndefOr[InstanceList] = js.native
+  var Instances: js.UndefOr[InstanceList] = js.undefined
   
   /**
     * The ID of the AWS account that owns the reservation.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the requester that launched the instances on your behalf (for example, AWS Management Console or Auto Scaling).
     */
-  var RequesterId: js.UndefOr[String] = js.native
+  var RequesterId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the reservation.
     */
-  var ReservationId: js.UndefOr[String] = js.native
+  var ReservationId: js.UndefOr[String] = js.undefined
 }
 object Reservation {
   

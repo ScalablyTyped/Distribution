@@ -6,46 +6,43 @@ import typings.tensorflowTfjsCore.distTypesMod.Rank
 import typings.tensorflowTfjsData.datasetMod.Dataset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statisticsMod {
   
-  @JSImport("@tensorflow/tfjs-data/dist/statistics", "computeDatasetStatistics")
+  @JSImport("@tensorflow/tfjs-data/dist/statistics", JSImport.Namespace)
   @js.native
-  def computeDatasetStatistics(dataset: Dataset[TabularRecord]): js.Promise[DatasetStatistics] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/statistics", "computeDatasetStatistics")
-  @js.native
-  def computeDatasetStatistics(dataset: Dataset[TabularRecord], sampleSize: js.UndefOr[scala.Nothing], shuffleWindowSize: Double): js.Promise[DatasetStatistics] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/statistics", "computeDatasetStatistics")
-  @js.native
-  def computeDatasetStatistics(dataset: Dataset[TabularRecord], sampleSize: Double): js.Promise[DatasetStatistics] = js.native
-  @JSImport("@tensorflow/tfjs-data/dist/statistics", "computeDatasetStatistics")
-  @js.native
-  def computeDatasetStatistics(dataset: Dataset[TabularRecord], sampleSize: Double, shuffleWindowSize: Double): js.Promise[DatasetStatistics] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@tensorflow/tfjs-data/dist/statistics", "scaleTo01")
-  @js.native
-  def scaleTo01(min: Double, max: Double): js.Function1[/* value */ ElementArray, ElementArray] = js.native
+  @scala.inline
+  def computeDatasetStatistics(dataset: Dataset[TabularRecord]): js.Promise[DatasetStatistics] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeDatasetStatistics")(dataset.asInstanceOf[js.Any]).asInstanceOf[js.Promise[DatasetStatistics]]
+  @scala.inline
+  def computeDatasetStatistics(dataset: Dataset[TabularRecord], sampleSize: Double): js.Promise[DatasetStatistics] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDatasetStatistics")(dataset.asInstanceOf[js.Any], sampleSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DatasetStatistics]]
+  @scala.inline
+  def computeDatasetStatistics(dataset: Dataset[TabularRecord], sampleSize: Double, shuffleWindowSize: Double): js.Promise[DatasetStatistics] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDatasetStatistics")(dataset.asInstanceOf[js.Any], sampleSize.asInstanceOf[js.Any], shuffleWindowSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DatasetStatistics]]
+  @scala.inline
+  def computeDatasetStatistics(dataset: Dataset[TabularRecord], sampleSize: Unit, shuffleWindowSize: Double): js.Promise[DatasetStatistics] = (^.asInstanceOf[js.Dynamic].applyDynamic("computeDatasetStatistics")(dataset.asInstanceOf[js.Any], sampleSize.asInstanceOf[js.Any], shuffleWindowSize.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DatasetStatistics]]
+  
+  @scala.inline
+  def scaleTo01(min: Double, max: Double): js.Function1[/* value */ ElementArray, ElementArray] = (^.asInstanceOf[js.Dynamic].applyDynamic("scaleTo01")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* value */ ElementArray, ElementArray]]
   
   type DatasetStatistics = StringDictionary[NumericColumnStatistics]
   
   type ElementArray = Double | js.Array[Double] | Tensor[Rank] | String
   
-  @js.native
   trait NumericColumnStatistics extends StObject {
     
-    var length: Double = js.native
+    var length: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var mean: Double = js.native
+    var mean: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var stddev: Double = js.native
+    var stddev: Double
     
-    var variance: Double = js.native
+    var variance: Double
   }
   object NumericColumnStatistics {
     

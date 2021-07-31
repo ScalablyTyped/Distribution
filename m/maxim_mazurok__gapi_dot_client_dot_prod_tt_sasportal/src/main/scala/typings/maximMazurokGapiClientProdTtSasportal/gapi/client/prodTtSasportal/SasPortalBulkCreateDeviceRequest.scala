@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientProdTtSasportal.gapi.client.prodTtSasporta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SasPortalBulkCreateDeviceRequest extends StObject {
   
   /** Required. A csv with each row representing a [device]. Each row must conform to the regulations described on CreateDeviceRequest's device field. */
-  var csv: js.UndefOr[String] = js.native
+  var csv: js.UndefOr[String] = js.undefined
 }
 object SasPortalBulkCreateDeviceRequest {
   

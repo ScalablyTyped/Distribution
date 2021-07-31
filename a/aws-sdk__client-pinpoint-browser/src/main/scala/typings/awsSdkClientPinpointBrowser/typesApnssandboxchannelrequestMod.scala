@@ -2,53 +2,51 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesApnssandboxchannelrequestMod {
   
-  @js.native
   trait APNSSandboxChannelRequest extends StObject {
     
     /**
       * The bundle id used for APNs Tokens.
       */
-    var BundleId: js.UndefOr[String] = js.native
+    var BundleId: js.UndefOr[String] = js.undefined
     
     /**
       * The distribution certificate from Apple.
       */
-    var Certificate: js.UndefOr[String] = js.native
+    var Certificate: js.UndefOr[String] = js.undefined
     
     /**
       * The default authentication method used for APNs.
       */
-    var DefaultAuthenticationMethod: js.UndefOr[String] = js.native
+    var DefaultAuthenticationMethod: js.UndefOr[String] = js.undefined
     
     /**
       * If the channel is enabled for sending messages.
       */
-    var Enabled: js.UndefOr[Boolean] = js.native
+    var Enabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The certificate private key.
       */
-    var PrivateKey: js.UndefOr[String] = js.native
+    var PrivateKey: js.UndefOr[String] = js.undefined
     
     /**
       * The team id used for APNs Tokens.
       */
-    var TeamId: js.UndefOr[String] = js.native
+    var TeamId: js.UndefOr[String] = js.undefined
     
     /**
       * The token key used for APNs Tokens.
       */
-    var TokenKey: js.UndefOr[String] = js.native
+    var TokenKey: js.UndefOr[String] = js.undefined
     
     /**
       * The token key used for APNs Tokens.
       */
-    var TokenKeyId: js.UndefOr[String] = js.native
+    var TokenKeyId: js.UndefOr[String] = js.undefined
   }
   object APNSSandboxChannelRequest {
     

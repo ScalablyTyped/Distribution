@@ -2,32 +2,30 @@ package typings.pulumiAws.outputMod.appmesh
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecHttp2RouteMatch extends StObject {
   
   /**
     * The client request headers to match on.
     */
-  var headers: js.UndefOr[js.Array[RouteSpecHttp2RouteMatchHeader]] = js.native
+  var headers: js.UndefOr[js.Array[RouteSpecHttp2RouteMatchHeader]] = js.undefined
   
   /**
     * The client request header method to match on. Valid values: `GET`, `HEAD`, `POST`, `PUT`, `DELETE`, `CONNECT`, `OPTIONS`, `TRACE`, `PATCH`.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
     * This parameter must always start with /, which by itself matches all requests to the virtual router service name.
     */
-  var prefix: String = js.native
+  var prefix: String
   
   /**
     * The client request header scheme to match on. Valid values: `http`, `https`.
     */
-  var scheme: js.UndefOr[String] = js.native
+  var scheme: js.UndefOr[String] = js.undefined
 }
 object RouteSpecHttp2RouteMatch {
   

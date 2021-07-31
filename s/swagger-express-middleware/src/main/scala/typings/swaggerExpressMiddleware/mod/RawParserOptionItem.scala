@@ -6,22 +6,20 @@ import typings.expressServeStaticCore.mod.Query
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RawParserOptionItem extends StObject {
   
   /**
     * if deflated bodies will be inflated. (default: true)
     */
-  var inflate: js.UndefOr[Boolean] = js.native
+  var inflate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Controls the maximum request body size. If this is a number, then the value specifies the number of bytes;
     * if it is a string, the value is passed to the bytes library for parsing. Defaults to '100kb'.
     */
-  var limit: js.UndefOr[String | Double] = js.native
+  var limit: js.UndefOr[String | Double] = js.undefined
   
   /**
     * The type option is used to determine what media type the middleware will parse.
@@ -31,21 +29,21 @@ trait RawParserOptionItem extends StObject {
     * Defaults to application/octet-stream.
     */
   var `type`: js.UndefOr[
-    (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]) | String
-  ] = js.native
+    (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]) | String
+  ] = js.undefined
   
   /**
     * function to verify body content, the parsing can be aborted by throwing an error.
     */
   var verify: js.UndefOr[
     js.Function4[
-      /* req */ Request_[ParamsDictionary, _, _, Query], 
+      /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], 
       /* res */ Response, 
       /* buf */ Buffer, 
       /* encoding */ String, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object RawParserOptionItem {
   
@@ -71,17 +69,19 @@ object RawParserOptionItem {
     def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setType(value: (js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], String]) | String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    def setType(
+      value: (js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], String]) | String
+    ): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTypeFunction1(value: /* req */ Request_[ParamsDictionary, _, _, Query] => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
+    def setTypeFunction1(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => String): Self = StObject.set(x, "type", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTypeUndefined: Self = StObject.set(x, "type", js.undefined)
     
     @scala.inline
     def setVerify(
-      value: (/* req */ Request_[ParamsDictionary, _, _, Query], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit
+      value: (/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response, /* buf */ Buffer, /* encoding */ String) => Unit
     ): Self = StObject.set(x, "verify", js.Any.fromFunction4(value))
     
     @scala.inline

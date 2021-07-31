@@ -3,22 +3,23 @@ package typings.antvGMath
 import typings.antvGMath.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bezierMod {
   
-  @JSImport("@antv/g-math/lib/bezier", "nearestPoint")
+  @JSImport("@antv/g-math/lib/bezier", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def nearestPoint(
     xArr: js.Array[Double],
     yArr: js.Array[Double],
     x: Double,
     y: Double,
     tCallback: js.Function1[/* repeated */ Double, Double]
-  ): Point = js.native
-  @JSImport("@antv/g-math/lib/bezier", "nearestPoint")
-  @js.native
+  ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoint")(xArr.asInstanceOf[js.Any], yArr.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], tCallback.asInstanceOf[js.Any])).asInstanceOf[Point]
+  @scala.inline
   def nearestPoint(
     xArr: js.Array[Double],
     yArr: js.Array[Double],
@@ -26,9 +27,8 @@ object bezierMod {
     y: Double,
     tCallback: js.Function1[/* repeated */ Double, Double],
     length: Double
-  ): Point = js.native
+  ): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("nearestPoint")(xArr.asInstanceOf[js.Any], yArr.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], tCallback.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[Point]
   
-  @JSImport("@antv/g-math/lib/bezier", "snapLength")
-  @js.native
-  def snapLength(xArr: js.Array[Double], yArr: js.Array[Double]): Double = js.native
+  @scala.inline
+  def snapLength(xArr: js.Array[Double], yArr: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("snapLength")(xArr.asInstanceOf[js.Any], yArr.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

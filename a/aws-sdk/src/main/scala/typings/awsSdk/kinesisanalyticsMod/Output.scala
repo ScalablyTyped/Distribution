@@ -2,36 +2,34 @@ package typings.awsSdk.kinesisanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Output extends StObject {
   
   /**
     * Describes the data format when records are written to the destination. For more information, see Configuring Application Output.
     */
-  var DestinationSchema: typings.awsSdk.kinesisanalyticsMod.DestinationSchema = js.native
+  var DestinationSchema: typings.awsSdk.kinesisanalyticsMod.DestinationSchema
   
   /**
     * Identifies an Amazon Kinesis Firehose delivery stream as the destination.
     */
-  var KinesisFirehoseOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseOutput] = js.native
+  var KinesisFirehoseOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisFirehoseOutput] = js.undefined
   
   /**
     * Identifies an Amazon Kinesis stream as the destination.
     */
-  var KinesisStreamsOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsOutput] = js.native
+  var KinesisStreamsOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.KinesisStreamsOutput] = js.undefined
   
   /**
     * Identifies an AWS Lambda function as the destination.
     */
-  var LambdaOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.LambdaOutput] = js.native
+  var LambdaOutput: js.UndefOr[typings.awsSdk.kinesisanalyticsMod.LambdaOutput] = js.undefined
   
   /**
     * Name of the in-application stream.
     */
-  var Name: InAppStreamName = js.native
+  var Name: InAppStreamName
 }
 object Output {
   

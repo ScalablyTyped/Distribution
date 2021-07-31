@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JustifyItemsProps extends StObject {
   
   val justifyItems: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object JustifyItemsProps {
   
@@ -28,7 +26,7 @@ object JustifyItemsProps {
     @scala.inline
     def setJustifyItems(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any
         ]
     ): Self = StObject.set(x, "justifyItems", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object JustifyItemsProps {
     def setJustifyItemsUndefined: Self = StObject.set(x, "justifyItems", js.undefined)
     
     @scala.inline
-    def setJustifyItemsVarargs(value: js.Any*): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
+    def setJustifyItemsVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.JustifyItems */ js.Any)*
+    ): Self = StObject.set(x, "justifyItems", js.Array(value :_*))
   }
 }

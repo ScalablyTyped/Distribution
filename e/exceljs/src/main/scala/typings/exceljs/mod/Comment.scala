@@ -4,19 +4,17 @@ import typings.exceljs.anon.PartialCommentMargins
 import typings.exceljs.anon.PartialCommentProtection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
-  var editAs: js.UndefOr[CommentEditAs] = js.native
+  var editAs: js.UndefOr[CommentEditAs] = js.undefined
   
-  var margins: js.UndefOr[PartialCommentMargins] = js.native
+  var margins: js.UndefOr[PartialCommentMargins] = js.undefined
   
-  var protection: js.UndefOr[PartialCommentProtection] = js.native
+  var protection: js.UndefOr[PartialCommentProtection] = js.undefined
   
-  var texts: js.UndefOr[js.Array[RichText]] = js.native
+  var texts: js.UndefOr[js.Array[RichText]] = js.undefined
 }
 object Comment {
   

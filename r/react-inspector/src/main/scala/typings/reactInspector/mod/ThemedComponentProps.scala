@@ -2,13 +2,11 @@ package typings.reactInspector.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemedComponentProps extends StObject {
   
-  var theme: js.UndefOr[InspectorTheme] = js.native
+  var theme: js.UndefOr[InspectorTheme] = js.undefined
 }
 object ThemedComponentProps {
   

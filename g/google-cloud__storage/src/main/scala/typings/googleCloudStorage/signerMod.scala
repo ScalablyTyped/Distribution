@@ -12,7 +12,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signerMod {
@@ -23,7 +22,16 @@ object signerMod {
   
   @JSImport("@google-cloud/storage/build/src/signer", "SigningError")
   @js.native
-  class SigningError () extends Error
+  class SigningError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("@google-cloud/storage/build/src/signer", "URLSigner")
   @js.native
@@ -86,12 +94,11 @@ object signerMod {
     def parseExpires(expires: Date, current: Date): Double = js.native
   }
   
-  @js.native
   trait AuthClient extends StObject {
     
-    def getCredentials(): js.Promise[GetCredentialsResponse] = js.native
+    def getCredentials(): js.Promise[GetCredentialsResponse]
     
-    def sign(blobToSign: String): js.Promise[String] = js.native
+    def sign(blobToSign: String): js.Promise[String]
   }
   object AuthClient {
     
@@ -112,10 +119,9 @@ object signerMod {
     }
   }
   
-  @js.native
   trait BucketI extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object BucketI {
     
@@ -133,10 +139,9 @@ object signerMod {
     }
   }
   
-  @js.native
   trait FileI extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object FileI {
     
@@ -154,10 +159,9 @@ object signerMod {
     }
   }
   
-  @js.native
   trait GetCredentialsResponse extends StObject {
     
-    var client_email: js.UndefOr[String] = js.native
+    var client_email: js.UndefOr[String] = js.undefined
   }
   object GetCredentialsResponse {
     
@@ -180,28 +184,27 @@ object signerMod {
   
   type GetSignedUrlCallback = js.Function2[/* err */ Error | Null, /* url */ js.UndefOr[String], Unit]
   
-  @js.native
   trait GetSignedUrlConfigInternal extends StObject {
     
-    var accessibleAt: js.UndefOr[Date] = js.native
+    var accessibleAt: js.UndefOr[Date] = js.undefined
     
-    var bucket: String = js.native
+    var bucket: String
     
-    var cname: js.UndefOr[String] = js.native
+    var cname: js.UndefOr[String] = js.undefined
     
-    var contentMd5: js.UndefOr[String] = js.native
+    var contentMd5: js.UndefOr[String] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var expiration: Double = js.native
+    var expiration: Double
     
-    var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var queryParams: js.UndefOr[Query] = js.native
+    var queryParams: js.UndefOr[Query] = js.undefined
   }
   object GetSignedUrlConfigInternal {
     
@@ -271,28 +274,27 @@ object signerMod {
   
   type Query = StringDictionary[String]
   
-  @js.native
   trait SignerGetSignedUrlConfig extends StObject {
     
-    var accessibleAt: js.UndefOr[String | Double | Date] = js.native
+    var accessibleAt: js.UndefOr[String | Double | Date] = js.undefined
     
-    var cname: js.UndefOr[String] = js.native
+    var cname: js.UndefOr[String] = js.undefined
     
-    var contentMd5: js.UndefOr[String] = js.native
+    var contentMd5: js.UndefOr[String] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var expires: String | Double | Date = js.native
+    var expires: String | Double | Date
     
-    var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var extensionHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var method: GET | PUT | DELETE | POST = js.native
+    var method: GET | PUT | DELETE | POST
     
-    var queryParams: js.UndefOr[Query] = js.native
+    var queryParams: js.UndefOr[Query] = js.undefined
     
-    var version: js.UndefOr[v2 | v4] = js.native
+    var version: js.UndefOr[v2 | v4] = js.undefined
     
-    var virtualHostedStyle: js.UndefOr[Boolean] = js.native
+    var virtualHostedStyle: js.UndefOr[Boolean] = js.undefined
   }
   object SignerGetSignedUrlConfig {
     

@@ -4,7 +4,6 @@ import typings.materialUiLab.anon.Color
 import typings.react.mod.ElementType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object paginationItemPaginationItemMod {
@@ -89,27 +88,26 @@ object paginationItemPaginationItemMod {
     def textSecondary: typings.materialUiLab.materialUiLabStrings.textSecondary = "textSecondary".asInstanceOf[typings.materialUiLab.materialUiLabStrings.textSecondary]
   }
   
-  type PaginationItemProps[D /* <: ElementType[_] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<PaginationItemTypeMap<P, D>, D> */ js.Any
+  type PaginationItemProps[D /* <: ElementType[js.Any] */, P] = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify OverrideProps<PaginationItemTypeMap<P, D>, D> */ js.Any
   
-  @js.native
-  trait PaginationItemTypeMap[P, D /* <: ElementType[_] */] extends StObject {
+  trait PaginationItemTypeMap[P, D /* <: ElementType[js.Any] */] extends StObject {
     
-    var classKey: PaginationItemClassKey = js.native
+    var classKey: PaginationItemClassKey
     
-    var defaultComponent: D = js.native
+    var defaultComponent: D
     
-    var props: P with Color = js.native
+    var props: P & Color
   }
   object PaginationItemTypeMap {
     
     @scala.inline
-    def apply[P, D /* <: ElementType[_] */](classKey: PaginationItemClassKey, defaultComponent: D, props: P with Color): PaginationItemTypeMap[P, D] = {
+    def apply[P, D /* <: ElementType[js.Any] */](classKey: PaginationItemClassKey, defaultComponent: D, props: P & Color): PaginationItemTypeMap[P, D] = {
       val __obj = js.Dynamic.literal(classKey = classKey.asInstanceOf[js.Any], defaultComponent = defaultComponent.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any])
       __obj.asInstanceOf[PaginationItemTypeMap[P, D]]
     }
     
     @scala.inline
-    implicit class PaginationItemTypeMapMutableBuilder[Self <: PaginationItemTypeMap[_, _], P, D /* <: ElementType[_] */] (val x: Self with (PaginationItemTypeMap[P, D])) extends AnyVal {
+    implicit class PaginationItemTypeMapMutableBuilder[Self <: PaginationItemTypeMap[?, ?], P, D /* <: ElementType[js.Any] */] (val x: Self & (PaginationItemTypeMap[P, D])) extends AnyVal {
       
       @scala.inline
       def setClassKey(value: PaginationItemClassKey): Self = StObject.set(x, "classKey", value.asInstanceOf[js.Any])
@@ -118,7 +116,7 @@ object paginationItemPaginationItemMod {
       def setDefaultComponent(value: D): Self = StObject.set(x, "defaultComponent", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProps(value: P with Color): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
+      def setProps(value: P & Color): Self = StObject.set(x, "props", value.asInstanceOf[js.Any])
     }
   }
 }

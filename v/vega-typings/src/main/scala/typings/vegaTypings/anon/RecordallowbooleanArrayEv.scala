@@ -4,14 +4,14 @@ import typings.vegaTypings.configMod.DefaultsConfig
 import typings.vegaTypings.streamMod.EventType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Record<'allow', boolean | std.Array<vega-typings.vega-typings/types/spec.EventType>> */
-@js.native
-trait RecordallowbooleanArrayEv extends DefaultsConfig {
+trait RecordallowbooleanArrayEv
+  extends StObject
+     with DefaultsConfig {
   
-  var allow: Boolean | js.Array[EventType] = js.native
+  var allow: Boolean | js.Array[EventType]
 }
 object RecordallowbooleanArrayEv {
   

@@ -4,15 +4,13 @@ import typings.jsmediatags.anon.Compression
 import typings.jsmediatags.anon.Filealterpreservation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagFrameFlags extends StObject {
   
-  var format: Compression = js.native
+  var format: Compression
   
-  var message: Filealterpreservation = js.native
+  var message: Filealterpreservation
 }
 object TagFrameFlags {
   

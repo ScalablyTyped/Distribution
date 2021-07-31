@@ -2,40 +2,38 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndexField extends StObject {
   
-  var DateArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DateArrayOptions] = js.native
+  var DateArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DateArrayOptions] = js.undefined
   
-  var DateOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DateOptions] = js.native
+  var DateOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DateOptions] = js.undefined
   
-  var DoubleArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DoubleArrayOptions] = js.native
+  var DoubleArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DoubleArrayOptions] = js.undefined
   
-  var DoubleOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DoubleOptions] = js.native
+  var DoubleOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.DoubleOptions] = js.undefined
   
   /**
     * A string that represents the name of an index field. CloudSearch supports regular index fields as well as dynamic fields. A dynamic field's name defines a pattern that begins or ends with a wildcard. Any document fields that don't map to a regular index field but do match a dynamic field's pattern are configured with the dynamic field's indexing options.  Regular field names begin with a letter and can contain the following characters: a-z (lowercase), 0-9, and _ (underscore). Dynamic field names must begin or end with a wildcard (*). The wildcard can also be the only character in a dynamic field name. Multiple wildcards, and wildcards embedded within a string are not supported.  The name score is reserved and cannot be used as a field name. To reference a document's ID, you can use the name _id. 
     */
-  var IndexFieldName: DynamicFieldName = js.native
+  var IndexFieldName: DynamicFieldName
   
-  var IndexFieldType: typings.awsSdk.cloudsearchMod.IndexFieldType = js.native
+  var IndexFieldType: typings.awsSdk.cloudsearchMod.IndexFieldType
   
-  var IntArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.IntArrayOptions] = js.native
+  var IntArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.IntArrayOptions] = js.undefined
   
-  var IntOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.IntOptions] = js.native
+  var IntOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.IntOptions] = js.undefined
   
-  var LatLonOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.LatLonOptions] = js.native
+  var LatLonOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.LatLonOptions] = js.undefined
   
-  var LiteralArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.LiteralArrayOptions] = js.native
+  var LiteralArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.LiteralArrayOptions] = js.undefined
   
-  var LiteralOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.LiteralOptions] = js.native
+  var LiteralOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.LiteralOptions] = js.undefined
   
-  var TextArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.TextArrayOptions] = js.native
+  var TextArrayOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.TextArrayOptions] = js.undefined
   
-  var TextOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.TextOptions] = js.native
+  var TextOptions: js.UndefOr[typings.awsSdk.cloudsearchMod.TextOptions] = js.undefined
 }
 object IndexField {
   

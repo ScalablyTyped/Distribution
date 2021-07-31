@@ -5,24 +5,24 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameReplace
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to a list of URLs bound to events of this object */
-@js.native
-trait XEventsSupplier extends XInterface {
+trait XEventsSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * offers a list of event handlers which are be bound to events of this object
     * @returns an {@link Events} description object
     */
-  val Events: XNameReplace = js.native
+  val Events: XNameReplace
   
   /**
     * offers a list of event handlers which are be bound to events of this object
     * @returns an {@link Events} description object
     */
-  def getEvents(): XNameReplace = js.native
+  def getEvents(): XNameReplace
 }
 object XEventsSupplier {
   

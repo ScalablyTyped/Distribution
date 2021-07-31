@@ -2,21 +2,19 @@ package typings.awsSdk.licensemanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUsageForLicenseConfigurationResponse extends StObject {
   
   /**
     * Information about the license configurations.
     */
-  var LicenseConfigurationUsageList: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseConfigurationUsageList] = js.native
+  var LicenseConfigurationUsageList: js.UndefOr[typings.awsSdk.licensemanagerMod.LicenseConfigurationUsageList] = js.undefined
   
   /**
     * Token for the next set of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListUsageForLicenseConfigurationResponse {
   

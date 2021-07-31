@@ -6,7 +6,6 @@ import typings.reactCartographer.reactCartographerStrings.google
 import typings.reactCartographer.reactCartographerStrings.yahoo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapMod {
@@ -52,12 +51,11 @@ object mapMod {
   
   type Map = Component[MapProps, js.Object, js.Any]
   
-  @js.native
   trait MapData extends StObject {
     
-    var locationLink: js.Any = js.native
+    var locationLink: js.Any
     
-    var locationText: String = js.native
+    var locationText: String
   }
   object MapData {
     
@@ -78,12 +76,11 @@ object mapMod {
     }
   }
   
-  @js.native
   trait MapObject extends StObject {
     
-    var data: MapData = js.native
+    var data: MapData
     
-    var mapId: String = js.native
+    var mapId: String
   }
   object MapObject {
     
@@ -104,40 +101,39 @@ object mapMod {
     }
   }
   
-  @js.native
   trait MapProps extends StObject {
     
-    var addressLine1: js.UndefOr[String] = js.native
+    var addressLine1: js.UndefOr[String] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
     /** Default: 270 */
-    var height: Double = js.native
+    var height: Double
     
-    var latitude: js.UndefOr[Double] = js.native
+    var latitude: js.UndefOr[Double] = js.undefined
     
-    var longitude: js.UndefOr[Double] = js.native
+    var longitude: js.UndefOr[Double] = js.undefined
     
     /** Default: map */
-    var mapId: String = js.native
+    var mapId: String
     
     /** Default: yahoo */
-    var provider: yahoo | google | bing = js.native
+    var provider: yahoo | google | bing
     
-    var providerKey: String = js.native
+    var providerKey: String
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
     /** Default: false */
-    var useBackgroundImageStyle: Boolean = js.native
+    var useBackgroundImageStyle: Boolean
     
     /** Default: 580 */
-    var width: Double = js.native
+    var width: Double
     
     /** Default: 10 */
-    var zoom: Double = js.native
+    var zoom: Double
   }
   object MapProps {
     

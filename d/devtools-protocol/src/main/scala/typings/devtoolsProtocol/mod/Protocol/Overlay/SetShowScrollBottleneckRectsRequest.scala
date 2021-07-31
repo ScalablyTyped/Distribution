@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetShowScrollBottleneckRectsRequest extends StObject {
   
   /**
     * True for showing scroll bottleneck rects
     */
-  var show: Boolean = js.native
+  var show: Boolean
 }
 object SetShowScrollBottleneckRectsRequest {
   

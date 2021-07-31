@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDetectDominantLanguageItemResult extends StObject {
   
   /**
     * The zero-based index of the document in the input list.
     */
-  var Index: js.UndefOr[Integer] = js.native
+  var Index: js.UndefOr[Integer] = js.undefined
   
   /**
     * One or more DominantLanguage objects describing the dominant languages in the document.
     */
-  var Languages: js.UndefOr[ListOfDominantLanguages] = js.native
+  var Languages: js.UndefOr[ListOfDominantLanguages] = js.undefined
 }
 object BatchDetectDominantLanguageItemResult {
   

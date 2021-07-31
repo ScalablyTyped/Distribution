@@ -3,17 +3,15 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 import typings.tensorflowTfjsCore.fusedTypesMod.Activation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FusedMatMulAttrs extends StObject {
   
-  var activation: Activation = js.native
+  var activation: Activation
   
-  var transposeA: Boolean = js.native
+  var transposeA: Boolean
   
-  var transposeB: Boolean = js.native
+  var transposeB: Boolean
 }
 object FusedMatMulAttrs {
   

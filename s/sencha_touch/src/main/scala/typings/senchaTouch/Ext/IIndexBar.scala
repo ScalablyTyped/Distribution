@@ -2,68 +2,68 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IIndexBar extends IComponent {
+trait IIndexBar
+  extends StObject
+     with IComponent {
   
   /** [Config Option] (Boolean) */
-  var alphabet: js.UndefOr[Boolean] = js.native
+  var alphabet: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (String) */
-  var direction: js.UndefOr[java.lang.String] = js.native
+  var direction: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Returns the value of direction
     * @returns String
     */
-  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getDirection: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns the value of letters
     * @returns Array
     */
-  var getLetters: js.UndefOr[js.Function0[Array]] = js.native
+  var getLetters: js.UndefOr[js.Function0[Array]] = js.undefined
   
   /** [Method] Returns the value of listPrefix
     * @returns String
     */
-  var getListPrefix: js.UndefOr[js.Function0[java.lang.String]] = js.native
+  var getListPrefix: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
   
   /** [Method] Returns true when direction is horizontal  */
-  var isHorizontal: js.UndefOr[js.Function0[Unit]] = js.native
+  var isHorizontal: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Returns true when direction is vertical  */
-  var isVertical: js.UndefOr[js.Function0[Unit]] = js.native
+  var isVertical: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var itemSelector: js.UndefOr[Boolean] = js.native
+  var itemSelector: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Array) */
-  var letters: js.UndefOr[Array] = js.native
+  var letters: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (String) */
-  var listPrefix: js.UndefOr[java.lang.String] = js.native
+  var listPrefix: js.UndefOr[java.lang.String] = js.undefined
   
   /** [Method] Refreshes the view by reloading the data from the store and re rendering the template  */
-  var refresh: js.UndefOr[js.Function0[Unit]] = js.native
+  var refresh: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Sets the value of direction
     * @param direction String The new value.
     */
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Method] Sets the value of letters
     * @param letters Array The new value.
     */
-  var setLetters: js.UndefOr[js.Function1[/* letters */ js.UndefOr[Array], Unit]] = js.native
+  var setLetters: js.UndefOr[js.Function1[/* letters */ js.UndefOr[Array], Unit]] = js.undefined
   
   /** [Method] Sets the value of listPrefix
     * @param listPrefix String The new value.
     */
-  var setListPrefix: js.UndefOr[js.Function1[/* listPrefix */ js.UndefOr[java.lang.String], Unit]] = js.native
+  var setListPrefix: js.UndefOr[js.Function1[/* listPrefix */ js.UndefOr[java.lang.String], Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var store: js.UndefOr[Boolean] = js.native
+  var store: js.UndefOr[Boolean] = js.undefined
 }
 object IIndexBar {
   

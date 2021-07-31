@@ -6,10 +6,13 @@ import typings.react.mod.ComponentType
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-albus", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-albus", "Step")
   @js.native
@@ -27,14 +30,12 @@ object mod {
   @js.native
   val Wizard: ComponentType[WizardProps] = js.native
   
-  @JSImport("react-albus", "withWizard")
-  @js.native
-  def withWizard[P](component: ComponentType[P with WizardComponentProps]): ComponentType[P] = js.native
+  @scala.inline
+  def withWizard[P](component: ComponentType[P & WizardComponentProps]): ComponentType[P] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWizard")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentType[P]]
   
-  @js.native
   trait StepObject extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object StepObject {
     
@@ -52,12 +53,11 @@ object mod {
     }
   }
   
-  type StepProps = StepObject with WizardContextRenderProps
+  type StepProps = StepObject & WizardContextRenderProps
   
-  @js.native
   trait StepsProps extends StObject {
     
-    var step: js.UndefOr[StepObject] = js.native
+    var step: js.UndefOr[StepObject] = js.undefined
   }
   object StepsProps {
     
@@ -78,10 +78,9 @@ object mod {
     }
   }
   
-  @js.native
   trait WizardComponentProps extends StObject {
     
-    var wizard: WizardContext = js.native
+    var wizard: WizardContext
   }
   object WizardComponentProps {
     
@@ -141,16 +140,15 @@ object mod {
     }
   }
   
-  @js.native
   trait WizardProps extends StObject {
     
-    var basename: js.UndefOr[String] = js.native
+    var basename: js.UndefOr[String] = js.undefined
     
-    var history: js.UndefOr[History[LocationState]] = js.native
+    var history: js.UndefOr[History[LocationState]] = js.undefined
     
-    var onNext: js.UndefOr[js.Function1[/* wizard */ WizardContext, Unit]] = js.native
+    var onNext: js.UndefOr[js.Function1[/* wizard */ WizardContext, Unit]] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, ReactNode]] = js.native
+    var render: js.UndefOr[js.Function1[/* wizard */ WizardContext, ReactNode]] = js.undefined
   }
   object WizardProps {
     

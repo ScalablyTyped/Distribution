@@ -2,14 +2,14 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the YearlyRecurrenceControl.
   */
-@js.native
-trait ASPxClientYearlyRecurrenceControl extends ASPxClientRecurrenceControlBase
+trait ASPxClientYearlyRecurrenceControl
+  extends StObject
+     with ASPxClientRecurrenceControlBase
 object ASPxClientYearlyRecurrenceControl {
   
   @scala.inline

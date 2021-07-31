@@ -13,30 +13,30 @@ import typings.pulumiAws.outputMod.elasticsearch.GetDomainVpcOption
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getDomainMod {
   
-  @JSImport("@pulumi/aws/elasticsearch/getDomain", "getDomain")
+  @JSImport("@pulumi/aws/elasticsearch/getDomain", JSImport.Namespace)
   @js.native
-  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] = js.native
-  @JSImport("@pulumi/aws/elasticsearch/getDomain", "getDomain")
-  @js.native
-  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDomain(args: GetDomainArgs): js.Promise[GetDomainResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDomainResult]]
+  @scala.inline
+  def getDomain(args: GetDomainArgs, opts: InvokeOptions): js.Promise[GetDomainResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDomain")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDomainResult]]
+  
   trait GetDomainArgs extends StObject {
     
     /**
       * Name of the domain.
       */
-    val domainName: String = js.native
+    val domainName: String
     
     /**
       * The tags assigned to the domain.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetDomainArgs {
     
@@ -60,113 +60,112 @@ object getDomainMod {
     }
   }
   
-  @js.native
   trait GetDomainResult extends StObject {
     
     /**
       * The policy document attached to the domain.
       */
-    val accessPolicies: String = js.native
+    val accessPolicies: String
     
     /**
       * Key-value string pairs to specify advanced configuration options.
       */
-    val advancedOptions: StringDictionary[String] = js.native
+    val advancedOptions: StringDictionary[String]
     
     /**
       * Status of the Elasticsearch domain's advanced security options. The block consists of the following attributes:
       */
-    val advancedSecurityOptions: js.Array[GetDomainAdvancedSecurityOption] = js.native
+    val advancedSecurityOptions: js.Array[GetDomainAdvancedSecurityOption]
     
     /**
       * The Amazon Resource Name (ARN) of the domain.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Cluster configuration of the domain.
       */
-    val clusterConfigs: js.Array[GetDomainClusterConfig] = js.native
+    val clusterConfigs: js.Array[GetDomainClusterConfig]
     
     /**
       * Domain Amazon Cognito Authentication options for Kibana.
       */
-    val cognitoOptions: js.Array[GetDomainCognitoOption] = js.native
+    val cognitoOptions: js.Array[GetDomainCognitoOption]
     
     /**
       * Status of the creation of the domain.
       */
-    val created: Boolean = js.native
+    val created: Boolean
     
     /**
       * Status of the deletion of the domain.
       */
-    val deleted: Boolean = js.native
+    val deleted: Boolean
     
     /**
       * Unique identifier for the domain.
       */
-    val domainId: String = js.native
+    val domainId: String
     
-    val domainName: String = js.native
+    val domainName: String
     
     /**
       * EBS Options for the instances in the domain.
       */
-    val ebsOptions: js.Array[GetDomainEbsOption] = js.native
+    val ebsOptions: js.Array[GetDomainEbsOption]
     
     /**
       * ElasticSearch version for the domain.
       */
-    val elasticsearchVersion: String = js.native
+    val elasticsearchVersion: String
     
     /**
       * Domain encryption at rest related options.
       */
-    val encryptionAtRests: js.Array[GetDomainEncryptionAtRest] = js.native
+    val encryptionAtRests: js.Array[GetDomainEncryptionAtRest]
     
     /**
       * Domain-specific endpoint used to submit index, search, and data upload requests.
       */
-    val endpoint: String = js.native
+    val endpoint: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Domain-specific endpoint used to access the Kibana application.
       */
-    val kibanaEndpoint: String = js.native
+    val kibanaEndpoint: String
     
     /**
       * Domain log publishing related options.
       */
-    val logPublishingOptions: js.Array[GetDomainLogPublishingOption] = js.native
+    val logPublishingOptions: js.Array[GetDomainLogPublishingOption]
     
     /**
       * Domain in transit encryption related options.
       */
-    val nodeToNodeEncryptions: js.Array[GetDomainNodeToNodeEncryption] = js.native
+    val nodeToNodeEncryptions: js.Array[GetDomainNodeToNodeEncryption]
     
     /**
       * Status of a configuration change in the domain.
       * * `snapshotOptions` – Domain snapshot related options.
       */
-    val processing: Boolean = js.native
+    val processing: Boolean
     
-    val snapshotOptions: js.Array[GetDomainSnapshotOption] = js.native
+    val snapshotOptions: js.Array[GetDomainSnapshotOption]
     
     /**
       * The tags assigned to the domain.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * VPC Options for private Elasticsearch domains.
       */
-    val vpcOptions: js.Array[GetDomainVpcOption] = js.native
+    val vpcOptions: js.Array[GetDomainVpcOption]
   }
   object GetDomainResult {
     

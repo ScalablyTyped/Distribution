@@ -20,7 +20,6 @@ import typings.scChannel.mod.SCChannel
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,17 +31,17 @@ object mod {
     
     def add(keyChain: KeyChain, value: js.Any): Unit = js.native
     def add(keyChain: KeyChain, value: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def add(
-      keyChain: KeyChain,
-      value: js.Any,
-      getValue: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
     def add(keyChain: KeyChain, value: js.Any, getValue: Boolean): Unit = js.native
     def add(
       keyChain: KeyChain,
       value: js.Any,
       getValue: Boolean,
+      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    ): Unit = js.native
+    def add(
+      keyChain: KeyChain,
+      value: js.Any,
+      getValue: Unit,
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): Unit = js.native
     
@@ -55,7 +54,7 @@ object mod {
     ): Unit = js.native
     def exec(
       query: js.Function1[/* datamap */ FlexiMap, Unit],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error | Null, /* data */ js.Any, Unit]
     ): Unit = js.native
     def exec(query: js.Function1[/* datamap */ FlexiMap, Unit], options: QueryOptions): Unit = js.native
@@ -70,11 +69,11 @@ object mod {
     
     def extractKeys(keyChain: KeyChain): js.Array[String] = js.native
     
-    def extractValues(keyChain: KeyChain): js.Array[_] = js.native
+    def extractValues(keyChain: KeyChain): js.Array[js.Any] = js.native
     
     def get(keyChain: KeyChain, callback: js.Function2[/* err */ Error | Null, /* value */ js.Any, Unit]): Unit = js.native
     
-    def getAll(callback: js.Function2[/* err */ Error | Null, /* value */ js.Array[_] | js.Object, Unit]): Unit = js.native
+    def getAll(callback: js.Function2[/* err */ Error | Null, /* value */ js.Array[js.Any] | js.Object, Unit]): Unit = js.native
     
     def getRange(
       keyChain: KeyChain,
@@ -94,52 +93,20 @@ object mod {
     
     def remove(keyChain: KeyChain): Unit = js.native
     def remove(keyChain: KeyChain, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def remove(
-      keyChain: KeyChain,
-      getValue: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
     def remove(keyChain: KeyChain, getValue: Boolean): Unit = js.native
     def remove(keyChain: KeyChain, getValue: Boolean, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+    def remove(keyChain: KeyChain, getValue: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     
     def removeAll(): Unit = js.native
     def removeAll(callback: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
     def removeRange(keyChain: KeyChain, fromIndex: Double): Unit = js.native
     def removeRange(keyChain: KeyChain, fromIndex: Double, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def removeRange(
-      keyChain: KeyChain,
-      fromIndex: Double,
-      toIndex: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    def removeRange(
-      keyChain: KeyChain,
-      fromIndex: Double,
-      toIndex: js.UndefOr[scala.Nothing],
-      getValue: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    def removeRange(keyChain: KeyChain, fromIndex: Double, toIndex: js.UndefOr[scala.Nothing], getValue: Boolean): Unit = js.native
-    def removeRange(
-      keyChain: KeyChain,
-      fromIndex: Double,
-      toIndex: js.UndefOr[scala.Nothing],
-      getValue: Boolean,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
     def removeRange(keyChain: KeyChain, fromIndex: Double, toIndex: Double): Unit = js.native
     def removeRange(
       keyChain: KeyChain,
       fromIndex: Double,
       toIndex: Double,
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
-    def removeRange(
-      keyChain: KeyChain,
-      fromIndex: Double,
-      toIndex: Double,
-      getValue: js.UndefOr[scala.Nothing],
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): Unit = js.native
     def removeRange(keyChain: KeyChain, fromIndex: Double, toIndex: Double, getValue: Boolean): Unit = js.native
@@ -150,15 +117,37 @@ object mod {
       getValue: Boolean,
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): Unit = js.native
+    def removeRange(
+      keyChain: KeyChain,
+      fromIndex: Double,
+      toIndex: Double,
+      getValue: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    ): Unit = js.native
+    def removeRange(
+      keyChain: KeyChain,
+      fromIndex: Double,
+      toIndex: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    ): Unit = js.native
+    def removeRange(keyChain: KeyChain, fromIndex: Double, toIndex: Unit, getValue: Boolean): Unit = js.native
+    def removeRange(
+      keyChain: KeyChain,
+      fromIndex: Double,
+      toIndex: Unit,
+      getValue: Boolean,
+      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    ): Unit = js.native
+    def removeRange(
+      keyChain: KeyChain,
+      fromIndex: Double,
+      toIndex: Unit,
+      getValue: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    ): Unit = js.native
     
     def set(keyChain: KeyChain, value: js.Any): Unit = js.native
     def set(keyChain: KeyChain, value: js.Any, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def set(
-      keyChain: KeyChain,
-      value: js.Any,
-      getValue: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
     def set(keyChain: KeyChain, value: js.Any, getValue: Boolean): Unit = js.native
     def set(
       keyChain: KeyChain,
@@ -166,14 +155,16 @@ object mod {
       getValue: Boolean,
       callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
     ): Unit = js.native
+    def set(
+      keyChain: KeyChain,
+      value: js.Any,
+      getValue: Unit,
+      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
+    ): Unit = js.native
     
     def splice(keyChain: KeyChain): Unit = js.native
     def splice(keyChain: KeyChain, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
-    def splice(
-      keyChain: KeyChain,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* err */ js.UndefOr[Error], Unit]
-    ): Unit = js.native
+    def splice(keyChain: KeyChain, options: Unit, callback: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     def splice(keyChain: KeyChain, options: SpliceOptions): Unit = js.native
     def splice(
       keyChain: KeyChain,
@@ -221,7 +212,7 @@ object mod {
     def unsubscribe(channel: String, callback: js.Function0[Unit]): Unit = js.native
     
     def unsubscribeAll(): Unit = js.native
-    def unsubscribeAll(callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
+    def unsubscribeAll(callback: AsyncResultArrayCallback[js.Any, Error]): Unit = js.native
     
     def unsubscribeSocket(socket: ServerSocket, channel: String): Unit = js.native
     def unsubscribeSocket(socket: ServerSocket, channel: String, callback: js.Function0[Unit]): Unit = js.native
@@ -233,7 +224,7 @@ object mod {
     def this(privateClientCluster: ClientCluster, publicClientCluster: ClientCluster, ioClusterClient: Client) = this()
     
     def channel(channelName: String): SCChannel[
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any
       ] = js.native
     
     def destroy(): Unit = js.native
@@ -252,17 +243,17 @@ object mod {
     
     def send(data: js.Any): Unit = js.native
     def send(data: js.Any, mapIndex: String): Unit = js.native
-    def send(data: js.Any, mapIndex: String, callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
+    def send(data: js.Any, mapIndex: String, callback: AsyncResultArrayCallback[js.Any, Error]): Unit = js.native
     def send(data: js.Any, mapIndex: js.Array[String]): Unit = js.native
-    def send(data: js.Any, mapIndex: js.Array[String], callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
+    def send(data: js.Any, mapIndex: js.Array[String], callback: AsyncResultArrayCallback[js.Any, Error]): Unit = js.native
     def send(data: js.Any, mapIndex: Double): Unit = js.native
-    def send(data: js.Any, mapIndex: Double, callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
-    def send(data: js.Any, mapIndex: Null, callback: AsyncResultArrayCallback[_, Error]): Unit = js.native
+    def send(data: js.Any, mapIndex: Double, callback: AsyncResultArrayCallback[js.Any, Error]): Unit = js.native
+    def send(data: js.Any, mapIndex: Null, callback: AsyncResultArrayCallback[js.Any, Error]): Unit = js.native
     
     def setMapper(mapper: mapperFunction): Unit = js.native
     
     def subscribe(channelName: String): SCChannel[
-        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ _
+        /* import warning: DefaultedTypeArguments.enterTsTypeRef applyOrElse newTParams next no default parameter for T */ js.Any
       ] = js.native
     
     def subscriptions(): js.Array[String] = js.native
@@ -306,16 +297,15 @@ object mod {
     ): Unit = js.native
   }
   
-  @js.native
   trait BrokerExitInfo extends StObject {
     
-    var code: Double = js.native
+    var code: Double
     
-    var id: Double = js.native
+    var id: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var signal: String = js.native
+    var signal: String
   }
   object BrokerExitInfo {
     
@@ -349,14 +339,13 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait BrokerStartInfo extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var respawn: Boolean = js.native
+    var respawn: Boolean
   }
   object BrokerStartInfo {
     
@@ -380,12 +369,11 @@ object mod {
     }
   }
   
-  @js.native
   trait MessagePacket extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var data: js.Any = js.native
+    var data: js.Any
   }
   object MessagePacket {
     
@@ -406,16 +394,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SCBrokerClusterClientOptions extends StObject {
     
-    var brokers: js.Array[String] = js.native
+    var brokers: js.Array[String]
     
-    var connectRetryErrorThreshold: Double = js.native
+    var connectRetryErrorThreshold: Double
     
-    var pubSubBatchDuration: js.UndefOr[Double] = js.native
+    var pubSubBatchDuration: js.UndefOr[Double] = js.undefined
     
-    var secretKey: js.UndefOr[String] = js.native
+    var secretKey: js.UndefOr[String] = js.undefined
   }
   object SCBrokerClusterClientOptions {
     
@@ -451,32 +438,31 @@ object mod {
     }
   }
   
-  @js.native
   trait SCBrokerClusterServerOptions extends StObject {
     
-    var appBrokerControllerPath: js.UndefOr[String] = js.native
+    var appBrokerControllerPath: js.UndefOr[String] = js.undefined
     
     var brokerOptions: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify AGServerOptions */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var brokers: js.Array[String] = js.native
+    var brokers: js.Array[String]
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var downgradeToUser: Double | String = js.native
+    var downgradeToUser: Double | String
     
-    var expiryAccuracy: js.UndefOr[Double] = js.native
+    var expiryAccuracy: js.UndefOr[Double] = js.undefined
     
-    var inspect: js.UndefOr[Boolean] = js.native
+    var inspect: js.UndefOr[Boolean] = js.undefined
     
-    var instanceId: js.UndefOr[String] = js.native
+    var instanceId: js.UndefOr[String] = js.undefined
     
-    var ipcAckTimeout: js.UndefOr[Double] = js.native
+    var ipcAckTimeout: js.UndefOr[Double] = js.undefined
     
-    var processTermTimeout: js.UndefOr[Double] = js.native
+    var processTermTimeout: js.UndefOr[Double] = js.undefined
     
-    var secretKey: js.UndefOr[String] = js.native
+    var secretKey: js.UndefOr[String] = js.undefined
   }
   object SCBrokerClusterServerOptions {
     
@@ -556,10 +542,9 @@ object mod {
     }
   }
   
-  @js.native
   trait SCServer extends StObject {
     
-    var codec: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecEngine */ js.Any = js.native
+    var codec: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CodecEngine */ js.Any
   }
   object SCServer {
     
@@ -581,12 +566,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ServerSocket extends StObject {
     
-    def emit(eventName: String, args: js.Any*): Unit = js.native
+    def emit(eventName: String, args: js.Any*): Unit
     
-    var id: String = js.native
+    var id: String
   }
   object ServerSocket {
     

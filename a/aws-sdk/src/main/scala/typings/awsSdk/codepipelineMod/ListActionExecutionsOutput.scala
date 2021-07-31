@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListActionExecutionsOutput extends StObject {
   
   /**
     * The details for a list of recent executions, such as action execution ID.
     */
-  var actionExecutionDetails: js.UndefOr[ActionExecutionDetailList] = js.native
+  var actionExecutionDetails: js.UndefOr[ActionExecutionDetailList] = js.undefined
   
   /**
     * If the amount of returned information is significantly large, an identifier is also returned and can be used in a subsequent ListActionExecutions call to return the next set of action executions in the list.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListActionExecutionsOutput {
   

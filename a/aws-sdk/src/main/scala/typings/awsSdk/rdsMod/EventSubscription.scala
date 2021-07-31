@@ -2,61 +2,59 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventSubscription extends StObject {
   
   /**
     * The RDS event notification subscription Id.
     */
-  var CustSubscriptionId: js.UndefOr[String] = js.native
+  var CustSubscriptionId: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS customer account associated with the RDS event notification subscription.
     */
-  var CustomerAwsId: js.UndefOr[String] = js.native
+  var CustomerAwsId: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value indicating if the subscription is enabled. True indicates the subscription is enabled.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of event categories for the RDS event notification subscription.
     */
-  var EventCategoriesList: js.UndefOr[typings.awsSdk.rdsMod.EventCategoriesList] = js.native
+  var EventCategoriesList: js.UndefOr[typings.awsSdk.rdsMod.EventCategoriesList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the event subscription.
     */
-  var EventSubscriptionArn: js.UndefOr[String] = js.native
+  var EventSubscriptionArn: js.UndefOr[String] = js.undefined
   
   /**
     * The topic ARN of the RDS event notification subscription.
     */
-  var SnsTopicArn: js.UndefOr[String] = js.native
+  var SnsTopicArn: js.UndefOr[String] = js.undefined
   
   /**
     * A list of source IDs for the RDS event notification subscription.
     */
-  var SourceIdsList: js.UndefOr[typings.awsSdk.rdsMod.SourceIdsList] = js.native
+  var SourceIdsList: js.UndefOr[typings.awsSdk.rdsMod.SourceIdsList] = js.undefined
   
   /**
     * The source type for the RDS event notification subscription.
     */
-  var SourceType: js.UndefOr[String] = js.native
+  var SourceType: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the RDS event notification subscription. Constraints: Can be one of the following: creating | modifying | deleting | active | no-permission | topic-not-exist The status "no-permission" indicates that RDS no longer has permission to post to the SNS topic. The status "topic-not-exist" indicates that the topic was deleted after the subscription was created.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The time the RDS event notification subscription was created.
     */
-  var SubscriptionCreationTime: js.UndefOr[String] = js.native
+  var SubscriptionCreationTime: js.UndefOr[String] = js.undefined
 }
 object EventSubscription {
   

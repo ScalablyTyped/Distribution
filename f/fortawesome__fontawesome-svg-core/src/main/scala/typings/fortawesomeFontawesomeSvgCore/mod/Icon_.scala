@@ -3,16 +3,15 @@ package typings.fortawesomeFontawesomeSvgCore.mod
 import typings.fortawesomeFontawesomeCommonTypes.mod.IconDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Icon_
-  extends IconDefinition
+  extends StObject
      with FontawesomeObject
+     with IconDefinition
      with IconOrText {
   
-  val `type`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.icon = js.native
+  val `type`: typings.fortawesomeFontawesomeSvgCore.fortawesomeFontawesomeSvgCoreStrings.icon
 }
 object Icon_ {
   

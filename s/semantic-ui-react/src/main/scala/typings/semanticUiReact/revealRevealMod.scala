@@ -17,7 +17,6 @@ import typings.semanticUiReact.semanticUiReactStrings.move
 import typings.semanticUiReact.semanticUiReactStrings.rotate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object revealRevealMod extends Shortcut {
@@ -27,14 +26,16 @@ object revealRevealMod extends Shortcut {
   val default: RevealComponent = js.native
   
   @js.native
-  trait RevealComponent extends FunctionComponent[RevealProps] {
+  trait RevealComponent
+    extends StObject
+       with FunctionComponent[RevealProps] {
     
     var Content: StatelessComponent[RevealContentProps] = js.native
   }
   
-  @js.native
   trait RevealProps
-    extends StrictRevealProps
+    extends StObject
+       with StrictRevealProps
        with /* key */ StringDictionary[js.Any]
   object RevealProps {
     
@@ -45,34 +46,33 @@ object revealRevealMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictRevealProps extends StObject {
     
     /** An active reveal displays its hidden content. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An animation name that will be applied to Reveal. */
     var animated: js.UndefOr[
         fade | (`small fade`) | move | (`move right`) | (`move up`) | (`move down`) | rotate | (`rotate left`)
-      ] = js.native
+      ] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Shorthand for primary content. */
-    var content: js.UndefOr[SemanticShorthandContent] = js.native
+    var content: js.UndefOr[SemanticShorthandContent] = js.undefined
     
     /** A disabled reveal will not animate when hovered. */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /** An element can show its content without delay. */
-    var instant: js.UndefOr[Boolean] = js.native
+    var instant: js.UndefOr[Boolean] = js.undefined
   }
   object StrictRevealProps {
     

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientChat.gapi.client.chat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Space extends StObject {
   
   /** Output only. The display name (only if the space is a room). Please note that this field might not be populated in direct messages between humans. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Resource name of the space, in the form "spaces/ *". Example: spaces/AAAAMpdlehYs */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Whether the space is a DM between a bot and a single human. */
-  var singleUserBotDm: js.UndefOr[Boolean] = js.native
+  var singleUserBotDm: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the messages are threaded in this space. */
-  var threaded: js.UndefOr[Boolean] = js.native
+  var threaded: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. The type of a space. This is deprecated. Use `single_user_bot_dm` instead. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object Space {
   

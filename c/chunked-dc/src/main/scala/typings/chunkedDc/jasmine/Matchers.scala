@@ -7,12 +7,12 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Matchers
-  extends Instantiable3[/* env */ Env, /* actual */ js.Any, /* spec */ Env, js.Any]
+  extends StObject
+     with Instantiable3[/* env */ Env, /* actual */ js.Any, /* spec */ Env, js.Any]
      with Instantiable4[/* env */ Env, /* actual */ js.Any, /* spec */ Env, /* isNot */ Boolean, js.Any] {
   
   var Any: typings.chunkedDc.jasmine.Any = js.native
@@ -79,11 +79,11 @@ trait Matchers
   def toThrow(expected: js.Any): Boolean = js.native
   
   def toThrowError(): Boolean = js.native
-  def toThrowError(expected: js.UndefOr[scala.Nothing], message: String): Boolean = js.native
-  def toThrowError(expected: js.UndefOr[scala.Nothing], message: RegExp): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error]): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: String): Boolean = js.native
   def toThrowError(expected: Instantiable1[/* args (repeated) */ js.Any, Error], message: RegExp): Boolean = js.native
+  def toThrowError(expected: Unit, message: String): Boolean = js.native
+  def toThrowError(expected: Unit, message: RegExp): Boolean = js.native
   def toThrowError(message: String): Boolean = js.native
   def toThrowError(message: RegExp): Boolean = js.native
 }

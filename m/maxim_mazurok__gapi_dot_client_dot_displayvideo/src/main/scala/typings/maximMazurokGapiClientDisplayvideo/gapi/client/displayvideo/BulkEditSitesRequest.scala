@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditSitesRequest extends StObject {
   
   /** The ID of the advertiser that owns the parent channel. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** The sites to create in batch, specified as a list of Sites. */
-  var createdSites: js.UndefOr[js.Array[Site]] = js.native
+  var createdSites: js.UndefOr[js.Array[Site]] = js.undefined
   
   /** The sites to delete in batch, specified as a list of site url_or_app_ids. */
-  var deletedSites: js.UndefOr[js.Array[String]] = js.native
+  var deletedSites: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The ID of the partner that owns the parent channel. */
-  var partnerId: js.UndefOr[String] = js.native
+  var partnerId: js.UndefOr[String] = js.undefined
 }
 object BulkEditSitesRequest {
   

@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearGaugeOptions extends StObject {
   
-  var gaugeArea: js.UndefOr[LinearGaugeGaugeArea] = js.native
+  var gaugeArea: js.UndefOr[LinearGaugeGaugeArea] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pointer: js.UndefOr[js.Array[LinearGaugePointerItem]] = js.native
+  var pointer: js.UndefOr[js.Array[LinearGaugePointerItem]] = js.undefined
   
-  var renderAs: js.UndefOr[String] = js.native
+  var renderAs: js.UndefOr[String] = js.undefined
   
-  var scale: js.UndefOr[LinearGaugeScale] = js.native
+  var scale: js.UndefOr[LinearGaugeScale] = js.undefined
   
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
-  var transitions: js.UndefOr[Boolean] = js.native
+  var transitions: js.UndefOr[Boolean] = js.undefined
 }
 object LinearGaugeOptions {
   

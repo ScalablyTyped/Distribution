@@ -2,23 +2,21 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthPrivateMessageOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[AuthPrivateMessageCompleteCallback] = js.native
+  var complete: js.UndefOr[AuthPrivateMessageCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[AuthPrivateMessageFailCallback] = js.native
+  var fail: js.UndefOr[AuthPrivateMessageFailCallback] = js.undefined
   
   /** shareTicket。可以从 wx.onShow 中获取。详情 [shareTicket](https://developers.weixin.qq.com/miniprogram/dev/framework/open-ability/share.html) */
-  var shareTicket: js.UndefOr[String] = js.native
+  var shareTicket: js.UndefOr[String] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[AuthPrivateMessageSuccessCallback] = js.native
+  var success: js.UndefOr[AuthPrivateMessageSuccessCallback] = js.undefined
 }
 object AuthPrivateMessageOption {
   

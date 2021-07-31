@@ -3,15 +3,13 @@ package typings.azure.mod
 import typings.azure.anon.Expiry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedAccessPolicy extends StObject {
   
-  var AccessPolicy: Expiry = js.native
+  var AccessPolicy: Expiry
   
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
 }
 object SharedAccessPolicy {
   

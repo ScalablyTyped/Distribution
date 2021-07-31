@@ -2,41 +2,39 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelMembership extends StObject {
   
   /**
     * The ARN of the member's channel.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The time at which the channel membership was created. 
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier of the member who invited another member. Taken from the message header.
     */
-  var InvitedBy: js.UndefOr[Identity] = js.native
+  var InvitedBy: js.UndefOr[Identity] = js.undefined
   
   /**
     * The time at which a channel membership was last updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The data of the channel member.
     */
-  var Member: js.UndefOr[Identity] = js.native
+  var Member: js.UndefOr[Identity] = js.undefined
   
   /**
     * The membership type set for the channel member.
     */
-  var Type: js.UndefOr[ChannelMembershipType] = js.native
+  var Type: js.UndefOr[ChannelMembershipType] = js.undefined
 }
 object ChannelMembership {
   

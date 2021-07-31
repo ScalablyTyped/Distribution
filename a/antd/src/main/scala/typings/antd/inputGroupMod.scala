@@ -14,7 +14,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLSpanElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object inputGroupMod extends Shortcut {
@@ -23,28 +22,27 @@ object inputGroupMod extends Shortcut {
   @js.native
   val default: FC[GroupProps] = js.native
   
-  @js.native
   trait GroupProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var onBlur: js.UndefOr[FocusEventHandler[HTMLSpanElement]] = js.native
+    var onBlur: js.UndefOr[FocusEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onFocus: js.UndefOr[FocusEventHandler[HTMLSpanElement]] = js.native
+    var onFocus: js.UndefOr[FocusEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLSpanElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[large | small | typings.antd.antdStrings.default] = js.native
+    var size: js.UndefOr[large | small | typings.antd.antdStrings.default] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object GroupProps {
     

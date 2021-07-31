@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail Image 对象属于 gd 模块，创建：,```JavaScript,var img = gd.create(640, 480);,var img1 = gd.load(data);,```
   */
 @js.native
-trait ClassImage extends ClassObject {
+trait ClassImage
+  extends StObject
+     with ClassObject {
   
   /**
     * 
@@ -33,46 +34,22 @@ trait ClassImage extends ClassObject {
     * 
     * @async
     */
-  def affine(affine: js.Array[_]): ClassImage = js.native
-  def affine(
-    affine: js.Array[_],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): ClassImage = js.native
-  def affine(affine: js.Array[_], x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], width: Double): ClassImage = js.native
-  def affine(
-    affine: js.Array[_],
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    width: Double,
-    height: Double
-  ): ClassImage = js.native
-  def affine(affine: js.Array[_], x: js.UndefOr[scala.Nothing], y: Double): ClassImage = js.native
-  def affine(
-    affine: js.Array[_],
-    x: js.UndefOr[scala.Nothing],
-    y: Double,
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): ClassImage = js.native
-  def affine(affine: js.Array[_], x: js.UndefOr[scala.Nothing], y: Double, width: Double): ClassImage = js.native
-  def affine(affine: js.Array[_], x: js.UndefOr[scala.Nothing], y: Double, width: Double, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[_], x: Double): ClassImage = js.native
-  def affine(
-    affine: js.Array[_],
-    x: Double,
-    y: js.UndefOr[scala.Nothing],
-    width: js.UndefOr[scala.Nothing],
-    height: Double
-  ): ClassImage = js.native
-  def affine(affine: js.Array[_], x: Double, y: js.UndefOr[scala.Nothing], width: Double): ClassImage = js.native
-  def affine(affine: js.Array[_], x: Double, y: js.UndefOr[scala.Nothing], width: Double, height: Double): ClassImage = js.native
-  def affine(affine: js.Array[_], x: Double, y: Double): ClassImage = js.native
-  def affine(affine: js.Array[_], x: Double, y: Double, width: js.UndefOr[scala.Nothing], height: Double): ClassImage = js.native
-  def affine(affine: js.Array[_], x: Double, y: Double, width: Double): ClassImage = js.native
-  def affine(affine: js.Array[_], x: Double, y: Double, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any]): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double, y: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double, y: Double, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double, y: Double, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double, y: Double, width: Unit, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double, y: Unit, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double, y: Unit, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Double, y: Unit, width: Unit, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Unit, y: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Unit, y: Double, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Unit, y: Double, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Unit, y: Double, width: Unit, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Unit, y: Unit, width: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Unit, y: Unit, width: Double, height: Double): ClassImage = js.native
+  def affine(affine: js.Array[js.Any], x: Unit, y: Unit, width: Unit, height: Double): ClassImage = js.native
   
   /**
     * class prop 
@@ -629,7 +606,7 @@ trait ClassImage extends ClassObject {
     * 
     * 
     */
-  def filledPolygon(points: js.Array[_], color: Double): Unit = js.native
+  def filledPolygon(points: js.Array[js.Any], color: Double): Unit = js.native
   
   /**
     * 
@@ -671,45 +648,21 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def filter(filterType: Double): Unit = js.native
-  def filter(
-    filterType: Double,
-    arg1: js.UndefOr[scala.Nothing],
-    arg2: js.UndefOr[scala.Nothing],
-    arg3: js.UndefOr[scala.Nothing],
-    arg4: Double
-  ): Unit = js.native
-  def filter(filterType: Double, arg1: js.UndefOr[scala.Nothing], arg2: js.UndefOr[scala.Nothing], arg3: Double): Unit = js.native
-  def filter(
-    filterType: Double,
-    arg1: js.UndefOr[scala.Nothing],
-    arg2: js.UndefOr[scala.Nothing],
-    arg3: Double,
-    arg4: Double
-  ): Unit = js.native
-  def filter(filterType: Double, arg1: js.UndefOr[scala.Nothing], arg2: Double): Unit = js.native
-  def filter(
-    filterType: Double,
-    arg1: js.UndefOr[scala.Nothing],
-    arg2: Double,
-    arg3: js.UndefOr[scala.Nothing],
-    arg4: Double
-  ): Unit = js.native
-  def filter(filterType: Double, arg1: js.UndefOr[scala.Nothing], arg2: Double, arg3: Double): Unit = js.native
-  def filter(filterType: Double, arg1: js.UndefOr[scala.Nothing], arg2: Double, arg3: Double, arg4: Double): Unit = js.native
   def filter(filterType: Double, arg1: Double): Unit = js.native
-  def filter(
-    filterType: Double,
-    arg1: Double,
-    arg2: js.UndefOr[scala.Nothing],
-    arg3: js.UndefOr[scala.Nothing],
-    arg4: Double
-  ): Unit = js.native
-  def filter(filterType: Double, arg1: Double, arg2: js.UndefOr[scala.Nothing], arg3: Double): Unit = js.native
-  def filter(filterType: Double, arg1: Double, arg2: js.UndefOr[scala.Nothing], arg3: Double, arg4: Double): Unit = js.native
   def filter(filterType: Double, arg1: Double, arg2: Double): Unit = js.native
-  def filter(filterType: Double, arg1: Double, arg2: Double, arg3: js.UndefOr[scala.Nothing], arg4: Double): Unit = js.native
   def filter(filterType: Double, arg1: Double, arg2: Double, arg3: Double): Unit = js.native
   def filter(filterType: Double, arg1: Double, arg2: Double, arg3: Double, arg4: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Double, arg2: Double, arg3: Unit, arg4: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Double, arg2: Unit, arg3: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Double, arg2: Unit, arg3: Double, arg4: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Double, arg2: Unit, arg3: Unit, arg4: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Unit, arg2: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Unit, arg2: Double, arg3: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Unit, arg2: Double, arg3: Double, arg4: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Unit, arg2: Double, arg3: Unit, arg4: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Unit, arg2: Unit, arg3: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Unit, arg2: Unit, arg3: Double, arg4: Double): Unit = js.native
+  def filter(filterType: Double, arg1: Unit, arg2: Unit, arg3: Unit, arg4: Double): Unit = js.native
   
   /**
     * 
@@ -754,9 +707,9 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def getData(): ClassBuffer = js.native
-  def getData(format: js.UndefOr[scala.Nothing], quality: Double): ClassBuffer = js.native
   def getData(format: Double): ClassBuffer = js.native
   def getData(format: Double, quality: Double): ClassBuffer = js.native
+  def getData(format: Unit, quality: Double): ClassBuffer = js.native
   
   /**
     * 
@@ -816,7 +769,7 @@ trait ClassImage extends ClassObject {
     * 
     * 
     */
-  def openPolygon(points: js.Array[_], color: Double): Unit = js.native
+  def openPolygon(points: js.Array[js.Any], color: Double): Unit = js.native
   
   /**
     * 
@@ -827,7 +780,7 @@ trait ClassImage extends ClassObject {
     * 
     * 
     */
-  def polygon(points: js.Array[_], color: Double): Unit = js.native
+  def polygon(points: js.Array[js.Any], color: Double): Unit = js.native
   
   /**
     * class prop 
@@ -887,9 +840,9 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def save(fname: String): Unit = js.native
-  def save(fname: String, format: js.UndefOr[scala.Nothing], quality: Double): Unit = js.native
   def save(fname: String, format: Double): Unit = js.native
   def save(fname: String, format: Double, quality: Double): Unit = js.native
+  def save(fname: String, format: Unit, quality: Double): Unit = js.native
   /**
     * 
     * @brief 按照指定的格式将图像数据存入流对象
@@ -901,9 +854,9 @@ trait ClassImage extends ClassObject {
     * @async
     */
   def save(stm: ClassStream): Unit = js.native
-  def save(stm: ClassStream, format: js.UndefOr[scala.Nothing], quality: Double): Unit = js.native
   def save(stm: ClassStream, format: Double): Unit = js.native
   def save(stm: ClassStream, format: Double, quality: Double): Unit = js.native
+  def save(stm: ClassStream, format: Unit, quality: Double): Unit = js.native
   
   /**
     * 

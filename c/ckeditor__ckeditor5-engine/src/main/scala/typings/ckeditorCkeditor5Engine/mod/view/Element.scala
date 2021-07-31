@@ -7,7 +7,6 @@ import typings.std.RegExp
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // engine/view/element
@@ -18,10 +17,10 @@ class Element protected () extends Node {
   protected def this(name: String, attrs: js.Object) = this()
   protected def this(name: String, attrs: Iterable[js.Tuple2[String, String]]) = this()
   protected def this(name: String, attrs: Map[String, String]) = this()
-  protected def this(name: String, attrs: js.UndefOr[scala.Nothing], children: Node) = this()
-  protected def this(name: String, attrs: js.UndefOr[scala.Nothing], children: Iterable[Node]) = this()
   protected def this(name: String, attrs: js.Object, children: Node) = this()
   protected def this(name: String, attrs: js.Object, children: Iterable[Node]) = this()
+  protected def this(name: String, attrs: Unit, children: Node) = this()
+  protected def this(name: String, attrs: Unit, children: Iterable[Node]) = this()
   protected def this(name: String, attrs: Iterable[js.Tuple2[String, String]], children: Node) = this()
   protected def this(name: String, attrs: Iterable[js.Tuple2[String, String]], children: Iterable[Node]) = this()
   protected def this(name: String, attrs: Map[String, String], children: Node) = this()
@@ -41,7 +40,7 @@ class Element protected () extends Node {
   
   /* protected */ def _clone(deep: Boolean): Element = js.native
   
-  var _customProperties: Map[String, _] = js.native
+  var _customProperties: Map[String, js.Any] = js.native
   
   /* protected */ def _insertChild(index: Double, items: Item): Double = js.native
   /* protected */ def _insertChild(index: Double, items: Iterable[Item]): Double = js.native
@@ -83,7 +82,7 @@ class Element protected () extends Node {
   
   def getAttributeKeys(): Iterable[String] = js.native
   
-  def getAttributes(): Iterable[_] = js.native
+  def getAttributes(): Iterable[js.Any] = js.native
   
   def getChild(index: Double): Node = js.native
   
@@ -93,7 +92,7 @@ class Element protected () extends Node {
   
   def getClassNames(): Iterable[String] = js.native
   
-  def getCustomProperties(): Iterable[_] = js.native
+  def getCustomProperties(): Iterable[js.Any] = js.native
   
   def getCustomProperty(key: String): js.Any = js.native
   def getCustomProperty(key: js.Symbol): js.Any = js.native

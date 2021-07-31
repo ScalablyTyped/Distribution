@@ -2,10 +2,8 @@ package typings.googleapis.bigqueryV2Mod.bigqueryV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaQueryRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaQueryRequest extends StObject {
     * the query string must be qualified in the format
     * &#39;datasetId.tableId&#39;.
     */
-  var defaultDataset: js.UndefOr[SchemaDatasetReference] = js.native
+  var defaultDataset: js.UndefOr[SchemaDatasetReference] = js.undefined
   
   /**
     * [Optional] If set to true, BigQuery doesn&#39;t run the job. Instead, if
@@ -22,18 +20,18 @@ trait SchemaQueryRequest extends StObject {
     * many bytes would be processed. If the query is invalid, an error returns.
     * The default value is false.
     */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The resource type of the request.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The geographic location where the job should run. See details at
     * https://cloud.google.com/bigquery/docs/locations#specifying_your_location.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * [Optional] The maximum number of rows of data to return per page of
@@ -42,31 +40,31 @@ trait SchemaQueryRequest extends StObject {
     * large. In addition to this limit, responses are also limited to 10 MB. By
     * default, there is no maximum row count, and only the byte limit applies.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * Standard SQL only. Set to POSITIONAL to use positional (?) query
     * parameters or to NAMED to use named (@myparam) query parameters in this
     * query.
     */
-  var parameterMode: js.UndefOr[String] = js.native
+  var parameterMode: js.UndefOr[String] = js.undefined
   
   /**
     * [Deprecated] This property is deprecated.
     */
-  var preserveNulls: js.UndefOr[Boolean] = js.native
+  var preserveNulls: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Required] A query string, following the BigQuery query syntax, of the
     * query to execute. Example: &quot;SELECT count(f1) FROM
     * [myProjectId:myDatasetId.myTableId]&quot;.
     */
-  var query: js.UndefOr[String] = js.native
+  var query: js.UndefOr[String] = js.undefined
   
   /**
     * Query parameters for Standard SQL queries.
     */
-  var queryParameters: js.UndefOr[js.Array[SchemaQueryParameter]] = js.native
+  var queryParameters: js.UndefOr[js.Array[SchemaQueryParameter]] = js.undefined
   
   /**
     * [Optional] How long to wait for the query to complete, in milliseconds,
@@ -77,7 +75,7 @@ trait SchemaQueryRequest extends StObject {
     * to wait for the query to complete and read the results. The default value
     * is 10000 milliseconds (10 seconds).
     */
-  var timeoutMs: js.UndefOr[Double] = js.native
+  var timeoutMs: js.UndefOr[Double] = js.undefined
   
   /**
     * Specifies whether to use BigQuery&#39;s legacy SQL dialect for this
@@ -87,14 +85,14 @@ trait SchemaQueryRequest extends StObject {
     * to false, the value of flattenResults is ignored; query will be run as if
     * flattenResults is false.
     */
-  var useLegacySql: js.UndefOr[Boolean] = js.native
+  var useLegacySql: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [Optional] Whether to look for the result in the query cache. The query
     * cache is a best-effort cache that will be flushed whenever tables in the
     * query are modified. The default value is true.
     */
-  var useQueryCache: js.UndefOr[Boolean] = js.native
+  var useQueryCache: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaQueryRequest {
   

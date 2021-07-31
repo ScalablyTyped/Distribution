@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.task
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,11 +14,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.task.DocumentMSPasswordRequest
   * @since OOo 3.3
   */
-@js.native
-trait DocumentMSPasswordRequest2 extends DocumentMSPasswordRequest {
+trait DocumentMSPasswordRequest2
+  extends StObject
+     with DocumentMSPasswordRequest {
   
   /** specifies if the requested password is for opening a document or for modifying it. */
-  var IsRequestPasswordToModify: Boolean = js.native
+  var IsRequestPasswordToModify: Boolean
 }
 object DocumentMSPasswordRequest2 {
   

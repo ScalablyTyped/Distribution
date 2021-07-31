@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.ClampToGround
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "GeoJsonDataSource")
@@ -59,25 +58,19 @@ object GeoJsonDataSource {
   @scala.inline
   def fill_=(x: Color): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("fill")(x.asInstanceOf[js.Any])
   
-  @JSImport("cesium", "GeoJsonDataSource.load")
-  @js.native
-  def load(data: String): js.Promise[GeoJsonDataSource] = js.native
-  @JSImport("cesium", "GeoJsonDataSource.load")
-  @js.native
-  def load(data: String, options: ClampToGround): js.Promise[GeoJsonDataSource] = js.native
-  @JSImport("cesium", "GeoJsonDataSource.load")
-  @js.native
-  def load(data: js.Object): js.Promise[GeoJsonDataSource] = js.native
-  @JSImport("cesium", "GeoJsonDataSource.load")
-  @js.native
-  def load(data: js.Object, options: ClampToGround): js.Promise[GeoJsonDataSource] = js.native
+  @scala.inline
+  def load(data: String): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  @scala.inline
+  def load(data: String, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  @scala.inline
+  def load(data: js.Object): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  @scala.inline
+  def load(data: js.Object, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
   /* static member */
-  @JSImport("cesium", "GeoJsonDataSource.load")
-  @js.native
-  def load(data: Resource): js.Promise[GeoJsonDataSource] = js.native
-  @JSImport("cesium", "GeoJsonDataSource.load")
-  @js.native
-  def load(data: Resource, options: ClampToGround): js.Promise[GeoJsonDataSource] = js.native
+  @scala.inline
+  def load(data: Resource): js.Promise[GeoJsonDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GeoJsonDataSource]]
+  @scala.inline
+  def load(data: Resource, options: ClampToGround): js.Promise[GeoJsonDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GeoJsonDataSource]]
   
   /* static member */
   @JSImport("cesium", "GeoJsonDataSource.markerColor")

@@ -2,13 +2,11 @@ package typings.angularCompiler.compileMetadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompileIdentifierMetadata extends StObject {
   
-  var reference: js.Any = js.native
+  var reference: js.Any
 }
 object CompileIdentifierMetadata {
   

@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientValidationSummary.VisibilityChanged event.
   */
-@js.native
-trait ASPxClientValidationSummaryVisibilityChangedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientValidationSummaryVisibilityChangedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets or sets whether the editor is visible on the client.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ASPxClientValidationSummaryVisibilityChangedEventArgs {
   

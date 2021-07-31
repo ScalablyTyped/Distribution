@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDocs.gapi.client.docs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextStyle extends StObject {
   
   /** The background color of the text. If set, the color is either an RGB color or transparent, depending on the `color` field. */
-  var backgroundColor: js.UndefOr[OptionalColor] = js.native
+  var backgroundColor: js.UndefOr[OptionalColor] = js.undefined
   
   /**
     * The text's vertical offset from its normal position. Text with `SUPERSCRIPT` or `SUBSCRIPT` baseline offsets is automatically rendered in a smaller font size, computed based on the
     * `font_size` field. The `font_size` itself is not affected by changes in this field.
     */
-  var baselineOffset: js.UndefOr[String] = js.native
+  var baselineOffset: js.UndefOr[String] = js.undefined
   
   /** Whether or not the text is rendered as bold. */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /** The size of the text's font. */
-  var fontSize: js.UndefOr[Dimension] = js.native
+  var fontSize: js.UndefOr[Dimension] = js.undefined
   
   /** The foreground color of the text. If set, the color is either an RGB color or transparent, depending on the `color` field. */
-  var foregroundColor: js.UndefOr[OptionalColor] = js.native
+  var foregroundColor: js.UndefOr[OptionalColor] = js.undefined
   
   /** Whether or not the text is italicized. */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The hyperlink destination of the text. If unset, there is no link. Links are not inherited from parent text. Changing the link in an update request causes some other changes to the
@@ -38,23 +36,23 @@ trait TextStyle extends StObject {
     * style of the range to match the style of the preceding text (or the default text styles if the preceding text is another link) unless different styles are being set in the same
     * request.
     */
-  var link: js.UndefOr[Link] = js.native
+  var link: js.UndefOr[Link] = js.undefined
   
   /** Whether or not the text is in small capital letters. */
-  var smallCaps: js.UndefOr[Boolean] = js.native
+  var smallCaps: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not the text is struck through. */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /** Whether or not the text is underlined. */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The font family and rendered weight of the text. If an update request specifies values for both `weighted_font_family` and `bold`, the `weighted_font_family` is applied first, then
     * `bold`. If `weighted_font_family#weight` is not set, it defaults to `400`. If `weighted_font_family` is set, then `weighted_font_family#font_family` must also be set with a
     * non-empty value. Otherwise, a 400 bad request error is returned.
     */
-  var weightedFontFamily: js.UndefOr[WeightedFontFamily] = js.native
+  var weightedFontFamily: js.UndefOr[WeightedFontFamily] = js.undefined
 }
 object TextStyle {
   

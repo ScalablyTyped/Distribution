@@ -2,36 +2,34 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainResponse extends StObject {
   
   /**
     * The ARN of an issued ACM certificate that is valid for the domain being associated.
     */
-  var AcmCertificateArn: js.UndefOr[typings.awsSdk.worklinkMod.AcmCertificateArn] = js.native
+  var AcmCertificateArn: js.UndefOr[typings.awsSdk.worklinkMod.AcmCertificateArn] = js.undefined
   
   /**
     * The time that the domain was added.
     */
-  var CreatedTime: js.UndefOr[DateTime] = js.native
+  var CreatedTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The name to display.
     */
-  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.native
+  var DisplayName: js.UndefOr[typings.awsSdk.worklinkMod.DisplayName] = js.undefined
   
   /**
     * The name of the domain.
     */
-  var DomainName: js.UndefOr[typings.awsSdk.worklinkMod.DomainName] = js.native
+  var DomainName: js.UndefOr[typings.awsSdk.worklinkMod.DomainName] = js.undefined
   
   /**
     * The current state for the domain.
     */
-  var DomainStatus: js.UndefOr[typings.awsSdk.worklinkMod.DomainStatus] = js.native
+  var DomainStatus: js.UndefOr[typings.awsSdk.worklinkMod.DomainStatus] = js.undefined
 }
 object DescribeDomainResponse {
   

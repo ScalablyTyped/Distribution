@@ -2,21 +2,19 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CameraRollFetchParams extends StObject {
   
-  var after: js.UndefOr[String] = js.native
+  var after: js.UndefOr[String] = js.undefined
   
-  var assetType: js.UndefOr[CameraRollAssetType] = js.native
+  var assetType: js.UndefOr[CameraRollAssetType] = js.undefined
   
-  var first: Double = js.native
+  var first: Double
   
-  var groupName: js.UndefOr[String] = js.native
+  var groupName: js.UndefOr[String] = js.undefined
   
-  var groupTypes: js.UndefOr[CameraRollGroupType] = js.native
+  var groupTypes: js.UndefOr[CameraRollGroupType] = js.undefined
 }
 object CameraRollFetchParams {
   

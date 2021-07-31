@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Objects implementing this interface can be used to align {@link Shapes} .
   * @deprecated Deprecated
   */
-@js.native
-trait XShapeAligner extends XInterface {
+trait XShapeAligner
+  extends StObject
+     with XInterface {
   
   /** aligns the specified {@link Shapes} . */
-  def alignShapes(aShapes: js.Array[XShapes], eType: Alignment): Unit = js.native
+  def alignShapes(aShapes: js.Array[XShapes], eType: Alignment): Unit
 }
 object XShapeAligner {
   

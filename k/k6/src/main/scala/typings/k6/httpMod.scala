@@ -12,16 +12,23 @@ import typings.k6.mod.JSONValue
 import typings.k6.mod.bytes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object httpMod {
+  
+  @JSImport("k6/http", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * The http module contains functionality for performing HTTP transactions.
     * https://k6.io/docs/javascript-api/k6-http
     */
   object default {
+    
+    @JSImport("k6/http", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Batch multiple HTTP requests together,
@@ -46,9 +53,8 @@ object httpMod {
       * };
       * let responses = http.batch([req1, req2]);
       */
-    @JSImport("k6/http", "default.batch")
-    @js.native
-    def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = js.native
+    @scala.inline
+    def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(requests.asInstanceOf[js.Any]).asInstanceOf[BatchResponses[Q]]
     
     /**
       * Get active cookie jar.
@@ -57,9 +63,8 @@ object httpMod {
       * @example
       * let jar = http.cookieJar();
       */
-    @JSImport("k6/http", "default.cookieJar")
-    @js.native
-    def cookieJar(): CookieJar_ = js.native
+    @scala.inline
+    def cookieJar(): CookieJar_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cookieJar")().asInstanceOf[CookieJar_]
     
     /**
       * Make DELETE  request.
@@ -69,18 +74,16 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @JSImport("k6/http", "default.del")
-    @js.native
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.del")
-    @js.native
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.del")
-    @js.native
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.del")
-    @js.native
-    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+    @scala.inline
+    def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Create a file object used for building multipart requests (file uploads).
@@ -99,30 +102,22 @@ object httpMod {
       *   console.log(f.content_type);
       * }
       */
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: String): FileData = js.native
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: String, filename: js.UndefOr[scala.Nothing], contentType: String): FileData = js.native
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: String, filename: String): FileData = js.native
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: String, filename: String, contentType: String): FileData = js.native
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: bytes): FileData = js.native
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: bytes, filename: js.UndefOr[scala.Nothing], contentType: String): FileData = js.native
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: bytes, filename: String): FileData = js.native
-    @JSImport("k6/http", "default.file")
-    @js.native
-    def file(data: bytes, filename: String, contentType: String): FileData = js.native
+    @scala.inline
+    def file(data: String): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+    @scala.inline
+    def file(data: String, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    @scala.inline
+    def file(data: String, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    @scala.inline
+    def file(data: String, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    @scala.inline
+    def file(data: bytes): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+    @scala.inline
+    def file(data: bytes, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    @scala.inline
+    def file(data: bytes, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+    @scala.inline
+    def file(data: bytes, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
     
     /**
       * Make GET request.
@@ -133,12 +128,10 @@ object httpMod {
       * @example
       * http.get('https://k6.io')
       */
-    @JSImport("k6/http", "default.get")
-    @js.native
-    def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.get")
-    @js.native
-    def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
+    @scala.inline
+    def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make OPTIONS request.
@@ -148,18 +141,16 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @JSImport("k6/http", "default.options")
-    @js.native
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.options")
-    @js.native
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.options")
-    @js.native
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.options")
-    @js.native
-    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+    @scala.inline
+    def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make PATCH request.
@@ -169,18 +160,16 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @JSImport("k6/http", "default.patch")
-    @js.native
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.patch")
-    @js.native
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.patch")
-    @js.native
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.patch")
-    @js.native
-    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+    @scala.inline
+    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make POST request.
@@ -194,18 +183,16 @@ object httpMod {
       * let headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
       * http.post(url, formData, { headers: headers });
       */
-    @JSImport("k6/http", "default.post")
-    @js.native
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.post")
-    @js.native
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.post")
-    @js.native
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.post")
-    @js.native
-    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+    @scala.inline
+    def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make PUT request.
@@ -215,18 +202,16 @@ object httpMod {
       * @param params - Request parameters.
       * @returns Resulting response.
       */
-    @JSImport("k6/http", "default.put")
-    @js.native
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.put")
-    @js.native
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.put")
-    @js.native
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.put")
-    @js.native
-    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+    @scala.inline
+    def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
     
     /**
       * Make request.
@@ -241,18 +226,16 @@ object httpMod {
       * let headers = { 'Content-Type': 'application/x-www-form-urlencoded' };
       * http.request('POST', url, formData, { headers: headers });
       */
-    @JSImport("k6/http", "default.request")
-    @js.native
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.request")
-    @js.native
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.request")
-    @js.native
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-    @JSImport("k6/http", "default.request")
-    @js.native
-    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = js.native
+    @scala.inline
+    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+    @scala.inline
+    def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   }
   
   @JSImport("k6/http", "CookieJar")
@@ -368,123 +351,99 @@ object httpMod {
   @js.native
   val TLS_1_3: /* "tls1.3" */ String = js.native
   
-  @JSImport("k6/http", "batch")
-  @js.native
-  def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = js.native
+  @scala.inline
+  def batch[Q /* <: BatchRequests */](requests: Q): BatchResponses[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("batch")(requests.asInstanceOf[js.Any]).asInstanceOf[BatchResponses[Q]]
   
-  @JSImport("k6/http", "cookieJar")
-  @js.native
-  def cookieJar(): CookieJar_ = js.native
+  @scala.inline
+  def cookieJar(): CookieJar_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cookieJar")().asInstanceOf[CookieJar_]
   
-  @JSImport("k6/http", "del")
-  @js.native
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "del")
-  @js.native
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "del")
-  @js.native
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "del")
-  @js.native
-  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  @scala.inline
+  def del[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def del[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: String): FileData = js.native
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: String, filename: js.UndefOr[scala.Nothing], contentType: String): FileData = js.native
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: String, filename: String): FileData = js.native
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: String, filename: String, contentType: String): FileData = js.native
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: bytes): FileData = js.native
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: bytes, filename: js.UndefOr[scala.Nothing], contentType: String): FileData = js.native
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: bytes, filename: String): FileData = js.native
-  @JSImport("k6/http", "file")
-  @js.native
-  def file(data: bytes, filename: String, contentType: String): FileData = js.native
+  @scala.inline
+  def file(data: String): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+  @scala.inline
+  def file(data: String, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  @scala.inline
+  def file(data: String, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  @scala.inline
+  def file(data: String, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  @scala.inline
+  def file(data: bytes): FileData = ^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any]).asInstanceOf[FileData]
+  @scala.inline
+  def file(data: bytes, filename: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  @scala.inline
+  def file(data: bytes, filename: String, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
+  @scala.inline
+  def file(data: bytes, filename: Unit, contentType: String): FileData = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(data.asInstanceOf[js.Any], filename.asInstanceOf[js.Any], contentType.asInstanceOf[js.Any])).asInstanceOf[FileData]
   
-  @JSImport("k6/http", "get")
-  @js.native
-  def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "get")
-  @js.native
-  def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
+  @scala.inline
+  def get[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def get[RT /* <: js.UndefOr[ResponseType] */](url: String, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @JSImport("k6/http", "options")
-  @js.native
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "options")
-  @js.native
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "options")
-  @js.native
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "options")
-  @js.native
-  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  @scala.inline
+  def options[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def options[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("options")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @JSImport("k6/http", "patch")
-  @js.native
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "patch")
-  @js.native
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "patch")
-  @js.native
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "patch")
-  @js.native
-  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  @scala.inline
+  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def patch[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @JSImport("k6/http", "post")
-  @js.native
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "post")
-  @js.native
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "post")
-  @js.native
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "post")
-  @js.native
-  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  @scala.inline
+  def post[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def post[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @JSImport("k6/http", "put")
-  @js.native
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "put")
-  @js.native
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "put")
-  @js.native
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "put")
-  @js.native
-  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  @scala.inline
+  def put[RT /* <: js.UndefOr[ResponseType] */](url: String): RefinedResponse[RT] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any]).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def put[RT /* <: js.UndefOr[ResponseType] */](url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
-  @JSImport("k6/http", "request")
-  @js.native
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "request")
-  @js.native
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: js.UndefOr[RequestBody], params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "request")
-  @js.native
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = js.native
-  @JSImport("k6/http", "request")
-  @js.native
-  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = js.native
+  @scala.inline
+  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Null, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: Unit, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
+  @scala.inline
+  def request[RT /* <: js.UndefOr[ResponseType] */](method: String, url: String, body: RequestBody, params: RefinedParams[RT]): RefinedResponse[RT] = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], body.asInstanceOf[js.Any], params.asInstanceOf[js.Any])).asInstanceOf[RefinedResponse[RT]]
   
   type ArrayBatchRequest = js.Tuple4[String, String, js.UndefOr[RequestBody | Null], js.UndefOr[Params | Null]]
   
@@ -514,7 +473,7 @@ object httpMod {
   
   type BatchResponses[Q] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof Q ]: Q[K] extends k6.k6/http.RefinedBatchRequest<infer RT>? k6.k6/http.RefinedResponse<any> : never}
-    */ typings.k6.k6Strings.BatchResponses with TopLevel[Q]
+    */ typings.k6.k6Strings.BatchResponses & TopLevel[Q]
   
   /* Rewritten from type alias, can be one of: 
     - typings.k6.k6Strings.TLS_RSA_WITH_RC4_128_SHA
@@ -624,26 +583,25 @@ object httpMod {
   
   type CookieJarCookies = StringDictionary[js.Array[String]]
   
-  @js.native
   trait CookieOptions extends StObject {
     
     /** Domain allowed to receive. */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /** Expiry time in RFC1123 format. */
-    var expires: js.UndefOr[String] = js.native
+    var expires: js.UndefOr[String] = js.undefined
     
     /** HTTP only. */
-    var http_only: js.UndefOr[Boolean] = js.native
+    var http_only: js.UndefOr[Boolean] = js.undefined
     
     /** Seconds until expiration. */
-    var max_age: js.UndefOr[Double] = js.native
+    var max_age: js.UndefOr[Double] = js.undefined
     
     /** Scope path. */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** Secure. */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object CookieOptions {
     
@@ -694,20 +652,19 @@ object httpMod {
     }
   }
   
-  @js.native
   trait ObjectBatchRequest extends StObject {
     
     /** Request body. */
-    var body: js.UndefOr[RequestBody | Null] = js.native
+    var body: js.UndefOr[RequestBody | Null] = js.undefined
     
     /** Request method. */
-    var method: String = js.native
+    var method: String
     
     /** Requset parameters. */
-    var params: js.UndefOr[Params | Null] = js.native
+    var params: js.UndefOr[Params | Null] = js.undefined
     
     /** Request URL. */
-    var url: String = js.native
+    var url: String
   }
   object ObjectBatchRequest {
     
@@ -746,16 +703,15 @@ object httpMod {
     }
   }
   
-  @js.native
   trait ObjectRefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] extends StObject {
     
-    var body: js.UndefOr[RequestBody | Null] = js.native
+    var body: js.UndefOr[RequestBody | Null] = js.undefined
     
-    var method: String = js.native
+    var method: String
     
-    var params: js.UndefOr[RefinedParams[RT] | Null] = js.native
+    var params: js.UndefOr[RefinedParams[RT] | Null] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object ObjectRefinedBatchRequest {
     
@@ -766,7 +722,7 @@ object httpMod {
     }
     
     @scala.inline
-    implicit class ObjectRefinedBatchRequestMutableBuilder[Self <: ObjectRefinedBatchRequest[_], RT /* <: js.UndefOr[ResponseType] */] (val x: Self with ObjectRefinedBatchRequest[RT]) extends AnyVal {
+    implicit class ObjectRefinedBatchRequestMutableBuilder[Self <: ObjectRefinedBatchRequest[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & ObjectRefinedBatchRequest[RT]) extends AnyVal {
       
       @scala.inline
       def setBody(value: RequestBody): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
@@ -794,35 +750,34 @@ object httpMod {
     }
   }
   
-  @js.native
   trait Params extends StObject {
     
     /** Authentication method. */
-    var auth: js.UndefOr[AuthMethod] = js.native
+    var auth: js.UndefOr[AuthMethod] = js.undefined
     
     /** Request body compression. */
-    var compression: js.UndefOr[String] = js.native
+    var compression: js.UndefOr[String] = js.undefined
     
     /** Request scoped cookies. */
-    var cookies: js.UndefOr[StringDictionary[ParamsCookieValue]] = js.native
+    var cookies: js.UndefOr[StringDictionary[ParamsCookieValue]] = js.undefined
     
     /** Request headers. */
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Cookie jar to override default VU cookie jar with. */
-    var jar: js.UndefOr[CookieJar_] = js.native
+    var jar: js.UndefOr[CookieJar_] = js.undefined
     
     /** Maximum redirects to follow. */
-    var redirects: js.UndefOr[Double] = js.native
+    var redirects: js.UndefOr[Double] = js.undefined
     
     /** Response type. */
-    var responseType: js.UndefOr[ResponseType] = js.native
+    var responseType: js.UndefOr[ResponseType] = js.undefined
     
     /** Response time metric tags. */
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /** Request timeout. */
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Params {
     
@@ -913,11 +868,12 @@ object httpMod {
   
   type RefinedBatchRequest[RT /* <: js.UndefOr[ResponseType] */] = String | ArrayRefinedBatchRequest[RT] | ObjectRefinedBatchRequest[RT]
   
-  @js.native
-  trait RefinedParams[RT /* <: js.UndefOr[ResponseType] */] extends Params {
+  trait RefinedParams[RT /* <: js.UndefOr[ResponseType] */]
+    extends StObject
+       with Params {
     
     @JSName("responseType")
-    var responseType_RefinedParams: js.UndefOr[RT] = js.native
+    var responseType_RefinedParams: js.UndefOr[RT] = js.undefined
   }
   object RefinedParams {
     
@@ -928,7 +884,7 @@ object httpMod {
     }
     
     @scala.inline
-    implicit class RefinedParamsMutableBuilder[Self <: RefinedParams[_], RT /* <: js.UndefOr[ResponseType] */] (val x: Self with RefinedParams[RT]) extends AnyVal {
+    implicit class RefinedParamsMutableBuilder[Self <: RefinedParams[?], RT /* <: js.UndefOr[ResponseType] */] (val x: Self & RefinedParams[RT]) extends AnyVal {
       
       @scala.inline
       def setResponseType(value: RT): Self = StObject.set(x, "responseType", value.asInstanceOf[js.Any])
@@ -939,7 +895,9 @@ object httpMod {
   }
   
   @js.native
-  trait RefinedResponse[RT /* <: js.UndefOr[ResponseType] */] extends Response {
+  trait RefinedResponse[RT /* <: js.UndefOr[ResponseType] */]
+    extends StObject
+       with Response {
     
     @JSName("body")
     var body_RefinedResponse: RefinedResponseBody[RT] = js.native
@@ -949,17 +907,16 @@ object httpMod {
   
   type RequestBody = String | StructuredRequestBody
   
-  @js.native
   trait RequestCookie extends StObject {
     
     /** Name. */
-    var name: String = js.native
+    var name: String
     
     /** Whether configured to override VU cookie jar. */
-    var replace: Boolean = js.native
+    var replace: Boolean
     
     /** Value. */
-    var value: String = js.native
+    var value: String
   }
   object RequestCookie {
     
@@ -1080,32 +1037,31 @@ object httpMod {
   
   type ResponseBody = String | bytes | Null
   
-  @js.native
   trait ResponseCookie extends StObject {
     
     /** Domain allowed to receive. */
-    var domain: String = js.native
+    var domain: String
     
     /** Expiry time in millisecond Unix time. */
-    var expires: Double = js.native
+    var expires: Double
     
     /** HTTP only. */
-    var httpOnly: Boolean = js.native
+    var httpOnly: Boolean
     
     /** Seconds until expiration. */
-    var maxAge: Double = js.native
+    var maxAge: Double
     
     /** Name. */
-    var name: String = js.native
+    var name: String
     
     /** Scope path. */
-    var path: String = js.native
+    var path: String
     
     /** Secure. */
-    var secure: Boolean = js.native
+    var secure: Boolean
     
     /** Value. */
-    var value: String = js.native
+    var value: String
   }
   object ResponseCookie {
     

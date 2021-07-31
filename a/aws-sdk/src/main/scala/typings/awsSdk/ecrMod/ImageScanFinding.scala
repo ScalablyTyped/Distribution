@@ -2,36 +2,34 @@ package typings.awsSdk.ecrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageScanFinding extends StObject {
   
   /**
     * A collection of attributes of the host from which the finding is generated.
     */
-  var attributes: js.UndefOr[AttributeList] = js.native
+  var attributes: js.UndefOr[AttributeList] = js.undefined
   
   /**
     * The description of the finding.
     */
-  var description: js.UndefOr[FindingDescription] = js.native
+  var description: js.UndefOr[FindingDescription] = js.undefined
   
   /**
     * The name associated with the finding, usually a CVE number.
     */
-  var name: js.UndefOr[FindingName] = js.native
+  var name: js.UndefOr[FindingName] = js.undefined
   
   /**
     * The finding severity.
     */
-  var severity: js.UndefOr[FindingSeverity] = js.native
+  var severity: js.UndefOr[FindingSeverity] = js.undefined
   
   /**
     * A link containing additional details about the security vulnerability.
     */
-  var uri: js.UndefOr[Url] = js.native
+  var uri: js.UndefOr[Url] = js.undefined
 }
 object ImageScanFinding {
   

@@ -2,19 +2,17 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BreakpointsColors extends StObject {
   
-  var breakpoints: js.UndefOr[js.Object] = js.native
+  var breakpoints: js.UndefOr[js.Object] = js.undefined
   
-  var colors: js.UndefOr[js.Object] = js.native
+  var colors: js.UndefOr[js.Object] = js.undefined
   
-  var components: js.UndefOr[Button] = js.native
+  var components: js.UndefOr[Button] = js.undefined
   
-  var spacing: js.UndefOr[js.Object] = js.native
+  var spacing: js.UndefOr[js.Object] = js.undefined
 }
 object BreakpointsColors {
   

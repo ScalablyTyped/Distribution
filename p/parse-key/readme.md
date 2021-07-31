@@ -11,8 +11,8 @@ Parses strings into key objects of the same format as the ones emitted by nodejs
 | Full name          | parse-key |
 | Keywords           | readline, string, print, convert |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 2539539 |
+| # dependents       | 12 |
+| # downloads        | 2511450 |
 | # stars            | 0 |
 
 ## Links

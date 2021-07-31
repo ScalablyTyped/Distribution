@@ -5,21 +5,19 @@ import typings.screeps.ORDER_BUY
 import typings.screeps.ORDER_SELL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Price extends StObject {
   
-  var price: Double = js.native
+  var price: Double
   
-  var resourceType: MarketResourceConstant = js.native
+  var resourceType: MarketResourceConstant
   
-  var roomName: js.UndefOr[String] = js.native
+  var roomName: js.UndefOr[String] = js.undefined
   
-  var totalAmount: Double = js.native
+  var totalAmount: Double
   
-  var `type`: ORDER_BUY | ORDER_SELL = js.native
+  var `type`: ORDER_BUY | ORDER_SELL
 }
 object Price {
   

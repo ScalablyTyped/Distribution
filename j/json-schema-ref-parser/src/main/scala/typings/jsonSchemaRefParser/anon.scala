@@ -8,12 +8,10 @@ import typings.jsonSchemaRefParser.mod.ResolverOptions
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Circular extends StObject {
     
     /**
@@ -23,7 +21,7 @@ object anon {
       *
       * If set to `"ignore"`, then circular references will simply be ignored. No error will be thrown, but the `$Refs.circular` property will still be set to `true`.
       */
-    var circular: js.UndefOr[Boolean | ignore] = js.native
+    var circular: js.UndefOr[Boolean | ignore] = js.undefined
   }
   object Circular {
     
@@ -44,70 +42,16 @@ object anon {
     }
   }
   
-  @js.native
-  trait Dereference extends StObject {
-    
-    /**
-      * The `dereference` options control how JSON Schema `$Ref` Parser will dereference `$ref` pointers within the JSON schema.
-      */
-    var dereference: js.UndefOr[Circular] = js.native
-    
-    /**
-      * The `parse` options determine how different types of files will be parsed.
-      *
-      * JSON Schema `$Ref` Parser comes with built-in JSON, YAML, plain-text, and binary parsers, any of which you can configure or disable. You can also add your own custom parsers if you want.
-      */
-    var parse: js.UndefOr[Json] = js.native
-    
-    /**
-      * The `resolve` options control how JSON Schema $Ref Parser will resolve file paths and URLs, and how those files will be read/downloaded.
-      *
-      * JSON Schema `$Ref` Parser comes with built-in support for HTTP and HTTPS, as well as support for local files (when running in Node.js). You can configure or disable either of these built-in resolvers. You can also add your own custom resolvers if you want.
-      */
-    var resolve: js.UndefOr[External] = js.native
-  }
-  object Dereference {
-    
-    @scala.inline
-    def apply(): Dereference = {
-      val __obj = js.Dynamic.literal()
-      __obj.asInstanceOf[Dereference]
-    }
-    
-    @scala.inline
-    implicit class DereferenceMutableBuilder[Self <: Dereference] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setDereference(value: Circular): Self = StObject.set(x, "dereference", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDereferenceUndefined: Self = StObject.set(x, "dereference", js.undefined)
-      
-      @scala.inline
-      def setParse(value: Json): Self = StObject.set(x, "parse", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setParseUndefined: Self = StObject.set(x, "parse", js.undefined)
-      
-      @scala.inline
-      def setResolve(value: External): Self = StObject.set(x, "resolve", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setResolveUndefined: Self = StObject.set(x, "resolve", js.undefined)
-    }
-  }
-  
-  @js.native
   trait External extends StObject {
     
     /**
       * Determines whether external $ref pointers will be resolved. If this option is disabled, then external `$ref` pointers will simply be ignored.
       */
-    var external: js.UndefOr[Boolean] = js.native
+    var external: js.UndefOr[Boolean] = js.undefined
     
-    var file: js.UndefOr[ResolverOptions | Boolean] = js.native
+    var file: js.UndefOr[ResolverOptions | Boolean] = js.undefined
     
-    var http: js.UndefOr[HTTPResolverOptions | Boolean] = js.native
+    var http: js.UndefOr[HTTPResolverOptions | Boolean] = js.undefined
   }
   object External {
     
@@ -140,14 +84,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Json extends StObject {
     
-    var json: js.UndefOr[ParserOptions | Boolean] = js.native
+    var json: js.UndefOr[ParserOptions | Boolean] = js.undefined
     
-    var text: js.UndefOr[ParserOptionsencodingstri | Boolean] = js.native
+    var text: js.UndefOr[ParserOptionsencodingstri | Boolean] = js.undefined
     
-    var yaml: js.UndefOr[ParserOptions | Boolean] = js.native
+    var yaml: js.UndefOr[ParserOptions | Boolean] = js.undefined
   }
   object Json {
     
@@ -181,7 +124,6 @@ object anon {
   }
   
   /* Inlined json-schema-ref-parser.json-schema-ref-parser.ParserOptions & {  encoding :string | undefined} */
-  @js.native
   trait ParserOptionsencodingstri extends StObject {
     
     /**
@@ -189,7 +131,7 @@ object anon {
       *
       * You can set `allowEmpty: false` on any parser, which will cause an error to be thrown if a file empty.
       */
-    var allowEmpty: js.UndefOr[Boolean] = js.native
+    var allowEmpty: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines which parsers will be used for which files.
@@ -198,16 +140,16 @@ object anon {
       */
     var canParse: js.UndefOr[
         Boolean | RegExp | String | js.Array[String] | (js.Function1[/* file */ FileInfo, Boolean])
-      ] = js.native
+      ] = js.undefined
     
-    var encoding: js.UndefOr[String] = js.native
+    var encoding: js.UndefOr[String] = js.undefined
     
     /**
       * Parsers run in a specific order, relative to other parsers. For example, a parser with `order: 5` will run before a parser with `order: 10`. If a parser is unable to successfully parse a file, then the next parser is tried, until one succeeds or they all fail.
       *
       * You can change the order in which parsers run, which is useful if you know that most of your referenced files will be a certain type, or if you add your own custom parser that you want to run first.
       */
-    var order: js.UndefOr[Double] = js.native
+    var order: js.UndefOr[Double] = js.undefined
   }
   object ParserOptionsencodingstri {
     

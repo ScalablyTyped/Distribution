@@ -15,7 +15,6 @@ import typings.activexOffice.Office.SmartArtLayout
 import typings.activexOffice.Office.SoftEdgeFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -87,40 +86,35 @@ trait Shape extends StObject {
     * @param PowerPoint.PpExportMode [ExportMode=1]
     */
   def Export(PathName: String, Filter: PpShapeFormat): Unit = js.native
-  def Export(
-    PathName: String,
-    Filter: PpShapeFormat,
-    ScaleWidth: js.UndefOr[scala.Nothing],
-    ScaleHeight: js.UndefOr[scala.Nothing],
-    ExportMode: PpExportMode
-  ): Unit = js.native
-  def Export(
-    PathName: String,
-    Filter: PpShapeFormat,
-    ScaleWidth: js.UndefOr[scala.Nothing],
-    ScaleHeight: Double
-  ): Unit = js.native
-  def Export(
-    PathName: String,
-    Filter: PpShapeFormat,
-    ScaleWidth: js.UndefOr[scala.Nothing],
-    ScaleHeight: Double,
-    ExportMode: PpExportMode
-  ): Unit = js.native
   def Export(PathName: String, Filter: PpShapeFormat, ScaleWidth: Double): Unit = js.native
-  def Export(
-    PathName: String,
-    Filter: PpShapeFormat,
-    ScaleWidth: Double,
-    ScaleHeight: js.UndefOr[scala.Nothing],
-    ExportMode: PpExportMode
-  ): Unit = js.native
   def Export(PathName: String, Filter: PpShapeFormat, ScaleWidth: Double, ScaleHeight: Double): Unit = js.native
   def Export(
     PathName: String,
     Filter: PpShapeFormat,
     ScaleWidth: Double,
     ScaleHeight: Double,
+    ExportMode: PpExportMode
+  ): Unit = js.native
+  def Export(
+    PathName: String,
+    Filter: PpShapeFormat,
+    ScaleWidth: Double,
+    ScaleHeight: Unit,
+    ExportMode: PpExportMode
+  ): Unit = js.native
+  def Export(PathName: String, Filter: PpShapeFormat, ScaleWidth: Unit, ScaleHeight: Double): Unit = js.native
+  def Export(
+    PathName: String,
+    Filter: PpShapeFormat,
+    ScaleWidth: Unit,
+    ScaleHeight: Double,
+    ExportMode: PpExportMode
+  ): Unit = js.native
+  def Export(
+    PathName: String,
+    Filter: PpShapeFormat,
+    ScaleWidth: Unit,
+    ScaleHeight: Unit,
     ExportMode: PpExportMode
   ): Unit = js.native
   

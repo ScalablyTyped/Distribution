@@ -34,7 +34,6 @@ import typings.relayRuntime.relayRuntimeStrings.TypeDiscriminator
 import typings.relayRuntime.relayRuntimeStrings.Variable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object relayConcreteNodeMod {
@@ -196,19 +195,19 @@ object relayConcreteNodeMod {
     def VARIABLE_=(x: Variable): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("VARIABLE")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ConcreteRequest
-    extends GeneratedNode
+    extends StObject
+       with GeneratedNode
        with _GraphQLTaggedNode {
     
     // 'Request';
-    val fragment: ReaderFragment = js.native
+    val fragment: ReaderFragment
     
-    val kind: String = js.native
+    val kind: String
     
-    val operation: NormalizationOperation = js.native
+    val operation: NormalizationOperation
     
-    val params: RequestParameters = js.native
+    val params: RequestParameters
   }
   object ConcreteRequest {
     
@@ -280,27 +279,26 @@ object relayConcreteNodeMod {
     }
     
     @scala.inline
-    def ReaderInlineDataFragment(kind: InlineDataFragment, name: String): typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment = {
-      val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    def ReaderInlineDataFragment(name: String): typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment = {
+      val __obj = js.Dynamic.literal(kind = "InlineDataFragment", name = name.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.relayRuntime.readerNodeMod.ReaderInlineDataFragment]
     }
   }
   
-  @js.native
   trait RequestParameters extends StObject {
     
-    val cacheID: js.UndefOr[String | Null] = js.native
+    val cacheID: js.UndefOr[String | Null] = js.undefined
     
     // 'mutation' | 'query' | 'subscription';
-    val id: js.UndefOr[String | Null] = js.native
+    val id: js.UndefOr[String | Null] = js.undefined
     
-    val metadata: StringDictionary[js.Any] = js.native
+    val metadata: StringDictionary[js.Any]
     
-    val name: String = js.native
+    val name: String
     
-    val operationKind: String = js.native
+    val operationKind: String
     
-    val text: js.UndefOr[String | Null] = js.native
+    val text: js.UndefOr[String | Null] = js.undefined
   }
   object RequestParameters {
     

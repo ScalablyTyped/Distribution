@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPipelineExecutionInput extends StObject {
   
   /**
     * The ID of the pipeline execution about which you want to get execution details.
     */
-  var pipelineExecutionId: PipelineExecutionId = js.native
+  var pipelineExecutionId: PipelineExecutionId
   
   /**
     * The name of the pipeline about which you want to get execution details.
     */
-  var pipelineName: PipelineName = js.native
+  var pipelineName: PipelineName
 }
 object GetPipelineExecutionInput {
   

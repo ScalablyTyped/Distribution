@@ -2,10 +2,8 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGetOrderNotesResponse extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaGetOrderNotesResponse extends StObject {
     * grouped by proposal, with the notes for the most recently modified
     * proposal appearing first.
     */
-  var notes: js.UndefOr[js.Array[SchemaMarketplaceNote]] = js.native
+  var notes: js.UndefOr[js.Array[SchemaMarketplaceNote]] = js.undefined
 }
 object SchemaGetOrderNotesResponse {
   

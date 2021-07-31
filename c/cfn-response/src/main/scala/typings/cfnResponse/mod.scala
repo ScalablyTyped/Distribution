@@ -4,10 +4,13 @@ import typings.awsLambda.cloudformationCustomResourceMod.CloudFormationCustomRes
 import typings.awsLambda.handlerMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("cfn-response", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cfn-response", "FAILED")
   @js.native
@@ -17,67 +20,24 @@ object mod {
   @js.native
   val SUCCESS: typings.cfnResponse.cfnResponseStrings.SUCCESS = js.native
   
-  @JSImport("cfn-response", "send")
-  @js.native
-  def send(event: CloudFormationCustomResourceEvent, context: Context, responseStatus: ResponseStatus): Unit = js.native
-  @JSImport("cfn-response", "send")
-  @js.native
-  def send(
-    event: CloudFormationCustomResourceEvent,
-    context: Context,
-    responseStatus: ResponseStatus,
-    responseData: js.UndefOr[scala.Nothing],
-    physicalResourceId: js.UndefOr[scala.Nothing],
-    noEcho: Boolean
-  ): Unit = js.native
-  @JSImport("cfn-response", "send")
-  @js.native
-  def send(
-    event: CloudFormationCustomResourceEvent,
-    context: Context,
-    responseStatus: ResponseStatus,
-    responseData: js.UndefOr[scala.Nothing],
-    physicalResourceId: String
-  ): Unit = js.native
-  @JSImport("cfn-response", "send")
-  @js.native
-  def send(
-    event: CloudFormationCustomResourceEvent,
-    context: Context,
-    responseStatus: ResponseStatus,
-    responseData: js.UndefOr[scala.Nothing],
-    physicalResourceId: String,
-    noEcho: Boolean
-  ): Unit = js.native
-  @JSImport("cfn-response", "send")
-  @js.native
+  @scala.inline
+  def send(event: CloudFormationCustomResourceEvent, context: Context, responseStatus: ResponseStatus): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
     responseData: js.Object
-  ): Unit = js.native
-  @JSImport("cfn-response", "send")
-  @js.native
-  def send(
-    event: CloudFormationCustomResourceEvent,
-    context: Context,
-    responseStatus: ResponseStatus,
-    responseData: js.Object,
-    physicalResourceId: js.UndefOr[scala.Nothing],
-    noEcho: Boolean
-  ): Unit = js.native
-  @JSImport("cfn-response", "send")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
     responseStatus: ResponseStatus,
     responseData: js.Object,
     physicalResourceId: String
-  ): Unit = js.native
-  @JSImport("cfn-response", "send")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def send(
     event: CloudFormationCustomResourceEvent,
     context: Context,
@@ -85,7 +45,42 @@ object mod {
     responseData: js.Object,
     physicalResourceId: String,
     noEcho: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any], noEcho.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def send(
+    event: CloudFormationCustomResourceEvent,
+    context: Context,
+    responseStatus: ResponseStatus,
+    responseData: js.Object,
+    physicalResourceId: Unit,
+    noEcho: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any], noEcho.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def send(
+    event: CloudFormationCustomResourceEvent,
+    context: Context,
+    responseStatus: ResponseStatus,
+    responseData: Unit,
+    physicalResourceId: String
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def send(
+    event: CloudFormationCustomResourceEvent,
+    context: Context,
+    responseStatus: ResponseStatus,
+    responseData: Unit,
+    physicalResourceId: String,
+    noEcho: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any], noEcho.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def send(
+    event: CloudFormationCustomResourceEvent,
+    context: Context,
+    responseStatus: ResponseStatus,
+    responseData: Unit,
+    physicalResourceId: Unit,
+    noEcho: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("send")(event.asInstanceOf[js.Any], context.asInstanceOf[js.Any], responseStatus.asInstanceOf[js.Any], responseData.asInstanceOf[js.Any], physicalResourceId.asInstanceOf[js.Any], noEcho.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* Rewritten from type alias, can be one of: 
     - typings.cfnResponse.cfnResponseStrings.SUCCESS

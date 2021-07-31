@@ -3,18 +3,16 @@ package typings.gifEncoder
 import typings.gifEncoder.mod.Pixels
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HighWaterMark extends StObject {
     
     /**
       * Number, in bytes, to store in internal buffer. Defaults to 64kB.
       */
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
   }
   object HighWaterMark {
     
@@ -35,13 +33,12 @@ object anon {
     }
   }
   
-  @js.native
   trait IndexedPixels extends StObject {
     
     /**
       * Indicator to treat imageData as RGBA values (false) or indices in palette (true)
       */
-    var indexedPixels: Boolean = js.native
+    var indexedPixels: Boolean
     
     /**
       * Array of pixels to use as palette for the frame.
@@ -49,7 +46,7 @@ object anon {
       *
       * Must be used with options.indexedPixels
       */
-    var palette: Pixels = js.native
+    var palette: Pixels
   }
   object IndexedPixels {
     

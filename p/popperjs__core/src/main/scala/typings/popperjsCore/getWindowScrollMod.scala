@@ -5,15 +5,16 @@ import typings.popperjsCore.typesMod.Window
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getWindowScrollMod {
   
-  @JSImport("@popperjs/core/lib/dom-utils/getWindowScroll", JSImport.Default)
+  @JSImport("@popperjs/core/lib/dom-utils/getWindowScroll", JSImport.Namespace)
   @js.native
-  def default(node: Window): ScrollTop = js.native
-  @JSImport("@popperjs/core/lib/dom-utils/getWindowScroll", JSImport.Default)
-  @js.native
-  def default(node: Node): ScrollTop = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(node: Window): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
+  @scala.inline
+  def default(node: Node): ScrollTop = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[ScrollTop]
 }

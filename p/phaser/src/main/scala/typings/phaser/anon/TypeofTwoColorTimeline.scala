@@ -2,59 +2,57 @@ package typings.phaser.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTwoColorTimeline extends StObject {
   
   /* static member */
-  var A: Double = js.native
+  var A: Double
   
   /* static member */
-  var B: Double = js.native
+  var B: Double
   
   /* static member */
-  var B2: Double = js.native
+  var B2: Double
   
   /* static member */
-  var ENTRIES: Double = js.native
+  var ENTRIES: Double
   
   /* static member */
-  var G: Double = js.native
+  var G: Double
   
   /* static member */
-  var G2: Double = js.native
+  var G2: Double
   
   /* static member */
-  var PREV_A: Double = js.native
+  var PREV_A: Double
   
   /* static member */
-  var PREV_B: Double = js.native
+  var PREV_B: Double
   
   /* static member */
-  var PREV_B2: Double = js.native
+  var PREV_B2: Double
   
   /* static member */
-  var PREV_G: Double = js.native
+  var PREV_G: Double
   
   /* static member */
-  var PREV_G2: Double = js.native
+  var PREV_G2: Double
   
   /* static member */
-  var PREV_R: Double = js.native
+  var PREV_R: Double
   
   /* static member */
-  var PREV_R2: Double = js.native
+  var PREV_R2: Double
   
   /* static member */
-  var PREV_TIME: Double = js.native
+  var PREV_TIME: Double
   
   /* static member */
-  var R: Double = js.native
+  var R: Double
   
   /* static member */
-  var R2: Double = js.native
+  var R2: Double
 }
 object TypeofTwoColorTimeline {
   

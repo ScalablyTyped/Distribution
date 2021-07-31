@@ -3,11 +3,12 @@ package typings.fabric.fabricImplMod
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ISepia2Filter extends IBaseFilter {
+trait ISepia2Filter
+  extends StObject
+     with IBaseFilter {
   
   /**
     * Applies filter to canvas element

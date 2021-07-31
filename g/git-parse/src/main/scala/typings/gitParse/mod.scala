@@ -2,46 +2,39 @@ package typings.gitParse
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("git-parse", "checkoutCommit")
+  @JSImport("git-parse", JSImport.Namespace)
   @js.native
-  def checkoutCommit(pathToRepo: String, hash: String): js.Promise[Unit] = js.native
-  @JSImport("git-parse", "checkoutCommit")
-  @js.native
-  def checkoutCommit(pathToRepo: String, hash: String, options: CheckoutCommmitOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("git-parse", "gitDiff")
-  @js.native
-  def gitDiff(pathToRepo: String, commitHash1: String): js.Promise[String] = js.native
-  @JSImport("git-parse", "gitDiff")
-  @js.native
-  def gitDiff(pathToRepo: String, commitHash1: String, commitHash2: js.UndefOr[scala.Nothing], file: String): js.Promise[String] = js.native
-  @JSImport("git-parse", "gitDiff")
-  @js.native
-  def gitDiff(pathToRepo: String, commitHash1: String, commitHash2: String): js.Promise[String] = js.native
-  @JSImport("git-parse", "gitDiff")
-  @js.native
-  def gitDiff(pathToRepo: String, commitHash1: String, commitHash2: String, file: String): js.Promise[String] = js.native
+  @scala.inline
+  def checkoutCommit(pathToRepo: String, hash: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkoutCommit")(pathToRepo.asInstanceOf[js.Any], hash.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def checkoutCommit(pathToRepo: String, hash: String, options: CheckoutCommmitOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkoutCommit")(pathToRepo.asInstanceOf[js.Any], hash.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("git-parse", "gitPull")
-  @js.native
-  def gitPull(pathToRepo: String): js.Promise[Unit] = js.native
+  @scala.inline
+  def gitDiff(pathToRepo: String, commitHash1: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("gitDiff")(pathToRepo.asInstanceOf[js.Any], commitHash1.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def gitDiff(pathToRepo: String, commitHash1: String, commitHash2: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("gitDiff")(pathToRepo.asInstanceOf[js.Any], commitHash1.asInstanceOf[js.Any], commitHash2.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def gitDiff(pathToRepo: String, commitHash1: String, commitHash2: String, file: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("gitDiff")(pathToRepo.asInstanceOf[js.Any], commitHash1.asInstanceOf[js.Any], commitHash2.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def gitDiff(pathToRepo: String, commitHash1: String, commitHash2: Unit, file: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("gitDiff")(pathToRepo.asInstanceOf[js.Any], commitHash1.asInstanceOf[js.Any], commitHash2.asInstanceOf[js.Any], file.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
-  @JSImport("git-parse", "gitToJs")
-  @js.native
-  def gitToJs(repoPath: String): js.Promise[js.Array[GitCommit]] = js.native
-  @JSImport("git-parse", "gitToJs")
-  @js.native
-  def gitToJs(repoPath: String, options: GitToJsOptions): js.Promise[js.Array[GitCommit]] = js.native
+  @scala.inline
+  def gitPull(pathToRepo: String): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("gitPull")(pathToRepo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @js.native
+  @scala.inline
+  def gitToJs(repoPath: String): js.Promise[js.Array[GitCommit]] = ^.asInstanceOf[js.Dynamic].applyDynamic("gitToJs")(repoPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[GitCommit]]]
+  @scala.inline
+  def gitToJs(repoPath: String, options: GitToJsOptions): js.Promise[js.Array[GitCommit]] = (^.asInstanceOf[js.Dynamic].applyDynamic("gitToJs")(repoPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[GitCommit]]]
+  
   trait CheckoutCommmitOptions extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object CheckoutCommmitOptions {
     
@@ -62,14 +55,13 @@ object mod {
     }
   }
   
-  @js.native
   trait FileModification extends StObject {
     
-    var linesAdded: js.UndefOr[Double] = js.native
+    var linesAdded: js.UndefOr[Double] = js.undefined
     
-    var linesDeleted: js.UndefOr[Double] = js.native
+    var linesDeleted: js.UndefOr[Double] = js.undefined
     
-    var path: String = js.native
+    var path: String
   }
   object FileModification {
     
@@ -99,12 +91,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FileRename extends StObject {
     
-    var newPath: String = js.native
+    var newPath: String
     
-    var oldPath: String = js.native
+    var oldPath: String
   }
   object FileRename {
     
@@ -125,26 +116,25 @@ object mod {
     }
   }
   
-  @js.native
   trait GitCommit extends StObject {
     
-    var authorEmail: String = js.native
+    var authorEmail: String
     
-    var authorName: String = js.native
+    var authorName: String
     
-    var date: String = js.native
+    var date: String
     
-    var filesAdded: js.Array[FileModification] = js.native
+    var filesAdded: js.Array[FileModification]
     
-    var filesDeleted: js.Array[FileModification] = js.native
+    var filesDeleted: js.Array[FileModification]
     
-    var filesModified: js.Array[FileModification] = js.native
+    var filesModified: js.Array[FileModification]
     
-    var filesRenamed: js.Array[FileRename] = js.native
+    var filesRenamed: js.Array[FileRename]
     
-    var hash: String = js.native
+    var hash: String
     
-    var message: String = js.native
+    var message: String
   }
   object GitCommit {
     
@@ -208,10 +198,9 @@ object mod {
     }
   }
   
-  @js.native
   trait GitToJsOptions extends StObject {
     
-    var sinceCommit: js.UndefOr[String] = js.native
+    var sinceCommit: js.UndefOr[String] = js.undefined
   }
   object GitToJsOptions {
     

@@ -2,7 +2,6 @@ package typings.googleapis.cloudschedulerV1beta1Mod.cloudschedulerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This type of authorization should be used when sending requests to third
   * party endpoints.
   */
-@js.native
 trait SchemaOidcToken extends StObject {
   
   /**
     * Audience to be used when generating OIDC token. If not specified, the URI
     * specified in target will be used.
     */
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
   /**
     * [Service account
@@ -27,7 +25,7 @@ trait SchemaOidcToken extends StObject {
     * project as the job. The caller must have iam.serviceAccounts.actAs
     * permission for the service account.
     */
-  var serviceAccountEmail: js.UndefOr[String] = js.native
+  var serviceAccountEmail: js.UndefOr[String] = js.undefined
 }
 object SchemaOidcToken {
   

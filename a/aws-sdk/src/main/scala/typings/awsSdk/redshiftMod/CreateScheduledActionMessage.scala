@@ -2,51 +2,49 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateScheduledActionMessage extends StObject {
   
   /**
     * If true, the schedule is enabled. If false, the scheduled action does not trigger. For more information about state of the scheduled action, see ScheduledAction. 
     */
-  var Enable: js.UndefOr[BooleanOptional] = js.native
+  var Enable: js.UndefOr[BooleanOptional] = js.undefined
   
   /**
     * The end time in UTC of the scheduled action. After this time, the scheduled action does not trigger. For more information about this parameter, see ScheduledAction. 
     */
-  var EndTime: js.UndefOr[TStamp] = js.native
+  var EndTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The IAM role to assume to run the target action. For more information about this parameter, see ScheduledAction. 
     */
-  var IamRole: String = js.native
+  var IamRole: String
   
   /**
     * The schedule in at( ) or cron( ) format. For more information about this parameter, see ScheduledAction.
     */
-  var Schedule: String = js.native
+  var Schedule: String
   
   /**
     * The description of the scheduled action. 
     */
-  var ScheduledActionDescription: js.UndefOr[String] = js.native
+  var ScheduledActionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the scheduled action. The name must be unique within an account. For more information about this parameter, see ScheduledAction. 
     */
-  var ScheduledActionName: String = js.native
+  var ScheduledActionName: String
   
   /**
     * The start time in UTC of the scheduled action. Before this time, the scheduled action does not trigger. For more information about this parameter, see ScheduledAction.
     */
-  var StartTime: js.UndefOr[TStamp] = js.native
+  var StartTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * A JSON format string of the Amazon Redshift API operation with input parameters. For more information about this parameter, see ScheduledAction. 
     */
-  var TargetAction: ScheduledActionType = js.native
+  var TargetAction: ScheduledActionType
 }
 object CreateScheduledActionMessage {
   

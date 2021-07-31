@@ -2,25 +2,23 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a DNS certificate challenge.
   */
-@js.native
 trait SchemaCertDnsChallenge extends StObject {
   
   /**
     * The domain name upon which the DNS challenge must be satisfied.
     */
-  var domainName: js.UndefOr[String] = js.native
+  var domainName: js.UndefOr[String] = js.undefined
   
   /**
     * The value that must be present as a TXT record on the domain name to
     * satisfy the challenge.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object SchemaCertDnsChallenge {
   

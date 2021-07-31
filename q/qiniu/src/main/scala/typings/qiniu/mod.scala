@@ -10,7 +10,6 @@ import typings.qiniu.mod.conf.Zone
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,8 +22,8 @@ object mod {
       @js.native
       class Mac () extends StObject {
         def this(accessKey: String) = this()
-        def this(accessKey: js.UndefOr[scala.Nothing], secretKey: String) = this()
         def this(accessKey: String, secretKey: String) = this()
+        def this(accessKey: Unit, secretKey: String) = this()
         
         var accessKey: String = js.native
         
@@ -155,7 +154,9 @@ object mod {
     
     @JSImport("qiniu", "conf.Config")
     @js.native
-    class Config () extends ConfigOptions {
+    class Config ()
+      extends StObject
+         with ConfigOptions {
       def this(options: ConfigOptions) = this()
     }
     
@@ -226,28 +227,27 @@ object mod {
       var srcUpHosts: js.Any = js.native
     }
     
-    @js.native
     trait ConfigOptions extends StObject {
       
       /**
         * @default true
         */
-      var useCdnDomain: js.UndefOr[Boolean] = js.native
+      var useCdnDomain: js.UndefOr[Boolean] = js.undefined
       
       /**
         * @default false
         */
-      var useHttpsDomain: js.UndefOr[Boolean] = js.native
+      var useHttpsDomain: js.UndefOr[Boolean] = js.undefined
       
       /**
         * @default null
         */
-      var zone: js.UndefOr[Zone] = js.native
+      var zone: js.UndefOr[Zone] = js.undefined
       
       /**
         * @default -1
         */
-      var zoneExpire: js.UndefOr[Double] = js.native
+      var zoneExpire: js.UndefOr[Double] = js.undefined
     }
     object ConfigOptions {
       
@@ -293,7 +293,7 @@ object mod {
     @js.native
     class OperationManager () extends StObject {
       def this(mac: Mac) = this()
-      def this(mac: js.UndefOr[scala.Nothing], config: Config) = this()
+      def this(mac: Unit, config: Config) = this()
       def this(mac: Mac, config: Config) = this()
       
       var config: Config = js.native
@@ -334,18 +334,17 @@ object mod {
       def prefop(persistentId: String, callback: callback): Unit = js.native
     }
     
-    @js.native
     trait PfopOptions extends StObject {
       
       /**
         * 结果是否强制覆盖已有的同名文件
         */
-      var force: js.UndefOr[Boolean] = js.native
+      var force: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 回调业务服务器，通知处理结果
         */
-      var notifyURL: js.UndefOr[String] = js.native
+      var notifyURL: js.UndefOr[String] = js.undefined
     }
     object PfopOptions {
       
@@ -454,252 +453,52 @@ object mod {
       */
     class PutExtra () extends StObject {
       def this(fname: String) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.Any) = this()
       def this(fname: String, params: js.Any) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], mimeType: String) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String) = this()
-      def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String) = this()
+      def this(fname: Unit, params: js.Any) = this()
       def this(fname: String, params: js.Any, mimeType: String) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: String
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String
-      ) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String, crc32: String) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String
-      ) = this()
-      def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String, crc32: String) = this()
-      def this(fname: String, params: js.Any, mimeType: js.UndefOr[scala.Nothing], crc32: String) = this()
+      def this(fname: String, params: Unit, mimeType: String) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String) = this()
+      def this(fname: Unit, params: Unit, mimeType: String) = this()
       def this(fname: String, params: js.Any, mimeType: String, crc32: String) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: String,
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: String,
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: String,
-        crc32: String,
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: String,
-        crc32: String,
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: String,
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        crc32: String,
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: String,
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: String,
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: String,
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: String,
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        crc32: String,
-        checkCrc: Double
-      ) = this()
-      def this(
-        fname: String,
-        params: js.Any,
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Boolean
-      ) = this()
-      def this(
-        fname: String,
-        params: js.Any,
-        mimeType: String,
-        crc32: js.UndefOr[scala.Nothing],
-        checkCrc: Double
-      ) = this()
+      def this(fname: String, params: js.Any, mimeType: Unit, crc32: String) = this()
+      def this(fname: String, params: Unit, mimeType: String, crc32: String) = this()
+      def this(fname: String, params: Unit, mimeType: Unit, crc32: String) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String, crc32: String) = this()
+      def this(fname: Unit, params: js.Any, mimeType: Unit, crc32: String) = this()
+      def this(fname: Unit, params: Unit, mimeType: String, crc32: String) = this()
+      def this(fname: Unit, params: Unit, mimeType: Unit, crc32: String) = this()
       def this(fname: String, params: js.Any, mimeType: String, crc32: String, checkCrc: Boolean) = this()
       def this(fname: String, params: js.Any, mimeType: String, crc32: String, checkCrc: Double) = this()
+      def this(fname: String, params: js.Any, mimeType: String, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: String, params: js.Any, mimeType: String, crc32: Unit, checkCrc: Double) = this()
+      def this(fname: String, params: js.Any, mimeType: Unit, crc32: String, checkCrc: Boolean) = this()
+      def this(fname: String, params: js.Any, mimeType: Unit, crc32: String, checkCrc: Double) = this()
+      def this(fname: String, params: js.Any, mimeType: Unit, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: String, params: js.Any, mimeType: Unit, crc32: Unit, checkCrc: Double) = this()
+      def this(fname: String, params: Unit, mimeType: String, crc32: String, checkCrc: Boolean) = this()
+      def this(fname: String, params: Unit, mimeType: String, crc32: String, checkCrc: Double) = this()
+      def this(fname: String, params: Unit, mimeType: String, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: String, params: Unit, mimeType: String, crc32: Unit, checkCrc: Double) = this()
+      def this(fname: String, params: Unit, mimeType: Unit, crc32: String, checkCrc: Boolean) = this()
+      def this(fname: String, params: Unit, mimeType: Unit, crc32: String, checkCrc: Double) = this()
+      def this(fname: String, params: Unit, mimeType: Unit, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: String, params: Unit, mimeType: Unit, crc32: Unit, checkCrc: Double) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String, crc32: String, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String, crc32: String, checkCrc: Double) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String, crc32: Unit, checkCrc: Double) = this()
+      def this(fname: Unit, params: js.Any, mimeType: Unit, crc32: String, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: js.Any, mimeType: Unit, crc32: String, checkCrc: Double) = this()
+      def this(fname: Unit, params: js.Any, mimeType: Unit, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: js.Any, mimeType: Unit, crc32: Unit, checkCrc: Double) = this()
+      def this(fname: Unit, params: Unit, mimeType: String, crc32: String, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: Unit, mimeType: String, crc32: String, checkCrc: Double) = this()
+      def this(fname: Unit, params: Unit, mimeType: String, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: Unit, mimeType: String, crc32: Unit, checkCrc: Double) = this()
+      def this(fname: Unit, params: Unit, mimeType: Unit, crc32: String, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: Unit, mimeType: Unit, crc32: String, checkCrc: Double) = this()
+      def this(fname: Unit, params: Unit, mimeType: Unit, crc32: Unit, checkCrc: Boolean) = this()
+      def this(fname: Unit, params: Unit, mimeType: Unit, crc32: Unit, checkCrc: Double) = this()
       
       /**
         * @default 0|false
@@ -742,91 +541,22 @@ object mod {
       */
     class PutExtra () extends StObject {
       def this(fname: String) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.Any) = this()
       def this(fname: String, params: js.Any) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.UndefOr[scala.Nothing], mimeType: String) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String) = this()
-      def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String) = this()
+      def this(fname: Unit, params: js.Any) = this()
       def this(fname: String, params: js.Any, mimeType: String) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: String
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        resumeRecordFile: String
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: String
-      ) = this()
-      def this(fname: js.UndefOr[scala.Nothing], params: js.Any, mimeType: String, resumeRecordFile: String) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: String
-      ) = this()
-      def this(fname: String, params: js.UndefOr[scala.Nothing], mimeType: String, resumeRecordFile: String) = this()
-      def this(fname: String, params: js.Any, mimeType: js.UndefOr[scala.Nothing], resumeRecordFile: String) = this()
+      def this(fname: String, params: Unit, mimeType: String) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String) = this()
+      def this(fname: Unit, params: Unit, mimeType: String) = this()
       def this(fname: String, params: js.Any, mimeType: String, resumeRecordFile: String) = this()
+      def this(fname: String, params: js.Any, mimeType: Unit, resumeRecordFile: String) = this()
+      def this(fname: String, params: Unit, mimeType: String, resumeRecordFile: String) = this()
+      def this(fname: String, params: Unit, mimeType: Unit, resumeRecordFile: String) = this()
+      def this(fname: Unit, params: js.Any, mimeType: String, resumeRecordFile: String) = this()
+      def this(fname: Unit, params: js.Any, mimeType: Unit, resumeRecordFile: String) = this()
+      def this(fname: Unit, params: Unit, mimeType: String, resumeRecordFile: String) = this()
+      def this(fname: Unit, params: Unit, mimeType: Unit, resumeRecordFile: String) = this()
       def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: js.UndefOr[scala.Nothing],
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: String,
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        resumeRecordFile: js.UndefOr[scala.Nothing],
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
-        resumeRecordFile: String,
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: js.UndefOr[scala.Nothing],
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: String,
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
-        params: js.Any,
-        mimeType: String,
-        resumeRecordFile: js.UndefOr[scala.Nothing],
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: js.UndefOr[scala.Nothing],
+        fname: String,
         params: js.Any,
         mimeType: String,
         resumeRecordFile: String,
@@ -834,58 +564,107 @@ object mod {
       ) = this()
       def this(
         fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: js.UndefOr[scala.Nothing],
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: String,
-        progressCallback: js.Function1[/* data */ js.Any, Unit]
-      ) = this()
-      def this(
-        fname: String,
-        params: js.UndefOr[scala.Nothing],
+        params: js.Any,
         mimeType: String,
-        resumeRecordFile: js.UndefOr[scala.Nothing],
+        resumeRecordFile: Unit,
         progressCallback: js.Function1[/* data */ js.Any, Unit]
       ) = this()
       def this(
         fname: String,
-        params: js.UndefOr[scala.Nothing],
-        mimeType: String,
+        params: js.Any,
+        mimeType: Unit,
         resumeRecordFile: String,
         progressCallback: js.Function1[/* data */ js.Any, Unit]
       ) = this()
       def this(
         fname: String,
         params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
-        resumeRecordFile: js.UndefOr[scala.Nothing],
+        mimeType: Unit,
+        resumeRecordFile: Unit,
         progressCallback: js.Function1[/* data */ js.Any, Unit]
       ) = this()
       def this(
         fname: String,
-        params: js.Any,
-        mimeType: js.UndefOr[scala.Nothing],
+        params: Unit,
+        mimeType: String,
+        resumeRecordFile: String,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: String,
+        params: Unit,
+        mimeType: String,
+        resumeRecordFile: Unit,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: String,
+        params: Unit,
+        mimeType: Unit,
         resumeRecordFile: String,
         progressCallback: js.Function1[/* data */ js.Any, Unit]
       ) = this()
       def this(
         fname: String,
-        params: js.Any,
-        mimeType: String,
-        resumeRecordFile: js.UndefOr[scala.Nothing],
+        params: Unit,
+        mimeType: Unit,
+        resumeRecordFile: Unit,
         progressCallback: js.Function1[/* data */ js.Any, Unit]
       ) = this()
       def this(
-        fname: String,
+        fname: Unit,
         params: js.Any,
         mimeType: String,
         resumeRecordFile: String,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: Unit,
+        params: js.Any,
+        mimeType: String,
+        resumeRecordFile: Unit,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: Unit,
+        params: js.Any,
+        mimeType: Unit,
+        resumeRecordFile: String,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: Unit,
+        params: js.Any,
+        mimeType: Unit,
+        resumeRecordFile: Unit,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: Unit,
+        params: Unit,
+        mimeType: String,
+        resumeRecordFile: String,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: Unit,
+        params: Unit,
+        mimeType: String,
+        resumeRecordFile: Unit,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: Unit,
+        params: Unit,
+        mimeType: Unit,
+        resumeRecordFile: String,
+        progressCallback: js.Function1[/* data */ js.Any, Unit]
+      ) = this()
+      def this(
+        fname: Unit,
+        params: Unit,
+        mimeType: Unit,
+        resumeRecordFile: Unit,
         progressCallback: js.Function1[/* data */ js.Any, Unit]
       ) = this()
       
@@ -981,21 +760,20 @@ object mod {
   
   object rpc {
     
-    @JSImport("qiniu", "rpc.post")
+    @JSImport("qiniu", "rpc")
     @js.native
-    def post(requestURI: String, requestForm: String, headers: Null, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.post")
-    @js.native
-    def post(requestURI: String, requestForm: String, headers: Headers, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.post")
-    @js.native
-    def post(requestURI: String, requestForm: Null, headers: Null, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.post")
-    @js.native
-    def post(requestURI: String, requestForm: Null, headers: Headers, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.post")
-    @js.native
-    def post(requestURI: String, requestForm: Buffer, headers: Null, callback: callback): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def post(requestURI: String, requestForm: String, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def post(requestURI: String, requestForm: String, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def post(requestURI: String, requestForm: Null, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def post(requestURI: String, requestForm: Null, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def post(requestURI: String, requestForm: Buffer, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *
       * @param requestURI
@@ -1003,47 +781,36 @@ object mod {
       * @param headers
       * @param callback
       */
-    @JSImport("qiniu", "rpc.post")
-    @js.native
-    def post(requestURI: String, requestForm: Buffer, headers: Headers, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.post")
-    @js.native
-    def post(requestURI: String, requestForm: ReadableStream, headers: Null, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.post")
-    @js.native
-    def post(requestURI: String, requestForm: ReadableStream, headers: Headers, callback: callback): Unit = js.native
+    @scala.inline
+    def post(requestURI: String, requestForm: Buffer, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def post(requestURI: String, requestForm: ReadableStream, headers: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def post(requestURI: String, requestForm: ReadableStream, headers: Headers, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], headers.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("qiniu", "rpc.postMultipart")
-    @js.native
-    def postMultipart(requestURI: String, requestForm: String, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postMultipart")
-    @js.native
-    def postMultipart(requestURI: String, requestForm: Null, callback: callback): Unit = js.native
+    @scala.inline
+    def postMultipart(requestURI: String, requestForm: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postMultipart(requestURI: String, requestForm: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *
       * @param requestURI
       * @param requestForm
       * @param callback
       */
-    @JSImport("qiniu", "rpc.postMultipart")
-    @js.native
-    def postMultipart(requestURI: String, requestForm: Buffer, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postMultipart")
-    @js.native
-    def postMultipart(requestURI: String, requestForm: ReadableStream, callback: callback): Unit = js.native
+    @scala.inline
+    def postMultipart(requestURI: String, requestForm: Buffer, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postMultipart(requestURI: String, requestForm: ReadableStream, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postMultipart")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: String, token: String, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: String, token: Null, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: Null, token: String, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: Null, token: Null, callback: callback): Unit = js.native
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: String, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: String, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: Null, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: Null, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     /**
       *
       * @param requestURI
@@ -1051,18 +818,14 @@ object mod {
       * @param token
       * @param callback
       */
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: Buffer, token: String, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: Buffer, token: Null, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: ReadableStream, token: String, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postWithForm")
-    @js.native
-    def postWithForm(requestURI: String, requestForm: ReadableStream, token: Null, callback: callback): Unit = js.native
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: Buffer, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: Buffer, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: ReadableStream, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postWithForm(requestURI: String, requestForm: ReadableStream, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithForm")(requestURI.asInstanceOf[js.Any], requestForm.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *
@@ -1070,19 +833,16 @@ object mod {
       * @param token
       * @param callback
       */
-    @JSImport("qiniu", "rpc.postWithoutForm")
-    @js.native
-    def postWithoutForm(requestURI: String, token: String, callback: callback): Unit = js.native
-    @JSImport("qiniu", "rpc.postWithoutForm")
-    @js.native
-    def postWithoutForm(requestURI: String, token: Null, callback: callback): Unit = js.native
+    @scala.inline
+    def postWithoutForm(requestURI: String, token: String, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithoutForm")(requestURI.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def postWithoutForm(requestURI: String, token: Null, callback: callback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("postWithoutForm")(requestURI.asInstanceOf[js.Any], token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @js.native
     trait Headers extends StObject {
       
-      var Connection: js.UndefOr[String] = js.native
+      var Connection: js.UndefOr[String] = js.undefined
       
-      var `User-Agent`: js.UndefOr[String] = js.native
+      var `User-Agent`: js.UndefOr[String] = js.undefined
     }
     object Headers {
       
@@ -1112,11 +872,15 @@ object mod {
   
   object rs {
     
+    @JSImport("qiniu", "rs")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("qiniu", "rs.BucketManager")
     @js.native
     class BucketManager () extends StObject {
       def this(mac: Mac) = this()
-      def this(mac: js.UndefOr[scala.Nothing], config: Config) = this()
+      def this(mac: Unit, config: Config) = this()
       def this(mac: Mac, config: Config) = this()
       
       /**
@@ -1335,9 +1099,8 @@ object mod {
       * @param key
       * @param headers
       */
-    @JSImport("qiniu", "rs.changeHeadersOp")
-    @js.native
-    def changeHeadersOp(bucket: String, key: String, headers: StringDictionary[String]): String = js.native
+    @scala.inline
+    def changeHeadersOp(bucket: String, key: String, headers: StringDictionary[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeHeadersOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], headers.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1345,9 +1108,8 @@ object mod {
       * @param key
       * @param newMime
       */
-    @JSImport("qiniu", "rs.changeMimeOp")
-    @js.native
-    def changeMimeOp(bucket: String, key: String, newMime: String): String = js.native
+    @scala.inline
+    def changeMimeOp(bucket: String, key: String, newMime: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeMimeOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], newMime.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1355,9 +1117,8 @@ object mod {
       * @param key
       * @param newType
       */
-    @JSImport("qiniu", "rs.changeTypeOp")
-    @js.native
-    def changeTypeOp(bucket: String, key: String, newType: Double): String = js.native
+    @scala.inline
+    def changeTypeOp(bucket: String, key: String, newType: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("changeTypeOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], newType.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1367,12 +1128,10 @@ object mod {
       * @param destKey
       * @param options
       */
-    @JSImport("qiniu", "rs.copyOp")
-    @js.native
-    def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = js.native
-    @JSImport("qiniu", "rs.copyOp")
-    @js.native
-    def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = js.native
+    @scala.inline
+    def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def copyOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = (^.asInstanceOf[js.Dynamic].applyDynamic("copyOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1380,18 +1139,16 @@ object mod {
       * @param key
       * @param days
       */
-    @JSImport("qiniu", "rs.deleteAfterDaysOp")
-    @js.native
-    def deleteAfterDaysOp(bucket: String, key: String, days: Double): String = js.native
+    @scala.inline
+    def deleteAfterDaysOp(bucket: String, key: String, days: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteAfterDaysOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
       * @param bucket
       * @param key
       */
-    @JSImport("qiniu", "rs.deleteOp")
-    @js.native
-    def deleteOp(bucket: String, key: String): String = js.native
+    @scala.inline
+    def deleteOp(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
@@ -1401,44 +1158,40 @@ object mod {
       * @param destKey
       * @param options
       */
-    @JSImport("qiniu", "rs.moveOp")
-    @js.native
-    def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = js.native
-    @JSImport("qiniu", "rs.moveOp")
-    @js.native
-    def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = js.native
+    @scala.inline
+    def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("moveOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def moveOp(srcBucket: String, srcKey: String, destBucket: String, destKey: String, options: Force): String = (^.asInstanceOf[js.Dynamic].applyDynamic("moveOp")(srcBucket.asInstanceOf[js.Any], srcKey.asInstanceOf[js.Any], destBucket.asInstanceOf[js.Any], destKey.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       *
       * @param bucket
       * @param key
       */
-    @JSImport("qiniu", "rs.statOp")
-    @js.native
-    def statOp(bucket: String, key: String): String = js.native
+    @scala.inline
+    def statOp(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("statOp")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @js.native
     trait ListPrefixOptions extends StObject {
       
       /**
         * 指定目录分隔符
         */
-      var delimiter: js.UndefOr[String] = js.native
+      var delimiter: js.UndefOr[String] = js.undefined
       
       /**
         * 每次返回的最大列举文件数量
         */
-      var limit: js.UndefOr[Double] = js.native
+      var limit: js.UndefOr[Double] = js.undefined
       
       /**
         * 上一次列举返回的位置标记
         */
-      var marker: js.UndefOr[js.Any] = js.native
+      var marker: js.UndefOr[js.Any] = js.undefined
       
       /**
         * 列举的文件前缀
         */
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
     }
     object ListPrefixOptions {
       
@@ -1477,52 +1230,51 @@ object mod {
       }
     }
     
-    @js.native
     trait PutPolicyOptions extends StObject {
       
-      var callbackBody: js.UndefOr[String] = js.native
+      var callbackBody: js.UndefOr[String] = js.undefined
       
-      var callbackBodyType: js.UndefOr[String] = js.native
+      var callbackBodyType: js.UndefOr[String] = js.undefined
       
-      var callbackFetchKey: js.UndefOr[Double] = js.native
+      var callbackFetchKey: js.UndefOr[Double] = js.undefined
       
-      var callbackHost: js.UndefOr[String] = js.native
+      var callbackHost: js.UndefOr[String] = js.undefined
       
-      var callbackUrl: js.UndefOr[String] = js.native
+      var callbackUrl: js.UndefOr[String] = js.undefined
       
-      var deleteAfterDays: js.UndefOr[Double] = js.native
+      var deleteAfterDays: js.UndefOr[Double] = js.undefined
       
-      var detectMime: js.UndefOr[Double] = js.native
+      var detectMime: js.UndefOr[Double] = js.undefined
       
-      var endUser: js.UndefOr[String] = js.native
+      var endUser: js.UndefOr[String] = js.undefined
       
-      var expires: js.UndefOr[Double] = js.native
+      var expires: js.UndefOr[Double] = js.undefined
       
-      var fileType: js.UndefOr[Double] = js.native
+      var fileType: js.UndefOr[Double] = js.undefined
       
-      var fsizeLimit: js.UndefOr[Double] = js.native
+      var fsizeLimit: js.UndefOr[Double] = js.undefined
       
-      var fsizeMin: js.UndefOr[Double] = js.native
+      var fsizeMin: js.UndefOr[Double] = js.undefined
       
-      var insertOnly: js.UndefOr[Double] = js.native
+      var insertOnly: js.UndefOr[Double] = js.undefined
       
-      var isPrefixalScope: js.UndefOr[Double] = js.native
+      var isPrefixalScope: js.UndefOr[Double] = js.undefined
       
-      var mimeLimit: js.UndefOr[String] = js.native
+      var mimeLimit: js.UndefOr[String] = js.undefined
       
-      var persistentNotifyUrl: js.UndefOr[String] = js.native
+      var persistentNotifyUrl: js.UndefOr[String] = js.undefined
       
-      var persistentOps: js.UndefOr[String] = js.native
+      var persistentOps: js.UndefOr[String] = js.undefined
       
-      var persistentPipeline: js.UndefOr[String] = js.native
+      var persistentPipeline: js.UndefOr[String] = js.undefined
       
-      var returnBody: js.UndefOr[String] = js.native
+      var returnBody: js.UndefOr[String] = js.undefined
       
-      var returnUrl: js.UndefOr[String] = js.native
+      var returnUrl: js.UndefOr[String] = js.undefined
       
-      var saveKey: js.UndefOr[String] = js.native
+      var saveKey: js.UndefOr[String] = js.undefined
       
-      var scope: js.UndefOr[String] = js.native
+      var scope: js.UndefOr[String] = js.undefined
     }
     object PutPolicyOptions {
       
@@ -1672,16 +1424,17 @@ object mod {
   
   object util {
     
-    @JSImport("qiniu", "util.base64ToUrlSafe")
+    @JSImport("qiniu", "util")
     @js.native
-    def base64ToUrlSafe(v: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("qiniu", "util.encodedEntry")
-    @js.native
-    def encodedEntry(bucket: String): String = js.native
-    @JSImport("qiniu", "util.encodedEntry")
-    @js.native
-    def encodedEntry(bucket: String, key: String): String = js.native
+    @scala.inline
+    def base64ToUrlSafe(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("base64ToUrlSafe")(v.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def encodedEntry(bucket: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("encodedEntry")(bucket.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def encodedEntry(bucket: String, key: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("encodedEntry")(bucket.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * 创建AccessToken凭证
@@ -1689,12 +1442,10 @@ object mod {
       * @param requestURI 请求URL
       * @param reqBody  请求Body，仅当请求的ContentType为application/x-www-form-urlencoded 时才需要传入该参数
       */
-    @JSImport("qiniu", "util.generateAccessToken")
-    @js.native
-    def generateAccessToken(mac: Mac, requestURI: String): String = js.native
-    @JSImport("qiniu", "util.generateAccessToken")
-    @js.native
-    def generateAccessToken(mac: Mac, requestURI: String, reqBody: String): String = js.native
+    @scala.inline
+    def generateAccessToken(mac: Mac, requestURI: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessToken")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def generateAccessToken(mac: Mac, requestURI: String, reqBody: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessToken")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * 创建AccessToken凭证
@@ -1704,33 +1455,25 @@ object mod {
       * @param reqContentType 请求类型，例如 application/json 或者  application/x-www-form-urlencoded
       * @param reqBody        请求Body，仅当请求的 ContentType 为 application/json 或者 application/x-www-form-urlencoded 时才需要传入该参数
       */
-    @JSImport("qiniu", "util.generateAccessTokenV2")
-    @js.native
-    def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String): String = js.native
-    @JSImport("qiniu", "util.generateAccessTokenV2")
-    @js.native
-    def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String, reqBody: String): String = js.native
+    @scala.inline
+    def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessTokenV2")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqMethod.asInstanceOf[js.Any], reqContentType.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def generateAccessTokenV2(mac: Mac, requestURI: String, reqMethod: String, reqContentType: String, reqBody: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("generateAccessTokenV2")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqMethod.asInstanceOf[js.Any], reqContentType.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("qiniu", "util.getAKFromUptoken")
-    @js.native
-    def getAKFromUptoken(uploadToken: String): String = js.native
+    @scala.inline
+    def getAKFromUptoken(uploadToken: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAKFromUptoken")(uploadToken.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("qiniu", "util.getBucketFromUptoken")
-    @js.native
-    def getBucketFromUptoken(uploadToken: String): String = js.native
+    @scala.inline
+    def getBucketFromUptoken(uploadToken: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBucketFromUptoken")(uploadToken.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("qiniu", "util.hmacSha1")
-    @js.native
-    def hmacSha1(encodedFlags: String, secretKey: String): String = js.native
-    @JSImport("qiniu", "util.hmacSha1")
-    @js.native
-    def hmacSha1(encodedFlags: String, secretKey: Buffer): String = js.native
-    @JSImport("qiniu", "util.hmacSha1")
-    @js.native
-    def hmacSha1(encodedFlags: Buffer, secretKey: String): String = js.native
-    @JSImport("qiniu", "util.hmacSha1")
-    @js.native
-    def hmacSha1(encodedFlags: Buffer, secretKey: Buffer): String = js.native
+    @scala.inline
+    def hmacSha1(encodedFlags: String, secretKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def hmacSha1(encodedFlags: String, secretKey: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def hmacSha1(encodedFlags: Buffer, secretKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def hmacSha1(encodedFlags: Buffer, secretKey: Buffer): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hmacSha1")(encodedFlags.asInstanceOf[js.Any], secretKey.asInstanceOf[js.Any])).asInstanceOf[String]
     
     /**
       * 校验七牛上传回调的Authorization
@@ -1739,28 +1482,22 @@ object mod {
       * @param reqBody 回调的URL中的requestURI 请求Body，仅当请求的ContentType为application/x-www-form-urlencoded时才需要传入该参数
       * @param callbackAuth 回调时请求的Authorization头部值
       */
-    @JSImport("qiniu", "util.isQiniuCallback")
-    @js.native
-    def isQiniuCallback(mac: Mac, requestURI: String, reqBody: String, callbackAuth: String): Boolean = js.native
-    @JSImport("qiniu", "util.isQiniuCallback")
-    @js.native
-    def isQiniuCallback(mac: Mac, requestURI: String, reqBody: Null, callbackAuth: String): Boolean = js.native
+    @scala.inline
+    def isQiniuCallback(mac: Mac, requestURI: String, reqBody: String, callbackAuth: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isQiniuCallback")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any], callbackAuth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def isQiniuCallback(mac: Mac, requestURI: String, reqBody: Null, callbackAuth: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isQiniuCallback")(mac.asInstanceOf[js.Any], requestURI.asInstanceOf[js.Any], reqBody.asInstanceOf[js.Any], callbackAuth.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
-    @JSImport("qiniu", "util.isTimestampExpired")
-    @js.native
-    def isTimestampExpired(timestamp: Double): Boolean = js.native
+    @scala.inline
+    def isTimestampExpired(timestamp: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isTimestampExpired")(timestamp.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("qiniu", "util.urlSafeBase64Decode")
-    @js.native
-    def urlSafeBase64Decode(fromStr: String): String = js.native
+    @scala.inline
+    def urlSafeBase64Decode(fromStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlSafeBase64Decode")(fromStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("qiniu", "util.urlSafeToBase64")
-    @js.native
-    def urlSafeToBase64(v: String): String = js.native
+    @scala.inline
+    def urlSafeToBase64(v: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlSafeToBase64")(v.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("qiniu", "util.urlsafeBase64Encode")
-    @js.native
-    def urlsafeBase64Encode(jsonFlags: String): String = js.native
+    @scala.inline
+    def urlsafeBase64Encode(jsonFlags: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("urlsafeBase64Encode")(jsonFlags.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   object zone {

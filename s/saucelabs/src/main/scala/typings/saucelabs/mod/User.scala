@@ -4,62 +4,61 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.saucelabs.saucelabsStrings.marketing
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait User
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var access_key: js.UndefOr[String] = js.native
+  var access_key: js.UndefOr[String] = js.undefined
   
-  var ancestor_allows_subaccounts: js.UndefOr[Boolean] = js.native
+  var ancestor_allows_subaccounts: js.UndefOr[Boolean] = js.undefined
   
-  var ancestor_concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.native
+  var ancestor_concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.undefined
   
-  var can_run_manual: js.UndefOr[Boolean] = js.native
+  var can_run_manual: js.UndefOr[Boolean] = js.undefined
   
-  var concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.native
+  var concurrency_limit: js.UndefOr[ConcurrencyLimit] = js.undefined
   
-  var creation_time: js.UndefOr[String] = js.native
+  var creation_time: js.UndefOr[String] = js.undefined
   
-  var domain: js.UndefOr[String] = js.native
+  var domain: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var entity_type: js.UndefOr[String] = js.native
+  var entity_type: js.UndefOr[String] = js.undefined
   
-  var first_name: js.UndefOr[String] = js.native
+  var first_name: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var is_admin: js.UndefOr[String] = js.native
+  var is_admin: js.UndefOr[String] = js.undefined
   
-  var is_sso: js.UndefOr[Boolean] = js.native
+  var is_sso: js.UndefOr[Boolean] = js.undefined
   
-  var last_name: js.UndefOr[String] = js.native
+  var last_name: js.UndefOr[String] = js.undefined
   
-  var manual_minutes: js.UndefOr[Double] = js.native
+  var manual_minutes: js.UndefOr[Double] = js.undefined
   
-  var minutes: js.UndefOr[Double] = js.native
+  var minutes: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
-  var prevent_emails: js.UndefOr[js.Array[marketing]] = js.native
+  var prevent_emails: js.UndefOr[js.Array[marketing]] = js.undefined
   
-  var subscribed: js.UndefOr[Boolean] = js.native
+  var subscribed: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var user_type: js.UndefOr[String] = js.native
+  var user_type: js.UndefOr[String] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
   
-  var verified: js.UndefOr[Boolean] = js.native
+  var verified: js.UndefOr[Boolean] = js.undefined
   
-  var vm_lockdown: js.UndefOr[Boolean] = js.native
+  var vm_lockdown: js.UndefOr[Boolean] = js.undefined
 }
 object User {
   

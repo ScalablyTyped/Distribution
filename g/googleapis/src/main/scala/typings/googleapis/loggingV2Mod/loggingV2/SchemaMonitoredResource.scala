@@ -3,7 +3,6 @@ package typings.googleapis.loggingV2Mod.loggingV2
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &quot;12345678901234&quot;,               &quot;zone&quot;:
   * &quot;us-central1-a&quot; }}
   */
-@js.native
 trait SchemaMonitoredResource extends StObject {
   
   /**
@@ -29,14 +27,14 @@ trait SchemaMonitoredResource extends StObject {
     * labels &quot;project_id&quot;, &quot;instance_id&quot;, and
     * &quot;zone&quot;.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * Required. The monitored resource type. This field must match the type
     * field of a MonitoredResourceDescriptor object. For example, the type of a
     * Compute Engine VM instance is gce_instance.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaMonitoredResource {
   

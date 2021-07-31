@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeSchemeForPoint
-  extends Object
+  extends StObject
+     with Object
      with SizeScheme {
   
   /**
@@ -17,56 +16,56 @@ trait SizeSchemeForPoint
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var color: Color_ = js.native
+  var color: Color_
   
   /**
     * The maximum size of a marker symbol in pixels or points representing features with high data values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var maxSize: Double = js.native
+  var maxSize: Double
   
   /**
     * The minimum size of a marker symbol in pixels or points representing features with low data values.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var minSize: Double = js.native
+  var minSize: Double
   
   /**
     * The color of the marker symbol used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var noDataColor: Color_ = js.native
+  var noDataColor: Color_
   
   /**
     * The size of the marker symbol (in pixels or points) used to indicate features with no data and features that are out of range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var noDataSize: Double = js.native
+  var noDataSize: Double
   
   /**
     * The opacity of the marker symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /**
     * Properties for defining the outline of the marker symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var outline: SizeSchemeForPointOutline = js.native
+  var outline: SizeSchemeForPointOutline
   
   /**
     * The default size of the marker symbol in pixels or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPoint)
     */
-  var size: Double = js.native
+  var size: Double
 }
 object SizeSchemeForPoint {
   

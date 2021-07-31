@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateProtectionResponse extends StObject {
   
   /**
     * The unique identifier (ID) for the Protection object that is created.
     */
-  var ProtectionId: js.UndefOr[typings.awsSdk.shieldMod.ProtectionId] = js.native
+  var ProtectionId: js.UndefOr[typings.awsSdk.shieldMod.ProtectionId] = js.undefined
 }
 object CreateProtectionResponse {
   

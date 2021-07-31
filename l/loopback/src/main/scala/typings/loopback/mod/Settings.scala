@@ -3,15 +3,13 @@ package typings.loopback.mod
 import typings.loopback.anon.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var acls: js.Array[ACL] = js.native
+  var acls: js.Array[ACL]
   
-  var http: Path = js.native
+  var http: Path
 }
 object Settings {
   

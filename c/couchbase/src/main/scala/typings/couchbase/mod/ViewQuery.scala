@@ -5,7 +5,6 @@ import typings.couchbase.mod.ViewQuery.Order
 import typings.couchbase.mod.ViewQuery.Update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -69,7 +68,7 @@ class ViewQuery () extends StObject {
     * Specifies a list of keys you wish to retrieve from the index.
     * @param keys
     */
-  def keys(key: js.Array[_]): ViewQuery = js.native
+  def keys(key: js.Array[js.Any]): ViewQuery = js.native
   
   /**
     * Specifies the maximum number of results to return.
@@ -97,12 +96,12 @@ class ViewQuery () extends StObject {
     */
   def range(start: js.Any, end: js.Any): ViewQuery = js.native
   def range(start: js.Any, end: js.Any, inclusive_end: Boolean): ViewQuery = js.native
-  def range(start: js.Any, end: js.Array[_]): ViewQuery = js.native
-  def range(start: js.Any, end: js.Array[_], inclusive_end: Boolean): ViewQuery = js.native
-  def range(start: js.Array[_], end: js.Any): ViewQuery = js.native
-  def range(start: js.Array[_], end: js.Any, inclusive_end: Boolean): ViewQuery = js.native
-  def range(start: js.Array[_], end: js.Array[_]): ViewQuery = js.native
-  def range(start: js.Array[_], end: js.Array[_], inclusive_end: Boolean): ViewQuery = js.native
+  def range(start: js.Any, end: js.Array[js.Any]): ViewQuery = js.native
+  def range(start: js.Any, end: js.Array[js.Any], inclusive_end: Boolean): ViewQuery = js.native
+  def range(start: js.Array[js.Any], end: js.Any): ViewQuery = js.native
+  def range(start: js.Array[js.Any], end: js.Any, inclusive_end: Boolean): ViewQuery = js.native
+  def range(start: js.Array[js.Any], end: js.Array[js.Any]): ViewQuery = js.native
+  def range(start: js.Array[js.Any], end: js.Array[js.Any], inclusive_end: Boolean): ViewQuery = js.native
   
   /**
     * Specifies whether to execute the map-reduce reduce step.
@@ -124,6 +123,10 @@ class ViewQuery () extends StObject {
 }
 object ViewQuery {
   
+  @JSImport("couchbase", "ViewQuery")
+  @js.native
+  val ^ : js.Any = js.native
+  
   @js.native
   sealed trait ErrorMode extends StObject
   /**
@@ -134,21 +137,25 @@ object ViewQuery {
   object ErrorMode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ErrorMode with Double] = js.native
+    def apply(value: Double): js.UndefOr[ErrorMode & Double] = js.native
     
     /**
       * Continues querying when an error occurs.
       */
     @js.native
-    sealed trait CONTINUE extends ErrorMode
-    /* 0 */ val CONTINUE: typings.couchbase.mod.ViewQuery.ErrorMode.CONTINUE with Double = js.native
+    sealed trait CONTINUE
+      extends StObject
+         with ErrorMode
+    /* 0 */ val CONTINUE: typings.couchbase.mod.ViewQuery.ErrorMode.CONTINUE & Double = js.native
     
     /**
       * Stops and errors query when an error occurs.
       */
     @js.native
-    sealed trait STOP extends ErrorMode
-    /* 1 */ val STOP: typings.couchbase.mod.ViewQuery.ErrorMode.STOP with Double = js.native
+    sealed trait STOP
+      extends StObject
+         with ErrorMode
+    /* 1 */ val STOP: typings.couchbase.mod.ViewQuery.ErrorMode.STOP & Double = js.native
   }
   
   @js.native
@@ -161,21 +168,25 @@ object ViewQuery {
   object Order extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Order with Double] = js.native
+    def apply(value: Double): js.UndefOr[Order & Double] = js.native
     
     /**
       * Orders with lower values first and higher values last.
       */
     @js.native
-    sealed trait ASCENDING extends Order
-    /* 0 */ val ASCENDING: typings.couchbase.mod.ViewQuery.Order.ASCENDING with Double = js.native
+    sealed trait ASCENDING
+      extends StObject
+         with Order
+    /* 0 */ val ASCENDING: typings.couchbase.mod.ViewQuery.Order.ASCENDING & Double = js.native
     
     /**
       * Orders with higher values first and lower values last.
       */
     @js.native
-    sealed trait DESCENDING extends Order
-    /* 1 */ val DESCENDING: typings.couchbase.mod.ViewQuery.Order.DESCENDING with Double = js.native
+    sealed trait DESCENDING
+      extends StObject
+         with Order
+    /* 1 */ val DESCENDING: typings.couchbase.mod.ViewQuery.Order.DESCENDING & Double = js.native
   }
   
   @js.native
@@ -188,28 +199,34 @@ object ViewQuery {
   object Update extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[Update with Double] = js.native
+    def apply(value: Double): js.UndefOr[Update & Double] = js.native
     
     /**
       * Forces the view to be indexed after the results of this query has been fetched.
       */
     @js.native
-    sealed trait AFTER extends Update
-    /* 2 */ val AFTER: typings.couchbase.mod.ViewQuery.Update.AFTER with Double = js.native
+    sealed trait AFTER
+      extends StObject
+         with Update
+    /* 2 */ val AFTER: typings.couchbase.mod.ViewQuery.Update.AFTER & Double = js.native
     
     /**
       * Causes the view to be fully indexed before results are retrieved.
       */
     @js.native
-    sealed trait BEFORE extends Update
-    /* 0 */ val BEFORE: typings.couchbase.mod.ViewQuery.Update.BEFORE with Double = js.native
+    sealed trait BEFORE
+      extends StObject
+         with Update
+    /* 0 */ val BEFORE: typings.couchbase.mod.ViewQuery.Update.BEFORE & Double = js.native
     
     /**
       * Allows the index to stay in whatever state it is already in prior retrieval of the query results.
       */
     @js.native
-    sealed trait NONE extends Update
-    /* 1 */ val NONE: typings.couchbase.mod.ViewQuery.Update.NONE with Double = js.native
+    sealed trait NONE
+      extends StObject
+         with Update
+    /* 1 */ val NONE: typings.couchbase.mod.ViewQuery.Update.NONE & Double = js.native
   }
   
   /**
@@ -218,7 +235,6 @@ object ViewQuery {
     * @param name The view to use.
     */
   /* static member */
-  @JSImport("couchbase", "ViewQuery.from")
-  @js.native
-  def from(ddoc: String, name: String): ViewQuery = js.native
+  @scala.inline
+  def from(ddoc: String, name: String): ViewQuery = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(ddoc.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ViewQuery]
 }

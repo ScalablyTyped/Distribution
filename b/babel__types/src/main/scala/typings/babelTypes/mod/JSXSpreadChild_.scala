@@ -3,27 +3,26 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.JSXSpreadChild
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait JSXSpreadChild_
-  extends Immutable
+- typings.babelTypes.mod._Node because Already inherited */ trait JSXSpreadChild_
+  extends StObject
      with BaseNode
+     with Immutable
      with JSX {
   
-  var expression: Expression = js.native
+  var expression: Expression
   
   @JSName("type")
-  var type_JSXSpreadChild_ : JSXSpreadChild = js.native
+  var type_JSXSpreadChild_ : JSXSpreadChild
 }
 object JSXSpreadChild_ {
   
   @scala.inline
-  def apply(expression: Expression, `type`: JSXSpreadChild): JSXSpreadChild_ = {
-    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(expression: Expression): JSXSpreadChild_ = {
+    val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("JSXSpreadChild")
     __obj.asInstanceOf[JSXSpreadChild_]
   }
   

@@ -2,24 +2,23 @@ package typings.naverWhale.whale.webRequest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAuthenticationChallengeDetails
-  extends typings.chrome.chrome.webRequest.WebResponseHeadersDetails {
+  extends StObject
+     with typings.chrome.chrome.webRequest.WebResponseHeadersDetails {
   
   /** The server requesting authentication. */
-  var challenger: typings.chrome.chrome.webRequest.WebAuthChallenger = js.native
+  var challenger: typings.chrome.chrome.webRequest.WebAuthChallenger
   
   /** True for Proxy-Authenticate, false for WWW-Authenticate. */
-  var isProxy: Boolean = js.native
+  var isProxy: Boolean
   
   /** The authentication realm provided by the server, if there is one. */
-  var realm: js.UndefOr[String] = js.native
+  var realm: js.UndefOr[String] = js.undefined
   
   /** The authentication scheme, e.g. Basic or Digest. */
-  var scheme: String = js.native
+  var scheme: String
 }
 object WebAuthenticationChallengeDetails {
   

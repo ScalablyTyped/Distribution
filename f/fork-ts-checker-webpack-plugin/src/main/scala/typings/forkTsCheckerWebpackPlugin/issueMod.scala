@@ -5,41 +5,35 @@ import typings.forkTsCheckerWebpackPlugin.issueLocationMod.IssueLocation
 import typings.forkTsCheckerWebpackPlugin.issueSeverityMod.IssueSeverity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issueMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "compareIssueLocations")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", JSImport.Namespace)
   @js.native
-  def compareIssueLocations(): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "compareIssueLocations")
-  @js.native
-  def compareIssueLocations(locationA: js.UndefOr[scala.Nothing], locationB: IssueLocation): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "compareIssueLocations")
-  @js.native
-  def compareIssueLocations(locationA: IssueLocation): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "compareIssueLocations")
-  @js.native
-  def compareIssueLocations(locationA: IssueLocation, locationB: IssueLocation): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "compareIssueSeverities")
-  @js.native
-  def compareIssueSeverities(severityA: IssueSeverity, severityB: IssueSeverity): Double = js.native
+  @scala.inline
+  def compareIssueLocations(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")().asInstanceOf[Double]
+  @scala.inline
+  def compareIssueLocations(locationA: Unit, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareIssueLocations(locationA: IssueLocation): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def compareIssueLocations(locationA: IssueLocation, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "deduplicateAndSortIssues")
-  @js.native
-  def deduplicateAndSortIssues(issues: js.Array[Issue]): js.Array[Issue] = js.native
+  @scala.inline
+  def compareIssueSeverities(severityA: IssueSeverity, severityB: IssueSeverity): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueSeverities")(severityA.asInstanceOf[js.Any], severityB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "formatIssueLocation")
-  @js.native
-  def formatIssueLocation(location: IssueLocation): String = js.native
+  @scala.inline
+  def deduplicateAndSortIssues(issues: js.Array[Issue]): js.Array[Issue] = ^.asInstanceOf[js.Dynamic].applyDynamic("deduplicateAndSortIssues")(issues.asInstanceOf[js.Any]).asInstanceOf[js.Array[Issue]]
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "isIssue")
-  @js.native
-  def isIssue(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/Issue.Issue */ Boolean = js.native
+  @scala.inline
+  def formatIssueLocation(location: IssueLocation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIssueLocation")(location.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue", "isIssueSeverity")
-  @js.native
-  def isIssueSeverity(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity.IssueSeverity */ Boolean = js.native
+  @scala.inline
+  def isIssue(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/Issue.Issue */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIssue")(value.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/Issue.Issue */ Boolean]
+  
+  @scala.inline
+  def isIssueSeverity(value: js.Any): /* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity.IssueSeverity */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIssueSeverity")(value.asInstanceOf[js.Any]).asInstanceOf[/* is fork-ts-checker-webpack-plugin.fork-ts-checker-webpack-plugin/lib/issue/IssueSeverity.IssueSeverity */ Boolean]
 }

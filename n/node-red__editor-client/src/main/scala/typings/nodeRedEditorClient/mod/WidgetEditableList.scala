@@ -17,11 +17,12 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.width
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait WidgetEditableList extends JQuery[HTMLElement] {
+trait WidgetEditableList
+  extends StObject
+     with JQuery[HTMLElement] {
   
   /**
     * Adds items contained in an array to the end of the list.

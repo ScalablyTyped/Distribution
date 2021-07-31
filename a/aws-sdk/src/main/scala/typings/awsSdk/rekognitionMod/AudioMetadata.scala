@@ -2,31 +2,29 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioMetadata extends StObject {
   
   /**
     * The audio codec used to encode or decode the audio stream. 
     */
-  var Codec: js.UndefOr[String] = js.native
+  var Codec: js.UndefOr[String] = js.undefined
   
   /**
     * The duration of the audio stream in milliseconds.
     */
-  var DurationMillis: js.UndefOr[ULong] = js.native
+  var DurationMillis: js.UndefOr[ULong] = js.undefined
   
   /**
     * The number of audio channels in the segment.
     */
-  var NumberOfChannels: js.UndefOr[ULong] = js.native
+  var NumberOfChannels: js.UndefOr[ULong] = js.undefined
   
   /**
     * The sample rate for the audio stream.
     */
-  var SampleRate: js.UndefOr[ULong] = js.native
+  var SampleRate: js.UndefOr[ULong] = js.undefined
 }
 object AudioMetadata {
   

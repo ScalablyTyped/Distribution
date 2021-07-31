@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApprovalRuleEventMetadata extends StObject {
   
   /**
     * The content of the approval rule.
     */
-  var approvalRuleContent: js.UndefOr[ApprovalRuleContent] = js.native
+  var approvalRuleContent: js.UndefOr[ApprovalRuleContent] = js.undefined
   
   /**
     * The system-generated ID of the approval rule.
     */
-  var approvalRuleId: js.UndefOr[ApprovalRuleId] = js.native
+  var approvalRuleId: js.UndefOr[ApprovalRuleId] = js.undefined
   
   /**
     * The name of the approval rule.
     */
-  var approvalRuleName: js.UndefOr[ApprovalRuleName] = js.native
+  var approvalRuleName: js.UndefOr[ApprovalRuleName] = js.undefined
 }
 object ApprovalRuleEventMetadata {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceRequest extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies an AWS resource.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
 }
 object ListTagsForResourceRequest {
   

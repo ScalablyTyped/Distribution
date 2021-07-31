@@ -5,23 +5,21 @@ import typings.subscribeUiEvent.subscribeUiEventStrings.x
 import typings.subscribeUiEvent.subscribeUiEventStrings.y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AxisIntention extends StObject {
     
-    var axisIntention: x | y | _empty = js.native
+    var axisIntention: x | y | _empty
     
-    var deltaX: Double = js.native
+    var deltaX: Double
     
-    var deltaY: Double = js.native
+    var deltaY: Double
     
-    var startX: Double = js.native
+    var startX: Double
     
-    var startY: Double = js.native
+    var startY: Double
   }
   object AxisIntention {
     
@@ -51,12 +49,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Delta extends StObject {
     
-    var delta: Double = js.native
+    var delta: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Delta {
     
@@ -77,12 +74,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -103,10 +99,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Remove extends StObject {
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object Remove {
     

@@ -3,32 +3,26 @@ package typings.cesium.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "ColorGeometryInstanceAttribute")
 @js.native
 class ColorGeometryInstanceAttribute () extends StObject {
   def this(red: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double) = this()
   def this(red: Double, green: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double) = this()
-  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double) = this()
+  def this(red: Unit, green: Double) = this()
   def this(red: Double, green: Double, blue: Double) = this()
-  def this(
-    red: js.UndefOr[scala.Nothing],
-    green: js.UndefOr[scala.Nothing],
-    blue: js.UndefOr[scala.Nothing],
-    alpha: Double
-  ) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
-  def this(red: js.UndefOr[scala.Nothing], green: Double, blue: Double, alpha: Double) = this()
-  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
-  def this(red: Double, green: js.UndefOr[scala.Nothing], blue: Double, alpha: Double) = this()
-  def this(red: Double, green: Double, blue: js.UndefOr[scala.Nothing], alpha: Double) = this()
+  def this(red: Double, green: Unit, blue: Double) = this()
+  def this(red: Unit, green: Double, blue: Double) = this()
+  def this(red: Unit, green: Unit, blue: Double) = this()
   def this(red: Double, green: Double, blue: Double, alpha: Double) = this()
+  def this(red: Double, green: Double, blue: Unit, alpha: Double) = this()
+  def this(red: Double, green: Unit, blue: Double, alpha: Double) = this()
+  def this(red: Double, green: Unit, blue: Unit, alpha: Double) = this()
+  def this(red: Unit, green: Double, blue: Double, alpha: Double) = this()
+  def this(red: Unit, green: Double, blue: Unit, alpha: Double) = this()
+  def this(red: Unit, green: Unit, blue: Double, alpha: Double) = this()
+  def this(red: Unit, green: Unit, blue: Unit, alpha: Double) = this()
   
   var componentDatatype: ComponentDatatype = js.native
   
@@ -40,16 +34,17 @@ class ColorGeometryInstanceAttribute () extends StObject {
 }
 object ColorGeometryInstanceAttribute {
   
-  /* static member */
-  @JSImport("cesium", "ColorGeometryInstanceAttribute.fromColor")
+  @JSImport("cesium", "ColorGeometryInstanceAttribute")
   @js.native
-  def fromColor(color: Color): ColorGeometryInstanceAttribute = js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("cesium", "ColorGeometryInstanceAttribute.toValue")
-  @js.native
-  def toValue(color: Color): Uint8Array = js.native
-  @JSImport("cesium", "ColorGeometryInstanceAttribute.toValue")
-  @js.native
-  def toValue(color: Color, result: Uint8Array): Uint8Array = js.native
+  @scala.inline
+  def fromColor(color: Color): ColorGeometryInstanceAttribute = ^.asInstanceOf[js.Dynamic].applyDynamic("fromColor")(color.asInstanceOf[js.Any]).asInstanceOf[ColorGeometryInstanceAttribute]
+  
+  /* static member */
+  @scala.inline
+  def toValue(color: Color): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(color.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  @scala.inline
+  def toValue(color: Color, result: Uint8Array): Uint8Array = (^.asInstanceOf[js.Dynamic].applyDynamic("toValue")(color.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Uint8Array]
 }

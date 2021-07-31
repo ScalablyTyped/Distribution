@@ -11,96 +11,94 @@ import typings.ionicCore.sanitizationMod.IonicSafeString
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonAlert extends StObject {
   
   /**
     * If `true`, the alert will animate.
     */
-  var animated: js.UndefOr[Boolean] = js.native
+  var animated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the alert will be dismissed when the backdrop is clicked.
     */
-  var backdropDismiss: js.UndefOr[Boolean] = js.native
+  var backdropDismiss: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Array of buttons to be added to the alert.
     */
-  var buttons: js.UndefOr[js.Array[AlertButton | String]] = js.native
+  var buttons: js.UndefOr[js.Array[AlertButton | String]] = js.undefined
   
   /**
     * Additional classes to apply for custom CSS. If multiple classes are provided they should be separated by spaces.
     */
-  var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+  var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Animation to use when the alert is presented.
     */
-  var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * The main title in the heading of the alert.
     */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /**
     * Array of input to show in the alert.
     */
-  var inputs: js.UndefOr[js.Array[AlertInput]] = js.native
+  var inputs: js.UndefOr[js.Array[AlertInput]] = js.undefined
   
   /**
     * If `true`, the keyboard will be automatically dismissed when the overlay is presented.
     */
-  var keyboardClose: js.UndefOr[Boolean] = js.native
+  var keyboardClose: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Animation to use when the alert is dismissed.
     */
-  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+  var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
   
   /**
     * The main message to be displayed in the alert. `message` can accept either plaintext or HTML as a string. To display characters normally reserved for HTML, they must be escaped. For example `<Ionic>` would become `&lt;Ionic&gt;`  For more information: [Security Documentation](https://ionicframework.com/docs/faq/security)
     */
-  var message: js.UndefOr[String | IonicSafeString] = js.native
+  var message: js.UndefOr[String | IonicSafeString] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * Emitted after the alert has dismissed.
     */
-  var onIonAlertDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonAlertDidDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted after the alert has presented.
     */
-  var onIonAlertDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonAlertDidPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * Emitted before the alert has dismissed.
     */
-  var onIonAlertWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[_]], Unit]] = js.native
+  var onIonAlertWillDismiss: js.UndefOr[js.Function1[/* event */ CustomEvent[OverlayEventDetail[js.Any]], Unit]] = js.undefined
   
   /**
     * Emitted before the alert has presented.
     */
-  var onIonAlertWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.native
+  var onIonAlertWillPresent: js.UndefOr[js.Function1[/* event */ CustomEvent[Unit], Unit]] = js.undefined
   
   /**
     * The subtitle in the heading of the alert. Displayed under the title.
     */
-  var subHeader: js.UndefOr[String] = js.native
+  var subHeader: js.UndefOr[String] = js.undefined
   
   /**
     * If `true`, the alert will be translucent. Only applies when the mode is `"ios"` and the device supports [`backdrop-filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/backdrop-filter#Browser_compatibility).
     */
-  var translucent: js.UndefOr[Boolean] = js.native
+  var translucent: js.UndefOr[Boolean] = js.undefined
 }
 object IonAlert {
   
@@ -189,7 +187,7 @@ object IonAlert {
     def setModeUndefined: Self = StObject.set(x, "mode", js.undefined)
     
     @scala.inline
-    def setOnIonAlertDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonAlertDidDismiss", js.Any.fromFunction1(value))
+    def setOnIonAlertDidDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonAlertDidDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonAlertDidDismissUndefined: Self = StObject.set(x, "onIonAlertDidDismiss", js.undefined)
@@ -201,7 +199,7 @@ object IonAlert {
     def setOnIonAlertDidPresentUndefined: Self = StObject.set(x, "onIonAlertDidPresent", js.undefined)
     
     @scala.inline
-    def setOnIonAlertWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[_]] => Unit): Self = StObject.set(x, "onIonAlertWillDismiss", js.Any.fromFunction1(value))
+    def setOnIonAlertWillDismiss(value: /* event */ CustomEvent[OverlayEventDetail[js.Any]] => Unit): Self = StObject.set(x, "onIonAlertWillDismiss", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnIonAlertWillDismissUndefined: Self = StObject.set(x, "onIonAlertWillDismiss", js.undefined)

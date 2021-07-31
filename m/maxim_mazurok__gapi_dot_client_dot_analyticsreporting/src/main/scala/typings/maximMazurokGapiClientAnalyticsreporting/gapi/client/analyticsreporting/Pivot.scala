@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pivot extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait Pivot extends StObject {
     * Dimension filters can be used to restrict the columns shown in the pivot region. For example if you have `ga:browser` as the requested dimension in the pivot region, and you specify
     * key filters to restrict `ga:browser` to only "IE" or "Firefox", then only those two browsers would show up as columns.
     */
-  var dimensionFilterClauses: js.UndefOr[js.Array[DimensionFilterClause]] = js.native
+  var dimensionFilterClauses: js.UndefOr[js.Array[DimensionFilterClause]] = js.undefined
   
   /**
     * A list of dimensions to show as pivot columns. A Pivot can have a maximum of 4 dimensions. Pivot dimensions are part of the restriction on the total number of dimensions allowed in
     * the request.
     */
-  var dimensions: js.UndefOr[js.Array[Dimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[Dimension]] = js.undefined
   
   /** Specifies the maximum number of groups to return. The default value is 10, also the maximum value is 1,000. */
-  var maxGroupCount: js.UndefOr[Double] = js.native
+  var maxGroupCount: js.UndefOr[Double] = js.undefined
   
   /** The pivot metrics. Pivot metrics are part of the restriction on total number of metrics allowed in the request. */
-  var metrics: js.UndefOr[js.Array[Metric]] = js.native
+  var metrics: js.UndefOr[js.Array[Metric]] = js.undefined
   
   /**
     * If k metrics were requested, then the response will contain some data-dependent multiple of k columns in the report. E.g., if you pivoted on the dimension `ga:browser` then you'd
@@ -34,7 +32,7 @@ trait Pivot extends StObject {
     * first value for Firefox, IE, and Chrome were 8, 2, 8, respectively, the order of columns would be Chrome, Firefox, IE. The following let you choose which of the groups of k columns
     * are included in the response.
     */
-  var startGroup: js.UndefOr[Double] = js.native
+  var startGroup: js.UndefOr[Double] = js.undefined
 }
 object Pivot {
   

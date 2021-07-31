@@ -2,17 +2,15 @@ package typings.reactGeosuggest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Lat extends StObject {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
   }
   object Lat {
     
@@ -33,18 +31,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofgeometry extends StObject {
     
-    val encoding: js.Any = js.native
+    val encoding: js.Any
     
-    val poly: js.Any = js.native
+    val poly: js.Any
     
     /**
       * Utility functions for computing geodesic angles, distances and areas.
       * The default radius is Earth's radius of 6378137 meters.
       */
-    val spherical: js.Any = js.native
+    val spherical: js.Any
   }
   object Typeofgeometry {
     
@@ -68,27 +65,26 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofmaps extends StObject {
     
-    val Data: js.Any = js.native
+    val Data: js.Any
     
-    val Marker: js.Any = js.native
+    val Marker: js.Any
     
-    val OverlayView: js.Any = js.native
+    val OverlayView: js.Any
     
     // TODO find source documentation
-    val adsense: js.Any = js.native
+    val adsense: js.Any
     
-    val drawing: js.Any = js.native
+    val drawing: js.Any
     
-    val event: js.Any = js.native
+    val event: js.Any
     
-    val geometry: Typeofgeometry = js.native
+    val geometry: Typeofgeometry
     
-    val places: js.Any = js.native
+    val places: js.Any
     
-    val visualization: js.Any = js.native
+    val visualization: js.Any
   }
   object Typeofmaps {
     

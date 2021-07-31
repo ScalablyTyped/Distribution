@@ -10,7 +10,6 @@ import typings.rx.Rx.internals.ScheduledItemStatic
 import typings.rx.anon.GetDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object internals {

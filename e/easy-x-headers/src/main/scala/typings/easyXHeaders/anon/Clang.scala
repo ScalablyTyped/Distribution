@@ -2,41 +2,39 @@ package typings.easyXHeaders.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Clang extends StObject {
   
-  var clang: Double = js.native
+  var clang: Double
   
-  var host_arch: String = js.native
+  var host_arch: String
   
-  var node_install_npm: Boolean = js.native
+  var node_install_npm: Boolean
   
-  var node_install_waf: Boolean = js.native
+  var node_install_waf: Boolean
   
-  var node_prefix: String = js.native
+  var node_prefix: String
   
-  var node_shared_openssl: Boolean = js.native
+  var node_shared_openssl: Boolean
   
-  var node_shared_v8: Boolean = js.native
+  var node_shared_v8: Boolean
   
-  var node_shared_zlib: Boolean = js.native
+  var node_shared_zlib: Boolean
   
-  var node_use_dtrace: Boolean = js.native
+  var node_use_dtrace: Boolean
   
-  var node_use_etw: Boolean = js.native
+  var node_use_etw: Boolean
   
-  var node_use_openssl: Boolean = js.native
+  var node_use_openssl: Boolean
   
-  var target_arch: String = js.native
+  var target_arch: String
   
-  var v8_no_strict_aliasing: Double = js.native
+  var v8_no_strict_aliasing: Double
   
-  var v8_use_snapshot: Boolean = js.native
+  var v8_use_snapshot: Boolean
   
-  var visibility: String = js.native
+  var visibility: String
 }
 object Clang {
   

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object ProxyConfiguration {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration]
   
   /**
     * Creates and returns a new ProxyConfiguration instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object ProxyConfiguration {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.createInRestCallActionUnderProxyConfiguration")
-  @js.native
-  def createInRestCallActionUnderProxyConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = js.native
+  @scala.inline
+  def createInRestCallActionUnderProxyConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.RestCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInRestCallActionUnderProxyConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration]
   
   /**
     * Creates and returns a new ProxyConfiguration instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object ProxyConfiguration {
     *  7.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.createInWebServiceCallActionUnderProxyConfiguration")
-  @js.native
-  def createInWebServiceCallActionUnderProxyConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = js.native
+  @scala.inline
+  def createInWebServiceCallActionUnderProxyConfiguration(container: typings.mendixmodelsdk.microflowsMod.microflows.WebServiceCallAction): typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWebServiceCallActionUnderProxyConfiguration")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.microflowsMod.microflows.ProxyConfiguration]
   
   /* static member */
   @JSImport("mendixmodelsdk", "microflows.ProxyConfiguration.structureTypeName")

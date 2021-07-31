@@ -4,16 +4,14 @@ import typings.formatjsIntlListformat.formatjsIntlListformatStrings.`best fit`
 import typings.formatjsIntlListformat.formatjsIntlListformatStrings.lookup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Pick<@formatjs/intl-listformat.@formatjs/intl-listformat/lib.IntlListFormatOptions, 'localeMatcher'> */
-  @js.native
   trait PickIntlListFormatOptions extends StObject {
     
-    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.native
+    var localeMatcher: js.UndefOr[(`best fit`) | lookup] = js.undefined
   }
   object PickIntlListFormatOptions {
     

@@ -9,7 +9,6 @@ import typings.std.HTMLFormElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fine-uploader/lib/core", "FineUploaderBasic")
@@ -40,36 +39,36 @@ class FineUploaderBasic () extends StObject {
     * @param string endpoint : The endpoint to send this file to
     */
   def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement]): Unit = js.native
-  def addFiles(
-    files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement],
-    params: js.UndefOr[scala.Nothing],
-    endpoint: String
-  ): Unit = js.native
   def addFiles(files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement], params: js.Any): Unit = js.native
   def addFiles(
     files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement],
     params: js.Any,
     endpoint: String
   ): Unit = js.native
+  def addFiles(
+    files: js.Array[Blob | File | HTMLCanvasElement | HTMLInputElement],
+    params: Unit,
+    endpoint: String
+  ): Unit = js.native
   def addFiles(files: BlobWrapper): Unit = js.native
-  def addFiles(files: BlobWrapper, params: js.UndefOr[scala.Nothing], endpoint: String): Unit = js.native
   def addFiles(files: BlobWrapper, params: js.Any): Unit = js.native
   def addFiles(files: BlobWrapper, params: js.Any, endpoint: String): Unit = js.native
+  def addFiles(files: BlobWrapper, params: Unit, endpoint: String): Unit = js.native
   def addFiles(files: CanvasWrapper): Unit = js.native
-  def addFiles(files: CanvasWrapper, params: js.UndefOr[scala.Nothing], endpoint: String): Unit = js.native
   def addFiles(files: CanvasWrapper, params: js.Any): Unit = js.native
   def addFiles(files: CanvasWrapper, params: js.Any, endpoint: String): Unit = js.native
+  def addFiles(files: CanvasWrapper, params: Unit, endpoint: String): Unit = js.native
   def addFiles(files: FileList): Unit = js.native
-  def addFiles(files: FileList, params: js.UndefOr[scala.Nothing], endpoint: String): Unit = js.native
   def addFiles(files: FileList, params: js.Any): Unit = js.native
   def addFiles(files: FileList, params: js.Any, endpoint: String): Unit = js.native
+  def addFiles(files: FileList, params: Unit, endpoint: String): Unit = js.native
   
   /**
     * Submit one or more canned/initial files to the uploader
     *
     * @param any[] initialFiles : An array of objects that describe files already on the server
     */
-  def addInitialFiles(initialFiles: js.Array[_]): Unit = js.native
+  def addInitialFiles(initialFiles: js.Array[js.Any]): Unit = js.native
   
   /**
     * Attach an event handler to this element for a specific DOM event.
@@ -78,7 +77,7 @@ class FineUploaderBasic () extends StObject {
     * @param function handler : A function that will be invoked whenever the respective event occurs
     * @returns function : Call this function to detach the event
     */
-  def attach(event: String, handler: js.Function0[_ | Unit]): js.Function0[_ | Unit] = js.native
+  def attach(event: String, handler: js.Function0[js.Any | Unit]): js.Function0[js.Any | Unit] = js.native
   
   /**
     * Shim for `Function.prototype.bind`
@@ -91,7 +90,7 @@ class FineUploaderBasic () extends StObject {
     * @param Object context : The context the function will assume
     * @returns function : A new function, same as the old one, but bound to the passed in `context`
     */
-  def bind(oldFunc: js.Function0[_ | Unit], context: js.Any): js.Function0[_] = js.native
+  def bind(oldFunc: js.Function0[js.Any | Unit], context: js.Any): js.Function0[js.Any] = js.native
   
   /**
     * Cancel the queued or currently uploading item which corresponds to the id
@@ -162,7 +161,7 @@ class FineUploaderBasic () extends StObject {
     * @param function originalHandler : A function that will be detached from this event
     * @returns Object : Call this function to detach the event
     */
-  def detach(event: String, originalHandler: js.Function0[_ | Unit]): this.type = js.native
+  def detach(event: String, originalHandler: js.Function0[js.Any | Unit]): this.type = js.native
   
   /**
     * Draws a thumbnail
@@ -179,29 +178,7 @@ class FineUploaderBasic () extends StObject {
     *                   If the thumbnail cannot be rendered, failure callbacks will be invoked instead, passing an object with `container` and `error` properties.
     */
   def drawThumbnail(id: Double, targetContainer: HTMLElement): PromiseOptions = js.native
-  def drawThumbnail(
-    id: Double,
-    targetContainer: HTMLElement,
-    maxSize: js.UndefOr[scala.Nothing],
-    fromServer: js.UndefOr[scala.Nothing],
-    customResizer: CustomResizerCallBack
-  ): PromiseOptions = js.native
-  def drawThumbnail(id: Double, targetContainer: HTMLElement, maxSize: js.UndefOr[scala.Nothing], fromServer: Boolean): PromiseOptions = js.native
-  def drawThumbnail(
-    id: Double,
-    targetContainer: HTMLElement,
-    maxSize: js.UndefOr[scala.Nothing],
-    fromServer: Boolean,
-    customResizer: CustomResizerCallBack
-  ): PromiseOptions = js.native
   def drawThumbnail(id: Double, targetContainer: HTMLElement, maxSize: Double): PromiseOptions = js.native
-  def drawThumbnail(
-    id: Double,
-    targetContainer: HTMLElement,
-    maxSize: Double,
-    fromServer: js.UndefOr[scala.Nothing],
-    customResizer: CustomResizerCallBack
-  ): PromiseOptions = js.native
   def drawThumbnail(id: Double, targetContainer: HTMLElement, maxSize: Double, fromServer: Boolean): PromiseOptions = js.native
   def drawThumbnail(
     id: Double,
@@ -210,15 +187,40 @@ class FineUploaderBasic () extends StObject {
     fromServer: Boolean,
     customResizer: CustomResizerCallBack
   ): PromiseOptions = js.native
+  def drawThumbnail(
+    id: Double,
+    targetContainer: HTMLElement,
+    maxSize: Double,
+    fromServer: Unit,
+    customResizer: CustomResizerCallBack
+  ): PromiseOptions = js.native
+  def drawThumbnail(id: Double, targetContainer: HTMLElement, maxSize: Unit, fromServer: Boolean): PromiseOptions = js.native
+  def drawThumbnail(
+    id: Double,
+    targetContainer: HTMLElement,
+    maxSize: Unit,
+    fromServer: Boolean,
+    customResizer: CustomResizerCallBack
+  ): PromiseOptions = js.native
+  def drawThumbnail(
+    id: Double,
+    targetContainer: HTMLElement,
+    maxSize: Unit,
+    fromServer: Unit,
+    customResizer: CustomResizerCallBack
+  ): PromiseOptions = js.native
   
-  def each(iterable: js.Any, callback: js.Function2[/* index */ Double, /* item */ js.Any, _ | Unit]): js.Function0[_ | Unit] = js.native
+  def each(iterable: js.Any, callback: js.Function2[/* index */ Double, /* item */ js.Any, js.Any | Unit]): js.Function0[js.Any | Unit] = js.native
   /**
     * Iterates through a collection, passing the key and value into the provided callback. `return false;` to stop iteration.
     *
     * @param Array or Object :
     * @param function callback : A function that will be called for each item returned by looping through the iterable. This function takes an index and an item.
     */
-  def each(iterable: js.Array[_], callback: js.Function2[/* index */ Double, /* item */ js.Any, _ | Unit]): js.Function0[_ | Unit] = js.native
+  def each(
+    iterable: js.Array[js.Any],
+    callback: js.Function2[/* index */ Double, /* item */ js.Any, js.Any | Unit]
+  ): js.Function0[js.Any | Unit] = js.native
   
   /**
     * Shallowly copies the parameters of secondobj to firstobj. if extendnested is true then a deep-copy is performed.
@@ -390,8 +392,8 @@ class FineUploaderBasic () extends StObject {
     * @param number startingIndex : the index to search from
     * @returns number : The index of `item` in the array
     */
-  def indexOf(array: js.Array[_], item: js.Any): Double = js.native
-  def indexOf(array: js.Array[_], item: js.Any, startingIndex: Double): Double = js.native
+  def indexOf(array: js.Array[js.Any], item: js.Any): Double = js.native
+  def indexOf(array: js.Array[js.Any], item: js.Any, startingIndex: Double): Double = js.native
   
   /**
     * Inserts the element directly before the passed element in the DOM.

@@ -6,38 +6,33 @@ import org.scalablytyped.runtime.Instantiable3
 import org.scalablytyped.runtime.Instantiable4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait DocConstructor
-  extends Instantiable1[/* text */ String, typings.codemirror.mod.Doc]
-     with Instantiable2[/* text */ String, /* mode */ js.Any, typings.codemirror.mod.Doc]
+  extends StObject
+     with Instantiable1[/* text */ String, Doc]
+     with Instantiable2[/* text */ String, /* mode */ js.Any, Doc]
      with Instantiable3[
       /* text */ String, 
-      js.UndefOr[/* mode */ js.Any], 
+      (/* mode */ js.Any) | (/* mode */ Unit), 
       /* firstLineNumber */ Double, 
-      typings.codemirror.mod.Doc
+      Doc
     ]
      with Instantiable4[
       /* text */ String, 
-      js.UndefOr[/* mode */ js.Any], 
-      js.UndefOr[/* firstLineNumber */ Double], 
+      (/* mode */ js.Any) | (/* mode */ Unit), 
+      (/* firstLineNumber */ Double) | (/* firstLineNumber */ Unit), 
       /* lineSep */ String, 
-      typings.codemirror.mod.Doc
+      Doc
     ] {
   
-  def apply(text: String): typings.codemirror.mod.Doc = js.native
-  def apply(
-    text: String,
-    mode: js.UndefOr[scala.Nothing],
-    firstLineNumber: js.UndefOr[scala.Nothing],
-    lineSep: String
-  ): typings.codemirror.mod.Doc = js.native
-  def apply(text: String, mode: js.UndefOr[scala.Nothing], firstLineNumber: Double): typings.codemirror.mod.Doc = js.native
-  def apply(text: String, mode: js.UndefOr[scala.Nothing], firstLineNumber: Double, lineSep: String): typings.codemirror.mod.Doc = js.native
-  def apply(text: String, mode: js.Any): typings.codemirror.mod.Doc = js.native
-  def apply(text: String, mode: js.Any, firstLineNumber: js.UndefOr[scala.Nothing], lineSep: String): typings.codemirror.mod.Doc = js.native
-  def apply(text: String, mode: js.Any, firstLineNumber: Double): typings.codemirror.mod.Doc = js.native
-  def apply(text: String, mode: js.Any, firstLineNumber: Double, lineSep: String): typings.codemirror.mod.Doc = js.native
+  def apply(text: String): Doc = js.native
+  def apply(text: String, mode: js.Any): Doc = js.native
+  def apply(text: String, mode: js.Any, firstLineNumber: Double): Doc = js.native
+  def apply(text: String, mode: js.Any, firstLineNumber: Double, lineSep: String): Doc = js.native
+  def apply(text: String, mode: js.Any, firstLineNumber: Unit, lineSep: String): Doc = js.native
+  def apply(text: String, mode: Unit, firstLineNumber: Double): Doc = js.native
+  def apply(text: String, mode: Unit, firstLineNumber: Double, lineSep: String): Doc = js.native
+  def apply(text: String, mode: Unit, firstLineNumber: Unit, lineSep: String): Doc = js.native
 }

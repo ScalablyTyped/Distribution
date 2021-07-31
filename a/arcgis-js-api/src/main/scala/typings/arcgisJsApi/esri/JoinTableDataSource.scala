@@ -7,53 +7,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JoinTableDataSource extends Object {
+trait JoinTableDataSource
+  extends StObject
+     with Object {
   
   /**
     * The type of join that will be performed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var joinType: `left-outer-join` | `left-inner-join` = js.native
+  var joinType: `left-outer-join` | `left-inner-join`
   
   /**
     * The field name used for joining or matching records in the left table to records in the right table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var leftTableKey: String = js.native
+  var leftTableKey: String
   
   /**
     * The left table for joining to the right table source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var leftTableSource: DynamicMapLayer | DynamicDataLayer = js.native
+  var leftTableSource: DynamicMapLayer | DynamicDataLayer
   
   /**
     * The field name used for joining or matching records in the right table to records in the left table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var rightTableKey: String = js.native
+  var rightTableKey: String
   
   /**
     * The right table for joining to the left table source.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var rightTableSource: DynamicMapLayer | DynamicDataLayer = js.native
+  var rightTableSource: DynamicMapLayer | DynamicDataLayer
   
   /**
     * This value is always `join-table` and is inferred when other join table properties of this object are set.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Sublayer.html#JoinTableDataSource)
     */
-  var `type`: `join-table` = js.native
+  var `type`: `join-table`
 }
 object JoinTableDataSource {
   
@@ -66,11 +66,10 @@ object JoinTableDataSource {
     leftTableSource: DynamicMapLayer | DynamicDataLayer,
     propertyIsEnumerable: PropertyKey => Boolean,
     rightTableKey: String,
-    rightTableSource: DynamicMapLayer | DynamicDataLayer,
-    `type`: `join-table`
+    rightTableSource: DynamicMapLayer | DynamicDataLayer
   ): JoinTableDataSource = {
     val __obj = js.Dynamic.literal(constructor = constructor.asInstanceOf[js.Any], hasOwnProperty = js.Any.fromFunction1(hasOwnProperty), joinType = joinType.asInstanceOf[js.Any], leftTableKey = leftTableKey.asInstanceOf[js.Any], leftTableSource = leftTableSource.asInstanceOf[js.Any], propertyIsEnumerable = js.Any.fromFunction1(propertyIsEnumerable), rightTableKey = rightTableKey.asInstanceOf[js.Any], rightTableSource = rightTableSource.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("join-table")
     __obj.asInstanceOf[JoinTableDataSource]
   }
   

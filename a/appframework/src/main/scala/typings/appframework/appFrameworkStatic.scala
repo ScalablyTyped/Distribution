@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -73,9 +72,9 @@ trait appFrameworkStatic extends StObject {
     * @param {Array} arguments
     */
   def asap(callback: js.Function): Unit = js.native
-  def asap(callback: js.Function, context: js.UndefOr[scala.Nothing], args: js.Array[_]): Unit = js.native
   def asap(callback: js.Function, context: js.Any): Unit = js.native
-  def asap(callback: js.Function, context: js.Any, args: js.Array[_]): Unit = js.native
+  def asap(callback: js.Function, context: js.Any, args: js.Array[js.Any]): Unit = js.native
+  def asap(callback: js.Function, context: Unit, args: js.Array[js.Any]): Unit = js.native
   
   /* The following are for events on objects */
   /**
@@ -101,9 +100,9 @@ trait appFrameworkStatic extends StObject {
     * @title $.cleanUpContent(node,itself,kill)
     */
   def cleanUpContent(node: HTMLElement): Unit = js.native
-  def cleanUpContent(node: HTMLElement, itself: js.UndefOr[scala.Nothing], kill: Boolean): Unit = js.native
   def cleanUpContent(node: HTMLElement, itself: Boolean): Unit = js.native
   def cleanUpContent(node: HTMLElement, itself: Boolean, kill: Boolean): Unit = js.native
+  def cleanUpContent(node: HTMLElement, itself: Unit, kill: Boolean): Unit = js.native
   
   /**
     * $.create - a faster alertnative to $("<div id='main'>this is some text</div>");
@@ -119,7 +118,7 @@ trait appFrameworkStatic extends StObject {
   def create(`type`: String): appFrameworkCollection = js.native
   def create(`type`: String, params: js.Any): appFrameworkCollection = js.native
   
-  def each(collection: js.Any, fn: js.Function2[/* key */ String, /* value */ js.Any, _]): Unit = js.native
+  def each(collection: js.Any, fn: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): Unit = js.native
   /**
     * Iterates through elements and executes a callback.  Returns if false
     ```
@@ -130,7 +129,7 @@ trait appFrameworkStatic extends StObject {
     * @return {Array} elements
     * @title $.each(elements,callback)
     */
-  def each(collection: js.Array[_], fn: js.Function2[/* index */ Double, /* item */ js.Any, _]): Unit = js.native
+  def each(collection: js.Array[js.Any], fn: js.Function2[/* index */ Double, /* item */ js.Any, js.Any]): Unit = js.native
   
   /**
     * Extends an object with additional arguments
@@ -279,7 +278,7 @@ trait appFrameworkStatic extends StObject {
     * @return {Object} appframework object with elements in it
     * @title $.map(elements,callback)
     */
-  def map(collection: js.Array[_], fn: js.Function2[/* item */ js.Any, /* index */ Double, _]): js.Array[_] = js.native
+  def map(collection: js.Array[js.Any], fn: js.Function2[/* item */ js.Any, /* index */ Double, js.Any]): js.Array[js.Any] = js.native
   
   /**
     * Helper function to parse the user agent.  Sets the following
@@ -444,7 +443,7 @@ trait appFrameworkStatic extends StObject {
     * @title $.trigger(object,event,argments);
     */
   def trigger(`object`: js.Any, event: String): Unit = js.native
-  def trigger(`object`: js.Any, event: String, args: js.Array[_]): Unit = js.native
+  def trigger(`object`: js.Any, event: String, args: js.Array[js.Any]): Unit = js.native
   
   /**
     * Unbind an event to an object instead of a DOM Node

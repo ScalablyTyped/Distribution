@@ -6,7 +6,6 @@ import typings.braintreeWeb.anon.PostalCode
 import typings.braintreeWeb.coreMod.callback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -35,7 +34,7 @@ object clientMod {
       * });
       */
     def create(options: Authorization): js.Promise[Client] = js.native
-    def create(options: Authorization, callback: callback[_]): Unit = js.native
+    def create(options: Authorization, callback: callback[js.Any]): Unit = js.native
     
     /**
       * Returns a copy of the configuration values.
@@ -84,17 +83,16 @@ object clientMod {
       *   });
       * });
       */
-    def request(options: Data, callback: callback[_]): Unit = js.native
+    def request(options: Data, callback: callback[js.Any]): Unit = js.native
   }
   
-  @js.native
   trait ClientAnalyticsMetadata extends StObject {
     
-    var merchantAppId: String = js.native
+    var merchantAppId: String
     
-    var sdkVersion: String = js.native
+    var sdkVersion: String
     
-    var sessionId: String = js.native
+    var sessionId: String
   }
   object ClientAnalyticsMetadata {
     
@@ -118,14 +116,13 @@ object clientMod {
     }
   }
   
-  @js.native
   trait Configuration extends StObject {
     
-    var analyticsMetadata: ClientAnalyticsMetadata = js.native
+    var analyticsMetadata: ClientAnalyticsMetadata
     
-    var client: Client = js.native
+    var client: Client
     
-    var gatewayConfiguration: js.Any = js.native
+    var gatewayConfiguration: js.Any
   }
   object Configuration {
     
@@ -149,16 +146,15 @@ object clientMod {
     }
   }
   
-  @js.native
   trait CreditCardInfo extends StObject {
     
-    var billingAddress: PostalCode = js.native
+    var billingAddress: PostalCode
     
-    var cvv: String = js.native
+    var cvv: String
     
-    var expirationDate: String = js.native
+    var expirationDate: String
     
-    var number: String = js.native
+    var number: String
   }
   object CreditCardInfo {
     

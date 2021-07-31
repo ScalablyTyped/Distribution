@@ -2,39 +2,37 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
-  var artifact: Location = js.native
+  var artifact: Location
   
-  var `build-complete`: Boolean = js.native
+  var `build-complete`: Boolean
   
-  var `build-number`: Double = js.native
+  var `build-number`: Double
   
-  var `build-start-time`: String = js.native
+  var `build-start-time`: String
   
-  var cache: Type = js.native
+  var cache: Type
   
-  var environment: Computetype = js.native
+  var environment: Computetype
   
-  var initiator: String = js.native
+  var initiator: String
   
-  var logs: Deeplink = js.native
+  var logs: Deeplink
   
-  var phases: js.Array[Durationinseconds] = js.native
+  var phases: js.Array[Durationinseconds]
   
-  var `project-file-system-locations`: js.Array[js.Any] = js.native
+  var `project-file-system-locations`: js.Array[js.Any]
   
-  var `queued-timeout-in-minutes`: Double = js.native
+  var `queued-timeout-in-minutes`: Double
   
-  var source: Buildspec = js.native
+  var source: Buildspec
   
-  var `source-version`: String = js.native
+  var `source-version`: String
   
-  var `timeout-in-minutes`: Double = js.native
+  var `timeout-in-minutes`: Double
 }
 object Artifact {
   

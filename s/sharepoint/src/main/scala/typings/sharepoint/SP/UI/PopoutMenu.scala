@@ -3,15 +3,15 @@ package typings.sharepoint.SP.UI
 import typings.microsoftAjax.Sys.IDisposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopoutMenu extends IDisposable {
+trait PopoutMenu
+  extends StObject
+     with IDisposable {
   
-  def closeMenu(): Unit = js.native
+  def closeMenu(): Unit
   
-  def launchMenu(): Unit = js.native
+  def launchMenu(): Unit
 }
 object PopoutMenu {
   

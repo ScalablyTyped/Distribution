@@ -9,7 +9,6 @@ import typings.raygun.typesMod.RequestParams
 import typings.raygun.typesMod.Tag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object raygunMessageBuilderMod {

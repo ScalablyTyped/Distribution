@@ -7,7 +7,6 @@ import typings.googleapis.storageV1Mod.storageV1.Options
 import typings.googleapis.storageV1Mod.storageV1.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

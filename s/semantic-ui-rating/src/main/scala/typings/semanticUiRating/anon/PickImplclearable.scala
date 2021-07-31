@@ -3,14 +3,12 @@ package typings.semanticUiRating.anon
 import typings.semanticUiRating.semanticUiRatingStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-rating.SemanticUI.RatingSettings._Impl, 'clearable'> */
-@js.native
 trait PickImplclearable extends StObject {
   
-  var clearable: auto | Boolean = js.native
+  var clearable: auto | Boolean
 }
 object PickImplclearable {
   

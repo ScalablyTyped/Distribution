@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,5 +14,4 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * https://cloud.google.com/terms/service-terms Only a single instance of this
   * action can be specified. Compatible with: Inspect
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2PublishSummaryToCscc extends StObject

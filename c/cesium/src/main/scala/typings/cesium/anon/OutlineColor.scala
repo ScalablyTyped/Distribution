@@ -4,31 +4,29 @@ import typings.cesium.mod.MaterialProperty
 import typings.cesium.mod.Property
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutlineColor extends StObject {
   
-  var fill: js.UndefOr[Property] = js.native
+  var fill: js.UndefOr[Property] = js.undefined
   
-  var material: js.UndefOr[MaterialProperty] = js.native
+  var material: js.UndefOr[MaterialProperty] = js.undefined
   
-  var outline: js.UndefOr[Property] = js.native
+  var outline: js.UndefOr[Property] = js.undefined
   
-  var outlineColor: js.UndefOr[Property] = js.native
+  var outlineColor: js.UndefOr[Property] = js.undefined
   
-  var outlineWidth: js.UndefOr[Property] = js.native
+  var outlineWidth: js.UndefOr[Property] = js.undefined
   
-  var radii: js.UndefOr[Property] = js.native
+  var radii: js.UndefOr[Property] = js.undefined
   
-  var show: js.UndefOr[Property] = js.native
+  var show: js.UndefOr[Property] = js.undefined
   
-  var slicePartitions: js.UndefOr[Property] = js.native
+  var slicePartitions: js.UndefOr[Property] = js.undefined
   
-  var stackPartitions: js.UndefOr[Property] = js.native
+  var stackPartitions: js.UndefOr[Property] = js.undefined
   
-  var subdivisions: js.UndefOr[Property] = js.native
+  var subdivisions: js.UndefOr[Property] = js.undefined
 }
 object OutlineColor {
   

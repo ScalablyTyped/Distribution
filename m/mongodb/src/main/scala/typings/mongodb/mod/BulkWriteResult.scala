@@ -2,54 +2,52 @@ package typings.mongodb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkWriteResult extends StObject {
   
   // Returns an array of all inserted ids
-  def getInsertedIds(): js.Array[js.Object] = js.native
+  def getInsertedIds(): js.Array[js.Object]
   
   // Retrieve lastOp if available
-  def getLastOp(): js.Object = js.native
+  def getLastOp(): js.Object
   
   // Returns raw internal result
-  def getRawResponse(): js.Object = js.native
+  def getRawResponse(): js.Object
   
   /**
     * Returns the upserted id at the given index
     * @param index the number of the upserted id to return, returns `undefined` if no result for passed in index
     */
-  def getUpsertedIdAt(index: scala.Double): BulkWriteResultUpsertedIdObject = js.native
+  def getUpsertedIdAt(index: scala.Double): BulkWriteResultUpsertedIdObject
   
   // Returns an array of all upserted ids
-  def getUpsertedIds(): js.Array[BulkWriteResultUpsertedIdObject] = js.native
+  def getUpsertedIds(): js.Array[BulkWriteResultUpsertedIdObject]
   
   // Retrieve the write concern error if any
-  def getWriteConcernError(): WriteConcernError = js.native
+  def getWriteConcernError(): WriteConcernError
   
   /**
     * Returns a specific write error object
     * @param index of the write error to return, returns `null` if there is no result for passed in index
     */
-  def getWriteErrorAt(index: scala.Double): WriteError = js.native
+  def getWriteErrorAt(index: scala.Double): WriteError
   
   // Returns the number of write errors off the bulk operation
-  def getWriteErrorCount(): scala.Double = js.native
+  def getWriteErrorCount(): scala.Double
   
   // Retrieve all write errors
-  def getWriteErrors(): js.Array[js.Object] = js.native
+  def getWriteErrors(): js.Array[js.Object]
   
   // Returns `true` if the bulk operation contains a write error
-  def hasWriteErrors(): Boolean = js.native
+  def hasWriteErrors(): Boolean
   
   /**
     * The number of documents inserted, excluding upserted documents.
     *
     * @see {@link nUpserted} for the number of documents inserted through an upsert.
     */
-  var nInserted: scala.Double = js.native
+  var nInserted: scala.Double
   
   /**
     * The number of documents selected for update.
@@ -58,7 +56,7 @@ trait BulkWriteResult extends StObject {
     * e.g. `$set` expression updates the value to the current value,
     * {@link nMatched} can be greater than {@link nModified}.
     */
-  var nMatched: scala.Double = js.native
+  var nMatched: scala.Double
   
   /**
     * The number of existing documents updated.
@@ -67,23 +65,23 @@ trait BulkWriteResult extends StObject {
     * such as setting the value of the field to its current value,
     * {@link nModified} can be less than {@link nMatched}
     */
-  var nModified: scala.Double = js.native
+  var nModified: scala.Double
   
   /**
     * The number of documents removed.
     */
-  var nRemoved: scala.Double = js.native
+  var nRemoved: scala.Double
   
   /**
     * The number of documents inserted by an
     * [upsert]{@link https://docs.mongodb.com/manual/reference/method/db.collection.update/#upsert-parameter}.
     */
-  var nUpserted: scala.Double = js.native
+  var nUpserted: scala.Double
   
   /**
     * Evaluates to `true` if the bulk operation correctly executes
     */
-  var ok: Boolean = js.native
+  var ok: Boolean
 }
 object BulkWriteResult {
   

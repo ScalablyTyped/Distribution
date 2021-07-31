@@ -2,16 +2,14 @@ package typings.awsSdk.datasyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskSchedule extends StObject {
   
   /**
     * A cron expression that specifies when AWS DataSync initiates a scheduled transfer from a source to a destination location. 
     */
-  var ScheduleExpression: ScheduleExpressionCron = js.native
+  var ScheduleExpression: ScheduleExpressionCron
 }
 object TaskSchedule {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceCount extends StObject {
   
   /**
     * The number of listed Reserved Instances in the state specified by the state.
     */
-  var InstanceCount: js.UndefOr[Integer] = js.native
+  var InstanceCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The states of the listed Reserved Instances.
     */
-  var State: js.UndefOr[ListingState] = js.native
+  var State: js.UndefOr[ListingState] = js.undefined
 }
 object InstanceCount {
   

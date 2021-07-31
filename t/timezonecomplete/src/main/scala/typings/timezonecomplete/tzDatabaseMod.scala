@@ -5,10 +5,13 @@ import typings.timezonecomplete.basicsMod.WeekDay
 import typings.timezonecomplete.durationMod.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tzDatabaseMod {
+  
+  @JSImport("timezonecomplete/dist/lib/tz-database", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait AtType extends StObject
@@ -17,28 +20,34 @@ object tzDatabaseMod {
   object AtType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AtType with Double] = js.native
+    def apply(value: Double): js.UndefOr[AtType & Double] = js.native
     
     /**
       * Local time (no DST)
       */
     @js.native
-    sealed trait Standard extends AtType
-    /* 0 */ val Standard: typings.timezonecomplete.tzDatabaseMod.AtType.Standard with Double = js.native
+    sealed trait Standard
+      extends StObject
+         with AtType
+    /* 0 */ val Standard: typings.timezonecomplete.tzDatabaseMod.AtType.Standard & Double = js.native
     
     /**
       * Utc time
       */
     @js.native
-    sealed trait Utc extends AtType
-    /* 2 */ val Utc: typings.timezonecomplete.tzDatabaseMod.AtType.Utc with Double = js.native
+    sealed trait Utc
+      extends StObject
+         with AtType
+    /* 2 */ val Utc: typings.timezonecomplete.tzDatabaseMod.AtType.Utc & Double = js.native
     
     /**
       * Wall clock time (local time with DST)
       */
     @js.native
-    sealed trait Wall extends AtType
-    /* 1 */ val Wall: typings.timezonecomplete.tzDatabaseMod.AtType.Wall with Double = js.native
+    sealed trait Wall
+      extends StObject
+         with AtType
+    /* 1 */ val Wall: typings.timezonecomplete.tzDatabaseMod.AtType.Wall & Double = js.native
   }
   
   @js.native
@@ -48,21 +57,25 @@ object tzDatabaseMod {
   object NormalizeOption extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[NormalizeOption with Double] = js.native
+    def apply(value: Double): js.UndefOr[NormalizeOption & Double] = js.native
     
     /**
       * Normalize non-existing times by SUBTRACTING the DST offset
       */
     @js.native
-    sealed trait Down extends NormalizeOption
-    /* 1 */ val Down: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Down with Double = js.native
+    sealed trait Down
+      extends StObject
+         with NormalizeOption
+    /* 1 */ val Down: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Down & Double = js.native
     
     /**
       * Normalize non-existing times by ADDING the DST offset
       */
     @js.native
-    sealed trait Up extends NormalizeOption
-    /* 0 */ val Up: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Up with Double = js.native
+    sealed trait Up
+      extends StObject
+         with NormalizeOption
+    /* 0 */ val Up: typings.timezonecomplete.tzDatabaseMod.NormalizeOption.Up & Double = js.native
   }
   
   @js.native
@@ -72,35 +85,43 @@ object tzDatabaseMod {
   object OnType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[OnType with Double] = js.native
+    def apply(value: Double): js.UndefOr[OnType & Double] = js.native
     
     /**
       * Day-of-month number
       */
     @js.native
-    sealed trait DayNum extends OnType
-    /* 0 */ val DayNum: typings.timezonecomplete.tzDatabaseMod.OnType.DayNum with Double = js.native
+    sealed trait DayNum
+      extends StObject
+         with OnType
+    /* 0 */ val DayNum: typings.timezonecomplete.tzDatabaseMod.OnType.DayNum & Double = js.native
     
     /**
       * e.g. "Sun>=8"
       */
     @js.native
-    sealed trait GreqX extends OnType
-    /* 2 */ val GreqX: typings.timezonecomplete.tzDatabaseMod.OnType.GreqX with Double = js.native
+    sealed trait GreqX
+      extends StObject
+         with OnType
+    /* 2 */ val GreqX: typings.timezonecomplete.tzDatabaseMod.OnType.GreqX & Double = js.native
     
     /**
       * "lastSun" or "lastWed" etc
       */
     @js.native
-    sealed trait LastX extends OnType
-    /* 1 */ val LastX: typings.timezonecomplete.tzDatabaseMod.OnType.LastX with Double = js.native
+    sealed trait LastX
+      extends StObject
+         with OnType
+    /* 1 */ val LastX: typings.timezonecomplete.tzDatabaseMod.OnType.LastX & Double = js.native
     
     /**
       * e.g. "Sun<=8"
       */
     @js.native
-    sealed trait LeqX extends OnType
-    /* 3 */ val LeqX: typings.timezonecomplete.tzDatabaseMod.OnType.LeqX with Double = js.native
+    sealed trait LeqX
+      extends StObject
+         with OnType
+    /* 3 */ val LeqX: typings.timezonecomplete.tzDatabaseMod.OnType.LeqX & Double = js.native
   }
   
   @JSImport("timezonecomplete/dist/lib/tz-database", "RuleInfo")
@@ -306,28 +327,34 @@ object tzDatabaseMod {
   object RuleType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[RuleType with Double] = js.native
+    def apply(value: Double): js.UndefOr[RuleType & Double] = js.native
     
     /**
       * No rule applies
       */
     @js.native
-    sealed trait None extends RuleType
-    /* 0 */ val None: typings.timezonecomplete.tzDatabaseMod.RuleType.None with Double = js.native
+    sealed trait None
+      extends StObject
+         with RuleType
+    /* 0 */ val None: typings.timezonecomplete.tzDatabaseMod.RuleType.None & Double = js.native
     
     /**
       * Fixed given offset
       */
     @js.native
-    sealed trait Offset extends RuleType
-    /* 1 */ val Offset: typings.timezonecomplete.tzDatabaseMod.RuleType.Offset with Double = js.native
+    sealed trait Offset
+      extends StObject
+         with RuleType
+    /* 1 */ val Offset: typings.timezonecomplete.tzDatabaseMod.RuleType.Offset & Double = js.native
     
     /**
       * Reference to a named set of rules
       */
     @js.native
-    sealed trait RuleName extends RuleType
-    /* 2 */ val RuleName: typings.timezonecomplete.tzDatabaseMod.RuleType.RuleName with Double = js.native
+    sealed trait RuleName
+      extends StObject
+         with RuleType
+    /* 2 */ val RuleName: typings.timezonecomplete.tzDatabaseMod.RuleType.RuleName & Double = js.native
   }
   
   @js.native
@@ -337,21 +364,25 @@ object tzDatabaseMod {
   object ToType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ToType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ToType & Double] = js.native
     
     /**
       * "max"
       */
     @js.native
-    sealed trait Max extends ToType
-    /* 1 */ val Max: typings.timezonecomplete.tzDatabaseMod.ToType.Max with Double = js.native
+    sealed trait Max
+      extends StObject
+         with ToType
+    /* 1 */ val Max: typings.timezonecomplete.tzDatabaseMod.ToType.Max & Double = js.native
     
     /**
       * Either a year number or "only"
       */
     @js.native
-    sealed trait Year extends ToType
-    /* 0 */ val Year: typings.timezonecomplete.tzDatabaseMod.ToType.Year with Double = js.native
+    sealed trait Year
+      extends StObject
+         with ToType
+    /* 0 */ val Year: typings.timezonecomplete.tzDatabaseMod.ToType.Year & Double = js.native
   }
   
   @JSImport("timezonecomplete/dist/lib/tz-database", "Transition")
@@ -751,23 +782,19 @@ object tzDatabaseMod {
       *             If not given, Timezonecomplete will search for installed modules.
       * @throws timezonecomplete.InvalidTimeZoneData if `data` or the global time zone data is invalid
       */
-    @JSImport("timezonecomplete/dist/lib/tz-database", "TzDatabase.init")
-    @js.native
-    def init(): Unit = js.native
-    @JSImport("timezonecomplete/dist/lib/tz-database", "TzDatabase.init")
-    @js.native
-    def init(data: js.Any): Unit = js.native
-    @JSImport("timezonecomplete/dist/lib/tz-database", "TzDatabase.init")
-    @js.native
-    def init(data: js.Array[_]): Unit = js.native
+    @scala.inline
+    def init(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Unit]
+    @scala.inline
+    def init(data: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def init(data: js.Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Single instance of this database
       * @throws timezonecomplete.InvalidTimeZoneData if the global time zone data is invalid
       */
-    @JSImport("timezonecomplete/dist/lib/tz-database", "TzDatabase.instance")
-    @js.native
-    def instance(): TzDatabase = js.native
+    @scala.inline
+    def instance(): TzDatabase = ^.asInstanceOf[js.Dynamic].applyDynamic("instance")().asInstanceOf[TzDatabase]
   }
   
   @JSImport("timezonecomplete/dist/lib/tz-database", "ZoneInfo")
@@ -900,7 +927,6 @@ object tzDatabaseMod {
     var until: js.UndefOr[Double] = js.native
   }
   
-  @JSImport("timezonecomplete/dist/lib/tz-database", "isValidOffsetString")
-  @js.native
-  def isValidOffsetString(s: String): Boolean = js.native
+  @scala.inline
+  def isValidOffsetString(s: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidOffsetString")(s.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

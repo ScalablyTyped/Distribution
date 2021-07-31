@@ -6,7 +6,6 @@ import typings.hapiHapi.mod.Request
 import typings.hapiHapi.mod.ResponseToolkit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,10 +22,9 @@ object mod extends Shortcut {
     js.Promise[ValidateResponse | ValidateCustomResponse]
   ]
   
-  @js.native
   trait ValidateCustomResponse extends StObject {
     
-    var response: js.Any = js.native
+    var response: js.Any
   }
   object ValidateCustomResponse {
     
@@ -44,12 +42,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ValidateResponse extends StObject {
     
-    var credentials: js.UndefOr[js.Any] = js.native
+    var credentials: js.UndefOr[js.Any] = js.undefined
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
   }
   object ValidateResponse {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StageExecution extends StObject {
   
   /**
     * The ID of the pipeline execution associated with the stage.
     */
-  var pipelineExecutionId: PipelineExecutionId = js.native
+  var pipelineExecutionId: PipelineExecutionId
   
   /**
     * The status of the stage, or for a completed stage, the last status of the stage.
     */
-  var status: StageExecutionStatus = js.native
+  var status: StageExecutionStatus
 }
 object StageExecution {
   

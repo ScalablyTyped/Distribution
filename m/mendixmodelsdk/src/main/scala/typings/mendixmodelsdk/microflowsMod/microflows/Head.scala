@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Head")
@@ -36,9 +35,8 @@ object Head {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Head.create")
-  @js.native
-  def create(model: IModel): Head = js.native
+  @scala.inline
+  def create(model: IModel): Head = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Head]
   
   /**
     * Creates and returns a new Head instance in the SDK and on the server.
@@ -46,9 +44,8 @@ object Head {
     * of the parent ListOperationAction element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Head.createIn")
-  @js.native
-  def createIn(container: ListOperationAction): Head = js.native
+  @scala.inline
+  def createIn(container: ListOperationAction): Head = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[Head]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.Head.structureTypeName")

@@ -2,31 +2,29 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDataSyncSource extends StObject {
   
   /**
     * Information about the AwsOrganizationsSource resource data sync source. A sync source of this type can synchronize data from AWS Organizations.
     */
-  var AwsOrganizationsSource: js.UndefOr[ResourceDataSyncAwsOrganizationsSource] = js.native
+  var AwsOrganizationsSource: js.UndefOr[ResourceDataSyncAwsOrganizationsSource] = js.undefined
   
   /**
     * Whether to automatically synchronize and aggregate data from new AWS Regions when those Regions come online.
     */
-  var IncludeFutureRegions: js.UndefOr[ResourceDataSyncIncludeFutureRegions] = js.native
+  var IncludeFutureRegions: js.UndefOr[ResourceDataSyncIncludeFutureRegions] = js.undefined
   
   /**
     * The SyncSource AWS Regions included in the resource data sync.
     */
-  var SourceRegions: ResourceDataSyncSourceRegionList = js.native
+  var SourceRegions: ResourceDataSyncSourceRegionList
   
   /**
     * The type of data source for the resource data sync. SourceType is either AwsOrganizations (if an organization is present in AWS Organizations) or singleAccountMultiRegions.
     */
-  var SourceType: ResourceDataSyncSourceType = js.native
+  var SourceType: ResourceDataSyncSourceType
 }
 object ResourceDataSyncSource {
   

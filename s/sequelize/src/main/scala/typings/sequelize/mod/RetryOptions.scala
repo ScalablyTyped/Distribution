@@ -3,7 +3,6 @@ package typings.sequelize.mod
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see Options, QueryOptions
   */
-@js.native
 trait RetryOptions extends StObject {
   
   /**
     * Only retry a query if the error matches one of these strings.
     */
-  var `match`: js.UndefOr[js.Array[String | RegExp | typings.std.Error]] = js.native
+  var `match`: js.UndefOr[js.Array[String | RegExp | typings.std.Error]] = js.undefined
   
   /**
     * How many times a failing query is automatically retried. Set to 0 to disable retrying on SQL_BUSY error.
     */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
 }
 object RetryOptions {
   

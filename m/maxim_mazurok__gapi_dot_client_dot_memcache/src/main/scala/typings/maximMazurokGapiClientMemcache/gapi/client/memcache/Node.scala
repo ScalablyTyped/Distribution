@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Node extends StObject {
   
   /** Output only. Hostname or IP address of the Memcached node used by the clients to connect to the Memcached server on this node. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** Output only. Identifier of the Memcached node. The node id does not include project or location like the Memcached instance name. */
-  var nodeId: js.UndefOr[String] = js.native
+  var nodeId: js.UndefOr[String] = js.undefined
   
   /** User defined parameters currently applied to the node. */
-  var parameters: js.UndefOr[MemcacheParameters] = js.native
+  var parameters: js.UndefOr[MemcacheParameters] = js.undefined
   
   /** Output only. The port number of the Memcached server on this node. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** Output only. Current state of the Memcached node. */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /** Output only. Location (GCP Zone) for the Memcached node. */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object Node {
   

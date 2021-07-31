@@ -5,7 +5,6 @@ import typings.pulumiKubernetes.pulumiKubernetesStrings.extensionsSlashv1beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,33 +32,32 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * time out and mark the resource update as Failed. You can override the default timeout value
   * by setting the 'customTimeouts' option on the resource.
   */
-@js.native
 trait Deployment extends StObject {
   
   /**
     * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
     */
-  var apiVersion: js.UndefOr[Input[extensionsSlashv1beta1]] = js.native
+  var apiVersion: js.UndefOr[Input[extensionsSlashv1beta1]] = js.undefined
   
   /**
     * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
     */
-  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Deployment]] = js.native
+  var kind: js.UndefOr[Input[typings.pulumiKubernetes.pulumiKubernetesStrings.Deployment]] = js.undefined
   
   /**
     * Standard object metadata.
     */
-  var metadata: js.UndefOr[Input[ObjectMeta]] = js.native
+  var metadata: js.UndefOr[Input[ObjectMeta]] = js.undefined
   
   /**
     * Specification of the desired behavior of the Deployment.
     */
-  var spec: js.UndefOr[Input[DeploymentSpec]] = js.native
+  var spec: js.UndefOr[Input[DeploymentSpec]] = js.undefined
   
   /**
     * Most recently observed status of the Deployment.
     */
-  var status: js.UndefOr[Input[DeploymentStatus]] = js.native
+  var status: js.UndefOr[Input[DeploymentStatus]] = js.undefined
 }
 object Deployment {
   

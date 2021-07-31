@@ -5,7 +5,6 @@ import typings.parseGlob.anon.Basename
 import typings.parseGlob.anon.Braces
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -16,33 +15,32 @@ object mod extends Shortcut {
   
   type ParseGlob = js.Function1[/* glob */ String, Result]
   
-  @js.native
   trait Result extends StObject {
     
     /**
       * The non-glob part of the string, if any.
       */
-    var base: String = js.native
+    var base: String
     
     /**
       * The glob pattern part of the string, if any.
       */
-    var glob: String = js.native
+    var glob: String
     
     /**
       * An object with boolean information about the glob.
       */
-    var is: Braces = js.native
+    var is: Braces
     
     /**
       * A copy of the original, unmodified glob pattern.
       */
-    var orig: String = js.native
+    var orig: String
     
     /**
       * File path segments.
       */
-    var path: Basename = js.native
+    var path: Basename
   }
   object Result {
     

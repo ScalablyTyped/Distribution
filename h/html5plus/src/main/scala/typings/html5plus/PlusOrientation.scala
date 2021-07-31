@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -42,12 +41,12 @@ trait PlusOrientation extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
   def getCurrentOrientation(): Unit = js.native
-  def getCurrentOrientation(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   def getCurrentOrientation(successCB: js.Function1[/* result */ String, Unit]): Unit = js.native
   def getCurrentOrientation(
     successCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
   ): Unit = js.native
+  def getCurrentOrientation(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Unit = js.native
   
   /**
     * 监听设备方向信息的变化
@@ -56,23 +55,7 @@ trait PlusOrientation extends StObject {
     * 参考: [http://www.html5plus.org/doc/zh_cn/orientation.html](http://www.html5plus.org/doc/zh_cn/orientation.html)
     */
   def watchOrientation(): Double = js.native
-  def watchOrientation(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.UndefOr[scala.Nothing],
-    option: PlusOrientationOrientationOption
-  ): Double = js.native
-  def watchOrientation(successCB: js.UndefOr[scala.Nothing], errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
-  def watchOrientation(
-    successCB: js.UndefOr[scala.Nothing],
-    errorCB: js.Function1[/* result */ js.Any, Unit],
-    option: PlusOrientationOrientationOption
-  ): Double = js.native
   def watchOrientation(successCB: js.Function1[/* result */ String, Unit]): Double = js.native
-  def watchOrientation(
-    successCB: js.Function1[/* result */ String, Unit],
-    errorCB: js.UndefOr[scala.Nothing],
-    option: PlusOrientationOrientationOption
-  ): Double = js.native
   def watchOrientation(
     successCB: js.Function1[/* result */ String, Unit],
     errorCB: js.Function1[/* result */ js.Any, Unit]
@@ -82,4 +65,16 @@ trait PlusOrientation extends StObject {
     errorCB: js.Function1[/* result */ js.Any, Unit],
     option: PlusOrientationOrientationOption
   ): Double = js.native
+  def watchOrientation(
+    successCB: js.Function1[/* result */ String, Unit],
+    errorCB: Unit,
+    option: PlusOrientationOrientationOption
+  ): Double = js.native
+  def watchOrientation(successCB: Unit, errorCB: js.Function1[/* result */ js.Any, Unit]): Double = js.native
+  def watchOrientation(
+    successCB: Unit,
+    errorCB: js.Function1[/* result */ js.Any, Unit],
+    option: PlusOrientationOrientationOption
+  ): Double = js.native
+  def watchOrientation(successCB: Unit, errorCB: Unit, option: PlusOrientationOrientationOption): Double = js.native
 }

@@ -2,25 +2,25 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SearchResultRendererProperties extends WidgetProperties {
+trait SearchResultRendererProperties
+  extends StObject
+     with WidgetProperties {
   
   /**
     * Indicates whether to display the `Show more results` link within the search result's popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html#showMoreResultsOpen)
     */
-  var showMoreResultsOpen: js.UndefOr[Boolean] = js.native
+  var showMoreResultsOpen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The view model for this Search widget.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Search-SearchResultRenderer.html#viewModel)
     */
-  var viewModel: js.UndefOr[SearchViewModelProperties] = js.native
+  var viewModel: js.UndefOr[SearchViewModelProperties] = js.undefined
 }
 object SearchResultRendererProperties {
   

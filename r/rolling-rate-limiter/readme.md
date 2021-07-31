@@ -10,9 +10,9 @@ Rate limiter that supports a rolling window, either in-memory or backed by Redis
 | ------------------ | :-------------: |
 | Full name          | rolling-rate-limiter |
 | Keywords           | rate, limiter, ratelimiter, redis, rolling, window |
-| # releases         | 7 |
+| # releases         | 9 |
 | # dependents       | 11 |
-| # downloads        | 201896 |
+| # downloads        | 226100 |
 | # stars            | 3 |
 
 ## Links

@@ -2,7 +2,6 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait ChartDataLabelLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var autoText: js.UndefOr[Boolean] = js.native
+  var autoText: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var format: js.UndefOr[ChartDataLabelFormatLoadOptions] = js.native
+  var format: js.UndefOr[ChartDataLabelFormatLoadOptions] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var formula: js.UndefOr[Boolean] = js.native
+  var formula: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -59,7 +57,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var horizontalAlignment: js.UndefOr[Boolean] = js.native
+  var horizontalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -67,7 +65,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -75,7 +73,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var linkNumberFormat: js.UndefOr[Boolean] = js.native
+  var linkNumberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -83,7 +81,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var numberFormat: js.UndefOr[Boolean] = js.native
+  var numberFormat: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -91,7 +89,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var position: js.UndefOr[Boolean] = js.native
+  var position: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -99,7 +97,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var separator: js.UndefOr[Boolean] = js.native
+  var separator: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -107,7 +105,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showBubbleSize: js.UndefOr[Boolean] = js.native
+  var showBubbleSize: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -115,7 +113,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showCategoryName: js.UndefOr[Boolean] = js.native
+  var showCategoryName: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -123,7 +121,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showLegendKey: js.UndefOr[Boolean] = js.native
+  var showLegendKey: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -131,7 +129,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showPercentage: js.UndefOr[Boolean] = js.native
+  var showPercentage: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -139,7 +137,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showSeriesName: js.UndefOr[Boolean] = js.native
+  var showSeriesName: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -147,7 +145,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var showValue: js.UndefOr[Boolean] = js.native
+  var showValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -155,7 +153,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var text: js.UndefOr[Boolean] = js.native
+  var text: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -163,7 +161,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var textOrientation: js.UndefOr[Boolean] = js.native
+  var textOrientation: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -171,7 +169,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -180,7 +178,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var verticalAlignment: js.UndefOr[Boolean] = js.native
+  var verticalAlignment: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -188,7 +186,7 @@ trait ChartDataLabelLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
 }
 object ChartDataLabelLoadOptions {
   

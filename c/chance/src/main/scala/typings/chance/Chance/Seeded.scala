@@ -2,13 +2,11 @@ package typings.chance.Chance
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Seeded extends StObject {
   
-  var seed: Seed = js.native
+  var seed: Seed
 }
 object Seeded {
   

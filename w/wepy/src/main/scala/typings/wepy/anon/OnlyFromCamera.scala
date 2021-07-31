@@ -2,15 +2,13 @@ package typings.wepy.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnlyFromCamera extends StObject {
   
-  var onlyFromCamera: js.UndefOr[Boolean] = js.native
+  var onlyFromCamera: js.UndefOr[Boolean] = js.undefined
   
-  var scanType: js.UndefOr[js.Array[String]] = js.native
+  var scanType: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OnlyFromCamera {
   

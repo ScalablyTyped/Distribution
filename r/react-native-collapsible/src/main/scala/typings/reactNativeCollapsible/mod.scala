@@ -8,7 +8,6 @@ import typings.reactNativeCollapsible.reactNativeCollapsibleStrings.center
 import typings.reactNativeCollapsible.reactNativeCollapsibleStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,7 +19,6 @@ object mod {
   
   type Collapsible = Component[CollapsibleProps, js.Object, js.Any]
   
-  @js.native
   trait CollapsibleProps extends StObject {
     
     /**
@@ -28,52 +26,52 @@ object mod {
       *
       * @default top
       */
-    var align: js.UndefOr[top | center | bottom] = js.native
+    var align: js.UndefOr[top | center | bottom] = js.undefined
     
     /**
       * Whether to show the child components or not
       *
       * @default true
       */
-    var collapsed: js.UndefOr[Boolean] = js.native
+    var collapsed: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Which height should the component collapse to
       *
       * @default 0
       */
-    var collapsedHeight: js.UndefOr[Double] = js.native
+    var collapsedHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Duration of transition in milliseconds
       *
       * @default 300
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /**
       * Function or function name from Easing (or tween-functions if < RN 0.8). Collapsible will try to combine Easing functions for you if you name them like tween-functions
       *
       * @default easeOutCubic
       */
-    var easing: js.UndefOr[EasingMode | js.Any] = js.native
+    var easing: js.UndefOr[EasingMode | js.Any] = js.undefined
     
     /**
       * Enable pointer events on collapsed view
       *
       * @default false
       */
-    var enablePointerEvents: js.UndefOr[Boolean] = js.native
+    var enablePointerEvents: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Function called when the animation finished
       */
-    var onAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var onAnimationEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * Optional styling for the container
       */
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object CollapsibleProps {
     

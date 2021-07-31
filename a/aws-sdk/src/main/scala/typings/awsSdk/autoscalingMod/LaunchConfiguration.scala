@@ -2,111 +2,109 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LaunchConfiguration extends StObject {
   
   /**
     * For Auto Scaling groups that are running in a VPC, specifies whether to assign a public IP address to the group's instances. For more information, see Launching Auto Scaling instances in a VPC in the Amazon EC2 Auto Scaling User Guide.
     */
-  var AssociatePublicIpAddress: js.UndefOr[typings.awsSdk.autoscalingMod.AssociatePublicIpAddress] = js.native
+  var AssociatePublicIpAddress: js.UndefOr[typings.awsSdk.autoscalingMod.AssociatePublicIpAddress] = js.undefined
   
   /**
     * A block device mapping, which specifies the block devices for the instance. For more information, see Block Device Mapping in the Amazon EC2 User Guide for Linux Instances.
     */
-  var BlockDeviceMappings: js.UndefOr[typings.awsSdk.autoscalingMod.BlockDeviceMappings] = js.native
+  var BlockDeviceMappings: js.UndefOr[typings.awsSdk.autoscalingMod.BlockDeviceMappings] = js.undefined
   
   /**
     * The ID of a ClassicLink-enabled VPC to link your EC2-Classic instances to. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic instances to a VPC in the Amazon EC2 Auto Scaling User Guide.
     */
-  var ClassicLinkVPCId: js.UndefOr[XmlStringMaxLen255] = js.native
+  var ClassicLinkVPCId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The IDs of one or more security groups for the VPC specified in ClassicLinkVPCId. For more information, see ClassicLink in the Amazon EC2 User Guide for Linux Instances and Linking EC2-Classic instances to a VPC in the Amazon EC2 Auto Scaling User Guide.
     */
-  var ClassicLinkVPCSecurityGroups: js.UndefOr[typings.awsSdk.autoscalingMod.ClassicLinkVPCSecurityGroups] = js.native
+  var ClassicLinkVPCSecurityGroups: js.UndefOr[typings.awsSdk.autoscalingMod.ClassicLinkVPCSecurityGroups] = js.undefined
   
   /**
     * The creation date and time for the launch configuration.
     */
-  var CreatedTime: TimestampType = js.native
+  var CreatedTime: TimestampType
   
   /**
     * Specifies whether the launch configuration is optimized for EBS I/O (true) or not (false). For more information, see Amazon EBS-Optimized Instances in the Amazon EC2 User Guide for Linux Instances.
     */
-  var EbsOptimized: js.UndefOr[typings.awsSdk.autoscalingMod.EbsOptimized] = js.native
+  var EbsOptimized: js.UndefOr[typings.awsSdk.autoscalingMod.EbsOptimized] = js.undefined
   
   /**
     * The name or the Amazon Resource Name (ARN) of the instance profile associated with the IAM role for the instance. The instance profile contains the IAM role. For more information, see IAM role for applications that run on Amazon EC2 instances in the Amazon EC2 Auto Scaling User Guide.
     */
-  var IamInstanceProfile: js.UndefOr[XmlStringMaxLen1600] = js.native
+  var IamInstanceProfile: js.UndefOr[XmlStringMaxLen1600] = js.undefined
   
   /**
     * The ID of the Amazon Machine Image (AMI) to use to launch your EC2 instances. For more information, see Finding an AMI in the Amazon EC2 User Guide for Linux Instances.
     */
-  var ImageId: XmlStringMaxLen255 = js.native
+  var ImageId: XmlStringMaxLen255
   
   /**
     * Controls whether instances in this group are launched with detailed (true) or basic (false) monitoring. For more information, see Configure Monitoring for Auto Scaling Instances in the Amazon EC2 Auto Scaling User Guide.
     */
-  var InstanceMonitoring: js.UndefOr[typings.awsSdk.autoscalingMod.InstanceMonitoring] = js.native
+  var InstanceMonitoring: js.UndefOr[typings.awsSdk.autoscalingMod.InstanceMonitoring] = js.undefined
   
   /**
     * The instance type for the instances. For information about available instance types, see Available Instance Types in the Amazon EC2 User Guide for Linux Instances. 
     */
-  var InstanceType: XmlStringMaxLen255 = js.native
+  var InstanceType: XmlStringMaxLen255
   
   /**
     * The ID of the kernel associated with the AMI.
     */
-  var KernelId: js.UndefOr[XmlStringMaxLen255] = js.native
+  var KernelId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The name of the key pair. For more information, see Amazon EC2 Key Pairs in the Amazon EC2 User Guide for Linux Instances.
     */
-  var KeyName: js.UndefOr[XmlStringMaxLen255] = js.native
+  var KeyName: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the launch configuration.
     */
-  var LaunchConfigurationARN: js.UndefOr[ResourceName] = js.native
+  var LaunchConfigurationARN: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The name of the launch configuration.
     */
-  var LaunchConfigurationName: XmlStringMaxLen255 = js.native
+  var LaunchConfigurationName: XmlStringMaxLen255
   
   /**
     * The metadata options for the instances. For more information, see Configuring the Instance Metadata Options in the Amazon EC2 Auto Scaling User Guide.
     */
-  var MetadataOptions: js.UndefOr[InstanceMetadataOptions] = js.native
+  var MetadataOptions: js.UndefOr[InstanceMetadataOptions] = js.undefined
   
   /**
     * The tenancy of the instance, either default or dedicated. An instance with dedicated tenancy runs on isolated, single-tenant hardware and can only be launched into a VPC. For more information, see Configuring instance tenancy with Amazon EC2 Auto Scaling in the Amazon EC2 Auto Scaling User Guide.
     */
-  var PlacementTenancy: js.UndefOr[XmlStringMaxLen64] = js.native
+  var PlacementTenancy: js.UndefOr[XmlStringMaxLen64] = js.undefined
   
   /**
     * The ID of the RAM disk associated with the AMI.
     */
-  var RamdiskId: js.UndefOr[XmlStringMaxLen255] = js.native
+  var RamdiskId: js.UndefOr[XmlStringMaxLen255] = js.undefined
   
   /**
     * A list that contains the security groups to assign to the instances in the Auto Scaling group. For more information, see Security Groups for Your VPC in the Amazon Virtual Private Cloud User Guide.
     */
-  var SecurityGroups: js.UndefOr[typings.awsSdk.autoscalingMod.SecurityGroups] = js.native
+  var SecurityGroups: js.UndefOr[typings.awsSdk.autoscalingMod.SecurityGroups] = js.undefined
   
   /**
     * The maximum hourly price to be paid for any Spot Instance launched to fulfill the request. Spot Instances are launched when the price you specify exceeds the current Spot price. For more information, see Requesting Spot Instances in the Amazon EC2 Auto Scaling User Guide.
     */
-  var SpotPrice: js.UndefOr[typings.awsSdk.autoscalingMod.SpotPrice] = js.native
+  var SpotPrice: js.UndefOr[typings.awsSdk.autoscalingMod.SpotPrice] = js.undefined
   
   /**
     * The Base64-encoded user data to make available to the launched EC2 instances. For more information, see Instance metadata and user data in the Amazon EC2 User Guide for Linux Instances.
     */
-  var UserData: js.UndefOr[XmlStringUserData] = js.native
+  var UserData: js.UndefOr[XmlStringUserData] = js.undefined
 }
 object LaunchConfiguration {
   

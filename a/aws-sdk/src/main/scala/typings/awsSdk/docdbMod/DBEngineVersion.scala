@@ -2,51 +2,49 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBEngineVersion extends StObject {
   
   /**
     * The description of the database engine.
     */
-  var DBEngineDescription: js.UndefOr[String] = js.native
+  var DBEngineDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the database engine version.
     */
-  var DBEngineVersionDescription: js.UndefOr[String] = js.native
+  var DBEngineVersionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the parameter group family for the database engine.
     */
-  var DBParameterGroupFamily: js.UndefOr[String] = js.native
+  var DBParameterGroupFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the database engine.
     */
-  var Engine: js.UndefOr[String] = js.native
+  var Engine: js.UndefOr[String] = js.undefined
   
   /**
     * The version number of the database engine.
     */
-  var EngineVersion: js.UndefOr[String] = js.native
+  var EngineVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The types of logs that the database engine has available for export to Amazon CloudWatch Logs.
     */
-  var ExportableLogTypes: js.UndefOr[LogTypeList] = js.native
+  var ExportableLogTypes: js.UndefOr[LogTypeList] = js.undefined
   
   /**
     * A value that indicates whether the engine version supports exporting the log types specified by ExportableLogTypes to CloudWatch Logs.
     */
-  var SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.native
+  var SupportsLogExportsToCloudwatchLogs: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A list of engine versions that this database engine version can be upgraded to.
     */
-  var ValidUpgradeTarget: js.UndefOr[ValidUpgradeTargetList] = js.native
+  var ValidUpgradeTarget: js.UndefOr[ValidUpgradeTargetList] = js.undefined
 }
 object DBEngineVersion {
   

@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunPipelineRequest extends StObject {
   
   /**
@@ -16,11 +14,11 @@ trait RunPipelineRequest extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. The description of the pipeline to run. */
-  var pipeline: js.UndefOr[Pipeline] = js.native
+  var pipeline: js.UndefOr[Pipeline] = js.undefined
 }
 object RunPipelineRequest {
   
@@ -37,7 +35,7 @@ object RunPipelineRequest {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.RunPipelineRequest & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

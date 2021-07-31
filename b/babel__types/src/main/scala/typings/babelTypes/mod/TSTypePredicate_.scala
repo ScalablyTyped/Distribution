@@ -3,30 +3,29 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.TSTypePredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait TSTypePredicate_
-  extends TSType
-     with BaseNode {
+- typings.babelTypes.mod._Node because Already inherited */ trait TSTypePredicate_
+  extends StObject
+     with BaseNode
+     with TSType {
   
-  var asserts: Boolean | Null = js.native
+  var asserts: Boolean | Null
   
-  var parameterName: Identifier_ | TSThisType_ = js.native
+  var parameterName: Identifier_ | TSThisType_
   
-  var typeAnnotation: TSTypeAnnotation_ | Null = js.native
+  var typeAnnotation: TSTypeAnnotation_ | Null
   
   @JSName("type")
-  var type_TSTypePredicate_ : TSTypePredicate = js.native
+  var type_TSTypePredicate_ : TSTypePredicate
 }
 object TSTypePredicate_ {
   
   @scala.inline
-  def apply(parameterName: Identifier_ | TSThisType_, `type`: TSTypePredicate): TSTypePredicate_ = {
-    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(parameterName: Identifier_ | TSThisType_): TSTypePredicate_ = {
+    val __obj = js.Dynamic.literal(parameterName = parameterName.asInstanceOf[js.Any], asserts = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSTypePredicate")
     __obj.asInstanceOf[TSTypePredicate_]
   }
   

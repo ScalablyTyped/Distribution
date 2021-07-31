@@ -2,23 +2,21 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsTableExclusionOptionsMod {
   
-  @js.native
   trait TableExclusionOptions extends StObject {
     
     /**
       * Exclusion expression.
       */
-    var expression: js.UndefOr[String] = js.native
+    var expression: js.UndefOr[String] = js.undefined
     
     /**
       * Constraint name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object TableExclusionOptions {
     

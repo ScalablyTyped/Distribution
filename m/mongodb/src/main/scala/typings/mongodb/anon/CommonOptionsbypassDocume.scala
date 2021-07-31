@@ -4,35 +4,33 @@ import typings.mongodb.mod.ClientSession
 import typings.mongodb.mongodbStrings.majority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined mongodb.mongodb.CommonOptions & {  bypassDocumentValidation :boolean | undefined} */
-@js.native
 trait CommonOptionsbypassDocume extends StObject {
   
-  var bypassDocumentValidation: js.UndefOr[Boolean] = js.native
+  var bypassDocumentValidation: js.UndefOr[Boolean] = js.undefined
   
   /**
     * requests acknowledgement from MongoDB that the write operation has
     * been written to the journal
     * @default false
     */
-  var j: js.UndefOr[Boolean] = js.native
+  var j: js.UndefOr[Boolean] = js.undefined
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
   
   /**
     * requests acknowledgement that the write operation has
     * propagated to a specified number of mongod hosts
     * @default 1
     */
-  var w: js.UndefOr[Double | majority | String] = js.native
+  var w: js.UndefOr[Double | majority | String] = js.undefined
   
   /**
     * a time limit, in milliseconds, for the write concern
     */
-  var wtimeout: js.UndefOr[Double] = js.native
+  var wtimeout: js.UndefOr[Double] = js.undefined
 }
 object CommonOptionsbypassDocume {
   

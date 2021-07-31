@@ -5,12 +5,13 @@ import typings.googleSpreadsheet.anon.Data
 import typings.googleSpreadsheet.anon.Insert
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-spreadsheet", "GoogleSpreadsheetWorksheet")
 @js.native
-class GoogleSpreadsheetWorksheet protected () extends WorksheetBasicProperties {
+class GoogleSpreadsheetWorksheet protected ()
+  extends StObject
+     with WorksheetBasicProperties {
   def this(parentSpreadsheet: GoogleSpreadsheetWorksheet, hasPropertiesData: Data) = this()
   
   /**

@@ -3,23 +3,23 @@ package typings.wonka
 import typings.wonka.wonkaTypesMod.Source
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wonkaObservableMod {
   
-  @JSImport("wonka/src/web/wonka_observable", "fromObservable")
+  @JSImport("wonka/src/web/wonka_observable", JSImport.Namespace)
   @js.native
-  def fromObservable[T](observable: JsObservable[T]): Source[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wonka/src/web/wonka_observable", "toObservable")
-  @js.native
-  def toObservable[T](source: Source[T]): JsObservable[T] = js.native
+  @scala.inline
+  def fromObservable[T](observable: JsObservable[T]): Source[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObservable")(observable.asInstanceOf[js.Any]).asInstanceOf[Source[T]]
   
-  @js.native
+  @scala.inline
+  def toObservable[T](source: Source[T]): JsObservable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObservable")(source.asInstanceOf[js.Any]).asInstanceOf[JsObservable[T]]
+  
   trait JsObservable[T] extends StObject {
     
-    def subscribe(observer: JsObserver[T]): JsSubscription = js.native
+    def subscribe(observer: JsObserver[T]): JsSubscription
   }
   object JsObservable {
     
@@ -30,21 +30,20 @@ object wonkaObservableMod {
     }
     
     @scala.inline
-    implicit class JsObservableMutableBuilder[Self <: JsObservable[_], T] (val x: Self with JsObservable[T]) extends AnyVal {
+    implicit class JsObservableMutableBuilder[Self <: JsObservable[?], T] (val x: Self & JsObservable[T]) extends AnyVal {
       
       @scala.inline
       def setSubscribe(value: JsObserver[T] => JsSubscription): Self = StObject.set(x, "subscribe", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait JsObserver[T] extends StObject {
     
-    def complete(): Unit = js.native
+    def complete(): Unit
     
-    def error(errorValue: js.Any): Unit = js.native
+    def error(errorValue: js.Any): Unit
     
-    def next(value: T): Unit = js.native
+    def next(value: T): Unit
   }
   object JsObserver {
     
@@ -55,7 +54,7 @@ object wonkaObservableMod {
     }
     
     @scala.inline
-    implicit class JsObserverMutableBuilder[Self <: JsObserver[_], T] (val x: Self with JsObserver[T]) extends AnyVal {
+    implicit class JsObserverMutableBuilder[Self <: JsObserver[?], T] (val x: Self & JsObserver[T]) extends AnyVal {
       
       @scala.inline
       def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))
@@ -68,10 +67,9 @@ object wonkaObservableMod {
     }
   }
   
-  @js.native
   trait JsSubscription extends StObject {
     
-    def unsubscribe(): Unit = js.native
+    def unsubscribe(): Unit
   }
   object JsSubscription {
     

@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR
 import typings.jsrsasign.anon.Typ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -101,23 +100,22 @@ object jws {
     */
   object JWS {
     
-    @js.native
     trait JWSResult extends StObject {
       
       /** JSON object of header */
-      var headerObj: Typ = js.native
+      var headerObj: Typ
       
       /** pretty printed JSON header by stringify */
-      var headerPP: String = js.native
+      var headerPP: String
       
       /** JSON object of payload if payload is JSON string otherwise undefined */
-      var payloadObj: js.UndefOr[js.Object] = js.native
+      var payloadObj: js.UndefOr[js.Object] = js.undefined
       
       /** pretty printed JSON payload by stringify if payload is JSON otherwise Base64URL decoded raw string of payload */
-      var payloadPP: String = js.native
+      var payloadPP: String
       
       /** hexadecimal string of signature */
-      var sigHex: String = js.native
+      var sigHex: String
     }
     object JWSResult {
       
@@ -150,24 +148,23 @@ object jws {
       }
     }
     
-    @js.native
     trait JsonWebKey extends StObject {
       
-      var crv: String = js.native
+      var crv: String
       
-      var e: String = js.native
+      var e: String
       
-      var k: String = js.native
+      var k: String
       
-      var kty: String = js.native
+      var kty: String
       
-      var n: String = js.native
+      var n: String
       
-      var v: String = js.native
+      var v: String
       
-      var x: String = js.native
+      var x: String
       
-      var y: String = js.native
+      var y: String
     }
     object JsonWebKey {
       

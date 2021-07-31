@@ -6,22 +6,22 @@ import typings.react.mod.SFC
 import typings.reactThemeableTs.themeableMod.IStaticFnReturn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hocMod {
   
-  @JSImport("react-themeable-ts/build-es5/hoc", "themeDecorator")
+  @JSImport("react-themeable-ts/build-es5/hoc", JSImport.Namespace)
   @js.native
-  def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], _] = js.native
-  @JSImport("react-themeable-ts/build-es5/hoc", "themeDecorator")
-  @js.native
-  def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], _] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def themeDecorator[P /* <: IThemeDecoratorArgs */](): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")().asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
+  @scala.inline
+  def themeDecorator[P /* <: IThemeDecoratorArgs */](hasThemeKeyThemePropMemoizeeOptsContextPath: IThemeDecoratorArgs): js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("themeDecorator")(hasThemeKeyThemePropMemoizeeOptsContextPath.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* WrappedComponent */ TDecComponent[P], js.Any]]
+  
   trait IHOCDefaultNoThemeProps extends StObject {
     
-    var t: IStaticFnReturn = js.native
+    var t: IStaticFnReturn
   }
   object IHOCDefaultNoThemeProps {
     
@@ -39,10 +39,11 @@ object hocMod {
     }
   }
   
-  @js.native
-  trait IHOCDefaultProps extends IHOCDefaultNoThemeProps {
+  trait IHOCDefaultProps
+    extends StObject
+       with IHOCDefaultNoThemeProps {
     
-    var theme: js.UndefOr[js.Any] = js.native
+    var theme: js.UndefOr[js.Any] = js.undefined
   }
   object IHOCDefaultProps {
     
@@ -63,16 +64,15 @@ object hocMod {
     }
   }
   
-  @js.native
   trait IThemeDecoratorArgs extends StObject {
     
-    var contextPath: js.UndefOr[String | js.Array[String]] = js.native
+    var contextPath: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var memoizeeOpts: js.UndefOr[js.Any] = js.native
+    var memoizeeOpts: js.UndefOr[js.Any] = js.undefined
     
-    var themeKey: js.UndefOr[String] = js.native
+    var themeKey: js.UndefOr[String] = js.undefined
     
-    var themeProp: js.UndefOr[String] = js.native
+    var themeProp: js.UndefOr[String] = js.undefined
   }
   object IThemeDecoratorArgs {
     

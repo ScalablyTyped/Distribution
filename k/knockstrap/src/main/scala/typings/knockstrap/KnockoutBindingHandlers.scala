@@ -2,29 +2,27 @@ package typings.knockstrap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KnockoutBindingHandlers extends StObject {
   
-  var alert: AlertKnockoutBindingHandler = js.native
+  var alert: AlertKnockoutBindingHandler
   
-  var carousel: CarouselKnockoutBindingHandler = js.native
+  var carousel: CarouselKnockoutBindingHandler
   
-  var checkbox: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var checkbox: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
-  var modal: ModalKnockoutBindingHandler = js.native
+  var modal: ModalKnockoutBindingHandler
   
-  var popover: PopoverKnockoutBindingHandler = js.native
+  var popover: PopoverKnockoutBindingHandler
   
-  var progress: ProgressKnockoutBindingHandler = js.native
+  var progress: ProgressKnockoutBindingHandler
   
-  var radio: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var radio: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
-  var toggle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var toggle: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
   
-  var tooltip: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any = js.native
+  var tooltip: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify KnockoutBindingHandler */ js.Any
 }
 object KnockoutBindingHandlers {
   

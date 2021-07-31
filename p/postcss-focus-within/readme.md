@@ -10,9 +10,9 @@ Use the :focus-within pseudo-selector in CSS
 | ------------------ | :-------------: |
 | Full name          | postcss-focus-within |
 | Keywords           | postcss, css, postcss-plugin, focus, within, polyfill, pseudos, selectors, accessibility, a11y, descendants, ancestors |
-| # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 111454495 |
+| # releases         | 2 |
+| # dependents       | 9 |
+| # downloads        | 141274670 |
 | # stars            | 0 |
 
 ## Links

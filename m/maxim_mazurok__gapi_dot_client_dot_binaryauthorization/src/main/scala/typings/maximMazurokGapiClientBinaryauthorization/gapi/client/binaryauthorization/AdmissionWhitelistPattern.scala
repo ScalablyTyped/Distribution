@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientBinaryauthorization.gapi.client.binaryauth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdmissionWhitelistPattern extends StObject {
   
   /** An image name pattern to allowlist, in the form `registry/path/to/image`. This supports a trailing `*` as a wildcard, but this is allowed only in text after the `registry/` part. */
-  var namePattern: js.UndefOr[String] = js.native
+  var namePattern: js.UndefOr[String] = js.undefined
 }
 object AdmissionWhitelistPattern {
   

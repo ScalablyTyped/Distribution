@@ -2,39 +2,37 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents fields that are compatible to be selected for a report of type
   * &quot;FlOODLIGHT&quot;.
   */
-@js.native
 trait SchemaFloodlightReportCompatibleFields extends StObject {
   
   /**
     * Dimensions which are compatible to be selected in the
     * &quot;dimensionFilters&quot; section of the report.
     */
-  var dimensionFilters: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var dimensionFilters: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * Dimensions which are compatible to be selected in the
     * &quot;dimensions&quot; section of the report.
     */
-  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.native
+  var dimensions: js.UndefOr[js.Array[SchemaDimension]] = js.undefined
   
   /**
     * The kind of resource this is, in this case
     * dfareporting#floodlightReportCompatibleFields.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Metrics which are compatible to be selected in the
     * &quot;metricNames&quot; section of the report.
     */
-  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.native
+  var metrics: js.UndefOr[js.Array[SchemaMetric]] = js.undefined
 }
 object SchemaFloodlightReportCompatibleFields {
   

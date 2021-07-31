@@ -2,10 +2,13 @@ package typings.d3Random
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("d3-random", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("d3-random", "randomBates")
   @js.native
@@ -47,12 +50,10 @@ object mod {
   @js.native
   val randomIrwinHall: RandomIrwinHall_ = js.native
   
-  @JSImport("d3-random", "randomLcg")
-  @js.native
-  def randomLcg(): js.Function0[Double] = js.native
-  @JSImport("d3-random", "randomLcg")
-  @js.native
-  def randomLcg(seed: Double): js.Function0[Double] = js.native
+  @scala.inline
+  def randomLcg(): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")().asInstanceOf[js.Function0[Double]]
+  @scala.inline
+  def randomLcg(seed: Double): js.Function0[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("randomLcg")(seed.asInstanceOf[js.Any]).asInstanceOf[js.Function0[Double]]
   
   @JSImport("d3-random", "randomLogNormal")
   @js.native
@@ -83,7 +84,9 @@ object mod {
   val randomWeibull: RandomWeibull_ = js.native
   
   @js.native
-  trait RandomBates_ extends RandomNumberGenerationSource {
+  trait RandomBates_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a Bates distribution with n independent variables.
@@ -95,7 +98,9 @@ object mod {
   }
   
   @js.native
-  trait RandomBernoulli_ extends RandomNumberGenerationSource {
+  trait RandomBernoulli_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating either 1 or 0 according to a Bernoulli distribution with 1 being returned with success probability p and 0 with failure probability q = 1 - p.
@@ -107,7 +112,9 @@ object mod {
   }
   
   @js.native
-  trait RandomBeta_ extends RandomNumberGenerationSource {
+  trait RandomBeta_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a beta distribution with alpha and beta shape parameters, which must both be positive.
@@ -119,7 +126,9 @@ object mod {
   }
   
   @js.native
-  trait RandomBinomial_ extends RandomNumberGenerationSource {
+  trait RandomBinomial_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating numbers with a geometric distribution with success probability p.
@@ -131,7 +140,9 @@ object mod {
   }
   
   @js.native
-  trait RandomCauchy_ extends RandomNumberGenerationSource {
+  trait RandomCauchy_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a Cauchy distribution.
@@ -141,13 +152,15 @@ object mod {
       * @param b Scale parameter
       */
     def apply(): js.Function0[Double] = js.native
-    def apply(a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
     def apply(a: Double): js.Function0[Double] = js.native
     def apply(a: Double, b: Double): js.Function0[Double] = js.native
+    def apply(a: Unit, b: Double): js.Function0[Double] = js.native
   }
   
   @js.native
-  trait RandomExponential_ extends RandomNumberGenerationSource {
+  trait RandomExponential_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with an exponential distribution with the rate lambda;
@@ -159,7 +172,9 @@ object mod {
   }
   
   @js.native
-  trait RandomGamma_ extends RandomNumberGenerationSource {
+  trait RandomGamma_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a gamma distribution with k the shape parameter and theta the scale parameter.
@@ -173,7 +188,9 @@ object mod {
   }
   
   @js.native
-  trait RandomGeometric_ extends RandomNumberGenerationSource {
+  trait RandomGeometric_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating numbers with a geometric distribution with success probability p.
@@ -185,7 +202,9 @@ object mod {
   }
   
   @js.native
-  trait RandomInt_ extends RandomNumberGenerationSource {
+  trait RandomInt_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random integers with a uniform distribution.
@@ -207,7 +226,9 @@ object mod {
   }
   
   @js.native
-  trait RandomIrwinHall_ extends RandomNumberGenerationSource {
+  trait RandomIrwinHall_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with an Irwin–Hall distribution with n independent variables.
@@ -219,7 +240,9 @@ object mod {
   }
   
   @js.native
-  trait RandomLogNormal_ extends RandomNumberGenerationSource {
+  trait RandomLogNormal_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a log-normal distribution. The expected value of the random variable’s natural logarithm is mu,
@@ -229,13 +252,15 @@ object mod {
       * @param sigma Standard deviation, defaults to 1.
       */
     def apply(): js.Function0[Double] = js.native
-    def apply(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
     def apply(mu: Double): js.Function0[Double] = js.native
     def apply(mu: Double, sigma: Double): js.Function0[Double] = js.native
+    def apply(mu: Unit, sigma: Double): js.Function0[Double] = js.native
   }
   
   @js.native
-  trait RandomLogistic_ extends RandomNumberGenerationSource {
+  trait RandomLogistic_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a logistic distribution.
@@ -245,13 +270,15 @@ object mod {
       * @param b Scale parameter
       */
     def apply(): js.Function0[Double] = js.native
-    def apply(a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
     def apply(a: Double): js.Function0[Double] = js.native
     def apply(a: Double, b: Double): js.Function0[Double] = js.native
+    def apply(a: Unit, b: Double): js.Function0[Double] = js.native
   }
   
   @js.native
-  trait RandomNormal_ extends RandomNumberGenerationSource {
+  trait RandomNormal_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a normal (Gaussian) distribution.
@@ -262,12 +289,11 @@ object mod {
       * @param sigma Standard deviation, defaults to 1.
       */
     def apply(): js.Function0[Double] = js.native
-    def apply(mu: js.UndefOr[scala.Nothing], sigma: Double): js.Function0[Double] = js.native
     def apply(mu: Double): js.Function0[Double] = js.native
     def apply(mu: Double, sigma: Double): js.Function0[Double] = js.native
+    def apply(mu: Unit, sigma: Double): js.Function0[Double] = js.native
   }
   
-  @js.native
   trait RandomNumberGenerationSource extends StObject {
     
     /**
@@ -279,7 +305,7 @@ object mod {
       * The given random number generator must implement the same interface as Math.random and
       * only return values in the range [0, 1).
       */
-    def source(source: js.Function0[Double]): this.type = js.native
+    def source(source: js.Function0[Double]): this.type
   }
   object RandomNumberGenerationSource {
     
@@ -298,7 +324,9 @@ object mod {
   }
   
   @js.native
-  trait RandomPareto_ extends RandomNumberGenerationSource {
+  trait RandomPareto_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a Pareto distribution with the shape alpha.
@@ -310,7 +338,9 @@ object mod {
   }
   
   @js.native
-  trait RandomPoisson_ extends RandomNumberGenerationSource {
+  trait RandomPoisson_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a Poisson distribution with mean lambda.
@@ -321,7 +351,9 @@ object mod {
   }
   
   @js.native
-  trait RandomUniform_ extends RandomNumberGenerationSource {
+  trait RandomUniform_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with a uniform distribution.
@@ -344,7 +376,9 @@ object mod {
   }
   
   @js.native
-  trait RandomWeibull_ extends RandomNumberGenerationSource {
+  trait RandomWeibull_
+    extends StObject
+       with RandomNumberGenerationSource {
     
     /**
       * Returns a function for generating random numbers with one of the generalized extreme value distributions, depending on k:
@@ -359,8 +393,8 @@ object mod {
       * @param b Scale parameter
       */
     def apply(k: Double): js.Function0[Double] = js.native
-    def apply(k: Double, a: js.UndefOr[scala.Nothing], b: Double): js.Function0[Double] = js.native
     def apply(k: Double, a: Double): js.Function0[Double] = js.native
     def apply(k: Double, a: Double, b: Double): js.Function0[Double] = js.native
+    def apply(k: Double, a: Unit, b: Double): js.Function0[Double] = js.native
   }
 }

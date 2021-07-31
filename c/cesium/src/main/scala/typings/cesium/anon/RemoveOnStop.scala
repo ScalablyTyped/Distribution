@@ -4,25 +4,23 @@ import typings.cesium.mod.JulianDate
 import typings.cesium.mod.ModelAnimationLoop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveOnStop extends StObject {
   
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
-  var loop: js.UndefOr[ModelAnimationLoop] = js.native
+  var loop: js.UndefOr[ModelAnimationLoop] = js.undefined
   
-  var removeOnStop: js.UndefOr[Boolean] = js.native
+  var removeOnStop: js.UndefOr[Boolean] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var speedup: js.UndefOr[Double] = js.native
+  var speedup: js.UndefOr[Double] = js.undefined
   
-  var startTime: js.UndefOr[JulianDate] = js.native
+  var startTime: js.UndefOr[JulianDate] = js.undefined
   
-  var stopTime: js.UndefOr[JulianDate] = js.native
+  var stopTime: js.UndefOr[JulianDate] = js.undefined
 }
 object RemoveOnStop {
   

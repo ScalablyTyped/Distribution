@@ -2,13 +2,13 @@ package typings.mendixmodelsdk.deltasDeltasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IElementDelta extends IDelta {
+trait IElementDelta
+  extends StObject
+     with IDelta {
   
-  var elementId: String = js.native
+  var elementId: String
 }
 object IElementDelta {
   

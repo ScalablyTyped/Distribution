@@ -2,17 +2,15 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShouldCopyData extends StObject {
   
-  var node: TreeNode = js.native
+  var node: TreeNode
   
-  var prevPath: NumberOrStringArray = js.native
+  var prevPath: NumberOrStringArray
   
-  var prevTreeIndex: Double = js.native
+  var prevTreeIndex: Double
 }
 object ShouldCopyData {
   

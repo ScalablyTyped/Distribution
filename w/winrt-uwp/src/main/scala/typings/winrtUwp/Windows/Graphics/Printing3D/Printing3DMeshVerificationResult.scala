@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the VerifyAsync method. */
-@js.native
 trait Printing3DMeshVerificationResult extends StObject {
   
   /** Gets a value that indicates if the mesh is valid. */
-  var isValid: Boolean = js.native
+  var isValid: Boolean
   
   /** Gets the triangles with non-manifold edges, if applicable. */
-  var nonmanifoldTriangles: IVectorView[Double] = js.native
+  var nonmanifoldTriangles: IVectorView[Double]
   
   /** Gets the reverse normal triangles, if applicable. */
-  var reversedNormalTriangles: IVectorView[Double] = js.native
+  var reversedNormalTriangles: IVectorView[Double]
 }
 object Printing3DMeshVerificationResult {
   

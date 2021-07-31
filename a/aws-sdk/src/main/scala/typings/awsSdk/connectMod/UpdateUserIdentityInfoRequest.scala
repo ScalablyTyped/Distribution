@@ -2,26 +2,24 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateUserIdentityInfoRequest extends StObject {
   
   /**
     * The identity information for the user.
     */
-  var IdentityInfo: UserIdentityInfo = js.native
+  var IdentityInfo: UserIdentityInfo
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The identifier of the user account.
     */
-  var UserId: typings.awsSdk.connectMod.UserId = js.native
+  var UserId: typings.awsSdk.connectMod.UserId
 }
 object UpdateUserIdentityInfoRequest {
   

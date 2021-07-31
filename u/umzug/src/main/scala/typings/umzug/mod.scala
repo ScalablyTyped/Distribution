@@ -22,7 +22,6 @@ import typings.umzug.umzugStrings.reverting
 import typings.umzug.umzugStrings.sequelize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -35,9 +34,8 @@ object mod extends Shortcut {
   }
   @JSImport("umzug", JSImport.Namespace)
   @js.native
-  val ^ : UmzugStatic = js.native
+  val ^ : js.Object & UmzugStatic = js.native
   
-  @js.native
   trait DownToOptions extends StObject {
     
     /**
@@ -45,7 +43,7 @@ object mod extends Shortcut {
       * just run the migrations from the current state to the passed
       * migration name. down allows to pass 0 to revert everything.
       */
-    var to: String | `0` = js.native
+    var to: String | `0`
   }
   object DownToOptions {
     
@@ -63,12 +61,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ExecuteOptions extends StObject {
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var migrations: js.UndefOr[js.Array[String]] = js.native
+    var migrations: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ExecuteOptions {
     
@@ -98,14 +95,15 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait JSONStorageOptions extends Storage {
+  trait JSONStorageOptions
+    extends StObject
+       with Storage {
     
     /**
       * The path to the json storage.
       * Defaults to process.cwd() + '/umzug.json';
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object JSONStorageOptions {
     
@@ -130,28 +128,27 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Migration extends StObject {
     
-    def down(): js.Promise[_] = js.native
+    def down(): js.Promise[js.Any]
     
-    var file: String = js.native
+    var file: String
     
-    def migration(): js.Promise[_] = js.native
+    def migration(): js.Promise[js.Any]
     
-    def testFileName(needle: String): Boolean = js.native
+    def testFileName(needle: String): Boolean
     
-    def up(): js.Promise[_] = js.native
+    def up(): js.Promise[js.Any]
   }
   object Migration {
     
     @scala.inline
     def apply(
-      down: () => js.Promise[_],
+      down: () => js.Promise[js.Any],
       file: String,
-      migration: () => js.Promise[_],
+      migration: () => js.Promise[js.Any],
       testFileName: String => Boolean,
-      up: () => js.Promise[_]
+      up: () => js.Promise[js.Any]
     ): Migration = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction0(down), file = file.asInstanceOf[js.Any], migration = js.Any.fromFunction0(migration), testFileName = js.Any.fromFunction1(testFileName), up = js.Any.fromFunction0(up))
       __obj.asInstanceOf[Migration]
@@ -161,37 +158,38 @@ object mod extends Shortcut {
     implicit class MigrationMutableBuilder[Self <: Migration] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDown(value: () => js.Promise[_]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
+      def setDown(value: () => js.Promise[js.Any]): Self = StObject.set(x, "down", js.Any.fromFunction0(value))
       
       @scala.inline
       def setFile(value: String): Self = StObject.set(x, "file", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMigration(value: () => js.Promise[_]): Self = StObject.set(x, "migration", js.Any.fromFunction0(value))
+      def setMigration(value: () => js.Promise[js.Any]): Self = StObject.set(x, "migration", js.Any.fromFunction0(value))
       
       @scala.inline
       def setTestFileName(value: String => Boolean): Self = StObject.set(x, "testFileName", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setUp(value: () => js.Promise[_]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
+      def setUp(value: () => js.Promise[js.Any]): Self = StObject.set(x, "up", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
-  trait MigrationDefinitionWithName extends Migration {
+  trait MigrationDefinitionWithName
+    extends StObject
+       with Migration {
     
-    var name: String = js.native
+    var name: String
   }
   object MigrationDefinitionWithName {
     
     @scala.inline
     def apply(
-      down: () => js.Promise[_],
+      down: () => js.Promise[js.Any],
       file: String,
-      migration: () => js.Promise[_],
+      migration: () => js.Promise[js.Any],
       name: String,
       testFileName: String => Boolean,
-      up: () => js.Promise[_]
+      up: () => js.Promise[js.Any]
     ): MigrationDefinitionWithName = {
       val __obj = js.Dynamic.literal(down = js.Any.fromFunction0(down), file = file.asInstanceOf[js.Any], migration = js.Any.fromFunction0(migration), name = name.asInstanceOf[js.Any], testFileName = js.Any.fromFunction1(testFileName), up = js.Any.fromFunction0(up))
       __obj.asInstanceOf[MigrationDefinitionWithName]
@@ -205,7 +203,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MigrationOptions extends StObject {
     
     /**
@@ -216,25 +213,25 @@ object mod extends Shortcut {
       * See https://github.com/sequelize/umzug/tree/master/test/fixtures
       * for examples.
       */
-    var customResolver: js.UndefOr[js.Function1[/* path */ String, Down]] = js.native
+    var customResolver: js.UndefOr[js.Function1[/* path */ String, Down]] = js.undefined
     
     /*
       * The params that gets passed to the migrations.
       * Might be an array or a synchronous function which returns an array.
       */
-    var params: js.UndefOr[js.Array[_]] = js.native
+    var params: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** The path to the migrations directory. */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /** The pattern that determines whether or not a file is a migration. */
-    var pattern: js.UndefOr[RegExp] = js.native
+    var pattern: js.UndefOr[RegExp] = js.undefined
     
     /**
       * A function that receives and returns the to be executed function.
       * This can be used to modify the function.
       */
-    var wrap: js.UndefOr[js.Function1[/* fn */ js.Any, _]] = js.native
+    var wrap: js.UndefOr[js.Function1[/* fn */ js.Any, js.Any]] = js.undefined
   }
   object MigrationOptions {
     
@@ -254,7 +251,7 @@ object mod extends Shortcut {
       def setCustomResolverUndefined: Self = StObject.set(x, "customResolver", js.undefined)
       
       @scala.inline
-      def setParams(value: js.Array[_]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
+      def setParams(value: js.Array[js.Any]): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setParamsUndefined: Self = StObject.set(x, "params", js.undefined)
@@ -275,32 +272,33 @@ object mod extends Shortcut {
       def setPatternUndefined: Self = StObject.set(x, "pattern", js.undefined)
       
       @scala.inline
-      def setWrap(value: /* fn */ js.Any => _): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
+      def setWrap(value: /* fn */ js.Any => js.Any): Self = StObject.set(x, "wrap", js.Any.fromFunction1(value))
       
       @scala.inline
       def setWrapUndefined: Self = StObject.set(x, "wrap", js.undefined)
     }
   }
   
-  @js.native
-  trait MongoDBStorageOptions extends Storage {
+  trait MongoDBStorageOptions
+    extends StObject
+       with Storage {
     
     /**
       * The to be used Mongo collection cursor.
       * Defaults to collection created from collectionName attribute.
       */
-    var collection: js.UndefOr[Collection[DefaultSchema]] = js.native
+    var collection: js.UndefOr[Collection[DefaultSchema]] = js.undefined
     
     /**
       * The name of the collection used by the connection.
       * Defaults to 'migrations'
       */
-    var collectionName: js.UndefOr[String] = js.native
+    var collectionName: js.UndefOr[String] = js.undefined
     
     /**
       * The MongoDB database connection instance.
       */
-    var connection: js.UndefOr[Db] = js.native
+    var connection: js.UndefOr[Db] = js.undefined
   }
   object MongoDBStorageOptions {
     
@@ -337,45 +335,46 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
-  trait SequelizeStorageOptions extends Storage {
+  trait SequelizeStorageOptions
+    extends StObject
+       with Storage {
     
     /**
       * The name of table column holding migration name.
       * Defaults to 'name'.
       */
-    var columnName: String = js.native
+    var columnName: String
     
     /**
       * The type of the column holding migration name.
       * Defaults to `Sequelize.STRING`
       */
-    var columnType: DataTypeAbstract = js.native
+    var columnType: DataTypeAbstract
     
     /**
       * The to be used Sequelize model.
       * Must have column name matching `columnName` option
       * Optional of `sequelize` is passed.
       */
-    var model: js.UndefOr[Model[_, _, _]] = js.native
+    var model: js.UndefOr[Model[js.Any, js.Any, js.Any]] = js.undefined
     
     /**
       * The name of the to be used model.
       * Defaults to 'SequelizeMeta'
       */
-    var modelName: js.UndefOr[String] = js.native
+    var modelName: js.UndefOr[String] = js.undefined
     
     /**
       * The configured instance of Sequelize.
       * Optional if `model` is passed.
       */
-    var sequelize: js.UndefOr[Sequelize] = js.native
+    var sequelize: js.UndefOr[Sequelize] = js.undefined
     
     /**
       * The name of table to create if `model` option is not supplied
       * Defaults to `modelName`
       */
-    var tableName: js.UndefOr[String] = js.native
+    var tableName: js.UndefOr[String] = js.undefined
   }
   object SequelizeStorageOptions {
     
@@ -401,7 +400,7 @@ object mod extends Shortcut {
       def setColumnType(value: DataTypeAbstract): Self = StObject.set(x, "columnType", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setModel(value: Model[_, _, _]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      def setModel(value: Model[js.Any, js.Any, js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setModelName(value: String): Self = StObject.set(x, "modelName", value.asInstanceOf[js.Any])
@@ -431,25 +430,24 @@ object mod extends Shortcut {
     * This is done in order to allow rollbacks of tasks. This is the interface these `Storages` must
     * follow.
     */
-  @js.native
   trait Storage extends StObject {
     
     /** Gets list of executed migrations. */
-    def executed(): js.Promise[js.Array[String]] = js.native
+    def executed(): js.Promise[js.Array[String]]
     
     /**
       * Logs migration to be considered as executed.
       *
       * @param migrationName - Name of the migration to be logged.
       */
-    def logMigration(migrationName: String): js.Promise[Unit] = js.native
+    def logMigration(migrationName: String): js.Promise[Unit]
     
     /**
       * Unlogs migration to be considered as pending.
       *
       * @param migrationName - Name of the migration to be unlogged.
       */
-    def unlogMigration(migrationName: String): js.Promise[Unit] = js.native
+    def unlogMigration(migrationName: String): js.Promise[Unit]
   }
   object Storage {
     
@@ -567,39 +565,38 @@ object mod extends Shortcut {
     def up(options: UpToOptions): js.Promise[js.Array[Migration]] = js.native
   }
   
-  @js.native
   trait UmzugOptions extends StObject {
     
     /**
       * The name of the negative method in migrations.
       */
-    var downName: js.UndefOr[String] = js.native
+    var downName: js.UndefOr[String] = js.undefined
     
     /**
       * The logging function.
       * A function that gets executed everytime migrations start and have ended.
       */
-    var logging: js.UndefOr[Boolean | js.Function] = js.native
+    var logging: js.UndefOr[Boolean | js.Function] = js.undefined
     
     /**
       * Options for defined migration
       */
-    var migrations: js.UndefOr[MigrationOptions | js.Array[Migration]] = js.native
+    var migrations: js.UndefOr[MigrationOptions | js.Array[Migration]] = js.undefined
     
     /**
       * The storage.
       */
-    var storage: js.UndefOr[json | sequelize | mongodb | Storage] = js.native
+    var storage: js.UndefOr[json | sequelize | mongodb | Storage] = js.undefined
     
     /**
       * The options for the storage.
       */
-    var storageOptions: js.UndefOr[JSONStorageOptions | SequelizeStorageOptions | MongoDBStorageOptions | js.Object] = js.native
+    var storageOptions: js.UndefOr[JSONStorageOptions | SequelizeStorageOptions | MongoDBStorageOptions | js.Object] = js.undefined
     
     /**
       * The name of the positive method in migrations.
       */
-    var upName: js.UndefOr[String] = js.native
+    var upName: js.UndefOr[String] = js.undefined
   }
   object UmzugOptions {
     
@@ -655,21 +652,21 @@ object mod extends Shortcut {
   
   @js.native
   trait UmzugStatic
-    extends Instantiable0[Umzug]
+    extends StObject
+       with Instantiable0[Umzug]
        with Instantiable1[/* options */ UmzugOptions, Umzug] {
     
     def migrationsList(migrations: js.Array[MigrationDefinitionWithName]): js.Array[Migration] = js.native
-    def migrationsList(migrations: js.Array[MigrationDefinitionWithName], parameters: js.Array[_]): js.Array[Migration] = js.native
+    def migrationsList(migrations: js.Array[MigrationDefinitionWithName], parameters: js.Array[js.Any]): js.Array[Migration] = js.native
   }
   
-  @js.native
   trait UpDownMigrationsOptions extends StObject {
     
     /**
       * Running specific migrations while ignoring the right order, can be
       * done like this:
       */
-    var migrations: js.Array[String] = js.native
+    var migrations: js.Array[String]
   }
   object UpDownMigrationsOptions {
     
@@ -690,7 +687,6 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait UpToOptions extends StObject {
     
     /**
@@ -698,7 +694,7 @@ object mod extends Shortcut {
       * just run the migrations from the current state to the passed
       * migration name.
       */
-    var to: String = js.native
+    var to: String
   }
   object UpToOptions {
     
@@ -716,8 +712,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = UmzugStatic
+  type _To = js.Object & UmzugStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: UmzugStatic = ^
+  override def _to: js.Object & UmzugStatic = ^
 }

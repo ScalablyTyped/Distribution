@@ -1,48 +1,86 @@
 package typings.googleCloudFirestore
 
+import typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus
 import typings.googleCloudFirestore.FirebaseFirestore.Settings
+import typings.googleCloudFirestore.googleCloudFirestoreStrings.create
+import typings.googleCloudFirestore.googleCloudFirestoreStrings.delete
+import typings.googleCloudFirestore.googleCloudFirestoreStrings.set
+import typings.googleCloudFirestore.googleCloudFirestoreStrings.update
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@google-cloud/firestore", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@google-cloud/firestore", "BulkWriter")
   @js.native
   class BulkWriter protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.BulkWriter
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.BulkWriter
   
   @JSImport("@google-cloud/firestore", "BulkWriterError")
   @js.native
   class BulkWriterError ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.BulkWriterError
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.BulkWriterError {
+    
+    /** The status code of the error. */
+    /* CompleteClass */
+    override val code: GrpcStatus = js.native
+    
+    /** The document reference the operation was performed on. */
+    /* CompleteClass */
+    override val documentRef: typings.googleCloudFirestore.FirebaseFirestore.DocumentReference[js.Any] = js.native
+    
+    /** How many times this operation has been attempted unsuccessfully. */
+    /* CompleteClass */
+    override val failedAttempts: Double = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
+    /** The type of operation performed. */
+    /* CompleteClass */
+    override val operationType: create | set | update | delete = js.native
+  }
   
   @JSImport("@google-cloud/firestore", "CollectionGroup")
   @js.native
   class CollectionGroup[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.CollectionGroup[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.CollectionGroup[T]
   
   @JSImport("@google-cloud/firestore", "CollectionReference")
   @js.native
   class CollectionReference[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.CollectionReference[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.CollectionReference[T]
   
   @JSImport("@google-cloud/firestore", "DocumentReference")
   @js.native
   class DocumentReference[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.DocumentReference[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.DocumentReference[T]
   
   @JSImport("@google-cloud/firestore", "DocumentSnapshot")
   @js.native
   class DocumentSnapshot[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.DocumentSnapshot[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.DocumentSnapshot[T]
   
   @JSImport("@google-cloud/firestore", "FieldPath")
   @js.native
   class FieldPath protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.FieldPath {
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.FieldPath {
     /**
       * Creates a FieldPath from the provided field names. If more than one field
       * name is provided, the path will point to a nested field in a document.
@@ -50,25 +88,52 @@ object mod {
       * @param fieldNames A list of field names.
       */
     def this(fieldNames: String*) = this()
+    
+    /**
+      * Returns true if this `FieldPath` is equal to the provided one.
+      *
+      * @param other The `FieldPath` to compare against.
+      * @return true if this `FieldPath` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.FieldPath): Boolean = js.native
   }
   /* static members */
   object FieldPath {
+    
+    @JSImport("@google-cloud/firestore", "FieldPath")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a special sentinel FieldPath to refer to the ID of a document.
       * It can be used in queries to sort or filter by the document ID.
       */
-    @JSImport("@google-cloud/firestore", "FieldPath.documentId")
-    @js.native
-    def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = js.native
+    @scala.inline
+    def documentId(): typings.googleCloudFirestore.FirebaseFirestore.FieldPath = ^.asInstanceOf[js.Dynamic].applyDynamic("documentId")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldPath]
   }
   
   @JSImport("@google-cloud/firestore", "FieldValue")
   @js.native
   class FieldValue protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.FieldValue
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.FieldValue {
+    
+    /**
+      * Returns true if this `FieldValue` is equal to the provided one.
+      *
+      * @param other The `FieldValue` to compare against.
+      * @return true if this `FieldValue` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.FieldValue): Boolean = js.native
+  }
   /* static members */
   object FieldValue {
+    
+    @JSImport("@google-cloud/firestore", "FieldValue")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Returns a special value that can be used with set(), create() or update()
@@ -81,9 +146,8 @@ object mod {
       * @return The FieldValue sentinel for use in a call to set(), create() or
       * update().
       */
-    @JSImport("@google-cloud/firestore", "FieldValue.arrayRemove")
-    @js.native
-    def arrayRemove(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = js.native
+    @scala.inline
+    def arrayRemove(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayRemove")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
     
     /**
       * Returns a special value that can be used with set(), create() or update()
@@ -97,9 +161,8 @@ object mod {
       * @return The FieldValue sentinel for use in a call to set(), create() or
       * update().
       */
-    @JSImport("@google-cloud/firestore", "FieldValue.arrayUnion")
-    @js.native
-    def arrayUnion(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = js.native
+    @scala.inline
+    def arrayUnion(elements: js.Any*): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayUnion")(elements.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
     
     /**
       * Returns a sentinel for use with update() or set() with {merge:true} to
@@ -107,9 +170,8 @@ object mod {
       *
       * @return The FieldValue sentinel for use in a call to set() or update().
       */
-    @JSImport("@google-cloud/firestore", "FieldValue.delete")
-    @js.native
-    def delete(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = js.native
+    @scala.inline
+    def delete(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
     
     /**
       * Returns a special value that can be used with set(), create() or update()
@@ -128,9 +190,8 @@ object mod {
       * @return The FieldValue sentinel for use in a call to set(), create() or
       * update().
       */
-    @JSImport("@google-cloud/firestore", "FieldValue.increment")
-    @js.native
-    def increment(n: Double): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = js.native
+    @scala.inline
+    def increment(n: Double): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("increment")(n.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
     
     /**
       * Returns a sentinel used with set(), create() or update() to include a
@@ -139,9 +200,8 @@ object mod {
       * @return The FieldValue sentinel for use in a call to set(), create() or
       * update().
       */
-    @JSImport("@google-cloud/firestore", "FieldValue.serverTimestamp")
-    @js.native
-    def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = js.native
+    @scala.inline
+    def serverTimestamp(): typings.googleCloudFirestore.FirebaseFirestore.FieldValue = ^.asInstanceOf[js.Dynamic].applyDynamic("serverTimestamp")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.FieldValue]
   }
   
   @JSImport("@google-cloud/firestore", "Firestore")
@@ -151,14 +211,16 @@ object mod {
     * {@link https://firebase.google.com/docs/firestore/}
     */
   class Firestore ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.Firestore {
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.Firestore {
     def this(settings: Settings) = this()
   }
   
   @JSImport("@google-cloud/firestore", "GeoPoint")
   @js.native
   class GeoPoint protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.GeoPoint {
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.GeoPoint {
     /**
       * Creates a new immutable GeoPoint object with the provided latitude and
       * longitude values.
@@ -166,6 +228,21 @@ object mod {
       * @param longitude The longitude as number between -180 and 180.
       */
     def this(latitude: Double, longitude: Double) = this()
+    
+    /**
+      * Returns true if this `GeoPoint` is equal to the provided one.
+      *
+      * @param other The `GeoPoint` to compare against.
+      * @return true if this `GeoPoint` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.GeoPoint): Boolean = js.native
+    
+    /* CompleteClass */
+    override val latitude: Double = js.native
+    
+    /* CompleteClass */
+    override val longitude: Double = js.native
   }
   
   @JSImport("@google-cloud/firestore", "GrpcStatus")
@@ -173,67 +250,72 @@ object mod {
   object GrpcStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus & Double] = js.native
     
-    /* 10 */ val ABORTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.ABORTED with Double = js.native
+    /* 10 */ val ABORTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.ABORTED & Double = js.native
     
-    /* 6 */ val ALREADY_EXISTS: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.ALREADY_EXISTS with Double = js.native
+    /* 6 */ val ALREADY_EXISTS: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.ALREADY_EXISTS & Double = js.native
     
-    /* 1 */ val CANCELLED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.CANCELLED with Double = js.native
+    /* 1 */ val CANCELLED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.CANCELLED & Double = js.native
     
-    /* 15 */ val DATA_LOSS: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.DATA_LOSS with Double = js.native
+    /* 15 */ val DATA_LOSS: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.DATA_LOSS & Double = js.native
     
-    /* 4 */ val DEADLINE_EXCEEDED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.DEADLINE_EXCEEDED with Double = js.native
+    /* 4 */ val DEADLINE_EXCEEDED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.DEADLINE_EXCEEDED & Double = js.native
     
-    /* 9 */ val FAILED_PRECONDITION: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.FAILED_PRECONDITION with Double = js.native
+    /* 9 */ val FAILED_PRECONDITION: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.FAILED_PRECONDITION & Double = js.native
     
-    /* 13 */ val INTERNAL: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.INTERNAL with Double = js.native
+    /* 13 */ val INTERNAL: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.INTERNAL & Double = js.native
     
-    /* 3 */ val INVALID_ARGUMENT: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.INVALID_ARGUMENT with Double = js.native
+    /* 3 */ val INVALID_ARGUMENT: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.INVALID_ARGUMENT & Double = js.native
     
-    /* 5 */ val NOT_FOUND: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.NOT_FOUND with Double = js.native
+    /* 5 */ val NOT_FOUND: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.NOT_FOUND & Double = js.native
     
-    /* 0 */ val OK: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.OK with Double = js.native
+    /* 0 */ val OK: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.OK & Double = js.native
     
-    /* 11 */ val OUT_OF_RANGE: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.OUT_OF_RANGE with Double = js.native
+    /* 11 */ val OUT_OF_RANGE: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.OUT_OF_RANGE & Double = js.native
     
-    /* 7 */ val PERMISSION_DENIED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.PERMISSION_DENIED with Double = js.native
+    /* 7 */ val PERMISSION_DENIED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.PERMISSION_DENIED & Double = js.native
     
-    /* 8 */ val RESOURCE_EXHAUSTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.RESOURCE_EXHAUSTED with Double = js.native
+    /* 8 */ val RESOURCE_EXHAUSTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.RESOURCE_EXHAUSTED & Double = js.native
     
-    /* 16 */ val UNAUTHENTICATED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNAUTHENTICATED with Double = js.native
+    /* 16 */ val UNAUTHENTICATED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNAUTHENTICATED & Double = js.native
     
-    /* 14 */ val UNAVAILABLE: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNAVAILABLE with Double = js.native
+    /* 14 */ val UNAVAILABLE: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNAVAILABLE & Double = js.native
     
-    /* 12 */ val UNIMPLEMENTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNIMPLEMENTED with Double = js.native
+    /* 12 */ val UNIMPLEMENTED: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNIMPLEMENTED & Double = js.native
     
-    /* 2 */ val UNKNOWN: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNKNOWN with Double = js.native
+    /* 2 */ val UNKNOWN: typings.googleCloudFirestore.FirebaseFirestore.GrpcStatus.UNKNOWN & Double = js.native
   }
   
   @JSImport("@google-cloud/firestore", "Query")
   @js.native
   class Query[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.Query[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.Query[T]
   
   @JSImport("@google-cloud/firestore", "QueryDocumentSnapshot")
   @js.native
   class QueryDocumentSnapshot[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.QueryDocumentSnapshot[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.QueryDocumentSnapshot[T]
   
   @JSImport("@google-cloud/firestore", "QueryPartition")
   @js.native
   class QueryPartition[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.QueryPartition[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.QueryPartition[T]
   
   @JSImport("@google-cloud/firestore", "QuerySnapshot")
   @js.native
   class QuerySnapshot[T] protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.QuerySnapshot[T]
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.QuerySnapshot[T]
   
   @JSImport("@google-cloud/firestore", "Timestamp")
   @js.native
   class Timestamp protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.Timestamp {
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.Timestamp {
     /**
       * Creates a new timestamp.
       *
@@ -246,9 +328,51 @@ object mod {
       * 0 to 999,999,999 inclusive.
       */
     def this(seconds: Double, nanoseconds: Double) = this()
+    
+    /**
+      * Returns true if this `Timestamp` is equal to the provided one.
+      *
+      * @param other The `Timestamp` to compare against.
+      * @return 'true' if this `Timestamp` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.Timestamp): Boolean = js.native
+    
+    /** The non-negative fractions of a second at nanosecond resolution. */
+    /* CompleteClass */
+    override val nanoseconds: Double = js.native
+    
+    /**
+      * The number of seconds of UTC time since Unix epoch 1970-01-01T00:00:00Z.
+      */
+    /* CompleteClass */
+    override val seconds: Double = js.native
+    
+    /**
+      * Returns a new `Date` corresponding to this timestamp. This may lose
+      * precision.
+      *
+      * @return JavaScript `Date` object representing the same point in time as
+      * this `Timestamp`, with millisecond precision.
+      */
+    /* CompleteClass */
+    override def toDate(): Date = js.native
+    
+    /**
+      * Returns the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
+      *
+      * @return The point in time corresponding to this timestamp, represented as
+      * the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
+      */
+    /* CompleteClass */
+    override def toMillis(): Double = js.native
   }
   /* static members */
   object Timestamp {
+    
+    @JSImport("@google-cloud/firestore", "Timestamp")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Creates a new timestamp from the given date.
@@ -257,9 +381,8 @@ object mod {
       * @return A new `Timestamp` representing the same point in time as the
       * given date.
       */
-    @JSImport("@google-cloud/firestore", "Timestamp.fromDate")
-    @js.native
-    def fromDate(date: Date): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = js.native
+    @scala.inline
+    def fromDate(date: Date): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
     
     /**
       * Creates a new timestamp from the given number of milliseconds.
@@ -269,34 +392,51 @@ object mod {
       * @return A new `Timestamp` representing the same point in time as the
       * given number of milliseconds.
       */
-    @JSImport("@google-cloud/firestore", "Timestamp.fromMillis")
-    @js.native
-    def fromMillis(milliseconds: Double): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = js.native
+    @scala.inline
+    def fromMillis(milliseconds: Double): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
     
     /**
       * Creates a new timestamp with the current date, with millisecond precision.
       *
       * @return A new `Timestamp` representing the current date.
       */
-    @JSImport("@google-cloud/firestore", "Timestamp.now")
-    @js.native
-    def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = js.native
+    @scala.inline
+    def now(): typings.googleCloudFirestore.FirebaseFirestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.googleCloudFirestore.FirebaseFirestore.Timestamp]
   }
   
   @JSImport("@google-cloud/firestore", "Transaction")
   @js.native
   class Transaction protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.Transaction
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.Transaction
   
   @JSImport("@google-cloud/firestore", "WriteBatch")
   @js.native
   class WriteBatch protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.WriteBatch
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.WriteBatch
   
   @JSImport("@google-cloud/firestore", "WriteResult")
   @js.native
   class WriteResult protected ()
-    extends typings.googleCloudFirestore.FirebaseFirestore.WriteResult
+    extends StObject
+       with typings.googleCloudFirestore.FirebaseFirestore.WriteResult {
+    
+    /**
+      * Returns true if this `WriteResult` is equal to the provided one.
+      *
+      * @param other The `WriteResult` to compare against.
+      * @return true if this `WriteResult` is equal to the provided one.
+      */
+    /* CompleteClass */
+    override def isEqual(other: typings.googleCloudFirestore.FirebaseFirestore.WriteResult): Boolean = js.native
+    
+    /**
+      * The write time as set by the Firestore servers.
+      */
+    /* CompleteClass */
+    override val writeTime: typings.googleCloudFirestore.FirebaseFirestore.Timestamp = js.native
+  }
   
   /**
     * Sets or disables the log function for all active Firestore instances.
@@ -304,12 +444,10 @@ object mod {
     * @param logger A log function that takes a message (such as `console.log`) or
     * `null` to turn off logging.
     */
-  @JSImport("@google-cloud/firestore", "setLogFunction")
-  @js.native
-  def setLogFunction(): Unit = js.native
-  @JSImport("@google-cloud/firestore", "setLogFunction")
-  @js.native
-  def setLogFunction(logger: js.Function1[/* msg */ String, Unit]): Unit = js.native
+  @scala.inline
+  def setLogFunction(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")().asInstanceOf[Unit]
+  @scala.inline
+  def setLogFunction(logger: js.Function1[/* msg */ String, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogFunction")(logger.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   object v1 {
     

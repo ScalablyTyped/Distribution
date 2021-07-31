@@ -2,17 +2,15 @@ package typings.reactDates.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SingleDatePickerInputPhrases extends StObject {
   
-  var clearDate: js.UndefOr[String] = js.native
+  var clearDate: js.UndefOr[String] = js.undefined
   
-  var keyboardBackwardNavigationInstructions: js.UndefOr[String] = js.native
+  var keyboardBackwardNavigationInstructions: js.UndefOr[String] = js.undefined
   
-  var keyboardForwardNavigationInstructions: js.UndefOr[String] = js.native
+  var keyboardForwardNavigationInstructions: js.UndefOr[String] = js.undefined
 }
 object SingleDatePickerInputPhrases {
   

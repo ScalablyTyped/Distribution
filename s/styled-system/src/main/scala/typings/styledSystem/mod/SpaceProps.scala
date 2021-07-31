@@ -2,95 +2,93 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SpaceProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /** Margin on top, left, bottom and right */
-  var m: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var m: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on top, left, bottom and right */
-  var margin: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var margin: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on bottom */
-  var marginBottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var marginBottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on left */
-  var marginLeft: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var marginLeft: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on right */
-  var marginRight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var marginRight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on top */
-  var marginTop: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var marginTop: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on left and right */
-  var marginX: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var marginX: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on top and bottom */
-  var marginY: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var marginY: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on bottom */
-  var mb: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var mb: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on left */
-  var ml: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var ml: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on right */
-  var mr: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var mr: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on top */
-  var mt: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var mt: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on left and right */
-  var mx: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var mx: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Margin on top and bottom */
-  var my: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var my: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on top, left, bottom and right */
-  var p: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var p: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on top, left, bottom and right */
-  var padding: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var padding: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on bottom */
-  var paddingBottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var paddingBottom: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on left */
-  var paddingLeft: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var paddingLeft: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on right */
-  var paddingRight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var paddingRight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on top */
-  var paddingTop: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var paddingTop: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on left and right */
-  var paddingX: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var paddingX: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on top and bottom */
-  var paddingY: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var paddingY: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on bottom */
-  var pb: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var pb: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on left */
-  var pl: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var pl: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on right */
-  var pr: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var pr: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on top */
-  var pt: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var pt: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on left and right */
-  var px: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var px: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /** Padding on top and bottom */
-  var py: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var py: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object SpaceProps {
   
@@ -101,7 +99,7 @@ object SpaceProps {
   }
   
   @scala.inline
-  implicit class SpacePropsMutableBuilder[Self <: SpaceProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (SpaceProps[ThemeType, TVal])) extends AnyVal {
+  implicit class SpacePropsMutableBuilder[Self <: SpaceProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (SpaceProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setM(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "m", value.asInstanceOf[js.Any])

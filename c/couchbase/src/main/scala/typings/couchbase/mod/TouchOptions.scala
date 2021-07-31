@@ -2,21 +2,19 @@ package typings.couchbase.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchOptions extends StObject {
   
   /**
     *     Ensures this operation is persisted to this many nodes.
     */
-  var persist_to: js.UndefOr[Double] = js.native
+  var persist_to: js.UndefOr[Double] = js.undefined
   
   /**
     * Ensures this operation is replicated to this many nodes.
     */
-  var replicate_to: js.UndefOr[Double] = js.native
+  var replicate_to: js.UndefOr[Double] = js.undefined
 }
 object TouchOptions {
   

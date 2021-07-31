@@ -4,17 +4,15 @@ import typings.jestTypes.configMod.Glob
 import typings.jestTypes.configMod.Path
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var stack: String = js.native
+    var stack: String
   }
   object Message {
     
@@ -36,12 +34,11 @@ object anon {
   }
   
   /* Inlined std.Pick<@jest/types.@jest/types.Config.ProjectConfig, 'rootDir' | 'testMatch'> */
-  @js.native
   trait PickProjectConfigrootDirt extends StObject {
     
-    var rootDir: Path = js.native
+    var rootDir: Path
     
-    var testMatch: js.Array[Glob] = js.native
+    var testMatch: js.Array[Glob]
   }
   object PickProjectConfigrootDirt {
     

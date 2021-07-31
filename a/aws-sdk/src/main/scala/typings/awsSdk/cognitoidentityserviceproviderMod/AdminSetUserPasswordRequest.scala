@@ -2,31 +2,29 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminSetUserPasswordRequest extends StObject {
   
   /**
     * The password for the user.
     */
-  var Password: PasswordType = js.native
+  var Password: PasswordType
   
   /**
     *  True if the password is permanent, False if it is temporary.
     */
-  var Permanent: js.UndefOr[BooleanType] = js.native
+  var Permanent: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * The user pool ID for the user pool where you want to set the user's password.
     */
-  var UserPoolId: UserPoolIdType = js.native
+  var UserPoolId: UserPoolIdType
   
   /**
     * The user name of the user whose password you wish to set.
     */
-  var Username: UsernameType = js.native
+  var Username: UsernameType
 }
 object AdminSetUserPasswordRequest {
   

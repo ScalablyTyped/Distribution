@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPlanResponse extends StObject {
   
   /**
     * A Python script to perform the mapping.
     */
-  var PythonScript: js.UndefOr[typings.awsSdk.glueMod.PythonScript] = js.native
+  var PythonScript: js.UndefOr[typings.awsSdk.glueMod.PythonScript] = js.undefined
   
   /**
     * The Scala code to perform the mapping.
     */
-  var ScalaCode: js.UndefOr[typings.awsSdk.glueMod.ScalaCode] = js.native
+  var ScalaCode: js.UndefOr[typings.awsSdk.glueMod.ScalaCode] = js.undefined
 }
 object GetPlanResponse {
   

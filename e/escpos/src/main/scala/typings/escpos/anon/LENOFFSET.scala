@@ -2,36 +2,27 @@ package typings.escpos.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LENOFFSET extends StObject {
   
-  var LEN_OFFSET: typings.escpos.escposNumbers.`3` = js.native
+  var LEN_OFFSET: typings.escpos.escposNumbers.`3`
   
-  var LEVEL: OPTIONS = js.native
+  var LEVEL: OPTIONS
   
-  var PIXEL_SIZE: CMD = js.native
+  var PIXEL_SIZE: CMD
   
-  var PRINTBUF: CMDP2 = js.native
+  var PRINTBUF: CMDP2
   
-  var SAVEBUF: CMDP1 = js.native
+  var SAVEBUF: CMDP1
   
-  var VERSION: DEFAULT = js.native
+  var VERSION: DEFAULT
 }
 object LENOFFSET {
   
   @scala.inline
-  def apply(
-    LEN_OFFSET: typings.escpos.escposNumbers.`3`,
-    LEVEL: OPTIONS,
-    PIXEL_SIZE: CMD,
-    PRINTBUF: CMDP2,
-    SAVEBUF: CMDP1,
-    VERSION: DEFAULT
-  ): LENOFFSET = {
-    val __obj = js.Dynamic.literal(LEN_OFFSET = LEN_OFFSET.asInstanceOf[js.Any], LEVEL = LEVEL.asInstanceOf[js.Any], PIXEL_SIZE = PIXEL_SIZE.asInstanceOf[js.Any], PRINTBUF = PRINTBUF.asInstanceOf[js.Any], SAVEBUF = SAVEBUF.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
+  def apply(LEVEL: OPTIONS, PIXEL_SIZE: CMD, PRINTBUF: CMDP2, SAVEBUF: CMDP1, VERSION: DEFAULT): LENOFFSET = {
+    val __obj = js.Dynamic.literal(LEN_OFFSET = 3, LEVEL = LEVEL.asInstanceOf[js.Any], PIXEL_SIZE = PIXEL_SIZE.asInstanceOf[js.Any], PRINTBUF = PRINTBUF.asInstanceOf[js.Any], SAVEBUF = SAVEBUF.asInstanceOf[js.Any], VERSION = VERSION.asInstanceOf[js.Any])
     __obj.asInstanceOf[LENOFFSET]
   }
   

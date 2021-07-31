@@ -3,20 +3,18 @@ package typings.tedious.mod
 import typings.tedious.tediousStrings.max
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParameterOptions extends StObject {
   
   //  for VarChar, NVarChar, VarBinary
-  var length: js.UndefOr[Double | max] = js.native
+  var length: js.UndefOr[Double | max] = js.undefined
   
   // precision for Numeric, Decimal
-  var precision: js.UndefOr[Double] = js.native
+  var precision: js.UndefOr[Double] = js.undefined
   
   // scale for Numeric, Decimal, Time, DateTime2, DateTimeOffset
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
 }
 object ParameterOptions {
   

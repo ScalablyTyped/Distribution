@@ -5,7 +5,6 @@ import typings.std.AsyncIterable
 import typings.std.ReadableStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,10 +21,12 @@ object mod {
     * @param {boolean} [options.preventCancel=boolean]
     * @returns {AsyncIterable<T>}
     */
+  @scala.inline
+  def apply[T](stream: ReadableStream[T]): AsyncIterable[T] = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[AsyncIterable[T]]
+  @scala.inline
+  def apply[T](stream: ReadableStream[T], options: PreventCancel): AsyncIterable[T] = (^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterable[T]]
+  
   @JSImport("browser-readablestream-to-it/dist", JSImport.Namespace)
   @js.native
-  def apply[T](stream: ReadableStream[T]): AsyncIterable[T] = js.native
-  @JSImport("browser-readablestream-to-it/dist", JSImport.Namespace)
-  @js.native
-  def apply[T](stream: ReadableStream[T], options: PreventCancel): AsyncIterable[T] = js.native
+  val ^ : js.Any = js.native
 }

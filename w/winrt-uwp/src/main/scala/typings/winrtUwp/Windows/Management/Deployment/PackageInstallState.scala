@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Management.Deployment
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,17 +13,25 @@ object PackageInstallState extends StObject {
   
   /** The package is ready for use. */
   @js.native
-  sealed trait installed extends PackageInstallState
+  sealed trait installed
+    extends StObject
+       with PackageInstallState
   
   /** The package has not been installed. */
   @js.native
-  sealed trait notInstalled extends PackageInstallState
+  sealed trait notInstalled
+    extends StObject
+       with PackageInstallState
   
   /** The installation of the package has been paused. */
   @js.native
-  sealed trait paused extends PackageInstallState
+  sealed trait paused
+    extends StObject
+       with PackageInstallState
   
   /** The package has been downloaded. */
   @js.native
-  sealed trait staged extends PackageInstallState
+  sealed trait staged
+    extends StObject
+       with PackageInstallState
 }

@@ -2,56 +2,54 @@ package typings.awsSdk.computeoptimizerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoScalingGroupRecommendation extends StObject {
   
   /**
     * The AWS account ID of the Auto Scaling group.
     */
-  var accountId: js.UndefOr[AccountId] = js.native
+  var accountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Auto Scaling group.
     */
-  var autoScalingGroupArn: js.UndefOr[AutoScalingGroupArn] = js.native
+  var autoScalingGroupArn: js.UndefOr[AutoScalingGroupArn] = js.undefined
   
   /**
     * The name of the Auto Scaling group.
     */
-  var autoScalingGroupName: js.UndefOr[AutoScalingGroupName] = js.native
+  var autoScalingGroupName: js.UndefOr[AutoScalingGroupName] = js.undefined
   
   /**
     * An array of objects that describe the current configuration of the Auto Scaling group.
     */
-  var currentConfiguration: js.UndefOr[AutoScalingGroupConfiguration] = js.native
+  var currentConfiguration: js.UndefOr[AutoScalingGroupConfiguration] = js.undefined
   
   /**
     * The finding classification for the Auto Scaling group. Findings for Auto Scaling groups include:     NotOptimized —An Auto Scaling group is considered not optimized when AWS Compute Optimizer identifies a recommendation that can provide better performance for your workload.     Optimized —An Auto Scaling group is considered optimized when Compute Optimizer determines that the group is correctly provisioned to run your workload based on the chosen instance type. For optimized resources, Compute Optimizer might recommend a new generation instance type.    The values that are returned might be NOT_OPTIMIZED or OPTIMIZED. 
     */
-  var finding: js.UndefOr[Finding] = js.native
+  var finding: js.UndefOr[Finding] = js.undefined
   
   /**
     * The time stamp of when the Auto Scaling group recommendation was last refreshed.
     */
-  var lastRefreshTimestamp: js.UndefOr[LastRefreshTimestamp] = js.native
+  var lastRefreshTimestamp: js.UndefOr[LastRefreshTimestamp] = js.undefined
   
   /**
     * The number of days for which utilization metrics were analyzed for the Auto Scaling group.
     */
-  var lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.native
+  var lookBackPeriodInDays: js.UndefOr[LookBackPeriodInDays] = js.undefined
   
   /**
     * An array of objects that describe the recommendation options for the Auto Scaling group.
     */
-  var recommendationOptions: js.UndefOr[AutoScalingGroupRecommendationOptions] = js.native
+  var recommendationOptions: js.UndefOr[AutoScalingGroupRecommendationOptions] = js.undefined
   
   /**
     * An array of objects that describe the utilization metrics of the Auto Scaling group.
     */
-  var utilizationMetrics: js.UndefOr[UtilizationMetrics] = js.native
+  var utilizationMetrics: js.UndefOr[UtilizationMetrics] = js.undefined
 }
 object AutoScalingGroupRecommendation {
   

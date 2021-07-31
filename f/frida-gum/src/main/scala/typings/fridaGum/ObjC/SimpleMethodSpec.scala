@@ -2,26 +2,26 @@ package typings.fridaGum.ObjC
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SimpleMethodSpec[I] extends MethodSpec[I] {
+trait SimpleMethodSpec[I]
+  extends StObject
+     with MethodSpec[I] {
   
   /**
     * Argument types.
     */
-  var argTypes: js.Array[String] = js.native
+  var argTypes: js.Array[String]
   
   /**
     * Implementation.
     */
-  var implementation: I = js.native
+  var implementation: I
   
   /**
     * Return type.
     */
-  var retType: String = js.native
+  var retType: String
 }
 object SimpleMethodSpec {
   
@@ -32,7 +32,7 @@ object SimpleMethodSpec {
   }
   
   @scala.inline
-  implicit class SimpleMethodSpecMutableBuilder[Self <: SimpleMethodSpec[_], I] (val x: Self with SimpleMethodSpec[I]) extends AnyVal {
+  implicit class SimpleMethodSpecMutableBuilder[Self <: SimpleMethodSpec[?], I] (val x: Self & SimpleMethodSpec[I]) extends AnyVal {
     
     @scala.inline
     def setArgTypes(value: js.Array[String]): Self = StObject.set(x, "argTypes", value.asInstanceOf[js.Any])

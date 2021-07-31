@@ -10,9 +10,9 @@ TypeScript typings for Google Docs API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.docs |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 15 |
 | # dependents       | 1 |
-| # downloads        | 73 |
+| # downloads        | 1531 |
 | # stars            | 0 |
 
 ## Links

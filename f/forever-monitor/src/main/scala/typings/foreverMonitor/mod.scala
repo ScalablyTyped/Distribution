@@ -7,10 +7,13 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("forever-monitor", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("forever-monitor", "Monitor")
   @js.native
@@ -67,101 +70,82 @@ object mod {
     def trySpawn(): Boolean = js.native
   }
   
-  @JSImport("forever-monitor", "checkProcess")
-  @js.native
-  def checkProcess(pid: Double): Boolean = js.native
+  @scala.inline
+  def checkProcess(pid: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("checkProcess")(pid.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(pid: Double): Unit = js.native
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(
-    pid: Double,
-    killTree: js.UndefOr[scala.Nothing],
-    signal: js.UndefOr[scala.Nothing],
-    callback: js.Function0[_]
-  ): Unit = js.native
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(pid: Double, killTree: js.UndefOr[scala.Nothing], signal: String): Unit = js.native
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(pid: Double, killTree: js.UndefOr[scala.Nothing], signal: String, callback: js.Function0[_]): Unit = js.native
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(pid: Double, killTree: Boolean): Unit = js.native
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(pid: Double, killTree: Boolean, signal: js.UndefOr[scala.Nothing], callback: js.Function0[_]): Unit = js.native
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(pid: Double, killTree: Boolean, signal: String): Unit = js.native
-  @JSImport("forever-monitor", "kill")
-  @js.native
-  def kill(pid: Double, killTree: Boolean, signal: String, callback: js.Function0[_]): Unit = js.native
+  @scala.inline
+  def kill(pid: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, killTree: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, killTree: Boolean, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, killTree: Boolean, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, killTree: Boolean, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, killTree: Unit, signal: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, killTree: Unit, signal: String, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def kill(pid: Double, killTree: Unit, signal: Unit, callback: js.Function0[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("kill")(pid.asInstanceOf[js.Any], killTree.asInstanceOf[js.Any], signal.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("forever-monitor", "start")
-  @js.native
-  def start(script: String): Monitor = js.native
-  @JSImport("forever-monitor", "start")
-  @js.native
-  def start(script: String, options: Options): Monitor = js.native
-  @JSImport("forever-monitor", "start")
-  @js.native
-  def start(script: js.Array[String]): Monitor = js.native
-  @JSImport("forever-monitor", "start")
-  @js.native
-  def start(script: js.Array[String], options: Options): Monitor = js.native
+  @scala.inline
+  def start(script: String): Monitor = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any]).asInstanceOf[Monitor]
+  @scala.inline
+  def start(script: String, options: Options): Monitor = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Monitor]
+  @scala.inline
+  def start(script: js.Array[String]): Monitor = ^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any]).asInstanceOf[Monitor]
+  @scala.inline
+  def start(script: js.Array[String], options: Options): Monitor = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(script.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Monitor]
   
   @JSImport("forever-monitor", "version")
   @js.native
   val version: String = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var command: js.UndefOr[String] = js.native
+    var command: js.UndefOr[String] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
     
-    var errFile: js.UndefOr[String] = js.native
+    var errFile: js.UndefOr[String] = js.undefined
     
-    var killTree: js.UndefOr[Boolean] = js.native
+    var killTree: js.UndefOr[Boolean] = js.undefined
     
-    var logFile: js.UndefOr[String] = js.native
+    var logFile: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var minUptime: js.UndefOr[Double] = js.native
+    var minUptime: js.UndefOr[Double] = js.undefined
     
-    var outFile: js.UndefOr[String] = js.native
+    var outFile: js.UndefOr[String] = js.undefined
     
-    var parser: js.UndefOr[js.Function2[/* command */ String, /* args */ js.Array[String], Args]] = js.native
+    var parser: js.UndefOr[js.Function2[/* command */ String, /* args */ js.Array[String], Args]] = js.undefined
     
-    var pidFile: js.UndefOr[String] = js.native
+    var pidFile: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var sourceDir: js.UndefOr[String] = js.native
+    var sourceDir: js.UndefOr[String] = js.undefined
     
-    var spawnWith: js.UndefOr[SpawnWith] = js.native
+    var spawnWith: js.UndefOr[SpawnWith] = js.undefined
     
-    var spinSleepTime: js.UndefOr[Double] = js.native
+    var spinSleepTime: js.UndefOr[Double] = js.undefined
     
-    var uid: js.UndefOr[String] = js.native
+    var uid: js.UndefOr[String] = js.undefined
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
     
-    var watchDirectory: js.UndefOr[String] = js.native
+    var watchDirectory: js.UndefOr[String] = js.undefined
     
-    var watchIgnoreDotFiles: js.UndefOr[Boolean] = js.native
+    var watchIgnoreDotFiles: js.UndefOr[Boolean] = js.undefined
     
-    var watchIgnorePatterns: js.UndefOr[js.Array[String]] = js.native
+    var watchIgnorePatterns: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -308,16 +292,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SpawnWith extends StObject {
     
-    var customFds: js.Array[Double] = js.native
+    var customFds: js.Array[Double]
     
-    var gid: Double = js.native
+    var gid: Double
     
-    var setsid: Boolean = js.native
+    var setsid: Boolean
     
-    var uid: Double = js.native
+    var uid: Double
   }
   object SpawnWith {
     

@@ -2,51 +2,49 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartPiiEntitiesDetectionJobRequest extends StObject {
   
   /**
     * A unique identifier for the request. If you don't set the client request token, Amazon Comprehend generates one.
     */
-  var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.native
+  var ClientRequestToken: js.UndefOr[ClientRequestTokenString] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that grants Amazon Comprehend read access to your input data.
     */
-  var DataAccessRoleArn: IamRoleArn = js.native
+  var DataAccessRoleArn: IamRoleArn
   
   /**
     * The input properties for a PII entities detection job.
     */
-  var InputDataConfig: typings.awsSdk.comprehendMod.InputDataConfig = js.native
+  var InputDataConfig: typings.awsSdk.comprehendMod.InputDataConfig
   
   /**
     * The identifier of the job.
     */
-  var JobName: js.UndefOr[typings.awsSdk.comprehendMod.JobName] = js.native
+  var JobName: js.UndefOr[typings.awsSdk.comprehendMod.JobName] = js.undefined
   
   /**
     * The language of the input documents.
     */
-  var LanguageCode: typings.awsSdk.comprehendMod.LanguageCode = js.native
+  var LanguageCode: typings.awsSdk.comprehendMod.LanguageCode
   
   /**
     * Specifies whether the output provides the locations (offsets) of PII entities or a file in which PII entities are redacted.
     */
-  var Mode: PiiEntitiesDetectionMode = js.native
+  var Mode: PiiEntitiesDetectionMode
   
   /**
     * Provides conﬁguration parameters for the output of PII entity detection jobs.
     */
-  var OutputDataConfig: typings.awsSdk.comprehendMod.OutputDataConfig = js.native
+  var OutputDataConfig: typings.awsSdk.comprehendMod.OutputDataConfig
   
   /**
     * Provides configuration parameters for PII entity redaction. This parameter is required if you set the Mode parameter to ONLY_REDACTION. In that case, you must provide a RedactionConfig definition that includes the PiiEntityTypes parameter.
     */
-  var RedactionConfig: js.UndefOr[typings.awsSdk.comprehendMod.RedactionConfig] = js.native
+  var RedactionConfig: js.UndefOr[typings.awsSdk.comprehendMod.RedactionConfig] = js.undefined
 }
 object StartPiiEntitiesDetectionJobRequest {
   

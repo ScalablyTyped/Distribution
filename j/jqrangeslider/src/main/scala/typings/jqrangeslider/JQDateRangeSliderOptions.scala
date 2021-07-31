@@ -3,22 +3,22 @@ package typings.jqrangeslider
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JQDateRangeSliderOptions extends JQRangeSliderOptions {
+trait JQDateRangeSliderOptions
+  extends StObject
+     with JQRangeSliderOptions {
   
-  var bounds: js.UndefOr[JQRangeSliderDateRange] = js.native
+  var bounds: js.UndefOr[JQRangeSliderDateRange] = js.undefined
   
   // min and max values of the slider
-  var defaultValues: js.UndefOr[JQRangeSliderDateRange] = js.native
+  var defaultValues: js.UndefOr[JQRangeSliderDateRange] = js.undefined
   
   // values selected by default on construction
-  var formatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.native
+  var formatter: js.UndefOr[js.Function1[/* date */ Date, String]] = js.undefined
   
   // customize displayed label text
-  var step: js.UndefOr[JQRangeSliderDateSteps] = js.native
+  var step: js.UndefOr[JQRangeSliderDateSteps] = js.undefined
 }
 object JQDateRangeSliderOptions {
   

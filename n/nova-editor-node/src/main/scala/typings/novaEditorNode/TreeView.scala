@@ -3,12 +3,13 @@ package typings.novaEditorNode
 import typings.novaEditorNode.anon.Focus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/tree-view/
 @js.native
-trait TreeView[E] extends Disposable {
+trait TreeView[E]
+  extends StObject
+     with Disposable {
   
   def onDidChangeSelection(callback: js.Function1[/* selectedElements */ js.Array[E], Unit]): Disposable = js.native
   

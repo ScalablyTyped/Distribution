@@ -2,20 +2,18 @@ package typings.sharp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheOptions extends StObject {
   
   /** Is the maximum number of files to hold open (optional, default 20) */
-  var files: js.UndefOr[Double] = js.native
+  var files: js.UndefOr[Double] = js.undefined
   
   /** Is the maximum number of operations to cache (optional, default 100) */
-  var items: js.UndefOr[Double] = js.native
+  var items: js.UndefOr[Double] = js.undefined
   
   /** Is the maximum memory in MB to use for this cache (optional, default 50) */
-  var memory: js.UndefOr[Double] = js.native
+  var memory: js.UndefOr[Double] = js.undefined
 }
 object CacheOptions {
   

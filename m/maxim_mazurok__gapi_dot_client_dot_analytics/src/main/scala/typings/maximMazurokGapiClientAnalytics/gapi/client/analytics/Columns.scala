@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientAnalytics.gapi.client.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
   /** List of attributes names returned by columns. */
-  var attributeNames: js.UndefOr[js.Array[String]] = js.native
+  var attributeNames: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Etag of collection. This etag can be compared with the last response etag to check if response has changed. */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /** List of columns for a report type. */
-  var items: js.UndefOr[js.Array[Column]] = js.native
+  var items: js.UndefOr[js.Array[Column]] = js.undefined
   
   /** Collection type. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Total number of columns returned in the response. */
-  var totalResults: js.UndefOr[Double] = js.native
+  var totalResults: js.UndefOr[Double] = js.undefined
 }
 object Columns {
   

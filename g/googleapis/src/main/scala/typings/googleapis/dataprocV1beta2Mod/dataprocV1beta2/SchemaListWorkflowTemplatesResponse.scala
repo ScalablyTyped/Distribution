@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to a request to list workflow templates in a project.
   */
-@js.native
 trait SchemaListWorkflowTemplatesResponse extends StObject {
   
   /**
@@ -17,12 +15,12 @@ trait SchemaListWorkflowTemplatesResponse extends StObject {
     * page_token in a subsequent
     * &lt;code&gt;ListWorkflowTemplatesRequest&lt;/code&gt;.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. WorkflowTemplates list.
     */
-  var templates: js.UndefOr[js.Array[SchemaWorkflowTemplate]] = js.native
+  var templates: js.UndefOr[js.Array[SchemaWorkflowTemplate]] = js.undefined
 }
 object SchemaListWorkflowTemplatesResponse {
   

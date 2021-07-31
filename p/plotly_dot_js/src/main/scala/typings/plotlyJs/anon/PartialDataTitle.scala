@@ -10,22 +10,20 @@ import typings.plotlyJs.plotlyJsStrings.`top right`
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.DataTitle> */
-@js.native
 trait PartialDataTitle extends StObject {
   
-  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.native
+  var font: js.UndefOr[Partial[typings.plotlyJs.mod.Font]] = js.undefined
   
   var position: js.UndefOr[
     (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
-  ] = js.native
+  ] = js.undefined
   
-  var standoff: js.UndefOr[Double] = js.native
+  var standoff: js.UndefOr[Double] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object PartialDataTitle {
   

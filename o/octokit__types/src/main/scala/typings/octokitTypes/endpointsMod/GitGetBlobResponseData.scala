@@ -2,21 +2,19 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitGetBlobResponseData extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var encoding: String = js.native
+  var encoding: String
   
-  var sha: String = js.native
+  var sha: String
   
-  var size: Double = js.native
+  var size: Double
   
-  var url: String = js.native
+  var url: String
 }
 object GitGetBlobResponseData {
   

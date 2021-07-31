@@ -2,30 +2,28 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides error information for the ErrorOccurred event. */
-@js.native
 trait MagneticStripeReaderErrorOccurredEventArgs extends StObject {
   
   /** Gets the error information, such as cause of error, severity, error message, and any available vendor specific error information. */
-  var errorData: UnifiedPosErrorData = js.native
+  var errorData: UnifiedPosErrorData
   
   /** Gets the track data for tracks the did not have errors. */
-  var partialInputData: MagneticStripeReaderReport = js.native
+  var partialInputData: MagneticStripeReaderReport
   
   /** Gets the Track 1 error information. */
-  var track1Status: MagneticStripeReaderTrackErrorType = js.native
+  var track1Status: MagneticStripeReaderTrackErrorType
   
   /** Gets the Track 2 error information. */
-  var track2Status: MagneticStripeReaderTrackErrorType = js.native
+  var track2Status: MagneticStripeReaderTrackErrorType
   
   /** Gets the Track 3 error information. */
-  var track3Status: MagneticStripeReaderTrackErrorType = js.native
+  var track3Status: MagneticStripeReaderTrackErrorType
   
   /** Gets the Track 4 error information. */
-  var track4Status: MagneticStripeReaderTrackErrorType = js.native
+  var track4Status: MagneticStripeReaderTrackErrorType
 }
 object MagneticStripeReaderErrorOccurredEventArgs {
   

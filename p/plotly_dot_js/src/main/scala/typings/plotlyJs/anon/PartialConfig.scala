@@ -14,78 +14,76 @@ import typings.plotlyJs.plotlyJsStrings.resetPlussignautosize
 import typings.plotlyJs.plotlyJsStrings.transparent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Config> */
-@js.native
 trait PartialConfig extends StObject {
   
-  var autosizable: js.UndefOr[Boolean] = js.native
+  var autosizable: js.UndefOr[Boolean] = js.undefined
   
-  var displayModeBar: js.UndefOr[hover | Boolean] = js.native
+  var displayModeBar: js.UndefOr[hover | Boolean] = js.undefined
   
-  var displaylogo: js.UndefOr[Boolean] = js.native
+  var displaylogo: js.UndefOr[Boolean] = js.undefined
   
-  var doubleClick: js.UndefOr[resetPlussignautosize | reset | autosize | `false`] = js.native
+  var doubleClick: js.UndefOr[resetPlussignautosize | reset | autosize | `false`] = js.undefined
   
-  var editable: js.UndefOr[Boolean] = js.native
+  var editable: js.UndefOr[Boolean] = js.undefined
   
-  var edits: js.UndefOr[PartialEdits] = js.native
+  var edits: js.UndefOr[PartialEdits] = js.undefined
   
-  var fillFrame: js.UndefOr[Boolean] = js.native
+  var fillFrame: js.UndefOr[Boolean] = js.undefined
   
-  var frameMargins: js.UndefOr[Double] = js.native
+  var frameMargins: js.UndefOr[Double] = js.undefined
   
-  var globalTransforms: js.UndefOr[js.Array[_]] = js.native
+  var globalTransforms: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var linkText: js.UndefOr[String] = js.native
+  var linkText: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
-  var logging: js.UndefOr[Boolean | `0` | `1` | `2`] = js.native
+  var logging: js.UndefOr[Boolean | `0` | `1` | `2`] = js.undefined
   
-  var mapboxAccessToken: js.UndefOr[String] = js.native
+  var mapboxAccessToken: js.UndefOr[String] = js.undefined
   
-  var modeBarButtons: js.UndefOr[(js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`] = js.native
+  var modeBarButtons: js.UndefOr[(js.Array[js.Array[ModeBarButton | ModeBarDefaultButtons]]) | `false`] = js.undefined
   
-  var modeBarButtonsToAdd: js.UndefOr[js.Array[ModeBarButton | ModeBarDefaultButtons]] = js.native
+  var modeBarButtonsToAdd: js.UndefOr[js.Array[ModeBarButton | ModeBarDefaultButtons]] = js.undefined
   
-  var modeBarButtonsToRemove: js.UndefOr[js.Array[ModeBarDefaultButtons]] = js.native
+  var modeBarButtonsToRemove: js.UndefOr[js.Array[ModeBarDefaultButtons]] = js.undefined
   
-  var plotGlPixelRatio: js.UndefOr[Double] = js.native
+  var plotGlPixelRatio: js.UndefOr[Double] = js.undefined
   
-  var plotlyServerURL: js.UndefOr[String] = js.native
+  var plotlyServerURL: js.UndefOr[String] = js.undefined
   
-  var queueLength: js.UndefOr[Double] = js.native
+  var queueLength: js.UndefOr[Double] = js.undefined
   
-  var responsive: js.UndefOr[Boolean] = js.native
+  var responsive: js.UndefOr[Boolean] = js.undefined
   
-  var scrollZoom: js.UndefOr[Boolean] = js.native
+  var scrollZoom: js.UndefOr[Boolean] = js.undefined
   
-  var sendData: js.UndefOr[Boolean] = js.native
+  var sendData: js.UndefOr[Boolean] = js.undefined
   
-  var setBackground: js.UndefOr[js.Function0[String | opaque | transparent]] = js.native
+  var setBackground: js.UndefOr[js.Function0[String | opaque | transparent]] = js.undefined
   
-  var showAxisDragHandles: js.UndefOr[Boolean] = js.native
+  var showAxisDragHandles: js.UndefOr[Boolean] = js.undefined
   
-  var showAxisRangeEntryBoxes: js.UndefOr[Boolean] = js.native
+  var showAxisRangeEntryBoxes: js.UndefOr[Boolean] = js.undefined
   
-  var showEditInChartStudio: js.UndefOr[Boolean] = js.native
+  var showEditInChartStudio: js.UndefOr[Boolean] = js.undefined
   
-  var showLink: js.UndefOr[Boolean] = js.native
+  var showLink: js.UndefOr[Boolean] = js.undefined
   
-  var showSendToCloud: js.UndefOr[Boolean] = js.native
+  var showSendToCloud: js.UndefOr[Boolean] = js.undefined
   
-  var showSources: js.UndefOr[Boolean] = js.native
+  var showSources: js.UndefOr[Boolean] = js.undefined
   
-  var showTips: js.UndefOr[Boolean] = js.native
+  var showTips: js.UndefOr[Boolean] = js.undefined
   
-  var staticPlot: js.UndefOr[Boolean] = js.native
+  var staticPlot: js.UndefOr[Boolean] = js.undefined
   
-  var toImageButtonOptions: js.UndefOr[Partialfilenamestringscal] = js.native
+  var toImageButtonOptions: js.UndefOr[Partialfilenamestringscal] = js.undefined
   
-  var topojsonURL: js.UndefOr[String] = js.native
+  var topojsonURL: js.UndefOr[String] = js.undefined
 }
 object PartialConfig {
   
@@ -147,7 +145,7 @@ object PartialConfig {
     def setFrameMarginsUndefined: Self = StObject.set(x, "frameMargins", js.undefined)
     
     @scala.inline
-    def setGlobalTransforms(value: js.Array[_]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
+    def setGlobalTransforms(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransforms", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setGlobalTransformsUndefined: Self = StObject.set(x, "globalTransforms", js.undefined)

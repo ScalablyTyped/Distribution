@@ -2,21 +2,19 @@ package typings.awsSdk.wafMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegexPatternSetUpdate extends StObject {
   
   /**
     * Specifies whether to insert or delete a RegexPatternString.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * Specifies the regular expression (regex) pattern that you want AWS WAF to search for, such as B[a@]dB[o0]t.
     */
-  var RegexPatternString: typings.awsSdk.wafMod.RegexPatternString = js.native
+  var RegexPatternString: typings.awsSdk.wafMod.RegexPatternString
 }
 object RegexPatternSetUpdate {
   

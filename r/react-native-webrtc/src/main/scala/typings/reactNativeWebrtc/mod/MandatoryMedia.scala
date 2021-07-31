@@ -2,17 +2,15 @@ package typings.reactNativeWebrtc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MandatoryMedia extends StObject {
   
-  var minFrameRate: Double = js.native
+  var minFrameRate: Double
   
-  var minHeight: Double = js.native
+  var minHeight: Double
   
-  var minWidth: Double = js.native
+  var minWidth: Double
 }
 object MandatoryMedia {
   

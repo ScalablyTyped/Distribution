@@ -3,18 +3,17 @@ package typings.saucelabs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SauceStatus
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var service_operational: js.UndefOr[Boolean] = js.native
+  var service_operational: js.UndefOr[Boolean] = js.undefined
   
-  var status_message: js.UndefOr[String] = js.native
+  var status_message: js.UndefOr[String] = js.undefined
   
-  var wait_time: js.UndefOr[Double] = js.native
+  var wait_time: js.UndefOr[Double] = js.undefined
 }
 object SauceStatus {
   

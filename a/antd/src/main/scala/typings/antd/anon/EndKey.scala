@@ -3,19 +3,17 @@ package typings.antd.anon
 import typings.rcTree.interfaceMod.DataNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndKey extends StObject {
   
-  var endKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.native
+  var endKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.undefined
   
-  var expandedKeys: js.Array[typings.rcTree.interfaceMod.Key] = js.native
+  var expandedKeys: js.Array[typings.rcTree.interfaceMod.Key]
   
-  var startKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.native
+  var startKey: js.UndefOr[typings.rcTree.interfaceMod.Key] = js.undefined
   
-  var treeData: js.Array[DataNode] = js.native
+  var treeData: js.Array[DataNode]
 }
 object EndKey {
   

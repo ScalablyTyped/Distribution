@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatastore.gapi.client.datastore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LookupResponse extends StObject {
   
   /** A list of keys that were not looked up due to resource constraints. The order of results in this field is undefined and has no relation to the order of the keys in the input. */
-  var deferred: js.UndefOr[js.Array[Key]] = js.native
+  var deferred: js.UndefOr[js.Array[Key]] = js.undefined
   
   /** Entities found as `ResultType.FULL` entities. The order of results in this field is undefined and has no relation to the order of the keys in the input. */
-  var found: js.UndefOr[js.Array[EntityResult]] = js.native
+  var found: js.UndefOr[js.Array[EntityResult]] = js.undefined
   
   /** Entities not found as `ResultType.KEY_ONLY` entities. The order of results in this field is undefined and has no relation to the order of the keys in the input. */
-  var missing: js.UndefOr[js.Array[EntityResult]] = js.native
+  var missing: js.UndefOr[js.Array[EntityResult]] = js.undefined
 }
 object LookupResponse {
   

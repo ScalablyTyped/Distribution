@@ -2,16 +2,14 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteExternalModelRequest extends StObject {
   
   /**
     * The endpoint of the Amazon Sagemaker model to delete.
     */
-  var modelEndpoint: sageMakerEndpointIdentifier = js.native
+  var modelEndpoint: sageMakerEndpointIdentifier
 }
 object DeleteExternalModelRequest {
   

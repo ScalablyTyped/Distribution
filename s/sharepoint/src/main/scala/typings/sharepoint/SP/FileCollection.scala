@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FileCollection extends ClientObjectCollection[File] {
+trait FileCollection
+  extends StObject
+     with ClientObjectCollection[File] {
   
   def add(parameters: FileCreationInformation): File = js.native
   

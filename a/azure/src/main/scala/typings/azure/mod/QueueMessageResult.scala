@@ -2,7 +2,6 @@ package typings.azure.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("azure", "QueueMessageResult")
@@ -36,11 +35,13 @@ class QueueMessageResult () extends StObject {
 /* static members */
 object QueueMessageResult {
   
-  @JSImport("azure", "QueueMessageResult.parse")
+  @JSImport("azure", "QueueMessageResult")
   @js.native
-  def parse(messageXml: js.Any): QueueMessageResult = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("azure", "QueueMessageResult.serialize")
-  @js.native
-  def serialize(messageJs: String): String = js.native
+  @scala.inline
+  def parse(messageXml: js.Any): QueueMessageResult = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(messageXml.asInstanceOf[js.Any]).asInstanceOf[QueueMessageResult]
+  
+  @scala.inline
+  def serialize(messageJs: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(messageJs.asInstanceOf[js.Any]).asInstanceOf[String]
 }

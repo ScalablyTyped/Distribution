@@ -3,29 +3,28 @@ package typings.typescript.mod
 import typings.typescript.mod.TypePredicateKind.This
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThisTypePredicate
-  extends TypePredicateBase
+  extends StObject
+     with TypePredicateBase
      with TypePredicate {
   
   @JSName("kind")
-  var kind_ThisTypePredicate: This = js.native
+  var kind_ThisTypePredicate: This
   
-  var parameterIndex: js.UndefOr[scala.Nothing] = js.native
+  var parameterIndex: Unit
   
-  var parameterName: js.UndefOr[scala.Nothing] = js.native
+  var parameterName: Unit
   
   @JSName("type")
-  var type_ThisTypePredicate: Type = js.native
+  var type_ThisTypePredicate: Type
 }
 object ThisTypePredicate {
   
   @scala.inline
-  def apply(kind: This, `type`: Type): ThisTypePredicate = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any])
+  def apply(kind: This, parameterIndex: Unit, parameterName: Unit, `type`: Type): ThisTypePredicate = {
+    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], parameterIndex = parameterIndex.asInstanceOf[js.Any], parameterName = parameterName.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[ThisTypePredicate]
   }
@@ -35,6 +34,12 @@ object ThisTypePredicate {
     
     @scala.inline
     def setKind(value: This): Self = StObject.set(x, "kind", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParameterIndex(value: Unit): Self = StObject.set(x, "parameterIndex", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParameterName(value: Unit): Self = StObject.set(x, "parameterName", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setType(value: Type): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

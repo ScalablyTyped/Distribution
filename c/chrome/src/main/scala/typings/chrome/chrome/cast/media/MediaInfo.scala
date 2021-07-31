@@ -2,27 +2,25 @@ package typings.chrome.chrome.cast.media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaInfo extends StObject {
   
-  var contentId: String = js.native
+  var contentId: String
   
-  var contentType: String = js.native
+  var contentType: String
   
-  var customData: js.Object = js.native
+  var customData: js.Object
   
-  var duration: Double = js.native
+  var duration: Double
   
-  var metadata: js.Any = js.native
+  var metadata: js.Any
   
-  var streamType: StreamType = js.native
+  var streamType: StreamType
   
-  var textTrackStyle: TextTrackStyle = js.native
+  var textTrackStyle: TextTrackStyle
   
-  var tracks: js.Array[Track] = js.native
+  var tracks: js.Array[Track]
 }
 object MediaInfo {
   

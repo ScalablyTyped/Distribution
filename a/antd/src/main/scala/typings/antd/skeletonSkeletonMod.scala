@@ -16,16 +16,15 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object skeletonSkeletonMod {
   
   object default {
     
-    @JSImport("antd/lib/skeleton/Skeleton", JSImport.Default)
-    @js.native
-    def apply(props: SkeletonProps): Element = js.native
+    @scala.inline
+    def apply(props: SkeletonProps): Element = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element]
+    
     @JSImport("antd/lib/skeleton/Skeleton", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -42,9 +41,8 @@ object skeletonSkeletonMod {
     @scala.inline
     def Button_=(x: Call): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Button")(x.asInstanceOf[js.Any])
     
-    @JSImport("antd/lib/skeleton/Skeleton", "default.Image")
-    @js.native
-    def Image(props: SkeletonImageProps): Element = js.native
+    @scala.inline
+    def Image(props: SkeletonImageProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("Image")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
     
     @JSImport("antd/lib/skeleton/Skeleton", "default.Input")
     @js.native
@@ -60,18 +58,17 @@ object skeletonSkeletonMod {
   }
   
   /* Inlined parent std.Omit<antd.antd/lib/skeleton/Avatar.AvatarProps, 'active'> */
-  @js.native
   trait SkeletonAvatarProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var shape: js.UndefOr[circle | square] = js.native
+    var shape: js.UndefOr[circle | square] = js.undefined
     
-    var size: js.UndefOr[large | small | default | Double] = js.native
+    var size: js.UndefOr[large | small | default | Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object SkeletonAvatarProps {
     
@@ -116,26 +113,25 @@ object skeletonSkeletonMod {
     }
   }
   
-  @js.native
   trait SkeletonProps extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var avatar: js.UndefOr[SkeletonAvatarProps | Boolean] = js.native
+    var avatar: js.UndefOr[SkeletonAvatarProps | Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var loading: js.UndefOr[Boolean] = js.native
+    var loading: js.UndefOr[Boolean] = js.undefined
     
-    var paragraph: js.UndefOr[SkeletonParagraphProps | Boolean] = js.native
+    var paragraph: js.UndefOr[SkeletonParagraphProps | Boolean] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
-    var title: js.UndefOr[SkeletonTitleProps | Boolean] = js.native
+    var title: js.UndefOr[SkeletonTitleProps | Boolean] = js.undefined
   }
   object SkeletonProps {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListExportsOutput extends StObject {
   
   /**
     * A list of ExportSummary objects.
     */
-  var ExportSummaries: js.UndefOr[typings.awsSdk.dynamodbMod.ExportSummaries] = js.native
+  var ExportSummaries: js.UndefOr[typings.awsSdk.dynamodbMod.ExportSummaries] = js.undefined
   
   /**
     * If this value is returned, there are additional results to be displayed. To retrieve them, call ListExports again, with NextToken set to this value.
     */
-  var NextToken: js.UndefOr[ExportNextToken] = js.native
+  var NextToken: js.UndefOr[ExportNextToken] = js.undefined
 }
 object ListExportsOutput {
   

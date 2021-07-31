@@ -4,81 +4,79 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPullRequestIteration extends StObject {
   
   /**
     * A collection of related REST reference links.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Author of the pull request iteration.
     */
-  var author: IdentityRef = js.native
+  var author: IdentityRef
   
   /**
     * Changes included with the pull request iteration.
     */
-  var changeList: js.Array[GitPullRequestChange] = js.native
+  var changeList: js.Array[GitPullRequestChange]
   
   /**
     * The commits included with the pull request iteration.
     */
-  var commits: js.Array[GitCommitRef] = js.native
+  var commits: js.Array[GitCommitRef]
   
   /**
     * The first common Git commit of the source and target refs.
     */
-  var commonRefCommit: GitCommitRef = js.native
+  var commonRefCommit: GitCommitRef
   
   /**
     * The creation date of the pull request iteration.
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * Description of the pull request iteration.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Indicates if the Commits property contains a truncated list of commits in this pull request iteration.
     */
-  var hasMoreCommits: Boolean = js.native
+  var hasMoreCommits: Boolean
   
   /**
     * ID of the pull request iteration. Iterations are created as a result of creating and pushing updates to a pull request.
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * The Git push information associated with this pull request iteration.
     */
-  var push: GitPushRef = js.native
+  var push: GitPushRef
   
   /**
     * The reason for which the pull request iteration was created.
     */
-  var reason: IterationReason = js.native
+  var reason: IterationReason
   
   /**
     * The source Git commit of this iteration.
     */
-  var sourceRefCommit: GitCommitRef = js.native
+  var sourceRefCommit: GitCommitRef
   
   /**
     * The target Git commit of this iteration.
     */
-  var targetRefCommit: GitCommitRef = js.native
+  var targetRefCommit: GitCommitRef
   
   /**
     * The updated date of the pull request iteration.
     */
-  var updatedDate: Date = js.native
+  var updatedDate: Date
 }
 object GitPullRequestIteration {
   

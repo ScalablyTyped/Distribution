@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsInput extends StObject {
   
   /**
     * Maximum number of tags to return.
     */
-  var MaxResults: js.UndefOr[ListTagsMaxResults] = js.native
+  var MaxResults: js.UndefOr[ListTagsMaxResults] = js.undefined
   
   /**
     *  If the response to the previous ListTags request is truncated, Amazon SageMaker returns this token. To retrieve the next set of tags, use it in the subsequent request. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the resource whose tags you want to retrieve.
     */
-  var ResourceArn: typings.awsSdk.sagemakerMod.ResourceArn = js.native
+  var ResourceArn: typings.awsSdk.sagemakerMod.ResourceArn
 }
 object ListTagsInput {
   

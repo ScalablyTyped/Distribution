@@ -2,19 +2,17 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WrinklerSave extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var amountShinies: Double = js.native
+  var amountShinies: Double
   
-  var number: Double = js.native
+  var number: Double
   
-  var shinies: Double = js.native
+  var shinies: Double
 }
 object WrinklerSave {
   

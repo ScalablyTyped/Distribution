@@ -8,17 +8,21 @@ import typings.ngTable.ngTableEventsChannelMod.NgTableEventsChannel
 import typings.ngTable.ngTableParamsMod.NgTableParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngTableDefaultGetDataMod {
   
   @JSImport("ng-table/src/core/data/ngTableDefaultGetData", "NgTableDefaultGetDataProvider")
   @js.native
-  class NgTableDefaultGetDataProvider () extends IServiceProvider {
+  class NgTableDefaultGetDataProvider ()
+    extends StObject
+       with IServiceProvider {
     
+    /* CompleteClass */
     @JSName("$get")
-    def $get_MNgTableDefaultGetDataProvider($filter: IFilterService, ngTableEventsChannel: NgTableEventsChannel): IDefaultGetData[_] = js.native
+    var $get: js.Any = js.native
+    @JSName("$get")
+    def $get_MNgTableDefaultGetDataProvider($filter: IFilterService, ngTableEventsChannel: NgTableEventsChannel): IDefaultGetData[js.Any] = js.native
     
     /**
       * The name of a angular filter that knows how to apply the values returned by
@@ -46,7 +50,7 @@ object ngTableDefaultGetDataMod {
       * Returns a slice of rows from the `data` array supplied and sets the `NgTableParams.total()`
       * on the `params` instance supplied to `data.length`
       */
-    def applyPaging(data: js.Array[T], params: NgTableParams[_]): js.Array[T] = js.native
+    def applyPaging(data: js.Array[T], params: NgTableParams[js.Any]): js.Array[T] = js.native
     
     /**
       * Returns a reference to the function that this service will use to filter data rows

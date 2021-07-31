@@ -5,10 +5,13 @@ import typings.angularCompiler.coreMod.MissingTranslationStrategy
 import typings.angularCompiler.coreMod.ViewEncapsulation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
+  
+  @JSImport("@angular/compiler/src/config", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@angular/compiler/src/config", "CompilerConfig")
   @js.native
@@ -28,16 +31,12 @@ object configMod {
     var useJit: Boolean = js.native
   }
   
-  @JSImport("@angular/compiler/src/config", "preserveWhitespacesDefault")
-  @js.native
-  def preserveWhitespacesDefault(): Boolean = js.native
-  @JSImport("@angular/compiler/src/config", "preserveWhitespacesDefault")
-  @js.native
-  def preserveWhitespacesDefault(preserveWhitespacesOption: Boolean): Boolean = js.native
-  @JSImport("@angular/compiler/src/config", "preserveWhitespacesDefault")
-  @js.native
-  def preserveWhitespacesDefault(preserveWhitespacesOption: Boolean, defaultSetting: Boolean): Boolean = js.native
-  @JSImport("@angular/compiler/src/config", "preserveWhitespacesDefault")
-  @js.native
-  def preserveWhitespacesDefault(preserveWhitespacesOption: Null, defaultSetting: Boolean): Boolean = js.native
+  @scala.inline
+  def preserveWhitespacesDefault(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preserveWhitespacesDefault")().asInstanceOf[Boolean]
+  @scala.inline
+  def preserveWhitespacesDefault(preserveWhitespacesOption: Boolean): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("preserveWhitespacesDefault")(preserveWhitespacesOption.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def preserveWhitespacesDefault(preserveWhitespacesOption: Boolean, defaultSetting: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("preserveWhitespacesDefault")(preserveWhitespacesOption.asInstanceOf[js.Any], defaultSetting.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def preserveWhitespacesDefault(preserveWhitespacesOption: Null, defaultSetting: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("preserveWhitespacesDefault")(preserveWhitespacesOption.asInstanceOf[js.Any], defaultSetting.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

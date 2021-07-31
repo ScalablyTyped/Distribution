@@ -10,24 +10,28 @@ import typings.reactMdMenu.useVisibilityMod.VisibilityOptions
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useButtonVisibilityMod {
   
-  @JSImport("@react-md/menu/types/useButtonVisibility", "useButtonVisibility")
+  @JSImport("@react-md/menu/types/useButtonVisibility", JSImport.Namespace)
   @js.native
-  def useButtonVisibility(): ReturnValue = js.native
-  @JSImport("@react-md/menu/types/useButtonVisibility", "useButtonVisibility")
-  @js.native
-  def useButtonVisibility(hasOnClickOnKeyDownDefaultVisibleDefaultFocusOnVisibilityChange: ButtonVisibilityOptions): ReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait ButtonVisibilityOptions extends VisibilityOptions {
+  @scala.inline
+  def useButtonVisibility(): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useButtonVisibility")().asInstanceOf[ReturnValue]
+  @scala.inline
+  def useButtonVisibility(
+    hasPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange: ButtonVisibilityOptions
+  ): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useButtonVisibility")(hasPropOnClickPropOnKeyDownDefaultVisiblePropDefaultFocusOnVisibilityChange.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  
+  trait ButtonVisibilityOptions
+    extends StObject
+       with VisibilityOptions {
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLButtonElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLButtonElement]] = js.undefined
   }
   object ButtonVisibilityOptions {
     
@@ -55,18 +59,17 @@ object useButtonVisibilityMod {
   }
   
   /* Inlined parent std.Required<std.Pick<react.react.HTMLAttributes<std.HTMLButtonElement>, 'onClick' | 'onKeyDown'>> */
-  @js.native
   trait ReturnValue extends StObject {
     
-    var defaultFocus: FocusType = js.native
+    var defaultFocus: FocusType
     
-    def hide(): Unit = js.native
+    def hide(): Unit
     
-    var onClick: MouseEventHandler[HTMLButtonElement] = js.native
+    var onClick: MouseEventHandler[HTMLButtonElement]
     
-    var onKeyDown: KeyboardEventHandler[HTMLButtonElement] = js.native
+    var onKeyDown: KeyboardEventHandler[HTMLButtonElement]
     
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ReturnValue {
     

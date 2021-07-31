@@ -2,13 +2,13 @@ package typings.calidation.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlacklistValidatorConfig[T /* <: js.Object */] extends SimpleValidatorConfig[T] {
+trait BlacklistValidatorConfig[T /* <: js.Object */]
+  extends StObject
+     with SimpleValidatorConfig[T] {
   
-  var blacklist: js.Array[String] = js.native
+  var blacklist: js.Array[String]
 }
 object BlacklistValidatorConfig {
   
@@ -19,7 +19,7 @@ object BlacklistValidatorConfig {
   }
   
   @scala.inline
-  implicit class BlacklistValidatorConfigMutableBuilder[Self <: BlacklistValidatorConfig[_], T /* <: js.Object */] (val x: Self with BlacklistValidatorConfig[T]) extends AnyVal {
+  implicit class BlacklistValidatorConfigMutableBuilder[Self <: BlacklistValidatorConfig[?], T /* <: js.Object */] (val x: Self & BlacklistValidatorConfig[T]) extends AnyVal {
     
     @scala.inline
     def setBlacklist(value: js.Array[String]): Self = StObject.set(x, "blacklist", value.asInstanceOf[js.Any])

@@ -5,49 +5,47 @@ import typings.googleapis.anon.CallerType
 import typings.googleapis.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for the activity resource.
   */
-@js.native
 trait SchemaActivity extends StObject {
   
   /**
     * User doing the action.
     */
-  var actor: js.UndefOr[CallerType] = js.native
+  var actor: js.UndefOr[CallerType] = js.undefined
   
   /**
     * ETag of the entry.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Activity events.
     */
-  var events: js.UndefOr[js.Array[Name]] = js.native
+  var events: js.UndefOr[js.Array[Name]] = js.undefined
   
   /**
     * Unique identifier for each activity record.
     */
-  var id: js.UndefOr[ApplicationName] = js.native
+  var id: js.UndefOr[ApplicationName] = js.undefined
   
   /**
     * IP Address of the user doing the action.
     */
-  var ipAddress: js.UndefOr[String] = js.native
+  var ipAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Domain of source customer.
     */
-  var ownerDomain: js.UndefOr[String] = js.native
+  var ownerDomain: js.UndefOr[String] = js.undefined
 }
 object SchemaActivity {
   

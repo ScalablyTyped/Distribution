@@ -2,42 +2,40 @@ package typings.node.inspectorMod.Runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsoleAPICalledEventDataType extends StObject {
   
   /**
     * Call arguments.
     */
-  var args: js.Array[RemoteObject] = js.native
+  var args: js.Array[RemoteObject]
   
   /**
     * Console context descriptor for calls on non-default console context (not console.*): 'anonymous#unique-logger-id' for call on unnamed context, 'name#unique-logger-id' for call on named context.
     * @experimental
     */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the context where the call was made.
     */
-  var executionContextId: ExecutionContextId = js.native
+  var executionContextId: ExecutionContextId
   
   /**
     * Stack trace captured when the call was made.
     */
-  var stackTrace: js.UndefOr[StackTrace] = js.native
+  var stackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Call timestamp.
     */
-  var timestamp: Timestamp = js.native
+  var timestamp: Timestamp
   
   /**
     * Type of the call.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ConsoleAPICalledEventDataType {
   

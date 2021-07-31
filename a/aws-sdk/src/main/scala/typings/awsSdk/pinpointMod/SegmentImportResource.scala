@@ -2,41 +2,39 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentImportResource extends StObject {
   
   /**
     * The number of channel types in the endpoint definitions that were imported to create the segment.
     */
-  var ChannelCounts: js.UndefOr[MapOfInteger] = js.native
+  var ChannelCounts: js.UndefOr[MapOfInteger] = js.undefined
   
   /**
     * (Deprecated) Your AWS account ID, which you assigned to an external ID key in an IAM trust policy. Amazon Pinpoint previously used this value to assume an IAM role when importing endpoint definitions, but we removed this requirement. We don't recommend use of external IDs for IAM roles that are assumed by Amazon Pinpoint.
     */
-  var ExternalId: string = js.native
+  var ExternalId: string
   
   /**
     * The format of the files that were imported to create the segment. Valid values are: CSV, for comma-separated values format; and, JSON, for newline-delimited JSON format.
     */
-  var Format: typings.awsSdk.pinpointMod.Format = js.native
+  var Format: typings.awsSdk.pinpointMod.Format
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Identity and Access Management (IAM) role that authorized Amazon Pinpoint to access the Amazon S3 location to import endpoint definitions from.
     */
-  var RoleArn: string = js.native
+  var RoleArn: string
   
   /**
     * The URL of the Amazon Simple Storage Service (Amazon S3) bucket that the endpoint definitions were imported from to create the segment.
     */
-  var S3Url: string = js.native
+  var S3Url: string
   
   /**
     * The number of endpoint definitions that were imported successfully to create the segment.
     */
-  var Size: integer = js.native
+  var Size: integer
 }
 object SegmentImportResource {
   

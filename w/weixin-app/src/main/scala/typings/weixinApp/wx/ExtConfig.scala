@@ -2,16 +2,14 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
 // #region 第三方平台
-@js.native
 trait ExtConfig extends StObject {
   
   /** 第三方平台自定义的数据 */
-  var extConfig: js.Any = js.native
+  var extConfig: js.Any
 }
 object ExtConfig {
   

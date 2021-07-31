@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetV2LoggingLevelRequest extends StObject {
   
   /**
     * The log level.
     */
-  var logLevel: LogLevel = js.native
+  var logLevel: LogLevel
   
   /**
     * The log target.
     */
-  var logTarget: LogTarget = js.native
+  var logTarget: LogTarget
 }
 object SetV2LoggingLevelRequest {
   

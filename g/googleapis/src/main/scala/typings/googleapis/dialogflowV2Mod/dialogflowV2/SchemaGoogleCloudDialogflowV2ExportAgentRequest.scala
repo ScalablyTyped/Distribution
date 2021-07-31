@@ -2,13 +2,11 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for Agents.ExportAgent.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2ExportAgentRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGoogleCloudDialogflowV2ExportAgentRequest extends StObject {
     * `gs://&lt;bucket-name&gt;/&lt;object-name&gt;`. If left unspecified, the
     * serialized agent is returned inline.
     */
-  var agentUri: js.UndefOr[String] = js.native
+  var agentUri: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2ExportAgentRequest {
   

@@ -2,21 +2,19 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tag extends StObject {
   
-  var followers: Double = js.native
+  var followers: Double
   
-  var following: js.UndefOr[Boolean] = js.native
+  var following: js.UndefOr[Boolean] = js.undefined
   
-  var items: js.Array[GalleryItem] = js.native
+  var items: js.Array[GalleryItem]
   
-  var name: String = js.native
+  var name: String
   
-  var total_items: Double = js.native
+  var total_items: Double
 }
 object Tag {
   

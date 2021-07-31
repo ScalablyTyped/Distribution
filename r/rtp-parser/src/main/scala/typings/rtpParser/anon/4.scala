@@ -4,21 +4,19 @@ import typings.rtpParser.rtpParserStrings.V
 import typings.rtpParser.rtpParserStrings.unassigned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `4` extends StObject {
   
-  var mediaType: V = js.native
+  var mediaType: V
   
-  var name: unassigned = js.native
+  var name: unassigned
 }
 object `4` {
   
   @scala.inline
-  def apply(mediaType: V, name: unassigned): `4` = {
-    val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(): `4` = {
+    val __obj = js.Dynamic.literal(mediaType = "V", name = "unassigned")
     __obj.asInstanceOf[`4`]
   }
   

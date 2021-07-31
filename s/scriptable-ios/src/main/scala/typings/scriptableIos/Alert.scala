@@ -2,7 +2,6 @@ package typings.scriptableIos
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -47,9 +46,9 @@ trait Alert extends StObject {
     * @see https://docs.scriptable.app/alert/#-addsecuretextfield
     */
   def addSecureTextField(): Unit = js.native
-  def addSecureTextField(placeholder: js.UndefOr[scala.Nothing], text: String): Unit = js.native
   def addSecureTextField(placeholder: String): Unit = js.native
   def addSecureTextField(placeholder: String, text: String): Unit = js.native
+  def addSecureTextField(placeholder: Unit, text: String): Unit = js.native
   
   /**
     * _Adds a text field prompting for user input._
@@ -63,9 +62,9 @@ trait Alert extends StObject {
     * @see https://docs.scriptable.app/alert/#-addtextfield
     */
   def addTextField(): Unit = js.native
-  def addTextField(placeholder: js.UndefOr[scala.Nothing], text: String): Unit = js.native
   def addTextField(placeholder: String): Unit = js.native
   def addTextField(placeholder: String, text: String): Unit = js.native
+  def addTextField(placeholder: Unit, text: String): Unit = js.native
   
   /**
     * _Detailed message displayed in the alert._

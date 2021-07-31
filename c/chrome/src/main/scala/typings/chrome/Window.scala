@@ -3,16 +3,14 @@ package typings.chrome
 import typings.chrome.anon.Typeofchrome
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
 // Global object
 ////////////////////
-@js.native
 trait Window extends StObject {
   
-  var chrome: Typeofchrome = js.native
+  var chrome: Typeofchrome
 }
 object Window {
   

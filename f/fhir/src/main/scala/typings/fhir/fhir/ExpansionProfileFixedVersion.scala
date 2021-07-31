@@ -2,44 +2,44 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Fix use of a code system to a particular version
   */
-@js.native
-trait ExpansionProfileFixedVersion extends BackboneElement {
+trait ExpansionProfileFixedVersion
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'mode'.
     */
-  var _mode: js.UndefOr[Element] = js.native
+  var _mode: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'system'.
     */
-  var _system: js.UndefOr[Element] = js.native
+  var _system: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'version'.
     */
-  var _version: js.UndefOr[Element] = js.native
+  var _version: js.UndefOr[Element] = js.undefined
   
   /**
     * default | check | override
     */
-  var mode: code = js.native
+  var mode: code
   
   /**
     * System to have its version fixed
     */
-  var system: uri = js.native
+  var system: uri
   
   /**
     * Specific version of the code system referred to
     */
-  var version: String = js.native
+  var version: String
 }
 object ExpansionProfileFixedVersion {
   

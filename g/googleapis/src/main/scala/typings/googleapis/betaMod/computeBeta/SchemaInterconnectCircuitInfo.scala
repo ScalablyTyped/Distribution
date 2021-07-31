@@ -2,7 +2,6 @@ package typings.googleapis.betaMod.computeBeta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * CircuitInfo objects are created by Google, so all fields are output only.
   * Next id: 4
   */
-@js.native
 trait SchemaInterconnectCircuitInfo extends StObject {
   
   /**
     * Customer-side demarc ID for this circuit.
     */
-  var customerDemarcId: js.UndefOr[String] = js.native
+  var customerDemarcId: js.UndefOr[String] = js.undefined
   
   /**
     * Google-assigned unique ID for this circuit. Assigned at circuit turn-up.
     */
-  var googleCircuitId: js.UndefOr[String] = js.native
+  var googleCircuitId: js.UndefOr[String] = js.undefined
   
   /**
     * Google-side demarc ID for this circuit. Assigned at circuit turn-up and
     * provided by Google to the customer in the LOA.
     */
-  var googleDemarcId: js.UndefOr[String] = js.native
+  var googleDemarcId: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectCircuitInfo {
   

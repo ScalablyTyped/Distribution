@@ -2,69 +2,67 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DelayRangeStart extends StObject {
   
-  var delayRangeStart: scala.Double = js.native
+  var delayRangeStart: scala.Double
   
-  var eventPipelineTime: scala.Double = js.native
+  var eventPipelineTime: scala.Double
   
-  var events: scala.Double = js.native
+  var events: scala.Double
   
-  var eventsByEventType: scala.Double = js.native
+  var eventsByEventType: scala.Double
   
-  var eventsByEventTypePerUser: scala.Double = js.native
+  var eventsByEventTypePerUser: scala.Double
   
-  var hourlyEventPipelineTime: scala.Double = js.native
+  var hourlyEventPipelineTime: scala.Double
   
-  var hourlyEvents: scala.Double = js.native
+  var hourlyEvents: scala.Double
   
-  var hourlyEventsByEventTypePerUser: scala.Double = js.native
+  var hourlyEventsByEventTypePerUser: scala.Double
   
-  var hourlyNotificationBySubscription: scala.Double = js.native
+  var hourlyNotificationBySubscription: scala.Double
   
-  var hourlyNotificationPipelineTime: scala.Double = js.native
+  var hourlyNotificationPipelineTime: scala.Double
   
-  var hourlyNotifications: scala.Double = js.native
+  var hourlyNotifications: scala.Double
   
-  var hourlyRangeStart: scala.Double = js.native
+  var hourlyRangeStart: scala.Double
   
-  var hourlyTotalPipelineTime: scala.Double = js.native
+  var hourlyTotalPipelineTime: scala.Double
   
-  var hourlyUnprocessedEventDelayByPublisher: scala.Double = js.native
+  var hourlyUnprocessedEventDelayByPublisher: scala.Double
   
-  var hourlyUnprocessedEventsByPublisher: scala.Double = js.native
+  var hourlyUnprocessedEventsByPublisher: scala.Double
   
-  var hourlyUnprocessedNotificationDelayByChannelByPublisher: scala.Double = js.native
+  var hourlyUnprocessedNotificationDelayByChannelByPublisher: scala.Double
   
-  var hourlyUnprocessedNotificationsByChannelByPublisher: scala.Double = js.native
+  var hourlyUnprocessedNotificationsByChannelByPublisher: scala.Double
   
-  var notificationByEventType: scala.Double = js.native
+  var notificationByEventType: scala.Double
   
-  var notificationByEventTypePerUser: scala.Double = js.native
+  var notificationByEventTypePerUser: scala.Double
   
-  var notificationBySubscription: scala.Double = js.native
+  var notificationBySubscription: scala.Double
   
-  var notificationFailureBySubscription: scala.Double = js.native
+  var notificationFailureBySubscription: scala.Double
   
-  var notificationPipelineTime: scala.Double = js.native
+  var notificationPipelineTime: scala.Double
   
-  var notifications: scala.Double = js.native
+  var notifications: scala.Double
   
-  var totalPipelineTime: scala.Double = js.native
+  var totalPipelineTime: scala.Double
   
-  var unprocessedEventDelayByPublisher: scala.Double = js.native
+  var unprocessedEventDelayByPublisher: scala.Double
   
-  var unprocessedEventsByPublisher: scala.Double = js.native
+  var unprocessedEventsByPublisher: scala.Double
   
-  var unprocessedNotificationDelayByChannelByPublisher: scala.Double = js.native
+  var unprocessedNotificationDelayByChannelByPublisher: scala.Double
   
-  var unprocessedNotificationsByChannelByPublisher: scala.Double = js.native
+  var unprocessedNotificationsByChannelByPublisher: scala.Double
   
-  var unprocessedRangeStart: scala.Double = js.native
+  var unprocessedRangeStart: scala.Double
 }
 object DelayRangeStart {
   

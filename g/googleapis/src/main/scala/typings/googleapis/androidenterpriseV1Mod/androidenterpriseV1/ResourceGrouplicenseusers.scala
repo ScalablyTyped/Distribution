@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Grouplicenseusers")
@@ -32,7 +31,7 @@ class ResourceGrouplicenseusers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGroupLicenseUsersListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGroupLicenseUsersListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupLicenseUsersListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroupLicenseUsersListResponse] = js.native
   def list(params: ParamsResourceGrouplicenseusersList): GaxiosPromise[SchemaGroupLicenseUsersListResponse] = js.native
   def list(
     params: ParamsResourceGrouplicenseusersList,

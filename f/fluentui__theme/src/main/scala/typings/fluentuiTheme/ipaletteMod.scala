@@ -2,265 +2,263 @@ package typings.fluentuiTheme
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ipaletteMod {
   
-  @js.native
   trait IPalette extends StObject {
     
     /**
       * Color code for the accent.
       */
-    var accent: String = js.native
+    var accent: String
     
     /**
       * Color code for the strongest color, which is black in the default theme.
       * This is a very light color in inverted themes.
       */
-    var black: String = js.native
+    var black: String
     
     /**
       * Color code for blackTranslucent40.
       */
-    var blackTranslucent40: String = js.native
+    var blackTranslucent40: String
     
     /**
       * Color code for blue.
       */
-    var blue: String = js.native
+    var blue: String
     
     /**
       * Color code for blueDark.
       */
-    var blueDark: String = js.native
+    var blueDark: String
     
     /**
       * Color code for blueLight.
       */
-    var blueLight: String = js.native
+    var blueLight: String
     
     /**
       * Color code for blueMid.
       */
-    var blueMid: String = js.native
+    var blueMid: String
     
     /**
       * Color code for green.
       */
-    var green: String = js.native
+    var green: String
     
     /**
       * Color code for greenDark.
       */
-    var greenDark: String = js.native
+    var greenDark: String
     
     /**
       * Color code for greenLight.
       */
-    var greenLight: String = js.native
+    var greenLight: String
     
     /**
       * Color code for magenta.
       */
-    var magenta: String = js.native
+    var magenta: String
     
     /**
       * Color code for magentaDark.
       */
-    var magentaDark: String = js.native
+    var magentaDark: String
     
     /**
       * Color code for magentaLight.
       */
-    var magentaLight: String = js.native
+    var magentaLight: String
     
     /**
       * Color code for neutralDark.
       */
-    var neutralDark: String = js.native
+    var neutralDark: String
     
     /**
       * Color code for neutralLight.
       */
-    var neutralLight: String = js.native
+    var neutralLight: String
     
     /**
       * Color code for neutralLighter.
       */
-    var neutralLighter: String = js.native
+    var neutralLighter: String
     
     /**
       * Color code for neutralLighterAlt.
       */
-    var neutralLighterAlt: String = js.native
+    var neutralLighterAlt: String
     
     /**
       * Color code for neutralPrimary.
       */
-    var neutralPrimary: String = js.native
+    var neutralPrimary: String
     
     /**
       * Color code for neutralPrimaryAlt.
       */
-    var neutralPrimaryAlt: String = js.native
+    var neutralPrimaryAlt: String
     
     /**
       * Color code for neutralQuaternary.
       */
-    var neutralQuaternary: String = js.native
+    var neutralQuaternary: String
     
     /**
       * Color code for neutralQuaternaryAlt.
       */
-    var neutralQuaternaryAlt: String = js.native
+    var neutralQuaternaryAlt: String
     
     /**
       * Color code for neutralSecondary.
       */
-    var neutralSecondary: String = js.native
+    var neutralSecondary: String
     
     /**
       * Color code for neutralSecondaryAlt.
       */
-    var neutralSecondaryAlt: String = js.native
+    var neutralSecondaryAlt: String
     
     /**
       * Color code for neutralTertiary.
       */
-    var neutralTertiary: String = js.native
+    var neutralTertiary: String
     
     /**
       * Color code for neutralTertiaryAlt.
       */
-    var neutralTertiaryAlt: String = js.native
+    var neutralTertiaryAlt: String
     
     /**
       * Color code for orange.
       */
-    var orange: String = js.native
+    var orange: String
     
     /**
       * Color code for orangeLight.
       */
-    var orangeLight: String = js.native
+    var orangeLight: String
     
     /**
       * Color code for orangeLighter.
       */
-    var orangeLighter: String = js.native
+    var orangeLighter: String
     
     /**
       * Color code for purple.
       */
-    var purple: String = js.native
+    var purple: String
     
     /**
       * Color code for purpleDark.
       */
-    var purpleDark: String = js.native
+    var purpleDark: String
     
     /**
       * Color code for purpleLight.
       */
-    var purpleLight: String = js.native
+    var purpleLight: String
     
     /**
       * Color code for red.
       */
-    var red: String = js.native
+    var red: String
     
     /**
       * Color code for redDark.
       */
-    var redDark: String = js.native
+    var redDark: String
     
     /**
       * Color code for teal.
       */
-    var teal: String = js.native
+    var teal: String
     
     /**
       * Color code for tealDark.
       */
-    var tealDark: String = js.native
+    var tealDark: String
     
     /**
       * Color code for tealLight.
       */
-    var tealLight: String = js.native
+    var tealLight: String
     
     /**
       * Color code for themeDark.
       */
-    var themeDark: String = js.native
+    var themeDark: String
     
     /**
       * Color code for themeDarkAlt.
       */
-    var themeDarkAlt: String = js.native
+    var themeDarkAlt: String
     
     /**
       * Color code for themeDarker.
       */
-    var themeDarker: String = js.native
+    var themeDarker: String
     
     /**
       * Color code for themeLight.
       */
-    var themeLight: String = js.native
+    var themeLight: String
     
     /**
       * Color code for themeLighter.
       */
-    var themeLighter: String = js.native
+    var themeLighter: String
     
     /**
       * Color code for themeLighterAlt.
       */
-    var themeLighterAlt: String = js.native
+    var themeLighterAlt: String
     
     /**
       * Color code for themePrimary.
       */
-    var themePrimary: String = js.native
+    var themePrimary: String
     
     /**
       * Color code for themeSecondary.
       */
-    var themeSecondary: String = js.native
+    var themeSecondary: String
     
     /**
       * Color code for themeTertiary.
       */
-    var themeTertiary: String = js.native
+    var themeTertiary: String
     
     /**
       * Color code for the softest color, which is white in the default theme. This is a very dark color in dark themes.
       * This is the page background.
       */
-    var white: String = js.native
+    var white: String
     
     /**
       * Color code for whiteTranslucent40
       */
-    var whiteTranslucent40: String = js.native
+    var whiteTranslucent40: String
     
     /**
       * Color code for yellow.
       */
-    var yellow: String = js.native
+    var yellow: String
     
     /**
       * Color code for yellowDark.
       */
-    var yellowDark: String = js.native
+    var yellowDark: String
     
     /**
       * Color code for yellowLight.
       */
-    var yellowLight: String = js.native
+    var yellowLight: String
   }
   object IPalette {
     

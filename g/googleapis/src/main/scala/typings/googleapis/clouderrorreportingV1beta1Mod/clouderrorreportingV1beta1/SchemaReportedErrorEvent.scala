@@ -2,25 +2,23 @@ package typings.googleapis.clouderrorreportingV1beta1Mod.clouderrorreportingV1be
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An error event which is reported to the Error Reporting system.
   */
-@js.native
 trait SchemaReportedErrorEvent extends StObject {
   
   /**
     * [Optional] A description of the context in which the error occurred.
     */
-  var context: js.UndefOr[SchemaErrorContext] = js.native
+  var context: js.UndefOr[SchemaErrorContext] = js.undefined
   
   /**
     * [Optional] Time when the event occurred. If not provided, the time when
     * the event was received by the Error Reporting system will be used.
     */
-  var eventTime: js.UndefOr[String] = js.native
+  var eventTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The error message. If no `context.reportLocation` is provided,
@@ -44,12 +42,12 @@ trait SchemaReportedErrorEvent extends StObject {
     * * **Go**: Must be the return value of
     * [`runtime.Stack()`](https://golang.org/pkg/runtime/debug/#Stack).
     */
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
   /**
     * [Required] The service context in which this error has occurred.
     */
-  var serviceContext: js.UndefOr[SchemaServiceContext] = js.native
+  var serviceContext: js.UndefOr[SchemaServiceContext] = js.undefined
 }
 object SchemaReportedErrorEvent {
   

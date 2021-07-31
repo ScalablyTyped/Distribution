@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObaIcon extends StObject {
   
   /** URL to redirect to when an OBA icon is clicked. */
-  var iconClickThroughUrl: js.UndefOr[String] = js.native
+  var iconClickThroughUrl: js.UndefOr[String] = js.undefined
   
   /** URL to track click when an OBA icon is clicked. */
-  var iconClickTrackingUrl: js.UndefOr[String] = js.native
+  var iconClickTrackingUrl: js.UndefOr[String] = js.undefined
   
   /** URL to track view when an OBA icon is clicked. */
-  var iconViewTrackingUrl: js.UndefOr[String] = js.native
+  var iconViewTrackingUrl: js.UndefOr[String] = js.undefined
   
   /** Identifies the industry initiative that the icon supports. For example, AdChoices. */
-  var program: js.UndefOr[String] = js.native
+  var program: js.UndefOr[String] = js.undefined
   
   /** OBA icon resource URL. Campaign Manager only supports image and JavaScript icons. Learn more */
-  var resourceUrl: js.UndefOr[String] = js.native
+  var resourceUrl: js.UndefOr[String] = js.undefined
   
   /** OBA icon size. */
-  var size: js.UndefOr[Size] = js.native
+  var size: js.UndefOr[Size] = js.undefined
   
   /** OBA icon x coordinate position. Accepted values are left or right. */
-  var xPosition: js.UndefOr[String] = js.native
+  var xPosition: js.UndefOr[String] = js.undefined
   
   /** OBA icon y coordinate position. Accepted values are top or bottom. */
-  var yPosition: js.UndefOr[String] = js.native
+  var yPosition: js.UndefOr[String] = js.undefined
 }
 object ObaIcon {
   

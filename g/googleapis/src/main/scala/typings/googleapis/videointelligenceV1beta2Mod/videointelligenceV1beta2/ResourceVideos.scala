@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/videointelligence/v1beta2", "videointelligence_v1beta2.Resource$Videos")
@@ -31,7 +30,7 @@ class ResourceVideos protected () extends StObject {
     */
   def annotate(): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def annotate(callback: BodyResponseCallback[SchemaGoogleLongrunningOperation]): Unit = js.native
-  def annotate(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
+  def annotate(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def annotate(params: ParamsResourceVideosAnnotate): GaxiosPromise[SchemaGoogleLongrunningOperation] = js.native
   def annotate(
     params: ParamsResourceVideosAnnotate,

@@ -2,20 +2,18 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // if FlashElement.elementType == 'instance'
-@js.native
 trait FlashBitmapInstance extends StObject {
   
-  def getBits(): FlashBitmap = js.native
+  def getBits(): FlashBitmap
   
-  var hPixels: Double = js.native
+  var hPixels: Double
   
-  def setBits(bitmap: FlashBitmap): Unit = js.native
+  def setBits(bitmap: FlashBitmap): Unit
   
-  var vPixels: Double = js.native
+  var vPixels: Double
 }
 object FlashBitmapInstance {
   

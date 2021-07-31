@@ -2,27 +2,27 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IkConstraintData extends ConstraintData {
+trait IkConstraintData
+  extends StObject
+     with ConstraintData {
   
-  var bendDirection: Double = js.native
+  var bendDirection: Double
   
-  var bones: js.Array[BoneData] = js.native
+  var bones: js.Array[BoneData]
   
-  var compress: Boolean = js.native
+  var compress: Boolean
   
-  var mix: Double = js.native
+  var mix: Double
   
-  var softness: Double = js.native
+  var softness: Double
   
-  var stretch: Boolean = js.native
+  var stretch: Boolean
   
-  var target: BoneData = js.native
+  var target: BoneData
   
-  var uniform: Boolean = js.native
+  var uniform: Boolean
 }
 object IkConstraintData {
   

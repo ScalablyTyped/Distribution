@@ -6,34 +6,34 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for generic animation.
   * @see http://www.w3.org/TR/smil20/animation.html#edef-animate
   */
-@js.native
-trait XAnimate extends XAnimationNode {
+trait XAnimate
+  extends StObject
+     with XAnimationNode {
   
   /**
     * Controls whether or not the animation is cumulative.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-accumulate
     */
-  var Accumulate: Boolean = js.native
+  var Accumulate: Boolean
   
   /**
     * Controls whether or not the animation is additive.
     * @see AnimationAdditiveMode
     * @see http://www.w3.org/TR/smil20/animation.html#adef-additive
     */
-  var Additive: Double = js.native
+  var Additive: Double
   
   /**
     * Specifies the target attribute.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-attributeName
     */
-  var AttributeName: String = js.native
+  var AttributeName: String
   
   /**
     * Specifies a relative offset value for the animation. ;  Must be a legal value of a domain for which addition to the attributeType domain is defined
@@ -41,57 +41,57 @@ trait XAnimate extends XAnimationNode {
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-by
     */
-  var By: js.Any = js.native
+  var By: js.Any
   
   /**
     * Specifies the interpolation mode for the animation. ;  If the target attribute does not support linear interpolation (e.g. for strings), or if the
     * values attribute has only one value, the CalcMode attribute is ignored and discrete interpolation is used.
     * @see AnimationCalcMode;
     */
-  var CalcMode: Double = js.native
+  var CalcMode: Double
   
   /**
     * if this string is set, its contents will be parsed as a formula. All values are used as a parameter for this formula and the computed result will be
     * used.
     */
-  var Formula: String = js.native
+  var Formula: String
   
   /**
     * Specifies the starting value of the animation. ;  Must be a legal value for the specified attribute. Ignored if the {@link Values} attribute is
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-from
     */
-  var From: js.Any = js.native
+  var From: js.Any
   
-  var KeyTimes: SafeArray[Double] = js.native
+  var KeyTimes: SafeArray[Double]
   
   /**
     * This attribute specifies an optional subitem from the target element that should be animated. ;  A value of zero should always be the default and
     * animate the complete target. ;  See documentation of used animation engine for supported subitems.
     */
-  var SubItem: Double = js.native
+  var SubItem: Double
   
   /** This attribute specifies the target element to be animated. ;  See documentation of used animation engine for supported targets. */
-  var Target: js.Any = js.native
+  var Target: js.Any
   
   /** todo: timeFilter="0,0; 0.14,0.36; 0.43,0.73; 0.71,0.91; 1.0,1.0" ? */
-  var TimeFilter: SafeArray[TimeFilterPair] = js.native
+  var TimeFilter: SafeArray[TimeFilterPair]
   
   /**
     * Specifies the ending value of the animation. ;  Must be a legal value for the specified attribute. Ignored if the {@link Values} attribute is
     * specified.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-to
     */
-  var To: js.Any = js.native
+  var To: js.Any
   
   /** @see AnimationValueType */
-  var ValueType: Double = js.native
+  var ValueType: Double
   
   /**
     * A sequence of one or more values, each of which must be a legal value for the specified attribute.
     * @see http://www.w3.org/TR/smil20/animation.html#adef-values
     */
-  var Values: SafeArray[_] = js.native
+  var Values: SafeArray[js.Any]
 }
 object XAnimate {
   
@@ -126,7 +126,7 @@ object XAnimate {
     Type: Double,
     UserData: SafeArray[NamedValue],
     ValueType: Double,
-    Values: SafeArray[_],
+    Values: SafeArray[js.Any],
     acquire: () => Unit,
     getParent: () => XInterface,
     queryInterface: `type` => js.Any,
@@ -180,6 +180,6 @@ object XAnimate {
     def setValueType(value: Double): Self = StObject.set(x, "ValueType", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setValues(value: SafeArray[_]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
+    def setValues(value: SafeArray[js.Any]): Self = StObject.set(x, "Values", value.asInstanceOf[js.Any])
   }
 }

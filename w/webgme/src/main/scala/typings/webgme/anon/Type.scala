@@ -5,10 +5,8 @@ import typings.webgme.webgmeStrings.mongo
 import typings.webgme.webgmeStrings.redis
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait Type extends StObject {
     * can be 'mongo', 'redis' or 'memory'.
     *   config.storage.database.type = 'mongo';
     */
-  var `type`: mongo | redis | memory = js.native
+  var `type`: mongo | redis | memory
 }
 object Type {
   

@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clusterEndpointMod {
@@ -69,6 +68,10 @@ object clusterEndpointMod {
   /* static members */
   object ClusterEndpoint {
     
+    @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ClusterEndpoint resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -78,60 +81,54 @@ object clusterEndpointMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ClusterEndpoint = js.native
-    @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ClusterEndpoint = js.native
-    @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterEndpointState): ClusterEndpoint = js.native
-    @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterEndpointState, opts: CustomResourceOptions): ClusterEndpoint = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterEndpointState): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterEndpointState, opts: CustomResourceOptions): ClusterEndpoint = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ClusterEndpoint]
     
     /**
       * Returns true if the given object is an instance of ClusterEndpoint.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/rds/clusterEndpoint", "ClusterEndpoint.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/rds/clusterEndpoint.ClusterEndpoint */ Boolean]
   }
   
-  @js.native
   trait ClusterEndpointArgs extends StObject {
     
     /**
       * The identifier to use for the new endpoint. This parameter is stored as a lowercase string.
       */
-    val clusterEndpointIdentifier: Input[String] = js.native
+    val clusterEndpointIdentifier: Input[String]
     
     /**
       * The cluster identifier.
       */
-    val clusterIdentifier: Input[String] = js.native
+    val clusterIdentifier: Input[String]
     
     /**
       * The type of the endpoint. One of: READER , ANY .
       */
-    val customEndpointType: Input[String] = js.native
+    val customEndpointType: Input[String]
     
     /**
       * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty. Conflicts with `staticMembers`.
       */
-    val excludedMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val excludedMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excludedMembers`.
       */
-    val staticMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val staticMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterEndpointArgs {
     
@@ -183,48 +180,47 @@ object clusterEndpointMod {
     }
   }
   
-  @js.native
   trait ClusterEndpointState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of cluster
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The identifier to use for the new endpoint. This parameter is stored as a lowercase string.
       */
-    val clusterEndpointIdentifier: js.UndefOr[Input[String]] = js.native
+    val clusterEndpointIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The cluster identifier.
       */
-    val clusterIdentifier: js.UndefOr[Input[String]] = js.native
+    val clusterIdentifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of the endpoint. One of: READER , ANY .
       */
-    val customEndpointType: js.UndefOr[Input[String]] = js.native
+    val customEndpointType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A custom endpoint for the Aurora cluster
       */
-    val endpoint: js.UndefOr[Input[String]] = js.native
+    val endpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of DB instance identifiers that aren't part of the custom endpoint group. All other eligible instances are reachable through the custom endpoint. Only relevant if the list of static members is empty. Conflicts with `staticMembers`.
       */
-    val excludedMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val excludedMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * List of DB instance identifiers that are part of the custom endpoint group. Conflicts with `excludedMembers`.
       */
-    val staticMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val staticMembers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Key-value map of resource tags
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterEndpointState {
     

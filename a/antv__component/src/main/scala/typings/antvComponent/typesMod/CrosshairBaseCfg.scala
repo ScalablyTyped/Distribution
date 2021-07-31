@@ -3,29 +3,29 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.interfacesMod.IGroup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CrosshairBaseCfg extends GroupComponentCfg {
+trait CrosshairBaseCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 线的样式
     * @type {CrosshairLineCfg}
     */
-  var line: js.UndefOr[CrosshairLineCfg] = js.native
+  var line: js.UndefOr[CrosshairLineCfg] = js.undefined
   
   /**
     * 附加文本的样式
     * @type {CrosshairTextCfg}
     */
-  var text: js.UndefOr[CrosshairTextCfg] = js.native
+  var text: js.UndefOr[CrosshairTextCfg] = js.undefined
   
   /**
     * 文本背景的配置项
     * @type {CrosshairTextBackgroundCfg}
     */
-  var textBackground: js.UndefOr[CrosshairTextBackgroundCfg] = js.native
+  var textBackground: js.UndefOr[CrosshairTextBackgroundCfg] = js.undefined
 }
 object CrosshairBaseCfg {
   

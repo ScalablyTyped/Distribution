@@ -2,7 +2,6 @@ package typings.nodeAbi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,32 +34,24 @@ object mod {
   @scala.inline
   def futureTargets_=(x: js.Array[Target]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("futureTargets")(x.asInstanceOf[js.Any])
   
-  @JSImport("node-abi", "getAbi")
-  @js.native
-  def getAbi(target: String): String = js.native
-  @JSImport("node-abi", "getAbi")
-  @js.native
-  def getAbi(target: String, runtime: Runtime): String = js.native
+  @scala.inline
+  def getAbi(target: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAbi")(target.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getAbi(target: String, runtime: Runtime): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getAbi")(target.asInstanceOf[js.Any], runtime.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("node-abi", "_getNextTarget")
-  @js.native
-  def getNextTarget(runtime: Runtime): String | Null = js.native
-  @JSImport("node-abi", "_getNextTarget")
-  @js.native
-  def getNextTarget(runtime: Runtime, targets: js.Array[Target]): String | Null = js.native
+  @scala.inline
+  def getNextTarget(runtime: Runtime): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("_getNextTarget")(runtime.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def getNextTarget(runtime: Runtime, targets: js.Array[Target]): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("_getNextTarget")(runtime.asInstanceOf[js.Any], targets.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("node-abi", "getTarget")
-  @js.native
-  def getTarget(): String = js.native
-  @JSImport("node-abi", "getTarget")
-  @js.native
-  def getTarget(abi: js.UndefOr[scala.Nothing], runtime: Runtime): String = js.native
-  @JSImport("node-abi", "getTarget")
-  @js.native
-  def getTarget(abi: String): String = js.native
-  @JSImport("node-abi", "getTarget")
-  @js.native
-  def getTarget(abi: String, runtime: Runtime): String = js.native
+  @scala.inline
+  def getTarget(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")().asInstanceOf[String]
+  @scala.inline
+  def getTarget(abi: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(abi.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getTarget(abi: String, runtime: Runtime): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(abi.asInstanceOf[js.Any], runtime.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getTarget(abi: Unit, runtime: Runtime): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getTarget")(abi.asInstanceOf[js.Any], runtime.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("node-abi", "supportedTargets")
   @js.native
@@ -86,16 +77,15 @@ object mod {
     def `node-webkit`: typings.nodeAbi.nodeAbiStrings.`node-webkit` = "node-webkit".asInstanceOf[typings.nodeAbi.nodeAbiStrings.`node-webkit`]
   }
   
-  @js.native
   trait Target extends StObject {
     
-    var abi: String = js.native
+    var abi: String
     
-    var lts: Boolean = js.native
+    var lts: Boolean
     
-    var runtime: Runtime = js.native
+    var runtime: Runtime
     
-    var target: String = js.native
+    var target: String
   }
   object Target {
     

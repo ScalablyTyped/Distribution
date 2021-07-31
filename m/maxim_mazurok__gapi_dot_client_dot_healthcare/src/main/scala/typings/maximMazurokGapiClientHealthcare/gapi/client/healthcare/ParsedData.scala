@@ -2,13 +2,11 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedData extends StObject {
   
-  var segments: js.UndefOr[js.Array[Segment]] = js.native
+  var segments: js.UndefOr[js.Array[Segment]] = js.undefined
 }
 object ParsedData {
   

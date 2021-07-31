@@ -4,19 +4,19 @@ import typings.kendoUi.JQueryEventObject
 import typings.kendoUi.kendo.mobile.ui.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TouchGesturestartEvent extends TouchEvent {
+trait TouchGesturestartEvent
+  extends StObject
+     with TouchEvent {
   
-  var center: js.UndefOr[Point] = js.native
+  var center: js.UndefOr[Point] = js.undefined
   
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
-  var event: js.UndefOr[JQueryEventObject] = js.native
+  var event: js.UndefOr[JQueryEventObject] = js.undefined
   
-  var touches: js.UndefOr[js.Any] = js.native
+  var touches: js.UndefOr[js.Any] = js.undefined
 }
 object TouchGesturestartEvent {
   

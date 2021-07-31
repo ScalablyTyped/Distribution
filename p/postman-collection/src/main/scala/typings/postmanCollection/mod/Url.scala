@@ -6,7 +6,6 @@ import typings.postmanCollection.anon.Password
 import typings.postmanCollection.anon.Unresolved
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -67,11 +66,13 @@ class Url protected () extends PropertyBase[UrlDefinition] {
 /* static members */
 object Url {
   
-  @JSImport("postman-collection", "Url.isUrl")
+  @JSImport("postman-collection", "Url")
   @js.native
-  def isUrl(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("postman-collection", "Url.parse")
-  @js.native
-  def parse(url: String): UrlDefinition = js.native
+  @scala.inline
+  def isUrl(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isUrl")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def parse(url: String): UrlDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(url.asInstanceOf[js.Any]).asInstanceOf[UrlDefinition]
 }

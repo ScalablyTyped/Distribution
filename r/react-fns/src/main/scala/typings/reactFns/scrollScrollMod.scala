@@ -5,7 +5,6 @@ import typings.reactFns.anon.PartialScrollConfig
 import typings.reactFns.typesMod.SharedRenderProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollScrollMod {
@@ -13,13 +12,13 @@ object scrollScrollMod {
   @JSImport("react-fns/dist/Scroll/Scroll", "Scroll")
   @js.native
   class Scroll protected ()
-    extends Component[ScrollConfig with SharedRenderProps[ScrollProps], ScrollProps, js.Any] {
-    def this(props: ScrollConfig with SharedRenderProps[ScrollProps]) = this()
+    extends Component[ScrollConfig & SharedRenderProps[ScrollProps], ScrollProps, js.Any] {
+    def this(props: ScrollConfig & SharedRenderProps[ScrollProps]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
-    def this(props: ScrollConfig with SharedRenderProps[ScrollProps], context: js.Any) = this()
+    def this(props: ScrollConfig & SharedRenderProps[ScrollProps], context: js.Any) = this()
     
     @JSName("componentDidMount")
     def componentDidMount_MScroll(): Unit = js.native
@@ -43,10 +42,9 @@ object scrollScrollMod {
     def defaultProps_=(x: PartialScrollConfig): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ScrollConfig extends StObject {
     
-    var throttle: js.UndefOr[Double] = js.native
+    var throttle: js.UndefOr[Double] = js.undefined
   }
   object ScrollConfig {
     
@@ -67,12 +65,11 @@ object scrollScrollMod {
     }
   }
   
-  @js.native
   trait ScrollProps extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ScrollProps {
     

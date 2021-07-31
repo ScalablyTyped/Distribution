@@ -11,8 +11,8 @@ Windows Azure Active Directory Client Library for node
 | Full name          | adal-node |
 | Keywords           | node, azure, AAD, adal, adfs, oauth |
 | # releases         | 3 |
-| # dependents       | 63 |
-| # downloads        | 12202282 |
+| # dependents       | 69 |
+| # downloads        | 18409263 |
 | # stars            | 6 |
 
 ## Links

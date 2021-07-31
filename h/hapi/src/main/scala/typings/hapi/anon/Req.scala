@@ -4,15 +4,13 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Req extends StObject {
   
-  var req: IncomingMessage = js.native
+  var req: IncomingMessage
   
-  var res: ServerResponse = js.native
+  var res: ServerResponse
 }
 object Req {
   

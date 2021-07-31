@@ -10,9 +10,9 @@ Client for prometheus
 | ------------------ | :-------------: |
 | Full name          | prom-client |
 | Keywords           | Prometheus, Metrics, Client |
-| # releases         | 12 |
-| # dependents       | 416 |
-| # downloads        | 18458433 |
+| # releases         | 8 |
+| # dependents       | 481 |
+| # downloads        | 25161186 |
 | # stars            | 9 |
 
 ## Links

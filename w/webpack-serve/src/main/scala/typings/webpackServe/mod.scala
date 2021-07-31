@@ -2,7 +2,6 @@ package typings.webpackServe
 
 import typings.koa.mod.DefaultContext
 import typings.koa.mod.DefaultState
-import typings.koa.mod.^
 import typings.node.httpsMod.ServerOptions
 import typings.node.netMod.Server
 import typings.webpackServe.anon.Compiler
@@ -22,27 +21,28 @@ import typings.webpackServe.webpackServeStrings.trace
 import typings.webpackServe.webpackServeStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(argv: js.Object, options: Options): js.Promise[Result] = (^.asInstanceOf[js.Dynamic].apply(argv.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Result]]
+  
   @JSImport("webpack-serve", JSImport.Namespace)
   @js.native
-  def apply(argv: js.Object, options: Options): js.Promise[Result] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait EventMap extends StObject {
     
-    var `build-finished`: Stats = js.native
+    var `build-finished`: Stats
     
-    var `build-started`: Compiler = js.native
+    var `build-started`: Compiler
     
-    var `compiler-error`: Stats = js.native
+    var `compiler-error`: Stats
     
-    var `compiler-warning`: Stats = js.native
+    var `compiler-warning`: Stats
     
-    var listening: typings.webpackServe.anon.Options = js.native
+    var listening: typings.webpackServe.anon.Options
   }
   object EventMap {
     
@@ -83,17 +83,19 @@ object mod {
   }
   
   @js.native
-  trait InitializedKoa extends ^[DefaultState, DefaultContext] {
+  trait InitializedKoa
+    extends typings.koa.mod.^[DefaultState, DefaultContext] {
     
     var server: Server = js.native
     
     def stop(): Unit = js.native
   }
   
-  @js.native
-  trait InitializedOptions extends Options {
+  trait InitializedOptions
+    extends StObject
+       with Options {
     
-    var protocol: http | https = js.native
+    var protocol: http | https
   }
   object InitializedOptions {
     
@@ -111,14 +113,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Middleware extends StObject {
     
     /** Function to call to add koa-static */
-    def content(): Unit = js.native
+    def content(): Unit
     
     /** Function to call to add the webpack-dev-middleware */
-    def webpack(): Unit = js.native
+    def webpack(): Unit
   }
   object Middleware {
     
@@ -140,18 +141,17 @@ object mod {
   }
   
   /* Inlined {[ K in keyof webpack-serve.webpack-serve.EventMap ]:? (args : webpack-serve.webpack-serve.EventMap[K]): void} */
-  @js.native
   trait OnOptions extends StObject {
     
-    var `build-finished`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.native
+    var `build-finished`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.undefined
     
-    var `build-started`: js.UndefOr[js.Function1[/* args */ Compiler, Unit]] = js.native
+    var `build-started`: js.UndefOr[js.Function1[/* args */ Compiler, Unit]] = js.undefined
     
-    var `compiler-error`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.native
+    var `compiler-error`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.undefined
     
-    var `compiler-warning`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.native
+    var `compiler-warning`: js.UndefOr[js.Function1[/* args */ Stats, Unit]] = js.undefined
     
-    var listening: js.UndefOr[js.Function1[/* args */ typings.webpackServe.anon.Options, Unit]] = js.native
+    var listening: js.UndefOr[js.Function1[/* args */ typings.webpackServe.anon.Options, Unit]] = js.undefined
   }
   object OnOptions {
     
@@ -196,14 +196,13 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenOptions extends StObject {
     
     /** Name of the browser to open */
-    var app: js.UndefOr[String] = js.native
+    var app: js.UndefOr[String] = js.undefined
     
     /** Path on the server to open */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object OpenOptions {
     
@@ -230,59 +229,58 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Addon to webpack-serve that allows access to the Koa server instance */
     var add: js.UndefOr[
         js.Function3[/* app */ InitializedKoa, /* middleware */ Middleware, /* options */ this.type, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** Copy the server URL to the clipboard when the server is started */
-    var clipboard: js.UndefOr[Boolean] = js.native
+    var clipboard: js.UndefOr[Boolean] = js.undefined
     
     /** Custom instance of a webpack compiler */
     var compiler: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Compiler */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** Webpack configuration for creating a new webpack compiler instance */
     var config: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Configuration */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /** A path or array of paths where content will be served from */
-    var content: js.UndefOr[String | js.Array[String]] = js.native
+    var content: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** Options for webpack-dev-middleware */
-    var devMiddleware: js.UndefOr[typings.webpackDevMiddleware.mod.Options] = js.native
+    var devMiddleware: js.UndefOr[typings.webpackDevMiddleware.mod.Options] = js.undefined
     
     /** The host the server will listen on */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /** Options for webpack-hot-client */
-    var hotClient: js.UndefOr[typings.webpackHotClient.mod.Options | Boolean] = js.native
+    var hotClient: js.UndefOr[typings.webpackHotClient.mod.Options | Boolean] = js.undefined
     
     /** Enable HTTP2 support */
-    var http2: js.UndefOr[Boolean] = js.native
+    var http2: js.UndefOr[Boolean] = js.undefined
     
     /** Configuration object for the server to use HTTPS */
-    var https: js.UndefOr[ServerOptions] = js.native
+    var https: js.UndefOr[ServerOptions] = js.undefined
     
     /** Level of information for webpack-serve to output */
-    var logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.native
+    var logLevel: js.UndefOr[trace | debug | info | warn | error | silent] = js.undefined
     
     /** Prepend timestamp to each log line */
-    var logTime: js.UndefOr[Boolean] = js.native
+    var logTime: js.UndefOr[Boolean] = js.undefined
     
     /** Object of subscribers to webpack-serve bus events */
-    var on: js.UndefOr[OnOptions] = js.native
+    var on: js.UndefOr[OnOptions] = js.undefined
     
     /** Open the browser when started */
-    var open: js.UndefOr[OpenOptions | Boolean] = js.native
+    var open: js.UndefOr[OpenOptions | Boolean] = js.undefined
     
     /** Port that the server listens on */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -419,10 +417,9 @@ object mod {
   /* augmented module */
   object webpackAugmentingMod {
     
-    @js.native
     trait Configuration extends StObject {
       
-      var serve: js.UndefOr[Options] = js.native
+      var serve: js.UndefOr[Options] = js.undefined
     }
     object Configuration {
       

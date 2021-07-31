@@ -18,7 +18,6 @@ import typings.prex.mod.CancellationToken
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grammarMod {
@@ -33,9 +32,9 @@ object grammarMod {
       */
     def this(rootNames: Iterable[String]) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions) = this()
-    def this(rootNames: Iterable[String], options: js.UndefOr[scala.Nothing], host: CoreAsyncHost) = this()
-    def this(rootNames: Iterable[String], options: js.UndefOr[scala.Nothing], host: CoreSyncHost) = this()
-    def this(rootNames: Iterable[String], options: js.UndefOr[scala.Nothing], host: Host) = this()
+    def this(rootNames: Iterable[String], options: Unit, host: CoreAsyncHost) = this()
+    def this(rootNames: Iterable[String], options: Unit, host: CoreSyncHost) = this()
+    def this(rootNames: Iterable[String], options: Unit, host: Host) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions, host: CoreAsyncHost) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions, host: CoreSyncHost) = this()
     def this(rootNames: Iterable[String], options: CompilerOptions, host: Host) = this()
@@ -130,8 +129,8 @@ object grammarMod {
       * @returns A `Promise` that is settled when the operation has completed.
       */
     def check(): js.Promise[Unit] = js.native
-    def check(sourceFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): js.Promise[Unit] = js.native
-    def check(sourceFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): js.Promise[Unit] = js.native
+    def check(sourceFile: Unit, cancelable: Cancelable): js.Promise[Unit] = js.native
+    def check(sourceFile: Unit, cancelable: CancellationToken): js.Promise[Unit] = js.native
     def check(sourceFile: SourceFile): js.Promise[Unit] = js.native
     def check(sourceFile: SourceFile, cancelable: Cancelable): js.Promise[Unit] = js.native
     def check(sourceFile: SourceFile, cancelable: CancellationToken): js.Promise[Unit] = js.native
@@ -141,8 +140,8 @@ object grammarMod {
       * @param cancelable A cancelable object that can be used to abort the operation.
       */
     def checkSync(): Unit = js.native
-    def checkSync(sourceFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): Unit = js.native
-    def checkSync(sourceFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): Unit = js.native
+    def checkSync(sourceFile: Unit, cancelable: Cancelable): Unit = js.native
+    def checkSync(sourceFile: Unit, cancelable: CancellationToken): Unit = js.native
     def checkSync(sourceFile: SourceFile): Unit = js.native
     def checkSync(sourceFile: SourceFile, cancelable: Cancelable): Unit = js.native
     def checkSync(sourceFile: SourceFile, cancelable: CancellationToken): Unit = js.native
@@ -194,31 +193,21 @@ object grammarMod {
       */
     def emit(): js.Promise[Unit] = js.native
     def emit(
-      sourceFile: js.UndefOr[scala.Nothing],
-      writeFile: js.UndefOr[scala.Nothing],
-      cancelable: Cancelable
-    ): js.Promise[Unit] = js.native
-    def emit(
-      sourceFile: js.UndefOr[scala.Nothing],
-      writeFile: js.UndefOr[scala.Nothing],
-      cancelable: CancellationToken
-    ): js.Promise[Unit] = js.native
-    def emit(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]]
     ): js.Promise[Unit] = js.native
     def emit(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]],
       cancelable: Cancelable
     ): js.Promise[Unit] = js.native
     def emit(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]],
       cancelable: CancellationToken
     ): js.Promise[Unit] = js.native
     def emit(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function3[
           /* file */ String, 
           /* output */ String, 
@@ -227,7 +216,7 @@ object grammarMod {
         ]
     ): js.Promise[Unit] = js.native
     def emit(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function3[
           /* file */ String, 
           /* output */ String, 
@@ -236,9 +225,9 @@ object grammarMod {
         ],
       cancelable: Cancelable
     ): js.Promise[Unit] = js.native
+    def emit(sourceFile: Unit, writeFile: Unit, cancelable: Cancelable): js.Promise[Unit] = js.native
+    def emit(sourceFile: Unit, writeFile: Unit, cancelable: CancellationToken): js.Promise[Unit] = js.native
     def emit(sourceFile: SourceFile): js.Promise[Unit] = js.native
-    def emit(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): js.Promise[Unit] = js.native
-    def emit(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): js.Promise[Unit] = js.native
     def emit(
       sourceFile: SourceFile,
       writeFile: js.Function2[/* file */ String, /* output */ String, Unit | js.Thenable[Unit]]
@@ -272,6 +261,8 @@ object grammarMod {
         ],
       cancelable: Cancelable
     ): js.Promise[Unit] = js.native
+    def emit(sourceFile: SourceFile, writeFile: Unit, cancelable: Cancelable): js.Promise[Unit] = js.native
+    def emit(sourceFile: SourceFile, writeFile: Unit, cancelable: CancellationToken): js.Promise[Unit] = js.native
     
     /**
       * Asynchronously emits the provided file in the grammar as a string. Will also parse, bind, and check the grammar if it has not yet been parsed, bound, or checked.
@@ -300,32 +291,19 @@ object grammarMod {
       * @param cancelable A cancelable object that can be used to abort the operation.
       */
     def emitSync(): Unit = js.native
+    def emitSync(sourceFile: Unit, writeFile: js.Function2[/* file */ String, /* output */ String, Unit]): Unit = js.native
     def emitSync(
-      sourceFile: js.UndefOr[scala.Nothing],
-      writeFile: js.UndefOr[scala.Nothing],
-      cancelable: Cancelable
-    ): Unit = js.native
-    def emitSync(
-      sourceFile: js.UndefOr[scala.Nothing],
-      writeFile: js.UndefOr[scala.Nothing],
-      cancelable: CancellationToken
-    ): Unit = js.native
-    def emitSync(
-      sourceFile: js.UndefOr[scala.Nothing],
-      writeFile: js.Function2[/* file */ String, /* output */ String, Unit]
-    ): Unit = js.native
-    def emitSync(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function2[/* file */ String, /* output */ String, Unit],
       cancelable: Cancelable
     ): Unit = js.native
     def emitSync(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function2[/* file */ String, /* output */ String, Unit],
       cancelable: CancellationToken
     ): Unit = js.native
     def emitSync(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function3[
           /* file */ String, 
           /* output */ String, 
@@ -334,7 +312,7 @@ object grammarMod {
         ]
     ): Unit = js.native
     def emitSync(
-      sourceFile: js.UndefOr[scala.Nothing],
+      sourceFile: Unit,
       writeFile: js.Function3[
           /* file */ String, 
           /* output */ String, 
@@ -343,9 +321,9 @@ object grammarMod {
         ],
       cancelable: Cancelable
     ): Unit = js.native
+    def emitSync(sourceFile: Unit, writeFile: Unit, cancelable: Cancelable): Unit = js.native
+    def emitSync(sourceFile: Unit, writeFile: Unit, cancelable: CancellationToken): Unit = js.native
     def emitSync(sourceFile: SourceFile): Unit = js.native
-    def emitSync(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: Cancelable): Unit = js.native
-    def emitSync(sourceFile: SourceFile, writeFile: js.UndefOr[scala.Nothing], cancelable: CancellationToken): Unit = js.native
     def emitSync(sourceFile: SourceFile, writeFile: js.Function2[/* file */ String, /* output */ String, Unit]): Unit = js.native
     def emitSync(
       sourceFile: SourceFile,
@@ -376,6 +354,8 @@ object grammarMod {
         ],
       cancelable: Cancelable
     ): Unit = js.native
+    def emitSync(sourceFile: SourceFile, writeFile: Unit, cancelable: Cancelable): Unit = js.native
+    def emitSync(sourceFile: SourceFile, writeFile: Unit, cancelable: CancellationToken): Unit = js.native
     
     /**
       * Gets the {@link Emitter} used to emit the grammar.
@@ -486,6 +466,10 @@ object grammarMod {
   /* static members */
   object Grammar {
     
+    @JSImport("grammarkdown/dist/grammar", "Grammar")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Converts a string containing Grammarkdown syntax into output based on the provided options.
       * @param content The Grammarkdown source text to convert.
@@ -497,132 +481,63 @@ object grammarMod {
       * {@inheritDoc Grammar.(convert:1)}
       * @deprecated since 2.1.0 - `prex.CancellationToken` may no longer be accepted in future releases. Please use a token that implements `@esfx/cancelable.Cancelable`
       */
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: js.UndefOr[scala.Nothing],
-      hostFallback: js.UndefOr[scala.Nothing],
-      cancelable: Cancelable
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: js.UndefOr[scala.Nothing],
-      hostFallback: js.UndefOr[scala.Nothing],
-      cancelable: CancellationToken
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: CoreAsyncHost): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: js.UndefOr[scala.Nothing],
-      hostFallback: CoreAsyncHost,
-      cancelable: Cancelable
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: js.UndefOr[scala.Nothing],
-      hostFallback: CoreAsyncHost,
-      cancelable: CancellationToken
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: CoreSyncHost): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: js.UndefOr[scala.Nothing],
-      hostFallback: CoreSyncHost,
-      cancelable: Cancelable
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: js.UndefOr[scala.Nothing],
-      hostFallback: CoreSyncHost,
-      cancelable: CancellationToken
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: Host): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: js.UndefOr[scala.Nothing], hostFallback: Host, cancelable: Cancelable): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: js.UndefOr[scala.Nothing],
-      hostFallback: Host,
-      cancelable: CancellationToken
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: CompilerOptions,
-      hostFallback: js.UndefOr[scala.Nothing],
-      cancelable: Cancelable
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(
-      content: String,
-      options: CompilerOptions,
-      hostFallback: js.UndefOr[scala.Nothing],
-      cancelable: CancellationToken
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost, cancelable: Cancelable): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
+    @scala.inline
+    def convert(content: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: CoreAsyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: CoreAsyncHost, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: CoreSyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: CoreSyncHost, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: Host, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: Unit, hostFallback: Host, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: Unit, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: CoreAsyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def convert(
       content: String,
       options: CompilerOptions,
       hostFallback: CoreAsyncHost,
       cancelable: CancellationToken
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost, cancelable: Cancelable): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: CoreSyncHost, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def convert(
       content: String,
       options: CompilerOptions,
       hostFallback: CoreSyncHost,
       cancelable: CancellationToken
-    ): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions, hostFallback: Host): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: Cancelable): String = js.native
-    @JSImport("grammarkdown/dist/grammar", "Grammar.convert")
-    @js.native
-    def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: CancellationToken): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: Host): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: Cancelable): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def convert(content: String, options: CompilerOptions, hostFallback: Host, cancelable: CancellationToken): String = (^.asInstanceOf[js.Dynamic].applyDynamic("convert")(content.asInstanceOf[js.Any], options.asInstanceOf[js.Any], hostFallback.asInstanceOf[js.Any], cancelable.asInstanceOf[js.Any])).asInstanceOf[String]
   }
 }

@@ -2,20 +2,18 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to search for potentially sensitive info in a ContentItem.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2InspectContentRequest extends StObject {
   
   /**
     * Configuration for the inspector. What specified here will override the
     * template referenced by the inspect_template_name argument.
     */
-  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
     * Optional template to use. Any configuration directly specified in
@@ -24,12 +22,12 @@ trait SchemaGooglePrivacyDlpV2InspectContentRequest extends StObject {
     * the template. Repeated fields are appended. Singular sub-messages and
     * groups are recursively merged.
     */
-  var inspectTemplateName: js.UndefOr[String] = js.native
+  var inspectTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * The item to inspect.
     */
-  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.native
+  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2InspectContentRequest {
   

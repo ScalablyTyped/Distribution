@@ -4,7 +4,6 @@ import typings.googleapis.anon.Code
 import typings.googleapis.anon.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,79 +13,78 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * beta.regionOperations ==) (== resource_for v1.zoneOperations ==) (==
   * resource_for beta.zoneOperations ==)
   */
-@js.native
 trait SchemaOperation extends StObject {
   
   /**
     * [Output Only] The value of `requestId` if you provided it in the request.
     * Not present otherwise.
     */
-  var clientOperationId: js.UndefOr[String] = js.native
+  var clientOperationId: js.UndefOr[String] = js.undefined
   
   /**
     * [Deprecated] This field is deprecated.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] A textual description of the operation, which is set when
     * the operation is created.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The time that this operation was completed. This value is
     * in RFC3339 text format.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] If errors are generated during processing of the operation,
     * this field will be populated.
     */
-  var error: js.UndefOr[`3`] = js.native
+  var error: js.UndefOr[`3`] = js.undefined
   
   /**
     * [Output Only] If the operation fails, this field contains the HTTP error
     * message that was returned, such as NOT FOUND.
     */
-  var httpErrorMessage: js.UndefOr[String] = js.native
+  var httpErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] If the operation fails, this field contains the HTTP error
     * status code that was returned. For example, a 404 means the resource was
     * not found.
     */
-  var httpErrorStatusCode: js.UndefOr[Double] = js.native
+  var httpErrorStatusCode: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The time that this operation was requested. This value is
     * in RFC3339 text format.
     */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#operation for
     * Operation resources.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Name of the resource.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The type of operation, such as insert, update, or delete,
     * and so on.
     */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] An optional progress indicator that ranges from 0 to 100.
@@ -95,7 +93,7 @@ trait SchemaOperation extends StObject {
     * complete. This number should monotonically increase as the operation
     * progresses.
     */
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
   
   /**
     * [Output Only] The URL of the region where the operation resides. Only
@@ -103,60 +101,60 @@ trait SchemaOperation extends StObject {
     * field as part of the HTTP request URL. It is not settable as a field in
     * the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Server-defined URL for this resource with the resource id.
     */
-  var selfLinkWithId: js.UndefOr[String] = js.native
+  var selfLinkWithId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The time that this operation was started by the server.
     * This value is in RFC3339 text format.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of the operation, which can be one of the
     * following: PENDING, RUNNING, or DONE.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] An optional textual description of the current status of
     * the operation.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique target ID, which identifies a specific
     * incarnation of the target resource.
     */
-  var targetId: js.UndefOr[String] = js.native
+  var targetId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URL of the resource that the operation modifies. For
     * operations related to creating a snapshot, this points to the persistent
     * disk that the snapshot was created from.
     */
-  var targetLink: js.UndefOr[String] = js.native
+  var targetLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] User who requested the operation, for example:
     * user@example.com.
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] If warning messages are generated during processing of the
     * operation, this field will be populated.
     */
-  var warnings: js.UndefOr[js.Array[Code]] = js.native
+  var warnings: js.UndefOr[js.Array[Code]] = js.undefined
   
   /**
     * [Output Only] The URL of the zone where the operation resides. Only
@@ -164,7 +162,7 @@ trait SchemaOperation extends StObject {
     * field as part of the HTTP request URL. It is not settable as a field in
     * the request body.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaOperation {
   

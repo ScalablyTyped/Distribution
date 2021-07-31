@@ -3,31 +3,29 @@ package typings.psi.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audit extends StObject {
   
-  var description: String = js.native
+  var description: String
   
-  var details: StringDictionary[js.Object] = js.native
+  var details: StringDictionary[js.Object]
   
-  var displayValue: String = js.native
+  var displayValue: String
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var explanation: String = js.native
+  var explanation: String
   
-  var id: String = js.native
+  var id: String
   
-  var score: js.Object = js.native
+  var score: js.Object
   
-  var scoreDisplayMode: String = js.native
+  var scoreDisplayMode: String
   
-  var title: String = js.native
+  var title: String
   
-  var warnings: js.Object = js.native
+  var warnings: js.Object
 }
 object Audit {
   

@@ -3,13 +3,11 @@ package typings.weixinApp.anon
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var data: js.UndefOr[(Record[String, _]) | String] = js.native
+  var data: js.UndefOr[(Record[String, js.Any]) | String] = js.undefined
 }
 object `0` {
   
@@ -23,7 +21,7 @@ object `0` {
   implicit class `0MutableBuilder`[Self <: `0`] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setData(value: (Record[String, _]) | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: (Record[String, js.Any]) | String): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

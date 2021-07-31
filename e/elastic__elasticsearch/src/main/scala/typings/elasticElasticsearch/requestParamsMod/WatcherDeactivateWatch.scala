@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WatcherDeactivateWatch extends Generic {
+trait WatcherDeactivateWatch
+  extends StObject
+     with Generic {
   
-  var watch_id: String = js.native
+  var watch_id: String
 }
 object WatcherDeactivateWatch {
   

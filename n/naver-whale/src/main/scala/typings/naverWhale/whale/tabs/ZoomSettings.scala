@@ -2,10 +2,8 @@ package typings.naverWhale.whale.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ZoomSettings extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait ZoomSettings extends StObject {
     * Used to return the default zoom level for the current tab in calls to tabs.getZoomSettings.
     * @since Chrome 43.
     */
-  var defaultZoomFactor: js.UndefOr[Double] = js.native
+  var defaultZoomFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Optional.
@@ -22,7 +20,7 @@ trait ZoomSettings extends StObject {
     * "manual": Overrides the automatic handling of zoom changes. The onZoomChange event will still be dispatched, and it is the responsibility of the extension to listen for this event and manually scale the page. This mode does not support per-origin zooming, and will thus ignore the scope zoom setting and assume per-tab.
     * "disabled": Disables all zooming in the tab. The tab will revert to the default zoom level, and all attempted zoom changes will be ignored.
     */
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
   /**
     * Optional.
@@ -30,7 +28,7 @@ trait ZoomSettings extends StObject {
     * "per-origin": Zoom changes will persist in the zoomed page's origin, i.e. all other tabs navigated to that same origin will be zoomed as well. Moreover, per-origin zoom changes are saved with the origin, meaning that when navigating to other pages in the same origin, they will all be zoomed to the same zoom factor. The per-origin scope is only available in the automatic mode.
     * "per-tab": Zoom changes only take effect in this tab, and zoom changes in other tabs will not affect the zooming of this tab. Also, per-tab zoom changes are reset on navigation; navigating a tab will always load pages with their per-origin zoom factors.
     */
-  var scope: js.UndefOr[String] = js.native
+  var scope: js.UndefOr[String] = js.undefined
 }
 object ZoomSettings {
   

@@ -2,16 +2,16 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IkConstraint extends Updatable {
+trait IkConstraint
+  extends StObject
+     with Updatable {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
   @JSName("apply")
-  def apply(): Unit = js.native
+  def apply(): Unit
   
   def apply1(
     bone: Bone,
@@ -21,7 +21,7 @@ trait IkConstraint extends Updatable {
     stretch: Boolean,
     uniform: Boolean,
     alpha: Double
-  ): Unit = js.native
+  ): Unit
   
   def apply2(
     parent: Bone,
@@ -32,23 +32,23 @@ trait IkConstraint extends Updatable {
     stretch: Boolean,
     softness: Double,
     alpha: Double
-  ): Unit = js.native
+  ): Unit
   
-  var bendDirection: Double = js.native
+  var bendDirection: Double
   
-  var bones: js.Array[Bone] = js.native
+  var bones: js.Array[Bone]
   
-  var compress: Boolean = js.native
+  var compress: Boolean
   
-  var data: IkConstraintData = js.native
+  var data: IkConstraintData
   
-  var mix: Double = js.native
+  var mix: Double
   
-  var softness: Double = js.native
+  var softness: Double
   
-  var stretch: Boolean = js.native
+  var stretch: Boolean
   
-  var target: Bone = js.native
+  var target: Bone
 }
 object IkConstraint {
   

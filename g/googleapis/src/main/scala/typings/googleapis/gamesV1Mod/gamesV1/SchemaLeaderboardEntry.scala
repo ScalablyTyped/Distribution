@@ -2,51 +2,49 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for the Leaderboard Entry resource.
   */
-@js.native
 trait SchemaLeaderboardEntry extends StObject {
   
   /**
     * The localized string for the numerical value of this score.
     */
-  var formattedScore: js.UndefOr[String] = js.native
+  var formattedScore: js.UndefOr[String] = js.undefined
   
   /**
     * The localized string for the rank of this score for this leaderboard.
     */
-  var formattedScoreRank: js.UndefOr[String] = js.native
+  var formattedScoreRank: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#leaderboardEntry.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The player who holds this score.
     */
-  var player: js.UndefOr[SchemaPlayer] = js.native
+  var player: js.UndefOr[SchemaPlayer] = js.undefined
   
   /**
     * The rank of this score for this leaderboard.
     */
-  var scoreRank: js.UndefOr[String] = js.native
+  var scoreRank: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information about the score. Values must contain no more than
     * 64 URI-safe characters as defined by section 2.3 of RFC 3986.
     */
-  var scoreTag: js.UndefOr[String] = js.native
+  var scoreTag: js.UndefOr[String] = js.undefined
   
   /**
     * The numerical value of this score.
     */
-  var scoreValue: js.UndefOr[String] = js.native
+  var scoreValue: js.UndefOr[String] = js.undefined
   
   /**
     * The time span of this high score. Possible values are:   -
@@ -54,13 +52,13 @@ trait SchemaLeaderboardEntry extends StObject {
     * &quot;WEEKLY&quot; - The score is a weekly high score.  -
     * &quot;DAILY&quot; - The score is a daily high score.
     */
-  var timeSpan: js.UndefOr[String] = js.native
+  var timeSpan: js.UndefOr[String] = js.undefined
   
   /**
     * The timestamp at which this score was recorded, in milliseconds since the
     * epoch in UTC.
     */
-  var writeTimestampMillis: js.UndefOr[String] = js.native
+  var writeTimestampMillis: js.UndefOr[String] = js.undefined
 }
 object SchemaLeaderboardEntry {
   

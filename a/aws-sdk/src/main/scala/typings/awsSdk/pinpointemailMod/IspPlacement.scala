@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointemailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IspPlacement extends StObject {
   
   /**
     * The name of the email provider that the inbox placement data applies to.
     */
-  var IspName: js.UndefOr[typings.awsSdk.pinpointemailMod.IspName] = js.native
+  var IspName: js.UndefOr[typings.awsSdk.pinpointemailMod.IspName] = js.undefined
   
   /**
     * An object that contains inbox placement metrics for a specific email provider.
     */
-  var PlacementStatistics: js.UndefOr[typings.awsSdk.pinpointemailMod.PlacementStatistics] = js.native
+  var PlacementStatistics: js.UndefOr[typings.awsSdk.pinpointemailMod.PlacementStatistics] = js.undefined
 }
 object IspPlacement {
   

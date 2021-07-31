@@ -2,25 +2,23 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FsStatsData extends StObject {
   
-  var ms: Double = js.native
+  var ms: Double
   
-  var rx: Double = js.native
+  var rx: Double
   
-  var rx_sec: Double = js.native
+  var rx_sec: Double
   
-  var tx: Double = js.native
+  var tx: Double
   
-  var tx_sec: Double = js.native
+  var tx_sec: Double
   
-  var wx: Double = js.native
+  var wx: Double
   
-  var wx_sec: Double = js.native
+  var wx_sec: Double
 }
 object FsStatsData {
   

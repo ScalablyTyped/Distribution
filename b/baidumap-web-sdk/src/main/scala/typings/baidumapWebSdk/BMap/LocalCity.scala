@@ -2,13 +2,11 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalCity extends StObject {
   
-  def get(callback: js.Function1[/* result */ LocalCityResult, Unit]): Unit = js.native
+  def get(callback: js.Function1[/* result */ LocalCityResult, Unit]): Unit
 }
 object LocalCity {
   

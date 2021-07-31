@@ -2,15 +2,15 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 自定义事件 */
-@js.native
-trait CustomEvent[Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] extends BaseEvent[Mark, CurrentTargetDataset, TargetDataset] {
+trait CustomEvent[Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */]
+  extends StObject
+     with BaseEvent[Mark, CurrentTargetDataset, TargetDataset] {
   
   /** 额外的信息 */
-  var detail: Detail = js.native
+  var detail: Detail
 }
 object CustomEvent {
   
@@ -28,7 +28,7 @@ object CustomEvent {
   }
   
   @scala.inline
-  implicit class CustomEventMutableBuilder[Self <: CustomEvent[_, _, _, _], Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self with (CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
+  implicit class CustomEventMutableBuilder[Self <: CustomEvent[?, ?, ?, ?], Detail /* <: IAnyObject */, Mark /* <: IAnyObject */, CurrentTargetDataset /* <: IAnyObject */, TargetDataset /* <: IAnyObject */] (val x: Self & (CustomEvent[Detail, Mark, CurrentTargetDataset, TargetDataset])) extends AnyVal {
     
     @scala.inline
     def setDetail(value: Detail): Self = StObject.set(x, "detail", value.asInstanceOf[js.Any])

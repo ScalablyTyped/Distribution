@@ -13,7 +13,6 @@ import typings.html5plus.html5plusStrings.right
 import typings.html5plus.html5plusStrings.underline
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
   */
-@js.native
 trait PlusNativeObjTextStyles extends StObject {
   
   /**
@@ -38,7 +36,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var align: js.UndefOr[left | center | right] = js.native
+  var align: js.UndefOr[left | center | right] = js.undefined
   
   /**
     * 字体颜色
@@ -49,7 +47,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * 文本装饰
@@ -70,7 +68,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var decoration: js.UndefOr[none | underline | `line-through`] = js.native
+  var decoration: js.UndefOr[none | underline | `line-through`] = js.undefined
   
   /**
     * 字体名称
@@ -78,7 +76,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var family: js.UndefOr[String] = js.native
+  var family: js.UndefOr[String] = js.undefined
   
   /**
     * 字体文件路径
@@ -86,7 +84,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var fontSrc: js.UndefOr[String] = js.native
+  var fontSrc: js.UndefOr[String] = js.undefined
   
   /**
     * 文本的行间距
@@ -96,7 +94,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var lineSpacing: js.UndefOr[String] = js.native
+  var lineSpacing: js.UndefOr[String] = js.undefined
   
   /**
     * 字体的边距
@@ -105,7 +103,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var margin: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[String] = js.undefined
   
   /**
     * 文本内容超出显示区域时处理方式
@@ -119,7 +117,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var overflow: js.UndefOr[clip] = js.native
+  var overflow: js.UndefOr[clip] = js.undefined
   
   /**
     * 字体大小
@@ -128,7 +126,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
   /**
     * 字体样式
@@ -138,7 +136,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var style: js.UndefOr[normal | italic] = js.native
+  var style: js.UndefOr[normal | italic] = js.undefined
   
   /**
     * 垂直对齐方式
@@ -150,7 +148,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var verticalAlign: js.UndefOr[String] = js.native
+  var verticalAlign: js.UndefOr[String] = js.undefined
   
   /**
     * 字体粗细
@@ -160,7 +158,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var weight: js.UndefOr[normal | bold] = js.native
+  var weight: js.UndefOr[normal | bold] = js.undefined
   
   /**
     * 文本换行模式
@@ -177,7 +175,7 @@ trait PlusNativeObjTextStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/nativeobj.html](http://www.html5plus.org/doc/zh_cn/nativeobj.html)
     */
-  var whiteSpace: js.UndefOr[nowrap | normal] = js.native
+  var whiteSpace: js.UndefOr[nowrap | normal] = js.undefined
 }
 object PlusNativeObjTextStyles {
   

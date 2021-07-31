@@ -7,7 +7,6 @@ import typings.seleniumWebdriver.mod.WebDriver
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -79,45 +78,49 @@ object mod {
     def withTags(tags: String): this.type = js.native
     def withTags(tags: js.Array[String]): this.type = js.native
   }
-  @JSImport("axe-webdriverjs", "AxeBuilder")
-  @js.native
-  def AxeBuilder(driver: WebDriver): AxeBuilder = js.native
-  @JSImport("axe-webdriverjs", "AxeBuilder")
-  @js.native
-  def AxeBuilder(driver: WebDriver, source: js.UndefOr[scala.Nothing], builderOptions: BuilderOptions): AxeBuilder = js.native
-  @JSImport("axe-webdriverjs", "AxeBuilder")
-  @js.native
-  def AxeBuilder(driver: WebDriver, source: String): AxeBuilder = js.native
-  @JSImport("axe-webdriverjs", "AxeBuilder")
-  @js.native
-  def AxeBuilder(driver: WebDriver, source: String, builderOptions: BuilderOptions): AxeBuilder = js.native
+  object AxeBuilder {
+    
+    @JSImport("axe-webdriverjs", "AxeBuilder")
+    @js.native
+    def apply(driver: WebDriver): AxeBuilder = js.native
+    @JSImport("axe-webdriverjs", "AxeBuilder")
+    @js.native
+    def apply(driver: WebDriver, source: String): AxeBuilder = js.native
+    @JSImport("axe-webdriverjs", "AxeBuilder")
+    @js.native
+    def apply(driver: WebDriver, source: String, builderOptions: BuilderOptions): AxeBuilder = js.native
+    @JSImport("axe-webdriverjs", "AxeBuilder")
+    @js.native
+    def apply(driver: WebDriver, source: Unit, builderOptions: BuilderOptions): AxeBuilder = js.native
+  }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("axe-webdriverjs", "AxeBuilder")
   @js.native
-  class AxeBuilderCls protected () extends AxeBuilder {
+  class AxeBuilderCls protected ()
+    extends StObject
+       with AxeBuilder {
     def this(driver: WebDriver) = this()
     def this(driver: WebDriver, source: String) = this()
-    def this(driver: WebDriver, source: js.UndefOr[scala.Nothing], builderOptions: BuilderOptions) = this()
     def this(driver: WebDriver, source: String, builderOptions: BuilderOptions) = this()
+    def this(driver: WebDriver, source: Unit, builderOptions: BuilderOptions) = this()
   }
   
   type AnalyzeCallback = js.Function2[/* err */ Error | Null, /* results */ AxeAnalysis, Unit]
   
-  @js.native
   trait AxeAnalysis extends StObject {
     
-    var inapplicable: js.Array[Result] = js.native
+    var inapplicable: js.Array[Result]
     
-    var incomplete: js.Array[Result] = js.native
+    var incomplete: js.Array[Result]
     
-    var passes: js.Array[Result] = js.native
+    var passes: js.Array[Result]
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var url: String = js.native
+    var url: String
     
-    var violations: js.Array[Result] = js.native
+    var violations: js.Array[Result]
   }
   object AxeAnalysis {
     
@@ -169,14 +172,13 @@ object mod {
     }
   }
   
-  @js.native
   trait BuilderOptions extends StObject {
     
     /**
       * Should errors be printed into console
       * @default true
       */
-    var logIframeErrors: js.UndefOr[Boolean] = js.native
+    var logIframeErrors: js.UndefOr[Boolean] = js.undefined
   }
   object BuilderOptions {
     

@@ -4,14 +4,34 @@ import typings.jsmediatags.anon.EndIx
 import typings.jsmediatags.typesMod.DataType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object chunkedFileDataMod {
   
   @JSImport("jsmediatags/build2/ChunkedFileData", JSImport.Default)
   @js.native
-  class default () extends ChunkedFileData
+  class default ()
+    extends StObject
+       with ChunkedFileData {
+    
+    /* CompleteClass */
+    override def _concatData(dataA: DataType, dataB: DataType): DataType = js.native
+    
+    /* CompleteClass */
+    override def _getChunkRange(offsetStart: Double, offsetEnd: Double): EndIx = js.native
+    
+    /* CompleteClass */
+    override def _sliceData(data: DataType, begin: Double, end: Double): DataType = js.native
+    
+    /* CompleteClass */
+    override def addData(offset: Double, data: DataType): Unit = js.native
+    
+    /* CompleteClass */
+    override def getByteAt(offset: Double): js.Any = js.native
+    
+    /* CompleteClass */
+    override def hasDataRange(offsetStart: Double, offsetEnd: Double): Boolean = js.native
+  }
   /* static members */
   object default {
     
@@ -26,20 +46,19 @@ object chunkedFileDataMod {
     def NOT_FOUND_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("NOT_FOUND")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ChunkedFileData extends StObject {
     
-    def _concatData(dataA: DataType, dataB: DataType): DataType = js.native
+    def _concatData(dataA: DataType, dataB: DataType): DataType
     
-    def _getChunkRange(offsetStart: Double, offsetEnd: Double): EndIx = js.native
+    def _getChunkRange(offsetStart: Double, offsetEnd: Double): EndIx
     
-    def _sliceData(data: DataType, begin: Double, end: Double): DataType = js.native
+    def _sliceData(data: DataType, begin: Double, end: Double): DataType
     
-    def addData(offset: Double, data: DataType): Unit = js.native
+    def addData(offset: Double, data: DataType): Unit
     
-    def getByteAt(offset: Double): js.Any = js.native
+    def getByteAt(offset: Double): js.Any
     
-    def hasDataRange(offsetStart: Double, offsetEnd: Double): Boolean = js.native
+    def hasDataRange(offsetStart: Double, offsetEnd: Double): Boolean
   }
   object ChunkedFileData {
     

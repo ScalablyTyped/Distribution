@@ -2,20 +2,18 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait getSummaryDataOptions extends StObject {
   
   /** Do not use aliases specified in the data source in Tableau. Default is false. */
-  var ignoreAliases: js.UndefOr[Boolean] = js.native
+  var ignoreAliases: js.UndefOr[Boolean] = js.undefined
   
   /** Only return data for the currently selected marks. Default is false. */
-  var ignoreSelection: js.UndefOr[Boolean] = js.native
+  var ignoreSelection: js.UndefOr[Boolean] = js.undefined
   
   /** The number of rows of data that you want to return. Enter 0 to return all rows. */
-  var maxRows: Double = js.native
+  var maxRows: Double
 }
 object getSummaryDataOptions {
   

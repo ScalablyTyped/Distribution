@@ -10,13 +10,13 @@ Converts binary buffers to and from lowercase hexadecimal encoding
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/util-hex-encoding |
 | Keywords           | - |
-| # releases         | 20 |
-| # dependents       | 9 |
-| # downloads        | 6811056 |
+| # releases         | 24 |
+| # dependents       | 7 |
+| # downloads        | 10135348 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/master/packages/util-hex-encoding)
+- [Homepage](https://github.com/aws/aws-sdk-js-v3/tree/main/packages/util-hex-encoding)
 - [Bugs](https://github.com/aws/aws-sdk-js-v3/issues)
 - [Repository](https://github.com/aws/aws-sdk-js-v3)
 - [Npm](https://www.npmjs.com/package/%40aws-sdk%2Futil-hex-encoding)

@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the ConditionalFormatRule object, for use in `conditionalFormatRule.set({ ... })`. */
-@js.native
 trait ConditionalFormatRuleUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ConditionalFormatRuleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait ConditionalFormatRuleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formulaLocal: js.UndefOr[String] = js.native
+  var formulaLocal: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait ConditionalFormatRuleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formulaR1C1: js.UndefOr[String] = js.native
+  var formulaR1C1: js.UndefOr[String] = js.undefined
 }
 object ConditionalFormatRuleUpdateData {
   

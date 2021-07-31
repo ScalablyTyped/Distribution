@@ -4,7 +4,6 @@ import typings.openfin.wireMod.Wire
 import typings.ws.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object websocketMod {
@@ -33,7 +32,7 @@ object websocketMod {
     
     def onmessage(data: js.Any): Unit = js.native
     
-    def send(data: js.Any, flags: js.Any): js.Promise[_] = js.native
+    def send(data: js.Any, flags: js.Any): js.Promise[js.Any] = js.native
     
     var wire: ^ = js.native
   }

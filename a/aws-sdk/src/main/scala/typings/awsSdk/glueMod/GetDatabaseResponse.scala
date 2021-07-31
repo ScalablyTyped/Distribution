@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDatabaseResponse extends StObject {
   
   /**
     * The definition of the specified database in the Data Catalog.
     */
-  var Database: js.UndefOr[typings.awsSdk.glueMod.Database] = js.native
+  var Database: js.UndefOr[typings.awsSdk.glueMod.Database] = js.undefined
 }
 object GetDatabaseResponse {
   

@@ -3,19 +3,17 @@ package typings.reactBigCalendar.mod
 import typings.propTypes.mod.Validator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateLocalizerSpec extends StObject {
   
-  def firstOfWeek(culture: Culture): Double = js.native
+  def firstOfWeek(culture: Culture): Double
   
-  def format(value: FormatInput, format: String, culture: Culture): String = js.native
+  def format(value: FormatInput, format: String, culture: Culture): String
   
-  var formats: Formats = js.native
+  var formats: Formats
   
-  var propType: js.UndefOr[Validator[_]] = js.native
+  var propType: js.UndefOr[Validator[js.Any]] = js.undefined
 }
 object DateLocalizerSpec {
   
@@ -38,7 +36,7 @@ object DateLocalizerSpec {
     def setFormats(value: Formats): Self = StObject.set(x, "formats", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPropType(value: Validator[_]): Self = StObject.set(x, "propType", value.asInstanceOf[js.Any])
+    def setPropType(value: Validator[js.Any]): Self = StObject.set(x, "propType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPropTypeUndefined: Self = StObject.set(x, "propType", js.undefined)

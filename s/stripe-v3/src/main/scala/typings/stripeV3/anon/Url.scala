@@ -2,10 +2,8 @@ package typings.stripeV3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Url extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait Url extends StObject {
     * authenticating, they will be redirected to this
     * specified URL after completion.
     */
-  var return_url: String = js.native
+  var return_url: String
   
   /**
     * The URL you must redirect your customer to in
     * order to authenticate.
     */
-  var url: String = js.native
+  var url: String
 }
 object Url {
   

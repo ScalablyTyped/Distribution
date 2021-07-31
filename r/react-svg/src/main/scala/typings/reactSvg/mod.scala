@@ -5,7 +5,6 @@ import typings.reactSvg.anon.BeforeInjection
 import typings.reactSvg.typesMod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {

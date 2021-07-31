@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptimizeRestoredTableMetadata extends StObject {
   
   /** Name of the restored table being optimized. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The progress of the post-restore optimizations. */
-  var progress: js.UndefOr[OperationProgress] = js.native
+  var progress: js.UndefOr[OperationProgress] = js.undefined
 }
 object OptimizeRestoredTableMetadata {
   

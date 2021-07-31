@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourceResponse extends StObject {
   
   /**
     * 
     */
-  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.native
+  var NextMarker: js.UndefOr[typings.awsSdk.wafregionalMod.NextMarker] = js.undefined
   
   /**
     * 
     */
-  var TagInfoForResource: js.UndefOr[typings.awsSdk.wafregionalMod.TagInfoForResource] = js.native
+  var TagInfoForResource: js.UndefOr[typings.awsSdk.wafregionalMod.TagInfoForResource] = js.undefined
 }
 object ListTagsForResourceResponse {
   

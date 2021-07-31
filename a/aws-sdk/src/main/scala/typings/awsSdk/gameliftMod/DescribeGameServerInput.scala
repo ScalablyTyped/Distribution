@@ -2,21 +2,19 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeGameServerInput extends StObject {
   
   /**
     * A unique identifier for the game server group where the game server is running. Use either the GameServerGroup name or ARN value.
     */
-  var GameServerGroupName: GameServerGroupNameOrArn = js.native
+  var GameServerGroupName: GameServerGroupNameOrArn
   
   /**
     * A custom string that uniquely identifies the game server information to be retrieved.
     */
-  var GameServerId: typings.awsSdk.gameliftMod.GameServerId = js.native
+  var GameServerId: typings.awsSdk.gameliftMod.GameServerId
 }
 object DescribeGameServerInput {
   

@@ -14,33 +14,31 @@ import typings.lokijs.lokijsStrings.update
 import typings.lokijs.lokijsStrings.where
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transform extends StObject {
   
-  var dataOptions: js.UndefOr[js.Any] = js.native
+  var dataOptions: js.UndefOr[js.Any] = js.undefined
   
-  var desc: js.UndefOr[Boolean] = js.native
+  var desc: js.UndefOr[Boolean] = js.undefined
   
-  var joinData: js.UndefOr[js.Any] = js.native
+  var joinData: js.UndefOr[js.Any] = js.undefined
   
-  var leftJoinKey: js.UndefOr[js.Any] = js.native
+  var leftJoinKey: js.UndefOr[js.Any] = js.undefined
   
-  var mapFun: js.UndefOr[js.Any] = js.native
+  var mapFun: js.UndefOr[js.Any] = js.undefined
   
-  var mapFunction: js.UndefOr[js.Any] = js.native
+  var mapFunction: js.UndefOr[js.Any] = js.undefined
   
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
-  var reduceFunction: js.UndefOr[js.Any] = js.native
+  var reduceFunction: js.UndefOr[js.Any] = js.undefined
   
-  var rightJoinKey: js.UndefOr[js.Any] = js.native
+  var rightJoinKey: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: find | where | simplesort | compoundsort | sort | limit | offset | map | eqJoin | mapReduce | update | remove = js.native
+  var `type`: find | where | simplesort | compoundsort | sort | limit | offset | map | eqJoin | mapReduce | update | remove
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object Transform {
   

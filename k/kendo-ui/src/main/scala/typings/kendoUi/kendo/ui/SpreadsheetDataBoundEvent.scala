@@ -3,13 +3,13 @@ package typings.kendoUi.kendo.ui
 import typings.kendoUi.kendo.spreadsheet.Sheet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpreadsheetDataBoundEvent extends SpreadsheetEvent {
+trait SpreadsheetDataBoundEvent
+  extends StObject
+     with SpreadsheetEvent {
   
-  var sheet: js.UndefOr[Sheet] = js.native
+  var sheet: js.UndefOr[Sheet] = js.undefined
 }
 object SpreadsheetDataBoundEvent {
   

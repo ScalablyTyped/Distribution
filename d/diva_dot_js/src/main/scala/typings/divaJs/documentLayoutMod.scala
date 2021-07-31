@@ -9,33 +9,54 @@ import typings.divaJs.interfacesMod.Region
 import typings.divaJs.interfacesMod.RendererConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object documentLayoutMod {
   
   @JSImport("diva.js/document-layout", JSImport.Default)
   @js.native
-  class default protected () extends DocumentLayout {
+  class default protected ()
+    extends StObject
+       with DocumentLayout {
     def this(config: RendererConfig, zoomLevel: Double) = this()
-  }
-  
-  @js.native
-  trait DocumentLayout extends StObject {
     
+    /* CompleteClass */
     var dimensions: Dimensions = js.native
     
-    def getPageDimensions(pageIndex: Double): Dimensions = js.native
+    /* CompleteClass */
+    override def getPageDimensions(pageIndex: Double): Dimensions = js.native
     
-    def getPageInfo(pageIndex: Double): PageInfo | Null = js.native
+    /* CompleteClass */
+    override def getPageInfo(pageIndex: Double): PageInfo | Null = js.native
     
-    def getPageOffset(pageIndex: Double, options: js.Object): Offset = js.native
+    /* CompleteClass */
+    override def getPageOffset(pageIndex: Double, options: js.Object): Offset = js.native
     
-    def getPageRegion(pageIndex: Double, options: js.Object): Offset = js.native
+    /* CompleteClass */
+    override def getPageRegion(pageIndex: Double, options: js.Object): Offset = js.native
     
-    def getPageToViewportCenterOffset(pageIndex: Double, viewport: Region): X = js.native
+    /* CompleteClass */
+    override def getPageToViewportCenterOffset(pageIndex: Double, viewport: Region): X = js.native
     
+    /* CompleteClass */
     var pageGroups: js.Array[PageGroup] = js.native
+  }
+  
+  trait DocumentLayout extends StObject {
+    
+    var dimensions: Dimensions
+    
+    def getPageDimensions(pageIndex: Double): Dimensions
+    
+    def getPageInfo(pageIndex: Double): PageInfo | Null
+    
+    def getPageOffset(pageIndex: Double, options: js.Object): Offset
+    
+    def getPageRegion(pageIndex: Double, options: js.Object): Offset
+    
+    def getPageToViewportCenterOffset(pageIndex: Double, viewport: Region): X
+    
+    var pageGroups: js.Array[PageGroup]
   }
   object DocumentLayout {
     

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCalendar.gapi.client.calendar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalendarNotification extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CalendarNotification extends StObject {
     * - "email" - Notifications are sent via email.
     * Required when adding a notification.
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * The type of notification. Possible values are:
@@ -24,7 +22,7 @@ trait CalendarNotification extends StObject {
     * - "agenda" - An agenda with the events of the day (sent out in the morning).
     * Required when adding a notification.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CalendarNotification {
   

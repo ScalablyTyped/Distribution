@@ -4,29 +4,28 @@ import typings.qlik.qlikStrings.boolean
 import typings.qlik.qlikStrings.switch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertySwitch
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: switch = js.native
+  var component: switch
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[CustomPropertyOptions] = js.native
+  var options: js.UndefOr[CustomPropertyOptions] = js.undefined
   
   @JSName("type")
-  var type_CustomPropertySwitch: boolean = js.native
+  var type_CustomPropertySwitch: boolean
 }
 object CustomPropertySwitch {
   
   @scala.inline
-  def apply(component: switch, `type`: boolean): CustomPropertySwitch = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): CustomPropertySwitch = {
+    val __obj = js.Dynamic.literal(component = "switch")
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[CustomPropertySwitch]
   }
   

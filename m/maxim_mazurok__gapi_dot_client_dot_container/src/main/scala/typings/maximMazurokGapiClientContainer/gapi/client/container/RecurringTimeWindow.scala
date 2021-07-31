@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecurringTimeWindow extends StObject {
   
   /**
@@ -17,10 +15,10 @@ trait RecurringTimeWindow extends StObject {
     * recurrence = FREQ=WEEKLY;BYDAY=SA ``` Note the start and end time's specific dates are largely arbitrary except to specify duration of the window and when it first starts. The FREQ
     * values of HOURLY, MINUTELY, and SECONDLY are not supported.
     */
-  var recurrence: js.UndefOr[String] = js.native
+  var recurrence: js.UndefOr[String] = js.undefined
   
   /** The window of the first recurrence. */
-  var window: js.UndefOr[TimeWindow] = js.native
+  var window: js.UndefOr[TimeWindow] = js.undefined
 }
 object RecurringTimeWindow {
   

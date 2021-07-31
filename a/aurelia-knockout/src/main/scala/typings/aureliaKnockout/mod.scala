@@ -7,10 +7,13 @@ import typings.aureliaTemplating.mod.CompositionEngine
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("aurelia-knockout", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("aurelia-knockout", "KnockoutBindable")
   @js.native
@@ -35,9 +38,12 @@ object mod {
   /* static members */
   object KnockoutCustomAttribute {
     
-    @JSImport("aurelia-knockout", "KnockoutCustomAttribute.register")
+    @JSImport("aurelia-knockout", "KnockoutCustomAttribute")
     @js.native
-    def register(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def register(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("register")().asInstanceOf[Unit]
   }
   
   @JSImport("aurelia-knockout", "RequirePolyfill")
@@ -47,7 +53,6 @@ object mod {
     def this(loader: Loader) = this()
   }
   
-  @JSImport("aurelia-knockout", "configure")
-  @js.native
-  def configure(frameworkConfig: typings.aureliaKnockout.anon.Container): Unit = js.native
+  @scala.inline
+  def configure(frameworkConfig: typings.aureliaKnockout.anon.Container): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(frameworkConfig.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

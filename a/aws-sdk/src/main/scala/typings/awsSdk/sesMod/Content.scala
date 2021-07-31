@@ -2,21 +2,19 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
   /**
     * The character set of the content.
     */
-  var Charset: js.UndefOr[typings.awsSdk.sesMod.Charset] = js.native
+  var Charset: js.UndefOr[typings.awsSdk.sesMod.Charset] = js.undefined
   
   /**
     * The textual data of the content.
     */
-  var Data: MessageData = js.native
+  var Data: MessageData
 }
 object Content {
   

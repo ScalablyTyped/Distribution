@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -26,8 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * service to specify this. Requesting an enumerator type which is not supported will generally result in an {@link com.sun.star.lang.NoSupportException}
   * being thrown.
   */
-@js.native
-trait XEnumerableMap extends XMap {
+trait XEnumerableMap
+  extends StObject
+     with XMap {
   
   /**
     * creates a enumerator for the key-value pairs of the map
@@ -36,21 +36,21 @@ trait XEnumerableMap extends XMap {
     * @param Isolated controls whether the newly create enumerator should be isolated from the map.
     * @throws com::sun::star::lang::NoSupportException if the specified enumerator method is not supported by the implementation.
     */
-  def createElementEnumeration(Isolated: Boolean): XEnumeration = js.native
+  def createElementEnumeration(Isolated: Boolean): XEnumeration
   
   /**
     * creates a enumerator for the keys of the map
     * @param Isolated controls whether the newly create enumerator should be isolated from the map.
     * @throws com::sun::star::lang::NoSupportException if the specified enumerator method is not supported by the implementation.
     */
-  def createKeyEnumeration(Isolated: Boolean): XEnumeration = js.native
+  def createKeyEnumeration(Isolated: Boolean): XEnumeration
   
   /**
     * creates a enumerator for the values of the map
     * @param Isolated controls whether the newly create enumerator should be isolated from the map.
     * @throws com::sun::star::lang::NoSupportException if the specified enumerator method is not supported by the implementation.
     */
-  def createValueEnumeration(Isolated: Boolean): XEnumeration = js.native
+  def createValueEnumeration(Isolated: Boolean): XEnumeration
 }
 object XEnumerableMap {
   

@@ -9,51 +9,49 @@ import typings.openpgp.openpgpStrings.web
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignOptions extends StObject {
   
   /**
     * (optional) if the return value should be ascii armored or the message object
     */
-  var armor: js.UndefOr[Boolean] = js.native
+  var armor: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (optional) override the creation date of the signature
     */
-  var date: js.UndefOr[Date] = js.native
+  var date: js.UndefOr[Date] = js.undefined
   
   /**
     * (optional) if the return value should contain a detached signature
     */
-  var detached: js.UndefOr[Boolean] = js.native
+  var detached: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  (optional) array of user IDs to sign with, one per key in `privateKeys`, e.g. [ { name:'Steve Sender', email:'steve@openpgp.org' }]
     */
-  var fromUserIds: js.UndefOr[js.Array[UserID]] = js.native
+  var fromUserIds: js.UndefOr[js.Array[UserID]] = js.undefined
   
   /**
     * (cleartext) message to be signed
     */
-  var message: CleartextMessage | Message = js.native
+  var message: CleartextMessage | Message
   
   /**
     * array of keys or single key with decrypted secret key data to sign cleartext
     */
-  var privateKeys: Key | js.Array[_] = js.native
+  var privateKeys: Key | js.Array[js.Any]
   
   /**
     * (optional) whether to return data as a stream. Defaults to the type of stream `message` was created from, if any.
     */
-  var streaming: js.UndefOr[web | node | `false`] = js.native
+  var streaming: js.UndefOr[web | node | `false`] = js.undefined
 }
 object SignOptions {
   
   @scala.inline
-  def apply(message: CleartextMessage | Message, privateKeys: Key | js.Array[_]): SignOptions = {
+  def apply(message: CleartextMessage | Message, privateKeys: Key | js.Array[js.Any]): SignOptions = {
     val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], privateKeys = privateKeys.asInstanceOf[js.Any])
     __obj.asInstanceOf[SignOptions]
   }
@@ -92,7 +90,7 @@ object SignOptions {
     def setMessage(value: CleartextMessage | Message): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPrivateKeys(value: Key | js.Array[_]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
+    def setPrivateKeys(value: Key | js.Array[js.Any]): Self = StObject.set(x, "privateKeys", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPrivateKeysVarargs(value: js.Any*): Self = StObject.set(x, "privateKeys", js.Array(value :_*))

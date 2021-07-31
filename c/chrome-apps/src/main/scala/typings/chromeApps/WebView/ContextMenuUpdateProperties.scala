@@ -3,55 +3,53 @@ package typings.chromeApps.WebView
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContextMenuUpdateProperties extends StObject {
   
   /**
     * The state of a checkbox or radio item: true for selected and false for unselected.
     * Only one radio item can be selected at a time in a given group of radio items.
     */
-  var checked: js.UndefOr[Boolean] = js.native
+  var checked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of contexts this menu item will appear in.
     */
-  var contexts: js.UndefOr[js.Array[_]] = js.native
+  var contexts: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Lets you restrict the item to apply only to documents whose URL matches one of the given patterns.
     * (This applies to frames as well.)
     */
-  var documentUrlPatterns: js.UndefOr[js.Array[_]] = js.native
+  var documentUrlPatterns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Whether this context menu item is enabled or disabled.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A function that will be called back when the menu item is clicked.
     * @param callback
     */
-  var onclick: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.native
+  var onclick: js.UndefOr[js.Function1[/* info */ js.Any, Unit]] = js.undefined
   
   /**
     * The ID of a parent menu item; this makes the item a child of a previously added item. <em>Note:</em> You cannot change an item to be a child of one of its own descendants.
     */
-  var parentId: js.UndefOr[integer | String] = js.native
+  var parentId: js.UndefOr[integer | String] = js.undefined
   
   /**
     * Similar to documentUrlPatterns, but lets you filter based on the src attribute of img/audio/video tags and the href of anchor tags.
     */
-  var targetUrlPatterns: js.UndefOr[js.Array[_]] = js.native
+  var targetUrlPatterns: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /** The text to be displayed in the item */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** The type of menu item. */
-  var `type`: js.UndefOr[ContextType] = js.native
+  var `type`: js.UndefOr[ContextType] = js.undefined
 }
 object ContextMenuUpdateProperties {
   
@@ -71,7 +69,7 @@ object ContextMenuUpdateProperties {
     def setCheckedUndefined: Self = StObject.set(x, "checked", js.undefined)
     
     @scala.inline
-    def setContexts(value: js.Array[_]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
+    def setContexts(value: js.Array[js.Any]): Self = StObject.set(x, "contexts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setContextsUndefined: Self = StObject.set(x, "contexts", js.undefined)
@@ -80,7 +78,7 @@ object ContextMenuUpdateProperties {
     def setContextsVarargs(value: js.Any*): Self = StObject.set(x, "contexts", js.Array(value :_*))
     
     @scala.inline
-    def setDocumentUrlPatterns(value: js.Array[_]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
+    def setDocumentUrlPatterns(value: js.Array[js.Any]): Self = StObject.set(x, "documentUrlPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDocumentUrlPatternsUndefined: Self = StObject.set(x, "documentUrlPatterns", js.undefined)
@@ -107,7 +105,7 @@ object ContextMenuUpdateProperties {
     def setParentIdUndefined: Self = StObject.set(x, "parentId", js.undefined)
     
     @scala.inline
-    def setTargetUrlPatterns(value: js.Array[_]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
+    def setTargetUrlPatterns(value: js.Array[js.Any]): Self = StObject.set(x, "targetUrlPatterns", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTargetUrlPatternsUndefined: Self = StObject.set(x, "targetUrlPatterns", js.undefined)

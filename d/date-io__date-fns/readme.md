@@ -11,8 +11,8 @@ Abstraction over common javascript date management libraries
 | Full name          | @date-io/date-fns |
 | Keywords           | date, time, date-io, picker, date-fns, moment, luxon |
 | # releases         | 34 |
-| # dependents       | 224 |
-| # downloads        | 9937579 |
+| # dependents       | 278 |
+| # downloads        | 14656139 |
 | # stars            | 0 |
 
 ## Links

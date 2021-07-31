@@ -6,34 +6,34 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLRenderingContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gl-fbo", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double]): FrameBuffer = js.native
-  @JSImport("gl-fbo", JSImport.Namespace)
-  @js.native
-  def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double], options: FrameBufferOptions): FrameBuffer = js.native
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double]): FrameBuffer = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], shape.asInstanceOf[js.Any])).asInstanceOf[FrameBuffer]
+  @scala.inline
+  def apply(gl: WebGLRenderingContext, shape: js.Tuple2[Double, Double], options: FrameBufferOptions): FrameBuffer = (^.asInstanceOf[js.Dynamic].apply(gl.asInstanceOf[js.Any], shape.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[FrameBuffer]
   
+  @JSImport("gl-fbo", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait FrameBuffer extends StObject {
     
-    def bind(): Unit = js.native
+    def bind(): Unit
     
-    var color: js.Array[Texture] = js.native
+    var color: js.Array[Texture]
     
-    var depth: Texture | Null = js.native
+    var depth: Texture | Null
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
     
-    var gl: WebGLRenderingContext = js.native
+    var gl: WebGLRenderingContext
     
-    var handle: WebGLFramebuffer = js.native
+    var handle: WebGLFramebuffer
     
-    var shape: js.Tuple2[Double, Double] = js.native
+    var shape: js.Tuple2[Double, Double]
   }
   object FrameBuffer {
     
@@ -46,7 +46,7 @@ object mod {
       handle: WebGLFramebuffer,
       shape: js.Tuple2[Double, Double]
     ): FrameBuffer = {
-      val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), color = color.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), gl = gl.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(bind = js.Any.fromFunction0(bind), color = color.asInstanceOf[js.Any], dispose = js.Any.fromFunction0(dispose), gl = gl.asInstanceOf[js.Any], handle = handle.asInstanceOf[js.Any], shape = shape.asInstanceOf[js.Any], depth = null)
       __obj.asInstanceOf[FrameBuffer]
     }
     
@@ -82,18 +82,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FrameBufferOptions extends StObject {
     
-    var color: js.UndefOr[Double] = js.native
+    var color: js.UndefOr[Double] = js.undefined
     
-    var depth: js.UndefOr[Boolean] = js.native
+    var depth: js.UndefOr[Boolean] = js.undefined
     
-    var float: js.UndefOr[Boolean] = js.native
+    var float: js.UndefOr[Boolean] = js.undefined
     
-    var preferFloat: js.UndefOr[Boolean] = js.native
+    var preferFloat: js.UndefOr[Boolean] = js.undefined
     
-    var stencil: js.UndefOr[Boolean] = js.native
+    var stencil: js.UndefOr[Boolean] = js.undefined
   }
   object FrameBufferOptions {
     

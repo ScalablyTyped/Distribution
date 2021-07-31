@@ -2,17 +2,15 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepoAssociationBase extends StObject {
   
-  var clone_url: String = js.native
+  var clone_url: String
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var html_url: String = js.native
+  var html_url: String
 }
 object RepoAssociationBase {
   

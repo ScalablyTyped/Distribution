@@ -3,14 +3,15 @@ package typings.googleAppsScript.GoogleAppsScript.Base
 import typings.googleAppsScript.GoogleAppsScript.Byte
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A data interchange object for Apps Script services.
   */
 @js.native
-trait Blob extends BlobSource {
+trait Blob
+  extends StObject
+     with BlobSource {
   
   def copyBlob(): Blob = js.native
   

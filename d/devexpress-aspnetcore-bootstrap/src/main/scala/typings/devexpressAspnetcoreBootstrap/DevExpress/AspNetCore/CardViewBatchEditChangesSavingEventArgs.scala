@@ -2,17 +2,17 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CardViewBatchEditChangesSavingEventArgs extends CancelEventArgs {
+trait CardViewBatchEditChangesSavingEventArgs
+  extends StObject
+     with CancelEventArgs {
   
-  val deletedValues: js.Any = js.native
+  val deletedValues: js.Any
   
-  val insertedValues: js.Any = js.native
+  val insertedValues: js.Any
   
-  val updatedValues: js.Any = js.native
+  val updatedValues: js.Any
 }
 object CardViewBatchEditChangesSavingEventArgs {
   

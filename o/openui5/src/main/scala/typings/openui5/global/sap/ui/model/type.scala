@@ -2,7 +2,6 @@ package typings.openui5.global.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object `type` {
@@ -10,7 +9,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.Boolean")
   @js.native
   class Boolean protected ()
-    extends typings.openui5.sap.ui.model.`type`.Boolean {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.Boolean {
     /**
       * Constructor for a Boolean type.
       * @param oFormatOptions formatting options. Boolean doesn't support any specific format options
@@ -23,7 +23,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.Currency")
   @js.native
   class Currency protected ()
-    extends typings.openui5.sap.ui.model.`type`.Currency {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.Currency {
     /**
       * Constructor for a Currency type.
       * @param oFormatOptions formatting options. Supports the same options as {@link
@@ -37,7 +38,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.Date")
   @js.native
   class Date protected ()
-    extends typings.openui5.sap.ui.model.`type`.Date {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.Date {
     /**
       * Constructor for a Date type.
       * @param oFormatOptions options used to create a DateFormat for formatting / parsing. Supports the
@@ -51,7 +53,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.DateTime")
   @js.native
   class DateTime protected ()
-    extends typings.openui5.sap.ui.model.`type`.DateTime {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.DateTime {
     /**
       * Constructor for a DateTime type.
       * @param oFormatOptions options used to create a DateFormat for formatting / parsing to/from external
@@ -69,7 +72,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.FileSize")
   @js.native
   class FileSize protected ()
-    extends typings.openui5.sap.ui.model.`type`.FileSize {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.FileSize {
     /**
       * Constructor for a FileSize type.
       * @param oFormatOptions formatting options. Supports the same options as {@link
@@ -83,7 +87,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.Float")
   @js.native
   class Float protected ()
-    extends typings.openui5.sap.ui.model.`type`.Float {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.Float {
     /**
       * Constructor for a Float type.
       * @param oFormatOptions formatting options. Supports the same options as {@link
@@ -97,7 +102,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.Integer")
   @js.native
   class Integer protected ()
-    extends typings.openui5.sap.ui.model.`type`.Integer {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.Integer {
     /**
       * Constructor for a Integer type.
       * @param oFormatOptions formatting options. Supports the same options as {@link
@@ -111,7 +117,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.String")
   @js.native
   class String protected ()
-    extends typings.openui5.sap.ui.model.`type`.String {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.String {
     /**
       * Constructor for a String type.
       * @param oFormatOptions formatting options. String doesn't support any formatting options
@@ -125,7 +132,8 @@ object `type` {
   @JSGlobal("sap.ui.model.type.Time")
   @js.native
   class Time protected ()
-    extends typings.openui5.sap.ui.model.`type`.Time {
+    extends StObject
+       with typings.openui5.sap.ui.model.`type`.Time {
     /**
       * Constructor for a Time type.
       * @param oFormatOptions options used to create a DateFormat for formatting / parsing to/from external

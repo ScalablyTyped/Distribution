@@ -10,9 +10,9 @@ render prismic json fragments in HTML
 | ------------------ | :-------------: |
 | Full name          | prismic-dom |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 8 |
 | # dependents       | 33 |
-| # downloads        | 1378816 |
+| # downloads        | 1821908 |
 | # stars            | 0 |
 
 ## Links

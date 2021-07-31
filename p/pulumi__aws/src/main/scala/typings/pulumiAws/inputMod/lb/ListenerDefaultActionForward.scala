@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.lb
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListenerDefaultActionForward extends StObject {
   
   /**
     * The target group stickiness for the rule.
     */
-  var stickiness: js.UndefOr[Input[ListenerDefaultActionForwardStickiness]] = js.native
+  var stickiness: js.UndefOr[Input[ListenerDefaultActionForwardStickiness]] = js.undefined
   
   /**
     * One or more target groups block.
     */
-  var targetGroups: Input[js.Array[Input[ListenerDefaultActionForwardTargetGroup]]] = js.native
+  var targetGroups: Input[js.Array[Input[ListenerDefaultActionForwardTargetGroup]]]
 }
 object ListenerDefaultActionForward {
   

@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait SelectType extends StObject
 object SelectType extends StObject {
   
   @js.native
-  sealed trait Default extends SelectType
+  sealed trait Default
+    extends StObject
+       with SelectType
   
   @js.native
-  sealed trait IconOnly extends SelectType
+  sealed trait IconOnly
+    extends StObject
+       with SelectType
 }

@@ -3,17 +3,15 @@ package typings.typescriptCollections
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Nodes extends StObject {
     
-    var nodes: StringDictionary[js.Array[String]] = js.native
+    var nodes: StringDictionary[js.Array[String]]
     
-    var rootIds: js.Array[String] = js.native
+    var rootIds: js.Array[String]
   }
   object Nodes {
     

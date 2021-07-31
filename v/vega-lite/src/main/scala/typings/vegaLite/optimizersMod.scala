@@ -8,7 +8,6 @@ import typings.vegaLite.optimizerMod.Optimizer
 import typings.vegaLite.optimizerMod.TopDownOptimizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optimizersMod {

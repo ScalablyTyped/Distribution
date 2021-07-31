@@ -4,113 +4,111 @@ import typings.filepond.filepondStrings.after
 import typings.filepond.filepondStrings.before
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePondBaseProps extends StObject {
   
   /**
     * Enable or disable file browser.
     * @default true
     */
-  var allowBrowse: js.UndefOr[Boolean] = js.native
+  var allowBrowse: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allow only selecting directories with browse (no support for filtering dnd at this point)
     * @default false
     */
-  var allowDirectoriesOnly: js.UndefOr[Boolean] = js.native
+  var allowDirectoriesOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable drag n’ drop.
     * @default true
     */
-  var allowDrop: js.UndefOr[Boolean] = js.native
+  var allowDrop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable adding multiple files.
     * @default false
     */
-  var allowMultiple: js.UndefOr[Boolean] = js.native
+  var allowMultiple: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable or disable pasting of files. Pasting files is not
     * supported on all browsers.
     * @default true
     */
-  var allowPaste: js.UndefOr[Boolean] = js.native
+  var allowPaste: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows user to process a file. When set to false, this removes the file upload button.
     * @default true
     */
-  var allowProcess: js.UndefOr[Boolean] = js.native
+  var allowProcess: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows the user to reorder the file items
     * @default false
     */
-  var allowReorder: js.UndefOr[Boolean] = js.native
+  var allowReorder: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allow drop to replace a file, only works when allowMultiple is false.
     * @default true
     */
-  var allowReplace: js.UndefOr[Boolean] = js.native
+  var allowReplace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Allows the user to revert file upload.
     * @default true
     */
-  var allowRevert: js.UndefOr[Boolean] = js.native
+  var allowRevert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set to false to prevent FilePond from setting the file input field `accept` attribute to the value of the `acceptedFileTypes`.
     */
-  var allowSyncAcceptAttribute: js.UndefOr[Boolean] = js.native
+  var allowSyncAcceptAttribute: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the given value to the capture attribute.
     * @default null
     */
-  var captureMethod: js.UndefOr[CaptureAttribute | Null] = js.native
+  var captureMethod: js.UndefOr[CaptureAttribute | Null] = js.undefined
   
   /**
     * Enables custom validity messages.
     * @default false
     */
-  var checkValidity: js.UndefOr[Boolean] = js.native
+  var checkValidity: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Class Name to put on wrapper.
     * @default null
     */
-  var className: js.UndefOr[String | Null] = js.native
+  var className: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Sets the disabled attribute to the output field.
     * @default false
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Require the file to be successfully reverted before continuing.
     * @default false
     */
-  var forceRevert: js.UndefOr[Boolean] = js.native
+  var forceRevert: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID to add to the root element.
     * @default null
     */
-  var id: js.UndefOr[String | Null] = js.native
+  var id: js.UndefOr[String | Null] = js.undefined
   
   /**
     * The interval to use before showing each item being added to the list.
     * @default 75
     */
-  var itemInsertInterval: js.UndefOr[Double] = js.native
+  var itemInsertInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Default index in list to add items that have been dropped at the top of the list.
@@ -118,31 +116,31 @@ trait FilePondBaseProps extends StObject {
     */
   var itemInsertLocation: js.UndefOr[
     before | after | (js.Function2[/* a */ FilePondFile, /* b */ FilePondFile, Double])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Set to false to always add items to beginning or end of list.
     * @default true
     */
-  var itemInsertLocationFreedom: js.UndefOr[Boolean] = js.native
+  var itemInsertLocationFreedom: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum number of files that filepond pond can handle.
     * @default null
     */
-  var maxFiles: js.UndefOr[Double | Null] = js.native
+  var maxFiles: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * The input field name to use.
     * @default 'filepond'
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the required attribute to the output field.
     * @default false
     */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
 }
 object FilePondBaseProps {
   

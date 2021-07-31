@@ -3,35 +3,33 @@ package typings.dynatable.JQueryDynatable
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait State extends StObject {
   
   /** Set up a listener for popstate event on window */
-  def init(): Unit = js.native
+  def init(): Unit
   
   /**
     * Check if pushState option is true, and if browser supports it
     *
     * @return A boolean
     */
-  def initOnLoad(): Boolean = js.native
+  def initOnLoad(): Boolean
   
   /**
     * Handler for the popstate event
     *
     * @param event The native popstate event
     */
-  def pop(event: Event): Unit = js.native
+  def pop(event: Event): Unit
   
   /**
     * Update the URL data using pushState
     *
     * @param data An object with the parameters we want to push
     */
-  def push(data: js.Object): Unit = js.native
+  def push(data: js.Object): Unit
 }
 object State {
   

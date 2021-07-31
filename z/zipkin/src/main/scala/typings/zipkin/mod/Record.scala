@@ -2,17 +2,15 @@ package typings.zipkin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Record extends StObject {
   
-  var annotation: IAnnotation = js.native
+  var annotation: IAnnotation
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var traceId: TraceId = js.native
+  var traceId: TraceId
 }
 object Record {
   

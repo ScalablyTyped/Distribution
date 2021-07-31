@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var booleanValue: js.UndefOr[Boolean] = js.native
+  var booleanValue: js.UndefOr[Boolean] = js.undefined
   
-  var dateValue: js.UndefOr[Date] = js.native
+  var dateValue: js.UndefOr[Date] = js.undefined
   
-  var doubleValue: js.UndefOr[Double] = js.native
+  var doubleValue: js.UndefOr[Double] = js.undefined
   
-  var integerValue: js.UndefOr[String] = js.native
+  var integerValue: js.UndefOr[String] = js.undefined
   
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
-  var timestampValue: js.UndefOr[String] = js.native
+  var timestampValue: js.UndefOr[String] = js.undefined
 }
 object Value {
   

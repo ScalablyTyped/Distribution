@@ -2,17 +2,15 @@ package typings.jestDocblock
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Comments extends StObject {
     
-    var comments: String = js.native
+    var comments: String
     
-    var pragmas: typings.jestDocblock.mod.Pragmas = js.native
+    var pragmas: typings.jestDocblock.mod.Pragmas
   }
   object Comments {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Pragmas extends StObject {
     
-    var comments: js.UndefOr[String] = js.native
+    var comments: js.UndefOr[String] = js.undefined
     
-    var pragmas: js.UndefOr[typings.jestDocblock.mod.Pragmas] = js.native
+    var pragmas: js.UndefOr[typings.jestDocblock.mod.Pragmas] = js.undefined
   }
   object Pragmas {
     

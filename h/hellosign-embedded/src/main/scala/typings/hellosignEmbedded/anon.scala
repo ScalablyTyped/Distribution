@@ -4,21 +4,19 @@ import typings.hellosignEmbedded.mod.HelloSign.SignerRole
 import typings.hellosignEmbedded.mod.HelloSign.Singature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CcEmailAddresses extends StObject {
     
-    var ccEmailAddresses: js.Array[String] = js.native
+    var ccEmailAddresses: js.Array[String]
     
-    var message: String = js.native
+    var message: String
     
-    var signatures: js.Array[Singature] = js.native
+    var signatures: js.Array[Singature]
     
-    var title: String = js.native
+    var title: String
   }
   object CcEmailAddresses {
     
@@ -56,16 +54,15 @@ object anon {
     }
   }
   
-  @js.native
   trait CcRoles extends StObject {
     
-    var ccRoles: String = js.native
+    var ccRoles: String
     
-    var message: String = js.native
+    var message: String
     
-    var signerRoles: SignerRole = js.native
+    var signerRoles: SignerRole
     
-    var title: String = js.native
+    var title: String
   }
   object CcRoles {
     

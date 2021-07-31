@@ -3,22 +3,20 @@ package typings.wordpressBlocks.anon
 import typings.wordpressBlocks.wordpressBlocksStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Default extends StObject {
   
-  var default: js.UndefOr[Boolean] = js.native
+  var default: js.UndefOr[Boolean] = js.undefined
   
-  var `type`: boolean = js.native
+  var `type`: boolean
 }
 object Default {
   
   @scala.inline
-  def apply(`type`: boolean): Default = {
+  def apply(): Default = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("boolean")
     __obj.asInstanceOf[Default]
   }
   

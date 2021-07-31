@@ -3,31 +3,29 @@ package typings.nodeZendesk.mod.Tickets
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audit extends StObject {
   
-  val author_id: ZendeskID = js.native
+  val author_id: ZendeskID
   
-  val created_at: String = js.native
+  val created_at: String
   
-  val events: js.Array[_] | Null = js.native
+  val events: js.Array[js.Any] | Null
   
-  val id: ZendeskID = js.native
+  val id: ZendeskID
   
-  val metadata: js.Any | Null = js.native
+  val metadata: js.Any | Null
   
-  val ticket_id: ZendeskID = js.native
+  val ticket_id: ZendeskID
   
-  val via: Via | Null = js.native
+  val via: Via | Null
 }
 object Audit {
   
   @scala.inline
   def apply(author_id: ZendeskID, created_at: String, id: ZendeskID, ticket_id: ZendeskID): Audit = {
-    val __obj = js.Dynamic.literal(author_id = author_id.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ticket_id = ticket_id.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(author_id = author_id.asInstanceOf[js.Any], created_at = created_at.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ticket_id = ticket_id.asInstanceOf[js.Any], events = null, metadata = null, via = null)
     __obj.asInstanceOf[Audit]
   }
   
@@ -41,7 +39,7 @@ object Audit {
     def setCreated_at(value: String): Self = StObject.set(x, "created_at", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvents(value: js.Array[_]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
+    def setEvents(value: js.Array[js.Any]): Self = StObject.set(x, "events", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setEventsNull: Self = StObject.set(x, "events", null)

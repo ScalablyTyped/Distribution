@@ -2,19 +2,17 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options that you may provide when creating a directions object.
   */
-@js.native
 trait DirectionsConstructorOptions extends StObject {
   
   /**
     * A language ID that determines the language for route information.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object DirectionsConstructorOptions {
   

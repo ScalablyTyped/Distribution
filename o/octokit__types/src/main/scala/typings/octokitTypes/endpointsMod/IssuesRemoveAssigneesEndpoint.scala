@@ -2,22 +2,20 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IssuesRemoveAssigneesEndpoint extends StObject {
   
   /**
     * Usernames of assignees to remove from an issue. _NOTE: Only users with push access can remove assignees from an issue. Assignees are silently ignored otherwise._
     */
-  var assignees: js.UndefOr[js.Array[String]] = js.native
+  var assignees: js.UndefOr[js.Array[String]] = js.undefined
   
-  var issue_number: Double = js.native
+  var issue_number: Double
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object IssuesRemoveAssigneesEndpoint {
   

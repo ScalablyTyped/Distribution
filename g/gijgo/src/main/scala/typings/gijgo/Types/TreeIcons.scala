@@ -2,16 +2,14 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Tree
-@js.native
 trait TreeIcons extends StObject {
   
-  var collapse: js.UndefOr[String] = js.native
+  var collapse: js.UndefOr[String] = js.undefined
   
-  var expand: js.UndefOr[String] = js.native
+  var expand: js.UndefOr[String] = js.undefined
 }
 object TreeIcons {
   

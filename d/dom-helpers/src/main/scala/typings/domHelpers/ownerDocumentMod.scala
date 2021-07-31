@@ -4,15 +4,16 @@ import typings.std.Document
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ownerDocumentMod {
   
-  @JSImport("dom-helpers/cjs/ownerDocument", JSImport.Default)
+  @JSImport("dom-helpers/cjs/ownerDocument", JSImport.Namespace)
   @js.native
-  def default(): Document = js.native
-  @JSImport("dom-helpers/cjs/ownerDocument", JSImport.Default)
-  @js.native
-  def default(node: Element): Document = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Document]
+  @scala.inline
+  def default(node: Element): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(node.asInstanceOf[js.Any]).asInstanceOf[Document]
 }

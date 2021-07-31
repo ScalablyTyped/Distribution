@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ColorSchemeForPolylineColorsForClassBreaks extends Object {
+trait ColorSchemeForPolylineColorsForClassBreaks
+  extends StObject
+     with Object {
   
   /**
     * An array of hex color strings.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolyline)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * The number of classes used in the classed color visualization.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-color.html#ColorSchemeForPolyline)
     */
-  var numClasses: Double = js.native
+  var numClasses: Double
 }
 object ColorSchemeForPolylineColorsForClassBreaks {
   

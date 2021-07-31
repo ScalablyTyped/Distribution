@@ -7,10 +7,13 @@ import typings.regexpp.visitorMod.RegExpVisitor.Handlers
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("regexpp", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("regexpp", "RegExpParser")
   @js.native
@@ -26,27 +29,20 @@ object mod {
     def this(options: typings.regexpp.validatorMod.RegExpValidator.Options) = this()
   }
   
-  @JSImport("regexpp", "parseRegExpLiteral")
-  @js.native
-  def parseRegExpLiteral(source: String): RegExpLiteral = js.native
-  @JSImport("regexpp", "parseRegExpLiteral")
-  @js.native
-  def parseRegExpLiteral(source: String, options: Options): RegExpLiteral = js.native
-  @JSImport("regexpp", "parseRegExpLiteral")
-  @js.native
-  def parseRegExpLiteral(source: RegExp): RegExpLiteral = js.native
-  @JSImport("regexpp", "parseRegExpLiteral")
-  @js.native
-  def parseRegExpLiteral(source: RegExp, options: Options): RegExpLiteral = js.native
+  @scala.inline
+  def parseRegExpLiteral(source: String): RegExpLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRegExpLiteral")(source.asInstanceOf[js.Any]).asInstanceOf[RegExpLiteral]
+  @scala.inline
+  def parseRegExpLiteral(source: String, options: Options): RegExpLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRegExpLiteral")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExpLiteral]
+  @scala.inline
+  def parseRegExpLiteral(source: RegExp): RegExpLiteral = ^.asInstanceOf[js.Dynamic].applyDynamic("parseRegExpLiteral")(source.asInstanceOf[js.Any]).asInstanceOf[RegExpLiteral]
+  @scala.inline
+  def parseRegExpLiteral(source: RegExp, options: Options): RegExpLiteral = (^.asInstanceOf[js.Dynamic].applyDynamic("parseRegExpLiteral")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RegExpLiteral]
   
-  @JSImport("regexpp", "validateRegExpLiteral")
-  @js.native
-  def validateRegExpLiteral(source: String): Unit = js.native
-  @JSImport("regexpp", "validateRegExpLiteral")
-  @js.native
-  def validateRegExpLiteral(source: String, options: typings.regexpp.validatorMod.RegExpValidator.Options): Unit = js.native
+  @scala.inline
+  def validateRegExpLiteral(source: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("validateRegExpLiteral")(source.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def validateRegExpLiteral(source: String, options: typings.regexpp.validatorMod.RegExpValidator.Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("validateRegExpLiteral")(source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("regexpp", "visitRegExpAST")
-  @js.native
-  def visitRegExpAST(node: Node, handlers: Handlers): Unit = js.native
+  @scala.inline
+  def visitRegExpAST(node: Node, handlers: Handlers): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("visitRegExpAST")(node.asInstanceOf[js.Any], handlers.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

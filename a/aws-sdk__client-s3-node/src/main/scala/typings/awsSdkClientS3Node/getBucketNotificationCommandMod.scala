@@ -7,16 +7,18 @@ import typings.awsSdkClientS3Node.typesGetBucketNotificationInputMod.GetBucketNo
 import typings.awsSdkClientS3Node.typesGetBucketNotificationOutputMod.GetBucketNotificationOutput
 import typings.awsSdkTypes.commandMod.Command
 import typings.awsSdkTypes.middlewareMod.Handler
+import typings.awsSdkTypes.middlewareMod.MiddlewareStack
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getBucketNotificationCommandMod {
   
   @JSImport("@aws-sdk/client-s3-node/commands/GetBucketNotificationCommand", "GetBucketNotificationCommand")
   @js.native
-  class GetBucketNotificationCommand protected () extends Command[
+  class GetBucketNotificationCommand protected ()
+    extends StObject
+       with Command[
           InputTypesUnion, 
           GetBucketNotificationInput, 
           OutputTypesUnion, 
@@ -25,11 +27,23 @@ object getBucketNotificationCommandMod {
         ] {
     def this(input: GetBucketNotificationInput) = this()
     
+    /* CompleteClass */
+    override val input: GetBucketNotificationInput = js.native
+    
+    /* CompleteClass */
+    override val middlewareStack: MiddlewareStack[GetBucketNotificationInput, GetBucketNotificationOutput] = js.native
+    
     val model: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_types.OperationModel */ js.Any = js.native
     
     def resolveMiddleware(
       clientStack: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __aws_sdk_middleware_stack.MiddlewareStack<InputTypesUnion, OutputTypesUnion, _stream.Readable> */ js.Any,
       configuration: S3ResolvedConfiguration
+    ): Handler[GetBucketNotificationInput, GetBucketNotificationOutput] = js.native
+    /* CompleteClass */
+    override def resolveMiddleware(
+      stack: MiddlewareStack[InputTypesUnion, OutputTypesUnion],
+      configuration: S3ResolvedConfiguration,
+      options: js.Any
     ): Handler[GetBucketNotificationInput, GetBucketNotificationOutput] = js.native
   }
 }

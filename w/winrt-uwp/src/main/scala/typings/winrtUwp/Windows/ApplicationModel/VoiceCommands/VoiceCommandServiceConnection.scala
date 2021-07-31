@@ -9,14 +9,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.voicecommandcompleted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The background app service connection to Cortana. */
 @js.native
 trait VoiceCommandServiceConnection extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_voicecommandcompleted(
     `type`: voicecommandcompleted,
@@ -33,12 +32,12 @@ trait VoiceCommandServiceConnection extends StObject {
   var language: Language = js.native
   
   /** Event raised when the voice command is completed and the background app service is about to be terminated. */
-  def onvoicecommandcompleted(ev: VoiceCommandCompletedEventArgs with WinRTEvent[VoiceCommandServiceConnection]): Unit = js.native
+  def onvoicecommandcompleted(ev: VoiceCommandCompletedEventArgs & WinRTEvent[VoiceCommandServiceConnection]): Unit = js.native
   /** Event raised when the voice command is completed and the background app service is about to be terminated. */
   @JSName("onvoicecommandcompleted")
   var onvoicecommandcompleted_Original: TypedEventHandler[VoiceCommandServiceConnection, VoiceCommandCompletedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_voicecommandcompleted(
     `type`: voicecommandcompleted,

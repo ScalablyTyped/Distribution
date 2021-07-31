@@ -3,19 +3,18 @@ package typings.documentdb.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment
-  extends /** Other properties */
+  extends StObject
+     with /** Other properties */
 /* name */ StringDictionary[js.Any] {
   
   /** The MIME contentType of the attachment. */
-  var contentType: String = js.native
+  var contentType: String
   
   /** Media link associated with the attachment content. */
-  var media: String = js.native
+  var media: String
 }
 object Attachment {
   

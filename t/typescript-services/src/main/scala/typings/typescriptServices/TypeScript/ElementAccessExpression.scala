@@ -2,17 +2,17 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ElementAccessExpression extends AST {
+trait ElementAccessExpression
+  extends StObject
+     with AST {
   
-  var argumentExpression: AST = js.native
+  var argumentExpression: AST
   
-  var expression: AST = js.native
+  var expression: AST
   
-  def structuralEquals(ast: ElementAccessExpression, includingPosition: Boolean): Boolean = js.native
+  def structuralEquals(ast: ElementAccessExpression, includingPosition: Boolean): Boolean
 }
 object ElementAccessExpression {
   

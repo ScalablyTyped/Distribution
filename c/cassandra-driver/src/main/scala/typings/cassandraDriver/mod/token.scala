@@ -3,21 +3,19 @@ package typings.cassandraDriver.mod
 import typings.cassandraDriver.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object token {
   
-  @js.native
   trait Token extends StObject {
     
-    def compare(other: Token): Double = js.native
+    def compare(other: Token): Double
     
-    def equals(other: Token): Boolean = js.native
+    def equals(other: Token): Boolean
     
-    def getType(): Code = js.native
+    def getType(): Code
     
-    def getValue(): js.Any = js.native
+    def getValue(): js.Any
   }
   object Token {
     
@@ -45,26 +43,25 @@ object token {
     }
   }
   
-  @js.native
   trait TokenRange extends StObject {
     
-    def compare(other: TokenRange): Double = js.native
+    def compare(other: TokenRange): Double
     
-    def contains(token: Token): Boolean = js.native
+    def contains(token: Token): Boolean
     
-    var end: Token = js.native
+    var end: Token
     
-    def equals(other: TokenRange): Boolean = js.native
+    def equals(other: TokenRange): Boolean
     
-    def isEmpty(): Boolean = js.native
+    def isEmpty(): Boolean
     
-    def isWrappedAround(): Boolean = js.native
+    def isWrappedAround(): Boolean
     
-    def splitEvenly(numberOfSplits: Double): js.Array[TokenRange] = js.native
+    def splitEvenly(numberOfSplits: Double): js.Array[TokenRange]
     
-    var start: Token = js.native
+    var start: Token
     
-    def unwrap(): js.Array[TokenRange] = js.native
+    def unwrap(): js.Array[TokenRange]
   }
   object TokenRange {
     

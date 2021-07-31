@@ -11,8 +11,8 @@ URI validation functions
 | Full name          | valid-url |
 | Keywords           | url, validation, check, checker, pattern |
 | # releases         | 0 |
-| # dependents       | 606 |
-| # downloads        | 61479591 |
+| # dependents       | 660 |
+| # downloads        | 80705064 |
 | # stars            | 22 |
 
 ## Links

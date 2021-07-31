@@ -2,21 +2,19 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBackupSelectionsOutput extends StObject {
   
   /**
     * An array of backup selection list items containing metadata about each resource in the list.
     */
-  var BackupSelectionsList: js.UndefOr[typings.awsSdk.backupMod.BackupSelectionsList] = js.native
+  var BackupSelectionsList: js.UndefOr[typings.awsSdk.backupMod.BackupSelectionsList] = js.undefined
   
   /**
     * The next item following a partial list of returned items. For example, if a request is made to return maxResults number of items, NextToken allows you to return more items in your list starting at the location pointed to by the next token.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListBackupSelectionsOutput {
   

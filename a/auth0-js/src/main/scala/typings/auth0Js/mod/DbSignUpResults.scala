@@ -2,17 +2,15 @@ package typings.auth0Js.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DbSignUpResults extends StObject {
   
   /** user's email */
-  var email: String = js.native
+  var email: String
   
   /** if the user's email was verified */
-  var emailVerified: Boolean = js.native
+  var emailVerified: Boolean
 }
 object DbSignUpResults {
   

@@ -4,24 +4,22 @@ import typings.fluentuiTheme.ithemeMod.ITheme
 import typings.officeUiFabricReact.anon.Available
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Persona/Persona.types.IPersonaSharedProps, 'theme'>> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Persona/Persona.types.IPersonaSharedProps, 'presence' | 'isOutOfOffice' | 'size' | 'presenceColors'> & std.Pick<office-ui-fabric-react.office-ui-fabric-react/lib/components/Persona/Persona.types.IPersonaProps, 'className'> */
-@js.native
 trait IPersonaPresenceStyleProps extends StObject {
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var isOutOfOffice: js.UndefOr[Boolean] = js.native
+  var isOutOfOffice: js.UndefOr[Boolean] = js.undefined
   
-  var presence: js.UndefOr[PersonaPresence] = js.native
+  var presence: js.UndefOr[PersonaPresence] = js.undefined
   
-  var presenceColors: js.UndefOr[Available] = js.native
+  var presenceColors: js.UndefOr[Available] = js.undefined
   
-  var size: js.UndefOr[PersonaSize] = js.native
+  var size: js.UndefOr[PersonaSize] = js.undefined
   
-  var theme: ITheme = js.native
+  var theme: ITheme
 }
 object IPersonaPresenceStyleProps {
   

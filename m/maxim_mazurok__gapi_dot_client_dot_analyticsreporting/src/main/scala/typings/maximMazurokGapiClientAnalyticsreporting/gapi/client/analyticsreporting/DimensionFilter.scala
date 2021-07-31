@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DimensionFilter extends StObject {
   
   /** Should the match be case sensitive? Default is false. */
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
   /** The dimension to filter on. A DimensionFilter must contain a dimension. */
-  var dimensionName: js.UndefOr[String] = js.native
+  var dimensionName: js.UndefOr[String] = js.undefined
   
   /**
     * Strings or regular expression to match against. Only the first value of the list is used for comparison unless the operator is `IN_LIST`. If `IN_LIST` operator, then the entire list
     * is used to filter the dimensions as explained in the description of the `IN_LIST` operator.
     */
-  var expressions: js.UndefOr[js.Array[String]] = js.native
+  var expressions: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Logical `NOT` operator. If this boolean is set to true, then the matching dimension values will be excluded in the report. The default is false. */
-  var not: js.UndefOr[Boolean] = js.native
+  var not: js.UndefOr[Boolean] = js.undefined
   
   /** How to match the dimension to the expression. The default is REGEXP. */
-  var operator: js.UndefOr[String] = js.native
+  var operator: js.UndefOr[String] = js.undefined
 }
 object DimensionFilter {
   

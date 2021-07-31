@@ -3,13 +3,11 @@ package typings.gapiTranslate
 import typings.gapiTranslate.anon.Detections
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiTranslateDetectionListResponse extends StObject {
   
-  var data: Detections = js.native
+  var data: Detections
 }
 object GoogleApiTranslateDetectionListResponse {
   

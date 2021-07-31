@@ -5,13 +5,14 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.JsonObjectResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Portability {
   
   @js.native
-  trait SearchConfigurationPortability extends ClientObject {
+  trait SearchConfigurationPortability
+    extends StObject
+       with ClientObject {
     
     def deleteSearchConfiguration(owningScope: SearchObjectOwner, searchConfiguration: String): Unit = js.native
     
@@ -22,6 +23,5 @@ object Portability {
     def importSearchConfiguration(owningScope: SearchObjectOwner, searchConfiguration: String): Unit = js.native
   }
   
-  @js.native
   trait SearchConfigurationPortabilityPropertyNames extends StObject
 }

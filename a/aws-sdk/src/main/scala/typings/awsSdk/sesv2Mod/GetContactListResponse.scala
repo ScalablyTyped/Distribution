@@ -2,41 +2,39 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContactListResponse extends StObject {
   
   /**
     * The name of the contact list.
     */
-  var ContactListName: js.UndefOr[typings.awsSdk.sesv2Mod.ContactListName] = js.native
+  var ContactListName: js.UndefOr[typings.awsSdk.sesv2Mod.ContactListName] = js.undefined
   
   /**
     * A timestamp noting when the contact list was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of what the contact list is about.
     */
-  var Description: js.UndefOr[typings.awsSdk.sesv2Mod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.sesv2Mod.Description] = js.undefined
   
   /**
     * A timestamp noting the last time the contact list was updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The tags associated with a contact list.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * An interest group, theme, or label within a list. A contact list can have multiple topics.
     */
-  var Topics: js.UndefOr[typings.awsSdk.sesv2Mod.Topics] = js.native
+  var Topics: js.UndefOr[typings.awsSdk.sesv2Mod.Topics] = js.undefined
 }
 object GetContactListResponse {
   

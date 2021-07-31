@@ -26,180 +26,178 @@ import typings.recharts.rechartsStrings.optimizeQuality
 import typings.recharts.rechartsStrings.optimizeSpeed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<recharts.recharts.PresentationAttributes<number, number>> */
-@js.native
 trait CartesianGridProps extends StObject {
   
-  var alignmentBaseline: js.UndefOr[String] = js.native
+  var alignmentBaseline: js.UndefOr[String] = js.undefined
   
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
-  var baselineShift: js.UndefOr[String] = js.native
+  var baselineShift: js.UndefOr[String] = js.undefined
   
-  var chartHeight: js.UndefOr[Double] = js.native
+  var chartHeight: js.UndefOr[Double] = js.undefined
   
-  var chartWidth: js.UndefOr[Double] = js.native
+  var chartWidth: js.UndefOr[Double] = js.undefined
   
-  var clip: js.UndefOr[String] = js.native
+  var clip: js.UndefOr[String] = js.undefined
   
-  var clipPath: js.UndefOr[String] = js.native
+  var clipPath: js.UndefOr[String] = js.undefined
   
-  var clipRule: js.UndefOr[String] = js.native
+  var clipRule: js.UndefOr[String] = js.undefined
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var colorInterpolation: js.UndefOr[String] = js.native
+  var colorInterpolation: js.UndefOr[String] = js.undefined
   
-  var colorInterpolationFilters: js.UndefOr[String] = js.native
+  var colorInterpolationFilters: js.UndefOr[String] = js.undefined
   
-  var colorProfile: js.UndefOr[String] = js.native
+  var colorProfile: js.UndefOr[String] = js.undefined
   
-  var colorRendering: js.UndefOr[String] = js.native
+  var colorRendering: js.UndefOr[String] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
-  var display: js.UndefOr[String] = js.native
+  var display: js.UndefOr[String] = js.undefined
   
-  var dominantBaseline: js.UndefOr[String] = js.native
+  var dominantBaseline: js.UndefOr[String] = js.undefined
   
-  var dx: js.UndefOr[Double] = js.native
+  var dx: js.UndefOr[Double] = js.undefined
   
-  var dy: js.UndefOr[Double] = js.native
+  var dy: js.UndefOr[Double] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var fillOpacity: js.UndefOr[Double | String] = js.native
+  var fillOpacity: js.UndefOr[Double | String] = js.undefined
   
-  var fillRule: js.UndefOr[String] = js.native
+  var fillRule: js.UndefOr[String] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var floodColor: js.UndefOr[String] = js.native
+  var floodColor: js.UndefOr[String] = js.undefined
   
-  var floodOpacity: js.UndefOr[String] = js.native
+  var floodOpacity: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double | String] = js.native
+  var fontSize: js.UndefOr[Double | String] = js.undefined
   
-  var fontSizeAdjust: js.UndefOr[Double | String] = js.native
+  var fontSizeAdjust: js.UndefOr[Double | String] = js.undefined
   
-  var fontStretch: js.UndefOr[String] = js.native
+  var fontStretch: js.UndefOr[String] = js.undefined
   
-  var fontStyle: js.UndefOr[String] = js.native
+  var fontStyle: js.UndefOr[String] = js.undefined
   
-  var fontVariant: js.UndefOr[String] = js.native
+  var fontVariant: js.UndefOr[String] = js.undefined
   
   var fontWeight: js.UndefOr[
     normal | bold | bolder | lighter | `100` | `200` | `300` | `400` | `500` | `600` | `700` | `800` | `900` | inherit
-  ] = js.native
+  ] = js.undefined
   
-  var glyphOrientationVertical: js.UndefOr[String] = js.native
+  var glyphOrientationVertical: js.UndefOr[String] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   var horizontal: js.UndefOr[
-    js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean
-  ] = js.native
+    js.Object | ReactElement | (ContentRenderer[LineProps & CartesianGridProps]) | Boolean
+  ] = js.undefined
   
-  var horizontalCoordinatesGenerator: js.UndefOr[HorizontalCoordinatesGenerator] = js.native
+  var horizontalCoordinatesGenerator: js.UndefOr[HorizontalCoordinatesGenerator] = js.undefined
   
-  var horizontalFill: js.UndefOr[js.Array[String]] = js.native
+  var horizontalFill: js.UndefOr[js.Array[String]] = js.undefined
   
-  var horizontalPoints: js.UndefOr[js.Array[Double]] = js.native
+  var horizontalPoints: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.native
+  var imageRendering: js.UndefOr[auto | optimizeSpeed | optimizeQuality | inherit] = js.undefined
   
-  var kerning: js.UndefOr[Double | String] = js.native
+  var kerning: js.UndefOr[Double | String] = js.undefined
   
-  var letterSpacing: js.UndefOr[String] = js.native
+  var letterSpacing: js.UndefOr[String] = js.undefined
   
-  var lightingColor: js.UndefOr[String] = js.native
+  var lightingColor: js.UndefOr[String] = js.undefined
   
-  var markerEnd: js.UndefOr[String] = js.native
+  var markerEnd: js.UndefOr[String] = js.undefined
   
-  var markerMid: js.UndefOr[String] = js.native
+  var markerMid: js.UndefOr[String] = js.undefined
   
-  var markerStart: js.UndefOr[String] = js.native
+  var markerStart: js.UndefOr[String] = js.undefined
   
-  var mask: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.undefined
   
-  var offset: js.UndefOr[ChartOffset] = js.native
+  var offset: js.UndefOr[ChartOffset] = js.undefined
   
-  var opacity: js.UndefOr[Double | String] = js.native
+  var opacity: js.UndefOr[Double | String] = js.undefined
   
-  var overflow: js.UndefOr[String] = js.native
+  var overflow: js.UndefOr[String] = js.undefined
   
-  var pointerEvents: js.UndefOr[String] = js.native
+  var pointerEvents: js.UndefOr[String] = js.undefined
   
-  var r: js.UndefOr[Double] = js.native
+  var r: js.UndefOr[Double] = js.undefined
   
-  var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.native
+  var shapeRendering: js.UndefOr[auto | optimizeSpeed | crispEdges | geometricPrecision | inherit] = js.undefined
   
-  var stopColor: js.UndefOr[String] = js.native
+  var stopColor: js.UndefOr[String] = js.undefined
   
-  var stopOpacity: js.UndefOr[Double | String] = js.native
+  var stopOpacity: js.UndefOr[Double | String] = js.undefined
   
-  var stroke: js.UndefOr[Double | String] = js.native
+  var stroke: js.UndefOr[Double | String] = js.undefined
   
-  var strokeDasharray: js.UndefOr[String] = js.native
+  var strokeDasharray: js.UndefOr[String] = js.undefined
   
-  var strokeDashoffset: js.UndefOr[Double | String] = js.native
+  var strokeDashoffset: js.UndefOr[Double | String] = js.undefined
   
-  var strokeLinecap: js.UndefOr[String] = js.native
+  var strokeLinecap: js.UndefOr[String] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[String] = js.native
+  var strokeLinejoin: js.UndefOr[String] = js.undefined
   
-  var strokeMiterlimit: js.UndefOr[Double | String] = js.native
+  var strokeMiterlimit: js.UndefOr[Double | String] = js.undefined
   
-  var strokeOpacity: js.UndefOr[Double | String] = js.native
+  var strokeOpacity: js.UndefOr[Double | String] = js.undefined
   
-  var strokeWidth: js.UndefOr[Double | String] = js.native
+  var strokeWidth: js.UndefOr[Double | String] = js.undefined
   
-  var style: js.UndefOr[js.Object] = js.native
+  var style: js.UndefOr[js.Object] = js.undefined
   
-  var textAnchor: js.UndefOr[String] = js.native
+  var textAnchor: js.UndefOr[String] = js.undefined
   
-  var textDecoration: js.UndefOr[String] = js.native
+  var textDecoration: js.UndefOr[String] = js.undefined
   
-  var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.native
+  var textRendering: js.UndefOr[auto | optimizeSpeed | optimizeLegibility | geometricPrecision | inherit] = js.undefined
   
-  var transform: js.UndefOr[String] = js.native
+  var transform: js.UndefOr[String] = js.undefined
   
-  var unicodeBidi: js.UndefOr[String] = js.native
+  var unicodeBidi: js.UndefOr[String] = js.undefined
   
   var vertical: js.UndefOr[
-    js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean
-  ] = js.native
+    js.Object | ReactElement | (ContentRenderer[LineProps & CartesianGridProps]) | Boolean
+  ] = js.undefined
   
-  var verticalCoordinatesGenerator: js.UndefOr[VerticalCoordinatesGenerator] = js.native
+  var verticalCoordinatesGenerator: js.UndefOr[VerticalCoordinatesGenerator] = js.undefined
   
-  var verticalFill: js.UndefOr[js.Array[String]] = js.native
+  var verticalFill: js.UndefOr[js.Array[String]] = js.undefined
   
-  var verticalPoints: js.UndefOr[js.Array[Double]] = js.native
+  var verticalPoints: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
   
-  var wordSpacing: js.UndefOr[Double | String] = js.native
+  var wordSpacing: js.UndefOr[Double | String] = js.undefined
   
-  var writingMode: js.UndefOr[String] = js.native
+  var writingMode: js.UndefOr[String] = js.undefined
   
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
-  var xAxis: js.UndefOr[XAxisProps] = js.native
+  var xAxis: js.UndefOr[XAxisProps] = js.undefined
   
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
   
-  var yAxis: js.UndefOr[YAxisProps] = js.native
+  var yAxis: js.UndefOr[YAxisProps] = js.undefined
 }
 object CartesianGridProps {
   
@@ -425,7 +423,7 @@ object CartesianGridProps {
     def setHeightUndefined: Self = StObject.set(x, "height", js.undefined)
     
     @scala.inline
-    def setHorizontal(value: js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
+    def setHorizontal(value: js.Object | ReactElement | (ContentRenderer[LineProps & CartesianGridProps]) | Boolean): Self = StObject.set(x, "horizontal", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHorizontalCoordinatesGenerator(value: /* arg */ Height => js.Array[Double]): Self = StObject.set(x, "horizontalCoordinatesGenerator", js.Any.fromFunction1(value))
@@ -443,7 +441,7 @@ object CartesianGridProps {
     def setHorizontalFillVarargs(value: String*): Self = StObject.set(x, "horizontalFill", js.Array(value :_*))
     
     @scala.inline
-    def setHorizontalFunction1(value: LineProps with CartesianGridProps => ReactNode): Self = StObject.set(x, "horizontal", js.Any.fromFunction1(value))
+    def setHorizontalFunction1(value: LineProps & CartesianGridProps => ReactNode): Self = StObject.set(x, "horizontal", js.Any.fromFunction1(value))
     
     @scala.inline
     def setHorizontalPoints(value: js.Array[Double]): Self = StObject.set(x, "horizontalPoints", value.asInstanceOf[js.Any])
@@ -638,7 +636,7 @@ object CartesianGridProps {
     def setUnicodeBidiUndefined: Self = StObject.set(x, "unicodeBidi", js.undefined)
     
     @scala.inline
-    def setVertical(value: js.Object | ReactElement | (ContentRenderer[LineProps with CartesianGridProps]) | Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
+    def setVertical(value: js.Object | ReactElement | (ContentRenderer[LineProps & CartesianGridProps]) | Boolean): Self = StObject.set(x, "vertical", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setVerticalCoordinatesGenerator(value: /* arg */ Offset => js.Array[Double]): Self = StObject.set(x, "verticalCoordinatesGenerator", js.Any.fromFunction1(value))
@@ -656,7 +654,7 @@ object CartesianGridProps {
     def setVerticalFillVarargs(value: String*): Self = StObject.set(x, "verticalFill", js.Array(value :_*))
     
     @scala.inline
-    def setVerticalFunction1(value: LineProps with CartesianGridProps => ReactNode): Self = StObject.set(x, "vertical", js.Any.fromFunction1(value))
+    def setVerticalFunction1(value: LineProps & CartesianGridProps => ReactNode): Self = StObject.set(x, "vertical", js.Any.fromFunction1(value))
     
     @scala.inline
     def setVerticalPoints(value: js.Array[Double]): Self = StObject.set(x, "verticalPoints", value.asInstanceOf[js.Any])

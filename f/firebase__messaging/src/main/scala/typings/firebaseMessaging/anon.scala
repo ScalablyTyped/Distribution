@@ -4,21 +4,19 @@ import typings.firebaseMessaging.mod.FirebaseApp
 import typings.firebaseMessagingTypes.mod.FirebaseMessaging
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ApplicationPubKey extends StObject {
     
-    var applicationPubKey: js.UndefOr[String] = js.native
+    var applicationPubKey: js.UndefOr[String] = js.undefined
     
-    var auth: String = js.native
+    var auth: String
     
-    var endpoint: String = js.native
+    var endpoint: String
     
-    var p256dh: String = js.native
+    var p256dh: String
   }
   object ApplicationPubKey {
     
@@ -48,10 +46,9 @@ object anon {
     }
   }
   
-  @js.native
   trait BrowserErrorMessage extends StObject {
     
-    var browserErrorMessage: String = js.native
+    var browserErrorMessage: String
   }
   object BrowserErrorMessage {
     
@@ -78,10 +75,9 @@ object anon {
     def isSupported(): Boolean = js.native
   }
   
-  @js.native
   trait ErrorInfo extends StObject {
     
-    var errorInfo: String = js.native
+    var errorInfo: String
   }
   object ErrorInfo {
     
@@ -99,10 +95,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Message {
     
@@ -120,12 +115,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ServiceWorkerRegistration extends StObject {
     
-    var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.native
+    var serviceWorkerRegistration: js.UndefOr[typings.std.ServiceWorkerRegistration] = js.undefined
     
-    var vapidKey: js.UndefOr[String] = js.native
+    var vapidKey: js.UndefOr[String] = js.undefined
   }
   object ServiceWorkerRegistration {
     
@@ -152,10 +146,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueName extends StObject {
     
-    var valueName: String = js.native
+    var valueName: String
   }
   object ValueName {
     

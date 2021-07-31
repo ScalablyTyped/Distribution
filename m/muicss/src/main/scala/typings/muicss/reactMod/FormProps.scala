@@ -4,13 +4,13 @@ import typings.react.mod.FormHTMLAttributes
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormProps extends FormHTMLAttributes[HTMLFormElement] {
+trait FormProps
+  extends StObject
+     with FormHTMLAttributes[HTMLFormElement] {
   
-  var `inline`: js.UndefOr[Boolean] = js.native
+  var `inline`: js.UndefOr[Boolean] = js.undefined
 }
 object FormProps {
   

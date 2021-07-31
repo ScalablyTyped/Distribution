@@ -4,17 +4,44 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PerRouteMiddleware extends StObject {
   
-  def handle(req: IncomingMessage, res: ServerResponse, next: js.Function0[Unit]): js.Any = js.native
+  def handle(req: IncomingMessage, res: ServerResponse, next: js.Function0[Unit]): js.Any
   @JSName("handle")
-  var handle_Original: MiddlewareHandler = js.native
+  var handle_Original: MiddlewareHandler
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var route: String = js.native
+  var route: String
+}
+object PerRouteMiddleware {
+  
+  @scala.inline
+  def apply(
+    handle: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any,
+    route: String
+  ): PerRouteMiddleware = {
+    val __obj = js.Dynamic.literal(handle = js.Any.fromFunction3(handle), route = route.asInstanceOf[js.Any])
+    __obj.asInstanceOf[PerRouteMiddleware]
+  }
+  
+  @scala.inline
+  implicit class PerRouteMiddlewareMutableBuilder[Self <: PerRouteMiddleware] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setHandle(
+      value: (/* req */ IncomingMessage, /* res */ ServerResponse, /* next */ js.Function0[Unit]) => js.Any
+    ): Self = StObject.set(x, "handle", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
+    
+    @scala.inline
+    def setRoute(value: String): Self = StObject.set(x, "route", value.asInstanceOf[js.Any])
+  }
 }

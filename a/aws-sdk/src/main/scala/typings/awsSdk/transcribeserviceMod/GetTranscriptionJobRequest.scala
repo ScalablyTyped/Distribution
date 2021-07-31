@@ -2,16 +2,14 @@ package typings.awsSdk.transcribeserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTranscriptionJobRequest extends StObject {
   
   /**
     * The name of the job.
     */
-  var TranscriptionJobName: typings.awsSdk.transcribeserviceMod.TranscriptionJobName = js.native
+  var TranscriptionJobName: typings.awsSdk.transcribeserviceMod.TranscriptionJobName
 }
 object GetTranscriptionJobRequest {
   

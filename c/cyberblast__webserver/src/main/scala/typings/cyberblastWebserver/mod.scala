@@ -8,7 +8,6 @@ import typings.node.httpMod.ServerResponse
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,39 +16,38 @@ object mod {
   @js.native
   class WebServer () extends StObject {
     def this(webConfigFile: String) = this()
-    def this(webConfigFile: js.UndefOr[scala.Nothing], logConfigFile: String) = this()
     def this(webConfigFile: String, logConfigFile: String) = this()
+    def this(webConfigFile: Unit, logConfigFile: String) = this()
     
     def respondError(error: String, context: ServerContext): js.Promise[Unit] = js.native
-    def respondError(error: String, context: ServerContext, code: js.UndefOr[scala.Nothing], message: String): js.Promise[Unit] = js.native
     def respondError(error: String, context: ServerContext, code: Double): js.Promise[Unit] = js.native
     def respondError(error: String, context: ServerContext, code: Double, message: String): js.Promise[Unit] = js.native
+    def respondError(error: String, context: ServerContext, code: Unit, message: String): js.Promise[Unit] = js.native
     def respondError(error: Error, context: ServerContext): js.Promise[Unit] = js.native
-    def respondError(error: Error, context: ServerContext, code: js.UndefOr[scala.Nothing], message: String): js.Promise[Unit] = js.native
     def respondError(error: Error, context: ServerContext, code: Double): js.Promise[Unit] = js.native
     def respondError(error: Error, context: ServerContext, code: Double, message: String): js.Promise[Unit] = js.native
+    def respondError(error: Error, context: ServerContext, code: Unit, message: String): js.Promise[Unit] = js.native
     
     def start(): js.Promise[Unit] = js.native
     
     def stop(): Unit = js.native
   }
   
-  @js.native
   trait ServerContext extends StObject {
     
-    var client: js.UndefOr[String] = js.native
+    var client: js.UndefOr[String] = js.undefined
     
-    var data: js.UndefOr[String | Buffer] = js.native
+    var data: js.UndefOr[String | Buffer] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
-    var request: IncomingMessage = js.native
+    var request: IncomingMessage
     
-    var response: ServerResponse = js.native
+    var response: ServerResponse
     
-    var route: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var route: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var server: WebServer = js.native
+    var server: WebServer
   }
   object ServerContext {
     

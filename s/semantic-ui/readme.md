@@ -10,9 +10,9 @@ Semantic empowers designers and developers by creating a shared vocabulary for U
 | ------------------ | :-------------: |
 | Full name          | semantic-ui |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 40 |
-| # downloads        | 581817 |
+| # releases         | 0 |
+| # dependents       | 38 |
+| # downloads        | 508515 |
 | # stars            | 35 |
 
 ## Links

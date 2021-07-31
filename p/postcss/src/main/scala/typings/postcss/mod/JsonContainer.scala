@@ -2,26 +2,26 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait JsonContainer extends JsonNode {
+trait JsonContainer
+  extends StObject
+     with JsonNode {
   
   /**
     * @returns The container's first child.
     */
-  var first: js.UndefOr[ChildNode] = js.native
+  var first: js.UndefOr[ChildNode] = js.undefined
   
   /**
     * @returns The container's last child.
     */
-  var last: js.UndefOr[ChildNode] = js.native
+  var last: js.UndefOr[ChildNode] = js.undefined
   
   /**
     * Contains the container's children.
     */
-  var nodes: js.UndefOr[js.Array[ChildNode]] = js.native
+  var nodes: js.UndefOr[js.Array[ChildNode]] = js.undefined
 }
 object JsonContainer {
   

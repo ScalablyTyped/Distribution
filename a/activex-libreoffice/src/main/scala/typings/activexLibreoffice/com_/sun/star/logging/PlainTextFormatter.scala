@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.logging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,10 +11,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * ID, the time of the logged event, the source class/method name (if applicable), and the log message.
   * @since OOo 2.3
   */
-@js.native
-trait PlainTextFormatter extends XLogFormatter {
+trait PlainTextFormatter
+  extends StObject
+     with XLogFormatter {
   
-  def create(): Unit = js.native
+  def create(): Unit
 }
 object PlainTextFormatter {
   

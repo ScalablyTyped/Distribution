@@ -6,35 +6,35 @@ import typings.pulumiAws.outputMod.ecr.GetRepositoryImageScanningConfiguration
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ecrGetRepositoryMod {
   
-  @JSImport("@pulumi/aws/ecr/getRepository", "getRepository")
+  @JSImport("@pulumi/aws/ecr/getRepository", JSImport.Namespace)
   @js.native
-  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = js.native
-  @JSImport("@pulumi/aws/ecr/getRepository", "getRepository")
-  @js.native
-  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs): js.Promise[GetRepositoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetRepositoryResult]]
+  @scala.inline
+  def getRepository(args: GetRepositoryArgs, opts: InvokeOptions): js.Promise[GetRepositoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRepository")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetRepositoryResult]]
+  
   trait GetRepositoryArgs extends StObject {
     
     /**
       * The name of the ECR Repository.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The registry ID where the repository was created.
       */
-    val registryId: js.UndefOr[String] = js.native
+    val registryId: js.UndefOr[String] = js.undefined
     
     /**
       * A map of tags assigned to the resource.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetRepositoryArgs {
     
@@ -64,47 +64,46 @@ object ecrGetRepositoryMod {
     }
   }
   
-  @js.native
   trait GetRepositoryResult extends StObject {
     
     /**
       * Full ARN of the repository.
       */
-    val arn: String = js.native
+    val arn: String
     
     /**
       * Encryption configuration for the repository. See Encryption Configuration below.
       */
-    val encryptionConfigurations: js.Array[GetRepositoryEncryptionConfiguration] = js.native
+    val encryptionConfigurations: js.Array[GetRepositoryEncryptionConfiguration]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Configuration block that defines image scanning configuration for the repository. See Image Scanning Configuration below.
       */
-    val imageScanningConfigurations: js.Array[GetRepositoryImageScanningConfiguration] = js.native
+    val imageScanningConfigurations: js.Array[GetRepositoryImageScanningConfiguration]
     
     /**
       * The tag mutability setting for the repository.
       */
-    val imageTagMutability: String = js.native
+    val imageTagMutability: String
     
-    val name: String = js.native
+    val name: String
     
-    val registryId: String = js.native
+    val registryId: String
     
     /**
       * The URL of the repository (in the form `aws_account_id.dkr.ecr.region.amazonaws.com/repositoryName`).
       */
-    val repositoryUrl: String = js.native
+    val repositoryUrl: String
     
     /**
       * A map of tags assigned to the resource.
       */
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetRepositoryResult {
     

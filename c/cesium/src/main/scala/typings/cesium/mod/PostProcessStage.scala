@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.ClearColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "PostProcessStage")
@@ -31,7 +30,7 @@ class PostProcessStage () extends StObject {
   
   val scissorRectangle: BoundingRectangle = js.native
   
-  var selected: js.Array[_] = js.native
+  var selected: js.Array[js.Any] = js.native
   
   val textureScale: Double = js.native
   

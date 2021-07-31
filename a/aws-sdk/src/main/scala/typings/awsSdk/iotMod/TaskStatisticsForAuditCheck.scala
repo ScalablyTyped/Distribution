@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskStatisticsForAuditCheck extends StObject {
   
   /**
     * The number of findings to which the mitigation action task was canceled when applied.
     */
-  var canceledFindingsCount: js.UndefOr[CanceledFindingsCount] = js.native
+  var canceledFindingsCount: js.UndefOr[CanceledFindingsCount] = js.undefined
   
   /**
     * The number of findings for which at least one of the actions failed when applied.
     */
-  var failedFindingsCount: js.UndefOr[FailedFindingsCount] = js.native
+  var failedFindingsCount: js.UndefOr[FailedFindingsCount] = js.undefined
   
   /**
     * The number of findings skipped because of filter conditions provided in the parameters to the command.
     */
-  var skippedFindingsCount: js.UndefOr[SkippedFindingsCount] = js.native
+  var skippedFindingsCount: js.UndefOr[SkippedFindingsCount] = js.undefined
   
   /**
     * The number of findings for which all mitigation actions succeeded when applied.
     */
-  var succeededFindingsCount: js.UndefOr[SucceededFindingsCount] = js.native
+  var succeededFindingsCount: js.UndefOr[SucceededFindingsCount] = js.undefined
   
   /**
     * The total number of findings to which a task is being applied.
     */
-  var totalFindingsCount: js.UndefOr[TotalFindingsCount] = js.native
+  var totalFindingsCount: js.UndefOr[TotalFindingsCount] = js.undefined
 }
 object TaskStatisticsForAuditCheck {
   

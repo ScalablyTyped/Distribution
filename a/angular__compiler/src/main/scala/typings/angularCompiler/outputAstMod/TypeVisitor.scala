@@ -2,19 +2,17 @@ package typings.angularCompiler.outputAstMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeVisitor extends StObject {
   
-  def visitArrayType(`type`: ArrayType, context: js.Any): js.Any = js.native
+  def visitArrayType(`type`: ArrayType, context: js.Any): js.Any
   
-  def visitBuiltinType(`type`: BuiltinType, context: js.Any): js.Any = js.native
+  def visitBuiltinType(`type`: BuiltinType, context: js.Any): js.Any
   
-  def visitExpressionType(`type`: ExpressionType_, context: js.Any): js.Any = js.native
+  def visitExpressionType(`type`: ExpressionType_, context: js.Any): js.Any
   
-  def visitMapType(`type`: MapType, context: js.Any): js.Any = js.native
+  def visitMapType(`type`: MapType, context: js.Any): js.Any
 }
 object TypeVisitor {
   

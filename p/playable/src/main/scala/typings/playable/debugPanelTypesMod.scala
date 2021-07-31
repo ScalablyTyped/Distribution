@@ -4,23 +4,21 @@ import typings.std.Event
 import typings.std.EventListenerOrEventListenerObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object debugPanelTypesMod {
   
-  @js.native
   trait IDebugPanelHighlightStyles extends StObject {
     
-    var boolean: String = js.native
+    var boolean: String
     
-    var key: String = js.native
+    var key: String
     
-    var `null`: String = js.native
+    var `null`: String
     
-    var number: String = js.native
+    var number: String
     
-    var string: String = js.native
+    var string: String
   }
   object IDebugPanelHighlightStyles {
     
@@ -51,10 +49,9 @@ object debugPanelTypesMod {
     }
   }
   
-  @js.native
   trait IDebugPanelViewCallbacks extends StObject {
     
-    var onCloseButtonClick: EventListenerOrEventListenerObject = js.native
+    var onCloseButtonClick: EventListenerOrEventListenerObject
   }
   object IDebugPanelViewCallbacks {
     
@@ -75,10 +72,9 @@ object debugPanelTypesMod {
     }
   }
   
-  @js.native
   trait IDebugPanelViewConfig extends StObject {
     
-    var callbacks: IDebugPanelViewCallbacks = js.native
+    var callbacks: IDebugPanelViewCallbacks
   }
   object IDebugPanelViewConfig {
     
@@ -96,27 +92,17 @@ object debugPanelTypesMod {
     }
   }
   
-  /* Inlined playable.playable/dist/src/modules/ui/debug-panel/types.IDebugPanelHighlightStyles & {  debugPanel :string,   infoContainer :string,   closeButton :string,   hidden :string} */
-  @js.native
-  trait IDebugPanelViewStyles extends StObject {
+  trait IDebugPanelViewStyles
+    extends StObject
+       with IDebugPanelHighlightStyles {
     
-    var boolean: String = js.native
+    var closeButton: String
     
-    var closeButton: String = js.native
+    var debugPanel: String
     
-    var debugPanel: String = js.native
+    var hidden: String
     
-    var hidden: String = js.native
-    
-    var infoContainer: String = js.native
-    
-    var key: String = js.native
-    
-    var `null`: String = js.native
-    
-    var number: String = js.native
-    
-    var string: String = js.native
+    var infoContainer: String
   }
   object IDebugPanelViewStyles {
     
@@ -141,9 +127,6 @@ object debugPanelTypesMod {
     implicit class IDebugPanelViewStylesMutableBuilder[Self <: IDebugPanelViewStyles] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setBoolean(value: String): Self = StObject.set(x, "boolean", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setCloseButton(value: String): Self = StObject.set(x, "closeButton", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -154,18 +137,6 @@ object debugPanelTypesMod {
       
       @scala.inline
       def setInfoContainer(value: String): Self = StObject.set(x, "infoContainer", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setNull(value: String): Self = StObject.set(x, "null", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setNumber(value: String): Self = StObject.set(x, "number", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setString(value: String): Self = StObject.set(x, "string", value.asInstanceOf[js.Any])
     }
   }
 }

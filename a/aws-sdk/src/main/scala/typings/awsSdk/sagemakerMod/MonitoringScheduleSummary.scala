@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonitoringScheduleSummary extends StObject {
   
   /**
     * The creation time of the monitoring schedule.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The name of the endpoint using the monitoring schedule.
     */
-  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.native
+  var EndpointName: js.UndefOr[typings.awsSdk.sagemakerMod.EndpointName] = js.undefined
   
   /**
     * The last time the monitoring schedule was modified.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
   
   /**
     * The Amazon Resource Name (ARN) of the monitoring schedule.
     */
-  var MonitoringScheduleArn: typings.awsSdk.sagemakerMod.MonitoringScheduleArn = js.native
+  var MonitoringScheduleArn: typings.awsSdk.sagemakerMod.MonitoringScheduleArn
   
   /**
     * The name of the monitoring schedule.
     */
-  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName = js.native
+  var MonitoringScheduleName: typings.awsSdk.sagemakerMod.MonitoringScheduleName
   
   /**
     * The status of the monitoring schedule.
     */
-  var MonitoringScheduleStatus: ScheduleStatus = js.native
+  var MonitoringScheduleStatus: ScheduleStatus
 }
 object MonitoringScheduleSummary {
   

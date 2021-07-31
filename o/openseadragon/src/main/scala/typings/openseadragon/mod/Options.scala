@@ -28,251 +28,249 @@ import typings.std.CanvasPattern
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var ajaxHeaders: js.UndefOr[js.Object] = js.native
+  var ajaxHeaders: js.UndefOr[js.Object] = js.undefined
   
-  var ajaxWithCredentials: js.UndefOr[Boolean] = js.native
+  var ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var alwaysBlend: js.UndefOr[Boolean] = js.native
+  var alwaysBlend: js.UndefOr[Boolean] = js.undefined
   
-  var animationTime: js.UndefOr[Double] = js.native
+  var animationTime: js.UndefOr[Double] = js.undefined
   
-  var autoHideControls: js.UndefOr[Boolean] = js.native
+  var autoHideControls: js.UndefOr[Boolean] = js.undefined
   
-  var autoResize: js.UndefOr[Boolean] = js.native
+  var autoResize: js.UndefOr[Boolean] = js.undefined
   
-  var blendTime: js.UndefOr[Double] = js.native
+  var blendTime: js.UndefOr[Double] = js.undefined
   
-  var clickDistThreshold: js.UndefOr[Double] = js.native
+  var clickDistThreshold: js.UndefOr[Double] = js.undefined
   
-  var clickTimeThreshold: js.UndefOr[Double] = js.native
+  var clickTimeThreshold: js.UndefOr[Double] = js.undefined
   
-  var collectionColumns: js.UndefOr[Double] = js.native
+  var collectionColumns: js.UndefOr[Double] = js.undefined
   
-  var collectionLayout: js.UndefOr[horizontal | vertical] = js.native
+  var collectionLayout: js.UndefOr[horizontal | vertical] = js.undefined
   
-  var collectionMode: js.UndefOr[Boolean] = js.native
+  var collectionMode: js.UndefOr[Boolean] = js.undefined
   
-  var collectionRows: js.UndefOr[Double] = js.native
+  var collectionRows: js.UndefOr[Double] = js.undefined
   
-  var collectionTileMargin: js.UndefOr[Double] = js.native
+  var collectionTileMargin: js.UndefOr[Double] = js.undefined
   
-  var collectionTileSize: js.UndefOr[Double] = js.native
+  var collectionTileSize: js.UndefOr[Double] = js.undefined
   
   var compositeOperation: js.UndefOr[
     `source-over` | `source-atop` | `source-in` | `source-out` | `destination-over` | `destination-atop` | `destination-in` | `destination-out` | lighter | copy | xor
-  ] = js.native
+  ] = js.undefined
   
-  var constrainDuringPan: js.UndefOr[Boolean] = js.native
+  var constrainDuringPan: js.UndefOr[Boolean] = js.undefined
   
-  var controlsFadeDelay: js.UndefOr[Double] = js.native
+  var controlsFadeDelay: js.UndefOr[Double] = js.undefined
   
-  var controlsFadeLength: js.UndefOr[Double] = js.native
+  var controlsFadeLength: js.UndefOr[Double] = js.undefined
   
-  var crossOriginPolicy: js.UndefOr[Anonymous | `use-credentials` | `false`] = js.native
+  var crossOriginPolicy: js.UndefOr[Anonymous | `use-credentials` | `false`] = js.undefined
   
-  var dblClickDistThreshold: js.UndefOr[Double] = js.native
+  var dblClickDistThreshold: js.UndefOr[Double] = js.undefined
   
-  var dblClickTimeThreshold: js.UndefOr[Double] = js.native
+  var dblClickTimeThreshold: js.UndefOr[Double] = js.undefined
   
-  var debugGridColor: js.UndefOr[js.Array[String]] = js.native
+  var debugGridColor: js.UndefOr[js.Array[String]] = js.undefined
   
-  var debugMode: js.UndefOr[Boolean] = js.native
+  var debugMode: js.UndefOr[Boolean] = js.undefined
   
-  var defaultZoomLevel: js.UndefOr[Double] = js.native
+  var defaultZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var degrees: js.UndefOr[Double] = js.native
+  var degrees: js.UndefOr[Double] = js.undefined
   
-  var element: js.UndefOr[HTMLElement] = js.native
+  var element: js.UndefOr[HTMLElement] = js.undefined
   
-  var flipped: js.UndefOr[Boolean] = js.native
+  var flipped: js.UndefOr[Boolean] = js.undefined
   
-  var fullPageButton: js.UndefOr[String] = js.native
+  var fullPageButton: js.UndefOr[String] = js.undefined
   
-  var gestureSettingsMouse: js.UndefOr[GestureSettings] = js.native
+  var gestureSettingsMouse: js.UndefOr[GestureSettings] = js.undefined
   
-  var gestureSettingsPen: js.UndefOr[GestureSettings] = js.native
+  var gestureSettingsPen: js.UndefOr[GestureSettings] = js.undefined
   
-  var gestureSettingsTouch: js.UndefOr[GestureSettings] = js.native
+  var gestureSettingsTouch: js.UndefOr[GestureSettings] = js.undefined
   
-  var gestureSettingsUnknown: js.UndefOr[GestureSettings] = js.native
+  var gestureSettingsUnknown: js.UndefOr[GestureSettings] = js.undefined
   
-  var homeButton: js.UndefOr[String] = js.native
+  var homeButton: js.UndefOr[String] = js.undefined
   
-  var homeFillsViewer: js.UndefOr[Boolean] = js.native
+  var homeFillsViewer: js.UndefOr[Boolean] = js.undefined
   
-  var iOSDevice: js.UndefOr[Boolean] = js.native
+  var iOSDevice: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var imageLoaderLimit: js.UndefOr[Double] = js.native
+  var imageLoaderLimit: js.UndefOr[Double] = js.undefined
   
-  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.native
+  var imageSmoothingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var immediateRender: js.UndefOr[Boolean] = js.native
+  var immediateRender: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If sequenceMode is true, display this page initially.
     * @default 0
     */
-  var initialPage: js.UndefOr[Double] = js.native
+  var initialPage: js.UndefOr[Double] = js.undefined
   
-  var loadTilesWithAjax: js.UndefOr[Boolean] = js.native
+  var loadTilesWithAjax: js.UndefOr[Boolean] = js.undefined
   
-  var maxImageCacheCount: js.UndefOr[Double] = js.native
+  var maxImageCacheCount: js.UndefOr[Double] = js.undefined
   
-  var maxZoomLevel: js.UndefOr[Double] = js.native
+  var maxZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var maxZoomPixelRatio: js.UndefOr[Double] = js.native
+  var maxZoomPixelRatio: js.UndefOr[Double] = js.undefined
   
-  var minPixelRatio: js.UndefOr[Double] = js.native
+  var minPixelRatio: js.UndefOr[Double] = js.undefined
   
-  var minScrollDeltaTime: js.UndefOr[Double] = js.native
+  var minScrollDeltaTime: js.UndefOr[Double] = js.undefined
   
-  var minZoomImageRatio: js.UndefOr[Double] = js.native
+  var minZoomImageRatio: js.UndefOr[Double] = js.undefined
   
-  var minZoomLevel: js.UndefOr[Double] = js.native
+  var minZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var mouseNavEnabled: js.UndefOr[Double] = js.native
+  var mouseNavEnabled: js.UndefOr[Double] = js.undefined
   
-  var navImages: js.UndefOr[NavImages] = js.native
+  var navImages: js.UndefOr[NavImages] = js.undefined
   
-  var navPrevNextWrap: js.UndefOr[Boolean] = js.native
+  var navPrevNextWrap: js.UndefOr[Boolean] = js.undefined
   
-  var navigationControlAnchor: js.UndefOr[ControlAnchor] = js.native
+  var navigationControlAnchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var navigatorAutoFade: js.UndefOr[Boolean] = js.native
+  var navigatorAutoFade: js.UndefOr[Boolean] = js.undefined
   
-  var navigatorAutoResize: js.UndefOr[Boolean] = js.native
+  var navigatorAutoResize: js.UndefOr[Boolean] = js.undefined
   
-  var navigatorBackground: js.UndefOr[String] = js.native
+  var navigatorBackground: js.UndefOr[String] = js.undefined
   
-  var navigatorBorderColor: js.UndefOr[String] = js.native
+  var navigatorBorderColor: js.UndefOr[String] = js.undefined
   
-  var navigatorDisplayRegionColor: js.UndefOr[String] = js.native
+  var navigatorDisplayRegionColor: js.UndefOr[String] = js.undefined
   
-  var navigatorHeight: js.UndefOr[Double | String] = js.native
+  var navigatorHeight: js.UndefOr[Double | String] = js.undefined
   
-  var navigatorId: js.UndefOr[String] = js.native
+  var navigatorId: js.UndefOr[String] = js.undefined
   
-  var navigatorLeft: js.UndefOr[Double | String] = js.native
+  var navigatorLeft: js.UndefOr[Double | String] = js.undefined
   
-  var navigatorMaintainSizeRatio: js.UndefOr[Boolean] = js.native
+  var navigatorMaintainSizeRatio: js.UndefOr[Boolean] = js.undefined
   
-  var navigatorOpacity: js.UndefOr[Double] = js.native
+  var navigatorOpacity: js.UndefOr[Double] = js.undefined
   
-  var navigatorPosition: js.UndefOr[TOP_LEFT | TOP_RIGHT | BOTTOM_LEFT | BOTTOM_RIGHT | ABSOLUTE] = js.native
+  var navigatorPosition: js.UndefOr[TOP_LEFT | TOP_RIGHT | BOTTOM_LEFT | BOTTOM_RIGHT | ABSOLUTE] = js.undefined
   
-  var navigatorRotate: js.UndefOr[Boolean] = js.native
+  var navigatorRotate: js.UndefOr[Boolean] = js.undefined
   
-  var navigatorSizeRatio: js.UndefOr[Double] = js.native
+  var navigatorSizeRatio: js.UndefOr[Double] = js.undefined
   
-  var navigatorTop: js.UndefOr[Double | String] = js.native
+  var navigatorTop: js.UndefOr[Double | String] = js.undefined
   
-  var navigatorWidth: js.UndefOr[Double | String] = js.native
+  var navigatorWidth: js.UndefOr[Double | String] = js.undefined
   
-  var nextButton: js.UndefOr[String] = js.native
+  var nextButton: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var overlays: js.UndefOr[js.Array[_]] = js.native
+  var overlays: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var panHorizontal: js.UndefOr[Boolean] = js.native
+  var panHorizontal: js.UndefOr[Boolean] = js.undefined
   
-  var panVertical: js.UndefOr[Boolean] = js.native
+  var panVertical: js.UndefOr[Boolean] = js.undefined
   
-  var pixelsPerArrowPress: js.UndefOr[Double] = js.native
+  var pixelsPerArrowPress: js.UndefOr[Double] = js.undefined
   
-  var pixelsPerWheelLine: js.UndefOr[Double] = js.native
+  var pixelsPerWheelLine: js.UndefOr[Double] = js.undefined
   
-  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.native
+  var placeholderFillStyle: js.UndefOr[String | CanvasGradient | CanvasPattern] = js.undefined
   
-  var prefixUrl: js.UndefOr[String] = js.native
+  var prefixUrl: js.UndefOr[String] = js.undefined
   
-  var preload: js.UndefOr[Boolean] = js.native
+  var preload: js.UndefOr[Boolean] = js.undefined
   
-  var preserveImageSizeOnResize: js.UndefOr[Boolean] = js.native
+  var preserveImageSizeOnResize: js.UndefOr[Boolean] = js.undefined
   
-  var preserveOverlays: js.UndefOr[Boolean] = js.native
+  var preserveOverlays: js.UndefOr[Boolean] = js.undefined
   
-  var preserveViewport: js.UndefOr[Boolean] = js.native
+  var preserveViewport: js.UndefOr[Boolean] = js.undefined
   
-  var previousButton: js.UndefOr[String] = js.native
+  var previousButton: js.UndefOr[String] = js.undefined
   
-  var referenceStripElement: js.UndefOr[HTMLElement] = js.native
+  var referenceStripElement: js.UndefOr[HTMLElement] = js.undefined
   
-  var referenceStripHeight: js.UndefOr[Double] = js.native
+  var referenceStripHeight: js.UndefOr[Double] = js.undefined
   
-  var referenceStripPosition: js.UndefOr[String] = js.native
+  var referenceStripPosition: js.UndefOr[String] = js.undefined
   
-  var referenceStripScroll: js.UndefOr[String] = js.native
+  var referenceStripScroll: js.UndefOr[String] = js.undefined
   
-  var referenceStripSizeRatio: js.UndefOr[Double] = js.native
+  var referenceStripSizeRatio: js.UndefOr[Double] = js.undefined
   
-  var referenceStripWidth: js.UndefOr[Double] = js.native
+  var referenceStripWidth: js.UndefOr[Double] = js.undefined
   
-  var rotateLeftButton: js.UndefOr[String] = js.native
+  var rotateLeftButton: js.UndefOr[String] = js.undefined
   
-  var rotateRightButton: js.UndefOr[String] = js.native
+  var rotateRightButton: js.UndefOr[String] = js.undefined
   
-  var rotationIncrement: js.UndefOr[Double] = js.native
+  var rotationIncrement: js.UndefOr[Double] = js.undefined
   
-  var sequenceControlAnchor: js.UndefOr[ControlAnchor] = js.native
+  var sequenceControlAnchor: js.UndefOr[ControlAnchor] = js.undefined
   
-  var sequenceMode: js.UndefOr[Boolean] = js.native
+  var sequenceMode: js.UndefOr[Boolean] = js.undefined
   
-  var showFlipControl: js.UndefOr[Boolean] = js.native
+  var showFlipControl: js.UndefOr[Boolean] = js.undefined
   
-  var showFullPageControl: js.UndefOr[Boolean] = js.native
+  var showFullPageControl: js.UndefOr[Boolean] = js.undefined
   
-  var showHomeControl: js.UndefOr[Boolean] = js.native
+  var showHomeControl: js.UndefOr[Boolean] = js.undefined
   
-  var showNavigationControl: js.UndefOr[Boolean] = js.native
+  var showNavigationControl: js.UndefOr[Boolean] = js.undefined
   
-  var showNavigator: js.UndefOr[Boolean] = js.native
+  var showNavigator: js.UndefOr[Boolean] = js.undefined
   
-  var showReferenceStrip: js.UndefOr[Boolean] = js.native
+  var showReferenceStrip: js.UndefOr[Boolean] = js.undefined
   
-  var showRotationControl: js.UndefOr[Boolean] = js.native
+  var showRotationControl: js.UndefOr[Boolean] = js.undefined
   
-  var showSequenceControl: js.UndefOr[Boolean] = js.native
+  var showSequenceControl: js.UndefOr[Boolean] = js.undefined
   
-  var showZoomControl: js.UndefOr[Boolean] = js.native
+  var showZoomControl: js.UndefOr[Boolean] = js.undefined
   
-  var smoothTileEdgesMinZoom: js.UndefOr[Double] = js.native
+  var smoothTileEdgesMinZoom: js.UndefOr[Double] = js.undefined
   
-  var springStiffness: js.UndefOr[Double] = js.native
+  var springStiffness: js.UndefOr[Double] = js.undefined
   
-  var tabIndex: js.UndefOr[Double] = js.native
+  var tabIndex: js.UndefOr[Double] = js.undefined
   
-  var tileSources: js.UndefOr[String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image] = js.native
+  var tileSources: js.UndefOr[String | (js.Array[String | TileSource]) | TileSourceOptions | Levels | Image] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var useCanvas: js.UndefOr[Boolean] = js.native
+  var useCanvas: js.UndefOr[Boolean] = js.undefined
   
-  var viewportMargins: js.UndefOr[js.Object] = js.native
+  var viewportMargins: js.UndefOr[js.Object] = js.undefined
   
-  var visibilityRatio: js.UndefOr[Double] = js.native
+  var visibilityRatio: js.UndefOr[Double] = js.undefined
   
-  var wrapHorizontal: js.UndefOr[Boolean] = js.native
+  var wrapHorizontal: js.UndefOr[Boolean] = js.undefined
   
-  var wrapVertical: js.UndefOr[Boolean] = js.native
+  var wrapVertical: js.UndefOr[Boolean] = js.undefined
   
-  var zoomInButton: js.UndefOr[String] = js.native
+  var zoomInButton: js.UndefOr[String] = js.undefined
   
-  var zoomOutButton: js.UndefOr[String] = js.native
+  var zoomOutButton: js.UndefOr[String] = js.undefined
   
-  var zoomPerClick: js.UndefOr[Double] = js.native
+  var zoomPerClick: js.UndefOr[Double] = js.undefined
   
-  var zoomPerScroll: js.UndefOr[Double] = js.native
+  var zoomPerScroll: js.UndefOr[Double] = js.undefined
   
-  var zoomPerSecond: js.UndefOr[Double] = js.native
+  var zoomPerSecond: js.UndefOr[Double] = js.undefined
 }
 object Options {
   
@@ -711,7 +709,7 @@ object Options {
     def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
     
     @scala.inline
-    def setOverlays(value: js.Array[_]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
+    def setOverlays(value: js.Array[js.Any]): Self = StObject.set(x, "overlays", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOverlaysUndefined: Self = StObject.set(x, "overlays", js.undefined)

@@ -3,21 +3,19 @@ package typings.octokitPluginPaginateRest.anon
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
-  var done: js.UndefOr[scala.Nothing] = js.native
+  var done: Unit
   
-  var value: OctokitResponse[_] = js.native
+  var value: OctokitResponse[js.Any]
 }
 object Value {
   
   @scala.inline
-  def apply(value: OctokitResponse[_]): Value = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+  def apply(done: Unit, value: OctokitResponse[js.Any]): Value = {
+    val __obj = js.Dynamic.literal(done = done.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.asInstanceOf[Value]
   }
   
@@ -25,6 +23,9 @@ object Value {
   implicit class ValueMutableBuilder[Self <: Value] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setValue(value: OctokitResponse[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setDone(value: Unit): Self = StObject.set(x, "done", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setValue(value: OctokitResponse[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

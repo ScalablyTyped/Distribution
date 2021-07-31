@@ -2,21 +2,19 @@ package typings.sharepoint.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseType extends StObject {
   
-  var BaseType: Double = js.native
+  var BaseType: Double
   
-  var DefaultItemOpen: Double = js.native
+  var DefaultItemOpen: Double
   
-  var Direction: String = js.native
+  var Direction: String
   
-  var EnableVesioning: Boolean = js.native
+  var EnableVesioning: Boolean
   
-  var Id: String = js.native
+  var Id: String
 }
 object BaseType {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CampaignDateRangeKpiResponse extends StObject {
   
   /**
     * The unique identifier for the application that the metric applies to.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The unique identifier for the campaign that the metric applies to.
     */
-  var CampaignId: string = js.native
+  var CampaignId: string
   
   /**
     * The last date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
-  var EndTime: timestampIso8601 = js.native
+  var EndTime: timestampIso8601
   
   /**
     * The name of the metric, also referred to as a key performance indicator (KPI), that the data was retrieved for. This value describes the associated metric and consists of two or more terms, which are comprised of lowercase alphanumeric characters, separated by a hyphen. For a list of possible values, see the Amazon Pinpoint Developer Guide.
     */
-  var KpiName: string = js.native
+  var KpiName: string
   
   /**
     * An array of objects that contains the results of the query. Each object contains the value for the metric and metadata about that value.
     */
-  var KpiResult: BaseKpiResult = js.native
+  var KpiResult: BaseKpiResult
   
   /**
     * The string to use in a subsequent request to get the next page of results in a paginated response. This value is null for the Campaign Metrics resource because the resource returns all results in a single page.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The first date and time of the date range that was used to filter the query results, in extended ISO 8601 format. The date range is inclusive.
     */
-  var StartTime: timestampIso8601 = js.native
+  var StartTime: timestampIso8601
 }
 object CampaignDateRangeKpiResponse {
   

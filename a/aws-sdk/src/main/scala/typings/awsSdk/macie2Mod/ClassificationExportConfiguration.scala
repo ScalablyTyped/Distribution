@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassificationExportConfiguration extends StObject {
   
   /**
     * The S3 bucket to store data classification results in, and the encryption settings to use when storing results in that bucket.
     */
-  var s3Destination: js.UndefOr[S3Destination] = js.native
+  var s3Destination: js.UndefOr[S3Destination] = js.undefined
 }
 object ClassificationExportConfiguration {
   

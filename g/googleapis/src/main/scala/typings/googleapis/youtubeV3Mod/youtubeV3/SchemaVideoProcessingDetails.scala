@@ -2,14 +2,12 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes processing status and progress and availability of some other
   * Video resource parts.
   */
-@js.native
 trait SchemaVideoProcessingDetails extends StObject {
   
   /**
@@ -18,20 +16,20 @@ trait SchemaVideoProcessingDetails extends StObject {
     * video. You can retrieve these suggestions by requesting the suggestions
     * part in your videos.list() request.
     */
-  var editorSuggestionsAvailability: js.UndefOr[String] = js.native
+  var editorSuggestionsAvailability: js.UndefOr[String] = js.undefined
   
   /**
     * This value indicates whether file details are available for the uploaded
     * video. You can retrieve a video&#39;s file details by requesting the
     * fileDetails part in your videos.list() request.
     */
-  var fileDetailsAvailability: js.UndefOr[String] = js.native
+  var fileDetailsAvailability: js.UndefOr[String] = js.undefined
   
   /**
     * The reason that YouTube failed to process the video. This property will
     * only have a value if the processingStatus property&#39;s value is failed.
     */
-  var processingFailureReason: js.UndefOr[String] = js.native
+  var processingFailureReason: js.UndefOr[String] = js.undefined
   
   /**
     * This value indicates whether the video processing engine has generated
@@ -40,20 +38,20 @@ trait SchemaVideoProcessingDetails extends StObject {
     * cause video processing problems. You can retrieve these suggestions by
     * requesting the suggestions part in your videos.list() request.
     */
-  var processingIssuesAvailability: js.UndefOr[String] = js.native
+  var processingIssuesAvailability: js.UndefOr[String] = js.undefined
   
   /**
     * The processingProgress object contains information about the progress
     * YouTube has made in processing the video. The values are really only
     * relevant if the video&#39;s processing status is processing.
     */
-  var processingProgress: js.UndefOr[SchemaVideoProcessingDetailsProcessingProgress] = js.native
+  var processingProgress: js.UndefOr[SchemaVideoProcessingDetailsProcessingProgress] = js.undefined
   
   /**
     * The video&#39;s processing status. This value indicates whether YouTube
     * was able to process the video or if the video is still being processed.
     */
-  var processingStatus: js.UndefOr[String] = js.native
+  var processingStatus: js.UndefOr[String] = js.undefined
   
   /**
     * This value indicates whether keyword (tag) suggestions are available for
@@ -61,13 +59,13 @@ trait SchemaVideoProcessingDetails extends StObject {
     * for other users to find the video. You can retrieve these suggestions by
     * requesting the suggestions part in your videos.list() request.
     */
-  var tagSuggestionsAvailability: js.UndefOr[String] = js.native
+  var tagSuggestionsAvailability: js.UndefOr[String] = js.undefined
   
   /**
     * This value indicates whether thumbnail images have been generated for the
     * video.
     */
-  var thumbnailsAvailability: js.UndefOr[String] = js.native
+  var thumbnailsAvailability: js.UndefOr[String] = js.undefined
 }
 object SchemaVideoProcessingDetails {
   

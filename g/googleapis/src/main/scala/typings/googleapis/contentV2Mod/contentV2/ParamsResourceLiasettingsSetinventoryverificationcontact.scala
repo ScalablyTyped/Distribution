@@ -6,49 +6,49 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceLiasettingsSetinventoryverificationcontact extends StandardParameters {
+trait ParamsResourceLiasettingsSetinventoryverificationcontact
+  extends StObject
+     with StandardParameters {
   
   /**
     * The ID of the account that manages the order. This cannot be a
     * multi-client account.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The email of the inventory verification contact.
     */
-  var contactEmail: js.UndefOr[String] = js.native
+  var contactEmail: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the inventory verification contact.
     */
-  var contactName: js.UndefOr[String] = js.native
+  var contactName: js.UndefOr[String] = js.undefined
   
   /**
     * The country for which inventory verification is requested.
     */
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
   /**
     * The language for which inventory verification is requested.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the managing account. If this parameter is not the same as
     * accountId, then this account must be a multi-client account and accountId
     * must be the ID of a sub-account of this account.
     */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceLiasettingsSetinventoryverificationcontact {
   

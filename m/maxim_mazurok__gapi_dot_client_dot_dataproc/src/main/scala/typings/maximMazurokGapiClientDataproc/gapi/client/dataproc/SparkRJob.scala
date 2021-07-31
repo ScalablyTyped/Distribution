@@ -3,29 +3,27 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SparkRJob extends StObject {
   
   /** Optional. HCFS URIs of archives to be extracted into the working directory of each executor. Supported file types: .jar, .tar, .tar.gz, .tgz, and .zip. */
-  var archiveUris: js.UndefOr[js.Array[String]] = js.native
+  var archiveUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The arguments to pass to the driver. Do not include arguments, such as --conf, that can be set as job properties, since a collision may occur that causes an incorrect job
     * submission.
     */
-  var args: js.UndefOr[js.Array[String]] = js.native
+  var args: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. HCFS URIs of files to be placed in the working directory of each executor. Useful for naively parallel tasks. */
-  var fileUris: js.UndefOr[js.Array[String]] = js.native
+  var fileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. The runtime log config for job execution. */
-  var loggingConfig: js.UndefOr[LoggingConfig] = js.native
+  var loggingConfig: js.UndefOr[LoggingConfig] = js.undefined
   
   /** Required. The HCFS URI of the main R file to use as the driver. Must be a .R file. */
-  var mainRFileUri: js.UndefOr[String] = js.native
+  var mainRFileUri: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. A mapping of property names to values, used to configure SparkR. Properties that conflict with values set by the Dataproc API may be overwritten. Can include properties
@@ -34,8 +32,8 @@ trait SparkRJob extends StObject {
   var properties: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkRJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkRJob & TopLevel[js.Any]
+  ] = js.undefined
 }
 object SparkRJob {
   
@@ -91,7 +89,7 @@ object SparkRJob {
     def setProperties(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkRJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.SparkRJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "properties", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -1,9 +1,13 @@
 package typings.scriptableIos.global
 
+import typings.scriptableIos.CalendarEvent.Attendees
+import typings.scriptableIos.scriptableIosStrings.busy
+import typings.scriptableIos.scriptableIosStrings.free
+import typings.scriptableIos.scriptableIosStrings.tentative
+import typings.scriptableIos.scriptableIosStrings.unavailable
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,8 +25,157 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see https://docs.scriptable.app/calendarevent/#-new-calendarevent
   */
 class CalendarEvent ()
-  extends typings.scriptableIos.CalendarEvent
+  extends StObject
+     with typings.scriptableIos.CalendarEvent {
+  
+  /**
+    * _Adds a recurrence rule._
+    *
+    * Recurrence rules specify when the event or reminder should be repeated. See the documentation of RecurrenceRule for more information on creating rules.
+    * @param recurrenceRule - Recurrence rule to add to the reminder.
+    * @see https://docs.scriptable.app/calendarevent/#-addrecurrencerule
+    */
+  /* CompleteClass */
+  override def addRecurrenceRule(recurrenceRule: typings.scriptableIos.RecurrenceRule): Unit = js.native
+  
+  /**
+    * _Attendees associated with the event._
+    *
+    * An array of objects on the following form:
+    *
+    *     {
+    *       "isCurrentUser": false,
+    *       "name": "John Appleseed",
+    *       "status": "accepted",
+    *       "type": "person",
+    *       "role": "required"
+    *     }
+    *
+    * Note that the property is read-only since iOS does not expose API to modify the attendees of an event.
+    * @see https://docs.scriptable.app/calendarevent/#attendees
+    */
+  /* CompleteClass */
+  var attendees: js.Array[Attendees] = js.native
+  
+  /**
+    * _Availability during the event._
+    *
+    * Indicates how the event should be treated for scheduling purposes. The following values are supported:
+    *
+    * *   busy
+    * *   free
+    * *   tentative
+    * *   unavailable
+    *
+    * Be aware that not all calendars support all of these availabilities and some calendars may not support availability at all. Use `Calendar.supportsAvailability()` to check if a
+    * calendar supports a specific availability.
+    * @see https://docs.scriptable.app/calendarevent/#availability
+    */
+  /* CompleteClass */
+  var availability: busy | free | tentative | unavailable = js.native
+  
+  /**
+    * _Calendar the event is stored in._
+    * @see https://docs.scriptable.app/calendarevent/#calendar
+    */
+  /* CompleteClass */
+  var calendar: typings.scriptableIos.Calendar = js.native
+  
+  /**
+    * _End date of event._
+    * @see https://docs.scriptable.app/calendarevent/#enddate
+    */
+  /* CompleteClass */
+  var endDate: Date = js.native
+  
+  /**
+    * _Identifier of event._
+    * @see https://docs.scriptable.app/calendarevent/#identifier
+    */
+  /* CompleteClass */
+  var identifier: String = js.native
+  
+  /**
+    * _Whether the event is an all-day event._
+    * @see https://docs.scriptable.app/calendarevent/#isallday
+    */
+  /* CompleteClass */
+  var isAllDay: Boolean = js.native
+  
+  /**
+    * _Location of event._
+    * @see https://docs.scriptable.app/calendarevent/#location
+    */
+  /* CompleteClass */
+  var location: String = js.native
+  
+  /**
+    * _Notes associated with event._
+    * @see https://docs.scriptable.app/calendarevent/#notes
+    */
+  /* CompleteClass */
+  var notes: String = js.native
+  
+  /**
+    * _Presents a view for editing the calendar event._
+    *
+    * The presented view supports editing various attributes of the event, including title, location, dates, recurrence and alerts.
+    * @see https://docs.scriptable.app/calendarevent/#-presentedit
+    */
+  /* CompleteClass */
+  override def presentEdit(): js.Promise[typings.scriptableIos.CalendarEvent] = js.native
+  
+  /**
+    * _Removes event from calendar._
+    * @see https://docs.scriptable.app/calendarevent/#-remove
+    */
+  /* CompleteClass */
+  override def remove(): Unit = js.native
+  
+  /**
+    * _Removes all recurrence rules._
+    * @see https://docs.scriptable.app/calendarevent/#-removeallrecurrencerules
+    */
+  /* CompleteClass */
+  override def removeAllRecurrenceRules(): Unit = js.native
+  
+  /**
+    * _Saves event._
+    *
+    * Saves changes to an event, inserting it into the calendar if it is newly created.
+    * @see https://docs.scriptable.app/calendarevent/#-save
+    */
+  /* CompleteClass */
+  override def save(): Unit = js.native
+  
+  /**
+    * _Start date of event._
+    * @see https://docs.scriptable.app/calendarevent/#startdate
+    */
+  /* CompleteClass */
+  var startDate: Date = js.native
+  
+  /**
+    * _Time zone of event._
+    *
+    * Geopolitical region identifier that identifies the time zone, e.g. "Europe/Copenhagen", "America/New\_York" and "Asia/Tokyo".
+    * @see https://docs.scriptable.app/calendarevent/#timezone
+    */
+  /* CompleteClass */
+  var timeZone: String = js.native
+  
+  /**
+    * _Title of event._
+    * @see https://docs.scriptable.app/calendarevent/#title
+    */
+  /* CompleteClass */
+  var title: String = js.native
+}
 object CalendarEvent {
+  
+  @JSGlobal("CalendarEvent")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * _Events that occurs between two dates._
@@ -32,12 +185,10 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#between
     */
   /* static member */
-  @JSGlobal("CalendarEvent.between")
-  @js.native
-  def between(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
-  @JSGlobal("CalendarEvent.between")
-  @js.native
-  def between(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
+  @scala.inline
+  def between(startDate: Date, endDate: Date): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  @scala.inline
+  def between(startDate: Date, endDate: Date, calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = (^.asInstanceOf[js.Dynamic].applyDynamic("between")(startDate.asInstanceOf[js.Any], endDate.asInstanceOf[js.Any], calendars.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events that occurred last week._
@@ -45,12 +196,10 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#lastweek
     */
   /* static member */
-  @JSGlobal("CalendarEvent.lastWeek")
-  @js.native
-  def lastWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
-  @JSGlobal("CalendarEvent.lastWeek")
-  @js.native
-  def lastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
+  @scala.inline
+  def lastWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  @scala.inline
+  def lastWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events that occur next week._
@@ -58,12 +207,10 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#nextweek
     */
   /* static member */
-  @JSGlobal("CalendarEvent.nextWeek")
-  @js.native
-  def nextWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
-  @JSGlobal("CalendarEvent.nextWeek")
-  @js.native
-  def nextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
+  @scala.inline
+  def nextWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  @scala.inline
+  def nextWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("nextWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Presents a view for creating a calendar event._
@@ -72,9 +219,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#presentcreate
     */
   /* static member */
-  @JSGlobal("CalendarEvent.presentCreate")
-  @js.native
-  def presentCreate(): js.Promise[typings.scriptableIos.CalendarEvent] = js.native
+  @scala.inline
+  def presentCreate(): js.Promise[typings.scriptableIos.CalendarEvent] = ^.asInstanceOf[js.Dynamic].applyDynamic("presentCreate")().asInstanceOf[js.Promise[typings.scriptableIos.CalendarEvent]]
   
   /**
     * _Events that occur this week._
@@ -82,12 +228,10 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#thisweek
     */
   /* static member */
-  @JSGlobal("CalendarEvent.thisWeek")
-  @js.native
-  def thisWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
-  @JSGlobal("CalendarEvent.thisWeek")
-  @js.native
-  def thisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
+  @scala.inline
+  def thisWeek(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("thisWeek")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  @scala.inline
+  def thisWeek(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("thisWeek")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events occurring today._
@@ -95,12 +239,10 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#today
     */
   /* static member */
-  @JSGlobal("CalendarEvent.today")
-  @js.native
-  def today(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
-  @JSGlobal("CalendarEvent.today")
-  @js.native
-  def today(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
+  @scala.inline
+  def today(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("today")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  @scala.inline
+  def today(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("today")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events occurring tomorrow._
@@ -108,12 +250,10 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#tomorrow
     */
   /* static member */
-  @JSGlobal("CalendarEvent.tomorrow")
-  @js.native
-  def tomorrow(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
-  @JSGlobal("CalendarEvent.tomorrow")
-  @js.native
-  def tomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
+  @scala.inline
+  def tomorrow(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tomorrow")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  @scala.inline
+  def tomorrow(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("tomorrow")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
   
   /**
     * _Events that occurred yesterday._
@@ -121,10 +261,8 @@ object CalendarEvent {
     * @see https://docs.scriptable.app/calendarevent/#yesterday
     */
   /* static member */
-  @JSGlobal("CalendarEvent.yesterday")
-  @js.native
-  def yesterday(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
-  @JSGlobal("CalendarEvent.yesterday")
-  @js.native
-  def yesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = js.native
+  @scala.inline
+  def yesterday(): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("yesterday")().asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
+  @scala.inline
+  def yesterday(calendars: js.Array[typings.scriptableIos.Calendar]): js.Promise[js.Array[typings.scriptableIos.CalendarEvent]] = ^.asInstanceOf[js.Dynamic].applyDynamic("yesterday")(calendars.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[typings.scriptableIos.CalendarEvent]]]
 }

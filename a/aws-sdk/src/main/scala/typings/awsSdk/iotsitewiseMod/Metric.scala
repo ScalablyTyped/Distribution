@@ -2,26 +2,24 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metric extends StObject {
   
   /**
     * The mathematical expression that defines the metric aggregation function. You can specify up to 10 variables per expression. You can specify up to 10 functions per expression.  For more information, see Quotas in the AWS IoT SiteWise User Guide.
     */
-  var expression: Expression = js.native
+  var expression: Expression
   
   /**
     * The list of variables used in the expression.
     */
-  var variables: ExpressionVariables = js.native
+  var variables: ExpressionVariables
   
   /**
     * The window (time interval) over which AWS IoT SiteWise computes the metric's aggregation expression. AWS IoT SiteWise computes one data point per window.
     */
-  var window: MetricWindow = js.native
+  var window: MetricWindow
 }
 object Metric {
   

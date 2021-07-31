@@ -2,30 +2,29 @@ package typings.antd
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object localeMod {
   
-  @JSImport("antd/lib/modal/locale", "changeConfirmLocale")
+  @JSImport("antd/lib/modal/locale", JSImport.Namespace)
   @js.native
-  def changeConfirmLocale(): Unit = js.native
-  @JSImport("antd/lib/modal/locale", "changeConfirmLocale")
-  @js.native
-  def changeConfirmLocale(newLocale: ModalLocale): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("antd/lib/modal/locale", "getConfirmLocale")
-  @js.native
-  def getConfirmLocale(): ModalLocale = js.native
+  @scala.inline
+  def changeConfirmLocale(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("changeConfirmLocale")().asInstanceOf[Unit]
+  @scala.inline
+  def changeConfirmLocale(newLocale: ModalLocale): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("changeConfirmLocale")(newLocale.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
+  @scala.inline
+  def getConfirmLocale(): ModalLocale = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfirmLocale")().asInstanceOf[ModalLocale]
+  
   trait ModalLocale extends StObject {
     
-    var cancelText: String = js.native
+    var cancelText: String
     
-    var justOkText: String = js.native
+    var justOkText: String
     
-    var okText: String = js.native
+    var okText: String
   }
   object ModalLocale {
     

@@ -3,7 +3,6 @@ package typings.xrm.Xrm
 import typings.xrm.Xrm.Async.PromiseLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Execute and ExecuteMultiple are only available when online, not offline.
   */
 @js.native
-trait WebApiOnline extends WebApiOffline {
+trait WebApiOnline
+  extends StObject
+     with WebApiOffline {
   
   /**
     * Execute a single action, function, or CRUD operation.
@@ -53,5 +54,5 @@ trait WebApiOnline extends WebApiOffline {
     *        * In this case, all the request objects specified in the change set will get executed in a
     *        transaction.
     */
-  def executeMultiple(request: js.Array[_]): PromiseLike[js.Array[ExecuteResponse]] = js.native
+  def executeMultiple(request: js.Array[js.Any]): PromiseLike[js.Array[ExecuteResponse]] = js.native
 }

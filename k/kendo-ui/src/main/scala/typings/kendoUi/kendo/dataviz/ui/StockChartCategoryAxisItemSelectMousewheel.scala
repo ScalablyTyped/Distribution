@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StockChartCategoryAxisItemSelectMousewheel extends StObject {
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var zoom: js.UndefOr[String] = js.native
+  var zoom: js.UndefOr[String] = js.undefined
 }
 object StockChartCategoryAxisItemSelectMousewheel {
   

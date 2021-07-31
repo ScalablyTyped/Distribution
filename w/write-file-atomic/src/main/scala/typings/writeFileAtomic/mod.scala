@@ -6,100 +6,84 @@ import typings.std.Error
 import typings.writeFileAtomic.anon.Gid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: String): js.Promise[Unit] = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: String, options: BufferEncoding): js.Promise[Unit] = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(filename: String, data: String): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(filename: String, data: String, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filename: String, data: String, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     filename: String,
     data: String,
     options: BufferEncoding,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: String, options: Options): js.Promise[Unit] = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filename: String, data: String, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     filename: String,
     data: String,
     options: Options,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: Buffer): js.Promise[Unit] = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: Buffer, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: Buffer, options: BufferEncoding): js.Promise[Unit] = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filename: String, data: Buffer): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def apply(filename: String, data: Buffer, callback: js.Function1[/* error */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filename: String, data: Buffer, options: BufferEncoding): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     filename: String,
     data: Buffer,
     options: BufferEncoding,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
-  def apply(filename: String, data: Buffer, options: Options): js.Promise[Unit] = js.native
-  @JSImport("write-file-atomic", JSImport.Namespace)
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(filename: String, data: Buffer, options: Options): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def apply(
     filename: String,
     data: Buffer,
     options: Options,
     callback: js.Function1[/* error */ js.UndefOr[Error], Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("write-file-atomic", "sync")
+  @JSImport("write-file-atomic", JSImport.Namespace)
   @js.native
-  def sync(filename: String, data: String): Unit = js.native
-  @JSImport("write-file-atomic", "sync")
-  @js.native
-  def sync(filename: String, data: String, options: BufferEncoding): Unit = js.native
-  @JSImport("write-file-atomic", "sync")
-  @js.native
-  def sync(filename: String, data: String, options: Options): Unit = js.native
-  @JSImport("write-file-atomic", "sync")
-  @js.native
-  def sync(filename: String, data: Buffer): Unit = js.native
-  @JSImport("write-file-atomic", "sync")
-  @js.native
-  def sync(filename: String, data: Buffer, options: BufferEncoding): Unit = js.native
-  @JSImport("write-file-atomic", "sync")
-  @js.native
-  def sync(filename: String, data: Buffer, options: Options): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def sync(filename: String, data: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(filename: String, data: String, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(filename: String, data: String, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(filename: String, data: Buffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(filename: String, data: Buffer, options: BufferEncoding): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def sync(filename: String, data: Buffer, options: Options): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var chown: js.UndefOr[Gid] = js.native
+    var chown: js.UndefOr[Gid] = js.undefined
     
     /**
       * @default 'utf8'
       */
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
-    var fsync: js.UndefOr[Boolean] = js.native
+    var fsync: js.UndefOr[Boolean] = js.undefined
     
-    var mode: js.UndefOr[Double] = js.native
+    var mode: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

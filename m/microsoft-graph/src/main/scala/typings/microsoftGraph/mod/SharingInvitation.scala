@@ -2,25 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharingInvitation extends StObject {
   
   // The email address provided for the recipient of the sharing invitation. Read-only.
-  var email: js.UndefOr[NullableOption[String]] = js.native
+  var email: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Provides information about who sent the invitation that created this permission, if that information is available.
     * Read-only.
     */
-  var invitedBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var invitedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
-  var redeemedBy: js.UndefOr[NullableOption[String]] = js.native
+  var redeemedBy: js.UndefOr[NullableOption[String]] = js.undefined
   
   // If true the recipient of the invitation needs to sign in in order to access the shared item. Read-only.
-  var signInRequired: js.UndefOr[NullableOption[Boolean]] = js.native
+  var signInRequired: js.UndefOr[NullableOption[Boolean]] = js.undefined
 }
 object SharingInvitation {
   

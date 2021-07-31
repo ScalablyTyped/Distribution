@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DDS_ {
@@ -16,16 +15,24 @@ object DDS_ {
   object DurabilityKind extends StObject {
     
     @js.native
-    sealed trait Persistent extends DurabilityKind
+    sealed trait Persistent
+      extends StObject
+         with DurabilityKind
     
     @js.native
-    sealed trait Transient extends DurabilityKind
+    sealed trait Transient
+      extends StObject
+         with DurabilityKind
     
     @js.native
-    sealed trait TransientLocal extends DurabilityKind
+    sealed trait TransientLocal
+      extends StObject
+         with DurabilityKind
     
     @js.native
-    sealed trait Volatile extends DurabilityKind
+    sealed trait Volatile
+      extends StObject
+         with DurabilityKind
   }
   
   @js.native
@@ -35,10 +42,14 @@ object DDS_ {
   object HistoryKind extends StObject {
     
     @js.native
-    sealed trait KeepAll extends HistoryKind
+    sealed trait KeepAll
+      extends StObject
+         with HistoryKind
     
     @js.native
-    sealed trait KeepLast extends HistoryKind
+    sealed trait KeepLast
+      extends StObject
+         with HistoryKind
   }
   
   @js.native
@@ -48,10 +59,14 @@ object DDS_ {
   object ReliabilityKind extends StObject {
     
     @js.native
-    sealed trait BestEffort extends ReliabilityKind
+    sealed trait BestEffort
+      extends StObject
+         with ReliabilityKind
     
     @js.native
-    sealed trait Reliable extends ReliabilityKind
+    sealed trait Reliable
+      extends StObject
+         with ReliabilityKind
   }
   
   @js.native
@@ -78,7 +93,7 @@ object DDS_ {
       * @param f - the predicate to be applied to filter the cache values
       * @returns An array holding the filtered values
       */
-    def filter(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[_] = js.native
+    def filter(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[js.Any] = js.native
     
     /**
       * Returns the list of elements in the cache that doesn't satisfy the predicate `f`.
@@ -86,7 +101,7 @@ object DDS_ {
       * @returns An array holding the filtered values
       * @see DataCache#filter
       */
-    def filterNot(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[_] = js.native
+    def filterNot(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[js.Any] = js.native
     
     /**
       * folds the element of the cache using `z` as the `zero` element and
@@ -95,7 +110,7 @@ object DDS_ {
       * @param z - initial value
       * @param {function} f - reduce function
       */
-    def fold(z: js.Any, f: js.Function1[/* data */ js.Any, _]): Unit = js.native
+    def fold(z: js.Any, f: js.Function1[/* data */ js.Any, js.Any]): Unit = js.native
     
     /**
       * Execute the function `f` for each element of the cache.
@@ -104,7 +119,7 @@ object DDS_ {
       * @param f - the function to be applied
       * @returns results of the function execution
       */
-    def forEach(f: js.Function1[/* data */ js.Any, _]): js.Array[_] = js.native
+    def forEach(f: js.Function1[/* data */ js.Any, js.Any]): js.Array[js.Any] = js.native
     
     /**
       * Same as forEach but applied, for each key, only to the first `n` samples of the cache
@@ -112,7 +127,7 @@ object DDS_ {
       * @param f - the function to be applied
       * @param n - samples set size
       */
-    def forEachN(f: js.Function1[/* data */ js.Any, _], n: Double): js.Array[_] = js.native
+    def forEachN(f: js.Function1[/* data */ js.Any, js.Any], n: Double): js.Array[js.Any] = js.native
     
     /**
       * Return `coffez.Some(v)` if there is an element in the cache corresponding to the
@@ -129,7 +144,7 @@ object DDS_ {
       * @param k - key
       * @param f - the function to apply
       */
-    def getOrElse(k: js.Any, f: js.Function1[/* data */ js.Any, _]): js.Any = js.native
+    def getOrElse(k: js.Any, f: js.Function1[/* data */ js.Any, js.Any]): js.Any = js.native
     
     /**
       * Returns a cache that is the result of applying `f` to each element of the cache.
@@ -137,14 +152,14 @@ object DDS_ {
       * @param f - the function to be applied
       * @returns A cache holding the results of the function execution
       */
-    def map(f: js.Function1[/* data */ js.Any, _]): DataCache = js.native
+    def map(f: js.Function1[/* data */ js.Any, js.Any]): DataCache = js.native
     
     /**
       * Returns the values included in the cache as an array.
       *
       * @return All the cache values
       */
-    def read(): js.Array[_] = js.native
+    def read(): js.Array[js.Any] = js.native
     
     /**
       * Returns the last value of the cache in an array.
@@ -165,7 +180,7 @@ object DDS_ {
       *
       * @return All the cache values
       */
-    def takeAll(): js.Array[_] = js.native
+    def takeAll(): js.Array[js.Any] = js.native
     
     /**
       * Takes elements from the cache up to when the predicate `f` is satisfied
@@ -173,7 +188,7 @@ object DDS_ {
       * @param f - the predicate
       * @return taken cache values
       */
-    def takeWithFilter(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[_] = js.native
+    def takeWithFilter(f: js.Function1[/* data */ js.Any, Boolean]): js.Array[js.Any] = js.native
     
     /**
       * Write the element `data` with key `k` into the cache.
@@ -185,7 +200,6 @@ object DDS_ {
     def write(k: js.Any, data: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait DataReader extends StObject {
     
     /**
@@ -194,20 +208,20 @@ object DDS_ {
       * @param l - listener code
       * @returns listener handle
       */
-    def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double = js.native
+    def addListener(l: js.Function1[/* msg */ js.Any, Unit]): Double
     
     /**
       * closes the DataReader
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * removes a listener from this data reader.
       * @param idx - listener id
       */
-    def removeListener(idx: Double): Unit = js.native
+    def removeListener(idx: Double): Unit
     
-    def resetStats(): Unit = js.native
+    def resetStats(): Unit
   }
   object DataReader {
     
@@ -239,19 +253,18 @@ object DDS_ {
     }
   }
   
-  @js.native
   trait DataWriter extends StObject {
     
     /**
       * Closes the DataWriter
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Writes one or more samples.
       * @param ds - data sample
       */
-    def write(ds: js.Any*): Unit = js.native
+    def write(ds: js.Any*): Unit
   }
   object DataWriter {
     
@@ -276,7 +289,8 @@ object DDS_ {
   
   @js.native
   trait EntityQos
-    extends /**
+    extends StObject
+       with /**
     * Creates any of the DDS entities quality of service, including DataReaderQos and DataWriterQos.
     *
     * @param policies - list of policies for the Qos entity
@@ -296,14 +310,14 @@ object DDS_ {
   /**
     * Base class for all policies
     */
-  @js.native
   trait Policy extends StObject
   
   type Reliability = Policy
   
   @js.native
   trait Runtime
-    extends /**
+    extends StObject
+       with /**
     * Constructs a DDS Runtime object
     *
     * maintains the connection with the server, re-establish the connection
@@ -366,18 +380,17 @@ object DDS_ {
     def registerTopic(t: Topic): Unit = js.native
   }
   
-  @js.native
   trait Topic extends StObject {
     
     /**
       * Called when topic gets registered in the runtime
       */
-    def onregistered(): Unit = js.native
+    def onregistered(): Unit
     
     /**
       * Called when topic gets unregistered in the runtime
       */
-    def onunregistered(): Unit = js.native
+    def onunregistered(): Unit
   }
   object Topic {
     

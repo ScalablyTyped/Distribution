@@ -2,17 +2,16 @@ package typings.nodeSass.mod.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Map
-  extends Value
-     with Enumerable {
+  extends StObject
+     with Enumerable
+     with Value {
   
-  def getKey(index: Double): Value = js.native
+  def getKey(index: Double): Value
   
-  def setKey(index: Double, key: Value): Unit = js.native
+  def setKey(index: Double, key: Value): Unit
 }
 object Map {
   

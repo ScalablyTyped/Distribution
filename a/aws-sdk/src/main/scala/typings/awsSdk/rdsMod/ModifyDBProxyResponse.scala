@@ -2,16 +2,14 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModifyDBProxyResponse extends StObject {
   
   /**
     * The DBProxy object representing the new settings for the proxy.
     */
-  var DBProxy: js.UndefOr[typings.awsSdk.rdsMod.DBProxy] = js.native
+  var DBProxy: js.UndefOr[typings.awsSdk.rdsMod.DBProxy] = js.undefined
 }
 object ModifyDBProxyResponse {
   

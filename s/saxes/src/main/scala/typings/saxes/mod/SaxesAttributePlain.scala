@@ -2,20 +2,20 @@ package typings.saxes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.saxes.mod.AttributeEventForOptions because Already inherited */ @js.native
-trait SaxesAttributePlain extends SaxesAttribute {
+trait SaxesAttributePlain
+  extends StObject
+     with AttributeEventForOptions[js.Any]
+     with SaxesAttribute {
   
   /**
     * The attribute's name.
     */
-  var name: String = js.native
+  var name: String
   
   /** The attribute's value. */
-  var value: String = js.native
+  var value: String
 }
 object SaxesAttributePlain {
   

@@ -2,26 +2,24 @@ package typings.recurlyRecurlyJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cvv extends StObject {
   
   /**
     * Placeholder content for the card verification value input.
     */
-  var cvv: js.UndefOr[String] = js.native
+  var cvv: js.UndefOr[String] = js.undefined
   
   /**
     * Placeholder content for the expiry input.
     */
-  var expiry: js.UndefOr[String] = js.native
+  var expiry: js.UndefOr[String] = js.undefined
   
   /**
     * Placeholder content (e.g. 'Card number', 'CVV')
     */
-  var number: js.UndefOr[String] = js.native
+  var number: js.UndefOr[String] = js.undefined
 }
 object Cvv {
   

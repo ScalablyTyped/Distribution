@@ -6,11 +6,12 @@ import typings.ejWebAll.ej.PivotAnalysis.FilterType
 import typings.ejWebAll.ej.PivotAnalysis.SortOrder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PivotChart extends Widget_ {
+trait PivotChart
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -37,7 +38,7 @@ trait PivotChart extends Widget_ {
   /** Returns the JSON records that are formed to render the control.
     * @returns {any[]}
     */
-  def getJSONRecords(): js.Array[_] = js.native
+  def getJSONRecords(): js.Array[js.Any] = js.native
   
   /** Returns the OlapReport string that is maintained along with the axis elements information.
     * @returns {string}
@@ -47,7 +48,7 @@ trait PivotChart extends Widget_ {
   /** Returns the PivotEngine that is formed to render the control.
     * @returns {any[]}
     */
-  def getPivotEngine(): js.Array[_] = js.native
+  def getPivotEngine(): js.Array[js.Any] = js.native
   
   @JSName("model")
   var model_PivotChart: Model = js.native
@@ -97,87 +98,120 @@ object PivotChart {
     
     ///To render an Area type PivotChart.
     @js.native
-    sealed trait Area extends ChartTypes
+    sealed trait Area
+      extends StObject
+         with ChartTypes
     
     ///To render a Bar type PivotChart.
     @js.native
-    sealed trait Bar extends ChartTypes
+    sealed trait Bar
+      extends StObject
+         with ChartTypes
     
     ///To render a Bubble type PivotChart.
     @js.native
-    sealed trait Bubble extends ChartTypes
+    sealed trait Bubble
+      extends StObject
+         with ChartTypes
     
     ///To render a Column type PivotChart.
     @js.native
-    sealed trait Column extends ChartTypes
+    sealed trait Column
+      extends StObject
+         with ChartTypes
     
     ///To render a Doughnut type PivotChart.
     @js.native
-    sealed trait Doughnut extends ChartTypes
+    sealed trait Doughnut
+      extends StObject
+         with ChartTypes
     
     ///To render a Funnel type PivotChart.
     @js.native
-    sealed trait Funnel extends ChartTypes
+    sealed trait Funnel
+      extends StObject
+         with ChartTypes
     
     ///To render a Line type PivotChart.
     @js.native
-    sealed trait Line extends ChartTypes
+    sealed trait Line
+      extends StObject
+         with ChartTypes
     
     ///To render a Pie type PivotChart.
     @js.native
-    sealed trait Pie extends ChartTypes
+    sealed trait Pie
+      extends StObject
+         with ChartTypes
     
     ///To render a Pyramid type PivotChart.
     @js.native
-    sealed trait Pyramid extends ChartTypes
+    sealed trait Pyramid
+      extends StObject
+         with ChartTypes
     
     ///To render a Scatter type PivotChart.
     @js.native
-    sealed trait Scatter extends ChartTypes
+    sealed trait Scatter
+      extends StObject
+         with ChartTypes
     
     ///To render a Spline type PivotChart.
     @js.native
-    sealed trait Spline extends ChartTypes
+    sealed trait Spline
+      extends StObject
+         with ChartTypes
     
     ///To render a SplineArea type PivotChart.
     @js.native
-    sealed trait SplineArea extends ChartTypes
+    sealed trait SplineArea
+      extends StObject
+         with ChartTypes
     
     ///To render a StackingArea type PivotChart.
     @js.native
-    sealed trait StackingArea extends ChartTypes
+    sealed trait StackingArea
+      extends StObject
+         with ChartTypes
     
     ///To render a StackingBar type PivotChart.
     @js.native
-    sealed trait StackingBar extends ChartTypes
+    sealed trait StackingBar
+      extends StObject
+         with ChartTypes
     
     ///To render a StackingColumn type PivotChart.
     @js.native
-    sealed trait StackingColumn extends ChartTypes
+    sealed trait StackingColumn
+      extends StObject
+         with ChartTypes
     
     ///To render a StepArea type PivotChart.
     @js.native
-    sealed trait StepArea extends ChartTypes
+    sealed trait StepArea
+      extends StObject
+         with ChartTypes
     
     ///To render a StepLine type PivotChart.
     @js.native
-    sealed trait StepLine extends ChartTypes
+    sealed trait StepLine
+      extends StObject
+         with ChartTypes
   }
   
-  @js.native
   trait AfterServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotChart control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object AfterServiceInvokeEventArgs {
     
@@ -210,16 +244,15 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait BeforeExportEventArgs extends StObject {
     
     /** contains the name of the exporting file.
       */
-    var fileName: js.UndefOr[String] = js.native
+    var fileName: js.UndefOr[String] = js.undefined
     
     /** contains the url of the service responsible for exporting.
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object BeforeExportEventArgs {
     
@@ -246,12 +279,11 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait BeforeSeriesRenderEventArgs extends StObject {
     
     /** series - Instance of the series which is about to get rendered
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeSeriesRenderEventArgs {
     
@@ -272,20 +304,19 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait BeforeServiceInvokeEventArgs extends StObject {
     
     /** returns the current action of PivotChart control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object BeforeServiceInvokeEventArgs {
     
@@ -318,13 +349,12 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait CommonSeriesOptions extends StObject {
     
     /** Allows you to set the specific chart type for the pivot chart widget.
       * @Default {ej.PivotChart.ChartTypes.Column}
       */
-    var `type`: js.UndefOr[ChartTypes | String] = js.native
+    var `type`: js.UndefOr[ChartTypes | String] = js.undefined
   }
   object CommonSeriesOptions {
     
@@ -345,53 +375,52 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSource extends StObject {
     
     /** In connection with the OLAP database, this property contains the database name as string to fetch the data from the given connection string.
       * @Default {â€œâ€}
       */
-    var catalog: js.UndefOr[String] = js.native
+    var catalog: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be displayed as series of the pivot chart.
       * @Default {[]}
       */
-    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.native
+    var columns: js.UndefOr[js.Array[DataSourceColumn]] = js.undefined
     
     /** Contains the respective cube name from the OLAP database as string type.
       * @Default {â€œâ€}
       */
-    var cube: js.UndefOr[String] = js.native
+    var cube: js.UndefOr[String] = js.undefined
     
     /** Provides the raw datasource for the pivot chart.
       * @Default {null}
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Lists out the items that supports filtering of values without displaying the members in UI of the pivot chart.
       * @Default {[]}
       */
-    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.native
+    var filters: js.UndefOr[js.Array[DataSourceFilter]] = js.undefined
     
     /** Sets the provider name for the pivot chart to identify whether the provider is SSAS or Mondrian.
       * @Default {ssas}
       */
-    var providerName: js.UndefOr[String] = js.native
+    var providerName: js.UndefOr[String] = js.undefined
     
     /** Lists out the items to be displayed as segments of the pivot chart.
       * @Default {[]}
       */
-    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.native
+    var rows: js.UndefOr[js.Array[DataSourceRow]] = js.undefined
     
     /** To set the datasource name to fetch the data from that.
       * @Default {â€œâ€}
       */
-    var sourceInfo: js.UndefOr[String] = js.native
+    var sourceInfo: js.UndefOr[String] = js.undefined
     
     /** Lists out the items support calculation in the pivot chart.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[DataSourceValue]] = js.native
+    var values: js.UndefOr[js.Array[DataSourceValue]] = js.undefined
   }
   object DataSource {
     
@@ -472,31 +501,30 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceColumn extends StObject {
     
     /** Allows you to set the display caption for the item.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows you to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceColumnsFilterItems] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
       * @Default {false}
       */
-    var isNamedSets: js.UndefOr[Boolean] = js.native
+    var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of field members.
       * @Default {ej.PivotAnalysis.SortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[SortOrder | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
   object DataSourceColumn {
     
@@ -541,18 +569,17 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceColumnsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceColumnsFilterItems {
     
@@ -572,7 +599,7 @@ object PivotChart {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -582,17 +609,16 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceFilter extends StObject {
     
     /** Allows you to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceFiltersFilterItems] = js.undefined
   }
   object DataSourceFilter {
     
@@ -619,18 +645,17 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceFiltersFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceFiltersFilterItems {
     
@@ -650,7 +675,7 @@ object PivotChart {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -660,31 +685,30 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceRow extends StObject {
     
     /** Allows you to set the display caption for the item.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows you to bind the item by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Applies filter to field members.
       * @Default {null}
       */
-    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.native
+    var filterItems: js.UndefOr[DataSourceRowsFilterItems] = js.undefined
     
     /** Allows you to indicate whether the added item is a named set or not.
       * @Default {false}
       */
-    var isNamedSets: js.UndefOr[Boolean] = js.native
+    var isNamedSets: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to set the sorting order of field members.
       * @Default {ej.PivotAnalysis.SortOrder.Ascending}
       */
-    var sortOrder: js.UndefOr[SortOrder | String] = js.native
+    var sortOrder: js.UndefOr[SortOrder | String] = js.undefined
   }
   object DataSourceRow {
     
@@ -729,18 +753,17 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceRowsFilterItems extends StObject {
     
     /** Sets the type of filter whether to include/exclude the mentioned values.
       * @Default {ej.PivotAnalysis.FilterType.Exclude}
       */
-    var filterType: js.UndefOr[FilterType | String] = js.native
+    var filterType: js.UndefOr[FilterType | String] = js.undefined
     
     /** Contains the collection of items to be included/excluded among the field members.
       * @Default {[]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
   }
   object DataSourceRowsFilterItems {
     
@@ -760,7 +783,7 @@ object PivotChart {
       def setFilterTypeUndefined: Self = StObject.set(x, "filterType", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -770,35 +793,34 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceValue extends StObject {
     
     /** Allows you to set the axis name to place the measures items.
       * @Default {rows}
       */
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the display caption for the item of the relational datasource.
       */
-    var fieldCaption: js.UndefOr[String] = js.native
+    var fieldCaption: js.UndefOr[String] = js.undefined
     
     /** Allows you to bind the item by using its unique name as field name for the relational datasource.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the formula to calculate the values for calculated members in the relational datasource.
       */
-    var formula: js.UndefOr[String] = js.native
+    var formula: js.UndefOr[String] = js.undefined
     
     /** Indicates whether the field is a calculated field with the relational datasource or not.
       * @Default {false}
       */
-    var isCalculatedField: js.UndefOr[Boolean] = js.native
+    var isCalculatedField: js.UndefOr[Boolean] = js.undefined
     
     /** Holds the list of unique names of measures to bind them from the OLAP cube.
       * @Default {[]}
       */
-    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.native
+    var measures: js.UndefOr[js.Array[DataSourceValuesMeasure]] = js.undefined
   }
   object DataSourceValue {
     
@@ -852,12 +874,11 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DataSourceValuesMeasure extends StObject {
     
     /** Allows you to bind the measure from the OLAP datasource by using its unique name as field name.
       */
-    var fieldName: js.UndefOr[String] = js.native
+    var fieldName: js.UndefOr[String] = js.undefined
   }
   object DataSourceValuesMeasure {
     
@@ -878,24 +899,23 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait DrillSuccessEventArgs extends StObject {
     
     /** returns the current instance of PivotChart.
       */
-    var chartObj: js.UndefOr[js.Any] = js.native
+    var chartObj: js.UndefOr[js.Any] = js.undefined
     
     /** returns the drill action of PivotChart.
       */
-    var drillAction: js.UndefOr[String] = js.native
+    var drillAction: js.UndefOr[String] = js.undefined
     
     /** contains the name of the member drilled.
       */
-    var drilledMember: js.UndefOr[String] = js.native
+    var drilledMember: js.UndefOr[String] = js.undefined
     
     /** returns the event object.
       */
-    var event: js.UndefOr[js.Any] = js.native
+    var event: js.UndefOr[js.Any] = js.undefined
   }
   object DrillSuccessEventArgs {
     
@@ -934,20 +954,19 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the current action of PivotChart control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -980,162 +999,161 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Triggers when it reaches the client-side after any AJAX request.
       */
-    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.native
+    var afterServiceInvoke: js.UndefOr[js.Function1[/* e */ AfterServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Sets the mode for the pivot chart widget to bind either the OLAP or relational datasource.
       * @Default {ej.Pivot.AnalysisMode.Pivot}
       */
-    var analysisMode: js.UndefOr[AnalysisMode | String] = js.native
+    var analysisMode: js.UndefOr[AnalysisMode | String] = js.undefined
     
     /** To override x axis for particular series, create an axis object by providing unique name by using name property and add it to axes array.
       * @Default {[]}
       */
-    var axes: js.UndefOr[js.Array[_]] = js.native
+    var axes: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Triggers before performing export operation in the pivot chart.
       */
-    var beforeExport: js.UndefOr[js.Function1[/* e */ BeforeExportEventArgs, Unit]] = js.native
+    var beforeExport: js.UndefOr[js.Function1[/* e */ BeforeExportEventArgs, Unit]] = js.undefined
     
     /** Triggers before rendering multiple series with multiple axes.
       */
-    var beforeSeriesRender: js.UndefOr[js.Function1[/* e */ BeforeSeriesRenderEventArgs, Unit]] = js.native
+    var beforeSeriesRender: js.UndefOr[js.Function1[/* e */ BeforeSeriesRenderEventArgs, Unit]] = js.undefined
     
     /** Triggers before any AJAX request is passed from the pivot chart to service methods.
       */
-    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.native
+    var beforeServiceInvoke: js.UndefOr[js.Function1[/* e */ BeforeServiceInvokeEventArgs, Unit]] = js.undefined
     
     /** Options available to configure the properties of entire series. You can also override the options for specific series by using the series collection.
       * @Default {{}}
       */
-    var commonSeriesOptions: js.UndefOr[CommonSeriesOptions] = js.native
+    var commonSeriesOptions: js.UndefOr[CommonSeriesOptions] = js.undefined
     
     /** Specifies the CSS class to the pivot chart for achieving the custom theme.
       * @Default {â€œâ€}
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Object is utilized to pass additional information between the client-end and the service-end while operating the control in the server mode.
       * @Default {{}}
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** Initializes the datasource for the pivot chart widget, when it functions completely on the client-side.
       * @Default {{}}
       */
-    var dataSource: js.UndefOr[DataSource] = js.native
+    var dataSource: js.UndefOr[DataSource] = js.undefined
     
     /** Triggers when performing drill up/down operation in the pivot chart control.
       */
-    var drillSuccess: js.UndefOr[js.Function1[/* e */ DrillSuccessEventArgs, Unit]] = js.native
+    var drillSuccess: js.UndefOr[js.Function1[/* e */ DrillSuccessEventArgs, Unit]] = js.undefined
     
     /** Allows you to enable the 3D view of the pivot chart.
       * @Default {false}
       */
-    var enable3D: js.UndefOr[Boolean] = js.native
+    var enable3D: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable/disable context menu options in the pivot chart.
       * @Default {false}
       */
-    var enableContextMenu: js.UndefOr[Boolean] = js.native
+    var enableContextMenu: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to render the complete pivot chart on drill operation, when expanding and collapsing members are shown in multi-level labels.
       * @Default {false}
       */
-    var enableMultiLevelLabels: js.UndefOr[Boolean] = js.native
+    var enableMultiLevelLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to view the pivot chart from right to left.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable &quot;withCredentials&quot; property inside XMLHttpRequest object for CORS(Cross-Origin Resource Sharing) request.
       * @Default {false}
       */
-    var enableXHRCredentials: js.UndefOr[Boolean] = js.native
+    var enableXHRCredentials: js.UndefOr[Boolean] = js.undefined
     
     /** Allows you to enable the responsiveness of pivot chart in the browser layout.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** You can customize the legend items and their labels.
       * @Default {{}}
       */
-    var legend: js.UndefOr[js.Any] = js.native
+    var legend: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers when the pivot chart starts to render.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Allows you to set the localized language for the widget.
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Sets the mode for the pivot chart widget to bind the data source either in the server-side or client-side.
       * @Default {ej.Pivot.OperationalMode.ClientMode}
       */
-    var operationalMode: js.UndefOr[OperationalMode | String] = js.native
+    var operationalMode: js.UndefOr[OperationalMode | String] = js.undefined
     
     /** This is a horizontal axis that contains options to configure the axis and it is the primary x-axis for all series in the series array. To override x-axis for particular series,
       * create an axis object by providing a unique name by using the name property and add it to the axes array. Then, assign the name to the seriesâ€™s xAxisName property to link both
       * the axis and the series.
       * @Default {{}}
       */
-    var primaryXAxis: js.UndefOr[js.Any] = js.native
+    var primaryXAxis: js.UndefOr[js.Any] = js.undefined
     
     /** This is a vertical axis that contains options to configure the axis. This is the primary y-axis for all the series in the series array. To override y-axis for particular series,
       * create an axis object by providing a unique name by using the name property and add it to the axes array. Then, assign the name to the seriesâ€™s yAxisName property to link both
       * the axis and the series.
       * @Default {{}}
       */
-    var primaryYAxis: js.UndefOr[js.Any] = js.native
+    var primaryYAxis: js.UndefOr[js.Any] = js.undefined
     
     /** Triggers when the pivot chart widget completes all operations at client-side after the AJAX request.
       */
-    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Triggers when the error occurs on the AJAX request.
       */
-    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.native
+    var renderFailure: js.UndefOr[js.Function1[/* e */ RenderFailureEventArgs, Unit]] = js.undefined
     
     /** Triggers when the pivot chart successfully reaches the client-side after the AJAX request.
       */
-    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.native
+    var renderSuccess: js.UndefOr[js.Function1[/* e */ RenderSuccessEventArgs, Unit]] = js.undefined
     
     /** Allows you to rotate the angle of pivot chart in 3D view.
       * @Default {0}
       */
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
     /** Allows you to set the custom name for methods at service-end, when you are communicating on AJAX post.
       * @Default {{}}
       */
-    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.native
+    var serviceMethodSettings: js.UndefOr[ServiceMethodSettings] = js.undefined
     
     /** Options to customize the size of the pivot chart control.
       * @Default {{}}
       */
-    var size: js.UndefOr[js.Any] = js.native
+    var size: js.UndefOr[js.Any] = js.undefined
     
     /** Options for customizing the title of PivotChart.
       */
-    var title: js.UndefOr[Title] = js.native
+    var title: js.UndefOr[Title] = js.undefined
     
     /** Connects the service by using the specified URL for any server updates while operating the control in the server mode.
       * @Default {â€œâ€}
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /** Options for enabling the zooming feature of the pivot chart.
       * @Default {{}}
       */
-    var zooming: js.UndefOr[Zooming] = js.native
+    var zooming: js.UndefOr[Zooming] = js.undefined
   }
   object Model {
     
@@ -1161,7 +1179,7 @@ object PivotChart {
       def setAnalysisModeUndefined: Self = StObject.set(x, "analysisMode", js.undefined)
       
       @scala.inline
-      def setAxes(value: js.Array[_]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
+      def setAxes(value: js.Array[js.Any]): Self = StObject.set(x, "axes", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAxesUndefined: Self = StObject.set(x, "axes", js.undefined)
@@ -1345,20 +1363,19 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait RenderCompleteEventArgs extends StObject {
     
     /** returns the current action of PivotChart control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -1391,24 +1408,23 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait RenderFailureEventArgs extends StObject {
     
     /** returns the current action of PivotChart control.
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** returns the custom object bound with PivotChart control.
       */
-    var customObject: js.UndefOr[js.Any] = js.native
+    var customObject: js.UndefOr[js.Any] = js.undefined
     
     /** returns the HTML element of PivotChart control.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the error stack trace of the original exception.
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object RenderFailureEventArgs {
     
@@ -1447,12 +1463,11 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait RenderSuccessEventArgs extends StObject {
     
     /** returns the current instance of PivotChart.
       */
-    var args: js.UndefOr[js.Any] = js.native
+    var args: js.UndefOr[js.Any] = js.undefined
   }
   object RenderSuccessEventArgs {
     
@@ -1473,28 +1488,27 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait ServiceMethodSettings extends StObject {
     
     /** Allows you to set the custom name for the service method that is responsible for drilling up/down in the pivot chart.
       * @Default {DrillChart}
       */
-    var drillDown: js.UndefOr[String] = js.native
+    var drillDown: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method which is responsible for exporting the pivot chart.
       * @Default {Export}
       */
-    var exportPivotChart: js.UndefOr[String] = js.native
+    var exportPivotChart: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method which is responsible for initializing the pivot chart.
       * @Default {InitializeChart}
       */
-    var initialize: js.UndefOr[String] = js.native
+    var initialize: js.UndefOr[String] = js.undefined
     
     /** Allows you to set the custom name for the service method which is responsible for navigating between pages in the paged pivot chart.
       * @Default {Paging}
       */
-    var paging: js.UndefOr[String] = js.native
+    var paging: js.UndefOr[String] = js.undefined
   }
   object ServiceMethodSettings {
     
@@ -1533,12 +1547,11 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait Title extends StObject {
     
     /** Text to be displayed in PivotChart title.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object Title {
     
@@ -1559,13 +1572,12 @@ object PivotChart {
     }
   }
   
-  @js.native
   trait Zooming extends StObject {
     
     /** Enables or disables the horizontal scrollbar.
       * @Default {false}
       */
-    var enableScrollbar: js.UndefOr[Boolean] = js.native
+    var enableScrollbar: js.UndefOr[Boolean] = js.undefined
   }
   object Zooming {
     

@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1p1alpha1ImportDataOperationMetadata extends StObject {
   
   /** Output only. Timestamp when import dataset request was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The name of imported dataset. "projects/∗/datasets/ *" */
-  var dataset: js.UndefOr[String] = js.native
+  var dataset: js.UndefOr[String] = js.undefined
   
   /** Output only. Partial failures encountered. E.g. single files that couldn't be read. Status details field will contain standard GCP error details. */
-  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.native
+  var partialFailures: js.UndefOr[js.Array[GoogleRpcStatus]] = js.undefined
 }
 object GoogleCloudDatalabelingV1p1alpha1ImportDataOperationMetadata {
   

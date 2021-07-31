@@ -2,20 +2,18 @@ package typings.cucumberMessages.cucumberMessagesMod.io.cucumber.messages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a SourcesOrder. */
-@js.native
 trait ISourcesOrder extends StObject {
   
   /** SourcesOrder seed */
   var seed: js.UndefOr[
     Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any) | Null
-  ] = js.native
+  ] = js.undefined
   
   /** SourcesOrder type */
-  var `type`: js.UndefOr[SourcesOrderType | Null] = js.native
+  var `type`: js.UndefOr[SourcesOrderType | Null] = js.undefined
 }
 object ISourcesOrder {
   

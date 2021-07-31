@@ -2,21 +2,19 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRealtimeEndpointOutput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the MLModel. This value should be identical to the value of the MLModelId in the request.
     */
-  var MLModelId: js.UndefOr[EntityId] = js.native
+  var MLModelId: js.UndefOr[EntityId] = js.undefined
   
   /**
     * The endpoint information of the MLModel 
     */
-  var RealtimeEndpointInfo: js.UndefOr[typings.awsSdk.machinelearningMod.RealtimeEndpointInfo] = js.native
+  var RealtimeEndpointInfo: js.UndefOr[typings.awsSdk.machinelearningMod.RealtimeEndpointInfo] = js.undefined
 }
 object DeleteRealtimeEndpointOutput {
   

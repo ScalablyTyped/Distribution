@@ -2,15 +2,13 @@ package typings.reactNativeWebrtc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaStreamConstraints extends StObject {
   
-  var audio: js.UndefOr[Boolean] = js.native
+  var audio: js.UndefOr[Boolean] = js.undefined
   
-  var video: js.UndefOr[Boolean | MediaTrackConstraints] = js.native
+  var video: js.UndefOr[Boolean | MediaTrackConstraints] = js.undefined
 }
 object MediaStreamConstraints {
   

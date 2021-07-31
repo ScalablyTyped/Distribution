@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A template that is rendered to display a tooltip.
   */
-@js.native
-trait MVCxClientSchedulerTemplateToolTip extends ASPxClientToolTipBase {
+trait MVCxClientSchedulerTemplateToolTip
+  extends StObject
+     with ASPxClientToolTipBase {
   
   /**
     * Gets the tooltip type.
     */
-  var `type`: MVCxSchedulerToolTipType = js.native
+  var `type`: MVCxSchedulerToolTipType
 }
 object MVCxClientSchedulerTemplateToolTip {
   

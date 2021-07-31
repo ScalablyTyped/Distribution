@@ -2,13 +2,11 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Initialization options for MapKit JS.
   */
-@js.native
 trait MapKitInitOptions extends StObject {
   
   /**
@@ -17,13 +15,13 @@ trait MapKitInitOptions extends StObject {
     * @param done A function that completes the MapKit JS token request. Called
     * after creating a new token.
     */
-  def authorizationCallback(done: js.Function1[/* token */ String, Unit]): Unit = js.native
+  def authorizationCallback(done: js.Function1[/* token */ String, Unit]): Unit
   
   /**
     * An ID that indicates the preferred language in which to display map
     * labels, controls, directions, and other text.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
 }
 object MapKitInitOptions {
   

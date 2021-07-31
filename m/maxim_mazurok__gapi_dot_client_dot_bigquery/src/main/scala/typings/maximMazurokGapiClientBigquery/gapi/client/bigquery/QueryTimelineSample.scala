@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryTimelineSample extends StObject {
   
   /** Total number of units currently being processed by workers. This does not correspond directly to slot usage. This is the largest value observed since the last sample. */
-  var activeUnits: js.UndefOr[String] = js.native
+  var activeUnits: js.UndefOr[String] = js.undefined
   
   /** Total parallel units of work completed by this query. */
-  var completedUnits: js.UndefOr[String] = js.native
+  var completedUnits: js.UndefOr[String] = js.undefined
   
   /** Milliseconds elapsed since the start of query execution. */
-  var elapsedMs: js.UndefOr[String] = js.native
+  var elapsedMs: js.UndefOr[String] = js.undefined
   
   /** Total parallel units of work remaining for the active stages. */
-  var pendingUnits: js.UndefOr[String] = js.native
+  var pendingUnits: js.UndefOr[String] = js.undefined
   
   /** Cumulative slot-ms consumed by the query. */
-  var totalSlotMs: js.UndefOr[String] = js.native
+  var totalSlotMs: js.UndefOr[String] = js.undefined
 }
 object QueryTimelineSample {
   

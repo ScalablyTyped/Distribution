@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.request.mod.Headers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,38 +14,37 @@ object mod extends Shortcut {
   
   type Callback = js.Function2[/* error */ js.Any | Null, /* result */ js.Array[Resource] | Null, Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var defaultFilename: js.UndefOr[String] = js.native
+    var defaultFilename: js.UndefOr[String] = js.undefined
     
-    var directory: String = js.native
+    var directory: String
     
-    var filenameGenerator: js.UndefOr[String] = js.native
+    var filenameGenerator: js.UndefOr[String] = js.undefined
     
-    var ignoreErrors: js.UndefOr[Boolean] = js.native
+    var ignoreErrors: js.UndefOr[Boolean] = js.undefined
     
-    var maxDepth: js.UndefOr[Double] = js.native
+    var maxDepth: js.UndefOr[Double] = js.undefined
     
-    var maxRecursiveDepth: js.UndefOr[Double] = js.native
+    var maxRecursiveDepth: js.UndefOr[Double] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[js.Object]] = js.native
+    var plugins: js.UndefOr[js.Array[js.Object]] = js.undefined
     
-    var prettifyUrls: js.UndefOr[Boolean] = js.native
+    var prettifyUrls: js.UndefOr[Boolean] = js.undefined
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
     
-    var request: js.UndefOr[RequestOptions] = js.native
+    var request: js.UndefOr[RequestOptions] = js.undefined
     
-    var requestConcurrency: js.UndefOr[Double] = js.native
+    var requestConcurrency: js.UndefOr[Double] = js.undefined
     
-    var sources: js.UndefOr[js.Array[Source]] = js.native
+    var sources: js.UndefOr[js.Array[Source]] = js.undefined
     
-    var subdirectories: js.UndefOr[js.Array[SubDirectory] | Null] = js.native
+    var subdirectories: js.UndefOr[js.Array[SubDirectory] | Null] = js.undefined
     
-    var urlFilter: js.UndefOr[js.Function1[/* url */ String, Boolean]] = js.native
+    var urlFilter: js.UndefOr[js.Function1[/* url */ String, Boolean]] = js.undefined
     
-    var urls: js.Array[String | Url] = js.native
+    var urls: js.Array[String | Url]
   }
   object Options {
     
@@ -160,10 +158,9 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
-    var headers: Headers = js.native
+    var headers: Headers
   }
   object RequestOptions {
     
@@ -181,14 +178,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Resource extends StObject {
     
-    var assets: js.Array[Resource] = js.native
+    var assets: js.Array[Resource]
     
-    var filename: String = js.native
+    var filename: String
     
-    var url: String = js.native
+    var url: String
   }
   object Resource {
     
@@ -222,12 +218,11 @@ object mod extends Shortcut {
     def apply(options: Options, callback: Callback): Unit = js.native
   }
   
-  @js.native
   trait Source extends StObject {
     
-    var attr: js.UndefOr[String] = js.native
+    var attr: js.UndefOr[String] = js.undefined
     
-    var selector: String = js.native
+    var selector: String
   }
   object Source {
     
@@ -251,12 +246,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait SubDirectory extends StObject {
     
-    var directory: String = js.native
+    var directory: String
     
-    var extensions: js.Array[String] = js.native
+    var extensions: js.Array[String]
   }
   object SubDirectory {
     
@@ -280,12 +274,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var filename: String = js.native
+    var filename: String
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

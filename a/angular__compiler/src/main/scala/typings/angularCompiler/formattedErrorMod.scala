@@ -3,32 +3,27 @@ package typings.angularCompiler
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formattedErrorMod {
   
-  @JSImport("@angular/compiler/src/aot/formatted_error", "formattedError")
+  @JSImport("@angular/compiler/src/aot/formatted_error", JSImport.Namespace)
   @js.native
-  def formattedError(chain: FormattedMessageChain): FormattedError_ = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/compiler/src/aot/formatted_error", "isFormattedError")
-  @js.native
-  def isFormattedError(error: Error): /* is @angular/compiler.@angular/compiler/src/aot/formatted_error.FormattedError */ Boolean = js.native
+  @scala.inline
+  def formattedError(chain: FormattedMessageChain): FormattedError_ = ^.asInstanceOf[js.Dynamic].applyDynamic("formattedError")(chain.asInstanceOf[js.Any]).asInstanceOf[FormattedError_]
   
-  /* Inlined std.Error & {  chain :@angular/compiler.@angular/compiler/src/aot/formatted_error.FormattedMessageChain,   position :@angular/compiler.@angular/compiler/src/aot/formatted_error.Position | undefined} */
-  @js.native
-  trait FormattedError_ extends StObject {
+  @scala.inline
+  def isFormattedError(error: Error): /* is @angular/compiler.@angular/compiler/src/aot/formatted_error.FormattedError */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFormattedError")(error.asInstanceOf[js.Any]).asInstanceOf[/* is @angular/compiler.@angular/compiler/src/aot/formatted_error.FormattedError */ Boolean]
+  
+  trait FormattedError_
+    extends StObject
+       with Error {
     
-    var chain: FormattedMessageChain = js.native
+    var chain: FormattedMessageChain
     
-    var message: String = js.native
-    
-    var name: String = js.native
-    
-    var position: js.UndefOr[Position] = js.native
-    
-    var stack: js.UndefOr[String] = js.native
+    var position: js.UndefOr[Position] = js.undefined
   }
   object FormattedError_ {
     
@@ -45,33 +40,20 @@ object formattedErrorMod {
       def setChain(value: FormattedMessageChain): Self = StObject.set(x, "chain", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMessage(value: String): Self = StObject.set(x, "message", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setPosition(value: Position): Self = StObject.set(x, "position", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
-      
-      @scala.inline
-      def setStack(value: String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
     }
   }
   
-  @js.native
   trait FormattedMessageChain extends StObject {
     
-    var message: String = js.native
+    var message: String
     
-    var next: js.UndefOr[js.Array[FormattedMessageChain]] = js.native
+    var next: js.UndefOr[js.Array[FormattedMessageChain]] = js.undefined
     
-    var position: js.UndefOr[Position] = js.native
+    var position: js.UndefOr[Position] = js.undefined
   }
   object FormattedMessageChain {
     
@@ -104,14 +86,13 @@ object formattedErrorMod {
     }
   }
   
-  @js.native
   trait Position extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var line: Double = js.native
+    var line: Double
   }
   object Position {
     

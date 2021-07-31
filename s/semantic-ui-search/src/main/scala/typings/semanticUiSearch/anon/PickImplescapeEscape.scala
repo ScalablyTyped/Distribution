@@ -3,14 +3,12 @@ package typings.semanticUiSearch.anon
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-search.SemanticUI.Search.RegExpSettings._Impl, 'escape'> */
-@js.native
 trait PickImplescapeEscape extends StObject {
   
-  var escape: RegExp = js.native
+  var escape: RegExp
 }
 object PickImplescapeEscape {
   

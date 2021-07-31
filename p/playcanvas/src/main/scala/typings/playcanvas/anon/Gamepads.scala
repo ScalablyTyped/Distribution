@@ -5,17 +5,15 @@ import typings.playcanvas.pc.Keyboard
 import typings.playcanvas.pc.Mouse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gamepads extends StObject {
   
-  var gamepads: js.UndefOr[GamePads] = js.native
+  var gamepads: js.UndefOr[GamePads] = js.undefined
   
-  var keyboard: js.UndefOr[Keyboard] = js.native
+  var keyboard: js.UndefOr[Keyboard] = js.undefined
   
-  var mouse: js.UndefOr[Mouse] = js.native
+  var mouse: js.UndefOr[Mouse] = js.undefined
 }
 object Gamepads {
   

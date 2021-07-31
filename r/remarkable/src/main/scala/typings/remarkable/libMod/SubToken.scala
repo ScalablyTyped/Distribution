@@ -3,25 +3,25 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.sub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait SubToken extends ContentToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait SubToken
+  extends StObject
+     with ContentToken {
   
   @JSName("content")
-  var content_SubToken: String = js.native
+  var content_SubToken: String
   
   @JSName("type")
-  var type_SubToken: sub = js.native
+  var type_SubToken: sub
 }
 object SubToken {
   
   @scala.inline
-  def apply(content: String, level: Double, `type`: sub): SubToken = {
+  def apply(content: String, level: Double): SubToken = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sub")
     __obj.asInstanceOf[SubToken]
   }
   

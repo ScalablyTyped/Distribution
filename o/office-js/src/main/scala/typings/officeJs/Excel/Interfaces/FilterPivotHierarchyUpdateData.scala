@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the FilterPivotHierarchy object, for use in `filterPivotHierarchy.set({ ... })`. */
-@js.native
 trait FilterPivotHierarchyUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait FilterPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var enableMultipleFilterItems: js.UndefOr[Boolean] = js.native
+  var enableMultipleFilterItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait FilterPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait FilterPivotHierarchyUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var position: js.UndefOr[Double] = js.native
+  var position: js.UndefOr[Double] = js.undefined
 }
 object FilterPivotHierarchyUpdateData {
   

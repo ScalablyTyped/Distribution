@@ -2,76 +2,74 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentVersionMetadata extends StObject {
   
   /**
     * The timestamp when the content of the document was originally created.
     */
-  var ContentCreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ContentCreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The timestamp when the content of the document was modified.
     */
-  var ContentModifiedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ContentModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The content type of the document.
     */
-  var ContentType: js.UndefOr[DocumentContentType] = js.native
+  var ContentType: js.UndefOr[DocumentContentType] = js.undefined
   
   /**
     * The timestamp when the document was first uploaded.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the creator.
     */
-  var CreatorId: js.UndefOr[IdType] = js.native
+  var CreatorId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The ID of the version.
     */
-  var Id: js.UndefOr[DocumentVersionIdType] = js.native
+  var Id: js.UndefOr[DocumentVersionIdType] = js.undefined
   
   /**
     * The timestamp when the document was last uploaded.
     */
-  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.native
+  var ModifiedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The name of the version.
     */
-  var Name: js.UndefOr[ResourceNameType] = js.native
+  var Name: js.UndefOr[ResourceNameType] = js.undefined
   
   /**
     * The signature of the document.
     */
-  var Signature: js.UndefOr[HashType] = js.native
+  var Signature: js.UndefOr[HashType] = js.undefined
   
   /**
     * The size of the document, in bytes.
     */
-  var Size: js.UndefOr[SizeType] = js.native
+  var Size: js.UndefOr[SizeType] = js.undefined
   
   /**
     * The source of the document.
     */
-  var Source: js.UndefOr[DocumentSourceUrlMap] = js.native
+  var Source: js.UndefOr[DocumentSourceUrlMap] = js.undefined
   
   /**
     * The status of the document.
     */
-  var Status: js.UndefOr[DocumentStatusType] = js.native
+  var Status: js.UndefOr[DocumentStatusType] = js.undefined
   
   /**
     * The thumbnail of the document.
     */
-  var Thumbnail: js.UndefOr[DocumentThumbnailUrlMap] = js.native
+  var Thumbnail: js.UndefOr[DocumentThumbnailUrlMap] = js.undefined
 }
 object DocumentVersionMetadata {
   

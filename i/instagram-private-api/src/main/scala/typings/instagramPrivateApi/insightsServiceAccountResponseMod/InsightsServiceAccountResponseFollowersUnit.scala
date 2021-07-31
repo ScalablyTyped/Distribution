@@ -2,31 +2,29 @@ package typings.instagramPrivateApi.insightsServiceAccountResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsServiceAccountResponseFollowersUnit extends StObject {
   
-  var all_followers_age_graph: InsightsServiceAccountResponseAllFollowersAgeGraph = js.native
+  var all_followers_age_graph: InsightsServiceAccountResponseAllFollowersAgeGraph
   
-  var days_hourly_followers_graphs: js.Array[InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem] = js.native
+  var days_hourly_followers_graphs: js.Array[InsightsServiceAccountResponseDaysHourlyFollowersGraphsItem]
   
-  var followers_delta_from_last_week: Double = js.native
+  var followers_delta_from_last_week: Double
   
-  var followers_top_cities_graph: InsightsServiceAccountResponseFollowersTopCitiesGraph = js.native
+  var followers_top_cities_graph: InsightsServiceAccountResponseFollowersTopCitiesGraph
   
-  var followers_top_countries_graph: InsightsServiceAccountResponseFollowersTopCountriesGraph = js.native
+  var followers_top_countries_graph: InsightsServiceAccountResponseFollowersTopCountriesGraph
   
-  var followers_unit_state: String = js.native
+  var followers_unit_state: String
   
-  var gender_graph: InsightsServiceAccountResponseGenderGraph = js.native
+  var gender_graph: InsightsServiceAccountResponseGenderGraph
   
-  var men_followers_age_graph: InsightsServiceAccountResponseMenFollowersAgeGraph = js.native
+  var men_followers_age_graph: InsightsServiceAccountResponseMenFollowersAgeGraph
   
-  var week_daily_followers_graph: InsightsServiceAccountResponseWeekDailyFollowersGraph = js.native
+  var week_daily_followers_graph: InsightsServiceAccountResponseWeekDailyFollowersGraph
   
-  var women_followers_age_graph: InsightsServiceAccountResponseWomenFollowersAgeGraph = js.native
+  var women_followers_age_graph: InsightsServiceAccountResponseWomenFollowersAgeGraph
 }
 object InsightsServiceAccountResponseFollowersUnit {
   

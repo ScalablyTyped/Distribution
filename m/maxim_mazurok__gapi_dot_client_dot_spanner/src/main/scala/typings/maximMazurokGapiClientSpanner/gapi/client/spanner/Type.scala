@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /** If code == ARRAY, then `array_element_type` is the type of the array elements. */
-  var arrayElementType: js.UndefOr[Type] = js.native
+  var arrayElementType: js.UndefOr[Type] = js.undefined
   
   /** Required. The TypeCode for this type. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** If code == STRUCT, then `struct_type` provides type information for the struct's fields. */
-  var structType: js.UndefOr[StructType] = js.native
+  var structType: js.UndefOr[StructType] = js.undefined
 }
 object Type {
   

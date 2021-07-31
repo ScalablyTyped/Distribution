@@ -2,17 +2,15 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchResponse extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var responses: js.Array[Response] = js.native
+  var responses: js.Array[Response]
   
-  var status: String = js.native
+  var status: String
 }
 object BatchResponse {
   

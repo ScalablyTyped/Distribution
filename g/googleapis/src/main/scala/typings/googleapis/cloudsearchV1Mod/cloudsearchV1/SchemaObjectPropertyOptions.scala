@@ -2,13 +2,11 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options for object properties.
   */
-@js.native
 trait SchemaObjectPropertyOptions extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaObjectPropertyOptions extends StObject {
     * subobjectProperties might be named *street*, *city*, and *state*. The
     * maximum number of elements is 1000.
     */
-  var subobjectProperties: js.UndefOr[js.Array[SchemaPropertyDefinition]] = js.native
+  var subobjectProperties: js.UndefOr[js.Array[SchemaPropertyDefinition]] = js.undefined
 }
 object SchemaObjectPropertyOptions {
   

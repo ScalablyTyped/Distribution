@@ -35,29 +35,27 @@ import typings.gestalt.gestaltStrings.white
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderProps extends StObject {
   
-  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.native
+  var accessibilityLevel: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6`] = js.undefined
   
-  var align: js.UndefOr[left | right | center | justify] = js.native
+  var align: js.UndefOr[left | right | center | justify] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
   var color: js.UndefOr[
     blue | darkGray | eggplant | gray | green | lightGray | maroon | midnight | navy | olive | orange | orchid | pine | purple | red | watermelon | white
-  ] = js.native
+  ] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var overflow: js.UndefOr[normal | breakWord] = js.native
+  var overflow: js.UndefOr[normal | breakWord] = js.undefined
   
-  var size: js.UndefOr[sm | md | lg] = js.native
+  var size: js.UndefOr[sm | md | lg] = js.undefined
   
-  var truncate: js.UndefOr[Boolean] = js.native
+  var truncate: js.UndefOr[Boolean] = js.undefined
 }
 object HeaderProps {
   

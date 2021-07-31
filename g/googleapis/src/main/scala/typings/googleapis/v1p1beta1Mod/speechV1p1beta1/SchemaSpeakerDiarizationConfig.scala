@@ -2,10 +2,8 @@ package typings.googleapis.v1p1beta1Mod.speechV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSpeakerDiarizationConfig extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaSpeakerDiarizationConfig extends StObject {
     * recognized word in the top alternative of the recognition result using a
     * speaker_tag provided in the WordInfo.
     */
-  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.native
+  var enableSpeakerDiarization: js.UndefOr[Boolean] = js.undefined
   
   /**
     * *Optional* Only used if diarization_speaker_count is not set. Maximum
@@ -21,7 +19,7 @@ trait SchemaSpeakerDiarizationConfig extends StObject {
     * flexibility by allowing the system to automatically determine the correct
     * number of speakers. If not set, the default value is 6.
     */
-  var maxSpeakerCount: js.UndefOr[Double] = js.native
+  var maxSpeakerCount: js.UndefOr[Double] = js.undefined
   
   /**
     * *Optional* Only used if diarization_speaker_count is not set. Minimum
@@ -29,7 +27,7 @@ trait SchemaSpeakerDiarizationConfig extends StObject {
     * flexibility by allowing the system to automatically determine the correct
     * number of speakers. If not set, the default value is 2.
     */
-  var minSpeakerCount: js.UndefOr[Double] = js.native
+  var minSpeakerCount: js.UndefOr[Double] = js.undefined
 }
 object SchemaSpeakerDiarizationConfig {
   

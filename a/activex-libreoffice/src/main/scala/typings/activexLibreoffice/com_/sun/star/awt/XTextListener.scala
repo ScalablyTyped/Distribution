@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive text change events. */
-@js.native
-trait XTextListener extends XEventListener {
+trait XTextListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the text has changed. */
-  def textChanged(rEvent: TextEvent): Unit = js.native
+  def textChanged(rEvent: TextEvent): Unit
 }
 object XTextListener {
   

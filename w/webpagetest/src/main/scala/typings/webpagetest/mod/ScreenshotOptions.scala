@@ -2,20 +2,18 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScreenshotOptions extends StObject {
   
   /** returns the page screenshot at the Document Complete point (i.e.: when window.onload was fired) */
-  var documentComplete: js.UndefOr[Boolean] = js.native
+  var documentComplete: js.UndefOr[Boolean] = js.undefined
   
   /** returns the full resolution screenshot in PNG format if available */
-  var fullResolution: js.UndefOr[Boolean] = js.native
+  var fullResolution: js.UndefOr[Boolean] = js.undefined
   
   /** returns the page screenshot at the Start Render point (i.e.: when something was first displayed on screen) */
-  var startRender: js.UndefOr[Boolean] = js.native
+  var startRender: js.UndefOr[Boolean] = js.undefined
 }
 object ScreenshotOptions {
   

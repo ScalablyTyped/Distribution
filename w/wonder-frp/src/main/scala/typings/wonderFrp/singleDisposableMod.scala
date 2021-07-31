@@ -2,33 +2,41 @@ package typings.wonderFrp
 
 import typings.wonderFrp.entityMod.Entity
 import typings.wonderFrp.idisposableMod.IDisposable
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/Disposable/SingleDisposable", JSImport.Namespace)
-@js.native
-object singleDisposableMod extends js.Object {
+object singleDisposableMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/Disposable/SingleDisposable", "SingleDisposable")
   @js.native
   class SingleDisposable protected ()
     extends Entity
        with IDisposable {
     def this(dispose: js.Function) = this()
     def this(dispose: IDisposable) = this()
+    
     var _disposable: js.Any = js.native
+    
     var _isDisposed: js.Any = js.native
+    
     /* CompleteClass */
     override def dispose(): Unit = js.native
+    
     def setDispose(disposable: IDisposable): Unit = js.native
   }
-  
   /* static members */
-  @js.native
-  object SingleDisposable extends js.Object {
-    def create(): SingleDisposable = js.native
-    def create(dispose: js.Function): SingleDisposable = js.native
-    def create(dispose: IDisposable): SingleDisposable = js.native
+  object SingleDisposable {
+    
+    @JSImport("wonder-frp/dist/commonjs/Disposable/SingleDisposable", "SingleDisposable")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[SingleDisposable]
+    @scala.inline
+    def create(dispose: js.Function): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[SingleDisposable]
+    @scala.inline
+    def create(dispose: IDisposable): SingleDisposable = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(dispose.asInstanceOf[js.Any]).asInstanceOf[SingleDisposable]
   }
-  
 }
-

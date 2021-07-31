@@ -2,10 +2,8 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountsAuthInfoResponse extends StObject {
   
   /**
@@ -14,13 +12,13 @@ trait SchemaAccountsAuthInfoResponse extends StObject {
     * only the aggregator ID is defined - For a subaccount of an MCA: both the
     * merchant ID and the aggregator ID are defined.
     */
-  var accountIdentifiers: js.UndefOr[js.Array[SchemaAccountIdentifier]] = js.native
+  var accountIdentifiers: js.UndefOr[js.Array[SchemaAccountIdentifier]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;content#accountsAuthInfoResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountsAuthInfoResponse {
   

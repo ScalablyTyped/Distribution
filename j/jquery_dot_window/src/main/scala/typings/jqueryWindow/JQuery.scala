@@ -4,14 +4,12 @@ import typings.jqueryWindow.JQueryWindow.Window
 import typings.jqueryWindow.JQueryWindow.WindowOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Register with JQuery instance
-@js.native
 trait JQuery extends StObject {
   
-  def window(options: WindowOptions): Window = js.native
+  def window(options: WindowOptions): Window
 }
 object JQuery {
   

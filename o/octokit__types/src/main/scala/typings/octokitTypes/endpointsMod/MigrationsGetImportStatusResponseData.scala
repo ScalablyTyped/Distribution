@@ -2,37 +2,35 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsGetImportStatusResponseData extends StObject {
   
-  var authors_count: Double = js.native
+  var authors_count: Double
   
-  var authors_url: String = js.native
+  var authors_url: String
   
-  var has_large_files: Boolean = js.native
+  var has_large_files: Boolean
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var large_files_count: Double = js.native
+  var large_files_count: Double
   
-  var large_files_size: Double = js.native
+  var large_files_size: Double
   
-  var repository_url: String = js.native
+  var repository_url: String
   
-  var status: String = js.native
+  var status: String
   
-  var status_text: String = js.native
+  var status_text: String
   
-  var url: String = js.native
+  var url: String
   
-  var use_lfs: String = js.native
+  var use_lfs: String
   
-  var vcs: String = js.native
+  var vcs: String
   
-  var vcs_url: String = js.native
+  var vcs_url: String
 }
 object MigrationsGetImportStatusResponseData {
   

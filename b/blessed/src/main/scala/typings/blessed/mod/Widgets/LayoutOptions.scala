@@ -5,24 +5,24 @@ import typings.blessed.blessedStrings.`inline`
 import typings.blessed.blessedStrings.grid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayoutOptions extends ElementOptions {
+trait LayoutOptions
+  extends StObject
+     with ElementOptions {
   
   /**
     * Using the default renderer, it provides two layouts: inline, and grid. inline is the default and will render
     * akin to inline-block. grid will create an automatic grid based on element dimensions. The grid cells'
     * width and height are always determined by the largest children in the layout.
     */
-  var layout: `inline` | `inline-block` | grid = js.native
+  var layout: `inline` | `inline-block` | grid
   
   /**
     * A callback which is called right before the children are iterated over to be rendered. Should return an
     * iterator callback which is called on each child element: iterator(el, i).
     */
-  var renderer: js.UndefOr[js.Function0[Unit]] = js.native
+  var renderer: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object LayoutOptions {
   

@@ -2,45 +2,43 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OneToManyRelationshipMetadata extends StObject {
   
-  var AssociatedMenuConfiguration: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AssociatedMenuConfiguration = js.native
+  var AssociatedMenuConfiguration: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.AssociatedMenuConfiguration
   
-  var CascadeConfiguration: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.CascadeConfiguration = js.native
+  var CascadeConfiguration: typings.microsoftSdkSoap.mod.global.Sdk.Mdq.CascadeConfiguration
   
-  var HasChanged: js.Any = js.native
+  var HasChanged: js.Any
   
-  var IntroducedVersion: js.Any = js.native
+  var IntroducedVersion: js.Any
   
-  var IsCustomRelationship: Boolean = js.native
+  var IsCustomRelationship: Boolean
   
-  var IsCustomizable: ManagedProperty[Boolean] = js.native
+  var IsCustomizable: ManagedProperty[Boolean]
   
-  var IsHierarchical: js.Any = js.native
+  var IsHierarchical: js.Any
   
-  var IsManaged: Boolean = js.native
+  var IsManaged: Boolean
   
-  var IsValidForAdvancedFind: Boolean = js.native
+  var IsValidForAdvancedFind: Boolean
   
-  var MetadataId: String = js.native
+  var MetadataId: String
   
-  var ReferencedAttribute: String = js.native
+  var ReferencedAttribute: String
   
-  var ReferencedEntity: String = js.native
+  var ReferencedEntity: String
   
-  var ReferencingAttribute: String = js.native
+  var ReferencingAttribute: String
   
-  var ReferencingEntity: String = js.native
+  var ReferencingEntity: String
   
-  var RelationshipType: String = js.native
+  var RelationshipType: String
   
-  var SchemaName: String = js.native
+  var SchemaName: String
   
-  var SecurityTypes: js.Any = js.native
+  var SecurityTypes: js.Any
 }
 object OneToManyRelationshipMetadata {
   

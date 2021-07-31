@@ -6,22 +6,20 @@ import typings.std.Element
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined react-overlays.react-overlays/cjs/DropdownToggle.UseDropdownToggleHelpers & {  props :react-overlays.react-overlays/cjs/DropdownToggle.UseDropdownToggleProps} */
-@js.native
 trait UseDropdownToggleHelpersp extends StObject {
   
-  var props: UseDropdownToggleProps = js.native
+  var props: UseDropdownToggleProps
   
-  var show: Boolean = js.native
+  var show: Boolean
   
   var toggle: js.Function2[
     /* nextShow */ Boolean, 
     /* event */ js.UndefOr[(SyntheticEvent[Element, Event]) | Event], 
     Unit
-  ] = js.native
+  ]
 }
 object UseDropdownToggleHelpersp {
   

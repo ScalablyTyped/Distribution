@@ -4,7 +4,6 @@ import typings.vexflow.Vex.Flow.Voice.Mode
 import typings.vexflow.Vex.IRenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -58,12 +57,18 @@ object Voice {
   object Mode extends StObject {
     
     @js.native
-    sealed trait FULL extends Mode
+    sealed trait FULL
+      extends StObject
+         with Mode
     
     @js.native
-    sealed trait SOFT extends Mode
+    sealed trait SOFT
+      extends StObject
+         with Mode
     
     @js.native
-    sealed trait STRICT extends Mode
+    sealed trait STRICT
+      extends StObject
+         with Mode
   }
 }

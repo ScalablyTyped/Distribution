@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Tasks extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Exists(Name: String): Boolean = js.native
+  def Exists(Name: String): Boolean
   
-  def ExitWindows(): Unit = js.native
+  def ExitWindows(): Unit
   
-  def Item(Index: js.Any): Task = js.native
+  def Item(Index: js.Any): Task
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.Tasks_typekey")
-  var WordDotTasks_typekey: Tasks = js.native
+  var WordDotTasks_typekey: Tasks
 }
 object Tasks {
   

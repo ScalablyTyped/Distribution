@@ -2,49 +2,47 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISyntaxElement extends StObject {
   
-  def childAt(index: Double): ISyntaxElement = js.native
+  def childAt(index: Double): ISyntaxElement
   
-  def childCount(): Double = js.native
+  def childCount(): Double
   
-  def collectTextElements(elements: js.Array[String]): Unit = js.native
+  def collectTextElements(elements: js.Array[String]): Unit
   
-  def firstToken(): ISyntaxToken = js.native
+  def firstToken(): ISyntaxToken
   
-  def fullText(): String = js.native
+  def fullText(): String
   
-  def fullWidth(): Double = js.native
+  def fullWidth(): Double
   
-  def isIncrementallyUnusable(): Boolean = js.native
+  def isIncrementallyUnusable(): Boolean
   
-  def isList(): Boolean = js.native
+  def isList(): Boolean
   
-  def isNode(): Boolean = js.native
+  def isNode(): Boolean
   
-  def isSeparatedList(): Boolean = js.native
+  def isSeparatedList(): Boolean
   
-  def isToken(): Boolean = js.native
+  def isToken(): Boolean
   
-  def isTypeScriptSpecific(): Boolean = js.native
+  def isTypeScriptSpecific(): Boolean
   
-  def kind(): SyntaxKind = js.native
+  def kind(): SyntaxKind
   
-  def lastToken(): ISyntaxToken = js.native
+  def lastToken(): ISyntaxToken
   
-  def leadingTrivia(): ISyntaxTriviaList = js.native
+  def leadingTrivia(): ISyntaxTriviaList
   
-  def leadingTriviaWidth(): Double = js.native
+  def leadingTriviaWidth(): Double
   
-  def trailingTrivia(): ISyntaxTriviaList = js.native
+  def trailingTrivia(): ISyntaxTriviaList
   
-  def trailingTriviaWidth(): Double = js.native
+  def trailingTriviaWidth(): Double
   
-  def width(): Double = js.native
+  def width(): Double
 }
 object ISyntaxElement {
   

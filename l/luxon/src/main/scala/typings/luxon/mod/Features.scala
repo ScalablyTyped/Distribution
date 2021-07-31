@@ -2,19 +2,17 @@ package typings.luxon.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Features extends StObject {
   
-  var intl: Boolean = js.native
+  var intl: Boolean
   
-  var intlTokens: Boolean = js.native
+  var intlTokens: Boolean
   
-  var relative: Boolean = js.native
+  var relative: Boolean
   
-  var zones: Boolean = js.native
+  var zones: Boolean
 }
 object Features {
   

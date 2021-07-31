@@ -3,29 +3,27 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskOrchestrationQueuedPlan extends StObject {
   
-  var assignTime: Date = js.native
+  var assignTime: Date
   
-  var definition: TaskOrchestrationOwner = js.native
+  var definition: TaskOrchestrationOwner
   
-  var owner: TaskOrchestrationOwner = js.native
+  var owner: TaskOrchestrationOwner
   
-  var planGroup: String = js.native
+  var planGroup: String
   
-  var planId: String = js.native
+  var planId: String
   
-  var poolId: Double = js.native
+  var poolId: Double
   
-  var queuePosition: Double = js.native
+  var queuePosition: Double
   
-  var queueTime: Date = js.native
+  var queueTime: Date
   
-  var scopeIdentifier: String = js.native
+  var scopeIdentifier: String
 }
 object TaskOrchestrationQueuedPlan {
   

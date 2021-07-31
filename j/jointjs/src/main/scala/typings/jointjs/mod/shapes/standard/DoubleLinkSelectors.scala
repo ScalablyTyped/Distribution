@@ -4,17 +4,15 @@ import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGPathAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DoubleLinkSelectors extends StObject {
   
-  var line: js.UndefOr[SVGPathAttributes] = js.native
+  var line: js.UndefOr[SVGPathAttributes] = js.undefined
   
-  var outline: js.UndefOr[SVGPathAttributes] = js.native
+  var outline: js.UndefOr[SVGPathAttributes] = js.undefined
   
-  var root: js.UndefOr[SVGAttributes] = js.native
+  var root: js.UndefOr[SVGAttributes] = js.undefined
 }
 object DoubleLinkSelectors {
   

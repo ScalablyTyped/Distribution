@@ -2,36 +2,34 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An image button with an onclick action.
   */
-@js.native
 trait SchemaImageButton extends StObject {
   
   /**
     * The icon specified by an enum that indices to an icon provided by Chat
     * API.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * The icon specified by a URL.
     */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The name of this image_button which will be used for accessibility.
     * Default value will be provided if developers don&#39;t specify.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The onclick action.
     */
-  var onClick: js.UndefOr[SchemaOnClick] = js.native
+  var onClick: js.UndefOr[SchemaOnClick] = js.undefined
 }
 object SchemaImageButton {
   

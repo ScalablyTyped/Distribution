@@ -2,46 +2,44 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolSchema extends StObject {
   
   /**
     * The attribute data type. Must be one of `Boolean`, `Number`, `String`, `DateTime`.
     */
-  var attributeDataType: String = js.native
+  var attributeDataType: String
   
   /**
     * Specifies whether the attribute type is developer only.
     */
-  var developerOnlyAttribute: js.UndefOr[Boolean] = js.native
+  var developerOnlyAttribute: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies whether the attribute can be changed once it has been created.
     */
-  var mutable: js.UndefOr[Boolean] = js.native
+  var mutable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the attribute.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Specifies the constraints for an attribute of the number type.
     */
-  var numberAttributeConstraints: js.UndefOr[UserPoolSchemaNumberAttributeConstraints] = js.native
+  var numberAttributeConstraints: js.UndefOr[UserPoolSchemaNumberAttributeConstraints] = js.undefined
   
   /**
     * Specifies whether a user pool attribute is required. If the attribute is required and the user does not provide a value, registration or sign-in will fail.
     */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
   /**
     * -Specifies the constraints for an attribute of the string type.
     */
-  var stringAttributeConstraints: js.UndefOr[UserPoolSchemaStringAttributeConstraints] = js.native
+  var stringAttributeConstraints: js.UndefOr[UserPoolSchemaStringAttributeConstraints] = js.undefined
 }
 object UserPoolSchema {
   

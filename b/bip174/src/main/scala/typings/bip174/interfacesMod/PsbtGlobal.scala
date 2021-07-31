@@ -2,15 +2,15 @@ package typings.bip174.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PsbtGlobal extends PsbtGlobalUpdate {
+trait PsbtGlobal
+  extends StObject
+     with PsbtGlobalUpdate {
   
-  var unknownKeyVals: js.UndefOr[js.Array[KeyValue]] = js.native
+  var unknownKeyVals: js.UndefOr[js.Array[KeyValue]] = js.undefined
   
-  var unsignedTx: Transaction = js.native
+  var unsignedTx: Transaction
 }
 object PsbtGlobal {
   

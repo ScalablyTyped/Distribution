@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequireCheckIn extends StObject {
   
   /**
     * Whether require check in is enabled or not.
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Duration between 5 and 20 minutes to determine when to release the room if it's not checked into. 
     */
-  var ReleaseAfterMinutes: js.UndefOr[Minutes] = js.native
+  var ReleaseAfterMinutes: js.UndefOr[Minutes] = js.undefined
 }
 object RequireCheckIn {
   

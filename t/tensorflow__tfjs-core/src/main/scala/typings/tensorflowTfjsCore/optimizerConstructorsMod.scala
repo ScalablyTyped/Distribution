@@ -9,7 +9,6 @@ import typings.tensorflowTfjsCore.rmspropOptimizerMod.RMSPropOptimizer
 import typings.tensorflowTfjsCore.sgdOptimizerMod.SGDOptimizer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optimizerConstructorsMod {
@@ -19,6 +18,10 @@ object optimizerConstructorsMod {
   class OptimizerConstructors () extends StObject
   /* static members */
   object OptimizerConstructors {
+    
+    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Constructs a `tf.AdadeltaOptimizer` that uses the Adadelta algorithm.
@@ -32,30 +35,22 @@ object optimizerConstructorsMod {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(): AdadeltaOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: js.UndefOr[scala.Nothing], epsilon: Double): AdadeltaOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: Double): AdadeltaOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(learningRate: js.UndefOr[scala.Nothing], rho: Double, epsilon: Double): AdadeltaOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(learningRate: Double): AdadeltaOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(learningRate: Double, rho: js.UndefOr[scala.Nothing], epsilon: Double): AdadeltaOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(learningRate: Double, rho: Double): AdadeltaOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adadelta")
-    @js.native
-    def adadelta(learningRate: Double, rho: Double, epsilon: Double): AdadeltaOptimizer = js.native
+    @scala.inline
+    def adadelta(): AdadeltaOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")().asInstanceOf[AdadeltaOptimizer]
+    @scala.inline
+    def adadelta(learningRate: Double): AdadeltaOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")(learningRate.asInstanceOf[js.Any]).asInstanceOf[AdadeltaOptimizer]
+    @scala.inline
+    def adadelta(learningRate: Double, rho: Double): AdadeltaOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")(learningRate.asInstanceOf[js.Any], rho.asInstanceOf[js.Any])).asInstanceOf[AdadeltaOptimizer]
+    @scala.inline
+    def adadelta(learningRate: Double, rho: Double, epsilon: Double): AdadeltaOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")(learningRate.asInstanceOf[js.Any], rho.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdadeltaOptimizer]
+    @scala.inline
+    def adadelta(learningRate: Double, rho: Unit, epsilon: Double): AdadeltaOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")(learningRate.asInstanceOf[js.Any], rho.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdadeltaOptimizer]
+    @scala.inline
+    def adadelta(learningRate: Unit, rho: Double): AdadeltaOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")(learningRate.asInstanceOf[js.Any], rho.asInstanceOf[js.Any])).asInstanceOf[AdadeltaOptimizer]
+    @scala.inline
+    def adadelta(learningRate: Unit, rho: Double, epsilon: Double): AdadeltaOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")(learningRate.asInstanceOf[js.Any], rho.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdadeltaOptimizer]
+    @scala.inline
+    def adadelta(learningRate: Unit, rho: Unit, epsilon: Double): AdadeltaOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adadelta")(learningRate.asInstanceOf[js.Any], rho.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdadeltaOptimizer]
     
     /**
       * Constructs a `tf.AdagradOptimizer` that uses the Adagrad algorithm.
@@ -73,12 +68,10 @@ object optimizerConstructorsMod {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adagrad")
-    @js.native
-    def adagrad(learningRate: Double): AdagradOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adagrad")
-    @js.native
-    def adagrad(learningRate: Double, initialAccumulatorValue: Double): AdagradOptimizer = js.native
+    @scala.inline
+    def adagrad(learningRate: Double): AdagradOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("adagrad")(learningRate.asInstanceOf[js.Any]).asInstanceOf[AdagradOptimizer]
+    @scala.inline
+    def adagrad(learningRate: Double, initialAccumulatorValue: Double): AdagradOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adagrad")(learningRate.asInstanceOf[js.Any], initialAccumulatorValue.asInstanceOf[js.Any])).asInstanceOf[AdagradOptimizer]
     
     /**
       * Constructs a `tf.AdamOptimizer` that uses the Adam algorithm.
@@ -92,74 +85,38 @@ object optimizerConstructorsMod {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: Double,
-      epsilon: Double
-    ): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: Double,
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(
-      learningRate: Double,
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double, epsilon: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: Double, beta1: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: Double, beta1: Double, beta2: js.UndefOr[scala.Nothing], epsilon: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: Double, beta1: Double, beta2: Double): AdamOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adam")
-    @js.native
-    def adam(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = js.native
+    @scala.inline
+    def adam(): AdamOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("adam")().asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double): AdamOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any]).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double, beta1: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double, beta1: Double, beta2: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double, beta1: Double, beta2: Unit, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double, beta1: Unit, beta2: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double, beta1: Unit, beta2: Double, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Double, beta1: Unit, beta2: Unit, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Unit, beta1: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Unit, beta1: Double, beta2: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Unit, beta1: Double, beta2: Double, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Unit, beta1: Double, beta2: Unit, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Unit, beta1: Unit, beta2: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Unit, beta1: Unit, beta2: Double, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
+    @scala.inline
+    def adam(learningRate: Unit, beta1: Unit, beta2: Unit, epsilon: Double): AdamOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adam")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamOptimizer]
     
     /**
       * Constructs a `tf.AdamaxOptimizer` that uses the Adamax algorithm.
@@ -174,212 +131,70 @@ object optimizerConstructorsMod {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: Double,
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: Double,
-      epsilon: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: Double,
-      epsilon: Double,
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: Double,
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: Double,
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: Double,
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: Double,
-      beta2: Double,
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: js.UndefOr[scala.Nothing], beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: js.UndefOr[scala.Nothing],
-      beta1: Double,
-      beta2: Double,
-      epsilon: Double,
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: Double,
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double, beta1: js.UndefOr[scala.Nothing], beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: js.UndefOr[scala.Nothing],
-      beta2: Double,
-      epsilon: Double,
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double, beta1: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: Double,
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double, beta1: Double, beta2: js.UndefOr[scala.Nothing], epsilon: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: Double,
-      beta2: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double, beta1: Double, beta2: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(
-      learningRate: Double,
-      beta1: Double,
-      beta2: Double,
-      epsilon: js.UndefOr[scala.Nothing],
-      decay: Double
-    ): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.adamax")
-    @js.native
-    def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = js.native
+    @scala.inline
+    def adamax(): AdamaxOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("adamax")().asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double): AdamaxOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any]).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double, beta2: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double, beta2: Double, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double, beta2: Unit, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double, beta2: Unit, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Double, beta2: Unit, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Unit, beta2: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Unit, beta2: Double, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Unit, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Unit, beta2: Double, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Unit, beta2: Unit, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Unit, beta2: Unit, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Double, beta1: Unit, beta2: Unit, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double, beta2: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double, beta2: Double, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double, beta2: Double, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double, beta2: Unit, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double, beta2: Unit, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Double, beta2: Unit, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Unit, beta2: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Unit, beta2: Double, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Unit, beta2: Double, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Unit, beta2: Double, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Unit, beta2: Unit, epsilon: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Unit, beta2: Unit, epsilon: Double, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
+    @scala.inline
+    def adamax(learningRate: Unit, beta1: Unit, beta2: Unit, epsilon: Unit, decay: Double): AdamaxOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("adamax")(learningRate.asInstanceOf[js.Any], beta1.asInstanceOf[js.Any], beta2.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[AdamaxOptimizer]
     
     /**
       * Constructs a `tf.MomentumOptimizer` that uses momentum gradient
@@ -396,12 +211,10 @@ object optimizerConstructorsMod {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.momentum")
-    @js.native
-    def momentum(learningRate: Double, momentum: Double): MomentumOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.momentum")
-    @js.native
-    def momentum(learningRate: Double, momentum: Double, useNesterov: Boolean): MomentumOptimizer = js.native
+    @scala.inline
+    def momentum(learningRate: Double, momentum: Double): MomentumOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("momentum")(learningRate.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any])).asInstanceOf[MomentumOptimizer]
+    @scala.inline
+    def momentum(learningRate: Double, momentum: Double, useNesterov: Boolean): MomentumOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("momentum")(learningRate.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], useNesterov.asInstanceOf[js.Any])).asInstanceOf[MomentumOptimizer]
     
     /**
       * Constructs a `tf.RMSPropOptimizer` that uses RMSProp gradient
@@ -423,101 +236,38 @@ object optimizerConstructorsMod {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: js.UndefOr[scala.Nothing],
-      momentum: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      centered: Boolean
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: js.UndefOr[scala.Nothing],
-      momentum: js.UndefOr[scala.Nothing],
-      epsilon: Double
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: js.UndefOr[scala.Nothing],
-      momentum: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      centered: Boolean
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: js.UndefOr[scala.Nothing],
-      momentum: Double,
-      epsilon: js.UndefOr[scala.Nothing],
-      centered: Boolean
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double, decay: js.UndefOr[scala.Nothing], momentum: Double, epsilon: Double): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: js.UndefOr[scala.Nothing],
-      momentum: Double,
-      epsilon: Double,
-      centered: Boolean
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double, decay: Double): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: Double,
-      momentum: js.UndefOr[scala.Nothing],
-      epsilon: js.UndefOr[scala.Nothing],
-      centered: Boolean
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double, decay: Double, momentum: js.UndefOr[scala.Nothing], epsilon: Double): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: Double,
-      momentum: js.UndefOr[scala.Nothing],
-      epsilon: Double,
-      centered: Boolean
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double, decay: Double, momentum: Double): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(
-      learningRate: Double,
-      decay: Double,
-      momentum: Double,
-      epsilon: js.UndefOr[scala.Nothing],
-      centered: Boolean
-    ): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double): RMSPropOptimizer = js.native
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.rmsprop")
-    @js.native
-    def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double, centered: Boolean): RMSPropOptimizer = js.native
+    @scala.inline
+    def rmsprop(learningRate: Double): RMSPropOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any]).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double, momentum: Double): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Double, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double, momentum: Double, epsilon: Unit, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double, momentum: Unit, epsilon: Double): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double, momentum: Unit, epsilon: Double, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Double, momentum: Unit, epsilon: Unit, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Unit, momentum: Double): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Unit, momentum: Double, epsilon: Double): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Unit, momentum: Double, epsilon: Double, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Unit, momentum: Double, epsilon: Unit, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Unit, momentum: Unit, epsilon: Double): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Unit, momentum: Unit, epsilon: Double, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
+    @scala.inline
+    def rmsprop(learningRate: Double, decay: Unit, momentum: Unit, epsilon: Unit, centered: Boolean): RMSPropOptimizer = (^.asInstanceOf[js.Dynamic].applyDynamic("rmsprop")(learningRate.asInstanceOf[js.Any], decay.asInstanceOf[js.Any], momentum.asInstanceOf[js.Any], epsilon.asInstanceOf[js.Any], centered.asInstanceOf[js.Any])).asInstanceOf[RMSPropOptimizer]
     
     /**
       * Constructs a `tf.SGDOptimizer` that uses stochastic gradient descent.
@@ -556,8 +306,7 @@ object optimizerConstructorsMod {
       *
       * @doc {heading: 'Training', subheading: 'Optimizers', namespace: 'train'}
       */
-    @JSImport("@tensorflow/tfjs-core/dist/optimizers/optimizer_constructors", "OptimizerConstructors.sgd")
-    @js.native
-    def sgd(learningRate: Double): SGDOptimizer = js.native
+    @scala.inline
+    def sgd(learningRate: Double): SGDOptimizer = ^.asInstanceOf[js.Dynamic].applyDynamic("sgd")(learningRate.asInstanceOf[js.Any]).asInstanceOf[SGDOptimizer]
   }
 }

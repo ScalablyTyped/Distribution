@@ -6,15 +6,13 @@ import typings.babelWalk.mod.AncestorFunction
 import typings.babelWalk.mod.NodeType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `558`[TState] extends StObject {
   
-  var enter: js.UndefOr[AncestorFunction[ArgumentPlaceholder, TState]] = js.native
+  var enter: js.UndefOr[AncestorFunction[ArgumentPlaceholder, TState]] = js.undefined
   
-  var exit: js.UndefOr[AncestorFunction[ArgumentPlaceholder, TState]] = js.native
+  var exit: js.UndefOr[AncestorFunction[ArgumentPlaceholder, TState]] = js.undefined
 }
 object `558` {
   
@@ -25,7 +23,7 @@ object `558` {
   }
   
   @scala.inline
-  implicit class `558MutableBuilder`[Self <: `558`[_], TState] (val x: Self with `558`[TState]) extends AnyVal {
+  implicit class `558MutableBuilder`[Self <: `558`[?], TState] (val x: Self & `558`[TState]) extends AnyVal {
     
     @scala.inline
     def setEnter(value: (/* node */ NodeType[ArgumentPlaceholder], TState, /* ancestors */ js.Array[Node]) => Unit): Self = StObject.set(x, "enter", js.Any.fromFunction3(value))

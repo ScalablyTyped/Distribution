@@ -2,29 +2,27 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Global extends StObject {
   
-  var background: BackgroundProps = js.native
+  var background: BackgroundProps
   
-  var brand: String = js.native
+  var brand: String
   
-  var dividerColor: String = js.native
+  var dividerColor: String
   
-  var error: String = js.native
+  var error: String
   
-  var fontSizeBase: Double = js.native
+  var fontSizeBase: Double
   
-  var mask: String = js.native
+  var mask: String
   
-  var success: String = js.native
+  var success: String
   
-  var text: GlobalText = js.native
+  var text: GlobalText
   
-  var warning: String = js.native
+  var warning: String
 }
 object Global {
   

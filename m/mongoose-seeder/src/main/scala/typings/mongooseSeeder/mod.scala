@@ -3,27 +3,26 @@ package typings.mongooseSeeder
 import typings.q.mod.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("mongoose-seeder", "seed")
+  @JSImport("mongoose-seeder", JSImport.Namespace)
   @js.native
-  def seed(data: js.Any, callback: seedCallback): Unit = js.native
-  @JSImport("mongoose-seeder", "seed")
-  @js.native
-  def seed(data: js.Any, options: IOptions): Promise[_] = js.native
-  @JSImport("mongoose-seeder", "seed")
-  @js.native
-  def seed(data: js.Any, options: IOptions, callback: seedCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def seed(data: js.Any, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def seed(data: js.Any, options: IOptions): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def seed(data: js.Any, options: IOptions, callback: seedCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("seed")(data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait IOptions extends StObject {
     
-    var dropCollections: js.UndefOr[Boolean] = js.native
+    var dropCollections: js.UndefOr[Boolean] = js.undefined
     
-    var dropDatabase: js.UndefOr[Boolean] = js.native
+    var dropDatabase: js.UndefOr[Boolean] = js.undefined
   }
   object IOptions {
     

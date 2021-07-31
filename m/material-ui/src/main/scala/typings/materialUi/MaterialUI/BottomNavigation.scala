@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BottomNavigation {
@@ -16,14 +15,15 @@ object BottomNavigation {
   trait BottomNavigationItem
     extends Component[BottomNavigationItemProps, js.Object, js.Any]
   
-  @js.native
-  trait BottomNavigationItemProps extends SharedEnhancedButtonProps[BottomNavigationItem] {
+  trait BottomNavigationItemProps
+    extends StObject
+       with SharedEnhancedButtonProps[BottomNavigationItem] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var label: js.UndefOr[ReactNode] = js.native
+    var label: js.UndefOr[ReactNode] = js.undefined
   }
   object BottomNavigationItemProps {
     
@@ -56,14 +56,13 @@ object BottomNavigation {
     }
   }
   
-  @js.native
   trait BottomNavigationProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var selectedIndex: js.UndefOr[Double] = js.native
+    var selectedIndex: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object BottomNavigationProps {
     

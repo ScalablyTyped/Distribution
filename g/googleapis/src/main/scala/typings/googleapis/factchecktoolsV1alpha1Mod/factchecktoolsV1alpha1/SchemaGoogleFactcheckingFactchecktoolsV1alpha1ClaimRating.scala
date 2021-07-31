@@ -2,45 +2,43 @@ package typings.googleapis.factchecktoolsV1alpha1Mod.factchecktoolsV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about the claim rating.
   */
-@js.native
 trait SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating extends StObject {
   
   /**
     * For numeric ratings, the best value possible in the scale from worst to
     * best.&lt;br&gt; Corresponds to `ClaimReview.reviewRating.bestRating`.
     */
-  var bestRating: js.UndefOr[Double] = js.native
+  var bestRating: js.UndefOr[Double] = js.undefined
   
   /**
     * Corresponds to `ClaimReview.reviewRating.image`.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A numeric rating of this claim, in the range worstRating — bestRating
     * inclusive.&lt;br&gt; Corresponds to
     * `ClaimReview.reviewRating.ratingValue`.
     */
-  var ratingValue: js.UndefOr[Double] = js.native
+  var ratingValue: js.UndefOr[Double] = js.undefined
   
   /**
     * The truthfulness rating as a human-readible short word or
     * phrase.&lt;br&gt; Corresponds to
     * `ClaimReview.reviewRating.alternateName`.
     */
-  var textualRating: js.UndefOr[String] = js.native
+  var textualRating: js.UndefOr[String] = js.undefined
   
   /**
     * For numeric ratings, the worst value possible in the scale from worst to
     * best.&lt;br&gt; Corresponds to `ClaimReview.reviewRating.worstRating`.
     */
-  var worstRating: js.UndefOr[Double] = js.native
+  var worstRating: js.UndefOr[Double] = js.undefined
 }
 object SchemaGoogleFactcheckingFactchecktoolsV1alpha1ClaimRating {
   

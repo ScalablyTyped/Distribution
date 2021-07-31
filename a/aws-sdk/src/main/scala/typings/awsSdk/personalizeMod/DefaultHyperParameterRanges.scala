@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultHyperParameterRanges extends StObject {
   
   /**
     * The categorical hyperparameters and their default ranges.
     */
-  var categoricalHyperParameterRanges: js.UndefOr[DefaultCategoricalHyperParameterRanges] = js.native
+  var categoricalHyperParameterRanges: js.UndefOr[DefaultCategoricalHyperParameterRanges] = js.undefined
   
   /**
     * The continuous hyperparameters and their default ranges.
     */
-  var continuousHyperParameterRanges: js.UndefOr[DefaultContinuousHyperParameterRanges] = js.native
+  var continuousHyperParameterRanges: js.UndefOr[DefaultContinuousHyperParameterRanges] = js.undefined
   
   /**
     * The integer-valued hyperparameters and their default ranges.
     */
-  var integerHyperParameterRanges: js.UndefOr[DefaultIntegerHyperParameterRanges] = js.native
+  var integerHyperParameterRanges: js.UndefOr[DefaultIntegerHyperParameterRanges] = js.undefined
 }
 object DefaultHyperParameterRanges {
   

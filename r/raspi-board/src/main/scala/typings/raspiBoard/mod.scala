@@ -5,10 +5,13 @@ import typings.j5IoTypes.mod.IPinInfo
 import typings.j5IoTypes.mod.PeripheralType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("raspi-board", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("raspi-board", "VERSION_1_MODEL_A")
   @js.native
@@ -62,32 +65,27 @@ object mod {
   @js.native
   val VERSION_UNKNOWN: /* "unknown" */ String = js.native
   
-  @JSImport("raspi-board", "getBoardRevision")
-  @js.native
-  def getBoardRevision(): String = js.native
+  @scala.inline
+  def getBoardRevision(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBoardRevision")().asInstanceOf[String]
   
-  @JSImport("raspi-board", "getGpioNumber")
-  @js.native
-  def getGpioNumber(alias: String): Double | Null = js.native
-  @JSImport("raspi-board", "getGpioNumber")
-  @js.native
-  def getGpioNumber(alias: Double): Double | Null = js.native
+  @scala.inline
+  def getGpioNumber(alias: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getGpioNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  @scala.inline
+  def getGpioNumber(alias: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getGpioNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
-  @JSImport("raspi-board", "getPinNumber")
-  @js.native
-  def getPinNumber(alias: String): Double | Null = js.native
-  @JSImport("raspi-board", "getPinNumber")
-  @js.native
-  def getPinNumber(alias: Double): Double | Null = js.native
+  @scala.inline
+  def getPinNumber(alias: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPinNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
+  @scala.inline
+  def getPinNumber(alias: Double): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getPinNumber")(alias.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
-  @JSImport("raspi-board", "getPins")
-  @js.native
-  def getPins(): NumberDictionary[IRaspiPinInfo] = js.native
+  @scala.inline
+  def getPins(): NumberDictionary[IRaspiPinInfo] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPins")().asInstanceOf[NumberDictionary[IRaspiPinInfo]]
   
-  @js.native
-  trait IRaspiPinInfo extends IPinInfo {
+  trait IRaspiPinInfo
+    extends StObject
+       with IPinInfo {
     
-    var gpio: Double = js.native
+    var gpio: Double
   }
   object IRaspiPinInfo {
     

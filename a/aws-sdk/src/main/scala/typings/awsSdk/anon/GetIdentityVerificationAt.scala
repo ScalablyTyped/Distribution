@@ -5,20 +5,18 @@ import typings.awsSdk.sesMod.Identity
 import typings.awsSdk.sesMod.IdentityList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/ses.GetIdentityVerificationAttributesRequest & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait GetIdentityVerificationAt extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * A list of identities.
     */
-  var Identities: IdentityList = js.native
+  var Identities: IdentityList
 }
 object GetIdentityVerificationAt {
   

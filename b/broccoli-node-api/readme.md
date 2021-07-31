@@ -11,8 +11,8 @@ Broccoli Plugin API Types
 | Full name          | broccoli-node-api |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 4 |
-| # downloads        | 3778129 |
+| # dependents       | 6 |
+| # downloads        | 4963360 |
 | # stars            | 0 |
 
 ## Links

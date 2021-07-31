@@ -8,7 +8,6 @@ import typings.ckeditor.CKEDITOR.ui.dialog.button
 import typings.ckeditor.CKEDITOR.ui.dialog.uiElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -79,34 +78,33 @@ trait dialog extends StObject {
 }
 object dialog {
   
-  @js.native
   trait IDialogDefinition extends StObject {
     
-    var buttons: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.dialog.definition.button]] = js.native
+    var buttons: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.dialog.definition.button]] = js.undefined
     
-    var contents: js.UndefOr[js.Array[content]] = js.native
+    var contents: js.UndefOr[js.Array[content]] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var minHeight: js.UndefOr[Double] = js.native
+    var minHeight: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var onCancel: js.UndefOr[js.Function0[Unit]] = js.native
+    var onCancel: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onHide: js.UndefOr[js.Function0[Unit]] = js.native
+    var onHide: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOk: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOk: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var resizable: js.UndefOr[Double] = js.native
+    var resizable: js.UndefOr[Double] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object IDialogDefinition {
     
@@ -207,11 +205,11 @@ object dialog {
   
   object definition {
     
-    @js.native
     trait button
-      extends typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
+      extends StObject
+         with typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
       
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
     }
     object button {
       
@@ -232,13 +230,13 @@ object dialog {
       }
     }
     
-    @js.native
     trait checkbox
-      extends typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
+      extends StObject
+         with typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
       
-      var default: js.UndefOr[String] = js.native
+      var default: js.UndefOr[String] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     }
     object checkbox {
       
@@ -265,18 +263,17 @@ object dialog {
       }
     }
     
-    @js.native
     trait content extends StObject {
       
-      var accessKey: js.UndefOr[String] = js.native
+      var accessKey: js.UndefOr[String] = js.undefined
       
-      var elements: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.dialog.definition.uiElement]] = js.native
+      var elements: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.dialog.definition.uiElement]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object content {
       
@@ -324,14 +321,15 @@ object dialog {
       }
     }
     
-    @js.native
-    trait file extends labeledElement {
+    trait file
+      extends StObject
+         with labeledElement {
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var size: js.UndefOr[String] = js.native
+      var size: js.UndefOr[String] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     }
     object file {
       
@@ -364,15 +362,15 @@ object dialog {
       }
     }
     
-    @js.native
     trait fileButton
-      extends typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
+      extends StObject
+         with typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
       
-      var filebrowser: js.UndefOr[String] = js.native
+      var filebrowser: js.UndefOr[String] = js.undefined
       
-      var `for`: js.UndefOr[String] = js.native
+      var `for`: js.UndefOr[String] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     }
     object fileButton {
       
@@ -405,19 +403,19 @@ object dialog {
       }
     }
     
-    @js.native
     trait hbox
-      extends typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
+      extends StObject
+         with typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
       
-      var children: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement]] = js.native
+      var children: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement]] = js.undefined
       
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
-      var padding: js.UndefOr[Double] = js.native
+      var padding: js.UndefOr[Double] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
       
-      var widths: js.UndefOr[js.Array[Double]] = js.native
+      var widths: js.UndefOr[js.Array[Double]] = js.undefined
     }
     object hbox {
       
@@ -468,11 +466,11 @@ object dialog {
       }
     }
     
-    @js.native
     trait html
-      extends typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
+      extends StObject
+         with typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
       
-      var html: js.UndefOr[String] = js.native
+      var html: js.UndefOr[String] = js.undefined
     }
     object html {
       
@@ -493,19 +491,19 @@ object dialog {
       }
     }
     
-    @js.native
     trait labeledElement
-      extends typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
+      extends StObject
+         with typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
       
-      var controlStyle: js.UndefOr[String] = js.native
+      var controlStyle: js.UndefOr[String] = js.undefined
       
-      var inputStyle: js.UndefOr[String] = js.native
+      var inputStyle: js.UndefOr[String] = js.undefined
       
-      var labelLayout: js.UndefOr[String] = js.native
+      var labelLayout: js.UndefOr[String] = js.undefined
       
-      var labelStyle: js.UndefOr[String] = js.native
+      var labelStyle: js.UndefOr[String] = js.undefined
       
-      var widths: js.UndefOr[js.Array[Double]] = js.native
+      var widths: js.UndefOr[js.Array[Double]] = js.undefined
     }
     object labeledElement {
       
@@ -553,14 +551,15 @@ object dialog {
       }
     }
     
-    @js.native
-    trait radio extends labeledElement {
+    trait radio
+      extends StObject
+         with labeledElement {
       
-      var default: js.UndefOr[String] = js.native
+      var default: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[js.Array[String] | String]] = js.native
+      var items: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     }
     object radio {
       
@@ -596,18 +595,19 @@ object dialog {
       }
     }
     
-    @js.native
-    trait select extends labeledElement {
+    trait select
+      extends StObject
+         with labeledElement {
       
-      var default: js.UndefOr[String] = js.native
+      var default: js.UndefOr[String] = js.undefined
       
-      var items: js.UndefOr[js.Array[js.Array[String] | String]] = js.native
+      var items: js.UndefOr[js.Array[js.Array[String] | String]] = js.undefined
       
-      var multiple: js.UndefOr[Boolean] = js.native
+      var multiple: js.UndefOr[Boolean] = js.undefined
       
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     }
     object select {
       
@@ -655,18 +655,19 @@ object dialog {
       }
     }
     
-    @js.native
-    trait textInput extends labeledElement {
+    trait textInput
+      extends StObject
+         with labeledElement {
       
-      var default: js.UndefOr[String] = js.native
+      var default: js.UndefOr[String] = js.undefined
       
-      var bidi: js.UndefOr[Boolean] = js.native
+      var bidi: js.UndefOr[Boolean] = js.undefined
       
-      var maxLength: js.UndefOr[Double] = js.native
+      var maxLength: js.UndefOr[Double] = js.undefined
       
-      var size: js.UndefOr[Double] = js.native
+      var size: js.UndefOr[Double] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     }
     object textInput {
       
@@ -711,18 +712,19 @@ object dialog {
       }
     }
     
-    @js.native
-    trait textarea extends labeledElement {
+    trait textarea
+      extends StObject
+         with labeledElement {
       
-      var default: js.UndefOr[String] = js.native
+      var default: js.UndefOr[String] = js.undefined
       
-      var bidi: js.UndefOr[Boolean] = js.native
+      var bidi: js.UndefOr[Boolean] = js.undefined
       
-      var cols: js.UndefOr[Double] = js.native
+      var cols: js.UndefOr[Double] = js.undefined
       
-      var rows: js.UndefOr[Double] = js.native
+      var rows: js.UndefOr[Double] = js.undefined
       
-      var validate: js.UndefOr[js.Function0[Boolean]] = js.native
+      var validate: js.UndefOr[js.Function0[Boolean]] = js.undefined
     }
     object textarea {
       
@@ -767,34 +769,33 @@ object dialog {
       }
     }
     
-    @js.native
     trait uiElement extends StObject {
       
-      var align: js.UndefOr[String] = js.native
+      var align: js.UndefOr[String] = js.undefined
       
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var commit: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.native
+      var commit: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var onHide: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.native
+      var onHide: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.undefined
       
-      var onLoad: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.native
+      var onLoad: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.undefined
       
-      var onShow: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.native
+      var onShow: js.UndefOr[js.Function1[/* elem */ this.type, Unit]] = js.undefined
       
-      var requiredContent: js.UndefOr[String | StringDictionary[js.Any] | style] = js.native
+      var requiredContent: js.UndefOr[String | StringDictionary[js.Any] | style] = js.undefined
       
-      var setup: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.native
+      var setup: js.UndefOr[js.Function1[/* widget */ widget, Unit]] = js.undefined
       
-      var style: js.UndefOr[String] = js.native
+      var style: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object uiElement {
       
@@ -887,21 +888,21 @@ object dialog {
       }
     }
     
-    @js.native
     trait vbox
-      extends typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
+      extends StObject
+         with typings.ckeditor.CKEDITOR.dialog.definition.uiElement {
       
-      var children: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement]] = js.native
+      var children: js.UndefOr[js.Array[typings.ckeditor.CKEDITOR.ui.dialog.uiElement]] = js.undefined
       
-      var expand: js.UndefOr[Boolean] = js.native
+      var expand: js.UndefOr[Boolean] = js.undefined
       
-      var heights: js.UndefOr[js.Array[Double]] = js.native
+      var heights: js.UndefOr[js.Array[Double]] = js.undefined
       
-      var padding: js.UndefOr[Double] = js.native
+      var padding: js.UndefOr[Double] = js.undefined
       
-      var styles: js.UndefOr[String] = js.native
+      var styles: js.UndefOr[String] = js.undefined
       
-      var width: js.UndefOr[js.Array[Double]] = js.native
+      var width: js.UndefOr[js.Array[Double]] = js.undefined
     }
     object vbox {
       

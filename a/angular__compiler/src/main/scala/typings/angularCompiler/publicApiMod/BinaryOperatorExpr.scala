@@ -2,7 +2,6 @@ package typings.angularCompiler.publicApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "BinaryOperatorExpr")
@@ -24,14 +23,14 @@ class BinaryOperatorExpr protected ()
     operator: typings.angularCompiler.outputAstMod.BinaryOperator,
     lhs: typings.angularCompiler.outputAstMod.Expression,
     rhs: typings.angularCompiler.outputAstMod.Expression,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     operator: typings.angularCompiler.outputAstMod.BinaryOperator,
     lhs: typings.angularCompiler.outputAstMod.Expression,
     rhs: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Null,
+    `type`: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -45,24 +44,8 @@ class BinaryOperatorExpr protected ()
     operator: typings.angularCompiler.outputAstMod.BinaryOperator,
     lhs: typings.angularCompiler.outputAstMod.Expression,
     rhs: typings.angularCompiler.outputAstMod.Expression,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: js.UndefOr[scala.Nothing],
-    parens: Boolean
-  ) = this()
-  def this(
-    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
-    lhs: typings.angularCompiler.outputAstMod.Expression,
-    rhs: typings.angularCompiler.outputAstMod.Expression,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     sourceSpan: Null,
-    parens: Boolean
-  ) = this()
-  def this(
-    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
-    lhs: typings.angularCompiler.outputAstMod.Expression,
-    rhs: typings.angularCompiler.outputAstMod.Expression,
-    `type`: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     parens: Boolean
   ) = this()
   def this(
@@ -70,15 +53,7 @@ class BinaryOperatorExpr protected ()
     lhs: typings.angularCompiler.outputAstMod.Expression,
     rhs: typings.angularCompiler.outputAstMod.Expression,
     `type`: Null,
-    sourceSpan: js.UndefOr[scala.Nothing],
-    parens: Boolean
-  ) = this()
-  def this(
-    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
-    lhs: typings.angularCompiler.outputAstMod.Expression,
-    rhs: typings.angularCompiler.outputAstMod.Expression,
-    `type`: Null,
-    sourceSpan: Null,
+    sourceSpan: Unit,
     parens: Boolean
   ) = this()
   def this(
@@ -93,8 +68,24 @@ class BinaryOperatorExpr protected ()
     operator: typings.angularCompiler.outputAstMod.BinaryOperator,
     lhs: typings.angularCompiler.outputAstMod.Expression,
     rhs: typings.angularCompiler.outputAstMod.Expression,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    sourceSpan: js.UndefOr[scala.Nothing],
+    `type`: Unit,
+    sourceSpan: Null,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: Unit,
+    sourceSpan: Unit,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: Unit,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan,
     parens: Boolean
   ) = this()
   def this(
@@ -103,6 +94,14 @@ class BinaryOperatorExpr protected ()
     rhs: typings.angularCompiler.outputAstMod.Expression,
     `type`: typings.angularCompiler.outputAstMod.Type,
     sourceSpan: Null,
+    parens: Boolean
+  ) = this()
+  def this(
+    operator: typings.angularCompiler.outputAstMod.BinaryOperator,
+    lhs: typings.angularCompiler.outputAstMod.Expression,
+    rhs: typings.angularCompiler.outputAstMod.Expression,
+    `type`: typings.angularCompiler.outputAstMod.Type,
+    sourceSpan: Unit,
     parens: Boolean
   ) = this()
   def this(

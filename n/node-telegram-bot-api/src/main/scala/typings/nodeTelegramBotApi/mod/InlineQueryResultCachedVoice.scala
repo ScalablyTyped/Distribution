@@ -3,30 +3,29 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.voice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultCachedVoice
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var title: String = js.native
+  var title: String
   
-  var `type`: voice = js.native
+  var `type`: voice
   
-  var voice_file_id: String = js.native
+  var voice_file_id: String
 }
 object InlineQueryResultCachedVoice {
   
   @scala.inline
-  def apply(id: String, title: String, `type`: voice, voice_file_id: String): InlineQueryResultCachedVoice = {
+  def apply(id: String, title: String, voice_file_id: String): InlineQueryResultCachedVoice = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any], voice_file_id = voice_file_id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("voice")
     __obj.asInstanceOf[InlineQueryResultCachedVoice]
   }
   

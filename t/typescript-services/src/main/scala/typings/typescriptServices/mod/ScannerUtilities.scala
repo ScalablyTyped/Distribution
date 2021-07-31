@@ -2,17 +2,20 @@ package typings.typescriptServices.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typescript-services", "ScannerUtilities")
 @js.native
 class ScannerUtilities ()
-  extends typings.typescriptServices.TypeScript.ScannerUtilities
+  extends StObject
+     with typings.typescriptServices.TypeScript.ScannerUtilities
 object ScannerUtilities {
   
-  /* static member */
-  @JSImport("typescript-services", "ScannerUtilities.identifierKind")
+  @JSImport("typescript-services", "ScannerUtilities")
   @js.native
-  def identifierKind(array: js.Array[Double], startIndex: Double, length: Double): typings.typescriptServices.TypeScript.SyntaxKind = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def identifierKind(array: js.Array[Double], startIndex: Double, length: Double): typings.typescriptServices.TypeScript.SyntaxKind = (^.asInstanceOf[js.Dynamic].applyDynamic("identifierKind")(array.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[typings.typescriptServices.TypeScript.SyntaxKind]
 }

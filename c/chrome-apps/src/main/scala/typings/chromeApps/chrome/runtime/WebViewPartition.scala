@@ -2,10 +2,8 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebViewPartition extends StObject {
   
   /**
@@ -15,9 +13,9 @@ trait WebViewPartition extends StObject {
     * ['img/epic.html']
     *
     */
-  var accessible_resources: js.Array[String] = js.native
+  var accessible_resources: js.Array[String]
   
-  var name: String = js.native
+  var name: String
 }
 object WebViewPartition {
   

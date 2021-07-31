@@ -2,16 +2,14 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDomainResult extends StObject {
   
   /**
     * An array of key-value pairs containing information about your get domain request.
     */
-  var domain: js.UndefOr[Domain] = js.native
+  var domain: js.UndefOr[Domain] = js.undefined
 }
 object GetDomainResult {
   

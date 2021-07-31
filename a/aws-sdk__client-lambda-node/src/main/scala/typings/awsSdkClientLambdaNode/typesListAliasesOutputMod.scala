@@ -5,29 +5,29 @@ import typings.awsSdkClientLambdaNode.typesAliasConfigurationMod.UnmarshalledAli
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListAliasesOutputMod {
   
-  @js.native
-  trait ListAliasesOutput extends OutputTypesUnion {
+  trait ListAliasesOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>A list of aliases.</p>
       */
-    var Aliases: js.UndefOr[js.Array[UnmarshalledAliasConfiguration]] = js.native
+    var Aliases: js.UndefOr[js.Array[UnmarshalledAliasConfiguration]] = js.undefined
     
     /**
       * <p>A string, present if there are more aliases.</p>
       */
-    var NextMarker: js.UndefOr[String] = js.native
+    var NextMarker: js.UndefOr[String] = js.undefined
   }
   object ListAliasesOutput {
     

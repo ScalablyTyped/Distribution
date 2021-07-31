@@ -2,21 +2,19 @@ package typings.awsSdk.detectiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMembersResponse extends StObject {
   
   /**
     * The member account details that Detective is returning in response to the request.
     */
-  var MemberDetails: js.UndefOr[MemberDetailList] = js.native
+  var MemberDetails: js.UndefOr[MemberDetailList] = js.undefined
   
   /**
     * The requested member accounts for which Detective was unable to return member details. For each account, provides the reason why the request could not be processed.
     */
-  var UnprocessedAccounts: js.UndefOr[UnprocessedAccountList] = js.native
+  var UnprocessedAccounts: js.UndefOr[UnprocessedAccountList] = js.undefined
 }
 object GetMembersResponse {
   

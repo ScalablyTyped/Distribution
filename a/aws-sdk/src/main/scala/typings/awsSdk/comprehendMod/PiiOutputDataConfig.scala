@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PiiOutputDataConfig extends StObject {
   
   /**
     * ID for the AWS Key Management Service (KMS) key that Amazon Comprehend uses to encrypt the output results from an analysis job.
     */
-  var KmsKeyId: js.UndefOr[typings.awsSdk.comprehendMod.KmsKeyId] = js.native
+  var KmsKeyId: js.UndefOr[typings.awsSdk.comprehendMod.KmsKeyId] = js.undefined
   
   /**
     * When you use the PiiOutputDataConfig object with asynchronous operations, you specify the Amazon S3 location where you want to write the output data. 
     */
-  var S3Uri: typings.awsSdk.comprehendMod.S3Uri = js.native
+  var S3Uri: typings.awsSdk.comprehendMod.S3Uri
 }
 object PiiOutputDataConfig {
   

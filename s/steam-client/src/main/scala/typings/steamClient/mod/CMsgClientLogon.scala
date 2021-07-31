@@ -2,21 +2,19 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CMsgClientLogon extends StObject {
   
   /**
     * Your steam login
     */
-  var account_name: String = js.native
+  var account_name: String
   
   /**
     * Steam Guard code. Must be valid if provided, otherwise the logon will fail. Note that Steam Guard codes expire after a short while
     */
-  var auth_code: js.UndefOr[String] = js.native
+  var auth_code: js.UndefOr[String] = js.undefined
   
   /**
     * SHA1 hash of your sentry file.
@@ -25,12 +23,12 @@ trait CMsgClientLogon extends StObject {
     * If no Steam Guard code is provided, the hash must be already registered with this account, otherwise it's ignored.
     * This value will be ignored if you enable 2FA.
     */
-  var sha_sentryfile: js.UndefOr[String] = js.native
+  var sha_sentryfile: js.UndefOr[String] = js.undefined
   
   /**
     * Two-factor authentication code provided by the Steam mobile application. You will have to provide this code every time you log in if your account uses 2FA.
     */
-  var two_factor_code: js.UndefOr[String] = js.native
+  var two_factor_code: js.UndefOr[String] = js.undefined
 }
 object CMsgClientLogon {
   

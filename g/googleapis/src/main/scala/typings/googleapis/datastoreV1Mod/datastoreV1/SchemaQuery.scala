@@ -2,13 +2,11 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A query for entities.
   */
-@js.native
 trait SchemaQuery extends StObject {
   
   /**
@@ -16,55 +14,55 @@ trait SchemaQuery extends StObject {
     * result for each distinct combination of values for the given properties
     * (if empty, all results are returned).
     */
-  var distinctOn: js.UndefOr[js.Array[SchemaPropertyReference]] = js.native
+  var distinctOn: js.UndefOr[js.Array[SchemaPropertyReference]] = js.undefined
   
   /**
     * An ending point for the query results. Query cursors are returned in
     * query result batches and [can only be used to limit the same
     * query](https://cloud.google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
     */
-  var endCursor: js.UndefOr[String] = js.native
+  var endCursor: js.UndefOr[String] = js.undefined
   
   /**
     * The filter to apply.
     */
-  var filter: js.UndefOr[SchemaFilter] = js.native
+  var filter: js.UndefOr[SchemaFilter] = js.undefined
   
   /**
     * The kinds to query (if empty, returns entities of all kinds). Currently
     * at most 1 kind may be specified.
     */
-  var kind: js.UndefOr[js.Array[SchemaKindExpression]] = js.native
+  var kind: js.UndefOr[js.Array[SchemaKindExpression]] = js.undefined
   
   /**
     * The maximum number of results to return. Applies after all other
     * constraints. Optional. Unspecified is interpreted as no limit. Must be
     * &gt;= 0 if specified.
     */
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of results to skip. Applies before limit, but after all other
     * constraints. Optional. Must be &gt;= 0 if specified.
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * The order to apply to the query results (if empty, order is unspecified).
     */
-  var order: js.UndefOr[js.Array[SchemaPropertyOrder]] = js.native
+  var order: js.UndefOr[js.Array[SchemaPropertyOrder]] = js.undefined
   
   /**
     * The projection to return. Defaults to returning all properties.
     */
-  var projection: js.UndefOr[js.Array[SchemaProjection]] = js.native
+  var projection: js.UndefOr[js.Array[SchemaProjection]] = js.undefined
   
   /**
     * A starting point for the query results. Query cursors are returned in
     * query result batches and [can only be used to continue the same
     * query](https://cloud.google.com/datastore/docs/concepts/queries#cursors_limits_and_offsets).
     */
-  var startCursor: js.UndefOr[String] = js.native
+  var startCursor: js.UndefOr[String] = js.undefined
 }
 object SchemaQuery {
   

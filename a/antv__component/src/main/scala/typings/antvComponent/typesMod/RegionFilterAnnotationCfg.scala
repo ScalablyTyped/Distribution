@@ -5,33 +5,33 @@ import typings.antvGBase.interfacesMod.IShape
 import typings.antvGBase.typesMod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RegionFilterAnnotationCfg extends GroupComponentCfg {
+trait RegionFilterAnnotationCfg
+  extends StObject
+     with GroupComponentCfg {
   
   /**
     * 染色色值
     */
-  var color: String = js.native
+  var color: String
   
   /**
     * 结束点
     * @type {Point}
     */
-  var end: Point = js.native
+  var end: Point
   
   /**
     * 图形上的 Shapes
     */
-  var shapes: js.Array[IShape] = js.native
+  var shapes: js.Array[IShape]
   
   /**
     * 起始点
     * @type {Point}
     */
-  var start: Point = js.native
+  var start: Point
 }
 object RegionFilterAnnotationCfg {
   

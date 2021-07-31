@@ -2,17 +2,15 @@ package typings.jqueryui.JQueryUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeEffect extends StObject {
   
-  var origin: js.UndefOr[js.Array[String]] = js.native
+  var origin: js.UndefOr[js.Array[String]] = js.undefined
   
-  var scale: js.UndefOr[String] = js.native
+  var scale: js.UndefOr[String] = js.undefined
   
-  var to: js.UndefOr[js.Any] = js.native
+  var to: js.UndefOr[js.Any] = js.undefined
 }
 object SizeEffect {
   

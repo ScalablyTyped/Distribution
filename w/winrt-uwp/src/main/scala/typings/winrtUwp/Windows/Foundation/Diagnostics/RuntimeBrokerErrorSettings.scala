@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Foundation.Diagnostics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents diagnostic error reporting settings. */
-@js.native
 trait RuntimeBrokerErrorSettings extends StObject {
   
   /**
     * Gets the type of error reporting for the error object.
     * @return One of the enumeration values.
     */
-  def getErrorOptions(): ErrorOptions = js.native
+  def getErrorOptions(): ErrorOptions
   
   /**
     * Sets the type of error reporting for the error object.
     * @param value One of the enumeration values.
     */
-  def setErrorOptions(value: ErrorOptions): Unit = js.native
+  def setErrorOptions(value: ErrorOptions): Unit
 }
 object RuntimeBrokerErrorSettings {
   

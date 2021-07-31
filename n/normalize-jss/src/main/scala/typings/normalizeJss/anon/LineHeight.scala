@@ -2,17 +2,15 @@ package typings.normalizeJss.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineHeight extends StObject {
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var lineHeight: String = js.native
+  var lineHeight: String
   
-  var textSizeAdjust: String = js.native
+  var textSizeAdjust: String
 }
 object LineHeight {
   

@@ -2,28 +2,26 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SyncObject extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Outlook.SyncObject_typekey")
-  var OutlookDotSyncObject_typekey: SyncObject = js.native
+  var OutlookDotSyncObject_typekey: SyncObject
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  def Start(): Unit = js.native
+  def Start(): Unit
   
-  def Stop(): Unit = js.native
+  def Stop(): Unit
 }
 object SyncObject {
   

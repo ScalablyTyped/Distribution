@@ -4,10 +4,8 @@ import org.scalablytyped.runtime.TopLevel
 import typings.hermesProfileTransformer.phasesMod.EventsPhase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedEventProperties extends StObject {
   
   /**
@@ -16,53 +14,53 @@ trait SharedEventProperties extends StObject {
   var args: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in string ]: any}
-    */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties with TopLevel[js.Any]
-  ] = js.native
+    */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * event category
     */
-  var cat: js.UndefOr[String] = js.native
+  var cat: js.UndefOr[String] = js.undefined
   
   /**
     * a fixed color name
     */
-  var cname: js.UndefOr[String] = js.native
+  var cname: js.UndefOr[String] = js.undefined
   
   /**
     * name of the event
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * event type (phase)
     */
-  var ph: EventsPhase = js.native
+  var ph: EventsPhase
   
   /**
     * process ID
     */
-  var pid: js.UndefOr[Double] = js.native
+  var pid: js.UndefOr[Double] = js.undefined
   
   /**
     * id for a stackFrame object
     */
-  var sf: js.UndefOr[Double] = js.native
+  var sf: js.UndefOr[Double] = js.undefined
   
   /**
     * thread ID
     */
-  var tid: js.UndefOr[Double] = js.native
+  var tid: js.UndefOr[Double] = js.undefined
   
   /**
     * tracing clock timestamp
     */
-  var ts: js.UndefOr[Double] = js.native
+  var ts: js.UndefOr[Double] = js.undefined
   
   /**
     * thread clock timestamp
     */
-  var tts: js.UndefOr[Double] = js.native
+  var tts: js.UndefOr[Double] = js.undefined
 }
 object SharedEventProperties {
   
@@ -79,7 +77,7 @@ object SharedEventProperties {
     def setArgs(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in string ]: any}
-      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties with TopLevel[js.Any]
+      */ typings.hermesProfileTransformer.hermesProfileTransformerStrings.SharedEventProperties & TopLevel[js.Any]
     ): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
     
     @scala.inline

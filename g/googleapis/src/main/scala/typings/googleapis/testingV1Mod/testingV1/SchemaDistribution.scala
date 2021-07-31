@@ -2,26 +2,24 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data about the relative number of devices running a given configuration of
   * the Android platform.
   */
-@js.native
 trait SchemaDistribution extends StObject {
   
   /**
     * Output only. The estimated fraction (0-1) of the total market with this
     * configuration.
     */
-  var marketShare: js.UndefOr[Double] = js.native
+  var marketShare: js.UndefOr[Double] = js.undefined
   
   /**
     * Output only. The time this distribution was measured.
     */
-  var measurementTime: js.UndefOr[String] = js.native
+  var measurementTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDistribution {
   

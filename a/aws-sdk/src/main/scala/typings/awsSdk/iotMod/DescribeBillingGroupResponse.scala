@@ -2,41 +2,39 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBillingGroupResponse extends StObject {
   
   /**
     * The ARN of the billing group.
     */
-  var billingGroupArn: js.UndefOr[BillingGroupArn] = js.native
+  var billingGroupArn: js.UndefOr[BillingGroupArn] = js.undefined
   
   /**
     * The ID of the billing group.
     */
-  var billingGroupId: js.UndefOr[BillingGroupId] = js.native
+  var billingGroupId: js.UndefOr[BillingGroupId] = js.undefined
   
   /**
     * Additional information about the billing group.
     */
-  var billingGroupMetadata: js.UndefOr[BillingGroupMetadata] = js.native
+  var billingGroupMetadata: js.UndefOr[BillingGroupMetadata] = js.undefined
   
   /**
     * The name of the billing group.
     */
-  var billingGroupName: js.UndefOr[BillingGroupName] = js.native
+  var billingGroupName: js.UndefOr[BillingGroupName] = js.undefined
   
   /**
     * The properties of the billing group.
     */
-  var billingGroupProperties: js.UndefOr[BillingGroupProperties] = js.native
+  var billingGroupProperties: js.UndefOr[BillingGroupProperties] = js.undefined
   
   /**
     * The version of the billing group.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
 }
 object DescribeBillingGroupResponse {
   

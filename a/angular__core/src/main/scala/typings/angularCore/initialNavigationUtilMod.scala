@@ -4,16 +4,17 @@ import typings.typescript.mod.Node
 import typings.typescript.mod.TypeChecker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object initialNavigationUtilMod {
   
-  @JSImport("@angular/core/schematics/migrations/initial-navigation/util", "isExtraOptions")
+  @JSImport("@angular/core/schematics/migrations/initial-navigation/util", JSImport.Namespace)
   @js.native
-  def isExtraOptions(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core/schematics/migrations/initial-navigation/util", "isRouterModuleForRoot")
-  @js.native
-  def isRouterModuleForRoot(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.CallExpression */ Boolean = js.native
+  @scala.inline
+  def isExtraOptions(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.TypeReferenceNode */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isExtraOptions")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is typescript.typescript.TypeReferenceNode */ Boolean]
+  
+  @scala.inline
+  def isRouterModuleForRoot(typeChecker: TypeChecker, node: Node): /* is typescript.typescript.CallExpression */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isRouterModuleForRoot")(typeChecker.asInstanceOf[js.Any], node.asInstanceOf[js.Any])).asInstanceOf[/* is typescript.typescript.CallExpression */ Boolean]
 }

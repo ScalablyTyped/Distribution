@@ -2,21 +2,19 @@ package typings.winrt.Windows.Security.Cryptography.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IHashAlgorithmNamesStatics extends StObject {
   
-  var md5: String = js.native
+  var md5: String
   
-  var sha1: String = js.native
+  var sha1: String
   
-  var sha256: String = js.native
+  var sha256: String
   
-  var sha384: String = js.native
+  var sha384: String
   
-  var sha512: String = js.native
+  var sha512: String
 }
 object IHashAlgorithmNamesStatics {
   

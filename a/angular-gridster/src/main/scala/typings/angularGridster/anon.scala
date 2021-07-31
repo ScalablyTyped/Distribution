@@ -4,40 +4,38 @@ import typings.angular.mod.IAngularEvent
 import typings.angular.mod.IAugmentedJQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Drag extends StObject {
     
     // optional callback fired when item is moved,
     var drag: js.UndefOr[
         js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     // whether the items are resizable
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     // optional selector for drag handle
-    var handle: js.UndefOr[String] = js.native
+    var handle: js.UndefOr[String] = js.undefined
     
     // Distance in pixels from the edge of the viewport after which the viewport should scroll, relative to pointer
-    var scrollSensitivity: js.UndefOr[Double] = js.native
+    var scrollSensitivity: js.UndefOr[Double] = js.undefined
     
     // Speed at which the window should scroll once the mouse pointer gets within scrollSensitivity distance
-    var scrollSpeed: js.UndefOr[Double] = js.native
+    var scrollSpeed: js.UndefOr[Double] = js.undefined
     
     // optional callback fired when drag is started
     var start: js.UndefOr[
         js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     // optional callback fired when item is finished dragging
     var stop: js.UndefOr[
         js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Drag {
     
@@ -94,30 +92,29 @@ object anon {
     }
   }
   
-  @js.native
   trait Enabled extends StObject {
     
     // whether the items are resizable
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     // location of the resize handles
     // e.g // ['s', 'e', 'n', 'w', 'se', 'ne', 'sw', 'nw']
-    var handles: js.UndefOr[js.Array[String]] = js.native
+    var handles: js.UndefOr[js.Array[String]] = js.undefined
     
     // optional callback fired when item is resized
     var resize: js.UndefOr[
         js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     // optional callback fired when drag is started
     var start: js.UndefOr[
         js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
     
     // optional callback fired when item is finished dragging
     var stop: js.UndefOr[
         js.Function3[/* event */ IAngularEvent, /* $element */ IAugmentedJQuery, /* options */ js.Any, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Enabled {
     

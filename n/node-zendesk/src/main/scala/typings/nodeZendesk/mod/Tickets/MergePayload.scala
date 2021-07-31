@@ -3,17 +3,15 @@ package typings.nodeZendesk.mod.Tickets
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MergePayload extends StObject {
   
-  val ids: js.Array[ZendeskID] = js.native
+  val ids: js.Array[ZendeskID]
   
-  val source_comment: js.UndefOr[String | Null] = js.native
+  val source_comment: js.UndefOr[String | Null] = js.undefined
   
-  val target_comment: js.UndefOr[String | Null] = js.native
+  val target_comment: js.UndefOr[String | Null] = js.undefined
 }
 object MergePayload {
   

@@ -2,27 +2,27 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SparklineSeriesOverEvent extends SparklineEvent {
+trait SparklineSeriesOverEvent
+  extends StObject
+     with SparklineEvent {
   
-  var category: js.UndefOr[js.Any] = js.native
+  var category: js.UndefOr[js.Any] = js.undefined
   
-  var dataItem: js.UndefOr[js.Any] = js.native
+  var dataItem: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
   
-  var percentage: js.UndefOr[js.Any] = js.native
+  var percentage: js.UndefOr[js.Any] = js.undefined
   
-  var series: js.UndefOr[SparklineSeriesOverEventSeries] = js.native
+  var series: js.UndefOr[SparklineSeriesOverEventSeries] = js.undefined
   
-  var stackValue: js.UndefOr[js.Any] = js.native
+  var stackValue: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object SparklineSeriesOverEvent {
   

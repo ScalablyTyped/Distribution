@@ -6,26 +6,26 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePostsPublish extends StandardParameters {
+trait ParamsResourcePostsPublish
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The ID of the Blog.
     */
-  var blogId: js.UndefOr[String] = js.native
+  var blogId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the Post.
     */
-  var postId: js.UndefOr[String] = js.native
+  var postId: js.UndefOr[String] = js.undefined
   
   /**
     * Optional date and time to schedule the publishing of the Blog. If no
@@ -33,7 +33,7 @@ trait ParamsResourcePostsPublish extends StandardParameters {
     * previously saved schedule date (if present), or the current time. If a
     * future date is given, the post will be scheduled to be published.
     */
-  var publishDate: js.UndefOr[String] = js.native
+  var publishDate: js.UndefOr[String] = js.undefined
 }
 object ParamsResourcePostsPublish {
   

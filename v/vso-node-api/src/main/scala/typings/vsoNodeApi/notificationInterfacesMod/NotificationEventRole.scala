@@ -2,26 +2,24 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationEventRole extends StObject {
   
   /**
     * Gets or sets an Id for that role, this id is used by the event.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Gets or sets the Name for that role, this name is used for UI display.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Gets or sets whether this role can be a group or just an individual user
     */
-  var supportsGroups: Boolean = js.native
+  var supportsGroups: Boolean
 }
 object NotificationEventRole {
   

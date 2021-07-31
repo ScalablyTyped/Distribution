@@ -5,28 +5,26 @@ import typings.activexStdole.stdole.StdFont
 import typings.activexStdole.stdole.StdPicture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlkFrameHeader extends StObject {
   
-  var Alignment: OlAlignment = js.native
+  var Alignment: OlAlignment
   
-  var Caption: String = js.native
+  var Caption: String
   
-  var Enabled: Boolean = js.native
+  var Enabled: Boolean
   
-  val Font: StdFont = js.native
+  val Font: StdFont
   
-  var ForeColor: OLE_COLOR = js.native
+  var ForeColor: OLE_COLOR
   
-  var MouseIcon: StdPicture = js.native
+  var MouseIcon: StdPicture
   
-  var MousePointer: OlMousePointer = js.native
+  var MousePointer: OlMousePointer
   
   @JSName("Outlook.OlkFrameHeader_typekey")
-  var OutlookDotOlkFrameHeader_typekey: OlkFrameHeader = js.native
+  var OutlookDotOlkFrameHeader_typekey: OlkFrameHeader
 }
 object OlkFrameHeader {
   

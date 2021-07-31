@@ -2,25 +2,23 @@ package typings.findProcess
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cmd extends StObject {
     
-    var cmd: String = js.native
+    var cmd: String
     
-    var gid: js.UndefOr[Double] = js.native
+    var gid: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var pid: Double = js.native
+    var pid: Double
     
-    var ppid: js.UndefOr[Double] = js.native
+    var ppid: js.UndefOr[Double] = js.undefined
     
-    var uid: js.UndefOr[Double] = js.native
+    var uid: js.UndefOr[Double] = js.undefined
   }
   object Cmd {
     

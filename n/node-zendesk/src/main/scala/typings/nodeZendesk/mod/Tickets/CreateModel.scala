@@ -3,68 +3,66 @@ package typings.nodeZendesk.mod.Tickets
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/tickets#create-ticket|Zendesk Tickets Create}
   */
-@js.native
 trait CreateModel extends StObject {
   
-  var assignee_id: js.UndefOr[ZendeskID | Null] = js.native
+  var assignee_id: js.UndefOr[ZendeskID | Null] = js.undefined
   
-  var brand_id: js.UndefOr[Double | Null] = js.native
+  var brand_id: js.UndefOr[Double | Null] = js.undefined
   
-  var collaborator_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var collaborator_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var collaborators: js.UndefOr[js.Array[_] | Null] = js.native
+  var collaborators: js.UndefOr[js.Array[js.Any] | Null] = js.undefined
   
-  var comment: typings.nodeZendesk.mod.Requests.Comments.CreateModel = js.native
+  var comment: typings.nodeZendesk.mod.Requests.Comments.CreateModel
   
-  var custom_fields: js.UndefOr[js.Array[Field] | Null] = js.native
+  var custom_fields: js.UndefOr[js.Array[Field] | Null] = js.undefined
   
-  var due_at: js.UndefOr[String | Null] = js.native
+  var due_at: js.UndefOr[String | Null] = js.undefined
   
-  var email_cc_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var email_cc_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var external_id: js.UndefOr[String | Null] = js.native
+  var external_id: js.UndefOr[String | Null] = js.undefined
   
-  var fields: js.UndefOr[js.Array[Field] | Null] = js.native
+  var fields: js.UndefOr[js.Array[Field] | Null] = js.undefined
   
-  var follower_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var follower_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var forum_topic_id: js.UndefOr[Double | Null] = js.native
+  var forum_topic_id: js.UndefOr[Double | Null] = js.undefined
   
-  var group_id: js.UndefOr[Double | Null] = js.native
+  var group_id: js.UndefOr[Double | Null] = js.undefined
   
-  var macro_ids: js.UndefOr[js.Array[Double] | Null] = js.native
+  var macro_ids: js.UndefOr[js.Array[Double] | Null] = js.undefined
   
-  var organization_id: js.UndefOr[Double | Null] = js.native
+  var organization_id: js.UndefOr[Double | Null] = js.undefined
   
-  var priority: js.UndefOr[Priority | Null] = js.native
+  var priority: js.UndefOr[Priority | Null] = js.undefined
   
-  var problem_id: js.UndefOr[Double | Null] = js.native
+  var problem_id: js.UndefOr[Double | Null] = js.undefined
   
-  var raw_subject: js.UndefOr[String | Null] = js.native
+  var raw_subject: js.UndefOr[String | Null] = js.undefined
   
-  var recipient: js.UndefOr[String | Null] = js.native
+  var recipient: js.UndefOr[String | Null] = js.undefined
   
-  var requester_id: js.UndefOr[ZendeskID] = js.native
+  var requester_id: js.UndefOr[ZendeskID] = js.undefined
   
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
   
-  var subject: js.UndefOr[String | Null] = js.native
+  var subject: js.UndefOr[String | Null] = js.undefined
   
-  var submitter_id: js.UndefOr[ZendeskID | Null] = js.native
+  var submitter_id: js.UndefOr[ZendeskID | Null] = js.undefined
   
-  var tags: js.UndefOr[js.Array[String] | Null] = js.native
+  var tags: js.UndefOr[js.Array[String] | Null] = js.undefined
   
-  var ticket_form_id: js.UndefOr[Double | Null] = js.native
+  var ticket_form_id: js.UndefOr[Double | Null] = js.undefined
   
-  var `type`: js.UndefOr[TicketType | Null] = js.native
+  var `type`: js.UndefOr[TicketType | Null] = js.undefined
   
-  var via_followup_source_id: js.UndefOr[Double | Null] = js.native
+  var via_followup_source_id: js.UndefOr[Double | Null] = js.undefined
 }
 object CreateModel {
   
@@ -108,7 +106,7 @@ object CreateModel {
     def setCollaborator_idsVarargs(value: Double*): Self = StObject.set(x, "collaborator_ids", js.Array(value :_*))
     
     @scala.inline
-    def setCollaborators(value: js.Array[_]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
+    def setCollaborators(value: js.Array[js.Any]): Self = StObject.set(x, "collaborators", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCollaboratorsNull: Self = StObject.set(x, "collaborators", null)

@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Devices.WiFiDirect.Services
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Returned when a WiFiDirectServiceAdvertiser.AutoAcceptSessionConnected event is raised. */
-@js.native
 trait WiFiDirectServiceAutoAcceptSessionConnectedEventArgs extends StObject {
   
   /** Gets the WiFiDirectServiceSession that was created when the connection was automatically accepted. */
-  var session: WiFiDirectServiceSession = js.native
+  var session: WiFiDirectServiceSession
   
   /** Gets the session information buffer that corresponds to this automatically accepted connection. */
-  var sessionInfo: IBuffer = js.native
+  var sessionInfo: IBuffer
 }
 object WiFiDirectServiceAutoAcceptSessionConnectedEventArgs {
   

@@ -4,32 +4,32 @@ import typings.openjscad.anon.BoundLen
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object CSG {
     
-    @JSImport("three", "CSG.fromCSG")
+    @JSImport("three", "CSG")
     @js.native
-    def fromCSG(csg: typings.openjscad.CSG, defaultColor: js.Any): BoundLen = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("three", "CSG.getGeometryVertex")
-    @js.native
-    def getGeometryVertex(geometry: js.Any, vertex_position: js.Any): Double = js.native
+    @scala.inline
+    def fromCSG(csg: typings.openjscad.CSG, defaultColor: js.Any): BoundLen = (^.asInstanceOf[js.Dynamic].applyDynamic("fromCSG")(csg.asInstanceOf[js.Any], defaultColor.asInstanceOf[js.Any])).asInstanceOf[BoundLen]
+    
+    @scala.inline
+    def getGeometryVertex(geometry: js.Any, vertex_position: js.Any): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getGeometryVertex")(geometry.asInstanceOf[js.Any], vertex_position.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
   /*
     function OrbitControls(object: any, domElement: any): void;
     function SpriteCanvasMaterial(parameters?: any): void;
     */
-  @js.native
   trait ICanvasRendererOptions extends StObject {
     
-    var alpha: js.UndefOr[Boolean] = js.native
+    var alpha: js.UndefOr[Boolean] = js.undefined
     
-    var canvas: js.UndefOr[HTMLCanvasElement] = js.native
+    var canvas: js.UndefOr[HTMLCanvasElement] = js.undefined
   }
   object ICanvasRendererOptions {
     

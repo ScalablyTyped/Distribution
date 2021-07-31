@@ -5,12 +5,10 @@ import typings.fluxibleRouter.mod.RouteStore
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofComponent extends StObject {
     
     // tslint won't let me format the sample code in a way that vscode likes it :(
@@ -35,7 +33,7 @@ object anon {
       * @see https://reactjs.org/docs/context.html#classcontexttype
       */
     /* static member */
-    var contextType: js.UndefOr[Context[_]] = js.native
+    var contextType: js.UndefOr[Context[js.Any]] = js.undefined
   }
   object TypeofComponent {
     
@@ -49,7 +47,7 @@ object anon {
     implicit class TypeofComponentMutableBuilder[Self <: TypeofComponent] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setContextType(value: Context[_]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
+      def setContextType(value: Context[js.Any]): Self = StObject.set(x, "contextType", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setContextTypeUndefined: Self = StObject.set(x, "contextType", js.undefined)
@@ -57,7 +55,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofRouteStore extends Instantiable0[RouteStore] {
+  trait TypeofRouteStore
+    extends StObject
+       with Instantiable0[RouteStore] {
     
     def withStaticRoutes(routes: js.Object): /* import warning: importer.ImportType#apply Failed type conversion: typeof RouteStore */ js.Any = js.native
   }

@@ -2,36 +2,32 @@ package typings.isUuid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("is-uuid", "anyNonNil")
+  @JSImport("is-uuid", JSImport.Namespace)
   @js.native
-  def anyNonNil(value: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("is-uuid", "nil")
-  @js.native
-  def nil(value: String): Boolean = js.native
+  @scala.inline
+  def anyNonNil(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("anyNonNil")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("is-uuid", "v1")
-  @js.native
-  def v1(value: String): Boolean = js.native
+  @scala.inline
+  def nil(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("nil")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("is-uuid", "v2")
-  @js.native
-  def v2(value: String): Boolean = js.native
+  @scala.inline
+  def v1(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v1")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("is-uuid", "v3")
-  @js.native
-  def v3(value: String): Boolean = js.native
+  @scala.inline
+  def v2(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v2")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("is-uuid", "v4")
-  @js.native
-  def v4(value: String): Boolean = js.native
+  @scala.inline
+  def v3(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v3")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("is-uuid", "v5")
-  @js.native
-  def v5(value: String): Boolean = js.native
+  @scala.inline
+  def v4(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def v5(value: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v5")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

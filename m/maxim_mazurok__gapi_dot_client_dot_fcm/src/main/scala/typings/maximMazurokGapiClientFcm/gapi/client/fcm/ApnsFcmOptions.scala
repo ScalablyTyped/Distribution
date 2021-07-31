@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFcm.gapi.client.fcm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApnsFcmOptions extends StObject {
   
   /** Label associated with the message's analytics data. */
-  var analyticsLabel: js.UndefOr[String] = js.native
+  var analyticsLabel: js.UndefOr[String] = js.undefined
   
   /** Contains the URL of an image that is going to be displayed in a notification. If present, it will override google.firebase.fcm.v1.Notification.image. */
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
 }
 object ApnsFcmOptions {
   

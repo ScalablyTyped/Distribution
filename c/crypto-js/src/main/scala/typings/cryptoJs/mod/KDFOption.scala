@@ -2,29 +2,27 @@ package typings.cryptoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options.
   */
-@js.native
 trait KDFOption extends StObject {
   
   /**
     * The hasher to use.
     */
-  var hasher: js.UndefOr[HasherStatic] = js.native
+  var hasher: js.UndefOr[HasherStatic] = js.undefined
   
   /**
     * The number of iterations to perform.
     */
-  var iterations: js.UndefOr[Double] = js.native
+  var iterations: js.UndefOr[Double] = js.undefined
   
   /**
     * The key size in words to generate.
     */
-  var keySize: js.UndefOr[Double] = js.native
+  var keySize: js.UndefOr[Double] = js.undefined
 }
 object KDFOption {
   

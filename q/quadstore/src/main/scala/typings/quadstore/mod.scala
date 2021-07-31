@@ -13,7 +13,6 @@ import typings.rdfJs.mod.QuadGraph
 import typings.rdfJs.mod.Term
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -22,8 +21,8 @@ object mod {
   @js.native
   class ^[CK /* <: String */, TermType, Q] protected ()
     extends typings.quadstore.mod.quadstore[CK, TermType, Q] {
-    def this(db: AbstractLevelDOWN[_, _]) = this()
-    def this(db: AbstractLevelDOWN[_, _], opts: `0`[CK]) = this()
+    def this(db: AbstractLevelDOWN[js.Any, js.Any]) = this()
+    def this(db: AbstractLevelDOWN[js.Any, js.Any], opts: `0`[CK]) = this()
   }
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -31,8 +30,8 @@ object mod {
   @js.native
   class QuadStore_[CK /* <: String */, TermType, Q] protected ()
     extends typings.quadstore.mod.quadstore[CK, TermType, Q] {
-    def this(db: AbstractLevelDOWN[_, _]) = this()
-    def this(db: AbstractLevelDOWN[_, _], opts: ContextKey) = this()
+    def this(db: AbstractLevelDOWN[js.Any, js.Any]) = this()
+    def this(db: AbstractLevelDOWN[js.Any, js.Any], opts: ContextKey) = this()
   }
   
   @JSImport("quadstore", "QuadStore")
@@ -47,7 +46,7 @@ object mod {
   @js.native
   class RdfStore[Q /* <: BaseQuad */] protected ()
     extends typings.quadstore.mod.quadstore[graph, Q, Term] {
-    def this(abstractLevelDOWN: AbstractLevelDOWN[_, _], opts: js.Any) = this()
+    def this(abstractLevelDOWN: AbstractLevelDOWN[js.Any, js.Any], opts: js.Any) = this()
     
     def deleteGraph(graph: QuadGraph): EventEmitter = js.native
     
@@ -59,20 +58,19 @@ object mod {
     def removeMatches(subject: Term, predicate: Term, `object`: Term, graph: Term): ReadableStream = js.native
   }
   
-  @js.native
   trait IndexOptions extends StObject {
     
-    var gt: js.UndefOr[String] = js.native
+    var gt: js.UndefOr[String] = js.undefined
     
-    var gte: js.UndefOr[String] = js.native
+    var gte: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var lt: js.UndefOr[String] = js.native
+    var lt: js.UndefOr[String] = js.undefined
     
-    var lte: js.UndefOr[String] = js.native
+    var lte: js.UndefOr[String] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
   }
   object IndexOptions {
     
@@ -133,14 +131,13 @@ object mod {
     var subject: js.UndefOr[TermType] = js.native
   }
   
-  type Quad[TermType, CK /* <: String */] = Triple[TermType] with typings.quadstore.quadstoreStrings.Quad with TopLevel[js.Any]
+  type Quad[TermType, CK /* <: String */] = Triple[TermType] & typings.quadstore.quadstoreStrings.Quad & TopLevel[js.Any]
   
-  @js.native
   trait StreamOptions extends StObject {
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object StreamOptions {
     
@@ -167,14 +164,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Triple[TermType] extends StObject {
     
-    var `object`: TermType = js.native
+    var `object`: TermType
     
-    var predicate: TermType = js.native
+    var predicate: TermType
     
-    var subject: TermType = js.native
+    var subject: TermType
   }
   object Triple {
     
@@ -186,7 +182,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class TripleMutableBuilder[Self <: Triple[_], TermType] (val x: Self with Triple[TermType]) extends AnyVal {
+    implicit class TripleMutableBuilder[Self <: Triple[?], TermType] (val x: Self & Triple[TermType]) extends AnyVal {
       
       @scala.inline
       def setObject(value: TermType): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
@@ -243,17 +239,11 @@ object mod {
     def getByIndexStream(name: String, opts: IndexOptions): ReadableStream = js.native
     
     def getStream(): ReadableStream = js.native
-    def getStream(matchTerms: js.UndefOr[scala.Nothing], opts: StreamOptions): ReadableStream = js.native
+    def getStream(matchTerms: Unit, opts: StreamOptions): ReadableStream = js.native
     def getStream(matchTerms: MatchTerms[TermType, CK]): ReadableStream = js.native
     def getStream(matchTerms: MatchTerms[TermType, CK], opts: StreamOptions): ReadableStream = js.native
     
     def patch(matchTermsOrOldQuads: js.Array[Q], newQuads: js.Array[Q]): Unit = js.native
-    def patch(
-      matchTermsOrOldQuads: js.Array[Q],
-      newQuads: js.Array[Q],
-      opts: js.UndefOr[scala.Nothing],
-      cb: js.Function1[/* err */ js.Any, Unit]
-    ): Unit = js.native
     def patch(matchTermsOrOldQuads: js.Array[Q], newQuads: js.Array[Q], opts: js.Any): Unit = js.native
     def patch(
       matchTermsOrOldQuads: js.Array[Q],
@@ -261,18 +251,24 @@ object mod {
       opts: js.Any,
       cb: js.Function1[/* err */ js.Any, Unit]
     ): Unit = js.native
-    def patch(matchTermsOrOldQuads: MatchTerms[TermType, CK], newQuads: js.Array[Q]): Unit = js.native
     def patch(
-      matchTermsOrOldQuads: MatchTerms[TermType, CK],
+      matchTermsOrOldQuads: js.Array[Q],
       newQuads: js.Array[Q],
-      opts: js.UndefOr[scala.Nothing],
+      opts: Unit,
       cb: js.Function1[/* err */ js.Any, Unit]
     ): Unit = js.native
+    def patch(matchTermsOrOldQuads: MatchTerms[TermType, CK], newQuads: js.Array[Q]): Unit = js.native
     def patch(matchTermsOrOldQuads: MatchTerms[TermType, CK], newQuads: js.Array[Q], opts: js.Any): Unit = js.native
     def patch(
       matchTermsOrOldQuads: MatchTerms[TermType, CK],
       newQuads: js.Array[Q],
       opts: js.Any,
+      cb: js.Function1[/* err */ js.Any, Unit]
+    ): Unit = js.native
+    def patch(
+      matchTermsOrOldQuads: MatchTerms[TermType, CK],
+      newQuads: js.Array[Q],
+      opts: Unit,
       cb: js.Function1[/* err */ js.Any, Unit]
     ): Unit = js.native
     

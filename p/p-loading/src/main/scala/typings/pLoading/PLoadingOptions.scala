@@ -5,54 +5,52 @@ import typings.pLoading.pLoadingStrings.hide
 import typings.pLoading.pLoadingStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PLoadingOptions extends StObject {
   
-  var action: js.UndefOr[show | hide | destroy] = js.native
+  var action: js.UndefOr[show | hide | destroy] = js.undefined
   
-  var containerAttrs: js.UndefOr[js.Object] = js.native
+  var containerAttrs: js.UndefOr[js.Object] = js.undefined
   
-  var containerClass: js.UndefOr[String] = js.native
+  var containerClass: js.UndefOr[String] = js.undefined
   
-  var containerHTML: js.UndefOr[String] = js.native
+  var containerHTML: js.UndefOr[String] = js.undefined
   
-  var destroyAfterHide: js.UndefOr[Boolean] = js.native
+  var destroyAfterHide: js.UndefOr[Boolean] = js.undefined
   
-  var hideAnimation: js.UndefOr[js.Function1[/* $container */ JQuery, Unit]] = js.native
+  var hideAnimation: js.UndefOr[js.Function1[/* $container */ JQuery, Unit]] = js.undefined
   
-  var idPrefix: js.UndefOr[String] = js.native
+  var idPrefix: js.UndefOr[String] = js.undefined
   
-  var maskColor: js.UndefOr[String] = js.native
-  
-  /**
-    * @deprecated
-    */
-  var onDestroyContainer: js.UndefOr[js.Function1[/* $container */ JQuery, Unit]] = js.native
+  var maskColor: js.UndefOr[String] = js.undefined
   
   /**
     * @deprecated
     */
-  var onHideContainer: js.UndefOr[js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, Unit]] = js.native
+  var onDestroyContainer: js.UndefOr[js.Function1[/* $container */ JQuery, Unit]] = js.undefined
   
   /**
     * @deprecated
     */
-  var onShowContainer: js.UndefOr[js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, Unit]] = js.native
+  var onHideContainer: js.UndefOr[js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, Unit]] = js.undefined
   
-  var pluginNameSpace: js.UndefOr[String] = js.native
+  /**
+    * @deprecated
+    */
+  var onShowContainer: js.UndefOr[js.Function2[/* $pluginElement */ JQuery, /* $container */ JQuery, Unit]] = js.undefined
   
-  var showAnimation: js.UndefOr[js.Function1[/* $container */ JQuery, Unit]] = js.native
+  var pluginNameSpace: js.UndefOr[String] = js.undefined
   
-  var spinnerAttrs: js.UndefOr[js.Object] = js.native
+  var showAnimation: js.UndefOr[js.Function1[/* $container */ JQuery, Unit]] = js.undefined
   
-  var spinnerClass: js.UndefOr[String] = js.native
+  var spinnerAttrs: js.UndefOr[js.Object] = js.undefined
   
-  var spinnerHTML: js.UndefOr[String] = js.native
+  var spinnerClass: js.UndefOr[String] = js.undefined
   
-  var useAddOns: js.UndefOr[js.Array[String]] = js.native
+  var spinnerHTML: js.UndefOr[String] = js.undefined
+  
+  var useAddOns: js.UndefOr[js.Array[String]] = js.undefined
 }
 object PLoadingOptions {
   

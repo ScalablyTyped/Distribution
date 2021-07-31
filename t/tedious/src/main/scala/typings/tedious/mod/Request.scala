@@ -13,7 +13,6 @@ import typings.tedious.tediousStrings.returnValue
 import typings.tedious.tediousStrings.row
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("tedious", "Request")
@@ -29,7 +28,7 @@ class Request protected () extends EventEmitter {
     */
   def this(
     sql: String,
-    callback: js.Function3[/* error */ Error, /* rowCount */ Double, /* rows */ js.Array[_], Unit]
+    callback: js.Function3[/* error */ Error, /* rowCount */ Double, /* rows */ js.Array[js.Any], Unit]
   ) = this()
   
   /**
@@ -40,9 +39,9 @@ class Request protected () extends EventEmitter {
     * @param options Additional type options. Optional.
     */
   def addOutputParameter(name: String, `type`: TediousType): Unit = js.native
-  def addOutputParameter(name: String, `type`: TediousType, value: js.UndefOr[scala.Nothing], options: ParameterOptions): Unit = js.native
   def addOutputParameter(name: String, `type`: TediousType, value: js.Any): Unit = js.native
   def addOutputParameter(name: String, `type`: TediousType, value: js.Any, options: ParameterOptions): Unit = js.native
+  def addOutputParameter(name: String, `type`: TediousType, value: Unit, options: ParameterOptions): Unit = js.native
   
   /**
     * Add an input parameter to the request.
@@ -65,7 +64,7 @@ class Request protected () extends EventEmitter {
   @JSName("on")
   def on_done(
     event: done,
-    listener: js.Function3[/* rowCount */ Double, /* more */ Boolean, /* rows */ js.Array[_], Unit]
+    listener: js.Function3[/* rowCount */ Double, /* more */ Boolean, /* rows */ js.Array[js.Any], Unit]
   ): this.type = js.native
   /**
     * Indicates the completion status of a SQL statement within a stored procedure. All rows from a statement in a stored procedure have been provided (through row events).
@@ -73,7 +72,7 @@ class Request protected () extends EventEmitter {
   @JSName("on")
   def on_doneInProc(
     event: doneInProc,
-    listener: js.Function3[/* rowCount */ Double, /* more */ Boolean, /* rows */ js.Array[_], Unit]
+    listener: js.Function3[/* rowCount */ Double, /* more */ Boolean, /* rows */ js.Array[js.Any], Unit]
   ): this.type = js.native
   /**
     * Indicates the completion status of a stored procedure. This is also generated for stored procedures executed through SQL statements.
@@ -85,7 +84,7 @@ class Request protected () extends EventEmitter {
       /* rowCount */ Double, 
       /* more */ Boolean, 
       /* returnStatus */ js.Any, 
-      /* rows */ js.Array[_], 
+      /* rows */ js.Array[js.Any], 
       Unit
     ]
   ): this.type = js.native

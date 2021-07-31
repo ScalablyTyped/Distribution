@@ -5,7 +5,6 @@ import typings.googleapis.siteVerificationV1Mod.siteVerificationV1.Options
 import typings.googleapis.siteVerificationV1Mod.siteVerificationV1.Siteverification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

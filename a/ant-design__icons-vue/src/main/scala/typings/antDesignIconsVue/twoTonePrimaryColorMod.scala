@@ -2,18 +2,19 @@ package typings.antDesignIconsVue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object twoTonePrimaryColorMod {
   
-  @JSImport("@ant-design/icons-vue/lib/components/twoTonePrimaryColor", "getTwoToneColor")
+  @JSImport("@ant-design/icons-vue/lib/components/twoTonePrimaryColor", JSImport.Namespace)
   @js.native
-  def getTwoToneColor(): TwoToneColor = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ant-design/icons-vue/lib/components/twoTonePrimaryColor", "setTwoToneColor")
-  @js.native
-  def setTwoToneColor(twoToneColor: TwoToneColor): Unit = js.native
+  @scala.inline
+  def getTwoToneColor(): TwoToneColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getTwoToneColor")().asInstanceOf[TwoToneColor]
+  
+  @scala.inline
+  def setTwoToneColor(twoToneColor: TwoToneColor): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTwoToneColor")(twoToneColor.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type TwoToneColor = String | (js.Tuple2[String, String])
 }

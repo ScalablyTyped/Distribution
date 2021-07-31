@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AttendeeBase extends Recipient {
+trait AttendeeBase
+  extends StObject
+     with Recipient {
   
   /**
     * The type of attendee. The possible values are: required, optional, resource. Currently if the attendee is a person,
     * findMeetingTimes always considers the person is of the Required type.
     */
-  var `type`: js.UndefOr[NullableOption[AttendeeType]] = js.native
+  var `type`: js.UndefOr[NullableOption[AttendeeType]] = js.undefined
 }
 object AttendeeBase {
   

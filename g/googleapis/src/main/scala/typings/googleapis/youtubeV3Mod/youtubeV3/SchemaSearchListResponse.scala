@@ -2,55 +2,53 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaSearchListResponse extends StObject {
   
   /**
     * Etag of this resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Serialized EventId of the request which produced this response.
     */
-  var eventId: js.UndefOr[String] = js.native
+  var eventId: js.UndefOr[String] = js.undefined
   
   /**
     * A list of results that match the search criteria.
     */
-  var items: js.UndefOr[js.Array[SchemaSearchResult]] = js.native
+  var items: js.UndefOr[js.Array[SchemaSearchResult]] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;youtube#searchListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The token that can be used as the value of the pageToken parameter to
     * retrieve the next page in the result set.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
-  var pageInfo: js.UndefOr[SchemaPageInfo] = js.native
+  var pageInfo: js.UndefOr[SchemaPageInfo] = js.undefined
   
   /**
     * The token that can be used as the value of the pageToken parameter to
     * retrieve the previous page in the result set.
     */
-  var prevPageToken: js.UndefOr[String] = js.native
+  var prevPageToken: js.UndefOr[String] = js.undefined
   
-  var regionCode: js.UndefOr[String] = js.native
+  var regionCode: js.UndefOr[String] = js.undefined
   
-  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.native
+  var tokenPagination: js.UndefOr[SchemaTokenPagination] = js.undefined
   
   /**
     * The visitorId identifies the visitor.
     */
-  var visitorId: js.UndefOr[String] = js.native
+  var visitorId: js.UndefOr[String] = js.undefined
 }
 object SchemaSearchListResponse {
   

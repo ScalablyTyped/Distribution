@@ -3,17 +3,15 @@ package typings.tensorflowTfjsConverter.compiledApiMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object CollectionDef {
   
   /** Properties of an AnyList. */
-  @js.native
   trait IAnyList extends StObject {
     
     /** AnyList value */
-    var value: js.UndefOr[js.Array[IAny] | Null] = js.native
+    var value: js.UndefOr[js.Array[IAny] | Null] = js.undefined
   }
   object IAnyList {
     
@@ -41,11 +39,10 @@ object CollectionDef {
   }
   
   /** Properties of a BytesList. */
-  @js.native
   trait IBytesList extends StObject {
     
     /** BytesList value */
-    var value: js.UndefOr[js.Array[Uint8Array] | Null] = js.native
+    var value: js.UndefOr[js.Array[Uint8Array] | Null] = js.undefined
   }
   object IBytesList {
     
@@ -73,11 +70,10 @@ object CollectionDef {
   }
   
   /** Properties of a FloatList. */
-  @js.native
   trait IFloatList extends StObject {
     
     /** FloatList value */
-    var value: js.UndefOr[js.Array[Double] | Null] = js.native
+    var value: js.UndefOr[js.Array[Double] | Null] = js.undefined
   }
   object IFloatList {
     
@@ -105,11 +101,10 @@ object CollectionDef {
   }
   
   /** Properties of an Int64List. */
-  @js.native
   trait IInt64List extends StObject {
     
     /** Int64List value */
-    var value: js.UndefOr[(js.Array[Double | String]) | Null] = js.native
+    var value: js.UndefOr[(js.Array[Double | String]) | Null] = js.undefined
   }
   object IInt64List {
     
@@ -137,11 +132,10 @@ object CollectionDef {
   }
   
   /** Properties of a NodeList. */
-  @js.native
   trait INodeList extends StObject {
     
     /** NodeList value */
-    var value: js.UndefOr[js.Array[String] | Null] = js.native
+    var value: js.UndefOr[js.Array[String] | Null] = js.undefined
   }
   object INodeList {
     

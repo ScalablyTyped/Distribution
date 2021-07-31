@@ -5,60 +5,60 @@ import typings.std.PropertyKey
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RequestInterceptor extends Object {
+trait RequestInterceptor
+  extends StObject
+     with Object {
   
   /**
     * Makes changes to the response after the request is sent, but before it's returned to the caller.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var after: js.UndefOr[AfterInterceptorCallback] = js.native
+  var after: js.UndefOr[AfterInterceptorCallback] = js.undefined
   
   /**
     * Make changes to the request URL or options before the request is sent.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var before: js.UndefOr[BeforeInterceptorCallback] = js.native
+  var before: js.UndefOr[BeforeInterceptorCallback] = js.undefined
   
   /**
     * When an error occurs during the request processing, this function is called with an [Error](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Error.html) object giving the details about what happened.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var error: js.UndefOr[ErrorCallback] = js.native
+  var error: js.UndefOr[ErrorCallback] = js.undefined
   
   /**
     * Sets or adds headers into `requestOptions.headers`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets or adds query parameters into `requestOptions.query`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var query: js.UndefOr[js.Any] = js.native
+  var query: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Hardcodes the [response](https://developers.arcgis.com/javascript/latest/api-reference/esri-request.html#RequestResponse).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var responseData: js.UndefOr[js.Any] = js.native
+  var responseData: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies the URL(s) to apply to the interceptors.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-config.html#RequestInterceptor)
     */
-  var urls: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.native
+  var urls: js.UndefOr[String | RegExp | (js.Array[String | RegExp])] = js.undefined
 }
 object RequestInterceptor {
   

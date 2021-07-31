@@ -4,17 +4,17 @@ import typings.backbone.mod.Model
 import typings.backbone.mod.ModelSetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewModel extends Destroyable {
+trait ViewModel
+  extends StObject
+     with Destroyable {
   
-  def extend(source: js.Any): js.Any = js.native
+  def extend(source: js.Any): js.Any
   
-  def model(): Model[_, ModelSetOptions, js.Object] = js.native
+  def model(): Model[js.Any, ModelSetOptions, js.Object]
   
-  def shareOptions(): ViewModelOptions = js.native
+  def shareOptions(): ViewModelOptions
 }
 object ViewModel {
   
@@ -22,7 +22,7 @@ object ViewModel {
   def apply(
     destroy: () => js.Any,
     extend: js.Any => js.Any,
-    model: () => Model[_, ModelSetOptions, js.Object],
+    model: () => Model[js.Any, ModelSetOptions, js.Object],
     shareOptions: () => ViewModelOptions
   ): ViewModel = {
     val __obj = js.Dynamic.literal(destroy = js.Any.fromFunction0(destroy), extend = js.Any.fromFunction1(extend), model = js.Any.fromFunction0(model), shareOptions = js.Any.fromFunction0(shareOptions))
@@ -36,7 +36,7 @@ object ViewModel {
     def setExtend(value: js.Any => js.Any): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setModel(value: () => Model[_, ModelSetOptions, js.Object]): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
+    def setModel(value: () => Model[js.Any, ModelSetOptions, js.Object]): Self = StObject.set(x, "model", js.Any.fromFunction0(value))
     
     @scala.inline
     def setShareOptions(value: () => ViewModelOptions): Self = StObject.set(x, "shareOptions", js.Any.fromFunction0(value))

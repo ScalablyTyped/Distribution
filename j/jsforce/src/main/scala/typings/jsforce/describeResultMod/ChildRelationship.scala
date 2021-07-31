@@ -2,27 +2,25 @@ package typings.jsforce.describeResultMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChildRelationship extends StObject {
   
-  var cascadeDelete: Boolean = js.native
+  var cascadeDelete: Boolean
   
-  var childSObject: String = js.native
+  var childSObject: String
   
-  var deprecatedAndHidden: Boolean = js.native
+  var deprecatedAndHidden: Boolean
   
-  var field: String = js.native
+  var field: String
   
-  var junctionIdListNames: js.Array[String] = js.native
+  var junctionIdListNames: js.Array[String]
   
-  var junctionReferenceTo: js.Array[String] = js.native
+  var junctionReferenceTo: js.Array[String]
   
-  var relationshipName: js.UndefOr[maybe[String]] = js.native
+  var relationshipName: js.UndefOr[maybe[String]] = js.undefined
   
-  var restrictedDelete: Boolean = js.native
+  var restrictedDelete: Boolean
 }
 object ChildRelationship {
   

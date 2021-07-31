@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TablesMixinProperties extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TablesMixinProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-support-TablesMixin.html#tables)
     */
-  var tables: js.UndefOr[CollectionProperties[LayerProperties] | js.Array[LayerProperties]] = js.native
+  var tables: js.UndefOr[CollectionProperties[LayerProperties] | js.Array[LayerProperties]] = js.undefined
 }
 object TablesMixinProperties {
   

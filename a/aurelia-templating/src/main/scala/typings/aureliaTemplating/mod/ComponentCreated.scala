@@ -2,10 +2,8 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentCreated extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait ComponentCreated extends StObject {
     * This is the view that the component is declared inside of. If the component itself has a view,
     * this will be passed second.
     */
-  def created(owningView: View_, myView: View_): Unit = js.native
+  def created(owningView: View_, myView: View_): Unit
 }
 object ComponentCreated {
   

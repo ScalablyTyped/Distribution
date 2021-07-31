@@ -2,19 +2,17 @@ package typings.reactNativeSvg.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UriState extends StObject {
   
-  var xml: String | Null = js.native
+  var xml: String | Null
 }
 object UriState {
   
   @scala.inline
   def apply(): UriState = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(xml = null)
     __obj.asInstanceOf[UriState]
   }
   

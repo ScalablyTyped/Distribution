@@ -2,15 +2,13 @@ package typings.wxServerSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UploadFileSuccess extends StObject {
   
-  var fileID: String = js.native
+  var fileID: String
   
-  var statusCode: Double = js.native
+  var statusCode: Double
 }
 object UploadFileSuccess {
   

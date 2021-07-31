@@ -2,20 +2,20 @@ package typings.leaflet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoJSONEvent extends LeafletEvent {
+trait GeoJSONEvent
+  extends StObject
+     with LeafletEvent {
   
-  var geometryType: String = js.native
+  var geometryType: String
   
-  var id: String = js.native
+  var id: String
   
   @JSName("layer")
-  var layer_GeoJSONEvent: Layer = js.native
+  var layer_GeoJSONEvent: Layer
   
-  var properties: js.Any = js.native
+  var properties: js.Any
 }
 object GeoJSONEvent {
   

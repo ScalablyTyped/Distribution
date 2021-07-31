@@ -1,6 +1,5 @@
 package typings.antDesignProLayout
 
-import org.scalablytyped.runtime.Shortcut
 import typings.antDesignProLayout.antDesignProLayoutBooleans.`false`
 import typings.antDesignProLayout.antDesignProLayoutStrings.lg
 import typings.antDesignProLayout.antDesignProLayoutStrings.md
@@ -18,37 +17,34 @@ import typings.react.mod.global.JSX.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object siderMenuSiderMenuMod extends Shortcut {
+object siderMenuSiderMenuMod {
+  
+  @JSImport("@ant-design/pro-layout/lib/SiderMenu/SiderMenu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ant-design/pro-layout/lib/SiderMenu/SiderMenu", JSImport.Default)
   @js.native
-  val default: FC[SiderMenuProps with PrivateSiderMenuProps] = js.native
+  val default: FC[SiderMenuProps & PrivateSiderMenuProps] = js.native
   
-  @JSImport("@ant-design/pro-layout/lib/SiderMenu/SiderMenu", "defaultRenderCollapsedButton")
-  @js.native
-  def defaultRenderCollapsedButton(): Element = js.native
-  @JSImport("@ant-design/pro-layout/lib/SiderMenu/SiderMenu", "defaultRenderCollapsedButton")
-  @js.native
-  def defaultRenderCollapsedButton(collapsed: Boolean): Element = js.native
+  @scala.inline
+  def defaultRenderCollapsedButton(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderCollapsedButton")().asInstanceOf[Element]
+  @scala.inline
+  def defaultRenderCollapsedButton(collapsed: Boolean): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderCollapsedButton")(collapsed.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @JSImport("@ant-design/pro-layout/lib/SiderMenu/SiderMenu", "defaultRenderLogo")
-  @js.native
-  def defaultRenderLogo(logo: ReactNode): ReactNode = js.native
+  @scala.inline
+  def defaultRenderLogo(logo: ReactNode): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogo")(logo.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
   
-  @JSImport("@ant-design/pro-layout/lib/SiderMenu/SiderMenu", "defaultRenderLogoAndTitle")
-  @js.native
-  def defaultRenderLogoAndTitle(props: SiderMenuProps): ReactNode = js.native
-  @JSImport("@ant-design/pro-layout/lib/SiderMenu/SiderMenu", "defaultRenderLogoAndTitle")
-  @js.native
-  def defaultRenderLogoAndTitle(props: SiderMenuProps, renderKey: String): ReactNode = js.native
+  @scala.inline
+  def defaultRenderLogoAndTitle(props: SiderMenuProps): ReactNode = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogoAndTitle")(props.asInstanceOf[js.Any]).asInstanceOf[ReactNode]
+  @scala.inline
+  def defaultRenderLogoAndTitle(props: SiderMenuProps, renderKey: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultRenderLogoAndTitle")(props.asInstanceOf[js.Any], renderKey.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @js.native
   trait PrivateSiderMenuProps extends StObject {
     
-    var matchMenuKeys: js.Array[String] = js.native
+    var matchMenuKeys: js.Array[String]
   }
   object PrivateSiderMenuProps {
     
@@ -70,30 +66,29 @@ object siderMenuSiderMenuMod extends Shortcut {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<'className' | 'defaultCollapsed' | 'collapsed' | 'splitMenus' | 'isMobile' | 'menuData' | 'mode' | 'onCollapse' | 'openKeys' | 'handleOpenChange' | 'menuProps' | 'style' | 'theme' | 'formatMessage' | 'subMenuItemRender' | 'menuItemRender' | 'postMenuData' | 'location' | 'match' | 'staticContext' | 'history' | 'computedMatch' | 'route' | 'siderCollapsed' | 'translate' | 'inlist' | 'itemIcon' | 'aria-activedescendant' | 'onMouseEnter' | 'onLoadedData' | 'unselectable' | 'placeholder' | 'aria-multiselectable' | 'overflowedIndicator' | 'slot' | 'onClick' | 'onTouchStart' | 'level' | 'onDrop' | 'aria-grabbed' | 'children' | 'prefixCls' | 'onDragOver' | 'selectable' | 'autoSave' | 'onAnimationIteration' | 'spellCheck' | 'role' | 'forceSubMenuRender' | 'aria-multiline' | 'expandIcon' | 'about' | 'dir' | 'onPlaying' | 'aria-current' | 'itemType' | 'aria-relevant' | 'aria-placeholder' | 'autoCorrect' | 'onPointerMove' | 'aria-label' | 'aria-rowcount' | 'onPaste' | 'aria-busy' | 'resource' | 'onSeeked' | 'tabIndex' | 'onError' | 'onTimeUpdate' | 'aria-roledescription' | 'color' | 'onEnded' | 'onPointerCancel' | 'autoCapitalize' | 'inputMode' | 'onCompositionUpdate' | 'onMouseMove' | 'onSelect' | 'onStalled' | 'onPointerOut' | 'onAuxClick' | 'aria-autocomplete' | 'onCopy' | 'aria-live' | 'aria-keyshortcuts' | 'onDurationChange' | 'aria-orientation' | 'inlineCollapsed' | 'onVolumeChange' | 'lang' | 'aria-owns' | 'defaultMotions' | 'aria-atomic' | 'aria-dropeffect' | 'openTransitionName' | 'property' | 'is' | 'onLoadedMetadata' | 'aria-labelledby' | 'subMenuCloseDelay' | 'defaultOpenKeys' | 'onTransitionEnd' | 'onMouseOver' | 'onChange' | 'datatype' | 'onDragStart' | 'onSeeking' | 'aria-flowto' | 'onAnimationEnd' | 'onCanPlay' | 'aria-readonly' | 'onMouseOut' | 'onKeyDown' | 'aria-pressed' | 'onMouseLeave' | 'contextMenu' | 'onProgress' | 'aria-level' | 'contentEditable' | 'onPointerLeave' | 'onMouseUp' | 'multiple' | 'onInput' | 'itemRef' | 'results' | 'accessKey' | 'aria-haspopup' | 'aria-posinset' | 'onInvalid' | 'aria-required' | 'vocab' | 'aria-describedby' | 'onSuspend' | 'onLoad' | 'onTouchCancel' | 'onAnimationStart' | 'onTouchMove' | 'onPointerEnter' | 'selectedKeys' | 'aria-controls' | 'openAnimation' | 'focusable' | 'aria-modal' | 'onDragEnter' | 'direction' | 'onPointerOver' | 'onWaiting' | 'defaultActiveFirst' | 'onReset' | 'aria-selected' | 'onPlay' | 'onKeyUp' | 'onMouseDown' | 'radioGroup' | 'onSubmit' | 'onBeforeInput' | 'aria-disabled' | 'aria-sort' | 'onCompositionStart' | 'itemProp' | 'security' | 'aria-valuemin' | 'dangerouslySetInnerHTML' | 'aria-colcount' | 'onFocus' | 'onCanPlayThrough' | 'aria-invalid' | 'onBlur' | 'onDoubleClick' | 'aria-valuemax' | 'aria-details' | 'onContextMenu' | 'defaultValue' | 'suppressHydrationWarning' | 'aria-setsize' | 'onDragLeave' | 'getPopupContainer' | 'onTouchEnd' | 'onPause' | 'aria-checked' | 'defaultChecked' | 'builtinPlacements' | 'aria-valuetext' | 'prefix' | 'onEmptied' | 'onDeselect' | 'onPointerUp' | 'onCompositionEnd' | 'aria-colspan' | 'hidden' | 'collapsedWidth' | 'aria-errormessage' | 'onScroll' | 'activeKey' | 'subMenuOpenDelay' | 'onPointerDown' | 'aria-colindex' | 'onCut' | 'inlineIndent' | 'suppressContentEditableWarning' | 'aria-hidden' | 'onAbort' | 'onDragExit' | 'aria-valuenow' | 'id' | 'onWheel' | 'motion' | 'typeof' | 'triggerSubMenuAction' | 'onDrag' | 'aria-expanded' | 'defaultSelectedKeys' | 'draggable' | 'onEncrypted' | 'onDragEnd' | 'onDestroy' | 'aria-rowindex' | 'itemScope' | 'onRateChange' | 'onKeyPress' | 'onLoadStart' | 'itemID' | 'aria-rowspan' | 'title' | 'iconfontUrl' | 'menu' | 'fixSiderbar' | 'layout' | 'headerTheme' | 'navTheme' | 'fixedHeader' | 'colorWeak' | 'contentWidth' | 'primaryColor' | 'headerHeight', ['onCollapse']> ]: @ant-design/pro-layout.@ant-design/pro-layout/lib/SiderMenu/BaseMenu.BaseMenuProps[P]} */ @js.native
-  trait SiderMenuProps extends StObject {
+  - Dropped {[ P in std.Exclude<'className' | 'defaultCollapsed' | 'collapsed' | 'splitMenus' | 'isMobile' | 'menuData' | 'mode' | 'onCollapse' | 'openKeys' | 'handleOpenChange' | 'menuProps' | 'style' | 'theme' | 'formatMessage' | 'subMenuItemRender' | 'menuItemRender' | 'postMenuData' | 'location' | 'match' | 'staticContext' | 'history' | 'computedMatch' | 'route' | 'siderCollapsed' | 'translate' | 'inlist' | 'itemIcon' | 'aria-activedescendant' | 'onMouseEnter' | 'onLoadedData' | 'unselectable' | 'placeholder' | 'aria-multiselectable' | 'overflowedIndicator' | 'slot' | 'onClick' | 'onTouchStart' | 'level' | 'onDrop' | 'aria-grabbed' | 'children' | 'prefixCls' | 'onDragOver' | 'selectable' | 'autoSave' | 'onAnimationIteration' | 'spellCheck' | 'role' | 'forceSubMenuRender' | 'aria-multiline' | 'expandIcon' | 'about' | 'dir' | 'onPlaying' | 'aria-current' | 'itemType' | 'aria-relevant' | 'aria-placeholder' | 'autoCorrect' | 'onPointerMove' | 'aria-label' | 'aria-rowcount' | 'onPaste' | 'aria-busy' | 'resource' | 'onSeeked' | 'tabIndex' | 'onError' | 'onTimeUpdate' | 'aria-roledescription' | 'color' | 'onEnded' | 'onPointerCancel' | 'autoCapitalize' | 'inputMode' | 'onCompositionUpdate' | 'onMouseMove' | 'onSelect' | 'onStalled' | 'onPointerOut' | 'onAuxClick' | 'aria-autocomplete' | 'onCopy' | 'aria-live' | 'aria-keyshortcuts' | 'onDurationChange' | 'aria-orientation' | 'inlineCollapsed' | 'onVolumeChange' | 'lang' | 'aria-owns' | 'defaultMotions' | 'aria-atomic' | 'aria-dropeffect' | 'openTransitionName' | 'property' | 'is' | 'onLoadedMetadata' | 'aria-labelledby' | 'subMenuCloseDelay' | 'defaultOpenKeys' | 'onTransitionEnd' | 'onMouseOver' | 'onChange' | 'datatype' | 'onDragStart' | 'onSeeking' | 'aria-flowto' | 'onAnimationEnd' | 'onCanPlay' | 'aria-readonly' | 'onMouseOut' | 'onKeyDown' | 'aria-pressed' | 'onMouseLeave' | 'contextMenu' | 'onProgress' | 'aria-level' | 'contentEditable' | 'onPointerLeave' | 'onMouseUp' | 'multiple' | 'onInput' | 'itemRef' | 'results' | 'accessKey' | 'aria-haspopup' | 'aria-posinset' | 'onInvalid' | 'aria-required' | 'vocab' | 'aria-describedby' | 'onSuspend' | 'onLoad' | 'onTouchCancel' | 'onAnimationStart' | 'onTouchMove' | 'onPointerEnter' | 'selectedKeys' | 'aria-controls' | 'openAnimation' | 'focusable' | 'aria-modal' | 'onDragEnter' | 'direction' | 'onPointerOver' | 'onWaiting' | 'defaultActiveFirst' | 'onReset' | 'aria-selected' | 'onPlay' | 'onKeyUp' | 'onMouseDown' | 'radioGroup' | 'onSubmit' | 'onBeforeInput' | 'aria-disabled' | 'aria-sort' | 'onCompositionStart' | 'itemProp' | 'security' | 'aria-valuemin' | 'dangerouslySetInnerHTML' | 'aria-colcount' | 'onFocus' | 'onCanPlayThrough' | 'aria-invalid' | 'onBlur' | 'onDoubleClick' | 'aria-valuemax' | 'aria-details' | 'onContextMenu' | 'defaultValue' | 'suppressHydrationWarning' | 'aria-setsize' | 'onDragLeave' | 'getPopupContainer' | 'onTouchEnd' | 'onPause' | 'aria-checked' | 'defaultChecked' | 'builtinPlacements' | 'aria-valuetext' | 'prefix' | 'onEmptied' | 'onDeselect' | 'onPointerUp' | 'onCompositionEnd' | 'aria-colspan' | 'hidden' | 'collapsedWidth' | 'aria-errormessage' | 'onScroll' | 'activeKey' | 'subMenuOpenDelay' | 'onPointerDown' | 'aria-colindex' | 'onCut' | 'inlineIndent' | 'suppressContentEditableWarning' | 'aria-hidden' | 'onAbort' | 'onDragExit' | 'aria-valuenow' | 'id' | 'onWheel' | 'motion' | 'typeof' | 'triggerSubMenuAction' | 'onDrag' | 'aria-expanded' | 'defaultSelectedKeys' | 'draggable' | 'onEncrypted' | 'onDragEnd' | 'onDestroy' | 'aria-rowindex' | 'itemScope' | 'onRateChange' | 'onKeyPress' | 'onLoadStart' | 'itemID' | 'aria-rowspan' | 'title' | 'iconfontUrl' | 'menu' | 'fixSiderbar' | 'layout' | 'headerTheme' | 'navTheme' | 'fixedHeader' | 'colorWeak' | 'contentWidth' | 'primaryColor' | 'headerHeight', ['onCollapse']> ]: @ant-design/pro-layout.@ant-design/pro-layout/lib/SiderMenu/BaseMenu.BaseMenuProps[P]} */ trait SiderMenuProps extends StObject {
     
-    var breakpoint: js.UndefOr[xs | sm | md | lg | xl | xxl | `false`] = js.native
+    var breakpoint: js.UndefOr[xs | sm | md | lg | xl | xxl | `false`] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.native
+    var collapsedButtonRender: js.UndefOr[WithFalse[js.Function1[/* collapsed */ js.UndefOr[Boolean], ReactNode]]] = js.undefined
     
-    var getContainer: js.UndefOr[`false`] = js.native
+    var getContainer: js.UndefOr[`false`] = js.undefined
     
-    var hide: js.UndefOr[Boolean] = js.native
+    var hide: js.UndefOr[Boolean] = js.undefined
     
-    var links: js.UndefOr[js.Array[ReactNode]] = js.native
+    var links: js.UndefOr[js.Array[ReactNode]] = js.undefined
     
-    var logo: js.UndefOr[ReactNode] = js.native
+    var logo: js.UndefOr[ReactNode] = js.undefined
     
     var menuContentRender: js.UndefOr[
         WithFalse[js.Function2[/* props */ this.type, /* defaultDom */ ReactNode, ReactNode]]
-      ] = js.native
+      ] = js.undefined
     
-    var menuExtraRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.native
+    var menuExtraRender: js.UndefOr[WithFalse[js.Function1[/* props */ this.type, ReactNode]]] = js.undefined
     
-    var menuFooterRender: js.UndefOr[WithFalse[js.Function1[/* props */ js.UndefOr[this.type], ReactNode]]] = js.native
+    var menuFooterRender: js.UndefOr[WithFalse[js.Function1[/* props */ js.UndefOr[this.type], ReactNode]]] = js.undefined
     
     var menuHeaderRender: js.UndefOr[
         WithFalse[
@@ -104,15 +99,15 @@ object siderMenuSiderMenuMod extends Shortcut {
             ReactNode
           ]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onMenuHeaderClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.native
+    var onMenuHeaderClick: js.UndefOr[js.Function1[/* e */ MouseEvent[HTMLDivElement, NativeMouseEvent], Unit]] = js.undefined
     
-    var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ WithFalse[js.Array[String]], Unit]] = js.native
+    var onOpenChange: js.UndefOr[js.Function1[/* openKeys */ WithFalse[js.Array[String]], Unit]] = js.undefined
     
-    var siderWidth: js.UndefOr[Double] = js.native
+    var siderWidth: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object SiderMenuProps {
     
@@ -245,9 +240,4 @@ object siderMenuSiderMenuMod extends Shortcut {
       def setStyleUndefined: Self = StObject.set(x, "style", js.undefined)
     }
   }
-  
-  type _To = FC[SiderMenuProps with PrivateSiderMenuProps]
-  
-  /* This means you don't have to write `default`, but can instead just say `siderMenuSiderMenuMod.foo` */
-  override def _to: FC[SiderMenuProps with PrivateSiderMenuProps] = default
 }

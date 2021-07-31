@@ -11,54 +11,57 @@ import typings.node.Buffer
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("express-fileupload", JSImport.Namespace)
   @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-fileupload", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-fileupload", "FileArray")
   @js.native
-  class FileArray () extends /* index */ StringDictionary[UploadedFile]
+  class FileArray ()
+    extends StObject
+       with /* index */ StringDictionary[UploadedFile]
   
   /**
     * @see {@link https://github.com/richardgirges/express-fileupload#available-options}
     */
-  @js.native
   trait Options
-    extends /* property */ StringDictionary[js.Any] {
+    extends StObject
+       with /* property */ StringDictionary[js.Any] {
     
     /**
       * Returns a HTTP 413 when the file is bigger than the size limit if `true`.
       * Otherwise, it will add a `truncated = true` to the resulting file structure.
       * @default false
       */
-    var abortOnLimit: js.UndefOr[Boolean] = js.native
+    var abortOnLimit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Automatically creates the directory path specified in `.mv(filePathName)`
       * @default false
       */
-    var createParentPath: js.UndefOr[Boolean] = js.native
+    var createParentPath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Turn on/off upload process logging.
       * Can be useful for troubleshooting.
       * @default false
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /**
       * User defined limit handler which will be invoked if the file is bigger than configured limits.
       * @default false
       */
-    var limitHandler: js.UndefOr[Boolean | (RequestHandler[ParamsDictionary, _, _, Query])] = js.native
+    var limitHandler: js.UndefOr[Boolean | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])] = js.undefined
     
     /**
       * By default, `req.body` and `req.files`
@@ -68,7 +71,7 @@ object mod {
       * `{'name': 'John', 'hobbies': ['Cinema', 'Bike']}`
       * @default false
       */
-    var parseNested: js.UndefOr[Boolean] = js.native
+    var parseNested: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Preserves filename extension when using safeFileNames option.
@@ -77,13 +80,13 @@ object mod {
       * If an extension is smaller than the extension length, it remains untouched. If the extension is longer, it is shifted.
       * @default false
       */
-    var preserveExtension: js.UndefOr[Boolean | Double] = js.native
+    var preserveExtension: js.UndefOr[Boolean | Double] = js.undefined
     
     /**
       * Response which will be send to client if file size limit exceeded when `abortOnLimit` set to `true`.
       * @default 'File size limit has been reached'
       */
-    var responseOnLimit: js.UndefOr[String] = js.native
+    var responseOnLimit: js.UndefOr[String] = js.undefined
     
     /**
       * Strips characters from the upload's filename.
@@ -92,7 +95,7 @@ object mod {
       * This option is off by default.
       * @default false
       */
-    var safeFileNames: js.UndefOr[Boolean | RegExp] = js.native
+    var safeFileNames: js.UndefOr[Boolean | RegExp] = js.undefined
     
     /**
       * Path to store temporary files.
@@ -101,18 +104,18 @@ object mod {
       * You can use trailing slash, but it is not necessary.
       * @default '/tmp'
       */
-    var tempFileDir: js.UndefOr[String] = js.native
+    var tempFileDir: js.UndefOr[String] = js.undefined
     
     /**
       * @default 60000
       */
-    var uploadTimeout: js.UndefOr[Double] = js.native
+    var uploadTimeout: js.UndefOr[Double] = js.undefined
     
     /**
       * Applies uri decoding to file names if set true.
       * @default false
       */
-    var uriDecodeFileNames: js.UndefOr[Boolean] = js.native
+    var uriDecodeFileNames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * By default this module uploads files into RAM.
@@ -120,7 +123,7 @@ object mod {
       * or in case of uploading lots of files at same time.
       * @default false
       */
-    var useTempFiles: js.UndefOr[Boolean] = js.native
+    var useTempFiles: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -152,11 +155,11 @@ object mod {
       def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)
       
       @scala.inline
-      def setLimitHandler(value: Boolean | (RequestHandler[ParamsDictionary, _, _, Query])): Self = StObject.set(x, "limitHandler", value.asInstanceOf[js.Any])
+      def setLimitHandler(value: Boolean | (RequestHandler[ParamsDictionary, js.Any, js.Any, Query])): Self = StObject.set(x, "limitHandler", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setLimitHandlerFunction3(
-        value: (/* req */ Request[ParamsDictionary, _, _, Query], /* res */ Response[_, Double], /* next */ NextFunction) => js.Any
+        value: (/* req */ Request[ParamsDictionary, js.Any, js.Any, Query], /* res */ Response[js.Any, Double], /* next */ NextFunction) => js.Any
       ): Self = StObject.set(x, "limitHandler", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -248,10 +251,9 @@ object mod {
     
     object Express {
       
-      @js.native
       trait Request extends StObject {
         
-        var files: js.UndefOr[FileArray] = js.native
+        var files: js.UndefOr[FileArray] = js.undefined
       }
       object Request {
         

@@ -12,14 +12,15 @@ import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.MOTORCYCLE
 import typings.onfleetNodeOnfleet.onfleetNodeOnfleetStrings.TRUCK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workersMod {
   
   @JSImport("@onfleet/node-onfleet/Resources/Workers", JSImport.Namespace)
   @js.native
-  class ^ () extends Worker
+  class ^ ()
+    extends StObject
+       with Worker
   
   /**
     * @prop name - The worker’s complete name.
@@ -30,20 +31,19 @@ object workersMod {
     * @prop displayName - Optional. This value is used in place of the worker's actual name within sms notifications,
     * delivery tracking pages, and across organization boundaries (connections).
     */
-  @js.native
   trait CreateWorkerProps extends StObject {
     
-    var capacity: js.UndefOr[Double] = js.native
+    var capacity: js.UndefOr[Double] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var teams: String = js.native
+    var teams: String
     
-    var vehicle: js.UndefOr[Vehicle] = js.native
+    var vehicle: js.UndefOr[Vehicle] = js.undefined
   }
   object CreateWorkerProps {
     
@@ -86,10 +86,9 @@ object workersMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped [@onfleet/node-onfleet.@onfleet/node-onfleet/Resources/Destinations.Longitude, @onfleet/node-onfleet.@onfleet/node-onfleet/Resources/Destinations.Latitude] */ @js.native
-  trait GetWorkerByLocationProps extends StObject {
+  - Dropped [@onfleet/node-onfleet.@onfleet/node-onfleet/Resources/Destinations.Longitude, @onfleet/node-onfleet.@onfleet/node-onfleet/Resources/Destinations.Latitude] */ trait GetWorkerByLocationProps extends StObject {
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
   }
   object GetWorkerByLocationProps {
     
@@ -117,16 +116,15 @@ object workersMod {
     * 1 is idle (on-duty, no active task) and 2 is active (on-duty, active task).
     * @prop teams - Optional. A comma-separated list of the team IDs that workers must be part of.
     */
-  @js.native
   trait GetWorkerQueryProps extends StObject {
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var phones: js.UndefOr[String] = js.native
+    var phones: js.UndefOr[String] = js.undefined
     
-    var states: js.UndefOr[String] = js.native
+    var states: js.UndefOr[String] = js.undefined
     
-    var teams: js.UndefOr[String] = js.native
+    var teams: js.UndefOr[String] = js.undefined
   }
   object GetWorkerQueryProps {
     
@@ -165,48 +163,47 @@ object workersMod {
     }
   }
   
-  @js.native
   trait OnfleetWorker extends StObject {
     
-    var accountStatus: String = js.native
+    var accountStatus: String
     
-    var activeTask: String | Null = js.native
+    var activeTask: String | Null
     
-    var capacity: Double = js.native
+    var capacity: Double
     
-    var delayTime: Double | Null = js.native
+    var delayTime: Double | Null
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var id: String = js.native
+    var id: String
     
-    var imageUrl: String | Null = js.native
+    var imageUrl: String | Null
     
-    var location: Location = js.native
+    var location: Location
     
-    var metadata: js.Array[OnfleetMetadata] = js.native
+    var metadata: js.Array[OnfleetMetadata]
     
-    var name: String = js.native
+    var name: String
     
-    var onDuty: Boolean = js.native
+    var onDuty: Boolean
     
-    var organization: String = js.native
+    var organization: String
     
-    var phone: String = js.native
+    var phone: String
     
-    var tasks: js.Array[String] = js.native
+    var tasks: js.Array[String]
     
-    var teams: js.Array[String] = js.native
+    var teams: js.Array[String]
     
-    var timeCreated: Double = js.native
+    var timeCreated: Double
     
-    var timeLastModified: Double = js.native
+    var timeLastModified: Double
     
-    var timeLastSeen: Double = js.native
+    var timeLastSeen: Double
     
-    var userData: AppVersion = js.native
+    var userData: AppVersion
     
-    var vehicle: Vehicle | Null = js.native
+    var vehicle: Vehicle | Null
   }
   object OnfleetWorker {
     
@@ -229,7 +226,7 @@ object workersMod {
       timeLastSeen: Double,
       userData: AppVersion
     ): OnfleetWorker = {
-      val __obj = js.Dynamic.literal(accountStatus = accountStatus.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onDuty = onDuty.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], timeLastSeen = timeLastSeen.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(accountStatus = accountStatus.asInstanceOf[js.Any], capacity = capacity.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], onDuty = onDuty.asInstanceOf[js.Any], organization = organization.asInstanceOf[js.Any], phone = phone.asInstanceOf[js.Any], tasks = tasks.asInstanceOf[js.Any], teams = teams.asInstanceOf[js.Any], timeCreated = timeCreated.asInstanceOf[js.Any], timeLastModified = timeLastModified.asInstanceOf[js.Any], timeLastSeen = timeLastSeen.asInstanceOf[js.Any], userData = userData.asInstanceOf[js.Any], activeTask = null, delayTime = null, imageUrl = null, vehicle = null)
       __obj.asInstanceOf[OnfleetWorker]
     }
     
@@ -319,20 +316,19 @@ object workersMod {
     }
   }
   
-  @js.native
   trait UpdateWorkerProps extends StObject {
     
-    var capacity: js.UndefOr[Double] = js.native
+    var capacity: js.UndefOr[Double] = js.undefined
     
-    var displayName: js.UndefOr[String] = js.native
+    var displayName: js.UndefOr[String] = js.undefined
     
-    var metadata: js.UndefOr[OnfleetMetadata] = js.native
+    var metadata: js.UndefOr[OnfleetMetadata] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var teams: js.UndefOr[String] = js.native
+    var teams: js.UndefOr[String] = js.undefined
     
-    var vehicle: js.UndefOr[Vehicle] = js.native
+    var vehicle: js.UndefOr[Vehicle] = js.undefined
   }
   object UpdateWorkerProps {
     
@@ -383,16 +379,15 @@ object workersMod {
     }
   }
   
-  @js.native
   trait Vehicle extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var licensePlate: js.UndefOr[String] = js.native
+    var licensePlate: js.UndefOr[String] = js.undefined
     
-    var `type`: BICYCLE | CAR | MOTORCYCLE | TRUCK = js.native
+    var `type`: BICYCLE | CAR | MOTORCYCLE | TRUCK
   }
   object Vehicle {
     
@@ -451,14 +446,13 @@ object workersMod {
     def update(id: String, worker: UpdateWorkerProps): js.Promise[OnfleetWorker] = js.native
   }
   
-  @js.native
   trait WorkerSchedule extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var shifts: js.Array[js.Tuple2[Double, Double]] = js.native
+    var shifts: js.Array[js.Tuple2[Double, Double]]
     
-    var timezone: String = js.native
+    var timezone: String
   }
   object WorkerSchedule {
     

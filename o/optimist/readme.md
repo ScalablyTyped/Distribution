@@ -10,8 +10,8 @@ Light-weight option parsing with an argv hash. No optstrings attached.
 | Full name          | optimist |
 | Keywords           | argument, args, option, parser, parsing, cli, command |
 | # releases         | 0 |
-| # dependents       | 4130 |
-| # downloads        | 392926532 |
+| # dependents       | 4123 |
+| # downloads        | 307554650 |
 | # stars            | 143 |
 
 ## Links

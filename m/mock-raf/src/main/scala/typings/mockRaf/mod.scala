@@ -3,14 +3,16 @@ package typings.mockRaf
 import typings.std.FrameRequestCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): Creator = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Creator]
+  
   @JSImport("mock-raf", JSImport.Namespace)
   @js.native
-  def apply(): Creator = js.native
+  val ^ : js.Any = js.native
   
   /** Creates a mockRaf instance, exposing the functions you'll use to interact with the mock. */
   @js.native
@@ -33,14 +35,13 @@ object mod {
     def step(options: Options): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** The number of steps to take. */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** The time that should pass during each requestAnimationFrame step in milliseconds. Default is roughly equivalent to default browser behavior. */
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

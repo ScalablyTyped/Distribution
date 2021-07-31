@@ -11,7 +11,6 @@ import typings.std.Element
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -49,46 +48,45 @@ object mod {
     def this(args: js.Any*) = this()
   }
   
-  @js.native
   trait GraphConfiguration[N /* <: GraphNode */, L /* <: GraphLink */] extends StObject {
     
-    var automaticRearrangeAfterDropNode: Boolean = js.native
+    var automaticRearrangeAfterDropNode: Boolean
     
-    var collapsible: Boolean = js.native
+    var collapsible: Boolean
     
-    var d3: AlphaTarget = js.native
+    var d3: AlphaTarget
     
-    var directed: Boolean = js.native
+    var directed: Boolean
     
-    var focusAnimationDuration: Double = js.native
+    var focusAnimationDuration: Double
     
-    var focusZoom: Double = js.native
+    var focusZoom: Double
     
-    var height: Double = js.native
+    var height: Double
     
-    var highlightDegree: Double = js.native
+    var highlightDegree: Double
     
-    var highlightOpacity: Double = js.native
+    var highlightOpacity: Double
     
-    var link: Partial[GraphLevelLinkConfiguration[L]] = js.native
+    var link: Partial[GraphLevelLinkConfiguration[L]]
     
-    var linkHighlightBehavior: Boolean = js.native
+    var linkHighlightBehavior: Boolean
     
-    var maxZoom: Double = js.native
+    var maxZoom: Double
     
-    var minZoom: Double = js.native
+    var minZoom: Double
     
-    var node: Partial[GraphLevelNodeConfiguration[N]] = js.native
+    var node: Partial[GraphLevelNodeConfiguration[N]]
     
-    var nodeHighlightBehavior: Boolean = js.native
+    var nodeHighlightBehavior: Boolean
     
-    var panAndZoom: Boolean = js.native
+    var panAndZoom: Boolean
     
-    var staticGraph: Boolean = js.native
+    var staticGraph: Boolean
     
-    var staticGraphWithDragAndDrop: Boolean = js.native
+    var staticGraphWithDragAndDrop: Boolean
     
-    var width: Double = js.native
+    var width: Double
   }
   object GraphConfiguration {
     
@@ -119,7 +117,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GraphConfigurationMutableBuilder[Self <: GraphConfiguration[_, _], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self with (GraphConfiguration[N, L])) extends AnyVal {
+    implicit class GraphConfigurationMutableBuilder[Self <: GraphConfiguration[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphConfiguration[N, L])) extends AnyVal {
       
       @scala.inline
       def setAutomaticRearrangeAfterDropNode(value: Boolean): Self = StObject.set(x, "automaticRearrangeAfterDropNode", value.asInstanceOf[js.Any])
@@ -180,14 +178,13 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphData[N /* <: GraphNode */, L /* <: GraphLink */] extends StObject {
     
-    var focusedNodeId: js.UndefOr[String] = js.native
+    var focusedNodeId: js.UndefOr[String] = js.undefined
     
-    var links: js.Array[L] = js.native
+    var links: js.Array[L]
     
-    var nodes: js.Array[N] = js.native
+    var nodes: js.Array[N]
   }
   object GraphData {
     
@@ -198,7 +195,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GraphDataMutableBuilder[Self <: GraphData[_, _], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self with (GraphData[N, L])) extends AnyVal {
+    implicit class GraphDataMutableBuilder[Self <: GraphData[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphData[N, L])) extends AnyVal {
       
       @scala.inline
       def setFocusedNodeId(value: String): Self = StObject.set(x, "focusedNodeId", value.asInstanceOf[js.Any])
@@ -220,30 +217,29 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphEventCallbacks extends StObject {
     
-    def onClickGraph(event: MouseEvent[Element, NativeMouseEvent]): Unit = js.native
+    def onClickGraph(event: MouseEvent[Element, NativeMouseEvent]): Unit
     
-    def onClickLink(source: String, target: String): Unit = js.native
+    def onClickLink(source: String, target: String): Unit
     
-    def onClickNode(nodeId: String): Unit = js.native
+    def onClickNode(nodeId: String): Unit
     
-    def onDoubleClickNode(nodeId: String): Unit = js.native
+    def onDoubleClickNode(nodeId: String): Unit
     
-    def onMouseOutLink(source: String, target: String): Unit = js.native
+    def onMouseOutLink(source: String, target: String): Unit
     
-    def onMouseOutNode(nodeId: String): Unit = js.native
+    def onMouseOutNode(nodeId: String): Unit
     
-    def onMouseOverLink(source: String, target: String): Unit = js.native
+    def onMouseOverLink(source: String, target: String): Unit
     
-    def onMouseOverNode(nodeId: String): Unit = js.native
+    def onMouseOverNode(nodeId: String): Unit
     
-    def onNodePositionChange(nodeId: String, x: Double, y: Double): Unit = js.native
+    def onNodePositionChange(nodeId: String, x: Double, y: Double): Unit
     
-    def onRightClickLink(event: MouseEvent[Element, NativeMouseEvent], source: String, target: String): Unit = js.native
+    def onRightClickLink(event: MouseEvent[Element, NativeMouseEvent], source: String, target: String): Unit
     
-    def onRightClickNode(event: MouseEvent[Element, NativeMouseEvent], nodeId: String): Unit = js.native
+    def onRightClickNode(event: MouseEvent[Element, NativeMouseEvent], nodeId: String): Unit
   }
   object GraphEventCallbacks {
     
@@ -303,30 +299,31 @@ object mod {
     }
   }
   
-  @js.native
-  trait GraphLevelLinkConfiguration[L /* <: GraphLink */] extends LinkLevelLinkConfiguration {
+  trait GraphLevelLinkConfiguration[L /* <: GraphLink */]
+    extends StObject
+       with LinkLevelLinkConfiguration {
     
-    var fontSize: Double = js.native
+    var fontSize: Double
     
-    var fontWeight: String = js.native
+    var fontWeight: String
     
-    var highlightColor: String = js.native
+    var highlightColor: String
     
-    var highlightFontSize: Double = js.native
+    var highlightFontSize: Double
     
-    var highlightFontWeight: String = js.native
+    var highlightFontWeight: String
     
-    var labelProperty: LinkLabelProperty[L] = js.native
+    var labelProperty: LinkLabelProperty[L]
     
-    var markerHeight: Double = js.native
+    var markerHeight: Double
     
-    var mouseCursor: String = js.native
+    var mouseCursor: String
     
-    var renderLabel: Boolean = js.native
+    var renderLabel: Boolean
     
-    var semanticStrokeWidth: Boolean = js.native
+    var semanticStrokeWidth: Boolean
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object GraphLevelLinkConfiguration {
     
@@ -355,7 +352,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GraphLevelLinkConfigurationMutableBuilder[Self <: GraphLevelLinkConfiguration[_], L /* <: GraphLink */] (val x: Self with GraphLevelLinkConfiguration[L]) extends AnyVal {
+    implicit class GraphLevelLinkConfigurationMutableBuilder[Self <: GraphLevelLinkConfiguration[?], L /* <: GraphLink */] (val x: Self & GraphLevelLinkConfiguration[L]) extends AnyVal {
       
       @scala.inline
       def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
@@ -395,46 +392,45 @@ object mod {
     }
   }
   
-  @js.native
   trait GraphLevelNodeConfiguration[N /* <: GraphNode */] extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var fontColor: String = js.native
+    var fontColor: String
     
-    var fontSize: Double = js.native
+    var fontSize: Double
     
-    var fontWeight: String = js.native
+    var fontWeight: String
     
-    var highlightColor: String = js.native
+    var highlightColor: String
     
-    var highlightFontSize: Double = js.native
+    var highlightFontSize: Double
     
-    var highlightFontWeight: String = js.native
+    var highlightFontWeight: String
     
-    var highlightStrokeColor: SAME | String = js.native
+    var highlightStrokeColor: SAME | String
     
-    var highlightStrokeWidth: SAME | Double = js.native
+    var highlightStrokeWidth: SAME | Double
     
-    var labelProperty: NodeLabelProperty[N] = js.native
+    var labelProperty: NodeLabelProperty[N]
     
-    var mouseCursor: String = js.native
+    var mouseCursor: String
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var renderLabel: Boolean = js.native
+    var renderLabel: Boolean
     
-    var size: Double | Height = js.native
+    var size: Double | Height
     
-    var strokeColor: String = js.native
+    var strokeColor: String
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
     
-    var svg: String = js.native
+    var svg: String
     
-    var symbolType: String = js.native
+    var symbolType: String
     
-    def viewGenerator(node: N): js.Any = js.native
+    def viewGenerator(node: N): js.Any
   }
   object GraphLevelNodeConfiguration {
     
@@ -465,7 +461,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GraphLevelNodeConfigurationMutableBuilder[Self <: GraphLevelNodeConfiguration[_], N /* <: GraphNode */] (val x: Self with GraphLevelNodeConfiguration[N]) extends AnyVal {
+    implicit class GraphLevelNodeConfigurationMutableBuilder[Self <: GraphLevelNodeConfiguration[?], N /* <: GraphNode */] (val x: Self & GraphLevelNodeConfiguration[N]) extends AnyVal {
       
       @scala.inline
       def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
@@ -530,22 +526,21 @@ object mod {
   }
   
   /* Inlined parent std.Partial<react-d3-graph.react-d3-graph.LinkLevelLinkConfiguration> */
-  @js.native
   trait GraphLink extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
-    var markerWidth: js.UndefOr[Double] = js.native
+    var markerWidth: js.UndefOr[Double] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var source: String = js.native
+    var source: String
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var target: String = js.native
+    var target: String
   }
   object GraphLink {
     
@@ -597,32 +592,31 @@ object mod {
   }
   
   /* Inlined parent std.Partial<react-d3-graph.react-d3-graph.NodeLevelNodeConfiguration> */
-  @js.native
   trait GraphNode extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var fontColor: js.UndefOr[String] = js.native
+    var fontColor: js.UndefOr[String] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var labelProperty: js.UndefOr[NodeLabelProperty[NodeWithExtraParameters]] = js.native
+    var labelProperty: js.UndefOr[NodeLabelProperty[NodeWithExtraParameters]] = js.undefined
     
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
-    var renderLabel: js.UndefOr[Boolean] = js.native
+    var renderLabel: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double | Height] = js.native
+    var size: js.UndefOr[Double | Height] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
     
-    var svg: js.UndefOr[String] = js.native
+    var svg: js.UndefOr[String] = js.undefined
     
-    var symbolType: js.UndefOr[String] = js.native
+    var symbolType: js.UndefOr[String] = js.undefined
     
-    var viewGenerator: js.UndefOr[js.Function1[/* node */ NodeWithExtraParameters, _]] = js.native
+    var viewGenerator: js.UndefOr[js.Function1[/* node */ NodeWithExtraParameters, js.Any]] = js.undefined
   }
   object GraphNode {
     
@@ -702,7 +696,7 @@ object mod {
       def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
       
       @scala.inline
-      def setViewGenerator(value: /* node */ NodeWithExtraParameters => _): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
+      def setViewGenerator(value: /* node */ NodeWithExtraParameters => js.Any): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
       
       @scala.inline
       def setViewGeneratorUndefined: Self = StObject.set(x, "viewGenerator", js.undefined)
@@ -710,32 +704,31 @@ object mod {
   }
   
   /* Inlined parent std.Partial<react-d3-graph.react-d3-graph.GraphEventCallbacks> */
-  @js.native
   trait GraphProps[N /* <: GraphNode */, L /* <: GraphLink */] extends StObject {
     
-    var config: js.UndefOr[Partial[GraphConfiguration[N, L]]] = js.native
+    var config: js.UndefOr[Partial[GraphConfiguration[N, L]]] = js.undefined
     
-    var data: js.UndefOr[GraphData[N, L]] = js.native
+    var data: js.UndefOr[GraphData[N, L]] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var onClickGraph: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.native
+    var onClickGraph: js.UndefOr[js.Function1[/* event */ MouseEvent[Element, NativeMouseEvent], Unit]] = js.undefined
     
-    var onClickLink: js.UndefOr[js.Function2[/* source */ String, /* target */ String, Unit]] = js.native
+    var onClickLink: js.UndefOr[js.Function2[/* source */ String, /* target */ String, Unit]] = js.undefined
     
-    var onClickNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.native
+    var onClickNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.undefined
     
-    var onDoubleClickNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.native
+    var onDoubleClickNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.undefined
     
-    var onMouseOutLink: js.UndefOr[js.Function2[/* source */ String, /* target */ String, Unit]] = js.native
+    var onMouseOutLink: js.UndefOr[js.Function2[/* source */ String, /* target */ String, Unit]] = js.undefined
     
-    var onMouseOutNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.native
+    var onMouseOutNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.undefined
     
-    var onMouseOverLink: js.UndefOr[js.Function2[/* source */ String, /* target */ String, Unit]] = js.native
+    var onMouseOverLink: js.UndefOr[js.Function2[/* source */ String, /* target */ String, Unit]] = js.undefined
     
-    var onMouseOverNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.native
+    var onMouseOverNode: js.UndefOr[js.Function1[/* nodeId */ String, Unit]] = js.undefined
     
-    var onNodePositionChange: js.UndefOr[js.Function3[/* nodeId */ String, /* x */ Double, /* y */ Double, Unit]] = js.native
+    var onNodePositionChange: js.UndefOr[js.Function3[/* nodeId */ String, /* x */ Double, /* y */ Double, Unit]] = js.undefined
     
     var onRightClickLink: js.UndefOr[
         js.Function3[
@@ -744,11 +737,11 @@ object mod {
           /* target */ String, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onRightClickNode: js.UndefOr[
         js.Function2[/* event */ MouseEvent[Element, NativeMouseEvent], /* nodeId */ String, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object GraphProps {
     
@@ -759,7 +752,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class GraphPropsMutableBuilder[Self <: GraphProps[_, _], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self with (GraphProps[N, L])) extends AnyVal {
+    implicit class GraphPropsMutableBuilder[Self <: GraphProps[?, ?], N /* <: GraphNode */, L /* <: GraphLink */] (val x: Self & (GraphProps[N, L])) extends AnyVal {
       
       @scala.inline
       def setConfig(value: Partial[GraphConfiguration[N, L]]): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])
@@ -848,18 +841,17 @@ object mod {
   
   type LinkLabelProperty[L /* <: GraphLink */] = (js.Function1[/* node */ L, String]) | (/* keyof L */ String)
   
-  @js.native
   trait LinkLevelLinkConfiguration extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var fontColor: String = js.native
+    var fontColor: String
     
-    var markerWidth: Double = js.native
+    var markerWidth: Double
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
   }
   object LinkLevelLinkConfiguration {
     
@@ -891,30 +883,29 @@ object mod {
   
   type NodeLabelProperty[N /* <: GraphNode */] = (js.Function1[/* node */ N, String]) | (/* keyof N */ String)
   
-  @js.native
   trait NodeLevelNodeConfiguration extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var fontColor: String = js.native
+    var fontColor: String
     
-    var labelProperty: NodeLabelProperty[NodeWithExtraParameters] = js.native
+    var labelProperty: NodeLabelProperty[NodeWithExtraParameters]
     
-    var opacity: Double = js.native
+    var opacity: Double
     
-    var renderLabel: Boolean = js.native
+    var renderLabel: Boolean
     
-    var size: Double | Height = js.native
+    var size: Double | Height
     
-    var strokeColor: String = js.native
+    var strokeColor: String
     
-    var strokeWidth: Double = js.native
+    var strokeWidth: Double
     
-    var svg: String = js.native
+    var svg: String
     
-    var symbolType: String = js.native
+    var symbolType: String
     
-    def viewGenerator(node: NodeWithExtraParameters): js.Any = js.native
+    def viewGenerator(node: NodeWithExtraParameters): js.Any
   }
   object NodeLevelNodeConfiguration {
     
@@ -977,116 +968,16 @@ object mod {
     }
   }
   
-  /* Inlined react-d3-graph.react-d3-graph.GraphNode & {[key: string] : string} */
-  @js.native
-  trait NodeWithExtraParameters extends /* key */ StringDictionary[String] {
-    
-    var color: js.UndefOr[String] = js.native
-    
-    var fontColor: js.UndefOr[String] = js.native
-    
-    var id: String = js.native
-    
-    var labelProperty: js.UndefOr[NodeLabelProperty[NodeWithExtraParameters]] = js.native
-    
-    var opacity: js.UndefOr[Double] = js.native
-    
-    var renderLabel: js.UndefOr[Boolean] = js.native
-    
-    var size: js.UndefOr[Double | Height] = js.native
-    
-    var strokeColor: js.UndefOr[String] = js.native
-    
-    var strokeWidth: js.UndefOr[Double] = js.native
-    
-    var svg: js.UndefOr[String] = js.native
-    
-    var symbolType: js.UndefOr[String] = js.native
-    
-    var viewGenerator: js.UndefOr[js.Function1[/* node */ this.type, _]] = js.native
-  }
+  trait NodeWithExtraParameters
+    extends StObject
+       with GraphNode
+       with /* key */ StringDictionary[String]
   object NodeWithExtraParameters {
     
     @scala.inline
     def apply(id: String): NodeWithExtraParameters = {
       val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
       __obj.asInstanceOf[NodeWithExtraParameters]
-    }
-    
-    @scala.inline
-    implicit class NodeWithExtraParametersMutableBuilder[Self <: NodeWithExtraParameters] (val x: Self) extends AnyVal {
-      
-      @scala.inline
-      def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
-      
-      @scala.inline
-      def setFontColor(value: String): Self = StObject.set(x, "fontColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFontColorUndefined: Self = StObject.set(x, "fontColor", js.undefined)
-      
-      @scala.inline
-      def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLabelProperty(value: NodeLabelProperty[NodeWithExtraParameters]): Self = StObject.set(x, "labelProperty", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLabelPropertyFunction1(value: NodeWithExtraParameters => String): Self = StObject.set(x, "labelProperty", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setLabelPropertyUndefined: Self = StObject.set(x, "labelProperty", js.undefined)
-      
-      @scala.inline
-      def setOpacity(value: Double): Self = StObject.set(x, "opacity", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOpacityUndefined: Self = StObject.set(x, "opacity", js.undefined)
-      
-      @scala.inline
-      def setRenderLabel(value: Boolean): Self = StObject.set(x, "renderLabel", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRenderLabelUndefined: Self = StObject.set(x, "renderLabel", js.undefined)
-      
-      @scala.inline
-      def setSize(value: Double | Height): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSizeUndefined: Self = StObject.set(x, "size", js.undefined)
-      
-      @scala.inline
-      def setStrokeColor(value: String): Self = StObject.set(x, "strokeColor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStrokeColorUndefined: Self = StObject.set(x, "strokeColor", js.undefined)
-      
-      @scala.inline
-      def setStrokeWidth(value: Double): Self = StObject.set(x, "strokeWidth", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setStrokeWidthUndefined: Self = StObject.set(x, "strokeWidth", js.undefined)
-      
-      @scala.inline
-      def setSvg(value: String): Self = StObject.set(x, "svg", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSvgUndefined: Self = StObject.set(x, "svg", js.undefined)
-      
-      @scala.inline
-      def setSymbolType(value: String): Self = StObject.set(x, "symbolType", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setSymbolTypeUndefined: Self = StObject.set(x, "symbolType", js.undefined)
-      
-      @scala.inline
-      def setViewGenerator(value: NodeWithExtraParameters => _): Self = StObject.set(x, "viewGenerator", js.Any.fromFunction1(value))
-      
-      @scala.inline
-      def setViewGeneratorUndefined: Self = StObject.set(x, "viewGenerator", js.undefined)
     }
   }
 }

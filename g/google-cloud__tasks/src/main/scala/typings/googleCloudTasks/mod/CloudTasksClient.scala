@@ -7,7 +7,6 @@ import typings.googleGax.mod.GoogleAuth
 import typings.node.streamMod.Transform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -1422,7 +1421,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def getTask(data: NamedRequest with RunTaskRequest): PromiseLike[js.Array[Task]] = js.native
+  def getTask(data: NamedRequest & RunTaskRequest): PromiseLike[js.Array[Task]] = js.native
   /**
     * Gets a task.
     *
@@ -1476,8 +1475,8 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def getTask(data: NamedRequest with RunTaskRequest, callback: APICallback[Task]): Unit = js.native
-  def getTask(data: NamedRequest with RunTaskRequest, options: CallOptions): PromiseLike[js.Array[Task]] = js.native
+  def getTask(data: NamedRequest & RunTaskRequest, callback: APICallback[Task]): Unit = js.native
+  def getTask(data: NamedRequest & RunTaskRequest, options: CallOptions): PromiseLike[js.Array[Task]] = js.native
   /**
     * Gets a task.
     *
@@ -1531,7 +1530,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def getTask(data: NamedRequest with RunTaskRequest, options: CallOptions, callback: APICallback[Task]): Unit = js.native
+  def getTask(data: NamedRequest & RunTaskRequest, options: CallOptions, callback: APICallback[Task]): Unit = js.native
   /**
     * Gets a task.
     *
@@ -1586,7 +1585,7 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   @JSName("getTask")
-  var getTask_Original: MethodOverload[NamedRequest with RunTaskRequest, Task] = js.native
+  var getTask_Original: MethodOverload[NamedRequest & RunTaskRequest, Task] = js.native
   
   // -------------------
   // -- Service calls --
@@ -2384,7 +2383,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def listTasks(data: ListRequestObject with RunTaskRequest): PromiseLike[js.Array[js.Array[Task]]] = js.native
+  def listTasks(data: ListRequestObject & RunTaskRequest): PromiseLike[js.Array[js.Array[Task]]] = js.native
   /**
     * Lists the tasks in a queue.
     *
@@ -2494,7 +2493,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def listTasks(data: ListRequestObject with RunTaskRequest, callback: APICallback[js.Array[Task]]): Unit = js.native
+  def listTasks(data: ListRequestObject & RunTaskRequest, callback: APICallback[js.Array[Task]]): Unit = js.native
   /**
     * Lists the tasks in a queue.
     *
@@ -2604,9 +2603,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def listTasks(data: ListRequestObject with RunTaskRequest, options: CallOptionsWithPagination): PromiseLike[
-    js.Tuple3[js.Array[Task], ListRequestObject with RunTaskRequest, ListTasksResponse]
-  ] = js.native
+  def listTasks(data: ListRequestObject & RunTaskRequest, options: CallOptionsWithPagination): PromiseLike[js.Tuple3[js.Array[Task], ListRequestObject & RunTaskRequest, ListTasksResponse]] = js.native
   /**
     * Lists the tasks in a queue.
     *
@@ -2717,11 +2714,11 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   def listTasks(
-    data: ListRequestObject with RunTaskRequest,
+    data: ListRequestObject & RunTaskRequest,
     options: CallOptionsWithPagination,
-    callback: APIPaginatedCallback[js.Array[Task], ListRequestObject with RunTaskRequest, ListTasksResponse]
+    callback: APIPaginatedCallback[js.Array[Task], ListRequestObject & RunTaskRequest, ListTasksResponse]
   ): Unit = js.native
-  def listTasks(data: ListRequestObject with RunTaskRequest, options: CallOptions): PromiseLike[js.Array[js.Array[Task]]] = js.native
+  def listTasks(data: ListRequestObject & RunTaskRequest, options: CallOptions): PromiseLike[js.Array[js.Array[Task]]] = js.native
   /**
     * Lists the tasks in a queue.
     *
@@ -2832,7 +2829,7 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   def listTasks(
-    data: ListRequestObject with RunTaskRequest,
+    data: ListRequestObject & RunTaskRequest,
     options: CallOptions,
     callback: APICallback[js.Array[Task]]
   ): Unit = js.native
@@ -2899,8 +2896,8 @@ trait CloudTasksClient extends StObject {
     *     console.log(err);
     *   });
     */
-  def listTasksStream(request: ListRequestObject with RunTaskRequest): Transform = js.native
-  def listTasksStream(request: ListRequestObject with RunTaskRequest, options: CallOptions): Transform = js.native
+  def listTasksStream(request: ListRequestObject & RunTaskRequest): Transform = js.native
+  def listTasksStream(request: ListRequestObject & RunTaskRequest, options: CallOptions): Transform = js.native
   
   /**
     * Lists the tasks in a queue.
@@ -3013,10 +3010,10 @@ trait CloudTasksClient extends StObject {
     */
   @JSName("listTasks")
   var listTasks_Original: PaginatedMethodOverload[
-    ListRequestObject with RunTaskRequest, 
+    ListRequestObject & RunTaskRequest, 
     js.Array[Task], 
     ListTasksResponse, 
-    ListRequestObject with RunTaskRequest
+    ListRequestObject & RunTaskRequest
   ] = js.native
   
   /**
@@ -3767,7 +3764,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def runTask(data: NamedRequest with RunTaskRequest): PromiseLike[js.Array[Task]] = js.native
+  def runTask(data: NamedRequest & RunTaskRequest): PromiseLike[js.Array[Task]] = js.native
   /**
     * Forces a task to run now.
     *
@@ -3844,8 +3841,8 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def runTask(data: NamedRequest with RunTaskRequest, callback: APICallback[Task]): Unit = js.native
-  def runTask(data: NamedRequest with RunTaskRequest, options: CallOptions): PromiseLike[js.Array[Task]] = js.native
+  def runTask(data: NamedRequest & RunTaskRequest, callback: APICallback[Task]): Unit = js.native
+  def runTask(data: NamedRequest & RunTaskRequest, options: CallOptions): PromiseLike[js.Array[Task]] = js.native
   /**
     * Forces a task to run now.
     *
@@ -3922,7 +3919,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def runTask(data: NamedRequest with RunTaskRequest, options: CallOptions, callback: APICallback[Task]): Unit = js.native
+  def runTask(data: NamedRequest & RunTaskRequest, options: CallOptions, callback: APICallback[Task]): Unit = js.native
   /**
     * Forces a task to run now.
     *
@@ -4000,7 +3997,7 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   @JSName("runTask")
-  var runTask_Original: MethodOverload[NamedRequest with RunTaskRequest, Task] = js.native
+  var runTask_Original: MethodOverload[NamedRequest & RunTaskRequest, Task] = js.native
   
   /**
     * Sets the access control policy for a Queue. Replaces any existing
@@ -4061,7 +4058,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def setIamPolicy(data: ResourceRequest with SetIamPolicyRequest): PromiseLike[js.Array[Policy]] = js.native
+  def setIamPolicy(data: ResourceRequest & SetIamPolicyRequest): PromiseLike[js.Array[Policy]] = js.native
   /**
     * Sets the access control policy for a Queue. Replaces any existing
     * policy.
@@ -4121,8 +4118,8 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def setIamPolicy(data: ResourceRequest with SetIamPolicyRequest, callback: APICallback[Policy]): Unit = js.native
-  def setIamPolicy(data: ResourceRequest with SetIamPolicyRequest, options: CallOptions): PromiseLike[js.Array[Policy]] = js.native
+  def setIamPolicy(data: ResourceRequest & SetIamPolicyRequest, callback: APICallback[Policy]): Unit = js.native
+  def setIamPolicy(data: ResourceRequest & SetIamPolicyRequest, options: CallOptions): PromiseLike[js.Array[Policy]] = js.native
   /**
     * Sets the access control policy for a Queue. Replaces any existing
     * policy.
@@ -4182,11 +4179,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def setIamPolicy(
-    data: ResourceRequest with SetIamPolicyRequest,
-    options: CallOptions,
-    callback: APICallback[Policy]
-  ): Unit = js.native
+  def setIamPolicy(data: ResourceRequest & SetIamPolicyRequest, options: CallOptions, callback: APICallback[Policy]): Unit = js.native
   /**
     * Sets the access control policy for a Queue. Replaces any existing
     * policy.
@@ -4247,7 +4240,7 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   @JSName("setIamPolicy")
-  var setIamPolicy_Original: MethodOverload[ResourceRequest with SetIamPolicyRequest, Policy] = js.native
+  var setIamPolicy_Original: MethodOverload[ResourceRequest & SetIamPolicyRequest, Policy] = js.native
   
   /**
     * Return a fully-qualified task resource name string.
@@ -4312,7 +4305,7 @@ trait CloudTasksClient extends StObject {
     *     console.error(err);
     *   });
     */
-  def testIamPermissions(data: ResourceRequest with TestIamPermissionsRequest): PromiseLike[js.Array[TestIamPermissionsResponse]] = js.native
+  def testIamPermissions(data: ResourceRequest & TestIamPermissionsRequest): PromiseLike[js.Array[TestIamPermissionsResponse]] = js.native
   /**
     * Returns permissions that a caller has on a Queue.
     * If the resource does not exist, this will return an empty set of
@@ -4367,10 +4360,10 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   def testIamPermissions(
-    data: ResourceRequest with TestIamPermissionsRequest,
+    data: ResourceRequest & TestIamPermissionsRequest,
     callback: APICallback[TestIamPermissionsResponse]
   ): Unit = js.native
-  def testIamPermissions(data: ResourceRequest with TestIamPermissionsRequest, options: CallOptions): PromiseLike[js.Array[TestIamPermissionsResponse]] = js.native
+  def testIamPermissions(data: ResourceRequest & TestIamPermissionsRequest, options: CallOptions): PromiseLike[js.Array[TestIamPermissionsResponse]] = js.native
   /**
     * Returns permissions that a caller has on a Queue.
     * If the resource does not exist, this will return an empty set of
@@ -4425,7 +4418,7 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   def testIamPermissions(
-    data: ResourceRequest with TestIamPermissionsRequest,
+    data: ResourceRequest & TestIamPermissionsRequest,
     options: CallOptions,
     callback: APICallback[TestIamPermissionsResponse]
   ): Unit = js.native
@@ -4483,7 +4476,7 @@ trait CloudTasksClient extends StObject {
     *   });
     */
   @JSName("testIamPermissions")
-  var testIamPermissions_Original: MethodOverload[ResourceRequest with TestIamPermissionsRequest, TestIamPermissionsResponse] = js.native
+  var testIamPermissions_Original: MethodOverload[ResourceRequest & TestIamPermissionsRequest, TestIamPermissionsResponse] = js.native
   
   /**
     * Updates a queue.

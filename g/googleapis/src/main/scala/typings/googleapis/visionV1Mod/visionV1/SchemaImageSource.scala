@@ -2,13 +2,11 @@ package typings.googleapis.visionV1Mod.visionV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * External image source (Google Cloud Storage or web URL image location).
   */
-@js.native
 trait SchemaImageSource extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaImageSource extends StObject {
     * URIs](https://cloud.google.com/storage/docs/reference-uris) for more
     * info.
     */
-  var gcsImageUri: js.UndefOr[String] = js.native
+  var gcsImageUri: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of the source image. Can be either:  1. A Google Cloud Storage
@@ -34,7 +32,7 @@ trait SchemaImageSource extends StObject {
     * When both `gcs_image_uri` and `image_uri` are specified, `image_uri`
     * takes precedence.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
 }
 object SchemaImageSource {
   

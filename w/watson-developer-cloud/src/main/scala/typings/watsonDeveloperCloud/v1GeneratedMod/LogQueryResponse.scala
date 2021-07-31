@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object containing results that match the requested **logs** query. */
-@js.native
 trait LogQueryResponse extends StObject {
   
   /** Number of matching results. */
-  var matching_results: js.UndefOr[Double] = js.native
+  var matching_results: js.UndefOr[Double] = js.undefined
   
   /** Array of log query response results. */
-  var results: js.UndefOr[js.Array[LogQueryResponseResult]] = js.native
+  var results: js.UndefOr[js.Array[LogQueryResponseResult]] = js.undefined
 }
 object LogQueryResponse {
   

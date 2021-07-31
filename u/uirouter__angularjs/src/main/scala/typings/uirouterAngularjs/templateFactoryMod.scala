@@ -9,18 +9,19 @@ import typings.uirouterCore.mod.ResolveContext
 import typings.uirouterCore.paramsInterfaceMod.RawParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateFactoryMod {
   
   @JSImport("@uirouter/angularjs/lib/templateFactory", "TemplateFactory")
   @js.native
-  class TemplateFactory () extends TemplateFactoryProvider {
+  class TemplateFactory ()
+    extends StObject
+       with TemplateFactoryProvider {
     
     /** @hidden */ @JSName("$get")
     var $get: js.Array[
-        String | (js.Function3[/* $http */ _, /* $templateCache */ _, /* $injector */ _, this.type])
+        String | (js.Function3[/* $http */ js.Any, /* $templateCache */ js.Any, /* $injector */ js.Any, this.type])
       ] = js.native
     
     /** @hidden */ @JSName("$http")
@@ -41,7 +42,7 @@ object templateFactoryMod {
       * @param {Function} injectFn a function used to invoke the template provider
       * @return {string} The template html as a string: "<component-name input1='::$resolve.foo'></component-name>".
       */
-    def fromComponentProvider(provider: IInjectable, params: js.Any, context: ResolveContext): js.Promise[_] = js.native
+    def fromComponentProvider(provider: IInjectable, params: js.Any, context: ResolveContext): js.Promise[js.Any] = js.native
     
     /**
       * Creates a template from a configuration object.
@@ -66,7 +67,7 @@ object templateFactoryMod {
       * @return {string|Promise.<string>} The template html as a string, or a promise
       * for that string.
       */
-    def fromProvider(provider: IInjectable, params: js.Any, context: ResolveContext): js.Promise[_] = js.native
+    def fromProvider(provider: IInjectable, params: js.Any, context: ResolveContext): js.Promise[js.Any] = js.native
     
     /**
       * Creates a template from a string or a function returning a string.
@@ -110,5 +111,29 @@ object templateFactoryMod {
       */
     def makeComponentTemplate(uiView: IAugmentedJQuery, context: ResolveContext, component: String): String = js.native
     def makeComponentTemplate(uiView: IAugmentedJQuery, context: ResolveContext, component: String, bindings: js.Any): String = js.native
+    
+    /**
+      * Forces $templateFactory to use $http instead of $templateRequest.
+      *
+      * UI-Router uses `$templateRequest` by default on angular 1.3+.
+      * Use this method to choose to use `$http` instead.
+      *
+      * ---
+      *
+      * ## Security warning
+      *
+      * This might cause XSS, as $http doesn't enforce the regular security checks for
+      * templates that have been introduced in Angular 1.3.
+      *
+      * See the $sce documentation, section
+      * <a href="https://docs.angularjs.org/api/ng/service/$sce#impact-on-loading-templates">
+      * Impact on loading templates</a> for more details about this mechanism.
+      *
+      * *Note: forcing this to `false` on Angular 1.2.x will crash, because `$templateRequest` is not implemented.*
+      *
+      * @param useUnsafeHttpService `true` to use `$http` to fetch templates
+      */
+    /* CompleteClass */
+    override def useHttpService(useUnsafeHttpService: Boolean): js.Any = js.native
   }
 }

@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaRegionInstanceGroupsSetNamedPortsRequest extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaRegionInstanceGroupsSetNamedPortsRequest extends StObject {
     * request to ensure that you do not overwrite changes that were applied
     * from another concurrent request.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * The list of named ports to set for this instance group.
     */
-  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.native
+  var namedPorts: js.UndefOr[js.Array[SchemaNamedPort]] = js.undefined
 }
 object SchemaRegionInstanceGroupsSetNamedPortsRequest {
   

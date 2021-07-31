@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobResponse extends StObject {
   
   /**
     * The requested job definition.
     */
-  var Job: js.UndefOr[typings.awsSdk.glueMod.Job] = js.native
+  var Job: js.UndefOr[typings.awsSdk.glueMod.Job] = js.undefined
 }
 object GetJobResponse {
   

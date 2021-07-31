@@ -3,7 +3,6 @@ package typings.protractor.mod
 import typings.seleniumWebdriver.mod.IWebElementId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protractor", "WebElement")
@@ -21,17 +20,19 @@ class WebElement protected ()
 /* static members */
 object WebElement {
   
+  @JSImport("protractor", "WebElement")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * @param {string} id The raw ID.
     * @param {boolean=} opt_noLegacy Whether to exclude the legacy element key.
     * @return {!Object} The element ID for use with WebDriver's wire protocol.
     */
-  @JSImport("protractor", "WebElement.buildId")
-  @js.native
-  def buildId(id: String): IWebElementId = js.native
-  @JSImport("protractor", "WebElement.buildId")
-  @js.native
-  def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = js.native
+  @scala.inline
+  def buildId(id: String): IWebElementId = ^.asInstanceOf[js.Dynamic].applyDynamic("buildId")(id.asInstanceOf[js.Any]).asInstanceOf[IWebElementId]
+  @scala.inline
+  def buildId(id: String, opt_noLegacy: Boolean): IWebElementId = (^.asInstanceOf[js.Dynamic].applyDynamic("buildId")(id.asInstanceOf[js.Any], opt_noLegacy.asInstanceOf[js.Any])).asInstanceOf[IWebElementId]
   
   /**
     * Compares two WebElements for equality.
@@ -41,9 +42,8 @@ object WebElement {
     * @return {!Promise<boolean>} A promise that will be
     *     resolved to whether the two WebElements are equal.
     */
-  @JSImport("protractor", "WebElement.equals")
-  @js.native
-  def equals(a: typings.seleniumWebdriver.mod.WebElement, b: typings.seleniumWebdriver.mod.WebElement): js.Promise[Boolean] = js.native
+  @scala.inline
+  def equals(a: typings.seleniumWebdriver.mod.WebElement, b: typings.seleniumWebdriver.mod.WebElement): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Extracts the encoded WebElement ID from the object.
@@ -52,15 +52,13 @@ object WebElement {
     * @return {string} the extracted ID.
     * @throws {TypeError} if the object is not a valid encoded ID.
     */
-  @JSImport("protractor", "WebElement.extractId")
-  @js.native
-  def extractId(obj: IWebElementId): String = js.native
+  @scala.inline
+  def extractId(obj: IWebElementId): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extractId")(obj.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * @param {?} obj the object to test.
     * @return {boolean} whether the object is a valid encoded WebElement ID.
     */
-  @JSImport("protractor", "WebElement.isId")
-  @js.native
-  def isId(obj: IWebElementId): Boolean = js.native
+  @scala.inline
+  def isId(obj: IWebElementId): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isId")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

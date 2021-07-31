@@ -4,11 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SceneViewToMapOptions extends Object {
+trait SceneViewToMapOptions
+  extends StObject
+     with Object {
   
   /**
     * A list of layers and graphics to include for intersection testing.
@@ -17,7 +17,7 @@ trait SceneViewToMapOptions extends Object {
     */
   var exclude: js.UndefOr[
     (js.Array[IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground]) | Collection[IntersectItem] | IntersectItem
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A list of layers and graphics to include for intersection testing.
@@ -26,7 +26,7 @@ trait SceneViewToMapOptions extends Object {
     */
   var include: js.UndefOr[
     (js.Array[IntersectItem | Collection[IntersectItem] | js.Array[IntersectItem] | Ground]) | Collection[IntersectItem] | IntersectItem
-  ] = js.native
+  ] = js.undefined
 }
 object SceneViewToMapOptions {
   

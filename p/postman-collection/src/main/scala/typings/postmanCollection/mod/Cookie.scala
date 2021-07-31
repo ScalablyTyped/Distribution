@@ -4,7 +4,6 @@ import typings.postmanCollection.anon.Key
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
@@ -40,30 +39,29 @@ class Cookie () extends PropertyBase[CookieDefinition] {
 /* static members */
 object Cookie {
   
-  /** Check whether an object is an instance of PostmanCookie. */
-  @JSImport("postman-collection", "Cookie.isCookie")
+  @JSImport("postman-collection", "Cookie")
   @js.native
-  def isCookie(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  /** Check whether an object is an instance of PostmanCookie. */
+  @scala.inline
+  def isCookie(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCookie")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** Cookie header parser */
-  @JSImport("postman-collection", "Cookie.parse")
-  @js.native
-  def parse(str: String): CookieDefinition = js.native
+  @scala.inline
+  def parse(str: String): CookieDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any]).asInstanceOf[CookieDefinition]
   
   /**
     * Converts the Cookie to a single Set-Cookie header string.
     */
-  @JSImport("postman-collection", "Cookie.stringify")
-  @js.native
-  def stringify(cookie: CookieDefinition): String = js.native
+  @scala.inline
+  def stringify(cookie: CookieDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(cookie.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Stringifies an Array or {@link PropertyList} of Cookies into a single string. */
-  @JSImport("postman-collection", "Cookie.unparse")
-  @js.native
-  def unparse(cookies: js.Array[CookieDefinition]): String = js.native
+  @scala.inline
+  def unparse(cookies: js.Array[CookieDefinition]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparse")(cookies.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Unparses a single Cookie. */
-  @JSImport("postman-collection", "Cookie.unparseSingle")
-  @js.native
-  def unparseSingle(cookie: CookieDefinition): String = js.native
+  @scala.inline
+  def unparseSingle(cookie: CookieDefinition): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unparseSingle")(cookie.asInstanceOf[js.Any]).asInstanceOf[String]
 }

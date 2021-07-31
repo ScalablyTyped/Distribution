@@ -2,101 +2,99 @@ package typings.awsSdk.lexmodelbuildingserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBotResponse extends StObject {
   
   /**
     * The message that Amazon Lex returns when the user elects to end the conversation without completing it. For more information, see PutBot.
     */
-  var abortStatement: js.UndefOr[Statement] = js.native
+  var abortStatement: js.UndefOr[Statement] = js.undefined
   
   /**
     * Checksum of the bot used to identify a specific revision of the bot's $LATEST version.
     */
-  var checksum: js.UndefOr[String] = js.native
+  var checksum: js.UndefOr[String] = js.undefined
   
   /**
     * For each Amazon Lex bot created with the Amazon Lex Model Building Service, you must specify whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to the Children's Online Privacy Protection Act (COPPA) by specifying true or false in the childDirected field. By specifying true in the childDirected field, you confirm that your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. By specifying false in the childDirected field, you confirm that your use of Amazon Lex is not related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. You may not specify a default value for the childDirected field that does not accurately reflect whether your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. If your use of Amazon Lex relates to a website, program, or other application that is directed in whole or in part, to children under age 13, you must obtain any required verifiable parental consent under COPPA. For information regarding the use of Amazon Lex in connection with websites, programs, or other applications that are directed or targeted, in whole or in part, to children under age 13, see the Amazon Lex FAQ. 
     */
-  var childDirected: js.UndefOr[Boolean] = js.native
+  var childDirected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The message Amazon Lex uses when it doesn't understand the user's request. For more information, see PutBot. 
     */
-  var clarificationPrompt: js.UndefOr[Prompt] = js.native
+  var clarificationPrompt: js.UndefOr[Prompt] = js.undefined
   
   /**
     * The date that the bot was created.
     */
-  var createdDate: js.UndefOr[Timestamp] = js.native
+  var createdDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A description of the bot.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * Indicates whether user utterances should be sent to Amazon Comprehend for sentiment analysis.
     */
-  var detectSentiment: js.UndefOr[Boolean] = js.native
+  var detectSentiment: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the bot uses accuracy improvements. true indicates that the bot is using the improvements, otherwise, false.
     */
-  var enableModelImprovements: js.UndefOr[Boolean] = js.native
+  var enableModelImprovements: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If status is FAILED, Amazon Lex explains why it failed to build the bot.
     */
-  var failureReason: js.UndefOr[String] = js.native
+  var failureReason: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum time in seconds that Amazon Lex retains the data gathered in a conversation. For more information, see PutBot.
     */
-  var idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.native
+  var idleSessionTTLInSeconds: js.UndefOr[SessionTTL] = js.undefined
   
   /**
     * An array of intent objects. For more information, see PutBot.
     */
-  var intents: js.UndefOr[IntentList] = js.native
+  var intents: js.UndefOr[IntentList] = js.undefined
   
   /**
     * The date that the bot was updated. When you create a resource, the creation date and last updated date are the same. 
     */
-  var lastUpdatedDate: js.UndefOr[Timestamp] = js.native
+  var lastUpdatedDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     *  The target locale for the bot. 
     */
-  var locale: js.UndefOr[Locale] = js.native
+  var locale: js.UndefOr[Locale] = js.undefined
   
   /**
     * The name of the bot.
     */
-  var name: js.UndefOr[BotName] = js.native
+  var name: js.UndefOr[BotName] = js.undefined
   
   /**
     * The score that determines where Amazon Lex inserts the AMAZON.FallbackIntent, AMAZON.KendraSearchIntent, or both when returning alternative intents in a PostContent or PostText response. AMAZON.FallbackIntent is inserted if the confidence score for all intents is below this value. AMAZON.KendraSearchIntent is only inserted if it is configured for the bot.
     */
-  var nluIntentConfidenceThreshold: js.UndefOr[ConfidenceThreshold] = js.native
+  var nluIntentConfidenceThreshold: js.UndefOr[ConfidenceThreshold] = js.undefined
   
   /**
     * The status of the bot.  When the status is BUILDING Amazon Lex is building the bot for testing and use. If the status of the bot is READY_BASIC_TESTING, you can test the bot using the exact utterances specified in the bot's intents. When the bot is ready for full testing or to run, the status is READY. If there was a problem with building the bot, the status is FAILED and the failureReason field explains why the bot did not build. If the bot was saved but not built, the status is NOT_BUILT.
     */
-  var status: js.UndefOr[Status] = js.native
+  var status: js.UndefOr[Status] = js.undefined
   
   /**
     * The version of the bot. For a new bot, the version is always $LATEST.
     */
-  var version: js.UndefOr[Version] = js.native
+  var version: js.UndefOr[Version] = js.undefined
   
   /**
     * The Amazon Polly voice ID that Amazon Lex uses for voice interaction with the user. For more information, see PutBot.
     */
-  var voiceId: js.UndefOr[String] = js.native
+  var voiceId: js.UndefOr[String] = js.undefined
 }
 object GetBotResponse {
   

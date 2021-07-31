@@ -3,19 +3,17 @@ package typings.pulumiAws.outputMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAmiBlockDeviceMapping extends StObject {
   
-  var deviceName: String = js.native
+  var deviceName: String
   
-  var ebs: StringDictionary[String] = js.native
+  var ebs: StringDictionary[String]
   
-  var noDevice: String = js.native
+  var noDevice: String
   
-  var virtualName: String = js.native
+  var virtualName: String
 }
 object GetAmiBlockDeviceMapping {
   

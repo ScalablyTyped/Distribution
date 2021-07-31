@@ -3,17 +3,17 @@ package typings.elasticElasticsearch.requestParamsMod
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SecurityChangePassword[T] extends Generic {
+trait SecurityChangePassword[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
   
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object SecurityChangePassword {
   
@@ -24,7 +24,7 @@ object SecurityChangePassword {
   }
   
   @scala.inline
-  implicit class SecurityChangePasswordMutableBuilder[Self <: SecurityChangePassword[_], T] (val x: Self with SecurityChangePassword[T]) extends AnyVal {
+  implicit class SecurityChangePasswordMutableBuilder[Self <: SecurityChangePassword[?], T] (val x: Self & SecurityChangePassword[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

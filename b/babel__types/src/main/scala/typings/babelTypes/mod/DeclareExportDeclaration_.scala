@@ -3,35 +3,34 @@ package typings.babelTypes.mod
 import typings.babelTypes.babelTypesStrings.DeclareExportDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait DeclareExportDeclaration_
-  extends Declaration
+- typings.babelTypes.mod._Node because Already inherited */ trait DeclareExportDeclaration_
+  extends StObject
      with BaseNode
+     with Declaration
      with Flow
      with FlowDeclaration
      with Statement {
   
-  var default: Boolean | Null = js.native
+  var default: Boolean | Null
   
-  var declaration: Flow | Null = js.native
+  var declaration: Flow | Null
   
-  var source: StringLiteral_ | Null = js.native
+  var source: StringLiteral_ | Null
   
-  var specifiers: (js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]) | Null = js.native
+  var specifiers: (js.Array[ExportSpecifier_ | ExportNamespaceSpecifier_]) | Null
   
   @JSName("type")
-  var type_DeclareExportDeclaration_ : DeclareExportDeclaration = js.native
+  var type_DeclareExportDeclaration_ : DeclareExportDeclaration
 }
 object DeclareExportDeclaration_ {
   
   @scala.inline
-  def apply(`type`: DeclareExportDeclaration): DeclareExportDeclaration_ = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(): DeclareExportDeclaration_ = {
+    val __obj = js.Dynamic.literal(declaration = null, default = null, end = null, innerComments = null, leadingComments = null, loc = null, source = null, specifiers = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("DeclareExportDeclaration")
     __obj.asInstanceOf[DeclareExportDeclaration_]
   }
   

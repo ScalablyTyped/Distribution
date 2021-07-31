@@ -3,12 +3,14 @@ package typings.storybookComponents
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blockBackgroundStylesMod {
   
-  @JSImport("@storybook/components/dist/blocks/BlockBackgroundStyles", "getBlockBackgroundStyle")
+  @JSImport("@storybook/components/dist/blocks/BlockBackgroundStyles", JSImport.Namespace)
   @js.native
-  def getBlockBackgroundStyle(theme: Theme): js.Object = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getBlockBackgroundStyle(theme: Theme): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("getBlockBackgroundStyle")(theme.asInstanceOf[js.Any]).asInstanceOf[js.Object]
 }

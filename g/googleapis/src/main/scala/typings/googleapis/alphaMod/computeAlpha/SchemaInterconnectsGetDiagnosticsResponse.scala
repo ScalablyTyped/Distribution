@@ -2,16 +2,14 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the InterconnectsGetDiagnosticsRequest.
   */
-@js.native
 trait SchemaInterconnectsGetDiagnosticsResponse extends StObject {
   
-  var result: js.UndefOr[SchemaInterconnectDiagnostics] = js.native
+  var result: js.UndefOr[SchemaInterconnectDiagnostics] = js.undefined
 }
 object SchemaInterconnectsGetDiagnosticsResponse {
   

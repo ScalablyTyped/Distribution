@@ -10,9 +10,9 @@ Polyfill object-fit and object-position on images on IE9, IE10, IE11, Edge, Safa
 | ------------------ | :-------------: |
 | Full name          | object-fit-images |
 | Keywords           | polyfill, object-fit, covers, contains, css, styles, internet, explorer, ies, shim, shiv, fills, images, srcset, backgrounds |
-| # releases         | 2 |
-| # dependents       | 50 |
-| # downloads        | 12153718 |
+| # releases         | 1 |
+| # dependents       | 56 |
+| # downloads        | 15179264 |
 | # stars            | 8 |
 
 ## Links

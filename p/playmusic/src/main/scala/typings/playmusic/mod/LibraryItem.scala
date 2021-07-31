@@ -2,69 +2,67 @@ package typings.playmusic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LibraryItem extends StObject {
   
-  var album: js.UndefOr[String] = js.native
+  var album: js.UndefOr[String] = js.undefined
   
-  var albumArtRef: js.UndefOr[js.Array[ArtRef]] = js.native
+  var albumArtRef: js.UndefOr[js.Array[ArtRef]] = js.undefined
   
-  var albumArtist: js.UndefOr[String] = js.native
+  var albumArtist: js.UndefOr[String] = js.undefined
   
-  var artist: js.UndefOr[String] = js.native
+  var artist: js.UndefOr[String] = js.undefined
   
-  var artistArtRef: js.UndefOr[js.Array[ArtRef]] = js.native
+  var artistArtRef: js.UndefOr[js.Array[ArtRef]] = js.undefined
   
-  var artistId: js.UndefOr[js.Array[String]] = js.native
+  var artistId: js.UndefOr[js.Array[String]] = js.undefined
   
-  var beatsPerMinute: js.UndefOr[Double] = js.native
+  var beatsPerMinute: js.UndefOr[Double] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
-  var comment: js.UndefOr[String] = js.native
+  var comment: js.UndefOr[String] = js.undefined
   
-  var composer: js.UndefOr[String] = js.native
+  var composer: js.UndefOr[String] = js.undefined
   
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
-  var deleted: js.UndefOr[Boolean] = js.native
+  var deleted: js.UndefOr[Boolean] = js.undefined
   
-  var discNumber: js.UndefOr[Double] = js.native
+  var discNumber: js.UndefOr[Double] = js.undefined
   
-  var durationMillis: js.UndefOr[String] = js.native
+  var durationMillis: js.UndefOr[String] = js.undefined
   
-  var estimatedSize: js.UndefOr[String] = js.native
+  var estimatedSize: js.UndefOr[String] = js.undefined
   
-  var genre: js.UndefOr[String] = js.native
+  var genre: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var lastModifiedTimestamp: js.UndefOr[String] = js.native
+  var lastModifiedTimestamp: js.UndefOr[String] = js.undefined
   
-  var nid: js.UndefOr[String] = js.native
+  var nid: js.UndefOr[String] = js.undefined
   
-  var playCount: js.UndefOr[Double] = js.native
+  var playCount: js.UndefOr[Double] = js.undefined
   
-  var rating: js.UndefOr[String] = js.native
+  var rating: js.UndefOr[String] = js.undefined
   
-  var recentTimestamp: js.UndefOr[String] = js.native
+  var recentTimestamp: js.UndefOr[String] = js.undefined
   
-  var storeId: js.UndefOr[String] = js.native
+  var storeId: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var totalDiscCount: js.UndefOr[Double] = js.native
+  var totalDiscCount: js.UndefOr[Double] = js.undefined
   
-  var totalTrackCount: js.UndefOr[Double] = js.native
+  var totalTrackCount: js.UndefOr[Double] = js.undefined
   
-  var trackNumber: js.UndefOr[Double] = js.native
+  var trackNumber: js.UndefOr[Double] = js.undefined
   
-  var year: js.UndefOr[Double] = js.native
+  var year: js.UndefOr[Double] = js.undefined
 }
 object LibraryItem {
   

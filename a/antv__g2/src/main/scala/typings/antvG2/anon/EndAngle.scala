@@ -2,31 +2,29 @@ package typings.antvG2.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndAngle extends StObject {
   
   /**
     * 极坐标的结束角度，单位为弧度
     */
-  var endAngle: js.UndefOr[Double] = js.native
+  var endAngle: js.UndefOr[Double] = js.undefined
   
   /**
     * 空心圆的半径，值范围为 0 至 1
     */
-  var innerRadius: js.UndefOr[Double] = js.native
+  var innerRadius: js.UndefOr[Double] = js.undefined
   
   /**
     * 设置半径，值范围为 0 至 1
     */
-  var radius: js.UndefOr[Double] = js.native
+  var radius: js.UndefOr[Double] = js.undefined
   
   /**
     * 极坐标的起始角度，单位为弧度
     */
-  var startAngle: js.UndefOr[Double] = js.native
+  var startAngle: js.UndefOr[Double] = js.undefined
 }
 object EndAngle {
   

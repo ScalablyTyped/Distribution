@@ -2,41 +2,39 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Member extends StObject {
   
   /**
     * The date indicating when the member was disabled from Amazon WorkMail use.
     */
-  var DisabledDate: js.UndefOr[Timestamp] = js.native
+  var DisabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The date indicating when the member was enabled for Amazon WorkMail use.
     */
-  var EnabledDate: js.UndefOr[Timestamp] = js.native
+  var EnabledDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The identifier of the member.
     */
-  var Id: js.UndefOr[String] = js.native
+  var Id: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the member.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the member, which can be ENABLED, DISABLED, or DELETED.
     */
-  var State: js.UndefOr[EntityState] = js.native
+  var State: js.UndefOr[EntityState] = js.undefined
   
   /**
     * A member can be a user or group.
     */
-  var Type: js.UndefOr[MemberType] = js.native
+  var Type: js.UndefOr[MemberType] = js.undefined
 }
 object Member {
   

@@ -2,18 +2,16 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeResourcePoliciesRequest extends StObject {
   
   /**
     * The maximum number of resource policies to be displayed with one call of this API.
     */
-  var limit: js.UndefOr[DescribeLimit] = js.native
+  var limit: js.UndefOr[DescribeLimit] = js.undefined
   
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object DescribeResourcePoliciesRequest {
   

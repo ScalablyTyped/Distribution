@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMonitoringMembersRequest extends StObject {
   
   /**
     * A list of account IDs of the GuardDuty member accounts to start monitoring.
     */
-  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds = js.native
+  var AccountIds: typings.awsSdk.guarddutyMod.AccountIds
   
   /**
     * The unique ID of the detector of the GuardDuty master account associated with the member accounts to monitor.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
 }
 object StartMonitoringMembersRequest {
   

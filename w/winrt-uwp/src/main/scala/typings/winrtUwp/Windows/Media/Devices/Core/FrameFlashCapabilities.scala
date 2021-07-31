@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Media.Devices.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about the flash capabilities of the capture device for frames in a variable photo sequences. */
-@js.native
 trait FrameFlashCapabilities extends StObject {
   
   /** Gets a value indicating whether flash power is supported for frames in a variable photo sequences. */
-  var powerSupported: Boolean = js.native
+  var powerSupported: Boolean
   
   /** Gets a value indicating whether red eye reduction is supported for frames in a variable photo sequences. */
-  var redEyeReductionSupported: Boolean = js.native
+  var redEyeReductionSupported: Boolean
   
   /** Gets a value that indicates if the capture device supports the flash control for frames in a variable photo sequence. */
-  var supported: Boolean = js.native
+  var supported: Boolean
 }
 object FrameFlashCapabilities {
   

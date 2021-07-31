@@ -12,7 +12,7 @@ A base component used to build inline-editable components that match the Atlassi
 | Keywords           | atlaskit, react, ui |
 | # releases         | 55 |
 | # dependents       | 1 |
-| # downloads        | 275735 |
+| # downloads        | 277885 |
 | # stars            | 0 |
 
 ## Links

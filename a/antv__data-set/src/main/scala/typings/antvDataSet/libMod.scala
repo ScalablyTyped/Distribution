@@ -9,7 +9,6 @@ import typings.antvDataSet.viewMod.View
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* static members */
@@ -63,34 +62,32 @@ object libMod {
   @scala.inline
   def connectors_=(x: Record[String, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("connectors")(x.asInstanceOf[js.Any])
   
-  @JSImport("@antv/data-set/lib", "getConnector")
-  @js.native
-  def getConnector(name: String): js.Function = js.native
+  @scala.inline
+  def getConnector(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getConnector")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
-  @JSImport("@antv/data-set/lib", "getTransform")
-  @js.native
-  def getTransform(): js.Function = js.native
-  @JSImport("@antv/data-set/lib", "getTransform")
-  @js.native
-  def getTransform(name: String): js.Function = js.native
+  @scala.inline
+  def getTransform(): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")().asInstanceOf[js.Function]
+  @scala.inline
+  def getTransform(name: String): js.Function = ^.asInstanceOf[js.Dynamic].applyDynamic("getTransform")(name.asInstanceOf[js.Any]).asInstanceOf[js.Function]
   
   /**
     * 注册一个数据连接函数，注册后所有数据视图都可以使用 name 来引用这个数据连接函数，从而接入某种数据源。
     * @param name - 类型
     * @param connector - 解析逻辑
     */
-  @JSImport("@antv/data-set/lib", "registerConnector")
-  @js.native
-  def registerConnector(name: String, connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ View, _]): Unit = js.native
+  @scala.inline
+  def registerConnector(
+    name: String,
+    connector: js.Function3[/* data */ js.Any, /* options */ js.Any, /* view */ View, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerConnector")(name.asInstanceOf[js.Any], connector.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 注册一个数据处理函数，注册后所有数据视图都可以使用 name 来引用这个数据处理函数，从而进行某种数据处理
     * @param name - transform 类型
     * @param transform - transform逻辑
     */
-  @JSImport("@antv/data-set/lib", "registerTransform")
-  @js.native
-  def registerTransform(name: String, transform: js.Any): Unit = js.native
+  @scala.inline
+  def registerTransform(name: String, transform: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerTransform")(name.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * 已注册的 Transform（key-value 对）

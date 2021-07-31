@@ -9,7 +9,6 @@ import typings.rcPicker.rcPickerStrings.right
 import typings.react.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeContextMod extends Shortcut {
@@ -18,20 +17,19 @@ object rangeContextMod extends Shortcut {
   @js.native
   val default: Context[RangeContextProps] = js.native
   
-  @js.native
   trait RangeContextProps extends StObject {
     
-    var hoverRangedValue: js.UndefOr[RangeValue[_]] = js.native
+    var hoverRangedValue: js.UndefOr[RangeValue[js.Any]] = js.undefined
     
-    var inRange: js.UndefOr[Boolean] = js.native
+    var inRange: js.UndefOr[Boolean] = js.undefined
     
-    var panelPosition: js.UndefOr[left | right | `false`] = js.native
+    var panelPosition: js.UndefOr[left | right | `false`] = js.undefined
     
     /**
       * Set displayed range value style.
       * Panel only has one value, this is only style effect.
       */
-    var rangedValue: js.UndefOr[(js.Tuple2[NullableDateType[_], NullableDateType[_]]) | Null] = js.native
+    var rangedValue: js.UndefOr[(js.Tuple2[NullableDateType[js.Any], NullableDateType[js.Any]]) | Null] = js.undefined
   }
   object RangeContextProps {
     
@@ -45,7 +43,7 @@ object rangeContextMod extends Shortcut {
     implicit class RangeContextPropsMutableBuilder[Self <: RangeContextProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setHoverRangedValue(value: RangeValue[_]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
+      def setHoverRangedValue(value: RangeValue[js.Any]): Self = StObject.set(x, "hoverRangedValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setHoverRangedValueNull: Self = StObject.set(x, "hoverRangedValue", null)
@@ -66,7 +64,7 @@ object rangeContextMod extends Shortcut {
       def setPanelPositionUndefined: Self = StObject.set(x, "panelPosition", js.undefined)
       
       @scala.inline
-      def setRangedValue(value: js.Tuple2[NullableDateType[_], NullableDateType[_]]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
+      def setRangedValue(value: js.Tuple2[NullableDateType[js.Any], NullableDateType[js.Any]]): Self = StObject.set(x, "rangedValue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRangedValueNull: Self = StObject.set(x, "rangedValue", null)

@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** describes what and how to replace strings. */
@@ -14,17 +13,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.activexLibreoffice.com_.sun.star.uno.XInterface because Already inherited
 - typings.activexLibreoffice.com_.sun.star.beans.XPropertySet because Already inherited
 - typings.activexLibreoffice.com_.sun.star.util.XSearchDescriptor because Already inherited
-- typings.activexLibreoffice.com_.sun.star.util.XReplaceDescriptor because var conflicts: SearchString. Inlined getReplaceString, ReplaceString, setReplaceString */ @js.native
-trait ReplaceDescriptor extends SearchDescriptor {
+- typings.activexLibreoffice.com_.sun.star.util.XReplaceDescriptor because var conflicts: SearchString. Inlined getReplaceString, ReplaceString, setReplaceString */ trait ReplaceDescriptor
+  extends StObject
+     with SearchDescriptor {
   
   /** @returns the string which replaces the found occurrences. */
-  var ReplaceString: String = js.native
+  var ReplaceString: String
   
   /** @returns the string which replaces the found occurrences. */
-  def getReplaceString(): String = js.native
+  def getReplaceString(): String
   
   /** sets the string which replaces the found occurrences. */
-  def setReplaceString(aReplaceString: String): Unit = js.native
+  def setReplaceString(aReplaceString: String): Unit
 }
 object ReplaceDescriptor {
   

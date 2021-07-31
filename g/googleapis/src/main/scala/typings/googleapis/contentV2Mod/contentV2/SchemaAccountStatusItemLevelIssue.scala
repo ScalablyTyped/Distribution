@@ -2,51 +2,49 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountStatusItemLevelIssue extends StObject {
   
   /**
     * The attribute&#39;s name, if the issue is caused by a single attribute.
     */
-  var attributeName: js.UndefOr[String] = js.native
+  var attributeName: js.UndefOr[String] = js.undefined
   
   /**
     * The error code of the issue.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * A short issue description in English.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A detailed issue description in English.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of a web page to help with resolving this issue.
     */
-  var documentation: js.UndefOr[String] = js.native
+  var documentation: js.UndefOr[String] = js.undefined
   
   /**
     * Number of items with this issue.
     */
-  var numItems: js.UndefOr[String] = js.native
+  var numItems: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the issue can be resolved by the merchant.
     */
-  var resolution: js.UndefOr[String] = js.native
+  var resolution: js.UndefOr[String] = js.undefined
   
   /**
     * How this issue affects serving of the offer.
     */
-  var servability: js.UndefOr[String] = js.native
+  var servability: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountStatusItemLevelIssue {
   

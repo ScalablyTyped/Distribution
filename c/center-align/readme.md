@@ -11,8 +11,8 @@ Center-align the text in a string.
 | Full name          | center-align |
 | Keywords           | align, align-center, center, center-align, right, right-align, text, typography |
 | # releases         | 0 |
-| # dependents       | 53 |
-| # downloads        | 135382064 |
+| # dependents       | 61 |
+| # downloads        | 131649546 |
 | # stars            | 1 |
 
 ## Links

@@ -2,25 +2,23 @@ package typings.clearbladejsNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Code extends StObject {
   
-  var URI: String = js.native
+  var URI: String
   
-  var URIPrefix: String = js.native
+  var URIPrefix: String
   
-  var callTimeout: Double = js.native
+  var callTimeout: Double
   
-  def execute(name: String, params: js.Object, callback: CbCallback): Unit = js.native
+  def execute(name: String, params: js.Object, callback: CbCallback): Unit
   
-  var systemKey: String = js.native
+  var systemKey: String
   
-  var systemSecret: String = js.native
+  var systemSecret: String
   
-  var user: APIUser = js.native
+  var user: APIUser
 }
 object Code {
   

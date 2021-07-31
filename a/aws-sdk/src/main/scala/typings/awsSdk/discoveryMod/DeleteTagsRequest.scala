@@ -2,21 +2,19 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteTagsRequest extends StObject {
   
   /**
     * A list of configuration items with tags that you want to delete.
     */
-  var configurationIds: ConfigurationIdList = js.native
+  var configurationIds: ConfigurationIdList
   
   /**
     * Tags that you want to delete from one or more configuration items. Specify the tags that you want to delete in a key-value format. For example:  {"key": "serverType", "value": "webServer"} 
     */
-  var tags: js.UndefOr[TagSet] = js.native
+  var tags: js.UndefOr[TagSet] = js.undefined
 }
 object DeleteTagsRequest {
   

@@ -15,7 +15,6 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.createRefMod.IRefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarDayMod {
@@ -97,10 +96,9 @@ object calendarDayMod {
     var navigatedDay: js.Any = js.native
   }
   
-  @js.native
   trait ICalendarDay extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
   }
   object ICalendarDay {
     
@@ -119,7 +117,9 @@ object calendarDayMod {
   }
   
   @js.native
-  trait ICalendarDayProps extends ClassAttributes[CalendarDay] {
+  trait ICalendarDayProps
+    extends StObject
+       with ClassAttributes[CalendarDay] {
     
     var allFocusable: js.UndefOr[Boolean] = js.native
     
@@ -169,12 +169,11 @@ object calendarDayMod {
     var workWeekDays: js.UndefOr[js.Array[DayOfWeek]] = js.native
   }
   
-  @js.native
   trait ICalendarDayState extends StObject {
     
-    var activeDescendantId: js.UndefOr[String] = js.native
+    var activeDescendantId: js.UndefOr[String] = js.undefined
     
-    var weeks: js.UndefOr[js.Array[js.Array[IDayInfo]]] = js.native
+    var weeks: js.UndefOr[js.Array[js.Array[IDayInfo]]] = js.undefined
   }
   object ICalendarDayState {
     
@@ -204,24 +203,23 @@ object calendarDayMod {
     }
   }
   
-  @js.native
   trait IDayInfo extends StObject {
     
-    var date: String = js.native
+    var date: String
     
-    var isInBounds: Boolean = js.native
+    var isInBounds: Boolean
     
-    var isInMonth: Boolean = js.native
+    var isInMonth: Boolean
     
-    var isSelected: Boolean = js.native
+    var isSelected: Boolean
     
-    var isToday: Boolean = js.native
+    var isToday: Boolean
     
-    var key: String = js.native
+    var key: String
     
-    def onSelected(ev: SyntheticEvent[HTMLElement, Event]): Unit = js.native
+    def onSelected(ev: SyntheticEvent[HTMLElement, Event]): Unit
     
-    var originalDate: Date = js.native
+    var originalDate: Date
   }
   object IDayInfo {
     

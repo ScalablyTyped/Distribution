@@ -3,7 +3,6 @@ package typings.go.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -114,19 +113,16 @@ object TextBlock {
   
   // undocumented
   /* static member */
-  @JSImport("go", "TextBlock.getEllipsis")
-  @js.native
-  def getEllipsis(): String = js.native
+  @scala.inline
+  def getEllipsis(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getEllipsis")().asInstanceOf[String]
   
   // undocumented
   /* static member */
-  @JSImport("go", "TextBlock.isValidFont")
-  @js.native
-  def isValidFont(font: String): Boolean = js.native
+  @scala.inline
+  def isValidFont(font: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFont")(font.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   // undocumented
   /* static member */
-  @JSImport("go", "TextBlock.setEllipsis")
-  @js.native
-  def setEllipsis(`val`: String): Unit = js.native
+  @scala.inline
+  def setEllipsis(`val`: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEllipsis")(`val`.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

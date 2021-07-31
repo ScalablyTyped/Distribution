@@ -2,17 +2,15 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResponsiveOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A set of rules for responsive
     * settings. The rules are executed from the top down.
     */
-  var rules: js.UndefOr[js.Array[ResponsiveRulesOptions]] = js.native
+  var rules: js.UndefOr[js.Array[ResponsiveRulesOptions]] = js.undefined
 }
 object ResponsiveOptions {
   

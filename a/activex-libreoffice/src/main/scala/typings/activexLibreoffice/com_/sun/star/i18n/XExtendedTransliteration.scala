@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,8 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * without offset parameter transliteration. These should be used for performance reason if their full-blown counterparts aren't needed.
   * @since OOo 1.1.2
   */
-@js.native
-trait XExtendedTransliteration extends XTransliteration {
+trait XExtendedTransliteration
+  extends StObject
+     with XTransliteration {
   
   /**
     * Transliterate a character to a character.
@@ -27,13 +27,13 @@ trait XExtendedTransliteration extends XTransliteration {
     * XTransliteration::transliterateChar2String() to obtain the correct result.
     * @param cChar The input character.
     */
-  def transliterateChar2Char(cChar: String): String = js.native
+  def transliterateChar2Char(cChar: String): String
   
   /**
     * Transliterate a character to a string.
     * @param cChar The input character.
     */
-  def transliterateChar2String(cChar: String): String = js.native
+  def transliterateChar2String(cChar: String): String
   
   /**
     * Transliterate a substring. The functionality is the same as {@link com.sun.star.i18n.XTransliteration.transliterate()} but omits the offset parameter
@@ -42,7 +42,7 @@ trait XExtendedTransliteration extends XTransliteration {
     * @param nStartPos Start position within aStr from where transliteration starts.
     * @param nCount Number of code points to be transliterated.
     */
-  def transliterateString2String(aStr: String, nStartPos: Double, nCount: Double): String = js.native
+  def transliterateString2String(aStr: String, nStartPos: Double, nCount: Double): String
 }
 object XExtendedTransliteration {
   

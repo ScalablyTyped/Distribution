@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FirewallInfo extends StObject {
   
   /** Possible values: ALLOW, DENY */
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
   /** Possible values: INGRESS, EGRESS */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /** Name of a Compute Engine firewall rule. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine network. */
-  var networkUri: js.UndefOr[String] = js.native
+  var networkUri: js.UndefOr[String] = js.undefined
   
   /** Priority of the firewall rule. */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /** Target service accounts of the firewall rule. */
-  var targetServiceAccounts: js.UndefOr[js.Array[String]] = js.native
+  var targetServiceAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Target tags of the firewall rule. */
-  var targetTags: js.UndefOr[js.Array[String]] = js.native
+  var targetTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URI of a Compute Engine firewall rule. Implied default rule does not have URI. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object FirewallInfo {
   

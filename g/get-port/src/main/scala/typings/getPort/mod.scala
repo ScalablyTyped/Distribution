@@ -3,7 +3,6 @@ package typings.getPort
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,12 +25,14 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[js.Promise[Double]]
+  @scala.inline
+  def apply(options: Options): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+  
   @JSImport("get-port", JSImport.Namespace)
   @js.native
-  def apply(): js.Promise[Double] = js.native
-  @JSImport("get-port", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): js.Promise[Double] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Make a range of ports `from`...`to`.
@@ -47,35 +48,33 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("get-port", "makeRange")
-  @js.native
-  def makeRange(from: Double, to: Double): Iterable[Double] = js.native
+  @scala.inline
+  def makeRange(from: Double, to: Double): Iterable[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeRange")(from.asInstanceOf[js.Any], to.asInstanceOf[js.Any])).asInstanceOf[Iterable[Double]]
   
   /* Inlined parent std.Omit<node.net.ListenOptions, 'port'> */
-  @js.native
   trait Options extends StObject {
     
-    var backlog: js.UndefOr[Double] = js.native
+    var backlog: js.UndefOr[Double] = js.undefined
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The host on which port resolution should be performed. Can be either an IPv4 or IPv6 address.
     		*/
-    val host: js.UndefOr[String] = js.native
+    val host: js.UndefOr[String] = js.undefined
     
-    var ipv6Only: js.UndefOr[Boolean] = js.native
+    var ipv6Only: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
     		A preferred port or an iterable of preferred ports to use.
     		*/
-    val port: js.UndefOr[Double | Iterable[Double]] = js.native
+    val port: js.UndefOr[Double | Iterable[Double]] = js.undefined
     
-    var readableAll: js.UndefOr[Boolean] = js.native
+    var readableAll: js.UndefOr[Boolean] = js.undefined
     
-    var writableAll: js.UndefOr[Boolean] = js.native
+    var writableAll: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

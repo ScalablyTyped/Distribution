@@ -2,34 +2,32 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A collection of messages representing a conversation.
   */
-@js.native
 trait SchemaThread extends StObject {
   
   /**
     * The ID of the last history record that modified this thread.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * The unique ID of the thread.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The list of messages in the thread.
     */
-  var messages: js.UndefOr[js.Array[SchemaMessage]] = js.native
+  var messages: js.UndefOr[js.Array[SchemaMessage]] = js.undefined
   
   /**
     * A short part of the message text.
     */
-  var snippet: js.UndefOr[String] = js.native
+  var snippet: js.UndefOr[String] = js.undefined
 }
 object SchemaThread {
   

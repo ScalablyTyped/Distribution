@@ -4,15 +4,13 @@ import typings.reactNative.anon.Hasnextpage
 import typings.reactNative.anon.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPhotosReturnType extends StObject {
   
-  var edges: js.Array[Node] = js.native
+  var edges: js.Array[Node]
   
-  var page_info: Hasnextpage = js.native
+  var page_info: Hasnextpage
 }
 object GetPhotosReturnType {
   

@@ -3,16 +3,18 @@ package typings.expoLocalization
 import typings.expoLocalization.localizationTypesMod.Localization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expoLocalizationMod {
   
   object default {
     
-    @JSImport("expo-localization/build/ExpoLocalization", "default.getLocalizationAsync")
+    @JSImport("expo-localization/build/ExpoLocalization", JSImport.Default)
     @js.native
-    def getLocalizationAsync(): js.Promise[Localization] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getLocalizationAsync(): js.Promise[Localization] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLocalizationAsync")().asInstanceOf[js.Promise[Localization]]
     
     @JSImport("expo-localization/build/ExpoLocalization", "default.isRTL")
     @js.native

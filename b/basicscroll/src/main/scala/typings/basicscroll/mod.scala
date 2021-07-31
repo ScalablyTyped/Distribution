@@ -5,58 +5,59 @@ import typings.basicscroll.anon.From
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("basicscroll", "create")
+  @JSImport("basicscroll", JSImport.Namespace)
   @js.native
-  def create(opts: Data): BasicScroll = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(opts: Data): BasicScroll = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[BasicScroll]
   
   type AnimatedType = Double | String | Null
   
-  @js.native
   trait BasicScroll extends StObject {
     
     /**
       * Converts the start and stop position of the instance to absolute values. basicScroll relies on those values to start and stop the animation at the right position.
       * It runs the calculation once during the instance creation. .calculate() should be called when elements have altered their position or when the size of the site/viewport has changed.
       */
-    def calculate(): Unit = js.native
+    def calculate(): Unit
     
     /**
       * Destroys the instance.
       * Should be called when the instance is no longer needed. All props of the instance will keep their last value
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Returns calculated data.
       * More or less a parsed version of the data used for the instance creation. The data might change when calling the calculate function.
       */
-    def getData(): Data = js.native
+    def getData(): Data
     
     /**
       * Returns true when the instance is started and false when the instance is stopped.
       */
-    def isActive(): Boolean = js.native
+    def isActive(): Boolean
     
     /**
       * Starts to animate the instance. basicScroll will track the scroll position and adjust the props of the instance accordingly.
       * An update will be performed only when the scroll position has changed.
       */
-    def start(): Unit = js.native
+    def start(): Unit
     
     /**
       * Stops to animate the instance. All props of the instance will keep their last value.
       */
-    def stop(): Unit = js.native
+    def stop(): Unit
     
     /**
       * Triggers an update of an instance, even when the instance is currently stopped.
       */
-    def update(): Props = js.native
+    def update(): Props
   }
   object BasicScroll {
     
@@ -102,56 +103,55 @@ object mod {
   
   type CallbackFunction = js.Function3[/* instance */ BasicScroll, /* percentage */ Double, /* props */ Props, Unit]
   
-  @js.native
   trait Data extends StObject {
     
     /**
       * Direct mode.
       * @default false
       */
-    var direct: js.UndefOr[Boolean | Element] = js.native
+    var direct: js.UndefOr[Boolean | Element] = js.undefined
     
     /**
       * DOM element/node.
       * @default null
       */
-    var elem: js.UndefOr[Element | Null] = js.native
+    var elem: js.UndefOr[Element | Null] = js.undefined
     
     /**
       * Start position.
       * @default null
       */
-    var from: AnimatedType = js.native
+    var from: AnimatedType
     
     /**
       * Executes when the user scrolls and the viewport is within the given start and stop position
       */
-    var inside: js.UndefOr[CallbackFunction] = js.native
+    var inside: js.UndefOr[CallbackFunction] = js.undefined
     
     /**
       * Executes when the user scrolls and the viewport is outside the given start and stop position
       */
-    var outside: js.UndefOr[CallbackFunction] = js.native
+    var outside: js.UndefOr[CallbackFunction] = js.undefined
     
-    var props: js.UndefOr[Props] = js.native
+    var props: js.UndefOr[Props] = js.undefined
     
     /**
       * Stop position.
       * @default null
       */
-    var to: AnimatedType = js.native
+    var to: AnimatedType
     
     /**
       * Track window size changes.
       * @default true
       */
-    var track: js.UndefOr[Boolean] = js.native
+    var track: js.UndefOr[Boolean] = js.undefined
   }
   object Data {
     
     @scala.inline
     def apply(): Data = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(from = null, to = null)
       __obj.asInstanceOf[Data]
     }
     

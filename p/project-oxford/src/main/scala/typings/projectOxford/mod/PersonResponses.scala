@@ -2,15 +2,13 @@ package typings.projectOxford.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PersonResponses {
   
-  @js.native
   trait Create extends StObject {
     
-    var personId: String = js.native
+    var personId: String
   }
   object Create {
     
@@ -28,12 +26,11 @@ object PersonResponses {
     }
   }
   
-  @js.native
   trait Face extends StObject {
     
-    var faceId: String = js.native
+    var faceId: String
     
-    var userData: String = js.native
+    var userData: String
   }
   object Face {
     
@@ -54,16 +51,15 @@ object PersonResponses {
     }
   }
   
-  @js.native
   trait Person extends StObject {
     
-    var faceIds: js.Array[String] = js.native
+    var faceIds: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var personId: String = js.native
+    var personId: String
     
-    var userData: String = js.native
+    var userData: String
   }
   object Person {
     

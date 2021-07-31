@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Graphics.Printing3D
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the Print3DTaskSourceRequestedHandler delegate. */
-@js.native
 trait Print3DTaskSourceRequestedArgs extends StObject {
   
   /**
     * Specifies the 3D Manufacturing Format (3MF) package to use in the print job.
     * @param source The 3D Manufacturing Format (3MF) package to use in the print job.
     */
-  def setSource(source: Printing3D3MFPackage): Unit = js.native
+  def setSource(source: Printing3D3MFPackage): Unit
 }
 object Print3DTaskSourceRequestedArgs {
   

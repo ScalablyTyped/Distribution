@@ -2,46 +2,44 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EditFlags extends StObject {
   
   /**
     * Whether the renderer believes it can copy
     */
-  var canCopy: Boolean = js.native
+  var canCopy: Boolean
   
   /**
     * Whether the renderer believes it can cut.
     */
-  var canCut: Boolean = js.native
+  var canCut: Boolean
   
   /**
     * Whether the renderer believes it can delete.
     */
-  var canDelete: Boolean = js.native
+  var canDelete: Boolean
   
   /**
     * Whether the renderer believes it can paste.
     */
-  var canPaste: Boolean = js.native
+  var canPaste: Boolean
   
   /**
     * Whether the renderer believes it can redo.
     */
-  var canRedo: Boolean = js.native
+  var canRedo: Boolean
   
   /**
     * Whether the renderer believes it can select all.
     */
-  var canSelectAll: Boolean = js.native
+  var canSelectAll: Boolean
   
   /**
     * Whether the renderer believes it can undo.
     */
-  var canUndo: Boolean = js.native
+  var canUndo: Boolean
 }
 object EditFlags {
   

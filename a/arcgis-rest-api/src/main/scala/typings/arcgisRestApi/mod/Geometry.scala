@@ -2,13 +2,11 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geometry extends StObject {
   
-  var spatialReference: js.UndefOr[SpatialReference] = js.native
+  var spatialReference: js.UndefOr[SpatialReference] = js.undefined
 }
 object Geometry {
   

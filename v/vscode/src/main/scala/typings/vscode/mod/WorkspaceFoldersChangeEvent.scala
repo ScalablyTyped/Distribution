@@ -2,21 +2,19 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceFoldersChangeEvent extends StObject {
   
   /**
     * Added workspace folders.
     */
-  val added: js.Array[WorkspaceFolder] = js.native
+  val added: js.Array[WorkspaceFolder]
   
   /**
     * Removed workspace folders.
     */
-  val removed: js.Array[WorkspaceFolder] = js.native
+  val removed: js.Array[WorkspaceFolder]
 }
 object WorkspaceFoldersChangeEvent {
   

@@ -5,47 +5,45 @@ import typings.sparkpost.anon.Listid
 import typings.sparkpost.anon.Templateid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTransmission extends StObject {
   
   /**
     * Recipients to discreetly receive a carbon copy of the transmission
     *
     */
-  var bcc: js.UndefOr[js.Array[Recipient]] = js.native
+  var bcc: js.UndefOr[js.Array[Recipient]] = js.undefined
   
   /** Name of the campaign */
-  var campaign_id: js.UndefOr[String] = js.native
+  var campaign_id: js.UndefOr[String] = js.undefined
   
   /**
     * Recipients to receive a carbon copy of the transmission
     *
     */
-  var cc: js.UndefOr[js.Array[Recipient]] = js.native
+  var cc: js.UndefOr[js.Array[Recipient]] = js.undefined
   
   /** Content that will be used to construct a message */
-  var content: InlineContent | Templateid | Emailrfc822 = js.native
+  var content: InlineContent | Templateid | Emailrfc822
   
   /** Description of the transmission */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Transmission level metadata containing key/value pairs */
-  var metadata: js.UndefOr[js.Any] = js.native
+  var metadata: js.UndefOr[js.Any] = js.undefined
   
   /** JSON object in which transmission options are defined */
-  var options: js.UndefOr[TransmissionOptions] = js.native
+  var options: js.UndefOr[TransmissionOptions] = js.undefined
   
   /** Inline recipient objects or object containing stored recipient list ID */
-  var recipients: js.UndefOr[js.Array[Recipient] | Listid] = js.native
+  var recipients: js.UndefOr[js.Array[Recipient] | Listid] = js.undefined
   
   /** SparkPost Enterprise API only: email to use for envelope FROM */
-  var return_path: js.UndefOr[String] = js.native
+  var return_path: js.UndefOr[String] = js.undefined
   
   /** Key/value pairs that are provided to the substitution engine */
-  var substitution_data: js.UndefOr[js.Any] = js.native
+  var substitution_data: js.UndefOr[js.Any] = js.undefined
 }
 object CreateTransmission {
   

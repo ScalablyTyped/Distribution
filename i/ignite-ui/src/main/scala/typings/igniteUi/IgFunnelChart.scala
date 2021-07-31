@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgFunnelChart
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,7 +16,7 @@ trait IgFunnelChart
   /**
     * Gets or sets whether to allow slices to be selected.
     */
-  var allowSliceSelection: js.UndefOr[Boolean] = js.native
+  var allowSliceSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets values for upper and lower bezier points. That option has effect only when useBezierCurve is enabled.
@@ -27,18 +26,18 @@ trait IgFunnelChart
     * Example:
     * bezierPoints: "0.4 0.1 0.6 1"
     */
-  var bezierPoints: js.UndefOr[String] = js.native
+  var bezierPoints: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the percentage (from near 0 to 1) of space the bottom edge of the funnel should take.
     */
-  var bottomEdgeWidth: js.UndefOr[Double] = js.native
+  var bottomEdgeWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the palette of brushes to use for coloring the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var brushes: js.UndefOr[js.Any] = js.native
+  var brushes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Event which is raised before data binding.
@@ -47,7 +46,7 @@ trait IgFunnelChart
     * Use ui.owner to obtain reference to chart widget.
     * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
     */
-  var dataBinding: js.UndefOr[DataBindingEvent] = js.native
+  var dataBinding: js.UndefOr[DataBindingEvent] = js.undefined
   
   /**
     * Event which is raised after data binding.
@@ -56,34 +55,34 @@ trait IgFunnelChart
     * Use ui.data to obtain reference to array actual data which is displayed by chart.
     * Use ui.dataSource to obtain reference to instance of $.ig.DataSource.
     */
-  var dataBound: js.UndefOr[DataBoundEvent] = js.native
+  var dataBound: js.UndefOr[DataBoundEvent] = js.undefined
   
   /**
     * Gets sets a valid data source.
     * That can be instance of array or primitives, array of objects, instance of $.ig.DataSource, or any other data accepted by $.ig.DataSource.
     * Note: if it is set to string and "dataSourceType" option is not set, then $.ig.JSONPDataSource is used.
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets sets data source type (such as "json", "xml", etc). Please refer to the documentation of $.ig.DataSource and its type property
     */
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets sets url which is used for sending JSON on request for remote data.
     */
-  var dataSourceUrl: js.UndefOr[String] = js.native
+  var dataSourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the formatter function for inner labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     */
-  var formatInnerLabel: js.UndefOr[js.Any] = js.native
+  var formatInnerLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the formatter function for outer labels. Function should return string and it takes 3 parameters: 1st-value of item to format, 2nd-index of item within data, 3rd-reference to the funnel chart.
     */
-  var formatOuterLabel: js.UndefOr[js.Any] = js.native
+  var formatOuterLabel: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets how the heights of the funnel slices should be configured.
@@ -92,12 +91,12 @@ trait IgFunnelChart
     * "uniform" The slice heights should be uniform.
     * "weighted" The slice heights should be weighted by value.
     */
-  var funnelSliceDisplay: js.UndefOr[String] = js.native
+  var funnelSliceDisplay: js.UndefOr[String] = js.undefined
   
   /**
     * The height of the chart.
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Event which is raised before tooltip is hidden.
@@ -107,12 +106,12 @@ trait IgFunnelChart
     * Use ui.item to obtain reference to item.
     * Use ui.element to obtain reference to jquery object which represents tooltip or value of ui.element from last updateTooltip event. Value of that member can be replaced by custom element.
     */
-  var hideTooltip: js.UndefOr[HideTooltipEvent] = js.native
+  var hideTooltip: js.UndefOr[HideTooltipEvent] = js.undefined
   
   /**
     * Gets or sets the InnerLabel mapping property for the current series object.
     */
-  var innerLabelMemberPath: js.UndefOr[String] = js.native
+  var innerLabelMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether the inner labels are visible.
@@ -121,12 +120,12 @@ trait IgFunnelChart
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var innerLabelVisibility: js.UndefOr[String] = js.native
+  var innerLabelVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets if the funnel should be rendered inverted.
     */
-  var isInverted: js.UndefOr[Boolean] = js.native
+  var isInverted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the Legend for the chart.
@@ -140,7 +139,7 @@ trait IgFunnelChart
     * legend: { element: "idOfDiv", width: 300 }
     * legend: { legendItemMouseLeftButtonDown: function (evt, ui) { ui.chart.toggleSelection(ui.item); } }
     */
-  var legend: js.UndefOr[js.Any] = js.native
+  var legend: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the LegendItemBadgeTemplate to use for the legend items.
@@ -165,12 +164,12 @@ trait IgFunnelChart
     *     isHitTestRender: [if true, indicates that this is a special render pass for hit testing, in which case the brushes from the data should be used]
     * }
     */
-  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.native
+  var legendItemBadgeTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets sets maximum number of displayed records in chart.
     */
-  var maxRecCount: js.UndefOr[Double] = js.native
+  var maxRecCount: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets which side of the chart the outer labels should appear.
@@ -179,22 +178,22 @@ trait IgFunnelChart
     * "left" The labels will be displayed to the left of the chart.
     * "right" The labels will be displayed to the right of the chart.
     */
-  var outerLabelAlignment: js.UndefOr[String] = js.native
+  var outerLabelAlignment: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the OuterLabel mapping property for the current series object.
     */
-  var outerLabelMemberPath: js.UndefOr[String] = js.native
+  var outerLabelMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the brush used for the outer labels.
     */
-  var outerLabelTextColor: js.UndefOr[String] = js.native
+  var outerLabelTextColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the text style for outer labels
     */
-  var outerLabelTextStyle: js.UndefOr[String] = js.native
+  var outerLabelTextStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets whether the outer labels are visible.
@@ -203,41 +202,41 @@ trait IgFunnelChart
     * "visible" Display the element.
     * "collapsed" Do not display the element.
     */
-  var outerLabelVisibility: js.UndefOr[String] = js.native
+  var outerLabelVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the thickness of outline around slices.
     */
-  var outlineThickness: js.UndefOr[Double] = js.native
+  var outlineThickness: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the palette of brushes to use for outlines on the slices.
     * The value provided should be an array of css color strings or JavaScript objects defining gradients. Optionally the first element can be a string reading "RGB" or "HSV" to specify the interpolation mode of the collection.
     */
-  var outlines: js.UndefOr[js.Any] = js.native
+  var outlines: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the scaling value used to affect the pixel density of the control.
     * A higher scaling ratio will produce crisper visuals at the expense of memory.  Lower values will cause the control
     * to appear blurry.
     */
-  var pixelScalingRatio: js.UndefOr[Double] = js.native
+  var pixelScalingRatio: js.UndefOr[Double] = js.undefined
   
   /**
     * See $.ig.DataSource. This is basically the property in the responses where data records are held, if the response is wrapped.
     */
-  var responseDataKey: js.UndefOr[String] = js.native
+  var responseDataKey: js.UndefOr[String] = js.undefined
   
   /**
     * See $.ig.DataSource. property in the response specifying the total number of records on the server.
     */
-  var responseTotalRecCountKey: js.UndefOr[String] = js.native
+  var responseTotalRecCountKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the style to use for selected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     */
-  var selectedSliceStyle: js.UndefOr[js.Any] = js.native
+  var selectedSliceStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Event which is raised when a slice is clicked.
@@ -247,34 +246,34 @@ trait IgFunnelChart
     * Use ui.item to obtain reference to clicked slice item.
     * Use ui.selected to check if slice became selected.
     */
-  var sliceClicked: js.UndefOr[SliceClickedEvent] = js.native
+  var sliceClicked: js.UndefOr[SliceClickedEvent] = js.undefined
   
   /**
     * Gets or sets the brush used for the inner labels.
     */
-  var textColor: js.UndefOr[String] = js.native
+  var textColor: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the text style for inner labels
     */
-  var textStyle: js.UndefOr[String] = js.native
+  var textStyle: js.UndefOr[String] = js.undefined
   
   /**
     * Gets sets template for tooltip associated with chart item.
     * Example: "Value: $(ValueMemberPathInDataSource)"
     */
-  var tooltipTemplate: js.UndefOr[String] = js.native
+  var tooltipTemplate: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets how long the animations should take to run.
     */
-  var transitionDuration: js.UndefOr[Double] = js.native
+  var transitionDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the style to use for unselected slices.
     * That can be used to set stroke (outline color), fill (background color) and opacity.
     */
-  var unselectedSliceStyle: js.UndefOr[js.Any] = js.native
+  var unselectedSliceStyle: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Event which is raised before tooltip is updated.
@@ -287,32 +286,32 @@ trait IgFunnelChart
     * Use ui.y to obtain top position of tooltip in pixels relative to widget. Value of that member can be modified.
     * Use ui.element to obtain reference to jquery object which represents tooltip. Value of that member can be replaced by custom element.
     */
-  var updateTooltip: js.UndefOr[UpdateTooltipEvent] = js.native
+  var updateTooltip: js.UndefOr[UpdateTooltipEvent] = js.undefined
   
   /**
     * Gets or sets whether to use a Bezier curve to define the funnel.
     */
-  var useBezierCurve: js.UndefOr[Boolean] = js.native
+  var useBezierCurve: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether to use the outer labels to identify the legend items.
     */
-  var useOuterLabelsForLegend: js.UndefOr[Boolean] = js.native
+  var useOuterLabelsForLegend: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets whether to use the unselected style on unselected slices.
     */
-  var useUnselectedStyle: js.UndefOr[Boolean] = js.native
+  var useUnselectedStyle: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the value member path for the funnel chart.
     */
-  var valueMemberPath: js.UndefOr[String] = js.native
+  var valueMemberPath: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the chart.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object IgFunnelChart {
   

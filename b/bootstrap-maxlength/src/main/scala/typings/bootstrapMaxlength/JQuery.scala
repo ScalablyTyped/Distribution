@@ -7,7 +7,6 @@ import typings.bootstrapMaxlength.bootstrapMaxlengthStrings.maxlengthDotshown
 import typings.jquery.JQueryEventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,18 +19,18 @@ trait JQuery extends StObject {
   @JSName("on")
   def on_maxlengthhidden(
     events: maxlengthDothidden,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   @JSName("on")
   def on_maxlengthshown(
     events: maxlengthDotshown,
-    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, _]
+    handler: js.Function2[/* eventObject */ JQueryEventObject, /* repeated */ js.Any, js.Any]
   ): JQuery = js.native
   
   @JSName("trigger")
   def trigger_maxlengthreposition(eventType: maxlengthDotreposition): JQuery = js.native
   @JSName("trigger")
-  def trigger_maxlengthreposition(eventType: maxlengthDotreposition, extraParameters: js.Array[_]): JQuery = js.native
+  def trigger_maxlengthreposition(eventType: maxlengthDotreposition, extraParameters: js.Array[js.Any]): JQuery = js.native
   @JSName("trigger")
   def trigger_maxlengthreposition(eventType: maxlengthDotreposition, extraParameters: js.Object): JQuery = js.native
 }

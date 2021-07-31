@@ -9,7 +9,6 @@ import typings.react.mod.ComponentClass
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,11 @@ object mod {
   @scala.inline
   def default_=(x: Kos): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Action[T] extends StObject {
     
-    var payload: js.UndefOr[Partial[T] with StringDictionary[js.Any]] = js.native
+    var payload: js.UndefOr[Partial[T] & StringDictionary[js.Any]] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Action {
     
@@ -41,10 +39,10 @@ object mod {
     }
     
     @scala.inline
-    implicit class ActionMutableBuilder[Self <: Action[_], T] (val x: Self with Action[T]) extends AnyVal {
+    implicit class ActionMutableBuilder[Self <: Action[?], T] (val x: Self & Action[T]) extends AnyVal {
       
       @scala.inline
-      def setPayload(value: Partial[T] with StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
+      def setPayload(value: Partial[T] & StringDictionary[js.Any]): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPayloadUndefined: Self = StObject.set(x, "payload", js.undefined)
@@ -61,23 +59,22 @@ object mod {
     
     var Util: typings.kosCore.mod.Util = js.native
     
-    def Wrapper(config: WrapperConfig): js.Function1[/* component */ ReactComponent[js.Any with KosProps[_], _], _] = js.native
+    def Wrapper(config: WrapperConfig): js.Function1[/* component */ ReactComponent[js.Any & KosProps[js.Any], js.Any], js.Any] = js.native
     
-    def getModel(namespace: String): KosModel[_] = js.native
+    def getModel(namespace: String): KosModel[js.Any] = js.native
     
     def registeModel(model: js.Any): Unit = js.native
     
     def removeModel(namespace: String): Unit = js.native
     
-    def start(Layout: ReactComponent[_, _]): Unit = js.native
-    def start(Layout: ReactComponent[_, _], container: String): Unit = js.native
+    def start(Layout: ReactComponent[js.Any, js.Any]): Unit = js.native
+    def start(Layout: ReactComponent[js.Any, js.Any], container: String): Unit = js.native
     
     def use(middleware: js.Function1[/* api */ Dispatch, Unit]): Unit = js.native
   }
   
   type KosDispatch = js.Function1[/* action */ Action[js.Any], Unit]
   
-  @js.native
   trait KosModel[T] extends StObject {
     
     var asyncs: StringDictionary[
@@ -87,20 +84,20 @@ object mod {
           /* action */ js.UndefOr[Payload[T]], 
           Unit
         ]
-      ] = js.native
+      ]
     
     var getAsync: js.UndefOr[
         js.Function1[
           /* key */ String, 
-          js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[_]], Unit]
+          js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[js.Any]], Unit]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var initial: T = js.native
+    var initial: T
     
-    var namespace: String = js.native
+    var namespace: String
     
-    var reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]] = js.native
+    var reducers: StringDictionary[js.Function2[/* state */ T, /* hasPayload */ Payload[T], Unit]]
     
     var setup: js.UndefOr[
         js.Function3[
@@ -109,7 +106,7 @@ object mod {
           /* action */ PayloadParam, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object KosModel {
     
@@ -132,7 +129,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class KosModelMutableBuilder[Self <: KosModel[_], T] (val x: Self with KosModel[T]) extends AnyVal {
+    implicit class KosModelMutableBuilder[Self <: KosModel[?], T] (val x: Self & KosModel[T]) extends AnyVal {
       
       @scala.inline
       def setAsyncs(
@@ -148,7 +145,7 @@ object mod {
       
       @scala.inline
       def setGetAsync(
-        value: /* key */ String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[_]], Unit]
+        value: /* key */ String => js.Function2[/* dispatch */ KosDispatch, /* getState */ js.UndefOr[GetKosState[js.Any]], Unit]
       ): Self = StObject.set(x, "getAsync", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -173,14 +170,13 @@ object mod {
     }
   }
   
-  @js.native
   trait KosProps[T] extends StObject {
     
-    var dispatch: js.UndefOr[js.Function1[/* action */ Action[T], Unit]] = js.native
+    var dispatch: js.UndefOr[js.Function1[/* action */ Action[T], Unit]] = js.undefined
     
-    var getNamespace: js.UndefOr[js.Function0[String]] = js.native
+    var getNamespace: js.UndefOr[js.Function0[String]] = js.undefined
     
-    var getParam: js.UndefOr[js.Function0[_]] = js.native
+    var getParam: js.UndefOr[js.Function0[js.Any]] = js.undefined
   }
   object KosProps {
     
@@ -191,7 +187,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class KosPropsMutableBuilder[Self <: KosProps[_], T] (val x: Self with KosProps[T]) extends AnyVal {
+    implicit class KosPropsMutableBuilder[Self <: KosProps[?], T] (val x: Self & KosProps[T]) extends AnyVal {
       
       @scala.inline
       def setDispatch(value: /* action */ Action[T] => Unit): Self = StObject.set(x, "dispatch", js.Any.fromFunction1(value))
@@ -206,7 +202,7 @@ object mod {
       def setGetNamespaceUndefined: Self = StObject.set(x, "getNamespace", js.undefined)
       
       @scala.inline
-      def setGetParam(value: () => _): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
+      def setGetParam(value: () => js.Any): Self = StObject.set(x, "getParam", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetParamUndefined: Self = StObject.set(x, "getParam", js.undefined)
@@ -215,12 +211,11 @@ object mod {
   
   type ReactComponent[P, S] = ComponentClass[P, S]
   
-  @js.native
   trait Util extends StObject {
     
-    def getActionType(action: String): Namespace = js.native
+    def getActionType(action: String): Namespace
     
-    def getParam(): js.Any = js.native
+    def getParam(): js.Any
   }
   object Util {
     
@@ -241,21 +236,20 @@ object mod {
     }
   }
   
-  @js.native
   trait WrapperConfig extends StObject {
     
-    var autoLoad: js.UndefOr[Boolean] = js.native
+    var autoLoad: js.UndefOr[Boolean] = js.undefined
     
-    var autoReset: js.UndefOr[Boolean] = js.native
+    var autoReset: js.UndefOr[Boolean] = js.undefined
     
-    var model: KosModel[_] = js.native
+    var model: KosModel[js.Any]
     
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
   }
   object WrapperConfig {
     
     @scala.inline
-    def apply(model: KosModel[_]): WrapperConfig = {
+    def apply(model: KosModel[js.Any]): WrapperConfig = {
       val __obj = js.Dynamic.literal(model = model.asInstanceOf[js.Any])
       __obj.asInstanceOf[WrapperConfig]
     }
@@ -276,7 +270,7 @@ object mod {
       def setAutoResetUndefined: Self = StObject.set(x, "autoReset", js.undefined)
       
       @scala.inline
-      def setModel(value: KosModel[_]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
+      def setModel(value: KosModel[js.Any]): Self = StObject.set(x, "model", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setNamespace(value: String): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])

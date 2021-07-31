@@ -3,15 +3,13 @@ package typings.baseui.anon
 import typings.baseui.layerMod.PopperOffset
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Arrow extends StObject {
   
-  var arrow: js.UndefOr[PopperOffset] = js.native
+  var arrow: js.UndefOr[PopperOffset] = js.undefined
   
-  var popper: PopperOffset = js.native
+  var popper: PopperOffset
 }
 object Arrow {
   

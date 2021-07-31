@@ -12,7 +12,7 @@ AngularJS module that generates a breadcrumb from ui-router's states
 | Keywords           | angular, breadcrumb |
 | # releases         | 0 |
 | # dependents       | 5 |
-| # downloads        | 427349 |
+| # downloads        | 538466 |
 | # stars            | 1 |
 
 ## Links

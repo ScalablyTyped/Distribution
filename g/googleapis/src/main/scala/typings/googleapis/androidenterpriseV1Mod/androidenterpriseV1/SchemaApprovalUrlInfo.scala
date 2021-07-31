@@ -2,26 +2,24 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information on an approval URL.
   */
-@js.native
 trait SchemaApprovalUrlInfo extends StObject {
   
   /**
     * A URL that displays a product&#39;s permissions and that can also be used
     * to approve the product with the Products.approve call.
     */
-  var approvalUrl: js.UndefOr[String] = js.native
+  var approvalUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#approvalUrlInfo&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaApprovalUrlInfo {
   

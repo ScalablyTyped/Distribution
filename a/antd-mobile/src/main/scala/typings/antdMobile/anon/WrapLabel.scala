@@ -2,15 +2,13 @@ package typings.antdMobile.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WrapLabel extends StObject {
   
-  var prefixCls: String = js.native
+  var prefixCls: String
   
-  var wrapLabel: Boolean = js.native
+  var wrapLabel: Boolean
 }
 object WrapLabel {
   

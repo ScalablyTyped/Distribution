@@ -2,21 +2,19 @@ package typings.awsSdk.supportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
   /**
     * The category code for the support case.
     */
-  var code: js.UndefOr[CategoryCode] = js.native
+  var code: js.UndefOr[CategoryCode] = js.undefined
   
   /**
     * The category name for the support case.
     */
-  var name: js.UndefOr[CategoryName] = js.native
+  var name: js.UndefOr[CategoryName] = js.undefined
 }
 object Category {
   

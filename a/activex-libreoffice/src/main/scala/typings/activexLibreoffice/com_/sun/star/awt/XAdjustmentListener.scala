@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive adjustment events. */
-@js.native
-trait XAdjustmentListener extends XEventListener {
+trait XAdjustmentListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the adjustment has changed. */
-  def adjustmentValueChanged(rEvent: AdjustmentEvent): Unit = js.native
+  def adjustmentValueChanged(rEvent: AdjustmentEvent): Unit
 }
 object XAdjustmentListener {
   

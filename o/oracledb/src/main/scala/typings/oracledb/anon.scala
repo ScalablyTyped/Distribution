@@ -7,12 +7,10 @@ import typings.oracledb.mod.DBObjectIN
 import typings.oracledb.mod.SubscriptionTables
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AssignmentMethod extends StObject {
     
     /**
@@ -20,21 +18,21 @@ object anon {
       *
       * @default UUID
       */
-    var assignmentMethod: js.UndefOr[String] = js.native
+    var assignmentMethod: js.UndefOr[String] = js.undefined
     
     /**
       * Maximum length of the key column in bytes. This component applies only to keys of type VARCHAR2.
       *
       * @default 255
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of the column that stores the document key.
       *
       * @default ID
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the database sequence that generates keys for documents that are inserted into a collection if
@@ -43,14 +41,14 @@ object anon {
       * If you specify the key assignment method as SEQUENCE then you must also specify the name of that sequence.
       * If the specified sequence does not exist then SODA creates it.
       */
-    var sequenceName: js.UndefOr[String] = js.native
+    var sequenceName: js.UndefOr[String] = js.undefined
     
     /**
       * SQL data type of the column that stores the document key.
       *
       * @default VARCHAR2
       */
-    var sqlType: js.UndefOr[String] = js.native
+    var sqlType: js.UndefOr[String] = js.undefined
   }
   object AssignmentMethod {
     
@@ -95,7 +93,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Cache extends StObject {
     
     /**
@@ -103,14 +100,14 @@ object anon {
       *
       * @default true
       */
-    var cache: js.UndefOr[Boolean] = js.native
+    var cache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * SecureFiles LOB compression setting.
       *
       * @default NONE
       */
-    var compress: js.UndefOr[String] = js.native
+    var compress: js.UndefOr[String] = js.undefined
     
     /**
       * SecureFiles LOB encryption setting.
@@ -119,35 +116,35 @@ object anon {
       *
       * @default NONE
       */
-    var encrypt: js.UndefOr[String] = js.native
+    var encrypt: js.UndefOr[String] = js.undefined
     
     /**
       * Maximum length of the content column in bytes. This component applies only to content of type VARCHAR2.
       *
       * @default 4000
       */
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
     
     /**
       * Name of the column that stores the database content.
       *
       * @default JSON_DOCUMENT
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * SQL data type of the column that stores the document content.
       *
       * @default BLOB
       */
-    var sqlType: js.UndefOr[String] = js.native
+    var sqlType: js.UndefOr[String] = js.undefined
     
     /**
       * Syntax to which JavaScript Object Notation (JSON) content must conform—strict or lax.
       *
       * @default STANDARD
       */
-    var validation: js.UndefOr[String] = js.native
+    var validation: js.UndefOr[String] = js.undefined
   }
   object Cache {
     
@@ -204,16 +201,17 @@ object anon {
     }
   }
   
-  @js.native
-  trait ConnectString extends DBCredentials {
+  trait ConnectString
+    extends StObject
+       with DBCredentials {
     
-    var connectString: String = js.native
+    var connectString: String
     
-    var externalAuth: js.UndefOr[Boolean] = js.native
+    var externalAuth: js.UndefOr[Boolean] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var user: String = js.native
+    var user: String
   }
   object ConnectString {
     
@@ -243,16 +241,17 @@ object anon {
     }
   }
   
-  @js.native
-  trait ConnectionString extends DBCredentials {
+  trait ConnectionString
+    extends StObject
+       with DBCredentials {
     
-    var connectionString: String = js.native
+    var connectionString: String
     
-    var externalAuth: js.UndefOr[Boolean] = js.native
+    var externalAuth: js.UndefOr[Boolean] = js.undefined
     
-    var password: String = js.native
+    var password: String
     
-    var user: String = js.native
+    var user: String
   }
   object ConnectionString {
     
@@ -282,28 +281,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Correlation[T] extends StObject {
     
     /** Correlation that was used during enqueue. */
-    var correlation: String = js.native
+    var correlation: String
     
     /** Number of seconds the message was delayed before it could be dequeued. */
-    var delay: Double = js.native
+    var delay: Double
     
     /** Name of the exception queue defined when the message was enqueued. */
-    var exceptionQueue: String = js.native
+    var exceptionQueue: String
     
     /** Number of seconds until expiration defined when the message was enqueued. */
-    var expiration: Double = js.native
+    var expiration: Double
     
     /** Contains the payload of the message, with type depending on the value of queue.payloadType.
       * Note that enqueued Strings are returned as UTF-8 encoded Buffers.
       */
-    var payload: String | Buffer | DBObjectIN[T] = js.native
+    var payload: String | Buffer | DBObjectIN[T]
     
     /** Priority of the message when it was enqueued. */
-    var priority: Double = js.native
+    var priority: Double
   }
   object Correlation {
     
@@ -321,7 +319,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CorrelationMutableBuilder[Self <: Correlation[_], T] (val x: Self with Correlation[T]) extends AnyVal {
+    implicit class CorrelationMutableBuilder[Self <: Correlation[?], T] (val x: Self & Correlation[T]) extends AnyVal {
       
       @scala.inline
       def setCorrelation(value: String): Self = StObject.set(x, "correlation", value.asInstanceOf[js.Any])
@@ -343,7 +341,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
     /**
@@ -359,14 +356,14 @@ object anon {
       * not to set this component if you are sure that your application does not use any read or write operations
       * that are driven by time stamps, because creating and maintaining an index carries a cost.
       */
-    var index: js.UndefOr[String] = js.native
+    var index: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the column that stores the last-modified time stamp of the document.
       *
       * @default LAST_MODIFIED
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Index {
     
@@ -393,7 +390,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Method extends StObject {
     
     /**
@@ -401,14 +397,14 @@ object anon {
       *
       * @default SHA256
       */
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     /**
       * Name of the column that stores the document version.
       *
       * @default VERSION
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Method {
     
@@ -435,7 +431,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**
@@ -443,7 +438,7 @@ object anon {
       * the collection is to be heterogeneous, that is, it can store documents other than
       * JavaScript Object Notation (JSON).
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Name {
     
@@ -464,14 +459,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Operation extends StObject {
     
     /** One of the CQN_OPCODE_* constants. */
-    var operation: Double = js.native
+    var operation: Double
     
     /** ROWID of the row that was affected. */
-    var rowid: String = js.native
+    var rowid: String
   }
   object Operation {
     
@@ -492,11 +486,10 @@ object anon {
     }
   }
   
-  @js.native
   trait Tables extends StObject {
     
     /** Array of objects specifying the queries which were affected by the Query Change notification. */
-    var tables: SubscriptionTables = js.native
+    var tables: SubscriptionTables
   }
   object Tables {
     
@@ -514,10 +507,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: Double = js.native
+    var `type`: Double
   }
   object Type {
     
@@ -536,17 +528,16 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeClass[T] extends StObject {
     
     /** One of the DB_TYPE constants. */
-    var `type`: Double = js.native
+    var `type`: Double
     
     /** Set if the value of type is a DBObject. */
-    var typeClass: js.UndefOr[DBObjectClass[T]] = js.native
+    var typeClass: js.UndefOr[DBObjectClass[T]] = js.undefined
     
     /** Type, such as 'VARCHAR2' or 'NUMBER'. */
-    var typeName: String = js.native
+    var typeName: String
   }
   object TypeClass {
     
@@ -558,7 +549,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class TypeClassMutableBuilder[Self <: TypeClass[_], T] (val x: Self with TypeClass[T]) extends AnyVal {
+    implicit class TypeClassMutableBuilder[Self <: TypeClass[?], T] (val x: Self & TypeClass[T]) extends AnyVal {
       
       @scala.inline
       def setType(value: Double): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

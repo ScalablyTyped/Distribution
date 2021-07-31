@@ -2,13 +2,11 @@ package typings.expoLocation.locationTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationSubscription extends StObject {
   
-  def remove(): Unit = js.native
+  def remove(): Unit
 }
 object LocationSubscription {
   

@@ -2,39 +2,37 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ContainerPort represents a network port in a single container.
   */
-@js.native
 trait ContainerPort extends StObject {
   
   /**
     * Number of port to expose on the pod's IP address. This must be a valid port number, 0 < x < 65536.
     */
-  var containerPort: Double = js.native
+  var containerPort: Double
   
   /**
     * What host IP to bind the external port to.
     */
-  var hostIP: String = js.native
+  var hostIP: String
   
   /**
     * Number of port to expose on the host. If specified, this must be a valid port number, 0 < x < 65536. If HostNetwork is specified, this must match ContainerPort. Most containers do not need this.
     */
-  var hostPort: Double = js.native
+  var hostPort: Double
   
   /**
     * If specified, this must be an IANA_SVC_NAME and unique within the pod. Each named port in a pod must have a unique name. Name for the port that can be referred to by services.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Protocol for port. Must be UDP, TCP, or SCTP. Defaults to "TCP".
     */
-  var protocol: String = js.native
+  var protocol: String
 }
 object ContainerPort {
   

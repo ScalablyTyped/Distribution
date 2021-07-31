@@ -2,31 +2,29 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Directory extends StObject {
   
   /**
     * The date and time when the directory was created.
     */
-  var CreationDateTime: js.UndefOr[Date] = js.native
+  var CreationDateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that is associated with the directory. For more information, see arns.
     */
-  var DirectoryArn: js.UndefOr[typings.awsSdk.clouddirectoryMod.DirectoryArn] = js.native
+  var DirectoryArn: js.UndefOr[typings.awsSdk.clouddirectoryMod.DirectoryArn] = js.undefined
   
   /**
     * The name of the directory.
     */
-  var Name: js.UndefOr[DirectoryName] = js.native
+  var Name: js.UndefOr[DirectoryName] = js.undefined
   
   /**
     * The state of the directory. Can be either Enabled, Disabled, or Deleted.
     */
-  var State: js.UndefOr[DirectoryState] = js.native
+  var State: js.UndefOr[DirectoryState] = js.undefined
 }
 object Directory {
   

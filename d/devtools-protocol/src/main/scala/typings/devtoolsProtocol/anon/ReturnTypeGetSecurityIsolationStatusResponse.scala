@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.GetSecurityIsolationStatusR
 import typings.devtoolsProtocol.mod.Protocol.Network.GetSecurityIsolationStatusResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetSecurityIsolationStatusResponse extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[GetSecurityIsolationStatusRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[GetSecurityIsolationStatusRequest]]
   
-  var returnType: GetSecurityIsolationStatusResponse = js.native
+  var returnType: GetSecurityIsolationStatusResponse
 }
 object ReturnTypeGetSecurityIsolationStatusResponse {
   

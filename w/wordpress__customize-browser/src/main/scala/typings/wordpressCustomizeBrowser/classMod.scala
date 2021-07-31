@@ -2,7 +2,6 @@ package typings.wordpressCustomizeBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classMod {
@@ -30,8 +29,7 @@ object classMod {
     @scala.inline
     def applicator_=(x: js.Object): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("applicator")(x.asInstanceOf[js.Any])
     
-    @JSImport("@wordpress/customize-browser/Class", "Class.extend")
-    @js.native
-    def extend(protoProps: js.Object, classProps: js.Object): Class = js.native
+    @scala.inline
+    def extend(protoProps: js.Object, classProps: js.Object): Class = (^.asInstanceOf[js.Dynamic].applyDynamic("extend")(protoProps.asInstanceOf[js.Any], classProps.asInstanceOf[js.Any])).asInstanceOf[Class]
   }
 }

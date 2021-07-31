@@ -2,7 +2,6 @@ package typings.typeorm.mongodbTypingsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("typeorm/driver/mongodb/typings", "Long")
@@ -246,27 +245,24 @@ object Long {
     * @param lowBits The low 32-bits.
     * @param highBits The high 32-bits.
     */
-  @JSImport("typeorm/driver/mongodb/typings", "Long.fromBits")
-  @js.native
-  def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = js.native
+  @scala.inline
+  def fromBits(lowBits: scala.Double, highBits: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBits")(lowBits.asInstanceOf[js.Any], highBits.asInstanceOf[js.Any])).asInstanceOf[Long]
   
   /**
     * Returns a Long representing the given (32-bit) integer value.
     *
     * @param value The 32-bit integer in question.
     */
-  @JSImport("typeorm/driver/mongodb/typings", "Long.fromInt")
-  @js.native
-  def fromInt(value: scala.Double): Long = js.native
+  @scala.inline
+  def fromInt(value: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromInt")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   /**
     * Returns a Long representing the given value, provided that it is a finite number. Otherwise, zero is returned.
     *
     * @param value The number in question.
     */
-  @JSImport("typeorm/driver/mongodb/typings", "Long.fromNumber")
-  @js.native
-  def fromNumber(value: scala.Double): Long = js.native
+  @scala.inline
+  def fromNumber(value: scala.Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromNumber")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
   
   /**
     * Returns a Long representation of the given string, written using the given radix.
@@ -274,10 +270,8 @@ object Long {
     * @param str The textual representation of the Long.
     * @param radix The radix in which the text is written.
     */
-  @JSImport("typeorm/driver/mongodb/typings", "Long.fromString")
-  @js.native
-  def fromString(str: String): Long = js.native
-  @JSImport("typeorm/driver/mongodb/typings", "Long.fromString")
-  @js.native
-  def fromString(str: String, radix: scala.Double): Long = js.native
+  @scala.inline
+  def fromString(str: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any]).asInstanceOf[Long]
+  @scala.inline
+  def fromString(str: String, radix: scala.Double): Long = (^.asInstanceOf[js.Dynamic].applyDynamic("fromString")(str.asInstanceOf[js.Any], radix.asInstanceOf[js.Any])).asInstanceOf[Long]
 }

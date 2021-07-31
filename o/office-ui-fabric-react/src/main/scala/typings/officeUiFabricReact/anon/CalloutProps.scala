@@ -2,10 +2,8 @@ package typings.officeUiFabricReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalloutProps extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait CalloutProps extends StObject {
     * Remove in next release.
     * @deprecated In favor of private `_defaultCalloutProps`.
     */
-  var calloutProps: DirectionalHint = js.native
+  var calloutProps: DirectionalHint
 }
 object CalloutProps {
   

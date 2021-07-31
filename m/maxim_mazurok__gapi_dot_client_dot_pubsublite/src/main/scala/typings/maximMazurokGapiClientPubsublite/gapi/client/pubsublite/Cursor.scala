@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cursor extends StObject {
   
   /** The offset of a message within a topic partition. Must be greater than or equal 0. */
-  var offset: js.UndefOr[String] = js.native
+  var offset: js.UndefOr[String] = js.undefined
 }
 object Cursor {
   

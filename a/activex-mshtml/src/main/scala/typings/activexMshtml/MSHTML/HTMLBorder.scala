@@ -7,7 +7,6 @@ import typings.activexMshtml.activexMshtmlNumbers.`4194304`
 import typings.activexMshtml.activexMshtmlNumbers.`8388608`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

@@ -2,10 +2,8 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceWorkerInfo extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/service-worker-info
@@ -14,17 +12,17 @@ trait ServiceWorkerInfo extends StObject {
     * not an OS level PID.  This aligns with the ID set used for
     * `webContents.getProcessId()`.
     */
-  var renderProcessId: Double = js.native
+  var renderProcessId: Double
   
   /**
     * The base URL that this service worker is active for.
     */
-  var scope: String = js.native
+  var scope: String
   
   /**
     * The full URL to the script that this service worker runs
     */
-  var scriptUrl: String = js.native
+  var scriptUrl: String
 }
 object ServiceWorkerInfo {
   

@@ -2,12 +2,14 @@ package typings.googleProfanityWords
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object profanityMod {
   
-  @JSImport("google-profanity-words/lib/profanity", "profanity")
+  @JSImport("google-profanity-words/lib/profanity", JSImport.Namespace)
   @js.native
-  def profanity(): js.Array[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def profanity(): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("profanity")().asInstanceOf[js.Array[String]]
 }

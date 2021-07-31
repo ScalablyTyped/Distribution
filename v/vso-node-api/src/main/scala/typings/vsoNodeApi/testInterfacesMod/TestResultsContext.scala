@@ -2,17 +2,15 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultsContext extends StObject {
   
-  var build: BuildReference = js.native
+  var build: BuildReference
   
-  var contextType: TestResultsContextType = js.native
+  var contextType: TestResultsContextType
   
-  var release: ReleaseReference = js.native
+  var release: ReleaseReference
 }
 object TestResultsContext {
   

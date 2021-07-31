@@ -2,39 +2,37 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGooglePrivacyDlpV2LDiversityHistogramBucket extends StObject {
   
   /**
     * Total number of equivalence classes in this bucket.
     */
-  var bucketSize: js.UndefOr[String] = js.native
+  var bucketSize: js.UndefOr[String] = js.undefined
   
   /**
     * Total number of distinct equivalence classes in this bucket.
     */
-  var bucketValueCount: js.UndefOr[String] = js.native
+  var bucketValueCount: js.UndefOr[String] = js.undefined
   
   /**
     * Sample of equivalence classes in this bucket. The total number of classes
     * returned per bucket is capped at 20.
     */
-  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass]] = js.native
+  var bucketValues: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2LDiversityEquivalenceClass]] = js.undefined
   
   /**
     * Lower bound on the sensitive value frequencies of the equivalence classes
     * in this bucket.
     */
-  var sensitiveValueFrequencyLowerBound: js.UndefOr[String] = js.native
+  var sensitiveValueFrequencyLowerBound: js.UndefOr[String] = js.undefined
   
   /**
     * Upper bound on the sensitive value frequencies of the equivalence classes
     * in this bucket.
     */
-  var sensitiveValueFrequencyUpperBound: js.UndefOr[String] = js.native
+  var sensitiveValueFrequencyUpperBound: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2LDiversityHistogramBucket {
   

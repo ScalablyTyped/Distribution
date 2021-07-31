@@ -2,23 +2,21 @@ package typings.stripeV3.stripe
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OwnerAddress extends StObject {
   
-  var city: js.UndefOr[String] = js.native
+  var city: js.UndefOr[String] = js.undefined
   
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
-  var line1: js.UndefOr[String] = js.native
+  var line1: js.UndefOr[String] = js.undefined
   
-  var line2: js.UndefOr[String] = js.native
+  var line2: js.UndefOr[String] = js.undefined
   
-  var postal_code: js.UndefOr[String] = js.native
+  var postal_code: js.UndefOr[String] = js.undefined
   
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object OwnerAddress {
   

@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.mobile.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetailButtonOptions extends StObject {
   
-  var click: js.UndefOr[js.Function1[/* e */ DetailButtonClickEvent, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* e */ DetailButtonClickEvent, Unit]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object DetailButtonOptions {
   

@@ -18,17 +18,15 @@ import typings.stylableNode.stylableNodeStrings.development
 import typings.stylableNode.stylableNodeStrings.production
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.Array[Error] = js.native
+    var errors: js.Array[Error]
     
-    var result: js.Array[String] = js.native
+    var result: js.Array[String]
   }
   object Errors {
     
@@ -67,29 +65,6 @@ object anon {
       findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
       loadConfig: js.Function1[/* filePath */ String, js.Object],
       hasDirnameRelative: Dirname,
-      hashSalt: js.UndefOr[scala.Nothing],
-      prefix: js.UndefOr[scala.Nothing],
-      normalizeVersion: js.Function1[/* semver */ String, String]
-    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-    def apply(
-      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-      loadConfig: js.Function1[/* filePath */ String, js.Object],
-      hasDirnameRelative: Dirname,
-      hashSalt: js.UndefOr[scala.Nothing],
-      prefix: String
-    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-    def apply(
-      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-      loadConfig: js.Function1[/* filePath */ String, js.Object],
-      hasDirnameRelative: Dirname,
-      hashSalt: js.UndefOr[scala.Nothing],
-      prefix: String,
-      normalizeVersion: js.Function1[/* semver */ String, String]
-    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-    def apply(
-      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-      loadConfig: js.Function1[/* filePath */ String, js.Object],
-      hasDirnameRelative: Dirname,
       hashSalt: String
     ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
     def apply(
@@ -97,14 +72,6 @@ object anon {
       loadConfig: js.Function1[/* filePath */ String, js.Object],
       hasDirnameRelative: Dirname,
       hashSalt: String,
-      prefix: js.UndefOr[scala.Nothing],
-      normalizeVersion: js.Function1[/* semver */ String, String]
-    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
-    def apply(
-      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
-      loadConfig: js.Function1[/* filePath */ String, js.Object],
-      hasDirnameRelative: Dirname,
-      hashSalt: String,
       prefix: String
     ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
     def apply(
@@ -115,21 +82,51 @@ object anon {
       prefix: String,
       normalizeVersion: js.Function1[/* semver */ String, String]
     ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+    def apply(
+      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+      loadConfig: js.Function1[/* filePath */ String, js.Object],
+      hasDirnameRelative: Dirname,
+      hashSalt: String,
+      prefix: Unit,
+      normalizeVersion: js.Function1[/* semver */ String, String]
+    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+    def apply(
+      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+      loadConfig: js.Function1[/* filePath */ String, js.Object],
+      hasDirnameRelative: Dirname,
+      hashSalt: Unit,
+      prefix: String
+    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+    def apply(
+      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+      loadConfig: js.Function1[/* filePath */ String, js.Object],
+      hasDirnameRelative: Dirname,
+      hashSalt: Unit,
+      prefix: String,
+      normalizeVersion: js.Function1[/* semver */ String, String]
+    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
+    def apply(
+      findConfig: js.Function2[/* fileName */ String, /* options */ Cwd, String | Null],
+      loadConfig: js.Function1[/* filePath */ String, js.Object],
+      hasDirnameRelative: Dirname,
+      hashSalt: Unit,
+      prefix: Unit,
+      normalizeVersion: js.Function1[/* semver */ String, String]
+    ): js.Function2[/* namespace */ String, /* source */ String, String] = js.native
   }
   
   /* Inlined std.Partial<@stylable/node.@stylable/node/cjs/require-hook.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var afterCompile: js.UndefOr[js.Function2[/* code */ String, /* filename */ String, String]] = js.native
+    var afterCompile: js.UndefOr[js.Function2[/* code */ String, /* filename */ String, String]] = js.undefined
     
-    var ignoreJSModules: js.UndefOr[Boolean] = js.native
+    var ignoreJSModules: js.UndefOr[Boolean] = js.undefined
     
-    var matcher: js.UndefOr[js.Function1[/* filename */ String, Boolean]] = js.native
+    var matcher: js.UndefOr[js.Function1[/* filename */ String, Boolean]] = js.undefined
     
-    var runtimePath: js.UndefOr[String] = js.native
+    var runtimePath: js.UndefOr[String] = js.undefined
     
-    var stylableConfig: js.UndefOr[PartialStylableConfig] = js.native
+    var stylableConfig: js.UndefOr[PartialStylableConfig] = js.undefined
   }
   object PartialOptions {
     
@@ -175,36 +172,35 @@ object anon {
   }
   
   /* Inlined std.Partial<@stylable/core.@stylable/core.StylableConfig> */
-  @js.native
   trait PartialStylableConfig extends StObject {
     
-    var cssParser: js.UndefOr[CssParser] = js.native
+    var cssParser: js.UndefOr[CssParser] = js.undefined
     
-    var delimiter: js.UndefOr[String] = js.native
+    var delimiter: js.UndefOr[String] = js.undefined
     
-    var diagnostics: js.UndefOr[Diagnostics] = js.native
+    var diagnostics: js.UndefOr[Diagnostics] = js.undefined
     
-    var fileSystem: js.UndefOr[MinimalFS] = js.native
+    var fileSystem: js.UndefOr[MinimalFS] = js.undefined
     
-    var hooks: js.UndefOr[TransformHooks] = js.native
+    var hooks: js.UndefOr[TransformHooks] = js.undefined
     
-    var mode: js.UndefOr[production | development] = js.native
+    var mode: js.UndefOr[production | development] = js.undefined
     
-    var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.native
+    var onProcess: js.UndefOr[js.Function2[/* meta */ StylableMeta, /* path */ String, StylableMeta]] = js.undefined
     
-    var optimizer: js.UndefOr[IStylableOptimizer] = js.native
+    var optimizer: js.UndefOr[IStylableOptimizer] = js.undefined
     
-    var projectRoot: js.UndefOr[String] = js.native
+    var projectRoot: js.UndefOr[String] = js.undefined
     
-    var requireModule: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+    var requireModule: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
     
-    var resolveModule: js.UndefOr[ModuleResolver] = js.native
+    var resolveModule: js.UndefOr[ModuleResolver] = js.undefined
     
-    var resolveNamespace: js.UndefOr[js.Function2[/* namespace */ String, /* source */ String, String]] = js.native
+    var resolveNamespace: js.UndefOr[js.Function2[/* namespace */ String, /* source */ String, String]] = js.undefined
     
-    var resolveOptions: js.UndefOr[Dictkey] = js.native
+    var resolveOptions: js.UndefOr[Dictkey] = js.undefined
     
-    var timedCacheOptions: js.UndefOr[OmitTimedCacheOptionscrea] = js.native
+    var timedCacheOptions: js.UndefOr[OmitTimedCacheOptionscrea] = js.undefined
   }
   object PartialStylableConfig {
     
@@ -272,7 +268,7 @@ object anon {
       def setProjectRootUndefined: Self = StObject.set(x, "projectRoot", js.undefined)
       
       @scala.inline
-      def setRequireModule(value: /* path */ String => _): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
+      def setRequireModule(value: /* path */ String => js.Any): Self = StObject.set(x, "requireModule", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRequireModuleUndefined: Self = StObject.set(x, "requireModule", js.undefined)

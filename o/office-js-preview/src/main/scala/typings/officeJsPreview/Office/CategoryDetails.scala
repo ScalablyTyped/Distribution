@@ -3,7 +3,6 @@ package typings.officeJsPreview.Office
 import typings.officeJsPreview.Office.MailboxEnums.CategoryColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,18 +16,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait CategoryDetails extends StObject {
   
   /**
     * The color of the category.
     */
-  var color: CategoryColor | String = js.native
+  var color: CategoryColor | String
   
   /**
     * The name of the category. Maximum length is 255 characters.
     */
-  var displayName: String = js.native
+  var displayName: String
 }
 object CategoryDetails {
   

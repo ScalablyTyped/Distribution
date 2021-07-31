@@ -2,17 +2,15 @@ package typings.tensorflowTfjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Begin extends StObject {
   
-  var begin: js.Array[Double] = js.native
+  var begin: js.Array[Double]
   
-  var end: js.Array[Double] = js.native
+  var end: js.Array[Double]
   
-  var strides: js.Array[Double] = js.native
+  var strides: js.Array[Double]
 }
 object Begin {
   

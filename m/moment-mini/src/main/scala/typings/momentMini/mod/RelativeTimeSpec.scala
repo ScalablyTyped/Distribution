@@ -2,39 +2,37 @@ package typings.momentMini.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeTimeSpec extends StObject {
   
-  var M: RelativeTimeSpecVal = js.native
+  var M: RelativeTimeSpecVal
   
-  var MM: RelativeTimeSpecVal = js.native
+  var MM: RelativeTimeSpecVal
   
-  var d: RelativeTimeSpecVal = js.native
+  var d: RelativeTimeSpecVal
   
-  var dd: RelativeTimeSpecVal = js.native
+  var dd: RelativeTimeSpecVal
   
-  var future: RelativeTimeFuturePastVal = js.native
+  var future: RelativeTimeFuturePastVal
   
-  var h: RelativeTimeSpecVal = js.native
+  var h: RelativeTimeSpecVal
   
-  var hh: RelativeTimeSpecVal = js.native
+  var hh: RelativeTimeSpecVal
   
-  var m: RelativeTimeSpecVal = js.native
+  var m: RelativeTimeSpecVal
   
-  var mm: RelativeTimeSpecVal = js.native
+  var mm: RelativeTimeSpecVal
   
-  var past: RelativeTimeFuturePastVal = js.native
+  var past: RelativeTimeFuturePastVal
   
-  var s: RelativeTimeSpecVal = js.native
+  var s: RelativeTimeSpecVal
   
-  var ss: RelativeTimeSpecVal = js.native
+  var ss: RelativeTimeSpecVal
   
-  var y: RelativeTimeSpecVal = js.native
+  var y: RelativeTimeSpecVal
   
-  var yy: RelativeTimeSpecVal = js.native
+  var yy: RelativeTimeSpecVal
 }
 object RelativeTimeSpec {
   

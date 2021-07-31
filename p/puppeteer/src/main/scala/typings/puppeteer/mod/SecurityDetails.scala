@@ -2,26 +2,24 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityDetails extends StObject {
   
   /** A string with the name of issuer of the certificate. (e.g. "Let's Encrypt Authority X3"). */
-  def issuer(): String = js.native
+  def issuer(): String
   
   /** String with the security protocol (e.g. TLS 1.2). */
-  def protocol(): String = js.native
+  def protocol(): String
   
   /** Name of the subject to which the certificate was issued to (e.g. "www.example.com"). */
-  def subjectName(): String = js.native
+  def subjectName(): String
   
   /** Timestamp stating the start of validity of the certificate. */
-  def validFrom(): Double = js.native
+  def validFrom(): Double
   
   /** Timestamp stating the end of validity of the certificate. */
-  def validTo(): Double = js.native
+  def validTo(): Double
 }
 object SecurityDetails {
   

@@ -2,37 +2,38 @@ package typings.tensorflowTfjsBackendWebgl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object glslVersionMod {
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/glsl_version", "getGlslDifferences")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/glsl_version", JSImport.Namespace)
   @js.native
-  def getGlslDifferences(): GLSL = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getGlslDifferences(): GLSL = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlslDifferences")().asInstanceOf[GLSL]
+  
   trait GLSL extends StObject {
     
-    var attribute: String = js.native
+    var attribute: String
     
-    var defineOutput: String = js.native
+    var defineOutput: String
     
-    var defineRound: String = js.native
+    var defineRound: String
     
-    var defineSpecialInf: String = js.native
+    var defineSpecialInf: String
     
-    var defineSpecialNaN: String = js.native
+    var defineSpecialNaN: String
     
-    var output: String = js.native
+    var output: String
     
-    var texture2D: String = js.native
+    var texture2D: String
     
-    var varyingFs: String = js.native
+    var varyingFs: String
     
-    var varyingVs: String = js.native
+    var varyingVs: String
     
-    var version: String = js.native
+    var version: String
   }
   object GLSL {
     

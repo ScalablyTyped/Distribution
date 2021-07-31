@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to delete all hyperlinks in a selected range.
   */
-@js.native
-trait DeleteHyperlinksCommand extends CommandWithSimpleStateBase {
+trait DeleteHyperlinksCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the DeleteHyperlinksCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object DeleteHyperlinksCommand {
   

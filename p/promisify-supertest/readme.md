@@ -12,7 +12,7 @@ SuperTest + Promises
 | Keywords           | SuperTest, promise, as, promised, promisify, superagent, test |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 3252 |
+| # downloads        | 2682 |
 | # stars            | 1 |
 
 ## Links

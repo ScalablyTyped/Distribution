@@ -2,60 +2,58 @@ package typings.xrm.Xrm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Interface for UserSettings.dateFormattingInfo response
   */
-@js.native
 trait DateFormattingInfo extends StObject {
   
-  var AbbreviatedDayNames: js.Array[String] = js.native
+  var AbbreviatedDayNames: js.Array[String]
   
-  var AbbreviatedMonthGenitiveNames: js.Array[String] = js.native
+  var AbbreviatedMonthGenitiveNames: js.Array[String]
   
-  var AbbreviatedMonthNames: js.Array[String] = js.native
+  var AbbreviatedMonthNames: js.Array[String]
   
-  var AmDesignator: String = js.native
+  var AmDesignator: String
   
-  var Calendar: typings.xrm.Xrm.Calendar = js.native
+  var Calendar: typings.xrm.Xrm.Calendar
   
-  var CalendarWeekRule: Double = js.native
+  var CalendarWeekRule: Double
   
-  var DateSeparator: String = js.native
+  var DateSeparator: String
   
-  var DayNames: js.Array[String] = js.native
+  var DayNames: js.Array[String]
   
-  var FirstDayOfWeek: Double = js.native
+  var FirstDayOfWeek: Double
   
-  var FullDateTimePattern: String = js.native
+  var FullDateTimePattern: String
   
-  var LongDatePattern: String = js.native
+  var LongDatePattern: String
   
-  var LongTimePattern: String = js.native
+  var LongTimePattern: String
   
-  var MonthDayPattern: String = js.native
+  var MonthDayPattern: String
   
-  var MonthGenitiveNames: js.Array[String] = js.native
+  var MonthGenitiveNames: js.Array[String]
   
-  var MonthNames: js.Array[String] = js.native
+  var MonthNames: js.Array[String]
   
-  var PmDesignator: String = js.native
+  var PmDesignator: String
   
-  var ShortDatePattern: String = js.native
+  var ShortDatePattern: String
   
-  var ShortTimePattern: String = js.native
+  var ShortTimePattern: String
   
-  var ShortestDayNames: js.Array[String] = js.native
+  var ShortestDayNames: js.Array[String]
   
-  var SortableDateTimePattern: String = js.native
+  var SortableDateTimePattern: String
   
-  var TimeSeparator: String = js.native
+  var TimeSeparator: String
   
-  var UniversalSortableDateTimePattern: String = js.native
+  var UniversalSortableDateTimePattern: String
   
-  var YearMonthPattern: String = js.native
+  var YearMonthPattern: String
 }
 object DateFormattingInfo {
   

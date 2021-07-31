@@ -2,31 +2,29 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaScreen extends StObject {
   
   /**
     * File reference of the png file. Required.
     */
-  var fileReference: js.UndefOr[String] = js.native
+  var fileReference: js.UndefOr[String] = js.undefined
   
   /**
     * Locale of the device that the screenshot was taken on. Required.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * Model of the device that the screenshot was taken on. Required.
     */
-  var model: js.UndefOr[String] = js.native
+  var model: js.UndefOr[String] = js.undefined
   
   /**
     * OS version of the device that the screenshot was taken on. Required.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaScreen {
   

@@ -2,7 +2,6 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for the `listIntents` operation. */
@@ -16,14 +15,18 @@ object ListIntentsConstants {
   object Sort extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[Sort with String] = js.native
+    def apply(value: String): js.UndefOr[Sort & String] = js.native
     
     @js.native
-    sealed trait INTENT extends Sort
-    /* "intent" */ val INTENT: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.INTENT with String = js.native
+    sealed trait INTENT
+      extends StObject
+         with Sort
+    /* "intent" */ val INTENT: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.INTENT & String = js.native
     
     @js.native
-    sealed trait UPDATED extends Sort
-    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.UPDATED with String = js.native
+    sealed trait UPDATED
+      extends StObject
+         with Sort
+    /* "updated" */ val UPDATED: typings.watsonDeveloperCloud.mod.ListIntentsConstants.Sort.UPDATED & String = js.native
   }
 }

@@ -2,28 +2,26 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLCSSImportRule extends StObject {
   
   @JSName("MSHTML.HTMLCSSImportRule_typekey")
-  var MSHTMLDotHTMLCSSImportRule_typekey: HTMLCSSImportRule = js.native
+  var MSHTMLDotHTMLCSSImportRule_typekey: HTMLCSSImportRule
   
-  var cssText: String = js.native
+  var cssText: String
   
-  val href: String = js.native
+  val href: String
   
-  var media: js.Any = js.native
+  var media: js.Any
   
-  val parentRule: IHTMLCSSRule = js.native
+  val parentRule: IHTMLCSSRule
   
-  val parentStyleSheet: IHTMLStyleSheet = js.native
+  val parentStyleSheet: IHTMLStyleSheet
   
-  val styleSheet: IHTMLStyleSheet = js.native
+  val styleSheet: IHTMLStyleSheet
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object HTMLCSSImportRule {
   

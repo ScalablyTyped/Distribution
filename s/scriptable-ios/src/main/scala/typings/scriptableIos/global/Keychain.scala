@@ -2,7 +2,6 @@ package typings.scriptableIos.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Keychain {
   
+  @JSGlobal("Keychain")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * _Check if keychain contains a key._
     *
@@ -18,9 +21,8 @@ object Keychain {
     * @param key - Key to look up in the keychain.
     * @see https://docs.scriptable.app/keychain/#contains
     */
-  @JSGlobal("Keychain.contains")
-  @js.native
-  def contains(key: String): Boolean = js.native
+  @scala.inline
+  def contains(key: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("contains")(key.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * _Reads a value from the keychain._
@@ -29,18 +31,16 @@ object Keychain {
     * @param key - Key to read value for.
     * @see https://docs.scriptable.app/keychain/#get
     */
-  @JSGlobal("Keychain.get")
-  @js.native
-  def get(key: String): String = js.native
+  @scala.inline
+  def get(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /**
     * _Remove key from keychain._
     * @param key - Key to remove from the keychain.
     * @see https://docs.scriptable.app/keychain/#remove
     */
-  @JSGlobal("Keychain.remove")
-  @js.native
-  def remove(key: String): Unit = js.native
+  @scala.inline
+  def remove(key: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(key.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * _Add value for a specified key to keychain._
@@ -52,7 +52,6 @@ object Keychain {
     * @param value - Value to assign to the specified key.
     * @see https://docs.scriptable.app/keychain/#set
     */
-  @JSGlobal("Keychain.set")
-  @js.native
-  def set(key: String, value: String): Unit = js.native
+  @scala.inline
+  def set(key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

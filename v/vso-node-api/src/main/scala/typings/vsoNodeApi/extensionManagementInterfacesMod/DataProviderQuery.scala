@@ -2,21 +2,19 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataProviderQuery extends StObject {
   
   /**
     * Contextual information to pass to the data providers
     */
-  var context: DataProviderContext = js.native
+  var context: DataProviderContext
   
   /**
     * The contribution ids of the data providers to resolve
     */
-  var contributionIds: js.Array[String] = js.native
+  var contributionIds: js.Array[String]
 }
 object DataProviderQuery {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientClassroom.gapi.client.classroom
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SharedDriveFile extends StObject {
   
   /** Drive file details. */
-  var driveFile: js.UndefOr[DriveFile] = js.native
+  var driveFile: js.UndefOr[DriveFile] = js.undefined
   
   /** Mechanism by which students access the Drive item. */
-  var shareMode: js.UndefOr[String] = js.native
+  var shareMode: js.UndefOr[String] = js.undefined
 }
 object SharedDriveFile {
   

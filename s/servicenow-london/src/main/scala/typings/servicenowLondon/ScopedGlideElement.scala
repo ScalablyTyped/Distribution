@@ -2,7 +2,6 @@ package typings.servicenowLondon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -151,8 +150,8 @@ trait ScopedGlideElement extends StObject {
     * var choices = glideRecord.urgency.getChoices();
     * gs.info(choices);
     */
-  def getChoices(): js.Array[_] = js.native
-  def getChoices(dependent: String): js.Array[_] = js.native
+  def getChoices(): js.Array[js.Any] = js.native
+  def getChoices(dependent: String): js.Array[js.Any] = js.native
   
   /**
     * Returns the clear text value for Password (2 way encrypted) fields in scoped

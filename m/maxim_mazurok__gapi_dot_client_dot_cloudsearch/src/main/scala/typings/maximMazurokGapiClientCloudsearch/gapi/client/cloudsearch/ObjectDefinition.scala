@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectDefinition extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait ObjectDefinition extends StObject {
     * requests for items of type Document should set objectType equal to *Document*. Each object definition must be uniquely named within a schema. The name must start with a letter and
     * can only contain letters (A-Z, a-z) or numbers (0-9). The maximum length is 256 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The optional object-specific options. */
-  var options: js.UndefOr[ObjectOptions] = js.native
+  var options: js.UndefOr[ObjectOptions] = js.undefined
   
   /** The property definitions for the object. The maximum number of elements is 1000. */
-  var propertyDefinitions: js.UndefOr[js.Array[PropertyDefinition]] = js.native
+  var propertyDefinitions: js.UndefOr[js.Array[PropertyDefinition]] = js.undefined
 }
 object ObjectDefinition {
   

@@ -2,30 +2,28 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMsoHiLoLines extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Border: IMsoBorder = js.native
+  val Border: IMsoBorder
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): Unit = js.native
+  def Delete(): Unit
   
-  val Format: IMsoChartFormat = js.native
+  val Format: IMsoChartFormat
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.IMsoHiLoLines_typekey")
-  var OfficeDotIMsoHiLoLines_typekey: IMsoHiLoLines = js.native
+  var OfficeDotIMsoHiLoLines_typekey: IMsoHiLoLines
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Select(): Unit = js.native
+  def Select(): Unit
 }
 object IMsoHiLoLines {
   

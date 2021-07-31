@@ -3,26 +3,24 @@ package typings.wegameApi.anon
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
   /**
     * 图像像素点数据，一维数组，每四项表示一个像素点的 rgba
     */
-  var data: ArrayBuffer = js.native
+  var data: ArrayBuffer
   
   /**
     * 图像数据矩形的高度
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * 图像数据矩形的宽度
     */
-  var width: Double = js.native
+  var width: Double
 }
 object Data {
   

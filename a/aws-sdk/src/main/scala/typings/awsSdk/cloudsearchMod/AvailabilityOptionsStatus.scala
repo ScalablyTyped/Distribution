@@ -2,18 +2,16 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AvailabilityOptionsStatus extends StObject {
   
   /**
     * The availability options configured for the domain.
     */
-  var Options: MultiAZ = js.native
+  var Options: MultiAZ
   
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object AvailabilityOptionsStatus {
   

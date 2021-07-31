@@ -1,27 +1,25 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`17`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectiveArgumentNode extends ArrayExpression {
+trait DirectiveArgumentNode
+  extends StObject
+     with ArrayExpression {
   
   @JSName("elements")
-  var elements_DirectiveArgumentNode: js.Array[String] | (js.Tuple2[String, ExpressionNode]) | (js.Tuple3[String, ExpressionNode, ExpressionNode]) | (js.Tuple4[String, ExpressionNode, ExpressionNode, ObjectExpression]) = js.native
+  var elements_DirectiveArgumentNode: js.Array[String] | (js.Tuple2[String, ExpressionNode]) | (js.Tuple3[String, ExpressionNode, ExpressionNode]) | (js.Tuple4[String, ExpressionNode, ExpressionNode, ObjectExpression])
 }
 object DirectiveArgumentNode {
   
   @scala.inline
   def apply(
     elements: js.Array[String] | (js.Tuple2[String, ExpressionNode]) | (js.Tuple3[String, ExpressionNode, ExpressionNode]) | (js.Tuple4[String, ExpressionNode, ExpressionNode, ObjectExpression]),
-    loc: SourceLocation,
-    `type`: `17`
+    loc: SourceLocation
   ): DirectiveArgumentNode = {
     val __obj = js.Dynamic.literal(elements = elements.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(17)
     __obj.asInstanceOf[DirectiveArgumentNode]
   }
   

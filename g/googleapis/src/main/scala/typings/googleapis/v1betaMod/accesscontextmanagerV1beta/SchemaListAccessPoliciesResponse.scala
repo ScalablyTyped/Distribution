@@ -2,25 +2,23 @@ package typings.googleapis.v1betaMod.accesscontextmanagerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A response to `ListAccessPoliciesRequest`.
   */
-@js.native
 trait SchemaListAccessPoliciesResponse extends StObject {
   
   /**
     * List of the AccessPolicy instances.
     */
-  var accessPolicies: js.UndefOr[js.Array[SchemaAccessPolicy]] = js.native
+  var accessPolicies: js.UndefOr[js.Array[SchemaAccessPolicy]] = js.undefined
   
   /**
     * The pagination token to retrieve the next page of results. If the value
     * is empty, no further results remain.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListAccessPoliciesResponse {
   

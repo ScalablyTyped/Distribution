@@ -4,19 +4,19 @@ import typings.react.mod.HTMLAttributes
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RowProps extends HTMLAttributes[HTMLDivElement] {
+trait RowProps
+  extends StObject
+     with HTMLAttributes[HTMLDivElement] {
   
-  var lg: js.UndefOr[Double] = js.native
+  var lg: js.UndefOr[Double] = js.undefined
   
-  var md: js.UndefOr[Double] = js.native
+  var md: js.UndefOr[Double] = js.undefined
   
-  var sm: js.UndefOr[Double] = js.native
+  var sm: js.UndefOr[Double] = js.undefined
   
-  var xs: js.UndefOr[Double] = js.native
+  var xs: js.UndefOr[Double] = js.undefined
 }
 object RowProps {
   

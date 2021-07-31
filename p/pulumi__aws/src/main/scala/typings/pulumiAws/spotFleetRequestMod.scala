@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object spotFleetRequestMod {
@@ -148,6 +147,10 @@ object spotFleetRequestMod {
   /* static members */
   object SpotFleetRequest {
     
+    @JSImport("@pulumi/aws/ec2/spotFleetRequest", "SpotFleetRequest")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SpotFleetRequest resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -157,29 +160,23 @@ object spotFleetRequestMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/spotFleetRequest", "SpotFleetRequest.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SpotFleetRequest = js.native
-    @JSImport("@pulumi/aws/ec2/spotFleetRequest", "SpotFleetRequest.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SpotFleetRequest = js.native
-    @JSImport("@pulumi/aws/ec2/spotFleetRequest", "SpotFleetRequest.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SpotFleetRequestState): SpotFleetRequest = js.native
-    @JSImport("@pulumi/aws/ec2/spotFleetRequest", "SpotFleetRequest.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SpotFleetRequestState, opts: CustomResourceOptions): SpotFleetRequest = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SpotFleetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SpotFleetRequest]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SpotFleetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SpotFleetRequest]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SpotFleetRequestState): SpotFleetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SpotFleetRequest]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SpotFleetRequestState, opts: CustomResourceOptions): SpotFleetRequest = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SpotFleetRequest]
     
     /**
       * Returns true if the given object is an instance of SpotFleetRequest.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/spotFleetRequest", "SpotFleetRequest.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotFleetRequest.SpotFleetRequest */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/spotFleetRequest.SpotFleetRequest */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/spotFleetRequest.SpotFleetRequest */ Boolean]
   }
   
-  @js.native
   trait SpotFleetRequestArgs extends StObject {
     
     /**
@@ -187,20 +184,20 @@ object spotFleetRequestMod {
       * the Spot pools specified by the Spot fleet request. The default is
       * `lowestPrice`.
       */
-    val allocationStrategy: js.UndefOr[Input[String]] = js.native
+    val allocationStrategy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether running Spot
       * instances should be terminated if the target capacity of the Spot fleet
       * request is decreased below the current size of the Spot fleet.
       */
-    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.native
+    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of fleet request. Indicates whether the Spot Fleet only requests the target
       * capacity or also attempts to maintain it. Default is `maintain`.
       */
-    val fleetType: js.UndefOr[Input[String]] = js.native
+    val fleetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Grants the Spot fleet permission to terminate
@@ -208,14 +205,14 @@ object spotFleetRequestMod {
       * CancelSpotFleetRequests or when the Spot fleet request expires, if you set
       * terminateInstancesWithExpiration.
       */
-    val iamFleetRole: Input[String] = js.native
+    val iamFleetRole: Input[String]
     
     /**
       * Indicates whether a Spot
       * instance stops or terminates when it is interrupted. Default is
       * `terminate`.
       */
-    val instanceInterruptionBehaviour: js.UndefOr[Input[String]] = js.native
+    val instanceInterruptionBehaviour: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of Spot pools across which to allocate your target Spot capacity.
@@ -223,7 +220,7 @@ object spotFleetRequestMod {
       * the cheapest Spot pools and evenly allocates your target Spot capacity across
       * the number of Spot pools that you specify.
       */
-    val instancePoolsToUseCount: js.UndefOr[Input[Double]] = js.native
+    val instancePoolsToUseCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Used to define the launch configuration of the
@@ -234,7 +231,7 @@ object spotFleetRequestMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.SpotFleetRequestLaunchSpecification]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Launch template configuration block. See Launch Template Configs below for more details. Conflicts with `launchSpecification`. At least one of `launchSpecification` or `launchTemplateConfig` is required.
@@ -243,62 +240,62 @@ object spotFleetRequestMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.SpotFleetRequestLaunchTemplateConfig]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A list of elastic load balancer names to add to the Spot fleet.
       */
-    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Indicates whether Spot fleet should replace unhealthy instances. Default `false`.
       */
-    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.native
+    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The maximum spot bid for this override request.
       */
-    val spotPrice: js.UndefOr[Input[String]] = js.native
+    val spotPrice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The number of units to request. You can choose to set the
       * target capacity in terms of instances or a performance characteristic that is
       * important to your application workload, such as vCPUs, memory, or I/O.
       */
-    val targetCapacity: Input[Double] = js.native
+    val targetCapacity: Input[Double]
     
     /**
       * A list of `aws.alb.TargetGroup` ARNs, for use with Application Load Balancing.
       */
-    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Indicates whether running Spot
       * instances should be terminated when the Spot fleet request expires.
       */
-    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.native
+    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The start date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8) format(for example, YYYY-MM-DDTHH:MM:SSZ). The default is to start fulfilling the request immediately.
       */
-    val validFrom: js.UndefOr[Input[String]] = js.native
+    val validFrom: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The end date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8) format(for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new Spot instance requests are placed or enabled to fulfill the request.
       */
-    val validUntil: js.UndefOr[Input[String]] = js.native
+    val validUntil: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If set, this provider will
       * wait for the Spot Request to be fulfilled, and will throw an error if the
       * timeout of 10m is reached.
       */
-    val waitForFulfillment: js.UndefOr[Input[Boolean]] = js.native
+    val waitForFulfillment: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object SpotFleetRequestArgs {
     
@@ -435,7 +432,6 @@ object spotFleetRequestMod {
     }
   }
   
-  @js.native
   trait SpotFleetRequestState extends StObject {
     
     /**
@@ -443,22 +439,22 @@ object spotFleetRequestMod {
       * the Spot pools specified by the Spot fleet request. The default is
       * `lowestPrice`.
       */
-    val allocationStrategy: js.UndefOr[Input[String]] = js.native
+    val allocationStrategy: js.UndefOr[Input[String]] = js.undefined
     
-    val clientToken: js.UndefOr[Input[String]] = js.native
+    val clientToken: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether running Spot
       * instances should be terminated if the target capacity of the Spot fleet
       * request is decreased below the current size of the Spot fleet.
       */
-    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.native
+    val excessCapacityTerminationPolicy: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The type of fleet request. Indicates whether the Spot Fleet only requests the target
       * capacity or also attempts to maintain it. Default is `maintain`.
       */
-    val fleetType: js.UndefOr[Input[String]] = js.native
+    val fleetType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Grants the Spot fleet permission to terminate
@@ -466,14 +462,14 @@ object spotFleetRequestMod {
       * CancelSpotFleetRequests or when the Spot fleet request expires, if you set
       * terminateInstancesWithExpiration.
       */
-    val iamFleetRole: js.UndefOr[Input[String]] = js.native
+    val iamFleetRole: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Indicates whether a Spot
       * instance stops or terminates when it is interrupted. Default is
       * `terminate`.
       */
-    val instanceInterruptionBehaviour: js.UndefOr[Input[String]] = js.native
+    val instanceInterruptionBehaviour: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of Spot pools across which to allocate your target Spot capacity.
@@ -481,7 +477,7 @@ object spotFleetRequestMod {
       * the cheapest Spot pools and evenly allocates your target Spot capacity across
       * the number of Spot pools that you specify.
       */
-    val instancePoolsToUseCount: js.UndefOr[Input[Double]] = js.native
+    val instancePoolsToUseCount: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * Used to define the launch configuration of the
@@ -492,7 +488,7 @@ object spotFleetRequestMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.SpotFleetRequestLaunchSpecification]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Launch template configuration block. See Launch Template Configs below for more details. Conflicts with `launchSpecification`. At least one of `launchSpecification` or `launchTemplateConfig` is required.
@@ -501,67 +497,67 @@ object spotFleetRequestMod {
         Input[
           js.Array[Input[typings.pulumiAws.inputMod.ec2.SpotFleetRequestLaunchTemplateConfig]]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A list of elastic load balancer names to add to the Spot fleet.
       */
-    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val loadBalancers: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Indicates whether Spot fleet should replace unhealthy instances. Default `false`.
       */
-    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.native
+    val replaceUnhealthyInstances: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The maximum spot bid for this override request.
       */
-    val spotPrice: js.UndefOr[Input[String]] = js.native
+    val spotPrice: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the Spot fleet request.
       */
-    val spotRequestState: js.UndefOr[Input[String]] = js.native
+    val spotRequestState: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The number of units to request. You can choose to set the
       * target capacity in terms of instances or a performance characteristic that is
       * important to your application workload, such as vCPUs, memory, or I/O.
       */
-    val targetCapacity: js.UndefOr[Input[Double]] = js.native
+    val targetCapacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A list of `aws.alb.TargetGroup` ARNs, for use with Application Load Balancing.
       */
-    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val targetGroupArns: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Indicates whether running Spot
       * instances should be terminated when the Spot fleet request expires.
       */
-    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.native
+    val terminateInstancesWithExpiration: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The start date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8) format(for example, YYYY-MM-DDTHH:MM:SSZ). The default is to start fulfilling the request immediately.
       */
-    val validFrom: js.UndefOr[Input[String]] = js.native
+    val validFrom: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The end date and time of the request, in UTC [RFC3339](https://tools.ietf.org/html/rfc3339#section-5.8) format(for example, YYYY-MM-DDTHH:MM:SSZ). At this point, no new Spot instance requests are placed or enabled to fulfill the request.
       */
-    val validUntil: js.UndefOr[Input[String]] = js.native
+    val validUntil: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If set, this provider will
       * wait for the Spot Request to be fulfilled, and will throw an error if the
       * timeout of 10m is reached.
       */
-    val waitForFulfillment: js.UndefOr[Input[Boolean]] = js.native
+    val waitForFulfillment: js.UndefOr[Input[Boolean]] = js.undefined
   }
   object SpotFleetRequestState {
     

@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,23 +16,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param y - The y coordinate of the touch that triggered the event.
   * @param touch - The touch object that triggered the event.
   */
-@js.native
-trait ElementTouchEvent extends ElementInputEvent {
+trait ElementTouchEvent
+  extends StObject
+     with ElementInputEvent {
   
   /**
     * The Touch objects representing individual points of contact whose states changed between the previous touch event and this one.
     */
-  var changedTouches: js.Array[Touch] = js.native
+  var changedTouches: js.Array[Touch]
   
   /**
     * The touch object that triggered the event.
     */
-  var touch: Touch = js.native
+  var touch: Touch
   
   /**
     * The Touch objects representing all current points of contact with the surface, regardless of target or changed status.
     */
-  var touches: js.Array[Touch] = js.native
+  var touches: js.Array[Touch]
 }
 object ElementTouchEvent {
   

@@ -3,7 +3,6 @@ package typings.firebase.mod.default.firestore
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("firebase", "default.firestore.Blob")
@@ -37,6 +36,10 @@ class Blob protected () extends StObject {
 /* static members */
 object Blob {
   
+  @JSImport("firebase", "default.firestore.Blob")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Blob from the given Base64 string, converting it to
     * bytes.
@@ -44,9 +47,8 @@ object Blob {
     * @param base64
     *   The Base64 string used to create the Blob object.
     */
-  @JSImport("firebase", "default.firestore.Blob.fromBase64String")
-  @js.native
-  def fromBase64String(base64: String): typings.firebase.mod.firebase.firestore.Blob = js.native
+  @scala.inline
+  def fromBase64String(base64: String): typings.firebase.mod.firebase.firestore.Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBase64String")(base64.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Blob]
   
   /**
     * Creates a new Blob from the given Uint8Array.
@@ -54,7 +56,6 @@ object Blob {
     * @param array
     *   The Uint8Array used to create the Blob object.
     */
-  @JSImport("firebase", "default.firestore.Blob.fromUint8Array")
-  @js.native
-  def fromUint8Array(array: Uint8Array): typings.firebase.mod.firebase.firestore.Blob = js.native
+  @scala.inline
+  def fromUint8Array(array: Uint8Array): typings.firebase.mod.firebase.firestore.Blob = ^.asInstanceOf[js.Dynamic].applyDynamic("fromUint8Array")(array.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Blob]
 }

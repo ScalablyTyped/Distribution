@@ -2,19 +2,17 @@ package typings.slackMock.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlashCommands[T] extends StObject {
   
-  def addResponse(opts: SlashCommandOptions[T]): Unit = js.native
+  def addResponse(opts: SlashCommandOptions[T]): Unit
   
-  var calls: js.Array[SlashCommandCall[T]] = js.native
+  var calls: js.Array[SlashCommandCall[T]]
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def send(targetUrl: SlashCommandUrl, body: T): js.Promise[Unit] = js.native
+  def send(targetUrl: SlashCommandUrl, body: T): js.Promise[Unit]
 }
 object SlashCommands {
   
@@ -30,7 +28,7 @@ object SlashCommands {
   }
   
   @scala.inline
-  implicit class SlashCommandsMutableBuilder[Self <: SlashCommands[_], T] (val x: Self with SlashCommands[T]) extends AnyVal {
+  implicit class SlashCommandsMutableBuilder[Self <: SlashCommands[?], T] (val x: Self & SlashCommands[T]) extends AnyVal {
     
     @scala.inline
     def setAddResponse(value: SlashCommandOptions[T] => Unit): Self = StObject.set(x, "addResponse", js.Any.fromFunction1(value))

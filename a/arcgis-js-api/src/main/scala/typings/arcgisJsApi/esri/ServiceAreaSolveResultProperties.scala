@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceAreaSolveResultProperties extends StObject {
   
   /**
@@ -13,49 +11,49 @@ trait ServiceAreaSolveResultProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#facilities)
     */
-  var facilities: js.UndefOr[js.Array[PointProperties]] = js.native
+  var facilities: js.UndefOr[js.Array[PointProperties]] = js.undefined
   
   /**
     * Message received when solve is completed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#messages)
     */
-  var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.native
+  var messages: js.UndefOr[js.Array[NAMessageProperties]] = js.undefined
   
   /**
     * The point barriers are returned only if `ServiceAreaParameters.returnPointBarriers = true` (which is not the default).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#pointBarriers)
     */
-  var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.native
+  var pointBarriers: js.UndefOr[js.Array[PointProperties]] = js.undefined
   
   /**
     * The polygon barriers are returned only if `ServiceAreaParameters.returnPolygonBarriers = true` (which is not the default).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polygonBarriers)
     */
-  var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.native
+  var polygonBarriers: js.UndefOr[js.Array[PolygonProperties]] = js.undefined
   
   /**
     * The polyline barriers are returned only if `ServiceAreaParameters.returnPolylineBarriers = true` (which is not the default).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#polylineBarriers)
     */
-  var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.native
+  var polylineBarriers: js.UndefOr[js.Array[PolylineProperties]] = js.undefined
   
   /**
     * An array of service area polygon graphics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#serviceAreaPolygons)
     */
-  var serviceAreaPolygons: js.UndefOr[js.Array[GraphicProperties]] = js.native
+  var serviceAreaPolygons: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
   
   /**
     * An array of service area polyline graphics.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-ServiceAreaSolveResult.html#serviceAreaPolylines)
     */
-  var serviceAreaPolylines: js.UndefOr[js.Array[GraphicProperties]] = js.native
+  var serviceAreaPolylines: js.UndefOr[js.Array[GraphicProperties]] = js.undefined
 }
 object ServiceAreaSolveResultProperties {
   

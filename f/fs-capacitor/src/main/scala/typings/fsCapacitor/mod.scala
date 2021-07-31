@@ -4,14 +4,22 @@ import typings.node.streamMod.ReadableOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("fs-capacitor", "ReadAfterDestroyedError")
   @js.native
-  class ReadAfterDestroyedError () extends Error
+  class ReadAfterDestroyedError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("fs-capacitor", "ReadStream")
   @js.native

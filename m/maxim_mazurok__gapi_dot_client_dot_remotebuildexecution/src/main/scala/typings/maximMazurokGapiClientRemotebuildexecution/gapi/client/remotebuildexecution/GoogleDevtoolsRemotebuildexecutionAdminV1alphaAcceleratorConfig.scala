@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientRemotebuildexecution.gapi.client.remotebui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig extends StObject {
   
   /** The number of guest accelerator cards exposed to each VM. */
-  var acceleratorCount: js.UndefOr[String] = js.native
+  var acceleratorCount: js.UndefOr[String] = js.undefined
   
   /** The type of accelerator to attach to each VM, e.g. "nvidia-tesla-k80" for nVidia Tesla K80. */
-  var acceleratorType: js.UndefOr[String] = js.native
+  var acceleratorType: js.UndefOr[String] = js.undefined
 }
 object GoogleDevtoolsRemotebuildexecutionAdminV1alphaAcceleratorConfig {
   

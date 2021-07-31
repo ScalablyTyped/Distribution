@@ -10,7 +10,6 @@ import typings.ol.tileStateMod.TileState
 import typings.ol.tilecoordMod.TileCoord
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zoomifyMod {
@@ -44,36 +43,35 @@ object zoomifyMod {
     ) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
-    var cacheSize: js.UndefOr[Double] = js.native
+    var cacheSize: js.UndefOr[Double] = js.undefined
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var extent: js.UndefOr[Extent] = js.native
+    var extent: js.UndefOr[Extent] = js.undefined
     
-    var imageSmoothing: js.UndefOr[Boolean] = js.native
+    var imageSmoothing: js.UndefOr[Boolean] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var reprojectionErrorThreshold: js.UndefOr[Double] = js.native
+    var reprojectionErrorThreshold: js.UndefOr[Double] = js.undefined
     
-    var size: Size = js.native
+    var size: Size
     
-    var tierSizeCalculation: js.UndefOr[String] = js.native
+    var tierSizeCalculation: js.UndefOr[String] = js.undefined
     
-    var tilePixelRatio: js.UndefOr[Double] = js.native
+    var tilePixelRatio: js.UndefOr[Double] = js.undefined
     
-    var tileSize: js.UndefOr[Double] = js.native
+    var tileSize: js.UndefOr[Double] = js.undefined
     
-    var transition: js.UndefOr[Double] = js.native
+    var transition: js.UndefOr[Double] = js.undefined
     
-    var url: String = js.native
+    var url: String
     
-    var zDirection: js.UndefOr[Double] = js.native
+    var zDirection: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

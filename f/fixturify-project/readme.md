@@ -10,9 +10,9 @@ Typings are for version 1.10.0
 | ------------------ | :-------------: |
 | Full name          | fixturify-project |
 | Keywords           | - |
-| # releases         | 11 |
+| # releases         | 10 |
 | # dependents       | 3 |
-| # downloads        | 4429721 |
+| # downloads        | 6873023 |
 | # stars            | 0 |
 
 ## Links

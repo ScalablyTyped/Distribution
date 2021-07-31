@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.awt.grid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see UnoControlGrid
   * @since OOo 3.3
   */
-@js.native
 trait XGridControl extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait XGridControl extends StObject {
     * If the grid control's does not contain any cells (which happens if the grid column model does not contain any columns, or if grid data model does not
     * contain any rows), then `-1` is returned.
     */
-  val CurrentColumn: Double = js.native
+  val CurrentColumn: Double
   
   /**
     * returns the row index of the currently active cell
@@ -27,7 +25,7 @@ trait XGridControl extends StObject {
     * If the grid control's does not contain any cells (which happens if the grid column model does not contain any columns, or if grid data model does not
     * contain any rows), then `-1` is returned.
     */
-  val CurrentRow: Double = js.native
+  val CurrentRow: Double
   
   /**
     * retrieves the column which a given point belongs to
@@ -35,7 +33,7 @@ trait XGridControl extends StObject {
     * @param Y the abscissa of the point, in pixel coordinates.
     * @returns the index of the column which the point lies in, or -1 if no column is under the given point.
     */
-  def getColumnAtPoint(X: Double, Y: Double): Double = js.native
+  def getColumnAtPoint(X: Double, Y: Double): Double
   
   /**
     * returns the column index of the currently active cell
@@ -43,7 +41,7 @@ trait XGridControl extends StObject {
     * If the grid control's does not contain any cells (which happens if the grid column model does not contain any columns, or if grid data model does not
     * contain any rows), then `-1` is returned.
     */
-  def getCurrentColumn(): Double = js.native
+  def getCurrentColumn(): Double
   
   /**
     * returns the row index of the currently active cell
@@ -51,7 +49,7 @@ trait XGridControl extends StObject {
     * If the grid control's does not contain any cells (which happens if the grid column model does not contain any columns, or if grid data model does not
     * contain any rows), then `-1` is returned.
     */
-  def getCurrentRow(): Double = js.native
+  def getCurrentRow(): Double
   
   /**
     * retrieves the row which a given point belongs to
@@ -59,7 +57,7 @@ trait XGridControl extends StObject {
     * @param Y the abscissa of the point, in pixel coordinates.
     * @returns the index of the row which the point lies in, or -1 if no row is under the given point.
     */
-  def getRowAtPoint(X: Double, Y: Double): Double = js.native
+  def getRowAtPoint(X: Double, Y: Double): Double
   
   /**
     * moves the cursor to the given cell
@@ -68,7 +66,7 @@ trait XGridControl extends StObject {
     * @throws com::sun::star::lang::IndexOutOfBoundsException if either `ColumnIndex` or `RowIndex` are out of range.
     * @throws com::sun::star::util::VetoException if moving the cursor to another cell is vetoed.
     */
-  def goToCell(ColumnIndex: Double, RowIndex: Double): Unit = js.native
+  def goToCell(ColumnIndex: Double, RowIndex: Double): Unit
 }
 object XGridControl {
   

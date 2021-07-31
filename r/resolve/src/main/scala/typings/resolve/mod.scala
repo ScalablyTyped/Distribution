@@ -6,7 +6,6 @@ import typings.node.BufferEncoding
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,9 +16,8 @@ object mod {
     * @param id Identifier to resolve
     * @param callback
     */
-  @JSImport("resolve", JSImport.Namespace)
-  @js.native
-  def apply(id: String, cb: resolveCallback): Unit = js.native
+  @scala.inline
+  def apply(id: String, cb: resolveCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Asynchronously resolve the module path string id into cb(err, res [, pkg]), where pkg (if defined) is the data from package.json
     *
@@ -27,9 +25,8 @@ object mod {
     * @param options Options to use for resolving, optional.
     * @param callback
     */
-  @JSImport("resolve", JSImport.Namespace)
-  @js.native
-  def apply(id: String, opts: AsyncOpts, cb: resolveCallback): Unit = js.native
+  @scala.inline
+  def apply(id: String, opts: AsyncOpts, cb: resolveCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("resolve", JSImport.Namespace)
   @js.native
@@ -47,20 +44,21 @@ object mod {
   @scala.inline
   def sync_=(x: js.Function2[/* id */ String, /* opts */ js.UndefOr[SyncOpts], String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("sync")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait AsyncOpts extends Opts {
+  trait AsyncOpts
+    extends StObject
+       with Opts {
     
     /** function to asynchronously test whether a directory exists */
-    var isDirectory: js.UndefOr[js.Function2[/* directory */ String, /* cb */ existsCallback, Unit]] = js.native
+    var isDirectory: js.UndefOr[js.Function2[/* directory */ String, /* cb */ existsCallback, Unit]] = js.undefined
     
     /** function to asynchronously test whether a file exists */
-    var isFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ existsCallback, Unit]] = js.native
+    var isFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ existsCallback, Unit]] = js.undefined
     
     /** how to read files asynchronously (defaults to fs.readFile) */
-    var readFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ readFileCallback, Unit]] = js.native
+    var readFile: js.UndefOr[js.Function2[/* file */ String, /* cb */ readFileCallback, Unit]] = js.undefined
     
     /** function to asynchronously resolve a potential symlink to its real path */
-    var realpath: js.UndefOr[js.Function2[/* file */ String, /* cb */ realpathCallback, Unit]] = js.native
+    var realpath: js.UndefOr[js.Function2[/* file */ String, /* cb */ realpathCallback, Unit]] = js.undefined
   }
   object AsyncOpts {
     
@@ -99,24 +97,23 @@ object mod {
     }
   }
   
-  @js.native
   trait Opts extends StObject {
     
     /** package.json data applicable to the module being loaded */
     @JSName("package")
-    var _package: js.UndefOr[js.Any] = js.native
+    var _package: js.UndefOr[js.Any] = js.undefined
     
     /** directory to begin resolving from (defaults to __dirname) */
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
     
     /** array of file extensions to search in order (defaults to ['.js']) */
-    var extensions: js.UndefOr[String | js.Array[String]] = js.native
+    var extensions: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** directory (or directories) in which to recursively look for modules. (default to 'node_modules') */
-    var moduleDirectory: js.UndefOr[String | js.Array[String]] = js.native
+    var moduleDirectory: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** transform the parsed package.json contents before looking at the "main" field */
-    var packageFilter: js.UndefOr[js.Function2[/* pkg */ js.Any, /* pkgfile */ String, _]] = js.native
+    var packageFilter: js.UndefOr[js.Function2[/* pkg */ js.Any, /* pkgfile */ String, js.Any]] = js.undefined
     
     /** return the list of candidate paths where the packages sources may be found (probably don't use this) */
     var packageIterator: js.UndefOr[
@@ -127,15 +124,15 @@ object mod {
           /* opts */ this.type, 
           js.Array[String]
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** transform a path within a package */
     var pathFilter: js.UndefOr[
         js.Function3[/* pkg */ js.Any, /* path */ String, /* relativePath */ String, String]
-      ] = js.native
+      ] = js.undefined
     
     /** require.paths array to use if nothing is found on the normal node_modules recursive walk (probably don't use this) */
-    var paths: js.UndefOr[String | js.Array[String]] = js.native
+    var paths: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * if true, doesn't resolve `basedir` to real path before resolving.
@@ -144,7 +141,7 @@ object mod {
       * Note: this property is currently true by default but it will be changed to false in the next major version because Node's resolution
       * algorithm does not preserve symlinks by default.
       */
-    var preserveSymlinks: js.UndefOr[Boolean] = js.native
+    var preserveSymlinks: js.UndefOr[Boolean] = js.undefined
   }
   object Opts {
     
@@ -182,7 +179,7 @@ object mod {
       def setModuleDirectoryVarargs(value: String*): Self = StObject.set(x, "moduleDirectory", js.Array(value :_*))
       
       @scala.inline
-      def setPackageFilter(value: (/* pkg */ js.Any, /* pkgfile */ String) => _): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
+      def setPackageFilter(value: (/* pkg */ js.Any, /* pkgfile */ String) => js.Any): Self = StObject.set(x, "packageFilter", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPackageFilterUndefined: Self = StObject.set(x, "packageFilter", js.undefined)
@@ -224,13 +221,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PackageMeta
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var name: String = js.native
+    var name: String
     
-    var version: String = js.native
+    var version: String
   }
   object PackageMeta {
     
@@ -251,20 +248,21 @@ object mod {
     }
   }
   
-  @js.native
-  trait SyncOpts extends Opts {
+  trait SyncOpts
+    extends StObject
+       with Opts {
     
     /** function to synchronously test whether a directory exists */
-    var isDirectory: js.UndefOr[js.Function1[/* directory */ String, Boolean]] = js.native
+    var isDirectory: js.UndefOr[js.Function1[/* directory */ String, Boolean]] = js.undefined
     
     /** function to synchronously test whether a file exists */
-    var isFile: js.UndefOr[js.Function1[/* file */ String, Boolean]] = js.native
+    var isFile: js.UndefOr[js.Function1[/* file */ String, Boolean]] = js.undefined
     
     /** how to read files synchronously (defaults to fs.readFileSync) */
-    var readFileSync: js.UndefOr[js.Function2[/* file */ String, /* encoding */ BufferEncoding, String | Buffer]] = js.native
+    var readFileSync: js.UndefOr[js.Function2[/* file */ String, /* encoding */ BufferEncoding, String | Buffer]] = js.undefined
     
     /** function to synchronously resolve a potential symlink to its real path */
-    var realpathSync: js.UndefOr[js.Function1[/* file */ String, String]] = js.native
+    var realpathSync: js.UndefOr[js.Function1[/* file */ String, String]] = js.undefined
   }
   object SyncOpts {
     

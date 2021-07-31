@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProductionVariant extends StObject {
   
   /**
     * The size of the Elastic Inference (EI) instance to use for the production variant. EI instances provide on-demand GPU computing for inference. For more information, see Using Elastic Inference in Amazon SageMaker.
     */
-  var AcceleratorType: js.UndefOr[ProductionVariantAcceleratorType] = js.native
+  var AcceleratorType: js.UndefOr[ProductionVariantAcceleratorType] = js.undefined
   
   /**
     * Number of instances to launch initially.
     */
-  var InitialInstanceCount: TaskCount = js.native
+  var InitialInstanceCount: TaskCount
   
   /**
     * Determines initial traffic distribution among all of the models that you specify in the endpoint configuration. The traffic to a production variant is determined by the ratio of the VariantWeight to the sum of all VariantWeight values across all ProductionVariants. If unspecified, it defaults to 1.0. 
     */
-  var InitialVariantWeight: js.UndefOr[VariantWeight] = js.native
+  var InitialVariantWeight: js.UndefOr[VariantWeight] = js.undefined
   
   /**
     * The ML compute instance type.
     */
-  var InstanceType: ProductionVariantInstanceType = js.native
+  var InstanceType: ProductionVariantInstanceType
   
   /**
     * The name of the model that you want to host. This is the name that you specified when creating the model.
     */
-  var ModelName: typings.awsSdk.sagemakerMod.ModelName = js.native
+  var ModelName: typings.awsSdk.sagemakerMod.ModelName
   
   /**
     * The name of the production variant.
     */
-  var VariantName: typings.awsSdk.sagemakerMod.VariantName = js.native
+  var VariantName: typings.awsSdk.sagemakerMod.VariantName
 }
 object ProductionVariant {
   

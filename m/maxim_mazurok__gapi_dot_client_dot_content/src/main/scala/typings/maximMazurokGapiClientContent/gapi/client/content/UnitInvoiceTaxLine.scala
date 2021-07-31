@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnitInvoiceTaxLine extends StObject {
   
   /** [required] Tax amount for the tax type. */
-  var taxAmount: js.UndefOr[Price] = js.native
+  var taxAmount: js.UndefOr[Price] = js.undefined
   
   /** Optional name of the tax type. This should only be provided if `taxType` is `otherFeeTax`. */
-  var taxName: js.UndefOr[String] = js.native
+  var taxName: js.UndefOr[String] = js.undefined
   
   /** [required] Type of the tax. Acceptable values are: - "`otherFee`" - "`otherFeeTax`" - "`sales`" */
-  var taxType: js.UndefOr[String] = js.native
+  var taxType: js.UndefOr[String] = js.undefined
 }
 object UnitInvoiceTaxLine {
   

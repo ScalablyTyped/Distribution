@@ -2,23 +2,21 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MovingComponent extends StObject {
   
   // 是否是新拖拽的
-  var isNew: Boolean = js.native
+  var isNew: Boolean
   
   // 在编辑区域的组件信息
-  var mapUniqueKey: String = js.native
+  var mapUniqueKey: String
   
   // 直接给 source 就直接用
-  var source: String = js.native
+  var source: String
   
   // 组件的唯一标识, 新建的时候采用
-  var uniqueKey: String = js.native
+  var uniqueKey: String
 }
 object MovingComponent {
   

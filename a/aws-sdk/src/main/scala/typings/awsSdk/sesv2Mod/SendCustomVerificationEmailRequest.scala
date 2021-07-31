@@ -2,26 +2,24 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendCustomVerificationEmailRequest extends StObject {
   
   /**
     * Name of a configuration set to use when sending the verification email.
     */
-  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.native
+  var ConfigurationSetName: js.UndefOr[typings.awsSdk.sesv2Mod.ConfigurationSetName] = js.undefined
   
   /**
     * The email address to verify.
     */
-  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress = js.native
+  var EmailAddress: typings.awsSdk.sesv2Mod.EmailAddress
   
   /**
     * The name of the custom verification email template to use when sending the verification email.
     */
-  var TemplateName: EmailTemplateName = js.native
+  var TemplateName: EmailTemplateName
 }
 object SendCustomVerificationEmailRequest {
   

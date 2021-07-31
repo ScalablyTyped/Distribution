@@ -9,24 +9,22 @@ import typings.plotlyJs.plotlyJsStrings.vh
 import typings.plotlyJs.plotlyJsStrings.vhv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.ScatterLine> */
-@js.native
 trait PartialScatterLine extends StObject {
   
-  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.native
+  var color: js.UndefOr[typings.plotlyJs.mod.Color] = js.undefined
   
-  var dash: js.UndefOr[Dash] = js.native
+  var dash: js.UndefOr[Dash] = js.undefined
   
-  var shape: js.UndefOr[linear | spline | hv | vh | hvh | vhv] = js.native
+  var shape: js.UndefOr[linear | spline | hv | vh | hvh | vhv] = js.undefined
   
-  var simplify: js.UndefOr[Boolean] = js.native
+  var simplify: js.UndefOr[Boolean] = js.undefined
   
-  var smoothing: js.UndefOr[Double] = js.native
+  var smoothing: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object PartialScatterLine {
   

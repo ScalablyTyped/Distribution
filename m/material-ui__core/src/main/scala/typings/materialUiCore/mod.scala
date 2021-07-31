@@ -120,10 +120,13 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@material-ui/core", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@material-ui/core", "AppBar")
   @js.native
@@ -625,56 +628,57 @@ object mod {
     val yellow: Color = js.native
   }
   
-  @JSImport("@material-ui/core", "withMobileDialog")
-  @js.native
+  @scala.inline
   def withMobileDialog[P](): js.Function1[
-    /* component */ ComponentType[P with InjectedProps with PartialWithWidth], 
-    ComponentType[P with PartialWithWidth]
-  ] = js.native
-  @JSImport("@material-ui/core", "withMobileDialog")
-  @js.native
+    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
+    ComponentType[P & PartialWithWidth]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMobileDialog")().asInstanceOf[js.Function1[
+    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
+    ComponentType[P & PartialWithWidth]
+  ]]
+  @scala.inline
   def withMobileDialog[P](options: WithMobileDialogOptions): js.Function1[
-    /* component */ ComponentType[P with InjectedProps with PartialWithWidth], 
-    ComponentType[P with PartialWithWidth]
-  ] = js.native
+    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
+    ComponentType[P & PartialWithWidth]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("withMobileDialog")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* component */ ComponentType[P & InjectedProps & PartialWithWidth], 
+    ComponentType[P & PartialWithWidth]
+  ]]
   
-  @JSImport("@material-ui/core", "withWidth")
-  @js.native
-  def withWidth(): PropInjector[WithWidth, WithWidthProps] = js.native
-  @JSImport("@material-ui/core", "withWidth")
-  @js.native
-  def withWidth(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = js.native
+  @scala.inline
+  def withWidth(): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWidth")().asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
+  @scala.inline
+  def withWidth(options: WithWidthOptions): PropInjector[WithWidth, WithWidthProps] = ^.asInstanceOf[js.Dynamic].applyDynamic("withWidth")(options.asInstanceOf[js.Any]).asInstanceOf[PropInjector[WithWidth, WithWidthProps]]
   
-  @js.native
   trait Color extends StObject {
     
-    var `100`: String = js.native
+    var `100`: String
     
-    var `200`: String = js.native
+    var `200`: String
     
-    var `300`: String = js.native
+    var `300`: String
     
-    var `400`: String = js.native
+    var `400`: String
     
-    var `50`: String = js.native
+    var `50`: String
     
-    var `500`: String = js.native
+    var `500`: String
     
-    var `600`: String = js.native
+    var `600`: String
     
-    var `700`: String = js.native
+    var `700`: String
     
-    var `800`: String = js.native
+    var `800`: String
     
-    var `900`: String = js.native
+    var `900`: String
     
-    var A100: String = js.native
+    var A100: String
     
-    var A200: String = js.native
+    var A200: String
     
-    var A400: String = js.native
+    var A400: String
     
-    var A700: String = js.native
+    var A700: String
   }
   object Color {
     
@@ -758,11 +762,11 @@ object mod {
   
   type ConsistentWith[DecorationTargetProps, InjectedProps] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof DecorationTargetProps ]: P extends keyof InjectedProps? InjectedProps[P] extends DecorationTargetProps[P]? DecorationTargetProps[P] : InjectedProps[P] : DecorationTargetProps[P]}
-    */ typings.materialUiCore.materialUiCoreStrings.ConsistentWith with TopLevel[js.Any]
+    */ typings.materialUiCore.materialUiCoreStrings.ConsistentWith & TopLevel[js.Any]
   
   type Omit[T, K /* <: /* keyof any */ String */] = Pick[T, Exclude[/* keyof T */ String, K]]
   
-  type Overwrite[T, U] = (Omit[T, /* keyof U */ String]) with U
+  type Overwrite[T, U] = (Omit[T, /* keyof U */ String]) & U
   
   /* Rewritten from type alias, can be one of: 
     - typings.materialUiCore.materialUiCoreStrings.light
@@ -781,7 +785,10 @@ object mod {
   type PropInjector[InjectedProps, AdditionalProps] = js.Function1[
     /* component */ js.Any, 
     ComponentType[
-      (Omit[LibraryManagedAttributes[_, PropsOf[_]], /* keyof InjectedProps */ String]) with AdditionalProps
+      (Omit[
+        LibraryManagedAttributes[js.Any, PropsOf[js.Any]], 
+        /* keyof InjectedProps */ String
+      ]) & AdditionalProps
     ]
   ]
   
@@ -856,5 +863,5 @@ object mod {
   
   type PropsOf[C] = /* import warning: importer.ImportType#apply Failed type conversion: react.react.<global>.JSX.IntrinsicElements[C] */ js.Any
   
-  type StandardProps[C, ClassKey /* <: String */, Removals /* <: /* keyof C */ String */] = (Omit[C, classes | Removals]) with StyledComponentProps[ClassKey] with ClassName
+  type StandardProps[C, ClassKey /* <: String */, Removals /* <: /* keyof C */ String */] = (Omit[C, classes | Removals]) & StyledComponentProps[ClassKey] & ClassName
 }

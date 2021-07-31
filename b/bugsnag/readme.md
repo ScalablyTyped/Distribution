@@ -10,9 +10,9 @@ Bugsnag notifier for node.js scripts
 | ------------------ | :-------------: |
 | Full name          | bugsnag |
 | Keywords           | error, bugsnag, exception |
-| # releases         | 1 |
+| # releases         | 0 |
 | # dependents       | 54 |
-| # downloads        | 1679545 |
+| # downloads        | 1645655 |
 | # stars            | 3 |
 
 ## Links

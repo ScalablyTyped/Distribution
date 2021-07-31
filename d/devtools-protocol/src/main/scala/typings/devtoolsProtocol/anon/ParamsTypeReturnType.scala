@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.EnableRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.EnableResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParamsTypeReturnType extends StObject {
   
-  var paramsType: js.Array[js.UndefOr[EnableRequest]] = js.native
+  var paramsType: js.Array[js.UndefOr[EnableRequest]]
   
-  var returnType: EnableResponse = js.native
+  var returnType: EnableResponse
 }
 object ParamsTypeReturnType {
   

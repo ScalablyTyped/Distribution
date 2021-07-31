@@ -11,48 +11,41 @@ import typings.storybookApi.storybookApiStrings.ctrl
 import typings.storybookApi.storybookApiStrings.meta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object shortcutMod {
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "controlOrMetaKey")
+  @JSImport("@storybook/api/dist/lib/shortcut", JSImport.Namespace)
   @js.native
-  def controlOrMetaKey(): meta | control = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "controlOrMetaSymbol")
-  @js.native
-  def controlOrMetaSymbol(): Placeofinterestsign | ctrl = js.native
+  @scala.inline
+  def controlOrMetaKey(): meta | control = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaKey")().asInstanceOf[meta | control]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "eventMatchesShortcut")
-  @js.native
-  def eventMatchesShortcut(e: Event, shortcut: KeyCollection): Boolean = js.native
+  @scala.inline
+  def controlOrMetaSymbol(): Placeofinterestsign | ctrl = ^.asInstanceOf[js.Dynamic].applyDynamic("controlOrMetaSymbol")().asInstanceOf[Placeofinterestsign | ctrl]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "eventToShortcut")
-  @js.native
-  def eventToShortcut(e: KeyboardEvent): KeyCollection | Null = js.native
+  @scala.inline
+  def eventMatchesShortcut(e: Event, shortcut: KeyCollection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("eventMatchesShortcut")(e.asInstanceOf[js.Any], shortcut.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "isMacLike")
-  @js.native
-  def isMacLike(): Boolean = js.native
+  @scala.inline
+  def eventToShortcut(e: KeyboardEvent): KeyCollection | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("eventToShortcut")(e.asInstanceOf[js.Any]).asInstanceOf[KeyCollection | Null]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "isShortcutTaken")
-  @js.native
-  def isShortcutTaken(arr1: js.Array[String], arr2: js.Array[String]): Boolean = js.native
+  @scala.inline
+  def isMacLike(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isMacLike")().asInstanceOf[Boolean]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "keyToSymbol")
-  @js.native
-  def keyToSymbol(key: String): String = js.native
+  @scala.inline
+  def isShortcutTaken(arr1: js.Array[String], arr2: js.Array[String]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isShortcutTaken")(arr1.asInstanceOf[js.Any], arr2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "optionOrAltSymbol")
-  @js.native
-  def optionOrAltSymbol(): Optionkey | alt = js.native
+  @scala.inline
+  def keyToSymbol(key: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("keyToSymbol")(key.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "shortcutMatchesShortcut")
-  @js.native
-  def shortcutMatchesShortcut(inputShortcut: KeyCollection, shortcut: KeyCollection): Boolean = js.native
+  @scala.inline
+  def optionOrAltSymbol(): Optionkey | alt = ^.asInstanceOf[js.Dynamic].applyDynamic("optionOrAltSymbol")().asInstanceOf[Optionkey | alt]
   
-  @JSImport("@storybook/api/dist/lib/shortcut", "shortcutToHumanString")
-  @js.native
-  def shortcutToHumanString(shortcut: KeyCollection): String = js.native
+  @scala.inline
+  def shortcutMatchesShortcut(inputShortcut: KeyCollection, shortcut: KeyCollection): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shortcutMatchesShortcut")(inputShortcut.asInstanceOf[js.Any], shortcut.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def shortcutToHumanString(shortcut: KeyCollection): String = ^.asInstanceOf[js.Dynamic].applyDynamic("shortcutToHumanString")(shortcut.asInstanceOf[js.Any]).asInstanceOf[String]
 }

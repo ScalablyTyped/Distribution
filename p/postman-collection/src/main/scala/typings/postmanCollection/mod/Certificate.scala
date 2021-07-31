@@ -3,7 +3,6 @@ package typings.postmanCollection.mod
 import typings.postmanCollection.anon.Src
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -30,7 +29,10 @@ class Certificate protected () extends Property[CertificateDefinition] {
 /* static members */
 object Certificate {
   
-  @JSImport("postman-collection", "Certificate.isCertificate")
+  @JSImport("postman-collection", "Certificate")
   @js.native
-  def isCertificate(obj: js.Any): Boolean = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def isCertificate(obj: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCertificate")(obj.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

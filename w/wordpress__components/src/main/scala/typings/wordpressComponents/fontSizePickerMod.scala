@@ -5,7 +5,6 @@ import typings.react.mod.ComponentType
 import typings.wordpressComponents.fontSizePickerMod.FontSizePicker.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fontSizePickerMod {
@@ -24,24 +23,23 @@ object fontSizePickerMod {
   
   object FontSizePicker {
     
-    @js.native
     trait FontSize extends StObject {
       
       /**
         * Label for the font size (e.g. "Small")
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * Font size in px.
         */
-      var size: Double = js.native
+      var size: Double
       
       /**
         * A unique identifier for the font size. Used for the class generation
         * process.
         */
-      var slug: String = js.native
+      var slug: String
     }
     object FontSize {
       

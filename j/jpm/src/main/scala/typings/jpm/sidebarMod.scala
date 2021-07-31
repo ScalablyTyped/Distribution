@@ -10,7 +10,6 @@ import typings.jpm.jpmStrings.ready
 import typings.jpm.jpmStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,26 +30,26 @@ object sidebarMod {
     var id: String = js.native
     
     @JSName("on")
-    def on_attach(event: attach, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def on_attach(event: attach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("on")
-    def on_detach(event: detach, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def on_detach(event: detach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("on")
-    def on_hide(event: hide, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def on_hide(event: hide, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("on")
-    def on_ready(event: ready, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def on_ready(event: ready, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("on")
-    def on_show(event: show, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def on_show(event: show, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     
     @JSName("once")
-    def once_attach(event: attach, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def once_attach(event: attach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("once")
-    def once_detach(event: detach, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def once_detach(event: detach, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("once")
-    def once_hide(event: hide, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def once_hide(event: hide, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("once")
-    def once_ready(event: ready, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def once_ready(event: ready, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     @JSName("once")
-    def once_show(event: show, handler: js.Function1[/* worker */ SidebarWorker, _]): Unit = js.native
+    def once_show(event: show, handler: js.Function1[/* worker */ SidebarWorker, js.Any]): Unit = js.native
     
     @JSName("removeListener")
     def removeListener_attach(event: attach, handler: js.Function): Unit = js.native
@@ -70,14 +69,16 @@ object sidebarMod {
     
     var url: String = js.native
   }
-  @JSImport("sdk/ui/sidebar", "Sidebar")
-  @js.native
-  def Sidebar(options: Id): Sidebar = js.native
+  object Sidebar {
+    
+    @JSImport("sdk/ui/sidebar", "Sidebar")
+    @js.native
+    def apply(options: Id): Sidebar = js.native
+  }
   
-  @js.native
   trait SidebarWorker extends StObject {
     
-    var port: Port = js.native
+    var port: Port
   }
   object SidebarWorker {
     

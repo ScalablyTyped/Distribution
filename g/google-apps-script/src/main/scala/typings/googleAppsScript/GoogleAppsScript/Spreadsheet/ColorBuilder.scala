@@ -4,26 +4,24 @@ import typings.googleAppsScript.GoogleAppsScript.Base.ColorType
 import typings.googleAppsScript.GoogleAppsScript.Base.RgbColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The builder for ColorBuilder. To create a new builder, use SpreadsheetApp.newColor().
   */
-@js.native
 trait ColorBuilder extends StObject {
   
-  def asRgbColor(): RgbColor = js.native
+  def asRgbColor(): RgbColor
   
-  def asThemeColor(): ThemeColor = js.native
+  def asThemeColor(): ThemeColor
   
-  def build(): Color = js.native
+  def build(): Color
   
-  def getColorType(): ColorType = js.native
+  def getColorType(): ColorType
   
-  def setRgbColor(cssString: String): ColorBuilder = js.native
+  def setRgbColor(cssString: String): ColorBuilder
   
-  def setThemeColor(themeColorType: ThemeColorType): ColorBuilder = js.native
+  def setThemeColor(themeColorType: ThemeColorType): ColorBuilder
 }
 object ColorBuilder {
   

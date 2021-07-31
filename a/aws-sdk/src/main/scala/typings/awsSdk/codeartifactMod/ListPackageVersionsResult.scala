@@ -2,42 +2,40 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPackageVersionsResult extends StObject {
   
   /**
     *  The name of the package. 
     */
   @JSName("package")
-  var _package: js.UndefOr[PackageName] = js.native
+  var _package: js.UndefOr[PackageName] = js.undefined
   
   /**
     *  The default package version to display. This depends on the package format:     For Maven and PyPI packages, it's the most recently published package version.     For npm packages, it's the version referenced by the latest tag. If the latest tag is not set, it's the most recently published package version.   
     */
-  var defaultDisplayVersion: js.UndefOr[PackageVersion] = js.native
+  var defaultDisplayVersion: js.UndefOr[PackageVersion] = js.undefined
   
   /**
     *  A format of the package. Valid package format values are:     npm     pypi     maven   
     */
-  var format: js.UndefOr[PackageFormat] = js.native
+  var format: js.UndefOr[PackageFormat] = js.undefined
   
   /**
     *  The namespace of the package. The package component that specifies its namespace depends on its type. For example:     The namespace of a Maven package is its groupId.     The namespace of an npm package is its scope.     A Python package does not contain a corresponding component, so Python packages do not have a namespace.   
     */
-  var namespace: js.UndefOr[PackageNamespace] = js.native
+  var namespace: js.UndefOr[PackageNamespace] = js.undefined
   
   /**
     *  If there are additional results, this is the token for the next set of results. 
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     *  The returned list of  PackageVersionSummary  objects. 
     */
-  var versions: js.UndefOr[PackageVersionSummaryList] = js.native
+  var versions: js.UndefOr[PackageVersionSummaryList] = js.undefined
 }
 object ListPackageVersionsResult {
   

@@ -15,7 +15,6 @@ import typings.std.Error
 import typings.std.URL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,13 +48,13 @@ object panelMod {
     var isShowing: Boolean = js.native
     
     @JSName("on")
-    def on_error(event: error, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], _]): Unit = js.native
+    def on_error(event: error, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
     @JSName("on")
-    def on_hide(event: hide, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], _]): Unit = js.native
+    def on_hide(event: hide, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
     @JSName("on")
-    def on_message(event: message, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], _]): Unit = js.native
+    def on_message(event: message, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
     @JSName("on")
-    def on_show(event: show, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], _]): Unit = js.native
+    def on_show(event: show, handler: js.Function1[/* arg */ js.UndefOr[Error | js.Any], js.Any]): Unit = js.native
     
     var port: Port = js.native
     
@@ -70,9 +69,12 @@ object panelMod {
     
     var width: Double = js.native
   }
-  @JSImport("sdk/panel", "Panel")
-  @js.native
-  def Panel(options: ContentScriptFile): Panel = js.native
+  object Panel {
+    
+    @JSImport("sdk/panel", "Panel")
+    @js.native
+    def apply(options: ContentScriptFile): Panel = js.native
+  }
   
   /* Rewritten from type alias, can be one of: 
     - typings.jpm.FFAddonSDK.ToggleButton

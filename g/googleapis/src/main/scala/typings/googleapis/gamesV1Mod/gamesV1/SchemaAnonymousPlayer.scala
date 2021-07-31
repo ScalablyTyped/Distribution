@@ -2,30 +2,28 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an anonymous player
   */
-@js.native
 trait SchemaAnonymousPlayer extends StObject {
   
   /**
     * The base URL for the image to display for the anonymous player.
     */
-  var avatarImageUrl: js.UndefOr[String] = js.native
+  var avatarImageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The name to display for the anonymous player.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#anonymousPlayer.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaAnonymousPlayer {
   

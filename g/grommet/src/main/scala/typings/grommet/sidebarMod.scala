@@ -8,7 +8,6 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sidebarMod {
@@ -16,15 +15,14 @@ object sidebarMod {
   @JSImport("grommet/components/Sidebar", "Sidebar")
   @js.native
   val Sidebar: FC[
-    BoxProps with SidebarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
+    BoxProps & SidebarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
   ] = js.native
   
-  @js.native
   trait SidebarProps extends StObject {
     
-    var footer: js.UndefOr[ReactNode] = js.native
+    var footer: js.UndefOr[ReactNode] = js.undefined
     
-    var header: js.UndefOr[ReactNode] = js.native
+    var header: js.UndefOr[ReactNode] = js.undefined
   }
   object SidebarProps {
     

@@ -2,10 +2,13 @@ package typings.bitcoinjsLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
+  
+  @JSImport("bitcoinjs-lib/types/types", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bitcoinjs-lib/types/types", "Array")
   @js.native
@@ -13,9 +16,9 @@ object typesMod {
   
   object BIP32Path {
     
-    @JSImport("bitcoinjs-lib/types/types", "BIP32Path")
-    @js.native
-    def apply(value: java.lang.String): scala.Boolean = js.native
+    @scala.inline
+    def apply(value: java.lang.String): scala.Boolean = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
+    
     @JSImport("bitcoinjs-lib/types/types", "BIP32Path")
     @js.native
     val ^ : js.Any = js.native
@@ -75,21 +78,18 @@ object typesMod {
   @js.native
   val Number: js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "Satoshi")
-  @js.native
-  def Satoshi(value: Double): scala.Boolean = js.native
+  @scala.inline
+  def Satoshi(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Satoshi")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
-  @JSImport("bitcoinjs-lib/types/types", "Signer")
-  @js.native
-  def Signer(obj: js.Any): scala.Boolean = js.native
+  @scala.inline
+  def Signer(obj: js.Any): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("Signer")(obj.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   @JSImport("bitcoinjs-lib/types/types", "String")
   @js.native
   val String: js.Any = js.native
   
-  @JSImport("bitcoinjs-lib/types/types", "UInt31")
-  @js.native
-  def UInt31(value: Double): scala.Boolean = js.native
+  @scala.inline
+  def UInt31(value: Double): scala.Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("UInt31")(value.asInstanceOf[js.Any]).asInstanceOf[scala.Boolean]
   
   @JSImport("bitcoinjs-lib/types/types", "UInt32")
   @js.native

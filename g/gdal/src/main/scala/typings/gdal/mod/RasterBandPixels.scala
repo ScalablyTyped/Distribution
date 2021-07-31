@@ -2,7 +2,6 @@ package typings.gdal.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,10 +15,18 @@ trait RasterBandPixels extends StObject {
     y: Double,
     width: Double,
     height: Double,
-    data: js.UndefOr[TypedArray],
+    data: Unit,
     options: RasterBandPixelsReadOptions
   ): TypedArray = js.native
   def read(x: Double, y: Double, width: Double, height: Double, data: TypedArray): TypedArray = js.native
+  def read(
+    x: Double,
+    y: Double,
+    width: Double,
+    height: Double,
+    data: TypedArray,
+    options: RasterBandPixelsReadOptions
+  ): TypedArray = js.native
   
   def readBlock(x: Double, y: Double): TypedArray = js.native
   def readBlock(x: Double, y: Double, data: TypedArray): TypedArray = js.native

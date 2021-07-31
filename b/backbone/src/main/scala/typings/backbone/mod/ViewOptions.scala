@@ -3,40 +3,38 @@ package typings.backbone.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ViewOptions[TModel /* <: Model[_, ModelSetOptions, js.Object] */] extends StObject {
+trait ViewOptions[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var attributes: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   // TODO: quickfix, this can't be fixed easy. The collection does not need to have the same model as the parent view.
-  var collection: js.UndefOr[Collection[_]] = js.native
+  var collection: js.UndefOr[Collection[js.Any]] = js.undefined
   
   //was: Collection<TModel>;
-  var el: js.UndefOr[js.Any] = js.native
+  var el: js.UndefOr[js.Any] = js.undefined
   
-  var events: js.UndefOr[EventsHash] = js.native
+  var events: js.UndefOr[EventsHash] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var model: js.UndefOr[TModel] = js.native
+  var model: js.UndefOr[TModel] = js.undefined
   
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object ViewOptions {
   
   @scala.inline
-  def apply[TModel /* <: Model[_, ModelSetOptions, js.Object] */](): ViewOptions[TModel] = {
+  def apply[TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */](): ViewOptions[TModel] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ViewOptions[TModel]]
   }
   
   @scala.inline
-  implicit class ViewOptionsMutableBuilder[Self <: ViewOptions[_], TModel /* <: Model[_, ModelSetOptions, js.Object] */] (val x: Self with ViewOptions[TModel]) extends AnyVal {
+  implicit class ViewOptionsMutableBuilder[Self <: ViewOptions[?], TModel /* <: Model[js.Any, ModelSetOptions, js.Object] */] (val x: Self & ViewOptions[TModel]) extends AnyVal {
     
     @scala.inline
     def setAttributes(value: StringDictionary[js.Any]): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
@@ -51,7 +49,7 @@ object ViewOptions {
     def setClassNameUndefined: Self = StObject.set(x, "className", js.undefined)
     
     @scala.inline
-    def setCollection(value: Collection[_]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+    def setCollection(value: Collection[js.Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCollectionUndefined: Self = StObject.set(x, "collection", js.undefined)

@@ -2,21 +2,19 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeyListEntry extends StObject {
   
   /**
     * ARN of the key.
     */
-  var KeyArn: js.UndefOr[ArnType] = js.native
+  var KeyArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * Unique identifier of the key.
     */
-  var KeyId: js.UndefOr[KeyIdType] = js.native
+  var KeyId: js.UndefOr[KeyIdType] = js.undefined
 }
 object KeyListEntry {
   

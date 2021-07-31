@@ -2,17 +2,15 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerOptions extends StObject {
   
-  var autoBindInjectable: js.UndefOr[Boolean] = js.native
+  var autoBindInjectable: js.UndefOr[Boolean] = js.undefined
   
-  var defaultScope: js.UndefOr[BindingScope] = js.native
+  var defaultScope: js.UndefOr[BindingScope] = js.undefined
   
-  var skipBaseClassChecks: js.UndefOr[Boolean] = js.native
+  var skipBaseClassChecks: js.UndefOr[Boolean] = js.undefined
 }
 object ContainerOptions {
   

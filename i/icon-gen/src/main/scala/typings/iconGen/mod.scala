@@ -4,28 +4,28 @@ import typings.iconGen.anon.Ico
 import typings.iconGen.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("icon-gen", JSImport.Namespace)
-  @js.native
-  def apply(src: String, dest: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("icon-gen", JSImport.Namespace)
-  @js.native
-  def apply(src: String, dest: String, options: Options): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def apply(src: String, dest: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def apply(src: String, dest: String, options: Options): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].apply(src.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
+  @JSImport("icon-gen", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var favicon: js.UndefOr[Ico | js.Object] = js.native
+    var favicon: js.UndefOr[Ico | js.Object] = js.undefined
     
-    var icns: js.UndefOr[Name | js.Object] = js.native
+    var icns: js.UndefOr[Name | js.Object] = js.undefined
     
-    var ico: js.UndefOr[Name | js.Object] = js.native
+    var ico: js.UndefOr[Name | js.Object] = js.undefined
     
-    var report: js.UndefOr[Boolean] = js.native
+    var report: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

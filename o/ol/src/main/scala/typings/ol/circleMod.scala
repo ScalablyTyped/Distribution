@@ -4,7 +4,6 @@ import typings.ol.coordinateMod.Coordinate
 import typings.ol.geometryLayoutMod.GeometryLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object circleMod {
@@ -14,8 +13,8 @@ object circleMod {
   class default protected () extends Circle {
     def this(center: Coordinate) = this()
     def this(center: Coordinate, opt_radius: Double) = this()
-    def this(center: Coordinate, opt_radius: js.UndefOr[scala.Nothing], opt_layout: GeometryLayout) = this()
     def this(center: Coordinate, opt_radius: Double, opt_layout: GeometryLayout) = this()
+    def this(center: Coordinate, opt_radius: Unit, opt_layout: GeometryLayout) = this()
   }
   
   @js.native

@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IObjectTypeColumnMappings extends StObject {
   
-  def Add(Index: Double, ObjectTypeColumnMapping: IObjectTypeColumnMapping): Unit = js.native
+  def Add(Index: Double, ObjectTypeColumnMapping: IObjectTypeColumnMapping): Unit
   
-  def Clone(): IObjectTypeColumnMappings = js.native
+  def Clone(): IObjectTypeColumnMappings
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: Double): IObjectTypeColumnMapping = js.native
+  def Item(Index: Double): IObjectTypeColumnMapping
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object IObjectTypeColumnMappings {
   

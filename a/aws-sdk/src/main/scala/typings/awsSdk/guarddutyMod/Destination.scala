@@ -2,26 +2,24 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Destination extends StObject {
   
   /**
     * The unique ID of the publishing destination.
     */
-  var DestinationId: String = js.native
+  var DestinationId: String
   
   /**
     * The type of resource used for the publishing destination. Currently, only Amazon S3 buckets are supported.
     */
-  var DestinationType: typings.awsSdk.guarddutyMod.DestinationType = js.native
+  var DestinationType: typings.awsSdk.guarddutyMod.DestinationType
   
   /**
     * The status of the publishing destination.
     */
-  var Status: PublishingStatus = js.native
+  var Status: PublishingStatus
 }
 object Destination {
   

@@ -2,18 +2,16 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 坐标转换结果
   */
-@js.native
 trait ConvertorResult extends StObject {
   
-  var info: String = js.native
+  var info: String
   
-  var locations: js.Array[LngLat] = js.native
+  var locations: js.Array[LngLat]
 }
 object ConvertorResult {
   

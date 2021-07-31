@@ -25,7 +25,6 @@ import typings.html5plus.html5plusStrings.top
 import typings.html5plus.html5plusStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,7 +32,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
   */
-@js.native
 trait PlusWebviewWebviewStyles extends StObject {
   
   /**
@@ -44,7 +42,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var additionalHttpHeaders: js.UndefOr[js.Any] = js.native
+  var additionalHttpHeaders: js.UndefOr[js.Any] = js.undefined
   
   /**
     * 窗口动画优化方式
@@ -55,7 +53,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var animationOptimization: js.UndefOr[String] = js.native
+  var animationOptimization: js.UndefOr[String] = js.undefined
   
   /**
     * Webview窗口自动处理返回键逻辑
@@ -77,7 +75,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var backButtonAutoControl: js.UndefOr[hide | close | none] = js.native
+  var backButtonAutoControl: js.UndefOr[hide | close | none] = js.undefined
   
   /**
     * 窗口的背景颜色
@@ -86,7 +84,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var background: js.UndefOr[String] = js.native
+  var background: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口底部背景颜色
@@ -98,7 +96,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var backgroundColorBottom: js.UndefOr[String] = js.native
+  var backgroundColorBottom: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口顶部背景颜色值
@@ -110,7 +108,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var backgroundColorTop: js.UndefOr[String] = js.native
+  var backgroundColorTop: js.UndefOr[String] = js.undefined
   
   /**
     * 是否阻塞网络图片的加载
@@ -119,7 +117,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var blockNetworkImage: js.UndefOr[Boolean] = js.native
+  var blockNetworkImage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 窗口垂直向上的偏移量
@@ -129,7 +127,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var bottom: js.UndefOr[String] = js.native
+  var bottom: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口遇到边框是否有反弹效果
@@ -146,7 +144,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var bounce: js.UndefOr[none | vertical | horizontal | all] = js.native
+  var bounce: js.UndefOr[none | vertical | horizontal | all] = js.undefined
   
   /**
     * 窗口回弹效果区域的背景
@@ -156,7 +154,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var bounceBackground: js.UndefOr[String] = js.native
+  var bounceBackground: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口的缓存模式
@@ -181,7 +179,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var cachemode: js.UndefOr[default | cacheElseNetwork | noCache | cacheOnly] = js.native
+  var cachemode: js.UndefOr[default | cacheElseNetwork | noCache | cacheOnly] = js.undefined
   
   /**
     * 窗口内容停止滑动的减速度
@@ -190,7 +188,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var decelerationRate: js.UndefOr[Double] = js.native
+  var decelerationRate: js.UndefOr[Double] = js.undefined
   
   /**
     * 窗口的停靠方式
@@ -204,7 +202,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var dock: js.UndefOr[top | bottom | right | left] = js.native
+  var dock: js.UndefOr[top | bottom | right | left] = js.undefined
   
   /**
     * 窗口加载错误时跳转的页面地址
@@ -214,7 +212,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var errorPage: js.UndefOr[none] = js.native
+  var errorPage: js.UndefOr[none] = js.undefined
   
   /**
     * 窗口是否开启硬件加速
@@ -223,7 +221,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var hardwareAccelerated: js.UndefOr[Boolean] = js.native
+  var hardwareAccelerated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 窗口的高度
@@ -232,7 +230,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口使用的内核
@@ -259,7 +257,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var kernel: js.UndefOr[WKWebview | UIWebview] = js.native
+  var kernel: js.UndefOr[WKWebview | UIWebview] = js.undefined
   
   /**
     * 窗口水平向右的偏移量
@@ -268,7 +266,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var left: js.UndefOr[String] = js.native
+  var left: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口的边距
@@ -276,7 +274,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var margin: js.UndefOr[String] = js.native
+  var margin: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口的遮罩
@@ -288,7 +286,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var mask: js.UndefOr[String] = js.native
+  var mask: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口的不透明度
@@ -296,7 +294,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
   /**
     * 控制Webview注入5+ API时机
@@ -309,7 +307,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var plusrequire: js.UndefOr[String] = js.native
+  var plusrequire: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口的侧滑返回功能
@@ -323,7 +321,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var popGesture: js.UndefOr[none | close | hide] = js.native
+  var popGesture: js.UndefOr[none | close | hide] = js.undefined
   
   /**
     * Webview窗口的排版位置
@@ -336,7 +334,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var position: js.UndefOr[static | absolute | dock] = js.native
+  var position: js.UndefOr[static | absolute | dock] = js.undefined
   
   /**
     * 窗口的进度条样式
@@ -346,7 +344,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var progress: js.UndefOr[PlusWebviewWebviewProgressStyles] = js.native
+  var progress: js.UndefOr[PlusWebviewWebviewProgressStyles] = js.undefined
   
   /**
     * 窗口下拉刷新配置
@@ -355,7 +353,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var pullToRefresh: js.UndefOr[PlusWebviewWebviewPullToRefreshStyles] = js.native
+  var pullToRefresh: js.UndefOr[PlusWebviewWebviewPullToRefreshStyles] = js.undefined
   
   /**
     * 窗口渲染模式
@@ -369,7 +367,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var render: js.UndefOr[onscreen | always] = js.native
+  var render: js.UndefOr[onscreen | always] = js.undefined
   
   /**
     * 替换H5标准API
@@ -377,7 +375,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var replacewebapi: js.UndefOr[PlusWebviewWebviewReplaceWebApiOptions] = js.native
+  var replacewebapi: js.UndefOr[PlusWebviewWebviewReplaceWebApiOptions] = js.undefined
   
   /**
     * 窗口水平向左的偏移量
@@ -387,7 +385,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var right: js.UndefOr[String] = js.native
+  var right: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口是否可缩放
@@ -397,7 +395,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var scalable: js.UndefOr[Boolean] = js.native
+  var scalable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 窗口是否显示滚动条
@@ -415,7 +413,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var scrollIndicator: js.UndefOr[all | vertical | horizontal | none] = js.native
+  var scrollIndicator: js.UndefOr[all | vertical | horizontal | none] = js.undefined
   
   /**
     * 点击设备的状态栏时是否滚动返回至顶部
@@ -424,7 +422,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var scrollsToTop: js.UndefOr[Boolean] = js.native
+  var scrollsToTop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 是否可分享窗口加载的链接地址
@@ -436,7 +434,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var shareable: js.UndefOr[Boolean] = js.native
+  var shareable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 弹出系统软键盘模式
@@ -447,7 +445,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var softinputMode: js.UndefOr[adjustPan | adjustResize] = js.native
+  var softinputMode: js.UndefOr[adjustPan | adjustResize] = js.undefined
   
   /**
     * 窗口状态栏样式
@@ -455,7 +453,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var statusbar: js.UndefOr[PlusWebviewWebviewStatusbarStyles] = js.native
+  var statusbar: js.UndefOr[PlusWebviewWebviewStatusbarStyles] = js.undefined
   
   /**
     * 定义窗口的原生子View控件
@@ -464,7 +462,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var subNViews: js.UndefOr[js.Array[PlusWebview]] = js.native
+  var subNViews: js.UndefOr[js.Array[PlusWebview]] = js.undefined
   
   /**
     * 定义窗口的标题栏控件样式
@@ -473,7 +471,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var titleNView: js.UndefOr[PlusWebviewWebviewTitleNViewStyles] = js.native
+  var titleNView: js.UndefOr[PlusWebviewWebviewTitleNViewStyles] = js.undefined
   
   /**
     * 窗口垂直向下的偏移量
@@ -482,21 +480,21 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var top: js.UndefOr[String] = js.native
+  var top: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口定义窗口变形效果
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var transform: js.UndefOr[PlusWebviewWebviewTransform] = js.native
+  var transform: js.UndefOr[PlusWebviewWebviewTransform] = js.undefined
   
   /**
     * 窗口定义窗口变换的动画效果
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var transition: js.UndefOr[PlusWebviewWebviewTransition] = js.native
+  var transition: js.UndefOr[PlusWebviewWebviewTransition] = js.undefined
   
   /**
     * 用户是否可选择内容
@@ -508,7 +506,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var userSelect: js.UndefOr[Boolean] = js.native
+  var userSelect: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 视频全屏播放时的显示方向
@@ -523,7 +521,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var videoFullscreen: js.UndefOr[String] = js.native
+  var videoFullscreen: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口的宽度
@@ -531,7 +529,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
   
   /**
     * 窗口的堆叠顺序值
@@ -539,7 +537,7 @@ trait PlusWebviewWebviewStyles extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/webview.html](http://www.html5plus.org/doc/zh_cn/webview.html)
     */
-  var zindex: js.UndefOr[Double] = js.native
+  var zindex: js.UndefOr[Double] = js.undefined
 }
 object PlusWebviewWebviewStyles {
   

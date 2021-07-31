@@ -2,21 +2,19 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayOptions extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var layers: js.UndefOr[js.Array[Boolean]] = js.native
+  var layers: js.UndefOr[js.Array[Boolean]] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: String = js.native
+  var `type`: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object DisplayOptions {
   

@@ -3,40 +3,34 @@ package typings.propertiesReader
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String): Reader = js.native
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String, encoding: js.UndefOr[scala.Nothing], options: AppenderOptions): Reader = js.native
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String, encoding: js.UndefOr[scala.Nothing], options: FullOptions): Reader = js.native
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String, encoding: js.UndefOr[scala.Nothing], options: WriterOptions): Reader = js.native
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String, encoding: String): Reader = js.native
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String, encoding: String, options: AppenderOptions): Reader = js.native
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String, encoding: String, options: FullOptions): Reader = js.native
-  @JSImport("properties-reader", JSImport.Namespace)
-  @js.native
-  def apply(path: String, encoding: String, options: WriterOptions): Reader = js.native
+  @scala.inline
+  def apply(path: String): Reader = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[Reader]
+  @scala.inline
+  def apply(path: String, encoding: String): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  @scala.inline
+  def apply(path: String, encoding: String, options: AppenderOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  @scala.inline
+  def apply(path: String, encoding: String, options: FullOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  @scala.inline
+  def apply(path: String, encoding: String, options: WriterOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  @scala.inline
+  def apply(path: String, encoding: Unit, options: AppenderOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  @scala.inline
+  def apply(path: String, encoding: Unit, options: FullOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
+  @scala.inline
+  def apply(path: String, encoding: Unit, options: WriterOptions): Reader = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Reader]
   
+  @JSImport("properties-reader", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait AppenderOptions extends StObject {
     
-    var allowDuplicateSections: Boolean = js.native
+    var allowDuplicateSections: Boolean
   }
   object AppenderOptions {
     
@@ -54,12 +48,11 @@ object mod {
     }
   }
   
-  @js.native
   trait FullOptions extends StObject {
     
-    var appender: js.UndefOr[AppenderOptions] = js.native
+    var appender: js.UndefOr[AppenderOptions] = js.undefined
     
-    var writer: js.UndefOr[WriterOptions] = js.native
+    var writer: js.UndefOr[WriterOptions] = js.undefined
   }
   object FullOptions {
     
@@ -92,9 +85,9 @@ object mod {
     def append(path: String): Reader = js.native
     
     def bindToExpress(app: js.Object): Reader = js.native
-    def bindToExpress(app: js.Object, basePath: js.UndefOr[scala.Nothing], makePaths: Boolean): Reader = js.native
     def bindToExpress(app: js.Object, basePath: String): Reader = js.native
     def bindToExpress(app: js.Object, basePath: String, makePaths: Boolean): Reader = js.native
+    def bindToExpress(app: js.Object, basePath: Unit, makePaths: Boolean): Reader = js.native
     
     def each(iterator: js.Function2[/* key */ String, /* value */ Value, Unit]): Reader = js.native
     def each[T](iterator: js.ThisFunction2[/* this */ T, /* key */ String, /* value */ Value, Unit], scope: T): Reader = js.native
@@ -121,10 +114,9 @@ object mod {
   
   type Value = String | Double | Boolean
   
-  @js.native
   trait WriterOptions extends StObject {
     
-    var saveSections: Boolean = js.native
+    var saveSections: Boolean
   }
   object WriterOptions {
     

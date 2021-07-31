@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientJobs.gapi.client.jobs
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudTalentV4Job extends StObject {
   
   /**
@@ -16,22 +14,22 @@ trait GoogleCloudTalentV4Job extends StObject {
     * requisition_id are not allowed. If the original requisition_id must be preserved, a custom field should be used for storage. It is also suggested to group the locations that close
     * to each other in the same job for better search experience. The maximum number of allowed characters is 500.
     */
-  var addresses: js.UndefOr[js.Array[String]] = js.native
+  var addresses: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Job application information. */
-  var applicationInfo: js.UndefOr[GoogleCloudTalentV4JobApplicationInfo] = js.native
+  var applicationInfo: js.UndefOr[GoogleCloudTalentV4JobApplicationInfo] = js.undefined
   
   /**
     * Required. The resource name of the company listing the job. The format is "projects/{project_id}/tenants/{tenant_id}/companies/{company_id}". For example,
     * "projects/foo/tenants/bar/companies/baz".
     */
-  var company: js.UndefOr[String] = js.native
+  var company: js.UndefOr[String] = js.undefined
   
   /** Output only. Display name of the company listing the job. */
-  var companyDisplayName: js.UndefOr[String] = js.native
+  var companyDisplayName: js.UndefOr[String] = js.undefined
   
   /** Job compensation information (a.k.a. "pay rate") i.e., the compensation that will paid to the employee. */
-  var compensationInfo: js.UndefOr[GoogleCloudTalentV4CompensationInfo] = js.native
+  var compensationInfo: js.UndefOr[GoogleCloudTalentV4CompensationInfo] = js.undefined
   
   /**
     * A map of fields to hold both filterable and non-filterable custom job attributes that are not covered by the provided structured fields. The keys of the map are strings up to 64
@@ -42,59 +40,59 @@ trait GoogleCloudTalentV4Job extends StObject {
   var customAttributes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.GoogleCloudTalentV4CustomAttribute}
-    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.GoogleCloudTalentV4Job with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.GoogleCloudTalentV4Job & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The desired education degrees for the job, such as Bachelors, Masters. */
-  var degreeTypes: js.UndefOr[js.Array[String]] = js.native
+  var degreeTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The department or functional area within the company with the open position. The maximum number of allowed characters is 255. */
-  var department: js.UndefOr[String] = js.native
+  var department: js.UndefOr[String] = js.undefined
   
   /** Output only. Derived details about the job posting. */
-  var derivedInfo: js.UndefOr[GoogleCloudTalentV4JobDerivedInfo] = js.native
+  var derivedInfo: js.UndefOr[GoogleCloudTalentV4JobDerivedInfo] = js.undefined
   
   /**
     * Required. The description of the job, which typically includes a multi-paragraph description of the company and related information. Separate fields are provided on the job object
     * for responsibilities, qualifications, and other job characteristics. Use of these separate job fields is recommended. This field accepts and sanitizes HTML input, and also accepts
     * bold, italic, ordered list, and unordered list markup tags. The maximum number of allowed characters is 100,000.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The employment type(s) of a job, for example, full time or part time. */
-  var employmentTypes: js.UndefOr[js.Array[String]] = js.native
+  var employmentTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** A description of bonus, commission, and other compensation incentives associated with the job not including salary or pay. The maximum number of allowed characters is 10,000. */
-  var incentives: js.UndefOr[String] = js.native
+  var incentives: js.UndefOr[String] = js.undefined
   
   /** The benefits included with the job. */
-  var jobBenefits: js.UndefOr[js.Array[String]] = js.native
+  var jobBenefits: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The end timestamp of the job. Typically this field is used for contracting engagements. Invalid timestamps are ignored. */
-  var jobEndTime: js.UndefOr[String] = js.native
+  var jobEndTime: js.UndefOr[String] = js.undefined
   
   /** The experience level associated with the job, such as "Entry Level". */
-  var jobLevel: js.UndefOr[String] = js.native
+  var jobLevel: js.UndefOr[String] = js.undefined
   
   /** The start timestamp of the job in UTC time zone. Typically this field is used for contracting engagements. Invalid timestamps are ignored. */
-  var jobStartTime: js.UndefOr[String] = js.native
+  var jobStartTime: js.UndefOr[String] = js.undefined
   
   /**
     * The language of the posting. This field is distinct from any requirements for fluency that are associated with the job. Language codes must be in BCP-47 format, such as "en-US" or
     * "sr-Latn". For more information, see [Tags for Identifying Languages](https://tools.ietf.org/html/bcp47){: class="external" target="_blank" }. If this field is unspecified and
     * Job.description is present, detected language code based on Job.description is assigned, otherwise defaults to 'en_US'.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /**
     * Required during job update. The resource name for the job. This is generated by the service when a job is created. The format is
     * "projects/{project_id}/tenants/{tenant_id}/jobs/{job_id}". For example, "projects/foo/tenants/bar/jobs/baz". Use of this field in job queries and API calls is preferred over the use
     * of requisition_id since this value is unique.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The timestamp when this job posting was created. */
-  var postingCreateTime: js.UndefOr[String] = js.native
+  var postingCreateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Strongly recommended for the best service experience. The expiration timestamp of the job. After this timestamp, the job is marked as expired, and it no longer appears in search
@@ -110,55 +108,55 @@ trait GoogleCloudTalentV4Job extends StObject {
     * update, it depends on the field masks set by UpdateJobRequest.update_mask. If the field masks include job_end_time, or the masks are empty meaning that every field is updated, the
     * job posting expires after 30 days from the job's last update time. Otherwise the expiration date isn't updated.
     */
-  var postingExpireTime: js.UndefOr[String] = js.native
+  var postingExpireTime: js.UndefOr[String] = js.undefined
   
   /** The timestamp this job posting was most recently published. The default value is the time the request arrives at the server. Invalid timestamps are ignored. */
-  var postingPublishTime: js.UndefOr[String] = js.native
+  var postingPublishTime: js.UndefOr[String] = js.undefined
   
   /**
     * The job PostingRegion (for example, state, country) throughout which the job is available. If this field is set, a LocationFilter in a search query within the job region finds this
     * job posting if an exact location match isn't specified. If this field is set to PostingRegion.NATION or PostingRegion.ADMINISTRATIVE_AREA, setting job Job.addresses to the same
     * location level as this field is strongly recommended.
     */
-  var postingRegion: js.UndefOr[String] = js.native
+  var postingRegion: js.UndefOr[String] = js.undefined
   
   /** Output only. The timestamp when this job posting was last updated. */
-  var postingUpdateTime: js.UndefOr[String] = js.native
+  var postingUpdateTime: js.UndefOr[String] = js.undefined
   
   /** Options for job processing. */
-  var processingOptions: js.UndefOr[GoogleCloudTalentV4JobProcessingOptions] = js.native
+  var processingOptions: js.UndefOr[GoogleCloudTalentV4JobProcessingOptions] = js.undefined
   
   /**
     * A promotion value of the job, as determined by the client. The value determines the sort order of the jobs returned when searching for jobs using the featured jobs search call, with
     * higher promotional values being returned first and ties being resolved by relevance sort. Only the jobs with a promotionValue >0 are returned in a FEATURED_JOB_SEARCH. Default value
     * is 0, and negative values are treated as 0.
     */
-  var promotionValue: js.UndefOr[Double] = js.native
+  var promotionValue: js.UndefOr[Double] = js.undefined
   
   /**
     * A description of the qualifications required to perform the job. The use of this field is recommended as an alternative to using the more general description field. This field
     * accepts and sanitizes HTML input, and also accepts bold, italic, ordered list, and unordered list markup tags. The maximum number of allowed characters is 10,000.
     */
-  var qualifications: js.UndefOr[String] = js.native
+  var qualifications: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The requisition ID, also referred to as the posting ID, is assigned by the client to identify a job. This field is intended to be used by clients for client identification
     * and tracking of postings. A job isn't allowed to be created if there is another job with the same company, language_code and requisition_id. The maximum number of allowed characters
     * is 255.
     */
-  var requisitionId: js.UndefOr[String] = js.native
+  var requisitionId: js.UndefOr[String] = js.undefined
   
   /**
     * A description of job responsibilities. The use of this field is recommended as an alternative to using the more general description field. This field accepts and sanitizes HTML
     * input, and also accepts bold, italic, ordered list, and unordered list markup tags. The maximum number of allowed characters is 10,000.
     */
-  var responsibilities: js.UndefOr[String] = js.native
+  var responsibilities: js.UndefOr[String] = js.undefined
   
   /** Required. The title of the job, such as "Software Engineer" The maximum number of allowed characters is 500. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Deprecated. The job is only visible to the owner. The visibility of the job. Defaults to Visibility.ACCOUNT_ONLY if not specified. */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudTalentV4Job {
   
@@ -208,7 +206,7 @@ object GoogleCloudTalentV4Job {
     def setCustomAttributes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.jobs.gapi.client.jobs.GoogleCloudTalentV4CustomAttribute}
-      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.GoogleCloudTalentV4Job with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientJobs.maximMazurokGapiClientJobsStrings.GoogleCloudTalentV4Job & TopLevel[js.Any]
     ): Self = StObject.set(x, "customAttributes", value.asInstanceOf[js.Any])
     
     @scala.inline

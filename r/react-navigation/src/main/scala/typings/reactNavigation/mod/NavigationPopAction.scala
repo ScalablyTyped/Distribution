@@ -3,22 +3,21 @@ package typings.reactNavigation.mod
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashPOP
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationPopAction
-  extends NavigationStackAction
-     with NavigationPopActionPayload {
+  extends StObject
+     with NavigationPopActionPayload
+     with NavigationStackAction {
   
-  var `type`: NavigationSlashPOP = js.native
+  var `type`: NavigationSlashPOP
 }
 object NavigationPopAction {
   
   @scala.inline
-  def apply(`type`: NavigationSlashPOP): NavigationPopAction = {
+  def apply(): NavigationPopAction = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Navigation/POP")
     __obj.asInstanceOf[NavigationPopAction]
   }
   

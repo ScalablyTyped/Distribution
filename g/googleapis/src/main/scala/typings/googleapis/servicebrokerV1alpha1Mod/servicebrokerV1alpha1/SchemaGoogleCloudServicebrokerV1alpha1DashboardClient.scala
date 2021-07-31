@@ -2,30 +2,28 @@ package typings.googleapis.servicebrokerV1alpha1Mod.servicebrokerV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Message containing information required to activate Dashboard SSO feature.
   */
-@js.native
 trait SchemaGoogleCloudServicebrokerV1alpha1DashboardClient extends StObject {
   
   /**
     * The id of the Oauth client that the dashboard will use.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * A URI for the service dashboard. Validated by the OAuth token server when
     * the dashboard requests a token.
     */
-  var redirect_uri: js.UndefOr[String] = js.native
+  var redirect_uri: js.UndefOr[String] = js.undefined
   
   /**
     * A secret for the dashboard client.
     */
-  var secret: js.UndefOr[String] = js.native
+  var secret: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudServicebrokerV1alpha1DashboardClient {
   

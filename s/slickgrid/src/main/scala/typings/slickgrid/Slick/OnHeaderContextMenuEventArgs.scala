@@ -2,13 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnHeaderContextMenuEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnHeaderContextMenuEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var column: Column[T] = js.native
+  var column: Column[T]
 }
 object OnHeaderContextMenuEventArgs {
   
@@ -19,7 +19,7 @@ object OnHeaderContextMenuEventArgs {
   }
   
   @scala.inline
-  implicit class OnHeaderContextMenuEventArgsMutableBuilder[Self <: OnHeaderContextMenuEventArgs[_], T /* <: SlickData */] (val x: Self with OnHeaderContextMenuEventArgs[T]) extends AnyVal {
+  implicit class OnHeaderContextMenuEventArgsMutableBuilder[Self <: OnHeaderContextMenuEventArgs[?], T /* <: SlickData */] (val x: Self & OnHeaderContextMenuEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setColumn(value: Column[T]): Self = StObject.set(x, "column", value.asInstanceOf[js.Any])

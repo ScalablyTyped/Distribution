@@ -2,7 +2,6 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,11 +17,15 @@ object Orientation extends StObject {
     * A horizontal layout.
     **/
   @js.native
-  sealed trait horizontal extends Orientation
+  sealed trait horizontal
+    extends StObject
+       with Orientation
   
   /**
     * A vertical layout.
     **/
   @js.native
-  sealed trait vertical extends Orientation
+  sealed trait vertical
+    extends StObject
+       with Orientation
 }

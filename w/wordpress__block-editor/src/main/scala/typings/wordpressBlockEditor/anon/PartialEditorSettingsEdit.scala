@@ -8,68 +8,66 @@ import typings.wordpressBlockEditor.mod.EditorStyle
 import typings.wordpressBlockEditor.mod.EditorTemplateLock
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@wordpress/block-editor.@wordpress/block-editor.EditorSettings & @wordpress/block-editor.@wordpress/block-editor.EditorBlockListSettings> */
-@js.native
 trait PartialEditorSettingsEdit extends StObject {
   
-  var alignWide: js.UndefOr[Boolean] = js.native
+  var alignWide: js.UndefOr[Boolean] = js.undefined
   
-  var allowedBlockTypes: js.UndefOr[js.Array[String] | Boolean] = js.native
+  var allowedBlockTypes: js.UndefOr[js.Array[String] | Boolean] = js.undefined
   
-  var allowedBlocks: js.UndefOr[js.Array[String]] = js.native
+  var allowedBlocks: js.UndefOr[js.Array[String]] = js.undefined
   
-  var allowedMimeTypes: js.UndefOr[(Record[String, String]) | Null] = js.native
+  var allowedMimeTypes: js.UndefOr[(Record[String, String]) | Null] = js.undefined
   
-  var autosaveInterval: js.UndefOr[Double] = js.native
+  var autosaveInterval: js.UndefOr[Double] = js.undefined
   
-  var availableLegacyWidgets: js.UndefOr[js.Array[Description]] = js.native
+  var availableLegacyWidgets: js.UndefOr[js.Array[Description]] = js.undefined
   
-  var availableTemplates: js.UndefOr[js.Array[_]] = js.native
+  var availableTemplates: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var bodyPlaceholder: js.UndefOr[String] = js.native
+  var bodyPlaceholder: js.UndefOr[String] = js.undefined
   
-  var codeEditingEnabled: js.UndefOr[Boolean] = js.native
+  var codeEditingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var colors: js.UndefOr[js.Array[EditorColor]] = js.native
+  var colors: js.UndefOr[js.Array[EditorColor]] = js.undefined
   
-  var disableCustomColors: js.UndefOr[Boolean] = js.native
+  var disableCustomColors: js.UndefOr[Boolean] = js.undefined
   
-  var disableCustomEditorFontSizes: js.UndefOr[Boolean] = js.native
+  var disableCustomEditorFontSizes: js.UndefOr[Boolean] = js.undefined
   
-  var disablePostFormats: js.UndefOr[Boolean] = js.native
+  var disablePostFormats: js.UndefOr[Boolean] = js.undefined
   
-  var enableCustomFields: js.UndefOr[Boolean] = js.native
+  var enableCustomFields: js.UndefOr[Boolean] = js.undefined
   
-  var focusMode: js.UndefOr[Boolean] = js.native
+  var focusMode: js.UndefOr[Boolean] = js.undefined
   
-  var fontSizes: js.UndefOr[js.Array[EditorFontSize]] = js.native
+  var fontSizes: js.UndefOr[js.Array[EditorFontSize]] = js.undefined
   
-  var hasFixedToolbar: js.UndefOr[Boolean] = js.native
+  var hasFixedToolbar: js.UndefOr[Boolean] = js.undefined
   
-  var hasPermissionsToManageWidgets: js.UndefOr[Boolean] = js.native
+  var hasPermissionsToManageWidgets: js.UndefOr[Boolean] = js.undefined
   
-  var imageSizes: js.UndefOr[js.Array[EditorImageSize]] = js.native
+  var imageSizes: js.UndefOr[js.Array[EditorImageSize]] = js.undefined
   
-  var isRTL: js.UndefOr[Boolean] = js.native
+  var isRTL: js.UndefOr[Boolean] = js.undefined
   
-  var maxUploadFileSize: js.UndefOr[Double] = js.native
+  var maxUploadFileSize: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var postLock: js.UndefOr[IsLocked] = js.native
+  var postLock: js.UndefOr[IsLocked] = js.undefined
   
-  var postLockUtils: js.UndefOr[AjaxUrl] = js.native
+  var postLockUtils: js.UndefOr[AjaxUrl] = js.undefined
   
-  var richEditingEnabled: js.UndefOr[Boolean] = js.native
+  var richEditingEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var styles: js.UndefOr[js.Array[EditorStyle]] = js.native
+  var styles: js.UndefOr[js.Array[EditorStyle]] = js.undefined
   
-  var templateLock: js.UndefOr[EditorTemplateLock] = js.native
+  var templateLock: js.UndefOr[EditorTemplateLock] = js.undefined
   
-  var titlePlaceholder: js.UndefOr[String] = js.native
+  var titlePlaceholder: js.UndefOr[String] = js.undefined
 }
 object PartialEditorSettingsEdit {
   
@@ -131,7 +129,7 @@ object PartialEditorSettingsEdit {
     def setAvailableLegacyWidgetsVarargs(value: Description*): Self = StObject.set(x, "availableLegacyWidgets", js.Array(value :_*))
     
     @scala.inline
-    def setAvailableTemplates(value: js.Array[_]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
+    def setAvailableTemplates(value: js.Array[js.Any]): Self = StObject.set(x, "availableTemplates", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAvailableTemplatesUndefined: Self = StObject.set(x, "availableTemplates", js.undefined)

@@ -2,286 +2,46 @@ package typings.symphonyApiClientNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signalsClientMod {
   
-  @JSImport("symphony-api-client-node/SignalsClient", "createSignal")
+  @JSImport("symphony-api-client-node/SignalsClient", JSImport.Namespace)
   @js.native
-  def createSignal(name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean, sessionToken: String): js.Promise[Signal] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("symphony-api-client-node/SignalsClient", "deleteSignal")
-  @js.native
-  def deleteSignal(id: String, sessionToken: String): js.Promise[DeleteOperationResult] = js.native
+  @scala.inline
+  def createSignal(name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSignal")(name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @JSImport("symphony-api-client-node/SignalsClient", "getSignal")
-  @js.native
-  def getSignal(id: String, sessionToken: String): js.Promise[Signal] = js.native
+  @scala.inline
+  def deleteSignal(id: String, sessionToken: String): js.Promise[DeleteOperationResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[DeleteOperationResult]]
   
-  @JSImport("symphony-api-client-node/SignalsClient", "getSignalSubscribers")
-  @js.native
-  def getSignalSubscribers(id: String, skip: Double, limit: Double, sessionToken: String): js.Promise[SignalSubscribersResponse] = js.native
+  @scala.inline
+  def getSignal(id: String, sessionToken: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignal")(id.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @JSImport("symphony-api-client-node/SignalsClient", "listSignals")
-  @js.native
-  def listSignals(skip: Double, limit: Double, sessionToken: String): js.Promise[js.Array[Signal]] = js.native
+  @scala.inline
+  def getSignalSubscribers(id: String, skip: Double, limit: Double, sessionToken: String): js.Promise[SignalSubscribersResponse] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSignalSubscribers")(id.asInstanceOf[js.Any], skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscribersResponse]]
   
-  @JSImport("symphony-api-client-node/SignalsClient", "subscribeSignal")
-  @js.native
-  def subscribeSignal(id: String, userIds: js.Array[Double], userCanUnsubscribe: Boolean, sessionToken: String): js.Promise[SignalSubscriptionResult] = js.native
+  @scala.inline
+  def listSignals(skip: Double, limit: Double, sessionToken: String): js.Promise[js.Array[Signal]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSignals")(skip.asInstanceOf[js.Any], limit.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[Signal]]]
   
-  @JSImport("symphony-api-client-node/SignalsClient", "unsubscribeSignal")
-  @js.native
-  def unsubscribeSignal(id: String, userIds: js.Array[Double], sessionToken: String): js.Promise[SignalSubscriptionResult] = js.native
+  @scala.inline
+  def subscribeSignal(id: String, userIds: js.Array[Double], userCanUnsubscribe: Boolean, sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("subscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], userCanUnsubscribe.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
   
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: js.UndefOr[scala.Nothing], query: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: js.UndefOr[scala.Nothing], query: String, visibleOnProfile: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: js.UndefOr[scala.Nothing],
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: js.UndefOr[scala.Nothing], visibleOnProfile: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: js.UndefOr[scala.Nothing],
-    visibleOnProfile: Boolean,
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: String): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: js.UndefOr[scala.Nothing],
-    companyWide: Boolean,
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(
-    id: String,
-    name: String,
-    query: String,
-    visibleOnProfile: Boolean,
-    companyWide: js.UndefOr[scala.Nothing],
-    sessionToken: String
-  ): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
-  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = js.native
-  @JSImport("symphony-api-client-node/SignalsClient", "updateSignal")
-  @js.native
+  @scala.inline
+  def unsubscribeSignal(id: String, userIds: js.Array[Double], sessionToken: String): js.Promise[SignalSubscriptionResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("unsubscribeSignal")(id.asInstanceOf[js.Any], userIds.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[SignalSubscriptionResult]]
+  
+  @scala.inline
+  def updateSignal(id: String): js.Promise[Signal] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
   def updateSignal(
     id: String,
     name: String,
@@ -289,14 +49,170 @@ object signalsClientMod {
     visibleOnProfile: Boolean,
     companyWide: Boolean,
     sessionToken: String
-  ): js.Promise[Signal] = js.native
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: String,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: String, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: String,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Boolean,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: String, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: String,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Boolean, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Boolean,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(id: String, name: Unit, query: Unit, visibleOnProfile: Unit, companyWide: Boolean): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Boolean,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
+  @scala.inline
+  def updateSignal(
+    id: String,
+    name: Unit,
+    query: Unit,
+    visibleOnProfile: Unit,
+    companyWide: Unit,
+    sessionToken: String
+  ): js.Promise[Signal] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSignal")(id.asInstanceOf[js.Any], name.asInstanceOf[js.Any], query.asInstanceOf[js.Any], visibleOnProfile.asInstanceOf[js.Any], companyWide.asInstanceOf[js.Any], sessionToken.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Signal]]
   
-  @js.native
   trait DeleteOperationResult extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var message: String = js.native
+    var message: String
   }
   object DeleteOperationResult {
     
@@ -317,20 +233,19 @@ object signalsClientMod {
     }
   }
   
-  @js.native
   trait Signal extends StObject {
     
-    var companyWide: Boolean = js.native
+    var companyWide: Boolean
     
-    var id: String = js.native
+    var id: String
     
-    var name: String = js.native
+    var name: String
     
-    var query: String = js.native
+    var query: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var visibleOnProfile: Boolean = js.native
+    var visibleOnProfile: Boolean
   }
   object Signal {
     
@@ -370,18 +285,17 @@ object signalsClientMod {
     }
   }
   
-  @js.native
   trait SignalSubscriber extends StObject {
     
-    var owner: Boolean = js.native
+    var owner: Boolean
     
-    var pushed: Boolean = js.native
+    var pushed: Boolean
     
-    var subscriberName: String = js.native
+    var subscriberName: String
     
-    var timestamp: Double = js.native
+    var timestamp: Double
     
-    var userId: Double = js.native
+    var userId: Double
   }
   object SignalSubscriber {
     
@@ -411,16 +325,15 @@ object signalsClientMod {
     }
   }
   
-  @js.native
   trait SignalSubscribersResponse extends StObject {
     
-    var data: js.Array[SignalSubscriber] = js.native
+    var data: js.Array[SignalSubscriber]
     
-    var hasMore: Boolean = js.native
+    var hasMore: Boolean
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object SignalSubscribersResponse {
     
@@ -450,16 +363,15 @@ object signalsClientMod {
     }
   }
   
-  @js.native
   trait SignalSubscriptionResult extends StObject {
     
-    var failedSubscription: Double = js.native
+    var failedSubscription: Double
     
-    var requestedSubscription: Double = js.native
+    var requestedSubscription: Double
     
-    var subscriptionErrors: js.Array[_] = js.native
+    var subscriptionErrors: js.Array[js.Any]
     
-    var successfulSubscription: Double = js.native
+    var successfulSubscription: Double
   }
   object SignalSubscriptionResult {
     
@@ -467,7 +379,7 @@ object signalsClientMod {
     def apply(
       failedSubscription: Double,
       requestedSubscription: Double,
-      subscriptionErrors: js.Array[_],
+      subscriptionErrors: js.Array[js.Any],
       successfulSubscription: Double
     ): SignalSubscriptionResult = {
       val __obj = js.Dynamic.literal(failedSubscription = failedSubscription.asInstanceOf[js.Any], requestedSubscription = requestedSubscription.asInstanceOf[js.Any], subscriptionErrors = subscriptionErrors.asInstanceOf[js.Any], successfulSubscription = successfulSubscription.asInstanceOf[js.Any])
@@ -484,7 +396,7 @@ object signalsClientMod {
       def setRequestedSubscription(value: Double): Self = StObject.set(x, "requestedSubscription", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setSubscriptionErrors(value: js.Array[_]): Self = StObject.set(x, "subscriptionErrors", value.asInstanceOf[js.Any])
+      def setSubscriptionErrors(value: js.Array[js.Any]): Self = StObject.set(x, "subscriptionErrors", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSubscriptionErrorsVarargs(value: js.Any*): Self = StObject.set(x, "subscriptionErrors", js.Array(value :_*))

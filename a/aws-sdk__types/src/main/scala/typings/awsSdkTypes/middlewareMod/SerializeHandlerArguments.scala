@@ -2,11 +2,11 @@ package typings.awsSdkTypes.middlewareMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SerializeHandlerArguments[Input /* <: js.Object */] extends InitializeHandlerArguments[Input] {
+trait SerializeHandlerArguments[Input /* <: js.Object */]
+  extends StObject
+     with InitializeHandlerArguments[Input] {
   
   /**
     * The user input serialized as a request object. The request object is unknown,
@@ -16,7 +16,7 @@ trait SerializeHandlerArguments[Input /* <: js.Object */] extends InitializeHand
     * During the build phase of the execution of a middleware stack, a built
     * request may or may not be available.
     */
-  var request: js.UndefOr[js.Any] = js.native
+  var request: js.UndefOr[js.Any] = js.undefined
 }
 object SerializeHandlerArguments {
   
@@ -27,7 +27,7 @@ object SerializeHandlerArguments {
   }
   
   @scala.inline
-  implicit class SerializeHandlerArgumentsMutableBuilder[Self <: SerializeHandlerArguments[_], Input /* <: js.Object */] (val x: Self with SerializeHandlerArguments[Input]) extends AnyVal {
+  implicit class SerializeHandlerArgumentsMutableBuilder[Self <: SerializeHandlerArguments[?], Input /* <: js.Object */] (val x: Self & SerializeHandlerArguments[Input]) extends AnyVal {
     
     @scala.inline
     def setRequest(value: js.Any): Self = StObject.set(x, "request", value.asInstanceOf[js.Any])

@@ -2,53 +2,51 @@ package typings.antvComponent.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderRadius extends StObject {
   
-  var backgroundColor: String = js.native
+  var backgroundColor: String
   
-  var borderRadius: String = js.native
+  var borderRadius: String
   
-  var boxShadow: String = js.native
+  var boxShadow: String
   
-  var color: String = js.native
+  var color: String
   
-  var display: js.UndefOr[scala.Nothing] = js.native
+  var display: Unit
   
-  var float: js.UndefOr[scala.Nothing] = js.native
+  var float: Unit
   
-  var fontFamily: String = js.native
+  var fontFamily: String
   
-  var fontSize: String = js.native
+  var fontSize: String
   
-  var height: js.UndefOr[scala.Nothing] = js.native
+  var height: Unit
   
-  var lineHeight: String = js.native
+  var lineHeight: String
   
-  var listStyleType: js.UndefOr[scala.Nothing] = js.native
+  var listStyleType: Unit
   
-  var margin: js.UndefOr[scala.Nothing] = js.native
+  var margin: Unit
   
-  var marginBottom: js.UndefOr[scala.Nothing] = js.native
+  var marginBottom: Unit
   
-  var marginLeft: js.UndefOr[scala.Nothing] = js.native
+  var marginLeft: Unit
   
-  var marginRight: js.UndefOr[scala.Nothing] = js.native
+  var marginRight: Unit
   
-  var padding: String = js.native
+  var padding: String
   
-  var position: String = js.native
+  var position: String
   
-  var transition: String = js.native
+  var transition: String
   
-  var visibility: String = js.native
+  var visibility: String
   
-  var width: js.UndefOr[scala.Nothing] = js.native
+  var width: Unit
   
-  var zIndex: Double = js.native
+  var zIndex: Double
 }
 object BorderRadius {
   
@@ -58,16 +56,25 @@ object BorderRadius {
     borderRadius: String,
     boxShadow: String,
     color: String,
+    display: Unit,
+    float: Unit,
     fontFamily: String,
     fontSize: String,
+    height: Unit,
     lineHeight: String,
+    listStyleType: Unit,
+    margin: Unit,
+    marginBottom: Unit,
+    marginLeft: Unit,
+    marginRight: Unit,
     padding: String,
     position: String,
     transition: String,
     visibility: String,
+    width: Unit,
     zIndex: Double
   ): BorderRadius = {
-    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(backgroundColor = backgroundColor.asInstanceOf[js.Any], borderRadius = borderRadius.asInstanceOf[js.Any], boxShadow = boxShadow.asInstanceOf[js.Any], color = color.asInstanceOf[js.Any], display = display.asInstanceOf[js.Any], float = float.asInstanceOf[js.Any], fontFamily = fontFamily.asInstanceOf[js.Any], fontSize = fontSize.asInstanceOf[js.Any], height = height.asInstanceOf[js.Any], lineHeight = lineHeight.asInstanceOf[js.Any], listStyleType = listStyleType.asInstanceOf[js.Any], margin = margin.asInstanceOf[js.Any], marginBottom = marginBottom.asInstanceOf[js.Any], marginLeft = marginLeft.asInstanceOf[js.Any], marginRight = marginRight.asInstanceOf[js.Any], padding = padding.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], transition = transition.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any], width = width.asInstanceOf[js.Any], zIndex = zIndex.asInstanceOf[js.Any])
     __obj.asInstanceOf[BorderRadius]
   }
   
@@ -87,13 +94,37 @@ object BorderRadius {
     def setColor(value: String): Self = StObject.set(x, "color", value.asInstanceOf[js.Any])
     
     @scala.inline
+    def setDisplay(value: Unit): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFloat(value: Unit): Self = StObject.set(x, "float", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setFontFamily(value: String): Self = StObject.set(x, "fontFamily", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFontSize(value: String): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
     
     @scala.inline
+    def setHeight(value: Unit): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setLineHeight(value: String): Self = StObject.set(x, "lineHeight", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setListStyleType(value: Unit): Self = StObject.set(x, "listStyleType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMargin(value: Unit): Self = StObject.set(x, "margin", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMarginBottom(value: Unit): Self = StObject.set(x, "marginBottom", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMarginLeft(value: Unit): Self = StObject.set(x, "marginLeft", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setMarginRight(value: Unit): Self = StObject.set(x, "marginRight", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPadding(value: String): Self = StObject.set(x, "padding", value.asInstanceOf[js.Any])
@@ -106,6 +137,9 @@ object BorderRadius {
     
     @scala.inline
     def setVisibility(value: String): Self = StObject.set(x, "visibility", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setWidth(value: Unit): Self = StObject.set(x, "width", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setZIndex(value: Double): Self = StObject.set(x, "zIndex", value.asInstanceOf[js.Any])

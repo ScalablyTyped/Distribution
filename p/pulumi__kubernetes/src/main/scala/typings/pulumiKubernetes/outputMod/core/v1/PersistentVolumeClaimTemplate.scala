@@ -3,24 +3,22 @@ package typings.pulumiKubernetes.outputMod.core.v1
 import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PersistentVolumeClaimTemplate is used to produce PersistentVolumeClaim objects as part of an EphemeralVolumeSource.
   */
-@js.native
 trait PersistentVolumeClaimTemplate extends StObject {
   
   /**
     * May contain labels and annotations that will be copied into the PVC when creating it. No other fields are allowed and will be rejected during validation.
     */
-  var metadata: ObjectMeta = js.native
+  var metadata: ObjectMeta
   
   /**
     * The specification for the PersistentVolumeClaim. The entire content is copied unchanged into the PVC that gets created from this template. The same fields as in a PersistentVolumeClaim are also valid here.
     */
-  var spec: PersistentVolumeClaimSpec = js.native
+  var spec: PersistentVolumeClaimSpec
 }
 object PersistentVolumeClaimTemplate {
   

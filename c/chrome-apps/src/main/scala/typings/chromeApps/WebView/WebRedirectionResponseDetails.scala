@@ -5,14 +5,14 @@ import typings.chromeApps.chrome.integer
 import typings.chromeApps.chrome.webRequest.ResourceType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebRedirectionResponseDetails extends WebResponseCacheDetails {
+trait WebRedirectionResponseDetails
+  extends StObject
+     with WebResponseCacheDetails {
   
   /** The new URL. */
-  var redirectUrl: String = js.native
+  var redirectUrl: String
 }
 object WebRedirectionResponseDetails {
   

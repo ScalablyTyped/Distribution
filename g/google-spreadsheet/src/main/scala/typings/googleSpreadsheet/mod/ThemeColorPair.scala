@@ -2,15 +2,13 @@ package typings.googleSpreadsheet.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThemeColorPair extends StObject {
   
-  var color: ColorStyle = js.native
+  var color: ColorStyle
   
-  var colorType: ThemeColorType = js.native
+  var colorType: ThemeColorType
 }
 object ThemeColorPair {
   

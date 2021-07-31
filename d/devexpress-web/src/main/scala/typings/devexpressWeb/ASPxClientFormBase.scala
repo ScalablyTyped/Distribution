@@ -2,31 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides base functionality for the ASPxClientScheduler's forms.
   */
-@js.native
 trait ASPxClientFormBase extends StObject {
   
   /**
     * Closes the form.
     */
-  def Close(): Unit = js.native
+  def Close(): Unit
   
   /**
     * Occurs when the form has been closed.
     */
-  var FormClosed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]] = js.native
+  var FormClosed: ASPxClientEvent[ASPxClientEventHandler[ASPxClientFormBase]]
   
   /**
     * Sets the visibility state of the specified form element.
     * @param element An object specifying the element whose visibility state should be changed.
     * @param isVisible true to display the element; false to hide the element.
     */
-  def SetVisibleCore(element: js.Any, isVisible: Boolean): Unit = js.native
+  def SetVisibleCore(element: js.Any, isVisible: Boolean): Unit
 }
 object ASPxClientFormBase {
   

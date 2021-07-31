@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadata extends StObject {
   
   /** Output only. API version used to start the operation. */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the operation was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The time the operation finished running. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Operation status for Game Services API operations. Operation status is in the form of key-value pairs where keys are resource IDs and the values show the status of the
@@ -25,26 +23,26 @@ trait OperationMetadata extends StObject {
   var operationStatus: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.gameservices.gapi.client.gameservices.OperationStatus}
-    */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.OperationMetadata with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.OperationMetadata & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Output only. Identifies whether the user has requested cancellation of the operation. Operations that have successfully been cancelled have Operation.error value with a
     * google.rpc.Status.code of 1, corresponding to `Code.CANCELLED`.
     */
-  var requestedCancellation: js.UndefOr[Boolean] = js.native
+  var requestedCancellation: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Human-readable status of the operation, if any. */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /** Output only. Server-defined resource path for the target of the operation. */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /** Output only. List of Locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Output only. Name of the verb executed by the operation. */
-  var verb: js.UndefOr[String] = js.native
+  var verb: js.UndefOr[String] = js.undefined
 }
 object OperationMetadata {
   
@@ -79,7 +77,7 @@ object OperationMetadata {
     def setOperationStatus(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.gameservices.gapi.client.gameservices.OperationStatus}
-      */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.OperationMetadata with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientGameservices.maximMazurokGapiClientGameservicesStrings.OperationMetadata & TopLevel[js.Any]
     ): Self = StObject.set(x, "operationStatus", value.asInstanceOf[js.Any])
     
     @scala.inline

@@ -2,19 +2,17 @@ package typings.bezierJs.BezierJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Inflection extends StObject {
   
-  var values: js.Array[Double] = js.native
+  var values: js.Array[Double]
   
-  var x: js.Array[Double] = js.native
+  var x: js.Array[Double]
   
-  var y: js.Array[Double] = js.native
+  var y: js.Array[Double]
   
-  var z: js.UndefOr[js.Array[Double]] = js.native
+  var z: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object Inflection {
   

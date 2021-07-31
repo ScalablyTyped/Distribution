@@ -2,14 +2,12 @@ package typings.semanticUiCheckbox.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-checkbox.SemanticUI.Checkbox.SelectorSettings._Impl, 'label'> */
-@js.native
 trait PickImpllabel extends StObject {
   
-  var label: String = js.native
+  var label: String
 }
 object PickImpllabel {
   

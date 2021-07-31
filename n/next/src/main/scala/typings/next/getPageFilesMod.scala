@@ -3,29 +3,30 @@ package typings.next
 import typings.next.anon.Dictpage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getPageFilesMod {
   
-  @JSImport("next/dist/next-server/server/get-page-files", "getPageFiles")
+  @JSImport("next/dist/next-server/server/get-page-files", JSImport.Namespace)
   @js.native
-  def getPageFiles(buildManifest: BuildManifest, page: String): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getPageFiles(buildManifest: BuildManifest, page: String): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("getPageFiles")(buildManifest.asInstanceOf[js.Any], page.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   trait BuildManifest extends StObject {
     
-    var ampDevFiles: js.Array[String] = js.native
+    var ampDevFiles: js.Array[String]
     
-    var ampFirstPages: js.Array[String] = js.native
+    var ampFirstPages: js.Array[String]
     
-    var devFiles: js.Array[String] = js.native
+    var devFiles: js.Array[String]
     
-    var lowPriorityFiles: js.Array[String] = js.native
+    var lowPriorityFiles: js.Array[String]
     
-    var pages: Dictpage = js.native
+    var pages: Dictpage
     
-    var polyfillFiles: js.Array[String] = js.native
+    var polyfillFiles: js.Array[String]
   }
   object BuildManifest {
     

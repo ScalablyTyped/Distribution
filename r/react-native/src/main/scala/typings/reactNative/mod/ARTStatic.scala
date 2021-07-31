@@ -3,21 +3,19 @@ package typings.reactNative.mod
 import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ARTStatic extends StObject {
   
-  var ClippingRectangle: Instantiable0[typings.reactNative.mod.ClippingRectangle] = js.native
+  var ClippingRectangle: Instantiable0[typings.reactNative.mod.ClippingRectangle]
   
-  var Group: Instantiable0[typings.reactNative.mod.Group] = js.native
+  var Group: Instantiable0[typings.reactNative.mod.Group]
   
-  var Shape: Instantiable0[typings.reactNative.mod.Shape] = js.native
+  var Shape: Instantiable0[typings.reactNative.mod.Shape]
   
-  var Surface: Instantiable0[typings.reactNative.mod.Surface] = js.native
+  var Surface: Instantiable0[typings.reactNative.mod.Surface]
   
-  var Text: Instantiable0[ARTText] = js.native
+  var Text: Instantiable0[ARTText]
 }
 object ARTStatic {
   

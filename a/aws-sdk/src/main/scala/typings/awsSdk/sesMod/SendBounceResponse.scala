@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendBounceResponse extends StObject {
   
   /**
     * The message ID of the bounce message.
     */
-  var MessageId: js.UndefOr[typings.awsSdk.sesMod.MessageId] = js.native
+  var MessageId: js.UndefOr[typings.awsSdk.sesMod.MessageId] = js.undefined
 }
 object SendBounceResponse {
   

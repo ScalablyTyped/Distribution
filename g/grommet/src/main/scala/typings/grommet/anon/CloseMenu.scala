@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseMenu extends StObject {
   
-  var closeMenu: js.UndefOr[String] = js.native
+  var closeMenu: js.UndefOr[String] = js.undefined
   
-  var openMenu: js.UndefOr[String] = js.native
+  var openMenu: js.UndefOr[String] = js.undefined
 }
 object CloseMenu {
   

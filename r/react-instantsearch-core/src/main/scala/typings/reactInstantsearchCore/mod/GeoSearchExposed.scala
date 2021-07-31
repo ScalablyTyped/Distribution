@@ -2,13 +2,11 @@ package typings.reactInstantsearchCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoSearchExposed extends StObject {
   
-  var defaultRefinement: js.UndefOr[NESW] = js.native
+  var defaultRefinement: js.UndefOr[NESW] = js.undefined
 }
 object GeoSearchExposed {
   

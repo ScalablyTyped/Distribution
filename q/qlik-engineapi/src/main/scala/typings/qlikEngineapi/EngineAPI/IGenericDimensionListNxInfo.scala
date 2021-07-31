@@ -3,23 +3,23 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.qlikEngineapiStrings.DimensionList
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericDimensionListNxInfo width extend NxInfo
   */
-@js.native
-trait IGenericDimensionListNxInfo extends INxInfo {
+trait IGenericDimensionListNxInfo
+  extends StObject
+     with INxInfo {
   
   @JSName("qType")
-  var qType_IGenericDimensionListNxInfo: DimensionList = js.native
+  var qType_IGenericDimensionListNxInfo: DimensionList
 }
 object IGenericDimensionListNxInfo {
   
   @scala.inline
-  def apply(qType: DimensionList): IGenericDimensionListNxInfo = {
-    val __obj = js.Dynamic.literal(qType = qType.asInstanceOf[js.Any])
+  def apply(): IGenericDimensionListNxInfo = {
+    val __obj = js.Dynamic.literal(qType = "DimensionList")
     __obj.asInstanceOf[IGenericDimensionListNxInfo]
   }
   

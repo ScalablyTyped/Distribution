@@ -2,16 +2,14 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeExportOutput extends StObject {
   
   /**
     * Represents the properties of the export.
     */
-  var ExportDescription: js.UndefOr[typings.awsSdk.dynamodbMod.ExportDescription] = js.native
+  var ExportDescription: js.UndefOr[typings.awsSdk.dynamodbMod.ExportDescription] = js.undefined
 }
 object DescribeExportOutput {
   

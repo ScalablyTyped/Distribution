@@ -2,20 +2,20 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LayerPromptOptions extends LayerOptions {
+trait LayerPromptOptions
+  extends StObject
+     with LayerOptions {
   
   @JSName("area")
-  var area_LayerPromptOptions: js.UndefOr[js.Array[String]] = js.native
+  var area_LayerPromptOptions: js.UndefOr[js.Array[String]] = js.undefined
   
-  var formType: js.UndefOr[Double] = js.native
+  var formType: js.UndefOr[Double] = js.undefined
   
-  var maxlength: js.UndefOr[Double] = js.native
+  var maxlength: js.UndefOr[Double] = js.undefined
   
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object LayerPromptOptions {
   

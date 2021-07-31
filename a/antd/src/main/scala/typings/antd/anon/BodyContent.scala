@@ -3,15 +3,13 @@ package typings.antd.anon
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyContent extends StObject {
   
-  var bodyContent: js.UndefOr[js.Object | ReactElement | Null] = js.native
+  var bodyContent: js.UndefOr[js.Object | ReactElement | Null] = js.undefined
   
-  var customize: Boolean = js.native
+  var customize: Boolean
 }
 object BodyContent {
   

@@ -2,27 +2,25 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusEvent extends StObject {
   
-  var affectedChannelGroups: js.Array[String] = js.native
+  var affectedChannelGroups: js.Array[String]
   
   // see Pubnub.Operations
-  var affectedChannels: js.Array[String] = js.native
+  var affectedChannels: js.Array[String]
   
-  var category: String = js.native
+  var category: String
   
-  var currentTimetoken: Double | String = js.native
+  var currentTimetoken: Double | String
   
-  var lastTimetoken: Double | String = js.native
+  var lastTimetoken: Double | String
   
   // see Pubnub.Categories
-  var operation: String = js.native
+  var operation: String
   
-  var subscribedChannels: js.Array[String] = js.native
+  var subscribedChannels: js.Array[String]
 }
 object StatusEvent {
   

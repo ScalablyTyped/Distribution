@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetAccessKeyLastUsedRequest extends StObject {
   
   /**
     * The identifier of an access key. This parameter allows (through its regex pattern) a string of characters that can consist of any upper or lowercased letter or digit.
     */
-  var AccessKeyId: accessKeyIdType = js.native
+  var AccessKeyId: accessKeyIdType
 }
 object GetAccessKeyLastUsedRequest {
   

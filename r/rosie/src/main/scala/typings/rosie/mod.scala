@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -17,7 +16,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("rosie", "Factory")
   @js.native
-  class Factory[T] () extends IFactory[T]
+  class Factory[T] ()
+    extends StObject
+       with IFactory[T]
   @JSImport("rosie", "Factory")
   @js.native
   def Factory: IFactoryStatic = js.native
@@ -151,15 +152,15 @@ object mod {
     def attributes(
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory with TopLevel[T]
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[T]
     ): T = js.native
     def attributes(
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory with TopLevel[T],
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
       options: js.Any
     ): T = js.native
-    def attributes(attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
+    def attributes(attributes: Unit, options: js.Any): T = js.native
     
     /**
       * Convenience function for defining a set of attributes on this object as
@@ -179,7 +180,7 @@ object mod {
     def attrs[Keys /* <: /* keyof T */ String */](
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in Keys ]: T[K] | (opts : any | undefined): T[K]}
-      */ typings.rosie.rosieStrings.IFactory with TopLevel[js.Any]
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[js.Any]
     ): IFactory[T] = js.native
     
     /**
@@ -194,31 +195,31 @@ object mod {
     def build(
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory with TopLevel[T]
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[T]
     ): T = js.native
     def build(
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory with TopLevel[T],
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
       options: js.Any
     ): T = js.native
-    def build(attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
+    def build(attributes: Unit, options: js.Any): T = js.native
     
     def buildList(size: Double): js.Array[T] = js.native
     def buildList(
       size: Double,
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory with TopLevel[T]
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[T]
     ): js.Array[T] = js.native
     def buildList(
       size: Double,
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactory with TopLevel[T],
+      */ typings.rosie.rosieStrings.IFactory & TopLevel[T],
       options: js.Any
     ): js.Array[T] = js.native
-    def buildList(size: Double, attributes: js.UndefOr[scala.Nothing], options: js.Any): js.Array[T] = js.native
+    def buildList(size: Double, attributes: Unit, options: js.Any): js.Array[T] = js.native
     
     /**
       * Extends a given factory by copying over its attributes, options,
@@ -269,11 +270,11 @@ object mod {
       * @return {Factory}
       */
     def option(name: String): IFactory[T] = js.native
-    def option(name: String, dependenciesOrValue: js.UndefOr[scala.Nothing], value: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Any, value: js.Any): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Array[String]): IFactory[T] = js.native
     def option(name: String, dependenciesOrValue: js.Array[String], value: js.Any): IFactory[T] = js.native
+    def option(name: String, dependenciesOrValue: Unit, value: js.Any): IFactory[T] = js.native
     
     /**
       * Generates values for all the registered options using the values given.
@@ -302,17 +303,18 @@ object mod {
       * @return {Factory}
       */
     def sequence[K /* <: /* keyof T */ String */](name: K): IFactory[T] = js.native
-    def sequence[K /* <: /* keyof T */ String */](name: K, builder: js.Function1[/* i */ Double, _]): IFactory[T] = js.native
+    def sequence[K /* <: /* keyof T */ String */](name: K, builder: js.Function1[/* i */ Double, js.Any]): IFactory[T] = js.native
     def sequence[K /* <: /* keyof T */ String */, D /* <: /* keyof T */ String */](
       name: K,
       dependencies: js.Array[D],
-      builder: js.Function2[/* i */ Double, /* repeated */ js.Any, _]
+      builder: js.Function2[/* i */ Double, /* repeated */ js.Any, js.Any]
     ): IFactory[T] = js.native
   }
   
   @js.native
   trait IFactoryStatic
-    extends Instantiable0[IFactory[js.Object]] {
+    extends StObject
+       with Instantiable0[IFactory[js.Object]] {
     
     /**
       * Locates a factory by name and calls #attributes on it.
@@ -338,16 +340,16 @@ object mod {
       name: String,
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactoryStatic with TopLevel[T]
+      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T]
     ): T = js.native
     def build[T](
       name: String,
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k]}
-      */ typings.rosie.rosieStrings.IFactoryStatic with TopLevel[T],
+      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T],
       options: js.Any
     ): T = js.native
-    def build[T](name: String, attributes: js.UndefOr[scala.Nothing], options: js.Any): T = js.native
+    def build[T](name: String, attributes: Unit, options: js.Any): T = js.native
     
     /**
       * Builds a collection of objects using the named factory.
@@ -364,17 +366,17 @@ object mod {
       size: Double,
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k] | boolean}
-      */ typings.rosie.rosieStrings.IFactoryStatic with TopLevel[T]
+      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T]
     ): js.Array[T] = js.native
     def buildList[T](
       name: String,
       size: Double,
       attributes: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ k in keyof T ]:? T[k] | boolean}
-      */ typings.rosie.rosieStrings.IFactoryStatic with TopLevel[T],
+      */ typings.rosie.rosieStrings.IFactoryStatic & TopLevel[T],
       options: js.Any
     ): js.Array[T] = js.native
-    def buildList[T](name: String, size: Double, attributes: js.UndefOr[scala.Nothing], options: js.Any): js.Array[T] = js.native
+    def buildList[T](name: String, size: Double, attributes: Unit, options: js.Any): js.Array[T] = js.native
     
     /**
       * Defines a factory by name and constructor function. Call #attr and #option
@@ -385,7 +387,7 @@ object mod {
       * @return {Factory}
       */
     def define[T](name: String): IFactory[T] = js.native
-    def define[T](name: String, constructor: js.Function1[/* repeated */ js.Any, _]): IFactory[T] = js.native
+    def define[T](name: String, constructor: js.Function1[/* repeated */ js.Any, js.Any]): IFactory[T] = js.native
     def define[T](name: String, constructor: Instantiable1[/* opts (repeated) */ js.Any, js.Any]): IFactory[T] = js.native
   }
 }

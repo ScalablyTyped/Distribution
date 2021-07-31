@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientPrivateca.gapi.client.privateca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActivateCertificateAuthorityRequest extends StObject {
   
   /** Required. The signed CA certificate issued from FetchCertificateAuthorityCsrResponse.pem_csr. */
-  var pemCaCertificate: js.UndefOr[String] = js.native
+  var pemCaCertificate: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. An ID to identify requests. Specify a unique request ID so that if you must retry your request, the server will know to ignore the request if it has already been
@@ -18,10 +16,10 @@ trait ActivateCertificateAuthorityRequest extends StObject {
     * request. This prevents clients from accidentally creating duplicate commitments. The request ID must be a valid UUID with the exception that zero UUID is not supported
     * (00000000-0000-0000-0000-000000000000).
     */
-  var requestId: js.UndefOr[String] = js.native
+  var requestId: js.UndefOr[String] = js.undefined
   
   /** Required. Must include information about the issuer of 'pem_ca_certificate', and any further issuers until the self-signed CA. */
-  var subordinateConfig: js.UndefOr[SubordinateConfig] = js.native
+  var subordinateConfig: js.UndefOr[SubordinateConfig] = js.undefined
 }
 object ActivateCertificateAuthorityRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestCustomDataIdentifierResponse extends StObject {
   
   /**
     * The number of instances of sample text that matched the detection criteria specified in the custom data identifier.
     */
-  var matchCount: js.UndefOr[integer] = js.native
+  var matchCount: js.UndefOr[integer] = js.undefined
 }
 object TestCustomDataIdentifierResponse {
   

@@ -3,15 +3,13 @@ package typings.node.anon
 import typings.node.BufferEncoding
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chunk extends StObject {
   
-  var chunk: js.Any = js.native
+  var chunk: js.Any
   
-  var encoding: BufferEncoding = js.native
+  var encoding: BufferEncoding
 }
 object Chunk {
   

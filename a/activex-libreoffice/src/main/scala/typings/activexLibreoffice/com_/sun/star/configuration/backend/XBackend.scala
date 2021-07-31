@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.configuration.backend.XSchemaSupplier
   * @since OOo 1.1.2
   */
-@js.native
-trait XBackend extends XInterface {
+trait XBackend
+  extends StObject
+     with XInterface {
   
   /**
     * creates an update handler for the owner entity layer for a component.
@@ -31,7 +31,7 @@ trait XBackend extends XInterface {
     * @throws com::sun::star::lang::NoSupportException if updates are not supported for this backend
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getOwnUpdateHandler(aComponent: String): XUpdateHandler = js.native
+  def getOwnUpdateHandler(aComponent: String): XUpdateHandler
   
   /**
     * creates an update handler on an entity's layer for a component.
@@ -43,7 +43,7 @@ trait XBackend extends XInterface {
     * @throws com::sun::star::lang::NoSupportException if updates are not supported for this backend
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def getUpdateHandler(aComponent: String, aEntity: String): XUpdateHandler = js.native
+  def getUpdateHandler(aComponent: String, aEntity: String): XUpdateHandler
   
   /**
     * retrieves the layers associated to an entity for a component.
@@ -54,7 +54,7 @@ trait XBackend extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid or if the entity doesn't exist.
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def listLayers(aComponent: String, aEntity: String): SafeArray[XLayer] = js.native
+  def listLayers(aComponent: String, aEntity: String): SafeArray[XLayer]
   
   /**
     * retrieves the layers associated to the owner entity for a component.
@@ -64,7 +64,7 @@ trait XBackend extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the component identifier is invalid
     * @throws com::sun::star::configuration::backend::BackendAccessException if an error occurs while accessing the data.
     */
-  def listOwnLayers(aComponent: String): SafeArray[XLayer] = js.native
+  def listOwnLayers(aComponent: String): SafeArray[XLayer]
 }
 object XBackend {
   

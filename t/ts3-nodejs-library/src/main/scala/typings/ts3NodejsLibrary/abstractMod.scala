@@ -5,7 +5,6 @@ import typings.ts3NodejsLibrary.teamSpeakMod.TeamSpeak
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractMod {
@@ -34,8 +33,8 @@ object abstractMod {
     var propcache: js.Any = js.native
     
     /** returns JSONifyable data */
-    def toJSON(): Record[String, _] = js.native
-    def toJSON(includeNameSpace: Boolean): Record[String, _] = js.native
+    def toJSON(): Record[String, js.Any] = js.native
+    def toJSON(includeNameSpace: Boolean): Record[String, js.Any] = js.native
     
     /** updates the cache with the given object */
     def updateCache(props: ResponseEntry): this.type = js.native

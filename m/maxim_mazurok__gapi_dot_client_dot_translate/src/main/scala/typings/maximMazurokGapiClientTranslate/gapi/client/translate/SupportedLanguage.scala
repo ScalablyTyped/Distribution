@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientTranslate.gapi.client.translate
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedLanguage extends StObject {
   
   /** Human readable name of the language localized in the display language specified in the request. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * Supported language code, generally consisting of its ISO 639-1 identifier, for example, 'en', 'ja'. In certain cases, BCP-47 codes including language and region identifiers are
     * returned (for example, 'zh-TW' and 'zh-CN')
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
   /** Can be used as source language. */
-  var supportSource: js.UndefOr[Boolean] = js.native
+  var supportSource: js.UndefOr[Boolean] = js.undefined
   
   /** Can be used as target language. */
-  var supportTarget: js.UndefOr[Boolean] = js.native
+  var supportTarget: js.UndefOr[Boolean] = js.undefined
 }
 object SupportedLanguage {
   

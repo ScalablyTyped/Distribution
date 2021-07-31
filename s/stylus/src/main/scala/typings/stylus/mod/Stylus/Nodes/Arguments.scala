@@ -4,13 +4,13 @@ import typings.stylus.anon.Column
 import typings.stylus.mod.Stylus.Dictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Arguments extends Expression {
+trait Arguments
+  extends StObject
+     with Expression {
   
-  var map: Dictionary[Node] = js.native
+  var map: Dictionary[Node]
 }
 object Arguments {
   

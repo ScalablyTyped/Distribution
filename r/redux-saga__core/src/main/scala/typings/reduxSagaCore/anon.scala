@@ -3,25 +3,23 @@ package typings.reduxSagaCore
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
-    var effectId: Double = js.native
+    var effectId: Double
     
-    var saga: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any = js.native
+    var saga: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any
   }
   object Args {
     
     @scala.inline
     def apply(
-      args: js.Array[_],
+      args: js.Array[js.Any],
       effectId: Double,
       saga: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Saga */ js.Any
     ): Args = {
@@ -33,7 +31,7 @@ object anon {
     implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -48,29 +46,28 @@ object anon {
     }
   }
   
-  @js.native
   trait Context[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.Context with TopLevel[js.Any] */, Name /* <: String */] extends StObject {
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[js.Any] */, Name /* <: String */] extends StObject {
     
-    var context: Ctx = js.native
+    var context: Ctx
     
-    var fn: Name = js.native
+    var fn: Name
   }
   object Context {
     
     @scala.inline
     def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): any}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context with TopLevel[js.Any] */, Name /* <: String */](context: Ctx, fn: Name): Context[Ctx, Name] = {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[js.Any] */, Name /* <: String */](context: Ctx, fn: Name): Context[Ctx, Name] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Context[Ctx, Name]]
     }
     
     @scala.inline
-    implicit class ContextMutableBuilder[Self <: Context[_, _], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    implicit class ContextMutableBuilder[Self <: Context[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): any}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context with TopLevel[js.Any] */, Name /* <: String */] (val x: Self with (Context[Ctx, Name])) extends AnyVal {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Context & TopLevel[js.Any] */, Name /* <: String */] (val x: Self & (Context[Ctx, Name])) extends AnyVal {
       
       @scala.inline
       def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -80,12 +77,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ContextCtx[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */] extends StObject {
     
-    var context: Ctx = js.native
+    var context: Ctx
     
-    var fn: Fn = js.native
+    var fn: Fn
   }
   object ContextCtx {
     
@@ -96,7 +92,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ContextCtxMutableBuilder[Self <: ContextCtx[_, _], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */] (val x: Self with (ContextCtx[Ctx, Fn])) extends AnyVal {
+    implicit class ContextCtxMutableBuilder[Self <: ContextCtx[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */] (val x: Self & (ContextCtx[Ctx, Fn])) extends AnyVal {
       
       @scala.inline
       def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -106,23 +102,22 @@ object anon {
     }
   }
   
-  @js.native
-  trait ContextFn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */] extends StObject {
+  trait ContextFn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */] extends StObject {
     
-    var context: Ctx = js.native
+    var context: Ctx
     
-    var fn: Fn = js.native
+    var fn: Fn
   }
   object ContextFn {
     
     @scala.inline
-    def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](context: Ctx, fn: Fn): ContextFn[Ctx, Fn] = {
+    def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](context: Ctx, fn: Fn): ContextFn[Ctx, Fn] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[ContextFn[Ctx, Fn]]
     }
     
     @scala.inline
-    implicit class ContextFnMutableBuilder[Self <: ContextFn[_, _], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */] (val x: Self with (ContextFn[Ctx, Fn])) extends AnyVal {
+    implicit class ContextFnMutableBuilder[Self <: ContextFn[?, ?], Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */] (val x: Self & (ContextFn[Ctx, Fn])) extends AnyVal {
       
       @scala.inline
       def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -132,16 +127,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Effect extends StObject {
     
-    var effect: js.Any = js.native
+    var effect: js.Any
     
-    var effectId: Double = js.native
+    var effectId: Double
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var parentEffectId: Double = js.native
+    var parentEffectId: Double
   }
   object Effect {
     
@@ -171,29 +165,28 @@ object anon {
     }
   }
   
-  @js.native
   trait Fn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): void}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn with TopLevel[js.Any] */, Name /* <: String */] extends StObject {
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[js.Any] */, Name /* <: String */] extends StObject {
     
-    var context: Ctx = js.native
+    var context: Ctx
     
-    var fn: Name = js.native
+    var fn: Name
   }
   object Fn {
     
     @scala.inline
     def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): void}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn with TopLevel[js.Any] */, Name /* <: String */](context: Ctx, fn: Name): Fn[Ctx, Name] = {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[js.Any] */, Name /* <: String */](context: Ctx, fn: Name): Fn[Ctx, Name] = {
       val __obj = js.Dynamic.literal(context = context.asInstanceOf[js.Any], fn = fn.asInstanceOf[js.Any])
       __obj.asInstanceOf[Fn[Ctx, Name]]
     }
     
     @scala.inline
-    implicit class FnMutableBuilder[Self <: Fn[_, _], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    implicit class FnMutableBuilder[Self <: Fn[?, ?], Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in Name ]: (this : Ctx, args : ...any): void}
-      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn with TopLevel[js.Any] */, Name /* <: String */] (val x: Self with (Fn[Ctx, Name])) extends AnyVal {
+      */ typings.reduxSagaCore.reduxSagaCoreStrings.Fn & TopLevel[js.Any] */, Name /* <: String */] (val x: Self & (Fn[Ctx, Name])) extends AnyVal {
       
       @scala.inline
       def setContext(value: Ctx): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

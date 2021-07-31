@@ -2,21 +2,19 @@ package typings.awsSdk.organizationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterDelegatedAdministratorRequest extends StObject {
   
   /**
     * The account ID number of the member account in the organization to register as a delegated administrator.
     */
-  var AccountId: typings.awsSdk.organizationsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.organizationsMod.AccountId
   
   /**
     * The service principal of the AWS service for which you want to make the member account a delegated administrator.
     */
-  var ServicePrincipal: typings.awsSdk.organizationsMod.ServicePrincipal = js.native
+  var ServicePrincipal: typings.awsSdk.organizationsMod.ServicePrincipal
 }
 object RegisterDelegatedAdministratorRequest {
   

@@ -2,27 +2,25 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Poll extends StObject {
   
-  var allows_multiple_answers: Boolean = js.native
+  var allows_multiple_answers: Boolean
   
-  var id: String = js.native
+  var id: String
   
-  var is_anonymous: Boolean = js.native
+  var is_anonymous: Boolean
   
-  var is_closed: Boolean = js.native
+  var is_closed: Boolean
   
-  var options: js.Array[PollOption] = js.native
+  var options: js.Array[PollOption]
   
-  var question: String = js.native
+  var question: String
   
-  var total_voter_count: Double = js.native
+  var total_voter_count: Double
   
-  var `type`: PollType = js.native
+  var `type`: PollType
 }
 object Poll {
   

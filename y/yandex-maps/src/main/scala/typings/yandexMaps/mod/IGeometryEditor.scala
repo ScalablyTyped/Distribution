@@ -2,19 +2,19 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IGeometryEditor extends ICustomizable {
+trait IGeometryEditor
+  extends StObject
+     with ICustomizable {
   
-  var geometry: IGeometry = js.native
+  var geometry: IGeometry
   
-  def startEditing(): Unit = js.native
+  def startEditing(): Unit
   
-  var state: IDataManager = js.native
+  var state: IDataManager
   
-  def stopEditing(): Unit = js.native
+  def stopEditing(): Unit
 }
 object IGeometryEditor {
   

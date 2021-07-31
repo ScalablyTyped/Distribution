@@ -2,13 +2,11 @@ package typings.devtoolsProtocol.mod.Protocol.ServiceWorker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerVersionUpdatedEvent extends StObject {
   
-  var versions: js.Array[ServiceWorkerVersion] = js.native
+  var versions: js.Array[ServiceWorkerVersion]
 }
 object WorkerVersionUpdatedEvent {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserImportJobsResponse extends StObject {
   
   /**
     * An identifier that can be used to return the next set of user import jobs in the list.
     */
-  var PaginationToken: js.UndefOr[PaginationKeyType] = js.native
+  var PaginationToken: js.UndefOr[PaginationKeyType] = js.undefined
   
   /**
     * The user import jobs.
     */
-  var UserImportJobs: js.UndefOr[UserImportJobsListType] = js.native
+  var UserImportJobs: js.UndefOr[UserImportJobsListType] = js.undefined
 }
 object ListUserImportJobsResponse {
   

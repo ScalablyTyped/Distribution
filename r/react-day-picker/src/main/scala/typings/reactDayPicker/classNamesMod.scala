@@ -2,59 +2,57 @@ package typings.reactDayPicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classNamesMod {
   
-  @js.native
   trait ClassNames extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var caption: String = js.native
+    var caption: String
     
-    var container: String = js.native
+    var container: String
     
-    var day: String = js.native
+    var day: String
     
-    var disabled: String = js.native
+    var disabled: String
     
-    var footer: String = js.native
+    var footer: String
     
-    var interactionDisabled: String = js.native
+    var interactionDisabled: String
     
-    var month: String = js.native
+    var month: String
     
-    var months: String = js.native
+    var months: String
     
-    var navBar: String = js.native
+    var navBar: String
     
-    var navButtonInteractionDisabled: String = js.native
+    var navButtonInteractionDisabled: String
     
-    var navButtonNext: String = js.native
+    var navButtonNext: String
     
-    var navButtonPrev: String = js.native
+    var navButtonPrev: String
     
-    var outside: String = js.native
+    var outside: String
     
-    var selected: String = js.native
+    var selected: String
     
-    var today: String = js.native
+    var today: String
     
-    var todayButton: String = js.native
+    var todayButton: String
     
-    var week: String = js.native
+    var week: String
     
-    var weekNumber: String = js.native
+    var weekNumber: String
     
-    var weekday: String = js.native
+    var weekday: String
     
-    var weekdays: String = js.native
+    var weekdays: String
     
-    var weekdaysRow: String = js.native
+    var weekdaysRow: String
     
-    var wrapper: String = js.native
+    var wrapper: String
   }
   object ClassNames {
     
@@ -162,14 +160,13 @@ object classNamesMod {
     }
   }
   
-  @js.native
   trait InputClassNames extends StObject {
     
-    var container: String = js.native
+    var container: String
     
-    var overlay: String = js.native
+    var overlay: String
     
-    var overlayWrapper: String = js.native
+    var overlayWrapper: String
   }
   object InputClassNames {
     

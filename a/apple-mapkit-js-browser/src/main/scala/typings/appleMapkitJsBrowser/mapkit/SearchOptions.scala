@@ -2,44 +2,42 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Options you can provide when performing a search.
   */
-@js.native
 trait SearchOptions extends StObject {
   
   /**
     * A map coordinate that provides a hint for the geographic area to search.
     */
-  var coordinate: Coordinate = js.native
+  var coordinate: Coordinate
   
   /**
     * A Boolean value that indicates whether the search results should include addresses.
     */
-  var includeAddresses: js.UndefOr[Boolean] = js.native
+  var includeAddresses: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value that indicates whether the search results should include points of interest.
     */
-  var includePointsOfInterest: js.UndefOr[Boolean] = js.native
+  var includePointsOfInterest: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A language ID that determines the language for the search result text.
     */
-  var language: String = js.native
+  var language: String
   
   /**
     * A filter used to include or exclude point of interest categories in search results.
     */
-  var pointOfInterestFilter: js.UndefOr[PointOfInterestFilter] = js.native
+  var pointOfInterestFilter: js.UndefOr[PointOfInterestFilter] = js.undefined
   
   /**
     * A map region that provides a hint for the geographic area to search.
     */
-  var region: CoordinateRegion = js.native
+  var region: CoordinateRegion
 }
 object SearchOptions {
   

@@ -26,10 +26,13 @@ import typings.storybookComponents.typesetMod.TypesetProps
 import typings.storybookTheming.typesMod.Theme
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object blocksMod {
+  
+  @JSImport("@storybook/components/dist/blocks", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@storybook/components/dist/blocks", "ArgsTable")
   @js.native
@@ -40,11 +43,11 @@ object blocksMod {
   object ArgsTableError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookComponents.argsTableArgsTableMod.ArgsTableError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookComponents.argsTableArgsTableMod.ArgsTableError & String] = js.native
     
-    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED with String = js.native
+    /* "Args unsupported. See Args documentation for your framework." */ val ARGS_UNSUPPORTED: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.ARGS_UNSUPPORTED & String = js.native
     
-    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT with String = js.native
+    /* "No component found." */ val NO_COMPONENT: typings.storybookComponents.argsTableArgsTableMod.ArgsTableError.NO_COMPONENT & String = js.native
   }
   
   @JSImport("@storybook/components/dist/blocks", "ColorItem")
@@ -95,9 +98,8 @@ object blocksMod {
   @js.native
   val IconItem: FunctionComponent[IconItemProps] = js.native
   
-  @JSImport("@storybook/components/dist/blocks", "NoControlsWarning")
-  @js.native
-  def NoControlsWarning(): Element = js.native
+  @scala.inline
+  def NoControlsWarning(): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("NoControlsWarning")().asInstanceOf[Element]
   
   /**
     * A preview component for showing one or more component `Story`
@@ -120,11 +122,11 @@ object blocksMod {
   object SourceError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookComponents.sourceMod.SourceError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookComponents.sourceMod.SourceError & String] = js.native
     
-    /* "There\\u2019s no story here." */ val NO_STORY: typings.storybookComponents.sourceMod.SourceError.NO_STORY with String = js.native
+    /* "There\\u2019s no story here." */ val NO_STORY: typings.storybookComponents.sourceMod.SourceError.NO_STORY & String = js.native
     
-    /* "Oh no! The source is not available." */ val SOURCE_UNAVAILABLE: typings.storybookComponents.sourceMod.SourceError.SOURCE_UNAVAILABLE with String = js.native
+    /* "Oh no! The source is not available." */ val SOURCE_UNAVAILABLE: typings.storybookComponents.sourceMod.SourceError.SOURCE_UNAVAILABLE & String = js.native
   }
   
   /**
@@ -133,16 +135,16 @@ object blocksMod {
     */
   @JSImport("@storybook/components/dist/blocks", "Story")
   @js.native
-  val Story: FunctionComponent[StoryProps with Error] = js.native
+  val Story: FunctionComponent[StoryProps & Error] = js.native
   
   @JSImport("@storybook/components/dist/blocks", "StoryError")
   @js.native
   object StoryError extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[typings.storybookComponents.storyMod.StoryError with String] = js.native
+    def apply(value: String): js.UndefOr[typings.storybookComponents.storyMod.StoryError & String] = js.native
     
-    /* "No component or story to display" */ val NO_STORY: typings.storybookComponents.storyMod.StoryError.NO_STORY with String = js.native
+    /* "No component or story to display" */ val NO_STORY: typings.storybookComponents.storyMod.StoryError.NO_STORY & String = js.native
   }
   
   @JSImport("@storybook/components/dist/blocks", "Subtitle")

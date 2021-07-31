@@ -2,17 +2,15 @@ package typings.surveyKnockout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Controls extends StObject {
   
-  var clearButton: String = js.native
+  var clearButton: String
   
-  var controls: String = js.native
+  var controls: String
   
-  var root: String = js.native
+  var root: String
 }
 object Controls {
   

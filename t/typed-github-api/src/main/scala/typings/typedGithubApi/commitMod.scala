@@ -7,17 +7,17 @@ import typings.typedGithubApi.anon.Payload
 import typings.typedGithubApi.userMod.UserSummary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commitMod {
   
-  @js.native
-  trait Commit extends CommitSummary {
+  trait Commit
+    extends StObject
+       with CommitSummary {
     
-    var files: js.Array[Bloburl] = js.native
+    var files: js.Array[Bloburl]
     
-    var stats: Additions = js.native
+    var stats: Additions
   }
   object Commit {
     
@@ -52,10 +52,11 @@ object commitMod {
     }
   }
   
-  @js.native
-  trait CommitRef extends GitRef {
+  trait CommitRef
+    extends StObject
+       with GitRef {
     
-    var html_url: String = js.native
+    var html_url: String
   }
   object CommitRef {
     
@@ -73,24 +74,23 @@ object commitMod {
     }
   }
   
-  @js.native
   trait CommitSummary extends StObject {
     
-    var author: UserSummary = js.native
+    var author: UserSummary
     
-    var comments_url: String = js.native
+    var comments_url: String
     
-    var commit: GitCommitSummary = js.native
+    var commit: GitCommitSummary
     
-    var committer: UserSummary = js.native
+    var committer: UserSummary
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var parents: js.Array[CommitRef] = js.native
+    var parents: js.Array[CommitRef]
     
-    var sha: String = js.native
+    var sha: String
     
-    var url: String = js.native
+    var url: String
   }
   object CommitSummary {
     
@@ -141,14 +141,13 @@ object commitMod {
     }
   }
   
-  @js.native
   trait GitActor extends StObject {
     
-    var date: Date = js.native
+    var date: Date
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
   }
   object GitActor {
     
@@ -172,14 +171,15 @@ object commitMod {
     }
   }
   
-  @js.native
-  trait GitCommit extends GitCommitSummary {
+  trait GitCommit
+    extends StObject
+       with GitCommitSummary {
     
-    var html_url: String = js.native
+    var html_url: String
     
-    var parents: js.Array[CommitRef] = js.native
+    var parents: js.Array[CommitRef]
     
-    var sha: String = js.native
+    var sha: String
   }
   object GitCommit {
     
@@ -216,22 +216,21 @@ object commitMod {
     }
   }
   
-  @js.native
   trait GitCommitSummary extends StObject {
     
-    var author: GitActor = js.native
+    var author: GitActor
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var committer: GitActor = js.native
+    var committer: GitActor
     
-    var message: String = js.native
+    var message: String
     
-    var tree: GitRef = js.native
+    var tree: GitRef
     
-    var url: String = js.native
+    var url: String
     
-    var verification: js.UndefOr[Payload] = js.native
+    var verification: js.UndefOr[Payload] = js.undefined
   }
   object GitCommitSummary {
     
@@ -277,12 +276,11 @@ object commitMod {
     }
   }
   
-  @js.native
   trait GitRef extends StObject {
     
-    var sha: String = js.native
+    var sha: String
     
-    var url: String = js.native
+    var url: String
   }
   object GitRef {
     

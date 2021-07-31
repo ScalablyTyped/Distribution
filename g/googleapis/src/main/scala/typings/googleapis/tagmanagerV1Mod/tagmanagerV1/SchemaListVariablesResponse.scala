@@ -2,19 +2,17 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List Variables Response.
   */
-@js.native
 trait SchemaListVariablesResponse extends StObject {
   
   /**
     * All GTM Variables of a GTM Container.
     */
-  var variables: js.UndefOr[js.Array[SchemaVariable]] = js.native
+  var variables: js.UndefOr[js.Array[SchemaVariable]] = js.undefined
 }
 object SchemaListVariablesResponse {
   

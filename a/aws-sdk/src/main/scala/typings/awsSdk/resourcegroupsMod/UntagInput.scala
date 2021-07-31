@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagInput extends StObject {
   
   /**
     * The ARN of the resource group from which to remove tags. The command removed both the specified keys and any values associated with those keys.
     */
-  var Arn: GroupArn = js.native
+  var Arn: GroupArn
   
   /**
     * The keys of the tags to be removed.
     */
-  var Keys: TagKeyList = js.native
+  var Keys: TagKeyList
 }
 object UntagInput {
   

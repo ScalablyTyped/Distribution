@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object efs {
   
-  @js.native
   trait AccessPointPosixUser extends StObject {
     
     /**
       * The POSIX group ID used for all file system operations using this access point.
       */
-    var gid: Input[Double] = js.native
+    var gid: Input[Double]
     
     /**
       * Secondary POSIX group IDs used for all file system operations using this access point.
       */
-    var secondaryGids: js.UndefOr[Input[js.Array[Input[Double]]]] = js.native
+    var secondaryGids: js.UndefOr[Input[js.Array[Input[Double]]]] = js.undefined
     
     /**
       * The POSIX user ID used for all file system operations using this access point.
       */
-    var uid: Input[Double] = js.native
+    var uid: Input[Double]
   }
   object AccessPointPosixUser {
     
@@ -54,18 +52,17 @@ object efs {
     }
   }
   
-  @js.native
   trait AccessPointRootDirectory extends StObject {
     
     /**
       * Specifies the POSIX IDs and permissions to apply to the access point's Root Directory. See Creation Info below.
       */
-    var creationInfo: js.UndefOr[Input[AccessPointRootDirectoryCreationInfo]] = js.native
+    var creationInfo: js.UndefOr[Input[AccessPointRootDirectoryCreationInfo]] = js.undefined
     
     /**
       * Specifies the path on the EFS file system to expose as the root directory to NFS clients using the access point to access the EFS file system. A path can have up to four subdirectories. If the specified path does not exist, you are required to provide `creationInfo`.
       */
-    var path: js.UndefOr[Input[String]] = js.native
+    var path: js.UndefOr[Input[String]] = js.undefined
   }
   object AccessPointRootDirectory {
     
@@ -92,23 +89,22 @@ object efs {
     }
   }
   
-  @js.native
   trait AccessPointRootDirectoryCreationInfo extends StObject {
     
     /**
       * Specifies the POSIX group ID to apply to the `rootDirectory`.
       */
-    var ownerGid: Input[Double] = js.native
+    var ownerGid: Input[Double]
     
     /**
       * Specifies the POSIX user ID to apply to the `rootDirectory`.
       */
-    var ownerUid: Input[Double] = js.native
+    var ownerUid: Input[Double]
     
     /**
       * Specifies the POSIX permissions to apply to the RootDirectory, in the format of an octal number representing the file's mode bits.
       */
-    var permissions: Input[String] = js.native
+    var permissions: Input[String]
   }
   object AccessPointRootDirectoryCreationInfo {
     
@@ -132,13 +128,12 @@ object efs {
     }
   }
   
-  @js.native
   trait FileSystemLifecyclePolicy extends StObject {
     
     /**
       * Indicates how long it takes to transition files to the IA storage class. Valid values: `AFTER_7_DAYS`, `AFTER_14_DAYS`, `AFTER_30_DAYS`, `AFTER_60_DAYS`, or `AFTER_90_DAYS`.
       */
-    var transitionToIa: Input[String] = js.native
+    var transitionToIa: Input[String]
   }
   object FileSystemLifecyclePolicy {
     

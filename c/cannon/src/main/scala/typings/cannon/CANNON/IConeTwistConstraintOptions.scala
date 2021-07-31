@@ -2,21 +2,19 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConeTwistConstraintOptions extends StObject {
   
-  var axisA: js.UndefOr[Vec3] = js.native
+  var axisA: js.UndefOr[Vec3] = js.undefined
   
-  var axisB: js.UndefOr[Vec3] = js.native
+  var axisB: js.UndefOr[Vec3] = js.undefined
   
-  var maxForce: js.UndefOr[Double] = js.native
+  var maxForce: js.UndefOr[Double] = js.undefined
   
-  var pivotA: js.UndefOr[Vec3] = js.native
+  var pivotA: js.UndefOr[Vec3] = js.undefined
   
-  var pivotB: js.UndefOr[Vec3] = js.native
+  var pivotB: js.UndefOr[Vec3] = js.undefined
 }
 object IConeTwistConstraintOptions {
   

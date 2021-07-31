@@ -2,25 +2,23 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallHierarchyItem extends StObject {
   
-  var containerName: js.UndefOr[java.lang.String] = js.native
+  var containerName: js.UndefOr[java.lang.String] = js.undefined
   
-  var file: java.lang.String = js.native
+  var file: java.lang.String
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
-  var kindModifiers: js.UndefOr[java.lang.String] = js.native
+  var kindModifiers: js.UndefOr[java.lang.String] = js.undefined
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
   
-  var selectionSpan: TextSpan = js.native
+  var selectionSpan: TextSpan
   
-  var span: TextSpan = js.native
+  var span: TextSpan
 }
 object CallHierarchyItem {
   

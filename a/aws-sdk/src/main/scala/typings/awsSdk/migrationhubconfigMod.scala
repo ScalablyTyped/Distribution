@@ -9,7 +9,6 @@ import typings.awsSdk.serviceMod.ServiceConfigurationOptions
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object migrationhubconfigMod {
@@ -23,16 +22,14 @@ object migrationhubconfigMod {
     def this(options: ClientConfiguration) = this()
   }
   
-  @js.native
   trait Blob extends StObject
   
-  @js.native
   trait ClientApiVersions extends StObject {
     
     /**
       * A string in YYYY-MM-DD format that represents the latest possible API version that can be used in this service. Specify 'latest' to use the latest possible version.
       */
-    var apiVersion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.apiVersion] = js.native
+    var apiVersion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.apiVersion] = js.undefined
   }
   object ClientApiVersions {
     
@@ -53,27 +50,29 @@ object migrationhubconfigMod {
     }
   }
   
-  type ClientConfiguration = ServiceConfigurationOptions with ClientApiVersions
+  @js.native
+  trait ClientConfiguration
+    extends ServiceConfigurationOptions
+       with ClientApiVersions
   
   type ControlId = String
   
-  @js.native
   trait CreateHomeRegionControlRequest extends StObject {
     
     /**
       * Optional Boolean flag to indicate whether any effect should take place. It tests whether the caller has permission to make the call.
       */
-    var DryRun: js.UndefOr[typings.awsSdk.migrationhubconfigMod.DryRun] = js.native
+    var DryRun: js.UndefOr[typings.awsSdk.migrationhubconfigMod.DryRun] = js.undefined
     
     /**
       * The name of the home region of the calling account.
       */
-    var HomeRegion: typings.awsSdk.migrationhubconfigMod.HomeRegion = js.native
+    var HomeRegion: typings.awsSdk.migrationhubconfigMod.HomeRegion
     
     /**
       * The account for which this command sets up a home region control. The Target is always of type ACCOUNT.
       */
-    var Target: typings.awsSdk.migrationhubconfigMod.Target = js.native
+    var Target: typings.awsSdk.migrationhubconfigMod.Target
   }
   object CreateHomeRegionControlRequest {
     
@@ -100,13 +99,12 @@ object migrationhubconfigMod {
     }
   }
   
-  @js.native
   trait CreateHomeRegionControlResult extends StObject {
     
     /**
       * This object is the HomeRegionControl object that's returned by a successful call to CreateHomeRegionControl.
       */
-    var HomeRegionControl: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegionControl] = js.native
+    var HomeRegionControl: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegionControl] = js.undefined
   }
   object CreateHomeRegionControlResult {
     
@@ -129,33 +127,32 @@ object migrationhubconfigMod {
   
   type DescribeHomeRegionControlsMaxResults = Double
   
-  @js.native
   trait DescribeHomeRegionControlsRequest extends StObject {
     
     /**
       * The ControlID is a unique identifier string of your HomeRegionControl object.
       */
-    var ControlId: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ControlId] = js.native
+    var ControlId: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ControlId] = js.undefined
     
     /**
       * The name of the home region you'd like to view.
       */
-    var HomeRegion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegion] = js.native
+    var HomeRegion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegion] = js.undefined
     
     /**
       * The maximum number of filtering results to display per page. 
       */
-    var MaxResults: js.UndefOr[DescribeHomeRegionControlsMaxResults] = js.native
+    var MaxResults: js.UndefOr[DescribeHomeRegionControlsMaxResults] = js.undefined
     
     /**
       * If a NextToken was returned by a previous call, more results are available. To retrieve the next page of results, make the call again using the returned token in NextToken.
       */
-    var NextToken: js.UndefOr[Token] = js.native
+    var NextToken: js.UndefOr[Token] = js.undefined
     
     /**
       * The target parameter specifies the identifier to which the home region is applied, which is always of type ACCOUNT. It applies the home region to the current ACCOUNT.
       */
-    var Target: js.UndefOr[typings.awsSdk.migrationhubconfigMod.Target] = js.native
+    var Target: js.UndefOr[typings.awsSdk.migrationhubconfigMod.Target] = js.undefined
   }
   object DescribeHomeRegionControlsRequest {
     
@@ -200,18 +197,17 @@ object migrationhubconfigMod {
     }
   }
   
-  @js.native
   trait DescribeHomeRegionControlsResult extends StObject {
     
     /**
       * An array that contains your HomeRegionControl objects.
       */
-    var HomeRegionControls: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegionControls] = js.native
+    var HomeRegionControls: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegionControls] = js.undefined
     
     /**
       * If a NextToken was returned by a previous call, more results are available. To retrieve the next page of results, make the call again using the returned token in NextToken.
       */
-    var NextToken: js.UndefOr[Token] = js.native
+    var NextToken: js.UndefOr[Token] = js.undefined
   }
   object DescribeHomeRegionControlsResult {
     
@@ -243,16 +239,14 @@ object migrationhubconfigMod {
   
   type DryRun = Boolean
   
-  @js.native
   trait GetHomeRegionRequest extends StObject
   
-  @js.native
   trait GetHomeRegionResult extends StObject {
     
     /**
       * The name of the home region of the calling account.
       */
-    var HomeRegion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegion] = js.native
+    var HomeRegion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegion] = js.undefined
   }
   object GetHomeRegionResult {
     
@@ -275,28 +269,27 @@ object migrationhubconfigMod {
   
   type HomeRegion = String
   
-  @js.native
   trait HomeRegionControl extends StObject {
     
     /**
       * A unique identifier that's generated for each home region control. It's always a string that begins with "hrc-" followed by 12 lowercase letters and numbers.
       */
-    var ControlId: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ControlId] = js.native
+    var ControlId: js.UndefOr[typings.awsSdk.migrationhubconfigMod.ControlId] = js.undefined
     
     /**
       * The AWS Region that's been set as home region. For example, "us-west-2" or "eu-central-1" are valid home regions.
       */
-    var HomeRegion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegion] = js.native
+    var HomeRegion: js.UndefOr[typings.awsSdk.migrationhubconfigMod.HomeRegion] = js.undefined
     
     /**
       * A timestamp representing the time when the customer called CreateHomeregionControl and set the home region for the account.
       */
-    var RequestedTime: js.UndefOr[typings.awsSdk.migrationhubconfigMod.RequestedTime] = js.native
+    var RequestedTime: js.UndefOr[typings.awsSdk.migrationhubconfigMod.RequestedTime] = js.undefined
     
     /**
       * The target parameter specifies the identifier to which the home region is applied, which is always an ACCOUNT. It applies the home region to the current ACCOUNT.
       */
-    var Target: js.UndefOr[typings.awsSdk.migrationhubconfigMod.Target] = js.native
+    var Target: js.UndefOr[typings.awsSdk.migrationhubconfigMod.Target] = js.undefined
   }
   object HomeRegionControl {
     
@@ -341,7 +334,7 @@ object migrationhubconfigMod {
   trait MigrationHubConfig extends Service {
     
     @JSName("config")
-    var config_MigrationHubConfig: ConfigBase with ClientConfiguration = js.native
+    var config_MigrationHubConfig: ConfigBase & ClientConfiguration = js.native
     
     /**
       * This API sets up the home region for the calling account only.
@@ -388,18 +381,17 @@ object migrationhubconfigMod {
   
   type RequestedTime = Date
   
-  @js.native
   trait Target extends StObject {
     
     /**
       * The TargetID is a 12-character identifier of the ACCOUNT for which the control was created. (This must be the current account.) 
       */
-    var Id: js.UndefOr[TargetId] = js.native
+    var Id: js.UndefOr[TargetId] = js.undefined
     
     /**
       * The target type is always an ACCOUNT.
       */
-    var Type: TargetType = js.native
+    var Type: TargetType
   }
   object Target {
     

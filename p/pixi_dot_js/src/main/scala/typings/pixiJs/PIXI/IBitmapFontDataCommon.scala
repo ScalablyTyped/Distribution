@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,10 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @typedef {object} IBitmapFontDataCommon
   * @property {number} lineHeight
   */
-@js.native
 trait IBitmapFontDataCommon extends StObject {
   
-  var lineHeight: Double = js.native
+  var lineHeight: Double
 }
 object IBitmapFontDataCommon {
   

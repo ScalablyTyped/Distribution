@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResolverResponse extends StObject {
   
   /**
     * The updated Resolver object.
     */
-  var resolver: js.UndefOr[Resolver] = js.native
+  var resolver: js.UndefOr[Resolver] = js.undefined
 }
 object UpdateResolverResponse {
   

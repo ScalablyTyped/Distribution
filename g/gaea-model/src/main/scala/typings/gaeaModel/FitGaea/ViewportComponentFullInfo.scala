@@ -3,20 +3,18 @@ package typings.gaeaModel.FitGaea
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewportComponentFullInfo extends StObject {
   
   // 子元素列表 （包括非直接子集）
-  var childs: StringDictionary[ViewportComponentInfo] = js.native
+  var childs: StringDictionary[ViewportComponentInfo]
   
   // 组件信息
-  var componentInfo: ViewportComponentInfo = js.native
+  var componentInfo: ViewportComponentInfo
   
   // 组件的 mapUniqueKey
-  var mapUniqueKey: String = js.native
+  var mapUniqueKey: String
 }
 object ViewportComponentFullInfo {
   

@@ -2,19 +2,17 @@ package typings.karma.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomLauncher extends StObject {
   
-  var base: String = js.native
+  var base: String
   
-  var browserName: js.UndefOr[String] = js.native
+  var browserName: js.UndefOr[String] = js.undefined
   
-  var flags: js.UndefOr[js.Array[String]] = js.native
+  var flags: js.UndefOr[js.Array[String]] = js.undefined
   
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
 }
 object CustomLauncher {
   

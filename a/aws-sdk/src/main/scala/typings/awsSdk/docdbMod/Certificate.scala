@@ -2,41 +2,39 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Certificate extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the certificate. Example: arn:aws:rds:us-east-1::cert:rds-ca-2019 
     */
-  var CertificateArn: js.UndefOr[String] = js.native
+  var CertificateArn: js.UndefOr[String] = js.undefined
   
   /**
     * The unique key that identifies a certificate. Example: rds-ca-2019 
     */
-  var CertificateIdentifier: js.UndefOr[String] = js.native
+  var CertificateIdentifier: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the certificate. Example: CA 
     */
-  var CertificateType: js.UndefOr[String] = js.native
+  var CertificateType: js.UndefOr[String] = js.undefined
   
   /**
     * The thumbprint of the certificate.
     */
-  var Thumbprint: js.UndefOr[String] = js.native
+  var Thumbprint: js.UndefOr[String] = js.undefined
   
   /**
     * The starting date-time from which the certificate is valid. Example: 2019-07-31T17:57:09Z 
     */
-  var ValidFrom: js.UndefOr[TStamp] = js.native
+  var ValidFrom: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The date-time after which the certificate is no longer valid. Example: 2024-07-31T17:57:09Z 
     */
-  var ValidTill: js.UndefOr[TStamp] = js.native
+  var ValidTill: js.UndefOr[TStamp] = js.undefined
 }
 object Certificate {
   

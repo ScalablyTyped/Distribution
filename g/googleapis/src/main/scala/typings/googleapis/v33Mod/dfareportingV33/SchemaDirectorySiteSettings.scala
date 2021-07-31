@@ -2,34 +2,32 @@ package typings.googleapis.v33Mod.dfareportingV33
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Directory Site Settings
   */
-@js.native
 trait SchemaDirectorySiteSettings extends StObject {
   
   /**
     * Whether this directory site has disabled active view creatives.
     */
-  var activeViewOptOut: js.UndefOr[Boolean] = js.native
+  var activeViewOptOut: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Directory site Ad Manager settings.
     */
-  var dfpSettings: js.UndefOr[SchemaDfpSettings] = js.native
+  var dfpSettings: js.UndefOr[SchemaDfpSettings] = js.undefined
   
   /**
     * Whether this site accepts in-stream video ads.
     */
-  var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var instreamVideoPlacementAccepted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether this site accepts interstitial ads.
     */
-  var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.native
+  var interstitialPlacementAccepted: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaDirectorySiteSettings {
   

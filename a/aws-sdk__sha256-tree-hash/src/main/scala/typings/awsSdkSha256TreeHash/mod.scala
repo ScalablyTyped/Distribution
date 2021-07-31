@@ -5,14 +5,15 @@ import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.utilMod.Decoder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("@aws-sdk/sha256-tree-hash", "TreeHash")
   @js.native
-  class TreeHash protected () extends Hash {
+  class TreeHash protected ()
+    extends StObject
+       with Hash {
     /**
       * Initializes a TreeHash.
       * @param Sha256 A Sha256 hash constructor.

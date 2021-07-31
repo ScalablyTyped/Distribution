@@ -12,7 +12,6 @@ import typings.wav.wavStrings.format
 import typings.wav.wavStrings.header
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -74,24 +73,23 @@ object mod {
     var sampleRate: Double = js.native
   }
   
-  @js.native
   trait Format extends StObject {
     
-    var audioFormat: Double = js.native
+    var audioFormat: Double
     
-    var bitDepth: Double = js.native
+    var bitDepth: Double
     
-    var blockAlign: Double = js.native
+    var blockAlign: Double
     
-    var byteRate: Double = js.native
+    var byteRate: Double
     
-    var channels: Double = js.native
+    var channels: Double
     
-    var endianness: LE | BE = js.native
+    var endianness: LE | BE
     
-    var sampleRate: Double = js.native
+    var sampleRate: Double
     
-    var signed: Boolean = js.native
+    var signed: Boolean
   }
   object Format {
     
@@ -139,12 +137,11 @@ object mod {
     }
   }
   
-  @js.native
   trait UnknownChunk extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
-    var id: String = js.native
+    var id: String
   }
   object UnknownChunk {
     
@@ -165,16 +162,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait WriterOptions extends TransformOptions {
+  trait WriterOptions
+    extends StObject
+       with TransformOptions {
     
-    var bitDepth: js.UndefOr[Double] = js.native
+    var bitDepth: js.UndefOr[Double] = js.undefined
     
-    var channels: js.UndefOr[Double] = js.native
+    var channels: js.UndefOr[Double] = js.undefined
     
-    var format: js.UndefOr[Double] = js.native
+    var format: js.UndefOr[Double] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
   }
   object WriterOptions {
     

@@ -3,31 +3,29 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppManifestError extends StObject {
   
   /**
     * Error column.
     */
-  var column: integer = js.native
+  var column: integer
   
   /**
     * If criticial, this is a non-recoverable parse error.
     */
-  var critical: integer = js.native
+  var critical: integer
   
   /**
     * Error line.
     */
-  var line: integer = js.native
+  var line: integer
   
   /**
     * Error message.
     */
-  var message: String = js.native
+  var message: String
 }
 object AppManifestError {
   

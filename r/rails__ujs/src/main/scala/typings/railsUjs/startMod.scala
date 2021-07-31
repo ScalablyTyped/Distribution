@@ -2,21 +2,22 @@ package typings.railsUjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object startMod {
   
-  @JSImport("@rails/ujs/start", "start")
+  @JSImport("@rails/ujs/start", JSImport.Namespace)
   @js.native
-  def start(): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def start(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("start")().asInstanceOf[Unit]
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
-      var _rails_loaded: js.UndefOr[Boolean] = js.native
+      var _rails_loaded: js.UndefOr[Boolean] = js.undefined
     }
     object Window {
       

@@ -3,10 +3,8 @@ package typings.googleCloudFirestore.FirebaseFirestore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timestamp extends StObject {
   
   /**
@@ -15,15 +13,15 @@ trait Timestamp extends StObject {
     * @param other The `Timestamp` to compare against.
     * @return 'true' if this `Timestamp` is equal to the provided one.
     */
-  def isEqual(other: Timestamp): Boolean = js.native
+  def isEqual(other: Timestamp): Boolean
   
   /** The non-negative fractions of a second at nanosecond resolution. */
-  val nanoseconds: Double = js.native
+  val nanoseconds: Double
   
   /**
     * The number of seconds of UTC time since Unix epoch 1970-01-01T00:00:00Z.
     */
-  val seconds: Double = js.native
+  val seconds: Double
   
   /**
     * Returns a new `Date` corresponding to this timestamp. This may lose
@@ -32,7 +30,7 @@ trait Timestamp extends StObject {
     * @return JavaScript `Date` object representing the same point in time as
     * this `Timestamp`, with millisecond precision.
     */
-  def toDate(): Date = js.native
+  def toDate(): Date
   
   /**
     * Returns the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
@@ -40,7 +38,7 @@ trait Timestamp extends StObject {
     * @return The point in time corresponding to this timestamp, represented as
     * the number of milliseconds since Unix epoch 1970-01-01T00:00:00Z.
     */
-  def toMillis(): Double = js.native
+  def toMillis(): Double
 }
 object Timestamp {
   

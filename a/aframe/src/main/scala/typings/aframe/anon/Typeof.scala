@@ -11,7 +11,6 @@ import typings.tweenjsTweenJs.mod.Tween
 import typings.tweenjsTweenJs.mod.UnknownProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -23,7 +22,7 @@ trait Typeof extends StObject {
   
   var Interpolation: Bezier = js.native
   
-  var Sequence: typings.tweenjsTweenJs.anon.TypeofSequence with Instantiable0[typings.tweenjsTweenJs.mod.Sequence] = js.native
+  var Sequence: typings.tweenjsTweenJs.anon.TypeofSequence & Instantiable0[typings.tweenjsTweenJs.mod.Sequence] = js.native
   
   var Tween: Instantiable2[
     /* import warning: RewrittenClass.unapply cls was tparam T */ /* _object */ js.Any, 
@@ -33,9 +32,9 @@ trait Typeof extends StObject {
   
   var VERSION: String = js.native
   
-  def add(tween: Tween[Record[String, _]]): Unit = js.native
+  def add(tween: Tween[Record[String, js.Any]]): Unit = js.native
   
-  def getAll(): js.Array[Tween[Record[String, _]]] = js.native
+  def getAll(): js.Array[Tween[Record[String, js.Any]]] = js.native
   
   def nextId(): Double = js.native
   @JSName("nextId")
@@ -43,12 +42,12 @@ trait Typeof extends StObject {
   
   def now(): Double = js.native
   
-  def remove(tween: Tween[Record[String, _]]): Unit = js.native
+  def remove(tween: Tween[Record[String, js.Any]]): Unit = js.native
   
   def removeAll(): Unit = js.native
   
   def update(): Boolean = js.native
-  def update(time: js.UndefOr[scala.Nothing], preserve: Boolean): Boolean = js.native
   def update(time: Double): Boolean = js.native
   def update(time: Double, preserve: Boolean): Boolean = js.native
+  def update(time: Unit, preserve: Boolean): Boolean = js.native
 }

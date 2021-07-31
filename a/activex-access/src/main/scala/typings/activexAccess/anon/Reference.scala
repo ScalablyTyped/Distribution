@@ -2,13 +2,11 @@ package typings.activexAccess.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reference extends StObject {
   
-  val Reference: typings.activexAccess.Access.Reference = js.native
+  val Reference: typings.activexAccess.Access.Reference
 }
 object Reference {
   

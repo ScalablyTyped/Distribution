@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noReferenceImportRuleMod {
@@ -22,9 +21,8 @@ object noReferenceImportRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/noReferenceImportRule", "Rule.FAILURE_STRING")
-    @js.native
-    def FAILURE_STRING(moduleReference: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING(moduleReference: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING")(moduleReference.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/noReferenceImportRule", "Rule.metadata")
     @js.native

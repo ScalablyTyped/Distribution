@@ -12,11 +12,11 @@ A CSS3-compliant JavaScript selector engine.
 | Keywords           | css, matcher, selector, ender |
 | # releases         | 0 |
 | # dependents       | 60 |
-| # downloads        | 48211273 |
+| # downloads        | 50924940 |
 | # stars            | 1 |
 
 ## Links
-- [Homepage](http://javascript.nwbox.com/NWMatcher/)
+- [Homepage](https://github.com/dperini/nwmatcher#readme)
 - [Bugs](http://github.com/dperini/nwmatcher/issues)
 - [Repository](https://github.com/dperini/nwmatcher)
 - [Npm](https://www.npmjs.com/package/nwmatcher)

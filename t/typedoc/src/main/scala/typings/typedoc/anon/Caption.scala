@@ -2,15 +2,13 @@ package typings.typedoc.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Caption extends StObject {
   
-  var caption: String = js.native
+  var caption: String
   
-  var target: String = js.native
+  var target: String
 }
 object Caption {
   

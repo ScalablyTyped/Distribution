@@ -2,21 +2,19 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorDetail extends StObject {
   
   /**
     * A detailed error code.
     */
-  var DetailedErrorCode: js.UndefOr[string] = js.native
+  var DetailedErrorCode: js.UndefOr[string] = js.undefined
   
   /**
     * A detailed error message.
     */
-  var DetailedErrorMessage: js.UndefOr[string] = js.native
+  var DetailedErrorMessage: js.UndefOr[string] = js.undefined
 }
 object ErrorDetail {
   

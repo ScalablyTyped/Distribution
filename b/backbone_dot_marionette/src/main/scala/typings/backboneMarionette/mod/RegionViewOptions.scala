@@ -2,10 +2,8 @@ package typings.backboneMarionette.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionViewOptions extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait RegionViewOptions extends StObject {
     * default it will automatically destroy the previous view. You can
     * prevent this behavior by setting this option to true.
     */
-  var preventDestroy: js.UndefOr[Boolean] = js.native
+  var preventDestroy: js.UndefOr[Boolean] = js.undefined
 }
 object RegionViewOptions {
   

@@ -4,23 +4,22 @@ import typings.overloadProtection.overloadProtectionBooleans.`false`
 import typings.overloadProtection.overloadProtectionStrings.koa
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(framework: HttpFrameworkSelection): HttpProtectionInstance = ^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any]).asInstanceOf[HttpProtectionInstance]
+  @scala.inline
+  def apply(framework: HttpFrameworkSelection, config: ProtectionConfig): HttpProtectionInstance = (^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[HttpProtectionInstance]
+  @scala.inline
+  def apply(framework: KoaFrameworkSelection): KoaProtectionInstance = ^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any]).asInstanceOf[KoaProtectionInstance]
+  @scala.inline
+  def apply(framework: KoaFrameworkSelection, config: ProtectionConfig): KoaProtectionInstance = (^.asInstanceOf[js.Dynamic].apply(framework.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[KoaProtectionInstance]
+  
   @JSImport("overload-protection", JSImport.Namespace)
   @js.native
-  def apply(framework: HttpFrameworkSelection): HttpProtectionInstance = js.native
-  @JSImport("overload-protection", JSImport.Namespace)
-  @js.native
-  def apply(framework: HttpFrameworkSelection, config: ProtectionConfig): HttpProtectionInstance = js.native
-  @JSImport("overload-protection", JSImport.Namespace)
-  @js.native
-  def apply(framework: KoaFrameworkSelection): KoaProtectionInstance = js.native
-  @JSImport("overload-protection", JSImport.Namespace)
-  @js.native
-  def apply(framework: KoaFrameworkSelection, config: ProtectionConfig): KoaProtectionInstance = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.overloadProtection.overloadProtectionStrings.express
@@ -41,39 +40,42 @@ object mod {
   }
   
   @js.native
-  trait HttpProtectionInstance extends ProtectionInstance {
+  trait HttpProtectionInstance
+    extends StObject
+       with ProtectionInstance {
     
-    def apply(req: js.Object, res: js.Object, next: js.Function0[_]): js.Any = js.native
+    def apply(req: js.Object, res: js.Object, next: js.Function0[js.Any]): js.Any = js.native
   }
   
   type KoaFrameworkSelection = koa
   
   @js.native
-  trait KoaProtectionInstance extends ProtectionInstance {
+  trait KoaProtectionInstance
+    extends StObject
+       with ProtectionInstance {
     
-    def apply(ctx: js.Object, next: js.Function0[_]): js.Any = js.native
+    def apply(ctx: js.Object, next: js.Function0[js.Any]): js.Any = js.native
   }
   
-  @js.native
   trait ProtectionConfig extends StObject {
     
-    var clientRetrySecs: js.UndefOr[Double] = js.native
+    var clientRetrySecs: js.UndefOr[Double] = js.undefined
     
-    var errorPropagationMode: js.UndefOr[Boolean] = js.native
+    var errorPropagationMode: js.UndefOr[Boolean] = js.undefined
     
-    var logStatsOnReq: js.UndefOr[`false`] = js.native
+    var logStatsOnReq: js.UndefOr[`false`] = js.undefined
     
-    var logging: js.UndefOr[Boolean | String | (js.Function1[/* msg */ String, Unit])] = js.native
+    var logging: js.UndefOr[Boolean | String | (js.Function1[/* msg */ String, Unit])] = js.undefined
     
-    var maxEventLoopDelay: js.UndefOr[Double] = js.native
+    var maxEventLoopDelay: js.UndefOr[Double] = js.undefined
     
-    var maxHeapUsedBytes: js.UndefOr[Double] = js.native
+    var maxHeapUsedBytes: js.UndefOr[Double] = js.undefined
     
-    var maxRssBytes: js.UndefOr[Double] = js.native
+    var maxRssBytes: js.UndefOr[Double] = js.undefined
     
-    var production: js.UndefOr[Boolean] = js.native
+    var production: js.UndefOr[Boolean] = js.undefined
     
-    var sampleInterval: js.UndefOr[Double] = js.native
+    var sampleInterval: js.UndefOr[Double] = js.undefined
   }
   object ProtectionConfig {
     
@@ -145,24 +147,23 @@ object mod {
     }
   }
   
-  @js.native
   trait ProtectionInstance extends StObject {
     
-    var eventLoopDelay: Double = js.native
+    var eventLoopDelay: Double
     
-    var eventLoopOverload: Boolean = js.native
+    var eventLoopOverload: Boolean
     
-    var heapUsedOverload: Boolean = js.native
+    var heapUsedOverload: Boolean
     
-    var maxEventLoopDelay: Double = js.native
+    var maxEventLoopDelay: Double
     
-    var maxHeapUsedBytes: Double = js.native
+    var maxHeapUsedBytes: Double
     
-    var maxRssBytes: Double = js.native
+    var maxRssBytes: Double
     
-    var overload: Boolean = js.native
+    var overload: Boolean
     
-    var rssOverload: Boolean = js.native
+    var rssOverload: Boolean
   }
   object ProtectionInstance {
     

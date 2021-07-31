@@ -10,7 +10,6 @@ import typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationResponse")
@@ -37,13 +36,11 @@ object AddTransactionWithValidationResponse {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationResponse.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): AddTransactionWithValidationResponse = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): AddTransactionWithValidationResponse = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[AddTransactionWithValidationResponse]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationResponse.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: AddTransactionWithValidationResponse, reader: BinaryReader): AddTransactionWithValidationResponse = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: AddTransactionWithValidationResponse, reader: BinaryReader): AddTransactionWithValidationResponse = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[AddTransactionWithValidationResponse]
   
   @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationResponse.extensions")
   @js.native
@@ -58,20 +55,17 @@ object AddTransactionWithValidationResponse {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationResponse.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: AddTransactionWithValidationResponse, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: AddTransactionWithValidationResponse, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/mempool_pb", "AddTransactionWithValidationResponse.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: AddTransactionWithValidationResponse): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: AddTransactionWithValidationResponse): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var currentVersion: String = js.native
+    var currentVersion: String
     
-    var status: js.UndefOr[typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus.AsObject] = js.native
+    var status: js.UndefOr[typings.libraCore.mempoolStatusPbMod.MempoolAddTransactionStatus.AsObject] = js.undefined
   }
   object AsObject {
     

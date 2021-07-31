@@ -2,7 +2,6 @@ package typings.officeJs.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -22,33 +21,43 @@ object PivotAxis extends StObject {
     *
     */
   @js.native
-  sealed trait column extends PivotAxis
+  sealed trait column
+    extends StObject
+       with PivotAxis
   
   /**
     * The data axis.
     *
     */
   @js.native
-  sealed trait data extends PivotAxis
+  sealed trait data
+    extends StObject
+       with PivotAxis
   
   /**
     * The filter axis.
     *
     */
   @js.native
-  sealed trait filter extends PivotAxis
+  sealed trait filter
+    extends StObject
+       with PivotAxis
   
   /**
     * The row axis.
     *
     */
   @js.native
-  sealed trait row extends PivotAxis
+  sealed trait row
+    extends StObject
+       with PivotAxis
   
   /**
     * The axis or region is unknown or unsupported.
     *
     */
   @js.native
-  sealed trait unknown extends PivotAxis
+  sealed trait unknown
+    extends StObject
+       with PivotAxis
 }

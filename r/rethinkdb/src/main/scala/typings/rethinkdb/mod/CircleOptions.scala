@@ -2,21 +2,21 @@ package typings.rethinkdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CircleOptions extends DistanceOptions {
+trait CircleOptions
+  extends StObject
+     with DistanceOptions {
   
   /**
     * If `true` (the default) the circle is filled, creating a polygon; if `false` the circle is unfilled (creating a line).
     */
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of vertices in the polygon or line. Defaults to 32.
     */
-  var numVertices: js.UndefOr[Double] = js.native
+  var numVertices: js.UndefOr[Double] = js.undefined
 }
 object CircleOptions {
   

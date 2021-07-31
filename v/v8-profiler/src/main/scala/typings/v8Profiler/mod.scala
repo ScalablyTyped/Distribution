@@ -5,7 +5,6 @@ import typings.node.fsMod.ReadStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -26,12 +25,12 @@ object mod extends Shortcut {
       * provides simple export API for profile.
       * callback(error, data) receives serialized profile as second argument. (Serialization is equal to JSON.stringify result).
       */
-    def export(): ReadStream = js.native
+    def `export`(): ReadStream = js.native
     /**
       * provides simple export API for profile.
       * callback(error, data) receives serialized profile as second argument. (Serialization is equal to JSON.stringify result).
       */
-    def export(callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def `export`(callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]): Unit = js.native
     
     /**
       * provides short information about profile.
@@ -61,9 +60,9 @@ object mod extends Shortcut {
       * recsamples is true by default.
       */
     def startProfiling(): Unit = js.native
-    def startProfiling(name: js.UndefOr[scala.Nothing], recsamples: Boolean): Unit = js.native
     def startProfiling(name: String): Unit = js.native
     def startProfiling(name: String, recsamples: Boolean): Unit = js.native
+    def startProfiling(name: Unit, recsamples: Boolean): Unit = js.native
     
     /**
       * returns new CPU Profile instance.
@@ -98,13 +97,13 @@ object mod extends Shortcut {
       * callback(error, data) receives serialized snapshot as second argument. (Serialization is not equal to JSON.stringify result).
       * If callback will not be passed, export returns transform stream.
       */
-    def export(): ReadStream = js.native
+    def `export`(): ReadStream = js.native
     /**
       * provides simple export API for snapshot.
       * callback(error, data) receives serialized snapshot as second argument. (Serialization is not equal to JSON.stringify result).
       * If callback will not be passed, export returns transform stream.
       */
-    def export(callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]): Unit = js.native
+    def `export`(callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]): Unit = js.native
     
     /**
       * provides short information about snapshot.

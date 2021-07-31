@@ -2,28 +2,26 @@ package typings.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesChangeMessageVisibilityBatchRequestEntryMod {
   
-  @js.native
   trait ChangeMessageVisibilityBatchRequestEntry extends StObject {
     
     /**
       * <p>An identifier for this particular receipt handle used to communicate the result.</p> <note> <p>The <code>Id</code>s of a batch request need to be unique within a request</p> </note>
       */
-    var Id: String = js.native
+    var Id: String
     
     /**
       * <p>A receipt handle.</p>
       */
-    var ReceiptHandle: String = js.native
+    var ReceiptHandle: String
     
     /**
       * <p>The new value (in seconds) for the message's visibility timeout.</p>
       */
-    var VisibilityTimeout: js.UndefOr[Double] = js.native
+    var VisibilityTimeout: js.UndefOr[Double] = js.undefined
   }
   object ChangeMessageVisibilityBatchRequestEntry {
     

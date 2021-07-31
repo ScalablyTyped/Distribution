@@ -2,39 +2,37 @@ package typings.firmata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PinModes extends StObject {
   
-  var ANALOG: PIN_MODE = js.native
+  var ANALOG: PIN_MODE
   
-  var I2C: PIN_MODE = js.native
+  var I2C: PIN_MODE
   
-  var IGNORE: PIN_MODE = js.native
+  var IGNORE: PIN_MODE
   
-  var INPUT: PIN_MODE = js.native
+  var INPUT: PIN_MODE
   
-  var ONEWIRE: PIN_MODE = js.native
+  var ONEWIRE: PIN_MODE
   
-  var OUTPUT: PIN_MODE = js.native
+  var OUTPUT: PIN_MODE
   
-  var PING_READ: PIN_MODE = js.native
+  var PING_READ: PIN_MODE
   
-  var PULLUP: PIN_MODE = js.native
+  var PULLUP: PIN_MODE
   
-  var PWM: PIN_MODE = js.native
+  var PWM: PIN_MODE
   
-  var SERIAL: PIN_MODE = js.native
+  var SERIAL: PIN_MODE
   
-  var SERVO: PIN_MODE = js.native
+  var SERVO: PIN_MODE
   
-  var SHIFT: PIN_MODE = js.native
+  var SHIFT: PIN_MODE
   
-  var STEPPER: PIN_MODE = js.native
+  var STEPPER: PIN_MODE
   
-  var UNKOWN: PIN_MODE = js.native
+  var UNKOWN: PIN_MODE
 }
 object PinModes {
   

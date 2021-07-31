@@ -3,10 +3,8 @@ package typings.antvComponent.typesMod
 import typings.antvGBase.typesMod.ShapeAttrs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContinueLegendLabelCfg extends StObject {
   
   /**
@@ -16,19 +14,19 @@ trait ContinueLegendLabelCfg extends StObject {
     *  - left, right: 图例垂直布局时有效
     * @type {string}
     */
-  var align: js.UndefOr[String] = js.native
+  var align: js.UndefOr[String] = js.undefined
   
   /**
     * 文本同滑轨的距离
     * @type {number}
     */
-  var spacing: js.UndefOr[Double] = js.native
+  var spacing: js.UndefOr[Double] = js.undefined
   
   /**
     * 文本样式
     * @type {ShapeAttrs}
     */
-  var style: js.UndefOr[ShapeAttrs] = js.native
+  var style: js.UndefOr[ShapeAttrs] = js.undefined
 }
 object ContinueLegendLabelCfg {
   

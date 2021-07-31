@@ -4,60 +4,58 @@ import typings.remarkable.remarkableStrings.list
 import typings.remarkable.remarkableStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateBlock extends StObject {
   
-  var bMarks: js.Array[Double] = js.native
+  var bMarks: js.Array[Double]
   
   /** required block content indent */
-  var blkIndent: Double = js.native
+  var blkIndent: Double
   
   /** Indent of the current dd block, -1 if there isn't any */
-  var ddIndent: Double = js.native
+  var ddIndent: Double
   
-  var eMarks: js.Array[Double] = js.native
+  var eMarks: js.Array[Double]
   
-  var env: Env = js.native
+  var env: Env
   
-  def getLines(begin: Double, end: Double, indent: Double, keepLastLF: Boolean): String = js.native
+  def getLines(begin: Double, end: Double, indent: Double, keepLastLF: Boolean): String
   
-  def isEmpty(line: Double): Boolean = js.native
+  def isEmpty(line: Double): Boolean
   
-  var level: Double = js.native
+  var level: Double
   
   /** line index in src */
-  var line: Double = js.native
+  var line: Double
   
   /** lines count */
-  var lineMax: Double = js.native
+  var lineMax: Double
   
-  var options: Options = js.native
+  var options: Options
   
   /** If `list`, block parser stops on two newlines */
-  var parentType: root | list = js.native
+  var parentType: root | list
   
   /** Shortcuts to simplify nested calls */
-  var parser: ParserBlock = js.native
+  var parser: ParserBlock
   
-  var result: String = js.native
+  var result: String
   
-  def skipChars(pos: Double, code: Double): Double = js.native
+  def skipChars(pos: Double, code: Double): Double
   
-  def skipEmptyLines(from: Double): Double = js.native
+  def skipEmptyLines(from: Double): Double
   
-  def skipSpaces(pos: Double): Double = js.native
+  def skipSpaces(pos: Double): Double
   
-  var src: String = js.native
+  var src: String
   
-  var tShift: js.Array[Double] = js.native
+  var tShift: js.Array[Double]
   
   /** loose/tight mode for lists */
-  var tight: Boolean = js.native
+  var tight: Boolean
   
-  var tokens: js.Array[BlockContentToken] = js.native
+  var tokens: js.Array[BlockContentToken]
 }
 object StateBlock {
   

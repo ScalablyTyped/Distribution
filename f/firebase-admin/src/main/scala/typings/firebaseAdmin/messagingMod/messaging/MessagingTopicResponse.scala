@@ -2,17 +2,15 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingTopicResponse extends StObject {
   
   /**
     * The message ID for a successfully received request which FCM will attempt to
     * deliver to all subscribed devices.
     */
-  var messageId: Double = js.native
+  var messageId: Double
 }
 object MessagingTopicResponse {
   

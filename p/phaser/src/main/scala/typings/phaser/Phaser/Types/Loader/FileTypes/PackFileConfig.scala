@@ -3,36 +3,34 @@ package typings.phaser.Phaser.Types.Loader.FileTypes
 import typings.phaser.Phaser.Types.Loader.XHRSettingsObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PackFileConfig extends StObject {
   
   /**
     * If specified instead of the whole JSON file being parsed, only the section corresponding to this property key will be added. If the property you want to extract is nested, use periods to divide it.
     */
-  var dataKey: js.UndefOr[String] = js.native
+  var dataKey: js.UndefOr[String] = js.undefined
   
   /**
     * The default file extension to use if no url is provided.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The key of the file. Must be unique within both the Loader and the JSON Cache.
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * The absolute or relative URL to load the file from. Or can be a ready formed JSON object, in which case it will be directly processed.
     */
-  var url: js.UndefOr[String | js.Any] = js.native
+  var url: js.UndefOr[String | js.Any] = js.undefined
   
   /**
     * Extra XHR Settings specifically for this file.
     */
-  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.native
+  var xhrSettings: js.UndefOr[XHRSettingsObject] = js.undefined
 }
 object PackFileConfig {
   

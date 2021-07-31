@@ -2,56 +2,54 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Comment extends StObject {
   
   /**
     * The ID of the comment.
     */
-  var CommentId: CommentIdType = js.native
+  var CommentId: CommentIdType
   
   /**
     * The details of the user who made the comment.
     */
-  var Contributor: js.UndefOr[User] = js.native
+  var Contributor: js.UndefOr[User] = js.undefined
   
   /**
     * The time that the comment was created.
     */
-  var CreatedTimestamp: js.UndefOr[TimestampType] = js.native
+  var CreatedTimestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The ID of the parent comment.
     */
-  var ParentId: js.UndefOr[CommentIdType] = js.native
+  var ParentId: js.UndefOr[CommentIdType] = js.undefined
   
   /**
     * If the comment is a reply to another user's comment, this field contains the user ID of the user being replied to.
     */
-  var RecipientId: js.UndefOr[IdType] = js.native
+  var RecipientId: js.UndefOr[IdType] = js.undefined
   
   /**
     * The status of the comment.
     */
-  var Status: js.UndefOr[CommentStatusType] = js.native
+  var Status: js.UndefOr[CommentStatusType] = js.undefined
   
   /**
     * The text of the comment.
     */
-  var Text: js.UndefOr[CommentTextType] = js.native
+  var Text: js.UndefOr[CommentTextType] = js.undefined
   
   /**
     * The ID of the root comment in the thread.
     */
-  var ThreadId: js.UndefOr[CommentIdType] = js.native
+  var ThreadId: js.UndefOr[CommentIdType] = js.undefined
   
   /**
     * The visibility of the comment. Options are either PRIVATE, where the comment is visible only to the comment author and document owner and co-owners, or PUBLIC, where the comment is visible to document owners, co-owners, and contributors.
     */
-  var Visibility: js.UndefOr[CommentVisibilityType] = js.native
+  var Visibility: js.UndefOr[CommentVisibilityType] = js.undefined
 }
 object Comment {
   

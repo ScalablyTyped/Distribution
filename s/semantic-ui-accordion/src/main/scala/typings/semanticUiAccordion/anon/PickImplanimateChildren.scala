@@ -2,14 +2,12 @@ package typings.semanticUiAccordion.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-accordion.SemanticUI.AccordionSettings._Impl, 'animateChildren'> */
-@js.native
 trait PickImplanimateChildren extends StObject {
   
-  var animateChildren: Boolean = js.native
+  var animateChildren: Boolean
 }
 object PickImplanimateChildren {
   

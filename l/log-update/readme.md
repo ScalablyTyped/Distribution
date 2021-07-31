@@ -11,9 +11,9 @@ Log by overwriting the previous output in the terminal. Useful for rendering pro
 | Full name          | log-update |
 | Keywords           | log, logger, logging, cli, terminal, term, console, shell, update, refresh, overwrite, output, stdout, progress, bar, animation |
 | # releases         | 8 |
-| # dependents       | 639 |
-| # downloads        | 212043223 |
-| # stars            | 25 |
+| # dependents       | 684 |
+| # downloads        | 267471392 |
+| # stars            | 26 |
 
 ## Links
 - [Homepage](https://github.com/sindresorhus/log-update#readme)

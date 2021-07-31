@@ -3,46 +3,44 @@ package typings.googleapis.v2alpha1Mod.genomicsV2alpha1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Carries information about the pipeline execution that is returned in the
   * long running operation&#39;s metadata field.
   */
-@js.native
 trait SchemaMetadata extends StObject {
   
   /**
     * The time at which the operation was created by the API.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which execution was completed and resources were cleaned up.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The list of events that have happened so far during the execution of this
     * operation.
     */
-  var events: js.UndefOr[js.Array[SchemaEvent]] = js.native
+  var events: js.UndefOr[js.Array[SchemaEvent]] = js.undefined
   
   /**
     * The user-defined labels associated with this operation.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The pipeline this operation represents.
     */
-  var pipeline: js.UndefOr[SchemaPipeline] = js.native
+  var pipeline: js.UndefOr[SchemaPipeline] = js.undefined
   
   /**
     * The first time at which resources were allocated to execute the pipeline.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaMetadata {
   

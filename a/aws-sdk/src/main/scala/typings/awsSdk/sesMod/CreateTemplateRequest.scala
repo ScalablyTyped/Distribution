@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTemplateRequest extends StObject {
   
   /**
     * The content of the email, composed of a subject line, an HTML part, and a text-only part.
     */
-  var Template: typings.awsSdk.sesMod.Template = js.native
+  var Template: typings.awsSdk.sesMod.Template
 }
 object CreateTemplateRequest {
   

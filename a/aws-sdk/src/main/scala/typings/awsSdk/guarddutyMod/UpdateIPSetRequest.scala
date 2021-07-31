@@ -2,36 +2,34 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateIPSetRequest extends StObject {
   
   /**
     * The updated Boolean value that specifies whether the IPSet is active or not.
     */
-  var Activate: js.UndefOr[Boolean] = js.native
+  var Activate: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The detectorID that specifies the GuardDuty service whose IPSet you want to update.
     */
-  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId = js.native
+  var DetectorId: typings.awsSdk.guarddutyMod.DetectorId
   
   /**
     * The unique ID that specifies the IPSet that you want to update.
     */
-  var IpSetId: String = js.native
+  var IpSetId: String
   
   /**
     * The updated URI of the file that contains the IPSet. For example: https://s3.us-west-2.amazonaws.com/my-bucket/my-object-key.
     */
-  var Location: js.UndefOr[typings.awsSdk.guarddutyMod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.guarddutyMod.Location] = js.undefined
   
   /**
     * The unique ID that specifies the IPSet that you want to update.
     */
-  var Name: js.UndefOr[typings.awsSdk.guarddutyMod.Name] = js.native
+  var Name: js.UndefOr[typings.awsSdk.guarddutyMod.Name] = js.undefined
 }
 object UpdateIPSetRequest {
   

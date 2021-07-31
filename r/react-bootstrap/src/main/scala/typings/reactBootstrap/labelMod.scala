@@ -5,7 +5,6 @@ import typings.react.mod.HTMLProps
 import typings.reactBootstrap.mod.Sizes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object labelMod {
@@ -19,12 +18,13 @@ object labelMod {
   trait Label
     extends Component[LabelProps, js.Object, js.Any]
   
-  @js.native
-  trait LabelProps extends HTMLProps[Label] {
+  trait LabelProps
+    extends StObject
+       with HTMLProps[Label] {
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var bsStyle: js.UndefOr[String] = js.native
+    var bsStyle: js.UndefOr[String] = js.undefined
   }
   object LabelProps {
     

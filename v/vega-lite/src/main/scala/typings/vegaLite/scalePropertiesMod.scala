@@ -37,32 +37,31 @@ import typings.vegaTypings.scaleMod.TimeIntervalStep
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scalePropertiesMod {
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "bins")
+  @JSImport("vega-lite/build/src/compile/scale/properties", JSImport.Namespace)
   @js.native
-  def bins_binned(model: Model, fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]): SignalRefWrapper | Step = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "interpolate")
-  @js.native
-  def interpolate(channel: ScaleChannel, `type`: Type): js.UndefOr[ScaleInterpolateEnum | ExprRef | SignalRef | ScaleInterpolateParams] = js.native
+  @scala.inline
+  def bins_binned(model: Model, fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]): SignalRefWrapper | Step = (^.asInstanceOf[js.Dynamic].applyDynamic("bins")(model.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any])).asInstanceOf[SignalRefWrapper | Step]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "nice")
-  @js.native
-  def nice(scaleType: ScaleType, channel: ScaleChannel, fieldOrDatumDef: ScaleDatumDef[String]): Boolean | TimeInterval = js.native
-  @JSImport("vega-lite/build/src/compile/scale/properties", "nice")
-  @js.native
+  @scala.inline
+  def interpolate(channel: ScaleChannel, `type`: Type): js.UndefOr[ScaleInterpolateEnum | ExprRef | SignalRef | ScaleInterpolateParams] = (^.asInstanceOf[js.Dynamic].applyDynamic("interpolate")(channel.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ScaleInterpolateEnum | ExprRef | SignalRef | ScaleInterpolateParams]]
+  
+  @scala.inline
+  def nice(scaleType: ScaleType, channel: ScaleChannel, fieldOrDatumDef: ScaleDatumDef[String]): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
+  
+  @scala.inline
   def nice_binned(
     scaleType: ScaleType,
     channel: ScaleChannel,
-    fieldOrDatumDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null]
-  ): Boolean | TimeInterval = js.native
+    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null]
+  ): Boolean | TimeInterval = (^.asInstanceOf[js.Dynamic].applyDynamic("nice")(scaleType.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any])).asInstanceOf[Boolean | TimeInterval]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "padding")
-  @js.native
+  @scala.inline
   def padding(
     channel: ScaleChannel,
     scaleType: ScaleType,
@@ -70,17 +69,14 @@ object scalePropertiesMod {
     fieldOrDatumDef: ScaleDatumDef[String],
     markDef: MarkDef[Mark, ExprRef | SignalRef],
     barConfig: RectConfig[SignalRef]
-  ): Double | SignalRef = js.native
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("padding")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], barConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "paddingInner")
-  @js.native
-  def paddingInner(paddingValue: Double, channel: ScaleChannel, mark: Mark, scaleConfig: ScaleConfig[SignalRef]): Double | SignalRef = js.native
-  @JSImport("vega-lite/build/src/compile/scale/properties", "paddingInner")
-  @js.native
-  def paddingInner(paddingValue: SignalRef, channel: ScaleChannel, mark: Mark, scaleConfig: ScaleConfig[SignalRef]): Double | SignalRef = js.native
+  @scala.inline
+  def paddingInner(paddingValue: Double, channel: ScaleChannel, mark: Mark, scaleConfig: ScaleConfig[SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
+  @scala.inline
+  def paddingInner(paddingValue: SignalRef, channel: ScaleChannel, mark: Mark, scaleConfig: ScaleConfig[SignalRef]): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingInner")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "paddingOuter")
-  @js.native
+  @scala.inline
   def paddingOuter(
     paddingValue: Double,
     channel: ScaleChannel,
@@ -88,9 +84,8 @@ object scalePropertiesMod {
     mark: Mark,
     paddingInnerValue: Double,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/scale/properties", "paddingOuter")
-  @js.native
+  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
+  @scala.inline
   def paddingOuter(
     paddingValue: Double,
     channel: ScaleChannel,
@@ -98,9 +93,8 @@ object scalePropertiesMod {
     mark: Mark,
     paddingInnerValue: SignalRef,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/scale/properties", "paddingOuter")
-  @js.native
+  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
+  @scala.inline
   def paddingOuter(
     paddingValue: SignalRef,
     channel: ScaleChannel,
@@ -108,9 +102,8 @@ object scalePropertiesMod {
     mark: Mark,
     paddingInnerValue: Double,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = js.native
-  @JSImport("vega-lite/build/src/compile/scale/properties", "paddingOuter")
-  @js.native
+  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
+  @scala.inline
   def paddingOuter(
     paddingValue: SignalRef,
     channel: ScaleChannel,
@@ -118,48 +111,43 @@ object scalePropertiesMod {
     mark: Mark,
     paddingInnerValue: SignalRef,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Double | Signal = js.native
+  ): Double | Signal = (^.asInstanceOf[js.Dynamic].applyDynamic("paddingOuter")(paddingValue.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], mark.asInstanceOf[js.Any], paddingInnerValue.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Double | Signal]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "padding")
-  @js.native
+  @scala.inline
   def padding_binned(
     channel: ScaleChannel,
     scaleType: ScaleType,
     scaleConfig: ScaleConfig[SignalRef],
-    fieldOrDatumDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null],
+    fieldOrDatumDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     markDef: MarkDef[Mark, ExprRef | SignalRef],
     barConfig: RectConfig[SignalRef]
-  ): Double | SignalRef = js.native
+  ): Double | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("padding")(channel.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any], fieldOrDatumDef.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], barConfig.asInstanceOf[js.Any])).asInstanceOf[Double | SignalRef]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "parseNonUnitScaleProperty")
-  @js.native
+  @scala.inline
   def parseNonUnitScaleProperty(
     model: Model,
     property: /* keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef> | vega-lite.vega-lite/build/src/compile/scale/component.ScaleComponentProps */ String
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseNonUnitScaleProperty")(model.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "parseScaleProperty")
-  @js.native
+  @scala.inline
   def parseScaleProperty_range(
     model: Model,
     property: Exclude[
       /* keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega-typings.vega-typings/types/spec/signal.SignalRef> | vega-lite.vega-lite/build/src/compile/scale/component.ScaleComponentProps */ String, 
       range
     ]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("parseScaleProperty")(model.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "parseScaleRange")
-  @js.native
-  def parseScaleRange(model: Model): Unit = js.native
+  @scala.inline
+  def parseScaleRange(model: Model): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("parseScaleRange")(model.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "reverse")
-  @js.native
+  @scala.inline
   def reverse(
     scaleType: ScaleType,
     sort: Sort[String],
     channel: ScaleChannel,
     scaleConfig: ScaleConfig[SignalRef]
-  ): Boolean | SignalRef = js.native
+  ): Boolean | SignalRef = (^.asInstanceOf[js.Dynamic].applyDynamic("reverse")(scaleType.asInstanceOf[js.Any], sort.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], scaleConfig.asInstanceOf[js.Any])).asInstanceOf[Boolean | SignalRef]
   
   /* Inlined {[ k in keyof vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega.vega.SignalRef> ]:? (params : vega-lite.vega-lite/build/src/compile/scale/properties.ScaleRuleParams): vega-lite.vega-lite/build/src/scale.Scale<vega-lite.vega-lite/build/src/expr.ExprRef | vega.vega.SignalRef>[k]} */
   object scaleRules {
@@ -455,6 +443,10 @@ object scalePropertiesMod {
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("scheme")(x.asInstanceOf[js.Any])
     
+    @JSImport("vega-lite/build/src/compile/scale/properties", "scaleRules.type")
+    @js.native
+    val `type`: js.UndefOr[js.Function1[/* params */ ScaleRuleParams, js.UndefOr[ScaleType]]] = js.native
+    
     @JSImport("vega-lite/build/src/compile/scale/properties", "scaleRules.zero")
     @js.native
     def zero: js.UndefOr[
@@ -466,51 +458,45 @@ object scalePropertiesMod {
           js.Function1[/* params */ ScaleRuleParams, js.UndefOr[Boolean | ExprRef | SignalRef]]
         ]
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("zero")(x.asInstanceOf[js.Any])
-    
-    @JSImport("vega-lite/build/src/compile/scale/properties", "scaleRules.type")
-    @js.native
-    val `type`: js.UndefOr[js.Function1[/* params */ ScaleRuleParams, js.UndefOr[ScaleType]]] = js.native
   }
   
-  @JSImport("vega-lite/build/src/compile/scale/properties", "zero")
-  @js.native
+  @scala.inline
   def zero(
     channel: ScaleChannel,
     fieldDef: ScaleDatumDef[String],
     specifiedDomain: Domain,
     markDef: MarkDef[Mark, ExprRef | SignalRef],
     scaleType: ScaleType
-  ): Boolean = js.native
-  @JSImport("vega-lite/build/src/compile/scale/properties", "zero")
-  @js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("zero")(channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
   def zero_binned(
     channel: ScaleChannel,
-    fieldDef: TypedFieldDef[String, _, Boolean | BinParams | binned | Null],
+    fieldDef: TypedFieldDef[String, js.Any, Boolean | BinParams | binned | Null],
     specifiedDomain: Domain,
     markDef: MarkDef[Mark, ExprRef | SignalRef],
     scaleType: ScaleType
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("zero")(channel.asInstanceOf[js.Any], fieldDef.asInstanceOf[js.Any], specifiedDomain.asInstanceOf[js.Any], markDef.asInstanceOf[js.Any], scaleType.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
   trait ScaleRuleParams extends StObject {
     
-    var channel: ScaleChannel = js.native
+    var channel: ScaleChannel
     
-    var config: Config[SignalRef] = js.native
+    var config: Config[SignalRef]
     
-    var domain: Domain = js.native
+    var domain: Domain
     
-    var fieldOrDatumDef: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String] = js.native
+    var fieldOrDatumDef: (ScaleFieldDef[String, Type, Boolean | BinParams | Null]) | ScaleDatumDef[String]
     
-    var markDef: MarkDef[Mark, ExprRef | SignalRef] = js.native
+    var markDef: MarkDef[Mark, ExprRef | SignalRef]
     
-    var model: Model = js.native
+    var model: Model
     
-    var scalePadding: Double | SignalRef = js.native
+    var scalePadding: Double | SignalRef
     
-    var scalePaddingInner: Double | SignalRef = js.native
+    var scalePaddingInner: Double | SignalRef
     
-    var scaleType: ScaleType = js.native
+    var scaleType: ScaleType
   }
   object ScaleRuleParams {
     

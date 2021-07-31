@@ -2,19 +2,17 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaDimensions extends StObject {
   
-  def getFullMediaDimensions(): Dimensions = js.native
+  def getFullMediaDimensions(): Dimensions
   
-  def getPreviewMediaDimensions(): Dimensions = js.native
+  def getPreviewMediaDimensions(): Dimensions
   
-  def getShrunkenMediaDimensions(): Dimensions = js.native
+  def getShrunkenMediaDimensions(): Dimensions
   
-  def getVideoThumbnailDimensions(): Dimensions = js.native
+  def getVideoThumbnailDimensions(): Dimensions
 }
 object MediaDimensions {
   

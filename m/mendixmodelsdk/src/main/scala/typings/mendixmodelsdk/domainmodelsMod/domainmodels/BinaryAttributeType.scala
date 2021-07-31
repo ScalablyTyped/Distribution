@@ -10,7 +10,6 @@ import typings.mendixmodelsdk.restMod.rest.ODataKeyPart
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -52,9 +51,8 @@ object BinaryAttributeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType.create")
-  @js.native
-  def create(model: IModel): BinaryAttributeType = js.native
+  @scala.inline
+  def create(model: IModel): BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[BinaryAttributeType]
   
   /**
     * Creates and returns a new BinaryAttributeType instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object BinaryAttributeType {
     *  6.0.0 to 8.8.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType.createIn")
-  @js.native
-  def createIn(container: Attribute): BinaryAttributeType = js.native
+  @scala.inline
+  def createIn(container: Attribute): BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryAttributeType]
   
   /**
     * Creates and returns a new BinaryAttributeType instance in the SDK and on the server.
@@ -75,9 +72,8 @@ object BinaryAttributeType {
     * of the parent Attribute element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType.createInAttributeUnderType")
-  @js.native
-  def createInAttributeUnderType(container: Attribute): BinaryAttributeType = js.native
+  @scala.inline
+  def createInAttributeUnderType(container: Attribute): BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryAttributeType]
   
   /**
     * Creates and returns a new BinaryAttributeType instance in the SDK and on the server.
@@ -88,9 +84,8 @@ object BinaryAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType.createInEntityKeyPartUnderType")
-  @js.native
-  def createInEntityKeyPartUnderType(container: EntityKeyPart): BinaryAttributeType = js.native
+  @scala.inline
+  def createInEntityKeyPartUnderType(container: EntityKeyPart): BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInEntityKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryAttributeType]
   
   /**
     * Creates and returns a new BinaryAttributeType instance in the SDK and on the server.
@@ -101,9 +96,8 @@ object BinaryAttributeType {
     *  8.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType.createInODataKeyPartUnderType")
-  @js.native
-  def createInODataKeyPartUnderType(container: ODataKeyPart): BinaryAttributeType = js.native
+  @scala.inline
+  def createInODataKeyPartUnderType(container: ODataKeyPart): BinaryAttributeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInODataKeyPartUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[BinaryAttributeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.BinaryAttributeType.structureTypeName")

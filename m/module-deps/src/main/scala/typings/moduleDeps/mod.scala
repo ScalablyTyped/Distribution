@@ -17,7 +17,6 @@ import typings.node.NodeJS.ReadableStream
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,27 +25,28 @@ object mod {
     * Return an object transform stream 'd' that expects entry filenames or '{ id: ..., file: ... }' objects
     * as input and produces objects for every dependency from a recursive module traversal as output.
     */
+  @scala.inline
+  def apply(): ModuleDepsObject = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ModuleDepsObject]
+  @scala.inline
+  def apply(opts: Options): ModuleDepsObject = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[ModuleDepsObject]
+  
   @JSImport("module-deps", JSImport.Namespace)
   @js.native
-  def apply(): ModuleDepsObject = js.native
-  @JSImport("module-deps", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): ModuleDepsObject = js.native
+  val ^ : js.Any = js.native
   
   type CacheCallback = js.Function2[/* err */ Error | Null, /* res */ js.UndefOr[Deps], Unit]
   
-  @js.native
   trait InputRow extends StObject {
     
-    var entry: js.UndefOr[Boolean] = js.native
+    var entry: js.UndefOr[Boolean] = js.undefined
     
-    var expose: String = js.native
+    var expose: String
     
-    var file: String = js.native
+    var file: String
     
-    var id: String = js.native
+    var id: String
     
-    var noparse: js.UndefOr[Boolean] = js.native
+    var noparse: js.UndefOr[Boolean] = js.undefined
   }
   object InputRow {
     
@@ -82,19 +82,18 @@ object mod {
     }
   }
   
-  @js.native
   trait InputTransform extends StObject {
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.Any = js.native
+    var options: js.Any
     
-    var transform: String | js.Function0[_] = js.native
+    var transform: String | js.Function0[js.Any]
   }
   object InputTransform {
     
     @scala.inline
-    def apply(options: js.Any, transform: String | js.Function0[_]): InputTransform = {
+    def apply(options: js.Any, transform: String | js.Function0[js.Any]): InputTransform = {
       val __obj = js.Dynamic.literal(options = options.asInstanceOf[js.Any], transform = transform.asInstanceOf[js.Any])
       __obj.asInstanceOf[InputTransform]
     }
@@ -112,15 +111,17 @@ object mod {
       def setOptions(value: js.Any): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTransform(value: String | js.Function0[_]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
+      def setTransform(value: String | js.Function0[js.Any]): Self = StObject.set(x, "transform", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTransformFunction0(value: () => _): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
+      def setTransformFunction0(value: () => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction0(value))
     }
   }
   
   @js.native
-  trait ModuleDepsObject extends ReadWriteStream {
+  trait ModuleDepsObject
+    extends StObject
+       with ReadWriteStream {
     
     def _flush(): Unit = js.native
     
@@ -133,35 +134,35 @@ object mod {
     def getTransforms(file: String, pkg: PackageObject): ReadWriteStream = js.native
     def getTransforms(file: String, pkg: PackageObject, opts: Builtin): ReadWriteStream = js.native
     
-    def lookupPackage(file: String, cb: js.Function3[/* a */ js.Any, /* b */ js.Any, /* c */ js.UndefOr[js.Any], _]): Unit = js.native
+    def lookupPackage(file: String, cb: js.Function3[/* a */ js.Any, /* b */ js.Any, /* c */ js.UndefOr[js.Any], js.Any]): Unit = js.native
     
     /**
       * Every time a file is read, this event fires with the file path.
       */
     @JSName("on")
-    def on_file(event: file, listener: js.Function2[/* file */ String, /* id */ String, _]): this.type = js.native
+    def on_file(event: file, listener: js.Function2[/* file */ String, /* id */ String, js.Any]): this.type = js.native
     /**
       * When opts.ignoreMissing is enabled, this event fires for each missing package.
       */
     @JSName("on")
-    def on_missing(event: missing, listener: js.Function2[/* id */ String, /* parent */ Dictprop, _]): this.type = js.native
+    def on_missing(event: missing, listener: js.Function2[/* id */ String, /* parent */ Dictprop, js.Any]): this.type = js.native
     /**
       * Every time a package is read, this event fires. The directory name of the package is available in pkg.__dirname.
       */
     @JSName("on")
-    def on_package(event: _package, listener: js.Function1[/* package */ PackageObject, _]): this.type = js.native
+    def on_package(event: _package, listener: js.Function1[/* package */ PackageObject, js.Any]): this.type = js.native
     /**
       * Every time a transform is applied to a file, a 'transform' event fires with the instantiated transform stream tr.
       */
     @JSName("on")
-    def on_transform(event: transform, listener: js.Function2[/* tr */ js.Any, /* file */ String, _]): this.type = js.native
+    def on_transform(event: transform, listener: js.Function2[/* tr */ js.Any, /* file */ String, js.Any]): this.type = js.native
     
-    def parseDeps(file: String, src: String, cb: js.Any): js.Array[_] = js.native
+    def parseDeps(file: String, src: String, cb: js.Any): js.Array[js.Any] = js.native
     
     def readFile(file: String): ReadableStream = js.native
-    def readFile(file: String, id: js.UndefOr[scala.Nothing], pkg: PackageObject): ReadableStream = js.native
     def readFile(file: String, id: js.Any): ReadableStream = js.native
     def readFile(file: String, id: js.Any, pkg: PackageObject): ReadableStream = js.native
+    def readFile(file: String, id: Unit, pkg: PackageObject): ReadableStream = js.native
     
     def resolve(
       id: String,
@@ -171,7 +172,7 @@ object mod {
           /* file */ js.UndefOr[String], 
           /* pkg */ js.UndefOr[PackageObject], 
           /* fakePath */ js.UndefOr[js.Any], 
-          _
+          js.Any
         ]
     ): js.Any = js.native
     
@@ -190,70 +191,70 @@ object mod {
   /**
     * module-deps constructor options
     */
-  @js.native
   trait Options
-    extends /* prop */ StringDictionary[js.Any] {
+    extends StObject
+       with /* prop */ StringDictionary[js.Any] {
     
     // un-documented options used by module-deps
-    var basedir: js.UndefOr[String] = js.native
+    var basedir: js.UndefOr[String] = js.undefined
     
     /**
       * An object mapping filenames to file objects to skip costly io
       */
-    var cache: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var cache: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * A custom dependency detection function. opts.detect(source) should return an array of dependency module names. By default detective is used
       */
-    var detect: js.UndefOr[js.Function1[/* source */ String, js.Array[String]]] = js.native
+    var detect: js.UndefOr[js.Function1[/* source */ String, js.Array[String]]] = js.undefined
     
-    var expose: js.UndefOr[StringDictionary[String]] = js.native
+    var expose: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * An object mapping filenames to raw source to avoid reading from disk.
       */
-    var fileCache: js.UndefOr[StringDictionary[String]] = js.native
+    var fileCache: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * A function (id) to skip resolution of some module id strings. If defined,
       * opts.filter(id) should return truthy for all the ids to include and falsey for all the ids to skip.
       */
-    var filter: js.UndefOr[js.Function1[/* id */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* id */ String, Boolean]] = js.undefined
     
-    var globalTransform: js.UndefOr[js.Array[_]] = js.native
+    var globalTransform: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Ignore files that failed to resolve
       */
-    var ignoreMissing: js.UndefOr[Boolean] = js.native
+    var ignoreMissing: js.UndefOr[Boolean] = js.undefined
     
-    var modules: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var modules: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /**
       * An array of absolute paths to not parse for dependencies.
       * Use this for large dependencies like jquery or threejs which take forever to parse.
       */
-    var noParse: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var noParse: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     /**
       * An object mapping filenames to their parent package.json contents
       * for browser fields, main entries, and transforms
       */
-    var packageCache: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var packageCache: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     // tslint:disable-line:void-return
     /**
       * Transform the parsed package.json contents before using the values.
       * opts.packageFilter(pkg, dir) should return the new pkg object to use.
       */
-    var packageFilter: js.UndefOr[js.Function2[/* pkg */ PackageObject, /* dir */ String, PackageObject]] = js.native
+    var packageFilter: js.UndefOr[js.Function2[/* pkg */ PackageObject, /* dir */ String, PackageObject]] = js.undefined
     
     /**
       * Array of global paths to search. Defaults to splitting on ':' in process.env.NODE_PATH
       */
-    var paths: js.UndefOr[js.Array[String]] = js.native
+    var paths: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A complex cache handler that allows async and persistent caching of data.
@@ -267,7 +268,7 @@ object mod {
           /* cb */ CacheCallback, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A function (id, file, pkg) that gets called after id has been resolved.
@@ -275,7 +276,7 @@ object mod {
       */
     var postFilter: js.UndefOr[
         js.Function3[/* id */ String, /* file */ String, /* pkg */ PackageObject, Unit | Boolean]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Custom resolve function using the opts.resolve(id, parent, cb) signature that browser-resolve has
@@ -293,18 +294,18 @@ object mod {
           ], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A string or array of string transforms
       */
-    var transform: js.UndefOr[String | js.Array[String]] = js.native
+    var transform: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * An array path of strings showing where to look in the package.json
       * for source transformations. If falsy, don't look at the package.json at all
       */
-    var transformKey: js.UndefOr[js.Array[String]] = js.native
+    var transformKey: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -363,7 +364,7 @@ object mod {
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)
       
       @scala.inline
-      def setGlobalTransform(value: js.Array[_]): Self = StObject.set(x, "globalTransform", value.asInstanceOf[js.Any])
+      def setGlobalTransform(value: js.Array[js.Any]): Self = StObject.set(x, "globalTransform", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setGlobalTransformUndefined: Self = StObject.set(x, "globalTransform", js.undefined)
@@ -466,20 +467,19 @@ object mod {
     */
   type PackageObject = StringDictionary[js.Any]
   
-  @js.native
   trait TransformObject extends StObject {
     
-    var deps: StringDictionary[js.Any] = js.native
+    var deps: StringDictionary[js.Any]
     
-    var entry: Boolean = js.native
+    var entry: Boolean
     
-    var expose: String = js.native
+    var expose: String
     
-    var file: String = js.native
+    var file: String
     
-    var id: String = js.native
+    var id: String
     
-    var source: String = js.native
+    var source: String
   }
   object TransformObject {
     

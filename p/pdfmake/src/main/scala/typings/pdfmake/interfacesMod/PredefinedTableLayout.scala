@@ -2,7 +2,6 @@ package typings.pdfmake.interfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.pdfmake.pdfmakeStrings.headerLineOnly
   - typings.pdfmake.pdfmakeStrings.lightHorizontalLines
 */
-trait PredefinedTableLayout extends _TableLayout
+trait PredefinedTableLayout
+  extends StObject
+     with _TableLayout
 object PredefinedTableLayout {
   
   @scala.inline

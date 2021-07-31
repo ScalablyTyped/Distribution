@@ -3,39 +3,37 @@ package typings.kuromoji.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ByteBuffer extends StObject {
   
-  var buffer: Uint8Array = js.native
+  var buffer: Uint8Array
   
-  def get(index: Double): Double = js.native
+  def get(index: Double): Double
   
-  def getInt(index: Double): Double = js.native
+  def getInt(index: Double): Double
   
-  def getShort(index: Double): Double = js.native
+  def getShort(index: Double): Double
   
-  def getString(index: Double): String = js.native
+  def getString(index: Double): String
   
-  var position: Double = js.native
+  var position: Double
   
-  def put(b: Double): Unit = js.native
+  def put(b: Double): Unit
   
-  def putInt(num: Double): Unit = js.native
+  def putInt(num: Double): Unit
   
-  def putShort(num: Double): Unit = js.native
+  def putShort(num: Double): Unit
   
-  def putString(str: String): Unit = js.native
+  def putString(str: String): Unit
   
-  def readInt(): Double = js.native
+  def readInt(): Double
   
-  def reallocate(): Unit = js.native
+  def reallocate(): Unit
   
-  def shrink(): Uint8Array = js.native
+  def shrink(): Uint8Array
   
-  def size(): Double = js.native
+  def size(): Double
 }
 object ByteBuffer {
   

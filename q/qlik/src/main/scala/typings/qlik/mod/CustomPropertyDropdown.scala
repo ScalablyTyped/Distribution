@@ -4,32 +4,31 @@ import typings.qlik.qlikStrings.dropdown
 import typings.qlik.qlikStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomPropertyDropdown
-  extends CustomPropertyCommon
+  extends StObject
+     with CustomPropertyCommon
      with CustomProperty {
   
-  var component: dropdown = js.native
+  var component: dropdown
   
-  var defaultValue: js.UndefOr[String] = js.native
+  var defaultValue: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[CustomPropertyOptions] = js.native
+  var options: js.UndefOr[CustomPropertyOptions] = js.undefined
   
   @JSName("ref")
-  var ref_CustomPropertyDropdown: String = js.native
+  var ref_CustomPropertyDropdown: String
   
   @JSName("type")
-  var type_CustomPropertyDropdown: string = js.native
+  var type_CustomPropertyDropdown: string
 }
 object CustomPropertyDropdown {
   
   @scala.inline
-  def apply(component: dropdown, ref: String, `type`: string): CustomPropertyDropdown = {
-    val __obj = js.Dynamic.literal(component = component.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(ref: String): CustomPropertyDropdown = {
+    val __obj = js.Dynamic.literal(component = "dropdown", ref = ref.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("string")
     __obj.asInstanceOf[CustomPropertyDropdown]
   }
   

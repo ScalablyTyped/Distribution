@@ -2,7 +2,6 @@ package typings.contentstack
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -13,7 +12,7 @@ object mod {
     
     def addParam(key: String, value: js.Any): Assets = js.native
     
-    def fetch(): js.Promise[_] = js.native
+    def fetch(): js.Promise[js.Any] = js.native
     
     def toJSON(): Assets = js.native
   }
@@ -37,7 +36,7 @@ object mod {
     
     def addQuery(key: String, value: String): Entry = js.native
     
-    def fetch(): js.Promise[_] = js.native
+    def fetch(): js.Promise[js.Any] = js.native
     
     def includeContentType(): Entry = js.native
     
@@ -69,9 +68,9 @@ object mod {
     
     def equalTo(key: String, value: js.Any): Query = js.native
     
-    def find(): js.Promise[_] = js.native
+    def find(): js.Promise[js.Any] = js.native
     
-    def findOne(): js.Promise[_] = js.native
+    def findOne(): js.Promise[js.Any] = js.native
     
     def getQuery(): Query = js.native
     
@@ -97,7 +96,7 @@ object mod {
     
     def search(value: String): Query = js.native
     
-    def tags(value: js.Array[_]): Query = js.native
+    def tags(value: js.Array[js.Any]): Query = js.native
     
     def where(key: String, value: js.Any): Query = js.native
   }
@@ -142,23 +141,25 @@ object mod {
     
     def setProtocol(protocol: String): Stack = js.native
     
-    def sync(params: js.Object): js.Promise[_] = js.native
+    def sync(params: js.Object): js.Promise[js.Any] = js.native
   }
-  @JSImport("contentstack", "Stack")
-  @js.native
-  def Stack(api_key: String, access_token: String, environment_name: String): Stack = js.native
-  @JSImport("contentstack", "Stack")
-  @js.native
-  def Stack(config: Config): Stack = js.native
+  object Stack {
+    
+    @JSImport("contentstack", "Stack")
+    @js.native
+    def apply(api_key: String, access_token: String, environment_name: String): Stack = js.native
+    @JSImport("contentstack", "Stack")
+    @js.native
+    def apply(config: Config): Stack = js.native
+  }
   
-  @js.native
   trait Config extends StObject {
     
-    var access_token: String = js.native
+    var access_token: String
     
-    var api_key: String = js.native
+    var api_key: String
     
-    var environment: String = js.native
+    var environment: String
   }
   object Config {
     

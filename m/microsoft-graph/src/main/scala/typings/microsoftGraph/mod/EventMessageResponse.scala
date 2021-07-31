@@ -2,15 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EventMessageResponse extends EventMessage {
+trait EventMessageResponse
+  extends StObject
+     with EventMessage {
   
-  var proposedNewTime: js.UndefOr[NullableOption[TimeSlot]] = js.native
+  var proposedNewTime: js.UndefOr[NullableOption[TimeSlot]] = js.undefined
   
-  var responseType: js.UndefOr[NullableOption[ResponseType]] = js.native
+  var responseType: js.UndefOr[NullableOption[ResponseType]] = js.undefined
 }
 object EventMessageResponse {
   

@@ -2,17 +2,15 @@ package typings.mangopay2NodejsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationData extends StObject {
   
-  var access_token: String = js.native
+  var access_token: String
   
-  var expires_in: Double = js.native
+  var expires_in: Double
   
-  var token_type: String = js.native
+  var token_type: String
 }
 object AuthorizationData {
   

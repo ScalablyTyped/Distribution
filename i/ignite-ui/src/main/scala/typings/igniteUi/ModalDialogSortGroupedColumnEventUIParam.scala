@@ -2,31 +2,29 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModalDialogSortGroupedColumnEventUIParam extends StObject {
   
   /**
     * Gets whether column should be sorted ascending or descending.
     */
-  var isAsc: js.UndefOr[Boolean] = js.native
+  var isAsc: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets the key of the column to be grouped.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * Get a reference to the current layout object, if any.
     */
-  var layout: js.UndefOr[js.Any] = js.native
+  var layout: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets access the GroupBy widget object.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object ModalDialogSortGroupedColumnEventUIParam {
   

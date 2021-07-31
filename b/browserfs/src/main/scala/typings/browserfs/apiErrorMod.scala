@@ -4,14 +4,15 @@ import typings.node.Buffer
 import typings.node.NodeJS.ErrnoException
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiErrorMod {
   
   @JSImport("browserfs/dist/node/core/api_error", "ApiError")
   @js.native
-  class ApiError protected () extends ErrnoException {
+  class ApiError protected ()
+    extends StObject
+       with ErrnoException {
     /**
       * Represents a BrowserFS error. Passed back to applications after a failed
       * call to the BrowserFS API.
@@ -24,8 +25,8 @@ object apiErrorMod {
       */
     def this(`type`: ErrorCode) = this()
     def this(`type`: ErrorCode, message: String) = this()
-    def this(`type`: ErrorCode, message: js.UndefOr[scala.Nothing], path: String) = this()
     def this(`type`: ErrorCode, message: String, path: String) = this()
+    def this(`type`: ErrorCode, message: Unit, path: String) = this()
     
     /**
       * The size of the API error in buffer-form in bytes.
@@ -38,6 +39,12 @@ object apiErrorMod {
     @JSName("errno")
     var errno_ApiError: ErrorCode = js.native
     
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    
     @JSName("syscall")
     var syscall_ApiError: String = js.native
     
@@ -47,54 +54,48 @@ object apiErrorMod {
       * Writes the API error into a buffer.
       */
     def writeToBuffer(): Buffer = js.native
-    def writeToBuffer(buffer: js.UndefOr[scala.Nothing], i: Double): Buffer = js.native
+    def writeToBuffer(buffer: Unit, i: Double): Buffer = js.native
     def writeToBuffer(buffer: Buffer): Buffer = js.native
     def writeToBuffer(buffer: Buffer, i: Double): Buffer = js.native
   }
   /* static members */
   object ApiError {
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.EEXIST")
+    @JSImport("browserfs/dist/node/core/api_error", "ApiError")
     @js.native
-    def EEXIST(path: String): ApiError = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.EISDIR")
-    @js.native
-    def EISDIR(path: String): ApiError = js.native
+    @scala.inline
+    def EEXIST(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EEXIST")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.ENOENT")
-    @js.native
-    def ENOENT(path: String): ApiError = js.native
+    @scala.inline
+    def EISDIR(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EISDIR")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.ENOTDIR")
-    @js.native
-    def ENOTDIR(path: String): ApiError = js.native
+    @scala.inline
+    def ENOENT(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOENT")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.ENOTEMPTY")
-    @js.native
-    def ENOTEMPTY(path: String): ApiError = js.native
+    @scala.inline
+    def ENOTDIR(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTDIR")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.EPERM")
-    @js.native
-    def EPERM(path: String): ApiError = js.native
+    @scala.inline
+    def ENOTEMPTY(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("ENOTEMPTY")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.FileError")
-    @js.native
-    def FileError(code: ErrorCode, p: String): ApiError = js.native
+    @scala.inline
+    def EPERM(path: String): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("EPERM")(path.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    
+    @scala.inline
+    def FileError(code: ErrorCode, p: String): ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("FileError")(code.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[ApiError]
     
     /**
       * Creates an ApiError object from a buffer.
       */
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer): ApiError = js.native
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.fromBuffer")
-    @js.native
-    def fromBuffer(buffer: Buffer, i: Double): ApiError = js.native
+    @scala.inline
+    def fromBuffer(buffer: Buffer): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[ApiError]
+    @scala.inline
+    def fromBuffer(buffer: Buffer, i: Double): ApiError = (^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any], i.asInstanceOf[js.Any])).asInstanceOf[ApiError]
     
-    @JSImport("browserfs/dist/node/core/api_error", "ApiError.fromJSON")
-    @js.native
-    def fromJSON(json: js.Any): ApiError = js.native
+    @scala.inline
+    def fromJSON(json: js.Any): ApiError = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[ApiError]
   }
   
   @js.native
@@ -104,66 +105,96 @@ object apiErrorMod {
   object ErrorCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ErrorCode with Double] = js.native
+    def apply(value: Double): js.UndefOr[ErrorCode & Double] = js.native
     
     @js.native
-    sealed trait EACCES extends ErrorCode
-    /* 13 */ val EACCES: typings.browserfs.apiErrorMod.ErrorCode.EACCES with Double = js.native
+    sealed trait EACCES
+      extends StObject
+         with ErrorCode
+    /* 13 */ val EACCES: typings.browserfs.apiErrorMod.ErrorCode.EACCES & Double = js.native
     
     @js.native
-    sealed trait EBADF extends ErrorCode
-    /* 9 */ val EBADF: typings.browserfs.apiErrorMod.ErrorCode.EBADF with Double = js.native
+    sealed trait EBADF
+      extends StObject
+         with ErrorCode
+    /* 9 */ val EBADF: typings.browserfs.apiErrorMod.ErrorCode.EBADF & Double = js.native
     
     @js.native
-    sealed trait EBUSY extends ErrorCode
-    /* 16 */ val EBUSY: typings.browserfs.apiErrorMod.ErrorCode.EBUSY with Double = js.native
+    sealed trait EBUSY
+      extends StObject
+         with ErrorCode
+    /* 16 */ val EBUSY: typings.browserfs.apiErrorMod.ErrorCode.EBUSY & Double = js.native
     
     @js.native
-    sealed trait EEXIST extends ErrorCode
-    /* 17 */ val EEXIST: typings.browserfs.apiErrorMod.ErrorCode.EEXIST with Double = js.native
+    sealed trait EEXIST
+      extends StObject
+         with ErrorCode
+    /* 17 */ val EEXIST: typings.browserfs.apiErrorMod.ErrorCode.EEXIST & Double = js.native
     
     @js.native
-    sealed trait EFBIG extends ErrorCode
-    /* 27 */ val EFBIG: typings.browserfs.apiErrorMod.ErrorCode.EFBIG with Double = js.native
+    sealed trait EFBIG
+      extends StObject
+         with ErrorCode
+    /* 27 */ val EFBIG: typings.browserfs.apiErrorMod.ErrorCode.EFBIG & Double = js.native
     
     @js.native
-    sealed trait EINVAL extends ErrorCode
-    /* 22 */ val EINVAL: typings.browserfs.apiErrorMod.ErrorCode.EINVAL with Double = js.native
+    sealed trait EINVAL
+      extends StObject
+         with ErrorCode
+    /* 22 */ val EINVAL: typings.browserfs.apiErrorMod.ErrorCode.EINVAL & Double = js.native
     
     @js.native
-    sealed trait EIO extends ErrorCode
-    /* 5 */ val EIO: typings.browserfs.apiErrorMod.ErrorCode.EIO with Double = js.native
+    sealed trait EIO
+      extends StObject
+         with ErrorCode
+    /* 5 */ val EIO: typings.browserfs.apiErrorMod.ErrorCode.EIO & Double = js.native
     
     @js.native
-    sealed trait EISDIR extends ErrorCode
-    /* 21 */ val EISDIR: typings.browserfs.apiErrorMod.ErrorCode.EISDIR with Double = js.native
+    sealed trait EISDIR
+      extends StObject
+         with ErrorCode
+    /* 21 */ val EISDIR: typings.browserfs.apiErrorMod.ErrorCode.EISDIR & Double = js.native
     
     @js.native
-    sealed trait ENOENT extends ErrorCode
-    /* 2 */ val ENOENT: typings.browserfs.apiErrorMod.ErrorCode.ENOENT with Double = js.native
+    sealed trait ENOENT
+      extends StObject
+         with ErrorCode
+    /* 2 */ val ENOENT: typings.browserfs.apiErrorMod.ErrorCode.ENOENT & Double = js.native
     
     @js.native
-    sealed trait ENOSPC extends ErrorCode
-    /* 28 */ val ENOSPC: typings.browserfs.apiErrorMod.ErrorCode.ENOSPC with Double = js.native
+    sealed trait ENOSPC
+      extends StObject
+         with ErrorCode
+    /* 28 */ val ENOSPC: typings.browserfs.apiErrorMod.ErrorCode.ENOSPC & Double = js.native
     
     @js.native
-    sealed trait ENOTDIR extends ErrorCode
-    /* 20 */ val ENOTDIR: typings.browserfs.apiErrorMod.ErrorCode.ENOTDIR with Double = js.native
+    sealed trait ENOTDIR
+      extends StObject
+         with ErrorCode
+    /* 20 */ val ENOTDIR: typings.browserfs.apiErrorMod.ErrorCode.ENOTDIR & Double = js.native
     
     @js.native
-    sealed trait ENOTEMPTY extends ErrorCode
-    /* 39 */ val ENOTEMPTY: typings.browserfs.apiErrorMod.ErrorCode.ENOTEMPTY with Double = js.native
+    sealed trait ENOTEMPTY
+      extends StObject
+         with ErrorCode
+    /* 39 */ val ENOTEMPTY: typings.browserfs.apiErrorMod.ErrorCode.ENOTEMPTY & Double = js.native
     
     @js.native
-    sealed trait ENOTSUP extends ErrorCode
-    /* 95 */ val ENOTSUP: typings.browserfs.apiErrorMod.ErrorCode.ENOTSUP with Double = js.native
+    sealed trait ENOTSUP
+      extends StObject
+         with ErrorCode
+    /* 95 */ val ENOTSUP: typings.browserfs.apiErrorMod.ErrorCode.ENOTSUP & Double = js.native
     
     @js.native
-    sealed trait EPERM extends ErrorCode
-    /* 1 */ val EPERM: typings.browserfs.apiErrorMod.ErrorCode.EPERM with Double = js.native
+    sealed trait EPERM
+      extends StObject
+         with ErrorCode
+    /* 1 */ val EPERM: typings.browserfs.apiErrorMod.ErrorCode.EPERM & Double = js.native
     
     @js.native
-    sealed trait EROFS extends ErrorCode
-    /* 30 */ val EROFS: typings.browserfs.apiErrorMod.ErrorCode.EROFS with Double = js.native
+    sealed trait EROFS
+      extends StObject
+         with ErrorCode
+    /* 30 */ val EROFS: typings.browserfs.apiErrorMod.ErrorCode.EROFS & Double = js.native
   }
 }

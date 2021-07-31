@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/androidenterprise/v1", "androidenterprise_v1.Resource$Grouplicenses")
@@ -31,7 +30,7 @@ class ResourceGrouplicenses protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGroupLicense] = js.native
   def get(callback: BodyResponseCallback[SchemaGroupLicense]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupLicense] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroupLicense] = js.native
   def get(params: ParamsResourceGrouplicensesGet): GaxiosPromise[SchemaGroupLicense] = js.native
   def get(params: ParamsResourceGrouplicensesGet, callback: BodyResponseCallback[SchemaGroupLicense]): Unit = js.native
   def get(
@@ -61,7 +60,7 @@ class ResourceGrouplicenses protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaGroupLicensesListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaGroupLicensesListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGroupLicensesListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGroupLicensesListResponse] = js.native
   def list(params: ParamsResourceGrouplicensesList): GaxiosPromise[SchemaGroupLicensesListResponse] = js.native
   def list(
     params: ParamsResourceGrouplicensesList,

@@ -2,21 +2,19 @@ package typings.firebaseAdmin.messagingMod.messaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessagingDevicesResponse extends StObject {
   
-  var canonicalRegistrationTokenCount: Double = js.native
+  var canonicalRegistrationTokenCount: Double
   
-  var failureCount: Double = js.native
+  var failureCount: Double
   
-  var multicastId: Double = js.native
+  var multicastId: Double
   
-  var results: js.Array[MessagingDeviceResult] = js.native
+  var results: js.Array[MessagingDeviceResult]
   
-  var successCount: Double = js.native
+  var successCount: Double
 }
 object MessagingDevicesResponse {
   

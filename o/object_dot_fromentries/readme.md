@@ -11,8 +11,8 @@ ES proposal-spec-compliant Object.fromEntries shim.
 | Full name          | object.fromentries |
 | Keywords           | Object.fromEntries, Object.entries, Object.values, Object.keys, entries, values, ES7, ES8, ES2017, shim, object, keys, polyfill, es-shim API |
 | # releases         | 3 |
-| # dependents       | 63 |
-| # downloads        | 259170931 |
+| # dependents       | 98 |
+| # downloads        | 323144535 |
 | # stars            | 0 |
 
 ## Links

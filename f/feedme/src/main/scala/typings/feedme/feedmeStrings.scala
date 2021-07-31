@@ -3,13 +3,14 @@ package typings.feedme
 import typings.feedme.mod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object feedmeStrings {
   
   @js.native
-  sealed trait atom extends Type
+  sealed trait atom
+    extends StObject
+       with Type
   @scala.inline
   def atom: atom = "atom".asInstanceOf[atom]
   
@@ -39,7 +40,9 @@ object feedmeStrings {
   def item: item = "item".asInstanceOf[item]
   
   @js.native
-  sealed trait json extends Type
+  sealed trait json
+    extends StObject
+       with Type
   @scala.inline
   def json: json = "json".asInstanceOf[json]
   
@@ -49,37 +52,51 @@ object feedmeStrings {
   def pipe: pipe = "pipe".asInstanceOf[pipe]
   
   @js.native
-  sealed trait `rss 0Dot90` extends Type
+  sealed trait `rss 0Dot90`
+    extends StObject
+       with Type
   @scala.inline
   def `rss 0Dot90`: `rss 0Dot90` = ("rss 0.90").asInstanceOf[`rss 0Dot90`]
   
   @js.native
-  sealed trait `rss 0Dot91` extends Type
+  sealed trait `rss 0Dot91`
+    extends StObject
+       with Type
   @scala.inline
   def `rss 0Dot91`: `rss 0Dot91` = ("rss 0.91").asInstanceOf[`rss 0Dot91`]
   
   @js.native
-  sealed trait `rss 0Dot92` extends Type
+  sealed trait `rss 0Dot92`
+    extends StObject
+       with Type
   @scala.inline
   def `rss 0Dot92`: `rss 0Dot92` = ("rss 0.92").asInstanceOf[`rss 0Dot92`]
   
   @js.native
-  sealed trait `rss 0Dot93` extends Type
+  sealed trait `rss 0Dot93`
+    extends StObject
+       with Type
   @scala.inline
   def `rss 0Dot93`: `rss 0Dot93` = ("rss 0.93").asInstanceOf[`rss 0Dot93`]
   
   @js.native
-  sealed trait `rss 0Dot94` extends Type
+  sealed trait `rss 0Dot94`
+    extends StObject
+       with Type
   @scala.inline
   def `rss 0Dot94`: `rss 0Dot94` = ("rss 0.94").asInstanceOf[`rss 0Dot94`]
   
   @js.native
-  sealed trait `rss 1Dot0` extends Type
+  sealed trait `rss 1Dot0`
+    extends StObject
+       with Type
   @scala.inline
   def `rss 1Dot0`: `rss 1Dot0` = ("rss 1.0").asInstanceOf[`rss 1Dot0`]
   
   @js.native
-  sealed trait `rss 2Dot0` extends Type
+  sealed trait `rss 2Dot0`
+    extends StObject
+       with Type
   @scala.inline
   def `rss 2Dot0`: `rss 2Dot0` = ("rss 2.0").asInstanceOf[`rss 2Dot0`]
   

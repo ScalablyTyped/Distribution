@@ -2,28 +2,26 @@ package typings.awsSdkClientCodecommitNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesFolderMod {
   
-  @js.native
   trait Folder extends StObject {
     
     /**
       * <p>The fully-qualified path of the folder in the repository.</p>
       */
-    var absolutePath: js.UndefOr[String] = js.native
+    var absolutePath: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The relative path of the specified folder from the folder where the query originated.</p>
       */
-    var relativePath: js.UndefOr[String] = js.native
+    var relativePath: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The full SHA-1 pointer of the tree information for the commit that contains the folder.</p>
       */
-    var treeId: js.UndefOr[String] = js.native
+    var treeId: js.UndefOr[String] = js.undefined
   }
   object Folder {
     

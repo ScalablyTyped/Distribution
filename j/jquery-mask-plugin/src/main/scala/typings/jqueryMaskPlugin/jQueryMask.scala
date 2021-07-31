@@ -5,19 +5,17 @@ import typings.std.Event
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jQueryMask {
   
-  @js.native
   trait Invalid extends StObject {
     
-    var e: String = js.native
+    var e: String
     
-    var p: Double = js.native
+    var p: Double
     
-    var v: String = js.native
+    var v: String
   }
   object Invalid {
     
@@ -41,26 +39,25 @@ object jQueryMask {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var byPassKeys: js.UndefOr[js.Array[Double]] = js.native
+    var byPassKeys: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var clearIfNotMatch: js.UndefOr[Boolean] = js.native
+    var clearIfNotMatch: js.UndefOr[Boolean] = js.undefined
     
-    var dataMask: js.UndefOr[Boolean] = js.native
+    var dataMask: js.UndefOr[Boolean] = js.undefined
     
-    var dataMaskAttr: js.UndefOr[String] = js.native
+    var dataMaskAttr: js.UndefOr[String] = js.undefined
     
-    var maskElements: js.UndefOr[String] = js.native
+    var maskElements: js.UndefOr[String] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function4[/* value */ String, /* e */ Event, /* $element */ JQuery, /* options */ this.type, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onComplete: js.UndefOr[
         js.Function4[/* value */ String, /* e */ Event, /* $element */ JQuery, /* options */ this.type, Unit]
-      ] = js.native
+      ] = js.undefined
     
     var onInvalid: js.UndefOr[
         js.Function5[
@@ -71,25 +68,25 @@ object jQueryMask {
           /* options */ this.type, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var onKeyPress: js.UndefOr[
         js.Function4[/* value */ String, /* e */ Event, /* $element */ JQuery, /* options */ this.type, Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
     
-    var selectOnFocus: js.UndefOr[Boolean] = js.native
+    var selectOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var translation: js.UndefOr[Translation] = js.native
+    var translation: js.UndefOr[Translation] = js.undefined
     
-    var watchDataMask: js.UndefOr[Boolean] = js.native
+    var watchDataMask: js.UndefOr[Boolean] = js.undefined
     
-    var watchInputs: js.UndefOr[Boolean] = js.native
+    var watchInputs: js.UndefOr[Boolean] = js.undefined
     
-    var watchInterval: js.UndefOr[Double] = js.native
+    var watchInterval: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -205,16 +202,15 @@ object jQueryMask {
     }
   }
   
-  @js.native
   trait Pattern extends StObject {
     
-    var fallback: js.UndefOr[String] = js.native
+    var fallback: js.UndefOr[String] = js.undefined
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var pattern: js.UndefOr[RegExp] = js.native
+    var pattern: js.UndefOr[RegExp] = js.undefined
     
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
   }
   object Pattern {
     
@@ -253,11 +249,11 @@ object jQueryMask {
     }
   }
   
-  @js.native
   trait Translation
-    extends /* key */ StringDictionary[js.UndefOr[Pattern | js.Object]] {
+    extends StObject
+       with /* key */ StringDictionary[js.UndefOr[Pattern | js.Object]] {
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
   }
   object Translation {
     

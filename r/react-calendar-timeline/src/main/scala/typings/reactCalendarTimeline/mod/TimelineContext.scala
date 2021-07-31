@@ -2,21 +2,19 @@ package typings.reactCalendarTimeline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineContext extends StObject {
   
-  var canvasTimeEnd: Double = js.native
+  var canvasTimeEnd: Double
   
-  var canvasTimeStart: Double = js.native
+  var canvasTimeStart: Double
   
-  var timelineWidth: Double = js.native
+  var timelineWidth: Double
   
-  var visibleTimeEnd: Double = js.native
+  var visibleTimeEnd: Double
   
-  var visibleTimeStart: Double = js.native
+  var visibleTimeStart: Double
 }
 object TimelineContext {
   

@@ -3,24 +3,22 @@ package typings.amapJsApi.AMap
 import typings.amapJsApi.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Size extends StObject {
   
   // internal
-  def contains(size: X): Boolean = js.native
+  def contains(size: X): Boolean
   
   /**
     * 获得高度
     */
-  def getHeight(): Double = js.native
+  def getHeight(): Double
   
   /**
     * 获得宽度
     */
-  def getWidth(): Double = js.native
+  def getWidth(): Double
 }
 object Size {
   

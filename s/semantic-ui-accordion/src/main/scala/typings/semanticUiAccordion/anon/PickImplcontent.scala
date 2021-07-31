@@ -2,14 +2,12 @@ package typings.semanticUiAccordion.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-accordion.SemanticUI.Accordion.SelectorSettings._Impl, 'content'> */
-@js.native
 trait PickImplcontent extends StObject {
   
-  var content: String = js.native
+  var content: String
 }
 object PickImplcontent {
   

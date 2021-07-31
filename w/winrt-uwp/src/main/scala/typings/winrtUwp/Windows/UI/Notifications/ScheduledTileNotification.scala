@@ -4,27 +4,25 @@ import typings.std.Date
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Defines the visual content and timing for a single, non-recurring scheduled update to a tile. */
-@js.native
 trait ScheduledTileNotification extends StObject {
   
   /** Gets the XML description of the content of the scheduled tile update. */
-  var content: XmlDocument = js.native
+  var content: XmlDocument
   
   /** Gets the time at which the tile is scheduled to be updated. */
-  var deliveryTime: Date = js.native
+  var deliveryTime: Date
   
   /** Gets or sets the time after which the tile notification should no longer be shown. By default, a tile notification does not expire. It is a best practice to explicitly set an expiration time to avoid stale content. */
-  var expirationTime: Date = js.native
+  var expirationTime: Date
   
   /** Gets or sets the unique ID that is used to identify the scheduled tile in the schedule. */
-  var id: String = js.native
+  var id: String
   
   /** Gets or sets a string that Windows can use to prevent duplicate notification content from appearing in the queue. */
-  var tag: String = js.native
+  var tag: String
 }
 object ScheduledTileNotification {
   

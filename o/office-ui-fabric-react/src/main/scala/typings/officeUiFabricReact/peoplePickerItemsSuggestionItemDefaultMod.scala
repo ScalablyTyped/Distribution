@@ -5,15 +5,16 @@ import typings.officeUiFabricReact.personaTypesMod.IPersonaProps
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object peoplePickerItemsSuggestionItemDefaultMod {
   
-  @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/PeoplePickerItems/SuggestionItemDefault", "SuggestionItemNormal")
+  @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/PeoplePickerItems/SuggestionItemDefault", JSImport.Namespace)
   @js.native
-  def SuggestionItemNormal(persona: IPersonaProps): Element = js.native
-  @JSImport("office-ui-fabric-react/lib/components/FloatingPicker/PeoplePicker/PeoplePickerItems/SuggestionItemDefault", "SuggestionItemNormal")
-  @js.native
-  def SuggestionItemNormal(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[_]): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def SuggestionItemNormal(persona: IPersonaProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any]).asInstanceOf[Element]
+  @scala.inline
+  def SuggestionItemNormal(persona: IPersonaProps, suggestionProps: IBasePickerSuggestionsProps[js.Any]): Element = (^.asInstanceOf[js.Dynamic].applyDynamic("SuggestionItemNormal")(persona.asInstanceOf[js.Any], suggestionProps.asInstanceOf[js.Any])).asInstanceOf[Element]
 }

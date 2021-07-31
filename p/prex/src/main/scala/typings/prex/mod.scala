@@ -6,10 +6,13 @@ import typings.prex.cancellationMod.VSCodeCancellationTokenLike
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("prex", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("prex", "AsyncBoundedQueue")
   @js.native
@@ -90,13 +93,16 @@ object mod {
   /* static members */
   object CancellationToken {
     
+    @JSImport("prex", "CancellationToken")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns a CancellationToken that becomes canceled when **all** of the provided tokens are canceled.
       * @param tokens An iterable of CancellationToken objects.
       */
-    @JSImport("prex", "CancellationToken.all")
-    @js.native
-    def all(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = js.native
+    @scala.inline
+    def all(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(tokens.asInstanceOf[js.Any]).asInstanceOf[typings.prex.cancellationMod.CancellationToken]
     
     /**
       * A token that is already canceled.
@@ -105,21 +111,17 @@ object mod {
     @js.native
     val canceled: typings.prex.cancellationMod.CancellationToken = js.native
     
-    @JSImport("prex", "CancellationToken.from")
-    @js.native
-    def from(cancelable: Cancelable): typings.prex.cancellationMod.CancellationToken = js.native
-    @JSImport("prex", "CancellationToken.from")
-    @js.native
-    def from(cancelable: AbortSignalLike): typings.prex.cancellationMod.CancellationToken = js.native
+    @scala.inline
+    def from(cancelable: Cancelable): typings.prex.cancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typings.prex.cancellationMod.CancellationToken]
+    @scala.inline
+    def from(cancelable: AbortSignalLike): typings.prex.cancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typings.prex.cancellationMod.CancellationToken]
     /**
       * Adapts a CancellationToken-like primitive from a different library.
       */
-    @JSImport("prex", "CancellationToken.from")
-    @js.native
-    def from(cancelable: typings.prex.cancellationMod.CancellationToken): typings.prex.cancellationMod.CancellationToken = js.native
-    @JSImport("prex", "CancellationToken.from")
-    @js.native
-    def from(cancelable: VSCodeCancellationTokenLike): typings.prex.cancellationMod.CancellationToken = js.native
+    @scala.inline
+    def from(cancelable: typings.prex.cancellationMod.CancellationToken): typings.prex.cancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typings.prex.cancellationMod.CancellationToken]
+    @scala.inline
+    def from(cancelable: VSCodeCancellationTokenLike): typings.prex.cancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(cancelable.asInstanceOf[js.Any]).asInstanceOf[typings.prex.cancellationMod.CancellationToken]
     
     /**
       * A token which will never be canceled.
@@ -132,9 +134,8 @@ object mod {
       * Returns a CancellationToken that becomes canceled when **any** of the provided tokens are canceled.
       * @param tokens An iterable of CancellationToken objects.
       */
-    @JSImport("prex", "CancellationToken.race")
-    @js.native
-    def race(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = js.native
+    @scala.inline
+    def race(tokens: Iterable[typings.prex.cancellationMod.CancellationToken | Cancelable]): typings.prex.cancellationMod.CancellationToken = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(tokens.asInstanceOf[js.Any]).asInstanceOf[typings.prex.cancellationMod.CancellationToken]
   }
   
   @JSImport("prex", "CancellationTokenCountdown")
@@ -212,31 +213,22 @@ object mod {
     def this(initialCount: Double, maxCount: Double) = this()
   }
   
-  @JSImport("prex", "delay")
-  @js.native
-  def delay(msec: Double): js.Promise[Unit] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay(token: Cancelable, msec: Double): js.Promise[Unit] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay(token: typings.prex.cancellationMod.CancellationToken, msec: Double): js.Promise[Unit] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay[T](msec: Double, value: T): js.Promise[T] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: T): js.Promise[T] = js.native
-  @JSImport("prex", "delay")
-  @js.native
-  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = js.native
+  @scala.inline
+  def delay(msec: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def delay(token: Cancelable, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def delay(token: typings.prex.cancellationMod.CancellationToken, msec: Double): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def delay[T](msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: Cancelable, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: Cancelable, msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: T): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def delay[T](token: typings.prex.cancellationMod.CancellationToken, msec: Double, value: js.Thenable[T]): js.Promise[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(token.asInstanceOf[js.Any], msec.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
 }

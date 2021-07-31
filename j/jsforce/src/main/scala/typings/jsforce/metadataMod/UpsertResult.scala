@@ -2,17 +2,15 @@ package typings.jsforce.metadataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpsertResult extends StObject {
   
-  var created: Boolean = js.native
+  var created: Boolean
   
-  var fullName: String = js.native
+  var fullName: String
   
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object UpsertResult {
   

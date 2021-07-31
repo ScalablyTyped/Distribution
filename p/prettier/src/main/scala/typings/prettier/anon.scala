@@ -28,15 +28,13 @@ import typings.prettier.prettierStrings.root
 import typings.prettier.prettierStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var value: js.Array[String] = js.native
+    var value: js.Array[String]
   }
   object `0` {
     
@@ -57,14 +55,13 @@ object anon {
     }
   }
   
-  @js.native
   trait CursorNodeStart extends StObject {
     
-    var cursorNodeStart: js.UndefOr[Double] = js.native
+    var cursorNodeStart: js.UndefOr[Double] = js.undefined
     
-    var cursorNodeText: js.UndefOr[String] = js.native
+    var cursorNodeText: js.UndefOr[String] = js.undefined
     
-    var formatted: String = js.native
+    var formatted: String
   }
   object CursorNodeStart {
     
@@ -94,14 +91,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Description[Value] extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var since: js.UndefOr[String] = js.native
+    var since: js.UndefOr[String] = js.undefined
     
-    var value: Value = js.native
+    var value: Value
   }
   object Description {
     
@@ -112,7 +108,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class DescriptionMutableBuilder[Self <: Description[_], Value] (val x: Self with Description[Value]) extends AnyVal {
+    implicit class DescriptionMutableBuilder[Self <: Description[?], Value] (val x: Self & Description[Value]) extends AnyVal {
       
       @scala.inline
       def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
@@ -128,7 +124,6 @@ object anon {
     }
   }
   
-  @js.native
   trait EndOfLine[T] extends StObject {
     
     var endOfLine: js.UndefOr[
@@ -140,7 +135,7 @@ object anon {
           /* isLastComment */ Boolean, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     var ownLine: js.UndefOr[
         js.Function5[
@@ -151,7 +146,7 @@ object anon {
           /* isLastComment */ Boolean, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     var remaining: js.UndefOr[
         js.Function5[
@@ -162,7 +157,7 @@ object anon {
           /* isLastComment */ Boolean, 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object EndOfLine {
     
@@ -173,7 +168,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class EndOfLineMutableBuilder[Self <: EndOfLine[_], T] (val x: Self with EndOfLine[T]) extends AnyVal {
+    implicit class EndOfLineMutableBuilder[Self <: EndOfLine[?], T] (val x: Self & EndOfLine[T]) extends AnyVal {
       
       @scala.inline
       def setEndOfLine(
@@ -202,58 +197,57 @@ object anon {
   }
   
   /* Inlined std.Partial<prettier.prettier.RequiredOptions> */
-  @js.native
   trait PartialRequiredOptions extends StObject {
     
-    var arrowParens: js.UndefOr[avoid | always] = js.native
+    var arrowParens: js.UndefOr[avoid | always] = js.undefined
     
-    var bracketSpacing: js.UndefOr[Boolean] = js.native
+    var bracketSpacing: js.UndefOr[Boolean] = js.undefined
     
-    var embeddedInHtml: js.UndefOr[Boolean] = js.native
+    var embeddedInHtml: js.UndefOr[Boolean] = js.undefined
     
-    var embeddedLanguageFormatting: js.UndefOr[auto | off] = js.native
+    var embeddedLanguageFormatting: js.UndefOr[auto | off] = js.undefined
     
-    var endOfLine: js.UndefOr[auto | lf | crlf | cr] = js.native
+    var endOfLine: js.UndefOr[auto | lf | crlf | cr] = js.undefined
     
-    var filepath: js.UndefOr[String] = js.native
+    var filepath: js.UndefOr[String] = js.undefined
     
-    var htmlWhitespaceSensitivity: js.UndefOr[css | strict | ignore] = js.native
+    var htmlWhitespaceSensitivity: js.UndefOr[css | strict | ignore] = js.undefined
     
-    var insertPragma: js.UndefOr[Boolean] = js.native
+    var insertPragma: js.UndefOr[Boolean] = js.undefined
     
-    var jsxBracketSameLine: js.UndefOr[Boolean] = js.native
+    var jsxBracketSameLine: js.UndefOr[Boolean] = js.undefined
     
-    var jsxSingleQuote: js.UndefOr[Boolean] = js.native
+    var jsxSingleQuote: js.UndefOr[Boolean] = js.undefined
     
-    var parentParser: js.UndefOr[String] = js.native
+    var parentParser: js.UndefOr[String] = js.undefined
     
-    var parser: js.UndefOr[(LiteralUnion[BuiltInParserName, String]) | CustomParser] = js.native
+    var parser: js.UndefOr[(LiteralUnion[BuiltInParserName, String]) | CustomParser] = js.undefined
     
-    var plugins: js.UndefOr[js.Array[String | Plugin[_]]] = js.native
+    var plugins: js.UndefOr[js.Array[String | Plugin[js.Any]]] = js.undefined
     
-    var printWidth: js.UndefOr[Double] = js.native
+    var printWidth: js.UndefOr[Double] = js.undefined
     
-    var proseWrap: js.UndefOr[always | never | preserve] = js.native
+    var proseWrap: js.UndefOr[always | never | preserve] = js.undefined
     
-    var quoteProps: js.UndefOr[`as-needed` | consistent | preserve] = js.native
+    var quoteProps: js.UndefOr[`as-needed` | consistent | preserve] = js.undefined
     
-    var rangeEnd: js.UndefOr[Double] = js.native
+    var rangeEnd: js.UndefOr[Double] = js.undefined
     
-    var rangeStart: js.UndefOr[Double] = js.native
+    var rangeStart: js.UndefOr[Double] = js.undefined
     
-    var requirePragma: js.UndefOr[Boolean] = js.native
+    var requirePragma: js.UndefOr[Boolean] = js.undefined
     
-    var semi: js.UndefOr[Boolean] = js.native
+    var semi: js.UndefOr[Boolean] = js.undefined
     
-    var singleQuote: js.UndefOr[Boolean] = js.native
+    var singleQuote: js.UndefOr[Boolean] = js.undefined
     
-    var tabWidth: js.UndefOr[Double] = js.native
+    var tabWidth: js.UndefOr[Double] = js.undefined
     
-    var trailingComma: js.UndefOr[none | es5 | all] = js.native
+    var trailingComma: js.UndefOr[none | es5 | all] = js.undefined
     
-    var useTabs: js.UndefOr[Boolean] = js.native
+    var useTabs: js.UndefOr[Boolean] = js.undefined
     
-    var vueIndentScriptAndStyle: js.UndefOr[Boolean] = js.native
+    var vueIndentScriptAndStyle: js.UndefOr[Boolean] = js.undefined
   }
   object PartialRequiredOptions {
     
@@ -342,7 +336,7 @@ object anon {
       def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
       
       @scala.inline
-      def setPlugins(value: js.Array[String | Plugin[_]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+      def setPlugins(value: js.Array[String | Plugin[js.Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
@@ -424,10 +418,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ShouldBreak extends StObject {
     
-    var shouldBreak: Boolean = js.native
+    var shouldBreak: Boolean
   }
   object ShouldBreak {
     
@@ -445,12 +438,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Since[Value] extends StObject {
     
-    var since: String = js.native
+    var since: String
     
-    var value: Value = js.native
+    var value: Value
   }
   object Since {
     
@@ -461,7 +453,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class SinceMutableBuilder[Self <: Since[_], Value] (val x: Self with Since[Value]) extends AnyVal {
+    implicit class SinceMutableBuilder[Self <: Since[?], Value] (val x: Self & Since[Value]) extends AnyVal {
       
       @scala.inline
       def setSince(value: String): Self = StObject.set(x, "since", value.asInstanceOf[js.Any])
@@ -471,17 +463,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: root = js.native
+    var `type`: root
   }
   object Type {
     
     @scala.inline
-    def apply(`type`: root): Type = {
+    def apply(): Type = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[Type]
     }
     
@@ -493,10 +484,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var value: js.Array[Double] = js.native
+    var value: js.Array[Double]
   }
   object Value {
     
@@ -517,10 +507,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ValueArray extends StObject {
     
-    var value: js.Array[Boolean] = js.native
+    var value: js.Array[Boolean]
   }
   object ValueArray {
     
@@ -541,10 +530,9 @@ object anon {
     }
   }
   
-  @js.native
   trait _empty extends StObject {
     
     @JSName("_")
-    var _underscore: js.UndefOr[scala.Nothing] = js.native
+    var _underscore: js.UndefOr[scala.Nothing] = js.undefined
   }
 }

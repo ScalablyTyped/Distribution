@@ -2,24 +2,22 @@ package typings.officeJsPreview.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides options to determine which event handler or handlers are removed.
   */
-@js.native
 trait RemoveHandlerOptions extends StObject {
   
   /**
     * A user-defined item of any type that is returned, unchanged, in the asyncContext property of the AsyncResult object that is passed to a callback.
     */
-  var asyncContext: js.UndefOr[js.Any] = js.native
+  var asyncContext: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The handler to be removed. If a particular handler is not specified, then all handlers for the specified event type are removed. The `BindingEventHandler` type is defined with `type BindingEventHandler = (eventArgs?: Office.BindingDataChangedEventArgs | Office.BindingSelectionChangedEventArgs) => any`.
     */
-  var handler: js.UndefOr[BindingEventHandler] = js.native
+  var handler: js.UndefOr[BindingEventHandler] = js.undefined
 }
 object RemoveHandlerOptions {
   

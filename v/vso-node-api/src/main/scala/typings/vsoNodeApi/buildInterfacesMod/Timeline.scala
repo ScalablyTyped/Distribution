@@ -3,23 +3,23 @@ package typings.vsoNodeApi.buildInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Timeline extends TimelineReference {
+trait Timeline
+  extends StObject
+     with TimelineReference {
   
   /**
     * The process or person that last changed the timeline.
     */
-  var lastChangedBy: String = js.native
+  var lastChangedBy: String
   
   /**
     * The time the timeline was last changed.
     */
-  var lastChangedOn: Date = js.native
+  var lastChangedOn: Date
   
-  var records: js.Array[TimelineRecord] = js.native
+  var records: js.Array[TimelineRecord]
 }
 object Timeline {
   

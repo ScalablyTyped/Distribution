@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SemanticTokens extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SemanticTokens extends StObject {
     *
     * @since 3.16.0 - Proposed state
     */
-  var semanticTokens: js.UndefOr[TokenModifiers] = js.native
+  var semanticTokens: js.UndefOr[TokenModifiers] = js.undefined
 }
 object SemanticTokens {
   

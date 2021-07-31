@@ -6,56 +6,54 @@ import typings.ionicCore.mod.Color
 import typings.std.CustomEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonContent extends StObject {
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * If `true` and the content does not cause an overflow scroll, the scroll interaction will cause a bounce. If the content exceeds the bounds of ionContent, nothing will change. Note, the does not disable the system bounce on iOS. That is an OS level setting.
     */
-  var forceOverscroll: js.UndefOr[Boolean] = js.native
+  var forceOverscroll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the content will scroll behind the headers and footers. This effect can easily be seen by setting the toolbar to transparent.
     */
-  var fullscreen: js.UndefOr[Boolean] = js.native
+  var fullscreen: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Emitted while scrolling. This event is disabled by default. Look at the property: `scrollEvents`
     */
-  var onIonScroll: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollDetail], Unit]] = js.native
+  var onIonScroll: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollDetail], Unit]] = js.undefined
   
   /**
     * Emitted when the scroll has ended.
     */
-  var onIonScrollEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollBaseDetail], Unit]] = js.native
+  var onIonScrollEnd: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollBaseDetail], Unit]] = js.undefined
   
   /**
     * Emitted when the scroll has started.
     */
-  var onIonScrollStart: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollBaseDetail], Unit]] = js.native
+  var onIonScrollStart: js.UndefOr[js.Function1[/* event */ CustomEvent[ScrollBaseDetail], Unit]] = js.undefined
   
   /**
     * Because of performance reasons, ionScroll events are disabled by default, in order to enable them and start listening from (ionScroll), set this property to `true`.
     */
-  var scrollEvents: js.UndefOr[Boolean] = js.native
+  var scrollEvents: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If you want to enable the content scrolling in the X axis, set this property to `true`.
     */
-  var scrollX: js.UndefOr[Boolean] = js.native
+  var scrollX: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If you want to disable the content scrolling in the Y axis, set this property to `false`.
     */
-  var scrollY: js.UndefOr[Boolean] = js.native
+  var scrollY: js.UndefOr[Boolean] = js.undefined
 }
 object IonContent {
   

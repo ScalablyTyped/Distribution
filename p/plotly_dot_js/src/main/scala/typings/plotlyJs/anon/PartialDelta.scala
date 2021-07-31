@@ -6,24 +6,22 @@ import typings.plotlyJs.plotlyJsStrings.right
 import typings.plotlyJs.plotlyJsStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<plotly.js.plotly.js.Delta> */
-@js.native
 trait PartialDelta extends StObject {
   
-  var decreasing: js.UndefOr[Symbol] = js.native
+  var decreasing: js.UndefOr[Symbol] = js.undefined
   
-  var increasing: js.UndefOr[Symbol] = js.native
+  var increasing: js.UndefOr[Symbol] = js.undefined
   
-  var position: js.UndefOr[top | bottom | left | right] = js.native
+  var position: js.UndefOr[top | bottom | left | right] = js.undefined
   
-  var reference: js.UndefOr[Double] = js.native
+  var reference: js.UndefOr[Double] = js.undefined
   
-  var relative: js.UndefOr[Boolean] = js.native
+  var relative: js.UndefOr[Boolean] = js.undefined
   
-  var valueformat: js.UndefOr[String] = js.native
+  var valueformat: js.UndefOr[String] = js.undefined
 }
 object PartialDelta {
   

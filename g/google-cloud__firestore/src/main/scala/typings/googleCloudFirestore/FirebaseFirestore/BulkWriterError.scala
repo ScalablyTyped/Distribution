@@ -7,30 +7,30 @@ import typings.googleCloudFirestore.googleCloudFirestoreStrings.update
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BulkWriterError extends Error {
+trait BulkWriterError
+  extends StObject
+     with Error {
   
   /** The status code of the error. */
-  val code: GrpcStatus = js.native
+  val code: GrpcStatus
   
   /** The document reference the operation was performed on. */
-  val documentRef: DocumentReference[_] = js.native
+  val documentRef: DocumentReference[js.Any]
   
   /** How many times this operation has been attempted unsuccessfully. */
-  val failedAttempts: Double = js.native
+  val failedAttempts: Double
   
   /** The type of operation performed. */
-  val operationType: create | set | update | delete = js.native
+  val operationType: create | set | update | delete
 }
 object BulkWriterError {
   
   @scala.inline
   def apply(
     code: GrpcStatus,
-    documentRef: DocumentReference[_],
+    documentRef: DocumentReference[js.Any],
     failedAttempts: Double,
     message: String,
     name: String,
@@ -47,7 +47,7 @@ object BulkWriterError {
     def setCode(value: GrpcStatus): Self = StObject.set(x, "code", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDocumentRef(value: DocumentReference[_]): Self = StObject.set(x, "documentRef", value.asInstanceOf[js.Any])
+    def setDocumentRef(value: DocumentReference[js.Any]): Self = StObject.set(x, "documentRef", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFailedAttempts(value: Double): Self = StObject.set(x, "failedAttempts", value.asInstanceOf[js.Any])

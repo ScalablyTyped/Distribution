@@ -6,18 +6,20 @@ import typings.reactMdPortal.conditionalPortalMod.RenderConditionalPortalProps
 import typings.reactMdTransition.typesMod.OverridableCSSTransitionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scaleTransitionMod {
   
   object ScaleTransition {
     
+    @scala.inline
+    def apply(
+      hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps: ScaleTransitionProps
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasVisibleChildrenPropClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/transition/types/ScaleTransition", "ScaleTransition")
     @js.native
-    def apply(
-      hasVisibleChildrenClassNamesVerticalTimeoutPortalPortalIntoPortalIntoIdMountOnEnterUnmountOnExitProps: ScaleTransitionProps
-    ): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -89,28 +91,28 @@ object scaleTransitionMod {
     }
   }
   
-  @js.native
   trait ScaleTransitionProps
-    extends OverridableCSSTransitionProps
+    extends StObject
+       with OverridableCSSTransitionProps
        with RenderConditionalPortalProps {
     
     /**
       * The children to render.
       */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /**
       * Boolean if the vertical scale animation should be used instead of the
       * normal scale animation.
       */
-    var vertical: js.UndefOr[Boolean] = js.native
+    var vertical: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Boolean if the animation should be triggered. Enabling this will trigger
       * the appear/enter animations while disabling it will trigger the exit
       * animation.
       */
-    var visible: Boolean = js.native
+    var visible: Boolean
   }
   object ScaleTransitionProps {
     

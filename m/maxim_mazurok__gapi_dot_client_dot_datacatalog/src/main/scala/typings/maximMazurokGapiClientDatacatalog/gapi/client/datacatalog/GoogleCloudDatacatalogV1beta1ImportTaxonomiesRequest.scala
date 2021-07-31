@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest extends StObject {
   
   /** Inline source used for taxonomies to be imported. */
-  var inlineSource: js.UndefOr[GoogleCloudDatacatalogV1beta1InlineSource] = js.native
+  var inlineSource: js.UndefOr[GoogleCloudDatacatalogV1beta1InlineSource] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1ImportTaxonomiesRequest {
   

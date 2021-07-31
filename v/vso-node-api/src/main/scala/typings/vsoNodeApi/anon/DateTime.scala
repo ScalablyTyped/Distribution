@@ -2,41 +2,39 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DateTime extends StObject {
   
-  var boolean: scala.Double = js.native
+  var boolean: scala.Double
   
-  var dateTime: scala.Double = js.native
+  var dateTime: scala.Double
   
-  var double: scala.Double = js.native
+  var double: scala.Double
   
-  var guid: scala.Double = js.native
+  var guid: scala.Double
   
-  var history: scala.Double = js.native
+  var history: scala.Double
   
-  var html: scala.Double = js.native
+  var html: scala.Double
   
-  var identity: scala.Double = js.native
+  var identity: scala.Double
   
-  var integer: scala.Double = js.native
+  var integer: scala.Double
   
-  var picklistDouble: scala.Double = js.native
+  var picklistDouble: scala.Double
   
-  var picklistInteger: scala.Double = js.native
+  var picklistInteger: scala.Double
   
-  var picklistString: scala.Double = js.native
+  var picklistString: scala.Double
   
-  var plainText: scala.Double = js.native
+  var plainText: scala.Double
   
-  var string: scala.Double = js.native
+  var string: scala.Double
   
-  var teamProject: scala.Double = js.native
+  var teamProject: scala.Double
   
-  var treePath: scala.Double = js.native
+  var treePath: scala.Double
 }
 object DateTime {
   

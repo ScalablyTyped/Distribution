@@ -2,15 +2,13 @@ package typings.antd.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddSider extends StObject {
   
-  def addSider(id: String): Unit = js.native
+  def addSider(id: String): Unit
   
-  def removeSider(id: String): Unit = js.native
+  def removeSider(id: String): Unit
 }
 object AddSider {
   

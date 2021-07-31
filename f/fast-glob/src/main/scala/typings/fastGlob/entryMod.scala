@@ -6,41 +6,74 @@ import typings.fastGlob.typesMod.Pattern
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entryMod {
   
   @JSImport("fast-glob/out/providers/filters/entry", JSImport.Default)
   @js.native
-  class default protected () extends EntryFilter {
+  class default protected ()
+    extends StObject
+       with EntryFilter {
     def this(_settings: typings.fastGlob.settingsMod.default, _micromatchOptions: MicromatchOptions) = this()
-  }
-  
-  @js.native
-  trait EntryFilter extends StObject {
     
+    /* CompleteClass */
     var _createIndexRecord: js.Any = js.native
     
+    /* CompleteClass */
     var _filter: js.Any = js.native
     
+    /* CompleteClass */
     var _isDuplicateEntry: js.Any = js.native
     
+    /* CompleteClass */
     var _isMatchToPatterns: js.Any = js.native
     
+    /* CompleteClass */
     var _isSkippedByAbsoluteNegativePatterns: js.Any = js.native
     
-    val _micromatchOptions: js.Any = js.native
+    /* CompleteClass */
+    override val _micromatchOptions: js.Any = js.native
     
+    /* CompleteClass */
     var _onlyDirectoryFilter: js.Any = js.native
     
+    /* CompleteClass */
     var _onlyFileFilter: js.Any = js.native
     
-    val _settings: js.Any = js.native
+    /* CompleteClass */
+    override val _settings: js.Any = js.native
     
-    def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction = js.native
+    /* CompleteClass */
+    override def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction = js.native
     
-    val index: Map[String, js.UndefOr[scala.Nothing]] = js.native
+    /* CompleteClass */
+    override val index: Map[String, Unit] = js.native
+  }
+  
+  trait EntryFilter extends StObject {
+    
+    var _createIndexRecord: js.Any
+    
+    var _filter: js.Any
+    
+    var _isDuplicateEntry: js.Any
+    
+    var _isMatchToPatterns: js.Any
+    
+    var _isSkippedByAbsoluteNegativePatterns: js.Any
+    
+    val _micromatchOptions: js.Any
+    
+    var _onlyDirectoryFilter: js.Any
+    
+    var _onlyFileFilter: js.Any
+    
+    val _settings: js.Any
+    
+    def getFilter(positive: js.Array[Pattern], negative: js.Array[Pattern]): EntryFilterFunction
+    
+    val index: Map[String, Unit]
   }
   object EntryFilter {
     
@@ -56,7 +89,7 @@ object entryMod {
       _onlyFileFilter: js.Any,
       _settings: js.Any,
       getFilter: (js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction,
-      index: Map[String, js.UndefOr[scala.Nothing]]
+      index: Map[String, Unit]
     ): EntryFilter = {
       val __obj = js.Dynamic.literal(_createIndexRecord = _createIndexRecord.asInstanceOf[js.Any], _filter = _filter.asInstanceOf[js.Any], _isDuplicateEntry = _isDuplicateEntry.asInstanceOf[js.Any], _isMatchToPatterns = _isMatchToPatterns.asInstanceOf[js.Any], _isSkippedByAbsoluteNegativePatterns = _isSkippedByAbsoluteNegativePatterns.asInstanceOf[js.Any], _micromatchOptions = _micromatchOptions.asInstanceOf[js.Any], _onlyDirectoryFilter = _onlyDirectoryFilter.asInstanceOf[js.Any], _onlyFileFilter = _onlyFileFilter.asInstanceOf[js.Any], _settings = _settings.asInstanceOf[js.Any], getFilter = js.Any.fromFunction2(getFilter), index = index.asInstanceOf[js.Any])
       __obj.asInstanceOf[EntryFilter]
@@ -69,7 +102,7 @@ object entryMod {
       def setGetFilter(value: (js.Array[Pattern], js.Array[Pattern]) => EntryFilterFunction): Self = StObject.set(x, "getFilter", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setIndex(value: Map[String, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
+      def setIndex(value: Map[String, Unit]): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       @scala.inline
       def set_createIndexRecord(value: js.Any): Self = StObject.set(x, "_createIndexRecord", value.asInstanceOf[js.Any])

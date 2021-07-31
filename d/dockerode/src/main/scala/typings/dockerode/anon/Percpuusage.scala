@@ -2,19 +2,17 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Percpuusage extends StObject {
   
-  var percpu_usage: js.Array[Double] = js.native
+  var percpu_usage: js.Array[Double]
   
-  var total_usage: Double = js.native
+  var total_usage: Double
   
-  var usage_in_kernelmode: Double = js.native
+  var usage_in_kernelmode: Double
   
-  var usage_in_usermode: Double = js.native
+  var usage_in_usermode: Double
 }
 object Percpuusage {
   

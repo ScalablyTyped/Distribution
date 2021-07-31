@@ -10,7 +10,6 @@ import typings.synaptic.mod.Network.Optimized
 import typings.synaptic.mod.Network.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("synaptic", "Network")
@@ -64,7 +63,7 @@ class Network () extends StObject {
   def outputs(): Double = js.native
   
   def project(otherNetwork: Layer): LayerConnection = js.native
-  def project(otherNetwork: Layer, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
+  def project(otherNetwork: Layer, connectionType: Unit, weights: js.Any): LayerConnection = js.native
   def project(otherNetwork: Layer, connectionType: connectionType): LayerConnection = js.native
   def project(otherNetwork: Layer, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   /**
@@ -72,7 +71,7 @@ class Network () extends StObject {
     * @param [connectionType=Layer.connectionType.ALL_TO_ALL]
     */
   def project(otherNetwork: Network): LayerConnection = js.native
-  def project(otherNetwork: Network, connectionType: js.UndefOr[scala.Nothing], weights: js.Any): LayerConnection = js.native
+  def project(otherNetwork: Network, connectionType: Unit, weights: js.Any): LayerConnection = js.native
   def project(otherNetwork: Network, connectionType: connectionType): LayerConnection = js.native
   def project(otherNetwork: Network, connectionType: connectionType, weights: js.Any): LayerConnection = js.native
   
@@ -123,38 +122,39 @@ class Network () extends StObject {
     * @returns Return a HTML5 WebWorker specialized on training the network stored in `memory`. Train based on the given dataSet and options. The worker returns the updated `memory` when done.
     */
   def worker(): Worker = js.native
-  def worker(memory: js.UndefOr[scala.Nothing], set: js.UndefOr[scala.Nothing], options: js.Any): Worker = js.native
-  def worker(memory: js.UndefOr[scala.Nothing], set: js.Any): Worker = js.native
-  def worker(memory: js.UndefOr[scala.Nothing], set: js.Any, options: js.Any): Worker = js.native
   def worker(memory: js.Any): Worker = js.native
-  def worker(memory: js.Any, set: js.UndefOr[scala.Nothing], options: js.Any): Worker = js.native
   def worker(memory: js.Any, set: js.Any): Worker = js.native
   def worker(memory: js.Any, set: js.Any, options: js.Any): Worker = js.native
+  def worker(memory: js.Any, set: Unit, options: js.Any): Worker = js.native
+  def worker(memory: Unit, set: js.Any): Worker = js.native
+  def worker(memory: Unit, set: js.Any, options: js.Any): Worker = js.native
+  def worker(memory: Unit, set: Unit, options: js.Any): Worker = js.native
 }
 /* static members */
 object Network {
   
+  @JSImport("synaptic", "Network")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Rebuild a network that has been stored in a json using the method toJSON().
     */
-  @JSImport("synaptic", "Network.fromJSON")
-  @js.native
-  def fromJSON(exported: js.Any): Network = js.native
+  @scala.inline
+  def fromJSON(exported: js.Any): Network = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(exported.asInstanceOf[js.Any]).asInstanceOf[Network]
   
   /**
     * Creates a static String to store the source code of the functions that are identical for all the workers (train, _trainSet, test).
     * @returns Source code that can train a network inside a worker.
     */
-  @JSImport("synaptic", "Network.getWorkerSharedFunctions")
-  @js.native
-  def getWorkerSharedFunctions(): String = js.native
+  @scala.inline
+  def getWorkerSharedFunctions(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getWorkerSharedFunctions")().asInstanceOf[String]
   
-  @js.native
   trait Optimized extends StObject {
     
-    var memory: Float64Array = js.native
+    var memory: Float64Array
     
-    def ownership(memoryBuffer: Float64Array): Unit = js.native
+    def ownership(memoryBuffer: Float64Array): Unit
   }
   object Optimized {
     
@@ -175,14 +175,13 @@ object Network {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var hidden: js.Array[Layer] = js.native
+    var hidden: js.Array[Layer]
     
-    var input: Layer = js.native
+    var input: Layer
     
-    var output: Layer = js.native
+    var output: Layer
   }
   object Options {
     

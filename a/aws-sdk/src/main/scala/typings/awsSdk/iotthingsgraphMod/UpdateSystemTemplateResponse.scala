@@ -2,16 +2,14 @@ package typings.awsSdk.iotthingsgraphMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSystemTemplateResponse extends StObject {
   
   /**
     * An object containing summary information about the updated system.
     */
-  var summary: js.UndefOr[SystemTemplateSummary] = js.native
+  var summary: js.UndefOr[SystemTemplateSummary] = js.undefined
 }
 object UpdateSystemTemplateResponse {
   

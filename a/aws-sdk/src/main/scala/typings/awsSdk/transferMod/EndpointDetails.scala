@@ -2,36 +2,34 @@ package typings.awsSdk.transferMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointDetails extends StObject {
   
   /**
     * A list of address allocation IDs that are required to attach an Elastic IP address to your server's endpoint.  This property can only be set when EndpointType is set to VPC and it is only valid in the UpdateServer API. 
     */
-  var AddressAllocationIds: js.UndefOr[typings.awsSdk.transferMod.AddressAllocationIds] = js.native
+  var AddressAllocationIds: js.UndefOr[typings.awsSdk.transferMod.AddressAllocationIds] = js.undefined
   
   /**
     * A list of security groups IDs that are available to attach to your server's endpoint.  This property can only be set when EndpointType is set to VPC. You can only edit the SecurityGroupIds property in the UpdateServer API and only if you are changing the EndpointType from PUBLIC or VPC_ENDPOINT to VPC. 
     */
-  var SecurityGroupIds: js.UndefOr[typings.awsSdk.transferMod.SecurityGroupIds] = js.native
+  var SecurityGroupIds: js.UndefOr[typings.awsSdk.transferMod.SecurityGroupIds] = js.undefined
   
   /**
     * A list of subnet IDs that are required to host your server endpoint in your VPC.  This property can only be set when EndpointType is set to VPC. 
     */
-  var SubnetIds: js.UndefOr[typings.awsSdk.transferMod.SubnetIds] = js.native
+  var SubnetIds: js.UndefOr[typings.awsSdk.transferMod.SubnetIds] = js.undefined
   
   /**
     * The ID of the VPC endpoint.  This property can only be set when EndpointType is set to VPC_ENDPOINT. 
     */
-  var VpcEndpointId: js.UndefOr[typings.awsSdk.transferMod.VpcEndpointId] = js.native
+  var VpcEndpointId: js.UndefOr[typings.awsSdk.transferMod.VpcEndpointId] = js.undefined
   
   /**
     * The VPC ID of the VPC in which a server's endpoint will be hosted.  This property can only be set when EndpointType is set to VPC. 
     */
-  var VpcId: js.UndefOr[typings.awsSdk.transferMod.VpcId] = js.native
+  var VpcId: js.UndefOr[typings.awsSdk.transferMod.VpcId] = js.undefined
 }
 object EndpointDetails {
   

@@ -3,21 +3,19 @@ package typings.reactOnsenui.anon
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSource[T] extends StObject {
   
-  var dataSource: js.UndefOr[js.Array[T]] = js.native
+  var dataSource: js.UndefOr[js.Array[T]] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  var renderFooter: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.native
+  var renderFooter: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.undefined
   
-  var renderHeader: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.native
+  var renderHeader: js.UndefOr[js.Function0[js.UndefOr[Element]]] = js.undefined
   
-  var renderRow: js.UndefOr[js.Function2[/* row */ T, /* index */ js.UndefOr[Double], js.UndefOr[Element]]] = js.native
+  var renderRow: js.UndefOr[js.Function2[/* row */ T, /* index */ js.UndefOr[Double], js.UndefOr[Element]]] = js.undefined
 }
 object DataSource {
   
@@ -28,7 +26,7 @@ object DataSource {
   }
   
   @scala.inline
-  implicit class DataSourceMutableBuilder[Self <: DataSource[_], T] (val x: Self with DataSource[T]) extends AnyVal {
+  implicit class DataSourceMutableBuilder[Self <: DataSource[?], T] (val x: Self & DataSource[T]) extends AnyVal {
     
     @scala.inline
     def setDataSource(value: js.Array[T]): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])

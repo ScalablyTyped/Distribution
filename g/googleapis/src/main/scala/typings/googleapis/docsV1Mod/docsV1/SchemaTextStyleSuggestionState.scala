@@ -2,7 +2,6 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,63 +9,62 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * changed in this suggestion. For any field set to true, there is a new
   * suggested value.
   */
-@js.native
 trait SchemaTextStyleSuggestionState extends StObject {
   
   /**
     * Indicates if there was a suggested change to background_color.
     */
-  var backgroundColorSuggested: js.UndefOr[Boolean] = js.native
+  var backgroundColorSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to baseline_offset.
     */
-  var baselineOffsetSuggested: js.UndefOr[Boolean] = js.native
+  var baselineOffsetSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to bold.
     */
-  var boldSuggested: js.UndefOr[Boolean] = js.native
+  var boldSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to font_size.
     */
-  var fontSizeSuggested: js.UndefOr[Boolean] = js.native
+  var fontSizeSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to foreground_color.
     */
-  var foregroundColorSuggested: js.UndefOr[Boolean] = js.native
+  var foregroundColorSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to italic.
     */
-  var italicSuggested: js.UndefOr[Boolean] = js.native
+  var italicSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to link.
     */
-  var linkSuggested: js.UndefOr[Boolean] = js.native
+  var linkSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to small_caps.
     */
-  var smallCapsSuggested: js.UndefOr[Boolean] = js.native
+  var smallCapsSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to strikethrough.
     */
-  var strikethroughSuggested: js.UndefOr[Boolean] = js.native
+  var strikethroughSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to underline.
     */
-  var underlineSuggested: js.UndefOr[Boolean] = js.native
+  var underlineSuggested: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates if there was a suggested change to weighted_font_family.
     */
-  var weightedFontFamilySuggested: js.UndefOr[Boolean] = js.native
+  var weightedFontFamilySuggested: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTextStyleSuggestionState {
   

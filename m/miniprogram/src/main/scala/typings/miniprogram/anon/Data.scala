@@ -3,17 +3,15 @@ package typings.miniprogram.anon
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: js.UndefOr[Uint8ClampedArray] = js.native
+  var data: js.UndefOr[Uint8ClampedArray] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object Data {
   

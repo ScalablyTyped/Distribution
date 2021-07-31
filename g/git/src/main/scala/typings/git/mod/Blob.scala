@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "Blob")
@@ -29,7 +28,10 @@ class Blob protected () extends StObject {
 /* static members */
 object Blob {
   
-  @JSImport("git", "Blob.blame")
+  @JSImport("git", "Blob")
   @js.native
-  def blame(repo: js.Any, commit: js.Any, file: js.Any, callback: js.Function): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def blame(repo: js.Any, commit: js.Any, file: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("blame")(repo.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], file.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

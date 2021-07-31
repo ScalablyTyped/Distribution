@@ -3,13 +3,11 @@ package typings.playable.anon
 import typings.playable.themeTypesMod.IThemeConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundColor extends StObject {
   
-  def backgroundColor(data: IThemeConfig): String = js.native
+  def backgroundColor(data: IThemeConfig): String
 }
 object BackgroundColor {
   

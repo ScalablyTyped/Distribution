@@ -7,27 +7,25 @@ import typings.octokitTypes.anon.EnabledBoolean
 import typings.octokitTypes.anon.EnabledUrl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposUpdateBranchProtectionResponseData extends StObject {
   
-  var allow_deletions: EnabledBoolean = js.native
+  var allow_deletions: EnabledBoolean
   
-  var allow_force_pushes: EnabledBoolean = js.native
+  var allow_force_pushes: EnabledBoolean
   
-  var enforce_admins: EnabledUrl = js.native
+  var enforce_admins: EnabledUrl
   
-  var required_linear_history: EnabledBoolean = js.native
+  var required_linear_history: EnabledBoolean
   
-  var required_pull_request_reviews: Dismissalrestrictions = js.native
+  var required_pull_request_reviews: Dismissalrestrictions
   
-  var required_status_checks: Contextsurl = js.native
+  var required_status_checks: Contextsurl
   
-  var restrictions: Apps = js.native
+  var restrictions: Apps
   
-  var url: String = js.native
+  var url: String
 }
 object ReposUpdateBranchProtectionResponseData {
   

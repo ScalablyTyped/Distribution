@@ -2,85 +2,83 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HPIds extends StObject {
   
-  var actions: String = js.native
+  var actions: String
   
-  var arrow: String = js.native
+  var arrow: String
   
-  var arrowBorder: String = js.native
+  var arrowBorder: String
   
-  var author: String = js.native
+  var author: String
   
-  var body: String = js.native
+  var body: String
   
-  var close: String = js.native
+  var close: String
   
-  var content: String = js.native
+  var content: String
   
-  var dateCreated: String = js.native
+  var dateCreated: String
   
-  var dimensions: String = js.native
+  var dimensions: String
   
-  var fileType: String = js.native
+  var fileType: String
   
-  var follow: String = js.native
+  var follow: String
   
-  var header: String = js.native
+  var header: String
   
-  var inner: String = js.native
+  var inner: String
   
-  var modifiedDate: String = js.native
+  var modifiedDate: String
   
-  var noData: String = js.native
+  var noData: String
   
-  var open: String = js.native
+  var open: String
   
-  var openClient: String = js.native
+  var openClient: String
   
-  var parentLink: String = js.native
+  var parentLink: String
   
-  var peopleInterests: String = js.native
+  var peopleInterests: String
   
-  var peopleMemberships: String = js.native
+  var peopleMemberships: String
   
-  var peoplePastProjects: String = js.native
+  var peoplePastProjects: String
   
-  var peopleSchools: String = js.native
+  var peopleSchools: String
   
-  var peopleSkills: String = js.native
+  var peopleSkills: String
   
-  var peopleSummary: String = js.native
+  var peopleSummary: String
   
-  var post: String = js.native
+  var post: String
   
-  var preview: String = js.native
+  var preview: String
   
-  var sectionName: String = js.native
+  var sectionName: String
   
-  var send: String = js.native
+  var send: String
   
-  var siteDescription: String = js.native
+  var siteDescription: String
   
-  var siteLogo: String = js.native
+  var siteLogo: String
   
-  var size: String = js.native
+  var size: String
   
-  var summary: String = js.native
+  var summary: String
   
-  var title: String = js.native
+  var title: String
   
-  var viewDuplicates: String = js.native
+  var viewDuplicates: String
   
-  var viewer: String = js.native
+  var viewer: String
   
-  var viewsLifeTime: String = js.native
+  var viewsLifeTime: String
   
-  var viewsRecent: String = js.native
+  var viewsRecent: String
 }
 object HPIds {
   

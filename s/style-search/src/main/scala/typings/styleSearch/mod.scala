@@ -2,20 +2,21 @@ package typings.styleSearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options, callback: StyleSearchCallback): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("style-search", JSImport.Namespace)
   @js.native
-  def apply(options: Options, callback: StyleSearchCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Syntax feature options all accept three keywords:"skip", "check", "only".
     * An error will be thrown if you use "only" more than once
     */
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -23,38 +24,38 @@ object mod {
       * and non-standard but widely used `// single line comments`.
       * @default 'skip'
       */
-    var comments: js.UndefOr[SyntaxFeatureOption] = js.native
+    var comments: js.UndefOr[SyntaxFeatureOption] = js.undefined
     
     /**
       * @default 'check'
       */
-    var functionArguments: js.UndefOr[SyntaxFeatureOption] = js.native
+    var functionArguments: js.UndefOr[SyntaxFeatureOption] = js.undefined
     
     /**
       * @default 'skip'
       */
-    var functionNames: js.UndefOr[SyntaxFeatureOption] = js.native
+    var functionNames: js.UndefOr[SyntaxFeatureOption] = js.undefined
     
     /**
       * If true, the search will stop after one match is found.
       * @default false
       */
-    var once: js.UndefOr[Boolean] = js.native
+    var once: js.UndefOr[Boolean] = js.undefined
     
     /**
       * This designates anything inside parentheses, which includes standard functions,but also Sass maps and other non-standard constructs.
       * `parentheticals` is a broader category than `functionArguments`
       * @default 'check'
       */
-    var parentheticals: js.UndefOr[SyntaxFeatureOption] = js.native
+    var parentheticals: js.UndefOr[SyntaxFeatureOption] = js.undefined
     
     /** The source string to search through. */
-    var source: String = js.native
+    var source: String
     
     /**
       * @default 'skip'
       */
-    var strings: js.UndefOr[SyntaxFeatureOption] = js.native
+    var strings: js.UndefOr[SyntaxFeatureOption] = js.undefined
     
     /**
       * The target of the search. Can be
@@ -64,7 +65,7 @@ object mod {
       * (the match object passed to the callback will differentiate which string in the array
       * got matched via its target property)
       */
-    var target: String | js.Array[String] = js.native
+    var target: String | js.Array[String]
   }
   object Options {
     
@@ -131,26 +132,25 @@ object mod {
     */
   type StyleSearchCallback = js.Function2[/* match */ StyleSearchMatch, /* count */ Double, Unit]
   
-  @js.native
   trait StyleSearchMatch extends StObject {
     
     /** where the match ends */
-    val endIndex: Double = js.native
+    val endIndex: Double
     
     /** whether the match is inside a comment */
-    val insideComment: Boolean = js.native
+    val insideComment: Boolean
     
     /** whether the match is inside a function — this includes the parentheses around the arguments */
-    val insideFunctionArguments: Boolean = js.native
+    val insideFunctionArguments: Boolean
     
     /** whether the match is inside a string */
-    val insideString: Boolean = js.native
+    val insideString: Boolean
     
     /** where the match begins */
-    val startIndex: Double = js.native
+    val startIndex: Double
     
     /** what got matched (useful if your target option is an array instead of a single string) */
-    val target: String = js.native
+    val target: String
   }
   object StyleSearchMatch {
     

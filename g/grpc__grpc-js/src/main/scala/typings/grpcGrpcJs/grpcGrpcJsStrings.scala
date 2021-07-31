@@ -3,7 +3,6 @@ package typings.grpcGrpcJs
 import typings.grpcGrpcJs.serverCallMod.HandlerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object grpcGrpcJsStrings {
@@ -14,7 +13,9 @@ object grpcGrpcJsStrings {
   def ServiceDefinition: ServiceDefinition = "ServiceDefinition".asInstanceOf[ServiceDefinition]
   
   @js.native
-  sealed trait bidi extends HandlerType
+  sealed trait bidi
+    extends StObject
+       with HandlerType
   @scala.inline
   def bidi: bidi = "bidi".asInstanceOf[bidi]
   
@@ -24,7 +25,9 @@ object grpcGrpcJsStrings {
   def cds: cds = "cds".asInstanceOf[cds]
   
   @js.native
-  sealed trait clientStream extends HandlerType
+  sealed trait clientStream
+    extends StObject
+       with HandlerType
   @scala.inline
   def clientStream: clientStream = "clientStream".asInstanceOf[clientStream]
   
@@ -114,7 +117,9 @@ object grpcGrpcJsStrings {
   def round_robin: round_robin = "round_robin".asInstanceOf[round_robin]
   
   @js.native
-  sealed trait serverStream extends HandlerType
+  sealed trait serverStream
+    extends StObject
+       with HandlerType
   @scala.inline
   def serverStream: serverStream = "serverStream".asInstanceOf[serverStream]
   
@@ -144,7 +149,9 @@ object grpcGrpcJsStrings {
   def typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration: typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration = "type.googleapis.com/envoy.api.v2.RouteConfiguration".asInstanceOf[typeDotgoogleapisDotcomSlashenvoyDotapiDotv2DotRouteConfiguration]
   
   @js.native
-  sealed trait unary extends HandlerType
+  sealed trait unary
+    extends StObject
+       with HandlerType
   @scala.inline
   def unary: unary = "unary".asInstanceOf[unary]
   

@@ -2,7 +2,6 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * object. Currently, an owning object must be in the same namespace, so there
   * is no namespace field.
   */
-@js.native
 trait SchemaOwnerReference extends StObject {
   
   /**
     * API version of the referent.
     */
-  var apiVersion: js.UndefOr[String] = js.native
+  var apiVersion: js.UndefOr[String] = js.undefined
   
   /**
     * If true, AND if the owner has the &quot;foregroundDeletion&quot;
@@ -25,30 +23,30 @@ trait SchemaOwnerReference extends StObject {
     * user needs &quot;delete&quot; permission of the owner, otherwise 422
     * (Unprocessable Entity) will be returned. +optional
     */
-  var blockOwnerDeletion: js.UndefOr[Boolean] = js.native
+  var blockOwnerDeletion: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If true, this reference points to the managing controller. +optional
     */
-  var controller: js.UndefOr[Boolean] = js.native
+  var controller: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Kind of the referent. More info:
     * https://git.k8s.io/community/contributors/devel/api-conventions.md#types-kinds
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the referent. More info:
     * http://kubernetes.io/docs/user-guide/identifiers#names
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * UID of the referent. More info:
     * http://kubernetes.io/docs/user-guide/identifiers#uids
     */
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
 }
 object SchemaOwnerReference {
   

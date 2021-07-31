@@ -2,19 +2,17 @@ package typings.jpushReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SilenceTimeEndHour extends StObject {
   
-  var silenceTimeEndHour: Double = js.native
+  var silenceTimeEndHour: Double
   
-  var silenceTimeEndMinute: Double = js.native
+  var silenceTimeEndMinute: Double
   
-  var silenceTimeStartHour: Double = js.native
+  var silenceTimeStartHour: Double
   
-  var silenceTimeStartMinute: Double = js.native
+  var silenceTimeStartMinute: Double
 }
 object SilenceTimeEndHour {
   

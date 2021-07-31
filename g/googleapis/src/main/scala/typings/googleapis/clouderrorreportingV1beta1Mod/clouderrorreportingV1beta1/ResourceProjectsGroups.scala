@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouderrorreporting/v1beta1", "clouderrorreporting_v1beta1.Resource$Projects$Groups")
@@ -30,7 +29,7 @@ class ResourceProjectsGroups protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaErrorGroup] = js.native
   def get(callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaErrorGroup] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaErrorGroup] = js.native
   def get(params: ParamsResourceProjectsGroupsGet): GaxiosPromise[SchemaErrorGroup] = js.native
   def get(params: ParamsResourceProjectsGroupsGet, callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
   def get(
@@ -61,7 +60,7 @@ class ResourceProjectsGroups protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaErrorGroup] = js.native
   def update(callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaErrorGroup] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaErrorGroup] = js.native
   def update(params: ParamsResourceProjectsGroupsUpdate): GaxiosPromise[SchemaErrorGroup] = js.native
   def update(params: ParamsResourceProjectsGroupsUpdate, callback: BodyResponseCallback[SchemaErrorGroup]): Unit = js.native
   def update(

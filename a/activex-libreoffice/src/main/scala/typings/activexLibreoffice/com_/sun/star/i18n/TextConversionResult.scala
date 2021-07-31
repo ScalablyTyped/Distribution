@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Text conversion result to be used with {@link XTextConversion} .
   * @since OOo 1.1.2
   */
-@js.native
 trait TextConversionResult extends StObject {
   
   /**
@@ -18,10 +16,10 @@ trait TextConversionResult extends StObject {
     *
     * If there is no convertible word found in the text, **startPos** and **endPos** for {@link Boundary} equal 0.
     */
-  var Boundary: typings.activexLibreoffice.com_.sun.star.i18n.Boundary = js.native
+  var Boundary: typings.activexLibreoffice.com_.sun.star.i18n.Boundary
   
   /** A list of replacement candidates for the first convertible word found in the given text. */
-  var Candidates: SafeArray[String] = js.native
+  var Candidates: SafeArray[String]
 }
 object TextConversionResult {
   

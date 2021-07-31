@@ -2,16 +2,14 @@ package typings.awsSdk.cloudhsmv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClusterResponse extends StObject {
   
   /**
     * Information about the cluster that was deleted.
     */
-  var Cluster: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Cluster] = js.native
+  var Cluster: js.UndefOr[typings.awsSdk.cloudhsmv2Mod.Cluster] = js.undefined
 }
 object DeleteClusterResponse {
   

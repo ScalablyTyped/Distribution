@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SMS extends Service {
   
   @JSName("config")
-  var config_SMS: ConfigBase with ClientConfiguration = js.native
+  var config_SMS: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an application. An application consists of one or more server groups. Each server group contain one or more servers.

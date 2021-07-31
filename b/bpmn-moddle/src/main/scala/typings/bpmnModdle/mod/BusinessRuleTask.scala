@@ -2,13 +2,13 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BusinessRuleTask extends Task {
+trait BusinessRuleTask
+  extends StObject
+     with Task {
   
-  var implementation: String = js.native
+  var implementation: String
 }
 object BusinessRuleTask {
   

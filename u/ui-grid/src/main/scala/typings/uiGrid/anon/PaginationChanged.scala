@@ -4,10 +4,8 @@ import typings.angular.mod.IScope
 import typings.uiGrid.mod.pagination.paginationChangedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginationChanged extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PaginationChanged extends StObject {
     * @param {ng.IScope} scope The grid scope
     * @param {paginationChangedHandler} handler Callback
     */
-  def paginationChanged(scope: IScope, handler: paginationChangedHandler): Unit = js.native
+  def paginationChanged(scope: IScope, handler: paginationChangedHandler): Unit
 }
 object PaginationChanged {
   

@@ -3,22 +3,20 @@ package typings.vsoNodeApi.testInterfacesMod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregatedDataForResultTrend extends StObject {
   
   /**
     * This is tests execution duration.
     */
-  var duration: js.Any = js.native
+  var duration: js.Any
   
-  var resultsByOutcome: NumberDictionary[AggregatedResultsByOutcome] = js.native
+  var resultsByOutcome: NumberDictionary[AggregatedResultsByOutcome]
   
-  var testResultsContext: TestResultsContext = js.native
+  var testResultsContext: TestResultsContext
   
-  var totalTests: Double = js.native
+  var totalTests: Double
 }
 object AggregatedDataForResultTrend {
   

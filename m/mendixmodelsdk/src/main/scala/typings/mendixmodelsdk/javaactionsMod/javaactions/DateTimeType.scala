@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -56,9 +55,8 @@ object DateTimeType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.DateTimeType.create")
-  @js.native
-  def create(model: IModel): DateTimeType = js.native
+  @scala.inline
+  def create(model: IModel): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -69,9 +67,8 @@ object DateTimeType {
     *  6.7.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.DateTimeType.createInBasicParameterTypeUnderType")
-  @js.native
-  def createInBasicParameterTypeUnderType(container: BasicParameterType): DateTimeType = js.native
+  @scala.inline
+  def createInBasicParameterTypeUnderType(container: BasicParameterType): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInBasicParameterTypeUnderType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -82,9 +79,8 @@ object DateTimeType {
     *  6.6.0 to 6.6.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.DateTimeType.createInJavaActionParameterUnderJavaType")
-  @js.native
-  def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): DateTimeType = js.native
+  @scala.inline
+  def createInJavaActionParameterUnderJavaType(container: JavaActionParameter): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionParameterUnderJavaType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /**
     * Creates and returns a new DateTimeType instance in the SDK and on the server.
@@ -95,9 +91,8 @@ object DateTimeType {
     *  6.6.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.DateTimeType.createInJavaActionUnderJavaReturnType")
-  @js.native
-  def createInJavaActionUnderJavaReturnType(container: JavaAction): DateTimeType = js.native
+  @scala.inline
+  def createInJavaActionUnderJavaReturnType(container: JavaAction): DateTimeType = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJavaActionUnderJavaReturnType")(container.asInstanceOf[js.Any]).asInstanceOf[DateTimeType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.DateTimeType.structureTypeName")

@@ -2,37 +2,35 @@ package typings.fineUploader.coreMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
   /**
     * Additional headers sent along with each upload request
     */
-  var customHeaders: js.UndefOr[js.Any] = js.native
+  var customHeaders: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The endpoint to send upload requests to
     *
     * @default `'/server/upload'`
     */
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the parameter passed if the original filename has been edited or a `Blob` is being sent
     *
     * @default `'qqfilename'`
     */
-  var filenameParam: js.UndefOr[String] = js.native
+  var filenameParam: js.UndefOr[String] = js.undefined
   
   /**
     * Force all uploads to use multipart encoding
     *
     * @default `true`
     */
-  var forceMultipart: js.UndefOr[Boolean] = js.native
+  var forceMultipart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The attribute of the input element which will contain the file name.
@@ -41,26 +39,26 @@ trait RequestOptions extends StObject {
     *
     * @default `'qqfile'`
     */
-  var inputName: js.UndefOr[String] = js.native
+  var inputName: js.UndefOr[String] = js.undefined
   
   /**
     * Specify a method to use when sending files to a traditional endpoint. This option is ignored in older browsers (such as IE 9 and older)
     *
     * @default `'POST'`
     */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, any Fine Uploader created parameters (qq*) will not be sent with the upload request
     * 
     * @default `false`
     */
-  var omitDefaultParams: js.UndefOr[Boolean] = js.native
+  var omitDefaultParams: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The parameters that shall be sent with each upload request
     */
-  var params: js.UndefOr[js.Any] = js.native
+  var params: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Enable or disable sending parameters in the request body.
@@ -70,7 +68,7 @@ trait RequestOptions extends StObject {
     *
     * @default `true`
     */
-  var paramsInBody: js.UndefOr[Boolean] = js.native
+  var paramsInBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, each upload response MUST contain a JSON message-body with `{success: true}` in order to be considered a success.
@@ -79,21 +77,21 @@ trait RequestOptions extends StObject {
     * 
     * @default `true`
     */
-  var requireSuccessJson: js.UndefOr[Boolean] = js.native
+  var requireSuccessJson: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the parameter passed that specifies the total file size in bytes
     *
     * @default `'qqtotalfilesize'`
     */
-  var totalFileSizeName: js.UndefOr[String] = js.native
+  var totalFileSizeName: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the parameter the uniquely identifies each associated item. The value is a Level 4 UUID
     *
     * @default `'qquuid'`
     */
-  var uuidName: js.UndefOr[String] = js.native
+  var uuidName: js.UndefOr[String] = js.undefined
 }
 object RequestOptions {
   

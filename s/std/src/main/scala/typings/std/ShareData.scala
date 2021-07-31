@@ -2,17 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShareData extends StObject {
   
-  var text: js.UndefOr[java.lang.String] = js.native
+  var text: js.UndefOr[java.lang.String] = js.undefined
   
-  var title: js.UndefOr[java.lang.String] = js.native
+  var title: js.UndefOr[java.lang.String] = js.undefined
   
-  var url: js.UndefOr[java.lang.String] = js.native
+  var url: js.UndefOr[java.lang.String] = js.undefined
 }
 object ShareData {
   

@@ -2,18 +2,16 @@ package typings.activexLibreoffice.com_.sun.star.beans
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a pair of two strings. */
-@js.native
 trait StringPair extends StObject {
   
   /** specifies the first of the two strings. */
-  var First: String = js.native
+  var First: String
   
   /** specifies the second of the two strings. */
-  var Second: String = js.native
+  var Second: String
 }
 object StringPair {
   

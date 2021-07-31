@@ -12,7 +12,6 @@ import typings.jqueryEditableSelect.jqueryEditableSelectStrings.select
 import typings.jqueryEditableSelect.jqueryEditableSelectStrings.show
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -37,25 +36,19 @@ trait JQuery extends StObject {
   @JSName("editableSelect")
   def editableSelect_add(action: add, text: String): Unit = js.native
   @JSName("editableSelect")
-  def editableSelect_add(
-    action: add,
-    text: String,
-    index: js.UndefOr[scala.Nothing],
-    attrs: js.UndefOr[scala.Nothing],
-    data: String
-  ): Unit = js.native
-  @JSName("editableSelect")
-  def editableSelect_add(action: add, text: String, index: js.UndefOr[scala.Nothing], attrs: js.Array[Name]): Unit = js.native
-  @JSName("editableSelect")
-  def editableSelect_add(action: add, text: String, index: js.UndefOr[scala.Nothing], attrs: js.Array[Name], data: String): Unit = js.native
-  @JSName("editableSelect")
   def editableSelect_add(action: add, text: String, index: Double): Unit = js.native
-  @JSName("editableSelect")
-  def editableSelect_add(action: add, text: String, index: Double, attrs: js.UndefOr[scala.Nothing], data: String): Unit = js.native
   @JSName("editableSelect")
   def editableSelect_add(action: add, text: String, index: Double, attrs: js.Array[Name]): Unit = js.native
   @JSName("editableSelect")
   def editableSelect_add(action: add, text: String, index: Double, attrs: js.Array[Name], data: String): Unit = js.native
+  @JSName("editableSelect")
+  def editableSelect_add(action: add, text: String, index: Double, attrs: Unit, data: String): Unit = js.native
+  @JSName("editableSelect")
+  def editableSelect_add(action: add, text: String, index: Unit, attrs: js.Array[Name]): Unit = js.native
+  @JSName("editableSelect")
+  def editableSelect_add(action: add, text: String, index: Unit, attrs: js.Array[Name], data: String): Unit = js.native
+  @JSName("editableSelect")
+  def editableSelect_add(action: add, text: String, index: Unit, attrs: Unit, data: String): Unit = js.native
   @JSName("editableSelect")
   def editableSelect_clear(action: clear): Unit = js.native
   @JSName("editableSelect")

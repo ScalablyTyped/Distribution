@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Effectivedate extends StObject {
   
-  var effective_date: String = js.native
+  var effective_date: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var plan: Accountsurl = js.native
+  var plan: Accountsurl
   
-  var unit_count: Double = js.native
+  var unit_count: Double
 }
 object Effectivedate {
   

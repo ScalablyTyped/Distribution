@@ -2,27 +2,25 @@ package typings.cucumber.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Step extends StObject {
   
-  var arguments: js.Any = js.native
+  var arguments: js.Any
   
-  var isBackground: Boolean = js.native
+  var isBackground: Boolean
   
-  var keyword: String = js.native
+  var keyword: String
   
-  var keywordType: String = js.native
+  var keywordType: String
   
-  var line: Double = js.native
+  var line: Double
   
-  var name: String = js.native
+  var name: String
   
-  var scenario: Scenario = js.native
+  var scenario: Scenario
   
-  var uri: String = js.native
+  var uri: String
 }
 object Step {
   

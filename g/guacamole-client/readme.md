@@ -12,7 +12,7 @@ guacamole-client
 | Keywords           | - |
 | # releases         | 2 |
 | # dependents       | 0 |
-| # downloads        | 7521 |
+| # downloads        | 8177 |
 | # stars            | 0 |
 
 ## Links

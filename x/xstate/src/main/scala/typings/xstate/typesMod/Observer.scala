@@ -2,17 +2,15 @@ package typings.xstate.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Observer[T] extends StObject {
   
-  def complete(): Unit = js.native
+  def complete(): Unit
   
-  def error(err: js.Any): Unit = js.native
+  def error(err: js.Any): Unit
   
-  def next(value: T): Unit = js.native
+  def next(value: T): Unit
 }
 object Observer {
   
@@ -23,7 +21,7 @@ object Observer {
   }
   
   @scala.inline
-  implicit class ObserverMutableBuilder[Self <: Observer[_], T] (val x: Self with Observer[T]) extends AnyVal {
+  implicit class ObserverMutableBuilder[Self <: Observer[?], T] (val x: Self & Observer[T]) extends AnyVal {
     
     @scala.inline
     def setComplete(value: () => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction0(value))

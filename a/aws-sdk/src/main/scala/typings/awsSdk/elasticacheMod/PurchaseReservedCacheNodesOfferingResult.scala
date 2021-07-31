@@ -2,13 +2,11 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PurchaseReservedCacheNodesOfferingResult extends StObject {
   
-  var ReservedCacheNode: js.UndefOr[typings.awsSdk.elasticacheMod.ReservedCacheNode] = js.native
+  var ReservedCacheNode: js.UndefOr[typings.awsSdk.elasticacheMod.ReservedCacheNode] = js.undefined
 }
 object PurchaseReservedCacheNodesOfferingResult {
   

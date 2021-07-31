@@ -2,20 +2,20 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to add an HTML formatted content in place of a selected range.
   */
-@js.native
-trait InsertHtmlCommand extends CommandWithSimpleStateBase {
+trait InsertHtmlCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the InsertHtmlCommand command with the specified parameter. true if the command has been successfully executed; false if the command execution has failed.
     * @param html A string that specifies the inserted HTML code.
     */
-  def execute(html: String): Boolean = js.native
+  def execute(html: String): Boolean
 }
 object InsertHtmlCommand {
   

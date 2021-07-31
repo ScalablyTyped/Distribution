@@ -4,10 +4,8 @@ import typings.std.RegExp
 import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteRecord extends StObject {
   
   var beforeEnter: js.UndefOr[
@@ -15,29 +13,29 @@ trait RouteRecord extends StObject {
       /* route */ Route, 
       /* redirect */ js.Function1[/* location */ RawLocation, Unit], 
       /* next */ js.Function0[Unit], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var components: Dictionary[Component] = js.native
+  var components: Dictionary[Component]
   
-  var instances: Dictionary[Vue] = js.native
+  var instances: Dictionary[Vue]
   
-  var matchAs: js.UndefOr[String] = js.native
+  var matchAs: js.UndefOr[String] = js.undefined
   
-  var meta: js.Any = js.native
+  var meta: js.Any
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var parent: js.UndefOr[RouteRecord] = js.native
+  var parent: js.UndefOr[RouteRecord] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var props: Boolean | js.Object | RoutePropsFunction | (Dictionary[Boolean | js.Object | RoutePropsFunction]) = js.native
+  var props: Boolean | js.Object | RoutePropsFunction | (Dictionary[Boolean | js.Object | RoutePropsFunction])
   
-  var redirect: js.UndefOr[RedirectOption] = js.native
+  var redirect: js.UndefOr[RedirectOption] = js.undefined
   
-  var regex: RegExp = js.native
+  var regex: RegExp
 }
 object RouteRecord {
   
@@ -59,7 +57,7 @@ object RouteRecord {
     
     @scala.inline
     def setBeforeEnter(
-      value: (/* route */ Route, /* redirect */ js.Function1[/* location */ RawLocation, Unit], /* next */ js.Function0[Unit]) => _
+      value: (/* route */ Route, /* redirect */ js.Function1[/* location */ RawLocation, Unit], /* next */ js.Function0[Unit]) => js.Any
     ): Self = StObject.set(x, "beforeEnter", js.Any.fromFunction3(value))
     
     @scala.inline

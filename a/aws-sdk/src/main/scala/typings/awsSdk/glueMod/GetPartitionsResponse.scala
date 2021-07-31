@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetPartitionsResponse extends StObject {
   
   /**
     * A continuation token, if the returned list of partitions does not include the last one.
     */
-  var NextToken: js.UndefOr[Token] = js.native
+  var NextToken: js.UndefOr[Token] = js.undefined
   
   /**
     * A list of requested partitions.
     */
-  var Partitions: js.UndefOr[PartitionList] = js.native
+  var Partitions: js.UndefOr[PartitionList] = js.undefined
 }
 object GetPartitionsResponse {
   

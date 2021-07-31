@@ -4,24 +4,22 @@ import typings.reactSpinners.interfacesMod.LengthType
 import typings.reactSpinners.interfacesMod.PrecompiledCss
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Required<react-spinners.react-spinners/interfaces.LoaderHeightWidthProps> */
-  @js.native
   trait RequiredLoaderHeightWidth extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var css: String | PrecompiledCss = js.native
+    var css: String | PrecompiledCss
     
-    var height: LengthType = js.native
+    var height: LengthType
     
-    var loading: Boolean = js.native
+    var loading: Boolean
     
-    var width: LengthType = js.native
+    var width: LengthType
   }
   object RequiredLoaderHeightWidth {
     
@@ -58,22 +56,21 @@ object anon {
   }
   
   /* Inlined std.Required<react-spinners.react-spinners/interfaces.LoaderHeightWidthRadiusProps> */
-  @js.native
   trait RequiredLoaderHeightWidthColor extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var css: String | PrecompiledCss = js.native
+    var css: String | PrecompiledCss
     
-    var height: LengthType = js.native
+    var height: LengthType
     
-    var loading: Boolean = js.native
+    var loading: Boolean
     
-    var margin: LengthType = js.native
+    var margin: LengthType
     
-    var radius: LengthType = js.native
+    var radius: LengthType
     
-    var width: LengthType = js.native
+    var width: LengthType
   }
   object RequiredLoaderHeightWidthColor {
     
@@ -118,18 +115,17 @@ object anon {
   }
   
   /* Inlined std.Required<react-spinners.react-spinners/interfaces.LoaderSizeMarginProps> */
-  @js.native
   trait RequiredLoaderSizeMarginP extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var css: String | PrecompiledCss = js.native
+    var css: String | PrecompiledCss
     
-    var loading: Boolean = js.native
+    var loading: Boolean
     
-    var margin: LengthType = js.native
+    var margin: LengthType
     
-    var size: LengthType = js.native
+    var size: LengthType
   }
   object RequiredLoaderSizeMarginP {
     
@@ -166,16 +162,15 @@ object anon {
   }
   
   /* Inlined std.Required<react-spinners.react-spinners/interfaces.LoaderSizeProps> */
-  @js.native
   trait RequiredLoaderSizeProps extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var css: String | PrecompiledCss = js.native
+    var css: String | PrecompiledCss
     
-    var loading: Boolean = js.native
+    var loading: Boolean
     
-    var size: LengthType = js.native
+    var size: LengthType
   }
   object RequiredLoaderSizeProps {
     

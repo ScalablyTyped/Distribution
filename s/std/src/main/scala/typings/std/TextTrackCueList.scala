@@ -3,11 +3,12 @@ package typings.std
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TextTrackCueList extends /* index */ NumberDictionary[TextTrackCue] {
+trait TextTrackCueList
+  extends StObject
+     with /* index */ NumberDictionary[TextTrackCue] {
   
   /**
     * Returns the first text track cue (in text track cue order) with text track cue identifier id.

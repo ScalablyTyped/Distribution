@@ -14,41 +14,41 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] extends Props[Calendar[TEvent, TResource]] {
+trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */]
+  extends StObject
+     with Props[Calendar[TEvent, TResource]] {
   
-  var allDayAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.native
+  var allDayAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var components: js.UndefOr[Components_[TEvent, TResource]] = js.native
+  var components: js.UndefOr[Components_[TEvent, TResource]] = js.undefined
   
-  var culture: js.UndefOr[String] = js.native
+  var culture: js.UndefOr[String] = js.undefined
   
-  var date: js.UndefOr[stringOrDate] = js.native
+  var date: js.UndefOr[stringOrDate] = js.undefined
   
-  var dayLayoutAlgorithm: js.UndefOr[DayLayoutAlgorithm | DayLayoutFunction[TEvent]] = js.native
+  var dayLayoutAlgorithm: js.UndefOr[DayLayoutAlgorithm | DayLayoutFunction[TEvent]] = js.undefined
   
-  var dayPropGetter: js.UndefOr[DayPropGetter] = js.native
+  var dayPropGetter: js.UndefOr[DayPropGetter] = js.undefined
   
-  var defaultDate: js.UndefOr[Date] = js.native
+  var defaultDate: js.UndefOr[Date] = js.undefined
   
-  var defaultView: js.UndefOr[View] = js.native
+  var defaultView: js.UndefOr[View] = js.undefined
   
-  var drilldownView: js.UndefOr[View | Null] = js.native
+  var drilldownView: js.UndefOr[View | Null] = js.undefined
   
-  var elementProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
+  var elementProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
   
-  var endAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])] = js.native
+  var endAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])] = js.undefined
   
-  var eventPropGetter: js.UndefOr[EventPropGetter[TEvent]] = js.native
+  var eventPropGetter: js.UndefOr[EventPropGetter[TEvent]] = js.undefined
   
-  var events: js.UndefOr[js.Array[TEvent]] = js.native
+  var events: js.UndefOr[js.Array[TEvent]] = js.undefined
   
-  var formats: js.UndefOr[Formats] = js.native
+  var formats: js.UndefOr[Formats] = js.undefined
   
   var getDrilldownView: js.UndefOr[
     (js.Function3[
@@ -57,93 +57,97 @@ trait CalendarProps[TEvent /* <: js.Object */, TResource /* <: js.Object */] ext
       /* configuredViewNames */ js.Array[View], 
       Unit
     ]) | Null
-  ] = js.native
+  ] = js.undefined
   
-  var getNow: js.UndefOr[js.Function0[Date]] = js.native
+  var getNow: js.UndefOr[js.Function0[Date]] = js.undefined
   
-  var handleDragStart: js.UndefOr[js.Function1[/* event */ TEvent, Unit]] = js.native
+  var handleDragStart: js.UndefOr[js.Function1[/* event */ TEvent, Unit]] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var localizer: DateLocalizer = js.native
+  var localizer: DateLocalizer
   
-  var longPressThreshold: js.UndefOr[Double] = js.native
+  var longPressThreshold: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[stringOrDate] = js.native
+  var max: js.UndefOr[stringOrDate] = js.undefined
   
-  var messages: js.UndefOr[Messages] = js.native
+  var messages: js.UndefOr[Messages] = js.undefined
   
-  var min: js.UndefOr[stringOrDate] = js.native
+  var min: js.UndefOr[stringOrDate] = js.undefined
   
   var onDoubleClickEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onDrillDown: js.UndefOr[js.Function2[/* date */ Date, /* view */ View, Unit]] = js.native
+  var onDrillDown: js.UndefOr[js.Function2[/* date */ Date, /* view */ View, Unit]] = js.undefined
   
   var onNavigate: js.UndefOr[
     js.Function3[/* newDate */ Date, /* view */ View, /* action */ NavigateAction, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onRangeChange: js.UndefOr[
     js.Function2[/* range */ js.Array[Date] | End, /* view */ js.UndefOr[View], Unit]
-  ] = js.native
+  ] = js.undefined
   
   var onSelectEvent: js.UndefOr[
     js.Function2[/* event */ TEvent, /* e */ SyntheticEvent[HTMLElement, typings.std.Event], Unit]
-  ] = js.native
+  ] = js.undefined
   
-  var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ Action, Unit]] = js.native
+  var onSelectSlot: js.UndefOr[js.Function1[/* slotInfo */ Action, Unit]] = js.undefined
   
-  var onSelecting: js.UndefOr[js.Function1[/* range */ End, js.UndefOr[Boolean | Null]]] = js.native
+  var onSelecting: js.UndefOr[js.Function1[/* range */ End, js.UndefOr[Boolean | Null]]] = js.undefined
   
-  var onShowMore: js.UndefOr[js.Function2[/* events */ js.Array[TEvent], /* date */ Date, Unit]] = js.native
+  var onShowMore: js.UndefOr[js.Function2[/* events */ js.Array[TEvent], /* date */ Date, Unit]] = js.undefined
   
-  var onView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.native
+  var onView: js.UndefOr[js.Function1[/* view */ View, Unit]] = js.undefined
   
-  var popup: js.UndefOr[Boolean] = js.native
+  var popup: js.UndefOr[Boolean] = js.undefined
   
-  var popupOffset: js.UndefOr[Double | X] = js.native
+  var popupOffset: js.UndefOr[Double | X] = js.undefined
   
-  var resourceAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, _])] = js.native
+  var resourceAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, js.Any])] = js.undefined
   
-  var resourceIdAccessor: js.UndefOr[(/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])] = js.native
+  var resourceIdAccessor: js.UndefOr[
+    (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, js.Any])
+  ] = js.undefined
   
-  var resourceTitleAccessor: js.UndefOr[(/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])] = js.native
+  var resourceTitleAccessor: js.UndefOr[
+    (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, js.Any])
+  ] = js.undefined
   
-  var resources: js.UndefOr[js.Array[TResource]] = js.native
+  var resources: js.UndefOr[js.Array[TResource]] = js.undefined
   
-  var rtl: js.UndefOr[Boolean] = js.native
+  var rtl: js.UndefOr[Boolean] = js.undefined
   
-  var scrollToTime: js.UndefOr[Date] = js.native
+  var scrollToTime: js.UndefOr[Date] = js.undefined
   
-  var selectable: js.UndefOr[Boolean | ignoreEvents] = js.native
+  var selectable: js.UndefOr[Boolean | ignoreEvents] = js.undefined
   
-  var selected: js.UndefOr[js.Any] = js.native
+  var selected: js.UndefOr[js.Any] = js.undefined
   
-  var showMultiDayTimes: js.UndefOr[Boolean] = js.native
+  var showMultiDayTimes: js.UndefOr[Boolean] = js.undefined
   
-  var slotGroupPropGetter: js.UndefOr[SlotGroupPropGetter] = js.native
+  var slotGroupPropGetter: js.UndefOr[SlotGroupPropGetter] = js.undefined
   
-  var slotPropGetter: js.UndefOr[SlotPropGetter] = js.native
+  var slotPropGetter: js.UndefOr[SlotPropGetter] = js.undefined
   
-  var startAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])] = js.native
+  var startAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Date])] = js.undefined
   
-  var step: js.UndefOr[Double] = js.native
+  var step: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var timeslots: js.UndefOr[Double] = js.native
+  var timeslots: js.UndefOr[Double] = js.undefined
   
-  var titleAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String])] = js.native
+  var titleAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String])] = js.undefined
   
-  var toolbar: js.UndefOr[Boolean] = js.native
+  var toolbar: js.UndefOr[Boolean] = js.undefined
   
-  var tooltipAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String])] = js.native
+  var tooltipAccessor: js.UndefOr[(/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, String])] = js.undefined
   
-  var view: js.UndefOr[View] = js.native
+  var view: js.UndefOr[View] = js.undefined
   
-  var views: js.UndefOr[ViewsProps[TEvent, TResource]] = js.native
+  var views: js.UndefOr[ViewsProps[TEvent, TResource]] = js.undefined
 }
 object CalendarProps {
   
@@ -154,7 +158,7 @@ object CalendarProps {
   }
   
   @scala.inline
-  implicit class CalendarPropsMutableBuilder[Self <: CalendarProps[_, _], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self with (CalendarProps[TEvent, TResource])) extends AnyVal {
+  implicit class CalendarPropsMutableBuilder[Self <: CalendarProps[?, ?], TEvent /* <: js.Object */, TResource /* <: js.Object */] (val x: Self & (CalendarProps[TEvent, TResource])) extends AnyVal {
     
     @scala.inline
     def setAllDayAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, Boolean])): Self = StObject.set(x, "allDayAccessor", value.asInstanceOf[js.Any])
@@ -388,28 +392,28 @@ object CalendarProps {
     def setPopupUndefined: Self = StObject.set(x, "popup", js.undefined)
     
     @scala.inline
-    def setResourceAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, _])): Self = StObject.set(x, "resourceAccessor", value.asInstanceOf[js.Any])
+    def setResourceAccessor(value: (/* keyof TEvent */ String) | (js.Function1[/* event */ TEvent, js.Any])): Self = StObject.set(x, "resourceAccessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceAccessorFunction1(value: /* event */ TEvent => _): Self = StObject.set(x, "resourceAccessor", js.Any.fromFunction1(value))
+    def setResourceAccessorFunction1(value: /* event */ TEvent => js.Any): Self = StObject.set(x, "resourceAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
     def setResourceAccessorUndefined: Self = StObject.set(x, "resourceAccessor", js.undefined)
     
     @scala.inline
-    def setResourceIdAccessor(value: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])): Self = StObject.set(x, "resourceIdAccessor", value.asInstanceOf[js.Any])
+    def setResourceIdAccessor(value: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, js.Any])): Self = StObject.set(x, "resourceIdAccessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceIdAccessorFunction1(value: /* resource */ TResource => _): Self = StObject.set(x, "resourceIdAccessor", js.Any.fromFunction1(value))
+    def setResourceIdAccessorFunction1(value: /* resource */ TResource => js.Any): Self = StObject.set(x, "resourceIdAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
     def setResourceIdAccessorUndefined: Self = StObject.set(x, "resourceIdAccessor", js.undefined)
     
     @scala.inline
-    def setResourceTitleAccessor(value: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, _])): Self = StObject.set(x, "resourceTitleAccessor", value.asInstanceOf[js.Any])
+    def setResourceTitleAccessor(value: (/* keyof TResource */ String) | (js.Function1[/* resource */ TResource, js.Any])): Self = StObject.set(x, "resourceTitleAccessor", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setResourceTitleAccessorFunction1(value: /* resource */ TResource => _): Self = StObject.set(x, "resourceTitleAccessor", js.Any.fromFunction1(value))
+    def setResourceTitleAccessorFunction1(value: /* resource */ TResource => js.Any): Self = StObject.set(x, "resourceTitleAccessor", js.Any.fromFunction1(value))
     
     @scala.inline
     def setResourceTitleAccessorUndefined: Self = StObject.set(x, "resourceTitleAccessor", js.undefined)

@@ -2,13 +2,11 @@ package typings.googleapis.v1p3beta1Mod.videointelligenceV1p3beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A speech recognition result corresponding to a portion of the audio.
   */
-@js.native
 trait SchemaGoogleCloudVideointelligenceV1SpeechTranscription extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SchemaGoogleCloudVideointelligenceV1SpeechTranscription extends StObject {
     * terms of accuracy, with the top (first) alternative being the most
     * probable, as ranked by the recognizer.
     */
-  var alternatives: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative]] = js.native
+  var alternatives: js.UndefOr[js.Array[SchemaGoogleCloudVideointelligenceV1SpeechRecognitionAlternative]] = js.undefined
   
   /**
     * Output only. The [BCP-47](https://www.rfc-editor.org/rfc/bcp/bcp47.txt)
     * language tag of the language in this result. This language code was
     * detected to have the most likelihood of being spoken in the audio.
     */
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVideointelligenceV1SpeechTranscription {
   

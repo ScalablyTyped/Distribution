@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.cognito
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolSchemaStringAttributeConstraints extends StObject {
   
   /**
     * The maximum length of an attribute value of the string type.
     */
-  var maxLength: js.UndefOr[String] = js.native
+  var maxLength: js.UndefOr[String] = js.undefined
   
   /**
     * The minimum length of an attribute value of the string type.
     */
-  var minLength: js.UndefOr[String] = js.native
+  var minLength: js.UndefOr[String] = js.undefined
 }
 object UserPoolSchemaStringAttributeConstraints {
   

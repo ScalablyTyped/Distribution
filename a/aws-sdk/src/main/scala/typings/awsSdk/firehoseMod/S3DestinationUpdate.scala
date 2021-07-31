@@ -2,51 +2,49 @@ package typings.awsSdk.firehoseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3DestinationUpdate extends StObject {
   
   /**
     * The ARN of the S3 bucket. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var BucketARN: js.UndefOr[typings.awsSdk.firehoseMod.BucketARN] = js.native
+  var BucketARN: js.UndefOr[typings.awsSdk.firehoseMod.BucketARN] = js.undefined
   
   /**
     * The buffering option. If no value is specified, BufferingHints object default values are used.
     */
-  var BufferingHints: js.UndefOr[typings.awsSdk.firehoseMod.BufferingHints] = js.native
+  var BufferingHints: js.UndefOr[typings.awsSdk.firehoseMod.BufferingHints] = js.undefined
   
   /**
     * The CloudWatch logging options for your delivery stream.
     */
-  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.native
+  var CloudWatchLoggingOptions: js.UndefOr[typings.awsSdk.firehoseMod.CloudWatchLoggingOptions] = js.undefined
   
   /**
     * The compression format. If no value is specified, the default is UNCOMPRESSED. The compression formats SNAPPY or ZIP cannot be specified for Amazon Redshift destinations because they are not supported by the Amazon Redshift COPY operation that reads from the S3 bucket.
     */
-  var CompressionFormat: js.UndefOr[typings.awsSdk.firehoseMod.CompressionFormat] = js.native
+  var CompressionFormat: js.UndefOr[typings.awsSdk.firehoseMod.CompressionFormat] = js.undefined
   
   /**
     * The encryption configuration. If no value is specified, the default is no encryption.
     */
-  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.EncryptionConfiguration] = js.native
+  var EncryptionConfiguration: js.UndefOr[typings.awsSdk.firehoseMod.EncryptionConfiguration] = js.undefined
   
   /**
     * A prefix that Kinesis Data Firehose evaluates and adds to failed records before writing them to S3. This prefix appears immediately following the bucket name. For information about how to specify this prefix, see Custom Prefixes for Amazon S3 Objects.
     */
-  var ErrorOutputPrefix: js.UndefOr[typings.awsSdk.firehoseMod.ErrorOutputPrefix] = js.native
+  var ErrorOutputPrefix: js.UndefOr[typings.awsSdk.firehoseMod.ErrorOutputPrefix] = js.undefined
   
   /**
     * The "YYYY/MM/DD/HH" time format prefix is automatically used for delivered Amazon S3 files. You can also specify a custom prefix, as described in Custom Prefixes for Amazon S3 Objects.
     */
-  var Prefix: js.UndefOr[typings.awsSdk.firehoseMod.Prefix] = js.native
+  var Prefix: js.UndefOr[typings.awsSdk.firehoseMod.Prefix] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS credentials. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var RoleARN: js.UndefOr[typings.awsSdk.firehoseMod.RoleARN] = js.native
+  var RoleARN: js.UndefOr[typings.awsSdk.firehoseMod.RoleARN] = js.undefined
 }
 object S3DestinationUpdate {
   

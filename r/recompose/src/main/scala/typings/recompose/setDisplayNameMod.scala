@@ -3,13 +3,15 @@ package typings.recompose
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://github.com/acdlite/recompose/blob/master/docs/API.md#setdisplayname
 object setDisplayNameMod {
   
-  @JSImport("recompose/setDisplayName", JSImport.Default)
+  @JSImport("recompose/setDisplayName", JSImport.Namespace)
   @js.native
-  def default(displayName: String): js.Function1[/* component */ ComponentType[_], ComponentType[_]] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(displayName: String): js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(displayName.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ ComponentType[js.Any], ComponentType[js.Any]]]
 }

@@ -3,7 +3,6 @@ package typings.antDesignReactNative
 import typings.antDesignReactNative.anon.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toastMod {
@@ -26,9 +25,8 @@ object toastMod {
     @scala.inline
     def SHORT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SHORT")(x.asInstanceOf[js.Any])
     
-    @JSImport("@ant-design/react-native/lib/toast", "default.config")
-    @js.native
-    def config(props: IToastConfigurable): Unit = js.native
+    @scala.inline
+    def config(props: IToastConfigurable): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(props.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("@ant-design/react-native/lib/toast", "default.defaultConfig")
     @js.native
@@ -40,277 +38,152 @@ object toastMod {
       *
       * @param props: toast props
       */
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: String): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(
-      props: String,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: String, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: String, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: String, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: IToastProps): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: IToastProps, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: IToastProps, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.fail")
-    @js.native
-    def fail(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+    @scala.inline
+    def fail(props: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: String, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: String, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: String, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: String, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: String, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: String, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def fail(props: IToastProps, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("fail")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("@ant-design/react-native/lib/toast", "default.getConfig")
-    @js.native
-    def getConfig(): Duration = js.native
+    @scala.inline
+    def getConfig(): Duration = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Duration]
     
     /**
       *
       * @param props: toast props
       */
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: String): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(
-      props: String,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: String, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: String, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: String, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: IToastProps): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: IToastProps, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: IToastProps, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.info")
-    @js.native
-    def info(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+    @scala.inline
+    def info(props: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def info(props: String, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: String, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: String, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: String, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: String, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: String, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def info(props: IToastProps, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("info")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *
       * @param props: toast props
       */
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: String): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(
-      props: String,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: String, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: String, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: String, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: IToastProps): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: IToastProps, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: IToastProps, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.loading")
-    @js.native
-    def loading(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+    @scala.inline
+    def loading(props: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: String, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: String, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: String, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: String, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: String, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: String, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def loading(props: IToastProps, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("loading")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *
       * @param props: toast props
       */
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: String): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(
-      props: String,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: String, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: String, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: String, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: IToastProps): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: IToastProps, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: IToastProps, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.offline")
-    @js.native
-    def offline(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+    @scala.inline
+    def offline(props: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: String, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: String, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: String, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: String, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: String, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: String, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def offline(props: IToastProps, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("offline")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     @JSImport("@ant-design/react-native/lib/toast", "default.remove")
     @js.native
@@ -328,110 +201,70 @@ object toastMod {
     /**
       * @deprecated use Toast.info instead
       */
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: String): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: String, duration: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: String, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: String, duration: Double, mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: IToastProps): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: IToastProps, duration: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: IToastProps, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.show")
-    @js.native
-    def show(props: IToastProps, duration: Double, mask: Boolean): Double = js.native
+    @scala.inline
+    def show(props: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def show(props: String, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def show(props: String, duration: Double, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def show(props: String, duration: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def show(props: IToastProps): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def show(props: IToastProps, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def show(props: IToastProps, duration: Double, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def show(props: IToastProps, duration: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       *
       * @param props: toast props
       */
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: String): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(
-      props: String,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: String, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: String, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: String, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: String, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: IToastProps): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.UndefOr[scala.Nothing],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: IToastProps, duration: js.UndefOr[scala.Nothing], onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(
-      props: IToastProps,
-      duration: js.UndefOr[scala.Nothing],
-      onClose: js.Function0[Unit],
-      mask: Boolean
-    ): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: IToastProps, duration: Double): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: IToastProps, duration: Double, onClose: js.UndefOr[scala.Nothing], mask: Boolean): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = js.native
-    @JSImport("@ant-design/react-native/lib/toast", "default.success")
-    @js.native
-    def success(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = js.native
+    @scala.inline
+    def success(props: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def success(props: String, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: String, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: String, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: String, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: String, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: String, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: String, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps, duration: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps, duration: Double, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps, duration: Double, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps, duration: Double, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps, duration: Unit, onClose: js.Function0[Unit]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps, duration: Unit, onClose: js.Function0[Unit], mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def success(props: IToastProps, duration: Unit, onClose: Unit, mask: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("success")(props.asInstanceOf[js.Any], duration.asInstanceOf[js.Any], onClose.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  @js.native
   trait IToastConfigurable extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var mask: js.UndefOr[Boolean] = js.native
+    var mask: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var stackable: js.UndefOr[Boolean] = js.native
+    var stackable: js.UndefOr[Boolean] = js.undefined
   }
   object IToastConfigurable {
     
@@ -470,10 +303,11 @@ object toastMod {
     }
   }
   
-  @js.native
-  trait IToastProps extends IToastConfigurable {
+  trait IToastProps
+    extends StObject
+       with IToastConfigurable {
     
-    var content: String = js.native
+    var content: String
   }
   object IToastProps {
     

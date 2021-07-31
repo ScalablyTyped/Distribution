@@ -3,42 +3,41 @@ package typings.typescript.mod
 import typings.typescript.typescriptBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenameInfoSuccess extends RenameInfo {
+trait RenameInfoSuccess
+  extends StObject
+     with RenameInfo {
   
-  var canRename: `true` = js.native
+  var canRename: `true`
   
-  var displayName: java.lang.String = js.native
+  var displayName: java.lang.String
   
   /**
     * File or directory to rename.
     * If set, `getEditsForFileRename` should be called instead of `findRenameLocations`.
     */
-  var fileToRename: js.UndefOr[java.lang.String] = js.native
+  var fileToRename: js.UndefOr[java.lang.String] = js.undefined
   
-  var fullDisplayName: java.lang.String = js.native
+  var fullDisplayName: java.lang.String
   
-  var kind: ScriptElementKind = js.native
+  var kind: ScriptElementKind
   
-  var kindModifiers: java.lang.String = js.native
+  var kindModifiers: java.lang.String
   
-  var triggerSpan: TextSpan = js.native
+  var triggerSpan: TextSpan
 }
 object RenameInfoSuccess {
   
   @scala.inline
   def apply(
-    canRename: `true`,
     displayName: java.lang.String,
     fullDisplayName: java.lang.String,
     kind: ScriptElementKind,
     kindModifiers: java.lang.String,
     triggerSpan: TextSpan
   ): RenameInfoSuccess = {
-    val __obj = js.Dynamic.literal(canRename = canRename.asInstanceOf[js.Any], displayName = displayName.asInstanceOf[js.Any], fullDisplayName = fullDisplayName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], triggerSpan = triggerSpan.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(canRename = true, displayName = displayName.asInstanceOf[js.Any], fullDisplayName = fullDisplayName.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], kindModifiers = kindModifiers.asInstanceOf[js.Any], triggerSpan = triggerSpan.asInstanceOf[js.Any])
     __obj.asInstanceOf[RenameInfoSuccess]
   }
   

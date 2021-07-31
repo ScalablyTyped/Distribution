@@ -3,46 +3,44 @@ package typings.pulumiAws.inputMod.cognito
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolSchema extends StObject {
   
   /**
     * The attribute data type. Must be one of `Boolean`, `Number`, `String`, `DateTime`.
     */
-  var attributeDataType: Input[String] = js.native
+  var attributeDataType: Input[String]
   
   /**
     * Specifies whether the attribute type is developer only.
     */
-  var developerOnlyAttribute: js.UndefOr[Input[Boolean]] = js.native
+  var developerOnlyAttribute: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * Specifies whether the attribute can be changed once it has been created.
     */
-  var mutable: js.UndefOr[Input[Boolean]] = js.native
+  var mutable: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * The name of the attribute.
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
   
   /**
     * Specifies the constraints for an attribute of the number type.
     */
-  var numberAttributeConstraints: js.UndefOr[Input[UserPoolSchemaNumberAttributeConstraints]] = js.native
+  var numberAttributeConstraints: js.UndefOr[Input[UserPoolSchemaNumberAttributeConstraints]] = js.undefined
   
   /**
     * Specifies whether a user pool attribute is required. If the attribute is required and the user does not provide a value, registration or sign-in will fail.
     */
-  var required: js.UndefOr[Input[Boolean]] = js.native
+  var required: js.UndefOr[Input[Boolean]] = js.undefined
   
   /**
     * -Specifies the constraints for an attribute of the string type.
     */
-  var stringAttributeConstraints: js.UndefOr[Input[UserPoolSchemaStringAttributeConstraints]] = js.native
+  var stringAttributeConstraints: js.UndefOr[Input[UserPoolSchemaStringAttributeConstraints]] = js.undefined
 }
 object UserPoolSchema {
   

@@ -3,15 +3,13 @@ package typings.luminoPolling
 import typings.luminoPolling.mod.IPoll.State
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancel[T, U, V /* <: String */] extends StObject {
     
-    def cancel(last: State[T, U, V]): Boolean = js.native
+    def cancel(last: State[T, U, V]): Boolean
   }
   object Cancel {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class CancelMutableBuilder[Self <: Cancel[_, _, _], T, U, V /* <: String */] (val x: Self with (Cancel[T, U, V])) extends AnyVal {
+    implicit class CancelMutableBuilder[Self <: Cancel[?, ?, ?], T, U, V /* <: String */] (val x: Self & (Cancel[T, U, V])) extends AnyVal {
       
       @scala.inline
       def setCancel(value: State[T, U, V] => Boolean): Self = StObject.set(x, "cancel", js.Any.fromFunction1(value))
@@ -30,14 +28,13 @@ object anon {
   }
   
   /* Inlined std.Partial<@lumino/polling.@lumino/polling.IPoll.Frequency> */
-  @js.native
   trait PartialFrequency extends StObject {
     
-    var backoff: js.UndefOr[Boolean | Double] = js.native
+    var backoff: js.UndefOr[Boolean | Double] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
   }
   object PartialFrequency {
     

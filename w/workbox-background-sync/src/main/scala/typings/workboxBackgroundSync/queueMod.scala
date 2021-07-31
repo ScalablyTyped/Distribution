@@ -3,7 +3,6 @@ package typings.workboxBackgroundSync
 import typings.std.Request
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queueMod {
@@ -14,29 +13,28 @@ object queueMod {
     def this(name: String) = this()
     def this(name: String, options: QueueOptions) = this()
     
-    def getAll(): js.Promise[js.Array[QueueEntry[_]]] = js.native
+    def getAll(): js.Promise[js.Array[QueueEntry[js.Any]]] = js.native
     
     val name: String = js.native
     
-    def popRequest(): js.Promise[QueueEntry[_]] = js.native
+    def popRequest(): js.Promise[QueueEntry[js.Any]] = js.native
     
-    def pushRequest(entry: QueueEntry[_]): js.Promise[Unit] = js.native
+    def pushRequest(entry: QueueEntry[js.Any]): js.Promise[Unit] = js.native
     
     def registerSync(): js.Promise[Unit] = js.native
     
-    def shiftRequest(): js.Promise[QueueEntry[_]] = js.native
+    def shiftRequest(): js.Promise[QueueEntry[js.Any]] = js.native
     
-    def unshiftRequest(entry: QueueEntry[_]): js.Promise[Unit] = js.native
+    def unshiftRequest(entry: QueueEntry[js.Any]): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait QueueEntry[Metadata] extends StObject {
     
-    var metadata: js.UndefOr[Metadata] = js.native
+    var metadata: js.UndefOr[Metadata] = js.undefined
     
-    var request: Request = js.native
+    var request: Request
     
-    var timestamp: js.UndefOr[Double] = js.native
+    var timestamp: js.UndefOr[Double] = js.undefined
   }
   object QueueEntry {
     
@@ -47,7 +45,7 @@ object queueMod {
     }
     
     @scala.inline
-    implicit class QueueEntryMutableBuilder[Self <: QueueEntry[_], Metadata] (val x: Self with QueueEntry[Metadata]) extends AnyVal {
+    implicit class QueueEntryMutableBuilder[Self <: QueueEntry[?], Metadata] (val x: Self & QueueEntry[Metadata]) extends AnyVal {
       
       @scala.inline
       def setMetadata(value: Metadata): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
@@ -66,10 +64,9 @@ object queueMod {
     }
   }
   
-  @js.native
   trait QueueOnSyncEvent extends StObject {
     
-    var queue: Queue = js.native
+    var queue: Queue
   }
   object QueueOnSyncEvent {
     
@@ -89,12 +86,11 @@ object queueMod {
   
   type QueueOnSyncHandler = js.Function1[/* options */ QueueOnSyncEvent, Unit | js.Promise[Unit]]
   
-  @js.native
   trait QueueOptions extends StObject {
     
-    var maxRetentionTime: js.UndefOr[Double] = js.native
+    var maxRetentionTime: js.UndefOr[Double] = js.undefined
     
-    var onSync: js.UndefOr[QueueOnSyncHandler] = js.native
+    var onSync: js.UndefOr[QueueOnSyncHandler] = js.undefined
   }
   object QueueOptions {
     

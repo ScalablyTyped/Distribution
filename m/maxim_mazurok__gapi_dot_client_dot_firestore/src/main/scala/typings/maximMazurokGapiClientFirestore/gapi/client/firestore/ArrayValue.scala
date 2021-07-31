@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayValue extends StObject {
   
   /** Values in the array. */
-  var values: js.UndefOr[js.Array[Value]] = js.native
+  var values: js.UndefOr[js.Array[Value]] = js.undefined
 }
 object ArrayValue {
   

@@ -11,8 +11,8 @@ Used in npm for command line application support
 | Full name          | cmd-shim |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 123 |
-| # downloads        | 39878843 |
+| # dependents       | 127 |
+| # downloads        | 43246460 |
 | # stars            | 4 |
 
 ## Links

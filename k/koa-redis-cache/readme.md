@@ -10,9 +10,9 @@ a middleware for koa to cache response with redis.
 | ------------------ | :-------------: |
 | Full name          | koa-redis-cache |
 | Keywords           | middleware, response, redis, cache, koa |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 3 |
-| # downloads        | 45828 |
+| # downloads        | 47876 |
 | # stars            | 0 |
 
 ## Links

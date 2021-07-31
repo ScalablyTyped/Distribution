@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.DOM.NodeId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetBackgroundColorsRequest extends StObject {
   
   /**
     * Id of the node to get background colors for.
     */
-  var nodeId: NodeId = js.native
+  var nodeId: NodeId
 }
 object GetBackgroundColorsRequest {
   

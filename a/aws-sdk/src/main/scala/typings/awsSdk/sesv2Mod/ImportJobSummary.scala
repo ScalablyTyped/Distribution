@@ -2,22 +2,20 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportJobSummary extends StObject {
   
   /**
     * The date and time when the import job was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
-  var ImportDestination: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDestination] = js.native
+  var ImportDestination: js.UndefOr[typings.awsSdk.sesv2Mod.ImportDestination] = js.undefined
   
-  var JobId: js.UndefOr[typings.awsSdk.sesv2Mod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.sesv2Mod.JobId] = js.undefined
   
-  var JobStatus: js.UndefOr[typings.awsSdk.sesv2Mod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.sesv2Mod.JobStatus] = js.undefined
 }
 object ImportJobSummary {
   

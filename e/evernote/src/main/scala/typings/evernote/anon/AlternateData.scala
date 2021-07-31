@@ -4,35 +4,33 @@ import typings.evernote.mod.Types.Data
 import typings.evernote.mod.Types.ResourceAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlternateData extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var alternateData: js.UndefOr[Data] = js.native
+  var alternateData: js.UndefOr[Data] = js.undefined
   
-  var attributes: js.UndefOr[ResourceAttributes] = js.native
+  var attributes: js.UndefOr[ResourceAttributes] = js.undefined
   
-  var data: js.UndefOr[Data] = js.native
+  var data: js.UndefOr[Data] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var guid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var mime: js.UndefOr[String] = js.native
+  var mime: js.UndefOr[String] = js.undefined
   
-  var noteguid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.native
+  var noteguid: js.UndefOr[typings.evernote.mod.Types.Guid] = js.undefined
   
-  var recognition: js.UndefOr[Data] = js.native
+  var recognition: js.UndefOr[Data] = js.undefined
   
-  var updateSequenceNum: js.UndefOr[Double] = js.native
+  var updateSequenceNum: js.UndefOr[Double] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object AlternateData {
   

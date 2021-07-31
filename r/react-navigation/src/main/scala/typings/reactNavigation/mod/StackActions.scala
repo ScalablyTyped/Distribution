@@ -8,10 +8,13 @@ import typings.reactNavigation.reactNavigationStrings.NavigationSlashREPLACE
 import typings.reactNavigation.reactNavigationStrings.NavigationSlashRESET
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StackActions {
+  
+  @JSImport("react-navigation", "StackActions")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-navigation", "StackActions.COMPLETE_TRANSITION")
   @js.native
@@ -37,36 +40,27 @@ object StackActions {
   @js.native
   val RESET_ : NavigationSlashRESET = js.native
   
-  @JSImport("react-navigation", "StackActions.completeTransition")
-  @js.native
-  def completeTransition(): NavigationCompleteTransitionAction = js.native
-  @JSImport("react-navigation", "StackActions.completeTransition")
-  @js.native
-  def completeTransition(payload: NavigationCompleteTransitionActionPayload): NavigationCompleteTransitionAction = js.native
+  @scala.inline
+  def completeTransition(): NavigationCompleteTransitionAction = ^.asInstanceOf[js.Dynamic].applyDynamic("completeTransition")().asInstanceOf[NavigationCompleteTransitionAction]
+  @scala.inline
+  def completeTransition(payload: NavigationCompleteTransitionActionPayload): NavigationCompleteTransitionAction = ^.asInstanceOf[js.Dynamic].applyDynamic("completeTransition")(payload.asInstanceOf[js.Any]).asInstanceOf[NavigationCompleteTransitionAction]
   
-  @JSImport("react-navigation", "StackActions.pop")
-  @js.native
-  def pop(): NavigationPopAction = js.native
-  @JSImport("react-navigation", "StackActions.pop")
-  @js.native
-  def pop(options: NavigationPopActionPayload): NavigationPopAction = js.native
+  @scala.inline
+  def pop(): NavigationPopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")().asInstanceOf[NavigationPopAction]
+  @scala.inline
+  def pop(options: NavigationPopActionPayload): NavigationPopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("pop")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationPopAction]
   
-  @JSImport("react-navigation", "StackActions.popToTop")
-  @js.native
-  def popToTop(): NavigationPopToTopAction = js.native
-  @JSImport("react-navigation", "StackActions.popToTop")
-  @js.native
-  def popToTop(options: NavigationPopToTopActionPayload): NavigationPopToTopAction = js.native
+  @scala.inline
+  def popToTop(): NavigationPopToTopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")().asInstanceOf[NavigationPopToTopAction]
+  @scala.inline
+  def popToTop(options: NavigationPopToTopActionPayload): NavigationPopToTopAction = ^.asInstanceOf[js.Dynamic].applyDynamic("popToTop")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationPopToTopAction]
   
-  @JSImport("react-navigation", "StackActions.push")
-  @js.native
-  def push(options: NavigationPushActionPayload): NavigationPushAction = js.native
+  @scala.inline
+  def push(options: NavigationPushActionPayload): NavigationPushAction = ^.asInstanceOf[js.Dynamic].applyDynamic("push")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationPushAction]
   
-  @JSImport("react-navigation", "StackActions.replace")
-  @js.native
-  def replace(options: NavigationReplaceActionPayload): NavigationReplaceAction = js.native
+  @scala.inline
+  def replace(options: NavigationReplaceActionPayload): NavigationReplaceAction = ^.asInstanceOf[js.Dynamic].applyDynamic("replace")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationReplaceAction]
   
-  @JSImport("react-navigation", "StackActions.reset")
-  @js.native
-  def reset(options: NavigationResetActionPayload): NavigationResetAction = js.native
+  @scala.inline
+  def reset(options: NavigationResetActionPayload): NavigationResetAction = ^.asInstanceOf[js.Dynamic].applyDynamic("reset")(options.asInstanceOf[js.Any]).asInstanceOf[NavigationResetAction]
 }

@@ -12,15 +12,16 @@ import typings.mysql.mysqlStrings.fields
 import typings.mysql.mysqlStrings.protocol_error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Connection extends EscapeFunctions {
+trait Connection
+  extends StObject
+     with EscapeFunctions {
   
   def beginTransaction(): Unit = js.native
   def beginTransaction(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
-  def beginTransaction(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def beginTransaction(options: Unit, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def beginTransaction(options: QueryOptions): Unit = js.native
   def beginTransaction(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   
@@ -30,7 +31,7 @@ trait Connection extends EscapeFunctions {
   
   def commit(): Unit = js.native
   def commit(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
-  def commit(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def commit(options: Unit, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def commit(options: QueryOptions): Unit = js.native
   def commit(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   
@@ -94,7 +95,7 @@ trait Connection extends EscapeFunctions {
   @JSName("on")
   def on_error(ev: error, callback: js.Function1[/* err */ MysqlError, Unit]): Connection = js.native
   @JSName("on")
-  def on_fields(ev: fields, callback: js.Function1[/* fields */ js.Array[_], Unit]): Connection = js.native
+  def on_fields(ev: fields, callback: js.Function1[/* fields */ js.Array[js.Any], Unit]): Connection = js.native
   
   /**
     * Pause the connection. No more 'result' events will fire until resume() is
@@ -104,7 +105,7 @@ trait Connection extends EscapeFunctions {
   
   def ping(): Unit = js.native
   def ping(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
-  def ping(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def ping(options: Unit, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def ping(options: QueryOptions): Unit = js.native
   def ping(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   
@@ -127,7 +128,7 @@ trait Connection extends EscapeFunctions {
   
   def rollback(): Unit = js.native
   def rollback(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
-  def rollback(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def rollback(options: Unit, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def rollback(options: QueryOptions): Unit = js.native
   def rollback(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   
@@ -135,7 +136,7 @@ trait Connection extends EscapeFunctions {
   
   def statistics(): Unit = js.native
   def statistics(callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
-  def statistics(options: js.UndefOr[scala.Nothing], callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
+  def statistics(options: Unit, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   def statistics(options: QueryOptions): Unit = js.native
   def statistics(options: QueryOptions, callback: js.Function1[/* err */ MysqlError, Unit]): Unit = js.native
   

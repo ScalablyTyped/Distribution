@@ -6,20 +6,26 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](query: Query[T]): ReadWriteStream = ^.asInstanceOf[js.Dynamic].apply(query.asInstanceOf[js.Any]).asInstanceOf[ReadWriteStream]
+  
   @JSImport("jsonquery", JSImport.Namespace)
   @js.native
-  def apply[T](query: Query[T]): ReadWriteStream = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait AndQueryCondition[T] extends BinaryQueryCondition[T] {
+  @scala.inline
+  def `match`[T](haystack: T, predicate: Query[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("match")(haystack.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  trait AndQueryCondition[T]
+    extends StObject
+       with BinaryQueryCondition[T] {
     
     @JSName("$and")
-    var $and: js.Array[Query[T]] = js.native
+    var $and: js.Array[Query[T]]
   }
   object AndQueryCondition {
     
@@ -30,7 +36,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AndQueryConditionMutableBuilder[Self <: AndQueryCondition[_], T] (val x: Self with AndQueryCondition[T]) extends AnyVal {
+    implicit class AndQueryConditionMutableBuilder[Self <: AndQueryCondition[?], T] (val x: Self & AndQueryCondition[T]) extends AnyVal {
       
       @scala.inline
       def set$and(value: js.Array[Query[T]]): Self = StObject.set(x, "$and", value.asInstanceOf[js.Any])
@@ -40,38 +46,37 @@ object mod {
     }
   }
   
-  @js.native
   trait BaseCondition[P] extends StObject {
     
     @JSName("$all")
-    var $all: js.Array[P] = js.native
+    var $all: js.Array[P]
     
     @JSName("$elemMatch")
-    var $elemMatch: Partial[P] = js.native
+    var $elemMatch: Partial[P]
     
     @JSName("$gt")
-    var $gt: P = js.native
+    var $gt: P
     
     @JSName("$gte")
-    var $gte: P = js.native
+    var $gte: P
     
     @JSName("$in")
-    var $in: js.Array[P] = js.native
+    var $in: js.Array[P]
     
     @JSName("$lt")
-    var $lt: P = js.native
+    var $lt: P
     
     @JSName("$lte")
-    var $lte: P = js.native
+    var $lte: P
     
     @JSName("$mod")
-    var $mod: js.Tuple2[Double, Double] = js.native
+    var $mod: js.Tuple2[Double, Double]
     
     @JSName("$ne")
-    var $ne: P = js.native
+    var $ne: P
     
     @JSName("$nin")
-    var $nin: js.Array[P] = js.native
+    var $nin: js.Array[P]
   }
   object BaseCondition {
     
@@ -93,7 +98,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class BaseConditionMutableBuilder[Self <: BaseCondition[_], P] (val x: Self with BaseCondition[P]) extends AnyVal {
+    implicit class BaseConditionMutableBuilder[Self <: BaseCondition[?], P] (val x: Self & BaseCondition[P]) extends AnyVal {
       
       @scala.inline
       def set$all(value: js.Array[P]): Self = StObject.set(x, "$all", value.asInstanceOf[js.Any])
@@ -156,11 +161,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait OrQueryCondition[T] extends BinaryQueryCondition[T] {
+  trait OrQueryCondition[T]
+    extends StObject
+       with BinaryQueryCondition[T] {
     
     @JSName("$or")
-    var $or: js.Array[Query[T]] = js.native
+    var $or: js.Array[Query[T]]
   }
   object OrQueryCondition {
     
@@ -171,7 +177,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OrQueryConditionMutableBuilder[Self <: OrQueryCondition[_], T] (val x: Self with OrQueryCondition[T]) extends AnyVal {
+    implicit class OrQueryConditionMutableBuilder[Self <: OrQueryCondition[?], T] (val x: Self & OrQueryCondition[T]) extends AnyVal {
       
       @scala.inline
       def set$or(value: js.Array[Query[T]]): Self = StObject.set(x, "$or", value.asInstanceOf[js.Any])
@@ -187,9 +193,5 @@ object mod {
   
   type QueryValue[T] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? T[P] | jsonquery.jsonquery.BaseCondition<T[P]>}
-    */ typings.jsonquery.jsonqueryStrings.QueryValue with TopLevel[js.Any]
-  
-  @JSImport("jsonquery", "match")
-  @js.native
-  def `match`[T](haystack: T, predicate: Query[T]): Boolean = js.native
+    */ typings.jsonquery.jsonqueryStrings.QueryValue & TopLevel[js.Any]
 }

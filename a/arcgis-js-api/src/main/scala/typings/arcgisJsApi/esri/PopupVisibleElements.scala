@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PopupVisibleElements extends Object {
+trait PopupVisibleElements
+  extends StObject
+     with Object {
   
   /**
     * Indicates whether to display a close button on the popup dialog.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#VisibleElements)
     */
-  var closeButton: js.UndefOr[Boolean] = js.native
+  var closeButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether to the feature navigation will be displayed.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Popup.html#VisibleElements)
     */
-  var featureNavigation: js.UndefOr[Boolean] = js.native
+  var featureNavigation: js.UndefOr[Boolean] = js.undefined
 }
 object PopupVisibleElements {
   

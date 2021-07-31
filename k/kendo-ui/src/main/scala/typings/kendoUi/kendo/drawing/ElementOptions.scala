@@ -3,23 +3,21 @@ package typings.kendoUi.kendo.drawing
 import typings.kendoUi.kendo.geometry.Transformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElementOptions extends StObject {
   
-  var clip: js.UndefOr[Path] = js.native
+  var clip: js.UndefOr[Path] = js.undefined
   
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var transform: js.UndefOr[Transformation] = js.native
+  var transform: js.UndefOr[Transformation] = js.undefined
   
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object ElementOptions {
   

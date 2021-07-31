@@ -2,16 +2,14 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForResourcesResponse extends StObject {
   
   /**
     * A list of ResourceTagSets containing tags associated with the specified resources.
     */
-  var ResourceTagSets: ResourceTagSetList = js.native
+  var ResourceTagSets: ResourceTagSetList
 }
 object ListTagsForResourcesResponse {
   

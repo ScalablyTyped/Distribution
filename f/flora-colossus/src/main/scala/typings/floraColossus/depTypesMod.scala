@@ -6,10 +6,13 @@ import typings.floraColossus.depTypesMod.DepType.OPTIONAL
 import typings.floraColossus.depTypesMod.DepType.PROD
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object depTypesMod {
+  
+  @JSImport("flora-colossus/lib/depTypes", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait DepType extends StObject
@@ -18,34 +21,42 @@ object depTypesMod {
   object DepType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[DepType with Double] = js.native
+    def apply(value: Double): js.UndefOr[DepType & Double] = js.native
     
     @js.native
-    sealed trait DEV extends DepType
-    /* 1 */ val DEV: typings.floraColossus.depTypesMod.DepType.DEV with Double = js.native
+    sealed trait DEV
+      extends StObject
+         with DepType
+    /* 1 */ val DEV: typings.floraColossus.depTypesMod.DepType.DEV & Double = js.native
     
     @js.native
-    sealed trait DEV_OPTIONAL extends DepType
-    /* 3 */ val DEV_OPTIONAL: typings.floraColossus.depTypesMod.DepType.DEV_OPTIONAL with Double = js.native
+    sealed trait DEV_OPTIONAL
+      extends StObject
+         with DepType
+    /* 3 */ val DEV_OPTIONAL: typings.floraColossus.depTypesMod.DepType.DEV_OPTIONAL & Double = js.native
     
     @js.native
-    sealed trait OPTIONAL extends DepType
-    /* 2 */ val OPTIONAL: typings.floraColossus.depTypesMod.DepType.OPTIONAL with Double = js.native
+    sealed trait OPTIONAL
+      extends StObject
+         with DepType
+    /* 2 */ val OPTIONAL: typings.floraColossus.depTypesMod.DepType.OPTIONAL & Double = js.native
     
     @js.native
-    sealed trait PROD extends DepType
-    /* 0 */ val PROD: typings.floraColossus.depTypesMod.DepType.PROD with Double = js.native
+    sealed trait PROD
+      extends StObject
+         with DepType
+    /* 0 */ val PROD: typings.floraColossus.depTypesMod.DepType.PROD & Double = js.native
     
     @js.native
-    sealed trait ROOT extends DepType
-    /* 4 */ val ROOT: typings.floraColossus.depTypesMod.DepType.ROOT with Double = js.native
+    sealed trait ROOT
+      extends StObject
+         with DepType
+    /* 4 */ val ROOT: typings.floraColossus.depTypesMod.DepType.ROOT & Double = js.native
   }
   
-  @JSImport("flora-colossus/lib/depTypes", "childDepType")
-  @js.native
-  def childDepType(parentType: DepType, childType: DepType): PROD | DEV | OPTIONAL | DEV_OPTIONAL = js.native
+  @scala.inline
+  def childDepType(parentType: DepType, childType: DepType): PROD | DEV | OPTIONAL | DEV_OPTIONAL = (^.asInstanceOf[js.Dynamic].applyDynamic("childDepType")(parentType.asInstanceOf[js.Any], childType.asInstanceOf[js.Any])).asInstanceOf[PROD | DEV | OPTIONAL | DEV_OPTIONAL]
   
-  @JSImport("flora-colossus/lib/depTypes", "depTypeGreater")
-  @js.native
-  def depTypeGreater(newType: DepType, existing: DepType): Boolean = js.native
+  @scala.inline
+  def depTypeGreater(newType: DepType, existing: DepType): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("depTypeGreater")(newType.asInstanceOf[js.Any], existing.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

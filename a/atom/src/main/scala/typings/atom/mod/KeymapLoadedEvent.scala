@@ -2,14 +2,12 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeymapLoadedEvent extends StObject {
   
   /** The path of the keymap file. */
-  var path: String = js.native
+  var path: String
 }
 object KeymapLoadedEvent {
   

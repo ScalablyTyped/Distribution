@@ -2,15 +2,15 @@ package typings.typescriptServices.TypeScript
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISwitchClauseSyntax extends ISyntaxNodeOrToken {
+trait ISwitchClauseSyntax
+  extends StObject
+     with ISyntaxNodeOrToken {
   
-  def isSwitchClause(): Boolean = js.native
+  def isSwitchClause(): Boolean
   
-  var statements: ISyntaxList = js.native
+  var statements: ISyntaxList
 }
 object ISwitchClauseSyntax {
   

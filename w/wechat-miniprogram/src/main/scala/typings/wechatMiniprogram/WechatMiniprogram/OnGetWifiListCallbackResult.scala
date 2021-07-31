@@ -2,14 +2,12 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnGetWifiListCallbackResult extends StObject {
   
   /** Wi-Fi 列表数据 */
-  var wifiList: js.Array[WifiInfo] = js.native
+  var wifiList: js.Array[WifiInfo]
 }
 object OnGetWifiListCallbackResult {
   

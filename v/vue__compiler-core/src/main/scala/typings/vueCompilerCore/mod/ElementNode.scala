@@ -1,12 +1,7 @@
 package typings.vueCompilerCore.mod
 
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`0`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`1`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`2`
-import typings.vueCompilerCore.vueCompilerCoreNumbers.`3`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -16,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.vueCompilerCore.mod.TemplateNode
 */
 trait ElementNode
-  extends TemplateChildNode
+  extends StObject
      with ParentNode2
+     with TemplateChildNode
 object ElementNode {
   
   @scala.inline
@@ -27,12 +23,10 @@ object ElementNode {
     loc: SourceLocation,
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
-    tag: String,
-    tagType: `1`,
-    `type`: `1`
+    tag: String
   ): typings.vueCompilerCore.mod.ComponentNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = 1)
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.ComponentNode]
   }
   
@@ -43,12 +37,10 @@ object ElementNode {
     loc: SourceLocation,
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
-    tag: String,
-    tagType: `0`,
-    `type`: `1`
+    tag: String
   ): typings.vueCompilerCore.mod.PlainElementNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = 0)
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.PlainElementNode]
   }
   
@@ -59,28 +51,25 @@ object ElementNode {
     loc: SourceLocation,
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
-    tag: String,
-    tagType: `2`,
-    `type`: `1`
+    tag: String
   ): typings.vueCompilerCore.mod.SlotOutletNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = 2)
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.SlotOutletNode]
   }
   
   @scala.inline
   def TemplateNode(
     children: js.Array[TemplateChildNode],
+    codegenNode: Unit,
     isSelfClosing: Boolean,
     loc: SourceLocation,
     ns: Namespace,
     props: js.Array[AttributeNode | DirectiveNode],
-    tag: String,
-    tagType: `3`,
-    `type`: `1`
+    tag: String
   ): typings.vueCompilerCore.mod.TemplateNode = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = tagType.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], codegenNode = codegenNode.asInstanceOf[js.Any], isSelfClosing = isSelfClosing.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], props = props.asInstanceOf[js.Any], tag = tag.asInstanceOf[js.Any], tagType = 3)
+    __obj.updateDynamic("type")(1)
     __obj.asInstanceOf[typings.vueCompilerCore.mod.TemplateNode]
   }
 }

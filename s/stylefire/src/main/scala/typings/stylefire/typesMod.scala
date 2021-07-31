@@ -4,25 +4,23 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type ChangedValues = js.Array[String]
   
-  @js.native
   trait Config extends StObject {
     
-    var aliasMap: js.UndefOr[StringDictionary[String]] = js.native
+    var aliasMap: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    def onRead(key: String, props: Props): js.Any = js.native
+    def onRead(key: String, props: Props): js.Any
     
-    def onRender(state: State, props: Props, changedValues: ChangedValues): Unit = js.native
+    def onRender(state: State, props: Props, changedValues: ChangedValues): Unit
     
-    var uncachedValues: js.UndefOr[Set[String]] = js.native
+    var uncachedValues: js.UndefOr[Set[String]] = js.undefined
     
-    var useCache: js.UndefOr[Boolean] = js.native
+    var useCache: js.UndefOr[Boolean] = js.undefined
   }
   object Config {
     

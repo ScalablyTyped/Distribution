@@ -11,7 +11,6 @@ import typings.winrtUwp.winrtUwpStrings.requestsent
 import typings.winrtUwp.winrtUwpStrings.responsereceived
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides a diagnostic facility for tracing and profiling web traffic for applications build on HTTP protocols. */
@@ -26,50 +25,70 @@ object Diagnostics {
     
     /** An HTML download. */
     @js.native
-    sealed trait htmlDownload extends HttpDiagnosticRequestInitiator
+    sealed trait htmlDownload
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** An image resource. */
     @js.native
-    sealed trait image extends HttpDiagnosticRequestInitiator
+    sealed trait image
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** A link. */
     @js.native
-    sealed trait link extends HttpDiagnosticRequestInitiator
+    sealed trait link
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** A media resource. */
     @js.native
-    sealed trait media extends HttpDiagnosticRequestInitiator
+    sealed trait media
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** An other resource. */
     @js.native
-    sealed trait other extends HttpDiagnosticRequestInitiator
+    sealed trait other
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** A parsed element. */
     @js.native
-    sealed trait parsedElement extends HttpDiagnosticRequestInitiator
+    sealed trait parsedElement
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** A pre-fetch request. */
     @js.native
-    sealed trait prefetch extends HttpDiagnosticRequestInitiator
+    sealed trait prefetch
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** A script resource. */
     @js.native
-    sealed trait script extends HttpDiagnosticRequestInitiator
+    sealed trait script
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** A CSS element. */
     @js.native
-    sealed trait style extends HttpDiagnosticRequestInitiator
+    sealed trait style
+      extends StObject
+         with HttpDiagnosticRequestInitiator
     
     /** An XML HTTP request. */
     @js.native
-    sealed trait xmlHttpRequest extends HttpDiagnosticRequestInitiator
+    sealed trait xmlHttpRequest
+      extends StObject
+         with HttpDiagnosticRequestInitiator
   }
   
   /** Provides a simple diagnostic facility for tracing and profiling web traffic in applications built on Microsoft’s HTTP stacks. */
   @js.native
   trait HttpDiagnosticProvider extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_requestresponsecompleted(
       `type`: requestresponsecompleted,
@@ -87,26 +106,24 @@ object Diagnostics {
     ): Unit = js.native
     
     /** Subscribe to the RequestResponseCompleted event to receive a notification that a request has been submitted. */
-    def onrequestresponsecompleted(
-      ev: HttpDiagnosticProviderRequestResponseCompletedEventArgs with WinRTEvent[HttpDiagnosticProvider]
-    ): Unit = js.native
+    def onrequestresponsecompleted(ev: HttpDiagnosticProviderRequestResponseCompletedEventArgs & WinRTEvent[HttpDiagnosticProvider]): Unit = js.native
     /** Subscribe to the RequestResponseCompleted event to receive a notification that a request has been submitted. */
     @JSName("onrequestresponsecompleted")
     var onrequestresponsecompleted_Original: TypedEventHandler[HttpDiagnosticProvider, HttpDiagnosticProviderRequestResponseCompletedEventArgs] = js.native
     
     /** Subscribe to the RequestSent event to receive a notification that a request has been sent. */
-    def onrequestsent(ev: HttpDiagnosticProviderRequestSentEventArgs with WinRTEvent[HttpDiagnosticProvider]): Unit = js.native
+    def onrequestsent(ev: HttpDiagnosticProviderRequestSentEventArgs & WinRTEvent[HttpDiagnosticProvider]): Unit = js.native
     /** Subscribe to the RequestSent event to receive a notification that a request has been sent. */
     @JSName("onrequestsent")
     var onrequestsent_Original: TypedEventHandler[HttpDiagnosticProvider, HttpDiagnosticProviderRequestSentEventArgs] = js.native
     
     /** Subscribe to the ResponseReceived event to receive a notification that a response has been received. */
-    def onresponsereceived(ev: HttpDiagnosticProviderResponseReceivedEventArgs with WinRTEvent[HttpDiagnosticProvider]): Unit = js.native
+    def onresponsereceived(ev: HttpDiagnosticProviderResponseReceivedEventArgs & WinRTEvent[HttpDiagnosticProvider]): Unit = js.native
     /** Subscribe to the ResponseReceived event to receive a notification that a response has been received. */
     @JSName("onresponsereceived")
     var onresponsereceived_Original: TypedEventHandler[HttpDiagnosticProvider, HttpDiagnosticProviderResponseReceivedEventArgs] = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_requestresponsecompleted(
       `type`: requestresponsecompleted,
@@ -131,29 +148,28 @@ object Diagnostics {
   }
   
   /** Provides data for the RequestResponseCompleted event. */
-  @js.native
   trait HttpDiagnosticProviderRequestResponseCompletedEventArgs extends StObject {
     
     /** Gets a locally unique ID for this activity, for correlating with other events. */
-    var activityId: String = js.native
+    var activityId: String
     
     /** Gets the type of operation initiating this request. */
-    var initiator: HttpDiagnosticRequestInitiator = js.native
+    var initiator: HttpDiagnosticRequestInitiator
     
-    var processId: js.Any = js.native
+    var processId: js.Any
     
     /* unmapped type */
     /** Gets the URI of the requested response. */
-    var requestedUri: Uri = js.native
+    var requestedUri: Uri
     
-    var sourceLocations: js.Any = js.native
+    var sourceLocations: js.Any
     
     /* unmapped type */
-    var threadId: js.Any = js.native
+    var threadId: js.Any
     
     /* unmapped type */
     /** Gets the timestamp for connection events. */
-    var timestamps: HttpDiagnosticProviderRequestResponseTimestamps = js.native
+    var timestamps: HttpDiagnosticProviderRequestResponseTimestamps
   }
   object HttpDiagnosticProviderRequestResponseCompletedEventArgs {
     
@@ -198,35 +214,34 @@ object Diagnostics {
   }
   
   /** Provides all the timestamps for connection events. */
-  @js.native
   trait HttpDiagnosticProviderRequestResponseTimestamps extends StObject {
     
     /** Gets the last time local cache was checked. */
-    var cacheCheckedTimestamp: Date = js.native
+    var cacheCheckedTimestamp: Date
     
     /** Gets the timestamp for the end of the TCP connection phase. */
-    var connectionCompletedTimestamp: Date = js.native
+    var connectionCompletedTimestamp: Date
     
     /** Gets the timestamp for the start of the TCP connection phase. */
-    var connectionInitiatedTimestamp: Date = js.native
+    var connectionInitiatedTimestamp: Date
     
     /** Gets the time of the DNS name resolution. */
-    var nameResolvedTimestamp: Date = js.native
+    var nameResolvedTimestamp: Date
     
     /** Gets the timestamp for the last byte sent. */
-    var requestCompletedTimestamp: Date = js.native
+    var requestCompletedTimestamp: Date
     
     /** Gets the timestamp for the first byte sent. */
-    var requestSentTimestamp: Date = js.native
+    var requestSentTimestamp: Date
     
     /** Gets the timestamp for the last byte received. */
-    var responseCompletedTimestamp: Date = js.native
+    var responseCompletedTimestamp: Date
     
     /** Gets the timestamp for the fir byte received. */
-    var responseReceivedTimestamp: Date = js.native
+    var responseReceivedTimestamp: Date
     
     /** Gets the time of the SSL handshake negotiation. */
-    var sslNegotiatedTimestamp: Date = js.native
+    var sslNegotiatedTimestamp: Date
   }
   object HttpDiagnosticProviderRequestResponseTimestamps {
     
@@ -279,29 +294,28 @@ object Diagnostics {
   }
   
   /** Provides data for the RequestSent event. */
-  @js.native
   trait HttpDiagnosticProviderRequestSentEventArgs extends StObject {
     
     /** Gets a locally unique ID for this activity, for correlating with other events. */
-    var activityId: String = js.native
+    var activityId: String
     
     /** Gets the type of operation initiating this request. */
-    var initiator: HttpDiagnosticRequestInitiator = js.native
+    var initiator: HttpDiagnosticRequestInitiator
     
     /** Gets the HttpRequestMessage including headers. */
-    var message: HttpRequestMessage = js.native
+    var message: HttpRequestMessage
     
     /** Gets the process ID. */
-    var processId: Double = js.native
+    var processId: Double
     
     /** Gets the source location call stack. */
-    var sourceLocations: IVectorView[HttpDiagnosticSourceLocation] = js.native
+    var sourceLocations: IVectorView[HttpDiagnosticSourceLocation]
     
     /** Gets the thread ID. */
-    var threadId: Double = js.native
+    var threadId: Double
     
     /** Gets the timestamp of when the HttpRequestMessage was sent. */
-    var timestamp: Date = js.native
+    var timestamp: Date
   }
   object HttpDiagnosticProviderRequestSentEventArgs {
     
@@ -346,17 +360,16 @@ object Diagnostics {
   }
   
   /** Provides data for the ResponseReceived event. */
-  @js.native
   trait HttpDiagnosticProviderResponseReceivedEventArgs extends StObject {
     
     /** Gets a locally unique ID for this activity, for correlating with other events. */
-    var activityId: String = js.native
+    var activityId: String
     
     /** Gets the HttpResponseMessage including headers, the status code, and data. */
-    var message: HttpResponseMessage = js.native
+    var message: HttpResponseMessage
     
     /** Gets the timestamp of when the HttpResponseMessage was received. */
-    var timestamp: Date = js.native
+    var timestamp: Date
   }
   object HttpDiagnosticProviderResponseReceivedEventArgs {
     
@@ -381,17 +394,16 @@ object Diagnostics {
   }
   
   /** Contains the source location of the HTTP activity. */
-  @js.native
   trait HttpDiagnosticSourceLocation extends StObject {
     
     /** Gets the column number. */
-    var columnNumber: Double = js.native
+    var columnNumber: Double
     
     /** Gets the line number. */
-    var lineNumber: Double = js.native
+    var lineNumber: Double
     
     /** Gets the source URI. */
-    var sourceUri: Uri = js.native
+    var sourceUri: Uri
   }
   object HttpDiagnosticSourceLocation {
     

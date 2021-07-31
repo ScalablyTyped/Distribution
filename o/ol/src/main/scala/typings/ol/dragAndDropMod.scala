@@ -9,7 +9,6 @@ import typings.std.File
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dragAndDropMod {
@@ -27,7 +26,9 @@ object dragAndDropMod {
   object DragAndDropEventType extends StObject {
     
     @js.native
-    sealed trait ADD_FEATURES extends DragAndDropEventType
+    sealed trait ADD_FEATURES
+      extends StObject
+         with DragAndDropEventType
   }
   
   @js.native
@@ -68,16 +69,15 @@ object dragAndDropMod {
     var projection: typings.ol.projectionMod.default = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var formatConstructors: js.UndefOr[js.Array[typings.ol.featureMod.default]] = js.native
+    var formatConstructors: js.UndefOr[js.Array[typings.ol.featureMod.default]] = js.undefined
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.native
+    var source: js.UndefOr[typings.ol.sourceVectorMod.default[typings.ol.geometryMod.default]] = js.undefined
     
-    var target: js.UndefOr[HTMLElement] = js.native
+    var target: js.UndefOr[HTMLElement] = js.undefined
   }
   object Options {
     

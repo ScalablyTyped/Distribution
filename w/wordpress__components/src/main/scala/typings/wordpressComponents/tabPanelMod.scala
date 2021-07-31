@@ -9,7 +9,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.horizontal
 import typings.wordpressComponents.wordpressComponentsStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabPanelMod {
@@ -28,47 +27,46 @@ object tabPanelMod {
   
   object TabPanel {
     
-    @js.native
     trait Props extends StObject {
       
       /**
         * The class to add to the active tab.
         * @defaultValue "is-active"
         */
-      var activeClass: js.UndefOr[String] = js.native
+      var activeClass: js.UndefOr[String] = js.undefined
       
       /**
         * A function which renders the tabviews given the selected tab. The
         * function is passed the active tab object as an argument as defined
         * the the tabs prop. The element to which the tooltip should anchor.
         */
-      def children(tab: Tab): Element = js.native
+      def children(tab: Tab): Element
       
       /**
         * The class to give to the outer container for the `TabPanel`.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Optionally provide a tab name for a tab to be selected upon mounting
         * of component. If this prop is not set, the first tab will be
         * selected by default.
         */
-      var initialTabName: js.UndefOr[String] = js.native
+      var initialTabName: js.UndefOr[String] = js.undefined
       
       /**
         * The function called when a tab has been selected. It is passed the
         * `tabName` as an argument.
         */
-      var onSelect: js.UndefOr[js.Function1[/* tabName */ String, Unit]] = js.native
+      var onSelect: js.UndefOr[js.Function1[/* tabName */ String, Unit]] = js.undefined
       
       /**
         * The orientation of the tablist.
         * @defaultValue "horizontal"
         */
-      var orientation: js.UndefOr[horizontal | vertical] = js.native
+      var orientation: js.UndefOr[horizontal | vertical] = js.undefined
       
-      var tabs: js.Array[Tab] = js.native
+      var tabs: js.Array[Tab]
     }
     object Props {
       
@@ -122,9 +120,9 @@ object tabPanelMod {
       }
     }
     
-    @js.native
     trait Tab
-      extends /**
+      extends StObject
+         with /**
       * Other fields may be added to the object and accessed from the child
       * function if desired.
       */
@@ -133,17 +131,17 @@ object tabPanelMod {
       /**
         * Defines the class to put on the tab.
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
       /**
         * Defines the key for the tab.
         */
-      var name: String = js.native
+      var name: String
       
       /**
         * Defines the translated text for the tab.
         */
-      var title: String = js.native
+      var title: String
     }
     object Tab {
       

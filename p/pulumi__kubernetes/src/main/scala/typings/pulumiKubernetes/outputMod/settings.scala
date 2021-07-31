@@ -9,7 +9,6 @@ import typings.pulumiKubernetes.outputMod.meta.v1.ObjectMeta
 import typings.pulumiKubernetes.pulumiKubernetesStrings.settingsDotk8sDotioSlashv1alpha1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settings {
@@ -19,33 +18,27 @@ object settings {
     /**
       * PodPreset is a policy resource that defines additional runtime requirements for a Pod.
       */
-    @js.native
     trait PodPreset extends StObject {
       
       /**
         * APIVersion defines the versioned schema of this representation of an object. Servers should convert recognized schemas to the latest internal value, and may reject unrecognized values. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#resources
         */
-      var apiVersion: settingsDotk8sDotioSlashv1alpha1 = js.native
+      var apiVersion: settingsDotk8sDotioSlashv1alpha1
       
       /**
         * Kind is a string value representing the REST resource this object represents. Servers may infer this from the endpoint the client submits requests to. Cannot be updated. In CamelCase. More info: https://git.k8s.io/community/contributors/devel/sig-architecture/api-conventions.md#types-kinds
         */
-      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.PodPreset = js.native
+      var kind: typings.pulumiKubernetes.pulumiKubernetesStrings.PodPreset
       
-      var metadata: ObjectMeta = js.native
+      var metadata: ObjectMeta
       
-      var spec: PodPresetSpec = js.native
+      var spec: PodPresetSpec
     }
     object PodPreset {
       
       @scala.inline
-      def apply(
-        apiVersion: settingsDotk8sDotioSlashv1alpha1,
-        kind: typings.pulumiKubernetes.pulumiKubernetesStrings.PodPreset,
-        metadata: ObjectMeta,
-        spec: PodPresetSpec
-      ): PodPreset = {
-        val __obj = js.Dynamic.literal(apiVersion = apiVersion.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
+      def apply(metadata: ObjectMeta, spec: PodPresetSpec): PodPreset = {
+        val __obj = js.Dynamic.literal(apiVersion = "settings.k8s.io/v1alpha1", kind = "PodPreset", metadata = metadata.asInstanceOf[js.Any], spec = spec.asInstanceOf[js.Any])
         __obj.asInstanceOf[PodPreset]
       }
       
@@ -69,33 +62,32 @@ object settings {
     /**
       * PodPresetSpec is a description of a pod preset.
       */
-    @js.native
     trait PodPresetSpec extends StObject {
       
       /**
         * Env defines the collection of EnvVar to inject into containers.
         */
-      var env: js.Array[EnvVar] = js.native
+      var env: js.Array[EnvVar]
       
       /**
         * EnvFrom defines the collection of EnvFromSource to inject into containers.
         */
-      var envFrom: js.Array[EnvFromSource] = js.native
+      var envFrom: js.Array[EnvFromSource]
       
       /**
         * Selector is a label query over a set of resources, in this case pods. Required.
         */
-      var selector: LabelSelector = js.native
+      var selector: LabelSelector
       
       /**
         * VolumeMounts defines the collection of VolumeMount to inject into containers.
         */
-      var volumeMounts: js.Array[VolumeMount] = js.native
+      var volumeMounts: js.Array[VolumeMount]
       
       /**
         * Volumes defines the collection of Volume to inject into the pod.
         */
-      var volumes: js.Array[Volume] = js.native
+      var volumes: js.Array[Volume]
     }
     object PodPresetSpec {
       

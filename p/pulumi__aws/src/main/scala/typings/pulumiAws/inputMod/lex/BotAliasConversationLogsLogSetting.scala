@@ -3,36 +3,34 @@ package typings.pulumiAws.inputMod.lex
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BotAliasConversationLogsLogSetting extends StObject {
   
   /**
     * The destination where logs are delivered. Options are `CLOUDWATCH_LOGS` or `S3`.
     */
-  var destination: Input[String] = js.native
+  var destination: Input[String]
   
   /**
     * The Amazon Resource Name (ARN) of the key used to encrypt audio logs in an S3 bucket. This can only be specified when `destination` is set to `S3`. Must be between 20 and 2048 characters in length.
     */
-  var kmsKeyArn: js.UndefOr[Input[String]] = js.native
+  var kmsKeyArn: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The type of logging that is enabled. Options are `AUDIO` or `TEXT`.
     */
-  var logType: Input[String] = js.native
+  var logType: Input[String]
   
   /**
     * The Amazon Resource Name (ARN) of the CloudWatch Logs log group or S3 bucket where the logs are delivered. Must be less than or equal to 2048 characters in length.
     */
-  var resourceArn: Input[String] = js.native
+  var resourceArn: Input[String]
   
   /**
     * The prefix of the S3 object key for `AUDIO` logs or the log stream name for `TEXT` logs.
     */
-  var resourcePrefix: js.UndefOr[Input[String]] = js.native
+  var resourcePrefix: js.UndefOr[Input[String]] = js.undefined
 }
 object BotAliasConversationLogsLogSetting {
   

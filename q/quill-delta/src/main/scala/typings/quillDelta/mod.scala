@@ -3,76 +3,59 @@ package typings.quillDelta
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("quill-delta/dist/AttributeMap", "default.compose")
+    @JSImport("quill-delta/dist/AttributeMap", JSImport.Default)
     @js.native
-    def compose(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], keepNull: Boolean): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.compose")
-    @js.native
-    def compose(a: js.UndefOr[scala.Nothing], b: AttributeMap, keepNull: Boolean): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.compose")
-    @js.native
-    def compose(a: AttributeMap, b: js.UndefOr[scala.Nothing], keepNull: Boolean): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.compose")
-    @js.native
-    def compose(a: AttributeMap, b: AttributeMap, keepNull: Boolean): js.UndefOr[AttributeMap] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("quill-delta/dist/AttributeMap", "default.diff")
-    @js.native
-    def diff(): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.diff")
-    @js.native
-    def diff(a: js.UndefOr[scala.Nothing], b: AttributeMap): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.diff")
-    @js.native
-    def diff(a: AttributeMap): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.diff")
-    @js.native
-    def diff(a: AttributeMap, b: AttributeMap): js.UndefOr[AttributeMap] = js.native
+    @scala.inline
+    def compose(a: Unit, b: Unit, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def compose(a: Unit, b: AttributeMap, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def compose(a: AttributeMap, b: Unit, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def compose(a: AttributeMap, b: AttributeMap, keepNull: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("compose")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], keepNull.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
     
-    @JSImport("quill-delta/dist/AttributeMap", "default.invert")
-    @js.native
-    def invert(): AttributeMap = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.invert")
-    @js.native
-    def invert(attr: js.UndefOr[scala.Nothing], base: AttributeMap): AttributeMap = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.invert")
-    @js.native
-    def invert(attr: AttributeMap): AttributeMap = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.invert")
-    @js.native
-    def invert(attr: AttributeMap, base: AttributeMap): AttributeMap = js.native
+    @scala.inline
+    def diff(): js.UndefOr[AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")().asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def diff(a: Unit, b: AttributeMap): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def diff(a: AttributeMap): js.UndefOr[AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def diff(a: AttributeMap, b: AttributeMap): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("diff")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
     
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(a: js.UndefOr[scala.Nothing], b: js.UndefOr[scala.Nothing], priority: Boolean): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(a: js.UndefOr[scala.Nothing], b: AttributeMap): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(a: js.UndefOr[scala.Nothing], b: AttributeMap, priority: Boolean): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(a: AttributeMap): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(a: AttributeMap, b: js.UndefOr[scala.Nothing], priority: Boolean): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(a: AttributeMap, b: AttributeMap): js.UndefOr[AttributeMap] = js.native
-    @JSImport("quill-delta/dist/AttributeMap", "default.transform")
-    @js.native
-    def transform(a: AttributeMap, b: AttributeMap, priority: Boolean): js.UndefOr[AttributeMap] = js.native
+    @scala.inline
+    def invert(): AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")().asInstanceOf[AttributeMap]
+    @scala.inline
+    def invert(attr: Unit, base: AttributeMap): AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[AttributeMap]
+    @scala.inline
+    def invert(attr: AttributeMap): AttributeMap = ^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any]).asInstanceOf[AttributeMap]
+    @scala.inline
+    def invert(attr: AttributeMap, base: AttributeMap): AttributeMap = (^.asInstanceOf[js.Dynamic].applyDynamic("invert")(attr.asInstanceOf[js.Any], base.asInstanceOf[js.Any])).asInstanceOf[AttributeMap]
+    
+    @scala.inline
+    def transform(): js.UndefOr[AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")().asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def transform(a: Unit, b: Unit, priority: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def transform(a: Unit, b: AttributeMap): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def transform(a: Unit, b: AttributeMap, priority: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def transform(a: AttributeMap): js.UndefOr[AttributeMap] = ^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def transform(a: AttributeMap, b: Unit, priority: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def transform(a: AttributeMap, b: AttributeMap): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
+    @scala.inline
+    def transform(a: AttributeMap, b: AttributeMap, priority: Boolean): js.UndefOr[AttributeMap] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], priority.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[AttributeMap]]
   }
   
   type AttributeMap = StringDictionary[js.Any]

@@ -4,7 +4,6 @@ import typings.std.Error
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @constructor LokiFsAdapter
   */
 @js.native
-trait LokiFsAdapter extends LokiPersistenceAdapter {
+trait LokiFsAdapter
+  extends StObject
+     with LokiPersistenceAdapter {
   
   /**
     * deleteDatabase() - delete the database file, will throw an error if the

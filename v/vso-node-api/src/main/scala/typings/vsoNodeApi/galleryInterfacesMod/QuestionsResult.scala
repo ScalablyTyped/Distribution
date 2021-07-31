@@ -2,21 +2,19 @@ package typings.vsoNodeApi.galleryInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuestionsResult extends StObject {
   
   /**
     * Flag indicating if there are more QnA threads to be shown (for paging)
     */
-  var hasMoreQuestions: Boolean = js.native
+  var hasMoreQuestions: Boolean
   
   /**
     * List of the QnA threads
     */
-  var questions: js.Array[Question] = js.native
+  var questions: js.Array[Question]
 }
 object QuestionsResult {
   

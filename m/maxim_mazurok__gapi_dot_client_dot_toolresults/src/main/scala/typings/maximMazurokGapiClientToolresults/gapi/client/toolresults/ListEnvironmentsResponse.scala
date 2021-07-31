@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEnvironmentsResponse extends StObject {
   
   /** Environments. Always set. */
-  var environments: js.UndefOr[js.Array[Environment]] = js.native
+  var environments: js.UndefOr[js.Array[Environment]] = js.undefined
   
   /** A Execution id Always set. */
-  var executionId: js.UndefOr[String] = js.native
+  var executionId: js.UndefOr[String] = js.undefined
   
   /** A History id. Always set. */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /** A continuation token to resume the query at the next item. Will only be set if there are more Environments to fetch. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A Project id. Always set. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
 }
 object ListEnvironmentsResponse {
   

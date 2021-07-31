@@ -2,29 +2,27 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A border around a table cell.
   */
-@js.native
 trait SchemaTableCellBorder extends StObject {
   
   /**
     * The color of the border.
     */
-  var color: js.UndefOr[SchemaOptionalColor] = js.native
+  var color: js.UndefOr[SchemaOptionalColor] = js.undefined
   
   /**
     * The dash style of the border.
     */
-  var dashStyle: js.UndefOr[String] = js.native
+  var dashStyle: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the border.
     */
-  var width: js.UndefOr[SchemaDimension] = js.native
+  var width: js.UndefOr[SchemaDimension] = js.undefined
 }
 object SchemaTableCellBorder {
   

@@ -3,15 +3,13 @@ package typings.datatablesNetKeytable
 import typings.datatablesNetKeytable.anon.Disable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait Api extends StObject {
     
-    var keys: Disable = js.native
+    var keys: Disable
   }
   object Api {
     
@@ -29,13 +27,12 @@ object DataTables {
     }
   }
   
-  @js.native
   trait CellMethods extends StObject {
     
     /*
       * Focus on a cell
       */
-    def focus(): Api = js.native
+    def focus(): Api
   }
   object CellMethods {
     
@@ -53,7 +50,6 @@ object DataTables {
     }
   }
   
-  @js.native
   trait KeyTableSettings extends StObject {
     
     /*
@@ -62,26 +58,26 @@ object DataTables {
       * When set to true this option allows the table to lose focus (i.e. to be blurred),
       * while false will not allow the table to lose focus.
       */
-    var blurable: js.UndefOr[Boolean] = js.native
+    var blurable: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Set the class name used for the focused cell
       *
       * The class name to be added and removed from cells as they gain and loose focus.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /*
       * Enable / disable clipboard interaction with KeyTable
       *
       * A boolean flag that can optionally be used to disable KeyTables' clipboard interaction.
       */
-    var clipboard: js.UndefOr[Boolean] = js.native
+    var clipboard: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Set the orthogonal data point for the data to copy to clipboard.
       */
-    var clipboardOrthogonal: js.UndefOr[String] = js.native
+    var clipboardOrthogonal: js.UndefOr[String] = js.undefined
     
     /*
       * Select the columns that can gain focus
@@ -89,21 +85,21 @@ object DataTables {
       * The columns that can gain focus. This accepts all of the options of column-selector
       * such as class name selector, jQuery pseudo selects and column index selectors.
       */
-    var columns: js.UndefOr[js.Any] = js.native
+    var columns: js.UndefOr[js.Any] = js.undefined
     
     /*
       * Control if editing should be activated immediately upon focus
       *
       * true to enable editing on focus, false to disable.
       */
-    var editOnFocus: js.UndefOr[Boolean] = js.native
+    var editOnFocus: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Attach an Editor instance for Excel like editing
       *
       * The Editor instance to use for editing of the table
       */
-    var editor: js.UndefOr[js.Any] = js.native
+    var editor: js.UndefOr[js.Any] = js.undefined
     
     /*
       * Cell to receive initial focus in the table
@@ -112,7 +108,7 @@ object DataTables {
       * the options of cell-selector such as class name selector, jQuery pseudo selects and
       * cell index selectors.
       */
-    var focus: js.UndefOr[js.Any] = js.native
+    var focus: js.UndefOr[js.Any] = js.undefined
     
     /*
       * Limit the keys that KeyTable will listen for and take action on
@@ -121,7 +117,7 @@ object DataTables {
       * an array you can limit the keys that KeyTable will take action on to just the key
       * codes given in the array.
       */
-    var keys: js.UndefOr[js.Array[Double] | Null] = js.native
+    var keys: js.UndefOr[js.Array[Double] | Null] = js.undefined
     
     /*
       * Set the table's tab index for when it will receive focus
@@ -129,7 +125,7 @@ object DataTables {
       * The tab index for the table. Like all other tab indexes, this can be -1 to disallow
       * tabbing into the table.
       */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
   }
   object KeyTableSettings {
     
@@ -210,13 +206,12 @@ object DataTables {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /*
       * KeyTable extension options
       */
-    var keys: js.UndefOr[Boolean | KeyTableSettings] = js.native
+    var keys: js.UndefOr[Boolean | KeyTableSettings] = js.undefined
   }
   object Settings {
     

@@ -2,46 +2,44 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InfrastructureConfigurationSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the infrastructure configuration.
     */
-  var arn: js.UndefOr[ImageBuilderArn] = js.native
+  var arn: js.UndefOr[ImageBuilderArn] = js.undefined
   
   /**
     * The date on which the infrastructure configuration was created.
     */
-  var dateCreated: js.UndefOr[DateTime] = js.native
+  var dateCreated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The date on which the infrastructure configuration was last updated.
     */
-  var dateUpdated: js.UndefOr[DateTime] = js.native
+  var dateUpdated: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The description of the infrastructure configuration.
     */
-  var description: js.UndefOr[NonEmptyString] = js.native
+  var description: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the infrastructure configuration.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The tags attached to the image created by Image Builder.
     */
-  var resourceTags: js.UndefOr[ResourceTagMap] = js.native
+  var resourceTags: js.UndefOr[ResourceTagMap] = js.undefined
   
   /**
     * The tags of the infrastructure configuration.
     */
-  var tags: js.UndefOr[TagMap] = js.native
+  var tags: js.UndefOr[TagMap] = js.undefined
 }
 object InfrastructureConfigurationSummary {
   

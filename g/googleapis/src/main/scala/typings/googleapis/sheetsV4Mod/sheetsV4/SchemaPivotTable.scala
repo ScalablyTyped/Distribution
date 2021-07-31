@@ -3,19 +3,17 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A pivot table.
   */
-@js.native
 trait SchemaPivotTable extends StObject {
   
   /**
     * Each column grouping in the pivot table.
     */
-  var columns: js.UndefOr[js.Array[SchemaPivotGroup]] = js.native
+  var columns: js.UndefOr[js.Array[SchemaPivotGroup]] = js.undefined
   
   /**
     * An optional mapping of filters per source column offset.  The filters are
@@ -25,28 +23,28 @@ trait SchemaPivotTable extends StObject {
     * `C10:E15`, a key of `0` will have the filter for column `C`, whereas the
     * key `1` is for column `D`.
     */
-  var criteria: js.UndefOr[StringDictionary[SchemaPivotFilterCriteria]] = js.native
+  var criteria: js.UndefOr[StringDictionary[SchemaPivotFilterCriteria]] = js.undefined
   
   /**
     * Each row grouping in the pivot table.
     */
-  var rows: js.UndefOr[js.Array[SchemaPivotGroup]] = js.native
+  var rows: js.UndefOr[js.Array[SchemaPivotGroup]] = js.undefined
   
   /**
     * The range the pivot table is reading data from.
     */
-  var source: js.UndefOr[SchemaGridRange] = js.native
+  var source: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
     * Whether values should be listed horizontally (as columns) or vertically
     * (as rows).
     */
-  var valueLayout: js.UndefOr[String] = js.native
+  var valueLayout: js.UndefOr[String] = js.undefined
   
   /**
     * A list of values to include in the pivot table.
     */
-  var values: js.UndefOr[js.Array[SchemaPivotValue]] = js.native
+  var values: js.UndefOr[js.Array[SchemaPivotValue]] = js.undefined
 }
 object SchemaPivotTable {
   

@@ -5,49 +5,49 @@ import typings.connect.mod.NextHandleFunction
 import typings.webpackHotMiddleware.webpackHotMiddlewareBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("webpack-hot-middleware", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any
-  ): NextHandleFunction with EventStream = js.native
-  @JSImport("webpack-hot-middleware", JSImport.Namespace)
-  @js.native
+  ): NextHandleFunction & EventStream = ^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any]).asInstanceOf[NextHandleFunction & EventStream]
+  @scala.inline
   def apply(
     compiler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.ICompiler */ js.Any,
     options: MiddlewareOptions
-  ): NextHandleFunction with EventStream = js.native
+  ): NextHandleFunction & EventStream = (^.asInstanceOf[js.Dynamic].apply(compiler.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[NextHandleFunction & EventStream]
   
+  @JSImport("webpack-hot-middleware", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ClientOptions extends StObject {
     
-    var ansiColors: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var ansiColors: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var autoConnect: js.UndefOr[Boolean] = js.native
+    var autoConnect: js.UndefOr[Boolean] = js.undefined
     
-    var dynamicPublicPath: js.UndefOr[Boolean] = js.native
+    var dynamicPublicPath: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var noInfo: js.UndefOr[Boolean] = js.native
+    var noInfo: js.UndefOr[Boolean] = js.undefined
     
-    var overlay: js.UndefOr[Boolean] = js.native
+    var overlay: js.UndefOr[Boolean] = js.undefined
     
-    var overlayStyles: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var overlayStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var overlayWarnings: js.UndefOr[Boolean] = js.native
+    var overlayWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
-    var reload: js.UndefOr[Boolean] = js.native
+    var reload: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object ClientOptions {
     
@@ -134,12 +134,11 @@ object mod {
     }
   }
   
-  @js.native
   trait EventStream extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def publish(payload: js.Any): Unit = js.native
+    def publish(payload: js.Any): Unit
   }
   object EventStream {
     
@@ -160,16 +159,20 @@ object mod {
     }
   }
   
-  type Logger = js.Function2[/* message */ js.UndefOr[js.Any], /* repeated */ js.Any, Unit]
-  
   @js.native
+  trait Logger extends StObject {
+    
+    def apply(message: js.Any, optionalParams: js.Any*): Unit = js.native
+    def apply(message: Unit, optionalParams: js.Any*): Unit = js.native
+  }
+  
   trait MiddlewareOptions extends StObject {
     
-    var heartbeat: js.UndefOr[Double] = js.native
+    var heartbeat: js.UndefOr[Double] = js.undefined
     
-    var log: js.UndefOr[`false` | Logger] = js.native
+    var log: js.UndefOr[`false` | Logger] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object MiddlewareOptions {
     
@@ -190,9 +193,6 @@ object mod {
       
       @scala.inline
       def setLog(value: `false` | Logger): Self = StObject.set(x, "log", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setLogFunction2(value: (/* message */ js.UndefOr[js.Any], /* repeated */ js.Any) => Unit): Self = StObject.set(x, "log", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLogUndefined: Self = StObject.set(x, "log", js.undefined)

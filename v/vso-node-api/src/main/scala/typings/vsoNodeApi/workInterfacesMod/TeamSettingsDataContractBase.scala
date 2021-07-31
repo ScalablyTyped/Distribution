@@ -2,21 +2,19 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamSettingsDataContractBase extends StObject {
   
   /**
     * Collection of links relevant to resource
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Full http link to the resource
     */
-  var url: String = js.native
+  var url: String
 }
 object TeamSettingsDataContractBase {
   

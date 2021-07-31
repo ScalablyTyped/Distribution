@@ -2,34 +2,32 @@ package typings.semanticUiSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-search.SemanticUI.Search.FieldsSettings._Impl, keyof semantic-ui-search.SemanticUI.Search.FieldsSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplAction extends StObject {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var actionText: js.UndefOr[String] = js.native
+  var actionText: js.UndefOr[String] = js.undefined
   
-  var actionURL: js.UndefOr[String] = js.native
+  var actionURL: js.UndefOr[String] = js.undefined
   
-  var categories: js.UndefOr[String] = js.native
+  var categories: js.UndefOr[String] = js.undefined
   
-  var categoryName: js.UndefOr[String] = js.native
+  var categoryName: js.UndefOr[String] = js.undefined
   
-  var categoryResults: js.UndefOr[String] = js.native
+  var categoryResults: js.UndefOr[String] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[String] = js.native
+  var image: js.UndefOr[String] = js.undefined
   
-  var price: js.UndefOr[String] = js.native
+  var price: js.UndefOr[String] = js.undefined
   
-  var results: js.UndefOr[String] = js.native
+  var results: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplAction {
   

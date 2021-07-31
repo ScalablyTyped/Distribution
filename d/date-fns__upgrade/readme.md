@@ -11,8 +11,8 @@ A tool for upgrading date-fns versions
 | Full name          | @date-fns/upgrade |
 | Keywords           | - |
 | # releases         | 8 |
-| # dependents       | 4 |
-| # downloads        | 228036 |
+| # dependents       | 6 |
+| # downloads        | 484623 |
 | # stars            | 0 |
 
 ## Links

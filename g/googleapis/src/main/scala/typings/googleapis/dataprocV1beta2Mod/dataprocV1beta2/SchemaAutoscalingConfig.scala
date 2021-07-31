@@ -2,13 +2,11 @@ package typings.googleapis.dataprocV1beta2Mod.dataprocV1beta2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Autoscaling Policy config associated with the cluster.
   */
-@js.native
 trait SchemaAutoscalingConfig extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaAutoscalingConfig extends StObject {
     * projects/[project_id]/locations/[dataproc_region]/autoscalingPolicies/[policy_id]Note
     * that the policy must be in the same project and Cloud Dataproc region.
     */
-  var policyUri: js.UndefOr[String] = js.native
+  var policyUri: js.UndefOr[String] = js.undefined
 }
 object SchemaAutoscalingConfig {
   

@@ -4,22 +4,22 @@ import typings.marked.markedStrings.blockquote_start
 import typings.marked.mod.Token
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BlockquoteStart extends Token {
+trait BlockquoteStart
+  extends StObject
+     with Token {
   
-  var raw: String = js.native
+  var raw: String
   
-  var `type`: blockquote_start = js.native
+  var `type`: blockquote_start
 }
 object BlockquoteStart {
   
   @scala.inline
-  def apply(raw: String, `type`: blockquote_start): BlockquoteStart = {
+  def apply(raw: String): BlockquoteStart = {
     val __obj = js.Dynamic.literal(raw = raw.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("blockquote_start")
     __obj.asInstanceOf[BlockquoteStart]
   }
   

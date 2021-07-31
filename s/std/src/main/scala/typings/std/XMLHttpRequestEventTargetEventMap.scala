@@ -2,25 +2,23 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XMLHttpRequestEventTargetEventMap extends StObject {
   
-  var abort: ProgressEvent[XMLHttpRequestEventTarget] = js.native
+  var abort: ProgressEvent[XMLHttpRequestEventTarget]
   
-  var error: ProgressEvent[XMLHttpRequestEventTarget] = js.native
+  var error: ProgressEvent[XMLHttpRequestEventTarget]
   
-  var load: ProgressEvent[XMLHttpRequestEventTarget] = js.native
+  var load: ProgressEvent[XMLHttpRequestEventTarget]
   
-  var loadend: ProgressEvent[XMLHttpRequestEventTarget] = js.native
+  var loadend: ProgressEvent[XMLHttpRequestEventTarget]
   
-  var loadstart: ProgressEvent[XMLHttpRequestEventTarget] = js.native
+  var loadstart: ProgressEvent[XMLHttpRequestEventTarget]
   
-  var progress: ProgressEvent[XMLHttpRequestEventTarget] = js.native
+  var progress: ProgressEvent[XMLHttpRequestEventTarget]
   
-  var timeout: ProgressEvent[XMLHttpRequestEventTarget] = js.native
+  var timeout: ProgressEvent[XMLHttpRequestEventTarget]
 }
 object XMLHttpRequestEventTargetEventMap {
   

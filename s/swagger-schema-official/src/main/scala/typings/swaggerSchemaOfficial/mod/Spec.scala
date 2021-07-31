@@ -3,41 +3,39 @@ package typings.swaggerSchemaOfficial.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Spec extends StObject {
   
-  var basePath: js.UndefOr[String] = js.native
+  var basePath: js.UndefOr[String] = js.undefined
   
-  var consumes: js.UndefOr[js.Array[String]] = js.native
+  var consumes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var definitions: js.UndefOr[StringDictionary[Schema]] = js.native
+  var definitions: js.UndefOr[StringDictionary[Schema]] = js.undefined
   
-  var externalDocs: js.UndefOr[ExternalDocs] = js.native
+  var externalDocs: js.UndefOr[ExternalDocs] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
-  var info: Info = js.native
+  var info: Info
   
-  var parameters: js.UndefOr[StringDictionary[BodyParameter | QueryParameter]] = js.native
+  var parameters: js.UndefOr[StringDictionary[BodyParameter | QueryParameter]] = js.undefined
   
-  var paths: StringDictionary[Path] = js.native
+  var paths: StringDictionary[Path]
   
-  var produces: js.UndefOr[js.Array[String]] = js.native
+  var produces: js.UndefOr[js.Array[String]] = js.undefined
   
-  var responses: js.UndefOr[StringDictionary[Response]] = js.native
+  var responses: js.UndefOr[StringDictionary[Response]] = js.undefined
   
-  var schemes: js.UndefOr[js.Array[String]] = js.native
+  var schemes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var security: js.UndefOr[js.Array[StringDictionary[js.Array[String]]]] = js.native
+  var security: js.UndefOr[js.Array[StringDictionary[js.Array[String]]]] = js.undefined
   
-  var securityDefinitions: js.UndefOr[StringDictionary[Security]] = js.native
+  var securityDefinitions: js.UndefOr[StringDictionary[Security]] = js.undefined
   
-  var swagger: String = js.native
+  var swagger: String
   
-  var tags: js.UndefOr[js.Array[Tag]] = js.native
+  var tags: js.UndefOr[js.Array[Tag]] = js.undefined
 }
 object Spec {
   

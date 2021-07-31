@@ -3,16 +3,15 @@ package typings.lokijs.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetainDirtyFlags
-  extends /* collName */ StringDictionary[js.Any | Inflate] {
+  extends StObject
+     with /* collName */ StringDictionary[js.Any | Inflate] {
   
-  var retainDirtyFlags: js.UndefOr[Boolean] = js.native
+  var retainDirtyFlags: js.UndefOr[Boolean] = js.undefined
   
-  var throttledSaves: js.UndefOr[Boolean] = js.native
+  var throttledSaves: js.UndefOr[Boolean] = js.undefined
 }
 object RetainDirtyFlags {
   

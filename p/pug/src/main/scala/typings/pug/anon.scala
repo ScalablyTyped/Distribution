@@ -2,17 +2,15 @@ package typings.pug
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Body extends StObject {
     
-    var body: String = js.native
+    var body: String
     
-    var dependencies: js.Array[String] = js.native
+    var dependencies: js.Array[String]
   }
   object Body {
     

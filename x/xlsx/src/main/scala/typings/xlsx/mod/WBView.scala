@@ -2,14 +2,12 @@ package typings.xlsx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WBView extends StObject {
   
   /** Right-to-left mode */
-  var RTL: js.UndefOr[Boolean] = js.native
+  var RTL: js.UndefOr[Boolean] = js.undefined
 }
 object WBView {
   

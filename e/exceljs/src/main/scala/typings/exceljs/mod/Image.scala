@@ -5,25 +5,24 @@ import typings.exceljs.exceljsStrings.jpeg
 import typings.exceljs.exceljsStrings.png
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
-  var base64: js.UndefOr[String] = js.native
+  var base64: js.UndefOr[String] = js.undefined
   
-  var buffer: js.UndefOr[Buffer] = js.native
+  var buffer: js.UndefOr[Buffer] = js.undefined
   
-  var extension: jpeg | png | gif = js.native
+  var `extension`: jpeg | png | gif
   
-  var filename: js.UndefOr[String] = js.native
+  var filename: js.UndefOr[String] = js.undefined
 }
 object Image {
   
   @scala.inline
-  def apply(extension: jpeg | png | gif): Image = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any])
+  def apply(`extension`: jpeg | png | gif): Image = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Image]
   }
   

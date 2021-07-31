@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PhaseEvent extends Object {
+trait PhaseEvent
+  extends StObject
+     with Object {
   
   /**
     * The elapsed time since the last animation frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
     */
-  var deltaTime: Double = js.native
+  var deltaTime: Double
   
   /**
     * The amount of time spent within the current animation frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
     */
-  var elapsedFrameTime: Double = js.native
+  var elapsedFrameTime: Double
   
   /**
     * The absolute time at the start of the current animation frame.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-scheduling.html#PhaseEvent)
     */
-  var time: Double = js.native
+  var time: Double
 }
 object PhaseEvent {
   

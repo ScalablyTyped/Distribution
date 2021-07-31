@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetCombinedStatusForRefResponseDat
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetCombinedStatusForRefEndpoint extends StObject {
   
-  var parameters: ReposGetCombinedStatusForRefEndpoint = js.native
+  var parameters: ReposGetCombinedStatusForRefEndpoint
   
-  var request: ReposGetCombinedStatusForRefRequestOptions = js.native
+  var request: ReposGetCombinedStatusForRefRequestOptions
   
-  var response: OctokitResponse[ReposGetCombinedStatusForRefResponseData] = js.native
+  var response: OctokitResponse[ReposGetCombinedStatusForRefResponseData]
 }
 object ParametersReposGetCombinedStatusForRefEndpoint {
   

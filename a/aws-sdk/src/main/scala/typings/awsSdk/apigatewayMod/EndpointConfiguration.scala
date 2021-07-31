@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndpointConfiguration extends StObject {
   
   /**
     * A list of endpoint types of an API (RestApi) or its custom domain name (DomainName). For an edge-optimized API and its custom domain name, the endpoint type is "EDGE". For a regional API and its custom domain name, the endpoint type is REGIONAL. For a private API, the endpoint type is PRIVATE.
     */
-  var types: js.UndefOr[ListOfEndpointType] = js.native
+  var types: js.UndefOr[ListOfEndpointType] = js.undefined
   
   /**
     * A list of VpcEndpointIds of an API (RestApi) against which to create Route53 ALIASes. It is only supported for PRIVATE endpoint type.
     */
-  var vpcEndpointIds: js.UndefOr[ListOfString] = js.native
+  var vpcEndpointIds: js.UndefOr[ListOfString] = js.undefined
 }
 object EndpointConfiguration {
   

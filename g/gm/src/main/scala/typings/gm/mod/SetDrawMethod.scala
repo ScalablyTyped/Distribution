@@ -3,7 +3,6 @@ package typings.gm.mod
 import typings.gm.gmStrings.point_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Change dimensions only if image is larger than width or height */

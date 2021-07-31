@@ -6,23 +6,21 @@ import typings.devextreme.mod.DevExpress.ui.dxFileUploader
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Request extends StObject {
   
-  var component: js.UndefOr[dxFileUploader] = js.native
+  var component: js.UndefOr[dxFileUploader] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var file: js.UndefOr[typings.std.File] = js.native
+  var file: js.UndefOr[typings.std.File] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var request: js.UndefOr[XMLHttpRequest] = js.native
+  var request: js.UndefOr[XMLHttpRequest] = js.undefined
   
-  var uploadInfo: js.UndefOr[UploadInfo] = js.native
+  var uploadInfo: js.UndefOr[UploadInfo] = js.undefined
 }
 object Request {
   

@@ -3,26 +3,24 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotGridHeadersRenderedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the igGrid widget, which holds the headers.
     */
-  var grid: js.UndefOr[js.Any] = js.native
+  var grid: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the pivot grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to the headers table DOM element.
     */
-  var table: js.UndefOr[Element] = js.native
+  var table: js.UndefOr[Element] = js.undefined
 }
 object PivotGridHeadersRenderedEventUIParam {
   

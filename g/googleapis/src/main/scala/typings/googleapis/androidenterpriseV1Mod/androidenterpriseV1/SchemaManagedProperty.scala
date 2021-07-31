@@ -2,7 +2,6 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,49 +10,48 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * one of the value fields must be populated, and it must match the
   * property&#39;s type in the app restrictions schema.
   */
-@js.native
 trait SchemaManagedProperty extends StObject {
   
   /**
     * The unique key that identifies the property.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * The boolean value - this will only be present if type of the property is
     * bool.
     */
-  var valueBool: js.UndefOr[Boolean] = js.native
+  var valueBool: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The bundle of managed properties - this will only be present if type of
     * the property is bundle.
     */
-  var valueBundle: js.UndefOr[SchemaManagedPropertyBundle] = js.native
+  var valueBundle: js.UndefOr[SchemaManagedPropertyBundle] = js.undefined
   
   /**
     * The list of bundles of properties - this will only be present if type of
     * the property is bundle_array.
     */
-  var valueBundleArray: js.UndefOr[js.Array[SchemaManagedPropertyBundle]] = js.native
+  var valueBundleArray: js.UndefOr[js.Array[SchemaManagedPropertyBundle]] = js.undefined
   
   /**
     * The integer value - this will only be present if type of the property is
     * integer.
     */
-  var valueInteger: js.UndefOr[Double] = js.native
+  var valueInteger: js.UndefOr[Double] = js.undefined
   
   /**
     * The string value - this will only be present if type of the property is
     * string, choice or hidden.
     */
-  var valueString: js.UndefOr[String] = js.native
+  var valueString: js.UndefOr[String] = js.undefined
   
   /**
     * The list of string values - this will only be present if type of the
     * property is multiselect.
     */
-  var valueStringArray: js.UndefOr[js.Array[String]] = js.native
+  var valueStringArray: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaManagedProperty {
   

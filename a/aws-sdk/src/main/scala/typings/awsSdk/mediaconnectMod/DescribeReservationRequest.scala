@@ -2,16 +2,14 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeReservationRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the reservation.
     */
-  var ReservationArn: string = js.native
+  var ReservationArn: string
 }
 object DescribeReservationRequest {
   

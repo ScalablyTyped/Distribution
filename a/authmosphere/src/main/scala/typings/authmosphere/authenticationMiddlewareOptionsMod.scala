@@ -11,25 +11,23 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authenticationMiddlewareOptionsMod {
   
-  @js.native
   trait AuthenticationMiddlewareOptions extends StObject {
     
-    var getTokenInfo: js.UndefOr[GetTokenInfo[Record[String, _]]] = js.native
+    var getTokenInfo: js.UndefOr[GetTokenInfo[Record[String, js.Any]]] = js.undefined
     
-    var logger: js.UndefOr[Logger] = js.native
+    var logger: js.UndefOr[Logger] = js.undefined
     
     var onNotAuthenticatedHandler: js.UndefOr[
         typings.authmosphere.authenticationMiddlewareOptionsMod.onNotAuthenticatedHandler
-      ] = js.native
+      ] = js.undefined
     
-    var publicEndpoints: js.UndefOr[js.Array[String]] = js.native
+    var publicEndpoints: js.UndefOr[js.Array[String]] = js.undefined
     
-    var tokenInfoEndpoint: String = js.native
+    var tokenInfoEndpoint: String
   }
   object AuthenticationMiddlewareOptions {
     
@@ -44,7 +42,7 @@ object authenticationMiddlewareOptionsMod {
       
       @scala.inline
       def setGetTokenInfo(
-        value: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[Record[String, _]]]
+        value: (/* tokenInfoUrl */ String, /* accessToken */ String, /* logger */ js.UndefOr[Logger]) => js.Promise[Token[Record[String, js.Any]]]
       ): Self = StObject.set(x, "getTokenInfo", js.Any.fromFunction3(value))
       
       @scala.inline

@@ -5,10 +5,8 @@ import typings.angularCore.angularCoreStrings.platform
 import typings.angularCore.angularCoreStrings.root
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Injectable extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait Injectable extends StObject {
     * modules share one instance.
     *
     */
-  var providedIn: js.UndefOr[typings.angularCore.mod.Type[_] | root | platform | any | Null] = js.native
+  var providedIn: js.UndefOr[Type[js.Any] | root | platform | any | Null] = js.undefined
 }
 object Injectable {
   
@@ -34,7 +32,7 @@ object Injectable {
   implicit class InjectableMutableBuilder[Self <: Injectable] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setProvidedIn(value: typings.angularCore.mod.Type[_] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
+    def setProvidedIn(value: Type[js.Any] | root | platform | any): Self = StObject.set(x, "providedIn", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProvidedInNull: Self = StObject.set(x, "providedIn", null)

@@ -2,15 +2,13 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultsDetails extends StObject {
   
-  var groupByField: String = js.native
+  var groupByField: String
   
-  var resultsForGroup: js.Array[TestResultsDetailsForGroup] = js.native
+  var resultsForGroup: js.Array[TestResultsDetailsForGroup]
 }
 object TestResultsDetails {
   

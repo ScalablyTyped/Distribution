@@ -2,15 +2,15 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnCellCssStylesChangedEventArgs[T /* <: SlickData */] extends GridEventArgs[T] {
+trait OnCellCssStylesChangedEventArgs[T /* <: SlickData */]
+  extends StObject
+     with GridEventArgs[T] {
   
-  var hash: CellCssStylesHash = js.native
+  var hash: CellCssStylesHash
   
-  var key: String = js.native
+  var key: String
 }
 object OnCellCssStylesChangedEventArgs {
   
@@ -21,7 +21,7 @@ object OnCellCssStylesChangedEventArgs {
   }
   
   @scala.inline
-  implicit class OnCellCssStylesChangedEventArgsMutableBuilder[Self <: OnCellCssStylesChangedEventArgs[_], T /* <: SlickData */] (val x: Self with OnCellCssStylesChangedEventArgs[T]) extends AnyVal {
+  implicit class OnCellCssStylesChangedEventArgsMutableBuilder[Self <: OnCellCssStylesChangedEventArgs[?], T /* <: SlickData */] (val x: Self & OnCellCssStylesChangedEventArgs[T]) extends AnyVal {
     
     @scala.inline
     def setHash(value: CellCssStylesHash): Self = StObject.set(x, "hash", value.asInstanceOf[js.Any])

@@ -2,18 +2,16 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeBandwidthRateLimitScheduleOutput extends StObject {
   
   /**
     *  An array that contains the bandwidth rate limit intervals for a tape or volume gateway. 
     */
-  var BandwidthRateLimitIntervals: js.UndefOr[typings.awsSdk.storagegatewayMod.BandwidthRateLimitIntervals] = js.native
+  var BandwidthRateLimitIntervals: js.UndefOr[typings.awsSdk.storagegatewayMod.BandwidthRateLimitIntervals] = js.undefined
   
-  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.native
+  var GatewayARN: js.UndefOr[typings.awsSdk.storagegatewayMod.GatewayARN] = js.undefined
 }
 object DescribeBandwidthRateLimitScheduleOutput {
   

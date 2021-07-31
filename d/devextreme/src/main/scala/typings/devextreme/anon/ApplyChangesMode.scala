@@ -4,31 +4,29 @@ import typings.devextreme.devextremeStrings.instantly
 import typings.devextreme.devextremeStrings.onDemand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyChangesMode extends StObject {
   
-  var allowSearch: js.UndefOr[Boolean] = js.native
+  var allowSearch: js.UndefOr[Boolean] = js.undefined
   
-  var applyChangesMode: js.UndefOr[instantly | onDemand] = js.native
+  var applyChangesMode: js.UndefOr[instantly | onDemand] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   var layout: js.UndefOr[
     typings.devextreme.devextremeNumbers.`0` | typings.devextreme.devextremeNumbers.`1` | typings.devextreme.devextremeNumbers.`2`
-  ] = js.native
+  ] = js.undefined
   
-  var searchTimeout: js.UndefOr[Double] = js.native
+  var searchTimeout: js.UndefOr[Double] = js.undefined
   
-  var texts: js.UndefOr[AllFields] = js.native
+  var texts: js.UndefOr[AllFields] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object ApplyChangesMode {
   

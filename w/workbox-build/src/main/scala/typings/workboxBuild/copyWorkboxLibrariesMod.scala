@@ -2,12 +2,14 @@ package typings.workboxBuild
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object copyWorkboxLibrariesMod {
   
-  @JSImport("workbox-build/lib/copy-workbox-libraries", "copyWorkboxLibraries")
+  @JSImport("workbox-build/lib/copy-workbox-libraries", JSImport.Namespace)
   @js.native
-  def copyWorkboxLibraries(destDirectory: String): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def copyWorkboxLibraries(destDirectory: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("copyWorkboxLibraries")(destDirectory.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
 }

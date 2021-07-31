@@ -12,31 +12,34 @@ import typings.getos.getosStrings.win32
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(cb: js.Function2[/* error */ Error | Null, /* os */ Os, Unit]): String = ^.asInstanceOf[js.Dynamic].apply(cb.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("getos", JSImport.Namespace)
   @js.native
-  def apply(cb: js.Function2[/* error */ Error | Null, /* os */ Os, Unit]): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait LinuxOs extends Os {
+  trait LinuxOs
+    extends StObject
+       with Os {
     
-    var codename: js.UndefOr[String] = js.native
+    var codename: js.UndefOr[String] = js.undefined
     
-    var dist: String = js.native
+    var dist: String
     
-    var os: linux = js.native
+    var os: linux
     
-    var release: String = js.native
+    var release: String
   }
   object LinuxOs {
     
     @scala.inline
-    def apply(dist: String, os: linux, release: String): LinuxOs = {
-      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+    def apply(dist: String, release: String): LinuxOs = {
+      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = "linux", release = release.asInstanceOf[js.Any])
       __obj.asInstanceOf[LinuxOs]
     }
     
@@ -68,8 +71,8 @@ object mod {
   object Os {
     
     @scala.inline
-    def LinuxOs(dist: String, os: linux, release: String): typings.getos.mod.LinuxOs = {
-      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = os.asInstanceOf[js.Any], release = release.asInstanceOf[js.Any])
+    def LinuxOs(dist: String, release: String): typings.getos.mod.LinuxOs = {
+      val __obj = js.Dynamic.literal(dist = dist.asInstanceOf[js.Any], os = "linux", release = release.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.getos.mod.LinuxOs]
     }
     
@@ -80,10 +83,11 @@ object mod {
     }
   }
   
-  @js.native
-  trait OtherOs extends Os {
+  trait OtherOs
+    extends StObject
+       with Os {
     
-    var os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin = js.native
+    var os: aix | android | darwin | freebsd | openbsd | sunos | win32 | cygwin
   }
   object OtherOs {
     

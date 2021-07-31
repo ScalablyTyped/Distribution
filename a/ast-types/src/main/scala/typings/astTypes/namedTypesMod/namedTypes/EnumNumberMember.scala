@@ -5,17 +5,17 @@ import typings.astTypes.kindsMod.LiteralKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnumNumberMember extends ASTNode {
+trait EnumNumberMember
+  extends StObject
+     with ASTNode {
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var init: LiteralKind = js.native
+  var init: LiteralKind
   
-  var `type`: typings.astTypes.astTypesStrings.EnumNumberMember = js.native
+  var `type`: typings.astTypes.astTypesStrings.EnumNumberMember
 }
 object EnumNumberMember {
   

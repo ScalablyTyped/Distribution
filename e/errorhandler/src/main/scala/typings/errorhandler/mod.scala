@@ -8,7 +8,6 @@ import typings.expressServeStaticCore.mod.Query
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,12 +15,14 @@ object mod {
   /**
     * Create new middleware to handle errors and respond with content negotiation.
     */
+  @scala.inline
+  def apply(): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(options: Options): ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[ErrorRequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   @JSImport("errorhandler", JSImport.Namespace)
   @js.native
-  def apply(): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("errorhandler", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): ErrorRequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Template title, framework authors may override this value.
@@ -38,7 +39,6 @@ object mod {
     Unit
   ]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -50,7 +50,7 @@ object mod {
       *   false      : Only send the error back in the response.
       *   A function : pass the error to a function for handling.
       */
-    var log: Boolean | LoggingCallback = js.native
+    var log: Boolean | LoggingCallback
   }
   object Options {
     

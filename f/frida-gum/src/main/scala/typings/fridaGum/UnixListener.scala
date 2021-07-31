@@ -2,18 +2,17 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UnixListener
-  extends BaseListener
+  extends StObject
+     with BaseListener
      with SocketListener {
   
   /**
     * Path being listened on.
     */
-  var path: String = js.native
+  var path: String
 }
 object UnixListener {
   

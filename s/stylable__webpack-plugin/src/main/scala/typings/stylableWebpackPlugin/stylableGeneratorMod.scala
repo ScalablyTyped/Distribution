@@ -6,7 +6,6 @@ import typings.stylableWebpackPlugin.typesMod.StylableModule
 import typings.stylableWebpackPlugin.typesMod.WebpackAssetModule
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylableGeneratorMod {

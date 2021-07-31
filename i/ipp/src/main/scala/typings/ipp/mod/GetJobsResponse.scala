@@ -3,23 +3,21 @@ package typings.ipp.mod
 import typings.ipp.anon.Attributesnaturallanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobsResponse extends StObject {
   
-  var id: Double = js.native
+  var id: Double
   
-  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes | js.Array[JobTemplateAttributes]] = js.native
+  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes | js.Array[JobTemplateAttributes]] = js.undefined
   
-  var `operation-attributes-tag`: Attributesnaturallanguage = js.native
+  var `operation-attributes-tag`: Attributesnaturallanguage
   
-  var statusCode: StatusCode = js.native
+  var statusCode: StatusCode
   
-  var `unsupported-attributes`: js.UndefOr[js.Array[String]] = js.native
+  var `unsupported-attributes`: js.UndefOr[js.Array[String]] = js.undefined
   
-  var version: IPPVersion = js.native
+  var version: IPPVersion
 }
 object GetJobsResponse {
   

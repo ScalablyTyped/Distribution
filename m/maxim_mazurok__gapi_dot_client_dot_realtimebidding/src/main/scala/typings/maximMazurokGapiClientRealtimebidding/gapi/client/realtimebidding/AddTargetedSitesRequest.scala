@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddTargetedSitesRequest extends StObject {
   
   /** A list of site URLs to target in the pretargeting configuration. These values will be added to the list of targeted URLs in PretargetingConfig.webTargeting.values. */
-  var sites: js.UndefOr[js.Array[String]] = js.native
+  var sites: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Required. The targeting mode that should be applied to the list of site URLs. If there are existing targeted sites, must be equal to the existing
     * PretargetingConfig.webTargeting.targetingMode or a 400 bad request error will be returned.
     */
-  var targetingMode: js.UndefOr[String] = js.native
+  var targetingMode: js.UndefOr[String] = js.undefined
 }
 object AddTargetedSitesRequest {
   

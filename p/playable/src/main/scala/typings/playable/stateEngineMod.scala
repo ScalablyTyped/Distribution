@@ -6,14 +6,15 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.playable.playbackEngineTypesMod.IVideoOutput
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/chromecast/state-engine", JSImport.Default)
   @js.native
-  class default protected () extends StateEngine {
+  class default protected ()
+    extends StObject
+       with StateEngine {
     def this(eventEmitter: IEventEmitter, output: IVideoOutput, controller: RemotePlayerController) = this()
   }
   

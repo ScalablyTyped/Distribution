@@ -2,21 +2,19 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportCertificateOptions extends StObject {
   
   /**
     * Path for the pkcs12 file.
     */
-  var certificate: String = js.native
+  var certificate: String
   
   /**
     * Passphrase for the certificate.
     */
-  var password: String = js.native
+  var password: String
 }
 object ImportCertificateOptions {
   

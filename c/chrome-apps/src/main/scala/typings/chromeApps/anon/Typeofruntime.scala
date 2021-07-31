@@ -5,32 +5,30 @@ import typings.chromeApps.chrome.app.runtime.LaunchData
 import typings.chromeApps.chrome.events.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofruntime extends StObject {
   
   /** @enum */
-  val ActionType: NEWNOTE = js.native
+  val ActionType: NEWNOTE
   
   /** @enum */
-  val LaunchSource: ABOUTPAGE = js.native
+  val LaunchSource: ABOUTPAGE
   
   /** @enum */
-  val PlayStoreStatus: AVAILABLE = js.native
+  val PlayStoreStatus: AVAILABLE
   
   /**
     * Fired when an embedding app requests to embed this app.
     * @since Chrome 43.
     * @see[Documentation]{@link https://developer.chrome.com/apps/tags/appview}
     */
-  val onEmbedRequested: Event[js.Function1[/* request */ EmbedRequest, Unit]] = js.native
+  val onEmbedRequested: Event[js.Function1[/* request */ EmbedRequest, Unit]]
   
   /**
     * Fired when an app is launched from the launcher.
     */
-  val onLaunched: Event[js.Function1[/* launchData */ LaunchData, Unit]] = js.native
+  val onLaunched: Event[js.Function1[/* launchData */ LaunchData, Unit]]
   
   /**
     * Fired at Chrome startup to apps that were running when Chrome last shut down,
@@ -38,7 +36,7 @@ trait Typeofruntime extends StObject {
     * (e.g. when the user revokes access to an app's retained files the runtime will restart the app).
     * In these situations if apps do not have an onRestarted handler they will be sent an onLaunched event instead.
     */
-  val onRestarted: Event[js.Function0[Unit]] = js.native
+  val onRestarted: Event[js.Function0[Unit]]
 }
 object Typeofruntime {
   

@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XNotifyingDispatch
   * @see XDispatchResultListener
   */
-@js.native
-trait XStatusListener extends XEventListener {
+trait XStatusListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is called when the status of the feature changes.
     * @param State provides information about changes of the requested feature
     */
-  def statusChanged(State: FeatureStateEvent): Unit = js.native
+  def statusChanged(State: FeatureStateEvent): Unit
 }
 object XStatusListener {
   

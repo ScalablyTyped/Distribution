@@ -11,10 +11,13 @@ import typings.opentelemetryApi.traceMod.TraceAPI
 import typings.opentelemetryContextBase.mod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@opentelemetry/api", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object default {
     
@@ -52,41 +55,41 @@ object mod {
   object CanonicalCode extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.statusMod.CanonicalCode with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.statusMod.CanonicalCode & Double] = js.native
     
-    /* 10 */ val ABORTED: typings.opentelemetryApi.statusMod.CanonicalCode.ABORTED with Double = js.native
+    /* 10 */ val ABORTED: typings.opentelemetryApi.statusMod.CanonicalCode.ABORTED & Double = js.native
     
-    /* 6 */ val ALREADY_EXISTS: typings.opentelemetryApi.statusMod.CanonicalCode.ALREADY_EXISTS with Double = js.native
+    /* 6 */ val ALREADY_EXISTS: typings.opentelemetryApi.statusMod.CanonicalCode.ALREADY_EXISTS & Double = js.native
     
-    /* 1 */ val CANCELLED: typings.opentelemetryApi.statusMod.CanonicalCode.CANCELLED with Double = js.native
+    /* 1 */ val CANCELLED: typings.opentelemetryApi.statusMod.CanonicalCode.CANCELLED & Double = js.native
     
-    /* 15 */ val DATA_LOSS: typings.opentelemetryApi.statusMod.CanonicalCode.DATA_LOSS with Double = js.native
+    /* 15 */ val DATA_LOSS: typings.opentelemetryApi.statusMod.CanonicalCode.DATA_LOSS & Double = js.native
     
-    /* 4 */ val DEADLINE_EXCEEDED: typings.opentelemetryApi.statusMod.CanonicalCode.DEADLINE_EXCEEDED with Double = js.native
+    /* 4 */ val DEADLINE_EXCEEDED: typings.opentelemetryApi.statusMod.CanonicalCode.DEADLINE_EXCEEDED & Double = js.native
     
-    /* 9 */ val FAILED_PRECONDITION: typings.opentelemetryApi.statusMod.CanonicalCode.FAILED_PRECONDITION with Double = js.native
+    /* 9 */ val FAILED_PRECONDITION: typings.opentelemetryApi.statusMod.CanonicalCode.FAILED_PRECONDITION & Double = js.native
     
-    /* 13 */ val INTERNAL: typings.opentelemetryApi.statusMod.CanonicalCode.INTERNAL with Double = js.native
+    /* 13 */ val INTERNAL: typings.opentelemetryApi.statusMod.CanonicalCode.INTERNAL & Double = js.native
     
-    /* 3 */ val INVALID_ARGUMENT: typings.opentelemetryApi.statusMod.CanonicalCode.INVALID_ARGUMENT with Double = js.native
+    /* 3 */ val INVALID_ARGUMENT: typings.opentelemetryApi.statusMod.CanonicalCode.INVALID_ARGUMENT & Double = js.native
     
-    /* 5 */ val NOT_FOUND: typings.opentelemetryApi.statusMod.CanonicalCode.NOT_FOUND with Double = js.native
+    /* 5 */ val NOT_FOUND: typings.opentelemetryApi.statusMod.CanonicalCode.NOT_FOUND & Double = js.native
     
-    /* 0 */ val OK: typings.opentelemetryApi.statusMod.CanonicalCode.OK with Double = js.native
+    /* 0 */ val OK: typings.opentelemetryApi.statusMod.CanonicalCode.OK & Double = js.native
     
-    /* 11 */ val OUT_OF_RANGE: typings.opentelemetryApi.statusMod.CanonicalCode.OUT_OF_RANGE with Double = js.native
+    /* 11 */ val OUT_OF_RANGE: typings.opentelemetryApi.statusMod.CanonicalCode.OUT_OF_RANGE & Double = js.native
     
-    /* 7 */ val PERMISSION_DENIED: typings.opentelemetryApi.statusMod.CanonicalCode.PERMISSION_DENIED with Double = js.native
+    /* 7 */ val PERMISSION_DENIED: typings.opentelemetryApi.statusMod.CanonicalCode.PERMISSION_DENIED & Double = js.native
     
-    /* 8 */ val RESOURCE_EXHAUSTED: typings.opentelemetryApi.statusMod.CanonicalCode.RESOURCE_EXHAUSTED with Double = js.native
+    /* 8 */ val RESOURCE_EXHAUSTED: typings.opentelemetryApi.statusMod.CanonicalCode.RESOURCE_EXHAUSTED & Double = js.native
     
-    /* 16 */ val UNAUTHENTICATED: typings.opentelemetryApi.statusMod.CanonicalCode.UNAUTHENTICATED with Double = js.native
+    /* 16 */ val UNAUTHENTICATED: typings.opentelemetryApi.statusMod.CanonicalCode.UNAUTHENTICATED & Double = js.native
     
-    /* 14 */ val UNAVAILABLE: typings.opentelemetryApi.statusMod.CanonicalCode.UNAVAILABLE with Double = js.native
+    /* 14 */ val UNAVAILABLE: typings.opentelemetryApi.statusMod.CanonicalCode.UNAVAILABLE & Double = js.native
     
-    /* 12 */ val UNIMPLEMENTED: typings.opentelemetryApi.statusMod.CanonicalCode.UNIMPLEMENTED with Double = js.native
+    /* 12 */ val UNIMPLEMENTED: typings.opentelemetryApi.statusMod.CanonicalCode.UNIMPLEMENTED & Double = js.native
     
-    /* 2 */ val UNKNOWN: typings.opentelemetryApi.statusMod.CanonicalCode.UNKNOWN with Double = js.native
+    /* 2 */ val UNKNOWN: typings.opentelemetryApi.statusMod.CanonicalCode.UNKNOWN & Double = js.native
   }
   
   @JSImport("@opentelemetry/api", "Context")
@@ -99,6 +102,10 @@ object mod {
   class Context_ protected () extends Context
   /* static members */
   object Context_ {
+    
+    @JSImport("@opentelemetry/api", "Context")
+    @js.native
+    val ^ : js.Any = js.native
     
     /** The root context is used as the default parent context when there is no active context */
     @JSImport("@opentelemetry/api", "Context.ROOT_CONTEXT")
@@ -116,9 +123,8 @@ object mod {
     val TODO: typings.opentelemetryContextBase.contextMod.Context = js.native
     
     /** Get a key to uniquely identify a context value */
-    @JSImport("@opentelemetry/api", "Context.createKey")
-    @js.native
-    def createKey(description: String): js.Symbol = js.native
+    @scala.inline
+    def createKey(description: String): js.Symbol = ^.asInstanceOf[js.Dynamic].applyDynamic("createKey")(description.asInstanceOf[js.Any]).asInstanceOf[js.Symbol]
   }
   
   @JSImport("@opentelemetry/api", "EntryTtl")
@@ -126,11 +132,11 @@ object mod {
   object EntryTtl extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.entryValueMod.EntryTtl with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.entryValueMod.EntryTtl & Double] = js.native
     
-    /* 0 */ val NO_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.NO_PROPAGATION with Double = js.native
+    /* 0 */ val NO_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.NO_PROPAGATION & Double = js.native
     
-    /* -1 */ val UNLIMITED_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.UNLIMITED_PROPAGATION with Double = js.native
+    /* -1 */ val UNLIMITED_PROPAGATION: typings.opentelemetryApi.entryValueMod.EntryTtl.UNLIMITED_PROPAGATION & Double = js.native
   }
   
   @JSImport("@opentelemetry/api", "INVALID_SPANID")
@@ -309,13 +315,13 @@ object mod {
   object SamplingDecision extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.samplingResultMod.SamplingDecision with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.samplingResultMod.SamplingDecision & Double] = js.native
     
-    /* 0 */ val NOT_RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.NOT_RECORD with Double = js.native
+    /* 0 */ val NOT_RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.NOT_RECORD & Double = js.native
     
-    /* 1 */ val RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD with Double = js.native
+    /* 1 */ val RECORD: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD & Double = js.native
     
-    /* 2 */ val RECORD_AND_SAMPLED: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD_AND_SAMPLED with Double = js.native
+    /* 2 */ val RECORD_AND_SAMPLED: typings.opentelemetryApi.samplingResultMod.SamplingDecision.RECORD_AND_SAMPLED & Double = js.native
   }
   
   @JSImport("@opentelemetry/api", "SpanKind")
@@ -323,17 +329,17 @@ object mod {
   object SpanKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.spanKindMod.SpanKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.spanKindMod.SpanKind & Double] = js.native
     
-    /* 2 */ val CLIENT: typings.opentelemetryApi.spanKindMod.SpanKind.CLIENT with Double = js.native
+    /* 2 */ val CLIENT: typings.opentelemetryApi.spanKindMod.SpanKind.CLIENT & Double = js.native
     
-    /* 4 */ val CONSUMER: typings.opentelemetryApi.spanKindMod.SpanKind.CONSUMER with Double = js.native
+    /* 4 */ val CONSUMER: typings.opentelemetryApi.spanKindMod.SpanKind.CONSUMER & Double = js.native
     
-    /* 0 */ val INTERNAL: typings.opentelemetryApi.spanKindMod.SpanKind.INTERNAL with Double = js.native
+    /* 0 */ val INTERNAL: typings.opentelemetryApi.spanKindMod.SpanKind.INTERNAL & Double = js.native
     
-    /* 3 */ val PRODUCER: typings.opentelemetryApi.spanKindMod.SpanKind.PRODUCER with Double = js.native
+    /* 3 */ val PRODUCER: typings.opentelemetryApi.spanKindMod.SpanKind.PRODUCER & Double = js.native
     
-    /* 1 */ val SERVER: typings.opentelemetryApi.spanKindMod.SpanKind.SERVER with Double = js.native
+    /* 1 */ val SERVER: typings.opentelemetryApi.spanKindMod.SpanKind.SERVER & Double = js.native
   }
   
   @JSImport("@opentelemetry/api", "TraceFlags")
@@ -341,11 +347,11 @@ object mod {
   object TraceFlags extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.traceFlagsMod.TraceFlags with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.traceFlagsMod.TraceFlags & Double] = js.native
     
-    /* 0 */ val NONE: typings.opentelemetryApi.traceFlagsMod.TraceFlags.NONE with Double = js.native
+    /* 0 */ val NONE: typings.opentelemetryApi.traceFlagsMod.TraceFlags.NONE & Double = js.native
     
-    /* 1 */ val SAMPLED: typings.opentelemetryApi.traceFlagsMod.TraceFlags.SAMPLED with Double = js.native
+    /* 1 */ val SAMPLED: typings.opentelemetryApi.traceFlagsMod.TraceFlags.SAMPLED & Double = js.native
   }
   
   @JSImport("@opentelemetry/api", "ValueType")
@@ -353,24 +359,22 @@ object mod {
   object ValueType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.metricMod.ValueType with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.opentelemetryApi.metricMod.ValueType & Double] = js.native
     
-    /* 1 */ val DOUBLE: typings.opentelemetryApi.metricMod.ValueType.DOUBLE with Double = js.native
+    /* 1 */ val DOUBLE: typings.opentelemetryApi.metricMod.ValueType.DOUBLE & Double = js.native
     
-    /* 0 */ val INT: typings.opentelemetryApi.metricMod.ValueType.INT with Double = js.native
+    /* 0 */ val INT: typings.opentelemetryApi.metricMod.ValueType.INT & Double = js.native
   }
   
   @JSImport("@opentelemetry/api", "context")
   @js.native
   val context: ContextAPI = js.native
   
-  @JSImport("@opentelemetry/api", "defaultGetter")
-  @js.native
-  def defaultGetter(carrier: js.Any, key: String): js.Any = js.native
+  @scala.inline
+  def defaultGetter(carrier: js.Any, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultGetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("@opentelemetry/api", "defaultSetter")
-  @js.native
-  def defaultSetter(carrier: js.Any, key: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def defaultSetter(carrier: js.Any, key: String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultSetter")(carrier.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("@opentelemetry/api", "metrics")
   @js.native

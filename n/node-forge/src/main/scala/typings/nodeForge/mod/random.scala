@@ -2,34 +2,32 @@ package typings.nodeForge.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object random {
   
-  @JSImport("node-forge", "random.createInstance")
+  @JSImport("node-forge", "random")
   @js.native
-  def createInstance(): Random = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-forge", "random.getBytes")
-  @js.native
-  def getBytes(count: Double): Bytes = js.native
-  @JSImport("node-forge", "random.getBytes")
-  @js.native
-  def getBytes(count: Double, callback: js.Function1[/* bytes */ Bytes, _]): Bytes = js.native
+  @scala.inline
+  def createInstance(): Random = ^.asInstanceOf[js.Dynamic].applyDynamic("createInstance")().asInstanceOf[Random]
   
-  @JSImport("node-forge", "random.getBytesSync")
-  @js.native
-  def getBytesSync(count: Double): Bytes = js.native
+  @scala.inline
+  def getBytes(count: Double): Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(count.asInstanceOf[js.Any]).asInstanceOf[Bytes]
+  @scala.inline
+  def getBytes(count: Double, callback: js.Function1[/* bytes */ Bytes, js.Any]): Bytes = (^.asInstanceOf[js.Dynamic].applyDynamic("getBytes")(count.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Bytes]
+  
+  @scala.inline
+  def getBytesSync(count: Double): Bytes = ^.asInstanceOf[js.Dynamic].applyDynamic("getBytesSync")(count.asInstanceOf[js.Any]).asInstanceOf[Bytes]
   
   type CB = js.Function2[/* _ */ js.Any, /* seed */ String, Unit]
   
-  @js.native
   trait Random extends StObject {
     
-    def seedFile(needed: Double, cb: CB): Unit = js.native
+    def seedFile(needed: Double, cb: CB): Unit
     
-    def seedFileSync(needed: Double): String = js.native
+    def seedFileSync(needed: Double): String
   }
   object Random {
     

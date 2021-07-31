@@ -20,11 +20,12 @@ import typings.std.Record
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MathJsStatic extends FactoryDependencies {
+trait MathJsStatic
+  extends StObject
+     with FactoryDependencies {
   
   var Infinity: Double = js.native
   
@@ -717,9 +718,9 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The new unit
     */
   def createUnit(name: String): Unit = js.native
-  def createUnit(name: String, definition: js.UndefOr[scala.Nothing], options: CreateUnitOptions): Unit = js.native
   def createUnit(name: String, definition: String): Unit = js.native
   def createUnit(name: String, definition: String, options: CreateUnitOptions): Unit = js.native
+  def createUnit(name: String, definition: scala.Unit, options: CreateUnitOptions): Unit = js.native
   def createUnit(name: String, definition: UnitDefinition): Unit = js.native
   def createUnit(name: String, definition: UnitDefinition, options: CreateUnitOptions): Unit = js.native
   /**
@@ -1134,11 +1135,6 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The formatted value
     */
   def format(value: js.Any): String = js.native
-  def format(
-    value: js.Any,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* value */ js.Any, String]
-  ): String = js.native
   def format(value: js.Any, options: js.Function1[/* item */ js.Any, String]): String = js.native
   def format(
     value: js.Any,
@@ -1147,6 +1143,7 @@ trait MathJsStatic extends FactoryDependencies {
   ): String = js.native
   def format(value: js.Any, options: Double): String = js.native
   def format(value: js.Any, options: Double, callback: js.Function1[/* value */ js.Any, String]): String = js.native
+  def format(value: js.Any, options: scala.Unit, callback: js.Function1[/* value */ js.Any, String]): String = js.native
   def format(value: js.Any, options: FormatOptions): String = js.native
   def format(value: js.Any, options: FormatOptions, callback: js.Function1[/* value */ js.Any, String]): String = js.native
   
@@ -1217,7 +1214,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @param search A function or function name for which to get help
     * @returns A help object
     */
-  def help(search: js.Function0[_]): Help = js.native
+  def help(search: js.Function0[js.Any]): Help = js.native
   
   /**
     * Calculate the hypotenusa of a list with values. The hypotenusa is
@@ -1629,25 +1626,25 @@ trait MathJsStatic extends FactoryDependencies {
   def lup(A: Matrix): L = js.native
   
   def lusolve(A: Double, b: MathArray): Matrix | MathArray = js.native
-  def lusolve(A: Double, b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: MathArray, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: MathArray, order: Double, threshold: Double): Matrix | MathArray = js.native
+  def lusolve(A: Double, b: MathArray, order: scala.Unit, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: Matrix): Matrix | MathArray = js.native
-  def lusolve(A: Double, b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: Matrix, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Double, b: Matrix, order: Double, threshold: Double): Matrix | MathArray = js.native
+  def lusolve(A: Double, b: Matrix, order: scala.Unit, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray): Matrix | MathArray = js.native
-  def lusolve(A: MathArray, b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: MathArray, order: Double, threshold: Double): Matrix | MathArray = js.native
+  def lusolve(A: MathArray, b: MathArray, order: scala.Unit, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: Matrix): Matrix | MathArray = js.native
-  def lusolve(A: MathArray, b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: Matrix, order: Double): Matrix | MathArray = js.native
   def lusolve(A: MathArray, b: Matrix, order: Double, threshold: Double): Matrix | MathArray = js.native
+  def lusolve(A: MathArray, b: Matrix, order: scala.Unit, threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: MathArray): Matrix | MathArray = js.native
-  def lusolve(A: Matrix, b: MathArray, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: MathArray, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: MathArray, order: Double, threshold: Double): Matrix | MathArray = js.native
+  def lusolve(A: Matrix, b: MathArray, order: scala.Unit, threshold: Double): Matrix | MathArray = js.native
   /**
     * Solves the linear system A * x = b where A is an [n x n] matrix and b
     * is a [n] column vector.
@@ -1661,9 +1658,9 @@ trait MathJsStatic extends FactoryDependencies {
     * b
     */
   def lusolve(A: Matrix, b: Matrix): Matrix | MathArray = js.native
-  def lusolve(A: Matrix, b: Matrix, order: js.UndefOr[scala.Nothing], threshold: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: Matrix, order: Double): Matrix | MathArray = js.native
   def lusolve(A: Matrix, b: Matrix, order: Double, threshold: Double): Matrix | MathArray = js.native
+  def lusolve(A: Matrix, b: Matrix, order: scala.Unit, threshold: Double): Matrix | MathArray = js.native
   
   /*************************************************************************
     * Statistics functions
@@ -1717,9 +1714,9 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The created Matrix
     */
   def matrix(data: MathArray): Matrix = js.native
-  def matrix(data: MathArray, format: js.UndefOr[scala.Nothing], dataType: String): Matrix = js.native
+  def matrix(data: MathArray, format: scala.Unit, dataType: String): Matrix = js.native
   def matrix(data: Matrix): Matrix = js.native
-  def matrix(data: Matrix, format: js.UndefOr[scala.Nothing], dataType: String): Matrix = js.native
+  def matrix(data: Matrix, format: scala.Unit, dataType: String): Matrix = js.native
   @JSName("matrix")
   def matrix_dense(data: MathArray, format: dense): Matrix = js.native
   @JSName("matrix")
@@ -2113,9 +2110,9 @@ trait MathJsStatic extends FactoryDependencies {
     * when number is > 1.
     */
   def pickRandom(array: js.Array[Double]): Double | js.Array[Double] = js.native
-  def pickRandom(array: js.Array[Double], number: js.UndefOr[scala.Nothing], weights: js.Array[Double]): Double | js.Array[Double] = js.native
   def pickRandom(array: js.Array[Double], number: Double): Double | js.Array[Double] = js.native
   def pickRandom(array: js.Array[Double], number: Double, weights: js.Array[Double]): Double | js.Array[Double] = js.native
+  def pickRandom(array: js.Array[Double], number: scala.Unit, weights: js.Array[Double]): Double | js.Array[Double] = js.native
   
   /**
     * Calculates the power of x to y, x ^ y. Matrix exponentiation is
@@ -2140,11 +2137,11 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Interpolated string
     */
   def print(template: String, values: js.Any): scala.Unit = js.native
-  def print(template: String, values: js.Any, precision: js.UndefOr[scala.Nothing], options: js.Object): scala.Unit = js.native
-  def print(template: String, values: js.Any, precision: js.UndefOr[scala.Nothing], options: Double): scala.Unit = js.native
   def print(template: String, values: js.Any, precision: Double): scala.Unit = js.native
   def print(template: String, values: js.Any, precision: Double, options: js.Object): scala.Unit = js.native
   def print(template: String, values: js.Any, precision: Double, options: Double): scala.Unit = js.native
+  def print(template: String, values: js.Any, precision: scala.Unit, options: js.Object): scala.Unit = js.native
+  def print(template: String, values: js.Any, precision: scala.Unit, options: Double): scala.Unit = js.native
   
   /**
     * Compute the product of a matrix or a list with values. In case of a
@@ -2203,17 +2200,17 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns A random number
     */
   def random(): Double = js.native
-  def random(min: js.UndefOr[scala.Nothing], max: Double): Double = js.native
   def random(min: Double): Double = js.native
   def random(min: Double, max: Double): Double = js.native
+  def random(min: scala.Unit, max: Double): Double = js.native
   def random(size: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
-  def random(size: js.Array[js.Array[Double] | Double], min: js.UndefOr[scala.Nothing], max: Double): js.Array[Double] = js.native
   def random(size: js.Array[js.Array[Double] | Double], min: Double): js.Array[Double] = js.native
   def random(size: js.Array[js.Array[Double] | Double], min: Double, max: Double): js.Array[Double] = js.native
+  def random(size: js.Array[js.Array[Double] | Double], min: scala.Unit, max: Double): js.Array[Double] = js.native
   def random(size: Matrix): Matrix = js.native
-  def random(size: Matrix, min: js.UndefOr[scala.Nothing], max: Double): Matrix = js.native
   def random(size: Matrix, min: Double): Matrix = js.native
   def random(size: Matrix, min: Double, max: Double): Matrix = js.native
+  def random(size: Matrix, min: scala.Unit, max: Double): Matrix = js.native
   
   /**
     * Return a random integer number larger or equal to min and smaller
@@ -2227,13 +2224,13 @@ trait MathJsStatic extends FactoryDependencies {
   def randomInt(min: Double): Double = js.native
   def randomInt(min: Double, max: Double): Double = js.native
   def randomInt(size: js.Array[js.Array[Double] | Double]): js.Array[Double] = js.native
-  def randomInt(size: js.Array[js.Array[Double] | Double], min: js.UndefOr[scala.Nothing], max: Double): js.Array[Double] = js.native
   def randomInt(size: js.Array[js.Array[Double] | Double], min: Double): js.Array[Double] = js.native
   def randomInt(size: js.Array[js.Array[Double] | Double], min: Double, max: Double): js.Array[Double] = js.native
+  def randomInt(size: js.Array[js.Array[Double] | Double], min: scala.Unit, max: Double): js.Array[Double] = js.native
   def randomInt(size: Matrix): Matrix = js.native
-  def randomInt(size: Matrix, min: js.UndefOr[scala.Nothing], max: Double): Matrix = js.native
   def randomInt(size: Matrix, min: Double): Matrix = js.native
   def randomInt(size: Matrix, min: Double, max: Double): Matrix = js.native
+  def randomInt(size: Matrix, min: scala.Unit, max: Double): Matrix = js.native
   
   def range(start: Double, end: Double): Matrix = js.native
   def range(start: Double, end: Double, includeEnd: Boolean): Matrix = js.native
@@ -2306,29 +2303,29 @@ trait MathJsStatic extends FactoryDependencies {
   @JSName("rationalize")
   def rationalize_Coefficients(expr: MathNode, optional: Boolean): Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_false(expr: String, optional: js.UndefOr[scala.Nothing], detailed: `false`): MathNode = js.native
-  @JSName("rationalize")
   def rationalize_false(expr: String, optional: js.Object, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
   def rationalize_false(expr: String, optional: Boolean, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
-  def rationalize_false(expr: MathNode, optional: js.UndefOr[scala.Nothing], detailed: `false`): MathNode = js.native
+  def rationalize_false(expr: String, optional: scala.Unit, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
   def rationalize_false(expr: MathNode, optional: js.Object, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
   def rationalize_false(expr: MathNode, optional: Boolean, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
-  def rationalize_true(expr: String, optional: js.UndefOr[scala.Nothing], detailed: `true`): Coefficients = js.native
+  def rationalize_false(expr: MathNode, optional: scala.Unit, detailed: `false`): MathNode = js.native
   @JSName("rationalize")
   def rationalize_true(expr: String, optional: js.Object, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
   def rationalize_true(expr: String, optional: Boolean, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
-  def rationalize_true(expr: MathNode, optional: js.UndefOr[scala.Nothing], detailed: `true`): Coefficients = js.native
+  def rationalize_true(expr: String, optional: scala.Unit, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
   def rationalize_true(expr: MathNode, optional: js.Object, detailed: `true`): Coefficients = js.native
   @JSName("rationalize")
   def rationalize_true(expr: MathNode, optional: Boolean, detailed: `true`): Coefficients = js.native
+  @JSName("rationalize")
+  def rationalize_true(expr: MathNode, optional: scala.Unit, detailed: `true`): Coefficients = js.native
   
   /**
     * Get the real part of a complex number. For a complex number a + bi,
@@ -2601,13 +2598,13 @@ trait MathJsStatic extends FactoryDependencies {
   def sign(x: Unit): Unit = js.native
   
   def simplify(expr: String): MathNode = js.native
-  def simplify(expr: String, rules: js.UndefOr[scala.Nothing], scope: js.Object): MathNode = js.native
   def simplify(expr: String, rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: String,
     rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])],
     scope: js.Object
   ): MathNode = js.native
+  def simplify(expr: String, rules: scala.Unit, scope: js.Object): MathNode = js.native
   /**
     * Simplify an expression tree.
     * @param expr The expression to be simplified
@@ -2619,13 +2616,13 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Returns the simplified form of expr
     */
   def simplify(expr: MathNode): MathNode = js.native
-  def simplify(expr: MathNode, rules: js.UndefOr[scala.Nothing], scope: js.Object): MathNode = js.native
   def simplify(expr: MathNode, rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])]): MathNode = js.native
   def simplify(
     expr: MathNode,
     rules: js.Array[R | String | (js.Function1[/* node */ MathNode, MathNode])],
     scope: js.Object
   ): MathNode = js.native
+  def simplify(expr: MathNode, rules: scala.Unit, scope: js.Object): MathNode = js.native
   
   /**
     * Calculate the sine of a value. For matrices, the function is
@@ -2755,7 +2752,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns The created matrix
     */
   def sparse(): Matrix = js.native
-  def sparse(data: js.UndefOr[scala.Nothing], dataType: String): Matrix = js.native
+  def sparse(data: scala.Unit, dataType: String): Matrix = js.native
   def sparse(data: MathArray): Matrix = js.native
   def sparse(data: MathArray, dataType: String): Matrix = js.native
   def sparse(data: Matrix): Matrix = js.native
@@ -2871,9 +2868,9 @@ trait MathJsStatic extends FactoryDependencies {
   def string(value: MathType): String | MathArray | Matrix = js.native
   
   def subset(value: String, index: Index): String = js.native
-  def subset(value: String, index: Index, replacement: js.UndefOr[scala.Nothing], defaultValue: js.Any): String = js.native
   def subset(value: String, index: Index, replacement: js.Any): String = js.native
   def subset(value: String, index: Index, replacement: js.Any, defaultValue: js.Any): String = js.native
+  def subset(value: String, index: Index, replacement: scala.Unit, defaultValue: js.Any): String = js.native
   /**
     * Get or set a subset of a matrix or string.
     * @param value An array, matrix, or string
@@ -2887,12 +2884,6 @@ trait MathJsStatic extends FactoryDependencies {
     * @returns Either the retrieved subset or the updated matrix
     */
   def subset(value: js.Array[js.Array[Double] | Double], index: Index): js.Array[Double] = js.native
-  def subset(
-    value: js.Array[js.Array[Double] | Double],
-    index: Index,
-    replacement: js.UndefOr[scala.Nothing],
-    defaultValue: js.Any
-  ): js.Array[Double] = js.native
   def subset(value: js.Array[js.Array[Double] | Double], index: Index, replacement: js.Any): js.Array[Double] = js.native
   def subset(
     value: js.Array[js.Array[Double] | Double],
@@ -2900,10 +2891,16 @@ trait MathJsStatic extends FactoryDependencies {
     replacement: js.Any,
     defaultValue: js.Any
   ): js.Array[Double] = js.native
+  def subset(
+    value: js.Array[js.Array[Double] | Double],
+    index: Index,
+    replacement: scala.Unit,
+    defaultValue: js.Any
+  ): js.Array[Double] = js.native
   def subset(value: Matrix, index: Index): Matrix = js.native
-  def subset(value: Matrix, index: Index, replacement: js.UndefOr[scala.Nothing], defaultValue: js.Any): Matrix = js.native
   def subset(value: Matrix, index: Index, replacement: js.Any): Matrix = js.native
   def subset(value: Matrix, index: Index, replacement: js.Any, defaultValue: js.Any): Matrix = js.native
+  def subset(value: Matrix, index: Index, replacement: scala.Unit, defaultValue: js.Any): Matrix = js.native
   
   /**
     * Subtract two values, x - y. For matrices, the function is evaluated
@@ -3013,7 +3010,7 @@ trait MathJsStatic extends FactoryDependencies {
     * @param signatures Object with one or multiple function signatures
     * @returns The created typed-function.
     */
-  def typed(name: String, signatures: Record[String, js.Function1[/* repeated */ _, _]]): js.Function1[/* repeated */ js.Any, _] = js.native
+  def typed(name: String, signatures: Record[String, js.Function1[/* repeated */ js.Any, js.Any]]): js.Function1[/* repeated */ js.Any, js.Any] = js.native
   
   /**
     * Inverse the sign of a value, apply a unary minus operation. For

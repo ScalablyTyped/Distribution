@@ -2,7 +2,6 @@ package typings.googleapis.chatV1Mod.chatV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * a typical action would be: delete invoice, email invoice or open the
   * invoice in browser.
   */
-@js.native
 trait SchemaCardAction extends StObject {
   
   /**
     * The label used to be displayed in the action menu item.
     */
-  var actionLabel: js.UndefOr[String] = js.native
+  var actionLabel: js.UndefOr[String] = js.undefined
   
   /**
     * The onclick action for this action item.
     */
-  var onClick: js.UndefOr[SchemaOnClick] = js.native
+  var onClick: js.UndefOr[SchemaOnClick] = js.undefined
 }
 object SchemaCardAction {
   

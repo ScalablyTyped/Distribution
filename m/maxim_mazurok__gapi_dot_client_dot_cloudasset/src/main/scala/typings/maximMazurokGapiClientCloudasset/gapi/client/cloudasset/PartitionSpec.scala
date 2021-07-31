@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudasset.gapi.client.cloudasset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PartitionSpec extends StObject {
   
   /** The partition key for BigQuery partitioned table. */
-  var partitionKey: js.UndefOr[String] = js.native
+  var partitionKey: js.UndefOr[String] = js.undefined
 }
 object PartitionSpec {
   

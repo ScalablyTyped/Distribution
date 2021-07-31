@@ -2,53 +2,51 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditsOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether to show the credits
     * text.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The URL for the credits label.
     */
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
   /**
     * (Highmaps) Credits for map source to be concatenated with conventional
     * credit text. By default this is a format string that collects copyright
     * information from the map if available.
     */
-  var mapText: js.UndefOr[String] = js.native
+  var mapText: js.UndefOr[String] = js.undefined
   
   /**
     * (Highmaps) Detailed credits for map source to be displayed on hover of
     * credits text. By default this is a format string that collects copyright
     * information from the map if available.
     */
-  var mapTextFull: js.UndefOr[String] = js.native
+  var mapTextFull: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Position configuration for the
     * credits label.
     */
-  var position: js.UndefOr[AlignObject] = js.native
+  var position: js.UndefOr[AlignObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) CSS styles for the credits
     * label.
     */
-  var style: js.UndefOr[CSSObject] = js.native
+  var style: js.UndefOr[CSSObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The text for the credits label.
     */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object CreditsOptions {
   

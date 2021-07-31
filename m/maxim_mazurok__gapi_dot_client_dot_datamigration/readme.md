@@ -10,9 +10,9 @@ TypeScript typings for Database Migration API v1beta1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.datamigration |
 | Keywords           | - |
-| # releases         | 2 |
-| # dependents       | 0 |
-| # downloads        | 37 |
+| # releases         | 8 |
+| # dependents       | 1 |
+| # downloads        | 943 |
 | # stars            | 0 |
 
 ## Links

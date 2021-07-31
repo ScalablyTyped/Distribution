@@ -2,7 +2,6 @@ package typings.babelTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -13,28 +12,16 @@ trait Comment extends StObject
 object Comment {
   
   @scala.inline
-  def CommentBlock(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelTypes.babelTypesStrings.CommentBlock,
-    value: String
-  ): typings.babelTypes.mod.CommentBlock = {
+  def CommentBlock(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.mod.CommentBlock = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CommentBlock")
     __obj.asInstanceOf[typings.babelTypes.mod.CommentBlock]
   }
   
   @scala.inline
-  def CommentLine(
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    `type`: typings.babelTypes.babelTypesStrings.CommentLine,
-    value: String
-  ): typings.babelTypes.mod.CommentLine = {
+  def CommentLine(end: Double, loc: SourceLocation, start: Double, value: String): typings.babelTypes.mod.CommentLine = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CommentLine")
     __obj.asInstanceOf[typings.babelTypes.mod.CommentLine]
   }
 }

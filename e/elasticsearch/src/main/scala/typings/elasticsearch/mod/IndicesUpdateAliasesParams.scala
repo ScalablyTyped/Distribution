@@ -3,18 +3,18 @@ package typings.elasticsearch.mod
 import typings.elasticsearch.anon.Actions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndicesUpdateAliasesParams extends GenericParams {
+trait IndicesUpdateAliasesParams
+  extends StObject
+     with GenericParams {
   
   @JSName("body")
-  var body_IndicesUpdateAliasesParams: Actions = js.native
+  var body_IndicesUpdateAliasesParams: Actions
   
-  var masterTimeout: js.UndefOr[TimeSpan] = js.native
+  var masterTimeout: js.UndefOr[TimeSpan] = js.undefined
   
-  var timeout: js.UndefOr[TimeSpan] = js.native
+  var timeout: js.UndefOr[TimeSpan] = js.undefined
 }
 object IndicesUpdateAliasesParams {
   

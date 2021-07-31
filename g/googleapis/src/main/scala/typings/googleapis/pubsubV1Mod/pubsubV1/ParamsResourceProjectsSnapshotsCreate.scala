@@ -6,16 +6,16 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsSnapshotsCreate extends StandardParameters {
+trait ParamsResourceProjectsSnapshotsCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Optional user-provided name for this snapshot. If the name is not
@@ -25,12 +25,12 @@ trait ParamsResourceProjectsSnapshotsCreate extends StandardParameters {
     * href="https://cloud.google.com/pubsub/docs/admin#resource_names">
     * resource name rules</a>. Format is `projects/{project}/snapshots/{snap}`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaCreateSnapshotRequest] = js.native
+  var requestBody: js.UndefOr[SchemaCreateSnapshotRequest] = js.undefined
 }
 object ParamsResourceProjectsSnapshotsCreate {
   

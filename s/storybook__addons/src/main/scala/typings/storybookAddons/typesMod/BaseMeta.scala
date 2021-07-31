@@ -3,10 +3,8 @@ package typings.storybookAddons.typesMod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseMeta[ComponentType] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait BaseMeta[ComponentType] extends StObject {
     *
     * Used by addons for automatic prop table generation and display of other component metadata.
     */
-  var component: js.UndefOr[ComponentType] = js.native
+  var component: js.UndefOr[ComponentType] = js.undefined
   
   /**
     * Auxiliary subcomponents that are part of the stories.
@@ -31,7 +29,7 @@ trait BaseMeta[ComponentType] extends StObject {
     *
     * By defining them each component will have its tab in the args table.
     */
-  var subcomponents: js.UndefOr[Record[String, ComponentType]] = js.native
+  var subcomponents: js.UndefOr[Record[String, ComponentType]] = js.undefined
   
   /**
     * Title of the story which will be presented in the navigation. **Should be unique.**
@@ -46,7 +44,7 @@ trait BaseMeta[ComponentType] extends StObject {
     *
     * @see [Story Hierarchy](https://storybook.js.org/docs/basics/writing-stories/#story-hierarchy)
     */
-  var title: String = js.native
+  var title: String
 }
 object BaseMeta {
   
@@ -57,7 +55,7 @@ object BaseMeta {
   }
   
   @scala.inline
-  implicit class BaseMetaMutableBuilder[Self <: BaseMeta[_], ComponentType] (val x: Self with BaseMeta[ComponentType]) extends AnyVal {
+  implicit class BaseMetaMutableBuilder[Self <: BaseMeta[?], ComponentType] (val x: Self & BaseMeta[ComponentType]) extends AnyVal {
     
     @scala.inline
     def setComponent(value: ComponentType): Self = StObject.set(x, "component", value.asInstanceOf[js.Any])

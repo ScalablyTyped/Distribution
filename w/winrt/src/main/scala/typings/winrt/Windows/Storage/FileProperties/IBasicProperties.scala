@@ -3,17 +3,15 @@ package typings.winrt.Windows.Storage.FileProperties
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBasicProperties extends StObject {
   
-  var dateModified: Date = js.native
+  var dateModified: Date
   
-  var itemDate: Date = js.native
+  var itemDate: Date
   
-  var size: Double = js.native
+  var size: Double
 }
 object IBasicProperties {
   

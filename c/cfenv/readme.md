@@ -11,8 +11,8 @@ easy access to your Cloud Foundry application environment
 | Full name          | cfenv |
 | Keywords           | - |
 | # releases         | 5 |
-| # dependents       | 95 |
-| # downloads        | 6948965 |
+| # dependents       | 96 |
+| # downloads        | 3567201 |
 | # stars            | 13 |
 
 ## Links

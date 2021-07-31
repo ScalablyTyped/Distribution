@@ -6,19 +6,17 @@ import typings.ipp.ippStrings.none
 import typings.ipp.ippStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobErrorSheet extends StObject {
   
-  var `job-error-sheet-type`: js.UndefOr[none | standard] = js.native
+  var `job-error-sheet-type`: js.UndefOr[none | standard] = js.undefined
   
-  var `job-error-sheet-when`: js.UndefOr[always | `on-error`] = js.native
+  var `job-error-sheet-when`: js.UndefOr[always | `on-error`] = js.undefined
   
-  var media: js.UndefOr[Media] = js.native
+  var media: js.UndefOr[Media] = js.undefined
   
-  var `media-col`: js.UndefOr[MediaInterface] = js.native
+  var `media-col`: js.UndefOr[MediaInterface] = js.undefined
 }
 object JobErrorSheet {
   

@@ -4,21 +4,20 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Host
   */
-@js.native
 trait HostAttributes
-  extends /* prop */ StringDictionary[js.Any] {
+  extends StObject
+     with /* prop */ StringDictionary[js.Any] {
   
-  var `class`: js.UndefOr[String | StringDictionary[Boolean]] = js.native
+  var `class`: js.UndefOr[String | StringDictionary[Boolean]] = js.undefined
   
-  var ref: js.UndefOr[js.Function1[/* el */ HTMLElement | Null, Unit]] = js.native
+  var ref: js.UndefOr[js.Function1[/* el */ HTMLElement | Null, Unit]] = js.undefined
   
-  var style: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+  var style: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
 }
 object HostAttributes {
   

@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VertexAddEventInfoVertices extends Object {
+trait VertexAddEventInfoVertices
+  extends StObject
+     with Object {
   
   /**
     * The ring/path index of the added vertex.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
-  var componentIndex: Double = js.native
+  var componentIndex: Double
   
   /**
     * The [graphic](https://developers.arcgis.com/javascript/latest/api-reference/esri-Graphic.html) with [point](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Point.html) geometries representing the vertices that were added.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
-  var coordinates: js.Array[Graphic] = js.native
+  var coordinates: js.Array[Graphic]
   
   /**
     * The index of the vertex position.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Sketch.html#VertexAddEventInfo)
     */
-  var vertexIndex: Double = js.native
+  var vertexIndex: Double
 }
 object VertexAddEventInfoVertices {
   

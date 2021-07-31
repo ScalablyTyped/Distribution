@@ -9,7 +9,6 @@ import typings.officeJs.officeJsStrings.Percent
 import typings.officeJs.officeJsStrings.Percentile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.6]
   */
-@js.native
 trait ConditionalColorScaleCriterion extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait ConditionalColorScaleCriterion extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait ConditionalColorScaleCriterion extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait ConditionalColorScaleCriterion extends StObject {
     *
     * [Api set: ExcelApi 1.6]
     */
-  var `type`: ConditionalFormatColorCriterionType | Invalid | LowestValue | HighestValue | Number | Percent | Formula | Percentile = js.native
+  var `type`: ConditionalFormatColorCriterionType | Invalid | LowestValue | HighestValue | Number | Percent | Formula | Percentile
 }
 object ConditionalColorScaleCriterion {
   

@@ -4,35 +4,33 @@ import typings.octokitTypes.anon.Cancertify
 import typings.octokitTypes.anon.EmailVerified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsersCreateGpgKeyForAuthenticatedResponseData extends StObject {
   
-  var can_certify: Boolean = js.native
+  var can_certify: Boolean
   
-  var can_encrypt_comms: Boolean = js.native
+  var can_encrypt_comms: Boolean
   
-  var can_encrypt_storage: Boolean = js.native
+  var can_encrypt_storage: Boolean
   
-  var can_sign: Boolean = js.native
+  var can_sign: Boolean
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var emails: js.Array[EmailVerified] = js.native
+  var emails: js.Array[EmailVerified]
   
-  var expires_at: String = js.native
+  var expires_at: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var key_id: String = js.native
+  var key_id: String
   
-  var primary_key_id: String = js.native
+  var primary_key_id: String
   
-  var public_key: String = js.native
+  var public_key: String
   
-  var subkeys: js.Array[Cancertify] = js.native
+  var subkeys: js.Array[Cancertify]
 }
 object UsersCreateGpgKeyForAuthenticatedResponseData {
   

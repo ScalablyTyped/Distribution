@@ -6,7 +6,6 @@ import typings.antdMobileRn.searchBarIndexNativeMod.SearchBarNativeProps
 import typings.antdMobileRn.searchBarIndexNativeMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("antd-mobile-rn", "SearchBar")

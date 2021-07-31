@@ -5,12 +5,12 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used for creating and appending new objects to a specific container. */
-@js.native
-trait XAppend extends XInterface {
+trait XAppend
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new object using the given descriptor and appends it to the related container. ** Note: ** The descriptor will not be changed and can be
@@ -18,7 +18,7 @@ trait XAppend extends XInterface {
     * @param descriptor the descriptor which should be serve to append a new object
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def appendByDescriptor(descriptor: XPropertySet): Unit = js.native
+  def appendByDescriptor(descriptor: XPropertySet): Unit
 }
 object XAppend {
   

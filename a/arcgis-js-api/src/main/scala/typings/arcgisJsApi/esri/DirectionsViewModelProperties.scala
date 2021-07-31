@@ -2,74 +2,74 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DirectionsViewModelProperties extends GoToProperties {
+trait DirectionsViewModelProperties
+  extends StObject
+     with GoToProperties {
   
   /**
     * The network attribute name to be used as the impedance attribute in the analysis.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#impedanceAttribute)
     */
-  var impedanceAttribute: js.UndefOr[String] = js.native
+  var impedanceAttribute: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of stops allowed for routing.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#maxStops)
     */
-  var maxStops: js.UndefOr[Double] = js.native
+  var maxStops: js.UndefOr[Double] = js.undefined
   
   /**
     * Route Parameters object used to call the service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeParameters)
     */
-  var routeParameters: js.UndefOr[RouteParametersProperties] = js.native
+  var routeParameters: js.UndefOr[RouteParametersProperties] = js.undefined
   
   /**
     * The URL of the REST endpoint of the Route service.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeServiceUrl)
     */
-  var routeServiceUrl: js.UndefOr[String] = js.native
+  var routeServiceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the symbol used to draw the route on the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#routeSymbol)
     */
-  var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.native
+  var routeSymbol: js.UndefOr[SimpleLineSymbolProperties] = js.undefined
   
   /**
     * The selected travel mode.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#selectedTravelMode)
     */
-  var selectedTravelMode: js.UndefOr[DirectionsViewModelSelectedTravelMode] = js.native
+  var selectedTravelMode: js.UndefOr[DirectionsViewModelSelectedTravelMode] = js.undefined
   
   /**
     * The default stop symbols used to display locations between the origin and final destination.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#stopSymbols)
     */
-  var stopSymbols: js.UndefOr[DirectionsViewModelStopSymbols] = js.native
+  var stopSymbols: js.UndefOr[DirectionsViewModelStopSymbols] = js.undefined
   
   /**
     * An array of graphics that define the stop locations along the route.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#stops)
     */
-  var stops: js.UndefOr[CollectionProperties[GraphicProperties]] = js.native
+  var stops: js.UndefOr[CollectionProperties[GraphicProperties]] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Directions-DirectionsViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object DirectionsViewModelProperties {
   

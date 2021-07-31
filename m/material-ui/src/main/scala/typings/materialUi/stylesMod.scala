@@ -10,7 +10,6 @@ import typings.materialUi.MaterialUI.Styles.zIndex
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stylesMod {
@@ -48,9 +47,8 @@ object stylesMod {
   @scala.inline
   def darkBaseTheme_=(x: RawTheme): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("darkBaseTheme")(x.asInstanceOf[js.Any])
   
-  @JSImport("material-ui/styles", "getMuiTheme")
-  @js.native
-  def getMuiTheme(muiTheme: typings.materialUi.MaterialUI.Styles.MuiTheme*): typings.materialUi.MaterialUI.Styles.MuiTheme = js.native
+  @scala.inline
+  def getMuiTheme(muiTheme: typings.materialUi.MaterialUI.Styles.MuiTheme*): typings.materialUi.MaterialUI.Styles.MuiTheme = ^.asInstanceOf[js.Dynamic].applyDynamic("getMuiTheme")(muiTheme.asInstanceOf[js.Any]).asInstanceOf[typings.materialUi.MaterialUI.Styles.MuiTheme]
   
   @JSImport("material-ui/styles", "lightBaseTheme")
   @js.native

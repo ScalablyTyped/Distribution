@@ -2,7 +2,6 @@ package typings.jsJoda.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("js-joda", "Month")
@@ -132,22 +131,18 @@ object Month {
   def SEPTEMBER_=(x: Month): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("SEPTEMBER")(x.asInstanceOf[js.Any])
   
   /* static member */
-  @JSImport("js-joda", "Month.from")
-  @js.native
-  def from(temporal: TemporalAccessor): Month = js.native
+  @scala.inline
+  def from(temporal: TemporalAccessor): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(temporal.asInstanceOf[js.Any]).asInstanceOf[Month]
   
   /* static member */
-  @JSImport("js-joda", "Month.of")
-  @js.native
-  def of(month: Double): Month = js.native
+  @scala.inline
+  def of(month: Double): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("of")(month.asInstanceOf[js.Any]).asInstanceOf[Month]
   
   /* static member */
-  @JSImport("js-joda", "Month.valueOf")
-  @js.native
-  def valueOf_(name: String): Month = js.native
+  @scala.inline
+  def valueOf_(name: String): Month = ^.asInstanceOf[js.Dynamic].applyDynamic("valueOf")(name.asInstanceOf[js.Any]).asInstanceOf[Month]
   
   /* static member */
-  @JSImport("js-joda", "Month.values")
-  @js.native
-  def values(): js.Array[Month] = js.native
+  @scala.inline
+  def values(): js.Array[Month] = ^.asInstanceOf[js.Dynamic].applyDynamic("values")().asInstanceOf[js.Array[Month]]
 }

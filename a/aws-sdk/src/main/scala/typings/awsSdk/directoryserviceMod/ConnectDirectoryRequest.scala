@@ -2,46 +2,44 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectDirectoryRequest extends StObject {
   
   /**
     * A DirectoryConnectSettings object that contains additional information for the operation.
     */
-  var ConnectSettings: DirectoryConnectSettings = js.native
+  var ConnectSettings: DirectoryConnectSettings
   
   /**
     * A description for the directory.
     */
-  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.directoryserviceMod.Description] = js.undefined
   
   /**
     * The fully qualified name of the on-premises directory, such as corp.example.com.
     */
-  var Name: DirectoryName = js.native
+  var Name: DirectoryName
   
   /**
     * The password for the on-premises user account.
     */
-  var Password: ConnectPassword = js.native
+  var Password: ConnectPassword
   
   /**
     * The NetBIOS name of the on-premises directory, such as CORP.
     */
-  var ShortName: js.UndefOr[DirectoryShortName] = js.native
+  var ShortName: js.UndefOr[DirectoryShortName] = js.undefined
   
   /**
     * The size of the directory.
     */
-  var Size: DirectorySize = js.native
+  var Size: DirectorySize
   
   /**
     * The tags to be assigned to AD Connector.
     */
-  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.directoryserviceMod.Tags] = js.undefined
 }
 object ConnectDirectoryRequest {
   

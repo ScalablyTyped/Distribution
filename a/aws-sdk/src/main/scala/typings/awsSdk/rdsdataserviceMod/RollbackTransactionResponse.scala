@@ -2,16 +2,14 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RollbackTransactionResponse extends StObject {
   
   /**
     * The status of the rollback operation.
     */
-  var transactionStatus: js.UndefOr[TransactionStatus] = js.native
+  var transactionStatus: js.UndefOr[TransactionStatus] = js.undefined
 }
 object RollbackTransactionResponse {
   

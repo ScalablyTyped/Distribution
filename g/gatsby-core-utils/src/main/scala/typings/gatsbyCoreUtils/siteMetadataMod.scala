@@ -2,32 +2,31 @@ package typings.gatsbyCoreUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object siteMetadataMod {
   
-  @JSImport("gatsby-core-utils/dist/site-metadata", "getSiteMetadata")
+  @JSImport("gatsby-core-utils/dist/site-metadata", JSImport.Namespace)
   @js.native
-  def getSiteMetadata(sitePath: String): js.Promise[ISiteMetadata | Null] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gatsby-core-utils/dist/site-metadata", "updateSiteMetadata")
-  @js.native
-  def updateSiteMetadata(metadata: ISiteMetadata): js.Promise[Unit] = js.native
-  @JSImport("gatsby-core-utils/dist/site-metadata", "updateSiteMetadata")
-  @js.native
-  def updateSiteMetadata(metadata: ISiteMetadata, merge: Boolean): js.Promise[Unit] = js.native
+  @scala.inline
+  def getSiteMetadata(sitePath: String): js.Promise[ISiteMetadata | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSiteMetadata")(sitePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ISiteMetadata | Null]]
   
-  @js.native
+  @scala.inline
+  def updateSiteMetadata(metadata: ISiteMetadata): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSiteMetadata")(metadata.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def updateSiteMetadata(metadata: ISiteMetadata, merge: Boolean): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSiteMetadata")(metadata.asInstanceOf[js.Any], merge.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait ISiteMetadata extends StObject {
     
-    var lastRun: js.UndefOr[Double] = js.native
+    var lastRun: js.UndefOr[Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var pid: js.UndefOr[Double] = js.native
+    var pid: js.UndefOr[Double] = js.undefined
     
-    var sitePath: String = js.native
+    var sitePath: String
   }
   object ISiteMetadata {
     

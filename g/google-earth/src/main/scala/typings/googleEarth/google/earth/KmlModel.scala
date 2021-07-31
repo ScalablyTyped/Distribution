@@ -2,55 +2,55 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KmlModel extends KmlAltitudeGeometry {
+trait KmlModel
+  extends StObject
+     with KmlAltitudeGeometry {
   
   /**
     * Returns the link of the collada model.
     */
-  def getLink(): KmlLink = js.native
+  def getLink(): KmlLink
   
   /**
     * Specifies the exact coordinates of the Model's origin in latitude, longitude, and altitude.
     * Latitude and longitude measurements are standard lat-lon projection with WGS84 datum.
     * Altitude is distance above the earth's surface, in meters, and is interpreted according to altitudeMode.
     */
-  def getLocation(): KmlLocation = js.native
+  def getLocation(): KmlLocation
   
   /**
     * Describes rotation of a 3D model's coordinate system to position the object in Google Earth.
     */
-  def getOrientation(): KmlOrientation = js.native
+  def getOrientation(): KmlOrientation
   
   /**
     * Scales a model along the x, y, and z axes in the model's coordinate space
     */
-  def getScale(): KmlScale = js.native
+  def getScale(): KmlScale
   
   /**
     * Sets the link of the collada model.
     */
-  def setLink(link: KmlLink): Unit = js.native
+  def setLink(link: KmlLink): Unit
   
   /**
     * Specifies the exact coordinates of the Model's origin in latitude, longitude, and altitude.
     * Latitude and longitude measurements are standard lat-lon projection with WGS84 datum.
     * Altitude is distance above the earth's surface, in meters, and is interpreted according to altitudeMode.
     */
-  def setLocation(location: KmlLocation): Unit = js.native
+  def setLocation(location: KmlLocation): Unit
   
   /**
     * Describes rotation of a 3D model's coordinate system to position the object in Google Earth.
     */
-  def setOrientation(orientation: KmlOrientation): Unit = js.native
+  def setOrientation(orientation: KmlOrientation): Unit
   
   /**
     * Scales a model along the x, y, and z axes in the model's coordinate space
     */
-  def setScale(scale: KmlScale): Unit = js.native
+  def setScale(scale: KmlScale): Unit
 }
 object KmlModel {
   

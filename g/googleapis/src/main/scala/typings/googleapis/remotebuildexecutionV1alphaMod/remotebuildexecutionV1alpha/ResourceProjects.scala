@@ -3,7 +3,6 @@ package typings.googleapis.remotebuildexecutionV1alphaMod.remotebuildexecutionV1
 import typings.googleapisCommon.apiMod.APIRequestContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/remotebuildexecution/v1alpha", "remotebuildexecution_v1alpha.Resource$Projects")

@@ -3,27 +3,25 @@ package typings.reactNative.mod
 import typings.reactNative.anon.FnCall
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimerMixin extends StObject {
   
-  var cancelAnimationFrame: js.Function1[/* handle */ Double, Unit] = js.native
+  var cancelAnimationFrame: js.Function1[/* handle */ Double, Unit]
   
-  var clearImmediate: js.Function1[/* handle */ Double, Unit] = js.native
+  var clearImmediate: js.Function1[/* handle */ Double, Unit]
   
-  var clearInterval: js.Function1[/* handle */ Double, Unit] = js.native
+  var clearInterval: js.Function1[/* handle */ Double, Unit]
   
-  var clearTimeout: js.Function1[/* handle */ Double, Unit] = js.native
+  var clearTimeout: js.Function1[/* handle */ Double, Unit]
   
-  var requestAnimationFrame: js.Function1[/* callback */ js.Function1[/* time */ Double, Unit], Double] = js.native
+  var requestAnimationFrame: js.Function1[/* callback */ js.Function1[/* time */ Double, Unit], Double]
   
-  var setImmediate: js.Function1[/* handler */ js.Function1[/* repeated */ js.Any, Unit], Double] = js.native
+  var setImmediate: js.Function1[/* handler */ js.Function1[/* repeated */ js.Any, Unit], Double]
   
-  var setInterval: FnCall = js.native
+  var setInterval: FnCall
   
-  var setTimeout: FnCall = js.native
+  var setTimeout: FnCall
 }
 object TimerMixin {
   

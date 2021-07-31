@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.reactVirtualized.anon.DisableHeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esAutoSizerMod {
@@ -38,9 +37,9 @@ object esAutoSizerMod {
     def defaultProps_=(x: DisableHeight): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AutoSizerProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -54,43 +53,43 @@ object esAutoSizerMod {
       * This function should implement the following signature:
       * ({ height, width }) => PropTypes.element
       */
-    def children(props: Size): ReactNode = js.native
+    def children(props: Size): ReactNode
     
     /**
       *     Optional custom CSS class name to attach to root AutoSizer element.
       * This is an advanced property and is not typically necessary.
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /**
       * Height passed to child for initial render; useful for server-side rendering.
       * This value will be overridden with an accurate height after mounting.
       */
-    var defaultHeight: js.UndefOr[Double] = js.native
+    var defaultHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Width passed to child for initial render; useful for server-side rendering.
       * This value will be overridden with an accurate width after mounting.
       */
-    var defaultWidth: js.UndefOr[Double] = js.native
+    var defaultWidth: js.UndefOr[Double] = js.undefined
     
     /** Disable dynamic :height property */
-    var disableHeight: js.UndefOr[Boolean] = js.native
+    var disableHeight: js.UndefOr[Boolean] = js.undefined
     
     /** Disable dynamic :width property */
-    var disableWidth: js.UndefOr[Boolean] = js.native
+    var disableWidth: js.UndefOr[Boolean] = js.undefined
     
     /** Nonce of the inlined stylesheet for Content Security Policy */
-    var nonce: js.UndefOr[String] = js.native
+    var nonce: js.UndefOr[String] = js.undefined
     
     /** Callback to be invoked on-resize: ({ height, width }) */
-    var onResize: js.UndefOr[js.Function1[/* info */ Size, _]] = js.native
+    var onResize: js.UndefOr[js.Function1[/* info */ Size, js.Any]] = js.undefined
     
     /**
       * Optional custom inline style to attach to root AutoSizer element.
       * This is an advanced property and is not typically necessary.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object AutoSizerProps {
     
@@ -143,7 +142,7 @@ object esAutoSizerMod {
       def setNonceUndefined: Self = StObject.set(x, "nonce", js.undefined)
       
       @scala.inline
-      def setOnResize(value: /* info */ Size => _): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
+      def setOnResize(value: /* info */ Size => js.Any): Self = StObject.set(x, "onResize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnResizeUndefined: Self = StObject.set(x, "onResize", js.undefined)
@@ -158,12 +157,11 @@ object esAutoSizerMod {
   
   type Dimensions = Size
   
-  @js.native
   trait Size extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Size {
     

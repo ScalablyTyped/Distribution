@@ -5,14 +5,15 @@ import typings.agGrid.iComponentMod.IComponent
 import typings.std.IArguments
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frameworkComponentWrapperMod {
   
   @JSImport("ag-grid/dist/lib/components/framework/frameworkComponentWrapper", "BaseComponentWrapper")
   @js.native
-  abstract class BaseComponentWrapper[F /* <: WrapableInterface */] () extends FrameworkComponentWrapper {
+  abstract class BaseComponentWrapper[F /* <: WrapableInterface */] ()
+    extends StObject
+       with FrameworkComponentWrapper {
     
     /* private */ def createMethod(wrapper: js.Any, methodName: js.Any, mandatory: js.Any): js.Any = js.native
     
@@ -25,34 +26,33 @@ object frameworkComponentWrapperMod {
   @js.native
   trait FrameworkComponentWrapper extends StObject {
     
-    def wrap[A /* <: IComponent[_] */](frameworkComponent: InstantiableAny, methodList: js.Array[String]): A = js.native
-    def wrap[A /* <: IComponent[_] */](
-      frameworkComponent: InstantiableAny,
-      methodList: js.Array[String],
-      optionalMethodList: js.UndefOr[scala.Nothing],
-      componentName: String
-    ): A = js.native
-    def wrap[A /* <: IComponent[_] */](
+    def wrap[A /* <: IComponent[js.Any] */](frameworkComponent: InstantiableAny, methodList: js.Array[String]): A = js.native
+    def wrap[A /* <: IComponent[js.Any] */](
       frameworkComponent: InstantiableAny,
       methodList: js.Array[String],
       optionalMethodList: js.Array[String]
     ): A = js.native
-    def wrap[A /* <: IComponent[_] */](
+    def wrap[A /* <: IComponent[js.Any] */](
       frameworkComponent: InstantiableAny,
       methodList: js.Array[String],
       optionalMethodList: js.Array[String],
       componentName: String
     ): A = js.native
+    def wrap[A /* <: IComponent[js.Any] */](
+      frameworkComponent: InstantiableAny,
+      methodList: js.Array[String],
+      optionalMethodList: Unit,
+      componentName: String
+    ): A = js.native
   }
   
-  @js.native
   trait WrapableInterface extends StObject {
     
-    def addMethod(name: String, callback: js.Function): Unit = js.native
+    def addMethod(name: String, callback: js.Function): Unit
     
-    def callMethod(name: String, args: IArguments): Unit = js.native
+    def callMethod(name: String, args: IArguments): Unit
     
-    def hasMethod(name: String): Boolean = js.native
+    def hasMethod(name: String): Boolean
   }
   object WrapableInterface {
     

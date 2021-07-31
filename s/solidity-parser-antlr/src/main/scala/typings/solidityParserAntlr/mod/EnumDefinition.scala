@@ -2,31 +2,26 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumDefinition
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var members: js.Array[EnumValue] = js.native
+  var members: js.Array[EnumValue]
   
-  var name: String = js.native
+  var name: String
   
   @JSName("type")
-  var type_EnumDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition = js.native
+  var type_EnumDefinition: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition
 }
 object EnumDefinition {
   
   @scala.inline
-  def apply(
-    members: js.Array[EnumValue],
-    name: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.EnumDefinition
-  ): EnumDefinition = {
+  def apply(members: js.Array[EnumValue], name: String): EnumDefinition = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("EnumDefinition")
     __obj.asInstanceOf[EnumDefinition]
   }
   

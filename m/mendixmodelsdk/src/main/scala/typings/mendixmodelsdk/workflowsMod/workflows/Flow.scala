@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.workflowsMod.StructureVersionInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -72,9 +71,8 @@ object Flow {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.create")
-  @js.native
-  def create(model: IModel): Flow = js.native
+  @scala.inline
+  def create(model: IModel): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[Flow]
   
   /**
     * Creates and returns a new Flow instance in the SDK and on the server.
@@ -85,9 +83,8 @@ object Flow {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.createInOutcomeUnderFlow")
-  @js.native
-  def createInOutcomeUnderFlow(container: Outcome): Flow = js.native
+  @scala.inline
+  def createInOutcomeUnderFlow(container: Outcome): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInOutcomeUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
   
   /**
     * Creates and returns a new Flow instance in the SDK and on the server.
@@ -98,9 +95,8 @@ object Flow {
     *  8.15.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.createInWorkflowUnderFlow")
-  @js.native
-  def createInWorkflowUnderFlow(container: Workflow): Flow = js.native
+  @scala.inline
+  def createInWorkflowUnderFlow(container: Workflow): Flow = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWorkflowUnderFlow")(container.asInstanceOf[js.Any]).asInstanceOf[Flow]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/workflows", "workflows.Flow.structureTypeName")

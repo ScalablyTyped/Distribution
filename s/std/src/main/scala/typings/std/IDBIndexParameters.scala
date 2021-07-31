@@ -2,15 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDBIndexParameters extends StObject {
   
-  var multiEntry: js.UndefOr[scala.Boolean] = js.native
+  var multiEntry: js.UndefOr[scala.Boolean] = js.undefined
   
-  var unique: js.UndefOr[scala.Boolean] = js.native
+  var unique: js.UndefOr[scala.Boolean] = js.undefined
 }
 object IDBIndexParameters {
   

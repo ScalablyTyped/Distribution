@@ -2,16 +2,14 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendCommandResult extends StObject {
   
   /**
     * The request as it was received by Systems Manager. Also provides the command ID which can be used future references to this request.
     */
-  var Command: js.UndefOr[typings.awsSdk.ssmMod.Command] = js.native
+  var Command: js.UndefOr[typings.awsSdk.ssmMod.Command] = js.undefined
 }
 object SendCommandResult {
   

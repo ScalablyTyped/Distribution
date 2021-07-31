@@ -2,38 +2,36 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartCopyJobInput extends StObject {
   
   /**
     * An Amazon Resource Name (ARN) that uniquely identifies a destination backup vault to copy to; for example, arn:aws:backup:us-east-1:123456789012:vault:aBackupVault.
     */
-  var DestinationBackupVaultArn: ARN = js.native
+  var DestinationBackupVaultArn: ARN
   
   /**
     * Specifies the IAM role ARN used to copy the target recovery point; for example, arn:aws:iam::123456789012:role/S3Access.
     */
-  var IamRoleArn: IAMRoleArn = js.native
+  var IamRoleArn: IAMRoleArn
   
   /**
     * A customer chosen string that can be used to distinguish between calls to StartCopyJob.
     */
-  var IdempotencyToken: js.UndefOr[String] = js.native
+  var IdempotencyToken: js.UndefOr[String] = js.undefined
   
-  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.native
+  var Lifecycle: js.UndefOr[typings.awsSdk.backupMod.Lifecycle] = js.undefined
   
   /**
     * An ARN that uniquely identifies a recovery point to use for the copy job; for example, arn:aws:backup:us-east-1:123456789012:recovery-point:1EB3B5E7-9EB0-435A-A80B-108B488B0D45. 
     */
-  var RecoveryPointArn: ARN = js.native
+  var RecoveryPointArn: ARN
   
   /**
     * The name of a logical source container where backups are stored. Backup vaults are identified by names that are unique to the account used to create them and the AWS Region where they are created. They consist of lowercase letters, numbers, and hyphens.
     */
-  var SourceBackupVaultName: BackupVaultName = js.native
+  var SourceBackupVaultName: BackupVaultName
 }
 object StartCopyJobInput {
   

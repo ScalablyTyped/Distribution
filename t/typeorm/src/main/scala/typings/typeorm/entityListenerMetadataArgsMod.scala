@@ -3,28 +3,26 @@ package typings.typeorm
 import typings.typeorm.eventListenerTypesMod.EventListenerType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object entityListenerMetadataArgsMod {
   
-  @js.native
   trait EntityListenerMetadataArgs extends StObject {
     
     /**
       * Class's property name to which listener is applied.
       */
-    val propertyName: String = js.native
+    val propertyName: String
     
     /**
       * Class to which listener is applied.
       */
-    val target: js.Function = js.native
+    val target: js.Function
     
     /**
       * The type of the listener.
       */
-    val `type`: EventListenerType = js.native
+    val `type`: EventListenerType
   }
   object EntityListenerMetadataArgs {
     

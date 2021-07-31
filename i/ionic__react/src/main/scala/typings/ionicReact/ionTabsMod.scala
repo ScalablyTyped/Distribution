@@ -11,7 +11,6 @@ import typings.react.mod.Ref
 import typings.react.mod.RefObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ionTabsMod {
@@ -34,18 +33,18 @@ object ionTabsMod {
     
     var selectTabHandler: js.UndefOr[js.Function1[/* tag */ String, Boolean]] = js.native
     
-    var tabBarRef: RefObject[_] = js.native
+    var tabBarRef: RefObject[js.Any] = js.native
   }
   
   type ChildFunction = js.Function1[/* ionTabContext */ IonTabsContextState, ReactNode]
   
-  @js.native
   trait Props
-    extends typings.ionicCore.componentsMod.LocalJSX.IonTabs {
+    extends StObject
+       with typings.ionicCore.componentsMod.LocalJSX.IonTabs {
     
-    var children: ChildFunction | ReactNode = js.native
+    var children: ChildFunction | ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
   }
   object Props {
     
@@ -79,10 +78,9 @@ object ionTabsMod {
     
     object JSX {
       
-      @js.native
       trait IntrinsicElements extends StObject {
         
-        var `ion-tabs`: js.Any = js.native
+        var `ion-tabs`: js.Any
       }
       object IntrinsicElements {
         

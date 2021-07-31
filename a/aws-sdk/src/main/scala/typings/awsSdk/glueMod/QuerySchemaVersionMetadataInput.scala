@@ -2,41 +2,39 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QuerySchemaVersionMetadataInput extends StObject {
   
   /**
     * Maximum number of results required per page. If the value is not supplied, this will be defaulted to 25 per page.
     */
-  var MaxResults: js.UndefOr[QuerySchemaVersionMetadataMaxResults] = js.native
+  var MaxResults: js.UndefOr[QuerySchemaVersionMetadataMaxResults] = js.undefined
   
   /**
     * Search key-value pairs for metadata, if they are not provided all the metadata information will be fetched.
     */
-  var MetadataList: js.UndefOr[typings.awsSdk.glueMod.MetadataList] = js.native
+  var MetadataList: js.UndefOr[typings.awsSdk.glueMod.MetadataList] = js.undefined
   
   /**
     * A continuation token, if this is a continuation call.
     */
-  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.native
+  var NextToken: js.UndefOr[SchemaRegistryTokenString] = js.undefined
   
   /**
     * A wrapper structure that may contain the schema name and Amazon Resource Name (ARN).
     */
-  var SchemaId: js.UndefOr[typings.awsSdk.glueMod.SchemaId] = js.native
+  var SchemaId: js.UndefOr[typings.awsSdk.glueMod.SchemaId] = js.undefined
   
   /**
     * The unique version ID of the schema version.
     */
-  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.native
+  var SchemaVersionId: js.UndefOr[SchemaVersionIdString] = js.undefined
   
   /**
     * The version number of the schema.
     */
-  var SchemaVersionNumber: js.UndefOr[typings.awsSdk.glueMod.SchemaVersionNumber] = js.native
+  var SchemaVersionNumber: js.UndefOr[typings.awsSdk.glueMod.SchemaVersionNumber] = js.undefined
 }
 object QuerySchemaVersionMetadataInput {
   

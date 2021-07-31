@@ -8,7 +8,6 @@ import typings.peerId.mod.^
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object noiseMod {
@@ -20,9 +19,11 @@ object noiseMod {
     * @param {bytes} staticNoiseKey x25519 private key, reuse for faster handshakes
     * @param {bytes} earlyData
     */
-  class Noise () extends INoiseConnection {
+  class Noise ()
+    extends StObject
+       with INoiseConnection {
     def this(staticNoiseKey: bytes) = this()
-    def this(staticNoiseKey: js.UndefOr[scala.Nothing], earlyData: bytes) = this()
+    def this(staticNoiseKey: Unit, earlyData: bytes) = this()
     def this(staticNoiseKey: bytes, earlyData: bytes) = this()
     
     var createSecureConnection: js.Any = js.native
@@ -54,6 +55,11 @@ object noiseMod {
       * @returns {Promise<SecureOutbound>}
       */
     def secureInbound(localPeer: ^, connection: js.Any): js.Promise[SecureOutbound] = js.native
+    /* CompleteClass */
+    override def secureInbound(localPeer: ^, insecure: js.Any, remotePeer: ^): js.Promise[SecureOutbound] = js.native
+    
+    /* CompleteClass */
+    override def secureOutbound(localPeer: ^, insecure: js.Any, remotePeer: ^): js.Promise[SecureOutbound] = js.native
     
     val staticKeys: js.Any = js.native
     

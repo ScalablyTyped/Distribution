@@ -2,17 +2,15 @@ package typings.googleapis.iamcredentialsV1Mod.iamcredentialsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGenerateIdTokenRequest extends StObject {
   
   /**
     * The audience for the token, such as the API or account that this token
     * grants access to.
     */
-  var audience: js.UndefOr[String] = js.native
+  var audience: js.UndefOr[String] = js.undefined
   
   /**
     * The sequence of service accounts in a delegation chain. Each service
@@ -25,13 +23,13 @@ trait SchemaGenerateIdTokenRequest extends StObject {
     * wildcard character is required; replacing it with a project ID is
     * invalid.
     */
-  var delegates: js.UndefOr[js.Array[String]] = js.native
+  var delegates: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Include the service account email in the token. If set to `true`, the
     * token will contain `email` and `email_verified` claims.
     */
-  var includeEmail: js.UndefOr[Boolean] = js.native
+  var includeEmail: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaGenerateIdTokenRequest {
   

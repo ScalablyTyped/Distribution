@@ -2,7 +2,6 @@ package typings.winrt.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,17 +11,27 @@ sealed trait DeviceClass extends StObject
 object DeviceClass extends StObject {
   
   @js.native
-  sealed trait all extends DeviceClass
+  sealed trait all
+    extends StObject
+       with DeviceClass
   
   @js.native
-  sealed trait audioCapture extends DeviceClass
+  sealed trait audioCapture
+    extends StObject
+       with DeviceClass
   
   @js.native
-  sealed trait audioRender extends DeviceClass
+  sealed trait audioRender
+    extends StObject
+       with DeviceClass
   
   @js.native
-  sealed trait portableStorageDevice extends DeviceClass
+  sealed trait portableStorageDevice
+    extends StObject
+       with DeviceClass
   
   @js.native
-  sealed trait videoCapture extends DeviceClass
+  sealed trait videoCapture
+    extends StObject
+       with DeviceClass
 }

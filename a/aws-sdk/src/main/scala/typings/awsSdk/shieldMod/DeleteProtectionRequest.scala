@@ -2,16 +2,14 @@ package typings.awsSdk.shieldMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteProtectionRequest extends StObject {
   
   /**
     * The unique identifier (ID) for the Protection object to be deleted.
     */
-  var ProtectionId: typings.awsSdk.shieldMod.ProtectionId = js.native
+  var ProtectionId: typings.awsSdk.shieldMod.ProtectionId
 }
 object DeleteProtectionRequest {
   

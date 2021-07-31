@@ -3,27 +3,25 @@ package typings.recharts.mod
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TooltipPayload extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var dataKey: js.UndefOr[DataKey] = js.native
+  var dataKey: js.UndefOr[DataKey] = js.undefined
   
-  var fill: js.UndefOr[String] = js.native
+  var fill: js.UndefOr[String] = js.undefined
   
-  var formatter: js.UndefOr[TooltipFormatter] = js.native
+  var formatter: js.UndefOr[TooltipFormatter] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var payload: js.UndefOr[js.Any] = js.native
+  var payload: js.UndefOr[js.Any] = js.undefined
   
-  var unit: js.UndefOr[String] = js.native
+  var unit: js.UndefOr[String] = js.undefined
   
-  var value: String | Double | (js.Array[String | Double]) = js.native
+  var value: String | Double | (js.Array[String | Double])
 }
 object TooltipPayload {
   

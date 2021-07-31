@@ -3,13 +3,11 @@ package typings.nodeRedEditorClient.mod
 import typings.nodeRedEditorClient.anon.Resize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Panels extends StObject {
   
-  def create(options: Resize): PanelsInstance = js.native
+  def create(options: Resize): PanelsInstance
 }
 object Panels {
   

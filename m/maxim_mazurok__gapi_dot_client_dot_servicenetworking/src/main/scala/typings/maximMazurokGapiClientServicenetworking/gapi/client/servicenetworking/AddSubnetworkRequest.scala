@@ -2,51 +2,49 @@ package typings.maximMazurokGapiClientServicenetworking.gapi.client.servicenetwo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddSubnetworkRequest extends StObject {
   
   /**
     * Required. A resource that represents the service consumer, such as `projects/123456`. The project number can be different from the value in the consumer network parameter. For
     * example, the network might be part of a Shared VPC network. In those cases, Service Networking validates that this resource belongs to that Shared VPC.
     */
-  var consumer: js.UndefOr[String] = js.native
+  var consumer: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The name of the service consumer's VPC network. The network must have an existing private connection that was provisioned through the connections.create method. The name
     * must be in the following format: `projects/{project}/global/networks/{network}`, where {project} is a project number, such as `12345`. {network} is the name of a VPC network in the
     * project.
     */
-  var consumerNetwork: js.UndefOr[String] = js.native
+  var consumerNetwork: js.UndefOr[String] = js.undefined
   
   /** Optional. Description of the subnet. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Required. The prefix length of the subnet's IP address range. Use CIDR range notation, such as `30` to provision a subnet with an `x.x.x.x/30` CIDR range. The IP address range is
     * drawn from a pool of available ranges in the service consumer's allocated range.
     */
-  var ipPrefixLength: js.UndefOr[Double] = js.native
+  var ipPrefixLength: js.UndefOr[Double] = js.undefined
   
   /** Required. The name of a [region](/compute/docs/regions-zones) for the subnet, such `europe-west1`. */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The starting address of a range. The address must be a valid IPv4 address in the x.x.x.x format. This value combined with the IP prefix range is the CIDR range for the
     * subnet. The range must be within the allocated range that is assigned to the private connection. If the CIDR range isn't available, the call fails.
     */
-  var requestedAddress: js.UndefOr[String] = js.native
+  var requestedAddress: js.UndefOr[String] = js.undefined
   
   /** Optional. A list of secondary IP ranges to be created within the new subnetwork. */
-  var secondaryIpRangeSpecs: js.UndefOr[js.Array[SecondaryIpRangeSpec]] = js.native
+  var secondaryIpRangeSpecs: js.UndefOr[js.Array[SecondaryIpRangeSpec]] = js.undefined
   
   /** Required. A name for the new subnet. For information about the naming requirements, see [subnetwork](/compute/docs/reference/rest/v1/subnetworks) in the Compute API documentation. */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /** A list of members that are granted the `compute.networkUser` role on the subnet. */
-  var subnetworkUsers: js.UndefOr[js.Array[String]] = js.native
+  var subnetworkUsers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AddSubnetworkRequest {
   

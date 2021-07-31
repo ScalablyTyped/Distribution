@@ -13,7 +13,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object analyticsApplicationMod {
@@ -30,7 +29,7 @@ object analyticsApplicationMod {
       */
     def this(name: String) = this()
     def this(name: String, args: AnalyticsApplicationArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: AnalyticsApplicationArgs, opts: CustomResourceOptions) = this()
     
     /**
@@ -103,6 +102,10 @@ object analyticsApplicationMod {
   /* static members */
   object AnalyticsApplication {
     
+    @JSImport("@pulumi/aws/kinesis/analyticsApplication", "AnalyticsApplication")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing AnalyticsApplication resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -112,29 +115,23 @@ object analyticsApplicationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/kinesis/analyticsApplication", "AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID]): AnalyticsApplication = js.native
-    @JSImport("@pulumi/aws/kinesis/analyticsApplication", "AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): AnalyticsApplication = js.native
-    @JSImport("@pulumi/aws/kinesis/analyticsApplication", "AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AnalyticsApplicationState): AnalyticsApplication = js.native
-    @JSImport("@pulumi/aws/kinesis/analyticsApplication", "AnalyticsApplication.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AnalyticsApplicationState, opts: CustomResourceOptions): AnalyticsApplication = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AnalyticsApplicationState): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AnalyticsApplicationState, opts: CustomResourceOptions): AnalyticsApplication = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[AnalyticsApplication]
     
     /**
       * Returns true if the given object is an instance of AnalyticsApplication.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/kinesis/analyticsApplication", "AnalyticsApplication.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/kinesis/analyticsApplication.AnalyticsApplication */ Boolean]
   }
   
-  @js.native
   trait AnalyticsApplicationArgs extends StObject {
     
     /**
@@ -143,34 +140,34 @@ object analyticsApplicationMod {
       */
     val cloudwatchLoggingOptions: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationCloudwatchLoggingOptions]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * SQL Code to transform input data, and generate output.
       */
-    val code: js.UndefOr[Input[String]] = js.native
+    val code: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the application.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Input configuration of the application. See Inputs below for more details.
       */
-    val inputs: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]] = js.native
+    val inputs: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]] = js.undefined
     
     /**
       * Name of the Kinesis Analytics Application.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Output destination configuration of the application. See Outputs below for more details.
       */
     val outputs: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An S3 Reference Data Source for the application.
@@ -178,12 +175,12 @@ object analyticsApplicationMod {
       */
     val referenceDataSources: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationReferenceDataSources]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Key-value map of tags for the Kinesis Analytics Application.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AnalyticsApplicationArgs {
     
@@ -249,13 +246,12 @@ object analyticsApplicationMod {
     }
   }
   
-  @js.native
   trait AnalyticsApplicationState extends StObject {
     
     /**
       * The ARN of the Kinesis Analytics Appliation.
       */
-    val arn: js.UndefOr[Input[ARN]] = js.native
+    val arn: js.UndefOr[Input[ARN]] = js.undefined
     
     /**
       * The CloudWatch log stream options to monitor application errors.
@@ -263,44 +259,44 @@ object analyticsApplicationMod {
       */
     val cloudwatchLoggingOptions: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationCloudwatchLoggingOptions]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * SQL Code to transform input data, and generate output.
       */
-    val code: js.UndefOr[Input[String]] = js.native
+    val code: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Timestamp when the application version was created.
       */
-    val createTimestamp: js.UndefOr[Input[String]] = js.native
+    val createTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description of the application.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Input configuration of the application. See Inputs below for more details.
       */
-    val inputs: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]] = js.native
+    val inputs: js.UndefOr[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationInputs]] = js.undefined
     
     /**
       * The Timestamp when the application was last updated.
       */
-    val lastUpdateTimestamp: js.UndefOr[Input[String]] = js.native
+    val lastUpdateTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the Kinesis Analytics Application.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Output destination configuration of the application. See Outputs below for more details.
       */
     val outputs: js.UndefOr[
         Input[js.Array[Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationOutput]]]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * An S3 Reference Data Source for the application.
@@ -308,22 +304,22 @@ object analyticsApplicationMod {
       */
     val referenceDataSources: js.UndefOr[
         Input[typings.pulumiAws.inputMod.kinesis.AnalyticsApplicationReferenceDataSources]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The Status of the application.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of tags for the Kinesis Analytics Application.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * The Version of the application.
       */
-    val version: js.UndefOr[Input[Double]] = js.native
+    val version: js.UndefOr[Input[Double]] = js.undefined
   }
   object AnalyticsApplicationState {
     

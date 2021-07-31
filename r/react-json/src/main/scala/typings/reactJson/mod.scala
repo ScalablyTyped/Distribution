@@ -3,7 +3,6 @@ package typings.reactJson
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,12 +14,11 @@ object mod {
   
   type Json = Component[JsonProperties, js.Object, js.Any]
   
-  @js.native
   trait JsonProperties extends StObject {
     
-    var onChange: js.UndefOr[OnChangeHandler] = js.native
+    var onChange: js.UndefOr[OnChangeHandler] = js.undefined
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object JsonProperties {
     

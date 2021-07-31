@@ -3,7 +3,6 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.Position
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,40 +35,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.ParticleContainer")
 @js.native
 class ParticleContainer ()
-  extends typings.pixiJs.PIXI.ParticleContainer {
+  extends StObject
+     with typings.pixiJs.PIXI.ParticleContainer {
   def this(maxSize: Double) = this()
-  def this(maxSize: js.UndefOr[scala.Nothing], properties: Position) = this()
   def this(maxSize: Double, properties: Position) = this()
-  def this(maxSize: js.UndefOr[scala.Nothing], properties: js.UndefOr[scala.Nothing], batchSize: Double) = this()
-  def this(maxSize: js.UndefOr[scala.Nothing], properties: Position, batchSize: Double) = this()
-  def this(maxSize: Double, properties: js.UndefOr[scala.Nothing], batchSize: Double) = this()
+  def this(maxSize: Unit, properties: Position) = this()
+  def this(maxSize: Double, properties: Unit, batchSize: Double) = this()
   def this(maxSize: Double, properties: Position, batchSize: Double) = this()
-  def this(
-    maxSize: js.UndefOr[scala.Nothing],
-    properties: js.UndefOr[scala.Nothing],
-    batchSize: js.UndefOr[scala.Nothing],
-    autoResize: Boolean
-  ) = this()
-  def this(
-    maxSize: js.UndefOr[scala.Nothing],
-    properties: js.UndefOr[scala.Nothing],
-    batchSize: Double,
-    autoResize: Boolean
-  ) = this()
-  def this(
-    maxSize: js.UndefOr[scala.Nothing],
-    properties: Position,
-    batchSize: js.UndefOr[scala.Nothing],
-    autoResize: Boolean
-  ) = this()
-  def this(maxSize: js.UndefOr[scala.Nothing], properties: Position, batchSize: Double, autoResize: Boolean) = this()
-  def this(
-    maxSize: Double,
-    properties: js.UndefOr[scala.Nothing],
-    batchSize: js.UndefOr[scala.Nothing],
-    autoResize: Boolean
-  ) = this()
-  def this(maxSize: Double, properties: js.UndefOr[scala.Nothing], batchSize: Double, autoResize: Boolean) = this()
-  def this(maxSize: Double, properties: Position, batchSize: js.UndefOr[scala.Nothing], autoResize: Boolean) = this()
+  def this(maxSize: Unit, properties: Unit, batchSize: Double) = this()
+  def this(maxSize: Unit, properties: Position, batchSize: Double) = this()
+  def this(maxSize: Double, properties: Unit, batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Double, properties: Unit, batchSize: Unit, autoResize: Boolean) = this()
   def this(maxSize: Double, properties: Position, batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Double, properties: Position, batchSize: Unit, autoResize: Boolean) = this()
+  def this(maxSize: Unit, properties: Unit, batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Unit, properties: Unit, batchSize: Unit, autoResize: Boolean) = this()
+  def this(maxSize: Unit, properties: Position, batchSize: Double, autoResize: Boolean) = this()
+  def this(maxSize: Unit, properties: Position, batchSize: Unit, autoResize: Boolean) = this()
 }

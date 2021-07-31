@@ -2,36 +2,34 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReplicationTaskIndividualAssessment extends StObject {
   
   /**
     * Name of this individual assessment.
     */
-  var IndividualAssessmentName: js.UndefOr[String] = js.native
+  var IndividualAssessmentName: js.UndefOr[String] = js.undefined
   
   /**
     * ARN of the premigration assessment run that is created to run this individual assessment.
     */
-  var ReplicationTaskAssessmentRunArn: js.UndefOr[String] = js.native
+  var ReplicationTaskAssessmentRunArn: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of this individual assessment.
     */
-  var ReplicationTaskIndividualAssessmentArn: js.UndefOr[String] = js.native
+  var ReplicationTaskIndividualAssessmentArn: js.UndefOr[String] = js.undefined
   
   /**
     * Date when this individual assessment was started as part of running the StartReplicationTaskAssessmentRun operation.
     */
-  var ReplicationTaskIndividualAssessmentStartDate: js.UndefOr[TStamp] = js.native
+  var ReplicationTaskIndividualAssessmentStartDate: js.UndefOr[TStamp] = js.undefined
   
   /**
     * Individual assessment status. This status can have one of the following values:    "cancelled"     "error"     "failed"     "passed"     "pending"     "running"   
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object ReplicationTaskIndividualAssessment {
   

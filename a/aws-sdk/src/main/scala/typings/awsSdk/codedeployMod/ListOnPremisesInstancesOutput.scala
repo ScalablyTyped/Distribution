@@ -2,21 +2,19 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListOnPremisesInstancesOutput extends StObject {
   
   /**
     * The list of matching on-premises instance names.
     */
-  var instanceNames: js.UndefOr[InstanceNameList] = js.native
+  var instanceNames: js.UndefOr[InstanceNameList] = js.undefined
   
   /**
     * If a large amount of information is returned, an identifier is also returned. It can be used in a subsequent list on-premises instances call to return the next set of on-premises instances in the list.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListOnPremisesInstancesOutput {
   

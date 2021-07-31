@@ -9,231 +9,229 @@ import typings.webpack.webpackStrings.verbose
 import typings.webpack.webpackStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatsOptions extends StObject {
   
   /**
   	 * fallback value for stats options when an option is not defined (has precedence over local webpack defaults)
   	 */
-  var all: js.UndefOr[Boolean] = js.native
+  var all: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add assets information
   	 */
-  var assets: js.UndefOr[Boolean] = js.native
+  var assets: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * sort the assets by that field
   	 */
-  var assetsSort: js.UndefOr[String] = js.native
+  var assetsSort: js.UndefOr[String] = js.undefined
   
   /**
   	 * add built at time information
   	 */
-  var builtAt: js.UndefOr[Boolean] = js.native
+  var builtAt: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add also information about cached (not built) modules
   	 */
-  var cached: js.UndefOr[Boolean] = js.native
+  var cached: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Show cached assets (setting this to `false` only shows emitted files)
   	 */
-  var cachedAssets: js.UndefOr[Boolean] = js.native
+  var cachedAssets: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add children information
   	 */
-  var children: js.UndefOr[Boolean] = js.native
+  var children: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Display all chunk groups with the corresponding bundles
   	 */
-  var chunkGroups: js.UndefOr[Boolean] = js.native
+  var chunkGroups: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add built modules information to chunk information
   	 */
-  var chunkModules: js.UndefOr[Boolean] = js.native
+  var chunkModules: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add the origins of chunks and chunk merging info
   	 */
-  var chunkOrigins: js.UndefOr[Boolean] = js.native
+  var chunkOrigins: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add chunk information
   	 */
-  var chunks: js.UndefOr[Boolean] = js.native
+  var chunks: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * sort the chunks by that field
   	 */
-  var chunksSort: js.UndefOr[String] = js.native
+  var chunksSort: js.UndefOr[String] = js.undefined
   
   /**
   	 * Enables/Disables colorful output
   	 */
-  var colors: js.UndefOr[Boolean | Bold] = js.native
+  var colors: js.UndefOr[Boolean | Bold] = js.undefined
   
   /**
   	 * context directory for request shortening
   	 */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
   	 * add module depth in module graph
   	 */
-  var depth: js.UndefOr[Boolean] = js.native
+  var depth: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Display the entry points with the corresponding bundles
   	 */
-  var entrypoints: js.UndefOr[Boolean] = js.native
+  var entrypoints: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add --env information
   	 */
-  var env: js.UndefOr[Boolean] = js.native
+  var env: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add details to errors (like resolving log)
   	 */
-  var errorDetails: js.UndefOr[Boolean] = js.native
+  var errorDetails: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add errors
   	 */
-  var errors: js.UndefOr[Boolean] = js.native
+  var errors: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Please use excludeModules instead.
   	 */
-  var exclude: js.UndefOr[FilterTypes | Boolean] = js.native
+  var exclude: js.UndefOr[FilterTypes | Boolean] = js.undefined
   
   /**
   	 * Suppress assets that match the specified filters. Filters can be Strings, RegExps or Functions
   	 */
-  var excludeAssets: js.UndefOr[FilterTypes] = js.native
+  var excludeAssets: js.UndefOr[FilterTypes] = js.undefined
   
   /**
   	 * Suppress modules that match the specified filters. Filters can be Strings, RegExps, Booleans or Functions
   	 */
-  var excludeModules: js.UndefOr[FilterTypes | Boolean] = js.native
+  var excludeModules: js.UndefOr[FilterTypes | Boolean] = js.undefined
   
   /**
   	 * add the hash of the compilation
   	 */
-  var hash: js.UndefOr[Boolean] = js.native
+  var hash: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add logging output
   	 */
-  var logging: js.UndefOr[Boolean | none | error | warn | info | log | verbose] = js.native
+  var logging: js.UndefOr[Boolean | none | error | warn | info | log | verbose] = js.undefined
   
   /**
   	 * Include debug logging of specified loggers (i. e. for plugins or loaders). Filters can be Strings, RegExps or Functions
   	 */
-  var loggingDebug: js.UndefOr[FilterTypes | Boolean] = js.native
+  var loggingDebug: js.UndefOr[FilterTypes | Boolean] = js.undefined
   
   /**
   	 * add stack traces to logging output
   	 */
-  var loggingTrace: js.UndefOr[Boolean] = js.native
+  var loggingTrace: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Set the maximum number of modules to be shown
   	 */
-  var maxModules: js.UndefOr[Double] = js.native
+  var maxModules: js.UndefOr[Double] = js.undefined
   
   /**
   	 * add information about assets inside modules
   	 */
-  var moduleAssets: js.UndefOr[Boolean] = js.native
+  var moduleAssets: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add dependencies and origin of warnings/errors
   	 */
-  var moduleTrace: js.UndefOr[Boolean] = js.native
+  var moduleTrace: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add built modules information
   	 */
-  var modules: js.UndefOr[Boolean] = js.native
+  var modules: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * sort the modules by that field
   	 */
-  var modulesSort: js.UndefOr[String] = js.native
+  var modulesSort: js.UndefOr[String] = js.undefined
   
   /**
   	 * add information about modules nested in other modules (like with module concatenation)
   	 */
-  var nestedModules: js.UndefOr[Boolean] = js.native
+  var nestedModules: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * show reasons why optimization bailed out for modules
   	 */
-  var optimizationBailout: js.UndefOr[Boolean] = js.native
+  var optimizationBailout: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Add output path information
   	 */
-  var outputPath: js.UndefOr[Boolean] = js.native
+  var outputPath: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add performance hint flags
   	 */
-  var performance: js.UndefOr[Boolean] = js.native
+  var performance: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * show exports provided by modules
   	 */
-  var providedExports: js.UndefOr[Boolean] = js.native
+  var providedExports: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Add public path information
   	 */
-  var publicPath: js.UndefOr[Boolean] = js.native
+  var publicPath: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add information about the reasons why modules are included
   	 */
-  var reasons: js.UndefOr[Boolean] = js.native
+  var reasons: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add the source code of modules
   	 */
-  var source: js.UndefOr[Boolean] = js.native
+  var source: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add timing information
   	 */
-  var timings: js.UndefOr[Boolean] = js.native
+  var timings: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * show exports used by modules
   	 */
-  var usedExports: js.UndefOr[Boolean] = js.native
+  var usedExports: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add webpack version information
   	 */
-  var version: js.UndefOr[Boolean] = js.native
+  var version: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * add warnings
   	 */
-  var warnings: js.UndefOr[Boolean] = js.native
+  var warnings: js.UndefOr[Boolean] = js.undefined
   
   /**
   	 * Suppress warnings that match the specified filters. Filters can be Strings, RegExps or Functions
   	 */
-  var warningsFilter: js.UndefOr[FilterTypes] = js.native
+  var warningsFilter: js.UndefOr[FilterTypes] = js.undefined
 }
 object StatsOptions {
   

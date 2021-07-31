@@ -5,31 +5,29 @@ import typings.blessed.mod.Widgets.Types.TPosition
 import typings.blessed.mod.Widgets.Types.TTopLeft
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coords extends StObject {
   
-  var _contentEnd: X = js.native
+  var _contentEnd: X
   
-  var base: Double = js.native
+  var base: Double
   
-  var nobot: TPosition = js.native
+  var nobot: TPosition
   
-  var noleft: TTopLeft = js.native
+  var noleft: TTopLeft
   
-  var noright: TPosition = js.native
+  var noright: TPosition
   
-  var notop: TTopLeft = js.native
+  var notop: TTopLeft
   
-  var xi: Double = js.native
+  var xi: Double
   
-  var xl: Double = js.native
+  var xl: Double
   
-  var yi: Double = js.native
+  var yi: Double
   
-  var yl: Double = js.native
+  var yl: Double
 }
 object Coords {
   

@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardAction extends StObject {
   
-  def Activate(): Unit = js.native
+  def Activate(): Unit
   
-  val Events: IEvents = js.native
+  val Events: IEvents
   
-  def GetExplanation(): String = js.native
+  def GetExplanation(): String
   
-  def GetName(): String = js.native
+  def GetName(): String
   
-  def IsEnabled(): Boolean = js.native
+  def IsEnabled(): Boolean
   
-  def IsVisible(): Boolean = js.native
+  def IsVisible(): Boolean
 }
 object IMetadataCardAction {
   

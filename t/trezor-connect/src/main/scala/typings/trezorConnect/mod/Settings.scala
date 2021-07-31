@@ -3,50 +3,48 @@ package typings.trezorConnect.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Settings extends StObject {
   
-  var configSrc: js.UndefOr[String] = js.native
+  var configSrc: js.UndefOr[String] = js.undefined
   
-  var connectSrc: js.UndefOr[String] = js.native
+  var connectSrc: js.UndefOr[String] = js.undefined
   
-  var debug: Boolean | StringDictionary[Boolean] = js.native
+  var debug: Boolean | StringDictionary[Boolean]
   
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
-  var hostIcon: js.UndefOr[String] = js.native
+  var hostIcon: js.UndefOr[String] = js.undefined
   
-  var hostLabel: js.UndefOr[String] = js.native
+  var hostLabel: js.UndefOr[String] = js.undefined
   
-  var iframeSrc: js.UndefOr[String] = js.native
+  var iframeSrc: js.UndefOr[String] = js.undefined
   
-  var lazyLoad: js.UndefOr[String] = js.native
+  var lazyLoad: js.UndefOr[String] = js.undefined
   
-  var manifest: js.UndefOr[ManifestParams] = js.native
+  var manifest: js.UndefOr[ManifestParams] = js.undefined
   
   // constant
-  var origin: js.UndefOr[String] = js.native
+  var origin: js.UndefOr[String] = js.undefined
   
-  var pendingTransportEvent: js.UndefOr[Boolean] = js.native
+  var pendingTransportEvent: js.UndefOr[Boolean] = js.undefined
   
-  var popup: js.UndefOr[Boolean] = js.native
+  var popup: js.UndefOr[Boolean] = js.undefined
   
-  var popupSrc: js.UndefOr[String] = js.native
+  var popupSrc: js.UndefOr[String] = js.undefined
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var supportedBrowser: js.UndefOr[Boolean] = js.native
+  var supportedBrowser: js.UndefOr[Boolean] = js.undefined
   
-  var transportReconnect: js.UndefOr[Boolean] = js.native
+  var transportReconnect: js.UndefOr[Boolean] = js.undefined
   
-  var trustedHost: js.UndefOr[Boolean] = js.native
+  var trustedHost: js.UndefOr[Boolean] = js.undefined
   
-  var webusb: js.UndefOr[Boolean] = js.native
+  var webusb: js.UndefOr[Boolean] = js.undefined
   
-  var webusbSrc: js.UndefOr[String] = js.native
+  var webusbSrc: js.UndefOr[String] = js.undefined
 }
 object Settings {
   

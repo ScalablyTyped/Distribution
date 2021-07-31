@@ -2,27 +2,25 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputSettings extends StObject {
   
-  var ArchiveOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.ArchiveOutputSettings] = js.native
+  var ArchiveOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.ArchiveOutputSettings] = js.undefined
   
-  var FrameCaptureOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureOutputSettings] = js.native
+  var FrameCaptureOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.FrameCaptureOutputSettings] = js.undefined
   
-  var HlsOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsOutputSettings] = js.native
+  var HlsOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.HlsOutputSettings] = js.undefined
   
-  var MediaPackageOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.MediaPackageOutputSettings] = js.native
+  var MediaPackageOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.MediaPackageOutputSettings] = js.undefined
   
-  var MsSmoothOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.MsSmoothOutputSettings] = js.native
+  var MsSmoothOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.MsSmoothOutputSettings] = js.undefined
   
-  var MultiplexOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexOutputSettings] = js.native
+  var MultiplexOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.MultiplexOutputSettings] = js.undefined
   
-  var RtmpOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.RtmpOutputSettings] = js.native
+  var RtmpOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.RtmpOutputSettings] = js.undefined
   
-  var UdpOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.UdpOutputSettings] = js.native
+  var UdpOutputSettings: js.UndefOr[typings.awsSdk.medialiveMod.UdpOutputSettings] = js.undefined
 }
 object OutputSettings {
   

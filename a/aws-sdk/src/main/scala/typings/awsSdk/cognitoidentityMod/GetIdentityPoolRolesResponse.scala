@@ -2,26 +2,24 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetIdentityPoolRolesResponse extends StObject {
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolId] = js.native
+  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolId] = js.undefined
   
   /**
     * How users for a specific identity provider are to mapped to roles. This is a String-to-RoleMapping object map. The string identifies the identity provider, for example, "graph.facebook.com" or "cognito-idp.us-east-1.amazonaws.com/us-east-1_abcdefghi:app_client_id".
     */
-  var RoleMappings: js.UndefOr[RoleMappingMap] = js.native
+  var RoleMappings: js.UndefOr[RoleMappingMap] = js.undefined
   
   /**
     * The map of roles associated with this pool. Currently only authenticated and unauthenticated roles are supported.
     */
-  var Roles: js.UndefOr[RolesMap] = js.native
+  var Roles: js.UndefOr[RolesMap] = js.undefined
 }
 object GetIdentityPoolRolesResponse {
   

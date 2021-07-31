@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,4 +30,9 @@ trait Values extends StObject {
   
   def setValues(values: js.Any): Unit = js.native
   def setValues(values: js.Any, update: Boolean): Unit = js.native
+}
+object Values {
+  
+  @scala.inline
+  def apply: Values = ^.asInstanceOf[js.Dynamic].selectDynamic("Values").asInstanceOf[Values]
 }

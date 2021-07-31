@@ -17,35 +17,44 @@ import typings.cliBox.cliBoxStrings.top
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("cli-box", JSImport.Namespace)
   @js.native
-  val ^ : BoxConstructor = js.native
+  val ^ : js.Object & BoxConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("cli-box", JSImport.Namespace)
   @js.native
-  class Class protected () extends Box {
+  class Class protected ()
+    extends StObject
+       with Box {
     def this(options: String) = this()
     def this(options: Options) = this()
     def this(options: String, text: String) = this()
     def this(options: String, text: Text) = this()
     def this(options: Options, text: String) = this()
     def this(options: Options, text: Text) = this()
-  }
-  
-  @js.native
-  trait Box extends StObject {
     
+    /* CompleteClass */
     var options: Fullscreen = js.native
     
+    /* CompleteClass */
     var settings: Height = js.native
     
-    def stringify(): String = js.native
+    /* CompleteClass */
+    override def stringify(): String = js.native
+  }
+  
+  trait Box extends StObject {
+    
+    var options: Fullscreen
+    
+    var settings: Height
+    
+    def stringify(): String
   }
   object Box {
     
@@ -71,45 +80,48 @@ object mod extends Shortcut {
   
   @js.native
   trait BoxConstructor
-    extends Instantiable1[(/* options */ Options) | (/* options */ String), Box]
+    extends StObject
+       with Instantiable1[(/* options */ Options) | (/* options */ String), Box]
        with Instantiable2[
           (/* options */ Options) | (/* options */ String), 
           (/* text */ String) | (/* text */ Text), 
           Box
         ] {
     
-    def apply(options: (Exclude[Options, stringify]) with Stringify): String = js.native
-    def apply(options: (Exclude[Options, stringify]) with Stringify, text: String): String = js.native
-    def apply(options: (Exclude[Options, stringify]) with Stringify, text: Text): String = js.native
+    def apply(options: (Exclude[Options, stringify]) & Stringify): String = js.native
+    def apply(options: (Exclude[Options, stringify]) & Stringify, text: String): String = js.native
+    def apply(options: (Exclude[Options, stringify]) & Stringify, text: Text): String = js.native
     def apply(options: String): Box = js.native
     def apply(options: String, text: String): Box = js.native
     def apply(options: String, text: Text): Box = js.native
+    def apply(options: Options): Box = js.native
+    def apply(options: Options, text: String): Box = js.native
+    def apply(options: Options, text: Text): Box = js.native
     
     var defaults: typings.cliBox.anon.Marks = js.native
   }
   
   /* Inlined std.Record<cli-box.cli-box.MarksKeys, string> */
-  @js.native
   trait Marks extends StObject {
     
-    var b: String = js.native
+    var b: String
     
-    var e: String = js.native
+    var e: String
     
-    var n: String = js.native
+    var n: String
     
     @JSName("ne")
-    var ne_FMarks: String = js.native
+    var ne_FMarks: String
     
-    var nw: String = js.native
+    var nw: String
     
-    var s: String = js.native
+    var s: String
     
-    var se: String = js.native
+    var se: String
     
-    var sw: String = js.native
+    var sw: String
     
-    var w: String = js.native
+    var w: String
   }
   object Marks {
     
@@ -204,22 +216,21 @@ object mod extends Shortcut {
     def w: typings.cliBox.cliBoxStrings.w = "w".asInstanceOf[typings.cliBox.cliBoxStrings.w]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var fullscreen: js.UndefOr[Boolean] = js.native
+    var fullscreen: js.UndefOr[Boolean] = js.undefined
     
-    var h: js.UndefOr[Double] = js.native
+    var h: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var marks: js.UndefOr[PartialMarks] = js.native
+    var marks: js.UndefOr[PartialMarks] = js.undefined
     
-    var stringify: js.UndefOr[Boolean] = js.native
+    var stringify: js.UndefOr[Boolean] = js.undefined
     
-    var w: js.UndefOr[Double] = js.native
+    var w: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -276,18 +287,17 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Text extends StObject {
     
-    var autoEOL: js.UndefOr[Boolean] = js.native
+    var autoEOL: js.UndefOr[Boolean] = js.undefined
     
-    var hAlign: js.UndefOr[left | middle | right] = js.native
+    var hAlign: js.UndefOr[left | middle | right] = js.undefined
     
-    var stretch: js.UndefOr[Boolean] = js.native
+    var stretch: js.UndefOr[Boolean] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var vAlign: js.UndefOr[top | center | bottom] = js.native
+    var vAlign: js.UndefOr[top | center | bottom] = js.undefined
   }
   object Text {
     
@@ -332,8 +342,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = BoxConstructor
+  type _To = js.Object & BoxConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: BoxConstructor = ^
+  override def _to: js.Object & BoxConstructor = ^
 }

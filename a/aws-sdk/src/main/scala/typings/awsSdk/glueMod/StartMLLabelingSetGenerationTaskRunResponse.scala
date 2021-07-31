@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartMLLabelingSetGenerationTaskRunResponse extends StObject {
   
   /**
     * The unique run identifier that is associated with this task run.
     */
-  var TaskRunId: js.UndefOr[HashString] = js.native
+  var TaskRunId: js.UndefOr[HashString] = js.undefined
 }
 object StartMLLabelingSetGenerationTaskRunResponse {
   

@@ -2,56 +2,54 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionSetting extends StObject {
   
   /**
     * The allowed values of the option setting.
     */
-  var AllowedValues: js.UndefOr[String] = js.native
+  var AllowedValues: js.UndefOr[String] = js.undefined
   
   /**
     * The DB engine specific parameter type.
     */
-  var ApplyType: js.UndefOr[String] = js.native
+  var ApplyType: js.UndefOr[String] = js.undefined
   
   /**
     * The data type of the option setting.
     */
-  var DataType: js.UndefOr[String] = js.native
+  var DataType: js.UndefOr[String] = js.undefined
   
   /**
     * The default value of the option setting.
     */
-  var DefaultValue: js.UndefOr[String] = js.native
+  var DefaultValue: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the option setting.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if the option setting is part of a collection.
     */
-  var IsCollection: js.UndefOr[Boolean] = js.native
+  var IsCollection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A Boolean value that, when true, indicates the option setting can be modified from the default.
     */
-  var IsModifiable: js.UndefOr[Boolean] = js.native
+  var IsModifiable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the option that has settings that you can set.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The current value of the option setting.
     */
-  var Value: js.UndefOr[String] = js.native
+  var Value: js.UndefOr[String] = js.undefined
 }
 object OptionSetting {
   

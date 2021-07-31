@@ -6,7 +6,6 @@ import typings.openfin.frameMod.FrameEvents
 import typings.openfin.identityMod.Identity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frameFrameMod {
@@ -139,16 +138,15 @@ object frameFrameMod {
     def window: typings.openfin.openfinStrings.window = "window".asInstanceOf[typings.openfin.openfinStrings.window]
   }
   
-  @js.native
   trait FrameInfo extends StObject {
     
-    var entityType: EntityType = js.native
+    var entityType: EntityType
     
-    var name: String = js.native
+    var name: String
     
-    var parent: Identity = js.native
+    var parent: Identity
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object FrameInfo {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteJobRequest extends StObject {
   
   /**
     * The name of the job definition to delete.
     */
-  var JobName: NameString = js.native
+  var JobName: NameString
 }
 object DeleteJobRequest {
   

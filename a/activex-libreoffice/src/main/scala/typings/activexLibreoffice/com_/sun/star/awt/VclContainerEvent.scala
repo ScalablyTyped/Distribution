@@ -4,7 +4,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,11 +12,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * These events are provided **only** for notification purposes.
   * @see XVclContainerListener
   */
-@js.native
-trait VclContainerEvent extends EventObject {
+trait VclContainerEvent
+  extends StObject
+     with EventObject {
   
   /** returns the child component that was added or removed. */
-  var Child: XInterface = js.native
+  var Child: XInterface
 }
 object VclContainerEvent {
   

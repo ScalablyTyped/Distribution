@@ -2,21 +2,19 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HttpDataSourceConfig extends StObject {
   
   /**
     * The authorization config in case the HTTP endpoint requires authorization.
     */
-  var authorizationConfig: js.UndefOr[AuthorizationConfig] = js.native
+  var authorizationConfig: js.UndefOr[AuthorizationConfig] = js.undefined
   
   /**
     * The HTTP URL endpoint. You can either specify the domain name or IP, and port combination, and the URL scheme must be HTTP or HTTPS. If the port is not specified, AWS AppSync uses the default port 80 for the HTTP endpoint and port 443 for HTTPS endpoints.
     */
-  var endpoint: js.UndefOr[String] = js.native
+  var endpoint: js.UndefOr[String] = js.undefined
 }
 object HttpDataSourceConfig {
   

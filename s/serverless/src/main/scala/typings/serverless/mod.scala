@@ -7,21 +7,66 @@ import typings.serverless.awsProviderMod.Resources
 import typings.serverless.validateMod.ApiGatewayEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("serverless", JSImport.Namespace)
   @js.native
-  class ^ () extends Serverless {
+  class ^ ()
+    extends StObject
+       with Serverless {
     def this(config: js.Object) = this()
+    
+    /* CompleteClass */
+    var cli: Log = js.native
+    
+    /* CompleteClass */
+    var config: Config = js.native
+    
+    /* CompleteClass */
+    override def getProvider(name: String): typings.serverless.awsProviderMod.^ = js.native
+    
+    /* CompleteClass */
+    override def getVersion(): String = js.native
+    
+    /* CompleteClass */
+    override def init(): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    var pluginManager: typings.serverless.pluginManagerMod.^ = js.native
+    
+    /* CompleteClass */
+    var resources: Resources = js.native
+    
+    /* CompleteClass */
+    override def run(): js.Promise[js.Any] = js.native
+    
+    /* CompleteClass */
+    var serverlessDirPath: String = js.native
+    
+    /* CompleteClass */
+    var service: typings.serverless.serviceMod.^ = js.native
+    
+    /* CompleteClass */
+    override def setProvider(name: String, provider: typings.serverless.awsProviderMod.^): Null = js.native
+    
+    /* CompleteClass */
+    var utils: typings.serverless.utilsMod.^ = js.native
+    
+    /* CompleteClass */
+    var variables: PopulateService = js.native
+    
+    /* CompleteClass */
+    var version: String = js.native
+    
+    /* CompleteClass */
+    var yamlParser: typings.serverless.yamlParserMod.^ = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var servicePath: String = js.native
+    var servicePath: String
   }
   object Config {
     
@@ -42,27 +87,26 @@ object mod {
   // Other events than ApiGatewayEvent are available
   type Event = ApiGatewayEvent | js.Object
   
-  @js.native
   trait FunctionDefinition extends StObject {
     
     @JSName("package")
-    var _package: Package = js.native
+    var _package: Package
     
-    var environment: js.UndefOr[StringDictionary[String]] = js.native
+    var environment: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var events: js.Array[Event] = js.native
+    var events: js.Array[Event]
     
-    var handler: String = js.native
+    var handler: String
     
-    var memorySize: js.UndefOr[Double] = js.native
+    var memorySize: js.UndefOr[Double] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var runtime: js.UndefOr[String] = js.native
+    var runtime: js.UndefOr[String] = js.undefined
     
-    var tags: js.UndefOr[StringDictionary[String]] = js.native
+    var tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object FunctionDefinition {
     
@@ -123,26 +167,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var extraServicePath: js.UndefOr[String] = js.native
+    var extraServicePath: js.UndefOr[String] = js.undefined
     
-    var function: js.UndefOr[String] = js.native
+    var function: js.UndefOr[String] = js.undefined
     
-    var noDeploy: js.UndefOr[Boolean] = js.native
+    var noDeploy: js.UndefOr[Boolean] = js.undefined
     
-    var region: String | Null = js.native
+    var region: String | Null
     
-    var stage: String | Null = js.native
+    var stage: String | Null
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
     @scala.inline
     def apply(): Options = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(region = null, stage = null)
       __obj.asInstanceOf[Options]
     }
     
@@ -187,16 +230,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Package extends StObject {
     
-    var artifact: js.UndefOr[String] = js.native
+    var artifact: js.UndefOr[String] = js.undefined
     
-    var exclude: js.Array[String] = js.native
+    var exclude: js.Array[String]
     
-    var include: js.Array[String] = js.native
+    var include: js.Array[String]
     
-    var individually: js.UndefOr[Boolean] = js.native
+    var individually: js.UndefOr[Boolean] = js.undefined
   }
   object Package {
     
@@ -235,38 +277,37 @@ object mod {
     }
   }
   
-  @js.native
   trait Serverless extends StObject {
     
-    var cli: Log = js.native
+    var cli: Log
     
-    var config: Config = js.native
+    var config: Config
     
-    def getProvider(name: String): typings.serverless.awsProviderMod.^ = js.native
+    def getProvider(name: String): typings.serverless.awsProviderMod.^
     
-    def getVersion(): String = js.native
+    def getVersion(): String
     
-    def init(): js.Promise[_] = js.native
+    def init(): js.Promise[js.Any]
     
-    var pluginManager: typings.serverless.pluginManagerMod.^ = js.native
+    var pluginManager: typings.serverless.pluginManagerMod.^
     
-    var resources: Resources = js.native
+    var resources: Resources
     
-    def run(): js.Promise[_] = js.native
+    def run(): js.Promise[js.Any]
     
-    var serverlessDirPath: String = js.native
+    var serverlessDirPath: String
     
-    var service: typings.serverless.serviceMod.^ = js.native
+    var service: typings.serverless.serviceMod.^
     
-    def setProvider(name: String, provider: typings.serverless.awsProviderMod.^): Null = js.native
+    def setProvider(name: String, provider: typings.serverless.awsProviderMod.^): Null
     
-    var utils: typings.serverless.utilsMod.^ = js.native
+    var utils: typings.serverless.utilsMod.^
     
-    var variables: PopulateService = js.native
+    var variables: PopulateService
     
-    var version: String = js.native
+    var version: String
     
-    var yamlParser: typings.serverless.yamlParserMod.^ = js.native
+    var yamlParser: typings.serverless.yamlParserMod.^
   }
   object Serverless {
     
@@ -276,10 +317,10 @@ object mod {
       config: Config,
       getProvider: String => typings.serverless.awsProviderMod.^,
       getVersion: () => String,
-      init: () => js.Promise[_],
+      init: () => js.Promise[js.Any],
       pluginManager: typings.serverless.pluginManagerMod.^,
       resources: Resources,
-      run: () => js.Promise[_],
+      run: () => js.Promise[js.Any],
       serverlessDirPath: String,
       service: typings.serverless.serviceMod.^,
       setProvider: (String, typings.serverless.awsProviderMod.^) => Null,
@@ -308,7 +349,7 @@ object mod {
       def setGetVersion(value: () => String): Self = StObject.set(x, "getVersion", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setInit(value: () => js.Promise[_]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
+      def setInit(value: () => js.Promise[js.Any]): Self = StObject.set(x, "init", js.Any.fromFunction0(value))
       
       @scala.inline
       def setPluginManager(value: typings.serverless.pluginManagerMod.^): Self = StObject.set(x, "pluginManager", value.asInstanceOf[js.Any])
@@ -317,7 +358,7 @@ object mod {
       def setResources(value: Resources): Self = StObject.set(x, "resources", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRun(value: () => js.Promise[_]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
+      def setRun(value: () => js.Promise[js.Any]): Self = StObject.set(x, "run", js.Any.fromFunction0(value))
       
       @scala.inline
       def setServerlessDirPath(value: String): Self = StObject.set(x, "serverlessDirPath", value.asInstanceOf[js.Any])

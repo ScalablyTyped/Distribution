@@ -4,11 +4,12 @@ import typings.durandal.anon.Callback
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
+trait DurandalRouterBase[T]
+  extends StObject
+     with DurandalEventSupport[T] {
   
   /**
     * An observable surfacing the active routing instruction that is currently being processed or has recently finished processing.
@@ -19,7 +20,7 @@ trait DurandalRouterBase[T] extends DurandalEventSupport[T] {
   /**
     * The active item/screen based on the current navigation state.
     */
-  var activeItem: DurandalActivator[_] = js.native
+  var activeItem: DurandalActivator[js.Any] = js.native
   
   /**
     * Builds an observable array designed to bind a navigation UI to. The model will exist in the `navigationModel` property.

@@ -2,20 +2,18 @@ package typings.weixinApp.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseOptions[R, E] extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* res */ js.Any, Unit]] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[js.Function1[/* res */ E, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ E, Unit]] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[js.Function1[/* res */ R, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ R, Unit]] = js.undefined
 }
 object BaseOptions {
   
@@ -26,7 +24,7 @@ object BaseOptions {
   }
   
   @scala.inline
-  implicit class BaseOptionsMutableBuilder[Self <: BaseOptions[_, _], R, E] (val x: Self with (BaseOptions[R, E])) extends AnyVal {
+  implicit class BaseOptionsMutableBuilder[Self <: BaseOptions[?, ?], R, E] (val x: Self & (BaseOptions[R, E])) extends AnyVal {
     
     @scala.inline
     def setComplete(value: /* res */ js.Any => Unit): Self = StObject.set(x, "complete", js.Any.fromFunction1(value))

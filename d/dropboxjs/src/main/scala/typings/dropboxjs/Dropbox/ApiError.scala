@@ -2,19 +2,17 @@ package typings.dropboxjs.Dropbox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiError extends StObject {
   
-  var method: String = js.native
+  var method: String
   
-  var responseText: String = js.native
+  var responseText: String
   
-  var status: Double = js.native
+  var status: Double
   
-  var url: String = js.native
+  var url: String
 }
 object ApiError {
   

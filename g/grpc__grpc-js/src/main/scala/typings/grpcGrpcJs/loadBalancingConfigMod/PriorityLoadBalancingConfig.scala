@@ -3,21 +3,21 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 import typings.grpcGrpcJs.grpcGrpcJsStrings.priority
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PriorityLoadBalancingConfig extends LoadBalancingConfig {
+trait PriorityLoadBalancingConfig
+  extends StObject
+     with LoadBalancingConfig {
   
-  var name: priority = js.native
+  var name: priority
   
-  var priority: PriorityLbConfig = js.native
+  var priority: PriorityLbConfig
 }
 object PriorityLoadBalancingConfig {
   
   @scala.inline
-  def apply(name: priority, priority: PriorityLbConfig): PriorityLoadBalancingConfig = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], priority = priority.asInstanceOf[js.Any])
+  def apply(priority: PriorityLbConfig): PriorityLoadBalancingConfig = {
+    val __obj = js.Dynamic.literal(name = "priority", priority = priority.asInstanceOf[js.Any])
     __obj.asInstanceOf[PriorityLoadBalancingConfig]
   }
   

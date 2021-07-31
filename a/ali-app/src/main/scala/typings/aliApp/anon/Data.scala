@@ -2,19 +2,17 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
   /** 服务器返回的数据 */
-  var data: String = js.native
+  var data: String
   
-  var header: js.Any = js.native
+  var header: js.Any
   
   /** HTTP 状态码 */
-  var statusCode: String = js.native
+  var statusCode: String
 }
 object Data {
   

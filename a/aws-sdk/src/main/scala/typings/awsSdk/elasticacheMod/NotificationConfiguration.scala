@@ -2,21 +2,19 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationConfiguration extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) that identifies the topic.
     */
-  var TopicArn: js.UndefOr[String] = js.native
+  var TopicArn: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of the topic.
     */
-  var TopicStatus: js.UndefOr[String] = js.native
+  var TopicStatus: js.UndefOr[String] = js.undefined
 }
 object NotificationConfiguration {
   

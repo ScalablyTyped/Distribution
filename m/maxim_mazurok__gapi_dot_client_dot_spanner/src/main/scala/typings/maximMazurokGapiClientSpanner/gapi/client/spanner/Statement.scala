@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientSpanner.gapi.client.spanner
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Statement extends StObject {
   
   /**
@@ -17,8 +15,8 @@ trait Statement extends StObject {
   var paramTypes: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Parameter names and values that bind to placeholders in the DML string. A parameter placeholder consists of the `@` character followed by the parameter name (for example,
@@ -28,11 +26,11 @@ trait Statement extends StObject {
   var params: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Required. The DML string. */
-  var sql: js.UndefOr[String] = js.native
+  var sql: js.UndefOr[String] = js.undefined
 }
 object Statement {
   
@@ -49,7 +47,7 @@ object Statement {
     def setParamTypes(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.spanner.gapi.client.spanner.Type}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
     ): Self = StObject.set(x, "paramTypes", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -59,7 +57,7 @@ object Statement {
     def setParams(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSpanner.maximMazurokGapiClientSpannerStrings.Statement & TopLevel[js.Any]
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline

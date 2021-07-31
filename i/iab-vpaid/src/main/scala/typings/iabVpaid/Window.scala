@@ -3,14 +3,12 @@ package typings.iabVpaid
 import typings.iabVpaid.iab.vpaid.VpaidCreative
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
   /** VPAID entry point */
-  var getVPAIDAd: js.UndefOr[js.Function0[VpaidCreative]] = js.native
+  var getVPAIDAd: js.UndefOr[js.Function0[VpaidCreative]] = js.undefined
 }
 object Window {
   

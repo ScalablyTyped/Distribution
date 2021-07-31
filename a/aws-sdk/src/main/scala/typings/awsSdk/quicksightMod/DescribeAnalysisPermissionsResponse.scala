@@ -2,36 +2,34 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAnalysisPermissionsResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the analysis whose permissions you're describing.
     */
-  var AnalysisArn: js.UndefOr[Arn] = js.native
+  var AnalysisArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The ID of the analysis whose permissions you're describing.
     */
-  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.native
+  var AnalysisId: js.UndefOr[RestrictiveResourceId] = js.undefined
   
   /**
     * A structure that describes the principals and the resource-level permissions on an analysis.
     */
-  var Permissions: js.UndefOr[ResourcePermissionList] = js.native
+  var Permissions: js.UndefOr[ResourcePermissionList] = js.undefined
   
   /**
     * The AWS request ID for this operation.
     */
-  var RequestId: js.UndefOr[String] = js.native
+  var RequestId: js.UndefOr[String] = js.undefined
   
   /**
     * The HTTP status of the request.
     */
-  var Status: js.UndefOr[StatusCode] = js.native
+  var Status: js.UndefOr[StatusCode] = js.undefined
 }
 object DescribeAnalysisPermissionsResponse {
   

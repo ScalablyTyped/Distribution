@@ -3,35 +3,33 @@ package typings.hapi.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestAuth extends StObject {
   
   /** an artifact object received from the authentication strategy and used in authentication-related actions. */
-  var artifacts: js.Object = js.native
+  var artifacts: js.Object
   
   /** the credential object received during the authentication process. The presence of an object does not mean successful authentication. */
-  var credentials: AuthCredentials = js.native
+  var credentials: AuthCredentials
   
   /** the authentication error is failed and mode set to 'try'. */
-  var error: Error = js.native
+  var error: Error
   
   /** true if the request has been successfully authenticated, otherwise false. */
-  var isAuthenticated: Boolean = js.native
+  var isAuthenticated: Boolean
   
   /**
     * true is the request has been successfully authorized against the route authentication access configuration. If the route has not access rules defined or if the request failed authorization,
     * set to false.
     */
-  var isAuthorized: Boolean = js.native
+  var isAuthorized: Boolean
   
   /** the route authentication mode. */
-  var mode: String = js.native
+  var mode: String
   
   /** the name of the strategy used. */
-  var strategy: String = js.native
+  var strategy: String
 }
 object RequestAuth {
   

@@ -4,28 +4,26 @@ import typings.miniprogram.AsyncCallbackFailObject
 import typings.std.Uint8ClampedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  data :std.Uint8ClampedArray,   x :number,   y :number,   width :number,   height :number} & miniprogram.AsyncCallback<void> */
-@js.native
 trait dataUint8ClampedArrayxnum extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var data: Uint8ClampedArray = js.native
+  var data: Uint8ClampedArray
   
-  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var success: js.UndefOr[js.Function1[/* res */ Unit, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ Unit, Unit]] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object dataUint8ClampedArrayxnum {
   

@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Option extends StObject {
   
   /**
     * The option's name. For protobuf built-in options (options defined in descriptor.proto), this is the short name. For example, "map_entry". For custom options, it should be the
     * fully-qualified name. For example, "google.api.http".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The option's value packed in an Any message. If the value is a primitive, the corresponding wrapper type defined in google/protobuf/wrappers.proto should be used. If the value is an
@@ -22,8 +20,8 @@ trait Option extends StObject {
   var value: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Option with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Option & TopLevel[js.Any]
+  ] = js.undefined
 }
 object Option {
   
@@ -46,7 +44,7 @@ object Option {
     def setValue(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Option with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientMonitoring.maximMazurokGapiClientMonitoringStrings.Option & TopLevel[js.Any]
     ): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline

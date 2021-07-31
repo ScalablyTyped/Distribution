@@ -2,28 +2,23 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignmentStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.AssignmentStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.AssignmentStatement]
+     with _Statement {
   
-  var init: js.Array[Expression] = js.native
+  var init: js.Array[Expression]
   
-  var variables: js.Array[IndexExpression | MemberExpression | Identifier] = js.native
+  var variables: js.Array[IndexExpression | MemberExpression | Identifier]
 }
 object AssignmentStatement {
   
   @scala.inline
-  def apply(
-    init: js.Array[Expression],
-    `type`: typings.luaparse.luaparseStrings.AssignmentStatement,
-    variables: js.Array[IndexExpression | MemberExpression | Identifier]
-  ): AssignmentStatement = {
+  def apply(init: js.Array[Expression], variables: js.Array[IndexExpression | MemberExpression | Identifier]): AssignmentStatement = {
     val __obj = js.Dynamic.literal(init = init.asInstanceOf[js.Any], variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("AssignmentStatement")
     __obj.asInstanceOf[AssignmentStatement]
   }
   

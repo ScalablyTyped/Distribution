@@ -2,31 +2,29 @@ package typings.awsSdk.dataexchangeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAssetRequest extends StObject {
   
   /**
     * The unique identifier for an asset.
     */
-  var AssetId: string = js.native
+  var AssetId: string
   
   /**
     * The unique identifier for a data set.
     */
-  var DataSetId: string = js.native
+  var DataSetId: string
   
   /**
     * The name of the asset. When importing from Amazon S3, the S3 object key is used as the asset name. When exporting to Amazon S3, the asset name is used as default target S3 object key.
     */
-  var Name: AssetName = js.native
+  var Name: AssetName
   
   /**
     * The unique identifier for a revision.
     */
-  var RevisionId: string = js.native
+  var RevisionId: string
 }
 object UpdateAssetRequest {
   

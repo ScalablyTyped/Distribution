@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetCrawlersResponse extends StObject {
   
   /**
     * A list of crawler definitions.
     */
-  var Crawlers: js.UndefOr[CrawlerList] = js.native
+  var Crawlers: js.UndefOr[CrawlerList] = js.undefined
   
   /**
     * A list of names of crawlers that were not found.
     */
-  var CrawlersNotFound: js.UndefOr[CrawlerNameList] = js.native
+  var CrawlersNotFound: js.UndefOr[CrawlerNameList] = js.undefined
 }
 object BatchGetCrawlersResponse {
   

@@ -2,21 +2,19 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxAttrExprInfo extends StObject {
   
-  var qContinuousAxes: Boolean = js.native
+  var qContinuousAxes: Boolean
   
-  var qFallbackTitle: String = js.native
+  var qFallbackTitle: String
   
-  var qIsCyclic: Boolean = js.native
+  var qIsCyclic: Boolean
   
-  var qMax: Double = js.native
+  var qMax: Double
   
-  var qMin: Double = js.native
+  var qMin: Double
 }
 object NxAttrExprInfo {
   

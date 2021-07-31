@@ -3,26 +3,26 @@ package typings.xstate.typesMod
 import typings.xstate.xstateStrings.`final`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FinalStateNodeConfig[TContext, TEvent /* <: EventObject */] extends AtomicStateNodeConfig[TContext, TEvent] {
+trait FinalStateNodeConfig[TContext, TEvent /* <: EventObject */]
+  extends StObject
+     with AtomicStateNodeConfig[TContext, TEvent] {
   
   @JSName("type")
-  var type_FinalStateNodeConfig: `final` = js.native
+  var type_FinalStateNodeConfig: `final`
 }
 object FinalStateNodeConfig {
   
   @scala.inline
-  def apply[TContext, TEvent /* <: EventObject */](`type`: `final`): FinalStateNodeConfig[TContext, TEvent] = {
-    val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply[TContext, TEvent /* <: EventObject */](initial: Unit, onDone: Unit, states: Unit): FinalStateNodeConfig[TContext, TEvent] = {
+    val __obj = js.Dynamic.literal(initial = initial.asInstanceOf[js.Any], onDone = onDone.asInstanceOf[js.Any], states = states.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("final")
     __obj.asInstanceOf[FinalStateNodeConfig[TContext, TEvent]]
   }
   
   @scala.inline
-  implicit class FinalStateNodeConfigMutableBuilder[Self <: FinalStateNodeConfig[_, _], TContext, TEvent /* <: EventObject */] (val x: Self with (FinalStateNodeConfig[TContext, TEvent])) extends AnyVal {
+  implicit class FinalStateNodeConfigMutableBuilder[Self <: FinalStateNodeConfig[?, ?], TContext, TEvent /* <: EventObject */] (val x: Self & (FinalStateNodeConfig[TContext, TEvent])) extends AnyVal {
     
     @scala.inline
     def setType(value: `final`): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])

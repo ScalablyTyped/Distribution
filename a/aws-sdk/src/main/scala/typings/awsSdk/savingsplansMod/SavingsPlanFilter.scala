@@ -2,21 +2,19 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavingsPlanFilter extends StObject {
   
   /**
     * The filter name.
     */
-  var name: js.UndefOr[SavingsPlansFilterName] = js.native
+  var name: js.UndefOr[SavingsPlansFilterName] = js.undefined
   
   /**
     * The filter value.
     */
-  var values: js.UndefOr[ListOfStrings] = js.native
+  var values: js.UndefOr[ListOfStrings] = js.undefined
 }
 object SavingsPlanFilter {
   

@@ -2,14 +2,14 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A static class that contains the names of contact fields for storing commonly requested information like email address and phone numbers. */
 @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
 @js.native
 abstract class KnownContactField ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Contacts.KnownContactField
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Contacts.KnownContactField
 object KnownContactField {
   
   @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField")
@@ -22,9 +22,8 @@ object KnownContactField {
     * @return The type of field.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.convertNameToType")
-  @js.native
-  def convertNameToType(name: String): typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType = js.native
+  @scala.inline
+  def convertNameToType(name: String): typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType = ^.asInstanceOf[js.Dynamic].applyDynamic("convertNameToType")(name.asInstanceOf[js.Any]).asInstanceOf[typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType]
   
   /**
     * Converts the type of a field to its corresponding string name.
@@ -32,9 +31,8 @@ object KnownContactField {
     * @return The name of the field.
     */
   /* static member */
-  @JSGlobal("Windows.ApplicationModel.Contacts.KnownContactField.convertTypeToName")
-  @js.native
-  def convertTypeToName(`type`: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType): String = js.native
+  @scala.inline
+  def convertTypeToName(`type`: typings.winrtUwp.Windows.ApplicationModel.Contacts.ContactFieldType): String = ^.asInstanceOf[js.Dynamic].applyDynamic("convertTypeToName")(`type`.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /** Contains the name of the field used for email addresses. */
   /* static member */

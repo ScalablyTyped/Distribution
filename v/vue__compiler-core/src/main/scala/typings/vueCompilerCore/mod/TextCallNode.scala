@@ -3,20 +3,19 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`12`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextCallNode
-  extends TemplateChildNode
-     with Node2 {
+  extends StObject
+     with Node2
+     with TemplateChildNode {
   
-  var codegenNode: CallExpression | SimpleExpressionNode = js.native
+  var codegenNode: CallExpression | SimpleExpressionNode
   
-  var content: TextNode | InterpolationNode | CompoundExpressionNode = js.native
+  var content: TextNode | InterpolationNode | CompoundExpressionNode
   
   @JSName("type")
-  var type_TextCallNode: `12` = js.native
+  var type_TextCallNode: `12`
 }
 object TextCallNode {
   
@@ -24,11 +23,10 @@ object TextCallNode {
   def apply(
     codegenNode: CallExpression | SimpleExpressionNode,
     content: TextNode | InterpolationNode | CompoundExpressionNode,
-    loc: SourceLocation,
-    `type`: `12`
+    loc: SourceLocation
   ): TextCallNode = {
     val __obj = js.Dynamic.literal(codegenNode = codegenNode.asInstanceOf[js.Any], content = content.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(12)
     __obj.asInstanceOf[TextCallNode]
   }
   

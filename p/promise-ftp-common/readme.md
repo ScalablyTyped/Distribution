@@ -12,7 +12,7 @@ error classes and other common code used in promise-ftp and promise-sftp
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 12 |
-| # downloads        | 809148 |
+| # downloads        | 1052932 |
 | # stars            | 0 |
 
 ## Links

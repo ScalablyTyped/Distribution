@@ -2,17 +2,15 @@ package typings.chrome.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Chromestyle extends StObject {
   
-  var chrome_style: js.UndefOr[Boolean] = js.native
+  var chrome_style: js.UndefOr[Boolean] = js.undefined
   
-  var open_in_tab: js.UndefOr[Boolean] = js.native
+  var open_in_tab: js.UndefOr[Boolean] = js.undefined
   
-  var page: js.UndefOr[String] = js.native
+  var page: js.UndefOr[String] = js.undefined
 }
 object Chromestyle {
   

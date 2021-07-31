@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1Evaluation extends StObject {
   
   /**
     * Output only. Type of task that the model version being evaluated performs, as defined in the evaluationJobConfig.inputConfig.annotationType field of the evaluation job that created
     * this evaluation.
     */
-  var annotationType: js.UndefOr[String] = js.native
+  var annotationType: js.UndefOr[String] = js.undefined
   
   /** Output only. Options used in the evaluation job that created this evaluation. */
-  var config: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationConfig] = js.native
+  var config: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationConfig] = js.undefined
   
   /** Output only. Timestamp for when this evaluation was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Output only. The number of items in the ground truth dataset that were used for this evaluation. Only populated when the evaulation is for certain AnnotationTypes. */
-  var evaluatedItemCount: js.UndefOr[String] = js.native
+  var evaluatedItemCount: js.UndefOr[String] = js.undefined
   
   /** Output only. Timestamp for when the evaluation job that created this evaluation ran. */
-  var evaluationJobRunTime: js.UndefOr[String] = js.native
+  var evaluationJobRunTime: js.UndefOr[String] = js.undefined
   
   /** Output only. Metrics comparing predictions to ground truth labels. */
-  var evaluationMetrics: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationMetrics] = js.native
+  var evaluationMetrics: js.UndefOr[GoogleCloudDatalabelingV1beta1EvaluationMetrics] = js.undefined
   
   /** Output only. Resource name of an evaluation. The name has the following format: "projects/{project_id}/datasets/{dataset_id}/evaluations/ {evaluation_id}' */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1Evaluation {
   

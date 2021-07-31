@@ -3,12 +3,11 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeSpec
-  extends /**
+  extends StObject
+     with /**
   * Allow specifying arbitrary fields on a NodeSpec.
   */
 /* key */ StringDictionary[js.Any] {
@@ -18,25 +17,25 @@ trait NodeSpec
     * node](#model.NodeType.isLeaf), it doesn't have directly editable
     * content and should be treated as a single unit in the view.
     */
-  var atom: js.UndefOr[Boolean | Null] = js.native
+  var atom: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The attributes that nodes of this type get.
     */
-  var attrs: js.UndefOr[StringDictionary[AttributeSpec] | Null] = js.native
+  var attrs: js.UndefOr[StringDictionary[AttributeSpec] | Null] = js.undefined
   
   /**
     * Can be used to indicate that this node contains code, which
     * causes some commands to behave differently.
     */
-  var code: js.UndefOr[Boolean | Null] = js.native
+  var code: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The content expression for this node, as described in the [schema
     * guide](/docs/guide/#schema.content_expressions). When not given,
     * the node does not allow any content.
     */
-  var content: js.UndefOr[String | Null] = js.native
+  var content: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Determines whether this node is considered an important parent
@@ -48,25 +47,25 @@ trait NodeSpec
     * non-default-paragraph textblock types, and possibly list items,
     * are marked as defining.
     */
-  var defining: js.UndefOr[Boolean | Null] = js.native
+  var defining: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Determines whether nodes of this type can be dragged without
     * being selected. Defaults to false.
     */
-  var draggable: js.UndefOr[Boolean | Null] = js.native
+  var draggable: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The group or space-separated groups to which this node belongs,
     * which can be referred to in the content expressions for the
     * schema.
     */
-  var group: js.UndefOr[String | Null] = js.native
+  var group: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Should be set to true for inline nodes. (Implied for text nodes.)
     */
-  var `inline`: js.UndefOr[Boolean | Null] = js.native
+  var `inline`: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * When enabled (default is false), the sides of nodes of this type
@@ -74,7 +73,7 @@ trait NodeSpec
     * backspacing or lifting, won't cross. An example of a node that
     * should probably have this enabled is a table cell.
     */
-  var isolating: js.UndefOr[Boolean | Null] = js.native
+  var isolating: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * The marks that are allowed inside of this node. May be a
@@ -83,7 +82,7 @@ trait NodeSpec
     * not given, nodes with inline content default to allowing all
     * marks, other nodes default to not allowing marks.
     */
-  var marks: js.UndefOr[String | Null] = js.native
+  var marks: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Associates DOM parser information with this node, which can be
@@ -93,14 +92,14 @@ trait NodeSpec
     * If you supply your own parser, you do not need to also specify
     * parsing rules in your schema.
     */
-  var parseDOM: js.UndefOr[js.Array[ParseRule] | Null] = js.native
+  var parseDOM: js.UndefOr[js.Array[ParseRule] | Null] = js.undefined
   
   /**
     * Controls whether nodes of this type can be selected as a [node
     * selection](#state.NodeSelection). Defaults to true for non-text
     * nodes.
     */
-  var selectable: js.UndefOr[Boolean | Null] = js.native
+  var selectable: js.UndefOr[Boolean | Null] = js.undefined
   
   /**
     * Defines the default way a node of this type should be serialized
@@ -116,13 +115,13 @@ trait NodeSpec
     * differently, this is not supported inside the editor, so you
     * shouldn't override that in your text node spec.
     */
-  var toDOM: js.UndefOr[(js.Function1[/* node */ ProsemirrorNode[_], DOMOutputSpec]) | Null] = js.native
+  var toDOM: js.UndefOr[(js.Function1[/* node */ ProsemirrorNode[js.Any], DOMOutputSpec]) | Null] = js.undefined
   
   /**
     * Defines the default way a node of this type should be serialized
     * to a string representation for debugging (e.g. in error messages).
     */
-  var toDebugString: js.UndefOr[(js.Function1[/* node */ ProsemirrorNode[_], String]) | Null] = js.native
+  var toDebugString: js.UndefOr[(js.Function1[/* node */ ProsemirrorNode[js.Any], String]) | Null] = js.undefined
 }
 object NodeSpec {
   
@@ -247,7 +246,7 @@ object NodeSpec {
     def setSelectableUndefined: Self = StObject.set(x, "selectable", js.undefined)
     
     @scala.inline
-    def setToDOM(value: /* node */ ProsemirrorNode[_] => DOMOutputSpec): Self = StObject.set(x, "toDOM", js.Any.fromFunction1(value))
+    def setToDOM(value: /* node */ ProsemirrorNode[js.Any] => DOMOutputSpec): Self = StObject.set(x, "toDOM", js.Any.fromFunction1(value))
     
     @scala.inline
     def setToDOMNull: Self = StObject.set(x, "toDOM", null)
@@ -256,7 +255,7 @@ object NodeSpec {
     def setToDOMUndefined: Self = StObject.set(x, "toDOM", js.undefined)
     
     @scala.inline
-    def setToDebugString(value: /* node */ ProsemirrorNode[_] => String): Self = StObject.set(x, "toDebugString", js.Any.fromFunction1(value))
+    def setToDebugString(value: /* node */ ProsemirrorNode[js.Any] => String): Self = StObject.set(x, "toDebugString", js.Any.fromFunction1(value))
     
     @scala.inline
     def setToDebugStringNull: Self = StObject.set(x, "toDebugString", null)

@@ -2,39 +2,34 @@ package typings.reactNativeStatusBarHeight
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("react-native-status-bar-height", "getStatusBarHeight")
+  @JSImport("react-native-status-bar-height", JSImport.Namespace)
   @js.native
-  def getStatusBarHeight(): Double = js.native
-  @JSImport("react-native-status-bar-height", "getStatusBarHeight")
-  @js.native
-  def getStatusBarHeight(skipAndroid: Boolean): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native-status-bar-height", "isExpo")
-  @js.native
-  def isExpo(): Boolean = js.native
+  @scala.inline
+  def getStatusBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")().asInstanceOf[Double]
+  @scala.inline
+  def getStatusBarHeight(skipAndroid: Boolean): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStatusBarHeight")(skipAndroid.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-native-status-bar-height", "isIPhone12")
-  @js.native
-  def isIPhone12(): Boolean = js.native
+  @scala.inline
+  def isExpo(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExpo")().asInstanceOf[Boolean]
   
-  @JSImport("react-native-status-bar-height", "isIPhone12Max")
-  @js.native
-  def isIPhone12Max(): Boolean = js.native
+  @scala.inline
+  def isIPhone12(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone12")().asInstanceOf[Boolean]
   
-  @JSImport("react-native-status-bar-height", "isIPhoneWithMonobrow")
-  @js.native
-  def isIPhoneWithMonobrow(): Boolean = js.native
+  @scala.inline
+  def isIPhone12Max(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhone12Max")().asInstanceOf[Boolean]
   
-  @JSImport("react-native-status-bar-height", "isIPhoneX")
-  @js.native
-  def isIPhoneX(): Boolean = js.native
+  @scala.inline
+  def isIPhoneWithMonobrow(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneWithMonobrow")().asInstanceOf[Boolean]
   
-  @JSImport("react-native-status-bar-height", "isIPhoneXMax")
-  @js.native
-  def isIPhoneXMax(): Boolean = js.native
+  @scala.inline
+  def isIPhoneX(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneX")().asInstanceOf[Boolean]
+  
+  @scala.inline
+  def isIPhoneXMax(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isIPhoneXMax")().asInstanceOf[Boolean]
 }

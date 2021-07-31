@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,19 +18,25 @@ object PrintMarginUnit extends StObject {
     *
     */
   @js.native
-  sealed trait centimeters extends PrintMarginUnit
+  sealed trait centimeters
+    extends StObject
+       with PrintMarginUnit
   
   /**
     * Assign the page margins in inches.
     *
     */
   @js.native
-  sealed trait inches extends PrintMarginUnit
+  sealed trait inches
+    extends StObject
+       with PrintMarginUnit
   
   /**
     * Assign the page margins in points. A point is 1/72 of an inch.
     *
     */
   @js.native
-  sealed trait points extends PrintMarginUnit
+  sealed trait points
+    extends StObject
+       with PrintMarginUnit
 }

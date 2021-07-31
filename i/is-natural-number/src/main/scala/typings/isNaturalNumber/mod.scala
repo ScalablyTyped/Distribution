@@ -2,35 +2,33 @@ package typings.isNaturalNumber
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("is-natural-number", JSImport.Namespace)
-  @js.native
-  def apply(number: String): Boolean = js.native
-  @JSImport("is-natural-number", JSImport.Namespace)
-  @js.native
-  def apply(number: String, option: Options): Boolean = js.native
+  @scala.inline
+  def apply(number: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(number: String, option: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   /**
     * Rreturns true if the first argument is one of the natural numbers.
     * If not, or the argument is not a number, it returns false.
     */
-  @JSImport("is-natural-number", JSImport.Namespace)
-  @js.native
-  def apply(number: Double): Boolean = js.native
-  @JSImport("is-natural-number", JSImport.Namespace)
-  @js.native
-  def apply(number: Double, option: Options): Boolean = js.native
+  @scala.inline
+  def apply(number: Double): Boolean = ^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def apply(number: Double, option: Options): Boolean = (^.asInstanceOf[js.Dynamic].apply(number.asInstanceOf[js.Any], option.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
+  @JSImport("is-natural-number", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
       * Setting this option true makes 0 regarded as a natural number.
       */
-    var includeZero: Boolean = js.native
+    var includeZero: Boolean
   }
   object Options {
     

@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSAMLProviderResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the SAML provider that was updated.
     */
-  var SAMLProviderArn: js.UndefOr[arnType] = js.native
+  var SAMLProviderArn: js.UndefOr[arnType] = js.undefined
 }
 object UpdateSAMLProviderResponse {
   

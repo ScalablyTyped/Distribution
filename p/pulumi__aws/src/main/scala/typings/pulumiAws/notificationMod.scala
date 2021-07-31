@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationMod {
@@ -45,6 +44,10 @@ object notificationMod {
   /* static members */
   object Notification {
     
+    @JSImport("@pulumi/aws/autoscaling/notification", "Notification")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Notification resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -54,46 +57,40 @@ object notificationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/autoscaling/notification", "Notification.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Notification = js.native
-    @JSImport("@pulumi/aws/autoscaling/notification", "Notification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Notification = js.native
-    @JSImport("@pulumi/aws/autoscaling/notification", "Notification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotificationState): Notification = js.native
-    @JSImport("@pulumi/aws/autoscaling/notification", "Notification.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: NotificationState, opts: CustomResourceOptions): Notification = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Notification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Notification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotificationState): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Notification]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: NotificationState, opts: CustomResourceOptions): Notification = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Notification]
     
     /**
       * Returns true if the given object is an instance of Notification.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/autoscaling/notification", "Notification.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/autoscaling/notification.Notification */ Boolean]
   }
   
-  @js.native
   trait NotificationArgs extends StObject {
     
     /**
       * A list of AutoScaling Group Names
       */
-    val groupNames: Input[js.Array[Input[String]]] = js.native
+    val groupNames: Input[js.Array[Input[String]]]
     
     /**
       * A list of Notification Types that trigger
       * notifications. Acceptable values are documented [in the AWS documentation here](https://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_NotificationConfiguration.html)
       */
-    val notifications: Input[js.Array[Input[NotificationType]]] = js.native
+    val notifications: Input[js.Array[Input[NotificationType]]]
     
     /**
       * The Topic ARN for notifications to be sent through
       */
-    val topicArn: Input[String] = js.native
+    val topicArn: Input[String]
   }
   object NotificationArgs {
     
@@ -127,24 +124,23 @@ object notificationMod {
     }
   }
   
-  @js.native
   trait NotificationState extends StObject {
     
     /**
       * A list of AutoScaling Group Names
       */
-    val groupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val groupNames: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * A list of Notification Types that trigger
       * notifications. Acceptable values are documented [in the AWS documentation here](https://docs.aws.amazon.com/AutoScaling/latest/APIReference/API_NotificationConfiguration.html)
       */
-    val notifications: js.UndefOr[Input[js.Array[Input[NotificationType]]]] = js.native
+    val notifications: js.UndefOr[Input[js.Array[Input[NotificationType]]]] = js.undefined
     
     /**
       * The Topic ARN for notifications to be sent through
       */
-    val topicArn: js.UndefOr[Input[String]] = js.native
+    val topicArn: js.UndefOr[Input[String]] = js.undefined
   }
   object NotificationState {
     

@@ -2,21 +2,19 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentPropsOptionsArrayValue extends StObject {
   
   /**
     * ComponentPropsOptionsArray 设置的 key
     */
-  var key: String = js.native
+  var key: String
   
   /**
     * 用户填入的值
     */
-  var value: Double | String = js.native
+  var value: Double | String
 }
 object ComponentPropsOptionsArrayValue {
   

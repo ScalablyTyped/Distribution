@@ -11,8 +11,8 @@ yauzl unzipping with Promises
 | Full name          | yauzl-promise |
 | Keywords           | yauzl, unzip, zip, promise, async, await |
 | # releases         | 0 |
-| # dependents       | 15 |
-| # downloads        | 235880 |
+| # dependents       | 16 |
+| # downloads        | 327286 |
 | # stars            | 0 |
 
 ## Links

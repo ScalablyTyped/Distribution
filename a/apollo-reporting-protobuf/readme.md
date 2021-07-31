@@ -10,9 +10,9 @@ Protobuf format for Apollo usage reporting
 | ------------------ | :-------------: |
 | Full name          | apollo-reporting-protobuf |
 | Keywords           | GraphQL, Apollo, Server, Javascript |
-| # releases         | 6 |
-| # dependents       | 3 |
-| # downloads        | 2664888 |
+| # releases         | 7 |
+| # dependents       | 4 |
+| # downloads        | 5976837 |
 | # stars            | 0 |
 
 ## Links

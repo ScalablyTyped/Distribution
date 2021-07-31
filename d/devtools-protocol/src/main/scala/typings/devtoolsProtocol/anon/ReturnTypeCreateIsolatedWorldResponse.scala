@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Page.CreateIsolatedWorldRequest
 import typings.devtoolsProtocol.mod.Protocol.Page.CreateIsolatedWorldResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeCreateIsolatedWorldResponse extends StObject {
   
-  var paramsType: js.Array[CreateIsolatedWorldRequest] = js.native
+  var paramsType: js.Array[CreateIsolatedWorldRequest]
   
-  var returnType: CreateIsolatedWorldResponse = js.native
+  var returnType: CreateIsolatedWorldResponse
 }
 object ReturnTypeCreateIsolatedWorldResponse {
   

@@ -3,7 +3,6 @@ package typings.three
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propertyBindingMod {
@@ -41,6 +40,10 @@ object propertyBindingMod {
   /* static members */
   object PropertyBinding {
     
+    @JSImport("three/src/animation/PropertyBinding", "PropertyBinding")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("three/src/animation/PropertyBinding", "PropertyBinding.Composite")
     @js.native
     class Composite protected () extends StObject {
@@ -56,38 +59,32 @@ object propertyBindingMod {
       def unbind(): Unit = js.native
     }
     
-    @JSImport("three/src/animation/PropertyBinding", "PropertyBinding.create")
-    @js.native
-    def create(root: js.Any, path: js.Any): PropertyBinding | Composite = js.native
-    @JSImport("three/src/animation/PropertyBinding", "PropertyBinding.create")
-    @js.native
-    def create(root: js.Any, path: js.Any, parsedPath: js.Any): PropertyBinding | Composite = js.native
+    @scala.inline
+    def create(root: js.Any, path: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
+    @scala.inline
+    def create(root: js.Any, path: js.Any, parsedPath: js.Any): PropertyBinding | Composite = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(root.asInstanceOf[js.Any], path.asInstanceOf[js.Any], parsedPath.asInstanceOf[js.Any])).asInstanceOf[PropertyBinding | Composite]
     
-    @JSImport("three/src/animation/PropertyBinding", "PropertyBinding.findNode")
-    @js.native
-    def findNode(root: js.Any, nodeName: String): js.Any = js.native
+    @scala.inline
+    def findNode(root: js.Any, nodeName: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("findNode")(root.asInstanceOf[js.Any], nodeName.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
-    @JSImport("three/src/animation/PropertyBinding", "PropertyBinding.parseTrackName")
-    @js.native
-    def parseTrackName(trackName: String): ParseTrackNameResults = js.native
+    @scala.inline
+    def parseTrackName(trackName: String): ParseTrackNameResults = ^.asInstanceOf[js.Dynamic].applyDynamic("parseTrackName")(trackName.asInstanceOf[js.Any]).asInstanceOf[ParseTrackNameResults]
     
-    @JSImport("three/src/animation/PropertyBinding", "PropertyBinding.sanitizeNodeName")
-    @js.native
-    def sanitizeNodeName(name: String): String = js.native
+    @scala.inline
+    def sanitizeNodeName(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sanitizeNodeName")(name.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
-  @js.native
   trait ParseTrackNameResults extends StObject {
     
-    var nodeName: String = js.native
+    var nodeName: String
     
-    var objectIndex: String = js.native
+    var objectIndex: String
     
-    var objectName: String = js.native
+    var objectName: String
     
-    var propertyIndex: String = js.native
+    var propertyIndex: String
     
-    var propertyName: String = js.native
+    var propertyName: String
   }
   object ParseTrackNameResults {
     

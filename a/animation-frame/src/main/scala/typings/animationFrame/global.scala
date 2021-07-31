@@ -2,7 +2,6 @@ package typings.animationFrame
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -11,7 +10,8 @@ object global {
   @JSGlobal("AnimationFrame")
   @js.native
   class AnimationFrame ()
-    extends typings.animationFrame.AnimationFrame
+    extends StObject
+       with typings.animationFrame.AnimationFrame
   @JSGlobal("AnimationFrame")
   @js.native
   def AnimationFrame: typings.animationFrame.AnimationFrame = js.native

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.geometry
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.rendering.XBezierPolyPolygon2D
   * @since OOo 2.0
   */
-@js.native
 trait RealBezierSegment2D extends StObject {
   
-  var C1x: Double = js.native
+  var C1x: Double
   
-  var C1y: Double = js.native
+  var C1y: Double
   
-  var C2x: Double = js.native
+  var C2x: Double
   
-  var C2y: Double = js.native
+  var C2y: Double
   
-  var Px: Double = js.native
+  var Px: Double
   
-  var Py: Double = js.native
+  var Py: Double
 }
 object RealBezierSegment2D {
   

@@ -2,17 +2,15 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputObjectConfig extends StObject {
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var fields: InputObjectConfigFieldMapThunk | InputObjectConfigFieldMap = js.native
+  var fields: InputObjectConfigFieldMapThunk | InputObjectConfigFieldMap
   
-  var name: String = js.native
+  var name: String
 }
 object InputObjectConfig {
   

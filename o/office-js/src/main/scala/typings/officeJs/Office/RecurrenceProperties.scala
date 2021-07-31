@@ -5,7 +5,6 @@ import typings.officeJs.Office.MailboxEnums.Month
 import typings.officeJs.Office.MailboxEnums.WeekNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,44 +18,43 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * **{@link https://docs.microsoft.com/office/dev/add-ins/outlook/outlook-add-ins-overview#extension-points | Applicable Outlook mode}**: Compose or Read
   */
-@js.native
 trait RecurrenceProperties extends StObject {
   
   /**
     * Represents the day of the month.
     */
-  var dayOfMonth: js.UndefOr[Double] = js.native
+  var dayOfMonth: js.UndefOr[Double] = js.undefined
   
   /**
     * Represents the day of the week or type of day, for example, weekend day vs weekday.
     */
-  var dayOfWeek: js.UndefOr[Days | String] = js.native
+  var dayOfWeek: js.UndefOr[Days | String] = js.undefined
   
   /**
     * Represents the set of days for this recurrence. Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
     */
-  var days: js.UndefOr[js.Array[Days | String]] = js.native
+  var days: js.UndefOr[js.Array[Days | String]] = js.undefined
   
   /**
     * Represents your chosen first day of the week otherwise the default is the value in the current user's settings. 
     * Valid values are: 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', and 'Sun'.
     */
-  var firstDayOfWeek: js.UndefOr[Days | String] = js.native
+  var firstDayOfWeek: js.UndefOr[Days | String] = js.undefined
   
   /**
     * Represents the period between instances of the same recurring series.
     */
-  var interval: Double = js.native
+  var interval: Double
   
   /**
     * Represents the month.
     */
-  var month: js.UndefOr[Month | String] = js.native
+  var month: js.UndefOr[Month | String] = js.undefined
   
   /**
     * Represents the number of the week in the selected month e.g., 'first' for first week of the month.
     */
-  var weekNumber: js.UndefOr[WeekNumber | String] = js.native
+  var weekNumber: js.UndefOr[WeekNumber | String] = js.undefined
 }
 object RecurrenceProperties {
   

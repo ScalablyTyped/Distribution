@@ -3,7 +3,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1.x509
 import typings.jsrsasign.jsrsasign.KJUR.asn1.ASN1Object
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -36,14 +35,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *      aACompromise            (8) }
   * ```
   */
-@js.native
-trait CRLDistributionPoints extends Extension {
+trait CRLDistributionPoints
+  extends StObject
+     with Extension {
   
-  def getExtnValueHex(): String = js.native
+  def getExtnValueHex(): String
   
-  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit = js.native
+  def setByDPArray(dpArray: js.Array[ASN1Object]): Unit
   
-  def setByOneURI(uri: String): Unit = js.native
+  def setByOneURI(uri: String): Unit
 }
 object CRLDistributionPoints {
   

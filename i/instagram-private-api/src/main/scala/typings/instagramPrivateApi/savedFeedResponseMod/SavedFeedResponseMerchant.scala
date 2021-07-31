@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.savedFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SavedFeedResponseMerchant extends StObject {
   
-  var pk: Double = js.native
+  var pk: Double
   
-  var profile_pic_url: String = js.native
+  var profile_pic_url: String
   
-  var username: String = js.native
+  var username: String
 }
 object SavedFeedResponseMerchant {
   

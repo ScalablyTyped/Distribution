@@ -2,27 +2,25 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IWorkingCopyMetaData extends StObject {
   
-  var avatarUrl: String = js.native
+  var avatarUrl: String
   
-  var description: String = js.native
+  var description: String
   
-  var metaModelVersion: String = js.native
+  var metaModelVersion: String
   
-  var name: String = js.native
+  var name: String
   
-  var projectId: String = js.native
+  var projectId: String
   
-  var teamServerBaseBranch: js.UndefOr[String] = js.native
+  var teamServerBaseBranch: js.UndefOr[String] = js.undefined
   
-  var teamServerBaseCommitId: js.UndefOr[String] = js.native
+  var teamServerBaseCommitId: js.UndefOr[String] = js.undefined
   
-  var teamServerBaseRevision: js.UndefOr[Double] = js.native
+  var teamServerBaseRevision: js.UndefOr[Double] = js.undefined
 }
 object IWorkingCopyMetaData {
   

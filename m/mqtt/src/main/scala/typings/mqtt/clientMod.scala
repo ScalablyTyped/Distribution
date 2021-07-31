@@ -19,7 +19,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientMod {
@@ -46,13 +45,13 @@ object clientMod {
       * @api public
       */
     def end(): this.type = js.native
-    def end(force: js.UndefOr[scala.Nothing], opts: js.UndefOr[scala.Nothing], cb: CloseCallback): this.type = js.native
-    def end(force: js.UndefOr[scala.Nothing], opts: js.Object): this.type = js.native
-    def end(force: js.UndefOr[scala.Nothing], opts: js.Object, cb: CloseCallback): this.type = js.native
     def end(force: Boolean): this.type = js.native
-    def end(force: Boolean, opts: js.UndefOr[scala.Nothing], cb: CloseCallback): this.type = js.native
     def end(force: Boolean, opts: js.Object): this.type = js.native
     def end(force: Boolean, opts: js.Object, cb: CloseCallback): this.type = js.native
+    def end(force: Boolean, opts: Unit, cb: CloseCallback): this.type = js.native
+    def end(force: Unit, opts: js.Object): this.type = js.native
+    def end(force: Unit, opts: js.Object, cb: CloseCallback): this.type = js.native
+    def end(force: Unit, opts: Unit, cb: CloseCallback): this.type = js.native
     
     /**
       * getLastMessageId
@@ -202,13 +201,13 @@ object clientMod {
       * @example client.unsubscribe('topic', opts, console.log)
       */
     def unsubscribe(topic: String): this.type = js.native
-    def unsubscribe(topic: String, opts: js.UndefOr[scala.Nothing], callback: PacketCallback): this.type = js.native
     def unsubscribe(topic: String, opts: js.Object): this.type = js.native
     def unsubscribe(topic: String, opts: js.Object, callback: PacketCallback): this.type = js.native
+    def unsubscribe(topic: String, opts: Unit, callback: PacketCallback): this.type = js.native
     def unsubscribe(topic: js.Array[String]): this.type = js.native
-    def unsubscribe(topic: js.Array[String], opts: js.UndefOr[scala.Nothing], callback: PacketCallback): this.type = js.native
     def unsubscribe(topic: js.Array[String], opts: js.Object): this.type = js.native
     def unsubscribe(topic: js.Array[String], opts: js.Object, callback: PacketCallback): this.type = js.native
+    def unsubscribe(topic: js.Array[String], opts: Unit, callback: PacketCallback): this.type = js.native
   }
   
   type ClientSubscribeCallback = js.Function2[/* err */ Error, /* granted */ js.Array[ISubscriptionGrant], Unit]
@@ -225,33 +224,32 @@ object clientMod {
     def pipe(to: js.Any): js.Any = js.native
   }
   
-  @js.native
   trait ISubscriptionGrant extends StObject {
     
     /*
       * no local flag
       * */
-    var nl: js.UndefOr[Boolean] = js.native
+    var nl: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  is the granted qos level on it, may return 128 on error
       */
-    var qos: QoS | Double = js.native
+    var qos: QoS | Double
     
     /*
       * Retain As Published flag
       * */
-    var rap: js.UndefOr[Boolean] = js.native
+    var rap: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Retain Handling option
       * */
-    var rh: js.UndefOr[Double] = js.native
+    var rh: js.UndefOr[Double] = js.undefined
     
     /**
       *  is a subscribed to topic
       */
-    var topic: String = js.native
+    var topic: String
   }
   object ISubscriptionGrant {
     
@@ -295,33 +293,32 @@ object clientMod {
     */
   StringDictionary[Nl]
   
-  @js.native
   trait ISubscriptionRequest extends StObject {
     
     /*
       * no local flag
       * */
-    var nl: js.UndefOr[Boolean] = js.native
+    var nl: js.UndefOr[Boolean] = js.undefined
     
     /**
       *  is the granted qos level on it
       */
-    var qos: QoS = js.native
+    var qos: QoS
     
     /*
       * Retain As Published flag
       * */
-    var rap: js.UndefOr[Boolean] = js.native
+    var rap: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Retain Handling option
       * */
-    var rh: js.UndefOr[Double] = js.native
+    var rh: js.UndefOr[Double] = js.undefined
     
     /**
       *  is a subscribed to topic
       */
-    var topic: String = js.native
+    var topic: String
   }
   object ISubscriptionRequest {
     

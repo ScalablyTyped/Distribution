@@ -4,7 +4,6 @@ import typings.cathoQuantum.buttonMod.ButtonProps
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socialButtonMod {
@@ -16,10 +15,11 @@ object socialButtonMod {
   
   type SocialButton = Component[SocialButtonProps, js.Object, js.Any]
   
-  @js.native
-  trait SocialButtonProps extends ButtonProps {
+  trait SocialButtonProps
+    extends StObject
+       with ButtonProps {
     
-    var provider: String = js.native
+    var provider: String
   }
   object SocialButtonProps {
     

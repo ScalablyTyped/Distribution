@@ -3,15 +3,13 @@ package typings.googleapis.anon
 import typings.googleapis.pagespeedonlineV4Mod.pagespeedonlineV4.SchemaPagespeedApiFormatStringV4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderUrls extends StObject {
   
-  var header: js.UndefOr[SchemaPagespeedApiFormatStringV4] = js.native
+  var header: js.UndefOr[SchemaPagespeedApiFormatStringV4] = js.undefined
   
-  var urls: js.UndefOr[js.Array[`6`]] = js.native
+  var urls: js.UndefOr[js.Array[`6`]] = js.undefined
 }
 object HeaderUrls {
   

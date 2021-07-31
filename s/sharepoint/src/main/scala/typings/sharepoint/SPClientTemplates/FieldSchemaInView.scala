@@ -2,56 +2,56 @@ package typings.sharepoint.SPClientTemplates
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents field schema in a list view. */
-@js.native
-trait FieldSchemaInView extends FieldSchema {
+trait FieldSchemaInView
+  extends StObject
+     with FieldSchema {
   
   /** Either "TRUE" or "FALSE" */
-  var CalloutMenu: String = js.native
+  var CalloutMenu: String
   
-  var ClassInfo: String = js.native
+  var ClassInfo: String
   
-  var DisplayName: String = js.native
+  var DisplayName: String
   
   /** Either "TRUE" or "FALSE" */
-  var Explicit: String = js.native
+  var Explicit: String
   
-  var FieldTitle: String = js.native
+  var FieldTitle: String
   
   /** Indicates whether the field can be filtered. Either "TRUE" or "FALSE" */
-  var Filterable: String = js.native
+  var Filterable: String
   
   /** Either "TRUE" or "FALSE" */
-  var GridActiveAndReadOnly: String = js.native
+  var GridActiveAndReadOnly: String
   
   /** Set to "TRUE" for fields that comply to the following Xpath query:
     ViewFields/FieldRef[@Explicit='TRUE'] | Query/GroupBy/FieldRef[not(@Name=ViewFields/FieldRef/@Name)] */
-  var GroupField: String = js.native
+  var GroupField: String
   
   /** Guid of the field */
-  var ID: String = js.native
+  var ID: String
   
   /** Either "TRUE" or "FALSE" */
-  var ReadOnly: String = js.native
+  var ReadOnly: String
   
-  var RealFieldName: String = js.native
+  var RealFieldName: String
   
-  var ResultType: String = js.native
+  var ResultType: String
   
   /** Indicates whether the field can be sorted. Either "TRUE" or "FALSE" */
-  var Sortable: String = js.native
+  var Sortable: String
   
   // e.g. "Menu"
-  var css: String = js.native
+  var css: String
   
-  var fieldRenderer: js.Any = js.native
+  var fieldRenderer: js.Any
   
   /** Specifies if the field contains list item menu.
     Corresponds to ViewFields/FieldRef/@ListItemMenu attribute. Either "TRUE" or "FALSE" and might be missing. */
-  var listItemMenu: String = js.native
+  var listItemMenu: String
 }
 object FieldSchemaInView {
   

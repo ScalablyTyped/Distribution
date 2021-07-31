@@ -2,13 +2,11 @@ package typings.googleapis.cloudresourcemanagerV1beta1Mod.cloudresourcemanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response from the GetAncestry method.
   */
-@js.native
 trait SchemaGetAncestryResponse extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGetAncestryResponse extends StObject {
     * first ancestor is the project itself, followed by the project&#39;s
     * parent, etc.
     */
-  var ancestor: js.UndefOr[js.Array[SchemaAncestor]] = js.native
+  var ancestor: js.UndefOr[js.Array[SchemaAncestor]] = js.undefined
 }
 object SchemaGetAncestryResponse {
   

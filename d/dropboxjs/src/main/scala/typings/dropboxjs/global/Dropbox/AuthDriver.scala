@@ -1,5 +1,6 @@
 package typings.dropboxjs.global.Dropbox
 
+import typings.dropboxjs.Dropbox.QueryParamsCallback
 import typings.dropboxjs.Dropbox.RedirectOptions
 import typings.dropboxjs.anon.Port
 import typings.dropboxjs.anon.ReceiverPath
@@ -9,110 +10,169 @@ import typings.dropboxjs.anon.Scope
 import typings.std.Storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Dropbox.AuthDriver")
 @js.native
 class AuthDriver ()
-  extends typings.dropboxjs.Dropbox.AuthDriver
+  extends StObject
+     with typings.dropboxjs.Dropbox.AuthDriver {
+  
+  /* CompleteClass */
+  override def authType(): String = js.native
+  
+  /* CompleteClass */
+  override def doAuthorize(
+    authUrl: String,
+    stateParam: String,
+    client: typings.dropboxjs.Dropbox.Client,
+    callback: QueryParamsCallback
+  ): Unit = js.native
+  
+  /* CompleteClass */
+  override def getStateParam(client: typings.dropboxjs.Dropbox.Client, callback: js.Function1[/* state */ String, Unit]): Unit = js.native
+  
+  /* CompleteClass */
+  override def onAuthStepChange(client: typings.dropboxjs.Dropbox.Client, callback: js.Function0[Unit]): Unit = js.native
+  
+  /* CompleteClass */
+  override def resumeAuthorize(stateParam: String, client: typings.dropboxjs.Dropbox.Client, callback: QueryParamsCallback): Unit = js.native
+  
+  /* CompleteClass */
+  override def url(): String = js.native
+}
 object AuthDriver {
   
   @JSGlobal("Dropbox.AuthDriver.BrowserBase")
   @js.native
   class BrowserBase protected ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.BrowserBase {
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.BrowserBase {
     def this(options: RememberUser) = this()
+    
+    /* CompleteClass */
+    override def authType(): String = js.native
+    
+    /* CompleteClass */
+    override def locationStateParam(url: String): String = js.native
+    
+    /* CompleteClass */
+    override def onAuthStepChange(client: typings.dropboxjs.Dropbox.Client, callback: js.Function0[Unit]): Unit = js.native
   }
   object BrowserBase {
     
-    /* static member */
-    @JSGlobal("Dropbox.AuthDriver.BrowserBase.cleanupLocation")
+    @JSGlobal("Dropbox.AuthDriver.BrowserBase")
     @js.native
-    def cleanupLocation(): Unit = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Dropbox.AuthDriver.BrowserBase.currentLocation")
-    @js.native
-    def currentLocation(): String = js.native
+    @scala.inline
+    def cleanupLocation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("cleanupLocation")().asInstanceOf[Unit]
     
     /* static member */
-    @JSGlobal("Dropbox.AuthDriver.BrowserBase.localStorage")
-    @js.native
-    def localStorage(): Storage = js.native
+    @scala.inline
+    def currentLocation(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("currentLocation")().asInstanceOf[String]
+    
+    /* static member */
+    @scala.inline
+    def localStorage(): Storage = ^.asInstanceOf[js.Dynamic].applyDynamic("localStorage")().asInstanceOf[Storage]
   }
   
   @JSGlobal("Dropbox.AuthDriver.ChromeApp")
   @js.native
   class ChromeApp ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver {
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver {
     def this(options: Scope) = this()
   }
   
   @JSGlobal("Dropbox.AuthDriver.ChromeExtension")
   @js.native
   class ChromeExtension ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver {
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver {
     def this(options: ReceiverPath) = this()
   }
   object ChromeExtension {
     
-    /* static member */
-    @JSGlobal("Dropbox.AuthDriver.ChromeExtension.oauthReceiver")
+    @JSGlobal("Dropbox.AuthDriver.ChromeExtension")
     @js.native
-    def oauthReceiver(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
   }
   
   @JSGlobal("Dropbox.AuthDriver.Cordova")
   @js.native
   class Cordova ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.Cordova {
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.Cordova {
     def this(options: ReceiverPath) = this()
   }
   object Cordova {
     
-    /* static member */
-    @JSGlobal("Dropbox.AuthDriver.Cordova.oauthReceiver")
+    @JSGlobal("Dropbox.AuthDriver.Cordova")
     @js.native
-    def oauthReceiver(): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
   }
   
   /** Do not use class! TypeScript definition implementation detail : https://github.com/Microsoft/TypeScript/issues/371 */
   @JSGlobal("Dropbox.AuthDriver.IAuthDriver")
   @js.native
   class IAuthDriver ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.IAuthDriver
   
   @JSGlobal("Dropbox.AuthDriver.NodeServer")
   @js.native
   class NodeServer ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.NodeServer {
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.NodeServer {
     def this(options: Port) = this()
   }
   
   @JSGlobal("Dropbox.AuthDriver.Popup")
   @js.native
   class Popup ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.Popup {
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.Popup {
     def this(options: RedirectOptions) = this()
   }
   object Popup {
     
-    /* static member */
-    @JSGlobal("Dropbox.AuthDriver.Popup.locationOrigin")
+    @JSGlobal("Dropbox.AuthDriver.Popup")
     @js.native
-    def locationOrigin(location: String): String = js.native
+    val ^ : js.Any = js.native
     
     /* static member */
-    @JSGlobal("Dropbox.AuthDriver.Popup.oauthReceiver")
-    @js.native
-    def oauthReceiver(): Unit = js.native
+    @scala.inline
+    def locationOrigin(location: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("locationOrigin")(location.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    /* static member */
+    @scala.inline
+    def oauthReceiver(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("oauthReceiver")().asInstanceOf[Unit]
   }
   
   @JSGlobal("Dropbox.AuthDriver.Redirect")
   @js.native
   class Redirect ()
-    extends typings.dropboxjs.Dropbox.AuthDriver.Redirect {
+    extends StObject
+       with typings.dropboxjs.Dropbox.AuthDriver.Redirect {
     def this(options: RedirectFile) = this()
+    
+    /* CompleteClass */
+    override def doAuthorize(authUrl: String, stateParam: String, client: typings.dropboxjs.Dropbox.Client): Unit = js.native
+    
+    /* CompleteClass */
+    override def resumeAuthorize(stateParam: String, client: typings.dropboxjs.Dropbox.Client, callback: QueryParamsCallback): Unit = js.native
+    
+    /* CompleteClass */
+    override def url(): String = js.native
   }
 }

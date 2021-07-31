@@ -4,69 +4,67 @@ import typings.std.HTMLElement
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseComboboxProps[Item] extends StObject {
   
-  var circularNavigation: js.UndefOr[Boolean] = js.native
+  var circularNavigation: js.UndefOr[Boolean] = js.undefined
   
-  var defaultHighlightedIndex: js.UndefOr[Double] = js.native
+  var defaultHighlightedIndex: js.UndefOr[Double] = js.undefined
   
-  var defaultInputValue: js.UndefOr[String] = js.native
+  var defaultInputValue: js.UndefOr[String] = js.undefined
   
-  var defaultIsOpen: js.UndefOr[Boolean] = js.native
+  var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
   
-  var defaultSelectedItem: js.UndefOr[Item | Null] = js.native
+  var defaultSelectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var environment: js.UndefOr[Environment] = js.native
+  var environment: js.UndefOr[Environment] = js.undefined
   
-  var getA11ySelectionMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.native
+  var getA11ySelectionMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.undefined
   
-  var getA11yStatusMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.native
+  var getA11yStatusMessage: js.UndefOr[js.Function1[/* options */ A11yStatusMessageOptions[Item], String]] = js.undefined
   
-  var getItemId: js.UndefOr[js.Function1[/* index */ Double, String]] = js.native
+  var getItemId: js.UndefOr[js.Function1[/* index */ Double, String]] = js.undefined
   
-  var highlightedIndex: js.UndefOr[Double] = js.native
+  var highlightedIndex: js.UndefOr[Double] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var initialHighlightedIndex: js.UndefOr[Double] = js.native
+  var initialHighlightedIndex: js.UndefOr[Double] = js.undefined
   
-  var initialInputValue: js.UndefOr[String] = js.native
+  var initialInputValue: js.UndefOr[String] = js.undefined
   
-  var initialIsOpen: js.UndefOr[Boolean] = js.native
+  var initialIsOpen: js.UndefOr[Boolean] = js.undefined
   
-  var initialSelectedItem: js.UndefOr[Item | Null] = js.native
+  var initialSelectedItem: js.UndefOr[Item | Null] = js.undefined
   
-  var inputId: js.UndefOr[String] = js.native
+  var inputId: js.UndefOr[String] = js.undefined
   
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
-  var isOpen: js.UndefOr[Boolean] = js.native
+  var isOpen: js.UndefOr[Boolean] = js.undefined
   
-  var itemToString: js.UndefOr[js.Function1[/* item */ Item | Null, String]] = js.native
+  var itemToString: js.UndefOr[js.Function1[/* item */ Item | Null, String]] = js.undefined
   
-  var items: js.Array[Item] = js.native
+  var items: js.Array[Item]
   
-  var labelId: js.UndefOr[String] = js.native
+  var labelId: js.UndefOr[String] = js.undefined
   
-  var menuId: js.UndefOr[String] = js.native
+  var menuId: js.UndefOr[String] = js.undefined
   
-  var onHighlightedIndexChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.native
+  var onHighlightedIndexChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.undefined
   
-  var onInputValueChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.native
+  var onInputValueChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.undefined
   
-  var onIsOpenChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.native
+  var onIsOpenChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.undefined
   
-  var onSelectedItemChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.native
+  var onSelectedItemChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.undefined
   
-  var onStateChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.native
+  var onStateChange: js.UndefOr[js.Function1[/* changes */ UseComboboxStateChange[Item], Unit]] = js.undefined
   
-  var scrollIntoView: js.UndefOr[js.Function2[/* node */ HTMLElement, /* menuNode */ HTMLElement, Unit]] = js.native
+  var scrollIntoView: js.UndefOr[js.Function2[/* node */ HTMLElement, /* menuNode */ HTMLElement, Unit]] = js.undefined
   
-  var selectedItem: js.UndefOr[Item | Null] = js.native
+  var selectedItem: js.UndefOr[Item | Null] = js.undefined
   
   var stateReducer: js.UndefOr[
     js.Function2[
@@ -74,9 +72,9 @@ trait UseComboboxProps[Item] extends StObject {
       /* actionAndChanges */ UseComboboxStateChangeOptions[Item], 
       Partial[UseComboboxState[Item]]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var toggleButtonId: js.UndefOr[String] = js.native
+  var toggleButtonId: js.UndefOr[String] = js.undefined
 }
 object UseComboboxProps {
   
@@ -87,7 +85,7 @@ object UseComboboxProps {
   }
   
   @scala.inline
-  implicit class UseComboboxPropsMutableBuilder[Self <: UseComboboxProps[_], Item] (val x: Self with UseComboboxProps[Item]) extends AnyVal {
+  implicit class UseComboboxPropsMutableBuilder[Self <: UseComboboxProps[?], Item] (val x: Self & UseComboboxProps[Item]) extends AnyVal {
     
     @scala.inline
     def setCircularNavigation(value: Boolean): Self = StObject.set(x, "circularNavigation", value.asInstanceOf[js.Any])

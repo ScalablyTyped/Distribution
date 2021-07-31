@@ -2,13 +2,11 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Durable extends StObject {
   
-  var durable: Boolean = js.native
+  var durable: Boolean
 }
 object Durable {
   

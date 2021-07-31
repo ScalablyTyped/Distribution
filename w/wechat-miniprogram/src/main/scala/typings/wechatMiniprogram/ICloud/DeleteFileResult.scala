@@ -3,15 +3,15 @@ package typings.wechatMiniprogram.ICloud
 import typings.wechatMiniprogram.IAPISuccessParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // === end ===
 // === API: deleteFile ===
-@js.native
-trait DeleteFileResult extends IAPISuccessParam {
+trait DeleteFileResult
+  extends StObject
+     with IAPISuccessParam {
   
-  var fileList: js.Array[DeleteFileResultItem] = js.native
+  var fileList: js.Array[DeleteFileResultItem]
 }
 object DeleteFileResult {
   

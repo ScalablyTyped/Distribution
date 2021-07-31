@@ -2,13 +2,11 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiscountGateway extends StObject {
   
-  def all(): js.Promise[js.Array[Discount]] = js.native
+  def all(): js.Promise[js.Array[Discount]]
 }
 object DiscountGateway {
   

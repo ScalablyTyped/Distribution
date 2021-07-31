@@ -2,71 +2,69 @@ package typings.pixiSpine.PIXI.spine.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkeletonData extends StObject {
   
-  var animations: js.Array[Animation] = js.native
+  var animations: js.Array[Animation]
   
-  var audioPath: String = js.native
+  var audioPath: String
   
-  var bones: js.Array[BoneData] = js.native
+  var bones: js.Array[BoneData]
   
-  var defaultSkin: Skin = js.native
+  var defaultSkin: Skin
   
-  var events: js.Array[EventData] = js.native
+  var events: js.Array[EventData]
   
-  def findAnimation(animationName: String): Animation = js.native
+  def findAnimation(animationName: String): Animation
   
-  def findBone(boneName: String): BoneData = js.native
+  def findBone(boneName: String): BoneData
   
-  def findBoneIndex(boneName: String): Double = js.native
+  def findBoneIndex(boneName: String): Double
   
-  def findEvent(eventDataName: String): EventData = js.native
+  def findEvent(eventDataName: String): EventData
   
-  def findIkConstraint(constraintName: String): IkConstraintData = js.native
+  def findIkConstraint(constraintName: String): IkConstraintData
   
-  def findPathConstraint(constraintName: String): PathConstraintData = js.native
+  def findPathConstraint(constraintName: String): PathConstraintData
   
-  def findPathConstraintIndex(pathConstraintName: String): Double = js.native
+  def findPathConstraintIndex(pathConstraintName: String): Double
   
-  def findSkin(skinName: String): Skin = js.native
+  def findSkin(skinName: String): Skin
   
-  def findSlot(slotName: String): SlotData = js.native
+  def findSlot(slotName: String): SlotData
   
-  def findSlotIndex(slotName: String): Double = js.native
+  def findSlotIndex(slotName: String): Double
   
-  def findTransformConstraint(constraintName: String): TransformConstraintData = js.native
+  def findTransformConstraint(constraintName: String): TransformConstraintData
   
-  var fps: Double = js.native
+  var fps: Double
   
-  var hash: String = js.native
+  var hash: String
   
-  var height: Double = js.native
+  var height: Double
   
-  var ikConstraints: js.Array[IkConstraintData] = js.native
+  var ikConstraints: js.Array[IkConstraintData]
   
-  var imagesPath: String = js.native
+  var imagesPath: String
   
-  var name: String = js.native
+  var name: String
   
-  var pathConstraints: js.Array[PathConstraintData] = js.native
+  var pathConstraints: js.Array[PathConstraintData]
   
-  var skins: js.Array[Skin] = js.native
+  var skins: js.Array[Skin]
   
-  var slots: js.Array[SlotData] = js.native
+  var slots: js.Array[SlotData]
   
-  var transformConstraints: js.Array[TransformConstraintData] = js.native
+  var transformConstraints: js.Array[TransformConstraintData]
   
-  var version: String = js.native
+  var version: String
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object SkeletonData {
   

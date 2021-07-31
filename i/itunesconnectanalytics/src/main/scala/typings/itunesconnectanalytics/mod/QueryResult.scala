@@ -2,15 +2,13 @@ package typings.itunesconnectanalytics.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResult extends StObject {
   
-  var results: js.Array[AnalyticsResult] = js.native
+  var results: js.Array[AnalyticsResult]
   
-  var size: Double = js.native
+  var size: Double
 }
 object QueryResult {
   

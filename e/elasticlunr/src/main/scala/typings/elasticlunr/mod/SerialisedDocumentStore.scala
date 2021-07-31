@@ -4,24 +4,22 @@ import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SerialisedDocumentStore[T] extends StObject {
   
   var docInfo: StringDictionary[
-    typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore with TopLevel[js.Any]
-  ] = js.native
+    typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore & TopLevel[js.Any]
+  ]
   
-  var docs: StringDictionary[T] = js.native
+  var docs: StringDictionary[T]
 }
 object SerialisedDocumentStore {
   
   @scala.inline
   def apply[T](
     docInfo: StringDictionary[
-      typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore with TopLevel[js.Any]
+      typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore & TopLevel[js.Any]
     ],
     docs: StringDictionary[T]
   ): SerialisedDocumentStore[T] = {
@@ -30,12 +28,12 @@ object SerialisedDocumentStore {
   }
   
   @scala.inline
-  implicit class SerialisedDocumentStoreMutableBuilder[Self <: SerialisedDocumentStore[_], T] (val x: Self with SerialisedDocumentStore[T]) extends AnyVal {
+  implicit class SerialisedDocumentStoreMutableBuilder[Self <: SerialisedDocumentStore[?], T] (val x: Self & SerialisedDocumentStore[T]) extends AnyVal {
     
     @scala.inline
     def setDocInfo(
       value: StringDictionary[
-          typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore with TopLevel[js.Any]
+          typings.elasticlunr.elasticlunrStrings.SerialisedDocumentStore & TopLevel[js.Any]
         ]
     ): Self = StObject.set(x, "docInfo", value.asInstanceOf[js.Any])
     

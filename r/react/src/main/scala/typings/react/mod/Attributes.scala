@@ -2,17 +2,15 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @internal You shouldn't need to use this type since you never see these attributes
   * inside your component or have to validate them.
   */
-@js.native
 trait Attributes extends StObject {
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
 }
 object Attributes {
   

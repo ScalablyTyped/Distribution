@@ -2,12 +2,13 @@ package typings.angularRouter.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/router", "Scroll")
 @js.native
-class Scroll protected () extends Event {
+class Scroll protected ()
+  extends StObject
+     with Event {
   def this(/** @docsNotRequired */
   routerEvent: NavigationEnd) = this()
   def this(

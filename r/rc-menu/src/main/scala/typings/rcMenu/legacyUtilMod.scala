@@ -6,31 +6,32 @@ import typings.rcMenu.interfaceMod.OpenAnimation
 import typings.rcMotion.cssmotionMod.CSSMotionProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object legacyUtilMod {
   
-  @JSImport("rc-menu/es/utils/legacyUtil", "getMotion")
+  @JSImport("rc-menu/es/utils/legacyUtil", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getMotion(
     hasPrefixClsMotionDefaultMotionsOpenAnimationOpenTransitionName: GetMotionProps,
     hasSwitchingModeFromInline: GetMotionState,
     menuMode: MenuMode
-  ): CSSMotionProps = js.native
+  ): CSSMotionProps = (^.asInstanceOf[js.Dynamic].applyDynamic("getMotion")(hasPrefixClsMotionDefaultMotionsOpenAnimationOpenTransitionName.asInstanceOf[js.Any], hasSwitchingModeFromInline.asInstanceOf[js.Any], menuMode.asInstanceOf[js.Any])).asInstanceOf[CSSMotionProps]
   
-  @js.native
   trait GetMotionProps extends StObject {
     
-    var defaultMotions: js.UndefOr[PartialkeyinMenuModeother] = js.native
+    var defaultMotions: js.UndefOr[PartialkeyinMenuModeother] = js.undefined
     
-    var motion: js.UndefOr[CSSMotionProps] = js.native
+    var motion: js.UndefOr[CSSMotionProps] = js.undefined
     
-    var openAnimation: js.UndefOr[OpenAnimation] = js.native
+    var openAnimation: js.UndefOr[OpenAnimation] = js.undefined
     
-    var openTransitionName: js.UndefOr[String] = js.native
+    var openTransitionName: js.UndefOr[String] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
   }
   object GetMotionProps {
     
@@ -75,10 +76,9 @@ object legacyUtilMod {
     }
   }
   
-  @js.native
   trait GetMotionState extends StObject {
     
-    var switchingModeFromInline: Boolean = js.native
+    var switchingModeFromInline: Boolean
   }
   object GetMotionState {
     

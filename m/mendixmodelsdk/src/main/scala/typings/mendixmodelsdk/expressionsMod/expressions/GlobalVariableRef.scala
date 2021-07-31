@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,8 @@ object GlobalVariableRef {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.GlobalVariableRef.create")
-  @js.native
-  def create(model: IModel): GlobalVariableRef = js.native
+  @scala.inline
+  def create(model: IModel): GlobalVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[GlobalVariableRef]
   
   /**
     * Creates and returns a new GlobalVariableRef instance in the SDK and on the server.
@@ -59,9 +57,8 @@ object GlobalVariableRef {
     *  7.9.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.GlobalVariableRef.createIn")
-  @js.native
-  def createIn(container: VariableRefExpression): GlobalVariableRef = js.native
+  @scala.inline
+  def createIn(container: VariableRefExpression): GlobalVariableRef = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[GlobalVariableRef]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/expressions", "expressions.GlobalVariableRef.structureTypeName")

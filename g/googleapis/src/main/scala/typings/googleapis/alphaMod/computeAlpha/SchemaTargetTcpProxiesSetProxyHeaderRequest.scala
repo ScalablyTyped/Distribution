@@ -2,17 +2,15 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTargetTcpProxiesSetProxyHeaderRequest extends StObject {
   
   /**
     * The new type of proxy header to append before sending data to the
     * backend. NONE or PROXY_V1 are allowed.
     */
-  var proxyHeader: js.UndefOr[String] = js.native
+  var proxyHeader: js.UndefOr[String] = js.undefined
 }
 object SchemaTargetTcpProxiesSetProxyHeaderRequest {
   

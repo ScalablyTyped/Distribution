@@ -2,15 +2,15 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PartnerEntity extends BaseElement {
+trait PartnerEntity
+  extends StObject
+     with BaseElement {
   
-  var name: String = js.native
+  var name: String
   
-  var participantRef: js.Array[Participant] = js.native
+  var participantRef: js.Array[Participant]
 }
 object PartnerEntity {
   

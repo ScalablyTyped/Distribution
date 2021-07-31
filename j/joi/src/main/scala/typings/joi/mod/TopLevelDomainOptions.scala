@@ -3,10 +3,8 @@ package typings.joi.mod
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopLevelDomainOptions extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait TopLevelDomainOptions extends StObject {
     * - `false` to allow any TLD not listed in the `deny` list, if present.
     * - A `Set` or array of the allowed TLDs. Cannot be used together with `deny`.
     */
-  var allow: js.UndefOr[Set[String] | js.Array[String] | Boolean] = js.native
+  var allow: js.UndefOr[Set[String] | js.Array[String] | Boolean] = js.undefined
   
   /**
     * - A `Set` or array of the forbidden TLDs. Cannot be used together with a custom `allow` list.
     */
-  var deny: js.UndefOr[Set[String] | js.Array[String]] = js.native
+  var deny: js.UndefOr[Set[String] | js.Array[String]] = js.undefined
 }
 object TopLevelDomainOptions {
   

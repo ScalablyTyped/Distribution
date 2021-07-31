@@ -3,11 +3,11 @@ package typings.phaser.MatterJS
 import typings.phaser.Phaser.Types.Physics.Matter.MatterBody
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BodyType extends MatterBody {
+trait BodyType
+  extends StObject
+     with MatterBody {
   
   /**
     * Holds the original friction, mass, etc values from when this Body was made static.
@@ -15,7 +15,7 @@ trait BodyType extends MatterBody {
     * @property _original
     * @type any
     */
-  var _original: js.Any = js.native
+  var _original: js.Any
   
   /**
     * A `Number` specifying the angle of the body, in radians.
@@ -24,7 +24,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var angle: Double = js.native
+  var angle: Double
   
   /**
     * The previous angle.
@@ -33,7 +33,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var anglePrev: Double = js.native
+  var anglePrev: Double
   
   /**
     * A `Number` that _measures_ the current angular speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.angularVelocity`).
@@ -43,7 +43,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var angularSpeed: Double = js.native
+  var angularSpeed: Double
   
   /**
     * A `Number` that _measures_ the current angular velocity of the body after the last `Body.update`. It is read-only.
@@ -54,7 +54,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var angularVelocity: Double = js.native
+  var angularVelocity: Double
   
   /**
     * A `Number` that _measures_ the area of the body's convex hull, calculated at creation by `Body.create`.
@@ -63,7 +63,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default
     */
-  var area: Double = js.native
+  var area: Double
   
   /**
     * An array of unique axis vectors (edge normals) used for collision detection.
@@ -73,7 +73,7 @@ trait BodyType extends MatterBody {
     * @property axes
     * @type vector[]
     */
-  var axes: js.UndefOr[js.Array[Vector]] = js.native
+  var axes: js.UndefOr[js.Array[Vector]] = js.undefined
   
   /**
     * A `Bounds` object that defines the AABB region for the body.
@@ -82,7 +82,7 @@ trait BodyType extends MatterBody {
     * @property bounds
     * @type bounds
     */
-  var bounds: IBound = js.native
+  var bounds: IBound
   
   /**
     * The center of mass of the Body.
@@ -91,7 +91,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var centerOfMass: Vector = js.native
+  var centerOfMass: Vector
   
   /**
     * The center of the body in pixel values.
@@ -101,7 +101,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var centerOffset: Vector = js.native
+  var centerOffset: Vector
   
   /**
     * A Chamfer object, if this Body has them.
@@ -109,7 +109,7 @@ trait BodyType extends MatterBody {
     * @property chamfer
     * @type any
     */
-  var chamfer: js.UndefOr[IChamfer] = js.native
+  var chamfer: js.UndefOr[IChamfer] = js.undefined
   
   /**
     * The radius of this Body, if it's a circle.
@@ -118,7 +118,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var circleRadius: Double = js.native
+  var circleRadius: Double
   
   /**
     * An `Object` that specifies the collision filtering properties of this body.
@@ -145,7 +145,7 @@ trait BodyType extends MatterBody {
     * @property collisionFilter
     * @type object
     */
-  var collisionFilter: ICollisionFilter = js.native
+  var collisionFilter: ICollisionFilter
   
   /**
     * A `Vector` that specifies the constraint impulse.
@@ -154,7 +154,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var constraintImpulse: Vector = js.native
+  var constraintImpulse: Vector
   
   /**
     * A `Number` that defines the density of the body, that is its mass per unit area.
@@ -165,7 +165,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0.001
     */
-  var density: Double = js.native
+  var density: Double
   
   /**
     * Holds Body event handlers.
@@ -173,7 +173,7 @@ trait BodyType extends MatterBody {
     * @property events
     * @type any
     */
-  var events: js.UndefOr[js.Any] = js.native
+  var events: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A `Vector` that specifies the force to apply in the current step. It is zeroed after every `Body.update`. See also `Body.applyForce`.
@@ -182,7 +182,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var force: Vector = js.native
+  var force: Vector
   
   /**
     * A `Number` that defines the friction of the body. The value is always positive and is in the range `(0, 1)`.
@@ -200,7 +200,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0.1
     */
-  var friction: Double = js.native
+  var friction: Double
   
   /**
     * A `Number` that defines the air friction of the body (air resistance).
@@ -212,7 +212,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0.01
     */
-  var frictionAir: Double = js.native
+  var frictionAir: Double
   
   /**
     * A `Number` that defines the static friction of the body (in the Coulomb friction model).
@@ -224,7 +224,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0.5
     */
-  var frictionStatic: Double = js.native
+  var frictionStatic: Double
   
   /**
     * A reference to the Phaser Game Object this body belongs to, if any.
@@ -232,7 +232,7 @@ trait BodyType extends MatterBody {
     * @property gameObject
     * @type Phaser.GameObjects.GameObject
     */
-  var gameObject: js.UndefOr[js.Any] = js.native
+  var gameObject: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Scale the influence of World gravity when applied to this body.
@@ -241,7 +241,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 1, y: 1 }
     */
-  var gravityScale: Vector = js.native
+  var gravityScale: Vector
   
   /**
     * An integer `Number` uniquely identifying number generated in `Body.create` by `Common.nextId`.
@@ -249,7 +249,7 @@ trait BodyType extends MatterBody {
     * @property id
     * @type number
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * Will this Body ignore World gravity during the Engine update?
@@ -258,7 +258,7 @@ trait BodyType extends MatterBody {
     * @type boolean
     * @default false
     */
-  var ignoreGravity: Boolean = js.native
+  var ignoreGravity: Boolean
   
   /**
     * Will this Body ignore Phaser Pointer input events?
@@ -267,7 +267,7 @@ trait BodyType extends MatterBody {
     * @type boolean
     * @default false
     */
-  var ignorePointer: Boolean = js.native
+  var ignorePointer: Boolean
   
   /**
     * A `Number` that defines the moment of inertia (i.e. second moment of area) of the body.
@@ -277,7 +277,7 @@ trait BodyType extends MatterBody {
     * @property inertia
     * @type number
     */
-  var inertia: Double = js.native
+  var inertia: Double
   
   /**
     * A `Number` that defines the inverse moment of inertia of the body (`1 / inertia`).
@@ -286,7 +286,7 @@ trait BodyType extends MatterBody {
     * @property inverseInertia
     * @type number
     */
-  var inverseInertia: Double = js.native
+  var inverseInertia: Double
   
   /**
     * A `Number` that defines the inverse mass of the body (`1 / mass`).
@@ -295,7 +295,7 @@ trait BodyType extends MatterBody {
     * @property inverseMass
     * @type number
     */
-  var inverseMass: Double = js.native
+  var inverseMass: Double
   
   /**
     * A flag that indicates whether a body is a sensor. Sensor triggers collision events, but doesn't react with colliding body physically.
@@ -304,7 +304,7 @@ trait BodyType extends MatterBody {
     * @type boolean
     * @default false
     */
-  var isSensor: Boolean = js.native
+  var isSensor: Boolean
   
   /**
     * A flag that indicates whether the body is considered sleeping. A sleeping body acts similar to a static body, except it is only temporary and can be awoken.
@@ -314,7 +314,7 @@ trait BodyType extends MatterBody {
     * @type boolean
     * @default false
     */
-  var isSleeping: Boolean = js.native
+  var isSleeping: Boolean
   
   /**
     * A flag that indicates whether a body is considered static. A static body can never change position or angle and is completely fixed.
@@ -324,7 +324,7 @@ trait BodyType extends MatterBody {
     * @type boolean
     * @default false
     */
-  var isStatic: Boolean = js.native
+  var isStatic: Boolean
   
   /**
     * An arbitrary `String` name to help the user identify and manage bodies.
@@ -333,7 +333,7 @@ trait BodyType extends MatterBody {
     * @type string
     * @default "Body"
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * A `Number` that defines the mass of the body, although it may be more appropriate to specify the `density` property instead.
@@ -342,7 +342,7 @@ trait BodyType extends MatterBody {
     * @property mass
     * @type number
     */
-  var mass: Double = js.native
+  var mass: Double
   
   /**
     * A `Number` that _measures_ the amount of movement a body currently has (a combination of `speed` and `angularSpeed`). It is read-only and always positive.
@@ -353,7 +353,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var motion: Double = js.native
+  var motion: Double
   
   /**
     * A callback that is invoked for the duration that this Body is colliding with any other Body.
@@ -364,7 +364,7 @@ trait BodyType extends MatterBody {
     * @type function
     * @default null
     */
-  var onCollideActiveCallback: js.UndefOr[js.Function] = js.native
+  var onCollideActiveCallback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A callback that is invoked when this Body starts colliding with any other Body.
@@ -375,7 +375,7 @@ trait BodyType extends MatterBody {
     * @type function
     * @default null
     */
-  var onCollideCallback: js.UndefOr[js.Function] = js.native
+  var onCollideCallback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A callback that is invoked when this Body stops colliding with any other Body.
@@ -386,7 +386,7 @@ trait BodyType extends MatterBody {
     * @type function
     * @default null
     */
-  var onCollideEndCallback: js.UndefOr[js.Function] = js.native
+  var onCollideEndCallback: js.UndefOr[js.Function] = js.undefined
   
   /**
     * A collision callback dictionary used by the `Body.setOnCollideWith` function.
@@ -395,7 +395,7 @@ trait BodyType extends MatterBody {
     * @type object
     * @default null
     */
-  var onCollideWith: js.UndefOr[js.Any] = js.native
+  var onCollideWith: js.UndefOr[js.Any] = js.undefined
   
   /**
     * A self reference if the body is _not_ a part of another body.
@@ -405,7 +405,7 @@ trait BodyType extends MatterBody {
     * @property parent
     * @type body
     */
-  var parent: BodyType = js.native
+  var parent: BodyType
   
   /**
     * An array of bodies that make up this body. 
@@ -418,7 +418,7 @@ trait BodyType extends MatterBody {
     * @property parts
     * @type body[]
     */
-  var parts: js.Array[BodyType] = js.native
+  var parts: js.Array[BodyType]
   
   /**
     * An object reserved for storing plugin-specific properties.
@@ -426,7 +426,7 @@ trait BodyType extends MatterBody {
     * @property plugin
     * @type {}
     */
-  var plugin: js.Any = js.native
+  var plugin: js.Any
   
   /**
     * A `Vector` that specifies the current world-space position of the body.
@@ -435,7 +435,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var position: Vector = js.native
+  var position: Vector
   
   /**
     * A `Vector` that specifies the position impulse.
@@ -444,7 +444,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var positionImpulse: Vector = js.native
+  var positionImpulse: Vector
   
   /**
     * A `Vector` that specifies the previous position.
@@ -453,7 +453,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var positionPrev: Vector = js.native
+  var positionPrev: Vector
   
   /**
     * A `Vector` that specifies the previous position impulse.
@@ -462,7 +462,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var previousPositionImpulse: Vector = js.native
+  var previousPositionImpulse: Vector
   
   /**
     * An `Object` that defines the rendering properties to be consumed by the module `Matter.Render`.
@@ -470,7 +470,7 @@ trait BodyType extends MatterBody {
     * @property render
     * @type object
     */
-  var render: IBodyRenderOptions = js.native
+  var render: IBodyRenderOptions
   
   /**
     * A `Number` that defines the restitution (elasticity) of the body. The value is always positive and is in the range `(0, 1)`.
@@ -484,7 +484,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var restitution: Double = js.native
+  var restitution: Double
   
   /**
     * The scale of the Body.
@@ -494,7 +494,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 1, y: 1 }
     */
-  var scale: Vector = js.native
+  var scale: Vector
   
   /**
     * Sets the onCollideWith callback.
@@ -502,7 +502,7 @@ trait BodyType extends MatterBody {
     * @property setOnCollideWith
     * @type Function
     */
-  def setOnCollideWith(body: BodyType, callback: js.Function): BodyType = js.native
+  def setOnCollideWith(body: BodyType, callback: js.Function): BodyType
   
   /**
     * A `Number` that defines the number of updates in which this body must have near-zero velocity before it is set as sleeping by the `Matter.Sleeping` module (if sleeping is enabled by the engine).
@@ -511,7 +511,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 60
     */
-  var sleepThreshold: Double = js.native
+  var sleepThreshold: Double
   
   /**
     * A `Number` that specifies a tolerance on how far a body is allowed to 'sink' or rotate into other bodies.
@@ -522,7 +522,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0.05
     */
-  var slop: Double = js.native
+  var slop: Double
   
   /**
     * A `Number` that _measures_ the current speed of the body after the last `Body.update`. It is read-only and always positive (it's the magnitude of `body.velocity`).
@@ -532,7 +532,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var speed: Double = js.native
+  var speed: Double
   
   /**
     * A `Number` that allows per-body time scaling, e.g. a force-field where bodies inside are in slow-motion, while others are at full speed.
@@ -541,7 +541,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 1
     */
-  var timeScale: Double = js.native
+  var timeScale: Double
   
   /**
     * A `Number` that specifies the torque (turning force) to apply in the current step. It is zeroed after every `Body.update`.
@@ -550,7 +550,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var torque: Double = js.native
+  var torque: Double
   
   /**
     * The total number of contacts.
@@ -559,7 +559,7 @@ trait BodyType extends MatterBody {
     * @type number
     * @default 0
     */
-  var totalContacts: Double = js.native
+  var totalContacts: Double
   
   /**
     * A `String` denoting the type of object.
@@ -569,7 +569,7 @@ trait BodyType extends MatterBody {
     * @default "body"
     * @readOnly
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * A `Vector` that _measures_ the current velocity of the body after the last `Body.update`. It is read-only.
@@ -580,7 +580,7 @@ trait BodyType extends MatterBody {
     * @type vector
     * @default { x: 0, y: 0 }
     */
-  var velocity: Vector = js.native
+  var velocity: Vector
   
   /**
     * An array of `Vector` objects that specify the convex hull of the rigid body.
@@ -597,7 +597,7 @@ trait BodyType extends MatterBody {
     * @property vertices
     * @type vector[]
     */
-  var vertices: js.UndefOr[js.Array[Vector]] = js.native
+  var vertices: js.UndefOr[js.Array[Vector]] = js.undefined
 }
 object BodyType {
   

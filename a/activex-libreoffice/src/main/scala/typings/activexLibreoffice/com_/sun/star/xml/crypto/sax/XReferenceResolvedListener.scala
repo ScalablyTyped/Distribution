@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * This interface is used to receive the collection completion notification for a element collector.
   */
-@js.native
-trait XReferenceResolvedListener extends XInterface {
+trait XReferenceResolvedListener
+  extends StObject
+     with XInterface {
   
   /**
     * Notifies an element has been collected by an element collector.
     * @param referenceId the id of the element collector
     */
-  def referenceResolved(referenceId: Double): Unit = js.native
+  def referenceResolved(referenceId: Double): Unit
 }
 object XReferenceResolvedListener {
   

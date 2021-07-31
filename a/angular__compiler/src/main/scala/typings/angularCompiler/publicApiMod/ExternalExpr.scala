@@ -2,7 +2,6 @@ package typings.angularCompiler.publicApiMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/compiler/public_api", "ExternalExpr")
@@ -16,42 +15,18 @@ class ExternalExpr protected ()
   ) = this()
   def this(
     value: typings.angularCompiler.outputAstMod.ExternalReference,
-    `type`: js.UndefOr[scala.Nothing],
+    `type`: Null,
     typeParams: js.Array[typings.angularCompiler.outputAstMod.Type]
   ) = this()
   def this(
     value: typings.angularCompiler.outputAstMod.ExternalReference,
-    `type`: Null,
+    `type`: Unit,
     typeParams: js.Array[typings.angularCompiler.outputAstMod.Type]
   ) = this()
   def this(
     value: typings.angularCompiler.outputAstMod.ExternalReference,
     `type`: typings.angularCompiler.outputAstMod.Type,
     typeParams: js.Array[typings.angularCompiler.outputAstMod.Type]
-  ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.ExternalReference,
-    `type`: js.UndefOr[scala.Nothing],
-    typeParams: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.ExternalReference,
-    `type`: js.UndefOr[scala.Nothing],
-    typeParams: js.Array[typings.angularCompiler.outputAstMod.Type],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.ExternalReference,
-    `type`: js.UndefOr[scala.Nothing],
-    typeParams: Null,
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
-  ) = this()
-  def this(
-    value: typings.angularCompiler.outputAstMod.ExternalReference,
-    `type`: Null,
-    typeParams: js.UndefOr[scala.Nothing],
-    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
     value: typings.angularCompiler.outputAstMod.ExternalReference,
@@ -67,8 +42,26 @@ class ExternalExpr protected ()
   ) = this()
   def this(
     value: typings.angularCompiler.outputAstMod.ExternalReference,
-    `type`: typings.angularCompiler.outputAstMod.Type,
-    typeParams: js.UndefOr[scala.Nothing],
+    `type`: Null,
+    typeParams: Unit,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    value: typings.angularCompiler.outputAstMod.ExternalReference,
+    `type`: Unit,
+    typeParams: js.Array[typings.angularCompiler.outputAstMod.Type],
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    value: typings.angularCompiler.outputAstMod.ExternalReference,
+    `type`: Unit,
+    typeParams: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    value: typings.angularCompiler.outputAstMod.ExternalReference,
+    `type`: Unit,
+    typeParams: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
   def this(
@@ -81,6 +74,12 @@ class ExternalExpr protected ()
     value: typings.angularCompiler.outputAstMod.ExternalReference,
     `type`: typings.angularCompiler.outputAstMod.Type,
     typeParams: Null,
+    sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
+  ) = this()
+  def this(
+    value: typings.angularCompiler.outputAstMod.ExternalReference,
+    `type`: typings.angularCompiler.outputAstMod.Type,
+    typeParams: Unit,
     sourceSpan: typings.angularCompiler.srcParseUtilMod.ParseSourceSpan
   ) = this()
 }

@@ -5,15 +5,15 @@ import typings.std.Record
 import typings.storybookComponents.typesMod.ArgType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object controlsTypesMod {
   
-  @js.native
-  trait ArrayConfig extends _Control {
+  trait ArrayConfig
+    extends StObject
+       with _Control {
     
-    var separator: js.UndefOr[String] = js.native
+    var separator: js.UndefOr[String] = js.undefined
   }
   object ArrayConfig {
     
@@ -36,15 +36,17 @@ object controlsTypesMod {
   
   type ArrayValue = js.Array[String]
   
-  @js.native
-  trait BooleanConfig extends _Control
+  trait BooleanConfig
+    extends StObject
+       with _Control
   
   type BooleanValue = Boolean
   
-  @js.native
-  trait ColorConfig extends _Control {
+  trait ColorConfig
+    extends StObject
+       with _Control {
     
-    var presetColors: js.UndefOr[js.Array[String]] = js.native
+    var presetColors: js.UndefOr[js.Array[String]] = js.undefined
   }
   object ColorConfig {
     
@@ -83,22 +85,21 @@ object controlsTypesMod {
   */
   type Control = _Control | RangeConfig
   
-  @js.native
   trait ControlProps[T] extends StObject {
     
-    var argType: js.UndefOr[ArgType] = js.native
+    var argType: js.UndefOr[ArgType] = js.undefined
     
-    var defaultValue: js.UndefOr[T] = js.native
+    var defaultValue: js.UndefOr[T] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var onBlur: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onBlur: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    def onChange(value: T): T | Unit = js.native
+    def onChange(value: T): T | Unit
     
-    var onFocus: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.native
+    var onFocus: js.UndefOr[js.Function1[/* evt */ js.Any, Unit]] = js.undefined
     
-    var value: js.UndefOr[T] = js.native
+    var value: js.UndefOr[T] = js.undefined
   }
   object ControlProps {
     
@@ -109,7 +110,7 @@ object controlsTypesMod {
     }
     
     @scala.inline
-    implicit class ControlPropsMutableBuilder[Self <: ControlProps[_], T] (val x: Self with ControlProps[T]) extends AnyVal {
+    implicit class ControlPropsMutableBuilder[Self <: ControlProps[?], T] (val x: Self & ControlProps[T]) extends AnyVal {
       
       @scala.inline
       def setArgType(value: ArgType): Self = StObject.set(x, "argType", value.asInstanceOf[js.Any])
@@ -213,15 +214,15 @@ object controlsTypesMod {
   
   type Controls = Record[String, Control]
   
-  @js.native
-  trait DateConfig extends _Control
+  trait DateConfig
+    extends StObject
+       with _Control
   
   type DateValue = Date | Double
   
-  @js.native
   trait NormalizedOptionsConfig extends StObject {
     
-    var options: OptionsObject = js.native
+    var options: OptionsObject
   }
   object NormalizedOptionsConfig {
     
@@ -239,14 +240,15 @@ object controlsTypesMod {
     }
   }
   
-  @js.native
-  trait NumberConfig extends _Control {
+  trait NumberConfig
+    extends StObject
+       with _Control {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var step: js.UndefOr[Double] = js.native
+    var step: js.UndefOr[Double] = js.undefined
   }
   object NumberConfig {
     
@@ -281,8 +283,9 @@ object controlsTypesMod {
   
   type NumberValue = Double
   
-  @js.native
-  trait ObjectConfig extends _Control
+  trait ObjectConfig
+    extends StObject
+       with _Control
   
   type ObjectValue = js.Any
   
@@ -290,12 +293,13 @@ object controlsTypesMod {
   
   type OptionsArray = js.Array[js.Any]
   
-  @js.native
-  trait OptionsConfig extends _Control {
+  trait OptionsConfig
+    extends StObject
+       with _Control {
     
-    var options: Options = js.native
+    var options: Options
     
-    var `type`: OptionsControlType = js.native
+    var `type`: OptionsControlType
   }
   object OptionsConfig {
     
@@ -360,8 +364,9 @@ object controlsTypesMod {
   
   type RangeConfig = NumberConfig
   
-  @js.native
-  trait TextConfig extends _Control
+  trait TextConfig
+    extends StObject
+       with _Control
   
   type TextValue = String
   

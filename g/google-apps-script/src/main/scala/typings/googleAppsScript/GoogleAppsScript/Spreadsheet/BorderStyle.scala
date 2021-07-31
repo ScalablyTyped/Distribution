@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,20 +14,32 @@ sealed trait BorderStyle extends StObject
 object BorderStyle extends StObject {
   
   @js.native
-  sealed trait DASHED extends BorderStyle
+  sealed trait DASHED
+    extends StObject
+       with BorderStyle
   
   @js.native
-  sealed trait DOTTED extends BorderStyle
+  sealed trait DOTTED
+    extends StObject
+       with BorderStyle
   
   @js.native
-  sealed trait DOUBLE extends BorderStyle
+  sealed trait DOUBLE
+    extends StObject
+       with BorderStyle
   
   @js.native
-  sealed trait SOLID extends BorderStyle
+  sealed trait SOLID
+    extends StObject
+       with BorderStyle
   
   @js.native
-  sealed trait SOLID_MEDIUM extends BorderStyle
+  sealed trait SOLID_MEDIUM
+    extends StObject
+       with BorderStyle
   
   @js.native
-  sealed trait SOLID_THICK extends BorderStyle
+  sealed trait SOLID_THICK
+    extends StObject
+       with BorderStyle
 }

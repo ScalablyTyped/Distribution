@@ -10,42 +10,36 @@ import typings.shevyjs.typesMod.Factor
 import typings.shevyjs.typesMod.Scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("shevyjs/utils", "calcHeadingFontSize")
+  @JSImport("shevyjs/utils", JSImport.Namespace)
   @js.native
-  def calcHeadingFontSize(thisArg: default, factor: Factor): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("shevyjs/utils", "calcHeadingLineHeight")
-  @js.native
-  def calcHeadingLineHeight(thisArg: default, factor: Factor): Double = js.native
+  @scala.inline
+  def calcHeadingFontSize(thisArg: default, factor: Factor): String = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingFontSize")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("shevyjs/utils", "calcHeadingMarginBottom")
-  @js.native
-  def calcHeadingMarginBottom(thisArg: default, factor: Factor): js.UndefOr[String] = js.native
-  @JSImport("shevyjs/utils", "calcHeadingMarginBottom")
-  @js.native
-  def calcHeadingMarginBottom(thisArg: default, factor: Factor, addMarginBottom: Boolean): js.UndefOr[String] = js.native
+  @scala.inline
+  def calcHeadingLineHeight(thisArg: default, factor: Factor): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingLineHeight")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("shevyjs/utils", "getFontScale")
-  @js.native
-  def getFontScale(fontScale: majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth): js.Array[Double] = js.native
-  @JSImport("shevyjs/utils", "getFontScale")
-  @js.native
-  def getFontScale(fontScale: Scale): js.Array[Double] = js.native
+  @scala.inline
+  def calcHeadingMarginBottom(thisArg: default, factor: Factor): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingMarginBottom")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def calcHeadingMarginBottom(thisArg: default, factor: Factor, addMarginBottom: Boolean): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("calcHeadingMarginBottom")(thisArg.asInstanceOf[js.Any], factor.asInstanceOf[js.Any], addMarginBottom.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @JSImport("shevyjs/utils", "getFontUnit")
-  @js.native
-  def getFontUnit(size: String): String = js.native
+  @scala.inline
+  def getFontScale(fontScale: majorSecond | minorThird | majorThird | perfectFourth | augmentedFourth): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontScale")(fontScale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def getFontScale(fontScale: Scale): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontScale")(fontScale.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("shevyjs/utils", "getFontValue")
-  @js.native
-  def getFontValue(size: String): Double = js.native
+  @scala.inline
+  def getFontUnit(size: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontUnit")(size.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("shevyjs/utils", "trimArrayToMaxOf6")
-  @js.native
-  def trimArrayToMaxOf6[T](array: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def getFontValue(size: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getFontValue")(size.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def trimArrayToMaxOf6[T](array: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("trimArrayToMaxOf6")(array.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
 }

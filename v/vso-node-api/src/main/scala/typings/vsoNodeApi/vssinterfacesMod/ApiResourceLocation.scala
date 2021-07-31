@@ -2,51 +2,49 @@ package typings.vsoNodeApi.vssinterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiResourceLocation extends StObject {
   
   /**
     * Area name for this resource
     */
-  var area: String = js.native
+  var area: String
   
   /**
     * Unique Identifier for this location
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Maximum api version that this resource supports (current server version for this resource)
     */
-  var maxVersion: String = js.native
+  var maxVersion: String
   
   /**
     * Minimum api version that this resource supports
     */
-  var minVersion: String = js.native
+  var minVersion: String
   
   /**
     * The latest version of this resource location that is in "Release" (non-preview) mode
     */
-  var releasedVersion: String = js.native
+  var releasedVersion: String
   
   /**
     * Resource name
     */
-  var resourceName: String = js.native
+  var resourceName: String
   
   /**
     * The current resource version supported by this resource location
     */
-  var resourceVersion: Double = js.native
+  var resourceVersion: Double
   
   /**
     * This location's route template (templated relative path)
     */
-  var routeTemplate: String = js.native
+  var routeTemplate: String
 }
 object ApiResourceLocation {
   

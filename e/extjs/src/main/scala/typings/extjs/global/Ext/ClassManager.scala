@@ -4,230 +4,190 @@ import typings.extjs.Ext.IClass
 import typings.extjs.Ext.IClassManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("Ext.ClassManager")
 @js.native
 class ClassManager ()
-  extends typings.extjs.Ext.ClassManager
+  extends StObject
+     with typings.extjs.Ext.ClassManager
 /* static members */
 object ClassManager {
+  
+  @JSGlobal("Ext.ClassManager")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** [Method] Adds a batch of class name to alias mappings
     * @param aliases Object The set of mappings of the form className : [values...]
     * @returns Ext.ClassManager this
     */
-  @JSGlobal("Ext.ClassManager.addNameAliasMappings")
-  @js.native
-  def addNameAliasMappings(): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.addNameAliasMappings")
-  @js.native
-  def addNameAliasMappings(aliases: js.Any): IClassManager = js.native
+  @scala.inline
+  def addNameAliasMappings(): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("addNameAliasMappings")().asInstanceOf[IClassManager]
+  @scala.inline
+  def addNameAliasMappings(aliases: js.Any): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("addNameAliasMappings")(aliases.asInstanceOf[js.Any]).asInstanceOf[IClassManager]
   
   /** [Method]
     * @param alternates Object The set of mappings of the form className : [values...]
     * @returns Ext.ClassManager this
     */
-  @JSGlobal("Ext.ClassManager.addNameAlternateMappings")
-  @js.native
-  def addNameAlternateMappings(): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.addNameAlternateMappings")
-  @js.native
-  def addNameAlternateMappings(alternates: js.Any): IClassManager = js.native
+  @scala.inline
+  def addNameAlternateMappings(): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("addNameAlternateMappings")().asInstanceOf[IClassManager]
+  @scala.inline
+  def addNameAlternateMappings(alternates: js.Any): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("addNameAlternateMappings")(alternates.asInstanceOf[js.Any]).asInstanceOf[IClassManager]
   
   /** [Method] Defines a class
     * @param className Object
     * @param data Object
     * @param createdFn Object
     */
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(): Unit = js.native
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(className: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], createdFn: js.Any): Unit = js.native
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(className: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(className: js.UndefOr[scala.Nothing], data: js.Any, createdFn: js.Any): Unit = js.native
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(className: js.Any): Unit = js.native
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(className: js.Any, data: js.UndefOr[scala.Nothing], createdFn: js.Any): Unit = js.native
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(className: js.Any, data: js.Any): Unit = js.native
-  @JSGlobal("Ext.ClassManager.create")
-  @js.native
-  def create(className: js.Any, data: js.Any, createdFn: js.Any): Unit = js.native
+  @scala.inline
+  def create(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Unit]
+  @scala.inline
+  def create(className: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(className.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def create(className: js.Any, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(className.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(className: js.Any, data: js.Any, createdFn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(className.asInstanceOf[js.Any], data.asInstanceOf[js.Any], createdFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(className: js.Any, data: Unit, createdFn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(className.asInstanceOf[js.Any], data.asInstanceOf[js.Any], createdFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(className: Unit, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(className.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(className: Unit, data: js.Any, createdFn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(className.asInstanceOf[js.Any], data.asInstanceOf[js.Any], createdFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def create(className: Unit, data: Unit, createdFn: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(className.asInstanceOf[js.Any], data.asInstanceOf[js.Any], createdFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** [Method] Retrieve a class by its name
     * @param name String
     * @returns Ext.Class class
     */
-  @JSGlobal("Ext.ClassManager.get")
-  @js.native
-  def get(): IClass = js.native
-  @JSGlobal("Ext.ClassManager.get")
-  @js.native
-  def get(name: java.lang.String): IClass = js.native
+  @scala.inline
+  def get(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("get")().asInstanceOf[IClass]
+  @scala.inline
+  def get(name: java.lang.String): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any]).asInstanceOf[IClass]
   
   /** [Method] Get the aliases of a class by the class name
     * @param name String
     * @returns Array aliases
     */
-  @JSGlobal("Ext.ClassManager.getAliasesByName")
-  @js.native
-  def getAliasesByName(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.ClassManager.getAliasesByName")
-  @js.native
-  def getAliasesByName(name: java.lang.String): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def getAliasesByName(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getAliasesByName")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def getAliasesByName(name: java.lang.String): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getAliasesByName")(name.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Get a reference to the class by its alias
     * @param alias String
     * @returns Ext.Class class
     */
-  @JSGlobal("Ext.ClassManager.getByAlias")
-  @js.native
-  def getByAlias(): IClass = js.native
-  @JSGlobal("Ext.ClassManager.getByAlias")
-  @js.native
-  def getByAlias(alias: java.lang.String): IClass = js.native
+  @scala.inline
+  def getByAlias(): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("getByAlias")().asInstanceOf[IClass]
+  @scala.inline
+  def getByAlias(alias: java.lang.String): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("getByAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[IClass]
   
-  @JSGlobal("Ext.ClassManager.getClass")
-  @js.native
-  def getClass(`object`: js.Any): IClass = js.native
+  @scala.inline
+  def getClass(`object`: js.Any): IClass = ^.asInstanceOf[js.Dynamic].applyDynamic("getClass")(`object`.asInstanceOf[js.Any]).asInstanceOf[IClass]
   
   /** [Method] Returns the displayName property or className or object
     * @param object Object
     * @returns String
     */
-  @JSGlobal("Ext.ClassManager.getDisplayName")
-  @js.native
-  def getDisplayName(): java.lang.String = js.native
-  @JSGlobal("Ext.ClassManager.getDisplayName")
-  @js.native
-  def getDisplayName(`object`: js.Any): java.lang.String = js.native
+  @scala.inline
+  def getDisplayName(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")().asInstanceOf[java.lang.String]
+  @scala.inline
+  def getDisplayName(`object`: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(`object`.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /** [Method] Get the name of the class by its reference or its instance  getName is usually invoked by the shorthand Ext getClass
     * @param object Ext.Class/Object
     * @returns String className
     */
-  @JSGlobal("Ext.ClassManager.getName")
-  @js.native
-  def getName(): java.lang.String = js.native
-  @JSGlobal("Ext.ClassManager.getName")
-  @js.native
-  def getName(`object`: js.Any): java.lang.String = js.native
+  @scala.inline
+  def getName(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")().asInstanceOf[java.lang.String]
+  @scala.inline
+  def getName(`object`: js.Any): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(`object`.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /** [Method] Get the name of a class by its alias
     * @param alias String
     * @returns String className
     */
-  @JSGlobal("Ext.ClassManager.getNameByAlias")
-  @js.native
-  def getNameByAlias(): java.lang.String = js.native
-  @JSGlobal("Ext.ClassManager.getNameByAlias")
-  @js.native
-  def getNameByAlias(alias: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def getNameByAlias(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameByAlias")().asInstanceOf[java.lang.String]
+  @scala.inline
+  def getNameByAlias(alias: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameByAlias")(alias.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /** [Method] Get the name of a class by its alternate name
     * @param alternate String
     * @returns String className
     */
-  @JSGlobal("Ext.ClassManager.getNameByAlternate")
-  @js.native
-  def getNameByAlternate(): java.lang.String = js.native
-  @JSGlobal("Ext.ClassManager.getNameByAlternate")
-  @js.native
-  def getNameByAlternate(alternate: java.lang.String): java.lang.String = js.native
+  @scala.inline
+  def getNameByAlternate(): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameByAlternate")().asInstanceOf[java.lang.String]
+  @scala.inline
+  def getNameByAlternate(alternate: java.lang.String): java.lang.String = ^.asInstanceOf[js.Dynamic].applyDynamic("getNameByAlternate")(alternate.asInstanceOf[js.Any]).asInstanceOf[java.lang.String]
   
   /** [Method] Converts a string expression to an array of matching class names
     * @param expression String
     * @returns String[] classNames
     */
-  @JSGlobal("Ext.ClassManager.getNamesByExpression")
-  @js.native
-  def getNamesByExpression(): typings.extjs.Ext.Array = js.native
-  @JSGlobal("Ext.ClassManager.getNamesByExpression")
-  @js.native
-  def getNamesByExpression(expression: java.lang.String): typings.extjs.Ext.Array = js.native
+  @scala.inline
+  def getNamesByExpression(): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamesByExpression")().asInstanceOf[typings.extjs.Ext.Array]
+  @scala.inline
+  def getNamesByExpression(expression: java.lang.String): typings.extjs.Ext.Array = ^.asInstanceOf[js.Dynamic].applyDynamic("getNamesByExpression")(expression.asInstanceOf[js.Any]).asInstanceOf[typings.extjs.Ext.Array]
   
   /** [Method] Instantiate a class by its alias
     * @param alias String
     * @param args Object... Additional arguments after the alias will be passed to the class constructor.
     * @returns Object instance
     */
-  @JSGlobal("Ext.ClassManager.instantiateByAlias")
-  @js.native
-  def instantiateByAlias(alias: java.lang.String, args: js.Any*): js.Any = js.native
+  @scala.inline
+  def instantiateByAlias(alias: java.lang.String, args: js.Any*): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("instantiateByAlias")(alias.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /** [Method] Checks if a class has already been created
     * @param className String
     * @returns Boolean exist
     */
-  @JSGlobal("Ext.ClassManager.isCreated")
-  @js.native
-  def isCreated(): Boolean = js.native
-  @JSGlobal("Ext.ClassManager.isCreated")
-  @js.native
-  def isCreated(className: java.lang.String): Boolean = js.native
+  @scala.inline
+  def isCreated(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreated")().asInstanceOf[Boolean]
+  @scala.inline
+  def isCreated(className: java.lang.String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isCreated")(className.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** [Method] Sets a name reference to a class
     * @param name String
     * @param value Object
     * @returns Ext.ClassManager this
     */
-  @JSGlobal("Ext.ClassManager.set")
-  @js.native
-  def set(): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.set")
-  @js.native
-  def set(name: js.UndefOr[scala.Nothing], value: js.Any): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.set")
-  @js.native
-  def set(name: java.lang.String): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.set")
-  @js.native
-  def set(name: java.lang.String, value: js.Any): IClassManager = js.native
+  @scala.inline
+  def set(): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("set")().asInstanceOf[IClassManager]
+  @scala.inline
+  def set(name: java.lang.String): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any]).asInstanceOf[IClassManager]
+  @scala.inline
+  def set(name: java.lang.String, value: js.Any): IClassManager = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IClassManager]
+  @scala.inline
+  def set(name: Unit, value: js.Any): IClassManager = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IClassManager]
   
   /** [Method] Register the alias for a class
     * @param cls Ext.Class/String a reference to a class or a className
     * @param alias String Alias to use when referring to this class
     * @returns Ext.ClassManager this
     */
-  @JSGlobal("Ext.ClassManager.setAlias")
-  @js.native
-  def setAlias(): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.setAlias")
-  @js.native
-  def setAlias(cls: js.UndefOr[scala.Nothing], alias: java.lang.String): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.setAlias")
-  @js.native
-  def setAlias(cls: js.Any): IClassManager = js.native
-  @JSGlobal("Ext.ClassManager.setAlias")
-  @js.native
-  def setAlias(cls: js.Any, alias: java.lang.String): IClassManager = js.native
+  @scala.inline
+  def setAlias(): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlias")().asInstanceOf[IClassManager]
+  @scala.inline
+  def setAlias(cls: js.Any): IClassManager = ^.asInstanceOf[js.Dynamic].applyDynamic("setAlias")(cls.asInstanceOf[js.Any]).asInstanceOf[IClassManager]
+  @scala.inline
+  def setAlias(cls: js.Any, alias: java.lang.String): IClassManager = (^.asInstanceOf[js.Dynamic].applyDynamic("setAlias")(cls.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[IClassManager]
+  @scala.inline
+  def setAlias(cls: Unit, alias: java.lang.String): IClassManager = (^.asInstanceOf[js.Dynamic].applyDynamic("setAlias")(cls.asInstanceOf[js.Any], alias.asInstanceOf[js.Any])).asInstanceOf[IClassManager]
   
   /** [Method] Creates a namespace and assign the value to the created object Ext ClassManager setNamespace MyCompany pkg Example
     * @param name String
     * @param value Object
     */
-  @JSGlobal("Ext.ClassManager.setNamespace")
-  @js.native
-  def setNamespace(): Unit = js.native
-  @JSGlobal("Ext.ClassManager.setNamespace")
-  @js.native
-  def setNamespace(name: js.UndefOr[scala.Nothing], value: js.Any): Unit = js.native
-  @JSGlobal("Ext.ClassManager.setNamespace")
-  @js.native
-  def setNamespace(name: java.lang.String): Unit = js.native
-  @JSGlobal("Ext.ClassManager.setNamespace")
-  @js.native
-  def setNamespace(name: java.lang.String, value: js.Any): Unit = js.native
+  @scala.inline
+  def setNamespace(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNamespace")().asInstanceOf[Unit]
+  @scala.inline
+  def setNamespace(name: java.lang.String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setNamespace")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setNamespace(name: java.lang.String, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNamespace")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def setNamespace(name: Unit, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setNamespace")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,50 +2,48 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The format of a run of text in a cell. Absent values indicate that the
   * field isn&#39;t specified.
   */
-@js.native
 trait SchemaTextFormat extends StObject {
   
   /**
     * True if the text is bold.
     */
-  var bold: js.UndefOr[Boolean] = js.native
+  var bold: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The font family.
     */
-  var fontFamily: js.UndefOr[String] = js.native
+  var fontFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the font.
     */
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The foreground color of the text.
     */
-  var foregroundColor: js.UndefOr[SchemaColor] = js.native
+  var foregroundColor: js.UndefOr[SchemaColor] = js.undefined
   
   /**
     * True if the text is italicized.
     */
-  var italic: js.UndefOr[Boolean] = js.native
+  var italic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if the text has a strikethrough.
     */
-  var strikethrough: js.UndefOr[Boolean] = js.native
+  var strikethrough: js.UndefOr[Boolean] = js.undefined
   
   /**
     * True if the text is underlined.
     */
-  var underline: js.UndefOr[Boolean] = js.native
+  var underline: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaTextFormat {
   

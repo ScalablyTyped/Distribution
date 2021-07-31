@@ -11,8 +11,8 @@ Redis Lua Script Manager for NodeJS
 | Full name          | redis-scripto |
 | Keywords           | redis, script, lua, manager, eval |
 | # releases         | 0 |
-| # dependents       | 7 |
-| # downloads        | 58803 |
+| # dependents       | 9 |
+| # downloads        | 64612 |
 | # stars            | 5 |
 
 ## Links

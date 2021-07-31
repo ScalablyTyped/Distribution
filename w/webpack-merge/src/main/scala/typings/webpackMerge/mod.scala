@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,10 +14,13 @@ object mod extends Shortcut {
   
   type ConfigurationMergeConfigFunction = js.Function1[/* customizeOptions */ CustomizeOptions, ConfigurationMergeFunction]
   
-  type ConfigurationMergeFunction = js.Function1[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ /* repeated */ js.Any, 
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-  ]
+  @js.native
+  trait ConfigurationMergeFunction extends StObject {
+    
+    def apply(
+      configs: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any)*
+    ): js.Any = js.native
+  }
   
   type CustomizeArrayFunction = js.Function3[
     /* a */ js.Array[js.Any], 
@@ -29,12 +31,11 @@ object mod extends Shortcut {
   
   type CustomizeObjectFunction = js.Function3[/* a */ js.Object, /* b */ js.Object, /* key */ String, js.UndefOr[js.Object | Null]]
   
-  @js.native
   trait CustomizeOptions extends StObject {
     
-    var customizeArray: js.UndefOr[CustomizeArrayFunction | UniqueFunction] = js.native
+    var customizeArray: js.UndefOr[CustomizeArrayFunction | UniqueFunction] = js.undefined
     
-    var customizeObject: js.UndefOr[CustomizeObjectFunction] = js.native
+    var customizeObject: js.UndefOr[CustomizeObjectFunction] = js.undefined
   }
   object CustomizeOptions {
     
@@ -87,12 +88,13 @@ object mod extends Shortcut {
     /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
   ]
   
-  type MultipleConfigurationMergeFunction = js.Function1[
-    /* repeated */ MultipleConfiguration, 
-    js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
-    ]
-  ]
+  @js.native
+  trait MultipleConfigurationMergeFunction extends StObject {
+    
+    def apply(configs: MultipleConfiguration*): js.Array[
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
+      ] = js.native
+  }
   
   type UniqueFunction = js.Function3[
     /* field */ String, 
@@ -110,7 +112,7 @@ object mod extends Shortcut {
     def apply(customizeOptions: CustomizeOptions): ConfigurationMergeFunction = js.native
     
     def multiple(configs: MultipleConfiguration*): js.Array[
-        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ _
+        /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Configuration */ js.Any
       ] = js.native
     @JSName("multiple")
     var multiple_Original: MultipleConfigurationMergeFunction = js.native

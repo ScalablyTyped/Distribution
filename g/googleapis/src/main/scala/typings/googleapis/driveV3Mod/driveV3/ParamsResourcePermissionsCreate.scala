@@ -6,57 +6,57 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourcePermissionsCreate extends StandardParameters {
+trait ParamsResourcePermissionsCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * A plain text custom message to include in the notification email.
     */
-  var emailMessage: js.UndefOr[String] = js.native
+  var emailMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the file or Team Drive.
     */
-  var fileId: js.UndefOr[String] = js.native
+  var fileId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaPermission] = js.native
+  var requestBody: js.UndefOr[SchemaPermission] = js.undefined
   
   /**
     * Whether to send a notification email when sharing to users or groups.
     * This defaults to true for users and groups, and is not allowed for other
     * requests. It must not be disabled for ownership transfers.
     */
-  var sendNotificationEmail: js.UndefOr[Boolean] = js.native
+  var sendNotificationEmail: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether the requesting application supports Team Drives.
     */
-  var supportsTeamDrives: js.UndefOr[Boolean] = js.native
+  var supportsTeamDrives: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Whether to transfer ownership to the specified user and downgrade the
     * current owner to a writer. This parameter is required as an
     * acknowledgement of the side effect.
     */
-  var transferOwnership: js.UndefOr[Boolean] = js.native
+  var transferOwnership: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Issue the request as a domain administrator; if set to true, then the
     * requester will be granted access if they are an administrator of the
     * domain to which the item belongs.
     */
-  var useDomainAdminAccess: js.UndefOr[Boolean] = js.native
+  var useDomainAdminAccess: js.UndefOr[Boolean] = js.undefined
 }
 object ParamsResourcePermissionsCreate {
   

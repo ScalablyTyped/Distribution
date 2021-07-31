@@ -8,15 +8,13 @@ import typings.reactAutosuggest.reactAutosuggestStrings.escape
 import typings.reactAutosuggest.reactAutosuggestStrings.up
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeEvent extends StObject {
   
-  var method: down | up | escape | enter | click | `type` = js.native
+  var method: down | up | escape | enter | click | `type`
   
-  var newValue: String = js.native
+  var newValue: String
 }
 object ChangeEvent {
   

@@ -20,7 +20,6 @@ import typings.mendixmodelsdk.versionChecksMod.StructureType
 import typings.mendixmodelsdk.webservicesMod.webservices.WsdlDescription
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xmlschemasMod {
@@ -105,9 +104,8 @@ object xmlschemasMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlElement.create")
-      @js.native
-      def create(model: IModel): XmlElement = js.native
+      @scala.inline
+      def create(model: IModel): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
       
       /**
         * Creates and returns a new XmlElement instance in the SDK and on the server.
@@ -118,9 +116,8 @@ object xmlschemasMod {
         *  6.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlElement.createInElementUnderChildren")
-      @js.native
-      def createInElementUnderChildren(container: Element): XmlElement = js.native
+      @scala.inline
+      def createInElementUnderChildren(container: Element): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInElementUnderChildren")(container.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
       
       /**
         * Creates and returns a new XmlElement instance in the SDK and on the server.
@@ -131,9 +128,8 @@ object xmlschemasMod {
         *  6.6.0 and higher
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlElement.createInJsonStructureUnderElements")
-      @js.native
-      def createInJsonStructureUnderElements(container: JsonStructure): XmlElement = js.native
+      @scala.inline
+      def createInJsonStructureUnderElements(container: JsonStructure): XmlElement = ^.asInstanceOf[js.Dynamic].applyDynamic("createInJsonStructureUnderElements")(container.asInstanceOf[js.Any]).asInstanceOf[XmlElement]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlElement.structureTypeName")
@@ -290,9 +286,8 @@ object xmlschemasMod {
         * Expects one argument, the projects.IFolderBase in which this unit is contained.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchema.createIn")
-      @js.native
-      def createIn(container: IFolderBase): XmlSchema = js.native
+      @scala.inline
+      def createIn(container: IFolderBase): XmlSchema = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchema]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchema.structureTypeName")
@@ -353,9 +348,8 @@ object xmlschemasMod {
         * After creation, assign or add this instance to a property that accepts this kind of objects.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchemaEntry.create")
-      @js.native
-      def create(model: IModel): XmlSchemaEntry = js.native
+      @scala.inline
+      def create(model: IModel): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
       
       /**
         * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
@@ -363,9 +357,8 @@ object xmlschemasMod {
         * of the parent webservices.WsdlDescription element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchemaEntry.createInWsdlDescriptionUnderSchemaEntries")
-      @js.native
-      def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): XmlSchemaEntry = js.native
+      @scala.inline
+      def createInWsdlDescriptionUnderSchemaEntries(container: WsdlDescription): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInWsdlDescriptionUnderSchemaEntries")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
       
       /**
         * Creates and returns a new XmlSchemaEntry instance in the SDK and on the server.
@@ -373,9 +366,8 @@ object xmlschemasMod {
         * of the parent XmlSchema element passed as argument.
         */
       /* static member */
-      @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchemaEntry.createInXmlSchemaUnderEntries")
-      @js.native
-      def createInXmlSchemaUnderEntries(container: XmlSchema): XmlSchemaEntry = js.native
+      @scala.inline
+      def createInXmlSchemaUnderEntries(container: XmlSchema): XmlSchemaEntry = ^.asInstanceOf[js.Dynamic].applyDynamic("createInXmlSchemaUnderEntries")(container.asInstanceOf[js.Any]).asInstanceOf[XmlSchemaEntry]
       
       /* static member */
       @JSImport("mendixmodelsdk/dist/gen/xmlschemas", "xmlschemas.XmlSchemaEntry.structureTypeName")
@@ -396,12 +388,16 @@ object xmlschemasMod {
       * Interfaces and instance classes for types from the Mendix sub meta model `XmlSchemas`.
       */
     @js.native
-    trait IMxSchema extends IDocument
+    trait IMxSchema
+      extends StObject
+         with IDocument
     
     /**
       * See: {@link https://docs.mendix.com/refguide/xml-schemas relevant section in reference guide}
       */
     @js.native
-    trait IXmlSchema extends IMxSchema
+    trait IXmlSchema
+      extends StObject
+         with IMxSchema
   }
 }

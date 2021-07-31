@@ -5,27 +5,25 @@ import typings.exceljs.exceljsStrings.pageBreakPreview
 import typings.exceljs.exceljsStrings.pageLayout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetViewNormal extends StObject {
   
   /**
   	 * Controls the view state
   	 */
-  var state: normal = js.native
+  var state: normal
   
   /**
   	 * Presentation style
   	 */
-  var style: pageBreakPreview | pageLayout = js.native
+  var style: pageBreakPreview | pageLayout
 }
 object WorksheetViewNormal {
   
   @scala.inline
-  def apply(state: normal, style: pageBreakPreview | pageLayout): WorksheetViewNormal = {
-    val __obj = js.Dynamic.literal(state = state.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any])
+  def apply(style: pageBreakPreview | pageLayout): WorksheetViewNormal = {
+    val __obj = js.Dynamic.literal(state = "normal", style = style.asInstanceOf[js.Any])
     __obj.asInstanceOf[WorksheetViewNormal]
   }
   

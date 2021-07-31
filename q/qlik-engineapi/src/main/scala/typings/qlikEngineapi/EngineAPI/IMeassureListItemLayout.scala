@@ -2,19 +2,19 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * GenericDimensionsListProperties width extend GenericBaseLayout
   */
-@js.native
-trait IMeassureListItemLayout extends IGenericBaseLayout {
+trait IMeassureListItemLayout
+  extends StObject
+     with IGenericBaseLayout {
   
-  var qData: Null = js.native
+  var qData: Null
   
   @JSName("qMeta")
-  var qMeta_IMeassureListItemLayout: INxMetaTitleDescriptionTag = js.native
+  var qMeta_IMeassureListItemLayout: INxMetaTitleDescriptionTag
 }
 object IMeassureListItemLayout {
   

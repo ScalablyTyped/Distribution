@@ -3,225 +3,167 @@ package typings.paypalRestSdk.mod
 import typings.node.httpMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object authorization {
   
-  @JSImport("paypal-rest-sdk", "authorization.capture")
+  @JSImport("paypal-rest-sdk", "authorization")
   @js.native
-  def capture(id: String, data: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(
-    id: String,
-    data: RequestOptions,
-    config: js.UndefOr[scala.Nothing],
-    cb: CallbackFunction[CaptureResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: RequestOptions, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: RequestOptions, config: RequestOptions, cb: CallbackFunction[CaptureResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: RequestOptions, config: CallbackFunction[CaptureResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def capture(id: String, data: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: RequestOptions, config: Unit, cb: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: RequestOptions, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: RequestOptions, config: RequestOptions, cb: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: RequestOptions, config: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def capture(
     id: String,
     data: RequestOptions,
     config: CallbackFunction[CaptureResource],
     cb: CallbackFunction[CaptureResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: CallbackFunction[CaptureResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def capture(
     id: String,
     data: CallbackFunction[CaptureResource],
-    config: js.UndefOr[scala.Nothing],
+    config: Unit,
     cb: CallbackFunction[CaptureResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: CallbackFunction[CaptureResource], config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CallbackFunction[CaptureResource], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def capture(
     id: String,
     data: CallbackFunction[CaptureResource],
     config: RequestOptions,
     cb: CallbackFunction[CaptureResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: CallbackFunction[CaptureResource], config: CallbackFunction[CaptureResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CallbackFunction[CaptureResource], config: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def capture(
     id: String,
     data: CallbackFunction[CaptureResource],
     config: CallbackFunction[CaptureResource],
     cb: CallbackFunction[CaptureResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: CaptureRequest): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(
-    id: String,
-    data: CaptureRequest,
-    config: js.UndefOr[scala.Nothing],
-    cb: CallbackFunction[CaptureResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: CaptureRequest, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: CaptureRequest, config: RequestOptions, cb: CallbackFunction[CaptureResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
-  def capture(id: String, data: CaptureRequest, config: CallbackFunction[CaptureResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.capture")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CaptureRequest): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CaptureRequest, config: Unit, cb: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CaptureRequest, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CaptureRequest, config: RequestOptions, cb: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def capture(id: String, data: CaptureRequest, config: CallbackFunction[CaptureResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def capture(
     id: String,
     data: CaptureRequest,
     config: CallbackFunction[CaptureResource],
     cb: CallbackFunction[CaptureResource]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("capture")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("paypal-rest-sdk", "authorization.get")
-  @js.native
-  def get(id: String, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.get")
-  @js.native
-  def get(id: String, config: RequestOptions, cb: CallbackFunction[AuthorizationResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.get")
-  @js.native
-  def get(id: String, config: CallbackFunction[AuthorizationResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.get")
-  @js.native
+  @scala.inline
+  def get(id: String, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def get(id: String, config: RequestOptions, cb: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def get(id: String, config: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def get(
     id: String,
     config: CallbackFunction[AuthorizationResource],
     cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(
-    id: String,
-    data: RequestOptions,
-    config: js.UndefOr[scala.Nothing],
-    cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: RequestOptions, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
+  @scala.inline
+  def reauthorize(id: String, data: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: RequestOptions, config: Unit, cb: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: RequestOptions, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def reauthorize(
     id: String,
     data: RequestOptions,
     config: RequestOptions,
     cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: RequestOptions, config: CallbackFunction[AuthorizationResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: RequestOptions, config: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def reauthorize(
     id: String,
     data: RequestOptions,
     config: CallbackFunction[AuthorizationResource],
     cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: Amount): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(
-    id: String,
-    data: Amount,
-    config: js.UndefOr[scala.Nothing],
-    cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: Amount, config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: Amount, config: RequestOptions, cb: CallbackFunction[AuthorizationResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: Amount, config: CallbackFunction[AuthorizationResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: Amount): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: Amount, config: Unit, cb: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: Amount, config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: Amount, config: RequestOptions, cb: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: Amount, config: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def reauthorize(
     id: String,
     data: Amount,
     config: CallbackFunction[AuthorizationResource],
     cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: CallbackFunction[AuthorizationResource]): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: CallbackFunction[AuthorizationResource]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def reauthorize(
     id: String,
     data: CallbackFunction[AuthorizationResource],
-    config: js.UndefOr[scala.Nothing],
+    config: Unit,
     cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
-  def reauthorize(id: String, data: CallbackFunction[AuthorizationResource], config: RequestOptions): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def reauthorize(id: String, data: CallbackFunction[AuthorizationResource], config: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def reauthorize(
     id: String,
     data: CallbackFunction[AuthorizationResource],
     config: RequestOptions,
     cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def reauthorize(
     id: String,
     data: CallbackFunction[AuthorizationResource],
     config: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
-  @JSImport("paypal-rest-sdk", "authorization.reauthorize")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def reauthorize(
     id: String,
     data: CallbackFunction[AuthorizationResource],
     config: CallbackFunction[AuthorizationResource],
     cb: CallbackFunction[AuthorizationResource]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("reauthorize")(id.asInstanceOf[js.Any], data.asInstanceOf[js.Any], config.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait CaptureRequest extends StObject {
     
-    var amount: js.UndefOr[Amount] = js.native
+    var amount: js.UndefOr[Amount] = js.undefined
     
-    var invoice_number: js.UndefOr[String] = js.native
+    var invoice_number: js.UndefOr[String] = js.undefined
     
-    var is_final_capture: js.UndefOr[Boolean] = js.native
+    var is_final_capture: js.UndefOr[Boolean] = js.undefined
   }
   object CaptureRequest {
     

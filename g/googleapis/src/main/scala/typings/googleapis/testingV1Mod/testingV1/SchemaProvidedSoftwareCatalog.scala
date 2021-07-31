@@ -2,13 +2,11 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The currently provided software environment on the devices under test.
   */
-@js.native
 trait SchemaProvidedSoftwareCatalog extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaProvidedSoftwareCatalog extends StObject {
     * that is provided by TestExecutionService. Example: &quot;1.0.2
     * beta&quot;.
     */
-  var orchestratorVersion: js.UndefOr[String] = js.native
+  var orchestratorVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaProvidedSoftwareCatalog {
   

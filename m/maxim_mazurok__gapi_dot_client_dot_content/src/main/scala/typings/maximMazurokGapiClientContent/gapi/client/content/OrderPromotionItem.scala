@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderPromotionItem extends StObject {
   
   /** The line item ID of a product. Do not provide for `orders.createtestorder`. */
-  var lineItemId: js.UndefOr[String] = js.native
+  var lineItemId: js.UndefOr[String] = js.undefined
   
   /** Required. Offer ID of a product. Only for `orders.createtestorder`. */
-  var offerId: js.UndefOr[String] = js.native
+  var offerId: js.UndefOr[String] = js.undefined
   
   /** `orders.createtestorder`. */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /** The quantity of the associated product. Do not provide for `orders.createtestorder`. */
-  var quantity: js.UndefOr[Double] = js.native
+  var quantity: js.UndefOr[Double] = js.undefined
 }
 object OrderPromotionItem {
   

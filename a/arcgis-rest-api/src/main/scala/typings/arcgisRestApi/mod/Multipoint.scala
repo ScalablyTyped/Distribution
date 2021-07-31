@@ -2,15 +2,14 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Multipoint
-  extends HasZM
+  extends StObject
+     with HasZM
      with Geometry {
   
-  var points: js.Array[Position] = js.native
+  var points: js.Array[Position]
 }
 object Multipoint {
   

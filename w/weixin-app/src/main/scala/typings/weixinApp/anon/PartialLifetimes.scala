@@ -2,22 +2,20 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<weixin-app.wx.Lifetimes> */
-@js.native
 trait PartialLifetimes extends StObject {
   
-  var attached: js.UndefOr[js.Function0[Unit]] = js.native
+  var attached: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var created: js.UndefOr[js.Function0[Unit]] = js.native
+  var created: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var detached: js.UndefOr[js.Function0[Unit]] = js.native
+  var detached: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var moved: js.UndefOr[js.Function0[Unit]] = js.native
+  var moved: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var ready: js.UndefOr[js.Function0[Unit]] = js.native
+  var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object PartialLifetimes {
   

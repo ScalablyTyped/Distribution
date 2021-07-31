@@ -2,16 +2,16 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinesOptions extends BaseOptions {
+trait LinesOptions
+  extends StObject
+     with BaseOptions {
   
   /**
     * `true` to ignore leading and trailing whitespace. This is the same as `diffTrimmedLines()`.
     */
-  var ignoreWhitespace: js.UndefOr[Boolean] = js.native
+  var ignoreWhitespace: js.UndefOr[Boolean] = js.undefined
   
   /**
     * `true` to treat newline characters as separate tokens. This allows for changes to the newline structure
@@ -19,7 +19,7 @@ trait LinesOptions extends BaseOptions {
     * human friendly form of `diffLines()` and `diffLines()` is better suited for patches and other computer
     * friendly output.
     */
-  var newlineIsToken: js.UndefOr[Boolean] = js.native
+  var newlineIsToken: js.UndefOr[Boolean] = js.undefined
 }
 object LinesOptions {
   

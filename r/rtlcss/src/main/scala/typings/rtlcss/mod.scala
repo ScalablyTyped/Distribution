@@ -1,10 +1,12 @@
 package typings.rtlcss
 
 import org.scalablytyped.runtime.Shortcut
+import typings.postcss.mod.LazyResult
 import typings.postcss.mod.Plugin_
+import typings.postcss.mod.Result
+import typings.postcss.mod.Root_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -13,52 +15,51 @@ object mod extends Shortcut {
   @js.native
   val ^ : RtlCss = js.native
   
-  @js.native
   trait ConfigOptions extends StObject {
     
     /**
       * Applies to CSS rules containing no directional properties,
       * it will update the selector by applying String Map.
       */
-    var autoRename: Boolean = js.native
+    var autoRename: Boolean
     
     /**
       * Ensures autoRename is applied only if pair exists.
       */
-    var autoRenameStrict: Boolean = js.native
+    var autoRenameStrict: Boolean
     
     /**
       * An object map of disabled plugins directives,
       * where keys are plugin names and value are object
       * hash of disabled directives. e.g. {'rtlcss':{'config':true}}.
       */
-    var blacklist: js.Object = js.native
+    var blacklist: js.Object
     
     /**
       * Removes directives comments from output CSS.
       */
-    var clean: Boolean = js.native
+    var clean: Boolean
     
     /**
       * Fallback value for String Map options.
       */
-    var greedy: Boolean = js.native
+    var greedy: Boolean
     
     /**
       * Applies String Map to URLs. You can also target specific node types using an object literal.
       * e.g. {'atrule': true, 'decl': false}.
       */
-    var processUrls: Boolean | js.Object = js.native
+    var processUrls: Boolean | js.Object
     
     /**
       * The default array of String Map.
       */
-    var stringMap: js.Array[StringMap] = js.native
+    var stringMap: js.Array[StringMap]
     
     /**
       * When enabled, flips background-position expressed in length units using calc.
       */
-    var useCalc: Boolean = js.native
+    var useCalc: Boolean
   }
   object ConfigOptions {
     
@@ -121,36 +122,30 @@ object mod extends Shortcut {
       * Creates a new RTLCSS instance, process the input and return its result.
       */
     def process(css: String): String = js.native
-    def process(
-      css: String,
-      options: js.UndefOr[scala.Nothing],
-      plugins: js.UndefOr[scala.Nothing],
-      hooks: HookOptions
-    ): String = js.native
-    def process(css: String, options: js.UndefOr[scala.Nothing], plugins: js.Array[String]): String = js.native
-    def process(css: String, options: js.UndefOr[scala.Nothing], plugins: js.Array[String], hooks: HookOptions): String = js.native
-    def process(css: String, options: js.UndefOr[scala.Nothing], plugins: js.Object): String = js.native
-    def process(css: String, options: js.UndefOr[scala.Nothing], plugins: js.Object, hooks: HookOptions): String = js.native
     def process(css: String, options: js.Object): String = js.native
-    def process(css: String, options: js.Object, plugins: js.UndefOr[scala.Nothing], hooks: HookOptions): String = js.native
     def process(css: String, options: js.Object, plugins: js.Array[String]): String = js.native
     def process(css: String, options: js.Object, plugins: js.Array[String], hooks: HookOptions): String = js.native
     def process(css: String, options: js.Object, plugins: js.Object): String = js.native
     def process(css: String, options: js.Object, plugins: js.Object, hooks: HookOptions): String = js.native
+    def process(css: String, options: js.Object, plugins: Unit, hooks: HookOptions): String = js.native
+    def process(css: String, options: Unit, plugins: js.Array[String]): String = js.native
+    def process(css: String, options: Unit, plugins: js.Array[String], hooks: HookOptions): String = js.native
+    def process(css: String, options: Unit, plugins: js.Object): String = js.native
+    def process(css: String, options: Unit, plugins: js.Object, hooks: HookOptions): String = js.native
+    def process(css: String, options: Unit, plugins: Unit, hooks: HookOptions): String = js.native
   }
   
-  @js.native
   trait HookOptions extends StObject {
     
     /**
       * The function to be called after processing the CSS.
       */
-    def post(): Unit = js.native
+    def post(): Unit
     
     /**
       * The function to be called before processing the CSS.
       */
-    def pre(): Unit = js.native
+    def pre(): Unit
   }
   object HookOptions {
     
@@ -171,14 +166,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait MapOptions extends StObject {
     
-    var greedy: js.UndefOr[Boolean] = js.native
+    var greedy: js.UndefOr[Boolean] = js.undefined
     
-    var ignoreCase: Boolean = js.native
+    var ignoreCase: Boolean
     
-    var scope: String = js.native
+    var scope: String
   }
   object MapOptions {
     
@@ -205,22 +199,34 @@ object mod extends Shortcut {
     }
   }
   
-  type RtlCss = Plugin_[ConfigOptions] with ExportedAPI
-  
   @js.native
+  trait RtlCss
+    extends Plugin_[ConfigOptions]
+       with ExportedAPI {
+    
+    /* InferMemberOverrides */
+    override def apply(arg1: /* root */ Root_, arg2: /* result */ Result): js.Promise[js.Any] | js.Any = js.native
+    
+    /**
+      * Creates a new RTLCSS instance, process the input and return its result.
+      */
+    /* InferMemberOverrides */
+    override def process(css: String): String & LazyResult = js.native
+  }
+  
   trait StringMap extends StObject {
     
-    var exclusive: js.UndefOr[Boolean] = js.native
+    var exclusive: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var options: MapOptions = js.native
+    var options: MapOptions
     
-    var priority: Double = js.native
+    var priority: Double
     
-    var replace: String | js.Array[String] = js.native
+    var replace: String | js.Array[String]
     
-    var search: String | js.Array[String] = js.native
+    var search: String | js.Array[String]
   }
   object StringMap {
     

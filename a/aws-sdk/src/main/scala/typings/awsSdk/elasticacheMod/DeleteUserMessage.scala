@@ -2,16 +2,14 @@ package typings.awsSdk.elasticacheMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserMessage extends StObject {
   
   /**
     * The ID of the user.
     */
-  var UserId: typings.awsSdk.elasticacheMod.UserId = js.native
+  var UserId: typings.awsSdk.elasticacheMod.UserId
 }
 object DeleteUserMessage {
   

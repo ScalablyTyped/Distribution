@@ -2,58 +2,56 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateNetworkProfileRequest extends StObject {
   
   /**
     * The ARN of the Private Certificate Authority (PCA) created in AWS Certificate Manager (ACM). This is used to issue certificates to the devices. 
     */
-  var CertificateAuthorityArn: js.UndefOr[Arn] = js.native
+  var CertificateAuthorityArn: js.UndefOr[Arn] = js.undefined
   
-  var ClientRequestToken: typings.awsSdk.alexaforbusinessMod.ClientRequestToken = js.native
+  var ClientRequestToken: typings.awsSdk.alexaforbusinessMod.ClientRequestToken
   
   /**
     * The current password of the Wi-Fi network.
     */
-  var CurrentPassword: js.UndefOr[CurrentWiFiPassword] = js.native
+  var CurrentPassword: js.UndefOr[CurrentWiFiPassword] = js.undefined
   
   /**
     * Detailed information about a device's network profile.
     */
-  var Description: js.UndefOr[NetworkProfileDescription] = js.native
+  var Description: js.UndefOr[NetworkProfileDescription] = js.undefined
   
   /**
     * The authentication standard that is used in the EAP framework. Currently, EAP_TLS is supported.
     */
-  var EapMethod: js.UndefOr[NetworkEapMethod] = js.native
+  var EapMethod: js.UndefOr[NetworkEapMethod] = js.undefined
   
   /**
     * The name of the network profile associated with a device.
     */
-  var NetworkProfileName: typings.awsSdk.alexaforbusinessMod.NetworkProfileName = js.native
+  var NetworkProfileName: typings.awsSdk.alexaforbusinessMod.NetworkProfileName
   
   /**
     * The next, or subsequent, password of the Wi-Fi network. This password is asynchronously transmitted to the device and is used when the password of the network changes to NextPassword. 
     */
-  var NextPassword: js.UndefOr[NextWiFiPassword] = js.native
+  var NextPassword: js.UndefOr[NextWiFiPassword] = js.undefined
   
   /**
     * The security type of the Wi-Fi network. This can be WPA2_ENTERPRISE, WPA2_PSK, WPA_PSK, WEP, or OPEN.
     */
-  var SecurityType: NetworkSecurityType = js.native
+  var SecurityType: NetworkSecurityType
   
   /**
     * The SSID of the Wi-Fi network.
     */
-  var Ssid: NetworkSsid = js.native
+  var Ssid: NetworkSsid
   
   /**
     * The root certificates of your authentication server that is installed on your devices and used to trust your authentication server during EAP negotiation. 
     */
-  var TrustAnchors: js.UndefOr[TrustAnchorList] = js.native
+  var TrustAnchors: js.UndefOr[TrustAnchorList] = js.undefined
 }
 object CreateNetworkProfileRequest {
   

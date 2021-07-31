@@ -2,38 +2,36 @@ package typings.semanticUiApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<std.Pick<semantic-ui-api.SemanticUI.Api.ErrorSettings._Impl, keyof semantic-ui-api.SemanticUI.Api.ErrorSettings._Impl>> */
-@js.native
 trait PartialPickImplkeyofImplBeforeSend extends StObject {
   
-  var JSONParse: js.UndefOr[String] = js.native
+  var JSONParse: js.UndefOr[String] = js.undefined
   
-  var beforeSend: js.UndefOr[String] = js.native
+  var beforeSend: js.UndefOr[String] = js.undefined
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var exitConditions: js.UndefOr[String] = js.native
+  var exitConditions: js.UndefOr[String] = js.undefined
   
-  var legacyParameters: js.UndefOr[String] = js.native
+  var legacyParameters: js.UndefOr[String] = js.undefined
   
-  var missingAction: js.UndefOr[String] = js.native
+  var missingAction: js.UndefOr[String] = js.undefined
   
-  var missingSerialize: js.UndefOr[String] = js.native
+  var missingSerialize: js.UndefOr[String] = js.undefined
   
-  var missingURL: js.UndefOr[String] = js.native
+  var missingURL: js.UndefOr[String] = js.undefined
   
-  var noReturnedValue: js.UndefOr[String] = js.native
+  var noReturnedValue: js.UndefOr[String] = js.undefined
   
-  var parseError: js.UndefOr[String] = js.native
+  var parseError: js.UndefOr[String] = js.undefined
   
-  var requiredParameter: js.UndefOr[String] = js.native
+  var requiredParameter: js.UndefOr[String] = js.undefined
   
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object PartialPickImplkeyofImplBeforeSend {
   

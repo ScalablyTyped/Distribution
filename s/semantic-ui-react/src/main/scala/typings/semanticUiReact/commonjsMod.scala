@@ -4,16 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object commonjsMod {
   
-  @js.native
   trait HtmlIframeProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object HtmlIframeProps {
     
@@ -34,11 +33,11 @@ object commonjsMod {
     }
   }
   
-  @js.native
   trait HtmlImageProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object HtmlImageProps {
     
@@ -59,11 +58,11 @@ object commonjsMod {
     }
   }
   
-  @js.native
   trait HtmlInputrops
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object HtmlInputrops {
     
@@ -84,11 +83,11 @@ object commonjsMod {
     }
   }
   
-  @js.native
   trait HtmlLabelProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object HtmlLabelProps {
     
@@ -109,11 +108,11 @@ object commonjsMod {
     }
   }
   
-  @js.native
   trait HtmlSpanProps
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
   }
   object HtmlSpanProps {
     

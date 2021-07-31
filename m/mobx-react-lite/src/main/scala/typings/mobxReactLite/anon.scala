@@ -3,15 +3,13 @@ package typings.mobxReactLite
 import typings.mobxReactLite.mobxReactLiteBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait DisplayName extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
   }
   object DisplayName {
     
@@ -29,16 +27,15 @@ object anon {
     }
   }
   
-  @js.native
   trait ForwardRef extends StObject {
     
-    var forwardRef: `true` = js.native
+    var forwardRef: `true`
   }
   object ForwardRef {
     
     @scala.inline
-    def apply(forwardRef: `true`): ForwardRef = {
-      val __obj = js.Dynamic.literal(forwardRef = forwardRef.asInstanceOf[js.Any])
+    def apply(): ForwardRef = {
+      val __obj = js.Dynamic.literal(forwardRef = true)
       __obj.asInstanceOf[ForwardRef]
     }
     
@@ -51,15 +48,14 @@ object anon {
   }
   
   /* Inlined mobx-react-lite.mobx-react-lite/dist/observer.IObserverOptions & {  forwardRef :true} */
-  @js.native
   trait IObserverOptionsforwardRe extends StObject {
     
-    val forwardRef: js.UndefOr[Boolean] with `true` = js.native
+    val forwardRef: js.UndefOr[Boolean] & `true`
   }
   object IObserverOptionsforwardRe {
     
     @scala.inline
-    def apply(forwardRef: js.UndefOr[Boolean] with `true`): IObserverOptionsforwardRe = {
+    def apply(forwardRef: js.UndefOr[Boolean] & `true`): IObserverOptionsforwardRe = {
       val __obj = js.Dynamic.literal(forwardRef = forwardRef.asInstanceOf[js.Any])
       __obj.asInstanceOf[IObserverOptionsforwardRe]
     }
@@ -68,7 +64,7 @@ object anon {
     implicit class IObserverOptionsforwardReMutableBuilder[Self <: IObserverOptionsforwardRe] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setForwardRef(value: js.UndefOr[Boolean] with `true`): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
+      def setForwardRef(value: js.UndefOr[Boolean] & `true`): Self = StObject.set(x, "forwardRef", value.asInstanceOf[js.Any])
     }
   }
 }

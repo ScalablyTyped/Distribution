@@ -4,17 +4,15 @@ import typings.ckeditorCkeditor5Engine.mod.model.Node
 import typings.ckeditorCkeditor5Engine.mod.model.SchemaContextDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Context extends StObject {
   
-  var context: js.UndefOr[SchemaContextDefinition] = js.native
+  var context: js.UndefOr[SchemaContextDefinition] = js.undefined
   
-  var lastRangeBackward: js.UndefOr[Boolean] = js.native
+  var lastRangeBackward: js.UndefOr[Boolean] = js.undefined
   
-  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.native
+  var selectionAttributes: js.UndefOr[js.Array[js.Object]] = js.undefined
 }
 object Context {
   

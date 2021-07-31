@@ -2,23 +2,55 @@ package typings.activexAccess.Access
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Entity extends StObject {
   
   @JSName("Access.Entity_typekey")
-  var AccessDotEntity_typekey: Entity = js.native
+  var AccessDotEntity_typekey: Entity
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  def Operations(Index: String): Operation = js.native
-  def Operations(Index: Double): Operation = js.native
+  def Operations(Index: String): Operation
+  def Operations(Index: Double): Operation
   @JSName("Operations")
-  val Operations_Original: Operations = js.native
+  val Operations_Original: Operations
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
+}
+object Entity {
+  
+  @scala.inline
+  def apply(
+    AccessDotEntity_typekey: Entity,
+    IsMemberSafe: Double => Boolean,
+    Name: String,
+    Operations: Operations,
+    Parent: js.Any
+  ): Entity = {
+    val __obj = js.Dynamic.literal(IsMemberSafe = js.Any.fromFunction1(IsMemberSafe), Name = Name.asInstanceOf[js.Any], Operations = Operations.asInstanceOf[js.Any], Parent = Parent.asInstanceOf[js.Any])
+    __obj.updateDynamic("Access.Entity_typekey")(AccessDotEntity_typekey.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Entity]
+  }
+  
+  @scala.inline
+  implicit class EntityMutableBuilder[Self <: Entity] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setAccessDotEntity_typekey(value: Entity): Self = StObject.set(x, "Access.Entity_typekey", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setIsMemberSafe(value: Double => Boolean): Self = StObject.set(x, "IsMemberSafe", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setName(value: String): Self = StObject.set(x, "Name", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOperations(value: Operations): Self = StObject.set(x, "Operations", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setParent(value: js.Any): Self = StObject.set(x, "Parent", value.asInstanceOf[js.Any])
+  }
 }

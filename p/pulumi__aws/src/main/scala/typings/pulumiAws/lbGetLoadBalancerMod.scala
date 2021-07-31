@@ -6,38 +6,36 @@ import typings.pulumiAws.outputMod.lb.GetLoadBalancerSubnetMapping
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lbGetLoadBalancerMod {
   
-  @JSImport("@pulumi/aws/lb/getLoadBalancer", "getLoadBalancer")
+  @JSImport("@pulumi/aws/lb/getLoadBalancer", JSImport.Namespace)
   @js.native
-  def getLoadBalancer(): js.Promise[GetLoadBalancerResult] = js.native
-  @JSImport("@pulumi/aws/lb/getLoadBalancer", "getLoadBalancer")
-  @js.native
-  def getLoadBalancer(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
-  @JSImport("@pulumi/aws/lb/getLoadBalancer", "getLoadBalancer")
-  @js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = js.native
-  @JSImport("@pulumi/aws/lb/getLoadBalancer", "getLoadBalancer")
-  @js.native
-  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getLoadBalancer(): js.Promise[GetLoadBalancerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")().asInstanceOf[js.Promise[GetLoadBalancerResult]]
+  @scala.inline
+  def getLoadBalancer(args: Unit, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLoadBalancerResult]]
+  @scala.inline
+  def getLoadBalancer(args: GetLoadBalancerArgs): js.Promise[GetLoadBalancerResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetLoadBalancerResult]]
+  @scala.inline
+  def getLoadBalancer(args: GetLoadBalancerArgs, opts: InvokeOptions): js.Promise[GetLoadBalancerResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getLoadBalancer")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetLoadBalancerResult]]
+  
   trait GetLoadBalancerArgs extends StObject {
     
     /**
       * The full ARN of the load balancer.
       */
-    val arn: js.UndefOr[String] = js.native
+    val arn: js.UndefOr[String] = js.undefined
     
     /**
       * The unique name of the load balancer.
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetLoadBalancerArgs {
     
@@ -70,51 +68,50 @@ object lbGetLoadBalancerMod {
     }
   }
   
-  @js.native
   trait GetLoadBalancerResult extends StObject {
     
-    val accessLogs: GetLoadBalancerAccessLogs = js.native
+    val accessLogs: GetLoadBalancerAccessLogs
     
-    val arn: String = js.native
+    val arn: String
     
-    val arnSuffix: String = js.native
+    val arnSuffix: String
     
-    val customerOwnedIpv4Pool: String = js.native
+    val customerOwnedIpv4Pool: String
     
-    val dnsName: String = js.native
+    val dnsName: String
     
-    val dropInvalidHeaderFields: Boolean = js.native
+    val dropInvalidHeaderFields: Boolean
     
-    val enableDeletionProtection: Boolean = js.native
+    val enableDeletionProtection: Boolean
     
-    val enableHttp2: Boolean = js.native
+    val enableHttp2: Boolean
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val idleTimeout: Double = js.native
+    val idleTimeout: Double
     
-    val internal: Boolean = js.native
+    val internal: Boolean
     
-    val ipAddressType: String = js.native
+    val ipAddressType: String
     
-    val loadBalancerType: String = js.native
+    val loadBalancerType: String
     
-    val name: String = js.native
+    val name: String
     
-    val securityGroups: js.Array[String] = js.native
+    val securityGroups: js.Array[String]
     
-    val subnetMappings: js.Array[GetLoadBalancerSubnetMapping] = js.native
+    val subnetMappings: js.Array[GetLoadBalancerSubnetMapping]
     
-    val subnets: js.Array[String] = js.native
+    val subnets: js.Array[String]
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
-    val vpcId: String = js.native
+    val vpcId: String
     
-    val zoneId: String = js.native
+    val zoneId: String
   }
   object GetLoadBalancerResult {
     

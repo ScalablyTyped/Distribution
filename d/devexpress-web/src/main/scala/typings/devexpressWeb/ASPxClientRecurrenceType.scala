@@ -2,39 +2,37 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains recurrence types.
   */
-@js.native
 trait ASPxClientRecurrenceType extends StObject {
   
   /**
     * The recurring appointment occurs on a daily basis.
     */
-  var Daily: String = js.native
+  var Daily: String
   
   /**
     * The recurring appointment occurs on an hourly base.
     */
-  var Hourly: String = js.native
+  var Hourly: String
   
   /**
     * The recurring appointment reoccurs on a monthly basis.
     */
-  var Monthly: String = js.native
+  var Monthly: String
   
   /**
     * The recurring appointment reoccurs on a weekly basis.
     */
-  var Weekly: String = js.native
+  var Weekly: String
   
   /**
     * The recurring appointment reoccurs on an yearly basis.
     */
-  var Yearly: String = js.native
+  var Yearly: String
 }
 object ASPxClientRecurrenceType {
   

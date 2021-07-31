@@ -3,15 +3,13 @@ package typings.socketclusterClient
 import typings.socketclusterClient.authMod.AuthToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AckTimeout extends StObject {
     
-    var ackTimeout: js.UndefOr[Double] = js.native
+    var ackTimeout: js.UndefOr[Double] = js.undefined
   }
   object AckTimeout {
     
@@ -32,12 +30,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Channel extends StObject {
     
-    var channel: String = js.native
+    var channel: String
     
-    var data: js.Any = js.native
+    var data: js.Any
   }
   object Channel {
     
@@ -58,10 +55,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: typings.std.Error = js.native
+    var error: typings.std.Error
   }
   object Error {
     
@@ -79,10 +75,9 @@ object anon {
     }
   }
   
-  @js.native
   trait OldAuthToken extends StObject {
     
-    var oldAuthToken: AuthToken = js.native
+    var oldAuthToken: AuthToken
   }
   object OldAuthToken {
     

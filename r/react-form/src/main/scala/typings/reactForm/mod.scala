@@ -30,14 +30,17 @@ import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("react-form", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("react-form", "Checkbox")
   @js.native
-  val Checkbox: StatelessComponent[FieldProps with InputHTMLAttributes[HTMLInputElement]] = js.native
+  val Checkbox: StatelessComponent[FieldProps & InputHTMLAttributes[HTMLInputElement]] = js.native
   
   @JSImport("react-form", "Form")
   @js.native
@@ -58,6 +61,9 @@ object mod {
     def componentWillReceiveProps_MForm(nextProps: ReadonlyPartialFormProps, nextContext: js.Any): Unit = js.native
     
     def componentWillUmount(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getChildContext(): FormContext = js.native
     
     def getDefaultState(): FormState = js.native
   }
@@ -81,9 +87,8 @@ object mod {
     def defaultProps_=(x: FormProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-form", "FormField")
-  @js.native
-  def FormField(component: ComponentType[_]): ComponentClass[_, ComponentState] = js.native
+  @scala.inline
+  def FormField(component: ComponentType[js.Any]): ComponentClass[js.Any, ComponentState] = ^.asInstanceOf[js.Dynamic].applyDynamic("FormField")(component.asInstanceOf[js.Any]).asInstanceOf[ComponentClass[js.Any, ComponentState]]
   
   @JSImport("react-form", "NestedForm")
   @js.native
@@ -104,6 +109,9 @@ object mod {
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(props: FieldPropschildrenpropsFi, context: js.Any) = this()
+    
+    /* CompleteClass */
+    override def getChildContext(): RadioGroupContext = js.native
   }
   
   @JSImport("react-form", "Select")
@@ -129,52 +137,54 @@ object mod {
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(props: StyledPropschildrenpropsF, context: js.Any) = this()
+    
+    /* CompleteClass */
+    override def getChildContext(): RadioGroupContext = js.native
   }
   
   @JSImport("react-form", "StyledSelect")
   @js.native
-  val StyledSelect: StatelessComponent[StyledProps with SelectProps with InputHTMLAttributes[HTMLSelectElement]] = js.native
+  val StyledSelect: StatelessComponent[StyledProps & SelectProps & InputHTMLAttributes[HTMLSelectElement]] = js.native
   
   @JSImport("react-form", "StyledText")
   @js.native
-  val StyledText: StatelessComponent[StyledProps with InputHTMLAttributes[HTMLInputElement]] = js.native
+  val StyledText: StatelessComponent[StyledProps & InputHTMLAttributes[HTMLInputElement]] = js.native
   
   @JSImport("react-form", "StyledTextArea")
   @js.native
-  val StyledTextArea: StatelessComponent[StyledProps with TextareaHTMLAttributes[HTMLTextAreaElement]] = js.native
+  val StyledTextArea: StatelessComponent[StyledProps & TextareaHTMLAttributes[HTMLTextAreaElement]] = js.native
   
   @JSImport("react-form", "Text")
   @js.native
-  val Text: StatelessComponent[FieldProps with InputHTMLAttributes[HTMLInputElement]] = js.native
+  val Text: StatelessComponent[FieldProps & InputHTMLAttributes[HTMLInputElement]] = js.native
   
   @JSImport("react-form", "TextArea")
   @js.native
-  val TextArea: StatelessComponent[FieldProps with TextareaHTMLAttributes[HTMLTextAreaElement]] = js.native
+  val TextArea: StatelessComponent[FieldProps & TextareaHTMLAttributes[HTMLTextAreaElement]] = js.native
   
-  @js.native
   trait FieldApi extends StObject {
     
-    def getError(): FormError = js.native
+    def getError(): FormError
     
-    def getFieldName(): String = js.native
+    def getFieldName(): String
     
-    def getSuccess(): FormError = js.native
+    def getSuccess(): FormError
     
-    def getTouched(): Boolean = js.native
+    def getTouched(): Boolean
     
-    def getValue(): FormValue = js.native
+    def getValue(): FormValue
     
-    def getWarning(): FormError = js.native
+    def getWarning(): FormError
     
-    def setError(error: FormError): Unit = js.native
+    def setError(error: FormError): Unit
     
-    def setSuccess(success: FormError): Unit = js.native
+    def setSuccess(success: FormError): Unit
     
-    def setTouched(touched: Boolean): Unit = js.native
+    def setTouched(touched: Boolean): Unit
     
-    def setValue(value: FormValue): Unit = js.native
+    def setValue(value: FormValue): Unit
     
-    def setWarning(warning: FormError): Unit = js.native
+    def setWarning(warning: FormError): Unit
   }
   object FieldApi {
     
@@ -234,16 +244,15 @@ object mod {
     }
   }
   
-  @js.native
   trait FieldProps extends StObject {
     
-    var errorBefore: js.UndefOr[Boolean] = js.native
+    var errorBefore: js.UndefOr[Boolean] = js.undefined
     
-    var field: js.UndefOr[String | (js.Array[js.Array[ReactText] | ReactText | String])] = js.native
+    var field: js.UndefOr[String | (js.Array[js.Array[ReactText] | ReactText | String])] = js.undefined
     
-    var isForm: js.UndefOr[Boolean] = js.native
+    var isForm: js.UndefOr[Boolean] = js.undefined
     
-    var showErrors: js.UndefOr[Boolean] = js.native
+    var showErrors: js.UndefOr[Boolean] = js.undefined
   }
   object FieldProps {
     
@@ -285,60 +294,59 @@ object mod {
     }
   }
   
-  @js.native
   trait FormApi extends StObject {
     
-    def addValue(name: String, value: js.Any): Unit = js.native
+    def addValue(name: String, value: js.Any): Unit
     
-    var asyncValidations: Double = js.native
+    var asyncValidations: Double
     
-    var errors: FormErrors = js.native
+    var errors: FormErrors
     
-    def getFormState(): FormState = js.native
+    def getFormState(): FormState
     
-    def removeValue(name: String, index: Double): Unit = js.native
+    def removeValue(name: String, index: Double): Unit
     
-    def resetAll(): Unit = js.native
+    def resetAll(): Unit
     
-    def setAllTouched(touches: StringDictionary[Boolean]): Unit = js.native
+    def setAllTouched(touches: StringDictionary[Boolean]): Unit
     
-    def setAllValues(values: FormValues): Unit = js.native
+    def setAllValues(values: FormValues): Unit
     
-    def setError(field: String, error: String): Unit = js.native
+    def setError(field: String, error: String): Unit
     
-    def setFormState(state: FormState): Unit = js.native
+    def setFormState(state: FormState): Unit
     
-    def setSuccess(field: String, success: String): Unit = js.native
+    def setSuccess(field: String, success: String): Unit
     
-    def setTouched(field: String, touched: Boolean): Unit = js.native
+    def setTouched(field: String, touched: Boolean): Unit
     
-    def setValue(fieldName: String, value: js.Any): Unit = js.native
+    def setValue(fieldName: String, value: js.Any): Unit
     
-    def setWarning(field: String, warning: String): Unit = js.native
+    def setWarning(field: String, warning: String): Unit
     
     // Methods
-    def submitForm(event: SyntheticEvent[_, Event]): Unit = js.native
+    def submitForm(event: SyntheticEvent[js.Any, Event]): Unit
     
-    var submits: Double = js.native
+    var submits: Double
     
-    var submitted: Boolean = js.native
+    var submitted: Boolean
     
-    var successes: FormErrors = js.native
+    var successes: FormErrors
     
-    def swapValues(name: String, index1: Double, index2: Double): Unit = js.native
+    def swapValues(name: String, index1: Double, index2: Double): Unit
     
-    var touched: Touched = js.native
+    var touched: Touched
     
-    var validating: StringDictionary[Boolean] = js.native
+    var validating: StringDictionary[Boolean]
     
-    var validationFailed: StringDictionary[Boolean] = js.native
+    var validationFailed: StringDictionary[Boolean]
     
-    var validationFailures: Double = js.native
+    var validationFailures: Double
     
     // State
-    var values: FormValues = js.native
+    var values: FormValues
     
-    var warnings: FormErrors = js.native
+    var warnings: FormErrors
   }
   object FormApi {
     
@@ -358,7 +366,7 @@ object mod {
       setTouched: (String, Boolean) => Unit,
       setValue: (String, js.Any) => Unit,
       setWarning: (String, String) => Unit,
-      submitForm: SyntheticEvent[_, Event] => Unit,
+      submitForm: SyntheticEvent[js.Any, Event] => Unit,
       submits: Double,
       submitted: Boolean,
       successes: FormErrors,
@@ -420,7 +428,7 @@ object mod {
       def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setSubmitForm(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
+      def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
@@ -454,10 +462,9 @@ object mod {
     }
   }
   
-  @js.native
   trait FormContext extends StObject {
     
-    var formApi: FormApi = js.native
+    var formApi: FormApi
   }
   object FormContext {
     
@@ -480,55 +487,55 @@ object mod {
   type FormErrors = StringDictionary[FormError]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.reactForm.mod.FormApi because var conflicts: errors, touched, values. Inlined warnings, successes, submits, submitted, asyncValidations, validating, validationFailures, validationFailed, submitForm, setValue, setAllValues, setError, setWarning, setSuccess, setTouched, setAllTouched, addValue, removeValue, swapValues, resetAll, getFormState, setFormState */ @js.native
-  trait FormFunctionProps
-    extends FormProps
+  - typings.reactForm.mod.FormApi because var conflicts: errors, touched, values. Inlined warnings, successes, submits, submitted, asyncValidations, validating, validationFailures, validationFailed, submitForm, setValue, setAllValues, setError, setWarning, setSuccess, setTouched, setAllTouched, addValue, removeValue, swapValues, resetAll, getFormState, setFormState */ trait FormFunctionProps
+    extends StObject
+       with FormProps
        with FormState {
     
-    def addValue(name: String, value: js.Any): Unit = js.native
+    def addValue(name: String, value: js.Any): Unit
     
-    var asyncValidations: Double = js.native
+    var asyncValidations: Double
     
-    def getFormState(): FormState = js.native
+    def getFormState(): FormState
     
-    def removeValue(name: String, index: Double): Unit = js.native
+    def removeValue(name: String, index: Double): Unit
     
-    def resetAll(): Unit = js.native
+    def resetAll(): Unit
     
-    def setAllTouched(touches: StringDictionary[Boolean]): Unit = js.native
+    def setAllTouched(touches: StringDictionary[Boolean]): Unit
     
-    def setAllValues(values: FormValues): Unit = js.native
+    def setAllValues(values: FormValues): Unit
     
-    def setError(field: String, error: String): Unit = js.native
+    def setError(field: String, error: String): Unit
     
-    def setFormState(state: FormState): Unit = js.native
+    def setFormState(state: FormState): Unit
     
-    def setSuccess(field: String, success: String): Unit = js.native
+    def setSuccess(field: String, success: String): Unit
     
-    def setTouched(field: String, touched: Boolean): Unit = js.native
+    def setTouched(field: String, touched: Boolean): Unit
     
-    def setValue(fieldName: String, value: js.Any): Unit = js.native
+    def setValue(fieldName: String, value: js.Any): Unit
     
-    def setWarning(field: String, warning: String): Unit = js.native
+    def setWarning(field: String, warning: String): Unit
     
     // Methods
-    def submitForm(event: SyntheticEvent[_, Event]): Unit = js.native
+    def submitForm(event: SyntheticEvent[js.Any, Event]): Unit
     
-    var submits: Double = js.native
+    var submits: Double
     
-    var submitted: Boolean = js.native
+    var submitted: Boolean
     
-    var successes: FormErrors = js.native
+    var successes: FormErrors
     
-    def swapValues(name: String, index1: Double, index2: Double): Unit = js.native
+    def swapValues(name: String, index1: Double, index2: Double): Unit
     
-    var validating: StringDictionary[Boolean] = js.native
+    var validating: StringDictionary[Boolean]
     
-    var validationFailed: StringDictionary[Boolean] = js.native
+    var validationFailed: StringDictionary[Boolean]
     
-    var validationFailures: Double = js.native
+    var validationFailures: Double
     
-    var warnings: FormErrors = js.native
+    var warnings: FormErrors
   }
   object FormFunctionProps {
     
@@ -549,7 +556,7 @@ object mod {
       setTouched: (String, Boolean) => Unit,
       setValue: (String, js.Any) => Unit,
       setWarning: (String, String) => Unit,
-      submitForm: SyntheticEvent[_, Event] => Unit,
+      submitForm: SyntheticEvent[js.Any, Event] => Unit,
       submits: Double,
       submitted: Boolean,
       successes: FormErrors,
@@ -608,7 +615,7 @@ object mod {
       def setSetWarning(value: (String, String) => Unit): Self = StObject.set(x, "setWarning", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setSubmitForm(value: SyntheticEvent[_, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
+      def setSubmitForm(value: SyntheticEvent[js.Any, Event] => Unit): Self = StObject.set(x, "submitForm", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSubmits(value: Double): Self = StObject.set(x, "submits", value.asInstanceOf[js.Any])
@@ -636,47 +643,46 @@ object mod {
     }
   }
   
-  @js.native
   trait FormProps extends StObject {
     
-    var asyncValidators: js.UndefOr[StringDictionary[js.Function1[/* value */ FormValue, js.Promise[_]]]] = js.native
+    var asyncValidators: js.UndefOr[StringDictionary[js.Function1[/* value */ FormValue, js.Promise[js.Any]]]] = js.undefined
     
-    var component: js.UndefOr[ReactType[typings.reactForm.anon.FormApi]] = js.native
+    var component: js.UndefOr[ReactType[typings.reactForm.anon.FormApi]] = js.undefined
     
-    var defaultValues: js.UndefOr[FormValues] = js.native
+    var defaultValues: js.UndefOr[FormValues] = js.undefined
     
-    var dontPreventDefault: js.UndefOr[Boolean] = js.native
+    var dontPreventDefault: js.UndefOr[Boolean] = js.undefined
     
-    var dontValidateOnMount: js.UndefOr[Boolean] = js.native
+    var dontValidateOnMount: js.UndefOr[Boolean] = js.undefined
     
-    var formDidUpdate: js.UndefOr[js.Function1[/* formState */ FormState, Unit]] = js.native
+    var formDidUpdate: js.UndefOr[js.Function1[/* formState */ FormState, Unit]] = js.undefined
     
-    var getApi: js.UndefOr[js.Function1[/* formApi */ FormApi, Unit]] = js.native
+    var getApi: js.UndefOr[js.Function1[/* formApi */ FormApi, Unit]] = js.undefined
     
     var onSubmit: js.UndefOr[
         js.Function3[
           /* values */ FormValues, 
-          /* submissionEvent */ SyntheticEvent[_, Event], 
+          /* submissionEvent */ SyntheticEvent[js.Any, Event], 
           /* formApi */ FormApi, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onSubmitFailure: js.UndefOr[js.Function2[/* errors */ FormErrors, /* formApi */ FormApi, Unit]] = js.native
+    var onSubmitFailure: js.UndefOr[js.Function2[/* errors */ FormErrors, /* formApi */ FormApi, Unit]] = js.undefined
     
-    var preSubmit: js.UndefOr[js.Function2[/* values */ FormValues, /* formApi */ FormApi, FormValues]] = js.native
+    var preSubmit: js.UndefOr[js.Function2[/* values */ FormValues, /* formApi */ FormApi, FormValues]] = js.undefined
     
-    var preValidate: js.UndefOr[js.Function1[/* values */ FormValues, FormValues]] = js.native
+    var preValidate: js.UndefOr[js.Function1[/* values */ FormValues, FormValues]] = js.undefined
     
-    var render: js.UndefOr[js.Function1[/* formApi */ FormApi, RenderReturn]] = js.native
+    var render: js.UndefOr[js.Function1[/* formApi */ FormApi, RenderReturn]] = js.undefined
     
-    var validateError: js.UndefOr[ValidateValuesFunction] = js.native
+    var validateError: js.UndefOr[ValidateValuesFunction] = js.undefined
     
-    var validateOnSubmit: js.UndefOr[Boolean] = js.native
+    var validateOnSubmit: js.UndefOr[Boolean] = js.undefined
     
-    var validateSuccess: js.UndefOr[js.Function2[/* values */ FormValues, /* errors */ FormErrors, FormErrors]] = js.native
+    var validateSuccess: js.UndefOr[js.Function2[/* values */ FormValues, /* errors */ FormErrors, FormErrors]] = js.undefined
     
-    var validateWarning: js.UndefOr[ValidateValuesFunction] = js.native
+    var validateWarning: js.UndefOr[ValidateValuesFunction] = js.undefined
   }
   object FormProps {
     
@@ -690,7 +696,7 @@ object mod {
     implicit class FormPropsMutableBuilder[Self <: FormProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAsyncValidators(value: StringDictionary[js.Function1[/* value */ FormValue, js.Promise[_]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
+      def setAsyncValidators(value: StringDictionary[js.Function1[/* value */ FormValue, js.Promise[js.Any]]]): Self = StObject.set(x, "asyncValidators", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAsyncValidatorsUndefined: Self = StObject.set(x, "asyncValidators", js.undefined)
@@ -733,7 +739,7 @@ object mod {
       
       @scala.inline
       def setOnSubmit(
-        value: (/* values */ FormValues, /* submissionEvent */ SyntheticEvent[_, Event], /* formApi */ FormApi) => Unit
+        value: (/* values */ FormValues, /* submissionEvent */ SyntheticEvent[js.Any, Event], /* formApi */ FormApi) => Unit
       ): Self = StObject.set(x, "onSubmit", js.Any.fromFunction3(value))
       
       @scala.inline
@@ -789,18 +795,17 @@ object mod {
     }
   }
   
-  @js.native
   trait FormState extends StObject {
     
-    var dirty: js.UndefOr[Boolean] = js.native
+    var dirty: js.UndefOr[Boolean] = js.undefined
     
-    var errors: FormErrors = js.native
+    var errors: FormErrors
     
-    var nestedErrors: NestedErrors = js.native
+    var nestedErrors: NestedErrors
     
-    var touched: Touched = js.native
+    var touched: Touched
     
-    var values: FormValues = js.native
+    var values: FormValues
   }
   object FormState {
     
@@ -837,8 +842,9 @@ object mod {
   
   type FormValues = Nested[FormValue]
   
-  @js.native
-  trait Nested[T] extends /* key */ StringDictionary[T | Nested[T]]
+  trait Nested[T]
+    extends StObject
+       with /* key */ StringDictionary[T | Nested[T]]
   object Nested {
     
     @scala.inline
@@ -850,10 +856,9 @@ object mod {
   
   type NestedErrors = Nested[FormErrors]
   
-  @js.native
   trait RadioGroupContext extends StObject {
     
-    var group: FieldApi = js.native
+    var group: FieldApi
   }
   object RadioGroupContext {
     
@@ -875,12 +880,12 @@ object mod {
   
   type SelectOptions = js.Array[Label]
   
-  @js.native
   trait SelectProps
-    extends SelectHTMLAttributes[HTMLSelectElement]
-       with FieldProps {
+    extends StObject
+       with FieldProps
+       with SelectHTMLAttributes[HTMLSelectElement] {
     
-    var options: SelectOptions = js.native
+    var options: SelectOptions
   }
   object SelectProps {
     
@@ -901,14 +906,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait StyledProps extends FieldProps {
+  trait StyledProps
+    extends StObject
+       with FieldProps {
     
-    var messageBefore: js.UndefOr[Boolean] = js.native
+    var messageBefore: js.UndefOr[Boolean] = js.undefined
     
-    var noMessage: js.UndefOr[Boolean] = js.native
+    var noMessage: js.UndefOr[Boolean] = js.undefined
     
-    var touchValidation: js.UndefOr[Boolean] = js.native
+    var touchValidation: js.UndefOr[Boolean] = js.undefined
   }
   object StyledProps {
     

@@ -3,32 +3,32 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.chart.series.ICartesian
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ILineSeries extends ICartesian {
+trait ILineSeries
+  extends StObject
+     with ICartesian {
   
   /** [Method] Draws the series for the current chart  */
-  var drawSeries: js.UndefOr[js.Function0[Unit]] = js.native
+  var drawSeries: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var fill: js.UndefOr[Boolean] = js.native
+  var fill: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Object) */
-  var markerConfig: js.UndefOr[js.Any] = js.native
+  var markerConfig: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Number) */
-  var selectionTolerance: js.UndefOr[Double] = js.native
+  var selectionTolerance: js.UndefOr[Double] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var showMarkers: js.UndefOr[Boolean] = js.native
+  var showMarkers: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean/Number) */
-  var smooth: js.UndefOr[js.Any] = js.native
+  var smooth: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Object) */
-  var style: js.UndefOr[js.Any] = js.native
+  var style: js.UndefOr[js.Any] = js.undefined
 }
 object ILineSeries {
   

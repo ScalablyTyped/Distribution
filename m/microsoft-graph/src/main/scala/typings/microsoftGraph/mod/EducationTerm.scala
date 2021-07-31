@@ -2,23 +2,21 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EducationTerm extends StObject {
   
   // Display name of the term.
-  var displayName: js.UndefOr[NullableOption[String]] = js.native
+  var displayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // End of the term.
-  var endDate: js.UndefOr[NullableOption[String]] = js.native
+  var endDate: js.UndefOr[NullableOption[String]] = js.undefined
   
   // ID of term in the syncing system.
-  var externalId: js.UndefOr[NullableOption[String]] = js.native
+  var externalId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Start of the term.
-  var startDate: js.UndefOr[NullableOption[String]] = js.native
+  var startDate: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object EducationTerm {
   

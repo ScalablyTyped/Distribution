@@ -2,7 +2,6 @@ package typings.firebaseAdmin.authMod.auth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * when listing all identity providers' configurations via
   * {@link auth.Auth.listProviderConfigs `listProviderConfigs()`}.
   */
-@js.native
 trait ListProviderConfigResults extends StObject {
   
   /**
     * The next page token, if available.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * The list of providers for the specified type in the current page.
     */
-  var providerConfigs: js.Array[AuthProviderConfig] = js.native
+  var providerConfigs: js.Array[AuthProviderConfig]
 }
 object ListProviderConfigResults {
   

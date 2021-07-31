@@ -2,36 +2,34 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RulesPackage extends StObject {
   
   /**
     * The ARN of the rules package.
     */
-  var arn: Arn = js.native
+  var arn: Arn
   
   /**
     * The description of the rules package.
     */
-  var description: js.UndefOr[Text] = js.native
+  var description: js.UndefOr[Text] = js.undefined
   
   /**
     * The name of the rules package.
     */
-  var name: RulesPackageName = js.native
+  var name: RulesPackageName
   
   /**
     * The provider of the rules package.
     */
-  var provider: ProviderName = js.native
+  var provider: ProviderName
   
   /**
     * The version ID of the rules package.
     */
-  var version: Version = js.native
+  var version: Version
 }
 object RulesPackage {
   

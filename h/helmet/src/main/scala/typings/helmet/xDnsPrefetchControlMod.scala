@@ -5,32 +5,42 @@ import typings.node.httpMod.IncomingMessage
 import typings.node.httpMod.ServerResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xDnsPrefetchControlMod {
   
-  @JSImport("helmet/dist/middlewares/x-dns-prefetch-control", JSImport.Default)
+  @JSImport("helmet/dist/middlewares/x-dns-prefetch-control", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default(): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
-  @JSImport("helmet/dist/middlewares/x-dns-prefetch-control", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
+  @scala.inline
   def default(options: ReadonlyXDnsPrefetchContr): js.Function3[
     /* _req */ IncomingMessage, 
     /* res */ ServerResponse, 
     /* next */ js.Function0[Unit], 
     Unit
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function3[
+    /* _req */ IncomingMessage, 
+    /* res */ ServerResponse, 
+    /* next */ js.Function0[Unit], 
+    Unit
+  ]]
   
-  @js.native
   trait XDnsPrefetchControlOptions extends StObject {
     
-    var allow: js.UndefOr[Boolean] = js.native
+    var allow: js.UndefOr[Boolean] = js.undefined
   }
   object XDnsPrefetchControlOptions {
     

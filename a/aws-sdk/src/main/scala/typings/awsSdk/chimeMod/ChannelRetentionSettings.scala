@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelRetentionSettings extends StObject {
   
   /**
     * The time in days to retain a channel.
     */
-  var RetentionDays: js.UndefOr[typings.awsSdk.chimeMod.RetentionDays] = js.native
+  var RetentionDays: js.UndefOr[typings.awsSdk.chimeMod.RetentionDays] = js.undefined
 }
 object ChannelRetentionSettings {
   

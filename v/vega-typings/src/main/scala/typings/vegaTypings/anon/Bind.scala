@@ -6,25 +6,23 @@ import typings.vegaTypings.vegaTypingsStrings.container
 import typings.vegaTypings.vegaTypingsStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bind extends StObject {
   
-  var bind: js.UndefOr[any | container | none] = js.native
+  var bind: js.UndefOr[any | container | none] = js.undefined
   
-  var defaults: js.UndefOr[DefaultsConfig] = js.native
+  var defaults: js.UndefOr[DefaultsConfig] = js.undefined
   
-  var globalCursor: js.UndefOr[Boolean] = js.native
+  var globalCursor: js.UndefOr[Boolean] = js.undefined
   
-  var selector: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var selector: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
-  var timer: js.UndefOr[Boolean] = js.native
+  var timer: js.UndefOr[Boolean] = js.undefined
   
-  var view: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var view: js.UndefOr[Boolean | js.Array[String]] = js.undefined
   
-  var window: js.UndefOr[Boolean | js.Array[String]] = js.native
+  var window: js.UndefOr[Boolean | js.Array[String]] = js.undefined
 }
 object Bind {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.directoryserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRegionsResult extends StObject {
   
   /**
     * If not null, more results are available. Pass this value for the NextToken parameter in a subsequent call to DescribeRegions to retrieve the next set of items.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.directoryserviceMod.NextToken] = js.undefined
   
   /**
     * List of regional information related to the directory per replicated Region.
     */
-  var RegionsDescription: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionsDescription] = js.native
+  var RegionsDescription: js.UndefOr[typings.awsSdk.directoryserviceMod.RegionsDescription] = js.undefined
 }
 object DescribeRegionsResult {
   

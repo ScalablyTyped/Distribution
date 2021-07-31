@@ -2,34 +2,32 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Device network info.
   */
-@js.native
 trait SchemaNetworkInfo extends StObject {
   
   /**
     * IMEI number of the GSM device. For example, A1000031212.
     */
-  var imei: js.UndefOr[String] = js.native
+  var imei: js.UndefOr[String] = js.undefined
   
   /**
     * MEID number of the CDMA device. For example, A00000292788E1.
     */
-  var meid: js.UndefOr[String] = js.native
+  var meid: js.UndefOr[String] = js.undefined
   
   /**
     * Alphabetic name of current registered operator. For example, Vodafone.
     */
-  var networkOperatorName: js.UndefOr[String] = js.native
+  var networkOperatorName: js.UndefOr[String] = js.undefined
   
   /**
     * Wi-Fi MAC address of the device. For example, 7c:11:11:11:11:11.
     */
-  var wifiMacAddress: js.UndefOr[String] = js.native
+  var wifiMacAddress: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworkInfo {
   

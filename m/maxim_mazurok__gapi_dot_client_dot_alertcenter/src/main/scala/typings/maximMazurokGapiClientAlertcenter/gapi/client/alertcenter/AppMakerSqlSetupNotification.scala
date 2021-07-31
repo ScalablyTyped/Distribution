@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAlertcenter.gapi.client.alertcenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppMakerSqlSetupNotification extends StObject {
   
   /** List of applications with requests for default SQL set up. */
-  var requestInfo: js.UndefOr[js.Array[RequestInfo]] = js.native
+  var requestInfo: js.UndefOr[js.Array[RequestInfo]] = js.undefined
 }
 object AppMakerSqlSetupNotification {
   

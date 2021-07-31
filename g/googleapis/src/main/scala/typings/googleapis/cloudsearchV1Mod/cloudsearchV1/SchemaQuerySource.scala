@@ -2,35 +2,33 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * List of sources that the user can search using the query API.
   */
-@js.native
 trait SchemaQuerySource extends StObject {
   
   /**
     * Display name of the data source.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * List of all operators applicable for this source.
     */
-  var operators: js.UndefOr[js.Array[SchemaQueryOperator]] = js.native
+  var operators: js.UndefOr[js.Array[SchemaQueryOperator]] = js.undefined
   
   /**
     * A short name or alias for the source.  This value can be used with the
     * &#39;source&#39; operator.
     */
-  var shortName: js.UndefOr[String] = js.native
+  var shortName: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the source
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
 }
 object SchemaQuerySource {
   

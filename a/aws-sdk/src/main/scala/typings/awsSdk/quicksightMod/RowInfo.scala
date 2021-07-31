@@ -2,21 +2,19 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowInfo extends StObject {
   
   /**
     * The number of rows that were not ingested.
     */
-  var RowsDropped: js.UndefOr[long] = js.native
+  var RowsDropped: js.UndefOr[long] = js.undefined
   
   /**
     * The number of rows that were ingested.
     */
-  var RowsIngested: js.UndefOr[long] = js.native
+  var RowsIngested: js.UndefOr[long] = js.undefined
 }
 object RowInfo {
   

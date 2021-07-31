@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.Sensors
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the compass reading–changed event. */
-@js.native
 trait CompassReadingChangedEventArgs extends StObject {
   
   /** Gets the current compass reading. */
-  var reading: CompassReading = js.native
+  var reading: CompassReading
 }
 object CompassReadingChangedEventArgs {
   

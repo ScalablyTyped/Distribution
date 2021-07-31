@@ -9,12 +9,12 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.activexLibreoffice.com_.sun.star.util.Time
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is used to update data which is collected in a row. */
-@js.native
-trait XColumnUpdate extends XInterface {
+trait XColumnUpdate
+  extends StObject
+     with XInterface {
   
   /**
     * updates a column with a stream value.
@@ -22,28 +22,28 @@ trait XColumnUpdate extends XInterface {
     * @param length the length of the stream
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateBinaryStream(x: XInputStream, length: Double): Unit = js.native
+  def updateBinaryStream(x: XInputStream, length: Double): Unit
   
   /**
     * updates a column with a boolean value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateBoolean(x: Boolean): Unit = js.native
+  def updateBoolean(x: Boolean): Unit
   
   /**
     * updates a column with a byte value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateByte(x: Double): Unit = js.native
+  def updateByte(x: Double): Unit
   
   /**
     * updates a column with a byte array value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateBytes(x: SeqEquiv[Double]): Unit = js.native
+  def updateBytes(x: SeqEquiv[Double]): Unit
   
   /**
     * updates a column with a stream value.
@@ -51,48 +51,48 @@ trait XColumnUpdate extends XInterface {
     * @param length the length of the stream
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateCharacterStream(x: XInputStream, length: Double): Unit = js.native
+  def updateCharacterStream(x: XInputStream, length: Double): Unit
   
   /**
     * updates a column with a Date value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateDate(x: Date): Unit = js.native
+  def updateDate(x: Date): Unit
   
   /**
     * updates a column with a double value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateDouble(x: Double): Unit = js.native
+  def updateDouble(x: Double): Unit
   
   /**
     * updates a column with a float value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateFloat(x: Double): Unit = js.native
+  def updateFloat(x: Double): Unit
   
   /**
     * updates a column with a long value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateInt(x: Double): Unit = js.native
+  def updateInt(x: Double): Unit
   
   /**
     * updates a column with a hyper value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateLong(x: Double): Unit = js.native
+  def updateLong(x: Double): Unit
   
   /**
     * gives a nullable column a null value.
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateNull(): Unit = js.native
+  def updateNull(): Unit
   
   /**
     * updates a column with an Object value.
@@ -100,42 +100,42 @@ trait XColumnUpdate extends XInterface {
     * @param scale the scale
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateNumericObject(x: js.Any, scale: Double): Unit = js.native
+  def updateNumericObject(x: js.Any, scale: Double): Unit
   
   /**
     * updates a column with an Object value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateObject(x: js.Any): Unit = js.native
+  def updateObject(x: js.Any): Unit
   
   /**
     * updates a column with a short value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateShort(x: Double): Unit = js.native
+  def updateShort(x: Double): Unit
   
   /**
     * updates a column with a string value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateString(x: String): Unit = js.native
+  def updateString(x: String): Unit
   
   /**
     * updates a column with a Time value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateTime(x: Time): Unit = js.native
+  def updateTime(x: Time): Unit
   
   /**
     * updates a column with a Timestamp value.
     * @param x the new column value
     * @throws com::sun::star::sdbc::SQLException if a database access error occurs.
     */
-  def updateTimestamp(x: DateTime): Unit = js.native
+  def updateTimestamp(x: DateTime): Unit
 }
 object XColumnUpdate {
   

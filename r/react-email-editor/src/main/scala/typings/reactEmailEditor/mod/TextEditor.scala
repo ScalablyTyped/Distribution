@@ -2,19 +2,17 @@ package typings.reactEmailEditor.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextEditor extends StObject {
   
-  val cleanPaste: js.UndefOr[Boolean] = js.native
+  val cleanPaste: js.UndefOr[Boolean] = js.undefined
   
-  val emojis: js.UndefOr[Boolean] = js.native
+  val emojis: js.UndefOr[Boolean] = js.undefined
   
-  val spellChecker: js.UndefOr[Boolean] = js.native
+  val spellChecker: js.UndefOr[Boolean] = js.undefined
   
-  val tables: js.UndefOr[Boolean] = js.native
+  val tables: js.UndefOr[Boolean] = js.undefined
 }
 object TextEditor {
   

@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAdexchangebuyer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DetectedProviderIds extends StObject {
   
   /**
@@ -15,13 +13,13 @@ trait DetectedProviderIds extends StObject {
     * `BidRequest.user.ext.consented_providers_settings.consented_providers` field on the OpenRTB protocol, a bid submitted for a European Economic Area (EEA) user with this creative
     * is not compliant with the GDPR policies as mentioned in the "Third-party Ad Technology Vendors" section of Authorized Buyers Program Guidelines.
     */
-  var detectedProviderIds: js.UndefOr[js.Array[String]] = js.native
+  var detectedProviderIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Whether the creative contains an unidentified ad technology provider. If true, a bid submitted for a European Economic Area (EEA) user with this creative is not compliant with
     * the GDPR policies as mentioned in the "Third-party Ad Technology Vendors" section of Authorized Buyers Program Guidelines.
     */
-  var hasUnidentifiedProvider: js.UndefOr[Boolean] = js.native
+  var hasUnidentifiedProvider: js.UndefOr[Boolean] = js.undefined
 }
 object DetectedProviderIds {
   

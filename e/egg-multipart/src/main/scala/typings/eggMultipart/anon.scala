@@ -5,39 +5,37 @@ import typings.eggMultipart.mod.MatchItem
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoFields extends StObject {
     
-    var autoFields: js.UndefOr[Boolean] = js.native
+    var autoFields: js.UndefOr[Boolean] = js.undefined
     
-    var cleanSchedule: js.UndefOr[ScheduleOptions] = js.native
+    var cleanSchedule: js.UndefOr[ScheduleOptions] = js.undefined
     
-    var defaultCharset: js.UndefOr[String] = js.native
+    var defaultCharset: js.UndefOr[String] = js.undefined
     
-    var fieldNameSize: js.UndefOr[Double] = js.native
+    var fieldNameSize: js.UndefOr[Double] = js.undefined
     
-    var fieldSize: js.UndefOr[String | Double] = js.native
+    var fieldSize: js.UndefOr[String | Double] = js.undefined
     
-    var fields: js.UndefOr[Double] = js.native
+    var fields: js.UndefOr[Double] = js.undefined
     
-    var fileExtensions: js.UndefOr[js.Array[String]] = js.native
+    var fileExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var fileModeMatch: js.UndefOr[MatchItem | js.Array[MatchItem]] = js.native
+    var fileModeMatch: js.UndefOr[MatchItem | js.Array[MatchItem]] = js.undefined
     
-    var fileSize: js.UndefOr[String | Double] = js.native
+    var fileSize: js.UndefOr[String | Double] = js.undefined
     
-    var files: js.UndefOr[Double] = js.native
+    var files: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var tmpdir: js.UndefOr[String] = js.native
+    var tmpdir: js.UndefOr[String] = js.undefined
     
-    var whitelist: js.UndefOr[(js.Function1[/* filename */ String, Boolean]) | js.Array[String]] = js.native
+    var whitelist: js.UndefOr[(js.Function1[/* filename */ String, Boolean]) | js.Array[String]] = js.undefined
   }
   object AutoFields {
     
@@ -145,18 +143,17 @@ object anon {
     }
   }
   
-  @js.native
   trait CurrentDate extends StObject {
     
-    var currentDate: js.UndefOr[String | Double | Date] = js.native
+    var currentDate: js.UndefOr[String | Double | Date] = js.undefined
     
-    var endDate: js.UndefOr[String | Double | Date] = js.native
+    var endDate: js.UndefOr[String | Double | Date] = js.undefined
     
-    var iterator: js.UndefOr[Boolean] = js.native
+    var iterator: js.UndefOr[Boolean] = js.undefined
     
-    var tz: js.UndefOr[String] = js.native
+    var tz: js.UndefOr[String] = js.undefined
     
-    var utc: js.UndefOr[Boolean] = js.native
+    var utc: js.UndefOr[Boolean] = js.undefined
   }
   object CurrentDate {
     
@@ -201,22 +198,21 @@ object anon {
     }
   }
   
-  @js.native
   trait FieldNameSize extends StObject {
     
-    var fieldNameSize: js.UndefOr[Double] = js.native
+    var fieldNameSize: js.UndefOr[Double] = js.undefined
     
-    var fieldSize: js.UndefOr[Double] = js.native
+    var fieldSize: js.UndefOr[Double] = js.undefined
     
-    var fields: js.UndefOr[Double] = js.native
+    var fields: js.UndefOr[Double] = js.undefined
     
-    var fileSize: js.UndefOr[Double] = js.native
+    var fileSize: js.UndefOr[Double] = js.undefined
     
-    var files: js.UndefOr[Double] = js.native
+    var files: js.UndefOr[Double] = js.undefined
     
-    var headerPairs: js.UndefOr[Double] = js.native
+    var headerPairs: js.UndefOr[Double] = js.undefined
     
-    var parts: js.UndefOr[Double] = js.native
+    var parts: js.UndefOr[Double] = js.undefined
   }
   object FieldNameSize {
     

@@ -1,6 +1,7 @@
 package typings.luminoWidgets
 
 import typings.luminoAlgorithm.iterMod.IIterable
+import typings.luminoAlgorithm.iterMod.IIterator
 import typings.luminoDisposable.mod.IDisposable
 import typings.luminoMessaging.mod.Message
 import typings.luminoWidgets.layoutMod.Layout.FitPolicy
@@ -10,7 +11,6 @@ import typings.luminoWidgets.widgetMod.Widget.ChildMessage
 import typings.luminoWidgets.widgetMod.Widget.ResizeMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutMod {
@@ -23,7 +23,8 @@ object layoutMod {
     * @param options - The options for initializing the layout.
     */
   abstract class Layout ()
-    extends IIterable[Widget]
+    extends StObject
+       with IIterable[Widget]
        with IDisposable {
     def this(options: IOptions) = this()
     
@@ -32,6 +33,20 @@ object layoutMod {
     var _fitPolicy: js.Any = js.native
     
     var _parent: js.Any = js.native
+    
+    /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
     
     /**
       * Get the fit policy for the layout.
@@ -70,6 +85,29 @@ object layoutMod {
       * widget nodes to the parent widget's node.
       */
     /* protected */ def init(): Unit = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
+    
+    /**
+      * Get an iterator over the object's values.
+      *
+      * @returns An iterator which yields the object's values.
+      *
+      * #### Notes
+      * Depending on the iterable, the returned iterator may or may not be
+      * a new object. A collection or other container-like object should
+      * typically return a new iterator, while an iterator itself should
+      * normally return `this`.
+      */
+    /* CompleteClass */
+    override def iter(): IIterator[Widget] = js.native
     
     /**
       * A message handler invoked on an `'after-attach'` message.
@@ -272,6 +310,10 @@ object layoutMod {
   }
   object Layout {
     
+    @JSImport("@lumino/widgets/types/layout", "Layout")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the horizontal alignment for a widget.
       *
@@ -289,9 +331,8 @@ object layoutMod {
       *
       * Some layout implementations may ignore horizontal alignment.
       */
-    @JSImport("@lumino/widgets/types/layout", "Layout.getHorizontalAlignment")
-    @js.native
-    def getHorizontalAlignment(widget: Widget): HorizontalAlignment = js.native
+    @scala.inline
+    def getHorizontalAlignment(widget: Widget): HorizontalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getHorizontalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[HorizontalAlignment]
     
     /**
       * Get the vertical alignment for a widget.
@@ -310,9 +351,8 @@ object layoutMod {
       *
       * Some layout implementations may ignore vertical alignment.
       */
-    @JSImport("@lumino/widgets/types/layout", "Layout.getVerticalAlignment")
-    @js.native
-    def getVerticalAlignment(widget: Widget): VerticalAlignment = js.native
+    @scala.inline
+    def getVerticalAlignment(widget: Widget): VerticalAlignment = ^.asInstanceOf[js.Dynamic].applyDynamic("getVerticalAlignment")(widget.asInstanceOf[js.Any]).asInstanceOf[VerticalAlignment]
     
     /**
       * Set the horizontal alignment for a widget.
@@ -335,9 +375,8 @@ object layoutMod {
       * message to widget's parent, provided the parent has a layout
       * installed.
       */
-    @JSImport("@lumino/widgets/types/layout", "Layout.setHorizontalAlignment")
-    @js.native
-    def setHorizontalAlignment(widget: Widget, value: HorizontalAlignment): Unit = js.native
+    @scala.inline
+    def setHorizontalAlignment(widget: Widget, value: HorizontalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setHorizontalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set the vertical alignment for a widget.
@@ -360,9 +399,8 @@ object layoutMod {
       * message to widget's parent, provided the parent has a layout
       * installed.
       */
-    @JSImport("@lumino/widgets/types/layout", "Layout.setVerticalAlignment")
-    @js.native
-    def setVerticalAlignment(widget: Widget, value: VerticalAlignment): Unit = js.native
+    @scala.inline
+    def setVerticalAlignment(widget: Widget, value: VerticalAlignment): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setVerticalAlignment")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for the layout fit policy.
@@ -411,7 +449,6 @@ object layoutMod {
     /**
       * An options object for initializing a layout.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -419,7 +456,7 @@ object layoutMod {
         *
         * The default is `'set-min-size'`.
         */
-      var fitPolicy: js.UndefOr[FitPolicy] = js.native
+      var fitPolicy: js.UndefOr[FitPolicy] = js.undefined
     }
     object IOptions {
       
@@ -464,7 +501,9 @@ object layoutMod {
   
   @JSImport("@lumino/widgets/types/layout", "LayoutItem")
   @js.native
-  class LayoutItem protected () extends IDisposable {
+  class LayoutItem protected ()
+    extends StObject
+       with IDisposable {
     /**
       * Construct a new layout item.
       *
@@ -494,6 +533,20 @@ object layoutMod {
     var _width: js.Any = js.native
     
     /**
+      * Dispose of the resources held by the object.
+      *
+      * #### Notes
+      * If the object's `dispose` method is called more than once, all
+      * calls made after the first will be a no-op.
+      *
+      * #### Undefined Behavior
+      * It is undefined behavior to use any functionality of the object
+      * after it has been disposed unless otherwise explicitly noted.
+      */
+    /* CompleteClass */
+    override def dispose(): Unit = js.native
+    
+    /**
       * Update the computed size limits of the managed widget.
       */
     def fit(): Unit = js.native
@@ -502,6 +555,15 @@ object layoutMod {
       * Whether the managed widget is attached.
       */
     val isAttached: Boolean = js.native
+    
+    /**
+      * Test whether the object has been disposed.
+      *
+      * #### Notes
+      * This property is always safe to access.
+      */
+    /* CompleteClass */
+    override val isDisposed: Boolean = js.native
     
     /**
       * Whether the managed widget is hidden.

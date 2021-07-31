@@ -3,14 +3,14 @@ package typings.node.childProcessMod
 import typings.node.nodeStrings.buffer_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpawnSyncOptionsWithBufferEncoding extends SpawnSyncOptions {
+trait SpawnSyncOptionsWithBufferEncoding
+  extends StObject
+     with SpawnSyncOptions {
   
   @JSName("encoding")
-  var encoding_SpawnSyncOptionsWithBufferEncoding: js.UndefOr[buffer_ | Null] = js.native
+  var encoding_SpawnSyncOptionsWithBufferEncoding: js.UndefOr[buffer_ | Null] = js.undefined
 }
 object SpawnSyncOptionsWithBufferEncoding {
   

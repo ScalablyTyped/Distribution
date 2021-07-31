@@ -2,25 +2,23 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoalescingThreshold extends StObject {
   
-  var coalescingThreshold: js.UndefOr[Double] = js.native
+  var coalescingThreshold: js.UndefOr[Double] = js.undefined
   
-  var connectTimeout: js.UndefOr[Double] = js.native
+  var connectTimeout: js.UndefOr[Double] = js.undefined
   
-  var defunctReadTimeoutThreshold: js.UndefOr[Double] = js.native
+  var defunctReadTimeoutThreshold: js.UndefOr[Double] = js.undefined
   
-  var keepAlive: js.UndefOr[Boolean] = js.native
+  var keepAlive: js.UndefOr[Boolean] = js.undefined
   
-  var keepAliveDelay: js.UndefOr[Double] = js.native
+  var keepAliveDelay: js.UndefOr[Double] = js.undefined
   
-  var readTimeout: js.UndefOr[Double] = js.native
+  var readTimeout: js.UndefOr[Double] = js.undefined
   
-  var tcpNoDelay: js.UndefOr[Boolean] = js.native
+  var tcpNoDelay: js.UndefOr[Boolean] = js.undefined
 }
 object CoalescingThreshold {
   

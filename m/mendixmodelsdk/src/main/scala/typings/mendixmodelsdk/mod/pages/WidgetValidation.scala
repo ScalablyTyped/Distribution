@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.pagesMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object WidgetValidation {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.WidgetValidation.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -53,9 +51,8 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.WidgetValidation.createInAttributeWidgetUnderValidation")
-  @js.native
-  def createInAttributeWidgetUnderValidation(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = js.native
+  @scala.inline
+  def createInAttributeWidgetUnderValidation(container: typings.mendixmodelsdk.pagesMod.pages.AttributeWidget): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInAttributeWidgetUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WidgetValidation]
   
   /**
     * Creates and returns a new WidgetValidation instance in the SDK and on the server.
@@ -66,9 +63,8 @@ object WidgetValidation {
     *  7.6.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "pages.WidgetValidation.createInReferenceSelectorUnderValidation")
-  @js.native
-  def createInReferenceSelectorUnderValidation(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelector): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = js.native
+  @scala.inline
+  def createInReferenceSelectorUnderValidation(container: typings.mendixmodelsdk.pagesMod.pages.ReferenceSelector): typings.mendixmodelsdk.pagesMod.pages.WidgetValidation = ^.asInstanceOf[js.Dynamic].applyDynamic("createInReferenceSelectorUnderValidation")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.pagesMod.pages.WidgetValidation]
   
   /* static member */
   @JSImport("mendixmodelsdk", "pages.WidgetValidation.structureTypeName")

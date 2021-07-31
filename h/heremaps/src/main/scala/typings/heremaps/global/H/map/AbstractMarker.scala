@@ -4,7 +4,6 @@ import typings.heremaps.H.geo.IPoint
 import typings.heremaps.H.map.AbstractMarker.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("H.map.AbstractMarker")
 @js.native
 abstract class AbstractMarker protected ()
-  extends typings.heremaps.H.map.AbstractMarker {
+  extends StObject
+     with typings.heremaps.H.map.AbstractMarker {
   /**
     * Constructor
     * @param position {H.geo.IPoint} - The location of this marker

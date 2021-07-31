@@ -6,35 +6,35 @@ import typings.pulumiAws.outputMod.workspaces.GetDirectorySelfServicePermission
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object workspacesGetDirectoryMod {
   
-  @JSImport("@pulumi/aws/workspaces/getDirectory", "getDirectory")
+  @JSImport("@pulumi/aws/workspaces/getDirectory", JSImport.Namespace)
   @js.native
-  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = js.native
-  @JSImport("@pulumi/aws/workspaces/getDirectory", "getDirectory")
-  @js.native
-  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getDirectory(args: GetDirectoryArgs): js.Promise[GetDirectoryResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetDirectoryResult]]
+  @scala.inline
+  def getDirectory(args: GetDirectoryArgs, opts: InvokeOptions): js.Promise[GetDirectoryResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDirectory")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetDirectoryResult]]
+  
   trait GetDirectoryArgs extends StObject {
     
     /**
       * The directory identifier for registration in WorkSpaces service.
       */
-    val directoryId: String = js.native
+    val directoryId: String
     
     /**
       * A map of tags assigned to the WorkSpaces directory.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The default properties that are used for creating WorkSpaces. Defined below.
       */
-    val workspaceCreationProperties: js.UndefOr[GetDirectoryWorkspaceCreationProperties] = js.native
+    val workspaceCreationProperties: js.UndefOr[GetDirectoryWorkspaceCreationProperties] = js.undefined
   }
   object GetDirectoryArgs {
     
@@ -64,80 +64,79 @@ object workspacesGetDirectoryMod {
     }
   }
   
-  @js.native
   trait GetDirectoryResult extends StObject {
     
     /**
       * The directory alias.
       */
-    val alias: String = js.native
+    val alias: String
     
     /**
       * The user name for the service account.
       */
-    val customerUserName: String = js.native
+    val customerUserName: String
     
-    val directoryId: String = js.native
+    val directoryId: String
     
     /**
       * The name of the directory.
       */
-    val directoryName: String = js.native
+    val directoryName: String
     
     /**
       * The directory type.
       */
-    val directoryType: String = js.native
+    val directoryType: String
     
     /**
       * The IP addresses of the DNS servers for the directory.
       */
-    val dnsIpAddresses: js.Array[String] = js.native
+    val dnsIpAddresses: js.Array[String]
     
     /**
       * The identifier of the IAM role. This is the role that allows Amazon WorkSpaces to make calls to other services, such as Amazon EC2, on your behalf.
       */
-    val iamRoleId: String = js.native
+    val iamRoleId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The identifiers of the IP access control groups associated with the directory.
       */
-    val ipGroupIds: js.Array[String] = js.native
+    val ipGroupIds: js.Array[String]
     
     /**
       * The registration code for the directory. This is the code that users enter in their Amazon WorkSpaces client application to connect to the directory.
       */
-    val registrationCode: String = js.native
+    val registrationCode: String
     
     /**
       * The permissions to enable or disable self-service capabilities.
       */
-    val selfServicePermissions: js.Array[GetDirectorySelfServicePermission] = js.native
+    val selfServicePermissions: js.Array[GetDirectorySelfServicePermission]
     
     /**
       * The identifiers of the subnets where the directory resides.
       */
-    val subnetIds: js.Array[String] = js.native
+    val subnetIds: js.Array[String]
     
     /**
       * A map of tags assigned to the WorkSpaces directory.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The default properties that are used for creating WorkSpaces. Defined below.
       */
-    val workspaceCreationProperties: typings.pulumiAws.outputMod.workspaces.GetDirectoryWorkspaceCreationProperties = js.native
+    val workspaceCreationProperties: typings.pulumiAws.outputMod.workspaces.GetDirectoryWorkspaceCreationProperties
     
     /**
       * The identifier of the security group that is assigned to new WorkSpaces. Defined below.
       */
-    val workspaceSecurityGroupId: String = js.native
+    val workspaceSecurityGroupId: String
   }
   object GetDirectoryResult {
     

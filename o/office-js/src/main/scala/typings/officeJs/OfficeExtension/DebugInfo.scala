@@ -2,33 +2,31 @@ package typings.officeJs.OfficeExtension
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about an error.
   */
-@js.native
 trait DebugInfo extends StObject {
   
   /** Error code string, such as "InvalidArgument". */
-  var code: String = js.native
+  var code: String
   
   /** The object type and property or method name (or similar information), if available. */
-  var errorLocation: js.UndefOr[String] = js.native
+  var errorLocation: js.UndefOr[String] = js.undefined
   
   /**
     * All statements in the batch request (including any potentially-sensitive information that was specified in the request), if available.
     *
     * These statements may not match the code exactly as written, but will be a close approximation.
     */
-  var fullStatements: js.UndefOr[js.Array[String]] = js.native
+  var fullStatements: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Inner error, if applicable. */
-  var innerError: js.UndefOr[DebugInfo | String] = js.native
+  var innerError: js.UndefOr[DebugInfo | String] = js.undefined
   
   /** The error message passed through from the host Office application. */
-  var message: String = js.native
+  var message: String
   
   /**
     * The statement that caused the error, if available.
@@ -36,7 +34,7 @@ trait DebugInfo extends StObject {
     * This statement will never contain any potentially-sensitive data and may not match the code exactly as written, 
     * but will be a close approximation.
     */
-  var statements: js.UndefOr[String] = js.native
+  var statements: js.UndefOr[String] = js.undefined
   
   /**
     * The statements that closely precede and follow the statement that caused the error, if available.
@@ -44,7 +42,7 @@ trait DebugInfo extends StObject {
     * These statements will never contain any potentially-sensitive data and may not match the code exactly as written, 
     * but will be a close approximation.
     */
-  var surroundingStatements: js.UndefOr[js.Array[String]] = js.native
+  var surroundingStatements: js.UndefOr[js.Array[String]] = js.undefined
 }
 object DebugInfo {
   

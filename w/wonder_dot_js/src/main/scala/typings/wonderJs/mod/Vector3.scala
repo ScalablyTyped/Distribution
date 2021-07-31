@@ -1,8 +1,8 @@
 package typings.wonderJs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder.js/dist/es2015", "Vector3")
 @js.native
@@ -10,15 +10,33 @@ class Vector3 ()
   extends typings.wonderJs.vector3Mod.Vector3 {
   def this(x: Double, y: Double, z: Double) = this()
 }
-
 /* static members */
-@JSImport("wonder.js/dist/es2015", "Vector3")
-@js.native
-object Vector3 extends js.Object {
-  var forward: js.Any = js.native
-  var right: js.Any = js.native
-  var up: js.Any = js.native
-  def create(): typings.wonderJs.vector3Mod.Vector3 = js.native
-  def create(x: Double, y: Double, z: Double): typings.wonderJs.vector3Mod.Vector3 = js.native
+object Vector3 {
+  
+  @JSImport("wonder.js/dist/es2015", "Vector3")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(): typings.wonderJs.vector3Mod.Vector3 = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[typings.wonderJs.vector3Mod.Vector3]
+  @scala.inline
+  def create(x: Double, y: Double, z: Double): typings.wonderJs.vector3Mod.Vector3 = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[typings.wonderJs.vector3Mod.Vector3]
+  
+  @JSImport("wonder.js/dist/es2015", "Vector3.forward")
+  @js.native
+  def forward: js.Any = js.native
+  @scala.inline
+  def forward_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("forward")(x.asInstanceOf[js.Any])
+  
+  @JSImport("wonder.js/dist/es2015", "Vector3.right")
+  @js.native
+  def right: js.Any = js.native
+  @scala.inline
+  def right_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("right")(x.asInstanceOf[js.Any])
+  
+  @JSImport("wonder.js/dist/es2015", "Vector3.up")
+  @js.native
+  def up: js.Any = js.native
+  @scala.inline
+  def up_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("up")(x.asInstanceOf[js.Any])
 }
-

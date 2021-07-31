@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseTargetResponse extends StObject {
   
   /**
     * Always set to true. If an error occurs, the response indicates protocol error.
     */
-  var success: Boolean = js.native
+  var success: Boolean
 }
 object CloseTargetResponse {
   

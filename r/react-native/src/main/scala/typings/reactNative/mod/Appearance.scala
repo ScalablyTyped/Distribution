@@ -2,29 +2,28 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Appearance {
   
-  @JSImport("react-native", "Appearance.addChangeListener")
+  @JSImport("react-native", "Appearance")
   @js.native
-  def addChangeListener(listener: AppearanceListener): EventSubscription = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-native", "Appearance.getColorScheme")
-  @js.native
-  def getColorScheme(): ColorSchemeName = js.native
+  @scala.inline
+  def addChangeListener(listener: AppearanceListener): EventSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("addChangeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[EventSubscription]
   
-  @JSImport("react-native", "Appearance.removeChangeListener")
-  @js.native
-  def removeChangeListener(listener: AppearanceListener): EventSubscription = js.native
+  @scala.inline
+  def getColorScheme(): ColorSchemeName = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorScheme")().asInstanceOf[ColorSchemeName]
+  
+  @scala.inline
+  def removeChangeListener(listener: AppearanceListener): EventSubscription = ^.asInstanceOf[js.Dynamic].applyDynamic("removeChangeListener")(listener.asInstanceOf[js.Any]).asInstanceOf[EventSubscription]
   
   type AppearanceListener = js.Function1[/* preferences */ AppearancePreferences, Unit]
   
-  @js.native
   trait AppearancePreferences extends StObject {
     
-    var colorScheme: ColorSchemeName = js.native
+    var colorScheme: ColorSchemeName
   }
   object AppearancePreferences {
     

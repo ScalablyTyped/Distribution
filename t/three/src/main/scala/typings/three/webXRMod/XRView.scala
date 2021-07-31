@@ -3,19 +3,17 @@ package typings.three.webXRMod
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRView extends StObject {
   
-  val eye: XREye = js.native
+  val eye: XREye
   
-  val projectionMatrix: Float32Array = js.native
+  val projectionMatrix: Float32Array
   
-  val transform: XRRigidTransform = js.native
+  val transform: XRRigidTransform
   
-  val viewMatrix: Float32Array = js.native
+  val viewMatrix: Float32Array
 }
 object XRView {
   

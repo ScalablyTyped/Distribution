@@ -3,15 +3,13 @@ package typings.cathoQuantum.anon
 import typings.cathoQuantum.inputMod.Validate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Error extends StObject {
   
-  var error: String = js.native
+  var error: String
   
-  var validate: Validate = js.native
+  var validate: Validate
 }
 object Error {
   

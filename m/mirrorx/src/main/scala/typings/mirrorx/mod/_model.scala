@@ -2,15 +2,13 @@ package typings.mirrorx.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait _model extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var reducers: js.Any = js.native
+  var reducers: js.Any
 }
 object _model {
   

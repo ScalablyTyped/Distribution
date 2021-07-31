@@ -2,23 +2,21 @@ package typings.tablesorter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagerInitialRowsMod {
   
-  @js.native
   trait PagerInitialRows extends StObject {
     
     /**
       * The filtered number of rows.
       */
-    var filtered: js.UndefOr[Double] = js.native
+    var filtered: js.UndefOr[Double] = js.undefined
     
     /**
       * The total number of rows.
       */
-    var total: js.UndefOr[Double] = js.native
+    var total: js.UndefOr[Double] = js.undefined
   }
   object PagerInitialRows {
     

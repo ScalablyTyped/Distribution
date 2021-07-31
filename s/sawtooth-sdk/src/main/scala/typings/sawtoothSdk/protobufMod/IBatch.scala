@@ -3,23 +3,21 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IBatch extends StObject {
   
   /** Batch header */
-  var header: js.UndefOr[Uint8Array | Null] = js.native
+  var header: js.UndefOr[Uint8Array | Null] = js.undefined
   
   /** Batch headerSignature */
-  var headerSignature: js.UndefOr[String | Null] = js.native
+  var headerSignature: js.UndefOr[String | Null] = js.undefined
   
   /** Batch trace */
-  var trace: js.UndefOr[Boolean | Null] = js.native
+  var trace: js.UndefOr[Boolean | Null] = js.undefined
   
   /** Batch transactions */
-  var transactions: js.UndefOr[js.Array[ITransaction] | Null] = js.native
+  var transactions: js.UndefOr[js.Array[ITransaction] | Null] = js.undefined
 }
 object IBatch {
   

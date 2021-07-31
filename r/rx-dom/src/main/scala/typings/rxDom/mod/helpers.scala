@@ -4,7 +4,6 @@ import typings.rx.Rx.internals.NotImplementedError
 import typings.rx.Rx.internals.NotSupportedError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helpers {

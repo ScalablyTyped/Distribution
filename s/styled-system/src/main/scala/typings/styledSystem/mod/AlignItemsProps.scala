@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlignItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -19,10 +17,10 @@ trait AlignItemsProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StO
     */
   var alignItems: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object AlignItemsProps {
   
@@ -33,12 +31,12 @@ object AlignItemsProps {
   }
   
   @scala.inline
-  implicit class AlignItemsPropsMutableBuilder[Self <: AlignItemsProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with AlignItemsProps[ThemeType]) extends AnyVal {
+  implicit class AlignItemsPropsMutableBuilder[Self <: AlignItemsProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & AlignItemsProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setAlignItems(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "alignItems", value.asInstanceOf[js.Any])
@@ -50,6 +48,8 @@ object AlignItemsProps {
     def setAlignItemsUndefined: Self = StObject.set(x, "alignItems", js.undefined)
     
     @scala.inline
-    def setAlignItemsVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "alignItems", js.Array(value :_*))
+    def setAlignItemsVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.AlignItems */ js.Any) | Null)*
+    ): Self = StObject.set(x, "alignItems", js.Array(value :_*))
   }
 }

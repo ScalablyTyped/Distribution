@@ -10,13 +10,13 @@ UI components for WordPress.
 | ------------------ | :-------------: |
 | Full name          | @wordpress/components |
 | Keywords           | wordpress, gutenberg, components |
-| # releases         | 65 |
-| # dependents       | 29 |
-| # downloads        | 808404 |
+| # releases         | 58 |
+| # dependents       | 34 |
+| # downloads        | 1191727 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/WordPress/gutenberg/tree/master/packages/components/README.md)
+- [Homepage](https://github.com/WordPress/gutenberg/tree/HEAD/packages/components/README.md)
 - [Bugs](https://github.com/WordPress/gutenberg/issues)
 - [Repository](https://github.com/WordPress/gutenberg)
 - [Npm](https://www.npmjs.com/package/%40wordpress%2Fcomponents)

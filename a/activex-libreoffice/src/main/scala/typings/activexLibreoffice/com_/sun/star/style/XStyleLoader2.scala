@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XComponent
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,15 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.style.XStyleLoader
   * @since LibreOffice 4.4
   */
-@js.native
-trait XStyleLoader2 extends XStyleLoader {
+trait XStyleLoader2
+  extends StObject
+     with XStyleLoader {
   
   /**
     * loads styles from a given document
     * @param aSourceComponent a valid XComponent reference to source document
     * @param aOptions Specifies which of the {@link Style} families the method should load. The `sequence<PropertyValue>` has the following, optional items: b
     */
-  def loadStylesFromDocument(aSourceComponent: XComponent, aOptions: SeqEquiv[PropertyValue]): Unit = js.native
+  def loadStylesFromDocument(aSourceComponent: XComponent, aOptions: SeqEquiv[PropertyValue]): Unit
 }
 object XStyleLoader2 {
   

@@ -5,19 +5,61 @@ import typings.std.WebGLFramebuffer
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderTargetMod {
   
   @JSImport("ol/webgl/RenderTarget", JSImport.Default)
   @js.native
-  class default protected () extends WebGLRenderTarget {
+  class default protected ()
+    extends StObject
+       with WebGLRenderTarget {
     def this(helper: typings.ol.helperMod.default) = this()
     def this(helper: typings.ol.helperMod.default, opt_size: js.Array[Double]) = this()
+    
+    /**
+      * This will cause following calls to #readAll or #readPixel to download the content of the
+      * render target into memory, which is an expensive operation.
+      * This content will be kept in cache but should be cleared after each new render.
+      */
+    /* CompleteClass */
+    override def clearCachedData(): Unit = js.native
+    
+    /* CompleteClass */
+    override def getFramebuffer(): WebGLFramebuffer = js.native
+    
+    /**
+      * Returns the size of the render target texture
+      */
+    /* CompleteClass */
+    override def getSize(): js.Array[Double] = js.native
+    
+    /* CompleteClass */
+    override def getTexture(): WebGLTexture = js.native
+    
+    /**
+      * Returns the full content of the frame buffer as a series of r, g, b, a components
+      * in the 0-255 range (unsigned byte).
+      */
+    /* CompleteClass */
+    override def readAll(): Uint8Array = js.native
+    
+    /**
+      * Reads one pixel of the frame buffer as an array of r, g, b, a components
+      * in the 0-255 range (unsigned byte).
+      * If x and/or y are outside of existing data, an array filled with 0 is returned.
+      */
+    /* CompleteClass */
+    override def readPixel(x: Double, y: Double): Uint8Array = js.native
+    
+    /**
+      * Changes the size of the render target texture. Note: will do nothing if the size
+      * is already the same.
+      */
+    /* CompleteClass */
+    override def setSize(size: js.Array[Double]): Unit = js.native
   }
   
-  @js.native
   trait WebGLRenderTarget extends StObject {
     
     /**
@@ -25,35 +67,35 @@ object renderTargetMod {
       * render target into memory, which is an expensive operation.
       * This content will be kept in cache but should be cleared after each new render.
       */
-    def clearCachedData(): Unit = js.native
+    def clearCachedData(): Unit
     
-    def getFramebuffer(): WebGLFramebuffer = js.native
+    def getFramebuffer(): WebGLFramebuffer
     
     /**
       * Returns the size of the render target texture
       */
-    def getSize(): js.Array[Double] = js.native
+    def getSize(): js.Array[Double]
     
-    def getTexture(): WebGLTexture = js.native
+    def getTexture(): WebGLTexture
     
     /**
       * Returns the full content of the frame buffer as a series of r, g, b, a components
       * in the 0-255 range (unsigned byte).
       */
-    def readAll(): Uint8Array = js.native
+    def readAll(): Uint8Array
     
     /**
       * Reads one pixel of the frame buffer as an array of r, g, b, a components
       * in the 0-255 range (unsigned byte).
       * If x and/or y are outside of existing data, an array filled with 0 is returned.
       */
-    def readPixel(x: Double, y: Double): Uint8Array = js.native
+    def readPixel(x: Double, y: Double): Uint8Array
     
     /**
       * Changes the size of the render target texture. Note: will do nothing if the size
       * is already the same.
       */
-    def setSize(size: js.Array[Double]): Unit = js.native
+    def setSize(size: js.Array[Double]): Unit
   }
   object WebGLRenderTarget {
     

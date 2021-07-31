@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientTreeView.ExpandedChanging event.
   */
-@js.native
-trait BootstrapClientTreeViewNodeCancelEventArgs extends ASPxClientProcessingModeCancelEventArgs {
+trait BootstrapClientTreeViewNodeCancelEventArgs
+  extends StObject
+     with ASPxClientProcessingModeCancelEventArgs {
   
   /**
     * Gets a node object related to the event.
     */
-  var node: BootstrapClientTreeViewNode = js.native
+  var node: BootstrapClientTreeViewNode
 }
 object BootstrapClientTreeViewNodeCancelEventArgs {
   

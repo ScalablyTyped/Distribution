@@ -4,15 +4,13 @@ import typings.mongodb.mod.ClientSession
 import typings.mongodb.mod.ReadPreferenceOrMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Session extends StObject {
   
-  var readPreference: ReadPreferenceOrMode = js.native
+  var readPreference: ReadPreferenceOrMode
   
-  var session: js.UndefOr[ClientSession] = js.native
+  var session: js.UndefOr[ClientSession] = js.undefined
 }
 object Session {
   

@@ -2,30 +2,28 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsElliottWaveTypePointsOptions extends StObject {
   
-  var controlPoint: js.UndefOr[Double] = js.native
+  var controlPoint: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) Options for annotation's labels. Each label inherits options
     * from the labelOptions object. An option from the labelOptions can be
     * overwritten by config for a specific label.
     */
-  var label: js.UndefOr[AnnotationsElliottWaveTypePointsLabelOptions] = js.native
+  var label: js.UndefOr[AnnotationsElliottWaveTypePointsLabelOptions] = js.undefined
   
   /**
     * (Highstock) The x position of the point.
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) The y position of the point.
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsElliottWaveTypePointsOptions {
   

@@ -10,9 +10,9 @@ Create an error from multiple errors
 | ------------------ | :-------------: |
 | Full name          | @ardatan/aggregate-error |
 | Keywords           | aggregate, error, combine, multiple, many, collection, iterable, iterator |
-| # releases         | 3 |
-| # dependents       | 2 |
-| # downloads        | 4373778 |
+| # releases         | 8 |
+| # dependents       | 6 |
+| # downloads        | 27126829 |
 | # stars            | 0 |
 
 ## Links

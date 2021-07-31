@@ -8,41 +8,41 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.ioredis.anon.TypeofCommand
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait RedisStatic
-  extends Instantiable0[Redis]
+  extends StObject
+     with Instantiable0[Redis]
      with Instantiable1[(/* port */ Double) | (/* options */ RedisOptions) | (/* host */ String), Redis]
      with Instantiable2[
-      js.UndefOr[(/* port */ Double) | (/* host */ String)], 
+      (/* port */ Double) | (/* host */ String) | (/* host */ Unit), 
       (/* options */ RedisOptions) | (/* host */ String), 
       Redis
     ]
      with Instantiable3[
-      js.UndefOr[/* port */ Double], 
-      js.UndefOr[/* host */ String], 
+      (/* port */ Double) | (/* port */ Unit), 
+      (/* host */ String) | (/* host */ Unit), 
       /* options */ RedisOptions, 
       Redis
     ] {
   
   def apply(): Redis = js.native
-  def apply(host: js.UndefOr[scala.Nothing], options: RedisOptions): Redis = js.native
   def apply(host: String): Redis = js.native
   def apply(host: String, options: RedisOptions): Redis = js.native
+  def apply(host: Unit, options: RedisOptions): Redis = js.native
   def apply(options: RedisOptions): Redis = js.native
-  def apply(port: js.UndefOr[scala.Nothing], host: js.UndefOr[scala.Nothing], options: RedisOptions): Redis = js.native
-  def apply(port: js.UndefOr[scala.Nothing], host: String): Redis = js.native
-  def apply(port: js.UndefOr[scala.Nothing], host: String, options: RedisOptions): Redis = js.native
   def apply(port: Double): Redis = js.native
-  def apply(port: Double, host: js.UndefOr[scala.Nothing], options: RedisOptions): Redis = js.native
   def apply(port: Double, host: String): Redis = js.native
   def apply(port: Double, host: String, options: RedisOptions): Redis = js.native
+  def apply(port: Double, host: Unit, options: RedisOptions): Redis = js.native
+  def apply(port: Unit, host: String): Redis = js.native
+  def apply(port: Unit, host: String, options: RedisOptions): Redis = js.native
+  def apply(port: Unit, host: Unit, options: RedisOptions): Redis = js.native
   
   var Cluster: ClusterStatic = js.native
   
-  var Command: TypeofCommand with (Instantiable4[
+  var Command: TypeofCommand & (Instantiable4[
     /* name */ String, 
     /* args */ js.Array[ValueType], 
     /* opts */ js.UndefOr[CommandOptions], 

@@ -2,26 +2,24 @@ package typings.awsSdk.route53Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTrafficPolicyVersionRequest extends StObject {
   
   /**
     * The comment that you specified in the CreateTrafficPolicyVersion request, if any.
     */
-  var Comment: js.UndefOr[TrafficPolicyComment] = js.native
+  var Comment: js.UndefOr[TrafficPolicyComment] = js.undefined
   
   /**
     * The definition of this version of the traffic policy, in JSON format. You specified the JSON in the CreateTrafficPolicyVersion request. For more information about the JSON format, see CreateTrafficPolicy.
     */
-  var Document: TrafficPolicyDocument = js.native
+  var Document: TrafficPolicyDocument
   
   /**
     * The ID of the traffic policy for which you want to create a new version.
     */
-  var Id: TrafficPolicyId = js.native
+  var Id: TrafficPolicyId
 }
 object CreateTrafficPolicyVersionRequest {
   

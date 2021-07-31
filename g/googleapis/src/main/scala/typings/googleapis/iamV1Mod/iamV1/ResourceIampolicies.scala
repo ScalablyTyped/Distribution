@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/iam/v1", "iam_v1.Resource$Iampolicies")
@@ -46,7 +45,7 @@ class ResourceIampolicies protected () extends StObject {
     */
   def lintPolicy(): GaxiosPromise[SchemaLintPolicyResponse] = js.native
   def lintPolicy(callback: BodyResponseCallback[SchemaLintPolicyResponse]): Unit = js.native
-  def lintPolicy(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLintPolicyResponse] = js.native
+  def lintPolicy(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLintPolicyResponse] = js.native
   def lintPolicy(params: ParamsResourceIampoliciesLintpolicy): GaxiosPromise[SchemaLintPolicyResponse] = js.native
   def lintPolicy(
     params: ParamsResourceIampoliciesLintpolicy,
@@ -79,7 +78,7 @@ class ResourceIampolicies protected () extends StObject {
     */
   def queryAuditableServices(): GaxiosPromise[SchemaQueryAuditableServicesResponse] = js.native
   def queryAuditableServices(callback: BodyResponseCallback[SchemaQueryAuditableServicesResponse]): Unit = js.native
-  def queryAuditableServices(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaQueryAuditableServicesResponse] = js.native
+  def queryAuditableServices(params: Unit, options: MethodOptions): GaxiosPromise[SchemaQueryAuditableServicesResponse] = js.native
   def queryAuditableServices(params: ParamsResourceIampoliciesQueryauditableservices): GaxiosPromise[SchemaQueryAuditableServicesResponse] = js.native
   def queryAuditableServices(
     params: ParamsResourceIampoliciesQueryauditableservices,

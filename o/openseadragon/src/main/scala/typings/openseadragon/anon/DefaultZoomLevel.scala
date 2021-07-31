@@ -2,37 +2,35 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultZoomLevel extends StObject {
   
-  var animationTime: js.UndefOr[Double] = js.native
+  var animationTime: js.UndefOr[Double] = js.undefined
   
-  var defaultZoomLevel: js.UndefOr[Double] = js.native
+  var defaultZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var degrees: js.UndefOr[Double] = js.native
+  var degrees: js.UndefOr[Double] = js.undefined
   
-  var homeFillsViewer: js.UndefOr[Boolean] = js.native
+  var homeFillsViewer: js.UndefOr[Boolean] = js.undefined
   
-  var margins: js.Object = js.native
+  var margins: js.Object
   
-  var maxZoomLevel: js.UndefOr[Double] = js.native
+  var maxZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var maxZoomPixelRatio: js.UndefOr[Double] = js.native
+  var maxZoomPixelRatio: js.UndefOr[Double] = js.undefined
   
-  var minZoomImageRatio: js.UndefOr[Double] = js.native
+  var minZoomImageRatio: js.UndefOr[Double] = js.undefined
   
-  var minZoomLevel: js.UndefOr[Double] = js.native
+  var minZoomLevel: js.UndefOr[Double] = js.undefined
   
-  var springStiffness: js.UndefOr[Double] = js.native
+  var springStiffness: js.UndefOr[Double] = js.undefined
   
-  var visibilityRatio: js.UndefOr[Double] = js.native
+  var visibilityRatio: js.UndefOr[Double] = js.undefined
   
-  var wrapHorizontal: js.UndefOr[Boolean] = js.native
+  var wrapHorizontal: js.UndefOr[Boolean] = js.undefined
   
-  var wrapVertical: js.UndefOr[Boolean] = js.native
+  var wrapVertical: js.UndefOr[Boolean] = js.undefined
 }
 object DefaultZoomLevel {
   

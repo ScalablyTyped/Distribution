@@ -2,41 +2,39 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentRunNotification extends StObject {
   
   /**
     * The date of the notification.
     */
-  var date: Timestamp = js.native
+  var date: Timestamp
   
   /**
     * The Boolean value that specifies whether the notification represents an error.
     */
-  var error: Bool = js.native
+  var error: Bool
   
   /**
     * The event for which a notification is sent.
     */
-  var event: InspectorEvent = js.native
+  var event: InspectorEvent
   
   /**
     * The message included in the notification.
     */
-  var message: js.UndefOr[Message] = js.native
+  var message: js.UndefOr[Message] = js.undefined
   
   /**
     * The status code of the SNS notification.
     */
-  var snsPublishStatusCode: js.UndefOr[AssessmentRunNotificationSnsStatusCode] = js.native
+  var snsPublishStatusCode: js.UndefOr[AssessmentRunNotificationSnsStatusCode] = js.undefined
   
   /**
     * The SNS topic to which the SNS notification is sent.
     */
-  var snsTopicArn: js.UndefOr[Arn] = js.native
+  var snsTopicArn: js.UndefOr[Arn] = js.undefined
 }
 object AssessmentRunNotification {
   

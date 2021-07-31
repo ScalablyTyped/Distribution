@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/clouddebugger/v2", "clouddebugger_v2.Resource$Debugger$Debuggees$Breakpoints")
@@ -83,7 +82,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceDebuggerDebuggeesBreakpointsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceDebuggerDebuggeesBreakpointsDelete,
@@ -171,7 +170,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaGetBreakpointResponse] = js.native
   def get(callback: BodyResponseCallback[SchemaGetBreakpointResponse]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetBreakpointResponse] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetBreakpointResponse] = js.native
   def get(params: ParamsResourceDebuggerDebuggeesBreakpointsGet): GaxiosPromise[SchemaGetBreakpointResponse] = js.native
   def get(
     params: ParamsResourceDebuggerDebuggeesBreakpointsGet,
@@ -260,7 +259,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListBreakpointsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListBreakpointsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListBreakpointsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListBreakpointsResponse] = js.native
   def list(params: ParamsResourceDebuggerDebuggeesBreakpointsList): GaxiosPromise[SchemaListBreakpointsResponse] = js.native
   def list(
     params: ParamsResourceDebuggerDebuggeesBreakpointsList,
@@ -349,7 +348,7 @@ class ResourceDebuggerDebuggeesBreakpoints protected () extends StObject {
     */
   def set(): GaxiosPromise[SchemaSetBreakpointResponse] = js.native
   def set(callback: BodyResponseCallback[SchemaSetBreakpointResponse]): Unit = js.native
-  def set(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSetBreakpointResponse] = js.native
+  def set(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSetBreakpointResponse] = js.native
   def set(params: ParamsResourceDebuggerDebuggeesBreakpointsSet): GaxiosPromise[SchemaSetBreakpointResponse] = js.native
   def set(
     params: ParamsResourceDebuggerDebuggeesBreakpointsSet,

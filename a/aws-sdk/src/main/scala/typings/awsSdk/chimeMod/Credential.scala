@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Credential extends StObject {
   
   /**
     * The RFC2617 compliant password associated with the SIP credentials, in US-ASCII format.
     */
-  var Password: js.UndefOr[SensitiveString] = js.native
+  var Password: js.UndefOr[SensitiveString] = js.undefined
   
   /**
     * The RFC2617 compliant user name associated with the SIP credentials, in US-ASCII format.
     */
-  var Username: js.UndefOr[SensitiveString] = js.native
+  var Username: js.UndefOr[SensitiveString] = js.undefined
 }
 object Credential {
   

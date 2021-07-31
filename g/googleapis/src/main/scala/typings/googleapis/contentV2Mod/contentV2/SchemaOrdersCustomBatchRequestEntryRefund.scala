@@ -2,39 +2,37 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrdersCustomBatchRequestEntryRefund extends StObject {
   
   /**
     * Deprecated. Please use amountPretax and amountTax instead.
     */
-  var amount: js.UndefOr[SchemaPrice] = js.native
+  var amount: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The amount that is refunded. Either amount or amountPretax should be
     * filled.
     */
-  var amountPretax: js.UndefOr[SchemaPrice] = js.native
+  var amountPretax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Tax amount that corresponds to refund amount in amountPretax. Optional,
     * but if filled, amountPretax must be set. Calculated automatically if not
     * provided.
     */
-  var amountTax: js.UndefOr[SchemaPrice] = js.native
+  var amountTax: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * The reason for the refund.
     */
-  var reason: js.UndefOr[String] = js.native
+  var reason: js.UndefOr[String] = js.undefined
   
   /**
     * The explanation of the reason.
     */
-  var reasonText: js.UndefOr[String] = js.native
+  var reasonText: js.UndefOr[String] = js.undefined
 }
 object SchemaOrdersCustomBatchRequestEntryRefund {
   

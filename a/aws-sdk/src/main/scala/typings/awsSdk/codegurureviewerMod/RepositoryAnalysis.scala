@@ -2,16 +2,14 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositoryAnalysis extends StObject {
   
   /**
     *  A  SourceCodeType  that specifies the tip of a branch in an associated repository. 
     */
-  var RepositoryHead: RepositoryHeadSourceCodeType = js.native
+  var RepositoryHead: RepositoryHeadSourceCodeType
 }
 object RepositoryAnalysis {
   

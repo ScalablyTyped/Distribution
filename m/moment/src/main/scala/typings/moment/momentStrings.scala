@@ -10,81 +10,90 @@ import typings.moment.mod.unitOfTime.DurationConstructor
 import typings.moment.mod.unitOfTime.MomentConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object momentStrings {
   
   @js.native
   sealed trait D
-    extends typings.moment.mod.unitOfTime.date
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with MomentConstructor
        with typings.moment.momentMod.unitOfTime.MomentConstructor
+       with typings.moment.mod.unitOfTime.date
        with typings.moment.momentMod.unitOfTime.date
   @scala.inline
   def D: D = "D".asInstanceOf[D]
   
   @js.native
   sealed trait DDD
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def DDD: DDD = "DDD".asInstanceOf[DDD]
   
   @js.native
   sealed trait E
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def E: E = "E".asInstanceOf[E]
   
   @js.native
   sealed trait GG
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def GG: GG = "GG".asInstanceOf[GG]
   
   @js.native
   sealed trait L
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def L: L = "L".asInstanceOf[L]
   
   @js.native
   sealed trait LL
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def LL: LL = "LL".asInstanceOf[LL]
   
   @js.native
   sealed trait LLL
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def LLL: LLL = "LLL".asInstanceOf[LLL]
   
   @js.native
   sealed trait LLLL
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def LLLL: LLLL = "LLLL".asInstanceOf[LLLL]
   
   @js.native
   sealed trait LT
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
   sealed trait LTS
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def LTS: LTS = "LTS".asInstanceOf[LTS]
@@ -101,9 +110,10 @@ object momentStrings {
   
   @js.native
   sealed trait M
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -118,30 +128,33 @@ object momentStrings {
   
   @js.native
   sealed trait MM
-    extends RelativeTimeKey
+    extends StObject
+       with RelativeTimeKey
        with typings.moment.momentMod.RelativeTimeKey
   @scala.inline
   def MM: MM = "MM".asInstanceOf[MM]
   
   @js.native
   sealed trait Q
-    extends typings.moment.mod.unitOfTime.quarter
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
        with typings.moment.momentMod.unitOfTime.DurationConstructor
+       with typings.moment.mod.unitOfTime.quarter
        with typings.moment.momentMod.unitOfTime.quarter
   @scala.inline
   def Q: Q = "Q".asInstanceOf[Q]
   
   @js.native
   sealed trait W
-    extends typings.moment.mod.unitOfTime.isoWeek
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with DurationConstructor
+       with typings.moment.mod.unitOfTime.isoWeek
        with typings.moment.momentMod.unitOfTime.isoWeek
   @scala.inline
   def W: W = "W".asInstanceOf[W]
@@ -158,9 +171,10 @@ object momentStrings {
   
   @js.native
   sealed trait d_
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -175,31 +189,34 @@ object momentStrings {
   
   @js.native
   sealed trait date
-    extends typings.moment.mod.unitOfTime.date
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with MomentConstructor
        with typings.moment.momentMod.unitOfTime.MomentConstructor
+       with typings.moment.mod.unitOfTime.date
        with typings.moment.momentMod.unitOfTime.date
   @scala.inline
   def date: date = "date".asInstanceOf[date]
   
   @js.native
   sealed trait dates
-    extends typings.moment.mod.unitOfTime.date
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with MomentConstructor
        with typings.moment.momentMod.unitOfTime.MomentConstructor
+       with typings.moment.mod.unitOfTime.date
        with typings.moment.momentMod.unitOfTime.date
   @scala.inline
   def dates: dates = "dates".asInstanceOf[dates]
   
   @js.native
   sealed trait day
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -212,23 +229,26 @@ object momentStrings {
   
   @js.native
   sealed trait dayOfYear
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def dayOfYear: dayOfYear = "dayOfYear".asInstanceOf[dayOfYear]
   
   @js.native
   sealed trait dayOfYears
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def dayOfYears: dayOfYears = "dayOfYears".asInstanceOf[dayOfYears]
   
   @js.native
   sealed trait days
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -241,30 +261,34 @@ object momentStrings {
   
   @js.native
   sealed trait dd
-    extends RelativeTimeKey
+    extends StObject
+       with RelativeTimeKey
        with typings.moment.momentMod.RelativeTimeKey
   @scala.inline
   def dd: dd = "dd".asInstanceOf[dd]
   
   @js.native
   sealed trait e_
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def e_ : e_ = "e".asInstanceOf[e_]
   
   @js.native
   sealed trait gg_
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def gg_ : gg_ = "gg".asInstanceOf[gg_]
   
   @js.native
   sealed trait h
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -279,16 +303,18 @@ object momentStrings {
   
   @js.native
   sealed trait hh
-    extends RelativeTimeKey
+    extends StObject
+       with RelativeTimeKey
        with typings.moment.momentMod.RelativeTimeKey
   @scala.inline
   def hh: hh = "hh".asInstanceOf[hh]
   
   @js.native
   sealed trait hour
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -301,9 +327,10 @@ object momentStrings {
   
   @js.native
   sealed trait hours
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -316,113 +343,128 @@ object momentStrings {
   
   @js.native
   sealed trait isoWeek
-    extends typings.moment.mod.unitOfTime.isoWeek
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with DurationConstructor
+       with typings.moment.mod.unitOfTime.isoWeek
        with typings.moment.momentMod.unitOfTime.isoWeek
   @scala.inline
   def isoWeek: isoWeek = "isoWeek".asInstanceOf[isoWeek]
   
   @js.native
   sealed trait isoWeekYear
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def isoWeekYear: isoWeekYear = "isoWeekYear".asInstanceOf[isoWeekYear]
   
   @js.native
   sealed trait isoWeekYears
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def isoWeekYears: isoWeekYears = "isoWeekYears".asInstanceOf[isoWeekYears]
   
   @js.native
   sealed trait isoWeekday
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def isoWeekday: isoWeekday = "isoWeekday".asInstanceOf[isoWeekday]
   
   @js.native
   sealed trait isoWeekdays
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def isoWeekdays: isoWeekdays = "isoWeekdays".asInstanceOf[isoWeekdays]
   
   @js.native
   sealed trait isoWeeks
-    extends typings.moment.mod.unitOfTime.isoWeek
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with DurationConstructor
+       with typings.moment.mod.unitOfTime.isoWeek
        with typings.moment.momentMod.unitOfTime.isoWeek
   @scala.inline
   def isoWeeks: isoWeeks = "isoWeeks".asInstanceOf[isoWeeks]
   
   @js.native
   sealed trait l_
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def l_ : l_ = "l".asInstanceOf[l_]
   
   @js.native
   sealed trait lastDay
-    extends _CalendarKey
+    extends StObject
+       with _CalendarKey
        with typings.moment.momentMod._CalendarKey
   @scala.inline
   def lastDay: lastDay = "lastDay".asInstanceOf[lastDay]
   
   @js.native
   sealed trait lastWeek
-    extends _CalendarKey
+    extends StObject
+       with _CalendarKey
        with typings.moment.momentMod._CalendarKey
   @scala.inline
   def lastWeek: lastWeek = "lastWeek".asInstanceOf[lastWeek]
   
   @js.native
   sealed trait ll_
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def ll_ : ll_ = "ll".asInstanceOf[ll_]
   
   @js.native
   sealed trait lll_
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def lll_ : lll_ = "lll".asInstanceOf[lll_]
   
   @js.native
   sealed trait llll_
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def llll_ : llll_ = "llll".asInstanceOf[llll_]
   
   @js.native
   sealed trait lt_
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def lt_ : lt_ = "lt".asInstanceOf[lt_]
   
   @js.native
   sealed trait lts_
-    extends LongDateFormatKey
+    extends StObject
+       with LongDateFormatKey
        with typings.moment.momentMod.LongDateFormatKey
   @scala.inline
   def lts_ : lts_ = "lts".asInstanceOf[lts_]
   
   @js.native
   sealed trait m_
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -437,9 +479,10 @@ object momentStrings {
   
   @js.native
   sealed trait millisecond
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -452,9 +495,10 @@ object momentStrings {
   
   @js.native
   sealed trait milliseconds
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -467,9 +511,10 @@ object momentStrings {
   
   @js.native
   sealed trait minute
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -482,9 +527,10 @@ object momentStrings {
   
   @js.native
   sealed trait minutes
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -497,16 +543,18 @@ object momentStrings {
   
   @js.native
   sealed trait mm_
-    extends RelativeTimeKey
+    extends StObject
+       with RelativeTimeKey
        with typings.moment.momentMod.RelativeTimeKey
   @scala.inline
   def mm_ : mm_ = "mm".asInstanceOf[mm_]
   
   @js.native
   sealed trait month
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -519,9 +567,10 @@ object momentStrings {
   
   @js.native
   sealed trait months
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -534,9 +583,10 @@ object momentStrings {
   
   @js.native
   sealed trait ms
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -549,49 +599,54 @@ object momentStrings {
   
   @js.native
   sealed trait nextDay
-    extends _CalendarKey
+    extends StObject
+       with _CalendarKey
        with typings.moment.momentMod._CalendarKey
   @scala.inline
   def nextDay: nextDay = "nextDay".asInstanceOf[nextDay]
   
   @js.native
   sealed trait nextWeek
-    extends _CalendarKey
+    extends StObject
+       with _CalendarKey
        with typings.moment.momentMod._CalendarKey
   @scala.inline
   def nextWeek: nextWeek = "nextWeek".asInstanceOf[nextWeek]
   
   @js.native
   sealed trait quarter
-    extends typings.moment.mod.unitOfTime.quarter
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
        with typings.moment.momentMod.unitOfTime.DurationConstructor
+       with typings.moment.mod.unitOfTime.quarter
        with typings.moment.momentMod.unitOfTime.quarter
   @scala.inline
   def quarter: quarter = "quarter".asInstanceOf[quarter]
   
   @js.native
   sealed trait quarters
-    extends typings.moment.mod.unitOfTime.quarter
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
        with DurationConstructor
        with typings.moment.momentMod.unitOfTime.DurationConstructor
+       with typings.moment.mod.unitOfTime.quarter
        with typings.moment.momentMod.unitOfTime.quarter
   @scala.inline
   def quarters: quarters = "quarters".asInstanceOf[quarters]
   
   @js.native
   sealed trait s
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -606,23 +661,26 @@ object momentStrings {
   
   @js.native
   sealed trait sameDay
-    extends _CalendarKey
+    extends StObject
+       with _CalendarKey
        with typings.moment.momentMod._CalendarKey
   @scala.inline
   def sameDay: sameDay = "sameDay".asInstanceOf[sameDay]
   
   @js.native
   sealed trait sameElse
-    extends _CalendarKey
+    extends StObject
+       with _CalendarKey
        with typings.moment.momentMod._CalendarKey
   @scala.inline
   def sameElse: sameElse = "sameElse".asInstanceOf[sameElse]
   
   @js.native
   sealed trait second
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -635,9 +693,10 @@ object momentStrings {
   
   @js.native
   sealed trait seconds
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -650,16 +709,18 @@ object momentStrings {
   
   @js.native
   sealed trait ss
-    extends RelativeTimeKey
+    extends StObject
+       with RelativeTimeKey
        with typings.moment.momentMod.RelativeTimeKey
   @scala.inline
   def ss: ss = "ss".asInstanceOf[ss]
   
   @js.native
   sealed trait w_
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -674,9 +735,10 @@ object momentStrings {
   
   @js.native
   sealed trait week
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -689,37 +751,42 @@ object momentStrings {
   
   @js.native
   sealed trait weekYear
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def weekYear: weekYear = "weekYear".asInstanceOf[weekYear]
   
   @js.native
   sealed trait weekYears
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def weekYears: weekYears = "weekYears".asInstanceOf[weekYears]
   
   @js.native
   sealed trait weekday
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def weekday: weekday = "weekday".asInstanceOf[weekday]
   
   @js.native
   sealed trait weekdays
-    extends All
+    extends StObject
+       with All
        with typings.moment.momentMod.unitOfTime.All
   @scala.inline
   def weekdays: weekdays = "weekdays".asInstanceOf[weekdays]
   
   @js.native
   sealed trait weeks
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -732,16 +799,18 @@ object momentStrings {
   
   @js.native
   sealed trait ww
-    extends RelativeTimeKey
+    extends StObject
+       with RelativeTimeKey
        with typings.moment.momentMod.RelativeTimeKey
   @scala.inline
   def ww: ww = "ww".asInstanceOf[ww]
   
   @js.native
   sealed trait y
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -756,9 +825,10 @@ object momentStrings {
   
   @js.native
   sealed trait year
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -771,9 +841,10 @@ object momentStrings {
   
   @js.native
   sealed trait years
-    extends Base
+    extends StObject
        with All
        with typings.moment.momentMod.unitOfTime.All
+       with Base
        with typings.moment.momentMod.unitOfTime.Base
        with Diff
        with typings.moment.momentMod.unitOfTime.Diff
@@ -786,7 +857,8 @@ object momentStrings {
   
   @js.native
   sealed trait yy
-    extends RelativeTimeKey
+    extends StObject
+       with RelativeTimeKey
        with typings.moment.momentMod.RelativeTimeKey
   @scala.inline
   def yy: yy = "yy".asInstanceOf[yy]

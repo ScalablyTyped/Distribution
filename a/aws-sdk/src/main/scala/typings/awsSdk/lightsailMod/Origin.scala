@@ -2,31 +2,29 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Origin extends StObject {
   
   /**
     * The name of the origin resource.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * The protocol that your Amazon Lightsail distribution uses when establishing a connection with your origin to pull content.
     */
-  var protocolPolicy: js.UndefOr[OriginProtocolPolicyEnum] = js.native
+  var protocolPolicy: js.UndefOr[OriginProtocolPolicyEnum] = js.undefined
   
   /**
     * The AWS Region name of the origin resource.
     */
-  var regionName: js.UndefOr[RegionName] = js.native
+  var regionName: js.UndefOr[RegionName] = js.undefined
   
   /**
     * The resource type of the origin resource (e.g., Instance).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
 }
 object Origin {
   

@@ -4,15 +4,13 @@ import typings.express.mod.IRoute
 import typings.swaggerizeExpress.mod.Swagger.ApiDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConfig extends StObject {
   
-  var api: ApiDefinition = js.native
+  var api: ApiDefinition
   
-  var routes: js.Array[IRoute] = js.native
+  var routes: js.Array[IRoute]
 }
 object IConfig {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutLogEventsRequest extends StObject {
   
   /**
     * The log events.
     */
-  var logEvents: InputLogEvents = js.native
+  var logEvents: InputLogEvents
   
   /**
     * The name of the log group.
     */
-  var logGroupName: LogGroupName = js.native
+  var logGroupName: LogGroupName
   
   /**
     * The name of the log stream.
     */
-  var logStreamName: LogStreamName = js.native
+  var logStreamName: LogStreamName
   
   /**
     * The sequence token obtained from the response of the previous PutLogEvents call. An upload in a newly created log stream does not require a sequence token. You can also get the sequence token using DescribeLogStreams. If you call PutLogEvents twice within a narrow time period using the same value for sequenceToken, both calls might be successful or one might be rejected.
     */
-  var sequenceToken: js.UndefOr[SequenceToken] = js.native
+  var sequenceToken: js.UndefOr[SequenceToken] = js.undefined
 }
 object PutLogEventsRequest {
   

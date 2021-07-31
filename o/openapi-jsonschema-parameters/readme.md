@@ -10,9 +10,9 @@ Converts openapi parameters to a jsonschema format.
 | ------------------ | :-------------: |
 | Full name          | openapi-jsonschema-parameters |
 | Keywords           | openapi, parameters, jsonschema, convert, converter |
-| # releases         | 8 |
+| # releases         | 9 |
 | # dependents       | 6 |
-| # downloads        | 964968 |
+| # downloads        | 1044321 |
 | # stars            | 0 |
 
 ## Links

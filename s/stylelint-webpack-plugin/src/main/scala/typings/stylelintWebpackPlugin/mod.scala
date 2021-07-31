@@ -3,7 +3,6 @@ package typings.stylelintWebpackPlugin
 import typings.stylelintWebpackPlugin.getOptionsMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,14 +10,34 @@ object mod {
   /** @typedef {import('webpack').Compiler} Compiler */
   @JSImport("stylelint-webpack-plugin", JSImport.Default)
   @js.native
-  class default () extends StylelintWebpackPlugin {
+  class default ()
+    extends StObject
+       with StylelintWebpackPlugin {
     def this(options: js.Object) = this()
+    
+    /**
+      * @param {Compiler} compiler
+      * @returns {void}
+      */
+    /* CompleteClass */
+    @JSName("apply")
+    override def apply(compiler: Compiler): Unit = js.native
+    
+    /**
+      *
+      * @param {Compiler} compiler
+      * @returns {string}
+      */
+    /* CompleteClass */
+    override def getContext(compiler: Compiler): String = js.native
+    
+    /* CompleteClass */
+    var options: Options = js.native
   }
   
   type Compiler = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify imported_webpack.Compiler */ js.Any
   
   /** @typedef {import('webpack').Compiler} Compiler */
-  @js.native
   trait StylelintWebpackPlugin extends StObject {
     
     /**
@@ -26,16 +45,16 @@ object mod {
       * @returns {void}
       */
     @JSName("apply")
-    def apply(compiler: Compiler): Unit = js.native
+    def apply(compiler: Compiler): Unit
     
     /**
       *
       * @param {Compiler} compiler
       * @returns {string}
       */
-    def getContext(compiler: Compiler): String = js.native
+    def getContext(compiler: Compiler): String
     
-    var options: Options = js.native
+    var options: Options
   }
   object StylelintWebpackPlugin {
     

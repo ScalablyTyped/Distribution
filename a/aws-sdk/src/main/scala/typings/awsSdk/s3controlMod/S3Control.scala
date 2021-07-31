@@ -6,14 +6,13 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait S3Control extends Service {
   
   @JSName("config")
-  var config_S3Control: ConfigBase with ClientConfiguration = js.native
+  var config_S3Control: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an access point and associates it with the specified bucket. For more information, see Managing Data Access with Amazon S3 Access Points in the Amazon Simple Storage Service Developer Guide.   Using this action with Amazon S3 on Outposts  This action:    Requires a virtual private cloud (VPC) configuration as S3 on Outposts only supports VPC style access points.   Does not support ACL on S3 on Outposts buckets.   Does not support Public Access on S3 on Outposts buckets.   Does not support object lock for S3 on Outposts buckets.   For more information, see Using Amazon S3 on Outposts in the Amazon Simple Storage Service Developer Guide . All Amazon S3 on Outposts REST API requests for this action require an additional parameter of x-amz-outpost-id to be passed with the request and an S3 on Outposts endpoint hostname prefix instead of s3-control. For an example of the request syntax for Amazon S3 on Outposts that uses the S3 on Outposts endpoint hostname prefix and the x-amz-outpost-id derived using the access point ARN, see the Examples section.  The following actions are related to CreateAccessPoint:    GetAccessPoint     DeleteAccessPoint     ListAccessPoints   

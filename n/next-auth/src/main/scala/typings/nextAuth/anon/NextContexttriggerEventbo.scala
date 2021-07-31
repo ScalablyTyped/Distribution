@@ -3,18 +3,16 @@ package typings.nextAuth.anon
 import typings.node.httpMod.IncomingMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined next-auth.next-auth/client.NextContext & {  triggerEvent :boolean | undefined} */
-@js.native
 trait NextContexttriggerEventbo extends StObject {
   
-  var ctx: js.UndefOr[Req] = js.native
+  var ctx: js.UndefOr[Req] = js.undefined
   
-  var req: js.UndefOr[IncomingMessage] = js.native
+  var req: js.UndefOr[IncomingMessage] = js.undefined
   
-  var triggerEvent: js.UndefOr[Boolean] = js.native
+  var triggerEvent: js.UndefOr[Boolean] = js.undefined
 }
 object NextContexttriggerEventbo {
   

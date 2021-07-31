@@ -4,20 +4,18 @@ import typings.ractive.ractiveStrings.fast
 import typings.ractive.ractiveStrings.slow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitionOpts extends StObject {
   
   /** The delay in milliseconds to wait before triggering the transition. */
-  var delay: js.UndefOr[Double] = js.native
+  var delay: js.UndefOr[Double] = js.undefined
   
   /** The duration for the transition in milliseconds, slow for 600ms, fast for 200ms, and any other string for 400ms. */
-  var duration: js.UndefOr[Double | slow | fast | String] = js.native
+  var duration: js.UndefOr[Double | slow | fast | String] = js.undefined
   
   /** The easing to use for the transition. */
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
 }
 object TransitionOpts {
   

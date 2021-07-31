@@ -3,26 +3,26 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PrivilegeKeyEntry extends ResponseEntry {
+trait PrivilegeKeyEntry
+  extends StObject
+     with ResponseEntry {
   
-  var token: String = js.native
+  var token: String
   
-  var tokenCreated: Double = js.native
+  var tokenCreated: Double
   
   /** only in server version >= 3.11.x */
-  var tokenCustomset: js.Array[TokenCustomSet] = js.native
+  var tokenCustomset: js.Array[TokenCustomSet]
   
-  var tokenDescription: String = js.native
+  var tokenDescription: String
   
-  var tokenId1: Double = js.native
+  var tokenId1: Double
   
-  var tokenId2: Double = js.native
+  var tokenId2: Double
   
-  var tokenType: Double = js.native
+  var tokenType: Double
 }
 object PrivilegeKeyEntry {
   

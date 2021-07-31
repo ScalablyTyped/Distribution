@@ -4,20 +4,18 @@ import typings.firebaseStorageTypes.mod.UploadTaskSnapshot
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@firebase/util.@firebase/util.Observer<@firebase/storage-types.@firebase/storage-types.UploadTaskSnapshot>> */
-  @js.native
   trait PartialObserverUploadTask extends StObject {
     
-    var complete: js.UndefOr[js.Function0[Unit]] = js.native
+    var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.native
+    var error: js.UndefOr[js.Function1[/* error */ Error, Unit]] = js.undefined
     
-    var next: js.UndefOr[js.Function1[/* value */ UploadTaskSnapshot, Unit]] = js.native
+    var next: js.UndefOr[js.Function1[/* value */ UploadTaskSnapshot, Unit]] = js.undefined
   }
   object PartialObserverUploadTask {
     

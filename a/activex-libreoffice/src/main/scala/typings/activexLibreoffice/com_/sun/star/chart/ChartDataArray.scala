@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * It contains the data values as well as the descriptions for each row and column.
   */
-@js.native
-trait ChartDataArray extends XChartDataArray
+trait ChartDataArray
+  extends StObject
+     with XChartDataArray
 object ChartDataArray {
   
   @scala.inline

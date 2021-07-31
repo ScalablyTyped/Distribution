@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/websecurityscanner/v1beta", "websecurityscanner_v1beta.Resource$Projects$Scanconfigs$Scanruns$Crawledurls")
@@ -32,7 +31,7 @@ class ResourceProjectsScanconfigsScanrunsCrawledurls protected () extends StObje
     */
   def list(): GaxiosPromise[SchemaListCrawledUrlsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListCrawledUrlsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCrawledUrlsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCrawledUrlsResponse] = js.native
   def list(params: ParamsResourceProjectsScanconfigsScanrunsCrawledurlsList): GaxiosPromise[SchemaListCrawledUrlsResponse] = js.native
   def list(
     params: ParamsResourceProjectsScanconfigsScanrunsCrawledurlsList,

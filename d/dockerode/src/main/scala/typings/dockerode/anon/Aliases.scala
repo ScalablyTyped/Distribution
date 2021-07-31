@@ -2,35 +2,33 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aliases extends StObject {
   
-  var Aliases: js.UndefOr[js.Any] = js.native
+  var Aliases: js.UndefOr[js.Any] = js.undefined
   
-  var EndpointID: String = js.native
+  var EndpointID: String
   
-  var Gateway: String = js.native
+  var Gateway: String
   
-  var GlobalIPv6Address: String = js.native
+  var GlobalIPv6Address: String
   
-  var GlobalIPv6PrefixLen: Double = js.native
+  var GlobalIPv6PrefixLen: Double
   
-  var IPAMConfig: js.UndefOr[js.Any] = js.native
+  var IPAMConfig: js.UndefOr[js.Any] = js.undefined
   
-  var IPAddress: String = js.native
+  var IPAddress: String
   
-  var IPPrefixLen: Double = js.native
+  var IPPrefixLen: Double
   
-  var IPv6Gateway: String = js.native
+  var IPv6Gateway: String
   
-  var Links: js.UndefOr[js.Any] = js.native
+  var Links: js.UndefOr[js.Any] = js.undefined
   
-  var MacAddress: String = js.native
+  var MacAddress: String
   
-  var NetworkID: String = js.native
+  var NetworkID: String
 }
 object Aliases {
   

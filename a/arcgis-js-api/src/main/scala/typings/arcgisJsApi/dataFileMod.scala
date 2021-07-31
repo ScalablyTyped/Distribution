@@ -6,24 +6,33 @@ import typings.arcgisJsApi.esri.DataFileConstructor
 import typings.arcgisJsApi.esri.DataFileProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataFileMod extends Shortcut {
   
   @JSImport("esri/tasks/support/DataFile", JSImport.Namespace)
   @js.native
-  val ^ : DataFileConstructor = js.native
+  val ^ : js.Object & DataFileConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/tasks/support/DataFile", JSImport.Namespace)
   @js.native
-  class Class () extends DataFile {
+  class Class ()
+    extends StObject
+       with DataFile {
     def this(properties: DataFileProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = DataFileConstructor
+  type _To = js.Object & DataFileConstructor
   
   /* This means you don't have to write `^`, but can instead just say `dataFileMod.foo` */
-  override def _to: DataFileConstructor = ^
+  override def _to: js.Object & DataFileConstructor = ^
 }

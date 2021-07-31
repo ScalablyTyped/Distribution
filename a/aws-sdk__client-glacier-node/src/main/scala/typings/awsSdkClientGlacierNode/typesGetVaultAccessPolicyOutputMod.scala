@@ -5,24 +5,24 @@ import typings.awsSdkClientGlacierNode.typesVaultAccessPolicyMod.UnmarshalledVau
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetVaultAccessPolicyOutputMod {
   
-  @js.native
-  trait GetVaultAccessPolicyOutput extends _OutputTypesUnion {
+  trait GetVaultAccessPolicyOutput
+    extends StObject
+       with _OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>Contains the returned vault access policy as a JSON string.</p>
       */
-    var policy: js.UndefOr[UnmarshalledVaultAccessPolicy] = js.native
+    var policy: js.UndefOr[UnmarshalledVaultAccessPolicy] = js.undefined
   }
   object GetVaultAccessPolicyOutput {
     

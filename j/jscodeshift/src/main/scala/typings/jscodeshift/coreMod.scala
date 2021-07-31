@@ -7,7 +7,6 @@ import typings.jscodeshift.jsxelementMod.MappingMethods
 import typings.jscodeshift.templateMod.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object coreMod extends Shortcut {
@@ -16,29 +15,57 @@ object coreMod extends Shortcut {
   @js.native
   val ^ : JSCodeshift = js.native
   
-  @js.native
   trait API extends StObject {
     
-    def j(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def j(source: String): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def j(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def j(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[_] = js.native
+    def j(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[js.Any]
+    def j(source: String): typings.jscodeshift.collectionMod.Collection[js.Any]
+    def j(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[js.Any]
+    def j(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[js.Any]
     @JSName("j")
-    var j_Original: JSCodeshift = js.native
+    var j_Original: JSCodeshift
     
-    def jscodeshift(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def jscodeshift(source: String): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def jscodeshift(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def jscodeshift(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[_] = js.native
+    def jscodeshift(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[js.Any]
+    def jscodeshift(source: String): typings.jscodeshift.collectionMod.Collection[js.Any]
+    def jscodeshift(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[js.Any]
+    def jscodeshift(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[js.Any]
     @JSName("jscodeshift")
-    var jscodeshift_Original: JSCodeshift = js.native
+    var jscodeshift_Original: JSCodeshift
     
-    def report(msg: String): Unit = js.native
+    def report(msg: String): Unit
     
-    def stats(name: String): Unit = js.native
-    def stats(name: String, quantity: Double): Unit = js.native
+    def stats(name: String): Unit
+    def stats(name: String, quantity: Double): Unit
     @JSName("stats")
-    var stats_Original: Stats = js.native
+    var stats_Original: Stats
+  }
+  object API {
+    
+    @scala.inline
+    def apply(
+      j: JSCodeshift,
+      jscodeshift: JSCodeshift,
+      report: String => Unit,
+      stats: (/* name */ String, /* quantity */ js.UndefOr[Double]) => Unit
+    ): API = {
+      val __obj = js.Dynamic.literal(j = j.asInstanceOf[js.Any], jscodeshift = jscodeshift.asInstanceOf[js.Any], report = js.Any.fromFunction1(report), stats = js.Any.fromFunction2(stats))
+      __obj.asInstanceOf[API]
+    }
+    
+    @scala.inline
+    implicit class APIMutableBuilder[Self <: API] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setJ(value: JSCodeshift): Self = StObject.set(x, "j", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setJscodeshift(value: JSCodeshift): Self = StObject.set(x, "jscodeshift", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setReport(value: String => Unit): Self = StObject.set(x, "report", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setStats(value: (/* name */ String, /* quantity */ js.UndefOr[Double]) => Unit): Self = StObject.set(x, "stats", js.Any.fromFunction2(value))
+    }
   }
   
   type ASTNode = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.ASTNode */ js.Any
@@ -120,10 +147,10 @@ object coreMod extends Shortcut {
   @js.native
   trait Core extends StObject {
     
-    def apply(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def apply(source: String): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def apply(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[_] = js.native
-    def apply(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[_] = js.native
+    def apply(source: ASTNode | ASTPath[ASTNode]): typings.jscodeshift.collectionMod.Collection[js.Any] = js.native
+    def apply(source: String): typings.jscodeshift.collectionMod.Collection[js.Any] = js.native
+    def apply(source: String, options: Options): typings.jscodeshift.collectionMod.Collection[js.Any] = js.native
+    def apply(source: js.Array[ASTNode | ASTPath[ASTNode]]): typings.jscodeshift.collectionMod.Collection[js.Any] = js.native
     
     var filters: Filters = js.native
     
@@ -234,14 +261,13 @@ object coreMod extends Shortcut {
   
   type File = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.File */ js.Any
   
-  @js.native
   trait FileInfo extends StObject {
     
     /** The absolute path to the current file. */
-    var path: String = js.native
+    var path: String
     
     /** The source code of the current file. */
-    var source: String = js.native
+    var source: String
   }
   object FileInfo {
     
@@ -262,12 +288,11 @@ object coreMod extends Shortcut {
     }
   }
   
-  @js.native
   trait Filters extends StObject {
     
-    var JSXElement: FilterMethods = js.native
+    var JSXElement: FilterMethods
     
-    var VariableDeclarator: typings.jscodeshift.variableDeclaratorMod.FilterMethods = js.native
+    var VariableDeclarator: typings.jscodeshift.variableDeclaratorMod.FilterMethods
   }
   object Filters {
     
@@ -345,7 +370,12 @@ object coreMod extends Shortcut {
   
   type IntersectionTypeAnnotation = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.IntersectionTypeAnnotation */ js.Any
   
-  type JSCodeshift = Core with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NamedTypes */ js.Any)
+  /* import warning: RemoveDifficultInheritance.summarizeChanges 
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.NamedTypes * / any
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify recast.Builders * / any */ @js.native
+  trait JSCodeshift
+    extends StObject
+       with Core
   
   type JSXAttribute = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.JSXAttribute */ js.Any
   
@@ -385,10 +415,9 @@ object coreMod extends Shortcut {
   
   type LogicalExpression = /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify nodes.LogicalExpression */ js.Any
   
-  @js.native
   trait Mappings extends StObject {
     
-    var JSXElement: MappingMethods = js.native
+    var JSXElement: MappingMethods
   }
   object Mappings {
     

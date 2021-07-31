@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Edge extends StObject {
   
-  var background: js.UndefOr[Invert] = js.native
+  var background: js.UndefOr[Invert] = js.undefined
   
-  var edge: js.UndefOr[Type] = js.native
+  var edge: js.UndefOr[Type] = js.undefined
 }
 object Edge {
   

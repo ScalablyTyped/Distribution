@@ -2,84 +2,84 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Condition that must evaluate to true
   */
-@js.native
-trait ElementDefinitionConstraint extends Element {
+trait ElementDefinitionConstraint
+  extends StObject
+     with Element {
   
   /**
     * Contains extended information for property 'expression'.
     */
-  var _expression: js.UndefOr[Element] = js.native
+  var _expression: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'human'.
     */
-  var _human: js.UndefOr[Element] = js.native
+  var _human: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'key'.
     */
-  var _key: js.UndefOr[Element] = js.native
+  var _key: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'requirements'.
     */
-  var _requirements: js.UndefOr[Element] = js.native
+  var _requirements: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'severity'.
     */
-  var _severity: js.UndefOr[Element] = js.native
+  var _severity: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'source'.
     */
-  var _source: js.UndefOr[Element] = js.native
+  var _source: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'xpath'.
     */
-  var _xpath: js.UndefOr[Element] = js.native
+  var _xpath: js.UndefOr[Element] = js.undefined
   
   /**
     * FHIRPath expression of constraint
     */
-  var expression: String = js.native
+  var expression: String
   
   /**
     * Human description of constraint
     */
-  var human: String = js.native
+  var human: String
   
   /**
     * Target of 'condition' reference above
     */
-  var key: id = js.native
+  var key: id
   
   /**
     * Why this constraint is necessary or appropriate
     */
-  var requirements: js.UndefOr[String] = js.native
+  var requirements: js.UndefOr[String] = js.undefined
   
   /**
     * error | warning
     */
-  var severity: code = js.native
+  var severity: code
   
   /**
     * Reference to original source of constraint
     */
-  var source: js.UndefOr[uri] = js.native
+  var source: js.UndefOr[uri] = js.undefined
   
   /**
     * XPath expression of constraint
     */
-  var xpath: js.UndefOr[String] = js.native
+  var xpath: js.UndefOr[String] = js.undefined
 }
 object ElementDefinitionConstraint {
   

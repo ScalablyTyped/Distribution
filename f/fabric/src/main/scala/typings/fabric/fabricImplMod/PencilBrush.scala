@@ -3,7 +3,6 @@ package typings.fabric.fabricImplMod
 import typings.fabric.anon.X
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "PencilBrush")
@@ -15,9 +14,9 @@ class PencilBrush () extends BaseBrush {
     * @param points Array of points
     */
   def convertPointsToSVGPath(points: js.Array[X]): js.Array[String] = js.native
-  def convertPointsToSVGPath(points: js.Array[X], minX: js.UndefOr[scala.Nothing], minY: Double): js.Array[String] = js.native
   def convertPointsToSVGPath(points: js.Array[X], minX: Double): js.Array[String] = js.native
   def convertPointsToSVGPath(points: js.Array[X], minX: Double, minY: Double): js.Array[String] = js.native
+  def convertPointsToSVGPath(points: js.Array[X], minX: Unit, minY: Double): js.Array[String] = js.native
   
   /**
     * Creates fabric.Path object to add on canvas

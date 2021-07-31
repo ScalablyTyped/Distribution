@@ -2,27 +2,25 @@ package typings.chartJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartScales extends StObject {
   
-  var display: js.UndefOr[Boolean] = js.native
+  var display: js.UndefOr[Boolean] = js.undefined
   
-  var gridLines: js.UndefOr[GridLineOptions] = js.native
+  var gridLines: js.UndefOr[GridLineOptions] = js.undefined
   
-  var position: js.UndefOr[PositionType | String] = js.native
+  var position: js.UndefOr[PositionType | String] = js.undefined
   
-  var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.native
+  var scaleLabel: js.UndefOr[ScaleTitleOptions] = js.undefined
   
-  var ticks: js.UndefOr[TickOptions] = js.native
+  var ticks: js.UndefOr[TickOptions] = js.undefined
   
-  var `type`: js.UndefOr[ScaleType | String] = js.native
+  var `type`: js.UndefOr[ScaleType | String] = js.undefined
   
-  var xAxes: js.UndefOr[js.Array[ChartXAxe]] = js.native
+  var xAxes: js.UndefOr[js.Array[ChartXAxe]] = js.undefined
   
-  var yAxes: js.UndefOr[js.Array[ChartYAxe]] = js.native
+  var yAxes: js.UndefOr[js.Array[ChartYAxe]] = js.undefined
 }
 object ChartScales {
   

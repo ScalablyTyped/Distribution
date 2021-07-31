@@ -2,26 +2,24 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HPOConfig extends StObject {
   
   /**
     * The hyperparameters and their allowable ranges.
     */
-  var algorithmHyperParameterRanges: js.UndefOr[HyperParameterRanges] = js.native
+  var algorithmHyperParameterRanges: js.UndefOr[HyperParameterRanges] = js.undefined
   
   /**
     * The metric to optimize during HPO.
     */
-  var hpoObjective: js.UndefOr[HPOObjective] = js.native
+  var hpoObjective: js.UndefOr[HPOObjective] = js.undefined
   
   /**
     * Describes the resource configuration for HPO.
     */
-  var hpoResourceConfig: js.UndefOr[HPOResourceConfig] = js.native
+  var hpoResourceConfig: js.UndefOr[HPOResourceConfig] = js.undefined
 }
 object HPOConfig {
   

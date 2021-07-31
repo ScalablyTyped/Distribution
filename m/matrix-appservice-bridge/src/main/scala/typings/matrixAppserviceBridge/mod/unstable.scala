@@ -4,10 +4,13 @@ import typings.matrixAppserviceBridge.anon.Instantiable
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object unstable {
+  
+  @JSImport("matrix-appservice-bridge", "unstable")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * An unexpected internal error occured while the bridge handled the event.
@@ -59,37 +62,29 @@ object unstable {
     def this(message: String) = this()
   }
   
-  @JSImport("matrix-appservice-bridge", "unstable.wrap")
-  @js.native
-  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
-  @JSImport("matrix-appservice-bridge", "unstable.wrap")
-  @js.native
-  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
+  @scala.inline
+  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
+  @scala.inline
+  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
   /**
     * @deprecated Use {@link wrapError}
     */
-  @JSImport("matrix-appservice-bridge", "unstable.wrap")
-  @js.native
-  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
-  @JSImport("matrix-appservice-bridge", "unstable.wrap")
-  @js.native
-  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
+  @scala.inline
+  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
+  @scala.inline
+  def wrap[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrap")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
   
-  @JSImport("matrix-appservice-bridge", "unstable.wrapError")
-  @js.native
-  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
-  @JSImport("matrix-appservice-bridge", "unstable.wrapError")
-  @js.native
-  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
+  @scala.inline
+  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
+  @scala.inline
+  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: String, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
   /**
     * Append the old error message to the new one and keep its stack trace.
     * Example:
     *     throw wrapError(e, HighLevelError, "This error is more specific");
     */
-  @JSImport("matrix-appservice-bridge", "unstable.wrapError")
-  @js.native
-  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
-  @JSImport("matrix-appservice-bridge", "unstable.wrapError")
-  @js.native
-  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = js.native
+  @scala.inline
+  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T]): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
+  @scala.inline
+  def wrapError[T /* <: typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError */](oldError: Error, newErrorType: Instantiable[T], message: String): typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError = (^.asInstanceOf[js.Dynamic].applyDynamic("wrapError")(oldError.asInstanceOf[js.Any], newErrorType.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[typings.matrixAppserviceBridge.errorsMod.unstable.EventNotHandledError]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.dmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourcePendingMaintenanceActions extends StObject {
   
   /**
     * Detailed information about the pending maintenance action.
     */
-  var PendingMaintenanceActionDetails: js.UndefOr[typings.awsSdk.dmsMod.PendingMaintenanceActionDetails] = js.native
+  var PendingMaintenanceActionDetails: js.UndefOr[typings.awsSdk.dmsMod.PendingMaintenanceActionDetails] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the DMS resource that the pending maintenance action applies to. For information about creating an ARN, see  Constructing an Amazon Resource Name (ARN) for AWS DMS in the DMS documentation.
     */
-  var ResourceIdentifier: js.UndefOr[String] = js.native
+  var ResourceIdentifier: js.UndefOr[String] = js.undefined
 }
 object ResourcePendingMaintenanceActions {
   

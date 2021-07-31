@@ -2,21 +2,19 @@ package typings.awsSdk.cognitoidentityMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IdentityPoolShortDescription extends StObject {
   
   /**
     * An identity pool ID in the format REGION:GUID.
     */
-  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolId] = js.native
+  var IdentityPoolId: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolId] = js.undefined
   
   /**
     * A string that you provide.
     */
-  var IdentityPoolName: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolName] = js.native
+  var IdentityPoolName: js.UndefOr[typings.awsSdk.cognitoidentityMod.IdentityPoolName] = js.undefined
 }
 object IdentityPoolShortDescription {
   

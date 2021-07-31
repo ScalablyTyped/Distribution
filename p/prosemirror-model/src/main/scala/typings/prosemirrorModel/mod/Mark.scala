@@ -3,12 +3,11 @@ package typings.prosemirrorModel.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("prosemirror-model", "Mark")
 @js.native
-class Mark[S /* <: Schema[_, _] */] () extends StObject {
+class Mark[S /* <: Schema[js.Any, js.Any] */] () extends StObject {
   
   /**
     * Given a set of marks, create a new set which contains this one as
@@ -58,9 +57,8 @@ object Mark {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("prosemirror-model", "Mark.fromJSON")
-  @js.native
-  def fromJSON[S /* <: Schema[_, _] */](schema: S, json: StringDictionary[js.Any]): Mark[S] = js.native
+  @scala.inline
+  def fromJSON[S /* <: Schema[js.Any, js.Any] */](schema: S, json: StringDictionary[js.Any]): Mark[S] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(schema.asInstanceOf[js.Any], json.asInstanceOf[js.Any])).asInstanceOf[Mark[S]]
   
   /**
     * The empty set of marks.
@@ -74,21 +72,17 @@ object Mark {
   /**
     * Test whether two sets of marks are identical.
     */
-  @JSImport("prosemirror-model", "Mark.sameSet")
-  @js.native
-  def sameSet[S /* <: Schema[_, _] */](a: js.Array[Mark[S]], b: js.Array[Mark[S]]): Boolean = js.native
+  @scala.inline
+  def sameSet[S /* <: Schema[js.Any, js.Any] */](a: js.Array[Mark[S]], b: js.Array[Mark[S]]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("sameSet")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Create a properly sorted mark set from null, a single mark, or an
     * unsorted array of marks.
     */
-  @JSImport("prosemirror-model", "Mark.setFrom")
-  @js.native
-  def setFrom[S /* <: Schema[_, _] */](): js.Array[Mark[S]] = js.native
-  @JSImport("prosemirror-model", "Mark.setFrom")
-  @js.native
-  def setFrom[S /* <: Schema[_, _] */](marks: js.Array[Mark[S]]): js.Array[Mark[S]] = js.native
-  @JSImport("prosemirror-model", "Mark.setFrom")
-  @js.native
-  def setFrom[S /* <: Schema[_, _] */](marks: Mark[S]): js.Array[Mark[S]] = js.native
+  @scala.inline
+  def setFrom[S /* <: Schema[js.Any, js.Any] */](): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")().asInstanceOf[js.Array[Mark[S]]]
+  @scala.inline
+  def setFrom[S /* <: Schema[js.Any, js.Any] */](marks: js.Array[Mark[S]]): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark[S]]]
+  @scala.inline
+  def setFrom[S /* <: Schema[js.Any, js.Any] */](marks: Mark[S]): js.Array[Mark[S]] = ^.asInstanceOf[js.Dynamic].applyDynamic("setFrom")(marks.asInstanceOf[js.Any]).asInstanceOf[js.Array[Mark[S]]]
 }

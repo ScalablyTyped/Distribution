@@ -2,26 +2,24 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists the FHIR stores in the given dataset.
   */
-@js.native
 trait SchemaListFhirStoresResponse extends StObject {
   
   /**
     * The returned FHIR stores. Won&#39;t be more FHIR stores than the value of
     * page_size in the request.
     */
-  var fhirStores: js.UndefOr[js.Array[SchemaFhirStore]] = js.native
+  var fhirStores: js.UndefOr[js.Array[SchemaFhirStore]] = js.undefined
   
   /**
     * Token to retrieve the next page of results or empty if there are no more
     * results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListFhirStoresResponse {
   

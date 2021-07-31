@@ -2,41 +2,39 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListStackInstancesInput extends StObject {
   
   /**
     * The status that stack instances are filtered by.
     */
-  var Filters: js.UndefOr[StackInstanceFilters] = js.native
+  var Filters: js.UndefOr[StackInstanceFilters] = js.undefined
   
   /**
     * The maximum number of results to be returned with a single call. If the number of available results exceeds this maximum, the response includes a NextToken value that you can assign to the NextToken request parameter to get the next set of results.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.cloudformationMod.MaxResults] = js.undefined
   
   /**
     * If the previous request didn't return all of the remaining results, the response's NextToken parameter value is set to a token. To retrieve the next set of results, call ListStackInstances again and assign that token to the request object's NextToken parameter. If there are no remaining results, the previous response object's NextToken parameter is set to null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
   
   /**
     * The name of the AWS account that you want to list stack instances for.
     */
-  var StackInstanceAccount: js.UndefOr[Account] = js.native
+  var StackInstanceAccount: js.UndefOr[Account] = js.undefined
   
   /**
     * The name of the Region where you want to list stack instances. 
     */
-  var StackInstanceRegion: js.UndefOr[Region] = js.native
+  var StackInstanceRegion: js.UndefOr[Region] = js.undefined
   
   /**
     * The name or unique ID of the stack set that you want to list stack instances for.
     */
-  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName = js.native
+  var StackSetName: typings.awsSdk.cloudformationMod.StackSetName
 }
 object ListStackInstancesInput {
   

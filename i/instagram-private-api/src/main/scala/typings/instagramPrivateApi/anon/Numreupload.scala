@@ -2,17 +2,15 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Numreupload extends StObject {
   
-  var num_reupload: Double = js.native
+  var num_reupload: Double
   
-  var num_step_auto_retry: Double = js.native
+  var num_step_auto_retry: Double
   
-  var num_step_manual_retry: Double = js.native
+  var num_step_manual_retry: Double
 }
 object Numreupload {
   

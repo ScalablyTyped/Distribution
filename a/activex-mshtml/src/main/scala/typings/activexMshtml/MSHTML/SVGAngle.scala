@@ -2,26 +2,24 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAngle extends StObject {
   
   @JSName("MSHTML.SVGAngle_typekey")
-  var MSHTMLDotSVGAngle_typekey: SVGAngle = js.native
+  var MSHTMLDotSVGAngle_typekey: SVGAngle
   
-  def convertToSpecifiedUnits(unitType: Double): Unit = js.native
+  def convertToSpecifiedUnits(unitType: Double): Unit
   
-  def newValueSpecifiedUnits(unitType: Double, valueInSpecifiedUnits: Double): Unit = js.native
+  def newValueSpecifiedUnits(unitType: Double, valueInSpecifiedUnits: Double): Unit
   
-  var unitType: Double = js.native
+  var unitType: Double
   
-  var value: Double = js.native
+  var value: Double
   
-  var valueAsString: String = js.native
+  var valueAsString: String
   
-  var valueInSpecifiedUnits: Double = js.native
+  var valueInSpecifiedUnits: Double
 }
 object SVGAngle {
   

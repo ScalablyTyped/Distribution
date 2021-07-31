@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateInputDeviceRequest extends StObject {
   
   /**
     * The settings that you want to apply to the input device.
     */
-  var HdDeviceSettings: js.UndefOr[InputDeviceConfigurableSettings] = js.native
+  var HdDeviceSettings: js.UndefOr[InputDeviceConfigurableSettings] = js.undefined
   
   /**
     * The unique ID of the input device. For example, hd-123456789abcdef.
     */
-  var InputDeviceId: string = js.native
+  var InputDeviceId: string
   
   /**
     * The name that you assigned to this input device (not the unique ID).
     */
-  var Name: js.UndefOr[string] = js.native
+  var Name: js.UndefOr[string] = js.undefined
 }
 object UpdateInputDeviceRequest {
   

@@ -2,10 +2,8 @@ package typings.nightwatch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChromePerfLoggingPrefs extends StObject {
   
   /**
@@ -13,23 +11,23 @@ trait ChromePerfLoggingPrefs extends StObject {
     * then once per second, DevTools will report how full the trace buffer is. If a report indicates the buffer usage is 100%,
     * a warning will be issued.
     */
-  var bufferUsageReportingInterval: js.UndefOr[Double] = js.native
+  var bufferUsageReportingInterval: js.UndefOr[Double] = js.undefined
   
   /**
     * Default: true. Whether or not to collect events from Network domain.
     */
-  var enableNetwork: js.UndefOr[Boolean] = js.native
+  var enableNetwork: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Default: true. Whether or not to collect events from Page domain.
     */
-  var enablePage: js.UndefOr[Boolean] = js.native
+  var enablePage: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A comma-separated string of Chrome tracing categories for which trace events should be collected.
     * An unspecified or empty string disables tracing.
     */
-  var traceCategories: js.UndefOr[String] = js.native
+  var traceCategories: js.UndefOr[String] = js.undefined
 }
 object ChromePerfLoggingPrefs {
   

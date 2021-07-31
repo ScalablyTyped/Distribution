@@ -3,16 +3,16 @@ package typings.baiduApp.swan
 import typings.baiduApp.baiduAppStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BluetoothAdapterStateData extends ErrMsgResponse {
+trait BluetoothAdapterStateData
+  extends StObject
+     with ErrMsgResponse {
   
   /**
     * 蓝牙适配器信息
     */
-  var adapterState: BluetoothAdapterState = js.native
+  var adapterState: BluetoothAdapterState
 }
 object BluetoothAdapterStateData {
   

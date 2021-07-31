@@ -4,12 +4,11 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeSchemeForPolygon
-  extends Object
+  extends StObject
+     with Object
      with SizeScheme {
   
   /**
@@ -17,21 +16,21 @@ trait SizeSchemeForPolygon
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
-  var background: SizeSchemeForPolygonBackground = js.native
+  var background: SizeSchemeForPolygonBackground
   
   /**
     * The scheme defining the symbology of the marker symbol used to represent polygon features by size.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
-  var marker: SizeSchemeForPoint = js.native
+  var marker: SizeSchemeForPoint
   
   /**
     * The opacity of the symbol.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-symbology-size.html#SizeSchemeForPolygon)
     */
-  var opacity: Double = js.native
+  var opacity: Double
 }
 object SizeSchemeForPolygon {
   

@@ -14,10 +14,13 @@ import typings.std.HTMLElement
 import typings.uifabricUtilities.irendercomponentMod.IRenderComponent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libKeytipsMod {
+  
+  @JSImport("office-ui-fabric-react/lib/Keytips", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/Keytips", "DATAKTP_ARIA_TARGET")
   @js.native
@@ -65,7 +68,7 @@ object libKeytipsMod {
   
   @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipData")
   @js.native
-  val KeytipData: FunctionComponent[IKeytipDataProps with IRenderComponent[js.Object]] = js.native
+  val KeytipData: FunctionComponent[IKeytipDataProps & IRenderComponent[js.Object]] = js.native
   
   object KeytipEvents {
     
@@ -148,48 +151,37 @@ object libKeytipsMod {
       *
       * @returns Singleton KeytipManager instance
       */
-    @JSImport("office-ui-fabric-react/lib/Keytips", "KeytipManager.getInstance")
-    @js.native
-    def getInstance(): typings.officeUiFabricReact.keytipManagerMod.KeytipManager = js.native
+    @scala.inline
+    def getInstance(): typings.officeUiFabricReact.keytipManagerMod.KeytipManager = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[typings.officeUiFabricReact.keytipManagerMod.KeytipManager]
   }
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "buildKeytipConfigMap")
-  @js.native
-  def buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap = js.native
+  @scala.inline
+  def buildKeytipConfigMap(config: IKeytipConfig): IKeytipConfigMap = ^.asInstanceOf[js.Dynamic].applyDynamic("buildKeytipConfigMap")(config.asInstanceOf[js.Any]).asInstanceOf[IKeytipConfigMap]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "constructKeytip")
-  @js.native
-  def constructKeytip(configMap: IKeytipConfigMap, parentSequence: js.Array[String], keytip: IKeytipConfigItem): Unit = js.native
+  @scala.inline
+  def constructKeytip(configMap: IKeytipConfigMap, parentSequence: js.Array[String], keytip: IKeytipConfigItem): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("constructKeytip")(configMap.asInstanceOf[js.Any], parentSequence.asInstanceOf[js.Any], keytip.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "getAriaDescribedBy")
-  @js.native
-  def getAriaDescribedBy(keySequences: js.Array[String]): String = js.native
+  @scala.inline
+  def getAriaDescribedBy(keySequences: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getAriaDescribedBy")(keySequences.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "ktpTargetFromId")
-  @js.native
-  def ktpTargetFromId(keytipId: String): String = js.native
+  @scala.inline
+  def ktpTargetFromId(keytipId: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ktpTargetFromId")(keytipId.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "ktpTargetFromSequences")
-  @js.native
-  def ktpTargetFromSequences(keySequences: js.Array[String]): String = js.native
+  @scala.inline
+  def ktpTargetFromSequences(keySequences: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ktpTargetFromSequences")(keySequences.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "mergeOverflows")
-  @js.native
-  def mergeOverflows(keySequences: js.Array[String], overflowKeySequences: js.Array[String]): js.Array[String] = js.native
+  @scala.inline
+  def mergeOverflows(keySequences: js.Array[String], overflowKeySequences: js.Array[String]): js.Array[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("mergeOverflows")(keySequences.asInstanceOf[js.Any], overflowKeySequences.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "sequencesToID")
-  @js.native
-  def sequencesToID(keySequences: js.Array[String]): String = js.native
+  @scala.inline
+  def sequencesToID(keySequences: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sequencesToID")(keySequences.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "transitionKeysAreEqual")
-  @js.native
-  def transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): Boolean = js.native
+  @scala.inline
+  def transitionKeysAreEqual(key1: IKeytipTransitionKey, key2: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysAreEqual")(key1.asInstanceOf[js.Any], key2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "transitionKeysContain")
-  @js.native
-  def transitionKeysContain(keys: js.Array[IKeytipTransitionKey], key: IKeytipTransitionKey): Boolean = js.native
+  @scala.inline
+  def transitionKeysContain(keys: js.Array[IKeytipTransitionKey], key: IKeytipTransitionKey): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("transitionKeysContain")(keys.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react/lib/Keytips", "useKeytipRef")
-  @js.native
-  def useKeytipRef[TElement /* <: HTMLElement */](options: KeytipDataOptions): Ref[TElement] = js.native
+  @scala.inline
+  def useKeytipRef[TElement /* <: HTMLElement */](options: KeytipDataOptions): Ref[TElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeytipRef")(options.asInstanceOf[js.Any]).asInstanceOf[Ref[TElement]]
 }

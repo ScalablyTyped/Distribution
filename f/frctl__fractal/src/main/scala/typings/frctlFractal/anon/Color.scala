@@ -2,25 +2,23 @@ package typings.frctlFractal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Color extends StObject {
   
-  var color: String | Null = js.native
+  var color: String | Null
   
-  var mode: String = js.native
+  var mode: String
   
-  var name: String = js.native
+  var name: String
   
-  var scope: String | Null = js.native
+  var scope: String | Null
 }
 object Color {
   
   @scala.inline
   def apply(mode: String, name: String): Color = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], color = null, scope = null)
     __obj.asInstanceOf[Color]
   }
   

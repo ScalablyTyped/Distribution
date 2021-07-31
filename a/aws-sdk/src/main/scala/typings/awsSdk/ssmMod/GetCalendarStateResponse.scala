@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetCalendarStateResponse extends StObject {
   
   /**
     * The time, as an ISO 8601 string, that you specified in your command. If you did not specify a time, GetCalendarState uses the current time.
     */
-  var AtTime: js.UndefOr[ISO8601String] = js.native
+  var AtTime: js.UndefOr[ISO8601String] = js.undefined
   
   /**
     * The time, as an ISO 8601 string, that the calendar state will change. If the current calendar state is OPEN, NextTransitionTime indicates when the calendar state changes to CLOSED, and vice-versa.
     */
-  var NextTransitionTime: js.UndefOr[ISO8601String] = js.native
+  var NextTransitionTime: js.UndefOr[ISO8601String] = js.undefined
   
   /**
     * The state of the calendar. An OPEN calendar indicates that actions are allowed to proceed, and a CLOSED calendar indicates that actions are not allowed to proceed.
     */
-  var State: js.UndefOr[CalendarState] = js.native
+  var State: js.UndefOr[CalendarState] = js.undefined
 }
 object GetCalendarStateResponse {
   

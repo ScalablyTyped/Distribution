@@ -2,29 +2,27 @@ package typings.voximplantWebsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   *    Chat room participant
   */
-@js.native
 trait ChatRoomParticipant extends StObject {
   
   /**
     * User id
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * User display name
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * True if the user is owner/admin of the room
     */
-  var owner: js.UndefOr[Boolean] = js.native
+  var owner: js.UndefOr[Boolean] = js.undefined
 }
 object ChatRoomParticipant {
   

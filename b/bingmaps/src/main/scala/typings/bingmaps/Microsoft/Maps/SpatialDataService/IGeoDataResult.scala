@@ -3,32 +3,30 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 import typings.bingmaps.Microsoft.Maps.Polygon
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoDataResult extends StObject {
   
   /** Copyright information for the returned boundary data. */
-  var Copyright: ICopyright = js.native
+  var Copyright: ICopyright
   
   /** A unique ID number associated with this entity. */
-  var EntityID: String = js.native
+  var EntityID: String
   
   /**
     * A collection of metadata information associated with the entity. The getEntityMetadata option of the request must be set
     * to true. Note, not all boundaries will return this metadata.
     */
-  var EntityMetadata: IMetadata = js.native
+  var EntityMetadata: IMetadata
   
   /** Information about the name of the boundary location. */
-  var Name: IName = js.native
+  var Name: IName
   
   /** A Polygon object that has been generated from the data in the Primitives property. */
-  var Polygons: js.Array[Polygon] = js.native
+  var Polygons: js.Array[Polygon]
   
   /** An array of objects that contain the polygon information for the boundary. */
-  var Primitives: js.Array[IGeoDataPrimitive] = js.native
+  var Primitives: js.Array[IGeoDataPrimitive]
 }
 object IGeoDataResult {
   

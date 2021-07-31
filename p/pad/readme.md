@@ -10,9 +10,9 @@ Left and right string padding
 | ------------------ | :-------------: |
 | Full name          | pad |
 | Keywords           | pad, string |
-| # releases         | 8 |
-| # dependents       | 305 |
-| # downloads        | 12255957 |
+| # releases         | 7 |
+| # dependents       | 309 |
+| # downloads        | 13862050 |
 | # stars            | 5 |
 
 ## Links

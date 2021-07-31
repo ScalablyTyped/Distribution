@@ -2,17 +2,15 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait hasLabels extends StObject {
   
-  def applyLabel(name: String): Unit = js.native
+  def applyLabel(name: String): Unit
   
-  def labels(): AdWordsSelector[Label] = js.native
+  def labels(): AdWordsSelector[Label]
   
-  def removeLabel(name: String): Unit = js.native
+  def removeLabel(name: String): Unit
 }
 object hasLabels {
   

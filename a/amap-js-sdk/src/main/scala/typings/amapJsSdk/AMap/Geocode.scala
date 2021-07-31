@@ -2,21 +2,19 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Geocode extends StObject {
   
-  var adcode: String = js.native
+  var adcode: String
   
-  var addressComponent: AddressComponent = js.native
+  var addressComponent: AddressComponent
   
-  var formattedAddress: String = js.native
+  var formattedAddress: String
   
-  var level: String = js.native
+  var level: String
   
-  var location: LngLat = js.native
+  var location: LngLat
 }
 object Geocode {
   

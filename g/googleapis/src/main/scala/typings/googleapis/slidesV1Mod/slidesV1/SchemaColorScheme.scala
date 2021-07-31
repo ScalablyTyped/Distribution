@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The palette of predefined colors for a page.
   */
-@js.native
 trait SchemaColorScheme extends StObject {
   
   /**
     * The ThemeColorType and corresponding concrete color pairs.
     */
-  var colors: js.UndefOr[js.Array[SchemaThemeColorPair]] = js.native
+  var colors: js.UndefOr[js.Array[SchemaThemeColorPair]] = js.undefined
 }
 object SchemaColorScheme {
   

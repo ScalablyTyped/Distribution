@@ -2,31 +2,29 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelBan extends StObject {
   
   /**
     * The ARN of the channel from which a member is being banned.
     */
-  var ChannelArn: js.UndefOr[ChimeArn] = js.native
+  var ChannelArn: js.UndefOr[ChimeArn] = js.undefined
   
   /**
     * The parameter of the action.
     */
-  var CreatedBy: js.UndefOr[Identity] = js.native
+  var CreatedBy: js.UndefOr[Identity] = js.undefined
   
   /**
     * The time at which the ban was created.
     */
-  var CreatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var CreatedTimestamp: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The member being banned from the channel.
     */
-  var Member: js.UndefOr[Identity] = js.native
+  var Member: js.UndefOr[Identity] = js.undefined
 }
 object ChannelBan {
   

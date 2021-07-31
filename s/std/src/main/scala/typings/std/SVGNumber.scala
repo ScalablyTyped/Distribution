@@ -2,14 +2,12 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Corresponds to the <number> basic data type. */
-@js.native
 trait SVGNumber extends StObject {
   
-  var value: Double = js.native
+  var value: Double
 }
 object SVGNumber {
   

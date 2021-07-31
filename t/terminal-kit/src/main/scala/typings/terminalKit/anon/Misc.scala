@@ -2,23 +2,21 @@ package typings.terminalKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Misc extends StObject {
   
-  var attr: Double = js.native
+  var attr: Double
   
-  var misc: js.Any = js.native
+  var misc: js.Any
   
-  var offset: Double = js.native
+  var offset: Double
   
-  var text: String = js.native
+  var text: String
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object Misc {
   

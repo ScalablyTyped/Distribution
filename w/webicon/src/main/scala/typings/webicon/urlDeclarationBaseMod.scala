@@ -2,23 +2,21 @@ package typings.webicon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object urlDeclarationBaseMod {
   
-  @js.native
   trait UrlDeclarationBase extends StObject {
     
     /**
       * The `GET`-variables of the url.
       */
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
     
     /**
       * The actual url.
       */
-    var url: js.UndefOr[js.Any] = js.native
+    var url: js.UndefOr[js.Any] = js.undefined
   }
   object UrlDeclarationBase {
     

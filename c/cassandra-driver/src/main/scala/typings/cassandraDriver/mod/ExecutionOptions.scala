@@ -8,55 +8,53 @@ import typings.cassandraDriver.typesMod.types.consistencies
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionOptions extends StObject {
   
-  def getCaptureStackTrace(): Boolean = js.native
+  def getCaptureStackTrace(): Boolean
   
-  def getConsistency(): consistencies = js.native
+  def getConsistency(): consistencies
   
-  def getCustomPayload(): StringDictionary[js.Any] = js.native
+  def getCustomPayload(): StringDictionary[js.Any]
   
-  def getFetchSize(): Double = js.native
+  def getFetchSize(): Double
   
-  def getFixedHost(): Host = js.native
+  def getFixedHost(): Host
   
-  def getHints(): js.Array[js.Array[String] | String] = js.native
+  def getHints(): js.Array[js.Array[String] | String]
   
-  def getKeyspace(): String = js.native
+  def getKeyspace(): String
   
-  def getLoadBalancingPolicy(): LoadBalancingPolicy = js.native
+  def getLoadBalancingPolicy(): LoadBalancingPolicy
   
-  def getPageState(): Buffer = js.native
+  def getPageState(): Buffer
   
-  def getRawQueryOptions(): QueryOptions = js.native
+  def getRawQueryOptions(): QueryOptions
   
-  def getReadTimeout(): Double = js.native
+  def getReadTimeout(): Double
   
-  def getRetryPolicy(): RetryPolicy = js.native
+  def getRetryPolicy(): RetryPolicy
   
-  def getRoutingKey(): Buffer | js.Array[Buffer] = js.native
+  def getRoutingKey(): Buffer | js.Array[Buffer]
   
-  def getSerialConsistency(): consistencies = js.native
+  def getSerialConsistency(): consistencies
   
-  def getTimestamp(): js.UndefOr[Double | Long | Null] = js.native
+  def getTimestamp(): js.UndefOr[Double | Long | Null]
   
-  def isAutoPage(): Boolean = js.native
+  def isAutoPage(): Boolean
   
-  def isBatchCounter(): Boolean = js.native
+  def isBatchCounter(): Boolean
   
-  def isBatchLogged(): Boolean = js.native
+  def isBatchLogged(): Boolean
   
-  def isIdempotent(): Boolean = js.native
+  def isIdempotent(): Boolean
   
-  def isPrepared(): Boolean = js.native
+  def isPrepared(): Boolean
   
-  def isQueryTracing(): Boolean = js.native
+  def isQueryTracing(): Boolean
   
-  def setHints(hints: js.Array[String]): Unit = js.native
+  def setHints(hints: js.Array[String]): Unit
 }
 object ExecutionOptions {
   

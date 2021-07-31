@@ -2,50 +2,48 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LineFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var BackColor: ColorFormat = js.native
+  var BackColor: ColorFormat
   
-  var BeginArrowheadLength: MsoArrowheadLength = js.native
+  var BeginArrowheadLength: MsoArrowheadLength
   
-  var BeginArrowheadStyle: MsoArrowheadStyle = js.native
+  var BeginArrowheadStyle: MsoArrowheadStyle
   
-  var BeginArrowheadWidth: MsoArrowheadWidth = js.native
+  var BeginArrowheadWidth: MsoArrowheadWidth
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DashStyle: MsoLineDashStyle = js.native
+  var DashStyle: MsoLineDashStyle
   
-  var EndArrowheadLength: MsoArrowheadLength = js.native
+  var EndArrowheadLength: MsoArrowheadLength
   
-  var EndArrowheadStyle: MsoArrowheadStyle = js.native
+  var EndArrowheadStyle: MsoArrowheadStyle
   
-  var EndArrowheadWidth: MsoArrowheadWidth = js.native
+  var EndArrowheadWidth: MsoArrowheadWidth
   
-  var ForeColor: ColorFormat = js.native
+  var ForeColor: ColorFormat
   
-  var InsetPen: MsoTriState = js.native
+  var InsetPen: MsoTriState
   
   @JSName("Office.LineFormat_typekey")
-  var OfficeDotLineFormat_typekey: LineFormat = js.native
+  var OfficeDotLineFormat_typekey: LineFormat
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Pattern: MsoPatternType = js.native
+  var Pattern: MsoPatternType
   
-  var Style: MsoLineStyle = js.native
+  var Style: MsoLineStyle
   
-  var Transparency: Double = js.native
+  var Transparency: Double
   
-  var Visible: MsoTriState = js.native
+  var Visible: MsoTriState
   
-  var Weight: Double = js.native
+  var Weight: Double
 }
 object LineFormat {
   

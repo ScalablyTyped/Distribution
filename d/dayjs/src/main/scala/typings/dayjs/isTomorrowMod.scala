@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.dayjs.esmMod.PluginFunc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isTomorrowMod extends Shortcut {
@@ -21,10 +20,9 @@ object isTomorrowMod extends Shortcut {
   /* augmented module */
   object dayjsEsmAugmentingMod {
     
-    @js.native
     trait Dayjs extends StObject {
       
-      def isTomorrow(): Boolean = js.native
+      def isTomorrow(): Boolean
     }
     object Dayjs {
       

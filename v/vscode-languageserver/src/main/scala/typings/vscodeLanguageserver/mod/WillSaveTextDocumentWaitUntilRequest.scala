@@ -5,7 +5,6 @@ import typings.vscodeLanguageserverProtocol.messagesMod.ProtocolRequestType
 import typings.vscodeLanguageserverProtocol.protocolMod.WillSaveTextDocumentParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object WillSaveTextDocumentWaitUntilRequest {

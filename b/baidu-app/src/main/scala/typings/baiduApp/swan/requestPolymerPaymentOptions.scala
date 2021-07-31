@@ -2,16 +2,15 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * 百度收银台。
   * @version 1.8.5
   */
-@js.native
 trait requestPolymerPaymentOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   // 订单信息
   /**
@@ -20,13 +19,13 @@ trait requestPolymerPaymentOptions
     * BDWallet    百度钱包
     * WeChat    微信支付
     */
-  var bannedChannels: js.UndefOr[js.Array[String]] = js.native
+  var bannedChannels: js.UndefOr[js.Array[String]] = js.undefined
   
-  var orderInfo: orderInfoOptions = js.native
+  var orderInfo: orderInfoOptions
   
   // 需要隐藏的支付方式
   @JSName("success")
-  var success_requestPolymerPaymentOptions: js.UndefOr[js.Function1[/* res */ typings.baiduApp.anon.AuthSetting, Unit]] = js.native
+  var success_requestPolymerPaymentOptions: js.UndefOr[js.Function1[/* res */ typings.baiduApp.anon.AuthSetting, Unit]] = js.undefined
 }
 object requestPolymerPaymentOptions {
   

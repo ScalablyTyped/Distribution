@@ -14,31 +14,30 @@ import typings.astTypes.kindsMod.TSQualifiedNameKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.Declaration, 'type'> */
-@js.native
 trait TSModuleDeclaration
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with DeclarationKind
      with NodeKind
      with PrintableKind
      with StatementKind {
   
-  var body: js.UndefOr[TSModuleBlockKind | TSModuleDeclarationKind | Null] = js.native
+  var body: js.UndefOr[TSModuleBlockKind | TSModuleDeclarationKind | Null] = js.undefined
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var declare: js.UndefOr[Boolean] = js.native
+  var declare: js.UndefOr[Boolean] = js.undefined
   
-  var global: js.UndefOr[Boolean] = js.native
+  var global: js.UndefOr[Boolean] = js.undefined
   
-  var id: StringLiteralKind | IdentifierKind | TSQualifiedNameKind = js.native
+  var id: StringLiteralKind | IdentifierKind | TSQualifiedNameKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.TSModuleDeclaration = js.native
+  var `type`: typings.astTypes.astTypesStrings.TSModuleDeclaration
 }
 object TSModuleDeclaration {
   

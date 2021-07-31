@@ -2,7 +2,6 @@ package typings.he
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,8 @@ object mod {
   @scala.inline
   def encode_=(x: Encode_): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("encode")(x.asInstanceOf[js.Any])
   
-  @JSImport("he", "escape")
-  @js.native
-  def escape(text: String): String = js.native
+  @scala.inline
+  def escape(text: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escape")(text.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("he", "unescape")
   @js.native
@@ -39,7 +37,6 @@ object mod {
   @scala.inline
   def version_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("version")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait DecodeOptions extends StObject {
     
     /**
@@ -49,7 +46,7 @@ object mod {
       * character references in attribute values — set this option to true to
       * treat the input string as if it were used as an attribute value.
       */
-    var isAttributeValue: js.UndefOr[Boolean] = js.native
+    var isAttributeValue: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default value for the strict option is false. This means that
@@ -59,7 +56,7 @@ object mod {
       * option makes it possible to use he as part of HTML parsers and HTML
       * validators.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
   }
   object DecodeOptions {
     
@@ -102,7 +99,6 @@ object mod {
     var options: DecodeOptions = js.native
   }
   
-  @js.native
   trait EncodeOptions extends StObject {
     
     /**
@@ -112,7 +108,7 @@ object mod {
       * be encoded. If the encodeEverything option is set to true, this option
       * will be ignored.
       */
-    var allowUnsafeSymbols: js.UndefOr[Boolean] = js.native
+    var allowUnsafeSymbols: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default value for the decimal option is false. If the option is
@@ -124,7 +120,7 @@ object mod {
       * decimal escapes. HTML entities without a named reference are encoded
       * using decimal escapes.
       */
-    var decimal: js.UndefOr[Boolean] = js.native
+    var decimal: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default value for the encodeEverything option is false. This means
@@ -134,7 +130,7 @@ object mod {
       * allowUnsafeSymbols (i.e. setting the latter to true in such a case has
       * no effect).
       */
-    var encodeEverything: js.UndefOr[Boolean] = js.native
+    var encodeEverything: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default value for the strict option is false. This means that
@@ -143,7 +139,7 @@ object mod {
       * invalid HTML is encountered, set the strict option to true. This option
       * makes it possible to use he as part of HTML parsers and HTML validators.
       */
-    var strict: js.UndefOr[Boolean] = js.native
+    var strict: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The default value for the useNamedReferences option is false. This
@@ -151,7 +147,7 @@ object mod {
       * (e.g. &copy;) in the output — hexadecimal escapes (e.g. &#xA9;) will
       * be used instead. Set it to true to enable the use of named references.
       */
-    var useNamedReferences: js.UndefOr[Boolean] = js.native
+    var useNamedReferences: js.UndefOr[Boolean] = js.undefined
   }
   object EncodeOptions {
     

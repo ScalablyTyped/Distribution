@@ -6,7 +6,6 @@ import typings.reactNative.mod.TextProps
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,61 +15,60 @@ object mod {
   class default ()
     extends Component[AppIntroProps, js.Object, js.Any]
   
-  @js.native
   trait AppIntroProps extends StObject {
     
-    var activeDotStyle: js.UndefOr[ViewStyle] = js.native
+    var activeDotStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var bottomButton: js.UndefOr[Boolean] = js.native
+    var bottomButton: js.UndefOr[Boolean] = js.undefined
     
-    var buttonStyle: js.UndefOr[ViewStyle] = js.native
+    var buttonStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var buttonTextStyle: js.UndefOr[TextProps] = js.native
+    var buttonTextStyle: js.UndefOr[TextProps] = js.undefined
     
-    var doneLabel: js.UndefOr[String] = js.native
+    var doneLabel: js.UndefOr[String] = js.undefined
     
-    var dotStyle: js.UndefOr[ViewStyle] = js.native
+    var dotStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var hidePagination: js.UndefOr[Boolean] = js.native
+    var hidePagination: js.UndefOr[Boolean] = js.undefined
     
-    var nextLabel: js.UndefOr[String] = js.native
+    var nextLabel: js.UndefOr[String] = js.undefined
     
-    var onDone: js.UndefOr[js.Function0[Unit]] = js.native
+    var onDone: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSkip: js.UndefOr[js.Function0[Unit]] = js.native
+    var onSkip: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSlideChange: js.UndefOr[js.Function2[/* index */ Double, /* lastIndex */ Double, Unit]] = js.native
+    var onSlideChange: js.UndefOr[js.Function2[/* index */ Double, /* lastIndex */ Double, Unit]] = js.undefined
     
-    var paginationStyle: js.UndefOr[ViewStyle] = js.native
+    var paginationStyle: js.UndefOr[ViewStyle] = js.undefined
     
-    var prevLabel: js.UndefOr[String] = js.native
+    var prevLabel: js.UndefOr[String] = js.undefined
     
-    var renderDoneButton: js.UndefOr[js.Function0[Unit]] = js.native
+    var renderDoneButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderItem: js.UndefOr[js.Function1[/* item */ js.Any, ReactElement]] = js.native
+    var renderItem: js.UndefOr[js.Function1[/* item */ js.Any, ReactElement]] = js.undefined
     
-    var renderNextButton: js.UndefOr[js.Function0[Unit]] = js.native
+    var renderNextButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderPrevButton: js.UndefOr[js.Function0[Unit]] = js.native
+    var renderPrevButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderSkipButton: js.UndefOr[js.Function0[Unit]] = js.native
+    var renderSkipButton: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var showDoneButton: js.UndefOr[Boolean] = js.native
+    var showDoneButton: js.UndefOr[Boolean] = js.undefined
     
-    var showNextButton: js.UndefOr[Boolean] = js.native
+    var showNextButton: js.UndefOr[Boolean] = js.undefined
     
-    var showPrevButton: js.UndefOr[Boolean] = js.native
+    var showPrevButton: js.UndefOr[Boolean] = js.undefined
     
-    var showSkipButton: js.UndefOr[Boolean] = js.native
+    var showSkipButton: js.UndefOr[Boolean] = js.undefined
     
-    var skipLabel: js.UndefOr[String] = js.native
+    var skipLabel: js.UndefOr[String] = js.undefined
     
-    var slides: js.Array[_] = js.native
+    var slides: js.Array[js.Any]
   }
   object AppIntroProps {
     
     @scala.inline
-    def apply(slides: js.Array[_]): AppIntroProps = {
+    def apply(slides: js.Array[js.Any]): AppIntroProps = {
       val __obj = js.Dynamic.literal(slides = slides.asInstanceOf[js.Any])
       __obj.asInstanceOf[AppIntroProps]
     }
@@ -217,7 +215,7 @@ object mod {
       def setSkipLabelUndefined: Self = StObject.set(x, "skipLabel", js.undefined)
       
       @scala.inline
-      def setSlides(value: js.Array[_]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
+      def setSlides(value: js.Array[js.Any]): Self = StObject.set(x, "slides", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSlidesVarargs(value: js.Any*): Self = StObject.set(x, "slides", js.Array(value :_*))

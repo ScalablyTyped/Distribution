@@ -2,13 +2,13 @@ package typings.rollup.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RollupWatchOptions extends InputOptions {
+trait RollupWatchOptions
+  extends StObject
+     with InputOptions {
   
-  var output: js.UndefOr[OutputOptions | js.Array[OutputOptions]] = js.native
+  var output: js.UndefOr[OutputOptions | js.Array[OutputOptions]] = js.undefined
 }
 object RollupWatchOptions {
   

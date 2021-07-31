@@ -9,30 +9,28 @@ import typings.grommet.utilsMod.ColorType
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined grommet.grommet/themes/base.ButtonKindType & {  default :grommet.grommet/themes/base.ButtonKindType | undefined,   primary :grommet.grommet/themes/base.ButtonKindType | undefined,   secondary :grommet.grommet/themes/base.ButtonKindType | undefined} */
-@js.native
 trait ButtonKindTypedefaultButt extends StObject {
   
-  var default: js.UndefOr[ButtonKindType] = js.native
+  var default: js.UndefOr[ButtonKindType] = js.undefined
   
-  var background: js.UndefOr[BackgroundType] = js.native
+  var background: js.UndefOr[BackgroundType] = js.undefined
   
-  var border: js.UndefOr[ColorWidth | Boolean] = js.native
+  var border: js.UndefOr[ColorWidth | Boolean] = js.undefined
   
-  var color: js.UndefOr[ColorType] = js.native
+  var color: js.UndefOr[ColorType] = js.undefined
   
-  var extend: js.UndefOr[ExtendType[Record[String, _]]] = js.native
+  var extend: js.UndefOr[ExtendType[Record[String, js.Any]]] = js.undefined
   
-  var font: js.UndefOr[`10`] = js.native
+  var font: js.UndefOr[`10`] = js.undefined
   
-  var padding: js.UndefOr[HorizontalVertical] = js.native
+  var padding: js.UndefOr[HorizontalVertical] = js.undefined
   
-  var primary: js.UndefOr[ButtonKindType] = js.native
+  var primary: js.UndefOr[ButtonKindType] = js.undefined
   
-  var secondary: js.UndefOr[ButtonKindType] = js.native
+  var secondary: js.UndefOr[ButtonKindType] = js.undefined
 }
 object ButtonKindTypedefaultButt {
   
@@ -70,10 +68,10 @@ object ButtonKindTypedefaultButt {
     def setDefaultUndefined: Self = StObject.set(x, "default", js.undefined)
     
     @scala.inline
-    def setExtend(value: ExtendType[Record[String, _]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
+    def setExtend(value: ExtendType[Record[String, js.Any]]): Self = StObject.set(x, "extend", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, _]] => ExtendValue[Record[String, _]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
+    def setExtendFunction1(value: /* props */ ExtendProps[Record[String, js.Any]] => ExtendValue[Record[String, js.Any]]): Self = StObject.set(x, "extend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setExtendUndefined: Self = StObject.set(x, "extend", js.undefined)

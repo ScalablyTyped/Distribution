@@ -2,15 +2,13 @@ package typings.bmapgl.BMapGL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocalSearchSearchOptions extends StObject {
   
-  var customData: js.Any = js.native
+  var customData: js.Any
   
-  var forceLocal: Boolean = js.native
+  var forceLocal: Boolean
 }
 object LocalSearchSearchOptions {
   

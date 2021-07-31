@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListResourceDefinitionVersionsRequest extends StObject {
   
   /**
     * The maximum number of results to be returned per request.
     */
-  var MaxResults: js.UndefOr[string] = js.native
+  var MaxResults: js.UndefOr[string] = js.undefined
   
   /**
     * The token for the next set of results, or ''null'' if there are no additional results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the resource definition.
     */
-  var ResourceDefinitionId: string = js.native
+  var ResourceDefinitionId: string
 }
 object ListResourceDefinitionVersionsRequest {
   

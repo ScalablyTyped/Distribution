@@ -2,20 +2,18 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Database
-@js.native
 trait DatabaseUser extends StObject {
   
-  var active: js.UndefOr[Boolean] = js.native
+  var active: js.UndefOr[Boolean] = js.undefined
   
-  var extra: js.UndefOr[js.Object] = js.native
+  var extra: js.UndefOr[js.Object] = js.undefined
   
-  var passwd: js.UndefOr[String] = js.native
+  var passwd: js.UndefOr[String] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object DatabaseUser {
   

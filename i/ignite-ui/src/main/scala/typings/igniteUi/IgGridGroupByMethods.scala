@@ -2,7 +2,6 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -68,8 +67,8 @@ trait IgGridGroupByMethods extends StObject {
     * @param colKey key of the column for which grouping will be applied.
     * @param idval value of the column by which grouping will be applied.
     */
-  def getGroupedData(data: js.Array[_], colKey: String): js.Array[_] = js.native
-  def getGroupedData(data: js.Array[_], colKey: String, idval: String): js.Array[_] = js.native
+  def getGroupedData(data: js.Array[js.Any], colKey: String): js.Array[js.Any] = js.native
+  def getGroupedData(data: js.Array[js.Any], colKey: String, idval: String): js.Array[js.Any] = js.native
   
   /**
     * Groups by a column
@@ -79,9 +78,9 @@ trait IgGridGroupByMethods extends StObject {
     * @param sortingDirection if not set it is taken from option defaultSortingDirection
     */
   def groupByColumn(key: String): Unit = js.native
-  def groupByColumn(key: String, layout: js.UndefOr[scala.Nothing], sortingDirection: js.Object): Unit = js.native
   def groupByColumn(key: String, layout: String): Unit = js.native
   def groupByColumn(key: String, layout: String, sortingDirection: js.Object): Unit = js.native
+  def groupByColumn(key: String, layout: Unit, sortingDirection: js.Object): Unit = js.native
   
   /**
     * Adds a column to the group by columns list, executes the group by operation and updates the view.

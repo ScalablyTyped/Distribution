@@ -4,17 +4,17 @@ import typings.screeps.EVENT_OBJECT_DESTROYED
 import typings.screeps.EventItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Event extends EventItem {
+trait Event
+  extends StObject
+     with EventItem {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_OBJECT_DESTROYED] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_OBJECT_DESTROYED] */ js.Any
   
-  var event: EVENT_OBJECT_DESTROYED = js.native
+  var event: EVENT_OBJECT_DESTROYED
   
-  var objectId: String = js.native
+  var objectId: String
 }
 object Event {
   

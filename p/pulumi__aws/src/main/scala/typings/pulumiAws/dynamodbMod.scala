@@ -17,10 +17,13 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dynamodbMod {
+  
+  @JSImport("@pulumi/aws/dynamodb", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@pulumi/aws/dynamodb", "GlobalTable")
   @js.native
@@ -39,6 +42,10 @@ object dynamodbMod {
   /* static members */
   object GlobalTable {
     
+    @JSImport("@pulumi/aws/dynamodb", "GlobalTable")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GlobalTable resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,26 +55,21 @@ object dynamodbMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dynamodb", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.globalTableMod.GlobalTable = js.native
-    @JSImport("@pulumi/aws/dynamodb", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.globalTableMod.GlobalTable = js.native
-    @JSImport("@pulumi/aws/dynamodb", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GlobalTableState): typings.pulumiAws.globalTableMod.GlobalTable = js.native
-    @JSImport("@pulumi/aws/dynamodb", "GlobalTable.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GlobalTableState, opts: CustomResourceOptions): typings.pulumiAws.globalTableMod.GlobalTable = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.globalTableMod.GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalTableMod.GlobalTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.globalTableMod.GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalTableMod.GlobalTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GlobalTableState): typings.pulumiAws.globalTableMod.GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalTableMod.GlobalTable]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GlobalTableState, opts: CustomResourceOptions): typings.pulumiAws.globalTableMod.GlobalTable = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.globalTableMod.GlobalTable]
     
     /**
       * Returns true if the given object is an instance of GlobalTable.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dynamodb", "GlobalTable.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/globalTable.GlobalTable */ Boolean]
   }
   
   @JSImport("@pulumi/aws/dynamodb", "Table")
@@ -87,6 +89,10 @@ object dynamodbMod {
   /* static members */
   object Table {
     
+    @JSImport("@pulumi/aws/dynamodb", "Table")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Table resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -96,26 +102,21 @@ object dynamodbMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dynamodb", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.tableMod.Table = js.native
-    @JSImport("@pulumi/aws/dynamodb", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.tableMod.Table = js.native
-    @JSImport("@pulumi/aws/dynamodb", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableState): typings.pulumiAws.tableMod.Table = js.native
-    @JSImport("@pulumi/aws/dynamodb", "Table.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): typings.pulumiAws.tableMod.Table = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.tableMod.Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableMod.Table]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.tableMod.Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableMod.Table]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableState): typings.pulumiAws.tableMod.Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableMod.Table]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableState, opts: CustomResourceOptions): typings.pulumiAws.tableMod.Table = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableMod.Table]
     
     /**
       * Returns true if the given object is an instance of Table.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dynamodb", "Table.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/table.Table */ Boolean]
   }
   
   @JSImport("@pulumi/aws/dynamodb", "TableEventSubscription")
@@ -154,6 +155,10 @@ object dynamodbMod {
   /* static members */
   object TableItem {
     
+    @JSImport("@pulumi/aws/dynamodb", "TableItem")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing TableItem resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -163,34 +168,27 @@ object dynamodbMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dynamodb", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiAws.tableItemMod.TableItem = js.native
-    @JSImport("@pulumi/aws/dynamodb", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.tableItemMod.TableItem = js.native
-    @JSImport("@pulumi/aws/dynamodb", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableItemState): typings.pulumiAws.tableItemMod.TableItem = js.native
-    @JSImport("@pulumi/aws/dynamodb", "TableItem.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: TableItemState, opts: CustomResourceOptions): typings.pulumiAws.tableItemMod.TableItem = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiAws.tableItemMod.TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableItemMod.TableItem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.tableItemMod.TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableItemMod.TableItem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableItemState): typings.pulumiAws.tableItemMod.TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableItemMod.TableItem]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: TableItemState, opts: CustomResourceOptions): typings.pulumiAws.tableItemMod.TableItem = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.tableItemMod.TableItem]
     
     /**
       * Returns true if the given object is an instance of TableItem.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dynamodb", "TableItem.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dynamodb/tableItem.TableItem */ Boolean]
   }
   
-  @JSImport("@pulumi/aws/dynamodb", "getTable")
-  @js.native
-  def getTable(args: GetTableArgs): js.Promise[GetTableResult] = js.native
-  @JSImport("@pulumi/aws/dynamodb", "getTable")
-  @js.native
-  def getTable(args: GetTableArgs, opts: InvokeOptions): js.Promise[GetTableResult] = js.native
+  @scala.inline
+  def getTable(args: GetTableArgs): js.Promise[GetTableResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetTableResult]]
+  @scala.inline
+  def getTable(args: GetTableArgs, opts: InvokeOptions): js.Promise[GetTableResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getTable")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetTableResult]]
   
   /* augmented module */
   object pulumiAwsDynamodbTableAugmentingMod {

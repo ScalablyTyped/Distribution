@@ -4,15 +4,15 @@ import typings.std.HTMLElement
 import typings.std.HTMLFrameElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a modal dialog */
-@js.native
-trait ModalDialog extends Dialog {
+trait ModalDialog
+  extends StObject
+     with Dialog {
   
   /** Closes the dialog using the specified dialog result. */
-  def close(dialogResult: DialogResult): Unit = js.native
+  def close(dialogResult: DialogResult): Unit
 }
 object ModalDialog {
   

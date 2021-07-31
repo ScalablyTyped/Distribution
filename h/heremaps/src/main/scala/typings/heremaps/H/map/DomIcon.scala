@@ -3,13 +3,11 @@ package typings.heremaps.H.map
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A visual representation of the H.map.DomMarker.
   */
-@js.native
 trait DomIcon extends StObject
 object DomIcon {
   
@@ -20,12 +18,11 @@ object DomIcon {
     * @property onDetach {function(Element, H.map.DomIcon, H.map.DomMarker)=} - A callback which is invoked after a clone of the icon's element is removed from the map.
     * This callback can be used to clean up the clone.
     */
-  @js.native
   trait Options extends StObject {
     
-    var onAttach: js.UndefOr[js.Function3[/* el */ Element, /* icon */ DomIcon, /* marker */ DomMarker, Unit]] = js.native
+    var onAttach: js.UndefOr[js.Function3[/* el */ Element, /* icon */ DomIcon, /* marker */ DomMarker, Unit]] = js.undefined
     
-    var onDetach: js.UndefOr[js.Function3[/* el */ Element, /* icon */ DomIcon, /* marker */ DomMarker, Unit]] = js.native
+    var onDetach: js.UndefOr[js.Function3[/* el */ Element, /* icon */ DomIcon, /* marker */ DomMarker, Unit]] = js.undefined
   }
   object Options {
     

@@ -5,31 +5,29 @@ import typings.reactNativeNavigation.reactNativeNavigationStrings.destructive
 import typings.reactNativeNavigation.reactNativeNavigationStrings.selected
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsPreviewAction extends StObject {
   
   /**
     * Subactions that will be shown when this action is pressed.
     */
-  var actions: js.UndefOr[js.Array[OptionsPreviewAction]] = js.native
+  var actions: js.UndefOr[js.Array[OptionsPreviewAction]] = js.undefined
   
   /**
     * Reference ID to get callbacks from
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Action style
     */
-  var style: js.UndefOr[default | selected | destructive] = js.native
+  var style: js.UndefOr[default | selected | destructive] = js.undefined
   
   /**
     * Action text
     */
-  var title: String = js.native
+  var title: String
 }
 object OptionsPreviewAction {
   

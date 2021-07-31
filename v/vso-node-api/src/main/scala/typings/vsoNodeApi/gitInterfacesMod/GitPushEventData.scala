@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPushEventData extends StObject {
   
-  var afterId: String = js.native
+  var afterId: String
   
-  var beforeId: String = js.native
+  var beforeId: String
   
-  var branch: String = js.native
+  var branch: String
   
-  var commits: js.Array[GitCommit] = js.native
+  var commits: js.Array[GitCommit]
   
-  var repository: GitRepository = js.native
+  var repository: GitRepository
 }
 object GitPushEventData {
   

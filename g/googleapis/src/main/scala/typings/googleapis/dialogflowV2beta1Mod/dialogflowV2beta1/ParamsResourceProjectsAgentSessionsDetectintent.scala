@@ -6,21 +6,21 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsAgentSessionsDetectintent extends StandardParameters {
+trait ParamsResourceProjectsAgentSessionsDetectintent
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1DetectIntentRequest] = js.native
+  var requestBody: js.UndefOr[SchemaGoogleCloudDialogflowV2beta1DetectIntentRequest] = js.undefined
   
   /**
     * Required. The name of the session this query is sent to. Format:
@@ -33,7 +33,7 @@ trait ParamsResourceProjectsAgentSessionsDetectintent extends StandardParameters
     * session identifiers (preferably hashed). The length of the `Session ID`
     * and `User ID` must not exceed 36 characters.
     */
-  var session: js.UndefOr[String] = js.native
+  var session: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceProjectsAgentSessionsDetectintent {
   

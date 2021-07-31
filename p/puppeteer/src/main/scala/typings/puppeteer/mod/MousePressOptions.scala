@@ -2,23 +2,21 @@ package typings.puppeteer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MousePressOptions extends StObject {
   
   /**
     * left, right, or middle.
     * @default left
     */
-  var button: js.UndefOr[MouseButtons] = js.native
+  var button: js.UndefOr[MouseButtons] = js.undefined
   
   /**
     * The number of clicks.
     * @default 1
     */
-  var clickCount: js.UndefOr[Double] = js.native
+  var clickCount: js.UndefOr[Double] = js.undefined
 }
 object MousePressOptions {
   

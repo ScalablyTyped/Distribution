@@ -3,15 +3,22 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchMod {
   
   @JSImport("carbon-components/components/search/search", JSImport.Default)
   @js.native
-  class default protected () extends Search {
+  class default protected ()
+    extends StObject
+       with Search {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def showClear(value: js.Any, icon: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def toggleLayout(element: js.Any): Unit = js.native
   }
   object default {
     
@@ -28,12 +35,11 @@ object searchMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait Search extends StObject {
+  - Dropped any */ trait Search extends StObject {
     
-    def showClear(value: js.Any, icon: js.Any): Unit = js.native
+    def showClear(value: js.Any, icon: js.Any): Unit
     
-    def toggleLayout(element: js.Any): Unit = js.native
+    def toggleLayout(element: js.Any): Unit
   }
   object Search {
     

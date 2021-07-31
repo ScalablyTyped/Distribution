@@ -4,15 +4,13 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.IntegerParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sn extends StObject {
   
-  var sn: IntegerParam = js.native
+  var sn: IntegerParam
   
-  var time: StringParam = js.native
+  var time: StringParam
 }
 object Sn {
   

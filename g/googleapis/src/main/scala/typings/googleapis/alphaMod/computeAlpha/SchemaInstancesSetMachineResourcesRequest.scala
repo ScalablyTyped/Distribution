@@ -2,17 +2,15 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstancesSetMachineResourcesRequest extends StObject {
   
   /**
     * A list of the type and count of accelerator cards attached to the
     * instance.
     */
-  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.native
+  var guestAccelerators: js.UndefOr[js.Array[SchemaAcceleratorConfig]] = js.undefined
 }
 object SchemaInstancesSetMachineResourcesRequest {
   

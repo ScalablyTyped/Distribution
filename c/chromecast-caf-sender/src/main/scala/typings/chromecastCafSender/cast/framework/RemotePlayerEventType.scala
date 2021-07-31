@@ -2,7 +2,6 @@ package typings.chromecastCafSender.cast.framework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,59 +11,97 @@ sealed trait RemotePlayerEventType extends StObject
 object RemotePlayerEventType extends StObject {
   
   @js.native
-  sealed trait ANY_CHANGE extends RemotePlayerEventType
+  sealed trait ANY_CHANGE
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait CAN_CONTROL_VOLUME_CHANGED extends RemotePlayerEventType
+  sealed trait CAN_CONTROL_VOLUME_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait CAN_PAUSE_CHANGED extends RemotePlayerEventType
+  sealed trait CAN_PAUSE_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait CAN_SEEK_CHANGED extends RemotePlayerEventType
+  sealed trait CAN_SEEK_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait CURRENT_TIME_CHANGED extends RemotePlayerEventType
+  sealed trait CURRENT_TIME_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait DISPLAY_NAME_CHANGED extends RemotePlayerEventType
+  sealed trait DISPLAY_NAME_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait DISPLAY_STATUS_CHANGED extends RemotePlayerEventType
+  sealed trait DISPLAY_STATUS_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait DURATION_CHANGED extends RemotePlayerEventType
+  sealed trait DURATION_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait IMAGE_URL_CHANGED extends RemotePlayerEventType
+  sealed trait IMAGE_URL_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait IS_CONNECTED_CHANGED extends RemotePlayerEventType
+  sealed trait IS_CONNECTED_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait IS_MEDIA_LOADED_CHANGED extends RemotePlayerEventType
+  sealed trait IS_MEDIA_LOADED_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait IS_MUTED_CHANGED extends RemotePlayerEventType
+  sealed trait IS_MUTED_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait IS_PAUSED_CHANGED extends RemotePlayerEventType
+  sealed trait IS_PAUSED_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait LIVE_SEEKABLE_RANGE_CHANGED extends RemotePlayerEventType
+  sealed trait LIVE_SEEKABLE_RANGE_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait MEDIA_INFO_CHANGED extends RemotePlayerEventType
+  sealed trait MEDIA_INFO_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait PLAYER_STATE_CHANGED extends RemotePlayerEventType
+  sealed trait PLAYER_STATE_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait STATUS_TEXT_CHANGED extends RemotePlayerEventType
+  sealed trait STATUS_TEXT_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait TITLE_CHANGED extends RemotePlayerEventType
+  sealed trait TITLE_CHANGED
+    extends StObject
+       with RemotePlayerEventType
   
   @js.native
-  sealed trait VOLUME_LEVEL_CHANGED extends RemotePlayerEventType
+  sealed trait VOLUME_LEVEL_CHANGED
+    extends StObject
+       with RemotePlayerEventType
 }

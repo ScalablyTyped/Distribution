@@ -2,31 +2,29 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBSubnetGroupMessage extends StObject {
   
   /**
     * The description for the DB subnet group.
     */
-  var DBSubnetGroupDescription: String = js.native
+  var DBSubnetGroupDescription: String
   
   /**
     * The name for the DB subnet group. This value is stored as a lowercase string. Constraints: Must contain no more than 255 letters, numbers, periods, underscores, spaces, or hyphens. Must not be default. Example: mySubnetgroup 
     */
-  var DBSubnetGroupName: String = js.native
+  var DBSubnetGroupName: String
   
   /**
     * The EC2 Subnet IDs for the DB subnet group.
     */
-  var SubnetIds: SubnetIdentifierList = js.native
+  var SubnetIds: SubnetIdentifierList
   
   /**
     * The tags to be assigned to the new DB subnet group.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateDBSubnetGroupMessage {
   

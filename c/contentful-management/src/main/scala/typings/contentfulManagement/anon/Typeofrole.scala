@@ -7,15 +7,13 @@ import typings.contentfulManagement.roleMod.Role
 import typings.contentfulManagement.roleMod.RoleProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Typeofrole extends StObject {
   
-  def wrapRole(http: AxiosInstance, data: RoleProps): Role = js.native
+  def wrapRole(http: AxiosInstance, data: RoleProps): Role
   
-  def wrapRoleCollection(http: AxiosInstance, data: CollectionProp[RoleProps]): Collection[Role, RoleProps] = js.native
+  def wrapRoleCollection(http: AxiosInstance, data: CollectionProp[RoleProps]): Collection[Role, RoleProps]
 }
 object Typeofrole {
   

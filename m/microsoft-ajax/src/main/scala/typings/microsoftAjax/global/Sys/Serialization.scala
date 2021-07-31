@@ -2,7 +2,6 @@ package typings.microsoftAjax.global.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -25,8 +24,13 @@ object Serialization {
     * Initializes a new instance of the Sys.Serialization.JavaScriptSerializer class.
     */
   class JavaScriptSerializer ()
-    extends typings.microsoftAjax.Sys.Serialization.JavaScriptSerializer
+    extends StObject
+       with typings.microsoftAjax.Sys.Serialization.JavaScriptSerializer
   object JavaScriptSerializer {
+    
+    @JSGlobal("Sys.Serialization.JavaScriptSerializer")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Converts a JSON string into an ECMAScript (JavaScript) object graph. This member is static and can be invoked without creating an instance of the class.
@@ -35,9 +39,8 @@ object Serialization {
       *           The JSON string to deserialize.
       */
     /* static member */
-    @JSGlobal("Sys.Serialization.JavaScriptSerializer.deserialize")
-    @js.native
-    def deserialize(value: String): js.Any = js.native
+    @scala.inline
+    def deserialize(value: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     //#endregion
     //#region Methods
@@ -50,8 +53,7 @@ object Serialization {
       *           value contains a value that cannot be serialized.
       */
     /* static member */
-    @JSGlobal("Sys.Serialization.JavaScriptSerializer.serialize")
-    @js.native
-    def serialize(value: js.Any): String = js.native
+    @scala.inline
+    def serialize(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
 }

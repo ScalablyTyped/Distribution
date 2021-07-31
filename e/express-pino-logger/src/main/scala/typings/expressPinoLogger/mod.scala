@@ -8,26 +8,24 @@ import typings.pinoHttp.mod.ReqId
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(): HttpLogger = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(opts: Unit, stream: DestinationStream): HttpLogger = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(opts: Options): HttpLogger = ^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any]).asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(opts: Options, stream: DestinationStream): HttpLogger = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[HttpLogger]
+  @scala.inline
+  def apply(stream: DestinationStream): HttpLogger = ^.asInstanceOf[js.Dynamic].apply(stream.asInstanceOf[js.Any]).asInstanceOf[HttpLogger]
+  
   @JSImport("express-pino-logger", JSImport.Namespace)
   @js.native
-  def apply(): HttpLogger = js.native
-  @JSImport("express-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(opts: js.UndefOr[scala.Nothing], stream: DestinationStream): HttpLogger = js.native
-  @JSImport("express-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options): HttpLogger = js.native
-  @JSImport("express-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options, stream: DestinationStream): HttpLogger = js.native
-  @JSImport("express-pino-logger", JSImport.Namespace)
-  @js.native
-  def apply(stream: DestinationStream): HttpLogger = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("express-pino-logger", "startTime")
   @js.native
@@ -36,12 +34,11 @@ object mod {
   /* augmented module */
   object httpAugmentingMod {
     
-    @js.native
     trait IncomingMessage extends StObject {
       
-      var id: ReqId = js.native
+      var id: ReqId
       
-      var log: Logger = js.native
+      var log: Logger
     }
     object IncomingMessage {
       
@@ -65,10 +62,9 @@ object mod {
     @js.native
     trait OutgoingMessage extends StObject
     
-    @js.native
     trait ServerResponse extends StObject {
       
-      var err: js.UndefOr[Error] = js.native
+      var err: js.UndefOr[Error] = js.undefined
     }
     object ServerResponse {
       

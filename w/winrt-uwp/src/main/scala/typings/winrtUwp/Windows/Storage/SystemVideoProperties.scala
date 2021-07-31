@@ -2,27 +2,25 @@ package typings.winrtUwp.Windows.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A helper object that provides indexing names for video file properties. */
-@js.native
 trait SystemVideoProperties extends StObject {
   
   /** Gets the name of the System.Video.Director property (one of the Windows video file properties). */
-  var director: String = js.native
+  var director: String
   
   /** Gets the name of the System.Video.FrameHeight property (one of the Windows video file properties). */
-  var frameHeight: String = js.native
+  var frameHeight: String
   
   /** Gets the name of the System.Video.FrameWidth property (one of the Windows video file properties). */
-  var frameWidth: String = js.native
+  var frameWidth: String
   
   /** Gets the name of the System.Video.Orientation property (one of the Windows video file properties). */
-  var orientation: String = js.native
+  var orientation: String
   
   /** Gets the name of the System.Video.TotalBitrate property (one of the Windows video file properties). */
-  var totalBitrate: String = js.native
+  var totalBitrate: String
 }
 object SystemVideoProperties {
   

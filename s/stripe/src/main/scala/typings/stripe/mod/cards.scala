@@ -22,7 +22,6 @@ import typings.stripe.stripeStrings.unchecked
 import typings.stripe.stripeStrings.unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cards {
@@ -31,9 +30,9 @@ object cards {
     * You can store multiple cards on a customer in order to charge the customer later. You
     * can also store multiple debit cards on a recipient in order to transfer to those cards later.
     */
-  @js.native
   trait ICard
-    extends ICardHash
+    extends StObject
+       with ICardHash
        with IExternalAccount
        with IStripeSource {
     
@@ -42,35 +41,35 @@ object cards {
       * card object if the card belongs to a customer or recipient instead.
       * [Expandable]
       */
-    var account: js.UndefOr[String | IAccount] = js.native
+    var account: js.UndefOr[String | IAccount] = js.undefined
     
     /**
       * Only applicable on accounts (not customers or recipients). The
       * card can be used as a transfer destination for funds in this
       * currency.
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * The customer that this card belongs to. This attribute will not be
       * in the card object if the card belongs to an account or recipient
       * instead.
       */
-    var customer: js.UndefOr[String | ICustomer | Null] = js.native
+    var customer: js.UndefOr[String | ICustomer | Null] = js.undefined
     
     /**
       * Only applicable on accounts (not customers or recipients). This
       * indicates whether or not this card is the default external account
       * for its currency.
       */
-    var default_for_currency: js.UndefOr[Boolean] = js.native
+    var default_for_currency: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The recipient that this card belongs to. This attribute will not be
       * in the card object if the card belongs to a customer or account
       * instead. [Expandable]
       */
-    var recipient: js.UndefOr[String | IRecipient] = js.native
+    var recipient: js.UndefOr[String | IRecipient] = js.undefined
   }
   object ICard {
     
@@ -84,11 +83,10 @@ object cards {
       fingerprint: String,
       funding: credit | debit | prepaid | unknown_,
       id: String,
-      last4: String,
-      `object`: card
+      last4: String
     ): typings.stripe.mod.cards.ICard = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], address_city = null, address_country = null, address_line1 = null, address_line1_check = null, address_line2 = null, address_state = null, address_zip = null, address_zip_check = null, dynamic_last4 = null, name = null, tokenization_method = null)
+      __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[typings.stripe.mod.cards.ICard]
     }
     
@@ -133,16 +131,16 @@ object cards {
   /**
     * Hash describing the card used to make the charge
     */
-  @js.native
   trait ICardHash
-    extends IResourceObject
+    extends StObject
+       with IResourceObject
        with ICardHashInfo {
     
     /**
       * Value is 'card'
       */
     @JSName("object")
-    var object_ICardHash: card = js.native
+    var object_ICardHash: card
   }
   object ICardHash {
     
@@ -156,11 +154,10 @@ object cards {
       fingerprint: String,
       funding: credit | debit | prepaid | unknown_,
       id: String,
-      last4: String,
-      `object`: card
+      last4: String
     ): ICardHash = {
-      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(brand = brand.asInstanceOf[js.Any], country = country.asInstanceOf[js.Any], cvc_check = cvc_check.asInstanceOf[js.Any], exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], fingerprint = fingerprint.asInstanceOf[js.Any], funding = funding.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], last4 = last4.asInstanceOf[js.Any], address_city = null, address_country = null, address_line1 = null, address_line1_check = null, address_line2 = null, address_state = null, address_zip = null, address_zip_check = null, dynamic_last4 = null, name = null, tokenization_method = null)
+      __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[ICardHash]
     }
     
@@ -172,61 +169,60 @@ object cards {
     }
   }
   
-  @js.native
   trait ICardSourceCreationOptions extends StObject {
     
-    var address_city: js.UndefOr[String] = js.native
+    var address_city: js.UndefOr[String] = js.undefined
     
-    var address_country: js.UndefOr[String] = js.native
+    var address_country: js.UndefOr[String] = js.undefined
     
-    var address_line1: js.UndefOr[String] = js.native
+    var address_line1: js.UndefOr[String] = js.undefined
     
-    var address_line2: js.UndefOr[String] = js.native
+    var address_line2: js.UndefOr[String] = js.undefined
     
-    var address_state: js.UndefOr[String] = js.native
+    var address_state: js.UndefOr[String] = js.undefined
     
-    var address_zip: js.UndefOr[String] = js.native
+    var address_zip: js.UndefOr[String] = js.undefined
     
     /**
       * Card security code. Required unless your account is registered in
       * Australia, Canada, or the United States. Highly recommended to always
       * include this value.
       */
-    var cvc: js.UndefOr[String] = js.native
+    var cvc: js.UndefOr[String] = js.undefined
     
     /**
       * Two digit number representing the card's expiration month.
       */
-    var exp_month: Double = js.native
+    var exp_month: Double
     
     /**
       * Two or four digit number representing the card's expiration year.
       */
-    var exp_year: Double = js.native
+    var exp_year: Double
     
-    var metadata: js.UndefOr[IOptionsMetadata] = js.native
+    var metadata: js.UndefOr[IOptionsMetadata] = js.undefined
     
     /**
       * Cardholder's full name.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The card number, as a string without any separators.
       */
-    var number: String = js.native
+    var number: String
     
     /**
       * The type of payment source. Should be "card".
       */
-    var `object`: card = js.native
+    var `object`: card
   }
   object ICardSourceCreationOptions {
     
     @scala.inline
-    def apply(exp_month: Double, exp_year: Double, number: String, `object`: card): ICardSourceCreationOptions = {
+    def apply(exp_month: Double, exp_year: Double, number: String): ICardSourceCreationOptions = {
       val __obj = js.Dynamic.literal(exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[ICardSourceCreationOptions]
     }
     
@@ -301,8 +297,9 @@ object cards {
     }
   }
   
-  @js.native
-  trait ICardSourceCreationOptionsExtended extends ICardSourceCreationOptions {
+  trait ICardSourceCreationOptionsExtended
+    extends StObject
+       with ICardSourceCreationOptions {
     
     /**
       * Required when adding a card to an account (not applicable to a
@@ -312,7 +309,7 @@ object cards {
       *
       * Managed accounts only.
       */
-    var currency: js.UndefOr[String] = js.native
+    var currency: js.UndefOr[String] = js.undefined
     
     /**
       * Only applicable on accounts (not customers or recipients). If you set
@@ -322,14 +319,14 @@ object cards {
       *
       * Managed accounts only.
       */
-    var default_for_currency: js.UndefOr[Boolean] = js.native
+    var default_for_currency: js.UndefOr[Boolean] = js.undefined
   }
   object ICardSourceCreationOptionsExtended {
     
     @scala.inline
-    def apply(exp_month: Double, exp_year: Double, number: String, `object`: card): ICardSourceCreationOptionsExtended = {
+    def apply(exp_month: Double, exp_year: Double, number: String): ICardSourceCreationOptionsExtended = {
       val __obj = js.Dynamic.literal(exp_month = exp_month.asInstanceOf[js.Any], exp_year = exp_year.asInstanceOf[js.Any], number = number.asInstanceOf[js.Any])
-      __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
+      __obj.updateDynamic("object")("card")
       __obj.asInstanceOf[ICardSourceCreationOptionsExtended]
     }
     
@@ -350,20 +347,21 @@ object cards {
     }
   }
   
-  @js.native
-  trait ICardUpdateOptions extends IDataOptionsWithMetadata {
+  trait ICardUpdateOptions
+    extends StObject
+       with IDataOptionsWithMetadata {
     
-    var address_city: js.UndefOr[String] = js.native
+    var address_city: js.UndefOr[String] = js.undefined
     
-    var address_country: js.UndefOr[String] = js.native
+    var address_country: js.UndefOr[String] = js.undefined
     
-    var address_line1: js.UndefOr[String] = js.native
+    var address_line1: js.UndefOr[String] = js.undefined
     
-    var address_line2: js.UndefOr[String] = js.native
+    var address_line2: js.UndefOr[String] = js.undefined
     
-    var address_state: js.UndefOr[String] = js.native
+    var address_state: js.UndefOr[String] = js.undefined
     
-    var address_zip: js.UndefOr[String] = js.native
+    var address_zip: js.UndefOr[String] = js.undefined
     
     /**
       * Only applicable on accounts (not customers or recipients).
@@ -372,16 +370,16 @@ object cards {
       *
       * Managed accounts only
       */
-    var default_for_currency: js.UndefOr[Boolean] = js.native
+    var default_for_currency: js.UndefOr[Boolean] = js.undefined
     
-    var exp_month: js.UndefOr[Double] = js.native
+    var exp_month: js.UndefOr[Double] = js.undefined
     
-    var exp_year: js.UndefOr[Double] = js.native
+    var exp_year: js.UndefOr[Double] = js.undefined
     
     /**
       * Cardholder name
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object ICardUpdateOptions {
     

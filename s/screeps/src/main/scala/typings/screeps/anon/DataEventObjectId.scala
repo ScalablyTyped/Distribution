@@ -4,17 +4,17 @@ import typings.screeps.EVENT_HEAL
 import typings.screeps.EventItem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataEventObjectId extends EventItem {
+trait DataEventObjectId
+  extends StObject
+     with EventItem {
   
-  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_HEAL] */ js.Any = js.native
+  var data: /* import warning: importer.ImportType#apply Failed type conversion: screeps.EventData[screeps.EVENT_HEAL] */ js.Any
   
-  var event: EVENT_HEAL = js.native
+  var event: EVENT_HEAL
   
-  var objectId: String = js.native
+  var objectId: String
 }
 object DataEventObjectId {
   

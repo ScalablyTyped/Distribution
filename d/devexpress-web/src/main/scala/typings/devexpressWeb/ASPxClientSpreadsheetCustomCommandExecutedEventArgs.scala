@@ -2,30 +2,30 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientSpreadsheet.CustomCommandExecuted event.
   */
-@js.native
-trait ASPxClientSpreadsheetCustomCommandExecutedEventArgs extends ASPxClientEventArgs {
+trait ASPxClientSpreadsheetCustomCommandExecutedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets the name of the processed command.
     */
-  var commandName: String = js.native
+  var commandName: String
   
   /** @deprecated This property is now obsolete. Use the commandName property instead. */
   /**
     * This property is now obsolete. Use the ASPxClientSpreadsheetCustomCommandExecutedEventArgs.commandName property instead.
     */
-  var item: ASPxClientRibbonItem = js.native
+  var item: ASPxClientRibbonItem
   
   /**
     * Gets an optional parameter that complements the processed command.
     */
-  var parameter: String = js.native
+  var parameter: String
 }
 object ASPxClientSpreadsheetCustomCommandExecutedEventArgs {
   

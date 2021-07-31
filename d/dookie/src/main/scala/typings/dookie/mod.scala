@@ -2,32 +2,30 @@ package typings.dookie
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dookie", "pull")
+  @JSImport("dookie", JSImport.Namespace)
   @js.native
-  def pull(uri: String): js.Promise[_] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("dookie", "pullToStream")
-  @js.native
-  def pullToStream(uri: String, stream: js.Any): js.Promise[_] = js.native
+  @scala.inline
+  def pull(uri: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("pull")(uri.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("dookie", "push")
-  @js.native
-  def push(uri: String, data: js.Any): js.Promise[_] = js.native
-  @JSImport("dookie", "push")
-  @js.native
-  def push(uri: String, data: js.Any, opts: PushOpts): js.Promise[_] = js.native
+  @scala.inline
+  def pullToStream(uri: String, stream: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("pullToStream")(uri.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
   
-  @js.native
+  @scala.inline
+  def push(uri: String, data: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(uri.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def push(uri: String, data: js.Any, opts: PushOpts): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("push")(uri.asInstanceOf[js.Any], data.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  
   trait PushOpts extends StObject {
     
-    var dropDatabase: Boolean = js.native
+    var dropDatabase: Boolean
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
   }
   object PushOpts {
     

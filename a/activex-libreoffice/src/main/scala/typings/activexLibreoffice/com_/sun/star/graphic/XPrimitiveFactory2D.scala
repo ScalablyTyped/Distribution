@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Use this interface to generate {@link XPrimitive2D} instances
   */
-@js.native
-trait XPrimitiveFactory2D extends XInterface {
+trait XPrimitiveFactory2D
+  extends StObject
+     with XInterface {
   
   /**
     * Create primitives from {@link com.sun.star.drawing.XDrawPage}
@@ -26,7 +26,7 @@ trait XPrimitiveFactory2D extends XInterface {
     * @param aParms Sequence of factory parameters, whose semantics depend on the page to be generated.
     * @returns a sequence of primitives, that consists of the geometrical representation for the given XDrawPage.
     */
-  def createPrimitivesFromXDrawPage(xDrawPage: XDrawPage, aParms: SeqEquiv[PropertyValue]): SafeArray[XPrimitive2D] = js.native
+  def createPrimitivesFromXDrawPage(xDrawPage: XDrawPage, aParms: SeqEquiv[PropertyValue]): SafeArray[XPrimitive2D]
   
   /**
     * Create primitives from {@link com.sun.star.drawing.XShape}
@@ -34,7 +34,7 @@ trait XPrimitiveFactory2D extends XInterface {
     * @param aParms Sequence of factory parameters, whose semantics depend on the shape to be generated.
     * @returns a sequence of primitives, that consists of the geometrical representation from the given XShape.
     */
-  def createPrimitivesFromXShape(xShape: XShape, aParms: SeqEquiv[PropertyValue]): SafeArray[XPrimitive2D] = js.native
+  def createPrimitivesFromXShape(xShape: XShape, aParms: SeqEquiv[PropertyValue]): SafeArray[XPrimitive2D]
 }
 object XPrimitiveFactory2D {
   

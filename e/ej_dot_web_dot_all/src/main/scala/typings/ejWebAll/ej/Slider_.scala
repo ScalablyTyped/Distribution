@@ -3,11 +3,12 @@ package typings.ejWebAll.ej
 import typings.ejWebAll.ej.slider.sliderType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Slider_ extends Widget_ {
+trait Slider_
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -36,36 +37,35 @@ trait Slider_ extends Widget_ {
 }
 object Slider_ {
   
-  @js.native
   trait ChangeEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns slider id.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns true if event triggered by interaction else returns false.
       */
-    var isInteraction: js.UndefOr[Boolean] = js.native
+    var isInteraction: js.UndefOr[Boolean] = js.undefined
     
     /** returns the slider model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns current handle number or index
       */
-    var sliderIndex: js.UndefOr[Double] = js.native
+    var sliderIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the slider value.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ChangeEventArgs {
     
@@ -122,20 +122,19 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait CreateEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the slider model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object CreateEventArgs {
     
@@ -168,20 +167,19 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait DestroyEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the slider model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DestroyEventArgs {
     
@@ -214,164 +212,163 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies the allowMouseWheel of the slider.
       * @Default {false}
       */
-    var allowMouseWheel: js.UndefOr[Boolean] = js.native
+    var allowMouseWheel: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the animationSpeed of the slider.
       * @Default {500}
       */
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Fires once Slider control value is changed successfully.
       */
-    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.native
+    var change: js.UndefOr[js.Function1[/* e */ ChangeEventArgs, Unit]] = js.undefined
     
     /** Fires once Slider control has been created successfully.
       */
-    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.native
+    var create: js.UndefOr[js.Function1[/* e */ CreateEventArgs, Unit]] = js.undefined
     
     /** Specify the CSS class to slider to achieve custom theme.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /** Fires when Slider control has been destroyed successfully.
       */
-    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.native
+    var destroy: js.UndefOr[js.Function1[/* e */ DestroyEventArgs, Unit]] = js.undefined
     
     /** Specifies the animation behavior of the slider.
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Specify the enablePersistence to slider to save current model value to browser cookies for state maintains
       * @Default {false}
       */
-    var enablePersistence: js.UndefOr[Boolean] = js.native
+    var enablePersistence: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the Right to Left Direction of the slider.
       * @Default {false}
       */
-    var enableRTL: js.UndefOr[Boolean] = js.native
+    var enableRTL: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the state of the slider.
       * @Default {true}
       */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the height of the slider.
       * @Default {14}
       */
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
     /** Specifies the HTML Attributes of the ejSlider.
       * @Default {{}}
       */
-    var htmlAttributes: js.UndefOr[js.Any] = js.native
+    var htmlAttributes: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the incremental step value of the slider.
       * @Default {1}
       */
-    var incrementStep: js.UndefOr[Double] = js.native
+    var incrementStep: js.UndefOr[Double] = js.undefined
     
     /** Specifies the distance between two major (large) ticks from the scale of the slider.
       * @Default {10}
       */
-    var largeStep: js.UndefOr[Double] = js.native
+    var largeStep: js.UndefOr[Double] = js.undefined
     
     /** Specifies the ending value of the slider.
       * @Default {100}
       */
-    var maxValue: js.UndefOr[Double] = js.native
+    var maxValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the starting value of the slider.
       * @Default {0}
       */
-    var minValue: js.UndefOr[Double] = js.native
+    var minValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the orientation of the slider.
       * @Default {ej.orientation.Horizontal}
       */
-    var orientation: js.UndefOr[Orientation | String] = js.native
+    var orientation: js.UndefOr[Orientation | String] = js.undefined
     
     /** Specifies the readOnly of the slider.
       * @Default {false}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Fires before creating each slider scale tick. You can use this event to add custom text in tick values.
       */
-    var renderingTicks: js.UndefOr[js.Function1[/* e */ RenderingTicksEventArgs, Unit]] = js.native
+    var renderingTicks: js.UndefOr[js.Function1[/* e */ RenderingTicksEventArgs, Unit]] = js.undefined
     
     /** Shows/Hides the increment and decrement buttons of the slider.
       * @Default {false}
       */
-    var showButtons: js.UndefOr[Boolean] = js.native
+    var showButtons: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the rounded corner behavior for slider.
       * @Default {false}
       */
-    var showRoundedCorner: js.UndefOr[Boolean] = js.native
+    var showRoundedCorner: js.UndefOr[Boolean] = js.undefined
     
     /** Shows/Hide the major (large) and minor (small) ticks in the scale of the slider.
       * @Default {false}
       */
-    var showScale: js.UndefOr[Boolean] = js.native
+    var showScale: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the small ticks from the scale of the slider.
       * @Default {true}
       */
-    var showSmallTicks: js.UndefOr[Boolean] = js.native
+    var showSmallTicks: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showTooltip to shows the current Slider value, while moving the Slider handle or clicking on the slider handle of the slider.
       * @Default {true}
       */
-    var showTooltip: js.UndefOr[Boolean] = js.native
+    var showTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Fires once Slider control is sliding successfully.
       */
-    var slide: js.UndefOr[js.Function1[/* e */ SlideEventArgs, Unit]] = js.native
+    var slide: js.UndefOr[js.Function1[/* e */ SlideEventArgs, Unit]] = js.undefined
     
     /** Specifies the sliderType of the slider.
       * @Default {ej.SliderType.Default}
       */
-    var sliderType: js.UndefOr[typings.ejWebAll.ej.slider.sliderType | String] = js.native
+    var sliderType: js.UndefOr[typings.ejWebAll.ej.slider.sliderType | String] = js.undefined
     
     /** Specifies the distance between two minor (small) ticks from the scale of the slider.
       * @Default {1}
       */
-    var smallStep: js.UndefOr[Double] = js.native
+    var smallStep: js.UndefOr[Double] = js.undefined
     
     /** Fires once Slider control is started successfully.
       */
-    var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.native
+    var start: js.UndefOr[js.Function1[/* e */ StartEventArgs, Unit]] = js.undefined
     
     /** Fires when Slider control is stopped successfully.
       */
-    var stop: js.UndefOr[js.Function1[/* e */ StopEventArgs, Unit]] = js.native
+    var stop: js.UndefOr[js.Function1[/* e */ StopEventArgs, Unit]] = js.undefined
     
     /** Fires when display the custom tooltip.
       */
-    var tooltipChange: js.UndefOr[js.Function1[/* e */ TooltipChangeEventArgs, Unit]] = js.native
+    var tooltipChange: js.UndefOr[js.Function1[/* e */ TooltipChangeEventArgs, Unit]] = js.undefined
     
     /** Specifies the value of the slider. But it's not applicable for range slider. To range slider we can use values property.
       * @Default {0}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the values of the range slider. But it's not applicable for default and minRange sliders. we can use value property for default and minRange sliders.
       * @Default {[minValue,maxValue]}
       */
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /** Specifies the width of the slider.
       * @Default {100%}
       */
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
   }
   object Model {
     
@@ -571,7 +568,7 @@ object Slider_ {
       def setValueUndefined: Self = StObject.set(x, "value", js.undefined)
       
       @scala.inline
-      def setValues(value: js.Array[_]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
+      def setValues(value: js.Array[js.Any]): Self = StObject.set(x, "values", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setValuesUndefined: Self = StObject.set(x, "values", js.undefined)
@@ -587,24 +584,23 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait RenderingTicksEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the current Li element
       */
-    var tick: js.UndefOr[js.Any] = js.native
+    var tick: js.UndefOr[js.Any] = js.undefined
     
     /** returns slider tick value
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** returns the value type either tooltip or label value
       */
-    var valueType: js.UndefOr[String] = js.native
+    var valueType: js.UndefOr[String] = js.undefined
   }
   object RenderingTicksEventArgs {
     
@@ -643,32 +639,31 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait SlideEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns slider id
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the slider model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns current handle number or index
       */
-    var sliderIndex: js.UndefOr[Double] = js.native
+    var sliderIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the slider value
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object SlideEventArgs {
     
@@ -719,32 +714,31 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait StartEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns slider id
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the slider model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns current handle number or index
       */
-    var sliderIndex: js.UndefOr[Double] = js.native
+    var sliderIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the slider value
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object StartEventArgs {
     
@@ -795,32 +789,31 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait StopEventArgs extends StObject {
     
     /** if the event should be canceled; otherwise, false.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns slider id
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns the slider model
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns current handle number or index
       */
-    var sliderIndex: js.UndefOr[Double] = js.native
+    var sliderIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the slider value
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object StopEventArgs {
     
@@ -871,36 +864,35 @@ object Slider_ {
     }
   }
   
-  @js.native
   trait TooltipChangeEventArgs extends StObject {
     
     /** returns the cancel option value.
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns slider id.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** returns true if event triggered by interaction else returns false.
       */
-    var isInteraction: js.UndefOr[Boolean] = js.native
+    var isInteraction: js.UndefOr[Boolean] = js.undefined
     
     /** returns the slider model.
       */
-    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.native
+    var model: js.UndefOr[typings.ejWebAll.ej.Model] = js.undefined
     
     /** returns current handle number or index
       */
-    var sliderIndex: js.UndefOr[Double] = js.native
+    var sliderIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the name of the event.
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** returns the slider value.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object TooltipChangeEventArgs {
     

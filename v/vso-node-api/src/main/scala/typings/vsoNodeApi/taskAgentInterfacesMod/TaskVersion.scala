@@ -2,19 +2,17 @@ package typings.vsoNodeApi.taskAgentInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskVersion extends StObject {
   
-  var isTest: Boolean = js.native
+  var isTest: Boolean
   
-  var major: Double = js.native
+  var major: Double
   
-  var minor: Double = js.native
+  var minor: Double
   
-  var patch: Double = js.native
+  var patch: Double
 }
 object TaskVersion {
   

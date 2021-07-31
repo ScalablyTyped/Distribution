@@ -2,17 +2,18 @@ package typings.materialUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withWidthMod {
   
-  @JSImport("material-ui/utils/withWidth", JSImport.Default)
+  @JSImport("material-ui/utils/withWidth", JSImport.Namespace)
   @js.native
-  def default[C /* <: js.Function */](): js.Function1[/* component */ C, C] = js.native
-  @JSImport("material-ui/utils/withWidth", JSImport.Default)
-  @js.native
-  def default[C /* <: js.Function */](options: Options): js.Function1[/* component */ C, C] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[C /* <: js.Function */](): js.Function1[/* component */ C, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Function1[/* component */ C, C]]
+  @scala.inline
+  def default[C /* <: js.Function */](options: Options): js.Function1[/* component */ C, C] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* component */ C, C]]
   
   @JSImport("material-ui/utils/withWidth", "LARGE")
   @js.native
@@ -26,14 +27,13 @@ object withWidthMod {
   @js.native
   val SMALL: Double = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var largeWidth: js.UndefOr[Double] = js.native
+    var largeWidth: js.UndefOr[Double] = js.undefined
     
-    var mediumWidth: js.UndefOr[Double] = js.native
+    var mediumWidth: js.UndefOr[Double] = js.undefined
     
-    var resizeInterval: js.UndefOr[Double] = js.native
+    var resizeInterval: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

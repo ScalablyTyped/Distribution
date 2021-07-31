@@ -6,49 +6,43 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("easy-session", "checkRole")
+  @JSImport("easy-session", JSImport.Namespace)
   @js.native
-  def checkRole(role: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("easy-session", "checkRole")
-  @js.native
-  def checkRole(role: String, errorCallback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("easy-session", "isFresh")
-  @js.native
-  def isFresh(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("easy-session", "isFresh")
-  @js.native
-  def isFresh(errorCallback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def checkRole(role: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkRole")(role.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def checkRole(role: String, errorCallback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkRole")(role.asInstanceOf[js.Any], errorCallback.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("easy-session", "isLoggedIn")
-  @js.native
-  def isLoggedIn(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("easy-session", "isLoggedIn")
-  @js.native
-  def isLoggedIn(errorCallback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def isFresh(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("isFresh")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def isFresh(errorCallback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("isFresh")(errorCallback.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @JSImport("easy-session", "main")
-  @js.native
-  def main(session: FnCall): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("easy-session", "main")
-  @js.native
-  def main(session: FnCall, options: SessionOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def isLoggedIn(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedIn")().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def isLoggedIn(errorCallback: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("isLoggedIn")(errorCallback.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
-  @js.native
+  @scala.inline
+  def main(session: FnCall): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].applyDynamic("main")(session.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def main(session: FnCall, options: SessionOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = (^.asInstanceOf[js.Dynamic].applyDynamic("main")(session.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  
   trait SessionOptions extends StObject {
     
-    var freshTimeout: js.UndefOr[Double] = js.native
+    var freshTimeout: js.UndefOr[Double] = js.undefined
     
-    var ipCheck: js.UndefOr[Boolean] = js.native
+    var ipCheck: js.UndefOr[Boolean] = js.undefined
     
-    var maxFreshTimeout: js.UndefOr[Double] = js.native
+    var maxFreshTimeout: js.UndefOr[Double] = js.undefined
     
-    var uaCheck: js.UndefOr[Boolean] = js.native
+    var uaCheck: js.UndefOr[Boolean] = js.undefined
   }
   object SessionOptions {
     

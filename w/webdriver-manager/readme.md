@@ -10,9 +10,9 @@ A selenium server and browser driver manager for your end to end tests.
 | ------------------ | :-------------: |
 | Full name          | webdriver-manager |
 | Keywords           | angular, test, testing, protractor, webdriver, webdriverjs, selenium, selenium-webdriver |
-| # releases         | 10 |
-| # dependents       | 61 |
-| # downloads        | 59184161 |
+| # releases         | 9 |
+| # dependents       | 75 |
+| # downloads        | 63269865 |
 | # stars            | 11 |
 
 ## Links

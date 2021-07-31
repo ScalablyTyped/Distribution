@@ -4,39 +4,37 @@ import typings.std.Date
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileObj extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  var ext: js.UndefOr[String] = js.native
+  var ext: js.UndefOr[String] = js.undefined
   
-  def getNative(): File = js.native
+  def getNative(): File
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var isImage: js.UndefOr[Boolean] = js.native
+  var isImage: js.UndefOr[Boolean] = js.undefined
   
-  var lastModifiedDate: js.UndefOr[Date] = js.native
+  var lastModifiedDate: js.UndefOr[Date] = js.undefined
   
-  var loaded: js.UndefOr[Double] = js.native
+  var loaded: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var origSize: js.UndefOr[Double] = js.native
+  var origSize: js.UndefOr[Double] = js.undefined
   
-  var percent: js.UndefOr[Double] = js.native
+  var percent: js.UndefOr[Double] = js.undefined
   
-  var previewImage: js.UndefOr[String] = js.native
+  var previewImage: js.UndefOr[String] = js.undefined
   
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
-  var status: js.UndefOr[STATUS] = js.native
+  var status: js.UndefOr[STATUS] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object FileObj {
   

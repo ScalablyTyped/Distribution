@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcConnectionProperties extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for the VPC connection.
     */
-  var VpcConnectionArn: Arn = js.native
+  var VpcConnectionArn: Arn
 }
 object VpcConnectionProperties {
   

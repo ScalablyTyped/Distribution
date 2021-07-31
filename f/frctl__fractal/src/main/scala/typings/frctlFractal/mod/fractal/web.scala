@@ -8,7 +8,6 @@ import typings.node.eventsMod.EventEmitter
 import typings.node.eventsMod.EventEmitterOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object web {
@@ -71,18 +70,17 @@ object web {
     def theme(name: String, instance: WebTheme): this.type = js.native
   }
   
-  @js.native
   trait WebBuilderConfig extends StObject {
     
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
     
-    var dest: js.UndefOr[String] = js.native
+    var dest: js.UndefOr[String] = js.undefined
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[WebTheme | String] = js.native
+    var theme: js.UndefOr[WebTheme | String] = js.undefined
     
-    var urls: js.UndefOr[WebBuilderUrls] = js.native
+    var urls: js.UndefOr[WebBuilderUrls] = js.undefined
   }
   object WebBuilderConfig {
     
@@ -127,10 +125,9 @@ object web {
     }
   }
   
-  @js.native
   trait WebBuilderUrls extends StObject {
     
-    var ext: js.UndefOr[String] = js.native
+    var ext: js.UndefOr[String] = js.undefined
   }
   object WebBuilderUrls {
     
@@ -151,62 +148,61 @@ object web {
     }
   }
   
-  @js.native
   trait WebConfig extends StObject {
     
-    var builder: js.UndefOr[WebBuilderConfig] = js.native
+    var builder: js.UndefOr[WebBuilderConfig] = js.undefined
     
     @JSName("builder.concurrency")
-    var builderDotconcurrency: js.UndefOr[Double] = js.native
+    var builderDotconcurrency: js.UndefOr[Double] = js.undefined
     
     @JSName("builder.dest")
-    var builderDotdest: js.UndefOr[String] = js.native
+    var builderDotdest: js.UndefOr[String] = js.undefined
     
     @JSName("builder.ext")
-    var builderDotext: js.UndefOr[String] = js.native
+    var builderDotext: js.UndefOr[String] = js.undefined
     
     @JSName("builder.theme")
-    var builderDottheme: js.UndefOr[WebTheme | String] = js.native
+    var builderDottheme: js.UndefOr[WebTheme | String] = js.undefined
     
     @JSName("builder.urls")
-    var builderDoturls: js.UndefOr[WebBuilderUrls] = js.native
+    var builderDoturls: js.UndefOr[WebBuilderUrls] = js.undefined
     
     @JSName("builder.urls.ext")
-    var builderDoturlsDotext: js.UndefOr[String] = js.native
+    var builderDoturlsDotext: js.UndefOr[String] = js.undefined
     
-    var server: js.UndefOr[WebServerConfig] = js.native
+    var server: js.UndefOr[WebServerConfig] = js.undefined
     
     @JSName("server.port")
-    var serverDotport: js.UndefOr[Double] = js.native
+    var serverDotport: js.UndefOr[Double] = js.undefined
     
     @JSName("server.sync")
-    var serverDotsync: js.UndefOr[Boolean] = js.native
+    var serverDotsync: js.UndefOr[Boolean] = js.undefined
     
     @JSName("server.syncOptions")
-    var serverDotsyncOptions: js.UndefOr[WebServerSyncOptions] = js.native
+    var serverDotsyncOptions: js.UndefOr[WebServerSyncOptions] = js.undefined
     
     @JSName("server.syncOptions.browser")
-    var serverDotsyncOptionsDotbrowser: js.UndefOr[js.Array[String]] = js.native
+    var serverDotsyncOptionsDotbrowser: js.UndefOr[js.Array[String]] = js.undefined
     
     @JSName("server.syncOptions.notify")
-    var serverDotsyncOptionsDotnotify: js.UndefOr[Boolean] = js.native
+    var serverDotsyncOptionsDotnotify: js.UndefOr[Boolean] = js.undefined
     
     @JSName("server.syncOptions.open")
-    var serverDotsyncOptionsDotopen: js.UndefOr[Boolean] = js.native
+    var serverDotsyncOptionsDotopen: js.UndefOr[Boolean] = js.undefined
     
     @JSName("server.theme")
-    var serverDottheme: js.UndefOr[WebTheme | String] = js.native
+    var serverDottheme: js.UndefOr[WebTheme | String] = js.undefined
     
     @JSName("server.watch")
-    var serverDotwatch: js.UndefOr[Boolean] = js.native
+    var serverDotwatch: js.UndefOr[Boolean] = js.undefined
     
-    var static: js.UndefOr[WebStaticConfig] = js.native
+    var static: js.UndefOr[WebStaticConfig] = js.undefined
     
     @JSName("static.mount")
-    var staticDotmount: js.UndefOr[String] = js.native
+    var staticDotmount: js.UndefOr[String] = js.undefined
     
     @JSName("static.path")
-    var staticDotpath: js.UndefOr[String] = js.native
+    var staticDotpath: js.UndefOr[String] = js.undefined
   }
   object WebConfig {
     
@@ -338,18 +334,17 @@ object web {
     }
   }
   
-  @js.native
   trait WebServerConfig extends StObject {
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var sync: js.UndefOr[Boolean] = js.native
+    var sync: js.UndefOr[Boolean] = js.undefined
     
-    var syncOptions: js.UndefOr[WebServerSyncOptions] = js.native
+    var syncOptions: js.UndefOr[WebServerSyncOptions] = js.undefined
     
-    var theme: js.UndefOr[WebTheme | String] = js.native
+    var theme: js.UndefOr[WebTheme | String] = js.undefined
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object WebServerConfig {
     
@@ -394,15 +389,14 @@ object web {
     }
   }
   
-  @js.native
   trait WebServerSyncOptions extends StObject {
     
-    var browser: js.UndefOr[js.Array[String]] = js.native
+    var browser: js.UndefOr[js.Array[String]] = js.undefined
     
     @JSName("notify")
-    var notify_FWebServerSyncOptions: js.UndefOr[Boolean] = js.native
+    var notify_FWebServerSyncOptions: js.UndefOr[Boolean] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
   }
   object WebServerSyncOptions {
     
@@ -438,12 +432,11 @@ object web {
     }
   }
   
-  @js.native
   trait WebStaticConfig extends StObject {
     
-    var mount: js.UndefOr[String] = js.native
+    var mount: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object WebStaticConfig {
     

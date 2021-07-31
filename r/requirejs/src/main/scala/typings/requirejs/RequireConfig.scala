@@ -4,16 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.HTMLScriptElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequireConfig extends StObject {
   
   /**
     * The root path to use for all module lookups.
     */
-  var baseUrl: js.UndefOr[String] = js.native
+  var baseUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Allows pointing multiple module IDs to a module ID that contains a bundle of modules.
@@ -26,39 +24,39 @@ trait RequireConfig extends StObject {
     *    }
     * });
     **/
-  var bundles: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+  var bundles: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
   
   /**
     * A function to pass to require that should be require after
     * deps have been loaded.
     * @param modules
     **/
-  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var callback: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
   /**
     * AMD configurations, use module.config() to access in
     * define() functions
     **/
-  var config: js.UndefOr[StringDictionary[js.Object]] = js.native
+  var config: js.UndefOr[StringDictionary[js.Object]] = js.undefined
   
   /**
     * A name to give to a loading context.  This allows require.js
     * to load multiple versions of modules in a page, as long as
     * each top-level require call specifies a unique context string.
     **/
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
     * An array of dependencies to load.
     **/
-  var deps: js.UndefOr[js.Array[String]] = js.native
+  var deps: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * If set to true, an error will be thrown if a script loads
     * that does not call define() or have shim exports string
     * value that can be checked.
     **/
-  var enforceDefine: js.UndefOr[Boolean] = js.native
+  var enforceDefine: js.UndefOr[Boolean] = js.undefined
   
   /**
     * For the given module prefix, instead of loading the
@@ -77,7 +75,7 @@ trait RequireConfig extends StObject {
     *    }
     * });
     **/
-  var map: js.UndefOr[StringDictionary[StringDictionary[String]]] = js.native
+  var map: js.UndefOr[StringDictionary[StringDictionary[String]]] = js.undefined
   
   /**
     * Allow extending requirejs to support Subresource Integrity
@@ -91,18 +89,18 @@ trait RequireConfig extends StObject {
       /* url */ String, 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Configures loading modules from CommonJS packages.
     **/
-  var packages: js.UndefOr[js.Object] = js.native
+  var packages: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Path mappings for module names not found directly under
     * baseUrl.
     */
-  var paths: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var paths: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Specify the value for the type="" attribute used for script
@@ -110,13 +108,13 @@ trait RequireConfig extends StObject {
     * "text/javascript".  To use Firefox's JavasScript 1.8
     * features, use "text/javascript;version=1.8".
     **/
-  var scriptType: js.UndefOr[String] = js.native
+  var scriptType: js.UndefOr[String] = js.undefined
   
   /**
     * Dictionary of Shim's.
     * Can be of type RequireShim or string[] of dependencies
     */
-  var shim: js.UndefOr[StringDictionary[RequireShim | js.Array[String]]] = js.native
+  var shim: js.UndefOr[StringDictionary[RequireShim | js.Array[String]]] = js.undefined
   
   /**
     * If set to true, skips the data-main attribute scanning done
@@ -125,7 +123,7 @@ trait RequireConfig extends StObject {
     * library on the page, and the embedded version should not do
     * data-main loading.
     **/
-  var skipDataMain: js.UndefOr[Boolean] = js.native
+  var skipDataMain: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Extra query string arguments appended to URLs that RequireJS
@@ -154,19 +152,19 @@ trait RequireConfig extends StObject {
     *     }
     * });
     **/
-  var urlArgs: js.UndefOr[String | (js.Function2[/* id */ String, /* url */ String, String])] = js.native
+  var urlArgs: js.UndefOr[String | (js.Function2[/* id */ String, /* url */ String, String])] = js.undefined
   
   /**
     * The number of seconds to wait before giving up on loading
     * a script.  The default is 7 seconds.
     **/
-  var waitSeconds: js.UndefOr[Double] = js.native
+  var waitSeconds: js.UndefOr[Double] = js.undefined
   
   /**
     * If set to true, document.createElementNS() will be used
     * to create script elements.
     **/
-  var xhtml: js.UndefOr[Boolean] = js.native
+  var xhtml: js.UndefOr[Boolean] = js.undefined
 }
 object RequireConfig {
   

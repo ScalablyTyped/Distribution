@@ -2,13 +2,11 @@ package typings.urijs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLElement extends StObject {
   
-  var innerText: String = js.native
+  var innerText: String
 }
 object HTMLElement {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnaddressCustomBatchRequestEntry extends StObject {
   
   /** An entry ID, unique within the batch request. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** The Merchant Center account ID. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** Method of the batch request entry. Acceptable values are: - "`delete`" - "`get`" - "`insert`" */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** The return address to submit. This should be set only if the method is `insert`. */
-  var returnAddress: js.UndefOr[ReturnAddress] = js.native
+  var returnAddress: js.UndefOr[ReturnAddress] = js.undefined
   
   /** The return address ID. This should be set only if the method is `delete` or `get`. */
-  var returnAddressId: js.UndefOr[String] = js.native
+  var returnAddressId: js.UndefOr[String] = js.undefined
 }
 object ReturnaddressCustomBatchRequestEntry {
   

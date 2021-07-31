@@ -2,25 +2,23 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The language and country identifiers and descriptive names of the loaded locale data returned by {@link XLocaleData.getLanguageCountryInfo()} .
   * @see XLocaleData for links to DTD of XML locale data files.
   */
-@js.native
 trait LanguageCountryInfo extends StObject {
   
-  var Country: String = js.native
+  var Country: String
   
-  var CountryDefaultName: String = js.native
+  var CountryDefaultName: String
   
-  var Language: String = js.native
+  var Language: String
   
-  var LanguageDefaultName: String = js.native
+  var LanguageDefaultName: String
   
-  var Variant: String = js.native
+  var Variant: String
 }
 object LanguageCountryInfo {
   

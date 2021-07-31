@@ -2,7 +2,6 @@ package typings.latestVersion
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,12 +22,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("latest-version", JSImport.Namespace)
-  @js.native
-  def apply(packageName: String): js.Promise[String] = js.native
-  @JSImport("latest-version", JSImport.Namespace)
-  @js.native
-  def apply(packageName: String, options: Options): js.Promise[String] = js.native
+  @scala.inline
+  def apply(packageName: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(packageName: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(packageName.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   
   @JSImport("latest-version", JSImport.Namespace)
   @js.native
@@ -46,13 +43,12 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof latestVersion */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
     		A semver range or [dist-tag](https://docs.npmjs.com/cli/dist-tag).
     		*/
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object Options {
     

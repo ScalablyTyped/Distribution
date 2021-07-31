@@ -4,15 +4,13 @@ import typings.std.Extract
 import typings.tuyaPanelKit.typesMod.EventMapBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `6`[EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] extends StObject {
   
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
-  var `type`: EventName = js.native
+  var `type`: EventName
 }
 object `6` {
   
@@ -24,7 +22,7 @@ object `6` {
   }
   
   @scala.inline
-  implicit class `6MutableBuilder`[Self <: `6`[_, _], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] (val x: Self with (`6`[EventName, EventMap])) extends AnyVal {
+  implicit class `6MutableBuilder`[Self <: `6`[?, ?], EventName /* <: Extract[/* keyof EventMap */ String, String] */, EventMap /* <: EventMapBase */] (val x: Self & (`6`[EventName, EventMap])) extends AnyVal {
     
     @scala.inline
     def setTarget(value: String): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

@@ -2,41 +2,39 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildInfo extends StObject {
   
   /**
     * Date and time when Asterisk was built.
     */
-  var date: String = js.native
+  var date: String
   
   /**
     * Kernel version Asterisk was built on.
     */
-  var kernel: String = js.native
+  var kernel: String
   
   /**
     * Machine architecture (x86_64, i686, ppc, etc.).
     */
-  var machine: String = js.native
+  var machine: String
   
   /**
     * Compile time options, or empty string if default.
     */
-  var options: String = js.native
+  var options: String
   
   /**
     * OS Asterisk was built on.
     */
-  var os: String = js.native
+  var os: String
   
   /**
     * Username that build Asterisk.
     */
-  var user: String = js.native
+  var user: String
 }
 object BuildInfo {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePullRequestApprovalRuleOutput extends StObject {
   
   /**
     * The ID of the deleted approval rule.   If the approval rule was deleted in an earlier API call, the response is 200 OK without content. 
     */
-  var approvalRuleId: ApprovalRuleId = js.native
+  var approvalRuleId: ApprovalRuleId
 }
 object DeletePullRequestApprovalRuleOutput {
   

@@ -2,21 +2,19 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DividerColor extends StObject {
   
-  var dividerColor: js.UndefOr[String] = js.native
+  var dividerColor: js.UndefOr[String] = js.undefined
   
-  var fontColor: js.UndefOr[String] = js.native
+  var fontColor: js.UndefOr[String] = js.undefined
   
-  var fontSize: js.UndefOr[Double] = js.native
+  var fontSize: js.UndefOr[Double] = js.undefined
   
-  var unitFontColor: js.UndefOr[String] = js.native
+  var unitFontColor: js.UndefOr[String] = js.undefined
   
-  var unitFontSize: js.UndefOr[Double] = js.native
+  var unitFontSize: js.UndefOr[Double] = js.undefined
 }
 object DividerColor {
   

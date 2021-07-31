@@ -3,22 +3,20 @@ package typings.jsqrcode
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Detector extends StObject {
   
-  def calculateModuleSize(topLeft: AlignmentPattern, topRight: AlignmentPattern, bottomLeft: AlignmentPattern): Double = js.native
+  def calculateModuleSize(topLeft: AlignmentPattern, topRight: AlignmentPattern, bottomLeft: AlignmentPattern): Double
   
-  def calculateModuleSizeOneWay(pattern: AlignmentPattern, otherPattern: AlignmentPattern): Double = js.native
+  def calculateModuleSizeOneWay(pattern: AlignmentPattern, otherPattern: AlignmentPattern): Double
   
   def computeDimension(
     topLeft: AlignmentPattern,
     topRight: AlignmentPattern,
     bottomLeft: AlignmentPattern,
     moduleSize: Double
-  ): Double = js.native
+  ): Double
   
   def createTransform(
     topLeft: AlignmentPattern,
@@ -26,30 +24,30 @@ trait Detector extends StObject {
     bottomLeft: AlignmentPattern,
     alignmentPattern: AlignmentPattern,
     dimension: Double
-  ): PerspectiveTransform = js.native
+  ): PerspectiveTransform
   
-  def detect(): DetectorResult = js.native
+  def detect(): DetectorResult
   
-  def distance(pattern1: AlignmentPattern, pattern2: AlignmentPattern): Double = js.native
+  def distance(pattern1: AlignmentPattern, pattern2: AlignmentPattern): Double
   
   def findAlignmentInRegion(
     overallEstModuleSize: Double,
     estAlignmentX: Double,
     estAlignmentY: Double,
     allowanceFactor: Double
-  ): AlignmentPattern = js.native
+  ): AlignmentPattern
   
-  var image: Uint8Array = js.native
+  var image: Uint8Array
   
-  def processFinderPatternInfo(info: FinderPatternInfo): DetectorResult = js.native
+  def processFinderPatternInfo(info: FinderPatternInfo): DetectorResult
   
-  var resultPointCallback: ResultPointCallback = js.native
+  var resultPointCallback: ResultPointCallback
   
-  def sampleGrid(image: Uint8Array, transform: PerspectiveTransform, dimension: Double): BitMatrix = js.native
+  def sampleGrid(image: Uint8Array, transform: PerspectiveTransform, dimension: Double): BitMatrix
   
-  def sizeOfBlackWhiteBlackRun(fromX: Double, fromY: Double, toX: Double, toY: Double): Double = js.native
+  def sizeOfBlackWhiteBlackRun(fromX: Double, fromY: Double, toX: Double, toY: Double): Double
   
-  def sizeOfBlackWhiteBlackRunBothWays(fromX: Double, fromY: Double, toX: Double, toY: Double): Double = js.native
+  def sizeOfBlackWhiteBlackRunBothWays(fromX: Double, fromY: Double, toX: Double, toY: Double): Double
 }
 object Detector {
   

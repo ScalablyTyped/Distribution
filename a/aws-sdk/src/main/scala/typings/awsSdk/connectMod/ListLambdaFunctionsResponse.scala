@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLambdaFunctionsResponse extends StObject {
   
   /**
     * The Lambdafunction ARNs associated with the specified instance.
     */
-  var LambdaFunctions: js.UndefOr[FunctionArnsList] = js.native
+  var LambdaFunctions: js.UndefOr[FunctionArnsList] = js.undefined
   
   /**
     * If there are additional results, this is the token for the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.connectMod.NextToken] = js.undefined
 }
 object ListLambdaFunctionsResponse {
   

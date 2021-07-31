@@ -2,7 +2,6 @@ package typings.sigmajs.SigmaJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -10,7 +9,7 @@ trait Graph extends StObject {
   
   def addEdge(edge: Edge): Graph = js.native
   
-  def addMethod(name: String, method: js.Function1[/* input */ js.Any, _]): Unit = js.native
+  def addMethod(name: String, method: js.Function1[/* input */ js.Any, js.Any]): Unit = js.native
   
   def addNode(node: Node): Graph = js.native
   

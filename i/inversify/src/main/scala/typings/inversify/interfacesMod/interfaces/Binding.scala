@@ -2,38 +2,116 @@ package typings.inversify.interfacesMod.interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Binding[T] extends Clonable[Binding[T]] {
+trait Binding[T]
+  extends StObject
+     with Clonable[Binding[T]] {
   
-  var activated: Boolean = js.native
+  var activated: Boolean
   
-  var cache: T | Null = js.native
+  var cache: T | Null
   
-  def constraint(): Boolean = js.native
-  def constraint(request: Request): Boolean = js.native
+  def constraint(): Boolean
+  def constraint(request: Request): Boolean
   @JSName("constraint")
-  var constraint_Original: ConstraintFunction = js.native
+  var constraint_Original: ConstraintFunction
   
-  var dynamicValue: (js.Function1[/* context */ Context, T]) | Null = js.native
+  var dynamicValue: (js.Function1[/* context */ Context, T]) | Null
   
-  var factory: FactoryCreator[_] | Null = js.native
+  var factory: FactoryCreator[js.Any] | Null
   
-  var id: Double = js.native
+  var id: Double
   
-  var implementationType: Newable[T] | Null = js.native
+  var implementationType: Newable[T] | Null
   
-  var moduleId: String = js.native
+  var moduleId: String
   
-  var onActivation: (js.Function2[/* context */ Context, /* injectable */ T, T]) | Null = js.native
+  var onActivation: (js.Function2[/* context */ Context, /* injectable */ T, T]) | Null
   
-  var provider: ProviderCreator[_] | Null = js.native
+  var provider: ProviderCreator[js.Any] | Null
   
-  var scope: BindingScope = js.native
+  var scope: BindingScope
   
-  var serviceIdentifier: ServiceIdentifier[T] = js.native
+  var serviceIdentifier: ServiceIdentifier[T]
   
-  var `type`: BindingType = js.native
+  var `type`: BindingType
+}
+object Binding {
+  
+  @scala.inline
+  def apply[T](
+    activated: Boolean,
+    constraint: ConstraintFunction,
+    id: Double,
+    moduleId: String,
+    scope: BindingScope,
+    serviceIdentifier: ServiceIdentifier[T],
+    `type`: BindingType
+  ): Binding[T] = {
+    val __obj = js.Dynamic.literal(activated = activated.asInstanceOf[js.Any], constraint = constraint.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], moduleId = moduleId.asInstanceOf[js.Any], scope = scope.asInstanceOf[js.Any], serviceIdentifier = serviceIdentifier.asInstanceOf[js.Any], cache = null, dynamicValue = null, factory = null, implementationType = null, onActivation = null, provider = null)
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Binding[T]]
+  }
+  
+  @scala.inline
+  implicit class BindingMutableBuilder[Self <: Binding[?], T] (val x: Self & Binding[T]) extends AnyVal {
+    
+    @scala.inline
+    def setActivated(value: Boolean): Self = StObject.set(x, "activated", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCache(value: T): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setCacheNull: Self = StObject.set(x, "cache", null)
+    
+    @scala.inline
+    def setConstraint(value: ConstraintFunction): Self = StObject.set(x, "constraint", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDynamicValue(value: /* context */ Context => T): Self = StObject.set(x, "dynamicValue", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setDynamicValueNull: Self = StObject.set(x, "dynamicValue", null)
+    
+    @scala.inline
+    def setFactory(value: /* context */ Context => Factory[js.Any]): Self = StObject.set(x, "factory", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setFactoryNull: Self = StObject.set(x, "factory", null)
+    
+    @scala.inline
+    def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setImplementationType(value: Newable[T]): Self = StObject.set(x, "implementationType", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setImplementationTypeNull: Self = StObject.set(x, "implementationType", null)
+    
+    @scala.inline
+    def setModuleId(value: String): Self = StObject.set(x, "moduleId", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOnActivation(value: (/* context */ Context, /* injectable */ T) => T): Self = StObject.set(x, "onActivation", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setOnActivationNull: Self = StObject.set(x, "onActivation", null)
+    
+    @scala.inline
+    def setProvider(value: /* context */ Context => Provider[js.Any]): Self = StObject.set(x, "provider", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setProviderNull: Self = StObject.set(x, "provider", null)
+    
+    @scala.inline
+    def setScope(value: BindingScope): Self = StObject.set(x, "scope", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setServiceIdentifier(value: ServiceIdentifier[T]): Self = StObject.set(x, "serviceIdentifier", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setType(value: BindingType): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+  }
 }

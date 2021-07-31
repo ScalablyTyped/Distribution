@@ -2,21 +2,19 @@ package typings.forgeApis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IfNoneMatch extends StObject {
   
-  var acceptEncoding: js.UndefOr[String] = js.native
+  var acceptEncoding: js.UndefOr[String] = js.undefined
   
-  var ifModifiedSince: js.UndefOr[String] = js.native
+  var ifModifiedSince: js.UndefOr[String] = js.undefined
   
-  var ifNoneMatch: js.UndefOr[String] = js.native
+  var ifNoneMatch: js.UndefOr[String] = js.undefined
   
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object IfNoneMatch {
   

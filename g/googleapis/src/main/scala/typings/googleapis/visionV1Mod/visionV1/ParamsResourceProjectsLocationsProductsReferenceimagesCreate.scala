@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsLocationsProductsReferenceimagesCreate extends StandardParameters {
+trait ParamsResourceProjectsLocationsProductsReferenceimagesCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Resource name of the product in which to create the reference image.
     * Format is `projects/PROJECT_ID/locations/LOC_ID/products/PRODUCT_ID`.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * A user-supplied resource id for the ReferenceImage to be added. If set,
@@ -29,12 +29,12 @@ trait ParamsResourceProjectsLocationsProductsReferenceimagesCreate extends Stand
     * already in use, an error is returned with code ALREADY_EXISTS. Must be at
     * most 128 characters long. It cannot contain the character `/`.
     */
-  var referenceImageId: js.UndefOr[String] = js.native
+  var referenceImageId: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaReferenceImage] = js.native
+  var requestBody: js.UndefOr[SchemaReferenceImage] = js.undefined
 }
 object ParamsResourceProjectsLocationsProductsReferenceimagesCreate {
   

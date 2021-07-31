@@ -2,11 +2,9 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the PivotTableStyle object, for use in `pivotTableStyle.set({ ... })`. */
-@js.native
 trait PivotTableStyleUpdateData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait PivotTableStyleUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object PivotTableStyleUpdateData {
   

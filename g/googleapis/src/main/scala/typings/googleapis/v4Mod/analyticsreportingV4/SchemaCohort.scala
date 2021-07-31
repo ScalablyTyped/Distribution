@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * characteristic. For example, all users with the same acquisition date
   * belong to the same cohort.
   */
-@js.native
 trait SchemaCohort extends StObject {
   
   /**
@@ -25,20 +23,20 @@ trait SchemaCohort extends StObject {
     * You do not need to supply a date range for the
     * `reportsRequest.dateRanges` field.
     */
-  var dateRange: js.UndefOr[SchemaDateRange] = js.native
+  var dateRange: js.UndefOr[SchemaDateRange] = js.undefined
   
   /**
     * A unique name for the cohort. If not defined name will be auto-generated
     * with values cohort_[1234...].
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the cohort. The only supported type as of now is
     * `FIRST_VISIT_DATE`. If this field is unspecified the cohort is treated as
     * `FIRST_VISIT_DATE` type cohort.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaCohort {
   

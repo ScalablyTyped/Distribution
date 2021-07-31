@@ -2,7 +2,6 @@ package typings.googleapis.v4Mod.analyticsreportingV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * city, for example, &quot;Paris&quot; or &quot;New York&quot;, from which a
   * session originates.
   */
-@js.native
 trait SchemaDimension extends StObject {
   
   /**
@@ -40,12 +38,12 @@ trait SchemaDimension extends StObject {
     * has to explicitly request `&quot;orderType&quot;:
     * &quot;HISTOGRAM_BUCKET&quot;` for a histogram-mutated dimension.
     */
-  var histogramBuckets: js.UndefOr[js.Array[String]] = js.native
+  var histogramBuckets: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Name of the dimension to fetch, for example `ga:browser`.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaDimension {
   

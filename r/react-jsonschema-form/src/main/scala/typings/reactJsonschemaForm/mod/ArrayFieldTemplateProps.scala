@@ -8,43 +8,41 @@ import typings.reactJsonschemaForm.anon.Description
 import typings.reactJsonschemaForm.anon.Id
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayFieldTemplateProps[T] extends StObject {
   
-  var DescriptionField: StatelessComponent[Description] = js.native
+  var DescriptionField: StatelessComponent[Description]
   
-  var TitleField: StatelessComponent[Id] = js.native
+  var TitleField: StatelessComponent[Id]
   
-  var canAdd: Boolean = js.native
+  var canAdd: Boolean
   
-  var className: String = js.native
+  var className: String
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var formContext: js.Any = js.native
+  var formContext: js.Any
   
-  var formData: T = js.native
+  var formData: T
   
-  var idSchema: IdSchema[_] = js.native
+  var idSchema: IdSchema[js.Any]
   
-  var items: js.Array[Children] = js.native
+  var items: js.Array[Children]
   
-  def onAddClick(event: js.Any): js.Function1[/* event */ js.Any, Unit] = js.native
+  def onAddClick(event: js.Any): js.Function1[/* event */ js.Any, Unit]
   
-  var readonly: Boolean = js.native
+  var readonly: Boolean
   
-  var registry: Definitions = js.native
+  var registry: Definitions
   
-  var required: Boolean = js.native
+  var required: Boolean
   
-  var schema: JSONSchema6 = js.native
+  var schema: JSONSchema6
   
-  var title: String = js.native
+  var title: String
   
-  var uiSchema: UiSchema = js.native
+  var uiSchema: UiSchema
 }
 object ArrayFieldTemplateProps {
   
@@ -57,7 +55,7 @@ object ArrayFieldTemplateProps {
     disabled: Boolean,
     formContext: js.Any,
     formData: T,
-    idSchema: IdSchema[_],
+    idSchema: IdSchema[js.Any],
     items: js.Array[Children],
     onAddClick: js.Any => js.Function1[/* event */ js.Any, Unit],
     readonly: Boolean,
@@ -72,7 +70,7 @@ object ArrayFieldTemplateProps {
   }
   
   @scala.inline
-  implicit class ArrayFieldTemplatePropsMutableBuilder[Self <: ArrayFieldTemplateProps[_], T] (val x: Self with ArrayFieldTemplateProps[T]) extends AnyVal {
+  implicit class ArrayFieldTemplatePropsMutableBuilder[Self <: ArrayFieldTemplateProps[?], T] (val x: Self & ArrayFieldTemplateProps[T]) extends AnyVal {
     
     @scala.inline
     def setCanAdd(value: Boolean): Self = StObject.set(x, "canAdd", value.asInstanceOf[js.Any])
@@ -93,7 +91,7 @@ object ArrayFieldTemplateProps {
     def setFormData(value: T): Self = StObject.set(x, "formData", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setIdSchema(value: IdSchema[_]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
+    def setIdSchema(value: IdSchema[js.Any]): Self = StObject.set(x, "idSchema", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItems(value: js.Array[Children]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])

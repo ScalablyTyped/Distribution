@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,4 +10,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ToggleTableCellInsideHorizontalBordersCommand")
 @js.native
 class ToggleTableCellInsideHorizontalBordersCommand ()
-  extends typings.devexpressWeb.ToggleTableCellInsideHorizontalBordersCommand
+  extends StObject
+     with typings.devexpressWeb.ToggleTableCellInsideHorizontalBordersCommand {
+  
+  /**
+    * Executes the ToggleTableCellInsideHorizontalBordersCommand command.
+    */
+  /* CompleteClass */
+  override def execute(): Boolean = js.native
+  
+  /**
+    * Gets information about the command's state.
+    */
+  /* CompleteClass */
+  override def getState(): typings.devexpressWeb.CommandState[Boolean] = js.native
+}

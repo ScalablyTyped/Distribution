@@ -2,15 +2,15 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FancyBoxThumbPos extends FancyBoxGetFitPosResults {
+trait FancyBoxThumbPos
+  extends StObject
+     with FancyBoxGetFitPosResults {
   
-  var scaleX: js.UndefOr[Double] = js.native
+  var scaleX: js.UndefOr[Double] = js.undefined
   
-  var scaleY: js.UndefOr[Double] = js.native
+  var scaleY: js.UndefOr[Double] = js.undefined
 }
 object FancyBoxThumbPos {
   

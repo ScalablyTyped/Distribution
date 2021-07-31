@@ -2,35 +2,33 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaHealthStatusForNetworkEndpoint extends StObject {
   
   /**
     * URL of the backend service associated with the health state of the
     * network endpoint.
     */
-  var backendService: js.UndefOr[SchemaBackendServiceReference] = js.native
+  var backendService: js.UndefOr[SchemaBackendServiceReference] = js.undefined
   
   /**
     * URL of the forwarding rule associated with the health state of the
     * network endpoint.
     */
-  var forwardingRule: js.UndefOr[SchemaForwardingRuleReference] = js.native
+  var forwardingRule: js.UndefOr[SchemaForwardingRuleReference] = js.undefined
   
   /**
     * URL of the health check associated with the health state of the network
     * endpoint.
     */
-  var healthCheck: js.UndefOr[SchemaHealthCheckReference] = js.native
+  var healthCheck: js.UndefOr[SchemaHealthCheckReference] = js.undefined
   
   /**
     * Health state of the network endpoint determined based on the health
     * checks configured.
     */
-  var healthState: js.UndefOr[String] = js.native
+  var healthState: js.UndefOr[String] = js.undefined
 }
 object SchemaHealthStatusForNetworkEndpoint {
   

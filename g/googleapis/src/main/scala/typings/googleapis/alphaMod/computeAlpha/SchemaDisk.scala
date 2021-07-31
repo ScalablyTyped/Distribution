@@ -3,26 +3,24 @@ package typings.googleapis.alphaMod.computeAlpha
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Disk resource. (== resource_for beta.disks ==) (== resource_for v1.disks
   * ==)
   */
-@js.native
 trait SchemaDisk extends StObject {
   
   /**
     * [Output Only] Creation timestamp in RFC3339 text format.
     */
-  var creationTimestamp: js.UndefOr[String] = js.native
+  var creationTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * An optional description of this resource. Provide this property when you
     * create the resource.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * Encrypts the disk using a customer-supplied encryption key.  After you
@@ -34,25 +32,25 @@ trait SchemaDisk extends StObject {
     * be encrypted using an automatically generated key and you do not need to
     * provide a key to use the disk later.
     */
-  var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var diskEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * A list of features to enable on the guest operating system. Applicable
     * only for bootable images. Read  Enabling guest operating system features
     * to see a list of available options.
     */
-  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.native
+  var guestOsFeatures: js.UndefOr[js.Array[SchemaGuestOsFeature]] = js.undefined
   
   /**
     * [Output Only] The unique identifier for the resource. This identifier is
     * defined by the server.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Type of the resource. Always compute#disk for disks.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A fingerprint for the labels being applied to this disk, which is
@@ -63,40 +61,40 @@ trait SchemaDisk extends StObject {
     * otherwise the request will fail with error 412 conditionNotMet.  To see
     * the latest fingerprint, make a get() request to retrieve a disk.
     */
-  var labelFingerprint: js.UndefOr[String] = js.native
+  var labelFingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to apply to this disk. These can be later modified by the
     * setLabels method.
     */
-  var labels: js.UndefOr[StringDictionary[String]] = js.native
+  var labels: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * [Output Only] Last attach timestamp in RFC3339 text format.
     */
-  var lastAttachTimestamp: js.UndefOr[String] = js.native
+  var lastAttachTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Last detach timestamp in RFC3339 text format.
     */
-  var lastDetachTimestamp: js.UndefOr[String] = js.native
+  var lastDetachTimestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Integer license codes indicating which licenses are attached to this
     * disk.
     */
-  var licenseCodes: js.UndefOr[js.Array[String]] = js.native
+  var licenseCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of publicly visible licenses. Reserved for Google&#39;s use.
     */
-  var licenses: js.UndefOr[js.Array[String]] = js.native
+  var licenses: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates whether or not the disk can be read/write attached to more than
     * one instance.
     */
-  var multiWriter: js.UndefOr[Boolean] = js.native
+  var multiWriter: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the resource. Provided by the client when the resource is
@@ -107,12 +105,12 @@ trait SchemaDisk extends StObject {
     * lowercase letter, or digit, except the last character, which cannot be a
     * dash.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Internal use only.
     */
-  var options: js.UndefOr[String] = js.native
+  var options: js.UndefOr[String] = js.undefined
   
   /**
     * Physical block size of the persistent disk, in bytes. If not present in a
@@ -121,30 +119,30 @@ trait SchemaDisk extends StObject {
     * requested, the error message will list the supported values for the
     * caller&#39;s project.
     */
-  var physicalBlockSizeBytes: js.UndefOr[String] = js.native
+  var physicalBlockSizeBytes: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] URL of the region where the disk resides. Only applicable
     * for regional resources. You must specify this field as part of the HTTP
     * request URL. It is not settable as a field in the request body.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
   
   /**
     * URLs of the zones where the disk should be replicated to. Only applicable
     * for regional resources.
     */
-  var replicaZones: js.UndefOr[js.Array[String]] = js.native
+  var replicaZones: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Resource policies applied to this disk for automatic snapshot creations.
     */
-  var resourcePolicies: js.UndefOr[js.Array[String]] = js.native
+  var resourcePolicies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] Server-defined fully-qualified URL for this resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * Size of the persistent disk, specified in GB. You can specify this field
@@ -154,7 +152,7 @@ trait SchemaDisk extends StObject {
     * value of sizeGb must not be less than the size of the sourceImage or the
     * size of the snapshot. Acceptable values are 1 to 65536, inclusive.
     */
-  var sizeGb: js.UndefOr[String] = js.native
+  var sizeGb: js.UndefOr[String] = js.undefined
   
   /**
     * The source disk used to create this disk. You can provide this as a
@@ -163,7 +161,7 @@ trait SchemaDisk extends StObject {
     * https://www.googleapis.com/compute/v1/projects/project/zones/zone/disks/disk
     * - projects/project/zones/zone/disks/disk  - zones/zone/disks/disk
     */
-  var sourceDisk: js.UndefOr[String] = js.native
+  var sourceDisk: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The unique ID of the disk used to create this disk. This
@@ -172,7 +170,7 @@ trait SchemaDisk extends StObject {
     * was later deleted and recreated under the same name, the source disk ID
     * would identify the exact version of the disk that was used.
     */
-  var sourceDiskId: js.UndefOr[String] = js.native
+  var sourceDiskId: js.UndefOr[String] = js.undefined
   
   /**
     * The source image used to create this disk. If the source image is
@@ -188,13 +186,13 @@ trait SchemaDisk extends StObject {
     * version of the image in that family. Replace the image name with
     * family/family-name: global/images/family/my-image-family
     */
-  var sourceImage: js.UndefOr[String] = js.native
+  var sourceImage: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source image. Required if the
     * source image is protected by a customer-supplied encryption key.
     */
-  var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceImageEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] The ID value of the image used to create this disk. This
@@ -203,7 +201,7 @@ trait SchemaDisk extends StObject {
     * was later deleted and recreated under the same name, the source image ID
     * would identify the exact version of the image that was used.
     */
-  var sourceImageId: js.UndefOr[String] = js.native
+  var sourceImageId: js.UndefOr[String] = js.undefined
   
   /**
     * The source snapshot used to create this disk. You can provide this as a
@@ -212,13 +210,13 @@ trait SchemaDisk extends StObject {
     * https://www.googleapis.com/compute/v1/projects/project/global/snapshots/snapshot
     * - projects/project/global/snapshots/snapshot  - global/snapshots/snapshot
     */
-  var sourceSnapshot: js.UndefOr[String] = js.native
+  var sourceSnapshot: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-supplied encryption key of the source snapshot. Required if
     * the source snapshot is protected by a customer-supplied encryption key.
     */
-  var sourceSnapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.native
+  var sourceSnapshotEncryptionKey: js.UndefOr[SchemaCustomerEncryptionKey] = js.undefined
   
   /**
     * [Output Only] The unique ID of the snapshot used to create this disk.
@@ -228,37 +226,37 @@ trait SchemaDisk extends StObject {
     * source snapshot ID would identify the exact version of the snapshot that
     * was used.
     */
-  var sourceSnapshotId: js.UndefOr[String] = js.native
+  var sourceSnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The status of disk creation.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * [Deprecated] Storage type of the persistent disk.
     */
-  var storageType: js.UndefOr[String] = js.native
+  var storageType: js.UndefOr[String] = js.undefined
   
   /**
     * URL of the disk type resource describing which disk type to use to create
     * the disk. Provide this when creating the disk. For example:
     * project/zones/zone/diskTypes/pd-standard or pd-ssd
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] Links to the users of the disk (attached instances) in
     * form: project/zones/zone/instances/instance
     */
-  var users: js.UndefOr[js.Array[String]] = js.native
+  var users: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * [Output Only] URL of the zone where the disk resides. You must specify
     * this field as part of the HTTP request URL. It is not settable as a field
     * in the request body.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaDisk {
   

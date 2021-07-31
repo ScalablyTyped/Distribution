@@ -9,14 +9,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentMod {
   
   @JSImport("@ionic/core/dist/types/components/segment/segment", "Segment")
   @js.native
-  class Segment () extends ComponentInterface {
+  class Segment ()
+    extends StObject
+       with ComponentInterface {
     
     var activate: js.Any = js.native
     
@@ -41,8 +42,9 @@ object segmentMod {
     var color: js.UndefOr[Color] = js.native
     
     /* protected */ def colorChanged(): Unit = js.native
-    /* protected */ def colorChanged(value: js.UndefOr[Color], oldValue: Color): Unit = js.native
+    /* protected */ def colorChanged(value: Unit, oldValue: Color): Unit = js.native
     /* protected */ def colorChanged(value: Color): Unit = js.native
+    /* protected */ def colorChanged(value: Color, oldValue: Color): Unit = js.native
     
     @JSName("componentDidLoad")
     def componentDidLoad_MSegment(): js.Promise[Unit] = js.native
@@ -131,8 +133,8 @@ object segmentMod {
     var valueAfterGesture: js.Any = js.native
     
     /* protected */ def valueChanged(): Unit = js.native
-    /* protected */ def valueChanged(value: js.UndefOr[scala.Nothing], oldValue: String): Unit = js.native
     /* protected */ def valueChanged(value: String): Unit = js.native
     /* protected */ def valueChanged(value: String, oldValue: String): Unit = js.native
+    /* protected */ def valueChanged(value: Unit, oldValue: String): Unit = js.native
   }
 }

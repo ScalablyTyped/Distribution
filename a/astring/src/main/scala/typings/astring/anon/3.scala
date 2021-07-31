@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.ForInStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `3` extends StObject {
   
-  var `type`: ForInStatement = js.native
+  var `type`: ForInStatement
 }
 object `3` {
   
   @scala.inline
-  def apply(`type`: ForInStatement): `3` = {
+  def apply(): `3` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ForInStatement")
     __obj.asInstanceOf[`3`]
   }
   

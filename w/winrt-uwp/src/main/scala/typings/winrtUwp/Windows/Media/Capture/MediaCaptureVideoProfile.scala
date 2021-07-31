@@ -3,33 +3,31 @@ package typings.winrtUwp.Windows.Media.Capture
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a video profile that indicates a configuration supported by the video capture device. */
-@js.native
 trait MediaCaptureVideoProfile extends StObject {
   
   /**
     * Gets the list of MediaCaptureVideoProfile objects that can be used concurrently with this video profile.
     * @return The list of MediaCaptureVideoProfile objects that can be used concurrently with this video profile.
     */
-  def getConcurrency(): IVectorView[MediaCaptureVideoProfile] = js.native
+  def getConcurrency(): IVectorView[MediaCaptureVideoProfile]
   
   /** Gets the unique identifier of the video profile. */
-  var id: String = js.native
+  var id: String
   
   /** Gets a list of MediaCaptureVideoProfileMediaDescription objects that represent supported video device settings for photo capture. */
-  var supportedPhotoMediaDescription: IVectorView[MediaCaptureVideoProfileMediaDescription] = js.native
+  var supportedPhotoMediaDescription: IVectorView[MediaCaptureVideoProfileMediaDescription]
   
   /** Gets a list of MediaCaptureVideoProfileMediaDescription objects that represent supported video device settings for video preview. */
-  var supportedPreviewMediaDescription: IVectorView[MediaCaptureVideoProfileMediaDescription] = js.native
+  var supportedPreviewMediaDescription: IVectorView[MediaCaptureVideoProfileMediaDescription]
   
   /** Gets a list of MediaCaptureVideoProfileMediaDescription objects that represent supported video device settings for video recording. */
-  var supportedRecordMediaDescription: IVectorView[MediaCaptureVideoProfileMediaDescription] = js.native
+  var supportedRecordMediaDescription: IVectorView[MediaCaptureVideoProfileMediaDescription]
   
   /** Gets the device ID of the video device associated with the video profile. */
-  var videoDeviceId: String = js.native
+  var videoDeviceId: String
 }
 object MediaCaptureVideoProfile {
   

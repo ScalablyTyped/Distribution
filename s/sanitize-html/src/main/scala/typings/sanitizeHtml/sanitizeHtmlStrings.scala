@@ -3,23 +3,28 @@ package typings.sanitizeHtml
 import typings.sanitizeHtml.mod.DisallowedTagsModes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sanitizeHtmlStrings {
   
   @js.native
-  sealed trait discard extends DisallowedTagsModes
+  sealed trait discard
+    extends StObject
+       with DisallowedTagsModes
   @scala.inline
   def discard: discard = "discard".asInstanceOf[discard]
   
   @js.native
-  sealed trait escape extends DisallowedTagsModes
+  sealed trait escape
+    extends StObject
+       with DisallowedTagsModes
   @scala.inline
   def escape: escape = "escape".asInstanceOf[escape]
   
   @js.native
-  sealed trait recursiveEscape extends DisallowedTagsModes
+  sealed trait recursiveEscape
+    extends StObject
+       with DisallowedTagsModes
   @scala.inline
   def recursiveEscape: recursiveEscape = "recursiveEscape".asInstanceOf[recursiveEscape]
 }

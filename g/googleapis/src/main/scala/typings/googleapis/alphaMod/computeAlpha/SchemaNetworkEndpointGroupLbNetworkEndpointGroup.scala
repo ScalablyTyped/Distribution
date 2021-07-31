@@ -2,39 +2,37 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Load balancing specific fields for network endpoint group.
   */
-@js.native
 trait SchemaNetworkEndpointGroupLbNetworkEndpointGroup extends StObject {
   
   /**
     * The default port used if the port number is not specified in the network
     * endpoint. [Deprecated] This field is deprecated.
     */
-  var defaultPort: js.UndefOr[Double] = js.native
+  var defaultPort: js.UndefOr[Double] = js.undefined
   
   /**
     * The URL of the network to which all network endpoints in the NEG belong.
     * Uses &quot;default&quot; project network if unspecified. [Deprecated]
     * This field is deprecated.
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Optional URL of the subnetwork to which all network endpoints in the NEG
     * belong. [Deprecated] This field is deprecated.
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
   
   /**
     * [Output Only] The URL of the zone where the network endpoint group is
     * located. [Deprecated] This field is deprecated.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaNetworkEndpointGroupLbNetworkEndpointGroup {
   

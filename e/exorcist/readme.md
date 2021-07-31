@@ -11,8 +11,8 @@ Externalizes the source map found inside a stream to an external `.js.map` file
 | Full name          | exorcist |
 | Keywords           | source-map, source, map, external, mapfile, browserify, browserify-tool |
 | # releases         | 0 |
-| # dependents       | 83 |
-| # downloads        | 821922 |
+| # dependents       | 81 |
+| # downloads        | 1004586 |
 | # stars            | 19 |
 
 ## Links

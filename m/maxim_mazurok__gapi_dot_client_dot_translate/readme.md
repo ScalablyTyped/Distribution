@@ -10,9 +10,9 @@ TypeScript typings for Cloud Translation API v3
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.translate |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 0 |
-| # downloads        | 39 |
+| # releases         | 6 |
+| # dependents       | 1 |
+| # downloads        | 853 |
 | # stars            | 0 |
 
 ## Links

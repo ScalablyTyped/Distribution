@@ -7,7 +7,6 @@ import typings.firefoxWebextBrowser.browser.notifications.PermissionLevel
 import typings.firefoxWebextBrowser.browser.notifications.UpdateNotificationOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,43 +16,42 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object notifications {
   
+  @JSGlobal("browser.notifications")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Clears an existing notification.
     * @param notificationId The id of the notification to be updated.
     */
-  @JSGlobal("browser.notifications.clear")
-  @js.native
-  def clear(notificationId: String): js.Promise[Boolean] = js.native
+  @scala.inline
+  def clear(notificationId: String): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")(notificationId.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
   
   /**
     * Creates and displays a notification.
     * @param notificationId Identifier of the notification. If it is empty, this method generates an id. If it matches an existing notification, this method first clears that notification before proceeding with the create operation.
     * @param options Contents of the notification.
     */
-  @JSGlobal("browser.notifications.create")
-  @js.native
-  def create(notificationId: String, options: CreateNotificationOptions): js.Promise[String] = js.native
+  @scala.inline
+  def create(notificationId: String, options: CreateNotificationOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   /* notifications functions */
   /**
     * Creates and displays a notification.
     * @param options Contents of the notification.
     */
-  @JSGlobal("browser.notifications.create")
-  @js.native
-  def create(options: CreateNotificationOptions): js.Promise[String] = js.native
+  @scala.inline
+  def create(options: CreateNotificationOptions): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
   
   /** Retrieves all the notifications. */
-  @JSGlobal("browser.notifications.getAll")
-  @js.native
-  def getAll(): js.Promise[StringDictionary[CreateNotificationOptions]] = js.native
+  @scala.inline
+  def getAll(): js.Promise[StringDictionary[CreateNotificationOptions]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAll")().asInstanceOf[js.Promise[StringDictionary[CreateNotificationOptions]]]
   
   /**
     * Retrieves whether the user has enabled notifications from this app or extension.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.notifications.getPermissionLevel")
-  @js.native
-  def getPermissionLevel(): js.Promise[PermissionLevel] = js.native
+  @scala.inline
+  def getPermissionLevel(): js.Promise[PermissionLevel] = ^.asInstanceOf[js.Dynamic].applyDynamic("getPermissionLevel")().asInstanceOf[js.Promise[PermissionLevel]]
   
   /**
     * Fired when the user pressed a button in the notification.
@@ -113,7 +111,6 @@ object notifications {
     * @param options Contents of the notification to update to.
     * @deprecated Unsupported on Firefox at this time.
     */
-  @JSGlobal("browser.notifications.update")
-  @js.native
-  def update(notificationId: String, options: UpdateNotificationOptions): js.Promise[Boolean] = js.native
+  @scala.inline
+  def update(notificationId: String, options: UpdateNotificationOptions): js.Promise[Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(notificationId.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Boolean]]
 }

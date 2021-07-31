@@ -4,22 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.firebase.mod.firebase.analytics.Item
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Coupon
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var coupon: js.UndefOr[String] = js.native
+  var coupon: js.UndefOr[String] = js.undefined
   
-  var currency: js.UndefOr[String] = js.native
+  var currency: js.UndefOr[String] = js.undefined
   
-  var items: js.UndefOr[js.Array[Item]] = js.native
+  var items: js.UndefOr[js.Array[Item]] = js.undefined
   
-  var shipping_tier: js.UndefOr[String] = js.native
+  var shipping_tier: js.UndefOr[String] = js.undefined
   
-  var value: js.UndefOr[Double] = js.native
+  var value: js.UndefOr[Double] = js.undefined
 }
 object Coupon {
   

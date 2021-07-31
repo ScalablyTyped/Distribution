@@ -3,7 +3,6 @@ package typings.dynogels.mod.AWS
 import typings.awsSdk.iot1clickprojectsMod.ClientConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("dynogels", "AWS.IoT1ClickProjects")

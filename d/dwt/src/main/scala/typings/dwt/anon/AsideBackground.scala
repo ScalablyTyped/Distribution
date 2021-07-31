@@ -2,22 +2,20 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AsideBackground extends StObject {
   
   // Example: '#000000'
-  var asideBackground: js.UndefOr[String] = js.native
+  var asideBackground: js.UndefOr[String] = js.undefined
   
   // Example: 'rgba(67,66,70,1)'
-  var bottomMenuBackground: js.UndefOr[String] = js.native
+  var bottomMenuBackground: js.UndefOr[String] = js.undefined
   
   // Example: '#ffffff'
-  var canvasBackground: js.UndefOr[String] = js.native
+  var canvasBackground: js.UndefOr[String] = js.undefined
   
-  var topMenuBackground: js.UndefOr[String] = js.native
+  var topMenuBackground: js.UndefOr[String] = js.undefined
 }
 object AsideBackground {
   

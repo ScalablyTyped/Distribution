@@ -2,26 +2,24 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for ListDeidentifyTemplates.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse extends StObject {
   
   /**
     * List of deidentify templates, up to page_size in
     * ListDeidentifyTemplatesRequest.
     */
-  var deidentifyTemplates: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DeidentifyTemplate]] = js.native
+  var deidentifyTemplates: js.UndefOr[js.Array[SchemaGooglePrivacyDlpV2DeidentifyTemplate]] = js.undefined
   
   /**
     * If the next page is available then the next page token to be used in
     * following ListDeidentifyTemplates request.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ListDeidentifyTemplatesResponse {
   

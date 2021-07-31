@@ -3,74 +3,72 @@ package typings.devtoolsProtocol.mod.Protocol.Input
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SynthesizeScrollGestureRequest extends StObject {
   
   /**
     * Which type of input events to be generated (default: 'default', which queries the platform
     * for the preferred input type).
     */
-  var gestureSourceType: js.UndefOr[GestureSourceType] = js.native
+  var gestureSourceType: js.UndefOr[GestureSourceType] = js.undefined
   
   /**
     * The name of the interaction markers to generate, if not empty (default: "").
     */
-  var interactionMarkerName: js.UndefOr[String] = js.native
+  var interactionMarkerName: js.UndefOr[String] = js.undefined
   
   /**
     * Prevent fling (default: true).
     */
-  var preventFling: js.UndefOr[Boolean] = js.native
+  var preventFling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of times to repeat the gesture (default: 0).
     */
-  var repeatCount: js.UndefOr[integer] = js.native
+  var repeatCount: js.UndefOr[integer] = js.undefined
   
   /**
     * The number of milliseconds delay between each repeat. (default: 250).
     */
-  var repeatDelayMs: js.UndefOr[integer] = js.native
+  var repeatDelayMs: js.UndefOr[integer] = js.undefined
   
   /**
     * Swipe speed in pixels per second (default: 800).
     */
-  var speed: js.UndefOr[integer] = js.native
+  var speed: js.UndefOr[integer] = js.undefined
   
   /**
     * X coordinate of the start of the gesture in CSS pixels.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The distance to scroll along the X axis (positive to scroll left).
     */
-  var xDistance: js.UndefOr[Double] = js.native
+  var xDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of additional pixels to scroll back along the X axis, in addition to the given
     * distance.
     */
-  var xOverscroll: js.UndefOr[Double] = js.native
+  var xOverscroll: js.UndefOr[Double] = js.undefined
   
   /**
     * Y coordinate of the start of the gesture in CSS pixels.
     */
-  var y: Double = js.native
+  var y: Double
   
   /**
     * The distance to scroll along the Y axis (positive to scroll up).
     */
-  var yDistance: js.UndefOr[Double] = js.native
+  var yDistance: js.UndefOr[Double] = js.undefined
   
   /**
     * The number of additional pixels to scroll back along the Y axis, in addition to the given
     * distance.
     */
-  var yOverscroll: js.UndefOr[Double] = js.native
+  var yOverscroll: js.UndefOr[Double] = js.undefined
 }
 object SynthesizeScrollGestureRequest {
   

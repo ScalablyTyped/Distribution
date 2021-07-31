@@ -2,29 +2,28 @@ package typings.rcUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickAttrsMod {
   
-  @JSImport("rc-util/lib/pickAttrs", JSImport.Default)
+  @JSImport("rc-util/lib/pickAttrs", JSImport.Namespace)
   @js.native
-  def default(props: js.Object): js.Object = js.native
-  @JSImport("rc-util/lib/pickAttrs", JSImport.Default)
-  @js.native
-  def default(props: js.Object, ariaOnly: Boolean): js.Object = js.native
-  @JSImport("rc-util/lib/pickAttrs", JSImport.Default)
-  @js.native
-  def default(props: js.Object, ariaOnly: PickConfig): js.Object = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(props: js.Object): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  @scala.inline
+  def default(props: js.Object, ariaOnly: Boolean): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], ariaOnly.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  @scala.inline
+  def default(props: js.Object, ariaOnly: PickConfig): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any], ariaOnly.asInstanceOf[js.Any])).asInstanceOf[js.Object]
+  
   trait PickConfig extends StObject {
     
-    var aria: js.UndefOr[Boolean] = js.native
+    var aria: js.UndefOr[Boolean] = js.undefined
     
-    var attr: js.UndefOr[Boolean] = js.native
+    var attr: js.UndefOr[Boolean] = js.undefined
     
-    var data: js.UndefOr[Boolean] = js.native
+    var data: js.UndefOr[Boolean] = js.undefined
   }
   object PickConfig {
     

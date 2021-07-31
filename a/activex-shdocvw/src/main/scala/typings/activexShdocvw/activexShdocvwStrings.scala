@@ -4,7 +4,6 @@ import typings.activexShdocvw.SHDocVw.BrowserBarConstants
 import typings.activexShdocvw.SHDocVw.TargetFrameValues
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object activexShdocvwStrings {
@@ -150,22 +149,30 @@ object activexShdocvwStrings {
   def Left: Left = "Left".asInstanceOf[Left]
   
   @js.native
-  sealed trait `Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket` extends BrowserBarConstants
+  sealed trait `Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket`
+    extends StObject
+       with BrowserBarConstants
   @scala.inline
   def `Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket`: `Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket` = "{30D02401-6A81-11D0-8274-00C04FD5AE38}".asInstanceOf[`Leftcurlybracket30D02401-6A81-11D0-8274-00C04FD5AE38Rightcurlybracket`]
   
   @js.native
-  sealed trait `LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` extends BrowserBarConstants
+  sealed trait `LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
+    extends StObject
+       with BrowserBarConstants
   @scala.inline
   def `LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E61-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E61-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`]
   
   @js.native
-  sealed trait `LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` extends BrowserBarConstants
+  sealed trait `LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
+    extends StObject
+       with BrowserBarConstants
   @scala.inline
   def `LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E62-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E62-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`]
   
   @js.native
-  sealed trait `LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` extends BrowserBarConstants
+  sealed trait `LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`
+    extends StObject
+       with BrowserBarConstants
   @scala.inline
   def `LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`: `LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket` = "{EFA24E63-B078-11D0-89E4-00C04FC9E26E}".asInstanceOf[`LeftcurlybracketEFA24E63-B078-11D0-89E4-00C04FC9E26ERightcurlybracket`]
   
@@ -485,22 +492,30 @@ object activexShdocvwStrings {
   def WindowStateChanged: WindowStateChanged = "WindowStateChanged".asInstanceOf[WindowStateChanged]
   
   @js.native
-  sealed trait _blank extends TargetFrameValues
+  sealed trait _blank
+    extends StObject
+       with TargetFrameValues
   @scala.inline
   def _blank: _blank = "_blank".asInstanceOf[_blank]
   
   @js.native
-  sealed trait _parent extends TargetFrameValues
+  sealed trait _parent
+    extends StObject
+       with TargetFrameValues
   @scala.inline
   def _parent: _parent = "_parent".asInstanceOf[_parent]
   
   @js.native
-  sealed trait _self extends TargetFrameValues
+  sealed trait _self
+    extends StObject
+       with TargetFrameValues
   @scala.inline
   def _self: _self = "_self".asInstanceOf[_self]
   
   @js.native
-  sealed trait _top extends TargetFrameValues
+  sealed trait _top
+    extends StObject
+       with TargetFrameValues
   @scala.inline
   def _top: _top = "_top".asInstanceOf[_top]
   

@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Network.SetBypassServiceWorkerRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `117` extends StObject {
   
-  var paramsType: js.Array[SetBypassServiceWorkerRequest] = js.native
+  var paramsType: js.Array[SetBypassServiceWorkerRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `117` {
   

@@ -7,10 +7,8 @@ import typings.reactNavigationRouters.typesMod.PartialRoute
 import typings.reactNavigationRouters.typesMod.Route
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Routes[State /* <: NavigationState[ParamListBase] */] extends StObject {
   
   var routes: js.Array[
@@ -20,9 +18,9 @@ trait Routes[State /* <: NavigationState[ParamListBase] */] extends StObject {
         js.UndefOr[js.Object]
       ]
     ]
-  ] = js.native
+  ]
   
-  var stale: js.UndefOr[`true`] = js.native
+  var stale: js.UndefOr[`true`] = js.undefined
 }
 object Routes {
   
@@ -42,7 +40,7 @@ object Routes {
   }
   
   @scala.inline
-  implicit class RoutesMutableBuilder[Self <: Routes[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with Routes[State]) extends AnyVal {
+  implicit class RoutesMutableBuilder[Self <: Routes[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & Routes[State]) extends AnyVal {
     
     @scala.inline
     def setRoutes(

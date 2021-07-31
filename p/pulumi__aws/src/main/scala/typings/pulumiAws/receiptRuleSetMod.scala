@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object receiptRuleSetMod {
@@ -33,6 +32,10 @@ object receiptRuleSetMod {
   /* static members */
   object ReceiptRuleSet {
     
+    @JSImport("@pulumi/aws/ses/receiptRuleSet", "ReceiptRuleSet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReceiptRuleSet resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -42,35 +45,29 @@ object receiptRuleSetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/receiptRuleSet", "ReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReceiptRuleSet = js.native
-    @JSImport("@pulumi/aws/ses/receiptRuleSet", "ReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReceiptRuleSet = js.native
-    @JSImport("@pulumi/aws/ses/receiptRuleSet", "ReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReceiptRuleSetState): ReceiptRuleSet = js.native
-    @JSImport("@pulumi/aws/ses/receiptRuleSet", "ReceiptRuleSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReceiptRuleSetState, opts: CustomResourceOptions): ReceiptRuleSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReceiptRuleSetState): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReceiptRuleSetState, opts: CustomResourceOptions): ReceiptRuleSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptRuleSet]
     
     /**
       * Returns true if the given object is an instance of ReceiptRuleSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/receiptRuleSet", "ReceiptRuleSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/receiptRuleSet.ReceiptRuleSet */ Boolean]
   }
   
-  @js.native
   trait ReceiptRuleSetArgs extends StObject {
     
     /**
       * The name of the rule set
       */
-    val ruleSetName: Input[String] = js.native
+    val ruleSetName: Input[String]
   }
   object ReceiptRuleSetArgs {
     
@@ -88,13 +85,12 @@ object receiptRuleSetMod {
     }
   }
   
-  @js.native
   trait ReceiptRuleSetState extends StObject {
     
     /**
       * The name of the rule set
       */
-    val ruleSetName: js.UndefOr[Input[String]] = js.native
+    val ruleSetName: js.UndefOr[Input[String]] = js.undefined
   }
   object ReceiptRuleSetState {
     

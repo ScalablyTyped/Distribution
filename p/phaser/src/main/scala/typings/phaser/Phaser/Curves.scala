@@ -10,7 +10,6 @@ import typings.phaser.Phaser.Types.Curves.JSONPath
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Curves {
@@ -19,7 +18,9 @@ object Curves {
     * A higher-order Bézier curve constructed of four points.
     */
   @js.native
-  trait CubicBezier extends Curve {
+  trait CubicBezier
+    extends StObject
+       with Curve {
     
     /**
       * Get point at relative position in curve according to length.
@@ -109,7 +110,7 @@ object Curves {
       * @param accuracy The accuracy of the bounds calculations. Default 16.
       */
     def getBounds(): Rectangle = js.native
-    def getBounds(out: js.UndefOr[scala.Nothing], accuracy: integer): Rectangle = js.native
+    def getBounds(out: Unit, accuracy: integer): Rectangle = js.native
     def getBounds(out: Rectangle): Rectangle = js.native
     def getBounds(out: Rectangle, accuracy: integer): Rectangle = js.native
     
@@ -172,13 +173,13 @@ object Curves {
       * @param out An optional array to store the points in.
       */
     def getPoints[O /* <: js.Array[Vector2] */](): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: js.UndefOr[scala.Nothing], stepRate: js.UndefOr[scala.Nothing], out: O): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: js.UndefOr[scala.Nothing], stepRate: Double): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: js.UndefOr[scala.Nothing], stepRate: Double, out: O): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: Unit, stepRate: Double): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: Unit, stepRate: Double, out: O): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: Unit, stepRate: Unit, out: O): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: integer): O = js.native
-    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: js.UndefOr[scala.Nothing], out: O): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double): O = js.native
     def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Double, out: O): O = js.native
+    def getPoints[O /* <: js.Array[Vector2] */](divisions: integer, stepRate: Unit, out: O): O = js.native
     
     /**
       * Get a random point from the curve.
@@ -196,17 +197,13 @@ object Curves {
       * @param out An optional array to store the points in.
       */
     def getSpacedPoints(): js.Array[Vector2] = js.native
-    def getSpacedPoints(
-      divisions: js.UndefOr[scala.Nothing],
-      stepRate: js.UndefOr[scala.Nothing],
-      out: js.Array[_ | Vector2]
-    ): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: js.UndefOr[scala.Nothing], stepRate: Double): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: js.UndefOr[scala.Nothing], stepRate: Double, out: js.Array[_ | Vector2]): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Unit, stepRate: Double): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Unit, stepRate: Double, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: Unit, stepRate: Unit, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: integer): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: integer, stepRate: js.UndefOr[scala.Nothing], out: js.Array[_ | Vector2]): js.Array[Vector2] = js.native
     def getSpacedPoints(divisions: integer, stepRate: Double): js.Array[Vector2] = js.native
-    def getSpacedPoints(divisions: integer, stepRate: Double, out: js.Array[_ | Vector2]): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: integer, stepRate: Double, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
+    def getSpacedPoints(divisions: integer, stepRate: Unit, out: js.Array[js.Any | Vector2]): js.Array[Vector2] = js.native
     
     /**
       * Get a point at the start of the curve.
@@ -273,7 +270,9 @@ object Curves {
     * See https://en.wikipedia.org/wiki/Elliptic_curve for more details.
     */
   @js.native
-  trait Ellipse extends Curve {
+  trait Ellipse
+    extends StObject
+       with Curve {
     
     /**
       * The rotation of the ellipse, relative to the center, in degrees.
@@ -397,7 +396,9 @@ object Curves {
     * A LineCurve is a "curve" comprising exactly two points (a line segment).
     */
   @js.native
-  trait Line extends Curve {
+  trait Line
+    extends StObject
+       with Curve {
     
     def getBounds[O /* <: Rectangle */](out: O): O = js.native
     
@@ -522,9 +523,9 @@ object Curves {
       * @param rotation The rotation of the circle in degrees. Default 0.
       */
     def circleTo(radius: Double): this.type = js.native
-    def circleTo(radius: Double, clockwise: js.UndefOr[scala.Nothing], rotation: Double): this.type = js.native
     def circleTo(radius: Double, clockwise: Boolean): this.type = js.native
     def circleTo(radius: Double, clockwise: Boolean, rotation: Double): this.type = js.native
+    def circleTo(radius: Double, clockwise: Unit, rotation: Double): this.type = js.native
     
     /**
       * Ensures that the Path is closed.
@@ -605,7 +606,7 @@ object Curves {
     def getBounds[O /* <: Vector2 */](): O = js.native
     def getBounds[O /* <: Vector2 */](out: O): O = js.native
     def getBounds[O /* <: Vector2 */](out: O, accuracy: integer): O = js.native
-    def getBounds[O /* <: Vector2 */](out: js.UndefOr[scala.Nothing], accuracy: integer): O = js.native
+    def getBounds[O /* <: Vector2 */](out: Unit, accuracy: integer): O = js.native
     
     /**
       * Returns an array containing the length of the Path at the end of each Curve.
@@ -707,18 +708,13 @@ object Curves {
     var name: String = js.native
     
     def quadraticBezierTo(x: js.Array[Vector2]): this.type = js.native
-    def quadraticBezierTo(
-      x: js.Array[Vector2],
-      y: js.UndefOr[scala.Nothing],
-      controlX: js.UndefOr[scala.Nothing],
-      controlY: Double
-    ): this.type = js.native
-    def quadraticBezierTo(x: js.Array[Vector2], y: js.UndefOr[scala.Nothing], controlX: Double): this.type = js.native
-    def quadraticBezierTo(x: js.Array[Vector2], y: js.UndefOr[scala.Nothing], controlX: Double, controlY: Double): this.type = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double): this.type = js.native
-    def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: js.UndefOr[scala.Nothing], controlY: Double): this.type = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: Double): this.type = js.native
     def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: Double, controlY: Double): this.type = js.native
+    def quadraticBezierTo(x: js.Array[Vector2], y: Double, controlX: Unit, controlY: Double): this.type = js.native
+    def quadraticBezierTo(x: js.Array[Vector2], y: Unit, controlX: Double): this.type = js.native
+    def quadraticBezierTo(x: js.Array[Vector2], y: Unit, controlX: Double, controlY: Double): this.type = js.native
+    def quadraticBezierTo(x: js.Array[Vector2], y: Unit, controlX: Unit, controlY: Double): this.type = js.native
     /**
       * Creates a Quadratic Bezier Curve starting at the ending point of the Path.
       * @param x The X coordinate of the second control point or, if it's a `Vector2`, the first control point.
@@ -727,13 +723,13 @@ object Curves {
       * @param controlY If `x` is not a `Vector2`, the Y coordinate of the first control point.
       */
     def quadraticBezierTo(x: Double): this.type = js.native
-    def quadraticBezierTo(x: Double, y: js.UndefOr[scala.Nothing], controlX: js.UndefOr[scala.Nothing], controlY: Double): this.type = js.native
-    def quadraticBezierTo(x: Double, y: js.UndefOr[scala.Nothing], controlX: Double): this.type = js.native
-    def quadraticBezierTo(x: Double, y: js.UndefOr[scala.Nothing], controlX: Double, controlY: Double): this.type = js.native
     def quadraticBezierTo(x: Double, y: Double): this.type = js.native
-    def quadraticBezierTo(x: Double, y: Double, controlX: js.UndefOr[scala.Nothing], controlY: Double): this.type = js.native
     def quadraticBezierTo(x: Double, y: Double, controlX: Double): this.type = js.native
     def quadraticBezierTo(x: Double, y: Double, controlX: Double, controlY: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: Double, controlX: Unit, controlY: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: Unit, controlX: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: Unit, controlX: Double, controlY: Double): this.type = js.native
+    def quadraticBezierTo(x: Double, y: Unit, controlX: Unit, controlY: Double): this.type = js.native
     
     /**
       * Creates a spline curve starting at the previous end point, using the given points on the curve.
@@ -763,7 +759,9 @@ object Curves {
     * A quadratic Bézier curve constructed from two control points.
     */
   @js.native
-  trait QuadraticBezier extends Curve {
+  trait QuadraticBezier
+    extends StObject
+       with Curve {
     
     /**
       * Get point at relative position in curve according to length.
@@ -804,7 +802,9 @@ object Curves {
     * Create a smooth 2d spline curve from a series of points.
     */
   @js.native
-  trait Spline extends Curve {
+  trait Spline
+    extends StObject
+       with Curve {
     
     /**
       * Add a point to the current list of Vector2 points of the curve.

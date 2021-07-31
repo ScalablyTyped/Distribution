@@ -2,23 +2,21 @@ package typings.swiper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CurrentX extends StObject {
     
-    var currentX: Double = js.native
+    var currentX: Double
     
-    var currentY: Double = js.native
+    var currentY: Double
     
-    var diff: Double = js.native
+    var diff: Double
     
-    var startX: Double = js.native
+    var startX: Double
     
-    var startY: Double = js.native
+    var startY: Double
   }
   object CurrentX {
     
@@ -49,86 +47,85 @@ object anon {
   }
   
   /* Inlined {[ key in swiper.swiper.SwiperEvent ]:? (): void} */
-  @js.native
   trait keyinSwiperEventvoid extends StObject {
     
-    var autoplay: js.UndefOr[js.Function0[Unit]] = js.native
+    var autoplay: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var autoplayStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var autoplayStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var autoplayStop: js.UndefOr[js.Function0[Unit]] = js.native
+    var autoplayStop: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeDestroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeLoopFix: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeLoopFix: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var click: js.UndefOr[js.Function0[Unit]] = js.native
+    var click: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var doubleTap: js.UndefOr[js.Function0[Unit]] = js.native
+    var doubleTap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var fromEdge: js.UndefOr[js.Function0[Unit]] = js.native
+    var fromEdge: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hashChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var hashChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var hashSet: js.UndefOr[js.Function0[Unit]] = js.native
+    var hashSet: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var imagesReady: js.UndefOr[js.Function0[Unit]] = js.native
+    var imagesReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var init: js.UndefOr[js.Function0[Unit]] = js.native
+    var init: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var lazyImageLoad: js.UndefOr[js.Function0[Unit]] = js.native
+    var lazyImageLoad: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var lazyImageReady: js.UndefOr[js.Function0[Unit]] = js.native
+    var lazyImageReady: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var loopFix: js.UndefOr[js.Function0[Unit]] = js.native
+    var loopFix: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var observerUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+    var observerUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var paginationRender: js.UndefOr[js.Function0[Unit]] = js.native
+    var paginationRender: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var paginationUpdate: js.UndefOr[js.Function0[Unit]] = js.native
+    var paginationUpdate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var progress: js.UndefOr[js.Function0[Unit]] = js.native
+    var progress: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var reachBeginning: js.UndefOr[js.Function0[Unit]] = js.native
+    var reachBeginning: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var reachEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var reachEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var resize: js.UndefOr[js.Function0[Unit]] = js.native
+    var resize: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setTransition: js.UndefOr[js.Function0[Unit]] = js.native
+    var setTransition: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var setTranslate: js.UndefOr[js.Function0[Unit]] = js.native
+    var setTranslate: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slideChange: js.UndefOr[js.Function0[Unit]] = js.native
+    var slideChange: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slideChangeTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var slideChangeTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slideChangeTransitionStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var slideChangeTransitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slideNextTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var slideNextTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slideNextTransitionStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var slideNextTransitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slidePrevTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var slidePrevTransitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slidePrevTransitionStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var slidePrevTransitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var sliderMove: js.UndefOr[js.Function0[Unit]] = js.native
+    var sliderMove: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var tap: js.UndefOr[js.Function0[Unit]] = js.native
+    var tap: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var touchEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var touchEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var touchMove: js.UndefOr[js.Function0[Unit]] = js.native
+    var touchMove: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var touchMoveOpposite: js.UndefOr[js.Function0[Unit]] = js.native
+    var touchMoveOpposite: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var touchStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var touchStart: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var transitionEnd: js.UndefOr[js.Function0[Unit]] = js.native
+    var transitionEnd: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var transitionStart: js.UndefOr[js.Function0[Unit]] = js.native
+    var transitionStart: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object keyinSwiperEventvoid {
     

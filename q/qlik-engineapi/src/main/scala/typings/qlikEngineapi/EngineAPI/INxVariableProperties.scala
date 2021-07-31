@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxVariableProperties...
   */
-@js.native
 trait INxVariableProperties extends StObject {
   
   /**
@@ -16,29 +14,29 @@ trait INxVariableProperties extends StObject {
     * The value of a variable can affect the state of the selections.
     * >> The default value is false.
     */
-  var qIncludeInBookmark: Boolean = js.native
+  var qIncludeInBookmark: Boolean
   
   /**
     * Name of the variable.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Defines the format of the value of a variable.
     */
-  var qNumberPresentation: IFieldAttributes = js.native
+  var qNumberPresentation: IFieldAttributes
   
   /**
     * List of enumerations.
     * This property is used if qUsePredefListedValues is set to true.
     */
-  var qPreDefinedList: js.Array[String] = js.native
+  var qPreDefinedList: js.Array[String]
   
   /**
     * The value of a variable can be an enumeration.
     * Set this property to true to reflect the predefined values in an enumeration.
     */
-  var qUsePredefListedValues: Boolean = js.native
+  var qUsePredefListedValues: Boolean
 }
 object INxVariableProperties {
   

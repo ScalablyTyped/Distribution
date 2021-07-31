@@ -5,7 +5,6 @@ import typings.kafkaNode.kafkaNodeStrings.error
 import typings.kafkaNode.kafkaNodeStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kafka-node", "Offset")
@@ -16,25 +15,25 @@ class Offset protected () extends StObject {
   def commit(
     groupId: String,
     payloads: js.Array[OffsetCommitRequest],
-    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]
+    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]
   ): Unit = js.native
   
-  def fetch(payloads: js.Array[OffsetRequest], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): Unit = js.native
+  def fetch(payloads: js.Array[OffsetRequest], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
   
   def fetchCommits(
     groupId: String,
     payloads: js.Array[OffsetFetchRequest],
-    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]
+    cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]
   ): Unit = js.native
   
-  def fetchEarliestOffsets(topics: js.Array[String], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): Unit = js.native
+  def fetchEarliestOffsets(topics: js.Array[String], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
   
-  def fetchLatestOffsets(topics: js.Array[String], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, _]): Unit = js.native
+  def fetchLatestOffsets(topics: js.Array[String], cb: js.Function2[/* error */ js.Any, /* data */ js.Any, js.Any]): Unit = js.native
   
   @JSName("on")
-  def on_connect(eventName: connect, cb: js.Function0[_]): Unit = js.native
+  def on_connect(eventName: connect, cb: js.Function0[js.Any]): Unit = js.native
   @JSName("on")
-  def on_error(eventName: error, cb: js.Function1[/* error */ js.Any, _]): Unit = js.native
+  def on_error(eventName: error, cb: js.Function1[/* error */ js.Any, js.Any]): Unit = js.native
   @JSName("on")
-  def on_ready(eventName: ready, cb: js.Function0[_]): Unit = js.native
+  def on_ready(eventName: ready, cb: js.Function0[js.Any]): Unit = js.native
 }

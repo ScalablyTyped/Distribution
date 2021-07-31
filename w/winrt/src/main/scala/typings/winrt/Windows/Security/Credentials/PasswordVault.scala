@@ -3,11 +3,11 @@ package typings.winrt.Windows.Security.Credentials
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PasswordVault extends IPasswordVault
+trait PasswordVault
+  extends StObject
+     with IPasswordVault
 object PasswordVault {
   
   @scala.inline

@@ -4,18 +4,16 @@ import typings.node.BufferEncoding
 import typings.node.fsMod.Mode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined node.fs.BaseEncodingOptions & {  mode :node.fs.Mode | undefined,   flag :string | undefined} */
-@js.native
 trait BaseEncodingOptionsmodeMoEncoding extends StObject {
   
-  var encoding: js.UndefOr[BufferEncoding | Null] = js.native
+  var encoding: js.UndefOr[BufferEncoding | Null] = js.undefined
   
-  var flag: js.UndefOr[String] = js.native
+  var flag: js.UndefOr[String] = js.undefined
   
-  var mode: js.UndefOr[Mode] = js.native
+  var mode: js.UndefOr[Mode] = js.undefined
 }
 object BaseEncodingOptionsmodeMoEncoding {
   

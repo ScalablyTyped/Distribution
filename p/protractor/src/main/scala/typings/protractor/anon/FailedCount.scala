@@ -3,15 +3,13 @@ package typings.protractor.anon
 import typings.protractor.pluginsMod.SpecResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedCount extends StObject {
   
-  var failedCount: Double = js.native
+  var failedCount: Double
   
-  var specResults: js.Array[SpecResult] = js.native
+  var specResults: js.Array[SpecResult]
 }
 object FailedCount {
   

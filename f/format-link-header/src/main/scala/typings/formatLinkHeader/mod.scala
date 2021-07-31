@@ -3,21 +3,24 @@ package typings.formatLinkHeader
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(linkObject: Links): String = ^.asInstanceOf[js.Dynamic].apply(linkObject.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("format-link-header", JSImport.Namespace)
   @js.native
-  def apply(linkObject: Links): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait Link extends /* queryParam */ StringDictionary[String] {
+  trait Link
+    extends StObject
+       with /* queryParam */ StringDictionary[String] {
     
-    var rel: String = js.native
+    var rel: String
     
-    var url: String = js.native
+    var url: String
   }
   object Link {
     

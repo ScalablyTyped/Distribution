@@ -2,16 +2,14 @@ package typings.angularCompiler.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsesOnChanges extends StObject {
   
   /**
     * Whether the directive uses NgOnChanges.
     */
-  var usesOnChanges: Boolean = js.native
+  var usesOnChanges: Boolean
 }
 object UsesOnChanges {
   

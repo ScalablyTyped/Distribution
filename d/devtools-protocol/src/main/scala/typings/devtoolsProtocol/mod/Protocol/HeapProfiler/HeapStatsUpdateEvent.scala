@@ -3,10 +3,8 @@ package typings.devtoolsProtocol.mod.Protocol.HeapProfiler
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeapStatsUpdateEvent extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait HeapStatsUpdateEvent extends StObject {
     * index, the second integer is a total count of objects for the fragment, the third integer is
     * a total size of the objects for the fragment.
     */
-  var statsUpdate: js.Array[integer] = js.native
+  var statsUpdate: js.Array[integer]
 }
 object HeapStatsUpdateEvent {
   

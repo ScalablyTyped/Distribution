@@ -4,41 +4,41 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TfvcBranchRef extends TfvcShallowBranchRef {
+trait TfvcBranchRef
+  extends StObject
+     with TfvcShallowBranchRef {
   
   /**
     * A collection of REST reference links.
     */
-  var _links: js.Any = js.native
+  var _links: js.Any
   
   /**
     * Creation date of the branch.
     */
-  var createdDate: Date = js.native
+  var createdDate: Date
   
   /**
     * Description of the branch.
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Is the branch deleted?
     */
-  var isDeleted: Boolean = js.native
+  var isDeleted: Boolean
   
   /**
     * Alias or display name of user
     */
-  var owner: IdentityRef = js.native
+  var owner: IdentityRef
   
   /**
     * URL to retrieve the item.
     */
-  var url: String = js.native
+  var url: String
 }
 object TfvcBranchRef {
   

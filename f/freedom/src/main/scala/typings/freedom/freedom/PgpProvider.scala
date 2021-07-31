@@ -3,17 +3,15 @@ package typings.freedom.freedom
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PgpProvider {
   
-  @js.native
   trait KeyFingerprint extends StObject {
     
-    var fingerprint: String = js.native
+    var fingerprint: String
     
-    var words: js.Array[String] = js.native
+    var words: js.Array[String]
   }
   object KeyFingerprint {
     
@@ -57,22 +55,21 @@ object PgpProvider {
     def setup(passphrase: String, userid: String): js.Promise[Unit] = js.native
     
     def signEncrypt(data: ArrayBuffer): js.Promise[ArrayBuffer] = js.native
-    def signEncrypt(data: ArrayBuffer, encryptKey: js.UndefOr[scala.Nothing], sign: Boolean): js.Promise[ArrayBuffer] = js.native
     def signEncrypt(data: ArrayBuffer, encryptKey: String): js.Promise[ArrayBuffer] = js.native
     def signEncrypt(data: ArrayBuffer, encryptKey: String, sign: Boolean): js.Promise[ArrayBuffer] = js.native
+    def signEncrypt(data: ArrayBuffer, encryptKey: Unit, sign: Boolean): js.Promise[ArrayBuffer] = js.native
     
     def verifyDecrypt(data: ArrayBuffer): js.Promise[VerifyDecryptResult] = js.native
     def verifyDecrypt(data: ArrayBuffer, verifyKey: String): js.Promise[VerifyDecryptResult] = js.native
   }
   
-  @js.native
   trait PublicKey extends StObject {
     
-    var fingerprint: String = js.native
+    var fingerprint: String
     
-    var key: String = js.native
+    var key: String
     
-    var words: js.Array[String] = js.native
+    var words: js.Array[String]
   }
   object PublicKey {
     
@@ -99,12 +96,11 @@ object PgpProvider {
     }
   }
   
-  @js.native
   trait VerifyDecryptResult extends StObject {
     
-    var data: ArrayBuffer = js.native
+    var data: ArrayBuffer
     
-    var signedBy: js.Array[String] = js.native
+    var signedBy: js.Array[String]
   }
   object VerifyDecryptResult {
     

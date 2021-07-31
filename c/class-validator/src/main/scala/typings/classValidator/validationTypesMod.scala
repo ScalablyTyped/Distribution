@@ -2,7 +2,6 @@ package typings.classValidator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationTypesMod {
@@ -56,8 +55,7 @@ object validationTypesMod {
     /**
       * Checks if validation type is valid.
       */
-    @JSImport("class-validator/types/validation/ValidationTypes", "ValidationTypes.isValid")
-    @js.native
-    def isValid(`type`: String): Boolean = js.native
+    @scala.inline
+    def isValid(`type`: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValid")(`type`.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

@@ -2,26 +2,24 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxCountRule extends StObject {
   
   /**
     * Set to true to delete a version's source bundle from Amazon S3 when Elastic Beanstalk deletes the application version.
     */
-  var DeleteSourceFromS3: js.UndefOr[BoxedBoolean] = js.native
+  var DeleteSourceFromS3: js.UndefOr[BoxedBoolean] = js.undefined
   
   /**
     * Specify true to apply the rule, or false to disable it.
     */
-  var Enabled: BoxedBoolean = js.native
+  var Enabled: BoxedBoolean
   
   /**
     * Specify the maximum number of application versions to retain.
     */
-  var MaxCount: js.UndefOr[BoxedInt] = js.native
+  var MaxCount: js.UndefOr[BoxedInt] = js.undefined
 }
 object MaxCountRule {
   

@@ -8,7 +8,6 @@ import typings.schemaUtils.schemaUtilsStrings.left
 import typings.schemaUtils.schemaUtilsStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
@@ -23,7 +22,12 @@ object rangeMod {
     */
   @JSImport("schema-utils/declarations/util/Range", JSImport.Namespace)
   @js.native
-  class ^ () extends Range
+  class ^ ()
+    extends StObject
+       with Range
+  @JSImport("schema-utils/declarations/util/Range", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @param {number} value
@@ -32,9 +36,8 @@ object rangeMod {
     * @returns {string}
     */
   /* static member */
-  @JSImport("schema-utils/declarations/util/Range", "formatLeft")
-  @js.native
-  def formatLeft(value: Double, logic: Boolean, exclusive: Boolean): String = js.native
+  @scala.inline
+  def formatLeft(value: Double, logic: Boolean, exclusive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatLeft")(value.asInstanceOf[js.Any], logic.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @param {number} start left side value
@@ -45,9 +48,8 @@ object rangeMod {
     * @returns {string}
     */
   /* static member */
-  @JSImport("schema-utils/declarations/util/Range", "formatRange")
-  @js.native
-  def formatRange(start: Double, end: Double, startExclusive: Boolean, endExclusive: Boolean, logic: Boolean): String = js.native
+  @scala.inline
+  def formatRange(start: Double, end: Double, startExclusive: Boolean, endExclusive: Boolean, logic: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRange")(start.asInstanceOf[js.Any], end.asInstanceOf[js.Any], startExclusive.asInstanceOf[js.Any], endExclusive.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @param {number} value
@@ -56,9 +58,8 @@ object rangeMod {
     * @returns {string}
     */
   /* static member */
-  @JSImport("schema-utils/declarations/util/Range", "formatRight")
-  @js.native
-  def formatRight(value: Double, logic: Boolean, exclusive: Boolean): String = js.native
+  @scala.inline
+  def formatRight(value: Double, logic: Boolean, exclusive: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("formatRight")(value.asInstanceOf[js.Any], logic.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * @param {"left" | "right"} side
@@ -66,12 +67,11 @@ object rangeMod {
     * @returns {">" | ">=" | "<" | "<="}
     */
   /* static member */
-  @JSImport("schema-utils/declarations/util/Range", "getOperator")
-  @js.native
-  def getOperator_left(side: left, exclusive: Boolean): Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign = js.native
-  @JSImport("schema-utils/declarations/util/Range", "getOperator")
-  @js.native
-  def getOperator_right(side: right, exclusive: Boolean): Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign = js.native
+  @scala.inline
+  def getOperator_left(side: left, exclusive: Boolean): Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign = (^.asInstanceOf[js.Dynamic].applyDynamic("getOperator")(side.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign]
+  
+  @scala.inline
+  def getOperator_right(side: right, exclusive: Boolean): Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign = (^.asInstanceOf[js.Dynamic].applyDynamic("getOperator")(side.asInstanceOf[js.Any], exclusive.asInstanceOf[js.Any])).asInstanceOf[Greaterthansign | GreaterthansignEqualssign | Lessthansign | LessthansignEqualssign]
   
   /**
     * @param {Array<RangeValue>} values
@@ -79,9 +79,8 @@ object rangeMod {
     * @return {RangeValue} computed value and it's exclusive flag
     */
   /* static member */
-  @JSImport("schema-utils/declarations/util/Range", "getRangeValue")
-  @js.native
-  def getRangeValue(values: js.Array[js.Tuple2[Double, Boolean]], logic: Boolean): js.Tuple2[Double, Boolean] = js.native
+  @scala.inline
+  def getRangeValue(values: js.Array[js.Tuple2[Double, Boolean]], logic: Boolean): js.Tuple2[Double, Boolean] = (^.asInstanceOf[js.Dynamic].applyDynamic("getRangeValue")(values.asInstanceOf[js.Any], logic.asInstanceOf[js.Any])).asInstanceOf[js.Tuple2[Double, Boolean]]
   
   /**
     * @typedef {[number, boolean]} RangeValue

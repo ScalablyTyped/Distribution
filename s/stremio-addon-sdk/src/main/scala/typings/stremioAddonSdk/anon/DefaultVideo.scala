@@ -2,16 +2,14 @@ package typings.stremioAddonSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultVideo extends StObject {
   
   /**
     * Set to a Video Object id in order to open the Detail page directly to that video's streams.
     */
-  var defaultVideo: js.UndefOr[Boolean | String] = js.native
+  var defaultVideo: js.UndefOr[Boolean | String] = js.undefined
 }
 object DefaultVideo {
   

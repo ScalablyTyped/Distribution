@@ -15,7 +15,6 @@ import typings.three.webGLCapabilitiesMod.WebGLCapabilities
 import typings.three.webGLExtensionsMod.WebGLExtensions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webGLStateMod {
@@ -108,9 +107,9 @@ object webGLStateMod {
     def setMaterial(material: Material, frontFaceCW: Boolean): Unit = js.native
     
     def setPolygonOffset(polygonoffset: Boolean): Unit = js.native
-    def setPolygonOffset(polygonoffset: Boolean, factor: js.UndefOr[scala.Nothing], units: Double): Unit = js.native
     def setPolygonOffset(polygonoffset: Boolean, factor: Double): Unit = js.native
     def setPolygonOffset(polygonoffset: Boolean, factor: Double, units: Double): Unit = js.native
+    def setPolygonOffset(polygonoffset: Boolean, factor: Unit, units: Double): Unit = js.native
     
     def setScissorTest(scissorTest: Boolean): Unit = js.native
     

@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationAggregationSource extends StObject {
   
   /**
     * If true, aggregate existing AWS Config regions and future regions.
     */
-  var AllAwsRegions: js.UndefOr[Boolean] = js.native
+  var AllAwsRegions: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The source regions being aggregated.
     */
-  var AwsRegions: js.UndefOr[AggregatorRegionList] = js.native
+  var AwsRegions: js.UndefOr[AggregatorRegionList] = js.undefined
   
   /**
     * ARN of the IAM role used to retrieve AWS Organization details associated with the aggregator account.
     */
-  var RoleArn: String = js.native
+  var RoleArn: String
 }
 object OrganizationAggregationSource {
   

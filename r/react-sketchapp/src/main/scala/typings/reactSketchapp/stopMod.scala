@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactSketchapp.propsMod.NumberProp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stopMod {
@@ -17,14 +16,13 @@ object stopMod {
   
   type Stop = Component[StopProps, js.Object, js.Any]
   
-  @js.native
   trait StopProps extends StObject {
     
-    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.native
+    var children: js.UndefOr[js.Array[ReactNode] | ReactNode] = js.undefined
     
-    var stopColor: js.UndefOr[String] = js.native
+    var stopColor: js.UndefOr[String] = js.undefined
     
-    var stopOpacity: js.UndefOr[NumberProp] = js.native
+    var stopOpacity: js.UndefOr[NumberProp] = js.undefined
   }
   object StopProps {
     

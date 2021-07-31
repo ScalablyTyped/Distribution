@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountUsage extends StObject {
   
   /**
     * The number of Lambda functions.
     */
-  var FunctionCount: js.UndefOr[Long] = js.native
+  var FunctionCount: js.UndefOr[Long] = js.undefined
   
   /**
     * The amount of storage space, in bytes, that's being used by deployment packages and layer archives.
     */
-  var TotalCodeSize: js.UndefOr[Long] = js.native
+  var TotalCodeSize: js.UndefOr[Long] = js.undefined
 }
 object AccountUsage {
   

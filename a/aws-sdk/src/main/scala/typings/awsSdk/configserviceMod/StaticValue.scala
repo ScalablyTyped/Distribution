@@ -2,16 +2,14 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaticValue extends StObject {
   
   /**
     * A list of values. For example, the ARN of the assumed role. 
     */
-  var Values: StaticParameterValues = js.native
+  var Values: StaticParameterValues
 }
 object StaticValue {
   

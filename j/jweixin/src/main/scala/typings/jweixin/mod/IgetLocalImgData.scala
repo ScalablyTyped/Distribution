@@ -3,18 +3,18 @@ package typings.jweixin.mod
 import typings.jweixin.anon.LocalData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IgetLocalImgData extends BaseParams {
+trait IgetLocalImgData
+  extends StObject
+     with BaseParams {
   
-  var localId: String = js.native
+  var localId: String
   
   // 图片的localID
   // localData是图片的base64数据，可以用img标签显示
   @JSName("success")
-  def success_MIgetLocalImgData(res: LocalData): Unit = js.native
+  def success_MIgetLocalImgData(res: LocalData): Unit
 }
 object IgetLocalImgData {
   

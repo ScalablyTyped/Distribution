@@ -4,25 +4,23 @@ import typings.devextreme.mod.DevExpress.core.dxElement
 import typings.devextreme.mod.global.JQueryPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NewData[T] extends StObject {
   
-  var cancel: js.UndefOr[Boolean | typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.native
+  var cancel: js.UndefOr[Boolean | typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]] = js.undefined
   
-  var component: js.UndefOr[T] = js.native
+  var component: js.UndefOr[T] = js.undefined
   
-  var element: js.UndefOr[dxElement] = js.native
+  var element: js.UndefOr[dxElement] = js.undefined
   
-  var key: js.UndefOr[js.Any] = js.native
+  var key: js.UndefOr[js.Any] = js.undefined
   
-  var model: js.UndefOr[js.Any] = js.native
+  var model: js.UndefOr[js.Any] = js.undefined
   
-  var newData: js.UndefOr[js.Any] = js.native
+  var newData: js.UndefOr[js.Any] = js.undefined
   
-  var oldData: js.UndefOr[js.Any] = js.native
+  var oldData: js.UndefOr[js.Any] = js.undefined
 }
 object NewData {
   
@@ -33,7 +31,7 @@ object NewData {
   }
   
   @scala.inline
-  implicit class NewDataMutableBuilder[Self <: NewData[_], T] (val x: Self with NewData[T]) extends AnyVal {
+  implicit class NewDataMutableBuilder[Self <: NewData[?], T] (val x: Self & NewData[T]) extends AnyVal {
     
     @scala.inline
     def setCancel(value: Boolean | typings.devextreme.mod.global.Promise[Unit] | JQueryPromise[Unit]): Self = StObject.set(x, "cancel", value.asInstanceOf[js.Any])

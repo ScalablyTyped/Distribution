@@ -4,24 +4,23 @@ import typings.awsSdkClientCodecommitNode.deleteFileExceptionsUnionMod.DeleteFil
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesInvalidEmailExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidEmailExceptionDetails> * / any */ @js.native
-  trait InvalidEmailException
-    extends DeleteFileExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_InvalidEmailExceptionDetails> * / any */ trait InvalidEmailException
+    extends StObject
+       with DeleteFileExceptionsUnion
        with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidEmailException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidEmailException
   }
   object InvalidEmailException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.InvalidEmailException): InvalidEmailException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): InvalidEmailException = {
+      val __obj = js.Dynamic.literal(name = "InvalidEmailException")
       __obj.asInstanceOf[InvalidEmailException]
     }
     
@@ -33,6 +32,5 @@ object typesInvalidEmailExceptionMod {
     }
   }
   
-  @js.native
   trait InvalidEmailExceptionDetails extends StObject
 }

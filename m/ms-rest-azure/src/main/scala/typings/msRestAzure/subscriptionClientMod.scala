@@ -6,14 +6,15 @@ import typings.msRestAzure.operationsMod.Subscriptions
 import typings.msRestAzure.operationsMod.Tenants
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriptionClientMod {
   
   @JSImport("ms-rest-azure/lib/subscriptionManagement/subscriptionClient", JSImport.Namespace)
   @js.native
-  class ^ protected () extends SubscriptionClient {
+  class ^ protected ()
+    extends StObject
+       with SubscriptionClient {
     /**
       * Initializes a new instance of the SubscriptionClient class.
       * @constructor
@@ -43,31 +44,48 @@ object subscriptionClientMod {
       */
     def this(credentials: ServiceClientCredentials) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String) = this()
-    def this(
-      credentials: ServiceClientCredentials,
-      baseUri: js.UndefOr[scala.Nothing],
-      options: ServiceClientOptions
-    ) = this()
     def this(credentials: ServiceClientCredentials, baseUri: String, options: ServiceClientOptions) = this()
-  }
-  
-  @js.native
-  trait SubscriptionClient extends StObject {
+    def this(credentials: ServiceClientCredentials, baseUri: Unit, options: ServiceClientOptions) = this()
     
+    /* CompleteClass */
     var acceptLanguage: String = js.native
     
+    /* CompleteClass */
     var apiVersion: String = js.native
     
+    /* CompleteClass */
     var credentials: ServiceClientCredentials = js.native
     
+    /* CompleteClass */
     var generateClientRequestId: Boolean = js.native
     
+    /* CompleteClass */
     var longRunningOperationRetryTimeout: Double = js.native
     
     // Operation groups
+    /* CompleteClass */
     var subscriptions: Subscriptions = js.native
     
+    /* CompleteClass */
     var tenants: Tenants = js.native
+  }
+  
+  trait SubscriptionClient extends StObject {
+    
+    var acceptLanguage: String
+    
+    var apiVersion: String
+    
+    var credentials: ServiceClientCredentials
+    
+    var generateClientRequestId: Boolean
+    
+    var longRunningOperationRetryTimeout: Double
+    
+    // Operation groups
+    var subscriptions: Subscriptions
+    
+    var tenants: Tenants
   }
   object SubscriptionClient {
     

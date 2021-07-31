@@ -139,36 +139,36 @@ import typings.plotlyJs.scatterMod.ScatterSelectedMarker
 import typings.std.Float32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxMod {
   
-  @js.native
-  trait BoxPlotData extends PlotData {
+  trait BoxPlotData
+    extends StObject
+       with PlotData {
     
-    var alignmentgroup: String = js.native
+    var alignmentgroup: String
     
     @JSName("marker")
-    var marker_BoxPlotData: PartialoutliercolorColors = js.native
+    var marker_BoxPlotData: PartialoutliercolorColors
     
-    var offsetgroup: String = js.native
+    var offsetgroup: String
     
-    var quartilemethod: linear | exclusive | inclusive = js.native
+    var quartilemethod: linear | exclusive | inclusive
     
-    var selected: ScatterSelectedMarker = js.native
+    var selected: ScatterSelectedMarker
     
     @JSName("type")
-    var type_BoxPlotData: box = js.native
+    var type_BoxPlotData: box
     
-    var unselected: ScatterSelectedMarker = js.native
+    var unselected: ScatterSelectedMarker
     
     @JSName("width")
-    var width_BoxPlotData: Double = js.native
+    var width_BoxPlotData: Double
     
-    var x0: js.Any = js.native
+    var x0: js.Any
     
-    var y0: js.Any = js.native
+    var y0: js.Any
   }
   object BoxPlotData {
     
@@ -259,7 +259,6 @@ object boxMod {
       title: PartialDataTitleFont,
       transforms: js.Array[DataTransform],
       transpose: Boolean,
-      `type`: box,
       unselected: ScatterSelectedMarker,
       value: Double,
       values: js.Array[Datum],
@@ -303,7 +302,7 @@ object boxMod {
       __obj.updateDynamic("marker.sizemode")(markerDotsizemode.asInstanceOf[js.Any])
       __obj.updateDynamic("marker.sizeref")(markerDotsizeref.asInstanceOf[js.Any])
       __obj.updateDynamic("marker.symbol")(markerDotsymbol.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("box")
       __obj.asInstanceOf[BoxPlotData]
     }
     

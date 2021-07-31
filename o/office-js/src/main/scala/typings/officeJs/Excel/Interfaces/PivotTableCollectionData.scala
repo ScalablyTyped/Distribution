@@ -2,14 +2,12 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `pivotTableCollection.toJSON()`. */
-@js.native
 trait PivotTableCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[PivotTableData]] = js.native
+  var items: js.UndefOr[js.Array[PivotTableData]] = js.undefined
 }
 object PivotTableCollectionData {
   

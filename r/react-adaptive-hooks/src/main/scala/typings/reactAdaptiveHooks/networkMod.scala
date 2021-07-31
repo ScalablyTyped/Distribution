@@ -2,17 +2,18 @@ package typings.reactAdaptiveHooks
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object networkMod {
   
-  @JSImport("react-adaptive-hooks/network", "useNetworkStatus")
+  @JSImport("react-adaptive-hooks/network", JSImport.Namespace)
   @js.native
-  def useNetworkStatus(): typings.reactAdaptiveHooks.anon.EffectiveConnectionType = js.native
-  @JSImport("react-adaptive-hooks/network", "useNetworkStatus")
-  @js.native
-  def useNetworkStatus(initialEffectiveConnectionType: EffectiveConnectionType): typings.reactAdaptiveHooks.anon.EffectiveConnectionType = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useNetworkStatus(): typings.reactAdaptiveHooks.anon.EffectiveConnectionType = ^.asInstanceOf[js.Dynamic].applyDynamic("useNetworkStatus")().asInstanceOf[typings.reactAdaptiveHooks.anon.EffectiveConnectionType]
+  @scala.inline
+  def useNetworkStatus(initialEffectiveConnectionType: EffectiveConnectionType): typings.reactAdaptiveHooks.anon.EffectiveConnectionType = ^.asInstanceOf[js.Dynamic].applyDynamic("useNetworkStatus")(initialEffectiveConnectionType.asInstanceOf[js.Any]).asInstanceOf[typings.reactAdaptiveHooks.anon.EffectiveConnectionType]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactAdaptiveHooks.reactAdaptiveHooksStrings.`slow-2g`

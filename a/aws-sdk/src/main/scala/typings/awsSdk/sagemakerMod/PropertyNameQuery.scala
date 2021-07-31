@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyNameQuery extends StObject {
   
   /**
     * Text that begins a property's name.
     */
-  var PropertyNameHint: typings.awsSdk.sagemakerMod.PropertyNameHint = js.native
+  var PropertyNameHint: typings.awsSdk.sagemakerMod.PropertyNameHint
 }
 object PropertyNameQuery {
   

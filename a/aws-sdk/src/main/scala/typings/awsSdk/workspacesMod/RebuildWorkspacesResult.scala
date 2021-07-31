@@ -2,16 +2,14 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RebuildWorkspacesResult extends StObject {
   
   /**
     * Information about the WorkSpace that could not be rebuilt.
     */
-  var FailedRequests: js.UndefOr[FailedRebuildWorkspaceRequests] = js.native
+  var FailedRequests: js.UndefOr[FailedRebuildWorkspaceRequests] = js.undefined
 }
 object RebuildWorkspacesResult {
   

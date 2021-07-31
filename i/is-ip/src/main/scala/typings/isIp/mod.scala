@@ -4,7 +4,6 @@ import typings.isIp.isIpNumbers.`4`
 import typings.isIp.isIpNumbers.`6`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,9 +19,12 @@ object mod {
   	//=> true
   	```
   	*/
+  @scala.inline
+  def apply(string: String): Boolean = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
   @JSImport("is-ip", JSImport.Namespace)
   @js.native
-  def apply(string: String): Boolean = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Check if `string` is IPv4.
@@ -33,9 +35,8 @@ object mod {
   	//=> true
   	```
   	*/
-  @JSImport("is-ip", "v4")
-  @js.native
-  def v4(string: String): Boolean = js.native
+  @scala.inline
+  def v4(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v4")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	Check if `string` is IPv6.
@@ -46,9 +47,8 @@ object mod {
   	//=> true
   	```
   	*/
-  @JSImport("is-ip", "v6")
-  @js.native
-  def v6(string: String): Boolean = js.native
+  @scala.inline
+  def v6(string: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("v6")(string.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
   	@returns `6` if `string` is IPv6, `4` if `string` is IPv4, or `undefined` if `string` is neither.
@@ -63,7 +63,6 @@ object mod {
   	//=> undefined
   	```
   	*/
-  @JSImport("is-ip", "version")
-  @js.native
-  def version(string: String): js.UndefOr[`4` | `6`] = js.native
+  @scala.inline
+  def version(string: String): js.UndefOr[`4` | `6`] = ^.asInstanceOf[js.Dynamic].applyDynamic("version")(string.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[`4` | `6`]]
 }

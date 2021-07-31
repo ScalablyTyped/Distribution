@@ -2,15 +2,13 @@ package typings.winrt.Windows.Media.PlayTo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPlayToConnectionStateChangedEventArgs extends StObject {
   
-  var currentState: PlayToConnectionState = js.native
+  var currentState: PlayToConnectionState
   
-  var previousState: PlayToConnectionState = js.native
+  var previousState: PlayToConnectionState
 }
 object IPlayToConnectionStateChangedEventArgs {
   

@@ -3,61 +3,59 @@ package typings.classValidator
 import typings.classValidator.anon.Target
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validatorOptionsMod {
   
-  @js.native
   trait ValidatorOptions extends StObject {
     
     /**
       * If set to true, the validation will not use default messages.
       * Error message always will be undefined if its not explicitly set.
       */
-    var dismissDefaultMessages: js.UndefOr[Boolean] = js.native
+    var dismissDefaultMessages: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true, instead of stripping non-whitelisted properties validator will throw an error
       */
-    var forbidNonWhitelisted: js.UndefOr[Boolean] = js.native
+    var forbidNonWhitelisted: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Settings true will cause fail validation of unknown objects.
       */
-    var forbidUnknownValues: js.UndefOr[Boolean] = js.native
+    var forbidUnknownValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Groups to be used during validation of the object.
       */
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * If set to true then validator will skip validation of all properties that are null or undefined in the validating object.
       */
-    var skipMissingProperties: js.UndefOr[Boolean] = js.native
+    var skipMissingProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true then validator will skip validation of all properties that are null in the validating object.
       */
-    var skipNullProperties: js.UndefOr[Boolean] = js.native
+    var skipNullProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to true then validator will skip validation of all properties that are undefined in the validating object.
       */
-    var skipUndefinedProperties: js.UndefOr[Boolean] = js.native
+    var skipUndefinedProperties: js.UndefOr[Boolean] = js.undefined
     
     /**
       * ValidationError special options.
       */
-    var validationError: js.UndefOr[Target] = js.native
+    var validationError: js.UndefOr[Target] = js.undefined
     
     /**
       * If set to true validator will strip validated object of any properties that do not have any decorators.
       *
       * Tip: if no other decorator is suitable for your property use @Allow decorator.
       */
-    var whitelist: js.UndefOr[Boolean] = js.native
+    var whitelist: js.UndefOr[Boolean] = js.undefined
   }
   object ValidatorOptions {
     

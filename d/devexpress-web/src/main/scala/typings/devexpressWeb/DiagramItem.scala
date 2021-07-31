@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides information about an item (shape or connector).
   */
-@js.native
 trait DiagramItem extends StObject {
   
   /**
     * Gets the item's internal identifier.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Gets the item's key from a data source.
     */
-  var key: js.Any = js.native
+  var key: js.Any
 }
 object DiagramItem {
   

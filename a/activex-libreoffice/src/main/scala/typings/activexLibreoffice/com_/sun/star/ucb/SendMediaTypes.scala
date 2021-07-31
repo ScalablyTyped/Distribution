@@ -3,18 +3,16 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** contains a list of Internet media types (like "text/plain" and "text/html"), that are related to a send protocol. */
-@js.native
 trait SendMediaTypes extends StObject {
   
   /** the protocol to which the information is related (i.e. "NNTP", "SMTP", "VIM"). */
-  var ProtocolType: String = js.native
+  var ProtocolType: String
   
   /** a list of Internet media types */
-  var Value: SafeArray[String] = js.native
+  var Value: SafeArray[String]
 }
 object SendMediaTypes {
   

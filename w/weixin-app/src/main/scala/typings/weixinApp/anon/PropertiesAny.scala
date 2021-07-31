@@ -2,13 +2,11 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertiesAny extends StObject {
   
-  var properties: js.Any = js.native
+  var properties: js.Any
 }
 object PropertiesAny {
   

@@ -2,19 +2,17 @@ package typings.inboxsdk.mod.Lists
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageDescriptor extends StObject {
   
-  var imageClass: js.UndefOr[String] = js.native
+  var imageClass: js.UndefOr[String] = js.undefined
   
-  var imageUrl: String = js.native
+  var imageUrl: String
   
-  var orderHint: js.UndefOr[Double] = js.native
+  var orderHint: js.UndefOr[Double] = js.undefined
   
-  var tooltip: js.UndefOr[String] = js.native
+  var tooltip: js.UndefOr[String] = js.undefined
 }
 object ImageDescriptor {
   

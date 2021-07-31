@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationResourceLifecycleMessage extends StObject {
   
   /**
     * The name of the application.
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * The lifecycle configuration.
     */
-  var ResourceLifecycleConfig: ApplicationResourceLifecycleConfig = js.native
+  var ResourceLifecycleConfig: ApplicationResourceLifecycleConfig
 }
 object UpdateApplicationResourceLifecycleMessage {
   

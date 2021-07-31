@@ -2,15 +2,13 @@ package typings.materialUi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerBackgroundColor extends StObject {
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var containerBackgroundColor: js.UndefOr[String] = js.native
+  var containerBackgroundColor: js.UndefOr[String] = js.undefined
 }
 object ContainerBackgroundColor {
   

@@ -2,25 +2,23 @@ package typings.firefoxWebextBrowser.browser.manifest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebExtensionManifestBrowserAction extends StObject {
   
-  var browser_style: js.UndefOr[Boolean] = js.native
+  var browser_style: js.UndefOr[Boolean] = js.undefined
   
   /** Defines the location the browserAction will appear by default. The default location is navbar. */
-  var default_area: js.UndefOr[WebExtensionManifestBrowserActionDefaultArea] = js.native
+  var default_area: js.UndefOr[WebExtensionManifestBrowserActionDefaultArea] = js.undefined
   
-  var default_icon: js.UndefOr[IconPath] = js.native
+  var default_icon: js.UndefOr[IconPath] = js.undefined
   
-  var default_popup: js.UndefOr[String] = js.native
+  var default_popup: js.UndefOr[String] = js.undefined
   
-  var default_title: js.UndefOr[String] = js.native
+  var default_title: js.UndefOr[String] = js.undefined
   
   /** Specifies icons to use for dark and light themes */
-  var theme_icons: js.UndefOr[js.Array[ThemeIcons]] = js.native
+  var theme_icons: js.UndefOr[js.Array[ThemeIcons]] = js.undefined
 }
 object WebExtensionManifestBrowserAction {
   

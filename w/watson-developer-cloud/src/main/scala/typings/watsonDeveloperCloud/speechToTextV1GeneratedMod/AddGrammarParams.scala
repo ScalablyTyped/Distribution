@@ -3,31 +3,29 @@ package typings.watsonDeveloperCloud.speechToTextV1GeneratedMod
 import typings.watsonDeveloperCloud.speechToTextV1GeneratedMod.AddGrammarConstants.ContentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Parameters for the `addGrammar` operation. */
-@js.native
 trait AddGrammarParams extends StObject {
   
   /** If `true`, the specified grammar overwrites an existing grammar with the same name. If `false`, the request fails if a grammar with the same name already exists. The parameter has no effect if a grammar with the same name does not already exist. */
-  var allow_overwrite: js.UndefOr[Boolean] = js.native
+  var allow_overwrite: js.UndefOr[Boolean] = js.undefined
   
   /** The format (MIME type) of the grammar file: * `application/srgs` for Augmented Backus-Naur Form (ABNF), which uses a plain-text representation that is similar to traditional BNF grammars. * `application/srgs+xml` for XML Form, which uses XML elements to represent the grammar. */
-  var content_type: ContentType | String = js.native
+  var content_type: ContentType | String
   
   /** The customization ID (GUID) of the custom language model that is to be used for the request. You must make the request with credentials for the instance of the service that owns the custom model. */
-  var customization_id: String = js.native
+  var customization_id: String
   
   /** A plain text file that contains the grammar in the format specified by the `Content-Type` header. Encode the file in UTF-8 (ASCII is a subset of UTF-8). Using any other encoding can lead to issues when compiling the grammar or to unexpected results in decoding. The service ignores an encoding that is specified in the header of the grammar. */
-  var grammar_file: String = js.native
+  var grammar_file: String
   
   /** The name of the new grammar for the custom language model. Use a localized name that matches the language of the custom model and reflects the contents of the grammar. * Include a maximum of 128 characters in the name. * Do not include spaces, slashes, or backslashes in the name. * Do not use the name of an existing grammar or corpus that is already defined for the custom model. * Do not use the name `user`, which is reserved by the service to denote custom words that are added or modified by the user. */
-  var grammar_name: String = js.native
+  var grammar_name: String
   
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
-  var return_response: js.UndefOr[Boolean] = js.native
+  var return_response: js.UndefOr[Boolean] = js.undefined
 }
 object AddGrammarParams {
   

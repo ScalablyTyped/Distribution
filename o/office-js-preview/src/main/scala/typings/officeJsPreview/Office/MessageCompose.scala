@@ -4,7 +4,6 @@ import typings.officeJsPreview.Office.MailboxEnums.ItemType
 import typings.officeJsPreview.anon.AsyncContextOptionsisInli
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * - {@link Office.Message | Message}
   */
 @js.native
-trait MessageCompose extends Item {
+trait MessageCompose
+  extends StObject
+     with Item {
   
   /**
     * Adds a file to a message or appointment as an attachment.
@@ -65,7 +66,7 @@ trait MessageCompose extends Item {
   def addFileAttachmentAsync(
     uri: String,
     attachmentName: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def addFileAttachmentAsync(uri: String, attachmentName: String, options: AsyncContextOptionsisInli): Unit = js.native
@@ -116,7 +117,7 @@ trait MessageCompose extends Item {
   def addFileAttachmentFromBase64Async(
     base64File: String,
     attachmentName: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def addFileAttachmentFromBase64Async(base64File: String, attachmentName: String, options: AsyncContextOptionsisInli): Unit = js.native
@@ -131,7 +132,7 @@ trait MessageCompose extends Item {
   def addHandlerAsync(
     eventType: String,
     handler: js.Any,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: String, handler: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -166,7 +167,7 @@ trait MessageCompose extends Item {
   def addHandlerAsync(
     eventType: EventType,
     handler: js.Any,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def addHandlerAsync(eventType: EventType, handler: js.Any, options: AsyncContextOptions): Unit = js.native
@@ -215,7 +216,7 @@ trait MessageCompose extends Item {
   def addItemAttachmentAsync(
     itemId: js.Any,
     attachmentName: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
   ): Unit = js.native
   def addItemAttachmentAsync(itemId: js.Any, attachmentName: String, options: AsyncContextOptions): Unit = js.native
@@ -350,10 +351,7 @@ trait MessageCompose extends Item {
     * @beta
     */
   def disableClientSignatureAsync(): Unit = js.native
-  def disableClientSignatureAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def disableClientSignatureAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def disableClientSignatureAsync(options: AsyncContextOptions): Unit = js.native
   def disableClientSignatureAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   
@@ -406,7 +404,7 @@ trait MessageCompose extends Item {
   def getAttachmentContentAsync(attachmentId: String): Unit = js.native
   def getAttachmentContentAsync(
     attachmentId: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[AttachmentContent], Unit]
   ): Unit = js.native
   def getAttachmentContentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
@@ -435,7 +433,7 @@ trait MessageCompose extends Item {
     */
   def getAttachmentsAsync(): Unit = js.native
   def getAttachmentsAsync(
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[js.Array[AttachmentDetailsCompose]], Unit]
   ): Unit = js.native
   def getAttachmentsAsync(options: AsyncContextOptions): Unit = js.native
@@ -465,7 +463,7 @@ trait MessageCompose extends Item {
     *
     * @beta
     */
-  def getComposeTypeAsync(callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native
+  def getComposeTypeAsync(callback: js.Function1[/* asyncResult */ AsyncResult[js.Any], Unit]): Unit = js.native
   /**
     * Specifies the type of message compose and its coercion type. The message can be new, or a reply or forward.
     * The coercion type can be HTML or plain text.
@@ -489,7 +487,7 @@ trait MessageCompose extends Item {
     *
     * @beta
     */
-  def getComposeTypeAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native
+  def getComposeTypeAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[js.Any], Unit]): Unit = js.native
   
   /**
     * Gets initialization data passed when the add-in is activated by an actionable message.
@@ -517,10 +515,7 @@ trait MessageCompose extends Item {
     * @beta
     */
   def getInitializationContextAsync(): Unit = js.native
-  def getInitializationContextAsync(
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]
-  ): Unit = js.native
+  def getInitializationContextAsync(options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions): Unit = js.native
   def getInitializationContextAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   
@@ -577,11 +572,11 @@ trait MessageCompose extends Item {
     */
   def getItemIdAsync(options: AsyncContextOptions, callback: js.Function1[/* asyncResult */ AsyncResult[String], Unit]): Unit = js.native
   
-  def getSelectedDataAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native
+  def getSelectedDataAsync(coercionType: String, callback: js.Function1[/* asyncResult */ AsyncResult[js.Any], Unit]): Unit = js.native
   def getSelectedDataAsync(
     coercionType: String,
     options: AsyncContextOptions,
-    callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Any], Unit]
   ): Unit = js.native
   /**
     * Asynchronously returns selected data from the subject or body of a message.
@@ -608,7 +603,7 @@ trait MessageCompose extends Item {
     * @param callback - When the method completes, the function passed in the `callback` parameter is called with a single parameter of
     *                 type `Office.AsyncResult`.
     */
-  def getSelectedDataAsync(coercionType: CoercionType, callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]): Unit = js.native
+  def getSelectedDataAsync(coercionType: CoercionType, callback: js.Function1[/* asyncResult */ AsyncResult[js.Any], Unit]): Unit = js.native
   /**
     * Asynchronously returns selected data from the subject or body of a message.
     *
@@ -639,7 +634,7 @@ trait MessageCompose extends Item {
   def getSelectedDataAsync(
     coercionType: CoercionType,
     options: AsyncContextOptions,
-    callback: js.Function1[/* asyncResult */ AsyncResult[_], Unit]
+    callback: js.Function1[/* asyncResult */ AsyncResult[js.Any], Unit]
   ): Unit = js.native
   
   /**
@@ -849,7 +844,7 @@ trait MessageCompose extends Item {
   def removeAttachmentAsync(attachmentId: String): Unit = js.native
   def removeAttachmentAsync(
     attachmentId: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeAttachmentAsync(attachmentId: String, options: AsyncContextOptions): Unit = js.native
@@ -862,7 +857,7 @@ trait MessageCompose extends Item {
   def removeHandlerAsync(eventType: String): Unit = js.native
   def removeHandlerAsync(
     eventType: String,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(eventType: String, options: AsyncContextOptions): Unit = js.native
@@ -893,7 +888,7 @@ trait MessageCompose extends Item {
   def removeHandlerAsync(eventType: EventType): Unit = js.native
   def removeHandlerAsync(
     eventType: EventType,
-    options: js.UndefOr[scala.Nothing],
+    options: Unit,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
   def removeHandlerAsync(eventType: EventType, options: AsyncContextOptions): Unit = js.native
@@ -1040,17 +1035,13 @@ trait MessageCompose extends Item {
     *                 type `Office.AsyncResult`.
     */
   def setSelectedDataAsync(data: String): Unit = js.native
-  def setSelectedDataAsync(data: String, options: AsyncContextOptions with CoercionTypeOptions): Unit = js.native
+  def setSelectedDataAsync(data: String, options: AsyncContextOptions & CoercionTypeOptions): Unit = js.native
   def setSelectedDataAsync(
     data: String,
-    options: AsyncContextOptions with CoercionTypeOptions,
+    options: AsyncContextOptions & CoercionTypeOptions,
     callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
   ): Unit = js.native
-  def setSelectedDataAsync(
-    data: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setSelectedDataAsync(data: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   
   /**
     * Gets or sets the description that appears in the subject field of an item.

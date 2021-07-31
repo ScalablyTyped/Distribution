@@ -9,7 +9,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -102,20 +101,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * **CreateView**;  implies a [CommandType]{@link url="#command_type"} of {@link CommandType.TABLE}
   * @see com.sun.star.sdb.ContentLoader
   */
-@js.native
 trait QueryDesign
-  extends XController
+  extends StObject
+     with XController
      with XInitialization {
   
   /** reflects the designed SQL command at the moment it was last saved by the user. */
-  var ActiveCommand: String = js.native
+  var ActiveCommand: String
   
   /**
     * specifies whether the user enabled escape processing for the statement being designed.
     * @see DataAccessDescriptor.EscapeProcessing
     * @since OOo 2.4
     */
-  var EscapeProcessing: Boolean = js.native
+  var EscapeProcessing: Boolean
 }
 object QueryDesign {
   
@@ -134,7 +133,7 @@ object QueryDesign {
     getFrame: () => XFrame,
     getModel: () => XModel,
     getViewData: () => js.Any,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

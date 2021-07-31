@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,6 +13,7 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Framebuffer")
 @js.native
 class Framebuffer protected ()
-  extends typings.pixiJs.PIXI.Framebuffer {
+  extends StObject
+     with typings.pixiJs.PIXI.Framebuffer {
   def this(width: Double, height: Double) = this()
 }

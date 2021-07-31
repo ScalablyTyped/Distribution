@@ -2,13 +2,11 @@ package typings.mapboxGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layout extends StObject {
   
-  var visibility: js.UndefOr[Visibility] = js.native
+  var visibility: js.UndefOr[Visibility] = js.undefined
 }
 object Layout {
   

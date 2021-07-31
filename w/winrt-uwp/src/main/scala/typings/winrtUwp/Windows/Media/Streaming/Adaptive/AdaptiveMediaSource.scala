@@ -11,14 +11,13 @@ import typings.winrtUwp.winrtUwpStrings.downloadrequested
 import typings.winrtUwp.winrtUwpStrings.playbackbitratechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the source of adaptive streaming content. */
 @js.native
 trait AdaptiveMediaSource extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_downloadbitratechanged(
     `type`: downloadbitratechanged,
@@ -82,36 +81,36 @@ trait AdaptiveMediaSource extends StObject {
   var isLive: Boolean = js.native
   
   /** Occurs when the CurrentDownloadBitrate changes. */
-  def ondownloadbitratechanged(ev: AdaptiveMediaSourceDownloadBitrateChangedEventArgs with WinRTEvent[AdaptiveMediaSource]): Unit = js.native
+  def ondownloadbitratechanged(ev: AdaptiveMediaSourceDownloadBitrateChangedEventArgs & WinRTEvent[AdaptiveMediaSource]): Unit = js.native
   /** Occurs when the CurrentDownloadBitrate changes. */
   @JSName("ondownloadbitratechanged")
   var ondownloadbitratechanged_Original: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourceDownloadBitrateChangedEventArgs] = js.native
   
   /** Occurs when a resource download operation completes */
-  def ondownloadcompleted(ev: AdaptiveMediaSourceDownloadCompletedEventArgs with WinRTEvent[AdaptiveMediaSource]): Unit = js.native
+  def ondownloadcompleted(ev: AdaptiveMediaSourceDownloadCompletedEventArgs & WinRTEvent[AdaptiveMediaSource]): Unit = js.native
   /** Occurs when a resource download operation completes */
   @JSName("ondownloadcompleted")
   var ondownloadcompleted_Original: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourceDownloadCompletedEventArgs] = js.native
   
   /** Occurs when a resource download operation fails. */
-  def ondownloadfailed(ev: AdaptiveMediaSourceDownloadFailedEventArgs with WinRTEvent[AdaptiveMediaSource]): Unit = js.native
+  def ondownloadfailed(ev: AdaptiveMediaSourceDownloadFailedEventArgs & WinRTEvent[AdaptiveMediaSource]): Unit = js.native
   /** Occurs when a resource download operation fails. */
   @JSName("ondownloadfailed")
   var ondownloadfailed_Original: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourceDownloadFailedEventArgs] = js.native
   
   /** Occurs when a resource download operation is requested. */
-  def ondownloadrequested(ev: AdaptiveMediaSourceDownloadRequestedEventArgs with WinRTEvent[AdaptiveMediaSource]): Unit = js.native
+  def ondownloadrequested(ev: AdaptiveMediaSourceDownloadRequestedEventArgs & WinRTEvent[AdaptiveMediaSource]): Unit = js.native
   /** Occurs when a resource download operation is requested. */
   @JSName("ondownloadrequested")
   var ondownloadrequested_Original: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourceDownloadRequestedEventArgs] = js.native
   
   /** Occurs when the CurrentPlaybackBitrate changes. */
-  def onplaybackbitratechanged(ev: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs with WinRTEvent[AdaptiveMediaSource]): Unit = js.native
+  def onplaybackbitratechanged(ev: AdaptiveMediaSourcePlaybackBitrateChangedEventArgs & WinRTEvent[AdaptiveMediaSource]): Unit = js.native
   /** Occurs when the CurrentPlaybackBitrate changes. */
   @JSName("onplaybackbitratechanged")
   var onplaybackbitratechanged_Original: TypedEventHandler[AdaptiveMediaSource, AdaptiveMediaSourcePlaybackBitrateChangedEventArgs] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_downloadbitratechanged(
     `type`: downloadbitratechanged,

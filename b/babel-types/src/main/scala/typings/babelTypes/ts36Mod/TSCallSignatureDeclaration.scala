@@ -2,22 +2,21 @@ package typings.babelTypes.ts36Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TSCallSignatureDeclaration
-  extends Node
+  extends StObject
+     with Node
      with TSTypeElement {
   
-  var parameters: (js.Array[Identifier_ | RestElement_]) | Null = js.native
+  var parameters: (js.Array[Identifier_ | RestElement_]) | Null
   
-  var typeAnnotation: TSTypeAnnotation | Null = js.native
+  var typeAnnotation: TSTypeAnnotation | Null
   
-  var typeParameters: TypeParameterDeclaration_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | Null
   
   @JSName("type")
-  var type_TSCallSignatureDeclaration: typings.babelTypes.babelTypesStrings.TSCallSignatureDeclaration = js.native
+  var type_TSCallSignatureDeclaration: typings.babelTypes.babelTypesStrings.TSCallSignatureDeclaration
 }
 object TSCallSignatureDeclaration {
   
@@ -26,31 +25,20 @@ object TSCallSignatureDeclaration {
   def apply(): TSCallSignatureDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSCallSignatureDeclaration")
   @js.native
-  def apply(
-    typeParameters: js.UndefOr[scala.Nothing],
-    parameters: js.UndefOr[scala.Nothing],
-    typeAnnotation: TSTypeAnnotation
-  ): TSCallSignatureDeclaration = js.native
-  @JSImport("babel-types/ts3.6", "TSCallSignatureDeclaration")
-  @js.native
-  def apply(typeParameters: js.UndefOr[scala.Nothing], parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = js.native
+  def apply(typeParameters: Unit, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSCallSignatureDeclaration")
   @js.native
   def apply(
-    typeParameters: js.UndefOr[scala.Nothing],
+    typeParameters: Unit,
     parameters: js.Array[Identifier_ | RestElement_],
     typeAnnotation: TSTypeAnnotation
   ): TSCallSignatureDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSCallSignatureDeclaration")
   @js.native
-  def apply(typeParameters: TypeParameterDeclaration_): TSCallSignatureDeclaration = js.native
+  def apply(typeParameters: Unit, parameters: Unit, typeAnnotation: TSTypeAnnotation): TSCallSignatureDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSCallSignatureDeclaration")
   @js.native
-  def apply(
-    typeParameters: TypeParameterDeclaration_,
-    parameters: js.UndefOr[scala.Nothing],
-    typeAnnotation: TSTypeAnnotation
-  ): TSCallSignatureDeclaration = js.native
+  def apply(typeParameters: TypeParameterDeclaration_): TSCallSignatureDeclaration = js.native
   @JSImport("babel-types/ts3.6", "TSCallSignatureDeclaration")
   @js.native
   def apply(typeParameters: TypeParameterDeclaration_, parameters: js.Array[Identifier_ | RestElement_]): TSCallSignatureDeclaration = js.native
@@ -61,6 +49,9 @@ object TSCallSignatureDeclaration {
     parameters: js.Array[Identifier_ | RestElement_],
     typeAnnotation: TSTypeAnnotation
   ): TSCallSignatureDeclaration = js.native
+  @JSImport("babel-types/ts3.6", "TSCallSignatureDeclaration")
+  @js.native
+  def apply(typeParameters: TypeParameterDeclaration_, parameters: Unit, typeAnnotation: TSTypeAnnotation): TSCallSignatureDeclaration = js.native
   
   @scala.inline
   implicit class TSCallSignatureDeclarationMutableBuilder[Self <: TSCallSignatureDeclaration] (val x: Self) extends AnyVal {

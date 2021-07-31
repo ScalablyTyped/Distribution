@@ -2,19 +2,23 @@ package typings.nodeOsUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object openfilesMod {
   
   @JSImport("node-os-utils/lib/openfiles", JSImport.Default)
   @js.native
-  class default () extends OpenFiles
+  class default ()
+    extends StObject
+       with OpenFiles {
+    
+    /* CompleteClass */
+    override def openFd(): js.Promise[Double] = js.native
+  }
   
-  @js.native
   trait OpenFiles extends StObject {
     
-    def openFd(): js.Promise[Double] = js.native
+    def openFd(): js.Promise[Double]
   }
   object OpenFiles {
     

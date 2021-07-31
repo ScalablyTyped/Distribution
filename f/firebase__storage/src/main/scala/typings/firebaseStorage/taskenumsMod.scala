@@ -2,10 +2,13 @@ package typings.firebaseStorage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object taskenumsMod {
+  
+  @JSImport("@firebase/storage/dist/src/implementation/taskenums", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object InternalTaskState {
     
@@ -115,7 +118,6 @@ object taskenumsMod {
   }
   type TaskState = String
   
-  @JSImport("@firebase/storage/dist/src/implementation/taskenums", "taskStateFromInternalTaskState")
-  @js.native
-  def taskStateFromInternalTaskState(state: InternalTaskState): TaskState = js.native
+  @scala.inline
+  def taskStateFromInternalTaskState(state: InternalTaskState): TaskState = ^.asInstanceOf[js.Dynamic].applyDynamic("taskStateFromInternalTaskState")(state.asInstanceOf[js.Any]).asInstanceOf[TaskState]
 }

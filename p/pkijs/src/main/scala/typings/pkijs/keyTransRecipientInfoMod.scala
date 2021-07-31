@@ -3,47 +3,24 @@ package typings.pkijs
 import typings.asn1js.mod.OctetString
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keyTransRecipientInfoMod {
   
   @JSImport("pkijs/src/KeyTransRecipientInfo", JSImport.Default)
   @js.native
-  class default () extends KeyTransRecipientInfo {
+  class default ()
+    extends StObject
+       with KeyTransRecipientInfo {
     def this(params: js.Any) = this()
-  }
-  /* static members */
-  object default {
     
-    /**
-      * Compare values with default values for all class members
-      * @param {string} memberName String name for a class member
-      * @param {*} memberValue Value to compare with default value
-      */
-    @JSImport("pkijs/src/KeyTransRecipientInfo", "default.compareWithDefault")
-    @js.native
-    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = js.native
-    
-    @JSImport("pkijs/src/KeyTransRecipientInfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    @JSImport("pkijs/src/KeyTransRecipientInfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/KeyTransRecipientInfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
-  }
-  
-  @js.native
-  trait KeyTransRecipientInfo extends StObject {
-    
+    /* CompleteClass */
     var encryptedKey: OctetString = js.native
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
     
+    /* CompleteClass */
     var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
     
     /**
@@ -52,15 +29,68 @@ object keyTransRecipientInfoMod {
       * @type {Certificate}
       * @memberOf KeyTransRecipientInfo
       */
+    /* CompleteClass */
     var recipientCertificate: typings.pkijs.certificateMod.default = js.native
     
+    /* CompleteClass */
     var rid: typings.pkijs.recipientIdentifierMod.default = js.native
     
-    def toJSON(): js.Any = js.native
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
     
-    def toSchema(): js.Any = js.native
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
     
+    /* CompleteClass */
     var version: Double = js.native
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("pkijs/src/KeyTransRecipientInfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    /**
+      * Compare values with default values for all class members
+      * @param {string} memberName String name for a class member
+      * @param {*} memberValue Value to compare with default value
+      */
+    @scala.inline
+    def compareWithDefault(memberName: String, memberValue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareWithDefault")(memberName.asInstanceOf[js.Any], memberValue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  }
+  
+  trait KeyTransRecipientInfo extends StObject {
+    
+    var encryptedKey: OctetString
+    
+    def fromSchema(schema: js.Any): Unit
+    
+    var keyEncryptionAlgorithm: typings.pkijs.algorithmIdentifierMod.default
+    
+    /**
+      * For some reasons we need to store recipient's certificate here
+      *
+      * @type {Certificate}
+      * @memberOf KeyTransRecipientInfo
+      */
+    var recipientCertificate: typings.pkijs.certificateMod.default
+    
+    var rid: typings.pkijs.recipientIdentifierMod.default
+    
+    def toJSON(): js.Any
+    
+    def toSchema(): js.Any
+    
+    var version: Double
   }
   object KeyTransRecipientInfo {
     

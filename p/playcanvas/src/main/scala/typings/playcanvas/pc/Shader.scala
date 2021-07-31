@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -41,13 +40,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param definition.fshader - Fragment shader source (GLSL code).
   * @param [definition.useTransformFeedback] - Specifies that this shader outputs post-VS data to a buffer.
   */
-@js.native
 trait Shader extends StObject {
   
   /**
     * Frees resources associated with this shader.
     */
-  def destroy(): Unit = js.native
+  def destroy(): Unit
 }
 object Shader {
   

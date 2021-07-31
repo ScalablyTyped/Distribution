@@ -4,7 +4,6 @@ import typings.ol.extentMod.Extent
 import typings.ol.projectionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object epsg4326Mod {

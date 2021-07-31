@@ -8,17 +8,15 @@ import typings.reactBigCalendar.reactBigCalendarStrings.move
 import typings.reactBigCalendar.reactBigCalendarStrings.resize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction[TEvent /* <: js.Object */] extends StObject {
   
-  var action: resize | move = js.native
+  var action: resize | move
   
-  var direction: UP | DOWN | LEFT | RIGHT = js.native
+  var direction: UP | DOWN | LEFT | RIGHT
   
-  var event: TEvent = js.native
+  var event: TEvent
 }
 object Direction {
   
@@ -29,7 +27,7 @@ object Direction {
   }
   
   @scala.inline
-  implicit class DirectionMutableBuilder[Self <: Direction[_], TEvent /* <: js.Object */] (val x: Self with Direction[TEvent]) extends AnyVal {
+  implicit class DirectionMutableBuilder[Self <: Direction[?], TEvent /* <: js.Object */] (val x: Self & Direction[TEvent]) extends AnyVal {
     
     @scala.inline
     def setAction(value: resize | move): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])

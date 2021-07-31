@@ -6,23 +6,21 @@ import typings.jestMock.mod.ModuleMocker
 import typings.node.NodeJS.Global
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Config[TimerRef] extends StObject {
     
-    var config: StackTraceConfig = js.native
+    var config: StackTraceConfig
     
-    var global: Global = js.native
+    var global: Global
     
-    var maxLoops: js.UndefOr[Double] = js.native
+    var maxLoops: js.UndefOr[Double] = js.undefined
     
-    var moduleMocker: ModuleMocker = js.native
+    var moduleMocker: ModuleMocker
     
-    var timerConfig: TimerConfig[TimerRef] = js.native
+    var timerConfig: TimerConfig[TimerRef]
   }
   object Config {
     
@@ -38,7 +36,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ConfigMutableBuilder[Self <: Config[_], TimerRef] (val x: Self with Config[TimerRef]) extends AnyVal {
+    implicit class ConfigMutableBuilder[Self <: Config[?], TimerRef] (val x: Self & Config[TimerRef]) extends AnyVal {
       
       @scala.inline
       def setConfig(value: StackTraceConfig): Self = StObject.set(x, "config", value.asInstanceOf[js.Any])

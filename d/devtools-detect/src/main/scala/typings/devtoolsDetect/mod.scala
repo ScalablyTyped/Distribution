@@ -6,7 +6,6 @@ import typings.std.AddEventListenerOptions
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,18 +14,17 @@ object mod extends Shortcut {
   @js.native
   val ^ : DevTools = js.native
   
-  @js.native
   trait DevTools extends StObject {
     
     /**
     		Whether DevTools is open.
     		*/
-    val isOpen: Boolean = js.native
+    val isOpen: Boolean
     
     /**
     		Orientation of the DevTools if it's open.
     		*/
-    val orientation: js.UndefOr[Orientation] = js.native
+    val orientation: js.UndefOr[Orientation] = js.undefined
   }
   object DevTools {
     
@@ -51,7 +49,9 @@ object mod extends Shortcut {
   }
   
   @js.native
-  trait DevToolsEvent extends Event {
+  trait DevToolsEvent
+    extends StObject
+       with Event {
     
     var detail: DevTools = js.native
   }
@@ -81,13 +81,17 @@ object mod extends Shortcut {
     trait Window extends StObject {
       
       @JSName("addEventListener")
-      def addEventListener_devtoolschange(`type`: devtoolschange, listener: js.Function1[/* event */ DevToolsEvent, _]): Unit = js.native
-      @JSName("addEventListener")
-      def addEventListener_devtoolschange(`type`: devtoolschange, listener: js.Function1[/* event */ DevToolsEvent, _], options: Boolean): Unit = js.native
+      def addEventListener_devtoolschange(`type`: devtoolschange, listener: js.Function1[/* event */ DevToolsEvent, js.Any]): Unit = js.native
       @JSName("addEventListener")
       def addEventListener_devtoolschange(
         `type`: devtoolschange,
-        listener: js.Function1[/* event */ DevToolsEvent, _],
+        listener: js.Function1[/* event */ DevToolsEvent, js.Any],
+        options: Boolean
+      ): Unit = js.native
+      @JSName("addEventListener")
+      def addEventListener_devtoolschange(
+        `type`: devtoolschange,
+        listener: js.Function1[/* event */ DevToolsEvent, js.Any],
         options: AddEventListenerOptions
       ): Unit = js.native
     }

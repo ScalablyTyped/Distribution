@@ -2,31 +2,29 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SampleChannelDataRequest extends StObject {
   
   /**
     * The name of the channel whose message samples are retrieved.
     */
-  var channelName: ChannelName = js.native
+  var channelName: ChannelName
   
   /**
     * The end of the time window from which sample messages are retrieved.
     */
-  var endTime: js.UndefOr[EndTime] = js.native
+  var endTime: js.UndefOr[EndTime] = js.undefined
   
   /**
     * The number of sample messages to be retrieved. The limit is 10. The default is also 10.
     */
-  var maxMessages: js.UndefOr[MaxMessages] = js.native
+  var maxMessages: js.UndefOr[MaxMessages] = js.undefined
   
   /**
     * The start of the time window from which sample messages are retrieved.
     */
-  var startTime: js.UndefOr[StartTime] = js.native
+  var startTime: js.UndefOr[StartTime] = js.undefined
 }
 object SampleChannelDataRequest {
   

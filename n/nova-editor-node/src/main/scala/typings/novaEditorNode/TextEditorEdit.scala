@@ -2,18 +2,16 @@ package typings.novaEditorNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// https://novadocs.panic.com/api-reference/text-editor-edit/
-@js.native
 trait TextEditorEdit extends StObject {
   
-  def delete(range: Range): Unit = js.native
+  def delete(range: Range): Unit
   
-  def insert(position: Double, text: String): Unit = js.native
+  def insert(position: Double, text: String): Unit
   
-  def replace(range: Range, text: String): Unit = js.native
+  def replace(range: Range, text: String): Unit
 }
 object TextEditorEdit {
   

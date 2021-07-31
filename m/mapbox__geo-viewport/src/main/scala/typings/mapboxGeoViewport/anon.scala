@@ -2,17 +2,15 @@ package typings.mapboxGeoViewport
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Lat extends StObject {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lon: Double = js.native
+    var lon: Double
   }
   object Lat {
     

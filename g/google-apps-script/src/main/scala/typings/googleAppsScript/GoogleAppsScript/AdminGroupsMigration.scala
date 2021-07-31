@@ -3,13 +3,11 @@ package typings.googleAppsScript.GoogleAppsScript
 import typings.googleAppsScript.GoogleAppsScript.AdminGroupsMigration.Collection.ArchiveCollection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdminGroupsMigration extends StObject {
   
-  var Archive: js.UndefOr[ArchiveCollection] = js.native
+  var Archive: js.UndefOr[ArchiveCollection] = js.undefined
 }
 object AdminGroupsMigration {
   
@@ -43,12 +41,11 @@ object AdminGroupsMigration {
   
   object Schema {
     
-    @js.native
     trait Groups extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var responseCode: js.UndefOr[String] = js.native
+      var responseCode: js.UndefOr[String] = js.undefined
     }
     object Groups {
       

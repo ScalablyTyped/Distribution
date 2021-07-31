@@ -3,21 +3,19 @@ package typings.pulumiAws.outputMod.s3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketMetricFilter extends StObject {
   
   /**
     * Object prefix for filtering (singular).
     */
-  var prefix: js.UndefOr[String] = js.native
+  var prefix: js.UndefOr[String] = js.undefined
   
   /**
     * Object tags for filtering (up to 10).
     */
-  var tags: js.UndefOr[StringDictionary[String]] = js.native
+  var tags: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object BucketMetricFilter {
   

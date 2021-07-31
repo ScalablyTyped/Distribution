@@ -5,82 +5,80 @@ import typings.monacoEditor.monacoEditorStrings.insert
 import typings.monacoEditor.monacoEditorStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<std.Required<monaco-editor.monaco-editor.editor.ISuggestOptions>> */
-@js.native
 trait InternalSuggestOptions extends StObject {
   
-  val filterGraceful: Boolean = js.native
+  val filterGraceful: Boolean
   
-  val insertMode: insert | replace = js.native
+  val insertMode: insert | replace
   
-  val localityBonus: Boolean = js.native
+  val localityBonus: Boolean
   
-  val maxVisibleSuggestions: Double = js.native
+  val maxVisibleSuggestions: Double
   
-  val shareSuggestSelections: Boolean = js.native
+  val shareSuggestSelections: Boolean
   
-  val showClasses: Boolean = js.native
+  val showClasses: Boolean
   
-  val showColors: Boolean = js.native
+  val showColors: Boolean
   
-  val showConstants: Boolean = js.native
+  val showConstants: Boolean
   
-  val showConstructors: Boolean = js.native
+  val showConstructors: Boolean
   
-  val showEnumMembers: Boolean = js.native
+  val showEnumMembers: Boolean
   
-  val showEnums: Boolean = js.native
+  val showEnums: Boolean
   
-  val showEvents: Boolean = js.native
+  val showEvents: Boolean
   
-  val showFields: Boolean = js.native
+  val showFields: Boolean
   
-  val showFiles: Boolean = js.native
+  val showFiles: Boolean
   
-  val showFolders: Boolean = js.native
+  val showFolders: Boolean
   
-  val showFunctions: Boolean = js.native
+  val showFunctions: Boolean
   
-  val showIcons: Boolean = js.native
+  val showIcons: Boolean
   
-  val showInterfaces: Boolean = js.native
+  val showInterfaces: Boolean
   
-  val showIssues: Boolean = js.native
+  val showIssues: Boolean
   
-  val showKeywords: Boolean = js.native
+  val showKeywords: Boolean
   
-  val showMethods: Boolean = js.native
+  val showMethods: Boolean
   
-  val showModules: Boolean = js.native
+  val showModules: Boolean
   
-  val showOperators: Boolean = js.native
+  val showOperators: Boolean
   
-  val showProperties: Boolean = js.native
+  val showProperties: Boolean
   
-  val showReferences: Boolean = js.native
+  val showReferences: Boolean
   
-  val showSnippets: Boolean = js.native
+  val showSnippets: Boolean
   
-  val showStructs: Boolean = js.native
+  val showStructs: Boolean
   
-  val showTypeParameters: Boolean = js.native
+  val showTypeParameters: Boolean
   
-  val showUnits: Boolean = js.native
+  val showUnits: Boolean
   
-  val showUsers: Boolean = js.native
+  val showUsers: Boolean
   
-  val showValues: Boolean = js.native
+  val showValues: Boolean
   
-  val showVariables: Boolean = js.native
+  val showVariables: Boolean
   
-  val showWords: Boolean = js.native
+  val showWords: Boolean
   
-  val snippetsPreventQuickSuggestions: Boolean = js.native
+  val snippetsPreventQuickSuggestions: Boolean
   
-  val statusBar: Visible = js.native
+  val statusBar: Visible
 }
 object InternalSuggestOptions {
   

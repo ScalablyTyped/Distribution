@@ -2,13 +2,13 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SjclCipherDecrypted extends SjclCipherEncrypted {
+trait SjclCipherDecrypted
+  extends StObject
+     with SjclCipherEncrypted {
   
-  var key: BitArray_ = js.native
+  var key: BitArray_
 }
 object SjclCipherDecrypted {
   

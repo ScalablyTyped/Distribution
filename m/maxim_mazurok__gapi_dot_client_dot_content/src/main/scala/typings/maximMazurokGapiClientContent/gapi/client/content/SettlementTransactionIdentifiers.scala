@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SettlementTransactionIdentifiers extends StObject {
   
   /** The identifier of the adjustments, if it is available. */
-  var adjustmentId: js.UndefOr[String] = js.native
+  var adjustmentId: js.UndefOr[String] = js.undefined
   
   /** The merchant provided order ID. */
-  var merchantOrderId: js.UndefOr[String] = js.native
+  var merchantOrderId: js.UndefOr[String] = js.undefined
   
   /** The identifier of the item. */
-  var orderItemId: js.UndefOr[String] = js.native
+  var orderItemId: js.UndefOr[String] = js.undefined
   
   /** The unique ID of the settlement transaction entry. */
-  var settlementEntryId: js.UndefOr[String] = js.native
+  var settlementEntryId: js.UndefOr[String] = js.undefined
   
   /** The shipment ids for the item. */
-  var shipmentIds: js.UndefOr[js.Array[String]] = js.native
+  var shipmentIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The Google transaction ID. */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
 }
 object SettlementTransactionIdentifiers {
   

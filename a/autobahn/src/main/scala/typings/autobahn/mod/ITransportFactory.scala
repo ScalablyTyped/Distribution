@@ -2,15 +2,13 @@ package typings.autobahn.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITransportFactory extends StObject {
   
-  def create(): ITransport = js.native
+  def create(): ITransport
   
-  var `type`: TransportType = js.native
+  var `type`: TransportType
 }
 object ITransportFactory {
   

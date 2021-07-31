@@ -5,21 +5,19 @@ import typings.relayRuntime.relayStoreTypesMod.OperationLoader
 import typings.relayRuntime.relayStoreTypesMod.OperationTracker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait HandlerProvider extends StObject {
     
-    var handlerProvider: js.UndefOr[typings.relayRuntime.relayDefaultHandlerProviderMod.HandlerProvider] = js.native
+    var handlerProvider: js.UndefOr[typings.relayRuntime.relayDefaultHandlerProviderMod.HandlerProvider] = js.undefined
     
-    var missingFieldHandlers: js.UndefOr[js.Array[MissingFieldHandler]] = js.native
+    var missingFieldHandlers: js.UndefOr[js.Array[MissingFieldHandler]] = js.undefined
     
-    var operationLoader: js.UndefOr[OperationLoader] = js.native
+    var operationLoader: js.UndefOr[OperationLoader] = js.undefined
     
-    var operationTracker: js.UndefOr[OperationTracker] = js.native
+    var operationTracker: js.UndefOr[OperationTracker] = js.undefined
   }
   object HandlerProvider {
     

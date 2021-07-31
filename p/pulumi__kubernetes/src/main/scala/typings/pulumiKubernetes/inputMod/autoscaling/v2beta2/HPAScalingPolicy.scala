@@ -3,29 +3,27 @@ package typings.pulumiKubernetes.inputMod.autoscaling.v2beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * HPAScalingPolicy is a single policy which must hold true for a specified past interval.
   */
-@js.native
 trait HPAScalingPolicy extends StObject {
   
   /**
     * PeriodSeconds specifies the window of time for which the policy should hold true. PeriodSeconds must be greater than zero and less than or equal to 1800 (30 min).
     */
-  var periodSeconds: Input[Double] = js.native
+  var periodSeconds: Input[Double]
   
   /**
     * Type is used to specify the scaling policy.
     */
-  var `type`: Input[String] = js.native
+  var `type`: Input[String]
   
   /**
     * Value contains the amount of change which is permitted by the policy. It must be greater than zero
     */
-  var value: Input[Double] = js.native
+  var value: Input[Double]
 }
 object HPAScalingPolicy {
   

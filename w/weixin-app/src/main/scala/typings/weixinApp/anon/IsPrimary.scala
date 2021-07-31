@@ -2,15 +2,13 @@ package typings.weixinApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsPrimary extends StObject {
   
-  var isPrimary: Boolean = js.native
+  var isPrimary: Boolean
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object IsPrimary {
   

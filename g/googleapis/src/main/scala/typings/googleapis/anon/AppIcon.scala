@@ -2,39 +2,37 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppIcon extends StObject {
   
-  var advertiser: js.UndefOr[String] = js.native
+  var advertiser: js.UndefOr[String] = js.undefined
   
-  var appIcon: js.UndefOr[Height] = js.native
+  var appIcon: js.UndefOr[Height] = js.undefined
   
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
-  var callToAction: js.UndefOr[String] = js.native
+  var callToAction: js.UndefOr[String] = js.undefined
   
-  var clickLinkUrl: js.UndefOr[String] = js.native
+  var clickLinkUrl: js.UndefOr[String] = js.undefined
   
-  var clickTrackingUrl: js.UndefOr[String] = js.native
+  var clickTrackingUrl: js.UndefOr[String] = js.undefined
   
-  var headline: js.UndefOr[String] = js.native
+  var headline: js.UndefOr[String] = js.undefined
   
-  var image: js.UndefOr[Height] = js.native
+  var image: js.UndefOr[Height] = js.undefined
   
-  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.native
+  var impressionTrackingUrl: js.UndefOr[js.Array[String]] = js.undefined
   
-  var logo: js.UndefOr[Height] = js.native
+  var logo: js.UndefOr[Height] = js.undefined
   
-  var price: js.UndefOr[String] = js.native
+  var price: js.UndefOr[String] = js.undefined
   
-  var starRating: js.UndefOr[Double] = js.native
+  var starRating: js.UndefOr[Double] = js.undefined
   
-  var store: js.UndefOr[String] = js.native
+  var store: js.UndefOr[String] = js.undefined
   
-  var videoURL: js.UndefOr[String] = js.native
+  var videoURL: js.UndefOr[String] = js.undefined
 }
 object AppIcon {
   

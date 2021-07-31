@@ -8,19 +8,17 @@ import typings.datatablesNetFixedcolumns.datatablesNetFixedcolumnsStrings.semiau
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object DataTables {
   
-  @js.native
   trait Api extends StObject {
     
     /**
       * @description Namespacing for FixedColumns methods - FixedColumns' methods are available on the returned API instance.
       * @see {@link https://datatables.net/reference/api/fixedColumns()}
       */
-    def fixedColumns(): FixedColumnsMethods = js.native
+    def fixedColumns(): FixedColumnsMethods
   }
   object Api {
     
@@ -38,14 +36,13 @@ object DataTables {
     }
   }
   
-  @js.native
   trait CellMethods extends StObject {
     
     /**
       * @description Get the fixed column cell node for a cell or the cell from the original DataTable if there is no matching fixed cell found.
       * @see {@link https://datatables.net/reference/api/cell().fixedNode()}
       */
-    def fixedNode(): Node = js.native
+    def fixedNode(): Node
   }
   object CellMethods {
     
@@ -63,7 +60,6 @@ object DataTables {
     }
   }
   
-  @js.native
   trait CellsMethods extends StObject {
     
     /**
@@ -71,7 +67,7 @@ object DataTables {
       * the cells from the original DataTable if there is no matching fixed cell found.
       * @see {@link https://datatables.net/reference/api/cells().fixedNodes()}
       */
-    def fixedNodes(): Api = js.native
+    def fixedNodes(): Api
   }
   object CellsMethods {
     
@@ -90,7 +86,9 @@ object DataTables {
   }
   
   @js.native
-  trait FixedColumnsMethods extends Api {
+  trait FixedColumnsMethods
+    extends StObject
+       with Api {
     
     /**
       * @deprecated
@@ -124,7 +122,6 @@ object DataTables {
     def update(): Api = js.native
   }
   
-  @js.native
   trait FixedColumnsSettings extends StObject {
     
     /**
@@ -133,19 +130,19 @@ object DataTables {
       * FixedColumns has three different algorithms that it can use: 'none', 'semiauto', 'auto'
       * @see {@link https://datatables.net/reference/option/fixedColumns.heightMatch}
       */
-    var heightMatch: js.UndefOr[none | semiauto | auto] = js.native
+    var heightMatch: js.UndefOr[none | semiauto | auto] = js.undefined
     
     /**
       * @description The number of columns on the left hand side of the table to fix in place.
       * @see {@link https://datatables.net/reference/option/fixedColumns.leftColumns}
       */
-    var leftColumns: js.UndefOr[Double] = js.native
+    var leftColumns: js.UndefOr[Double] = js.undefined
     
     /**
       * @description The number of columns on the right hand side of the table to fix in place.
       * @see {@link https://datatables.net/reference/option/fixedColumns.rightColumns}
       */
-    var rightColumns: js.UndefOr[Double] = js.native
+    var rightColumns: js.UndefOr[Double] = js.undefined
   }
   object FixedColumnsSettings {
     
@@ -178,14 +175,13 @@ object DataTables {
     }
   }
   
-  @js.native
   trait RowsMethods extends StObject {
     
     /**
       * @description Mark the heights of the selected rows (from rows()) to be recalculated on the next draw.
       * @see {@link https://datatables.net/reference/api/rows().recalcHeight()}
       */
-    def recalcHeight(): Api = js.native
+    def recalcHeight(): Api
   }
   object RowsMethods {
     
@@ -203,14 +199,13 @@ object DataTables {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * @description Enable and configure the FixedColumns extension for DataTables.
       * @see {@link https://datatables.net/reference/option/fixedColumns}
       */
-    var fixedColumns: js.UndefOr[Boolean | FixedColumnsSettings] = js.native
+    var fixedColumns: js.UndefOr[Boolean | FixedColumnsSettings] = js.undefined
   }
   object Settings {
     

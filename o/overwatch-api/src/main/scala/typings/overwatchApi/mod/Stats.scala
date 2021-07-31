@@ -4,23 +4,21 @@ import typings.overwatchApi.anon.Assists
 import typings.overwatchApi.anon.Frame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stats extends StObject {
   
-  var endorsement: Frame = js.native
+  var endorsement: Frame
   
-  var level: Double = js.native
+  var level: Double
   
-  var portrait: String = js.native
+  var portrait: String
   
-  var `private`: Boolean = js.native
+  var `private`: Boolean
   
-  var stats: Assists = js.native
+  var stats: Assists
   
-  var username: String = js.native
+  var username: String
 }
 object Stats {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientIap.gapi.client.iap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBrandsResponse extends StObject {
   
   /** Brands existing in the project. */
-  var brands: js.UndefOr[js.Array[Brand]] = js.native
+  var brands: js.UndefOr[js.Array[Brand]] = js.undefined
 }
 object ListBrandsResponse {
   

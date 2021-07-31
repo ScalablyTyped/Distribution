@@ -2,7 +2,6 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,12 +9,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * &#39;COUNTRY&#39;, [{dimension_value: {id: 1, name: &#39;US&#39;}},
   * {dimension_value: {id: 2, name: &#39;UK&#39;}}]}
   */
-@js.native
 trait SchemaDimension extends StObject {
   
-  var dimensionType: js.UndefOr[String] = js.native
+  var dimensionType: js.UndefOr[String] = js.undefined
   
-  var dimensionValues: js.UndefOr[js.Array[SchemaDimensionDimensionValue]] = js.native
+  var dimensionValues: js.UndefOr[js.Array[SchemaDimensionDimensionValue]] = js.undefined
 }
 object SchemaDimension {
   

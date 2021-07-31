@@ -5,7 +5,6 @@ import typings.sipJs.incomingResponseMod.IncomingResponse
 import typings.sipJs.outgoingRequestMessageMod.OutgoingRequestMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object outgoingRequestMod {
@@ -19,9 +18,9 @@ object outgoingRequestMod {
       * @param options - Request options bucket.
       */
     def cancel(): Unit = js.native
-    def cancel(reason: js.UndefOr[scala.Nothing], options: RequestOptions): Unit = js.native
     def cancel(reason: String): Unit = js.native
     def cancel(reason: String, options: RequestOptions): Unit = js.native
+    def cancel(reason: Unit, options: RequestOptions): Unit = js.native
     
     /** Delegate providing custom handling of this outgoing request. */
     var delegate: js.UndefOr[OutgoingRequestDelegate] = js.native
@@ -35,38 +34,37 @@ object outgoingRequestMod {
     val message: OutgoingRequestMessage = js.native
   }
   
-  @js.native
   trait OutgoingRequestDelegate extends StObject {
     
     /**
       * Received a 2xx positive final response to this request.
       * @param response - Incoming response.
       */
-    var onAccept: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.native
+    var onAccept: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.undefined
     
     /**
       * Received a 1xx provisional response to this request. Excluding 100 responses.
       * @param response - Incoming response.
       */
-    var onProgress: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.native
+    var onProgress: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.undefined
     
     /**
       * Received a 3xx negative final response to this request.
       * @param response - Incoming response.
       */
-    var onRedirect: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.native
+    var onRedirect: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.undefined
     
     /**
       * Received a 4xx, 5xx, or 6xx negative final response to this request.
       * @param response - Incoming response.
       */
-    var onReject: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.native
+    var onReject: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.undefined
     
     /**
       * Received a 100 provisional response.
       * @param response - Incoming response.
       */
-    var onTrying: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.native
+    var onTrying: js.UndefOr[js.Function1[/* response */ IncomingResponse, Unit]] = js.undefined
   }
   object OutgoingRequestDelegate {
     
@@ -111,14 +109,13 @@ object outgoingRequestMod {
     }
   }
   
-  @js.native
   trait RequestOptions extends StObject {
     
     /** Body to include in the message. */
-    var body: js.UndefOr[Body] = js.native
+    var body: js.UndefOr[Body] = js.undefined
     
     /** Extra headers to include in the message. */
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   }
   object RequestOptions {
     

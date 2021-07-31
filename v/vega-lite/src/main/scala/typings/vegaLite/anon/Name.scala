@@ -2,19 +2,17 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var role: String = js.native
+  var role: String
   
-  var title: Align | Anchor | Angle | Aria | Baseline | Color = js.native
+  var title: Align | Anchor | Angle | Aria | Baseline | Color
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Name {
   

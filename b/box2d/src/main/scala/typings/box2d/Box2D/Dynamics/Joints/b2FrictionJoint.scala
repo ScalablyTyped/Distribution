@@ -5,45 +5,45 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2FrictionJoint extends b2Joint {
+trait b2FrictionJoint
+  extends StObject
+     with b2Joint {
   
   /**
     * Gets the max force.
     * @return Max force.
     **/
-  def GetMaxForce(): Double = js.native
+  def GetMaxForce(): Double
   
   /**
     * Gets the max torque.
     * @return Max torque.
     **/
-  def GetMaxTorque(): Double = js.native
+  def GetMaxTorque(): Double
   
   /**
     * Sets the max force.
     * @param force New max force.
     **/
-  def SetMaxForce(force: Double): Unit = js.native
+  def SetMaxForce(force: Double): Unit
   
   /**
     * Sets the max torque.
     * @param torque New max torque.
     **/
-  def SetMaxTorque(torque: Double): Unit = js.native
+  def SetMaxTorque(torque: Double): Unit
   
   /**
     * Angular mass.
     **/
-  var m_angularMass: Double = js.native
+  var m_angularMass: Double
   
   /**
     * Linear mass.
     **/
-  var m_linearMass: b2Mat22 = js.native
+  var m_linearMass: b2Mat22
 }
 object b2FrictionJoint {
   

@@ -2,17 +2,17 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NavigateBackArgs extends AsyncCallback[Unit] {
+trait NavigateBackArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Number of pages to return. If delta is greater than the number
     * of open pages, it returns to the home page. Default value is 1
     */
-  var delta: js.UndefOr[Double] = js.native
+  var delta: js.UndefOr[Double] = js.undefined
 }
 object NavigateBackArgs {
   

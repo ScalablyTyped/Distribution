@@ -2,25 +2,29 @@ package typings.wonderFrp
 
 import typings.wonderFrp.coreObserverMod.Observer
 import typings.wonderFrp.observerIobserverMod.IObserver
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/es2015/observer/MapObserver", JSImport.Namespace)
-@js.native
-object observerMapObserverMod extends js.Object {
+object observerMapObserverMod {
+  
+  @JSImport("wonder-frp/dist/es2015/observer/MapObserver", "MapObserver")
   @js.native
   class MapObserver protected () extends Observer {
     def this(currentObserver: IObserver, selector: js.Function) = this()
+    
     var _currentObserver: js.Any = js.native
+    
     var _selector: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object MapObserver extends js.Object {
-    def create(currentObserver: IObserver, selector: js.Function): MapObserver = js.native
+  object MapObserver {
+    
+    @JSImport("wonder-frp/dist/es2015/observer/MapObserver", "MapObserver")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(currentObserver: IObserver, selector: js.Function): MapObserver = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(currentObserver.asInstanceOf[js.Any], selector.asInstanceOf[js.Any])).asInstanceOf[MapObserver]
   }
-  
 }
-

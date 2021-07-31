@@ -2,10 +2,8 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolverFactory extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait ResolverFactory extends StObject {
     * @method postSolvePosition
     * @param {body[]} bodies
     */
-  def postSolvePosition(bodies: js.Array[BodyType]): Unit = js.native
+  def postSolvePosition(bodies: js.Array[BodyType]): Unit
   
   /**
     * Prepare pairs for position solving.
     * @method preSolvePosition
     * @param {pair[]} pairs
     */
-  def preSolvePosition(pairs: js.Array[IPair]): Unit = js.native
+  def preSolvePosition(pairs: js.Array[IPair]): Unit
   
   /**
     * Prepare pairs for velocity solving.
     * @method preSolveVelocity
     * @param {pair[]} pairs
     */
-  def preSolveVelocity(pairs: js.Array[IPair]): Unit = js.native
+  def preSolveVelocity(pairs: js.Array[IPair]): Unit
   
   /**
     * Find a solution for pair positions.
@@ -36,7 +34,7 @@ trait ResolverFactory extends StObject {
     * @param {body[]} bodies
     * @param {number} timeScale
     */
-  def solvePosition(pairs: js.Array[IPair], bodies: js.Array[BodyType], timeScale: Double): Unit = js.native
+  def solvePosition(pairs: js.Array[IPair], bodies: js.Array[BodyType], timeScale: Double): Unit
   
   /**
     * Find a solution for pair velocities.
@@ -44,7 +42,7 @@ trait ResolverFactory extends StObject {
     * @param {pair[]} pairs
     * @param {number} timeScale
     */
-  def solveVelocity(pairs: js.Array[IPair], timeScale: Double): Unit = js.native
+  def solveVelocity(pairs: js.Array[IPair], timeScale: Double): Unit
 }
 object ResolverFactory {
   

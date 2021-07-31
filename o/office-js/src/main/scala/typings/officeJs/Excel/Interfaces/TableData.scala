@@ -2,11 +2,9 @@ package typings.officeJs.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `table.toJSON()`. */
-@js.native
 trait TableData extends StObject {
   
   /**
@@ -15,7 +13,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var autoFilter: js.UndefOr[AutoFilterData] = js.native
+  var autoFilter: js.UndefOr[AutoFilterData] = js.undefined
   
   /**
     *
@@ -23,7 +21,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var columns: js.UndefOr[js.Array[TableColumnData]] = js.native
+  var columns: js.UndefOr[js.Array[TableColumnData]] = js.undefined
   
   /**
     *
@@ -31,7 +29,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var highlightFirstColumn: js.UndefOr[Boolean] = js.native
+  var highlightFirstColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -39,7 +37,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var highlightLastColumn: js.UndefOr[Boolean] = js.native
+  var highlightLastColumn: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -47,7 +45,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -55,7 +53,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var legacyId: js.UndefOr[String] = js.native
+  var legacyId: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -65,7 +63,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -73,7 +71,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var rows: js.UndefOr[js.Array[TableRowData]] = js.native
+  var rows: js.UndefOr[js.Array[TableRowData]] = js.undefined
   
   /**
     *
@@ -81,7 +79,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var showBandedColumns: js.UndefOr[Boolean] = js.native
+  var showBandedColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -89,7 +87,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var showBandedRows: js.UndefOr[Boolean] = js.native
+  var showBandedRows: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -97,7 +95,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.3]
     */
-  var showFilterButton: js.UndefOr[Boolean] = js.native
+  var showFilterButton: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -105,7 +103,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var showHeaders: js.UndefOr[Boolean] = js.native
+  var showHeaders: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -113,7 +111,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var showTotals: js.UndefOr[Boolean] = js.native
+  var showTotals: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -121,7 +119,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var sort: js.UndefOr[TableSortData] = js.native
+  var sort: js.UndefOr[TableSortData] = js.undefined
   
   /**
     *
@@ -129,7 +127,7 @@ trait TableData extends StObject {
     *
     * [Api set: ExcelApi 1.1]
     */
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
 }
 object TableData {
   

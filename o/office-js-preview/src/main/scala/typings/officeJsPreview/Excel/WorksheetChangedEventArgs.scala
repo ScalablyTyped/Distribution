@@ -13,7 +13,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import typings.officeJsPreview.officeJsPreviewStrings.WorksheetChanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.7]
   */
-@js.native
 trait WorksheetChangedEventArgs extends StObject {
   
   /**
@@ -31,7 +29,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var address: String = js.native
+  var address: String
   
   /**
     *
@@ -39,7 +37,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var changeType: DataChangeType | Unknown_ | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted = js.native
+  var changeType: DataChangeType | Unknown_ | RangeEdited | RowInserted | RowDeleted | ColumnInserted | ColumnDeleted | CellInserted | CellDeleted
   
   /**
     *
@@ -47,7 +45,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var details: ChangedEventDetail = js.native
+  var details: ChangedEventDetail
   
   /**
     *
@@ -55,7 +53,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  def getRange(ctx: RequestContext): Range = js.native
+  def getRange(ctx: RequestContext): Range
   
   /**
     *
@@ -63,7 +61,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  def getRangeOrNullObject(ctx: RequestContext): Range = js.native
+  def getRangeOrNullObject(ctx: RequestContext): Range
   
   /**
     *
@@ -71,7 +69,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var source: EventSource | Local | Remote = js.native
+  var source: EventSource | Local | Remote
   
   /**
     *
@@ -79,7 +77,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var `type`: WorksheetChanged = js.native
+  var `type`: WorksheetChanged
   
   /**
     *
@@ -87,7 +85,7 @@ trait WorksheetChangedEventArgs extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var worksheetId: String = js.native
+  var worksheetId: String
 }
 object WorksheetChangedEventArgs {
   
@@ -99,11 +97,10 @@ object WorksheetChangedEventArgs {
     getRange: RequestContext => Range,
     getRangeOrNullObject: RequestContext => Range,
     source: EventSource | Local | Remote,
-    `type`: WorksheetChanged,
     worksheetId: String
   ): WorksheetChangedEventArgs = {
     val __obj = js.Dynamic.literal(address = address.asInstanceOf[js.Any], changeType = changeType.asInstanceOf[js.Any], details = details.asInstanceOf[js.Any], getRange = js.Any.fromFunction1(getRange), getRangeOrNullObject = js.Any.fromFunction1(getRangeOrNullObject), source = source.asInstanceOf[js.Any], worksheetId = worksheetId.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WorksheetChanged")
     __obj.asInstanceOf[WorksheetChangedEventArgs]
   }
   

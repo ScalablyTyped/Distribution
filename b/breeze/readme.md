@@ -11,8 +11,8 @@ Functional async flow control library
 | Full name          | breeze |
 | Keywords           | flow, async, ocaml, functional, haskell, waterfall, try, catch, promises, thennable, bluebird, q |
 | # releases         | 0 |
-| # dependents       | 9 |
-| # downloads        | 4302 |
+| # dependents       | 8 |
+| # downloads        | 4805 |
 | # stars            | 1 |
 
 ## Links

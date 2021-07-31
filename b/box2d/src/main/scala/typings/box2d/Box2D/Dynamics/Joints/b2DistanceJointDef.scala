@@ -4,11 +4,11 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2DistanceJointDef extends b2JointDef {
+trait b2DistanceJointDef
+  extends StObject
+     with b2JointDef {
   
   /**
     * Initialize the bodies, anchors, and length using the world anchors.
@@ -17,32 +17,32 @@ trait b2DistanceJointDef extends b2JointDef {
     * @param anchorA Anchor A.
     * @param anchorB Anchor B.
     **/
-  def Initialize(bA: b2Body, bB: b2Body, anchorA: b2Vec2, anchorB: b2Vec2): Unit = js.native
+  def Initialize(bA: b2Body, bB: b2Body, anchorA: b2Vec2, anchorB: b2Vec2): Unit
   
   /**
     * The damping ratio. 0 = no damping, 1 = critical damping.
     **/
-  var dampingRatio: Double = js.native
+  var dampingRatio: Double
   
   /**
     * The mass-spring-damper frequency in Hertz.
     **/
-  var frequencyHz: Double = js.native
+  var frequencyHz: Double
   
   /**
     * The natural length between the anchor points.
     **/
-  var length: Double = js.native
+  var length: Double
   
   /**
     * The local anchor point relative to body1's origin.
     **/
-  var localAnchorA: b2Vec2 = js.native
+  var localAnchorA: b2Vec2
   
   /**
     * The local anchor point relative to body2's origin.
     **/
-  var localAnchorB: b2Vec2 = js.native
+  var localAnchorB: b2Vec2
 }
 object b2DistanceJointDef {
   

@@ -2,21 +2,19 @@ package typings.easyXapiSupertest.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Idle extends StObject {
   
-  var idle: Double = js.native
+  var idle: Double
   
-  var irq: Double = js.native
+  var irq: Double
   
-  var nice: Double = js.native
+  var nice: Double
   
-  var sys: Double = js.native
+  var sys: Double
   
-  var user: Double = js.native
+  var user: Double
 }
 object Idle {
   

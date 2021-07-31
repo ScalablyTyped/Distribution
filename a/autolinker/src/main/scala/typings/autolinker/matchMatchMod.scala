@@ -4,7 +4,6 @@ import typings.autolinker.anchorTagBuilderMod.AnchorTagBuilder
 import typings.autolinker.mod.HtmlTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object matchMatchMod {
@@ -152,14 +151,13 @@ object matchMatchMod {
     val tagBuilder: js.Any = js.native
   }
   
-  @js.native
   trait MatchConfig extends StObject {
     
-    var matchedText: String = js.native
+    var matchedText: String
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var tagBuilder: AnchorTagBuilder = js.native
+    var tagBuilder: AnchorTagBuilder
   }
   object MatchConfig {
     

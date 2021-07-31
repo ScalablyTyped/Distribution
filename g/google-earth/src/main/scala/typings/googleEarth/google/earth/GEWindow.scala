@@ -2,31 +2,31 @@ package typings.googleEarth.google.earth
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GEWindow extends GEEventEmitter {
+trait GEWindow
+  extends StObject
+     with GEEventEmitter {
   
   /**
     * Removes focus from the Google Earth object.
     */
-  def blur(): Unit = js.native
+  def blur(): Unit
   
   /**
     * Gives the Google Earth object focus.
     */
-  def focus(): Unit = js.native
+  def focus(): Unit
   
   /**
     * Toggles the overall visibility of Google Earth inside the browser.
     */
-  def getVisibility(): Boolean = js.native
+  def getVisibility(): Boolean
   
   /**
     * Toggles the overall visibility of Google Earth inside the browser.
     */
-  def setVisibility(visibility: Boolean): Unit = js.native
+  def setVisibility(visibility: Boolean): Unit
 }
 object GEWindow {
   

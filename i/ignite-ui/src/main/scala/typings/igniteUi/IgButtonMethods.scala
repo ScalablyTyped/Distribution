@@ -2,17 +2,15 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgButtonMethods extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def setTitle(title: js.Object): Unit = js.native
+  def setTitle(title: js.Object): Unit
   
-  def widget(): Unit = js.native
+  def widget(): Unit
 }
 object IgButtonMethods {
   

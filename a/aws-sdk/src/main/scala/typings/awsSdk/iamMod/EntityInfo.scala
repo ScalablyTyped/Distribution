@@ -2,33 +2,31 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntityInfo extends StObject {
   
-  var Arn: arnType = js.native
+  var Arn: arnType
   
   /**
     * The identifier of the entity (user or role).
     */
-  var Id: idType = js.native
+  var Id: idType
   
   /**
     * The name of the entity (user or role).
     */
-  var Name: userNameType = js.native
+  var Name: userNameType
   
   /**
     * The path to the entity (user or role). For more information about paths, see IAM Identifiers in the IAM User Guide. 
     */
-  var Path: js.UndefOr[pathType] = js.native
+  var Path: js.UndefOr[pathType] = js.undefined
   
   /**
     * The type of entity (user or role).
     */
-  var Type: policyOwnerEntityType = js.native
+  var Type: policyOwnerEntityType
 }
 object EntityInfo {
   

@@ -5,61 +5,59 @@ import typings.socketclusterClient.authMod.AGAuthEngine
 import typings.socketclusterServer.serverMod.CodecEngine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientOptions extends StObject {
   
   // (milliseconds) - This is the timeout for getting a response to a AGClientSocket invoke action.
-  var ackTimeout: js.UndefOr[Double] = js.native
+  var ackTimeout: js.UndefOr[Double] = js.undefined
   
   // A custom engine to use for storing and loading JWT auth tokens on the client side.
-  var authEngine: js.UndefOr[AGAuthEngine | Null] = js.native
+  var authEngine: js.UndefOr[AGAuthEngine | Null] = js.undefined
   
   // The name of the JWT auth token (provided to the authEngine - By default this is the localStorage variable name); defaults to 'socketcluster.authToken'.
-  var authTokenName: js.UndefOr[String] = js.native
+  var authTokenName: js.UndefOr[String] = js.undefined
   
   // Whether or not to automatically connect the socket as soon as it is created. Default is true.
-  var autoConnect: js.UndefOr[Boolean] = js.native
+  var autoConnect: js.UndefOr[Boolean] = js.undefined
   
   // Whether or not to automatically reconnect the socket when it loses the connection. Default is true.
-  var autoReconnect: js.UndefOr[Boolean] = js.native
+  var autoReconnect: js.UndefOr[Boolean] = js.undefined
   
   // Valid properties are: initialDelay (milliseconds), randomness (milliseconds), multiplier (decimal; default is 1.5) and maxDelay (milliseconds).
-  var autoReconnectOptions: js.UndefOr[AutoReconnectOptions] = js.native
+  var autoReconnectOptions: js.UndefOr[AutoReconnectOptions] = js.undefined
   
   // This is true by default. If you set this to false, then the socket will not automatically try to subscribe to pending subscriptions on
   // connect - Instead, you will have to manually invoke the processSubscriptions callback from inside the 'connect' event handler on the client side.
   // See AGClientSocket API. This gives you more fine-grained control with regards to when pending subscriptions are processed after the socket
   // connection is established (or re-established).
-  var autoSubscribeOnConnect: js.UndefOr[Boolean] = js.native
+  var autoSubscribeOnConnect: js.UndefOr[Boolean] = js.undefined
   
   // The amount of milliseconds to wait before flushing each batch of messages. Defaults to 50.
-  var batchInterval: js.UndefOr[Double] = js.native
+  var batchInterval: js.UndefOr[Double] = js.undefined
   
   // Whether or not to start batching messages immediately after the connection handshake completes. This is useful for handling connection recovery
   // when the client tries to resubscribe to a large number of channels in a very short amount of time. Defaults to false.
-  var batchOnHandshake: js.UndefOr[Boolean] = js.native
+  var batchOnHandshake: js.UndefOr[Boolean] = js.undefined
   
   // The amount of time in milliseconds after the handshake completes during which all socket messages will be batched. Defaults to 100.
-  var batchOnHandshakeDuration: js.UndefOr[Double] = js.native
+  var batchOnHandshakeDuration: js.UndefOr[Double] = js.undefined
   
   // The type to use to represent binary on the client. Defaults to 'arraybuffer'.
-  var binaryType: js.UndefOr[String] = js.native
+  var binaryType: js.UndefOr[String] = js.undefined
   
-  var callIdGenerator: js.UndefOr[CallIdGenerator] = js.native
+  var callIdGenerator: js.UndefOr[CallIdGenerator] = js.undefined
   
   // A prefix to add to the channel names.
-  var channelPrefix: js.UndefOr[String | Null] = js.native
+  var channelPrefix: js.UndefOr[String | Null] = js.undefined
   
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   // If you set this to true, any data/objects/arrays that you pass to the client socket will be cloned before being sent/queued up. If the socket
   // is disconnected and you emit an event, it will be added to a queue which will be processed upon reconnection. The cloneData option is false
   // by default; this means that if you emit/publish an object and that object changes somewhere else in your code before the queue is processed,
   // then the changed version of that object will be sent out to the server.
-  var cloneData: js.UndefOr[Boolean] = js.native
+  var cloneData: js.UndefOr[Boolean] = js.undefined
   
   // Lets you set a custom codec engine. This allows you to specify how data gets encoded before being sent over the wire and how it gets decoded
   // once it reaches the other side. The codecEngine must be an object which exposes an encode(object) and a decode(encodedData) function.
@@ -68,56 +66,56 @@ trait ClientOptions extends StObject {
   // you like (optimized for any use case) - By decoding these packets back into their original protocol form, SocketCluster will be able process
   // them appropriately. Note that if you provide a codecEngine when creating a client socket, you will need to make sure that the server uses the
   // same codec by passing the same engine to the AGServer constructor (using the codecEngine option).
-  var codecEngine: js.UndefOr[CodecEngine | Null] = js.native
+  var codecEngine: js.UndefOr[CodecEngine | Null] = js.undefined
   
   // (milliseconds)
-  var connectTimeout: js.UndefOr[Double] = js.native
+  var connectTimeout: js.UndefOr[Double] = js.undefined
   
   // Whether or not a client automatically disconnects on page unload. If enabled, the client will disconnect when a user navigates away from the page.
   // This can happen when a user closes the tab/window, clicks a link to leave the page, or types a new URL into the address bar. Defaults to true.
-  var disconnectOnUnload: js.UndefOr[Boolean] = js.native
+  var disconnectOnUnload: js.UndefOr[Boolean] = js.undefined
   
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   // Defaults to the current host (read from the URL).
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
   // The URL which SocketCluster uses to make the initial handshake for the WebSocket. Defaults to '/socketcluster/'.
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   // pingTimeout will be connectTimeout at the start, but it will be updated with values provided by the 'connect' event.
-  var pingTimeout: js.UndefOr[Double] = js.native
+  var pingTimeout: js.UndefOr[Double] = js.undefined
   
-  var pingTimeoutDisabled: js.UndefOr[Boolean] = js.native
+  var pingTimeoutDisabled: js.UndefOr[Boolean] = js.undefined
   
   // Defaults to 80 if !secure otherwise defaults to 443.
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   // The protocol scheme for the transport. Defaults to 'ws' or 'wss', depending upon the valur of secure.
-  var protocolScheme: js.UndefOr[String] = js.native
+  var protocolScheme: js.UndefOr[String] = js.undefined
   
-  var protocolVersion: js.UndefOr[ProtocolVersions] = js.native
+  var protocolVersion: js.UndefOr[ProtocolVersions] = js.undefined
   
   // A map of key-value pairs which will be used as query parameters for the initial HTTP handshake which will initiate the WebSocket connection.
-  var query: js.UndefOr[String | StringDictionary[String]] = js.native
+  var query: js.UndefOr[String | StringDictionary[String]] = js.undefined
   
   // Defaults to false.
-  var secure: js.UndefOr[Boolean] = js.native
+  var secure: js.UndefOr[Boolean] = js.undefined
   
-  var socketPath: js.UndefOr[String] = js.native
+  var socketPath: js.UndefOr[String] = js.undefined
   
-  var subscriptionRetryOptions: js.UndefOr[js.Object | Null] = js.native
+  var subscriptionRetryOptions: js.UndefOr[js.Object | Null] = js.undefined
   
   // The query parameter name to use to hold the timestamp.
-  var timestampParam: js.UndefOr[String] = js.native
+  var timestampParam: js.UndefOr[String] = js.undefined
   
   // Whether or not to add a timestamp to the WebSocket handshake request.
-  var timestampRequests: js.UndefOr[Boolean] = js.native
+  var timestampRequests: js.UndefOr[Boolean] = js.undefined
   
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
   
   // This object will be passed to the constructor of the ws WebSocket instance.
-  var wsOptions: js.UndefOr[typings.ws.mod.ClientOptions] = js.native
+  var wsOptions: js.UndefOr[typings.ws.mod.ClientOptions] = js.undefined
 }
 object ClientOptions {
   

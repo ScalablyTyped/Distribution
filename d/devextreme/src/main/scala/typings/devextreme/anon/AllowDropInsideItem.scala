@@ -10,27 +10,25 @@ import typings.devextreme.mod.DevExpress.core.template
 import typings.devextreme.mod.global.JQuery
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowDropInsideItem extends StObject {
   
-  var allowDropInsideItem: js.UndefOr[Boolean] = js.native
+  var allowDropInsideItem: js.UndefOr[Boolean] = js.undefined
   
-  var allowReordering: js.UndefOr[Boolean] = js.native
+  var allowReordering: js.UndefOr[Boolean] = js.undefined
   
-  var autoScroll: js.UndefOr[Boolean] = js.native
+  var autoScroll: js.UndefOr[Boolean] = js.undefined
   
-  var boundary: js.UndefOr[String | typings.std.Element | JQuery] = js.native
+  var boundary: js.UndefOr[String | typings.std.Element | JQuery] = js.undefined
   
-  var container: js.UndefOr[String | typings.std.Element | JQuery] = js.native
+  var container: js.UndefOr[String | typings.std.Element | JQuery] = js.undefined
   
-  var cursorOffset: js.UndefOr[String | Y] = js.native
+  var cursorOffset: js.UndefOr[String | Y] = js.undefined
   
-  var data: js.UndefOr[js.Any] = js.native
+  var data: js.UndefOr[js.Any] = js.undefined
   
-  var dragDirection: js.UndefOr[both | horizontal | vertical] = js.native
+  var dragDirection: js.UndefOr[both | horizontal | vertical] = js.undefined
   
   var dragTemplate: js.UndefOr[
     template | (js.Function2[
@@ -38,35 +36,35 @@ trait AllowDropInsideItem extends StObject {
       /* containerElement */ dxElement, 
       String | typings.std.Element | JQuery
     ])
-  ] = js.native
+  ] = js.undefined
   
-  var dropFeedbackMode: js.UndefOr[push | indicate] = js.native
+  var dropFeedbackMode: js.UndefOr[push | indicate] = js.undefined
   
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
-  var group: js.UndefOr[String] = js.native
+  var group: js.UndefOr[String] = js.undefined
   
-  var handle: js.UndefOr[String] = js.native
+  var handle: js.UndefOr[String] = js.undefined
   
-  var onAdd: js.UndefOr[js.Function1[/* e */ DropInsideItem, _]] = js.native
+  var onAdd: js.UndefOr[js.Function1[/* e */ DropInsideItem, js.Any]] = js.undefined
   
-  var onDragChange: js.UndefOr[js.Function1[/* e */ FromComponent, _]] = js.native
+  var onDragChange: js.UndefOr[js.Function1[/* e */ FromComponent, js.Any]] = js.undefined
   
-  var onDragEnd: js.UndefOr[js.Function1[/* e */ FromComponent, _]] = js.native
+  var onDragEnd: js.UndefOr[js.Function1[/* e */ FromComponent, js.Any]] = js.undefined
   
-  var onDragMove: js.UndefOr[js.Function1[/* e */ FromComponent, _]] = js.native
+  var onDragMove: js.UndefOr[js.Function1[/* e */ FromComponent, js.Any]] = js.undefined
   
-  var onDragStart: js.UndefOr[js.Function1[/* e */ FromData, _]] = js.native
+  var onDragStart: js.UndefOr[js.Function1[/* e */ FromData, js.Any]] = js.undefined
   
-  var onRemove: js.UndefOr[js.Function1[/* e */ FromIndex, _]] = js.native
+  var onRemove: js.UndefOr[js.Function1[/* e */ FromIndex, js.Any]] = js.undefined
   
-  var onReorder: js.UndefOr[js.Function1[/* e */ ToComponent, _]] = js.native
+  var onReorder: js.UndefOr[js.Function1[/* e */ ToComponent, js.Any]] = js.undefined
   
-  var scrollSensitivity: js.UndefOr[Double] = js.native
+  var scrollSensitivity: js.UndefOr[Double] = js.undefined
   
-  var scrollSpeed: js.UndefOr[Double] = js.native
+  var scrollSpeed: js.UndefOr[Double] = js.undefined
   
-  var showDragIcons: js.UndefOr[Boolean] = js.native
+  var showDragIcons: js.UndefOr[Boolean] = js.undefined
 }
 object AllowDropInsideItem {
   
@@ -169,43 +167,43 @@ object AllowDropInsideItem {
     def setHandleUndefined: Self = StObject.set(x, "handle", js.undefined)
     
     @scala.inline
-    def setOnAdd(value: /* e */ DropInsideItem => _): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
+    def setOnAdd(value: /* e */ DropInsideItem => js.Any): Self = StObject.set(x, "onAdd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnAddUndefined: Self = StObject.set(x, "onAdd", js.undefined)
     
     @scala.inline
-    def setOnDragChange(value: /* e */ FromComponent => _): Self = StObject.set(x, "onDragChange", js.Any.fromFunction1(value))
+    def setOnDragChange(value: /* e */ FromComponent => js.Any): Self = StObject.set(x, "onDragChange", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragChangeUndefined: Self = StObject.set(x, "onDragChange", js.undefined)
     
     @scala.inline
-    def setOnDragEnd(value: /* e */ FromComponent => _): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
+    def setOnDragEnd(value: /* e */ FromComponent => js.Any): Self = StObject.set(x, "onDragEnd", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragEndUndefined: Self = StObject.set(x, "onDragEnd", js.undefined)
     
     @scala.inline
-    def setOnDragMove(value: /* e */ FromComponent => _): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
+    def setOnDragMove(value: /* e */ FromComponent => js.Any): Self = StObject.set(x, "onDragMove", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragMoveUndefined: Self = StObject.set(x, "onDragMove", js.undefined)
     
     @scala.inline
-    def setOnDragStart(value: /* e */ FromData => _): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
+    def setOnDragStart(value: /* e */ FromData => js.Any): Self = StObject.set(x, "onDragStart", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnDragStartUndefined: Self = StObject.set(x, "onDragStart", js.undefined)
     
     @scala.inline
-    def setOnRemove(value: /* e */ FromIndex => _): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
+    def setOnRemove(value: /* e */ FromIndex => js.Any): Self = StObject.set(x, "onRemove", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnRemoveUndefined: Self = StObject.set(x, "onRemove", js.undefined)
     
     @scala.inline
-    def setOnReorder(value: /* e */ ToComponent => _): Self = StObject.set(x, "onReorder", js.Any.fromFunction1(value))
+    def setOnReorder(value: /* e */ ToComponent => js.Any): Self = StObject.set(x, "onReorder", js.Any.fromFunction1(value))
     
     @scala.inline
     def setOnReorderUndefined: Self = StObject.set(x, "onReorder", js.undefined)

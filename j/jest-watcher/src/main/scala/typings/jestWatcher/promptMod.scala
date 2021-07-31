@@ -3,51 +3,101 @@ package typings.jestWatcher
 import typings.jestWatcher.typesMod.ScrollOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promptMod {
   
   @JSImport("jest-watcher/build/lib/Prompt", JSImport.Default)
   @js.native
-  class default () extends Prompt
-  
-  @js.native
-  trait Prompt extends StObject {
+  class default ()
+    extends StObject
+       with Prompt {
     
+    /* CompleteClass */
     var _entering: js.Any = js.native
     
+    /* CompleteClass */
     var _offset: js.Any = js.native
     
+    /* CompleteClass */
     var _onCancel: js.Any = js.native
     
+    /* CompleteClass */
     var _onChange: js.Any = js.native
     
+    /* CompleteClass */
     var _onResize: js.Any = js.native
     
+    /* CompleteClass */
     var _onSuccess: js.Any = js.native
     
+    /* CompleteClass */
     var _promptLength: js.Any = js.native
     
+    /* CompleteClass */
     var _selection: js.Any = js.native
     
+    /* CompleteClass */
     var _value: js.Any = js.native
     
-    def abort(): Unit = js.native
+    /* CompleteClass */
+    override def abort(): Unit = js.native
     
-    def enter(
+    /* CompleteClass */
+    override def enter(
       onChange: js.Function2[/* pattern */ String, /* options */ ScrollOptions, Unit],
       onSuccess: js.Function1[/* pattern */ String, Unit],
       onCancel: js.Function0[Unit]
     ): Unit = js.native
     
-    def isEntering(): Boolean = js.native
+    /* CompleteClass */
+    override def isEntering(): Boolean = js.native
     
-    def put(key: String): Unit = js.native
+    /* CompleteClass */
+    override def put(key: String): Unit = js.native
     
-    def setPromptLength(length: Double): Unit = js.native
+    /* CompleteClass */
+    override def setPromptLength(length: Double): Unit = js.native
     
-    def setPromptSelection(selected: String): Unit = js.native
+    /* CompleteClass */
+    override def setPromptSelection(selected: String): Unit = js.native
+  }
+  
+  trait Prompt extends StObject {
+    
+    var _entering: js.Any
+    
+    var _offset: js.Any
+    
+    var _onCancel: js.Any
+    
+    var _onChange: js.Any
+    
+    var _onResize: js.Any
+    
+    var _onSuccess: js.Any
+    
+    var _promptLength: js.Any
+    
+    var _selection: js.Any
+    
+    var _value: js.Any
+    
+    def abort(): Unit
+    
+    def enter(
+      onChange: js.Function2[/* pattern */ String, /* options */ ScrollOptions, Unit],
+      onSuccess: js.Function1[/* pattern */ String, Unit],
+      onCancel: js.Function0[Unit]
+    ): Unit
+    
+    def isEntering(): Boolean
+    
+    def put(key: String): Unit
+    
+    def setPromptLength(length: Double): Unit
+    
+    def setPromptSelection(selected: String): Unit
   }
   object Prompt {
     

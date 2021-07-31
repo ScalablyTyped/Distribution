@@ -2,25 +2,23 @@ package typings.tuyaPanelKit.themeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SliderTheme extends StObject {
   
-  var maximumTrackTintColor: String = js.native
+  var maximumTrackTintColor: String
   
-  var thumbRadius: Double = js.native
+  var thumbRadius: Double
   
-  var thumbSize: Double = js.native
+  var thumbSize: Double
   
-  var thumbTintColor: String = js.native
+  var thumbTintColor: String
   
-  var trackHeight: Double = js.native
+  var trackHeight: Double
   
-  var trackRadius: Double = js.native
+  var trackRadius: Double
   
-  var width: Double | Null = js.native
+  var width: Double | Null
 }
 object SliderTheme {
   
@@ -33,7 +31,7 @@ object SliderTheme {
     trackHeight: Double,
     trackRadius: Double
   ): SliderTheme = {
-    val __obj = js.Dynamic.literal(maximumTrackTintColor = maximumTrackTintColor.asInstanceOf[js.Any], thumbRadius = thumbRadius.asInstanceOf[js.Any], thumbSize = thumbSize.asInstanceOf[js.Any], thumbTintColor = thumbTintColor.asInstanceOf[js.Any], trackHeight = trackHeight.asInstanceOf[js.Any], trackRadius = trackRadius.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(maximumTrackTintColor = maximumTrackTintColor.asInstanceOf[js.Any], thumbRadius = thumbRadius.asInstanceOf[js.Any], thumbSize = thumbSize.asInstanceOf[js.Any], thumbTintColor = thumbTintColor.asInstanceOf[js.Any], trackHeight = trackHeight.asInstanceOf[js.Any], trackRadius = trackRadius.asInstanceOf[js.Any], width = null)
     __obj.asInstanceOf[SliderTheme]
   }
   

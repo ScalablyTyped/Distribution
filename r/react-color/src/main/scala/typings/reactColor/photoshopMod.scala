@@ -10,7 +10,6 @@ import typings.reactColor.mod.ColorResult
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object photoshopMod {
@@ -24,17 +23,18 @@ object photoshopMod {
   trait PhotoshopPicker
     extends Component[PhotoshopPickerProps, js.Object, js.Any]
   
-  @js.native
-  trait PhotoshopPickerProps extends ColorPickerProps[PhotoshopPicker] {
+  trait PhotoshopPickerProps
+    extends StObject
+       with ColorPickerProps[PhotoshopPicker] {
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var onAccept: js.UndefOr[ColorChangeHandler] = js.native
+    var onAccept: js.UndefOr[ColorChangeHandler] = js.undefined
     
-    var onCancel: js.UndefOr[ColorChangeHandler] = js.native
+    var onCancel: js.UndefOr[ColorChangeHandler] = js.undefined
     
     @JSName("styles")
-    var styles_PhotoshopPickerProps: js.UndefOr[PartialClassesPhotoshopPi] = js.native
+    var styles_PhotoshopPickerProps: js.UndefOr[PartialClassesPhotoshopPi] = js.undefined
   }
   object PhotoshopPickerProps {
     
@@ -73,26 +73,25 @@ object photoshopMod {
     }
   }
   
-  @js.native
   trait PhotoshopPickerStylesProps extends StObject {
     
-    var actions: CSSProperties = js.native
+    var actions: CSSProperties
     
-    var body: CSSProperties = js.native
+    var body: CSSProperties
     
-    var controls: CSSProperties = js.native
+    var controls: CSSProperties
     
-    var head: CSSProperties = js.native
+    var head: CSSProperties
     
-    var hue: CSSProperties = js.native
+    var hue: CSSProperties
     
-    var picker: CSSProperties = js.native
+    var picker: CSSProperties
     
-    var previews: CSSProperties = js.native
+    var previews: CSSProperties
     
-    var saturation: CSSProperties = js.native
+    var saturation: CSSProperties
     
-    var top: CSSProperties = js.native
+    var top: CSSProperties
   }
   object PhotoshopPickerStylesProps {
     

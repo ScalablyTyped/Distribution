@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SessionManagerOutputUrl extends StObject {
   
   /**
     * Reserved for future use.
     */
-  var CloudWatchOutputUrl: js.UndefOr[SessionManagerCloudWatchOutputUrl] = js.native
+  var CloudWatchOutputUrl: js.UndefOr[SessionManagerCloudWatchOutputUrl] = js.undefined
   
   /**
     * Reserved for future use.
     */
-  var S3OutputUrl: js.UndefOr[SessionManagerS3OutputUrl] = js.native
+  var S3OutputUrl: js.UndefOr[SessionManagerS3OutputUrl] = js.undefined
 }
 object SessionManagerOutputUrl {
   

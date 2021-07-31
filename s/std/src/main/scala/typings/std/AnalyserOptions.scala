@@ -2,19 +2,19 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AnalyserOptions extends AudioNodeOptions {
+trait AnalyserOptions
+  extends StObject
+     with AudioNodeOptions {
   
-  var fftSize: js.UndefOr[Double] = js.native
+  var fftSize: js.UndefOr[Double] = js.undefined
   
-  var maxDecibels: js.UndefOr[Double] = js.native
+  var maxDecibels: js.UndefOr[Double] = js.undefined
   
-  var minDecibels: js.UndefOr[Double] = js.native
+  var minDecibels: js.UndefOr[Double] = js.undefined
   
-  var smoothingTimeConstant: js.UndefOr[Double] = js.native
+  var smoothingTimeConstant: js.UndefOr[Double] = js.undefined
 }
 object AnalyserOptions {
   

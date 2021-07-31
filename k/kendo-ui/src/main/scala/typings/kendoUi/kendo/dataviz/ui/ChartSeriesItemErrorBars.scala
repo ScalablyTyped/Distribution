@@ -2,25 +2,23 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartSeriesItemErrorBars extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var endCaps: js.UndefOr[Boolean] = js.native
+  var endCaps: js.UndefOr[Boolean] = js.undefined
   
-  var line: js.UndefOr[ChartSeriesItemErrorBarsLine] = js.native
+  var line: js.UndefOr[ChartSeriesItemErrorBarsLine] = js.undefined
   
-  var value: js.UndefOr[String | Double | js.Any | js.Function] = js.native
+  var value: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
   
-  var visual: js.UndefOr[js.Function] = js.native
+  var visual: js.UndefOr[js.Function] = js.undefined
   
-  var xValue: js.UndefOr[String | Double | js.Any | js.Function] = js.native
+  var xValue: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
   
-  var yValue: js.UndefOr[String | Double | js.Any | js.Function] = js.native
+  var yValue: js.UndefOr[String | Double | js.Any | js.Function] = js.undefined
 }
 object ChartSeriesItemErrorBars {
   

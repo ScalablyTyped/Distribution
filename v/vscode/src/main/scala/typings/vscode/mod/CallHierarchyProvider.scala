@@ -2,10 +2,8 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CallHierarchyProvider extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait CallHierarchyProvider extends StObject {
     * @returns A call hierarchy item or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def prepareCallHierarchy(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]] = js.native
+  def prepareCallHierarchy(document: TextDocument, position: Position, token: CancellationToken): ProviderResult[CallHierarchyItem | js.Array[CallHierarchyItem]]
   
   /**
     * Provide all incoming calls for an item, e.g all callers for a method. In graph terms this describes directed
@@ -31,7 +29,7 @@ trait CallHierarchyProvider extends StObject {
     * @returns A set of incoming calls or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideCallHierarchyIncomingCalls(item: CallHierarchyItem, token: CancellationToken): ProviderResult[js.Array[CallHierarchyIncomingCall]] = js.native
+  def provideCallHierarchyIncomingCalls(item: CallHierarchyItem, token: CancellationToken): ProviderResult[js.Array[CallHierarchyIncomingCall]]
   
   /**
     * Provide all outgoing calls for an item, e.g call calls to functions, methods, or constructors from the given item. In
@@ -43,7 +41,7 @@ trait CallHierarchyProvider extends StObject {
     * @returns A set of outgoing calls or a thenable that resolves to such. The lack of a result can be
     * signaled by returning `undefined` or `null`.
     */
-  def provideCallHierarchyOutgoingCalls(item: CallHierarchyItem, token: CancellationToken): ProviderResult[js.Array[CallHierarchyOutgoingCall]] = js.native
+  def provideCallHierarchyOutgoingCalls(item: CallHierarchyItem, token: CancellationToken): ProviderResult[js.Array[CallHierarchyOutgoingCall]]
 }
 object CallHierarchyProvider {
   

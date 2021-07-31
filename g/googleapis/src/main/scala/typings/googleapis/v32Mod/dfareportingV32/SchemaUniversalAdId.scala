@@ -2,27 +2,25 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Universal Ad ID as per the VAST 4.0 spec. Applicable to the following
   * creative types: INSTREAM_AUDIO, INSTREAM_VIDEO and VPAID.
   */
-@js.native
 trait SchemaUniversalAdId extends StObject {
   
   /**
     * Registry used for the Ad ID value.
     */
-  var registry: js.UndefOr[String] = js.native
+  var registry: js.UndefOr[String] = js.undefined
   
   /**
     * ID value for this creative. Only alphanumeric characters and the
     * following symbols are valid: &quot;_/\-&quot;. Maximum length is 64
     * characters. Read only when registry is DCM.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaUniversalAdId {
   

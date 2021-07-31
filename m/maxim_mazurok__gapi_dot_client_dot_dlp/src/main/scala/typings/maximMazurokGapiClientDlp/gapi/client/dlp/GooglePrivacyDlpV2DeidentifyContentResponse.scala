@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2DeidentifyContentResponse extends StObject {
   
   /** The de-identified item. */
-  var item: js.UndefOr[GooglePrivacyDlpV2ContentItem] = js.native
+  var item: js.UndefOr[GooglePrivacyDlpV2ContentItem] = js.undefined
   
   /** An overview of the changes that were made on the `item`. */
-  var overview: js.UndefOr[GooglePrivacyDlpV2TransformationOverview] = js.native
+  var overview: js.UndefOr[GooglePrivacyDlpV2TransformationOverview] = js.undefined
 }
 object GooglePrivacyDlpV2DeidentifyContentResponse {
   

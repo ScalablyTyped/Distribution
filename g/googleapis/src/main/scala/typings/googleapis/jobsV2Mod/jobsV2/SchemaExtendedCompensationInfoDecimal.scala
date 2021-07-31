@@ -2,13 +2,11 @@ package typings.googleapis.jobsV2Mod.jobsV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Deprecated. See CompensationInfo.  Decimal number.
   */
-@js.native
 trait SchemaExtendedCompensationInfoDecimal extends StObject {
   
   /**
@@ -18,12 +16,12 @@ trait SchemaExtendedCompensationInfoDecimal extends StObject {
     * is negative, `micros` must be negative or zero. For example -1.75 is
     * represented as `units`=-1 and `micros`=-750,000.
     */
-  var micros: js.UndefOr[Double] = js.native
+  var micros: js.UndefOr[Double] = js.undefined
   
   /**
     * Whole units.
     */
-  var units: js.UndefOr[String] = js.native
+  var units: js.UndefOr[String] = js.undefined
 }
 object SchemaExtendedCompensationInfoDecimal {
   

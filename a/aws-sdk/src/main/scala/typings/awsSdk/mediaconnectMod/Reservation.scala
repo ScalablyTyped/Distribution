@@ -2,76 +2,74 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Reservation extends StObject {
   
   /**
     * The type of currency that is used for billing. The currencyCode used for your reservation is US dollars.
     */
-  var CurrencyCode: string = js.native
+  var CurrencyCode: string
   
   /**
     * The length of time that this reservation is active. MediaConnect defines this value in the offering.
     */
-  var Duration: integer = js.native
+  var Duration: integer
   
   /**
     * The unit of measurement for the duration of the reservation. MediaConnect defines this value in the offering.
     */
-  var DurationUnits: typings.awsSdk.mediaconnectMod.DurationUnits = js.native
+  var DurationUnits: typings.awsSdk.mediaconnectMod.DurationUnits
   
   /**
     * The day and time that this reservation expires. This value is calculated based on the start date and time that you set and the offering's duration.
     */
-  var End: string = js.native
+  var End: string
   
   /**
     * The Amazon Resource Name (ARN) that MediaConnect assigns to the offering.
     */
-  var OfferingArn: string = js.native
+  var OfferingArn: string
   
   /**
     * A description of the offering. MediaConnect defines this value in the offering.
     */
-  var OfferingDescription: string = js.native
+  var OfferingDescription: string
   
   /**
     * The cost of a single unit. This value, in combination with priceUnits, makes up the rate. MediaConnect defines this value in the offering.
     */
-  var PricePerUnit: string = js.native
+  var PricePerUnit: string
   
   /**
     * The unit of measurement that is used for billing. This value, in combination with pricePerUnit, makes up the rate. MediaConnect defines this value in the offering.
     */
-  var PriceUnits: typings.awsSdk.mediaconnectMod.PriceUnits = js.native
+  var PriceUnits: typings.awsSdk.mediaconnectMod.PriceUnits
   
   /**
     * The Amazon Resource Name (ARN) that MediaConnect assigns to the reservation when you purchase an offering.
     */
-  var ReservationArn: string = js.native
+  var ReservationArn: string
   
   /**
     * The name that you assigned to the reservation when you purchased the offering.
     */
-  var ReservationName: string = js.native
+  var ReservationName: string
   
   /**
     * The status of your reservation.
     */
-  var ReservationState: typings.awsSdk.mediaconnectMod.ReservationState = js.native
+  var ReservationState: typings.awsSdk.mediaconnectMod.ReservationState
   
   /**
     * A definition of the amount of outbound bandwidth that you would be reserving if you purchase the offering. MediaConnect defines the values that make up the resourceSpecification in the offering.
     */
-  var ResourceSpecification: typings.awsSdk.mediaconnectMod.ResourceSpecification = js.native
+  var ResourceSpecification: typings.awsSdk.mediaconnectMod.ResourceSpecification
   
   /**
     * The day and time that the reservation becomes active. You set this value when you purchase the offering.
     */
-  var Start: string = js.native
+  var Start: string
 }
 object Reservation {
   

@@ -5,25 +5,25 @@ import typings.miniprogram.miniprogramStrings.bar
 import typings.miniprogram.miniprogramStrings.qr
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScanArgs extends AsyncCallback[BarCode] {
+trait ScanArgs
+  extends StObject
+     with AsyncCallback[BarCode] {
   
   /**
     * Hide album entry or not. If it is false, there will be an entry
     * for user to select a picture from the album as the scanned picture.
     * Otherwise, user will use camera to scan the content directly. By default, its value is false.
     */
-  var hideAlbum: js.UndefOr[Boolean] = js.native
+  var hideAlbum: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Type for scanning (qr by default):
     * 1. qr: two-dimensional QR scanning frame.
     * 2. bar: Linear barcode scanning frame.
     */
-  var `type`: js.UndefOr[qr | bar] = js.native
+  var `type`: js.UndefOr[qr | bar] = js.undefined
 }
 object ScanArgs {
   

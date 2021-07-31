@@ -2,7 +2,6 @@ package typings.awsSdkClientSqsNode
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createQueueExceptionsUnionMod {
@@ -15,14 +14,14 @@ object createQueueExceptionsUnionMod {
   object CreateQueueExceptionsUnion {
     
     @scala.inline
-    def QueueDeletedRecently(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueDeletedRecently): typings.awsSdkClientSqsNode.typesQueueDeletedRecentlyMod.QueueDeletedRecently = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def QueueDeletedRecently(): typings.awsSdkClientSqsNode.typesQueueDeletedRecentlyMod.QueueDeletedRecently = {
+      val __obj = js.Dynamic.literal(name = "QueueDeletedRecently")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesQueueDeletedRecentlyMod.QueueDeletedRecently]
     }
     
     @scala.inline
-    def QueueNameExists(name: typings.awsSdkClientSqsNode.awsSdkClientSqsNodeStrings.QueueNameExists): typings.awsSdkClientSqsNode.typesQueueNameExistsMod.QueueNameExists = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def QueueNameExists(): typings.awsSdkClientSqsNode.typesQueueNameExistsMod.QueueNameExists = {
+      val __obj = js.Dynamic.literal(name = "QueueNameExists")
       __obj.asInstanceOf[typings.awsSdkClientSqsNode.typesQueueNameExistsMod.QueueNameExists]
     }
   }

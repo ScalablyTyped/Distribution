@@ -5,17 +5,15 @@ import typings.contentfulManagement.roleMod.ActionType
 import typings.contentfulManagement.roleMod.ConstraintType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actions extends StObject {
   
-  var actions: js.Array[ActionType] | all = js.native
+  var actions: js.Array[ActionType] | all
   
-  var constraint: ConstraintType = js.native
+  var constraint: ConstraintType
   
-  var effect: String = js.native
+  var effect: String
 }
 object Actions {
   

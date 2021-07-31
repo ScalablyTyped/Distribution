@@ -2,27 +2,25 @@ package typings.phonegap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactAddress extends StObject {
   
-  var country: String = js.native
+  var country: String
   
-  var formatted: String = js.native
+  var formatted: String
   
-  var locality: String = js.native
+  var locality: String
   
-  var postalCode: String = js.native
+  var postalCode: String
   
-  var pref: Boolean = js.native
+  var pref: Boolean
   
-  var region: String = js.native
+  var region: String
   
-  var streetAddress: String = js.native
+  var streetAddress: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ContactAddress {
   

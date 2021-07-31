@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgSchedulerMonthViewSettings
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -19,7 +18,7 @@ trait IgSchedulerMonthViewSettings
     * allAppointments  Indicates that appointments for all days should be displayed in an AgendaView when it is a secondary view within a MonthView.
     * onlyAppointmentsForSelectedMonthViewDay  Indicates that only appointments for the day that is current selected in the associated MonthView should be displayed in an AgendaView that is associated with a MonthView as a secondary view.
     */
-  var agendaVisibilityType: js.UndefOr[String] = js.native
+  var agendaVisibilityType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the type of content displayed in a MonthView day.
@@ -28,49 +27,49 @@ trait IgSchedulerMonthViewSettings
     * indicator  Indicates that a square indicator should be displayed.
     * detailed  Indicates that the subject should be displayed.
     */
-  var appointmentMode: js.UndefOr[String] = js.native
+  var appointmentMode: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the visibility of an AgendaView in a MonthView.  When true, the MonthView will display an AgendaView showing the Appointments for the currently selected day at the top of its list of Appointments.
     *
     */
-  var isAgendaVisible: js.UndefOr[Boolean] = js.native
+  var isAgendaVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/sets the visibility of the horizontal separators between weeks in the MonthView.
     *
     */
-  var isHorizontalSeparatorVisibile: js.UndefOr[Boolean] = js.native
+  var isHorizontalSeparatorVisibile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/sets the visibility of the days from the next month that occur in the last week of a given month.
     *
     */
-  var isNextMonthShown: js.UndefOr[Boolean] = js.native
+  var isNextMonthShown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/sets the visibility of the days from the previous month that occur in the first week of a given month.
     *
     */
-  var isPreviousMonthShown: js.UndefOr[Boolean] = js.native
+  var isPreviousMonthShown: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/sets the visibility of the vertical separators between days of the week in a MonthView.
     *
     */
-  var isVerticalSeparatorVisibile: js.UndefOr[Boolean] = js.native
+  var isVerticalSeparatorVisibile: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/sets the visibility of the week numbers in a MonthView.
     *
     */
-  var isWeekNumberVisible: js.UndefOr[Boolean] = js.native
+  var isWeekNumberVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/sets the visibility of the weekday names in MonthView.
     *
     */
-  var isWeekdayVisible: js.UndefOr[Boolean] = js.native
+  var isWeekdayVisible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets/Sets the orientation, which determines whether the MonthView and AgendaView views are split vertically or horizontally. This option can be used when the AgendaView is displayed in the MonthView.
@@ -79,7 +78,7 @@ trait IgSchedulerMonthViewSettings
     * vertical  Identifies a vertical split between the Scheduler's views.
     * horizontal  Identifies a horizontal split between the Scheduler's views.
     */
-  var viewSplitOrientation: js.UndefOr[String] = js.native
+  var viewSplitOrientation: js.UndefOr[String] = js.undefined
 }
 object IgSchedulerMonthViewSettings {
   

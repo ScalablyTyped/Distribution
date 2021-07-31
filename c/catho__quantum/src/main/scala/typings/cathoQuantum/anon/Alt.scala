@@ -2,19 +2,17 @@ package typings.cathoQuantum.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alt extends StObject {
   
-  var alt: String = js.native
+  var alt: String
   
-  var rounded: js.UndefOr[Boolean] = js.native
+  var rounded: js.UndefOr[Boolean] = js.undefined
   
-  var src: String = js.native
+  var src: String
   
-  var theme: js.UndefOr[`7`] = js.native
+  var theme: js.UndefOr[`7`] = js.undefined
 }
 object Alt {
   

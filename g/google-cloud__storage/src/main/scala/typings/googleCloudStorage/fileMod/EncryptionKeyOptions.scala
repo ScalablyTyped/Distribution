@@ -3,15 +3,13 @@ package typings.googleCloudStorage.fileMod
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionKeyOptions extends StObject {
   
-  var encryptionKey: js.UndefOr[String | Buffer] = js.native
+  var encryptionKey: js.UndefOr[String | Buffer] = js.undefined
   
-  var kmsKeyName: js.UndefOr[String] = js.native
+  var kmsKeyName: js.UndefOr[String] = js.undefined
 }
 object EncryptionKeyOptions {
   

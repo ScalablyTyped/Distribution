@@ -3,17 +3,18 @@ package typings.sloc
 import typings.sloc.anon.RecordKeynumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(code: String, `extension`: String): RecordKeynumber = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[RecordKeynumber]
+  @scala.inline
+  def apply(code: String, `extension`: String, options: Options): RecordKeynumber = (^.asInstanceOf[js.Dynamic].apply(code.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RecordKeynumber]
+  
   @JSImport("sloc", JSImport.Namespace)
   @js.native
-  def apply(code: String, extension: String): RecordKeynumber = js.native
-  @JSImport("sloc", JSImport.Namespace)
-  @js.native
-  def apply(code: String, extension: String, options: Options): RecordKeynumber = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("sloc", "extensions")
   @js.native
@@ -415,10 +416,9 @@ object mod {
     def total: typings.sloc.slocStrings.total = "total".asInstanceOf[typings.sloc.slocStrings.total]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var debug: Boolean = js.native
+    var debug: Boolean
   }
   object Options {
     

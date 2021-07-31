@@ -2,7 +2,6 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Mocap")
@@ -18,20 +17,19 @@ class Mocap () extends StObject {
 /* static members */
 object Mocap {
   
-  @JSImport("seen", "Mocap.DEFAULT_SHAPE_FACTORY")
+  @JSImport("seen", "Mocap")
   @js.native
-  def DEFAULT_SHAPE_FACTORY(): Shape = js.native
-  @JSImport("seen", "Mocap.DEFAULT_SHAPE_FACTORY")
-  @js.native
-  def DEFAULT_SHAPE_FACTORY(joint: js.UndefOr[scala.Nothing], endpoint: Point): Shape = js.native
-  @JSImport("seen", "Mocap.DEFAULT_SHAPE_FACTORY")
-  @js.native
-  def DEFAULT_SHAPE_FACTORY(joint: js.Any): Shape = js.native
-  @JSImport("seen", "Mocap.DEFAULT_SHAPE_FACTORY")
-  @js.native
-  def DEFAULT_SHAPE_FACTORY(joint: js.Any, endpoint: Point): Shape = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("seen", "Mocap.parse")
-  @js.native
-  def parse(source: String): Mocap = js.native
+  @scala.inline
+  def DEFAULT_SHAPE_FACTORY(): Shape = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_SHAPE_FACTORY")().asInstanceOf[Shape]
+  @scala.inline
+  def DEFAULT_SHAPE_FACTORY(joint: js.Any): Shape = ^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_SHAPE_FACTORY")(joint.asInstanceOf[js.Any]).asInstanceOf[Shape]
+  @scala.inline
+  def DEFAULT_SHAPE_FACTORY(joint: js.Any, endpoint: Point): Shape = (^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_SHAPE_FACTORY")(joint.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Shape]
+  @scala.inline
+  def DEFAULT_SHAPE_FACTORY(joint: Unit, endpoint: Point): Shape = (^.asInstanceOf[js.Dynamic].applyDynamic("DEFAULT_SHAPE_FACTORY")(joint.asInstanceOf[js.Any], endpoint.asInstanceOf[js.Any])).asInstanceOf[Shape]
+  
+  @scala.inline
+  def parse(source: String): Mocap = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[Mocap]
 }

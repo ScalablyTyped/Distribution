@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceNetworkProfileInfo extends StObject {
   
   /**
     * The ARN of the certificate associated with a device.
     */
-  var CertificateArn: js.UndefOr[Arn] = js.native
+  var CertificateArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time (in epoch) when the certificate expires.
     */
-  var CertificateExpirationTime: js.UndefOr[CertificateTime] = js.native
+  var CertificateExpirationTime: js.UndefOr[CertificateTime] = js.undefined
   
   /**
     * The ARN of the network profile associated with a device.
     */
-  var NetworkProfileArn: js.UndefOr[Arn] = js.native
+  var NetworkProfileArn: js.UndefOr[Arn] = js.undefined
 }
 object DeviceNetworkProfileInfo {
   

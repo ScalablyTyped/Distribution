@@ -2,24 +2,22 @@ package typings.googleapis.serviceconsumermanagementV1Mod.serviceconsumermanagem
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for the search query.
   */
-@js.native
 trait SchemaSearchTenancyUnitsResponse extends StObject {
   
   /**
     * Pagination token for large results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Tenancy Units matching the request.
     */
-  var tenancyUnits: js.UndefOr[js.Array[SchemaTenancyUnit]] = js.native
+  var tenancyUnits: js.UndefOr[js.Array[SchemaTenancyUnit]] = js.undefined
 }
 object SchemaSearchTenancyUnitsResponse {
   

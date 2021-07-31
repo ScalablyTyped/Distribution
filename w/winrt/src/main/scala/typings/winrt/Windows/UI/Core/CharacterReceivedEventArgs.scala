@@ -2,11 +2,11 @@ package typings.winrt.Windows.UI.Core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CharacterReceivedEventArgs extends ICharacterReceivedEventArgs
+trait CharacterReceivedEventArgs
+  extends StObject
+     with ICharacterReceivedEventArgs
 object CharacterReceivedEventArgs {
   
   @scala.inline

@@ -5,7 +5,6 @@ import typings.kurentoClient.anon.UseDataChannels
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,7 +13,7 @@ trait ClientInstance extends StObject {
   def close(): Unit = js.native
   
   def create(`type`: String): js.Promise[MediaElement] = js.native
-  def create(`type`: String, options: Record[String, _]): js.Promise[MediaElement] = js.native
+  def create(`type`: String, options: Record[String, js.Any]): js.Promise[MediaElement] = js.native
   @JSName("create")
   def create_MediaPipeline(`type`: typings.kurentoClient.kurentoClientStrings.MediaPipeline): js.Promise[MediaPipeline] = js.native
   @JSName("create")

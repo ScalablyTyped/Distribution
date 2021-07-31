@@ -2,19 +2,19 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LiveDialogResponse extends DialogResponse {
+trait LiveDialogResponse
+  extends StObject
+     with DialogResponse {
   
-  var id: String = js.native
+  var id: String
   
-  var secure_stream_url: String = js.native
+  var secure_stream_url: String
   
-  var status: String = js.native
+  var status: String
   
-  var stream_url: String = js.native
+  var stream_url: String
 }
 object LiveDialogResponse {
   

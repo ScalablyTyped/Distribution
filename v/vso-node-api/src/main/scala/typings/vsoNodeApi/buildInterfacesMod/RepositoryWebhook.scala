@@ -2,26 +2,24 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RepositoryWebhook extends StObject {
   
   /**
     * The friendly name of the repository.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The type of the webhook.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The URL of the repository.
     */
-  var url: String = js.native
+  var url: String
 }
 object RepositoryWebhook {
   

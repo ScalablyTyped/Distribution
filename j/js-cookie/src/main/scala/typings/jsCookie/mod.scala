@@ -12,7 +12,6 @@ import typings.jsCookie.jsCookieStrings.strict_
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,9 +20,9 @@ object mod extends Shortcut {
   @js.native
   val ^ : CookiesStatic[js.Object] = js.native
   
-  @js.native
   trait CookieAttributes
-    extends /**
+    extends StObject
+       with /**
     * An attribute which will be serialized, conformably to RFC 6265
     * section 5.2.
     */
@@ -33,32 +32,32 @@ object mod extends Shortcut {
       * Define the domain where the cookie is available. Defaults to
       * the domain of the page where the cookie was created.
       */
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
     /**
       * Define when the cookie will be removed. Value can be a Number
       * which will be interpreted as days from time of creation or a
       * Date instance. If omitted, the cookie becomes a session cookie.
       */
-    var expires: js.UndefOr[Double | Date] = js.native
+    var expires: js.UndefOr[Double | Date] = js.undefined
     
     /**
       * Define the path where the cookie is available. Defaults to '/'
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Asserts that a cookie must not be sent with cross-origin requests,
       * providing some protection against cross-site request forgery
       * attacks (CSRF)
       */
-    var sameSite: js.UndefOr[strict_ | Strict | lax_ | Lax | none_ | None] = js.native
+    var sameSite: js.UndefOr[strict_ | Strict | lax_ | Lax | none_ | None] = js.undefined
     
     /**
       * A Boolean indicating if the cookie transmission requires a
       * secure protocol (https). Defaults to false.
       */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object CookieAttributes {
     

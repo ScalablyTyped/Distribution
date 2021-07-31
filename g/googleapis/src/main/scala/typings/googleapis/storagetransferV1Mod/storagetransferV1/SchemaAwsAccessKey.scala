@@ -2,26 +2,24 @@ package typings.googleapis.storagetransferV1Mod.storagetransferV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AWS access key (see [AWS Security
   * Credentials](http://docs.aws.amazon.com/general/latest/gr/aws-security-credentials.html)).
   */
-@js.native
 trait SchemaAwsAccessKey extends StObject {
   
   /**
     * AWS access key ID. Required.
     */
-  var accessKeyId: js.UndefOr[String] = js.native
+  var accessKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * AWS secret access key. This field is not returned in RPC responses.
     * Required.
     */
-  var secretAccessKey: js.UndefOr[String] = js.native
+  var secretAccessKey: js.UndefOr[String] = js.undefined
 }
 object SchemaAwsAccessKey {
   

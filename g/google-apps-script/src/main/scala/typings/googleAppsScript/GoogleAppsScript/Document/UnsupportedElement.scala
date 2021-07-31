@@ -2,15 +2,15 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An element representing a region that is unknown or cannot be affected by a script, such as a
   * page number.
   */
-@js.native
-trait UnsupportedElement extends Element
+trait UnsupportedElement
+  extends StObject
+     with Element
 object UnsupportedElement {
   
   @scala.inline

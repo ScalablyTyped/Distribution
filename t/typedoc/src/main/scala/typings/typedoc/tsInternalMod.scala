@@ -9,7 +9,6 @@ import typings.typedoc.typedocStrings.string
 import typings.typescript.mod.DiagnosticMessage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tsInternalMod {
@@ -28,20 +27,16 @@ object tsInternalMod {
   object CommandLineOption {
     
     @scala.inline
-    def CommandLineOptionOfCustomType(name: String, `type`: Map[Double | String, _]): typings.typedoc.tsInternalMod.CommandLineOptionOfCustomType = {
+    def CommandLineOptionOfCustomType(name: String, `type`: Map[Double | String, js.Any]): typings.typedoc.tsInternalMod.CommandLineOptionOfCustomType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.typedoc.tsInternalMod.CommandLineOptionOfCustomType]
     }
     
     @scala.inline
-    def CommandLineOptionOfListType(
-      element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType,
-      name: String,
-      `type`: list
-    ): typings.typedoc.tsInternalMod.CommandLineOptionOfListType = {
+    def CommandLineOptionOfListType(element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType, name: String): typings.typedoc.tsInternalMod.CommandLineOptionOfListType = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("list")
       __obj.asInstanceOf[typings.typedoc.tsInternalMod.CommandLineOptionOfListType]
     }
     
@@ -53,36 +48,35 @@ object tsInternalMod {
     }
     
     @scala.inline
-    def TsConfigOnlyOption(name: String, `type`: `object`): typings.typedoc.tsInternalMod.TsConfigOnlyOption = {
+    def TsConfigOnlyOption(name: String): typings.typedoc.tsInternalMod.TsConfigOnlyOption = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("object")
       __obj.asInstanceOf[typings.typedoc.tsInternalMod.TsConfigOnlyOption]
     }
   }
   
-  @js.native
   trait CommandLineOptionBase extends StObject {
     
-    var description: js.UndefOr[DiagnosticMessage] = js.native
+    var description: js.UndefOr[DiagnosticMessage] = js.undefined
     
-    var experimental: js.UndefOr[Boolean] = js.native
+    var experimental: js.UndefOr[Boolean] = js.undefined
     
-    var isFilePath: js.UndefOr[Boolean] = js.native
+    var isFilePath: js.UndefOr[Boolean] = js.undefined
     
-    var isTSConfigOnly: js.UndefOr[Boolean] = js.native
+    var isTSConfigOnly: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var paramType: js.UndefOr[DiagnosticMessage] = js.native
+    var paramType: js.UndefOr[DiagnosticMessage] = js.undefined
     
-    var shortName: js.UndefOr[String] = js.native
+    var shortName: js.UndefOr[String] = js.undefined
     
-    var `type`: string | number | boolean | `object` | list | (Map[Double | String, _]) = js.native
+    var `type`: string | number | boolean | `object` | list | (Map[Double | String, js.Any])
   }
   object CommandLineOptionBase {
     
     @scala.inline
-    def apply(name: String, `type`: string | number | boolean | `object` | list | (Map[Double | String, _])): CommandLineOptionBase = {
+    def apply(name: String, `type`: string | number | boolean | `object` | list | (Map[Double | String, js.Any])): CommandLineOptionBase = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandLineOptionBase]
@@ -131,22 +125,22 @@ object tsInternalMod {
       def setShortNameUndefined: Self = StObject.set(x, "shortName", js.undefined)
       
       @scala.inline
-      def setType(value: string | number | boolean | `object` | list | (Map[Double | String, _])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: string | number | boolean | `object` | list | (Map[Double | String, js.Any])): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait CommandLineOptionOfCustomType
-    extends CommandLineOptionBase
+    extends StObject
+       with CommandLineOptionBase
        with CommandLineOption {
     
     @JSName("type")
-    var type_CommandLineOptionOfCustomType: Map[Double | String, _] = js.native
+    var type_CommandLineOptionOfCustomType: Map[Double | String, js.Any]
   }
   object CommandLineOptionOfCustomType {
     
     @scala.inline
-    def apply(name: String, `type`: Map[Double | String, _]): CommandLineOptionOfCustomType = {
+    def apply(name: String, `type`: Map[Double | String, js.Any]): CommandLineOptionOfCustomType = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommandLineOptionOfCustomType]
@@ -156,30 +150,26 @@ object tsInternalMod {
     implicit class CommandLineOptionOfCustomTypeMutableBuilder[Self <: CommandLineOptionOfCustomType] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setType(value: Map[Double | String, _]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+      def setType(value: Map[Double | String, js.Any]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait CommandLineOptionOfListType
-    extends CommandLineOptionBase
+    extends StObject
+       with CommandLineOptionBase
        with CommandLineOption {
     
-    var element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType = js.native
+    var element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType
     
     @JSName("type")
-    var type_CommandLineOptionOfListType: list = js.native
+    var type_CommandLineOptionOfListType: list
   }
   object CommandLineOptionOfListType {
     
     @scala.inline
-    def apply(
-      element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType,
-      name: String,
-      `type`: list
-    ): CommandLineOptionOfListType = {
+    def apply(element: CommandLineOptionOfCustomType | CommandLineOptionOfPrimitiveType, name: String): CommandLineOptionOfListType = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("list")
       __obj.asInstanceOf[CommandLineOptionOfListType]
     }
     
@@ -194,13 +184,13 @@ object tsInternalMod {
     }
   }
   
-  @js.native
   trait CommandLineOptionOfPrimitiveType
-    extends CommandLineOptionBase
+    extends StObject
+       with CommandLineOptionBase
        with CommandLineOption {
     
     @JSName("type")
-    var type_CommandLineOptionOfPrimitiveType: string | number | boolean = js.native
+    var type_CommandLineOptionOfPrimitiveType: string | number | boolean
   }
   object CommandLineOptionOfPrimitiveType {
     
@@ -219,20 +209,20 @@ object tsInternalMod {
     }
   }
   
-  @js.native
   trait TsConfigOnlyOption
-    extends CommandLineOptionBase
+    extends StObject
+       with CommandLineOptionBase
        with CommandLineOption {
     
     @JSName("type")
-    var type_TsConfigOnlyOption: `object` = js.native
+    var type_TsConfigOnlyOption: `object`
   }
   object TsConfigOnlyOption {
     
     @scala.inline
-    def apply(name: String, `type`: `object`): TsConfigOnlyOption = {
+    def apply(name: String): TsConfigOnlyOption = {
       val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("object")
       __obj.asInstanceOf[TsConfigOnlyOption]
     }
     
@@ -247,12 +237,11 @@ object tsInternalMod {
   /* augmented module */
   object typescriptAugmentingMod {
     
-    @js.native
     trait Node extends StObject {
       
-      var localSymbol: js.UndefOr[typings.typescript.mod.Symbol] = js.native
+      var localSymbol: js.UndefOr[typings.typescript.mod.Symbol] = js.undefined
       
-      var symbol: js.UndefOr[typings.typescript.mod.Symbol] = js.native
+      var symbol: js.UndefOr[typings.typescript.mod.Symbol] = js.undefined
     }
     object Node {
       
@@ -279,10 +268,9 @@ object tsInternalMod {
       }
     }
     
-    @js.native
     trait Symbol extends StObject {
       
-      var parent: js.UndefOr[typings.typescript.mod.Symbol] = js.native
+      var parent: js.UndefOr[typings.typescript.mod.Symbol] = js.undefined
     }
     object Symbol {
       

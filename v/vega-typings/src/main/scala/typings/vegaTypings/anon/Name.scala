@@ -3,17 +3,17 @@ package typings.vegaTypings.anon
 import typings.vegaTypings.markMod.Facet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Name extends Facet {
+trait Name
+  extends StObject
+     with Facet {
   
-  var data: String = js.native
+  var data: String
   
-  var field: String = js.native
+  var field: String
   
-  var name: String = js.native
+  var name: String
 }
 object Name {
   

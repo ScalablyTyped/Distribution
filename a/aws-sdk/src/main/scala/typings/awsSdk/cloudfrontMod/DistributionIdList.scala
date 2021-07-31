@@ -2,41 +2,39 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistributionIdList extends StObject {
   
   /**
     * A flag that indicates whether more distribution IDs remain to be listed. If your results were truncated, you can make a subsequent request using the Marker request field to retrieve more distribution IDs in the list.
     */
-  var IsTruncated: Boolean = js.native
+  var IsTruncated: Boolean
   
   /**
     * Contains the distribution IDs in the list.
     */
-  var Items: js.UndefOr[DistributionIdListSummary] = js.native
+  var Items: js.UndefOr[DistributionIdListSummary] = js.undefined
   
   /**
     * The value provided in the Marker request field.
     */
-  var Marker: String = js.native
+  var Marker: String
   
   /**
     * The maximum number of distribution IDs requested.
     */
-  var MaxItems: integer = js.native
+  var MaxItems: integer
   
   /**
     * Contains the value that you should use in the Marker field of a subsequent request to continue listing distribution IDs where you left off.
     */
-  var NextMarker: js.UndefOr[String] = js.native
+  var NextMarker: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of distribution IDs returned in the response.
     */
-  var Quantity: integer = js.native
+  var Quantity: integer
 }
 object DistributionIdList {
   

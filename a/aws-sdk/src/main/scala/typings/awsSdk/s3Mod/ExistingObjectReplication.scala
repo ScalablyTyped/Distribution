@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExistingObjectReplication extends StObject {
   
   /**
     * 
     */
-  var Status: ExistingObjectReplicationStatus = js.native
+  var Status: ExistingObjectReplicationStatus
 }
 object ExistingObjectReplication {
   

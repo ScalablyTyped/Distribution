@@ -2,26 +2,24 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderpaymentsNotifyChargeRequest extends StObject {
   
   /**
     * Whether charge was successful.
     */
-  var chargeState: js.UndefOr[String] = js.native
+  var chargeState: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Please use invoiceIds instead.
     */
-  var invoiceId: js.UndefOr[String] = js.native
+  var invoiceId: js.UndefOr[String] = js.undefined
   
   /**
     * Invoice IDs from the orderinvoices service that correspond to the charge.
     */
-  var invoiceIds: js.UndefOr[js.Array[String]] = js.native
+  var invoiceIds: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaOrderpaymentsNotifyChargeRequest {
   

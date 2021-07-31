@@ -2,15 +2,13 @@ package typings.slickgrid.Slick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SortColumn[T /* <: SlickData */] extends StObject {
   
-  var sortAsc: Boolean = js.native
+  var sortAsc: Boolean
   
-  var sortCol: Column[T] = js.native
+  var sortCol: Column[T]
 }
 object SortColumn {
   
@@ -21,7 +19,7 @@ object SortColumn {
   }
   
   @scala.inline
-  implicit class SortColumnMutableBuilder[Self <: SortColumn[_], T /* <: SlickData */] (val x: Self with SortColumn[T]) extends AnyVal {
+  implicit class SortColumnMutableBuilder[Self <: SortColumn[?], T /* <: SlickData */] (val x: Self & SortColumn[T]) extends AnyVal {
     
     @scala.inline
     def setSortAsc(value: Boolean): Self = StObject.set(x, "sortAsc", value.asInstanceOf[js.Any])

@@ -2,15 +2,13 @@ package typings.wordsToNumbers
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Fuzzy extends StObject {
     
-    var fuzzy: Boolean = js.native
+    var fuzzy: Boolean
   }
   object Fuzzy {
     

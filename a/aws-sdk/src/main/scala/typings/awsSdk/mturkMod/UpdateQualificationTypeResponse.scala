@@ -2,16 +2,14 @@ package typings.awsSdk.mturkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateQualificationTypeResponse extends StObject {
   
   /**
     *  Contains a QualificationType data structure.
     */
-  var QualificationType: js.UndefOr[typings.awsSdk.mturkMod.QualificationType] = js.native
+  var QualificationType: js.UndefOr[typings.awsSdk.mturkMod.QualificationType] = js.undefined
 }
 object UpdateQualificationTypeResponse {
   

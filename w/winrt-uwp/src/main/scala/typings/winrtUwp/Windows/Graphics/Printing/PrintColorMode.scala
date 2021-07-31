@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Graphics.Printing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,25 +13,37 @@ object PrintColorMode extends StObject {
   
   /** The default color mode option. */
   @js.native
-  sealed trait default extends PrintColorMode
+  sealed trait default
+    extends StObject
+       with PrintColorMode
   
   /** An option to indicate that the printed output will be in color. */
   @js.native
-  sealed trait color extends PrintColorMode
+  sealed trait color
+    extends StObject
+       with PrintColorMode
   
   /** An option to indicate that the printed output will be in shades of gray. */
   @js.native
-  sealed trait grayscale extends PrintColorMode
+  sealed trait grayscale
+    extends StObject
+       with PrintColorMode
   
   /** An option to indicate that the printed output will be in one shade of a single color. */
   @js.native
-  sealed trait monochrome extends PrintColorMode
+  sealed trait monochrome
+    extends StObject
+       with PrintColorMode
   
   /** An unsupported color mode option. */
   @js.native
-  sealed trait notAvailable extends PrintColorMode
+  sealed trait notAvailable
+    extends StObject
+       with PrintColorMode
   
   /** A custom color mode option that is specific to the print device. */
   @js.native
-  sealed trait printerCustom extends PrintColorMode
+  sealed trait printerCustom
+    extends StObject
+       with PrintColorMode
 }

@@ -5,20 +5,24 @@ import typings.yandexMaps.anon.AutoFitToViewport
 import typings.yandexMaps.anon.Direction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panorama {
   
   @JSImport("yandex-maps", "panorama.Manager")
   @js.native
-  class Manager () extends IEventEmitter {
+  class Manager ()
+    extends StObject
+       with IEventEmitter {
     
     def closePlayer(): Unit = js.native
     
     def disableLookup(): Unit = js.native
     
     def enableLookup(): Unit = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def getPlayer(): Player = js.native
     
@@ -30,13 +34,18 @@ object panorama {
   
   @JSImport("yandex-maps", "panorama.Player")
   @js.native
-  class Player protected () extends IEventEmitter {
+  class Player protected ()
+    extends StObject
+       with IEventEmitter {
     def this(element: String, panorama: IPanorama) = this()
     def this(element: HTMLElement, panorama: IPanorama) = this()
     def this(element: String, panorama: IPanorama, options: AutoFitToViewport) = this()
     def this(element: HTMLElement, panorama: IPanorama, options: AutoFitToViewport) = this()
     
     def destroy(): Unit = js.native
+    
+    /* CompleteClass */
+    var events: IEventManager[js.Object] = js.native
     
     def fitToViewport(): Unit = js.native
     

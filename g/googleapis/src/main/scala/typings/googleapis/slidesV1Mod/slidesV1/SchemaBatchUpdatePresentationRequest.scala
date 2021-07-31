@@ -2,24 +2,22 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for PresentationsService.BatchUpdatePresentation.
   */
-@js.native
 trait SchemaBatchUpdatePresentationRequest extends StObject {
   
   /**
     * A list of updates to apply to the presentation.
     */
-  var requests: js.UndefOr[js.Array[SchemaRequest]] = js.native
+  var requests: js.UndefOr[js.Array[SchemaRequest]] = js.undefined
   
   /**
     * Provides control over how write requests are executed.
     */
-  var writeControl: js.UndefOr[SchemaWriteControl] = js.native
+  var writeControl: js.UndefOr[SchemaWriteControl] = js.undefined
 }
 object SchemaBatchUpdatePresentationRequest {
   

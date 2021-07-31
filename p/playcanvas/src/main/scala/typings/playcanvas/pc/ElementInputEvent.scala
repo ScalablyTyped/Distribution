@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,28 +13,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @param element - The ElementComponent that this event was originally raised on.
   * @param camera - The CameraComponent that this event was originally raised via.
   */
-@js.native
 trait ElementInputEvent extends StObject {
   
   /**
     * The CameraComponent that this event was originally raised via.
     */
-  var camera: CameraComponent = js.native
+  var camera: CameraComponent
   
   /**
     * The ElementComponent that this event was originally raised on.
     */
-  var element: ElementComponent = js.native
+  var element: ElementComponent
   
   /**
     * The MouseEvent or TouchEvent that was originally raised.
     */
-  var event: MouseEvent | TouchEvent = js.native
+  var event: MouseEvent | TouchEvent
   
   /**
     * Stop propagation of the event to parent {@link pc.ElementComponent}s. This also stops propagation of the event to other event listeners of the original DOM Event.
     */
-  def stopPropagation(): Unit = js.native
+  def stopPropagation(): Unit
 }
 object ElementInputEvent {
   

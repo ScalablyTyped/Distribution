@@ -2,7 +2,6 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,18 +9,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * value has a particular format and is only ever set to one of an integer or
   * a floating point value. LINT.IfChange
   */
-@js.native
 trait SchemaValue extends StObject {
   
   /**
     * Floating point value. When this is set, other values must not be set.
     */
-  var fpVal: js.UndefOr[Double] = js.native
+  var fpVal: js.UndefOr[Double] = js.undefined
   
   /**
     * Integer value. When this is set, other values must not be set.
     */
-  var intVal: js.UndefOr[Double] = js.native
+  var intVal: js.UndefOr[Double] = js.undefined
   
   /**
     * Map value. The valid key space and units for the corresponding value of
@@ -29,14 +27,14 @@ trait SchemaValue extends StObject {
     * should be kept small whenever possible. Data streams with large keys and
     * high data frequency may be down sampled.
     */
-  var mapVal: js.UndefOr[js.Array[SchemaValueMapValEntry]] = js.native
+  var mapVal: js.UndefOr[js.Array[SchemaValueMapValEntry]] = js.undefined
   
   /**
     * String value. When this is set, other values must not be set. Strings
     * should be kept small whenever possible. Data streams with large string
     * values and high data frequency may be down sampled.
     */
-  var stringVal: js.UndefOr[String] = js.native
+  var stringVal: js.UndefOr[String] = js.undefined
 }
 object SchemaValue {
   

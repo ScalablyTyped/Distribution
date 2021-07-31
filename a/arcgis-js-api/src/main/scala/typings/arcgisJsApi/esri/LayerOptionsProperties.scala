@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LayerOptionsProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait LayerOptionsProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#returnTopmostRaster)
     */
-  var returnTopmostRaster: js.UndefOr[Boolean] = js.native
+  var returnTopmostRaster: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Applicable to [Imagery Layers](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-ImageryLayer.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-LayerOptions.html#showNoDataRecords)
     */
-  var showNoDataRecords: js.UndefOr[Boolean] = js.native
+  var showNoDataRecords: js.UndefOr[Boolean] = js.undefined
 }
 object LayerOptionsProperties {
   

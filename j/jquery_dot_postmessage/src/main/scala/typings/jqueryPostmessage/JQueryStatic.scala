@@ -5,7 +5,6 @@ import typings.std.MessageEvent
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -37,21 +36,25 @@ trait JQueryStatic extends StObject {
     * @param sourceOrigin If window.postMessage is available and this value is not equal to the event.origin property, the callback will not be called.
     * @param delay An optional zero-or-greater delay in milliseconds at which the polling loop will execute (for browser that don’t support window.postMessage). If omitted, defaults to 100.
     */
-  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[_], _]): Unit = js.native
+  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[js.Any], js.Any]): Unit = js.native
+  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[js.Any], js.Any], sourceOrigin: String): Unit = js.native
   def receiveMessage(
-    callback: js.Function1[/* event */ MessageEvent[_], _],
-    sourceOrigin: js.UndefOr[scala.Nothing],
+    callback: js.Function1[/* event */ MessageEvent[js.Any], js.Any],
+    sourceOrigin: String,
     delay: Double
   ): Unit = js.native
-  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[_], _], sourceOrigin: String): Unit = js.native
-  def receiveMessage(callback: js.Function1[/* event */ MessageEvent[_], _], sourceOrigin: String, delay: Double): Unit = js.native
   def receiveMessage(
-    callback: js.Function1[/* event */ MessageEvent[_], _],
+    callback: js.Function1[/* event */ MessageEvent[js.Any], js.Any],
     sourceOrigin: js.Function1[/* origin */ String, Boolean]
   ): Unit = js.native
   def receiveMessage(
-    callback: js.Function1[/* event */ MessageEvent[_], _],
+    callback: js.Function1[/* event */ MessageEvent[js.Any], js.Any],
     sourceOrigin: js.Function1[/* origin */ String, Boolean],
+    delay: Double
+  ): Unit = js.native
+  def receiveMessage(
+    callback: js.Function1[/* event */ MessageEvent[js.Any], js.Any],
+    sourceOrigin: Unit,
     delay: Double
   ): Unit = js.native
 }

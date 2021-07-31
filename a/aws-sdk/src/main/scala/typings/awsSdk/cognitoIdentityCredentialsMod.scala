@@ -16,7 +16,6 @@ import typings.awsSdk.stsMod.clientTokenType
 import typings.awsSdk.stsMod.roleSessionNameType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cognitoIdentityCredentialsMod {
@@ -92,6 +91,6 @@ object cognitoIdentityCredentialsMod {
       }
     }
     
-    type CognitoIdentityOptions = CognitoIdentityCredentialsInputs with LoginId
+    type CognitoIdentityOptions = CognitoIdentityCredentialsInputs & LoginId
   }
 }

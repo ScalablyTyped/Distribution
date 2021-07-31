@@ -19,11 +19,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.svg
 import typings.arcgisJsApi.arcgisJsApiStrings.svgz
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TemplateOptions extends Accessor {
+trait TemplateOptions
+  extends StObject
+     with Accessor {
   
   /**
     * When `false`, the attribution is not displayed on the printout.

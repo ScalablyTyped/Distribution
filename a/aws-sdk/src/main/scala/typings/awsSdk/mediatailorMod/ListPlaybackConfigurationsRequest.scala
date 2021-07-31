@@ -2,21 +2,19 @@ package typings.awsSdk.mediatailorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPlaybackConfigurationsRequest extends StObject {
   
   /**
     * Maximum number of records to return. 
     */
-  var MaxResults: js.UndefOr[integerMin1Max100] = js.native
+  var MaxResults: js.UndefOr[integerMin1Max100] = js.undefined
   
   /**
     * Pagination token returned by the GET list request when results exceed the maximum allowed. Use the token to fetch the next page of results.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListPlaybackConfigurationsRequest {
   

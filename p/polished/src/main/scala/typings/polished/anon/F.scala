@@ -7,36 +7,29 @@ import typings.polished.polishedStrings.^
 import typings.polished.polishedStrings.infix
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait F extends StObject {
   
-  var argCount: `2` = js.native
+  var argCount: `2`
   
-  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify power */ js.Any = js.native
+  var f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify power */ js.Any
   
-  var notation: infix = js.native
+  var notation: infix
   
-  var precedence: `5` = js.native
+  var precedence: `5`
   
-  var rightToLeft: `1` = js.native
+  var rightToLeft: `1`
   
-  var symbol: ^ = js.native
+  var symbol: ^
 }
 object F {
   
   @scala.inline
   def apply(
-    argCount: `2`,
-    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify power */ js.Any,
-    notation: infix,
-    precedence: `5`,
-    rightToLeft: `1`,
-    symbol: ^
+    f: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify power */ js.Any
   ): F = {
-    val __obj = js.Dynamic.literal(argCount = argCount.asInstanceOf[js.Any], f = f.asInstanceOf[js.Any], notation = notation.asInstanceOf[js.Any], precedence = precedence.asInstanceOf[js.Any], rightToLeft = rightToLeft.asInstanceOf[js.Any], symbol = symbol.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(argCount = 2, f = f.asInstanceOf[js.Any], notation = "infix", precedence = 5, rightToLeft = 1, symbol = "^")
     __obj.asInstanceOf[F]
   }
   

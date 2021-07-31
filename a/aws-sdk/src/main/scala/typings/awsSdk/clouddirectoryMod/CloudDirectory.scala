@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -125,7 +124,7 @@ trait CloudDirectory extends Service {
   ): Request[BatchWriteResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_CloudDirectory: ConfigBase with ClientConfiguration = js.native
+  var config_CloudDirectory: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a Directory by copying the published schema into the directory. A directory cannot be created without a schema. You can also quickly create a directory using a managed schema, called the QuickStartSchema. For more information, see Managed Schema in the Amazon Cloud Directory Developer Guide.

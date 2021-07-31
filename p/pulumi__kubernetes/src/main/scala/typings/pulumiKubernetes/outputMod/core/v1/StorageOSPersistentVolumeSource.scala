@@ -2,39 +2,37 @@ package typings.pulumiKubernetes.outputMod.core.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a StorageOS persistent volume resource.
   */
-@js.native
 trait StorageOSPersistentVolumeSource extends StObject {
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs". Implicitly inferred to be "ext4" if unspecified.
     */
-  var fsType: String = js.native
+  var fsType: String
   
   /**
     * Defaults to false (read/write). ReadOnly here will force the ReadOnly setting in VolumeMounts.
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * SecretRef specifies the secret to use for obtaining the StorageOS API credentials.  If not specified, default values will be attempted.
     */
-  var secretRef: ObjectReference = js.native
+  var secretRef: ObjectReference
   
   /**
     * VolumeName is the human-readable name of the StorageOS volume.  Volume names are only unique within a namespace.
     */
-  var volumeName: String = js.native
+  var volumeName: String
   
   /**
     * VolumeNamespace specifies the scope of the volume within StorageOS.  If no namespace is specified then the Pod's namespace will be used.  This allows the Kubernetes name scoping to be mirrored within StorageOS for tighter integration. Set VolumeName to any name to override the default behaviour. Set to "default" if you are not using namespaces within StorageOS. Namespaces that do not pre-exist within StorageOS will be created.
     */
-  var volumeNamespace: String = js.native
+  var volumeNamespace: String
 }
 object StorageOSPersistentVolumeSource {
   

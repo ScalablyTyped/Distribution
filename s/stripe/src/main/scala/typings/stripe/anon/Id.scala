@@ -2,10 +2,8 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Id extends StObject {
   
   /**
@@ -13,19 +11,19 @@ trait Id extends StObject {
     * automatic (e.g., Stripe’s automatic subscription handling). Request logs
     * are available in the dashboard, but currently not in the API.
     */
-  var id: String | Null = js.native
+  var id: String | Null
   
   /**
     * The idempotency key transmitted during the request, if any.
     * Note: This property is populated only for events on or after May 23, 2017.
     */
-  var idempotency_key: js.UndefOr[String | Null] = js.native
+  var idempotency_key: js.UndefOr[String | Null] = js.undefined
 }
 object Id {
   
   @scala.inline
   def apply(): Id = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(id = null)
     __obj.asInstanceOf[Id]
   }
   

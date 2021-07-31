@@ -2,38 +2,36 @@ package typings.koaViews
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AutoRender extends StObject {
     
     /*
       * autoRender the result into ctx.body, defaults to true
       */
-    var autoRender: js.UndefOr[Boolean] = js.native
+    var autoRender: js.UndefOr[Boolean] = js.undefined
     
     /*
       * replace consolidate as default engine source
       */
-    var engineSource: js.UndefOr[js.Any] = js.native
+    var engineSource: js.UndefOr[js.Any] = js.undefined
     
     /*
       * default extension for your views
       */
-    var extension: js.UndefOr[String] = js.native
+    var `extension`: js.UndefOr[String] = js.undefined
     
     /*
       * map a file extension to an engine
       */
-    var map: js.UndefOr[js.Any] = js.native
+    var map: js.UndefOr[js.Any] = js.undefined
     
     /*
       * these options will get passed to the view engine
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
   }
   object AutoRender {
     

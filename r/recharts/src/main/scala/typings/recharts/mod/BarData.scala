@@ -2,31 +2,29 @@ package typings.recharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BarData extends StObject {
   
-  var height: Double = js.native
+  var height: Double
   
-  var radius: Double | js.Array[_] = js.native
+  var radius: Double | js.Array[js.Any]
   
-  var value: Double | String | js.Array[_] = js.native
+  var value: Double | String | js.Array[js.Any]
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object BarData {
   
   @scala.inline
   def apply(
     height: Double,
-    radius: Double | js.Array[_],
-    value: Double | String | js.Array[_],
+    radius: Double | js.Array[js.Any],
+    value: Double | String | js.Array[js.Any],
     width: Double,
     x: Double,
     y: Double
@@ -42,13 +40,13 @@ object BarData {
     def setHeight(value: Double): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRadius(value: Double | js.Array[_]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
+    def setRadius(value: Double | js.Array[js.Any]): Self = StObject.set(x, "radius", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRadiusVarargs(value: js.Any*): Self = StObject.set(x, "radius", js.Array(value :_*))
     
     @scala.inline
-    def setValue(value: Double | String | js.Array[_]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
+    def setValue(value: Double | String | js.Array[js.Any]): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setValueVarargs(value: js.Any*): Self = StObject.set(x, "value", js.Array(value :_*))

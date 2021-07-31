@@ -3,17 +3,15 @@ package typings.pulumiAws.inputMod
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object route53 {
   
-  @js.native
   trait GetResolverEndpointFilter extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var values: js.Array[String] = js.native
+    var values: js.Array[String]
   }
   object GetResolverEndpointFilter {
     
@@ -37,23 +35,22 @@ object route53 {
     }
   }
   
-  @js.native
   trait RecordAlias extends StObject {
     
     /**
       * Set to `true` if you want Route 53 to determine whether to respond to DNS queries using this resource record set by checking the health of the resource record set. Some resources have special requirements, see [related part of documentation](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/resource-record-sets-values.html#rrsets-values-alias-evaluate-target-health).
       */
-    var evaluateTargetHealth: Input[Boolean] = js.native
+    var evaluateTargetHealth: Input[Boolean]
     
     /**
       * DNS domain name for a CloudFront distribution, S3 bucket, ELB, or another resource record set in this hosted zone.
       */
-    var name: Input[String] = js.native
+    var name: Input[String]
     
     /**
       * Hosted zone ID for a CloudFront distribution, S3 bucket, ELB, or Route 53 hosted zone. See `resource_elb.zone_id` for example.
       */
-    var zoneId: Input[String] = js.native
+    var zoneId: Input[String]
   }
   object RecordAlias {
     
@@ -77,13 +74,12 @@ object route53 {
     }
   }
   
-  @js.native
   trait RecordFailoverRoutingPolicy extends StObject {
     
     /**
       * `PRIMARY` or `SECONDARY`. A `PRIMARY` record will be served if its healthcheck is passing, otherwise the `SECONDARY` will be served. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/dns-failover-configuring-options.html#dns-failover-failover-rrsets
       */
-    var `type`: Input[String] = js.native
+    var `type`: Input[String]
   }
   object RecordFailoverRoutingPolicy {
     
@@ -102,23 +98,22 @@ object route53 {
     }
   }
   
-  @js.native
   trait RecordGeolocationRoutingPolicy extends StObject {
     
     /**
       * A two-letter continent code. See http://docs.aws.amazon.com/Route53/latest/APIReference/API_GetGeoLocation.html for code details. Either `continent` or `country` must be specified.
       */
-    var continent: js.UndefOr[Input[String]] = js.native
+    var continent: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A two-character country code or `*` to indicate a default resource record set.
       */
-    var country: js.UndefOr[Input[String]] = js.native
+    var country: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A subdivision code for a country.
       */
-    var subdivision: js.UndefOr[Input[String]] = js.native
+    var subdivision: js.UndefOr[Input[String]] = js.undefined
   }
   object RecordGeolocationRoutingPolicy {
     
@@ -151,13 +146,12 @@ object route53 {
     }
   }
   
-  @js.native
   trait RecordLatencyRoutingPolicy extends StObject {
     
     /**
       * An AWS region from which to measure latency. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-latency
       */
-    var region: Input[String] = js.native
+    var region: Input[String]
   }
   object RecordLatencyRoutingPolicy {
     
@@ -175,13 +169,12 @@ object route53 {
     }
   }
   
-  @js.native
   trait RecordWeightedRoutingPolicy extends StObject {
     
     /**
       * A numeric value indicating the relative weight of the record. See http://docs.aws.amazon.com/Route53/latest/DeveloperGuide/routing-policy.html#routing-policy-weighted.
       */
-    var weight: Input[Double] = js.native
+    var weight: Input[Double]
   }
   object RecordWeightedRoutingPolicy {
     
@@ -199,20 +192,19 @@ object route53 {
     }
   }
   
-  @js.native
   trait ResolverEndpointIpAddress extends StObject {
     
     /**
       * The IP address in the subnet that you want to use for DNS queries.
       */
-    var ip: js.UndefOr[Input[String]] = js.native
+    var ip: js.UndefOr[Input[String]] = js.undefined
     
-    var ipId: js.UndefOr[Input[String]] = js.native
+    var ipId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the subnet that contains the IP address.
       */
-    var subnetId: Input[String] = js.native
+    var subnetId: Input[String]
   }
   object ResolverEndpointIpAddress {
     
@@ -242,18 +234,17 @@ object route53 {
     }
   }
   
-  @js.native
   trait ResolverRuleTargetIp extends StObject {
     
     /**
       * One IP address that you want to forward DNS queries to. You can specify only IPv4 addresses.
       */
-    var ip: Input[String] = js.native
+    var ip: Input[String]
     
     /**
       * The port at `ip` that you want to forward DNS queries to. Default value is `53`
       */
-    var port: js.UndefOr[Input[Double]] = js.native
+    var port: js.UndefOr[Input[Double]] = js.undefined
   }
   object ResolverRuleTargetIp {
     
@@ -277,18 +268,17 @@ object route53 {
     }
   }
   
-  @js.native
   trait ZoneVpc extends StObject {
     
     /**
       * ID of the VPC to associate.
       */
-    var vpcId: Input[String] = js.native
+    var vpcId: Input[String]
     
     /**
       * Region of the VPC to associate. Defaults to AWS provider region.
       */
-    var vpcRegion: js.UndefOr[Input[String]] = js.native
+    var vpcRegion: js.UndefOr[Input[String]] = js.undefined
   }
   object ZoneVpc {
     

@@ -11,8 +11,8 @@ Javascript least squares data fitting methods
 | Full name          | regression |
 | Keywords           | regression, data, fiting, modeling, analysis |
 | # releases         | 0 |
-| # dependents       | 38 |
-| # downloads        | 3702054 |
+| # dependents       | 42 |
+| # downloads        | 4410984 |
 | # stars            | 8 |
 
 ## Links

@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.javaactionsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -49,9 +48,8 @@ object ExportMappingParameterType {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType.create")
-  @js.native
-  def create(model: IModel): ExportMappingParameterType = js.native
+  @scala.inline
+  def create(model: IModel): ExportMappingParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ExportMappingParameterType]
   
   /**
     * Creates and returns a new ExportMappingParameterType instance in the SDK and on the server.
@@ -62,9 +60,8 @@ object ExportMappingParameterType {
     *  7.2.0 to 7.20.0
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType.createIn")
-  @js.native
-  def createIn(container: JavaActionParameter): ExportMappingParameterType = js.native
+  @scala.inline
+  def createIn(container: JavaActionParameter): ExportMappingParameterType = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ExportMappingParameterType]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/javaactions", "javaactions.ExportMappingParameterType.structureTypeName")

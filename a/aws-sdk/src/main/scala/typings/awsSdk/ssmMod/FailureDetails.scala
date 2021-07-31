@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailureDetails extends StObject {
   
   /**
     * Detailed information about the Automation step failure.
     */
-  var Details: js.UndefOr[AutomationParameterMap] = js.native
+  var Details: js.UndefOr[AutomationParameterMap] = js.undefined
   
   /**
     * The stage of the Automation execution when the failure occurred. The stages include the following: InputValidation, PreVerification, Invocation, PostVerification.
     */
-  var FailureStage: js.UndefOr[String] = js.native
+  var FailureStage: js.UndefOr[String] = js.undefined
   
   /**
     * The type of Automation failure. Failure types include the following: Action, Permission, Throttling, Verification, Internal.
     */
-  var FailureType: js.UndefOr[String] = js.native
+  var FailureType: js.UndefOr[String] = js.undefined
 }
 object FailureDetails {
   

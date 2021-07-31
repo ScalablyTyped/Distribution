@@ -5,21 +5,19 @@ import typings.postmanCollection.mod.HeaderDefinition
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Body extends StObject {
   
-  var body: String | Buffer | Uint8Array = js.native
+  var body: String | Buffer | Uint8Array
   
-  var elapsedTime: Double = js.native
+  var elapsedTime: Double
   
-  var headers: js.UndefOr[js.Array[HeaderDefinition]] = js.native
+  var headers: js.UndefOr[js.Array[HeaderDefinition]] = js.undefined
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
 }
 object Body {
   

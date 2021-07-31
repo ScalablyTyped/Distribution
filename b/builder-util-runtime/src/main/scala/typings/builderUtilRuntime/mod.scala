@@ -21,10 +21,13 @@ import typings.std.Map
 import typings.std.Set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("builder-util-runtime", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("builder-util-runtime", "CURRENT_APP_INSTALLER_FILE_NAME")
   @js.native
@@ -52,12 +55,12 @@ object mod {
     extends typings.builderUtilRuntime.httpExecutorMod.DigestTransform {
     def this(expected: String) = this()
     def this(expected: String, algorithm: String) = this()
-    def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: base64) = this()
-    def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: hex) = this()
-    def this(expected: String, algorithm: js.UndefOr[scala.Nothing], encoding: latin1) = this()
     def this(expected: String, algorithm: String, encoding: base64) = this()
     def this(expected: String, algorithm: String, encoding: hex) = this()
     def this(expected: String, algorithm: String, encoding: latin1) = this()
+    def this(expected: String, algorithm: Unit, encoding: base64) = this()
+    def this(expected: String, algorithm: Unit, encoding: hex) = this()
+    def this(expected: String, algorithm: Unit, encoding: latin1) = this()
   }
   
   @JSImport("builder-util-runtime", "HttpError")
@@ -66,8 +69,8 @@ object mod {
     extends typings.builderUtilRuntime.httpExecutorMod.HttpError {
     def this(statusCode: Double) = this()
     def this(statusCode: Double, message: String) = this()
-    def this(statusCode: Double, message: js.UndefOr[scala.Nothing], description: js.Any) = this()
     def this(statusCode: Double, message: String, description: js.Any) = this()
+    def this(statusCode: Double, message: Unit, description: js.Any) = this()
   }
   
   @JSImport("builder-util-runtime", "HttpExecutor")
@@ -77,9 +80,12 @@ object mod {
   /* static members */
   object HttpExecutor {
     
-    @JSImport("builder-util-runtime", "HttpExecutor.prepareRedirectUrlOptions")
+    @JSImport("builder-util-runtime", "HttpExecutor")
     @js.native
-    def prepareRedirectUrlOptions(redirectUrl: String, options: RequestOptions): RequestOptions = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def prepareRedirectUrlOptions(redirectUrl: String, options: RequestOptions): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("prepareRedirectUrlOptions")(redirectUrl.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   }
   
   @JSImport("builder-util-runtime", "ProgressCallbackTransform")
@@ -89,7 +95,7 @@ object mod {
     def this(
       total: Double,
       cancellationToken: typings.builderUtilRuntime.cancellationTokenMod.CancellationToken,
-      onProgress: js.Function1[/* info */ ProgressInfo, _]
+      onProgress: js.Function1[/* info */ ProgressInfo, js.Any]
     ) = this()
   }
   
@@ -103,33 +109,30 @@ object mod {
   /* static members */
   object UUID {
     
+    @JSImport("builder-util-runtime", "UUID")
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("builder-util-runtime", "UUID.OID")
     @js.native
     val OID: Buffer = js.native
     
-    @JSImport("builder-util-runtime", "UUID.check")
-    @js.native
-    def check(uuid: String): `false` | Format | Variant = js.native
-    @JSImport("builder-util-runtime", "UUID.check")
-    @js.native
-    def check(uuid: String, offset: Double): `false` | Format | Variant = js.native
-    @JSImport("builder-util-runtime", "UUID.check")
-    @js.native
-    def check(uuid: Buffer): `false` | Format | Variant = js.native
-    @JSImport("builder-util-runtime", "UUID.check")
-    @js.native
-    def check(uuid: Buffer, offset: Double): `false` | Format | Variant = js.native
+    @scala.inline
+    def check(uuid: String): `false` | Format | Variant = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(uuid.asInstanceOf[js.Any]).asInstanceOf[`false` | Format | Variant]
+    @scala.inline
+    def check(uuid: String, offset: Double): `false` | Format | Variant = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(uuid.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[`false` | Format | Variant]
+    @scala.inline
+    def check(uuid: Buffer): `false` | Format | Variant = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(uuid.asInstanceOf[js.Any]).asInstanceOf[`false` | Format | Variant]
+    @scala.inline
+    def check(uuid: Buffer, offset: Double): `false` | Format | Variant = (^.asInstanceOf[js.Dynamic].applyDynamic("check")(uuid.asInstanceOf[js.Any], offset.asInstanceOf[js.Any])).asInstanceOf[`false` | Format | Variant]
     
-    @JSImport("builder-util-runtime", "UUID.parse")
-    @js.native
-    def parse(input: String): Buffer = js.native
+    @scala.inline
+    def parse(input: String): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(input.asInstanceOf[js.Any]).asInstanceOf[Buffer]
     
-    @JSImport("builder-util-runtime", "UUID.v5")
-    @js.native
-    def v5(name: String, namespace: Buffer): js.Any = js.native
-    @JSImport("builder-util-runtime", "UUID.v5")
-    @js.native
-    def v5(name: Buffer, namespace: Buffer): js.Any = js.native
+    @scala.inline
+    def v5(name: String, namespace: Buffer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def v5(name: Buffer, namespace: Buffer): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("v5")(name.asInstanceOf[js.Any], namespace.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
   
   @JSImport("builder-util-runtime", "XElement")
@@ -139,101 +142,75 @@ object mod {
     def this(name: String) = this()
   }
   
-  @JSImport("builder-util-runtime", "asArray")
-  @js.native
-  def asArray[T](): js.Array[T] = js.native
-  @JSImport("builder-util-runtime", "asArray")
-  @js.native
-  def asArray[T](v: T): js.Array[T] = js.native
-  @JSImport("builder-util-runtime", "asArray")
-  @js.native
-  def asArray[T](v: js.Array[T]): js.Array[T] = js.native
+  @scala.inline
+  def asArray[T](): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")().asInstanceOf[js.Array[T]]
+  @scala.inline
+  def asArray[T](v: T): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def asArray[T](v: js.Array[T]): js.Array[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("asArray")(v.asInstanceOf[js.Any]).asInstanceOf[js.Array[T]]
   
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions(options: RequestOptions): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions(options: RequestOptions, token: String): RequestOptions = js.native
+  @scala.inline
+  def configureRequestOptions(options: RequestOptions): RequestOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any]).asInstanceOf[RequestOptions]
+  @scala.inline
+  def configureRequestOptions(options: RequestOptions, token: String): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   
-  @JSImport("builder-util-runtime", "configureRequestOptionsFromUrl")
-  @js.native
-  def configureRequestOptionsFromUrl(url: String, options: RequestOptions): RequestOptions = js.native
+  @scala.inline
+  def configureRequestOptionsFromUrl(url: String, options: RequestOptions): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptionsFromUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_DELETE(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: DELETE): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_DELETE(options: RequestOptions, token: String, method: DELETE): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_DELETE(options: RequestOptions, token: Null, method: DELETE): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_GET(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: GET): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_GET(options: RequestOptions, token: String, method: GET): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_GET(options: RequestOptions, token: Null, method: GET): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_PUT(options: RequestOptions, token: js.UndefOr[scala.Nothing], method: PUT): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_PUT(options: RequestOptions, token: String, method: PUT): RequestOptions = js.native
-  @JSImport("builder-util-runtime", "configureRequestOptions")
-  @js.native
-  def configureRequestOptions_PUT(options: RequestOptions, token: Null, method: PUT): RequestOptions = js.native
+  @scala.inline
+  def configureRequestOptions_DELETE(options: RequestOptions, token: String, method: DELETE): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  @scala.inline
+  def configureRequestOptions_DELETE(options: RequestOptions, token: Null, method: DELETE): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  @scala.inline
+  def configureRequestOptions_DELETE(options: RequestOptions, token: Unit, method: DELETE): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   
-  @JSImport("builder-util-runtime", "configureRequestUrl")
-  @js.native
-  def configureRequestUrl(url: URL_, options: RequestOptions): Unit = js.native
+  @scala.inline
+  def configureRequestOptions_GET(options: RequestOptions, token: String, method: GET): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  @scala.inline
+  def configureRequestOptions_GET(options: RequestOptions, token: Null, method: GET): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  @scala.inline
+  def configureRequestOptions_GET(options: RequestOptions, token: Unit, method: GET): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   
-  @JSImport("builder-util-runtime", "createHttpError")
-  @js.native
-  def createHttpError(response: IncomingMessage): typings.builderUtilRuntime.httpExecutorMod.HttpError = js.native
-  @JSImport("builder-util-runtime", "createHttpError")
-  @js.native
-  def createHttpError(response: IncomingMessage, description: js.Any): typings.builderUtilRuntime.httpExecutorMod.HttpError = js.native
+  @scala.inline
+  def configureRequestOptions_PUT(options: RequestOptions, token: String, method: PUT): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  @scala.inline
+  def configureRequestOptions_PUT(options: RequestOptions, token: Null, method: PUT): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
+  @scala.inline
+  def configureRequestOptions_PUT(options: RequestOptions, token: Unit, method: PUT): RequestOptions = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestOptions")(options.asInstanceOf[js.Any], token.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[RequestOptions]
   
-  @JSImport("builder-util-runtime", "getS3LikeProviderBaseUrl")
-  @js.native
-  def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = js.native
+  @scala.inline
+  def configureRequestUrl(url: URL_, options: RequestOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("configureRequestUrl")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("builder-util-runtime", "githubUrl")
-  @js.native
-  def githubUrl(options: GithubOptions): String = js.native
-  @JSImport("builder-util-runtime", "githubUrl")
-  @js.native
-  def githubUrl(options: GithubOptions, defaultHost: String): String = js.native
+  @scala.inline
+  def createHttpError(response: IncomingMessage): typings.builderUtilRuntime.httpExecutorMod.HttpError = ^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.httpExecutorMod.HttpError]
+  @scala.inline
+  def createHttpError(response: IncomingMessage, description: js.Any): typings.builderUtilRuntime.httpExecutorMod.HttpError = (^.asInstanceOf[js.Dynamic].applyDynamic("createHttpError")(response.asInstanceOf[js.Any], description.asInstanceOf[js.Any])).asInstanceOf[typings.builderUtilRuntime.httpExecutorMod.HttpError]
   
-  @JSImport("builder-util-runtime", "newError")
-  @js.native
-  def newError(message: String, code: String): Error = js.native
+  @scala.inline
+  def getS3LikeProviderBaseUrl(configuration: PublishConfiguration): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getS3LikeProviderBaseUrl")(configuration.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("builder-util-runtime", "parseDn")
-  @js.native
-  def parseDn(seq: String): Map[String, String] = js.native
+  @scala.inline
+  def githubUrl(options: GithubOptions): String = ^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def githubUrl(options: GithubOptions, defaultHost: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("githubUrl")(options.asInstanceOf[js.Any], defaultHost.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("builder-util-runtime", "parseJson")
-  @js.native
-  def parseJson(result: js.Promise[String | Null]): js.Promise[_] = js.native
+  @scala.inline
+  def newError(message: String, code: String): Error = (^.asInstanceOf[js.Dynamic].applyDynamic("newError")(message.asInstanceOf[js.Any], code.asInstanceOf[js.Any])).asInstanceOf[Error]
   
-  @JSImport("builder-util-runtime", "parseXml")
-  @js.native
-  def parseXml(data: String): typings.builderUtilRuntime.xmlMod.XElement = js.native
+  @scala.inline
+  def parseDn(seq: String): Map[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseDn")(seq.asInstanceOf[js.Any]).asInstanceOf[Map[String, String]]
   
-  @JSImport("builder-util-runtime", "safeGetHeader")
-  @js.native
-  def safeGetHeader(response: js.Any, headerKey: String): js.Any = js.native
+  @scala.inline
+  def parseJson(result: js.Promise[String | Null]): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseJson")(result.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
-  @JSImport("builder-util-runtime", "safeStringifyJson")
-  @js.native
-  def safeStringifyJson(data: js.Any): String = js.native
-  @JSImport("builder-util-runtime", "safeStringifyJson")
-  @js.native
-  def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = js.native
+  @scala.inline
+  def parseXml(data: String): typings.builderUtilRuntime.xmlMod.XElement = ^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(data.asInstanceOf[js.Any]).asInstanceOf[typings.builderUtilRuntime.xmlMod.XElement]
+  
+  @scala.inline
+  def safeGetHeader(response: js.Any, headerKey: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("safeGetHeader")(response.asInstanceOf[js.Any], headerKey.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
+  @scala.inline
+  def safeStringifyJson(data: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def safeStringifyJson(data: js.Any, skippedNames: Set[String]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("safeStringifyJson")(data.asInstanceOf[js.Any], skippedNames.asInstanceOf[js.Any])).asInstanceOf[String]
 }

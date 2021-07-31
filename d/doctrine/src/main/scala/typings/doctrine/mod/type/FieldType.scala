@@ -3,24 +3,24 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FieldType extends Type_ {
+trait FieldType
+  extends StObject
+     with Type_ {
   
-  var key: String = js.native
+  var key: String
   
-  var `type`: typings.doctrine.doctrineStrings.FieldType = js.native
+  var `type`: typings.doctrine.doctrineStrings.FieldType
   
-  var value: js.UndefOr[Type_] = js.native
+  var value: js.UndefOr[Type_] = js.undefined
 }
 object FieldType {
   
   @scala.inline
-  def apply(key: String, `type`: typings.doctrine.doctrineStrings.FieldType): FieldType = {
+  def apply(key: String): FieldType = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FieldType")
     __obj.asInstanceOf[FieldType]
   }
   

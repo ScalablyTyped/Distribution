@@ -2,13 +2,13 @@ package typings.gsap.gsap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Back extends Ease {
+trait Back
+  extends StObject
+     with Ease {
   
-  def config(overshoot: Double): Elastic = js.native
+  def config(overshoot: Double): Elastic
 }
 object Back {
   

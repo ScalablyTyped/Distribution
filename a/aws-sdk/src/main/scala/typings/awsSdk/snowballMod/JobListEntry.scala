@@ -2,46 +2,44 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobListEntry extends StObject {
   
   /**
     * The creation date for this job.
     */
-  var CreationDate: js.UndefOr[Timestamp] = js.native
+  var CreationDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The optional description of this specific job, for example Important Photos 2016-08-11.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * A value that indicates that this job is a main job. A main job represents a successful request to create an export job. Main jobs aren't associated with any Snowballs. Instead, each main job will have at least one job part, and each job part is associated with a Snowball. It might take some time before the job parts associated with a particular main job are listed, because they are created after the main job is created.
     */
-  var IsMaster: js.UndefOr[Boolean] = js.native
+  var IsMaster: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The automatically generated ID for a job, for example JID123e4567-e89b-12d3-a456-426655440000.
     */
-  var JobId: js.UndefOr[String] = js.native
+  var JobId: js.UndefOr[String] = js.undefined
   
   /**
     * The current state of this job.
     */
-  var JobState: js.UndefOr[typings.awsSdk.snowballMod.JobState] = js.native
+  var JobState: js.UndefOr[typings.awsSdk.snowballMod.JobState] = js.undefined
   
   /**
     * The type of job.
     */
-  var JobType: js.UndefOr[typings.awsSdk.snowballMod.JobType] = js.native
+  var JobType: js.UndefOr[typings.awsSdk.snowballMod.JobType] = js.undefined
   
   /**
     * The type of device used with this job.
     */
-  var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.native
+  var SnowballType: js.UndefOr[typings.awsSdk.snowballMod.SnowballType] = js.undefined
 }
 object JobListEntry {
   

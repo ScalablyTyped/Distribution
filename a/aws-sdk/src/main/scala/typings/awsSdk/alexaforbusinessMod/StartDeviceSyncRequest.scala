@@ -2,26 +2,24 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartDeviceSyncRequest extends StObject {
   
   /**
     * The ARN of the device to sync. Required.
     */
-  var DeviceArn: js.UndefOr[Arn] = js.native
+  var DeviceArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * Request structure to start the device sync. Required.
     */
-  var Features: typings.awsSdk.alexaforbusinessMod.Features = js.native
+  var Features: typings.awsSdk.alexaforbusinessMod.Features
   
   /**
     * The ARN of the room with which the device to sync is associated. Required.
     */
-  var RoomArn: js.UndefOr[Arn] = js.native
+  var RoomArn: js.UndefOr[Arn] = js.undefined
 }
 object StartDeviceSyncRequest {
   

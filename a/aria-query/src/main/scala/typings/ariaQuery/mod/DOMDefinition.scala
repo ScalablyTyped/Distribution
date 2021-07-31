@@ -2,15 +2,13 @@ package typings.ariaQuery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMDefinition extends StObject {
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
-  var reserved: js.UndefOr[Boolean] = js.native
+  var reserved: js.UndefOr[Boolean] = js.undefined
 }
 object DOMDefinition {
   

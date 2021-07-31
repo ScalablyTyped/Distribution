@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** end of `module bson` */
@@ -13,11 +12,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object bsonMod {
   
-  @JSImport("bson", "decode")
+  @JSImport("bson", JSImport.Namespace)
   @js.native
-  def decode(data: ClassBuffer): js.Object = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bson", "encode")
-  @js.native
-  def encode(data: js.Object): ClassBuffer = js.native
+  @scala.inline
+  def decode(data: ClassBuffer): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(data.asInstanceOf[js.Any]).asInstanceOf[js.Object]
+  
+  @scala.inline
+  def encode(data: js.Object): ClassBuffer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(data.asInstanceOf[js.Any]).asInstanceOf[ClassBuffer]
 }

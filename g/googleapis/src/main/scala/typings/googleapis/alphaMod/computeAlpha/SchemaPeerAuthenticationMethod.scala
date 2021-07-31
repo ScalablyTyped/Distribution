@@ -2,19 +2,17 @@ package typings.googleapis.alphaMod.computeAlpha
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration for the peer authentication method.
   */
-@js.native
 trait SchemaPeerAuthenticationMethod extends StObject {
   
   /**
     * Set if mTLS is used for peer authentication.
     */
-  var mtls: js.UndefOr[SchemaMutualTls] = js.native
+  var mtls: js.UndefOr[SchemaMutualTls] = js.undefined
 }
 object SchemaPeerAuthenticationMethod {
   

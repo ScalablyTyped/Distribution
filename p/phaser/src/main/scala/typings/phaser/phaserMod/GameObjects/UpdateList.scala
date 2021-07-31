@@ -3,7 +3,6 @@ package typings.phaser.phaserMod.GameObjects
 import typings.phaser.Phaser.Scene
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("phaser", "GameObjects.UpdateList")
 @js.native
 class UpdateList protected ()
-  extends typings.phaser.Phaser.GameObjects.UpdateList {
+  extends StObject
+     with typings.phaser.Phaser.GameObjects.UpdateList {
   /**
     * 
     * @param scene The Scene that the Update List belongs to.

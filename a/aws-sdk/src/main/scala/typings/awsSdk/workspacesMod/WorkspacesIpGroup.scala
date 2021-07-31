@@ -2,31 +2,29 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspacesIpGroup extends StObject {
   
   /**
     * The description of the group.
     */
-  var groupDesc: js.UndefOr[IpGroupDesc] = js.native
+  var groupDesc: js.UndefOr[IpGroupDesc] = js.undefined
   
   /**
     * The identifier of the group.
     */
-  var groupId: js.UndefOr[IpGroupId] = js.native
+  var groupId: js.UndefOr[IpGroupId] = js.undefined
   
   /**
     * The name of the group.
     */
-  var groupName: js.UndefOr[IpGroupName] = js.native
+  var groupName: js.UndefOr[IpGroupName] = js.undefined
   
   /**
     * The rules.
     */
-  var userRules: js.UndefOr[IpRuleList] = js.native
+  var userRules: js.UndefOr[IpRuleList] = js.undefined
 }
 object WorkspacesIpGroup {
   

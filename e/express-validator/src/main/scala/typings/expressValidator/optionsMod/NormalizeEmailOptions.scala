@@ -2,33 +2,31 @@ package typings.expressValidator.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NormalizeEmailOptions extends StObject {
   
-  var all_lowercase: js.UndefOr[Boolean] = js.native
+  var all_lowercase: js.UndefOr[Boolean] = js.undefined
   
-  var gmail_convert_googlemaildotcom: js.UndefOr[Boolean] = js.native
+  var gmail_convert_googlemaildotcom: js.UndefOr[Boolean] = js.undefined
   
-  var gmail_lowercase: js.UndefOr[Boolean] = js.native
+  var gmail_lowercase: js.UndefOr[Boolean] = js.undefined
   
-  var gmail_remove_dots: js.UndefOr[Boolean] = js.native
+  var gmail_remove_dots: js.UndefOr[Boolean] = js.undefined
   
-  var gmail_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var gmail_remove_subaddress: js.UndefOr[Boolean] = js.undefined
   
-  var icloud_lowercase: js.UndefOr[Boolean] = js.native
+  var icloud_lowercase: js.UndefOr[Boolean] = js.undefined
   
-  var icloud_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var icloud_remove_subaddress: js.UndefOr[Boolean] = js.undefined
   
-  var outlookdotcom_lowercase: js.UndefOr[Boolean] = js.native
+  var outlookdotcom_lowercase: js.UndefOr[Boolean] = js.undefined
   
-  var outlookdotcom_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var outlookdotcom_remove_subaddress: js.UndefOr[Boolean] = js.undefined
   
-  var yahoo_lowercase: js.UndefOr[Boolean] = js.native
+  var yahoo_lowercase: js.UndefOr[Boolean] = js.undefined
   
-  var yahoo_remove_subaddress: js.UndefOr[Boolean] = js.native
+  var yahoo_remove_subaddress: js.UndefOr[Boolean] = js.undefined
 }
 object NormalizeEmailOptions {
   

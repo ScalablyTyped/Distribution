@@ -6,14 +6,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routeMod {
   
   @JSImport("@ionic/core/dist/types/components/route/route", "Route")
   @js.native
-  class Route () extends ComponentInterface {
+  class Route ()
+    extends StObject
+       with ComponentInterface {
     
     /**
       * A navigation hook that is fired when the route tries to enter.
@@ -52,7 +53,7 @@ object routeMod {
     /**
       * Used internally by `ion-router` to know when this route did change.
       */
-    var ionRouteDataChanged: EventEmitter[_] = js.native
+    var ionRouteDataChanged: EventEmitter[js.Any] = js.native
     
     def onComponentProps(newValue: js.Any, oldValue: js.Any): Unit = js.native
     

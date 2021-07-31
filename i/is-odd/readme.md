@@ -10,9 +10,9 @@ Returns true if the given number is odd, and is an integer that does not exceed 
 | ------------------ | :-------------: |
 | Full name          | is-odd |
 | Keywords           | array, count, even, filter, integer, is, math, numeric, odd, string |
-| # releases         | 0 |
-| # dependents       | 32 |
-| # downloads        | 29974731 |
+| # releases         | 1 |
+| # dependents       | 33 |
+| # downloads        | 26300618 |
 | # stars            | 2 |
 
 ## Links

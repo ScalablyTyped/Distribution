@@ -3,7 +3,6 @@ package typings.ebml
 import typings.ebml.mod.TagType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ebmlStrings {
@@ -19,7 +18,9 @@ object ebmlStrings {
   def `2 - lzo1x`: `2 - lzo1x` = ("2 - lzo1x").asInstanceOf[`2 - lzo1x`]
   
   @js.native
-  sealed trait `8` extends TagType
+  sealed trait `8`
+    extends StObject
+       with TagType
   @scala.inline
   def `8`: `8` = "8".asInstanceOf[`8`]
   
@@ -29,7 +30,9 @@ object ebmlStrings {
   def Informational: Informational = "Informational".asInstanceOf[Informational]
   
   @js.native
-  sealed trait b extends TagType
+  sealed trait b
+    extends StObject
+       with TagType
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   
@@ -39,7 +42,9 @@ object ebmlStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait d extends TagType
+  sealed trait d
+    extends StObject
+       with TagType
   @scala.inline
   def d: d = "d".asInstanceOf[d]
   
@@ -59,12 +64,16 @@ object ebmlStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait f extends TagType
+  sealed trait f
+    extends StObject
+       with TagType
   @scala.inline
   def f: f = "f".asInstanceOf[f]
   
   @js.native
-  sealed trait i extends TagType
+  sealed trait i
+    extends StObject
+       with TagType
   @scala.inline
   def i: i = "i".asInstanceOf[i]
   
@@ -74,7 +83,9 @@ object ebmlStrings {
   def informational_ : informational_ = "informational".asInstanceOf[informational_]
   
   @js.native
-  sealed trait m extends TagType
+  sealed trait m
+    extends StObject
+       with TagType
   @scala.inline
   def m: m = "m".asInstanceOf[m]
   
@@ -84,7 +95,9 @@ object ebmlStrings {
   def readable: readable = "readable".asInstanceOf[readable]
   
   @js.native
-  sealed trait s extends TagType
+  sealed trait s
+    extends StObject
+       with TagType
   @scala.inline
   def s: s = "s".asInstanceOf[s]
   
@@ -99,7 +112,9 @@ object ebmlStrings {
   def tag: tag = "tag".asInstanceOf[tag]
   
   @js.native
-  sealed trait u extends TagType
+  sealed trait u
+    extends StObject
+       with TagType
   @scala.inline
   def u: u = "u".asInstanceOf[u]
 }

@@ -15,39 +15,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MeshCreateCylinderParams extends Object {
+trait MeshCreateCylinderParams
+  extends StObject
+     with Object {
   
   /**
     * The additional number of subdivisions for generating the mesh representing a cylinder.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
     */
-  var densificationFactor: js.UndefOr[Double] = js.native
+  var densificationFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Whether to georeference relative to the globe or the projected coordinate system (PCS).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
     */
-  var geographic: js.UndefOr[Boolean] = js.native
+  var geographic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The material to be used for the mesh.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
     */
-  var material: js.UndefOr[MeshMaterial] = js.native
+  var material: js.UndefOr[MeshMaterial] = js.undefined
   
   /**
     * A uniform size value or an object containing individual values width, height and depth.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Mesh.html#createCylinder)
     */
-  var size: js.UndefOr[Double | MeshCreateCylinderParamsSize] = js.native
+  var size: js.UndefOr[Double | MeshCreateCylinderParamsSize] = js.undefined
   
   /**
     * The unit of the size (defaults to the unit of the location's spatial reference).
@@ -56,7 +56,7 @@ trait MeshCreateCylinderParams extends Object {
     */
   var unit: js.UndefOr[
     millimeters | centimeters | decimeters | meters_ | kilometers_ | inches | feet_ | yards | miles_ | `nautical-miles` | `us-feet`
-  ] = js.native
+  ] = js.undefined
 }
 object MeshCreateCylinderParams {
   

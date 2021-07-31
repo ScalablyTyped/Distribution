@@ -2,19 +2,18 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotBindingData
-  extends BaseBindingData
+  extends StObject
+     with BaseBindingData
      with BindingData {
   
-  var bindings: BindingData = js.native
+  var bindings: BindingData
   
-  var html: String = js.native
+  var html: String
   
-  var id: String = js.native
+  var id: String
 }
 object SlotBindingData {
   

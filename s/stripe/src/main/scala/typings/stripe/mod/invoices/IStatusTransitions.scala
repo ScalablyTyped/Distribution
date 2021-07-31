@@ -2,37 +2,35 @@ package typings.stripe.mod.invoices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStatusTransitions extends StObject {
   
   /**
     * The time that the invoice draft was finalized.
     */
-  var finalized_at: Double | Null = js.native
+  var finalized_at: Double | Null
   
   /**
     * The time that the invoice was marked uncollectible.
     */
-  var marked_uncollectible_at: Double | Null = js.native
+  var marked_uncollectible_at: Double | Null
   
   /**
     * The time that the invoice was paid.
     */
-  var paid_at: Double | Null = js.native
+  var paid_at: Double | Null
   
   /**
     * The time that the invoice was voided.
     */
-  var voided_at: Double | Null = js.native
+  var voided_at: Double | Null
 }
 object IStatusTransitions {
   
   @scala.inline
   def apply(): IStatusTransitions = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(finalized_at = null, marked_uncollectible_at = null, paid_at = null, voided_at = null)
     __obj.asInstanceOf[IStatusTransitions]
   }
   

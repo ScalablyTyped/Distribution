@@ -2,18 +2,16 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationCloudwatchLoggingOptions extends StObject {
   
-  var cloudwatchLoggingOptionId: String = js.native
+  var cloudwatchLoggingOptionId: String
   
   /**
     * The ARN of the CloudWatch log stream to receive application messages.
     */
-  var logStreamArn: String = js.native
+  var logStreamArn: String
 }
 object ApplicationCloudwatchLoggingOptions {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderreturnsPartialRefund extends StObject {
   
   /** The pre-tax or post-tax amount to be refunded, depending on the location of the order. */
-  var priceAmount: js.UndefOr[Price] = js.native
+  var priceAmount: js.UndefOr[Price] = js.undefined
   
   /** Tax amount to be refunded. Note: This has different meaning depending on the location of the order. */
-  var taxAmount: js.UndefOr[Price] = js.native
+  var taxAmount: js.UndefOr[Price] = js.undefined
 }
 object OrderreturnsPartialRefund {
   

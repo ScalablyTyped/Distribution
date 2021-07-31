@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientBigtableadmin.gapi.client.bigtableadmin
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Table extends StObject {
   
   /**
@@ -16,27 +14,27 @@ trait Table extends StObject {
   var clusterStates: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The column families configured for this table, mapped by column family ID. Views: `SCHEMA_VIEW`, `FULL` */
   var columnFamilies: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily}
-    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Immutable. The granularity (i.e. `MILLIS`) at which timestamps are stored in this table. Timestamps not matching the granularity will be rejected. If unspecified at creation time,
     * the value will be set to `MILLIS`. Views: `SCHEMA_VIEW`, `FULL`.
     */
-  var granularity: js.UndefOr[String] = js.native
+  var granularity: js.UndefOr[String] = js.undefined
   
   /** The unique name of the table. Values are of the form `projects/{project}/instances/{instance}/tables/_a-zA-Z0-9*`. Views: `NAME_ONLY`, `SCHEMA_VIEW`, `REPLICATION_VIEW`, `FULL` */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. If this table was restored from another data source (e.g. a backup), this field will be populated with information about the restore. */
-  var restoreInfo: js.UndefOr[RestoreInfo] = js.native
+  var restoreInfo: js.UndefOr[RestoreInfo] = js.undefined
 }
 object Table {
   
@@ -53,7 +51,7 @@ object Table {
     def setClusterStates(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ClusterState}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[js.Any]
     ): Self = StObject.set(x, "clusterStates", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -63,7 +61,7 @@ object Table {
     def setColumnFamilies(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: @maxim_mazurok/gapi.client.bigtableadmin.gapi.client.bigtableadmin.ColumnFamily}
-      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigtableadmin.maximMazurokGapiClientBigtableadminStrings.Table & TopLevel[js.Any]
     ): Self = StObject.set(x, "columnFamilies", value.asInstanceOf[js.Any])
     
     @scala.inline

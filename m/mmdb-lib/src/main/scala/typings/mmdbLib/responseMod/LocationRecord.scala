@@ -2,25 +2,23 @@ package typings.mmdbLib.responseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationRecord extends StObject {
   
-  val accuracy_radius: Double = js.native
+  val accuracy_radius: Double
   
-  val average_income: js.UndefOr[Double] = js.native
+  val average_income: js.UndefOr[Double] = js.undefined
   
-  val latitude: Double = js.native
+  val latitude: Double
   
-  val longitude: Double = js.native
+  val longitude: Double
   
-  val metro_code: js.UndefOr[Double] = js.native
+  val metro_code: js.UndefOr[Double] = js.undefined
   
-  val population_density: js.UndefOr[Double] = js.native
+  val population_density: js.UndefOr[Double] = js.undefined
   
-  val time_zone: js.UndefOr[String] = js.native
+  val time_zone: js.UndefOr[String] = js.undefined
 }
 object LocationRecord {
   

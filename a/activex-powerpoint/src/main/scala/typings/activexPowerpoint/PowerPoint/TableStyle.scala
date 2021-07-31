@@ -2,18 +2,16 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableStyle extends StObject {
   
-  val Id: String = js.native
+  val Id: String
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("PowerPoint.TableStyle_typekey")
-  var PowerPointDotTableStyle_typekey: TableStyle = js.native
+  var PowerPointDotTableStyle_typekey: TableStyle
 }
 object TableStyle {
   

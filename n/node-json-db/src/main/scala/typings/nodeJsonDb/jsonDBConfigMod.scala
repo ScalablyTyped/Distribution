@@ -2,39 +2,46 @@ package typings.nodeJsonDb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jsonDBConfigMod {
   
   @JSImport("node-json-db/dist/lib/JsonDBConfig", "Config")
   @js.native
-  class Config protected () extends JsonDBConfig {
+  class Config protected ()
+    extends StObject
+       with JsonDBConfig {
     def this(filename: String) = this()
     def this(filename: String, saveOnPush: Boolean) = this()
-    def this(filename: String, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean) = this()
     def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean) = this()
-    def this(
-      filename: String,
-      saveOnPush: js.UndefOr[scala.Nothing],
-      humanReadable: js.UndefOr[scala.Nothing],
-      separator: String
-    ) = this()
-    def this(filename: String, saveOnPush: js.UndefOr[scala.Nothing], humanReadable: Boolean, separator: String) = this()
-    def this(filename: String, saveOnPush: Boolean, humanReadable: js.UndefOr[scala.Nothing], separator: String) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Boolean) = this()
     def this(filename: String, saveOnPush: Boolean, humanReadable: Boolean, separator: String) = this()
-  }
-  
-  @js.native
-  trait JsonDBConfig extends StObject {
+    def this(filename: String, saveOnPush: Boolean, humanReadable: Unit, separator: String) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Boolean, separator: String) = this()
+    def this(filename: String, saveOnPush: Unit, humanReadable: Unit, separator: String) = this()
     
+    /* CompleteClass */
     var filename: String = js.native
     
+    /* CompleteClass */
     var humanReadable: Boolean = js.native
     
+    /* CompleteClass */
     var saveOnPush: Boolean = js.native
     
+    /* CompleteClass */
     var separator: String = js.native
+  }
+  
+  trait JsonDBConfig extends StObject {
+    
+    var filename: String
+    
+    var humanReadable: Boolean
+    
+    var saveOnPush: Boolean
+    
+    var separator: String
   }
   object JsonDBConfig {
     

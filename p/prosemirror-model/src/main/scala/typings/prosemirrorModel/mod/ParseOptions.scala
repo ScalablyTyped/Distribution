@@ -3,18 +3,16 @@ package typings.prosemirrorModel.mod
 import typings.prosemirrorModel.prosemirrorModelStrings.full
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParseOptions[S /* <: Schema[_, _] */] extends StObject {
+trait ParseOptions[S /* <: Schema[js.Any, js.Any] */] extends StObject {
   
   /**
     * A set of additional nodes to count as
     * [context](#model.ParseRule.context) when parsing, above the
     * given [top node](#model.ParseOptions.topNode).
     */
-  var context: js.UndefOr[ResolvedPos[S] | Null] = js.native
+  var context: js.UndefOr[ResolvedPos[S] | Null] = js.undefined
   
   /**
     * When given, the parser will, beside parsing the content,
@@ -23,30 +21,30 @@ trait ParseOptions[S /* <: Schema[_, _] */] extends StObject {
     * that holds the document position. DOM positions that are not
     * in the parsed content will not be written to.
     */
-  var findPositions: js.UndefOr[js.Array[typings.prosemirrorModel.anon.Node] | Null] = js.native
+  var findPositions: js.UndefOr[js.Array[typings.prosemirrorModel.anon.Node] | Null] = js.undefined
   
   /**
     * The child node index to start parsing from.
     */
-  var from: js.UndefOr[Double | Null] = js.native
+  var from: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * By default, whitespace is collapsed as per HTML's rules. Pass
     * `true` to preserve whitespace, but normalize newlines to
     * spaces, and `"full"` to preserve whitespace entirely.
     */
-  var preserveWhitespace: js.UndefOr[Boolean | full | Null] = js.native
+  var preserveWhitespace: js.UndefOr[Boolean | full | Null] = js.undefined
   
   /**
     * The child node index to stop parsing at.
     */
-  var to: js.UndefOr[Double | Null] = js.native
+  var to: js.UndefOr[Double | Null] = js.undefined
   
   /**
     * Provide the starting content match that content parsed into the
     * top node is matched against.
     */
-  var topMatch: js.UndefOr[ContentMatch[_] | Null] = js.native
+  var topMatch: js.UndefOr[ContentMatch[js.Any] | Null] = js.undefined
   
   /**
     * By default, the content is parsed into the schema's default
@@ -54,18 +52,18 @@ trait ParseOptions[S /* <: Schema[_, _] */] extends StObject {
     * option to use the type and attributes from a different node
     * as the top container.
     */
-  var topNode: js.UndefOr[ProsemirrorNode[S] | Null] = js.native
+  var topNode: js.UndefOr[ProsemirrorNode[S] | Null] = js.undefined
 }
 object ParseOptions {
   
   @scala.inline
-  def apply[S /* <: Schema[_, _] */](): ParseOptions[S] = {
+  def apply[S /* <: Schema[js.Any, js.Any] */](): ParseOptions[S] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[ParseOptions[S]]
   }
   
   @scala.inline
-  implicit class ParseOptionsMutableBuilder[Self <: ParseOptions[_], S /* <: Schema[_, _] */] (val x: Self with ParseOptions[S]) extends AnyVal {
+  implicit class ParseOptionsMutableBuilder[Self <: ParseOptions[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & ParseOptions[S]) extends AnyVal {
     
     @scala.inline
     def setContext(value: ResolvedPos[S]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])
@@ -116,7 +114,7 @@ object ParseOptions {
     def setToUndefined: Self = StObject.set(x, "to", js.undefined)
     
     @scala.inline
-    def setTopMatch(value: ContentMatch[_]): Self = StObject.set(x, "topMatch", value.asInstanceOf[js.Any])
+    def setTopMatch(value: ContentMatch[js.Any]): Self = StObject.set(x, "topMatch", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTopMatchNull: Self = StObject.set(x, "topMatch", null)

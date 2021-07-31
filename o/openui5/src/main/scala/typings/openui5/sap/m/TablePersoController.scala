@@ -3,11 +3,12 @@ package typings.openui5.sap.m
 import typings.openui5.sap.ui.base.ManagedObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TablePersoController extends ManagedObject {
+trait TablePersoController
+  extends StObject
+     with ManagedObject {
   
   /**
     * Activates the controller, i.e. tries to retrieve existing persistedpersonalizations, creates a
@@ -144,7 +145,7 @@ trait TablePersoController extends ManagedObject {
     * Returns array of IDs of the elements which are the current targets of the association
     * <code>tables</code>.
     */
-  def getTables(): js.Array[_] = js.native
+  def getTables(): js.Array[js.Any] = js.native
   
   /**
     * Initializes the TablePersoController instance after creation.
@@ -169,7 +170,7 @@ trait TablePersoController extends ManagedObject {
     * Removes all the controls in the association named <code>tables</code>.
     * @returns An array of the removed elements (might be empty)
     */
-  def removeAllTables(): js.Array[_] = js.native
+  def removeAllTables(): js.Array[js.Any] = js.native
   
   def removeTable(vTable: js.Any): js.Any = js.native
   /**

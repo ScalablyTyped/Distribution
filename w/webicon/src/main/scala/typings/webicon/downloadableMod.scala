@@ -4,25 +4,25 @@ import typings.webicon.iconMod.Icon
 import typings.webicon.urlConfigMod.UrlConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object downloadableMod {
   
-  @js.native
-  trait Downloadable[TUriParam] extends Icon {
+  trait Downloadable[TUriParam]
+    extends StObject
+       with Icon {
     
     /**
       * An alias of the `url`-property.
       */
     var uri: js.UndefOr[
         /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The url to load the source from.
       */
-    var url: js.UndefOr[UrlConfig[TUriParam]] = js.native
+    var url: js.UndefOr[UrlConfig[TUriParam]] = js.undefined
   }
   object Downloadable {
     
@@ -33,7 +33,7 @@ object downloadableMod {
     }
     
     @scala.inline
-    implicit class DownloadableMutableBuilder[Self <: Downloadable[_], TUriParam] (val x: Self with Downloadable[TUriParam]) extends AnyVal {
+    implicit class DownloadableMutableBuilder[Self <: Downloadable[?], TUriParam] (val x: Self & Downloadable[TUriParam]) extends AnyVal {
       
       @scala.inline
       def setUri(value: /* import warning: importer.ImportType#apply Failed type conversion: this['url'] */ js.Any): Self = StObject.set(x, "uri", value.asInstanceOf[js.Any])

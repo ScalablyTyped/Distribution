@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.reactNative.mod.TextStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,24 +15,23 @@ object mod {
   
   type PercentageCircle = Component[PercentageCircleProps, js.Object, js.Any]
   
-  @js.native
   trait PercentageCircleProps extends StObject {
     
-    var bgcolor: js.UndefOr[String] = js.native
+    var bgcolor: js.UndefOr[String] = js.undefined
     
-    var borderWidth: js.UndefOr[Double] = js.native
+    var borderWidth: js.UndefOr[Double] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var innerColor: js.UndefOr[String] = js.native
+    var innerColor: js.UndefOr[String] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
-    var textStyle: js.UndefOr[js.Array[TextStyle]] = js.native
+    var textStyle: js.UndefOr[js.Array[TextStyle]] = js.undefined
   }
   object PercentageCircleProps {
     

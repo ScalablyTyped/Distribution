@@ -2,36 +2,34 @@ package typings.awsSdk.cloudfrontMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateRealtimeLogConfigRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) for this real-time log configuration.
     */
-  var ARN: js.UndefOr[String] = js.native
+  var ARN: js.UndefOr[String] = js.undefined
   
   /**
     * Contains information about the Amazon Kinesis data stream where you are sending real-time log data.
     */
-  var EndPoints: js.UndefOr[EndPointList] = js.native
+  var EndPoints: js.UndefOr[EndPointList] = js.undefined
   
   /**
     * A list of fields to include in each real-time log record. For more information about fields, see Real-time log configuration fields in the Amazon CloudFront Developer Guide.
     */
-  var Fields: js.UndefOr[FieldList] = js.native
+  var Fields: js.UndefOr[FieldList] = js.undefined
   
   /**
     * The name for this real-time log configuration.
     */
-  var Name: js.UndefOr[String] = js.native
+  var Name: js.UndefOr[String] = js.undefined
   
   /**
     * The sampling rate for this real-time log configuration. The sampling rate determines the percentage of viewer requests that are represented in the real-time log data. You must provide an integer between 1 and 100, inclusive.
     */
-  var SamplingRate: js.UndefOr[long] = js.native
+  var SamplingRate: js.UndefOr[long] = js.undefined
 }
 object UpdateRealtimeLogConfigRequest {
   

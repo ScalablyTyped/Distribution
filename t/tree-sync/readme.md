@@ -10,9 +10,9 @@ A module for repeated efficient synchronizing two directories.
 | ------------------ | :-------------: |
 | Full name          | tree-sync |
 | Keywords           | - |
-| # releases         | 5 |
-| # dependents       | 10 |
-| # downloads        | 9760448 |
+| # releases         | 2 |
+| # dependents       | 11 |
+| # downloads        | 11058029 |
 | # stars            | 0 |
 
 ## Links

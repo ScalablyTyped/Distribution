@@ -2,24 +2,22 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A themeable solid color value.
   */
-@js.native
 trait SchemaOpaqueColor extends StObject {
   
   /**
     * An opaque RGB color.
     */
-  var rgbColor: js.UndefOr[SchemaRgbColor] = js.native
+  var rgbColor: js.UndefOr[SchemaRgbColor] = js.undefined
   
   /**
     * An opaque theme color.
     */
-  var themeColor: js.UndefOr[String] = js.native
+  var themeColor: js.UndefOr[String] = js.undefined
 }
 object SchemaOpaqueColor {
   

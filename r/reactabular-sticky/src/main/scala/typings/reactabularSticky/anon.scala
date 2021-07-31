@@ -4,64 +4,62 @@ import typings.std.EventTarget
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<std.UIEvent> */
-  @js.native
   trait PartialUIEvent extends StObject {
     
-    var AT_TARGET: js.UndefOr[Double] = js.native
+    var AT_TARGET: js.UndefOr[Double] = js.undefined
     
-    var BUBBLING_PHASE: js.UndefOr[Double] = js.native
+    var BUBBLING_PHASE: js.UndefOr[Double] = js.undefined
     
-    var CAPTURING_PHASE: js.UndefOr[Double] = js.native
+    var CAPTURING_PHASE: js.UndefOr[Double] = js.undefined
     
-    var NONE: js.UndefOr[Double] = js.native
+    var NONE: js.UndefOr[Double] = js.undefined
     
-    var bubbles: js.UndefOr[Boolean] = js.native
+    var bubbles: js.UndefOr[Boolean] = js.undefined
     
-    var cancelBubble: js.UndefOr[Boolean] = js.native
+    var cancelBubble: js.UndefOr[Boolean] = js.undefined
     
-    var cancelable: js.UndefOr[Boolean] = js.native
+    var cancelable: js.UndefOr[Boolean] = js.undefined
     
-    var composed: js.UndefOr[Boolean] = js.native
+    var composed: js.UndefOr[Boolean] = js.undefined
     
-    var composedPath: js.UndefOr[js.Function0[js.Array[EventTarget]]] = js.native
+    var composedPath: js.UndefOr[js.Function0[js.Array[EventTarget]]] = js.undefined
     
-    var currentTarget: js.UndefOr[EventTarget | Null] = js.native
+    var currentTarget: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var defaultPrevented: js.UndefOr[Boolean] = js.native
+    var defaultPrevented: js.UndefOr[Boolean] = js.undefined
     
-    var detail: js.UndefOr[Double] = js.native
+    var detail: js.UndefOr[Double] = js.undefined
     
-    var eventPhase: js.UndefOr[Double] = js.native
+    var eventPhase: js.UndefOr[Double] = js.undefined
     
-    var initEvent: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.native
+    var initEvent: js.UndefOr[js.Function1[/* type */ String, Unit]] = js.undefined
     
-    var isTrusted: js.UndefOr[Boolean] = js.native
+    var isTrusted: js.UndefOr[Boolean] = js.undefined
     
-    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.native
+    var preventDefault: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var returnValue: js.UndefOr[Boolean] = js.native
+    var returnValue: js.UndefOr[Boolean] = js.undefined
     
-    var srcElement: js.UndefOr[EventTarget | Null] = js.native
+    var srcElement: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopImmediatePropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopPropagation: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var target: js.UndefOr[EventTarget | Null] = js.native
+    var target: js.UndefOr[EventTarget | Null] = js.undefined
     
-    var timeStamp: js.UndefOr[Double] = js.native
+    var timeStamp: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var view: js.UndefOr[Window | Null] = js.native
+    var view: js.UndefOr[Window | Null] = js.undefined
     
-    var which: js.UndefOr[Double] = js.native
+    var which: js.UndefOr[Double] = js.undefined
   }
   object PartialUIEvent {
     

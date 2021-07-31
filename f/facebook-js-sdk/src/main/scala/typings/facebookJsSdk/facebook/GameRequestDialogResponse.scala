@@ -2,15 +2,15 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GameRequestDialogResponse extends DialogResponse {
+trait GameRequestDialogResponse
+  extends StObject
+     with DialogResponse {
   
-  var request: String = js.native
+  var request: String
   
-  var to: js.Array[String] = js.native
+  var to: js.Array[String]
 }
 object GameRequestDialogResponse {
   

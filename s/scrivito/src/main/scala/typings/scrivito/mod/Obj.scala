@@ -4,7 +4,6 @@ import typings.std.Date
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("scrivito", "Obj")
@@ -84,39 +83,34 @@ class Obj protected () extends StObject {
 /* static members */
 object Obj {
   
+  @JSImport("scrivito", "Obj")
+  @js.native
+  val ^ : js.Any = js.native
+  
   // Static methods
-  @JSImport("scrivito", "Obj.all")
-  @js.native
-  def all(): js.Any = js.native
+  @scala.inline
+  def all(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("all")().asInstanceOf[js.Any]
   
-  @JSImport("scrivito", "Obj.create")
-  @js.native
-  def create(attributes: CreateAttributes): Unit = js.native
+  @scala.inline
+  def create(attributes: CreateAttributes): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(attributes.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("scrivito", "Obj.createFromFile")
-  @js.native
-  def createFromFile(file: File, attributes: CreateAttributes): Unit = js.native
+  @scala.inline
+  def createFromFile(file: File, attributes: CreateAttributes): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromFile")(file.asInstanceOf[js.Any], attributes.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("scrivito", "Obj.get")
-  @js.native
-  def get(id: String): Obj | Null = js.native
+  @scala.inline
+  def get(id: String): Obj | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(id.asInstanceOf[js.Any]).asInstanceOf[Obj | Null]
   
-  @JSImport("scrivito", "Obj.getByPath")
-  @js.native
-  def getByPath(path: String): Obj | Null = js.native
+  @scala.inline
+  def getByPath(path: String): Obj | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getByPath")(path.asInstanceOf[js.Any]).asInstanceOf[Obj | Null]
   
-  @JSImport("scrivito", "Obj.getByPermalink")
-  @js.native
-  def getByPermalink(permalink: String): Obj | Null = js.native
+  @scala.inline
+  def getByPermalink(permalink: String): Obj | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getByPermalink")(permalink.asInstanceOf[js.Any]).asInstanceOf[Obj | Null]
   
-  @JSImport("scrivito", "Obj.root")
-  @js.native
-  def root(): Obj = js.native
+  @scala.inline
+  def root(): Obj = ^.asInstanceOf[js.Dynamic].applyDynamic("root")().asInstanceOf[Obj]
   
-  @JSImport("scrivito", "Obj.where")
-  @js.native
-  def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String): ObjSearch = js.native
-  @JSImport("scrivito", "Obj.where")
-  @js.native
-  def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String, boost: js.Any): ObjSearch = js.native
+  @scala.inline
+  def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String): ObjSearch = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(attribute.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[ObjSearch]
+  @scala.inline
+  def where(attribute: ObjSearchSingleAttribute, operator: ObjSearchOperator, value: String, boost: js.Any): ObjSearch = (^.asInstanceOf[js.Dynamic].applyDynamic("where")(attribute.asInstanceOf[js.Any], operator.asInstanceOf[js.Any], value.asInstanceOf[js.Any], boost.asInstanceOf[js.Any])).asInstanceOf[ObjSearch]
 }

@@ -8,7 +8,6 @@ import typings.protobufjs.mod.IConversionOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an EnumDescriptorProto. */
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new EnumDescriptorProto.
   * @param [properties] Properties to set
   */
-class EnumDescriptorProto () extends IEnumDescriptorProto {
+class EnumDescriptorProto ()
+  extends StObject
+     with IEnumDescriptorProto {
   def this(properties: IEnumDescriptorProto) = this()
   
   /** EnumDescriptorProto name. */
@@ -45,6 +46,10 @@ class EnumDescriptorProto () extends IEnumDescriptorProto {
 }
 object EnumDescriptorProto {
   
+  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /** Represents an EnumReservedRange. */
   @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange")
   @js.native
@@ -52,7 +57,9 @@ object EnumDescriptorProto {
     * Constructs a new EnumReservedRange.
     * @param [properties] Properties to set
     */
-  class EnumReservedRange () extends IEnumReservedRange {
+  class EnumReservedRange ()
+    extends StObject
+       with IEnumReservedRange {
     def this(properties: IEnumReservedRange) = this()
     
     /** EnumReservedRange end. */
@@ -71,18 +78,20 @@ object EnumDescriptorProto {
   }
   object EnumReservedRange {
     
+    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a new EnumReservedRange instance using the specified properties.
       * @param [properties] Properties to set
       * @returns EnumReservedRange instance
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.create")
-    @js.native
-    def create(): EnumReservedRange = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.create")
-    @js.native
-    def create(properties: IEnumReservedRange): EnumReservedRange = js.native
+    @scala.inline
+    def create(): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EnumReservedRange]
+    @scala.inline
+    def create(properties: IEnumReservedRange): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
     
     /**
       * Decodes an EnumReservedRange message from the specified reader or buffer.
@@ -93,18 +102,14 @@ object EnumDescriptorProto {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.decode")
-    @js.native
-    def decode(reader: Reader): EnumReservedRange = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.decode")
-    @js.native
-    def decode(reader: Reader, length: Double): EnumReservedRange = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.decode")
-    @js.native
-    def decode(reader: Uint8Array): EnumReservedRange = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.decode")
-    @js.native
-    def decode(reader: Uint8Array, length: Double): EnumReservedRange = js.native
+    @scala.inline
+    def decode(reader: Reader): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
+    @scala.inline
+    def decode(reader: Reader, length: Double): EnumReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EnumReservedRange]
+    @scala.inline
+    def decode(reader: Uint8Array): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
+    @scala.inline
+    def decode(reader: Uint8Array, length: Double): EnumReservedRange = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EnumReservedRange]
     
     /**
       * Decodes an EnumReservedRange message from the specified reader or buffer, length delimited.
@@ -114,12 +119,10 @@ object EnumDescriptorProto {
       * @throws {$protobuf.util.ProtocolError} If required fields are missing
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Reader): EnumReservedRange = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.decodeDelimited")
-    @js.native
-    def decodeDelimited(reader: Uint8Array): EnumReservedRange = js.native
+    @scala.inline
+    def decodeDelimited(reader: Reader): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
+    @scala.inline
+    def decodeDelimited(reader: Uint8Array): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
     
     /**
       * Encodes the specified EnumReservedRange message. Does not implicitly {@link google.protobuf.EnumDescriptorProto.EnumReservedRange.verify|verify} messages.
@@ -128,12 +131,10 @@ object EnumDescriptorProto {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.encode")
-    @js.native
-    def encode(message: IEnumReservedRange): Writer = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.encode")
-    @js.native
-    def encode(message: IEnumReservedRange, writer: Writer): Writer = js.native
+    @scala.inline
+    def encode(message: IEnumReservedRange): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encode(message: IEnumReservedRange, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Encodes the specified EnumReservedRange message, length delimited. Does not implicitly {@link google.protobuf.EnumDescriptorProto.EnumReservedRange.verify|verify} messages.
@@ -142,12 +143,10 @@ object EnumDescriptorProto {
       * @returns Writer
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEnumReservedRange): Writer = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.encodeDelimited")
-    @js.native
-    def encodeDelimited(message: IEnumReservedRange, writer: Writer): Writer = js.native
+    @scala.inline
+    def encodeDelimited(message: IEnumReservedRange): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+    @scala.inline
+    def encodeDelimited(message: IEnumReservedRange, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
     
     /**
       * Creates an EnumReservedRange message from a plain object. Also converts values to their respective internal types.
@@ -155,9 +154,8 @@ object EnumDescriptorProto {
       * @returns EnumReservedRange
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.fromObject")
-    @js.native
-    def fromObject(`object`: StringDictionary[js.Any]): EnumReservedRange = js.native
+    @scala.inline
+    def fromObject(`object`: StringDictionary[js.Any]): EnumReservedRange = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EnumReservedRange]
     
     /**
       * Creates a plain object from an EnumReservedRange message. Also converts values to other types if specified.
@@ -166,12 +164,10 @@ object EnumDescriptorProto {
       * @returns Plain object
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.toObject")
-    @js.native
-    def toObject(message: EnumReservedRange): StringDictionary[js.Any] = js.native
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.toObject")
-    @js.native
-    def toObject(message: EnumReservedRange, options: IConversionOptions): StringDictionary[js.Any] = js.native
+    @scala.inline
+    def toObject(message: EnumReservedRange): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+    @scala.inline
+    def toObject(message: EnumReservedRange, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
     
     /**
       * Verifies an EnumReservedRange message.
@@ -179,9 +175,8 @@ object EnumDescriptorProto {
       * @returns `null` if valid, otherwise the reason why it is not
       */
     /* static member */
-    @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.EnumReservedRange.verify")
-    @js.native
-    def verify(message: StringDictionary[js.Any]): String | Null = js.native
+    @scala.inline
+    def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   }
   
   /**
@@ -190,12 +185,10 @@ object EnumDescriptorProto {
     * @returns EnumDescriptorProto instance
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.create")
-  @js.native
-  def create(): EnumDescriptorProto = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.create")
-  @js.native
-  def create(properties: IEnumDescriptorProto): EnumDescriptorProto = js.native
+  @scala.inline
+  def create(): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[EnumDescriptorProto]
+  @scala.inline
+  def create(properties: IEnumDescriptorProto): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
   
   /**
     * Decodes an EnumDescriptorProto message from the specified reader or buffer.
@@ -206,18 +199,14 @@ object EnumDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader): EnumDescriptorProto = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): EnumDescriptorProto = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array): EnumDescriptorProto = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): EnumDescriptorProto = js.native
+  @scala.inline
+  def decode(reader: Reader): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
+  @scala.inline
+  def decode(reader: Reader, length: Double): EnumDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EnumDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): EnumDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[EnumDescriptorProto]
   
   /**
     * Decodes an EnumDescriptorProto message from the specified reader or buffer, length delimited.
@@ -227,12 +216,10 @@ object EnumDescriptorProto {
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): EnumDescriptorProto = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): EnumDescriptorProto = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
   
   /**
     * Encodes the specified EnumDescriptorProto message. Does not implicitly {@link google.protobuf.EnumDescriptorProto.verify|verify} messages.
@@ -241,12 +228,10 @@ object EnumDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.encode")
-  @js.native
-  def encode(message: IEnumDescriptorProto): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.encode")
-  @js.native
-  def encode(message: IEnumDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IEnumDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IEnumDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified EnumDescriptorProto message, length delimited. Does not implicitly {@link google.protobuf.EnumDescriptorProto.verify|verify} messages.
@@ -255,12 +240,10 @@ object EnumDescriptorProto {
     * @returns Writer
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEnumDescriptorProto): Writer = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IEnumDescriptorProto, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IEnumDescriptorProto): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IEnumDescriptorProto, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates an EnumDescriptorProto message from a plain object. Also converts values to their respective internal types.
@@ -268,9 +251,8 @@ object EnumDescriptorProto {
     * @returns EnumDescriptorProto
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): EnumDescriptorProto = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): EnumDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[EnumDescriptorProto]
   
   /**
     * Creates a plain object from an EnumDescriptorProto message. Also converts values to other types if specified.
@@ -279,12 +261,10 @@ object EnumDescriptorProto {
     * @returns Plain object
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.toObject")
-  @js.native
-  def toObject(message: EnumDescriptorProto): StringDictionary[js.Any] = js.native
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.toObject")
-  @js.native
-  def toObject(message: EnumDescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: EnumDescriptorProto): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: EnumDescriptorProto, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies an EnumDescriptorProto message.
@@ -292,19 +272,17 @@ object EnumDescriptorProto {
     * @returns `null` if valid, otherwise the reason why it is not
     */
   /* static member */
-  @JSImport("@google-cloud/pubsub/build/protos/protos", "google.protobuf.EnumDescriptorProto.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
   /** Properties of an EnumReservedRange. */
-  @js.native
   trait IEnumReservedRange extends StObject {
     
     /** EnumReservedRange end */
-    var end: js.UndefOr[Double | Null] = js.native
+    var end: js.UndefOr[Double | Null] = js.undefined
     
     /** EnumReservedRange start */
-    var start: js.UndefOr[Double | Null] = js.native
+    var start: js.UndefOr[Double | Null] = js.undefined
   }
   object IEnumReservedRange {
     

@@ -4,7 +4,6 @@ import typings.typeorm.typeormStrings.browser
 import typings.typeorm.typeormStrings.node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object browserPlatformToolsMod {
@@ -19,108 +18,88 @@ object browserPlatformToolsMod {
   /* static members */
   object PlatformTools {
     
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.appendFileSync")
+    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools")
     @js.native
-    def appendFileSync(filename: String, data: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.dotenv")
-    @js.native
-    def dotenv(pathStr: String): Unit = js.native
+    @scala.inline
+    def appendFileSync(filename: String, data: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("appendFileSync")(filename.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    
+    @scala.inline
+    def dotenv(pathStr: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("dotenv")(pathStr.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Synchronously checks if file exist. Does "fs.existsSync".
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.fileExist")
-    @js.native
-    def fileExist(pathStr: String): Boolean = js.native
+    @scala.inline
+    def fileExist(pathStr: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("fileExist")(pathStr.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
     /**
       * Gets environment variable.
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.getEnvVariable")
-    @js.native
-    def getEnvVariable(name: String): js.Any = js.native
+    @scala.inline
+    def getEnvVariable(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnvVariable")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Gets global variable where global stuff can be stored.
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.getGlobalVariable")
-    @js.native
-    def getGlobalVariable(): js.Any = js.native
+    @scala.inline
+    def getGlobalVariable(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getGlobalVariable")().asInstanceOf[js.Any]
     
     /**
       * Highlights json string to be print in the console.
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.highlightJson")
-    @js.native
-    def highlightJson(json: String): String = js.native
+    @scala.inline
+    def highlightJson(json: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightJson")(json.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Highlights sql string to be print in the console.
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.highlightSql")
-    @js.native
-    def highlightSql(sql: String): String = js.native
+    @scala.inline
+    def highlightSql(sql: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("highlightSql")(sql.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Loads ("require"-s) given file or package.
       * This operation only supports on node platform
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.load")
-    @js.native
-    def load(name: String): js.Any = js.native
+    @scala.inline
+    def load(name: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(name.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.log")
-    @js.native
-    def log(message: String): Unit = js.native
+    @scala.inline
+    def log(message: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("log")(message.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.logError")
-    @js.native
-    def logError(prefix: String, error: js.Any): Unit = js.native
+    @scala.inline
+    def logError(prefix: String, error: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logError")(prefix.asInstanceOf[js.Any], error.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Logging functions needed by AdvancedConsoleLogger (but here without chalk)
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.logInfo")
-    @js.native
-    def logInfo(prefix: String, info: js.Any): Unit = js.native
+    @scala.inline
+    def logInfo(prefix: String, info: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logInfo")(prefix.asInstanceOf[js.Any], info.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.logWarn")
-    @js.native
-    def logWarn(prefix: String, warning: js.Any): Unit = js.native
+    @scala.inline
+    def logWarn(prefix: String, warning: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("logWarn")(prefix.asInstanceOf[js.Any], warning.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Gets file extension. Does "path.extname".
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.pathExtname")
-    @js.native
-    def pathExtname(pathStr: String): String = js.native
+    @scala.inline
+    def pathExtname(pathStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathExtname")(pathStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Normalizes given path. Does "path.normalize".
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.pathNormalize")
-    @js.native
-    def pathNormalize(pathStr: String): String = js.native
+    @scala.inline
+    def pathNormalize(pathStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathNormalize")(pathStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * Resolved given path. Does "path.resolve".
       */
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.pathResolve")
-    @js.native
-    def pathResolve(pathStr: String): String = js.native
+    @scala.inline
+    def pathResolve(pathStr: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pathResolve")(pathStr.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.readFileSync")
-    @js.native
-    def readFileSync(filename: String): js.Any = js.native
-    
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.warn")
-    @js.native
-    def warn(message: String): String = js.native
-    
-    @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.writeFile")
-    @js.native
-    def writeFile(path: String, data: js.Any): js.Promise[Unit] = js.native
+    @scala.inline
+    def readFileSync(filename: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("readFileSync")(filename.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * Type of the currently running platform.
@@ -128,6 +107,12 @@ object browserPlatformToolsMod {
     @JSImport("typeorm/browser/platform/BrowserPlatformTools", "PlatformTools.type")
     @js.native
     val `type`: browser | node = js.native
+    
+    @scala.inline
+    def warn(message: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("warn")(message.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def writeFile(path: String, data: js.Any): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("writeFile")(path.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   }
   
   @JSImport("typeorm/browser/platform/BrowserPlatformTools", "Readable")
@@ -138,6 +123,5 @@ object browserPlatformToolsMod {
   @js.native
   class Writable () extends StObject
   
-  @js.native
   trait ReadStream extends StObject
 }

@@ -12,7 +12,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,21 +22,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * With the optional {@link com.sun.star.container.XIndexReplace} it is possible to modify single elements, if the corresponding {@link DataProvider}
   * supports modification of its values.
   */
-@js.native
 trait DataSequence
-  extends XIndexReplace
+  extends StObject
      with XDataSequence
      with XNumericalDataSequence
      with XTextualDataSequence
+     with XIndexReplace
      with XCloneable
      with XModifyBroadcaster
      with XPropertySet {
   
   /** a sequence of indexes that identify values that are hidden in the underlying data provider. */
-  var HiddenValues: SafeArray[Double] = js.native
+  var HiddenValues: SafeArray[Double]
   
   /** If set to false `FALSE` , values from hidden cells are not returned. */
-  var IncludeHiddenCells: Boolean = js.native
+  var IncludeHiddenCells: Boolean
   
   /**
     * The key (index) of the number format that this sequence should be formatted with.
@@ -48,14 +47,14 @@ trait DataSequence
     * The role of the series inside a data series. This may be any string. However some strings are predefined and should always be used in the same way.
     * @see DataSequenceRole
     */
-  var Role: DataSequenceRole = js.native
+  var Role: DataSequenceRole
 }
 object DataSequence {
   
   @scala.inline
   def apply(
     Count: Double,
-    Data: SafeArray[_],
+    Data: SafeArray[js.Any],
     ElementType: `type`,
     HiddenValues: SafeArray[Double],
     IncludeHiddenCells: Boolean,
@@ -72,7 +71,7 @@ object DataSequence {
     generateLabel: LabelOrigin => SafeArray[String],
     getByIndex: Double => js.Any,
     getCount: () => Double,
-    getData: () => SafeArray[_],
+    getData: () => SafeArray[js.Any],
     getElementType: () => `type`,
     getNumberFormatKeyByIndex: Double => Double,
     getNumericalData: () => SafeArray[Double],

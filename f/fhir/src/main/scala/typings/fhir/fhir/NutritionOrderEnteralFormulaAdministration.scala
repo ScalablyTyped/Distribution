@@ -2,34 +2,34 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Formula feeding instruction as structured data
   */
-@js.native
-trait NutritionOrderEnteralFormulaAdministration extends BackboneElement {
+trait NutritionOrderEnteralFormulaAdministration
+  extends StObject
+     with BackboneElement {
   
   /**
     * The volume of formula to provide
     */
-  var quantity: js.UndefOr[Quantity] = js.native
+  var quantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Speed with which the formula is provided per period of time
     */
-  var rateQuantity: js.UndefOr[Quantity] = js.native
+  var rateQuantity: js.UndefOr[Quantity] = js.undefined
   
   /**
     * Speed with which the formula is provided per period of time
     */
-  var rateRatio: js.UndefOr[Ratio] = js.native
+  var rateRatio: js.UndefOr[Ratio] = js.undefined
   
   /**
     * Scheduled frequency of enteral feeding
     */
-  var schedule: js.UndefOr[Timing] = js.native
+  var schedule: js.UndefOr[Timing] = js.undefined
 }
 object NutritionOrderEnteralFormulaAdministration {
   

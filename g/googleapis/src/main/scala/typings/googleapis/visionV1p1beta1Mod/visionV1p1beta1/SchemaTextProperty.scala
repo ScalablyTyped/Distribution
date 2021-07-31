@@ -2,24 +2,22 @@ package typings.googleapis.visionV1p1beta1Mod.visionV1p1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional information detected on the structural component.
   */
-@js.native
 trait SchemaTextProperty extends StObject {
   
   /**
     * Detected start or end of a text segment.
     */
-  var detectedBreak: js.UndefOr[SchemaDetectedBreak] = js.native
+  var detectedBreak: js.UndefOr[SchemaDetectedBreak] = js.undefined
   
   /**
     * A list of detected languages together with confidence.
     */
-  var detectedLanguages: js.UndefOr[js.Array[SchemaDetectedLanguage]] = js.native
+  var detectedLanguages: js.UndefOr[js.Array[SchemaDetectedLanguage]] = js.undefined
 }
 object SchemaTextProperty {
   

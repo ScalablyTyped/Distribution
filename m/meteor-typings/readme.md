@@ -10,9 +10,9 @@ Type definitions for Meteor
 | ------------------ | :-------------: |
 | Full name          | meteor-typings |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 11588 |
+| # downloads        | 27229 |
 | # stars            | 0 |
 
 ## Links

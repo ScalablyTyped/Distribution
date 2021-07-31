@@ -3,14 +3,12 @@ package typings.extjs.Ext.util
 import typings.extjs.Ext.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDelayedTask extends StObject {
   
   /** [Method] Cancel the last queued timeout */
-  var cancel: js.UndefOr[js.Function0[Unit]] = js.native
+  var cancel: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] By default cancels any pending timeout and queues a new one
     * @param newDelay Number The milliseconds to delay
@@ -26,10 +24,10 @@ trait IDelayedTask extends StObject {
       /* newArgs */ js.UndefOr[Array], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Property] (Number) */
-  var id: js.UndefOr[Double] = js.native
+  var id: js.UndefOr[Double] = js.undefined
 }
 object IDelayedTask {
   

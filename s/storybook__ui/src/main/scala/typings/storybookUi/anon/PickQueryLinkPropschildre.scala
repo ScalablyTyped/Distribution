@@ -3,16 +3,14 @@ package typings.storybookUi.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/router.@storybook/router.QueryLinkProps, 'children' | 'to'> */
-@js.native
 trait PickQueryLinkPropschildre extends StObject {
   
-  var children: ReactNode = js.native
+  var children: ReactNode
   
-  var to: String = js.native
+  var to: String
 }
 object PickQueryLinkPropschildre {
   

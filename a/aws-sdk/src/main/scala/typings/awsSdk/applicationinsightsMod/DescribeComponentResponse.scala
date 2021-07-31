@@ -2,18 +2,16 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeComponentResponse extends StObject {
   
-  var ApplicationComponent: js.UndefOr[typings.awsSdk.applicationinsightsMod.ApplicationComponent] = js.native
+  var ApplicationComponent: js.UndefOr[typings.awsSdk.applicationinsightsMod.ApplicationComponent] = js.undefined
   
   /**
     * The list of resource ARNs that belong to the component.
     */
-  var ResourceList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceList] = js.native
+  var ResourceList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceList] = js.undefined
 }
 object DescribeComponentResponse {
   

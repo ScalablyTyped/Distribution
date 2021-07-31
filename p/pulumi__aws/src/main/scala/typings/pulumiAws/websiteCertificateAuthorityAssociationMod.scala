@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object websiteCertificateAuthorityAssociationMod {
@@ -48,6 +47,10 @@ object websiteCertificateAuthorityAssociationMod {
   /* static members */
   object WebsiteCertificateAuthorityAssociation {
     
+    @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing WebsiteCertificateAuthorityAssociation resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,50 +60,44 @@ object websiteCertificateAuthorityAssociationMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID]): WebsiteCertificateAuthorityAssociation = js.native
-    @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): WebsiteCertificateAuthorityAssociation = js.native
-    @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: WebsiteCertificateAuthorityAssociationState): WebsiteCertificateAuthorityAssociation = js.native
-    @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: WebsiteCertificateAuthorityAssociationState): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: WebsiteCertificateAuthorityAssociationState,
       opts: CustomResourceOptions
-    ): WebsiteCertificateAuthorityAssociation = js.native
+    ): WebsiteCertificateAuthorityAssociation = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[WebsiteCertificateAuthorityAssociation]
     
     /**
       * Returns true if the given object is an instance of WebsiteCertificateAuthorityAssociation.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/worklink/websiteCertificateAuthorityAssociation", "WebsiteCertificateAuthorityAssociation.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/worklink/websiteCertificateAuthorityAssociation.WebsiteCertificateAuthorityAssociation */ Boolean]
   }
   
-  @js.native
   trait WebsiteCertificateAuthorityAssociationArgs extends StObject {
     
     /**
       * The root certificate of the Certificate Authority.
       */
-    val certificate: Input[String] = js.native
+    val certificate: Input[String]
     
     /**
       * The certificate name to display.
       */
-    val displayName: js.UndefOr[Input[String]] = js.native
+    val displayName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the fleet.
       */
-    val fleetArn: Input[String] = js.native
+    val fleetArn: Input[String]
   }
   object WebsiteCertificateAuthorityAssociationArgs {
     
@@ -127,28 +124,27 @@ object websiteCertificateAuthorityAssociationMod {
     }
   }
   
-  @js.native
   trait WebsiteCertificateAuthorityAssociationState extends StObject {
     
     /**
       * The root certificate of the Certificate Authority.
       */
-    val certificate: js.UndefOr[Input[String]] = js.native
+    val certificate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The certificate name to display.
       */
-    val displayName: js.UndefOr[Input[String]] = js.native
+    val displayName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the fleet.
       */
-    val fleetArn: js.UndefOr[Input[String]] = js.native
+    val fleetArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique identifier for the Certificate Authority.
       */
-    val websiteCaId: js.UndefOr[Input[String]] = js.native
+    val websiteCaId: js.UndefOr[Input[String]] = js.undefined
   }
   object WebsiteCertificateAuthorityAssociationState {
     

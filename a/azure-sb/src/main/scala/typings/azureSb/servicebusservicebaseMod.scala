@@ -2,7 +2,6 @@ package typings.azureSb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicebusservicebaseMod {
@@ -13,81 +12,17 @@ object servicebusservicebaseMod {
     extends typings.azureSb.servicebusserviceclientMod.^ {
     def this(configOrNamespaceOrConnectionString: String) = this()
     def this(configOrNamespaceOrConnectionString: String, accessKey: String) = this()
-    def this(configOrNamespaceOrConnectionString: String, accessKey: js.UndefOr[scala.Nothing], issuer: String) = this()
     def this(configOrNamespaceOrConnectionString: String, accessKey: String, issuer: String) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: String,
-      acsNamespace: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: String,
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: String
-    ) = this()
+    def this(configOrNamespaceOrConnectionString: String, accessKey: Unit, issuer: String) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
       accessKey: String,
       issuer: String,
       acsNamespace: String
     ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: String,
-      host: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: String,
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: String,
-      acsNamespace: String,
-      host: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: String,
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: String,
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: String,
-      host: String
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: String,
-      issuer: String,
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: String
-    ) = this()
+    def this(configOrNamespaceOrConnectionString: String, accessKey: String, issuer: Unit, acsNamespace: String) = this()
+    def this(configOrNamespaceOrConnectionString: String, accessKey: Unit, issuer: String, acsNamespace: String) = this()
+    def this(configOrNamespaceOrConnectionString: String, accessKey: Unit, issuer: Unit, acsNamespace: String) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
       accessKey: String,
@@ -97,63 +32,56 @@ object servicebusservicebaseMod {
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: js.UndefOr[scala.Nothing],
-      authenticationProvider: js.Object
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: String,
-      authenticationProvider: js.Object
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: String,
-      host: js.UndefOr[scala.Nothing],
-      authenticationProvider: js.Object
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: String,
-      host: String,
-      authenticationProvider: js.Object
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
+      accessKey: String,
       issuer: String,
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: js.UndefOr[scala.Nothing],
-      authenticationProvider: js.Object
+      acsNamespace: Unit,
+      host: String
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
-      issuer: String,
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: String,
-      authenticationProvider: js.Object
+      accessKey: String,
+      issuer: Unit,
+      acsNamespace: String,
+      host: String
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
+      accessKey: String,
+      issuer: Unit,
+      acsNamespace: Unit,
+      host: String
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
       issuer: String,
       acsNamespace: String,
-      host: js.UndefOr[scala.Nothing],
-      authenticationProvider: js.Object
+      host: String
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
-      accessKey: js.UndefOr[scala.Nothing],
+      accessKey: Unit,
+      issuer: String,
+      acsNamespace: Unit,
+      host: String
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: Unit,
+      acsNamespace: String,
+      host: String
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: Unit,
+      acsNamespace: Unit,
+      host: String
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: String,
       issuer: String,
       acsNamespace: String,
       host: String,
@@ -162,32 +90,16 @@ object servicebusservicebaseMod {
     def this(
       configOrNamespaceOrConnectionString: String,
       accessKey: String,
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: js.UndefOr[scala.Nothing],
-      authenticationProvider: js.Object
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: String,
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: String,
-      authenticationProvider: js.Object
-    ) = this()
-    def this(
-      configOrNamespaceOrConnectionString: String,
-      accessKey: String,
-      issuer: js.UndefOr[scala.Nothing],
+      issuer: String,
       acsNamespace: String,
-      host: js.UndefOr[scala.Nothing],
+      host: Unit,
       authenticationProvider: js.Object
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
       accessKey: String,
-      issuer: js.UndefOr[scala.Nothing],
-      acsNamespace: String,
+      issuer: String,
+      acsNamespace: Unit,
       host: String,
       authenticationProvider: js.Object
     ) = this()
@@ -195,32 +107,104 @@ object servicebusservicebaseMod {
       configOrNamespaceOrConnectionString: String,
       accessKey: String,
       issuer: String,
-      acsNamespace: js.UndefOr[scala.Nothing],
-      host: js.UndefOr[scala.Nothing],
+      acsNamespace: Unit,
+      host: Unit,
       authenticationProvider: js.Object
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
       accessKey: String,
-      issuer: String,
-      acsNamespace: js.UndefOr[scala.Nothing],
+      issuer: Unit,
+      acsNamespace: String,
+      host: String,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: String,
+      issuer: Unit,
+      acsNamespace: String,
+      host: Unit,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: String,
+      issuer: Unit,
+      acsNamespace: Unit,
       host: String,
       authenticationProvider: js.Object
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
       accessKey: String,
-      issuer: String,
-      acsNamespace: String,
-      host: js.UndefOr[scala.Nothing],
+      issuer: Unit,
+      acsNamespace: Unit,
+      host: Unit,
       authenticationProvider: js.Object
     ) = this()
     def this(
       configOrNamespaceOrConnectionString: String,
-      accessKey: String,
+      accessKey: Unit,
       issuer: String,
       acsNamespace: String,
       host: String,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: String,
+      acsNamespace: String,
+      host: Unit,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: String,
+      acsNamespace: Unit,
+      host: String,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: String,
+      acsNamespace: Unit,
+      host: Unit,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: Unit,
+      acsNamespace: String,
+      host: String,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: Unit,
+      acsNamespace: String,
+      host: Unit,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: Unit,
+      acsNamespace: Unit,
+      host: String,
+      authenticationProvider: js.Object
+    ) = this()
+    def this(
+      configOrNamespaceOrConnectionString: String,
+      accessKey: Unit,
+      issuer: Unit,
+      acsNamespace: Unit,
+      host: Unit,
       authenticationProvider: js.Object
     ) = this()
   }

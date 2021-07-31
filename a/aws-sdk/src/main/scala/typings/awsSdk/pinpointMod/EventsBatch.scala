@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventsBatch extends StObject {
   
   /**
     * A set of properties and attributes that are associated with the endpoint.
     */
-  var Endpoint: PublicEndpoint = js.native
+  var Endpoint: PublicEndpoint
   
   /**
     * A set of properties that are associated with the event.
     */
-  var Events: MapOfEvent = js.native
+  var Events: MapOfEvent
 }
 object EventsBatch {
   

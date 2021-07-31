@@ -14,54 +14,39 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.send
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.sign
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Events extends StObject {
   
-  var CANCEL: cancel = js.native
+  var CANCEL: cancel
   
-  var CLOSE: close = js.native
+  var CLOSE: close
   
-  var CREATE_TEMPLATE: createTemplate = js.native
+  var CREATE_TEMPLATE: createTemplate
   
-  var DECLINE: decline = js.native
+  var DECLINE: decline
   
-  var ERROR: error = js.native
+  var ERROR: error
   
-  var FINISH: finish = js.native
+  var FINISH: finish
   
-  var MESSAGE: message = js.native
+  var MESSAGE: message
   
-  var OPEN: open = js.native
+  var OPEN: open
   
-  var READY: ready = js.native
+  var READY: ready
   
-  var REASSIGN: reassign = js.native
+  var REASSIGN: reassign
   
-  var SEND: send = js.native
+  var SEND: send
   
-  var SIGN: sign = js.native
+  var SIGN: sign
 }
 object Events {
   
   @scala.inline
-  def apply(
-    CANCEL: cancel,
-    CLOSE: close,
-    CREATE_TEMPLATE: createTemplate,
-    DECLINE: decline,
-    ERROR: error,
-    FINISH: finish,
-    MESSAGE: message,
-    OPEN: open,
-    READY: ready,
-    REASSIGN: reassign,
-    SEND: send,
-    SIGN: sign
-  ): Events = {
-    val __obj = js.Dynamic.literal(CANCEL = CANCEL.asInstanceOf[js.Any], CLOSE = CLOSE.asInstanceOf[js.Any], CREATE_TEMPLATE = CREATE_TEMPLATE.asInstanceOf[js.Any], DECLINE = DECLINE.asInstanceOf[js.Any], ERROR = ERROR.asInstanceOf[js.Any], FINISH = FINISH.asInstanceOf[js.Any], MESSAGE = MESSAGE.asInstanceOf[js.Any], OPEN = OPEN.asInstanceOf[js.Any], READY = READY.asInstanceOf[js.Any], REASSIGN = REASSIGN.asInstanceOf[js.Any], SEND = SEND.asInstanceOf[js.Any], SIGN = SIGN.asInstanceOf[js.Any])
+  def apply(): Events = {
+    val __obj = js.Dynamic.literal(CANCEL = "cancel", CLOSE = "close", CREATE_TEMPLATE = "createTemplate", DECLINE = "decline", ERROR = "error", FINISH = "finish", MESSAGE = "message", OPEN = "open", READY = "ready", REASSIGN = "reassign", SEND = "send", SIGN = "sign")
     __obj.asInstanceOf[Events]
   }
   

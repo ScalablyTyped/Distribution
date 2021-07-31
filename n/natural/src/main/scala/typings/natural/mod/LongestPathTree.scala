@@ -2,17 +2,15 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LongestPathTree extends StObject {
   
-  def getDistTo(vertex: Double): Double = js.native
+  def getDistTo(vertex: Double): Double
   
-  def hasDistTo(vertex: Double): Boolean = js.native
+  def hasDistTo(vertex: Double): Boolean
   
-  def pathTo(vertex: Double): js.Array[Double] = js.native
+  def pathTo(vertex: Double): js.Array[Double]
 }
 object LongestPathTree {
   

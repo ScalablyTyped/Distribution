@@ -2,26 +2,24 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MqttContext extends StObject {
   
   /**
     * The value of the clientId key in an MQTT authorization request.
     */
-  var clientId: js.UndefOr[MqttClientId] = js.native
+  var clientId: js.UndefOr[MqttClientId] = js.undefined
   
   /**
     * The value of the password key in an MQTT authorization request.
     */
-  var password: js.UndefOr[MqttPassword] = js.native
+  var password: js.UndefOr[MqttPassword] = js.undefined
   
   /**
     * The value of the username key in an MQTT authorization request.
     */
-  var username: js.UndefOr[MqttUsername] = js.native
+  var username: js.UndefOr[MqttUsername] = js.undefined
 }
 object MqttContext {
   

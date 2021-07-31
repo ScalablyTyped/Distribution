@@ -2,13 +2,11 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalData extends StObject {
   
-  var _result: js.Any = js.native
+  var _result: js.Any
 }
 object GlobalData {
   

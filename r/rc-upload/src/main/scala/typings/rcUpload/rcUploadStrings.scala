@@ -3,23 +3,28 @@ package typings.rcUpload
 import typings.rcUpload.interfaceMod.UploadRequestMethod
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcUploadStrings {
   
   @js.native
-  sealed trait PATCH extends UploadRequestMethod
+  sealed trait PATCH
+    extends StObject
+       with UploadRequestMethod
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait POST extends UploadRequestMethod
+  sealed trait POST
+    extends StObject
+       with UploadRequestMethod
   @scala.inline
   def POST: POST = "POST".asInstanceOf[POST]
   
   @js.native
-  sealed trait PUT extends UploadRequestMethod
+  sealed trait PUT
+    extends StObject
+       with UploadRequestMethod
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
@@ -209,7 +214,9 @@ object rcUploadStrings {
   def page: page = "page".asInstanceOf[page]
   
   @js.native
-  sealed trait patch_ extends UploadRequestMethod
+  sealed trait patch_
+    extends StObject
+       with UploadRequestMethod
   @scala.inline
   def patch_ : patch_ = "patch".asInstanceOf[patch_]
   
@@ -224,7 +231,9 @@ object rcUploadStrings {
   def popup: popup = "popup".asInstanceOf[popup]
   
   @js.native
-  sealed trait post_ extends UploadRequestMethod
+  sealed trait post_
+    extends StObject
+       with UploadRequestMethod
   @scala.inline
   def post_ : post_ = "post".asInstanceOf[post_]
   
@@ -234,7 +243,9 @@ object rcUploadStrings {
   def previous: previous = "previous".asInstanceOf[previous]
   
   @js.native
-  sealed trait put_ extends UploadRequestMethod
+  sealed trait put_
+    extends StObject
+       with UploadRequestMethod
   @scala.inline
   def put_ : put_ = "put".asInstanceOf[put_]
   

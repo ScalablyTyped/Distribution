@@ -2,17 +2,15 @@ package typings.protobufjs.descriptorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IServiceDescriptorProto extends StObject {
   
-  var method: js.UndefOr[js.Array[IMethodDescriptorProto]] = js.native
+  var method: js.UndefOr[js.Array[IMethodDescriptorProto]] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var options: js.UndefOr[IServiceOptions] = js.native
+  var options: js.UndefOr[IServiceOptions] = js.undefined
 }
 object IServiceDescriptorProto {
   

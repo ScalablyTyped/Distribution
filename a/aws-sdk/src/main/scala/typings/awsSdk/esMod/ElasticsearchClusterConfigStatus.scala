@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElasticsearchClusterConfigStatus extends StObject {
   
   /**
     *  Specifies the cluster configuration for the specified Elasticsearch domain.
     */
-  var Options: ElasticsearchClusterConfig = js.native
+  var Options: ElasticsearchClusterConfig
   
   /**
     *  Specifies the status of the configuration for the specified Elasticsearch domain.
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object ElasticsearchClusterConfigStatus {
   

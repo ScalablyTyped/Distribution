@@ -3,29 +3,27 @@ package typings.vueRouter.routerMod
 import typings.vue.vueMod.Vue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteConfigBase extends StObject {
   
-  var alias: js.UndefOr[String | js.Array[String]] = js.native
+  var alias: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var beforeEnter: js.UndefOr[NavigationGuard[Vue]] = js.native
+  var beforeEnter: js.UndefOr[NavigationGuard[Vue]] = js.undefined
   
-  var caseSensitive: js.UndefOr[Boolean] = js.native
+  var caseSensitive: js.UndefOr[Boolean] = js.undefined
   
-  var children: js.UndefOr[js.Array[RouteConfig]] = js.native
+  var children: js.UndefOr[js.Array[RouteConfig]] = js.undefined
   
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var pathToRegexpOptions: js.UndefOr[PathToRegexpOptions] = js.native
+  var pathToRegexpOptions: js.UndefOr[PathToRegexpOptions] = js.undefined
   
-  var redirect: js.UndefOr[RedirectOption] = js.native
+  var redirect: js.UndefOr[RedirectOption] = js.undefined
 }
 object RouteConfigBase {
   

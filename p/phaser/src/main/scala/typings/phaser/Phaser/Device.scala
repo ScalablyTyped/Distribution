@@ -2,7 +2,6 @@ package typings.phaser.Phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Device {
@@ -13,53 +12,52 @@ object Device {
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.audio` from within any Scene.
     */
-  @js.native
   trait Audio extends StObject {
     
     /**
       * Can this device play HTML Audio tags?
       */
-    var audioData: Boolean = js.native
+    var audioData: Boolean
     
     /**
       * Can this device play EC-3 Dolby Digital Plus files?
       */
-    var dolby: Boolean = js.native
+    var dolby: Boolean
     
     /**
       * Can this device can play m4a files.
       */
-    var m4a: Boolean = js.native
+    var m4a: Boolean
     
     /**
       * Can this device play mp3 files?
       */
-    var mp3: Boolean = js.native
+    var mp3: Boolean
     
     /**
       * Can this device play ogg files?
       */
-    var ogg: Boolean = js.native
+    var ogg: Boolean
     
     /**
       * Can this device play opus files?
       */
-    var opus: Boolean = js.native
+    var opus: Boolean
     
     /**
       * Can this device play wav files?
       */
-    var wav: Boolean = js.native
+    var wav: Boolean
     
     /**
       * Does this device have the Web Audio API?
       */
-    var webAudio: Boolean = js.native
+    var webAudio: Boolean
     
     /**
       * Can this device play webm files?
       */
-    var webm: Boolean = js.native
+    var webm: Boolean
   }
   object Audio {
     
@@ -117,78 +115,77 @@ object Device {
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.browser` from within any Scene.
     */
-  @js.native
   trait Browser extends StObject {
     
     /**
       * Set to true if running in Chrome.
       */
-    var chrome: Boolean = js.native
+    var chrome: Boolean
     
     /**
       * If running in Chrome this will contain the major version number.
       */
-    var chromeVersion: Double = js.native
+    var chromeVersion: Double
     
     /**
       * Set to true if running in Microsoft Edge browser.
       */
-    var edge: Boolean = js.native
+    var edge: Boolean
     
     /**
       * Set to true if running in Firefox.
       */
-    var firefox: Boolean = js.native
+    var firefox: Boolean
     
     /**
       * If running in Firefox this will contain the major version number.
       */
-    var firefoxVersion: Double = js.native
+    var firefoxVersion: Double
     
     /**
       * Set to true if running in Internet Explorer 11 or less (not Edge).
       */
-    var ie: Boolean = js.native
+    var ie: Boolean
     
     /**
       * If running in Internet Explorer this will contain the major version number. Beyond IE10 you should use Browser.trident and Browser.tridentVersion.
       */
-    var ieVersion: Double = js.native
+    var ieVersion: Double
     
     /**
       * Set to true if running in Mobile Safari.
       */
-    var mobileSafari: Boolean = js.native
+    var mobileSafari: Boolean
     
     /**
       * Set to true if running in Opera.
       */
-    var opera: Boolean = js.native
+    var opera: Boolean
     
     /**
       * Set to true if running in Safari.
       */
-    var safari: Boolean = js.native
+    var safari: Boolean
     
     /**
       * If running in Safari this will contain the major version number.
       */
-    var safariVersion: Double = js.native
+    var safariVersion: Double
     
     /**
       * Set to true if running in the Silk browser (as used on the Amazon Kindle)
       */
-    var silk: Boolean = js.native
+    var silk: Boolean
     
     /**
       * Set to true if running a Trident version of Internet Explorer (IE11+)
       */
-    var trident: Boolean = js.native
+    var trident: Boolean
     
     /**
       * If running in Internet Explorer 11 this will contain the major version number. See {@link http://msdn.microsoft.com/en-us/library/ie/ms537503(v=vs.85).aspx}
       */
-    var tridentVersion: Double = js.native
+    var tridentVersion: Double
   }
   object Browser {
     
@@ -266,18 +263,17 @@ object Device {
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.canvasFeatures` from within any Scene.
     */
-  @js.native
   trait CanvasFeatures extends StObject {
     
     /**
       * Set to true if the browser supports inversed alpha.
       */
-    var supportInverseAlpha: Boolean = js.native
+    var supportInverseAlpha: Boolean
     
     /**
       * Set to true if the browser supports new canvas blend modes.
       */
-    var supportNewBlendModes: Boolean = js.native
+    var supportNewBlendModes: Boolean
   }
   object CanvasFeatures {
     
@@ -304,68 +300,67 @@ object Device {
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.features` from within any Scene.
     */
-  @js.native
   trait Features extends StObject {
     
     /**
       * Is canvas available?
       */
-    var canvas: Boolean = js.native
+    var canvas: Boolean
     
     /**
       * True if canvas supports a 'copy' bitblt onto itself when the source and destination regions overlap.
       */
-    var canvasBitBltShift: Boolean = js.native
+    var canvasBitBltShift: Boolean
     
     /**
       * Is file available?
       */
-    var file: Boolean = js.native
+    var file: Boolean
     
     /**
       * Is fileSystem available?
       */
-    var fileSystem: Boolean = js.native
+    var fileSystem: Boolean
     
     /**
       * Does the device support the getUserMedia API?
       */
-    var getUserMedia: Boolean = js.native
+    var getUserMedia: Boolean
     
     /**
       * Is the device big or little endian? (only detected if the browser supports TypedArrays)
       */
-    var littleEndian: Boolean = js.native
+    var littleEndian: Boolean
     
     /**
       * Is localStorage available?
       */
-    var localStorage: Boolean = js.native
+    var localStorage: Boolean
     
     /**
       * Is Pointer Lock available?
       */
-    var pointerLock: Boolean = js.native
+    var pointerLock: Boolean
     
     /**
       * Does the device context support 32bit pixel manipulation using array buffer views?
       */
-    var support32bit: Boolean = js.native
+    var support32bit: Boolean
     
     /**
       * Does the device support the Vibration API?
       */
-    var vibration: Boolean = js.native
+    var vibration: Boolean
     
     /**
       * Is webGL available?
       */
-    var webGL: Boolean = js.native
+    var webGL: Boolean
     
     /**
       * Is worker available?
       */
-    var worker: Boolean = js.native
+    var worker: Boolean
   }
   object Features {
     
@@ -435,28 +430,27 @@ object Device {
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.fullscreen` from within any Scene.
     */
-  @js.native
   trait Fullscreen extends StObject {
     
     /**
       * Does the browser support the Full Screen API?
       */
-    var available: Boolean = js.native
+    var available: Boolean
     
     /**
       * If the browser supports the Full Screen API this holds the call you need to use to cancel it.
       */
-    var cancel: String = js.native
+    var cancel: String
     
     /**
       * Does the browser support access to the Keyboard during Full Screen mode?
       */
-    var keyboard: Boolean = js.native
+    var keyboard: Boolean
     
     /**
       * If the browser supports the Full Screen API this holds the call you need to use to activate it.
       */
-    var request: String = js.native
+    var request: String
   }
   object Fullscreen {
     
@@ -489,28 +483,27 @@ object Device {
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.input` from within any Scene.
     */
-  @js.native
   trait Input extends StObject {
     
     /**
       * Is navigator.getGamepads available?
       */
-    var gamepads: Boolean = js.native
+    var gamepads: Boolean
     
     /**
       * Is mspointer available?
       */
-    var mspointer: Boolean = js.native
+    var mspointer: Boolean
     
     /**
       * Is touch available?
       */
-    var touch: Boolean = js.native
+    var touch: Boolean
     
     /**
       * The newest type of Wheel/Scroll event supported: 'wheel', 'mousewheel', 'DOMMouseScroll'
       */
-    var wheelType: String = js.native
+    var wheelType: String
   }
   object Input {
     
@@ -543,108 +536,107 @@ object Device {
     * They are then referenced by internal game systems and are available for you to access
     * via `this.sys.game.device.os` from within any Scene.
     */
-  @js.native
   trait OS extends StObject {
     
     /**
       * Is running on android?
       */
-    var android: Boolean = js.native
+    var android: Boolean
     
     /**
       * Is running on chromeOS?
       */
-    var chromeOS: Boolean = js.native
+    var chromeOS: Boolean
     
     /**
       * Is the game running under Apache Cordova?
       */
-    var cordova: Boolean = js.native
+    var cordova: Boolean
     
     /**
       * Is the game running under the Intel Crosswalk XDK?
       */
-    var crosswalk: Boolean = js.native
+    var crosswalk: Boolean
     
     /**
       * Is running on a desktop?
       */
-    var desktop: Boolean = js.native
+    var desktop: Boolean
     
     /**
       * Is the game running under Ejecta?
       */
-    var ejecta: Boolean = js.native
+    var ejecta: Boolean
     
     /**
       * Is the game running under GitHub Electron?
       */
-    var electron: Boolean = js.native
+    var electron: Boolean
     
     /**
       * Is running on iOS?
       */
-    var iOS: Boolean = js.native
+    var iOS: Boolean
     
     /**
       * If running in iOS this will contain the major version number.
       */
-    var iOSVersion: Double = js.native
+    var iOSVersion: Double
     
     /**
       * Is running on iPad?
       */
-    var iPad: Boolean = js.native
+    var iPad: Boolean
     
     /**
       * Is running on iPhone?
       */
-    var iPhone: Boolean = js.native
+    var iPhone: Boolean
     
     /**
       * Is running on an Amazon Kindle?
       */
-    var kindle: Boolean = js.native
+    var kindle: Boolean
     
     /**
       * Is running on linux?
       */
-    var linux: Boolean = js.native
+    var linux: Boolean
     
     /**
       * Is running on macOS?
       */
-    var macOS: Boolean = js.native
+    var macOS: Boolean
     
     /**
       * Is the game running under Node.js?
       */
-    var node: Boolean = js.native
+    var node: Boolean
     
     /**
       * Is the game running under Node-Webkit?
       */
-    var nodeWebkit: Boolean = js.native
+    var nodeWebkit: Boolean
     
     /**
       * PixelRatio of the host device?
       */
-    var pixelRatio: Double = js.native
+    var pixelRatio: Double
     
     /**
       * Set to true if running as a WebApp, i.e. within a WebView
       */
-    var webApp: Boolean = js.native
+    var webApp: Boolean
     
     /**
       * Is running on windows?
       */
-    var windows: Boolean = js.native
+    var windows: Boolean
     
     /**
       * Is running on a Windows Phone?
       */
-    var windowsPhone: Boolean = js.native
+    var windowsPhone: Boolean
   }
   object OS {
     
@@ -748,38 +740,37 @@ object Device {
     * 
     * In Phaser 3.20 the properties were renamed to drop the 'Video' suffix.
     */
-  @js.native
   trait Video extends StObject {
     
     /**
       * Can this device play h264 mp4 video files?
       */
-    var h264: Boolean = js.native
+    var h264: Boolean
     
     /**
       * Can this device play hls video files?
       */
-    var hls: Boolean = js.native
+    var hls: Boolean
     
     /**
       * Can this device play h264 mp4 video files?
       */
-    var mp4: Boolean = js.native
+    var mp4: Boolean
     
     /**
       * Can this device play ogg video files?
       */
-    var ogg: Boolean = js.native
+    var ogg: Boolean
     
     /**
       * Can this device play vp9 video files?
       */
-    var vp9: Boolean = js.native
+    var vp9: Boolean
     
     /**
       * Can this device play webm video files?
       */
-    var webm: Boolean = js.native
+    var webm: Boolean
   }
   object Video {
     

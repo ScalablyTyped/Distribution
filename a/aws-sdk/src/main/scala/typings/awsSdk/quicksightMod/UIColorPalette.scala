@@ -2,91 +2,89 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UIColorPalette extends StObject {
   
   /**
     * This color is that applies to selected states and buttons.
     */
-  var Accent: js.UndefOr[HexColor] = js.native
+  var Accent: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The foreground color that applies to any text or other elements that appear over the accent color.
     */
-  var AccentForeground: js.UndefOr[HexColor] = js.native
+  var AccentForeground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The color that applies to error messages.
     */
-  var Danger: js.UndefOr[HexColor] = js.native
+  var Danger: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The foreground color that applies to any text or other elements that appear over the error color.
     */
-  var DangerForeground: js.UndefOr[HexColor] = js.native
+  var DangerForeground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The color that applies to the names of fields that are identified as dimensions.
     */
-  var Dimension: js.UndefOr[HexColor] = js.native
+  var Dimension: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The foreground color that applies to any text or other elements that appear over the dimension color.
     */
-  var DimensionForeground: js.UndefOr[HexColor] = js.native
+  var DimensionForeground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The color that applies to the names of fields that are identified as measures.
     */
-  var Measure: js.UndefOr[HexColor] = js.native
+  var Measure: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The foreground color that applies to any text or other elements that appear over the measure color.
     */
-  var MeasureForeground: js.UndefOr[HexColor] = js.native
+  var MeasureForeground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The background color that applies to visuals and other high emphasis UI.
     */
-  var PrimaryBackground: js.UndefOr[HexColor] = js.native
+  var PrimaryBackground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The color of text and other foreground elements that appear over the primary background regions, such as grid lines, borders, table banding, icons, and so on.
     */
-  var PrimaryForeground: js.UndefOr[HexColor] = js.native
+  var PrimaryForeground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The background color that applies to the sheet background and sheet controls.
     */
-  var SecondaryBackground: js.UndefOr[HexColor] = js.native
+  var SecondaryBackground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The foreground color that applies to any sheet title, sheet control text, or UI that appears over the secondary background.
     */
-  var SecondaryForeground: js.UndefOr[HexColor] = js.native
+  var SecondaryForeground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The color that applies to success messages, for example the check mark for a successful download.
     */
-  var Success: js.UndefOr[HexColor] = js.native
+  var Success: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The foreground color that applies to any text or other elements that appear over the success color.
     */
-  var SuccessForeground: js.UndefOr[HexColor] = js.native
+  var SuccessForeground: js.UndefOr[HexColor] = js.undefined
   
   /**
     * This color that applies to warning and informational messages.
     */
-  var Warning: js.UndefOr[HexColor] = js.native
+  var Warning: js.UndefOr[HexColor] = js.undefined
   
   /**
     * The foreground color that applies to any text or other elements that appear over the warning color.
     */
-  var WarningForeground: js.UndefOr[HexColor] = js.native
+  var WarningForeground: js.UndefOr[HexColor] = js.undefined
 }
 object UIColorPalette {
   

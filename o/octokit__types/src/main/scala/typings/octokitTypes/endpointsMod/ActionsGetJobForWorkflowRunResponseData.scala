@@ -3,39 +3,37 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Completedat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionsGetJobForWorkflowRunResponseData extends StObject {
   
-  var check_run_url: String = js.native
+  var check_run_url: String
   
-  var completed_at: String = js.native
+  var completed_at: String
   
-  var conclusion: String = js.native
+  var conclusion: String
   
-  var head_sha: String = js.native
+  var head_sha: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var run_id: Double = js.native
+  var run_id: Double
   
-  var run_url: String = js.native
+  var run_url: String
   
-  var started_at: String = js.native
+  var started_at: String
   
-  var status: String = js.native
+  var status: String
   
-  var steps: js.Array[Completedat] = js.native
+  var steps: js.Array[Completedat]
   
-  var url: String = js.native
+  var url: String
 }
 object ActionsGetJobForWorkflowRunResponseData {
   

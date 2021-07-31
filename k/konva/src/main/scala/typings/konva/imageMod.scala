@@ -8,7 +8,6 @@ import typings.konva.typesMod.IRect
 import typings.std.CanvasImageSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageMod {
@@ -62,17 +61,21 @@ object imageMod {
   /* static members */
   object Image {
     
-    @JSImport("konva/types/shapes/Image", "Image.fromURL")
+    @JSImport("konva/types/shapes/Image", "Image")
     @js.native
-    def fromURL(url: js.Any, callback: js.Any): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromURL(url: js.Any, callback: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromURL")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
-  @js.native
-  trait ImageConfig extends ShapeConfig {
+  trait ImageConfig
+    extends StObject
+       with ShapeConfig {
     
-    var crop: js.UndefOr[IRect] = js.native
+    var crop: js.UndefOr[IRect] = js.undefined
     
-    var image: js.UndefOr[CanvasImageSource] = js.native
+    var image: js.UndefOr[CanvasImageSource] = js.undefined
   }
   object ImageConfig {
     

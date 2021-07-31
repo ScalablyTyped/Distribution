@@ -1,26 +1,24 @@
 package typings.octokitTypes.endpointsMod
 
-import typings.octokitTypes.anon.`6`
+import typings.octokitTypes.anon.`0`
+import typings.octokitTypes.octokitTypesStrings.wyandotte
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* Inlined {  org :string,   migration_id :number} & @octokit/types.@octokit/types/dist-types/generated/Endpoints.RequiredPreview<'wyandotte'> */
-@js.native
-trait MigrationsGetStatusForOrgEndpoint extends StObject {
+trait MigrationsGetStatusForOrgEndpoint
+  extends StObject
+     with RequiredPreview[wyandotte] {
   
-  var mediaType: `6` = js.native
-  
-  var migration_id: Double = js.native
+  var migration_id: Double
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
 }
 object MigrationsGetStatusForOrgEndpoint {
   
   @scala.inline
-  def apply(mediaType: `6`, migration_id: Double, org_ : String): MigrationsGetStatusForOrgEndpoint = {
+  def apply(mediaType: `0`[wyandotte], migration_id: Double, org_ : String): MigrationsGetStatusForOrgEndpoint = {
     val __obj = js.Dynamic.literal(mediaType = mediaType.asInstanceOf[js.Any], migration_id = migration_id.asInstanceOf[js.Any])
     __obj.updateDynamic("org")(org_.asInstanceOf[js.Any])
     __obj.asInstanceOf[MigrationsGetStatusForOrgEndpoint]
@@ -28,9 +26,6 @@ object MigrationsGetStatusForOrgEndpoint {
   
   @scala.inline
   implicit class MigrationsGetStatusForOrgEndpointMutableBuilder[Self <: MigrationsGetStatusForOrgEndpoint] (val x: Self) extends AnyVal {
-    
-    @scala.inline
-    def setMediaType(value: `6`): Self = StObject.set(x, "mediaType", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMigration_id(value: Double): Self = StObject.set(x, "migration_id", value.asInstanceOf[js.Any])

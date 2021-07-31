@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomBiddingAlgorithm extends StObject {
   
   /** Immutable. The unique ID of the advertiser that owns the custom bidding algorithm. */
-  var advertiserId: js.UndefOr[String] = js.native
+  var advertiserId: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the custom bidding algorithm. Assigned by the system. */
-  var customBiddingAlgorithmId: js.UndefOr[String] = js.native
+  var customBiddingAlgorithmId: js.UndefOr[String] = js.undefined
   
   /** Required. Immutable. The type of custom bidding algorithm. */
-  var customBiddingAlgorithmType: js.UndefOr[String] = js.native
+  var customBiddingAlgorithmType: js.UndefOr[String] = js.undefined
   
   /** Required. The display name of the custom bidding algorithm. Must be UTF-8 encoded with a maximum size of 240 bytes. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Controls whether or not the custom bidding algorithm can be used as a bidding strategy. Accepted values are: * `ENTITY_STATUS_ACTIVE` * `ENTITY_STATUS_ARCHIVED` */
-  var entityStatus: js.UndefOr[String] = js.native
+  var entityStatus: js.UndefOr[String] = js.undefined
   
   /** Output only. The resource name of the custom bidding algorithm. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Immutable. The unique ID of the partner that owns the custom bidding algorithm. */
-  var partnerId: js.UndefOr[String] = js.native
+  var partnerId: js.UndefOr[String] = js.undefined
 }
 object CustomBiddingAlgorithm {
   

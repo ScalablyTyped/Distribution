@@ -6,26 +6,26 @@ import typings.firefoxWebextBrowser.browser.manifest.NativeManifest
 import typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.storage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Data extends NativeManifest {
+trait Data
+  extends StObject
+     with NativeManifest {
   
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
-  var description: String = js.native
+  var description: String
   
-  var name: ExtensionID = js.native
+  var name: ExtensionID
   
-  var `type`: storage = js.native
+  var `type`: storage
 }
 object Data {
   
   @scala.inline
-  def apply(data: StringDictionary[js.Any], description: String, name: ExtensionID, `type`: storage): Data = {
+  def apply(data: StringDictionary[js.Any], description: String, name: ExtensionID): Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("storage")
     __obj.asInstanceOf[Data]
   }
   

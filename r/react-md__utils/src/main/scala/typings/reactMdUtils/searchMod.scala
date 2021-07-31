@@ -9,10 +9,13 @@ import typings.std.HTMLElement
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchMod {
+  
+  @JSImport("@react-md/utils/types/search", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@react-md/utils/types/search", "DEFAULT_GET_ITEM_VALUE")
   @js.native
@@ -66,82 +69,56 @@ object searchMod {
   @js.native
   val DEFAULT_VALUE_KEY: /* "value" */ String = js.native
   
-  @JSImport("@react-md/utils/types/search", "caseInsensitiveFilter")
-  @js.native
-  def caseInsensitiveFilter[T](query: String, searchable: js.Array[T]): js.Array[T] = js.native
-  @JSImport("@react-md/utils/types/search", "caseInsensitiveFilter")
-  @js.native
-  def caseInsensitiveFilter[T](query: String, searchable: js.Array[T], options: CaseInsensitiveOptions[T]): js.Array[T] = js.native
+  @scala.inline
+  def caseInsensitiveFilter[T](query: String, searchable: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def caseInsensitiveFilter[T](query: String, searchable: js.Array[T], options: CaseInsensitiveOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("caseInsensitiveFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@react-md/utils/types/search", "findIgnoreCase")
-  @js.native
-  def findIgnoreCase[T](query: String, searchable: js.Array[T]): T | Null = js.native
-  @JSImport("@react-md/utils/types/search", "findIgnoreCase")
-  @js.native
-  def findIgnoreCase[T](query: String, searchable: js.Array[T], options: SearchOptions[T]): T | Null = js.native
+  @scala.inline
+  def findIgnoreCase[T](query: String, searchable: js.Array[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIgnoreCase")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any])).asInstanceOf[T | Null]
+  @scala.inline
+  def findIgnoreCase[T](query: String, searchable: js.Array[T], options: SearchOptions[T]): T | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("findIgnoreCase")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T | Null]
   
-  @JSImport("@react-md/utils/types/search", "findMatchInRange")
-  @js.native
-  def findMatchInRange(value: String, values: js.Array[String], startIndex: Double, endIndex: Double): Double = js.native
+  @scala.inline
+  def findMatchInRange(value: String, values: js.Array[String], startIndex: Double, endIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchInRange")(value.asInstanceOf[js.Any], values.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], endIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@react-md/utils/types/search", "findMatchIndex")
-  @js.native
-  def findMatchIndex(value: String, values: js.Array[String], startIndex: Double): Double = js.native
-  @JSImport("@react-md/utils/types/search", "findMatchIndex")
-  @js.native
-  def findMatchIndex(value: String, values: js.Array[String], startIndex: Double, isSelfMatchable: Boolean): Double = js.native
+  @scala.inline
+  def findMatchIndex(value: String, values: js.Array[String], startIndex: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchIndex")(value.asInstanceOf[js.Any], values.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def findMatchIndex(value: String, values: js.Array[String], startIndex: Double, isSelfMatchable: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("findMatchIndex")(value.asInstanceOf[js.Any], values.asInstanceOf[js.Any], startIndex.asInstanceOf[js.Any], isSelfMatchable.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@react-md/utils/types/search", "fuzzyFilter")
-  @js.native
-  def fuzzyFilter[T](query: String, searchable: js.Array[T]): js.Array[T] = js.native
-  @JSImport("@react-md/utils/types/search", "fuzzyFilter")
-  @js.native
-  def fuzzyFilter[T](query: String, searchable: js.Array[T], options: SearchOptions[T]): js.Array[T] = js.native
+  @scala.inline
+  def fuzzyFilter[T](query: String, searchable: js.Array[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
+  @scala.inline
+  def fuzzyFilter[T](query: String, searchable: js.Array[T], options: SearchOptions[T]): js.Array[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fuzzyFilter")(query.asInstanceOf[js.Any], searchable.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[T]]
   
-  @JSImport("@react-md/utils/types/search", "getFuzzyRegExp")
-  @js.native
-  def getFuzzyRegExp(query: String): RegExp = js.native
+  @scala.inline
+  def getFuzzyRegExp(query: String): RegExp = ^.asInstanceOf[js.Dynamic].applyDynamic("getFuzzyRegExp")(query.asInstanceOf[js.Any]).asInstanceOf[RegExp]
   
-  @JSImport("@react-md/utils/types/search", "getItemValue")
-  @js.native
-  def getItemValue(item: js.Any): String = js.native
-  @JSImport("@react-md/utils/types/search", "getItemValue")
-  @js.native
-  def getItemValue(item: js.Any, valueKey: String): String = js.native
+  @scala.inline
+  def getItemValue(item: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getItemValue(item: js.Any, valueKey: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getItemValue")(item.asInstanceOf[js.Any], valueKey.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(value: String): String = js.native
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(
-    value: String,
-    lowercase: js.UndefOr[scala.Nothing],
-    trim: js.UndefOr[scala.Nothing],
-    ignoreWhitespace: Boolean
-  ): String = js.native
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: js.UndefOr[scala.Nothing], trim: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: js.UndefOr[scala.Nothing], trim: Boolean, ignoreWhitespace: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean, trim: js.UndefOr[scala.Nothing], ignoreWhitespace: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean, trim: Boolean): String = js.native
-  @JSImport("@react-md/utils/types/search", "getSearchString")
-  @js.native
-  def getSearchString(value: String, lowercase: Boolean, trim: Boolean, ignoreWhitespace: Boolean): String = js.native
+  @scala.inline
+  def getSearchString(value: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean, trim: Boolean, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Boolean, trim: Unit, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Unit, trim: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Unit, trim: Boolean, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def getSearchString(value: String, lowercase: Unit, trim: Unit, ignoreWhitespace: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getSearchString")(value.asInstanceOf[js.Any], lowercase.asInstanceOf[js.Any], trim.asInstanceOf[js.Any], ignoreWhitespace.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@react-md/utils/types/search", "useKeyboardSearch")
-  @js.native
+  @scala.inline
   def useKeyboardSearch[D, E /* <: HTMLElement */](
     hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex: KeyboardSearchOptions[D, E]
-  ): ReturnValue[E] = js.native
+  ): ReturnValue[E] = ^.asInstanceOf[js.Dynamic].applyDynamic("useKeyboardSearch")(hasItemsOnChangeOnKeyDownResetTimeSearchIndexValueKeyGetItemValueFindMatchIndex.asInstanceOf[js.Any]).asInstanceOf[ReturnValue[E]]
 }

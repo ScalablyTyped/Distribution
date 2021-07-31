@@ -2,19 +2,19 @@ package typings.dynogels.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendedChain[T] extends BaseChain[T] {
+trait ExtendedChain[T]
+  extends StObject
+     with BaseChain[T] {
   
-  def contains(value: js.Any): T = js.native
+  def contains(value: js.Any): T
   
-  def in(values: js.Array[_]): T = js.native
+  def in(values: js.Array[js.Any]): T
   
-  def ne(value: js.Any): T = js.native
+  def ne(value: js.Any): T
   
-  def notContains(value: js.Any): T = js.native
+  def notContains(value: js.Any): T
 }
 object ExtendedChain {
   
@@ -28,7 +28,7 @@ object ExtendedChain {
     exists: () => T,
     gt: js.Any => T,
     gte: js.Any => T,
-    in: js.Array[_] => T,
+    in: js.Array[js.Any] => T,
     lt: js.Any => T,
     lte: js.Any => T,
     ne_ : js.Any => T,
@@ -44,13 +44,13 @@ object ExtendedChain {
   }
   
   @scala.inline
-  implicit class ExtendedChainMutableBuilder[Self <: ExtendedChain[_], T] (val x: Self with ExtendedChain[T]) extends AnyVal {
+  implicit class ExtendedChainMutableBuilder[Self <: ExtendedChain[?], T] (val x: Self & ExtendedChain[T]) extends AnyVal {
     
     @scala.inline
     def setContains(value: js.Any => T): Self = StObject.set(x, "contains", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setIn(value: js.Array[_] => T): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
+    def setIn(value: js.Array[js.Any] => T): Self = StObject.set(x, "in", js.Any.fromFunction1(value))
     
     @scala.inline
     def setNe_(value: js.Any => T): Self = StObject.set(x, "ne", js.Any.fromFunction1(value))

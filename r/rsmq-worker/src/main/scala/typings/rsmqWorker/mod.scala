@@ -9,7 +9,6 @@ import typings.redis.mod.RedisClient
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -23,7 +22,7 @@ object mod extends Shortcut {
   }
   @JSImport("rsmq-worker", JSImport.Namespace)
   @js.native
-  val ^ : RSMQWorkerStatic = js.native
+  val ^ : js.Object & RSMQWorkerStatic = js.native
   
   type CallbackT[R] = js.Function2[/* e */ js.UndefOr[Error], /* res */ js.UndefOr[R], Unit]
   
@@ -38,9 +37,9 @@ object mod extends Shortcut {
     
     def send(message: String): Client = js.native
     def send(message: String, cb: CallbackT[String]): Client = js.native
-    def send(message: String, delay: js.UndefOr[scala.Nothing], cb: CallbackT[String]): Client = js.native
     def send(message: String, delay: Double): Client = js.native
     def send(message: String, delay: Double, cb: CallbackT[String]): Client = js.native
+    def send(message: String, delay: Unit, cb: CallbackT[String]): Client = js.native
     
     def start(): Client = js.native
     
@@ -52,34 +51,33 @@ object mod extends Shortcut {
     Boolean
   ]
   
-  @js.native
   trait Options extends StObject {
     
-    var autostart: js.UndefOr[Boolean] = js.native
+    var autostart: js.UndefOr[Boolean] = js.undefined
     
-    var customExceedCheck: js.UndefOr[CustomExceedCheckCallback] = js.native
+    var customExceedCheck: js.UndefOr[CustomExceedCheckCallback] = js.undefined
     
-    var defaultDelay: js.UndefOr[Double] = js.native
+    var defaultDelay: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var invisibletime: js.UndefOr[Double] = js.native
+    var invisibletime: js.UndefOr[Double] = js.undefined
     
-    var maxReceiveCount: js.UndefOr[Double] = js.native
+    var maxReceiveCount: js.UndefOr[Double] = js.undefined
     
-    var options: js.UndefOr[ClientOpts] = js.native
+    var options: js.UndefOr[ClientOpts] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var redis: js.UndefOr[RedisClient] = js.native
+    var redis: js.UndefOr[RedisClient] = js.undefined
     
-    var redisPrefix: js.UndefOr[String] = js.native
+    var redisPrefix: js.UndefOr[String] = js.undefined
     
-    var rsmq: js.UndefOr[Client] = js.native
+    var rsmq: js.UndefOr[Client] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -176,11 +174,12 @@ object mod extends Shortcut {
   
   @js.native
   trait RSMQWorkerStatic
-    extends Instantiable1[/* queuename */ String, Client]
+    extends StObject
+       with Instantiable1[/* queuename */ String, Client]
        with Instantiable2[/* queuename */ String, /* options */ Options, Client]
   
-  type _To = RSMQWorkerStatic
+  type _To = js.Object & RSMQWorkerStatic
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: RSMQWorkerStatic = ^
+  override def _to: js.Object & RSMQWorkerStatic = ^
 }

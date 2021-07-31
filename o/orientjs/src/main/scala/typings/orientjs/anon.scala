@@ -3,15 +3,13 @@ package typings.orientjs
 import typings.orientjs.mod.CustomField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
   }
   object `0` {
     
@@ -32,10 +30,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.UndefOr[js.Array[CustomField]] = js.native
+    var fields: js.UndefOr[js.Array[CustomField]] = js.undefined
   }
   object Fields {
     
@@ -59,12 +56,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Force extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
-    var ifexist: js.UndefOr[Boolean] = js.native
+    var ifexist: js.UndefOr[Boolean] = js.undefined
   }
   object Force {
     
@@ -91,18 +87,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var name: String = js.native
+    var name: String
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Host {
     
@@ -141,12 +136,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
   }
   object Max {
     
@@ -173,12 +167,11 @@ object anon {
     }
   }
   
-  @js.native
   trait PageSize extends StObject {
     
-    var pageSize: js.UndefOr[Double] = js.native
+    var pageSize: js.UndefOr[Double] = js.undefined
     
-    var params: js.UndefOr[js.Any] = js.native
+    var params: js.UndefOr[js.Any] = js.undefined
   }
   object PageSize {
     

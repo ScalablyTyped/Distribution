@@ -1,8 +1,8 @@
 package typings.wonderFrp.es2015Mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/es2015", "TakeUntilStream")
 @js.native
@@ -13,11 +13,13 @@ class TakeUntilStream protected ()
     otherStream: typings.wonderFrp.coreStreamMod.Stream
   ) = this()
 }
-
 /* static members */
-@JSImport("wonder-frp/dist/es2015", "TakeUntilStream")
-@js.native
-object TakeUntilStream extends js.Object {
-  def create(source: typings.wonderFrp.coreStreamMod.Stream, otherSteam: typings.wonderFrp.coreStreamMod.Stream): typings.wonderFrp.streamTakeUntilStreamMod.TakeUntilStream = js.native
+object TakeUntilStream {
+  
+  @JSImport("wonder-frp/dist/es2015", "TakeUntilStream")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(source: typings.wonderFrp.coreStreamMod.Stream, otherSteam: typings.wonderFrp.coreStreamMod.Stream): typings.wonderFrp.streamTakeUntilStreamMod.TakeUntilStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(source.asInstanceOf[js.Any], otherSteam.asInstanceOf[js.Any])).asInstanceOf[typings.wonderFrp.streamTakeUntilStreamMod.TakeUntilStream]
 }
-

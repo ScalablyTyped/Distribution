@@ -3,15 +3,13 @@ package typings.playable
 import typings.playable.lifetimeMod.Lifetime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait IOptions extends StObject {
     
-    var lifetime: js.UndefOr[Lifetime] = js.native
+    var lifetime: js.UndefOr[Lifetime] = js.undefined
   }
   object IOptions {
     

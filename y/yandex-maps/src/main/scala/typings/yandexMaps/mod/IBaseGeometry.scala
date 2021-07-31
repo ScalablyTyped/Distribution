@@ -2,15 +2,15 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IBaseGeometry extends IEventEmitter {
+trait IBaseGeometry
+  extends StObject
+     with IEventEmitter {
   
-  def getBounds(): js.Array[js.Array[Double]] | Null = js.native
+  def getBounds(): js.Array[js.Array[Double]] | Null
   
-  def getType(): String = js.native
+  def getType(): String
 }
 object IBaseGeometry {
   

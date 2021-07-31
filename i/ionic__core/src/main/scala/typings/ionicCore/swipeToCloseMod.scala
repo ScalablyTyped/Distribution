@@ -5,10 +5,13 @@ import typings.ionicCore.componentsMod.global.HTMLIonModalElement
 import typings.ionicCore.gestureMod.Gesture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swipeToCloseMod {
+  
+  @JSImport("@ionic/core/dist/types/components/modal/gestures/swipe-to-close", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object SwipeToCloseDefaults {
     
@@ -23,7 +26,6 @@ object swipeToCloseMod {
     def MIN_PRESENTING_SCALE_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MIN_PRESENTING_SCALE")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@ionic/core/dist/types/components/modal/gestures/swipe-to-close", "createSwipeToCloseGesture")
-  @js.native
-  def createSwipeToCloseGesture(el: HTMLIonModalElement, animation: Animation, onDismiss: js.Function0[Unit]): Gesture = js.native
+  @scala.inline
+  def createSwipeToCloseGesture(el: HTMLIonModalElement, animation: Animation, onDismiss: js.Function0[Unit]): Gesture = (^.asInstanceOf[js.Dynamic].applyDynamic("createSwipeToCloseGesture")(el.asInstanceOf[js.Any], animation.asInstanceOf[js.Any], onDismiss.asInstanceOf[js.Any])).asInstanceOf[Gesture]
 }

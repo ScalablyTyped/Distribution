@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Extension of {@link XLibraryContainer2} . */
-@js.native
-trait XLibraryContainer3 extends XLibraryContainer2 {
+trait XLibraryContainer3
+  extends StObject
+     with XLibraryContainer2 {
   
   /**
     * returns the location of the library link target.
@@ -19,7 +19,7 @@ trait XLibraryContainer3 extends XLibraryContainer2 {
     * The returned URL is literally the same as the one provided in {@link XLibraryContainer.createLibraryLink()} . Otherwise the behavior is the same as
     * {@link XLibraryContainer2.getLibraryLinkURL()}
     */
-  def getOriginalLibraryLinkURL(Name: String): String = js.native
+  def getOriginalLibraryLinkURL(Name: String): String
 }
 object XLibraryContainer3 {
   

@@ -1,54 +1,86 @@
 package typings.tabris.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-trait Transformation extends js.Object {
+trait Transformation extends StObject {
+  
   /**
     * Clock-wise rotation in radians. Defaults to \`0\`.
     */
   var rotation: js.UndefOr[Double] = js.undefined
+  
   /**
     * Horizontal scale factor. Defaults to \`1\`.
     */
   var scaleX: js.UndefOr[Double] = js.undefined
+  
   /**
     * Vertical scale factor. Defaults to \`1\`.
     */
   var scaleY: js.UndefOr[Double] = js.undefined
+  
   /**
     * Horizontal translation (shift) in dip. Defaults to \`0\`.
     */
   var translationX: js.UndefOr[Double] = js.undefined
+  
   /**
     * Vertical translation (shift) in dip. Defaults to \`0\`.
     */
   var translationY: js.UndefOr[Double] = js.undefined
+  
   /**
     * Z-axis translation (shift) in dip. Defaults to \`0\`. Android 5.0+ only.
     */
   var translationZ: js.UndefOr[Double] = js.undefined
 }
-
 object Transformation {
+  
   @scala.inline
-  def apply(
-    rotation: Int | Double = null,
-    scaleX: Int | Double = null,
-    scaleY: Int | Double = null,
-    translationX: Int | Double = null,
-    translationY: Int | Double = null,
-    translationZ: Int | Double = null
-  ): Transformation = {
+  def apply(): Transformation = {
     val __obj = js.Dynamic.literal()
-    if (rotation != null) __obj.updateDynamic("rotation")(rotation.asInstanceOf[js.Any])
-    if (scaleX != null) __obj.updateDynamic("scaleX")(scaleX.asInstanceOf[js.Any])
-    if (scaleY != null) __obj.updateDynamic("scaleY")(scaleY.asInstanceOf[js.Any])
-    if (translationX != null) __obj.updateDynamic("translationX")(translationX.asInstanceOf[js.Any])
-    if (translationY != null) __obj.updateDynamic("translationY")(translationY.asInstanceOf[js.Any])
-    if (translationZ != null) __obj.updateDynamic("translationZ")(translationZ.asInstanceOf[js.Any])
     __obj.asInstanceOf[Transformation]
   }
+  
+  @scala.inline
+  implicit class TransformationMutableBuilder[Self <: Transformation] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
+    
+    @scala.inline
+    def setScaleX(value: Double): Self = StObject.set(x, "scaleX", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScaleXUndefined: Self = StObject.set(x, "scaleX", js.undefined)
+    
+    @scala.inline
+    def setScaleY(value: Double): Self = StObject.set(x, "scaleY", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setScaleYUndefined: Self = StObject.set(x, "scaleY", js.undefined)
+    
+    @scala.inline
+    def setTranslationX(value: Double): Self = StObject.set(x, "translationX", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTranslationXUndefined: Self = StObject.set(x, "translationX", js.undefined)
+    
+    @scala.inline
+    def setTranslationY(value: Double): Self = StObject.set(x, "translationY", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTranslationYUndefined: Self = StObject.set(x, "translationY", js.undefined)
+    
+    @scala.inline
+    def setTranslationZ(value: Double): Self = StObject.set(x, "translationZ", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTranslationZUndefined: Self = StObject.set(x, "translationZ", js.undefined)
+  }
 }
-

@@ -3,85 +3,68 @@ package typings.prettier.docMod
 import typings.prettier.mod.Doc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utils {
   
-  @JSImport("prettier/doc", "utils.isEmpty")
+  @JSImport("prettier/doc", "utils")
   @js.native
-  def isEmpty(doc: Doc_): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("prettier/doc", "utils.isLineNext")
-  @js.native
-  def isLineNext(doc: Doc_): Boolean = js.native
+  @scala.inline
+  def isEmpty(doc: Doc_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEmpty")(doc.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("prettier/doc", "utils.mapDoc")
-  @js.native
-  def mapDoc[T](doc: Doc_, callback: js.Function1[/* doc */ Doc_, T]): T = js.native
+  @scala.inline
+  def isLineNext(doc: Doc_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLineNext")(doc.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("prettier/doc", "utils.propagateBreaks")
-  @js.native
-  def propagateBreaks(doc: Doc_): Unit = js.native
+  @scala.inline
+  def mapDoc[T](doc: Doc_, callback: js.Function1[/* doc */ Doc_, T]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("mapDoc")(doc.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("prettier/doc", "utils.removeLines")
-  @js.native
-  def removeLines(doc: Doc_): Doc_ = js.native
+  @scala.inline
+  def propagateBreaks(doc: Doc_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("propagateBreaks")(doc.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("prettier/doc", "utils.stripTrailingHardline")
-  @js.native
-  def stripTrailingHardline(doc: Doc_): Doc_ = js.native
+  @scala.inline
+  def removeLines(doc: Doc_): Doc_ = ^.asInstanceOf[js.Dynamic].applyDynamic("removeLines")(doc.asInstanceOf[js.Any]).asInstanceOf[Doc_]
   
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
-  def traverseDoc(doc: Doc_): Unit = js.native
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
-  def traverseDoc(
-    doc: Doc_,
-    onEnter: js.UndefOr[scala.Nothing],
-    onExit: js.UndefOr[scala.Nothing],
-    shouldTraverseConditionalGroups: Boolean
-  ): Unit = js.native
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
-  def traverseDoc(doc: Doc_, onEnter: js.UndefOr[scala.Nothing], onExit: js.Function1[/* doc */ Doc_, Unit]): Unit = js.native
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
-  def traverseDoc(
-    doc: Doc_,
-    onEnter: js.UndefOr[scala.Nothing],
-    onExit: js.Function1[/* doc */ Doc_, Unit],
-    shouldTraverseConditionalGroups: Boolean
-  ): Unit = js.native
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
-  def traverseDoc(doc: Doc_, onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean]): Unit = js.native
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
-  def traverseDoc(
-    doc: Doc_,
-    onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean],
-    onExit: js.UndefOr[scala.Nothing],
-    shouldTraverseConditionalGroups: Boolean
-  ): Unit = js.native
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
+  @scala.inline
+  def stripTrailingHardline(doc: Doc_): Doc_ = ^.asInstanceOf[js.Dynamic].applyDynamic("stripTrailingHardline")(doc.asInstanceOf[js.Any]).asInstanceOf[Doc_]
+  
+  @scala.inline
+  def traverseDoc(doc: Doc_): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def traverseDoc(doc: Doc_, onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def traverseDoc(
     doc: Doc_,
     onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean],
     onExit: js.Function1[/* doc */ Doc_, Unit]
-  ): Unit = js.native
-  @JSImport("prettier/doc", "utils.traverseDoc")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def traverseDoc(
     doc: Doc_,
     onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean],
     onExit: js.Function1[/* doc */ Doc_, Unit],
     shouldTraverseConditionalGroups: Boolean
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], shouldTraverseConditionalGroups.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def traverseDoc(
+    doc: Doc_,
+    onEnter: js.Function1[/* doc */ Doc_, Unit | Boolean],
+    onExit: Unit,
+    shouldTraverseConditionalGroups: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], shouldTraverseConditionalGroups.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def traverseDoc(doc: Doc_, onEnter: Unit, onExit: js.Function1[/* doc */ Doc_, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def traverseDoc(
+    doc: Doc_,
+    onEnter: Unit,
+    onExit: js.Function1[/* doc */ Doc_, Unit],
+    shouldTraverseConditionalGroups: Boolean
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], shouldTraverseConditionalGroups.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def traverseDoc(doc: Doc_, onEnter: Unit, onExit: Unit, shouldTraverseConditionalGroups: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("traverseDoc")(doc.asInstanceOf[js.Any], onEnter.asInstanceOf[js.Any], onExit.asInstanceOf[js.Any], shouldTraverseConditionalGroups.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("prettier/doc", "utils.willBreak")
-  @js.native
-  def willBreak(doc: Doc_): Boolean = js.native
+  @scala.inline
+  def willBreak(doc: Doc_): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("willBreak")(doc.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

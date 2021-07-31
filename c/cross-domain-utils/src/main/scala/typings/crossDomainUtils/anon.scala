@@ -2,15 +2,13 @@ package typings.crossDomainUtils
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cancel extends StObject {
     
-    def cancel(): Unit = js.native
+    def cancel(): Unit
   }
   object Cancel {
     
@@ -28,12 +26,11 @@ object anon {
     }
   }
   
-  @js.native
   trait MockUserAgent extends StObject {
     
-    var mockUserAgent: js.UndefOr[String] = js.native
+    var mockUserAgent: js.UndefOr[String] = js.undefined
     
-    var userAgent: String = js.native
+    var userAgent: String
   }
   object MockUserAgent {
     
@@ -57,18 +54,17 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeofXMLHttpRequest extends StObject {
     
-    val DONE: Double = js.native
+    val DONE: Double
     
-    val HEADERS_RECEIVED: Double = js.native
+    val HEADERS_RECEIVED: Double
     
-    val LOADING: Double = js.native
+    val LOADING: Double
     
-    val OPENED: Double = js.native
+    val OPENED: Double
     
-    val UNSENT: Double = js.native
+    val UNSENT: Double
   }
   object TypeofXMLHttpRequest {
     

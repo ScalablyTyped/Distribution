@@ -2,13 +2,11 @@ package typings.momentMini.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MomentBuiltinFormat extends StObject {
   
-  var __momentBuiltinFormatBrand: js.Any = js.native
+  var __momentBuiltinFormatBrand: js.Any
 }
 object MomentBuiltinFormat {
   

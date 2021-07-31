@@ -2,17 +2,15 @@ package typings.jqueryTagsmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITypeaheadOverrides extends StObject {
   
-  var instanceSelectHandler: js.UndefOr[js.Function] = js.native
+  var instanceSelectHandler: js.UndefOr[js.Function] = js.undefined
   
-  var select: js.UndefOr[js.Function] = js.native
+  var select: js.UndefOr[js.Function] = js.undefined
   
-  var selectedClass: js.UndefOr[String] = js.native
+  var selectedClass: js.UndefOr[String] = js.undefined
 }
 object ITypeaheadOverrides {
   

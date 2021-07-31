@@ -2,23 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DiagnosticRelatedInformation extends StObject {
   
-  var category: DiagnosticCategory = js.native
+  var category: DiagnosticCategory
   
-  var code: Double = js.native
+  var code: Double
   
-  var file: js.UndefOr[SourceFile] = js.native
+  var file: js.UndefOr[SourceFile] = js.undefined
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var messageText: java.lang.String | DiagnosticMessageChain = js.native
+  var messageText: java.lang.String | DiagnosticMessageChain
   
-  var start: js.UndefOr[Double] = js.native
+  var start: js.UndefOr[Double] = js.undefined
 }
 object DiagnosticRelatedInformation {
   

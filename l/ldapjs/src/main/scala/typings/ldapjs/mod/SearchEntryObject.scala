@@ -3,16 +3,15 @@ package typings.ldapjs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchEntryObject
-  extends /* p */ StringDictionary[String | js.Array[String]] {
+  extends StObject
+     with /* p */ StringDictionary[String | js.Array[String]] {
   
-  var controls: js.Array[Control] = js.native
+  var controls: js.Array[Control]
   
-  var dn: String = js.native
+  var dn: String
 }
 object SearchEntryObject {
   

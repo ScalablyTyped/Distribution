@@ -2,18 +2,16 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ScrollDifference extends StObject {
   
   // The actual displacement as a result of a scroll is in the opposite
   // direction to the scroll itself. When scrolling down items are displaced
   // upwards. This value is the negated version of the 'value'
-  var displacement: Position = js.native
+  var displacement: Position
   
-  var value: Position = js.native
+  var value: Position
 }
 object ScrollDifference {
   

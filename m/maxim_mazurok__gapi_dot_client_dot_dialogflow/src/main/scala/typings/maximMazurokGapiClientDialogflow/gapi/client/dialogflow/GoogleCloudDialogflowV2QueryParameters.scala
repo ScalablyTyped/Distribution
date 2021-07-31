@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2QueryParameters extends StObject {
   
   /** The collection of contexts to be activated before this query is executed. */
-  var contexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.native
+  var contexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.undefined
   
   /** The geo location of this conversational query. */
-  var geoLocation: js.UndefOr[GoogleTypeLatLng] = js.native
+  var geoLocation: js.UndefOr[GoogleTypeLatLng] = js.undefined
   
   /**
     * This field can be used to pass custom data to your webhook. Arbitrary JSON objects are supported. If supplied, the value is used to populate the
@@ -22,23 +20,23 @@ trait GoogleCloudDialogflowV2QueryParameters extends StObject {
   var payload: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Specifies whether to delete all contexts in the current session before the new ones are activated. */
-  var resetContexts: js.UndefOr[Boolean] = js.native
+  var resetContexts: js.UndefOr[Boolean] = js.undefined
   
   /** Configures the type of sentiment analysis to perform. If not provided, sentiment analysis is not performed. */
-  var sentimentAnalysisRequestConfig: js.UndefOr[GoogleCloudDialogflowV2SentimentAnalysisRequestConfig] = js.native
+  var sentimentAnalysisRequestConfig: js.UndefOr[GoogleCloudDialogflowV2SentimentAnalysisRequestConfig] = js.undefined
   
   /** Additional session entity types to replace or extend developer entity types with. The entity synonyms apply to all languages and persist for the session of this query. */
-  var sessionEntityTypes: js.UndefOr[js.Array[GoogleCloudDialogflowV2SessionEntityType]] = js.native
+  var sessionEntityTypes: js.UndefOr[js.Array[GoogleCloudDialogflowV2SessionEntityType]] = js.undefined
   
   /**
     * The time zone of this conversational query from the [time zone database](https://www.iana.org/time-zones), e.g., America/New_York, Europe/Paris. If not provided, the time zone
     * specified in agent settings is used.
     */
-  var timeZone: js.UndefOr[String] = js.native
+  var timeZone: js.UndefOr[String] = js.undefined
   
   /**
     * This field can be used to pass HTTP headers for a webhook call. These headers will be sent to webhook along with the headers that have been configured through Dialogflow web
@@ -49,8 +47,8 @@ trait GoogleCloudDialogflowV2QueryParameters extends StObject {
   var webhookHeaders: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters & TopLevel[js.Any]
+  ] = js.undefined
 }
 object GoogleCloudDialogflowV2QueryParameters {
   
@@ -82,7 +80,7 @@ object GoogleCloudDialogflowV2QueryParameters {
     def setPayload(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -119,7 +117,7 @@ object GoogleCloudDialogflowV2QueryParameters {
     def setWebhookHeaders(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDialogflow.maximMazurokGapiClientDialogflowStrings.GoogleCloudDialogflowV2QueryParameters & TopLevel[js.Any]
     ): Self = StObject.set(x, "webhookHeaders", value.asInstanceOf[js.Any])
     
     @scala.inline

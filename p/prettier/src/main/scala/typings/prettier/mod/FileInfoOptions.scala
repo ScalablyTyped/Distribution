@@ -2,19 +2,17 @@ package typings.prettier.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileInfoOptions extends StObject {
   
-  var ignorePath: js.UndefOr[String] = js.native
+  var ignorePath: js.UndefOr[String] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[String]] = js.native
+  var plugins: js.UndefOr[js.Array[String]] = js.undefined
   
-  var resolveConfig: js.UndefOr[Boolean] = js.native
+  var resolveConfig: js.UndefOr[Boolean] = js.undefined
   
-  var withNodeModules: js.UndefOr[Boolean] = js.native
+  var withNodeModules: js.UndefOr[Boolean] = js.undefined
 }
 object FileInfoOptions {
   

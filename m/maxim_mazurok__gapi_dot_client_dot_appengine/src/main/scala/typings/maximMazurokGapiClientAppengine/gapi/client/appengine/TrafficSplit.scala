@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficSplit extends StObject {
   
   /**
@@ -17,11 +15,11 @@ trait TrafficSplit extends StObject {
   var allocations: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Mechanism used to determine which version a request is sent to. The traffic selection algorithm will be stable for either type until allocations are changed. */
-  var shardBy: js.UndefOr[String] = js.native
+  var shardBy: js.UndefOr[String] = js.undefined
 }
 object TrafficSplit {
   
@@ -38,7 +36,7 @@ object TrafficSplit {
     def setAllocations(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientAppengine.maximMazurokGapiClientAppengineStrings.TrafficSplit & TopLevel[js.Any]
     ): Self = StObject.set(x, "allocations", value.asInstanceOf[js.Any])
     
     @scala.inline

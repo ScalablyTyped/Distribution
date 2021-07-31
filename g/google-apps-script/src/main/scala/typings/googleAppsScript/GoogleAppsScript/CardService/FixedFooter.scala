@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The fixed footer shown at the bottom of an add-on Card.
   */
-@js.native
 trait FixedFooter extends StObject {
   
-  def setPrimaryButton(button: TextButton): FixedFooter = js.native
+  def setPrimaryButton(button: TextButton): FixedFooter
   
-  def setSecondaryButton(button: TextButton): FixedFooter = js.native
+  def setSecondaryButton(button: TextButton): FixedFooter
 }
 object FixedFooter {
   

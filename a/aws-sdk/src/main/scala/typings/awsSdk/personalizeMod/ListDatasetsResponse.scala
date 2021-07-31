@@ -2,21 +2,19 @@ package typings.awsSdk.personalizeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListDatasetsResponse extends StObject {
   
   /**
     * An array of Dataset objects. Each object provides metadata information.
     */
-  var datasets: js.UndefOr[Datasets] = js.native
+  var datasets: js.UndefOr[Datasets] = js.undefined
   
   /**
     * A token for getting the next set of datasets (if they exist).
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListDatasetsResponse {
   

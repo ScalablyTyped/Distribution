@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.Instantiable4
 import typings.markdownIt.libMod.MarkdownIt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserInlineMod {
   
   @JSImport("markdown-it/lib/parser_inline", JSImport.Namespace)
   @js.native
-  class ^ () extends ParserInline
-  
-  @js.native
-  trait ParserInline extends StObject {
+  class ^ ()
+    extends StObject
+       with ParserInline {
     
+    /* CompleteClass */
     var State: Instantiable4[
         /* src */ String, 
         /* md */ MarkdownIt, 
@@ -27,29 +26,72 @@ object parserInlineMod {
     /**
       * Process input string and push inline tokens into `outTokens`
       */
-    def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
+    /* CompleteClass */
+    override def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit = js.native
     
     /**
       * [[Ruler]] instance. Keep configuration of inline rules.
       */
+    /* CompleteClass */
     var ruler: typings.markdownIt.rulerMod.^[RuleInline] = js.native
     
     /**
       * [[Ruler]] instance. Second ruler used for post-processing
       * (e.g. in emphasis-like rules).
       */
+    /* CompleteClass */
     var ruler2: typings.markdownIt.rulerMod.^[RuleInline2] = js.native
     
     /**
       * Skip single token by running all rules in validation mode;
       * returns `true` if any rule reported success
       */
-    def skipToken(state: typings.markdownIt.stateInlineMod.^): Unit = js.native
+    /* CompleteClass */
+    override def skipToken(state: typings.markdownIt.stateInlineMod.^): Unit = js.native
     
     /**
       * Generate tokens for input range
       */
-    def tokenize(state: typings.markdownIt.stateInlineMod.^): Unit = js.native
+    /* CompleteClass */
+    override def tokenize(state: typings.markdownIt.stateInlineMod.^): Unit = js.native
+  }
+  
+  trait ParserInline extends StObject {
+    
+    var State: Instantiable4[
+        /* src */ String, 
+        /* md */ MarkdownIt, 
+        /* env */ js.Any, 
+        /* outTokens */ js.Array[typings.markdownIt.tokenMod.^], 
+        typings.markdownIt.stateInlineMod.^
+      ]
+    
+    /**
+      * Process input string and push inline tokens into `outTokens`
+      */
+    def parse(str: String, md: MarkdownIt, env: js.Any, outTokens: js.Array[typings.markdownIt.tokenMod.^]): Unit
+    
+    /**
+      * [[Ruler]] instance. Keep configuration of inline rules.
+      */
+    var ruler: typings.markdownIt.rulerMod.^[RuleInline]
+    
+    /**
+      * [[Ruler]] instance. Second ruler used for post-processing
+      * (e.g. in emphasis-like rules).
+      */
+    var ruler2: typings.markdownIt.rulerMod.^[RuleInline2]
+    
+    /**
+      * Skip single token by running all rules in validation mode;
+      * returns `true` if any rule reported success
+      */
+    def skipToken(state: typings.markdownIt.stateInlineMod.^): Unit
+    
+    /**
+      * Generate tokens for input range
+      */
+    def tokenize(state: typings.markdownIt.stateInlineMod.^): Unit
   }
   object ParserInline {
     

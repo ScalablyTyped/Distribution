@@ -3,37 +3,35 @@ package typings.atom.mod
 import typings.atom.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Package extends StObject {
   
   /** If a previous rebuild failed, get the contents of stderr. */
-  def getBuildFailureOutput(): String | Null = js.native
+  def getBuildFailureOutput(): String | Null
   
   // Native Module Compatibility
   /**
     *  Are all native modules depended on by this package correctly compiled
     *  against the current version of Atom?
     */
-  def isCompatible(): Boolean = js.native
+  def isCompatible(): Boolean
   
   /** The name of the Package. */
-  val name: String = js.native
+  val name: String
   
   // Event Subscription
   /** Invoke the given callback when all packages have been activated. */
-  def onDidDeactivate(callback: js.Function0[Unit]): Disposable = js.native
+  def onDidDeactivate(callback: js.Function0[Unit]): Disposable
   
   /** The path to the Package on disk. */
-  val path: String = js.native
+  val path: String
   
   /**
     *  Rebuild native modules in this package's dependencies for the current
     *  version of Atom.
     */
-  def rebuild(): js.Promise[Code] = js.native
+  def rebuild(): js.Promise[Code]
 }
 object Package {
   

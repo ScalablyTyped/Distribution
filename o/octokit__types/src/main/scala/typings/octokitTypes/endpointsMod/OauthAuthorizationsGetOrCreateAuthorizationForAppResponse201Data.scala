@@ -3,35 +3,33 @@ package typings.octokitTypes.endpointsMod
 import typings.octokitTypes.anon.Clientid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthorizationsGetOrCreateAuthorizationForAppResponse201Data extends StObject {
   
-  var app: Clientid = js.native
+  var app: Clientid
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var fingerprint: String = js.native
+  var fingerprint: String
   
-  var hashed_token: String = js.native
+  var hashed_token: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var note: String = js.native
+  var note: String
   
-  var note_url: String = js.native
+  var note_url: String
   
-  var scopes: js.Array[String] = js.native
+  var scopes: js.Array[String]
   
-  var token: String = js.native
+  var token: String
   
-  var token_last_eight: String = js.native
+  var token_last_eight: String
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
 }
 object OauthAuthorizationsGetOrCreateAuthorizationForAppResponse201Data {
   

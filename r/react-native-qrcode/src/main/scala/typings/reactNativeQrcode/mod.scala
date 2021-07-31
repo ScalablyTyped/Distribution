@@ -3,7 +3,6 @@ package typings.reactNativeQrcode
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,16 +14,15 @@ object mod {
   
   type QRCode = Component[QRCodeProperties, js.Object, js.Any]
   
-  @js.native
   trait QRCodeProperties extends StObject {
     
-    var bgColor: js.UndefOr[String] = js.native
+    var bgColor: js.UndefOr[String] = js.undefined
     
-    var fgColor: js.UndefOr[String] = js.native
+    var fgColor: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object QRCodeProperties {
     

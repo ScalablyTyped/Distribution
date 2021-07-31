@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Explanation extends StObject {
   
   /** Attribution of feature. */
-  var attribution: js.UndefOr[Double] = js.native
+  var attribution: js.UndefOr[Double] = js.undefined
   
   /** Full name of the feature. For non-numerical features, will be formatted like .. Overall size of feature name will always be truncated to first 120 characters. */
-  var featureName: js.UndefOr[String] = js.native
+  var featureName: js.UndefOr[String] = js.undefined
 }
 object Explanation {
   

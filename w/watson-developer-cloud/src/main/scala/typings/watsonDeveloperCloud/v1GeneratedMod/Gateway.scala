@@ -2,27 +2,25 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Object describing a specific gateway. */
-@js.native
 trait Gateway extends StObject {
   
   /** The gateway ID of the gateway. */
-  var gateway_id: js.UndefOr[String] = js.native
+  var gateway_id: js.UndefOr[String] = js.undefined
   
   /** The user defined name of the gateway. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The current status of the gateway. `connected` means the gateway is connected to the remotly installed gateway. `idle` means this gateway is not currently in use. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /** The generated **token** for this gateway. The value of this field is used when configuring the remotly installed gateway. */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   /** The generated **token_id** for this gateway. The value of this field is used when configuring the remotly installed gateway. */
-  var token_id: js.UndefOr[String] = js.native
+  var token_id: js.UndefOr[String] = js.undefined
 }
 object Gateway {
   

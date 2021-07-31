@@ -3,13 +3,11 @@ package typings.reactTable.mod
 import typings.reactTable.anon.ColumnWidth
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UseResizeColumnsState[D /* <: js.Object */] extends StObject {
   
-  var columnResizing: ColumnWidth = js.native
+  var columnResizing: ColumnWidth
 }
 object UseResizeColumnsState {
   
@@ -20,7 +18,7 @@ object UseResizeColumnsState {
   }
   
   @scala.inline
-  implicit class UseResizeColumnsStateMutableBuilder[Self <: UseResizeColumnsState[_], D /* <: js.Object */] (val x: Self with UseResizeColumnsState[D]) extends AnyVal {
+  implicit class UseResizeColumnsStateMutableBuilder[Self <: UseResizeColumnsState[?], D /* <: js.Object */] (val x: Self & UseResizeColumnsState[D]) extends AnyVal {
     
     @scala.inline
     def setColumnResizing(value: ColumnWidth): Self = StObject.set(x, "columnResizing", value.asInstanceOf[js.Any])

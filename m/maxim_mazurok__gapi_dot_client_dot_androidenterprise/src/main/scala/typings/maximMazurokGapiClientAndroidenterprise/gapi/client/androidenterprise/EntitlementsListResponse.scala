@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EntitlementsListResponse extends StObject {
   
   /** An entitlement of a user to a product (e.g. an app). For example, a free app that they have installed, or a paid app that they have been allocated a license to. */
-  var entitlement: js.UndefOr[js.Array[Entitlement]] = js.native
+  var entitlement: js.UndefOr[js.Array[Entitlement]] = js.undefined
 }
 object EntitlementsListResponse {
   

@@ -2,46 +2,44 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CellSelectionChangingEventUIParam extends StObject {
   
   /**
     * Gets reference to the cell object.
     */
-  var cell: js.UndefOr[js.Any] = js.native
+  var cell: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets the column index for the first cell in a range selection.
     */
-  var firstColumnIndex: js.UndefOr[Double] = js.native
+  var firstColumnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the row index for the first cell in a range selection.
     */
-  var firstRowIndex: js.UndefOr[Double] = js.native
+  var firstRowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the column index for the last cell in a range selection.
     */
-  var lastColumnIndex: js.UndefOr[Double] = js.native
+  var lastColumnIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets the row index for the last cell in a range selection.
     */
-  var lastRowIndex: js.UndefOr[Double] = js.native
+  var lastRowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets reference to GridSelection.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets reference to selected cells object array.
     */
-  var selectedCells: js.UndefOr[js.Array[_]] = js.native
+  var selectedCells: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object CellSelectionChangingEventUIParam {
   
@@ -91,7 +89,7 @@ object CellSelectionChangingEventUIParam {
     def setOwnerUndefined: Self = StObject.set(x, "owner", js.undefined)
     
     @scala.inline
-    def setSelectedCells(value: js.Array[_]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
+    def setSelectedCells(value: js.Array[js.Any]): Self = StObject.set(x, "selectedCells", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelectedCellsUndefined: Self = StObject.set(x, "selectedCells", js.undefined)

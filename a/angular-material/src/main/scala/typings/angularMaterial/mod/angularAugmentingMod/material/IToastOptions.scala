@@ -10,44 +10,42 @@ import typings.angularMaterial.angularMaterialBooleans.`false`
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IToastOptions extends StObject {
   
-  var autoWrap: js.UndefOr[Boolean] = js.native
+  var autoWrap: js.UndefOr[Boolean] = js.undefined
   
-  var bindToController: js.UndefOr[Boolean] = js.native
+  var bindToController: js.UndefOr[Boolean] = js.undefined
   
-  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.native
+  var controller: js.UndefOr[String | Injectable[IControllerConstructor]] = js.undefined
   
-  var controllerAs: js.UndefOr[String] = js.native
+  var controllerAs: js.UndefOr[String] = js.undefined
   
   // default: false
-  var hideDelay: js.UndefOr[Double | `false`] = js.native
+  var hideDelay: js.UndefOr[Double | `false`] = js.undefined
   
-  var locals: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var locals: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var parent: js.UndefOr[String | Element | JQuery] = js.native
+  var parent: js.UndefOr[String | Element | JQuery] = js.undefined
   
   // default (ms): 3000
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   // default: new child scope
-  var preserveScope: js.UndefOr[Boolean] = js.native
+  var preserveScope: js.UndefOr[Boolean] = js.undefined
   
   // default: false
-  var resolve: js.UndefOr[ResolveObject] = js.native
+  var resolve: js.UndefOr[ResolveObject] = js.undefined
   
-  var scope: js.UndefOr[IScope] = js.native
+  var scope: js.UndefOr[IScope] = js.undefined
   
-  var template: js.UndefOr[String] = js.native
+  var template: js.UndefOr[String] = js.undefined
   
-  var templateUrl: js.UndefOr[String] = js.native
+  var templateUrl: js.UndefOr[String] = js.undefined
   
   // any combination of 'bottom'/'left'/'top'/'right'/'fit'; default: 'bottom left'
-  var toastClass: js.UndefOr[String] = js.native
+  var toastClass: js.UndefOr[String] = js.undefined
 }
 object IToastOptions {
   

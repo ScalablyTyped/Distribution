@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationNotWorkingEvidence extends StObject {
   
   /** DNS lookup errors. */
-  var dnsError: js.UndefOr[String] = js.native
+  var dnsError: js.UndefOr[String] = js.undefined
   
   /** The full non-working URL. */
-  var expandedUrl: js.UndefOr[String] = js.native
+  var expandedUrl: js.UndefOr[String] = js.undefined
   
   /** HTTP error code (e.g. 404 or 5xx) */
-  var httpError: js.UndefOr[Double] = js.native
+  var httpError: js.UndefOr[Double] = js.undefined
   
   /** Page was crawled successfully, but was detected as either a page with no content or an error page. */
-  var invalidPage: js.UndefOr[String] = js.native
+  var invalidPage: js.UndefOr[String] = js.undefined
   
   /** Approximate time when the ad destination was last checked. */
-  var lastCheckTime: js.UndefOr[String] = js.native
+  var lastCheckTime: js.UndefOr[String] = js.undefined
   
   /** Platform of the non-working URL. */
-  var platform: js.UndefOr[String] = js.native
+  var platform: js.UndefOr[String] = js.undefined
   
   /** HTTP redirect chain error. */
-  var redirectionError: js.UndefOr[String] = js.native
+  var redirectionError: js.UndefOr[String] = js.undefined
   
   /** Rejected because of malformed URLs or invalid requests. */
-  var urlRejected: js.UndefOr[String] = js.native
+  var urlRejected: js.UndefOr[String] = js.undefined
 }
 object DestinationNotWorkingEvidence {
   

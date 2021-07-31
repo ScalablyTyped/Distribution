@@ -2,213 +2,211 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actionsheetitemfontsize extends StObject {
   
-  var action_sheet_zindex: Double = js.native
+  var action_sheet_zindex: Double
   
-  var actionsheet_item_font_size: Double = js.native
+  var actionsheet_item_font_size: Double
   
-  var actionsheet_item_height: Double = js.native
+  var actionsheet_item_height: Double
   
-  var border_color_base: String = js.native
+  var border_color_base: String
   
-  var border_width_lg: Double = js.native
+  var border_width_lg: Double
   
-  var border_width_md: Double = js.native
+  var border_width_md: Double
   
-  var border_width_sm: Double = js.native
+  var border_width_sm: Double
   
-  var brand_error: String = js.native
+  var brand_error: String
   
-  var brand_important: String = js.native
+  var brand_important: String
   
-  var brand_primary: String = js.native
+  var brand_primary: String
   
-  var brand_primary_tap: String = js.native
+  var brand_primary_tap: String
   
-  var brand_success: String = js.native
+  var brand_success: String
   
-  var brand_wait: String = js.native
+  var brand_wait: String
   
-  var brand_warning: String = js.native
+  var brand_warning: String
   
-  var button_font_size: Double = js.native
+  var button_font_size: Double
   
-  var button_font_size_sm: Double = js.native
+  var button_font_size_sm: Double
   
-  var button_height: Double = js.native
+  var button_height: Double
   
-  var button_height_sm: Double = js.native
+  var button_height_sm: Double
   
-  var color_icon_base: String = js.native
+  var color_icon_base: String
   
-  var color_link: String = js.native
+  var color_link: String
   
-  var color_text_base: String = js.native
+  var color_text_base: String
   
-  var color_text_base_inverse: String = js.native
+  var color_text_base_inverse: String
   
-  var color_text_caption: String = js.native
+  var color_text_caption: String
   
-  var color_text_disabled: String = js.native
+  var color_text_disabled: String
   
-  var color_text_paragraph: String = js.native
+  var color_text_paragraph: String
   
-  var color_text_placeholder: String = js.native
+  var color_text_placeholder: String
   
-  var color_text_secondary: String = js.native
+  var color_text_secondary: String
   
-  var ease_in_out_quint: String = js.native
+  var ease_in_out_quint: String
   
-  var fill_base: String = js.native
+  var fill_base: String
   
-  var fill_body: String = js.native
+  var fill_body: String
   
-  var fill_disabled: String = js.native
+  var fill_disabled: String
   
-  var fill_grey: String = js.native
+  var fill_grey: String
   
-  var fill_mask: String = js.native
+  var fill_mask: String
   
-  var fill_tap: String = js.native
+  var fill_tap: String
   
-  var font_size_base: Double = js.native
+  var font_size_base: Double
   
-  var font_size_caption: Double = js.native
+  var font_size_caption: Double
   
-  var font_size_caption_sm: Double = js.native
+  var font_size_caption_sm: Double
   
-  var font_size_heading: Double = js.native
+  var font_size_heading: Double
   
-  var font_size_icontext: Double = js.native
+  var font_size_icontext: Double
   
-  var font_size_subhead: Double = js.native
+  var font_size_subhead: Double
   
-  var ghost_button_color: String = js.native
+  var ghost_button_color: String
   
-  var ghost_button_fill_tap: String = js.native
+  var ghost_button_fill_tap: String
   
-  var h_spacing_lg: Double = js.native
+  var h_spacing_lg: Double
   
-  var h_spacing_md: Double = js.native
+  var h_spacing_md: Double
   
-  var h_spacing_sm: Double = js.native
+  var h_spacing_sm: Double
   
-  var icon_size_lg: Double = js.native
+  var icon_size_lg: Double
   
-  var icon_size_md: Double = js.native
+  var icon_size_md: Double
   
-  var icon_size_sm: Double = js.native
+  var icon_size_sm: Double
   
-  var icon_size_xs: Double = js.native
+  var icon_size_xs: Double
   
-  var icon_size_xxs: Double = js.native
+  var icon_size_xxs: Double
   
-  var input_color_icon: String = js.native
+  var input_color_icon: String
   
-  var input_color_icon_tap: String = js.native
+  var input_color_icon_tap: String
   
-  var input_font_size: Double = js.native
+  var input_font_size: Double
   
-  var input_label_width: Double = js.native
+  var input_label_width: Double
   
-  var line_height_base: Double = js.native
+  var line_height_base: Double
   
-  var line_height_paragraph: Double = js.native
+  var line_height_paragraph: Double
   
-  var link_button_fill_tap: String = js.native
+  var link_button_fill_tap: String
   
-  var link_button_font_size: Double = js.native
+  var link_button_font_size: Double
   
-  var list_item_height: Double = js.native
+  var list_item_height: Double
   
-  var list_item_height_sm: Double = js.native
+  var list_item_height_sm: Double
   
-  var list_title_height: Double = js.native
+  var list_title_height: Double
   
-  var modal_button_font_size: Double = js.native
+  var modal_button_font_size: Double
   
-  var modal_button_height: Double = js.native
+  var modal_button_height: Double
   
-  var modal_font_size_heading: Double = js.native
+  var modal_font_size_heading: Double
   
-  var modal_zindex: Double = js.native
+  var modal_zindex: Double
   
-  var notice_bar_fill: String = js.native
+  var notice_bar_fill: String
   
-  var notice_bar_height: Double = js.native
+  var notice_bar_height: Double
   
-  var opacity_disabled: String = js.native
+  var opacity_disabled: String
   
-  var option_height: Double = js.native
+  var option_height: Double
   
-  var popup_zindex: Double = js.native
+  var popup_zindex: Double
   
-  var primary_button_fill: String = js.native
+  var primary_button_fill: String
   
-  var primary_button_fill_tap: String = js.native
+  var primary_button_fill_tap: String
   
-  var radius_lg: Double = js.native
+  var radius_lg: Double
   
-  var radius_md: Double = js.native
+  var radius_md: Double
   
-  var radius_sm: Double = js.native
+  var radius_sm: Double
   
-  var radius_xs: Double = js.native
+  var radius_xs: Double
   
-  var search_bar_fill: String = js.native
+  var search_bar_fill: String
   
-  var search_bar_font_size: Double = js.native
+  var search_bar_font_size: Double
   
-  var search_bar_height: Double = js.native
+  var search_bar_height: Double
   
-  var search_bar_input_height: Double = js.native
+  var search_bar_input_height: Double
   
-  var search_color_icon: String = js.native
+  var search_color_icon: String
   
-  var segmented_control_color: String = js.native
+  var segmented_control_color: String
   
-  var segmented_control_fill_tap: String = js.native
+  var segmented_control_fill_tap: String
   
-  var segmented_control_height: Double = js.native
+  var segmented_control_height: Double
   
-  var switch_fill: String = js.native
+  var switch_fill: String
   
-  var tab_bar_fill: String = js.native
+  var tab_bar_fill: String
   
-  var tab_bar_height: Double = js.native
+  var tab_bar_height: Double
   
-  var tabs_color: String = js.native
+  var tabs_color: String
   
-  var tabs_font_size_heading: Double = js.native
+  var tabs_font_size_heading: Double
   
-  var tabs_height: Double = js.native
+  var tabs_height: Double
   
-  var tag_height: Double = js.native
+  var tag_height: Double
   
-  var tag_small_height: Double = js.native
+  var tag_small_height: Double
   
-  var toast_fill: String = js.native
+  var toast_fill: String
   
-  var toast_zindex: Double = js.native
+  var toast_zindex: Double
   
-  var v_spacing_lg: Double = js.native
+  var v_spacing_lg: Double
   
-  var v_spacing_md: Double = js.native
+  var v_spacing_md: Double
   
-  var v_spacing_sm: Double = js.native
+  var v_spacing_sm: Double
   
-  var v_spacing_xl: Double = js.native
+  var v_spacing_xl: Double
   
-  var v_spacing_xs: Double = js.native
+  var v_spacing_xs: Double
   
-  var warning_button_fill: String = js.native
+  var warning_button_fill: String
   
-  var warning_button_fill_tap: String = js.native
+  var warning_button_fill_tap: String
 }
 object Actionsheetitemfontsize {
   

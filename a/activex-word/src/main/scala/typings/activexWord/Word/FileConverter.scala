@@ -2,38 +2,36 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileConverter extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val CanOpen: Boolean = js.native
+  val CanOpen: Boolean
   
-  val CanSave: Boolean = js.native
+  val CanSave: Boolean
   
-  val ClassName: String = js.native
+  val ClassName: String
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Extensions: String = js.native
+  val Extensions: String
   
-  val FormatName: String = js.native
+  val FormatName: String
   
-  val Name: String = js.native
+  val Name: String
   
-  val OpenFormat: Double = js.native
+  val OpenFormat: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Path: String = js.native
+  val Path: String
   
-  val SaveFormat: Double = js.native
+  val SaveFormat: Double
   
   @JSName("Word.FileConverter_typekey")
-  var WordDotFileConverter_typekey: FileConverter = js.native
+  var WordDotFileConverter_typekey: FileConverter
 }
 object FileConverter {
   

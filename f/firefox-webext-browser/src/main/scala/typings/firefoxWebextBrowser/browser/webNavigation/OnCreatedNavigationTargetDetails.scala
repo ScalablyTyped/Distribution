@@ -2,31 +2,29 @@ package typings.firefoxWebextBrowser.browser.webNavigation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnCreatedNavigationTargetDetails extends StObject {
   
   /**
     * The ID of the frame with sourceTabId in which the navigation is triggered. 0 indicates the main frame.
     */
-  var sourceFrameId: Double = js.native
+  var sourceFrameId: Double
   
   /** The ID of the process runs the renderer for the source tab. */
-  var sourceProcessId: Double = js.native
+  var sourceProcessId: Double
   
   /** The ID of the tab in which the navigation is triggered. */
-  var sourceTabId: Double = js.native
+  var sourceTabId: Double
   
   /** The ID of the tab in which the url is opened */
-  var tabId: Double = js.native
+  var tabId: Double
   
   /** The time when the browser was about to create a new view, in milliseconds since the epoch. */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
   
   /** The URL to be opened in the new window. */
-  var url: String = js.native
+  var url: String
 }
 object OnCreatedNavigationTargetDetails {
   

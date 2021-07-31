@@ -5,16 +5,17 @@ import typings.bip174.parserMod.PsbtAttributes
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toBufferMod {
   
-  @JSImport("bip174/src/lib/parser/toBuffer", "psbtToBuffer")
+  @JSImport("bip174/src/lib/parser/toBuffer", JSImport.Namespace)
   @js.native
-  def psbtToBuffer(hasGlobalMapInputsOutputs: PsbtAttributes): Buffer = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("bip174/src/lib/parser/toBuffer", "psbtToKeyVals")
-  @js.native
-  def psbtToKeyVals(hasGlobalMapInputsOutputs: PsbtAttributes): GlobalKeyVals = js.native
+  @scala.inline
+  def psbtToBuffer(hasGlobalMapInputsOutputs: PsbtAttributes): Buffer = ^.asInstanceOf[js.Dynamic].applyDynamic("psbtToBuffer")(hasGlobalMapInputsOutputs.asInstanceOf[js.Any]).asInstanceOf[Buffer]
+  
+  @scala.inline
+  def psbtToKeyVals(hasGlobalMapInputsOutputs: PsbtAttributes): GlobalKeyVals = ^.asInstanceOf[js.Dynamic].applyDynamic("psbtToKeyVals")(hasGlobalMapInputsOutputs.asInstanceOf[js.Any]).asInstanceOf[GlobalKeyVals]
 }

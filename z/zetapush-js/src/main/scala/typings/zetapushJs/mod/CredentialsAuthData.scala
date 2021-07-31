@@ -2,15 +2,13 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CredentialsAuthData extends StObject {
   
-  var login: String = js.native
+  var login: String
   
-  var password: String = js.native
+  var password: String
 }
 object CredentialsAuthData {
   

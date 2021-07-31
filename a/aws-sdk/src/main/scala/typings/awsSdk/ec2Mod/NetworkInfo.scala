@@ -2,61 +2,59 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkInfo extends StObject {
   
   /**
     * The index of the default network card, starting at 0.
     */
-  var DefaultNetworkCardIndex: js.UndefOr[typings.awsSdk.ec2Mod.DefaultNetworkCardIndex] = js.native
+  var DefaultNetworkCardIndex: js.UndefOr[typings.awsSdk.ec2Mod.DefaultNetworkCardIndex] = js.undefined
   
   /**
     * Indicates whether Elastic Fabric Adapter (EFA) is supported.
     */
-  var EfaSupported: js.UndefOr[EfaSupportedFlag] = js.native
+  var EfaSupported: js.UndefOr[EfaSupportedFlag] = js.undefined
   
   /**
     * Indicates whether Elastic Network Adapter (ENA) is supported.
     */
-  var EnaSupport: js.UndefOr[typings.awsSdk.ec2Mod.EnaSupport] = js.native
+  var EnaSupport: js.UndefOr[typings.awsSdk.ec2Mod.EnaSupport] = js.undefined
   
   /**
     * The maximum number of IPv4 addresses per network interface.
     */
-  var Ipv4AddressesPerInterface: js.UndefOr[MaxIpv4AddrPerInterface] = js.native
+  var Ipv4AddressesPerInterface: js.UndefOr[MaxIpv4AddrPerInterface] = js.undefined
   
   /**
     * The maximum number of IPv6 addresses per network interface.
     */
-  var Ipv6AddressesPerInterface: js.UndefOr[MaxIpv6AddrPerInterface] = js.native
+  var Ipv6AddressesPerInterface: js.UndefOr[MaxIpv6AddrPerInterface] = js.undefined
   
   /**
     * Indicates whether IPv6 is supported.
     */
-  var Ipv6Supported: js.UndefOr[Ipv6Flag] = js.native
+  var Ipv6Supported: js.UndefOr[Ipv6Flag] = js.undefined
   
   /**
     * The maximum number of physical network cards that can be allocated to the instance.
     */
-  var MaximumNetworkCards: js.UndefOr[typings.awsSdk.ec2Mod.MaximumNetworkCards] = js.native
+  var MaximumNetworkCards: js.UndefOr[typings.awsSdk.ec2Mod.MaximumNetworkCards] = js.undefined
   
   /**
     * The maximum number of network interfaces for the instance type.
     */
-  var MaximumNetworkInterfaces: js.UndefOr[MaxNetworkInterfaces] = js.native
+  var MaximumNetworkInterfaces: js.UndefOr[MaxNetworkInterfaces] = js.undefined
   
   /**
     * Describes the network cards for the instance type.
     */
-  var NetworkCards: js.UndefOr[NetworkCardInfoList] = js.native
+  var NetworkCards: js.UndefOr[NetworkCardInfoList] = js.undefined
   
   /**
     * The network performance.
     */
-  var NetworkPerformance: js.UndefOr[typings.awsSdk.ec2Mod.NetworkPerformance] = js.native
+  var NetworkPerformance: js.UndefOr[typings.awsSdk.ec2Mod.NetworkPerformance] = js.undefined
 }
 object NetworkInfo {
   

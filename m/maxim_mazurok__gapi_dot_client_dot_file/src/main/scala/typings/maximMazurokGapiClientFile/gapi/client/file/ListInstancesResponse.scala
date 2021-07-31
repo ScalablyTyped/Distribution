@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientFile.gapi.client.file
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListInstancesResponse extends StObject {
   
   /**
     * A list of instances in the project for the specified location. If the {location} value in the request is "-", the response contains a list of instances from all locations. If any
     * location is unreachable, the response will only return instances in reachable locations and the "unreachable" field will be populated with a list of unreachable locations.
     */
-  var instances: js.UndefOr[js.Array[Instance]] = js.native
+  var instances: js.UndefOr[js.Array[Instance]] = js.undefined
   
   /** The token you can use to retrieve the next page of results. Not returned if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Locations that could not be reached. */
-  var unreachable: js.UndefOr[js.Array[String]] = js.native
+  var unreachable: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ListInstancesResponse {
   

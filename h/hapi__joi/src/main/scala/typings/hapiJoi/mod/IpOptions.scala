@@ -2,21 +2,19 @@ package typings.hapiJoi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IpOptions extends StObject {
   
   /**
     * Used to determine if a CIDR is allowed or not. Valid values: optional, required, forbidden
     */
-  var cidr: js.UndefOr[PresenceMode] = js.native
+  var cidr: js.UndefOr[PresenceMode] = js.undefined
   
   /**
     * One or more IP address versions to validate against. Valid values: ipv4, ipv6, ipvfuture
     */
-  var version: js.UndefOr[String | js.Array[String]] = js.native
+  var version: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IpOptions {
   

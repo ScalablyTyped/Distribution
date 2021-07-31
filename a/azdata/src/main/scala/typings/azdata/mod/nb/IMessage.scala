@@ -2,19 +2,17 @@ package typings.azdata.mod.nb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMessage extends StObject {
   
-  var content: js.Any = js.native
+  var content: js.Any
   
-  var header: IHeader = js.native
+  var header: IHeader
   
-  var parent_header: IHeader | js.Object = js.native
+  var parent_header: IHeader | js.Object
   
-  var `type`: Channel = js.native
+  var `type`: Channel
 }
 object IMessage {
   

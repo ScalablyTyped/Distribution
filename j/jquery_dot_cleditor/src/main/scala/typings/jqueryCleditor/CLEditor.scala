@@ -3,7 +3,6 @@ package typings.jqueryCleditor
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -37,9 +36,9 @@ trait CLEditor extends StObject {
   var doc: Document = js.native
   
   def execCommand(commands: String, value: js.Any): CLEditor = js.native
-  def execCommand(commands: String, value: js.Any, useCSS: js.UndefOr[scala.Nothing], button: js.Any): CLEditor = js.native
   def execCommand(commands: String, value: js.Any, useCSS: Boolean): CLEditor = js.native
   def execCommand(commands: String, value: js.Any, useCSS: Boolean, button: js.Any): CLEditor = js.native
+  def execCommand(commands: String, value: js.Any, useCSS: Unit, button: js.Any): CLEditor = js.native
   
   def focus(): CLEditor = js.native
   

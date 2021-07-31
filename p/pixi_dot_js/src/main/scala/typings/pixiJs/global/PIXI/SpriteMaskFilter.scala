@@ -2,7 +2,6 @@ package typings.pixiJs.global.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,6 +16,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.SpriteMaskFilter")
 @js.native
 class SpriteMaskFilter protected ()
-  extends typings.pixiJs.PIXI.SpriteMaskFilter {
+  extends StObject
+     with typings.pixiJs.PIXI.SpriteMaskFilter {
   def this(sprite: typings.pixiJs.PIXI.Sprite) = this()
+  
+  /**
+    * Program that the shader uses
+    *
+    * @member {PIXI.Program} PIXI.Shader#program
+    */
+  /* CompleteClass */
+  var program: typings.pixiJs.PIXI.Program = js.native
+  
+  /**
+    * Shader uniform values, shortcut for `uniformGroup.uniforms`
+    * @readonly
+    * @member {object}
+    */
+  /* CompleteClass */
+  override val uniforms: js.Any = js.native
 }

@@ -6,33 +6,33 @@ import typings.elasticElasticsearch.elasticElasticsearchStrings.internal
 import typings.elasticElasticsearch.elasticElasticsearchStrings.wait_for
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Create[T] extends Generic {
+trait Create[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var id: String = js.native
+  var id: String
   
-  var index: String = js.native
+  var index: String
   
-  var pipeline: js.UndefOr[String] = js.native
+  var pipeline: js.UndefOr[String] = js.undefined
   
-  var refresh: js.UndefOr[wait_for | Boolean] = js.native
+  var refresh: js.UndefOr[wait_for | Boolean] = js.undefined
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
-  var version_type: js.UndefOr[internal | external | external_gte] = js.native
+  var version_type: js.UndefOr[internal | external | external_gte] = js.undefined
   
-  var wait_for_active_shards: js.UndefOr[String] = js.native
+  var wait_for_active_shards: js.UndefOr[String] = js.undefined
 }
 object Create {
   
@@ -43,7 +43,7 @@ object Create {
   }
   
   @scala.inline
-  implicit class CreateMutableBuilder[Self <: Create[_], T] (val x: Self with Create[T]) extends AnyVal {
+  implicit class CreateMutableBuilder[Self <: Create[?], T] (val x: Self & Create[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

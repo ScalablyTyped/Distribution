@@ -4,7 +4,6 @@ import typings.p2.anon.OptimalDecomp
 import typings.p2.anon.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("p2", "Body")
@@ -17,9 +16,9 @@ class Body () extends EventEmitter {
   var aabbNeedsUpdate: Boolean = js.native
   
   def addShape(shape: Shape): Unit = js.native
-  def addShape(shape: Shape, offset: js.UndefOr[scala.Nothing], angle: Double): Unit = js.native
   def addShape(shape: Shape, offset: js.Tuple2[Double, Double]): Unit = js.native
   def addShape(shape: Shape, offset: js.Tuple2[Double, Double], angle: Double): Unit = js.native
+  def addShape(shape: Shape, offset: Unit, angle: Double): Unit = js.native
   
   def adjustCenterOfMass(): Unit = js.native
   

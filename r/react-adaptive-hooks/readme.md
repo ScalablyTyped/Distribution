@@ -11,8 +11,8 @@ Give users a great experience best suited to their device and network constraint
 | Full name          | react-adaptive-hooks |
 | Keywords           | react-hooks, hooks, react, performance |
 | # releases         | 10 |
-| # dependents       | 0 |
-| # downloads        | 87461 |
+| # dependents       | 1 |
+| # downloads        | 217303 |
 | # stars            | 0 |
 
 ## Links

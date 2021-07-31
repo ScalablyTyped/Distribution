@@ -2,21 +2,19 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteEnvironmentConfigurationMessage extends StObject {
   
   /**
     * The name of the application the environment is associated with.
     */
-  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.elasticbeanstalkMod.ApplicationName
   
   /**
     * The name of the environment to delete the draft configuration from.
     */
-  var EnvironmentName: typings.awsSdk.elasticbeanstalkMod.EnvironmentName = js.native
+  var EnvironmentName: typings.awsSdk.elasticbeanstalkMod.EnvironmentName
 }
 object DeleteEnvironmentConfigurationMessage {
   

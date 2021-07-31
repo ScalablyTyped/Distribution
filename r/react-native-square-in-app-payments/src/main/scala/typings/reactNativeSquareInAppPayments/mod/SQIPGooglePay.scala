@@ -2,10 +2,13 @@ package typings.reactNativeSquareInAppPayments.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SQIPGooglePay {
+  
+  @JSImport("react-native-square-in-app-payments", "SQIPGooglePay")
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait GooglePayEnvironment extends StObject
@@ -14,17 +17,21 @@ object SQIPGooglePay {
   object GooglePayEnvironment extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[GooglePayEnvironment with Double] = js.native
+    def apply(value: Double): js.UndefOr[GooglePayEnvironment & Double] = js.native
     
     /** Environment to be used when an app is granted access to the Google Pay production environment. */
     @js.native
-    sealed trait EnvironmentProduction extends GooglePayEnvironment
-    /* 1 */ val EnvironmentProduction: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayEnvironment.EnvironmentProduction with Double = js.native
+    sealed trait EnvironmentProduction
+      extends StObject
+         with GooglePayEnvironment
+    /* 1 */ val EnvironmentProduction: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayEnvironment.EnvironmentProduction & Double = js.native
     
     /** Environment to be used for development and testing an application before approval for production. */
     @js.native
-    sealed trait EnvironmentTest extends GooglePayEnvironment
-    /* 3 */ val EnvironmentTest: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayEnvironment.EnvironmentTest with Double = js.native
+    sealed trait EnvironmentTest
+      extends StObject
+         with GooglePayEnvironment
+    /* 3 */ val EnvironmentTest: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayEnvironment.EnvironmentTest & Double = js.native
   }
   
   @js.native
@@ -35,22 +42,28 @@ object SQIPGooglePay {
   object GooglePayPriceStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[GooglePayPriceStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[GooglePayPriceStatus & Double] = js.native
     
     /** Total price may adjust based on the details of the response, such as sales tax collected based on a billing address. */
     @js.native
-    sealed trait TotalPriceStatusEstimated extends GooglePayPriceStatus
-    /* 2 */ val TotalPriceStatusEstimated: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayPriceStatus.TotalPriceStatusEstimated with Double = js.native
+    sealed trait TotalPriceStatusEstimated
+      extends StObject
+         with GooglePayPriceStatus
+    /* 2 */ val TotalPriceStatusEstimated: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayPriceStatus.TotalPriceStatusEstimated & Double = js.native
     
     /** Total price will not change from the amount presented to the user. */
     @js.native
-    sealed trait TotalPriceStatusFinal extends GooglePayPriceStatus
-    /* 3 */ val TotalPriceStatusFinal: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayPriceStatus.TotalPriceStatusFinal with Double = js.native
+    sealed trait TotalPriceStatusFinal
+      extends StObject
+         with GooglePayPriceStatus
+    /* 3 */ val TotalPriceStatusFinal: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayPriceStatus.TotalPriceStatusFinal & Double = js.native
     
     /** used for a capability check */
     @js.native
-    sealed trait TotalPriceStatusNotCurrentlyKnown extends GooglePayPriceStatus
-    /* 1 */ val TotalPriceStatusNotCurrentlyKnown: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayPriceStatus.TotalPriceStatusNotCurrentlyKnown with Double = js.native
+    sealed trait TotalPriceStatusNotCurrentlyKnown
+      extends StObject
+         with GooglePayPriceStatus
+    /* 1 */ val TotalPriceStatusNotCurrentlyKnown: typings.reactNativeSquareInAppPayments.mod.SQIPGooglePay.GooglePayPriceStatus.TotalPriceStatusNotCurrentlyKnown & Double = js.native
   }
   
   /**
@@ -59,9 +72,8 @@ object SQIPGooglePay {
     * @platform Android
     * @throws ex
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPGooglePay.canUseGooglePay")
-  @js.native
-  def canUseGooglePay(): js.Promise[Boolean] = js.native
+  @scala.inline
+  def canUseGooglePay(): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("canUseGooglePay")().asInstanceOf[js.Promise[Boolean]]
   
   // Functions
   /**
@@ -71,9 +83,8 @@ object SQIPGooglePay {
     * @param squareLocationId - The Square Location ID from the developer portal.
     * @param environment - Specifies the Google Pay environment to run Google Pay in: Test or Production
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPGooglePay.initializeGooglePay")
-  @js.native
-  def initializeGooglePay(squareLocationId: String, environment: GooglePayEnvironment): js.Promise[Unit] = js.native
+  @scala.inline
+  def initializeGooglePay(squareLocationId: String, environment: GooglePayEnvironment): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("initializeGooglePay")(squareLocationId.asInstanceOf[js.Any], environment.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Starts the Google Pay payment authorization and returns a nonce based on the authorized Google Pay payment token.
@@ -84,14 +95,13 @@ object SQIPGooglePay {
     * @param onGooglePayCanceled - Cancel callback invoked when user cancels payment authorization.
     * @throws ex
     */
-  @JSImport("react-native-square-in-app-payments", "SQIPGooglePay.requestGooglePayNonce")
-  @js.native
+  @scala.inline
   def requestGooglePayNonce(
     googlePayConfig: GooglePayConfig,
     onGooglePayNonceRequestSuccess: GooglePayNonceRequestSuccessCallback,
     onGooglePayNonceRequestFailure: GooglePayNonceRequestFailureCallback,
     onGooglePayCanceled: GooglePayCancelCallback
-  ): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("requestGooglePayNonce")(googlePayConfig.asInstanceOf[js.Any], onGooglePayNonceRequestSuccess.asInstanceOf[js.Any], onGooglePayNonceRequestFailure.asInstanceOf[js.Any], onGooglePayCanceled.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
   /**
     * Callback invoked when Google Pay payment authorization is canceled.
@@ -100,17 +110,16 @@ object SQIPGooglePay {
   type GooglePayCancelCallback = js.Function0[Unit]
   
   /** Represents the Google Pay configuration. */
-  @js.native
   trait GooglePayConfig extends StObject {
     
     /** ISO currency code of the payment amount. */
-    var currencyCode: String = js.native
+    var currencyCode: String
     
     /** The payment authorization amount as a string. */
-    var price: String = js.native
+    var price: String
     
     /** The status of the total price used */
-    var priceStatus: GooglePayPriceStatus = js.native
+    var priceStatus: GooglePayPriceStatus
   }
   object GooglePayConfig {
     

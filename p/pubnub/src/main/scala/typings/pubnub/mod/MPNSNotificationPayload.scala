@@ -2,19 +2,19 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MPNSNotificationPayload extends BaseNotificationPayload {
+trait MPNSNotificationPayload
+  extends StObject
+     with BaseNotificationPayload {
   
-  var backContent: js.UndefOr[String] = js.native
+  var backContent: js.UndefOr[String] = js.undefined
   
-  var backTitle: js.UndefOr[String] = js.native
+  var backTitle: js.UndefOr[String] = js.undefined
   
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object MPNSNotificationPayload {
   

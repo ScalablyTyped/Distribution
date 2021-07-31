@@ -5,25 +5,23 @@ import typings.yandexMaps.yandexMapsStrings.ifNull
 import typings.yandexMaps.yandexMapsStrings.none
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoFitToViewport extends StObject {
   
-  var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.native
+  var autoFitToViewport: js.UndefOr[none | ifNull | always] = js.undefined
   
-  var controls: js.UndefOr[js.Array[String]] = js.native
+  var controls: js.UndefOr[js.Array[String]] = js.undefined
   
-  var direction: js.UndefOr[js.Array[Double] | String] = js.native
+  var direction: js.UndefOr[js.Array[Double] | String] = js.undefined
   
-  var hotkeysEnabled: js.UndefOr[Boolean] = js.native
+  var hotkeysEnabled: js.UndefOr[Boolean] = js.undefined
   
-  var scrollZoomBehavior: js.UndefOr[Boolean] = js.native
+  var scrollZoomBehavior: js.UndefOr[Boolean] = js.undefined
   
-  var span: js.UndefOr[js.Array[Double] | String] = js.native
+  var span: js.UndefOr[js.Array[Double] | String] = js.undefined
   
-  var suppressMapOpenBlock: js.UndefOr[Boolean] = js.native
+  var suppressMapOpenBlock: js.UndefOr[Boolean] = js.undefined
 }
 object AutoFitToViewport {
   

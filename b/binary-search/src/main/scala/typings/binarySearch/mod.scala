@@ -3,13 +3,11 @@ package typings.binarySearch
 import typings.std.ArrayLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("binary-search", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
@@ -18,11 +16,10 @@ object mod {
       /* b */ B, 
       /* index */ js.UndefOr[Double], 
       /* haystack */ js.UndefOr[js.Array[A]], 
-      _
+      js.Any
     ]
-  ): Double = js.native
-  @JSImport("binary-search", JSImport.Namespace)
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
@@ -31,32 +28,7 @@ object mod {
       /* b */ B, 
       /* index */ js.UndefOr[Double], 
       /* haystack */ js.UndefOr[js.Array[A]], 
-      _
-    ],
-    // Notes about comparator return value:
-  // * when a<b the comparator's returned value should be:
-  //   * negative number or a value such that `+value` is a negative number
-  //   * examples: `-1` or the string `"-1"`
-  // * when a>b the comparator's returned value should be:
-  //   * positive number or a value such that `+value` is a positive number
-  //   * examples: `1` or the string `"1"`
-  // * when a===b
-  //    * any value other than the return cases for a<b and a>b
-  //    * examples: undefined, NaN, 'abc'
-  low: js.UndefOr[scala.Nothing],
-    high: Double
-  ): Double = js.native
-  @JSImport("binary-search", JSImport.Namespace)
-  @js.native
-  def apply[A, B](
-    haystack: ArrayLike[A],
-    needle: B,
-    comparator: js.Function4[
-      /* a */ A, 
-      /* b */ B, 
-      /* index */ js.UndefOr[Double], 
-      /* haystack */ js.UndefOr[js.Array[A]], 
-      _
+      js.Any
     ],
     // Notes about comparator return value:
   // * when a<b the comparator's returned value should be:
@@ -69,9 +41,8 @@ object mod {
   //    * any value other than the return cases for a<b and a>b
   //    * examples: undefined, NaN, 'abc'
   low: Double
-  ): Double = js.native
-  @JSImport("binary-search", JSImport.Namespace)
-  @js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any], low.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
   def apply[A, B](
     haystack: ArrayLike[A],
     needle: B,
@@ -80,7 +51,7 @@ object mod {
       /* b */ B, 
       /* index */ js.UndefOr[Double], 
       /* haystack */ js.UndefOr[js.Array[A]], 
-      _
+      js.Any
     ],
     // Notes about comparator return value:
   // * when a<b the comparator's returned value should be:
@@ -94,5 +65,33 @@ object mod {
   //    * examples: undefined, NaN, 'abc'
   low: Double,
     high: Double
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def apply[A, B](
+    haystack: ArrayLike[A],
+    needle: B,
+    comparator: js.Function4[
+      /* a */ A, 
+      /* b */ B, 
+      /* index */ js.UndefOr[Double], 
+      /* haystack */ js.UndefOr[js.Array[A]], 
+      js.Any
+    ],
+    // Notes about comparator return value:
+  // * when a<b the comparator's returned value should be:
+  //   * negative number or a value such that `+value` is a negative number
+  //   * examples: `-1` or the string `"-1"`
+  // * when a>b the comparator's returned value should be:
+  //   * positive number or a value such that `+value` is a positive number
+  //   * examples: `1` or the string `"1"`
+  // * when a===b
+  //    * any value other than the return cases for a<b and a>b
+  //    * examples: undefined, NaN, 'abc'
+  low: Unit,
+    high: Double
+  ): Double = (^.asInstanceOf[js.Dynamic].apply(haystack.asInstanceOf[js.Any], needle.asInstanceOf[js.Any], comparator.asInstanceOf[js.Any], low.asInstanceOf[js.Any], high.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @JSImport("binary-search", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
 }

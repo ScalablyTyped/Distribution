@@ -4,20 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.iitc.iitctypesMod.IITC.Portal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object portalHighlighterMod {
   
   object global {
     
-    @JSGlobal("addPortalHighlighter")
-    @js.native
-    def addPortalHighlighter(name: String, data: Hightligher): Unit = js.native
+    @scala.inline
+    def addPortalHighlighter(name: String, data: Hightligher): Unit = (js.Dynamic.global.applyDynamic("addPortalHighlighter")(name.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSGlobal("changePortalHighlights")
-    @js.native
-    def changePortalHighlights(name: String): Unit = js.native
+    @scala.inline
+    def changePortalHighlights(name: String): Unit = js.Dynamic.global.applyDynamic("changePortalHighlights")(name.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** the name of the current highlighter */
     @JSGlobal("_current_highlighter")
@@ -27,9 +24,8 @@ object portalHighlighterMod {
     @scala.inline
     def currentHighlighter_=(x: String): Unit = js.Dynamic.global.updateDynamic("_current_highlighter")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("highlightPortal")
-    @js.native
-    def highlightPortal(p: Portal): Unit = js.native
+    @scala.inline
+    def highlightPortal(p: Portal): Unit = js.Dynamic.global.applyDynamic("highlightPortal")(p.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /** an object mapping highlighter names to the object containing callback functions */
     @JSGlobal("_highlighters")
@@ -49,19 +45,16 @@ object portalHighlighterMod {
     @scala.inline
     def noHighlighter_=(x: String): Unit = js.Dynamic.global.updateDynamic("_no_highlighter")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("resetHighlightedPortals")
-    @js.native
-    def resetHighlightedPortals(): Unit = js.native
+    @scala.inline
+    def resetHighlightedPortals(): Unit = js.Dynamic.global.applyDynamic("resetHighlightedPortals")().asInstanceOf[Unit]
     
     // (re)creates the highlighter dropdown list
-    @JSGlobal("updatePortalHighlighterControl")
-    @js.native
-    def updatePortalHighlighterControl(): Unit = js.native
+    @scala.inline
+    def updatePortalHighlighterControl(): Unit = js.Dynamic.global.applyDynamic("updatePortalHighlighterControl")().asInstanceOf[Unit]
     
-    @js.native
     trait Hightligher extends StObject {
       
-      def hightlight(portal: Portal): Unit = js.native
+      def hightlight(portal: Portal): Unit
     }
     object Hightligher {
       

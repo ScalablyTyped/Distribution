@@ -3,49 +3,47 @@ package typings.spotifyWebApiJs.SpotifyApi
 import typings.spotifyWebApiJs.spotifyWebApiJsStrings.episode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Simplified Episode Object
   * [episode object (simplified)](https://developer.spotify.com/documentation/web-api/reference/object-model/#episode-object-simplified)
   */
-@js.native
 trait EpisodeObjectSimplified extends StObject {
   
-  var audio_preview_url: String | Null = js.native
+  var audio_preview_url: String | Null
   
-  var description: String = js.native
+  var description: String
   
-  var duration_ms: Double = js.native
+  var duration_ms: Double
   
-  var explicit: Boolean = js.native
+  var explicit: Boolean
   
-  var external_urls: ExternalUrlObject = js.native
+  var external_urls: ExternalUrlObject
   
-  var href: String = js.native
+  var href: String
   
-  var id: String = js.native
+  var id: String
   
-  var images: js.Array[ImageObject] = js.native
+  var images: js.Array[ImageObject]
   
-  var is_externally_hosted: Boolean = js.native
+  var is_externally_hosted: Boolean
   
-  var is_playable: Boolean = js.native
+  var is_playable: Boolean
   
-  var languages: js.Array[String] = js.native
+  var languages: js.Array[String]
   
-  var name: String = js.native
+  var name: String
   
-  var release_date: String = js.native
+  var release_date: String
   
-  var release_date_precision: String = js.native
+  var release_date_precision: String
   
-  var resume_point: ResumePointObject = js.native
+  var resume_point: ResumePointObject
   
-  var `type`: episode = js.native
+  var `type`: episode
   
-  var uri: String = js.native
+  var uri: String
 }
 object EpisodeObjectSimplified {
   
@@ -65,11 +63,10 @@ object EpisodeObjectSimplified {
     release_date: String,
     release_date_precision: String,
     resume_point: ResumePointObject,
-    `type`: episode,
     uri: String
   ): EpisodeObjectSimplified = {
-    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], is_externally_hosted = is_externally_hosted.asInstanceOf[js.Any], is_playable = is_playable.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], release_date_precision = release_date_precision.asInstanceOf[js.Any], resume_point = resume_point.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any], duration_ms = duration_ms.asInstanceOf[js.Any], explicit = explicit.asInstanceOf[js.Any], external_urls = external_urls.asInstanceOf[js.Any], href = href.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], images = images.asInstanceOf[js.Any], is_externally_hosted = is_externally_hosted.asInstanceOf[js.Any], is_playable = is_playable.asInstanceOf[js.Any], languages = languages.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], release_date = release_date.asInstanceOf[js.Any], release_date_precision = release_date_precision.asInstanceOf[js.Any], resume_point = resume_point.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any], audio_preview_url = null)
+    __obj.updateDynamic("type")("episode")
     __obj.asInstanceOf[EpisodeObjectSimplified]
   }
   

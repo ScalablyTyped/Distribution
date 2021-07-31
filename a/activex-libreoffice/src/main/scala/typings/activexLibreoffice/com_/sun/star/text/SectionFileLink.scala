@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,14 +15,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link SectionFileLink.FilterName} is the internal name of the document filter. To use this struct, it is not necessary to set {@link
   * SectionFileLink.FilterName} . It will be automatically assigned.
   */
-@js.native
 trait SectionFileLink extends StObject {
   
   /** contains the URL of the linked file. */
-  var FileURL: String = js.native
+  var FileURL: String
   
   /** contains the name of the file filter that is used to load the linked file. */
-  var FilterName: String = js.native
+  var FilterName: String
 }
 object SectionFileLink {
   

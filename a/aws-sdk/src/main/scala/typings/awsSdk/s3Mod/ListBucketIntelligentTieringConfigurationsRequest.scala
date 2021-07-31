@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBucketIntelligentTieringConfigurationsRequest extends StObject {
   
   /**
     * The name of the Amazon S3 bucket whose configuration you want to modify or retrieve.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The ContinuationToken that represents a placeholder from where this request should begin.
     */
-  var ContinuationToken: js.UndefOr[Token] = js.native
+  var ContinuationToken: js.UndefOr[Token] = js.undefined
 }
 object ListBucketIntelligentTieringConfigurationsRequest {
   

@@ -2,18 +2,16 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /// METHODS OPTIONS ///
-@js.native
 trait PollingOptions extends StObject {
   
-  var autoStart: js.UndefOr[Boolean] = js.native
+  var autoStart: js.UndefOr[Boolean] = js.undefined
   
-  var interval: js.UndefOr[String | Double] = js.native
+  var interval: js.UndefOr[String | Double] = js.undefined
   
-  var params: js.UndefOr[GetUpdatesOptions] = js.native
+  var params: js.UndefOr[GetUpdatesOptions] = js.undefined
 }
 object PollingOptions {
   

@@ -15,25 +15,23 @@ import typings.nodeForge.mod.tls.Verified
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaStore extends StObject {
   
-  var caStore: js.UndefOr[CAStore | js.Array[Certificate]] = js.native
+  var caStore: js.UndefOr[CAStore | js.Array[Certificate]] = js.undefined
   
-  var cipherSuites: js.UndefOr[js.Array[CipherSuite]] = js.native
+  var cipherSuites: js.UndefOr[js.Array[CipherSuite]] = js.undefined
   
-  def closed(conn: Connection): Unit = js.native
+  def closed(conn: Connection): Unit
   
-  def connected(conn: Connection): Unit = js.native
+  def connected(conn: Connection): Unit
   
-  def dataReady(conn: Connection): Unit = js.native
+  def dataReady(conn: Connection): Unit
   
-  var deflate: js.UndefOr[js.Function1[/* inBytes */ Bytes, Bytes]] = js.native
+  var deflate: js.UndefOr[js.Function1[/* inBytes */ Bytes, Bytes]] = js.undefined
   
-  def error(conn: Connection, error: TLSError): Unit = js.native
+  def error(conn: Connection, error: TLSError): Unit
   
   var getCertificate: js.UndefOr[
     js.Function2[
@@ -41,9 +39,9 @@ trait CaStore extends StObject {
       /* hint */ CertificateRequest | js.Array[String], 
       PEM | js.Array[PEM]
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var getPrivateKey: js.UndefOr[js.Function2[/* conn */ Connection, /* certificate */ Certificate, PEM]] = js.native
+  var getPrivateKey: js.UndefOr[js.Function2[/* conn */ Connection, /* certificate */ Certificate, PEM]] = js.undefined
   
   var getSignature: js.UndefOr[
     js.Function3[
@@ -52,19 +50,19 @@ trait CaStore extends StObject {
       /* callback */ js.Function2[/* conn */ Connection, /* bytes */ Bytes, Unit], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var heartbeatReceived: js.UndefOr[js.Function2[/* conn */ Connection, /* payload */ ByteBuffer, Unit]] = js.native
+  var heartbeatReceived: js.UndefOr[js.Function2[/* conn */ Connection, /* payload */ ByteBuffer, Unit]] = js.undefined
   
-  var inflate: js.UndefOr[js.Function1[/* inBytes */ Bytes, Bytes]] = js.native
+  var inflate: js.UndefOr[js.Function1[/* inBytes */ Bytes, Bytes]] = js.undefined
   
-  var server: js.UndefOr[Boolean] = js.native
+  var server: js.UndefOr[Boolean] = js.undefined
   
-  var sessionCache: js.UndefOr[SessionCache | StringDictionary[Session]] = js.native
+  var sessionCache: js.UndefOr[SessionCache | StringDictionary[Session]] = js.undefined
   
-  var sessionId: js.UndefOr[Bytes | Null] = js.native
+  var sessionId: js.UndefOr[Bytes | Null] = js.undefined
   
-  def tlsDataReady(conn: Connection): Unit = js.native
+  def tlsDataReady(conn: Connection): Unit
   
   var verify: js.UndefOr[
     js.Function4[
@@ -74,11 +72,11 @@ trait CaStore extends StObject {
       /* certs */ js.Array[Certificate], 
       Verified
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var verifyClient: js.UndefOr[Boolean] = js.native
+  var verifyClient: js.UndefOr[Boolean] = js.undefined
   
-  var virtualHost: js.UndefOr[String] = js.native
+  var virtualHost: js.UndefOr[String] = js.undefined
 }
 object CaStore {
   

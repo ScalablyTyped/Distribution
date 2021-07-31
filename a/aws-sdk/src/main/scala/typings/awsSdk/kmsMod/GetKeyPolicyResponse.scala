@@ -2,16 +2,14 @@ package typings.awsSdk.kmsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetKeyPolicyResponse extends StObject {
   
   /**
     * A key policy document in JSON format.
     */
-  var Policy: js.UndefOr[PolicyType] = js.native
+  var Policy: js.UndefOr[PolicyType] = js.undefined
 }
 object GetKeyPolicyResponse {
   

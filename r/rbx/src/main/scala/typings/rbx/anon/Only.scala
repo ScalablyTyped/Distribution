@@ -7,15 +7,13 @@ import typings.rbx.rbxStrings.block
 import typings.rbx.rbxStrings.flex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Only extends StObject {
   
-  var only: js.UndefOr[Boolean] = js.native
+  var only: js.UndefOr[Boolean] = js.undefined
   
-  var value: block | flex | `inline` | `inline-block` | `inline-flex` = js.native
+  var value: block | flex | `inline` | `inline-block` | `inline-flex`
 }
 object Only {
   

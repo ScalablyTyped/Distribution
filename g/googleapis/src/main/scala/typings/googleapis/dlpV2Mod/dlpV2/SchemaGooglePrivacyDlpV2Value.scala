@@ -2,7 +2,6 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,24 +12,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * bytes would be counted as 9, even though an int64 only holds up to 8 bytes
   * of data.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2Value extends StObject {
   
-  var booleanValue: js.UndefOr[Boolean] = js.native
+  var booleanValue: js.UndefOr[Boolean] = js.undefined
   
-  var dateValue: js.UndefOr[SchemaGoogleTypeDate] = js.native
+  var dateValue: js.UndefOr[SchemaGoogleTypeDate] = js.undefined
   
-  var dayOfWeekValue: js.UndefOr[String] = js.native
+  var dayOfWeekValue: js.UndefOr[String] = js.undefined
   
-  var floatValue: js.UndefOr[Double] = js.native
+  var floatValue: js.UndefOr[Double] = js.undefined
   
-  var integerValue: js.UndefOr[String] = js.native
+  var integerValue: js.UndefOr[String] = js.undefined
   
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
-  var timeValue: js.UndefOr[SchemaGoogleTypeTimeOfDay] = js.native
+  var timeValue: js.UndefOr[SchemaGoogleTypeTimeOfDay] = js.undefined
   
-  var timestampValue: js.UndefOr[String] = js.native
+  var timestampValue: js.UndefOr[String] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2Value {
   

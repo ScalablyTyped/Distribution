@@ -4,13 +4,15 @@ import typings.mobxStateTree.typeMod.IAnyType
 import typings.mobxStateTree.typeMod.IType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotProcessorMod {
   
-  @JSImport("mobx-state-tree/dist/types/utility-types/snapshotProcessor", "snapshotProcessor")
+  @JSImport("mobx-state-tree/dist/types/utility-types/snapshotProcessor", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def snapshotProcessor[IT /* <: IAnyType */, CustomC, CustomS](
     `type`: IT,
     processors: ISnapshotProcessors[
@@ -19,9 +21,8 @@ object snapshotProcessorMod {
       /* import warning: importer.ImportType#apply Failed type conversion: IT['SnapshotType'] */ js.Any, 
       CustomS
     ]
-  ): ISnapshotProcessor[IT, CustomC, CustomS] = js.native
-  @JSImport("mobx-state-tree/dist/types/utility-types/snapshotProcessor", "snapshotProcessor")
-  @js.native
+  ): ISnapshotProcessor[IT, CustomC, CustomS] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotProcessor")(`type`.asInstanceOf[js.Any], processors.asInstanceOf[js.Any])).asInstanceOf[ISnapshotProcessor[IT, CustomC, CustomS]]
+  @scala.inline
   def snapshotProcessor[IT /* <: IAnyType */, CustomC, CustomS](
     `type`: IT,
     processors: ISnapshotProcessors[
@@ -31,7 +32,7 @@ object snapshotProcessorMod {
       CustomS
     ],
     name: String
-  ): ISnapshotProcessor[IT, CustomC, CustomS] = js.native
+  ): ISnapshotProcessor[IT, CustomC, CustomS] = (^.asInstanceOf[js.Dynamic].applyDynamic("snapshotProcessor")(`type`.asInstanceOf[js.Any], processors.asInstanceOf[js.Any], name.asInstanceOf[js.Any])).asInstanceOf[ISnapshotProcessor[IT, CustomC, CustomS]]
   
   type CustomOrOther[Custom, Other] = Custom | Other
   
@@ -47,19 +48,18 @@ object snapshotProcessorMod {
     /* import warning: importer.ImportType#apply Failed type conversion: IT['TypeWithoutSTN'] */ js.Any
   ]
   
-  @js.native
   trait ISnapshotProcessors[C, CustomC, S, CustomS] extends StObject {
     
     /**
       * Function that transforms an output snapshot.
       * @param snapshot
       */
-    var postProcessor: js.UndefOr[js.Function1[/* snapshot */ S, CustomS]] = js.native
+    var postProcessor: js.UndefOr[js.Function1[/* snapshot */ S, CustomS]] = js.undefined
     
     /**
       * Function that transforms an input snapshot.
       */
-    var preProcessor: js.UndefOr[js.Function1[/* snapshot */ CustomC, C]] = js.native
+    var preProcessor: js.UndefOr[js.Function1[/* snapshot */ CustomC, C]] = js.undefined
   }
   object ISnapshotProcessors {
     
@@ -70,7 +70,7 @@ object snapshotProcessorMod {
     }
     
     @scala.inline
-    implicit class ISnapshotProcessorsMutableBuilder[Self <: ISnapshotProcessors[_, _, _, _], C, CustomC, S, CustomS] (val x: Self with (ISnapshotProcessors[C, CustomC, S, CustomS])) extends AnyVal {
+    implicit class ISnapshotProcessorsMutableBuilder[Self <: ISnapshotProcessors[?, ?, ?, ?], C, CustomC, S, CustomS] (val x: Self & (ISnapshotProcessors[C, CustomC, S, CustomS])) extends AnyVal {
       
       @scala.inline
       def setPostProcessor(value: /* snapshot */ S => CustomS): Self = StObject.set(x, "postProcessor", js.Any.fromFunction1(value))

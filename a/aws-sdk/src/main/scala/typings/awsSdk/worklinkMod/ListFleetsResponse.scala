@@ -2,21 +2,19 @@ package typings.awsSdk.worklinkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListFleetsResponse extends StObject {
   
   /**
     * The summary list of the fleets.
     */
-  var FleetSummaryList: js.UndefOr[typings.awsSdk.worklinkMod.FleetSummaryList] = js.native
+  var FleetSummaryList: js.UndefOr[typings.awsSdk.worklinkMod.FleetSummaryList] = js.undefined
   
   /**
     * The pagination token used to retrieve the next page of results for this operation. If there are no more pages, this value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.worklinkMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.worklinkMod.NextToken] = js.undefined
 }
 object ListFleetsResponse {
   

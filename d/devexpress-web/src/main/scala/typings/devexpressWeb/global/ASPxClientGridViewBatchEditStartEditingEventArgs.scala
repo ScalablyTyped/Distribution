@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientGridViewBatchEditStartEditingEventArgs")
 @js.native
 class ASPxClientGridViewBatchEditStartEditingEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientGridViewBatchEditStartEditingEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientGridViewBatchEditStartEditingEventArgs {
   /**
     * Initializes a new instance of the ASPxClientGridViewBatchEditStartEditingEventArgs class.
     * @param visibleIndex An integer value that is the row's visible index.
@@ -25,4 +25,34 @@ class ASPxClientGridViewBatchEditStartEditingEventArgs protected ()
     rowValues: js.Any,
     key: js.Any
   ) = this()
+  
+  /**
+    * Gets or sets a value indicating whether the action which raised the event should be canceled.
+    */
+  /* CompleteClass */
+  var cancel: Boolean = js.native
+  
+  /**
+    * Gets the grid column that owns a cell that is about to be edited.
+    */
+  /* CompleteClass */
+  var focusedColumn: typings.devexpressWeb.ASPxClientGridViewColumn = js.native
+  
+  /**
+    * Gets the row's key.
+    */
+  /* CompleteClass */
+  var key: js.Any = js.native
+  
+  /**
+    * Gets a hashtable that maintains information about editable cells.
+    */
+  /* CompleteClass */
+  var rowValues: js.Any = js.native
+  
+  /**
+    * Gets the visible index of the row whose cells are about to be edited.
+    */
+  /* CompleteClass */
+  var visibleIndex: Double = js.native
 }

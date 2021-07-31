@@ -9,7 +9,6 @@ import typings.javascriptTimeAgo.javascriptTimeAgoStrings.two
 import typings.javascriptTimeAgo.localeMod.Duration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object zhHansHKMod extends Shortcut {
@@ -18,20 +17,19 @@ object zhHansHKMod extends Shortcut {
   @js.native
   val ^ : Locale = js.native
   
-  @js.native
   trait Locale extends StObject {
     
-    var locale: `zh-Hans-HK` = js.native
+    var locale: `zh-Hans-HK`
     
-    var long: Duration = js.native
+    var long: Duration
     
-    def quantify(n: Double): one | two | few | other = js.native
+    def quantify(n: Double): one | two | few | other
   }
   object Locale {
     
     @scala.inline
-    def apply(locale: `zh-Hans-HK`, long: Duration, quantify: Double => one | two | few | other): Locale = {
-      val __obj = js.Dynamic.literal(locale = locale.asInstanceOf[js.Any], long = long.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify))
+    def apply(long: Duration, quantify: Double => one | two | few | other): Locale = {
+      val __obj = js.Dynamic.literal(locale = "zh-Hans-HK", long = long.asInstanceOf[js.Any], quantify = js.Any.fromFunction1(quantify))
       __obj.asInstanceOf[Locale]
     }
     

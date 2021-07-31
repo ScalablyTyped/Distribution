@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Media.Effects
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,73 +13,109 @@ object AudioEffectType extends StObject {
   
   /** An acoustic echo cancellation effect. */
   @js.native
-  sealed trait acousticEchoCancellation extends AudioEffectType
+  sealed trait acousticEchoCancellation
+    extends StObject
+       with AudioEffectType
   
   /** A automatic gain control effect. */
   @js.native
-  sealed trait automaticGainControl extends AudioEffectType
+  sealed trait automaticGainControl
+    extends StObject
+       with AudioEffectType
   
   /** A bass boost effect. */
   @js.native
-  sealed trait bassBoost extends AudioEffectType
+  sealed trait bassBoost
+    extends StObject
+       with AudioEffectType
   
   /** A bass management effect. */
   @js.native
-  sealed trait bassManagement extends AudioEffectType
+  sealed trait bassManagement
+    extends StObject
+       with AudioEffectType
   
   /** A beam forming effect. */
   @js.native
-  sealed trait beamForming extends AudioEffectType
+  sealed trait beamForming
+    extends StObject
+       with AudioEffectType
   
   /** A constant tone removal effect. */
   @js.native
-  sealed trait constantToneRemoval extends AudioEffectType
+  sealed trait constantToneRemoval
+    extends StObject
+       with AudioEffectType
   
   /** A dynamic range compression effect. */
   @js.native
-  sealed trait dynamicRangeCompression extends AudioEffectType
+  sealed trait dynamicRangeCompression
+    extends StObject
+       with AudioEffectType
   
   /** An environmental effect. */
   @js.native
-  sealed trait environmentalEffects extends AudioEffectType
+  sealed trait environmentalEffects
+    extends StObject
+       with AudioEffectType
   
   /** A equalizer effect. */
   @js.native
-  sealed trait equalizer extends AudioEffectType
+  sealed trait equalizer
+    extends StObject
+       with AudioEffectType
   
   /** A loudness equalizer effect. */
   @js.native
-  sealed trait loudnessEqualizer extends AudioEffectType
+  sealed trait loudnessEqualizer
+    extends StObject
+       with AudioEffectType
   
   /** A noise suppression effect. */
   @js.native
-  sealed trait noiseSuppression extends AudioEffectType
+  sealed trait noiseSuppression
+    extends StObject
+       with AudioEffectType
   
   /** Other. */
   @js.native
-  sealed trait other extends AudioEffectType
+  sealed trait other
+    extends StObject
+       with AudioEffectType
   
   /** A room correction effect. */
   @js.native
-  sealed trait roomCorrection extends AudioEffectType
+  sealed trait roomCorrection
+    extends StObject
+       with AudioEffectType
   
   /** A speaker compensation effect. */
   @js.native
-  sealed trait speakerCompensation extends AudioEffectType
+  sealed trait speakerCompensation
+    extends StObject
+       with AudioEffectType
   
   /** A speaker fill effect. */
   @js.native
-  sealed trait speakerFill extends AudioEffectType
+  sealed trait speakerFill
+    extends StObject
+       with AudioEffectType
   
   /** A speaker protection effect. */
   @js.native
-  sealed trait speakerProtection extends AudioEffectType
+  sealed trait speakerProtection
+    extends StObject
+       with AudioEffectType
   
   /** A virtual headphones effect. */
   @js.native
-  sealed trait virtualHeadphones extends AudioEffectType
+  sealed trait virtualHeadphones
+    extends StObject
+       with AudioEffectType
   
   /** A virtual surround sound effect. */
   @js.native
-  sealed trait virtualSurround extends AudioEffectType
+  sealed trait virtualSurround
+    extends StObject
+       with AudioEffectType
 }

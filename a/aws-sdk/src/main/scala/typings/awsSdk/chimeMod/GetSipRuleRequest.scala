@@ -2,16 +2,14 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSipRuleRequest extends StObject {
   
   /**
     * The SIP rule ID.
     */
-  var SipRuleId: NonEmptyString = js.native
+  var SipRuleId: NonEmptyString
 }
 object GetSipRuleRequest {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.codeartifactMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRepositoryResult extends StObject {
   
   /**
     *  A RepositoryDescription object that contains the requested repository information. 
     */
-  var repository: js.UndefOr[RepositoryDescription] = js.native
+  var repository: js.UndefOr[RepositoryDescription] = js.undefined
 }
 object DescribeRepositoryResult {
   

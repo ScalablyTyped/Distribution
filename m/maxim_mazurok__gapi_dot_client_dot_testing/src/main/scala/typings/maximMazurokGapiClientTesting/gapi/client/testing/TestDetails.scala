@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientTesting.gapi.client.testing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestDetails extends StObject {
   
   /** Output only. If the TestState is ERROR, then this string will contain human-readable details about the error. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Human-readable, detailed descriptions of the test's progress. For example: "Provisioning a device", "Starting Test". During the course of execution new data may be
     * appended to the end of progress_messages.
     */
-  var progressMessages: js.UndefOr[js.Array[String]] = js.native
+  var progressMessages: js.UndefOr[js.Array[String]] = js.undefined
 }
 object TestDetails {
   

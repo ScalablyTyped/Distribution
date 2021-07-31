@@ -2,17 +2,15 @@ package typings.muiDatatables.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableColumn extends StObject {
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
-  var options: js.UndefOr[MUIDataTableColumnOptions] = js.native
+  var options: js.UndefOr[MUIDataTableColumnOptions] = js.undefined
 }
 object MUIDataTableColumn {
   

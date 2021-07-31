@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.kinesisanalyticsv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent
     */
   var s3ContentLocation: js.UndefOr[
     ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContentS3ContentLocation
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The text-format code for the application.
     */
-  var textContent: js.UndefOr[String] = js.native
+  var textContent: js.UndefOr[String] = js.undefined
 }
 object ApplicationApplicationConfigurationApplicationCodeConfigurationCodeContent {
   

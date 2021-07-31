@@ -3,31 +3,29 @@ package typings.vsoNodeApi.buildInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SupportedTrigger extends StObject {
   
   /**
     * The default interval to wait between polls (only relevant when NotificationType is Polling).
     */
-  var defaultPollingInterval: Double = js.native
+  var defaultPollingInterval: Double
   
   /**
     * How the trigger is notified of changes.
     */
-  var notificationType: String = js.native
+  var notificationType: String
   
   /**
     * The capabilities supported by this trigger.
     */
-  var supportedCapabilities: StringDictionary[SupportLevel] = js.native
+  var supportedCapabilities: StringDictionary[SupportLevel]
   
   /**
     * The type of trigger.
     */
-  var `type`: DefinitionTriggerType = js.native
+  var `type`: DefinitionTriggerType
 }
 object SupportedTrigger {
   

@@ -2,10 +2,8 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectionPolicy extends StObject {
   
   /**
@@ -15,25 +13,25 @@ trait ConnectionPolicy extends StObject {
     *
     * This is intended to be used only when targeting emulator endpoint to avoid failing your requests with SSL related error.
     */
-  var DisableSSLVerification: Boolean = js.native
+  var DisableSSLVerification: Boolean
   
   /** Flag to enable/disable automatic redirecting of requests based on read/write operations. */
-  var EnableEndpointDiscovery: Boolean = js.native
+  var EnableEndpointDiscovery: Boolean
   
   /** Attachment content (aka media) download mode.  */
-  var MediaReadMode: typings.documentdb.mod.MediaReadMode = js.native
+  var MediaReadMode: typings.documentdb.mod.MediaReadMode
   
   /** Time to wait for response from network peer for attachment content (aka media) operations. Represented in milliseconds. */
-  var MediaRequestTimeout: Double = js.native
+  var MediaRequestTimeout: Double
   
   /** List of azure regions to be used as preferred locations for read requests. */
-  var PreferredLocations: js.Array[_] = js.native
+  var PreferredLocations: js.Array[js.Any]
   
   /** Request timeout (time to wait for response from network peer). Represented in milliseconds. */
-  var RequestTimeout: Double = js.native
+  var RequestTimeout: Double
   
   /** RetryOptions instance which defines several configurable properties used during retry. */
-  var RetryOptions: typings.documentdb.mod.RetryOptions = js.native
+  var RetryOptions: typings.documentdb.mod.RetryOptions
 }
 object ConnectionPolicy {
   
@@ -43,7 +41,7 @@ object ConnectionPolicy {
     EnableEndpointDiscovery: Boolean,
     MediaReadMode: MediaReadMode,
     MediaRequestTimeout: Double,
-    PreferredLocations: js.Array[_],
+    PreferredLocations: js.Array[js.Any],
     RequestTimeout: Double,
     RetryOptions: RetryOptions
   ): ConnectionPolicy = {
@@ -67,7 +65,7 @@ object ConnectionPolicy {
     def setMediaRequestTimeout(value: Double): Self = StObject.set(x, "MediaRequestTimeout", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setPreferredLocations(value: js.Array[_]): Self = StObject.set(x, "PreferredLocations", value.asInstanceOf[js.Any])
+    def setPreferredLocations(value: js.Array[js.Any]): Self = StObject.set(x, "PreferredLocations", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPreferredLocationsVarargs(value: js.Any*): Self = StObject.set(x, "PreferredLocations", js.Array(value :_*))

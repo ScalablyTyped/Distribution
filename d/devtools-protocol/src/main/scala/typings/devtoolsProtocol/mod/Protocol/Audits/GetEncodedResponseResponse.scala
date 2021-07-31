@@ -3,26 +3,24 @@ package typings.devtoolsProtocol.mod.Protocol.Audits
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetEncodedResponseResponse extends StObject {
   
   /**
     * The encoded body as a base64 string. Omitted if sizeOnly is true.
     */
-  var body: js.UndefOr[String] = js.native
+  var body: js.UndefOr[String] = js.undefined
   
   /**
     * Size after re-encoding.
     */
-  var encodedSize: integer = js.native
+  var encodedSize: integer
   
   /**
     * Size before re-encoding.
     */
-  var originalSize: integer = js.native
+  var originalSize: integer
 }
 object GetEncodedResponseResponse {
   

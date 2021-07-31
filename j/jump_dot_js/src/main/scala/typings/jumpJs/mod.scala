@@ -3,42 +3,38 @@ package typings.jumpJs
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jump.js", JSImport.Namespace)
-  @js.native
-  def apply(target: String): Unit = js.native
-  @JSImport("jump.js", JSImport.Namespace)
-  @js.native
-  def apply(target: String, opts: Options): Unit = js.native
-  @JSImport("jump.js", JSImport.Namespace)
-  @js.native
-  def apply(target: Double): Unit = js.native
-  @JSImport("jump.js", JSImport.Namespace)
-  @js.native
-  def apply(target: Double, opts: Options): Unit = js.native
-  @JSImport("jump.js", JSImport.Namespace)
-  @js.native
-  def apply(target: Element): Unit = js.native
-  @JSImport("jump.js", JSImport.Namespace)
-  @js.native
-  def apply(target: Element, opts: Options): Unit = js.native
+  @scala.inline
+  def apply(target: String): Unit = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(target: String, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(target: Double): Unit = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(target: Double, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def apply(target: Element): Unit = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(target: Element, opts: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("jump.js", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var a11y: js.UndefOr[Boolean] = js.native
+    var a11y: js.UndefOr[Boolean] = js.undefined
     
-    var callback: js.UndefOr[js.Function0[Unit]] = js.native
+    var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var duration: js.UndefOr[Double | (js.Function1[/* distance */ Double, Double])] = js.native
+    var duration: js.UndefOr[Double | (js.Function1[/* distance */ Double, Double])] = js.undefined
     
-    var easing: js.UndefOr[TransitionFunc] = js.native
+    var easing: js.UndefOr[TransitionFunc] = js.undefined
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

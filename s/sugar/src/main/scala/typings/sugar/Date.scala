@@ -4,7 +4,6 @@ import typings.sugar.sugarjs.Date.DateCreateOptions
 import typings.sugar.sugarjs.Locale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,76 +39,21 @@ trait Date extends StObject {
   def advance(set: js.Object): Date = js.native
   def advance(set: js.Object, reset: Boolean): Date = js.native
   def advance(year: Double, month: Double): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double
-  ): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double,
-    second: Double
-  ): Date = js.native
-  def advance(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: Double,
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def advance(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: Double,
-    minute: Double,
-    second: Double
-  ): Date = js.native
   def advance(year: Double, month: Double, day: Double): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: js.UndefOr[scala.Nothing],
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def advance(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double,
-    second: Double
-  ): Date = js.native
   def advance(year: Double, month: Double, day: Double, hour: Double): Date = js.native
-  def advance(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: Double,
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
   def advance(year: Double, month: Double, day: Double, hour: Double, minute: Double): Date = js.native
   def advance(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Double, hour: Double, minute: Unit, second: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Double, hour: Unit, minute: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Double, hour: Unit, minute: Double, second: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Double, hour: Unit, minute: Unit, second: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Unit, hour: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Unit, hour: Double, minute: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Unit, hour: Double, minute: Double, second: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Unit, hour: Double, minute: Unit, second: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Unit, hour: Unit, minute: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Unit, hour: Unit, minute: Double, second: Double): Date = js.native
+  def advance(year: Double, month: Double, day: Unit, hour: Unit, minute: Unit, second: Double): Date = js.native
   
   def beginningOfDay(): Date = js.native
   def beginningOfDay(localeCode: java.lang.String): Date = js.native
@@ -139,11 +83,11 @@ trait Date extends StObject {
   def daysSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def daysUntil(): Double = js.native
-  def daysUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def daysUntil(d: java.lang.String): Double = js.native
   def daysUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def daysUntil(d: Double): Double = js.native
   def daysUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def daysUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def daysUntil(d: Date): Double = js.native
   def daysUntil(d: Date, options: DateCreateOptions): Double = js.native
   
@@ -162,9 +106,9 @@ trait Date extends StObject {
   def endOfYear(localeCode: java.lang.String): Date = js.native
   
   def format(): java.lang.String = js.native
-  def format(f: js.UndefOr[scala.Nothing], localeCode: java.lang.String): java.lang.String = js.native
   def format(f: java.lang.String): java.lang.String = js.native
   def format(f: java.lang.String, localeCode: java.lang.String): java.lang.String = js.native
+  def format(f: Unit, localeCode: java.lang.String): java.lang.String = js.native
   
   def full(): java.lang.String = js.native
   def full(localeCode: java.lang.String): java.lang.String = js.native
@@ -197,11 +141,11 @@ trait Date extends StObject {
   def hoursSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def hoursUntil(): Double = js.native
-  def hoursUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def hoursUntil(d: java.lang.String): Double = js.native
   def hoursUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def hoursUntil(d: Double): Double = js.native
   def hoursUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def hoursUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def hoursUntil(d: Date): Double = js.native
   def hoursUntil(d: Date, options: DateCreateOptions): Double = js.native
   
@@ -326,11 +270,11 @@ trait Date extends StObject {
   def millisecondsSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def millisecondsUntil(): Double = js.native
-  def millisecondsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def millisecondsUntil(d: java.lang.String): Double = js.native
   def millisecondsUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def millisecondsUntil(d: Double): Double = js.native
   def millisecondsUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def millisecondsUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def millisecondsUntil(d: Date): Double = js.native
   def millisecondsUntil(d: Date, options: DateCreateOptions): Double = js.native
   
@@ -346,11 +290,11 @@ trait Date extends StObject {
   def minutesSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def minutesUntil(): Double = js.native
-  def minutesUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def minutesUntil(d: java.lang.String): Double = js.native
   def minutesUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def minutesUntil(d: Double): Double = js.native
   def minutesUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def minutesUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def minutesUntil(d: Date): Double = js.native
   def minutesUntil(d: Date, options: DateCreateOptions): Double = js.native
   
@@ -366,22 +310,22 @@ trait Date extends StObject {
   def monthsSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def monthsUntil(): Double = js.native
-  def monthsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def monthsUntil(d: java.lang.String): Double = js.native
   def monthsUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def monthsUntil(d: Double): Double = js.native
   def monthsUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def monthsUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def monthsUntil(d: Date): Double = js.native
   def monthsUntil(d: Date, options: DateCreateOptions): Double = js.native
   
   def relative(): java.lang.String = js.native
-  def relative(
-    localeCode: js.UndefOr[scala.Nothing],
-    relativeFn: js.Function4[/* num */ Double, /* unit */ Double, /* ms */ Double, /* loc */ Locale, java.lang.String]
-  ): java.lang.String = js.native
   def relative(localeCode: java.lang.String): java.lang.String = js.native
   def relative(
     localeCode: java.lang.String,
+    relativeFn: js.Function4[/* num */ Double, /* unit */ Double, /* ms */ Double, /* loc */ Locale, java.lang.String]
+  ): java.lang.String = js.native
+  def relative(
+    localeCode: Unit,
     relativeFn: js.Function4[/* num */ Double, /* unit */ Double, /* ms */ Double, /* loc */ Locale, java.lang.String]
   ): java.lang.String = js.native
   def relative(
@@ -396,9 +340,9 @@ trait Date extends StObject {
   def relativeTo(d: Date, localeCode: java.lang.String): java.lang.String = js.native
   
   def reset(): Date = js.native
-  def reset(unit: js.UndefOr[scala.Nothing], localeCode: java.lang.String): Date = js.native
   def reset(unit: java.lang.String): Date = js.native
   def reset(unit: java.lang.String, localeCode: java.lang.String): Date = js.native
+  def reset(unit: Unit, localeCode: java.lang.String): Date = js.native
   
   def rewind(milliseconds: Double): Date = js.native
   def rewind(set: java.lang.String): Date = js.native
@@ -406,76 +350,21 @@ trait Date extends StObject {
   def rewind(set: js.Object): Date = js.native
   def rewind(set: js.Object, reset: Boolean): Date = js.native
   def rewind(year: Double, month: Double): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double
-  ): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double,
-    second: Double
-  ): Date = js.native
-  def rewind(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: Double,
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def rewind(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: Double,
-    minute: Double,
-    second: Double
-  ): Date = js.native
   def rewind(year: Double, month: Double, day: Double): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: js.UndefOr[scala.Nothing],
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def rewind(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double,
-    second: Double
-  ): Date = js.native
   def rewind(year: Double, month: Double, day: Double, hour: Double): Date = js.native
-  def rewind(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: Double,
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
   def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Double): Date = js.native
   def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Double, hour: Double, minute: Unit, second: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Double, hour: Unit, minute: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Double, hour: Unit, minute: Double, second: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Double, hour: Unit, minute: Unit, second: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Unit, hour: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Unit, hour: Double, minute: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Unit, hour: Double, minute: Double, second: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Unit, hour: Double, minute: Unit, second: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Unit, hour: Unit, minute: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Unit, hour: Unit, minute: Double, second: Double): Date = js.native
+  def rewind(year: Double, month: Double, day: Unit, hour: Unit, minute: Unit, second: Double): Date = js.native
   
   def secondsAgo(): Double = js.native
   
@@ -489,11 +378,11 @@ trait Date extends StObject {
   def secondsSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def secondsUntil(): Double = js.native
-  def secondsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def secondsUntil(d: java.lang.String): Double = js.native
   def secondsUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def secondsUntil(d: Double): Double = js.native
   def secondsUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def secondsUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def secondsUntil(d: Date): Double = js.native
   def secondsUntil(d: Date, options: DateCreateOptions): Double = js.native
   
@@ -501,76 +390,21 @@ trait Date extends StObject {
   def set(set: js.Object): Date = js.native
   def set(set: js.Object, reset: Boolean): Date = js.native
   def set(year: Double, month: Double): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double
-  ): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double,
-    second: Double
-  ): Date = js.native
-  def set(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: Double,
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def set(year: Double, month: Double, day: js.UndefOr[scala.Nothing], hour: Double, minute: Double): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: js.UndefOr[scala.Nothing],
-    hour: Double,
-    minute: Double,
-    second: Double
-  ): Date = js.native
   def set(year: Double, month: Double, day: Double): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: js.UndefOr[scala.Nothing],
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
-  def set(year: Double, month: Double, day: Double, hour: js.UndefOr[scala.Nothing], minute: Double): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: js.UndefOr[scala.Nothing],
-    minute: Double,
-    second: Double
-  ): Date = js.native
   def set(year: Double, month: Double, day: Double, hour: Double): Date = js.native
-  def set(
-    year: Double,
-    month: Double,
-    day: Double,
-    hour: Double,
-    minute: js.UndefOr[scala.Nothing],
-    second: Double
-  ): Date = js.native
   def set(year: Double, month: Double, day: Double, hour: Double, minute: Double): Date = js.native
   def set(year: Double, month: Double, day: Double, hour: Double, minute: Double, second: Double): Date = js.native
+  def set(year: Double, month: Double, day: Double, hour: Double, minute: Unit, second: Double): Date = js.native
+  def set(year: Double, month: Double, day: Double, hour: Unit, minute: Double): Date = js.native
+  def set(year: Double, month: Double, day: Double, hour: Unit, minute: Double, second: Double): Date = js.native
+  def set(year: Double, month: Double, day: Double, hour: Unit, minute: Unit, second: Double): Date = js.native
+  def set(year: Double, month: Double, day: Unit, hour: Double): Date = js.native
+  def set(year: Double, month: Double, day: Unit, hour: Double, minute: Double): Date = js.native
+  def set(year: Double, month: Double, day: Unit, hour: Double, minute: Double, second: Double): Date = js.native
+  def set(year: Double, month: Double, day: Unit, hour: Double, minute: Unit, second: Double): Date = js.native
+  def set(year: Double, month: Double, day: Unit, hour: Unit, minute: Double): Date = js.native
+  def set(year: Double, month: Double, day: Unit, hour: Unit, minute: Double, second: Double): Date = js.native
+  def set(year: Double, month: Double, day: Unit, hour: Unit, minute: Unit, second: Double): Date = js.native
   
   def setISOWeek(num: Double): Unit = js.native
   
@@ -594,11 +428,11 @@ trait Date extends StObject {
   def weeksSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def weeksUntil(): Double = js.native
-  def weeksUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def weeksUntil(d: java.lang.String): Double = js.native
   def weeksUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def weeksUntil(d: Double): Double = js.native
   def weeksUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def weeksUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def weeksUntil(d: Date): Double = js.native
   def weeksUntil(d: Date, options: DateCreateOptions): Double = js.native
   
@@ -614,11 +448,11 @@ trait Date extends StObject {
   def yearsSince(d: Date, options: DateCreateOptions): Double = js.native
   
   def yearsUntil(): Double = js.native
-  def yearsUntil(d: js.UndefOr[scala.Nothing], options: DateCreateOptions): Double = js.native
   def yearsUntil(d: java.lang.String): Double = js.native
   def yearsUntil(d: java.lang.String, options: DateCreateOptions): Double = js.native
   def yearsUntil(d: Double): Double = js.native
   def yearsUntil(d: Double, options: DateCreateOptions): Double = js.native
+  def yearsUntil(d: Unit, options: DateCreateOptions): Double = js.native
   def yearsUntil(d: Date): Double = js.native
   def yearsUntil(d: Date, options: DateCreateOptions): Double = js.native
 }

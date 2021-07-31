@@ -2,41 +2,39 @@ package typings.hexo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Model[T] extends StObject {
   
   /**
     * Warehouse method
     * https://hexojs.github.io/warehouse/
     */
-  def count(): Double = js.native
+  def count(): Double
   
   /**
     * Warehouse method
     * https://hexojs.github.io/warehouse/
     */
-  def filter(fn: js.Function2[/* v */ T, /* i */ Double, Boolean]): Model[T] = js.native
+  def filter(fn: js.Function2[/* v */ T, /* i */ Double, Boolean]): Model[T]
   
   /**
     * Warehouse method
     * https://hexojs.github.io/warehouse/
     */
-  def forEach(fn: js.Function2[/* v */ T, /* i */ Double, Unit]): Unit = js.native
+  def forEach(fn: js.Function2[/* v */ T, /* i */ Double, Unit]): Unit
   
   /**
     * Warehouse method
     * https://hexojs.github.io/warehouse/
     */
-  def map[U](fn: js.Function2[/* v */ T, /* i */ Double, U]): js.Array[U] = js.native
+  def map[U](fn: js.Function2[/* v */ T, /* i */ Double, U]): js.Array[U]
   
   /**
     * Warehouse method
     * https://hexojs.github.io/warehouse/
     */
-  def toArray(): js.Array[T] = js.native
+  def toArray(): js.Array[T]
 }
 object Model {
   
@@ -53,7 +51,7 @@ object Model {
   }
   
   @scala.inline
-  implicit class ModelMutableBuilder[Self <: Model[_], T] (val x: Self with Model[T]) extends AnyVal {
+  implicit class ModelMutableBuilder[Self <: Model[?], T] (val x: Self & Model[T]) extends AnyVal {
     
     @scala.inline
     def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))

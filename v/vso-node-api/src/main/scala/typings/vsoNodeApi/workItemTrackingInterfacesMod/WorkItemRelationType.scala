@@ -3,16 +3,16 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WorkItemRelationType extends WorkItemTrackingReference {
+trait WorkItemRelationType
+  extends StObject
+     with WorkItemTrackingReference {
   
   /**
     * The collection of relation type attributes.
     */
-  var attributes: StringDictionary[js.Any] = js.native
+  var attributes: StringDictionary[js.Any]
 }
 object WorkItemRelationType {
   

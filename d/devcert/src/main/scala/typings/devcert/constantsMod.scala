@@ -3,10 +3,13 @@ package typings.devcert
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
+  
+  @JSImport("devcert/dist/constants", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("devcert/dist/constants", "VALID_DOMAIN")
   @js.native
@@ -28,21 +31,18 @@ object constantsMod {
   @js.native
   val configDir: js.Any = js.native
   
-  @JSImport("devcert/dist/constants", "configPath")
-  @js.native
-  def configPath(pathSegments: String*): String = js.native
+  @scala.inline
+  def configPath(pathSegments: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("configPath")(pathSegments.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("devcert/dist/constants", "domainsDir")
   @js.native
   val domainsDir: String = js.native
   
-  @JSImport("devcert/dist/constants", "ensureConfigDirs")
-  @js.native
-  def ensureConfigDirs(): Unit = js.native
+  @scala.inline
+  def ensureConfigDirs(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureConfigDirs")().asInstanceOf[Unit]
   
-  @JSImport("devcert/dist/constants", "getLegacyConfigDir")
-  @js.native
-  def getLegacyConfigDir(): String = js.native
+  @scala.inline
+  def getLegacyConfigDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getLegacyConfigDir")().asInstanceOf[String]
   
   @JSImport("devcert/dist/constants", "isLinux")
   @js.native
@@ -64,9 +64,8 @@ object constantsMod {
   @js.native
   val opensslSerialFilePath: String = js.native
   
-  @JSImport("devcert/dist/constants", "pathForDomain")
-  @js.native
-  def pathForDomain(domain: String, pathSegments: String*): String = js.native
+  @scala.inline
+  def pathForDomain(domain: String, pathSegments: String*): String = (^.asInstanceOf[js.Dynamic].applyDynamic("pathForDomain")(domain.asInstanceOf[js.Any], pathSegments.asInstanceOf[js.Any])).asInstanceOf[String]
   
   @JSImport("devcert/dist/constants", "rootCACertPath")
   @js.native
@@ -80,11 +79,9 @@ object constantsMod {
   @js.native
   val rootCAKeyPath: String = js.native
   
-  @JSImport("devcert/dist/constants", "withDomainCertificateConfig")
-  @js.native
-  def withDomainCertificateConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = js.native
+  @scala.inline
+  def withDomainCertificateConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withDomainCertificateConfig")(domain.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("devcert/dist/constants", "withDomainSigningRequestConfig")
-  @js.native
-  def withDomainSigningRequestConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = js.native
+  @scala.inline
+  def withDomainSigningRequestConfig(domain: String, cb: js.Function1[/* filepath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("withDomainSigningRequestConfig")(domain.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

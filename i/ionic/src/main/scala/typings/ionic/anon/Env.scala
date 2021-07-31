@@ -4,15 +4,13 @@ import typings.ionic.definitionsMod.IProject
 import typings.ionic.definitionsMod.IonicEnvironment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Env extends StObject {
   
-  var env: IonicEnvironment = js.native
+  var env: IonicEnvironment
   
-  var project: js.UndefOr[IProject] = js.native
+  var project: js.UndefOr[IProject] = js.undefined
 }
 object Env {
   

@@ -2,19 +2,17 @@ package typings.gapiPlus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CoverInfo extends StObject {
     
-    var coverInfo: LeftImageOffset = js.native
+    var coverInfo: LeftImageOffset
     
-    var coverPhoto: Height = js.native
+    var coverPhoto: Height
     
-    var layout: String = js.native
+    var layout: String
   }
   object CoverInfo {
     
@@ -38,26 +36,25 @@ object anon {
     }
   }
   
-  @js.native
   trait Department extends StObject {
     
-    var department: String = js.native
+    var department: String
     
-    var description: String = js.native
+    var description: String
     
-    var endDate: String = js.native
+    var endDate: String
     
-    var location: String = js.native
+    var location: String
     
-    var name: String = js.native
+    var name: String
     
-    var primary: Boolean = js.native
+    var primary: Boolean
     
-    var startDate: String = js.native
+    var startDate: String
     
-    var title: String = js.native
+    var title: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Department {
     
@@ -110,20 +107,19 @@ object anon {
     }
   }
   
-  @js.native
   trait FamilyName extends StObject {
     
-    var familyName: String = js.native
+    var familyName: String
     
-    var formatted: String = js.native
+    var formatted: String
     
-    var givenName: String = js.native
+    var givenName: String
     
-    var honorificPrefix: String = js.native
+    var honorificPrefix: String
     
-    var honorificSuffix: String = js.native
+    var honorificSuffix: String
     
-    var middleName: String = js.native
+    var middleName: String
   }
   object FamilyName {
     
@@ -163,14 +159,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var url: String = js.native
+    var url: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object Height {
     
@@ -194,14 +189,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object Label {
     
@@ -226,12 +220,11 @@ object anon {
     }
   }
   
-  @js.native
   trait LeftImageOffset extends StObject {
     
-    var leftImageOffset: Double = js.native
+    var leftImageOffset: Double
     
-    var topImageOffset: Double = js.native
+    var topImageOffset: Double
   }
   object LeftImageOffset {
     
@@ -252,12 +245,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Max extends StObject {
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
   }
   object Max {
     
@@ -278,12 +270,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Primary extends StObject {
     
-    var primary: Boolean = js.native
+    var primary: Boolean
     
-    var value: String = js.native
+    var value: String
   }
   object Primary {
     
@@ -304,12 +295,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Type extends StObject {
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var value: String = js.native
+    var value: String
   }
   object Type {
     
@@ -331,10 +321,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Url extends StObject {
     
-    var url: String = js.native
+    var url: String
   }
   object Url {
     

@@ -12,7 +12,7 @@ A clock-style timepicker for Bootstrap (or jQuery)
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 231911 |
+| # downloads        | 231478 |
 | # stars            | 2 |
 
 ## Links

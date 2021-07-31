@@ -4,15 +4,13 @@ import typings.std.Element
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CurrentTarget extends StObject {
     
-    var currentTarget: Element = js.native
+    var currentTarget: Element
   }
   object CurrentTarget {
     
@@ -67,7 +65,7 @@ object anon {
     /**
       * Returns the object whose event listener's callback is currently being invoked.
       */
-    val currentTarget: (EventTarget | Null) with Element = js.native
+    val currentTarget: (EventTarget | Null) & Element = js.native
     
     /**
       * Returns true if preventDefault() was invoked successfully to indicate cancelation, and false otherwise.
@@ -87,9 +85,9 @@ object anon {
     def initCustomEvent(typeArg: String, canBubbleArg: Boolean, cancelableArg: Boolean, detailArg: js.Any): Unit = js.native
     
     def initEvent(`type`: String): Unit = js.native
-    def initEvent(`type`: String, bubbles: js.UndefOr[scala.Nothing], cancelable: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean): Unit = js.native
     def initEvent(`type`: String, bubbles: Boolean, cancelable: Boolean): Unit = js.native
+    def initEvent(`type`: String, bubbles: Unit, cancelable: Boolean): Unit = js.native
     
     /**
       * Returns true if event was dispatched by the user agent, and false otherwise.

@@ -2,7 +2,6 @@ package typings.chromeApps.WebView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Either the code or the file property must be set,
   * but both may not be set at the same time.
   **/
-@js.native
 trait InjectDetails extends StObject {
   
   /**
@@ -30,13 +28,13 @@ trait InjectDetails extends StObject {
     * Warning: Be careful using the code parameter.
     * Incorrect use of it may open your app to xss attacks.
     */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /**
     * JavaScript or CSS file to inject.
     */
   /** JavaScript or CSS file to inject. */
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
 }
 object InjectDetails {
   

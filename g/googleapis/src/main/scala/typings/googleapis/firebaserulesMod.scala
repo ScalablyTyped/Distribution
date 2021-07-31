@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object firebaserulesMod {
+  
+  @JSImport("googleapis/build/src/apis/firebaserules", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object firebaserulesMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/firebaserules", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/firebaserules", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object firebaserulesMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/firebaserules", "firebaserules")
-  @js.native
-  def firebaserules(options: Options): Firebaserules = js.native
-  @JSImport("googleapis/build/src/apis/firebaserules", "firebaserules")
-  @js.native
-  def firebaserules_v1(version: v1): Firebaserules = js.native
+  @scala.inline
+  def firebaserules(options: Options): Firebaserules = ^.asInstanceOf[js.Dynamic].applyDynamic("firebaserules")(options.asInstanceOf[js.Any]).asInstanceOf[Firebaserules]
+  
+  @scala.inline
+  def firebaserules_v1(version: v1): Firebaserules = ^.asInstanceOf[js.Dynamic].applyDynamic("firebaserules")(version.asInstanceOf[js.Any]).asInstanceOf[Firebaserules]
 }

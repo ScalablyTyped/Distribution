@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media.Streaming.Adaptive
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a deferral that can be used to defer the completion of the DownloadRequested event so that the app can asynchronously download media content. */
-@js.native
 trait AdaptiveMediaSourceDownloadRequestedDeferral extends StObject {
   
   /** Informs the system that an asynchronous operation associated with a DownloadRequested event has finished. */
-  def complete(): Unit = js.native
+  def complete(): Unit
 }
 object AdaptiveMediaSourceDownloadRequestedDeferral {
   

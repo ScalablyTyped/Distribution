@@ -2,10 +2,8 @@ package typings.jstree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSTreeStaticDefaultsUnique extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait JSTreeStaticDefaultsUnique extends StObject {
     * @name $.jstree.defaults.unique.case_sensitive
     * @plugin unique
     */
-  var case_sensitive: Boolean = js.native
+  var case_sensitive: Boolean
   
   /**
     * A callback executed in the instance's scope when a new node is created
@@ -22,14 +20,14 @@ trait JSTreeStaticDefaultsUnique extends StObject {
     * @name $.jstree.defaults.unique.duplicate
     * @plugin unique
     */
-  def duplicate(name: String, counter: Double): String = js.native
+  def duplicate(name: String, counter: Double): String
   
   /**
     * Indicates if white space should be trimmed before the comparison. Default is `false`.
     * @name $.jstree.defaults.unique.trim_whitespace
     * @plugin unique
     */
-  var trim_whitespace: Boolean = js.native
+  var trim_whitespace: Boolean
 }
 object JSTreeStaticDefaultsUnique {
   

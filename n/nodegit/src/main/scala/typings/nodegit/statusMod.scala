@@ -23,7 +23,6 @@ import typings.nodegit.statusListMod.StatusList
 import typings.nodegit.statusOptionsMod.StatusOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object statusMod {
@@ -34,37 +33,32 @@ object statusMod {
   /* static members */
   object Status {
     
-    @JSImport("nodegit/status", "Status.byIndex")
+    @JSImport("nodegit/status", "Status")
     @js.native
-    def byIndex(statuslist: StatusList, idx: Double): StatusEntry = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/status", "Status.file")
-    @js.native
-    def file(repo: Repository, path: String): Double = js.native
+    @scala.inline
+    def byIndex(statuslist: StatusList, idx: Double): StatusEntry = (^.asInstanceOf[js.Dynamic].applyDynamic("byIndex")(statuslist.asInstanceOf[js.Any], idx.asInstanceOf[js.Any])).asInstanceOf[StatusEntry]
     
-    @JSImport("nodegit/status", "Status.foreach")
-    @js.native
-    def foreach(repo: Repository): js.Promise[Double] = js.native
-    @JSImport("nodegit/status", "Status.foreach")
-    @js.native
-    def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = js.native
+    @scala.inline
+    def file(repo: Repository, path: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("file")(repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/status", "Status.foreachExt")
-    @js.native
-    def foreachExt(repo: Repository): js.Promise[Double] = js.native
-    @JSImport("nodegit/status", "Status.foreachExt")
-    @js.native
-    def foreachExt(repo: Repository, opts: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Double] = js.native
-    @JSImport("nodegit/status", "Status.foreachExt")
-    @js.native
-    def foreachExt(repo: Repository, opts: StatusOptions): js.Promise[Double] = js.native
-    @JSImport("nodegit/status", "Status.foreachExt")
-    @js.native
-    def foreachExt(repo: Repository, opts: StatusOptions, callback: js.Function): js.Promise[Double] = js.native
+    @scala.inline
+    def foreach(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def foreach(repo: Repository, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreach")(repo.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/status", "Status.shouldIgnore")
-    @js.native
-    def shouldIgnore(ignored: Double, repo: Repository, path: String): Double = js.native
+    @scala.inline
+    def foreachExt(repo: Repository): js.Promise[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def foreachExt(repo: Repository, opts: Unit, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def foreachExt(repo: Repository, opts: StatusOptions): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    @scala.inline
+    def foreachExt(repo: Repository, opts: StatusOptions, callback: js.Function): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("foreachExt")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    @scala.inline
+    def shouldIgnore(ignored: Double, repo: Repository, path: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("shouldIgnore")(ignored.asInstanceOf[js.Any], repo.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`1`

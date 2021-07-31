@@ -2,55 +2,53 @@ package typings.scrolltofixed
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ScrollToFixed {
   
-  @js.native
   trait ScrollToFixedOptions extends StObject {
     
-    var baseClassName: js.UndefOr[String] = js.native
+    var baseClassName: js.UndefOr[String] = js.undefined
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var dontCheckForPositionFixedSupport: js.UndefOr[Boolean] = js.native
+    var dontCheckForPositionFixedSupport: js.UndefOr[Boolean] = js.undefined
     
-    var dontSetWidth: js.UndefOr[Boolean] = js.native
+    var dontSetWidth: js.UndefOr[Boolean] = js.undefined
     
-    var fixed: js.UndefOr[js.Function0[Unit]] = js.native
+    var fixed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var limit: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var limit: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
-    var marginTop: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var marginTop: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var minWidth: js.UndefOr[Double] = js.native
+    var minWidth: js.UndefOr[Double] = js.undefined
     
-    var offsets: js.UndefOr[Boolean] = js.native
+    var offsets: js.UndefOr[Boolean] = js.undefined
     
-    var postAbsolute: js.UndefOr[js.Function0[Unit]] = js.native
+    var postAbsolute: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var postFixed: js.UndefOr[js.Function0[Unit]] = js.native
+    var postFixed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var postUnfixed: js.UndefOr[js.Function0[Unit]] = js.native
+    var postUnfixed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preAbsolute: js.UndefOr[js.Function0[Unit]] = js.native
+    var preAbsolute: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preFixed: js.UndefOr[js.Function0[Unit]] = js.native
+    var preFixed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var preUnfixed: js.UndefOr[js.Function0[Unit]] = js.native
+    var preUnfixed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var removeOffsets: js.UndefOr[Boolean] = js.native
+    var removeOffsets: js.UndefOr[Boolean] = js.undefined
     
-    var spacerClass: js.UndefOr[String] = js.native
+    var spacerClass: js.UndefOr[String] = js.undefined
     
-    var unfixed: js.UndefOr[js.Function0[Unit]] = js.native
+    var unfixed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
   }
   object ScrollToFixedOptions {
     

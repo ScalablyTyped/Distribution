@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DropDownClosedEventUIParam extends StObject {
   
   /**
     * Used to obtain reference to jquery DOM element which represents drop down list container.
     */
-  var list: js.UndefOr[js.Any] = js.native
+  var list: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to obtain reference to igCombo.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object DropDownClosedEventUIParam {
   

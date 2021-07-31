@@ -3,21 +3,21 @@ package typings.sipJs
 import typings.sipJs.subscriptionOptionsMod.SubscriptionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object subscriberOptionsMod {
   
-  @js.native
-  trait SubscriberOptions extends SubscriptionOptions {
+  trait SubscriberOptions
+    extends StObject
+       with SubscriptionOptions {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var contentType: js.UndefOr[String] = js.native
+    var contentType: js.UndefOr[String] = js.undefined
     
-    var expires: js.UndefOr[Double] = js.native
+    var expires: js.UndefOr[Double] = js.undefined
     
-    var extraHeaders: js.UndefOr[js.Array[String]] = js.native
+    var extraHeaders: js.UndefOr[js.Array[String]] = js.undefined
   }
   object SubscriberOptions {
     

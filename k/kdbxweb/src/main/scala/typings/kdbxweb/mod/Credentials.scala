@@ -4,7 +4,6 @@ import typings.std.ArrayBuffer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("kdbxweb", "Credentials")
@@ -30,11 +29,13 @@ class Credentials () extends StObject {
 /* static members */
 object Credentials {
   
-  @JSImport("kdbxweb", "Credentials.createKeyFileWithHash")
+  @JSImport("kdbxweb", "Credentials")
   @js.native
-  def createKeyFileWithHash(hash: String): Uint8Array = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("kdbxweb", "Credentials.createRandomKeyFile")
-  @js.native
-  def createRandomKeyFile(): Uint8Array = js.native
+  @scala.inline
+  def createKeyFileWithHash(hash: String): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createKeyFileWithHash")(hash.asInstanceOf[js.Any]).asInstanceOf[Uint8Array]
+  
+  @scala.inline
+  def createRandomKeyFile(): Uint8Array = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandomKeyFile")().asInstanceOf[Uint8Array]
 }

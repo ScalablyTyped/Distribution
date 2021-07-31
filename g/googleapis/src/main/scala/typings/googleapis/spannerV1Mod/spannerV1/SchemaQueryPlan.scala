@@ -2,13 +2,11 @@ package typings.googleapis.spannerV1Mod.spannerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains an ordered list of nodes appearing in the query plan.
   */
-@js.native
 trait SchemaQueryPlan extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaQueryPlan extends StObject {
     * starting with the plan root. Each PlanNode&#39;s `id` corresponds to its
     * index in `plan_nodes`.
     */
-  var planNodes: js.UndefOr[js.Array[SchemaPlanNode]] = js.native
+  var planNodes: js.UndefOr[js.Array[SchemaPlanNode]] = js.undefined
 }
 object SchemaQueryPlan {
   

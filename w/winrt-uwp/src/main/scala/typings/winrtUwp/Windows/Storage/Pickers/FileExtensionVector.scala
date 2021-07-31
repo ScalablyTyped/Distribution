@@ -7,12 +7,13 @@ import typings.winrtUwp.anon.Index
 import typings.winrtUwp.anon.ItemsArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a random-access collection of file name extensions. */
 @js.native
-trait FileExtensionVector extends Array[String] {
+trait FileExtensionVector
+  extends StObject
+     with Array[String] {
   
   /**
     * Appends a file name extension to the end of the collection.

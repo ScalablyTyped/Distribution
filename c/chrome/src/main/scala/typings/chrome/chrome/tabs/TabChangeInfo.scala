@@ -2,59 +2,57 @@ package typings.chrome.chrome.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabChangeInfo extends StObject {
   
   /**
     * The tab's new audible state.
     * @since Chrome 45.
     */
-  var audible: js.UndefOr[Boolean] = js.native
+  var audible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tab's new auto-discardable
     * @since Chrome 54.
     */
-  var autoDiscardable: js.UndefOr[Boolean] = js.native
+  var autoDiscardable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tab's new discarded state.
     * @since Chrome 54.
     */
-  var discarded: js.UndefOr[Boolean] = js.native
+  var discarded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tab's new favicon URL.
     * @since Chrome 27.
     */
-  var favIconUrl: js.UndefOr[String] = js.native
+  var favIconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The tab's new muted state and the reason for the change.
     * @since Chrome 46. Warning: this is the current Beta channel.
     */
-  var mutedInfo: js.UndefOr[MutedInfo] = js.native
+  var mutedInfo: js.UndefOr[MutedInfo] = js.undefined
   
   /**
     * The tab's new pinned state.
     * @since Chrome 9.
     */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /** Optional. The status of the tab. Can be either loading or complete. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The tab's new title.
     * @since Chrome 48.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /** Optional. The tab's URL if it has changed. */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object TabChangeInfo {
   

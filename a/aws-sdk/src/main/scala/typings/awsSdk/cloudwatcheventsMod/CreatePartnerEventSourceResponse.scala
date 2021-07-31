@@ -2,16 +2,14 @@ package typings.awsSdk.cloudwatcheventsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePartnerEventSourceResponse extends StObject {
   
   /**
     * The ARN of the partner event source.
     */
-  var EventSourceArn: js.UndefOr[String] = js.native
+  var EventSourceArn: js.UndefOr[String] = js.undefined
 }
 object CreatePartnerEventSourceResponse {
   

@@ -2,34 +2,32 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HTMLStyleSheetRule extends StObject {
   
   @JSName("MSHTML.HTMLStyleSheetRule_typekey")
-  var MSHTMLDotHTMLStyleSheetRule_typekey: HTMLStyleSheetRule = js.native
+  var MSHTMLDotHTMLStyleSheetRule_typekey: HTMLStyleSheetRule
   
-  val constructor: js.Any = js.native
+  val constructor: js.Any
   
-  var cssText: String = js.native
+  var cssText: String
   
-  var ie9_selectorText: String = js.native
+  var ie9_selectorText: String
   
-  def msGetSpecificity(index: Double): Double = js.native
+  def msGetSpecificity(index: Double): Double
   
-  val parentRule: IHTMLCSSRule = js.native
+  val parentRule: IHTMLCSSRule
   
-  val parentStyleSheet: IHTMLStyleSheet = js.native
+  val parentStyleSheet: IHTMLStyleSheet
   
-  val readOnly: Boolean = js.native
+  val readOnly: Boolean
   
-  var selectorText: String = js.native
+  var selectorText: String
   
-  val style: IHTMLRuleStyle = js.native
+  val style: IHTMLRuleStyle
   
-  val `type`: Double = js.native
+  val `type`: Double
 }
 object HTMLStyleSheetRule {
   

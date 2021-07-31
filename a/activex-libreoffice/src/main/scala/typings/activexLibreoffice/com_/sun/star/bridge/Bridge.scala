@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XInitialization
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,9 +21,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * (e.g.: `com.sun.star.bridge.UrpBridge` would be correct servicename for the "urp" protocol). However, the protocol names are compared case
   * insensitive. If there exist two services supporting the same protocol, it is arbitrary which one is chosen, so this should be omitted.
   */
-@js.native
 trait Bridge
-  extends XInitialization
+  extends StObject
+     with XInitialization
      with XBridge
      with XComponent
 object Bridge {
@@ -39,7 +38,7 @@ object Bridge {
     getDescription: () => String,
     getInstance: String => XInterface,
     getName: () => String,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit

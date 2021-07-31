@@ -2,23 +2,24 @@ package typings.playable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hexToRgbMod {
   
-  @JSImport("playable/dist/src/modules/ui/core/theme/utils/hexToRgb", JSImport.Default)
+  @JSImport("playable/dist/src/modules/ui/core/theme/utils/hexToRgb", JSImport.Namespace)
   @js.native
-  def default(hex: String): IRGB = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hex: String): IRGB = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hex.asInstanceOf[js.Any]).asInstanceOf[IRGB]
+  
   trait IRGB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object IRGB {
     

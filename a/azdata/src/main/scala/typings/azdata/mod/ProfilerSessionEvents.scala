@@ -2,17 +2,15 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProfilerSessionEvents extends StObject {
   
-  var events: js.Array[ProfilerEvent] = js.native
+  var events: js.Array[ProfilerEvent]
   
-  var eventsLost: Boolean = js.native
+  var eventsLost: Boolean
   
-  var sessionId: String = js.native
+  var sessionId: String
 }
 object ProfilerSessionEvents {
   

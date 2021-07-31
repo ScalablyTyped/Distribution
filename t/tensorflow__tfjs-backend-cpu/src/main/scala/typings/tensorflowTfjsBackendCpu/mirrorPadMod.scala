@@ -5,14 +5,16 @@ import typings.tensorflowTfjsCore.kernelRegistryMod.KernelConfig
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mirrorPadMod {
   
-  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MirrorPad", "mirrorPad")
+  @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MirrorPad", JSImport.Namespace)
   @js.native
-  def mirrorPad(args: AttrsMirrorPadAttrs): TensorInfo = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def mirrorPad(args: AttrsMirrorPadAttrs): TensorInfo = ^.asInstanceOf[js.Dynamic].applyDynamic("mirrorPad")(args.asInstanceOf[js.Any]).asInstanceOf[TensorInfo]
   
   @JSImport("@tensorflow/tfjs-backend-cpu/dist/kernels/MirrorPad", "mirrorPadConfig")
   @js.native

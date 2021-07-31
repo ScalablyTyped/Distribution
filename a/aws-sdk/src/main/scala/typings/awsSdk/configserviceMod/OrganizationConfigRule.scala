@@ -2,41 +2,39 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrganizationConfigRule extends StObject {
   
   /**
     * A comma-separated list of accounts excluded from organization config rule.
     */
-  var ExcludedAccounts: js.UndefOr[typings.awsSdk.configserviceMod.ExcludedAccounts] = js.native
+  var ExcludedAccounts: js.UndefOr[typings.awsSdk.configserviceMod.ExcludedAccounts] = js.undefined
   
   /**
     * The timestamp of the last update.
     */
-  var LastUpdateTime: js.UndefOr[Date] = js.native
+  var LastUpdateTime: js.UndefOr[Date] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of organization config rule.
     */
-  var OrganizationConfigRuleArn: StringWithCharLimit256 = js.native
+  var OrganizationConfigRuleArn: StringWithCharLimit256
   
   /**
     * The name that you assign to organization config rule.
     */
-  var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName = js.native
+  var OrganizationConfigRuleName: typings.awsSdk.configserviceMod.OrganizationConfigRuleName
   
   /**
     * An OrganizationCustomRuleMetadata object.
     */
-  var OrganizationCustomRuleMetadata: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationCustomRuleMetadata] = js.native
+  var OrganizationCustomRuleMetadata: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationCustomRuleMetadata] = js.undefined
   
   /**
     * An OrganizationManagedRuleMetadata object.
     */
-  var OrganizationManagedRuleMetadata: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationManagedRuleMetadata] = js.native
+  var OrganizationManagedRuleMetadata: js.UndefOr[typings.awsSdk.configserviceMod.OrganizationManagedRuleMetadata] = js.undefined
 }
 object OrganizationConfigRule {
   

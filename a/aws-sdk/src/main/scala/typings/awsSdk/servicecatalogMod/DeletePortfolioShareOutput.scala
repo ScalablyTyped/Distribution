@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeletePortfolioShareOutput extends StObject {
   
   /**
     * The portfolio share unique identifier. This will only be returned if delete is made to an organization node.
     */
-  var PortfolioShareToken: js.UndefOr[Id] = js.native
+  var PortfolioShareToken: js.UndefOr[Id] = js.undefined
 }
 object DeletePortfolioShareOutput {
   

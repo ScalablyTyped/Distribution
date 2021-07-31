@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.internalMod.ModelUnit
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -40,9 +39,8 @@ object DataGridCell {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.DataGridCell.create")
-  @js.native
-  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = js.native
+  @scala.inline
+  def create(model: IModel): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell]
   
   /**
     * Creates and returns a new DataGridCell instance in the SDK and on the server.
@@ -50,9 +48,8 @@ object DataGridCell {
     * of the parent DataGridColumn element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.DataGridCell.createInDataGridColumnUnderEvenRowsCell")
-  @js.native
-  def createInDataGridColumnUnderEvenRowsCell(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = js.native
+  @scala.inline
+  def createInDataGridColumnUnderEvenRowsCell(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderEvenRowsCell")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell]
   
   /**
     * Creates and returns a new DataGridCell instance in the SDK and on the server.
@@ -60,9 +57,8 @@ object DataGridCell {
     * of the parent DataGridColumn element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk", "documenttemplates.DataGridCell.createInDataGridColumnUnderOddRowsCell")
-  @js.native
-  def createInDataGridColumnUnderOddRowsCell(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = js.native
+  @scala.inline
+  def createInDataGridColumnUnderOddRowsCell(container: typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridColumn): typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell = ^.asInstanceOf[js.Dynamic].applyDynamic("createInDataGridColumnUnderOddRowsCell")(container.asInstanceOf[js.Any]).asInstanceOf[typings.mendixmodelsdk.documenttemplatesMod.documenttemplates.DataGridCell]
   
   /* static member */
   @JSImport("mendixmodelsdk", "documenttemplates.DataGridCell.structureTypeName")

@@ -21,7 +21,6 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectMod {
@@ -38,80 +37,79 @@ object selectMod {
   @js.native
   val Select: ComponentClass[SelectProps, ComponentState] = js.native
   
-  @js.native
   trait SelectProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var children: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var children: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var closeOnChange: js.UndefOr[Boolean] = js.native
+    var closeOnChange: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean | (js.Array[Double | String | js.Object])] = js.native
+    var disabled: js.UndefOr[Boolean | (js.Array[Double | String | js.Object])] = js.undefined
     
-    var disabledKey: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var disabledKey: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
-    var dropAlign: js.UndefOr[Bottom] = js.native
+    var dropAlign: js.UndefOr[Bottom] = js.undefined
     
-    var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.native
+    var dropHeight: js.UndefOr[xsmall | small | medium | large | xlarge | String] = js.undefined
     
-    var dropProps: js.UndefOr[DropProps] = js.native
+    var dropProps: js.UndefOr[DropProps] = js.undefined
     
-    var dropTarget: js.UndefOr[js.Object] = js.native
+    var dropTarget: js.UndefOr[js.Object] = js.undefined
     
-    var emptySearchMessage: js.UndefOr[String] = js.native
+    var emptySearchMessage: js.UndefOr[String] = js.undefined
     
-    var focusIndicator: js.UndefOr[Boolean] = js.native
+    var focusIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var icon: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, _]) | ReactNode] = js.native
+    var icon: js.UndefOr[Boolean | (js.Function1[/* repeated */ js.Any, js.Any]) | ReactNode] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var labelKey: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var labelKey: js.UndefOr[String | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var messages: js.UndefOr[Multiple] = js.native
+    var messages: js.UndefOr[Multiple] = js.undefined
     
-    var multiple: js.UndefOr[Boolean] = js.native
+    var multiple: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onMore: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.native
+    var onSearch: js.UndefOr[js.Function1[/* search */ String, Unit]] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var options: js.Array[String | Boolean | Double | Element | js.Object] = js.native
+    var options: js.Array[String | Boolean | Double | Element | js.Object]
     
-    var placeholder: js.UndefOr[PlaceHolderType] = js.native
+    var placeholder: js.UndefOr[PlaceHolderType] = js.undefined
     
-    var plain: js.UndefOr[Boolean] = js.native
+    var plain: js.UndefOr[Boolean] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var searchPlaceholder: js.UndefOr[String] = js.native
+    var searchPlaceholder: js.UndefOr[String] = js.undefined
     
-    var selected: js.UndefOr[Double | js.Array[Double]] = js.native
+    var selected: js.UndefOr[Double | js.Array[Double]] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
     
-    var value: js.UndefOr[String | Element | js.Object | (js.Array[String | Double | js.Object])] = js.native
+    var value: js.UndefOr[String | Element | js.Object | (js.Array[String | Double | js.Object])] = js.undefined
     
-    var valueKey: js.UndefOr[String | Key | (js.Function1[/* repeated */ js.Any, _])] = js.native
+    var valueKey: js.UndefOr[String | Key | (js.Function1[/* repeated */ js.Any, js.Any])] = js.undefined
     
-    var valueLabel: js.UndefOr[ReactNode] = js.native
+    var valueLabel: js.UndefOr[ReactNode] = js.undefined
   }
   object SelectProps {
     
@@ -137,7 +135,7 @@ object selectMod {
       def setAlignSelfUndefined: Self = StObject.set(x, "alignSelf", js.undefined)
       
       @scala.inline
-      def setChildren(value: /* repeated */ js.Any => _): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      def setChildren(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -152,10 +150,10 @@ object selectMod {
       def setDisabled(value: Boolean | (js.Array[Double | String | js.Object])): Self = StObject.set(x, "disabled", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDisabledKey(value: String | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "disabledKey", value.asInstanceOf[js.Any])
+      def setDisabledKey(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "disabledKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setDisabledKeyFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "disabledKey", js.Any.fromFunction1(value))
+      def setDisabledKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "disabledKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDisabledKeyUndefined: Self = StObject.set(x, "disabledKey", js.undefined)
@@ -209,10 +207,10 @@ object selectMod {
       def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
       @scala.inline
-      def setIcon(value: Boolean | (js.Function1[/* repeated */ js.Any, _]) | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
+      def setIcon(value: Boolean | (js.Function1[/* repeated */ js.Any, js.Any]) | ReactNode): Self = StObject.set(x, "icon", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setIconFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
+      def setIconFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "icon", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIconUndefined: Self = StObject.set(x, "icon", js.undefined)
@@ -224,10 +222,10 @@ object selectMod {
       def setIdUndefined: Self = StObject.set(x, "id", js.undefined)
       
       @scala.inline
-      def setLabelKey(value: String | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
+      def setLabelKey(value: String | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "labelKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setLabelKeyFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
+      def setLabelKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "labelKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setLabelKeyUndefined: Self = StObject.set(x, "labelKey", js.undefined)
@@ -263,19 +261,19 @@ object selectMod {
       def setOnChangeUndefined: Self = StObject.set(x, "onChange", js.undefined)
       
       @scala.inline
-      def setOnClose(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
+      def setOnClose(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onClose", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnCloseUndefined: Self = StObject.set(x, "onClose", js.undefined)
       
       @scala.inline
-      def setOnMore(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onMore", js.Any.fromFunction1(value))
+      def setOnMore(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onMore", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnMoreUndefined: Self = StObject.set(x, "onMore", js.undefined)
       
       @scala.inline
-      def setOnOpen(value: /* repeated */ js.Any => _): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
+      def setOnOpen(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onOpen", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnOpenUndefined: Self = StObject.set(x, "onOpen", js.undefined)
@@ -341,10 +339,10 @@ object selectMod {
       def setValue(value: String | Element | js.Object | (js.Array[String | Double | js.Object])): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValueKey(value: String | Key | (js.Function1[/* repeated */ js.Any, _])): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
+      def setValueKey(value: String | Key | (js.Function1[/* repeated */ js.Any, js.Any])): Self = StObject.set(x, "valueKey", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setValueKeyFunction1(value: /* repeated */ js.Any => _): Self = StObject.set(x, "valueKey", js.Any.fromFunction1(value))
+      def setValueKeyFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "valueKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setValueKeyUndefined: Self = StObject.set(x, "valueKey", js.undefined)

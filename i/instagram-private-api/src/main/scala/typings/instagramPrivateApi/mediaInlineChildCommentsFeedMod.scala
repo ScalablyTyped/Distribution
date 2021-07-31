@@ -6,7 +6,6 @@ import typings.instagramPrivateApi.mediaInlineChildCommentsFeedResponseMod.Media
 import typings.instagramPrivateApi.mediaInlineChildCommentsFeedResponseMod.MediaInlineChildCommentsFeedResponseRootObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaInlineChildCommentsFeedMod {

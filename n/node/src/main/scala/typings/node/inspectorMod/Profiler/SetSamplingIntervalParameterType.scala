@@ -2,16 +2,14 @@ package typings.node.inspectorMod.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetSamplingIntervalParameterType extends StObject {
   
   /**
     * New sampling interval in microseconds.
     */
-  var interval: Double = js.native
+  var interval: Double
 }
 object SetSamplingIntervalParameterType {
   

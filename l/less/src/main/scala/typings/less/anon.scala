@@ -2,15 +2,13 @@ package typings.less
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait PluginManager extends StObject {
     
-    var pluginManager: typings.less.Less.PluginManager = js.native
+    var pluginManager: typings.less.Less.PluginManager
   }
   object PluginManager {
     

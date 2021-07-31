@@ -2,19 +2,17 @@ package typings.twitterText
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait End extends StObject {
     
-    var end: Double = js.native
+    var end: Double
     
-    var start: Double = js.native
+    var start: Double
     
-    var weight: Double = js.native
+    var weight: Double
   }
   object End {
     
@@ -38,10 +36,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ExtractUrlsWithoutProtocol extends StObject {
     
-    var extractUrlsWithoutProtocol: Boolean = js.native
+    var extractUrlsWithoutProtocol: Boolean
   }
   object ExtractUrlsWithoutProtocol {
     
@@ -59,10 +56,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Tag extends StObject {
     
-    var tag: String = js.native
+    var tag: String
   }
   object Tag {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.dynamodbstreamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStreamInput extends StObject {
   
   /**
     * The shard ID of the first item that this operation will evaluate. Use the value that was returned for LastEvaluatedShardId in the previous operation. 
     */
-  var ExclusiveStartShardId: js.UndefOr[ShardId] = js.native
+  var ExclusiveStartShardId: js.UndefOr[ShardId] = js.undefined
   
   /**
     * The maximum number of shard objects to return. The upper limit is 100.
     */
-  var Limit: js.UndefOr[PositiveIntegerObject] = js.native
+  var Limit: js.UndefOr[PositiveIntegerObject] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) for the stream.
     */
-  var StreamArn: typings.awsSdk.dynamodbstreamsMod.StreamArn = js.native
+  var StreamArn: typings.awsSdk.dynamodbstreamsMod.StreamArn
 }
 object DescribeStreamInput {
   

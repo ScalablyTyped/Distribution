@@ -3,11 +3,11 @@ package typings.tensorflowTfjsLayers.coreMod
 import typings.tensorflowTfjsLayers.topologyMod.LayerArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropoutLayerArgs extends LayerArgs {
+trait DropoutLayerArgs
+  extends StObject
+     with LayerArgs {
   
   /**
     * Integer array representing the shape of the binary dropout mask that will
@@ -17,13 +17,13 @@ trait DropoutLayerArgs extends LayerArgs {
     * and you want the dropout mask to be the same for all timesteps, you can use
     * `noise_shape=(batch_size, 1, features)`.
     */
-  var noiseShape: js.UndefOr[js.Array[Double]] = js.native
+  var noiseShape: js.UndefOr[js.Array[Double]] = js.undefined
   
   /** Float between 0 and 1. Fraction of the input units to drop. */
-  var rate: Double = js.native
+  var rate: Double
   
   /** An integer to use as random seed. */
-  var seed: js.UndefOr[Double] = js.native
+  var seed: js.UndefOr[Double] = js.undefined
 }
 object DropoutLayerArgs {
   

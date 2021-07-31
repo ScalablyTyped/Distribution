@@ -2,7 +2,6 @@ package typings.materialTooltip
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -20,15 +19,19 @@ object constantsMod {
   object AnchorBoundaryType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AnchorBoundaryType with Double] = js.native
+    def apply(value: Double): js.UndefOr[AnchorBoundaryType & Double] = js.native
     
     @js.native
-    sealed trait BOUNDED extends AnchorBoundaryType
-    /* 0 */ val BOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.BOUNDED with Double = js.native
+    sealed trait BOUNDED
+      extends StObject
+         with AnchorBoundaryType
+    /* 0 */ val BOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.BOUNDED & Double = js.native
     
     @js.native
-    sealed trait UNBOUNDED extends AnchorBoundaryType
-    /* 1 */ val UNBOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.UNBOUNDED with Double = js.native
+    sealed trait UNBOUNDED
+      extends StObject
+         with AnchorBoundaryType
+    /* 1 */ val UNBOUNDED: typings.materialTooltip.constantsMod.AnchorBoundaryType.UNBOUNDED & Double = js.native
   }
   
   @js.native
@@ -60,31 +63,43 @@ object constantsMod {
   object CssClasses extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[CssClasses with String] = js.native
+    def apply(value: String): js.UndefOr[CssClasses & String] = js.native
     
     @js.native
-    sealed trait HIDE extends CssClasses
-    /* "mdc-tooltip--hide" */ val HIDE: typings.materialTooltip.constantsMod.CssClasses.HIDE with String = js.native
+    sealed trait HIDE
+      extends StObject
+         with CssClasses
+    /* "mdc-tooltip--hide" */ val HIDE: typings.materialTooltip.constantsMod.CssClasses.HIDE & String = js.native
     
     @js.native
-    sealed trait HIDE_TRANSITION extends CssClasses
-    /* "mdc-tooltip--hide-transition" */ val HIDE_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.HIDE_TRANSITION with String = js.native
+    sealed trait HIDE_TRANSITION
+      extends StObject
+         with CssClasses
+    /* "mdc-tooltip--hide-transition" */ val HIDE_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.HIDE_TRANSITION & String = js.native
     
     @js.native
-    sealed trait MULTILINE_TOOLTIP extends CssClasses
-    /* "mdc-tooltip--multiline" */ val MULTILINE_TOOLTIP: typings.materialTooltip.constantsMod.CssClasses.MULTILINE_TOOLTIP with String = js.native
+    sealed trait MULTILINE_TOOLTIP
+      extends StObject
+         with CssClasses
+    /* "mdc-tooltip--multiline" */ val MULTILINE_TOOLTIP: typings.materialTooltip.constantsMod.CssClasses.MULTILINE_TOOLTIP & String = js.native
     
     @js.native
-    sealed trait SHOWING extends CssClasses
-    /* "mdc-tooltip--showing" */ val SHOWING: typings.materialTooltip.constantsMod.CssClasses.SHOWING with String = js.native
+    sealed trait SHOWING
+      extends StObject
+         with CssClasses
+    /* "mdc-tooltip--showing" */ val SHOWING: typings.materialTooltip.constantsMod.CssClasses.SHOWING & String = js.native
     
     @js.native
-    sealed trait SHOWING_TRANSITION extends CssClasses
-    /* "mdc-tooltip--showing-transition" */ val SHOWING_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.SHOWING_TRANSITION with String = js.native
+    sealed trait SHOWING_TRANSITION
+      extends StObject
+         with CssClasses
+    /* "mdc-tooltip--showing-transition" */ val SHOWING_TRANSITION: typings.materialTooltip.constantsMod.CssClasses.SHOWING_TRANSITION & String = js.native
     
     @js.native
-    sealed trait SHOWN extends CssClasses
-    /* "mdc-tooltip--shown" */ val SHOWN: typings.materialTooltip.constantsMod.CssClasses.SHOWN with String = js.native
+    sealed trait SHOWN
+      extends StObject
+         with CssClasses
+    /* "mdc-tooltip--shown" */ val SHOWN: typings.materialTooltip.constantsMod.CssClasses.SHOWN & String = js.native
   }
   
   @js.native
@@ -95,23 +110,31 @@ object constantsMod {
   object XPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[XPosition with Double] = js.native
+    def apply(value: Double): js.UndefOr[XPosition & Double] = js.native
     
     @js.native
-    sealed trait CENTER extends XPosition
-    /* 2 */ val CENTER: typings.materialTooltip.constantsMod.XPosition.CENTER with Double = js.native
+    sealed trait CENTER
+      extends StObject
+         with XPosition
+    /* 2 */ val CENTER: typings.materialTooltip.constantsMod.XPosition.CENTER & Double = js.native
     
     @js.native
-    sealed trait DETECTED extends XPosition
-    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.XPosition.DETECTED with Double = js.native
+    sealed trait DETECTED
+      extends StObject
+         with XPosition
+    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.XPosition.DETECTED & Double = js.native
     
     @js.native
-    sealed trait END extends XPosition
-    /* 3 */ val END: typings.materialTooltip.constantsMod.XPosition.END with Double = js.native
+    sealed trait END
+      extends StObject
+         with XPosition
+    /* 3 */ val END: typings.materialTooltip.constantsMod.XPosition.END & Double = js.native
     
     @js.native
-    sealed trait START extends XPosition
-    /* 1 */ val START: typings.materialTooltip.constantsMod.XPosition.START with Double = js.native
+    sealed trait START
+      extends StObject
+         with XPosition
+    /* 1 */ val START: typings.materialTooltip.constantsMod.XPosition.START & Double = js.native
   }
   
   @js.native
@@ -121,19 +144,25 @@ object constantsMod {
   object YPosition extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[YPosition with Double] = js.native
+    def apply(value: Double): js.UndefOr[YPosition & Double] = js.native
     
     @js.native
-    sealed trait ABOVE extends YPosition
-    /* 1 */ val ABOVE: typings.materialTooltip.constantsMod.YPosition.ABOVE with Double = js.native
+    sealed trait ABOVE
+      extends StObject
+         with YPosition
+    /* 1 */ val ABOVE: typings.materialTooltip.constantsMod.YPosition.ABOVE & Double = js.native
     
     @js.native
-    sealed trait BELOW extends YPosition
-    /* 2 */ val BELOW: typings.materialTooltip.constantsMod.YPosition.BELOW with Double = js.native
+    sealed trait BELOW
+      extends StObject
+         with YPosition
+    /* 2 */ val BELOW: typings.materialTooltip.constantsMod.YPosition.BELOW & Double = js.native
     
     @js.native
-    sealed trait DETECTED extends YPosition
-    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.YPosition.DETECTED with Double = js.native
+    sealed trait DETECTED
+      extends StObject
+         with YPosition
+    /* 0 */ val DETECTED: typings.materialTooltip.constantsMod.YPosition.DETECTED & Double = js.native
   }
   
   object events {

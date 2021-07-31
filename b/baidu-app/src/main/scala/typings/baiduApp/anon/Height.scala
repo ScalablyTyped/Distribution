@@ -2,22 +2,20 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Height extends StObject {
   
   // 像素宽
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
   // 左起像素位置
-  var top: Double = js.native
+  var top: Double
   
   // 上起像素位置
-  var width: Double = js.native
+  var width: Double
 }
 object Height {
   

@@ -2,36 +2,34 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This Payment Request API interface is used to store shipping or payment address information. */
-@js.native
 trait PaymentAddress extends StObject {
   
-  val addressLine: js.Array[java.lang.String] = js.native
+  val addressLine: js.Array[java.lang.String]
   
-  val city: java.lang.String = js.native
+  val city: java.lang.String
   
-  val country: java.lang.String = js.native
+  val country: java.lang.String
   
-  val dependentLocality: java.lang.String = js.native
+  val dependentLocality: java.lang.String
   
-  val languageCode: java.lang.String = js.native
+  val languageCode: java.lang.String
   
-  val organization: java.lang.String = js.native
+  val organization: java.lang.String
   
-  val phone: java.lang.String = js.native
+  val phone: java.lang.String
   
-  val postalCode: java.lang.String = js.native
+  val postalCode: java.lang.String
   
-  val recipient: java.lang.String = js.native
+  val recipient: java.lang.String
   
-  val region: java.lang.String = js.native
+  val region: java.lang.String
   
-  val sortingCode: java.lang.String = js.native
+  val sortingCode: java.lang.String
   
-  def toJSON(): js.Any = js.native
+  def toJSON(): js.Any
 }
 object PaymentAddress {
   

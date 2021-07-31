@@ -2,31 +2,29 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
 //#region 节点查询 https://docs.alipay.com/mini/api/selector-query
-@js.native
 trait RectArea extends StObject {
   
   /** 节点的下边界坐标 */
-  var bottom: Double = js.native
+  var bottom: Double
   
   /** 节点的高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 节点的左边界坐标 */
-  var left: Double = js.native
+  var left: Double
   
   /** 节点的右边界坐标 */
-  var right: Double = js.native
+  var right: Double
   
   /** 节点的上边界坐标 */
-  var top: Double = js.native
+  var top: Double
   
   /** 节点的宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object RectArea {
   

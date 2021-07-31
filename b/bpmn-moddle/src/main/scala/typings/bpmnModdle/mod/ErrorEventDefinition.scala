@@ -2,13 +2,13 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ErrorEventDefinition extends BaseElement {
+trait ErrorEventDefinition
+  extends StObject
+     with BaseElement {
   
-  var errorRef: ErrorElement = js.native
+  var errorRef: ErrorElement
 }
 object ErrorEventDefinition {
   

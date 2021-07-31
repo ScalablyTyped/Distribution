@@ -11,7 +11,6 @@ import typings.stompit.connectMod.ConnectionListener
 import typings.stompit.socketMod.SocketOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -52,9 +51,9 @@ object mod {
     extends typings.stompit.connectFailoverMod.^ {
     def this(servers: String) = this()
     def this(servers: js.Array[ConnectOptions]) = this()
-    def this(servers: js.UndefOr[scala.Nothing], options: ConnectFailoverOptions) = this()
     def this(servers: String, options: ConnectFailoverOptions) = this()
     def this(servers: js.Array[ConnectOptions], options: ConnectFailoverOptions) = this()
+    def this(servers: Unit, options: ConnectFailoverOptions) = this()
   }
   
   @JSImport("stompit", "IncomingFrameStream")
@@ -73,32 +72,27 @@ object mod {
   
   object connect {
     
+    @scala.inline
+    def apply(optionsOrPathOrPort: String): typings.stompit.clientMod.^ = ^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(optionsOrPathOrPort: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(optionsOrPathOrPort: Double): typings.stompit.clientMod.^ = ^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(optionsOrPathOrPort: Double, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(optionsOrPathOrPort: ConnectOptions): typings.stompit.clientMod.^ = ^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any]).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(optionsOrPathOrPort: ConnectOptions, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(optionsOrPathOrPort.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(port: Double, host: String): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(port: Double, host: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+    @scala.inline
+    def apply(port: Double, host: Unit, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = (^.asInstanceOf[js.Dynamic].apply(port.asInstanceOf[js.Any], host.asInstanceOf[js.Any], connectionListener.asInstanceOf[js.Any])).asInstanceOf[typings.stompit.clientMod.^]
+    
     @JSImport("stompit", "connect")
     @js.native
-    def apply(optionsOrPathOrPort: String): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(optionsOrPathOrPort: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(optionsOrPathOrPort: Double): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(optionsOrPathOrPort: Double, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(optionsOrPathOrPort: ConnectOptions): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(optionsOrPathOrPort: ConnectOptions, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(port: Double, host: js.UndefOr[scala.Nothing], connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(port: Double, host: String): typings.stompit.clientMod.^ = js.native
-    @JSImport("stompit", "connect")
-    @js.native
-    def apply(port: Double, host: String, connectionListener: ConnectionListener): typings.stompit.clientMod.^ = js.native
+    val ^ : js.Any = js.native
   }
 }

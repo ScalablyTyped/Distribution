@@ -9,23 +9,24 @@ import typings.std.HTMLLIElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFlattenedTreeListMod {
   
-  @JSImport("@react-md/tree/types/useFlattenedTreeList", "useFlattenedTreeList")
+  @JSImport("@react-md/tree/types/useFlattenedTreeList", JSImport.Namespace)
   @js.native
-  def useFlattenedTreeList(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue: Options): ReturnValue = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def useFlattenedTreeList(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue: Options): ReturnValue = ^.asInstanceOf[js.Dynamic].applyDynamic("useFlattenedTreeList")(hasIdItemsRootIdExpandedIdsValueKeyGetItemValue.asInstanceOf[js.Any]).asInstanceOf[ReturnValue]
+  
   trait ItemMetadata extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var ref: TreeItemRef = js.native
+    var ref: TreeItemRef
     
-    var visibleIndex: Double = js.native
+    var visibleIndex: Double
   }
   object ItemMetadata {
     
@@ -51,16 +52,17 @@ object useFlattenedTreeListMod {
   
   type MetadataRecord = Record[TreeItemId, ItemMetadata]
   
-  @js.native
-  trait Options extends TreeConfig {
+  trait Options
+    extends StObject
+       with TreeConfig {
     
-    var expandedIds: ExpandedIds = js.native
+    var expandedIds: ExpandedIds
     
-    var id: String = js.native
+    var id: String
     
-    var items: js.Array[NestedTreeItemUnknownTree] = js.native
+    var items: js.Array[NestedTreeItemUnknownTree]
     
-    var rootId: TreeItemId | Null = js.native
+    var rootId: TreeItemId | Null
   }
   object Options {
     
@@ -72,7 +74,7 @@ object useFlattenedTreeListMod {
       items: js.Array[NestedTreeItemUnknownTree],
       valueKey: String
     ): Options = {
-      val __obj = js.Dynamic.literal(expandedIds = expandedIds.asInstanceOf[js.Any], getItemValue = js.Any.fromFunction2(getItemValue), id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], valueKey = valueKey.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(expandedIds = expandedIds.asInstanceOf[js.Any], getItemValue = js.Any.fromFunction2(getItemValue), id = id.asInstanceOf[js.Any], items = items.asInstanceOf[js.Any], valueKey = valueKey.asInstanceOf[js.Any], rootId = null)
       __obj.asInstanceOf[Options]
     }
     
@@ -104,30 +106,29 @@ object useFlattenedTreeListMod {
   
   type ReturnValue = js.Tuple3[js.Array[SearchableTreeItem], MetadataRecord, js.Array[SearchableTreeItem]]
   
-  @js.native
   trait SearchableTreeItem extends StObject {
     
     /**
       * A DOM Node `id` to use.
       */
-    var id: String = js.native
+    var id: String
     
-    var isParent: Boolean = js.native
+    var isParent: Boolean
     
-    var itemId: TreeItemId = js.native
+    var itemId: TreeItemId
     
-    var parentId: TreeItemId | Null = js.native
+    var parentId: TreeItemId | Null
     
     /**
       * A searchable value for the tree item.
       */
-    var value: String = js.native
+    var value: String
   }
   object SearchableTreeItem {
     
     @scala.inline
     def apply(id: String, isParent: Boolean, itemId: TreeItemId, value: String): SearchableTreeItem = {
-      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], isParent = isParent.asInstanceOf[js.Any], itemId = itemId.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], parentId = null)
       __obj.asInstanceOf[SearchableTreeItem]
     }
     
@@ -155,12 +156,11 @@ object useFlattenedTreeListMod {
   }
   
   /* Inlined std.Required<std.Pick<@react-md/tree.@react-md/tree/types/types.TreeProps<@react-md/tree.@react-md/tree/types/types.UnknownTreeItem>, 'valueKey' | 'getItemValue'>> */
-  @js.native
   trait TreeConfig extends StObject {
     
-    var getItemValue: js.Function2[/* item */ UnknownTreeItem, /* valueKey */ String, String] = js.native
+    var getItemValue: js.Function2[/* item */ UnknownTreeItem, /* valueKey */ String, String]
     
-    var valueKey: String = js.native
+    var valueKey: String
   }
   object TreeConfig {
     

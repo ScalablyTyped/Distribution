@@ -7,7 +7,6 @@ import typings.phaser.integer
 import typings.phaser.phaserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object BitmapText {
@@ -17,58 +16,57 @@ object BitmapText {
     * 
     * Describes the character's position, size, offset and kerning.
     */
-  @js.native
   trait BitmapFontCharacterData extends StObject {
     
     /**
       * The center x position of the character.
       */
-    var centerX: Double = js.native
+    var centerX: Double
     
     /**
       * The center y position of the character.
       */
-    var centerY: Double = js.native
+    var centerY: Double
     
     /**
       * Extra data for the character.
       */
-    var data: js.Object = js.native
+    var data: js.Object
     
     /**
       * The height of the character.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * Kerning values, keyed by character code.
       */
-    var kerning: StringDictionary[Double] = js.native
+    var kerning: StringDictionary[Double]
     
     /**
       * The width of the character.
       */
-    var width: Double = js.native
+    var width: Double
     
     /**
       * The x position of the character.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The x offset of the character.
       */
-    var xOffset: Double = js.native
+    var xOffset: Double
     
     /**
       * The y position of the character.
       */
-    var y: Double = js.native
+    var y: Double
     
     /**
       * The y offset of the character.
       */
-    var yOffset: Double = js.native
+    var yOffset: Double
   }
   object BitmapFontCharacterData {
     
@@ -127,33 +125,32 @@ object BitmapText {
   /**
     * Bitmap Font data that can be used by a BitmapText Game Object.
     */
-  @js.native
   trait BitmapFontData extends StObject {
     
     /**
       * The character data of the font, keyed by character code. Each character datum includes a position, size, offset and more.
       */
-    var chars: NumberDictionary[BitmapFontCharacterData] = js.native
+    var chars: NumberDictionary[BitmapFontCharacterData]
     
     /**
       * The name of the font.
       */
-    var font: String = js.native
+    var font: String
     
     /**
       * The line height of the font.
       */
-    var lineHeight: Double = js.native
+    var lineHeight: Double
     
     /**
       * Whether this font is a retro font (monospace).
       */
-    var retroFont: Boolean = js.native
+    var retroFont: Boolean
     
     /**
       * The size of the font.
       */
-    var size: Double = js.native
+    var size: Double
   }
   object BitmapFontData {
     
@@ -189,99 +186,24 @@ object BitmapText {
     }
   }
   
-  /* Inlined phaser.Phaser.Types.GameObjects.GameObjectConfig & {  font :string | undefined,   text :string | undefined,   size :number | false | undefined} */
-  @js.native
-  trait BitmapTextConfig extends StObject {
-    
-    /**
-      * Add the GameObject to the scene.
-      */
-    var add: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The alpha (opacity) of the Game Object.
-      */
-    var alpha: js.UndefOr[Double] = js.native
-    
-    /**
-      * The rotation angle of the Game Object, in degrees.
-      */
-    var angle: js.UndefOr[Double] = js.native
-    
-    /**
-      * The blend mode of the GameObject.
-      */
-    var blendMode: js.UndefOr[Double] = js.native
-    
-    /**
-      * The depth of the GameObject.
-      */
-    var depth: js.UndefOr[Double] = js.native
-    
-    /**
-      * The horizontally flipped state of the Game Object.
-      */
-    var flipX: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The vertically flipped state of the Game Object.
-      */
-    var flipY: js.UndefOr[Boolean] = js.native
+  trait BitmapTextConfig
+    extends StObject
+       with GameObjectConfig {
     
     /**
       * The key of the font to use from the BitmapFont cache.
       */
-    var font: js.UndefOr[String] = js.native
-    
-    /**
-      * The origin of the Game Object.
-      */
-    var origin: js.UndefOr[Double | js.Object] = js.native
-    
-    /**
-      * The rotation angle of the Game Object, in radians.
-      */
-    var rotation: js.UndefOr[Double] = js.native
-    
-    /**
-      * The scale of the GameObject.
-      */
-    var scale: js.UndefOr[Double | js.Object] = js.native
-    
-    /**
-      * The scale mode of the GameObject.
-      */
-    var scaleMode: js.UndefOr[Double] = js.native
-    
-    /**
-      * The scroll factor of the GameObject.
-      */
-    var scrollFactor: js.UndefOr[Double | js.Object] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
     /**
       * The font size to set.
       */
-    var size: js.UndefOr[Double | `false`] = js.native
+    var size: js.UndefOr[Double | `false`] = js.undefined
     
     /**
       * The string, or array of strings, to be set as the content of this Bitmap Text.
       */
-    var text: js.UndefOr[String] = js.native
-    
-    /**
-      * The visible state of the Game Object.
-      */
-    var visible: js.UndefOr[Boolean] = js.native
-    
-    /**
-      * The x position of the Game Object.
-      */
-    var x: js.UndefOr[Double] = js.native
-    
-    /**
-      * The y position of the Game Object.
-      */
-    var y: js.UndefOr[Double] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object BitmapTextConfig {
     
@@ -295,82 +217,10 @@ object BitmapText {
     implicit class BitmapTextConfigMutableBuilder[Self <: BitmapTextConfig] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdd(value: Boolean): Self = StObject.set(x, "add", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAddUndefined: Self = StObject.set(x, "add", js.undefined)
-      
-      @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAlphaUndefined: Self = StObject.set(x, "alpha", js.undefined)
-      
-      @scala.inline
-      def setAngle(value: Double): Self = StObject.set(x, "angle", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAngleUndefined: Self = StObject.set(x, "angle", js.undefined)
-      
-      @scala.inline
-      def setBlendMode(value: Double): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBlendModeUndefined: Self = StObject.set(x, "blendMode", js.undefined)
-      
-      @scala.inline
-      def setDepth(value: Double): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDepthUndefined: Self = StObject.set(x, "depth", js.undefined)
-      
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFlipXUndefined: Self = StObject.set(x, "flipX", js.undefined)
-      
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFlipYUndefined: Self = StObject.set(x, "flipY", js.undefined)
-      
-      @scala.inline
       def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFontUndefined: Self = StObject.set(x, "font", js.undefined)
-      
-      @scala.inline
-      def setOrigin(value: Double | js.Object): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOriginUndefined: Self = StObject.set(x, "origin", js.undefined)
-      
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRotationUndefined: Self = StObject.set(x, "rotation", js.undefined)
-      
-      @scala.inline
-      def setScale(value: Double | js.Object): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScaleMode(value: Double): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScaleModeUndefined: Self = StObject.set(x, "scaleMode", js.undefined)
-      
-      @scala.inline
-      def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
-      
-      @scala.inline
-      def setScrollFactor(value: Double | js.Object): Self = StObject.set(x, "scrollFactor", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScrollFactorUndefined: Self = StObject.set(x, "scrollFactor", js.undefined)
       
       @scala.inline
       def setSize(value: Double | `false`): Self = StObject.set(x, "size", value.asInstanceOf[js.Any])
@@ -383,39 +233,20 @@ object BitmapText {
       
       @scala.inline
       def setTextUndefined: Self = StObject.set(x, "text", js.undefined)
-      
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVisibleUndefined: Self = StObject.set(x, "visible", js.undefined)
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setXUndefined: Self = StObject.set(x, "x", js.undefined)
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setYUndefined: Self = StObject.set(x, "y", js.undefined)
     }
   }
   
-  @js.native
   trait BitmapTextSize extends StObject {
     
     /**
       * The position and size of the BitmapText, taking into account the position and scale of the Game Object.
       */
-    var global: GlobalBitmapTextSize = js.native
+    var global: GlobalBitmapTextSize
     
     /**
       * The position and size of the BitmapText, taking just the font size into account.
       */
-    var local: LocalBitmapTextSize = js.native
+    var local: LocalBitmapTextSize
   }
   object BitmapTextSize {
     
@@ -438,53 +269,52 @@ object BitmapText {
   
   type DisplayCallback = js.Function1[/* display */ DisplayCallbackConfig, Unit]
   
-  @js.native
   trait DisplayCallbackConfig extends StObject {
     
     /**
       * The character code of the character being rendered.
       */
-    var charCode: Double = js.native
+    var charCode: Double
     
     /**
       * Custom data stored with the character being rendered.
       */
-    var data: js.Any = js.native
+    var data: js.Any
     
     /**
       * The index of the character being rendered.
       */
-    var index: Double = js.native
+    var index: Double
     
     /**
       * The Dynamic Bitmap Text object that owns this character being rendered.
       */
-    var parent: DynamicBitmapText = js.native
+    var parent: DynamicBitmapText
     
     /**
       * The rotation of the character being rendered.
       */
-    var rotation: Double = js.native
+    var rotation: Double
     
     /**
       * The scale of the character being rendered.
       */
-    var scale: Double = js.native
+    var scale: Double
     
     /**
       * The tint of the character being rendered. Always zero in Canvas.
       */
-    var tint: TintConfig = js.native
+    var tint: TintConfig
     
     /**
       * The x position of the character being rendered.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The y position of the character being rendered.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object DisplayCallbackConfig {
     
@@ -539,28 +369,27 @@ object BitmapText {
   /**
     * The position and size of the Bitmap Text in global space, taking into account the Game Object's scale and world position.
     */
-  @js.native
   trait GlobalBitmapTextSize extends StObject {
     
     /**
       * The height of the BitmapText, taking into account the y scale of the Game Object.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The width of the BitmapText, taking into account the x scale of the Game Object.
       */
-    var width: Double = js.native
+    var width: Double
     
     /**
       * The x position of the BitmapText, taking into account the x position and scale of the Game Object.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The y position of the BitmapText, taking into account the y position and scale of the Game Object.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object GlobalBitmapTextSize {
     
@@ -587,138 +416,34 @@ object BitmapText {
     }
   }
   
-  /* Inlined phaser.Phaser.Types.GameObjects.JSONGameObject & {  font :string,   text :string,   fontSize :number,   letterSpacing :number,   align :phaser.integer} */
-  @js.native
-  trait JSONBitmapText extends StObject {
+  trait JSONBitmapText
+    extends StObject
+       with JSONGameObject {
     
     /**
       * The alignment of the text in a multi-line BitmapText object.
       */
-    var align: integer = js.native
-    
-    /**
-      * The alpha value of the Game Object.
-      */
-    var alpha: Double = js.native
-    
-    /**
-      * Sets the Blend Mode being used by this Game Object.
-      */
-    var blendMode: integer | String = js.native
-    
-    /**
-      * The data of this Game Object.
-      */
-    var data: js.Object = js.native
-    
-    /**
-      * The horizontally flipped state of the Game Object.
-      */
-    var flipX: Boolean = js.native
-    
-    /**
-      * The vertically flipped state of the Game Object.
-      */
-    var flipY: Boolean = js.native
+    var align: integer
     
     /**
       * The name of the font.
       */
-    var font: String = js.native
+    var font: String
     
     /**
       * The size of the font.
       */
-    var fontSize: Double = js.native
-    
-    /**
-      * The frame key of this Game Object.
-      */
-    var frameKey: String = js.native
+    var fontSize: Double
     
     /**
       * Adds / Removes spacing between characters.
       */
-    var letterSpacing: Double = js.native
-    
-    /**
-      * The name of this Game Object.
-      */
-    var name: String = js.native
-    
-    /**
-      * The origin of this Game Object.
-      */
-    var origin: js.Object = js.native
-    
-    /**
-      * The horizontal origin of this Game Object.
-      */
-    @JSName("origin.x")
-    var originDotx: Double = js.native
-    
-    /**
-      * The vertical origin of this Game Object.
-      */
-    @JSName("origin.y")
-    var originDoty: Double = js.native
-    
-    /**
-      * The angle of this Game Object in radians.
-      */
-    var rotation: Double = js.native
-    
-    /**
-      * The scale of this Game Object
-      */
-    var scale: js.Object = js.native
-    
-    /**
-      * The horizontal scale of this Game Object.
-      */
-    @JSName("scale.x")
-    var scaleDotx: Double = js.native
-    
-    /**
-      * The vertical scale of this Game Object.
-      */
-    @JSName("scale.y")
-    var scaleDoty: Double = js.native
-    
-    /**
-      * The Scale Mode being used by this Game Object.
-      */
-    var scaleMode: integer = js.native
+    var letterSpacing: Double
     
     /**
       * The text that this Bitmap Text displays.
       */
-    var text: String = js.native
-    
-    /**
-      * The texture key of this Game Object.
-      */
-    var textureKey: String = js.native
-    
-    /**
-      * A textual representation of this Game Object, i.e. `sprite`.
-      */
-    var `type`: String = js.native
-    
-    /**
-      * The visible state of the Game Object.
-      */
-    var visible: Boolean = js.native
-    
-    /**
-      * The x position of this Game Object.
-      */
-    var x: Double = js.native
-    
-    /**
-      * The y position of this Game Object.
-      */
-    var y: Double = js.native
+    var text: String
   }
   object JSONBitmapText {
     
@@ -766,104 +491,43 @@ object BitmapText {
       def setAlign(value: integer): Self = StObject.set(x, "align", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAlpha(value: Double): Self = StObject.set(x, "alpha", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setBlendMode(value: integer | String): Self = StObject.set(x, "blendMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setData(value: js.Object): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFlipX(value: Boolean): Self = StObject.set(x, "flipX", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setFlipY(value: Boolean): Self = StObject.set(x, "flipY", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setFont(value: String): Self = StObject.set(x, "font", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFontSize(value: Double): Self = StObject.set(x, "fontSize", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFrameKey(value: String): Self = StObject.set(x, "frameKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setLetterSpacing(value: Double): Self = StObject.set(x, "letterSpacing", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOrigin(value: js.Object): Self = StObject.set(x, "origin", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOriginDotx(value: Double): Self = StObject.set(x, "origin.x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setOriginDoty(value: Double): Self = StObject.set(x, "origin.y", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRotation(value: Double): Self = StObject.set(x, "rotation", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScale(value: js.Object): Self = StObject.set(x, "scale", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScaleDotx(value: Double): Self = StObject.set(x, "scale.x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScaleDoty(value: Double): Self = StObject.set(x, "scale.y", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setScaleMode(value: integer): Self = StObject.set(x, "scaleMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setText(value: String): Self = StObject.set(x, "text", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTextureKey(value: String): Self = StObject.set(x, "textureKey", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setType(value: String): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setVisible(value: Boolean): Self = StObject.set(x, "visible", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setX(value: Double): Self = StObject.set(x, "x", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setY(value: Double): Self = StObject.set(x, "y", value.asInstanceOf[js.Any])
     }
   }
   
   /**
     * The position and size of the Bitmap Text in local space, taking just the font size into account.
     */
-  @js.native
   trait LocalBitmapTextSize extends StObject {
     
     /**
       * The height of the BitmapText.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The width of the BitmapText.
       */
-    var width: Double = js.native
+    var width: Double
     
     /**
       * The x position of the BitmapText.
       */
-    var x: Double = js.native
+    var x: Double
     
     /**
       * The y position of the BitmapText.
       */
-    var y: Double = js.native
+    var y: Double
   }
   object LocalBitmapTextSize {
     
@@ -890,62 +554,61 @@ object BitmapText {
     }
   }
   
-  @js.native
   trait RetroFontConfig extends StObject {
     
     /**
       * The characters used in the font set, in display order. You can use the TEXT_SET consts for common font set arrangements.
       */
-    var chars: String = js.native
+    var chars: String
     
     /**
       * The number of characters per row in the font set. If not given charsPerRow will be the image width / characterWidth.
       */
-    var charsPerRow: Double = js.native
+    var charsPerRow: Double
     
     /**
       * The height of each character in the font set.
       */
-    var height: Double = js.native
+    var height: Double
     
     /**
       * The key of the image containing the font.
       */
-    var image: String = js.native
+    var image: String
     
     /**
       * The amount of vertical space to add to the line height of the font.
       */
-    var lineSpacing: Double = js.native
+    var lineSpacing: Double
     
     /**
       * If the font set doesn't start at the top left of the given image, specify the X coordinate offset here.
       */
     @JSName("offset.x")
-    var offsetDotx: Double = js.native
+    var offsetDotx: Double
     
     /**
       * If the font set doesn't start at the top left of the given image, specify the Y coordinate offset here.
       */
     @JSName("offset.y")
-    var offsetDoty: Double = js.native
+    var offsetDoty: Double
     
     /**
       * If the characters in the font set have horizontal spacing between them set the required amount here.
       */
     @JSName("spacing.x")
-    var spacingDotx: Double = js.native
+    var spacingDotx: Double
     
     /**
       * If the characters in the font set have vertical spacing between them set the required amount here.
       */
     @JSName("spacing.y")
-    var spacingDoty: Double = js.native
+    var spacingDoty: Double
     
     /**
       * The width of each character in the font set.
       */
-    var width: Double = js.native
+    var width: Double
   }
   object RetroFontConfig {
     
@@ -1005,28 +668,27 @@ object BitmapText {
     }
   }
   
-  @js.native
   trait TintConfig extends StObject {
     
     /**
       * The bottom left tint value. Always zero in canvas.
       */
-    var bottomLeft: Double = js.native
+    var bottomLeft: Double
     
     /**
       * The bottom right tint value. Always zero in canvas.
       */
-    var bottomRight: Double = js.native
+    var bottomRight: Double
     
     /**
       * The top left tint value. Always zero in canvas.
       */
-    var topLeft: Double = js.native
+    var topLeft: Double
     
     /**
       * The top right tint value. Always zero in canvas.
       */
-    var topRight: Double = js.native
+    var topRight: Double
   }
   object TintConfig {
     

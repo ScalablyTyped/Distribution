@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientContainer.gapi.client.container
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NetworkConfig extends StObject {
   
   /**
     * Whether the cluster disables default in-node sNAT rules. In-node sNAT rules will be disabled when default_snat_status is disabled. When disabled is set to false, default IP
     * masquerade rules will be applied to the nodes to prevent sNAT on cluster internal traffic.
     */
-  var defaultSnatStatus: js.UndefOr[DefaultSnatStatus] = js.native
+  var defaultSnatStatus: js.UndefOr[DefaultSnatStatus] = js.undefined
   
   /** Whether Intra-node visibility is enabled for this cluster. This makes same node pod to pod traffic visible for VPC network. */
-  var enableIntraNodeVisibility: js.UndefOr[Boolean] = js.native
+  var enableIntraNodeVisibility: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Output only. The relative name of the Google Compute Engine network(https://cloud.google.com/compute/docs/networks-and-firewalls#networks) to which the cluster is connected.
     * Example: projects/my-project/global/networks/my-network
     */
-  var network: js.UndefOr[String] = js.native
+  var network: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The relative name of the Google Compute Engine [subnetwork](https://cloud.google.com/compute/docs/vpc) to which the cluster is connected. Example:
     * projects/my-project/regions/us-central1/subnetworks/my-subnet
     */
-  var subnetwork: js.UndefOr[String] = js.native
+  var subnetwork: js.UndefOr[String] = js.undefined
 }
 object NetworkConfig {
   

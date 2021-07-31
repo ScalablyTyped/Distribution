@@ -4,30 +4,30 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** connects to a model and broadcasts status change events. */
-@js.native
-trait XDataEditor extends XInterface {
+trait XDataEditor
+  extends StObject
+     with XInterface {
   
   /** @returns the data model which was set by {@link XDataEditor.setModel()} . */
-  var Model: XInterface = js.native
+  var Model: XInterface
   
   /** registers a listener to receive `DataEditorEvent` s. */
-  def addDataEditorListener(listener: XDataEditorListener): Unit = js.native
+  def addDataEditorListener(listener: XDataEditorListener): Unit
   
   /** @returns the data model which was set by {@link XDataEditor.setModel()} . */
-  def getModel(): XInterface = js.native
+  def getModel(): XInterface
   
   /** unregisters a listener. */
-  def removeDataEditorListener(listener: XDataEditorListener): Unit = js.native
+  def removeDataEditorListener(listener: XDataEditorListener): Unit
   
   /** connects the data editor to a data model. */
-  def setModel(model: XInterface): Unit = js.native
+  def setModel(model: XInterface): Unit
   
   /** makes the data editor visible to the user. */
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object XDataEditor {
   

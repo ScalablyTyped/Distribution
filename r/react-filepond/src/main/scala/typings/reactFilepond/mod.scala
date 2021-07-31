@@ -6,10 +6,13 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-filepond", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped {[ P in std.Exclude<keyof filepond.filepond.FilePond, react-filepond.react-filepond.FilteredMethods> ]: filepond.filepond.FilePond[P]} */ @JSImport("react-filepond", "FilePond")
@@ -29,37 +32,37 @@ object mod {
   object FileStatus extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.filepond.mod.FileStatus with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.filepond.mod.FileStatus & Double] = js.native
     
-    /* 2 */ val IDLE: typings.filepond.mod.FileStatus.IDLE with Double = js.native
+    /* 2 */ val IDLE: typings.filepond.mod.FileStatus.IDLE & Double = js.native
     
-    /* 1 */ val INIT: typings.filepond.mod.FileStatus.INIT with Double = js.native
+    /* 1 */ val INIT: typings.filepond.mod.FileStatus.INIT & Double = js.native
     
-    /* 7 */ val LOADING: typings.filepond.mod.FileStatus.LOADING with Double = js.native
+    /* 7 */ val LOADING: typings.filepond.mod.FileStatus.LOADING & Double = js.native
     
-    /* 8 */ val LOAD_ERROR: typings.filepond.mod.FileStatus.LOAD_ERROR with Double = js.native
+    /* 8 */ val LOAD_ERROR: typings.filepond.mod.FileStatus.LOAD_ERROR & Double = js.native
     
-    /* 3 */ val PROCESSING: typings.filepond.mod.FileStatus.PROCESSING with Double = js.native
+    /* 3 */ val PROCESSING: typings.filepond.mod.FileStatus.PROCESSING & Double = js.native
     
-    /* 5 */ val PROCESSING_COMPLETE: typings.filepond.mod.FileStatus.PROCESSING_COMPLETE with Double = js.native
+    /* 5 */ val PROCESSING_COMPLETE: typings.filepond.mod.FileStatus.PROCESSING_COMPLETE & Double = js.native
     
-    /* 6 */ val PROCESSING_ERROR: typings.filepond.mod.FileStatus.PROCESSING_ERROR with Double = js.native
+    /* 6 */ val PROCESSING_ERROR: typings.filepond.mod.FileStatus.PROCESSING_ERROR & Double = js.native
     
-    /* 9 */ val PROCESSING_QUEUED: typings.filepond.mod.FileStatus.PROCESSING_QUEUED with Double = js.native
+    /* 9 */ val PROCESSING_QUEUED: typings.filepond.mod.FileStatus.PROCESSING_QUEUED & Double = js.native
     
-    /* 10 */ val PROCESSING_REVERT_ERROR: typings.filepond.mod.FileStatus.PROCESSING_REVERT_ERROR with Double = js.native
+    /* 10 */ val PROCESSING_REVERT_ERROR: typings.filepond.mod.FileStatus.PROCESSING_REVERT_ERROR & Double = js.native
   }
   
-  @JSImport("react-filepond", "registerPlugin")
-  @js.native
-  def registerPlugin(plugins: js.Any*): Unit = js.native
+  @scala.inline
+  def registerPlugin(plugins: js.Any*): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugins.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
-  trait FilePondProps extends FilePondOptions {
+  trait FilePondProps
+    extends StObject
+       with FilePondOptions {
     
     // (Temporarily) changed to old definition, see discussion at <https://github.com/pqina/react-filepond/pull/151>
     // acceptedFileTypes?: React.InputHTMLAttributes<any>['accept'];
-    var acceptedFileTypes: js.UndefOr[js.Array[String]] = js.native
+    var acceptedFileTypes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object FilePondProps {
     

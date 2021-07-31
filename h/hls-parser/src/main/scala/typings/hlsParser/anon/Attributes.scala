@@ -3,27 +3,25 @@ package typings.hlsParser.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var attributes: js.UndefOr[js.Object] = js.native
+  var attributes: js.UndefOr[js.Object] = js.undefined
   
-  var classId: js.UndefOr[String] = js.native
+  var classId: js.UndefOr[String] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var end: js.UndefOr[Date] = js.native
+  var end: js.UndefOr[Date] = js.undefined
   
-  var endOnNext: js.UndefOr[Boolean] = js.native
+  var endOnNext: js.UndefOr[Boolean] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var plannedDuration: js.UndefOr[Double] = js.native
+  var plannedDuration: js.UndefOr[Double] = js.undefined
   
-  var start: Date = js.native
+  var start: Date
 }
 object Attributes {
   

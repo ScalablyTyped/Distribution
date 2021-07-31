@@ -2,16 +2,14 @@ package typings.awsSdk.directconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualInterfaces extends StObject {
   
   /**
     * The virtual interfaces
     */
-  var virtualInterfaces: js.UndefOr[VirtualInterfaceList] = js.native
+  var virtualInterfaces: js.UndefOr[VirtualInterfaceList] = js.undefined
 }
 object VirtualInterfaces {
   

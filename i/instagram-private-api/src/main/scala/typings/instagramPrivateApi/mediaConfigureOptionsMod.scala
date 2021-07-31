@@ -7,43 +7,41 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.`1`
 import typings.instagramPrivateApi.postingOptionsMod.PostingUsertags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaConfigureOptionsMod {
   
-  @js.native
   trait MediaConfigureOptions extends StObject {
     
-    var disable_comments: js.UndefOr[Boolean] = js.native
+    var disable_comments: js.UndefOr[Boolean] = js.undefined
     
-    var edits: js.UndefOr[Croporiginalsize] = js.native
+    var edits: js.UndefOr[Croporiginalsize] = js.undefined
     
-    var extra: js.UndefOr[Sourceheight] = js.native
+    var extra: js.UndefOr[Sourceheight] = js.undefined
     
-    var geotag_enabled: js.UndefOr[`1` | `0`] = js.native
+    var geotag_enabled: js.UndefOr[`1` | `0`] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var media_folder: js.UndefOr[String] = js.native
+    var media_folder: js.UndefOr[String] = js.undefined
     
-    var media_latitude: js.UndefOr[String] = js.native
+    var media_latitude: js.UndefOr[String] = js.undefined
     
-    var media_longitude: js.UndefOr[String] = js.native
+    var media_longitude: js.UndefOr[String] = js.undefined
     
-    var posting_latitude: js.UndefOr[String] = js.native
+    var posting_latitude: js.UndefOr[String] = js.undefined
     
-    var posting_longitude: js.UndefOr[String] = js.native
+    var posting_longitude: js.UndefOr[String] = js.undefined
     
-    var scene_capture_type: js.UndefOr[String] = js.native
+    var scene_capture_type: js.UndefOr[String] = js.undefined
     
-    var software: js.UndefOr[String] = js.native
+    var software: js.UndefOr[String] = js.undefined
     
-    var source_type: js.UndefOr[String] = js.native
+    var source_type: js.UndefOr[String] = js.undefined
     
-    var upload_id: String = js.native
+    var upload_id: String
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object MediaConfigureOptions {
     
@@ -145,28 +143,29 @@ object mediaConfigureOptionsMod {
     }
   }
   
-  @js.native
-  trait MediaConfigureTimelineOptions extends MediaConfigureOptions {
+  trait MediaConfigureTimelineOptions
+    extends StObject
+       with MediaConfigureOptions {
     
-    var camera_make: js.UndefOr[String] = js.native
+    var camera_make: js.UndefOr[String] = js.undefined
     
-    var camera_model: js.UndefOr[String] = js.native
+    var camera_model: js.UndefOr[String] = js.undefined
     
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
-    var creation_logger_session_id: js.UndefOr[String] = js.native
+    var creation_logger_session_id: js.UndefOr[String] = js.undefined
     
-    var date_time_digitalized: js.UndefOr[String] = js.native
+    var date_time_digitalized: js.UndefOr[String] = js.undefined
     
-    var date_time_original: js.UndefOr[String] = js.native
+    var date_time_original: js.UndefOr[String] = js.undefined
     
-    var device_id: js.UndefOr[String] = js.native
+    var device_id: js.UndefOr[String] = js.undefined
     
-    var location: js.UndefOr[MediaLocation | String] = js.native
+    var location: js.UndefOr[MediaLocation | String] = js.undefined
     
-    var timezone_offset: js.UndefOr[String] = js.native
+    var timezone_offset: js.UndefOr[String] = js.undefined
     
-    var usertags: js.UndefOr[PostingUsertags | String] = js.native
+    var usertags: js.UndefOr[PostingUsertags | String] = js.undefined
   }
   object MediaConfigureTimelineOptions {
     
@@ -241,20 +240,19 @@ object mediaConfigureOptionsMod {
     }
   }
   
-  @js.native
   trait MediaLocation extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var external_id: String = js.native
+    var external_id: String
     
-    var external_source: String = js.native
+    var external_source: String
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lng: Double = js.native
+    var lng: Double
     
-    var name: String = js.native
+    var name: String
   }
   object MediaLocation {
     

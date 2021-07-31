@@ -3,11 +3,11 @@ package typings.victory.mod
 import typings.victory.anon.PickVictoryStyleInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait VictoryChartProps extends VictoryCommonProps {
+trait VictoryChartProps
+  extends StObject
+     with VictoryCommonProps {
   
   /**
     * The domain prop describes the range of values your chart will include. This prop can be
@@ -17,7 +17,7 @@ trait VictoryChartProps extends VictoryCommonProps {
     * available information.
     * @example: [-1, 1], {x: [0, 100], y: [0, 1]}
     */
-  var domain: js.UndefOr[DomainPropType] = js.native
+  var domain: js.UndefOr[DomainPropType] = js.undefined
   
   /**
     * The domainPadding prop specifies a number of pixels of padding to add to the
@@ -25,13 +25,13 @@ trait VictoryChartProps extends VictoryCommonProps {
     * from the origin to prevent crowding. This prop should be given as an object with
     * numbers specified for x and y.
     */
-  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.native
+  var domainPadding: js.UndefOr[DomainPaddingPropType] = js.undefined
   
   /**
     * Similar to data accessor props `x` and `y`, this prop may be used to functionally
     * assign eventKeys to data
     */
-  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.native
+  var eventKey: js.UndefOr[StringOrNumberOrCallback] = js.undefined
   
   /**
     * The event prop take an array of event objects. Event objects are composed of
@@ -74,7 +74,7 @@ trait VictoryChartProps extends VictoryCommonProps {
     *   }
     * ]}
     */
-  var events: js.UndefOr[js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]] = js.native
+  var events: js.UndefOr[js.Array[EventPropTypeInterface[String, StringOrNumberOrCallback]]] = js.undefined
   
   /**
     * The style prop specifies styles for your chart. Any valid inline style properties
@@ -83,7 +83,7 @@ trait VictoryChartProps extends VictoryCommonProps {
     * components within chart.
     * @example {border: "1px solid #ccc", margin: "2%", maxWidth: "40%"}
     */
-  var style: js.UndefOr[PickVictoryStyleInterface] = js.native
+  var style: js.UndefOr[PickVictoryStyleInterface] = js.undefined
 }
 object VictoryChartProps {
   

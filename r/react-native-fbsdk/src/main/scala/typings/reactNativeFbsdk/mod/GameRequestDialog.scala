@@ -2,22 +2,23 @@ package typings.reactNativeFbsdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GameRequestDialog {
   
+  @JSImport("react-native-fbsdk", "GameRequestDialog")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Check if the dialog can be shown.
     */
-  @JSImport("react-native-fbsdk", "GameRequestDialog.canShow")
-  @js.native
-  def canShow(): js.Promise[_] = js.native
+  @scala.inline
+  def canShow(): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("canShow")().asInstanceOf[js.Promise[js.Any]]
   
   /**
     * Shows the dialog using the specified content.
     */
-  @JSImport("react-native-fbsdk", "GameRequestDialog.show")
-  @js.native
-  def show(gameRequestContent: GameRequestContent): js.Promise[_] = js.native
+  @scala.inline
+  def show(gameRequestContent: GameRequestContent): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("show")(gameRequestContent.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
 }

@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object botMod {
@@ -137,6 +136,10 @@ object botMod {
   /* static members */
   object Bot {
     
+    @JSImport("@pulumi/aws/lex/bot", "Bot")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Bot resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -146,100 +149,94 @@ object botMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lex/bot", "Bot.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Bot = js.native
-    @JSImport("@pulumi/aws/lex/bot", "Bot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Bot = js.native
-    @JSImport("@pulumi/aws/lex/bot", "Bot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BotState): Bot = js.native
-    @JSImport("@pulumi/aws/lex/bot", "Bot.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: BotState, opts: CustomResourceOptions): Bot = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Bot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Bot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Bot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BotState): Bot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Bot]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: BotState, opts: CustomResourceOptions): Bot = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Bot]
     
     /**
       * Returns true if the given object is an instance of Bot.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lex/bot", "Bot.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/bot.Bot */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lex/bot.Bot */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lex/bot.Bot */ Boolean]
   }
   
-  @js.native
   trait BotArgs extends StObject {
     
     /**
       * The message that Amazon Lex uses to abort a conversation. Attributes are documented under statement.
       */
-    val abortStatement: Input[typings.pulumiAws.inputMod.lex.BotAbortStatement] = js.native
+    val abortStatement: Input[typings.pulumiAws.inputMod.lex.BotAbortStatement]
     
     /**
       * By specifying true, you confirm that your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. For more information see the [Amazon Lex FAQ](https://aws.amazon.com/lex/faqs#data-security) and the [Amazon Lex PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-childDirected).
       */
-    val childDirected: Input[Boolean] = js.native
+    val childDirected: Input[Boolean]
     
     /**
       * The message that Amazon Lex uses when it doesn't understand the user's request. Attributes are documented under prompt.
       */
-    val clarificationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotClarificationPrompt]] = js.native
+    val clarificationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotClarificationPrompt]] = js.undefined
     
     /**
       * Determines if a new bot version is created when the initial resource is created and on each update. Defaults to `false`.
       */
-    val createVersion: js.UndefOr[Input[Boolean]] = js.native
+    val createVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * A description of the bot. Must be less than or equal to 200 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When set to true user utterances are sent to Amazon Comprehend for sentiment analysis. If you don't specify detectSentiment, the default is `false`.
       */
-    val detectSentiment: js.UndefOr[Input[Boolean]] = js.native
+    val detectSentiment: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Set to `true` to enable access to natural language understanding improvements. When you set the `enableModelImprovements` parameter to true you can use the `nluIntentConfidenceThreshold` parameter to configure confidence scores. For more information, see [Confidence Scores](https://docs.aws.amazon.com/lex/latest/dg/confidence-scores.html). You can only set the `enableModelImprovements` parameter in certain Regions. If you set the parameter to true, your bot has access to accuracy improvements. For more information see the [Amazon Lex Bot PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-enableModelImprovements).
       */
-    val enableModelImprovements: js.UndefOr[Input[Boolean]] = js.native
+    val enableModelImprovements: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The maximum time in seconds that Amazon Lex retains the data gathered in a conversation. Default is `300`. Must be a number between 60 and 86400 (inclusive).
       */
-    val idleSessionTtlInSeconds: js.UndefOr[Input[Double]] = js.native
+    val idleSessionTtlInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A set of Intent objects. Each intent represents a command that a user can express. Attributes are documented under intent. Can have up to 100 Intent objects.
       */
-    val intents: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.BotIntent]]] = js.native
+    val intents: Input[js.Array[Input[typings.pulumiAws.inputMod.lex.BotIntent]]]
     
     /**
       * Specifies the target locale for the bot. Any intent used in the bot must be compatible with the locale of the bot. For available locales, see [Amazon Lex Bot PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-locale). Default is `en-US`.
       */
-    val locale: js.UndefOr[Input[String]] = js.native
+    val locale: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the bot that you want to create, case sensitive. Must be between 2 and 50 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Determines the threshold where Amazon Lex will insert the AMAZON.FallbackIntent, AMAZON.KendraSearchIntent, or both when returning alternative intents in a PostContent or PostText response. AMAZON.FallbackIntent and AMAZON.KendraSearchIntent are only inserted if they are configured for the bot. For more information see [Amazon Lex Bot PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-nluIntentConfidenceThreshold) This value requires `enableModelImprovements` to be set to `true` and the default is `0`. Must be a float between 0 and 1.
       */
-    val nluIntentConfidenceThreshold: js.UndefOr[Input[Double]] = js.native
+    val nluIntentConfidenceThreshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * If you set the `processBehavior` element to `BUILD`, Amazon Lex builds the bot so that it can be run. If you set the element to `SAVE` Amazon Lex saves the bot, but doesn't build it. Default is `SAVE`.
       */
-    val processBehavior: js.UndefOr[Input[String]] = js.native
+    val processBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Polly voice ID that you want Amazon Lex to use for voice interactions with the user. The locale configured for the voice must match the locale of the bot. For more information, see [Available Voices](http://docs.aws.amazon.com/polly/latest/dg/voicelist.html) in the Amazon Polly Developer Guide.
       */
-    val voiceId: js.UndefOr[Input[String]] = js.native
+    val voiceId: js.UndefOr[Input[String]] = js.undefined
   }
   object BotArgs {
     
@@ -336,96 +333,95 @@ object botMod {
     }
   }
   
-  @js.native
   trait BotState extends StObject {
     
     /**
       * The message that Amazon Lex uses to abort a conversation. Attributes are documented under statement.
       */
-    val abortStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotAbortStatement]] = js.native
+    val abortStatement: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotAbortStatement]] = js.undefined
     
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Checksum identifying the version of the bot that was created. The checksum is not
       * included as an argument because the resource will add it automatically when updating the bot.
       */
-    val checksum: js.UndefOr[Input[String]] = js.native
+    val checksum: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * By specifying true, you confirm that your use of Amazon Lex is related to a website, program, or other application that is directed or targeted, in whole or in part, to children under age 13 and subject to COPPA. For more information see the [Amazon Lex FAQ](https://aws.amazon.com/lex/faqs#data-security) and the [Amazon Lex PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-childDirected).
       */
-    val childDirected: js.UndefOr[Input[Boolean]] = js.native
+    val childDirected: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The message that Amazon Lex uses when it doesn't understand the user's request. Attributes are documented under prompt.
       */
-    val clarificationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotClarificationPrompt]] = js.native
+    val clarificationPrompt: js.UndefOr[Input[typings.pulumiAws.inputMod.lex.BotClarificationPrompt]] = js.undefined
     
     /**
       * Determines if a new bot version is created when the initial resource is created and on each update. Defaults to `false`.
       */
-    val createVersion: js.UndefOr[Input[Boolean]] = js.native
+    val createVersion: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The date when the bot version was created.
       */
-    val createdDate: js.UndefOr[Input[String]] = js.native
+    val createdDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A description of the bot. Must be less than or equal to 200 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When set to true user utterances are sent to Amazon Comprehend for sentiment analysis. If you don't specify detectSentiment, the default is `false`.
       */
-    val detectSentiment: js.UndefOr[Input[Boolean]] = js.native
+    val detectSentiment: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * Set to `true` to enable access to natural language understanding improvements. When you set the `enableModelImprovements` parameter to true you can use the `nluIntentConfidenceThreshold` parameter to configure confidence scores. For more information, see [Confidence Scores](https://docs.aws.amazon.com/lex/latest/dg/confidence-scores.html). You can only set the `enableModelImprovements` parameter in certain Regions. If you set the parameter to true, your bot has access to accuracy improvements. For more information see the [Amazon Lex Bot PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-enableModelImprovements).
       */
-    val enableModelImprovements: js.UndefOr[Input[Boolean]] = js.native
+    val enableModelImprovements: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * If status is FAILED, Amazon Lex provides the reason that it failed to build the bot.
       */
-    val failureReason: js.UndefOr[Input[String]] = js.native
+    val failureReason: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum time in seconds that Amazon Lex retains the data gathered in a conversation. Default is `300`. Must be a number between 60 and 86400 (inclusive).
       */
-    val idleSessionTtlInSeconds: js.UndefOr[Input[Double]] = js.native
+    val idleSessionTtlInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A set of Intent objects. Each intent represents a command that a user can express. Attributes are documented under intent. Can have up to 100 Intent objects.
       */
-    val intents: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.lex.BotIntent]]]] = js.native
+    val intents: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.lex.BotIntent]]]] = js.undefined
     
     /**
       * The date when the $LATEST version of this bot was updated.
       */
-    val lastUpdatedDate: js.UndefOr[Input[String]] = js.native
+    val lastUpdatedDate: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the target locale for the bot. Any intent used in the bot must be compatible with the locale of the bot. For available locales, see [Amazon Lex Bot PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-locale). Default is `en-US`.
       */
-    val locale: js.UndefOr[Input[String]] = js.native
+    val locale: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the bot that you want to create, case sensitive. Must be between 2 and 50 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Determines the threshold where Amazon Lex will insert the AMAZON.FallbackIntent, AMAZON.KendraSearchIntent, or both when returning alternative intents in a PostContent or PostText response. AMAZON.FallbackIntent and AMAZON.KendraSearchIntent are only inserted if they are configured for the bot. For more information see [Amazon Lex Bot PutBot API Docs](https://docs.aws.amazon.com/lex/latest/dg/API_PutBot.html#lex-PutBot-request-nluIntentConfidenceThreshold) This value requires `enableModelImprovements` to be set to `true` and the default is `0`. Must be a float between 0 and 1.
       */
-    val nluIntentConfidenceThreshold: js.UndefOr[Input[Double]] = js.native
+    val nluIntentConfidenceThreshold: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * If you set the `processBehavior` element to `BUILD`, Amazon Lex builds the bot so that it can be run. If you set the element to `SAVE` Amazon Lex saves the bot, but doesn't build it. Default is `SAVE`.
       */
-    val processBehavior: js.UndefOr[Input[String]] = js.native
+    val processBehavior: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * When you send a request to create or update a bot, Amazon Lex sets the status response
@@ -433,17 +429,17 @@ object botMod {
       * build the bot, it sets status to FAILED. Amazon Lex returns the reason for the failure in the
       * failureReason response element.
       */
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The version of the bot.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The Amazon Polly voice ID that you want Amazon Lex to use for voice interactions with the user. The locale configured for the voice must match the locale of the bot. For more information, see [Available Voices](http://docs.aws.amazon.com/polly/latest/dg/voicelist.html) in the Amazon Polly Developer Guide.
       */
-    val voiceId: js.UndefOr[Input[String]] = js.native
+    val voiceId: js.UndefOr[Input[String]] = js.undefined
   }
   object BotState {
     

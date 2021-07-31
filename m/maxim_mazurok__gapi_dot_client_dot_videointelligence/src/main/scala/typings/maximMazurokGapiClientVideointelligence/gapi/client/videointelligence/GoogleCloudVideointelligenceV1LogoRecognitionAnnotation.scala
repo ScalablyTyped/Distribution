@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientVideointelligence.gapi.client.videointelli
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVideointelligenceV1LogoRecognitionAnnotation extends StObject {
   
   /** Entity category information to specify the logo class that all the logo tracks within this LogoRecognitionAnnotation are recognized as. */
-  var entity: js.UndefOr[GoogleCloudVideointelligenceV1Entity] = js.native
+  var entity: js.UndefOr[GoogleCloudVideointelligenceV1Entity] = js.undefined
   
   /** All video segments where the recognized logo appears. There might be multiple instances of the same logo class appearing in one VideoSegment. */
-  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1VideoSegment]] = js.native
+  var segments: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1VideoSegment]] = js.undefined
   
   /** All logo tracks where the recognized logo appears. Each track corresponds to one logo instance appearing in consecutive frames. */
-  var tracks: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1Track]] = js.native
+  var tracks: js.UndefOr[js.Array[GoogleCloudVideointelligenceV1Track]] = js.undefined
 }
 object GoogleCloudVideointelligenceV1LogoRecognitionAnnotation {
   

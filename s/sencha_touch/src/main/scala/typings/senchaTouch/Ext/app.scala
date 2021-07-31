@@ -3,130 +3,130 @@ package typings.senchaTouch.Ext
 import typings.senchaTouch.Ext.mixin.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object app {
   
-  @js.native
-  trait IAction extends IBase {
+  trait IAction
+    extends StObject
+       with IBase {
     
     /** [Config Option] (String) */
-    var action: js.UndefOr[java.lang.String] = js.native
+    var action: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Ext.app.Application) */
-    var application: js.UndefOr[IApplication] = js.native
+    var application: js.UndefOr[IApplication] = js.undefined
     
     /** [Config Option] (Array) */
-    var args: js.UndefOr[Array] = js.native
+    var args: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Array) */
-    var beforeFilters: js.UndefOr[Array] = js.native
+    var beforeFilters: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Ext.app.Controller) */
-    var controller: js.UndefOr[IController] = js.native
+    var controller: js.UndefOr[IController] = js.undefined
     
     /** [Method] Starts execution of this Action by calling each of the beforeFilters in turn if any are specified  before calling t  */
-    var execute: js.UndefOr[js.Function0[Unit]] = js.native
+    var execute: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns the value of action
       * @returns String
       */
-    var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of application
       * @returns Ext.app.Application
       */
-    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.native
+    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.undefined
     
     /** [Method] Returns the value of args
       * @returns Array
       */
-    var getArgs: js.UndefOr[js.Function0[Array]] = js.native
+    var getArgs: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of beforeFilters
       * @returns Array
       */
-    var getBeforeFilters: js.UndefOr[js.Function0[Array]] = js.native
+    var getBeforeFilters: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of controller
       * @returns Ext.app.Controller
       */
-    var getController: js.UndefOr[js.Function0[IController]] = js.native
+    var getController: js.UndefOr[js.Function0[IController]] = js.undefined
     
     /** [Method] Returns the value of data
       * @returns Object
       */
-    var getData: js.UndefOr[js.Function0[_]] = js.native
+    var getData: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of scope
       * @returns Object
       */
-    var getScope: js.UndefOr[js.Function0[_]] = js.native
+    var getScope: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of title
       * @returns Object
       */
-    var getTitle: js.UndefOr[js.Function0[_]] = js.native
+    var getTitle: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of url
       * @returns String
       */
-    var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Resumes the execution of this Action or starts it if it had not been started already */
-    var resume: js.UndefOr[js.Function0[Unit]] = js.native
+    var resume: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Object) */
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of action
       * @param action String The new value.
       */
-    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of application
       * @param application Ext.app.Application The new value.
       */
-    var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.native
+    var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
     
     /** [Method] Sets the value of args
       * @param args Array The new value.
       */
-    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], Unit]] = js.native
+    var setArgs: js.UndefOr[js.Function1[/* args */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of beforeFilters
       * @param beforeFilters Array The new value.
       */
-    var setBeforeFilters: js.UndefOr[js.Function1[/* beforeFilters */ js.UndefOr[Array], Unit]] = js.native
+    var setBeforeFilters: js.UndefOr[js.Function1[/* beforeFilters */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of controller
       * @param controller Ext.app.Controller The new value.
       */
-    var setController: js.UndefOr[js.Function1[/* controller */ js.UndefOr[IController], Unit]] = js.native
+    var setController: js.UndefOr[js.Function1[/* controller */ js.UndefOr[IController], Unit]] = js.undefined
     
     /** [Method] Sets the value of data
       * @param data Object The new value.
       */
-    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.native
+    var setData: js.UndefOr[js.Function1[/* data */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of scope
       * @param scope Object The new value.
       */
-    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.native
+    var setScope: js.UndefOr[js.Function1[/* scope */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of title
       * @param title Object The new value.
       */
-    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.native
+    var setTitle: js.UndefOr[js.Function1[/* title */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of url
       * @param url String The new value.
       */
-    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[java.lang.String] = js.native
+    var url: js.UndefOr[java.lang.String] = js.undefined
   }
   object IAction {
     
@@ -206,19 +206,19 @@ object app {
       def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
       
       @scala.inline
-      def setGetData(value: () => _): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
+      def setGetData(value: () => js.Any): Self = StObject.set(x, "getData", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDataUndefined: Self = StObject.set(x, "getData", js.undefined)
       
       @scala.inline
-      def setGetScope(value: () => _): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
+      def setGetScope(value: () => js.Any): Self = StObject.set(x, "getScope", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetScopeUndefined: Self = StObject.set(x, "getScope", js.undefined)
       
       @scala.inline
-      def setGetTitle(value: () => _): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
+      def setGetTitle(value: () => js.Any): Self = StObject.set(x, "getTitle", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetTitleUndefined: Self = StObject.set(x, "getTitle", js.undefined)
@@ -303,17 +303,18 @@ object app {
     }
   }
   
-  @js.native
-  trait IApplication extends IController {
+  trait IApplication
+    extends StObject
+       with IController {
     
     /** [Config Option] (String) */
-    var appFolder: js.UndefOr[java.lang.String] = js.native
+    var appFolder: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Array) */
-    var controllers: js.UndefOr[Array] = js.native
+    var controllers: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Ext.app.Profile) */
-    var currentProfile: js.UndefOr[IProfile] = js.native
+    var currentProfile: js.UndefOr[IProfile] = js.undefined
     
     /** [Method] Dispatches a given Ext app Action to the relevant Controller instance
       * @param action Ext.app.Action The action to dispatch.
@@ -321,12 +322,12 @@ object app {
       */
     var dispatch: js.UndefOr[
         js.Function2[/* action */ js.UndefOr[IAction], /* addToHistory */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of appFolder
       * @returns String
       */
-    var getAppFolder: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getAppFolder: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the Controller instance for the given controller name
       * @param name String The name of the Controller.
@@ -340,181 +341,181 @@ object app {
           /* profileName */ js.UndefOr[java.lang.String], 
           IController
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns the value of controllers
       * @returns Array
       */
-    var getControllers: js.UndefOr[js.Function0[Array]] = js.native
+    var getControllers: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of currentProfile
       * @returns Ext.app.Profile
       */
-    var getCurrentProfile: js.UndefOr[js.Function0[IProfile]] = js.native
+    var getCurrentProfile: js.UndefOr[js.Function0[IProfile]] = js.undefined
     
     /** [Method] Returns the value of history
       * @returns Ext.app.History
       */
-    var getHistory: js.UndefOr[js.Function0[IHistory]] = js.native
+    var getHistory: js.UndefOr[js.Function0[IHistory]] = js.undefined
     
     /** [Method] Returns the value of launch
       * @returns Function
       */
-    var getLaunch: js.UndefOr[js.Function0[_]] = js.native
+    var getLaunch: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns String
       */
-    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of profiles
       * @returns Array
       */
-    var getProfiles: js.UndefOr[js.Function0[Array]] = js.native
+    var getProfiles: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of requires
       * @returns String[]
       */
-    var getRequires: js.UndefOr[js.Function0[Array]] = js.native
+    var getRequires: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of router
       * @returns Ext.app.Router
       */
-    var getRouter: js.UndefOr[js.Function0[typings.senchaTouch.Ext.app.IRouter]] = js.native
+    var getRouter: js.UndefOr[js.Function0[typings.senchaTouch.Ext.app.IRouter]] = js.undefined
     
     /** [Method] Returns the value of themeVariation
       * @returns String/Function
       */
-    var getThemeVariation: js.UndefOr[js.Function0[_]] = js.native
+    var getThemeVariation: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of themeVariationPrefix
       * @returns String
       */
-    var getThemeVariationPrefix: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getThemeVariationPrefix: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of themeVariationTransitionCls
       * @returns String
       */
-    var getThemeVariationTransitionCls: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getThemeVariationTransitionCls: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var glossOnIcon: js.UndefOr[Boolean] = js.native
+    var glossOnIcon: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (Ext.app.History) */
-    var history: js.UndefOr[IHistory] = js.native
+    var history: js.UndefOr[IHistory] = js.undefined
     
     /** [Config Option] (String/Object) */
-    var icon: js.UndefOr[js.Any] = js.native
+    var icon: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var isIconPrecomposed: js.UndefOr[Boolean] = js.native
+    var isIconPrecomposed: js.UndefOr[Boolean] = js.undefined
     
     /** [Config Option] (String) */
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var phoneIcon: js.UndefOr[java.lang.String] = js.native
+    var phoneIcon: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var phoneStartupScreen: js.UndefOr[java.lang.String] = js.native
+    var phoneStartupScreen: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Array) */
-    var profiles: js.UndefOr[Array] = js.native
+    var profiles: js.UndefOr[Array] = js.undefined
     
     /** [Method] Redirects the browser to the given url
       * @param url String/Ext.data.Model The String url to redirect to.
       */
     @JSName("redirectTo")
-    var redirectTo_IApplication: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.native
+    var redirectTo_IApplication: js.UndefOr[js.Function1[/* url */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String[]) */
-    var requires: js.UndefOr[Array] = js.native
+    var requires: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Ext.app.Router) */
-    var router: js.UndefOr[typings.senchaTouch.Ext.app.IRouter] = js.native
+    var router: js.UndefOr[typings.senchaTouch.Ext.app.IRouter] = js.undefined
     
     /** [Method] Sets the value of appFolder
       * @param appFolder String The new value.
       */
-    var setAppFolder: js.UndefOr[js.Function1[/* appFolder */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setAppFolder: js.UndefOr[js.Function1[/* appFolder */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of controllers
       * @param controllers Array The new value.
       */
-    var setControllers: js.UndefOr[js.Function1[/* controllers */ js.UndefOr[Array], Unit]] = js.native
+    var setControllers: js.UndefOr[js.Function1[/* controllers */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of currentProfile
       * @param currentProfile Ext.app.Profile The new value.
       */
-    var setCurrentProfile: js.UndefOr[js.Function1[/* currentProfile */ js.UndefOr[IProfile], Unit]] = js.native
+    var setCurrentProfile: js.UndefOr[js.Function1[/* currentProfile */ js.UndefOr[IProfile], Unit]] = js.undefined
     
     /** [Method] Sets the value of history
       * @param history Ext.app.History The new value.
       */
-    var setHistory: js.UndefOr[js.Function1[/* history */ js.UndefOr[IHistory], Unit]] = js.native
+    var setHistory: js.UndefOr[js.Function1[/* history */ js.UndefOr[IHistory], Unit]] = js.undefined
     
     /** [Method] Sets the value of launch
       * @param launch Function The new value.
       */
-    var setLaunch: js.UndefOr[js.Function1[/* launch */ js.UndefOr[js.Any], Unit]] = js.native
+    var setLaunch: js.UndefOr[js.Function1[/* launch */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name String The new value.
       */
-    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of profiles
       * @param profiles Array The new value.
       */
-    var setProfiles: js.UndefOr[js.Function1[/* profiles */ js.UndefOr[Array], Unit]] = js.native
+    var setProfiles: js.UndefOr[js.Function1[/* profiles */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of requires
       * @param requires String[] The new value.
       */
-    var setRequires: js.UndefOr[js.Function1[/* requires */ js.UndefOr[Array], Unit]] = js.native
+    var setRequires: js.UndefOr[js.Function1[/* requires */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of router
       * @param router Ext.app.Router The new value.
       */
-    var setRouter: js.UndefOr[js.Function1[/* router */ js.UndefOr[typings.senchaTouch.Ext.app.IRouter], Unit]] = js.native
+    var setRouter: js.UndefOr[js.Function1[/* router */ js.UndefOr[typings.senchaTouch.Ext.app.IRouter], Unit]] = js.undefined
     
     /** [Method] Sets the value of themeVariation
       * @param themeVariation String/Function The new value.
       */
-    var setThemeVariation: js.UndefOr[js.Function1[/* themeVariation */ js.UndefOr[js.Any], Unit]] = js.native
+    var setThemeVariation: js.UndefOr[js.Function1[/* themeVariation */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of themeVariationPrefix
       * @param themeVariationPrefix String The new value.
       */
-    var setThemeVariationPrefix: js.UndefOr[js.Function1[/* themeVariationPrefix */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setThemeVariationPrefix: js.UndefOr[js.Function1[/* themeVariationPrefix */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of themeVariationTransitionCls
       * @param themeVariationTransitionCls String The new value.
       */
     var setThemeVariationTransitionCls: js.UndefOr[
         js.Function1[/* themeVariationTransitionCls */ js.UndefOr[java.lang.String], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var startupImage: js.UndefOr[js.Any] = js.native
+    var startupImage: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var statusBarStyle: js.UndefOr[java.lang.String] = js.native
+    var statusBarStyle: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var tabletIcon: js.UndefOr[java.lang.String] = js.native
+    var tabletIcon: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var tabletStartupScreen: js.UndefOr[java.lang.String] = js.native
+    var tabletStartupScreen: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String/Function) */
-    var themeVariation: js.UndefOr[js.Any] = js.native
+    var themeVariation: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var themeVariationPrefix: js.UndefOr[java.lang.String] = js.native
+    var themeVariationPrefix: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var themeVariationTransitionCls: js.UndefOr[java.lang.String] = js.native
+    var themeVariationTransitionCls: js.UndefOr[java.lang.String] = js.undefined
   }
   object IApplication {
     
@@ -584,7 +585,7 @@ object app {
       def setGetHistoryUndefined: Self = StObject.set(x, "getHistory", js.undefined)
       
       @scala.inline
-      def setGetLaunch(value: () => _): Self = StObject.set(x, "getLaunch", js.Any.fromFunction0(value))
+      def setGetLaunch(value: () => js.Any): Self = StObject.set(x, "getLaunch", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLaunchUndefined: Self = StObject.set(x, "getLaunch", js.undefined)
@@ -614,7 +615,7 @@ object app {
       def setGetRouterUndefined: Self = StObject.set(x, "getRouter", js.undefined)
       
       @scala.inline
-      def setGetThemeVariation(value: () => _): Self = StObject.set(x, "getThemeVariation", js.Any.fromFunction0(value))
+      def setGetThemeVariation(value: () => js.Any): Self = StObject.set(x, "getThemeVariation", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetThemeVariationPrefix(value: () => java.lang.String): Self = StObject.set(x, "getThemeVariationPrefix", js.Any.fromFunction0(value))
@@ -813,32 +814,33 @@ object app {
     }
   }
   
-  @js.native
-  trait IController extends IObservable {
+  trait IController
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (Ext.app.Application) */
-    var application: js.UndefOr[IApplication] = js.native
+    var application: js.UndefOr[IApplication] = js.undefined
     
     /** [Config Option] (Object) */
-    var before: js.UndefOr[js.Any] = js.native
+    var before: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Object) */
-    var control: js.UndefOr[js.Any] = js.native
+    var control: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Returns the value of application
       * @returns Ext.app.Application
       */
-    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.native
+    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.undefined
     
     /** [Method] Returns the value of before
       * @returns Object
       */
-    var getBefore: js.UndefOr[js.Function0[_]] = js.native
+    var getBefore: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of control
       * @returns Object
       */
-    var getControl: js.UndefOr[js.Function0[_]] = js.native
+    var getControl: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns a reference to another Controller
       * @param controllerName String
@@ -849,58 +851,58 @@ object app {
         js.Function2[
           /* controllerName */ js.UndefOr[java.lang.String], 
           /* profile */ js.UndefOr[java.lang.String], 
-          _
+          js.Any
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Returns a reference to a Model
       * @param modelName String
       * @returns Object
       */
-    var getModel: js.UndefOr[js.Function1[/* modelName */ js.UndefOr[java.lang.String], _]] = js.native
+    var getModel: js.UndefOr[js.Function1[/* modelName */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
     
     /** [Method] Returns the value of models
       * @returns String[]
       */
-    var getModels: js.UndefOr[js.Function0[Array]] = js.native
+    var getModels: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of refs
       * @returns Object
       */
-    var getRefs: js.UndefOr[js.Function0[_]] = js.native
+    var getRefs: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of routes
       * @returns Object
       */
-    var getRoutes: js.UndefOr[js.Function0[_]] = js.native
+    var getRoutes: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of stores
       * @returns String[]
       */
-    var getStores: js.UndefOr[js.Function0[Array]] = js.native
+    var getStores: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of views
       * @returns Array
       */
-    var getViews: js.UndefOr[js.Function0[Array]] = js.native
+    var getViews: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Config Option] (Function) */
-    var init: js.UndefOr[js.Any] = js.native
+    var init: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (Function) */
-    var launch: js.UndefOr[js.Any] = js.native
+    var launch: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String[]) */
-    var models: js.UndefOr[Array] = js.native
+    var models: js.UndefOr[Array] = js.undefined
     
     /** [Method] Convenient way to redirect to a new url
       * @param place Object
       * @returns Object
       */
-    var redirectTo: js.UndefOr[js.Function1[/* place */ js.UndefOr[js.Any], _]] = js.native
+    var redirectTo: js.UndefOr[js.Function1[/* place */ js.UndefOr[js.Any], js.Any]] = js.undefined
     
     /** [Config Option] (Object) */
-    var refs: js.UndefOr[js.Any] = js.native
+    var refs: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -910,56 +912,56 @@ object app {
     @JSName("relayEvents")
     var relayEvents_IController: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var routes: js.UndefOr[js.Any] = js.native
+    var routes: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Sets the value of application
       * @param application Ext.app.Application The new value.
       */
-    var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.native
+    var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
     
     /** [Method] Sets the value of before
       * @param before Object The new value.
       */
-    var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.native
+    var setBefore: js.UndefOr[js.Function1[/* before */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of control
       * @param control Object The new value.
       */
-    var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[js.Any], Unit]] = js.native
+    var setControl: js.UndefOr[js.Function1[/* control */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of models
       * @param models String[] The new value.
       */
-    var setModels: js.UndefOr[js.Function1[/* models */ js.UndefOr[Array], Unit]] = js.native
+    var setModels: js.UndefOr[js.Function1[/* models */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of refs
       * @param refs Object The new value.
       */
-    var setRefs: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.native
+    var setRefs: js.UndefOr[js.Function1[/* refs */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of routes
       * @param routes Object The new value.
       */
-    var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[js.Any], Unit]] = js.native
+    var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of stores
       * @param stores String[] The new value.
       */
-    var setStores: js.UndefOr[js.Function1[/* stores */ js.UndefOr[Array], Unit]] = js.native
+    var setStores: js.UndefOr[js.Function1[/* stores */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of views
       * @param views Array The new value.
       */
-    var setViews: js.UndefOr[js.Function1[/* views */ js.UndefOr[Array], Unit]] = js.native
+    var setViews: js.UndefOr[js.Function1[/* views */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Config Option] (String[]) */
-    var stores: js.UndefOr[Array] = js.native
+    var stores: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Array) */
-    var views: js.UndefOr[Array] = js.native
+    var views: js.UndefOr[Array] = js.undefined
   }
   object IController {
     
@@ -997,27 +999,27 @@ object app {
       def setGetApplicationUndefined: Self = StObject.set(x, "getApplication", js.undefined)
       
       @scala.inline
-      def setGetBefore(value: () => _): Self = StObject.set(x, "getBefore", js.Any.fromFunction0(value))
+      def setGetBefore(value: () => js.Any): Self = StObject.set(x, "getBefore", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetBeforeUndefined: Self = StObject.set(x, "getBefore", js.undefined)
       
       @scala.inline
-      def setGetControl(value: () => _): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
+      def setGetControl(value: () => js.Any): Self = StObject.set(x, "getControl", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetControlUndefined: Self = StObject.set(x, "getControl", js.undefined)
       
       @scala.inline
       def setGetController(
-        value: (/* controllerName */ js.UndefOr[java.lang.String], /* profile */ js.UndefOr[java.lang.String]) => _
+        value: (/* controllerName */ js.UndefOr[java.lang.String], /* profile */ js.UndefOr[java.lang.String]) => js.Any
       ): Self = StObject.set(x, "getController", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetControllerUndefined: Self = StObject.set(x, "getController", js.undefined)
       
       @scala.inline
-      def setGetModel(value: /* modelName */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "getModel", js.Any.fromFunction1(value))
+      def setGetModel(value: /* modelName */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "getModel", js.Any.fromFunction1(value))
       
       @scala.inline
       def setGetModelUndefined: Self = StObject.set(x, "getModel", js.undefined)
@@ -1029,13 +1031,13 @@ object app {
       def setGetModelsUndefined: Self = StObject.set(x, "getModels", js.undefined)
       
       @scala.inline
-      def setGetRefs(value: () => _): Self = StObject.set(x, "getRefs", js.Any.fromFunction0(value))
+      def setGetRefs(value: () => js.Any): Self = StObject.set(x, "getRefs", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetRefsUndefined: Self = StObject.set(x, "getRefs", js.undefined)
       
       @scala.inline
-      def setGetRoutes(value: () => _): Self = StObject.set(x, "getRoutes", js.Any.fromFunction0(value))
+      def setGetRoutes(value: () => js.Any): Self = StObject.set(x, "getRoutes", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetRoutesUndefined: Self = StObject.set(x, "getRoutes", js.undefined)
@@ -1071,7 +1073,7 @@ object app {
       def setModelsUndefined: Self = StObject.set(x, "models", js.undefined)
       
       @scala.inline
-      def setRedirectTo(value: /* place */ js.UndefOr[js.Any] => _): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
+      def setRedirectTo(value: /* place */ js.UndefOr[js.Any] => js.Any): Self = StObject.set(x, "redirectTo", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRedirectToUndefined: Self = StObject.set(x, "redirectTo", js.undefined)
@@ -1156,11 +1158,12 @@ object app {
     }
   }
   
-  @js.native
-  trait IHistory extends IObservable {
+  trait IHistory
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (Array) */
-    var actions: js.UndefOr[Array] = js.native
+    var actions: js.UndefOr[Array] = js.undefined
     
     /** [Method] Adds an Action to the stack optionally updating the browser s url and firing the change event
       * @param action Ext.app.Action The Action to add to the stack.
@@ -1168,25 +1171,25 @@ object app {
       */
     var add: js.UndefOr[
         js.Function2[/* action */ js.UndefOr[IAction], /* silent */ js.UndefOr[Boolean], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Navigate to the previous active action  */
-    var back: js.UndefOr[js.Function0[Unit]] = js.native
+    var back: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Returns the value of actions
       * @returns Array
       */
-    var getActions: js.UndefOr[js.Function0[Array]] = js.native
+    var getActions: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of token
       * @returns String
       */
-    var getToken: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getToken: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of updateUrl
       * @returns Boolean
       */
-    var getUpdateUrl: js.UndefOr[js.Function0[Boolean]] = js.native
+    var getUpdateUrl: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -1196,28 +1199,28 @@ object app {
     @JSName("relayEvents")
     var relayEvents_IHistory: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of actions
       * @param actions Array The new value.
       */
-    var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[Array], Unit]] = js.native
+    var setActions: js.UndefOr[js.Function1[/* actions */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of token
       * @param token String The new value.
       */
-    var setToken: js.UndefOr[js.Function1[/* token */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setToken: js.UndefOr[js.Function1[/* token */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of updateUrl
       * @param updateUrl Boolean The new value.
       */
-    var setUpdateUrl: js.UndefOr[js.Function1[/* updateUrl */ js.UndefOr[Boolean], Unit]] = js.native
+    var setUpdateUrl: js.UndefOr[js.Function1[/* updateUrl */ js.UndefOr[Boolean], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var token: js.UndefOr[java.lang.String] = js.native
+    var token: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var updateUrl: js.UndefOr[Boolean] = js.native
+    var updateUrl: js.UndefOr[Boolean] = js.undefined
   }
   object IHistory {
     
@@ -1304,66 +1307,67 @@ object app {
     }
   }
   
-  @js.native
-  trait IProfile extends IObservable {
+  trait IProfile
+    extends StObject
+       with IObservable {
     
     /** [Config Option] (Ext.app.Application) */
-    var application: js.UndefOr[IApplication] = js.native
+    var application: js.UndefOr[IApplication] = js.undefined
     
     /** [Config Option] (Array) */
-    var controllers: js.UndefOr[Array] = js.native
+    var controllers: js.UndefOr[Array] = js.undefined
     
     /** [Method] Returns the value of application
       * @returns Ext.app.Application
       */
-    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.native
+    var getApplication: js.UndefOr[js.Function0[IApplication]] = js.undefined
     
     /** [Method] Returns the value of controllers
       * @returns Array
       */
-    var getControllers: js.UndefOr[js.Function0[Array]] = js.native
+    var getControllers: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of models
       * @returns Array
       */
-    var getModels: js.UndefOr[js.Function0[Array]] = js.native
+    var getModels: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of name
       * @returns String
       */
-    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getName: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of namespace
       * @returns String
       */
-    var getNamespace: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getNamespace: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of stores
       * @returns Array
       */
-    var getStores: js.UndefOr[js.Function0[Array]] = js.native
+    var getStores: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Returns the value of views
       * @returns Array
       */
-    var getViews: js.UndefOr[js.Function0[Array]] = js.native
+    var getViews: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Determines whether or not this Profile is active on the device isActive is executed on
       * @returns Boolean True if this Profile should be activated on the device it is running on, false otherwise
       */
-    var isActive: js.UndefOr[js.Function0[Boolean]] = js.native
+    var isActive: js.UndefOr[js.Function0[Boolean]] = js.undefined
     
     /** [Method] The launch function is called by the Application if this Profile s isActive function returned true  */
-    var launch: js.UndefOr[js.Function0[Unit]] = js.native
+    var launch: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (Array) */
-    var models: js.UndefOr[Array] = js.native
+    var models: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (String) */
-    var name: js.UndefOr[java.lang.String] = js.native
+    var name: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (String) */
-    var namespace: js.UndefOr[java.lang.String] = js.native
+    var namespace: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Relays selected events from the specified Observable as if the events were fired by this
       * @param object Object The Observable whose events this object is to relay.
@@ -1373,48 +1377,48 @@ object app {
     @JSName("relayEvents")
     var relayEvents_IProfile: js.UndefOr[
         js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], IObservable]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Sets the value of application
       * @param application Ext.app.Application The new value.
       */
-    var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.native
+    var setApplication: js.UndefOr[js.Function1[/* application */ js.UndefOr[IApplication], Unit]] = js.undefined
     
     /** [Method] Sets the value of controllers
       * @param controllers Array The new value.
       */
-    var setControllers: js.UndefOr[js.Function1[/* controllers */ js.UndefOr[Array], Unit]] = js.native
+    var setControllers: js.UndefOr[js.Function1[/* controllers */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of models
       * @param models Array The new value.
       */
-    var setModels: js.UndefOr[js.Function1[/* models */ js.UndefOr[Array], Unit]] = js.native
+    var setModels: js.UndefOr[js.Function1[/* models */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of name
       * @param name String The new value.
       */
-    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setName: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of namespace
       * @param namespace String The new value.
       */
-    var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setNamespace: js.UndefOr[js.Function1[/* namespace */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of stores
       * @param stores Array The new value.
       */
-    var setStores: js.UndefOr[js.Function1[/* stores */ js.UndefOr[Array], Unit]] = js.native
+    var setStores: js.UndefOr[js.Function1[/* stores */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Method] Sets the value of views
       * @param views Array The new value.
       */
-    var setViews: js.UndefOr[js.Function1[/* views */ js.UndefOr[Array], Unit]] = js.native
+    var setViews: js.UndefOr[js.Function1[/* views */ js.UndefOr[Array], Unit]] = js.undefined
     
     /** [Config Option] (Array) */
-    var stores: js.UndefOr[Array] = js.native
+    var stores: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (Array) */
-    var views: js.UndefOr[Array] = js.native
+    var views: js.UndefOr[Array] = js.undefined
   }
   object IProfile {
     
@@ -1573,69 +1577,70 @@ object app {
     }
   }
   
-  @js.native
-  trait IRoute extends IBase {
+  trait IRoute
+    extends StObject
+       with IBase {
     
     /** [Config Option] (String) */
-    var action: js.UndefOr[java.lang.String] = js.native
+    var action: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Object) */
-    var conditions: js.UndefOr[js.Any] = js.native
+    var conditions: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var controller: js.UndefOr[java.lang.String] = js.native
+    var controller: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Returns the value of action
       * @returns String
       */
-    var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getAction: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of conditions
       * @returns Object
       */
-    var getConditions: js.UndefOr[js.Function0[_]] = js.native
+    var getConditions: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of controller
       * @returns String
       */
-    var getController: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getController: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Method] Returns the value of url
       * @returns String
       */
-    var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.native
+    var getUrl: js.UndefOr[js.Function0[java.lang.String]] = js.undefined
     
     /** [Property] (Object) */
-    var paramsInMatchString: js.UndefOr[js.Any] = js.native
+    var paramsInMatchString: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Attempts to recognize a given url string and return controller action pair for it
       * @param url String The url to recognize.
       * @returns Object/Boolean The matched data, or false if no match.
       */
-    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], _]] = js.native
+    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
     
     /** [Method] Sets the value of action
       * @param action String The new value.
       */
-    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setAction: js.UndefOr[js.Function1[/* action */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of conditions
       * @param conditions Object The new value.
       */
-    var setConditions: js.UndefOr[js.Function1[/* conditions */ js.UndefOr[js.Any], Unit]] = js.native
+    var setConditions: js.UndefOr[js.Function1[/* conditions */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of controller
       * @param controller String The new value.
       */
-    var setController: js.UndefOr[js.Function1[/* controller */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setController: js.UndefOr[js.Function1[/* controller */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Sets the value of url
       * @param url String The new value.
       */
-    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var setUrl: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var url: js.UndefOr[java.lang.String] = js.native
+    var url: js.UndefOr[java.lang.String] = js.undefined
   }
   object IRoute {
     
@@ -1673,7 +1678,7 @@ object app {
       def setGetActionUndefined: Self = StObject.set(x, "getAction", js.undefined)
       
       @scala.inline
-      def setGetConditions(value: () => _): Self = StObject.set(x, "getConditions", js.Any.fromFunction0(value))
+      def setGetConditions(value: () => js.Any): Self = StObject.set(x, "getConditions", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetConditionsUndefined: Self = StObject.set(x, "getConditions", js.undefined)
@@ -1697,7 +1702,7 @@ object app {
       def setParamsInMatchStringUndefined: Self = StObject.set(x, "paramsInMatchString", js.undefined)
       
       @scala.inline
-      def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
+      def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRecognizeUndefined: Self = StObject.set(x, "recognize", js.undefined)
@@ -1734,8 +1739,9 @@ object app {
     }
   }
   
-  @js.native
-  trait IRouter extends IBase {
+  trait IRouter
+    extends StObject
+       with IBase {
     
     /** [Method] Connects a url based route to a controller action pair plus additional params
       * @param url String The url to recognize.
@@ -1743,44 +1749,44 @@ object app {
       */
     var connect: js.UndefOr[
         js.Function2[/* url */ js.UndefOr[java.lang.String], /* params */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** [Config Option] (Object) */
-    var defaults: js.UndefOr[js.Any] = js.native
+    var defaults: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Convenience method which just calls the supplied function with the Router instance
       * @param fn Function The fn to call
       */
-    var draw: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.native
+    var draw: js.UndefOr[js.Function1[/* fn */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Returns the value of defaults
       * @returns Object
       */
-    var getDefaults: js.UndefOr[js.Function0[_]] = js.native
+    var getDefaults: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Method] Returns the value of routes
       * @returns Array
       */
-    var getRoutes: js.UndefOr[js.Function0[Array]] = js.native
+    var getRoutes: js.UndefOr[js.Function0[Array]] = js.undefined
     
     /** [Method] Recognizes a url string connected to the Router return the controller action pair plus any additional config associa
       * @param url String The url to recognize.
       * @returns Object/undefined If the url was recognized, the controller and action to call, else undefined.
       */
-    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], _]] = js.native
+    var recognize: js.UndefOr[js.Function1[/* url */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
     
     /** [Config Option] (Array) */
-    var routes: js.UndefOr[Array] = js.native
+    var routes: js.UndefOr[Array] = js.undefined
     
     /** [Method] Sets the value of defaults
       * @param defaults Object The new value.
       */
-    var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.native
+    var setDefaults: js.UndefOr[js.Function1[/* defaults */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value of routes
       * @param routes Array The new value.
       */
-    var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[Array], Unit]] = js.native
+    var setRoutes: js.UndefOr[js.Function1[/* routes */ js.UndefOr[Array], Unit]] = js.undefined
   }
   object IRouter {
     
@@ -1812,7 +1818,7 @@ object app {
       def setDrawUndefined: Self = StObject.set(x, "draw", js.undefined)
       
       @scala.inline
-      def setGetDefaults(value: () => _): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
+      def setGetDefaults(value: () => js.Any): Self = StObject.set(x, "getDefaults", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetDefaultsUndefined: Self = StObject.set(x, "getDefaults", js.undefined)
@@ -1824,7 +1830,7 @@ object app {
       def setGetRoutesUndefined: Self = StObject.set(x, "getRoutes", js.undefined)
       
       @scala.inline
-      def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
+      def setRecognize(value: /* url */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "recognize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setRecognizeUndefined: Self = StObject.set(x, "recognize", js.undefined)

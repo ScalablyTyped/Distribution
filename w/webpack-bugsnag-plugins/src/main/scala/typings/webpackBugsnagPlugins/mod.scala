@@ -8,7 +8,6 @@ import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.info
 import typings.webpackBugsnagPlugins.webpackBugsnagPluginsStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,19 +27,18 @@ object mod {
     def this(options: SourceMapUploaderOptions) = this()
   }
   
-  @js.native
   trait BuildReporterBuild extends StObject {
     
     /**
       * Your Bugsnag API key
       */
-    var apiKey: String = js.native
+    var apiKey: String
     
     /**
       * The version of the application you are building (this should match the
       * `appVersion` configured in your notifier)
       */
-    var appVersion: String = js.native
+    var appVersion: String
     
     /**
       * Automatically associate this build with any new error events and sessions
@@ -49,26 +47,26 @@ object mod {
       * is provided the build will be applied to 'production'. You should only use
       * this option if you aren’t able to set an `appVersion` in your notifier.
       */
-    var autoAssignRelease: js.UndefOr[Boolean] = js.native
+    var autoAssignRelease: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The name of the person/machine that created this build (defaults to the
       * result of the `whoami` command)
       */
-    var builderName: js.UndefOr[String] = js.native
+    var builderName: js.UndefOr[String] = js.undefined
     
     /**
       * 'production', 'staging' etc. (leave blank if this build can be released to
       * different releaseStages)
       */
-    var releaseStage: js.UndefOr[String] = js.native
+    var releaseStage: js.UndefOr[String] = js.undefined
     
     /**
       * An object describing the source control of the build (if not specified,
       * the module will attempt to detect source control information from .git, .
       * hg and the nearest package.json)
       */
-    var sourceControl: js.UndefOr[Provider] = js.native
+    var sourceControl: js.UndefOr[Provider] = js.undefined
   }
   object BuildReporterBuild {
     
@@ -113,7 +111,6 @@ object mod {
     }
   }
   
-  @js.native
   trait BuildReporterOptions extends StObject {
     
     /**
@@ -121,26 +118,26 @@ object mod {
       *
       * @default https://build.bugsnag.com
       */
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
     /**
       * The minimum severity of log to output
       *
       * @default warn
       */
-    var logLevel: js.UndefOr[debug | info | warn | error] = js.native
+    var logLevel: js.UndefOr[debug | info | warn | error] = js.undefined
     
     /**
       * Provide a different logger object
       */
-    var logger: js.UndefOr[Debug] = js.native
+    var logger: js.UndefOr[Debug] = js.undefined
     
     /**
       * The path to search for source control info
       *
       * @default process.cwd()
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object BuildReporterOptions {
     
@@ -179,37 +176,36 @@ object mod {
     }
   }
   
-  @js.native
   trait SourceMapUploaderOptions extends StObject {
     
     /**
       * Your Bugsnag API key
       */
-    var apiKey: String = js.native
+    var apiKey: String
     
     /**
       * The version of the application you are building
       */
-    var appVersion: js.UndefOr[String] = js.native
+    var appVersion: js.UndefOr[String] = js.undefined
     
     /**
       * Post the build payload to a URL other than the default
       *
       * @default https://upload.bugsnag.com
       */
-    var endpoint: js.UndefOr[String] = js.native
+    var endpoint: js.UndefOr[String] = js.undefined
     
     /**
       * A list of bundle file extensions which shouldn't be uploaded
       *
       * @default ['.css']
       */
-    var ignoredBundleExtensions: js.UndefOr[js.Array[String]] = js.native
+    var ignoredBundleExtensions: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Whether you want to overwrite previously uploaded sourcemaps
       */
-    var overwrite: js.UndefOr[Boolean] = js.native
+    var overwrite: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The path to your bundled assets (as the browser will see them).
@@ -218,7 +214,7 @@ object mod {
       *
       * @default output.publicPath
       */
-    var publicPath: js.UndefOr[String] = js.native
+    var publicPath: js.UndefOr[String] = js.undefined
   }
   object SourceMapUploaderOptions {
     

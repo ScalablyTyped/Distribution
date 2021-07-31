@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[LoginCompleteCallback] = js.native
+  var complete: js.UndefOr[LoginCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[LoginFailCallback] = js.native
+  var fail: js.UndefOr[LoginFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[LoginSuccessCallback] = js.native
+  var success: js.UndefOr[LoginSuccessCallback] = js.undefined
   
   /** 超时时间，单位ms
     *
     * 最低基础库： `1.9.90` */
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
 }
 object LoginOption {
   

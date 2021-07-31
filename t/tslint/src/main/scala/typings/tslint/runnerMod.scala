@@ -5,21 +5,22 @@ import typings.tslint.tslintNumbers.`1`
 import typings.tslint.tslintNumbers.`2`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object runnerMod {
   
-  @JSImport("tslint/lib/runner", "run")
+  @JSImport("tslint/lib/runner", JSImport.Namespace)
   @js.native
-  def run(options: Options, logger: Logger): js.Promise[Status] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def run(options: Options, logger: Logger): js.Promise[Status] = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(options.asInstanceOf[js.Any], logger.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Status]]
+  
   trait Logger extends StObject {
     
-    def error(message: String): Unit = js.native
+    def error(message: String): Unit
     
-    def log(message: String): Unit = js.native
+    def log(message: String): Unit
   }
   object Logger {
     
@@ -40,89 +41,88 @@ object runnerMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Path to a configuration file.
       */
-    var config: js.UndefOr[String] = js.native
+    var config: js.UndefOr[String] = js.undefined
     
     /**
       * Exclude globs from path expansion.
       */
-    var exclude: js.Array[String] = js.native
+    var exclude: js.Array[String]
     
     /**
       * File paths to lint.
       */
-    var files: js.Array[String] = js.native
+    var files: js.Array[String]
     
     /**
       * Whether to fixes linting errors for select rules. This may overwrite linted files.
       */
-    var fix: js.UndefOr[Boolean] = js.native
+    var fix: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to return status code 0 even if there are lint errors.
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Output format.
       */
-    var format: js.UndefOr[String] = js.native
+    var format: js.UndefOr[String] = js.undefined
     
     /**
       * Formatters directory path.
       */
-    var formattersDirectory: js.UndefOr[String] = js.native
+    var formattersDirectory: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to generate a tslint.json config file in the current working directory.
       */
-    var init: js.UndefOr[Boolean] = js.native
+    var init: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Output file path.
       */
-    var out: js.UndefOr[String] = js.native
+    var out: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to output absolute paths
       */
-    var outputAbsolutePaths: js.UndefOr[Boolean] = js.native
+    var outputAbsolutePaths: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Outputs the configuration to be used instead of linting.
       */
-    var printConfig: js.UndefOr[Boolean] = js.native
+    var printConfig: js.UndefOr[Boolean] = js.undefined
     
     /**
       * tsconfig.json file.
       */
-    var project: js.UndefOr[String] = js.native
+    var project: js.UndefOr[String] = js.undefined
     
     /**
       * Whether to hide warnings
       */
-    var quiet: js.UndefOr[Boolean] = js.native
+    var quiet: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Rules directory paths.
       */
-    var rulesDirectory: js.UndefOr[String | js.Array[String]] = js.native
+    var rulesDirectory: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Run the tests in the given directories to ensure a (custom) TSLint rule's output matches the expected output.
       * When this property is `true` the `files` property is used to specify the directories from which the tests should be executed.
       */
-    var test: js.UndefOr[Boolean] = js.native
+    var test: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to enable type checking when linting a project.
       */
-    var typeCheck: js.UndefOr[Boolean] = js.native
+    var typeCheck: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

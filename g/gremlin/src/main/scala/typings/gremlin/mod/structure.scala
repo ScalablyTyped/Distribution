@@ -4,10 +4,13 @@ import typings.gremlin.mod.process.GraphTraversal
 import typings.gremlin.mod.process.GraphTraversalSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object structure {
+  
+  @JSImport("gremlin", "structure")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("gremlin", "structure.Edge")
   @js.native
@@ -59,7 +62,7 @@ object structure {
   @JSImport("gremlin", "structure.Path")
   @js.native
   class Path protected () extends StObject {
-    def this(labels: js.Array[String], objects: js.Array[_]) = this()
+    def this(labels: js.Array[String], objects: js.Array[js.Any]) = this()
     
     def equals(other: Path): Boolean = js.native
   }
@@ -86,10 +89,8 @@ object structure {
     def this(id: Double, label: String, value: js.Any, properties: js.Array[Property]) = this()
   }
   
-  @JSImport("gremlin", "structure.toLong")
-  @js.native
-  def toLong(value: String): Long = js.native
-  @JSImport("gremlin", "structure.toLong")
-  @js.native
-  def toLong(value: Double): Long = js.native
+  @scala.inline
+  def toLong(value: String): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
+  @scala.inline
+  def toLong(value: Double): Long = ^.asInstanceOf[js.Dynamic].applyDynamic("toLong")(value.asInstanceOf[js.Any]).asInstanceOf[Long]
 }

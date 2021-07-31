@@ -4,7 +4,6 @@ import typings.kiiCloudSdk.anon.Failure
 import typings.kiiCloudSdk.anon.Success
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

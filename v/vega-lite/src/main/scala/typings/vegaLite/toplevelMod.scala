@@ -14,30 +14,29 @@ import typings.vegaTypings.colorMod.Color
 import typings.vegaTypings.signalMod.SignalRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object toplevelMod {
   
-  @JSImport("vega-lite/build/src/spec/toplevel", "extractTopLevelProperties")
+  @JSImport("vega-lite/build/src/spec/toplevel", JSImport.Namespace)
   @js.native
-  def extractTopLevelProperties(t: TopLevelProperties[ExprRef | SignalRef], includeParams: Boolean): TopLevelProperties[SignalRef] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("vega-lite/build/src/spec/toplevel", "getFitType")
-  @js.native
-  def getFitType(): FitType = js.native
-  @JSImport("vega-lite/build/src/spec/toplevel", "getFitType")
-  @js.native
-  def getFitType_height(sizeType: height): FitType = js.native
-  @JSImport("vega-lite/build/src/spec/toplevel", "getFitType")
-  @js.native
-  def getFitType_width(sizeType: width): FitType = js.native
+  @scala.inline
+  def extractTopLevelProperties(t: TopLevelProperties[ExprRef | SignalRef], includeParams: Boolean): TopLevelProperties[SignalRef] = (^.asInstanceOf[js.Dynamic].applyDynamic("extractTopLevelProperties")(t.asInstanceOf[js.Any], includeParams.asInstanceOf[js.Any])).asInstanceOf[TopLevelProperties[SignalRef]]
   
-  @JSImport("vega-lite/build/src/spec/toplevel", "isFitType")
-  @js.native
-  def isFitType(autoSizeType: AutosizeType): /* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean = js.native
+  @scala.inline
+  def getFitType(): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")().asInstanceOf[FitType]
   
-  @js.native
+  @scala.inline
+  def getFitType_height(sizeType: height): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
+  
+  @scala.inline
+  def getFitType_width(sizeType: width): FitType = ^.asInstanceOf[js.Dynamic].applyDynamic("getFitType")(sizeType.asInstanceOf[js.Any]).asInstanceOf[FitType]
+  
+  @scala.inline
+  def isFitType(autoSizeType: AutosizeType): /* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFitType")(autoSizeType.asInstanceOf[js.Any]).asInstanceOf[/* is vega-lite.vega-lite/build/src/spec/toplevel.FitType */ Boolean]
+  
   trait AutoSizeParams extends StObject {
     
     /**
@@ -45,21 +44,21 @@ object toplevelMod {
       *
       * __Default value__: `"content"`
       */
-    var contains: js.UndefOr[content | padding] = js.native
+    var contains: js.UndefOr[content | padding] = js.undefined
     
     /**
       * A boolean flag indicating if autosize layout should be re-calculated on every view update.
       *
       * __Default value__: `false`
       */
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The sizing format type. One of `"pad"`, `"fit"`, `"fit-x"`, `"fit-y"`,  or `"none"`. See the [autosize type](https://vega.github.io/vega-lite/docs/size.html#autosize) documentation for descriptions of each.
       *
       * __Default value__: `"pad"`
       */
-    var `type`: js.UndefOr[AutosizeType] = js.native
+    var `type`: js.UndefOr[AutosizeType] = js.undefined
   }
   object AutoSizeParams {
     
@@ -140,9 +139,8 @@ object toplevelMod {
   
   type Padding = Double | Bottom
   
-  type TopLevel[S /* <: BaseSpec */] = S with (TopLevelProperties[ExprRef | SignalRef]) with typings.vegaLite.anon.Datasets
+  type TopLevel[S /* <: BaseSpec */] = S & (TopLevelProperties[ExprRef | SignalRef]) & typings.vegaLite.anon.Datasets
   
-  @js.native
   trait TopLevelProperties[ES /* <: ExprRef | SignalRef */] extends StObject {
     
     /**
@@ -151,14 +149,14 @@ object toplevelMod {
       *
       * __Default value__: `pad`
       */
-    var autosize: js.UndefOr[AutosizeType | AutoSizeParams] = js.native
+    var autosize: js.UndefOr[AutosizeType | AutoSizeParams] = js.undefined
     
     /**
       * CSS color property to use as the background of the entire view.
       *
       * __Default value:__ `"white"`
       */
-    var background: js.UndefOr[Color | ES] = js.native
+    var background: js.UndefOr[Color | ES] = js.undefined
     
     /**
       * The default visualization padding, in pixels, from the edge of the visualization canvas to the data rectangle. If a number, specifies padding for all sides.
@@ -166,12 +164,12 @@ object toplevelMod {
       *
       * __Default value__: `5`
       */
-    var padding: js.UndefOr[Padding | ES] = js.native
+    var padding: js.UndefOr[Padding | ES] = js.undefined
     
     /**
       * Dynamic variables that parameterize a visualization.
       */
-    var params: js.UndefOr[js.Array[Parameter]] = js.native
+    var params: js.UndefOr[js.Array[Parameter]] = js.undefined
   }
   object TopLevelProperties {
     
@@ -182,7 +180,7 @@ object toplevelMod {
     }
     
     @scala.inline
-    implicit class TopLevelPropertiesMutableBuilder[Self <: TopLevelProperties[_], ES /* <: ExprRef | SignalRef */] (val x: Self with TopLevelProperties[ES]) extends AnyVal {
+    implicit class TopLevelPropertiesMutableBuilder[Self <: TopLevelProperties[?], ES /* <: ExprRef | SignalRef */] (val x: Self & TopLevelProperties[ES]) extends AnyVal {
       
       @scala.inline
       def setAutosize(value: AutosizeType | AutoSizeParams): Self = StObject.set(x, "autosize", value.asInstanceOf[js.Any])

@@ -3,19 +3,17 @@ package typings.reactSimpleMaps
 import typings.react.mod.CSSProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Default extends StObject {
     
-    var default: js.UndefOr[CSSProperties] = js.native
+    var default: js.UndefOr[CSSProperties] = js.undefined
     
-    var hover: js.UndefOr[CSSProperties] = js.native
+    var hover: js.UndefOr[CSSProperties] = js.undefined
     
-    var pressed: js.UndefOr[CSSProperties] = js.native
+    var pressed: js.UndefOr[CSSProperties] = js.undefined
   }
   object Default {
     

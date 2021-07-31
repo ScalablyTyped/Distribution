@@ -3,69 +3,69 @@ package typings.knockoutPreRendered
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait KnockoutBindingHandlers extends // Ko specific
+trait KnockoutBindingHandlers
+  extends StObject
+     with // Ko specific
 /* key */ StringDictionary[KnockoutBindingHandler] {
   
-  var attr: KnockoutBindingHandler = js.native
+  var attr: KnockoutBindingHandler
   
-  var checked: KnockoutBindingHandler = js.native
+  var checked: KnockoutBindingHandler
   
   // Working with form fields
-  var click: KnockoutBindingHandler = js.native
+  var click: KnockoutBindingHandler
   
   // Components (new for v3.2)
-  var component: KnockoutBindingHandler = js.native
+  var component: KnockoutBindingHandler
   
-  var css: KnockoutBindingHandler = js.native
+  var css: KnockoutBindingHandler
   
-  var disable: KnockoutBindingHandler = js.native
+  var disable: KnockoutBindingHandler
   
-  var enable: KnockoutBindingHandler = js.native
+  var enable: KnockoutBindingHandler
   
-  var event: KnockoutBindingHandler = js.native
+  var event: KnockoutBindingHandler
   
   // Control Flow
-  var foreach: KnockoutBindingHandler = js.native
+  var foreach: KnockoutBindingHandler
   
-  var foreachInit: KnockoutBindingHandler = js.native
+  var foreachInit: KnockoutBindingHandler
   
-  var hasfocus: KnockoutBindingHandler = js.native
+  var hasfocus: KnockoutBindingHandler
   
-  var html: KnockoutBindingHandler = js.native
+  var html: KnockoutBindingHandler
   
-  var `if`: KnockoutBindingHandler = js.native
+  var `if`: KnockoutBindingHandler
   
-  var ifnot: KnockoutBindingHandler = js.native
+  var ifnot: KnockoutBindingHandler
   
-  var init: KnockoutBindingHandler = js.native
+  var init: KnockoutBindingHandler
   
-  var options: KnockoutBindingHandler = js.native
+  var options: KnockoutBindingHandler
   
-  var selectedOptions: KnockoutBindingHandler = js.native
+  var selectedOptions: KnockoutBindingHandler
   
-  var style: KnockoutBindingHandler = js.native
+  var style: KnockoutBindingHandler
   
-  var submit: KnockoutBindingHandler = js.native
+  var submit: KnockoutBindingHandler
   
   // Rendering templates
-  var template: KnockoutBindingHandler = js.native
+  var template: KnockoutBindingHandler
   
-  var text: KnockoutBindingHandler = js.native
+  var text: KnockoutBindingHandler
   
-  var textInput: KnockoutBindingHandler = js.native
+  var textInput: KnockoutBindingHandler
   
-  var uniqueName: KnockoutBindingHandler = js.native
+  var uniqueName: KnockoutBindingHandler
   
-  var value: KnockoutBindingHandler = js.native
+  var value: KnockoutBindingHandler
   
   // Controlling text and appearance
-  var visible: KnockoutBindingHandler = js.native
+  var visible: KnockoutBindingHandler
   
-  var `with`: KnockoutBindingHandler = js.native
+  var `with`: KnockoutBindingHandler
 }
 object KnockoutBindingHandlers {
   

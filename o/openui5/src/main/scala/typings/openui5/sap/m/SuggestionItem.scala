@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.RenderManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SuggestionItem extends Control {
+trait SuggestionItem
+  extends StObject
+     with Control {
   
   /**
     * Gets current value of property <code>description</code>.Additional text of type string, optionally

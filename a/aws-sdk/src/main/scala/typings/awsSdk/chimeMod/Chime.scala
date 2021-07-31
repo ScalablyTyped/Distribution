@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -189,7 +188,7 @@ trait Chime extends Service {
   ): Request[BatchUpdateUserResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_Chime: ConfigBase with ClientConfiguration = js.native
+  var config_Chime: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates an Amazon Chime account under the administrator's AWS account. Only Team account types are currently supported for this action. For more information about different account types, see Managing Your Amazon Chime Accounts in the Amazon Chime Administration Guide.

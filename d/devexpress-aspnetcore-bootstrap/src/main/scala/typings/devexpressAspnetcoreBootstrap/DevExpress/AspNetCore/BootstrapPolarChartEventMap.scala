@@ -2,50 +2,50 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapPolarChartEventMap extends ControlEventMap {
+trait BootstrapPolarChartEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var argumentAxisClick: BootstrapChartElementClickEventArgs = js.native
+  var argumentAxisClick: BootstrapChartElementClickEventArgs
   
-  var disposing: BootstrapChartEventArgsBase = js.native
+  var disposing: BootstrapChartEventArgsBase
   
-  var done: BootstrapChartEventArgsBase = js.native
+  var done: BootstrapChartEventArgsBase
   
-  var drawn: BootstrapChartEventArgsBase = js.native
+  var drawn: BootstrapChartEventArgsBase
   
-  var exported: BootstrapChartEventArgsBase = js.native
+  var exported: BootstrapChartEventArgsBase
   
-  var exporting: BootstrapChartExportEventArgs = js.native
+  var exporting: BootstrapChartExportEventArgs
   
-  var fileSaving: BootstrapChartExportEventArgs = js.native
+  var fileSaving: BootstrapChartExportEventArgs
   
-  var incidentOccurred: BootstrapChartErrorEventArgs = js.native
+  var incidentOccurred: BootstrapChartErrorEventArgs
   
   @JSName("init")
-  var init_BootstrapPolarChartEventMap: BootstrapChartEventArgsBase = js.native
+  var init_BootstrapPolarChartEventMap: BootstrapChartEventArgsBase
   
-  var legendClick: BootstrapChartElementClickEventArgs = js.native
+  var legendClick: BootstrapChartElementClickEventArgs
   
-  var optionChanged: BootstrapChartOptionChangedEventArgs = js.native
+  var optionChanged: BootstrapChartOptionChangedEventArgs
   
-  var pointClick: BootstrapChartElementClickEventArgs = js.native
+  var pointClick: BootstrapChartElementClickEventArgs
   
-  var pointHoverChanged: BootstrapChartElementActionEventArgs = js.native
+  var pointHoverChanged: BootstrapChartElementActionEventArgs
   
-  var pointSelectionChanged: BootstrapChartElementActionEventArgs = js.native
+  var pointSelectionChanged: BootstrapChartElementActionEventArgs
   
-  var seriesClick: BootstrapChartElementClickEventArgs = js.native
+  var seriesClick: BootstrapChartElementClickEventArgs
   
-  var seriesHoverChanged: BootstrapChartElementActionEventArgs = js.native
+  var seriesHoverChanged: BootstrapChartElementActionEventArgs
   
-  var seriesSelectionChanged: BootstrapChartElementActionEventArgs = js.native
+  var seriesSelectionChanged: BootstrapChartElementActionEventArgs
   
-  var tooltipHidden: BootstrapChartElementActionEventArgs = js.native
+  var tooltipHidden: BootstrapChartElementActionEventArgs
   
-  var tooltipShown: BootstrapChartElementActionEventArgs = js.native
+  var tooltipShown: BootstrapChartElementActionEventArgs
 }
 object BootstrapPolarChartEventMap {
   

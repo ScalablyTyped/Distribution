@@ -2,26 +2,24 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EvaluateExpressionInput extends StObject {
   
   /**
     * The expression to evaluate.
     */
-  var expression: longString = js.native
+  var expression: longString
   
   /**
     * The ID of the object.
     */
-  var objectId: id = js.native
+  var objectId: id
   
   /**
     * The ID of the pipeline.
     */
-  var pipelineId: id = js.native
+  var pipelineId: id
 }
 object EvaluateExpressionInput {
   

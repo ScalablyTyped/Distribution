@@ -2,31 +2,29 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SalesforceCustomKnowledgeArticleTypeConfiguration extends StObject {
   
   /**
     * The name of the field in the custom knowledge article that contains the document data to index.
     */
-  var DocumentDataFieldName: DataSourceFieldName = js.native
+  var DocumentDataFieldName: DataSourceFieldName
   
   /**
     * The name of the field in the custom knowledge article that contains the document title.
     */
-  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.native
+  var DocumentTitleFieldName: js.UndefOr[DataSourceFieldName] = js.undefined
   
   /**
     * One or more objects that map fields in the custom knowledge article to fields in the Amazon Kendra index.
     */
-  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.native
+  var FieldMappings: js.UndefOr[DataSourceToIndexFieldMappingList] = js.undefined
   
   /**
     * The name of the configuration.
     */
-  var Name: SalesforceCustomKnowledgeArticleTypeName = js.native
+  var Name: SalesforceCustomKnowledgeArticleTypeName
 }
 object SalesforceCustomKnowledgeArticleTypeConfiguration {
   

@@ -3,21 +3,19 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.reorder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Order extends StObject {
   
-  var order: js.UndefOr[js.Object] = js.native
+  var order: js.UndefOr[js.Object] = js.undefined
   
-  var t: reorder = js.native
+  var t: reorder
 }
 object Order {
   
   @scala.inline
-  def apply(t: reorder): Order = {
-    val __obj = js.Dynamic.literal(t = t.asInstanceOf[js.Any])
+  def apply(): Order = {
+    val __obj = js.Dynamic.literal(t = "reorder")
     __obj.asInstanceOf[Order]
   }
   

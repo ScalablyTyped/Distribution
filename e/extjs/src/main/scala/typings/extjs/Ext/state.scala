@@ -3,31 +3,31 @@ package typings.extjs.Ext
 import typings.extjs.Ext.util.IObservable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object state {
   
-  @js.native
-  trait ICookieProvider extends IProvider {
+  trait ICookieProvider
+    extends StObject
+       with IProvider {
     
     /** [Method] private
       * @param name Object
       */
     @JSName("clear")
-    var clear_ICookieProvider: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.native
+    var clear_ICookieProvider: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Config Option] (String) */
-    var domain: js.UndefOr[java.lang.String] = js.native
+    var domain: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Date) */
-    var expires: js.UndefOr[js.Any] = js.native
+    var expires: js.UndefOr[js.Any] = js.undefined
     
     /** [Config Option] (String) */
-    var path: js.UndefOr[java.lang.String] = js.native
+    var path: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
     
     /** [Method] private
       * @param name Object
@@ -36,7 +36,7 @@ object state {
     @JSName("set")
     var set_ICookieProvider: js.UndefOr[
         js.Function2[/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object ICookieProvider {
     
@@ -87,14 +87,15 @@ object state {
     }
   }
   
-  @js.native
-  trait ILocalStorageProvider extends IProvider {
+  trait ILocalStorageProvider
+    extends StObject
+       with IProvider {
     
     /** [Method] private
       * @param name Object
       */
     @JSName("clear")
-    var clear_ILocalStorageProvider: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.native
+    var clear_ILocalStorageProvider: js.UndefOr[js.Function1[/* name */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Sets the value for a key
       * @param name Object
@@ -103,7 +104,7 @@ object state {
     @JSName("set")
     var set_ILocalStorageProvider: js.UndefOr[
         js.Function2[/* name */ js.UndefOr[js.Any], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object ILocalStorageProvider {
     
@@ -132,25 +133,26 @@ object state {
   
   type IManager = IBase
   
-  @js.native
-  trait IProvider extends IObservable {
+  trait IProvider
+    extends StObject
+       with IObservable {
     
     /** [Method] Clears a value from the state
       * @param name String The key name
       */
-    var clear: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.native
+    var clear: js.UndefOr[js.Function1[/* name */ js.UndefOr[java.lang.String], Unit]] = js.undefined
     
     /** [Method] Decodes a string previously encoded with encodeValue
       * @param value String The value to decode
       * @returns Object The decoded value
       */
-    var decodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], _]] = js.native
+    var decodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[java.lang.String], js.Any]] = js.undefined
     
     /** [Method] Encodes a value including type information
       * @param value Object The value to encode
       * @returns String The encoded value
       */
-    var encodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.native
+    var encodeValue: js.UndefOr[js.Function1[/* value */ js.UndefOr[js.Any], java.lang.String]] = js.undefined
     
     /** [Method] Returns the current value for a key
       * @param name String The key name
@@ -158,11 +160,15 @@ object state {
       * @returns Object The state data
       */
     var get: js.UndefOr[
-        js.Function2[/* name */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[js.Any], _]
-      ] = js.native
+        js.Function2[
+          /* name */ js.UndefOr[java.lang.String], 
+          /* defaultValue */ js.UndefOr[js.Any], 
+          js.Any
+        ]
+      ] = js.undefined
     
     /** [Config Option] (String) */
-    var prefix: js.UndefOr[java.lang.String] = js.native
+    var prefix: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Method] Sets the value for a key
       * @param name String The key name
@@ -170,7 +176,7 @@ object state {
       */
     var set: js.UndefOr[
         js.Function2[/* name */ js.UndefOr[java.lang.String], /* value */ js.UndefOr[js.Any], Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object IProvider {
     
@@ -190,7 +196,7 @@ object state {
       def setClearUndefined: Self = StObject.set(x, "clear", js.undefined)
       
       @scala.inline
-      def setDecodeValue(value: /* value */ js.UndefOr[java.lang.String] => _): Self = StObject.set(x, "decodeValue", js.Any.fromFunction1(value))
+      def setDecodeValue(value: /* value */ js.UndefOr[java.lang.String] => js.Any): Self = StObject.set(x, "decodeValue", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDecodeValueUndefined: Self = StObject.set(x, "decodeValue", js.undefined)
@@ -202,7 +208,7 @@ object state {
       def setEncodeValueUndefined: Self = StObject.set(x, "encodeValue", js.undefined)
       
       @scala.inline
-      def setGet(value: (/* name */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
+      def setGet(value: (/* name */ js.UndefOr[java.lang.String], /* defaultValue */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "get", js.Any.fromFunction2(value))
       
       @scala.inline
       def setGetUndefined: Self = StObject.set(x, "get", js.undefined)
@@ -221,29 +227,30 @@ object state {
     }
   }
   
-  @js.native
-  trait IStateful extends IObservable {
+  trait IStateful
+    extends StObject
+       with IObservable {
     
     /** [Method] Add events that will trigger the state to be saved
       * @param events String/String[] The event name or an array of event names.
       */
-    var addStateEvents: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.native
+    var addStateEvents: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Applies the state to the object
       * @param state Object The state
       */
-    var applyState: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.native
+    var applyState: js.UndefOr[js.Function1[/* state */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Destroys this stateful object  */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Gets the current state of the object
       * @returns Object The current state
       */
-    var getState: js.UndefOr[js.Function0[_]] = js.native
+    var getState: js.UndefOr[js.Function0[js.Any]] = js.undefined
     
     /** [Config Option] (Number) */
-    var saveDelay: js.UndefOr[Double] = js.native
+    var saveDelay: js.UndefOr[Double] = js.undefined
     
     /** [Method] Conditionally saves a single property from this object to the given state object
       * @param propName String The name of the property to save.
@@ -258,7 +265,7 @@ object state {
           /* stateName */ js.UndefOr[java.lang.String], 
           Boolean
         ]
-      ] = js.native
+      ] = js.undefined
     
     /** [Method] Gathers additional named properties of the instance and adds their current values to the passed state object
       * @param propNames String/String[] The name (or array of names) of the property to save.
@@ -266,20 +273,20 @@ object state {
       * @returns Object state
       */
     var savePropsToState: js.UndefOr[
-        js.Function2[/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any], _]
-      ] = js.native
+        js.Function2[/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any], js.Any]
+      ] = js.undefined
     
     /** [Method] Saves the state of the object to the persistence store  */
-    var saveState: js.UndefOr[js.Function0[Unit]] = js.native
+    var saveState: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Config Option] (String[]) */
-    var stateEvents: js.UndefOr[Array] = js.native
+    var stateEvents: js.UndefOr[Array] = js.undefined
     
     /** [Config Option] (String) */
-    var stateId: js.UndefOr[java.lang.String] = js.native
+    var stateId: js.UndefOr[java.lang.String] = js.undefined
     
     /** [Config Option] (Boolean) */
-    var stateful: js.UndefOr[Boolean] = js.native
+    var stateful: js.UndefOr[Boolean] = js.undefined
   }
   object IStateful {
     
@@ -311,7 +318,7 @@ object state {
       def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
       
       @scala.inline
-      def setGetState(value: () => _): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      def setGetState(value: () => js.Any): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetStateUndefined: Self = StObject.set(x, "getState", js.undefined)
@@ -331,7 +338,7 @@ object state {
       def setSavePropToStateUndefined: Self = StObject.set(x, "savePropToState", js.undefined)
       
       @scala.inline
-      def setSavePropsToState(value: (/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any]) => _): Self = StObject.set(x, "savePropsToState", js.Any.fromFunction2(value))
+      def setSavePropsToState(value: (/* propNames */ js.UndefOr[js.Any], /* state */ js.UndefOr[js.Any]) => js.Any): Self = StObject.set(x, "savePropsToState", js.Any.fromFunction2(value))
       
       @scala.inline
       def setSavePropsToStateUndefined: Self = StObject.set(x, "savePropsToState", js.undefined)
@@ -362,6 +369,5 @@ object state {
     }
   }
   
-  @js.native
   trait Manager extends StObject
 }

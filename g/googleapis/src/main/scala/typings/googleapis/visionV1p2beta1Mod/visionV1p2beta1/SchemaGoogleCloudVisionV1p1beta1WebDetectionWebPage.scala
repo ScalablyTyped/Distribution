@@ -2,42 +2,40 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for web pages.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p1beta1WebDetectionWebPage extends StObject {
   
   /**
     * Fully matching images on the page. Can include resized copies of the
     * query image.
     */
-  var fullMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage]] = js.native
+  var fullMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage]] = js.undefined
   
   /**
     * Title for the web page, may contain HTML markups.
     */
-  var pageTitle: js.UndefOr[String] = js.native
+  var pageTitle: js.UndefOr[String] = js.undefined
   
   /**
     * Partial matching images on the page. Those images are similar enough to
     * share some key-point features. For example an original image will likely
     * have partial matching for its crops.
     */
-  var partialMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage]] = js.native
+  var partialMatchingImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p1beta1WebDetectionWebImage]] = js.undefined
   
   /**
     * (Deprecated) Overall relevancy score for the web page.
     */
-  var score: js.UndefOr[Double] = js.native
+  var score: js.UndefOr[Double] = js.undefined
   
   /**
     * The result web page URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p1beta1WebDetectionWebPage {
   

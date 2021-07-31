@@ -2,21 +2,19 @@ package typings.googleapis.youtubeV3Mod.youtubeV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaLiveChatModeratorSnippet extends StObject {
   
   /**
     * The ID of the live chat this moderator can act on.
     */
-  var liveChatId: js.UndefOr[String] = js.native
+  var liveChatId: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the moderator.
     */
-  var moderatorDetails: js.UndefOr[SchemaChannelProfileDetails] = js.native
+  var moderatorDetails: js.UndefOr[SchemaChannelProfileDetails] = js.undefined
 }
 object SchemaLiveChatModeratorSnippet {
   

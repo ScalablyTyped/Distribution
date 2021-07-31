@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteInfo extends StObject {
   
   /** Destination IP range of the route. */
-  var destIpRange: js.UndefOr[String] = js.native
+  var destIpRange: js.UndefOr[String] = js.undefined
   
   /** Name of a Compute Engine route. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Instance tags of the route. */
-  var instanceTags: js.UndefOr[js.Array[String]] = js.native
+  var instanceTags: js.UndefOr[js.Array[String]] = js.undefined
   
   /** URI of a Compute Engine network. */
-  var networkUri: js.UndefOr[String] = js.native
+  var networkUri: js.UndefOr[String] = js.undefined
   
   /** Next hop of the route. */
-  var nextHop: js.UndefOr[String] = js.native
+  var nextHop: js.UndefOr[String] = js.undefined
   
   /** Type of next hop. */
-  var nextHopType: js.UndefOr[String] = js.native
+  var nextHopType: js.UndefOr[String] = js.undefined
   
   /** Priority of the route. */
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
   /** Type of route. */
-  var routeType: js.UndefOr[String] = js.native
+  var routeType: js.UndefOr[String] = js.undefined
   
   /** URI of a Compute Engine route. Dynamic route from cloud router does not have a URI. Advertised route from Google Cloud VPC to on-premises network also does not have a URI. */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object RouteInfo {
   

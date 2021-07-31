@@ -14,12 +14,10 @@ import typings.naverWhale.whale.topSites.MostVisitedURL
 import typings.naverWhale.whale.topSites.MostVisitedURL2
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Typeofdevtools extends StObject {
     
     ////////////////////
@@ -29,7 +27,7 @@ object anon {
       * Use the chrome.devtools.inspectedWindow API to interact with the inspected window: obtain the tab ID for the inspected page, evaluate the code in the context of the inspected window, reload the page, or obtain the list of resources within the page.
       * Availability: Since Chrome 18.
       */
-    val inspectedWindow: js.Any = js.native
+    val inspectedWindow: js.Any
     
     ////////////////////
     // Dev Tools - Network
@@ -38,7 +36,7 @@ object anon {
       * Use the chrome.devtools.network API to retrieve the information about network requests displayed by the Developer Tools in the Network panel.
       * Availability: Since Chrome 18.
       */
-    val network: js.Any = js.native
+    val network: js.Any
     
     ////////////////////
     // Dev Tools - Panels
@@ -47,7 +45,7 @@ object anon {
       * Use the chrome.devtools.panels API to integrate your extension into Developer Tools window UI: create your own panels, access existing panels, and add sidebars.
       * Availability: Since Chrome 18.
       */
-    val panels: js.Any = js.native
+    val panels: js.Any
   }
   object Typeofdevtools {
     
@@ -71,10 +69,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Typeofdownloads extends StObject {
     
-    val State: StateType = js.native
+    val State: StateType
   }
   object Typeofdownloads {
     
@@ -132,18 +129,13 @@ object anon {
     def show(details: SidebarShowDetail): Unit = js.native
     def show(details: SidebarShowDetail, callback: js.Function1[/* windowId */ Double, Unit]): Unit = js.native
     def show(windowId: Double): Unit = js.native
-    def show(
-      windowId: Double,
-      details: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* windowId */ Double, Unit]
-    ): Unit = js.native
+    def show(windowId: Double, details: Unit, callback: js.Function1[/* windowId */ Double, Unit]): Unit = js.native
     def show(windowId: Double, details: SidebarShowDetail): Unit = js.native
     def show(windowId: Double, details: SidebarShowDetail, callback: js.Function1[/* windowId */ Double, Unit]): Unit = js.native
     
     def undock(popupWindowId: Double, callback: js.Function1[/* windowId */ Double, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Typeofsystem extends StObject {
     
     ////////////////////
@@ -154,7 +146,7 @@ object anon {
       * Permissions: "system.cpu"
       * @since Chrome 32.
       */
-    val cpu: js.Any = js.native
+    val cpu: js.Any
     
     ////////////////////
     // System Memory
@@ -164,7 +156,7 @@ object anon {
       * Permissions:  "system.memory"
       * @since Chrome 32.
       */
-    val memory: js.Any = js.native
+    val memory: js.Any
     
     ////////////////////
     // System Storage
@@ -174,7 +166,7 @@ object anon {
       * Permissions:  "system.storage"
       * @since Chrome 30.
       */
-    val storage: js.Any = js.native
+    val storage: js.Any
   }
   object Typeofsystem {
     
@@ -230,7 +222,6 @@ object anon {
     def update(urls: js.Array[MostVisitedURL2]): js.Any = js.native
   }
   
-  @js.native
   trait Typeofwhale extends StObject {
     
     ////////////////////
@@ -241,7 +232,7 @@ object anon {
       * Availability: Since Chrome 22.
       * Permissions:  "alarms"
       */
-    val alarms: js.Any = js.native
+    val alarms: js.Any
     
     ////////////////////
     // Bookmarks
@@ -251,7 +242,7 @@ object anon {
       * Availability: Since Chrome 5.
       * Permissions:  "bookmarks"
       */
-    val bookmarks: js.Any = js.native
+    val bookmarks: js.Any
     
     ////////////////////
     // Browser Action
@@ -261,7 +252,7 @@ object anon {
       * Availability: Since Chrome 5.
       * Manifest:  "browser_action": {...}
       */
-    val browserAction: js.Any = js.native
+    val browserAction: js.Any
     
     ////////////////////
     // Browsing Data
@@ -271,7 +262,7 @@ object anon {
       * Availability: Since Chrome 19.
       * Permissions:  "browsingData"
       */
-    val browsingData: js.Any = js.native
+    val browsingData: js.Any
     
     ////////////////////
     // Commands
@@ -281,7 +272,7 @@ object anon {
       * Availability: Since Chrome 25.
       * Manifest:  "commands": {...}
       */
-    val commands: js.Any = js.native
+    val commands: js.Any
     
     ////////////////////
     // Content Settings
@@ -291,7 +282,7 @@ object anon {
       * Availability: Since Chrome 16.
       * Permissions:  "contentSettings"
       */
-    val contentSettings: js.Any = js.native
+    val contentSettings: js.Any
     
     ////////////////////
     // Context Menus
@@ -301,7 +292,7 @@ object anon {
       * Availability: Since Chrome 6.
       * Permissions:  "contextMenus"
       */
-    val contextMenus: js.Any = js.native
+    val contextMenus: js.Any
     
     ////////////////////
     // Cookies
@@ -311,7 +302,7 @@ object anon {
       * Availability: Since Chrome 6.
       * Permissions:  "cookies", host permissions
       */
-    val cookies: js.Any = js.native
+    val cookies: js.Any
     
     ////////////////////
     // Declarative Content
@@ -321,7 +312,7 @@ object anon {
       * Availability: Since Chrome 33.
       * Permissions:  "declarativeContent"
       */
-    val declarativeContent: js.Any = js.native
+    val declarativeContent: js.Any
     
     ////////////////////
     // DesktopCapture
@@ -331,11 +322,11 @@ object anon {
       * Availability: Since Chrome 34.
       * Permissions:  "desktopCapture"
       */
-    val desktopCapture: js.Any = js.native
+    val desktopCapture: js.Any
     
-    val devtools: Typeofdevtools = js.native
+    val devtools: Typeofdevtools
     
-    val downloads: Typeofdownloads = js.native
+    val downloads: Typeofdownloads
     
     ////////////////////
     // Events
@@ -344,7 +335,7 @@ object anon {
       * The chrome.events namespace contains common types used by APIs dispatching events to notify you when something interesting happens.
       * Availability: Since Chrome 21.
       */
-    val events: js.Any = js.native
+    val events: js.Any
     
     ////////////////////
     // Extension
@@ -353,7 +344,7 @@ object anon {
       * The chrome.extension API has utilities that can be used by any extension page. It includes support for exchanging messages between an extension and its content scripts or between extensions, as described in detail in Message Passing.
       * Availability: Since Chrome 5.
       */
-    val extension: js.Any = js.native
+    val `extension`: js.Any
     
     ////////////////////
     // Font Settings
@@ -363,7 +354,7 @@ object anon {
       * Availability: Since Chrome 22.
       * Permissions:  "fontSettings"
       */
-    val fontSettings: js.Any = js.native
+    val fontSettings: js.Any
     
     ////////////////////
     // Google Cloud Messaging
@@ -373,7 +364,7 @@ object anon {
       * Availability: Since Chrome 35.
       * Permissions:  "gcm"
       */
-    val gcm: js.Any = js.native
+    val gcm: js.Any
     
     ////////////////////
     // History
@@ -383,7 +374,7 @@ object anon {
       * Availability: Since Chrome 5.
       * Permissions:  "history"
       */
-    val history: js.Any = js.native
+    val history: js.Any
     
     ////////////////////
     // i18n
@@ -392,7 +383,7 @@ object anon {
       * Use the chrome.i18n infrastructure to implement internationalization across your whole app or extension.
       * @since Chrome 5.
       */
-    val i18n: js.Any = js.native
+    val i18n: js.Any
     
     ////////////////////
     // Idle
@@ -402,7 +393,7 @@ object anon {
       * Permissions:  "idle"
       * @since Chrome 6.
       */
-    val idle: js.Any = js.native
+    val idle: js.Any
     
     ////////////////////
     // Management
@@ -412,7 +403,7 @@ object anon {
       * Permissions:  "management"
       * @since Chrome 8.
       */
-    val management: js.Any = js.native
+    val management: js.Any
     
     ////////////////////
     // Notifications
@@ -423,7 +414,7 @@ object anon {
       * Permissions:  "notifications"
       * @since Chrome 28.
       */
-    val notifications: js.Any = js.native
+    val notifications: js.Any
     
     ////////////////////
     // Omnibox
@@ -433,7 +424,7 @@ object anon {
       * Manifest:  "omnibox": {...}
       * @since Chrome 9.
       */
-    val omnibox: js.Any = js.native
+    val omnibox: js.Any
     
     ////////////////////
     // Page Action
@@ -443,7 +434,7 @@ object anon {
       * Manifest:  "page_action": {...}
       * @since Chrome 5.
       */
-    val pageAction: js.Any = js.native
+    val pageAction: js.Any
     
     ////////////////////
     // Page Capture
@@ -453,7 +444,7 @@ object anon {
       * Permissions:  "pageCapture"
       * @since Chrome 18.
       */
-    val pageCapture: js.Any = js.native
+    val pageCapture: js.Any
     
     ////////////////////
     // Permissions
@@ -462,7 +453,7 @@ object anon {
       * Use the chrome.permissions API to request declared optional permissions at run time rather than install time, so users understand why the permissions are needed and grant only those that are necessary.
       * @since Chrome 16.
       */
-    val permissions: js.Any = js.native
+    val permissions: js.Any
     
     ////////////////////
     // Power
@@ -472,7 +463,7 @@ object anon {
       * Permissions:  "power"
       * @since Chrome 27.
       */
-    val power: js.Any = js.native
+    val power: js.Any
     
     ////////////////////
     // Printer Provider
@@ -482,7 +473,7 @@ object anon {
       * Permissions:  "printerProvider"
       * @since Chrome 44.
       */
-    val printerProvider: js.Any = js.native
+    val printerProvider: js.Any
     
     ////////////////////
     // Privacy
@@ -493,7 +484,7 @@ object anon {
       * The Chrome Privacy Whitepaper gives background detail regarding the features which this API can control.
       * @since Chrome 18.
       */
-    val privacy: js.Any = js.native
+    val privacy: js.Any
     
     ////////////////////
     // Proxy
@@ -503,7 +494,7 @@ object anon {
       * Permissions:  "proxy"
       * @since Chrome 13.
       */
-    val proxy: js.Any = js.native
+    val proxy: js.Any
     
     ////////////////////
     // Runtime
@@ -512,9 +503,9 @@ object anon {
       * Use the chrome.runtime API to retrieve the background page, return details about the manifest, and listen for and respond to events in the app or extension lifecycle. You can also use this API to convert the relative path of URLs to fully-qualified URLs.
       * @since Chrome 22
       */
-    val runtime: js.Any = js.native
+    val runtime: js.Any
     
-    val sidebarAction: TypeofsidebarAction = js.native
+    val sidebarAction: TypeofsidebarAction
     
     ////////////////////
     // Storage
@@ -524,9 +515,9 @@ object anon {
       * Permissions:  "storage"
       * @since Chrome 20.
       */
-    val storage: js.Any = js.native
+    val storage: js.Any
     
-    val system: Typeofsystem = js.native
+    val system: Typeofsystem
     
     ////////////////////
     // TabCapture
@@ -536,7 +527,7 @@ object anon {
       * Permissions:  "tabCapture"
       * @since Chrome 31.
       */
-    val tabCapture: js.Any = js.native
+    val tabCapture: js.Any
     
     ////////////////////
     // Tabs
@@ -546,9 +537,9 @@ object anon {
       * Permissions: The majority of the chrome.tabs API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab.
       * @since Chrome 5.
       */
-    val tabs: js.Any = js.native
+    val tabs: js.Any
     
-    val topSites: TypeoftopSites = js.native
+    val topSites: TypeoftopSites
     
     ////////////////////
     // Text to Speech
@@ -558,7 +549,7 @@ object anon {
       * Permissions:  "tts"
       * @since Chrome 14.
       */
-    val tts: js.Any = js.native
+    val tts: js.Any
     
     ////////////////////
     // Text to Speech Engine
@@ -568,7 +559,7 @@ object anon {
       * Permissions:  "ttsEngine"
       * @since Chrome 14.
       */
-    val ttsEngine: js.Any = js.native
+    val ttsEngine: js.Any
     
     ////////////////////
     // Types
@@ -577,7 +568,7 @@ object anon {
       * The chrome.types API contains type declarations for Chrome.
       * @since Chrome 13.
       */
-    val types: js.Any = js.native
+    val types: js.Any
     
     ////////////////////
     // Web Navigation
@@ -587,7 +578,7 @@ object anon {
       * Permissions:  "webNavigation"
       * @since Chrome 16.
       */
-    val webNavigation: js.Any = js.native
+    val webNavigation: js.Any
     
     ////////////////////
     // Web Request
@@ -597,7 +588,7 @@ object anon {
       * Permissions:  "webRequest", host permissions
       * @since Chrome 17.
       */
-    val webRequest: js.Any = js.native
+    val webRequest: js.Any
     
     ////////////////////
     // Windows
@@ -607,7 +598,7 @@ object anon {
       * Permissions: The chrome.windows API can be used without declaring any permission. However, the "tabs" permission is required in order to populate the url, title, and favIconUrl properties of Tab objects.
       * @since Chrome 5.
       */
-    val windows: js.Any = js.native
+    val windows: js.Any
   }
   object Typeofwhale {
     
@@ -626,7 +617,7 @@ object anon {
       devtools: Typeofdevtools,
       downloads: Typeofdownloads,
       events: js.Any,
-      extension: js.Any,
+      `extension`: js.Any,
       fontSettings: js.Any,
       gcm: js.Any,
       history: js.Any,
@@ -656,7 +647,8 @@ object anon {
       webRequest: js.Any,
       windows: js.Any
     ): Typeofwhale = {
-      val __obj = js.Dynamic.literal(alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], extension = extension.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], sidebarAction = sidebarAction.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(alarms = alarms.asInstanceOf[js.Any], bookmarks = bookmarks.asInstanceOf[js.Any], browserAction = browserAction.asInstanceOf[js.Any], browsingData = browsingData.asInstanceOf[js.Any], commands = commands.asInstanceOf[js.Any], contentSettings = contentSettings.asInstanceOf[js.Any], contextMenus = contextMenus.asInstanceOf[js.Any], cookies = cookies.asInstanceOf[js.Any], declarativeContent = declarativeContent.asInstanceOf[js.Any], desktopCapture = desktopCapture.asInstanceOf[js.Any], devtools = devtools.asInstanceOf[js.Any], downloads = downloads.asInstanceOf[js.Any], events = events.asInstanceOf[js.Any], fontSettings = fontSettings.asInstanceOf[js.Any], gcm = gcm.asInstanceOf[js.Any], history = history.asInstanceOf[js.Any], i18n = i18n.asInstanceOf[js.Any], idle = idle.asInstanceOf[js.Any], management = management.asInstanceOf[js.Any], notifications = notifications.asInstanceOf[js.Any], omnibox = omnibox.asInstanceOf[js.Any], pageAction = pageAction.asInstanceOf[js.Any], pageCapture = pageCapture.asInstanceOf[js.Any], permissions = permissions.asInstanceOf[js.Any], power = power.asInstanceOf[js.Any], printerProvider = printerProvider.asInstanceOf[js.Any], privacy = privacy.asInstanceOf[js.Any], proxy = proxy.asInstanceOf[js.Any], runtime = runtime.asInstanceOf[js.Any], sidebarAction = sidebarAction.asInstanceOf[js.Any], storage = storage.asInstanceOf[js.Any], system = system.asInstanceOf[js.Any], tabCapture = tabCapture.asInstanceOf[js.Any], tabs = tabs.asInstanceOf[js.Any], topSites = topSites.asInstanceOf[js.Any], tts = tts.asInstanceOf[js.Any], ttsEngine = ttsEngine.asInstanceOf[js.Any], types = types.asInstanceOf[js.Any], webNavigation = webNavigation.asInstanceOf[js.Any], webRequest = webRequest.asInstanceOf[js.Any], windows = windows.asInstanceOf[js.Any])
+      __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Typeofwhale]
     }
     

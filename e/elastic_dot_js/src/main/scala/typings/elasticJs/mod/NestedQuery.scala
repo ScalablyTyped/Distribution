@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "NestedQuery")
 @js.native
-class NestedQuery protected () extends Query {
+class NestedQuery protected ()
+  extends StObject
+     with Query {
   /*
     Constructs a query that is capable of executing a search against objects
     nested within a document.

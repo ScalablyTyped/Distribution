@@ -2,21 +2,19 @@ package typings.awsSdk.schemasMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportSchemaResponse extends StObject {
   
-  var Content: js.UndefOr[string] = js.native
+  var Content: js.UndefOr[string] = js.undefined
   
-  var SchemaArn: js.UndefOr[string] = js.native
+  var SchemaArn: js.UndefOr[string] = js.undefined
   
-  var SchemaName: js.UndefOr[string] = js.native
+  var SchemaName: js.UndefOr[string] = js.undefined
   
-  var SchemaVersion: js.UndefOr[string] = js.native
+  var SchemaVersion: js.UndefOr[string] = js.undefined
   
-  var Type: js.UndefOr[string] = js.native
+  var Type: js.UndefOr[string] = js.undefined
 }
 object ExportSchemaResponse {
   

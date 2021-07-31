@@ -21,7 +21,6 @@ import typings.vueTestUtils.anon.Args
 import typings.vueTestUtils.vueTestUtilsBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -33,7 +32,9 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("@vue/test-utils", "RouterLinkStub")
   @js.native
-  class RouterLinkStub protected () extends Vue {
+  class RouterLinkStub protected ()
+    extends StObject
+       with Vue {
     def this(args: js.Any*) = this()
   }
   @JSImport("@vue/test-utils", "RouterLinkStub")
@@ -48,29 +49,22 @@ object mod {
   @scala.inline
   def config_=(x: VueTestUtilsConfigOptions): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("config")(x.asInstanceOf[js.Any])
   
-  @JSImport("@vue/test-utils", "createLocalVue")
-  @js.native
-  def createLocalVue(): VueConstructor[Vue] = js.native
+  @scala.inline
+  def createLocalVue(): VueConstructor[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createLocalVue")().asInstanceOf[VueConstructor[Vue]]
   
-  @JSImport("@vue/test-utils", "createWrapper")
-  @js.native
-  def createWrapper(node: HTMLElement): Wrapper[Null] = js.native
-  @JSImport("@vue/test-utils", "createWrapper")
-  @js.native
-  def createWrapper(node: HTMLElement, options: WrapperOptions): Wrapper[Null] = js.native
-  @JSImport("@vue/test-utils", "createWrapper")
-  @js.native
-  def createWrapper(node: Vue): Wrapper[Vue] = js.native
-  @JSImport("@vue/test-utils", "createWrapper")
-  @js.native
-  def createWrapper(node: Vue, options: WrapperOptions): Wrapper[Vue] = js.native
+  @scala.inline
+  def createWrapper(node: HTMLElement): Wrapper[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Null]]
+  @scala.inline
+  def createWrapper(node: HTMLElement, options: WrapperOptions): Wrapper[Null] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Null]]
+  @scala.inline
+  def createWrapper(node: Vue): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
+  @scala.inline
+  def createWrapper(node: Vue, options: WrapperOptions): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("createWrapper")(node.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
   
-  @JSImport("@vue/test-utils", "enableAutoDestroy")
-  @js.native
-  def enableAutoDestroy(hook: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def enableAutoDestroy(hook: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enableAutoDestroy")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@vue/test-utils", "mount")
-  @js.native
+  @scala.inline
   def mount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
@@ -80,9 +74,8 @@ object mod {
       PropsDefinition[DefaultProps], 
       DefaultProps
     ]
-  ): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "mount")
-  @js.native
+  ): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
+  @scala.inline
   def mount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
@@ -93,26 +86,20 @@ object mod {
       DefaultProps
     ],
     options: ThisTypedMountOptions[V]
-  ): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "mount")
-  @js.native
-  def mount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "mount")
-  @js.native
-  def mount[V /* <: Vue */](component: VueClass[V], options: ThisTypedMountOptions[V]): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "mount")
-  @js.native
-  def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = js.native
-  @JSImport("@vue/test-utils", "mount")
-  @js.native
-  def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: MountOptions[Vue]): Wrapper[Vue] = js.native
+  ): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
+  @scala.inline
+  def mount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
+  @scala.inline
+  def mount[V /* <: Vue */](component: VueClass[V], options: ThisTypedMountOptions[V]): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
+  @scala.inline
+  def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
+  @scala.inline
+  def mount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: MountOptions[Vue]): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("mount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
   
-  @JSImport("@vue/test-utils", "resetAutoDestroyState")
-  @js.native
-  def resetAutoDestroyState(hook: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
+  @scala.inline
+  def resetAutoDestroyState(hook: js.Function1[/* repeated */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetAutoDestroyState")(hook.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@vue/test-utils", "shallowMount")
-  @js.native
+  @scala.inline
   def shallowMount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
@@ -122,9 +109,8 @@ object mod {
       PropsDefinition[DefaultProps], 
       DefaultProps
     ]
-  ): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "shallowMount")
-  @js.native
+  ): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
+  @scala.inline
   def shallowMount[V /* <: Vue */](
     component: ComponentOptions[
       V, 
@@ -135,19 +121,15 @@ object mod {
       DefaultProps
     ],
     options: ThisTypedShallowMountOptions[V]
-  ): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "shallowMount")
-  @js.native
-  def shallowMount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "shallowMount")
-  @js.native
-  def shallowMount[V /* <: Vue */](component: VueClass[V], options: ThisTypedShallowMountOptions[V]): Wrapper[V] = js.native
-  @JSImport("@vue/test-utils", "shallowMount")
-  @js.native
-  def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = js.native
-  @JSImport("@vue/test-utils", "shallowMount")
-  @js.native
-  def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: ShallowMountOptions[Vue]): Wrapper[Vue] = js.native
+  ): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
+  @scala.inline
+  def shallowMount[V /* <: Vue */](component: VueClass[V]): Wrapper[V] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[V]]
+  @scala.inline
+  def shallowMount[V /* <: Vue */](component: VueClass[V], options: ThisTypedShallowMountOptions[V]): Wrapper[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[V]]
+  @scala.inline
+  def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs]): Wrapper[Vue] = ^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any]).asInstanceOf[Wrapper[Vue]]
+  @scala.inline
+  def shallowMount[Props, PropDefs](component: FunctionalComponentOptions[Props, PropDefs], options: ShallowMountOptions[Vue]): Wrapper[Vue] = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowMount")(component.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Wrapper[Vue]]
   
   /**
     * Base class of Wrapper and WrapperArray
@@ -200,8 +182,9 @@ object mod {
     def trigger(eventName: String, options: js.Object): js.Promise[Unit] | Unit = js.native
   }
   
-  @js.native
-  trait MountOptions[V /* <: Vue */] extends ComponentOptions[
+  trait MountOptions[V /* <: Vue */]
+    extends StObject
+       with ComponentOptions[
           V, 
           DefaultData[V], 
           DefaultMethods[V], 
@@ -210,19 +193,19 @@ object mod {
           DefaultProps
         ] {
     
-    var attachTo: js.UndefOr[Element | String] = js.native
+    var attachTo: js.UndefOr[Element | String] = js.undefined
     
-    var attachToDocument: js.UndefOr[Boolean] = js.native
+    var attachToDocument: js.UndefOr[Boolean] = js.undefined
     
-    var attrs: js.UndefOr[Record[String, String]] = js.native
+    var attrs: js.UndefOr[Record[String, String]] = js.undefined
     
-    var context: js.UndefOr[VNodeData] = js.native
+    var context: js.UndefOr[VNodeData] = js.undefined
     
-    var listeners: js.UndefOr[Record[String, js.Function | js.Array[js.Function]]] = js.native
+    var listeners: js.UndefOr[Record[String, js.Function | js.Array[js.Function]]] = js.undefined
     
-    var localVue: js.UndefOr[VueConstructor[Vue]] = js.native
+    var localVue: js.UndefOr[VueConstructor[Vue]] = js.undefined
     
-    var mocks: js.UndefOr[js.Object | `false`] = js.native
+    var mocks: js.UndefOr[js.Object | `false`] = js.undefined
     
     var parentComponent: js.UndefOr[
         Component[
@@ -231,13 +214,13 @@ object mod {
           DefaultComputed, 
           DefaultProps
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var scopedSlots: js.UndefOr[Record[String, String | js.Function]] = js.native
+    var scopedSlots: js.UndefOr[Record[String, String | js.Function]] = js.undefined
     
-    var slots: js.UndefOr[Slots] = js.native
+    var slots: js.UndefOr[Slots] = js.undefined
     
-    var stubs: js.UndefOr[Stubs | `false`] = js.native
+    var stubs: js.UndefOr[Stubs | `false`] = js.undefined
   }
   object MountOptions {
     
@@ -248,7 +231,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MountOptionsMutableBuilder[Self <: MountOptions[_], V /* <: Vue */] (val x: Self with MountOptions[V]) extends AnyVal {
+    implicit class MountOptionsMutableBuilder[Self <: MountOptions[?], V /* <: Vue */] (val x: Self & MountOptions[V]) extends AnyVal {
       
       @scala.inline
       def setAttachTo(value: Element | String): Self = StObject.set(x, "attachTo", value.asInstanceOf[js.Any])
@@ -331,10 +314,9 @@ object mod {
   /**
     * Utility type for name options object that can be used as a Selector
     */
-  @js.native
   trait NameSelector extends StObject {
     
-    var name: String = js.native
+    var name: String
   }
   object NameSelector {
     
@@ -355,10 +337,9 @@ object mod {
   /**
     * Utility type for ref options object that can be used as a Selector
     */
-  @js.native
   trait RefSelector extends StObject {
     
-    var ref: String = js.native
+    var ref: String
   }
   object RefSelector {
     
@@ -420,29 +401,50 @@ object mod {
     ]) | String | Boolean
   ]) | js.Array[String]
   
-  type ThisTypedMountOptions[V /* <: Vue */] = MountOptions[V] with ThisType[V]
+  trait ThisTypedMountOptions[V /* <: Vue */]
+    extends StObject
+       with MountOptions[V]
+       with ThisType[V]
+  object ThisTypedMountOptions {
+    
+    @scala.inline
+    def apply[V /* <: Vue */](): ThisTypedMountOptions[V] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ThisTypedMountOptions[V]]
+    }
+  }
   
-  type ThisTypedShallowMountOptions[V /* <: Vue */] = ShallowMountOptions[V] with ThisType[V]
+  trait ThisTypedShallowMountOptions[V /* <: Vue */]
+    extends StObject
+       with MountOptions[V]
+       with ThisType[V]
+  object ThisTypedShallowMountOptions {
+    
+    @scala.inline
+    def apply[V /* <: Vue */](): ThisTypedShallowMountOptions[V] = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[ThisTypedShallowMountOptions[V]]
+    }
+  }
   
   /**
     * Utility type to declare an extended Vue constructor
     */
-  type VueClass[V /* <: Vue */] = (Instantiable1[/* args (repeated) */ js.Any, V]) with VueConstructor[Vue]
+  type VueClass[V /* <: Vue */] = (Instantiable1[/* args (repeated) */ js.Any, V]) & VueConstructor[Vue]
   
-  @js.native
   trait VueTestUtilsConfigOptions extends StObject {
     
-    var deprecationWarningHandler: js.UndefOr[js.Function] = js.native
+    var deprecationWarningHandler: js.UndefOr[js.Function] = js.undefined
     
-    var methods: Record[String, js.Function] = js.native
+    var methods: Record[String, js.Function]
     
-    var mocks: Record[String, _] = js.native
+    var mocks: Record[String, js.Any]
     
-    var provide: js.UndefOr[Record[String, _]] = js.native
+    var provide: js.UndefOr[Record[String, js.Any]] = js.undefined
     
-    var showDeprecationWarnings: js.UndefOr[Boolean] = js.native
+    var showDeprecationWarnings: js.UndefOr[Boolean] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
     var stubs: Record[
         String, 
@@ -452,14 +454,14 @@ object mod {
           DefaultComputed, 
           DefaultProps
         ]) | Boolean | String
-      ] = js.native
+      ]
   }
   object VueTestUtilsConfigOptions {
     
     @scala.inline
     def apply(
       methods: Record[String, js.Function],
-      mocks: Record[String, _],
+      mocks: Record[String, js.Any],
       stubs: Record[
           String, 
           (Component[
@@ -487,10 +489,10 @@ object mod {
       def setMethods(value: Record[String, js.Function]): Self = StObject.set(x, "methods", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setMocks(value: Record[String, _]): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
+      def setMocks(value: Record[String, js.Any]): Self = StObject.set(x, "mocks", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setProvide(value: Record[String, _]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
+      def setProvide(value: Record[String, js.Any]): Self = StObject.set(x, "provide", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setProvideUndefined: Self = StObject.set(x, "provide", js.undefined)
@@ -523,12 +525,14 @@ object mod {
   }
   
   @js.native
-  trait Wrapper[V /* <: Vue | Null */] extends BaseWrapper {
+  trait Wrapper[V /* <: Vue | Null */]
+    extends StObject
+       with BaseWrapper {
     
     val element: HTMLElement = js.native
     
-    def emitted(): StringDictionary[js.UndefOr[js.Array[js.Array[_]]]] = js.native
-    def emitted(event: String): js.UndefOr[js.Array[_]] = js.native
+    def emitted(): StringDictionary[js.UndefOr[js.Array[js.Array[js.Any]]]] = js.native
+    def emitted(event: String): js.UndefOr[js.Array[js.Any]] = js.native
     
     def emittedByOrder(): js.Array[Args] = js.native
     
@@ -622,12 +626,14 @@ object mod {
   }
   
   @js.native
-  trait WrapperArray[V /* <: Vue */] extends BaseWrapper {
+  trait WrapperArray[V /* <: Vue */]
+    extends StObject
+       with BaseWrapper {
     
     def at(index: Double): Wrapper[V] = js.native
     
     def filter(
-      predicate: js.Function3[/* value */ Wrapper[V], /* index */ Double, /* array */ js.Array[Wrapper[V]], _]
+      predicate: js.Function3[/* value */ Wrapper[V], /* index */ Double, /* array */ js.Array[Wrapper[V]], js.Any]
     ): WrapperArray[Vue] = js.native
     
     val length: Double = js.native
@@ -635,10 +641,9 @@ object mod {
     val wrappers: js.Array[Wrapper[V]] = js.native
   }
   
-  @js.native
   trait WrapperOptions extends StObject {
     
-    var attachedToDocument: js.UndefOr[Boolean] = js.native
+    var attachedToDocument: js.UndefOr[Boolean] = js.undefined
   }
   object WrapperOptions {
     

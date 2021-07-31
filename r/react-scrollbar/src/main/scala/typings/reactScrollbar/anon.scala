@@ -2,25 +2,23 @@ package typings.reactScrollbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ContainerHeight extends StObject {
     
-    var containerHeight: Double = js.native
+    var containerHeight: Double
     
-    var containerWidth: Double = js.native
+    var containerWidth: Double
     
-    var leftPosition: Double = js.native
+    var leftPosition: Double
     
-    var realHeight: Double = js.native
+    var realHeight: Double
     
-    var realWidth: Double = js.native
+    var realWidth: Double
     
-    var topPosition: Double = js.native
+    var topPosition: Double
   }
   object ContainerHeight {
     

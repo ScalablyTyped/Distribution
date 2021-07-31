@@ -4,7 +4,6 @@ import typings.sinon.anon.MatchArgumentsArrayany
 import typings.sinon.anon.PartialMatchArgumentsArra
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent sinon.sinon.SinonStub<std.Array<any>, any> */
@@ -13,7 +12,7 @@ trait SinonExpectation extends StObject {
   
   // Methods
   def apply(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
   ): js.Any = js.native
   
   /**
@@ -43,7 +42,7 @@ trait SinonExpectation extends StObject {
     * @param args
     */
   def alwaysCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
   ): Boolean = js.native
   
   /**
@@ -68,7 +67,7 @@ trait SinonExpectation extends StObject {
   /**
     * Array of arguments received, spy.args[0] is an array of arguments received in the first call.
     */
-  var args: js.Array[js.Array[_]] = js.native
+  var args: js.Array[js.Array[js.Any]] = js.native
   
   /**
     * Specify the minimum amount of calls expected.
@@ -108,7 +107,7 @@ trait SinonExpectation extends StObject {
   /**
     * Causes the original method wrapped into the stub to be called when none of the conditional stubs are matched.
     */
-  def callThrough(): SinonStub[js.Array[_], _] = js.native
+  def callThrough(): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * true if the spy was called at least once
@@ -119,25 +118,25 @@ trait SinonExpectation extends StObject {
     * Returns true if the spy was called after @param anotherSpy
     * @param anotherSpy
     */
-  def calledAfter(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledAfter(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Returns true if the spy was called before @param anotherSpy
     * @param anotherSpy
     */
-  def calledBefore(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledBefore(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Returns true if spy was called after @param anotherSpy, and no spy calls occurred between @param anotherSpy and spy.
     * @param anotherSpy
     */
-  def calledImmediatelyAfter(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledImmediatelyAfter(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   /**
     * Returns true if spy was called before @param anotherSpy, and no spy calls occurred between spy and @param anotherSpy.
     * @param anotherSpy
     */
-  def calledImmediatelyBefore(anotherSpy: SinonSpy[_, _]): Boolean = js.native
+  def calledImmediatelyBefore(anotherSpy: SinonSpy[js.Any, js.Any]): Boolean = js.native
   
   def calledOn(obj: js.Any): Boolean = js.native
   @JSName("calledOn")
@@ -182,10 +181,10 @@ trait SinonExpectation extends StObject {
   var calledWithExactly_Original: js.Function1[/* args */ MatchArgumentsArrayany, Boolean] = js.native
   
   def calledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
   ): Boolean = js.native
   @JSName("calledWithMatch")
-  var calledWithMatch_Original: js.Function1[/* args */ js.Array[_], Boolean] = js.native
+  var calledWithMatch_Original: js.Function1[/* args */ js.Array[js.Any], Boolean] = js.native
   
   def calledWithNew(): Boolean = js.native
   @JSName("calledWithNew")
@@ -199,7 +198,7 @@ trait SinonExpectation extends StObject {
     * stub.callsArg(0); causes the stub to call the first argument as a callback.
     * If the argument at the provided index is not available or is not a function, a TypeError will be thrown.
     */
-  def callsArg(index: Double): SinonStub[js.Array[_], _] = js.native
+  def callsArg(index: Double): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
@@ -207,14 +206,14 @@ trait SinonExpectation extends StObject {
     * In a browser the callback is deferred with setTimeout(callback, 0).
     * @param index
     */
-  def callsArgAsync(index: Double): SinonStub[js.Array[_], _] = js.native
+  def callsArgAsync(index: Double): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Like stub.callsArg(index); but with an additional parameter to pass the this context.
     * @param index
     * @param context
     */
-  def callsArgOn(index: Double, context: js.Any): SinonStub[js.Array[_], _] = js.native
+  def callsArgOn(index: Double, context: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
@@ -223,7 +222,7 @@ trait SinonExpectation extends StObject {
     * @param index
     * @param context
     */
-  def callsArgOnAsync(index: Double, context: js.Any): SinonStub[js.Array[_], _] = js.native
+  def callsArgOnAsync(index: Double, context: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Like above but with an additional parameter to pass the this context.
@@ -231,34 +230,34 @@ trait SinonExpectation extends StObject {
     * @param context
     * @param args
     */
-  def callsArgOnWith(index: Double, context: js.Any, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def callsArgOnWith(index: Double, context: js.Any, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
     * In Node environment the callback is deferred with process.nextTick.
     * In a browser the callback is deferred with setTimeout(callback, 0).
     */
-  def callsArgOnWithAsync(index: Double, context: js.Any, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def callsArgOnWithAsync(index: Double, context: js.Any, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Like callsArg, but with arguments to pass to the callback.
     * @param index
     * @param args
     */
-  def callsArgWith(index: Double, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def callsArgWith(index: Double, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
     * In Node environment the callback is deferred with process.nextTick.
     * In a browser the callback is deferred with setTimeout(callback, 0).
     */
-  def callsArgWithAsync(index: Double, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def callsArgWithAsync(index: Double, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Makes the stub call the provided @param func when invoked.
     * @param func
     */
-  def callsFake(func: js.Function1[/* args */ js.Array[_], _]): SinonStub[js.Array[_], _] = js.native
+  def callsFake(func: js.Function1[/* args */ js.Array[js.Any], js.Any]): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Expect the method to be called exactly @param n times.
@@ -269,29 +268,29 @@ trait SinonExpectation extends StObject {
     * Array of exception objects thrown, spy.exceptions[0] is the exception thrown by the first call.
     * If the call did not throw an error, the value at the call’s location in .exceptions will be undefined.
     */
-  var exceptions: js.Array[_] = js.native
+  var exceptions: js.Array[js.Any] = js.native
   
   /**
     * The first call
     */
-  var firstCall: SinonSpyCall[js.Array[_], _] = js.native
+  var firstCall: SinonSpyCall[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Replaces a new getter for this stub.
     */
-  def get(func: js.Function0[_]): SinonStub[js.Array[_], _] = js.native
+  def get(func: js.Function0[js.Any]): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Returns the nth call.
     * Accessing individual calls helps with more detailed behavior verification when the spy is called more than once.
     * @param n Zero based index of the spy call.
     */
-  def getCall(n: Double): SinonSpyCall[js.Array[_], _] = js.native
+  def getCall(n: Double): SinonSpyCall[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Returns an Array of all calls recorded by the spy.
     */
-  def getCalls(): js.Array[SinonSpyCall[js.Array[_], _]] = js.native
+  def getCalls(): js.Array[SinonSpyCall[js.Array[js.Any], js.Any]] = js.native
   
   /**
     * Invoke callbacks passed to the stub with the given arguments.
@@ -299,25 +298,25 @@ trait SinonExpectation extends StObject {
     * Returns an Array with all callbacks return values in the order they were called, if no error is thrown.
     */
   def invokeCallback(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
   ): Unit = js.native
   
   /**
     * The last call
     */
-  var lastCall: SinonSpyCall[js.Array[_], _] = js.native
+  var lastCall: SinonSpyCall[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Set the displayName of the spy or stub.
     * @param name
     */
-  def named(name: String): SinonSpy[js.Array[_], _] = js.native
+  def named(name: String): SinonSpy[js.Array[js.Any], js.Any] = js.native
   /**
     * Set the displayName of the spy or stub.
     * @param name
     */
   @JSName("named")
-  def named_SinonStub(name: String): SinonStub[js.Array[_], _] = js.native
+  def named_SinonStub(name: String): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Expect the method to never be called.
@@ -338,7 +337,7 @@ trait SinonExpectation extends StObject {
     * @param args
     */
   def neverCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
   ): Boolean = js.native
   
   /**
@@ -351,10 +350,10 @@ trait SinonExpectation extends StObject {
   ): Boolean = js.native
   
   def notCalledWithMatch(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
   ): Boolean = js.native
   @JSName("notCalledWithMatch")
-  var notCalledWithMatch_Original: js.Function1[/* args */ js.Array[_], Boolean] = js.native
+  var notCalledWithMatch_Original: js.Function1[/* args */ js.Array[js.Any], Boolean] = js.native
   
   @JSName("notCalledWith")
   var notCalledWith_Original: js.Function1[/* args */ MatchArgumentsArrayany, Boolean] = js.native
@@ -367,22 +366,22 @@ trait SinonExpectation extends StObject {
     * onCall can be combined with all of the behavior defining methods in this section. In particular, it can be used together with withArgs.
     * @param n
     */
-  def onCall(n: Double): SinonStub[js.Array[_], _] = js.native
+  def onCall(n: Double): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Alias for stub.onCall(0);
     */
-  def onFirstCall(): SinonStub[js.Array[_], _] = js.native
+  def onFirstCall(): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Alias for stub.onCall(1);
     */
-  def onSecondCall(): SinonStub[js.Array[_], _] = js.native
+  def onSecondCall(): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Alias for stub.onCall(2);
     */
-  def onThirdCall(): SinonStub[js.Array[_], _] = js.native
+  def onThirdCall(): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Expect the method to be called exactly once.
@@ -410,17 +409,17 @@ trait SinonExpectation extends StObject {
     * The Promise library can be overwritten using the usingPromise method.
     * Since sinon@2.0.0
     */
-  def rejects(): SinonStub[js.Array[_], _] = js.native
+  def rejects(): SinonStub[js.Array[js.Any], js.Any] = js.native
   /**
     * Causes the stub to return a Promise which rejects with an exception of the provided type.
     * Since sinon@2.0.0
     */
-  def rejects(errorType: String): SinonStub[js.Array[_], _] = js.native
+  def rejects(errorType: String): SinonStub[js.Array[js.Any], js.Any] = js.native
   /**
     * Causes the stub to return a Promise which rejects with the provided exception object.
     * Since sinon@2.0.0
     */
-  def rejects(value: js.Any): SinonStub[js.Array[_], _] = js.native
+  def rejects(value: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Resets both behaviour and history of the stub.
@@ -449,20 +448,20 @@ trait SinonExpectation extends StObject {
     * The Promise library can be overwritten using the usingPromise method.
     * Since sinon@2.0.0
     */
-  def resolves(): SinonStub[js.Array[_], _] = js.native
-  def resolves(value: js.Any): SinonStub[js.Array[_], _] = js.native
+  def resolves(): SinonStub[js.Array[js.Any], js.Any] = js.native
+  def resolves(value: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Causes the stub to return a Promise which resolves to the argument at the provided index.
     * stub.resolvesArg(0); causes the stub to return a Promise which resolves to the first argument.
     * If the argument at the provided index is not available, a TypeError will be thrown.
     */
-  def resolvesArg(index: Double): SinonStub[js.Array[_], _] = js.native
+  def resolvesArg(index: Double): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Causes the stub to return a Promise which resolves to its this value.
     */
-  def resolvesThis(): SinonStub[js.Array[_], _] = js.native
+  def resolvesThis(): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Restores all mocked methods.
@@ -473,7 +472,7 @@ trait SinonExpectation extends StObject {
     * Array of return values, spy.returnValues[0] is the return value of the first call.
     * If the call did not explicitly return a value, the value at the call’s location in .returnValues will be undefined.
     */
-  var returnValues: js.Array[_] = js.native
+  var returnValues: js.Array[js.Any] = js.native
   
   def returned(value: js.Any): Boolean = js.native
   def returned(value: SinonMatcher): Boolean = js.native
@@ -484,7 +483,7 @@ trait SinonExpectation extends StObject {
     * Makes the stub return the provided @param obj value.
     * @param obj
     */
-  def returns(obj: js.Any): SinonStub[js.Array[_], _] = js.native
+  def returns(obj: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Causes the stub to return the argument at the provided @param index.
@@ -493,34 +492,34 @@ trait SinonExpectation extends StObject {
     * starting from sinon@6.1.2, a TypeError will be thrown.
     * @param index
     */
-  def returnsArg(index: Double): SinonStub[js.Array[_], _] = js.native
+  def returnsArg(index: Double): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Causes the stub to return its this value.
     * Useful for stubbing jQuery-style fluent APIs.
     */
-  def returnsThis(): SinonStub[js.Array[_], _] = js.native
+  def returnsThis(): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * The second call
     */
-  var secondCall: SinonSpyCall[js.Array[_], _] = js.native
+  var secondCall: SinonSpyCall[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Defines a new setter for this stub.
     * @param func
     */
-  def set(func: js.Function1[/* v */ js.Any, Unit]): SinonStub[js.Array[_], _] = js.native
+  def set(func: js.Function1[/* v */ js.Any, Unit]): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * The third call
     */
-  var thirdCall: SinonSpyCall[js.Array[_], _] = js.native
+  var thirdCall: SinonSpyCall[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Array of this objects, spy.thisValues[0] is the this object for the first call.
     */
-  var thisValues: js.Array[_] = js.native
+  var thisValues: js.Array[js.Any] = js.native
   
   def threw(): Boolean = js.native
   @JSName("threw")
@@ -535,12 +534,12 @@ trait SinonExpectation extends StObject {
     * Causes the stub to throw an exception (Error).
     * @param type
     */
-  def throws(): SinonStub[js.Array[_], _] = js.native
+  def throws(): SinonStub[js.Array[js.Any], js.Any] = js.native
   /**
     * Causes the stub to throw the provided exception object.
     */
-  def throws(obj: js.Any): SinonStub[js.Array[_], _] = js.native
-  def throws(`type`: String): SinonStub[js.Array[_], _] = js.native
+  def throws(obj: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
+  def throws(`type`: String): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Causes the stub to throw the argument at the provided index.
@@ -549,11 +548,11 @@ trait SinonExpectation extends StObject {
     * Since sinon@2.3.0
     * @param index
     */
-  def throwsArg(index: Double): SinonStub[js.Array[_], _] = js.native
+  def throwsArg(index: Double): SinonStub[js.Array[js.Any], js.Any] = js.native
   
-  def throwsException(): SinonStub[js.Array[_], _] = js.native
-  def throwsException(obj: js.Any): SinonStub[js.Array[_], _] = js.native
-  def throwsException(`type`: String): SinonStub[js.Array[_], _] = js.native
+  def throwsException(): SinonStub[js.Array[js.Any], js.Any] = js.native
+  def throwsException(obj: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
+  def throwsException(`type`: String): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Expect the method to be called exactly twice.
@@ -564,13 +563,13 @@ trait SinonExpectation extends StObject {
     * Causes the stub to return promises using a specific Promise library instead of the global one when using stub.rejects or stub.resolves.
     * Returns the stub to allow chaining.
     */
-  def usingPromise(promiseLibrary: js.Any): SinonStub[js.Array[_], _] = js.native
+  def usingPromise(promiseLibrary: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Defines a new value for this stub.
     * @param val
     */
-  def value(`val`: js.Any): SinonStub[js.Array[_], _] = js.native
+  def value(`val`: js.Any): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Verifies all expectations on the mock.
@@ -594,7 +593,7 @@ trait SinonExpectation extends StObject {
     */
   def withArgs(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
-  ): SinonSpy[js.Array[_], _] = js.native
+  ): SinonSpy[js.Array[js.Any], js.Any] = js.native
   /**
     * Stubs the method only for the provided arguments.
     * This is useful to be more expressive in your assertions, where you can access the spy with the same call.
@@ -604,7 +603,7 @@ trait SinonExpectation extends StObject {
   @JSName("withArgs")
   def withArgs_SinonStub(
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type MatchArguments<TArgs> is not an array type */ args: MatchArgumentsArrayany
-  ): SinonStub[js.Array[_], _] = js.native
+  ): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Expect the method to be called with the provided arguments and no others.
@@ -619,7 +618,7 @@ trait SinonExpectation extends StObject {
     * Holds a reference to the original method/function this stub has wrapped.
     */
   def wrappedMethod(
-    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[_]
+    /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type TArgs is not an array type */ args: js.Array[js.Any]
   ): js.Any = js.native
   
   def `yield`(args: js.Any*): Unit = js.native
@@ -645,7 +644,7 @@ trait SinonExpectation extends StObject {
     * Causes the stub to call the first callback it receives with the provided arguments (if any).
     * If a method accepts more than one callback, you need to use callsArg to have the stub invoke other callbacks than the first one.
     */
-  def yields(args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yields(args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
@@ -653,12 +652,12 @@ trait SinonExpectation extends StObject {
     * In a browser the callback is deferred with setTimeout(callback, 0).
     * @param args
     */
-  def yieldsAsync(args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsAsync(args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Like above but with an additional parameter to pass the this context.
     */
-  def yieldsOn(context: js.Any, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsOn(context: js.Any, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
@@ -667,9 +666,9 @@ trait SinonExpectation extends StObject {
     * @param context
     * @param args
     */
-  def yieldsOnAsync(context: js.Any, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsOnAsync(context: js.Any, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
-  def yieldsRight(args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsRight(args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Causes the spy to invoke a callback passed as a property of an object to the spy.
@@ -677,7 +676,7 @@ trait SinonExpectation extends StObject {
     * @param property
     * @param args
     */
-  def yieldsTo(property: String, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsTo(property: String, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
@@ -686,12 +685,12 @@ trait SinonExpectation extends StObject {
     * @param property
     * @param args
     */
-  def yieldsToAsync(property: String, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsToAsync(property: String, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Like above but with an additional parameter to pass the this context.
     */
-  def yieldsToOn(property: String, context: js.Any, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsToOn(property: String, context: js.Any, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
   
   /**
     * Same as their corresponding non-Async counterparts, but with callback being deferred at called after all instructions in the current call stack are processed.
@@ -701,5 +700,5 @@ trait SinonExpectation extends StObject {
     * @param context
     * @param args
     */
-  def yieldsToOnAsync(property: String, context: js.Any, args: js.Any*): SinonStub[js.Array[_], _] = js.native
+  def yieldsToOnAsync(property: String, context: js.Any, args: js.Any*): SinonStub[js.Array[js.Any], js.Any] = js.native
 }

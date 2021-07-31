@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -32,8 +31,12 @@ sealed trait ProtectionType extends StObject
 object ProtectionType extends StObject {
   
   @js.native
-  sealed trait RANGE extends ProtectionType
+  sealed trait RANGE
+    extends StObject
+       with ProtectionType
   
   @js.native
-  sealed trait SHEET extends ProtectionType
+  sealed trait SHEET
+    extends StObject
+       with ProtectionType
 }

@@ -2,16 +2,14 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
   /**
     * 经过处理过后得到的文本，加密为Base64编码文本，解密为原始文本
     */
-  var text: String = js.native
+  var text: String
 }
 object Text {
   

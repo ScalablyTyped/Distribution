@@ -2,28 +2,26 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartColorFormat extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val RGB: Double = js.native
+  val RGB: Double
   
-  var SchemeColor: Double = js.native
+  var SchemeColor: Double
   
-  val Type: Double = js.native
+  val Type: Double
   
   @JSName("Word.ChartColorFormat_typekey")
-  var WordDotChartColorFormat_typekey: ChartColorFormat = js.native
+  var WordDotChartColorFormat_typekey: ChartColorFormat
   
-  val _Default: Double = js.native
+  val _Default: Double
 }
 object ChartColorFormat {
   

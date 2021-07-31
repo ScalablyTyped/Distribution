@@ -3,38 +3,36 @@ package typings.devtoolsProtocol.mod.Protocol
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ApplicationCache {
   
-  @js.native
   trait ApplicationCache extends StObject {
     
     /**
       * Application cache creation time.
       */
-    var creationTime: Double = js.native
+    var creationTime: Double
     
     /**
       * Manifest URL.
       */
-    var manifestURL: String = js.native
+    var manifestURL: String
     
     /**
       * Application cache resources.
       */
-    var resources: js.Array[ApplicationCacheResource] = js.native
+    var resources: js.Array[ApplicationCacheResource]
     
     /**
       * Application cache size.
       */
-    var size: Double = js.native
+    var size: Double
     
     /**
       * Application cache update time.
       */
-    var updateTime: Double = js.native
+    var updateTime: Double
   }
   object ApplicationCache {
     
@@ -73,23 +71,22 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait ApplicationCacheResource extends StObject {
     
     /**
       * Resource size.
       */
-    var size: integer = js.native
+    var size: integer
     
     /**
       * Resource type.
       */
-    var `type`: String = js.native
+    var `type`: String
     
     /**
       * Resource url.
       */
-    var url: String = js.native
+    var url: String
   }
   object ApplicationCacheResource {
     
@@ -114,23 +111,22 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait ApplicationCacheStatusUpdatedEvent extends StObject {
     
     /**
       * Identifier of the frame containing document whose application cache updated status.
       */
-    var frameId: FrameId = js.native
+    var frameId: FrameId
     
     /**
       * Manifest URL.
       */
-    var manifestURL: String = js.native
+    var manifestURL: String
     
     /**
       * Updated application cache status.
       */
-    var status: integer = js.native
+    var status: integer
   }
   object ApplicationCacheStatusUpdatedEvent {
     
@@ -154,23 +150,22 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait FrameWithManifest extends StObject {
     
     /**
       * Frame identifier.
       */
-    var frameId: FrameId = js.native
+    var frameId: FrameId
     
     /**
       * Manifest URL.
       */
-    var manifestURL: String = js.native
+    var manifestURL: String
     
     /**
       * Application cache status.
       */
-    var status: integer = js.native
+    var status: integer
   }
   object FrameWithManifest {
     
@@ -194,13 +189,12 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait GetApplicationCacheForFrameRequest extends StObject {
     
     /**
       * Identifier of the frame containing document whose application cache is retrieved.
       */
-    var frameId: FrameId = js.native
+    var frameId: FrameId
   }
   object GetApplicationCacheForFrameRequest {
     
@@ -218,13 +212,12 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait GetApplicationCacheForFrameResponse extends StObject {
     
     /**
       * Relevant application cache data for the document in given frame.
       */
-    var applicationCache: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache = js.native
+    var applicationCache: typings.devtoolsProtocol.mod.Protocol.ApplicationCache.ApplicationCache
   }
   object GetApplicationCacheForFrameResponse {
     
@@ -242,14 +235,13 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait GetFramesWithManifestsResponse extends StObject {
     
     /**
       * Array of frame identifiers with manifest urls for each frame containing a document
       * associated with some application cache.
       */
-    var frameIds: js.Array[FrameWithManifest] = js.native
+    var frameIds: js.Array[FrameWithManifest]
   }
   object GetFramesWithManifestsResponse {
     
@@ -270,13 +262,12 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait GetManifestForFrameRequest extends StObject {
     
     /**
       * Identifier of the frame containing document whose manifest is retrieved.
       */
-    var frameId: FrameId = js.native
+    var frameId: FrameId
   }
   object GetManifestForFrameRequest {
     
@@ -294,13 +285,12 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait GetManifestForFrameResponse extends StObject {
     
     /**
       * Manifest URL for document in the given frame.
       */
-    var manifestURL: String = js.native
+    var manifestURL: String
   }
   object GetManifestForFrameResponse {
     
@@ -318,10 +308,9 @@ object ApplicationCache {
     }
   }
   
-  @js.native
   trait NetworkStateUpdatedEvent extends StObject {
     
-    var isNowOnline: Boolean = js.native
+    var isNowOnline: Boolean
   }
   object NetworkStateUpdatedEvent {
     

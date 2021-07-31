@@ -4,47 +4,45 @@ import typings.azdata.mod.IConnectionProfile
 import typings.vscode.mod.ViewColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotebookShowOptions extends StObject {
   
   /**
     * Optional profile indicating the initial connection to use for this editor
     */
-  var connectionProfile: js.UndefOr[IConnectionProfile] = js.native
+  var connectionProfile: js.UndefOr[IConnectionProfile] = js.undefined
   
   /**
     * Default kernel for notebook
     */
-  var defaultKernel: js.UndefOr[IKernelSpec] = js.native
+  var defaultKernel: js.UndefOr[IKernelSpec] = js.undefined
   
   /**
     * Optional content used to give an initial notebook state
     */
-  var initialContent: js.UndefOr[INotebookContents | String] = js.native
+  var initialContent: js.UndefOr[INotebookContents | String] = js.undefined
   
   /**
     * A optional boolean value indicating the dirty state after the initial content is loaded, default value is true
     */
-  var initialDirtyState: js.UndefOr[Boolean] = js.native
+  var initialDirtyState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional flag that when `true` will stop the [editor](#NotebookEditor) from taking focus.
     */
-  var preserveFocus: js.UndefOr[Boolean] = js.native
+  var preserveFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional flag that controls if an [editor](#NotebookEditor)-tab will be replaced
     * with the next editor or if it will be kept.
     */
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * An optional string indicating which notebook provider to initially use
     */
-  var providerId: js.UndefOr[String] = js.native
+  var providerId: js.UndefOr[String] = js.undefined
   
   /**
     * An optional view column in which the [editor](#NotebookEditor) should be shown.
@@ -53,7 +51,7 @@ trait NotebookShowOptions extends StObject {
     * not adjusted. Use [`ViewColumn.Beside`](#ViewColumn.Beside) to open the
     * editor to the side of the currently active one.
     */
-  var viewColumn: js.UndefOr[ViewColumn] = js.native
+  var viewColumn: js.UndefOr[ViewColumn] = js.undefined
 }
 object NotebookShowOptions {
   

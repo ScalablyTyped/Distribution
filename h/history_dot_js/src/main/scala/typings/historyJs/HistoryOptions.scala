@@ -2,31 +2,29 @@ package typings.historyJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HistoryOptions extends StObject {
   
-  var busyDelay: js.UndefOr[Double] = js.native
+  var busyDelay: js.UndefOr[Double] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var delayInit: js.UndefOr[Double] = js.native
+  var delayInit: js.UndefOr[Double] = js.undefined
   
-  var disableSuid: js.UndefOr[Boolean] = js.native
+  var disableSuid: js.UndefOr[Boolean] = js.undefined
   
-  var doubleCheckInterval: js.UndefOr[Double] = js.native
+  var doubleCheckInterval: js.UndefOr[Double] = js.undefined
   
-  var hashChangeInterval: js.UndefOr[Double] = js.native
+  var hashChangeInterval: js.UndefOr[Double] = js.undefined
   
-  var html4Mode: js.UndefOr[Boolean] = js.native
+  var html4Mode: js.UndefOr[Boolean] = js.undefined
   
-  var initialTitle: js.UndefOr[String] = js.native
+  var initialTitle: js.UndefOr[String] = js.undefined
   
-  var safariPollInterval: js.UndefOr[Double] = js.native
+  var safariPollInterval: js.UndefOr[Double] = js.undefined
   
-  var storeInterval: js.UndefOr[Double] = js.native
+  var storeInterval: js.UndefOr[Double] = js.undefined
 }
 object HistoryOptions {
   

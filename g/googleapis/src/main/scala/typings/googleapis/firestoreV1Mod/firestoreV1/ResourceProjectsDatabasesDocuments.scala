@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/firestore/v1", "firestore_v1.Resource$Projects$Databases$Documents")
@@ -30,7 +29,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def batchGet(): GaxiosPromise[SchemaBatchGetDocumentsResponse] = js.native
   def batchGet(callback: BodyResponseCallback[SchemaBatchGetDocumentsResponse]): Unit = js.native
-  def batchGet(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBatchGetDocumentsResponse] = js.native
+  def batchGet(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBatchGetDocumentsResponse] = js.native
   def batchGet(params: ParamsResourceProjectsDatabasesDocumentsBatchget): GaxiosPromise[SchemaBatchGetDocumentsResponse] = js.native
   def batchGet(
     params: ParamsResourceProjectsDatabasesDocumentsBatchget,
@@ -63,7 +62,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def beginTransaction(): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(callback: BodyResponseCallback[SchemaBeginTransactionResponse]): Unit = js.native
-  def beginTransaction(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
+  def beginTransaction(params: Unit, options: MethodOptions): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(params: ParamsResourceProjectsDatabasesDocumentsBegintransaction): GaxiosPromise[SchemaBeginTransactionResponse] = js.native
   def beginTransaction(
     params: ParamsResourceProjectsDatabasesDocumentsBegintransaction,
@@ -96,7 +95,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def commit(): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(callback: BodyResponseCallback[SchemaCommitResponse]): Unit = js.native
-  def commit(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCommitResponse] = js.native
+  def commit(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(params: ParamsResourceProjectsDatabasesDocumentsCommit): GaxiosPromise[SchemaCommitResponse] = js.native
   def commit(
     params: ParamsResourceProjectsDatabasesDocumentsCommit,
@@ -134,7 +133,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def createDocument(): GaxiosPromise[SchemaDocument] = js.native
   def createDocument(callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
-  def createDocument(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
+  def createDocument(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
   def createDocument(params: ParamsResourceProjectsDatabasesDocumentsCreatedocument): GaxiosPromise[SchemaDocument] = js.native
   def createDocument(
     params: ParamsResourceProjectsDatabasesDocumentsCreatedocument,
@@ -168,7 +167,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsDatabasesDocumentsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsDatabasesDocumentsDelete,
@@ -203,7 +202,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaDocument] = js.native
   def get(callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
   def get(params: ParamsResourceProjectsDatabasesDocumentsGet): GaxiosPromise[SchemaDocument] = js.native
   def get(
     params: ParamsResourceProjectsDatabasesDocumentsGet,
@@ -243,7 +242,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListDocumentsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListDocumentsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListDocumentsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListDocumentsResponse] = js.native
   def list(params: ParamsResourceProjectsDatabasesDocumentsList): GaxiosPromise[SchemaListDocumentsResponse] = js.native
   def list(
     params: ParamsResourceProjectsDatabasesDocumentsList,
@@ -276,7 +275,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def listCollectionIds(): GaxiosPromise[SchemaListCollectionIdsResponse] = js.native
   def listCollectionIds(callback: BodyResponseCallback[SchemaListCollectionIdsResponse]): Unit = js.native
-  def listCollectionIds(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListCollectionIdsResponse] = js.native
+  def listCollectionIds(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListCollectionIdsResponse] = js.native
   def listCollectionIds(params: ParamsResourceProjectsDatabasesDocumentsListcollectionids): GaxiosPromise[SchemaListCollectionIdsResponse] = js.native
   def listCollectionIds(
     params: ParamsResourceProjectsDatabasesDocumentsListcollectionids,
@@ -309,7 +308,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def listen(): GaxiosPromise[SchemaListenResponse] = js.native
   def listen(callback: BodyResponseCallback[SchemaListenResponse]): Unit = js.native
-  def listen(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListenResponse] = js.native
+  def listen(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListenResponse] = js.native
   def listen(params: ParamsResourceProjectsDatabasesDocumentsListen): GaxiosPromise[SchemaListenResponse] = js.native
   def listen(
     params: ParamsResourceProjectsDatabasesDocumentsListen,
@@ -346,7 +345,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaDocument] = js.native
   def patch(callback: BodyResponseCallback[SchemaDocument]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDocument] = js.native
   def patch(params: ParamsResourceProjectsDatabasesDocumentsPatch): GaxiosPromise[SchemaDocument] = js.native
   def patch(
     params: ParamsResourceProjectsDatabasesDocumentsPatch,
@@ -379,7 +378,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def rollback(): GaxiosPromise[SchemaEmpty] = js.native
   def rollback(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def rollback(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def rollback(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def rollback(params: ParamsResourceProjectsDatabasesDocumentsRollback): GaxiosPromise[SchemaEmpty] = js.native
   def rollback(
     params: ParamsResourceProjectsDatabasesDocumentsRollback,
@@ -412,7 +411,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def runQuery(): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(callback: BodyResponseCallback[SchemaRunQueryResponse]): Unit = js.native
-  def runQuery(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRunQueryResponse] = js.native
+  def runQuery(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(params: ParamsResourceProjectsDatabasesDocumentsRunquery): GaxiosPromise[SchemaRunQueryResponse] = js.native
   def runQuery(
     params: ParamsResourceProjectsDatabasesDocumentsRunquery,
@@ -445,7 +444,7 @@ class ResourceProjectsDatabasesDocuments protected () extends StObject {
     */
   def write(): GaxiosPromise[SchemaWriteResponse] = js.native
   def write(callback: BodyResponseCallback[SchemaWriteResponse]): Unit = js.native
-  def write(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWriteResponse] = js.native
+  def write(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWriteResponse] = js.native
   def write(params: ParamsResourceProjectsDatabasesDocumentsWrite): GaxiosPromise[SchemaWriteResponse] = js.native
   def write(
     params: ParamsResourceProjectsDatabasesDocumentsWrite,

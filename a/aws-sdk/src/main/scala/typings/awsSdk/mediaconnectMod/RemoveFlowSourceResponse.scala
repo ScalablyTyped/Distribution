@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveFlowSourceResponse extends StObject {
   
   /**
     * The ARN of the flow that is associated with the source you removed.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the source that was removed.
     */
-  var SourceArn: js.UndefOr[string] = js.native
+  var SourceArn: js.UndefOr[string] = js.undefined
 }
 object RemoveFlowSourceResponse {
   

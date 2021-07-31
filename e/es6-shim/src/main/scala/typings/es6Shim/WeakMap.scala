@@ -2,19 +2,17 @@ package typings.es6Shim
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WeakMap[K /* <: js.Object */, V] extends StObject {
   
-  def delete(key: K): Boolean = js.native
+  def delete(key: K): Boolean
   
-  def get(key: K): js.UndefOr[V] = js.native
+  def get(key: K): js.UndefOr[V]
   
-  def has(key: K): Boolean = js.native
+  def has(key: K): Boolean
   
-  def set(key: K, value: V): WeakMap[K, V] = js.native
+  def set(key: K, value: V): WeakMap[K, V]
 }
 object WeakMap {
   
@@ -25,7 +23,7 @@ object WeakMap {
   }
   
   @scala.inline
-  implicit class WeakMapMutableBuilder[Self <: WeakMap[_, _], K /* <: js.Object */, V] (val x: Self with (WeakMap[K, V])) extends AnyVal {
+  implicit class WeakMapMutableBuilder[Self <: WeakMap[?, ?], K /* <: js.Object */, V] (val x: Self & (WeakMap[K, V])) extends AnyVal {
     
     @scala.inline
     def setDelete(value: K => Boolean): Self = StObject.set(x, "delete", js.Any.fromFunction1(value))

@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ViewType extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ViewType with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.devexpressWeb.ViewType & Double] = js.native
   
-  /* 1 */ val PrintLayout: typings.devexpressWeb.ViewType.PrintLayout with Double = js.native
+  /* 1 */ val PrintLayout: typings.devexpressWeb.ViewType.PrintLayout & Double = js.native
   
-  /* 0 */ val Simple: typings.devexpressWeb.ViewType.Simple with Double = js.native
+  /* 0 */ val Simple: typings.devexpressWeb.ViewType.Simple & Double = js.native
 }

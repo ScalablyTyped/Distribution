@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Media.Capture
 import typings.winrtUwp.Windows.Media.MediaProperties.VideoEncodingProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a set of input and output VideoEncodingProperties for a video stream */
-@js.native
 trait VideoStreamConfiguration extends StObject {
   
   /** Gets a VideoEncodingProperties object representing an video stream input configuration. */
-  var inputProperties: VideoEncodingProperties = js.native
+  var inputProperties: VideoEncodingProperties
   
   /** Gets a VideoEncodingProperties object representing an video stream output configuration. */
-  var outputProperties: VideoEncodingProperties = js.native
+  var outputProperties: VideoEncodingProperties
 }
 object VideoStreamConfiguration {
   

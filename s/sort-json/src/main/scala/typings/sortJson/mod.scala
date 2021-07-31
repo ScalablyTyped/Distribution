@@ -2,7 +2,6 @@ package typings.sortJson
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -12,12 +11,14 @@ object mod {
     * @param old An object to sort the keys of, if not object just returns whatever
     * was given
     */
+  @scala.inline
+  def apply[T](old: T): T = ^.asInstanceOf[js.Dynamic].apply(old.asInstanceOf[js.Any]).asInstanceOf[T]
+  @scala.inline
+  def apply[T](old: T, options: VisitOptions): T = (^.asInstanceOf[js.Dynamic].apply(old.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   @JSImport("sort-json", JSImport.Namespace)
   @js.native
-  def apply[T](old: T): T = js.native
-  @JSImport("sort-json", JSImport.Namespace)
-  @js.native
-  def apply[T](old: T, options: VisitOptions): T = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Sorts the JSON files with the `visit()` function and then overwrites the
@@ -26,31 +27,28 @@ object mod {
     * * String: Absolute path to JSON file to sort and overwrite
     * * Array: Absolute paths to JSON files to sort and overwrite
     */
-  @JSImport("sort-json", "overwrite")
-  @js.native
-  def overwrite(absolutePaths: String): js.Any = js.native
-  @JSImport("sort-json", "overwrite")
-  @js.native
-  def overwrite(absolutePaths: String, options: OverwriteOptions): js.Any = js.native
-  @JSImport("sort-json", "overwrite")
-  @js.native
-  def overwrite(absolutePaths: js.Array[String]): js.Any = js.native
-  @JSImport("sort-json", "overwrite")
-  @js.native
-  def overwrite(absolutePaths: js.Array[String], options: OverwriteOptions): js.Any = js.native
+  @scala.inline
+  def overwrite(absolutePaths: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def overwrite(absolutePaths: String, options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def overwrite(absolutePaths: js.Array[String]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def overwrite(absolutePaths: js.Array[String], options: OverwriteOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("overwrite")(absolutePaths.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
-  trait OverwriteOptions extends VisitOptions {
+  trait OverwriteOptions
+    extends StObject
+       with VisitOptions {
     
     /**
       * Formats the file content with an indentation of spaces. Use a number
       * greater then 0 for the value (default: detects the used indentation
       * of the file)
       */
-    var indentSize: js.UndefOr[Double] = js.native
+    var indentSize: js.UndefOr[Double] = js.undefined
     
     /** Default: `false` */
-    var noFinalNewLine: js.UndefOr[Boolean] = js.native
+    var noFinalNewLine: js.UndefOr[Boolean] = js.undefined
   }
   object OverwriteOptions {
     
@@ -77,26 +75,25 @@ object mod {
     }
   }
   
-  @js.native
   trait VisitOptions extends StObject {
     
     /**
       * Depth's level sorting keys on a multidimensional object
       * (default: `Infinity`)
       */
-    var depth: js.UndefOr[Double] = js.native
+    var depth: js.UndefOr[Double] = js.undefined
     
     /**
       * When sorting keys, converts all keys to lowercase so that
       * capitalization doesn't interfere with sort order (default: `false`)
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /** Default: `1` */
-    var level: js.UndefOr[Double] = js.native
+    var level: js.UndefOr[Double] = js.undefined
     
     /** Reverse the ordering z -> a (default: `false`) */
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
   }
   object VisitOptions {
     

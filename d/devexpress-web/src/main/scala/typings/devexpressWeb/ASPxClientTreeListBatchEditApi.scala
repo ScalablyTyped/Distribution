@@ -2,7 +2,6 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -87,9 +86,9 @@ trait ASPxClientTreeListBatchEditApi extends StObject {
     * @param columnFieldNameOrId A string value that specifies the column's field name or unique identifier (the column's WebColumnBase.Name property value).
     */
   def HasChanges(): Boolean = js.native
-  def HasChanges(nodeKey: js.UndefOr[scala.Nothing], columnFieldNameOrId: String): Boolean = js.native
   def HasChanges(nodeKey: String): Boolean = js.native
   def HasChanges(nodeKey: String, columnFieldNameOrId: String): Boolean = js.native
+  def HasChanges(nodeKey: Unit, columnFieldNameOrId: String): Boolean = js.native
   
   /**
     * Indicates if the node with the specified key is deleted. true, if the node is deleted; otherwise, false.
@@ -136,19 +135,19 @@ trait ASPxClientTreeListBatchEditApi extends StObject {
     * @param cancelCellHighlighting true to cancel highlighting of the modified cell, false to highlight the modified cell.
     */
   def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: js.Any): Unit = js.native
-  def SetCellValue(
-    nodeKey: String,
-    columnFieldNameOrId: String,
-    value: js.Any,
-    displayText: js.UndefOr[scala.Nothing],
-    cancelCellHighlighting: Boolean
-  ): Unit = js.native
   def SetCellValue(nodeKey: String, columnFieldNameOrId: String, value: js.Any, displayText: String): Unit = js.native
   def SetCellValue(
     nodeKey: String,
     columnFieldNameOrId: String,
     value: js.Any,
     displayText: String,
+    cancelCellHighlighting: Boolean
+  ): Unit = js.native
+  def SetCellValue(
+    nodeKey: String,
+    columnFieldNameOrId: String,
+    value: js.Any,
+    displayText: Unit,
     cancelCellHighlighting: Boolean
   ): Unit = js.native
   

@@ -2,39 +2,37 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ProgressData...
   */
-@js.native
 trait IProgressData extends StObject {
   
   /**
     * This property is not used.
     */
-  var qCompleted: Double = js.native
+  var qCompleted: Double
   
   /**
     * Information about the error messages that occur during the script execution.
     */
-  var qErrorData: js.Array[IErrorData] = js.native
+  var qErrorData: js.Array[IErrorData]
   
   /**
     * This property is set to true if the request is finished.
     */
-  var qFinished: Boolean = js.native
+  var qFinished: Boolean
   
   /**
     * This property is not used.
     */
-  var qKB: Double = js.native
+  var qKB: Double
   
   /**
     * Request duration in milliseconds.
     */
-  var qMillisecs: Double = js.native
+  var qMillisecs: Double
   
   /**
     * A progress message is persistent when it informs about the start or end of a statement.
@@ -44,22 +42,22 @@ trait IProgressData extends StObject {
     * Contrarily to qPersistentProgressMessages, the content of the localized message string is displayed
     * (not its message code).
     */
-  var qPersistentProgress: String = js.native
+  var qPersistentProgress: String
   
   /**
     * List of persistent progress messages.
     */
-  var qPersistentProgressMessages: js.Array[IProgressMessage] = js.native
+  var qPersistentProgressMessages: js.Array[IProgressMessage]
   
   /**
     * This property is set to true if the request is started.
     */
-  var qStarted: Boolean = js.native
+  var qStarted: Boolean
   
   /**
     * This property is not used.
     */
-  var qTotal: Double = js.native
+  var qTotal: Double
   
   /**
     * A progress message is transient when it informs about the progress of an ongoing statement.
@@ -69,17 +67,17 @@ trait IProgressData extends StObject {
     * Contrarily to qTransientProgressMessage, the content of the localized message string is displayed
     * (not its message code).
     */
-  var qTransientProgress: String = js.native
+  var qTransientProgress: String
   
   /**
     * Transient progress message.
     */
-  var qTransientProgressMessage: IProgressMessage = js.native
+  var qTransientProgressMessage: IProgressMessage
   
   /**
     * This property is set to true when the engine pauses the script execution and waits for a user interaction.
     */
-  var qUserInteractionWanted: Boolean = js.native
+  var qUserInteractionWanted: Boolean
 }
 object IProgressData {
   

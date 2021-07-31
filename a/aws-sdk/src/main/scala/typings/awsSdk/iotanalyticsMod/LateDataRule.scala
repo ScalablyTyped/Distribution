@@ -2,21 +2,19 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LateDataRule extends StObject {
   
   /**
     * The information needed to configure the late data rule.
     */
-  var ruleConfiguration: LateDataRuleConfiguration = js.native
+  var ruleConfiguration: LateDataRuleConfiguration
   
   /**
     * The name of the late data rule.
     */
-  var ruleName: js.UndefOr[LateDataRuleName] = js.native
+  var ruleName: js.UndefOr[LateDataRuleName] = js.undefined
 }
 object LateDataRule {
   

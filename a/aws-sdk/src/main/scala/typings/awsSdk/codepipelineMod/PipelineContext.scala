@@ -2,36 +2,34 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PipelineContext extends StObject {
   
   /**
     * The context of an action to a job worker in the stage of a pipeline.
     */
-  var action: js.UndefOr[ActionContext] = js.native
+  var action: js.UndefOr[ActionContext] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the pipeline.
     */
-  var pipelineArn: js.UndefOr[PipelineArn] = js.native
+  var pipelineArn: js.UndefOr[PipelineArn] = js.undefined
   
   /**
     * The execution ID of the pipeline.
     */
-  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.native
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
   
   /**
     * The name of the pipeline. This is a user-specified value. Pipeline names must be unique across all pipeline names under an Amazon Web Services account.
     */
-  var pipelineName: js.UndefOr[PipelineName] = js.native
+  var pipelineName: js.UndefOr[PipelineName] = js.undefined
   
   /**
     * The stage of the pipeline.
     */
-  var stage: js.UndefOr[StageContext] = js.native
+  var stage: js.UndefOr[StageContext] = js.undefined
 }
 object PipelineContext {
   

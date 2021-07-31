@@ -2,33 +2,31 @@ package typings.rcTree.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragOver extends StObject {
   
-  var checked: Boolean = js.native
+  var checked: Boolean
   
-  var dragOver: Boolean = js.native
+  var dragOver: Boolean
   
-  var dragOverGapBottom: Boolean = js.native
+  var dragOverGapBottom: Boolean
   
-  var dragOverGapTop: Boolean = js.native
+  var dragOverGapTop: Boolean
   
-  var eventKey: String | Double = js.native
+  var eventKey: String | Double
   
-  var expanded: Boolean = js.native
+  var expanded: Boolean
   
-  var halfChecked: Boolean = js.native
+  var halfChecked: Boolean
   
-  var loaded: Boolean = js.native
+  var loaded: Boolean
   
-  var loading: Boolean = js.native
+  var loading: Boolean
   
-  var pos: String = js.native
+  var pos: String
   
-  var selected: Boolean = js.native
+  var selected: Boolean
 }
 object DragOver {
   

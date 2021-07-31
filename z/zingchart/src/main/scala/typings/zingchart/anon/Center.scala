@@ -2,43 +2,41 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Center extends StObject {
   
-  var center: js.UndefOr[Size] = js.native
+  var center: js.UndefOr[Size] = js.undefined
   
-  var guide: js.UndefOr[Visible] = js.native
+  var guide: js.UndefOr[Visible] = js.undefined
   
-  var item: js.UndefOr[OffsetR] = js.native
+  var item: js.UndefOr[OffsetR] = js.undefined
   
   /**
     * Gauge Charts Only: To set custom labels that correspond to each tick mark on the scale. If there are more tick marks than labels,
     * the default scale values will be used for the remaining labels. ['A', 'B', 'C', 'D', 'E'] | ...
     */
-  var labels: js.UndefOr[js.Any] = js.native
+  var labels: js.UndefOr[js.Any] = js.undefined
   
-  var markers: js.UndefOr[js.Array[Label]] = js.native
+  var markers: js.UndefOr[js.Array[Label]] = js.undefined
   
-  var `minor-guide`: js.UndefOr[LinecolorLinestyle] = js.native
+  var `minor-guide`: js.UndefOr[LinecolorLinestyle] = js.undefined
   
-  var `minor-tick`: js.UndefOr[Placement] = js.native
+  var `minor-tick`: js.UndefOr[Placement] = js.undefined
   
   /**
     * Gauge Charts Only: To set the number of minor tick marks displayed between the major tick marks. 9 | 5 | 2 | ...
     */
-  var `minor-ticks`: js.UndefOr[Double] = js.native
+  var `minor-ticks`: js.UndefOr[Double] = js.undefined
   
-  var ring: js.UndefOr[BorderwidthItems] = js.native
+  var ring: js.UndefOr[BorderwidthItems] = js.undefined
   
-  var tick: js.UndefOr[Placement] = js.native
+  var tick: js.UndefOr[Placement] = js.undefined
   
   /**
     * Gauge Charts Only: To set the minimum, maximum, and step scale values. '0:10' | '0:25:5' | ...
     */
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
 }
 object Center {
   

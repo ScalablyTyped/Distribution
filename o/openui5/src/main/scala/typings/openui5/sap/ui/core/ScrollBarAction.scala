@@ -2,7 +2,6 @@ package typings.openui5.sap.ui.core
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait ScrollBarAction extends StObject
 object ScrollBarAction extends StObject {
   
   @js.native
-  sealed trait Drag extends ScrollBarAction
+  sealed trait Drag
+    extends StObject
+       with ScrollBarAction
   
   @js.native
-  sealed trait MouseWheel extends ScrollBarAction
+  sealed trait MouseWheel
+    extends StObject
+       with ScrollBarAction
   
   @js.native
-  sealed trait Page extends ScrollBarAction
+  sealed trait Page
+    extends StObject
+       with ScrollBarAction
   
   @js.native
-  sealed trait Step extends ScrollBarAction
+  sealed trait Step
+    extends StObject
+       with ScrollBarAction
 }

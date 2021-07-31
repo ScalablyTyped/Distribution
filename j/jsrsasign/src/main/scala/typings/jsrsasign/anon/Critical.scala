@@ -4,19 +4,17 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Critical extends StObject {
   
-  var critical: js.UndefOr[Boolean] = js.native
+  var critical: js.UndefOr[Boolean] = js.undefined
   
-  var issuer: StringParam = js.native
+  var issuer: StringParam
   
-  var kid: HexParam = js.native
+  var kid: HexParam
   
-  var sn: HexParam = js.native
+  var sn: HexParam
 }
 object Critical {
   

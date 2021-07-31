@@ -3,19 +3,17 @@ package typings.nodeRedEditorClient.anon
 import typings.nodeRedEditorClient.nodeRedEditorClientStrings.compact
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisposeOnClose extends StObject {
   
-  var disposeOnClose: js.UndefOr[Boolean] = js.native
+  var disposeOnClose: js.UndefOr[Boolean] = js.undefined
   
-  var onclose: js.UndefOr[js.Function1[/* v */ Boolean, Unit]] = js.native
+  var onclose: js.UndefOr[js.Function1[/* v */ Boolean, Unit]] = js.undefined
   
-  var options: js.UndefOr[js.Array[Onselect]] = js.native
+  var options: js.UndefOr[js.Array[Onselect]] = js.undefined
   
-  var style: js.UndefOr[compact] = js.native
+  var style: js.UndefOr[compact] = js.undefined
 }
 object DisposeOnClose {
   

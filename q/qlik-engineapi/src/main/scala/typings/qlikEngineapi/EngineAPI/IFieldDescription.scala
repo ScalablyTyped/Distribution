@@ -2,13 +2,11 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * FieldDescription...
   */
-@js.native
 trait IFieldDescription extends StObject {
   
   /**
@@ -17,91 +15,91 @@ trait IFieldDescription extends StObject {
     * performed in that field.
     * >> The default value is false.
     */
-  var qAlwaysOneSelected: js.UndefOr[Boolean] = js.native
+  var qAlwaysOneSelected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true a logical AND (instead of a logical OR) is used when making selections in a field.
     * >> The default value is false.
     */
-  var qAndMode: js.UndefOr[Boolean] = js.native
+  var qAndMode: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Number of distinct field values.
     */
-  var qCardinal: Double = js.native
+  var qCardinal: Double
   
   /**
     * Field comment.
     */
-  var qComment: String = js.native
+  var qComment: String
   
   /**
     * If set to true, only distinct field values are shown.
     * >> The default value is false.
     */
-  var qDistinctOnly: js.UndefOr[Boolean] = js.native
+  var qDistinctOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Internal number of the field.
     */
-  var qInternalNumber: Double = js.native
+  var qInternalNumber: Double
   
   /**
     * If set to true, it means that the field is a field on the fly.
     * >> The default value is false.
     */
-  var qIsDefinitionOnly: js.UndefOr[Boolean] = js.native
+  var qIsDefinitionOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it means that the field is hidden.
     * >> The default value is false.
     */
-  var qIsHidden: js.UndefOr[Boolean] = js.native
+  var qIsHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it means that the field is locked.
     * >> The default value is false.
     */
-  var qIsLocked: js.UndefOr[Boolean] = js.native
+  var qIsLocked: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is set to true if the value is a numeric.
     * >> The default value is false.
     */
-  var qIsNumeric: js.UndefOr[Boolean] = js.native
+  var qIsNumeric: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it means that the field is a semantic.
     * >> The default value is false.
     */
-  var qIsSemantic: js.UndefOr[Boolean] = js.native
+  var qIsSemantic: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set to true, it means that the field is a system field.
     * >> The default value is false.
     */
-  var qIsSystem: js.UndefOr[Boolean] = js.native
+  var qIsSystem: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Name of the field.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * List of table names.
     */
-  var qSrcTables: js.Array[String] = js.native
+  var qSrcTables: js.Array[String]
   
   /**
     * Gives information on a field. For example, it can return the type of the field.
     * Examples: key, text, ASCII
     */
-  var qTags: js.Array[String] = js.native
+  var qTags: js.Array[String]
   
   /**
     * Total number of field values.
     */
-  var qTotalCount: Double = js.native
+  var qTotalCount: Double
 }
 object IFieldDescription {
   

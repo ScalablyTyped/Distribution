@@ -5,14 +5,19 @@ import typings.std.Response
 import typings.tensorflowTfjsCore.platformMod.Platform
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object platformNodeMod {
   
+  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "PlatformNode")
   @js.native
-  class PlatformNode () extends Platform {
+  class PlatformNode ()
+    extends StObject
+       with Platform {
     
     var textEncoder: js.Any = js.native
     
@@ -21,22 +26,22 @@ object platformNodeMod {
   
   object getNodeFetch {
     
-    @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "getNodeFetch.importFetch")
+    @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "getNodeFetch")
     @js.native
-    def importFetch(): js.Any = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def importFetch(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("importFetch")().asInstanceOf[js.Any]
   }
   
-  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "getSystemFetch")
-  @js.native
-  def getSystemFetch(): FetchFn = js.native
+  @scala.inline
+  def getSystemFetch(): FetchFn = ^.asInstanceOf[js.Dynamic].applyDynamic("getSystemFetch")().asInstanceOf[FetchFn]
   
-  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "resetSystemFetch")
-  @js.native
-  def resetSystemFetch(): Unit = js.native
+  @scala.inline
+  def resetSystemFetch(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("resetSystemFetch")().asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/platforms/platform_node", "setSystemFetch")
-  @js.native
-  def setSystemFetch(fetchFn: FetchFn): Unit = js.native
+  @scala.inline
+  def setSystemFetch(fetchFn: FetchFn): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setSystemFetch")(fetchFn.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type FetchFn = js.Function2[/* url */ String, /* init */ js.UndefOr[RequestInit], js.Promise[Response]]
 }

@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object actionTargetMod {
@@ -48,6 +47,10 @@ object actionTargetMod {
   /* static members */
   object ActionTarget {
     
+    @JSImport("@pulumi/aws/securityhub/actionTarget", "ActionTarget")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ActionTarget resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,45 +60,39 @@ object actionTargetMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/securityhub/actionTarget", "ActionTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ActionTarget = js.native
-    @JSImport("@pulumi/aws/securityhub/actionTarget", "ActionTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ActionTarget = js.native
-    @JSImport("@pulumi/aws/securityhub/actionTarget", "ActionTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ActionTargetState): ActionTarget = js.native
-    @JSImport("@pulumi/aws/securityhub/actionTarget", "ActionTarget.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ActionTargetState, opts: CustomResourceOptions): ActionTarget = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ActionTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ActionTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ActionTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ActionTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ActionTargetState): ActionTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ActionTarget]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ActionTargetState, opts: CustomResourceOptions): ActionTarget = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ActionTarget]
     
     /**
       * Returns true if the given object is an instance of ActionTarget.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/securityhub/actionTarget", "ActionTarget.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/actionTarget.ActionTarget */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/securityhub/actionTarget.ActionTarget */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/securityhub/actionTarget.ActionTarget */ Boolean]
   }
   
-  @js.native
   trait ActionTargetArgs extends StObject {
     
     /**
       * The name of the custom action target.
       */
-    val description: Input[String] = js.native
+    val description: Input[String]
     
     /**
       * The ID for the custom action target.
       */
-    val identifier: Input[String] = js.native
+    val identifier: Input[String]
     
     /**
       * The description for the custom action target.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object ActionTargetArgs {
     
@@ -122,28 +119,27 @@ object actionTargetMod {
     }
   }
   
-  @js.native
   trait ActionTargetState extends StObject {
     
     /**
       * Amazon Resource Name (ARN) of the Security Hub custom action target.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the custom action target.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID for the custom action target.
       */
-    val identifier: js.UndefOr[Input[String]] = js.native
+    val identifier: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description for the custom action target.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
   }
   object ActionTargetState {
     

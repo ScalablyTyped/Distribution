@@ -4,7 +4,6 @@ import typings.fsJetpack.typesMod.Checksum
 import typings.fsJetpack.typesMod.ExistsResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsJetpackStrings {
@@ -15,12 +14,16 @@ object fsJetpackStrings {
   def buffer: buffer = "buffer".asInstanceOf[buffer]
   
   @js.native
-  sealed trait dir extends ExistsResult
+  sealed trait dir
+    extends StObject
+       with ExistsResult
   @scala.inline
   def dir: dir = "dir".asInstanceOf[dir]
   
   @js.native
-  sealed trait file extends ExistsResult
+  sealed trait file
+    extends StObject
+       with ExistsResult
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   
@@ -40,12 +43,16 @@ object fsJetpackStrings {
   def jsonWithDates: jsonWithDates = "jsonWithDates".asInstanceOf[jsonWithDates]
   
   @js.native
-  sealed trait md5 extends Checksum
+  sealed trait md5
+    extends StObject
+       with Checksum
   @scala.inline
   def md5: md5 = "md5".asInstanceOf[md5]
   
   @js.native
-  sealed trait other extends ExistsResult
+  sealed trait other
+    extends StObject
+       with ExistsResult
   @scala.inline
   def other: other = "other".asInstanceOf[other]
   
@@ -55,17 +62,23 @@ object fsJetpackStrings {
   def report: report = "report".asInstanceOf[report]
   
   @js.native
-  sealed trait sha1 extends Checksum
+  sealed trait sha1
+    extends StObject
+       with Checksum
   @scala.inline
   def sha1: sha1 = "sha1".asInstanceOf[sha1]
   
   @js.native
-  sealed trait sha256 extends Checksum
+  sealed trait sha256
+    extends StObject
+       with Checksum
   @scala.inline
   def sha256: sha256 = "sha256".asInstanceOf[sha256]
   
   @js.native
-  sealed trait sha512 extends Checksum
+  sealed trait sha512
+    extends StObject
+       with Checksum
   @scala.inline
   def sha512: sha512 = "sha512".asInstanceOf[sha512]
   

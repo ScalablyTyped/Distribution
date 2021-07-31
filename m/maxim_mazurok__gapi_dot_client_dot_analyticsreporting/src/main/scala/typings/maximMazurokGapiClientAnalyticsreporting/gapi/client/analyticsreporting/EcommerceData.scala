@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EcommerceData extends StObject {
   
   /** Action associated with this e-commerce action. */
-  var actionType: js.UndefOr[String] = js.native
+  var actionType: js.UndefOr[String] = js.undefined
   
   /** The type of this e-commerce activity. */
-  var ecommerceType: js.UndefOr[String] = js.native
+  var ecommerceType: js.UndefOr[String] = js.undefined
   
   /** Details of the products in this transaction. */
-  var products: js.UndefOr[js.Array[ProductData]] = js.native
+  var products: js.UndefOr[js.Array[ProductData]] = js.undefined
   
   /** Transaction details of this e-commerce action. */
-  var transaction: js.UndefOr[TransactionData] = js.native
+  var transaction: js.UndefOr[TransactionData] = js.undefined
 }
 object EcommerceData {
   

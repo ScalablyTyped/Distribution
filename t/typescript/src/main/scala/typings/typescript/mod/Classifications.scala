@@ -2,15 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Classifications extends StObject {
   
-  var endOfLineState: EndOfLineState = js.native
+  var endOfLineState: EndOfLineState
   
-  var spans: js.Array[Double] = js.native
+  var spans: js.Array[Double]
 }
 object Classifications {
   

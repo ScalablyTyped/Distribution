@@ -2,27 +2,25 @@ package typings.typeorm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HasCitextColumns extends StObject {
   
-  var hasCitextColumns: Boolean = js.native
+  var hasCitextColumns: Boolean
   
-  var hasCubeColumns: Boolean = js.native
+  var hasCubeColumns: Boolean
   
-  var hasExclusionConstraints: Boolean = js.native
+  var hasExclusionConstraints: Boolean
   
-  var hasExtensions: Boolean = js.native
+  var hasExtensions: Boolean
   
-  var hasGeometryColumns: Boolean = js.native
+  var hasGeometryColumns: Boolean
   
-  var hasHstoreColumns: Boolean = js.native
+  var hasHstoreColumns: Boolean
   
-  var hasLtreeColumns: Boolean = js.native
+  var hasLtreeColumns: Boolean
   
-  var hasUuidColumns: Boolean = js.native
+  var hasUuidColumns: Boolean
 }
 object HasCitextColumns {
   

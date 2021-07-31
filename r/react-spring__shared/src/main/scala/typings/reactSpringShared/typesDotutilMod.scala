@@ -5,7 +5,6 @@ import typings.allocTypes.mod.Omit
 import typings.allocTypes.mod.Remap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesDotutilMod {
@@ -22,6 +21,6 @@ object typesDotutilMod {
   type Constrain[T, U] = U | T
   
   type Merge[A, B] = Remap[
-    typings.reactSpringShared.reactSpringSharedStrings.Merge with TopLevel[js.Any] with (Omit[B, /* keyof A */ String])
+    typings.reactSpringShared.reactSpringSharedStrings.Merge & TopLevel[js.Any] & (Omit[B, /* keyof A */ String])
   ]
 }

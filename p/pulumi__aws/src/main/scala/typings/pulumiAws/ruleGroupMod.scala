@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ruleGroupMod {
@@ -75,6 +74,10 @@ object ruleGroupMod {
   /* static members */
   object RuleGroup {
     
+    @JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing RuleGroup resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -84,65 +87,59 @@ object ruleGroupMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID]): RuleGroup = js.native
-    @JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): RuleGroup = js.native
-    @JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState): RuleGroup = js.native
-    @JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): RuleGroup = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: RuleGroupState, opts: CustomResourceOptions): RuleGroup = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[RuleGroup]
     
     /**
       * Returns true if the given object is an instance of RuleGroup.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/networkfirewall/ruleGroup", "RuleGroup.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/ruleGroup.RuleGroup */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/networkfirewall/ruleGroup.RuleGroup */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/networkfirewall/ruleGroup.RuleGroup */ Boolean]
   }
   
-  @js.native
   trait RuleGroupArgs extends StObject {
     
     /**
       * The maximum number of operating resources that this rule group can use. For a stateless rule group, the capacity required is the sum of the capacity requirements of the individual rules. For a stateful rule group, the minimum capacity required is the number of individual rules.
       */
-    val capacity: Input[Double] = js.native
+    val capacity: Input[Double]
     
     /**
       * A friendly description of the rule group.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the rule group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block that defines the rule group rules. Required unless `rules` is specified. See Rule Group below for details.
       */
-    val ruleGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.networkfirewall.RuleGroupRuleGroup]] = js.native
+    val ruleGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.networkfirewall.RuleGroupRuleGroup]] = js.undefined
     
     /**
       * The stateful rule group rules specifications in Suricata file format, with one rule per line. Use this to import your existing Suricata compatible rule groups. Required unless `ruleGroup` is specified.
       */
-    val rules: js.UndefOr[Input[String]] = js.native
+    val rules: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether the rule group is stateless (containing stateless rules) or stateful (containing stateful rules). Valid values include: `STATEFUL` or `STATELESS`.
       */
-    val `type`: Input[String] = js.native
+    val `type`: Input[String]
   }
   object RuleGroupArgs {
     
@@ -194,53 +191,52 @@ object ruleGroupMod {
     }
   }
   
-  @js.native
   trait RuleGroupState extends StObject {
     
     /**
       * The Amazon Resource Name (ARN) that identifies the rule group.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum number of operating resources that this rule group can use. For a stateless rule group, the capacity required is the sum of the capacity requirements of the individual rules. For a stateful rule group, the minimum capacity required is the number of individual rules.
       */
-    val capacity: js.UndefOr[Input[Double]] = js.native
+    val capacity: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * A friendly description of the rule group.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name of the rule group.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A configuration block that defines the rule group rules. Required unless `rules` is specified. See Rule Group below for details.
       */
-    val ruleGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.networkfirewall.RuleGroupRuleGroup]] = js.native
+    val ruleGroup: js.UndefOr[Input[typings.pulumiAws.inputMod.networkfirewall.RuleGroupRuleGroup]] = js.undefined
     
     /**
       * The stateful rule group rules specifications in Suricata file format, with one rule per line. Use this to import your existing Suricata compatible rule groups. Required unless `ruleGroup` is specified.
       */
-    val rules: js.UndefOr[Input[String]] = js.native
+    val rules: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of key:value pairs to associate with the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Whether the rule group is stateless (containing stateless rules) or stateful (containing stateful rules). Valid values include: `STATEFUL` or `STATELESS`.
       */
-    val `type`: js.UndefOr[Input[String]] = js.native
+    val `type`: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A string token used when updating the rule group.
       */
-    val updateToken: js.UndefOr[Input[String]] = js.native
+    val updateToken: js.UndefOr[Input[String]] = js.undefined
   }
   object RuleGroupState {
     

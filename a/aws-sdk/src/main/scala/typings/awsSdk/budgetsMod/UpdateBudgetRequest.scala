@@ -2,21 +2,19 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBudgetRequest extends StObject {
   
   /**
     * The accountId that is associated with the budget that you want to update.
     */
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     * The budget that you want to update your budget to.
     */
-  var NewBudget: Budget = js.native
+  var NewBudget: Budget
 }
 object UpdateBudgetRequest {
   

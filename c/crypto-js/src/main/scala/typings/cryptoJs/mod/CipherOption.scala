@@ -3,22 +3,21 @@ package typings.cryptoJs.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Configuration options.
   */
-@js.native
 trait CipherOption
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var format: js.UndefOr[Format_] = js.native
+  var format: js.UndefOr[Format_] = js.undefined
   
   /**
     * The IV to use for this operation.
     */
-  var iv: js.UndefOr[WordArray] = js.native
+  var iv: js.UndefOr[WordArray] = js.undefined
 }
 object CipherOption {
   

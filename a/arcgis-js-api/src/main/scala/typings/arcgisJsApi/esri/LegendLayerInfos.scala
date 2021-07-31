@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LegendLayerInfos extends Object {
+trait LegendLayerInfos
+  extends StObject
+     with Object {
   
   /**
     * List of sublayer ids that will not be displayed in the legend even if they are visible in the map.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
     */
-  var hideLayers: js.Array[Double] = js.native
+  var hideLayers: js.Array[Double]
   
   /**
     * A layer to display in the legend.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
     */
-  var layer: Layer = js.native
+  var layer: Layer
   
   /**
     * Specifies a title for the layer to display above its symbols and descriptions.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html#layerInfos)
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object LegendLayerInfos {
   

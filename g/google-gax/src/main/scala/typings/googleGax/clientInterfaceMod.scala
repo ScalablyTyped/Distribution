@@ -6,13 +6,12 @@ import typings.googleGax.descriptorMod.LongrunningDescriptor
 import typings.googleGax.descriptorMod.PageDescriptor
 import typings.googleGax.descriptorMod.StreamDescriptor
 import typings.googleGax.gaxMod.ClientConfig
-import typings.googleGax.grpcMod.ClientStubOptions
 import typings.googleGax.grpcMod.GrpcClientOptions
 import typings.googleGax.longrunningMod.Operation_
+import typings.grpcGrpcJs.mod.ChannelCredentials
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clientInterfaceMod {
@@ -25,20 +24,38 @@ object clientInterfaceMod {
     Unit
   ]
   
-  @js.native
-  trait ClientOptions
-    extends GrpcClientOptions
-       with ClientStubOptions {
+  /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+  - scala.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - scala.Any because Inheritance from two classes. Inlined getClass, hashCode, eq, equals, toString, ne, notify, notifyAll, wait, wait, wait, clone, finalize
+  - js.Any because Inheritance from two classes. Inlined 
+  - scala.AnyRef because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined 
+  - js.Any because Inheritance from two classes. Inlined 
+  - org.scalablytyped.runtime.StObject because Inheritance from two classes. Inlined 
+  - js.Object because Inheritance from two classes. Inlined hasOwnProperty, propertyIsEnumerable, valueOf, toLocaleString, isPrototypeOf
+  - org.scalablytyped.runtime.StringDictionary because Inheritance from two classes. Inlined 
+  - typings.googleGax.grpcMod.ClientStubOptions because Inheritance from two classes. Inlined protocol, servicePath, port, sslCreds */ trait ClientOptions
+    extends StObject
+       with GrpcClientOptions {
     
-    var apiEndpoint: js.UndefOr[String] = js.native
+    var apiEndpoint: js.UndefOr[String] = js.undefined
     
-    var clientConfig: js.UndefOr[ClientConfig] = js.native
+    var clientConfig: js.UndefOr[ClientConfig] = js.undefined
     
-    var fallback: js.UndefOr[Boolean] = js.native
+    var fallback: js.UndefOr[Boolean] = js.undefined
     
-    var libName: js.UndefOr[String] = js.native
+    var libName: js.UndefOr[String] = js.undefined
     
-    var libVersion: js.UndefOr[String] = js.native
+    var libVersion: js.UndefOr[String] = js.undefined
+    
+    var port: js.UndefOr[Double] = js.undefined
+    
+    var protocol: js.UndefOr[String] = js.undefined
+    
+    var servicePath: js.UndefOr[String] = js.undefined
+    
+    var sslCreds: js.UndefOr[ChannelCredentials] = js.undefined
   }
   object ClientOptions {
     
@@ -80,19 +97,42 @@ object clientInterfaceMod {
       
       @scala.inline
       def setLibVersionUndefined: Self = StObject.set(x, "libVersion", js.undefined)
+      
+      @scala.inline
+      def setPort(value: Double): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+      
+      @scala.inline
+      def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+      
+      @scala.inline
+      def setServicePath(value: String): Self = StObject.set(x, "servicePath", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setServicePathUndefined: Self = StObject.set(x, "servicePath", js.undefined)
+      
+      @scala.inline
+      def setSslCreds(value: ChannelCredentials): Self = StObject.set(x, "sslCreds", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setSslCredsUndefined: Self = StObject.set(x, "sslCreds", js.undefined)
     }
   }
   
-  @js.native
   trait Descriptors extends StObject {
     
-    var batching: js.UndefOr[StringDictionary[BundleDescriptor]] = js.native
+    var batching: js.UndefOr[StringDictionary[BundleDescriptor]] = js.undefined
     
-    var longrunning: StringDictionary[LongrunningDescriptor] = js.native
+    var longrunning: StringDictionary[LongrunningDescriptor]
     
-    var page: StringDictionary[PageDescriptor] = js.native
+    var page: StringDictionary[PageDescriptor]
     
-    var stream: StringDictionary[StreamDescriptor] = js.native
+    var stream: StringDictionary[StreamDescriptor]
   }
   object Descriptors {
     
@@ -137,14 +177,13 @@ object clientInterfaceMod {
     Unit
   ]
   
-  @js.native
   trait PaginationResponse[RequestObject, ResponseObject, ResponseType] extends StObject {
     
-    var nextPageRequest: js.UndefOr[RequestObject] = js.native
+    var nextPageRequest: js.UndefOr[RequestObject] = js.undefined
     
-    var rawResponse: js.UndefOr[ResponseObject] = js.native
+    var rawResponse: js.UndefOr[ResponseObject] = js.undefined
     
-    var values: js.UndefOr[js.Array[ResponseType]] = js.native
+    var values: js.UndefOr[js.Array[ResponseType]] = js.undefined
   }
   object PaginationResponse {
     
@@ -155,7 +194,7 @@ object clientInterfaceMod {
     }
     
     @scala.inline
-    implicit class PaginationResponseMutableBuilder[Self <: PaginationResponse[_, _, _], RequestObject, ResponseObject, ResponseType] (val x: Self with (PaginationResponse[RequestObject, ResponseObject, ResponseType])) extends AnyVal {
+    implicit class PaginationResponseMutableBuilder[Self <: PaginationResponse[?, ?, ?], RequestObject, ResponseObject, ResponseType] (val x: Self & (PaginationResponse[RequestObject, ResponseObject, ResponseType])) extends AnyVal {
       
       @scala.inline
       def setNextPageRequest(value: RequestObject): Self = StObject.set(x, "nextPageRequest", value.asInstanceOf[js.Any])

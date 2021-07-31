@@ -2,18 +2,16 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TeamsRemoveProjectInOrgEndpoint extends StObject {
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
-  var project_id: Double = js.native
+  var project_id: Double
   
-  var team_slug: String = js.native
+  var team_slug: String
 }
 object TeamsRemoveProjectInOrgEndpoint {
   

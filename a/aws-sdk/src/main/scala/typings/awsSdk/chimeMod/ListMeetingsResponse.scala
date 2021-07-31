@@ -2,21 +2,19 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMeetingsResponse extends StObject {
   
   /**
     * The Amazon Chime SDK meeting information.
     */
-  var Meetings: js.UndefOr[MeetingList] = js.native
+  var Meetings: js.UndefOr[MeetingList] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object ListMeetingsResponse {
   

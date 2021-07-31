@@ -2,14 +2,14 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IPolygonOptions extends IPolylineOptions {
+trait IPolygonOptions
+  extends StObject
+     with IPolylineOptions {
   
   /** CSS string or Color object as the polygon's filling color. */
-  var fillColor: js.UndefOr[String | Color] = js.native
+  var fillColor: js.UndefOr[String | Color] = js.undefined
 }
 object IPolygonOptions {
   

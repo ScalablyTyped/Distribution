@@ -2,26 +2,24 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiConditionalSplitActivity extends StObject {
   
   /**
     * The paths for the activity, including the conditions for entering each path and the activity to perform for each path.
     */
-  var Branches: js.UndefOr[ListOfMultiConditionalBranch] = js.native
+  var Branches: js.UndefOr[ListOfMultiConditionalBranch] = js.undefined
   
   /**
     * The unique identifier for the activity to perform for participants who don't meet any of the conditions specified for other paths in the activity.
     */
-  var DefaultActivity: js.UndefOr[string] = js.native
+  var DefaultActivity: js.UndefOr[string] = js.undefined
   
   /**
     * The amount of time to wait or the date and time when Amazon Pinpoint determines whether the conditions are met.
     */
-  var EvaluationWaitTime: js.UndefOr[WaitTime] = js.native
+  var EvaluationWaitTime: js.UndefOr[WaitTime] = js.undefined
 }
 object MultiConditionalSplitActivity {
   

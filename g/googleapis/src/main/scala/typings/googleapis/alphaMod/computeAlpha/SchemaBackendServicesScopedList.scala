@@ -3,22 +3,20 @@ package typings.googleapis.alphaMod.computeAlpha
 import typings.googleapis.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaBackendServicesScopedList extends StObject {
   
   /**
     * A list of BackendServices contained in this scope.
     */
-  var backendServices: js.UndefOr[js.Array[SchemaBackendService]] = js.native
+  var backendServices: js.UndefOr[js.Array[SchemaBackendService]] = js.undefined
   
   /**
     * Informational warning which replaces the list of backend services when
     * the list is empty.
     */
-  var warning: js.UndefOr[Code] = js.native
+  var warning: js.UndefOr[Code] = js.undefined
 }
 object SchemaBackendServicesScopedList {
   

@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.xml.wrapper.XXMLElementWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -33,14 +32,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In some situations, the high level applications do not want to know anything about crypto devices (maybe it must, because the lower level do not know
   * what the key is). If it gives the key value, it can get EncryptedKey by setting the key template and key value target.
   */
-@js.native
-trait XXMLEncryptionTemplate extends XXMLSecurityTemplate {
+trait XXMLEncryptionTemplate
+  extends StObject
+     with XXMLSecurityTemplate {
   
   /** Get the target XML element, i.e. the element to be encrypted */
-  val Target: XXMLElementWrapper = js.native
+  val Target: XXMLElementWrapper
   
   /** Get the target XML element, i.e. the element to be encrypted */
-  def getTarget(): XXMLElementWrapper = js.native
+  def getTarget(): XXMLElementWrapper
 }
 object XXMLEncryptionTemplate {
   

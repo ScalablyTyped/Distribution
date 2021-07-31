@@ -27,7 +27,6 @@ import typings.nodegit.treeBuilderMod.Treebuilder
 import typings.nodegit.treeMod.Tree
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object repositoryMod {
@@ -175,12 +174,12 @@ object repositoryMod {
       * Fetches from all remotes. This is done in series due to deadlocking issues with fetching from many remotes that can happen.
       */
     def fetchAll(): js.Promise[Unit] = js.native
-    def fetchAll(fetchOptions: js.UndefOr[scala.Nothing], callback: js.Function): js.Promise[Unit] = js.native
+    def fetchAll(fetchOptions: Unit, callback: js.Function): js.Promise[Unit] = js.native
     def fetchAll(fetchOptions: FetchOptions): js.Promise[Unit] = js.native
     def fetchAll(fetchOptions: FetchOptions, callback: js.Function): js.Promise[Unit] = js.native
     
-    def fetchheadForeach(): js.Promise[_] = js.native
-    def fetchheadForeach(callback: js.Function): js.Promise[_] = js.native
+    def fetchheadForeach(): js.Promise[js.Any] = js.native
+    def fetchheadForeach(callback: js.Function): js.Promise[js.Any] = js.native
     
     def free(): Unit = js.native
     
@@ -343,29 +342,11 @@ object repositoryMod {
     def isShallow(): Double = js.native
     
     def mergeBranches(to: String, from: String): js.Promise[Oid] = js.native
-    def mergeBranches(
-      to: String,
-      from: String,
-      signature: js.UndefOr[scala.Nothing],
-      mergePreference: js.UndefOr[scala.Nothing],
-      mergeOptions: MergeOptions
-    ): js.Promise[Oid] = js.native
-    def mergeBranches(to: String, from: String, signature: js.UndefOr[scala.Nothing], mergePreference: PREFERENCE): js.Promise[Oid] = js.native
-    def mergeBranches(
-      to: String,
-      from: String,
-      signature: js.UndefOr[scala.Nothing],
-      mergePreference: PREFERENCE,
-      mergeOptions: MergeOptions
-    ): js.Promise[Oid] = js.native
+    def mergeBranches(to: String, from: String, signature: Unit, mergePreference: Unit, mergeOptions: MergeOptions): js.Promise[Oid] = js.native
+    def mergeBranches(to: String, from: String, signature: Unit, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
+    def mergeBranches(to: String, from: String, signature: Unit, mergePreference: PREFERENCE, mergeOptions: MergeOptions): js.Promise[Oid] = js.native
     def mergeBranches(to: String, from: String, signature: Signature): js.Promise[Oid] = js.native
-    def mergeBranches(
-      to: String,
-      from: String,
-      signature: Signature,
-      mergePreference: js.UndefOr[scala.Nothing],
-      mergeOptions: MergeOptions
-    ): js.Promise[Oid] = js.native
+    def mergeBranches(to: String, from: String, signature: Signature, mergePreference: Unit, mergeOptions: MergeOptions): js.Promise[Oid] = js.native
     def mergeBranches(to: String, from: String, signature: Signature, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
     def mergeBranches(
       to: String,
@@ -375,18 +356,12 @@ object repositoryMod {
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     def mergeBranches(to: String, from: Reference): js.Promise[Oid] = js.native
+    def mergeBranches(to: String, from: Reference, signature: Unit, mergePreference: Unit, mergeOptions: MergeOptions): js.Promise[Oid] = js.native
+    def mergeBranches(to: String, from: Reference, signature: Unit, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
     def mergeBranches(
       to: String,
       from: Reference,
-      signature: js.UndefOr[scala.Nothing],
-      mergePreference: js.UndefOr[scala.Nothing],
-      mergeOptions: MergeOptions
-    ): js.Promise[Oid] = js.native
-    def mergeBranches(to: String, from: Reference, signature: js.UndefOr[scala.Nothing], mergePreference: PREFERENCE): js.Promise[Oid] = js.native
-    def mergeBranches(
-      to: String,
-      from: Reference,
-      signature: js.UndefOr[scala.Nothing],
+      signature: Unit,
       mergePreference: PREFERENCE,
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
@@ -395,7 +370,7 @@ object repositoryMod {
       to: String,
       from: Reference,
       signature: Signature,
-      mergePreference: js.UndefOr[scala.Nothing],
+      mergePreference: Unit,
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     def mergeBranches(to: String, from: Reference, signature: Signature, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
@@ -407,18 +382,12 @@ object repositoryMod {
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     def mergeBranches(to: Reference, from: String): js.Promise[Oid] = js.native
+    def mergeBranches(to: Reference, from: String, signature: Unit, mergePreference: Unit, mergeOptions: MergeOptions): js.Promise[Oid] = js.native
+    def mergeBranches(to: Reference, from: String, signature: Unit, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
     def mergeBranches(
       to: Reference,
       from: String,
-      signature: js.UndefOr[scala.Nothing],
-      mergePreference: js.UndefOr[scala.Nothing],
-      mergeOptions: MergeOptions
-    ): js.Promise[Oid] = js.native
-    def mergeBranches(to: Reference, from: String, signature: js.UndefOr[scala.Nothing], mergePreference: PREFERENCE): js.Promise[Oid] = js.native
-    def mergeBranches(
-      to: Reference,
-      from: String,
-      signature: js.UndefOr[scala.Nothing],
+      signature: Unit,
       mergePreference: PREFERENCE,
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
@@ -427,7 +396,7 @@ object repositoryMod {
       to: Reference,
       from: String,
       signature: Signature,
-      mergePreference: js.UndefOr[scala.Nothing],
+      mergePreference: Unit,
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     def mergeBranches(to: Reference, from: String, signature: Signature, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
@@ -439,18 +408,12 @@ object repositoryMod {
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     def mergeBranches(to: Reference, from: Reference): js.Promise[Oid] = js.native
+    def mergeBranches(to: Reference, from: Reference, signature: Unit, mergePreference: Unit, mergeOptions: MergeOptions): js.Promise[Oid] = js.native
+    def mergeBranches(to: Reference, from: Reference, signature: Unit, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
     def mergeBranches(
       to: Reference,
       from: Reference,
-      signature: js.UndefOr[scala.Nothing],
-      mergePreference: js.UndefOr[scala.Nothing],
-      mergeOptions: MergeOptions
-    ): js.Promise[Oid] = js.native
-    def mergeBranches(to: Reference, from: Reference, signature: js.UndefOr[scala.Nothing], mergePreference: PREFERENCE): js.Promise[Oid] = js.native
-    def mergeBranches(
-      to: Reference,
-      from: Reference,
-      signature: js.UndefOr[scala.Nothing],
+      signature: Unit,
       mergePreference: PREFERENCE,
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
@@ -459,7 +422,7 @@ object repositoryMod {
       to: Reference,
       from: Reference,
       signature: Signature,
-      mergePreference: js.UndefOr[scala.Nothing],
+      mergePreference: Unit,
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     def mergeBranches(to: Reference, from: Reference, signature: Signature, mergePreference: PREFERENCE): js.Promise[Oid] = js.native
@@ -471,8 +434,8 @@ object repositoryMod {
       mergeOptions: MergeOptions
     ): js.Promise[Oid] = js.native
     
-    def mergeheadForeach(): js.Promise[_] = js.native
-    def mergeheadForeach(callback: js.Function): js.Promise[_] = js.native
+    def mergeheadForeach(): js.Promise[js.Any] = js.native
+    def mergeheadForeach(callback: js.Function): js.Promise[js.Any] = js.native
     
     def messageRemove(): Double = js.native
     
@@ -526,68 +489,60 @@ object repositoryMod {
   /* static members */
   object Repository {
     
+    @JSImport("nodegit/repository", "Repository")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Creates a branch with the passed in name pointing to the commit
       */
-    @JSImport("nodegit/repository", "Repository.discover")
-    @js.native
-    def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[Buf] = js.native
+    @scala.inline
+    def discover(startPath: String, acrossFs: Double, ceilingDirs: String): js.Promise[Buf] = (^.asInstanceOf[js.Dynamic].applyDynamic("discover")(startPath.asInstanceOf[js.Any], acrossFs.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Buf]]
     
-    @JSImport("nodegit/repository", "Repository.init")
-    @js.native
-    def init(path: String, isBare: Double): js.Promise[Repository] = js.native
+    @scala.inline
+    def init(path: String, isBare: Double): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(path.asInstanceOf[js.Any], isBare.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
-    @JSImport("nodegit/repository", "Repository.initExt")
-    @js.native
-    def initExt(repoPath: String): js.Promise[Repository] = js.native
-    @JSImport("nodegit/repository", "Repository.initExt")
-    @js.native
-    def initExt(repoPath: String, options: RepositoryInitOptions): js.Promise[Repository] = js.native
+    @scala.inline
+    def initExt(repoPath: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("initExt")(repoPath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    @scala.inline
+    def initExt(repoPath: String, options: RepositoryInitOptions): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("initExt")(repoPath.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
-    @JSImport("nodegit/repository", "Repository.open")
-    @js.native
-    def open(path: String): js.Promise[Repository] = js.native
+    @scala.inline
+    def open(path: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
     
-    @JSImport("nodegit/repository", "Repository.openBare")
-    @js.native
-    def openBare(barePath: String): js.Promise[Repository] = js.native
+    @scala.inline
+    def openBare(barePath: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openBare")(barePath.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
     
-    @JSImport("nodegit/repository", "Repository.openExt")
-    @js.native
-    def openExt(path: String): js.Promise[Repository] = js.native
-    @JSImport("nodegit/repository", "Repository.openExt")
-    @js.native
-    def openExt(path: String, flags: js.UndefOr[scala.Nothing], ceilingDirs: String): js.Promise[Repository] = js.native
-    @JSImport("nodegit/repository", "Repository.openExt")
-    @js.native
-    def openExt(path: String, flags: Double): js.Promise[Repository] = js.native
-    @JSImport("nodegit/repository", "Repository.openExt")
-    @js.native
-    def openExt(path: String, flags: Double, ceilingDirs: String): js.Promise[Repository] = js.native
+    @scala.inline
+    def openExt(path: String): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
+    @scala.inline
+    def openExt(path: String, flags: Double): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    @scala.inline
+    def openExt(path: String, flags: Double, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
+    @scala.inline
+    def openExt(path: String, flags: Unit, ceilingDirs: String): js.Promise[Repository] = (^.asInstanceOf[js.Dynamic].applyDynamic("openExt")(path.asInstanceOf[js.Any], flags.asInstanceOf[js.Any], ceilingDirs.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Repository]]
     
-    @JSImport("nodegit/repository", "Repository.wrapOdb")
-    @js.native
-    def wrapOdb(odb: Odb): js.Promise[Repository] = js.native
+    @scala.inline
+    def wrapOdb(odb: Odb): js.Promise[Repository] = ^.asInstanceOf[js.Dynamic].applyDynamic("wrapOdb")(odb.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Repository]]
   }
   
-  @js.native
   trait RepositoryInitOptions extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var flags: Double = js.native
+    var flags: Double
     
-    var initialHead: String = js.native
+    var initialHead: String
     
-    var mode: Double = js.native
+    var mode: Double
     
-    var originUrl: String = js.native
+    var originUrl: String
     
-    var templatePath: String = js.native
+    var templatePath: String
     
-    var version: Double = js.native
+    var version: Double
     
-    var workdirPath: String = js.native
+    var workdirPath: String
   }
   object RepositoryInitOptions {
     

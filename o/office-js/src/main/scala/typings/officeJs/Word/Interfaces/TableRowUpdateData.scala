@@ -13,11 +13,9 @@ import typings.officeJs.officeJsStrings.Top
 import typings.officeJs.officeJsStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the TableRow object, for use in `tableRow.set({ ... })`. */
-@js.native
 trait TableRowUpdateData extends StObject {
   
   /**
@@ -26,7 +24,7 @@ trait TableRowUpdateData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var font: js.UndefOr[FontUpdateData] = js.native
+  var font: js.UndefOr[FontUpdateData] = js.undefined
   
   /**
     *
@@ -34,7 +32,7 @@ trait TableRowUpdateData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.native
+  var horizontalAlignment: js.UndefOr[Alignment | Mixed | Unknown_ | Left | Centered | Right | Justified] = js.undefined
   
   /**
     *
@@ -42,7 +40,7 @@ trait TableRowUpdateData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var preferredHeight: js.UndefOr[Double] = js.native
+  var preferredHeight: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -50,7 +48,7 @@ trait TableRowUpdateData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var shadingColor: js.UndefOr[String] = js.native
+  var shadingColor: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -58,7 +56,7 @@ trait TableRowUpdateData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var values: js.UndefOr[js.Array[js.Array[String]]] = js.native
+  var values: js.UndefOr[js.Array[js.Array[String]]] = js.undefined
   
   /**
     *
@@ -66,7 +64,7 @@ trait TableRowUpdateData extends StObject {
     *
     * [Api set: WordApi 1.3]
     */
-  var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.native
+  var verticalAlignment: js.UndefOr[VerticalAlignment | Mixed | Top | Center | Bottom] = js.undefined
 }
 object TableRowUpdateData {
   

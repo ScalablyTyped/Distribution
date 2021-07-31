@@ -2,21 +2,19 @@ package typings.instagramPrivateApi.topicalExploreFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicalExploreFeedResponseIgtvFirstFrame extends StObject {
   
-  var estimated_scans_sizes: js.Array[Double] = js.native
+  var estimated_scans_sizes: js.Array[Double]
   
-  var height: Double = js.native
+  var height: Double
   
-  var scans_profile: String = js.native
+  var scans_profile: String
   
-  var url: String = js.native
+  var url: String
   
-  var width: Double = js.native
+  var width: Double
 }
 object TopicalExploreFeedResponseIgtvFirstFrame {
   

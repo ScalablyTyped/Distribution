@@ -2,34 +2,32 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The borders of the cell.
   */
-@js.native
 trait SchemaBorders extends StObject {
   
   /**
     * The bottom border of the cell.
     */
-  var bottom: js.UndefOr[SchemaBorder] = js.native
+  var bottom: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The left border of the cell.
     */
-  var left: js.UndefOr[SchemaBorder] = js.native
+  var left: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The right border of the cell.
     */
-  var right: js.UndefOr[SchemaBorder] = js.native
+  var right: js.UndefOr[SchemaBorder] = js.undefined
   
   /**
     * The top border of the cell.
     */
-  var top: js.UndefOr[SchemaBorder] = js.native
+  var top: js.UndefOr[SchemaBorder] = js.undefined
 }
 object SchemaBorders {
   

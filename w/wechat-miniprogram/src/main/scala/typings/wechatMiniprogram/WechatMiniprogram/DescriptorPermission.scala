@@ -2,18 +2,16 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 描述符的权限 */
-@js.native
 trait DescriptorPermission extends StObject {
   
   /** 读 */
-  var read: js.UndefOr[Boolean] = js.native
+  var read: js.UndefOr[Boolean] = js.undefined
   
   /** 写 */
-  var write: js.UndefOr[Boolean] = js.native
+  var write: js.UndefOr[Boolean] = js.undefined
 }
 object DescriptorPermission {
   

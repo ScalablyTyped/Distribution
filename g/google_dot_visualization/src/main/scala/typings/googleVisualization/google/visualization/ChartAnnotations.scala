@@ -2,25 +2,23 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartAnnotations extends StObject {
   
-  var boxStyle: js.UndefOr[ChartBoxStyle] = js.native
+  var boxStyle: js.UndefOr[ChartBoxStyle] = js.undefined
   
-  var datum: js.UndefOr[ChartStemAndStyle] = js.native
+  var datum: js.UndefOr[ChartStemAndStyle] = js.undefined
   
-  var domain: js.UndefOr[ChartStemAndStyle] = js.native
+  var domain: js.UndefOr[ChartStemAndStyle] = js.undefined
   
-  var highContrast: js.UndefOr[Boolean] = js.native
+  var highContrast: js.UndefOr[Boolean] = js.undefined
   
-  var stem: js.UndefOr[ChartStem] = js.native
+  var stem: js.UndefOr[ChartStem] = js.undefined
   
-  var style: js.UndefOr[String] = js.native
+  var style: js.UndefOr[String] = js.undefined
   
-  var textStyle: js.UndefOr[ChartTextStyle] = js.native
+  var textStyle: js.UndefOr[ChartTextStyle] = js.undefined
 }
 object ChartAnnotations {
   

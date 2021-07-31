@@ -2,25 +2,23 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancelling extends StObject {
   
-  var all: scala.Double = js.native
+  var all: scala.Double
   
-  var cancelling: scala.Double = js.native
+  var cancelling: scala.Double
   
-  var completed: scala.Double = js.native
+  var completed: scala.Double
   
-  var inProgress: scala.Double = js.native
+  var inProgress: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var notStarted: scala.Double = js.native
+  var notStarted: scala.Double
   
-  var postponed: scala.Double = js.native
+  var postponed: scala.Double
 }
 object Cancelling {
   

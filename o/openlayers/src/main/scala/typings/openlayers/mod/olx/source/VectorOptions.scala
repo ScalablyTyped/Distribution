@@ -12,31 +12,29 @@ import typings.openlayers.mod.olx.LogoOptions
 import typings.openlayers.mod.proj.Projection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VectorOptions extends StObject {
   
-  var attributions: js.UndefOr[AttributionLike] = js.native
+  var attributions: js.UndefOr[AttributionLike] = js.undefined
   
-  var features: js.UndefOr[js.Array[Feature] | Collection[Feature]] = js.native
+  var features: js.UndefOr[js.Array[Feature] | Collection[Feature]] = js.undefined
   
-  var format: js.UndefOr[typings.openlayers.mod.format.Feature] = js.native
+  var format: js.UndefOr[typings.openlayers.mod.format.Feature] = js.undefined
   
-  var loader: js.UndefOr[FeatureLoader_] = js.native
+  var loader: js.UndefOr[FeatureLoader_] = js.undefined
   
-  var logo: js.UndefOr[String | LogoOptions] = js.native
+  var logo: js.UndefOr[String | LogoOptions] = js.undefined
   
-  var overlaps: js.UndefOr[Boolean] = js.native
+  var overlaps: js.UndefOr[Boolean] = js.undefined
   
-  var strategy: js.UndefOr[LoadingStrategy_] = js.native
+  var strategy: js.UndefOr[LoadingStrategy_] = js.undefined
   
-  var url: js.UndefOr[String | FeatureUrlFunction] = js.native
+  var url: js.UndefOr[String | FeatureUrlFunction] = js.undefined
   
-  var useSpatialIndex: js.UndefOr[Boolean] = js.native
+  var useSpatialIndex: js.UndefOr[Boolean] = js.undefined
   
-  var wrapX: js.UndefOr[Boolean] = js.native
+  var wrapX: js.UndefOr[Boolean] = js.undefined
 }
 object VectorOptions {
   

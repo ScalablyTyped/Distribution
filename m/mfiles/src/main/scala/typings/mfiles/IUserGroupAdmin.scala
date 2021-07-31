@@ -2,21 +2,19 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUserGroupAdmin extends StObject {
   
-  var AccessControlList: IAccessControlList = js.native
+  var AccessControlList: IAccessControlList
   
-  def Clone(): IUserGroupAdmin = js.native
+  def Clone(): IUserGroupAdmin
   
-  def CloneFrom(UserGroupAdmin: IUserGroupAdmin): Unit = js.native
+  def CloneFrom(UserGroupAdmin: IUserGroupAdmin): Unit
   
-  var SemanticAliases: ISemanticAliases = js.native
+  var SemanticAliases: ISemanticAliases
   
-  var UserGroup: IUserGroup = js.native
+  var UserGroup: IUserGroup
 }
 object IUserGroupAdmin {
   

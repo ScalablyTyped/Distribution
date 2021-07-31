@@ -4,27 +4,25 @@ import typings.finalForm.mod.Decorator
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("final-form-focus", JSImport.Default)
+  @JSImport("final-form-focus", JSImport.Namespace)
   @js.native
-  def default[FormValues](): Decorator[FormValues, Partial[FormValues]] = js.native
-  @JSImport("final-form-focus", JSImport.Default)
-  @js.native
-  def default[FormValues](getInputs: js.UndefOr[scala.Nothing], findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = js.native
-  @JSImport("final-form-focus", JSImport.Default)
-  @js.native
-  def default[FormValues](getInputs: GetInputs): Decorator[FormValues, Partial[FormValues]] = js.native
-  @JSImport("final-form-focus", JSImport.Default)
-  @js.native
-  def default[FormValues](getInputs: GetInputs, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("final-form-focus", "getFormInputs")
-  @js.native
-  def getFormInputs(formName: String): GetInputs = js.native
+  @scala.inline
+  def default[FormValues](): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  @scala.inline
+  def default[FormValues](getInputs: Unit, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  @scala.inline
+  def default[FormValues](getInputs: GetInputs): Decorator[FormValues, Partial[FormValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any]).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  @scala.inline
+  def default[FormValues](getInputs: GetInputs, findInput: FindInput): Decorator[FormValues, Partial[FormValues]] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(getInputs.asInstanceOf[js.Any], findInput.asInstanceOf[js.Any])).asInstanceOf[Decorator[FormValues, Partial[FormValues]]]
+  
+  @scala.inline
+  def getFormInputs(formName: String): GetInputs = ^.asInstanceOf[js.Dynamic].applyDynamic("getFormInputs")(formName.asInstanceOf[js.Any]).asInstanceOf[GetInputs]
   
   type FindInput = js.Function2[
     /* inputs */ js.Array[FocusableInput], 
@@ -32,12 +30,11 @@ object mod {
     js.UndefOr[FocusableInput]
   ]
   
-  @js.native
   trait FocusableInput extends StObject {
     
-    def focus(): Unit = js.native
+    def focus(): Unit
     
-    var name: String = js.native
+    var name: String
   }
   object FocusableInput {
     

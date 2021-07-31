@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridAreaProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -17,10 +15,10 @@ trait GridAreaProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObj
     */
   var gridArea: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object GridAreaProps {
   
@@ -31,12 +29,12 @@ object GridAreaProps {
   }
   
   @scala.inline
-  implicit class GridAreaPropsMutableBuilder[Self <: GridAreaProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with GridAreaProps[ThemeType]) extends AnyVal {
+  implicit class GridAreaPropsMutableBuilder[Self <: GridAreaProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & GridAreaProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setGridArea(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "gridArea", value.asInstanceOf[js.Any])
@@ -48,6 +46,8 @@ object GridAreaProps {
     def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
     
     @scala.inline
-    def setGridAreaVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "gridArea", js.Array(value :_*))
+    def setGridAreaVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.GridArea */ js.Any) | Null)*
+    ): Self = StObject.set(x, "gridArea", js.Array(value :_*))
   }
 }

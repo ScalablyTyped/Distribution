@@ -3,17 +3,17 @@ package typings.highcharts.mod
 import typings.highcharts.highchartsStrings.sankey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ @js.native
-trait SeriesSankeyOptions extends PlotSankeyOptions {
+- typings.highcharts.mod.SeriesOptions because var conflicts: zIndex. Inlined id, index, legendIndex, mapData, name, stack, `type`, xAxis, yAxis */ trait SeriesSankeyOptions
+  extends StObject
+     with PlotSankeyOptions {
   
   /**
     * Not available
     */
-  var borderRadius: js.UndefOr[scala.Nothing] = js.native
+  var borderRadius: Unit
   
   /**
     * (Highcharts) An array of data points for the series. For the `sankey`
@@ -24,102 +24,102 @@ trait SeriesSankeyOptions extends PlotSankeyOptions {
     * data points exceeds the series' turboThreshold, this option is not
     * available. (see online documentation for example)
     */
-  var data: js.UndefOr[js.Array[SeriesSankeyPointOptionsObject]] = js.native
+  var data: js.UndefOr[js.Array[SeriesSankeyPointOptionsObject]] = js.undefined
   
   /**
     * Not available
     */
-  var dataParser: js.UndefOr[scala.Nothing] = js.native
+  var dataParser: Unit
   
   /**
     * Not available
     */
-  var dataURL: js.UndefOr[scala.Nothing] = js.native
+  var dataURL: Unit
   
   /**
     * Not available
     */
-  var depth: js.UndefOr[scala.Nothing] = js.native
+  var depth: Unit
   
   /**
     * Not available
     */
-  var edgeColor: js.UndefOr[scala.Nothing] = js.native
+  var edgeColor: Unit
   
   /**
     * Not available
     */
-  var edgeWidth: js.UndefOr[scala.Nothing] = js.native
+  var edgeWidth: Unit
   
   /**
     * Not available
     */
-  var groupPadding: js.UndefOr[scala.Nothing] = js.native
+  var groupPadding: Unit
   
   /**
     * Not available
     */
-  var groupZPadding: js.UndefOr[scala.Nothing] = js.native
+  var groupZPadding: Unit
   
   /**
     * Not available
     */
-  var grouping: js.UndefOr[scala.Nothing] = js.native
+  var grouping: Unit
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An id for the series. This can
     * be used after render time to get a pointer to the series object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The index of the series in the
     * chart, affecting the internal index in the `chart.series` array, the
     * visible Z index as well as the order in the legend.
     */
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The sequential index of the
     * series in the legend.
     */
-  var legendIndex: js.UndefOr[Double] = js.native
+  var legendIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highmaps) A map data object containing a `path` definition and
     * optionally additional properties to join in the data as per the `joinBy`
     * option.
     */
-  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.native
+  var mapData: js.UndefOr[js.Array[SeriesMapDataOptions] | js.Any] = js.undefined
   
   /**
     * Not available
     */
-  var maxPointWidth: js.UndefOr[scala.Nothing] = js.native
+  var maxPointWidth: Unit
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The name of the series as shown
     * in the legend, tooltip etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) A collection of options for the individual nodes. The nodes
     * in a sankey diagram are auto-generated instances of `Highcharts.Point`,
     * but options can be applied here and linked by the `id`.
     */
-  var nodes: js.UndefOr[js.Array[SeriesSankeyNodesOptionsObject]] = js.native
+  var nodes: js.UndefOr[js.Array[SeriesSankeyNodesOptionsObject]] = js.undefined
   
   /**
     * Not available
     */
-  var pointPadding: js.UndefOr[scala.Nothing] = js.native
+  var pointPadding: Unit
   
   /**
     * Not available
     */
-  var pointWidth: js.UndefOr[scala.Nothing] = js.native
+  var pointWidth: Unit
   
   /**
     * (Highcharts, Highstock) This option allows grouping series in a stacked
@@ -127,14 +127,14 @@ trait SeriesSankeyOptions extends PlotSankeyOptions {
     * grouped series' stack options match each other after conversion into a
     * string.
     */
-  var stack: js.UndefOr[Double | String] = js.native
+  var stack: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) This property is only in
     * TypeScript non-optional and might be `undefined` in series objects from
     * unknown sources.
     */
-  var `type`: String | sankey = js.native
+  var `type`: String | sankey
   
   /**
     * (Highcharts, Highstock) When using dual or multiple x axes, this number
@@ -142,7 +142,7 @@ trait SeriesSankeyOptions extends PlotSankeyOptions {
     * either the axis id or the index of the axis in the xAxis array, with 0
     * being the first.
     */
-  var xAxis: js.UndefOr[Double | String] = js.native
+  var xAxis: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock) When using dual or multiple y axes, this number
@@ -150,13 +150,27 @@ trait SeriesSankeyOptions extends PlotSankeyOptions {
     * either the axis id or the index of the axis in the yAxis array, with 0
     * being the first.
     */
-  var yAxis: js.UndefOr[Double | String] = js.native
+  var yAxis: js.UndefOr[Double | String] = js.undefined
 }
 object SeriesSankeyOptions {
   
   @scala.inline
-  def apply(`type`: String | sankey): SeriesSankeyOptions = {
-    val __obj = js.Dynamic.literal()
+  def apply(
+    borderRadius: Unit,
+    dataParser: Unit,
+    dataURL: Unit,
+    depth: Unit,
+    edgeColor: Unit,
+    edgeWidth: Unit,
+    groupPadding: Unit,
+    groupZPadding: Unit,
+    grouping: Unit,
+    maxPointWidth: Unit,
+    pointPadding: Unit,
+    pointWidth: Unit,
+    `type`: String | sankey
+  ): SeriesSankeyOptions = {
+    val __obj = js.Dynamic.literal(borderRadius = borderRadius.asInstanceOf[js.Any], dataParser = dataParser.asInstanceOf[js.Any], dataURL = dataURL.asInstanceOf[js.Any], depth = depth.asInstanceOf[js.Any], edgeColor = edgeColor.asInstanceOf[js.Any], edgeWidth = edgeWidth.asInstanceOf[js.Any], groupPadding = groupPadding.asInstanceOf[js.Any], groupZPadding = groupZPadding.asInstanceOf[js.Any], grouping = grouping.asInstanceOf[js.Any], maxPointWidth = maxPointWidth.asInstanceOf[js.Any], pointPadding = pointPadding.asInstanceOf[js.Any], pointWidth = pointWidth.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[SeriesSankeyOptions]
   }
@@ -165,13 +179,40 @@ object SeriesSankeyOptions {
   implicit class SeriesSankeyOptionsMutableBuilder[Self <: SeriesSankeyOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
+    def setBorderRadius(value: Unit): Self = StObject.set(x, "borderRadius", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setData(value: js.Array[SeriesSankeyPointOptionsObject]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataParser(value: Unit): Self = StObject.set(x, "dataParser", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataURL(value: Unit): Self = StObject.set(x, "dataURL", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
     
     @scala.inline
     def setDataVarargs(value: SeriesSankeyPointOptionsObject*): Self = StObject.set(x, "data", js.Array(value :_*))
+    
+    @scala.inline
+    def setDepth(value: Unit): Self = StObject.set(x, "depth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEdgeColor(value: Unit): Self = StObject.set(x, "edgeColor", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEdgeWidth(value: Unit): Self = StObject.set(x, "edgeWidth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGroupPadding(value: Unit): Self = StObject.set(x, "groupPadding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGroupZPadding(value: Unit): Self = StObject.set(x, "groupZPadding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setGrouping(value: Unit): Self = StObject.set(x, "grouping", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -201,6 +242,9 @@ object SeriesSankeyOptions {
     def setMapDataVarargs(value: SeriesMapDataOptions*): Self = StObject.set(x, "mapData", js.Array(value :_*))
     
     @scala.inline
+    def setMaxPointWidth(value: Unit): Self = StObject.set(x, "maxPointWidth", value.asInstanceOf[js.Any])
+    
+    @scala.inline
     def setName(value: String): Self = StObject.set(x, "name", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -214,6 +258,12 @@ object SeriesSankeyOptions {
     
     @scala.inline
     def setNodesVarargs(value: SeriesSankeyNodesOptionsObject*): Self = StObject.set(x, "nodes", js.Array(value :_*))
+    
+    @scala.inline
+    def setPointPadding(value: Unit): Self = StObject.set(x, "pointPadding", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPointWidth(value: Unit): Self = StObject.set(x, "pointWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setStack(value: Double | String): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])

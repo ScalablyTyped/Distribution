@@ -10,14 +10,15 @@ import typings.std.Array
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distGrammarMod {
   
   @JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "SyntaxError")
   @js.native
-  class SyntaxError protected () extends Error {
+  class SyntaxError protected ()
+    extends StObject
+       with Error {
     def this(message: String, expected: js.Array[Expectation], found: String, location: IFileRange) = this()
     def this(message: String, expected: js.Array[Expectation], found: Null, location: IFileRange) = this()
     
@@ -26,16 +27,24 @@ object distGrammarMod {
     var found: String | Null = js.native
     
     var location: IFileRange = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   /* static members */
   object SyntaxError {
     
-    @JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "SyntaxError.buildMessage")
+    @JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "SyntaxError")
     @js.native
-    def buildMessage(expected: js.Array[Expectation]): String = js.native
-    @JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "SyntaxError.buildMessage")
-    @js.native
-    def buildMessage(expected: js.Array[Expectation], found: String): String = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def buildMessage(expected: js.Array[Expectation]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def buildMessage(expected: js.Array[Expectation], found: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("buildMessage")(expected.asInstanceOf[js.Any], found.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   @JSImport("sip.js/lib/grammar/pegjs/dist/grammar", "parse")
@@ -53,52 +62,53 @@ object distGrammarMod {
   object Expectation {
     
     @scala.inline
-    def IAnyExpectation(`type`: any): typings.sipJs.distGrammarMod.IAnyExpectation = {
+    def IAnyExpectation(): typings.sipJs.distGrammarMod.IAnyExpectation = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("any")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IAnyExpectation]
     }
     
     @scala.inline
-    def IClassExpectation(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts, `type`: `class`): typings.sipJs.distGrammarMod.IClassExpectation = {
+    def IClassExpectation(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts): typings.sipJs.distGrammarMod.IClassExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("class")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IClassExpectation]
     }
     
     @scala.inline
-    def IEndExpectation(`type`: end): typings.sipJs.distGrammarMod.IEndExpectation = {
+    def IEndExpectation(): typings.sipJs.distGrammarMod.IEndExpectation = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("end")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IEndExpectation]
     }
     
     @scala.inline
-    def ILiteralExpectation(ignoreCase: Boolean, text: String, `type`: literal): typings.sipJs.distGrammarMod.ILiteralExpectation = {
+    def ILiteralExpectation(ignoreCase: Boolean, text: String): typings.sipJs.distGrammarMod.ILiteralExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("literal")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.ILiteralExpectation]
     }
     
     @scala.inline
-    def IOtherExpectation(description: String, `type`: other): typings.sipJs.distGrammarMod.IOtherExpectation = {
+    def IOtherExpectation(description: String): typings.sipJs.distGrammarMod.IOtherExpectation = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("other")
       __obj.asInstanceOf[typings.sipJs.distGrammarMod.IOtherExpectation]
     }
   }
   
-  @js.native
-  trait IAnyExpectation extends Expectation {
+  trait IAnyExpectation
+    extends StObject
+       with Expectation {
     
-    var `type`: any = js.native
+    var `type`: any
   }
   object IAnyExpectation {
     
     @scala.inline
-    def apply(`type`: any): IAnyExpectation = {
+    def apply(): IAnyExpectation = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("any")
       __obj.asInstanceOf[IAnyExpectation]
     }
     
@@ -110,23 +120,24 @@ object distGrammarMod {
     }
   }
   
-  @js.native
-  trait IClassExpectation extends Expectation {
+  trait IClassExpectation
+    extends StObject
+       with Expectation {
     
-    var ignoreCase: Boolean = js.native
+    var ignoreCase: Boolean
     
-    var inverted: Boolean = js.native
+    var inverted: Boolean
     
-    var parts: IClassParts = js.native
+    var parts: IClassParts
     
-    var `type`: `class` = js.native
+    var `type`: `class`
   }
   object IClassExpectation {
     
     @scala.inline
-    def apply(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts, `type`: `class`): IClassExpectation = {
+    def apply(ignoreCase: Boolean, inverted: Boolean, parts: IClassParts): IClassExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], inverted = inverted.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("class")
       __obj.asInstanceOf[IClassExpectation]
     }
     
@@ -148,19 +159,22 @@ object distGrammarMod {
   }
   
   @js.native
-  trait IClassParts extends Array[String | IClassParts]
+  trait IClassParts
+    extends StObject
+       with Array[String | IClassParts]
   
-  @js.native
-  trait IEndExpectation extends Expectation {
+  trait IEndExpectation
+    extends StObject
+       with Expectation {
     
-    var `type`: end = js.native
+    var `type`: end
   }
   object IEndExpectation {
     
     @scala.inline
-    def apply(`type`: end): IEndExpectation = {
+    def apply(): IEndExpectation = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("end")
       __obj.asInstanceOf[IEndExpectation]
     }
     
@@ -172,14 +186,13 @@ object distGrammarMod {
     }
   }
   
-  @js.native
   trait IFilePosition extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object IFilePosition {
     
@@ -203,12 +216,11 @@ object distGrammarMod {
     }
   }
   
-  @js.native
   trait IFileRange extends StObject {
     
-    var end: IFilePosition = js.native
+    var end: IFilePosition
     
-    var start: IFilePosition = js.native
+    var start: IFilePosition
   }
   object IFileRange {
     
@@ -229,21 +241,22 @@ object distGrammarMod {
     }
   }
   
-  @js.native
-  trait ILiteralExpectation extends Expectation {
+  trait ILiteralExpectation
+    extends StObject
+       with Expectation {
     
-    var ignoreCase: Boolean = js.native
+    var ignoreCase: Boolean
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: literal = js.native
+    var `type`: literal
   }
   object ILiteralExpectation {
     
     @scala.inline
-    def apply(ignoreCase: Boolean, text: String, `type`: literal): ILiteralExpectation = {
+    def apply(ignoreCase: Boolean, text: String): ILiteralExpectation = {
       val __obj = js.Dynamic.literal(ignoreCase = ignoreCase.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("literal")
       __obj.asInstanceOf[ILiteralExpectation]
     }
     
@@ -261,19 +274,20 @@ object distGrammarMod {
     }
   }
   
-  @js.native
-  trait IOtherExpectation extends Expectation {
+  trait IOtherExpectation
+    extends StObject
+       with Expectation {
     
-    var description: String = js.native
+    var description: String
     
-    var `type`: other = js.native
+    var `type`: other
   }
   object IOtherExpectation {
     
     @scala.inline
-    def apply(description: String, `type`: other): IOtherExpectation = {
+    def apply(description: String): IOtherExpectation = {
       val __obj = js.Dynamic.literal(description = description.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("other")
       __obj.asInstanceOf[IOtherExpectation]
     }
     
@@ -288,15 +302,15 @@ object distGrammarMod {
     }
   }
   
-  @js.native
   trait IParseOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
-    var startRule: js.UndefOr[String] = js.native
+    var startRule: js.UndefOr[String] = js.undefined
     
-    var tracer: js.UndefOr[js.Any] = js.native
+    var tracer: js.UndefOr[js.Any] = js.undefined
   }
   object IParseOptions {
     

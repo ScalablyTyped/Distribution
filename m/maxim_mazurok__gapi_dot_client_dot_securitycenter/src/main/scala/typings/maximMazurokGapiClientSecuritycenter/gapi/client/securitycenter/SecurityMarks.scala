@@ -3,10 +3,8 @@ package typings.maximMazurokGapiClientSecuritycenter.gapi.client.securitycenter
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityMarks extends StObject {
   
   /**
@@ -17,14 +15,14 @@ trait SecurityMarks extends StObject {
   var marks: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.SecurityMarks with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.SecurityMarks & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * The relative resource name of the SecurityMarks. See: https://cloud.google.com/apis/design/resource_names#relative_resource_name Examples:
     * "organizations/{organization_id}/assets/{asset_id}/securityMarks" "organizations/{organization_id}/sources/{source_id}/findings/{finding_id}/securityMarks".
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SecurityMarks {
   
@@ -41,7 +39,7 @@ object SecurityMarks {
     def setMarks(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.SecurityMarks with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientSecuritycenter.maximMazurokGapiClientSecuritycenterStrings.SecurityMarks & TopLevel[js.Any]
     ): Self = StObject.set(x, "marks", value.asInstanceOf[js.Any])
     
     @scala.inline

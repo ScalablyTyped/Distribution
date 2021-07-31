@@ -2,16 +2,14 @@ package typings.awsSdk.sesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VerifyEmailAddressRequest extends StObject {
   
   /**
     * The email address to be verified.
     */
-  var EmailAddress: Address = js.native
+  var EmailAddress: Address
 }
 object VerifyEmailAddressRequest {
   

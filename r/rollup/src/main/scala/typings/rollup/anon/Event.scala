@@ -3,13 +3,11 @@ package typings.rollup.anon
 import typings.rollup.mod.ChangeEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var event: ChangeEvent = js.native
+  var event: ChangeEvent
 }
 object Event {
   

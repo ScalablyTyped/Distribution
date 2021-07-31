@@ -2,26 +2,24 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The full representation of a Service that is managed by Google Service
   * Management.
   */
-@js.native
 trait SchemaManagedService extends StObject {
   
   /**
     * ID of the project that produces and owns this service.
     */
-  var producerProjectId: js.UndefOr[String] = js.native
+  var producerProjectId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the service. See the [overview](/service-management/overview)
     * for naming requirements.
     */
-  var serviceName: js.UndefOr[String] = js.native
+  var serviceName: js.UndefOr[String] = js.undefined
 }
 object SchemaManagedService {
   

@@ -2,31 +2,29 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTraceSummariesResult extends StObject {
   
   /**
     * The start time of this page of results.
     */
-  var ApproximateTime: js.UndefOr[Timestamp] = js.native
+  var ApproximateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * If the requested time frame contained more than one page of results, you can use this token to retrieve the next page. The first page contains the most recent results, closest to the end of the time frame.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
   
   /**
     * Trace IDs and annotations for traces that were found in the specified time frame.
     */
-  var TraceSummaries: js.UndefOr[TraceSummaryList] = js.native
+  var TraceSummaries: js.UndefOr[TraceSummaryList] = js.undefined
   
   /**
     * The total number of traces processed, including traces that did not match the specified filter expression.
     */
-  var TracesProcessedCount: js.UndefOr[NullableLong] = js.native
+  var TracesProcessedCount: js.UndefOr[NullableLong] = js.undefined
 }
 object GetTraceSummariesResult {
   

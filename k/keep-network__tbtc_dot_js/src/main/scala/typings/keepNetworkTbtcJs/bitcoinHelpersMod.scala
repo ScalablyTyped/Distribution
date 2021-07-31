@@ -9,31 +9,29 @@ import typings.keepNetworkTbtcJs.electrumClientMod.default
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bitcoinHelpersMod {
   
-  @js.native
   trait BitcoinHelpers extends StObject {
     
-    var Address: PubKeyHashFrom = js.native
+    var Address: PubKeyHashFrom
     
-    var Network: MAINNET = js.native
+    var Network: MAINNET
     
-    var Transaction: AddWitnessSignature = js.native
+    var Transaction: AddWitnessSignature
     
-    var electrumConfig: Config | Null = js.native
+    var electrumConfig: Config | Null
     
-    def publicKeyPointToPublicKeyString(publicKeyX: String, publicKeyY: String): String = js.native
+    def publicKeyPointToPublicKeyString(publicKeyX: String, publicKeyY: String): String
     
-    var satoshisPerBtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
+    var satoshisPerBtc: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any
     
-    def setElectrumConfig(newConfig: Config): Unit = js.native
+    def setElectrumConfig(newConfig: Config): Unit
     
-    def signatureDER(r: String, s: String): Buffer = js.native
+    def signatureDER(r: String, s: String): Buffer
     
-    def withElectrumClient[T](block: js.Function1[/* client */ default, js.Promise[T]]): js.Promise[T] = js.native
+    def withElectrumClient[T](block: js.Function1[/* client */ default, js.Promise[T]]): js.Promise[T]
   }
   object BitcoinHelpers {
     
@@ -48,7 +46,7 @@ object bitcoinHelpersMod {
       signatureDER: (String, String) => Buffer,
       withElectrumClient: js.Function1[/* client */ default, js.Promise[js.Any]] => js.Promise[js.Any]
     ): BitcoinHelpers = {
-      val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Network = Network.asInstanceOf[js.Any], Transaction = Transaction.asInstanceOf[js.Any], publicKeyPointToPublicKeyString = js.Any.fromFunction2(publicKeyPointToPublicKeyString), satoshisPerBtc = satoshisPerBtc.asInstanceOf[js.Any], setElectrumConfig = js.Any.fromFunction1(setElectrumConfig), signatureDER = js.Any.fromFunction2(signatureDER), withElectrumClient = js.Any.fromFunction1(withElectrumClient))
+      val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Network = Network.asInstanceOf[js.Any], Transaction = Transaction.asInstanceOf[js.Any], publicKeyPointToPublicKeyString = js.Any.fromFunction2(publicKeyPointToPublicKeyString), satoshisPerBtc = satoshisPerBtc.asInstanceOf[js.Any], setElectrumConfig = js.Any.fromFunction1(setElectrumConfig), signatureDER = js.Any.fromFunction2(signatureDER), withElectrumClient = js.Any.fromFunction1(withElectrumClient), electrumConfig = null)
       __obj.asInstanceOf[BitcoinHelpers]
     }
     
@@ -107,14 +105,13 @@ object bitcoinHelpersMod {
     def testnet: typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.testnet = "testnet".asInstanceOf[typings.keepNetworkTbtcJs.keepNetworkTbtcJsStrings.testnet]
   }
   
-  @js.native
   trait FoundTransaction extends StObject {
     
-    var outputPosition: Double = js.native
+    var outputPosition: Double
     
-    var transactionID: String = js.native
+    var transactionID: String
     
-    var value: Double = js.native
+    var value: Double
   }
   object FoundTransaction {
     
@@ -138,16 +135,15 @@ object bitcoinHelpersMod {
     }
   }
   
-  @js.native
   trait ParsedTransaction extends StObject {
     
-    var locktime: String = js.native
+    var locktime: String
     
-    var txInVector: String = js.native
+    var txInVector: String
     
-    var txOutVector: String = js.native
+    var txOutVector: String
     
-    var version: String = js.native
+    var version: String
   }
   object ParsedTransaction {
     
@@ -174,10 +170,11 @@ object bitcoinHelpersMod {
     }
   }
   
-  @js.native
-  trait SPVProof extends Proof {
+  trait SPVProof
+    extends StObject
+       with Proof {
     
-    var parsedTransaction: ParsedTransaction = js.native
+    var parsedTransaction: ParsedTransaction
   }
   object SPVProof {
     

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CreationInfo extends Object {
+trait CreationInfo
+  extends StObject
+     with Object {
   
   /**
     * The associated feature layer where the new feature is created.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo)
     */
-  var layer: FeatureLayer = js.native
+  var layer: FeatureLayer
   
   /**
     * The associated feature template used to create the new feature.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Editor.html#CreationInfo)
     */
-  var template: FeatureTemplate = js.native
+  var template: FeatureTemplate
 }
 object CreationInfo {
   

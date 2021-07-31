@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a client-side equivalent of the ASPxPopupMenu object.
   */
 @js.native
-trait ASPxClientPopupMenu extends ASPxClientMenuBase {
+trait ASPxClientPopupMenu
+  extends StObject
+     with ASPxClientMenuBase {
   
   /**
     * Returns an object that invoked the popup menu.

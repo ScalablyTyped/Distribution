@@ -3,85 +3,79 @@ package typings.d3TimeFormat
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("d3-time-format", "isoFormat")
+  @JSImport("d3-time-format", JSImport.Namespace)
   @js.native
-  def isoFormat(date: Date): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("d3-time-format", "isoParse")
-  @js.native
-  def isoParse(dateString: String): Date | Null = js.native
+  @scala.inline
+  def isoFormat(date: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("isoFormat")(date.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("d3-time-format", "timeFormat")
-  @js.native
-  def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = js.native
+  @scala.inline
+  def isoParse(dateString: String): Date | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("isoParse")(dateString.asInstanceOf[js.Any]).asInstanceOf[Date | Null]
   
-  @JSImport("d3-time-format", "timeFormatDefaultLocale")
-  @js.native
-  def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = js.native
+  @scala.inline
+  def timeFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
   
-  @JSImport("d3-time-format", "timeFormatLocale")
-  @js.native
-  def timeFormatLocale(definition: TimeLocaleDefinition): TimeLocaleObject = js.native
+  @scala.inline
+  def timeFormatDefaultLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatDefaultLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
   
-  @JSImport("d3-time-format", "timeParse")
-  @js.native
-  def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+  @scala.inline
+  def timeFormatLocale(definition: TimeLocaleDefinition): TimeLocaleObject = ^.asInstanceOf[js.Dynamic].applyDynamic("timeFormatLocale")(definition.asInstanceOf[js.Any]).asInstanceOf[TimeLocaleObject]
   
-  @JSImport("d3-time-format", "utcFormat")
-  @js.native
-  def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = js.native
+  @scala.inline
+  def timeParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("timeParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
   
-  @JSImport("d3-time-format", "utcParse")
-  @js.native
-  def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+  @scala.inline
+  def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcFormat")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* date */ Date, String]]
   
-  @js.native
+  @scala.inline
+  def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("utcParse")(specifier.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* dateString */ String, Date | Null]]
+  
   trait TimeLocaleDefinition extends StObject {
     
     /**
       * The date (%x) format specifier (e.g., "%m/%d/%Y").
       */
-    var date: String = js.native
+    var date: String
     
     /**
       * The date and time (%c) format specifier (e.g., "%a %b %e %X %Y").
       */
-    var dateTime: String = js.native
+    var dateTime: String
     
     /**
       * The full names of the weekdays, starting with Sunday.
       */
-    var days: js.Tuple7[String, String, String, String, String, String, String] = js.native
+    var days: js.Tuple7[String, String, String, String, String, String, String]
     
     /**
       * The full names of the months (starting with January).
       */
-    var months: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
+    var months: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
     
     /**
       * The A.M. and P.M. equivalents (e.g., ["AM", "PM"]).
       */
-    var periods: js.Tuple2[String, String] = js.native
+    var periods: js.Tuple2[String, String]
     
     /**
       * The abbreviated names of the weekdays, starting with Sunday.
       */
-    var shortDays: js.Tuple7[String, String, String, String, String, String, String] = js.native
+    var shortDays: js.Tuple7[String, String, String, String, String, String, String]
     
     /**
       * the abbreviated names of the months (starting with January).
       */
-    var shortMonths: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
+    var shortMonths: js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String]
     
     /**
       *  The time (%X) format specifier (e.g., "%H:%M:%S").
       */
-    var time: String = js.native
+    var time: String
   }
   object TimeLocaleDefinition {
     
@@ -133,7 +127,6 @@ object mod {
     }
   }
   
-  @js.native
   trait TimeLocaleObject extends StObject {
     
     /**
@@ -197,7 +190,7 @@ object mod {
       *
       * @param specifier A specifier string for the date format.
       */
-    def format(specifier: String): js.Function1[/* date */ Date, String] = js.native
+    def format(specifier: String): js.Function1[/* date */ Date, String]
     
     /**
       * Returns a new parser for the given string specifier. The specifier string may contain the same directives as locale.format (TimeLocaleObject.format).
@@ -212,21 +205,21 @@ object mod {
       *
       * @param specifier A specifier string for the date format.
       */
-    def parse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+    def parse(specifier: String): js.Function1[/* dateString */ String, Date | Null]
     
     /**
       * Equivalent to locale.format (TimeLocaleObject.format), except all directives are interpreted as Coordinated Universal Time (UTC) rather than local time.
       *
       * @param specifier A specifier string for the date format.
       */
-    def utcFormat(specifier: String): js.Function1[/* date */ Date, String] = js.native
+    def utcFormat(specifier: String): js.Function1[/* date */ Date, String]
     
     /**
       * Equivalent to locale.parse (TimeLocaleObject.parse), except all directives are interpreted as Coordinated Universal Time (UTC) rather than local time.
       *
       * @param specifier A specifier string for the date format.
       */
-    def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null] = js.native
+    def utcParse(specifier: String): js.Function1[/* dateString */ String, Date | Null]
   }
   object TimeLocaleObject {
     

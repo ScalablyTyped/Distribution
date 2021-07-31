@@ -3,59 +3,57 @@ package typings.pulumiKubernetes.outputMod.core.v1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents storage that is managed by an external CSI volume driver (Beta feature)
   */
-@js.native
 trait CSIPersistentVolumeSource extends StObject {
   
   /**
     * ControllerExpandSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI ControllerExpandVolume call. This is an alpha field and requires enabling ExpandCSIVolumes feature gate. This field is optional, and may be empty if no secret is required. If the secret object contains more than one secret, all secrets are passed.
     */
-  var controllerExpandSecretRef: SecretReference = js.native
+  var controllerExpandSecretRef: SecretReference
   
   /**
     * ControllerPublishSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI ControllerPublishVolume and ControllerUnpublishVolume calls. This field is optional, and may be empty if no secret is required. If the secret object contains more than one secret, all secrets are passed.
     */
-  var controllerPublishSecretRef: SecretReference = js.native
+  var controllerPublishSecretRef: SecretReference
   
   /**
     * Driver is the name of the driver to use for this volume. Required.
     */
-  var driver: String = js.native
+  var driver: String
   
   /**
     * Filesystem type to mount. Must be a filesystem type supported by the host operating system. Ex. "ext4", "xfs", "ntfs".
     */
-  var fsType: String = js.native
+  var fsType: String
   
   /**
     * NodePublishSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI NodePublishVolume and NodeUnpublishVolume calls. This field is optional, and may be empty if no secret is required. If the secret object contains more than one secret, all secrets are passed.
     */
-  var nodePublishSecretRef: SecretReference = js.native
+  var nodePublishSecretRef: SecretReference
   
   /**
     * NodeStageSecretRef is a reference to the secret object containing sensitive information to pass to the CSI driver to complete the CSI NodeStageVolume and NodeStageVolume and NodeUnstageVolume calls. This field is optional, and may be empty if no secret is required. If the secret object contains more than one secret, all secrets are passed.
     */
-  var nodeStageSecretRef: SecretReference = js.native
+  var nodeStageSecretRef: SecretReference
   
   /**
     * Optional: The value to pass to ControllerPublishVolumeRequest. Defaults to false (read/write).
     */
-  var readOnly: Boolean = js.native
+  var readOnly: Boolean
   
   /**
     * Attributes of the volume to publish.
     */
-  var volumeAttributes: StringDictionary[String] = js.native
+  var volumeAttributes: StringDictionary[String]
   
   /**
     * VolumeHandle is the unique volume name returned by the CSI volume plugin’s CreateVolume to refer to the volume on all subsequent calls. Required.
     */
-  var volumeHandle: String = js.native
+  var volumeHandle: String
 }
 object CSIPersistentVolumeSource {
   

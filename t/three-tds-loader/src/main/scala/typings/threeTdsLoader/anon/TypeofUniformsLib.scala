@@ -17,41 +17,39 @@ import typings.three.anon.RoughnessMap
 import typings.three.anon.SpecularMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofUniformsLib extends StObject {
   
-  var aomap: AoMap = js.native
+  var aomap: AoMap
   
-  var bumpmap: BumpMap = js.native
+  var bumpmap: BumpMap
   
-  var common: AlphaMap = js.native
+  var common: AlphaMap
   
-  var displacementmap: DisplacementBias = js.native
+  var displacementmap: DisplacementBias
   
-  var emissivemap: EmissiveMap = js.native
+  var emissivemap: EmissiveMap
   
-  var envmap: EnvMap = js.native
+  var envmap: EnvMap
   
-  var fog: FogColor = js.native
+  var fog: FogColor
   
-  var gradientmap: GradientMap = js.native
+  var gradientmap: GradientMap
   
-  var lightmap: LightMap = js.native
+  var lightmap: LightMap
   
-  var lights: AmbientLightColor = js.native
+  var lights: AmbientLightColor
   
-  var metalnessmap: MetalnessMap = js.native
+  var metalnessmap: MetalnessMap
   
-  var normalmap: NormalMap = js.native
+  var normalmap: NormalMap
   
-  var points: Diffuse = js.native
+  var points: Diffuse
   
-  var roughnessmap: RoughnessMap = js.native
+  var roughnessmap: RoughnessMap
   
-  var specularmap: SpecularMap = js.native
+  var specularmap: SpecularMap
 }
 object TypeofUniformsLib {
   

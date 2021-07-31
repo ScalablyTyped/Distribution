@@ -2,25 +2,23 @@ package typings.googleapis.cloudiotV1Mod.cloudiotV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The device state, as reported by the device.
   */
-@js.native
 trait SchemaDeviceState extends StObject {
   
   /**
     * The device state data.
     */
-  var binaryData: js.UndefOr[String] = js.native
+  var binaryData: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The time at which this state version was updated in Cloud
     * IoT Core.
     */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object SchemaDeviceState {
   

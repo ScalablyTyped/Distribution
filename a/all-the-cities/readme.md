@@ -11,8 +11,8 @@ All the 138,398 cities of the world with a population of at least 1000 inhabitan
 | Full name          | all-the-cities |
 | Keywords           | city, cities, geolocation, latitude, longitude, gis, world, geography, location, mongodb, geoSpatialSearch |
 | # releases         | 3 |
-| # dependents       | 8 |
-| # downloads        | 98225 |
+| # dependents       | 9 |
+| # downloads        | 111702 |
 | # stars            | 4 |
 
 ## Links

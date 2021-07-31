@@ -17,41 +17,37 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabsMod {
   
   @JSImport("grommet/components/Tabs", "Tabs")
   @js.native
-  val Tabs: FC[
-    TabsProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])
-  ] = js.native
+  val Tabs: FC[TabsProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])] = js.native
   
-  @js.native
   trait TabsProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var activeIndex: js.UndefOr[Double] = js.native
+    var activeIndex: js.UndefOr[Double] = js.undefined
     
-    var alignControls: js.UndefOr[AlignSelfType] = js.native
+    var alignControls: js.UndefOr[AlignSelfType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var flex: js.UndefOr[grow | shrink | Boolean] = js.native
+    var flex: js.UndefOr[grow | shrink | Boolean] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var justify: js.UndefOr[start | center | end] = js.native
+    var justify: js.UndefOr[start | center | end] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var messages: js.UndefOr[TabContents] = js.native
+    var messages: js.UndefOr[TabContents] = js.undefined
     
-    var onActive: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var onActive: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
   }
   object TabsProps {
     

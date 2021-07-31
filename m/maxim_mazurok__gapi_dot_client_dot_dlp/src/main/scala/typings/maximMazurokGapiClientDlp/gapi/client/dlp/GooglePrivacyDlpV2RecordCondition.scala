@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2RecordCondition extends StObject {
   
   /** An expression. */
-  var expressions: js.UndefOr[GooglePrivacyDlpV2Expressions] = js.native
+  var expressions: js.UndefOr[GooglePrivacyDlpV2Expressions] = js.undefined
 }
 object GooglePrivacyDlpV2RecordCondition {
   

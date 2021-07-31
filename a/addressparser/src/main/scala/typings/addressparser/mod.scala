@@ -2,7 +2,6 @@ package typings.addressparser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,30 +19,32 @@ object mod {
     *
     * @param str Address field
     */
+  @scala.inline
+  def apply(str: String): js.Array[EmailAddress] = ^.asInstanceOf[js.Dynamic].apply(str.asInstanceOf[js.Any]).asInstanceOf[js.Array[EmailAddress]]
+  
   @JSImport("addressparser", JSImport.Namespace)
   @js.native
-  def apply(str: String): js.Array[EmailAddress] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Address details.
     */
-  @js.native
   trait EmailAddress extends StObject {
     
     /**
       * The email address.
       */
-    var address: String = js.native
+    var address: String
     
     /**
       * An array of grouped addresses.
       */
-    var group: js.UndefOr[js.Array[EmailAddress]] = js.native
+    var group: js.UndefOr[js.Array[EmailAddress]] = js.undefined
     
     /**
       * The name part of the email/group.
       */
-    var name: String = js.native
+    var name: String
   }
   object EmailAddress {
     

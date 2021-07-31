@@ -6,29 +6,27 @@ import typings.sharepoint.SPClientTemplates.ListSchema
 import typings.sharepoint.SPClientTemplates.RenderContext
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SPMgr extends StObject {
   
-  def NewGroup(listItem: StringDictionary[js.Any], fieldName: String): Boolean = js.native
+  def NewGroup(listItem: StringDictionary[js.Any], fieldName: String): Boolean
   
   def RenderField(
     renderCtx: RenderContext,
     field: FieldSchema,
     listItem: StringDictionary[js.Any],
     listSchema: ListSchema
-  ): String = js.native
+  ): String
   
   def RenderFieldByName(
     renderCtx: RenderContext,
     fieldName: String,
     listItem: StringDictionary[js.Any],
     listSchema: ListSchema
-  ): String = js.native
+  ): String
   
-  def RenderHeader(renderCtx: RenderContext, field: FieldSchema): String = js.native
+  def RenderHeader(renderCtx: RenderContext, field: FieldSchema): String
 }
 object SPMgr {
   

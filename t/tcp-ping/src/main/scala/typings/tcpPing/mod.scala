@@ -3,33 +3,33 @@ package typings.tcpPing
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("tcp-ping", "ping")
+  @JSImport("tcp-ping", JSImport.Namespace)
   @js.native
-  def ping(options: Options, callback: js.Function2[/* error */ Error, /* result */ Result, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("tcp-ping", "probe")
-  @js.native
+  @scala.inline
+  def ping(options: Options, callback: js.Function2[/* error */ Error, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ping")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
   def probe(
     address: String,
     port: Double,
     callback: js.Function2[/* error */ Error, /* result */ Boolean, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("probe")(address.asInstanceOf[js.Any], port.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Options extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var attempts: js.UndefOr[Double] = js.native
+    var attempts: js.UndefOr[Double] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -68,22 +68,21 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var attempts: Double = js.native
+    var attempts: Double
     
-    var avg: Double = js.native
+    var avg: Double
     
-    var max: Double = js.native
+    var max: Double
     
-    var min: Double = js.native
+    var min: Double
     
-    var port: Double = js.native
+    var port: Double
     
-    var results: js.Array[Results] = js.native
+    var results: js.Array[Results]
   }
   object Result {
     
@@ -130,14 +129,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Results extends StObject {
     
-    var error: js.UndefOr[Error] = js.native
+    var error: js.UndefOr[Error] = js.undefined
     
-    var seq: js.UndefOr[Double] = js.native
+    var seq: js.UndefOr[Double] = js.undefined
     
-    var time: js.UndefOr[Double] = js.native
+    var time: js.UndefOr[Double] = js.undefined
   }
   object Results {
     

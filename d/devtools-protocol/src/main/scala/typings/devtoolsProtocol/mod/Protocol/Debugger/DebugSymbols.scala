@@ -6,21 +6,19 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.None
 import typings.devtoolsProtocol.devtoolsProtocolStrings.SourceMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugSymbols extends StObject {
   
   /**
     * URL of the external symbol source.
     */
-  var externalURL: js.UndefOr[String] = js.native
+  var externalURL: js.UndefOr[String] = js.undefined
   
   /**
     * Type of the debug symbols. (DebugSymbolsType enum)
     */
-  var `type`: None | SourceMap | EmbeddedDWARF | ExternalDWARF = js.native
+  var `type`: None | SourceMap | EmbeddedDWARF | ExternalDWARF
 }
 object DebugSymbols {
   

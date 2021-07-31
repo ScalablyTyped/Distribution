@@ -2,34 +2,32 @@ package typings.fhirJsClient.FHIR.SMART
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authorization Context which needs to be passed to create a SMART client directly
   */
-@js.native
 trait AuthContext extends StObject {
   
   /**
     * Password if the type of authorization in 'basic'
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * Access token to be set if the type of authorization is 'bearer'
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
   /**
     * Type of Authorization 'none' | 'basic' | 'bearer'
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * Username if the type of authorization in 'basic'
     */
-  var username: js.UndefOr[String] = js.native
+  var username: js.UndefOr[String] = js.undefined
 }
 object AuthContext {
   

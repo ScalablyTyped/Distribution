@@ -2,19 +2,17 @@ package typings.screeps.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UL extends StObject {
   
-  var UL: typings.screeps.screepsStrings.G = js.native
+  var UL: typings.screeps.screepsStrings.G
 }
 object UL {
   
   @scala.inline
-  def apply(UL: typings.screeps.screepsStrings.G): UL = {
-    val __obj = js.Dynamic.literal(UL = UL.asInstanceOf[js.Any])
+  def apply(): UL = {
+    val __obj = js.Dynamic.literal(UL = "G")
     __obj.asInstanceOf[UL]
   }
   

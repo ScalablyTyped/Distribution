@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.container
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,28 +15,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the same element of this type's value set.
   * @see Map for a default implementation of this interface
   */
-@js.native
-trait XMap extends XElementAccess {
+trait XMap
+  extends StObject
+     with XElementAccess {
   
   /**
     * denotes the type of the keys in the map.
     *
     * Implementations are free to accept any supertype of `KeyType` as keys.
     */
-  var KeyType: `type` = js.native
+  var KeyType: `type`
   
   /**
     * denotes the type of the values in the map.
     *
     * Implementations are free to accept any supertype of the `ValueType` as values.
     */
-  var ValueType: `type` = js.native
+  var ValueType: `type`
   
   /**
     * clears the map, removing all key-value pairs from it.
     * @throws com::sun::star::lang::NoSupportException if the map is not mutable.
     */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * determines whether a mapping for the given key exists in the map
@@ -46,7 +46,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::beans::IllegalTypeException if the given key is not of a type which is accepted by the map
     * @throws com::sun::star::lang::IllegalArgumentException if the given key is not supported to be put into the map. It's up to the service implementing the
     */
-  def containsKey(Key: js.Any): Boolean = js.native
+  def containsKey(Key: js.Any): Boolean
   
   /**
     * determines whether the map contains a mapping to a given value.
@@ -55,7 +55,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::beans::IllegalTypeException if the given value is not of a type which is accepted by the map. It's up to the service implementing
     * @throws com::sun::star::lang::IllegalArgumentException if the given value is not supported to be put into the map.
     */
-  def containsValue(Value: js.Any): Boolean = js.native
+  def containsValue(Value: js.Any): Boolean
   
   /**
     * gets the value to which a given key maps.
@@ -65,7 +65,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::lang::IllegalArgumentException if the given key is not supported to be put into the map. It's up to the service implementing the
     * @throws com::sun::star::container::NoSuchElementException if there is no value associated with the given key
     */
-  def get(Key: js.Any): js.Any = js.native
+  def get(Key: js.Any): js.Any
   
   /**
     * associates a given key with a given value
@@ -78,7 +78,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::lang::IllegalArgumentException if the given key, or the given value, is not supported to be put into the map. It's up to the serv
     * @throws com::sun::star::lang::NoSupportException if the map does not support putting new mappings into it
     */
-  def put(Key: js.Any, Value: js.Any): js.Any = js.native
+  def put(Key: js.Any, Value: js.Any): js.Any
   
   /**
     * removes a key-value mapping, given by key, from the map.
@@ -89,7 +89,7 @@ trait XMap extends XElementAccess {
     * @throws com::sun::star::lang::NoSupportException if the map does not support removing mappings
     * @throws com::sun::star::container::NoSuchElementException if there is no value associated with the given key
     */
-  def remove(Key: js.Any): js.Any = js.native
+  def remove(Key: js.Any): js.Any
 }
 object XMap {
   

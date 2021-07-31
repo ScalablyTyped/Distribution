@@ -3,7 +3,6 @@ package typings.workerPlugin
 import typings.workerPlugin.workerPluginBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,36 +14,35 @@ object mod {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var globalObject: js.UndefOr[`false` | String] = js.native
+    var globalObject: js.UndefOr[`false` | String] = js.undefined
     
     var plugins: js.UndefOr[
         js.Array[
-          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ _)
+          String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any)
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var preserveTypeModule: js.UndefOr[Boolean] = js.native
+    var preserveTypeModule: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `true`, this option enables the bundling of [SharedWorker](https://developer.mozilla.org/en-US/docs/Web/API/SharedWorker)
       */
-    var sharedWorker: js.UndefOr[Boolean] = js.native
+    var sharedWorker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * If set to `false`, this option disables the bundling of [Worker].
       * Intended to be used with `{ sharedWorker: true }` to allow bundling of [SharedWorker] only without also bundling [Worker].
       */
-    var worker: js.UndefOr[Boolean] = js.native
+    var worker: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Normally, WorkerPlugin will transform `new Worker('./a.js', { type: 'module' })`
       * to completely remove the `type` option, outputting something like `new Worker('a.worker.js')`.
       * This allows the plugin to compile Module Workers to Classic Workers, which are supported in all browsers.
       */
-    var workerType: js.UndefOr[String] = js.native
+    var workerType: js.UndefOr[String] = js.undefined
   }
   object Options {
     
@@ -66,7 +64,7 @@ object mod {
       @scala.inline
       def setPlugins(
         value: js.Array[
-              String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ _)
+              String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any)
             ]
       ): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
       
@@ -74,7 +72,9 @@ object mod {
       def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)
       
       @scala.inline
-      def setPluginsVarargs(value: (String | js.Any)*): Self = StObject.set(x, "plugins", js.Array(value :_*))
+      def setPluginsVarargs(
+        value: (String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify webpack.Plugin */ js.Any))*
+      ): Self = StObject.set(x, "plugins", js.Array(value :_*))
       
       @scala.inline
       def setPreserveTypeModule(value: Boolean): Self = StObject.set(x, "preserveTypeModule", value.asInstanceOf[js.Any])

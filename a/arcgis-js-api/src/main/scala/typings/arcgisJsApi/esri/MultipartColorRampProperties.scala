@@ -2,18 +2,18 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultipartColorRampProperties extends ColorRampProperties {
+trait MultipartColorRampProperties
+  extends StObject
+     with ColorRampProperties {
   
   /**
     * Define an array of algorithmic color ramps used to generate the multi part ramp.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-MultipartColorRamp.html#colorRamps)
     */
-  var colorRamps: js.UndefOr[js.Array[AlgorithmicColorRampProperties]] = js.native
+  var colorRamps: js.UndefOr[js.Array[AlgorithmicColorRampProperties]] = js.undefined
 }
 object MultipartColorRampProperties {
   

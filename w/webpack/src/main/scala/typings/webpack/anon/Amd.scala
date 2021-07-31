@@ -2,31 +2,29 @@ package typings.webpack.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Amd extends StObject {
   
   /**
   				 * Set comment for `amd` section in UMD
   				 */
-  var amd: js.UndefOr[String] = js.native
+  var amd: js.UndefOr[String] = js.undefined
   
   /**
   				 * Set comment for `commonjs` (exports) section in UMD
   				 */
-  var commonjs: js.UndefOr[String] = js.native
+  var commonjs: js.UndefOr[String] = js.undefined
   
   /**
   				 * Set comment for `commonjs2` (module.exports) section in UMD
   				 */
-  var commonjs2: js.UndefOr[String] = js.native
+  var commonjs2: js.UndefOr[String] = js.undefined
   
   /**
   				 * Set comment for `root` (global variable) section in UMD
   				 */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object Amd {
   

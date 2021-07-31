@@ -12,7 +12,7 @@ The lodash method `_.lowerFirst` exported as a module.
 | Keywords           | lodash-modularized, lowerfirst |
 | # releases         | 0 |
 | # dependents       | 16 |
-| # downloads        | 3430105 |
+| # downloads        | 5376943 |
 | # stars            | 0 |
 
 ## Links

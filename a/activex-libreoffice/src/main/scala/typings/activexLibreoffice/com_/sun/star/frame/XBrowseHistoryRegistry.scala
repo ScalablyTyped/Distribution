@@ -6,18 +6,18 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XBrowseHistoryRegistry extends XInterface {
+trait XBrowseHistoryRegistry
+  extends StObject
+     with XInterface {
   
   /** @deprecated Deprecated */
-  def createNewEntry(URL: String, Arguments: SeqEquiv[PropertyValue], Title: String): Unit = js.native
+  def createNewEntry(URL: String, Arguments: SeqEquiv[PropertyValue], Title: String): Unit
   
   /** @deprecated Deprecated */
-  def updateViewData(Value: js.Any): Unit = js.native
+  def updateViewData(Value: js.Any): Unit
 }
 object XBrowseHistoryRegistry {
   

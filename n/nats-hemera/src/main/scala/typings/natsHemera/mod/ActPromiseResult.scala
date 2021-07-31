@@ -2,15 +2,13 @@ package typings.natsHemera.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActPromiseResult[T] extends StObject {
   
-  var context: Hemera[ClientRequest, ClientResponse] = js.native
+  var context: Hemera[ClientRequest, ClientResponse]
   
-  var data: T = js.native
+  var data: T
 }
 object ActPromiseResult {
   
@@ -21,7 +19,7 @@ object ActPromiseResult {
   }
   
   @scala.inline
-  implicit class ActPromiseResultMutableBuilder[Self <: ActPromiseResult[_], T] (val x: Self with ActPromiseResult[T]) extends AnyVal {
+  implicit class ActPromiseResultMutableBuilder[Self <: ActPromiseResult[?], T] (val x: Self & ActPromiseResult[T]) extends AnyVal {
     
     @scala.inline
     def setContext(value: Hemera[ClientRequest, ClientResponse]): Self = StObject.set(x, "context", value.asInstanceOf[js.Any])

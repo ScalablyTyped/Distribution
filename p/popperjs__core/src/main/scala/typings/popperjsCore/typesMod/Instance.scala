@@ -4,21 +4,19 @@ import typings.popperjsCore.anon.PartialOptionsGenericany
 import typings.popperjsCore.anon.PartialState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Instance extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def forceUpdate(): Unit = js.native
+  def forceUpdate(): Unit
   
-  def setOptions(options: PartialOptionsGenericany): js.Promise[PartialState] = js.native
+  def setOptions(options: PartialOptionsGenericany): js.Promise[PartialState]
   
-  var state: State = js.native
+  var state: State
   
-  def update(): js.Promise[PartialState] = js.native
+  def update(): js.Promise[PartialState]
 }
 object Instance {
   

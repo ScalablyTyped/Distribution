@@ -2,19 +2,17 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxPage extends StObject {
   
-  var qHeight: js.UndefOr[Double] = js.native
+  var qHeight: js.UndefOr[Double] = js.undefined
   
-  var qLeft: js.UndefOr[Double] = js.native
+  var qLeft: js.UndefOr[Double] = js.undefined
   
-  var qTop: js.UndefOr[Double] = js.native
+  var qTop: js.UndefOr[Double] = js.undefined
   
-  var qWidth: js.UndefOr[Double] = js.native
+  var qWidth: js.UndefOr[Double] = js.undefined
 }
 object NxPage {
   

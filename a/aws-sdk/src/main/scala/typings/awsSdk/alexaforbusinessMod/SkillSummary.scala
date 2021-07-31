@@ -2,36 +2,34 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkillSummary extends StObject {
   
   /**
     * Whether the skill is enabled under the user's account, or if it requires linking to be used.
     */
-  var EnablementType: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnablementType] = js.native
+  var EnablementType: js.UndefOr[typings.awsSdk.alexaforbusinessMod.EnablementType] = js.undefined
   
   /**
     * The ARN of the skill summary.
     */
-  var SkillId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillId] = js.native
+  var SkillId: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillId] = js.undefined
   
   /**
     * The name of the skill.
     */
-  var SkillName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillName] = js.native
+  var SkillName: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillName] = js.undefined
   
   /**
     * Whether the skill is publicly available or is a private skill.
     */
-  var SkillType: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillType] = js.native
+  var SkillType: js.UndefOr[typings.awsSdk.alexaforbusinessMod.SkillType] = js.undefined
   
   /**
     * Linking support for a skill.
     */
-  var SupportsLinking: js.UndefOr[scala.Boolean] = js.native
+  var SupportsLinking: js.UndefOr[scala.Boolean] = js.undefined
 }
 object SkillSummary {
   

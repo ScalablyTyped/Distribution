@@ -8,7 +8,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorMod {
@@ -29,9 +28,8 @@ object colorMod {
     @scala.inline
     def defaultProps_=(x: ColorTypeProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Color", "default.deserialize")
-    @js.native
-    def deserialize(value: ColorTypeKnobValue): String = js.native
+    @scala.inline
+    def deserialize(value: ColorTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
     @JSImport("@storybook/addon-knobs/dist/components/types/Color", "default.propTypes")
     @js.native
@@ -39,9 +37,8 @@ object colorMod {
     @scala.inline
     def propTypes_=(x: OnChange): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("propTypes")(x.asInstanceOf[js.Any])
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Color", "default.serialize")
-    @js.native
-    def serialize(value: ColorTypeKnobValue): String = js.native
+    @scala.inline
+    def serialize(value: ColorTypeKnobValue): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   }
   
   @js.native
@@ -72,10 +69,9 @@ object colorMod {
   
   type ColorTypeProps = KnobControlProps[ColorTypeKnobValue]
   
-  @js.native
   trait ColorTypeState extends StObject {
     
-    var displayColorPicker: Boolean = js.native
+    var displayColorPicker: Boolean
   }
   object ColorTypeState {
     

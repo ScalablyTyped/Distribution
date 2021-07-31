@@ -2,7 +2,6 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait CustomizedPageStatus extends StObject
 object CustomizedPageStatus extends StObject {
   
   @js.native
-  sealed trait customized extends CustomizedPageStatus
+  sealed trait customized
+    extends StObject
+       with CustomizedPageStatus
   
   @js.native
-  sealed trait none extends CustomizedPageStatus
+  sealed trait none
+    extends StObject
+       with CustomizedPageStatus
   
   @js.native
-  sealed trait uncustomized extends CustomizedPageStatus
+  sealed trait uncustomized
+    extends StObject
+       with CustomizedPageStatus
 }

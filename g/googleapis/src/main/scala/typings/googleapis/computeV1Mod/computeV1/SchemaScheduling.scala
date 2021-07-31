@@ -2,13 +2,11 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sets the scheduling options for an Instance.
   */
-@js.native
 trait SchemaScheduling extends StObject {
   
   /**
@@ -19,12 +17,12 @@ trait SchemaScheduling extends StObject {
     * true so an instance is automatically restarted if it is terminated by
     * Compute Engine.
     */
-  var automaticRestart: js.UndefOr[Boolean] = js.native
+  var automaticRestart: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A set of node affinity and anti-affinity.
     */
-  var nodeAffinities: js.UndefOr[js.Array[SchemaSchedulingNodeAffinity]] = js.native
+  var nodeAffinities: js.UndefOr[js.Array[SchemaSchedulingNodeAffinity]] = js.undefined
   
   /**
     * Defines the maintenance behavior for this instance. For standard
@@ -32,14 +30,14 @@ trait SchemaScheduling extends StObject {
     * the default and only possible behavior is TERMINATE. For more
     * information, see Setting Instance Scheduling Options.
     */
-  var onHostMaintenance: js.UndefOr[String] = js.native
+  var onHostMaintenance: js.UndefOr[String] = js.undefined
   
   /**
     * Defines whether the instance is preemptible. This can only be set during
     * instance creation, it cannot be set or changed after the instance has
     * been created.
     */
-  var preemptible: js.UndefOr[Boolean] = js.native
+  var preemptible: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaScheduling {
   

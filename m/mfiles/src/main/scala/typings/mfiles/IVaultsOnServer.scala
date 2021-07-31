@@ -2,23 +2,21 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IVaultsOnServer extends StObject {
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetVaultByGUID(GUID: String): IVaultOnServer = js.native
+  def GetVaultByGUID(GUID: String): IVaultOnServer
   
-  def GetVaultByName(Name: String): IVaultOnServer = js.native
+  def GetVaultByName(Name: String): IVaultOnServer
   
-  def GetVaultIndexByGUID(GUID: String): Double = js.native
+  def GetVaultIndexByGUID(GUID: String): Double
   
-  def GetVaultIndexByName(Name: String): Double = js.native
+  def GetVaultIndexByName(Name: String): Double
   
-  def Item(Index: Double): IVaultOnServer = js.native
+  def Item(Index: Double): IVaultOnServer
 }
 object IVaultsOnServer {
   

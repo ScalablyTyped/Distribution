@@ -18,7 +18,6 @@ import typings.node.eventsMod.global.NodeJS.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -30,28 +29,101 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("bleno", "Characteristic")
   @js.native
-  class CharacteristicCls protected () extends Characteristic {
+  class CharacteristicCls protected ()
+    extends StObject
+       with Characteristic {
     def this(options: CharacteristicOptions) = this()
+    
+    /* CompleteClass */
+    override val RESULT_ATTR_NOT_LONG: Double = js.native
+    
+    /* CompleteClass */
+    override val RESULT_INVALID_ATTRIBUTE_LENGTH: Double = js.native
+    
+    /* CompleteClass */
+    override val RESULT_INVALID_OFFSET: Double = js.native
+    
+    /* CompleteClass */
+    override val RESULT_SUCCESS: Double = js.native
+    
+    /* CompleteClass */
+    override val RESULT_UNLIKELY_ERROR: Double = js.native
+    
+    /* CompleteClass */
+    var descriptors: js.Array[Descriptor] = js.native
+    
+    /* CompleteClass */
+    override def onIndicate(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onNotify(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onReadRequest(offset: Double, callback: js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]): Unit = js.native
+    
+    /* CompleteClass */
+    override def onSubscribe(maxValueSize: Double, updateValueCallback: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def onUnsubscribe(): Unit = js.native
+    
+    /* CompleteClass */
+    override def onWriteRequest(
+      data: Buffer,
+      offset: Double,
+      withoutResponse: Boolean,
+      callback: js.Function1[/* result */ Double, Unit]
+    ): Unit = js.native
+    
+    /* CompleteClass */
+    var properties: js.Array[Property] = js.native
+    
+    /* CompleteClass */
+    var secure: js.Array[Property] = js.native
+    
+    /* CompleteClass */
+    var uuid: String = js.native
+    
+    /* CompleteClass */
+    var value: Buffer | Null = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("bleno", "Descriptor")
   @js.native
-  class DescriptorCls protected () extends Descriptor {
+  class DescriptorCls protected ()
+    extends StObject
+       with Descriptor {
     def this(options: DescriptorOptions) = this()
+    
+    /* CompleteClass */
+    var uuid: String = js.native
+    
+    /* CompleteClass */
+    var value: Buffer = js.native
   }
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("bleno", "PrimaryService")
   @js.native
-  class PrimaryServiceCls protected () extends PrimaryService {
+  class PrimaryServiceCls protected ()
+    extends StObject
+       with PrimaryService {
     def this(options: PrimaryServiceOptions) = this()
+    
+    /* CompleteClass */
+    var characteristics: js.Array[Characteristic] = js.native
+    
+    /* CompleteClass */
+    var uuid: String = js.native
   }
   
   @js.native
-  trait Bleno extends EventEmitter {
+  trait Bleno
+    extends StObject
+       with EventEmitter {
     
-    val Characteristic: TypeofCharacteristic with (Instantiable1[/* options */ CharacteristicOptions, typings.bleno.mod.Characteristic]) = js.native
+    val Characteristic: TypeofCharacteristic & (Instantiable1[/* options */ CharacteristicOptions, typings.bleno.mod.Characteristic]) = js.native
     
     val Descriptor: Instantiable1[/* options */ DescriptorOptions, typings.bleno.mod.Descriptor] = js.native
     
@@ -95,17 +167,13 @@ object mod extends Shortcut {
     ): Unit = js.native
     
     def startAdvertising(name: String): Unit = js.native
-    def startAdvertising(
-      name: String,
-      serviceUuids: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
-    ): Unit = js.native
     def startAdvertising(name: String, serviceUuids: js.Array[String]): Unit = js.native
     def startAdvertising(
       name: String,
       serviceUuids: js.Array[String],
       callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]
     ): Unit = js.native
+    def startAdvertising(name: String, serviceUuids: Unit, callback: js.Function1[/* arg */ js.UndefOr[Error | Null], Unit]): Unit = js.native
     
     def startAdvertisingIBeacon(uuid: String, major: Double, minor: Double, measuredPower: Double): Unit = js.native
     def startAdvertisingIBeacon(
@@ -134,45 +202,44 @@ object mod extends Shortcut {
     def updateRssi(callback: js.Function2[/* err */ Null, /* rssi */ Double, Unit]): Unit = js.native
   }
   
-  @js.native
   trait Characteristic extends StObject {
     
-    val RESULT_ATTR_NOT_LONG: Double = js.native
+    val RESULT_ATTR_NOT_LONG: Double
     
-    val RESULT_INVALID_ATTRIBUTE_LENGTH: Double = js.native
+    val RESULT_INVALID_ATTRIBUTE_LENGTH: Double
     
-    val RESULT_INVALID_OFFSET: Double = js.native
+    val RESULT_INVALID_OFFSET: Double
     
-    val RESULT_SUCCESS: Double = js.native
+    val RESULT_SUCCESS: Double
     
-    val RESULT_UNLIKELY_ERROR: Double = js.native
+    val RESULT_UNLIKELY_ERROR: Double
     
-    var descriptors: js.Array[Descriptor] = js.native
+    var descriptors: js.Array[Descriptor]
     
-    def onIndicate(): Unit = js.native
+    def onIndicate(): Unit
     
-    def onNotify(): Unit = js.native
+    def onNotify(): Unit
     
-    def onReadRequest(offset: Double, callback: js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]): Unit = js.native
+    def onReadRequest(offset: Double, callback: js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit]): Unit
     
-    def onSubscribe(maxValueSize: Double, updateValueCallback: js.Any): Unit = js.native
+    def onSubscribe(maxValueSize: Double, updateValueCallback: js.Any): Unit
     
-    def onUnsubscribe(): Unit = js.native
+    def onUnsubscribe(): Unit
     
     def onWriteRequest(
       data: Buffer,
       offset: Double,
       withoutResponse: Boolean,
       callback: js.Function1[/* result */ Double, Unit]
-    ): Unit = js.native
+    ): Unit
     
-    var properties: js.Array[Property] = js.native
+    var properties: js.Array[Property]
     
-    var secure: js.Array[Property] = js.native
+    var secure: js.Array[Property]
     
-    var uuid: String = js.native
+    var uuid: String
     
-    var value: Buffer | Null = js.native
+    var value: Buffer | Null
   }
   object Characteristic {
     
@@ -194,7 +261,7 @@ object mod extends Shortcut {
       secure: js.Array[Property],
       uuid: String
     ): Characteristic = {
-      val __obj = js.Dynamic.literal(RESULT_ATTR_NOT_LONG = RESULT_ATTR_NOT_LONG.asInstanceOf[js.Any], RESULT_INVALID_ATTRIBUTE_LENGTH = RESULT_INVALID_ATTRIBUTE_LENGTH.asInstanceOf[js.Any], RESULT_INVALID_OFFSET = RESULT_INVALID_OFFSET.asInstanceOf[js.Any], RESULT_SUCCESS = RESULT_SUCCESS.asInstanceOf[js.Any], RESULT_UNLIKELY_ERROR = RESULT_UNLIKELY_ERROR.asInstanceOf[js.Any], descriptors = descriptors.asInstanceOf[js.Any], onIndicate = js.Any.fromFunction0(onIndicate), onNotify = js.Any.fromFunction0(onNotify), onReadRequest = js.Any.fromFunction2(onReadRequest), onSubscribe = js.Any.fromFunction2(onSubscribe), onUnsubscribe = js.Any.fromFunction0(onUnsubscribe), onWriteRequest = js.Any.fromFunction4(onWriteRequest), properties = properties.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(RESULT_ATTR_NOT_LONG = RESULT_ATTR_NOT_LONG.asInstanceOf[js.Any], RESULT_INVALID_ATTRIBUTE_LENGTH = RESULT_INVALID_ATTRIBUTE_LENGTH.asInstanceOf[js.Any], RESULT_INVALID_OFFSET = RESULT_INVALID_OFFSET.asInstanceOf[js.Any], RESULT_SUCCESS = RESULT_SUCCESS.asInstanceOf[js.Any], RESULT_UNLIKELY_ERROR = RESULT_UNLIKELY_ERROR.asInstanceOf[js.Any], descriptors = descriptors.asInstanceOf[js.Any], onIndicate = js.Any.fromFunction0(onIndicate), onNotify = js.Any.fromFunction0(onNotify), onReadRequest = js.Any.fromFunction2(onReadRequest), onSubscribe = js.Any.fromFunction2(onSubscribe), onUnsubscribe = js.Any.fromFunction0(onUnsubscribe), onWriteRequest = js.Any.fromFunction4(onWriteRequest), properties = properties.asInstanceOf[js.Any], secure = secure.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any], value = null)
       __obj.asInstanceOf[Characteristic]
     }
     
@@ -263,14 +330,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait CharacteristicOptions extends StObject {
     
-    var descriptors: js.UndefOr[js.Array[Descriptor] | Null] = js.native
+    var descriptors: js.UndefOr[js.Array[Descriptor] | Null] = js.undefined
     
-    var onIndicate: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onIndicate: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
-    var onNotify: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onNotify: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
     var onReadRequest: js.UndefOr[
         (js.Function2[
@@ -278,13 +344,13 @@ object mod extends Shortcut {
           /* callback */ js.Function2[/* result */ Double, /* data */ js.UndefOr[Buffer], Unit], 
           Unit
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
     var onSubscribe: js.UndefOr[
         (js.Function2[/* maxValueSize */ Double, /* updateValueCallback */ js.Any, Unit]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var onUnsubscribe: js.UndefOr[js.Function0[Unit] | Null] = js.native
+    var onUnsubscribe: js.UndefOr[js.Function0[Unit] | Null] = js.undefined
     
     var onWriteRequest: js.UndefOr[
         (js.Function4[
@@ -294,15 +360,15 @@ object mod extends Shortcut {
           /* callback */ js.Function1[/* result */ Double, Unit], 
           Unit
         ]) | Null
-      ] = js.native
+      ] = js.undefined
     
-    var properties: js.UndefOr[js.Array[Property] | Null] = js.native
+    var properties: js.UndefOr[js.Array[Property] | Null] = js.undefined
     
-    var secure: js.UndefOr[js.Array[Property] | Null] = js.native
+    var secure: js.UndefOr[js.Array[Property] | Null] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
     
-    var value: js.UndefOr[Buffer | Null] = js.native
+    var value: js.UndefOr[Buffer | Null] = js.undefined
   }
   object CharacteristicOptions {
     
@@ -423,12 +489,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Descriptor extends StObject {
     
-    var uuid: String = js.native
+    var uuid: String
     
-    var value: Buffer = js.native
+    var value: Buffer
   }
   object Descriptor {
     
@@ -449,12 +514,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait DescriptorOptions extends StObject {
     
-    var uuid: String = js.native
+    var uuid: String
     
-    var value: js.UndefOr[Buffer | String | Null] = js.native
+    var value: js.UndefOr[Buffer | String | Null] = js.undefined
   }
   object DescriptorOptions {
     
@@ -481,12 +545,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PrimaryService extends StObject {
     
-    var characteristics: js.Array[Characteristic] = js.native
+    var characteristics: js.Array[Characteristic]
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object PrimaryService {
     
@@ -510,12 +573,11 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait PrimaryServiceOptions extends StObject {
     
-    var characteristics: js.UndefOr[js.Array[Characteristic] | Null] = js.native
+    var characteristics: js.UndefOr[js.Array[Characteristic] | Null] = js.undefined
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object PrimaryServiceOptions {
     

@@ -4,12 +4,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.multipoint
 import typings.arcgisJsApi.esri.geometry.Geometry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait Multipoint
-  extends Geometry_
+  extends StObject
+     with Geometry_
      with Geometry
      with geometryGeometry {
   

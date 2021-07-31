@@ -2,20 +2,18 @@ package typings.chrome.chrome.fileSystemProvider
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetActionsRequestedOptions extends StObject {
   
   /** The path of the entry to return the list of actions for. */
-  var entryPath: String = js.native
+  var entryPath: String
   
   /** The identifier of the file system related to this operation. */
-  var fileSystemId: String = js.native
+  var fileSystemId: String
   
   /** The unique identifier of this request. */
-  var requestId: Double = js.native
+  var requestId: Double
 }
 object GetActionsRequestedOptions {
   

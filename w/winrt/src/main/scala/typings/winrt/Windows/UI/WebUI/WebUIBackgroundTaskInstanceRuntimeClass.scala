@@ -5,12 +5,11 @@ import typings.winrt.Windows.ApplicationModel.Background.BackgroundTaskRegistrat
 import typings.winrt.Windows.ApplicationModel.Background.IBackgroundTaskInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebUIBackgroundTaskInstanceRuntimeClass
-  extends IWebUIBackgroundTaskInstance
+  extends StObject
+     with IWebUIBackgroundTaskInstance
      with IBackgroundTaskInstance
 object WebUIBackgroundTaskInstanceRuntimeClass {
   

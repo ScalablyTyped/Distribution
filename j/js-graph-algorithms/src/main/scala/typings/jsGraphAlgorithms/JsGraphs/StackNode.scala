@@ -2,26 +2,24 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StackNode[T] extends StObject {
   
-  var next: StackNode[T] | Null = js.native
+  var next: StackNode[T] | Null
   
-  var value: T = js.native
+  var value: T
 }
 object StackNode {
   
   @scala.inline
   def apply[T](value: T): StackNode[T] = {
-    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(value = value.asInstanceOf[js.Any], next = null)
     __obj.asInstanceOf[StackNode[T]]
   }
   
   @scala.inline
-  implicit class StackNodeMutableBuilder[Self <: StackNode[_], T] (val x: Self with StackNode[T]) extends AnyVal {
+  implicit class StackNodeMutableBuilder[Self <: StackNode[?], T] (val x: Self & StackNode[T]) extends AnyVal {
     
     @scala.inline
     def setNext(value: StackNode[T]): Self = StObject.set(x, "next", value.asInstanceOf[js.Any])

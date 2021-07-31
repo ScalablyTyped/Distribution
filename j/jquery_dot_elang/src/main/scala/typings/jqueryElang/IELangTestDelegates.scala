@@ -2,25 +2,23 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IELangTestDelegates extends StObject {
   
-  var rdoModeClickHandler: js.Function = js.native
+  var rdoModeClickHandler: js.Function
   
-  var rdoModeHandler: js.Function = js.native
+  var rdoModeHandler: js.Function
   
-  var rdoQuestionClickHandler: js.Function = js.native
+  var rdoQuestionClickHandler: js.Function
   
-  var rdoQuestionHandler: js.Function = js.native
+  var rdoQuestionHandler: js.Function
   
-  var rdoVariantClickHandler: js.Function = js.native
+  var rdoVariantClickHandler: js.Function
   
-  var rdoVariantHandler: js.Function = js.native
+  var rdoVariantHandler: js.Function
   
-  var startStopHandler: js.Function = js.native
+  var startStopHandler: js.Function
 }
 object IELangTestDelegates {
   

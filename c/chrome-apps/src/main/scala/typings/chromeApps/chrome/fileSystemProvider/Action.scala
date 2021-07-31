@@ -8,10 +8,8 @@ import typings.chromeApps.chromeAppsStrings.SHARE
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /**
@@ -26,10 +24,10 @@ trait Action extends StObject {
       /* keyof chrome-apps.anon.OFFLINENOTNECESSARY */ SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE, 
       SAVE_FOR_OFFLINE | OFFLINE_NOT_NECESSARY | SHARE
     ]
-  ]) | String = js.native
+  ]) | String
   
   /** The title of the action. It may be ignored for common actions.  */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object Action {
   

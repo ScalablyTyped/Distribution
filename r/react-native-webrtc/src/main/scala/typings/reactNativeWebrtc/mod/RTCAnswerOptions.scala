@@ -2,13 +2,11 @@ package typings.reactNativeWebrtc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RTCAnswerOptions extends StObject {
   
-  var voiceActivityDetection: js.UndefOr[Boolean] = js.native
+  var voiceActivityDetection: js.UndefOr[Boolean] = js.undefined
 }
 object RTCAnswerOptions {
   

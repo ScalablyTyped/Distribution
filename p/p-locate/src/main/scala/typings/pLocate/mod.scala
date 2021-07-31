@@ -3,7 +3,6 @@ package typings.pLocate
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,35 +28,36 @@ object mod {
   })();
   ```
   */
-  @JSImport("p-locate", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     tester: js.Function1[/* element */ ValueType, js.Thenable[Boolean] | Boolean]
-  ): js.Promise[js.UndefOr[ValueType]] = js.native
-  @JSImport("p-locate", JSImport.Namespace)
-  @js.native
+  ): js.Promise[js.UndefOr[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], tester.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ValueType]]]
+  @scala.inline
   def apply[ValueType](
     input: Iterable[js.Thenable[ValueType] | ValueType],
     tester: js.Function1[/* element */ ValueType, js.Thenable[Boolean] | Boolean],
     options: Options
-  ): js.Promise[js.UndefOr[ValueType]] = js.native
+  ): js.Promise[js.UndefOr[ValueType]] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], tester.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[ValueType]]]
   
+  @JSImport("p-locate", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
     /**
     		Number of concurrently pending promises returned by `tester`. Minimum: `1`.
     		@default Infinity
     		*/
-    val concurrency: js.UndefOr[Double] = js.native
+    val concurrency: js.UndefOr[Double] = js.undefined
     
     /**
     		Preserve `input` order when searching.
     		Disable this to improve performance if you don't care about the order.
     		@default true
     		*/
-    val preserveOrder: js.UndefOr[Boolean] = js.native
+    val preserveOrder: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

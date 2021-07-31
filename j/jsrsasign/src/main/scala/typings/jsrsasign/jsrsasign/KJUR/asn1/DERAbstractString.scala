@@ -2,7 +2,6 @@ package typings.jsrsasign.jsrsasign.KJUR.asn1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,30 +17,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * NOTE: 'params' can be omitted.
   */
-@js.native
 trait DERAbstractString extends StObject {
   
-  def getFreshValueHex(): String = js.native
+  def getFreshValueHex(): String
   
   /**
     * get string value of this string object
     * @return string value of this string object
     */
-  def getString(): String = js.native
+  def getString(): String
   
-  var s: String = js.native
+  var s: String
   
   /**
     * set value by a string
     * @param newS value by a string to set
     */
-  def setString(newS: String): Unit = js.native
+  def setString(newS: String): Unit
   
   /**
     * set value by a hexadecimal string
     * @param newHexString value by a hexadecimal string to set
     */
-  def setStringHex(newHexString: String): Unit = js.native
+  def setStringHex(newHexString: String): Unit
 }
 object DERAbstractString {
   

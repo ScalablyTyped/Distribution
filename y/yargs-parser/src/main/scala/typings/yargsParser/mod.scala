@@ -6,7 +6,6 @@ import typings.std.Error
 import typings.yargsParser.anon.PartialConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -15,18 +14,18 @@ object mod extends Shortcut {
   @js.native
   val ^ : Parser = js.native
   
-  @js.native
   trait Arguments
-    extends /** All remaining options */
+    extends StObject
+       with /** All remaining options */
   /* argName */ StringDictionary[js.Any] {
     
     /** The script name or node command */
     @JSName("$0")
-    var $0: String = js.native
+    var $0: String
     
     /** Non-option arguments */
     @JSName("_")
-    var _underscore: js.Array[String] = js.native
+    var _underscore: js.Array[String]
   }
   object Arguments {
     
@@ -51,53 +50,52 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Configuration extends StObject {
     
     /** Should variables prefixed with --no be treated as negations? Default is `true` */
-    var `boolean-negation`: Boolean = js.native
+    var `boolean-negation`: Boolean
     
     /** Should hyphenated arguments be expanded into camel-case aliases? Default is `true` */
-    var `camel-case-expansion`: Boolean = js.native
+    var `camel-case-expansion`: Boolean
     
     /** Should arrays be combined when provided by both command line arguments and a configuration file. Default is `false`  */
-    var `combine-arrays`: Boolean = js.native
+    var `combine-arrays`: Boolean
     
     /** Should keys that contain . be treated as objects? Default is `true` */
-    var `dot-notation`: Boolean = js.native
+    var `dot-notation`: Boolean
     
     /** Should arguments be coerced into an array when duplicated. Default is `true` */
-    var `duplicate-arguments-array`: Boolean = js.native
+    var `duplicate-arguments-array`: Boolean
     
     /** Should array arguments be coerced into a single array when duplicated. Default is `true` */
-    var `flatten-duplicate-arrays`: Boolean = js.native
+    var `flatten-duplicate-arrays`: Boolean
     
     /** Should parsing stop at the first text argument? This is similar to how e.g. ssh parses its command line. Default is `false` */
-    var `halt-at-non-option`: Boolean = js.native
+    var `halt-at-non-option`: Boolean
     
     /** The prefix to use for negated boolean variables. Default is `'no-'` */
-    var `negation-prefix`: String = js.native
+    var `negation-prefix`: String
     
     /** Should keys that look like numbers be treated as such? Default is `true` */
-    var `parse-numbers`: Boolean = js.native
+    var `parse-numbers`: Boolean
     
     /** Should unparsed flags be stored in -- or _. Default is `false` */
-    var `populate--`: Boolean = js.native
+    var `populate--`: Boolean
     
     /** Should a placeholder be added for keys not set via the corresponding CLI argument? Default is `false` */
-    var `set-placeholder-key`: Boolean = js.native
+    var `set-placeholder-key`: Boolean
     
     /** Should a group of short-options be treated as boolean flags? Default is `true` */
-    var `short-option-groups`: Boolean = js.native
+    var `short-option-groups`: Boolean
     
     /** Should aliases be removed before returning results? Default is `false` */
-    var `strip-aliased`: Boolean = js.native
+    var `strip-aliased`: Boolean
     
     /** Should dashed keys be removed before returning results? This option has no effect if camel-case-expansion is disabled. Default is `false` */
-    var `strip-dashed`: Boolean = js.native
+    var `strip-dashed`: Boolean
     
     /** Should unknown options be treated like regular arguments? An unknown option is one that is not configured in opts. Default is `false` */
-    var `unknown-options-as-args`: Boolean = js.native
+    var `unknown-options-as-args`: Boolean
   }
   object Configuration {
     
@@ -188,23 +186,22 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait DetailedArguments extends StObject {
     
     /** The inferred list of aliases built by combining lists in opts.alias. */
-    var aliases: StringDictionary[js.Array[String]] = js.native
+    var aliases: StringDictionary[js.Array[String]]
     
     /** An object representing the parsed value of `args` */
-    var argv: Arguments = js.native
+    var argv: Arguments
     
     /** The configuration loaded from the yargs stanza in package.json. */
-    var configuration: Configuration = js.native
+    var configuration: Configuration
     
     /** Populated with an error object if an exception occurred during parsing. */
-    var error: Error | Null = js.native
+    var error: Error | Null
     
     /** Any new aliases added via camel-case expansion. */
-    var newAliases: StringDictionary[Boolean] = js.native
+    var newAliases: StringDictionary[Boolean]
   }
   object DetailedArguments {
     
@@ -215,7 +212,7 @@ object mod extends Shortcut {
       configuration: Configuration,
       newAliases: StringDictionary[Boolean]
     ): DetailedArguments = {
-      val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], argv = argv.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], newAliases = newAliases.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(aliases = aliases.asInstanceOf[js.Any], argv = argv.asInstanceOf[js.Any], configuration = configuration.asInstanceOf[js.Any], newAliases = newAliases.asInstanceOf[js.Any], error = null)
       __obj.asInstanceOf[DetailedArguments]
     }
     
@@ -242,54 +239,53 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /** Provide default values for keys: `{ default: { x: 33, y: 'hello world!' } }`. */
-    var default: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var default: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
     /** An object representing the set of aliases for a key: `{ alias: { foo: ['f']} }`. */
-    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+    var alias: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
     
     /**
       * Indicate that keys should be parsed as an array: `{ array: ['foo', 'bar'] }`.
       * Indicate that keys should be parsed as an array and coerced to booleans / numbers:
       * { array: [ { key: 'foo', boolean: true }, {key: 'bar', number: true} ] }`.
       */
-    var array: js.UndefOr[js.Array[typings.yargsParser.anon.Boolean | String]] = js.native
+    var array: js.UndefOr[js.Array[typings.yargsParser.anon.Boolean | String]] = js.undefined
     
     /** Arguments should be parsed as booleans: `{ boolean: ['x', 'y'] }`. */
-    var boolean: js.UndefOr[js.Array[String]] = js.native
+    var boolean: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Provide a custom synchronous function that returns a coerced value from the argument provided (or throws an error), e.g.
       * `{ coerce: { foo: function (arg) { return modifiedArg } } }`.
       */
-    var coerce: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, _]]] = js.native
+    var coerce: js.UndefOr[StringDictionary[js.Function1[/* arg */ js.Any, js.Any]]] = js.undefined
     
     /** Indicate a key that represents a path to a configuration file (this file will be loaded and parsed). */
-    var config: js.UndefOr[String | js.Array[String] | StringDictionary[Boolean]] = js.native
+    var config: js.UndefOr[String | js.Array[String] | StringDictionary[Boolean]] = js.undefined
     
     /** Provide configuration options to the yargs-parser. */
-    var configuration: js.UndefOr[PartialConfiguration] = js.native
+    var configuration: js.UndefOr[PartialConfiguration] = js.undefined
     
     /** Indicate a key that should be used as a counter, e.g., `-vvv = {v: 3}`. */
-    var count: js.UndefOr[js.Array[String]] = js.native
+    var count: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Environment variables (`process.env`) with the prefix provided should be parsed. */
-    var envPrefix: js.UndefOr[String] = js.native
+    var envPrefix: js.UndefOr[String] = js.undefined
     
     /** Specify that a key requires n arguments: `{ narg: {x: 2} }`. */
-    var narg: js.UndefOr[StringDictionary[Double]] = js.native
+    var narg: js.UndefOr[StringDictionary[Double]] = js.undefined
     
     /** `path.normalize()` will be applied to values set to this key. */
-    var normalize: js.UndefOr[js.Array[String]] = js.native
+    var normalize: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Keys should be treated as numbers. */
-    var number: js.UndefOr[js.Array[String]] = js.native
+    var number: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Keys should be treated as strings (even if they resemble a number `-x 33`). */
-    var string: js.UndefOr[js.Array[String]] = js.native
+    var string: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -327,7 +323,7 @@ object mod extends Shortcut {
       def setBooleanVarargs(value: String*): Self = StObject.set(x, "boolean", js.Array(value :_*))
       
       @scala.inline
-      def setCoerce(value: StringDictionary[js.Function1[/* arg */ js.Any, _]]): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
+      def setCoerce(value: StringDictionary[js.Function1[/* arg */ js.Any, js.Any]]): Self = StObject.set(x, "coerce", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCoerceUndefined: Self = StObject.set(x, "coerce", js.undefined)

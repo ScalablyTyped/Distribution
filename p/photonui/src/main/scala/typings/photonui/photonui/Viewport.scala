@@ -5,30 +5,30 @@ import typings.photonui.anon.X
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -----------------------------------
-@js.native
-trait Viewport extends Container {
+trait Viewport
+  extends StObject
+     with Container {
   
-  var height: Double = js.native
+  var height: Double
   
-  var horizontalScrollbar: Boolean = js.native
+  var horizontalScrollbar: Boolean
   
-  var maxHeight: Double = js.native
+  var maxHeight: Double
   
-  var maxWidth: Double = js.native
+  var maxWidth: Double
   
-  var minHeight: Double = js.native
+  var minHeight: Double
   
-  var minWidth: Double = js.native
+  var minWidth: Double
   
-  var padding: Double = js.native
+  var padding: Double
   
-  var verticalScrollbar: Boolean = js.native
+  var verticalScrollbar: Boolean
   
-  var width: Double = js.native
+  var width: Double
 }
 object Viewport {
   

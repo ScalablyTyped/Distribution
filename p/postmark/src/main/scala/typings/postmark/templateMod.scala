@@ -7,7 +7,6 @@ import typings.postmark.messageSupportingTypesMod.LinkTrackingOptions
 import typings.postmark.supportingTypesMod.Hash
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object templateMod {
@@ -30,50 +29,20 @@ object templateMod {
   @js.native
   class TemplateFilteringParameters () extends FilteringParameters {
     def this(count: Double) = this()
-    def this(count: js.UndefOr[scala.Nothing], offset: Double) = this()
     def this(count: Double, offset: Double) = this()
-    def this(count: js.UndefOr[scala.Nothing], offset: js.UndefOr[scala.Nothing], templateType: TemplateTypes) = this()
-    def this(count: js.UndefOr[scala.Nothing], offset: Double, templateType: TemplateTypes) = this()
-    def this(count: Double, offset: js.UndefOr[scala.Nothing], templateType: TemplateTypes) = this()
+    def this(count: Unit, offset: Double) = this()
     def this(count: Double, offset: Double, templateType: TemplateTypes) = this()
-    def this(
-      count: js.UndefOr[scala.Nothing],
-      offset: js.UndefOr[scala.Nothing],
-      templateType: js.UndefOr[scala.Nothing],
-      layoutTemplate: String
-    ) = this()
-    def this(
-      count: js.UndefOr[scala.Nothing],
-      offset: js.UndefOr[scala.Nothing],
-      templateType: TemplateTypes,
-      layoutTemplate: String
-    ) = this()
-    def this(
-      count: js.UndefOr[scala.Nothing],
-      offset: Double,
-      templateType: js.UndefOr[scala.Nothing],
-      layoutTemplate: String
-    ) = this()
-    def this(
-      count: js.UndefOr[scala.Nothing],
-      offset: Double,
-      templateType: TemplateTypes,
-      layoutTemplate: String
-    ) = this()
-    def this(
-      count: Double,
-      offset: js.UndefOr[scala.Nothing],
-      templateType: js.UndefOr[scala.Nothing],
-      layoutTemplate: String
-    ) = this()
-    def this(
-      count: Double,
-      offset: js.UndefOr[scala.Nothing],
-      templateType: TemplateTypes,
-      layoutTemplate: String
-    ) = this()
-    def this(count: Double, offset: Double, templateType: js.UndefOr[scala.Nothing], layoutTemplate: String) = this()
+    def this(count: Double, offset: Unit, templateType: TemplateTypes) = this()
+    def this(count: Unit, offset: Double, templateType: TemplateTypes) = this()
+    def this(count: Unit, offset: Unit, templateType: TemplateTypes) = this()
+    def this(count: Double, offset: Double, templateType: Unit, layoutTemplate: String) = this()
     def this(count: Double, offset: Double, templateType: TemplateTypes, layoutTemplate: String) = this()
+    def this(count: Double, offset: Unit, templateType: Unit, layoutTemplate: String) = this()
+    def this(count: Double, offset: Unit, templateType: TemplateTypes, layoutTemplate: String) = this()
+    def this(count: Unit, offset: Double, templateType: Unit, layoutTemplate: String) = this()
+    def this(count: Unit, offset: Double, templateType: TemplateTypes, layoutTemplate: String) = this()
+    def this(count: Unit, offset: Unit, templateType: Unit, layoutTemplate: String) = this()
+    def this(count: Unit, offset: Unit, templateType: TemplateTypes, layoutTemplate: String) = this()
     
     var layoutTemplate: js.UndefOr[String] = js.native
     
@@ -87,15 +56,19 @@ object templateMod {
   object TemplateTypes extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[TemplateTypes with String] = js.native
+    def apply(value: String): js.UndefOr[TemplateTypes & String] = js.native
     
     @js.native
-    sealed trait Layout extends TemplateTypes
-    /* "Layout" */ val Layout: typings.postmark.templateMod.TemplateTypes.Layout with String = js.native
+    sealed trait Layout
+      extends StObject
+         with TemplateTypes
+    /* "Layout" */ val Layout: typings.postmark.templateMod.TemplateTypes.Layout & String = js.native
     
     @js.native
-    sealed trait Standard extends TemplateTypes
-    /* "Standard" */ val Standard: typings.postmark.templateMod.TemplateTypes.Standard with String = js.native
+    sealed trait Standard
+      extends StObject
+         with TemplateTypes
+    /* "Standard" */ val Standard: typings.postmark.templateMod.TemplateTypes.Standard & String = js.native
   }
   
   @JSImport("postmark/dist/client/models/templates/Template", "TemplateValidationOptions")
@@ -217,28 +190,27 @@ object templateMod {
     var TextBody: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Template extends StObject {
     
-    var Active: Boolean = js.native
+    var Active: Boolean
     
-    var Alias: String | Null = js.native
+    var Alias: String | Null
     
-    var AssociatedServerId: Double = js.native
+    var AssociatedServerId: Double
     
-    var HtmlBody: String | Null = js.native
+    var HtmlBody: String | Null
     
-    var LayoutTemplate: String | Null = js.native
+    var LayoutTemplate: String | Null
     
-    var Name: String = js.native
+    var Name: String
     
-    var Subject: String = js.native
+    var Subject: String
     
-    var TemplateId: Double = js.native
+    var TemplateId: Double
     
-    var TemplateType: TemplateTypes = js.native
+    var TemplateType: TemplateTypes
     
-    var TextBody: String | Null = js.native
+    var TextBody: String | Null
   }
   object Template {
     
@@ -251,7 +223,7 @@ object templateMod {
       TemplateId: Double,
       TemplateType: TemplateTypes
     ): Template = {
-      val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], AssociatedServerId = AssociatedServerId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], AssociatedServerId = AssociatedServerId.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], Subject = Subject.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any], Alias = null, HtmlBody = null, LayoutTemplate = null, TextBody = null)
       __obj.asInstanceOf[Template]
     }
     
@@ -302,26 +274,25 @@ object templateMod {
     }
   }
   
-  @js.native
   trait TemplateInList extends StObject {
     
-    var Active: Boolean = js.native
+    var Active: Boolean
     
-    var Alias: String | Null = js.native
+    var Alias: String | Null
     
-    var LayoutTemplate: String | Null = js.native
+    var LayoutTemplate: String | Null
     
-    var Name: String = js.native
+    var Name: String
     
-    var TemplateId: Double = js.native
+    var TemplateId: Double
     
-    var TemplateType: TemplateTypes = js.native
+    var TemplateType: TemplateTypes
   }
   object TemplateInList {
     
     @scala.inline
     def apply(Active: Boolean, Name: String, TemplateId: Double, TemplateType: TemplateTypes): TemplateInList = {
-      val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(Active = Active.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any], TemplateId = TemplateId.asInstanceOf[js.Any], TemplateType = TemplateType.asInstanceOf[js.Any], Alias = null, LayoutTemplate = null)
       __obj.asInstanceOf[TemplateInList]
     }
     
@@ -354,16 +325,15 @@ object templateMod {
     }
   }
   
-  @js.native
   trait TemplatePushAction extends StObject {
     
-    var Action: String = js.native
+    var Action: String
     
-    var Alias: String = js.native
+    var Alias: String
     
-    var Name: String = js.native
+    var Name: String
     
-    var TemplateId: js.UndefOr[Double] = js.native
+    var TemplateId: js.UndefOr[Double] = js.undefined
   }
   object TemplatePushAction {
     
@@ -393,18 +363,17 @@ object templateMod {
     }
   }
   
-  @js.native
   trait TemplateValidation extends StObject {
     
-    var AllContentIsValid: Boolean = js.native
+    var AllContentIsValid: Boolean
     
-    var HtmlBody: ValidationSection = js.native
+    var HtmlBody: ValidationSection
     
-    var Subject: ValidationSection = js.native
+    var Subject: ValidationSection
     
-    var SuggestedTemplateModel: js.Object = js.native
+    var SuggestedTemplateModel: js.Object
     
-    var TextBody: ValidationSection = js.native
+    var TextBody: ValidationSection
   }
   object TemplateValidation {
     
@@ -440,12 +409,11 @@ object templateMod {
     }
   }
   
-  @js.native
   trait Templates extends StObject {
     
-    var Templates: js.Array[TemplateInList] = js.native
+    var Templates: js.Array[TemplateInList]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object Templates {
     
@@ -469,12 +437,11 @@ object templateMod {
     }
   }
   
-  @js.native
   trait TemplatesPush extends StObject {
     
-    var Templates: js.Array[TemplatePushAction] = js.native
+    var Templates: js.Array[TemplatePushAction]
     
-    var TotalCount: Double = js.native
+    var TotalCount: Double
   }
   object TemplatesPush {
     
@@ -498,14 +465,13 @@ object templateMod {
     }
   }
   
-  @js.native
   trait ValidationSection extends StObject {
     
-    var ContentIsValid: Boolean = js.native
+    var ContentIsValid: Boolean
     
-    var RenderedContent: String = js.native
+    var RenderedContent: String
     
-    var ValidationErrors: js.Object = js.native
+    var ValidationErrors: js.Object
   }
   object ValidationSection {
     

@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppDetails extends StObject {
   
   /**
     * The name of the app.
     */
-  var AppName: js.UndefOr[typings.awsSdk.sagemakerMod.AppName] = js.native
+  var AppName: js.UndefOr[typings.awsSdk.sagemakerMod.AppName] = js.undefined
   
   /**
     * The type of app.
     */
-  var AppType: js.UndefOr[typings.awsSdk.sagemakerMod.AppType] = js.native
+  var AppType: js.UndefOr[typings.awsSdk.sagemakerMod.AppType] = js.undefined
   
   /**
     * The creation time.
     */
-  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.native
+  var CreationTime: js.UndefOr[typings.awsSdk.sagemakerMod.CreationTime] = js.undefined
   
   /**
     * The domain ID.
     */
-  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.native
+  var DomainId: js.UndefOr[typings.awsSdk.sagemakerMod.DomainId] = js.undefined
   
   /**
     * The status.
     */
-  var Status: js.UndefOr[AppStatus] = js.native
+  var Status: js.UndefOr[AppStatus] = js.undefined
   
   /**
     * The user profile name.
     */
-  var UserProfileName: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileName] = js.native
+  var UserProfileName: js.UndefOr[typings.awsSdk.sagemakerMod.UserProfileName] = js.undefined
 }
 object AppDetails {
   

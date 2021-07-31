@@ -3,16 +3,14 @@ package typings.fancybox
 import typings.jquery.JQueryAjaxSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FancyBoxAjaxOption extends StObject {
   
   /**
     * Object containing settings for ajax request
     */
-  var settings: JQueryAjaxSettings = js.native
+  var settings: JQueryAjaxSettings
 }
 object FancyBoxAjaxOption {
   

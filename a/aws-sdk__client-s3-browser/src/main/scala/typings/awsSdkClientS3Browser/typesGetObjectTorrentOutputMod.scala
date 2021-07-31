@@ -5,23 +5,23 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetObjectTorrentOutputMod {
   
-  @js.native
-  trait GetObjectTorrentOutput[StreamType] extends MetadataBearer {
+  trait GetObjectTorrentOutput[StreamType]
+    extends StObject
+       with MetadataBearer {
     
     /**
       * _Body shape
       */
-    var Body: js.UndefOr[StreamType] = js.native
+    var Body: js.UndefOr[StreamType] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   }
   object GetObjectTorrentOutput {
     
@@ -32,7 +32,7 @@ object typesGetObjectTorrentOutputMod {
     }
     
     @scala.inline
-    implicit class GetObjectTorrentOutputMutableBuilder[Self <: GetObjectTorrentOutput[_], StreamType] (val x: Self with GetObjectTorrentOutput[StreamType]) extends AnyVal {
+    implicit class GetObjectTorrentOutputMutableBuilder[Self <: GetObjectTorrentOutput[?], StreamType] (val x: Self & GetObjectTorrentOutput[StreamType]) extends AnyVal {
       
       @scala.inline
       def setBody(value: StreamType): Self = StObject.set(x, "Body", value.asInstanceOf[js.Any])

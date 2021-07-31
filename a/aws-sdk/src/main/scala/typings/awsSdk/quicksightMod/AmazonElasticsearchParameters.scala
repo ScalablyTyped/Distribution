@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AmazonElasticsearchParameters extends StObject {
   
   /**
     * The Amazon Elasticsearch Service domain.
     */
-  var Domain: typings.awsSdk.quicksightMod.Domain = js.native
+  var Domain: typings.awsSdk.quicksightMod.Domain
 }
 object AmazonElasticsearchParameters {
   

@@ -5,15 +5,13 @@ import typings.node.nodeStrings.pkcs1
 import typings.node.nodeStrings.spki
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Format[PubF /* <: KeyFormat */] extends StObject {
   
-  var format: PubF = js.native
+  var format: PubF
   
-  var `type`: pkcs1 | spki = js.native
+  var `type`: pkcs1 | spki
 }
 object Format {
   
@@ -25,7 +23,7 @@ object Format {
   }
   
   @scala.inline
-  implicit class FormatMutableBuilder[Self <: Format[_], PubF /* <: KeyFormat */] (val x: Self with Format[PubF]) extends AnyVal {
+  implicit class FormatMutableBuilder[Self <: Format[?], PubF /* <: KeyFormat */] (val x: Self & Format[PubF]) extends AnyVal {
     
     @scala.inline
     def setFormat(value: PubF): Self = StObject.set(x, "format", value.asInstanceOf[js.Any])

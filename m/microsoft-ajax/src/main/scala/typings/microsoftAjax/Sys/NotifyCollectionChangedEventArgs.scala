@@ -2,15 +2,15 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes how the collection was changed.
   * @see {@link http://msdn.microsoft.com/en-us/library/dd393665(v=vs.100).aspx}
   */
-@js.native
-trait NotifyCollectionChangedEventArgs extends EventArgs {
+trait NotifyCollectionChangedEventArgs
+  extends StObject
+     with EventArgs {
   
   //#endregion
   //#region Properties
@@ -18,7 +18,7 @@ trait NotifyCollectionChangedEventArgs extends EventArgs {
     * Gets an array of changes that were performed on the collection since the last event.
     * @return An array of CollectionChange objects that were performed on the collection since the last event.
     */
-  def get_changes(): js.Array[CollectionChange] = js.native
+  def get_changes(): js.Array[CollectionChange]
 }
 object NotifyCollectionChangedEventArgs {
   

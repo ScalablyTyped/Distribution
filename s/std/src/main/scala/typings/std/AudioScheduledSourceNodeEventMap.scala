@@ -2,13 +2,11 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioScheduledSourceNodeEventMap extends StObject {
   
-  var ended: Event = js.native
+  var ended: Event
 }
 object AudioScheduledSourceNodeEventMap {
   

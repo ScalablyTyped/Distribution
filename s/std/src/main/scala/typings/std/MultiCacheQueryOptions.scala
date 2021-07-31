@@ -2,13 +2,13 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MultiCacheQueryOptions extends CacheQueryOptions {
+trait MultiCacheQueryOptions
+  extends StObject
+     with CacheQueryOptions {
   
-  var cacheName: js.UndefOr[java.lang.String] = js.native
+  var cacheName: js.UndefOr[java.lang.String] = js.undefined
 }
 object MultiCacheQueryOptions {
   

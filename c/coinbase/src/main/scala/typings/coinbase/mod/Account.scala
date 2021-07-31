@@ -4,12 +4,13 @@ import typings.coinbase.coinbaseStrings.account
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("coinbase", "Account")
 @js.native
-class Account () extends Resource {
+class Account ()
+  extends StObject
+     with Resource {
   
   /**
     * Allow deposits
@@ -190,6 +191,11 @@ class Account () extends Resource {
     */
   def requestMoney(opts: RequestMoneyOpts, cb: js.Function2[/* error */ Error | Null, /* result */ Transaction, Unit]): Unit = js.native
   
+  /**
+    * Resource type
+    */
+  /* CompleteClass */
+  var resource: ResourceType = js.native
   /**
     * Type of resource, constant string "account"
     */

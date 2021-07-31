@@ -2,14 +2,12 @@ package typings.wordpressBlockEditor.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@wordpress/block-editor.@wordpress/block-editor.EditorColor, 'color'> */
-@js.native
 trait PickEditorColorcolor extends StObject {
   
-  var color: String = js.native
+  var color: String
 }
 object PickEditorColorcolor {
   

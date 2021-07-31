@@ -2,17 +2,18 @@ package typings.openui5.sap.ui.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait CompositeBinding extends PropertyBinding {
+trait CompositeBinding
+  extends StObject
+     with PropertyBinding {
   
   /**
     * Returns the property bindings contained in this composite binding.
     * @returns the property bindings in this composite binding
     */
-  def getBindings(): js.Array[_] = js.native
+  def getBindings(): js.Array[js.Any] = js.native
   
   /**
     * Sets the optional type and internal type for the binding. The type and internal type are used to do
@@ -28,5 +29,5 @@ trait CompositeBinding extends PropertyBinding {
     * undefined values in the array.
     * @param aValues the values to set for this binding
     */
-  def setValue(aValues: js.Array[_]): Unit = js.native
+  def setValue(aValues: js.Array[js.Any]): Unit = js.native
 }

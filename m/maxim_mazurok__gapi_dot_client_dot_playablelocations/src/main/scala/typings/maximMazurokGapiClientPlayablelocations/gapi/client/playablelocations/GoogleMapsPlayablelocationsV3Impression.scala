@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientPlayablelocations.gapi.client.playableloca
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleMapsPlayablelocationsV3Impression extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait GoogleMapsPlayablelocationsV3Impression extends StObject {
     * field allows you to segregate impression data by type for analysis. You should assign a unique `game_object_type` ID to represent a distinct type of game object in your game. For
     * example, 1=monster location, 2=powerup location.
     */
-  var gameObjectType: js.UndefOr[Double] = js.native
+  var gameObjectType: js.UndefOr[Double] = js.undefined
   
   /** Required. The type of impression event. */
-  var impressionType: js.UndefOr[String] = js.native
+  var impressionType: js.UndefOr[String] = js.undefined
   
   /** Required. The name of the playable location. */
-  var locationName: js.UndefOr[String] = js.native
+  var locationName: js.UndefOr[String] = js.undefined
 }
 object GoogleMapsPlayablelocationsV3Impression {
   

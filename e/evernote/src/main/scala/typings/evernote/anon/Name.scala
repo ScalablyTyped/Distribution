@@ -3,15 +3,13 @@ package typings.evernote.anon
 import typings.evernote.mod.UserStore.BootstrapSettings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Name extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var settings: js.UndefOr[BootstrapSettings] = js.native
+  var settings: js.UndefOr[BootstrapSettings] = js.undefined
 }
 object Name {
   

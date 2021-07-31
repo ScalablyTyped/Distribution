@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTileManager
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,7 +17,7 @@ trait IgTileManager
     * Gets/Sets the duration of the animations in the tile manager.
     *
     */
-  var animationDuration: js.UndefOr[Double] = js.native
+  var animationDuration: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the columns count in the container.
@@ -28,7 +27,7 @@ trait IgTileManager
     * "null" The column count will be automatically calculated.
     * "number" The column count can be set as a number.
     */
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the height of each column in the container.
@@ -40,7 +39,7 @@ trait IgTileManager
     * "array" The column height can be set as an array, specifying height for each column. If more than one column has an asterisk value, the remaining height will be equally distributed between these columns.
     * "null" The column height will be calculated based on the container height and the other options.
     */
-  var columnHeight: js.UndefOr[String | Double | js.Array[_]] = js.native
+  var columnHeight: js.UndefOr[String | Double | js.Array[js.Any]] = js.undefined
   
   /**
     * Gets/Sets the width of each column in the container.
@@ -52,7 +51,7 @@ trait IgTileManager
     * "array" The column width can be set as an array, specifying width for each column. If more than one column has an asterisk value, the remaining width will be equally distributed between these columns.
     * "null" The column width will be calculated based on the container width and the other options.
     */
-  var columnWidth: js.UndefOr[String | Double | js.Array[_]] = js.native
+  var columnWidth: js.UndefOr[String | Double | js.Array[js.Any]] = js.undefined
   
   /**
     * Fired before databinding is performed
@@ -61,7 +60,7 @@ trait IgTileManager
     *             Use ui.owner to get a reference to the tile manager performing databinding.
     *             Use ui.dataSource to get a reference to the [$.ig.DataSource](ig.datasource) the tile manager is to be databound to.
     */
-  var dataBinding: js.UndefOr[DataBindingEvent] = js.native
+  var dataBinding: js.UndefOr[DataBindingEvent] = js.undefined
   
   /**
     * Fired after databinding is complete
@@ -72,25 +71,25 @@ trait IgTileManager
     *             Use ui.success to get see if the databinding was performed correctly.
     *             Use ui.errorMessage to get the error message if the databinding failed.
     */
-  var dataBound: js.UndefOr[DataBoundEvent] = js.native
+  var dataBound: js.UndefOr[DataBoundEvent] = js.undefined
   
   /**
     * Specifies any valid data source accepted by [$.ig.DataSource](ig.datasource), or an instance of an [$.ig.DataSource](ig.datasource) itself.
     *
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
     *
     */
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a remote URL accepted by [$.ig.DataSource](ig.datasource) in order to request data from it.
     *
     */
-  var dataSourceUrl: js.UndefOr[String] = js.native
+  var dataSourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the height of the container.
@@ -101,7 +100,7 @@ trait IgTileManager
     * "number" The height width can be set as a number in pixels.
     * "null" The height width can be set as a number in pixels.
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets/Sets the tiles configurations. Every tile is described by rowSpan, colSpan, rowIndex and colIndex.
@@ -111,33 +110,33 @@ trait IgTileManager
     * "array" An array with colSpan, rowSpan, colIndex, rowIndex configurations for each tile.
     * "null" Default tile configurations of rowSpan: 1 and colSpan: 1 will be used.
     */
-  var items: js.UndefOr[js.Object] = js.native
+  var items: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets/Sets the horizontal spacing between tiles.
     *
     *                 number  The horizontal spacing between tiles can be set as a number.
     */
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the vertical spacing between tiles.
     *
     *                 number  The vertical spacing between tiles can be set as a number.
     */
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the content of the tiles in maximized state.
@@ -147,7 +146,7 @@ trait IgTileManager
     * "string" When initializing on html markup provide jQuery selector specifying which elements of the tile to be shown in maximized state. When initializing on data source provide igTemplate that will be rendered for the maximized state.
     * "null" The whole content of the tile will be visible in maximized state.
     */
-  var maximizedState: js.UndefOr[String] = js.native
+  var maximizedState: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the index of which items configuration will be used for positioning and sizing of the maximized tile.
@@ -157,7 +156,7 @@ trait IgTileManager
     * "number" The maximizedTileindex can be set as a number.
     * "null" Option is ignored.
     */
-  var maximizedTileIndex: js.UndefOr[Double] = js.native
+  var maximizedTileIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the content of the tiles in minimized state.
@@ -167,25 +166,25 @@ trait IgTileManager
     * "string" When initializing on html markup provide jQuery selector specifying what content of the tile to be shown in minimized state. When initializing on data source provide igTemplate that will be rendered for the minimized state.
     * "null" The whole content of the tile will be visible in minimized state.
     */
-  var minimizedState: js.UndefOr[String] = js.native
+  var minimizedState: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets JQuery selector that specifies which elements will not trigger maximizing when clicked on.
     *
     */
-  var preventMaximizingSelector: js.UndefOr[String] = js.native
+  var preventMaximizingSelector: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets whether the items will rearrange when the container is resized.
     *
     */
-  var rearrangeItems: js.UndefOr[Boolean] = js.native
+  var rearrangeItems: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Fired after rendering of the tile manager completes.
@@ -193,7 +192,7 @@ trait IgTileManager
     *             Function takes arguments evt and ui.
     *             Use ui.owner to get a reference to the tile manager performing rendering.
     */
-  var rendered: js.UndefOr[RenderedEvent] = js.native
+  var rendered: js.UndefOr[RenderedEvent] = js.undefined
   
   /**
     * Fired before rendering of the tile manager begins.
@@ -203,19 +202,19 @@ trait IgTileManager
     *             Use ui.tiles to get a reference to the tiles the tile manager is going to render. If using data source this referes to the data provided.
     *             Use ui.items to get a reference to the item configurations the tile manager has.
     */
-  var rendering: js.UndefOr[RenderingEvent] = js.native
+  var rendering: js.UndefOr[RenderingEvent] = js.undefined
   
   /**
     * Specifies the HTTP request method.
     *
     */
-  var requestType: js.UndefOr[String] = js.native
+  var requestType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets the HTTP content type for the response object. See [Perform an asynchronous HTTP (Ajax) request](http://api.jquery.com/jQuery.ajax/).
     *
     */
-  var responseContentType: js.UndefOr[String] = js.native
+  var responseContentType: js.UndefOr[String] = js.undefined
   
   /**
     * Property in the response which specifies where the data records array will be held (if the response is wrapped). See [$.ig.DataSource responseDataKey](ig.datasource#options:settings.responseDataKey).
@@ -225,7 +224,7 @@ trait IgTileManager
     * "string" Specifies the name of the property in which data records are held if the response is wrapped.
     * "null" Option is ignored.
     */
-  var responseDataKey: js.UndefOr[String] = js.native
+  var responseDataKey: js.UndefOr[String] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of [$.ig.DataSource type](ig.datasource#options:settings.type) and its type property.
@@ -235,7 +234,7 @@ trait IgTileManager
     * "string" Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
     * "null" Option is ignored.
     */
-  var responseDataType: js.UndefOr[String] = js.native
+  var responseDataType: js.UndefOr[String] = js.undefined
   
   /**
     * Gets/Sets how many columns to be displayed in the right panel when the tiles are minimized.
@@ -245,7 +244,7 @@ trait IgTileManager
     * "number" Set the number of right panel columns as a number. The minimum value is 1.
     * "null" Default of 1 column will be used.
     */
-  var rightPanelCols: js.UndefOr[Double] = js.native
+  var rightPanelCols: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the height of the minimized tiles in the right panel.
@@ -255,7 +254,7 @@ trait IgTileManager
     * "number" Set the height of the minimized tiles as a number.
     * "null" Default value equal to the column height will be used.
     */
-  var rightPanelTilesHeight: js.UndefOr[Double] = js.native
+  var rightPanelTilesHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the width of the minimized tiles in the right panel.
@@ -265,7 +264,7 @@ trait IgTileManager
     * "number" Set the width of the minimized tiles as a number.
     * "null" Default value equal to the column width will be used.
     */
-  var rightPanelTilesWidth: js.UndefOr[Double] = js.native
+  var rightPanelTilesWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets the rows count in the container.
@@ -275,19 +274,19 @@ trait IgTileManager
     * "number" The row count can be set as a number.
     * "null" The row count will be automatically calculated.
     */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets whether the right panel should show scrollbar when tiles are overflowing.
     *
     */
-  var showRightPanelScroll: js.UndefOr[Boolean] = js.native
+  var showRightPanelScroll: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Configure the container variable representation, which defines splitter functionality.
     *
     */
-  var splitterOptions: js.UndefOr[IgTileManagerSplitterOptions] = js.native
+  var splitterOptions: js.UndefOr[IgTileManagerSplitterOptions] = js.undefined
   
   /**
     * Fired after a tile in the tile manager is maximized.
@@ -296,7 +295,7 @@ trait IgTileManager
     *             Use ui.owner to get a reference to the tile manager the maximized tile belongs to.
     *             Use ui.tile to get the jQuery element of the maximized tile
     */
-  var tileMaximized: js.UndefOr[TileMaximizedEvent] = js.native
+  var tileMaximized: js.UndefOr[TileMaximizedEvent] = js.undefined
   
   /**
     * Fired before a tile in the tile manager is maximized.
@@ -306,7 +305,7 @@ trait IgTileManager
     *             Use ui.tile to get the jQuery element of the tile being maximized
     *             Use ui.minimizingTile to get reference to the tile that is minimizing simultaneously or null if no tile is minimizing.
     */
-  var tileMaximizing: js.UndefOr[TileMaximizingEvent] = js.native
+  var tileMaximizing: js.UndefOr[TileMaximizingEvent] = js.undefined
   
   /**
     * Fired after a tile in the tile manager is minimized.
@@ -315,7 +314,7 @@ trait IgTileManager
     *             Use ui.owner to get a reference to the tile manager the minimized tile belongs to.
     *             Use ui.tile to get the jQuery element of the minimized tile
     */
-  var tileMinimized: js.UndefOr[TileMinimizedEvent] = js.native
+  var tileMinimized: js.UndefOr[TileMinimizedEvent] = js.undefined
   
   /**
     * Fired before a tile in the tile manager is minimized.
@@ -325,7 +324,7 @@ trait IgTileManager
     *             Use ui.tile to get the jQuery element of the tile being minimized
     *             Use ui.maximizingTile to get reference to the tile that is maximizing simultaneously or null if no tile is maximizing.
     */
-  var tileMinimizing: js.UndefOr[TileMinimizingEvent] = js.native
+  var tileMinimizing: js.UndefOr[TileMinimizingEvent] = js.undefined
   
   /**
     * Event Fired after a tile has been rendered in the container
@@ -334,7 +333,7 @@ trait IgTileManager
     *             Use ui.owner to get a reference to the tile manager performing rendering.
     *             Use ui.tile to get a reference to the rendered tile
     */
-  var tileRendered: js.UndefOr[TileRenderedEvent] = js.native
+  var tileRendered: js.UndefOr[TileRenderedEvent] = js.undefined
   
   /**
     * Event fired before a tile is rendered in the container
@@ -343,7 +342,7 @@ trait IgTileManager
     *             Use ui.owner to get a reference to the tile manager performing rendering.
     *             Use ui.tile to get a reference to the tile being rendered
     */
-  var tileRendering: js.UndefOr[TileRenderingEvent] = js.native
+  var tileRendering: js.UndefOr[TileRenderingEvent] = js.undefined
   
   /**
     *
@@ -352,7 +351,7 @@ trait IgTileManager
     * "string" The container width can be set in pixels (px) and percentage (%).
     * "number" The container width can be set as a number in pixels.
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
 }
 object IgTileManager {
   
@@ -378,7 +377,7 @@ object IgTileManager {
     def setColsUndefined: Self = StObject.set(x, "cols", js.undefined)
     
     @scala.inline
-    def setColumnHeight(value: String | Double | js.Array[_]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
+    def setColumnHeight(value: String | Double | js.Array[js.Any]): Self = StObject.set(x, "columnHeight", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnHeightUndefined: Self = StObject.set(x, "columnHeight", js.undefined)
@@ -387,7 +386,7 @@ object IgTileManager {
     def setColumnHeightVarargs(value: js.Any*): Self = StObject.set(x, "columnHeight", js.Array(value :_*))
     
     @scala.inline
-    def setColumnWidth(value: String | Double | js.Array[_]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
+    def setColumnWidth(value: String | Double | js.Array[js.Any]): Self = StObject.set(x, "columnWidth", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setColumnWidthUndefined: Self = StObject.set(x, "columnWidth", js.undefined)

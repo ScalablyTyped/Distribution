@@ -5,10 +5,13 @@ import typings.tensorflowTfjsCore.environmentMod.Environment
 import typings.tensorflowTfjsCore.environmentMod.Flags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmineUtilMod {
+  
+  @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "ALL_ENVS")
   @js.native
@@ -24,16 +27,22 @@ object jasmineUtilMod {
   
   object HAS_NODE_WORKER {
     
-    @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "HAS_NODE_WORKER.predicate")
+    @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "HAS_NODE_WORKER")
     @js.native
-    def predicate(): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def predicate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("predicate")().asInstanceOf[Boolean]
   }
   
   object HAS_WORKER {
     
-    @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "HAS_WORKER.predicate")
+    @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "HAS_WORKER")
     @js.native
-    def predicate(): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def predicate(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("predicate")().asInstanceOf[Boolean]
   }
   
   @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "NODE_ENVS")
@@ -52,36 +61,29 @@ object jasmineUtilMod {
   @js.native
   class TestKernelBackend () extends KernelBackend
   
-  @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "describeWithFlags")
-  @js.native
-  def describeWithFlags(name: String, constraints: Constraints, tests: js.Function1[/* env */ TestEnv, Unit]): Unit = js.native
+  @scala.inline
+  def describeWithFlags(name: String, constraints: Constraints, tests: js.Function1[/* env */ TestEnv, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("describeWithFlags")(name.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any], tests.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "envSatisfiesConstraints")
-  @js.native
-  def envSatisfiesConstraints(env: Environment, testEnv: TestEnv, constraints: Constraints): Boolean = js.native
+  @scala.inline
+  def envSatisfiesConstraints(env: Environment, testEnv: TestEnv, constraints: Constraints): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("envSatisfiesConstraints")(env.asInstanceOf[js.Any], testEnv.asInstanceOf[js.Any], constraints.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "parseTestEnvFromKarmaFlags")
-  @js.native
-  def parseTestEnvFromKarmaFlags(args: js.Array[String], registeredTestEnvs: js.Array[TestEnv]): TestEnv = js.native
+  @scala.inline
+  def parseTestEnvFromKarmaFlags(args: js.Array[String], registeredTestEnvs: js.Array[TestEnv]): TestEnv = (^.asInstanceOf[js.Dynamic].applyDynamic("parseTestEnvFromKarmaFlags")(args.asInstanceOf[js.Any], registeredTestEnvs.asInstanceOf[js.Any])).asInstanceOf[TestEnv]
   
-  @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "registerTestEnv")
-  @js.native
-  def registerTestEnv(testEnv: TestEnv): Unit = js.native
+  @scala.inline
+  def registerTestEnv(testEnv: TestEnv): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("registerTestEnv")(testEnv.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "setTestEnvs")
-  @js.native
-  def setTestEnvs(testEnvs: js.Array[TestEnv]): Unit = js.native
+  @scala.inline
+  def setTestEnvs(testEnvs: js.Array[TestEnv]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setTestEnvs")(testEnvs.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@tensorflow/tfjs-core/dist/jasmine_util", "setupTestFilters")
-  @js.native
-  def setupTestFilters(testFilters: js.Array[TestFilter], customInclude: js.Function1[/* name */ String, Boolean]): Unit = js.native
+  @scala.inline
+  def setupTestFilters(testFilters: js.Array[TestFilter], customInclude: js.Function1[/* name */ String, Boolean]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setupTestFilters")(testFilters.asInstanceOf[js.Any], customInclude.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait Constraints extends StObject {
     
-    var flags: js.UndefOr[Flags] = js.native
+    var flags: js.UndefOr[Flags] = js.undefined
     
-    var predicate: js.UndefOr[js.Function1[/* testEnv */ TestEnv, Boolean]] = js.native
+    var predicate: js.UndefOr[js.Function1[/* testEnv */ TestEnv, Boolean]] = js.undefined
   }
   object Constraints {
     
@@ -108,16 +110,15 @@ object jasmineUtilMod {
     }
   }
   
-  @js.native
   trait TestEnv extends StObject {
     
-    var backendName: String = js.native
+    var backendName: String
     
-    var flags: js.UndefOr[Flags] = js.native
+    var flags: js.UndefOr[Flags] = js.undefined
     
-    var isDataSync: js.UndefOr[Boolean] = js.native
+    var isDataSync: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
   }
   object TestEnv {
     
@@ -150,14 +151,13 @@ object jasmineUtilMod {
     }
   }
   
-  @js.native
   trait TestFilter extends StObject {
     
-    var excludes: js.UndefOr[js.Array[String]] = js.native
+    var excludes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include: js.UndefOr[String] = js.native
+    var include: js.UndefOr[String] = js.undefined
     
-    var startsWith: js.UndefOr[String] = js.native
+    var startsWith: js.UndefOr[String] = js.undefined
   }
   object TestFilter {
     

@@ -2,26 +2,24 @@ package typings.googleapis.driveactivityV2Mod.driveactivityV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The request message for querying Drive activity.
   */
-@js.native
 trait SchemaQueryDriveActivityRequest extends StObject {
   
   /**
     * Return activities for this Drive folder and all children and descendants.
     * The format is &quot;items/ITEM_ID&quot;.
     */
-  var ancestorName: js.UndefOr[String] = js.native
+  var ancestorName: js.UndefOr[String] = js.undefined
   
   /**
     * Details on how to consolidate related actions that make up the activity.
     * If not set, then related actions will not be consolidated.
     */
-  var consolidationStrategy: js.UndefOr[SchemaConsolidationStrategy] = js.native
+  var consolidationStrategy: js.UndefOr[SchemaConsolidationStrategy] = js.undefined
   
   /**
     * The filtering for items returned from this query request. The format of
@@ -39,25 +37,25 @@ trait SchemaQueryDriveActivityRequest extends StObject {
     * &lt;tt&gt;detail.action_detail_case:(CREATE UPLOAD)&lt;/tt&gt;       -
     * &lt;tt&gt;-detail.action_detail_case:MOVE&lt;/tt&gt;
     */
-  var filter: js.UndefOr[String] = js.native
+  var filter: js.UndefOr[String] = js.undefined
   
   /**
     * Return activities for this Drive item. The format is
     * &quot;items/ITEM_ID&quot;.
     */
-  var itemName: js.UndefOr[String] = js.native
+  var itemName: js.UndefOr[String] = js.undefined
   
   /**
     * The requested number of activity to return. If not set, a default value
     * will be used.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The next_page_token value returned from a previous QueryDriveActivity
     * request, if any.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaQueryDriveActivityRequest {
   

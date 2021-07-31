@@ -10,7 +10,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.activexLibreoffice.com_.sun.star.util.XUpdatable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,9 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * depends on the specific user interface element type. Every user interface must be initialized before it can be used.
   * @since OOo 2.0
   */
-@js.native
 trait UIElement
-  extends XUIElement
+  extends StObject
+     with XUIElement
      with XInitialization
      with XUpdatable
      with XComponent
@@ -38,7 +37,7 @@ object UIElement {
     addEventListener: XEventListener => Unit,
     dispose: () => Unit,
     getRealInterface: () => XInterface,
-    initialize: SeqEquiv[_] => Unit,
+    initialize: SeqEquiv[js.Any] => Unit,
     queryInterface: `type` => js.Any,
     release: () => Unit,
     removeEventListener: XEventListener => Unit,

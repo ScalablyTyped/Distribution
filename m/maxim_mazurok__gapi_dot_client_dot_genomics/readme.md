@@ -10,9 +10,9 @@ TypeScript typings for Genomics API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.genomics |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 40 |
+| # downloads        | 1069 |
 | # stars            | 0 |
 
 ## Links

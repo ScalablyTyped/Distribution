@@ -58,43 +58,41 @@ import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowU
 import typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait BlurButton extends StObject {
     
-    var blurButton: typings.downshift.mod.StateChangeTypes.blurButton = js.native
+    var blurButton: typings.downshift.mod.StateChangeTypes.blurButton
     
-    var blurInput: typings.downshift.mod.StateChangeTypes.blurInput = js.native
+    var blurInput: typings.downshift.mod.StateChangeTypes.blurInput
     
-    var changeInput: typings.downshift.mod.StateChangeTypes.changeInput = js.native
+    var changeInput: typings.downshift.mod.StateChangeTypes.changeInput
     
-    var clickButton: typings.downshift.mod.StateChangeTypes.clickButton = js.native
+    var clickButton: typings.downshift.mod.StateChangeTypes.clickButton
     
-    var clickItem: typings.downshift.mod.StateChangeTypes.clickItem = js.native
+    var clickItem: typings.downshift.mod.StateChangeTypes.clickItem
     
-    var controlledPropUpdatedSelectedItem: typings.downshift.mod.StateChangeTypes.controlledPropUpdatedSelectedItem = js.native
+    var controlledPropUpdatedSelectedItem: typings.downshift.mod.StateChangeTypes.controlledPropUpdatedSelectedItem
     
-    var itemMouseEnter: typings.downshift.mod.StateChangeTypes.itemMouseEnter = js.native
+    var itemMouseEnter: typings.downshift.mod.StateChangeTypes.itemMouseEnter
     
-    var keyDownArrowDown: typings.downshift.mod.StateChangeTypes.keyDownArrowDown = js.native
+    var keyDownArrowDown: typings.downshift.mod.StateChangeTypes.keyDownArrowDown
     
-    var keyDownArrowUp: typings.downshift.mod.StateChangeTypes.keyDownArrowUp = js.native
+    var keyDownArrowUp: typings.downshift.mod.StateChangeTypes.keyDownArrowUp
     
-    var keyDownEnter: typings.downshift.mod.StateChangeTypes.keyDownEnter = js.native
+    var keyDownEnter: typings.downshift.mod.StateChangeTypes.keyDownEnter
     
-    var keyDownEscape: typings.downshift.mod.StateChangeTypes.keyDownEscape = js.native
+    var keyDownEscape: typings.downshift.mod.StateChangeTypes.keyDownEscape
     
-    var keyDownSpaceButton: typings.downshift.mod.StateChangeTypes.keyDownSpaceButton = js.native
+    var keyDownSpaceButton: typings.downshift.mod.StateChangeTypes.keyDownSpaceButton
     
-    var mouseUp: typings.downshift.mod.StateChangeTypes.mouseUp = js.native
+    var mouseUp: typings.downshift.mod.StateChangeTypes.mouseUp
     
-    var touchEnd: typings.downshift.mod.StateChangeTypes.touchEnd = js.native
+    var touchEnd: typings.downshift.mod.StateChangeTypes.touchEnd
     
-    var unknown: typings.downshift.mod.StateChangeTypes.unknown = js.native
+    var unknown: typings.downshift.mod.StateChangeTypes.unknown
   }
   object BlurButton {
     
@@ -170,48 +168,47 @@ object anon {
     }
   }
   
-  @js.native
   trait ControlledPropUpdatedSelectedItem extends StObject {
     
-    var ControlledPropUpdatedSelectedItem: typings.downshift.mod.UseComboboxStateChangeTypes.ControlledPropUpdatedSelectedItem = js.native
+    var ControlledPropUpdatedSelectedItem: typings.downshift.mod.UseComboboxStateChangeTypes.ControlledPropUpdatedSelectedItem
     
-    var FunctionCloseMenu: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionCloseMenu = js.native
+    var FunctionCloseMenu: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionCloseMenu
     
-    var FunctionOpenMenu: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionOpenMenu = js.native
+    var FunctionOpenMenu: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionOpenMenu
     
-    var FunctionReset: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionReset = js.native
+    var FunctionReset: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionReset
     
-    var FunctionSelectItem: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionSelectItem = js.native
+    var FunctionSelectItem: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionSelectItem
     
-    var FunctionSetHighlightedIndex: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionSetHighlightedIndex = js.native
+    var FunctionSetHighlightedIndex: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionSetHighlightedIndex
     
-    var FunctionSetInputValue: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionSetInputValue = js.native
+    var FunctionSetInputValue: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionSetInputValue
     
-    var FunctionToggleMenu: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionToggleMenu = js.native
+    var FunctionToggleMenu: typings.downshift.mod.UseComboboxStateChangeTypes.FunctionToggleMenu
     
-    var InputBlur: typings.downshift.mod.UseComboboxStateChangeTypes.InputBlur = js.native
+    var InputBlur: typings.downshift.mod.UseComboboxStateChangeTypes.InputBlur
     
-    var InputChange: typings.downshift.mod.UseComboboxStateChangeTypes.InputChange = js.native
+    var InputChange: typings.downshift.mod.UseComboboxStateChangeTypes.InputChange
     
-    var InputKeyDownArrowDown: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowDown = js.native
+    var InputKeyDownArrowDown: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowDown
     
-    var InputKeyDownArrowUp: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowUp = js.native
+    var InputKeyDownArrowUp: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownArrowUp
     
-    var InputKeyDownEnd: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEnd = js.native
+    var InputKeyDownEnd: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEnd
     
-    var InputKeyDownEnter: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEnter = js.native
+    var InputKeyDownEnter: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEnter
     
-    var InputKeyDownEscape: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEscape = js.native
+    var InputKeyDownEscape: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownEscape
     
-    var InputKeyDownHome: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownHome = js.native
+    var InputKeyDownHome: typings.downshift.mod.UseComboboxStateChangeTypes.InputKeyDownHome
     
-    var ItemClick: typings.downshift.mod.UseComboboxStateChangeTypes.ItemClick = js.native
+    var ItemClick: typings.downshift.mod.UseComboboxStateChangeTypes.ItemClick
     
-    var ItemMouseMove: typings.downshift.mod.UseComboboxStateChangeTypes.ItemMouseMove = js.native
+    var ItemMouseMove: typings.downshift.mod.UseComboboxStateChangeTypes.ItemMouseMove
     
-    var MenuMouseLeave: typings.downshift.mod.UseComboboxStateChangeTypes.MenuMouseLeave = js.native
+    var MenuMouseLeave: typings.downshift.mod.UseComboboxStateChangeTypes.MenuMouseLeave
     
-    var ToggleButtonClick: typings.downshift.mod.UseComboboxStateChangeTypes.ToggleButtonClick = js.native
+    var ToggleButtonClick: typings.downshift.mod.UseComboboxStateChangeTypes.ToggleButtonClick
   }
   object ControlledPropUpdatedSelectedItem {
     
@@ -307,34 +304,33 @@ object anon {
     }
   }
   
-  @js.native
   trait DropdownClick extends StObject {
     
-    var DropdownClick: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownClick = js.native
+    var DropdownClick: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownClick
     
-    var DropdownKeyDownBackspace: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownKeyDownBackspace = js.native
+    var DropdownKeyDownBackspace: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownKeyDownBackspace
     
-    var DropdownKeyDownNavigationPrevious: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownKeyDownNavigationPrevious = js.native
+    var DropdownKeyDownNavigationPrevious: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.DropdownKeyDownNavigationPrevious
     
-    var FunctionAddSelectedItem: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionAddSelectedItem = js.native
+    var FunctionAddSelectedItem: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionAddSelectedItem
     
-    var FunctionRemoveSelectedItem: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionRemoveSelectedItem = js.native
+    var FunctionRemoveSelectedItem: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionRemoveSelectedItem
     
-    var FunctionReset: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionReset = js.native
+    var FunctionReset: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionReset
     
-    var FunctionSetActiveIndex: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionSetActiveIndex = js.native
+    var FunctionSetActiveIndex: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionSetActiveIndex
     
-    var FunctionSetSelectedItems: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionSetSelectedItems = js.native
+    var FunctionSetSelectedItems: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.FunctionSetSelectedItems
     
-    var SelectedItemClick: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemClick = js.native
+    var SelectedItemClick: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemClick
     
-    var SelectedItemKeyDownBackspace: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownBackspace = js.native
+    var SelectedItemKeyDownBackspace: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownBackspace
     
-    var SelectedItemKeyDownDelete: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownDelete = js.native
+    var SelectedItemKeyDownDelete: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownDelete
     
-    var SelectedItemKeyDownNavigationNext: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownNavigationNext = js.native
+    var SelectedItemKeyDownNavigationNext: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownNavigationNext
     
-    var SelectedItemKeyDownNavigationPrevious: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownNavigationPrevious = js.native
+    var SelectedItemKeyDownNavigationPrevious: typings.downshift.mod.UseMultipleSelectionStateChangeTypes.SelectedItemKeyDownNavigationPrevious
   }
   object DropdownClick {
     
@@ -402,54 +398,53 @@ object anon {
     }
   }
   
-  @js.native
   trait FunctionCloseMenu extends StObject {
     
-    var FunctionCloseMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionCloseMenu = js.native
+    var FunctionCloseMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionCloseMenu
     
-    var FunctionOpenMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionOpenMenu = js.native
+    var FunctionOpenMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionOpenMenu
     
-    var FunctionReset: typings.downshift.mod.UseSelectStateChangeTypes.FunctionReset = js.native
+    var FunctionReset: typings.downshift.mod.UseSelectStateChangeTypes.FunctionReset
     
-    var FunctionSelectItem: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSelectItem = js.native
+    var FunctionSelectItem: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSelectItem
     
-    var FunctionSetHighlightedIndex: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetHighlightedIndex = js.native
+    var FunctionSetHighlightedIndex: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetHighlightedIndex
     
-    var FunctionSetInputValue: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetInputValue = js.native
+    var FunctionSetInputValue: typings.downshift.mod.UseSelectStateChangeTypes.FunctionSetInputValue
     
-    var FunctionToggleMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionToggleMenu = js.native
+    var FunctionToggleMenu: typings.downshift.mod.UseSelectStateChangeTypes.FunctionToggleMenu
     
-    var ItemClick: typings.downshift.mod.UseSelectStateChangeTypes.ItemClick = js.native
+    var ItemClick: typings.downshift.mod.UseSelectStateChangeTypes.ItemClick
     
-    var ItemMouseMove: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove = js.native
+    var ItemMouseMove: typings.downshift.mod.UseSelectStateChangeTypes.ItemMouseMove
     
-    var MenuBlur: typings.downshift.mod.UseSelectStateChangeTypes.MenuBlur = js.native
+    var MenuBlur: typings.downshift.mod.UseSelectStateChangeTypes.MenuBlur
     
-    var MenuKeyDownArrowDown: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowDown = js.native
+    var MenuKeyDownArrowDown: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowDown
     
-    var MenuKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowUp = js.native
+    var MenuKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownArrowUp
     
-    var MenuKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownCharacter = js.native
+    var MenuKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownCharacter
     
-    var MenuKeyDownEnd: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnd = js.native
+    var MenuKeyDownEnd: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnd
     
-    var MenuKeyDownEnter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnter = js.native
+    var MenuKeyDownEnter: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEnter
     
-    var MenuKeyDownEscape: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEscape = js.native
+    var MenuKeyDownEscape: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownEscape
     
-    var MenuKeyDownHome: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownHome = js.native
+    var MenuKeyDownHome: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownHome
     
-    var MenuKeyDownSpaceButton: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownSpaceButton = js.native
+    var MenuKeyDownSpaceButton: typings.downshift.mod.UseSelectStateChangeTypes.MenuKeyDownSpaceButton
     
-    var MenuMouseLeave: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave = js.native
+    var MenuMouseLeave: typings.downshift.mod.UseSelectStateChangeTypes.MenuMouseLeave
     
-    var ToggleButtonClick: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick = js.native
+    var ToggleButtonClick: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonClick
     
-    var ToggleButtonKeyDownArrowDown: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowDown = js.native
+    var ToggleButtonKeyDownArrowDown: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowDown
     
-    var ToggleButtonKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp = js.native
+    var ToggleButtonKeyDownArrowUp: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownArrowUp
     
-    var ToggleButtonKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter = js.native
+    var ToggleButtonKeyDownCharacter: typings.downshift.mod.UseSelectStateChangeTypes.ToggleButtonKeyDownCharacter
   }
   object FunctionCloseMenu {
     

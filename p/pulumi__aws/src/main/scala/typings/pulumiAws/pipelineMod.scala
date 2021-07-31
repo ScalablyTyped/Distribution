@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pipelineMod {
@@ -61,6 +60,10 @@ object pipelineMod {
   /* static members */
   object Pipeline {
     
+    @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Pipeline resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -70,55 +73,49 @@ object pipelineMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Pipeline = js.native
-    @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Pipeline = js.native
-    @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState): Pipeline = js.native
-    @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: PipelineState, opts: CustomResourceOptions): Pipeline = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Pipeline]
     
     /**
       * Returns true if the given object is an instance of Pipeline.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/codepipeline/pipeline", "Pipeline.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/codepipeline/pipeline.Pipeline */ Boolean]
   }
   
-  @js.native
   trait PipelineArgs extends StObject {
     
     /**
       * One or more artifactStore blocks. Artifact stores are documented below.
       */
-    val artifactStore: Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore] = js.native
+    val artifactStore: Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore]
     
     /**
       * The name of the pipeline.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
       */
-    val roleArn: Input[String] = js.native
+    val roleArn: Input[String]
     
     /**
       * A stage block. Stages are documented below.
       */
-    val stages: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]] = js.native
+    val stages: Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PipelineArgs {
     
@@ -161,38 +158,37 @@ object pipelineMod {
     }
   }
   
-  @js.native
   trait PipelineState extends StObject {
     
     /**
       * The codepipeline ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * One or more artifactStore blocks. Artifact stores are documented below.
       */
-    val artifactStore: js.UndefOr[Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore]] = js.native
+    val artifactStore: js.UndefOr[Input[typings.pulumiAws.inputMod.codepipeline.PipelineArtifactStore]] = js.undefined
     
     /**
       * The name of the pipeline.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A service role Amazon Resource Name (ARN) that grants AWS CodePipeline permission to make calls to AWS services on your behalf.
       */
-    val roleArn: js.UndefOr[Input[String]] = js.native
+    val roleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A stage block. Stages are documented below.
       */
-    val stages: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]] = js.native
+    val stages: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.codepipeline.PipelineStage]]]] = js.undefined
     
     /**
       * A map of tags to assign to the resource.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object PipelineState {
     

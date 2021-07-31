@@ -2,21 +2,19 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFacet extends StObject {
   
   /**
     * The name of the facet.
     */
-  var FacetName: js.UndefOr[typings.awsSdk.clouddirectoryMod.FacetName] = js.native
+  var FacetName: js.UndefOr[typings.awsSdk.clouddirectoryMod.FacetName] = js.undefined
   
   /**
     * The ARN of the schema that contains the facet with no minor component. See arns and In-Place Schema Upgrade for a description of when to provide minor versions.
     */
-  var SchemaArn: js.UndefOr[Arn] = js.native
+  var SchemaArn: js.UndefOr[Arn] = js.undefined
 }
 object SchemaFacet {
   

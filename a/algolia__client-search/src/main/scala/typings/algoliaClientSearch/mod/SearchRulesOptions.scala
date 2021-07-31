@@ -2,42 +2,40 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchRulesOptions extends StObject {
   
   /**
     * When specified, restricts matches to rules with a specific anchoring type. When omitted, all anchoring types may match.
     */
-  val anchoring: js.UndefOr[String] = js.native
+  val anchoring: js.UndefOr[String] = js.undefined
   
   /**
     * Restricts matches to contextual rules with a specific context (exact match).
     */
-  val context: js.UndefOr[String] = js.native
+  val context: js.UndefOr[String] = js.undefined
   
   /**
     * When specified, restricts matches to rules with a specific enabled status.
     * When absent (default), all rules are retrieved, regardless of their enabled status.
     */
-  val enabled: js.UndefOr[Boolean] = js.native
+  val enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Maximum number of hits in a page. Minimum is 1, maximum is 1000.
     */
-  val hitsPerPage: js.UndefOr[Double] = js.native
+  val hitsPerPage: js.UndefOr[Double] = js.undefined
   
   /**
     * Requested page (zero-based).
     */
-  val page: js.UndefOr[Double] = js.native
+  val page: js.UndefOr[Double] = js.undefined
   
   /**
     * Full text query.
     */
-  val query: js.UndefOr[String] = js.native
+  val query: js.UndefOr[String] = js.undefined
 }
 object SearchRulesOptions {
   

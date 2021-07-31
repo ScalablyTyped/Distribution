@@ -2,10 +2,13 @@ package typings.ckeditorCkeditor5Engine.mod.model
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operation {
+  
+  @JSImport("@ckeditor/ckeditor5-engine", "model.operation")
+  @js.native
+  val ^ : js.Any = js.native
   
   // engine/model/operation/attributeoperation
   @JSImport("@ckeditor/ckeditor5-engine", "model.operation.AttributeOperation")
@@ -72,15 +75,13 @@ object operation {
   @js.native
   class TransformationContext () extends StObject
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.operation.transform")
-  @js.native
-  def transform(a: Operation, b: Operation, context: TransformationContext): js.Array[Operation] = js.native
+  @scala.inline
+  def transform(a: Operation, b: Operation, context: TransformationContext): js.Array[Operation] = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[js.Array[Operation]]
   
-  @JSImport("@ckeditor/ckeditor5-engine", "model.operation.transformSets")
-  @js.native
+  @scala.inline
   def transformSets(
     operationsA: js.Array[Operation],
     operationsB: js.Array[Operation],
     options: typings.ckeditorCkeditor5Engine.anon.Document
-  ): js.Object = js.native
+  ): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("transformSets")(operationsA.asInstanceOf[js.Any], operationsB.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Object]
 }

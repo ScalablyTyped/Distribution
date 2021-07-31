@@ -3,13 +3,11 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFrameOwnerRequest extends StObject {
   
-  var frameId: FrameId = js.native
+  var frameId: FrameId
 }
 object GetFrameOwnerRequest {
   

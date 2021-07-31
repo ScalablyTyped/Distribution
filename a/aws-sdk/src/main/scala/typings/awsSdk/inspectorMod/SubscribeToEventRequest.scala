@@ -2,26 +2,24 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribeToEventRequest extends StObject {
   
   /**
     * The event for which you want to receive SNS notifications.
     */
-  var event: InspectorEvent = js.native
+  var event: InspectorEvent
   
   /**
     * The ARN of the assessment template that is used during the event for which you want to receive SNS notifications.
     */
-  var resourceArn: Arn = js.native
+  var resourceArn: Arn
   
   /**
     * The ARN of the SNS topic to which the SNS notifications are sent.
     */
-  var topicArn: Arn = js.native
+  var topicArn: Arn
 }
 object SubscribeToEventRequest {
   

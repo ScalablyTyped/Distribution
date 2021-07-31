@@ -2,104 +2,83 @@ package typings.probabilityDistributions
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("probability-distributions", "dexp")
+  @JSImport("probability-distributions", JSImport.Namespace)
   @js.native
-  def dexp(x: Double, rate: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("probability-distributions", "dnorm")
-  @js.native
-  def dnorm(x: Double, mean: Double, sd: Double): js.Array[Double] = js.native
+  @scala.inline
+  def dexp(x: Double, rate: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dexp")(x.asInstanceOf[js.Any], rate.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("probability-distributions", "dpois")
-  @js.native
-  def dpois(x: Double, lambda: Double): js.Array[Double] = js.native
+  @scala.inline
+  def dnorm(x: Double, mean: Double, sd: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("dnorm")(x.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], sd.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "dunif")
-  @js.native
-  def dunif(x: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def dpois(x: Double, lambda: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("dpois")(x.asInstanceOf[js.Any], lambda.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "prng")
-  @js.native
-  def prng(len: Double): Double = js.native
+  @scala.inline
+  def dunif(x: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("dunif")(x.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("probability-distributions", "rbeta")
-  @js.native
-  def rbeta(n: Double, alpha: Double, beta: Double, loc: Double): js.Array[Double] = js.native
+  @scala.inline
+  def prng(len: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("prng")(len.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("probability-distributions", "rbinom")
-  @js.native
-  def rbinom(n: Double, size: Double, p: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rbeta(n: Double, alpha: Double, beta: Double, loc: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rbeta")(n.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], beta.asInstanceOf[js.Any], loc.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rcauchy")
-  @js.native
-  def rcauchy(n: Double, loc: Double, scale: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rbinom(n: Double, size: Double, p: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rbinom")(n.asInstanceOf[js.Any], size.asInstanceOf[js.Any], p.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rchisq")
-  @js.native
-  def rchisq(n: Double, df: Double, ncp: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rcauchy(n: Double, loc: Double, scale: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rcauchy")(n.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rexp")
-  @js.native
-  def rexp(n: Double, rate: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rchisq(n: Double, df: Double, ncp: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rchisq")(n.asInstanceOf[js.Any], df.asInstanceOf[js.Any], ncp.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rf")
-  @js.native
-  def rf(n: Double, df1: Double, df2: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rexp(n: Double, rate: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rexp")(n.asInstanceOf[js.Any], rate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rfml")
-  @js.native
-  def rfml(n: Double, loc: Double, p: Double, cap: Double, trace: js.Any): js.Array[Double] = js.native
+  @scala.inline
+  def rf(n: Double, df1: Double, df2: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rf")(n.asInstanceOf[js.Any], df1.asInstanceOf[js.Any], df2.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rgamma")
-  @js.native
-  def rgamma(n: Double, alpha: Double, rate: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rfml(n: Double, loc: Double, p: Double, cap: Double, trace: js.Any): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rfml")(n.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], p.asInstanceOf[js.Any], cap.asInstanceOf[js.Any], trace.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rint")
-  @js.native
-  def rint(n: Double, min: Double, max: Double, inclusive: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rgamma(n: Double, alpha: Double, rate: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rgamma")(n.asInstanceOf[js.Any], alpha.asInstanceOf[js.Any], rate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rlaplace")
-  @js.native
-  def rlaplace(n: Double, loc: Double, scale: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rint(n: Double, min: Double, max: Double, inclusive: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rint")(n.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], inclusive.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rlnorm")
-  @js.native
-  def rlnorm(n: Double, meanlog: Double, sdlog: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rlaplace(n: Double, loc: Double, scale: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rlaplace")(n.asInstanceOf[js.Any], loc.asInstanceOf[js.Any], scale.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rnbinom")
-  @js.native
-  def rnbinom(n: Double, size: Double, p: Double, mu: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rlnorm(n: Double, meanlog: Double, sdlog: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rlnorm")(n.asInstanceOf[js.Any], meanlog.asInstanceOf[js.Any], sdlog.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rnorm")
-  @js.native
-  def rnorm(n: Double, mean: Double, sd: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rnbinom(n: Double, size: Double, p: Double, mu: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rnbinom")(n.asInstanceOf[js.Any], size.asInstanceOf[js.Any], p.asInstanceOf[js.Any], mu.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rpois")
-  @js.native
-  def rpois(n: Double, lambda: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rnorm(n: Double, mean: Double, sd: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rnorm")(n.asInstanceOf[js.Any], mean.asInstanceOf[js.Any], sd.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "ruf")
-  @js.native
-  def ruf(n: Double): js.Array[Double] = js.native
+  @scala.inline
+  def rpois(n: Double, lambda: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("rpois")(n.asInstanceOf[js.Any], lambda.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "runif")
-  @js.native
-  def runif(n: Double, min: Double, max: Double): js.Array[Double] = js.native
+  @scala.inline
+  def ruf(n: Double): js.Array[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("ruf")(n.asInstanceOf[js.Any]).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "rword")
-  @js.native
-  def rword(len: Double, alphabet: String): String = js.native
+  @scala.inline
+  def runif(n: Double, min: Double, max: Double): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("runif")(n.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("probability-distributions", "sample")
-  @js.native
-  def sample(collection: js.Array[_], n: Double, replace: Boolean, ratios: Double): js.Array[_] = js.native
+  @scala.inline
+  def rword(len: Double, alphabet: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rword")(len.asInstanceOf[js.Any], alphabet.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("probability-distributions", "visualize")
-  @js.native
-  def visualize(data: js.Array[_], domID: String, options: js.Any): js.Any = js.native
+  @scala.inline
+  def sample(collection: js.Array[js.Any], n: Double, replace: Boolean, ratios: Double): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sample")(collection.asInstanceOf[js.Any], n.asInstanceOf[js.Any], replace.asInstanceOf[js.Any], ratios.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  
+  @scala.inline
+  def visualize(data: js.Array[js.Any], domID: String, options: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("visualize")(data.asInstanceOf[js.Any], domID.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

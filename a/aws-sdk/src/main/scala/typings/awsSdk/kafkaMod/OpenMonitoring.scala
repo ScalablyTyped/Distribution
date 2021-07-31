@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenMonitoring extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait OpenMonitoring extends StObject {
     Prometheus settings.
     
     */
-  var Prometheus: typings.awsSdk.kafkaMod.Prometheus = js.native
+  var Prometheus: typings.awsSdk.kafkaMod.Prometheus
 }
 object OpenMonitoring {
   

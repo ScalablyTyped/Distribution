@@ -2,59 +2,57 @@ package typings.vsoNodeApi.testInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunUpdateModel extends StObject {
   
-  var build: ShallowReference = js.native
+  var build: ShallowReference
   
-  var buildDropLocation: String = js.native
+  var buildDropLocation: String
   
-  var buildFlavor: String = js.native
+  var buildFlavor: String
   
-  var buildPlatform: String = js.native
+  var buildPlatform: String
   
-  var comment: String = js.native
+  var comment: String
   
-  var completedDate: String = js.native
+  var completedDate: String
   
-  var controller: String = js.native
+  var controller: String
   
-  var deleteInProgressResults: Boolean = js.native
+  var deleteInProgressResults: Boolean
   
-  var dtlAutEnvironment: ShallowReference = js.native
+  var dtlAutEnvironment: ShallowReference
   
-  var dtlEnvironment: ShallowReference = js.native
+  var dtlEnvironment: ShallowReference
   
-  var dtlEnvironmentDetails: DtlEnvironmentDetails = js.native
+  var dtlEnvironmentDetails: DtlEnvironmentDetails
   
-  var dueDate: String = js.native
+  var dueDate: String
   
-  var errorMessage: String = js.native
+  var errorMessage: String
   
-  var iteration: String = js.native
+  var iteration: String
   
-  var logEntries: js.Array[TestMessageLogDetails] = js.native
+  var logEntries: js.Array[TestMessageLogDetails]
   
-  var name: String = js.native
+  var name: String
   
-  var releaseEnvironmentUri: String = js.native
+  var releaseEnvironmentUri: String
   
-  var releaseUri: String = js.native
+  var releaseUri: String
   
-  var sourceWorkflow: String = js.native
+  var sourceWorkflow: String
   
-  var startedDate: String = js.native
+  var startedDate: String
   
-  var state: String = js.native
+  var state: String
   
-  var substate: TestRunSubstate = js.native
+  var substate: TestRunSubstate
   
-  var testEnvironmentId: String = js.native
+  var testEnvironmentId: String
   
-  var testSettings: ShallowReference = js.native
+  var testSettings: ShallowReference
 }
 object RunUpdateModel {
   

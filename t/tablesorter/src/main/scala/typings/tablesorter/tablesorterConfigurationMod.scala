@@ -43,138 +43,138 @@ import typings.tablesorter.textSorterMod.TextSorter
 import typings.tablesorter.widgetOptionsMod.WidgetOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tablesorterConfigurationMod {
   
-  @js.native
-  trait TablesorterConfiguration[TElement] extends TablesorterConfigBase {
+  trait TablesorterConfiguration[TElement]
+    extends StObject
+       with TablesorterConfigBase {
     
     /**
       * A value indicating whether the selection of the text in the table headers should be disabled.
       */
-    var cancelSelection: js.UndefOr[Boolean] = js.native
+    var cancelSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether only visible rows should be affected by the checkbox located in the header.
       */
-    var cehckboxVisible: js.UndefOr[Boolean] = js.native
+    var cehckboxVisible: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A class to add to checked rows.
       */
-    var checkboxClass: js.UndefOr[String] = js.native
+    var checkboxClass: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to table headers with ascending sort.
       */
-    var cssAsc: js.UndefOr[String] = js.native
+    var cssAsc: js.UndefOr[String] = js.undefined
     
     /**
       * A class for indicating rows which should be attached to the above row.
       */
-    var cssChildRow: js.UndefOr[String] = js.native
+    var cssChildRow: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to table headers with descending sort.
       */
-    var cssDesc: js.UndefOr[String] = js.native
+    var cssDesc: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to the table headers.
       */
-    var cssHeader: js.UndefOr[String] = js.native
+    var cssHeader: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to the header-row.
       */
-    var cssHeaderRow: js.UndefOr[String] = js.native
+    var cssHeaderRow: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to the sort-icons.
       */
-    var cssIcon: js.UndefOr[String] = js.native
+    var cssIcon: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to sort-icons for with ascending sorting.
       */
-    var cssIconAsc: js.UndefOr[String] = js.native
+    var cssIconAsc: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to sort-icons with descending sorting.
       */
-    var cssIconDesc: js.UndefOr[String] = js.native
+    var cssIconDesc: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to sort-icons with disabled sorting.
       */
-    var cssIconDisabled: js.UndefOr[String] = js.native
+    var cssIconDisabled: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to sort-icons without sorting.
       */
-    var cssIconNone: js.UndefOr[String] = js.native
+    var cssIconNone: js.UndefOr[String] = js.undefined
     
     /**
       * A class for indicating rows which should be ignored.
       */
-    var cssIgnoreRow: js.UndefOr[String] = js.native
+    var cssIgnoreRow: js.UndefOr[String] = js.undefined
     
     /**
       * A class for indicating `tbody`s which should not be sortable.
       */
-    var cssInfoBlock: js.UndefOr[String] = js.native
+    var cssInfoBlock: js.UndefOr[String] = js.undefined
     
     /**
       * A class for indicating elements which don't cause a sort when clicking on them.
       */
-    var cssNoSort: js.UndefOr[String] = js.native
+    var cssNoSort: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to headers when no sort is applied.
       */
-    var cssNone: js.UndefOr[String] = js.native
+    var cssNone: js.UndefOr[String] = js.undefined
     
     /**
       * A class to add to the header-row while applying a processing the table.
       */
-    var cssProcessing: js.UndefOr[String] = js.native
+    var cssProcessing: js.UndefOr[String] = js.undefined
     
     /**
       * The storage for the `build-table` widget.
       */
-    var data: js.UndefOr[js.Object | js.Array[js.Array[_]]] = js.native
+    var data: js.UndefOr[js.Object | js.Array[js.Array[js.Any]]] = js.undefined
     
     /**
       * The date-range for two-digit years.
       */
-    var dateRange: js.UndefOr[Double] = js.native
+    var dateRange: js.UndefOr[Double] = js.undefined
     
     /**
       * Either value indicating whether debug-information should be printed or a set of plugin-names to print debug-information from.
       */
-    var debug: js.UndefOr[Boolean | String] = js.native
+    var debug: js.UndefOr[Boolean | String] = js.undefined
     
     /**
       * A value indicating whether the table should be initialized upon the initial sort-action.
       */
-    var delayInit: js.UndefOr[Boolean] = js.native
+    var delayInit: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether contents of spanned cells should be sortable and filterable in all table headers.
       */
-    var duplicateSpan: js.UndefOr[Boolean] = js.native
+    var duplicateSpan: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The sorting to apply for empty cells.
       */
-    var emptyTo: js.UndefOr[EmptySorting] = js.native
+    var emptyTo: js.UndefOr[EmptySorting] = js.undefined
     
     /**
       * Either global `Globalize`-settings or per-column `Globalize`-settings to apply.
       */
-    var globalize: js.UndefOr[GlobalizeSettings | NumberDictionary[GlobalizeSettings]] = js.native
+    var globalize: js.UndefOr[GlobalizeSettings | NumberDictionary[GlobalizeSettings]] = js.undefined
     
     /**
       * A template for generating headers.
@@ -185,47 +185,47 @@ object tablesorterConfigurationMod {
       *
       * This template may also contain html-code.
       */
-    var headerTemplate: js.UndefOr[String] = js.native
+    var headerTemplate: js.UndefOr[String] = js.undefined
     
     /**
       * Specific configurations for separate headers.
       */
-    var headers: js.UndefOr[NumberDictionary[TablesorterHeading]] = js.native
+    var headers: js.UndefOr[NumberDictionary[TablesorterHeading]] = js.undefined
     
     /**
       * A value indicating whether letter-case should be considered while sorting.
       */
-    var ignoreCase: js.UndefOr[Boolean] = js.native
+    var ignoreCase: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether changes to child-rows are ignored by the table-sorter.
       */
-    var ignoreChildRow: js.UndefOr[Boolean] = js.native
+    var ignoreChildRow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The attribute to read the text-value from `img`-tags.
       */
-    var imgAttr: js.UndefOr[String] = js.native
+    var imgAttr: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether widgets should be initialized.
       */
-    var initWidgets: js.UndefOr[Boolean] = js.native
+    var initWidgets: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Processes the table after the initialization.
       */
-    var initialized: js.UndefOr[InitializationEventHandler[TElement]] = js.native
+    var initialized: js.UndefOr[InitializationEventHandler[TElement]] = js.undefined
     
     /**
       * The namespace of the table.
       */
-    var namespace: js.UndefOr[String] = js.native
+    var namespace: js.UndefOr[String] = js.undefined
     
     /**
       * The number-sorting to apply.
       */
-    var numberSorter: js.UndefOr[NumberSorter] = js.native
+    var numberSorter: js.UndefOr[NumberSorter] = js.undefined
     
     /**
       * A function to execute after the content of the header is processed.
@@ -239,7 +239,7 @@ object tablesorterConfigurationMod {
       * @param table
       * The jQuery-object of the table.
       */
-    var onRenderHeader: js.UndefOr[RenderHeaderEventHandler[TElement]] = js.native
+    var onRenderHeader: js.UndefOr[RenderHeaderEventHandler[TElement]] = js.undefined
     
     /**
       * A function for processing the header.
@@ -253,165 +253,165 @@ object tablesorterConfigurationMod {
       * @return
       * A manipulated version of the content of the header.
       */
-    var onRenderTemplate: js.UndefOr[RenderTemplateEventHandler] = js.native
+    var onRenderTemplate: js.UndefOr[RenderTemplateEventHandler] = js.undefined
     
     /**
       * One or more events which should be considered as a `click`-event.
       */
-    var pointerClick: js.UndefOr[String] = js.native
+    var pointerClick: js.UndefOr[String] = js.undefined
     
     /**
       * One or more events which should be considered as a `mousedown`-event.
       */
-    var pointerDown: js.UndefOr[String] = js.native
+    var pointerDown: js.UndefOr[String] = js.undefined
     
     /**
       * One or more events which should be considered as a `mouseup`-event.
       */
-    var pointerUp: js.UndefOr[String] = js.native
+    var pointerUp: js.UndefOr[String] = js.undefined
     
     /**
       * A value indicating whether the sorting should be reapplied after an update of the table-data.
       */
-    var resort: js.UndefOr[Boolean] = js.native
+    var resort: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A jQuery-selector for finding cells in the header-row.
       */
-    var selectorHeaders: js.UndefOr[Selector] = js.native
+    var selectorHeaders: js.UndefOr[Selector] = js.undefined
     
     /**
       * A jQuery-selector for finding rows to remove prior to a table-update.
       */
-    var selectorRemove: js.UndefOr[Selector] = js.native
+    var selectorRemove: js.UndefOr[Selector] = js.undefined
     
     /**
       * A jQuery-selector to find clickable elements inside the result of `selectorHeaders` for triggering a sort.
       */
-    var selectorSort: js.UndefOr[Selector] = js.native
+    var selectorSort: js.UndefOr[Selector] = js.undefined
     
     /**
       * A value indicating whether the sorting is performed by the server.
       */
-    var serverSideSorting: js.UndefOr[Boolean] = js.native
+    var serverSideSorting: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether a timer icon should be shown while applying sorting and filtering.
       */
-    var showProcessing: js.UndefOr[Boolean] = js.native
+    var showProcessing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sortings to append to the current sorting.
       */
-    var sortAppend: js.UndefOr[js.Array[SortDefinition] | NumberDictionary[js.Array[RelativeSortDefinition]]] = js.native
+    var sortAppend: js.UndefOr[js.Array[SortDefinition] | NumberDictionary[js.Array[RelativeSortDefinition]]] = js.undefined
     
     /**
       * Sortings to prepend to the current sorting.
       */
-    var sortForce: js.UndefOr[js.Array[SortDefinition]] = js.native
+    var sortForce: js.UndefOr[js.Array[SortDefinition]] = js.undefined
     
     /**
       * The initial sorting after the initialization of the table.
       */
-    var sortList: js.UndefOr[js.Array[SortDefinition]] = js.native
+    var sortList: js.UndefOr[js.Array[SortDefinition]] = js.undefined
     
     /**
       * A value indicating whether accent character should be converted to their equivalent characters during sort.
       */
-    var sortLocaleCompare: js.UndefOr[Boolean] = js.native
+    var sortLocaleCompare: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key which is used for selecting multiple columns.
       */
     var sortMultiSortKey: js.UndefOr[
         altKey | button | buttons | clientX | clientY | ctrlKey | metaKey | movementX | movementY | offsetX | offsetY | pageX | pageY | relatedTarget | screenX | screenY | shiftKey | x | y
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A value indicating whether the user can reset a sorting of a column by clicking on it a third time.
       */
-    var sortReset: js.UndefOr[Boolean] = js.native
+    var sortReset: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The key to hold while clicking on a heading for reseting the sorting for the whole table.
       */
     var sortResetKey: js.UndefOr[
         altKey | button | buttons | clientX | clientY | ctrlKey | metaKey | movementX | movementY | offsetX | offsetY | pageX | pageY | relatedTarget | screenX | screenY | shiftKey | x | y
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A value indicating whether sortings other than the ones in the `sortList` should be prevented.
       */
-    var sortRestart: js.UndefOr[Boolean] = js.native
+    var sortRestart: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A value indicating whether to apply the original sorting when two cells have the same value.
       */
-    var sortStable: js.UndefOr[Boolean] = js.native
+    var sortStable: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The sorting to apply to text cells in numeric columns.
       */
-    var stringTo: js.UndefOr[StringSorting] = js.native
+    var stringTo: js.UndefOr[StringSorting] = js.undefined
     
     /**
       * A value indicating whether tabbing through table headings is enabled.
       */
-    var tabIndex: js.UndefOr[Boolean] = js.native
+    var tabIndex: js.UndefOr[Boolean] = js.undefined
     
     /**
       * A class to add to the table.
       */
-    var tableClass: js.UndefOr[String] = js.native
+    var tableClass: js.UndefOr[String] = js.undefined
     
     /**
       * The `data-attribute` to automatically read text from cells.
       */
-    var textAttribute: js.UndefOr[String] = js.native
+    var textAttribute: js.UndefOr[String] = js.undefined
     
     /**
       * The methods for extracting text from cells.
       */
     var textExtraction: js.UndefOr[
         basic | TextExtractor[TElement] | (MappedSettings[basic | TextExtractor[TElement]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The text-sorting to apply.
       */
-    var textSorter: js.UndefOr[TextSorter[TElement] | MappedSettings[TextSorter[TElement]]] = js.native
+    var textSorter: js.UndefOr[TextSorter[TElement] | MappedSettings[TextSorter[TElement]]] = js.undefined
     
     /**
       * The theme to use.
       */
-    var theme: js.UndefOr[CoreTheme | String] = js.native
+    var theme: js.UndefOr[CoreTheme | String] = js.undefined
     
     /**
       * A value indicating whether to use `en-US`-flavored numbers.
       */
-    var usNumberFormat: js.UndefOr[Boolean] = js.native
+    var usNumberFormat: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The format of the class-names for automatically loading the widget with the id `{name}`.
       *
       * The default setting is `widget-{name}`.
       */
-    var widgetClass: js.UndefOr[String] = js.native
+    var widgetClass: js.UndefOr[String] = js.undefined
     
     /**
       * The options for the widgets.
       */
-    var widgetOptions: js.UndefOr[WidgetOptions[TElement]] = js.native
+    var widgetOptions: js.UndefOr[WidgetOptions[TElement]] = js.undefined
     
     /**
       * The widgets to initialize.
       */
-    var widgets: js.UndefOr[js.Array[String]] = js.native
+    var widgets: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * A value indicating whether the width of the columns should be fixed.
       */
-    var widthFixed: js.UndefOr[Boolean] = js.native
+    var widthFixed: js.UndefOr[Boolean] = js.undefined
   }
   object TablesorterConfiguration {
     
@@ -422,7 +422,7 @@ object tablesorterConfigurationMod {
     }
     
     @scala.inline
-    implicit class TablesorterConfigurationMutableBuilder[Self <: TablesorterConfiguration[_], TElement] (val x: Self with TablesorterConfiguration[TElement]) extends AnyVal {
+    implicit class TablesorterConfigurationMutableBuilder[Self <: TablesorterConfiguration[?], TElement] (val x: Self & TablesorterConfiguration[TElement]) extends AnyVal {
       
       @scala.inline
       def setCancelSelection(value: Boolean): Self = StObject.set(x, "cancelSelection", value.asInstanceOf[js.Any])
@@ -533,7 +533,7 @@ object tablesorterConfigurationMod {
       def setCssProcessingUndefined: Self = StObject.set(x, "cssProcessing", js.undefined)
       
       @scala.inline
-      def setData(value: js.Object | js.Array[js.Array[_]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+      def setData(value: js.Object | js.Array[js.Array[js.Any]]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)

@@ -12,7 +12,7 @@ a javascript library for dealing with (bitwise) uint32 operations
 | Keywords           | uint32, bitwise, binary, shift, rotate |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 54090 |
+| # downloads        | 73671 |
 | # stars            | 1 |
 
 ## Links

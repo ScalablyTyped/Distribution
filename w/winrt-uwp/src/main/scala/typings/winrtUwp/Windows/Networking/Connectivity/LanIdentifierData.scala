@@ -3,18 +3,16 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the port specific data that enables LAN locality capabilities. */
-@js.native
 trait LanIdentifierData extends StObject {
   
   /** Gets a value indicating the type of data stored in the value field of the LanIdentifierData object according to the Link Layer Discovery Protocol (LLDP) protocol. */
-  var `type`: Double = js.native
+  var `type`: Double
   
   /** Gets the serialized value. */
-  var value: IVectorView[Double] = js.native
+  var value: IVectorView[Double]
 }
 object LanIdentifierData {
   

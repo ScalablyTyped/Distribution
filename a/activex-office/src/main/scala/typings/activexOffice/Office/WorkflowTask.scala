@@ -3,38 +3,36 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkflowTask extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val AssignedTo: String = js.native
+  val AssignedTo: String
   
-  val CreatedBy: String = js.native
+  val CreatedBy: String
   
-  val CreatedDate: VarDate = js.native
+  val CreatedDate: VarDate
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Description: String = js.native
+  val Description: String
   
-  val DueDate: VarDate = js.native
+  val DueDate: VarDate
   
-  val Id: String = js.native
+  val Id: String
   
-  val ListID: String = js.native
+  val ListID: String
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.WorkflowTask_typekey")
-  var OfficeDotWorkflowTask_typekey: WorkflowTask = js.native
+  var OfficeDotWorkflowTask_typekey: WorkflowTask
   
-  def Show(): Double = js.native
+  def Show(): Double
   
-  val WorkflowID: String = js.native
+  val WorkflowID: String
 }
 object WorkflowTask {
   

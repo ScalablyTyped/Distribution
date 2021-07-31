@@ -12,7 +12,7 @@ React PropTypes for ES6 Sets and compatible interfaces
 | Keywords           | react, proptypes, es6, collections |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 40158 |
+| # downloads        | 28028 |
 | # stars            | 0 |
 
 ## Links

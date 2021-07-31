@@ -2,24 +2,22 @@ package typings.winrtUwp.Windows.Perception.Spatial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Surfaces {
   
-  @js.native
   trait SpatialSurfaceInfo extends StObject {
     
-    var id: js.Any = js.native
+    var id: js.Any
     
     /* unmapped type */
-    var tryComputeLatestMeshAsync: js.Any = js.native
+    var tryComputeLatestMeshAsync: js.Any
     
     /* unmapped type */
-    var tryGetBounds: js.Any = js.native
+    var tryGetBounds: js.Any
     
     /* unmapped type */
-    var updateTime: js.Any = js.native
+    var updateTime: js.Any
   }
   object SpatialSurfaceInfo {
     
@@ -46,25 +44,24 @@ object Surfaces {
     }
   }
   
-  @js.native
   trait SpatialSurfaceMesh extends StObject {
     
-    var coordinateSystem: js.Any = js.native
+    var coordinateSystem: js.Any
     
     /* unmapped type */
-    var surfaceInfo: js.Any = js.native
+    var surfaceInfo: js.Any
     
     /* unmapped type */
-    var triangleIndices: js.Any = js.native
+    var triangleIndices: js.Any
     
     /* unmapped type */
-    var vertexNormals: js.Any = js.native
+    var vertexNormals: js.Any
     
     /* unmapped type */
-    var vertexPositionScale: js.Any = js.native
+    var vertexPositionScale: js.Any
     
     /* unmapped type */
-    var vertexPositions: js.Any = js.native
+    var vertexPositions: js.Any
   }
   object SpatialSurfaceMesh {
     
@@ -104,19 +101,18 @@ object Surfaces {
     }
   }
   
-  @js.native
   trait SpatialSurfaceMeshBuffer extends StObject {
     
-    var data: js.Any = js.native
+    var data: js.Any
     
     /* unmapped type */
-    var elementCount: js.Any = js.native
+    var elementCount: js.Any
     
     /* unmapped type */
-    var format: js.Any = js.native
+    var format: js.Any
     
     /* unmapped type */
-    var stride: js.Any = js.native
+    var stride: js.Any
   }
   object SpatialSurfaceMeshBuffer {
     
@@ -143,20 +139,19 @@ object Surfaces {
     }
   }
   
-  @js.native
   trait SpatialSurfaceMeshOptions extends StObject {
     
     /* unmapped type */
-    var includeVertexNormals: js.Any = js.native
+    var includeVertexNormals: js.Any
     
     /* unmapped type */
-    var triangleIndexFormat: js.Any = js.native
+    var triangleIndexFormat: js.Any
     
     /* unmapped type */
-    var vertexNormalFormat: js.Any = js.native
+    var vertexNormalFormat: js.Any
     
     /* unmapped type */
-    var vertexPositionFormat: js.Any = js.native
+    var vertexPositionFormat: js.Any
   }
   object SpatialSurfaceMeshOptions {
     
@@ -188,26 +183,25 @@ object Surfaces {
     }
   }
   
-  @js.native
   trait SpatialSurfaceObserver extends StObject {
     
     /* unmapped type */
-    var addEventListener: js.Any = js.native
+    var addEventListener: js.Any
     
     /* unmapped type */
-    var getObservedSurfaces: js.Any = js.native
+    var getObservedSurfaces: js.Any
     
     /* unmapped type */
-    var onobservedsurfaceschanged: js.Any = js.native
+    var onobservedsurfaceschanged: js.Any
     
     /* unmapped type */
-    var removeEventListener: js.Any = js.native
+    var removeEventListener: js.Any
     
     /* unmapped type */
-    var setBoundingVolume: js.Any = js.native
+    var setBoundingVolume: js.Any
     
     /* unmapped type */
-    var setBoundingVolumes: js.Any = js.native
+    var setBoundingVolumes: js.Any
   }
   object SpatialSurfaceObserver {
     

@@ -7,10 +7,13 @@ import typings.reactFlexr.ReactFlexr.GridProps
 import typings.reactFlexr.ReactFlexr.OptimizedResize
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-flexr", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-flexr", "Cell")
   @js.native
@@ -26,17 +29,14 @@ object mod {
   @js.native
   val desk: String = js.native
   
-  @JSImport("react-flexr", "findBreakpoints")
-  @js.native
-  def findBreakpoints(): js.Array[ErgonomicType] | Boolean = js.native
+  @scala.inline
+  def findBreakpoints(): js.Array[ErgonomicType] | Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findBreakpoints")().asInstanceOf[js.Array[ErgonomicType] | Boolean]
   
-  @JSImport("react-flexr", "findMatch")
-  @js.native
-  def findMatch(arguments: ErgonomicType*): Boolean = js.native
+  @scala.inline
+  def findMatch(arguments: ErgonomicType*): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("findMatch")(arguments.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("react-flexr", "getCurrentBreakpoints")
-  @js.native
-  def getCurrentBreakpoints(): js.Array[ErgonomicType] = js.native
+  @scala.inline
+  def getCurrentBreakpoints(): js.Array[ErgonomicType] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentBreakpoints")().asInstanceOf[js.Array[ErgonomicType]]
   
   @JSImport("react-flexr", "lap")
   @js.native
@@ -54,7 +54,6 @@ object mod {
   @js.native
   val portable: String = js.native
   
-  @JSImport("react-flexr", "setBreakpoints")
-  @js.native
-  def setBreakpoints(breakpoints: js.Array[ErgonomicType]): Unit = js.native
+  @scala.inline
+  def setBreakpoints(breakpoints: js.Array[ErgonomicType]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setBreakpoints")(breakpoints.asInstanceOf[js.Any]).asInstanceOf[Unit]
 }

@@ -2,12 +2,10 @@ package typings.pulumiAws
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routingRulesMod {
   
-  @js.native
   trait Condition extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object routingRulesMod {
       * `HttpErrorCodeReturnedEquals` is required if `KeyPrefixEquals` is not specified. If both `KeyPrefixEquals` and
       * `HttpErrorCodeReturnedEquals` are specified, both must be true for the condition to be met.
       */
-    var HttpErrorCodeReturnedEquals: js.UndefOr[String] = js.native
+    var HttpErrorCodeReturnedEquals: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix of the object key name from which requests are redirected.
@@ -25,7 +23,7 @@ object routingRulesMod {
       * `KeyPrefixEquals` is required if `HttpErrorCodeReturnedEquals` is not specified. If both `KeyPrefixEquals` and
       * `HttpErrorCodeReturnedEquals` are specified, both must be true for the condition to be met.
       */
-    var KeyPrefixEquals: js.UndefOr[String] = js.native
+    var KeyPrefixEquals: js.UndefOr[String] = js.undefined
   }
   object Condition {
     
@@ -52,7 +50,6 @@ object routingRulesMod {
     }
   }
   
-  @js.native
   trait Redirect extends StObject {
     
     /**
@@ -60,21 +57,21 @@ object routingRulesMod {
       *
       * If another property is set, `HostName` is not required.
       */
-    var HostName: js.UndefOr[String] = js.native
+    var HostName: js.UndefOr[String] = js.undefined
     
     /**
       * The HTTP redirect code to be used in the Location header that is returned in the response.
       *
       * If another property is set, `HttpRedirectCode` is not required.
       */
-    var HttpRedirectCode: js.UndefOr[String] = js.native
+    var HttpRedirectCode: js.UndefOr[String] = js.undefined
     
     /**
       * The protocol, http or https, to be used in the Location header that is returned in the response.
       *
       * If another property is set, `Protocol` is not required.
       */
-    var Protocol: js.UndefOr[String] = js.native
+    var Protocol: js.UndefOr[String] = js.undefined
     
     /**
       * The prefix of the object key name that replaces the value of `KeyPrefixEquals` in the redirect request.
@@ -82,7 +79,7 @@ object routingRulesMod {
       * If another property is set, `ReplaceKeyPrefixWith` is not required.
       * It can be set only if `ReplaceKeyWith` is not set.
       */
-    var ReplaceKeyPrefixWith: js.UndefOr[String] = js.native
+    var ReplaceKeyPrefixWith: js.UndefOr[String] = js.undefined
     
     /**
       * The object key to be used in the Location header that is returned in the response.
@@ -90,7 +87,7 @@ object routingRulesMod {
       * If another property is set, `ReplaceKeyWith` is not required.
       * It can be set only if `ReplaceKeyPrefixWith` is not set.
       */
-    var ReplaceKeyWith: js.UndefOr[String] = js.native
+    var ReplaceKeyWith: js.UndefOr[String] = js.undefined
   }
   object Redirect {
     
@@ -135,20 +132,19 @@ object routingRulesMod {
     }
   }
   
-  @js.native
   trait RoutingRule extends StObject {
     
     /**
       * A condition that must be met for the specified redirect to be applied.
       * If not included, the rule is applied to all requests.
       */
-    var Condition: js.UndefOr[typings.pulumiAws.routingRulesMod.Condition] = js.native
+    var Condition: js.UndefOr[typings.pulumiAws.routingRulesMod.Condition] = js.undefined
     
     /**
       * Provides instructions for redirecting the request. You can redirect requests to another host or another page,
       * or you can specify another protocol to use.
       */
-    var Redirect: typings.pulumiAws.routingRulesMod.Redirect = js.native
+    var Redirect: typings.pulumiAws.routingRulesMod.Redirect
   }
   object RoutingRule {
     

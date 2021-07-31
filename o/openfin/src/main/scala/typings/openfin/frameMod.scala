@@ -8,30 +8,30 @@ import typings.openfin.openfinStrings.frame
 import typings.openfin.openfinStrings.iframe
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object frameMod {
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.openfin.eventsBaseMod.RuntimeEvent because Already inherited */ @js.native
-  trait FrameEvent[Type] extends WindowEvent[frame, Type] {
+  - typings.openfin.eventsBaseMod.RuntimeEvent because Already inherited */ trait FrameEvent[Type]
+    extends StObject
+       with WindowEvent[frame, Type] {
     
-    var entityType: iframe = js.native
+    var entityType: iframe
     
-    var frameName: String = js.native
+    var frameName: String
   }
   object FrameEvent {
     
     @scala.inline
-    def apply[Type](entityType: iframe, frameName: String, name: String, topic: frame, `type`: Type, uuid: String): FrameEvent[Type] = {
-      val __obj = js.Dynamic.literal(entityType = entityType.asInstanceOf[js.Any], frameName = frameName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = topic.asInstanceOf[js.Any], uuid = uuid.asInstanceOf[js.Any])
+    def apply[Type](frameName: String, name: String, `type`: Type, uuid: String): FrameEvent[Type] = {
+      val __obj = js.Dynamic.literal(entityType = "iframe", frameName = frameName.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], topic = "frame", uuid = uuid.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[FrameEvent[Type]]
     }
     
     @scala.inline
-    implicit class FrameEventMutableBuilder[Self <: FrameEvent[_], Type] (val x: Self with FrameEvent[Type]) extends AnyVal {
+    implicit class FrameEventMutableBuilder[Self <: FrameEvent[?], Type] (val x: Self & FrameEvent[Type]) extends AnyVal {
       
       @scala.inline
       def setEntityType(value: iframe): Self = StObject.set(x, "entityType", value.asInstanceOf[js.Any])
@@ -41,12 +41,13 @@ object frameMod {
     }
   }
   
-  @js.native
-  trait FrameEvents extends BaseEventMap {
+  trait FrameEvents
+    extends StObject
+       with BaseEventMap {
     
-    var connected: FrameEvent[typings.openfin.openfinStrings.connected] = js.native
+    var connected: FrameEvent[typings.openfin.openfinStrings.connected]
     
-    var disconnected: FrameEvent[typings.openfin.openfinStrings.disconnected] = js.native
+    var disconnected: FrameEvent[typings.openfin.openfinStrings.disconnected]
   }
   object FrameEvents {
     

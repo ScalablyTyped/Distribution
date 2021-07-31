@@ -22,7 +22,6 @@ import typings.gatsbyCli.gatsbyCliStrings._empty
 import typings.gatsbyCli.structuredErrorsTypesMod.IStructuredStackFrame
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -105,30 +104,29 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IActivity extends StObject {
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var errored: js.UndefOr[Boolean] = js.native
+    var errored: js.UndefOr[Boolean] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var startTime: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var startTime: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
     
-    var status: ActivityStatuses = js.native
+    var status: ActivityStatuses
     
-    var statusText: String = js.native
+    var statusText: String
     
-    var text: String = js.native
+    var text: String
     
-    var total: js.UndefOr[Double] = js.native
+    var total: js.UndefOr[Double] = js.undefined
     
-    var `type`: ActivityTypes = js.native
+    var `type`: ActivityTypes
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object IActivity {
     
@@ -199,12 +197,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait IActivityErrored extends ActionsUnion {
+  trait IActivityErrored
+    extends StObject
+       with ActionsUnion {
     
-    var payload: IdString = js.native
+    var payload: IdString
     
-    var `type`: ActivityErrored = js.native
+    var `type`: ActivityErrored
   }
   object IActivityErrored {
     
@@ -226,12 +225,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ICancelActivity extends ActionsUnion {
+  trait ICancelActivity
+    extends StObject
+       with ActionsUnion {
     
-    var payload: Duration = js.native
+    var payload: Duration
     
-    var `type`: CancelActivity = js.native
+    var `type`: CancelActivity
   }
   object ICancelActivity {
     
@@ -253,12 +253,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ICreateLog extends ActionsUnion {
+  trait ICreateLog
+    extends StObject
+       with ActionsUnion {
     
-    var payload: ILog = js.native
+    var payload: ILog
     
-    var `type`: Log = js.native
+    var `type`: Log
   }
   object ICreateLog {
     
@@ -280,12 +281,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait IEndActivity extends ActionsUnion {
+  trait IEndActivity
+    extends StObject
+       with ActionsUnion {
     
-    var payload: Type = js.native
+    var payload: Type
     
-    var `type`: EndActivity = js.native
+    var `type`: EndActivity
   }
   object IEndActivity {
     
@@ -307,14 +309,13 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IGatsbyCLIState extends StObject {
     
-    var activities: StringDictionary[IActivity] = js.native
+    var activities: StringDictionary[IActivity]
     
-    var messages: js.Array[ILog] = js.native
+    var messages: js.Array[ILog]
     
-    var status: ActivityStatuses | _empty = js.native
+    var status: ActivityStatuses | _empty
   }
   object IGatsbyCLIState {
     
@@ -345,48 +346,47 @@ object typesMod {
     }
   }
   
-  @js.native
   trait ILog extends StObject {
     
-    var activity_current: js.UndefOr[Double] = js.native
+    var activity_current: js.UndefOr[Double] = js.undefined
     
-    var activity_total: js.UndefOr[Double] = js.native
+    var activity_total: js.UndefOr[Double] = js.undefined
     
-    var activity_type: js.UndefOr[String] = js.native
+    var activity_type: js.UndefOr[String] = js.undefined
     
-    var activity_uuid: js.UndefOr[String] = js.native
+    var activity_uuid: js.UndefOr[String] = js.undefined
     
     var category: js.UndefOr[
         /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ErrorCategory * / any */ String
-      ] = js.native
+      ] = js.undefined
     
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
-    var docsUrl: js.UndefOr[String] = js.native
+    var docsUrl: js.UndefOr[String] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var filePath: js.UndefOr[String] = js.native
+    var filePath: js.UndefOr[String] = js.undefined
     
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var level: String = js.native
+    var level: String
     
-    var location: js.UndefOr[End] = js.native
+    var location: js.UndefOr[End] = js.undefined
     
-    var pluginName: js.UndefOr[String] = js.native
+    var pluginName: js.UndefOr[String] = js.undefined
     
-    var stack: js.UndefOr[js.Array[IStructuredStackFrame]] = js.native
+    var stack: js.UndefOr[js.Array[IStructuredStackFrame]] = js.undefined
     
-    var statusText: js.UndefOr[String] = js.native
+    var statusText: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var timestamp: String = js.native
+    var timestamp: String
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ILog {
     
@@ -514,12 +514,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait IPendingActivity extends ActionsUnion {
+  trait IPendingActivity
+    extends StObject
+       with ActionsUnion {
     
-    var payload: StartTime = js.native
+    var payload: StartTime
     
-    var `type`: PendingActivity = js.native
+    var `type`: PendingActivity
   }
   object IPendingActivity {
     
@@ -541,12 +542,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ISetLogs extends ActionsUnion {
+  trait ISetLogs
+    extends StObject
+       with ActionsUnion {
     
-    var payload: IGatsbyCLIState = js.native
+    var payload: IGatsbyCLIState
     
-    var `type`: SetLogs = js.native
+    var `type`: SetLogs
   }
   object ISetLogs {
     
@@ -568,12 +570,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait ISetStatus extends ActionsUnion {
+  trait ISetStatus
+    extends StObject
+       with ActionsUnion {
     
-    var payload: ActivityStatuses | _empty = js.native
+    var payload: ActivityStatuses | _empty
     
-    var `type`: SetStatus = js.native
+    var `type`: SetStatus
   }
   object ISetStatus {
     
@@ -595,12 +598,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait IStartActivity extends ActionsUnion {
+  trait IStartActivity
+    extends StObject
+       with ActionsUnion {
     
-    var payload: IActivity = js.native
+    var payload: IActivity
     
-    var `type`: StartActivity = js.native
+    var `type`: StartActivity
   }
   object IStartActivity {
     
@@ -622,12 +626,13 @@ object typesMod {
     }
   }
   
-  @js.native
-  trait IUpdateActivity extends ActionsUnion {
+  trait IUpdateActivity
+    extends StObject
+       with ActionsUnion {
     
-    var payload: Uuid = js.native
+    var payload: Uuid
     
-    var `type`: UpdateActivity = js.native
+    var `type`: UpdateActivity
   }
   object IUpdateActivity {
     

@@ -3,7 +3,6 @@ package typings.googleapis.securitycenterV1Mod.securitycenterV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * enforcement. For example, an XSS vulnerability in an App Engine application
   * is a finding.
   */
-@js.native
 trait SchemaFinding extends StObject {
   
   /**
@@ -21,33 +19,33 @@ trait SchemaFinding extends StObject {
     * field is immutable after creation time. Example:
     * &quot;XSS_FLASH_INJECTION&quot;
     */
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the finding was created in Cloud SCC.
     */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /**
     * The time at which the event took place. For example, if the finding
     * represents an open firewall it would capture the time the open firewall
     * was detected.
     */
-  var eventTime: js.UndefOr[String] = js.native
+  var eventTime: js.UndefOr[String] = js.undefined
   
   /**
     * The URI that, if available, points to a web page outside of Cloud SCC
     * where additional information about the finding can be found. This field
     * is guaranteed to be either empty or a well formed URL.
     */
-  var externalUri: js.UndefOr[String] = js.native
+  var externalUri: js.UndefOr[String] = js.undefined
   
   /**
     * The relative resource name of this finding. See:
     * https://cloud.google.com/apis/design/resource_names#relative_resource_name
     * Example: &quot;organizations/123/sources/456/findings/789&quot;
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The relative resource name of the source the finding belongs to. See:
@@ -55,7 +53,7 @@ trait SchemaFinding extends StObject {
     * This field is immutable after creation time. For example:
     * &quot;organizations/123/sources/456&quot;
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * The full resource name of the Google Cloud Platform (GCP) resource this
@@ -63,14 +61,14 @@ trait SchemaFinding extends StObject {
     * https://cloud.google.com/apis/design/resource_names#full_resource_name
     * This field is immutable after creation time.
     */
-  var resourceName: js.UndefOr[String] = js.native
+  var resourceName: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. User specified security marks. These marks are entirely
     * managed by the user and come from the SecurityMarks resource that belongs
     * to the finding.
     */
-  var securityMarks: js.UndefOr[SchemaSecurityMarks] = js.native
+  var securityMarks: js.UndefOr[SchemaSecurityMarks] = js.undefined
   
   /**
     * Source specific properties. These properties are managed by the source
@@ -78,12 +76,12 @@ trait SchemaFinding extends StObject {
     * be between 1 and 255 characters, and must start with a letter and contain
     * alphanumeric characters or underscores only.
     */
-  var sourceProperties: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var sourceProperties: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The state of the finding.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaFinding {
   

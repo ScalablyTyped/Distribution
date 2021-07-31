@@ -4,7 +4,6 @@ import typings.sodiumjs.vertexMod.Vertex
 import typings.typescriptCollections.mod.PriorityQueue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transactionMod {
@@ -78,9 +77,8 @@ object transactionMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction._collectCyclesAtEnd")
-    @js.native
-    def _collectCyclesAtEnd(): Unit = js.native
+    @scala.inline
+    def _collectCyclesAtEnd(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("_collectCyclesAtEnd")().asInstanceOf[Unit]
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.collectCyclesAtEnd")
     @js.native
@@ -101,9 +99,8 @@ object transactionMod {
       *
       * The main use case of this is the implementation of a time/alarm system.
       */
-    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.onStart")
-    @js.native
-    def onStart(r: js.Function0[Unit]): Unit = js.native
+    @scala.inline
+    def onStart(r: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onStart")(r.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.onStartHooks")
     @js.native
@@ -111,9 +108,8 @@ object transactionMod {
     @scala.inline
     def onStartHooks_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("onStartHooks")(x.asInstanceOf[js.Any])
     
-    @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.run")
-    @js.native
-    def run[A](f: js.Function0[A]): A = js.native
+    @scala.inline
+    def run[A](f: js.Function0[A]): A = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(f.asInstanceOf[js.Any]).asInstanceOf[A]
     
     @JSImport("sodiumjs/dist/typings/sodium/Transaction", "Transaction.runningOnStartHooks")
     @js.native

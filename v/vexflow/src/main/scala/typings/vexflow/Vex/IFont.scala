@@ -5,41 +5,39 @@ import typings.vexflow.anon.Ha
 import typings.vexflow.anon.XMax_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Helper interface for handling the Vex.Flow.Font object in Vex.Flow.Glyph. Not part of VexFlow!
   */
-@js.native
 trait IFont extends StObject {
   
-  var ascender: Double = js.native
+  var ascender: Double
   
-  var boundingBox: XMax_ = js.native
+  var boundingBox: XMax_
   
-  var cssFontStyle: String = js.native
+  var cssFontStyle: String
   
-  var cssFontWeight: String = js.native
+  var cssFontWeight: String
   
-  var descender: Double = js.native
+  var descender: Double
   
-  var familyName: String = js.native
+  var familyName: String
   
-  var glyphs: js.Array[Ha] = js.native
+  var glyphs: js.Array[Ha]
   
-  var lineHeight: Double = js.native
+  var lineHeight: Double
   
   /**
     * This property is missing in vexflow_font.js, but present in gonville_original.js and gonville_all.js.
     */
-  var original_font_information: js.UndefOr[Copyright] = js.native
+  var original_font_information: js.UndefOr[Copyright] = js.undefined
   
-  var resolution: Double = js.native
+  var resolution: Double
   
-  var underlinePosition: Double = js.native
+  var underlinePosition: Double
   
-  var underlineThickness: Double = js.native
+  var underlineThickness: Double
 }
 object IFont {
   

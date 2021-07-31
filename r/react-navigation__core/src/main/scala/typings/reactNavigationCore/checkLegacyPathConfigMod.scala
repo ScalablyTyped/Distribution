@@ -3,24 +3,24 @@ package typings.reactNavigationCore
 import typings.reactNavigationCore.typesMod.PathConfigMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkLegacyPathConfigMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/checkLegacyPathConfig", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/checkLegacyPathConfig", JSImport.Namespace)
   @js.native
-  def default(): js.Tuple2[Boolean, js.UndefOr[Options]] = js.native
-  @JSImport("@react-navigation/core/lib/typescript/src/checkLegacyPathConfig", JSImport.Default)
-  @js.native
-  def default(config: Options): js.Tuple2[Boolean, js.UndefOr[Options]] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(): js.Tuple2[Boolean, js.UndefOr[Options]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[js.Tuple2[Boolean, js.UndefOr[Options]]]
+  @scala.inline
+  def default(config: Options): js.Tuple2[Boolean, js.UndefOr[Options]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Boolean, js.UndefOr[Options]]]
+  
   trait Options extends StObject {
     
-    var initialRouteName: js.UndefOr[String] = js.native
+    var initialRouteName: js.UndefOr[String] = js.undefined
     
-    var screens: PathConfigMap = js.native
+    var screens: PathConfigMap
   }
   object Options {
     

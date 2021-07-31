@@ -2,20 +2,18 @@ package typings.grpcGrpcJs.loadBalancingConfigMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EdsLbConfig extends StObject {
   
-  var cluster: String = js.native
+  var cluster: String
   
-  var edsServiceName: js.UndefOr[String] = js.native
+  var edsServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * Defaults to round_robin if not specified.
     */
-  var endpointPickingPolicy: js.Array[LoadBalancingConfig] = js.native
+  var endpointPickingPolicy: js.Array[LoadBalancingConfig]
   
   /**
     * This policy's config is expected to be in the format used by the
@@ -24,9 +22,9 @@ trait EdsLbConfig extends StObject {
     * This is currently not used because there is currently no other config
     * that has the same format as weighted_target.
     */
-  var localityPickingPolicy: js.Array[LoadBalancingConfig] = js.native
+  var localityPickingPolicy: js.Array[LoadBalancingConfig]
   
-  var lrsLoadReportingServerName: js.UndefOr[String] = js.native
+  var lrsLoadReportingServerName: js.UndefOr[String] = js.undefined
 }
 object EdsLbConfig {
   

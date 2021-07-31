@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/youtube/v3", "youtube_v3.Resource$Livebroadcasts")
@@ -35,7 +34,7 @@ class ResourceLivebroadcasts protected () extends StObject {
     */
   def bind(): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def bind(callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
-  def bind(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
+  def bind(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def bind(params: ParamsResourceLivebroadcastsBind): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def bind(params: ParamsResourceLivebroadcastsBind, callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
   def bind(
@@ -73,7 +72,7 @@ class ResourceLivebroadcasts protected () extends StObject {
     */
   def control(): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def control(callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
-  def control(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
+  def control(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def control(params: ParamsResourceLivebroadcastsControl): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def control(params: ParamsResourceLivebroadcastsControl, callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
   def control(
@@ -104,7 +103,7 @@ class ResourceLivebroadcasts protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivebroadcastsDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceLivebroadcastsDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -136,7 +135,7 @@ class ResourceLivebroadcasts protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def insert(callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def insert(params: ParamsResourceLivebroadcastsInsert): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def insert(params: ParamsResourceLivebroadcastsInsert, callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
   def insert(
@@ -174,7 +173,7 @@ class ResourceLivebroadcasts protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaLiveBroadcastListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaLiveBroadcastListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveBroadcastListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveBroadcastListResponse] = js.native
   def list(params: ParamsResourceLivebroadcastsList): GaxiosPromise[SchemaLiveBroadcastListResponse] = js.native
   def list(
     params: ParamsResourceLivebroadcastsList,
@@ -215,7 +214,7 @@ class ResourceLivebroadcasts protected () extends StObject {
     */
   def transition(): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def transition(callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
-  def transition(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
+  def transition(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def transition(params: ParamsResourceLivebroadcastsTransition): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def transition(
     params: ParamsResourceLivebroadcastsTransition,
@@ -251,7 +250,7 @@ class ResourceLivebroadcasts protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def update(callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def update(params: ParamsResourceLivebroadcastsUpdate): GaxiosPromise[SchemaLiveBroadcast] = js.native
   def update(params: ParamsResourceLivebroadcastsUpdate, callback: BodyResponseCallback[SchemaLiveBroadcast]): Unit = js.native
   def update(

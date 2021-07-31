@@ -5,24 +5,24 @@ import typings.std.Response
 import typings.workboxStreams.streamSourceMod.StreamSource
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object concatenateToResponseMod {
   
-  @JSImport("workbox-streams/concatenateToResponse", "concatenateToResponse")
+  @JSImport("workbox-streams/concatenateToResponse", JSImport.Namespace)
   @js.native
-  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateToResponseReturn = js.native
-  @JSImport("workbox-streams/concatenateToResponse", "concatenateToResponse")
-  @js.native
-  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): ConcatenateToResponseReturn = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]]): ConcatenateToResponseReturn = ^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any]).asInstanceOf[ConcatenateToResponseReturn]
+  @scala.inline
+  def concatenateToResponse(sourcePromises: js.Array[js.Promise[StreamSource]], headersInit: HeadersInit): ConcatenateToResponseReturn = (^.asInstanceOf[js.Dynamic].applyDynamic("concatenateToResponse")(sourcePromises.asInstanceOf[js.Any], headersInit.asInstanceOf[js.Any])).asInstanceOf[ConcatenateToResponseReturn]
+  
   trait ConcatenateToResponseReturn extends StObject {
     
-    var done: js.Promise[Unit] = js.native
+    var done: js.Promise[Unit]
     
-    var response: Response = js.native
+    var response: Response
   }
   object ConcatenateToResponseReturn {
     

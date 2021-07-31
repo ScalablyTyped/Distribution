@@ -3,12 +3,12 @@ package typings.safariExtension
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait SafariExtensionSecureSettings
-  extends SafariEventTarget
+  extends StObject
+     with SafariEventTarget
      with /* index */ StringDictionary[js.Any] {
   
   def clear(): Unit = js.native

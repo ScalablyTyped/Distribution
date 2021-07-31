@@ -10,9 +10,9 @@ Typings are for version 4.3.0
 | ------------------ | :-------------: |
 | Full name          | @ant-design/icons |
 | Keywords           | - |
-| # releases         | 47 |
-| # dependents       | 500 |
-| # downloads        | 17678311 |
+| # releases         | 40 |
+| # dependents       | 741 |
+| # downloads        | 23906451 |
 | # stars            | 0 |
 
 ## Links

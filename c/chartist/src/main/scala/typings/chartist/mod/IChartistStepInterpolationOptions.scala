@@ -2,13 +2,13 @@ package typings.chartist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IChartistStepInterpolationOptions extends IChartistInterpolationOptions {
+trait IChartistStepInterpolationOptions
+  extends StObject
+     with IChartistInterpolationOptions {
   
-  var postpone: js.UndefOr[Boolean] = js.native
+  var postpone: js.UndefOr[Boolean] = js.undefined
 }
 object IChartistStepInterpolationOptions {
   

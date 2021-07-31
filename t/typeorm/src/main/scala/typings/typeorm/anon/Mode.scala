@@ -4,21 +4,19 @@ import typings.std.Date
 import typings.typeorm.typeormStrings.optimistic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mode extends StObject {
   
-  var mode: optimistic = js.native
+  var mode: optimistic
   
-  var version: Double | Date = js.native
+  var version: Double | Date
 }
 object Mode {
   
   @scala.inline
-  def apply(mode: optimistic, version: Double | Date): Mode = {
-    val __obj = js.Dynamic.literal(mode = mode.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+  def apply(version: Double | Date): Mode = {
+    val __obj = js.Dynamic.literal(mode = "optimistic", version = version.asInstanceOf[js.Any])
     __obj.asInstanceOf[Mode]
   }
   

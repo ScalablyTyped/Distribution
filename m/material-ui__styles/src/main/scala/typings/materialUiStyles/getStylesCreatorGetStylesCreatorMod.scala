@@ -4,21 +4,22 @@ import typings.materialUiStyles.withStylesWithStylesMod.StyleRules
 import typings.materialUiStyles.withStylesWithStylesMod.Styles
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getStylesCreatorGetStylesCreatorMod {
   
-  @JSImport("@material-ui/styles/getStylesCreator/getStylesCreator", JSImport.Default)
+  @JSImport("@material-ui/styles/getStylesCreator/getStylesCreator", JSImport.Namespace)
   @js.native
-  def default[S /* <: Styles[_, _, String] */](style: S): StylesCreator[_, _, String] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default[S /* <: Styles[js.Any, js.Any, String] */](style: S): StylesCreator[js.Any, js.Any, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[StylesCreator[js.Any, js.Any, String]]
+  
   trait StylesCreator[Theme, Props /* <: js.Object */, ClassKey /* <: String */] extends StObject {
     
-    def create(theme: Theme, name: String): StyleRules[Props, ClassKey] = js.native
+    def create(theme: Theme, name: String): StyleRules[Props, ClassKey]
     
-    var themingEnabled: Boolean = js.native
+    var themingEnabled: Boolean
   }
   object StylesCreator {
     
@@ -29,7 +30,7 @@ object getStylesCreatorGetStylesCreatorMod {
     }
     
     @scala.inline
-    implicit class StylesCreatorMutableBuilder[Self <: StylesCreator[_, _, _], Theme, Props /* <: js.Object */, ClassKey /* <: String */] (val x: Self with (StylesCreator[Theme, Props, ClassKey])) extends AnyVal {
+    implicit class StylesCreatorMutableBuilder[Self <: StylesCreator[?, ?, ?], Theme, Props /* <: js.Object */, ClassKey /* <: String */] (val x: Self & (StylesCreator[Theme, Props, ClassKey])) extends AnyVal {
       
       @scala.inline
       def setCreate(value: (Theme, String) => StyleRules[Props, ClassKey]): Self = StObject.set(x, "create", js.Any.fromFunction2(value))

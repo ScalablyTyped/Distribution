@@ -6,17 +6,17 @@ import typings.typedGithubApi.interfacesUserMod.UserSummary
 import typings.typedGithubApi.typedGithubApiStrings.modified
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interfacesCommitMod {
   
-  @js.native
-  trait Commit extends CommitSummary {
+  trait Commit
+    extends StObject
+       with CommitSummary {
     
-    var changes: GitChanges = js.native
+    var changes: GitChanges
     
-    var files: js.Array[GitFile] = js.native
+    var files: js.Array[GitFile]
   }
   object Commit {
     
@@ -50,16 +50,15 @@ object interfacesCommitMod {
     }
   }
   
-  @js.native
   trait CommitRef extends StObject {
     
-    def loadAsync(): js.Promise[Commit | Null] = js.native
+    def loadAsync(): js.Promise[Commit | Null]
     
-    def loadGitAsync(): js.Promise[GitCommit | Null] = js.native
+    def loadGitAsync(): js.Promise[GitCommit | Null]
     
-    val repository: RepositoryRef = js.native
+    val repository: RepositoryRef
     
-    val sha: String = js.native
+    val sha: String
   }
   object CommitRef {
     
@@ -91,18 +90,19 @@ object interfacesCommitMod {
     }
   }
   
-  @js.native
-  trait CommitSummary extends CommitRef {
+  trait CommitSummary
+    extends StObject
+       with CommitRef {
     
-    var author: js.UndefOr[UserSummary] = js.native
+    var author: js.UndefOr[UserSummary] = js.undefined
     
-    var committer: js.UndefOr[UserSummary] = js.native
+    var committer: js.UndefOr[UserSummary] = js.undefined
     
-    var gitCommit: GitCommitSummary = js.native
+    var gitCommit: GitCommitSummary
     
-    var htmlUri: String = js.native
+    var htmlUri: String
     
-    var parents: js.Array[CommitRef] = js.native
+    var parents: js.Array[CommitRef]
   }
   object CommitSummary {
     
@@ -149,14 +149,13 @@ object interfacesCommitMod {
     }
   }
   
-  @js.native
   trait GitActor extends StObject {
     
-    var date: Moment = js.native
+    var date: Moment
     
-    var email: String = js.native
+    var email: String
     
-    var name: String = js.native
+    var name: String
   }
   object GitActor {
     
@@ -180,14 +179,13 @@ object interfacesCommitMod {
     }
   }
   
-  @js.native
   trait GitChanges extends StObject {
     
-    var added: Double = js.native
+    var added: Double
     
-    var deleted: Double = js.native
+    var deleted: Double
     
-    var total: Double = js.native
+    var total: Double
   }
   object GitChanges {
     
@@ -211,10 +209,11 @@ object interfacesCommitMod {
     }
   }
   
-  @js.native
-  trait GitCommit extends GitCommitSummary {
+  trait GitCommit
+    extends StObject
+       with GitCommitSummary {
     
-    var parents: js.Array[CommitRef] = js.native
+    var parents: js.Array[CommitRef]
   }
   object GitCommit {
     
@@ -244,14 +243,15 @@ object interfacesCommitMod {
     }
   }
   
-  @js.native
-  trait GitCommitSummary extends CommitRef {
+  trait GitCommitSummary
+    extends StObject
+       with CommitRef {
     
-    var author: GitActor = js.native
+    var author: GitActor
     
-    var committer: GitActor = js.native
+    var committer: GitActor
     
-    var message: String = js.native
+    var message: String
   }
   object GitCommitSummary {
     
@@ -283,22 +283,21 @@ object interfacesCommitMod {
     }
   }
   
-  @js.native
   trait GitFile extends StObject {
     
-    var changes: GitChanges = js.native
+    var changes: GitChanges
     
-    var filename: String = js.native
+    var filename: String
     
-    var patch: String = js.native
+    var patch: String
     
-    var status: modified = js.native
+    var status: modified
   }
   object GitFile {
     
     @scala.inline
-    def apply(changes: GitChanges, filename: String, patch: String, status: modified): GitFile = {
-      val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any])
+    def apply(changes: GitChanges, filename: String, patch: String): GitFile = {
+      val __obj = js.Dynamic.literal(changes = changes.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], patch = patch.asInstanceOf[js.Any], status = "modified")
       __obj.asInstanceOf[GitFile]
     }
     

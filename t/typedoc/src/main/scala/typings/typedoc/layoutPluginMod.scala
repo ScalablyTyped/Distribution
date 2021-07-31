@@ -4,7 +4,6 @@ import typings.typedoc.outputComponentsMod.RendererComponent
 import typings.typedoc.rendererMod.Renderer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object layoutPluginMod {

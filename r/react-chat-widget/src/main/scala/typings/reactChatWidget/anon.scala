@@ -3,37 +3,35 @@ package typings.reactChatWidget
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Autofocus extends StObject {
     
-    var autofocus: js.UndefOr[Boolean] = js.native
+    var autofocus: js.UndefOr[Boolean] = js.undefined
     
-    var badge: js.UndefOr[Double] = js.native
+    var badge: js.UndefOr[Double] = js.undefined
     
-    var customLauncher: js.UndefOr[ComponentType[js.Function0[Unit]]] = js.native
+    var customLauncher: js.UndefOr[ComponentType[js.Function0[Unit]]] = js.undefined
     
-    var fullScreenMode: js.UndefOr[Boolean] = js.native
+    var fullScreenMode: js.UndefOr[Boolean] = js.undefined
     
-    def handleNewUserMessage(userInput: String): Unit = js.native
+    def handleNewUserMessage(userInput: String): Unit
     
-    var handleQuickButtonClicked: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var handleQuickButtonClicked: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var profileAvatar: js.UndefOr[String] = js.native
+    var profileAvatar: js.UndefOr[String] = js.undefined
     
-    var senderPlaceHolder: js.UndefOr[String] = js.native
+    var senderPlaceHolder: js.UndefOr[String] = js.undefined
     
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
-    var subtitle: js.UndefOr[String] = js.native
+    var subtitle: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var titleAvatar: js.UndefOr[String] = js.native
+    var titleAvatar: js.UndefOr[String] = js.undefined
   }
   object Autofocus {
     
@@ -117,12 +115,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: String = js.native
+    var value: String
   }
   object Label {
     

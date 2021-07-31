@@ -2,19 +2,17 @@ package typings.pixiJs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fragment extends StObject {
   
-  var fragment: js.UndefOr[String] = js.native
+  var fragment: js.UndefOr[String] = js.undefined
   
-  var geometryClass: js.UndefOr[js.Any] = js.native
+  var geometryClass: js.UndefOr[js.Any] = js.undefined
   
-  var vertex: js.UndefOr[String] = js.native
+  var vertex: js.UndefOr[String] = js.undefined
   
-  var vertexSize: js.UndefOr[Double] = js.native
+  var vertexSize: js.UndefOr[Double] = js.undefined
 }
 object Fragment {
   

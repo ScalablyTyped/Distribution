@@ -2,38 +2,36 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint extends StObject {
   
   /**
     * List of user emails.
     */
-  var emails: js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsEmails] = js.native
+  var emails: js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsEmails]
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     */
-  var enterprise: String = js.native
+  var enterprise: String
   
   /**
     * List of SCIM group IDs the user is a member of.
     */
-  var groups: js.UndefOr[js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsGroups]] = js.native
+  var groups: js.UndefOr[js.Array[EnterpriseAdminProvisionAndInviteEnterpriseUserParamsGroups]] = js.undefined
   
-  var name: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsName = js.native
+  var name: EnterpriseAdminProvisionAndInviteEnterpriseUserParamsName
   
   /**
     * The SCIM schema URIs.
     */
-  var schemas: js.Array[String] = js.native
+  var schemas: js.Array[String]
   
   /**
     * The username for the user.
     */
-  var userName: String = js.native
+  var userName: String
 }
 object EnterpriseAdminProvisionAndInviteEnterpriseUserEndpoint {
   

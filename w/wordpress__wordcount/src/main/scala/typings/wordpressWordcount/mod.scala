@@ -5,17 +5,18 @@ import typings.wordpressWordcount.anon.PartialSettings
 import typings.wordpressWordcount.anon.Shortcodes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@wordpress/wordcount", "count")
+  @JSImport("@wordpress/wordcount", JSImport.Namespace)
   @js.native
-  def count(text: String, `type`: CountType): Double = js.native
-  @JSImport("@wordpress/wordcount", "count")
-  @js.native
-  def count(text: String, `type`: CountType, userSettings: PartialSettings): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def count(text: String, `type`: CountType): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def count(text: String, `type`: CountType, userSettings: PartialSettings): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("count")(text.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], userSettings.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /* Rewritten from type alias, can be one of: 
     - typings.wordpressWordcount.wordpressWordcountStrings.words
@@ -35,31 +36,30 @@ object mod {
     def words: typings.wordpressWordcount.wordpressWordcountStrings.words = "words".asInstanceOf[typings.wordpressWordcount.wordpressWordcountStrings.words]
   }
   
-  @js.native
   trait Settings extends StObject {
     
-    var HTMLEntityRegExp: RegExp = js.native
+    var HTMLEntityRegExp: RegExp
     
-    var HTMLRegExp: RegExp = js.native
+    var HTMLRegExp: RegExp
     
-    var HTMLcommentRegExp: RegExp = js.native
+    var HTMLcommentRegExp: RegExp
     
-    var astralRegExp: RegExp = js.native
+    var astralRegExp: RegExp
     
-    var characters_excluding_spacesRegExp: RegExp = js.native
+    var characters_excluding_spacesRegExp: RegExp
     
-    var characters_including_spacesRegExp: RegExp = js.native
+    var characters_including_spacesRegExp: RegExp
     
-    var connectorRegExp: RegExp = js.native
+    var connectorRegExp: RegExp
     
-    var l10n: Shortcodes = js.native
+    var l10n: Shortcodes
     
     /** Characters to be removed from input text. */
-    var removeRegExp: RegExp = js.native
+    var removeRegExp: RegExp
     
-    var spaceRegExp: RegExp = js.native
+    var spaceRegExp: RegExp
     
-    var wordsRegExp: RegExp = js.native
+    var wordsRegExp: RegExp
   }
   object Settings {
     

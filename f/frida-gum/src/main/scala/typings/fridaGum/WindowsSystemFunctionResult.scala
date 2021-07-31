@@ -2,15 +2,15 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowsSystemFunctionResult extends SystemFunctionResult {
+trait WindowsSystemFunctionResult
+  extends StObject
+     with SystemFunctionResult {
   
-  var lastError: Double = js.native
+  var lastError: Double
   
-  var value: NativeReturnValue = js.native
+  var value: NativeReturnValue
 }
 object WindowsSystemFunctionResult {
   

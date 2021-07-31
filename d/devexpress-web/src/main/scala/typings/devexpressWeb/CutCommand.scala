@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to cut the selected text and place it to the clipboard.
   */
-@js.native
-trait CutCommand extends CommandWithSimpleStateBase {
+trait CutCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the CutCommand command.
     */
-  def execute(): Boolean = js.native
+  def execute(): Boolean
 }
 object CutCommand {
   

@@ -2,10 +2,13 @@ package typings.blueprintjsCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keysMod {
+  
+  @JSImport("@blueprintjs/core/lib/esm/common/keys", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@blueprintjs/core/lib/esm/common/keys", "ARROW_DOWN")
   @js.native
@@ -51,7 +54,6 @@ object keysMod {
   @js.native
   val TAB: /* 9 */ Double = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/keys", "isKeyboardClick")
-  @js.native
-  def isKeyboardClick(keyCode: Double): Boolean = js.native
+  @scala.inline
+  def isKeyboardClick(keyCode: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isKeyboardClick")(keyCode.asInstanceOf[js.Any]).asInstanceOf[Boolean]
 }

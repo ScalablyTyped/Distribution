@@ -2,19 +2,19 @@ package typings.bpmnModdle.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SequenceFlow extends FlowElement {
+trait SequenceFlow
+  extends StObject
+     with FlowElement {
   
-  var conditionExpression: Expression = js.native
+  var conditionExpression: Expression
   
-  var isImmediate: Boolean = js.native
+  var isImmediate: Boolean
   
-  var sourceRef: FlowNode = js.native
+  var sourceRef: FlowNode
   
-  var targetRef: FlowNode = js.native
+  var targetRef: FlowNode
 }
 object SequenceFlow {
   

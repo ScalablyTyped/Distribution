@@ -6,13 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.lang.XLocalizable
 import typings.activexLibreoffice.com_.sun.star.ucb.XContent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a high level API to organize document templates */
-@js.native
 trait TemplateAccess
-  extends XDocumentTemplates
+  extends StObject
+     with XDocumentTemplates
      with XLocalizable
 object TemplateAccess {
   

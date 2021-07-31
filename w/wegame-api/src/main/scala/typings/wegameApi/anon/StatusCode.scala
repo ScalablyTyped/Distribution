@@ -2,15 +2,13 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusCode extends StObject {
   
-  var statusCode: Double = js.native
+  var statusCode: Double
   
-  var tempFilePath: js.UndefOr[String] = js.native
+  var tempFilePath: js.UndefOr[String] = js.undefined
 }
 object StatusCode {
   

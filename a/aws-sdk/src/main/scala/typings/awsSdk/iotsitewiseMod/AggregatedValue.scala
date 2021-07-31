@@ -2,26 +2,24 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AggregatedValue extends StObject {
   
   /**
     * The quality of the aggregated data.
     */
-  var quality: js.UndefOr[Quality] = js.native
+  var quality: js.UndefOr[Quality] = js.undefined
   
   /**
     * The date the aggregating computations occurred, in Unix epoch time.
     */
-  var timestamp: Timestamp = js.native
+  var timestamp: Timestamp
   
   /**
     * The value of the aggregates.
     */
-  var value: Aggregates = js.native
+  var value: Aggregates
 }
 object AggregatedValue {
   

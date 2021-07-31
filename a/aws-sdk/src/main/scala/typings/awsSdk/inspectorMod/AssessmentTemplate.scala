@@ -2,56 +2,54 @@ package typings.awsSdk.inspectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssessmentTemplate extends StObject {
   
   /**
     * The ARN of the assessment template.
     */
-  var arn: Arn = js.native
+  var arn: Arn
   
   /**
     * The number of existing assessment runs associated with this assessment template. This value can be zero or a positive integer.
     */
-  var assessmentRunCount: ArnCount = js.native
+  var assessmentRunCount: ArnCount
   
   /**
     * The ARN of the assessment target that corresponds to this assessment template.
     */
-  var assessmentTargetArn: Arn = js.native
+  var assessmentTargetArn: Arn
   
   /**
     * The time at which the assessment template is created.
     */
-  var createdAt: Timestamp = js.native
+  var createdAt: Timestamp
   
   /**
     * The duration in seconds specified for this assessment template. The default value is 3600 seconds (one hour). The maximum value is 86400 seconds (one day).
     */
-  var durationInSeconds: AssessmentRunDuration = js.native
+  var durationInSeconds: AssessmentRunDuration
   
   /**
     * The Amazon Resource Name (ARN) of the most recent assessment run associated with this assessment template. This value exists only when the value of assessmentRunCount is greaterpa than zero.
     */
-  var lastAssessmentRunArn: js.UndefOr[Arn] = js.native
+  var lastAssessmentRunArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The name of the assessment template.
     */
-  var name: AssessmentTemplateName = js.native
+  var name: AssessmentTemplateName
   
   /**
     * The rules packages that are specified for this assessment template.
     */
-  var rulesPackageArns: AssessmentTemplateRulesPackageArnList = js.native
+  var rulesPackageArns: AssessmentTemplateRulesPackageArnList
   
   /**
     * The user-defined attributes that are assigned to every generated finding from the assessment run that uses this assessment template.
     */
-  var userAttributesForFindings: UserAttributeList = js.native
+  var userAttributesForFindings: UserAttributeList
 }
 object AssessmentTemplate {
   

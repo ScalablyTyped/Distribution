@@ -3,43 +3,40 @@ package typings.firebaseUtil
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jwtMod {
   
-  @JSImport("@firebase/util/dist/src/jwt", "decode")
+  @JSImport("@firebase/util/dist/src/jwt", JSImport.Namespace)
   @js.native
-  def decode(token: String): DecodedToken = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@firebase/util/dist/src/jwt", "isAdmin")
-  @js.native
-  def isAdmin(token: String): Boolean = js.native
+  @scala.inline
+  def decode(token: String): DecodedToken = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(token.asInstanceOf[js.Any]).asInstanceOf[DecodedToken]
   
-  @JSImport("@firebase/util/dist/src/jwt", "isValidFormat")
-  @js.native
-  def isValidFormat(token: String): Boolean = js.native
+  @scala.inline
+  def isAdmin(token: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAdmin")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/jwt", "isValidTimestamp")
-  @js.native
-  def isValidTimestamp(token: String): Boolean = js.native
+  @scala.inline
+  def isValidFormat(token: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidFormat")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@firebase/util/dist/src/jwt", "issuedAtTime")
-  @js.native
-  def issuedAtTime(token: String): Double | Null = js.native
+  @scala.inline
+  def isValidTimestamp(token: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isValidTimestamp")(token.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def issuedAtTime(token: String): Double | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("issuedAtTime")(token.asInstanceOf[js.Any]).asInstanceOf[Double | Null]
   
   type Claims = StringDictionary[js.Object]
   
-  @js.native
   trait DecodedToken extends StObject {
     
-    var claims: Claims = js.native
+    var claims: Claims
     
-    var data: js.Object = js.native
+    var data: js.Object
     
-    var header: js.Object = js.native
+    var header: js.Object
     
-    var signature: String = js.native
+    var signature: String
   }
   object DecodedToken {
     

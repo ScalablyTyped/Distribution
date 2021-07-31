@@ -2,16 +2,14 @@ package typings.aliApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NickName extends StObject {
   
   // 用户昵称
-  var avatar: String = js.native
+  var avatar: String
   
-  var nickName: String = js.native
+  var nickName: String
 }
 object NickName {
   

@@ -2,23 +2,21 @@ package typings.reactSketchapp.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeNode extends StObject {
   
-  var children: js.UndefOr[js.Array[TreeNode]] = js.native
+  var children: js.UndefOr[js.Array[TreeNode]] = js.undefined
   
-  var layout: LayoutInfo = js.native
+  var layout: LayoutInfo
   
-  var props: js.Any = js.native
+  var props: js.Any
   
-  var style: ViewStyle = js.native
+  var style: ViewStyle
   
-  var textStyle: TextStyle = js.native
+  var textStyle: TextStyle
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object TreeNode {
   

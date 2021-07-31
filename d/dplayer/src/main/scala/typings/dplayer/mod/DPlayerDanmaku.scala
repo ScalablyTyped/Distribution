@@ -2,27 +2,25 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DPlayerDanmaku extends StObject {
   
-  var addition: js.UndefOr[js.Array[String]] = js.native
+  var addition: js.UndefOr[js.Array[String]] = js.undefined
   
-  var api: String = js.native
+  var api: String
   
-  var bottom: js.UndefOr[String] = js.native
+  var bottom: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var maximum: js.UndefOr[String] = js.native
+  var maximum: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
-  var unlimited: js.UndefOr[Boolean] = js.native
+  var unlimited: js.UndefOr[Boolean] = js.undefined
   
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
 }
 object DPlayerDanmaku {
   

@@ -4,7 +4,6 @@ import typings.reactNativeFirebase.reactNativeFirebaseBooleans.`false`
 import typings.reactNativeFirebase.reactNativeFirebaseBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object perf {
@@ -51,58 +50,57 @@ object perf {
     def TRACE: typings.reactNativeFirebase.reactNativeFirebaseStrings.TRACE = "TRACE".asInstanceOf[typings.reactNativeFirebase.reactNativeFirebaseStrings.TRACE]
   }
   
-  @js.native
   trait HttpMetric extends StObject {
     
     /**
       * Return an attribute by name, or null if it does not exist.
       */
-    def getAttribute(attribute: String): js.Promise[String | Null] = js.native
+    def getAttribute(attribute: String): js.Promise[String | Null]
     
     /**
       * Return an object of key-value attributes.
       */
-    def getAttributes(): js.Promise[js.Object] = js.native
+    def getAttributes(): js.Promise[js.Object]
     
     /**
       * Set an attribute. Returns true if it was set, false if it was not.
       */
-    def putAttribute(attribute: String, value: String): js.Promise[`true` | `false`] = js.native
+    def putAttribute(attribute: String, value: String): js.Promise[`true` | `false`]
     
     /**
       * Remove an attribute by name.
       */
-    def removeAttribute(attribute: String): js.Promise[Null] = js.native
+    def removeAttribute(attribute: String): js.Promise[Null]
     
     /**
       * Set the request HTTP response code.
       */
-    def setHttpResponseCode(code: Double): js.Promise[Null] = js.native
+    def setHttpResponseCode(code: Double): js.Promise[Null]
     
     /**
       * Set the request payload size, in bytes.
       */
-    def setRequestPayloadSize(bytes: Double): js.Promise[Null] = js.native
+    def setRequestPayloadSize(bytes: Double): js.Promise[Null]
     
     /**
       * Set the response content type.
       */
-    def setResponseContentType(`type`: String): js.Promise[Null] = js.native
+    def setResponseContentType(`type`: String): js.Promise[Null]
     
     /**
       * Set the response payload size, in bytes.
       */
-    def setResponsePayloadSize(bytes: Double): js.Promise[Null] = js.native
+    def setResponsePayloadSize(bytes: Double): js.Promise[Null]
     
     /**
       * Start a HttpMetric instance.
       */
-    def start(): js.Promise[Null] = js.native
+    def start(): js.Promise[Null]
     
     /**
       * Stop a HttpMetric instance.
       */
-    def stop(): js.Promise[Null] = js.native
+    def stop(): js.Promise[Null]
   }
   object HttpMetric {
     
@@ -158,23 +156,22 @@ object perf {
     }
   }
   
-  @js.native
   trait Perf extends StObject {
     
     /**
       * Returns a new HTTP Metric instance.
       */
-    def newHttpMetric(url: String, httpMethod: HttpMethod): HttpMetric = js.native
+    def newHttpMetric(url: String, httpMethod: HttpMethod): HttpMetric
     
     /**
       * Returns a new Trace instance.
       */
-    def newTrace(trace: String): Trace = js.native
+    def newTrace(trace: String): Trace
     
     /**
       * Globally enable or disable performance monitoring.
       */
-    def setPerformanceCollectionEnabled(enabled: Boolean): Unit = js.native
+    def setPerformanceCollectionEnabled(enabled: Boolean): Unit
   }
   object Perf {
     
@@ -202,53 +199,52 @@ object perf {
     }
   }
   
-  @js.native
   trait Trace extends StObject {
     
     /**
       * Return an attribute by name, or null if it does not exist.
       */
-    def getAttribute(attribute: String): js.Promise[String | Null] = js.native
+    def getAttribute(attribute: String): js.Promise[String | Null]
     
     /**
       * Return an object of key-value attributes.
       */
-    def getAttributes(): js.Promise[js.Object] = js.native
+    def getAttributes(): js.Promise[js.Object]
     
     /**
       * Get a metric by name. Returns 0 if it does not exist.
       */
-    def getMetric(metricName: String): js.Promise[Double] = js.native
+    def getMetric(metricName: String): js.Promise[Double]
     
     /**
       * Increment a metric by name and value.
       */
-    def incrementMetric(metricName: String, incrementBy: Double): js.Promise[Null] = js.native
+    def incrementMetric(metricName: String, incrementBy: Double): js.Promise[Null]
     
     /**
       * Set an attribute. Returns true if it was set, false if it was not.
       */
-    def putAttribute(attribute: String, value: String): js.Promise[`true` | `false`] = js.native
+    def putAttribute(attribute: String, value: String): js.Promise[`true` | `false`]
     
     /**
       * Set a metric.
       */
-    def putMetric(metricName: String, value: Double): js.Promise[Null] = js.native
+    def putMetric(metricName: String, value: Double): js.Promise[Null]
     
     /**
       * Remove an attribute by name.
       */
-    def removeAttribute(attribute: String): js.Promise[Null] = js.native
+    def removeAttribute(attribute: String): js.Promise[Null]
     
     /**
       * Start a Trace instance.
       */
-    def start(): js.Promise[Null] = js.native
+    def start(): js.Promise[Null]
     
     /**
       * Stop a Trace instance.
       */
-    def stop(): js.Promise[Null] = js.native
+    def stop(): js.Promise[Null]
   }
   object Trace {
     

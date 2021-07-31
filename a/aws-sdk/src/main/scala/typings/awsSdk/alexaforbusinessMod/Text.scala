@@ -2,21 +2,19 @@ package typings.awsSdk.alexaforbusinessMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Text extends StObject {
   
   /**
     * The locale of the text message. Currently, en-US is supported.
     */
-  var Locale: typings.awsSdk.alexaforbusinessMod.Locale = js.native
+  var Locale: typings.awsSdk.alexaforbusinessMod.Locale
   
   /**
     * The value of the text message.
     */
-  var Value: TextValue = js.native
+  var Value: TextValue
 }
 object Text {
   

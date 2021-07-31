@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSafebrowsing.gapi.client.safebrowsing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThreatEntryMetadata extends StObject {
   
   /** The metadata entries. */
-  var entries: js.UndefOr[js.Array[MetadataEntry]] = js.native
+  var entries: js.UndefOr[js.Array[MetadataEntry]] = js.undefined
 }
 object ThreatEntryMetadata {
   

@@ -2,17 +2,17 @@ package typings.speakeasy.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeneratedSecretWithOtpAuthUrl extends GeneratedSecret {
+trait GeneratedSecretWithOtpAuthUrl
+  extends StObject
+     with GeneratedSecret {
   
   /**
     * Google Authenticator-compatible otpauth URL.
     */
   @JSName("otpauth_url")
-  var otpauth_url_GeneratedSecretWithOtpAuthUrl: String = js.native
+  var otpauth_url_GeneratedSecretWithOtpAuthUrl: String
 }
 object GeneratedSecretWithOtpAuthUrl {
   

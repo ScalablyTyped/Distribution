@@ -2,13 +2,11 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request to de-identify a list of items.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2DeidentifyContentRequest extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait SchemaGooglePrivacyDlpV2DeidentifyContentRequest extends StObject {
     * specified here will override the template referenced by the
     * deidentify_template_name argument.
     */
-  var deidentifyConfig: js.UndefOr[SchemaGooglePrivacyDlpV2DeidentifyConfig] = js.native
+  var deidentifyConfig: js.UndefOr[SchemaGooglePrivacyDlpV2DeidentifyConfig] = js.undefined
   
   /**
     * Optional template to use. Any configuration directly specified in
@@ -25,13 +23,13 @@ trait SchemaGooglePrivacyDlpV2DeidentifyContentRequest extends StObject {
     * fields in the template. Repeated fields are appended. Singular
     * sub-messages and groups are recursively merged.
     */
-  var deidentifyTemplateName: js.UndefOr[String] = js.native
+  var deidentifyTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * Configuration for the inspector. Items specified here will override the
     * template referenced by the inspect_template_name argument.
     */
-  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.native
+  var inspectConfig: js.UndefOr[SchemaGooglePrivacyDlpV2InspectConfig] = js.undefined
   
   /**
     * Optional template to use. Any configuration directly specified in
@@ -40,12 +38,12 @@ trait SchemaGooglePrivacyDlpV2DeidentifyContentRequest extends StObject {
     * the template. Repeated fields are appended. Singular sub-messages and
     * groups are recursively merged.
     */
-  var inspectTemplateName: js.UndefOr[String] = js.native
+  var inspectTemplateName: js.UndefOr[String] = js.undefined
   
   /**
     * The item to de-identify. Will be treated as text.
     */
-  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.native
+  var item: js.UndefOr[SchemaGooglePrivacyDlpV2ContentItem] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2DeidentifyContentRequest {
   

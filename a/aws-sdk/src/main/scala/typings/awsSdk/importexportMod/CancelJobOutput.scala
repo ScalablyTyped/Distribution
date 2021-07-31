@@ -2,13 +2,11 @@ package typings.awsSdk.importexportMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelJobOutput extends StObject {
   
-  var Success: js.UndefOr[typings.awsSdk.importexportMod.Success] = js.native
+  var Success: js.UndefOr[typings.awsSdk.importexportMod.Success] = js.undefined
 }
 object CancelJobOutput {
   

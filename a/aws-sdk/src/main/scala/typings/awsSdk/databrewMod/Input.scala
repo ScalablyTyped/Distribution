@@ -2,21 +2,19 @@ package typings.awsSdk.databrewMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Input extends StObject {
   
   /**
     * The AWS Glue Data Catalog parameters for the data.
     */
-  var DataCatalogInputDefinition: js.UndefOr[typings.awsSdk.databrewMod.DataCatalogInputDefinition] = js.native
+  var DataCatalogInputDefinition: js.UndefOr[typings.awsSdk.databrewMod.DataCatalogInputDefinition] = js.undefined
   
   /**
     * The Amazon S3 location where the data is stored.
     */
-  var S3InputDefinition: js.UndefOr[S3Location] = js.native
+  var S3InputDefinition: js.UndefOr[S3Location] = js.undefined
 }
 object Input {
   

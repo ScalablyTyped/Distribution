@@ -2,23 +2,21 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestartPolicy extends StObject {
   
-  var Condition: js.UndefOr[String] = js.native
+  var Condition: js.UndefOr[String] = js.undefined
   
-  var Delay: js.UndefOr[Double] = js.native
+  var Delay: js.UndefOr[Double] = js.undefined
   
-  var MaxAttempts: js.UndefOr[Double] = js.native
+  var MaxAttempts: js.UndefOr[Double] = js.undefined
   
-  var MaximumRetryCount: js.UndefOr[Double] = js.native
+  var MaximumRetryCount: js.UndefOr[Double] = js.undefined
   
-  var Name: String = js.native
+  var Name: String
   
-  var Window: js.UndefOr[Double] = js.native
+  var Window: js.UndefOr[Double] = js.undefined
 }
 object RestartPolicy {
   

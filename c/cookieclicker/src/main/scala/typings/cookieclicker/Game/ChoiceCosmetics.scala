@@ -2,16 +2,14 @@ package typings.cookieclicker.Game
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChoiceCosmetics extends StObject {
   
   /**
     * The picture to use
     */
-  var pic: String = js.native
+  var pic: String
 }
 object ChoiceCosmetics {
   

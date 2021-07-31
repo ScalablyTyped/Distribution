@@ -2,24 +2,22 @@ package typings.chayns
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // chayns.openUrl()
-@js.native
 trait OpenUrlConfig extends StObject {
   
-  var darkenBackground: js.UndefOr[Boolean] = js.native
+  var darkenBackground: js.UndefOr[Boolean] = js.undefined
   
-  var exclusiveView: js.UndefOr[Boolean] = js.native
+  var exclusiveView: js.UndefOr[Boolean] = js.undefined
   
-  var fullSize: js.UndefOr[Boolean] = js.native
+  var fullSize: js.UndefOr[Boolean] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object OpenUrlConfig {
   

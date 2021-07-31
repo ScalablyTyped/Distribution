@@ -3,20 +3,19 @@ package typings.layuiSrc.layui
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeNode
-  extends /* propName */ StringDictionary[js.Any] {
+  extends StObject
+     with /* propName */ StringDictionary[js.Any] {
   
-  var children: js.UndefOr[TreeNode | js.Array[TreeNode]] = js.native
+  var children: js.UndefOr[TreeNode | js.Array[TreeNode]] = js.undefined
   
-  var href: js.UndefOr[String] = js.native
+  var href: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var spread: js.UndefOr[Boolean] = js.native
+  var spread: js.UndefOr[Boolean] = js.undefined
 }
 object TreeNode {
   

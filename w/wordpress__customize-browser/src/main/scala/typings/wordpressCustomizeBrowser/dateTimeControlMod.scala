@@ -5,7 +5,6 @@ import typings.wordpressCustomizeBrowser.wordpressCustomizeBrowserStrings.am
 import typings.wordpressCustomizeBrowser.wordpressCustomizeBrowserStrings.pm
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateTimeControlMod {
@@ -38,20 +37,19 @@ object dateTimeControlMod {
     def validateInputs(): Boolean = js.native
   }
   
-  @js.native
   trait DateTime extends StObject {
     
-    var day: String = js.native
+    var day: String
     
-    var hour: String = js.native
+    var hour: String
     
-    var minute: String = js.native
+    var minute: String
     
-    var month: String = js.native
+    var month: String
     
-    var second: String = js.native
+    var second: String
     
-    var year: String = js.native
+    var year: String
   }
   object DateTime {
     

@@ -4,25 +4,23 @@ import typings.sipJs.outgoingRequestMod.OutgoingRequestDelegate
 import typings.sipJs.outgoingRequestMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object registererUnregisterOptionsMod {
   
-  @js.native
   trait RegistererUnregisterOptions extends StObject {
     
     /**
       * If true, unregister all contacts.
       * @defaultValue false
       */
-    var all: js.UndefOr[Boolean] = js.native
+    var all: js.UndefOr[Boolean] = js.undefined
     
     /** See `core` API. */
-    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.native
+    var requestDelegate: js.UndefOr[OutgoingRequestDelegate] = js.undefined
     
     /** See `core` API. */
-    var requestOptions: js.UndefOr[RequestOptions] = js.native
+    var requestOptions: js.UndefOr[RequestOptions] = js.undefined
   }
   object RegistererUnregisterOptions {
     

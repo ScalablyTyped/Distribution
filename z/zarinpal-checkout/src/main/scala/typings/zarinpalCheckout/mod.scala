@@ -2,25 +2,26 @@ package typings.zarinpalCheckout
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("zarinpal-checkout", "create")
+  @JSImport("zarinpal-checkout", JSImport.Namespace)
   @js.native
-  def create(merchantID: String, sandbox: Boolean): ZarinPalInstance = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(merchantID: String, sandbox: Boolean): ZarinPalInstance = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(merchantID.asInstanceOf[js.Any], sandbox.asInstanceOf[js.Any])).asInstanceOf[ZarinPalInstance]
+  
   trait Authority extends StObject {
     
-    var Amount: String = js.native
+    var Amount: String
     
-    var Authority: String = js.native
+    var Authority: String
     
-    var Channel: String = js.native
+    var Channel: String
     
-    var Date: String = js.native
+    var Date: String
   }
   object Authority {
     
@@ -47,18 +48,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PaymentRequestInput extends StObject {
     
-    var Amount: Double = js.native
+    var Amount: Double
     
-    var CallbackURL: String = js.native
+    var CallbackURL: String
     
-    var Description: String = js.native
+    var Description: String
     
-    var Email: js.UndefOr[String] = js.native
+    var Email: js.UndefOr[String] = js.undefined
     
-    var Mobile: js.UndefOr[String] = js.native
+    var Mobile: js.UndefOr[String] = js.undefined
   }
   object PaymentRequestInput {
     
@@ -94,14 +94,13 @@ object mod {
     }
   }
   
-  @js.native
   trait PaymentRequestOutput extends StObject {
     
-    var authority: String = js.native
+    var authority: String
     
-    var status: Double = js.native
+    var status: Double
     
-    var url: String = js.native
+    var url: String
   }
   object PaymentRequestOutput {
     
@@ -125,12 +124,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PaymentVerificationInput extends StObject {
     
-    var Amount: Double = js.native
+    var Amount: Double
     
-    var Authority: String = js.native
+    var Authority: String
   }
   object PaymentVerificationInput {
     
@@ -151,12 +149,11 @@ object mod {
     }
   }
   
-  @js.native
   trait PaymentVerificationOutput extends StObject {
     
-    var RefID: Double = js.native
+    var RefID: Double
     
-    var status: Double = js.native
+    var status: Double
   }
   object PaymentVerificationOutput {
     
@@ -177,12 +174,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RefreshAuthorityInput extends StObject {
     
-    var Authority: String = js.native
+    var Authority: String
     
-    var Expire: Double = js.native
+    var Expire: Double
   }
   object RefreshAuthorityInput {
     
@@ -203,10 +199,9 @@ object mod {
     }
   }
   
-  @js.native
   trait RefreshAuthorityOutput extends StObject {
     
-    var status: Double = js.native
+    var status: Double
   }
   object RefreshAuthorityOutput {
     
@@ -224,12 +219,11 @@ object mod {
     }
   }
   
-  @js.native
   trait UnverifiedTransactionsOutput extends StObject {
     
-    var authorities: js.Array[Authority] = js.native
+    var authorities: js.Array[Authority]
     
-    var status: Double = js.native
+    var status: Double
   }
   object UnverifiedTransactionsOutput {
     
@@ -253,16 +247,15 @@ object mod {
     }
   }
   
-  @js.native
   trait ZarinPalInstance extends StObject {
     
-    def PaymentRequest(input: PaymentRequestInput): js.Promise[PaymentRequestOutput] = js.native
+    def PaymentRequest(input: PaymentRequestInput): js.Promise[PaymentRequestOutput]
     
-    def PaymentVerification(input: PaymentVerificationInput): js.Promise[PaymentVerificationOutput] = js.native
+    def PaymentVerification(input: PaymentVerificationInput): js.Promise[PaymentVerificationOutput]
     
-    def RefreshAuthority(input: RefreshAuthorityInput): js.Promise[RefreshAuthorityOutput] = js.native
+    def RefreshAuthority(input: RefreshAuthorityInput): js.Promise[RefreshAuthorityOutput]
     
-    def UnverifiedTransactions(): js.Promise[UnverifiedTransactionsOutput] = js.native
+    def UnverifiedTransactions(): js.Promise[UnverifiedTransactionsOutput]
   }
   object ZarinPalInstance {
     

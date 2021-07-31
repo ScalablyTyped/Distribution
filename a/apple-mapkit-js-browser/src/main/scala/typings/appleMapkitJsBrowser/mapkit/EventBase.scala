@@ -2,15 +2,13 @@ package typings.appleMapkitJsBrowser.mapkit
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventBase[T] extends StObject {
   
-  var target: T = js.native
+  var target: T
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object EventBase {
   
@@ -22,7 +20,7 @@ object EventBase {
   }
   
   @scala.inline
-  implicit class EventBaseMutableBuilder[Self <: EventBase[_], T] (val x: Self with EventBase[T]) extends AnyVal {
+  implicit class EventBaseMutableBuilder[Self <: EventBase[?], T] (val x: Self & EventBase[T]) extends AnyVal {
     
     @scala.inline
     def setTarget(value: T): Self = StObject.set(x, "target", value.asInstanceOf[js.Any])

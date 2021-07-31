@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.initializing
 import typings.arcgisJsApi.arcgisJsApiStrings.ready
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PrintViewModel extends Accessor {
+trait PrintViewModel
+  extends StObject
+     with Accessor {
   
   /**
     * Specify the print output file format(s) that the user can select based on the options available from the print service.
@@ -31,14 +32,14 @@ trait PrintViewModel extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#load)
     */
-  def load(): js.Promise[_] = js.native
+  def load(): js.Promise[js.Any] = js.native
   
   /**
     * Prints (exports) the current MapView according to selected options.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Print-PrintViewModel.html#print)
     */
-  def print(printTemplate: PrintTemplate): js.Promise[_] = js.native
+  def print(printTemplate: PrintTemplate): js.Promise[js.Any] = js.native
   
   /**
     * The URL of the REST endpoint of the Export Web Map Task.

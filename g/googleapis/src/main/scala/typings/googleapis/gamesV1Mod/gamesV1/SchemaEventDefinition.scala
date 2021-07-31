@@ -2,51 +2,49 @@ package typings.googleapis.gamesV1Mod.gamesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an event definition resource.
   */
-@js.native
 trait SchemaEventDefinition extends StObject {
   
   /**
     * A list of events that are a child of this event.
     */
-  var childEvents: js.UndefOr[js.Array[SchemaEventChild]] = js.native
+  var childEvents: js.UndefOr[js.Array[SchemaEventChild]] = js.undefined
   
   /**
     * Description of what this event represents.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The name to display for the event.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the event.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The base URL for the image that represents the event.
     */
-  var imageUrl: js.UndefOr[String] = js.native
+  var imageUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the icon image being returned is a default image, or is
     * game-provided.
     */
-  var isDefaultImageUrl: js.UndefOr[Boolean] = js.native
+  var isDefaultImageUrl: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string games#eventDefinition.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The visibility of event being tracked in this definition. Possible values
@@ -54,7 +52,7 @@ trait SchemaEventDefinition extends StObject {
     * - &quot;HIDDEN&quot;: This event should only be shown to users that have
     * recorded this event at least once.
     */
-  var visibility: js.UndefOr[String] = js.native
+  var visibility: js.UndefOr[String] = js.undefined
 }
 object SchemaEventDefinition {
   

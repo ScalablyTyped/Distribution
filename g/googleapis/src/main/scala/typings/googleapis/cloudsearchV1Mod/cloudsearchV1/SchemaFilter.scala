@@ -2,7 +2,6 @@ package typings.googleapis.cloudsearchV1Mod.cloudsearchV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,12 +13,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * AND or a NOT. AND can appear only at the top-most level. OR can appear only
   * under a top-level AND.
   */
-@js.native
 trait SchemaFilter extends StObject {
   
-  var compositeFilter: js.UndefOr[SchemaCompositeFilter] = js.native
+  var compositeFilter: js.UndefOr[SchemaCompositeFilter] = js.undefined
   
-  var valueFilter: js.UndefOr[SchemaValueFilter] = js.native
+  var valueFilter: js.UndefOr[SchemaValueFilter] = js.undefined
 }
 object SchemaFilter {
   

@@ -2,15 +2,13 @@ package typings.winrt.Windows.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUriRuntimeClassWithAbsoluteCanonicalUri extends StObject {
   
-  var absoluteCanonicalUri: String = js.native
+  var absoluteCanonicalUri: String
   
-  var displayIri: String = js.native
+  var displayIri: String
 }
 object IUriRuntimeClassWithAbsoluteCanonicalUri {
   

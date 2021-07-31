@@ -3,41 +3,39 @@ package typings.rollup.mod
 import typings.rollup.anon.PollInterval
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChokidarOptions extends StObject {
   
-  var alwaysStat: js.UndefOr[Boolean] = js.native
+  var alwaysStat: js.UndefOr[Boolean] = js.undefined
   
-  var atomic: js.UndefOr[Boolean | Double] = js.native
+  var atomic: js.UndefOr[Boolean | Double] = js.undefined
   
-  var awaitWriteFinish: js.UndefOr[PollInterval | Boolean] = js.native
+  var awaitWriteFinish: js.UndefOr[PollInterval | Boolean] = js.undefined
   
-  var binaryInterval: js.UndefOr[Double] = js.native
+  var binaryInterval: js.UndefOr[Double] = js.undefined
   
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
-  var depth: js.UndefOr[Double] = js.native
+  var depth: js.UndefOr[Double] = js.undefined
   
-  var disableGlobbing: js.UndefOr[Boolean] = js.native
+  var disableGlobbing: js.UndefOr[Boolean] = js.undefined
   
-  var followSymlinks: js.UndefOr[Boolean] = js.native
+  var followSymlinks: js.UndefOr[Boolean] = js.undefined
   
-  var ignoreInitial: js.UndefOr[Boolean] = js.native
+  var ignoreInitial: js.UndefOr[Boolean] = js.undefined
   
-  var ignorePermissionErrors: js.UndefOr[Boolean] = js.native
+  var ignorePermissionErrors: js.UndefOr[Boolean] = js.undefined
   
-  var ignored: js.UndefOr[js.Any] = js.native
+  var ignored: js.UndefOr[js.Any] = js.undefined
   
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
-  var persistent: js.UndefOr[Boolean] = js.native
+  var persistent: js.UndefOr[Boolean] = js.undefined
   
-  var useFsEvents: js.UndefOr[Boolean] = js.native
+  var useFsEvents: js.UndefOr[Boolean] = js.undefined
   
-  var usePolling: js.UndefOr[Boolean] = js.native
+  var usePolling: js.UndefOr[Boolean] = js.undefined
 }
 object ChokidarOptions {
   

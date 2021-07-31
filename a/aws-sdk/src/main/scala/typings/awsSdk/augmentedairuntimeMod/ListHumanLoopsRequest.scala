@@ -2,41 +2,39 @@ package typings.awsSdk.augmentedairuntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHumanLoopsRequest extends StObject {
   
   /**
     * (Optional) The timestamp of the date when you want the human loops to begin in ISO 8601 format. For example, 2020-02-24.
     */
-  var CreationTimeAfter: js.UndefOr[Timestamp] = js.native
+  var CreationTimeAfter: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * (Optional) The timestamp of the date before which you want the human loops to begin in ISO 8601 format. For example, 2020-02-24.
     */
-  var CreationTimeBefore: js.UndefOr[Timestamp] = js.native
+  var CreationTimeBefore: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of a flow definition.
     */
-  var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn = js.native
+  var FlowDefinitionArn: typings.awsSdk.augmentedairuntimeMod.FlowDefinitionArn
   
   /**
     * The total number of items to return. If the total number of available items is more than the value specified in MaxResults, then a NextToken is returned in the output. You can use this token to display the next page of results. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.MaxResults] = js.undefined
   
   /**
     * A token to display the next page of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.NextToken] = js.undefined
   
   /**
     * Optional. The order for displaying results. Valid values: Ascending and Descending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.augmentedairuntimeMod.SortOrder] = js.undefined
 }
 object ListHumanLoopsRequest {
   

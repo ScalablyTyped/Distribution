@@ -2,21 +2,19 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelClickEventUIParam extends StObject {
   
   /**
     * Used to determine whether or not the label click should fire slice click event.
     */
-  var allowSliceClick: js.UndefOr[js.Any] = js.native
+  var allowSliceClick: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Used to get reference to the slice object.
     */
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
 }
 object LabelClickEventUIParam {
   

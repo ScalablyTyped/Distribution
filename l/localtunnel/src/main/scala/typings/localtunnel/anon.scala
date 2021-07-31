@@ -2,32 +2,30 @@ package typings.localtunnel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined localtunnel.localtunnel.TunnelConfig & {  port :number} */
-  @js.native
   trait TunnelConfigportnumber extends StObject {
     
-    var allow_invalid_cert: js.UndefOr[Boolean] = js.native
+    var allow_invalid_cert: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var local_ca: js.UndefOr[String] = js.native
+    var local_ca: js.UndefOr[String] = js.undefined
     
-    var local_cert: js.UndefOr[String] = js.native
+    var local_cert: js.UndefOr[String] = js.undefined
     
-    var local_host: js.UndefOr[String] = js.native
+    var local_host: js.UndefOr[String] = js.undefined
     
-    var local_https: js.UndefOr[Boolean] = js.native
+    var local_https: js.UndefOr[Boolean] = js.undefined
     
-    var local_key: js.UndefOr[String] = js.native
+    var local_key: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var subdomain: js.UndefOr[String] = js.native
+    var subdomain: js.UndefOr[String] = js.undefined
   }
   object TunnelConfigportnumber {
     

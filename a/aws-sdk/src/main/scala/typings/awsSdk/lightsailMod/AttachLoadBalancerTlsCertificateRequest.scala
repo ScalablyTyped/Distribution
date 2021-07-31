@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachLoadBalancerTlsCertificateRequest extends StObject {
   
   /**
     * The name of your SSL/TLS certificate.
     */
-  var certificateName: ResourceName = js.native
+  var certificateName: ResourceName
   
   /**
     * The name of the load balancer to which you want to associate the SSL/TLS certificate.
     */
-  var loadBalancerName: ResourceName = js.native
+  var loadBalancerName: ResourceName
 }
 object AttachLoadBalancerTlsCertificateRequest {
   

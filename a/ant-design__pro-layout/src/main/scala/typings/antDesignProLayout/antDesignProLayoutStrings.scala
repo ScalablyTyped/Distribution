@@ -4,18 +4,21 @@ import typings.antDesignProLayout.defaultSettingsMod.ContentWidth
 import typings.antDesignProLayout.localesMod.LocaleType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object antDesignProLayoutStrings {
   
   @js.native
-  sealed trait Fixed extends ContentWidth
+  sealed trait Fixed
+    extends StObject
+       with ContentWidth
   @scala.inline
   def Fixed: Fixed = "Fixed".asInstanceOf[Fixed]
   
   @js.native
-  sealed trait Fluid extends ContentWidth
+  sealed trait Fluid
+    extends StObject
+       with ContentWidth
   @scala.inline
   def Fluid: Fluid = "Fluid".asInstanceOf[Fluid]
   
@@ -85,7 +88,9 @@ object antDesignProLayoutStrings {
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait `en-US` extends LocaleType
+  sealed trait `en-US`
+    extends StObject
+       with LocaleType
   @scala.inline
   def `en-US`: `en-US` = "en-US".asInstanceOf[`en-US`]
   
@@ -120,7 +125,9 @@ object antDesignProLayoutStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait `it-IT` extends LocaleType
+  sealed trait `it-IT`
+    extends StObject
+       with LocaleType
   @scala.inline
   def `it-IT`: `it-IT` = "it-IT".asInstanceOf[`it-IT`]
   
@@ -350,12 +357,16 @@ object antDesignProLayoutStrings {
   def yes: yes = "yes".asInstanceOf[yes]
   
   @js.native
-  sealed trait `zh-CN` extends LocaleType
+  sealed trait `zh-CN`
+    extends StObject
+       with LocaleType
   @scala.inline
   def `zh-CN`: `zh-CN` = "zh-CN".asInstanceOf[`zh-CN`]
   
   @js.native
-  sealed trait `zh-TW` extends LocaleType
+  sealed trait `zh-TW`
+    extends StObject
+       with LocaleType
   @scala.inline
   def `zh-TW`: `zh-TW` = "zh-TW".asInstanceOf[`zh-TW`]
 }

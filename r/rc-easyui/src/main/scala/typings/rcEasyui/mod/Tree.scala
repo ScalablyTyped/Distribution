@@ -3,7 +3,6 @@ package typings.rcEasyui.mod
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("rc-easyui", "Tree")
@@ -45,9 +44,12 @@ object Tree {
     
     object locale {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.contextTypes.locale")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.contextTypes.locale
       @JSImport("rc-easyui", "Tree.contextTypes.locale.isRequired")
@@ -57,9 +59,12 @@ object Tree {
     
     object t {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.contextTypes.t")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.contextTypes.t
       @JSImport("rc-easyui", "Tree.contextTypes.t.isRequired")
@@ -69,6 +74,10 @@ object Tree {
   }
   
   object defaultProps {
+    
+    @JSImport("rc-easyui", "Tree.defaultProps")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("rc-easyui", "Tree.defaultProps.animate")
     @js.native
@@ -94,61 +103,48 @@ object Tree {
     @js.native
     val dblclickToEdit: Boolean = js.native
     
-    @JSImport("rc-easyui", "Tree.defaultProps.filter")
-    @js.native
-    def filter(e: js.Any, t: js.Any): js.Any = js.native
+    @scala.inline
+    def filter(e: js.Any, t: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[js.Any]
     
     @JSImport("rc-easyui", "Tree.defaultProps.filterIncludingChild")
     @js.native
     val filterIncludingChild: Boolean = js.native
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onCheckChange")
-    @js.native
-    def onCheckChange(e: js.Any): Unit = js.native
+    @scala.inline
+    def onCheckChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCheckChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onEditBegin")
-    @js.native
-    def onEditBegin(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditBegin(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditBegin")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onEditCancel")
-    @js.native
-    def onEditCancel(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditCancel(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditCancel")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onEditEnd")
-    @js.native
-    def onEditEnd(e: js.Any): Unit = js.native
+    @scala.inline
+    def onEditEnd(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEditEnd")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onNodeCheck")
-    @js.native
-    def onNodeCheck(e: js.Any): Unit = js.native
+    @scala.inline
+    def onNodeCheck(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNodeCheck")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onNodeClick")
-    @js.native
-    def onNodeClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onNodeClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNodeClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onNodeCollapse")
-    @js.native
-    def onNodeCollapse(e: js.Any): Unit = js.native
+    @scala.inline
+    def onNodeCollapse(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNodeCollapse")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onNodeContextMenu")
-    @js.native
-    def onNodeContextMenu(e: js.Any): Unit = js.native
+    @scala.inline
+    def onNodeContextMenu(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNodeContextMenu")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onNodeDblClick")
-    @js.native
-    def onNodeDblClick(e: js.Any): Unit = js.native
+    @scala.inline
+    def onNodeDblClick(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNodeDblClick")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onNodeExpand")
-    @js.native
-    def onNodeExpand(e: js.Any): Unit = js.native
+    @scala.inline
+    def onNodeExpand(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNodeExpand")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onNodeUncheck")
-    @js.native
-    def onNodeUncheck(e: js.Any): Unit = js.native
+    @scala.inline
+    def onNodeUncheck(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onNodeUncheck")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("rc-easyui", "Tree.defaultProps.onSelectionChange")
-    @js.native
-    def onSelectionChange(e: js.Any): Unit = js.native
+    @scala.inline
+    def onSelectionChange(e: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onSelectionChange")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     @JSImport("rc-easyui", "Tree.defaultProps.selectLeafOnly")
     @js.native
@@ -159,9 +155,12 @@ object Tree {
     
     object animate {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.animate")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.animate
       @JSImport("rc-easyui", "Tree.propTypes.animate.isRequired")
@@ -171,9 +170,12 @@ object Tree {
     
     object cascadeCheck {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.cascadeCheck")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.cascadeCheck
       @JSImport("rc-easyui", "Tree.propTypes.cascadeCheck.isRequired")
@@ -183,9 +185,12 @@ object Tree {
     
     object checkbox {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.checkbox")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.checkbox
       @JSImport("rc-easyui", "Tree.propTypes.checkbox.isRequired")
@@ -195,9 +200,12 @@ object Tree {
     
     object clickToEdit {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.clickToEdit")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.clickToEdit
       @JSImport("rc-easyui", "Tree.propTypes.clickToEdit.isRequired")
@@ -207,9 +215,12 @@ object Tree {
     
     object data {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.data")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.data
       @JSImport("rc-easyui", "Tree.propTypes.data.isRequired")
@@ -219,9 +230,12 @@ object Tree {
     
     object dblclickToEdit {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.dblclickToEdit")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.dblclickToEdit
       @JSImport("rc-easyui", "Tree.propTypes.dblclickToEdit.isRequired")
@@ -231,9 +245,12 @@ object Tree {
     
     object editor {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.editor")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.editor
       @JSImport("rc-easyui", "Tree.propTypes.editor.isRequired")
@@ -243,9 +260,12 @@ object Tree {
     
     object filter {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.filter")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.filter
       @JSImport("rc-easyui", "Tree.propTypes.filter.isRequired")
@@ -255,9 +275,12 @@ object Tree {
     
     object filterIncludingChild {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.filterIncludingChild")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.filterIncludingChild
       @JSImport("rc-easyui", "Tree.propTypes.filterIncludingChild.isRequired")
@@ -267,9 +290,12 @@ object Tree {
     
     object render {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.render")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.render
       @JSImport("rc-easyui", "Tree.propTypes.render.isRequired")
@@ -279,9 +305,12 @@ object Tree {
     
     object selectLeafOnly {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.selectLeafOnly")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.selectLeafOnly
       @JSImport("rc-easyui", "Tree.propTypes.selectLeafOnly.isRequired")
@@ -291,9 +320,12 @@ object Tree {
     
     object selection {
       
+      @scala.inline
+      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = (^.asInstanceOf[js.Dynamic].apply(e.asInstanceOf[js.Any], t.asInstanceOf[js.Any], n.asInstanceOf[js.Any], r.asInstanceOf[js.Any], i.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
       @JSImport("rc-easyui", "Tree.propTypes.selection")
       @js.native
-      def apply(e: js.Any, t: js.Any, n: js.Any, r: js.Any, i: js.Any, a: js.Any): Unit = js.native
+      val ^ : js.Any = js.native
       
       // Circular reference from rc_easyui.Tree.propTypes.selection
       @JSImport("rc-easyui", "Tree.propTypes.selection.isRequired")

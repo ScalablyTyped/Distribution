@@ -3,7 +3,6 @@ package typings.mailgunJs.mod
 import typings.mailgunJs.anon.Address
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lists {
@@ -11,19 +10,18 @@ object lists {
   @js.native
   trait Member extends StObject {
     
-    def delete(): js.Promise[_] = js.native
-    def delete(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[_] = js.native
+    def delete(): js.Promise[js.Any] = js.native
+    def delete(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
     
-    def update(data: MemberUpdateData): js.Promise[_] = js.native
-    def update(data: MemberUpdateData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[_] = js.native
+    def update(data: MemberUpdateData): js.Promise[js.Any] = js.native
+    def update(data: MemberUpdateData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait MemberAddMultipleData extends StObject {
     
-    var members: js.Array[Address] = js.native
+    var members: js.Array[Address]
     
-    var upsert: js.UndefOr[Boolean] = js.native
+    var upsert: js.UndefOr[Boolean] = js.undefined
   }
   object MemberAddMultipleData {
     
@@ -50,16 +48,15 @@ object lists {
     }
   }
   
-  @js.native
   trait MemberCreateData extends StObject {
     
-    var address: String = js.native
+    var address: String
     
-    var name: String = js.native
+    var name: String
     
-    var subscribed: Boolean = js.native
+    var subscribed: Boolean
     
-    var vars: js.UndefOr[js.Object] = js.native
+    var vars: js.UndefOr[js.Object] = js.undefined
   }
   object MemberCreateData {
     
@@ -89,14 +86,13 @@ object lists {
     }
   }
   
-  @js.native
   trait MemberUpdateData extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var subscribed: Boolean = js.native
+    var subscribed: Boolean
     
-    var vars: js.UndefOr[js.Object] = js.native
+    var vars: js.UndefOr[js.Object] = js.undefined
   }
   object MemberUpdateData {
     
@@ -126,13 +122,13 @@ object lists {
   @js.native
   trait Members extends StObject {
     
-    def add(data: MemberAddMultipleData): js.Promise[_] = js.native
-    def add(data: MemberAddMultipleData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[_] = js.native
+    def add(data: MemberAddMultipleData): js.Promise[js.Any] = js.native
+    def add(data: MemberAddMultipleData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
     
-    def create(data: MemberCreateData): js.Promise[_] = js.native
-    def create(data: MemberCreateData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[_] = js.native
+    def create(data: MemberCreateData): js.Promise[js.Any] = js.native
+    def create(data: MemberCreateData, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
     
-    def list(): js.Promise[_] = js.native
-    def list(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[_] = js.native
+    def list(): js.Promise[js.Any] = js.native
+    def list(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): js.Promise[js.Any] = js.native
   }
 }

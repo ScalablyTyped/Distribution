@@ -3,23 +3,23 @@ package typings.ecmarkdown.nodeTypesMod
 import typings.ecmarkdown.ecmarkdownStrings.ol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OrderedListToken extends Token {
+trait OrderedListToken
+  extends StObject
+     with Token {
   
-  var contents: String = js.native
+  var contents: String
   
-  var location: LocationRange = js.native
+  var location: LocationRange
   
-  var name: ol = js.native
+  var name: ol
 }
 object OrderedListToken {
   
   @scala.inline
-  def apply(contents: String, location: LocationRange, name: ol): OrderedListToken = {
-    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(contents: String, location: LocationRange): OrderedListToken = {
+    val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = "ol")
     __obj.asInstanceOf[OrderedListToken]
   }
   

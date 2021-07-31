@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnomalyScore extends StObject {
   
   /**
     *  The last observed score. 
     */
-  var CurrentScore: GenericDouble = js.native
+  var CurrentScore: GenericDouble
   
   /**
     *  The maximum score observed during the AnomalyDateInterval. 
     */
-  var MaxScore: GenericDouble = js.native
+  var MaxScore: GenericDouble
 }
 object AnomalyScore {
   

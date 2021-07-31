@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ui {
@@ -28,15 +27,13 @@ object ui {
     def tooltip(): Control = js.native
   }
   
-  @js.native
   trait Collection extends StObject
   
-  @js.native
   trait Container extends StObject {
     
-    def add(items: js.Any): Collection = js.native
+    def add(items: js.Any): Collection
     
-    def items(): Collection = js.native
+    def items(): Collection
   }
   object Container {
     
@@ -57,10 +54,9 @@ object ui {
     }
   }
   
-  @js.native
   trait ControlSettings extends StObject {
     
-    var menu: Menu = js.native
+    var menu: Menu
   }
   object ControlSettings {
     
@@ -78,10 +74,9 @@ object ui {
     }
   }
   
-  @js.native
   trait Factory extends StObject {
     
-    def create(settings: js.Any): Control = js.native
+    def create(settings: js.Any): Control
   }
   object Factory {
     
@@ -109,10 +104,9 @@ object ui {
     extends FloatPanel
        with Container
   
-  @js.native
   trait Moveable extends StObject {
     
-    def moveRel(elm: Node, rel: String): Control = js.native
+    def moveRel(elm: Node, rel: String): Control
   }
   object Moveable {
     

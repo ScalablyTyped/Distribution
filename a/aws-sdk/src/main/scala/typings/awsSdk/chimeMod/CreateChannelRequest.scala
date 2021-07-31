@@ -2,43 +2,41 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateChannelRequest extends StObject {
   
   /**
     * The ARN of the channel request.
     */
-  var AppInstanceArn: ChimeArn = js.native
+  var AppInstanceArn: ChimeArn
   
   /**
     * The client token for the request. An Idempotency token.
     */
-  var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken = js.native
+  var ClientRequestToken: typings.awsSdk.chimeMod.ClientRequestToken
   
   /**
     * The metadata of the creation request. Limited to 1KB and UTF-8.
     */
-  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.native
+  var Metadata: js.UndefOr[typings.awsSdk.chimeMod.Metadata] = js.undefined
   
   /**
     * The channel mode: UNRESTRICTED or RESTRICTED. Administrators, moderators, and channel members can add themselves and other members to unrestricted channels. Only administrators and moderators can add members to restricted channels.
     */
-  var Mode: js.UndefOr[ChannelMode] = js.native
+  var Mode: js.UndefOr[ChannelMode] = js.undefined
   
   /**
     * The name of the channel.
     */
-  var Name: NonEmptyResourceName = js.native
+  var Name: NonEmptyResourceName
   
   /**
     * The channel's privacy level: PUBLIC or PRIVATE. Private channels aren't discoverable by users outside the channel. Public channels are discoverable by anyone in the app instance.
     */
-  var Privacy: js.UndefOr[ChannelPrivacy] = js.native
+  var Privacy: js.UndefOr[ChannelPrivacy] = js.undefined
   
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
 }
 object CreateChannelRequest {
   

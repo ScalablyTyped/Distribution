@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PosCustomBatchResponseEntry extends StObject {
   
   /** The ID of the request entry to which this entry responds. */
-  var batchId: js.UndefOr[Double] = js.native
+  var batchId: js.UndefOr[Double] = js.undefined
   
   /** A list of errors defined if, and only if, the request failed. */
-  var errors: js.UndefOr[Errors] = js.native
+  var errors: js.UndefOr[Errors] = js.undefined
   
   /** The updated inventory information. */
-  var inventory: js.UndefOr[PosInventory] = js.native
+  var inventory: js.UndefOr[PosInventory] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "`content#posCustomBatchResponseEntry`" */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The updated sale information. */
-  var sale: js.UndefOr[PosSale] = js.native
+  var sale: js.UndefOr[PosSale] = js.undefined
   
   /** The retrieved or updated store information. */
-  var store: js.UndefOr[PosStore] = js.native
+  var store: js.UndefOr[PosStore] = js.undefined
 }
 object PosCustomBatchResponseEntry {
   

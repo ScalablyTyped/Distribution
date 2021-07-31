@@ -5,14 +5,16 @@ import typings.tensorflowTfjsCore.distTypesMod.DataType
 import typings.tensorflowTfjsCore.kernelRegistryMod.TensorInfo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reduceMod {
   
-  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/reduce", "reduce")
+  @JSImport("@tensorflow/tfjs-backend-webgl/dist/kernel_utils/reduce", JSImport.Namespace)
   @js.native
-  def reduce(x: TensorInfo, dtype: DataType, reductionType: ReduceTypes, backend: MathBackendWebGL): TensorInfo = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def reduce(x: TensorInfo, dtype: DataType, reductionType: ReduceTypes, backend: MathBackendWebGL): TensorInfo = (^.asInstanceOf[js.Dynamic].applyDynamic("reduce")(x.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any], reductionType.asInstanceOf[js.Any], backend.asInstanceOf[js.Any])).asInstanceOf[TensorInfo]
   
   /* Rewritten from type alias, can be one of: 
     - typings.tensorflowTfjsBackendWebgl.tensorflowTfjsBackendWebglStrings.all

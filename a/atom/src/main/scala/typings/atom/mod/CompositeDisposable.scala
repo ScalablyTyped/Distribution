@@ -2,12 +2,13 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "CompositeDisposable")
 @js.native
-class CompositeDisposable protected () extends DisposableLike {
+class CompositeDisposable protected ()
+  extends StObject
+     with DisposableLike {
   /** Construct an instance, optionally with one or more disposables. */
   def this(disposables: DisposableLike*) = this()
   
@@ -26,6 +27,9 @@ class CompositeDisposable protected () extends DisposableLike {
   
   /** Alias to CompositeDisposable::remove. */
   def delete(disposable: DisposableLike): Unit = js.native
+  
+  /* CompleteClass */
+  override def dispose(): Unit = js.native
   
   /** Remove a previously added disposable. */
   def remove(disposable: DisposableLike): Unit = js.native

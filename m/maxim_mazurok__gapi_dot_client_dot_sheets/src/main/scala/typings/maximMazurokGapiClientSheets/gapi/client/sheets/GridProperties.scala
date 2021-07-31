@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridProperties extends StObject {
   
   /** The number of columns in the grid. */
-  var columnCount: js.UndefOr[Double] = js.native
+  var columnCount: js.UndefOr[Double] = js.undefined
   
   /** True if the column grouping control toggle is shown after the group. */
-  var columnGroupControlAfter: js.UndefOr[Boolean] = js.native
+  var columnGroupControlAfter: js.UndefOr[Boolean] = js.undefined
   
   /** The number of columns that are frozen in the grid. */
-  var frozenColumnCount: js.UndefOr[Double] = js.native
+  var frozenColumnCount: js.UndefOr[Double] = js.undefined
   
   /** The number of rows that are frozen in the grid. */
-  var frozenRowCount: js.UndefOr[Double] = js.native
+  var frozenRowCount: js.UndefOr[Double] = js.undefined
   
   /** True if the grid isn't showing gridlines in the UI. */
-  var hideGridlines: js.UndefOr[Boolean] = js.native
+  var hideGridlines: js.UndefOr[Boolean] = js.undefined
   
   /** The number of rows in the grid. */
-  var rowCount: js.UndefOr[Double] = js.native
+  var rowCount: js.UndefOr[Double] = js.undefined
   
   /** True if the row grouping control toggle is shown after the group. */
-  var rowGroupControlAfter: js.UndefOr[Boolean] = js.native
+  var rowGroupControlAfter: js.UndefOr[Boolean] = js.undefined
 }
 object GridProperties {
   

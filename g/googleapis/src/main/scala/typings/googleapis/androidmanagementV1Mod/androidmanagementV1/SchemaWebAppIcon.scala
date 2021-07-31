@@ -2,13 +2,11 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An icon for a web app. Supported formats are: png, jpg and webp.
   */
-@js.native
 trait SchemaWebAppIcon extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaWebAppIcon extends StObject {
     * &lt;li&gt;The image should ideally be square. &lt;li&gt;The image should
     * ideally have a size of 512x512. &lt;/ul&gt;
     */
-  var imageData: js.UndefOr[String] = js.native
+  var imageData: js.UndefOr[String] = js.undefined
 }
 object SchemaWebAppIcon {
   

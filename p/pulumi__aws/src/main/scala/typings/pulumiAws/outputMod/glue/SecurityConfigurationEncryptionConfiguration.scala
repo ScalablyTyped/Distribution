@@ -2,20 +2,18 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityConfigurationEncryptionConfiguration extends StObject {
   
-  var cloudwatchEncryption: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption = js.native
+  var cloudwatchEncryption: SecurityConfigurationEncryptionConfigurationCloudwatchEncryption
   
-  var jobBookmarksEncryption: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption = js.native
+  var jobBookmarksEncryption: SecurityConfigurationEncryptionConfigurationJobBookmarksEncryption
   
   /**
     * A `s3Encryption ` block as described below, which contains encryption configuration for S3 data.
     */
-  var s3Encryption: SecurityConfigurationEncryptionConfigurationS3Encryption = js.native
+  var s3Encryption: SecurityConfigurationEncryptionConfigurationS3Encryption
 }
 object SecurityConfigurationEncryptionConfiguration {
   

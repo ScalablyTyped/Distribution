@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotificationDefaultSettings extends StObject {
   
   /**
@@ -25,7 +23,7 @@ trait NotificationDefaultSettings extends StObject {
     */
   var senderEmailNotifications: js.UndefOr[
     /* Contains the settings for the email notifications that senders receive about the envelopes that they send. */ SenderEmailNotifications
-  ] = js.native
+  ] = js.undefined
   
   /**
     * An array of email notifications that specifies the email the user receives when they are a sender. When the specific email notification is set to true, the user receives
@@ -35,7 +33,7 @@ trait NotificationDefaultSettings extends StObject {
     /* An array of email notifications that specifies the email the user receives when they are a sender. When the specific email notification is
     set to true, the user receives those types of email notifications from DocuSign. The user inherits the default account sender email notification settings when the user is created.
     */ SignerEmailNotifications
-  ] = js.native
+  ] = js.undefined
 }
 object NotificationDefaultSettings {
   

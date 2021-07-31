@@ -3,7 +3,6 @@ package typings.unimodulesReactNativeAdapter
 import typings.reactNative.mod.NativeEventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventEmitterMod {
@@ -28,16 +27,15 @@ object eventEmitterMod {
     def removeSubscription(subscription: Subscription): Unit = js.native
   }
   
-  @js.native
   trait NativeModule extends StObject {
     
-    def addListener(eventName: String): Unit = js.native
+    def addListener(eventName: String): Unit
     
-    def removeListeners(count: Double): Unit = js.native
+    def removeListeners(count: Double): Unit
     
-    var startObserving: js.UndefOr[js.Function0[Unit]] = js.native
+    var startObserving: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var stopObserving: js.UndefOr[js.Function0[Unit]] = js.native
+    var stopObserving: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object NativeModule {
     
@@ -70,10 +68,9 @@ object eventEmitterMod {
     }
   }
   
-  @js.native
   trait Subscription extends StObject {
     
-    def remove(): Unit = js.native
+    def remove(): Unit
   }
   object Subscription {
     

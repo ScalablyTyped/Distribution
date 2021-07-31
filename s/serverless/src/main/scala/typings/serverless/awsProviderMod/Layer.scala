@@ -2,25 +2,23 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Layer extends StObject {
   
-  var allowedAccounts: js.UndefOr[js.Array[String]] = js.native
+  var allowedAccounts: js.UndefOr[js.Array[String]] = js.undefined
   
-  var compatibleRuntimes: js.UndefOr[js.Array[String]] = js.native
+  var compatibleRuntimes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
-  var licenseInfo: js.UndefOr[String] = js.native
+  var licenseInfo: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var path: String = js.native
+  var path: String
   
-  var retain: js.UndefOr[Boolean] = js.native
+  var retain: js.UndefOr[Boolean] = js.undefined
 }
 object Layer {
   

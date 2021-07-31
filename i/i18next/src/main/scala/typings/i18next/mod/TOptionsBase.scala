@@ -3,81 +3,79 @@ package typings.i18next.mod
 import typings.i18next.i18nextBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TOptionsBase extends StObject {
   
   /**
     * Used for contexts (eg. male\female)
     */
-  var context: js.UndefOr[js.Any] = js.native
+  var context: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Count value used for plurals
     */
-  var count: js.UndefOr[Double] = js.native
+  var count: js.UndefOr[Double] = js.undefined
   
   /**
     * Default value to return if a translation was not found
     */
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Override language to lookup key if not found see fallbacks for details
     */
-  var fallbackLng: js.UndefOr[FallbackLng] = js.native
+  var fallbackLng: js.UndefOr[FallbackLng] = js.undefined
   
   /**
     * Override interpolation options
     */
-  var interpolation: js.UndefOr[InterpolationOptions] = js.native
+  var interpolation: js.UndefOr[InterpolationOptions] = js.undefined
   
   /**
     * Char, eg. '\n' that arrays will be joined by (can be set globally too)
     */
-  var joinArrays: js.UndefOr[String] = js.native
+  var joinArrays: js.UndefOr[String] = js.undefined
   
   /**
     * Override char to separate keys
     */
-  var keySeparator: js.UndefOr[`false` | String] = js.native
+  var keySeparator: js.UndefOr[`false` | String] = js.undefined
   
   /**
     * Override language to use
     */
-  var lng: js.UndefOr[String] = js.native
+  var lng: js.UndefOr[String] = js.undefined
   
   /**
     * Override languages to use
     */
-  var lngs: js.UndefOr[js.Array[String]] = js.native
+  var lngs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Override namespaces (string or array)
     */
-  var ns: js.UndefOr[String | js.Array[String]] = js.native
+  var ns: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Override char to split namespace from key
     */
-  var nsSeparator: js.UndefOr[`false` | String] = js.native
+  var nsSeparator: js.UndefOr[`false` | String] = js.undefined
   
   /**
     * String or array of postProcessors to apply see interval plurals as a sample
     */
-  var postProcess: js.UndefOr[String | js.Array[String]] = js.native
+  var postProcess: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /**
     * Object with vars for interpolation - or put them directly in options
     */
-  var replace: js.UndefOr[js.Any] = js.native
+  var replace: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Accessing an object not a translation string (can be set globally too)
     */
-  var returnObjects: js.UndefOr[Boolean] = js.native
+  var returnObjects: js.UndefOr[Boolean] = js.undefined
 }
 object TOptionsBase {
   

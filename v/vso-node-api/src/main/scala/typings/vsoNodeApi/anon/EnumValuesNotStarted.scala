@@ -2,13 +2,11 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnumValuesNotStarted extends StObject {
   
-  var enumValues: NotStarted = js.native
+  var enumValues: NotStarted
 }
 object EnumValuesNotStarted {
   

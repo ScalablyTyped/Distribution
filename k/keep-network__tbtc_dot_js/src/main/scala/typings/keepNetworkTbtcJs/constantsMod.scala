@@ -4,7 +4,6 @@ import typings.keepNetworkTbtcJs.commonTypesMod.Contract
 import typings.keepNetworkTbtcJs.commonTypesMod.TBTCConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -44,9 +43,12 @@ object constantsMod {
   }
   object Constants {
     
-    /* static member */
-    @JSImport("@keep-network/tbtc.js/src/Constants", "Constants.withConfig")
+    @JSImport("@keep-network/tbtc.js/src/Constants", "Constants")
     @js.native
-    def withConfig(config: TBTCConfig): js.Promise[Constants] = js.native
+    val ^ : js.Any = js.native
+    
+    /* static member */
+    @scala.inline
+    def withConfig(config: TBTCConfig): js.Promise[Constants] = ^.asInstanceOf[js.Dynamic].applyDynamic("withConfig")(config.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Constants]]
   }
 }

@@ -3,21 +3,19 @@ package typings.jqueryUiLayout
 import typings.jqueryUiLayout.JQueryUILayout.PaneState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait East extends StObject {
     
-    var east: JQuery | Boolean = js.native
+    var east: JQuery | Boolean
     
-    var north: JQuery | Boolean = js.native
+    var north: JQuery | Boolean
     
-    var south: JQuery | Boolean = js.native
+    var south: JQuery | Boolean
     
-    var west: JQuery | Boolean = js.native
+    var west: JQuery | Boolean
   }
   object East {
     
@@ -44,16 +42,15 @@ object anon {
     }
   }
   
-  @js.native
   trait North extends StObject {
     
-    var east: PaneState = js.native
+    var east: PaneState
     
-    var north: PaneState = js.native
+    var north: PaneState
     
-    var south: PaneState = js.native
+    var south: PaneState
     
-    var west: PaneState = js.native
+    var west: PaneState
   }
   object North {
     

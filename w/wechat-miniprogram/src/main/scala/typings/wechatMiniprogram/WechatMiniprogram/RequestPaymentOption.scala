@@ -5,27 +5,25 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.RSA
 import typings.wechatMiniprogram.wechatMiniprogramStrings.`HMAC-SHA256`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestPaymentOption extends StObject {
   
   /** 统一下单接口返回的 prepay_id 参数值，提交格式如：prepay_id=*** */
   @JSName("package")
-  var _package: String = js.native
+  var _package: String
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[RequestPaymentCompleteCallback] = js.native
+  var complete: js.UndefOr[RequestPaymentCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[RequestPaymentFailCallback] = js.native
+  var fail: js.UndefOr[RequestPaymentFailCallback] = js.undefined
   
   /** 随机字符串，长度为32个字符以下 */
-  var nonceStr: String = js.native
+  var nonceStr: String
   
   /** 签名，具体见微信支付文档 */
-  var paySign: String = js.native
+  var paySign: String
   
   /** 签名算法，应与后台下单时的值一致
     *
@@ -33,13 +31,13 @@ trait RequestPaymentOption extends StObject {
     * - 'MD5': 仅在 v2 版本接口适用;
     * - 'HMAC-SHA256': 仅在 v2 版本接口适用;
     * - 'RSA': 仅在 v3 版本接口适用; */
-  var signType: js.UndefOr[MD5 | `HMAC-SHA256` | RSA] = js.native
+  var signType: js.UndefOr[MD5 | `HMAC-SHA256` | RSA] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[RequestPaymentSuccessCallback] = js.native
+  var success: js.UndefOr[RequestPaymentSuccessCallback] = js.undefined
   
   /** 时间戳，从 1970 年 1 月 1 日 00:00:00 至今的秒数，即当前的时间 */
-  var timeStamp: String = js.native
+  var timeStamp: String
 }
 object RequestPaymentOption {
   

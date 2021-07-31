@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.TextDirection
 import typings.openui5.sap.ui.core.ValueState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait ObjectListItem extends ListItemBase {
+trait ObjectListItem
+  extends StObject
+     with ListItemBase {
   
   /**
     * Adds some attribute to the aggregation <code>attributes</code>.

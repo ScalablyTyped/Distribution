@@ -2,26 +2,24 @@ package typings.jsrsasign.jsrsasign
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PKCS8Info extends StObject {
   
   /** hexadecimal string of encrypted private key */
-  var ciphertext: String = js.native
+  var ciphertext: String
   
   /** encryption algorithm name (currently TripleDES only) */
-  var encryptionSchemeAlg: String = js.native
+  var encryptionSchemeAlg: String
   
   /** initial vector for encryption algorithm */
-  var encryptionSchemeIV: String = js.native
+  var encryptionSchemeIV: String
   
   /** hexadecimal string of PBKDF2 salt */
-  var pbkdf2Salt: String = js.native
+  var pbkdf2Salt: String
   
   /** iteration count */
-  var pkbdf2Iter: String = js.native
+  var pkbdf2Iter: String
 }
 object PKCS8Info {
   

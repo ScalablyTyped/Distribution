@@ -2,19 +2,17 @@ package typings.antDesignReactNative.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cascade extends StObject {
   
-  var cascade: Boolean = js.native
+  var cascade: Boolean
   
-  var cols: Double = js.native
+  var cols: Double
   
-  def onChange(): Unit = js.native
+  def onChange(): Unit
   
-  var value: js.Array[scala.Nothing] = js.native
+  var value: js.Array[scala.Nothing]
 }
 object Cascade {
   

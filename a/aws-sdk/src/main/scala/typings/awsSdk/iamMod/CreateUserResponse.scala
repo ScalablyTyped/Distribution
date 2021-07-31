@@ -2,16 +2,14 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateUserResponse extends StObject {
   
   /**
     * A structure with details about the new IAM user.
     */
-  var User: js.UndefOr[typings.awsSdk.iamMod.User] = js.native
+  var User: js.UndefOr[typings.awsSdk.iamMod.User] = js.undefined
 }
 object CreateUserResponse {
   

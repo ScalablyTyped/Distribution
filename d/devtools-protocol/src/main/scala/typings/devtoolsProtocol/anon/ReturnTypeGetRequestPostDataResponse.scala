@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Network.GetRequestPostDataRequest
 import typings.devtoolsProtocol.mod.Protocol.Network.GetRequestPostDataResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetRequestPostDataResponse extends StObject {
   
-  var paramsType: js.Array[GetRequestPostDataRequest] = js.native
+  var paramsType: js.Array[GetRequestPostDataRequest]
   
-  var returnType: GetRequestPostDataResponse = js.native
+  var returnType: GetRequestPostDataResponse
 }
 object ReturnTypeGetRequestPostDataResponse {
   

@@ -12,7 +12,7 @@ A compiler for "Ecmarkdown" algorithm shorthand into HTML.
 | Keywords           | ecmascript, javascript, specs, typography, markup, markdown, html, code |
 | # releases         | 9 |
 | # dependents       | 1 |
-| # downloads        | 7740 |
+| # downloads        | 11856 |
 | # stars            | 0 |
 
 ## Links

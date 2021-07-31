@@ -10,9 +10,9 @@ Maxmind DB (MMDB) Library
 | ------------------ | :-------------: |
 | Full name          | mmdb-lib |
 | Keywords           | maxmind, mmdb, geo, geoip, geoip2 |
-| # releases         | 3 |
-| # dependents       | 0 |
-| # downloads        | 62 |
+| # releases         | 5 |
+| # dependents       | 2 |
+| # downloads        | 391264 |
 | # stars            | 0 |
 
 ## Links

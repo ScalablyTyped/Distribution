@@ -2,16 +2,16 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Static data for an LProjectionNode  */
-@js.native
-trait TProjectionNode extends TNode {
+trait TProjectionNode
+  extends StObject
+     with TNode {
   
   /** Index in the data[] array */
   @JSName("child")
-  var child_TProjectionNode: Null = js.native
+  var child_TProjectionNode: Null
   
   /**
     * Projection nodes will have parents unless they are the first node of a component
@@ -19,17 +19,17 @@ trait TProjectionNode extends TNode {
     * retrieved using LView.node).
     */
   @JSName("parent")
-  var parent_TProjectionNode: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null = js.native
+  var parent_TProjectionNode: ɵangularPackagesCoreCoreBh | TElementContainerNode | Null
   
   /** Index of the projection node. (See TNode.projection for more info.) */
   @JSName("projection")
-  var projection_TProjectionNode: Double = js.native
+  var projection_TProjectionNode: Double
   
   @JSName("tViews")
-  var tViews_TProjectionNode: Null = js.native
+  var tViews_TProjectionNode: Null
   
   @JSName("value")
-  var value_TProjectionNode: Null = js.native
+  var value_TProjectionNode: Null
 }
 object TProjectionNode {
   
@@ -50,7 +50,7 @@ object TProjectionNode {
     `type`: TNodeType,
     value: Null
   ): TProjectionNode = {
-    val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(child = child.asInstanceOf[js.Any], classBindings = classBindings.asInstanceOf[js.Any], directiveEnd = directiveEnd.asInstanceOf[js.Any], directiveStart = directiveStart.asInstanceOf[js.Any], directiveStylingLast = directiveStylingLast.asInstanceOf[js.Any], flags = flags.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], injectorIndex = injectorIndex.asInstanceOf[js.Any], projection = projection.asInstanceOf[js.Any], providerIndexes = providerIndexes.asInstanceOf[js.Any], styleBindings = styleBindings.asInstanceOf[js.Any], tViews = tViews.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], attrs = null, classes = null, classesWithoutHost = null, inputs = null, insertBeforeIndex = null, localNames = null, mergedAttrs = null, next = null, outputs = null, parent = null, projectionNext = null, propertyBindings = null, styles = null, stylesWithoutHost = null)
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[TProjectionNode]
   }

@@ -2,24 +2,22 @@ package typings.activexPowerpoint.PowerPoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Placeholders extends StObject {
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def FindByName(Index: js.Any): Shape = js.native
+  def FindByName(Index: js.Any): Shape
   
-  def Item(Index: Double): Shape = js.native
+  def Item(Index: Double): Shape
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Placeholders_typekey")
-  var PowerPointDotPlaceholders_typekey: Placeholders = js.native
+  var PowerPointDotPlaceholders_typekey: Placeholders
 }
 object Placeholders {
   

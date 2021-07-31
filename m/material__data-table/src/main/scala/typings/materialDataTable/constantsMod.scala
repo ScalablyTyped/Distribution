@@ -2,7 +2,6 @@ package typings.materialDataTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object constantsMod {
@@ -14,23 +13,31 @@ object constantsMod {
   object SortValue extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[SortValue with String] = js.native
+    def apply(value: String): js.UndefOr[SortValue & String] = js.native
     
     @js.native
-    sealed trait ASCENDING extends SortValue
-    /* "ascending" */ val ASCENDING: typings.materialDataTable.constantsMod.SortValue.ASCENDING with String = js.native
+    sealed trait ASCENDING
+      extends StObject
+         with SortValue
+    /* "ascending" */ val ASCENDING: typings.materialDataTable.constantsMod.SortValue.ASCENDING & String = js.native
     
     @js.native
-    sealed trait DESCENDING extends SortValue
-    /* "descending" */ val DESCENDING: typings.materialDataTable.constantsMod.SortValue.DESCENDING with String = js.native
+    sealed trait DESCENDING
+      extends StObject
+         with SortValue
+    /* "descending" */ val DESCENDING: typings.materialDataTable.constantsMod.SortValue.DESCENDING & String = js.native
     
     @js.native
-    sealed trait NONE extends SortValue
-    /* "none" */ val NONE: typings.materialDataTable.constantsMod.SortValue.NONE with String = js.native
+    sealed trait NONE
+      extends StObject
+         with SortValue
+    /* "none" */ val NONE: typings.materialDataTable.constantsMod.SortValue.NONE & String = js.native
     
     @js.native
-    sealed trait OTHER extends SortValue
-    /* "other" */ val OTHER: typings.materialDataTable.constantsMod.SortValue.OTHER with String = js.native
+    sealed trait OTHER
+      extends StObject
+         with SortValue
+    /* "other" */ val OTHER: typings.materialDataTable.constantsMod.SortValue.OTHER & String = js.native
   }
   
   object attributes {

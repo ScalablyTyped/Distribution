@@ -15,7 +15,6 @@ import typings.std.HTMLElement
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createAnimationMod {
@@ -39,70 +38,69 @@ object createAnimationMod {
     def setupAnimation(props: js.Any): Unit = js.native
   }
   
-  @js.native
   trait CreateAnimationProps extends StObject {
     
-    var afterAddClass: js.UndefOr[String | js.Array[String]] = js.native
+    var afterAddClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var afterAddRead: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterAddRead: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterAddWrite: js.UndefOr[js.Function0[Unit]] = js.native
+    var afterAddWrite: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var afterClearStyles: js.UndefOr[js.Array[String]] = js.native
+    var afterClearStyles: js.UndefOr[js.Array[String]] = js.undefined
     
-    var afterRemoveClass: js.UndefOr[String | js.Array[String]] = js.native
+    var afterRemoveClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var afterStyles: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var afterStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var beforeAddClass: js.UndefOr[String | js.Array[String]] = js.native
+    var beforeAddClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var beforeAddRead: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeAddRead: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeAddWrite: js.UndefOr[js.Function0[Unit]] = js.native
+    var beforeAddWrite: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var beforeClearStyles: js.UndefOr[js.Array[String]] = js.native
+    var beforeClearStyles: js.UndefOr[js.Array[String]] = js.undefined
     
-    var beforeRemoveClass: js.UndefOr[String | js.Array[String]] = js.native
+    var beforeRemoveClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var beforeStyles: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var beforeStyles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
     
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
-    var destroy: js.UndefOr[Boolean] = js.native
+    var destroy: js.UndefOr[Boolean] = js.undefined
     
-    var direction: js.UndefOr[AnimationDirection] = js.native
+    var direction: js.UndefOr[AnimationDirection] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[String] = js.native
+    var easing: js.UndefOr[String] = js.undefined
     
-    var fill: js.UndefOr[AnimationFill] = js.native
+    var fill: js.UndefOr[AnimationFill] = js.undefined
     
-    var from: js.UndefOr[js.Array[PartialPropertyValue] | PartialPropertyValue] = js.native
+    var from: js.UndefOr[js.Array[PartialPropertyValue] | PartialPropertyValue] = js.undefined
     
-    var fromTo: js.UndefOr[js.Array[PropertyValue] | PropertyValue] = js.native
+    var fromTo: js.UndefOr[js.Array[PropertyValue] | PropertyValue] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var iterations: js.UndefOr[Double] = js.native
+    var iterations: js.UndefOr[Double] = js.undefined
     
-    var keyframes: js.UndefOr[AnimationKeyFrames] = js.native
+    var keyframes: js.UndefOr[AnimationKeyFrames] = js.undefined
     
-    var onFinish: js.UndefOr[Callback] = js.native
+    var onFinish: js.UndefOr[Callback] = js.undefined
     
-    var pause: js.UndefOr[Boolean] = js.native
+    var pause: js.UndefOr[Boolean] = js.undefined
     
-    var play: js.UndefOr[Boolean] = js.native
+    var play: js.UndefOr[Boolean] = js.undefined
     
-    var progressEnd: js.UndefOr[Dur] = js.native
+    var progressEnd: js.UndefOr[Dur] = js.undefined
     
-    var progressStart: js.UndefOr[ForceLinearEasing] = js.native
+    var progressStart: js.UndefOr[ForceLinearEasing] = js.undefined
     
-    var progressStep: js.UndefOr[Step] = js.native
+    var progressStep: js.UndefOr[Step] = js.undefined
     
-    var stop: js.UndefOr[Boolean] = js.native
+    var stop: js.UndefOr[Boolean] = js.undefined
     
-    var to: js.UndefOr[js.Array[PartialPropertyValue] | PartialPropertyValue] = js.native
+    var to: js.UndefOr[js.Array[PartialPropertyValue] | PartialPropertyValue] = js.undefined
   }
   object CreateAnimationProps {
     
@@ -333,12 +331,11 @@ object createAnimationMod {
     }
   }
   
-  @js.native
   trait PartialPropertyValue extends StObject {
     
-    var property: String = js.native
+    var property: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object PartialPropertyValue {
     
@@ -359,14 +356,13 @@ object createAnimationMod {
     }
   }
   
-  @js.native
   trait PropertyValue extends StObject {
     
-    var fromValue: js.Any = js.native
+    var fromValue: js.Any
     
-    var property: String = js.native
+    var property: String
     
-    var toValue: js.Any = js.native
+    var toValue: js.Any
   }
   object PropertyValue {
     

@@ -5,25 +5,23 @@ import typings.react.mod.Component
 import typings.reactVirtualized.esCellMeasurerMod.MeasuredCellParent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridCellProps extends StObject {
   
-  var columnIndex: Double = js.native
+  var columnIndex: Double
   
-  var isScrolling: Boolean = js.native
+  var isScrolling: Boolean
   
-  var isVisible: Boolean = js.native
+  var isVisible: Boolean
   
-  var key: String = js.native
+  var key: String
   
-  var parent: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent = js.native
+  var parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent
   
-  var rowIndex: Double = js.native
+  var rowIndex: Double
   
-  var style: CSSProperties = js.native
+  var style: CSSProperties
 }
 object GridCellProps {
   
@@ -33,7 +31,7 @@ object GridCellProps {
     isScrolling: Boolean,
     isVisible: Boolean,
     key: String,
-    parent: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent,
+    parent: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent,
     rowIndex: Double,
     style: CSSProperties
   ): GridCellProps = {
@@ -57,7 +55,7 @@ object GridCellProps {
     def setKey(value: String): Self = StObject.set(x, "key", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParent(value: (Component[GridCoreProps, js.Object, _]) with MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    def setParent(value: (Component[GridCoreProps, js.Object, js.Any]) & MeasuredCellParent): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRowIndex(value: Double): Self = StObject.set(x, "rowIndex", value.asInstanceOf[js.Any])

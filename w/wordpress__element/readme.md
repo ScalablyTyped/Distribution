@@ -11,8 +11,8 @@ Element React module for WordPress.
 | Full name          | @wordpress/element |
 | Keywords           | wordpress, gutenberg, element, react |
 | # releases         | 25 |
-| # dependents       | 53 |
-| # downloads        | 1387630 |
+| # dependents       | 58 |
+| # downloads        | 1630720 |
 | # stars            | 0 |
 
 ## Links

@@ -3,7 +3,6 @@ package typings.protobufjs.mod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("protobufjs", "Reader")
@@ -132,13 +131,16 @@ class Reader protected () extends StObject {
 /* static members */
 object Reader {
   
+  @JSImport("protobufjs", "Reader")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new reader using the specified buffer.
     * @param buffer Buffer to read from
     * @returns A {@link BufferReader} if `buffer` is a Buffer, otherwise a {@link Reader}
     * @throws {Error} If `buffer` is not a valid buffer
     */
-  @JSImport("protobufjs", "Reader.create")
-  @js.native
-  def create(buffer: Buffer | Uint8Array): Reader | BufferReader = js.native
+  @scala.inline
+  def create(buffer: Buffer | Uint8Array): Reader | BufferReader = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(buffer.asInstanceOf[js.Any]).asInstanceOf[Reader | BufferReader]
 }

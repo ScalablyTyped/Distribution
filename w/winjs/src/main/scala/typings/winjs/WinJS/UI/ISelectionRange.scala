@@ -2,35 +2,33 @@ package typings.winjs.WinJS.UI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a range of indexes or keys in an ISelection.
   **/
-@js.native
 trait ISelectionRange extends StObject {
   
   //#region Properties
   /**
     * Gets or sets the index of the first item in the range.
     **/
-  var firstIndex: Double = js.native
+  var firstIndex: Double
   
   /**
     * Gets or sets the key of the first item in the range.
     **/
-  var firstKey: js.Any = js.native
+  var firstKey: js.Any
   
   /**
     * Gets or sets the index of the last item in the range.
     **/
-  var lastIndex: Double = js.native
+  var lastIndex: Double
   
   /**
     * Gets or sets of the key of the last item in the range.
     **/
-  var lastKey: js.Any = js.native
+  var lastKey: js.Any
 }
 object ISelectionRange {
   

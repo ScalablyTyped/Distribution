@@ -14,7 +14,6 @@ import typings.angularCompiler.templateAstMod.QueryMatch
 import typings.angularCompiler.templateAstMod.ReferenceAst
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object providerAnalyzerMod {
@@ -122,12 +121,11 @@ object providerAnalyzerMod {
     var reflector: CompileReflector = js.native
   }
   
-  @js.native
   trait QueryWithId extends StObject {
     
-    var meta: CompileQueryMetadata = js.native
+    var meta: CompileQueryMetadata
     
-    var queryId: Double = js.native
+    var queryId: Double
   }
   object QueryWithId {
     

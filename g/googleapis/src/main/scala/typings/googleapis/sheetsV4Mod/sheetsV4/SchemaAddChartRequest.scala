@@ -2,13 +2,11 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Adds a chart to a sheet in the spreadsheet.
   */
-@js.native
 trait SchemaAddChartRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaAddChartRequest extends StObject {
     * set, an id will be randomly generated. (It is an error to specify the ID
     * of a chart that already exists.)
     */
-  var chart: js.UndefOr[SchemaEmbeddedChart] = js.native
+  var chart: js.UndefOr[SchemaEmbeddedChart] = js.undefined
 }
 object SchemaAddChartRequest {
   

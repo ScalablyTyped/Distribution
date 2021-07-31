@@ -18,13 +18,11 @@ import typings.officeJsPreview.officeJsPreviewStrings.RunningTotal
 import typings.officeJsPreview.officeJsPreviewStrings.Unknown_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * [Api set: ExcelApi 1.8]
   */
-@js.native
 trait ShowAsRule extends StObject {
   
   /**
@@ -33,7 +31,7 @@ trait ShowAsRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var baseField: js.UndefOr[PivotField] = js.native
+  var baseField: js.UndefOr[PivotField] = js.undefined
   
   /**
     *
@@ -41,7 +39,7 @@ trait ShowAsRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var baseItem: js.UndefOr[PivotItem] = js.native
+  var baseItem: js.UndefOr[PivotItem] = js.undefined
   
   /**
     *
@@ -49,7 +47,7 @@ trait ShowAsRule extends StObject {
     *
     * [Api set: ExcelApi 1.8]
     */
-  var calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index = js.native
+  var calculation: ShowAsCalculation | Unknown_ | None | PercentOfGrandTotal | PercentOfRowTotal | PercentOfColumnTotal | PercentOfParentRowTotal | PercentOfParentColumnTotal | PercentOfParentTotal | PercentOf | RunningTotal | PercentRunningTotal | DifferenceFrom | PercentDifferenceFrom | RankAscending | RankDecending | Index
 }
 object ShowAsRule {
   

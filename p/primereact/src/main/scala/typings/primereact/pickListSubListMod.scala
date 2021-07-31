@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pickListSubListMod {
@@ -22,30 +21,29 @@ object pickListSubListMod {
     def this(props: PickListSubListProps, context: js.Any) = this()
   }
   
-  @js.native
   trait PickListSubListProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.native
+    var itemTemplate: js.UndefOr[js.Function1[/* item */ js.Any, js.UndefOr[Element]]] = js.undefined
     
-    var list: js.UndefOr[js.Array[_]] = js.native
+    var list: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var listClassName: js.UndefOr[String] = js.native
+    var listClassName: js.UndefOr[String] = js.undefined
     
-    var metaKeySelection: js.UndefOr[Boolean] = js.native
+    var metaKeySelection: js.UndefOr[Boolean] = js.undefined
     
-    var onItemClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onItemClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onSelectionChange: js.UndefOr[js.Function1[/* e */ EventValue, Unit]] = js.native
+    var onSelectionChange: js.UndefOr[js.Function1[/* e */ EventValue, Unit]] = js.undefined
     
-    var selection: js.UndefOr[js.Array[_]] = js.native
+    var selection: js.UndefOr[js.Array[js.Any]] = js.undefined
     
-    var showControls: js.UndefOr[Boolean] = js.native
+    var showControls: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object PickListSubListProps {
     
@@ -77,7 +75,7 @@ object pickListSubListMod {
       def setItemTemplateUndefined: Self = StObject.set(x, "itemTemplate", js.undefined)
       
       @scala.inline
-      def setList(value: js.Array[_]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
+      def setList(value: js.Array[js.Any]): Self = StObject.set(x, "list", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setListClassName(value: String): Self = StObject.set(x, "listClassName", value.asInstanceOf[js.Any])
@@ -110,7 +108,7 @@ object pickListSubListMod {
       def setOnSelectionChangeUndefined: Self = StObject.set(x, "onSelectionChange", js.undefined)
       
       @scala.inline
-      def setSelection(value: js.Array[_]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
+      def setSelection(value: js.Array[js.Any]): Self = StObject.set(x, "selection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSelectionUndefined: Self = StObject.set(x, "selection", js.undefined)

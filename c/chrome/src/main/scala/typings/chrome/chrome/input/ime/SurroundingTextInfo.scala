@@ -2,20 +2,18 @@ package typings.chrome.chrome.input.ime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SurroundingTextInfo extends StObject {
   
   /** The beginning position of the selection. This value indicates caret position if is no selection. */
-  var anchor: Double = js.native
+  var anchor: Double
   
   /** The ending position of the selection. This value indicates caret position if there is no selection. */
-  var focus: Double = js.native
+  var focus: Double
   
   /** The text around cursor. */
-  var text: String = js.native
+  var text: String
 }
 object SurroundingTextInfo {
   

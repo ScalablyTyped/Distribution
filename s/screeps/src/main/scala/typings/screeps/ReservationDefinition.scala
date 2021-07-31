@@ -2,15 +2,13 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationDefinition extends StObject {
   
-  var ticksToEnd: Double = js.native
+  var ticksToEnd: Double
   
-  var username: String = js.native
+  var username: String
 }
 object ReservationDefinition {
   

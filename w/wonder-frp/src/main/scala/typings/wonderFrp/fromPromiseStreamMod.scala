@@ -2,24 +2,27 @@ package typings.wonderFrp
 
 import typings.wonderFrp.baseStreamMod.BaseStream
 import typings.wonderFrp.schedulerMod.Scheduler
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder-frp/dist/commonjs/stream/FromPromiseStream", JSImport.Namespace)
-@js.native
-object fromPromiseStreamMod extends js.Object {
+object fromPromiseStreamMod {
+  
+  @JSImport("wonder-frp/dist/commonjs/stream/FromPromiseStream", "FromPromiseStream")
   @js.native
   class FromPromiseStream protected () extends BaseStream {
     def this(promise: js.Any, scheduler: Scheduler) = this()
+    
     var _promise: js.Any = js.native
   }
-  
   /* static members */
-  @js.native
-  object FromPromiseStream extends js.Object {
-    def create(promise: js.Any, scheduler: Scheduler): FromPromiseStream = js.native
+  object FromPromiseStream {
+    
+    @JSImport("wonder-frp/dist/commonjs/stream/FromPromiseStream", "FromPromiseStream")
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(promise: js.Any, scheduler: Scheduler): FromPromiseStream = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(promise.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[FromPromiseStream]
   }
-  
 }
-

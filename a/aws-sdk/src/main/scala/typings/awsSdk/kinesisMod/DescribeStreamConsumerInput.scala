@@ -2,26 +2,24 @@ package typings.awsSdk.kinesisMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeStreamConsumerInput extends StObject {
   
   /**
     * The ARN returned by Kinesis Data Streams when you registered the consumer.
     */
-  var ConsumerARN: js.UndefOr[typings.awsSdk.kinesisMod.ConsumerARN] = js.native
+  var ConsumerARN: js.UndefOr[typings.awsSdk.kinesisMod.ConsumerARN] = js.undefined
   
   /**
     * The name that you gave to the consumer.
     */
-  var ConsumerName: js.UndefOr[typings.awsSdk.kinesisMod.ConsumerName] = js.native
+  var ConsumerName: js.UndefOr[typings.awsSdk.kinesisMod.ConsumerName] = js.undefined
   
   /**
     * The ARN of the Kinesis data stream that the consumer is registered with. For more information, see Amazon Resource Names (ARNs) and AWS Service Namespaces.
     */
-  var StreamARN: js.UndefOr[typings.awsSdk.kinesisMod.StreamARN] = js.native
+  var StreamARN: js.UndefOr[typings.awsSdk.kinesisMod.StreamARN] = js.undefined
 }
 object DescribeStreamConsumerInput {
   

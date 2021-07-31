@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,14 +10,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.10]
   */
-@js.native
 trait SlicerLoadOptions extends StObject {
   
   /**
     Specifying `$all` for the LoadOptions loads all the scalar properties (e.g.: `Range.address`) but not the navigational properties (e.g.: `Range.format.fill.color`).
     */
   @JSName("$all")
-  var $all: js.UndefOr[Boolean] = js.native
+  var $all: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -26,7 +24,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var caption: js.UndefOr[Boolean] = js.native
+  var caption: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var height: js.UndefOr[Boolean] = js.native
+  var height: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -43,7 +41,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var id: js.UndefOr[Boolean] = js.native
+  var id: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -51,7 +49,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var isFilterCleared: js.UndefOr[Boolean] = js.native
+  var isFilterCleared: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -60,7 +58,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var left: js.UndefOr[Boolean] = js.native
+  var left: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -68,7 +66,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var name: js.UndefOr[Boolean] = js.native
+  var name: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -77,7 +75,7 @@ trait SlicerLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var nameInFormula: js.UndefOr[Boolean] = js.native
+  var nameInFormula: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -86,7 +84,7 @@ trait SlicerLoadOptions extends StObject {
     * [Api set: ExcelApi BETA (PREVIEW ONLY)]
     * @beta
     */
-  var slicerStyle: js.UndefOr[SlicerStyleLoadOptions] = js.native
+  var slicerStyle: js.UndefOr[SlicerStyleLoadOptions] = js.undefined
   
   /**
     *
@@ -94,7 +92,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var sortBy: js.UndefOr[Boolean] = js.native
+  var sortBy: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -102,7 +100,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var style: js.UndefOr[Boolean] = js.native
+  var style: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -111,7 +109,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -120,7 +118,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var width: js.UndefOr[Boolean] = js.native
+  var width: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -128,7 +126,7 @@ trait SlicerLoadOptions extends StObject {
     *
     * [Api set: ExcelApi 1.10]
     */
-  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.native
+  var worksheet: js.UndefOr[WorksheetLoadOptions] = js.undefined
 }
 object SlicerLoadOptions {
   

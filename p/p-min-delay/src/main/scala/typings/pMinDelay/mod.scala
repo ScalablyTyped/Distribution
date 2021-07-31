@@ -2,7 +2,6 @@ package typings.pMinDelay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,12 +19,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-min-delay", JSImport.Namespace)
-  @js.native
-  def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double): js.Promise[ValueType] = js.native
-  @JSImport("p-min-delay", JSImport.Namespace)
-  @js.native
-  def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double, options: Options): js.Promise[ValueType] = js.native
+  @scala.inline
+  def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any], minimumDelay.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
+  @scala.inline
+  def apply[ValueType](promise: js.Thenable[ValueType], minimumDelay: Double, options: Options): js.Promise[ValueType] = (^.asInstanceOf[js.Dynamic].apply(promise.asInstanceOf[js.Any], minimumDelay.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ValueType]]
   
   @JSImport("p-min-delay", JSImport.Namespace)
   @js.native
@@ -44,7 +41,6 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pMinDelay */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -52,7 +48,7 @@ object mod {
     		Turn this off if you want a rejected promise to fail fast.
     		@default true
     		*/
-    val delayRejection: js.UndefOr[Boolean] = js.native
+    val delayRejection: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

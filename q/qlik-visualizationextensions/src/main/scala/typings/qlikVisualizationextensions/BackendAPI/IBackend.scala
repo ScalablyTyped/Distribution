@@ -3,7 +3,6 @@ package typings.qlikVisualizationextensions.BackendAPI
 import typings.angular.mod.IPromise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,7 +29,7 @@ trait IBackend extends StObject {
     * @param qSoftPatch - Set to True if properties should be soft, that is not persisted.
     * @return - A promise of a Qlik engine reply.
     */
-  def applyPatches(qPatches: js.Array[_], qSoftPatch: Boolean): IPromise[_] = js.native
+  def applyPatches(qPatches: js.Array[js.Any], qSoftPatch: Boolean): IPromise[js.Any] = js.native
   
   /**
     * Clears unconfirmed selections for this object.
@@ -42,7 +41,7 @@ trait IBackend extends StObject {
     * applyPatches method.
     * @return - A promise of a Qlik engine reply.
     */
-  def clearSoftPatches(): IPromise[_] = js.native
+  def clearSoftPatches(): IPromise[js.Any] = js.native
   
   /**
     * Collapse the left dimensions of a pivot table. Only works for hypercubes with
@@ -52,8 +51,8 @@ trait IBackend extends StObject {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def collapseLeft(qRow: Double, qCol: Double): IPromise[_] = js.native
-  def collapseLeft(qRow: Double, qCol: Double, qAll: Boolean): IPromise[_] = js.native
+  def collapseLeft(qRow: Double, qCol: Double): IPromise[js.Any] = js.native
+  def collapseLeft(qRow: Double, qCol: Double, qAll: Boolean): IPromise[js.Any] = js.native
   
   /**
     * Collapse the top dimensions of a pivot table. Only works for hypercubes with
@@ -63,8 +62,8 @@ trait IBackend extends StObject {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def collapseTop(qRow: Double, qCol: Double): IPromise[_] = js.native
-  def collapseTop(qRow: Double, qCol: Double, qAll: Boolean): IPromise[_] = js.native
+  def collapseTop(qRow: Double, qCol: Double): IPromise[js.Any] = js.native
+  def collapseTop(qRow: Double, qCol: Double, qAll: Boolean): IPromise[js.Any] = js.native
   
   /**
     * Loops through data rows for this object. Only rows that are available client side will be used.
@@ -83,8 +82,8 @@ trait IBackend extends StObject {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def expandLeft(qRow: Double, qCol: Double): IPromise[_] = js.native
-  def expandLeft(qRow: Double, qCol: Double, qAll: Boolean): IPromise[_] = js.native
+  def expandLeft(qRow: Double, qCol: Double): IPromise[js.Any] = js.native
+  def expandLeft(qRow: Double, qCol: Double, qAll: Boolean): IPromise[js.Any] = js.native
   
   /**
     * Expands the top dimensions of a pivot table. Only works for hypercubes with
@@ -94,15 +93,15 @@ trait IBackend extends StObject {
     * @param [qAll] - Optional. If set to true, qRow and qCol are ignored and all cells are collapsed.
     * @return - A promise of a Qlik engine reply.
     */
-  def expandTop(qRow: Double, qCol: Double): IPromise[_] = js.native
-  def expandTop(qRow: Double, qCol: Double, qAll: Boolean): IPromise[_] = js.native
+  def expandTop(qRow: Double, qCol: Double): IPromise[js.Any] = js.native
+  def expandTop(qRow: Double, qCol: Double, qAll: Boolean): IPromise[js.Any] = js.native
   
   /**
     * Geta data from Qlik engine for this object.
     * @param qPages - An array of NxPage objects.
     * @return - A promise of qDataPages.
     */
-  def getData(qPages: js.Array[INxPage]): IPromise[_] = js.native
+  def getData(qPages: js.Array[INxPage]): IPromise[js.Any] = js.native
   
   /**
     * Gets a data row for this object.
@@ -135,7 +134,7 @@ trait IBackend extends StObject {
     * Get properties for this object.
     * @return - A promise of object properties.
     */
-  def getProperties(): IPromise[_] = js.native
+  def getProperties(): IPromise[js.Any] = js.native
   
   /**
     * Get reduced data from the Qlik engine for this object. This method is intended for preserving the
@@ -155,7 +154,7 @@ trait IBackend extends StObject {
     *        # ST to reduce the data of a stacked pivot table.
     * @return - A promise of reduced data pages.
     */
-  def getReducedData(qPages: js.Array[INxPage], qZoomFactor: Double, qReductionMode: String): IPromise[_] = js.native
+  def getReducedData(qPages: js.Array[INxPage], qZoomFactor: Double, qReductionMode: String): IPromise[js.Any] = js.native
   
   /**
     * Get total number of data rows for this object.
@@ -169,7 +168,7 @@ trait IBackend extends StObject {
     * @param qMaxNbrCells - Maximum number of cells at outer level.
     * @return - A promise of stack data pages.
     */
-  def getStackedData(qPages: js.Array[INxPage], qMaxNbrCells: Double): IPromise[_] = js.native
+  def getStackedData(qPages: js.Array[INxPage], qMaxNbrCells: Double): IPromise[js.Any] = js.native
   
   /**
     * Find out if there are unconfirmed selections for this object.
@@ -181,7 +180,7 @@ trait IBackend extends StObject {
     * Save this object.
     * @return - A promise. In case of success, it returns "undefined". In case of failure it returns the error.
     */
-  def save(): IPromise[_] = js.native
+  def save(): IPromise[js.Any] = js.native
   
   /**
     * Search for a term in a list object. Results in an updated layout, containing only matching records.
@@ -203,12 +202,12 @@ trait IBackend extends StObject {
     * @param qToggleMode - If true, values in the field are selected in addition to any previously selected items.
     * If false, values in the field are selected while previously selected items are deselected.
     */
-  def selectValues(qDimNo: Double, qValues: js.Array[_], qToggleMode: Boolean): Unit = js.native
+  def selectValues(qDimNo: Double, qValues: js.Array[js.Any], qToggleMode: Boolean): Unit = js.native
   
   /**
     * Set properties for this object.
     * @param props - The properties to set.
     * @return - A promise of a Qlik engine reply.
     */
-  def setProperties(props: js.Any): IPromise[_] = js.native
+  def setProperties(props: js.Any): IPromise[js.Any] = js.native
 }

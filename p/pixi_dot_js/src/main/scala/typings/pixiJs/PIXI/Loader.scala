@@ -5,7 +5,6 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -64,22 +63,22 @@ trait Loader extends StObject {
   
   //tslint:disable-next-line:ban-types forbidden-types
   def add(name: String, url: String): this.type = js.native
-  def add(name: String, url: String, options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
+  def add(name: String, url: String, options: Unit, cb: js.Function): this.type = js.native
   def add(name: String, url: String, options: ILoaderOptions): this.type = js.native
   def add(name: String, url: String, options: ILoaderOptions, cb: js.Function): this.type = js.native
   //tslint:disable-next-line:ban-types forbidden-types
   def add(obj: String): this.type = js.native
-  def add(obj: String, options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
+  def add(obj: String, options: Unit, cb: js.Function): this.type = js.native
   def add(obj: String, options: ILoaderOptions): this.type = js.native
   def add(obj: String, options: ILoaderOptions, cb: js.Function): this.type = js.native
   def add(obj: js.Any): this.type = js.native
-  def add(obj: js.Any, options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
+  def add(obj: js.Any, options: Unit, cb: js.Function): this.type = js.native
   def add(obj: js.Any, options: ILoaderOptions): this.type = js.native
   def add(obj: js.Any, options: ILoaderOptions, cb: js.Function): this.type = js.native
-  def add(obj: js.Array[_]): this.type = js.native
-  def add(obj: js.Array[_], options: js.UndefOr[scala.Nothing], cb: js.Function): this.type = js.native
-  def add(obj: js.Array[_], options: ILoaderOptions): this.type = js.native
-  def add(obj: js.Array[_], options: ILoaderOptions, cb: js.Function): this.type = js.native
+  def add(obj: js.Array[js.Any]): this.type = js.native
+  def add(obj: js.Array[js.Any], options: Unit, cb: js.Function): this.type = js.native
+  def add(obj: js.Array[js.Any], options: ILoaderOptions): this.type = js.native
+  def add(obj: js.Array[js.Any], options: ILoaderOptions, cb: js.Function): this.type = js.native
   def add(params: js.Any*): this.type = js.native
   
   var baseUrl: String = js.native
@@ -164,22 +163,50 @@ object Loader {
     * @property {ISignalCallback} once - Register oneshot callback
     * @property {ISignalDetach} detach - Detach specific callback by ID
     */
-  @js.native
   trait ILoaderSignal extends StObject {
     
-    def add(callback: js.Function1[/* repeated */ js.Any, _]): ICallbackID = js.native
-    def add(callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): ICallbackID = js.native
+    def add(callback: js.Function1[/* repeated */ js.Any, js.Any]): ICallbackID
+    def add(callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): ICallbackID
     @JSName("add")
-    var add_Original: ISignalCallback = js.native
+    var add_Original: ISignalCallback
     
-    def detach(id: ICallbackID): Unit = js.native
+    def detach(id: ICallbackID): Unit
     @JSName("detach")
-    var detach_Original: ISignalDetach = js.native
+    var detach_Original: ISignalDetach
     
-    def once(callback: js.Function1[/* repeated */ js.Any, _]): ICallbackID = js.native
-    def once(callback: js.Function1[/* repeated */ js.Any, _], context: js.Any): ICallbackID = js.native
+    def once(callback: js.Function1[/* repeated */ js.Any, js.Any]): ICallbackID
+    def once(callback: js.Function1[/* repeated */ js.Any, js.Any], context: js.Any): ICallbackID
     @JSName("once")
-    var once_Original: ISignalCallback = js.native
+    var once_Original: ISignalCallback
+  }
+  object ILoaderSignal {
+    
+    @scala.inline
+    def apply(
+      add: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID,
+      detach: /* id */ ICallbackID => Unit,
+      once: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID
+    ): ILoaderSignal = {
+      val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), detach = js.Any.fromFunction1(detach), once = js.Any.fromFunction2(once))
+      __obj.asInstanceOf[ILoaderSignal]
+    }
+    
+    @scala.inline
+    implicit class ILoaderSignalMutableBuilder[Self <: ILoaderSignal] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setAdd(
+        value: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID
+      ): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      
+      @scala.inline
+      def setDetach(value: /* id */ ICallbackID => Unit): Self = StObject.set(x, "detach", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setOnce(
+        value: (/* callback */ js.Function1[/* repeated */ js.Any, js.Any], /* context */ js.UndefOr[js.Any]) => ICallbackID
+      ): Self = StObject.set(x, "once", js.Any.fromFunction2(value))
+    }
   }
   
   /**

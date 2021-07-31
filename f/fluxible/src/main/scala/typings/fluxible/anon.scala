@@ -6,12 +6,10 @@ import typings.fluxible.baseStoreMod.^
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Create extends StObject {
     
     /**
@@ -26,7 +24,7 @@ object anon {
       params: js.Any,
       body: js.Any,
       callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       *
@@ -38,7 +36,7 @@ object anon {
       resource: String,
       params: js.Any,
       callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       * GET request to the server
@@ -50,7 +48,7 @@ object anon {
       resource: String,
       params: js.Any,
       callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
     
     /**
       *
@@ -64,7 +62,7 @@ object anon {
       params: js.Any,
       body: js.Any,
       callback: js.Function2[/* error */ Error, /* data */ js.Any, Unit]
-    ): Unit = js.native
+    ): Unit
   }
   object Create {
     
@@ -97,5 +95,7 @@ object anon {
   }
   
   @js.native
-  trait Instantiable[T /* <: ^[js.Object] */] extends Instantiable1[/* dispatcher */ DispatcherInterface, T]
+  trait Instantiable[T /* <: ^[js.Object] */]
+    extends StObject
+       with Instantiable1[/* dispatcher */ DispatcherInterface, T]
 }

@@ -9,7 +9,6 @@ import typings.nodegit.repositoryMod.Repository
 import typings.nodegit.signatureMod.Signature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rebaseMod {
@@ -37,41 +36,39 @@ object rebaseMod {
   /* static members */
   object Rebase {
     
-    @JSImport("nodegit/rebase", "Rebase.init")
+    @JSImport("nodegit/rebase", "Rebase")
     @js.native
-    def init(repo: Repository, branch: AnnotatedCommit, upstream: AnnotatedCommit, onto: AnnotatedCommit): js.Promise[Rebase] = js.native
-    @JSImport("nodegit/rebase", "Rebase.init")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def init(repo: Repository, branch: AnnotatedCommit, upstream: AnnotatedCommit, onto: AnnotatedCommit): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
+    @scala.inline
     def init(
       repo: Repository,
       branch: AnnotatedCommit,
       upstream: AnnotatedCommit,
       onto: AnnotatedCommit,
       opts: RebaseOptions
-    ): js.Promise[Rebase] = js.native
+    ): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(repo.asInstanceOf[js.Any], branch.asInstanceOf[js.Any], upstream.asInstanceOf[js.Any], onto.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
     
-    @JSImport("nodegit/rebase", "Rebase.initOptions")
-    @js.native
-    def initOptions(opts: RebaseOptions, version: Double): Double = js.native
+    @scala.inline
+    def initOptions(opts: RebaseOptions, version: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("initOptions")(opts.asInstanceOf[js.Any], version.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("nodegit/rebase", "Rebase.open")
-    @js.native
-    def open(repo: Repository): js.Promise[Rebase] = js.native
-    @JSImport("nodegit/rebase", "Rebase.open")
-    @js.native
-    def open(repo: Repository, opts: RebaseOptions): js.Promise[Rebase] = js.native
+    @scala.inline
+    def open(repo: Repository): js.Promise[Rebase] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Rebase]]
+    @scala.inline
+    def open(repo: Repository, opts: RebaseOptions): js.Promise[Rebase] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(repo.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Rebase]]
   }
   
-  @js.native
   trait RebaseOptions extends StObject {
     
-    var checkoutOptions: CheckoutOptions = js.native
+    var checkoutOptions: CheckoutOptions
     
-    var quiet: Double = js.native
+    var quiet: Double
     
-    var rewriteNotesRef: String = js.native
+    var rewriteNotesRef: String
     
-    var version: Double = js.native
+    var version: Double
   }
   object RebaseOptions {
     

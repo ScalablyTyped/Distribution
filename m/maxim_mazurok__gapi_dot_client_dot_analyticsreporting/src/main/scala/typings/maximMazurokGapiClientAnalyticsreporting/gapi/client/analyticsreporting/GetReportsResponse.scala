@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetReportsResponse extends StObject {
   
   /** The amount of resource quota tokens deducted to execute the query. Includes all responses. */
-  var queryCost: js.UndefOr[Double] = js.native
+  var queryCost: js.UndefOr[Double] = js.undefined
   
   /** Responses corresponding to each of the request. */
-  var reports: js.UndefOr[js.Array[Report]] = js.native
+  var reports: js.UndefOr[js.Array[Report]] = js.undefined
   
   /** The amount of resource quota remaining for the property. */
-  var resourceQuotasRemaining: js.UndefOr[ResourceQuotasRemaining] = js.native
+  var resourceQuotasRemaining: js.UndefOr[ResourceQuotasRemaining] = js.undefined
 }
 object GetReportsResponse {
   

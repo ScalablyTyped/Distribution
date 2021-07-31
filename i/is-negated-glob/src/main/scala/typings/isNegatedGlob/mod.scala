@@ -2,23 +2,24 @@ package typings.isNegatedGlob
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(pattern: String): Result = ^.asInstanceOf[js.Dynamic].apply(pattern.asInstanceOf[js.Any]).asInstanceOf[Result]
+  
   @JSImport("is-negated-glob", JSImport.Namespace)
   @js.native
-  def apply(pattern: String): Result = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Result extends StObject {
     
-    var negated: Boolean = js.native
+    var negated: Boolean
     
-    var original: String = js.native
+    var original: String
     
-    var pattern: String = js.native
+    var pattern: String
   }
   object Result {
     

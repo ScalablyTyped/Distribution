@@ -4,41 +4,39 @@ import typings.pulumiAws.inputMod.ec2.GetSpotPriceFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getSpotPriceMod {
   
-  @JSImport("@pulumi/aws/ec2/getSpotPrice", "getSpotPrice")
+  @JSImport("@pulumi/aws/ec2/getSpotPrice", JSImport.Namespace)
   @js.native
-  def getSpotPrice(): js.Promise[GetSpotPriceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSpotPrice", "getSpotPrice")
-  @js.native
-  def getSpotPrice(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetSpotPriceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSpotPrice", "getSpotPrice")
-  @js.native
-  def getSpotPrice(args: GetSpotPriceArgs): js.Promise[GetSpotPriceResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getSpotPrice", "getSpotPrice")
-  @js.native
-  def getSpotPrice(args: GetSpotPriceArgs, opts: InvokeOptions): js.Promise[GetSpotPriceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getSpotPrice(): js.Promise[GetSpotPriceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")().asInstanceOf[js.Promise[GetSpotPriceResult]]
+  @scala.inline
+  def getSpotPrice(args: Unit, opts: InvokeOptions): js.Promise[GetSpotPriceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSpotPriceResult]]
+  @scala.inline
+  def getSpotPrice(args: GetSpotPriceArgs): js.Promise[GetSpotPriceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetSpotPriceResult]]
+  @scala.inline
+  def getSpotPrice(args: GetSpotPriceArgs, opts: InvokeOptions): js.Promise[GetSpotPriceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSpotPrice")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetSpotPriceResult]]
+  
   trait GetSpotPriceArgs extends StObject {
     
     /**
       * The availability zone in which to query Spot price information.
       */
-    val availabilityZone: js.UndefOr[String] = js.native
+    val availabilityZone: js.UndefOr[String] = js.undefined
     
     /**
       * One or more configuration blocks containing name-values filters. See the [EC2 API Reference](https://docs.aws.amazon.com/AWSEC2/latest/APIReference/API_DescribeSpotPriceHistory.html) for supported filters. Detailed below.
       */
-    val filters: js.UndefOr[js.Array[GetSpotPriceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetSpotPriceFilter]] = js.undefined
     
     /**
       * The type of instance for which to query Spot Price information.
       */
-    val instanceType: js.UndefOr[String] = js.native
+    val instanceType: js.UndefOr[String] = js.undefined
   }
   object GetSpotPriceArgs {
     
@@ -74,29 +72,28 @@ object getSpotPriceMod {
     }
   }
   
-  @js.native
   trait GetSpotPriceResult extends StObject {
     
-    val availabilityZone: js.UndefOr[String] = js.native
+    val availabilityZone: js.UndefOr[String] = js.undefined
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSpotPriceFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetSpotPriceFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val instanceType: js.UndefOr[String] = js.native
+    val instanceType: js.UndefOr[String] = js.undefined
     
     /**
       * The most recent Spot Price value for the given instance type and AZ.
       */
-    val spotPrice: String = js.native
+    val spotPrice: String
     
     /**
       * The timestamp at which the Spot Price value was published.
       */
-    val spotPriceTimestamp: String = js.native
+    val spotPriceTimestamp: String
   }
   object GetSpotPriceResult {
     

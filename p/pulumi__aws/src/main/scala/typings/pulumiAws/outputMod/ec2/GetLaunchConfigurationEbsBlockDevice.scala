@@ -2,51 +2,49 @@ package typings.pulumiAws.outputMod.ec2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLaunchConfigurationEbsBlockDevice extends StObject {
   
   /**
     * Whether the EBS Volume will be deleted on instance termination.
     */
-  var deleteOnTermination: Boolean = js.native
+  var deleteOnTermination: Boolean
   
   /**
     * The Name of the device.
     */
-  var deviceName: String = js.native
+  var deviceName: String
   
   /**
     * Whether the volume is Encrypted.
     */
-  var encrypted: Boolean = js.native
+  var encrypted: Boolean
   
   /**
     * The provisioned IOPs of the volume.
     */
-  var iops: Double = js.native
+  var iops: Double
   
   /**
     * Whether the device in the block device mapping of the AMI is suppressed.
     */
-  var noDevice: Boolean = js.native
+  var noDevice: Boolean
   
   /**
     * The Snapshot ID of the mount.
     */
-  var snapshotId: String = js.native
+  var snapshotId: String
   
   /**
     * The Size of the volume.
     */
-  var volumeSize: Double = js.native
+  var volumeSize: Double
   
   /**
     * The Type of the volume.
     */
-  var volumeType: String = js.native
+  var volumeType: String
 }
 object GetLaunchConfigurationEbsBlockDevice {
   

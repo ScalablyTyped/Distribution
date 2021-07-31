@@ -3,7 +3,6 @@ package typings.videoJs.mod.videojs
 import typings.std.ClientRect
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * {@link ProgressControl}.
   */
 @js.native
-trait MouseTimeDisplay extends Component {
+trait MouseTimeDisplay
+  extends StObject
+     with Component {
   
   /**
     * Enqueues updates to its own DOM as well as the DOM of its

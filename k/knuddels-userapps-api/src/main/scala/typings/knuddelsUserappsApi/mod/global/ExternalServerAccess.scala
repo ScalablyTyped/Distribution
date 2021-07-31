@@ -5,7 +5,6 @@ import typings.knuddelsUserappsApi.anon.OnFailure
 import typings.knuddelsUserappsApi.anon.OnSuccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**

@@ -5,7 +5,6 @@ import typings.arcgisJsApi.esri.LinearUnits
 import typings.arcgisJsApi.esri.SupportedRegion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arcgisJsApiStrings {
@@ -46,12 +45,16 @@ object arcgisJsApiStrings {
   def `50-kilometers`: `50-kilometers` = "50-kilometers".asInstanceOf[`50-kilometers`]
   
   @js.native
-  sealed trait AE extends SupportedRegion
+  sealed trait AE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def AE: AE = "AE".asInstanceOf[AE]
   
   @js.native
-  sealed trait AR extends SupportedRegion
+  sealed trait AR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def AR: AR = "AR".asInstanceOf[AR]
   
@@ -61,47 +64,65 @@ object arcgisJsApiStrings {
   def ASC: ASC = "ASC".asInstanceOf[ASC]
   
   @js.native
-  sealed trait AT extends SupportedRegion
+  sealed trait AT
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def AT: AT = "AT".asInstanceOf[AT]
   
   @js.native
-  sealed trait AU extends SupportedRegion
+  sealed trait AU
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def AU: AU = "AU".asInstanceOf[AU]
   
   @js.native
-  sealed trait BE extends SupportedRegion
+  sealed trait BE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def BE: BE = "BE".asInstanceOf[BE]
   
   @js.native
-  sealed trait BG extends SupportedRegion
+  sealed trait BG
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def BG: BG = "BG".asInstanceOf[BG]
   
   @js.native
-  sealed trait BO extends SupportedRegion
+  sealed trait BO
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def BO: BO = "BO".asInstanceOf[BO]
   
   @js.native
-  sealed trait BR extends SupportedRegion
+  sealed trait BR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def BR: BR = "BR".asInstanceOf[BR]
   
   @js.native
-  sealed trait CA extends SupportedRegion
+  sealed trait CA
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CA: CA = "CA".asInstanceOf[CA]
   
   @js.native
-  sealed trait CH extends SupportedRegion
+  sealed trait CH
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CH: CH = "CH".asInstanceOf[CH]
   
   @js.native
-  sealed trait CI extends SupportedRegion
+  sealed trait CI
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CI: CI = "CI".asInstanceOf[CI]
   
@@ -411,32 +432,44 @@ object arcgisJsApiStrings {
   def CIMVectorMarker: CIMVectorMarker = "CIMVectorMarker".asInstanceOf[CIMVectorMarker]
   
   @js.native
-  sealed trait CL extends SupportedRegion
+  sealed trait CL
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CL: CL = "CL".asInstanceOf[CL]
   
   @js.native
-  sealed trait CN extends SupportedRegion
+  sealed trait CN
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CN: CN = "CN".asInstanceOf[CN]
   
   @js.native
-  sealed trait CO extends SupportedRegion
+  sealed trait CO
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CO: CO = "CO".asInstanceOf[CO]
   
   @js.native
-  sealed trait CR extends SupportedRegion
+  sealed trait CR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CR: CR = "CR".asInstanceOf[CR]
   
   @js.native
-  sealed trait CZ extends SupportedRegion
+  sealed trait CZ
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def CZ: CZ = "CZ".asInstanceOf[CZ]
   
   @js.native
-  sealed trait DE extends SupportedRegion
+  sealed trait DE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def DE: DE = "DE".asInstanceOf[DE]
   
@@ -446,32 +479,44 @@ object arcgisJsApiStrings {
   def DESC: DESC = "DESC".asInstanceOf[DESC]
   
   @js.native
-  sealed trait DK extends SupportedRegion
+  sealed trait DK
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def DK: DK = "DK".asInstanceOf[DK]
   
   @js.native
-  sealed trait EE extends SupportedRegion
+  sealed trait EE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def EE: EE = "EE".asInstanceOf[EE]
   
   @js.native
-  sealed trait EG extends SupportedRegion
+  sealed trait EG
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def EG: EG = "EG".asInstanceOf[EG]
   
   @js.native
-  sealed trait ES extends SupportedRegion
+  sealed trait ES
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def ES: ES = "ES".asInstanceOf[ES]
   
   @js.native
-  sealed trait FI extends SupportedRegion
+  sealed trait FI
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def FI: FI = "FI".asInstanceOf[FI]
   
   @js.native
-  sealed trait FR extends SupportedRegion
+  sealed trait FR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def FR: FR = "FR".asInstanceOf[FR]
   
@@ -481,77 +526,107 @@ object arcgisJsApiStrings {
   def Feet: Feet = "Feet".asInstanceOf[Feet]
   
   @js.native
-  sealed trait GB extends SupportedRegion
+  sealed trait GB
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def GB: GB = "GB".asInstanceOf[GB]
   
   @js.native
-  sealed trait GL extends SupportedRegion
+  sealed trait GL
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def GL: GL = "GL".asInstanceOf[GL]
   
   @js.native
-  sealed trait GR extends SupportedRegion
+  sealed trait GR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def GR: GR = "GR".asInstanceOf[GR]
   
   @js.native
-  sealed trait GT extends SupportedRegion
+  sealed trait GT
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def GT: GT = "GT".asInstanceOf[GT]
   
   @js.native
-  sealed trait HK extends SupportedRegion
+  sealed trait HK
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def HK: HK = "HK".asInstanceOf[HK]
   
   @js.native
-  sealed trait ID extends SupportedRegion
+  sealed trait ID
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def ID: ID = "ID".asInstanceOf[ID]
   
   @js.native
-  sealed trait IE extends SupportedRegion
+  sealed trait IE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def IE: IE = "IE".asInstanceOf[IE]
   
   @js.native
-  sealed trait IL extends SupportedRegion
+  sealed trait IL
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def IL: IL = "IL".asInstanceOf[IL]
   
   @js.native
-  sealed trait IN extends SupportedRegion
+  sealed trait IN
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def IN: IN = "IN".asInstanceOf[IN]
   
   @js.native
-  sealed trait IQ extends SupportedRegion
+  sealed trait IQ
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def IQ: IQ = "IQ".asInstanceOf[IQ]
   
   @js.native
-  sealed trait IS extends SupportedRegion
+  sealed trait IS
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def IS: IS = "IS".asInstanceOf[IS]
   
   @js.native
-  sealed trait IT extends SupportedRegion
+  sealed trait IT
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def IT: IT = "IT".asInstanceOf[IT]
   
   @js.native
-  sealed trait JP extends SupportedRegion
+  sealed trait JP
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def JP: JP = "JP".asInstanceOf[JP]
   
   @js.native
-  sealed trait KE extends SupportedRegion
+  sealed trait KE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def KE: KE = "KE".asInstanceOf[KE]
   
   @js.native
-  sealed trait KR extends SupportedRegion
+  sealed trait KR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def KR: KR = "KR".asInstanceOf[KR]
   
@@ -561,7 +636,9 @@ object arcgisJsApiStrings {
   def KVP: KVP = "KVP".asInstanceOf[KVP]
   
   @js.native
-  sealed trait KW extends SupportedRegion
+  sealed trait KW
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def KW: KW = "KW".asInstanceOf[KW]
   
@@ -571,52 +648,72 @@ object arcgisJsApiStrings {
   def Kilometers: Kilometers = "Kilometers".asInstanceOf[Kilometers]
   
   @js.native
-  sealed trait LI extends SupportedRegion
+  sealed trait LI
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def LI: LI = "LI".asInstanceOf[LI]
   
   @js.native
-  sealed trait LT extends SupportedRegion
+  sealed trait LT
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def LT: LT = "LT".asInstanceOf[LT]
   
   @js.native
-  sealed trait LU extends SupportedRegion
+  sealed trait LU
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def LU: LU = "LU".asInstanceOf[LU]
   
   @js.native
-  sealed trait LV extends SupportedRegion
+  sealed trait LV
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def LV: LV = "LV".asInstanceOf[LV]
   
   @js.native
-  sealed trait MA extends SupportedRegion
+  sealed trait MA
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def MA: MA = "MA".asInstanceOf[MA]
   
   @js.native
-  sealed trait MG extends SupportedRegion
+  sealed trait MG
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def MG: MG = "MG".asInstanceOf[MG]
   
   @js.native
-  sealed trait ML extends SupportedRegion
+  sealed trait ML
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def ML: ML = "ML".asInstanceOf[ML]
   
   @js.native
-  sealed trait MO extends SupportedRegion
+  sealed trait MO
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def MO: MO = "MO".asInstanceOf[MO]
   
   @js.native
-  sealed trait MX extends SupportedRegion
+  sealed trait MX
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def MX: MX = "MX".asInstanceOf[MX]
   
   @js.native
-  sealed trait MY extends SupportedRegion
+  sealed trait MY
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def MY: MY = "MY".asInstanceOf[MY]
   
@@ -636,42 +733,58 @@ object arcgisJsApiStrings {
   def Miles: Miles = "Miles".asInstanceOf[Miles]
   
   @js.native
-  sealed trait NI extends SupportedRegion
+  sealed trait NI
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def NI: NI = "NI".asInstanceOf[NI]
   
   @js.native
-  sealed trait NL extends SupportedRegion
+  sealed trait NL
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def NL: NL = "NL".asInstanceOf[NL]
   
   @js.native
-  sealed trait NO extends SupportedRegion
+  sealed trait NO
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def NO: NO = "NO".asInstanceOf[NO]
   
   @js.native
-  sealed trait NZ extends SupportedRegion
+  sealed trait NZ
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def NZ: NZ = "NZ".asInstanceOf[NZ]
   
   @js.native
-  sealed trait PE extends SupportedRegion
+  sealed trait PE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def PE: PE = "PE".asInstanceOf[PE]
   
   @js.native
-  sealed trait PL extends SupportedRegion
+  sealed trait PL
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def PL: PL = "PL".asInstanceOf[PL]
   
   @js.native
-  sealed trait PR extends SupportedRegion
+  sealed trait PR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def PR: PR = "PR".asInstanceOf[PR]
   
   @js.native
-  sealed trait PT extends SupportedRegion
+  sealed trait PT
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def PT: PT = "PT".asInstanceOf[PT]
   
@@ -681,77 +794,107 @@ object arcgisJsApiStrings {
   def RESTful: RESTful = "RESTful".asInstanceOf[RESTful]
   
   @js.native
-  sealed trait RO extends SupportedRegion
+  sealed trait RO
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def RO: RO = "RO".asInstanceOf[RO]
   
   @js.native
-  sealed trait RU extends SupportedRegion
+  sealed trait RU
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def RU: RU = "RU".asInstanceOf[RU]
   
   @js.native
-  sealed trait RW extends SupportedRegion
+  sealed trait RW
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def RW: RW = "RW".asInstanceOf[RW]
   
   @js.native
-  sealed trait SE extends SupportedRegion
+  sealed trait SE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def SE: SE = "SE".asInstanceOf[SE]
   
   @js.native
-  sealed trait SG extends SupportedRegion
+  sealed trait SG
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def SG: SG = "SG".asInstanceOf[SG]
   
   @js.native
-  sealed trait SK extends SupportedRegion
+  sealed trait SK
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def SK: SK = "SK".asInstanceOf[SK]
   
   @js.native
-  sealed trait SR extends SupportedRegion
+  sealed trait SR
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def SR: SR = "SR".asInstanceOf[SR]
   
   @js.native
-  sealed trait SV extends SupportedRegion
+  sealed trait SV
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def SV: SV = "SV".asInstanceOf[SV]
   
   @js.native
-  sealed trait TH extends SupportedRegion
+  sealed trait TH
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def TH: TH = "TH".asInstanceOf[TH]
   
   @js.native
-  sealed trait TN extends SupportedRegion
+  sealed trait TN
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def TN: TN = "TN".asInstanceOf[TN]
   
   @js.native
-  sealed trait TW extends SupportedRegion
+  sealed trait TW
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def TW: TW = "TW".asInstanceOf[TW]
   
   @js.native
-  sealed trait US extends SupportedRegion
+  sealed trait US
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def US: US = "US".asInstanceOf[US]
   
   @js.native
-  sealed trait VE extends SupportedRegion
+  sealed trait VE
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def VE: VE = "VE".asInstanceOf[VE]
   
   @js.native
-  sealed trait VI extends SupportedRegion
+  sealed trait VI
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def VI: VI = "VI".asInstanceOf[VI]
   
   @js.native
-  sealed trait ZA extends SupportedRegion
+  sealed trait ZA
+    extends StObject
+       with SupportedRegion
   @scala.inline
   def ZA: ZA = "ZA".asInstanceOf[ZA]
   
@@ -836,7 +979,9 @@ object arcgisJsApiStrings {
   def `absolute-value`: `absolute-value` = "absolute-value".asInstanceOf[`absolute-value`]
   
   @js.native
-  sealed trait acres extends ArealUnits
+  sealed trait acres
+    extends StObject
+       with ArealUnits
   @scala.inline
   def acres: acres = "acres".asInstanceOf[acres]
   
@@ -921,7 +1066,9 @@ object arcgisJsApiStrings {
   def area: area = "area".asInstanceOf[area]
   
   @js.native
-  sealed trait ares extends ArealUnits
+  sealed trait ares
+    extends StObject
+       with ArealUnits
   @scala.inline
   def ares: ares = "ares".asInstanceOf[ares]
   
@@ -2111,7 +2258,9 @@ object arcgisJsApiStrings {
   def `feature-unsupported`: `feature-unsupported` = "feature-unsupported".asInstanceOf[`feature-unsupported`]
   
   @js.native
-  sealed trait feet_ extends LinearUnits
+  sealed trait feet_
+    extends StObject
+       with LinearUnits
   @scala.inline
   def feet_ : feet_ = "feet".asInstanceOf[feet_]
   
@@ -2316,7 +2465,9 @@ object arcgisJsApiStrings {
   def heatmap: heatmap = "heatmap".asInstanceOf[heatmap]
   
   @js.native
-  sealed trait hectares extends ArealUnits
+  sealed trait hectares
+    extends StObject
+       with ArealUnits
   @scala.inline
   def hectares: hectares = "hectares".asInstanceOf[hectares]
   
@@ -2661,7 +2812,9 @@ object arcgisJsApiStrings {
   def `key-up`: `key-up` = "key-up".asInstanceOf[`key-up`]
   
   @js.native
-  sealed trait kilometers_ extends LinearUnits
+  sealed trait kilometers_
+    extends StObject
+       with LinearUnits
   @scala.inline
   def kilometers_ : kilometers_ = "kilometers".asInstanceOf[kilometers_]
   
@@ -3066,7 +3219,9 @@ object arcgisJsApiStrings {
   def `mesh-3d`: `mesh-3d` = "mesh-3d".asInstanceOf[`mesh-3d`]
   
   @js.native
-  sealed trait meters_ extends LinearUnits
+  sealed trait meters_
+    extends StObject
+       with LinearUnits
   @scala.inline
   def meters_ : meters_ = "meters".asInstanceOf[meters_]
   
@@ -3086,7 +3241,9 @@ object arcgisJsApiStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait miles_ extends LinearUnits
+  sealed trait miles_
+    extends StObject
+       with LinearUnits
   @scala.inline
   def miles_ : miles_ = "miles".asInstanceOf[miles_]
   
@@ -3251,7 +3408,9 @@ object arcgisJsApiStrings {
   def `natural-breaks`: `natural-breaks` = "natural-breaks".asInstanceOf[`natural-breaks`]
   
   @js.native
-  sealed trait `nautical-miles` extends LinearUnits
+  sealed trait `nautical-miles`
+    extends StObject
+       with LinearUnits
   @scala.inline
   def `nautical-miles`: `nautical-miles` = "nautical-miles".asInstanceOf[`nautical-miles`]
   
@@ -4371,7 +4530,9 @@ object arcgisJsApiStrings {
   def `square-decimeters`: `square-decimeters` = "square-decimeters".asInstanceOf[`square-decimeters`]
   
   @js.native
-  sealed trait `square-feet` extends ArealUnits
+  sealed trait `square-feet`
+    extends StObject
+       with ArealUnits
   @scala.inline
   def `square-feet`: `square-feet` = "square-feet".asInstanceOf[`square-feet`]
   
@@ -4381,17 +4542,23 @@ object arcgisJsApiStrings {
   def `square-inches`: `square-inches` = "square-inches".asInstanceOf[`square-inches`]
   
   @js.native
-  sealed trait `square-kilometers` extends ArealUnits
+  sealed trait `square-kilometers`
+    extends StObject
+       with ArealUnits
   @scala.inline
   def `square-kilometers`: `square-kilometers` = "square-kilometers".asInstanceOf[`square-kilometers`]
   
   @js.native
-  sealed trait `square-meters` extends ArealUnits
+  sealed trait `square-meters`
+    extends StObject
+       with ArealUnits
   @scala.inline
   def `square-meters`: `square-meters` = "square-meters".asInstanceOf[`square-meters`]
   
   @js.native
-  sealed trait `square-miles` extends ArealUnits
+  sealed trait `square-miles`
+    extends StObject
+       with ArealUnits
   @scala.inline
   def `square-miles`: `square-miles` = "square-miles".asInstanceOf[`square-miles`]
   
@@ -4406,7 +4573,9 @@ object arcgisJsApiStrings {
   def `square-us-feet`: `square-us-feet` = "square-us-feet".asInstanceOf[`square-us-feet`]
   
   @js.native
-  sealed trait `square-yards` extends ArealUnits
+  sealed trait `square-yards`
+    extends StObject
+       with ArealUnits
   @scala.inline
   def `square-yards`: `square-yards` = "square-yards".asInstanceOf[`square-yards`]
   
@@ -5046,7 +5215,9 @@ object arcgisJsApiStrings {
   def xsmall: xsmall = "xsmall".asInstanceOf[xsmall]
   
   @js.native
-  sealed trait yards extends LinearUnits
+  sealed trait yards
+    extends StObject
+       with LinearUnits
   @scala.inline
   def yards: yards = "yards".asInstanceOf[yards]
   

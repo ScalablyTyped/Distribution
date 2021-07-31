@@ -6,12 +6,11 @@ import typings.winrt.Windows.ApplicationModel.Activation.ICameraSettingsActivate
 import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebUICameraSettingsActivatedEventArgs
-  extends ICameraSettingsActivatedEventArgs
+  extends StObject
+     with ICameraSettingsActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUICameraSettingsActivatedEventArgs {
   

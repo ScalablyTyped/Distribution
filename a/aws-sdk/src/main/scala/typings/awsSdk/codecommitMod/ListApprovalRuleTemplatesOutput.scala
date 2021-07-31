@@ -2,21 +2,19 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListApprovalRuleTemplatesOutput extends StObject {
   
   /**
     * The names of all the approval rule templates found in the AWS Region for your AWS account.
     */
-  var approvalRuleTemplateNames: js.UndefOr[ApprovalRuleTemplateNameList] = js.native
+  var approvalRuleTemplateNames: js.UndefOr[ApprovalRuleTemplateNameList] = js.undefined
   
   /**
     * An enumeration token that allows the operation to batch the next results of the operation.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListApprovalRuleTemplatesOutput {
   

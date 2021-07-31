@@ -5,7 +5,6 @@ import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
 import typings.std.Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -53,24 +52,23 @@ object extensionTypes {
   }
   
   /** Details about the format, quality, area and scale of the capture. */
-  @js.native
   trait ImageDetails extends StObject {
     
     /** The format of the resulting image. Default is `"jpeg"`. */
-    var format: js.UndefOr[ImageFormat] = js.native
+    var format: js.UndefOr[ImageFormat] = js.undefined
     
     /**
       * When format is `"jpeg"`, controls the quality of the resulting image. This value is ignored for PNG images. As quality is decreased, the resulting image will have more visual artifacts, and the number of bytes needed to store it will decrease.
       */
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
     /**
       * The area of the document to capture, in CSS pixels, relative to the page. If omitted, capture the visible viewport.
       */
-    var rect: js.UndefOr[ImageDetailsRect] = js.native
+    var rect: js.UndefOr[ImageDetailsRect] = js.undefined
     
     /** The scale of the resulting image. Defaults to `devicePixelRatio`. */
-    var scale: js.UndefOr[Double] = js.native
+    var scale: js.UndefOr[Double] = js.undefined
   }
   object ImageDetails {
     
@@ -112,16 +110,15 @@ object extensionTypes {
   /**
     * The area of the document to capture, in CSS pixels, relative to the page. If omitted, capture the visible viewport.
     */
-  @js.native
   trait ImageDetailsRect extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object ImageDetailsRect {
     
@@ -167,13 +164,12 @@ object extensionTypes {
   /**
     * Details of the script or CSS to inject. Either the code or the file property must be set, but both may not be set at the same time.
     */
-  @js.native
   trait InjectDetails extends StObject {
     
     /**
       * If allFrames is `true`, implies that the JavaScript or CSS should be injected into all frames of current page. By default, it's `false` and is only injected into the top frame.
       */
-    var allFrames: js.UndefOr[Boolean] = js.native
+    var allFrames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * JavaScript or CSS code to inject.
@@ -181,24 +177,24 @@ object extensionTypes {
       * **Warning:**
       * Be careful using the `code` parameter. Incorrect use of it may open your extension to [cross site scripting](https://en.wikipedia.org/wiki/Cross-site_scripting) attacks.
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /** The css origin of the stylesheet to inject. Defaults to "author". */
-    var cssOrigin: js.UndefOr[CSSOrigin] = js.native
+    var cssOrigin: js.UndefOr[CSSOrigin] = js.undefined
     
     /** JavaScript or CSS file to inject. */
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
     /** The ID of the frame to inject the script into. This may not be used in combination with `allFrames`. */
-    var frameId: js.UndefOr[Double] = js.native
+    var frameId: js.UndefOr[Double] = js.undefined
     
     /**
       * If matchAboutBlank is true, then the code is also injected in about:blank and about:srcdoc frames if your extension has access to its parent document. Code cannot be inserted in top-level about:-frames. By default it is `false`.
       */
-    var matchAboutBlank: js.UndefOr[Boolean] = js.native
+    var matchAboutBlank: js.UndefOr[Boolean] = js.undefined
     
     /** The soonest that the JavaScript or CSS will be injected into the tab. Defaults to "document_idle". */
-    var runAt: js.UndefOr[RunAt] = js.native
+    var runAt: js.UndefOr[RunAt] = js.undefined
   }
   object InjectDetails {
     
@@ -257,12 +253,13 @@ object extensionTypes {
   
   @js.native
   trait PlainJSONArray
-    extends Array[PlainJSONValue]
+    extends StObject
+       with Array[PlainJSONValue]
        with _PlainJSONValue
   
-  @js.native
   trait PlainJSONObject
-    extends /* key */ StringDictionary[PlainJSONValue]
+    extends StObject
+       with /* key */ StringDictionary[PlainJSONValue]
        with _PlainJSONValue
   object PlainJSONObject {
     

@@ -2,21 +2,19 @@ package typings.vegaLite.srcDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataBase extends StObject {
   
   /**
     * An object that specifies the format for parsing the data.
     */
-  var format: js.UndefOr[DataFormat] = js.native
+  var format: js.UndefOr[DataFormat] = js.undefined
   
   /**
     * Provide a placeholder name and bind data at runtime.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object DataBase {
   

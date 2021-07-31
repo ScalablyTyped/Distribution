@@ -5,28 +5,26 @@ import typings.std.Set
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseFiberRootProperties extends StObject {
   
   // Any additional information from the host associated with this root.
-  var containerInfo: js.Any = js.native
+  var containerInfo: js.Any
   
   // Top context object, used by renderSubtreeIntoContainer
-  var context: js.Object | Null = js.native
+  var context: js.Object | Null
   
   // The currently active root fiber. This is the mutable root of the tree.
-  var current: Fiber = js.native
+  var current: Fiber
   
   // If an error is thrown, and there are no more updates in the queue, we try
   // rendering from the root one more time, synchronously, before handling
   // the error.
-  var didError: Boolean = js.native
+  var didError: Boolean
   
   // The earliest and latest priority levels that are not known to be suspended.
-  var earliestPendingTime: ExpirationTime = js.native
+  var earliestPendingTime: ExpirationTime
   
   // The following priority levels are used to distinguish between 1)
   // uncommitted work, 2) uncommitted work that is suspended, and 3) uncommitted
@@ -34,48 +32,48 @@ trait BaseFiberRootProperties extends StObject {
   // pending level, trading granularity for performance.
   //
   // The earliest and latest priority levels that are suspended from committing.
-  var earliestSuspendedTime: ExpirationTime = js.native
+  var earliestSuspendedTime: ExpirationTime
   
-  var expirationTime: ExpirationTime = js.native
+  var expirationTime: ExpirationTime
   
   // A finished work-in-progress HostRoot that's ready to be committed.
-  var finishedWork: Fiber | Null = js.native
+  var finishedWork: Fiber | Null
   
   // List of top-level batches. This list indicates whether a commit should be
   // deferred. Also contains completion callbacks.
   // TODO: Lift this into the renderer
-  var firstBatch: Batch | Null = js.native
+  var firstBatch: Batch | Null
   
   // Determines if we should attempt to hydrate on the initial mount
-  val hydrate: Boolean = js.native
+  val hydrate: Boolean
   
-  var latestPendingTime: ExpirationTime = js.native
+  var latestPendingTime: ExpirationTime
   
   // The latest priority level that was pinged by a resolved promise and can
   // be retried.
-  var latestPingedTime: ExpirationTime = js.native
+  var latestPingedTime: ExpirationTime
   
-  var latestSuspendedTime: ExpirationTime = js.native
+  var latestSuspendedTime: ExpirationTime
   
   // Remaining expiration time on this root.
   // TODO: Lift this into the renderer
-  var nextExpirationTimeToWorkOn: ExpirationTime = js.native
+  var nextExpirationTimeToWorkOn: ExpirationTime
   
   // Linked-list of roots
-  var nextScheduledRoot: FiberRoot | Null = js.native
+  var nextScheduledRoot: FiberRoot | Null
   
   // Used only by persistent updates.
-  var pendingChildren: js.Any = js.native
+  var pendingChildren: js.Any
   
-  var pendingCommitExpirationTime: ExpirationTime = js.native
+  var pendingCommitExpirationTime: ExpirationTime
   
-  var pendingContext: js.Object | Null = js.native
+  var pendingContext: js.Object | Null
   
-  var pingCache: (WeakMap[Thenable, Set[ExpirationTime]]) | (Map[Thenable, Set[ExpirationTime]]) | Null = js.native
+  var pingCache: (WeakMap[Thenable, Set[ExpirationTime]]) | (Map[Thenable, Set[ExpirationTime]]) | Null
   
   // Timeout handle returned by setTimeout. Used to cancel a pending timeout, if
   // it's superseded by a new one.
-  var timeoutHandle: js.Any = js.native
+  var timeoutHandle: js.Any
 }
 object BaseFiberRootProperties {
   
@@ -96,7 +94,7 @@ object BaseFiberRootProperties {
     pendingCommitExpirationTime: ExpirationTime,
     timeoutHandle: js.Any
   ): BaseFiberRootProperties = {
-    val __obj = js.Dynamic.literal(containerInfo = containerInfo.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], didError = didError.asInstanceOf[js.Any], earliestPendingTime = earliestPendingTime.asInstanceOf[js.Any], earliestSuspendedTime = earliestSuspendedTime.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], hydrate = hydrate.asInstanceOf[js.Any], latestPendingTime = latestPendingTime.asInstanceOf[js.Any], latestPingedTime = latestPingedTime.asInstanceOf[js.Any], latestSuspendedTime = latestSuspendedTime.asInstanceOf[js.Any], nextExpirationTimeToWorkOn = nextExpirationTimeToWorkOn.asInstanceOf[js.Any], pendingChildren = pendingChildren.asInstanceOf[js.Any], pendingCommitExpirationTime = pendingCommitExpirationTime.asInstanceOf[js.Any], timeoutHandle = timeoutHandle.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(containerInfo = containerInfo.asInstanceOf[js.Any], current = current.asInstanceOf[js.Any], didError = didError.asInstanceOf[js.Any], earliestPendingTime = earliestPendingTime.asInstanceOf[js.Any], earliestSuspendedTime = earliestSuspendedTime.asInstanceOf[js.Any], expirationTime = expirationTime.asInstanceOf[js.Any], hydrate = hydrate.asInstanceOf[js.Any], latestPendingTime = latestPendingTime.asInstanceOf[js.Any], latestPingedTime = latestPingedTime.asInstanceOf[js.Any], latestSuspendedTime = latestSuspendedTime.asInstanceOf[js.Any], nextExpirationTimeToWorkOn = nextExpirationTimeToWorkOn.asInstanceOf[js.Any], pendingChildren = pendingChildren.asInstanceOf[js.Any], pendingCommitExpirationTime = pendingCommitExpirationTime.asInstanceOf[js.Any], timeoutHandle = timeoutHandle.asInstanceOf[js.Any], context = null, finishedWork = null, firstBatch = null, nextScheduledRoot = null, pendingContext = null, pingCache = null)
     __obj.asInstanceOf[BaseFiberRootProperties]
   }
   

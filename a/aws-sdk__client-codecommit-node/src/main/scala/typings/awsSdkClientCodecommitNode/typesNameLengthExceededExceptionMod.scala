@@ -4,26 +4,23 @@ import typings.awsSdkClientCodecommitNode.deleteFileExceptionsUnionMod.DeleteFil
 import typings.awsSdkClientCodecommitNode.putFileExceptionsUnionMod.PutFileExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNameLengthExceededExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NameLengthExceededExceptionDetails> * / any */ @js.native
-  trait NameLengthExceededException
-    extends DeleteFileExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NameLengthExceededExceptionDetails> * / any */ trait NameLengthExceededException
+    extends StObject
+       with DeleteFileExceptionsUnion
        with PutFileExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NameLengthExceededException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NameLengthExceededException
   }
   object NameLengthExceededException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.NameLengthExceededException
-    ): NameLengthExceededException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): NameLengthExceededException = {
+      val __obj = js.Dynamic.literal(name = "NameLengthExceededException")
       __obj.asInstanceOf[NameLengthExceededException]
     }
     
@@ -37,6 +34,5 @@ object typesNameLengthExceededExceptionMod {
     }
   }
   
-  @js.native
   trait NameLengthExceededExceptionDetails extends StObject
 }

@@ -4,19 +4,17 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.openlayers.mod.format.GMLBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WFSOptions extends StObject {
   
-  var featureNS: js.UndefOr[StringDictionary[String] | String] = js.native
+  var featureNS: js.UndefOr[StringDictionary[String] | String] = js.undefined
   
-  var featureType: js.UndefOr[js.Array[String] | String] = js.native
+  var featureType: js.UndefOr[js.Array[String] | String] = js.undefined
   
-  var gmlFormat: js.UndefOr[GMLBase] = js.native
+  var gmlFormat: js.UndefOr[GMLBase] = js.undefined
   
-  var schemaLocation: js.UndefOr[String] = js.native
+  var schemaLocation: js.UndefOr[String] = js.undefined
 }
 object WFSOptions {
   

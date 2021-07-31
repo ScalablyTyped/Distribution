@@ -8,7 +8,6 @@ import typings.officeJsPreview.OfficeExtension.ClientResult
 import typings.officeJsPreview.OfficeExtension.LoadOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,7 +17,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.3]
   */
 @js.native
-trait PivotTableCollection extends ClientObject {
+trait PivotTableCollection
+  extends StObject
+     with ClientObject {
   
   def add(name: String, source: String, destination: String): PivotTable = js.native
   def add(name: String, source: String, destination: Range): PivotTable = js.native
@@ -75,7 +76,7 @@ trait PivotTableCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): PivotTableCollection = js.native
-  def load(options: PivotTableCollectionLoadOptions with CollectionLoadOptions): PivotTableCollection = js.native
+  def load(options: PivotTableCollectionLoadOptions & CollectionLoadOptions): PivotTableCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): PivotTableCollection = js.native
   def load(propertyNames: String): PivotTableCollection = js.native
   def load(propertyNames: js.Array[String]): PivotTableCollection = js.native

@@ -2,22 +2,20 @@ package typings.node.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: js.Array[Double] = js.native
+  var data: js.Array[Double]
   
-  var `type`: typings.node.nodeStrings.Buffer = js.native
+  var `type`: typings.node.nodeStrings.Buffer
 }
 object Data {
   
   @scala.inline
-  def apply(data: js.Array[Double], `type`: typings.node.nodeStrings.Buffer): Data = {
+  def apply(data: js.Array[Double]): Data = {
     val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Buffer")
     __obj.asInstanceOf[Data]
   }
   

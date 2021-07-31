@@ -29,111 +29,109 @@ import typings.react.mod.Ref
 import typings.typeFest.literalUnionMod.LiteralUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined { readonly margin :number | undefined,  readonly marginX :number | undefined,  readonly marginY :number | undefined,  readonly padding :number | undefined,  readonly paddingX :number | undefined,  readonly paddingY :number | undefined,   children :react.react.ReactNode | undefined} & std.Pick<ink.ink/build/styles.Styles, 'position' | 'marginLeft' | 'marginRight' | 'marginTop' | 'marginBottom' | 'paddingLeft' | 'paddingRight' | 'paddingTop' | 'paddingBottom' | 'flexGrow' | 'flexShrink' | 'flexDirection' | 'flexBasis' | 'alignItems' | 'alignSelf' | 'justifyContent' | 'width' | 'height' | 'minWidth' | 'minHeight' | 'display' | 'borderStyle' | 'borderColor'> & react.react.RefAttributes<ink.ink/build/dom.DOMElement> */
-@js.native
 trait readonlymarginnumberundef extends StObject {
   
-  var alignItems: js.UndefOr[`flex-start` | center | `flex-end` | stretch] = js.native
+  var alignItems: js.UndefOr[`flex-start` | center | `flex-end` | stretch] = js.undefined
   
-  var alignSelf: js.UndefOr[`flex-start` | center | `flex-end` | auto] = js.native
+  var alignSelf: js.UndefOr[`flex-start` | center | `flex-end` | auto] = js.undefined
   
   var borderColor: js.UndefOr[
     LiteralUnion[
-      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ _, 
+      /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
       String
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic] = js.native
+  var borderStyle: js.UndefOr[single | double | round | bold | singleDouble | doubleSingle | classic] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var display: js.UndefOr[flex | none] = js.native
+  var display: js.UndefOr[flex | none] = js.undefined
   
-  var flexBasis: js.UndefOr[Double | String] = js.native
+  var flexBasis: js.UndefOr[Double | String] = js.undefined
   
-  var flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.native
+  var flexDirection: js.UndefOr[row | column | `row-reverse` | `column-reverse`] = js.undefined
   
-  var flexGrow: js.UndefOr[Double] = js.native
+  var flexGrow: js.UndefOr[Double] = js.undefined
   
-  var flexShrink: js.UndefOr[Double] = js.native
+  var flexShrink: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double | String] = js.native
+  var height: js.UndefOr[Double | String] = js.undefined
   
-  var justifyContent: js.UndefOr[`flex-start` | `flex-end` | `space-between` | `space-around` | center] = js.native
+  var justifyContent: js.UndefOr[`flex-start` | `flex-end` | `space-between` | `space-around` | center] = js.undefined
   
-  var key: js.UndefOr[Key | Null] = js.native
+  var key: js.UndefOr[Key | Null] = js.undefined
   
   /**
     * Margin on all sides. Equivalent to setting `marginTop`, `marginBottom`, `marginLeft` and `marginRight`.
     *
     * @default 0
     */
-  val margin: js.UndefOr[Double] = js.native
+  val margin: js.UndefOr[Double] = js.undefined
   
-  var marginBottom: js.UndefOr[Double] = js.native
+  var marginBottom: js.UndefOr[Double] = js.undefined
   
-  var marginLeft: js.UndefOr[Double] = js.native
+  var marginLeft: js.UndefOr[Double] = js.undefined
   
-  var marginRight: js.UndefOr[Double] = js.native
+  var marginRight: js.UndefOr[Double] = js.undefined
   
-  var marginTop: js.UndefOr[Double] = js.native
+  var marginTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Horizontal margin. Equivalent to setting `marginLeft` and `marginRight`.
     *
     * @default 0
     */
-  val marginX: js.UndefOr[Double] = js.native
+  val marginX: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical margin. Equivalent to setting `marginTop` and `marginBottom`.
     *
     * @default 0
     */
-  val marginY: js.UndefOr[Double] = js.native
+  val marginY: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double | String] = js.native
+  var minHeight: js.UndefOr[Double | String] = js.undefined
   
-  var minWidth: js.UndefOr[Double | String] = js.native
+  var minWidth: js.UndefOr[Double | String] = js.undefined
   
   /**
     * Padding on all sides. Equivalent to setting `paddingTop`, `paddingBottom`, `paddingLeft` and `paddingRight`.
     *
     * @default 0
     */
-  val padding: js.UndefOr[Double] = js.native
+  val padding: js.UndefOr[Double] = js.undefined
   
-  var paddingBottom: js.UndefOr[Double] = js.native
+  var paddingBottom: js.UndefOr[Double] = js.undefined
   
-  var paddingLeft: js.UndefOr[Double] = js.native
+  var paddingLeft: js.UndefOr[Double] = js.undefined
   
-  var paddingRight: js.UndefOr[Double] = js.native
+  var paddingRight: js.UndefOr[Double] = js.undefined
   
-  var paddingTop: js.UndefOr[Double] = js.native
+  var paddingTop: js.UndefOr[Double] = js.undefined
   
   /**
     * Horizontal padding. Equivalent to setting `paddingLeft` and `paddingRight`.
     *
     * @default 0
     */
-  val paddingX: js.UndefOr[Double] = js.native
+  val paddingX: js.UndefOr[Double] = js.undefined
   
   /**
     * Vertical padding. Equivalent to setting `paddingTop` and `paddingBottom`.
     *
     * @default 0
     */
-  val paddingY: js.UndefOr[Double] = js.native
+  val paddingY: js.UndefOr[Double] = js.undefined
   
-  var position: js.UndefOr[absolute | relative] = js.native
+  var position: js.UndefOr[absolute | relative] = js.undefined
   
-  var ref: js.UndefOr[Ref[DOMElement]] = js.native
+  var ref: js.UndefOr[Ref[DOMElement]] = js.undefined
   
-  var width: js.UndefOr[Double | String] = js.native
+  var width: js.UndefOr[Double | String] = js.undefined
 }
 object readonlymarginnumberundef {
   
@@ -161,7 +159,7 @@ object readonlymarginnumberundef {
     @scala.inline
     def setBorderColor(
       value: LiteralUnion[
-          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ _, 
+          /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof ForegroundColor */ js.Any, 
           String
         ]
     ): Self = StObject.set(x, "borderColor", value.asInstanceOf[js.Any])

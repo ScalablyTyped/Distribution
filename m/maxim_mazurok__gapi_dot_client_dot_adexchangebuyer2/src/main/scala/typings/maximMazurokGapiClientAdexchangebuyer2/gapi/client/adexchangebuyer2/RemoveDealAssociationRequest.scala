@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveDealAssociationRequest extends StObject {
   
   /** The association between a creative and a deal that should be removed. */
-  var association: js.UndefOr[CreativeDealAssociation] = js.native
+  var association: js.UndefOr[CreativeDealAssociation] = js.undefined
 }
 object RemoveDealAssociationRequest {
   

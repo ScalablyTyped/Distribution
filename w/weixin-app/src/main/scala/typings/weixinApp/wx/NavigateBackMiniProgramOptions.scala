@@ -3,18 +3,17 @@ package typings.weixinApp.wx
 import typings.weixinApp.anon.ErrMsg
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigateBackMiniProgramOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
-  var extraData: js.UndefOr[js.Any] = js.native
+  var extraData: js.UndefOr[js.Any] = js.undefined
   
   // 需要返回给上一个小程序的数据，上一个小程序可在 App.onShow() 中获取到这份数据。详情
   @JSName("success")
-  var success_NavigateBackMiniProgramOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.native
+  var success_NavigateBackMiniProgramOptions: js.UndefOr[js.Function1[/* res */ ErrMsg, Unit]] = js.undefined
 }
 object NavigateBackMiniProgramOptions {
   

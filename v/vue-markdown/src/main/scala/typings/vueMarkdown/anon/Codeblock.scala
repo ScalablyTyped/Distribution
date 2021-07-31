@@ -2,29 +2,27 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Codeblock extends StObject {
   
-  var code_block: js.Any = js.native
+  var code_block: js.Any
   
-  var code_inline: js.Any = js.native
+  var code_inline: js.Any
   
-  var fence: js.Any = js.native
+  var fence: js.Any
   
-  var hardbreak: js.Any = js.native
+  var hardbreak: js.Any
   
-  var html_block: js.Any = js.native
+  var html_block: js.Any
   
-  var html_inline: js.Any = js.native
+  var html_inline: js.Any
   
-  var image: js.Any = js.native
+  var image: js.Any
   
-  var softbreak: js.Any = js.native
+  var softbreak: js.Any
   
-  var text: js.Any = js.native
+  var text: js.Any
 }
 object Codeblock {
   

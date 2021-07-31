@@ -8,27 +8,27 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of table indexes within a document.
   * @see com.sun.star.text.BaseIndex
   */
-@js.native
-trait TableIndex extends BaseIndex {
+trait TableIndex
+  extends StObject
+     with BaseIndex {
   
   /** determines if the name or the label of an object is used to create the index. */
-  var CreateFromLabels: Boolean = js.native
+  var CreateFromLabels: Boolean
   
   /** determines the name of the sequence field that is evaluated to create the index. */
-  var LabelCategory: String = js.native
+  var LabelCategory: String
   
   /**
     * determines the way the paragraph containing a label is included in the index.
     * @see ReferenceFieldPart allowed constant values: only TEXT, CATEGORY_AND_NUMBER and ONLY_CAPTION
     */
-  var LabelDisplayType: Double = js.native
+  var LabelDisplayType: Double
 }
 object TableIndex {
   

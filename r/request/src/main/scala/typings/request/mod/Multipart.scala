@@ -3,15 +3,13 @@ package typings.request.mod
 import typings.request.anon.Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Multipart extends StObject {
   
-  var chunked: js.UndefOr[Boolean] = js.native
+  var chunked: js.UndefOr[Boolean] = js.undefined
   
-  var data: js.UndefOr[js.Array[Body]] = js.native
+  var data: js.UndefOr[js.Array[Body]] = js.undefined
 }
 object Multipart {
   

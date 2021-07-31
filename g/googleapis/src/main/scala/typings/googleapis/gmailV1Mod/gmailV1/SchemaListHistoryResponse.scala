@@ -2,27 +2,25 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListHistoryResponse extends StObject {
   
   /**
     * List of history records. Any messages contained in the response will
     * typically only have id and threadId fields populated.
     */
-  var history: js.UndefOr[js.Array[SchemaHistory]] = js.native
+  var history: js.UndefOr[js.Array[SchemaHistory]] = js.undefined
   
   /**
     * The ID of the mailbox&#39;s current history record.
     */
-  var historyId: js.UndefOr[String] = js.native
+  var historyId: js.UndefOr[String] = js.undefined
   
   /**
     * Page token to retrieve the next page of results in the list.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListHistoryResponse {
   

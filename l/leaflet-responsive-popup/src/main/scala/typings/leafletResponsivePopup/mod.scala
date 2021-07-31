@@ -5,28 +5,31 @@ import typings.leaflet.mod.PopupOptions
 import typings.leaflet.mod.Popup_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
+  @JSImport("leaflet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("leaflet", "ResponsivePopup")
   @js.native
   class ResponsivePopup_ () extends Popup_ {
     def this(options: ResponsivePopupOptions) = this()
-    def this(options: js.UndefOr[scala.Nothing], source: Layer) = this()
+    def this(options: Unit, source: Layer) = this()
     def this(options: ResponsivePopupOptions, source: Layer) = this()
   }
   
-  @JSImport("leaflet", "responsivePopup")
-  @js.native
-  def responsivePopup(options: js.UndefOr[ResponsivePopupOptions], source: js.UndefOr[Layer]): ResponsivePopup_ = js.native
+  @scala.inline
+  def responsivePopup(options: js.UndefOr[ResponsivePopupOptions], source: js.UndefOr[Layer]): ResponsivePopup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("responsivePopup")(options.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ResponsivePopup_]
   
-  @js.native
-  trait ResponsivePopupOptions extends PopupOptions {
+  trait ResponsivePopupOptions
+    extends StObject
+       with PopupOptions {
     
-    var hasTip: js.UndefOr[Boolean] = js.native
+    var hasTip: js.UndefOr[Boolean] = js.undefined
   }
   object ResponsivePopupOptions {
     

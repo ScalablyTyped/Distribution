@@ -2,12 +2,11 @@ package typings.senchaTouch.Ext
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICompositeElement
-  extends typings.senchaTouch.Ext.dom.ICompositeElementLite {
+  extends StObject
+     with typings.senchaTouch.Ext.dom.ICompositeElementLite {
   
   /** [Method] fixes scope with flyweight
     * @param eventName Object
@@ -25,7 +24,7 @@ trait ICompositeElement
       /* opt */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Adds elements to this Composite object
     * @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an Array of DOM elements to add, or another Composite object who's elements should be added.
@@ -39,7 +38,7 @@ trait ICompositeElement
       /* root */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Calls the passed function for each element in this composite
     * @param fn Function The function to call.
@@ -53,7 +52,7 @@ trait ICompositeElement
       /* scope */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Clears this Composite and adds the elements passed
     * @param els HTMLElement[]/Ext.dom.CompositeElementLite Either an array of DOM elements, or another Composite from which to fill this Composite.
@@ -62,7 +61,7 @@ trait ICompositeElement
   @JSName("fill")
   var fill_ICompositeElement: js.UndefOr[
     js.Function1[/* els */ js.UndefOr[js.Any], typings.senchaTouch.Ext.dom.ICompositeElementLite]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Filters this composite to only elements that match the passed selector
     * @param selector String/Function A string CSS selector or a comparison function. The comparison function will be called with the following arguments:
@@ -74,7 +73,7 @@ trait ICompositeElement
       /* selector */ js.UndefOr[js.Any], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes the specified element s
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite or an array of any of those.
@@ -88,7 +87,7 @@ trait ICompositeElement
       /* removeDom */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Replaces the specified element with the passed element
     * @param el String/HTMLElement/Ext.Element/Number The id of an element, the Element itself, the index of the element in this composite to replace.
@@ -104,7 +103,7 @@ trait ICompositeElement
       /* domReplace */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Selects elements based on the passed CSS selector to enable Element methods to be applied to many related elements in
     * @param selector String/HTMLElement[] The CSS selector or an array of elements
@@ -118,7 +117,7 @@ trait ICompositeElement
       /* composite */ js.UndefOr[Boolean], 
       typings.senchaTouch.Ext.dom.ICompositeElementLite
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object ICompositeElement {
   

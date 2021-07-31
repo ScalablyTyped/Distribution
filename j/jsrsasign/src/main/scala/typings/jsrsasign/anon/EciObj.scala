@@ -4,17 +4,15 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.EncapsulatedContentInfo
 import typings.jsrsasign.jsrsasign.KJUR.asn1.cms.SignedData
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EciObj extends StObject {
   
-  var eciObj: EncapsulatedContentInfo = js.native
+  var eciObj: EncapsulatedContentInfo
   
-  var hashAlg: String = js.native
+  var hashAlg: String
   
-  var sdobj: SignedData = js.native
+  var sdobj: SignedData
 }
 object EciObj {
   

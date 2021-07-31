@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.FC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object aspectRatioBoxMod {
@@ -26,11 +25,12 @@ object aspectRatioBoxMod {
   @js.native
   val AspectRatioBoxBody: FC[BlockProps] = js.native
   
-  @js.native
-  trait AspectRatioBoxProps extends BlockProps {
+  trait AspectRatioBoxProps
+    extends StObject
+       with BlockProps {
     
     /** Aspect ratio is width divided by height. */
-    var aspectRatio: js.UndefOr[Double] = js.native
+    var aspectRatio: js.UndefOr[Double] = js.undefined
   }
   object AspectRatioBoxProps {
     

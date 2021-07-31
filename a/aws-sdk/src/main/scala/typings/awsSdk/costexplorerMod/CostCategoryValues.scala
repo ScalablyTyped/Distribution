@@ -2,23 +2,21 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CostCategoryValues extends StObject {
   
-  var Key: js.UndefOr[CostCategoryName] = js.native
+  var Key: js.UndefOr[CostCategoryName] = js.undefined
   
   /**
     *  The match options that you can use to filter your results. MatchOptions is only applicable for only applicable for actions related to cost category. The default values for MatchOptions is EQUALS and CASE_SENSITIVE. 
     */
-  var MatchOptions: js.UndefOr[typings.awsSdk.costexplorerMod.MatchOptions] = js.native
+  var MatchOptions: js.UndefOr[typings.awsSdk.costexplorerMod.MatchOptions] = js.undefined
   
   /**
     * The specific value of the Cost Category.
     */
-  var Values: js.UndefOr[typings.awsSdk.costexplorerMod.Values] = js.native
+  var Values: js.UndefOr[typings.awsSdk.costexplorerMod.Values] = js.undefined
 }
 object CostCategoryValues {
   

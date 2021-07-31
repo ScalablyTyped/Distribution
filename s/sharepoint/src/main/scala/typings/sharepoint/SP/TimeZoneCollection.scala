@@ -2,11 +2,12 @@ package typings.sharepoint.SP
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TimeZoneCollection extends ClientObjectCollection[TimeZone] {
+trait TimeZoneCollection
+  extends StObject
+     with ClientObjectCollection[TimeZone] {
   
   def getById(id: Double): TimeZone = js.native
   

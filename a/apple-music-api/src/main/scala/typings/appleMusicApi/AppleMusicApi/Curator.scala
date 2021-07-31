@@ -5,26 +5,26 @@ import typings.appleMusicApi.anon.Url
 import typings.appleMusicApi.appleMusicApiStrings.curators
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://developer.apple.com/documentation/applemusicapi/curator
-@js.native
-trait Curator extends Resource {
+trait Curator
+  extends StObject
+     with Resource {
   
-  var attributes: js.UndefOr[Url] = js.native
+  var attributes: js.UndefOr[Url] = js.undefined
   
-  var relationships: js.UndefOr[Playlists] = js.native
+  var relationships: js.UndefOr[Playlists] = js.undefined
   
   @JSName("type")
-  var type_Curator: curators = js.native
+  var type_Curator: curators
 }
 object Curator {
   
   @scala.inline
-  def apply(id: String, `type`: curators): Curator = {
+  def apply(id: String): Curator = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("curators")
     __obj.asInstanceOf[Curator]
   }
   

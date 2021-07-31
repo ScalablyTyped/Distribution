@@ -16,30 +16,30 @@ import typings.stringPixelWidth.stringPixelWidthStrings.verdana
 import typings.stringPixelWidth.stringPixelWidthStrings.webdings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("string-pixel-width", JSImport.Namespace)
-  @js.native
-  def apply(string: String): Double = js.native
-  @JSImport("string-pixel-width", JSImport.Namespace)
-  @js.native
-  def apply(string: String, settings: Settings): Double = js.native
+  @scala.inline
+  def apply(string: String): Double = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def apply(string: String, settings: Settings): Double = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Double]
   
+  @JSImport("string-pixel-width", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Settings extends StObject {
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
     var font: js.UndefOr[
         (`andale mono`) | arial | (`avenir next`) | avenir | (`comic sans ms`) | (`courier new`) | georgia | impact | (`open sans`) | tahoma | (`times new roman`) | (`trebuchet ms`) | verdana | webdings
-      ] = js.native
+      ] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object Settings {
     

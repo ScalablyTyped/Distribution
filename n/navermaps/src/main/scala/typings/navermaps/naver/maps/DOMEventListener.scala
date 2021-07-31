@@ -3,17 +3,15 @@ package typings.navermaps.naver.maps
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DOMEventListener extends StObject {
   
-  var eventName: String = js.native
+  var eventName: String
   
-  def listener(): js.Any = js.native
+  def listener(): js.Any
   
-  var target: HTMLElement = js.native
+  var target: HTMLElement
 }
 object DOMEventListener {
   

@@ -2,15 +2,13 @@ package typings.osrm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MatchResults extends StObject {
   
-  var matchings: js.Array[MatchRoute] = js.native
+  var matchings: js.Array[MatchRoute]
   
-  var tracepoints: js.Array[MatchWaypoint] = js.native
+  var tracepoints: js.Array[MatchWaypoint]
 }
 object MatchResults {
   

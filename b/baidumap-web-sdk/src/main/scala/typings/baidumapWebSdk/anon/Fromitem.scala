@@ -2,19 +2,17 @@ package typings.baidumapWebSdk.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Fromitem extends StObject {
   
-  var fromitem: js.Any = js.native
+  var fromitem: js.Any
   
-  var target: js.Any = js.native
+  var target: js.Any
   
-  var toitem: js.Any = js.native
+  var toitem: js.Any
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Fromitem {
   

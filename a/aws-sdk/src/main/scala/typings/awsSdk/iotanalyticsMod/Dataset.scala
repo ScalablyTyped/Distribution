@@ -2,66 +2,64 @@ package typings.awsSdk.iotanalyticsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dataset extends StObject {
   
   /**
     * The DatasetAction objects that automatically create the data set contents.
     */
-  var actions: js.UndefOr[DatasetActions] = js.native
+  var actions: js.UndefOr[DatasetActions] = js.undefined
   
   /**
     * The ARN of the data set.
     */
-  var arn: js.UndefOr[DatasetArn] = js.native
+  var arn: js.UndefOr[DatasetArn] = js.undefined
   
   /**
     * When dataset contents are created they are delivered to destinations specified here.
     */
-  var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.native
+  var contentDeliveryRules: js.UndefOr[DatasetContentDeliveryRules] = js.undefined
   
   /**
     * When the data set was created.
     */
-  var creationTime: js.UndefOr[Timestamp] = js.native
+  var creationTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The last time the data set was updated.
     */
-  var lastUpdateTime: js.UndefOr[Timestamp] = js.native
+  var lastUpdateTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * A list of data rules that send notifications to Amazon CloudWatch, when data arrives late. To specify lateDataRules, the dataset must use a DeltaTimer filter.
     */
-  var lateDataRules: js.UndefOr[LateDataRules] = js.native
+  var lateDataRules: js.UndefOr[LateDataRules] = js.undefined
   
   /**
     * The name of the data set.
     */
-  var name: js.UndefOr[DatasetName] = js.native
+  var name: js.UndefOr[DatasetName] = js.undefined
   
   /**
     * Optional. How long, in days, message data is kept for the data set.
     */
-  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.native
+  var retentionPeriod: js.UndefOr[RetentionPeriod] = js.undefined
   
   /**
     * The status of the data set.
     */
-  var status: js.UndefOr[DatasetStatus] = js.native
+  var status: js.UndefOr[DatasetStatus] = js.undefined
   
   /**
     * The DatasetTrigger objects that specify when the data set is automatically updated.
     */
-  var triggers: js.UndefOr[DatasetTriggers] = js.native
+  var triggers: js.UndefOr[DatasetTriggers] = js.undefined
   
   /**
     * Optional. How many versions of dataset contents are kept. If not specified or set to null, only the latest version plus the latest succeeded version (if they are different) are kept for the time period specified by the retentionPeriod parameter. For more information, see Keeping Multiple Versions of AWS IoT Analytics Data Sets in the AWS IoT Analytics User Guide.
     */
-  var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.native
+  var versioningConfiguration: js.UndefOr[VersioningConfiguration] = js.undefined
 }
 object Dataset {
   

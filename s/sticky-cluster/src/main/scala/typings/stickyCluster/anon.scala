@@ -2,15 +2,13 @@ package typings.stickyCluster
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Stickyclusterworkerindex extends StObject {
     
-    var stickycluster_worker_index: Double = js.native
+    var stickycluster_worker_index: Double
   }
   object Stickyclusterworkerindex {
     

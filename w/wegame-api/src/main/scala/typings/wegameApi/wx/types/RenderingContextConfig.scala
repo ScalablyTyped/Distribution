@@ -2,26 +2,24 @@ package typings.wegameApi.wx.types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderingContextConfig extends StObject {
   
   /**
     * 表示是否抗锯齿
     */
-  var antialias: js.UndefOr[Boolean] = js.native
+  var antialias: js.UndefOr[Boolean] = js.undefined
   
   /**
     * 抗锯齿样本数。最小值为 2，最大不超过系统限制数量，仅 iOS 支持
     */
-  var antialiasSamples: js.UndefOr[Double] = js.native
+  var antialiasSamples: js.UndefOr[Double] = js.undefined
   
   /**
     * 表示是否绘图完成后是否保留绘图缓冲区
     */
-  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.native
+  var preserveDrawingBuffer: js.UndefOr[Boolean] = js.undefined
 }
 object RenderingContextConfig {
   

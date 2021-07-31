@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,7 +19,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * purchase_history       consumer_destinations:       - monitored_resource:
   * library.googleapis.com/branch         logs:         - activity_history
   */
-@js.native
 trait SchemaLogging extends StObject {
   
   /**
@@ -29,7 +27,7 @@ trait SchemaLogging extends StObject {
     * monitored resource type. A log can be used in at most one consumer
     * destination.
     */
-  var consumerDestinations: js.UndefOr[js.Array[SchemaLoggingDestination]] = js.native
+  var consumerDestinations: js.UndefOr[js.Array[SchemaLoggingDestination]] = js.undefined
   
   /**
     * Logging configurations for sending logs to the producer project. There
@@ -37,7 +35,7 @@ trait SchemaLogging extends StObject {
     * monitored resource type. A log can be used in at most one producer
     * destination.
     */
-  var producerDestinations: js.UndefOr[js.Array[SchemaLoggingDestination]] = js.native
+  var producerDestinations: js.UndefOr[js.Array[SchemaLoggingDestination]] = js.undefined
 }
 object SchemaLogging {
   

@@ -2,15 +2,13 @@ package typings.fnandoSparkline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Value extends StObject {
     
-    var value: Double = js.native
+    var value: Double
   }
   object Value {
     

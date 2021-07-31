@@ -2,16 +2,14 @@ package typings.webrtc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // https://www.w3.org/TR/webrtc/#idl-def-rtcrtpcapabilities
-@js.native
 trait RTCRtcCapabilities extends StObject {
   
-  var codecs: js.Array[RTCRtpCodecCapability] = js.native
+  var codecs: js.Array[RTCRtpCodecCapability]
   
-  var headerExtensions: js.Array[RTCRtpHeaderExtensionCapability] = js.native
+  var headerExtensions: js.Array[RTCRtpHeaderExtensionCapability]
 }
 object RTCRtcCapabilities {
   

@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountActiveAdSummary extends StObject {
   
   /** ID of the account. */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /** Ads that have been activated for the account */
-  var activeAds: js.UndefOr[String] = js.native
+  var activeAds: js.UndefOr[String] = js.undefined
   
   /** Maximum number of active ads allowed for the account. */
-  var activeAdsLimitTier: js.UndefOr[String] = js.native
+  var activeAdsLimitTier: js.UndefOr[String] = js.undefined
   
   /** Ads that can be activated for the account. */
-  var availableAds: js.UndefOr[String] = js.native
+  var availableAds: js.UndefOr[String] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "dfareporting#accountActiveAdSummary". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object AccountActiveAdSummary {
   

@@ -8,14 +8,15 @@ import typings.ionicCore.stencilPublicRuntimeMod.ComponentInterface
 import typings.ionicCore.stencilPublicRuntimeMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object datetimeMod {
   
   @JSImport("@ionic/core/dist/types/components/datetime/datetime", "Datetime")
   @js.native
-  class Datetime () extends ComponentInterface {
+  class Datetime ()
+    extends StObject
+       with ComponentInterface {
     
     var buttonEl: js.Any = js.native
     

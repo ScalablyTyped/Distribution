@@ -13,14 +13,13 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.mailboxchanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents an email mailbox located on a remote email server. */
 @js.native
 trait EmailMailbox extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mailboxchanged(`type`: mailboxchanged, listener: TypedEventHandler[EmailMailbox, EmailMailboxChangedEventArgs]): Unit = js.native
   
@@ -192,7 +191,7 @@ trait EmailMailbox extends StObject {
   var networkId: String = js.native
   
   /** Occurs when the mailbox has changed. */
-  def onmailboxchanged(ev: EmailMailboxChangedEventArgs with WinRTEvent[EmailMailbox]): Unit = js.native
+  def onmailboxchanged(ev: EmailMailboxChangedEventArgs & WinRTEvent[EmailMailbox]): Unit = js.native
   /** Occurs when the mailbox has changed. */
   @JSName("onmailboxchanged")
   var onmailboxchanged_Original: TypedEventHandler[EmailMailbox, EmailMailboxChangedEventArgs] = js.native
@@ -206,7 +205,7 @@ trait EmailMailbox extends StObject {
   /** Gets the security policies for attachments in this mailbox. */
   var policies: EmailMailboxPolicies = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mailboxchanged(`type`: mailboxchanged, listener: TypedEventHandler[EmailMailbox, EmailMailboxChangedEventArgs]): Unit = js.native
   
@@ -215,7 +214,7 @@ trait EmailMailbox extends StObject {
     * @param recipients The list of email addresses.
     * @return A list of resolution results. The result list will be in the same order as the input list. See EmailRecipientResolutionResult for more information.
     */
-  def resolveRecipientsAsync(recipients: IIterable[String]): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def resolveRecipientsAsync(recipients: IIterable[String]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
   
   /**
     * Asynchronously saves the mailbox to the email store.
@@ -365,5 +364,5 @@ trait EmailMailbox extends StObject {
     * @param certificates The certificate to validate.
     * @return The confirmation that the certificate is valid.
     */
-  def validateCertificatesAsync(certificates: IIterable[Certificate]): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+  def validateCertificatesAsync(certificates: IIterable[Certificate]): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
 }

@@ -3,16 +3,14 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverTypes.mod.CompletionItemTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValueSetArray extends StObject {
   
   /**
     * The tags supported by the client.
     */
-  var valueSet: js.Array[CompletionItemTag] = js.native
+  var valueSet: js.Array[CompletionItemTag]
 }
 object ValueSetArray {
   

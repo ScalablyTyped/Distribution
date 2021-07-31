@@ -2,23 +2,21 @@ package typings.pdfjsDist.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PDFPageViewportOptions extends StObject {
   
-  var dontFlip: Boolean = js.native
+  var dontFlip: Boolean
   
-  var offsetX: Double = js.native
+  var offsetX: Double
   
-  var offsetY: Double = js.native
+  var offsetY: Double
   
-  var rotation: Double = js.native
+  var rotation: Double
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var viewBox: js.Any = js.native
+  var viewBox: js.Any
 }
 object PDFPageViewportOptions {
   

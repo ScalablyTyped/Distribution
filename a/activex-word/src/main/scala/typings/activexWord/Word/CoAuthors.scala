@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CoAuthors extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Item(Index: js.Any): CoAuthor = js.native
+  def Item(Index: js.Any): CoAuthor
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("Word.CoAuthors_typekey")
-  var WordDotCoAuthors_typekey: CoAuthors = js.native
+  var WordDotCoAuthors_typekey: CoAuthors
 }
 object CoAuthors {
   

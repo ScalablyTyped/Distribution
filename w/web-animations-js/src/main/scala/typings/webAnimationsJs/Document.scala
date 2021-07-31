@@ -2,13 +2,11 @@ package typings.webAnimationsJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  val timeline: AnimationTimeline = js.native
+  val timeline: AnimationTimeline
 }
 object Document {
   

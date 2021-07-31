@@ -2,24 +2,22 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReadabilityStatistic extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Value: Double = js.native
+  val Value: Double
   
   @JSName("Word.ReadabilityStatistic_typekey")
-  var WordDotReadabilityStatistic_typekey: ReadabilityStatistic = js.native
+  var WordDotReadabilityStatistic_typekey: ReadabilityStatistic
 }
 object ReadabilityStatistic {
   

@@ -2,13 +2,11 @@ package typings.nodeMailjet.mod.SMS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExportResponse extends StObject {
   
-  val body: ExportResponseData = js.native
+  val body: ExportResponseData
 }
 object ExportResponse {
   

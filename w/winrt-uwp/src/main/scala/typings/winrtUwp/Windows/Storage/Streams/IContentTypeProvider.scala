@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Storage.Streams
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Characterizes the format of the data. */
-@js.native
 trait IContentTypeProvider extends StObject {
   
   /** Gets the format of the data. */
-  var contentType: String = js.native
+  var contentType: String
 }
 object IContentTypeProvider {
   

@@ -2,26 +2,24 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabStop2 extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  def Clear(): Unit = js.native
+  def Clear(): Unit
   
-  val Creator: Double = js.native
+  val Creator: Double
   
   @JSName("Office.TabStop2_typekey")
-  var OfficeDotTabStop2_typekey: TabStop2 = js.native
+  var OfficeDotTabStop2_typekey: TabStop2
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: Double = js.native
+  var Position: Double
   
-  var Type: MsoTabStopType = js.native
+  var Type: MsoTabStopType
 }
 object TabStop2 {
   

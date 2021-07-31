@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object testEnvMod {
@@ -10,546 +9,395 @@ object testEnvMod {
   object global {
     
     /* was `typeof test.after` */
-    @JSGlobal("after")
-    @js.native
-    def after(func: js.Function): Unit = js.native
+    @scala.inline
+    def after(func: js.Function): Unit = js.Dynamic.global.applyDynamic("after")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* was `typeof test.afterEach` */
-    @JSGlobal("afterEach")
-    @js.native
-    def afterEach(func: js.Function): Unit = js.native
+    @scala.inline
+    def afterEach(func: js.Function): Unit = js.Dynamic.global.applyDynamic("afterEach")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* was `typeof _assert` */
     object assert {
       
-      @JSGlobal("assert.Function")
+      @JSGlobal("assert")
       @js.native
-      def Function(): Unit = js.native
-      @JSGlobal("assert.Function")
-      @js.native
-      def Function(actual: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.Function")
-      @js.native
-      def Function(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.Function")
-      @js.native
-      def Function(actual: js.Any, msg: String): Unit = js.native
+      val ^ : js.Any = js.native
       
-      @JSGlobal("assert.closeTo")
-      @js.native
-      def closeTo(actual: js.Any, expected: js.Any, delta: js.Any): Unit = js.native
-      @JSGlobal("assert.closeTo")
-      @js.native
-      def closeTo(actual: js.Any, expected: js.Any, delta: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def Function(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Function")().asInstanceOf[Unit]
+      @scala.inline
+      def Function(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("Function")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def Function(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def Function(actual: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Function")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(): Unit = js.native
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.deepEqual")
-      @js.native
-      def deepEqual(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def closeTo(actual: js.Any, expected: js.Any, delta: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeTo")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def closeTo(actual: js.Any, expected: js.Any, delta: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("closeTo")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.deepProperty")
-      @js.native
-      def deepProperty(`object`: js.Any, prop: js.Any): Unit = js.native
-      @JSGlobal("assert.deepProperty")
-      @js.native
-      def deepProperty(`object`: js.Any, prop: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def deepEqual(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")().asInstanceOf[Unit]
+      @scala.inline
+      def deepEqual(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def deepEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepEqual(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepEqual(actual: js.Any, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepEqual(actual: Unit, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepEqual(actual: Unit, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepEqual(actual: Unit, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.deepPropertyNotVal")
-      @js.native
-      def deepPropertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = js.native
-      @JSGlobal("assert.deepPropertyNotVal")
-      @js.native
-      def deepPropertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def deepProperty(`object`: js.Any, prop: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepProperty")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepProperty(`object`: js.Any, prop: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepProperty")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.deepPropertyVal")
-      @js.native
-      def deepPropertyVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = js.native
-      @JSGlobal("assert.deepPropertyVal")
-      @js.native
-      def deepPropertyVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def deepPropertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepPropertyNotVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepPropertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepPropertyNotVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.doesNotThrow")
-      @js.native
-      def doesNotThrow(block: js.Function): Unit = js.native
-      @JSGlobal("assert.doesNotThrow")
-      @js.native
-      def doesNotThrow(block: js.Function, msg: String): Unit = js.native
+      @scala.inline
+      def deepPropertyVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepPropertyVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def deepPropertyVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("deepPropertyVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(): Unit = js.native
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.equal")
-      @js.native
-      def equal(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def doesNotThrow(block: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def doesNotThrow(block: js.Function, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("doesNotThrow")(block.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.exist")
-      @js.native
-      def exist(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.exist")
-      @js.native
-      def exist(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def equal(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equal")().asInstanceOf[Unit]
+      @scala.inline
+      def equal(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def equal(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def equal(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def equal(actual: js.Any, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def equal(actual: Unit, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def equal(actual: Unit, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def equal(actual: Unit, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("equal")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.greaterThan")
-      @js.native
-      def greaterThan(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.greaterThan")
-      @js.native
-      def greaterThan(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def exist(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("exist")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def exist(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("exist")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.ifError")
-      @js.native
-      def ifError(): Unit = js.native
-      @JSGlobal("assert.ifError")
-      @js.native
-      def ifError(`object`: js.Any): Unit = js.native
+      @scala.inline
+      def greaterThan(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def greaterThan(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("greaterThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isArray")
-      @js.native
-      def isArray(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isArray")
-      @js.native
-      def isArray(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def ifError(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")().asInstanceOf[Unit]
+      @scala.inline
+      def ifError(`object`: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ifError")(`object`.asInstanceOf[js.Any]).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isBoolean")
-      @js.native
-      def isBoolean(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isBoolean")
-      @js.native
-      def isBoolean(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isArray(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isArray(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isArray")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isDefined")
-      @js.native
-      def isDefined(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isDefined")
-      @js.native
-      def isDefined(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isBoolean(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isBoolean(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isBoolean")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isFalse")
-      @js.native
-      def isFalse(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isFalse")
-      @js.native
-      def isFalse(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isDefined(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isDefined(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isDefined")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isFunction")
-      @js.native
-      def isFunction(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isFunction")
-      @js.native
-      def isFunction(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isFalse(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isFalse")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isFalse(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isFalse")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotArray")
-      @js.native
-      def isNotArray(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotArray")
-      @js.native
-      def isNotArray(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isFunction(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isFunction(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotBoolean")
-      @js.native
-      def isNotBoolean(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotBoolean")
-      @js.native
-      def isNotBoolean(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotArray(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotArray")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotArray(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotArray")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotFalse")
-      @js.native
-      def isNotFalse(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotFalse")
-      @js.native
-      def isNotFalse(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotBoolean(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotBoolean")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotBoolean(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotBoolean")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotFunction")
-      @js.native
-      def isNotFunction(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotFunction")
-      @js.native
-      def isNotFunction(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotFalse(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotFalse")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotFalse(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotFalse")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotNull")
-      @js.native
-      def isNotNull(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotNull")
-      @js.native
-      def isNotNull(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotFunction(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotFunction")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotFunction(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotFunction")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotNumber")
-      @js.native
-      def isNotNumber(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotNumber")
-      @js.native
-      def isNotNumber(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotNull(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNull")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotNull(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotNull")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotObject")
-      @js.native
-      def isNotObject(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotObject")
-      @js.native
-      def isNotObject(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotNumber(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotNumber")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotNumber(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotNumber")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotString")
-      @js.native
-      def isNotString(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotString")
-      @js.native
-      def isNotString(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotObject(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotObject")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotObject(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotObject")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNotTrue")
-      @js.native
-      def isNotTrue(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNotTrue")
-      @js.native
-      def isNotTrue(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotString(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotString")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotString(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotString")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNull")
-      @js.native
-      def isNull(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNull")
-      @js.native
-      def isNull(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNotTrue(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNotTrue")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNotTrue(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNotTrue")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isNumber")
-      @js.native
-      def isNumber(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isNumber")
-      @js.native
-      def isNumber(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNull(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNull(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNull")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isObject")
-      @js.native
-      def isObject(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isObject")
-      @js.native
-      def isObject(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isNumber(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isNumber(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isNumber")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isString")
-      @js.native
-      def isString(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isString")
-      @js.native
-      def isString(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isObject(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isObject(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isObject")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isTrue")
-      @js.native
-      def isTrue(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isTrue")
-      @js.native
-      def isTrue(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isString(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isString")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isString(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isString")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.isUndefined")
-      @js.native
-      def isUndefined(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.isUndefined")
-      @js.native
-      def isUndefined(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isTrue(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isTrue")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isTrue(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isTrue")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.lessThan")
-      @js.native
-      def lessThan(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.lessThan")
-      @js.native
-      def lessThan(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def isUndefined(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def isUndefined(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isUndefined")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notCloseTo")
-      @js.native
-      def notCloseTo(actual: js.Any, expected: js.Any, delta: js.Any): Unit = js.native
-      @JSGlobal("assert.notCloseTo")
-      @js.native
-      def notCloseTo(actual: js.Any, expected: js.Any, delta: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def lessThan(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def lessThan(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("lessThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(): Unit = js.native
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notDeepEqual")
-      @js.native
-      def notDeepEqual(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notCloseTo(actual: js.Any, expected: js.Any, delta: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notCloseTo")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], delta.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notCloseTo(actual: js.Any, expected: js.Any, delta: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notCloseTo")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], delta.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notDeepProperty")
-      @js.native
-      def notDeepProperty(`object`: js.Any, prop: js.Any): Unit = js.native
-      @JSGlobal("assert.notDeepProperty")
-      @js.native
-      def notDeepProperty(`object`: js.Any, prop: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notDeepEqual(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")().asInstanceOf[Unit]
+      @scala.inline
+      def notDeepEqual(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def notDeepEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notDeepEqual(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notDeepEqual(actual: js.Any, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notDeepEqual(actual: Unit, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notDeepEqual(actual: Unit, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notDeepEqual(actual: Unit, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(): Unit = js.native
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notEqual")
-      @js.native
-      def notEqual(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notDeepProperty(`object`: js.Any, prop: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepProperty")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notDeepProperty(`object`: js.Any, prop: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notDeepProperty")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notExist")
-      @js.native
-      def notExist(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.notExist")
-      @js.native
-      def notExist(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notEqual(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")().asInstanceOf[Unit]
+      @scala.inline
+      def notEqual(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def notEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notEqual(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notEqual(actual: js.Any, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notEqual(actual: Unit, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notEqual(actual: Unit, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notEqual(actual: Unit, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notGreaterThan")
-      @js.native
-      def notGreaterThan(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notGreaterThan")
-      @js.native
-      def notGreaterThan(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notExist(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notExist")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def notExist(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notExist")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notLessThan")
-      @js.native
-      def notLessThan(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notLessThan")
-      @js.native
-      def notLessThan(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notGreaterThan(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notGreaterThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notGreaterThan(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notGreaterThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notOk")
-      @js.native
-      def notOk(): Unit = js.native
-      @JSGlobal("assert.notOk")
-      @js.native
-      def notOk(actual: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.notOk")
-      @js.native
-      def notOk(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.notOk")
-      @js.native
-      def notOk(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notLessThan(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notLessThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notLessThan(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notLessThan")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notProperty")
-      @js.native
-      def notProperty(`object`: js.Any, prop: js.Any): Unit = js.native
-      @JSGlobal("assert.notProperty")
-      @js.native
-      def notProperty(`object`: js.Any, prop: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notOk(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notOk")().asInstanceOf[Unit]
+      @scala.inline
+      def notOk(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notOk")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def notOk(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notOk")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notOk(actual: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notOk")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(): Unit = js.native
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.notStrictEqual")
-      @js.native
-      def notStrictEqual(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notProperty(`object`: js.Any, prop: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notProperty")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notProperty(`object`: js.Any, prop: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notProperty")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.notTypeOf")
-      @js.native
-      def notTypeOf(actual: js.Any, `type`: String): Unit = js.native
-      @JSGlobal("assert.notTypeOf")
-      @js.native
-      def notTypeOf(actual: js.Any, `type`: String, msg: String): Unit = js.native
+      @scala.inline
+      def notStrictEqual(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")().asInstanceOf[Unit]
+      @scala.inline
+      def notStrictEqual(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def notStrictEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notStrictEqual(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notStrictEqual(actual: js.Any, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notStrictEqual(actual: Unit, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notStrictEqual(actual: Unit, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notStrictEqual(actual: Unit, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notStrictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.ok")
-      @js.native
-      def ok(): Unit = js.native
-      @JSGlobal("assert.ok")
-      @js.native
-      def ok(actual: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.ok")
-      @js.native
-      def ok(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.ok")
-      @js.native
-      def ok(actual: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def notTypeOf(actual: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notTypeOf")(actual.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def notTypeOf(actual: js.Any, `type`: String, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("notTypeOf")(actual.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.property")
-      @js.native
-      def property(`object`: js.Any, prop: js.Any): Unit = js.native
-      @JSGlobal("assert.property")
-      @js.native
-      def property(`object`: js.Any, prop: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def ok(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")().asInstanceOf[Unit]
+      @scala.inline
+      def ok(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("ok")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def ok(actual: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ok")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def ok(actual: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("ok")(actual.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.propertyNotVal")
-      @js.native
-      def propertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = js.native
-      @JSGlobal("assert.propertyNotVal")
-      @js.native
-      def propertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def property(`object`: js.Any, prop: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("property")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def property(`object`: js.Any, prop: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("property")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.propertyVal")
-      @js.native
-      def propertyVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = js.native
-      @JSGlobal("assert.propertyVal")
-      @js.native
-      def propertyVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def propertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyNotVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def propertyNotVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyNotVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(): Unit = js.native
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(actual: js.UndefOr[scala.Nothing], expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any): Unit = js.native
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(actual: js.UndefOr[scala.Nothing], expected: js.Any, msg: String): Unit = js.native
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(actual: js.Any): Unit = js.native
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(actual: js.Any, expected: js.UndefOr[scala.Nothing], msg: String): Unit = js.native
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(actual: js.Any, expected: js.Any): Unit = js.native
-      @JSGlobal("assert.strictEqual")
-      @js.native
-      def strictEqual(actual: js.Any, expected: js.Any, msg: String): Unit = js.native
+      @scala.inline
+      def propertyVal(`object`: js.Any, prop: js.Any, value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def propertyVal(`object`: js.Any, prop: js.Any, value: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("propertyVal")(`object`.asInstanceOf[js.Any], prop.asInstanceOf[js.Any], value.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.throws")
-      @js.native
-      def throws(block: js.Function): Unit = js.native
-      @JSGlobal("assert.throws")
-      @js.native
-      def throws(block: js.Function, msg: String): Unit = js.native
+      @scala.inline
+      def strictEqual(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")().asInstanceOf[Unit]
+      @scala.inline
+      def strictEqual(actual: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def strictEqual(actual: js.Any, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def strictEqual(actual: js.Any, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def strictEqual(actual: js.Any, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def strictEqual(actual: Unit, expected: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def strictEqual(actual: Unit, expected: js.Any, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def strictEqual(actual: Unit, expected: Unit, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("strictEqual")(actual.asInstanceOf[js.Any], expected.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
-      @JSGlobal("assert.typeOf")
-      @js.native
-      def typeOf(actual: js.Any, `type`: String): Unit = js.native
-      @JSGlobal("assert.typeOf")
-      @js.native
-      def typeOf(actual: js.Any, `type`: String, msg: String): Unit = js.native
+      @scala.inline
+      def throws(block: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def throws(block: js.Function, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("throws")(block.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      
+      @scala.inline
+      def typeOf(actual: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(actual.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def typeOf(actual: js.Any, `type`: String, msg: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("typeOf")(actual.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
     
     /* was `typeof test.before` */
-    @JSGlobal("before")
-    @js.native
-    def before(func: js.Function): Unit = js.native
+    @scala.inline
+    def before(func: js.Function): Unit = js.Dynamic.global.applyDynamic("before")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* was `typeof test.beforeEach` */
-    @JSGlobal("beforeEach")
-    @js.native
-    def beforeEach(func: js.Function): Unit = js.native
+    @scala.inline
+    def beforeEach(func: js.Function): Unit = js.Dynamic.global.applyDynamic("beforeEach")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /* was `typeof test.describe` */
-    @JSGlobal("describe")
-    @js.native
-    def describe(name: String, block: js.Function): Unit = js.native
+    @scala.inline
+    def describe(name: String, block: js.Function): Unit = (js.Dynamic.global.applyDynamic("describe")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* was `typeof test.it` */
-    @JSGlobal("it")
-    @js.native
-    def it(name: String, block: js.Function): Unit = js.native
+    @scala.inline
+    def it(name: String, block: js.Function): Unit = (js.Dynamic.global.applyDynamic("it")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* was `typeof test.odescribe` */
-    @JSGlobal("odescribe")
-    @js.native
-    def odescribe(name: String, block: js.Function): Unit = js.native
+    @scala.inline
+    def odescribe(name: String, block: js.Function): Unit = (js.Dynamic.global.applyDynamic("odescribe")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* was `typeof test.oit` */
-    @JSGlobal("oit")
-    @js.native
-    def oit(name: String, block: js.Function): Unit = js.native
+    @scala.inline
+    def oit(name: String, block: js.Function): Unit = (js.Dynamic.global.applyDynamic("oit")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* was `typeof test.run` */
-    @JSGlobal("run")
-    @js.native
-    def run(): Double = js.native
-    @JSGlobal("run")
-    @js.native
-    def run(loglevel: Double): Double = js.native
+    @scala.inline
+    def run(): Double = js.Dynamic.global.applyDynamic("run")().asInstanceOf[Double]
+    @scala.inline
+    def run(loglevel: Double): Double = js.Dynamic.global.applyDynamic("run")(loglevel.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /* was `typeof test.setup` */
-    @JSGlobal("setup")
-    @js.native
-    def setup(): Unit = js.native
+    @scala.inline
+    def setup(): Unit = js.Dynamic.global.applyDynamic("setup")().asInstanceOf[Unit]
     
     /* was `typeof test.xdescribe` */
-    @JSGlobal("xdescribe")
-    @js.native
-    def xdescribe(name: String, block: js.Function): Unit = js.native
+    @scala.inline
+    def xdescribe(name: String, block: js.Function): Unit = (js.Dynamic.global.applyDynamic("xdescribe")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /* was `typeof test.xit` */
-    @JSGlobal("xit")
-    @js.native
-    def xit(name: String, block: js.Function): Unit = js.native
+    @scala.inline
+    def xit(name: String, block: js.Function): Unit = (js.Dynamic.global.applyDynamic("xit")(name.asInstanceOf[js.Any], block.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
 }

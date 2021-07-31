@@ -2,21 +2,19 @@ package typings.activexLibreoffice.com_.sun.star.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies a three-dimensional camera. */
-@js.native
 trait CameraGeometry extends StObject {
   
   /** is the camera view direction */
-  var vpn: Direction3D = js.native
+  var vpn: Direction3D
   
   /** is the camera position */
-  var vrp: Position3D = js.native
+  var vrp: Position3D
   
   /** is the camera up direction */
-  var vup: Direction3D = js.native
+  var vup: Direction3D
 }
 object CameraGeometry {
   

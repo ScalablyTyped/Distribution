@@ -4,29 +4,27 @@ import typings.pulumiKubernetes.inputMod.meta.v1.LabelSelector
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * PodDisruptionBudgetSpec is a description of a PodDisruptionBudget.
   */
-@js.native
 trait PodDisruptionBudgetSpec extends StObject {
   
   /**
     * An eviction is allowed if at most "maxUnavailable" pods selected by "selector" are unavailable after the eviction, i.e. even in absence of the evicted pod. For example, one can prevent all voluntary evictions by specifying 0. This is a mutually exclusive setting with "minAvailable".
     */
-  var maxUnavailable: js.UndefOr[Input[Double | String]] = js.native
+  var maxUnavailable: js.UndefOr[Input[Double | String]] = js.undefined
   
   /**
     * An eviction is allowed if at least "minAvailable" pods selected by "selector" will still be available after the eviction, i.e. even in the absence of the evicted pod.  So for example you can prevent all voluntary evictions by specifying "100%".
     */
-  var minAvailable: js.UndefOr[Input[Double | String]] = js.native
+  var minAvailable: js.UndefOr[Input[Double | String]] = js.undefined
   
   /**
     * Label query over pods whose evictions are managed by the disruption budget.
     */
-  var selector: js.UndefOr[Input[LabelSelector]] = js.native
+  var selector: js.UndefOr[Input[LabelSelector]] = js.undefined
 }
 object PodDisruptionBudgetSpec {
   

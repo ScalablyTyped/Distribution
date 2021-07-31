@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,116 +26,192 @@ sealed trait Attribute extends StObject
 object Attribute extends StObject {
   
   @js.native
-  sealed trait BACKGROUND_COLOR extends Attribute
+  sealed trait BACKGROUND_COLOR
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait BOLD extends Attribute
+  sealed trait BOLD
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait BORDER_COLOR extends Attribute
+  sealed trait BORDER_COLOR
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait BORDER_WIDTH extends Attribute
+  sealed trait BORDER_WIDTH
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait CODE extends Attribute
+  sealed trait CODE
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait FONT_FAMILY extends Attribute
+  sealed trait FONT_FAMILY
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait FONT_SIZE extends Attribute
+  sealed trait FONT_SIZE
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait FOREGROUND_COLOR extends Attribute
+  sealed trait FOREGROUND_COLOR
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait GLYPH_TYPE extends Attribute
+  sealed trait GLYPH_TYPE
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait HEADING extends Attribute
+  sealed trait HEADING
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait HEIGHT extends Attribute
+  sealed trait HEIGHT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait HORIZONTAL_ALIGNMENT extends Attribute
+  sealed trait HORIZONTAL_ALIGNMENT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait INDENT_END extends Attribute
+  sealed trait INDENT_END
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait INDENT_FIRST_LINE extends Attribute
+  sealed trait INDENT_FIRST_LINE
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait INDENT_START extends Attribute
+  sealed trait INDENT_START
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait ITALIC extends Attribute
+  sealed trait ITALIC
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait LEFT_TO_RIGHT extends Attribute
+  sealed trait LEFT_TO_RIGHT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait LINE_SPACING extends Attribute
+  sealed trait LINE_SPACING
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait LINK_URL extends Attribute
+  sealed trait LINK_URL
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait LIST_ID extends Attribute
+  sealed trait LIST_ID
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait MARGIN_BOTTOM extends Attribute
+  sealed trait MARGIN_BOTTOM
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait MARGIN_LEFT extends Attribute
+  sealed trait MARGIN_LEFT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait MARGIN_RIGHT extends Attribute
+  sealed trait MARGIN_RIGHT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait MARGIN_TOP extends Attribute
+  sealed trait MARGIN_TOP
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait MINIMUM_HEIGHT extends Attribute
+  sealed trait MINIMUM_HEIGHT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait NESTING_LEVEL extends Attribute
+  sealed trait NESTING_LEVEL
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait PADDING_BOTTOM extends Attribute
+  sealed trait PADDING_BOTTOM
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait PADDING_LEFT extends Attribute
+  sealed trait PADDING_LEFT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait PADDING_RIGHT extends Attribute
+  sealed trait PADDING_RIGHT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait PADDING_TOP extends Attribute
+  sealed trait PADDING_TOP
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait PAGE_HEIGHT extends Attribute
+  sealed trait PAGE_HEIGHT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait PAGE_WIDTH extends Attribute
+  sealed trait PAGE_WIDTH
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait SPACING_AFTER extends Attribute
+  sealed trait SPACING_AFTER
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait SPACING_BEFORE extends Attribute
+  sealed trait SPACING_BEFORE
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait STRIKETHROUGH extends Attribute
+  sealed trait STRIKETHROUGH
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait UNDERLINE extends Attribute
+  sealed trait UNDERLINE
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait VERTICAL_ALIGNMENT extends Attribute
+  sealed trait VERTICAL_ALIGNMENT
+    extends StObject
+       with Attribute
   
   @js.native
-  sealed trait WIDTH extends Attribute
+  sealed trait WIDTH
+    extends StObject
+       with Attribute
 }

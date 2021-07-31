@@ -2,26 +2,24 @@ package typings.awsSdk.cloudwatchlogsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilterLogEventsResponse extends StObject {
   
   /**
     * The matched events.
     */
-  var events: js.UndefOr[FilteredLogEvents] = js.native
+  var events: js.UndefOr[FilteredLogEvents] = js.undefined
   
   /**
     * The token to use when requesting the next set of items. The token expires after 24 hours.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     *  IMPORTANT Starting on May 15, 2020, this parameter will be deprecated. This parameter will be an empty list after the deprecation occurs. Indicates which log streams have been searched and whether each has been searched completely.
     */
-  var searchedLogStreams: js.UndefOr[SearchedLogStreams] = js.native
+  var searchedLogStreams: js.UndefOr[SearchedLogStreams] = js.undefined
 }
 object FilterLogEventsResponse {
   

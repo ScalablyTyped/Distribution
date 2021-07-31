@@ -8,7 +8,6 @@ import typings.bunyan.mod.RotatingFileStreamOptions
 import typings.bunyan.mod.StdSerializers_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,6 +18,9 @@ object mod {
     extends typings.bunyan.mod.^ {
     def this(options: LoggerOptions) = this()
   }
+  @JSImport("hexo-bunyan", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("hexo-bunyan", "DEBUG")
   @js.native
@@ -58,9 +60,8 @@ object mod {
   @js.native
   val WARN: Double = js.native
   
-  @JSImport("hexo-bunyan", "createLogger")
-  @js.native
-  def createLogger(options: LoggerOptions): Logger = js.native
+  @scala.inline
+  def createLogger(options: LoggerOptions): Logger = ^.asInstanceOf[js.Dynamic].applyDynamic("createLogger")(options.asInstanceOf[js.Any]).asInstanceOf[Logger]
   
   /* Inlined {[ name in bunyan.bunyan.LogLevelString ]: number} */
   object levelFromName {
@@ -106,13 +107,11 @@ object mod {
     def warn_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("warn")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("hexo-bunyan", "resolveLevel")
-  @js.native
-  def resolveLevel(value: LogLevel): Double = js.native
+  @scala.inline
+  def resolveLevel(value: LogLevel): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveLevel")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("hexo-bunyan", "safeCycles")
-  @js.native
-  def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, _] = js.native
+  @scala.inline
+  def safeCycles(): js.Function2[/* key */ String, /* value */ js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeCycles")().asInstanceOf[js.Function2[/* key */ String, /* value */ js.Any, js.Any]]
   
   @JSImport("hexo-bunyan", "stdSerializers")
   @js.native

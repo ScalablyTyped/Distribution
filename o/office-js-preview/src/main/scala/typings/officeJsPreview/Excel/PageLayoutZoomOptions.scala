@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
 trait PageLayoutZoomOptions extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait PageLayoutZoomOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var horizontalFitToPages: js.UndefOr[Double] = js.native
+  var horizontalFitToPages: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -28,7 +26,7 @@ trait PageLayoutZoomOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
   /**
     *
@@ -36,7 +34,7 @@ trait PageLayoutZoomOptions extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var verticalFitToPages: js.UndefOr[Double] = js.native
+  var verticalFitToPages: js.UndefOr[Double] = js.undefined
 }
 object PageLayoutZoomOptions {
   

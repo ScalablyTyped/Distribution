@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object favicojs {
@@ -26,28 +25,27 @@ object favicojs {
     def webcam(): Unit = js.native
   }
   
-  @js.native
   trait FavicoJsOptions extends StObject {
     
-    var animation: js.UndefOr[String] = js.native
+    var animation: js.UndefOr[String] = js.undefined
     
-    var bgColor: js.UndefOr[String] = js.native
+    var bgColor: js.UndefOr[String] = js.undefined
     
-    var dataUrl: js.UndefOr[js.Function1[/* url */ String, _]] = js.native
+    var dataUrl: js.UndefOr[js.Function1[/* url */ String, js.Any]] = js.undefined
     
-    var element: js.UndefOr[HTMLElement] = js.native
+    var element: js.UndefOr[HTMLElement] = js.undefined
     
-    var elementId: js.UndefOr[String] = js.native
+    var elementId: js.UndefOr[String] = js.undefined
     
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
-    var fontStyle: js.UndefOr[String] = js.native
+    var fontStyle: js.UndefOr[String] = js.undefined
     
-    var position: js.UndefOr[String] = js.native
+    var position: js.UndefOr[String] = js.undefined
     
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object FavicoJsOptions {
     
@@ -73,7 +71,7 @@ object favicojs {
       def setBgColorUndefined: Self = StObject.set(x, "bgColor", js.undefined)
       
       @scala.inline
-      def setDataUrl(value: /* url */ String => _): Self = StObject.set(x, "dataUrl", js.Any.fromFunction1(value))
+      def setDataUrl(value: /* url */ String => js.Any): Self = StObject.set(x, "dataUrl", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDataUrlUndefined: Self = StObject.set(x, "dataUrl", js.undefined)
@@ -124,6 +122,7 @@ object favicojs {
   
   @js.native
   trait FavicoJsStatic
-    extends Instantiable0[Favico]
+    extends StObject
+       with Instantiable0[Favico]
        with Instantiable1[/* opt */ FavicoJsOptions, Favico]
 }

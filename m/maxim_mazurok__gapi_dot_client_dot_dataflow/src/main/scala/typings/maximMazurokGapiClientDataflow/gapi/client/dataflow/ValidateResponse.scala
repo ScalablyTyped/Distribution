@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateResponse extends StObject {
   
   /** Will be empty if validation succeeds. */
-  var errorMessage: js.UndefOr[String] = js.native
+  var errorMessage: js.UndefOr[String] = js.undefined
   
   /** Information about the validated query. Not defined if validation fails. */
-  var queryInfo: js.UndefOr[QueryInfo] = js.native
+  var queryInfo: js.UndefOr[QueryInfo] = js.undefined
 }
 object ValidateResponse {
   

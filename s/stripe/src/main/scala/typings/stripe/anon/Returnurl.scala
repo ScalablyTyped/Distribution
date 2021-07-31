@@ -2,15 +2,13 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Returnurl extends StObject {
   
-  var return_url: String = js.native
+  var return_url: String
   
-  var url: String = js.native
+  var url: String
 }
 object Returnurl {
   

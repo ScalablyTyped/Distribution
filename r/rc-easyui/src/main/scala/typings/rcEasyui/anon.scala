@@ -2,17 +2,15 @@ package typings.rcEasyui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Align extends StObject {
     
-    var align: String = js.native
+    var align: String
     
-    var frozen: Boolean = js.native
+    var frozen: Boolean
   }
   object Align {
     
@@ -33,10 +31,9 @@ object anon {
     }
   }
   
-  @js.native
   trait AlignString extends StObject {
     
-    var align: String = js.native
+    var align: String
   }
   object AlignString {
     
@@ -54,19 +51,18 @@ object anon {
     }
   }
   
-  @js.native
   trait Buttons extends StObject {
     
-    var buttons: js.Array[_] = js.native
+    var buttons: js.Array[js.Any]
     
-    var defaultCancel: String = js.native
+    var defaultCancel: String
     
-    var defaultOk: String = js.native
+    var defaultOk: String
   }
   object Buttons {
     
     @scala.inline
-    def apply(buttons: js.Array[_], defaultCancel: String, defaultOk: String): Buttons = {
+    def apply(buttons: js.Array[js.Any], defaultCancel: String, defaultOk: String): Buttons = {
       val __obj = js.Dynamic.literal(buttons = buttons.asInstanceOf[js.Any], defaultCancel = defaultCancel.asInstanceOf[js.Any], defaultOk = defaultOk.asInstanceOf[js.Any])
       __obj.asInstanceOf[Buttons]
     }
@@ -75,7 +71,7 @@ object anon {
     implicit class ButtonsMutableBuilder[Self <: Buttons] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setButtons(value: js.Array[_]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
+      def setButtons(value: js.Array[js.Any]): Self = StObject.set(x, "buttons", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setButtonsVarargs(value: js.Any*): Self = StObject.set(x, "buttons", js.Array(value :_*))
@@ -88,28 +84,27 @@ object anon {
     }
   }
   
-  @js.native
   trait Colspan extends StObject {
     
-    var colspan: Double = js.native
+    var colspan: Double
     
-    var defaultFilterOperator: String = js.native
+    var defaultFilterOperator: String
     
-    var editable: Boolean = js.native
+    var editable: Boolean
     
-    var expander: Boolean = js.native
+    var expander: Boolean
     
-    var filterOperators: js.Array[_] = js.native
+    var filterOperators: js.Array[js.Any]
     
-    var filterable: Boolean = js.native
+    var filterable: Boolean
     
-    var frozen: Boolean = js.native
+    var frozen: Boolean
     
-    var order: String = js.native
+    var order: String
     
-    var rowspan: Double = js.native
+    var rowspan: Double
     
-    var sortable: Boolean = js.native
+    var sortable: Boolean
   }
   object Colspan {
     
@@ -119,7 +114,7 @@ object anon {
       defaultFilterOperator: String,
       editable: Boolean,
       expander: Boolean,
-      filterOperators: js.Array[_],
+      filterOperators: js.Array[js.Any],
       filterable: Boolean,
       frozen: Boolean,
       order: String,
@@ -146,7 +141,7 @@ object anon {
       def setExpander(value: Boolean): Self = StObject.set(x, "expander", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFilterOperators(value: js.Array[_]): Self = StObject.set(x, "filterOperators", value.asInstanceOf[js.Any])
+      def setFilterOperators(value: js.Array[js.Any]): Self = StObject.set(x, "filterOperators", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFilterOperatorsVarargs(value: js.Any*): Self = StObject.set(x, "filterOperators", js.Array(value :_*))
@@ -168,10 +163,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Disabled extends StObject {
     
-    var disabled: Boolean = js.native
+    var disabled: Boolean
   }
   object Disabled {
     
@@ -189,16 +183,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Invalid extends StObject {
     
-    var invalid: Boolean = js.native
+    var invalid: Boolean
     
-    var validateOnBlur: Boolean = js.native
+    var validateOnBlur: Boolean
     
-    var validateOnChange: Boolean = js.native
+    var validateOnChange: Boolean
     
-    var validateOnCreate: Boolean = js.native
+    var validateOnCreate: Boolean
   }
   object Invalid {
     
@@ -225,12 +218,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsMatch extends StObject {
     
-    var isMatch: js.Any = js.native
+    var isMatch: js.Any
     
-    var text: String = js.native
+    var text: String
   }
   object IsMatch {
     
@@ -251,10 +243,9 @@ object anon {
     }
   }
   
-  @js.native
   trait SelectionMode extends StObject {
     
-    var selectionMode: String = js.native
+    var selectionMode: String
   }
   object SelectionMode {
     
@@ -272,12 +263,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ShowValue extends StObject {
     
-    var showValue: Boolean = js.native
+    var showValue: Boolean
     
-    var value: Double = js.native
+    var value: Double
   }
   object ShowValue {
     

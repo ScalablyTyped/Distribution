@@ -2,24 +2,22 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Description-tagged IP ranges for the router to advertise.
   */
-@js.native
 trait SchemaRouterAdvertisedIpRange extends StObject {
   
   /**
     * User-specified description for the IP range.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The IP range to advertise. The value must be a CIDR-formatted string.
     */
-  var range: js.UndefOr[String] = js.native
+  var range: js.UndefOr[String] = js.undefined
 }
 object SchemaRouterAdvertisedIpRange {
   

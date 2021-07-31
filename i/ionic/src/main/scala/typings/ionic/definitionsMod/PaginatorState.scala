@@ -2,15 +2,13 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaginatorState extends StObject {
   
-  var done: Boolean = js.native
+  var done: Boolean
   
-  var loaded: Double = js.native
+  var loaded: Double
 }
 object PaginatorState {
   

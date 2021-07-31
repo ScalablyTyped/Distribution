@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WebMapSaveAsOptions extends Object {
+trait WebMapSaveAsOptions
+  extends StObject
+     with Object {
   
   /**
     * The folder in which to save the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs)
     */
-  var folder: js.UndefOr[PortalFolder] = js.native
+  var folder: js.UndefOr[PortalFolder] = js.undefined
   
   /**
     * Allow the webmap to be saved even in the case it contains unsupported content (layers, renderers, symbols).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-WebMap.html#saveAs)
     */
-  var ignoreUnsupported: js.UndefOr[Boolean] = js.native
+  var ignoreUnsupported: js.UndefOr[Boolean] = js.undefined
 }
 object WebMapSaveAsOptions {
   

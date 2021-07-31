@@ -11,38 +11,36 @@ import typings.octokitTypes.octokitTypesStrings.pushed
 import typings.octokitTypes.octokitTypesStrings.updated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposListForUserEndpoint extends StObject {
   
   /**
     * Can be one of `asc` or `desc`. Default: `asc` when using `full_name`, otherwise `desc`
     */
-  var direction: js.UndefOr[asc | desc] = js.native
+  var direction: js.UndefOr[asc | desc] = js.undefined
   
   /**
     * Page number of the results to fetch.
     */
-  var page: js.UndefOr[Double] = js.native
+  var page: js.UndefOr[Double] = js.undefined
   
   /**
     * Results per page (max 100)
     */
-  var per_page: js.UndefOr[Double] = js.native
+  var per_page: js.UndefOr[Double] = js.undefined
   
   /**
     * Can be one of `created`, `updated`, `pushed`, `full_name`.
     */
-  var sort: js.UndefOr[created | updated | pushed | full_name] = js.native
+  var sort: js.UndefOr[created | updated | pushed | full_name] = js.undefined
   
   /**
     * Can be one of `all`, `owner`, `member`.
     */
-  var `type`: js.UndefOr[all | owner | member] = js.native
+  var `type`: js.UndefOr[all | owner | member] = js.undefined
   
-  var username: String = js.native
+  var username: String
 }
 object ReposListForUserEndpoint {
   

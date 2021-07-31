@@ -4,28 +4,28 @@ import typings.node.Buffer
 import typings.nodeRsa.nodeRsaStrings.pkcs1_oaep
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AdvancedEncryptionSchemePKCS1OAEP extends AdvancedEncryptionScheme {
+trait AdvancedEncryptionSchemePKCS1OAEP
+  extends StObject
+     with AdvancedEncryptionScheme {
   
-  var hash: HashingAlgorithm = js.native
+  var hash: HashingAlgorithm
   
   /**
     * Mask generation function.
     */
   var mgf: js.UndefOr[
     js.Function3[/* data */ Buffer, /* length */ Double, /* hash */ HashingAlgorithm, Buffer]
-  ] = js.native
+  ] = js.undefined
   
-  var scheme: pkcs1_oaep = js.native
+  var scheme: pkcs1_oaep
 }
 object AdvancedEncryptionSchemePKCS1OAEP {
   
   @scala.inline
-  def apply(hash: HashingAlgorithm, scheme: pkcs1_oaep): AdvancedEncryptionSchemePKCS1OAEP = {
-    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = scheme.asInstanceOf[js.Any])
+  def apply(hash: HashingAlgorithm): AdvancedEncryptionSchemePKCS1OAEP = {
+    val __obj = js.Dynamic.literal(hash = hash.asInstanceOf[js.Any], scheme = "pkcs1_oaep")
     __obj.asInstanceOf[AdvancedEncryptionSchemePKCS1OAEP]
   }
   

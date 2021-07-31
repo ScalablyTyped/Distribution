@@ -2,23 +2,21 @@ package typings.googleVisualization.google.visualization
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryResponse extends StObject {
   
-  def getDataTable(): DataTable = js.native
+  def getDataTable(): DataTable
   
-  def getDetailedMessage(): String = js.native
+  def getDetailedMessage(): String
   
-  def getMessage(): String = js.native
+  def getMessage(): String
   
-  def getReasons(): js.Array[String] = js.native
+  def getReasons(): js.Array[String]
   
-  def hasWarning(): Boolean = js.native
+  def hasWarning(): Boolean
   
-  def isError(): Boolean = js.native
+  def isError(): Boolean
 }
 object QueryResponse {
   

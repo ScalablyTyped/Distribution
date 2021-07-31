@@ -3,26 +3,25 @@ package typings.mapboxGl.mod
 import typings.mapboxGl.mapboxGlStrings.hillshade
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HillshadeLayer
-  extends LayerBase
+  extends StObject
+     with LayerBase
      with Layer {
   
-  var layout: js.UndefOr[HillshadeLayout] = js.native
+  var layout: js.UndefOr[HillshadeLayout] = js.undefined
   
-  var paint: js.UndefOr[HillshadePaint] = js.native
+  var paint: js.UndefOr[HillshadePaint] = js.undefined
   
-  var `type`: hillshade = js.native
+  var `type`: hillshade
 }
 object HillshadeLayer {
   
   @scala.inline
-  def apply(id: String, `type`: hillshade): HillshadeLayer = {
+  def apply(id: String): HillshadeLayer = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("hillshade")
     __obj.asInstanceOf[HillshadeLayer]
   }
   

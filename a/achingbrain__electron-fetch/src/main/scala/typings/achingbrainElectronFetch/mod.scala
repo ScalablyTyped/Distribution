@@ -16,21 +16,31 @@ import typings.std.RequestRedirect
 import typings.std.ResponseInit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@achingbrain/electron-fetch", JSImport.Default)
+  @JSImport("@achingbrain/electron-fetch", JSImport.Namespace)
   @js.native
-  def default(url: String): js.Promise[Response] = js.native
-  @JSImport("@achingbrain/electron-fetch", JSImport.Default)
-  @js.native
-  def default(url: String, options: RequestInit): js.Promise[Response] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(url: String): js.Promise[Response] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Response]]
+  @scala.inline
+  def default(url: String, options: RequestInit): js.Promise[Response] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Response]]
   
   @JSImport("@achingbrain/electron-fetch", "FetchError")
   @js.native
-  class FetchError () extends Error
+  class FetchError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("@achingbrain/electron-fetch", "Headers")
   @js.native
@@ -65,11 +75,25 @@ object mod {
   
   @JSImport("@achingbrain/electron-fetch", "Request")
   @js.native
-  class Request protected () extends Body {
+  class Request protected ()
+    extends StObject
+       with Body {
     def this(input: RequestInfo) = this()
     def this(input: RequestInfo, init: RequestInit) = this()
     
+    /* CompleteClass */
+    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    
+    /* CompleteClass */
+    override def blob(): js.Promise[Blob] = js.native
+    
     val body: Readable = js.native
+    
+    /* CompleteClass */
+    override val bodyUsed: Boolean = js.native
+    
+    /* CompleteClass */
+    override def buffer(): js.Promise[Buffer] = js.native
     
     // (/!\ only works when running on Node.js)
     var counter: Double = js.native
@@ -79,7 +103,13 @@ object mod {
     // (/!\ only works when running on Node.js) maximum redirect count. 0 to not follow redirect
     var follow: Double = js.native
     
+    /* CompleteClass */
+    override def formData(): js.Promise[FormData] = js.native
+    
     val headers: Headers = js.native
+    
+    /* CompleteClass */
+    override def json[T](): js.Promise[T] = js.native
     
     val method: String = js.native
     
@@ -89,6 +119,9 @@ object mod {
     var session: js.UndefOr[Session_] = js.native
     
     val signal: AbortSignal = js.native
+    
+    /* CompleteClass */
+    override def text(): js.Promise[String] = js.native
     
     val url: String = js.native
     
@@ -101,13 +134,33 @@ object mod {
   
   @JSImport("@achingbrain/electron-fetch", "Response")
   @js.native
-  class Response protected () extends Body {
+  class Response protected ()
+    extends StObject
+       with Body {
     def this(body: BodyInit) = this()
     def this(body: BodyInit, init: ResponseInit) = this()
     
+    /* CompleteClass */
+    override def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    
+    /* CompleteClass */
+    override def blob(): js.Promise[Blob] = js.native
+    
     val body: Readable | String = js.native
     
+    /* CompleteClass */
+    override val bodyUsed: Boolean = js.native
+    
+    /* CompleteClass */
+    override def buffer(): js.Promise[Buffer] = js.native
+    
+    /* CompleteClass */
+    override def formData(): js.Promise[FormData] = js.native
+    
     val headers: Headers = js.native
+    
+    /* CompleteClass */
+    override def json[T](): js.Promise[T] = js.native
     
     val ok: Boolean = js.native
     
@@ -115,25 +168,27 @@ object mod {
     
     val statusText: String = js.native
     
+    /* CompleteClass */
+    override def text(): js.Promise[String] = js.native
+    
     val url: String = js.native
   }
   
-  @js.native
   trait Body extends StObject {
     
-    def arrayBuffer(): js.Promise[ArrayBuffer] = js.native
+    def arrayBuffer(): js.Promise[ArrayBuffer]
     
-    def blob(): js.Promise[Blob] = js.native
+    def blob(): js.Promise[Blob]
     
-    val bodyUsed: Boolean = js.native
+    val bodyUsed: Boolean
     
-    def buffer(): js.Promise[Buffer] = js.native
+    def buffer(): js.Promise[Buffer]
     
-    def formData(): js.Promise[FormData] = js.native
+    def formData(): js.Promise[FormData]
     
-    def json[T](): js.Promise[T] = js.native
+    def json[T](): js.Promise[T]
     
-    def text(): js.Promise[String] = js.native
+    def text(): js.Promise[String]
   }
   object Body {
     
@@ -183,45 +238,44 @@ object mod {
   
   type RequestInfo = Request | String
   
-  @js.native
   trait RequestInit extends StObject {
     
-    var agent: js.UndefOr[Agent] = js.native
+    var agent: js.UndefOr[Agent] = js.undefined
     
-    var body: js.UndefOr[BodyInit] = js.native
+    var body: js.UndefOr[BodyInit] = js.undefined
     
     ////////////////////////////////////////////////////////////////////////////
     // The following properties are electron-fetch extensions
     // (/!\ only works when running on Node.js) maximum redirect count. 0 to not follow redirect
-    var follow: js.UndefOr[Double] = js.native
+    var follow: js.UndefOr[Double] = js.undefined
     
-    var headers: js.UndefOr[HeadersInit] = js.native
+    var headers: js.UndefOr[HeadersInit] = js.undefined
     
     // These properties are part of the Fetch Standard
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
     // When running on Electron behind an authenticated HTTP proxy, password to use to authenticate
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     // (/!\ only works when running on Node.js) set to `manual` to extract redirect headers, `error` to reject redirect
-    var redirect: js.UndefOr[RequestRedirect] = js.native
+    var redirect: js.UndefOr[RequestRedirect] = js.undefined
     
-    var session: js.UndefOr[Session_] = js.native
+    var session: js.UndefOr[Session_] = js.undefined
     
-    var signal: js.UndefOr[AbortSignal] = js.native
+    var signal: js.UndefOr[AbortSignal] = js.undefined
     
     // maximum response body size in bytes. 0 to disable
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     // req/res timeout in ms, it resets on redirect. 0 to disable (OS limit applies)
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var useElectronNet: js.UndefOr[Boolean] = js.native
+    var useElectronNet: js.UndefOr[Boolean] = js.undefined
     
-    var useSessionCookies: js.UndefOr[Boolean] = js.native
+    var useSessionCookies: js.UndefOr[Boolean] = js.undefined
     
     // When running on Electron behind an authenticated HTTP proxy, username to use to authenticate
-    var user: js.UndefOr[String] = js.native
+    var user: js.UndefOr[String] = js.undefined
   }
   object RequestInit {
     

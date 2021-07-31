@@ -3,38 +3,30 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.WhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WhileStatement_
-  extends Node
+  extends StObject
+     with Node
      with BlockParent
      with Loop
      with Scopable
      with Statement
      with While {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_WhileStatement_ : WhileStatement = js.native
+  var type_WhileStatement_ : WhileStatement
 }
 object WhileStatement_ {
   
   @scala.inline
-  def apply(
-    body: Statement,
-    end: Double,
-    loc: SourceLocation,
-    start: Double,
-    test: Expression,
-    `type`: WhileStatement
-  ): WhileStatement_ = {
+  def apply(body: Statement, end: Double, loc: SourceLocation, start: Double, test: Expression): WhileStatement_ = {
     val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[WhileStatement_]
   }
   

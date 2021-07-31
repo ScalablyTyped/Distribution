@@ -2,27 +2,25 @@ package typings.facebookJsSdk.facebook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitParams extends StObject {
   
-  var appId: js.UndefOr[String] = js.native
+  var appId: js.UndefOr[String] = js.undefined
   
-  var autoLogAppEvents: js.UndefOr[Boolean] = js.native
+  var autoLogAppEvents: js.UndefOr[Boolean] = js.undefined
   
-  var cookie: js.UndefOr[Boolean] = js.native
+  var cookie: js.UndefOr[Boolean] = js.undefined
   
-  var frictionlessRequests: js.UndefOr[Boolean] = js.native
+  var frictionlessRequests: js.UndefOr[Boolean] = js.undefined
   
-  var hideFlashCallback: js.UndefOr[Boolean] = js.native
+  var hideFlashCallback: js.UndefOr[Boolean] = js.undefined
   
-  var status: js.UndefOr[Boolean] = js.native
+  var status: js.UndefOr[Boolean] = js.undefined
   
-  var version: String = js.native
+  var version: String
   
-  var xfbml: js.UndefOr[Boolean] = js.native
+  var xfbml: js.UndefOr[Boolean] = js.undefined
 }
 object InitParams {
   

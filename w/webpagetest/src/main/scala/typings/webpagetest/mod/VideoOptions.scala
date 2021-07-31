@@ -2,14 +2,12 @@ package typings.webpagetest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoOptions extends StObject {
   
   /** frame comparison end point: [visual]=visually complete | all=last change | doc=document complete | full=fully loaded */
-  var comparisonEndPoint: js.UndefOr[String] = js.native
+  var comparisonEndPoint: js.UndefOr[String] = js.undefined
 }
 object VideoOptions {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.resourcegroupsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTagsOutput extends StObject {
   
   /**
     * The ARN of the tagged resource group.
     */
-  var Arn: js.UndefOr[GroupArn] = js.native
+  var Arn: js.UndefOr[GroupArn] = js.undefined
   
   /**
     * The tags associated with the specified resource group.
     */
-  var Tags: js.UndefOr[typings.awsSdk.resourcegroupsMod.Tags] = js.native
+  var Tags: js.UndefOr[typings.awsSdk.resourcegroupsMod.Tags] = js.undefined
 }
 object GetTagsOutput {
   

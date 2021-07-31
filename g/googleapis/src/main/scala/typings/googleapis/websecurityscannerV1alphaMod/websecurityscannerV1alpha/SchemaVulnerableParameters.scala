@@ -2,19 +2,17 @@ package typings.googleapis.websecurityscannerV1alphaMod.websecurityscannerV1alph
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Information about vulnerable request parameters.
   */
-@js.native
 trait SchemaVulnerableParameters extends StObject {
   
   /**
     * The vulnerable parameter names.
     */
-  var parameterNames: js.UndefOr[js.Array[String]] = js.native
+  var parameterNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaVulnerableParameters {
   

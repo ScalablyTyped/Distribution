@@ -2,56 +2,47 @@ package typings.waitPromise
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("wait-promise", "after")
+  @JSImport("wait-promise", JSImport.Namespace)
   @js.native
-  def after(time: Double): Wait = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("wait-promise", "and")
-  @js.native
-  def and(func: js.Function0[Unit]): Wait = js.native
+  @scala.inline
+  def after(time: Double): Wait = ^.asInstanceOf[js.Dynamic].applyDynamic("after")(time.asInstanceOf[js.Any]).asInstanceOf[Wait]
   
-  @JSImport("wait-promise", "before")
-  @js.native
-  def before(time: Double): Wait = js.native
+  @scala.inline
+  def and(func: js.Function0[Unit]): Wait = ^.asInstanceOf[js.Dynamic].applyDynamic("and")(func.asInstanceOf[js.Any]).asInstanceOf[Wait]
   
-  @JSImport("wait-promise", "check")
-  @js.native
-  def check(): js.Promise[Unit] = js.native
-  @JSImport("wait-promise", "check")
-  @js.native
-  def check[T](cond: js.Function0[T]): js.Promise[T] = js.native
+  @scala.inline
+  def before(time: Double): Wait = ^.asInstanceOf[js.Dynamic].applyDynamic("before")(time.asInstanceOf[js.Any]).asInstanceOf[Wait]
   
-  @JSImport("wait-promise", "every")
-  @js.native
-  def every(interval: Double): Wait = js.native
-  @JSImport("wait-promise", "every")
-  @js.native
-  def every(interval: Double, limit: Double): Wait = js.native
+  @scala.inline
+  def check(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("check")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def check[T](cond: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("check")(cond.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
-  @JSImport("wait-promise", "forward")
-  @js.native
-  def forward(): js.Promise[Unit] = js.native
+  @scala.inline
+  def every(interval: Double): Wait = ^.asInstanceOf[js.Dynamic].applyDynamic("every")(interval.asInstanceOf[js.Any]).asInstanceOf[Wait]
+  @scala.inline
+  def every(interval: Double, limit: Double): Wait = (^.asInstanceOf[js.Dynamic].applyDynamic("every")(interval.asInstanceOf[js.Any], limit.asInstanceOf[js.Any])).asInstanceOf[Wait]
   
-  @JSImport("wait-promise", "limit")
-  @js.native
-  def limit(limit: Double): Wait = js.native
+  @scala.inline
+  def forward(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("forward")().asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("wait-promise", "sleep")
-  @js.native
-  def sleep(time: Double): js.Promise[Unit] = js.native
+  @scala.inline
+  def limit(limit: Double): Wait = ^.asInstanceOf[js.Dynamic].applyDynamic("limit")(limit.asInstanceOf[js.Any]).asInstanceOf[Wait]
   
-  @JSImport("wait-promise", "till")
-  @js.native
-  def till[T](cond: js.Function0[T]): js.Promise[T] = js.native
+  @scala.inline
+  def sleep(time: Double): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("sleep")(time.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("wait-promise", "until")
-  @js.native
-  def until[T](cond: js.Function0[T]): js.Promise[T] = js.native
+  @scala.inline
+  def till[T](cond: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("till")(cond.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  
+  @scala.inline
+  def until[T](cond: js.Function0[T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("until")(cond.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
   
   @js.native
   trait Wait extends StObject {

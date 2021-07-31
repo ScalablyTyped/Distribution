@@ -2,7 +2,6 @@ package typings.angularCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -17,7 +16,7 @@ trait InjectableProvider extends StObject
 object InjectableProvider {
   
   @scala.inline
-  def ClassSansProvider(useClass: typings.angularCore.mod.Type[_]): typings.angularCore.mod.ClassSansProvider = {
+  def ClassSansProvider(useClass: Type[js.Any]): typings.angularCore.mod.ClassSansProvider = {
     val __obj = js.Dynamic.literal(useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.ClassSansProvider]
   }
@@ -41,7 +40,7 @@ object InjectableProvider {
   }
   
   @scala.inline
-  def StaticClassSansProvider(deps: js.Array[_], useClass: typings.angularCore.mod.Type[_]): typings.angularCore.mod.StaticClassSansProvider = {
+  def StaticClassSansProvider(deps: js.Array[js.Any], useClass: Type[js.Any]): typings.angularCore.mod.StaticClassSansProvider = {
     val __obj = js.Dynamic.literal(deps = deps.asInstanceOf[js.Any], useClass = useClass.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCore.mod.StaticClassSansProvider]
   }

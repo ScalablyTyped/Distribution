@@ -3,39 +3,37 @@ package typings.actionsOnGoogle.apiV2Mod
 import typings.actionsOnGoogle.commonMod.ApiClientObjectMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2QueryResult extends StObject {
   
-  var action: js.UndefOr[String] = js.native
+  var action: js.UndefOr[String] = js.undefined
   
-  var allRequiredParamsPresent: js.UndefOr[Boolean] = js.native
+  var allRequiredParamsPresent: js.UndefOr[Boolean] = js.undefined
   
-  var diagnosticInfo: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var diagnosticInfo: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var fulfillmentMessages: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessage]] = js.native
+  var fulfillmentMessages: js.UndefOr[js.Array[GoogleCloudDialogflowV2IntentMessage]] = js.undefined
   
-  var fulfillmentText: js.UndefOr[String] = js.native
+  var fulfillmentText: js.UndefOr[String] = js.undefined
   
-  var intent: js.UndefOr[GoogleCloudDialogflowV2Intent] = js.native
+  var intent: js.UndefOr[GoogleCloudDialogflowV2Intent] = js.undefined
   
-  var intentDetectionConfidence: js.UndefOr[Double] = js.native
+  var intentDetectionConfidence: js.UndefOr[Double] = js.undefined
   
-  var languageCode: js.UndefOr[String] = js.native
+  var languageCode: js.UndefOr[String] = js.undefined
   
-  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.native
+  var outputContexts: js.UndefOr[js.Array[GoogleCloudDialogflowV2Context]] = js.undefined
   
-  var parameters: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var parameters: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var queryText: js.UndefOr[String] = js.native
+  var queryText: js.UndefOr[String] = js.undefined
   
-  var speechRecognitionConfidence: js.UndefOr[Double] = js.native
+  var speechRecognitionConfidence: js.UndefOr[Double] = js.undefined
   
-  var webhookPayload: js.UndefOr[ApiClientObjectMap[_]] = js.native
+  var webhookPayload: js.UndefOr[ApiClientObjectMap[js.Any]] = js.undefined
   
-  var webhookSource: js.UndefOr[String] = js.native
+  var webhookSource: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2QueryResult {
   
@@ -61,7 +59,7 @@ object GoogleCloudDialogflowV2QueryResult {
     def setAllRequiredParamsPresentUndefined: Self = StObject.set(x, "allRequiredParamsPresent", js.undefined)
     
     @scala.inline
-    def setDiagnosticInfo(value: ApiClientObjectMap[_]): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
+    def setDiagnosticInfo(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "diagnosticInfo", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDiagnosticInfoUndefined: Self = StObject.set(x, "diagnosticInfo", js.undefined)
@@ -109,7 +107,7 @@ object GoogleCloudDialogflowV2QueryResult {
     def setOutputContextsVarargs(value: GoogleCloudDialogflowV2Context*): Self = StObject.set(x, "outputContexts", js.Array(value :_*))
     
     @scala.inline
-    def setParameters(value: ApiClientObjectMap[_]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
+    def setParameters(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "parameters", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParametersUndefined: Self = StObject.set(x, "parameters", js.undefined)
@@ -127,7 +125,7 @@ object GoogleCloudDialogflowV2QueryResult {
     def setSpeechRecognitionConfidenceUndefined: Self = StObject.set(x, "speechRecognitionConfidence", js.undefined)
     
     @scala.inline
-    def setWebhookPayload(value: ApiClientObjectMap[_]): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
+    def setWebhookPayload(value: ApiClientObjectMap[js.Any]): Self = StObject.set(x, "webhookPayload", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWebhookPayloadUndefined: Self = StObject.set(x, "webhookPayload", js.undefined)

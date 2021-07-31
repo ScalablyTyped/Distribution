@@ -2,15 +2,13 @@ package typings.pgPromise.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Custom-Type Formatting object
 // API: https://github.com/vitaly-t/pg-promise#custom-type-formatting
-@js.native
 trait ICTFObject extends StObject {
   
-  def toPostgres(a: js.Any): js.Any = js.native
+  def toPostgres(a: js.Any): js.Any
 }
 object ICTFObject {
   

@@ -2,18 +2,16 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserObject extends StObject {
   
   @JSName("InfoPath.UserObject_typekey")
-  var InfoPathDotUserObject_typekey: UserObject = js.native
+  var InfoPathDotUserObject_typekey: UserObject
   
-  def IsCurrentUser(bstrUsername: String): Boolean = js.native
+  def IsCurrentUser(bstrUsername: String): Boolean
   
-  def IsUserMemberOf(bstrGroupname: String): Boolean = js.native
+  def IsUserMemberOf(bstrGroupname: String): Boolean
 }
 object UserObject {
   

@@ -3,14 +3,12 @@ package typings.activexLibreoffice.com_.sun.star.ucb
 import typings.activexLibreoffice.com_.sun.star.io.XInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The argument for the command "insert".
   * @see XCommandProcessor
   */
-@js.native
 trait InsertCommandArgument extends StObject {
   
   /**
@@ -18,14 +16,14 @@ trait InsertCommandArgument extends StObject {
     *
     * This member can be left blank, if no (new) document data shall be written by the implementation of the "insert" command.
     */
-  var Data: XInputStream = js.native
+  var Data: XInputStream
   
   /**
     * A flag indicating whether a possibly existing content (and its data) shall be overwritten.
     *
     * Implementations that are not able to detect whether there are previous data may ignore this parameter and will always write the new data.
     */
-  var ReplaceExisting: Boolean = js.native
+  var ReplaceExisting: Boolean
 }
 object InsertCommandArgument {
   

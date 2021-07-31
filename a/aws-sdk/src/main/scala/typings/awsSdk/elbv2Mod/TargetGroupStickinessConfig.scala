@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetGroupStickinessConfig extends StObject {
   
   /**
     * The time period, in seconds, during which requests from a client should be routed to the same target group. The range is 1-604800 seconds (7 days).
     */
-  var DurationSeconds: js.UndefOr[TargetGroupStickinessDurationSeconds] = js.native
+  var DurationSeconds: js.UndefOr[TargetGroupStickinessDurationSeconds] = js.undefined
   
   /**
     * Indicates whether target group stickiness is enabled.
     */
-  var Enabled: js.UndefOr[TargetGroupStickinessEnabled] = js.native
+  var Enabled: js.UndefOr[TargetGroupStickinessEnabled] = js.undefined
 }
 object TargetGroupStickinessConfig {
   

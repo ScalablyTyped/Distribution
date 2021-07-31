@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -27,7 +26,7 @@ trait GroundStation extends Service {
   ): Request[ContactIdResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_GroundStation: ConfigBase with ClientConfiguration = js.native
+  var config_GroundStation: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Creates a Config with the specified configData parameters. Only one type of configData can be specified.

@@ -4,11 +4,11 @@ import typings.winrt.Windows.Devices.Sms.CellularClass
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileBroadbandDeviceInformation extends IMobileBroadbandDeviceInformation
+trait MobileBroadbandDeviceInformation
+  extends StObject
+     with IMobileBroadbandDeviceInformation
 object MobileBroadbandDeviceInformation {
   
   @scala.inline

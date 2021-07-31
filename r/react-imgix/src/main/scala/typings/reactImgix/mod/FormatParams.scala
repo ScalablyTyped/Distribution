@@ -2,29 +2,27 @@ package typings.reactImgix.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormatParams extends StObject {
   
-  var ch: js.UndefOr[ImgixParamType] = js.native
+  var ch: js.UndefOr[ImgixParamType] = js.undefined
   
-  var chromasub: js.UndefOr[ImgixParamType] = js.native
+  var chromasub: js.UndefOr[ImgixParamType] = js.undefined
   
-  var colorquant: js.UndefOr[ImgixParamType] = js.native
+  var colorquant: js.UndefOr[ImgixParamType] = js.undefined
   
-  var cs: js.UndefOr[ImgixParamType] = js.native
+  var cs: js.UndefOr[ImgixParamType] = js.undefined
   
-  var dl: js.UndefOr[ImgixParamType] = js.native
+  var dl: js.UndefOr[ImgixParamType] = js.undefined
   
-  var dpi: js.UndefOr[ImgixParamType] = js.native
+  var dpi: js.UndefOr[ImgixParamType] = js.undefined
   
-  var fm: js.UndefOr[ImgixParamType] = js.native
+  var fm: js.UndefOr[ImgixParamType] = js.undefined
   
-  var lossless: js.UndefOr[ImgixParamType] = js.native
+  var lossless: js.UndefOr[ImgixParamType] = js.undefined
   
-  var q: js.UndefOr[ImgixParamType] = js.native
+  var q: js.UndefOr[ImgixParamType] = js.undefined
 }
 object FormatParams {
   

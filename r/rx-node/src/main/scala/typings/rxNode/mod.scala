@@ -8,19 +8,21 @@ import typings.rx.Rx.Observable
 import typings.rxNode.RxNode.PublishableEventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("rx-node", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Converts a flowing readline stream to an Observable sequence.
     * @param {Stream} stream A stream to convert to a observable sequence.
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
     */
-  @JSImport("rx-node", "fromReadLineStream")
-  @js.native
-  def fromReadLineStream[T](stream: ReadableStream): Observable[T] = js.native
+  @scala.inline
+  def fromReadLineStream[T](stream: ReadableStream): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReadLineStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   
   /**
     * Converts a flowing readable stream to an Observable sequence.
@@ -28,12 +30,10 @@ object mod {
     * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'end' events.
     */
-  @JSImport("rx-node", "fromReadableStream")
-  @js.native
-  def fromReadableStream[T](stream: ReadableStream): Observable[T] = js.native
-  @JSImport("rx-node", "fromReadableStream")
-  @js.native
-  def fromReadableStream[T](stream: ReadableStream, dataEventName: String): Observable[T] = js.native
+  @scala.inline
+  def fromReadableStream[T](stream: ReadableStream): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromReadableStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromReadableStream[T](stream: ReadableStream, dataEventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromReadableStream")(stream.asInstanceOf[js.Any], dataEventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
   /**
     * Converts a flowing stream to an Observable sequence.
@@ -42,18 +42,14 @@ object mod {
     * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and finish events like `end` or `finish`.
     */
-  @JSImport("rx-node", "fromStream")
-  @js.native
-  def fromStream[T](stream: ReadableStream): Observable[T] = js.native
-  @JSImport("rx-node", "fromStream")
-  @js.native
-  def fromStream[T](stream: ReadableStream, finishEventName: js.UndefOr[scala.Nothing], dataEventName: String): Observable[T] = js.native
-  @JSImport("rx-node", "fromStream")
-  @js.native
-  def fromStream[T](stream: ReadableStream, finishEventName: String): Observable[T] = js.native
-  @JSImport("rx-node", "fromStream")
-  @js.native
-  def fromStream[T](stream: ReadableStream, finishEventName: String, dataEventName: String): Observable[T] = js.native
+  @scala.inline
+  def fromStream[T](stream: ReadableStream): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromStream[T](stream: ReadableStream, finishEventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], finishEventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromStream[T](stream: ReadableStream, finishEventName: String, dataEventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], finishEventName.asInstanceOf[js.Any], dataEventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromStream[T](stream: ReadableStream, finishEventName: Unit, dataEventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(stream.asInstanceOf[js.Any], finishEventName.asInstanceOf[js.Any], dataEventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
   /**
     * Converts a flowing transform stream to an Observable sequence.
@@ -61,21 +57,18 @@ object mod {
     * @param {String} [dataEventName] Event that notifies about incoming data. ("data" by default)
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
     */
-  @JSImport("rx-node", "fromTransformStream")
-  @js.native
-  def fromTransformStream[T](stream: ReadWriteStream): Observable[T] = js.native
-  @JSImport("rx-node", "fromTransformStream")
-  @js.native
-  def fromTransformStream[T](stream: ReadWriteStream, dataEventName: String): Observable[T] = js.native
+  @scala.inline
+  def fromTransformStream[T](stream: ReadWriteStream): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromTransformStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
+  @scala.inline
+  def fromTransformStream[T](stream: ReadWriteStream, dataEventName: String): Observable[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromTransformStream")(stream.asInstanceOf[js.Any], dataEventName.asInstanceOf[js.Any])).asInstanceOf[Observable[T]]
   
   /**
     * Converts a flowing writeable stream to an Observable sequence.
     * @param {Stream} stream A stream to convert to a observable sequence.
     * @returns {Observable} An observable sequence which fires on each 'data' event as well as handling 'error' and 'finish' events.
     */
-  @JSImport("rx-node", "fromWritableStream")
-  @js.native
-  def fromWritableStream[T](stream: WritableStream): Observable[T] = js.native
+  @scala.inline
+  def fromWritableStream[T](stream: WritableStream): Observable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("fromWritableStream")(stream.asInstanceOf[js.Any]).asInstanceOf[Observable[T]]
   
   /**
     * Converts the given observable sequence to an event emitter with the given event name.
@@ -85,9 +78,8 @@ object mod {
     * @param {String} eventName The event name to emit onNext calls.
     * @returns {EventEmitter} An EventEmitter which emits the given eventName for each onNext call in addition to 'error' and 'end' events.
     */
-  @JSImport("rx-node", "toEventEmitter")
-  @js.native
-  def toEventEmitter[T](observable: Observable[T], eventName: String): PublishableEventEmitter = js.native
+  @scala.inline
+  def toEventEmitter[T](observable: Observable[T], eventName: String): PublishableEventEmitter = (^.asInstanceOf[js.Dynamic].applyDynamic("toEventEmitter")(observable.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[PublishableEventEmitter]
   
   /**
     * Writes an observable sequence to a stream
@@ -96,7 +88,6 @@ object mod {
     * @param {String} [encoding] The encoding of the item to write.
     * @returns {Disposable} The subscription handle.
     */
-  @JSImport("rx-node", "writeToStream")
-  @js.native
-  def writeToStream[T](observable: Observable[T], stream: WritableStream, encoding: String): Disposable = js.native
+  @scala.inline
+  def writeToStream[T](observable: Observable[T], stream: WritableStream, encoding: String): Disposable = (^.asInstanceOf[js.Dynamic].applyDynamic("writeToStream")(observable.asInstanceOf[js.Any], stream.asInstanceOf[js.Any], encoding.asInstanceOf[js.Any])).asInstanceOf[Disposable]
 }

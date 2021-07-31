@@ -5,7 +5,6 @@ import typings.angularCompiler.staticSymbolMod.StaticSymbol
 import typings.angularCompiler.staticSymbolMod.StaticSymbolCache
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object summaryResolverMod {
@@ -30,24 +29,23 @@ object summaryResolverMod {
     var summaryCache: js.Any = js.native
   }
   
-  @js.native
   trait AotSummaryResolverHost extends StObject {
     
     /**
       * Converts a fileName that was processed by `toSummaryFileName` back into a real fileName
       * given the fileName of the library that is referrig to it.
       */
-    def fromSummaryFileName(fileName: String, referringLibFileName: String): String = js.native
+    def fromSummaryFileName(fileName: String, referringLibFileName: String): String
     
     /**
       * Returns whether a file is a source file or not.
       */
-    def isSourceFile(sourceFilePath: String): Boolean = js.native
+    def isSourceFile(sourceFilePath: String): Boolean
     
     /**
       * Loads an NgModule/Directive/Pipe summary file
       */
-    def loadSummary(filePath: String): String | Null = js.native
+    def loadSummary(filePath: String): String | Null
     
     /**
       * Converts a file name into a representation that should be stored in a summary file.
@@ -57,7 +55,7 @@ object summaryResolverMod {
       *
       * @param referringSrcFileName the soure file that refers to fileName
       */
-    def toSummaryFileName(fileName: String, referringSrcFileName: String): String = js.native
+    def toSummaryFileName(fileName: String, referringSrcFileName: String): String
   }
   object AotSummaryResolverHost {
     

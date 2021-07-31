@@ -2,21 +2,19 @@ package typings.awsSdk.mqMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionOptions extends StObject {
   
   /**
     * The symmetric customer master key (CMK) to use for the AWS Key Management Service (KMS). This key is used to encrypt your data at rest. If not provided, Amazon MQ will use a default CMK to encrypt your data.
     */
-  var KmsKeyId: js.UndefOr[string] = js.native
+  var KmsKeyId: js.UndefOr[string] = js.undefined
   
   /**
     * Enables the use of an AWS owned CMK using AWS Key Management Service (KMS).
     */
-  var UseAwsOwnedKey: boolean = js.native
+  var UseAwsOwnedKey: boolean
 }
 object EncryptionOptions {
   

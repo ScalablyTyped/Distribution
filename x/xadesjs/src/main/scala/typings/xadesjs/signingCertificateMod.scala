@@ -6,7 +6,6 @@ import typings.xadesjs.xmlBaseMod.XadesObject
 import typings.xmldsigjs.mod.X509IssuerSerial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object signingCertificateMod {

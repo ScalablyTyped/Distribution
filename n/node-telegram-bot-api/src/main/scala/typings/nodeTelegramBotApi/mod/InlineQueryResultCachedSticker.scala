@@ -3,26 +3,25 @@ package typings.nodeTelegramBotApi.mod
 import typings.nodeTelegramBotApi.nodeTelegramBotApiStrings.sticker
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InlineQueryResultCachedSticker
-  extends InlineQueryResultBase
+  extends StObject
+     with InlineQueryResultBase
      with InlineQueryResult {
   
-  var input_message_content: js.UndefOr[InputMessageContent] = js.native
+  var input_message_content: js.UndefOr[InputMessageContent] = js.undefined
   
-  var sticker_file_id: String = js.native
+  var sticker_file_id: String
   
-  var `type`: sticker = js.native
+  var `type`: sticker
 }
 object InlineQueryResultCachedSticker {
   
   @scala.inline
-  def apply(id: String, sticker_file_id: String, `type`: sticker): InlineQueryResultCachedSticker = {
+  def apply(id: String, sticker_file_id: String): InlineQueryResultCachedSticker = {
     val __obj = js.Dynamic.literal(id = id.asInstanceOf[js.Any], sticker_file_id = sticker_file_id.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sticker")
     __obj.asInstanceOf[InlineQueryResultCachedSticker]
   }
   

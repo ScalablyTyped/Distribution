@@ -6,14 +6,13 @@ import typings.fastCsvParse.typesMod.RowValidate
 import typings.fastCsvParse.typesMod.RowValidatorCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rowTransformerValidatorMod {
   
   @JSImport("@fast-csv/parse/build/src/transforms/RowTransformerValidator", "RowTransformerValidator")
   @js.native
-  class RowTransformerValidator[I /* <: Row[_] */, O /* <: Row[_] */] () extends StObject {
+  class RowTransformerValidator[I /* <: Row[js.Any] */, O /* <: Row[js.Any] */] () extends StObject {
     
     var _rowTransform: js.Any = js.native
     

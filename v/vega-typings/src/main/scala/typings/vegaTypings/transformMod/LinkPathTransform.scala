@@ -4,36 +4,36 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.linkpath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LinkPathTransform extends _Transforms {
+trait LinkPathTransform
+  extends StObject
+     with _Transforms {
   
-  var as: js.UndefOr[String | SignalRef] = js.native
+  var as: js.UndefOr[String | SignalRef] = js.undefined
   
-  var orient: js.UndefOr[LinkPathOrient | SignalRef] = js.native
+  var orient: js.UndefOr[LinkPathOrient | SignalRef] = js.undefined
   
-  var require: js.UndefOr[SignalRef] = js.native
+  var require: js.UndefOr[SignalRef] = js.undefined
   
-  var shape: js.UndefOr[LinkPathShape | SignalRef] = js.native
+  var shape: js.UndefOr[LinkPathShape | SignalRef] = js.undefined
   
-  var sourceX: js.UndefOr[FieldRef] = js.native
+  var sourceX: js.UndefOr[FieldRef] = js.undefined
   
-  var sourceY: js.UndefOr[FieldRef] = js.native
+  var sourceY: js.UndefOr[FieldRef] = js.undefined
   
-  var targetX: js.UndefOr[FieldRef] = js.native
+  var targetX: js.UndefOr[FieldRef] = js.undefined
   
-  var targetY: js.UndefOr[FieldRef] = js.native
+  var targetY: js.UndefOr[FieldRef] = js.undefined
   
-  var `type`: linkpath = js.native
+  var `type`: linkpath
 }
 object LinkPathTransform {
   
   @scala.inline
-  def apply(`type`: linkpath): LinkPathTransform = {
+  def apply(): LinkPathTransform = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("linkpath")
     __obj.asInstanceOf[LinkPathTransform]
   }
   

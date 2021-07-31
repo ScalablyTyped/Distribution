@@ -8,258 +8,194 @@ import typings.qIo.anon.TypeofQioFS
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fsMod {
   
-  @JSImport("q-io/fs", "absolute")
+  @JSImport("q-io/fs", JSImport.Namespace)
   @js.native
-  def absolute(path: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("q-io/fs", "append")
-  @js.native
-  def append(path: String, content: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "append")
-  @js.native
-  def append(path: String, content: String, options: js.Any): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "append")
-  @js.native
-  def append(path: String, content: Buffer): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "append")
-  @js.native
-  def append(path: String, content: Buffer, options: js.Any): Promise[Unit] = js.native
+  @scala.inline
+  def absolute(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("absolute")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "base")
-  @js.native
-  def base(path: String, extension: String): String = js.native
+  @scala.inline
+  def append(path: String, content: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def append(path: String, content: String, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def append(path: String, content: Buffer): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def append(path: String, content: Buffer, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("append")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "canonical")
-  @js.native
-  def canonical(path: String): Promise[String] = js.native
+  @scala.inline
+  def base(path: String, `extension`: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("base")(path.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "chmod")
-  @js.native
-  def chmod(path: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "chmod")
-  @js.native
-  def chmod(path: String, mode: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "chmod")
-  @js.native
-  def chmod(path: String, mode: Double): Promise[Unit] = js.native
+  @scala.inline
+  def canonical(path: String): Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("canonical")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[String]]
   
-  @JSImport("q-io/fs", "chown")
-  @js.native
-  def chown(path: String, uid: Double, gid: Double): Promise[Unit] = js.native
+  @scala.inline
+  def chmod(path: String): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def chmod(path: String, mode: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def chmod(path: String, mode: Double): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chmod")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "contains")
-  @js.native
-  def contains(parent: String, child: String): Boolean = js.native
+  @scala.inline
+  def chown(path: String, uid: Double, gid: Double): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("chown")(path.asInstanceOf[js.Any], uid.asInstanceOf[js.Any], gid.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "copy")
-  @js.native
-  def copy(source: String, target: String): Promise[Unit] = js.native
+  @scala.inline
+  def contains(parent: String, child: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(parent.asInstanceOf[js.Any], child.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("q-io/fs", "copyTree")
-  @js.native
-  def copyTree(source: String, target: String): Promise[Unit] = js.native
+  @scala.inline
+  def copy(source: String, target: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copy")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "directory")
-  @js.native
-  def directory(path: String): String = js.native
+  @scala.inline
+  def copyTree(source: String, target: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("copyTree")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "exists")
-  @js.native
-  def exists(path: String): Promise[Boolean] = js.native
+  @scala.inline
+  def directory(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("directory")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "extension")
-  @js.native
-  def extension(path: String): String = js.native
+  @scala.inline
+  def exists(path: String): Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("exists")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Boolean]]
   
-  @JSImport("q-io/fs", "isAbsolute")
-  @js.native
-  def isAbsolute(path: String): Boolean = js.native
+  @scala.inline
+  def `extension`(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extension")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "isDirectory")
-  @js.native
-  def isDirectory(path: String): Promise[Boolean] = js.native
+  @scala.inline
+  def isAbsolute(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAbsolute")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("q-io/fs", "isFile")
-  @js.native
-  def isFile(path: String): Promise[Boolean] = js.native
+  @scala.inline
+  def isDirectory(path: String): Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isDirectory")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Boolean]]
   
-  @JSImport("q-io/fs", "isRelative")
-  @js.native
-  def isRelative(path: String): Boolean = js.native
+  @scala.inline
+  def isFile(path: String): Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isFile")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Boolean]]
   
-  @JSImport("q-io/fs", "isRoot")
-  @js.native
-  def isRoot(path: String): Boolean = js.native
+  @scala.inline
+  def isRelative(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRelative")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("q-io/fs", "isSymbolicLink")
-  @js.native
-  def isSymbolicLink(path: String): Promise[Boolean] = js.native
+  @scala.inline
+  def isRoot(path: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRoot")(path.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("q-io/fs", "join")
-  @js.native
-  def join(paths: String*): String = js.native
-  @JSImport("q-io/fs", "join")
-  @js.native
-  def join(paths: js.Array[String]): String = js.native
+  @scala.inline
+  def isSymbolicLink(path: String): Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isSymbolicLink")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Boolean]]
   
-  @JSImport("q-io/fs", "lastAccessed")
-  @js.native
-  def lastAccessed(path: String): Promise[Date] = js.native
+  @scala.inline
+  def join(paths: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def join(paths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "lastModified")
-  @js.native
-  def lastModified(path: String): Promise[Date] = js.native
+  @scala.inline
+  def lastAccessed(path: String): Promise[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastAccessed")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Date]]
   
-  @JSImport("q-io/fs", "link")
-  @js.native
-  def link(source: String, target: js.Any): Promise[Unit] = js.native
+  @scala.inline
+  def lastModified(path: String): Promise[Date] = ^.asInstanceOf[js.Dynamic].applyDynamic("lastModified")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Date]]
   
-  @JSImport("q-io/fs", "list")
-  @js.native
-  def list(path: String): Promise[js.Array[String]] = js.native
+  @scala.inline
+  def link(source: String, target: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("link")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "listDirectoryTree")
-  @js.native
-  def listDirectoryTree(path: String): Promise[js.Array[String]] = js.native
+  @scala.inline
+  def list(path: String): Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[String]]]
   
-  @JSImport("q-io/fs", "listTree")
-  @js.native
-  def listTree(path: String): Promise[js.Array[String]] = js.native
-  @JSImport("q-io/fs", "listTree")
-  @js.native
-  def listTree(path: String, guard: js.Function2[/* path */ String, /* stat */ js.Any, Boolean]): Promise[js.Array[String]] = js.native
+  @scala.inline
+  def listDirectoryTree(path: String): Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listDirectoryTree")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[String]]]
   
-  @JSImport("q-io/fs", "makeDirectory")
-  @js.native
-  def makeDirectory(path: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "makeDirectory")
-  @js.native
-  def makeDirectory(path: String, mode: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "makeDirectory")
-  @js.native
-  def makeDirectory(path: String, mode: Double): Promise[Unit] = js.native
+  @scala.inline
+  def listTree(path: String): Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("listTree")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Array[String]]]
+  @scala.inline
+  def listTree(path: String, guard: js.Function2[/* path */ String, /* stat */ js.Any, Boolean]): Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("listTree")(path.asInstanceOf[js.Any], guard.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Array[String]]]
   
-  @JSImport("q-io/fs", "makeTree")
-  @js.native
-  def makeTree(path: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "makeTree")
-  @js.native
-  def makeTree(path: String, mode: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "makeTree")
-  @js.native
-  def makeTree(path: String, mode: Double): Promise[Unit] = js.native
+  @scala.inline
+  def makeDirectory(path: String): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectory")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def makeDirectory(path: String, mode: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectory")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def makeDirectory(path: String, mode: Double): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeDirectory")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "move")
-  @js.native
-  def move(source: String, target: String): Promise[Unit] = js.native
+  @scala.inline
+  def makeTree(path: String): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTree")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def makeTree(path: String, mode: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTree")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def makeTree(path: String, mode: Double): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("makeTree")(path.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "normal")
-  @js.native
-  def normal(path: String*): String = js.native
-  @JSImport("q-io/fs", "normal")
-  @js.native
-  def normal(paths: js.Array[String]): String = js.native
+  @scala.inline
+  def move(source: String, target: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "open")
-  @js.native
-  def open(path: String): Promise[_] = js.native
-  @JSImport("q-io/fs", "open")
-  @js.native
-  def open(path: String, options: js.Any): Promise[_] = js.native
+  @scala.inline
+  def normal(path: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normal")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def normal(paths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("normal")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "read")
-  @js.native
-  def read(path: String): Promise[_] = js.native
-  @JSImport("q-io/fs", "read")
-  @js.native
-  def read(path: String, options: js.Any): Promise[_] = js.native
+  @scala.inline
+  def open(path: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def open(path: String, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
-  @JSImport("q-io/fs", "readLink")
-  @js.native
-  def readLink(path: String): Promise[String] = js.native
+  @scala.inline
+  def read(path: String): Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[js.Any]]
+  @scala.inline
+  def read(path: String, options: js.Any): Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[js.Any]]
   
-  @JSImport("q-io/fs", "relative")
-  @js.native
-  def relative(source: String, target: String): Promise[String] = js.native
+  @scala.inline
+  def readLink(path: String): Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("readLink")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[String]]
   
-  @JSImport("q-io/fs", "relativeFromDirectory")
-  @js.native
-  def relativeFromDirectory(source: String, target: String): String = js.native
+  @scala.inline
+  def relative(source: String, target: String): Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("relative")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[String]]
   
-  @JSImport("q-io/fs", "relativeFromFile")
-  @js.native
-  def relativeFromFile(source: String, target: String): String = js.native
+  @scala.inline
+  def relativeFromDirectory(source: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeFromDirectory")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "remove")
-  @js.native
-  def remove(path: String): Promise[Unit] = js.native
+  @scala.inline
+  def relativeFromFile(source: String, target: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeFromFile")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "removeTree")
-  @js.native
-  def removeTree(path: String): Promise[Unit] = js.native
+  @scala.inline
+  def remove(path: String): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "rename")
-  @js.native
-  def rename(source: String, target: String): Promise[Unit] = js.native
+  @scala.inline
+  def removeTree(path: String): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeTree")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "reroot")
-  @js.native
-  def reroot(path: String): TypeofQioFS = js.native
+  @scala.inline
+  def rename(source: String, target: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "resolve")
-  @js.native
-  def resolve(path: String*): String = js.native
-  @JSImport("q-io/fs", "resolve")
-  @js.native
-  def resolve(paths: js.Array[String]): String = js.native
+  @scala.inline
+  def reroot(path: String): TypeofQioFS = ^.asInstanceOf[js.Dynamic].applyDynamic("reroot")(path.asInstanceOf[js.Any]).asInstanceOf[TypeofQioFS]
   
-  @JSImport("q-io/fs", "root")
-  @js.native
-  def root(path: String): String = js.native
+  @scala.inline
+  def resolve(path: String*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def resolve(paths: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(paths.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "split")
-  @js.native
-  def split(path: String): js.Array[String] = js.native
+  @scala.inline
+  def root(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("root")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("q-io/fs", "stat")
-  @js.native
-  def stat(path: String): Promise[Stats] = js.native
+  @scala.inline
+  def split(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("split")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
   
-  @JSImport("q-io/fs", "statFd")
-  @js.native
-  def statFd(fd: Double): Promise[Stats] = js.native
+  @scala.inline
+  def stat(path: String): Promise[Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("stat")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Stats]]
   
-  @JSImport("q-io/fs", "statLink")
-  @js.native
-  def statLink(path: String): Promise[Stats] = js.native
+  @scala.inline
+  def statFd(fd: Double): Promise[Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("statFd")(fd.asInstanceOf[js.Any]).asInstanceOf[Promise[Stats]]
   
-  @JSImport("q-io/fs", "symbolicCopy")
-  @js.native
-  def symbolicCopy(source: String, target: String, `type`: String): Promise[Unit] = js.native
+  @scala.inline
+  def statLink(path: String): Promise[Stats] = ^.asInstanceOf[js.Dynamic].applyDynamic("statLink")(path.asInstanceOf[js.Any]).asInstanceOf[Promise[Stats]]
   
-  @JSImport("q-io/fs", "symbolicLink")
-  @js.native
-  def symbolicLink(target: String, link: String, `type`: String): Promise[Unit] = js.native
+  @scala.inline
+  def symbolicCopy(source: String, target: String, `type`: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolicCopy")(source.asInstanceOf[js.Any], target.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "toObject")
-  @js.native
-  def toObject(path: String): StringDictionary[Buffer] = js.native
+  @scala.inline
+  def symbolicLink(target: String, link: String, `type`: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("symbolicLink")(target.asInstanceOf[js.Any], link.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
   
-  @JSImport("q-io/fs", "write")
-  @js.native
-  def write(path: String, content: String): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "write")
-  @js.native
-  def write(path: String, content: String, options: js.Any): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "write")
-  @js.native
-  def write(path: String, content: Buffer): Promise[Unit] = js.native
-  @JSImport("q-io/fs", "write")
-  @js.native
-  def write(path: String, content: Buffer, options: js.Any): Promise[Unit] = js.native
+  @scala.inline
+  def toObject(path: String): StringDictionary[Buffer] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(path.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[Buffer]]
+  
+  @scala.inline
+  def write(path: String, content: String): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def write(path: String, content: String, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def write(path: String, content: Buffer): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
+  @scala.inline
+  def write(path: String, content: Buffer, options: js.Any): Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("write")(path.asInstanceOf[js.Any], content.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Promise[Unit]]
 }

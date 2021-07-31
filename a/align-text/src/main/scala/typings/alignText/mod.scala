@@ -2,29 +2,26 @@ package typings.alignText
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(text: String): String = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(text: String, fn: Double): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(text: String, fn: Callback): String = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def apply(text: js.Array[js.Any]): js.Array[String] = ^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(text: js.Array[js.Any], fn: Double): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  @scala.inline
+  def apply(text: js.Array[js.Any], fn: Callback): js.Array[String] = (^.asInstanceOf[js.Dynamic].apply(text.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[js.Array[String]]
+  
   @JSImport("align-text", JSImport.Namespace)
   @js.native
-  def apply(text: String): String = js.native
-  @JSImport("align-text", JSImport.Namespace)
-  @js.native
-  def apply(text: String, fn: Double): String = js.native
-  @JSImport("align-text", JSImport.Namespace)
-  @js.native
-  def apply(text: String, fn: Callback): String = js.native
-  @JSImport("align-text", JSImport.Namespace)
-  @js.native
-  def apply(text: js.Array[_]): js.Array[String] = js.native
-  @JSImport("align-text", JSImport.Namespace)
-  @js.native
-  def apply(text: js.Array[_], fn: Double): js.Array[String] = js.native
-  @JSImport("align-text", JSImport.Namespace)
-  @js.native
-  def apply(text: js.Array[_], fn: Callback): js.Array[String] = js.native
+  val ^ : js.Any = js.native
   
   type Callback = js.Function4[
     /* len */ Double, 
@@ -34,23 +31,22 @@ object mod {
     Double | TransformResult
   ]
   
-  @js.native
   trait TransformResult extends StObject {
     
     /**
       * the character to use for indentation. Default is '' (empty string) when an object is returned.
       */
-    var character: String = js.native
+    var character: String
     
     /**
       * the amount of indentation to use. Default is 0 when an object is returned.
       */
-    var indent: Double = js.native
+    var indent: Double
     
     /**
       * leading characters to use at the beginning of each line. '' (empty string) when an object is returned.
       */
-    var prefix: String = js.native
+    var prefix: String
   }
   object TransformResult {
     

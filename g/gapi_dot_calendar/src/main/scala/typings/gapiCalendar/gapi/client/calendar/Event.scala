@@ -12,101 +12,99 @@ import typings.gapiCalendar.anon.UseDefault
 import typings.gapiCalendar.gapiCalendarStrings.calendarNumbersignevent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var anyoneCanAddSelf: js.UndefOr[Boolean] = js.native
+  var anyoneCanAddSelf: js.UndefOr[Boolean] = js.undefined
   
   // File attachments for the event. Currently only Google Drive attachments are supported.
-  var attachments: js.UndefOr[js.Array[FileId]] = js.native
+  var attachments: js.UndefOr[js.Array[FileId]] = js.undefined
   
   // The attendees of the event.
-  var attendees: js.UndefOr[js.Array[Comment]] = js.native
+  var attendees: js.UndefOr[js.Array[Comment]] = js.undefined
   
-  var attendeesOmitted: js.UndefOr[Boolean] = js.native
+  var attendeesOmitted: js.UndefOr[Boolean] = js.undefined
   
-  var colorId: js.UndefOr[String] = js.native
+  var colorId: js.UndefOr[String] = js.undefined
   
-  var created: datetime = js.native
+  var created: datetime
   
   // The creator of the event. Read-only.
-  var creator: DisplayName = js.native
+  var creator: DisplayName
   
-  var description: String = js.native
+  var description: String
   
   // The (exclusive) end time of the event. For a recurring event, this is the end time of the first instance.
-  var end: Date = js.native
+  var end: Date
   
   //     Whether the end time is actually unspecified. An end time is still provided for compatibility reasons, even if this attribute is set to True.
   // The default is False.
-  var endTimeUnspecified: js.UndefOr[Boolean] = js.native
+  var endTimeUnspecified: js.UndefOr[Boolean] = js.undefined
   
-  var etag: typings.gapiCalendar.gapi.client.calendar.etag = js.native
+  var etag: typings.gapiCalendar.gapi.client.calendar.etag
   
   // Extended properties of the event.
-  var extendedProperties: js.UndefOr[Private] = js.native
+  var extendedProperties: js.UndefOr[Private] = js.undefined
   
   // A gadget that extends this event.
-  var gadget: js.UndefOr[Height] = js.native
+  var gadget: js.UndefOr[Height] = js.undefined
   
-  var guestsCanInviteOthers: js.UndefOr[Boolean] = js.native
+  var guestsCanInviteOthers: js.UndefOr[Boolean] = js.undefined
   
-  var guestsCanModify: js.UndefOr[Boolean] = js.native
+  var guestsCanModify: js.UndefOr[Boolean] = js.undefined
   
-  var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.native
+  var guestsCanSeeOtherGuests: js.UndefOr[Boolean] = js.undefined
   
   // An absolute link to the Google+ hangout associated with this event. Read-only.
-  var hangoutLink: js.UndefOr[String] = js.native
+  var hangoutLink: js.UndefOr[String] = js.undefined
   
-  var htmlLink: String = js.native
+  var htmlLink: String
   
-  var iCalUID: String = js.native
+  var iCalUID: String
   
-  var id: String = js.native
+  var id: String
   
-  var kind: calendarNumbersignevent = js.native
+  var kind: calendarNumbersignevent
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   // Whether this is a locked event copy where no changes can be made to the main event fields "summary", "description", "location", "start", "end" or "recurrence". The default is False. Read-Only.
-  var locked: js.UndefOr[Boolean] = js.native
+  var locked: js.UndefOr[Boolean] = js.undefined
   
   // The organizer of the event.
-  var organizer: DisplayName = js.native
+  var organizer: DisplayName
   
   // Whether the organizer corresponds to the calendar on which this copy of the event appears. Read-only. The default is False.
-  var originalStartTime: js.UndefOr[TimeZone] = js.native
+  var originalStartTime: js.UndefOr[TimeZone] = js.undefined
   
-  var privateCopy: js.UndefOr[Boolean] = js.native
+  var privateCopy: js.UndefOr[Boolean] = js.undefined
   
-  var recurrence: js.Array[String] = js.native
+  var recurrence: js.Array[String]
   
   // For an instance of a recurring event, this is the id of the recurring event to which this instance belongs. Immutable.
-  var recurringEventId: js.UndefOr[String] = js.native
+  var recurringEventId: js.UndefOr[String] = js.undefined
   
-  var reminders: UseDefault = js.native
+  var reminders: UseDefault
   
-  var sequence: integer = js.native
+  var sequence: integer
   
   // Source from which the event was created. For example, a web page, an email message or any document identifiable by an URL with HTTP or HTTPS scheme.
   // Can only be seen or modified by the creator of the event.
-  var source: js.UndefOr[Title] = js.native
+  var source: js.UndefOr[Title] = js.undefined
   
   // The (inclusive) start time of the event. For a recurring event, this is the start time of the first instance.
-  var start: Date = js.native
+  var start: Date
   
-  var status: js.UndefOr[EventStatus] = js.native
+  var status: js.UndefOr[EventStatus] = js.undefined
   
-  var summary: String = js.native
+  var summary: String
   
-  var transparency: js.UndefOr[EventTransparency] = js.native
+  var transparency: js.UndefOr[EventTransparency] = js.undefined
   
-  var updated: datetime = js.native
+  var updated: datetime
   
-  var visibility: js.UndefOr[EventVisibility] = js.native
+  var visibility: js.UndefOr[EventVisibility] = js.undefined
 }
 object Event {
   
@@ -120,7 +118,6 @@ object Event {
     htmlLink: String,
     iCalUID: String,
     id: String,
-    kind: calendarNumbersignevent,
     organizer: DisplayName,
     recurrence: js.Array[String],
     reminders: UseDefault,
@@ -129,7 +126,7 @@ object Event {
     summary: String,
     updated: datetime
   ): Event = {
-    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], htmlLink = htmlLink.asInstanceOf[js.Any], iCalUID = iCalUID.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], organizer = organizer.asInstanceOf[js.Any], recurrence = recurrence.asInstanceOf[js.Any], reminders = reminders.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(created = created.asInstanceOf[js.Any], creator = creator.asInstanceOf[js.Any], description = description.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], etag = etag.asInstanceOf[js.Any], htmlLink = htmlLink.asInstanceOf[js.Any], iCalUID = iCalUID.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], kind = "calendar#event", organizer = organizer.asInstanceOf[js.Any], recurrence = recurrence.asInstanceOf[js.Any], reminders = reminders.asInstanceOf[js.Any], sequence = sequence.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], summary = summary.asInstanceOf[js.Any], updated = updated.asInstanceOf[js.Any])
     __obj.asInstanceOf[Event]
   }
   

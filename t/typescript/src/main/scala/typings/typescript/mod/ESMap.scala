@@ -2,16 +2,15 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** ES6 Map interface. */
-@js.native
 trait ESMap[K, V]
-  extends ReadonlyESMap[K, V]
+  extends StObject
+     with ReadonlyESMap[K, V]
      with Collection[K] {
   
-  def set(key: K, value: V): this.type = js.native
+  def set(key: K, value: V): this.type
 }
 object ESMap {
   
@@ -33,7 +32,7 @@ object ESMap {
   }
   
   @scala.inline
-  implicit class ESMapMutableBuilder[Self <: ESMap[_, _], K, V] (val x: Self with (ESMap[K, V])) extends AnyVal {
+  implicit class ESMapMutableBuilder[Self <: ESMap[?, ?], K, V] (val x: Self & (ESMap[K, V])) extends AnyVal {
     
     @scala.inline
     def setSet(value: (K, V) => ESMap[K, V]): Self = StObject.set(x, "set", js.Any.fromFunction2(value))

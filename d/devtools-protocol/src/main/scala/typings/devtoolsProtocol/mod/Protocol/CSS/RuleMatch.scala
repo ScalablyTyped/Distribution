@@ -3,21 +3,19 @@ package typings.devtoolsProtocol.mod.Protocol.CSS
 import typings.devtoolsProtocol.mod.Protocol.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleMatch extends StObject {
   
   /**
     * Matching selector indices in the rule's selectorList selectors (0-based).
     */
-  var matchingSelectors: js.Array[integer] = js.native
+  var matchingSelectors: js.Array[integer]
   
   /**
     * CSS rule in the match.
     */
-  var rule: CSSRule = js.native
+  var rule: CSSRule
 }
 object RuleMatch {
   

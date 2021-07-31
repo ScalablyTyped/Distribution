@@ -5,53 +5,51 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillboardOptions extends StObject {
   
-  var alignedAxis: js.UndefOr[Cartesian3] = js.native
+  var alignedAxis: js.UndefOr[Cartesian3] = js.undefined
   
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition] = js.native
+  var distanceDisplayCondition: js.UndefOr[DistanceDisplayCondition] = js.undefined
   
-  var eyeOffset: js.UndefOr[Cartesian3] = js.native
+  var eyeOffset: js.UndefOr[Cartesian3] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var heightReference: js.UndefOr[HeightReference] = js.native
+  var heightReference: js.UndefOr[HeightReference] = js.undefined
   
-  var horizontalOrigin: js.UndefOr[HorizontalOrigin] = js.native
+  var horizontalOrigin: js.UndefOr[HorizontalOrigin] = js.undefined
   
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
-  var image: js.UndefOr[HTMLImageElement | HTMLCanvasElement | String | CreateImageCallback] = js.native
+  var image: js.UndefOr[HTMLImageElement | HTMLCanvasElement | String | CreateImageCallback] = js.undefined
   
-  var imageSubRegion: js.UndefOr[BoundingRectangle] = js.native
+  var imageSubRegion: js.UndefOr[BoundingRectangle] = js.undefined
   
-  var pixelOffset: js.UndefOr[Cartesian2] = js.native
+  var pixelOffset: js.UndefOr[Cartesian2] = js.undefined
   
-  var pixelOffsetScaleByDistance: js.UndefOr[NearFarScalar] = js.native
+  var pixelOffsetScaleByDistance: js.UndefOr[NearFarScalar] = js.undefined
   
-  var position: js.UndefOr[Cartesian3] = js.native
+  var position: js.UndefOr[Cartesian3] = js.undefined
   
-  var rotation: js.UndefOr[Double] = js.native
+  var rotation: js.UndefOr[Double] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var scaleByDistance: js.UndefOr[NearFarScalar] = js.native
+  var scaleByDistance: js.UndefOr[NearFarScalar] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var sizeInMeters: js.UndefOr[Boolean] = js.native
+  var sizeInMeters: js.UndefOr[Boolean] = js.undefined
   
-  var translucencyByDistance: js.UndefOr[NearFarScalar] = js.native
+  var translucencyByDistance: js.UndefOr[NearFarScalar] = js.undefined
   
-  var verticalOrigin: js.UndefOr[VerticalOrigin] = js.native
+  var verticalOrigin: js.UndefOr[VerticalOrigin] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object BillboardOptions {
   

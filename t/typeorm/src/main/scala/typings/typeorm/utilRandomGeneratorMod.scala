@@ -2,7 +2,6 @@ package typings.typeorm
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilRandomGeneratorMod {
@@ -12,6 +11,10 @@ object utilRandomGeneratorMod {
   class RandomGenerator () extends StObject
   /* static members */
   object RandomGenerator {
+    
+    @JSImport("typeorm/util/RandomGenerator", "RandomGenerator")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       *  discuss at: http://locutus.io/php/sha1/
@@ -25,15 +28,13 @@ object utilRandomGeneratorMod {
       *   example 1: sha1('Kevin van Zonneveld')
       *   returns 1: '54916d2e62f65b3afa6e192e6a601cdbe5cb5897'
       */
-    @JSImport("typeorm/util/RandomGenerator", "RandomGenerator.sha1")
-    @js.native
-    def sha1(str: String): String = js.native
+    @scala.inline
+    def sha1(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sha1")(str.asInstanceOf[js.Any]).asInstanceOf[String]
     
     /**
       * RFC4122 compliant UUID v4 generator.
       */
-    @JSImport("typeorm/util/RandomGenerator", "RandomGenerator.uuid4")
-    @js.native
-    def uuid4(): String = js.native
+    @scala.inline
+    def uuid4(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("uuid4")().asInstanceOf[String]
   }
 }

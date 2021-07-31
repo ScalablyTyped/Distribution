@@ -3,13 +3,11 @@ package typings.winjs.WinJS.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Prevents a DOM sub-tree from receiving tab navigations and focus.
   **/
-@js.native
 trait TabContainer extends StObject {
   
   //#endregion Methods
@@ -17,19 +15,19 @@ trait TabContainer extends StObject {
   /**
     * Gets or sets the child DOM element that receives tab focus.
     **/
-  var childFocus: HTMLElement = js.native
+  var childFocus: HTMLElement
   
   //#endregion Constructors
   //#region Methods
   /**
     * Releases resources held by this TabContainer. Call this method when the TabContainer is no longer needed. After calling this method, the TabContainer becomes unusable.
     **/
-  def dispose(): Unit = js.native
+  def dispose(): Unit
   
   /**
     * Gets or sets the tab index of this container.
     **/
-  var tabIndex: Double = js.native
+  var tabIndex: Double
 }
 object TabContainer {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAppsResult extends StObject {
   
   /**
     * An array of App objects that describe the specified apps. 
     */
-  var Apps: js.UndefOr[typings.awsSdk.opsworksMod.Apps] = js.native
+  var Apps: js.UndefOr[typings.awsSdk.opsworksMod.Apps] = js.undefined
 }
 object DescribeAppsResult {
   

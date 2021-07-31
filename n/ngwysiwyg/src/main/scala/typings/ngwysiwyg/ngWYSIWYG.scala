@@ -2,17 +2,15 @@ package typings.ngwysiwyg
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ngWYSIWYG {
   
-  @js.native
   trait Config extends StObject {
     
-    var sanitize: Boolean = js.native
+    var sanitize: Boolean
     
-    var toolbar: js.UndefOr[js.Array[Toolbar]] = js.native
+    var toolbar: js.UndefOr[js.Array[Toolbar]] = js.undefined
   }
   object Config {
     
@@ -39,12 +37,11 @@ object ngWYSIWYG {
     }
   }
   
-  @js.native
   trait Toolbar extends StObject {
     
-    var items: js.Array[String] = js.native
+    var items: js.Array[String]
     
-    var name: String = js.native
+    var name: String
   }
   object Toolbar {
     

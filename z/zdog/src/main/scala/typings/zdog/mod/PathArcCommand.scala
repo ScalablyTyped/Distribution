@@ -2,14 +2,14 @@ package typings.zdog.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PathArcCommand extends PathCommand {
+trait PathArcCommand
+  extends StObject
+     with PathCommand {
   
   /** @see {@link https://zzz.dog/shapes#shape-arc Zdog Shape API} */
-  var arc: js.Tuple2[VectorOptions, VectorOptions] = js.native
+  var arc: js.Tuple2[VectorOptions, VectorOptions]
 }
 object PathArcCommand {
   

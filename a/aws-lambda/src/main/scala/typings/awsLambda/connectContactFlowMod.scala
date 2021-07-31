@@ -8,7 +8,6 @@ import typings.awsLambda.handlerMod.Callback
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectContactFlowMod {
@@ -29,18 +28,17 @@ object connectContactFlowMod {
     def VOICE: typings.awsLambda.awsLambdaStrings.VOICE = "VOICE".asInstanceOf[typings.awsLambda.awsLambdaStrings.VOICE]
   }
   
-  @js.native
   trait ConnectContactFlowEndpoint extends StObject {
     
-    var Address: String = js.native
+    var Address: String
     
-    var Type: TELEPHONE_NUMBER = js.native
+    var Type: TELEPHONE_NUMBER
   }
   object ConnectContactFlowEndpoint {
     
     @scala.inline
-    def apply(Address: String, Type: TELEPHONE_NUMBER): ConnectContactFlowEndpoint = {
-      val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Type = Type.asInstanceOf[js.Any])
+    def apply(Address: String): ConnectContactFlowEndpoint = {
+      val __obj = js.Dynamic.literal(Address = Address.asInstanceOf[js.Any], Type = "TELEPHONE_NUMBER")
       __obj.asInstanceOf[ConnectContactFlowEndpoint]
     }
     
@@ -55,18 +53,17 @@ object connectContactFlowMod {
     }
   }
   
-  @js.native
   trait ConnectContactFlowEvent extends StObject {
     
-    var Details: ContactData = js.native
+    var Details: ContactData
     
-    var Name: ContactFlowEvent = js.native
+    var Name: ContactFlowEvent
   }
   object ConnectContactFlowEvent {
     
     @scala.inline
-    def apply(Details: ContactData, Name: ContactFlowEvent): ConnectContactFlowEvent = {
-      val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Name = Name.asInstanceOf[js.Any])
+    def apply(Details: ContactData): ConnectContactFlowEvent = {
+      val __obj = js.Dynamic.literal(Details = Details.asInstanceOf[js.Any], Name = "ContactFlowEvent")
       __obj.asInstanceOf[ConnectContactFlowEvent]
     }
     

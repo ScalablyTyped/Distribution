@@ -3,37 +3,37 @@ package typings.mfiles
 import typings.mfiles.MFiles.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IShellFrameEvents extends IEvents {
+trait IShellFrameEvents
+  extends StObject
+     with IEvents {
   
   var OnActiveListingChanged: js.UndefOr[
     js.Function2[/* oldListing */ Null | IShellListing, /* newListing */ IShellListing, Unit]
-  ] = js.native
+  ] = js.undefined
   
   var OnNewBottomPane: js.UndefOr[
     js.Function1[/* bottomPane */ IShellPaneContainer, Unit | IShellPaneContainerEvents]
-  ] = js.native
+  ] = js.undefined
   
-  var OnNewCommands: js.UndefOr[js.Function1[/* commands */ ICommands, Unit | ICommandsEvents]] = js.native
+  var OnNewCommands: js.UndefOr[js.Function1[/* commands */ ICommands, Unit | ICommandsEvents]] = js.undefined
   
   var OnNewRightPane: js.UndefOr[
     js.Function1[/* rightPane */ IShellPaneContainer, Unit | IShellPaneContainerEvents]
-  ] = js.native
+  ] = js.undefined
   
-  var OnNewSearchPane: js.UndefOr[js.Function1[/* searchPane */ ISearchPane, Unit | ISearchPaneEvents]] = js.native
+  var OnNewSearchPane: js.UndefOr[js.Function1[/* searchPane */ ISearchPane, Unit | ISearchPaneEvents]] = js.undefined
   
-  var OnNewShellListing: js.UndefOr[js.Function1[/* shellListing */ IShellListing, Unit | IShellListingEvents]] = js.native
+  var OnNewShellListing: js.UndefOr[js.Function1[/* shellListing */ IShellListing, Unit | IShellListingEvents]] = js.undefined
   
-  var OnNewTaskPane: js.UndefOr[js.Function1[/* taskPane */ ITaskPane, Unit | ITaskPaneEvents]] = js.native
+  var OnNewTaskPane: js.UndefOr[js.Function1[/* taskPane */ ITaskPane, Unit | ITaskPaneEvents]] = js.undefined
   
-  var OnShowMainMenu: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnShowMainMenu: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStarted: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var OnStop: js.UndefOr[js.Function0[Unit]] = js.native
+  var OnStop: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object IShellFrameEvents {
   

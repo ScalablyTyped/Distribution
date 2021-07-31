@@ -9,37 +9,35 @@ import typings.sinonTest.sinonTestStrings.spy
 import typings.sinonTest.sinonTestStrings.stub
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(sinon: SinonStatic): js.Any = ^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def apply(sinon: SinonStatic, config: Configuration): js.Any = (^.asInstanceOf[js.Dynamic].apply(sinon.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   @JSImport("sinon-test", JSImport.Namespace)
   @js.native
-  def apply(sinon: SinonStatic): js.Any = js.native
-  @JSImport("sinon-test", JSImport.Namespace)
-  @js.native
-  def apply(sinon: SinonStatic, config: Configuration): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("sinon-test", "configureTest")
-  @js.native
-  def configureTest(sinon: SinonStatic): js.Any = js.native
-  @JSImport("sinon-test", "configureTest")
-  @js.native
-  def configureTest(sinon: SinonStatic, config: Configuration): js.Any = js.native
+  @scala.inline
+  def configureTest(sinon: SinonStatic): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("configureTest")(sinon.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def configureTest(sinon: SinonStatic, config: Configuration): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("configureTest")(sinon.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
   trait Configuration extends StObject {
     
-    var injectInto: js.UndefOr[js.Any] = js.native
+    var injectInto: js.UndefOr[js.Any] = js.undefined
     
-    var injectIntoThis: js.UndefOr[Boolean] = js.native
+    var injectIntoThis: js.UndefOr[Boolean] = js.undefined
     
-    var properties: js.UndefOr[js.Array[spy | stub | mock | clock | server | requests]] = js.native
+    var properties: js.UndefOr[js.Array[spy | stub | mock | clock | server | requests]] = js.undefined
     
-    var useFakeServer: js.UndefOr[Boolean] = js.native
+    var useFakeServer: js.UndefOr[Boolean] = js.undefined
     
-    var useFakeTimers: js.UndefOr[Boolean] = js.native
+    var useFakeTimers: js.UndefOr[Boolean] = js.undefined
   }
   object Configuration {
     

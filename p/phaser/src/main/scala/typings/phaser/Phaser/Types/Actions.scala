@@ -4,52 +4,50 @@ import typings.phaser.Phaser.GameObjects.GameObject
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Actions {
   
   type CallCallback = js.Function1[/* item */ GameObject, Unit]
   
-  @js.native
   trait GridAlignConfig extends StObject {
     
     /**
       * The height of the cell, in pixels, in which the item is positioned.
       */
-    var cellHeight: js.UndefOr[integer] = js.native
+    var cellHeight: js.UndefOr[integer] = js.undefined
     
     /**
       * The width of the cell, in pixels, in which the item is positioned.
       */
-    var cellWidth: js.UndefOr[integer] = js.native
+    var cellWidth: js.UndefOr[integer] = js.undefined
     
     /**
       * The height of the grid in items (not pixels). -1 means lay all items out vertically, regardless of quantity.
       *                                   If both this value and `width` are set to -1 then `width` overrides it and this value is ignored.
       */
-    var height: js.UndefOr[integer] = js.native
+    var height: js.UndefOr[integer] = js.undefined
     
     /**
       * The alignment position. One of the Phaser.Display.Align consts such as `TOP_LEFT` or `RIGHT_CENTER`.
       */
-    var position: js.UndefOr[integer] = js.native
+    var position: js.UndefOr[integer] = js.undefined
     
     /**
       * The width of the grid in items (not pixels). -1 means lay all items out horizontally, regardless of quantity.
       *                                  If both this value and height are set to -1 then this value overrides it and the `height` value is ignored.
       */
-    var width: js.UndefOr[integer] = js.native
+    var width: js.UndefOr[integer] = js.undefined
     
     /**
       * Optionally place the top-left of the final grid at this coordinate.
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /**
       * Optionally place the top-left of the final grid at this coordinate.
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object GridAlignConfig {
     

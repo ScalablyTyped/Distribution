@@ -3,17 +3,18 @@ package typings.cssesc
 import typings.cssesc.anon.ReadonlyPartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(string: String): String = ^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(string: String, options: ReadonlyPartialOptions): String = (^.asInstanceOf[js.Dynamic].apply(string.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("cssesc", JSImport.Namespace)
   @js.native
-  def apply(string: String): String = js.native
-  @JSImport("cssesc", JSImport.Namespace)
-  @js.native
-  def apply(string: String, options: ReadonlyPartialOptions): String = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("cssesc", "options")
   @js.native
@@ -23,16 +24,15 @@ object mod {
   @js.native
   val version: String = js.native
   
-  @js.native
   trait Options_ extends StObject {
     
-    var escapeEverything: Boolean = js.native
+    var escapeEverything: Boolean
     
-    var isIdentifier: Boolean = js.native
+    var isIdentifier: Boolean
     
-    var quotes: String = js.native
+    var quotes: String
     
-    var wrap: Boolean = js.native
+    var wrap: Boolean
   }
   object Options_ {
     

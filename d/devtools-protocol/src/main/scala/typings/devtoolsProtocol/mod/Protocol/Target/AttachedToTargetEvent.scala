@@ -2,20 +2,18 @@ package typings.devtoolsProtocol.mod.Protocol.Target
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttachedToTargetEvent extends StObject {
   
   /**
     * Identifier assigned to the session used to send/receive messages.
     */
-  var sessionId: SessionID = js.native
+  var sessionId: SessionID
   
-  var targetInfo: TargetInfo = js.native
+  var targetInfo: TargetInfo
   
-  var waitingForDebugger: Boolean = js.native
+  var waitingForDebugger: Boolean
 }
 object AttachedToTargetEvent {
   

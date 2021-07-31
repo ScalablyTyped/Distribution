@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgHierarchicalGridColumnGroupOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,13 +16,13 @@ trait IgHierarchicalGridColumnGroupOptions
     * Sets whether expansion indicators are visible in the group header.
     *
     */
-  var allowGroupCollapsing: js.UndefOr[Boolean] = js.native
+  var allowGroupCollapsing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets whether the group is expanded or collapsed. Applied only if the allowGroupCollapsing is set to true.
     *
     */
-  var expanded: js.UndefOr[Boolean] = js.native
+  var expanded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets when should the group be hidden. Applied only if the allowGroupCollapsing is set to true.
@@ -35,7 +34,7 @@ trait IgHierarchicalGridColumnGroupOptions
     * "parentcollapsed" hide the group when its parent group is collapsed
     * "parentexpanded" hide the group when its parent group is expanded
     */
-  var hidden: js.UndefOr[String] = js.native
+  var hidden: js.UndefOr[String] = js.undefined
 }
 object IgHierarchicalGridColumnGroupOptions {
   

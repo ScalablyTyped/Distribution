@@ -4,13 +4,13 @@ import typings.isMyJsonValid.isMyJsonValidStrings.`null`
 import typings.isMyJsonValid.isMyJsonValidStrings.boolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NullableBooleanSchema extends _AnySchema {
+trait NullableBooleanSchema
+  extends StObject
+     with _AnySchema {
   
-  var `type`: js.Array[boolean | `null`] = js.native
+  var `type`: js.Array[boolean | `null`]
 }
 object NullableBooleanSchema {
   

@@ -3,7 +3,6 @@ package typings.is
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -16,7 +15,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches affirmative regexp.
     */
-  def affirmative(value: js.Array[_]): Boolean = js.native
+  def affirmative(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches alpha numeric regexp.
@@ -25,7 +24,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches alpha numeric regexp.
     */
-  def alphaNumeric(value: js.Array[_]): Boolean = js.native
+  def alphaNumeric(value: js.Array[js.Any]): Boolean = js.native
   
   //#region Type checks
   /**
@@ -35,7 +34,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is arguments.
     */
-  def arguments(value: js.Array[_]): Boolean = js.native
+  def arguments(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is array.
@@ -44,7 +43,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is array.
     */
-  def array(value: js.Array[_]): Boolean = js.native
+  def array(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is boolean.
@@ -53,7 +52,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is boolean.
     */
-  def boolean(value: js.Array[_]): Boolean = js.native
+  def boolean(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches Canada postal code regexp.
@@ -62,7 +61,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches Canada postal code regexp.
     */
-  def caPostalCode(value: js.Array[_]): Boolean = js.native
+  def caPostalCode(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given string is capitalized.
@@ -80,7 +79,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is char.
     */
-  def char(value: js.Array[_]): Boolean = js.native
+  def char(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches credit card regexp.
@@ -89,7 +88,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches credit card regexp.
     */
-  def creditCard(value: js.Array[_]): Boolean = js.native
+  def creditCard(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is date.
@@ -98,7 +97,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is date.
     */
-  def date(value: js.Array[_]): Boolean = js.native
+  def date(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches date string regexp.
@@ -107,7 +106,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches date string regexp.
     */
-  def dateString(value: js.Array[_]): Boolean = js.native
+  def dateString(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value is decimal.
@@ -125,7 +124,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is defined.
     */
-  def defined(value: js.Array[_]): Boolean = js.native
+  def defined(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given object is a dom node.
@@ -134,7 +133,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given object is a dom node.
     */
-  def domNode(value: js.Array[_]): Boolean = js.native
+  def domNode(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches email regexp.
@@ -143,7 +142,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches email regexp.
     */
-  def email(value: js.Array[_]): Boolean = js.native
+  def email(value: js.Array[js.Any]): Boolean = js.native
   
   //#endregion
   //#region Presence checks
@@ -154,7 +153,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value is empty.
     */
-  def empty(value: js.Array[_]): Boolean = js.native
+  def empty(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches extensible provisioning protocol phone regexp.
@@ -163,7 +162,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches extensible provisioning protocol phone regexp.
     */
-  def eppPhone(value: js.Array[_]): Boolean = js.native
+  def eppPhone(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is error.
@@ -172,7 +171,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is error.
     */
-  def error(value: js.Array[_]): Boolean = js.native
+  def error(value: js.Array[js.Any]): Boolean = js.native
   
   //#endregion
   //#region Arithmetic checks
@@ -192,7 +191,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value is existy. (not null or undefined)
     */
-  def existy(value: js.Array[_]): Boolean = js.native
+  def existy(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value is falsy.
@@ -201,7 +200,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value is falsy.
     */
-  def falsy(value: js.Array[_]): Boolean = js.native
+  def falsy(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value is finite.
@@ -219,7 +218,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is function.
     */
-  def fn(value: js.Array[_]): Boolean = js.native
+  def fn(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is function.
@@ -228,7 +227,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is function.
     */
-  def function(value: js.Array[_]): Boolean = js.native
+  def function(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given date object indicate future.
@@ -246,7 +245,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches hexcolor regexp.
     */
-  def hexColor(value: js.Array[_]): Boolean = js.native
+  def hexColor(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches hexadecimal regexp.
@@ -255,7 +254,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches hexadecimal regexp.
     */
-  def hexadecimal(value: js.Array[_]): Boolean = js.native
+  def hexadecimal(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value is infinite.
@@ -282,7 +281,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches ip regexp.
     */
-  def ip(value: js.Array[_]): Boolean = js.native
+  def ip(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches ipv4 regexp.
@@ -291,7 +290,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches ipv4 regexp.
     */
-  def ipv4(value: js.Array[_]): Boolean = js.native
+  def ipv4(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches ipv6 regexp.
@@ -300,7 +299,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches ipv6 regexp.
     */
-  def ipv6(value: js.Array[_]): Boolean = js.native
+  def ipv6(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is pure json object.
@@ -309,7 +308,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is pure json object.
     */
-  def json(value: js.Array[_]): Boolean = js.native
+  def json(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given year number is a leap year
@@ -336,7 +335,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is NaN.
     */
-  def nan(value: js.Array[_]): Boolean = js.native
+  def nan(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches North American numbering plan phone regexp.
@@ -345,7 +344,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches North American numbering plan phone regexp.
     */
-  def nanpPhone(value: js.Array[_]): Boolean = js.native
+  def nanpPhone(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value is negative.
@@ -363,7 +362,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is null.
     */
-  def `null`(value: js.Array[_]): Boolean = js.native
+  def `null`(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is number.
@@ -372,7 +371,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is number.
     */
-  def number(value: js.Array[_]): Boolean = js.native
+  def number(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is object.
@@ -381,7 +380,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is object.
     */
-  def `object`(value: js.Array[_]): Boolean = js.native
+  def `object`(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value is odd.
@@ -426,7 +425,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is RegExp.
     */
-  def regexp(value: js.Array[_]): Boolean = js.native
+  def regexp(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches social security number regexp.
@@ -435,7 +434,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches social security number regexp.
     */
-  def socialSecurityNumber(value: js.Array[_]): Boolean = js.native
+  def socialSecurityNumber(value: js.Array[js.Any]): Boolean = js.native
   
   //#endregion
   //#region Array checks
@@ -455,7 +454,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value is space.
     */
-  def space(value: js.Array[_]): Boolean = js.native
+  def space(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is string.
@@ -464,7 +463,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is string.
     */
-  def string(value: js.Array[_]): Boolean = js.native
+  def string(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches time string regexp.
@@ -473,7 +472,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches time string regexp.
     */
-  def timeString(value: js.Array[_]): Boolean = js.native
+  def timeString(value: js.Array[js.Any]): Boolean = js.native
   
   //#endregion
   //#region Time checks
@@ -502,7 +501,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value is truthy. (existy and not false)
     */
-  def truthy(value: js.Array[_]): Boolean = js.native
+  def truthy(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches UK post code regexp.
@@ -511,7 +510,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches UK post code regexp.
     */
-  def ukPostCode(value: js.Array[_]): Boolean = js.native
+  def ukPostCode(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value type is undefined.
@@ -520,7 +519,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value type is undefined.
     */
-  def undefined(value: js.Array[_]): Boolean = js.native
+  def undefined(value: js.Array[js.Any]): Boolean = js.native
   
   //#endregion
   //#region String checks
@@ -542,7 +541,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches url regexp.
     */
-  def url(value: js.Array[_]): Boolean = js.native
+  def url(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given value matches US zip code regexp.
@@ -551,7 +550,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given value matches US zip code regexp.
     */
-  def usZipCode(value: js.Array[_]): Boolean = js.native
+  def usZipCode(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given date objects' day is weekday.
@@ -580,7 +579,7 @@ trait IsStaticApi extends StObject {
   /**
     * Checks if the given object is window object.
     */
-  def windowObject(value: js.Array[_]): Boolean = js.native
+  def windowObject(value: js.Array[js.Any]): Boolean = js.native
   
   /**
     * Checks if the given date object indicate yesterday.

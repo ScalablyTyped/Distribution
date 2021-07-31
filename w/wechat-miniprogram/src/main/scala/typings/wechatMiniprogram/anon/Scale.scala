@@ -2,19 +2,17 @@ package typings.wechatMiniprogram.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scale extends StObject {
   
-  var scale: Double = js.native
+  var scale: Double
   
   /** 最低基础库: 2.1.0 */
-  var x: Double = js.native
+  var x: Double
   
   /** 最低基础库: 2.1.0 */
-  var y: Double = js.native
+  var y: Double
 }
 object Scale {
   

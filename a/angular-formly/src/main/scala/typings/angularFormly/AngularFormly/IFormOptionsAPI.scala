@@ -3,27 +3,25 @@ package typings.angularFormly.AngularFormly
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFormOptionsAPI extends StObject {
   
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var fieldTransform: js.UndefOr[js.Function | js.Array[js.Function]] = js.native
+  var fieldTransform: js.UndefOr[js.Function | js.Array[js.Function]] = js.undefined
   
-  var formState: js.UndefOr[js.Object] = js.native
+  var formState: js.UndefOr[js.Object] = js.undefined
   
-  var removeChromeAutoComplete: js.UndefOr[Boolean] = js.native
+  var removeChromeAutoComplete: js.UndefOr[Boolean] = js.undefined
   
-  var resetModel: js.UndefOr[js.Function] = js.native
+  var resetModel: js.UndefOr[js.Function] = js.undefined
   
-  var templateManipulators: js.UndefOr[ITemplateManipulators] = js.native
+  var templateManipulators: js.UndefOr[ITemplateManipulators] = js.undefined
   
-  var updateInitialValue: js.UndefOr[js.Function] = js.native
+  var updateInitialValue: js.UndefOr[js.Function] = js.undefined
   
-  var wrapper: js.UndefOr[String | js.Array[String]] = js.native
+  var wrapper: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object IFormOptionsAPI {
   

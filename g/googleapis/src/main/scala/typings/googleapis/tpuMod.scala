@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tpuMod {
+  
+  @JSImport("googleapis/build/src/apis/tpu", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -91,9 +94,12 @@ object tpuMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/tpu", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/tpu", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -137,16 +143,14 @@ object tpuMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/tpu", "tpu")
-  @js.native
-  def tpu(options: Options): Tpu = js.native
-  @JSImport("googleapis/build/src/apis/tpu", "tpu")
-  @js.native
-  def tpu(options: typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Options): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = js.native
-  @JSImport("googleapis/build/src/apis/tpu", "tpu")
-  @js.native
-  def tpu_v1(version: v1): Tpu = js.native
-  @JSImport("googleapis/build/src/apis/tpu", "tpu")
-  @js.native
-  def tpu_v1alpha1(version: v1alpha1): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = js.native
+  @scala.inline
+  def tpu(options: Options): Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(options.asInstanceOf[js.Any]).asInstanceOf[Tpu]
+  @scala.inline
+  def tpu(options: typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Options): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu]
+  
+  @scala.inline
+  def tpu_v1(version: v1): Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(version.asInstanceOf[js.Any]).asInstanceOf[Tpu]
+  
+  @scala.inline
+  def tpu_v1alpha1(version: v1alpha1): typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu = ^.asInstanceOf[js.Dynamic].applyDynamic("tpu")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.tpuV1alpha1Mod.tpuV1alpha1.Tpu]
 }

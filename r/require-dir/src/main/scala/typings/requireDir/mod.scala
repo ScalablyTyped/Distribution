@@ -3,32 +3,32 @@ package typings.requireDir
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("require-dir", JSImport.Namespace)
-  @js.native
-  def apply(directory: String): StringDictionary[js.Any] = js.native
-  @JSImport("require-dir", JSImport.Namespace)
-  @js.native
-  def apply(directory: String, options: options): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def apply(directory: String): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].apply(directory.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def apply(directory: String, options: options): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].apply(directory.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
+  @JSImport("require-dir", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait options extends StObject {
     
-    var duplicates: js.UndefOr[Boolean] = js.native
+    var duplicates: js.UndefOr[Boolean] = js.undefined
     
-    var extensions: js.UndefOr[js.Array[String]] = js.native
+    var extensions: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[js.Any] = js.native
+    var filter: js.UndefOr[js.Any] = js.undefined
     
-    var mapKey: js.UndefOr[js.Any] = js.native
+    var mapKey: js.UndefOr[js.Any] = js.undefined
     
-    var mapValue: js.UndefOr[js.Any] = js.native
+    var mapValue: js.UndefOr[js.Any] = js.undefined
     
-    var recurse: js.UndefOr[Boolean] = js.native
+    var recurse: js.UndefOr[Boolean] = js.undefined
   }
   object options {
     

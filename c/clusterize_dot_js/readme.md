@@ -12,7 +12,7 @@ Tiny vanilla JS plugin to display large data sets easily
 | Keywords           | large, vanillajs, table, grid, list, scroll, cluster |
 | # releases         | 0 |
 | # dependents       | 9 |
-| # downloads        | 69625 |
+| # downloads        | 68509 |
 | # stars            | 3 |
 
 ## Links

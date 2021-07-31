@@ -2,25 +2,23 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Sorts data in rows based on a sort order per column.
   */
-@js.native
 trait SchemaSortRangeRequest extends StObject {
   
   /**
     * The range to sort.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
     * The sort order per column. Later specifications are used when values are
     * equal in the earlier specifications.
     */
-  var sortSpecs: js.UndefOr[js.Array[SchemaSortSpec]] = js.native
+  var sortSpecs: js.UndefOr[js.Array[SchemaSortSpec]] = js.undefined
 }
 object SchemaSortRangeRequest {
   

@@ -3,15 +3,13 @@ package typings.plaidLink.mod
 import typings.plaidLink.anon.Create
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
   
-  @js.native
   trait Window extends StObject {
     
-    var Plaid: Create = js.native
+    var Plaid: Create
   }
   object Window {
     

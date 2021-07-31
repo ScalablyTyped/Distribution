@@ -2,59 +2,57 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILegend extends StObject {
   
-  var align: Double = js.native
+  var align: Double
   
-  def availRows(): Double = js.native
+  def availRows(): Double
   
-  var bounds: IRectangle = js.native
+  var bounds: IRectangle
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var dividing: IStroke = js.native
+  var dividing: IStroke
   
-  var fontColor: Boolean = js.native
+  var fontColor: Boolean
   
-  var format: IFormat = js.native
+  var format: IFormat
   
-  var innerOff: Double = js.native
+  var innerOff: Double
   
-  var inverted: Boolean = js.native
+  var inverted: Boolean
   
-  def isVertical(): Boolean = js.native
+  def isVertical(): Boolean
   
-  var itemHeight: Double = js.native
+  var itemHeight: Double
   
-  def itemText(series: ISeries, index: Double): String = js.native
+  def itemText(series: ISeries, index: Double): String
   
-  def itemsCount(): Double = js.native
+  def itemsCount(): Double
   
-  var legendStyle: String = js.native
+  var legendStyle: String
   
-  var over: Double = js.native
+  var over: Double
   
-  var padding: Double = js.native
+  var padding: Double
   
-  var position: String = js.native
+  var position: String
   
-  def showValues(): Boolean = js.native
+  def showValues(): Boolean
   
-  var symbol: ISymbol = js.native
+  var symbol: ISymbol
   
-  var textStyle: String = js.native
+  var textStyle: String
   
-  var title: IAnnotation = js.native
+  var title: IAnnotation
   
-  def totalWidth(): Double = js.native
+  def totalWidth(): Double
   
-  var transparent: Boolean = js.native
+  var transparent: Boolean
   
-  var visible: Boolean = js.native
+  var visible: Boolean
 }
 object ILegend {
   

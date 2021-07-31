@@ -5,15 +5,13 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.PHOTO
 import typings.instagramPrivateApi.instagramPrivateApiStrings.VIDEO
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MediaType extends StObject {
   
-  var mediaId: String = js.native
+  var mediaId: String
   
-  var mediaType: js.UndefOr[PHOTO | VIDEO | CAROUSEL] = js.native
+  var mediaType: js.UndefOr[PHOTO | VIDEO | CAROUSEL] = js.undefined
 }
 object MediaType {
   

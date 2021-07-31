@@ -2,41 +2,41 @@ package typings.mathjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Unit extends _MathType {
+trait Unit
+  extends StObject
+     with _MathType {
   
-  def abs(unit: Unit): Unit = js.native
+  def abs(unit: Unit): Unit
   
-  def divide(unit: Unit): Unit = js.native
+  def divide(unit: Unit): Unit
   
-  def equalBase(unit: Unit): Boolean = js.native
+  def equalBase(unit: Unit): Boolean
   
-  def equals(unit: Unit): Boolean = js.native
+  def equals(unit: Unit): Boolean
   
-  def format(options: FormatOptions): String = js.native
+  def format(options: FormatOptions): String
   
-  def formatUnits(): String = js.native
+  def formatUnits(): String
   
-  def hasBase(base: js.Any): Boolean = js.native
+  def hasBase(base: js.Any): Boolean
   
-  def multiply(unit: Unit): Unit = js.native
+  def multiply(unit: Unit): Unit
   
-  def pow(unit: Unit): Unit = js.native
+  def pow(unit: Unit): Unit
   
-  def splitUnit(parts: js.Array[String | Unit]): js.Array[Unit] = js.native
+  def splitUnit(parts: js.Array[String | Unit]): js.Array[Unit]
   
-  def to(unit: String): Unit = js.native
+  def to(unit: String): Unit
   
-  def toJSON(): MathJSON = js.native
+  def toJSON(): MathJSON
   
-  def toNumber(unit: String): Double = js.native
+  def toNumber(unit: String): Double
   
-  def toNumeric(unit: String): Double | Fraction | BigNumber = js.native
+  def toNumeric(unit: String): Double | Fraction | BigNumber
   
-  def toSI(): Unit = js.native
+  def toSI(): Unit
 }
 object Unit {
   

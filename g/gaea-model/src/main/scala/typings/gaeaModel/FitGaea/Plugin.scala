@@ -2,19 +2,17 @@ package typings.gaeaModel.FitGaea
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __React.ComponentClass<any> * / any */ @js.native
-trait Plugin extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __React.ComponentClass<any> * / any */ trait Plugin extends StObject {
   
-  var Action: js.UndefOr[js.Any] = js.native
+  var Action: js.UndefOr[js.Any] = js.undefined
   
-  var Store: js.UndefOr[js.Any] = js.native
+  var Store: js.UndefOr[js.Any] = js.undefined
   
   // 插件安放位置
-  var position: String = js.native
+  var position: String
 }
 object Plugin {
   

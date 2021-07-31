@@ -3,27 +3,26 @@ package typings.cssSelectorTokenizer.mod
 import typings.cssSelectorTokenizer.cssSelectorTokenizerStrings.`nested-item`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NestedItemNode
-  extends ValueNodeType
-     with BaseNode {
+  extends StObject
+     with BaseNode
+     with ValueNodeType {
   
   @JSName("name")
-  var name_NestedItemNode: String = js.native
+  var name_NestedItemNode: String
   
-  var nodes: js.Array[ValueNode] = js.native
+  var nodes: js.Array[ValueNode]
   
-  var `type`: `nested-item` = js.native
+  var `type`: `nested-item`
 }
 object NestedItemNode {
   
   @scala.inline
-  def apply(name: String, nodes: js.Array[ValueNode], `type`: `nested-item`): NestedItemNode = {
+  def apply(name: String, nodes: js.Array[ValueNode]): NestedItemNode = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], nodes = nodes.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("nested-item")
     __obj.asInstanceOf[NestedItemNode]
   }
   

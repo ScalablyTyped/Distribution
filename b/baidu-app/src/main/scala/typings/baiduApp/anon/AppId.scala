@@ -2,14 +2,12 @@ package typings.baiduApp.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppId extends StObject {
   
   /*小程序 appId     */
-  var appId: String = js.native
+  var appId: String
 }
 object AppId {
   

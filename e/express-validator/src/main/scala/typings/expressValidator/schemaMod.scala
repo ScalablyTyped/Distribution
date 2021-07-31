@@ -106,322 +106,322 @@ import typings.expressValidator.validationChainMod.ValidationChain
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object schemaMod {
   
-  @JSImport("express-validator/src/middlewares/schema", "checkSchema")
+  @JSImport("express-validator/src/middlewares/schema", JSImport.Namespace)
   @js.native
-  def checkSchema(schema: Schema): js.Array[ValidationChain] = js.native
-  @JSImport("express-validator/src/middlewares/schema", "checkSchema")
-  @js.native
-  def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): js.Array[ValidationChain] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def checkSchema(schema: Schema): js.Array[ValidationChain] = ^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any]).asInstanceOf[js.Array[ValidationChain]]
+  @scala.inline
+  def checkSchema(schema: Schema, defaultLocations: js.Array[Location]): js.Array[ValidationChain] = (^.asInstanceOf[js.Dynamic].applyDynamic("checkSchema")(schema.asInstanceOf[js.Any], defaultLocations.asInstanceOf[js.Any])).asInstanceOf[js.Array[ValidationChain]]
   
   /* Inlined express-validator.express-validator/src/middlewares/schema.ValidatorsSchema & express-validator.express-validator/src/middlewares/schema.SanitizersSchema */
-  @js.native
   trait InternalParamSchema extends StObject {
     
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
-      ] = js.native
+      ] = js.undefined
     
     var contains: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.contains]
-      ] = js.native
+      ] = js.undefined
     
-    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.native
+    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.undefined
     
     var customSanitizer: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.customSanitizer]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("equals")
-    var equals_FInternalParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.native
+    var equals_FInternalParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.undefined
     
-    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.native
+    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.undefined
     
-    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.native
+    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.undefined
     
-    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.native
+    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.undefined
     
-    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.native
+    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.undefined
     
     var isAlphanumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlphanumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.native
+    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.undefined
     
-    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.native
+    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.undefined
     
-    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.native
+    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.undefined
     
     var isBase32: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
-      ] = js.native
+      ] = js.undefined
     
     var isBase64: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase64]
-      ] = js.native
+      ] = js.undefined
     
     var isBefore: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBefore]
-      ] = js.native
+      ] = js.undefined
     
     var isBoolean: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBoolean]
-      ] = js.native
+      ] = js.undefined
     
     var isBtcAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBtcAddress]
-      ] = js.native
+      ] = js.undefined
     
     var isByteLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isByteLength]
-      ] = js.native
+      ] = js.undefined
     
     var isCreditCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCreditCard]
-      ] = js.native
+      ] = js.undefined
     
     var isCurrency: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCurrency]
-      ] = js.native
+      ] = js.undefined
     
     var isDataURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDataURI]
-      ] = js.native
+      ] = js.undefined
     
-    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.native
+    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.undefined
     
     var isDecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDecimal]
-      ] = js.native
+      ] = js.undefined
     
     var isDivisibleBy: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDivisibleBy]
-      ] = js.native
+      ] = js.undefined
     
-    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.native
+    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.undefined
     
-    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.native
+    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.undefined
     
-    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.native
+    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.undefined
     
     var isEthereumAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEthereumAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.native
+    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.undefined
     
-    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.native
+    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.undefined
     
     var isFullWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFullWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.native
+    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.undefined
     
     var isHalfWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHalfWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.native
+    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.undefined
     
     var isHexColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexColor]
-      ] = js.native
+      ] = js.undefined
     
     var isHexadecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexadecimal]
-      ] = js.native
+      ] = js.undefined
     
-    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.native
+    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.undefined
     
-    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.native
+    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.undefined
     
-    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.native
+    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.undefined
     
     var isIPRange: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIPRange]
-      ] = js.native
+      ] = js.undefined
     
-    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.native
+    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.undefined
     
-    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.native
+    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.undefined
     
     var isISO31661Alpha2: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha2]
-      ] = js.native
+      ] = js.undefined
     
     var isISO31661Alpha3: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
-      ] = js.native
+      ] = js.undefined
     
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
-      ] = js.native
+      ] = js.undefined
     
-    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.native
+    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.undefined
     
-    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.native
+    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.undefined
     
     var isIdentityCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIdentityCard]
-      ] = js.native
+      ] = js.undefined
     
-    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.native
+    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.undefined
     
-    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.native
+    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.undefined
     
-    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.native
+    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.undefined
     
-    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.native
+    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.undefined
     
     var isLatLong: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLatLong]
-      ] = js.native
+      ] = js.undefined
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
-      ] = js.native
+      ] = js.undefined
     
     var isLocale: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLocale]
-      ] = js.native
+      ] = js.undefined
     
     var isLowercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLowercase]
-      ] = js.native
+      ] = js.undefined
     
     var isMACAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMACAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.native
+    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.undefined
     
     var isMagnetURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMagnetURI]
-      ] = js.native
+      ] = js.undefined
     
     var isMimeType: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMimeType]
-      ] = js.native
+      ] = js.undefined
     
     var isMobilePhone: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMobilePhone]
-      ] = js.native
+      ] = js.undefined
     
     var isMongoId: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMongoId]
-      ] = js.native
+      ] = js.undefined
     
     var isMultibyte: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMultibyte]
-      ] = js.native
+      ] = js.undefined
     
     var isNumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.native
+    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPassportNumber]
-      ] = js.native
+      ] = js.undefined
     
-    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.native
+    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.undefined
     
     var isPostalCode: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPostalCode]
-      ] = js.native
+      ] = js.undefined
     
     var isRFC3339: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRFC3339]
-      ] = js.native
+      ] = js.undefined
     
     var isRgbColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRgbColor]
-      ] = js.native
+      ] = js.undefined
     
     var isSemVer: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSemVer]
-      ] = js.native
+      ] = js.undefined
     
-    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.native
+    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.undefined
     
     var isString: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
-      ] = js.native
+      ] = js.undefined
     
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
-      ] = js.native
+      ] = js.undefined
     
-    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.native
+    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.undefined
     
-    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.native
+    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.undefined
     
-    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.native
+    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.undefined
     
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
-      ] = js.native
+      ] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
-      ] = js.native
+      ] = js.undefined
     
     var isWhitelisted: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isWhitelisted]
-      ] = js.native
+      ] = js.undefined
     
-    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.native
+    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.undefined
     
-    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.native
+    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.undefined
     
     var normalizeEmail: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.normalizeEmail]
-      ] = js.native
+      ] = js.undefined
     
-    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.native
+    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.undefined
     
     var notEmpty: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.notEmpty]
-      ] = js.native
+      ] = js.undefined
     
-    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.native
+    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
     var stripLow: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.stripLow]
-      ] = js.native
+      ] = js.undefined
     
-    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.native
+    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.undefined
     
     var toBoolean: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toBoolean]
-      ] = js.native
+      ] = js.undefined
     
-    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.native
+    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.undefined
     
-    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.native
+    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
-    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.native
+    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
     
-    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.native
+    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
     var unescape: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.unescape]
-      ] = js.native
+      ] = js.undefined
     
     var whitelist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.whitelist]
-      ] = js.native
+      ] = js.undefined
     
     var withMessage: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.withMessage]
-      ] = js.native
+      ] = js.undefined
   }
   object InternalParamSchema {
     
@@ -1019,315 +1019,314 @@ object schemaMod {
   }
   
   /* Inlined express-validator.express-validator/src/middlewares/schema.InternalParamSchema & {  in :express-validator.express-validator/src/base.Location | std.Array<express-validator.express-validator/src/base.Location> | undefined,   errorMessage :express-validator.express-validator/src/base.DynamicMessageCreator | any | undefined,   optional :true | {  options :std.Partial<express-validator.express-validator/src/context.Optional> | undefined} | undefined} */
-  @js.native
   trait ParamSchema extends StObject {
     
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
-      ] = js.native
+      ] = js.undefined
     
     var contains: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.contains]
-      ] = js.native
+      ] = js.undefined
     
-    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.native
+    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.undefined
     
     var customSanitizer: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.customSanitizer]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("equals")
-    var equals_FParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.native
+    var equals_FParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.undefined
     
-    var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.native
+    var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
     
-    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.native
+    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.undefined
     
-    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.native
+    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.undefined
     
-    var in: js.UndefOr[Location | js.Array[Location]] = js.native
+    var in: js.UndefOr[Location | js.Array[Location]] = js.undefined
     
-    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.native
+    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.undefined
     
-    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.native
+    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.undefined
     
     var isAlphanumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlphanumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.native
+    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.undefined
     
-    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.native
+    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.undefined
     
-    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.native
+    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.undefined
     
     var isBase32: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
-      ] = js.native
+      ] = js.undefined
     
     var isBase64: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase64]
-      ] = js.native
+      ] = js.undefined
     
     var isBefore: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBefore]
-      ] = js.native
+      ] = js.undefined
     
     var isBoolean: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBoolean]
-      ] = js.native
+      ] = js.undefined
     
     var isBtcAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBtcAddress]
-      ] = js.native
+      ] = js.undefined
     
     var isByteLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isByteLength]
-      ] = js.native
+      ] = js.undefined
     
     var isCreditCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCreditCard]
-      ] = js.native
+      ] = js.undefined
     
     var isCurrency: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCurrency]
-      ] = js.native
+      ] = js.undefined
     
     var isDataURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDataURI]
-      ] = js.native
+      ] = js.undefined
     
-    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.native
+    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.undefined
     
     var isDecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDecimal]
-      ] = js.native
+      ] = js.undefined
     
     var isDivisibleBy: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDivisibleBy]
-      ] = js.native
+      ] = js.undefined
     
-    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.native
+    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.undefined
     
-    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.native
+    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.undefined
     
-    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.native
+    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.undefined
     
     var isEthereumAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEthereumAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.native
+    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.undefined
     
-    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.native
+    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.undefined
     
     var isFullWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFullWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.native
+    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.undefined
     
     var isHalfWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHalfWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.native
+    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.undefined
     
     var isHexColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexColor]
-      ] = js.native
+      ] = js.undefined
     
     var isHexadecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexadecimal]
-      ] = js.native
+      ] = js.undefined
     
-    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.native
+    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.undefined
     
-    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.native
+    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.undefined
     
-    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.native
+    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.undefined
     
     var isIPRange: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIPRange]
-      ] = js.native
+      ] = js.undefined
     
-    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.native
+    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.undefined
     
-    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.native
+    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.undefined
     
     var isISO31661Alpha2: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha2]
-      ] = js.native
+      ] = js.undefined
     
     var isISO31661Alpha3: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
-      ] = js.native
+      ] = js.undefined
     
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
-      ] = js.native
+      ] = js.undefined
     
-    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.native
+    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.undefined
     
-    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.native
+    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.undefined
     
     var isIdentityCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIdentityCard]
-      ] = js.native
+      ] = js.undefined
     
-    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.native
+    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.undefined
     
-    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.native
+    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.undefined
     
-    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.native
+    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.undefined
     
-    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.native
+    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.undefined
     
     var isLatLong: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLatLong]
-      ] = js.native
+      ] = js.undefined
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
-      ] = js.native
+      ] = js.undefined
     
     var isLocale: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLocale]
-      ] = js.native
+      ] = js.undefined
     
     var isLowercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLowercase]
-      ] = js.native
+      ] = js.undefined
     
     var isMACAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMACAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.native
+    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.undefined
     
     var isMagnetURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMagnetURI]
-      ] = js.native
+      ] = js.undefined
     
     var isMimeType: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMimeType]
-      ] = js.native
+      ] = js.undefined
     
     var isMobilePhone: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMobilePhone]
-      ] = js.native
+      ] = js.undefined
     
     var isMongoId: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMongoId]
-      ] = js.native
+      ] = js.undefined
     
     var isMultibyte: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMultibyte]
-      ] = js.native
+      ] = js.undefined
     
     var isNumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.native
+    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPassportNumber]
-      ] = js.native
+      ] = js.undefined
     
-    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.native
+    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.undefined
     
     var isPostalCode: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPostalCode]
-      ] = js.native
+      ] = js.undefined
     
     var isRFC3339: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRFC3339]
-      ] = js.native
+      ] = js.undefined
     
     var isRgbColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRgbColor]
-      ] = js.native
+      ] = js.undefined
     
     var isSemVer: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSemVer]
-      ] = js.native
+      ] = js.undefined
     
-    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.native
+    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.undefined
     
     var isString: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
-      ] = js.native
+      ] = js.undefined
     
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
-      ] = js.native
+      ] = js.undefined
     
-    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.native
+    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.undefined
     
-    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.native
+    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.undefined
     
-    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.native
+    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.undefined
     
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
-      ] = js.native
+      ] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
-      ] = js.native
+      ] = js.undefined
     
     var isWhitelisted: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isWhitelisted]
-      ] = js.native
+      ] = js.undefined
     
-    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.native
+    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.undefined
     
-    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.native
+    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.undefined
     
     var normalizeEmail: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.normalizeEmail]
-      ] = js.native
+      ] = js.undefined
     
-    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.native
+    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.undefined
     
     var notEmpty: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.notEmpty]
-      ] = js.native
+      ] = js.undefined
     
-    var optional: js.UndefOr[`true` | `0`] = js.native
+    var optional: js.UndefOr[`true` | `0`] = js.undefined
     
-    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.native
+    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
     var stripLow: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.stripLow]
-      ] = js.native
+      ] = js.undefined
     
-    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.native
+    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.undefined
     
     var toBoolean: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toBoolean]
-      ] = js.native
+      ] = js.undefined
     
-    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.native
+    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.undefined
     
-    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.native
+    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
-    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.native
+    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
     
-    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.native
+    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
     var unescape: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.unescape]
-      ] = js.native
+      ] = js.undefined
     
     var whitelist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.whitelist]
-      ] = js.native
+      ] = js.undefined
     
     var withMessage: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.withMessage]
-      ] = js.native
+      ] = js.undefined
   }
   object ParamSchema {
     
@@ -1955,52 +1954,51 @@ object schemaMod {
   trait SanitizerSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> */ customSanitizer | blacklist | escape | unescape | ltrim | normalizeEmail | rtrim | stripLow | toArray | toBoolean | toDate | toFloat | toInt | trim | whitelist */] extends StObject
   
   /* Inlined {[ K in keyof express-validator.express-validator/src/chain/sanitizers.Sanitizers<any> ]:? express-validator.express-validator/src/middlewares/schema.SanitizerSchemaOptions<K>} */
-  @js.native
   trait SanitizersSchema extends StObject {
     
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
-      ] = js.native
+      ] = js.undefined
     
     var customSanitizer: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.customSanitizer]
-      ] = js.native
+      ] = js.undefined
     
-    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.native
+    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.undefined
     
-    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.native
+    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.undefined
     
     var normalizeEmail: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.normalizeEmail]
-      ] = js.native
+      ] = js.undefined
     
-    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.native
+    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
     var stripLow: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.stripLow]
-      ] = js.native
+      ] = js.undefined
     
-    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.native
+    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.undefined
     
     var toBoolean: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toBoolean]
-      ] = js.native
+      ] = js.undefined
     
-    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.native
+    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.undefined
     
-    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.native
+    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
-    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.native
+    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
     
-    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.native
+    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
     var unescape: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.unescape]
-      ] = js.native
+      ] = js.undefined
     
     var whitelist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.whitelist]
-      ] = js.native
+      ] = js.undefined
   }
   object SanitizersSchema {
     
@@ -2108,315 +2106,314 @@ object schemaMod {
   type Schema = Record[String, ParamSchema]
   
   /* Inlined express-validator.express-validator/src/middlewares/schema.ParamSchema */
-  @js.native
   trait ValidationParamSchema extends StObject {
     
     var blacklist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.blacklist]
-      ] = js.native
+      ] = js.undefined
     
     var contains: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.contains]
-      ] = js.native
+      ] = js.undefined
     
-    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.native
+    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.undefined
     
     var customSanitizer: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.customSanitizer]
-      ] = js.native
+      ] = js.undefined
     
     @JSName("equals")
-    var equals_FValidationParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.native
+    var equals_FValidationParamSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.undefined
     
-    var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.native
+    var errorMessage: js.UndefOr[DynamicMessageCreator | js.Any] = js.undefined
     
-    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.native
+    var escape: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.escape]] = js.undefined
     
-    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.native
+    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.undefined
     
-    var in: js.UndefOr[Location | js.Array[Location]] = js.native
+    var in: js.UndefOr[Location | js.Array[Location]] = js.undefined
     
-    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.native
+    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.undefined
     
-    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.native
+    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.undefined
     
     var isAlphanumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlphanumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.native
+    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.undefined
     
-    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.native
+    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.undefined
     
-    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.native
+    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.undefined
     
     var isBase32: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
-      ] = js.native
+      ] = js.undefined
     
     var isBase64: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase64]
-      ] = js.native
+      ] = js.undefined
     
     var isBefore: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBefore]
-      ] = js.native
+      ] = js.undefined
     
     var isBoolean: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBoolean]
-      ] = js.native
+      ] = js.undefined
     
     var isBtcAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBtcAddress]
-      ] = js.native
+      ] = js.undefined
     
     var isByteLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isByteLength]
-      ] = js.native
+      ] = js.undefined
     
     var isCreditCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCreditCard]
-      ] = js.native
+      ] = js.undefined
     
     var isCurrency: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCurrency]
-      ] = js.native
+      ] = js.undefined
     
     var isDataURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDataURI]
-      ] = js.native
+      ] = js.undefined
     
-    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.native
+    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.undefined
     
     var isDecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDecimal]
-      ] = js.native
+      ] = js.undefined
     
     var isDivisibleBy: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDivisibleBy]
-      ] = js.native
+      ] = js.undefined
     
-    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.native
+    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.undefined
     
-    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.native
+    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.undefined
     
-    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.native
+    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.undefined
     
     var isEthereumAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEthereumAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.native
+    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.undefined
     
-    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.native
+    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.undefined
     
     var isFullWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFullWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.native
+    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.undefined
     
     var isHalfWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHalfWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.native
+    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.undefined
     
     var isHexColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexColor]
-      ] = js.native
+      ] = js.undefined
     
     var isHexadecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexadecimal]
-      ] = js.native
+      ] = js.undefined
     
-    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.native
+    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.undefined
     
-    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.native
+    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.undefined
     
-    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.native
+    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.undefined
     
     var isIPRange: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIPRange]
-      ] = js.native
+      ] = js.undefined
     
-    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.native
+    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.undefined
     
-    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.native
+    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.undefined
     
     var isISO31661Alpha2: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha2]
-      ] = js.native
+      ] = js.undefined
     
     var isISO31661Alpha3: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
-      ] = js.native
+      ] = js.undefined
     
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
-      ] = js.native
+      ] = js.undefined
     
-    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.native
+    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.undefined
     
-    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.native
+    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.undefined
     
     var isIdentityCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIdentityCard]
-      ] = js.native
+      ] = js.undefined
     
-    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.native
+    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.undefined
     
-    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.native
+    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.undefined
     
-    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.native
+    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.undefined
     
-    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.native
+    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.undefined
     
     var isLatLong: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLatLong]
-      ] = js.native
+      ] = js.undefined
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
-      ] = js.native
+      ] = js.undefined
     
     var isLocale: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLocale]
-      ] = js.native
+      ] = js.undefined
     
     var isLowercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLowercase]
-      ] = js.native
+      ] = js.undefined
     
     var isMACAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMACAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.native
+    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.undefined
     
     var isMagnetURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMagnetURI]
-      ] = js.native
+      ] = js.undefined
     
     var isMimeType: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMimeType]
-      ] = js.native
+      ] = js.undefined
     
     var isMobilePhone: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMobilePhone]
-      ] = js.native
+      ] = js.undefined
     
     var isMongoId: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMongoId]
-      ] = js.native
+      ] = js.undefined
     
     var isMultibyte: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMultibyte]
-      ] = js.native
+      ] = js.undefined
     
     var isNumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.native
+    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPassportNumber]
-      ] = js.native
+      ] = js.undefined
     
-    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.native
+    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.undefined
     
     var isPostalCode: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPostalCode]
-      ] = js.native
+      ] = js.undefined
     
     var isRFC3339: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRFC3339]
-      ] = js.native
+      ] = js.undefined
     
     var isRgbColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRgbColor]
-      ] = js.native
+      ] = js.undefined
     
     var isSemVer: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSemVer]
-      ] = js.native
+      ] = js.undefined
     
-    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.native
+    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.undefined
     
     var isString: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
-      ] = js.native
+      ] = js.undefined
     
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
-      ] = js.native
+      ] = js.undefined
     
-    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.native
+    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.undefined
     
-    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.native
+    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.undefined
     
-    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.native
+    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.undefined
     
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
-      ] = js.native
+      ] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
-      ] = js.native
+      ] = js.undefined
     
     var isWhitelisted: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isWhitelisted]
-      ] = js.native
+      ] = js.undefined
     
-    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.native
+    var ltrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.ltrim]] = js.undefined
     
-    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.native
+    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.undefined
     
     var normalizeEmail: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.normalizeEmail]
-      ] = js.native
+      ] = js.undefined
     
-    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.native
+    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.undefined
     
     var notEmpty: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.notEmpty]
-      ] = js.native
+      ] = js.undefined
     
-    var optional: js.UndefOr[`true` | `0`] = js.native
+    var optional: js.UndefOr[`true` | `0`] = js.undefined
     
-    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.native
+    var rtrim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.rtrim]] = js.undefined
     
     var stripLow: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.stripLow]
-      ] = js.native
+      ] = js.undefined
     
-    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.native
+    var toArray: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toArray]] = js.undefined
     
     var toBoolean: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toBoolean]
-      ] = js.native
+      ] = js.undefined
     
-    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.native
+    var toDate: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toDate]] = js.undefined
     
-    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.native
+    var toFloat: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toFloat]] = js.undefined
     
-    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.native
+    var toInt: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.toInt]] = js.undefined
     
-    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.native
+    var trim: js.UndefOr[SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.trim]] = js.undefined
     
     var unescape: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.unescape]
-      ] = js.native
+      ] = js.undefined
     
     var whitelist: js.UndefOr[
         SanitizerSchemaOptions[typings.expressValidator.expressValidatorStrings.whitelist]
-      ] = js.native
+      ] = js.undefined
     
     var withMessage: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.withMessage]
-      ] = js.native
+      ] = js.undefined
   }
   object ValidationParamSchema {
     
@@ -3046,265 +3043,264 @@ object schemaMod {
   trait ValidatorSchemaOptions[K /* <: /* keyof express-validator.express-validator/src/chain/validators.Validators<any> */ /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 82 */ js.Any */] extends StObject
   
   /* Inlined {[ K in keyof express-validator.express-validator/src/chain/validators.Validators<any> ]:? express-validator.express-validator/src/middlewares/schema.ValidatorSchemaOptions<K>} */
-  @js.native
   trait ValidatorsSchema extends StObject {
     
     var contains: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.contains]
-      ] = js.native
+      ] = js.undefined
     
-    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.native
+    var custom: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.custom]] = js.undefined
     
     @JSName("equals")
-    var equals_FValidatorsSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.native
+    var equals_FValidatorsSchema: js.UndefOr[ValidatorSchemaOptions[equals]] = js.undefined
     
-    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.native
+    var exists: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.exists]] = js.undefined
     
-    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.native
+    var isAfter: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAfter]] = js.undefined
     
-    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.native
+    var isAlpha: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlpha]] = js.undefined
     
     var isAlphanumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAlphanumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.native
+    var isArray: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isArray]] = js.undefined
     
-    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.native
+    var isAscii: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isAscii]] = js.undefined
     
-    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.native
+    var isBIC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBIC]] = js.undefined
     
     var isBase32: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase32]
-      ] = js.native
+      ] = js.undefined
     
     var isBase64: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBase64]
-      ] = js.native
+      ] = js.undefined
     
     var isBefore: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBefore]
-      ] = js.native
+      ] = js.undefined
     
     var isBoolean: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBoolean]
-      ] = js.native
+      ] = js.undefined
     
     var isBtcAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isBtcAddress]
-      ] = js.native
+      ] = js.undefined
     
     var isByteLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isByteLength]
-      ] = js.native
+      ] = js.undefined
     
     var isCreditCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCreditCard]
-      ] = js.native
+      ] = js.undefined
     
     var isCurrency: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isCurrency]
-      ] = js.native
+      ] = js.undefined
     
     var isDataURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDataURI]
-      ] = js.native
+      ] = js.undefined
     
-    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.native
+    var isDate: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDate]] = js.undefined
     
     var isDecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDecimal]
-      ] = js.native
+      ] = js.undefined
     
     var isDivisibleBy: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isDivisibleBy]
-      ] = js.native
+      ] = js.undefined
     
-    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.native
+    var isEAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEAN]] = js.undefined
     
-    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.native
+    var isEmail: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmail]] = js.undefined
     
-    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.native
+    var isEmpty: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEmpty]] = js.undefined
     
     var isEthereumAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isEthereumAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.native
+    var isFQDN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFQDN]] = js.undefined
     
-    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.native
+    var isFloat: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFloat]] = js.undefined
     
     var isFullWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isFullWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.native
+    var isHSL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHSL]] = js.undefined
     
     var isHalfWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHalfWidth]
-      ] = js.native
+      ] = js.undefined
     
-    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.native
+    var isHash: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHash]] = js.undefined
     
     var isHexColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexColor]
-      ] = js.native
+      ] = js.undefined
     
     var isHexadecimal: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isHexadecimal]
-      ] = js.native
+      ] = js.undefined
     
-    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.native
+    var isIBAN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIBAN]] = js.undefined
     
-    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.native
+    var isIMEI: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIMEI]] = js.undefined
     
-    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.native
+    var isIP: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIP]] = js.undefined
     
     var isIPRange: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIPRange]
-      ] = js.native
+      ] = js.undefined
     
-    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.native
+    var isISBN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISBN]] = js.undefined
     
-    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.native
+    var isISIN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISIN]] = js.undefined
     
     var isISO31661Alpha2: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha2]
-      ] = js.native
+      ] = js.undefined
     
     var isISO31661Alpha3: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO31661Alpha3]
-      ] = js.native
+      ] = js.undefined
     
     var isISO8601: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISO8601]
-      ] = js.native
+      ] = js.undefined
     
-    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.native
+    var isISRC: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISRC]] = js.undefined
     
-    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.native
+    var isISSN: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isISSN]] = js.undefined
     
     var isIdentityCard: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIdentityCard]
-      ] = js.native
+      ] = js.undefined
     
-    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.native
+    var isIn: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isIn]] = js.undefined
     
-    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.native
+    var isInt: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isInt]] = js.undefined
     
-    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.native
+    var isJSON: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJSON]] = js.undefined
     
-    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.native
+    var isJWT: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isJWT]] = js.undefined
     
     var isLatLong: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLatLong]
-      ] = js.native
+      ] = js.undefined
     
     var isLength: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLength]
-      ] = js.native
+      ] = js.undefined
     
     var isLocale: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLocale]
-      ] = js.native
+      ] = js.undefined
     
     var isLowercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isLowercase]
-      ] = js.native
+      ] = js.undefined
     
     var isMACAddress: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMACAddress]
-      ] = js.native
+      ] = js.undefined
     
-    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.native
+    var isMD5: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMD5]] = js.undefined
     
     var isMagnetURI: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMagnetURI]
-      ] = js.native
+      ] = js.undefined
     
     var isMimeType: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMimeType]
-      ] = js.native
+      ] = js.undefined
     
     var isMobilePhone: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMobilePhone]
-      ] = js.native
+      ] = js.undefined
     
     var isMongoId: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMongoId]
-      ] = js.native
+      ] = js.undefined
     
     var isMultibyte: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isMultibyte]
-      ] = js.native
+      ] = js.undefined
     
     var isNumeric: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isNumeric]
-      ] = js.native
+      ] = js.undefined
     
-    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.native
+    var isOctal: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isOctal]] = js.undefined
     
     var isPassportNumber: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPassportNumber]
-      ] = js.native
+      ] = js.undefined
     
-    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.native
+    var isPort: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPort]] = js.undefined
     
     var isPostalCode: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isPostalCode]
-      ] = js.native
+      ] = js.undefined
     
     var isRFC3339: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRFC3339]
-      ] = js.native
+      ] = js.undefined
     
     var isRgbColor: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isRgbColor]
-      ] = js.native
+      ] = js.undefined
     
     var isSemVer: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSemVer]
-      ] = js.native
+      ] = js.undefined
     
-    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.native
+    var isSlug: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSlug]] = js.undefined
     
     var isString: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isString]
-      ] = js.native
+      ] = js.undefined
     
     var isSurrogatePair: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isSurrogatePair]
-      ] = js.native
+      ] = js.undefined
     
-    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.native
+    var isTaxID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isTaxID]] = js.undefined
     
-    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.native
+    var isURL: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isURL]] = js.undefined
     
-    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.native
+    var isUUID: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUUID]] = js.undefined
     
     var isUppercase: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isUppercase]
-      ] = js.native
+      ] = js.undefined
     
     var isVariableWidth: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isVariableWidth]
-      ] = js.native
+      ] = js.undefined
     
     var isWhitelisted: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.isWhitelisted]
-      ] = js.native
+      ] = js.undefined
     
-    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.native
+    var matches: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.matches]] = js.undefined
     
-    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.native
+    var not: js.UndefOr[ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.not]] = js.undefined
     
     var notEmpty: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.notEmpty]
-      ] = js.native
+      ] = js.undefined
     
     var withMessage: js.UndefOr[
         ValidatorSchemaOptions[typings.expressValidator.expressValidatorStrings.withMessage]
-      ] = js.native
+      ] = js.undefined
   }
   object ValidatorsSchema {
     

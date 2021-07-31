@@ -1,14 +1,11 @@
 package typings.babelTypes.ts36Mod
 
-import typings.babelTypes.babelTypesStrings.ClassMethod
-import typings.babelTypes.babelTypesStrings.ObjectMethod
 import typings.babelTypes.babelTypesStrings.constructor
 import typings.babelTypes.babelTypesStrings.get
 import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -32,11 +29,10 @@ object Method {
     loc: SourceLocation,
     params: js.Array[LVal],
     start: Double,
-    static: Boolean,
-    `type`: ClassMethod
+    static: Boolean
   ): typings.babelTypes.ts36Mod.ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassMethod")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ClassMethod_]
   }
   
@@ -54,11 +50,10 @@ object Method {
     params: js.Array[LVal],
     shorthand: Boolean,
     start: Double,
-    `type`: ObjectMethod,
     value: Expression
   ): typings.babelTypes.ts36Mod.ObjectMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], shorthand = shorthand.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ObjectMethod")
     __obj.asInstanceOf[typings.babelTypes.ts36Mod.ObjectMethod_]
   }
 }

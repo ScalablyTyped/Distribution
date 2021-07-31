@@ -2,30 +2,23 @@ package typings.vegaLite.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Radius extends StObject {
   
-  val radius: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val radius: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val radius2: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val radius2: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val theta: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val theta: typings.vegaLite.vegaLiteNumbers.`1`
   
-  val theta2: typings.vegaLite.vegaLiteNumbers.`1` = js.native
+  val theta2: typings.vegaLite.vegaLiteNumbers.`1`
 }
 object Radius {
   
   @scala.inline
-  def apply(
-    radius: typings.vegaLite.vegaLiteNumbers.`1`,
-    radius2: typings.vegaLite.vegaLiteNumbers.`1`,
-    theta: typings.vegaLite.vegaLiteNumbers.`1`,
-    theta2: typings.vegaLite.vegaLiteNumbers.`1`
-  ): Radius = {
-    val __obj = js.Dynamic.literal(radius = radius.asInstanceOf[js.Any], radius2 = radius2.asInstanceOf[js.Any], theta = theta.asInstanceOf[js.Any], theta2 = theta2.asInstanceOf[js.Any])
+  def apply(): Radius = {
+    val __obj = js.Dynamic.literal(radius = 1, radius2 = 1, theta = 1, theta2 = 1)
     __obj.asInstanceOf[Radius]
   }
   

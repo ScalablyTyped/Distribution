@@ -9,10 +9,8 @@ import typings.react.mod.ComponentState
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MonthPicker[DateType] extends StObject {
   
   var MonthPicker: ComponentClass[
@@ -20,42 +18,42 @@ trait MonthPicker[DateType] extends StObject {
       InjectDefaultProps[PickerDateProps[DateType]], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
     ], 
-    _
-  ] = js.native
+    js.Any
+  ]
   
   var QuarterPicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerTimeProps[DateType]], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ js.Any
     ], 
-    _
-  ] = js.native
+    js.Any
+  ]
   
-  var RangePicker: ComponentClass[RangePickerProps[DateType], ComponentState] = js.native
+  var RangePicker: ComponentClass[RangePickerProps[DateType], ComponentState]
   
   var TimePicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerTimeProps[DateType]], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ js.Any
     ], 
-    _
-  ] = js.native
+    js.Any
+  ]
   
   var WeekPicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerDateProps[DateType]], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
     ], 
-    _
-  ] = js.native
+    js.Any
+  ]
   
   var YearPicker: ComponentClass[
     Pick[
       InjectDefaultProps[PickerDateProps[DateType]], 
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
     ], 
-    _
-  ] = js.native
+    js.Any
+  ]
 }
 object MonthPicker {
   
@@ -66,14 +64,14 @@ object MonthPicker {
         InjectDefaultProps[PickerDateProps[DateType]], 
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
       ], 
-      _
+      js.Any
     ],
     QuarterPicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerTimeProps[DateType]], 
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ js.Any
       ], 
-      _
+      js.Any
     ],
     RangePicker: ComponentClass[RangePickerProps[DateType], ComponentState],
     TimePicker: ComponentClass[
@@ -81,21 +79,21 @@ object MonthPicker {
         InjectDefaultProps[PickerTimeProps[DateType]], 
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ js.Any
       ], 
-      _
+      js.Any
     ],
     WeekPicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerDateProps[DateType]], 
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
       ], 
-      _
+      js.Any
     ],
     YearPicker: ComponentClass[
       Pick[
         InjectDefaultProps[PickerDateProps[DateType]], 
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
       ], 
-      _
+      js.Any
     ]
   ): MonthPicker[DateType] = {
     val __obj = js.Dynamic.literal(MonthPicker = MonthPicker.asInstanceOf[js.Any], QuarterPicker = QuarterPicker.asInstanceOf[js.Any], RangePicker = RangePicker.asInstanceOf[js.Any], TimePicker = TimePicker.asInstanceOf[js.Any], WeekPicker = WeekPicker.asInstanceOf[js.Any], YearPicker = YearPicker.asInstanceOf[js.Any])
@@ -103,7 +101,7 @@ object MonthPicker {
   }
   
   @scala.inline
-  implicit class MonthPickerMutableBuilder[Self <: MonthPicker[_], DateType] (val x: Self with MonthPicker[DateType]) extends AnyVal {
+  implicit class MonthPickerMutableBuilder[Self <: MonthPicker[?], DateType] (val x: Self & MonthPicker[DateType]) extends AnyVal {
     
     @scala.inline
     def setMonthPicker(
@@ -112,7 +110,7 @@ object MonthPicker {
             InjectDefaultProps[PickerDateProps[DateType]], 
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "MonthPicker", value.asInstanceOf[js.Any])
     
@@ -123,7 +121,7 @@ object MonthPicker {
             InjectDefaultProps[PickerTimeProps[DateType]], 
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "QuarterPicker", value.asInstanceOf[js.Any])
     
@@ -137,7 +135,7 @@ object MonthPicker {
             InjectDefaultProps[PickerTimeProps[DateType]], 
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 111 */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "TimePicker", value.asInstanceOf[js.Any])
     
@@ -148,7 +146,7 @@ object MonthPicker {
             InjectDefaultProps[PickerDateProps[DateType]], 
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "WeekPicker", value.asInstanceOf[js.Any])
     
@@ -159,7 +157,7 @@ object MonthPicker {
             InjectDefaultProps[PickerDateProps[DateType]], 
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 102 */ js.Any
           ], 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "YearPicker", value.asInstanceOf[js.Any])
   }

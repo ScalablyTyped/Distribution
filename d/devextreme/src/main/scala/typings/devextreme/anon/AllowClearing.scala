@@ -4,21 +4,19 @@ import typings.devextreme.mod.DevExpress.data.DataSourceOptions
 import typings.devextreme.mod.DevExpress.data.Store
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowClearing extends StObject {
   
-  var allowClearing: js.UndefOr[Boolean] = js.native
+  var allowClearing: js.UndefOr[Boolean] = js.undefined
   
   var dataSource: js.UndefOr[
-    js.Array[_] | DataSourceOptions | Store | (js.Function1[/* options */ DataKey, js.Array[_] | DataSourceOptions | Store])
-  ] = js.native
+    js.Array[js.Any] | DataSourceOptions | Store | (js.Function1[/* options */ DataKey, js.Array[js.Any] | DataSourceOptions | Store])
+  ] = js.undefined
   
-  var displayExpr: js.UndefOr[String | (js.Function1[/* data */ js.Any, String])] = js.native
+  var displayExpr: js.UndefOr[String | (js.Function1[/* data */ js.Any, String])] = js.undefined
   
-  var valueExpr: js.UndefOr[String] = js.native
+  var valueExpr: js.UndefOr[String] = js.undefined
 }
 object AllowClearing {
   
@@ -39,11 +37,11 @@ object AllowClearing {
     
     @scala.inline
     def setDataSource(
-      value: js.Array[_] | DataSourceOptions | Store | (js.Function1[/* options */ DataKey, js.Array[_] | DataSourceOptions | Store])
+      value: js.Array[js.Any] | DataSourceOptions | Store | (js.Function1[/* options */ DataKey, js.Array[js.Any] | DataSourceOptions | Store])
     ): Self = StObject.set(x, "dataSource", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataSourceFunction1(value: /* options */ DataKey => js.Array[_] | DataSourceOptions | Store): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
+    def setDataSourceFunction1(value: /* options */ DataKey => js.Array[js.Any] | DataSourceOptions | Store): Self = StObject.set(x, "dataSource", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataSourceUndefined: Self = StObject.set(x, "dataSource", js.undefined)

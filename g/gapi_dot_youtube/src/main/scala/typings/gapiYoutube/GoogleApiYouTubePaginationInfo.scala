@@ -3,41 +3,39 @@ package typings.gapiYoutube
 import typings.gapiYoutube.anon.ResultsPerPage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleApiYouTubePaginationInfo[T] extends StObject {
   
   /**
     * The ETag of the response.
     */
-  var etag: String = js.native
+  var etag: String
   
   /**
     * A list of activities, or events, that match the request criteria.
     */
-  var items: js.Array[T] = js.native
+  var items: js.Array[T]
   
   /**
     * The type of the API response. For this operation, the value will be youtube#activityListResponse.
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * The token that can be used as the value of the pageToken parameter to retrieve the next page in the result set.
     */
-  var nextPageToken: String = js.native
+  var nextPageToken: String
   
   /**
     * The pageInfo object encapsulates paging information for the result set.
     */
-  var pageInfo: ResultsPerPage = js.native
+  var pageInfo: ResultsPerPage
   
   /**
     * The token that can be used as the value of the pageToken parameter to retrieve the previous page in the result set.
     */
-  var prevPageToken: String = js.native
+  var prevPageToken: String
 }
 object GoogleApiYouTubePaginationInfo {
   
@@ -55,7 +53,7 @@ object GoogleApiYouTubePaginationInfo {
   }
   
   @scala.inline
-  implicit class GoogleApiYouTubePaginationInfoMutableBuilder[Self <: GoogleApiYouTubePaginationInfo[_], T] (val x: Self with GoogleApiYouTubePaginationInfo[T]) extends AnyVal {
+  implicit class GoogleApiYouTubePaginationInfoMutableBuilder[Self <: GoogleApiYouTubePaginationInfo[?], T] (val x: Self & GoogleApiYouTubePaginationInfo[T]) extends AnyVal {
     
     @scala.inline
     def setEtag(value: String): Self = StObject.set(x, "etag", value.asInstanceOf[js.Any])

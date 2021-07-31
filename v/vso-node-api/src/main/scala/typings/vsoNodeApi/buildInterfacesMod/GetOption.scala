@@ -2,7 +2,6 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,26 +11,32 @@ sealed trait GetOption extends StObject
 object GetOption extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[GetOption with Double] = js.native
+  def apply(value: Double): js.UndefOr[GetOption & Double] = js.native
   
   /**
     * A user-specified version has been supplied.
     */
   @js.native
-  sealed trait Custom extends GetOption
-  /* 2 */ val Custom: typings.vsoNodeApi.buildInterfacesMod.GetOption.Custom with Double = js.native
+  sealed trait Custom
+    extends StObject
+       with GetOption
+  /* 2 */ val Custom: typings.vsoNodeApi.buildInterfacesMod.GetOption.Custom & Double = js.native
   
   /**
     * Use the latest changeset at the time the build is started.
     */
   @js.native
-  sealed trait LatestOnBuild extends GetOption
-  /* 1 */ val LatestOnBuild: typings.vsoNodeApi.buildInterfacesMod.GetOption.LatestOnBuild with Double = js.native
+  sealed trait LatestOnBuild
+    extends StObject
+       with GetOption
+  /* 1 */ val LatestOnBuild: typings.vsoNodeApi.buildInterfacesMod.GetOption.LatestOnBuild & Double = js.native
   
   /**
     * Use the latest changeset at the time the build is queued.
     */
   @js.native
-  sealed trait LatestOnQueue extends GetOption
-  /* 0 */ val LatestOnQueue: typings.vsoNodeApi.buildInterfacesMod.GetOption.LatestOnQueue with Double = js.native
+  sealed trait LatestOnQueue
+    extends StObject
+       with GetOption
+  /* 0 */ val LatestOnQueue: typings.vsoNodeApi.buildInterfacesMod.GetOption.LatestOnQueue & Double = js.native
 }

@@ -3,15 +3,15 @@ package typings.extjs.Ext.chart
 import typings.extjs.Ext.chart.series.IBar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IColumnSeries extends IBar {
+trait IColumnSeries
+  extends StObject
+     with IBar {
   
   /** [Config Option] (String) */
   @JSName("axis")
-  var axis_IColumnSeries: js.UndefOr[String] = js.native
+  var axis_IColumnSeries: js.UndefOr[String] = js.undefined
 }
 object IColumnSeries {
   

@@ -3,7 +3,6 @@ package typings.casperjs.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -20,14 +19,14 @@ trait ClientUtils extends StObject {
   def findOne(selector: String): Unit = js.native
   
   def getBase64(url: String): Unit = js.native
-  def getBase64(url: String, method: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
   def getBase64(url: String, method: String): Unit = js.native
   def getBase64(url: String, method: String, data: js.Any): Unit = js.native
+  def getBase64(url: String, method: Unit, data: js.Any): Unit = js.native
   
   def getBinary(url: String): Unit = js.native
-  def getBinary(url: String, method: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
   def getBinary(url: String, method: String): Unit = js.native
   def getBinary(url: String, method: String, data: js.Any): Unit = js.native
+  def getBinary(url: String, method: Unit, data: js.Any): Unit = js.native
   
   def getDocumentHeight(): Unit = js.native
   
@@ -50,13 +49,13 @@ trait ClientUtils extends StObject {
   def removeElementsByXPath(expression: String): Unit = js.native
   
   def sendAJAX(url: String): Unit = js.native
-  def sendAJAX(url: String, method: js.UndefOr[scala.Nothing], data: js.UndefOr[scala.Nothing], async: Boolean): Unit = js.native
-  def sendAJAX(url: String, method: js.UndefOr[scala.Nothing], data: js.Any): Unit = js.native
-  def sendAJAX(url: String, method: js.UndefOr[scala.Nothing], data: js.Any, async: Boolean): Unit = js.native
   def sendAJAX(url: String, method: String): Unit = js.native
-  def sendAJAX(url: String, method: String, data: js.UndefOr[scala.Nothing], async: Boolean): Unit = js.native
   def sendAJAX(url: String, method: String, data: js.Any): Unit = js.native
   def sendAJAX(url: String, method: String, data: js.Any, async: Boolean): Unit = js.native
+  def sendAJAX(url: String, method: String, data: Unit, async: Boolean): Unit = js.native
+  def sendAJAX(url: String, method: Unit, data: js.Any): Unit = js.native
+  def sendAJAX(url: String, method: Unit, data: js.Any, async: Boolean): Unit = js.native
+  def sendAJAX(url: String, method: Unit, data: Unit, async: Boolean): Unit = js.native
   
   def visible(selector: String): Unit = js.native
 }

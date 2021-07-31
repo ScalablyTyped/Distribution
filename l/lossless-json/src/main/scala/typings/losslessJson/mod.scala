@@ -5,10 +5,13 @@ import typings.losslessJson.anon.CircularRefsBoolean
 import typings.losslessJson.losslessJsonBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("lossless-json", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("lossless-json", "LosslessNumber")
   @js.native
@@ -24,45 +27,32 @@ object mod {
     var value: String = js.native
   }
   
-  @JSImport("lossless-json", "config")
-  @js.native
-  def config(): CircularRefsBoolean = js.native
-  @JSImport("lossless-json", "config")
-  @js.native
-  def config(hasCircularRefs: CircularRefs): CircularRefsBoolean = js.native
+  @scala.inline
+  def config(): CircularRefsBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[CircularRefsBoolean]
+  @scala.inline
+  def config(hasCircularRefs: CircularRefs): CircularRefsBoolean = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(hasCircularRefs.asInstanceOf[js.Any]).asInstanceOf[CircularRefsBoolean]
   
-  @JSImport("lossless-json", "parse")
-  @js.native
-  def parse(text: String): js.Any = js.native
-  @JSImport("lossless-json", "parse")
-  @js.native
-  def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, _]): js.Any = js.native
+  @scala.inline
+  def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[String | Double]): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[String | Double], space: String): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Array[String | Double], space: Double): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _]): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: String): String = js.native
-  @JSImport("lossless-json", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, _], space: Double): String = js.native
+  @scala.inline
+  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[String | Double]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[String | Double], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Array[String | Double], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any], space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
 }

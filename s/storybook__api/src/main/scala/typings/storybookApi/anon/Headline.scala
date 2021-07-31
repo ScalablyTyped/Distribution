@@ -3,15 +3,13 @@ package typings.storybookApi.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Headline extends StObject {
   
-  var headline: String = js.native
+  var headline: String
   
-  var subHeadline: js.UndefOr[String | ReactNode] = js.native
+  var subHeadline: js.UndefOr[String | ReactNode] = js.undefined
 }
 object Headline {
   

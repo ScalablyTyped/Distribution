@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitRefUpdate extends StObject {
   
-  var isLocked: Boolean = js.native
+  var isLocked: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var newObjectId: String = js.native
+  var newObjectId: String
   
-  var oldObjectId: String = js.native
+  var oldObjectId: String
   
-  var repositoryId: String = js.native
+  var repositoryId: String
 }
 object GitRefUpdate {
   

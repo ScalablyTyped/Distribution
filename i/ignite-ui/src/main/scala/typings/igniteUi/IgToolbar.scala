@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgToolbar
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -18,134 +17,134 @@ trait IgToolbar
     * Get/Set whether the toolbar can be collapsed.
     *
     */
-  var allowCollapsing: js.UndefOr[Boolean] = js.native
+  var allowCollapsing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The css class that will be applied to collapseButtonIcon.
     *
     */
-  var collapseButtonIcon: js.UndefOr[String] = js.native
+  var collapseButtonIcon: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after item is collapsed
     */
-  var collapsed: js.UndefOr[CollapsedEvent] = js.native
+  var collapsed: js.UndefOr[CollapsedEvent] = js.undefined
   
   /**
     * Event is fired before item is collapsed.
     */
-  var collapsing: js.UndefOr[CollapsingEvent] = js.native
+  var collapsing: js.UndefOr[CollapsingEvent] = js.undefined
   
   /**
     * Display Name of the widget.
     *
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * The css class that will be applied to the expand/collapse button icon.
     *
     */
-  var expandButtonIcon: js.UndefOr[String] = js.native
+  var expandButtonIcon: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after item is expanded
     */
-  var expanded: js.UndefOr[ExpandedEvent] = js.native
+  var expanded: js.UndefOr[ExpandedEvent] = js.undefined
   
   /**
     * Event fired before item is expanded
     */
-  var expanding: js.UndefOr[ExpandingEvent] = js.native
+  var expanding: js.UndefOr[ExpandingEvent] = js.undefined
   
   /**
     * Set/Get the widget height.
     *
     */
-  var height: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Get/Set whether the widget is expanded initially.
     *
     */
-  var isExpanded: js.UndefOr[Boolean] = js.native
+  var isExpanded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Event fired after item is added
     */
-  var itemAdded: js.UndefOr[ItemAddedEvent] = js.native
+  var itemAdded: js.UndefOr[ItemAddedEvent] = js.undefined
   
   /**
     * Fired after item is dissabled
     */
-  var itemDisable: js.UndefOr[ItemDisableEvent] = js.native
+  var itemDisable: js.UndefOr[ItemDisableEvent] = js.undefined
   
   /**
     * Fired after item is enabled
     */
-  var itemEnabled: js.UndefOr[ItemEnabledEvent] = js.native
+  var itemEnabled: js.UndefOr[ItemEnabledEvent] = js.undefined
   
   /**
     * Event fired after item is removed
     */
-  var itemRemoved: js.UndefOr[ItemRemovedEvent] = js.native
+  var itemRemoved: js.UndefOr[ItemRemovedEvent] = js.undefined
   
   /**
     * Get/Set Toolbar's items.
     *
     */
-  var items: js.UndefOr[js.Array[_]] = js.native
+  var items: js.UndefOr[js.Array[js.Any]] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var locale: js.UndefOr[IgToolbarLocale] = js.native
+  var locale: js.UndefOr[IgToolbarLocale] = js.undefined
   
   /**
     * Formal name of the widget.
     *
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Event fired after a click on any toolbar button
     */
-  var toolbarButtonClick: js.UndefOr[ToolbarButtonClickEvent] = js.native
+  var toolbarButtonClick: js.UndefOr[ToolbarButtonClickEvent] = js.undefined
   
   /**
     * Event is fired before the toolbar is opened.
     */
-  var toolbarComboOpening: js.UndefOr[ToolbarComboOpeningEvent] = js.native
+  var toolbarComboOpening: js.UndefOr[ToolbarComboOpeningEvent] = js.undefined
   
   /**
     * Event fired after toolbar combo is selected
     */
-  var toolbarComboSelected: js.UndefOr[ToolbarComboSelectedEvent] = js.native
+  var toolbarComboSelected: js.UndefOr[ToolbarComboSelectedEvent] = js.undefined
   
   /**
     * Event fired after a click on custom item
     */
-  var toolbarCustomItemClick: js.UndefOr[ToolbarCustomItemClickEvent] = js.native
+  var toolbarCustomItemClick: js.UndefOr[ToolbarCustomItemClickEvent] = js.undefined
   
   /**
     * Set/Get the widget width.
     *
     */
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Fired after the window is resized
     */
-  var windowResized: js.UndefOr[WindowResizedEvent] = js.native
+  var windowResized: js.UndefOr[WindowResizedEvent] = js.undefined
 }
 object IgToolbar {
   
@@ -243,7 +242,7 @@ object IgToolbar {
     def setItemRemovedUndefined: Self = StObject.set(x, "itemRemoved", js.undefined)
     
     @scala.inline
-    def setItems(value: js.Array[_]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
+    def setItems(value: js.Array[js.Any]): Self = StObject.set(x, "items", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setItemsUndefined: Self = StObject.set(x, "items", js.undefined)

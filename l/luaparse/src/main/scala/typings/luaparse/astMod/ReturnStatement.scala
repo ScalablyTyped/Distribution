@@ -2,22 +2,21 @@ package typings.luaparse.astMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnStatement
-  extends _Statement
-     with Base[typings.luaparse.luaparseStrings.ReturnStatement] {
+  extends StObject
+     with Base[typings.luaparse.luaparseStrings.ReturnStatement]
+     with _Statement {
   
-  var arguments: js.Array[Expression] = js.native
+  var arguments: js.Array[Expression]
 }
 object ReturnStatement {
   
   @scala.inline
-  def apply(arguments: js.Array[Expression], `type`: typings.luaparse.luaparseStrings.ReturnStatement): ReturnStatement = {
+  def apply(arguments: js.Array[Expression]): ReturnStatement = {
     val __obj = js.Dynamic.literal(arguments = arguments.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ReturnStatement")
     __obj.asInstanceOf[ReturnStatement]
   }
   

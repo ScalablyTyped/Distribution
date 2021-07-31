@@ -7,7 +7,6 @@ import typings.reactAce.anon.ValidationMapIDiffEditorP
 import typings.reactAce.typesMod.IEditorProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diffMod {
@@ -44,78 +43,77 @@ object diffMod {
     @JSName("componentDidUpdate")
     def componentDidUpdate_MDiffComponent(): Unit = js.native
     
-    def diff(): js.Array[js.Array[_]] = js.native
+    def diff(): js.Array[js.Array[js.Any]] = js.native
     
     def generateDiffedLines(diff: js.Any): Left = js.native
     
     def onChange(value: js.Any): Unit = js.native
     
-    def setCodeMarkers(): js.Array[js.Array[_]] = js.native
-    def setCodeMarkers(diffedLines: js.Any): js.Array[js.Array[_]] = js.native
+    def setCodeMarkers(): js.Array[js.Array[js.Any]] = js.native
+    def setCodeMarkers(diffedLines: js.Any): js.Array[js.Array[js.Any]] = js.native
   }
   
-  @js.native
   trait IDiffEditorProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var cursorStart: js.UndefOr[Double] = js.native
+    var cursorStart: js.UndefOr[Double] = js.undefined
     
-    var editorProps: js.UndefOr[js.Object] = js.native
+    var editorProps: js.UndefOr[js.Object] = js.undefined
     
-    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableBasicAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var enableLiveAutocompletion: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
-    var focus: js.UndefOr[Boolean] = js.native
+    var focus: js.UndefOr[Boolean] = js.undefined
     
-    var fontSize: js.UndefOr[Double] = js.native
+    var fontSize: js.UndefOr[Double] = js.undefined
     
-    var height: js.UndefOr[String] = js.native
+    var height: js.UndefOr[String] = js.undefined
     
-    var highlightActiveLine: js.UndefOr[Boolean] = js.native
+    var highlightActiveLine: js.UndefOr[Boolean] = js.undefined
     
-    var maxLines: js.UndefOr[Double] = js.native
+    var maxLines: js.UndefOr[Double] = js.undefined
     
-    var minLines: js.UndefOr[Double] = js.native
+    var minLines: js.UndefOr[Double] = js.undefined
     
-    var mode: js.UndefOr[String] = js.native
+    var mode: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* value */ js.Array[String], /* event */ js.UndefOr[js.Any], Unit]] = js.undefined
     
-    var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onLoad: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.native
+    var onPaste: js.UndefOr[js.Function1[/* value */ String, Unit]] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* editor */ IEditorProps, Unit]] = js.undefined
     
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var scrollMargin: js.UndefOr[js.Array[Double]] = js.native
+    var scrollMargin: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var setOptions: js.UndefOr[js.Object] = js.native
+    var setOptions: js.UndefOr[js.Object] = js.undefined
     
-    var showGutter: js.UndefOr[Boolean] = js.native
+    var showGutter: js.UndefOr[Boolean] = js.undefined
     
-    var showPrintMargin: js.UndefOr[Boolean] = js.native
+    var showPrintMargin: js.UndefOr[Boolean] = js.undefined
     
-    var splits: js.UndefOr[Double] = js.native
+    var splits: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
     
-    var tabSize: js.UndefOr[Double] = js.native
+    var tabSize: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Array[String]] = js.native
+    var value: js.UndefOr[js.Array[String]] = js.undefined
     
-    var width: js.UndefOr[String] = js.native
+    var width: js.UndefOr[String] = js.undefined
     
-    var wrapEnabled: js.UndefOr[Boolean] = js.native
+    var wrapEnabled: js.UndefOr[Boolean] = js.undefined
   }
   object IDiffEditorProps {
     
@@ -322,10 +320,9 @@ object diffMod {
     }
   }
   
-  @js.native
   trait IDiffEditorState extends StObject {
     
-    var value: js.Array[String] = js.native
+    var value: js.Array[String]
   }
   object IDiffEditorState {
     

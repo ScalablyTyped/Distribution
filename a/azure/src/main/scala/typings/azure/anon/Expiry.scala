@@ -3,17 +3,15 @@ package typings.azure.anon
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Expiry extends StObject {
   
-  var Expiry: Date = js.native
+  var Expiry: Date
   
-  var Permission: js.UndefOr[String] = js.native
+  var Permission: js.UndefOr[String] = js.undefined
   
-  var Start: js.UndefOr[Date] = js.native
+  var Start: js.UndefOr[Date] = js.undefined
 }
 object Expiry {
   

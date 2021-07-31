@@ -2,42 +2,40 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The response for Firestore.Listen.
   */
-@js.native
 trait SchemaListenResponse extends StObject {
   
   /**
     * A Document has changed.
     */
-  var documentChange: js.UndefOr[SchemaDocumentChange] = js.native
+  var documentChange: js.UndefOr[SchemaDocumentChange] = js.undefined
   
   /**
     * A Document has been deleted.
     */
-  var documentDelete: js.UndefOr[SchemaDocumentDelete] = js.native
+  var documentDelete: js.UndefOr[SchemaDocumentDelete] = js.undefined
   
   /**
     * A Document has been removed from a target (because it is no longer
     * relevant to that target).
     */
-  var documentRemove: js.UndefOr[SchemaDocumentRemove] = js.native
+  var documentRemove: js.UndefOr[SchemaDocumentRemove] = js.undefined
   
   /**
     * A filter to apply to the set of documents previously returned for the
     * given target.  Returned when documents may have been removed from the
     * given target, but the exact documents are unknown.
     */
-  var filter: js.UndefOr[SchemaExistenceFilter] = js.native
+  var filter: js.UndefOr[SchemaExistenceFilter] = js.undefined
   
   /**
     * Targets have changed.
     */
-  var targetChange: js.UndefOr[SchemaTargetChange] = js.native
+  var targetChange: js.UndefOr[SchemaTargetChange] = js.undefined
 }
 object SchemaListenResponse {
   

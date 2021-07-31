@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
@@ -119,6 +118,10 @@ object apiMod {
   /* static members */
   object Api {
     
+    @JSImport("@pulumi/aws/apigatewayv2/api", "Api")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Api resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -128,29 +131,23 @@ object apiMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/api", "Api.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Api = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/api", "Api.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Api = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/api", "Api.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApiState): Api = js.native
-    @JSImport("@pulumi/aws/apigatewayv2/api", "Api.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApiState, opts: CustomResourceOptions): Api = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Api]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Api]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApiState): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Api]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApiState, opts: CustomResourceOptions): Api = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Api]
     
     /**
       * Returns true if the given object is an instance of Api.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/apigatewayv2/api", "Api.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/api.Api */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigatewayv2/api.Api */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigatewayv2/api.Api */ Boolean]
   }
   
-  @js.native
   trait ApiArgs extends StObject {
     
     /**
@@ -158,72 +155,72 @@ object apiMod {
       * Valid values: `$context.authorizer.usageIdentifierKey`, `$request.header.x-api-key`. Defaults to `$request.header.x-api-key`.
       * Applicable for WebSocket APIs.
       */
-    val apiKeySelectionExpression: js.UndefOr[Input[String]] = js.native
+    val apiKeySelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.
       */
-    val body: js.UndefOr[Input[String]] = js.native
+    val body: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The cross-origin resource sharing (CORS) [configuration](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html). Applicable for HTTP APIs.
       */
-    val corsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.ApiCorsConfiguration]] = js.native
+    val corsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.ApiCorsConfiguration]] = js.undefined
     
     /**
       * Part of _quick create_. Specifies any credentials required for the integration. Applicable for HTTP APIs.
       */
-    val credentialsArn: js.UndefOr[Input[String]] = js.native
+    val credentialsArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the API. Must be less than or equal to 1024 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether clients can invoke the API by using the default `execute-api` endpoint.
       * By default, clients can invoke the API with the default `{api_id}.execute-api.{region}.amazonaws.com endpoint`.
       * To require that clients use a custom domain name to invoke the API, disable the default endpoint.
       */
-    val disableExecuteApiEndpoint: js.UndefOr[Input[Boolean]] = js.native
+    val disableExecuteApiEndpoint: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The name of the API. Must be less than or equal to 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API protocol. Valid values: `HTTP`, `WEBSOCKET`.
       */
-    val protocolType: Input[String] = js.native
+    val protocolType: Input[String]
     
     /**
       * Part of _quick create_. Specifies any [route key](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html). Applicable for HTTP APIs.
       */
-    val routeKey: js.UndefOr[Input[String]] = js.native
+    val routeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [route selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-selection-expressions) for the API.
       * Defaults to `$request.method $request.path`.
       */
-    val routeSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val routeSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the API.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Part of _quick create_. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.
       * For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN.
       * The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. Applicable for HTTP APIs.
       */
-    val target: js.UndefOr[Input[String]] = js.native
+    val target: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A version identifier for the API. Must be between 1 and 64 characters in length.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object ApiArgs {
     
@@ -313,97 +310,96 @@ object apiMod {
     }
   }
   
-  @js.native
   trait ApiState extends StObject {
     
     /**
       * The URI of the API, of the form `{api-id}.execute-api.{region}.amazonaws.com`.
       */
-    val apiEndpoint: js.UndefOr[Input[String]] = js.native
+    val apiEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An [API key selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-apikey-selection-expressions).
       * Valid values: `$context.authorizer.usageIdentifierKey`, `$request.header.x-api-key`. Defaults to `$request.header.x-api-key`.
       * Applicable for WebSocket APIs.
       */
-    val apiKeySelectionExpression: js.UndefOr[Input[String]] = js.native
+    val apiKeySelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ARN of the API.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * An OpenAPI specification that defines the set of routes and integrations to create as part of the HTTP APIs. Supported only for HTTP APIs.
       */
-    val body: js.UndefOr[Input[String]] = js.native
+    val body: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The cross-origin resource sharing (CORS) [configuration](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-cors.html). Applicable for HTTP APIs.
       */
-    val corsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.ApiCorsConfiguration]] = js.native
+    val corsConfiguration: js.UndefOr[Input[typings.pulumiAws.inputMod.apigatewayv2.ApiCorsConfiguration]] = js.undefined
     
     /**
       * Part of _quick create_. Specifies any credentials required for the integration. Applicable for HTTP APIs.
       */
-    val credentialsArn: js.UndefOr[Input[String]] = js.native
+    val credentialsArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The description of the API. Must be less than or equal to 1024 characters in length.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Whether clients can invoke the API by using the default `execute-api` endpoint.
       * By default, clients can invoke the API with the default `{api_id}.execute-api.{region}.amazonaws.com endpoint`.
       * To require that clients use a custom domain name to invoke the API, disable the default endpoint.
       */
-    val disableExecuteApiEndpoint: js.UndefOr[Input[Boolean]] = js.native
+    val disableExecuteApiEndpoint: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The ARN prefix to be used in an `aws.lambda.Permission`'s `sourceArn` attribute
       * or in an `aws.iam.Policy` to authorize access to the [`@connections` API](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-how-to-call-websocket-api-connections.html).
       * See the [Amazon API Gateway Developer Guide](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-control-access-iam.html) for details.
       */
-    val executionArn: js.UndefOr[Input[String]] = js.native
+    val executionArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the API. Must be less than or equal to 128 characters in length.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The API protocol. Valid values: `HTTP`, `WEBSOCKET`.
       */
-    val protocolType: js.UndefOr[Input[String]] = js.native
+    val protocolType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Part of _quick create_. Specifies any [route key](https://docs.aws.amazon.com/apigateway/latest/developerguide/http-api-develop-routes.html). Applicable for HTTP APIs.
       */
-    val routeKey: js.UndefOr[Input[String]] = js.native
+    val routeKey: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The [route selection expression](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-selection-expressions.html#apigateway-websocket-api-route-selection-expressions) for the API.
       * Defaults to `$request.method $request.path`.
       */
-    val routeSelectionExpression: js.UndefOr[Input[String]] = js.native
+    val routeSelectionExpression: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the API.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
     
     /**
       * Part of _quick create_. Quick create produces an API with an integration, a default catch-all route, and a default stage which is configured to automatically deploy changes.
       * For HTTP integrations, specify a fully qualified URL. For Lambda integrations, specify a function ARN.
       * The type of the integration will be `HTTP_PROXY` or `AWS_PROXY`, respectively. Applicable for HTTP APIs.
       */
-    val target: js.UndefOr[Input[String]] = js.native
+    val target: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A version identifier for the API. Must be between 1 and 64 characters in length.
       */
-    val version: js.UndefOr[Input[String]] = js.native
+    val version: js.UndefOr[Input[String]] = js.undefined
   }
   object ApiState {
     

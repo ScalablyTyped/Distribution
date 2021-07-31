@@ -8,12 +8,10 @@ import typings.awsSdkClientS3Browser.typesTopicConfigurationDeprecatedMod.TopicC
 import typings.awsSdkClientS3Browser.typesTopicConfigurationDeprecatedMod.UnmarshalledTopicConfigurationDeprecated
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNotificationConfigurationDeprecatedMod {
   
-  @js.native
   trait NotificationConfigurationDeprecated extends StObject {
     
     /**
@@ -21,17 +19,17 @@ object typesNotificationConfigurationDeprecatedMod {
       */
     var CloudFunctionConfiguration: js.UndefOr[
         typings.awsSdkClientS3Browser.typesCloudFunctionConfigurationMod.CloudFunctionConfiguration
-      ] = js.native
+      ] = js.undefined
     
     /**
       * _QueueConfigurationDeprecated shape
       */
-    var QueueConfiguration: js.UndefOr[QueueConfigurationDeprecated] = js.native
+    var QueueConfiguration: js.UndefOr[QueueConfigurationDeprecated] = js.undefined
     
     /**
       * _TopicConfigurationDeprecated shape
       */
-    var TopicConfiguration: js.UndefOr[TopicConfigurationDeprecated] = js.native
+    var TopicConfiguration: js.UndefOr[TopicConfigurationDeprecated] = js.undefined
   }
   object NotificationConfigurationDeprecated {
     
@@ -64,26 +62,27 @@ object typesNotificationConfigurationDeprecatedMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledNotificationConfigurationDeprecated extends NotificationConfigurationDeprecated {
+  trait UnmarshalledNotificationConfigurationDeprecated
+    extends StObject
+       with NotificationConfigurationDeprecated {
     
     /**
       * _CloudFunctionConfiguration shape
       */
     @JSName("CloudFunctionConfiguration")
-    var CloudFunctionConfiguration_UnmarshalledNotificationConfigurationDeprecated: js.UndefOr[UnmarshalledCloudFunctionConfiguration] = js.native
+    var CloudFunctionConfiguration_UnmarshalledNotificationConfigurationDeprecated: js.UndefOr[UnmarshalledCloudFunctionConfiguration] = js.undefined
     
     /**
       * _QueueConfigurationDeprecated shape
       */
     @JSName("QueueConfiguration")
-    var QueueConfiguration_UnmarshalledNotificationConfigurationDeprecated: js.UndefOr[UnmarshalledQueueConfigurationDeprecated] = js.native
+    var QueueConfiguration_UnmarshalledNotificationConfigurationDeprecated: js.UndefOr[UnmarshalledQueueConfigurationDeprecated] = js.undefined
     
     /**
       * _TopicConfigurationDeprecated shape
       */
     @JSName("TopicConfiguration")
-    var TopicConfiguration_UnmarshalledNotificationConfigurationDeprecated: js.UndefOr[UnmarshalledTopicConfigurationDeprecated] = js.native
+    var TopicConfiguration_UnmarshalledNotificationConfigurationDeprecated: js.UndefOr[UnmarshalledTopicConfigurationDeprecated] = js.undefined
   }
   object UnmarshalledNotificationConfigurationDeprecated {
     

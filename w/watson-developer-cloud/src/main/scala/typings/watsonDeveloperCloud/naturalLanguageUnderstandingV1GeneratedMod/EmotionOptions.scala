@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.naturalLanguageUnderstandingV1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Detects anger, disgust, fear, joy, or sadness that is conveyed in the content or by the context around target phrases specified in the targets parameter. You can analyze emotion for detected entities with `entities.emotion` and for keywords with `keywords.emotion`. Supported languages: English. */
-@js.native
 trait EmotionOptions extends StObject {
   
   /** Set this to `false` to hide document-level emotion results. */
-  var document: js.UndefOr[Boolean] = js.native
+  var document: js.UndefOr[Boolean] = js.undefined
   
   /** Emotion results will be returned for each target string that is found in the document. */
-  var targets: js.UndefOr[js.Array[String]] = js.native
+  var targets: js.UndefOr[js.Array[String]] = js.undefined
 }
 object EmotionOptions {
   

@@ -2,21 +2,19 @@ package typings.aframe.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrimitiveDefinition extends StObject {
   
-  var defaultComponents: js.UndefOr[js.Any] = js.native
+  var defaultComponents: js.UndefOr[js.Any] = js.undefined
   
   // TODO cleanup type
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
-  var mappings: js.UndefOr[js.Any] = js.native
+  var mappings: js.UndefOr[js.Any] = js.undefined
   
   // TODO cleanup type
-  var transforms: js.UndefOr[js.Any] = js.native
+  var transforms: js.UndefOr[js.Any] = js.undefined
 }
 object PrimitiveDefinition {
   

@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,9 +13,13 @@ object KeyCredentialCreationOption extends StObject {
   
   /** Fail if a key credential already exists. */
   @js.native
-  sealed trait failIfExists extends KeyCredentialCreationOption
+  sealed trait failIfExists
+    extends StObject
+       with KeyCredentialCreationOption
   
   /** Replace any existing key credentials. */
   @js.native
-  sealed trait replaceExisting extends KeyCredentialCreationOption
+  sealed trait replaceExisting
+    extends StObject
+       with KeyCredentialCreationOption
 }

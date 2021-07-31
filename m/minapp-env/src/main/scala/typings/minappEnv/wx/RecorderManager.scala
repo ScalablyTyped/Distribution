@@ -2,23 +2,21 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecorderManager extends StObject {
   
   /** [RecorderManager.onError(function callback)](RecorderManager.onError.md)
     *
     * 监听录音错误事件 */
   def onError(/** 录音错误事件的回调函数 */
-  callback: RecorderManagerOnErrorCallback): Unit = js.native
+  callback: RecorderManagerOnErrorCallback): Unit
   
   /** [RecorderManager.onFrameRecorded(function callback)](RecorderManager.onFrameRecorded.md)
     *
     * 监听已录制完指定帧大小的文件事件。如果设置了 frameSize，则会回调此事件。 */
   def onFrameRecorded(/** 已录制完指定帧大小的文件事件的回调函数 */
-  callback: OnFrameRecordedCallback): Unit = js.native
+  callback: OnFrameRecordedCallback): Unit
   
   /** [RecorderManager.onInterruptionBegin(function callback)](RecorderManager.onInterruptionBegin.md)
     *
@@ -26,7 +24,7 @@ trait RecorderManager extends StObject {
     *
     * 最低基础库： `2.3.0` */
   def onInterruptionBegin(/** 录音因为受到系统占用而被中断开始事件的回调函数 */
-  callback: OnInterruptionBeginCallback): Unit = js.native
+  callback: OnInterruptionBeginCallback): Unit
   
   /** [RecorderManager.onInterruptionEnd(function callback)](RecorderManager.onInterruptionEnd.md)
     *
@@ -34,41 +32,41 @@ trait RecorderManager extends StObject {
     *
     * 最低基础库： `2.3.0` */
   def onInterruptionEnd(/** 录音中断结束事件的回调函数 */
-  callback: OnInterruptionEndCallback): Unit = js.native
+  callback: OnInterruptionEndCallback): Unit
   
   /** [RecorderManager.onPause(function callback)](RecorderManager.onPause.md)
     *
     * 监听录音暂停事件 */
   def onPause(/** 录音暂停事件的回调函数 */
-  callback: RecorderManagerOnPauseCallback): Unit = js.native
+  callback: RecorderManagerOnPauseCallback): Unit
   
   /** [RecorderManager.onResume(function callback)](RecorderManager.onResume.md)
     *
     * 监听录音继续事件 */
   def onResume(/** 录音继续事件的回调函数 */
-  callback: OnResumeCallback): Unit = js.native
+  callback: OnResumeCallback): Unit
   
   /** [RecorderManager.onStart(function callback)](RecorderManager.onStart.md)
     *
     * 监听录音开始事件 */
   def onStart(/** 录音开始事件的回调函数 */
-  callback: OnStartCallback): Unit = js.native
+  callback: OnStartCallback): Unit
   
   /** [RecorderManager.onStop(function callback)](RecorderManager.onStop.md)
     *
     * 监听录音结束事件 */
   def onStop(/** 录音结束事件的回调函数 */
-  callback: RecorderManagerOnStopCallback): Unit = js.native
+  callback: RecorderManagerOnStopCallback): Unit
   
   /** [RecorderManager.pause()](RecorderManager.pause.md)
     *
     * 暂停录音 */
-  def pause(): Unit = js.native
+  def pause(): Unit
   
   /** [RecorderManager.resume()](RecorderManager.resume.md)
     *
     * 继续录音 */
-  def resume(): Unit = js.native
+  def resume(): Unit
   
   /** [RecorderManager.start(Object object)](RecorderManager.start.md)
     *
@@ -90,12 +88,12 @@ trait RecorderManager extends StObject {
     * | 32000  | 48000 ~ 192000 |
     * | 44100  | 64000 ~ 320000 |
     * | 48000  | 64000 ~ 320000 | */
-  def start(option: RecorderManagerStartOption): Unit = js.native
+  def start(option: RecorderManagerStartOption): Unit
   
   /** [RecorderManager.stop()](RecorderManager.stop.md)
     *
     * 停止录音 */
-  def stop(): Unit = js.native
+  def stop(): Unit
 }
 object RecorderManager {
   

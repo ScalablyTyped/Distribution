@@ -2,21 +2,19 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HslToRgb extends StObject {
   
-  var color: Bright2Opacity = js.native
+  var color: Bright2Opacity
   
-  def hslToRgb(h: Double, s: Double, l: Double): G = js.native
+  def hslToRgb(h: Double, s: Double, l: Double): G
   
-  def hsvToRgb(h: Double, s: Double, v: Double): G = js.native
+  def hsvToRgb(h: Double, s: Double, v: Double): G
   
-  def rgbToHsl(rr: Double, gg: Double, bb: Double): H = js.native
+  def rgbToHsl(rr: Double, gg: Double, bb: Double): H
   
-  def rgbToHsv(r: Double, g: Double, b: Double): H = js.native
+  def rgbToHsv(r: Double, g: Double, b: Double): H
 }
 object HslToRgb {
   

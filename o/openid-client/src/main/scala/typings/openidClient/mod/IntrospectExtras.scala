@@ -2,22 +2,20 @@ package typings.openidClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IntrospectExtras extends StObject {
   
   /**
     * extra client assertion payload parameters to be sent as part of a client JWT assertion.
     * This is only used when the client's token_endpoint_auth_method is either client_secret_jwt or private_key_jwt.
     */
-  var clientAssertionPayload: js.UndefOr[js.Object] = js.native
+  var clientAssertionPayload: js.UndefOr[js.Object] = js.undefined
   
   /**
     * extra request body properties to be sent to the introspection endpoint.
     */
-  var introspectBody: js.UndefOr[js.Object] = js.native
+  var introspectBody: js.UndefOr[js.Object] = js.undefined
 }
 object IntrospectExtras {
   

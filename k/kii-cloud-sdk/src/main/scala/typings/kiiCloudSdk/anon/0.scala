@@ -4,15 +4,13 @@ import typings.kiiCloudSdk.KiiCloud.KiiAppAdminContext
 import typings.kiiCloudSdk.KiiCloud.KiiUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  def failure(adminContext: KiiAppAdminContext, anErrorString: String): js.Any = js.native
+  def failure(adminContext: KiiAppAdminContext, anErrorString: String): js.Any
   
-  def success(adminContext: KiiAppAdminContext, theMatchedUser: KiiUser): js.Any = js.native
+  def success(adminContext: KiiAppAdminContext, theMatchedUser: KiiUser): js.Any
 }
 object `0` {
   

@@ -3,7 +3,6 @@ package typings.phaser.mod
 import typings.phaser.MatterJS.BodyType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -18,8 +17,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("matter", "Vertices")
 @js.native
 class Vertices ()
-  extends typings.phaser.MatterJS.Vertices
+  extends StObject
+     with typings.phaser.MatterJS.Vertices
 object Vertices {
+  
+  @JSImport("matter", "Vertices")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Returns the area of the set of vertices.
@@ -29,9 +33,8 @@ object Vertices {
     * @return {number} The area
     */
   /* static member */
-  @JSImport("matter", "Vertices.area")
-  @js.native
-  def area(vertices: js.Array[typings.phaser.MatterJS.Vector], signed: Boolean): Double = js.native
+  @scala.inline
+  def area(vertices: js.Array[typings.phaser.MatterJS.Vector], signed: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("area")(vertices.asInstanceOf[js.Any], signed.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns the centre (centroid) of the set of vertices.
@@ -40,19 +43,17 @@ object Vertices {
     * @return {vector} The centre point
     */
   /* static member */
-  @JSImport("matter", "Vertices.centre")
-  @js.native
-  def centre(vertices: js.Array[typings.phaser.MatterJS.Vector]): typings.phaser.MatterJS.Vector = js.native
+  @scala.inline
+  def centre(vertices: js.Array[typings.phaser.MatterJS.Vector]): typings.phaser.MatterJS.Vector = ^.asInstanceOf[js.Dynamic].applyDynamic("centre")(vertices.asInstanceOf[js.Any]).asInstanceOf[typings.phaser.MatterJS.Vector]
   
-  @JSImport("matter", "Vertices.chamfer")
-  @js.native
+  @scala.inline
   def chamfer(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     radius: js.Array[Double],
     quality: Double,
     qualityMin: Double,
     qualityMax: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chamfer")(vertices.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], quality.asInstanceOf[js.Any], qualityMin.asInstanceOf[js.Any], qualityMax.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Chamfers a set of vertices by giving them rounded corners, returns a new set of vertices.
     * The radius parameter is a single number or an array to specify the radius for each vertex.
@@ -64,15 +65,14 @@ object Vertices {
     * @param {number} qualityMax
     */
   /* static member */
-  @JSImport("matter", "Vertices.chamfer")
-  @js.native
+  @scala.inline
   def chamfer(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     radius: Double,
     quality: Double,
     qualityMin: Double,
     qualityMax: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chamfer")(vertices.asInstanceOf[js.Any], radius.asInstanceOf[js.Any], quality.asInstanceOf[js.Any], qualityMin.asInstanceOf[js.Any], qualityMax.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sorts the input vertices into clockwise order in place.
@@ -81,9 +81,8 @@ object Vertices {
     * @return {vertices} vertices
     */
   /* static member */
-  @JSImport("matter", "Vertices.clockwiseSort")
-  @js.native
-  def clockwiseSort(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = js.native
+  @scala.inline
+  def clockwiseSort(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("clockwiseSort")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Returns `true` if the `point` is inside the set of `vertices`.
@@ -93,9 +92,8 @@ object Vertices {
     * @return {boolean} True if the vertices contains point, otherwise false
     */
   /* static member */
-  @JSImport("matter", "Vertices.contains")
-  @js.native
-  def contains(vertices: js.Array[typings.phaser.MatterJS.Vector], point: typings.phaser.MatterJS.Vector): Boolean = js.native
+  @scala.inline
+  def contains(vertices: js.Array[typings.phaser.MatterJS.Vector], point: typings.phaser.MatterJS.Vector): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("contains")(vertices.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
   /**
     * Creates a new set of `Matter.Body` compatible vertices.
@@ -113,9 +111,8 @@ object Vertices {
     * @param {body} body
     */
   /* static member */
-  @JSImport("matter", "Vertices.create")
-  @js.native
-  def create(points: js.Array[typings.phaser.MatterJS.Vector], body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = js.native
+  @scala.inline
+  def create(points: js.Array[typings.phaser.MatterJS.Vector], body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(points.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Parses a string containing ordered x y pairs separated by spaces (and optionally commas),
@@ -127,9 +124,8 @@ object Vertices {
     * @return {vertices} vertices
     */
   /* static member */
-  @JSImport("matter", "Vertices.fromPath")
-  @js.native
-  def fromPath(path: String, body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = js.native
+  @scala.inline
+  def fromPath(path: String, body: BodyType): js.Array[typings.phaser.MatterJS.Vector] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromPath")(path.asInstanceOf[js.Any], body.asInstanceOf[js.Any])).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Returns the convex hull of the input vertices as a new array of points.
@@ -138,9 +134,8 @@ object Vertices {
     * @return [vertex] vertices
     */
   /* static member */
-  @JSImport("matter", "Vertices.hull")
-  @js.native
-  def hull(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = js.native
+  @scala.inline
+  def hull(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("hull")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Returns the moment of inertia (second moment of area) of the set of vertices given the total mass.
@@ -150,9 +145,8 @@ object Vertices {
     * @return {number} The polygon's moment of inertia
     */
   /* static member */
-  @JSImport("matter", "Vertices.inertia")
-  @js.native
-  def inertia(vertices: js.Array[typings.phaser.MatterJS.Vector], mass: Double): Double = js.native
+  @scala.inline
+  def inertia(vertices: js.Array[typings.phaser.MatterJS.Vector], mass: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("inertia")(vertices.asInstanceOf[js.Any], mass.asInstanceOf[js.Any])).asInstanceOf[Double]
   
   /**
     * Returns true if the vertices form a convex shape (vertices must be in clockwise order).
@@ -161,9 +155,8 @@ object Vertices {
     * @return {bool} `true` if the `vertices` are convex, `false` if not (or `null` if not computable).
     */
   /* static member */
-  @JSImport("matter", "Vertices.isConvex")
-  @js.native
-  def isConvex(vertices: js.Array[typings.phaser.MatterJS.Vector]): Boolean = js.native
+  @scala.inline
+  def isConvex(vertices: js.Array[typings.phaser.MatterJS.Vector]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isConvex")(vertices.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /**
     * Returns the average (mean) of the set of vertices.
@@ -172,9 +165,8 @@ object Vertices {
     * @return {vector} The average point
     */
   /* static member */
-  @JSImport("matter", "Vertices.mean")
-  @js.native
-  def mean(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = js.native
+  @scala.inline
+  def mean(vertices: js.Array[typings.phaser.MatterJS.Vector]): js.Array[typings.phaser.MatterJS.Vector] = ^.asInstanceOf[js.Dynamic].applyDynamic("mean")(vertices.asInstanceOf[js.Any]).asInstanceOf[js.Array[typings.phaser.MatterJS.Vector]]
   
   /**
     * Rotates the set of vertices in-place.
@@ -184,13 +176,12 @@ object Vertices {
     * @param {vector} point
     */
   /* static member */
-  @JSImport("matter", "Vertices.rotate")
-  @js.native
+  @scala.inline
   def rotate(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     angle: Double,
     point: typings.phaser.MatterJS.Vector
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rotate")(vertices.asInstanceOf[js.Any], angle.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Scales the vertices from a point (default is centre) in-place.
@@ -201,14 +192,13 @@ object Vertices {
     * @param {vector} point
     */
   /* static member */
-  @JSImport("matter", "Vertices.scale")
-  @js.native
+  @scala.inline
   def scale(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     scaleX: Double,
     scaleY: Double,
     point: typings.phaser.MatterJS.Vector
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("scale")(vertices.asInstanceOf[js.Any], scaleX.asInstanceOf[js.Any], scaleY.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Translates the set of vertices in-place.
@@ -218,11 +208,10 @@ object Vertices {
     * @param {number} scalar
     */
   /* static member */
-  @JSImport("matter", "Vertices.translate")
-  @js.native
+  @scala.inline
   def translate(
     vertices: js.Array[typings.phaser.MatterJS.Vector],
     vector: typings.phaser.MatterJS.Vector,
     scalar: Double
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("translate")(vertices.asInstanceOf[js.Any], vector.asInstanceOf[js.Any], scalar.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

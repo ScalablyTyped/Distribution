@@ -2,17 +2,15 @@ package typings.googleFeeds
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait findResult extends StObject {
   
-  var error: js.UndefOr[feedError] = js.native
+  var error: js.UndefOr[feedError] = js.undefined
   
-  var findEntries: js.Array[findEntry] = js.native
+  var findEntries: js.Array[findEntry]
   
-  var xmlDocument: js.UndefOr[String] = js.native
+  var xmlDocument: js.UndefOr[String] = js.undefined
 }
 object findResult {
   

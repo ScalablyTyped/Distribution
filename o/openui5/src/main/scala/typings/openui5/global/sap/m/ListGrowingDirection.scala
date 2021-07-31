@@ -2,7 +2,6 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,9 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object ListGrowingDirection extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.ListGrowingDirection with Double] = js.native
+  def apply(value: Double): js.UndefOr[typings.openui5.sap.m.ListGrowingDirection & Double] = js.native
   
-  /* 0 */ val Downwards: typings.openui5.sap.m.ListGrowingDirection.Downwards with Double = js.native
+  /* 0 */ val Downwards: typings.openui5.sap.m.ListGrowingDirection.Downwards & Double = js.native
   
-  /* 1 */ val Upwards: typings.openui5.sap.m.ListGrowingDirection.Upwards with Double = js.native
+  /* 1 */ val Upwards: typings.openui5.sap.m.ListGrowingDirection.Upwards & Double = js.native
 }

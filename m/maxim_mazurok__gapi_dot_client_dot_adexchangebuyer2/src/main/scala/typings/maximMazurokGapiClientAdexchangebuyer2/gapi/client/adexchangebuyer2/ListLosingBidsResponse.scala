@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListLosingBidsResponse extends StObject {
   
   /** List of rows, with counts of losing bids aggregated by loss reason (i.e. creative status). */
-  var creativeStatusRows: js.UndefOr[js.Array[CreativeStatusRow]] = js.native
+  var creativeStatusRows: js.UndefOr[js.Array[CreativeStatusRow]] = js.undefined
   
   /**
     * A token to retrieve the next page of results. Pass this value in the ListLosingBidsRequest.pageToken field in the subsequent call to the losingBids.list method to retrieve the next
     * page of results.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListLosingBidsResponse {
   

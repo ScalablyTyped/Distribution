@@ -5,24 +5,22 @@ import typings.istanbulLibReport.mod.Summarizers
 import typings.istanbulLibReport.mod.Watermark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<istanbul-lib-report.istanbul-lib-report.ContextOptions> */
-  @js.native
   trait PartialContextOptions extends StObject {
     
-    var coverageMap: js.UndefOr[CoverageMap] = js.native
+    var coverageMap: js.UndefOr[CoverageMap] = js.undefined
     
-    var defaultSummarizer: js.UndefOr[Summarizers] = js.native
+    var defaultSummarizer: js.UndefOr[Summarizers] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var sourceFinder: js.UndefOr[js.Function1[/* filepath */ String, String]] = js.native
+    var sourceFinder: js.UndefOr[js.Function1[/* filepath */ String, String]] = js.undefined
     
-    var watermarks: js.UndefOr[PartialWatermarks] = js.native
+    var watermarks: js.UndefOr[PartialWatermarks] = js.undefined
   }
   object PartialContextOptions {
     
@@ -68,10 +66,9 @@ object anon {
   }
   
   /* Inlined std.Partial<istanbul-lib-report.istanbul-lib-report.ReportBaseOptions> */
-  @js.native
   trait PartialReportBaseOptions extends StObject {
     
-    var summarizer: js.UndefOr[Summarizers] = js.native
+    var summarizer: js.UndefOr[Summarizers] = js.undefined
   }
   object PartialReportBaseOptions {
     
@@ -93,16 +90,15 @@ object anon {
   }
   
   /* Inlined std.Partial<istanbul-lib-report.istanbul-lib-report.Watermarks> */
-  @js.native
   trait PartialWatermarks extends StObject {
     
-    var branches: js.UndefOr[Watermark] = js.native
+    var branches: js.UndefOr[Watermark] = js.undefined
     
-    var functions: js.UndefOr[Watermark] = js.native
+    var functions: js.UndefOr[Watermark] = js.undefined
     
-    var lines: js.UndefOr[Watermark] = js.native
+    var lines: js.UndefOr[Watermark] = js.undefined
     
-    var statements: js.UndefOr[Watermark] = js.native
+    var statements: js.UndefOr[Watermark] = js.undefined
   }
   object PartialWatermarks {
     

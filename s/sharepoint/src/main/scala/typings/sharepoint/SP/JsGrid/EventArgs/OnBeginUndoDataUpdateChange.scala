@@ -4,13 +4,13 @@ import typings.sharepoint.SP.JsGrid.IChangeKey
 import typings.sharepoint.SP.JsGrid.IEventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OnBeginUndoDataUpdateChange extends IEventArgs {
+trait OnBeginUndoDataUpdateChange
+  extends StObject
+     with IEventArgs {
   
-  var changeKey: IChangeKey = js.native
+  var changeKey: IChangeKey
 }
 object OnBeginUndoDataUpdateChange {
   

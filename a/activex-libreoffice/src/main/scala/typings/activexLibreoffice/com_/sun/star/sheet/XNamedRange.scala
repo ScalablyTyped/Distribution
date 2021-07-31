@@ -5,65 +5,65 @@ import typings.activexLibreoffice.com_.sun.star.container.XNamed
 import typings.activexLibreoffice.com_.sun.star.table.CellAddress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides access to the settings of a named range in a spreadsheet document.
   * @see com.sun.star.sheet.NamedRange
   */
-@js.native
-trait XNamedRange extends XNamed {
+trait XNamedRange
+  extends StObject
+     with XNamed {
   
   /**
     * returns the content of the named range.
     *
     * The content can be a reference to a cell or cell range or any formula expression.
     */
-  var Content: String = js.native
+  var Content: String
   
   /** returns the position in the document which is used as a base for relative references in the content. */
-  var ReferencePosition: CellAddress = js.native
+  var ReferencePosition: CellAddress
   
   /**
     * returns the type of the named range.
     *
     * This is a combination of flags as defined in {@link NamedRangeFlag} .
     */
-  var Type: Double = js.native
+  var Type: Double
   
   /**
     * returns the content of the named range.
     *
     * The content can be a reference to a cell or cell range or any formula expression.
     */
-  def getContent(): String = js.native
+  def getContent(): String
   
   /** returns the position in the document which is used as a base for relative references in the content. */
-  def getReferencePosition(): CellAddress = js.native
+  def getReferencePosition(): CellAddress
   
   /**
     * returns the type of the named range.
     *
     * This is a combination of flags as defined in {@link NamedRangeFlag} .
     */
-  def getType(): Double = js.native
+  def getType(): Double
   
   /**
     * sets the content of the named range.
     *
     * The content can be a reference to a cell or cell range or any formula expression.
     */
-  def setContent(aContent: String): Unit = js.native
+  def setContent(aContent: String): Unit
   
   /** sets the position in the document which is used as a base for relative references in the content. */
-  def setReferencePosition(aReferencePosition: CellAddress): Unit = js.native
+  def setReferencePosition(aReferencePosition: CellAddress): Unit
   
   /**
     * sets the type of the named range.
     * @param nType a combination of flags that specify the type of a named range, as defined in {@link NamedRangeFlag} .
     */
-  def setType(nType: Double): Unit = js.native
+  def setType(nType: Double): Unit
 }
 object XNamedRange {
   

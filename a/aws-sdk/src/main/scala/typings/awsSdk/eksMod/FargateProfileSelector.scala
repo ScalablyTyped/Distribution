@@ -2,21 +2,19 @@ package typings.awsSdk.eksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FargateProfileSelector extends StObject {
   
   /**
     * The Kubernetes labels that the selector should match. A pod must contain all of the labels that are specified in the selector for it to be considered a match.
     */
-  var labels: js.UndefOr[FargateProfileLabel] = js.native
+  var labels: js.UndefOr[FargateProfileLabel] = js.undefined
   
   /**
     * The Kubernetes namespace that the selector should match.
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
 }
 object FargateProfileSelector {
   

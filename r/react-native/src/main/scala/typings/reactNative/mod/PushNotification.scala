@@ -2,52 +2,50 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PushNotification extends StObject {
   
   /**
     * iOS Only
     * Signifies remote notification handling is complete
     */
-  def finish(result: String): Unit = js.native
+  def finish(result: String): Unit
   
   /**
     * Gets the notification's main message from the `aps` object
     */
-  def getAlert(): String | js.Object = js.native
+  def getAlert(): String | js.Object
   
   /**
     * Gets the badge count number from the `aps` object
     */
-  def getBadgeCount(): Double = js.native
+  def getBadgeCount(): Double
   
   /**
     * Gets the category string from the `aps` object
     */
-  def getCategory(): String = js.native
+  def getCategory(): String
   
   /**
     * Gets the content-available number from the `aps` object
     */
-  def getContentAvailable(): Double = js.native
+  def getContentAvailable(): Double
   
   /**
     * Gets the data object on the notif
     */
-  def getData(): js.Object = js.native
+  def getData(): js.Object
   
   /**
     * An alias for `getAlert` to get the notification's main message string
     */
-  def getMessage(): String | js.Object = js.native
+  def getMessage(): String | js.Object
   
   /**
     * Gets the sound string from the `aps` object
     */
-  def getSound(): String = js.native
+  def getSound(): String
 }
 object PushNotification {
   

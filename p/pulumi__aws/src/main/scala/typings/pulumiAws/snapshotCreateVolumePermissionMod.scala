@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object snapshotCreateVolumePermissionMod {
@@ -38,6 +37,10 @@ object snapshotCreateVolumePermissionMod {
   /* static members */
   object SnapshotCreateVolumePermission {
     
+    @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing SnapshotCreateVolumePermission resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,45 +50,39 @@ object snapshotCreateVolumePermissionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission.get")
-    @js.native
-    def get(name: String, id: Input[ID]): SnapshotCreateVolumePermission = js.native
-    @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): SnapshotCreateVolumePermission = js.native
-    @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: SnapshotCreateVolumePermissionState): SnapshotCreateVolumePermission = js.native
-    @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: SnapshotCreateVolumePermissionState): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: SnapshotCreateVolumePermissionState,
       opts: CustomResourceOptions
-    ): SnapshotCreateVolumePermission = js.native
+    ): SnapshotCreateVolumePermission = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[SnapshotCreateVolumePermission]
     
     /**
       * Returns true if the given object is an instance of SnapshotCreateVolumePermission.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/snapshotCreateVolumePermission", "SnapshotCreateVolumePermission.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/snapshotCreateVolumePermission.SnapshotCreateVolumePermission */ Boolean]
   }
   
-  @js.native
   trait SnapshotCreateVolumePermissionArgs extends StObject {
     
     /**
       * An AWS Account ID to add create volume permissions
       */
-    val accountId: Input[String] = js.native
+    val accountId: Input[String]
     
     /**
       * A snapshot ID
       */
-    val snapshotId: Input[String] = js.native
+    val snapshotId: Input[String]
   }
   object SnapshotCreateVolumePermissionArgs {
     
@@ -106,18 +103,17 @@ object snapshotCreateVolumePermissionMod {
     }
   }
   
-  @js.native
   trait SnapshotCreateVolumePermissionState extends StObject {
     
     /**
       * An AWS Account ID to add create volume permissions
       */
-    val accountId: js.UndefOr[Input[String]] = js.native
+    val accountId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A snapshot ID
       */
-    val snapshotId: js.UndefOr[Input[String]] = js.native
+    val snapshotId: js.UndefOr[Input[String]] = js.undefined
   }
   object SnapshotCreateVolumePermissionState {
     

@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,14 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XPropertyControl.ControlContext
   * @since OOo 2.0.3
   */
-@js.native
-trait XPropertyControlContext extends XPropertyControlObserver {
+trait XPropertyControlContext
+  extends StObject
+     with XPropertyControlObserver {
   
   /**
     * instructs the {@link XPropertyControlContext} to active the next control
     * @param CurrentControl denotes the control which initiated the request.
     */
-  def activateNextControl(CurrentControl: XPropertyControl): Unit = js.native
+  def activateNextControl(CurrentControl: XPropertyControl): Unit
 }
 object XPropertyControlContext {
   

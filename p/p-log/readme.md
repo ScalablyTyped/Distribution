@@ -10,9 +10,9 @@ Log the value/error of a promise
 | ------------------ | :-------------: |
 | Full name          | p-log |
 | Keywords           | promise, log, logging, logger, debug, debugging, console, print, tap, catch, error, rejection, chain, pipeline, thunk, function, async, await, promises, bluebird |
-| # releases         | 3 |
+| # releases         | 4 |
 | # dependents       | 5 |
-| # downloads        | 1873 |
+| # downloads        | 2484 |
 | # stars            | 1 |
 
 ## Links

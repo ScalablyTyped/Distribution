@@ -3,31 +3,31 @@ package typings.loginWithAmazonSdkBrowser
 import typings.loginWithAmazonSdkBrowser.loginWithAmazonSdkBrowserBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response type if `retrieveProfile` call succeeded.
   */
-@js.native
-trait RetrieveProfileResponseSuccess extends RetrieveProfileResponse {
+trait RetrieveProfileResponseSuccess
+  extends StObject
+     with RetrieveProfileResponse {
   
   /**
     * Contains the user's profile information.
     */
-  var profile: UserProfile = js.native
+  var profile: UserProfile
   
   /**
     * Indicates whether profile was successfully retrieved.
     * For this type, it is always true.
     */
-  var success: `true` = js.native
+  var success: `true`
 }
 object RetrieveProfileResponseSuccess {
   
   @scala.inline
-  def apply(profile: UserProfile, success: `true`): RetrieveProfileResponseSuccess = {
-    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], success = success.asInstanceOf[js.Any])
+  def apply(profile: UserProfile): RetrieveProfileResponseSuccess = {
+    val __obj = js.Dynamic.literal(profile = profile.asInstanceOf[js.Any], success = true)
     __obj.asInstanceOf[RetrieveProfileResponseSuccess]
   }
   

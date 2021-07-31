@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.JSXClosingElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `126` extends StObject {
   
-  var `type`: JSXClosingElement = js.native
+  var `type`: JSXClosingElement
 }
 object `126` {
   
   @scala.inline
-  def apply(`type`: JSXClosingElement): `126` = {
+  def apply(): `126` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("JSXClosingElement")
     __obj.asInstanceOf[`126`]
   }
   

@@ -11,7 +11,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object v1beta1 {
@@ -30,11 +29,15 @@ object v1beta1 {
     /** @deprecated apps/v1beta1/ControllerRevision is deprecated by apps/v1/ControllerRevision and not supported by Kubernetes v1.16+ clusters. */
     def this(name: String) = this()
     def this(name: String, args: ControllerRevisionArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ControllerRevisionArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object ControllerRevision {
+    
+    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevision")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing ControllerRevision resource's state with the given name, ID, and optional extra
@@ -44,20 +47,17 @@ object v1beta1 {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevision.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.controllerRevisionMod.ControllerRevision = js.native
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevision.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.controllerRevisionMod.ControllerRevision = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.controllerRevisionMod.ControllerRevision = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.controllerRevisionMod.ControllerRevision]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.controllerRevisionMod.ControllerRevision = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.controllerRevisionMod.ControllerRevision]
     
     /**
       * Returns true if the given object is an instance of ControllerRevision.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevision.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevision.ControllerRevision */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevision.ControllerRevision */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevision.ControllerRevision */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevisionList")
@@ -73,11 +73,15 @@ object v1beta1 {
       */
     def this(name: String) = this()
     def this(name: String, args: ControllerRevisionListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: ControllerRevisionListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object ControllerRevisionList {
+    
+    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevisionList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing ControllerRevisionList resource's state with the given name, ID, and optional extra
@@ -87,20 +91,17 @@ object v1beta1 {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevisionList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList = js.native
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevisionList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.controllerRevisionListMod.ControllerRevisionList]
     
     /**
       * Returns true if the given object is an instance of ControllerRevisionList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.ControllerRevisionList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/controllerRevisionList.ControllerRevisionList */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes", "apps.v1beta1.Deployment")
@@ -117,11 +118,15 @@ object v1beta1 {
     /** @deprecated apps/v1beta1/Deployment is deprecated by apps/v1/Deployment and not supported by Kubernetes v1.16+ clusters. */
     def this(name: String) = this()
     def this(name: String, args: DeploymentArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DeploymentArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object Deployment {
+    
+    @JSImport("@pulumi/kubernetes", "apps.v1beta1.Deployment")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing Deployment resource's state with the given name, ID, and optional extra
@@ -131,20 +136,17 @@ object v1beta1 {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.deploymentMod.Deployment = js.native
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.Deployment.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.deploymentMod.Deployment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.deploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.deploymentMod.Deployment]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.deploymentMod.Deployment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.deploymentMod.Deployment]
     
     /**
       * Returns true if the given object is an instance of Deployment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.Deployment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deployment.Deployment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deployment.Deployment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deployment.Deployment */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes", "apps.v1beta1.DeploymentList")
@@ -160,11 +162,15 @@ object v1beta1 {
       */
     def this(name: String) = this()
     def this(name: String, args: DeploymentListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: DeploymentListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object DeploymentList {
+    
+    @JSImport("@pulumi/kubernetes", "apps.v1beta1.DeploymentList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing DeploymentList resource's state with the given name, ID, and optional extra
@@ -174,20 +180,17 @@ object v1beta1 {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.DeploymentList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.deploymentListMod.DeploymentList = js.native
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.DeploymentList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.deploymentListMod.DeploymentList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.deploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.deploymentListMod.DeploymentList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.deploymentListMod.DeploymentList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.deploymentListMod.DeploymentList]
     
     /**
       * Returns true if the given object is an instance of DeploymentList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.DeploymentList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deploymentList.DeploymentList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deploymentList.DeploymentList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/deploymentList.DeploymentList */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSet")
@@ -204,11 +207,15 @@ object v1beta1 {
     /** @deprecated apps/v1beta1/StatefulSet is deprecated by apps/v1/StatefulSet and not supported by Kubernetes v1.16+ clusters. */
     def this(name: String) = this()
     def this(name: String, args: StatefulSetArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: StatefulSetArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object StatefulSet {
+    
+    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSet")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing StatefulSet resource's state with the given name, ID, and optional extra
@@ -218,20 +225,17 @@ object v1beta1 {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSet.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.statefulSetMod.StatefulSet = js.native
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSet.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.statefulSetMod.StatefulSet = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.statefulSetMod.StatefulSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.statefulSetMod.StatefulSet]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.statefulSetMod.StatefulSet = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.statefulSetMod.StatefulSet]
     
     /**
       * Returns true if the given object is an instance of StatefulSet.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSet.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSet.StatefulSet */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSet.StatefulSet */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSet.StatefulSet */ Boolean]
   }
   
   @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSetList")
@@ -247,11 +251,15 @@ object v1beta1 {
       */
     def this(name: String) = this()
     def this(name: String, args: StatefulSetListArgs) = this()
-    def this(name: String, args: js.UndefOr[scala.Nothing], opts: CustomResourceOptions) = this()
+    def this(name: String, args: Unit, opts: CustomResourceOptions) = this()
     def this(name: String, args: StatefulSetListArgs, opts: CustomResourceOptions) = this()
   }
   /* static members */
   object StatefulSetList {
+    
+    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSetList")
+    @js.native
+    val ^ : js.Any = js.native
     
     /**
       * Get an existing StatefulSetList resource's state with the given name, ID, and optional extra
@@ -261,19 +269,16 @@ object v1beta1 {
       * @param id The _unique_ provider ID of the resource to lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSetList.get")
-    @js.native
-    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.statefulSetListMod.StatefulSetList = js.native
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSetList.get")
-    @js.native
-    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.statefulSetListMod.StatefulSetList = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): typings.pulumiKubernetes.statefulSetListMod.StatefulSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.statefulSetListMod.StatefulSetList]
+    @scala.inline
+    def get(name: String, id: Input[ID], opts: CustomResourceOptions): typings.pulumiKubernetes.statefulSetListMod.StatefulSetList = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiKubernetes.statefulSetListMod.StatefulSetList]
     
     /**
       * Returns true if the given object is an instance of StatefulSetList.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/kubernetes", "apps.v1beta1.StatefulSetList.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSetList.StatefulSetList */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSetList.StatefulSetList */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/kubernetes.@pulumi/kubernetes/apps/v1beta1/statefulSetList.StatefulSetList */ Boolean]
   }
 }

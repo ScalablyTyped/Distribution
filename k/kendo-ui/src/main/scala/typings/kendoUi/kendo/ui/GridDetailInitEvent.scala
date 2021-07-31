@@ -4,19 +4,19 @@ import typings.kendoUi.JQuery
 import typings.kendoUi.kendo.data.ObservableObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GridDetailInitEvent extends GridEvent {
+trait GridDetailInitEvent
+  extends StObject
+     with GridEvent {
   
-  var data: js.UndefOr[ObservableObject] = js.native
+  var data: js.UndefOr[ObservableObject] = js.undefined
   
-  var detailCell: js.UndefOr[JQuery] = js.native
+  var detailCell: js.UndefOr[JQuery] = js.undefined
   
-  var detailRow: js.UndefOr[JQuery] = js.native
+  var detailRow: js.UndefOr[JQuery] = js.undefined
   
-  var masterRow: js.UndefOr[JQuery] = js.native
+  var masterRow: js.UndefOr[JQuery] = js.undefined
 }
 object GridDetailInitEvent {
   

@@ -11,7 +11,6 @@ import typings.wordpressComponents.wordpressComponentsStrings.`slide-in`
 import typings.wordpressComponents.wordpressComponentsStrings.appear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animateMod {
@@ -30,22 +29,22 @@ object animateMod {
   
   object Animate {
     
-    @js.native
     trait AppearProps
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
-      var options: js.UndefOr[Origin] = js.native
+      var options: js.UndefOr[Origin] = js.undefined
       
       @JSName("type")
-      var type_AppearProps: appear = js.native
+      var type_AppearProps: appear
     }
     object AppearProps {
       
       @scala.inline
-      def apply(children: ClassName => ReactNode, `type`: appear): AppearProps = {
+      def apply(children: ClassName => ReactNode): AppearProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("appear")
         __obj.asInstanceOf[AppearProps]
       }
       
@@ -63,12 +62,11 @@ object animateMod {
       }
     }
     
-    @js.native
     trait BaseProps extends StObject {
       
-      def children(props: ClassName): ReactNode = js.native
+      def children(props: ClassName): ReactNode
       
-      var `type`: appear | `slide-in` = js.native
+      var `type`: appear | `slide-in`
     }
     object BaseProps {
       
@@ -98,36 +96,36 @@ object animateMod {
     object Props {
       
       @scala.inline
-      def AppearProps(children: ClassName => ReactNode, `type`: appear): typings.wordpressComponents.animateMod.Animate.AppearProps = {
+      def AppearProps(children: ClassName => ReactNode): typings.wordpressComponents.animateMod.Animate.AppearProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("appear")
         __obj.asInstanceOf[typings.wordpressComponents.animateMod.Animate.AppearProps]
       }
       
       @scala.inline
-      def SlideInProps(children: ClassName => ReactNode, `type`: `slide-in`): typings.wordpressComponents.animateMod.Animate.SlideInProps = {
+      def SlideInProps(children: ClassName => ReactNode): typings.wordpressComponents.animateMod.Animate.SlideInProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("slide-in")
         __obj.asInstanceOf[typings.wordpressComponents.animateMod.Animate.SlideInProps]
       }
     }
     
-    @js.native
     trait SlideInProps
-      extends BaseProps
+      extends StObject
+         with BaseProps
          with Props {
       
-      var options: js.UndefOr[`0`] = js.native
+      var options: js.UndefOr[`0`] = js.undefined
       
       @JSName("type")
-      var type_SlideInProps: `slide-in` = js.native
+      var type_SlideInProps: `slide-in`
     }
     object SlideInProps {
       
       @scala.inline
-      def apply(children: ClassName => ReactNode, `type`: `slide-in`): SlideInProps = {
+      def apply(children: ClassName => ReactNode): SlideInProps = {
         val __obj = js.Dynamic.literal(children = js.Any.fromFunction1(children))
-        __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+        __obj.updateDynamic("type")("slide-in")
         __obj.asInstanceOf[SlideInProps]
       }
       

@@ -5,44 +5,37 @@ import typings.from2.anon.objectModetrueundefinedRe
 import typings.from2.from2Booleans.`false`
 import typings.from2.from2Booleans.`true`
 import typings.node.Buffer
-import typings.node.BufferEncoding
 import typings.node.NodeJS.ReadableStream
-import typings.node.streamMod.Readable
-import typings.std.Error
+import typings.node.streamMod.ReadableOptions
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("from2", JSImport.Namespace)
-  @js.native
-  def apply(opts: ObjectModeOptions, read: ReadObjectInput): ReadableStream = js.native
-  @JSImport("from2", JSImport.Namespace)
-  @js.native
-  def apply(opts: Options, read: ReadInput): ReadableStream = js.native
-  @JSImport("from2", JSImport.Namespace)
-  @js.native
-  def apply(read: ReadInput): ReadableStream = js.native
+  @scala.inline
+  def apply(opts: ObjectModeOptions, read: ReadObjectInput): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(opts: Options, read: ReadInput): ReadableStream = (^.asInstanceOf[js.Dynamic].apply(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def apply(read: ReadInput): ReadableStream = ^.asInstanceOf[js.Dynamic].apply(read.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
-  @JSImport("from2", "ctor")
+  @JSImport("from2", JSImport.Namespace)
   @js.native
-  def ctor(): From2Ctor[ReadInput] = js.native
-  @JSImport("from2", "ctor")
-  @js.native
-  def ctor(opts: ObjectModeOptions): From2Ctor[ReadObjectInput] = js.native
-  @JSImport("from2", "ctor")
-  @js.native
-  def ctor(opts: Options): From2Ctor[ReadInput] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("from2", "obj")
-  @js.native
-  def obj(opts: objectModetrueundefinedRe, read: ReadObjectInput): ReadableStream = js.native
-  @JSImport("from2", "obj")
-  @js.native
-  def obj(read: ReadObjectInput): ReadableStream = js.native
+  @scala.inline
+  def ctor(): From2Ctor[ReadInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")().asInstanceOf[From2Ctor[ReadInput]]
+  @scala.inline
+  def ctor(opts: ObjectModeOptions): From2Ctor[ReadObjectInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[From2Ctor[ReadObjectInput]]
+  @scala.inline
+  def ctor(opts: Options): From2Ctor[ReadInput] = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(opts.asInstanceOf[js.Any]).asInstanceOf[From2Ctor[ReadInput]]
+  
+  @scala.inline
+  def obj(opts: objectModetrueundefinedRe, read: ReadObjectInput): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(opts.asInstanceOf[js.Any], read.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def obj(read: ReadObjectInput): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(read.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
   
   type Chunk = String | Buffer | Uint8Array | Null
   
@@ -52,34 +45,18 @@ object mod {
   
   type NextObjectCallback = js.Function2[/* err */ js.UndefOr[js.Any], /* chunk */ js.Any, Unit]
   
-  /* Inlined {  objectMode :true} & node.stream.ReadableOptions */
-  @js.native
-  trait ObjectModeOptions extends StObject {
+  trait ObjectModeOptions
+    extends StObject
+       with ReadableOptions {
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
-    
-    var destroy: js.UndefOr[
-        js.ThisFunction2[
-          /* this */ Readable, 
-          /* error */ Error | Null, 
-          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
-          Unit
-        ]
-      ] = js.native
-    
-    var encoding: js.UndefOr[BufferEncoding] = js.native
-    
-    var highWaterMark: js.UndefOr[Double] = js.native
-    
-    var objectMode: `true` with js.UndefOr[Boolean] = js.native
-    
-    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.native
+    @JSName("objectMode")
+    var objectMode_ObjectModeOptions: `true`
   }
   object ObjectModeOptions {
     
     @scala.inline
-    def apply(objectMode: `true` with js.UndefOr[Boolean]): ObjectModeOptions = {
-      val __obj = js.Dynamic.literal(objectMode = objectMode.asInstanceOf[js.Any])
+    def apply(): ObjectModeOptions = {
+      val __obj = js.Dynamic.literal(objectMode = true)
       __obj.asInstanceOf[ObjectModeOptions]
     }
     
@@ -87,75 +64,22 @@ object mod {
     implicit class ObjectModeOptionsMutableBuilder[Self <: ObjectModeOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
-      
-      @scala.inline
-      def setDestroy(
-        value: js.ThisFunction2[
-              /* this */ Readable, 
-              /* error */ Error | Null, 
-              /* callback */ js.Function1[/* error */ Error | Null, Unit], 
-              Unit
-            ]
-      ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
-      
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-      
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
-      
-      @scala.inline
-      def setObjectMode(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      def setObjectMode(value: `true`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
     }
   }
   
-  /* Inlined {  objectMode :false | undefined} & node.stream.ReadableOptions */
-  @js.native
-  trait Options extends StObject {
+  trait Options
+    extends StObject
+       with ReadableOptions {
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
-    
-    var destroy: js.UndefOr[
-        js.ThisFunction2[
-          /* this */ Readable, 
-          /* error */ Error | Null, 
-          /* callback */ js.Function1[/* error */ Error | Null, Unit], 
-          Unit
-        ]
-      ] = js.native
-    
-    var encoding: js.UndefOr[BufferEncoding] = js.native
-    
-    var highWaterMark: js.UndefOr[Double] = js.native
-    
-    var objectMode: js.UndefOr[`false`] with js.UndefOr[Boolean] = js.native
-    
-    var read: js.UndefOr[js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]] = js.native
+    @JSName("objectMode")
+    var objectMode_Options: js.UndefOr[`false`] = js.undefined
   }
   object Options {
     
     @scala.inline
-    def apply(objectMode: js.UndefOr[`false`] with js.UndefOr[Boolean]): Options = {
-      val __obj = js.Dynamic.literal(objectMode = objectMode.asInstanceOf[js.Any])
+    def apply(): Options = {
+      val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[Options]
     }
     
@@ -163,44 +87,10 @@ object mod {
     implicit class OptionsMutableBuilder[Self <: Options] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAutoDestroy(value: Boolean): Self = StObject.set(x, "autoDestroy", value.asInstanceOf[js.Any])
+      def setObjectMode(value: `false`): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAutoDestroyUndefined: Self = StObject.set(x, "autoDestroy", js.undefined)
-      
-      @scala.inline
-      def setDestroy(
-        value: js.ThisFunction2[
-              /* this */ Readable, 
-              /* error */ Error | Null, 
-              /* callback */ js.Function1[/* error */ Error | Null, Unit], 
-              Unit
-            ]
-      ): Self = StObject.set(x, "destroy", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDestroyUndefined: Self = StObject.set(x, "destroy", js.undefined)
-      
-      @scala.inline
-      def setEncoding(value: BufferEncoding): Self = StObject.set(x, "encoding", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setEncodingUndefined: Self = StObject.set(x, "encoding", js.undefined)
-      
-      @scala.inline
-      def setHighWaterMark(value: Double): Self = StObject.set(x, "highWaterMark", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setHighWaterMarkUndefined: Self = StObject.set(x, "highWaterMark", js.undefined)
-      
-      @scala.inline
-      def setObjectMode(value: js.UndefOr[`false`] with js.UndefOr[Boolean]): Self = StObject.set(x, "objectMode", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setRead(value: js.ThisFunction1[/* this */ Readable, /* size */ Double, Unit]): Self = StObject.set(x, "read", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setReadUndefined: Self = StObject.set(x, "read", js.undefined)
+      def setObjectModeUndefined: Self = StObject.set(x, "objectMode", js.undefined)
     }
   }
   

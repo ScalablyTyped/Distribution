@@ -2,21 +2,19 @@ package typings.easeljs.createjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStageGLOptions extends StObject {
   
-  var antialias: js.UndefOr[Boolean] = js.native
+  var antialias: js.UndefOr[Boolean] = js.undefined
   
-  var autoPurge: js.UndefOr[Double] = js.native
+  var autoPurge: js.UndefOr[Double] = js.undefined
   
-  var premultiply: js.UndefOr[Boolean] = js.native
+  var premultiply: js.UndefOr[Boolean] = js.undefined
   
-  var preserveBuffer: js.UndefOr[Boolean] = js.native
+  var preserveBuffer: js.UndefOr[Boolean] = js.undefined
   
-  var transparent: js.UndefOr[Boolean] = js.native
+  var transparent: js.UndefOr[Boolean] = js.undefined
 }
 object IStageGLOptions {
   

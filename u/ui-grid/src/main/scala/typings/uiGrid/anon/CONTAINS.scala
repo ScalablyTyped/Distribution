@@ -2,33 +2,31 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CONTAINS extends StObject {
   
-  var CONTAINS: Double = js.native
+  var CONTAINS: Double
   
-  var ENDS_WITH: Double = js.native
+  var ENDS_WITH: Double
   
-  var EXACT: Double = js.native
+  var EXACT: Double
   
-  var GREATER_THAN: Double = js.native
+  var GREATER_THAN: Double
   
-  var GREATER_THAN_OR_EQUAL: Double = js.native
+  var GREATER_THAN_OR_EQUAL: Double
   
-  var INPUT: String = js.native
+  var INPUT: String
   
-  var LESS_THAN: Double = js.native
+  var LESS_THAN: Double
   
-  var LESS_THAN_OR_EQUAL: Double = js.native
+  var LESS_THAN_OR_EQUAL: Double
   
-  var NOT_EQUAL: Double = js.native
+  var NOT_EQUAL: Double
   
-  var SELECT: String = js.native
+  var SELECT: String
   
-  var STARTS_WITH: Double = js.native
+  var STARTS_WITH: Double
 }
 object CONTAINS {
   

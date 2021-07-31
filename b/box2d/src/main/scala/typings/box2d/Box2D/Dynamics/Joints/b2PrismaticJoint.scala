@@ -4,90 +4,90 @@ import typings.box2d.Box2D.Common.Math.b2Vec2
 import typings.box2d.Box2D.Dynamics.b2Body
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait b2PrismaticJoint extends b2Joint {
+trait b2PrismaticJoint
+  extends StObject
+     with b2Joint {
   
   /**
     * Enable/disable the joint limit.
     * @param flag True to enable, false to disable.
     **/
-  def EnableLimit(flag: Boolean): Unit = js.native
+  def EnableLimit(flag: Boolean): Unit
   
   /**
     * Enable/disable the joint motor.
     * @param flag True to enable, false to disable.
     **/
-  def EnableMotor(flag: Boolean): Unit = js.native
+  def EnableMotor(flag: Boolean): Unit
   
   /**
     * Get the current joint translation speed, usually in meters per second.
     * @return Joint speed.
     **/
-  def GetJointSpeed(): Double = js.native
+  def GetJointSpeed(): Double
   
   /**
     * Get the current joint translation, usually in meters.
     * @return Joint translation.
     **/
-  def GetJointTranslation(): Double = js.native
+  def GetJointTranslation(): Double
   
   /**
     * Get the lower joint limit, usually in meters.
     * @return Lower limit.
     **/
-  def GetLowerLimit(): Double = js.native
+  def GetLowerLimit(): Double
   
   /**
     * Get the current motor force, usually in N.
     * @return Motor force.
     **/
-  def GetMotorForce(): Double = js.native
+  def GetMotorForce(): Double
   
   /**
     * Get the motor speed, usually in meters per second.
     * @return Motor speed.
     **/
-  def GetMotorSpeed(): Double = js.native
+  def GetMotorSpeed(): Double
   
   /**
     * Get the upper joint limit, usually in meters.
     * @return Upper limit.
     **/
-  def GetUpperLimit(): Double = js.native
+  def GetUpperLimit(): Double
   
   /**
     * Is the joint limit enabled?
     * @return True if enabled otherwise false.
     **/
-  def IsLimitEnabled(): Boolean = js.native
+  def IsLimitEnabled(): Boolean
   
   /**
     * Is the joint motor enabled?
     * @return True if enabled, otherwise false.
     **/
-  def IsMotorEnabled(): Boolean = js.native
+  def IsMotorEnabled(): Boolean
   
   /**
     * Set the joint limits, usually in meters.
     * @param lower Lower limit.
     * @param upper Upper limit.
     **/
-  def SetLimits(lower: Double, upper: Double): Unit = js.native
+  def SetLimits(lower: Double, upper: Double): Unit
   
   /**
     * Set the maximum motor force, usually in N.
     * @param force New max force.
     **/
-  def SetMaxMotorForce(force: Double): Unit = js.native
+  def SetMaxMotorForce(force: Double): Unit
   
   /**
     * Set the motor speed, usually in meters per second.
     * @param speed New motor speed.
     **/
-  def SetMotorSpeed(speed: Double): Unit = js.native
+  def SetMotorSpeed(speed: Double): Unit
 }
 object b2PrismaticJoint {
   

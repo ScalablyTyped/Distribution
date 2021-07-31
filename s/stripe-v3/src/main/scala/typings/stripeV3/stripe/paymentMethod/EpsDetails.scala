@@ -2,13 +2,11 @@ package typings.stripeV3.stripe.paymentMethod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EpsDetails extends StObject {
   
-  var verified_name: String = js.native
+  var verified_name: String
 }
 object EpsDetails {
   

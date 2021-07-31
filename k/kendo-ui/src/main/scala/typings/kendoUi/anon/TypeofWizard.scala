@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Wizard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofWizard extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Wizard = js.native
+  def extend(proto: js.Object): Wizard
   
   /* static member */
-  var fn: Wizard = js.native
+  var fn: Wizard
 }
 object TypeofWizard {
   

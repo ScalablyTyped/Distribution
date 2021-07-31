@@ -2,7 +2,6 @@ package typings.openui5.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,14 +14,22 @@ sealed trait PageBackgroundDesign extends StObject
 object PageBackgroundDesign extends StObject {
   
   @js.native
-  sealed trait List extends PageBackgroundDesign
+  sealed trait List
+    extends StObject
+       with PageBackgroundDesign
   
   @js.native
-  sealed trait Solid extends PageBackgroundDesign
+  sealed trait Solid
+    extends StObject
+       with PageBackgroundDesign
   
   @js.native
-  sealed trait Standard extends PageBackgroundDesign
+  sealed trait Standard
+    extends StObject
+       with PageBackgroundDesign
   
   @js.native
-  sealed trait Transparent extends PageBackgroundDesign
+  sealed trait Transparent
+    extends StObject
+       with PageBackgroundDesign
 }

@@ -2,19 +2,17 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveOptions extends StObject {
   
-  var overwrite: js.UndefOr[Boolean] = js.native
+  var overwrite: js.UndefOr[Boolean] = js.undefined
   
-  var returnOld: js.UndefOr[Boolean] = js.native
+  var returnOld: js.UndefOr[Boolean] = js.undefined
   
-  var silent: js.UndefOr[Boolean] = js.native
+  var silent: js.UndefOr[Boolean] = js.undefined
   
-  var waitForSync: js.UndefOr[Boolean] = js.native
+  var waitForSync: js.UndefOr[Boolean] = js.undefined
 }
 object RemoveOptions {
   

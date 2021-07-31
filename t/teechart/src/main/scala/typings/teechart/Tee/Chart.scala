@@ -4,11 +4,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chart extends IChart {
+trait Chart
+  extends StObject
+     with IChart {
   
   //public aspect: IAspect;
   var axes: IAxes = js.native

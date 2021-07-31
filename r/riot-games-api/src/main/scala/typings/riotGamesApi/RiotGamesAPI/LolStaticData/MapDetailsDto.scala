@@ -2,19 +2,17 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapDetailsDto extends StObject {
   
-  var image: ImageDto = js.native
+  var image: ImageDto
   
-  var mapId: Double = js.native
+  var mapId: Double
   
-  var mapName: String = js.native
+  var mapName: String
   
-  var unpurchasableItemList: js.Array[Double] = js.native
+  var unpurchasableItemList: js.Array[Double]
 }
 object MapDetailsDto {
   

@@ -2,33 +2,31 @@ package typings.googleapis.v41Mod.adsensehostV41
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaCustomChannels extends StObject {
   
   /**
     * ETag of this response for caching purposes.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * The custom channels returned in this list response.
     */
-  var items: js.UndefOr[js.Array[SchemaCustomChannel]] = js.native
+  var items: js.UndefOr[js.Array[SchemaCustomChannel]] = js.undefined
   
   /**
     * Kind of list this is, in this case adsensehost#customChannels.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Continuation token used to page through custom channels. To retrieve the
     * next page of results, set the next request&#39;s &quot;pageToken&quot;
     * value to this.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaCustomChannels {
   

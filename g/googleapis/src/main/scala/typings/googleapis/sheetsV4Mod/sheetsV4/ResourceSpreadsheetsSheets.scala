@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/sheets/v4", "sheets_v4.Resource$Spreadsheets$Sheets")
@@ -93,7 +92,7 @@ class ResourceSpreadsheetsSheets protected () extends StObject {
     */
   def copyTo(): GaxiosPromise[SchemaSheetProperties] = js.native
   def copyTo(callback: BodyResponseCallback[SchemaSheetProperties]): Unit = js.native
-  def copyTo(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSheetProperties] = js.native
+  def copyTo(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSheetProperties] = js.native
   def copyTo(params: ParamsResourceSpreadsheetsSheetsCopyto): GaxiosPromise[SchemaSheetProperties] = js.native
   def copyTo(
     params: ParamsResourceSpreadsheetsSheetsCopyto,

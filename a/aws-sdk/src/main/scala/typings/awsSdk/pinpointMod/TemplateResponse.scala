@@ -2,56 +2,54 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the message template. This value isn't included in a TemplateResponse object. To retrieve the ARN of a template, use the GetEmailTemplate, GetPushTemplate, GetSmsTemplate, or GetVoiceTemplate operation, depending on the type of template that you want to retrieve the ARN for.
     */
-  var Arn: js.UndefOr[string] = js.native
+  var Arn: js.UndefOr[string] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the message template was created.
     */
-  var CreationDate: string = js.native
+  var CreationDate: string
   
   /**
     * The JSON object that specifies the default values that are used for message variables in the message template. This object isn't included in a TemplateResponse object. To retrieve this object for a template, use the GetEmailTemplate, GetPushTemplate, GetSmsTemplate, or GetVoiceTemplate operation, depending on the type of template that you want to retrieve the object for.
     */
-  var DefaultSubstitutions: js.UndefOr[string] = js.native
+  var DefaultSubstitutions: js.UndefOr[string] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the message template was last modified.
     */
-  var LastModifiedDate: string = js.native
+  var LastModifiedDate: string
   
   /**
     * The custom description of the message template. This value isn't included in a TemplateResponse object. To retrieve the description of a template, use the GetEmailTemplate, GetPushTemplate, GetSmsTemplate, or GetVoiceTemplate operation, depending on the type of template that you want to retrieve the description for.
     */
-  var TemplateDescription: js.UndefOr[string] = js.native
+  var TemplateDescription: js.UndefOr[string] = js.undefined
   
   /**
     * The name of the message template.
     */
-  var TemplateName: string = js.native
+  var TemplateName: string
   
   /**
     * The type of channel that the message template is designed for. Possible values are: EMAIL, PUSH, SMS, and VOICE.
     */
-  var TemplateType: typings.awsSdk.pinpointMod.TemplateType = js.native
+  var TemplateType: typings.awsSdk.pinpointMod.TemplateType
   
   /**
     * The unique identifier, as an integer, for the active version of the message template.
     */
-  var Version: js.UndefOr[string] = js.native
+  var Version: js.UndefOr[string] = js.undefined
   
   /**
     * A map of key-value pairs that identifies the tags that are associated with the message template. This object isn't included in a TemplateResponse object. To retrieve this object for a template, use the GetEmailTemplate, GetPushTemplate, GetSmsTemplate, or GetVoiceTemplate operation, depending on the type of template that you want to retrieve the object for.
     */
-  var tags: js.UndefOr[MapOfString] = js.native
+  var tags: js.UndefOr[MapOfString] = js.undefined
 }
 object TemplateResponse {
   

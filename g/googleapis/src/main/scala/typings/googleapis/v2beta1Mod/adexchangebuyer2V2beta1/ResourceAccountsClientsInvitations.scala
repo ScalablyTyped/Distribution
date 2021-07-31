@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/adexchangebuyer2/v2beta1", "adexchangebuyer2_v2beta1.Resource$Accounts$Clients$Invitations")
@@ -33,7 +32,7 @@ class ResourceAccountsClientsInvitations protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def create(callback: BodyResponseCallback[SchemaClientUserInvitation]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUserInvitation] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def create(params: ParamsResourceAccountsClientsInvitationsCreate): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def create(
     params: ParamsResourceAccountsClientsInvitationsCreate,
@@ -67,7 +66,7 @@ class ResourceAccountsClientsInvitations protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def get(callback: BodyResponseCallback[SchemaClientUserInvitation]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientUserInvitation] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def get(params: ParamsResourceAccountsClientsInvitationsGet): GaxiosPromise[SchemaClientUserInvitation] = js.native
   def get(
     params: ParamsResourceAccountsClientsInvitationsGet,
@@ -103,7 +102,7 @@ class ResourceAccountsClientsInvitations protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListClientUserInvitationsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListClientUserInvitationsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListClientUserInvitationsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListClientUserInvitationsResponse] = js.native
   def list(params: ParamsResourceAccountsClientsInvitationsList): GaxiosPromise[SchemaListClientUserInvitationsResponse] = js.native
   def list(
     params: ParamsResourceAccountsClientsInvitationsList,

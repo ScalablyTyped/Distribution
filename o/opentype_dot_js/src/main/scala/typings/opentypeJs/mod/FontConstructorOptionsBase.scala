@@ -2,21 +2,19 @@ package typings.opentypeJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FontConstructorOptionsBase extends StObject {
   
-  var ascender: Double = js.native
+  var ascender: Double
   
-  var descender: Double = js.native
+  var descender: Double
   
-  var familyName: String = js.native
+  var familyName: String
   
-  var styleName: String = js.native
+  var styleName: String
   
-  var unitsPerEm: Double = js.native
+  var unitsPerEm: Double
 }
 object FontConstructorOptionsBase {
   

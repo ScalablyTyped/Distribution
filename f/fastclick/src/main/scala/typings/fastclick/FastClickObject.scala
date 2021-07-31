@@ -4,43 +4,41 @@ import typings.std.Element
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FastClickObject extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def determineEventType(targetElement: js.Any): String = js.native
+  def determineEventType(targetElement: js.Any): String
   
-  def findControl(labelElement: js.Any): js.Any = js.native
+  def findControl(labelElement: js.Any): js.Any
   
-  def focus(targetElement: js.Any): Unit = js.native
+  def focus(targetElement: js.Any): Unit
   
-  def getTargetElementFromEventTarget(eventTarget: EventTarget): js.Any = js.native
+  def getTargetElementFromEventTarget(eventTarget: EventTarget): js.Any
   
-  var lastTouchIdentifier: Double = js.native
+  var lastTouchIdentifier: Double
   
-  var layer: Element = js.native
+  var layer: Element
   
-  def needsClick(target: js.Any): Boolean = js.native
+  def needsClick(target: js.Any): Boolean
   
-  def needsFocus(target: js.Any): Boolean = js.native
+  def needsFocus(target: js.Any): Boolean
   
-  var tapDelay: Double = js.native
+  var tapDelay: Double
   
-  var targetElement: js.Any = js.native
+  var targetElement: js.Any
   
-  var touchBoundary: Double = js.native
+  var touchBoundary: Double
   
-  var touchStartX: Double = js.native
+  var touchStartX: Double
   
-  var touchStartY: Double = js.native
+  var touchStartY: Double
   
-  var trackingClick: Boolean = js.native
+  var trackingClick: Boolean
   
-  var trackingClickStart: Double = js.native
+  var trackingClickStart: Double
 }
 object FastClickObject {
   

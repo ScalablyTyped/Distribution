@@ -4,22 +4,20 @@ import typings.htmlValidator.htmlValidatorStrings.info
 import typings.htmlValidator.htmlValidatorStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationMessageBasicInfoObject extends StObject {
   
-  var subType: js.UndefOr[warning] = js.native
+  var subType: js.UndefOr[warning] = js.undefined
   
-  var `type`: info = js.native
+  var `type`: info
 }
 object ValidationMessageBasicInfoObject {
   
   @scala.inline
-  def apply(`type`: info): ValidationMessageBasicInfoObject = {
+  def apply(): ValidationMessageBasicInfoObject = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("info")
     __obj.asInstanceOf[ValidationMessageBasicInfoObject]
   }
   

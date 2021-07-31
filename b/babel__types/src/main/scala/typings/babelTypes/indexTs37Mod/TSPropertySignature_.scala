@@ -3,36 +3,35 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.TSPropertySignature
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait TSPropertySignature_
-  extends TSTypeElement
-     with BaseNode {
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait TSPropertySignature_
+  extends StObject
+     with BaseNode
+     with TSTypeElement {
   
-  var computed: Boolean | Null = js.native
+  var computed: Boolean | Null
   
-  var initializer: Expression | Null = js.native
+  var initializer: Expression | Null
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var optional: Boolean | Null = js.native
+  var optional: Boolean | Null
   
-  var readonly: Boolean | Null = js.native
+  var readonly: Boolean | Null
   
-  var typeAnnotation: TSTypeAnnotation_ | Null = js.native
+  var typeAnnotation: TSTypeAnnotation_ | Null
   
   @JSName("type")
-  var type_TSPropertySignature_ : TSPropertySignature = js.native
+  var type_TSPropertySignature_ : TSPropertySignature
 }
 object TSPropertySignature_ {
   
   @scala.inline
-  def apply(key: Expression, `type`: TSPropertySignature): TSPropertySignature_ = {
-    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(key: Expression): TSPropertySignature_ = {
+    val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], computed = null, end = null, initializer = null, innerComments = null, leadingComments = null, loc = null, optional = null, readonly = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("TSPropertySignature")
     __obj.asInstanceOf[TSPropertySignature_]
   }
   

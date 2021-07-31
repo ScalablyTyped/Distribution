@@ -2,10 +2,8 @@ package typings.uiGrid.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGridColumnOf[TEntity] extends StObject {
   
   /**
@@ -14,19 +12,19 @@ trait IGridColumnOf[TEntity] extends StObject {
     * @param uid The unique and immutable uid we'd like to allocate to this column
     * @param grid the grid we'd like to create this column in
     */
-  def GridColumn(colDef: IColumnDefOf[TEntity], uid: Double, grid: IGridInstanceOf[TEntity]): Unit = js.native
+  def GridColumn(colDef: IColumnDefOf[TEntity], uid: Double, grid: IGridInstanceOf[TEntity]): Unit
   
   /** Column definition */
-  var colDef: IColumnDefOf[TEntity] = js.native
+  var colDef: IColumnDefOf[TEntity]
   
   /** Default sort on this column */
-  var defaultSort: js.UndefOr[ISortInfo] = js.native
+  var defaultSort: js.UndefOr[ISortInfo] = js.undefined
   
   /**
     * Column name that will be shown in the header.
     * If displayName is not provided then one is generated using the name.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * field must be provided if you wish to bind to a property in the data source.
@@ -34,57 +32,57 @@ trait IGridColumnOf[TEntity] extends StObject {
     * Can be a complex expression: employee.address.city, or can be a function: employee.getFullAddress().
     * See the angular docs on binding expressions.
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /** Filter on this column */
-  var filter: js.UndefOr[IFilterOptions] = js.native
+  var filter: js.UndefOr[IFilterOptions] = js.undefined
   
   /** Filters for this column. Includes 'term' property bound to filter input elements */
-  var filters: js.UndefOr[js.Array[IFilterOptions]] = js.native
+  var filters: js.UndefOr[js.Array[IFilterOptions]] = js.undefined
   
   /**
     * Gets the aggregation label from colDef.aggregationLabel if specified or by using i18n,
     * including deciding whether or not to display based on colDef.aggregationHideLabel.
     * @param label the i18n lookup value to use for the column label
     */
-  def getAggregationText(label: String): Unit = js.native
+  def getAggregationText(label: String): Unit
   
   /**
     * gets the aggregation value based on the aggregation type for this column.
     * Debounced using scrollDebounce option setting
     */
-  def getAggregationValue(): String = js.native
+  def getAggregationValue(): String
   
   /**
     * Returns the class name for the column
     * @param prefixDot if true, will return .className instead of className
     */
-  def getColClass(prefixDot: Boolean): String = js.native
+  def getColClass(prefixDot: Boolean): String
   
   /** Returns the class definition for th column */
-  def getColClassDefinition(): String = js.native
+  def getColClassDefinition(): String
   
   /**
     * Returns the render container object that this column belongs to.
     * Columns will be default be in the body render container
     * if they aren't allocated to one specifically.
     */
-  def getRenderContainer(): js.Any = js.native
+  def getRenderContainer(): js.Any
   
   /** Reference to grid containing the column */
-  var grid: IGridInstanceOf[TEntity] = js.native
+  var grid: IGridInstanceOf[TEntity]
   
   // @todo replace with interface for render container
   /** Hides the column by setting colDef.visible = false */
-  def hideColumn(): Unit = js.native
+  def hideColumn(): Unit
   
   /** Returns true if column is in the left render container */
-  def isPinnedLeft(): Boolean = js.native
+  def isPinnedLeft(): Boolean
   
   /** Returns true if column is in the right render container */
-  def isPinnedRight(): Boolean = js.native
+  def isPinnedRight(): Boolean
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a property on the column using the passed in columnDef,
@@ -93,13 +91,13 @@ trait IGridColumnOf[TEntity] extends StObject {
     * @param propName the property name we'd like to set
     * @param defaultValue the value to use if the colDef doesn't provide the setting
     */
-  def setPropertyOrDefault(colDef: IColumnDefOf[TEntity], propName: String, defaultValue: js.Any): Unit = js.native
+  def setPropertyOrDefault(colDef: IColumnDefOf[TEntity], propName: String, defaultValue: js.Any): Unit
   
   /** Makes the column visible by setting colDef.visible = true */
-  def showColumn(): Unit = js.native
+  def showColumn(): Unit
   
   /** Sort on this column */
-  var sort: js.UndefOr[ISortInfo] = js.native
+  var sort: js.UndefOr[ISortInfo] = js.undefined
   
   /**
     * Algorithm to use for sorting this column. Takes 'a' and 'b' parameters
@@ -116,7 +114,7 @@ trait IGridColumnOf[TEntity] extends StObject {
       /* direction */ String, 
       Double
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Moves settings from the columnDef down onto the column, and sets properties as appropriate
@@ -124,10 +122,10 @@ trait IGridColumnOf[TEntity] extends StObject {
     * @param isNew whether the column is being newly created, if not we're updating an existing
     *              column, and some items such as the sort shouldn't be copied down
     */
-  def updateColumnDef(colDef: IColumnDefOf[TEntity], isNew: Boolean): Unit = js.native
+  def updateColumnDef(colDef: IColumnDefOf[TEntity], isNew: Boolean): Unit
   
   /** Column width */
-  var width: Double = js.native
+  var width: Double
 }
 object IGridColumnOf {
   
@@ -154,7 +152,7 @@ object IGridColumnOf {
   }
   
   @scala.inline
-  implicit class IGridColumnOfMutableBuilder[Self <: IGridColumnOf[_], TEntity] (val x: Self with IGridColumnOf[TEntity]) extends AnyVal {
+  implicit class IGridColumnOfMutableBuilder[Self <: IGridColumnOf[?], TEntity] (val x: Self & IGridColumnOf[TEntity]) extends AnyVal {
     
     @scala.inline
     def setColDef(value: IColumnDefOf[TEntity]): Self = StObject.set(x, "colDef", value.asInstanceOf[js.Any])

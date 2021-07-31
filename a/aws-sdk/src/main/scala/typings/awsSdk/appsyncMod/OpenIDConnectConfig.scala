@@ -2,31 +2,29 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenIDConnectConfig extends StObject {
   
   /**
     * The number of milliseconds a token is valid after being authenticated.
     */
-  var authTTL: js.UndefOr[Long] = js.native
+  var authTTL: js.UndefOr[Long] = js.undefined
   
   /**
     * The client identifier of the Relying party at the OpenID identity provider. This identifier is typically obtained when the Relying party is registered with the OpenID identity provider. You can specify a regular expression so the AWS AppSync can validate against multiple client identifiers at a time.
     */
-  var clientId: js.UndefOr[String] = js.native
+  var clientId: js.UndefOr[String] = js.undefined
   
   /**
     * The number of milliseconds a token is valid after being issued to a user.
     */
-  var iatTTL: js.UndefOr[Long] = js.native
+  var iatTTL: js.UndefOr[Long] = js.undefined
   
   /**
     * The issuer for the OpenID Connect configuration. The issuer returned by discovery must exactly match the value of iss in the ID token.
     */
-  var issuer: String = js.native
+  var issuer: String
 }
 object OpenIDConnectConfig {
   

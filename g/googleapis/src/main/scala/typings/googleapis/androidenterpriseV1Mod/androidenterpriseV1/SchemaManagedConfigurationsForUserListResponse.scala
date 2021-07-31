@@ -2,25 +2,23 @@ package typings.googleapis.androidenterpriseV1Mod.androidenterpriseV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The managed configuration resources for the user.
   */
-@js.native
 trait SchemaManagedConfigurationsForUserListResponse extends StObject {
   
   /**
     * Identifies what kind of resource this is. Value: the fixed string
     * &quot;androidenterprise#managedConfigurationsForUserListResponse&quot;.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * A managed configuration for an app for a specific user.
     */
-  var managedConfigurationForUser: js.UndefOr[js.Array[SchemaManagedConfiguration]] = js.native
+  var managedConfigurationForUser: js.UndefOr[js.Array[SchemaManagedConfiguration]] = js.undefined
 }
 object SchemaManagedConfigurationsForUserListResponse {
   

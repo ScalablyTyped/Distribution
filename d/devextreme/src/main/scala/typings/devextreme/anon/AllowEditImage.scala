@@ -46,91 +46,89 @@ import typings.devextreme.mod.DevExpress.core.dxSVGElement
 import typings.devextreme.mod.DevExpress.core.template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AllowEditImage extends StObject {
   
-  var allowEditImage: js.UndefOr[Boolean] = js.native
+  var allowEditImage: js.UndefOr[Boolean] = js.undefined
   
-  var allowEditText: js.UndefOr[Boolean] = js.native
+  var allowEditText: js.UndefOr[Boolean] = js.undefined
   
-  var allowResize: js.UndefOr[Boolean] = js.native
+  var allowResize: js.UndefOr[Boolean] = js.undefined
   
-  var backgroundImageHeight: js.UndefOr[Double] = js.native
+  var backgroundImageHeight: js.UndefOr[Double] = js.undefined
   
-  var backgroundImageLeft: js.UndefOr[Double] = js.native
+  var backgroundImageLeft: js.UndefOr[Double] = js.undefined
   
-  var backgroundImageToolboxUrl: js.UndefOr[String] = js.native
+  var backgroundImageToolboxUrl: js.UndefOr[String] = js.undefined
   
-  var backgroundImageTop: js.UndefOr[Double] = js.native
+  var backgroundImageTop: js.UndefOr[Double] = js.undefined
   
-  var backgroundImageUrl: js.UndefOr[String] = js.native
+  var backgroundImageUrl: js.UndefOr[String] = js.undefined
   
-  var backgroundImageWidth: js.UndefOr[Double] = js.native
+  var backgroundImageWidth: js.UndefOr[Double] = js.undefined
   
   var baseType: js.UndefOr[
     text | rectangle | ellipse | cross | triangle | diamond | heart | pentagon | octagon | star | arrowLeft | arrowTop | arrowRight | arrowBottom | arrowNorthSouth | arrowEastWest | process | decision | terminator | predefinedProcess | document | multipleDocuments | manualInput | preparation | data | database | hardDisk | internalStorage | paperTape | manualOperation | delay | storedData | display | merge | connector | or | summingJunction | verticalContainer | horizontalContainer | cardWithImageOnLeft | cardWithImageOnTop | cardWithImageOnRight | String
-  ] = js.native
+  ] = js.undefined
   
-  var category: js.UndefOr[String] = js.native
+  var category: js.UndefOr[String] = js.undefined
   
-  var connectionPoints: js.UndefOr[js.Array[Y]] = js.native
+  var connectionPoints: js.UndefOr[js.Array[Y]] = js.undefined
   
-  var defaultHeight: js.UndefOr[Double] = js.native
+  var defaultHeight: js.UndefOr[Double] = js.undefined
   
-  var defaultImageUrl: js.UndefOr[String] = js.native
+  var defaultImageUrl: js.UndefOr[String] = js.undefined
   
-  var defaultText: js.UndefOr[String] = js.native
+  var defaultText: js.UndefOr[String] = js.undefined
   
-  var defaultWidth: js.UndefOr[Double] = js.native
+  var defaultWidth: js.UndefOr[Double] = js.undefined
   
-  var imageHeight: js.UndefOr[Double] = js.native
+  var imageHeight: js.UndefOr[Double] = js.undefined
   
-  var imageLeft: js.UndefOr[Double] = js.native
+  var imageLeft: js.UndefOr[Double] = js.undefined
   
-  var imageTop: js.UndefOr[Double] = js.native
+  var imageTop: js.UndefOr[Double] = js.undefined
   
-  var imageWidth: js.UndefOr[Double] = js.native
+  var imageWidth: js.UndefOr[Double] = js.undefined
   
-  var keepRatioOnAutoSize: js.UndefOr[Boolean] = js.native
+  var keepRatioOnAutoSize: js.UndefOr[Boolean] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
   var template: js.UndefOr[
-    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])
-  ] = js.native
+    typings.devextreme.mod.DevExpress.core.template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])
+  ] = js.undefined
   
-  var templateHeight: js.UndefOr[Double] = js.native
+  var templateHeight: js.UndefOr[Double] = js.undefined
   
-  var templateLeft: js.UndefOr[Double] = js.native
+  var templateLeft: js.UndefOr[Double] = js.undefined
   
-  var templateTop: js.UndefOr[Double] = js.native
+  var templateTop: js.UndefOr[Double] = js.undefined
   
-  var templateWidth: js.UndefOr[Double] = js.native
+  var templateWidth: js.UndefOr[Double] = js.undefined
   
-  var textHeight: js.UndefOr[Double] = js.native
+  var textHeight: js.UndefOr[Double] = js.undefined
   
-  var textLeft: js.UndefOr[Double] = js.native
+  var textLeft: js.UndefOr[Double] = js.undefined
   
-  var textTop: js.UndefOr[Double] = js.native
+  var textTop: js.UndefOr[Double] = js.undefined
   
-  var textWidth: js.UndefOr[Double] = js.native
+  var textWidth: js.UndefOr[Double] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var toolboxTemplate: js.UndefOr[template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])] = js.native
+  var toolboxTemplate: js.UndefOr[template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])] = js.undefined
   
-  var toolboxWidthToHeightRatio: js.UndefOr[Double] = js.native
+  var toolboxWidthToHeightRatio: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object AllowEditImage {
   
@@ -299,10 +297,10 @@ object AllowEditImage {
     def setMinWidthUndefined: Self = StObject.set(x, "minWidth", js.undefined)
     
     @scala.inline
-    def setTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
+    def setTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => _): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    def setTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
     
     @scala.inline
     def setTemplateHeight(value: Double): Self = StObject.set(x, "templateHeight", value.asInstanceOf[js.Any])
@@ -362,10 +360,10 @@ object AllowEditImage {
     def setTitleUndefined: Self = StObject.set(x, "title", js.undefined)
     
     @scala.inline
-    def setToolboxTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, _])): Self = StObject.set(x, "toolboxTemplate", value.asInstanceOf[js.Any])
+    def setToolboxTemplate(value: template | (js.Function2[/* container */ dxSVGElement, /* data */ Item, js.Any])): Self = StObject.set(x, "toolboxTemplate", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setToolboxTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => _): Self = StObject.set(x, "toolboxTemplate", js.Any.fromFunction2(value))
+    def setToolboxTemplateFunction2(value: (/* container */ dxSVGElement, /* data */ Item) => js.Any): Self = StObject.set(x, "toolboxTemplate", js.Any.fromFunction2(value))
     
     @scala.inline
     def setToolboxTemplateUndefined: Self = StObject.set(x, "toolboxTemplate", js.undefined)

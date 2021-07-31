@@ -7,40 +7,38 @@ import typings.browserReport.anon.Name
 import typings.browserReport.anon.Version
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReportResult extends StObject {
   
-  var browser: Name = js.native
+  var browser: Name
   
-  var cookies: Boolean = js.native
+  var cookies: Boolean
   
-  var country: City = js.native
+  var country: City
   
-  var flash: Version = js.native
+  var flash: Version
   
-  var ip: String = js.native
+  var ip: String
   
   @JSName("java")
-  var java_ : Version = js.native
+  var java_ : Version
   
-  var lang: js.Array[String] = js.native
+  var lang: js.Array[String]
   
-  var os: Name = js.native
+  var os: Name
   
-  var screen: Colors = js.native
+  var screen: Colors
   
-  var scripts: Boolean = js.native
+  var scripts: Boolean
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var userAgent: String = js.native
+  var userAgent: String
   
-  var viewport: Layout = js.native
+  var viewport: Layout
   
-  var websockets: Boolean = js.native
+  var websockets: Boolean
 }
 object ReportResult {
   

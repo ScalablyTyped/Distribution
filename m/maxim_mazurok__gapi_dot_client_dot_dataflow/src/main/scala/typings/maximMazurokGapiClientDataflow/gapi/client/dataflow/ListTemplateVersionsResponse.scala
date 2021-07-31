@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTemplateVersionsResponse extends StObject {
   
   /** A token that can be sent as `page_token` to retrieve the next page. If this field is omitted, there are no subsequent pages. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** A list of TemplateVersions. */
-  var templateVersions: js.UndefOr[js.Array[TemplateVersion]] = js.native
+  var templateVersions: js.UndefOr[js.Array[TemplateVersion]] = js.undefined
 }
 object ListTemplateVersionsResponse {
   

@@ -2,46 +2,44 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartOutboundVoiceContactRequest extends StObject {
   
   /**
     * A custom key-value pair using an attribute map. The attributes are standard Amazon Connect attributes, and can be accessed in contact flows just like any other contact attributes. There can be up to 32,768 UTF-8 bytes across all key-value pairs per contact. Attribute keys can include only alphanumeric, dash, and underscore characters.
     */
-  var Attributes: js.UndefOr[typings.awsSdk.connectMod.Attributes] = js.native
+  var Attributes: js.UndefOr[typings.awsSdk.connectMod.Attributes] = js.undefined
   
   /**
     * A unique, case-sensitive identifier that you provide to ensure the idempotency of the request. The token is valid for 7 days after creation. If a contact is already started, the contact ID is returned. If the contact is disconnected, a new contact is started.
     */
-  var ClientToken: js.UndefOr[typings.awsSdk.connectMod.ClientToken] = js.native
+  var ClientToken: js.UndefOr[typings.awsSdk.connectMod.ClientToken] = js.undefined
   
   /**
     * The identifier of the contact flow for the outbound call. To see the ContactFlowId in the Amazon Connect console user interface, on the navigation menu go to Routing, Contact Flows. Choose the contact flow. On the contact flow page, under the name of the contact flow, choose Show additional flow information. The ContactFlowId is the last part of the ARN, shown here in bold:  arn:aws:connect:us-west-2:xxxxxxxxxxxx:instance/xxxxxxxx-xxxx-xxxx-xxxx-xxxxxxxxxxxx/contact-flow/846ec553-a005-41c0-8341-xxxxxxxxxxxx 
     */
-  var ContactFlowId: typings.awsSdk.connectMod.ContactFlowId = js.native
+  var ContactFlowId: typings.awsSdk.connectMod.ContactFlowId
   
   /**
     * The phone number of the customer, in E.164 format.
     */
-  var DestinationPhoneNumber: PhoneNumber = js.native
+  var DestinationPhoneNumber: PhoneNumber
   
   /**
     * The identifier of the Amazon Connect instance.
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
   
   /**
     * The queue for the call. If you specify a queue, the phone displayed for caller ID is the phone number specified in the queue. If you do not specify a queue, the queue defined in the contact flow is used. If you do not specify a queue, you must specify a source phone number.
     */
-  var QueueId: js.UndefOr[typings.awsSdk.connectMod.QueueId] = js.native
+  var QueueId: js.UndefOr[typings.awsSdk.connectMod.QueueId] = js.undefined
   
   /**
     * The phone number associated with the Amazon Connect instance, in E.164 format. If you do not specify a source phone number, you must specify a queue.
     */
-  var SourcePhoneNumber: js.UndefOr[PhoneNumber] = js.native
+  var SourcePhoneNumber: js.UndefOr[PhoneNumber] = js.undefined
 }
 object StartOutboundVoiceContactRequest {
   

@@ -6,15 +6,15 @@ import typings.googleAppsScript.GoogleAppsScript.Forms.FormResponse
 import typings.googleAppsScript.GoogleAppsScript.Script.AuthMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FormsOnFormSubmit extends AppsScriptEvent {
+trait FormsOnFormSubmit
+  extends StObject
+     with AppsScriptEvent {
   
-  var response: FormResponse = js.native
+  var response: FormResponse
   
-  var source: Form = js.native
+  var source: Form
 }
 object FormsOnFormSubmit {
   

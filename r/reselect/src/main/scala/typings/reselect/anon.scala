@@ -6,7 +6,6 @@ import typings.reselect.mod.ParametricSelector
 import typings.reselect.mod.Selector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -869,36 +868,5 @@ object anon {
           T
         ]
       ] = js.native
-  }
-  
-  @js.native
-  trait Recomputations[C] extends StObject {
-    
-    def recomputations(): Double = js.native
-    
-    def resetRecomputations(): Double = js.native
-    
-    var resultFunc: C = js.native
-  }
-  object Recomputations {
-    
-    @scala.inline
-    def apply[C](recomputations: () => Double, resetRecomputations: () => Double, resultFunc: C): Recomputations[C] = {
-      val __obj = js.Dynamic.literal(recomputations = js.Any.fromFunction0(recomputations), resetRecomputations = js.Any.fromFunction0(resetRecomputations), resultFunc = resultFunc.asInstanceOf[js.Any])
-      __obj.asInstanceOf[Recomputations[C]]
-    }
-    
-    @scala.inline
-    implicit class RecomputationsMutableBuilder[Self <: Recomputations[_], C] (val x: Self with Recomputations[C]) extends AnyVal {
-      
-      @scala.inline
-      def setRecomputations(value: () => Double): Self = StObject.set(x, "recomputations", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setResetRecomputations(value: () => Double): Self = StObject.set(x, "resetRecomputations", js.Any.fromFunction0(value))
-      
-      @scala.inline
-      def setResultFunc(value: C): Self = StObject.set(x, "resultFunc", value.asInstanceOf[js.Any])
-    }
   }
 }

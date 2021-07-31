@@ -3,7 +3,6 @@ package typings.matrixAppserviceBridge.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matrix-appservice-bridge", "RemoteRoom")
@@ -16,5 +15,5 @@ class RemoteRoom protected ()
     * @param data The key-value data object to assign to this room.
     */
   def this(roomId: String) = this()
-  def this(roomId: String, data: Record[String, _]) = this()
+  def this(roomId: String, data: Record[String, js.Any]) = this()
 }

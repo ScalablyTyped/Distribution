@@ -2,21 +2,19 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EBSOptionsStatus extends StObject {
   
   /**
     *  Specifies the EBS options for the specified Elasticsearch domain.
     */
-  var Options: EBSOptions = js.native
+  var Options: EBSOptions
   
   /**
     *  Specifies the status of the EBS options for the specified Elasticsearch domain.
     */
-  var Status: OptionStatus = js.native
+  var Status: OptionStatus
 }
 object EBSOptionsStatus {
   

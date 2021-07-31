@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDriveactivity.gapi.client.driveactivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Actor extends StObject {
   
   /** An administrator. */
-  var administrator: js.UndefOr[js.Any] = js.native
+  var administrator: js.UndefOr[js.Any] = js.undefined
   
   /** An anonymous user. */
-  var anonymous: js.UndefOr[js.Any] = js.native
+  var anonymous: js.UndefOr[js.Any] = js.undefined
   
   /** An account acting on behalf of another. */
-  var impersonation: js.UndefOr[Impersonation] = js.native
+  var impersonation: js.UndefOr[Impersonation] = js.undefined
   
   /** A non-user actor (i.e. system triggered). */
-  var system: js.UndefOr[SystemEvent] = js.native
+  var system: js.UndefOr[SystemEvent] = js.undefined
   
   /** An end user. */
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
 }
 object Actor {
   

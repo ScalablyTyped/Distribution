@@ -2,21 +2,19 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectLog extends StObject {
   
   /**
     * The external account number (int) or account ID GUID.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The web address of the listener or retrieving service endpoint for Connect.
     */
-  var configUrl: js.UndefOr[String] = js.native
+  var configUrl: js.UndefOr[String] = js.undefined
   
   /**
     * A complex element containing information about the Connect configuration, error details, date/time, description and payload.
@@ -25,67 +23,67 @@ trait ConnectLog extends StObject {
     * [ConnectEvents:get](https://developers.docusign.com/esign-rest-api/reference/Connect/ConnectEvents/get), but not when retrieving
     * failure logs with [ConnectEvents:listFailures](https://developers.docusign.com/esign-rest-api/reference/Connect/ConnectEvents/listFailures).
     */
-  var connectDebugLog: js.UndefOr[js.Array[ConnectDebugLog]] = js.native
+  var connectDebugLog: js.UndefOr[js.Array[ConnectDebugLog]] = js.undefined
   
   /**
     * The id of the Connect configuration that failed. If an account has multiple Connect configurations, this value is used to look up the Connect configuration for the failed post.
     */
-  var connectId: js.UndefOr[String] = js.native
+  var connectId: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the Connect post was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The email address of the envelope sender.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the envelope that failed to post.
     */
-  var envelopeId: js.UndefOr[String] = js.native
+  var envelopeId: js.UndefOr[String] = js.undefined
   
   /**
     * The server error associated with the Connect post failure.
     */
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the Connect post failure.
     */
-  var failureId: js.UndefOr[String] = js.native
+  var failureId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the Connect post failure.
     */
-  var failureUri: js.UndefOr[String] = js.native
+  var failureUri: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime of the last attempt to post.
     */
-  var lastTry: js.UndefOr[String] = js.native
+  var lastTry: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the Connect log entry.
     */
-  var logId: js.UndefOr[String] = js.native
+  var logId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the Connect log entry.
     */
-  var logUri: js.UndefOr[String] = js.native
+  var logUri: js.UndefOr[String] = js.undefined
   
   /**
     * The number of times the Connect post has been retried.
     */
-  var retryCount: js.UndefOr[String] = js.native
+  var retryCount: js.UndefOr[String] = js.undefined
   
   /**
     * A URI that you can use to retry to publish the Connect post.
     */
-  var retryUri: js.UndefOr[String] = js.native
+  var retryUri: js.UndefOr[String] = js.undefined
   
   /**
     * The envelope status for the Connect post. Possible values are:
@@ -104,17 +102,17 @@ trait ConnectLog extends StObject {
     *
     * For details about these statuses, see [Envelope Status Code Descriptions](https://developers.docusign.com/esign-rest-api/guides/status-and-error-codes#envelope-status-code-descriptions).
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The subject of the envelope.
     */
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the sender of the envelope.
     */
-  var userName: js.UndefOr[String] = js.native
+  var userName: js.UndefOr[String] = js.undefined
 }
 object ConnectLog {
   

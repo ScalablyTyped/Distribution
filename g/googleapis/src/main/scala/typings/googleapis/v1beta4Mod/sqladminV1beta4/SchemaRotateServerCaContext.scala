@@ -2,26 +2,24 @@ package typings.googleapis.v1beta4Mod.sqladminV1beta4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Instance rotate server CA context.
   */
-@js.native
 trait SchemaRotateServerCaContext extends StObject {
   
   /**
     * This is always sql#rotateServerCaContext.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The fingerprint of the next version to be rotated to. If left
     * unspecified, will be rotated to the most recently added server CA
     * version.
     */
-  var nextVersion: js.UndefOr[String] = js.native
+  var nextVersion: js.UndefOr[String] = js.undefined
 }
 object SchemaRotateServerCaContext {
   

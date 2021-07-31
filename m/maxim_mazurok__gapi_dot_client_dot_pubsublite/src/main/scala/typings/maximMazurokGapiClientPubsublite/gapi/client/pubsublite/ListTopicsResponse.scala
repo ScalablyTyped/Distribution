@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientPubsublite.gapi.client.pubsublite
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTopicsResponse extends StObject {
   
   /** A token that can be sent as `page_token` to retrieve the next page of results. If this field is omitted, there are no more results. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** The list of topic in the requested parent. The order of the topics is unspecified. */
-  var topics: js.UndefOr[js.Array[Topic]] = js.native
+  var topics: js.UndefOr[js.Array[Topic]] = js.undefined
 }
 object ListTopicsResponse {
   

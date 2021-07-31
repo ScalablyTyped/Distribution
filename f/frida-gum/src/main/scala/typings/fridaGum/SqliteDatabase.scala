@@ -2,14 +2,12 @@ package typings.fridaGum
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides read/write access to a SQLite database. Useful for persistence
   * and to embed a cache in an agent.
   */
-@js.native
 trait SqliteDatabase extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SqliteDatabase extends StObject {
     * the database, unless you are fine with this happening when the object is
     * garbage-collected or the script is unloaded.
     */
-  def close(): Unit = js.native
+  def close(): Unit
   
   /**
     * Dumps the database to a gzip-compressed blob encoded as Base64.
@@ -25,7 +23,7 @@ trait SqliteDatabase extends StObject {
     * This is useful for inlining a cache in your agent's code, loaded by
     * calling `SqliteDatabase.openInline()`.
     */
-  def dump(): String = js.native
+  def dump(): String
   
   /**
     * Executes a raw SQL query. Throws an exception if the query is invalid.
@@ -35,7 +33,7 @@ trait SqliteDatabase extends StObject {
     *
     * @param sql Text-representation of the SQL query.
     */
-  def exec(sql: String): Unit = js.native
+  def exec(sql: String): Unit
   
   /**
     * Compiles the provided SQL into a `SqliteStatement` object. Throws an
@@ -43,7 +41,7 @@ trait SqliteDatabase extends StObject {
     *
     * @param sql Text-representation of the SQL query.
     */
-  def prepare(sql: String): SqliteStatement = js.native
+  def prepare(sql: String): SqliteStatement
 }
 object SqliteDatabase {
   

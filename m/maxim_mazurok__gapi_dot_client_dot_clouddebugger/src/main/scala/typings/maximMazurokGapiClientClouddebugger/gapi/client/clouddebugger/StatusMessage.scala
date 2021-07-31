@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientClouddebugger.gapi.client.clouddebugger
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusMessage extends StObject {
   
   /** Status message text. */
-  var description: js.UndefOr[FormatMessage] = js.native
+  var description: js.UndefOr[FormatMessage] = js.undefined
   
   /** Distinguishes errors from informational messages. */
-  var isError: js.UndefOr[Boolean] = js.native
+  var isError: js.UndefOr[Boolean] = js.undefined
   
   /** Reference to which the message applies. */
-  var refersTo: js.UndefOr[String] = js.native
+  var refersTo: js.UndefOr[String] = js.undefined
 }
 object StatusMessage {
   

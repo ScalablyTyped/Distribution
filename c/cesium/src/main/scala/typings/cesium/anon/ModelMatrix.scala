@@ -3,17 +3,15 @@ package typings.cesium.anon
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ModelMatrix extends StObject {
   
-  var blendOption: js.UndefOr[typings.cesium.mod.BlendOption] = js.native
+  var blendOption: js.UndefOr[typings.cesium.mod.BlendOption] = js.undefined
   
-  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.native
+  var debugShowBoundingVolume: js.UndefOr[Boolean] = js.undefined
   
-  var modelMatrix: js.UndefOr[Matrix4] = js.native
+  var modelMatrix: js.UndefOr[Matrix4] = js.undefined
 }
 object ModelMatrix {
   

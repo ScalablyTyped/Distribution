@@ -2,16 +2,14 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeregisterRdsDbInstanceRequest extends StObject {
   
   /**
     * The Amazon RDS instance's ARN.
     */
-  var RdsDbInstanceArn: String = js.native
+  var RdsDbInstanceArn: String
 }
 object DeregisterRdsDbInstanceRequest {
   

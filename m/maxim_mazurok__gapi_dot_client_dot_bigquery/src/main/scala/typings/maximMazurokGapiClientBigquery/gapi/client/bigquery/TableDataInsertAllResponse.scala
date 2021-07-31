@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import typings.maximMazurokGapiClientBigquery.anon.Errors
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableDataInsertAllResponse extends StObject {
   
   /** An array of errors for rows that were not inserted. */
-  var insertErrors: js.UndefOr[js.Array[Errors]] = js.native
+  var insertErrors: js.UndefOr[js.Array[Errors]] = js.undefined
   
   /** The resource type of the response. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object TableDataInsertAllResponse {
   

@@ -2,43 +2,41 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait File extends StObject {
   
   /**
     *   URL string containing image data.
     */
-  var data: js.Any = js.native
+  var data: js.Any
   
   /**
     *   Underlying File object. All normal File methods
     *   can be called on this.
     */
-  var file: js.Any = js.native
+  var file: js.Any
   
   /**
     *   File name
     */
-  var name: js.Any = js.native
+  var name: js.Any
   
   /**
     *   File size
     */
-  var size: js.Any = js.native
+  var size: js.Any
   
   /**
     *   File subtype (usually the file extension jpg, png,
     *   xml, etc.)
     */
-  var subtype: js.Any = js.native
+  var subtype: js.Any
   
   /**
     *   File type (image, text, etc.)
     */
-  var `type`: js.Any = js.native
+  var `type`: js.Any
 }
 object File {
   

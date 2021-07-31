@@ -2,17 +2,15 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMetadataCardValueSuggestion extends StObject {
   
-  val IsNewValue: Boolean = js.native
+  val IsNewValue: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
-  val Value: js.Any = js.native
+  val Value: js.Any
 }
 object IMetadataCardValueSuggestion {
   

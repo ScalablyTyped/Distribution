@@ -19,10 +19,13 @@ import typings.q.mod.Promise
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("promise-pg", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("promise-pg", "Client")
   @js.native
@@ -52,13 +55,13 @@ object mod {
     
     def query(config: QueryConfig): Query = js.native
     def query(queryText: String): Query = js.native
-    def query(queryText: String, values: js.Array[_]): Query = js.native
+    def query(queryText: String, values: js.Array[js.Any]): Query = js.native
     
     var raw: typings.pg.mod.Client = js.native
     
     def resumeDrain(): Unit = js.native
     
-    def transaction(task: js.Function0[Promise[_]]): Promise[_] = js.native
+    def transaction(task: js.Function0[Promise[js.Any]]): Promise[js.Any] = js.native
   }
   
   @JSImport("promise-pg", "Query")
@@ -66,24 +69,21 @@ object mod {
   class Query ()
     extends typings.pg.mod.Query[js.Any, js.Any] {
     def this(queryTextOrConfig: String) = this()
-    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[_]) = this()
-    def this(queryTextOrConfig: js.UndefOr[scala.Nothing], values: js.Any) = this()
+    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[js.Any]) = this()
     def this(queryTextOrConfig: String, values: js.Any) = this()
-    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[_], values: js.Any) = this()
+    def this(queryTextOrConfig: Unit, values: js.Any) = this()
+    def this(queryTextOrConfig: typings.pg.mod.QueryConfig[js.Any], values: js.Any) = this()
     
     var promise: Promise[QueryResult] = js.native
   }
   
-  @JSImport("promise-pg", "connect")
-  @js.native
-  def connect(connection: String): Promise[Client] = js.native
-  @JSImport("promise-pg", "connect")
-  @js.native
-  def connect(connection: typings.pg.mod.ClientConfig): Promise[Client] = js.native
+  @scala.inline
+  def connect(connection: String): Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connection.asInstanceOf[js.Any]).asInstanceOf[Promise[Client]]
+  @scala.inline
+  def connect(connection: typings.pg.mod.ClientConfig): Promise[Client] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(connection.asInstanceOf[js.Any]).asInstanceOf[Promise[Client]]
   
-  @JSImport("promise-pg", "end")
-  @js.native
-  def end(): Promise[Unit] = js.native
+  @scala.inline
+  def end(): Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("end")().asInstanceOf[Promise[Unit]]
   
   object raw {
     
@@ -131,18 +131,18 @@ object mod {
     
     @JSImport("promise-pg", "raw.Query")
     @js.native
-    class Query[R /* <: QueryResultRow */, I /* <: js.Array[_] */] ()
+    class Query[R /* <: QueryResultRow */, I /* <: js.Array[js.Any] */] ()
       extends typings.pg.mod.Query[R, I] {
       def this(queryTextOrConfig: String) = this()
       def this(queryTextOrConfig: typings.pg.mod.QueryConfig[I]) = this()
-      def this(queryTextOrConfig: js.UndefOr[scala.Nothing], values: I) = this()
       def this(queryTextOrConfig: String, values: I) = this()
+      def this(queryTextOrConfig: Unit, values: I) = this()
       def this(queryTextOrConfig: typings.pg.mod.QueryConfig[I], values: I) = this()
     }
     
     @JSImport("promise-pg", "raw.defaults")
     @js.native
-    val defaults: Defaults_ with typings.pg.mod.ClientConfig = js.native
+    val defaults: Defaults_ & typings.pg.mod.ClientConfig = js.native
     
     @JSImport("promise-pg", "raw.native")
     @js.native
@@ -150,37 +150,36 @@ object mod {
     
     object types {
       
-      @JSImport("promise-pg", "raw.types.arrayParser")
+      @JSImport("promise-pg", "raw.types")
       @js.native
-      def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, _]): js.Array[_] = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def arrayParser(source: String, transform: js.Function1[/* entry */ js.Any, js.Any]): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayParser")(source.asInstanceOf[js.Any], transform.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
       
       @JSImport("promise-pg", "raw.types.builtins")
       @js.native
       val builtins: TypesBuiltins = js.native
       
-      @JSImport("promise-pg", "raw.types.getTypeParser")
-      @js.native
-      def getTypeParser(id: TypeId): js.Any = js.native
-      @JSImport("promise-pg", "raw.types.getTypeParser")
-      @js.native
-      def getTypeParser(id: TypeId, format: TypeFormat): js.Any = js.native
+      @scala.inline
+      def getTypeParser(id: TypeId): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+      @scala.inline
+      def getTypeParser(id: TypeId, format: TypeFormat): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[js.Any]
       
-      @JSImport("promise-pg", "raw.types.setTypeParser")
-      @js.native
-      def setTypeParser(id: TypeId, format: TypeFormat, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
-      @JSImport("promise-pg", "raw.types.setTypeParser")
-      @js.native
-      def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, _]): Unit = js.native
+      @scala.inline
+      def setTypeParser(id: TypeId, format: TypeFormat, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], format.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
+      @scala.inline
+      def setTypeParser(id: TypeId, parseFn: js.Function1[/* value */ String, js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setTypeParser")(id.asInstanceOf[js.Any], parseFn.asInstanceOf[js.Any])).asInstanceOf[Unit]
     }
   }
   
   type ClientConfig = typings.pg.mod.ClientConfig
   
-  @js.native
   trait QueryConfig
-    extends typings.pg.mod.QueryConfig[js.Array[js.Any]] {
+    extends StObject
+       with typings.pg.mod.QueryConfig[js.Array[js.Any]] {
     
-    var buffer: js.UndefOr[Boolean] = js.native
+    var buffer: js.UndefOr[Boolean] = js.undefined
   }
   object QueryConfig {
     

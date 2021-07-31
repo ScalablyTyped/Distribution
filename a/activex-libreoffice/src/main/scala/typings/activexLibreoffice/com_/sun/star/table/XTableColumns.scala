@@ -4,29 +4,29 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.container.XIndexAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access columns via index and to insert and remove columns.
   * @see com.sun.star.table.TableColumns
   */
-@js.native
-trait XTableColumns extends XIndexAccess {
+trait XTableColumns
+  extends StObject
+     with XIndexAccess {
   
   /**
     * inserts new columns.
     * @param nIndex is the index the first inserted column will have.
     * @param nCount is the number of columns to insert.
     */
-  def insertByIndex(nIndex: Double, nCount: Double): Unit = js.native
+  def insertByIndex(nIndex: Double, nCount: Double): Unit
   
   /**
     * deletes columns.
     * @param nIndex is the index of the first column to delete.
     * @param nCount is the number of columns to delete.
     */
-  def removeByIndex(nIndex: Double, nCount: Double): Unit = js.native
+  def removeByIndex(nIndex: Double, nCount: Double): Unit
 }
 object XTableColumns {
   

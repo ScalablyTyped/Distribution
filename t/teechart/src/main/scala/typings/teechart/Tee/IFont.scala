@@ -2,31 +2,29 @@ package typings.teechart.Tee
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFont extends StObject {
   
-  var baseLine: String = js.native
+  var baseLine: String
   
-  var chart: IChart = js.native
+  var chart: IChart
   
-  var fill: String = js.native
+  var fill: String
   
-  def getSize(): Double = js.native
+  def getSize(): Double
   
-  var gradient: IGradient = js.native
+  var gradient: IGradient
   
-  def setSize(size: Double): Unit = js.native
+  def setSize(size: Double): Unit
   
-  var shadow: IShadow = js.native
+  var shadow: IShadow
   
-  var stroke: IStroke = js.native
+  var stroke: IStroke
   
-  var style: String = js.native
+  var style: String
   
-  var textAlign: String = js.native
+  var textAlign: String
 }
 object IFont {
   

@@ -2,31 +2,29 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaOrderCustomer extends StObject {
   
   /**
     * Deprecated.
     */
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   /**
     * Deprecated. Please use marketingRightsInfo instead.
     */
-  var explicitMarketingPreference: js.UndefOr[Boolean] = js.native
+  var explicitMarketingPreference: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Full name of the customer.
     */
-  var fullName: js.UndefOr[String] = js.native
+  var fullName: js.UndefOr[String] = js.undefined
   
   /**
     * Customer&#39;s marketing preferences.
     */
-  var marketingRightsInfo: js.UndefOr[SchemaOrderCustomerMarketingRightsInfo] = js.native
+  var marketingRightsInfo: js.UndefOr[SchemaOrderCustomerMarketingRightsInfo] = js.undefined
 }
 object SchemaOrderCustomer {
   

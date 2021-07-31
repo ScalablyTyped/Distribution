@@ -2,30 +2,28 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMColorSubstitution extends StObject {
   
   /**
     * The new color that will replace the old color.
     */
-  var newColor: js.UndefOr[js.Array[Double]] = js.native
+  var newColor: js.UndefOr[js.Array[Double]] = js.undefined
   
   /**
     * The old color (the color that will be substituted).
     */
-  var oldColor: js.UndefOr[js.Array[Double]] = js.native
+  var oldColor: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution = js.native
+  var `type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution
 }
 object CIMColorSubstitution {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMColorSubstitution): CIMColorSubstitution = {
+  def apply(): CIMColorSubstitution = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMColorSubstitution")
     __obj.asInstanceOf[CIMColorSubstitution]
   }
   

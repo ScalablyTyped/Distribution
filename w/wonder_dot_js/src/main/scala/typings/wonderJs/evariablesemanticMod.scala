@@ -1,129 +1,126 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/shader/variable/EVariableSemantic", JSImport.Namespace)
-@js.native
-object evariablesemanticMod extends js.Object {
-  @js.native
-  sealed trait EVariableSemantic extends js.Object
+object evariablesemanticMod {
   
   @js.native
-  object EVariableSemantic extends js.Object {
-    @js.native
-    sealed trait COLOR extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL_INVERSE extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL_INVERSE_TRANSPOSE extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL_VIEW extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL_VIEW_INVERSE extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL_VIEW_INVERSE_TRANSPOSE extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL_VIEW_PROJECTION extends EVariableSemantic
-    
-    @js.native
-    sealed trait MODEL_VIEW_PROJECTION_INVERSE extends EVariableSemantic
-    
-    @js.native
-    sealed trait NORMAL extends EVariableSemantic
-    
-    @js.native
-    sealed trait POSITION extends EVariableSemantic
-    
-    @js.native
-    sealed trait PROJECTION extends EVariableSemantic
-    
-    @js.native
-    sealed trait PROJECTION_INVERSE extends EVariableSemantic
-    
-    @js.native
-    sealed trait TANGENT extends EVariableSemantic
-    
-    @js.native
-    sealed trait TEXCOORD extends EVariableSemantic
-    
-    @js.native
-    sealed trait VIEW extends EVariableSemantic
-    
-    @js.native
-    sealed trait VIEWPORT extends EVariableSemantic
-    
-    @js.native
-    sealed trait VIEW_INVERSE extends EVariableSemantic
+  sealed trait EVariableSemantic extends StObject
+  @JSImport("wonder.js/dist/es2015/renderer/shader/variable/EVariableSemantic", "EVariableSemantic")
+  @js.native
+  object EVariableSemantic extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EVariableSemantic with Double] = js.native
-    /* 4 */ @js.native
-    object COLOR extends TopLevel[COLOR with Double]
+    def apply(value: Double): js.UndefOr[EVariableSemantic & Double] = js.native
     
-    /* 5 */ @js.native
-    object MODEL extends TopLevel[MODEL with Double]
+    @js.native
+    sealed trait COLOR
+      extends StObject
+         with EVariableSemantic
+    /* 4 */ val COLOR: typings.wonderJs.evariablesemanticMod.EVariableSemantic.COLOR & Double = js.native
     
-    /* 10 */ @js.native
-    object MODEL_INVERSE extends TopLevel[MODEL_INVERSE with Double]
+    @js.native
+    sealed trait MODEL
+      extends StObject
+         with EVariableSemantic
+    /* 5 */ val MODEL: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL & Double = js.native
     
-    /* 15 */ @js.native
-    object MODEL_INVERSE_TRANSPOSE extends TopLevel[MODEL_INVERSE_TRANSPOSE with Double]
+    @js.native
+    sealed trait MODEL_INVERSE
+      extends StObject
+         with EVariableSemantic
+    /* 10 */ val MODEL_INVERSE: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL_INVERSE & Double = js.native
     
-    /* 8 */ @js.native
-    object MODEL_VIEW extends TopLevel[MODEL_VIEW with Double]
+    @js.native
+    sealed trait MODEL_INVERSE_TRANSPOSE
+      extends StObject
+         with EVariableSemantic
+    /* 15 */ val MODEL_INVERSE_TRANSPOSE: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL_INVERSE_TRANSPOSE & Double = js.native
     
-    /* 13 */ @js.native
-    object MODEL_VIEW_INVERSE extends TopLevel[MODEL_VIEW_INVERSE with Double]
+    @js.native
+    sealed trait MODEL_VIEW
+      extends StObject
+         with EVariableSemantic
+    /* 8 */ val MODEL_VIEW: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL_VIEW & Double = js.native
     
-    /* 16 */ @js.native
-    object MODEL_VIEW_INVERSE_TRANSPOSE extends TopLevel[MODEL_VIEW_INVERSE_TRANSPOSE with Double]
+    @js.native
+    sealed trait MODEL_VIEW_INVERSE
+      extends StObject
+         with EVariableSemantic
+    /* 13 */ val MODEL_VIEW_INVERSE: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL_VIEW_INVERSE & Double = js.native
     
-    /* 9 */ @js.native
-    object MODEL_VIEW_PROJECTION extends TopLevel[MODEL_VIEW_PROJECTION with Double]
+    @js.native
+    sealed trait MODEL_VIEW_INVERSE_TRANSPOSE
+      extends StObject
+         with EVariableSemantic
+    /* 16 */ val MODEL_VIEW_INVERSE_TRANSPOSE: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL_VIEW_INVERSE_TRANSPOSE & Double = js.native
     
-    /* 14 */ @js.native
-    object MODEL_VIEW_PROJECTION_INVERSE extends TopLevel[MODEL_VIEW_PROJECTION_INVERSE with Double]
+    @js.native
+    sealed trait MODEL_VIEW_PROJECTION
+      extends StObject
+         with EVariableSemantic
+    /* 9 */ val MODEL_VIEW_PROJECTION: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL_VIEW_PROJECTION & Double = js.native
     
-    /* 1 */ @js.native
-    object NORMAL extends TopLevel[NORMAL with Double]
+    @js.native
+    sealed trait MODEL_VIEW_PROJECTION_INVERSE
+      extends StObject
+         with EVariableSemantic
+    /* 14 */ val MODEL_VIEW_PROJECTION_INVERSE: typings.wonderJs.evariablesemanticMod.EVariableSemantic.MODEL_VIEW_PROJECTION_INVERSE & Double = js.native
     
-    /* 0 */ @js.native
-    object POSITION extends TopLevel[POSITION with Double]
+    @js.native
+    sealed trait NORMAL
+      extends StObject
+         with EVariableSemantic
+    /* 1 */ val NORMAL: typings.wonderJs.evariablesemanticMod.EVariableSemantic.NORMAL & Double = js.native
     
-    /* 7 */ @js.native
-    object PROJECTION extends TopLevel[PROJECTION with Double]
+    @js.native
+    sealed trait POSITION
+      extends StObject
+         with EVariableSemantic
+    /* 0 */ val POSITION: typings.wonderJs.evariablesemanticMod.EVariableSemantic.POSITION & Double = js.native
     
-    /* 12 */ @js.native
-    object PROJECTION_INVERSE extends TopLevel[PROJECTION_INVERSE with Double]
+    @js.native
+    sealed trait PROJECTION
+      extends StObject
+         with EVariableSemantic
+    /* 7 */ val PROJECTION: typings.wonderJs.evariablesemanticMod.EVariableSemantic.PROJECTION & Double = js.native
     
-    /* 3 */ @js.native
-    object TANGENT extends TopLevel[TANGENT with Double]
+    @js.native
+    sealed trait PROJECTION_INVERSE
+      extends StObject
+         with EVariableSemantic
+    /* 12 */ val PROJECTION_INVERSE: typings.wonderJs.evariablesemanticMod.EVariableSemantic.PROJECTION_INVERSE & Double = js.native
     
-    /* 2 */ @js.native
-    object TEXCOORD extends TopLevel[TEXCOORD with Double]
+    @js.native
+    sealed trait TANGENT
+      extends StObject
+         with EVariableSemantic
+    /* 3 */ val TANGENT: typings.wonderJs.evariablesemanticMod.EVariableSemantic.TANGENT & Double = js.native
     
-    /* 6 */ @js.native
-    object VIEW extends TopLevel[VIEW with Double]
+    @js.native
+    sealed trait TEXCOORD
+      extends StObject
+         with EVariableSemantic
+    /* 2 */ val TEXCOORD: typings.wonderJs.evariablesemanticMod.EVariableSemantic.TEXCOORD & Double = js.native
     
-    /* 17 */ @js.native
-    object VIEWPORT extends TopLevel[VIEWPORT with Double]
+    @js.native
+    sealed trait VIEW
+      extends StObject
+         with EVariableSemantic
+    /* 6 */ val VIEW: typings.wonderJs.evariablesemanticMod.EVariableSemantic.VIEW & Double = js.native
     
-    /* 11 */ @js.native
-    object VIEW_INVERSE extends TopLevel[VIEW_INVERSE with Double]
+    @js.native
+    sealed trait VIEWPORT
+      extends StObject
+         with EVariableSemantic
+    /* 17 */ val VIEWPORT: typings.wonderJs.evariablesemanticMod.EVariableSemantic.VIEWPORT & Double = js.native
     
+    @js.native
+    sealed trait VIEW_INVERSE
+      extends StObject
+         with EVariableSemantic
+    /* 11 */ val VIEW_INVERSE: typings.wonderJs.evariablesemanticMod.EVariableSemantic.VIEW_INVERSE & Double = js.native
   }
-  
 }
-

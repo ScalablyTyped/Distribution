@@ -2,28 +2,26 @@ package typings.pulumiAws.outputMod.dynamodb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTableGlobalSecondaryIndex extends StObject {
   
-  var hashKey: String = js.native
+  var hashKey: String
   
   /**
     * The name of the DynamoDB table.
     */
-  var name: String = js.native
+  var name: String
   
-  var nonKeyAttributes: js.Array[String] = js.native
+  var nonKeyAttributes: js.Array[String]
   
-  var projectionType: String = js.native
+  var projectionType: String
   
-  var rangeKey: String = js.native
+  var rangeKey: String
   
-  var readCapacity: Double = js.native
+  var readCapacity: Double
   
-  var writeCapacity: Double = js.native
+  var writeCapacity: Double
 }
 object GetTableGlobalSecondaryIndex {
   

@@ -2,16 +2,14 @@ package typings.sjcl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // ________________________________________________________________________
-@js.native
 trait SjclCodec[T] extends StObject {
   
-  def fromBits(bits: BitArray_): T = js.native
+  def fromBits(bits: BitArray_): T
   
-  def toBits(value: T): BitArray_ = js.native
+  def toBits(value: T): BitArray_
 }
 object SjclCodec {
   
@@ -22,7 +20,7 @@ object SjclCodec {
   }
   
   @scala.inline
-  implicit class SjclCodecMutableBuilder[Self <: SjclCodec[_], T] (val x: Self with SjclCodec[T]) extends AnyVal {
+  implicit class SjclCodecMutableBuilder[Self <: SjclCodec[?], T] (val x: Self & SjclCodec[T]) extends AnyVal {
     
     @scala.inline
     def setFromBits(value: BitArray_ => T): Self = StObject.set(x, "fromBits", js.Any.fromFunction1(value))

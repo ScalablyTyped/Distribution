@@ -3,21 +3,19 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CaptionRenderedEventUIParam extends StObject {
   
   /**
     * Gets a reference to the caption container.
     */
-  var captionContainer: js.UndefOr[Element] = js.native
+  var captionContainer: js.UndefOr[Element] = js.undefined
   
   /**
     * Gets a reference to the grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
 }
 object CaptionRenderedEventUIParam {
   

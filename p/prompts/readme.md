@@ -10,10 +10,10 @@ Lightweight, beautiful and user-friendly prompts
 | ------------------ | :-------------: |
 | Full name          | prompts |
 | Keywords           | ui, prompts, cli, prompt, interface, command-line, input, command, stdin, menu, ask, interact |
-| # releases         | 16 |
-| # dependents       | 1108 |
-| # downloads        | 312881147 |
-| # stars            | 7 |
+| # releases         | 9 |
+| # dependents       | 1513 |
+| # downloads        | 402680692 |
+| # stars            | 8 |
 
 ## Links
 - [Homepage](https://github.com/terkelg/prompts#readme)

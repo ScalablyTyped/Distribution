@@ -3,13 +3,13 @@ package typings.miniprogram
 import typings.miniprogram.anon.AuthState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignContract extends AsyncCallback[AuthState] {
+trait SignContract
+  extends StObject
+     with AsyncCallback[AuthState] {
   
-  var signStr: String = js.native
+  var signStr: String
 }
 object SignContract {
   

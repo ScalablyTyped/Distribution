@@ -2,13 +2,11 @@ package typings.googleapis.gmailV1Mod.gmailV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaHistoryMessageAdded extends StObject {
   
-  var message: js.UndefOr[SchemaMessage] = js.native
+  var message: js.UndefOr[SchemaMessage] = js.undefined
 }
 object SchemaHistoryMessageAdded {
   

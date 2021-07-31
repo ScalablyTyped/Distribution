@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSecurityConfigurationsResponse extends StObject {
   
   /**
     * A continuation token, if there are more security configurations to return.
     */
-  var NextToken: js.UndefOr[GenericString] = js.native
+  var NextToken: js.UndefOr[GenericString] = js.undefined
   
   /**
     * A list of security configurations.
     */
-  var SecurityConfigurations: js.UndefOr[SecurityConfigurationList] = js.native
+  var SecurityConfigurations: js.UndefOr[SecurityConfigurationList] = js.undefined
 }
 object GetSecurityConfigurationsResponse {
   

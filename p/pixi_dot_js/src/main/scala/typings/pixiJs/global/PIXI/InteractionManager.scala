@@ -3,7 +3,6 @@ package typings.pixiJs.global.PIXI
 import typings.pixiJs.anon.AutoPreventDefault
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("PIXI.InteractionManager")
 @js.native
 class InteractionManager protected ()
-  extends typings.pixiJs.PIXI.InteractionManager {
+  extends StObject
+     with typings.pixiJs.PIXI.InteractionManager {
   def this(renderer: typings.pixiJs.PIXI.Renderer) = this()
   def this(renderer: typings.pixiJs.PIXI.Renderer, options: AutoPreventDefault) = this()
 }

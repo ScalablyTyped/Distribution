@@ -2,29 +2,27 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IScheduledJobRunInfo extends StObject {
   
-  val Cancelled: Boolean = js.native
+  val Cancelled: Boolean
   
-  val CurrentStep: Double = js.native
+  val CurrentStep: Double
   
-  val LastRun: ITimestamp = js.native
+  val LastRun: ITimestamp
   
-  val LastRunErrors: String = js.native
+  val LastRunErrors: String
   
-  val LastRunSucceeded: Boolean = js.native
+  val LastRunSucceeded: Boolean
   
-  val NextRun: ITimestamp = js.native
+  val NextRun: ITimestamp
   
-  val Running: Boolean = js.native
+  val Running: Boolean
   
-  val ScheduledJobOutputInfo: IScheduledJobOutputInfo = js.native
+  val ScheduledJobOutputInfo: IScheduledJobOutputInfo
   
-  val StepCompletionPercent: Double = js.native
+  val StepCompletionPercent: Double
 }
 object IScheduledJobRunInfo {
   

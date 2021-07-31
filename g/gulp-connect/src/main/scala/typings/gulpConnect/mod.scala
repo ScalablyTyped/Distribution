@@ -5,68 +5,66 @@ import typings.node.httpMod.Server
 import typings.node.httpsMod.ServerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("gulp-connect", "reload")
+  @JSImport("gulp-connect", JSImport.Namespace)
   @js.native
-  def reload(): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("gulp-connect", "server")
-  @js.native
-  def server(): ConnectAppOptions = js.native
-  @JSImport("gulp-connect", "server")
-  @js.native
-  def server(options: ConnectAppOptions): ConnectAppOptions = js.native
+  @scala.inline
+  def reload(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("reload")().asInstanceOf[js.Any]
   
-  @JSImport("gulp-connect", "serverClose")
-  @js.native
-  def serverClose(): Unit = js.native
+  @scala.inline
+  def server(): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")().asInstanceOf[ConnectAppOptions]
+  @scala.inline
+  def server(options: ConnectAppOptions): ConnectAppOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("server")(options.asInstanceOf[js.Any]).asInstanceOf[ConnectAppOptions]
   
-  @js.native
+  @scala.inline
+  def serverClose(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("serverClose")().asInstanceOf[Unit]
+  
   trait ConnectAppOptions extends StObject {
     
     /** Whether or not to log debug messages. Defaults to false. */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /** File to serve if url results in a 404. Defaults to undefined */
-    var fallback: js.UndefOr[String] = js.native
+    var fallback: js.UndefOr[String] = js.undefined
     
     /** Host to bind server to. Defaults to localhost. */
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
     /**
       * Options to pass to http.createServer (or false to disable https).
       * Defaults to false. When https is just set to true, then internally
       * some defaults will be used.
       */
-    var https: js.UndefOr[Boolean | ServerOptions] = js.native
+    var https: js.UndefOr[Boolean | ServerOptions] = js.undefined
     
     /** Value to pass into the serve-static's index option. See serve-static documentation for details. Defaults to true. */
-    var index: js.UndefOr[Boolean | String | js.Array[String]] = js.native
+    var index: js.UndefOr[Boolean | String | js.Array[String]] = js.undefined
     
     /** Enable/disable livereload or set live reload options. Defaults to false. */
-    var livereload: js.UndefOr[Boolean | LiveReloadOptions] = js.native
+    var livereload: js.UndefOr[Boolean | LiveReloadOptions] = js.undefined
     
     /** Middleware factory function which should return a list of connect handler functions . Defaults to () => []; */
-    var middleware: js.UndefOr[MiddlewareFactory] = js.native
+    var middleware: js.UndefOr[MiddlewareFactory] = js.undefined
     
     /** The name of this server. Used in logs. Defaults to "Server". */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** The connect webserver port. Defaults to 8080 */
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
     /** The root path. Defaults to directory with gulpfile */
-    var root: js.UndefOr[String | js.Array[String]] = js.native
+    var root: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /** A function to run custom initialization on the underlying http or https server */
-    var serverInit: js.UndefOr[js.Function1[/* server */ Server | typings.node.httpsMod.Server, Unit]] = js.native
+    var serverInit: js.UndefOr[js.Function1[/* server */ Server | typings.node.httpsMod.Server, Unit]] = js.undefined
     
     /** Don't log any messages. Defaults to false. */
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectAppOptions {
     
@@ -163,14 +161,13 @@ object mod {
   
   type ConnectRouteHandler = js.Tuple2[String, HandleFunction]
   
-  @js.native
   trait LiveReloadOptions extends StObject {
     
     /** Hostname to bind live reload server to */
-    var hostname: js.UndefOr[String] = js.native
+    var hostname: js.UndefOr[String] = js.undefined
     
     /** Port to run live reload server on. Defauls to 35729. */
-    var port: Double = js.native
+    var port: Double
   }
   object LiveReloadOptions {
     

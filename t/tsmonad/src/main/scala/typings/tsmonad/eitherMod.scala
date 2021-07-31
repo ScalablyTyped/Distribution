@@ -6,10 +6,13 @@ import typings.tsmonad.monadMod.Functor
 import typings.tsmonad.monadMod.Monad
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eitherMod {
+  
+  @JSImport("tsmonad/lib/src/either", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait EitherType extends StObject
@@ -18,70 +21,93 @@ object eitherMod {
   object EitherType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EitherType with Double] = js.native
+    def apply(value: Double): js.UndefOr[EitherType & Double] = js.native
     
     @js.native
-    sealed trait Left extends EitherType
-    /* 0 */ val Left: typings.tsmonad.eitherMod.EitherType.Left with Double = js.native
+    sealed trait Left
+      extends StObject
+         with EitherType
+    /* 0 */ val Left: typings.tsmonad.eitherMod.EitherType.Left & Double = js.native
     
     @js.native
-    sealed trait Right extends EitherType
-    /* 1 */ val Right: typings.tsmonad.eitherMod.EitherType.Right with Double = js.native
+    sealed trait Right
+      extends StObject
+         with EitherType
+    /* 1 */ val Right: typings.tsmonad.eitherMod.EitherType.Right & Double = js.native
   }
   
   @JSImport("tsmonad/lib/src/either", "Either")
   @js.native
   class Either_[L, R] protected ()
-    extends Monad[R]
+    extends StObject
+       with Monad[R]
        with Functor[R]
        with Eq[Either_[L, R]] {
     def this(`type`: EitherType) = this()
     def this(`type`: EitherType, l: L) = this()
     def this(`type`: EitherType, l: L, r: R) = this()
-    def this(`type`: EitherType, l: js.UndefOr[scala.Nothing], r: R) = this()
+    def this(`type`: EitherType, l: Unit, r: R) = this()
+    
+    /* CompleteClass */
+    override def bind[U](f: js.Function1[R, Monad[U]]): Monad[U] = js.native
     
     def caseOf[T](pattern: EitherPatterns[L, R, T]): T = js.native
+    
+    /* CompleteClass */
+    override def chain[U](f: js.Function1[R, Monad[U]]): Monad[U] = js.native
     
     def `do`(): Either_[L, R] = js.native
     def `do`(patterns: Partial[EitherPatterns[L, R, Unit]]): Either_[L, R] = js.native
     
+    /* CompleteClass */
+    override def fmap[U](f: js.Function1[R, U]): Functor[U] = js.native
+    
     var l: js.Any = js.native
+    
+    /* CompleteClass */
+    override def lift[U](f: js.Function1[R, U]): Functor[U] = js.native
+    
+    /* CompleteClass */
+    override def map[U](f: js.Function1[R, U]): Functor[U] = js.native
+    
+    /* CompleteClass */
+    override def of[U](t: U): Monad[U] = js.native
     
     var r: js.Any = js.native
     
     var `type`: js.Any = js.native
+    
+    /* CompleteClass */
+    override def unit[U](t: U): Monad[U] = js.native
   }
   /* static members */
   object Either_ {
     
-    @JSImport("tsmonad/lib/src/either", "Either.left")
+    @JSImport("tsmonad/lib/src/either", "Either")
     @js.native
-    def left[L, R](l: L): Either_[L, R] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("tsmonad/lib/src/either", "Either.right")
-    @js.native
-    def right[L, R](r: R): Either_[L, R] = js.native
+    @scala.inline
+    def left[L, R](l: L): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("left")(l.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
+    
+    @scala.inline
+    def right[L, R](r: R): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("right")(r.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
   }
   
-  @JSImport("tsmonad/lib/src/either", "either")
-  @js.native
-  def either[L, R](): Either_[L, R] = js.native
-  @JSImport("tsmonad/lib/src/either", "either")
-  @js.native
-  def either[L, R](l: L): Either_[L, R] = js.native
-  @JSImport("tsmonad/lib/src/either", "either")
-  @js.native
-  def either[L, R](l: L, r: R): Either_[L, R] = js.native
-  @JSImport("tsmonad/lib/src/either", "either")
-  @js.native
-  def either[L, R](l: js.UndefOr[scala.Nothing], r: R): Either_[L, R] = js.native
+  @scala.inline
+  def either[L, R](): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")().asInstanceOf[Either_[L, R]]
+  @scala.inline
+  def either[L, R](l: L): Either_[L, R] = ^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any]).asInstanceOf[Either_[L, R]]
+  @scala.inline
+  def either[L, R](l: L, r: R): Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Either_[L, R]]
+  @scala.inline
+  def either[L, R](l: Unit, r: R): Either_[L, R] = (^.asInstanceOf[js.Dynamic].applyDynamic("either")(l.asInstanceOf[js.Any], r.asInstanceOf[js.Any])).asInstanceOf[Either_[L, R]]
   
-  @js.native
   trait EitherPatterns[L, R, T] extends StObject {
     
-    def left(l: L): T = js.native
+    def left(l: L): T
     
-    def right(r: R): T = js.native
+    def right(r: R): T
   }
   object EitherPatterns {
     
@@ -92,7 +118,7 @@ object eitherMod {
     }
     
     @scala.inline
-    implicit class EitherPatternsMutableBuilder[Self <: EitherPatterns[_, _, _], L, R, T] (val x: Self with (EitherPatterns[L, R, T])) extends AnyVal {
+    implicit class EitherPatternsMutableBuilder[Self <: EitherPatterns[?, ?, ?], L, R, T] (val x: Self & (EitherPatterns[L, R, T])) extends AnyVal {
       
       @scala.inline
       def setLeft(value: L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))
@@ -103,12 +129,11 @@ object eitherMod {
   }
   
   /* Inlined std.Partial<tsmonad.tsmonad/lib/src/either.EitherPatterns<L, R, T>> */
-  @js.native
   trait OptionalEitherPatterns[L, R, T] extends StObject {
     
-    var left: js.UndefOr[js.Function1[/* l */ L, T]] = js.native
+    var left: js.UndefOr[js.Function1[/* l */ L, T]] = js.undefined
     
-    var right: js.UndefOr[js.Function1[/* r */ R, T]] = js.native
+    var right: js.UndefOr[js.Function1[/* r */ R, T]] = js.undefined
   }
   object OptionalEitherPatterns {
     
@@ -119,7 +144,7 @@ object eitherMod {
     }
     
     @scala.inline
-    implicit class OptionalEitherPatternsMutableBuilder[Self <: OptionalEitherPatterns[_, _, _], L, R, T] (val x: Self with (OptionalEitherPatterns[L, R, T])) extends AnyVal {
+    implicit class OptionalEitherPatternsMutableBuilder[Self <: OptionalEitherPatterns[?, ?, ?], L, R, T] (val x: Self & (OptionalEitherPatterns[L, R, T])) extends AnyVal {
       
       @scala.inline
       def setLeft(value: /* l */ L => T): Self = StObject.set(x, "left", js.Any.fromFunction1(value))

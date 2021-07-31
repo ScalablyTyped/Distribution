@@ -2,20 +2,20 @@ package typings.nodeRedRegistry.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NodeMessageInFlow extends NodeMessage {
+trait NodeMessageInFlow
+  extends StObject
+     with NodeMessage {
   
   @JSName("_msgid")
-  var _msgid_NodeMessageInFlow: String = js.native
+  var _msgid_NodeMessageInFlow: String
   
   /**
     * If there is a message sequence, then each message in a sequence has the ```parts``` property.
     * More info: https://nodered.org/docs/user-guide/messages#understanding-msgparts
     */
-  var parts: js.UndefOr[NodeMessageParts] = js.native
+  var parts: js.UndefOr[NodeMessageParts] = js.undefined
 }
 object NodeMessageInFlow {
   

@@ -5,7 +5,6 @@ import typings.jestTypes.configMod.ProjectConfig
 import typings.node.vmMod.Context
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,14 +24,13 @@ object mod {
     def getVmContext_MNodeEnvironment(): Context | Null = js.native
   }
   
-  @js.native
   trait Timer extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    def ref(): Timer = js.native
+    def ref(): Timer
     
-    def unref(): Timer = js.native
+    def unref(): Timer
   }
   object Timer {
     

@@ -10,9 +10,9 @@ Get a stream as a string, buffer, or array
 | ------------------ | :-------------: |
 | Full name          | get-stream |
 | Keywords           | get, stream, promise, concat, string, text, buffer, read, data, consume, readable, readablestream, array, object |
-| # releases         | 6 |
-| # dependents       | 378 |
-| # downloads        | 1293335767 |
+| # releases         | 5 |
+| # dependents       | 610 |
+| # downloads        | 1858972071 |
 | # stars            | 10 |
 
 ## Links

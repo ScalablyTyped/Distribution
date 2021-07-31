@@ -6,29 +6,27 @@ import typings.wegameApi.wegameApiStrings.compressed
 import typings.wegameApi.wegameApiStrings.original
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeType extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var count: Double = js.native
+  var count: Double
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 所选的图片的尺寸
     */
-  var sizeType: (js.Array[original | compressed]) | (js.Tuple2[original, compressed]) = js.native
+  var sizeType: (js.Array[original | compressed]) | (js.Tuple2[original, compressed])
   
   /**
     * 选择图片的来源
     */
-  var sourceType: (js.Array[album | camera]) | (js.Tuple2[album, camera]) = js.native
+  var sourceType: (js.Array[album | camera]) | (js.Tuple2[album, camera])
   
-  var success: js.UndefOr[js.Function1[/* res */ TempFilePaths, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ TempFilePaths, Unit]] = js.undefined
 }
 object SizeType {
   

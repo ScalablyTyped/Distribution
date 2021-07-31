@@ -10,9 +10,9 @@ A Component React for Facebook Login
 | ------------------ | :-------------: |
 | Full name          | react-facebook-login |
 | Keywords           | react, reactjs, react-component, facebook-login, react-facebook-login |
-| # releases         | 3 |
-| # dependents       | 25 |
-| # downloads        | 2175068 |
+| # releases         | 0 |
+| # dependents       | 33 |
+| # downloads        | 2652907 |
 | # stars            | 19 |
 
 ## Links

@@ -2,21 +2,19 @@ package typings.awsSdk.comprehendMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopPiiEntitiesDetectionJobResponse extends StObject {
   
   /**
     * The identifier of the PII entities detection job to stop.
     */
-  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.native
+  var JobId: js.UndefOr[typings.awsSdk.comprehendMod.JobId] = js.undefined
   
   /**
     * The status of the PII entities detection job.
     */
-  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.native
+  var JobStatus: js.UndefOr[typings.awsSdk.comprehendMod.JobStatus] = js.undefined
 }
 object StopPiiEntitiesDetectionJobResponse {
   

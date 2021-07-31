@@ -5,61 +5,59 @@ import typings.mfiles.MFiles.MFDefaultPropertyType
 import typings.mfiles.MFiles.MFEmailField
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDefaultProperty extends StObject {
   
-  def Clone(): IDefaultProperty = js.native
+  def Clone(): IDefaultProperty
   
-  var DataFixedValueValue: ITypedValue = js.native
+  var DataFixedValueValue: ITypedValue
   
-  var DataFromEmailAddVLItemIfNotFound: Boolean = js.native
+  var DataFromEmailAddVLItemIfNotFound: Boolean
   
-  var DataFromEmailField: MFEmailField = js.native
+  var DataFromEmailField: MFEmailField
   
-  var DataFromEmailHeaderAddVLItemIfNotFound: Boolean = js.native
+  var DataFromEmailHeaderAddVLItemIfNotFound: Boolean
   
-  var DataFromEmailHeaderField: String = js.native
+  var DataFromEmailHeaderField: String
   
-  var DataFromEmailHeaderTreatLookupAsID: Boolean = js.native
+  var DataFromEmailHeaderTreatLookupAsID: Boolean
   
-  var DataFromEmailTreatLookupAsID: Boolean = js.native
+  var DataFromEmailTreatLookupAsID: Boolean
   
-  var DataFromHPDSSXMLAddVLItemIfNotFound: Boolean = js.native
+  var DataFromHPDSSXMLAddVLItemIfNotFound: Boolean
   
-  var DataFromHPDSSXMLPromptName: String = js.native
+  var DataFromHPDSSXMLPromptName: String
   
-  var DataFromHPDSSXMLTreatLookupAsID: Boolean = js.native
+  var DataFromHPDSSXMLTreatLookupAsID: Boolean
   
-  var DataFromOCRAddVLItemIfNotFound: Boolean = js.native
+  var DataFromOCRAddVLItemIfNotFound: Boolean
   
-  var DataFromOCRTreatLookupAsID: Boolean = js.native
+  var DataFromOCRTreatLookupAsID: Boolean
   
-  var DataFromOCRZone: IOCRZone = js.native
+  var DataFromOCRZone: IOCRZone
   
-  var DataFromXMLAddVLItemIfNotFound: Boolean = js.native
+  var DataFromXMLAddVLItemIfNotFound: Boolean
   
-  var DataFromXMLTreatLookupAsID: Boolean = js.native
+  var DataFromXMLTreatLookupAsID: Boolean
   
-  var DataFromXMLXPathExpression: String = js.native
+  var DataFromXMLXPathExpression: String
   
-  var PropertyDefID: MFBuiltInPropertyDef | Double = js.native
+  var PropertyDefID: MFBuiltInPropertyDef | Double
   
-  def SetFixedValue(TypedValue: ITypedValue): Unit = js.native
+  def SetFixedValue(TypedValue: ITypedValue): Unit
   
-  def SetFromEmail(EmailField: MFEmailField, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit = js.native
+  def SetFromEmail(EmailField: MFEmailField, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit
   
-  def SetFromEmailHeader(Field: String, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit = js.native
+  def SetFromEmailHeader(Field: String, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit
   
-  def SetFromHPDSSXML(PromptName: String, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit = js.native
+  def SetFromHPDSSXML(PromptName: String, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit
   
-  def SetFromOCR(OCRZone: IOCRZone, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit = js.native
+  def SetFromOCR(OCRZone: IOCRZone, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit
   
-  def SetFromXML(XPathExpression: String, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit = js.native
+  def SetFromXML(XPathExpression: String, TreatLookupAsID: Boolean, AddVLItemIfNotFound: Boolean): Unit
   
-  val Type: MFDefaultPropertyType = js.native
+  val Type: MFDefaultPropertyType
 }
 object IDefaultProperty {
   

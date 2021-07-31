@@ -7,21 +7,21 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** represents a sheet which has print areas. */
-@js.native
-trait XPrintAreas extends XInterface {
+trait XPrintAreas
+  extends StObject
+     with XInterface {
   
   /** returns a sequence containing all print areas of the sheet. */
-  var PrintAreas: SafeArray[CellRangeAddress] = js.native
+  var PrintAreas: SafeArray[CellRangeAddress]
   
   /** returns, whether the title columns are repeated on all subsequent print pages to the right. */
-  var PrintTitleColumns: Boolean = js.native
+  var PrintTitleColumns: Boolean
   
   /** returns, whether the title rows are repeated on all subsequent print pages to the bottom. */
-  var PrintTitleRows: Boolean = js.native
+  var PrintTitleRows: Boolean
   
   /**
     * returns the range that is specified as title columns range.
@@ -29,7 +29,7 @@ trait XPrintAreas extends XInterface {
     * Title columns can be automatically repeated on all subsequent print pages to the right, using {@link XPrintAreas.setPrintTitleColumns()} .
     * @returns the range of columns that is specified as title columns range.
     */
-  var TitleColumns: CellRangeAddress = js.native
+  var TitleColumns: CellRangeAddress
   
   /**
     * returns the range that is specified as title rows range.
@@ -37,16 +37,16 @@ trait XPrintAreas extends XInterface {
     * Title rows can be automatically repeated on all subsequent print pages to the bottom, using {@link XPrintAreas.setPrintTitleRows()} .
     * @returns the range of rows that is specified as title rows range.
     */
-  var TitleRows: CellRangeAddress = js.native
+  var TitleRows: CellRangeAddress
   
   /** returns a sequence containing all print areas of the sheet. */
-  def getPrintAreas(): SafeArray[CellRangeAddress] = js.native
+  def getPrintAreas(): SafeArray[CellRangeAddress]
   
   /** returns, whether the title columns are repeated on all subsequent print pages to the right. */
-  def getPrintTitleColumns(): Boolean = js.native
+  def getPrintTitleColumns(): Boolean
   
   /** returns, whether the title rows are repeated on all subsequent print pages to the bottom. */
-  def getPrintTitleRows(): Boolean = js.native
+  def getPrintTitleRows(): Boolean
   
   /**
     * returns the range that is specified as title columns range.
@@ -54,7 +54,7 @@ trait XPrintAreas extends XInterface {
     * Title columns can be automatically repeated on all subsequent print pages to the right, using {@link XPrintAreas.setPrintTitleColumns()} .
     * @returns the range of columns that is specified as title columns range.
     */
-  def getTitleColumns(): CellRangeAddress = js.native
+  def getTitleColumns(): CellRangeAddress
   
   /**
     * returns the range that is specified as title rows range.
@@ -62,7 +62,7 @@ trait XPrintAreas extends XInterface {
     * Title rows can be automatically repeated on all subsequent print pages to the bottom, using {@link XPrintAreas.setPrintTitleRows()} .
     * @returns the range of rows that is specified as title rows range.
     */
-  def getTitleRows(): CellRangeAddress = js.native
+  def getTitleRows(): CellRangeAddress
   
   /**
     * sets the print areas of the sheet.
@@ -71,19 +71,19 @@ trait XPrintAreas extends XInterface {
     * areas are not printed.
     * @param aPrintAreas a sequence containing all print areas for this sheet.
     */
-  def setPrintAreas(aPrintAreas: SeqEquiv[CellRangeAddress]): Unit = js.native
+  def setPrintAreas(aPrintAreas: SeqEquiv[CellRangeAddress]): Unit
   
   /**
     * specifies whether the title columns are repeated on all subsequent print pages to the right.
     * @param bPrintTitleColumns if `TRUE` , title columns are repeated on each page.
     */
-  def setPrintTitleColumns(bPrintTitleColumns: Boolean): Unit = js.native
+  def setPrintTitleColumns(bPrintTitleColumns: Boolean): Unit
   
   /**
     * specifies whether the title rows are repeated on all subsequent print pages to the bottom.
     * @param bPrintTitleRows if `TRUE` , title rows are repeated on each page.
     */
-  def setPrintTitleRows(bPrintTitleRows: Boolean): Unit = js.native
+  def setPrintTitleRows(bPrintTitleRows: Boolean): Unit
   
   /**
     * specifies a range of columns as title columns range.
@@ -93,7 +93,7 @@ trait XPrintAreas extends XInterface {
     * Title columns can be automatically repeated on all subsequent print pages to the right, using {@link XPrintAreas.setPrintTitleColumns()} .
     * @param aTitleColumns the title columns range.
     */
-  def setTitleColumns(aTitleColumns: CellRangeAddress): Unit = js.native
+  def setTitleColumns(aTitleColumns: CellRangeAddress): Unit
   
   /**
     * specifies a range of rows as title rows range.
@@ -103,7 +103,7 @@ trait XPrintAreas extends XInterface {
     * Title rows can be automatically repeated on all subsequent print pages to the bottom, using {@link XPrintAreas.setPrintTitleRows()} .
     * @param aTitleRows the title rows range.
     */
-  def setTitleRows(aTitleRows: CellRangeAddress): Unit = js.native
+  def setTitleRows(aTitleRows: CellRangeAddress): Unit
 }
 object XPrintAreas {
   

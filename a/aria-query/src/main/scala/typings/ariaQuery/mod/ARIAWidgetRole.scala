@@ -2,7 +2,6 @@ package typings.ariaQuery.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -26,7 +25,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   - typings.ariaQuery.ariaQueryStrings.textbox
   - typings.ariaQuery.ariaQueryStrings.treeitem
 */
-trait ARIAWidgetRole extends _ARIARole
+trait ARIAWidgetRole
+  extends StObject
+     with _ARIARole
 object ARIAWidgetRole {
   
   @scala.inline

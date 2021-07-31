@@ -6,27 +6,25 @@ import typings.astTypes.kindsMod.ExpressionKind
 import typings.astTypes.kindsMod.SourceLocationKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Blocks extends StObject {
   
-  var blocks: js.Array[ComprehensionBlockKind] = js.native
+  var blocks: js.Array[ComprehensionBlockKind]
   
-  var body: ExpressionKind = js.native
+  var body: ExpressionKind
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var filter: ExpressionKind | Null = js.native
+  var filter: ExpressionKind | Null
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
 }
 object Blocks {
   
   @scala.inline
   def apply(blocks: js.Array[ComprehensionBlockKind], body: ExpressionKind): Blocks = {
-    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(blocks = blocks.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], filter = null)
     __obj.asInstanceOf[Blocks]
   }
   

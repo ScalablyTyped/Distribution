@@ -5,7 +5,6 @@ import typings.jqueryAjaxfile.anon.Failures
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -40,7 +39,7 @@ trait Mocha extends StObject {
   /** Sets reporter by name, defaults to "spec". */
   def reporter(name: String): Mocha = js.native
   /** Sets reporter constructor, defaults to mocha.reporters.Spec. */
-  def reporter(reporter: js.Function2[/* runner */ IRunner, /* options */ js.Any, _]): Mocha = js.native
+  def reporter(reporter: js.Function2[/* runner */ IRunner, /* options */ js.Any, js.Any]): Mocha = js.native
   
   /** Runs tests and invokes `onComplete()` when finished. */
   def run(): IRunner = js.native
@@ -75,18 +74,17 @@ object Mocha {
   }
   
   /** Partial interface for Mocha's `Runnable` class. */
-  @js.native
   trait IRunnable extends StObject {
     
-    var async: Boolean = js.native
+    var async: Boolean
     
-    var fn: js.Function = js.native
+    var fn: js.Function
     
-    var sync: Boolean = js.native
+    var sync: Boolean
     
-    var timedOut: Boolean = js.native
+    var timedOut: Boolean
     
-    var title: String = js.native
+    var title: String
   }
   object IRunnable {
     
@@ -117,18 +115,16 @@ object Mocha {
   }
   
   /** Partial interface for Mocha's `Runner` class. */
-  @js.native
   trait IRunner extends StObject
   
   /** Partial interface for Mocha's `Suite` class. */
-  @js.native
   trait ISuite extends StObject {
     
-    def fullTitle(): String = js.native
+    def fullTitle(): String
     
-    var parent: ISuite = js.native
+    var parent: ISuite
     
-    var title: String = js.native
+    var title: String
   }
   object ISuite {
     
@@ -153,14 +149,15 @@ object Mocha {
   }
   
   /** Partial interface for Mocha's `Test` class. */
-  @js.native
-  trait ITest extends IRunnable {
+  trait ITest
+    extends StObject
+       with IRunnable {
     
-    def fullTitle(): String = js.native
+    def fullTitle(): String
     
-    var parent: ISuite = js.native
+    var parent: ISuite
     
-    var pending: Boolean = js.native
+    var pending: Boolean
   }
   object ITest {
     
@@ -213,10 +210,9 @@ object Mocha {
   
   object reporters {
     
-    @js.native
     trait Base extends StObject {
       
-      var stats: Failures = js.native
+      var stats: Failures
     }
     object Base {
       

@@ -2,26 +2,24 @@ package typings.pulumiAws.outputMod.codedeploy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupTriggerConfiguration extends StObject {
   
   /**
     * The event type or types for which notifications are triggered. Some values that are supported: `DeploymentStart`, `DeploymentSuccess`, `DeploymentFailure`, `DeploymentStop`, `DeploymentRollback`, `InstanceStart`, `InstanceSuccess`, `InstanceFailure`.  See [the CodeDeploy documentation](http://docs.aws.amazon.com/codedeploy/latest/userguide/monitoring-sns-event-notifications-create-trigger.html) for all possible values.
     */
-  var triggerEvents: js.Array[String] = js.native
+  var triggerEvents: js.Array[String]
   
   /**
     * The name of the notification trigger.
     */
-  var triggerName: String = js.native
+  var triggerName: String
   
   /**
     * The ARN of the SNS topic through which notifications are sent.
     */
-  var triggerTargetArn: String = js.native
+  var triggerTargetArn: String
 }
 object DeploymentGroupTriggerConfiguration {
   

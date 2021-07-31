@@ -10,7 +10,6 @@ import typings.std.DataView
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -44,7 +43,7 @@ object mod {
   	//=> undefined
   	```
   	*/
-  class ^[T /* <: Record[String, _] */] () extends ElectronStore[T] {
+  class ^[T /* <: Record[String, js.Any] */] () extends ElectronStore[T] {
     def this(options: Options[T]) = this()
   }
   
@@ -52,7 +51,7 @@ object mod {
   Simple data persistence for your [Electron](https://electronjs.org) app or module - Save and load user preferences, app state, cache, etc.
   */
   @js.native
-  trait ElectronStore[T /* <: Record[String, _] */] extends default[T] {
+  trait ElectronStore[T /* <: Record[String, js.Any] */] extends default[T] {
     
     /**
     	Open the storage file in the user's editor.
@@ -61,37 +60,36 @@ object mod {
   }
   
   /* Inlined type-fest.type-fest.Except<conf.conf.Options<T>, 'configName' | 'projectName' | 'projectVersion' | 'projectSuffix'> & { readonly name :string | undefined} */
-  @js.native
   trait Options[T] extends StObject {
     
-    var accessPropertiesByDotNotation: js.UndefOr[Boolean] = js.native
+    var accessPropertiesByDotNotation: js.UndefOr[Boolean] = js.undefined
     
-    var clearInvalidConfig: js.UndefOr[Boolean] = js.native
+    var clearInvalidConfig: js.UndefOr[Boolean] = js.undefined
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var defaults: js.UndefOr[T] = js.native
+    var defaults: js.UndefOr[T] = js.undefined
     
-    var deserialize: js.UndefOr[Deserialize[T]] = js.native
+    var deserialize: js.UndefOr[Deserialize[T]] = js.undefined
     
-    var encryptionKey: js.UndefOr[String | Buffer | TypedArray | DataView] = js.native
+    var encryptionKey: js.UndefOr[String | Buffer | TypedArray | DataView] = js.undefined
     
-    var fileExtension: js.UndefOr[String] = js.native
+    var fileExtension: js.UndefOr[String] = js.undefined
     
-    var migrations: js.UndefOr[Migrations[T]] = js.native
+    var migrations: js.UndefOr[Migrations[T]] = js.undefined
     
     /**
     		Name of the storage file (without extension).
     		This is useful if you want multiple storage files for your app. Or if you're making a reusable Electron module that persists some data, in which case you should **not** use the name `config`.
     		@default 'config'
     		*/
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    var schema: js.UndefOr[typings.conf.typesMod.Schema[T]] = js.native
+    var schema: js.UndefOr[typings.conf.typesMod.Schema[T]] = js.undefined
     
-    var serialize: js.UndefOr[Serialize[T]] = js.native
+    var serialize: js.UndefOr[Serialize[T]] = js.undefined
     
-    var watch: js.UndefOr[Boolean] = js.native
+    var watch: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -102,7 +100,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class OptionsMutableBuilder[Self <: Options[_], T] (val x: Self with Options[T]) extends AnyVal {
+    implicit class OptionsMutableBuilder[Self <: Options[?], T] (val x: Self & Options[T]) extends AnyVal {
       
       @scala.inline
       def setAccessPropertiesByDotNotation(value: Boolean): Self = StObject.set(x, "accessPropertiesByDotNotation", value.asInstanceOf[js.Any])

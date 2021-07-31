@@ -2,19 +2,17 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes HttpsTrigger, could be used to connect web hooks to function.
   */
-@js.native
 trait SchemaHttpsTrigger extends StObject {
   
   /**
     * Output only. The deployed url for the function.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaHttpsTrigger {
   

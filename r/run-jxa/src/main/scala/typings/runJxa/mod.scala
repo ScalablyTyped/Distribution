@@ -3,7 +3,6 @@ package typings.runJxa
 import typings.typeFest.basicMod.JsonValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -35,18 +34,18 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply[ReturnType /* <: JsonValue */](input: String): js.Promise[ReturnType] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType]]
+  @scala.inline
+  def apply[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): js.Promise[ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType]]
+  @scala.inline
+  def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): js.Promise[ReturnType] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ReturnType]]
+  @scala.inline
+  def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): js.Promise[ReturnType] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[js.Promise[ReturnType]]
+  
   @JSImport("run-jxa", JSImport.Namespace)
   @js.native
-  def apply[ReturnType /* <: JsonValue */](input: String): js.Promise[ReturnType] = js.native
-  @JSImport("run-jxa", JSImport.Namespace)
-  @js.native
-  def apply[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): js.Promise[ReturnType] = js.native
-  @JSImport("run-jxa", JSImport.Namespace)
-  @js.native
-  def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): js.Promise[ReturnType] = js.native
-  @JSImport("run-jxa", JSImport.Namespace)
-  @js.native
-  def apply[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): js.Promise[ReturnType] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously run [JXA](https://github.com/dtinth/JXA-Cookbook) code and get the result.
@@ -57,16 +56,12 @@ object mod {
   	@param arguments - Arguments to pass to the JXA context. Items should be serializable (`JSON.stringify`'able).
   	@returns The value returned from `input`.
   	*/
-  @JSImport("run-jxa", "sync")
-  @js.native
-  def sync[ReturnType /* <: JsonValue */](input: String): ReturnType = js.native
-  @JSImport("run-jxa", "sync")
-  @js.native
-  def sync[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): ReturnType = js.native
-  @JSImport("run-jxa", "sync")
-  @js.native
-  def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): ReturnType = js.native
-  @JSImport("run-jxa", "sync")
-  @js.native
-  def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): ReturnType = js.native
+  @scala.inline
+  def sync[ReturnType /* <: JsonValue */](input: String): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
+  @scala.inline
+  def sync[ReturnType /* <: JsonValue */](input: String, arguments: js.Array[JsonValue]): ReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ReturnType]
+  @scala.inline
+  def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType]): ReturnType = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any]).asInstanceOf[ReturnType]
+  @scala.inline
+  def sync[ReturnType /* <: JsonValue */](input: js.Function1[/* repeated */ JsonValue, ReturnType], arguments: js.Array[JsonValue]): ReturnType = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(input.asInstanceOf[js.Any], arguments.asInstanceOf[js.Any])).asInstanceOf[ReturnType]
 }

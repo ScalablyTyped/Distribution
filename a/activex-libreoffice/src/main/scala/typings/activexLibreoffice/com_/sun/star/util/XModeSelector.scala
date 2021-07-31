@@ -5,30 +5,30 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** is supported by objects which supply different modes. */
-@js.native
-trait XModeSelector extends XInterface {
+trait XModeSelector
+  extends StObject
+     with XInterface {
   
   /** @returns the current mode. */
-  var Mode: String = js.native
+  var Mode: String
   
   /** @returns a sequence of all supported modes. */
-  val SupportedModes: SafeArray[String] = js.native
+  val SupportedModes: SafeArray[String]
   
   /** @returns the current mode. */
-  def getMode(): String = js.native
+  def getMode(): String
   
   /** @returns a sequence of all supported modes. */
-  def getSupportedModes(): SafeArray[String] = js.native
+  def getSupportedModes(): SafeArray[String]
   
   /** sets a new mode for the implementing object. */
-  def setMode(aMode: String): Unit = js.native
+  def setMode(aMode: String): Unit
   
   /** asks whether a mode is supported or not. */
-  def supportsMode(aMode: String): Boolean = js.native
+  def supportsMode(aMode: String): Boolean
 }
 object XModeSelector {
   

@@ -7,15 +7,13 @@ import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.forward
 import typings.ckeditorCkeditor5Engine.ckeditorCkeditor5EngineStrings.word
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Direction extends StObject {
   
-  var direction: js.UndefOr[forward | backward] = js.native
+  var direction: js.UndefOr[forward | backward] = js.undefined
   
-  var unit: js.UndefOr[character | codePoint | word] = js.native
+  var unit: js.UndefOr[character | codePoint | word] = js.undefined
 }
 object Direction {
   

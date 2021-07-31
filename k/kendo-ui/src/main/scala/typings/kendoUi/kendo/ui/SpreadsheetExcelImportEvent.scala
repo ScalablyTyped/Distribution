@@ -5,15 +5,15 @@ import typings.std.Blob
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SpreadsheetExcelImportEvent extends SpreadsheetEvent {
+trait SpreadsheetExcelImportEvent
+  extends StObject
+     with SpreadsheetEvent {
   
-  var file: js.UndefOr[Blob | File] = js.native
+  var file: js.UndefOr[Blob | File] = js.undefined
   
-  var progress: js.UndefOr[JQueryPromise[_]] = js.native
+  var progress: js.UndefOr[JQueryPromise[js.Any]] = js.undefined
 }
 object SpreadsheetExcelImportEvent {
   
@@ -33,7 +33,7 @@ object SpreadsheetExcelImportEvent {
     def setFileUndefined: Self = StObject.set(x, "file", js.undefined)
     
     @scala.inline
-    def setProgress(value: JQueryPromise[_]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
+    def setProgress(value: JQueryPromise[js.Any]): Self = StObject.set(x, "progress", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setProgressUndefined: Self = StObject.set(x, "progress", js.undefined)

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Media
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the SystemMediaTransportControls.ButtonPressed event. */
-@js.native
 trait SystemMediaTransportControlsButtonPressedEventArgs extends StObject {
   
   /** Gets the button on the SystemMediaTransportControls that was pressed. */
-  var button: SystemMediaTransportControlsButton = js.native
+  var button: SystemMediaTransportControlsButton
 }
 object SystemMediaTransportControlsButtonPressedEventArgs {
   

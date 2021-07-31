@@ -9,10 +9,10 @@ Parse and stringify URL query strings
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | query-string |
-| Keywords           | browser, querystring, query, string, qs, param, parameter, url, parse, stringify, encode, decode, searchparams |
-| # releases         | 22 |
-| # dependents       | 3237 |
-| # downloads        | 504959225 |
+| Keywords           | browser, querystring, query, string, qs, param, parameter, url, parse, stringify, encode, decode, searchparams, filter |
+| # releases         | 27 |
+| # dependents       | 3572 |
+| # downloads        | 640429436 |
 | # stars            | 98 |
 
 ## Links

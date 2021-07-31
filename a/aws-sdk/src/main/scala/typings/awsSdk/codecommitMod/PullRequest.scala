@@ -2,66 +2,64 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PullRequest extends StObject {
   
   /**
     * The approval rules applied to the pull request.
     */
-  var approvalRules: js.UndefOr[ApprovalRulesList] = js.native
+  var approvalRules: js.UndefOr[ApprovalRulesList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user who created the pull request.
     */
-  var authorArn: js.UndefOr[Arn] = js.native
+  var authorArn: js.UndefOr[Arn] = js.undefined
   
   /**
     * A unique, client-generated idempotency token that, when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request returns information about the initial request that used that token.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The date and time the pull request was originally created, in timestamp format.
     */
-  var creationDate: js.UndefOr[CreationDate] = js.native
+  var creationDate: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The user-defined description of the pull request. This description can be used to clarify what should be reviewed and other details of the request.
     */
-  var description: js.UndefOr[Description] = js.native
+  var description: js.UndefOr[Description] = js.undefined
   
   /**
     * The day and time of the last user or system activity on the pull request, in timestamp format.
     */
-  var lastActivityDate: js.UndefOr[LastModifiedDate] = js.native
+  var lastActivityDate: js.UndefOr[LastModifiedDate] = js.undefined
   
   /**
     * The system-generated ID of the pull request. 
     */
-  var pullRequestId: js.UndefOr[PullRequestId] = js.native
+  var pullRequestId: js.UndefOr[PullRequestId] = js.undefined
   
   /**
     * The status of the pull request. Pull request status can only change from OPEN to CLOSED.
     */
-  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.native
+  var pullRequestStatus: js.UndefOr[PullRequestStatusEnum] = js.undefined
   
   /**
     * The targets of the pull request, including the source branch and destination branch for the pull request.
     */
-  var pullRequestTargets: js.UndefOr[PullRequestTargetList] = js.native
+  var pullRequestTargets: js.UndefOr[PullRequestTargetList] = js.undefined
   
   /**
     * The system-generated revision ID for the pull request.
     */
-  var revisionId: js.UndefOr[RevisionId] = js.native
+  var revisionId: js.UndefOr[RevisionId] = js.undefined
   
   /**
     * The user-defined title of the pull request. This title is displayed in the list of pull requests to other repository users.
     */
-  var title: js.UndefOr[Title] = js.native
+  var title: js.UndefOr[Title] = js.undefined
 }
 object PullRequest {
   

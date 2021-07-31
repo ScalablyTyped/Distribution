@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserProfilesRequest extends StObject {
   
   /**
     * A parameter by which to filter the results.
     */
-  var DomainIdEquals: js.UndefOr[DomainId] = js.native
+  var DomainIdEquals: js.UndefOr[DomainId] = js.undefined
   
   /**
     * Returns a list up to a specified limit.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.sagemakerMod.MaxResults] = js.undefined
   
   /**
     * If the previous response was truncated, you will receive this token. Use it in your next request to receive the next set of results.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * The parameter by which to sort the results. The default is CreationTime.
     */
-  var SortBy: js.UndefOr[UserProfileSortKey] = js.native
+  var SortBy: js.UndefOr[UserProfileSortKey] = js.undefined
   
   /**
     * The sort order for the results. The default is Ascending.
     */
-  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.native
+  var SortOrder: js.UndefOr[typings.awsSdk.sagemakerMod.SortOrder] = js.undefined
   
   /**
     * A parameter by which to filter the results.
     */
-  var UserProfileNameContains: js.UndefOr[UserProfileName] = js.native
+  var UserProfileNameContains: js.UndefOr[UserProfileName] = js.undefined
 }
 object ListUserProfilesRequest {
   

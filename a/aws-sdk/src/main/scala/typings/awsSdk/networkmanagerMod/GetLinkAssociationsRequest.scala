@@ -2,36 +2,34 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLinkAssociationsRequest extends StObject {
   
   /**
     * The ID of the device.
     */
-  var DeviceId: js.UndefOr[String] = js.native
+  var DeviceId: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the global network.
     */
-  var GlobalNetworkId: String = js.native
+  var GlobalNetworkId: String
   
   /**
     * The ID of the link.
     */
-  var LinkId: js.UndefOr[String] = js.native
+  var LinkId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of results to return.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.networkmanagerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.networkmanagerMod.MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var NextToken: js.UndefOr[String] = js.native
+  var NextToken: js.UndefOr[String] = js.undefined
 }
 object GetLinkAssociationsRequest {
   

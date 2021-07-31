@@ -9,7 +9,6 @@ import typings.segmentAnalytics.anon.KeyString
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SegmentAnalytics {
@@ -31,30 +30,15 @@ object SegmentAnalytics {
     def alias(userId: String, callback: js.Function0[Unit]): Unit = js.native
     def alias(userId: String, options: SegmentOpts): Unit = js.native
     def alias(userId: String, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
-    def alias(userId: String, previousId: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def alias(
-      userId: String,
-      previousId: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def alias(userId: String, previousId: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def alias(
-      userId: String,
-      previousId: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def alias(userId: String, previousId: String): Unit = js.native
     def alias(userId: String, previousId: String, callback: js.Function0[Unit]): Unit = js.native
-    def alias(
-      userId: String,
-      previousId: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    def alias(userId: String, previousId: String, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def alias(userId: String, previousId: String, options: SegmentOpts): Unit = js.native
     def alias(userId: String, previousId: String, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def alias(userId: String, previousId: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def alias(userId: String, previousId: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def alias(userId: String, previousId: Unit, options: SegmentOpts): Unit = js.native
+    def alias(userId: String, previousId: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     
     /* Analytics.js has a debug mode that logs helpful messages to the
       console. */
@@ -67,77 +51,43 @@ object SegmentAnalytics {
       you came up with for the same concept. */
     def group(groupId: String): Unit = js.native
     def group(groupId: String, callback: js.Function0[Unit]): Unit = js.native
-    def group(groupId: String, traits: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def group(
-      groupId: String,
-      traits: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def group(groupId: String, traits: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def group(
-      groupId: String,
-      traits: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def group(groupId: String, traits: js.Object): Unit = js.native
     def group(groupId: String, traits: js.Object, callback: js.Function0[Unit]): Unit = js.native
-    def group(
-      groupId: String,
-      traits: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    def group(groupId: String, traits: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def group(groupId: String, traits: js.Object, options: SegmentOpts): Unit = js.native
     def group(groupId: String, traits: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def group(groupId: String, traits: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def group(groupId: String, traits: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def group(groupId: String, traits: Unit, options: SegmentOpts): Unit = js.native
+    def group(groupId: String, traits: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     
     def identify(): Unit = js.native
     def identify(callback: js.Function0[Unit]): Unit = js.native
-    def identify(traits: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def identify(
-      traits: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def identify(traits: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def identify(traits: js.UndefOr[scala.Nothing], options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     def identify(traits: js.Object): Unit = js.native
     def identify(traits: js.Object, callback: js.Function0[Unit]): Unit = js.native
-    def identify(traits: js.Object, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def identify(traits: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def identify(traits: js.Object, options: SegmentOpts): Unit = js.native
     def identify(traits: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def identify(traits: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def identify(traits: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def identify(traits: Unit, options: SegmentOpts): Unit = js.native
+    def identify(traits: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     /* The identify method is how you tie one of your users and their actions
       to a recognizable userId and traits. */
     def identify(userId: String): Unit = js.native
     def identify(userId: String, callback: js.Function0[Unit]): Unit = js.native
-    def identify(
-      userId: String,
-      traits: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def identify(userId: String, traits: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def identify(
-      userId: String,
-      traits: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def identify(userId: String, traits: js.Object): Unit = js.native
     def identify(userId: String, traits: js.Object, callback: js.Function0[Unit]): Unit = js.native
-    def identify(
-      userId: String,
-      traits: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    def identify(userId: String, traits: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def identify(userId: String, traits: js.Object, options: SegmentOpts): Unit = js.native
     def identify(userId: String, traits: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def identify(userId: String, traits: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def identify(userId: String, traits: Unit, options: SegmentOpts): Unit = js.native
+    def identify(userId: String, traits: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     
     /* Initialize with the given integration `settings` and `options`. */
     def init(): this.type = js.native
-    def init(settings: js.UndefOr[scala.Nothing], options: InitOptions): this.type = js.native
+    def init(settings: Unit, options: InitOptions): this.type = js.native
     def init(settings: IntegrationsSettings): this.type = js.native
     def init(settings: IntegrationsSettings, options: InitOptions): this.type = js.native
     
@@ -157,145 +107,10 @@ object SegmentAnalytics {
       optional extra information about the page being viewed. */
     def page(): Unit = js.native
     def page(callback: js.Function0[Unit]): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts
-    ): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(category: js.UndefOr[scala.Nothing], name: js.UndefOr[scala.Nothing], properties: js.Object): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      properties: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      properties: js.Object,
-      options: SegmentOpts
-    ): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      properties: js.Object,
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(category: js.UndefOr[scala.Nothing], name: String): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts
-    ): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(category: js.UndefOr[scala.Nothing], name: String, properties: js.Object): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: String,
-      properties: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(category: js.UndefOr[scala.Nothing], name: String, properties: js.Object, options: SegmentOpts): Unit = js.native
-    def page(
-      category: js.UndefOr[scala.Nothing],
-      name: String,
-      properties: js.Object,
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def page(category: String): Unit = js.native
-    def page(
-      category: String,
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(
-      category: String,
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts
-    ): Unit = js.native
-    def page(
-      category: String,
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(category: String, name: js.UndefOr[scala.Nothing], properties: js.Object): Unit = js.native
-    def page(
-      category: String,
-      name: js.UndefOr[scala.Nothing],
-      properties: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(category: String, name: js.UndefOr[scala.Nothing], properties: js.Object, options: SegmentOpts): Unit = js.native
-    def page(
-      category: String,
-      name: js.UndefOr[scala.Nothing],
-      properties: js.Object,
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def page(category: String, name: String): Unit = js.native
-    def page(
-      category: String,
-      name: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(category: String, name: String, properties: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def page(
-      category: String,
-      name: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def page(category: String, name: String, properties: js.Object): Unit = js.native
-    def page(
-      category: String,
-      name: String,
-      properties: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    def page(category: String, name: String, properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def page(category: String, name: String, properties: js.Object, options: SegmentOpts): Unit = js.native
     def page(
       category: String,
@@ -304,71 +119,81 @@ object SegmentAnalytics {
       options: SegmentOpts,
       callback: js.Function0[Unit]
     ): Unit = js.native
-    def page(name: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def page(category: String, name: String, properties: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: String, name: String, properties: Unit, options: SegmentOpts): Unit = js.native
     def page(
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(name: js.UndefOr[scala.Nothing], properties: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def page(
-      name: js.UndefOr[scala.Nothing],
-      properties: js.UndefOr[scala.Nothing],
+      category: String,
+      name: String,
+      properties: Unit,
       options: SegmentOpts,
       callback: js.Function0[Unit]
     ): Unit = js.native
-    def page(name: js.UndefOr[scala.Nothing], properties: js.Object): Unit = js.native
-    def page(name: js.UndefOr[scala.Nothing], properties: js.Object, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: String, name: Unit, properties: js.Object): Unit = js.native
+    def page(category: String, name: Unit, properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: String, name: Unit, properties: js.Object, options: SegmentOpts): Unit = js.native
     def page(
-      name: js.UndefOr[scala.Nothing],
-      properties: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(name: js.UndefOr[scala.Nothing], properties: js.Object, options: SegmentOpts): Unit = js.native
-    def page(
-      name: js.UndefOr[scala.Nothing],
+      category: String,
+      name: Unit,
       properties: js.Object,
       options: SegmentOpts,
       callback: js.Function0[Unit]
     ): Unit = js.native
+    def page(category: String, name: Unit, properties: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: String, name: Unit, properties: Unit, options: SegmentOpts): Unit = js.native
+    def page(category: String, name: Unit, properties: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: Unit, name: String): Unit = js.native
+    def page(category: Unit, name: String, properties: js.Object): Unit = js.native
+    def page(category: Unit, name: String, properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: Unit, name: String, properties: js.Object, options: SegmentOpts): Unit = js.native
+    def page(
+      category: Unit,
+      name: String,
+      properties: js.Object,
+      options: SegmentOpts,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def page(category: Unit, name: String, properties: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: Unit, name: String, properties: Unit, options: SegmentOpts): Unit = js.native
+    def page(category: Unit, name: String, properties: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: Unit, name: Unit, properties: js.Object): Unit = js.native
+    def page(category: Unit, name: Unit, properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: Unit, name: Unit, properties: js.Object, options: SegmentOpts): Unit = js.native
+    def page(
+      category: Unit,
+      name: Unit,
+      properties: js.Object,
+      options: SegmentOpts,
+      callback: js.Function0[Unit]
+    ): Unit = js.native
+    def page(category: Unit, name: Unit, properties: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(category: Unit, name: Unit, properties: Unit, options: SegmentOpts): Unit = js.native
+    def page(category: Unit, name: Unit, properties: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     def page(name: String, callback: js.Function0[Unit]): Unit = js.native
-    def page(name: String, properties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def page(
-      name: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def page(name: String, properties: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def page(
-      name: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def page(name: String, properties: js.Object): Unit = js.native
     def page(name: String, properties: js.Object, callback: js.Function0[Unit]): Unit = js.native
-    def page(
-      name: String,
-      properties: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    def page(name: String, properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def page(name: String, properties: js.Object, options: SegmentOpts): Unit = js.native
     def page(name: String, properties: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
-    def page(properties: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def page(properties: js.UndefOr[scala.Nothing], options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: String, properties: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: String, properties: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: String, properties: Unit, options: SegmentOpts): Unit = js.native
+    def page(name: String, properties: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: Unit, properties: js.Object): Unit = js.native
+    def page(name: Unit, properties: js.Object, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: Unit, properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: Unit, properties: js.Object, options: SegmentOpts): Unit = js.native
+    def page(name: Unit, properties: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: Unit, properties: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: Unit, properties: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def page(name: Unit, properties: Unit, options: SegmentOpts): Unit = js.native
+    def page(name: Unit, properties: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     def page(properties: js.Object): Unit = js.native
-    def page(properties: js.Object, options: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
+    def page(properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def page(properties: js.Object, options: SegmentOpts): Unit = js.native
     def page(properties: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def page(properties: Unit, options: SegmentOpts): Unit = js.native
+    def page(properties: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     
     /* The ready method allows you to pass in a callback that will be called as
       soon as all of your enabled integrations have loaded. It’s like jQuery’s
@@ -390,30 +215,15 @@ object SegmentAnalytics {
     /* The track method lets you record any actions your users perform. */
     def track(event: String): Unit = js.native
     def track(event: String, callback: js.Function0[Unit]): Unit = js.native
-    def track(event: String, properties: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
-    def track(
-      event: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
-    def track(event: String, properties: js.UndefOr[scala.Nothing], options: SegmentOpts): Unit = js.native
-    def track(
-      event: String,
-      properties: js.UndefOr[scala.Nothing],
-      options: SegmentOpts,
-      callback: js.Function0[Unit]
-    ): Unit = js.native
     def track(event: String, properties: js.Object): Unit = js.native
     def track(event: String, properties: js.Object, callback: js.Function0[Unit]): Unit = js.native
-    def track(
-      event: String,
-      properties: js.Object,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function0[Unit]
-    ): Unit = js.native
+    def track(event: String, properties: js.Object, options: Unit, callback: js.Function0[Unit]): Unit = js.native
     def track(event: String, properties: js.Object, options: SegmentOpts): Unit = js.native
     def track(event: String, properties: js.Object, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
+    def track(event: String, properties: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def track(event: String, properties: Unit, options: Unit, callback: js.Function0[Unit]): Unit = js.native
+    def track(event: String, properties: Unit, options: SegmentOpts): Unit = js.native
+    def track(event: String, properties: Unit, options: SegmentOpts, callback: js.Function0[Unit]): Unit = js.native
     
     def trackForm(elements: js.Array[Element], event: String): Unit = js.native
     def trackForm(elements: js.Array[Element], event: String, properties: js.Function1[/* elm */ Element, js.Object]): Unit = js.native
@@ -493,16 +303,15 @@ object SegmentAnalytics {
     def user(): AnonymousId = js.native
   }
   
-  @js.native
   trait CookieOptions extends StObject {
     
-    var domain: js.UndefOr[String] = js.native
+    var domain: js.UndefOr[String] = js.undefined
     
-    var maxage: js.UndefOr[Double] = js.native
+    var maxage: js.UndefOr[Double] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object CookieOptions {
     
@@ -541,14 +350,13 @@ object SegmentAnalytics {
     }
   }
   
-  @js.native
   trait GroupOptions extends StObject {
     
-    var cookie: js.UndefOr[KeyString] = js.native
+    var cookie: js.UndefOr[KeyString] = js.undefined
     
-    var localStorage: js.UndefOr[KeyString] = js.native
+    var localStorage: js.UndefOr[KeyString] = js.undefined
     
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
   }
   object GroupOptions {
     
@@ -581,20 +389,19 @@ object SegmentAnalytics {
     }
   }
   
-  @js.native
   trait InitOptions extends StObject {
     
-    var cookie: js.UndefOr[CookieOptions] = js.native
+    var cookie: js.UndefOr[CookieOptions] = js.undefined
     
-    var group: js.UndefOr[GroupOptions] = js.native
+    var group: js.UndefOr[GroupOptions] = js.undefined
     
-    var integrations: js.UndefOr[Dictintegration] = js.native
+    var integrations: js.UndefOr[Dictintegration] = js.undefined
     
-    var localStorage: js.UndefOr[StoreOptions] = js.native
+    var localStorage: js.UndefOr[StoreOptions] = js.undefined
     
-    var metrics: js.UndefOr[MetricsOptions] = js.native
+    var metrics: js.UndefOr[MetricsOptions] = js.undefined
     
-    var user: js.UndefOr[UserOptions] = js.native
+    var user: js.UndefOr[UserOptions] = js.undefined
   }
   object InitOptions {
     
@@ -647,16 +454,15 @@ object SegmentAnalytics {
   
   type IntegrationsSettings = StringDictionary[js.Any]
   
-  @js.native
   trait MetricsOptions extends StObject {
     
-    var flushTimer: js.UndefOr[Double] = js.native
+    var flushTimer: js.UndefOr[Double] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var maxQueueSize: js.UndefOr[Double] = js.native
+    var maxQueueSize: js.UndefOr[Double] = js.undefined
     
-    var sampleRate: js.UndefOr[Double] = js.native
+    var sampleRate: js.UndefOr[Double] = js.undefined
   }
   object MetricsOptions {
     
@@ -696,14 +502,13 @@ object SegmentAnalytics {
   }
   
   // Generic options object with integrations
-  @js.native
   trait SegmentOpts extends StObject {
     
-    var anonymousId: js.UndefOr[String] = js.native
+    var anonymousId: js.UndefOr[String] = js.undefined
     
-    var context: js.UndefOr[js.Object] = js.native
+    var context: js.UndefOr[js.Object] = js.undefined
     
-    var integrations: js.UndefOr[js.Any] = js.native
+    var integrations: js.UndefOr[js.Any] = js.undefined
   }
   object SegmentOpts {
     
@@ -736,10 +541,9 @@ object SegmentAnalytics {
     }
   }
   
-  @js.native
   trait StoreOptions extends StObject {
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
   }
   object StoreOptions {
     
@@ -760,14 +564,13 @@ object SegmentAnalytics {
     }
   }
   
-  @js.native
   trait UserOptions extends StObject {
     
-    var cookie: js.UndefOr[Key] = js.native
+    var cookie: js.UndefOr[Key] = js.undefined
     
-    var localStorage: js.UndefOr[KeyString] = js.native
+    var localStorage: js.UndefOr[KeyString] = js.undefined
     
-    var persist: js.UndefOr[Boolean] = js.native
+    var persist: js.UndefOr[Boolean] = js.undefined
   }
   object UserOptions {
     

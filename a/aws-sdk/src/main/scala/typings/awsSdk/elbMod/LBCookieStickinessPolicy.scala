@@ -2,21 +2,19 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LBCookieStickinessPolicy extends StObject {
   
   /**
     * The time period, in seconds, after which the cookie should be considered stale. If this parameter is not specified, the stickiness session lasts for the duration of the browser session.
     */
-  var CookieExpirationPeriod: js.UndefOr[typings.awsSdk.elbMod.CookieExpirationPeriod] = js.native
+  var CookieExpirationPeriod: js.UndefOr[typings.awsSdk.elbMod.CookieExpirationPeriod] = js.undefined
   
   /**
     * The name of the policy. This name must be unique within the set of policies for this load balancer.
     */
-  var PolicyName: js.UndefOr[typings.awsSdk.elbMod.PolicyName] = js.native
+  var PolicyName: js.UndefOr[typings.awsSdk.elbMod.PolicyName] = js.undefined
 }
 object LBCookieStickinessPolicy {
   

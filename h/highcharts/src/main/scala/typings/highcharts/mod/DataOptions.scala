@@ -3,17 +3,15 @@ package typings.highcharts.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to modify
     * the CSV before parsing it. Return the modified string.
     */
-  var beforeParse: js.UndefOr[DataBeforeParseCallbackFunction] = js.native
+  var beforeParse: js.UndefOr[DataBeforeParseCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A two-dimensional array
@@ -22,14 +20,14 @@ trait DataOptions extends StObject {
     * cell can be a string or number. If not switchRowsAndColumns is set, the
     * columns are interpreted as series.
     */
-  var columns: js.UndefOr[js.Array[js.Array[DataValueType]]] = js.native
+  var columns: js.UndefOr[js.Array[js.Array[DataValueType]]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A URL to a remote JSON dataset,
     * structured as a column array. Will be fetched when the chart is created
     * using Ajax.
     */
-  var columnsURL: js.UndefOr[String] = js.native
+  var columnsURL: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The callback that is evaluated
@@ -38,7 +36,7 @@ trait DataOptions extends StObject {
     * containing the series. These options can be extended with additional
     * options and passed directly to the chart constructor.
     */
-  var complete: js.UndefOr[DataCompleteCallbackFunction] = js.native
+  var complete: js.UndefOr[DataCompleteCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A comma delimited string to be
@@ -50,13 +48,13 @@ trait DataOptions extends StObject {
     * cases it may be necessary to use an external CSV parser. See this example
     * of parsing CSV through the MIT licensed Papa Parse library.
     */
-  var csv: js.UndefOr[String] = js.native
+  var csv: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An URL to a remote CSV dataset.
     * Will be fetched when the chart is created using Ajax.
     */
-  var csvURL: js.UndefOr[String] = js.native
+  var csvURL: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Sets the refresh rate for data
@@ -68,7 +66,7 @@ trait DataOptions extends StObject {
     * The value is the number of seconds between pollings. It cannot be set to
     * less than 1 second.
     */
-  var dataRefreshRate: js.UndefOr[Double] = js.native
+  var dataRefreshRate: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Which of the predefined date
@@ -77,7 +75,7 @@ trait DataOptions extends StObject {
     * dates. Valid options include: `YYYY/mm/dd`, `dd/mm/YYYY`, `mm/dd/YYYY`,
     * `dd/mm/YY`, `mm/dd/YY`.
     */
-  var dateFormat: js.UndefOr[OptionsDateFormatValue] = js.native
+  var dateFormat: js.UndefOr[OptionsDateFormatValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The decimal point used for
@@ -86,7 +84,7 @@ trait DataOptions extends StObject {
     * If both this and data.delimiter is set to `undefined`, the parser will
     * attempt to deduce the decimal point automatically.
     */
-  var decimalPoint: js.UndefOr[String] = js.native
+  var decimalPoint: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Enables automatic refetching of
@@ -96,32 +94,32 @@ trait DataOptions extends StObject {
     * Only works when either data.csvURL, data.rowsURL, data.columnsURL, or
     * data.googleSpreadsheetKey.
     */
-  var enablePolling: js.UndefOr[Boolean] = js.native
+  var enablePolling: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) In tabular input data, the last
     * column (indexed by 0) to use. Defaults to the last column containing
     * data.
     */
-  var endColumn: js.UndefOr[Double] = js.native
+  var endColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) In tabular input data, the last
     * row (indexed by 0) to use. Defaults to the last row containing data.
     */
-  var endRow: js.UndefOr[Double] = js.native
+  var endRow: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether to use the first row in the data
     * set as series names.
     */
-  var firstRowAsNames: js.UndefOr[Boolean] = js.native
+  var firstRowAsNames: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The key for a Google Spreadsheet
     * to load. See general information on GS.
     */
-  var googleSpreadsheetKey: js.UndefOr[String] = js.native
+  var googleSpreadsheetKey: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Google Spreadsheet worksheet
@@ -129,7 +127,7 @@ trait DataOptions extends StObject {
     * your sheet can be read from
     * `https://spreadsheets.google.com/feeds/worksheets/{key}/public/basic`.
     */
-  var googleSpreadsheetWorksheet: js.UndefOr[String] = js.native
+  var googleSpreadsheetWorksheet: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Item or cell delimiter for
@@ -139,19 +137,19 @@ trait DataOptions extends StObject {
     * If this is set to false or undefined, the parser will attempt to deduce
     * the delimiter automatically.
     */
-  var itemDelimiter: js.UndefOr[String] = js.native
+  var itemDelimiter: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Line delimiter for parsing CSV.
     */
-  var lineDelimiter: js.UndefOr[String] = js.native
+  var lineDelimiter: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to parse
     * string representations of dates into JavaScript timestamps. Should return
     * an integer timestamp on success.
     */
-  var parseDate: js.UndefOr[DataParseDateCallbackFunction] = js.native
+  var parseDate: js.UndefOr[DataParseDateCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A callback function to access
@@ -159,53 +157,53 @@ trait DataOptions extends StObject {
     * they are interpreted into series data and categories. Return `false` to
     * stop completion, or call `this.complete()` to continue async.
     */
-  var parsed: js.UndefOr[DataParsedCallbackFunction] = js.native
+  var parsed: js.UndefOr[DataParsedCallbackFunction] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The same as the columns input
     * option, but defining rows intead of columns.
     */
-  var rows: js.UndefOr[js.Array[js.Array[DataValueType]]] = js.native
+  var rows: js.UndefOr[js.Array[js.Array[DataValueType]]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) A URL to a remote JSON dataset,
     * structured as a row array. Will be fetched when the chart is created
     * using Ajax.
     */
-  var rowsURL: js.UndefOr[String] = js.native
+  var rowsURL: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array containing dictionaries
     * for each series. A dictionary exists of Point property names as the key
     * and the CSV column index as the value.
     */
-  var seriesMapping: js.UndefOr[js.Array[Dictionary[Double]]] = js.native
+  var seriesMapping: js.UndefOr[js.Array[Dictionary[Double]]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) In tabular input data, the first
     * column (indexed by 0) to use.
     */
-  var startColumn: js.UndefOr[Double] = js.native
+  var startColumn: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) In tabular input data, the first
     * row (indexed by 0) to use.
     */
-  var startRow: js.UndefOr[Double] = js.native
+  var startRow: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Switch rows and columns of the
     * input data, so that `this.columns` effectively becomes the rows of the
     * data set, and the rows are interpreted as series.
     */
-  var switchRowsAndColumns: js.UndefOr[Boolean] = js.native
+  var switchRowsAndColumns: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An HTML table or the id of such
     * to be parsed as input data. Related options are `startRow`, `endRow`,
     * `startColumn` and `endColumn` to delimit what part of the table is used.
     */
-  var table: js.UndefOr[String | HTMLElement] = js.native
+  var table: js.UndefOr[String | HTMLElement] = js.undefined
 }
 object DataOptions {
   

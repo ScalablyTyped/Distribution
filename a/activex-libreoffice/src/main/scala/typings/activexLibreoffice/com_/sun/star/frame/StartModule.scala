@@ -5,14 +5,14 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.1 */
-@js.native
-trait StartModule extends XController {
+trait StartModule
+  extends StObject
+     with XController {
   
-  def createWithParentWindow(ContainerWindow: XWindow): Unit = js.native
+  def createWithParentWindow(ContainerWindow: XWindow): Unit
 }
 object StartModule {
   

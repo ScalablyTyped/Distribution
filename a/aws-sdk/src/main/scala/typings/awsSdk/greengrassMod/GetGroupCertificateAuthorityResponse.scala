@@ -2,26 +2,24 @@ package typings.awsSdk.greengrassMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetGroupCertificateAuthorityResponse extends StObject {
   
   /**
     * The ARN of the certificate authority for the group.
     */
-  var GroupCertificateAuthorityArn: js.UndefOr[string] = js.native
+  var GroupCertificateAuthorityArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ID of the certificate authority for the group.
     */
-  var GroupCertificateAuthorityId: js.UndefOr[string] = js.native
+  var GroupCertificateAuthorityId: js.UndefOr[string] = js.undefined
   
   /**
     * The PEM encoded certificate for the group.
     */
-  var PemEncodedCertificate: js.UndefOr[string] = js.native
+  var PemEncodedCertificate: js.UndefOr[string] = js.undefined
 }
 object GetGroupCertificateAuthorityResponse {
   

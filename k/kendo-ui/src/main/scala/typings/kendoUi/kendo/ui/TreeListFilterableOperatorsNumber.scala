@@ -2,28 +2,26 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TreeListFilterableOperatorsNumber extends StObject {
   
   @JSName("eq")
-  var eq_FTreeListFilterableOperatorsNumber: js.UndefOr[String] = js.native
+  var eq_FTreeListFilterableOperatorsNumber: js.UndefOr[String] = js.undefined
   
-  var gt: js.UndefOr[String] = js.native
+  var gt: js.UndefOr[String] = js.undefined
   
-  var gte: js.UndefOr[String] = js.native
+  var gte: js.UndefOr[String] = js.undefined
   
-  var isnotnull: js.UndefOr[String] = js.native
+  var isnotnull: js.UndefOr[String] = js.undefined
   
-  var isnull: js.UndefOr[String] = js.native
+  var isnull: js.UndefOr[String] = js.undefined
   
-  var lt: js.UndefOr[String] = js.native
+  var lt: js.UndefOr[String] = js.undefined
   
-  var lte: js.UndefOr[String] = js.native
+  var lte: js.UndefOr[String] = js.undefined
   
-  var neq: js.UndefOr[String] = js.native
+  var neq: js.UndefOr[String] = js.undefined
 }
 object TreeListFilterableOperatorsNumber {
   

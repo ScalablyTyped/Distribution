@@ -5,7 +5,6 @@ import typings.node.httpMod.AgentOptions
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,10 +22,11 @@ object mod {
     def this(options: HttpsProxyAgentOptions) = this()
   }
   
-  @js.native
-  trait HttpProxyAgentOptions extends AgentOptions {
+  trait HttpProxyAgentOptions
+    extends StObject
+       with AgentOptions {
     
-    var proxy: String | URL_ = js.native
+    var proxy: String | URL_
   }
   object HttpProxyAgentOptions {
     
@@ -44,11 +44,11 @@ object mod {
     }
   }
   
-  @js.native
   trait HttpsProxyAgentOptions
-    extends typings.node.httpsMod.AgentOptions {
+    extends StObject
+       with typings.node.httpsMod.AgentOptions {
     
-    var proxy: String | URL_ = js.native
+    var proxy: String | URL_
   }
   object HttpsProxyAgentOptions {
     

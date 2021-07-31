@@ -3,30 +3,29 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.symbolInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SketchMSSymbolInstanceLayer extends SketchMSLayer {
+trait SketchMSSymbolInstanceLayer
+  extends StObject
+     with SketchMSLayer {
   
   @JSName("_class")
-  var _class_SketchMSSymbolInstanceLayer: symbolInstance = js.native
+  var _class_SketchMSSymbolInstanceLayer: symbolInstance
   
-  var horizontalSpacing: Double = js.native
+  var horizontalSpacing: Double
   
-  var overrideValues: js.Array[_] = js.native
+  var overrideValues: js.Array[js.Any]
   
-  var scale: Double = js.native
+  var scale: Double
   
-  var symbolID: String = js.native
+  var symbolID: String
   
-  var verticalSpacing: Double = js.native
+  var verticalSpacing: Double
 }
 object SketchMSSymbolInstanceLayer {
   
   @scala.inline
   def apply(
-    _class: symbolInstance,
     booleanOperation: SketchMSLayerBooleanOperation,
     clippingMaskMode: SketchMSLayerClippingMaskMode,
     do_objectID: String,
@@ -42,7 +41,7 @@ object SketchMSSymbolInstanceLayer {
     layerListExpandedType: Double,
     name: String,
     nameIsFixed: Boolean,
-    overrideValues: js.Array[_],
+    overrideValues: js.Array[js.Any],
     resizingConstraint: Double,
     resizingType: SketchMSLayerResizingType,
     rotation: Double,
@@ -52,7 +51,7 @@ object SketchMSSymbolInstanceLayer {
     symbolID: String,
     verticalSpacing: Double
   ): SketchMSSymbolInstanceLayer = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], booleanOperation = booleanOperation.asInstanceOf[js.Any], clippingMaskMode = clippingMaskMode.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], exportOptions = exportOptions.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], hasClippingMask = hasClippingMask.asInstanceOf[js.Any], horizontalSpacing = horizontalSpacing.asInstanceOf[js.Any], isFixedToViewport = isFixedToViewport.asInstanceOf[js.Any], isFlippedHorizontal = isFlippedHorizontal.asInstanceOf[js.Any], isFlippedVertical = isFlippedVertical.asInstanceOf[js.Any], isLocked = isLocked.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], layerListExpandedType = layerListExpandedType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameIsFixed = nameIsFixed.asInstanceOf[js.Any], overrideValues = overrideValues.asInstanceOf[js.Any], resizingConstraint = resizingConstraint.asInstanceOf[js.Any], resizingType = resizingType.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], shouldBreakMaskChain = shouldBreakMaskChain.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], symbolID = symbolID.asInstanceOf[js.Any], verticalSpacing = verticalSpacing.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "symbolInstance", booleanOperation = booleanOperation.asInstanceOf[js.Any], clippingMaskMode = clippingMaskMode.asInstanceOf[js.Any], do_objectID = do_objectID.asInstanceOf[js.Any], exportOptions = exportOptions.asInstanceOf[js.Any], frame = frame.asInstanceOf[js.Any], hasClippingMask = hasClippingMask.asInstanceOf[js.Any], horizontalSpacing = horizontalSpacing.asInstanceOf[js.Any], isFixedToViewport = isFixedToViewport.asInstanceOf[js.Any], isFlippedHorizontal = isFlippedHorizontal.asInstanceOf[js.Any], isFlippedVertical = isFlippedVertical.asInstanceOf[js.Any], isLocked = isLocked.asInstanceOf[js.Any], isVisible = isVisible.asInstanceOf[js.Any], layerListExpandedType = layerListExpandedType.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], nameIsFixed = nameIsFixed.asInstanceOf[js.Any], overrideValues = overrideValues.asInstanceOf[js.Any], resizingConstraint = resizingConstraint.asInstanceOf[js.Any], resizingType = resizingType.asInstanceOf[js.Any], rotation = rotation.asInstanceOf[js.Any], scale = scale.asInstanceOf[js.Any], shouldBreakMaskChain = shouldBreakMaskChain.asInstanceOf[js.Any], style = style.asInstanceOf[js.Any], symbolID = symbolID.asInstanceOf[js.Any], verticalSpacing = verticalSpacing.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSSymbolInstanceLayer]
   }
   
@@ -63,7 +62,7 @@ object SketchMSSymbolInstanceLayer {
     def setHorizontalSpacing(value: Double): Self = StObject.set(x, "horizontalSpacing", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setOverrideValues(value: js.Array[_]): Self = StObject.set(x, "overrideValues", value.asInstanceOf[js.Any])
+    def setOverrideValues(value: js.Array[js.Any]): Self = StObject.set(x, "overrideValues", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOverrideValuesVarargs(value: js.Any*): Self = StObject.set(x, "overrideValues", js.Array(value :_*))

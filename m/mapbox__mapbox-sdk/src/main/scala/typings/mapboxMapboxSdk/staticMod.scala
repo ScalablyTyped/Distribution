@@ -11,24 +11,24 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object staticMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/static", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/static", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): StaticMapService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/static", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): StaticMapService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: SdkConfig): StaticMapService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StaticMapService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): StaticMapService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[StaticMapService]
+  
   trait CustomMarker extends StObject {
     
-    var coordinates: LngLatLike = js.native
+    var coordinates: LngLatLike
     
-    var url: String = js.native
+    var url: String
   }
   object CustomMarker {
     
@@ -49,10 +49,9 @@ object staticMod {
     }
   }
   
-  @js.native
   trait CustomMarkerOverlay extends StObject {
     
-    var marker: CustomMarker = js.native
+    var marker: CustomMarker
   }
   object CustomMarkerOverlay {
     
@@ -70,10 +69,9 @@ object staticMod {
     }
   }
   
-  @js.native
   trait GeoJsonOverlay extends StObject {
     
-    var geoJson: GeoJSON = js.native
+    var geoJson: GeoJSON
   }
   object GeoJsonOverlay {
     
@@ -91,32 +89,31 @@ object staticMod {
     }
   }
   
-  @js.native
   trait Path extends StObject {
     
     /**
       * An array of coordinates describing the path.
       */
-    var coordinates: js.Array[LngLatBoundsLike] = js.native
+    var coordinates: js.Array[LngLatBoundsLike]
     
     /**
       * Must be paired with strokeColor.
       */
-    var fillColor: js.UndefOr[String] = js.native
+    var fillColor: js.UndefOr[String] = js.undefined
     
     /**
       * Must be paired with strokeColor.
       */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
-    var strokeColor: js.UndefOr[String] = js.native
+    var strokeColor: js.UndefOr[String] = js.undefined
     
     /**
       * Must be paired with strokeColor.
       */
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
     
-    var strokeWidth: js.UndefOr[Double] = js.native
+    var strokeWidth: js.UndefOr[Double] = js.undefined
   }
   object Path {
     
@@ -167,10 +164,9 @@ object staticMod {
     }
   }
   
-  @js.native
   trait PathOverlay extends StObject {
     
-    var path: Path = js.native
+    var path: Path
   }
   object PathOverlay {
     
@@ -188,16 +184,15 @@ object staticMod {
     }
   }
   
-  @js.native
   trait SimpleMarker extends StObject {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var coordinates: LngLatLike = js.native
+    var coordinates: LngLatLike
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[large | small] = js.native
+    var size: js.UndefOr[large | small] = js.undefined
   }
   object SimpleMarker {
     
@@ -233,10 +228,9 @@ object staticMod {
     }
   }
   
-  @js.native
   trait SimpleMarkerOverlay extends StObject {
     
-    var marker: SimpleMarker = js.native
+    var marker: SimpleMarker
   }
   object SimpleMarkerOverlay {
     
@@ -254,30 +248,29 @@ object staticMod {
     }
   }
   
-  @js.native
   trait StaticMapRequest extends StObject {
     
-    var attribution: js.UndefOr[Boolean] = js.native
+    var attribution: js.UndefOr[Boolean] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var highRes: js.UndefOr[Boolean] = js.native
+    var highRes: js.UndefOr[Boolean] = js.undefined
     
-    var insertOverlayBeforeLayer: js.UndefOr[String] = js.native
+    var insertOverlayBeforeLayer: js.UndefOr[String] = js.undefined
     
-    var logo: js.UndefOr[Boolean] = js.native
+    var logo: js.UndefOr[Boolean] = js.undefined
     
     var overlays: js.UndefOr[
         js.Array[CustomMarkerOverlay | SimpleMarkerOverlay | PathOverlay | GeoJsonOverlay]
-      ] = js.native
+      ] = js.undefined
     
-    var ownerId: String = js.native
+    var ownerId: String
     
-    var position: Bearing | auto = js.native
+    var position: Bearing | auto
     
-    var styleId: String = js.native
+    var styleId: String
     
-    var width: Double = js.native
+    var width: Double
   }
   object StaticMapRequest {
     
@@ -340,14 +333,13 @@ object staticMod {
     }
   }
   
-  @js.native
   trait StaticMapService extends StObject {
     
     /**
       * Get a static map image..
       * @param request
       */
-    def getStaticImage(request: StaticMapRequest): MapiRequest = js.native
+    def getStaticImage(request: StaticMapRequest): MapiRequest
   }
   object StaticMapService {
     

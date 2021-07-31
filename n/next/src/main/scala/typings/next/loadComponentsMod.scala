@@ -18,39 +18,39 @@ import typings.node.querystringMod.ParsedUrlQuery
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loadComponentsMod {
   
-  @JSImport("next/dist/next-server/server/load-components", "interopDefault")
+  @JSImport("next/dist/next-server/server/load-components", JSImport.Namespace)
   @js.native
-  def interopDefault(mod: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("next/dist/next-server/server/load-components", "loadComponents")
-  @js.native
-  def loadComponents(distDir: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = js.native
+  @scala.inline
+  def interopDefault(mod: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("interopDefault")(mod.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def loadComponents(distDir: String, pathname: String, serverless: Boolean): js.Promise[LoadComponentsReturnType] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadComponents")(distDir.asInstanceOf[js.Any], pathname.asInstanceOf[js.Any], serverless.asInstanceOf[js.Any])).asInstanceOf[js.Promise[LoadComponentsReturnType]]
+  
   trait LoadComponentsReturnType extends StObject {
     
-    var App: AppType = js.native
+    var App: AppType
     
-    var Component: ComponentType[js.Object] = js.native
+    var Component: ComponentType[js.Object]
     
-    var Document: DocumentType = js.native
+    var Document: DocumentType
     
-    var buildManifest: BuildManifest = js.native
+    var buildManifest: BuildManifest
     
-    var getServerSideProps: js.UndefOr[GetServerSideProps[StringDictionary[_], ParsedUrlQuery]] = js.native
+    var getServerSideProps: js.UndefOr[GetServerSideProps[StringDictionary[js.Any], ParsedUrlQuery]] = js.undefined
     
-    var getStaticPaths: js.UndefOr[GetStaticPaths[ParsedUrlQuery]] = js.native
+    var getStaticPaths: js.UndefOr[GetStaticPaths[ParsedUrlQuery]] = js.undefined
     
-    var getStaticProps: js.UndefOr[GetStaticProps[StringDictionary[_], ParsedUrlQuery]] = js.native
+    var getStaticProps: js.UndefOr[GetStaticProps[StringDictionary[js.Any], ParsedUrlQuery]] = js.undefined
     
-    var pageConfig: js.UndefOr[PageConfig] = js.native
+    var pageConfig: js.UndefOr[PageConfig] = js.undefined
     
-    var reactLoadableManifest: ReactLoadableManifest = js.native
+    var reactLoadableManifest: ReactLoadableManifest
   }
   object LoadComponentsReturnType {
     
@@ -83,7 +83,7 @@ object loadComponentsMod {
       
       @scala.inline
       def setGetServerSideProps(
-        value: /* context */ GetServerSidePropsContext[ParsedUrlQuery] => js.Promise[GetServerSidePropsResult[StringDictionary[_]]]
+        value: /* context */ GetServerSidePropsContext[ParsedUrlQuery] => js.Promise[GetServerSidePropsResult[StringDictionary[js.Any]]]
       ): Self = StObject.set(x, "getServerSideProps", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -97,7 +97,7 @@ object loadComponentsMod {
       
       @scala.inline
       def setGetStaticProps(
-        value: /* context */ GetStaticPropsContext[ParsedUrlQuery] => js.Promise[GetStaticPropsResult[StringDictionary[_]]]
+        value: /* context */ GetStaticPropsContext[ParsedUrlQuery] => js.Promise[GetStaticPropsResult[StringDictionary[js.Any]]]
       ): Self = StObject.set(x, "getStaticProps", js.Any.fromFunction1(value))
       
       @scala.inline
@@ -114,14 +114,13 @@ object loadComponentsMod {
     }
   }
   
-  @js.native
   trait ManifestItem extends StObject {
     
-    var file: String = js.native
+    var file: String
     
-    var id: Double | String = js.native
+    var id: Double | String
     
-    var name: String = js.native
+    var name: String
   }
   object ManifestItem {
     

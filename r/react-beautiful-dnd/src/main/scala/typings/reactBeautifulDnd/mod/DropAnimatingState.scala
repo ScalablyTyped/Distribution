@@ -3,22 +3,22 @@ package typings.reactBeautifulDnd.mod
 import typings.reactBeautifulDnd.reactBeautifulDndStrings.DROP_ANIMATING
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DropAnimatingState extends State {
+trait DropAnimatingState
+  extends StObject
+     with State {
   
-  var completed: CompletedDrag = js.native
+  var completed: CompletedDrag
   
   // We still need to render placeholders and fix the dimensions of the dragging item
-  var dimensions: DimensionMap = js.native
+  var dimensions: DimensionMap
   
-  var dropDuration: Double = js.native
+  var dropDuration: Double
   
-  var newHomeClientOffset: Position = js.native
+  var newHomeClientOffset: Position
   
-  var phase: DROP_ANIMATING = js.native
+  var phase: DROP_ANIMATING
 }
 object DropAnimatingState {
   
@@ -27,10 +27,9 @@ object DropAnimatingState {
     completed: CompletedDrag,
     dimensions: DimensionMap,
     dropDuration: Double,
-    newHomeClientOffset: Position,
-    phase: DROP_ANIMATING
+    newHomeClientOffset: Position
   ): DropAnimatingState = {
-    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], dropDuration = dropDuration.asInstanceOf[js.Any], newHomeClientOffset = newHomeClientOffset.asInstanceOf[js.Any], phase = phase.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(completed = completed.asInstanceOf[js.Any], dimensions = dimensions.asInstanceOf[js.Any], dropDuration = dropDuration.asInstanceOf[js.Any], newHomeClientOffset = newHomeClientOffset.asInstanceOf[js.Any], phase = "DROP_ANIMATING")
     __obj.asInstanceOf[DropAnimatingState]
   }
   

@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudWatchEncryption extends StObject {
   
   /**
     * The encryption mode to use for CloudWatch data.
     */
-  var CloudWatchEncryptionMode: js.UndefOr[typings.awsSdk.glueMod.CloudWatchEncryptionMode] = js.native
+  var CloudWatchEncryptionMode: js.UndefOr[typings.awsSdk.glueMod.CloudWatchEncryptionMode] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
     */
-  var KmsKeyArn: js.UndefOr[typings.awsSdk.glueMod.KmsKeyArn] = js.native
+  var KmsKeyArn: js.UndefOr[typings.awsSdk.glueMod.KmsKeyArn] = js.undefined
 }
 object CloudWatchEncryption {
   

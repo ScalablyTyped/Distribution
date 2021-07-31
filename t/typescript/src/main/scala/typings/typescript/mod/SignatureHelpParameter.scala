@@ -2,19 +2,17 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignatureHelpParameter extends StObject {
   
-  var displayParts: js.Array[SymbolDisplayPart] = js.native
+  var displayParts: js.Array[SymbolDisplayPart]
   
-  var documentation: js.Array[SymbolDisplayPart] = js.native
+  var documentation: js.Array[SymbolDisplayPart]
   
-  var isOptional: Boolean = js.native
+  var isOptional: Boolean
   
-  var name: java.lang.String = js.native
+  var name: java.lang.String
 }
 object SignatureHelpParameter {
   

@@ -11,8 +11,8 @@ The lodash method `_.random` exported as a module.
 | Full name          | lodash.random |
 | Keywords           | lodash-modularized, random |
 | # releases         | 0 |
-| # dependents       | 54 |
-| # downloads        | 481734 |
+| # dependents       | 56 |
+| # downloads        | 568937 |
 | # stars            | 0 |
 
 ## Links

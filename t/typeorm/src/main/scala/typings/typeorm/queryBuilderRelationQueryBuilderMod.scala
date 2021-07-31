@@ -5,7 +5,6 @@ import typings.typeorm.queryBuilderQueryBuilderMod.QueryBuilder
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryBuilderRelationQueryBuilderMod {
@@ -20,7 +19,7 @@ object queryBuilderRelationQueryBuilderMod {
     /**
       * QueryBuilder can be initialized from given Connection and QueryRunner objects or from given other QueryBuilder.
       */
-    def this(queryBuilder: QueryBuilder[_]) = this()
+    def this(queryBuilder: QueryBuilder[js.Any]) = this()
     def this(connection: Connection, queryRunner: QueryRunner) = this()
     
     /**
@@ -31,7 +30,7 @@ object queryBuilderRelationQueryBuilderMod {
       * For many-to-one and one-to-one use #set method instead.
       */
     def add(value: js.Any): js.Promise[Unit] = js.native
-    def add(value: js.Array[_]): js.Promise[Unit] = js.native
+    def add(value: js.Array[js.Any]): js.Promise[Unit] = js.native
     
     /**
       * Adds (binds) and removes (unbinds) given values to/from entity relation.
@@ -41,9 +40,9 @@ object queryBuilderRelationQueryBuilderMod {
       * For many-to-one and one-to-one use #set method instead.
       */
     def addAndRemove(added: js.Any, removed: js.Any): js.Promise[Unit] = js.native
-    def addAndRemove(added: js.Any, removed: js.Array[_]): js.Promise[Unit] = js.native
-    def addAndRemove(added: js.Array[_], removed: js.Any): js.Promise[Unit] = js.native
-    def addAndRemove(added: js.Array[_], removed: js.Array[_]): js.Promise[Unit] = js.native
+    def addAndRemove(added: js.Any, removed: js.Array[js.Any]): js.Promise[Unit] = js.native
+    def addAndRemove(added: js.Array[js.Any], removed: js.Any): js.Promise[Unit] = js.native
+    def addAndRemove(added: js.Array[js.Any], removed: js.Array[js.Any]): js.Promise[Unit] = js.native
     
     /**
       * Loads many entities (relational) from the relation.
@@ -70,7 +69,7 @@ object queryBuilderRelationQueryBuilderMod {
       * Sets entity (target) which relations will be updated.
       */
     def of(entity: js.Any): this.type = js.native
-    def of(entity: js.Array[_]): this.type = js.native
+    def of(entity: js.Array[js.Any]): this.type = js.native
     
     /**
       * Removes (unbinds) given value from entity relation.
@@ -80,7 +79,7 @@ object queryBuilderRelationQueryBuilderMod {
       * For many-to-one and one-to-one use #set method instead.
       */
     def remove(value: js.Any): js.Promise[Unit] = js.native
-    def remove(value: js.Array[_]): js.Promise[Unit] = js.native
+    def remove(value: js.Array[js.Any]): js.Promise[Unit] = js.native
     
     /**
       * Sets entity relation's value.

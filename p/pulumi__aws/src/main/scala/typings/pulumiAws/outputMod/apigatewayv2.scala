@@ -2,43 +2,41 @@ package typings.pulumiAws.outputMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apigatewayv2 {
   
-  @js.native
   trait ApiCorsConfiguration extends StObject {
     
     /**
       * Whether credentials are included in the CORS request.
       */
-    var allowCredentials: js.UndefOr[Boolean] = js.native
+    var allowCredentials: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The set of allowed HTTP headers.
       */
-    var allowHeaders: js.UndefOr[js.Array[String]] = js.native
+    var allowHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The set of allowed HTTP methods.
       */
-    var allowMethods: js.UndefOr[js.Array[String]] = js.native
+    var allowMethods: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The set of allowed origins.
       */
-    var allowOrigins: js.UndefOr[js.Array[String]] = js.native
+    var allowOrigins: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The set of exposed HTTP headers.
       */
-    var exposeHeaders: js.UndefOr[js.Array[String]] = js.native
+    var exposeHeaders: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The number of seconds that the browser should cache preflight request results.
       */
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
   }
   object ApiCorsConfiguration {
     
@@ -101,18 +99,17 @@ object apigatewayv2 {
     }
   }
   
-  @js.native
   trait AuthorizerJwtConfiguration extends StObject {
     
     /**
       * A list of the intended recipients of the JWT. A valid JWT must provide an aud that matches at least one entry in this list.
       */
-    var audiences: js.UndefOr[js.Array[String]] = js.native
+    var audiences: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The base domain of the identity provider that issues JSON Web Tokens, such as the `endpoint` attribute of the `aws.cognito.UserPool` resource.
       */
-    var issuer: js.UndefOr[String] = js.native
+    var issuer: js.UndefOr[String] = js.undefined
   }
   object AuthorizerJwtConfiguration {
     
@@ -142,34 +139,33 @@ object apigatewayv2 {
     }
   }
   
-  @js.native
   trait DomainNameDomainNameConfiguration extends StObject {
     
     /**
       * The ARN of an AWS-managed certificate that will be used by the endpoint for the domain name. AWS Certificate Manager is the only supported source.
       * Use the `aws.acm.Certificate` resource to configure an ACM certificate.
       */
-    var certificateArn: String = js.native
+    var certificateArn: String
     
     /**
       * The endpoint type. Valid values: `REGIONAL`.
       */
-    var endpointType: String = js.native
+    var endpointType: String
     
     /**
       * The Amazon Route 53 Hosted Zone ID of the endpoint.
       */
-    var hostedZoneId: String = js.native
+    var hostedZoneId: String
     
     /**
       * The Transport Layer Security (TLS) version of the [security policy](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-custom-domain-tls-version.html) for the domain name. Valid values: `TLS_1_2`.
       */
-    var securityPolicy: String = js.native
+    var securityPolicy: String
     
     /**
       * The target domain name.
       */
-    var targetDomainName: String = js.native
+    var targetDomainName: String
   }
   object DomainNameDomainNameConfiguration {
     
@@ -205,13 +201,12 @@ object apigatewayv2 {
     }
   }
   
-  @js.native
   trait IntegrationTlsConfig extends StObject {
     
     /**
       * If you specify a server name, API Gateway uses it to verify the hostname on the integration's certificate. The server name is also included in the TLS handshake to support Server Name Indication (SNI) or virtual hosting.
       */
-    var serverNameToVerify: js.UndefOr[String] = js.native
+    var serverNameToVerify: js.UndefOr[String] = js.undefined
   }
   object IntegrationTlsConfig {
     
@@ -232,18 +227,17 @@ object apigatewayv2 {
     }
   }
   
-  @js.native
   trait StageAccessLogSettings extends StObject {
     
     /**
       * The ARN of the CloudWatch Logs log group to receive access logs. Any trailing `:*` is trimmed from the ARN.
       */
-    var destinationArn: String = js.native
+    var destinationArn: String
     
     /**
       * A single line [format](https://docs.aws.amazon.com/apigateway/latest/developerguide/set-up-logging.html#apigateway-cloudwatch-log-formats) of the access logs of data, as specified by [selected $context variables](https://docs.aws.amazon.com/apigateway/latest/developerguide/apigateway-websocket-api-logging.html).
       */
-    var format: String = js.native
+    var format: String
   }
   object StageAccessLogSettings {
     
@@ -264,35 +258,34 @@ object apigatewayv2 {
     }
   }
   
-  @js.native
   trait StageDefaultRouteSettings extends StObject {
     
     /**
       * Whether data trace logging is enabled for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
       * Defaults to `false`. Supported only for WebSocket APIs.
       */
-    var dataTraceEnabled: js.UndefOr[Boolean] = js.native
+    var dataTraceEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether detailed metrics are enabled for the default route. Defaults to `false`.
       */
-    var detailedMetricsEnabled: js.UndefOr[Boolean] = js.native
+    var detailedMetricsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The logging level for the default route. Affects the log entries pushed to Amazon CloudWatch Logs.
       * Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebSocket APIs. This provider will only perform drift detection of its value when present in a configuration.
       */
-    var loggingLevel: String = js.native
+    var loggingLevel: String
     
     /**
       * The throttling burst limit for the default route.
       */
-    var throttlingBurstLimit: js.UndefOr[Double] = js.native
+    var throttlingBurstLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * The throttling rate limit for the default route.
       */
-    var throttlingRateLimit: js.UndefOr[Double] = js.native
+    var throttlingRateLimit: js.UndefOr[Double] = js.undefined
   }
   object StageDefaultRouteSettings {
     
@@ -334,40 +327,39 @@ object apigatewayv2 {
     }
   }
   
-  @js.native
   trait StageRouteSetting extends StObject {
     
     /**
       * Whether data trace logging is enabled for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
       * Defaults to `false`. Supported only for WebSocket APIs.
       */
-    var dataTraceEnabled: js.UndefOr[Boolean] = js.native
+    var dataTraceEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether detailed metrics are enabled for the route. Defaults to `false`.
       */
-    var detailedMetricsEnabled: js.UndefOr[Boolean] = js.native
+    var detailedMetricsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The logging level for the route. Affects the log entries pushed to Amazon CloudWatch Logs.
       * Valid values: `ERROR`, `INFO`, `OFF`. Defaults to `OFF`. Supported only for WebSocket APIs. This provider will only perform drift detection of its value when present in a configuration.
       */
-    var loggingLevel: String = js.native
+    var loggingLevel: String
     
     /**
       * Route key.
       */
-    var routeKey: String = js.native
+    var routeKey: String
     
     /**
       * The throttling burst limit for the route.
       */
-    var throttlingBurstLimit: js.UndefOr[Double] = js.native
+    var throttlingBurstLimit: js.UndefOr[Double] = js.undefined
     
     /**
       * The throttling rate limit for the route.
       */
-    var throttlingRateLimit: js.UndefOr[Double] = js.native
+    var throttlingRateLimit: js.UndefOr[Double] = js.undefined
   }
   object StageRouteSetting {
     

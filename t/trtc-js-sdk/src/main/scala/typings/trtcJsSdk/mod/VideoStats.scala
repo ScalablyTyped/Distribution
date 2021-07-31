@@ -2,17 +2,15 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoStats extends StObject {
   
   /** 视频高度 */
-  var framesHeight: Double = js.native
+  var framesHeight: Double
   
   /** 视频宽度 */
-  var framesWidth: Double = js.native
+  var framesWidth: Double
 }
 object VideoStats {
   

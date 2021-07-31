@@ -4,21 +4,19 @@ import typings.cadesplugin.CADESCommon.ValuesOf
 import typings.cadesplugin.CAPICOM.CAPICOM_HASH_ALGORITHM
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CPHashedData extends StObject {
   
-  var Algorithm: ValuesOf[CAPICOM_HASH_ALGORITHM] = js.native
+  var Algorithm: ValuesOf[CAPICOM_HASH_ALGORITHM]
   
-  var DataEncoding: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE] = js.native
+  var DataEncoding: ValuesOf[CADESCOM_CONTENT_ENCODING_TYPE]
   
-  def Hash(newVal: String): Unit = js.native
+  def Hash(newVal: String): Unit
   
-  def SetHashValue(newVal: String): Unit = js.native
+  def SetHashValue(newVal: String): Unit
   
-  var Value: String = js.native
+  var Value: String
 }
 object CPHashedData {
   

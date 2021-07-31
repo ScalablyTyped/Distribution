@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -258,38 +257,7 @@ object mod {
           * @summary Create a new event
           */
         def trackEvent(category: String, action: String, label: String): Unit = js.native
-        def trackEvent(
-          category: String,
-          action: String,
-          label: String,
-          value: js.UndefOr[scala.Nothing],
-          nonInteractionFlag: js.UndefOr[scala.Nothing],
-          dimensions: StringDictionary[js.Any]
-        ): Unit = js.native
-        def trackEvent(
-          category: String,
-          action: String,
-          label: String,
-          value: js.UndefOr[scala.Nothing],
-          nonInteractionFlag: Boolean
-        ): Unit = js.native
-        def trackEvent(
-          category: String,
-          action: String,
-          label: String,
-          value: js.UndefOr[scala.Nothing],
-          nonInteractionFlag: Boolean,
-          dimensions: StringDictionary[js.Any]
-        ): Unit = js.native
         def trackEvent(category: String, action: String, label: String, value: js.Any): Unit = js.native
-        def trackEvent(
-          category: String,
-          action: String,
-          label: String,
-          value: js.Any,
-          nonInteractionFlag: js.UndefOr[scala.Nothing],
-          dimensions: StringDictionary[js.Any]
-        ): Unit = js.native
         def trackEvent(category: String, action: String, label: String, value: js.Any, nonInteractionFlag: Boolean): Unit = js.native
         def trackEvent(
           category: String,
@@ -297,6 +265,31 @@ object mod {
           label: String,
           value: js.Any,
           nonInteractionFlag: Boolean,
+          dimensions: StringDictionary[js.Any]
+        ): Unit = js.native
+        def trackEvent(
+          category: String,
+          action: String,
+          label: String,
+          value: js.Any,
+          nonInteractionFlag: Unit,
+          dimensions: StringDictionary[js.Any]
+        ): Unit = js.native
+        def trackEvent(category: String, action: String, label: String, value: Unit, nonInteractionFlag: Boolean): Unit = js.native
+        def trackEvent(
+          category: String,
+          action: String,
+          label: String,
+          value: Unit,
+          nonInteractionFlag: Boolean,
+          dimensions: StringDictionary[js.Any]
+        ): Unit = js.native
+        def trackEvent(
+          category: String,
+          action: String,
+          label: String,
+          value: Unit,
+          nonInteractionFlag: Unit,
           dimensions: StringDictionary[js.Any]
         ): Unit = js.native
         
@@ -309,9 +302,9 @@ object mod {
           * @param  {Object}  dimensions Additional dimensions and metrics
           */
         def trackPage(pageURL: String): Unit = js.native
-        def trackPage(pageURL: String, title: js.UndefOr[scala.Nothing], dimensions: StringDictionary[js.Any]): Unit = js.native
         def trackPage(pageURL: String, title: String): Unit = js.native
         def trackPage(pageURL: String, title: String, dimensions: StringDictionary[js.Any]): Unit = js.native
+        def trackPage(pageURL: String, title: Unit, dimensions: StringDictionary[js.Any]): Unit = js.native
       }
     }
   }

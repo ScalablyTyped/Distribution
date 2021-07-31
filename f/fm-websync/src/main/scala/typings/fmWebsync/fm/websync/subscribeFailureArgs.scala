@@ -3,16 +3,16 @@ package typings.fmWebsync.fm.websync
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait subscribeFailureArgs extends baseFailureArgs {
+trait subscribeFailureArgs
+  extends StObject
+     with baseFailureArgs {
   
   /**
     * Whether the call to client.subscribe was triggered by a reconnection after network failure.
     */
-  var isResubscribe: Boolean = js.native
+  var isResubscribe: Boolean
 }
 object subscribeFailureArgs {
   

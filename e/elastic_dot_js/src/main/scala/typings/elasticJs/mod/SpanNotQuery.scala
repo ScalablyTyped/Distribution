@@ -2,12 +2,13 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "SpanNotQuery")
 @js.native
-class SpanNotQuery protected () extends Query {
+class SpanNotQuery protected ()
+  extends StObject
+     with Query {
   /*
     Removes matches which overlap with another span query.
     */

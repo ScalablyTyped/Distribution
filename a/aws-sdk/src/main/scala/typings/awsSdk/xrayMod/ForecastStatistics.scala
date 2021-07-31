@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForecastStatistics extends StObject {
   
   /**
     * The upper limit of fault counts for a service.
     */
-  var FaultCountHigh: js.UndefOr[NullableLong] = js.native
+  var FaultCountHigh: js.UndefOr[NullableLong] = js.undefined
   
   /**
     * The lower limit of fault counts for a service.
     */
-  var FaultCountLow: js.UndefOr[NullableLong] = js.native
+  var FaultCountLow: js.UndefOr[NullableLong] = js.undefined
 }
 object ForecastStatistics {
   

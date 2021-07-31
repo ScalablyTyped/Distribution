@@ -5,17 +5,17 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SelectProps extends HTMLAttributes[HTMLDivElement] {
+trait SelectProps
+  extends StObject
+     with HTMLAttributes[HTMLDivElement] {
   
-  var label: js.UndefOr[ReactNode] = js.native
+  var label: js.UndefOr[ReactNode] = js.undefined
   
-  var readOnly: js.UndefOr[Boolean] = js.native
+  var readOnly: js.UndefOr[Boolean] = js.undefined
   
-  var useDefault: js.UndefOr[Boolean] = js.native
+  var useDefault: js.UndefOr[Boolean] = js.undefined
 }
 object SelectProps {
   

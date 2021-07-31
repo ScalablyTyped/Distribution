@@ -2,23 +2,21 @@ package typings.cassandraDriver.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogErroredRequests extends StObject {
   
-  var logErroredRequests: js.UndefOr[Boolean] = js.native
+  var logErroredRequests: js.UndefOr[Boolean] = js.undefined
   
-  var logNormalRequests: js.UndefOr[Boolean] = js.native
+  var logNormalRequests: js.UndefOr[Boolean] = js.undefined
   
-  var messageMaxErrorStackTraceLength: js.UndefOr[Double] = js.native
+  var messageMaxErrorStackTraceLength: js.UndefOr[Double] = js.undefined
   
-  var messageMaxParameterValueLength: js.UndefOr[Double] = js.native
+  var messageMaxParameterValueLength: js.UndefOr[Double] = js.undefined
   
-  var messageMaxQueryLength: js.UndefOr[Double] = js.native
+  var messageMaxQueryLength: js.UndefOr[Double] = js.undefined
   
-  var slowThreshold: js.UndefOr[Double] = js.native
+  var slowThreshold: js.UndefOr[Double] = js.undefined
 }
 object LogErroredRequests {
   

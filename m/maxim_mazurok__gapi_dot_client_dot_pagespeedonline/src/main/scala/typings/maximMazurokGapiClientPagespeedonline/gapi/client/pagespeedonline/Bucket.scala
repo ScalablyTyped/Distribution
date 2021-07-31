@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientPagespeedonline.gapi.client.pagespeedonlin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bucket extends StObject {
   
   /** Upper bound for a bucket's range. */
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
   /** Lower bound for a bucket's range. */
-  var min: js.UndefOr[Double] = js.native
+  var min: js.UndefOr[Double] = js.undefined
   
   /** The proportion of data in this bucket. */
-  var proportion: js.UndefOr[Double] = js.native
+  var proportion: js.UndefOr[Double] = js.undefined
 }
 object Bucket {
   

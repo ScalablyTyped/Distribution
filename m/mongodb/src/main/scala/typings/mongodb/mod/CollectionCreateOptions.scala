@@ -7,47 +7,47 @@ import typings.mongodb.mongodbStrings.strict
 import typings.mongodb.mongodbStrings.warn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CollectionCreateOptions extends CommonOptions {
+trait CollectionCreateOptions
+  extends StObject
+     with CommonOptions {
   
-  var autoIndexId: js.UndefOr[Boolean] = js.native
+  var autoIndexId: js.UndefOr[Boolean] = js.undefined
   
-  var capped: js.UndefOr[Boolean] = js.native
+  var capped: js.UndefOr[Boolean] = js.undefined
   
-  var collation: js.UndefOr[CollationDocument] = js.native
+  var collation: js.UndefOr[CollationDocument] = js.undefined
   
-  var flags: js.UndefOr[scala.Double] = js.native
+  var flags: js.UndefOr[scala.Double] = js.undefined
   
-  var indexOptionDefaults: js.UndefOr[js.Object] = js.native
+  var indexOptionDefaults: js.UndefOr[js.Object] = js.undefined
   
-  var max: js.UndefOr[scala.Double] = js.native
+  var max: js.UndefOr[scala.Double] = js.undefined
   
-  var pipeline: js.UndefOr[js.Array[_]] = js.native
+  var pipeline: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var pkFactory: js.UndefOr[js.Object] = js.native
+  var pkFactory: js.UndefOr[js.Object] = js.undefined
   
-  var raw: js.UndefOr[Boolean] = js.native
+  var raw: js.UndefOr[Boolean] = js.undefined
   
-  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+  var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
   
-  var serializeFunctions: js.UndefOr[Boolean] = js.native
+  var serializeFunctions: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[scala.Double] = js.native
+  var size: js.UndefOr[scala.Double] = js.undefined
   
-  var storageEngine: js.UndefOr[js.Object] = js.native
+  var storageEngine: js.UndefOr[js.Object] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
-  var validationAction: js.UndefOr[error | warn] = js.native
+  var validationAction: js.UndefOr[error | warn] = js.undefined
   
-  var validationLevel: js.UndefOr[off | strict | moderate] = js.native
+  var validationLevel: js.UndefOr[off | strict | moderate] = js.undefined
   
-  var validator: js.UndefOr[js.Object] = js.native
+  var validator: js.UndefOr[js.Object] = js.undefined
   
-  var viewOn: js.UndefOr[String] = js.native
+  var viewOn: js.UndefOr[String] = js.undefined
 }
 object CollectionCreateOptions {
   
@@ -97,7 +97,7 @@ object CollectionCreateOptions {
     def setMaxUndefined: Self = StObject.set(x, "max", js.undefined)
     
     @scala.inline
-    def setPipeline(value: js.Array[_]): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
+    def setPipeline(value: js.Array[js.Any]): Self = StObject.set(x, "pipeline", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPipelineUndefined: Self = StObject.set(x, "pipeline", js.undefined)

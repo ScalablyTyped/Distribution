@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.azureMobileServicesClient.Microsoft.WindowsAzure.WindowsAzureStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -19,7 +18,8 @@ object global {
     @JSGlobal("WindowsAzure.MobileServiceClient")
     @js.native
     class MobileServiceClient protected ()
-      extends typings.azureMobileServicesClient.Microsoft.WindowsAzure.MobileServiceClient {
+      extends StObject
+         with typings.azureMobileServicesClient.Microsoft.WindowsAzure.MobileServiceClient {
       def this(applicationUrl: String) = this()
       def this(applicationUrl: String, applicationKey: String) = this()
     }

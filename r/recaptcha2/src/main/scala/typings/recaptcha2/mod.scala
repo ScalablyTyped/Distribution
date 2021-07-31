@@ -4,25 +4,25 @@ import typings.recaptcha2.recaptcha2Booleans.`true`
 import typings.recaptcha2.recaptcha2Strings.POST
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("recaptcha2", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Recaptcha2 {
+  class ^ protected ()
+    extends StObject
+       with Recaptcha2 {
     def this(options: Options) = this()
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var secretKey: String = js.native
+    var secretKey: String
     
-    var siteKey: String = js.native
+    var siteKey: String
     
-    var ssl: js.UndefOr[Boolean] = js.native
+    var ssl: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -64,27 +64,26 @@ object mod {
     def validateRequest(req: js.Object, ip: String): js.Promise[Unit] = js.native
   }
   
-  @js.native
   trait RequestOptions[T] extends StObject {
     
-    var form: T = js.native
+    var form: T
     
-    var json: `true` = js.native
+    var json: `true`
     
-    var method: POST = js.native
+    var method: POST
     
-    var uri: String = js.native
+    var uri: String
   }
   object RequestOptions {
     
     @scala.inline
-    def apply[T](form: T, json: `true`, method: POST, uri: String): RequestOptions[T] = {
-      val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], json = json.asInstanceOf[js.Any], method = method.asInstanceOf[js.Any], uri = uri.asInstanceOf[js.Any])
+    def apply[T](form: T, uri: String): RequestOptions[T] = {
+      val __obj = js.Dynamic.literal(form = form.asInstanceOf[js.Any], json = true, method = "POST", uri = uri.asInstanceOf[js.Any])
       __obj.asInstanceOf[RequestOptions[T]]
     }
     
     @scala.inline
-    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions[_], T] (val x: Self with RequestOptions[T]) extends AnyVal {
+    implicit class RequestOptionsMutableBuilder[Self <: RequestOptions[?], T] (val x: Self & RequestOptions[T]) extends AnyVal {
       
       @scala.inline
       def setForm(value: T): Self = StObject.set(x, "form", value.asInstanceOf[js.Any])

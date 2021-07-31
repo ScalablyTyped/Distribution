@@ -2,15 +2,13 @@ package typings.kuromoji.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Formatter[T] extends StObject {
   
-  def formatEntry(word_id: Double, position: Double, `type`: String, features: js.Array[String]): T = js.native
+  def formatEntry(word_id: Double, position: Double, `type`: String, features: js.Array[String]): T
   
-  def formatUnknownEntry(word_id: Double, position: Double, `type`: String, features: js.Array[String]): T = js.native
+  def formatUnknownEntry(word_id: Double, position: Double, `type`: String, features: js.Array[String]): T
 }
 object Formatter {
   
@@ -24,7 +22,7 @@ object Formatter {
   }
   
   @scala.inline
-  implicit class FormatterMutableBuilder[Self <: Formatter[_], T] (val x: Self with Formatter[T]) extends AnyVal {
+  implicit class FormatterMutableBuilder[Self <: Formatter[?], T] (val x: Self & Formatter[T]) extends AnyVal {
     
     @scala.inline
     def setFormatEntry(value: (Double, Double, String, js.Array[String]) => T): Self = StObject.set(x, "formatEntry", js.Any.fromFunction4(value))

@@ -2,65 +2,63 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParticipantTimeline extends StObject {
   
-  var ancientGolemAssistsPerMinCounts: ParticipantTimelineData = js.native
+  var ancientGolemAssistsPerMinCounts: ParticipantTimelineData
   
-  var ancientGolemKillsPerMinCounts: ParticipantTimelineData = js.native
+  var ancientGolemKillsPerMinCounts: ParticipantTimelineData
   
-  var assistedLaneDeathsPerMinDeltas: ParticipantTimelineData = js.native
+  var assistedLaneDeathsPerMinDeltas: ParticipantTimelineData
   
-  var assistedLaneKillsPerMinDeltas: ParticipantTimelineData = js.native
+  var assistedLaneKillsPerMinDeltas: ParticipantTimelineData
   
-  var baronAssistsPerMinCounts: ParticipantTimelineData = js.native
+  var baronAssistsPerMinCounts: ParticipantTimelineData
   
-  var baronKillsPerMinCounts: ParticipantTimelineData = js.native
+  var baronKillsPerMinCounts: ParticipantTimelineData
   
-  var creepsPerMinDeltas: ParticipantTimelineData = js.native
+  var creepsPerMinDeltas: ParticipantTimelineData
   
-  var csDiffPerMinDeltas: ParticipantTimelineData = js.native
+  var csDiffPerMinDeltas: ParticipantTimelineData
   
-  var damageTakenDiffPerMinDeltas: ParticipantTimelineData = js.native
+  var damageTakenDiffPerMinDeltas: ParticipantTimelineData
   
-  var damageTakenPerMinDeltas: ParticipantTimelineData = js.native
+  var damageTakenPerMinDeltas: ParticipantTimelineData
   
-  var dragonAssistsPerMinCounts: ParticipantTimelineData = js.native
+  var dragonAssistsPerMinCounts: ParticipantTimelineData
   
-  var dragonKillsPerMinCounts: ParticipantTimelineData = js.native
+  var dragonKillsPerMinCounts: ParticipantTimelineData
   
-  var elderLizardAssistsPerMinCounts: ParticipantTimelineData = js.native
+  var elderLizardAssistsPerMinCounts: ParticipantTimelineData
   
-  var elderLizardKillsPerMinCounts: ParticipantTimelineData = js.native
+  var elderLizardKillsPerMinCounts: ParticipantTimelineData
   
-  var goldPerMinDeltas: ParticipantTimelineData = js.native
+  var goldPerMinDeltas: ParticipantTimelineData
   
-  var inhibitorAssistsPerMinCounts: ParticipantTimelineData = js.native
+  var inhibitorAssistsPerMinCounts: ParticipantTimelineData
   
-  var inhibitorKillsPerMinCounts: ParticipantTimelineData = js.native
+  var inhibitorKillsPerMinCounts: ParticipantTimelineData
   
-  var lane: String = js.native
+  var lane: String
   
-  var role: String = js.native
+  var role: String
   
-  var towerAssistsPerMinCounts: ParticipantTimelineData = js.native
+  var towerAssistsPerMinCounts: ParticipantTimelineData
   
-  var towerKillsPerMinCounts: ParticipantTimelineData = js.native
+  var towerKillsPerMinCounts: ParticipantTimelineData
   
-  var towerKillsPerMinDeltas: ParticipantTimelineData = js.native
+  var towerKillsPerMinDeltas: ParticipantTimelineData
   
-  var vilemawAssistsPerMinCounts: ParticipantTimelineData = js.native
+  var vilemawAssistsPerMinCounts: ParticipantTimelineData
   
-  var vilemawKillsPerMinCounts: ParticipantTimelineData = js.native
+  var vilemawKillsPerMinCounts: ParticipantTimelineData
   
-  var wardsPerMinDeltas: ParticipantTimelineData = js.native
+  var wardsPerMinDeltas: ParticipantTimelineData
   
-  var xpDiffPerMinDeltas: ParticipantTimelineData = js.native
+  var xpDiffPerMinDeltas: ParticipantTimelineData
   
-  var xpPerMinDeltas: ParticipantTimelineData = js.native
+  var xpPerMinDeltas: ParticipantTimelineData
 }
 object ParticipantTimeline {
   

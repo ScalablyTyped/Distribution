@@ -7,7 +7,6 @@ import typings.std.HTMLSpanElement
 import typings.wordpressComponents.colorIndicatorMod.ColorIndicator.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorIndicatorMod {
@@ -26,13 +25,14 @@ object colorIndicatorMod {
   
   object ColorIndicator {
     
-    @js.native
-    trait Props extends HTMLProps[HTMLSpanElement] {
+    trait Props
+      extends StObject
+         with HTMLProps[HTMLSpanElement] {
       
       /**
         * A string color value.
         */
-      var colorValue: String = js.native
+      var colorValue: String
     }
     object Props {
       

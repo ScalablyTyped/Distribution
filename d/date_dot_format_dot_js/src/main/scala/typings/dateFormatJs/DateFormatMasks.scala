@@ -2,36 +2,34 @@ package typings.dateFormatJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Some common format strings
-@js.native
 trait DateFormatMasks extends StObject {
   
-  var default: String = js.native
+  var default: String
   
-  var fullDate: String = js.native
+  var fullDate: String
   
-  var isoDate: String = js.native
+  var isoDate: String
   
-  var isoDateTime: String = js.native
+  var isoDateTime: String
   
-  var isoTime: String = js.native
+  var isoTime: String
   
-  var isoUtcDateTime: String = js.native
+  var isoUtcDateTime: String
   
-  var longDate: String = js.native
+  var longDate: String
   
-  var longTime: String = js.native
+  var longTime: String
   
-  var mediumDate: String = js.native
+  var mediumDate: String
   
-  var mediumTime: String = js.native
+  var mediumTime: String
   
-  var shortDate: String = js.native
+  var shortDate: String
   
-  var shortTime: String = js.native
+  var shortTime: String
 }
 object DateFormatMasks {
   

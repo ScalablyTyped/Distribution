@@ -3,7 +3,6 @@ package typings.instagramPrivateApi.mod
 import typings.instagramPrivateApi.mediaEntityOembedResponseMod.MediaEntityOembedResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("instagram-private-api", "MediaEntity")
@@ -15,7 +14,10 @@ class MediaEntity protected ()
 /* static members */
 object MediaEntity {
   
-  @JSImport("instagram-private-api", "MediaEntity.oembed")
+  @JSImport("instagram-private-api", "MediaEntity")
   @js.native
-  def oembed(url: String): js.Promise[MediaEntityOembedResponse] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def oembed(url: String): js.Promise[MediaEntityOembedResponse] = ^.asInstanceOf[js.Dynamic].applyDynamic("oembed")(url.asInstanceOf[js.Any]).asInstanceOf[js.Promise[MediaEntityOembedResponse]]
 }

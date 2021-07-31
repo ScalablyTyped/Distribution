@@ -2,7 +2,6 @@ package typings.workboxCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cacheNamesMod {
@@ -11,18 +10,17 @@ object cacheNamesMod {
   @js.native
   val cacheNames: CacheNames_ = js.native
   
-  @js.native
   trait CacheNames_ extends StObject {
     
-    val googleAnalytics: String = js.native
+    val googleAnalytics: String
     
-    val precache: String = js.native
+    val precache: String
     
-    val prefix: String = js.native
+    val prefix: String
     
-    val runtime: String = js.native
+    val runtime: String
     
-    val suffix: String = js.native
+    val suffix: String
   }
   object CacheNames_ {
     

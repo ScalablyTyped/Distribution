@@ -2,13 +2,11 @@ package typings.reactAutosuggest.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlurEvent[TSuggestion] extends StObject {
   
-  var highlightedSuggestion: TSuggestion = js.native
+  var highlightedSuggestion: TSuggestion
 }
 object BlurEvent {
   
@@ -19,7 +17,7 @@ object BlurEvent {
   }
   
   @scala.inline
-  implicit class BlurEventMutableBuilder[Self <: BlurEvent[_], TSuggestion] (val x: Self with BlurEvent[TSuggestion]) extends AnyVal {
+  implicit class BlurEventMutableBuilder[Self <: BlurEvent[?], TSuggestion] (val x: Self & BlurEvent[TSuggestion]) extends AnyVal {
     
     @scala.inline
     def setHighlightedSuggestion(value: TSuggestion): Self = StObject.set(x, "highlightedSuggestion", value.asInstanceOf[js.Any])

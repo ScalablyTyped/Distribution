@@ -2,39 +2,39 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents the client-side equivalent of the AxisRange class.
   */
-@js.native
-trait ASPxClientAxisRange extends ASPxClientWebChartElement {
+trait ASPxClientAxisRange
+  extends StObject
+     with ASPxClientWebChartElement {
   
   /**
     * Gets the axis that owns the current axis range object.
     */
-  var axis: ASPxClientAxisBase = js.native
+  var axis: ASPxClientAxisBase
   
   /**
     * Gets the maximum value to display on an axis.
     */
-  var maxValue: js.Any = js.native
+  var maxValue: js.Any
   
   /**
     * Gets the internal float representation of the range maximum value.
     */
-  var maxValueInternal: Double = js.native
+  var maxValueInternal: Double
   
   /**
     * Gets the minimum value to display on an axis.
     */
-  var minValue: js.Any = js.native
+  var minValue: js.Any
   
   /**
     * Gets the internal float representation of the range minimum value.
     */
-  var minValueInternal: Double = js.native
+  var minValueInternal: Double
 }
 object ASPxClientAxisRange {
   

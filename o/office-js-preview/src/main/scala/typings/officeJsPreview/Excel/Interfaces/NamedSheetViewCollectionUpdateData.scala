@@ -2,14 +2,12 @@ package typings.officeJsPreview.Excel.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the NamedSheetViewCollection object, for use in `namedSheetViewCollection.set({ ... })`. */
-@js.native
 trait NamedSheetViewCollectionUpdateData extends StObject {
   
-  var items: js.UndefOr[js.Array[NamedSheetViewData]] = js.native
+  var items: js.UndefOr[js.Array[NamedSheetViewData]] = js.undefined
 }
 object NamedSheetViewCollectionUpdateData {
   

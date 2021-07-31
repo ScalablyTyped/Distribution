@@ -2,20 +2,20 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterPushpin extends Pushpin {
+trait ClusterPushpin
+  extends StObject
+     with Pushpin {
   
   /** An array of all the pushpins that are in the cluster. */
-  var containedPushpins: js.Array[Pushpin] = js.native
+  var containedPushpins: js.Array[Pushpin]
   
   /**
     * The grid cell key that can be used retrieve the clustered pushpin(s) from the clustering layer. This is useful when creating a clickable list that
     * link items in the list to clusters or pushpins on the map. Your list just needs to store the gridKey value.
     */
-  var gridKey: Double = js.native
+  var gridKey: Double
 }
 object ClusterPushpin {
   

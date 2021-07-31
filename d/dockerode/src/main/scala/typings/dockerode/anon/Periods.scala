@@ -2,17 +2,15 @@ package typings.dockerode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Periods extends StObject {
   
-  var periods: Double = js.native
+  var periods: Double
   
-  var throttled_periods: Double = js.native
+  var throttled_periods: Double
   
-  var throttled_time: Double = js.native
+  var throttled_time: Double
 }
 object Periods {
   

@@ -5,15 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to receive docking events. */
-@js.native
-trait XDockableWindowListener extends XEventListener {
+trait XDockableWindowListener
+  extends StObject
+     with XEventListener {
   
   /** is invoked when the window was actively closed */
-  def closed(e: EventObject): Unit = js.native
+  def closed(e: EventObject): Unit
   
   /**
     * is invoked during the docking procedure when the window has been moved.
@@ -23,26 +23,26 @@ trait XDockableWindowListener extends XEventListener {
     *
     * Note: the tracking rectangle indicates to the user where the window would be placed if they release the mouse.
     */
-  def docking(e: DockingEvent): DockingData = js.native
+  def docking(e: DockingEvent): DockingData
   
   /** is invoked when the docking procedure ends. aWindowRect contains the new position and size of the window */
-  def endDocking(e: EndDockingEvent): Unit = js.native
+  def endDocking(e: EndDockingEvent): Unit
   
   /** is invoked when the window currently is in pop-up mode and wants to be undocked or closed */
-  def endPopupMode(e: EndPopupModeEvent): Unit = js.native
+  def endPopupMode(e: EndPopupModeEvent): Unit
   
   /**
     * is invoked when the floating mode is about to be changed between floating and docked or vice versa
     *
     * if returned FALSE the floating mode will not be changed
     */
-  def prepareToggleFloatingMode(e: EventObject): Boolean = js.native
+  def prepareToggleFloatingMode(e: EventObject): Boolean
   
   /** is invoked when the docking procedure starts. */
-  def startDocking(e: DockingEvent): Unit = js.native
+  def startDocking(e: DockingEvent): Unit
   
   /** is invoked when the floating mode is changed between floating and docked or vice versa */
-  def toggleFloatingMode(e: EventObject): Unit = js.native
+  def toggleFloatingMode(e: EventObject): Unit
 }
 object XDockableWindowListener {
   

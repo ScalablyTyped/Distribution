@@ -10,7 +10,6 @@ import typings.wordpressData.mod.StoreConfig
 import typings.wordpressData.mod.Subscriber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -22,18 +21,17 @@ object anon {
   }
   
   /* Inlined std.Partial<@wordpress/data.@wordpress/data.DataRegistry> */
-  @js.native
   trait PartialDataRegistry extends StObject {
     
-    var dispatch: js.UndefOr[js.Function1[/* key */ String, DispatcherMap]] = js.native
+    var dispatch: js.UndefOr[js.Function1[/* key */ String, DispatcherMap]] = js.undefined
     
-    var registerGenericStore: js.UndefOr[js.Function2[/* key */ String, /* config */ GenericStoreConfig, Unit]] = js.native
+    var registerGenericStore: js.UndefOr[js.Function2[/* key */ String, /* config */ GenericStoreConfig, Unit]] = js.undefined
     
-    var registerStore: js.UndefOr[FnCall] = js.native
+    var registerStore: js.UndefOr[FnCall] = js.undefined
     
-    var select: js.UndefOr[js.Function1[/* key */ String, SelectorMap]] = js.native
+    var select: js.UndefOr[js.Function1[/* key */ String, SelectorMap]] = js.undefined
     
-    var subscribe: js.UndefOr[Subscriber] = js.native
+    var subscribe: js.UndefOr[Subscriber] = js.undefined
   }
   object PartialDataRegistry {
     
@@ -79,27 +77,26 @@ object anon {
   }
   
   /* Inlined std.Pick<std.Storage, 'getItem' | 'setItem'> & std.Partial<std.Storage> */
-  @js.native
   trait PickStoragegetItemsetItem extends StObject {
     
-    var clear: js.UndefOr[js.Function0[Unit]] = js.native
+    var clear: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getItem: (js.Function1[/* key */ String, String | Null]) with (js.UndefOr[js.Function1[/* key */ String, String | Null]]) = js.native
+    var getItem: (js.Function1[/* key */ String, String | Null]) & (js.UndefOr[js.Function1[/* key */ String, String | Null]])
     
-    var key: js.UndefOr[js.Function1[/* index */ Double, String | Null]] = js.native
+    var key: js.UndefOr[js.Function1[/* index */ Double, String | Null]] = js.undefined
     
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
-    var removeItem: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.native
+    var removeItem: js.UndefOr[js.Function1[/* key */ String, Unit]] = js.undefined
     
-    var setItem: (js.Function2[/* key */ String, /* value */ String, Unit]) with (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]]) = js.native
+    var setItem: (js.Function2[/* key */ String, /* value */ String, Unit]) & (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
   }
   object PickStoragegetItemsetItem {
     
     @scala.inline
     def apply(
-      getItem: (js.Function1[/* key */ String, String | Null]) with (js.UndefOr[js.Function1[/* key */ String, String | Null]]),
-      setItem: (js.Function2[/* key */ String, /* value */ String, Unit]) with (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
+      getItem: (js.Function1[/* key */ String, String | Null]) & (js.UndefOr[js.Function1[/* key */ String, String | Null]]),
+      setItem: (js.Function2[/* key */ String, /* value */ String, Unit]) & (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
     ): PickStoragegetItemsetItem = {
       val __obj = js.Dynamic.literal(getItem = getItem.asInstanceOf[js.Any], setItem = setItem.asInstanceOf[js.Any])
       __obj.asInstanceOf[PickStoragegetItemsetItem]
@@ -116,7 +113,7 @@ object anon {
       
       @scala.inline
       def setGetItem(
-        value: (js.Function1[/* key */ String, String | Null]) with (js.UndefOr[js.Function1[/* key */ String, String | Null]])
+        value: (js.Function1[/* key */ String, String | Null]) & (js.UndefOr[js.Function1[/* key */ String, String | Null]])
       ): Self = StObject.set(x, "getItem", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -139,15 +136,14 @@ object anon {
       
       @scala.inline
       def setSetItem(
-        value: (js.Function2[/* key */ String, /* value */ String, Unit]) with (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
+        value: (js.Function2[/* key */ String, /* value */ String, Unit]) & (js.UndefOr[js.Function2[/* key */ String, /* value */ String, Unit]])
       ): Self = StObject.set(x, "setItem", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Registry extends StObject {
     
-    var registry: DataRegistry = js.native
+    var registry: DataRegistry
   }
   object Registry {
     
@@ -165,10 +161,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Select extends StObject {
     
-    var select: js.Function1[/* key */ String, SelectorMap] = js.native
+    var select: js.Function1[/* key */ String, SelectorMap]
   }
   object Select {
     
@@ -186,12 +181,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Storage extends StObject {
     
-    var storage: js.UndefOr[PickStoragegetItemsetItem] = js.native
+    var storage: js.UndefOr[PickStoragegetItemsetItem] = js.undefined
     
-    var storageKey: js.UndefOr[String] = js.native
+    var storageKey: js.UndefOr[String] = js.undefined
   }
   object Storage {
     

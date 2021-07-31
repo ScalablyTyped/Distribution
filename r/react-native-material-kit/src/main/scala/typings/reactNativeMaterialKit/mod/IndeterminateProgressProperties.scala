@@ -3,15 +3,15 @@ package typings.reactNativeMaterialKit.mod
 import typings.reactNative.mod.ViewProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IndeterminateProgressProperties extends ViewProps {
+trait IndeterminateProgressProperties
+  extends StObject
+     with ViewProps {
   
-  var progressAniDuration: js.UndefOr[Double] = js.native
+  var progressAniDuration: js.UndefOr[Double] = js.undefined
   
-  var progressColor: js.UndefOr[String] = js.native
+  var progressColor: js.UndefOr[String] = js.undefined
 }
 object IndeterminateProgressProperties {
   

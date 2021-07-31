@@ -3,13 +3,13 @@ package typings.reactNavigationNative.anon
 import typings.reactNavigationNative.useScrollToTopMod.ScrollableView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ScrollToTop extends ScrollableView {
+trait ScrollToTop
+  extends StObject
+     with ScrollableView {
   
-  def scrollToTop(): Unit = js.native
+  def scrollToTop(): Unit
 }
 object ScrollToTop {
   

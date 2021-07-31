@@ -1,17 +1,19 @@
 package typings.samchon
 
 import typings.samchon.clientMod.Client
+import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object serviceServiceMod {
   
   @JSImport("samchon/templates/service/Service", "Service")
   @js.native
-  abstract class Service protected () extends IProtocol {
+  abstract class Service protected ()
+    extends StObject
+       with IProtocol {
     /**
       * Construct from parent {@link Client} and requested path.
       *
@@ -53,5 +55,25 @@ object serviceServiceMod {
       * @hidden
       */
     var path_ : js.Any = js.native
+    
+    /**
+      * Sending message.
+      *
+      * Sends message to related system or shifts the responsibility to chain.
+      *
+      * @param invoke Invoke message to send
+      */
+    /* CompleteClass */
+    override def replyData(invoke: Invoke): Unit = js.native
+    
+    /**
+      * Handling replied message.
+      *
+      * Handles replied message or shifts the responsibility to chain.
+      *
+      * @param invoke An {@link Invoke} message has received.
+      */
+    /* CompleteClass */
+    override def sendData(invoke: Invoke): Unit = js.native
   }
 }

@@ -3,28 +3,27 @@ package typings.vueCompilerCore.mod
 import typings.vueCompilerCore.vueCompilerCoreNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompoundExpressionNode
-  extends ExpressionNode
+  extends StObject
      with Node2
+     with ExpressionNode
      with TemplateChildNode
      with TemplateTextChildNode {
   
   var children: js.Array[
     SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
-  ] = js.native
+  ]
   
   /**
     * an expression parsed as the params of a function will track
     * the identifiers declared inside the function body.
     */
-  var identifiers: js.UndefOr[js.Array[String]] = js.native
+  var identifiers: js.UndefOr[js.Array[String]] = js.undefined
   
   @JSName("type")
-  var type_CompoundExpressionNode: `8` = js.native
+  var type_CompoundExpressionNode: `8`
 }
 object CompoundExpressionNode {
   
@@ -33,11 +32,10 @@ object CompoundExpressionNode {
     children: js.Array[
       SimpleExpressionNode | CompoundExpressionNode | InterpolationNode | TextNode | String | js.Symbol
     ],
-    loc: SourceLocation,
-    `type`: `8`
+    loc: SourceLocation
   ): CompoundExpressionNode = {
     val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(8)
     __obj.asInstanceOf[CompoundExpressionNode]
   }
   

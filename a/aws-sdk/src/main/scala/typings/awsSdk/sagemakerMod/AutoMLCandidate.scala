@@ -2,58 +2,56 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoMLCandidate extends StObject {
   
   /**
     * The candidate name.
     */
-  var CandidateName: typings.awsSdk.sagemakerMod.CandidateName = js.native
+  var CandidateName: typings.awsSdk.sagemakerMod.CandidateName
   
   /**
     * The candidate's status.
     */
-  var CandidateStatus: typings.awsSdk.sagemakerMod.CandidateStatus = js.native
+  var CandidateStatus: typings.awsSdk.sagemakerMod.CandidateStatus
   
   /**
     * The candidate's steps.
     */
-  var CandidateSteps: typings.awsSdk.sagemakerMod.CandidateSteps = js.native
+  var CandidateSteps: typings.awsSdk.sagemakerMod.CandidateSteps
   
   /**
     * The creation time.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * The end time.
     */
-  var EndTime: js.UndefOr[Timestamp] = js.native
+  var EndTime: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * The failure reason.
     */
-  var FailureReason: js.UndefOr[AutoMLFailureReason] = js.native
+  var FailureReason: js.UndefOr[AutoMLFailureReason] = js.undefined
   
-  var FinalAutoMLJobObjectiveMetric: js.UndefOr[typings.awsSdk.sagemakerMod.FinalAutoMLJobObjectiveMetric] = js.native
+  var FinalAutoMLJobObjectiveMetric: js.UndefOr[typings.awsSdk.sagemakerMod.FinalAutoMLJobObjectiveMetric] = js.undefined
   
   /**
     * The inference containers.
     */
-  var InferenceContainers: js.UndefOr[AutoMLContainerDefinitions] = js.native
+  var InferenceContainers: js.UndefOr[AutoMLContainerDefinitions] = js.undefined
   
   /**
     * The last modified time.
     */
-  var LastModifiedTime: Timestamp = js.native
+  var LastModifiedTime: Timestamp
   
   /**
     * The objective status.
     */
-  var ObjectiveStatus: typings.awsSdk.sagemakerMod.ObjectiveStatus = js.native
+  var ObjectiveStatus: typings.awsSdk.sagemakerMod.ObjectiveStatus
 }
 object AutoMLCandidate {
   

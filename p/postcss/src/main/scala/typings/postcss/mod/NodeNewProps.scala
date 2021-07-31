@@ -2,15 +2,13 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeNewProps extends StObject {
   
-  var raws: js.UndefOr[NodeRaws] = js.native
+  var raws: js.UndefOr[NodeRaws] = js.undefined
   
-  var source: js.UndefOr[NodeSource] = js.native
+  var source: js.UndefOr[NodeSource] = js.undefined
 }
 object NodeNewProps {
   

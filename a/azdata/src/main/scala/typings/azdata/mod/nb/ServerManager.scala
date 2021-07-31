@@ -4,7 +4,6 @@ import typings.vscode.Thenable
 import typings.vscode.mod.Disposable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -19,14 +18,10 @@ trait ServerManager extends StObject {
     * Event sent when the server has started. This can be used to query
     * the manager for server settings
     */
-  def onServerStarted(listener: js.Function1[/* e */ Unit, _]): Disposable = js.native
-  def onServerStarted(
-    listener: js.Function1[/* e */ Unit, _],
-    thisArgs: js.UndefOr[scala.Nothing],
-    disposables: js.Array[Disposable]
-  ): Disposable = js.native
-  def onServerStarted(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any): Disposable = js.native
-  def onServerStarted(listener: js.Function1[/* e */ Unit, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any]): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+  def onServerStarted(listener: js.Function1[/* e */ Unit, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable = js.native
   
   /**
     * Starts the server. Some server types may not support or require this.

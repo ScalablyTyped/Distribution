@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DebugInstanceRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait DebugInstanceRequest extends StObject {
     * {"userName":"[USERNAME]","expireOn":"[EXPIRE_TIME]"}For more information, see Adding and Removing SSH Keys
     * (https://cloud.google.com/compute/docs/instances/adding-removing-ssh-keys).
     */
-  var sshKey: js.UndefOr[String] = js.native
+  var sshKey: js.UndefOr[String] = js.undefined
 }
 object DebugInstanceRequest {
   

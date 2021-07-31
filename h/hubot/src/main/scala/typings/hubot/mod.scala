@@ -18,7 +18,6 @@ import typings.std.RegExp
 import typings.std.RegExpMatchArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -104,9 +103,9 @@ object mod {
   class DataStore protected () extends StObject {
     def this(robot: Robot[Adapter]) = this()
     
-    def get(key: String): js.Promise[_] = js.native
+    def get(key: String): js.Promise[js.Any] = js.native
     
-    def getObject(key: String, objectKey: String): js.Promise[_] = js.native
+    def getObject(key: String, objectKey: String): js.Promise[js.Any] = js.native
     
     def set(key: String, value: js.Any): js.Promise[Unit] = js.native
     
@@ -117,7 +116,16 @@ object mod {
   
   @JSImport("hubot", "DataStoreUnavailable")
   @js.native
-  class DataStoreUnavailable () extends Error
+  class DataStoreUnavailable ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
   @JSImport("hubot", "EnterMessage")
   @js.native
@@ -298,11 +306,11 @@ object mod {
       * third argument.
       */
     def router(
-      req: Request[ParamsDictionary, _, _, ParsedQs],
-      res: typings.expressServeStaticCore.mod.Response[_, Double]
+      req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs],
+      res: typings.expressServeStaticCore.mod.Response[js.Any, Double]
     ): js.Any = js.native
-    def router(req: Request[ParamsDictionary, _, _, ParsedQs], res: ServerResponse): js.Any = js.native
-    def router(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[_, Double]): js.Any = js.native
+    def router(req: Request[ParamsDictionary, js.Any, js.Any, ParsedQs], res: ServerResponse): js.Any = js.native
+    def router(req: IncomingMessage, res: typings.expressServeStaticCore.mod.Response[js.Any, Double]): js.Any = js.native
     def router(req: IncomingMessage, res: ServerResponse): js.Any = js.native
     @JSName("router")
     val router_Original: Express = js.native
@@ -341,7 +349,8 @@ object mod {
   @JSImport("hubot", "User")
   @js.native
   class User protected ()
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     def this(id: String) = this()
     def this(id: String, options: js.Object) = this()
     
@@ -356,14 +365,13 @@ object mod {
   
   type DoneFunction = js.Function0[Unit]
   
-  @js.native
   trait Envelope extends StObject {
     
-    var message: Message = js.native
+    var message: Message
     
-    var room: String = js.native
+    var room: String
     
-    var user: User = js.native
+    var user: User
   }
   object Envelope {
     
@@ -427,11 +435,11 @@ object mod {
     def enable(): Unit = js.native
   }
   
-  @js.native
   trait MiddlewareContext[T /* <: Adapter */]
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var response: js.UndefOr[Response[T, Message]] = js.native
+    var response: js.UndefOr[Response[T, Message]] = js.undefined
   }
   object MiddlewareContext {
     
@@ -442,7 +450,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class MiddlewareContextMutableBuilder[Self <: MiddlewareContext[_], T /* <: Adapter */] (val x: Self with MiddlewareContext[T]) extends AnyVal {
+    implicit class MiddlewareContextMutableBuilder[Self <: MiddlewareContext[?], T /* <: Adapter */] (val x: Self & MiddlewareContext[T]) extends AnyVal {
       
       @scala.inline
       def setResponse(value: Response[T, Message]): Self = StObject.set(x, "response", value.asInstanceOf[js.Any])

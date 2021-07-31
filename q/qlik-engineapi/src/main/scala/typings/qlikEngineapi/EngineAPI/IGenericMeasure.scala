@@ -3,15 +3,15 @@ package typings.qlikEngineapi.EngineAPI
 import typings.qlikEngineapi.enigmaJS.IGeneratedAPI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This class describes all the methods that apply at measure level.
   * The handle member in the JSON request for all methods listed in this section is the handle of the measure.
   */
-@js.native
-trait IGenericMeasure extends IGeneratedAPI {
+trait IGenericMeasure
+  extends StObject
+     with IGeneratedAPI {
   
   /**
     * Applies a patch to the properties of an object. Allows an update to some of the properties.
@@ -20,32 +20,32 @@ trait IGenericMeasure extends IGeneratedAPI {
     * @param qPatches - Array of patches.
     * @returns -
     */
-  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[Unit] = js.native
+  def applyPatches(qPatches: js.Array[INxPatch]): js.Promise[Unit]
   
   /**
     * Returns the type and identifier of the object.
     * @returns - A Promise of NxInfo
     */
-  def getInfo(): js.Promise[INxInfo] = js.native
+  def getInfo(): js.Promise[INxInfo]
   
   /**
     * Evaluates a measure and displays its properties, including the dynamic properties.
     * @returns - A Promise of GenericMeasureLayout
     */
-  def getLayout(): js.Promise[IGenericMeasureLayout] = js.native
+  def getLayout(): js.Promise[IGenericMeasureLayout]
   
   /**
     * Lists the linked objects to a generic object, a dimension or a measure.
     * @returns - Array of NxLinkedObjectInfo
     */
-  def getLinkedObjects(): js.Promise[INxLinkedObjectInfo] = js.native
+  def getLinkedObjects(): js.Promise[INxLinkedObjectInfo]
   
   /**
     * Returns the definition of a measure
     * @returns - Information about the measure.
     * >> This parameter is mandatory.
     */
-  def getMeasure(): js.Promise[IGenericMeasureProperties] = js.native
+  def getMeasure(): js.Promise[IGenericMeasureProperties]
   
   /**
     * Shows the properties of an object.
@@ -55,12 +55,12 @@ trait IGenericMeasure extends IGeneratedAPI {
     * @returns - A Promise GenericMeasureProperties
     * >> This parameter is mandatory.
     */
-  def getProperties(): js.Promise[IGenericMeasureProperties] = js.native
+  def getProperties(): js.Promise[IGenericMeasureProperties]
   
   /**
     * Publishes a measure.
     */
-  def publish(): js.Promise[Unit] = js.native
+  def publish(): js.Promise[Unit]
   
   /**
     * Sets some properties for a measure.
@@ -68,12 +68,12 @@ trait IGenericMeasure extends IGeneratedAPI {
     * This parameter is mandatory.
     * @returns - A Promise of GenericMeasureProperties
     */
-  def setProperties(qProp: IGenericMeasureProperties): js.Promise[Unit] = js.native
+  def setProperties(qProp: IGenericMeasureProperties): js.Promise[Unit]
   
   /**
     * Unpublishes a measure.
     */
-  def unPublish(): js.Promise[Unit] = js.native
+  def unPublish(): js.Promise[Unit]
 }
 object IGenericMeasure {
   

@@ -2,20 +2,18 @@ package typings.webglExt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // WebGL 1 Extensions
-@js.native
 trait EXTColorBufferHalfFloat extends StObject {
   
-  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: Double = js.native
+  val FRAMEBUFFER_ATTACHMENT_COMPONENT_TYPE_EXT: Double
   
-  val RGB16F_EXT: Double = js.native
+  val RGB16F_EXT: Double
   
-  val RGBA16F_EXT: Double = js.native
+  val RGBA16F_EXT: Double
   
-  val UNSIGNED_NORMALIZED_EXT: Double = js.native
+  val UNSIGNED_NORMALIZED_EXT: Double
 }
 object EXTColorBufferHalfFloat {
   

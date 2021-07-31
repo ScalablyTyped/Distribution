@@ -8,7 +8,6 @@ import typings.std.Date
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object jasmine {
@@ -23,69 +22,55 @@ object jasmine {
   @scala.inline
   def DEFAULT_TIMEOUT_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_TIMEOUT_INTERVAL")(x.asInstanceOf[js.Any])
   
-  @JSImport("jest", "jasmine.addCustomEqualityTester")
-  @js.native
-  def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = js.native
+  @scala.inline
+  def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomEqualityTester")(equalityTester.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("jest", "jasmine.addMatchers")
-  @js.native
-  def addMatchers(matchers: CustomMatcherFactories): Unit = js.native
+  @scala.inline
+  def addMatchers(matchers: CustomMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("jest", "jasmine.any")
-  @js.native
-  def any(aclass: js.Any): Any_ = js.native
+  @scala.inline
+  def any(aclass: js.Any): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[Any_]
   
-  @JSImport("jest", "jasmine.anything")
-  @js.native
-  def anything(): Any_ = js.native
+  @scala.inline
+  def anything(): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[Any_]
   
-  @JSImport("jest", "jasmine.arrayContaining")
-  @js.native
-  def arrayContaining(sample: js.Array[_]): ArrayContaining_ = js.native
+  @scala.inline
+  def arrayContaining(sample: js.Array[js.Any]): ArrayContaining_ = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining_]
   
-  @JSImport("jest", "jasmine.clock")
-  @js.native
-  def clock(): Clock_ = js.native
+  @scala.inline
+  def clock(): Clock_ = ^.asInstanceOf[js.Dynamic].applyDynamic("clock")().asInstanceOf[Clock_]
   
-  @JSImport("jest", "jasmine.createSpy")
-  @js.native
-  def createSpy(): Spy = js.native
-  @JSImport("jest", "jasmine.createSpy")
-  @js.native
-  def createSpy(name: js.UndefOr[scala.Nothing], originalFn: js.Function1[/* repeated */ js.Any, _]): Spy = js.native
-  @JSImport("jest", "jasmine.createSpy")
-  @js.native
-  def createSpy(name: String): Spy = js.native
-  @JSImport("jest", "jasmine.createSpy")
-  @js.native
-  def createSpy(name: String, originalFn: js.Function1[/* repeated */ js.Any, _]): Spy = js.native
+  @scala.inline
+  def createSpy(): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")().asInstanceOf[Spy]
+  @scala.inline
+  def createSpy(name: String): Spy = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any]).asInstanceOf[Spy]
+  @scala.inline
+  def createSpy(name: String, originalFn: js.Function1[/* repeated */ js.Any, js.Any]): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
+  @scala.inline
+  def createSpy(name: Unit, originalFn: js.Function1[/* repeated */ js.Any, js.Any]): Spy = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy]
   
-  @JSImport("jest", "jasmine.createSpyObj")
-  @js.native
-  def createSpyObj(baseName: String, methodNames: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def createSpyObj(baseName: String, methodNames: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  
   // tslint:disable-next-line: no-unnecessary-generics
-  @JSImport("jest", "jasmine.createSpyObj")
-  @js.native
-  def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[_]): T = js.native
+  @scala.inline
+  def createSpyObj_T_T[T](baseName: String, methodNames: js.Array[js.Any]): T = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[T]
   
-  @JSImport("jest", "jasmine.objectContaining")
-  @js.native
-  def objectContaining(sample: js.Any): ObjectContaining_ = js.native
+  @scala.inline
+  def objectContaining(sample: js.Any): ObjectContaining_ = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining_]
   
-  @JSImport("jest", "jasmine.pp")
-  @js.native
-  def pp(value: js.Any): String = js.native
+  @scala.inline
+  def pp(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jest", "jasmine.stringMatching")
-  @js.native
-  def stringMatching(value: String): Any_ = js.native
-  @JSImport("jest", "jasmine.stringMatching")
-  @js.native
-  def stringMatching(value: RegExp): Any_ = js.native
+  @scala.inline
+  def stringMatching(value: String): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(value.asInstanceOf[js.Any]).asInstanceOf[Any_]
+  @scala.inline
+  def stringMatching(value: RegExp): Any_ = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(value.asInstanceOf[js.Any]).asInstanceOf[Any_]
   
   @js.native
   trait Any_
-    extends Instantiable1[/* expectedClass */ js.Any, js.Any] {
+    extends StObject
+       with Instantiable1[/* expectedClass */ js.Any, js.Any] {
     
     def jasmineMatches(other: js.Any): Boolean = js.native
     
@@ -94,17 +79,19 @@ object jasmine {
   
   @js.native
   trait ArrayContaining_
-    extends Instantiable1[/* sample */ js.Array[js.Any], js.Any] {
+    extends StObject
+       with Instantiable1[/* sample */ js.Array[js.Any], js.Any] {
     
     def asymmetricMatch(other: js.Any): Boolean = js.native
     
     def jasmineToString(): String = js.native
   }
   
-  @js.native
-  trait ArrayLike[T] extends /* n */ NumberDictionary[T] {
+  trait ArrayLike[T]
+    extends StObject
+       with /* n */ NumberDictionary[T] {
     
-    var length: Double = js.native
+    var length: Double
   }
   object ArrayLike {
     
@@ -115,35 +102,34 @@ object jasmine {
     }
     
     @scala.inline
-    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[_], T] (val x: Self with ArrayLike[T]) extends AnyVal {
+    implicit class ArrayLikeMutableBuilder[Self <: ArrayLike[?], T] (val x: Self & ArrayLike[T]) extends AnyVal {
       
       @scala.inline
       def setLength(value: Double): Self = StObject.set(x, "length", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait CallInfo extends StObject {
     
     /**
       * All arguments passed to the call
       */
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
     
     /**
       * The context (the this) for the call
       */
-    var `object`: js.Any = js.native
+    var `object`: js.Any
     
     /**
       * The return value of the call
       */
-    var returnValue: js.Any = js.native
+    var returnValue: js.Any
   }
   object CallInfo {
     
     @scala.inline
-    def apply(args: js.Array[_], `object`: js.Any, returnValue: js.Any): CallInfo = {
+    def apply(args: js.Array[js.Any], `object`: js.Any, returnValue: js.Any): CallInfo = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], returnValue = returnValue.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CallInfo]
@@ -153,7 +139,7 @@ object jasmine {
     implicit class CallInfoMutableBuilder[Self <: CallInfo] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -166,65 +152,64 @@ object jasmine {
     }
   }
   
-  @js.native
   trait Calls extends StObject {
     
     /**
       * By chaining the spy with calls.all(), will return the
       * context (the this) and arguments passed all calls
       */
-    def all(): js.Array[CallInfo] = js.native
+    def all(): js.Array[CallInfo]
     
     /**
       * By chaining the spy with calls.allArgs(),
       * will return the arguments to all calls
       */
-    def allArgs(): js.Array[_] = js.native
+    def allArgs(): js.Array[js.Any]
     
     /**
       * By chaining the spy with calls.any(),
       * will return false if the spy has not been called at all,
       * and then true once at least one call happens.
       */
-    def any(): Boolean = js.native
+    def any(): Boolean
     
     /**
       * By chaining the spy with calls.argsFor(),
       * will return the arguments passed to call number index
       */
-    def argsFor(index: Double): js.Array[_] = js.native
+    def argsFor(index: Double): js.Array[js.Any]
     
     /**
       * By chaining the spy with calls.count(),
       * will return the number of times the spy was called
       */
-    def count(): Double = js.native
+    def count(): Double
     
     /**
       * By chaining the spy with calls.first(), will return the
       * context (the this) and arguments for the first call
       */
-    def first(): CallInfo = js.native
+    def first(): CallInfo
     
     /**
       * By chaining the spy with calls.mostRecent(), will return the
       * context (the this) and arguments for the most recent call
       */
-    def mostRecent(): CallInfo = js.native
+    def mostRecent(): CallInfo
     
     /**
       * By chaining the spy with calls.reset(), will clears all tracking for a spy
       */
-    def reset(): Unit = js.native
+    def reset(): Unit
   }
   object Calls {
     
     @scala.inline
     def apply(
       all: () => js.Array[CallInfo],
-      allArgs: () => js.Array[_],
+      allArgs: () => js.Array[js.Any],
       any: () => Boolean,
-      argsFor: Double => js.Array[_],
+      argsFor: Double => js.Array[js.Any],
       count: () => Double,
       first: () => CallInfo,
       mostRecent: () => CallInfo,
@@ -241,13 +226,13 @@ object jasmine {
       def setAll(value: () => js.Array[CallInfo]): Self = StObject.set(x, "all", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setAllArgs(value: () => js.Array[_]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
+      def setAllArgs(value: () => js.Array[js.Any]): Self = StObject.set(x, "allArgs", js.Any.fromFunction0(value))
       
       @scala.inline
       def setAny(value: () => Boolean): Self = StObject.set(x, "any", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setArgsFor(value: Double => js.Array[_]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
+      def setArgsFor(value: Double => js.Array[js.Any]): Self = StObject.set(x, "argsFor", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCount(value: () => Double): Self = StObject.set(x, "count", js.Any.fromFunction0(value))
@@ -297,12 +282,11 @@ object jasmine {
     CustomMatcher
   ]
   
-  @js.native
   trait CustomMatcherResult extends StObject {
     
-    var message: String | js.Function0[String] = js.native
+    var message: String | js.Function0[String]
     
-    var pass: Boolean = js.native
+    var pass: Boolean
   }
   object CustomMatcherResult {
     
@@ -343,9 +327,10 @@ object jasmine {
   
   @js.native
   trait ObjectContaining_
-    extends Instantiable1[/* expectedClass */ js.Any, js.Any] {
+    extends StObject
+       with Instantiable1[/* expectedClass */ js.Any, js.Any] {
     
-    def jasmineMatches(other: js.Any, mismatchKeys: js.Array[_], mismatchValues: js.Array[_]): Boolean = js.native
+    def jasmineMatches(other: js.Any, mismatchKeys: js.Array[js.Any], mismatchValues: js.Array[js.Any]): Boolean = js.native
     
     def jasmineToString(): String = js.native
   }
@@ -357,7 +342,7 @@ object jasmine {
     
     var and: SpyAnd = js.native
     
-    var argsForCall: js.Array[_] = js.native
+    var argsForCall: js.Array[js.Any] = js.native
     
     var calls: Calls = js.native
     
@@ -368,50 +353,49 @@ object jasmine {
     var wasCalled: Boolean = js.native
   }
   
-  @js.native
   trait SpyAnd extends StObject {
     
     /**
       * By chaining the spy with and.callFake, all calls to the spy
       * will delegate to the supplied function.
       */
-    def callFake(fn: js.Function1[/* repeated */ js.Any, _]): Spy = js.native
+    def callFake(fn: js.Function1[/* repeated */ js.Any, js.Any]): Spy
     
     /**
       * By chaining the spy with and.callThrough, the spy will still track all
       * calls to it but in addition it will delegate to the actual implementation.
       */
-    def callThrough(): Spy = js.native
+    def callThrough(): Spy
     
     /**
       * By chaining the spy with and.returnValue, all calls to the function
       * will return a specific value.
       */
-    def returnValue(`val`: js.Any): Spy = js.native
+    def returnValue(`val`: js.Any): Spy
     
     /**
       * By chaining the spy with and.returnValues, all calls to the function
       * will return specific values in order until it reaches the end of the return values list.
       */
-    def returnValues(values: js.Any*): Spy = js.native
+    def returnValues(values: js.Any*): Spy
     
     /**
       * When a calling strategy is used for a spy, the original stubbing
       * behavior can be returned at any time with and.stub.
       */
-    def stub(): Spy = js.native
+    def stub(): Spy
     
     /**
       * By chaining the spy with and.throwError, all calls to the spy
       * will throw the specified value.
       */
-    def throwError(msg: String): Spy = js.native
+    def throwError(msg: String): Spy
   }
   object SpyAnd {
     
     @scala.inline
     def apply(
-      callFake: js.Function1[/* repeated */ js.Any, _] => Spy,
+      callFake: js.Function1[/* repeated */ js.Any, js.Any] => Spy,
       callThrough: () => Spy,
       returnValue: js.Any => Spy,
       returnValues: /* repeated */ js.Any => Spy,
@@ -426,7 +410,7 @@ object jasmine {
     implicit class SpyAndMutableBuilder[Self <: SpyAnd] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallFake(value: js.Function1[/* repeated */ js.Any, _] => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
+      def setCallFake(value: js.Function1[/* repeated */ js.Any, js.Any] => Spy): Self = StObject.set(x, "callFake", js.Any.fromFunction1(value))
       
       @scala.inline
       def setCallThrough(value: () => Spy): Self = StObject.set(x, "callThrough", js.Any.fromFunction0(value))

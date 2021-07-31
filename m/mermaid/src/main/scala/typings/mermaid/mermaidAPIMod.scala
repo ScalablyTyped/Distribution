@@ -4,42 +4,42 @@ import typings.mermaid.mermaidAPIMod.mermaidAPI.Config
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mermaidAPIMod {
   
   object default {
     
+    @JSImport("mermaid/mermaidAPI", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     @JSImport("mermaid/mermaidAPI", "default.LogLevel")
     @js.native
     object LogLevel extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel & Double] = js.native
       
-      /* 1 */ val Debug: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Debug with Double = js.native
+      /* 1 */ val Debug: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Debug & Double = js.native
       
-      /* 2 */ val Error: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Error with Double = js.native
+      /* 2 */ val Error: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Error & Double = js.native
       
-      /* 3 */ val Fatal: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Fatal with Double = js.native
+      /* 3 */ val Fatal: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Fatal & Double = js.native
       
-      /* 0 */ val Info: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Info with Double = js.native
+      /* 0 */ val Info: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Info & Double = js.native
       
-      /* 1 */ val Warn: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Warn with Double = js.native
+      /* 1 */ val Warn: typings.mermaid.mermaidAPIMod.mermaidAPI.LogLevel.Warn & Double = js.native
     }
     
-    @JSImport("mermaid/mermaidAPI", "default.getConfig")
-    @js.native
-    def getConfig(): Config = js.native
+    @scala.inline
+    def getConfig(): Config = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfig")().asInstanceOf[Config]
     
-    @JSImport("mermaid/mermaidAPI", "default.initialize")
-    @js.native
-    def initialize(options: Config): Unit = js.native
+    @scala.inline
+    def initialize(options: Config): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("initialize")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("mermaid/mermaidAPI", "default.parse")
-    @js.native
-    def parse(text: String): js.Any = js.native
+    @scala.inline
+    def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
     
     /**
       * ##render
@@ -64,8 +64,7 @@ object mermaidAPIMod {
       * provided a hidden div will be inserted in the body of the page instead. The element will be removed when rendering is
       * completed.
       */
-    @JSImport("mermaid/mermaidAPI", "default.render")
-    @js.native
+    @scala.inline
     def render(
       id: String,
       txt: String,
@@ -74,9 +73,8 @@ object mermaidAPIMod {
           /* bindFunctions */ js.Function1[/* element */ Element, Unit], 
           Unit
         ]
-    ): String = js.native
-    @JSImport("mermaid/mermaidAPI", "default.render")
-    @js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(id.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
     def render(
       id: String,
       txt: String,
@@ -86,7 +84,7 @@ object mermaidAPIMod {
           Unit
         ],
       container: String
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("render")(id.asInstanceOf[js.Any], txt.asInstanceOf[js.Any], cb.asInstanceOf[js.Any], container.asInstanceOf[js.Any])).asInstanceOf[String]
   }
   
   object mermaidAPI {
@@ -98,22 +96,31 @@ object mermaidAPIMod {
     object LogLevel extends StObject {
       
       @js.native
-      sealed trait Debug extends LogLevel
+      sealed trait Debug
+        extends StObject
+           with LogLevel
       
       @js.native
-      sealed trait Error extends LogLevel
+      sealed trait Error
+        extends StObject
+           with LogLevel
       
       @js.native
-      sealed trait Fatal extends LogLevel
+      sealed trait Fatal
+        extends StObject
+           with LogLevel
       
       @js.native
-      sealed trait Info extends LogLevel
+      sealed trait Info
+        extends StObject
+           with LogLevel
       
       @js.native
-      sealed trait Warn extends LogLevel
+      sealed trait Warn
+        extends StObject
+           with LogLevel
     }
     
-    @js.native
     trait Config extends StObject {
       
       /**
@@ -121,29 +128,29 @@ object mermaidAPIMod {
         * an anchor, #. This matters if you are using base tag settings.
         * default: false
         */
-      var arrowMarkerAbsolute: js.UndefOr[Boolean] = js.native
+      var arrowMarkerAbsolute: js.UndefOr[Boolean] = js.undefined
       
-      var `class`: js.UndefOr[js.Any] = js.native
+      var `class`: js.UndefOr[js.Any] = js.undefined
       
       /**
         * ### flowchart
         * *The object containing configurations specific for flowcharts*
         */
-      var flowchart: js.UndefOr[FlowChartConfig] = js.native
+      var flowchart: js.UndefOr[FlowChartConfig] = js.undefined
       
       /**
         * ### gantt
         * The object containing configurations specific for gantt diagrams*
         */
-      var gantt: js.UndefOr[GanttConfig] = js.native
+      var gantt: js.UndefOr[GanttConfig] = js.undefined
       
-      var git: js.UndefOr[js.Any] = js.native
+      var git: js.UndefOr[js.Any] = js.undefined
       
       /**
         * logLevel , decides the amount of logging to be used.
         * default: LogLevel.Fatal
         */
-      var logLevel: js.UndefOr[LogLevel] = js.native
+      var logLevel: js.UndefOr[LogLevel] = js.undefined
       
       /**
         * securityLevel: disallow/allow potentially dangerous cross-site scripting behavior
@@ -153,21 +160,21 @@ object mermaidAPIMod {
         *   Up through version mermaid@8.2.3, if any text value is present in a config but is not "strict", the behavior is "loose".
         *   This should be fixed after that version, i.e. any value other "loose" should be treated as "strict".
         */
-      var securityLevel: js.UndefOr[String] = js.native
+      var securityLevel: js.UndefOr[String] = js.undefined
       
       /**
         * ###  sequenceDiagram
         * The object containing configurations specific for sequence diagrams
         */
-      var sequence: js.UndefOr[SequenceDiagramConfig] = js.native
+      var sequence: js.UndefOr[SequenceDiagramConfig] = js.undefined
       
       /**
         * **startOnLoad** - This options controls whether or mermaid starts when the page loads
         * default: true
         */
-      var startOnLoad: js.UndefOr[Boolean] = js.native
+      var startOnLoad: js.UndefOr[Boolean] = js.undefined
       
-      var theme: js.UndefOr[Theme] = js.native
+      var theme: js.UndefOr[Theme] = js.undefined
     }
     object Config {
       
@@ -242,20 +249,19 @@ object mermaidAPIMod {
       }
     }
     
-    @js.native
     trait FlowChartConfig extends StObject {
       
       /**
         * default: 'linear'
         */
-      var curve: js.UndefOr[String] = js.native
+      var curve: js.UndefOr[String] = js.undefined
       
       /**
         * **htmlLabels** - Flag for setting whether or not a html tag should be used for rendering labels
         * on the edges
         * default: true
         */
-      var htmlLabels: js.UndefOr[Boolean] = js.native
+      var htmlLabels: js.UndefOr[Boolean] = js.undefined
     }
     object FlowChartConfig {
       
@@ -282,68 +288,67 @@ object mermaidAPIMod {
       }
     }
     
-    @js.native
     trait GanttConfig extends StObject {
       
       /**
         * **axisFormat** - datetime format of the axis, this might need adjustment to match your locale and preferences
         * default: '%Y-%m-%d'
         */
-      var axisFormat: js.UndefOr[String] = js.native
+      var axisFormat: js.UndefOr[String] = js.undefined
       
       /**
         * **barGap** - the margin between the different activities in the gantt diagram
         * default: 4
         */
-      var barGap: js.UndefOr[Double] = js.native
+      var barGap: js.UndefOr[Double] = js.undefined
       
       /**
         * **barHeight** - the height of the bars in the graph
         * default: 20
         */
-      var barHeight: js.UndefOr[Double] = js.native
+      var barHeight: js.UndefOr[Double] = js.undefined
       
       /**
         * **fontFamily** - font family ...
         * default:  '"Open-Sans", "sans-serif"'
         */
-      var fontFamily: js.UndefOr[String] = js.native
+      var fontFamily: js.UndefOr[String] = js.undefined
       
       /**
         *  **fontSize** - font size ...
         * default: 11
         */
-      var fontSize: js.UndefOr[Double] = js.native
+      var fontSize: js.UndefOr[Double] = js.undefined
       
       /**
         *  **gridLineStartPadding** - Vertical starting position of the grid lines
         * default: 35
         */
-      var gridLineStartPadding: js.UndefOr[Double] = js.native
+      var gridLineStartPadding: js.UndefOr[Double] = js.undefined
       
       /**
         *  **leftPadding** - the space allocated for the section name to the left of the activities.
         * default: 75
         */
-      var leftPadding: js.UndefOr[Double] = js.native
+      var leftPadding: js.UndefOr[Double] = js.undefined
       
       /**
         * **numberSectionStyles** - the number of alternating section styles
         * default: 4
         */
-      var numberSectionStyles: js.UndefOr[Double] = js.native
+      var numberSectionStyles: js.UndefOr[Double] = js.undefined
       
       /**
         * **titleTopMargin** - margin top for the text over the gantt diagram
         * default: 25
         */
-      var titleTopMargin: js.UndefOr[Double] = js.native
+      var titleTopMargin: js.UndefOr[Double] = js.undefined
       
       /**
         *  **topPadding** - margin between title and gantt diagram and between axis and gantt diagram.
         * default: 50
         */
-      var topPadding: js.UndefOr[Double] = js.native
+      var topPadding: js.UndefOr[Double] = js.undefined
     }
     object GanttConfig {
       
@@ -418,82 +423,81 @@ object mermaidAPIMod {
       }
     }
     
-    @js.native
     trait SequenceDiagramConfig extends StObject {
       
       /**
         * **actorMargin** - Margin between actors
         * default: 10
         */
-      var actorMargin: js.UndefOr[Double] = js.native
+      var actorMargin: js.UndefOr[Double] = js.undefined
       
       /**
         * **bottomMarginAdj** - Depending on css styling this might need adjustment.
         * Prolongs the edge of the diagram downwards
         * default: 1
         */
-      var bottomMarginAdj: js.UndefOr[Double] = js.native
+      var bottomMarginAdj: js.UndefOr[Double] = js.undefined
       
       /**
         * **boxMargin** - Margin around loop boxes
         * default: 10
         */
-      var boxMargin: js.UndefOr[Double] = js.native
+      var boxMargin: js.UndefOr[Double] = js.undefined
       
       /**
         * **boxTextMargin** - margin around the text in loop/alt/opt boxes
         * default: 5
         */
-      var boxTextMargin: js.UndefOr[Double] = js.native
+      var boxTextMargin: js.UndefOr[Double] = js.undefined
       
       /**
         * **diagramMarginX** - margin to the right and left of the sequence diagram
         * default: 50
         */
-      var diagramMarginX: js.UndefOr[Double] = js.native
+      var diagramMarginX: js.UndefOr[Double] = js.undefined
       
       /**
         * **diagramMarginY** - margin to the over and under the sequence diagram
         * default: 10
         */
-      var diagramMarginY: js.UndefOr[Double] = js.native
+      var diagramMarginY: js.UndefOr[Double] = js.undefined
       
       /**
         * **height** - Height of actor boxes
         * default: 65
         */
-      var height: js.UndefOr[Double] = js.native
+      var height: js.UndefOr[Double] = js.undefined
       
       /**
         * **messageMargin** - Space between messages
         * default: 35
         */
-      var messageMargin: js.UndefOr[Double] = js.native
+      var messageMargin: js.UndefOr[Double] = js.undefined
       
       /**
         * **mirrorActors** - mirror actors under diagram
         * default: true
         */
-      var mirrorActors: js.UndefOr[Boolean] = js.native
+      var mirrorActors: js.UndefOr[Boolean] = js.undefined
       
       /**
         * **noteMargin** - margin around notes
         * default: 10
         */
-      var noteMargin: js.UndefOr[Double] = js.native
+      var noteMargin: js.UndefOr[Double] = js.undefined
       
       /**
         * **useMaxWidth** - when this flag is set the height and width is set to 100% and is then scaling with the
         * available space if not the absolute space required is used
         * default: true
         */
-      var useMaxWidth: js.UndefOr[Boolean] = js.native
+      var useMaxWidth: js.UndefOr[Boolean] = js.undefined
       
       /**
         * **width** - Width of actor boxes
         * default: 150
         */
-      var width: js.UndefOr[Double] = js.native
+      var width: js.UndefOr[Double] = js.undefined
     }
     object SequenceDiagramConfig {
       

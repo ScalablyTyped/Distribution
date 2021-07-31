@@ -2,31 +2,29 @@ package typings.cytoscape.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * http://js.cytoscape.org/#eles.dijkstra
   */
-@js.native
 trait SearchDijkstraOptions extends StObject {
   
   /**
     * A boolean indicating whether the algorithm should only go along edges from source to target (default false).
     */
-  var directed: js.UndefOr[Boolean] = js.native
+  var directed: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The root node (selector or collection) where the algorithm starts.
     */
-  var root: Selector | CollectionArgument = js.native
+  var root: Selector | CollectionArgument
   
   /**
     * A function that returns the positive numeric weight for this edge.
     *
     * If no weight function is defined, a constant weight of 1 is used for each edge.
     */
-  var weight: js.UndefOr[WeightFn] = js.native
+  var weight: js.UndefOr[WeightFn] = js.undefined
 }
 object SearchDijkstraOptions {
   

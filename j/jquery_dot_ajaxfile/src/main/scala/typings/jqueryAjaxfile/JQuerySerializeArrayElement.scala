@@ -2,18 +2,16 @@ package typings.jqueryAjaxfile
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Elements in the array returned by serializeArray()
   */
-@js.native
 trait JQuerySerializeArrayElement extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var value: String = js.native
+  var value: String
 }
 object JQuerySerializeArrayElement {
   

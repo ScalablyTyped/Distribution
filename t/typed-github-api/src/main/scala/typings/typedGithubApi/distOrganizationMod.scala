@@ -1,6 +1,7 @@
 package typings.typedGithubApi
 
 import typings.moment.mod.Moment
+import typings.typedGithubApi.anon.Name
 import typings.typedGithubApi.distOwnerRefMod.OwnerRefClass
 import typings.typedGithubApi.githubRefMod.OptionsOrRef
 import typings.typedGithubApi.organizationMod.MyOrganization
@@ -9,7 +10,6 @@ import typings.typedGithubApi.userMod.OrganizationSummary
 import typings.typedGithubApi.userMod.PrivateOrganization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object distOrganizationMod {
@@ -20,6 +20,33 @@ object distOrganizationMod {
     extends OrganizationClass
        with MyOrganization {
     def this(data: PrivateOrganization, options: OptionsOrRef) = this()
+    
+    /* CompleteClass */
+    var billingEmail: String = js.native
+    
+    /* CompleteClass */
+    var collaborators: Double = js.native
+    
+    /* CompleteClass */
+    var defaultRepositorySettings: String = js.native
+    
+    /* CompleteClass */
+    var diskUsage: Double = js.native
+    
+    /* CompleteClass */
+    var membersCanCreateRepositories: Boolean = js.native
+    
+    /* CompleteClass */
+    var plan: Name = js.native
+    
+    /* CompleteClass */
+    var privateGists: Double = js.native
+    
+    /* CompleteClass */
+    var privateReposOwned: Double = js.native
+    
+    /* CompleteClass */
+    var privateReposTotal: Double = js.native
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 

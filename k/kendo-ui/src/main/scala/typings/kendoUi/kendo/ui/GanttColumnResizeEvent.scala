@@ -2,17 +2,17 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GanttColumnResizeEvent extends GanttEvent {
+trait GanttColumnResizeEvent
+  extends StObject
+     with GanttEvent {
   
-  var column: js.UndefOr[js.Any] = js.native
+  var column: js.UndefOr[js.Any] = js.undefined
   
-  var newWidth: js.UndefOr[Double] = js.native
+  var newWidth: js.UndefOr[Double] = js.undefined
   
-  var oldWidth: js.UndefOr[Double] = js.native
+  var oldWidth: js.UndefOr[Double] = js.undefined
 }
 object GanttColumnResizeEvent {
   

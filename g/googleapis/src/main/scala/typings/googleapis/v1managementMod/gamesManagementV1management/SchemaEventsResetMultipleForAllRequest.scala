@@ -2,25 +2,23 @@ package typings.googleapis.v1managementMod.gamesManagementV1management
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for multiple events reset all request.
   */
-@js.native
 trait SchemaEventsResetMultipleForAllRequest extends StObject {
   
   /**
     * The IDs of events to reset.
     */
-  var event_ids: js.UndefOr[js.Array[String]] = js.native
+  var event_ids: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesManagement#eventsResetMultipleForAllRequest.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaEventsResetMultipleForAllRequest {
   

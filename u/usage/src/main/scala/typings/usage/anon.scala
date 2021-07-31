@@ -2,17 +2,15 @@ package typings.usage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Rss extends StObject {
     
-    var rss: Double = js.native
+    var rss: Double
     
-    var vsize: Double = js.native
+    var vsize: Double
   }
   object Rss {
     

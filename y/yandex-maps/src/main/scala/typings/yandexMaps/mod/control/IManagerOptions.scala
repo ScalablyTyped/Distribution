@@ -3,17 +3,15 @@ package typings.yandexMaps.mod.control
 import typings.yandexMaps.mod.IPane
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IManagerOptions extends StObject {
   
-  var margin: js.UndefOr[Double] = js.native
+  var margin: js.UndefOr[Double] = js.undefined
   
-  var pane: js.UndefOr[IPane] = js.native
+  var pane: js.UndefOr[IPane] = js.undefined
   
-  var states: js.UndefOr[js.Array[String]] = js.native
+  var states: js.UndefOr[js.Array[String]] = js.undefined
 }
 object IManagerOptions {
   

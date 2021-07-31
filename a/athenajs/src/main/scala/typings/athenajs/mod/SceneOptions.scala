@@ -2,21 +2,19 @@ package typings.athenajs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SceneOptions extends StObject {
   
-  var hudScene: js.UndefOr[Scene] = js.native
+  var hudScene: js.UndefOr[Scene] = js.undefined
   
-  var layers: js.UndefOr[Double] = js.native
+  var layers: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var resources: js.UndefOr[js.Array[Res]] = js.native
+  var resources: js.UndefOr[js.Array[Res]] = js.undefined
 }
 object SceneOptions {
   

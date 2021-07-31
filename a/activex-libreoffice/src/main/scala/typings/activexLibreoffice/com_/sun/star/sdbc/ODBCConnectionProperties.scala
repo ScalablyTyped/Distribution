@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,36 +14,37 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.ConnectionProperties
   */
-@js.native
-trait ODBCConnectionProperties extends ConnectionProperties {
+trait ODBCConnectionProperties
+  extends StObject
+     with ConnectionProperties {
   
   /** specifies the statement which should be executed when asking an "INSERT" statement for the {@link XGeneratedResultSet} (future concept) interface. */
-  var AutoRetrievingStatement: String = js.native
+  var AutoRetrievingStatement: String
   
   /**
     * specifies the encoding to use to translate the backend data
     *
     * See the [IANA character set list]{@link url="http://www.iana.org/assignments/character-sets"} for a list of valid values.
     */
-  var CharSet: String = js.native
+  var CharSet: String
   
   /**
     * specifies if retrieving of auto generated values should be enabled or not. If `TRUE` than the statement will support the {@link XGeneratedResultSet}
     * (future concept) interface, otherwise not.
     */
-  var IsAutoRetrievingEnabled: Boolean = js.native
+  var IsAutoRetrievingEnabled: Boolean
   
   /** should the parameter "?" in prepared statement be substituted with an distinct name */
-  var ParameterNameSubstitution: Boolean = js.native
+  var ParameterNameSubstitution: Boolean
   
   /** Silent - should the connection be silent. No user interaction while creating the connection. */
-  var Silent: Boolean = js.native
+  var Silent: Boolean
   
   /** the Timeout after which time a timeout should happen */
-  var Timeout: Double = js.native
+  var Timeout: Double
   
   /** should the driver should support a catalog. */
-  var UseCatalog: Boolean = js.native
+  var UseCatalog: Boolean
 }
 object ODBCConnectionProperties {
   

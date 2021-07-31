@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This interface could be incomplete since I derived it from its places of use.
   * @since LibreOffice 4.1
   */
-@js.native
-trait AddressBookSourceDialog extends XExecutableDialog {
+trait AddressBookSourceDialog
+  extends StObject
+     with XExecutableDialog {
   
   def createWithDataSource(
     ParentWindow: XWindow,
@@ -22,7 +22,7 @@ trait AddressBookSourceDialog extends XExecutableDialog {
     DataSourceName: String,
     Command: String,
     Title: String
-  ): Unit = js.native
+  ): Unit
 }
 object AddressBookSourceDialog {
   

@@ -2,86 +2,84 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 网络请求过程中一些调试信息
   *
   * 最低基础库： `2.10.4` */
-@js.native
 trait DownloadProfile extends StObject {
   
   /** SSL建立完成的时间,如果不是安全连接,则值为 0 */
-  var SSLconnectionEnd: Double = js.native
+  var SSLconnectionEnd: Double
   
   /** SSL建立连接的时间,如果不是安全连接,则值为 0 */
-  var SSLconnectionStart: Double = js.native
+  var SSLconnectionStart: Double
   
   /** HTTP（TCP） 完成建立连接的时间（完成握手），如果是持久连接，则与 fetchStart 值相等。注意如果在传输层发生了错误且重新建立连接，则这里显示的是新建立的连接完成的时间。注意这里握手结束，包括安全连接建立完成、SOCKS 授权通过 */
-  var connectEnd: Double = js.native
+  var connectEnd: Double
   
   /** HTTP（TCP） 开始建立连接的时间，如果是持久连接，则与 fetchStart 值相等。注意如果在传输层发生了错误且重新建立连接，则这里显示的是新建立的连接开始的时间 */
-  var connectStart: Double = js.native
+  var connectStart: Double
   
   /** DNS 域名查询完成的时间，如果使用了本地缓存（即无 DNS 查询）或持久连接，则与 fetchStart 值相等 */
-  var domainLookupEnd: Double = js.native
+  var domainLookupEnd: Double
   
   /** DNS 域名查询开始的时间，如果使用了本地缓存（即无 DNS 查询）或持久连接，则与 fetchStart 值相等 */
-  var domainLookupStart: Double = js.native
+  var domainLookupStart: Double
   
   /** 评估当前网络下载的kbps */
-  var downstreamThroughputKbpsEstimate: Double = js.native
+  var downstreamThroughputKbpsEstimate: Double
   
   /** 评估的网络状态 slow 2g/2g/3g/4g */
-  var estimate_nettype: String = js.native
+  var estimate_nettype: String
   
   /** 组件准备好使用 HTTP 请求抓取资源的时间，这发生在检查本地缓存之前 */
-  var fetchStart: Double = js.native
+  var fetchStart: Double
   
   /** 协议层根据多个请求评估当前网络的 rtt（仅供参考） */
-  var httpRttEstimate: Double = js.native
+  var httpRttEstimate: Double
   
   /** 当前请求的IP */
-  var peerIP: String = js.native
+  var peerIP: String
   
   /** 当前请求的端口 */
-  var port: Double = js.native
+  var port: Double
   
   /** 收到字节数 */
-  var receivedBytedCount: Double = js.native
+  var receivedBytedCount: Double
   
   /** 最后一个 HTTP 重定向完成时的时间。有跳转且是同域名内部的重定向才算，否则值为 0 */
-  var redirectEnd: Double = js.native
+  var redirectEnd: Double
   
   /** 第一个 HTTP 重定向发生时的时间。有跳转且是同域名内的重定向才算，否则值为 0 */
-  var redirectStart: Double = js.native
+  var redirectStart: Double
   
   /** HTTP请求读取真实文档结束的时间 */
-  var requestEnd: Double = js.native
+  var requestEnd: Double
   
   /** HTTP请求读取真实文档开始的时间（完成建立连接），包括从本地读取缓存。连接错误重连时，这里显示的也是新建立连接的时间 */
-  var requestStart: Double = js.native
+  var requestStart: Double
   
   /** HTTP 响应全部接收完成的时间（获取到最后一个字节），包括从本地读取缓存 */
-  var responseEnd: Double = js.native
+  var responseEnd: Double
   
   /** HTTP 开始接收响应的时间（获取到第一个字节），包括从本地读取缓存 */
-  var responseStart: Double = js.native
+  var responseStart: Double
   
   /** 当次请求连接过程中实时 rtt */
-  var rtt: Double = js.native
+  var rtt: Double
   
   /** 发送的字节数 */
-  var sendBytesCount: Double = js.native
+  var sendBytesCount: Double
   
   /** 是否复用连接 */
-  var socketReused: Boolean = js.native
+  var socketReused: Boolean
   
   /** 当前网络的实际下载kbps */
-  var throughputKbps: Double = js.native
+  var throughputKbps: Double
   
   /** 传输层根据多个请求评估的当前网络的 rtt（仅供参考） */
-  var transportRttEstimate: Double = js.native
+  var transportRttEstimate: Double
 }
 object DownloadProfile {
   

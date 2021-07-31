@@ -8,7 +8,6 @@ import typings.storybookComponents.listItemMod.LinkWrapperType
 import typings.storybookComponents.listItemMod.ListItemProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tooltipLinkListMod {
@@ -18,16 +17,15 @@ object tooltipLinkListMod {
   val TooltipLinkList: FunctionComponent[TooltipLinkListProps] = js.native
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped {[ P in std.Exclude<keyof @storybook/components.@storybook/components/dist/tooltip/ListItem.ListItemProps, 'onClick'> ]: @storybook/components.@storybook/components/dist/tooltip/ListItem.ListItemProps[P]} */ @js.native
-  trait Link extends StObject {
+  - Dropped {[ P in std.Exclude<keyof @storybook/components.@storybook/components/dist/tooltip/ListItem.ListItemProps, 'onClick'> ]: @storybook/components.@storybook/components/dist/tooltip/ListItem.ListItemProps[P]} */ trait Link extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var isGatsby: js.UndefOr[Boolean] = js.native
+    var isGatsby: js.UndefOr[Boolean] = js.undefined
     
     var onClick: js.UndefOr[
         js.Function2[/* event */ SyntheticEvent[Element, Event], /* item */ ListItemProps, Unit]
-      ] = js.native
+      ] = js.undefined
   }
   object Link {
     
@@ -57,12 +55,11 @@ object tooltipLinkListMod {
     }
   }
   
-  @js.native
   trait TooltipLinkListProps extends StObject {
     
-    var LinkWrapper: js.UndefOr[LinkWrapperType] = js.native
+    var LinkWrapper: js.UndefOr[LinkWrapperType] = js.undefined
     
-    var links: js.Array[Link] = js.native
+    var links: js.Array[Link]
   }
   object TooltipLinkListProps {
     

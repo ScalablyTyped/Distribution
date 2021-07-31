@@ -2,26 +2,26 @@ package typings.gitUserName
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("git-user-name", JSImport.Namespace)
-  @js.native
-  def apply(): String | Null = js.native
-  @JSImport("git-user-name", JSImport.Namespace)
-  @js.native
-  def apply(options: Options): String | Null = js.native
+  @scala.inline
+  def apply(): String | Null = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String | Null]
+  @scala.inline
+  def apply(options: Options): String | Null = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
+  @JSImport("git-user-name", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
-    var gitconfig: js.UndefOr[String] = js.native
+    var gitconfig: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
   }
   object Options {
     

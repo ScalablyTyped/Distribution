@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/run/v1alpha1", "run_v1alpha1.Resource$Namespaces$Services")
@@ -31,7 +30,7 @@ class ResourceNamespacesServices protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaService] = js.native
   def create(callback: BodyResponseCallback[SchemaService]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def create(params: ParamsResourceNamespacesServicesCreate): GaxiosPromise[SchemaService] = js.native
   def create(params: ParamsResourceNamespacesServicesCreate, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def create(
@@ -66,7 +65,7 @@ class ResourceNamespacesServices protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceNamespacesServicesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceNamespacesServicesDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(
@@ -95,7 +94,7 @@ class ResourceNamespacesServices protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaService] = js.native
   def get(callback: BodyResponseCallback[SchemaService]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceNamespacesServicesGet): GaxiosPromise[SchemaService] = js.native
   def get(params: ParamsResourceNamespacesServicesGet, callback: BodyResponseCallback[SchemaService]): Unit = js.native
   def get(
@@ -131,7 +130,7 @@ class ResourceNamespacesServices protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListServicesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(params: ParamsResourceNamespacesServicesList): GaxiosPromise[SchemaListServicesResponse] = js.native
   def list(
     params: ParamsResourceNamespacesServicesList,
@@ -168,7 +167,7 @@ class ResourceNamespacesServices protected () extends StObject {
     */
   def replaceService(): GaxiosPromise[SchemaService] = js.native
   def replaceService(callback: BodyResponseCallback[SchemaService]): Unit = js.native
-  def replaceService(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaService] = js.native
+  def replaceService(params: Unit, options: MethodOptions): GaxiosPromise[SchemaService] = js.native
   def replaceService(params: ParamsResourceNamespacesServicesReplaceservice): GaxiosPromise[SchemaService] = js.native
   def replaceService(
     params: ParamsResourceNamespacesServicesReplaceservice,

@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait clustersGetTemplatesParams extends Object {
+trait clustersGetTemplatesParams
+  extends StObject
+     with Object {
   
   /**
     * The point layer that is or will be clustered.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-clusters.html#getTemplates)
     */
-  var layer: FeatureLayer | CSVLayer | GeoJSONLayer = js.native
+  var layer: FeatureLayer | CSVLayer | GeoJSONLayer
   
   /**
     * Specify the renderer to be used on the layer when `featureReduction` is enabled if it will be different than the renderer already set on the layer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-popup-clusters.html#getTemplates)
     */
-  var renderer: js.UndefOr[Renderer] = js.native
+  var renderer: js.UndefOr[Renderer] = js.undefined
 }
 object clustersGetTemplatesParams {
   

@@ -2,15 +2,13 @@ package typings.winrtUwp.Windows.Devices.AllJoyn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains status information that indicates why a Producer app was stopped. */
-@js.native
 trait AllJoynProducerStoppedEventArgs extends StObject {
   
   /** Returns an AllJoyn status code that indicates why the Producer was stopped. Common values are defined by AllJoynStatus . */
-  var status: Double = js.native
+  var status: Double
 }
 object AllJoynProducerStoppedEventArgs {
   

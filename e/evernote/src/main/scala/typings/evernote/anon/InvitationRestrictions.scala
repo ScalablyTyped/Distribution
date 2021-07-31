@@ -5,17 +5,15 @@ import typings.evernote.mod.NoteStore.NoteMemberShareRelationship
 import typings.evernote.mod.NoteStore.NoteShareRelationshipRestrictions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvitationRestrictions extends StObject {
   
-  var invitationRestrictions: js.UndefOr[NoteShareRelationshipRestrictions] = js.native
+  var invitationRestrictions: js.UndefOr[NoteShareRelationshipRestrictions] = js.undefined
   
-  var invitations: js.UndefOr[js.Array[NoteInvitationShareRelationship]] = js.native
+  var invitations: js.UndefOr[js.Array[NoteInvitationShareRelationship]] = js.undefined
   
-  var memberships: js.UndefOr[js.Array[NoteMemberShareRelationship]] = js.native
+  var memberships: js.UndefOr[js.Array[NoteMemberShareRelationship]] = js.undefined
 }
 object InvitationRestrictions {
   

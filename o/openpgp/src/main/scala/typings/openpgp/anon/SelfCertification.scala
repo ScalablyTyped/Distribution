@@ -3,15 +3,13 @@ package typings.openpgp.anon
 import typings.openpgp.mod.key.User
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelfCertification extends StObject {
   
-  var selfCertification: typings.openpgp.mod.packet.Signature = js.native
+  var selfCertification: typings.openpgp.mod.packet.Signature
   
-  var user: User = js.native
+  var user: User
 }
 object SelfCertification {
   

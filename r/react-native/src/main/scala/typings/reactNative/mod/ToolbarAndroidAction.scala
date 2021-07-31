@@ -5,31 +5,29 @@ import typings.reactNative.reactNativeStrings.ifRoom
 import typings.reactNative.reactNativeStrings.never
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToolbarAndroidAction extends StObject {
   
   /**
     * icon: the icon for this action, e.g. require('./some_icon.png')
     */
-  var icon: js.UndefOr[ImageURISource] = js.native
+  var icon: js.UndefOr[ImageURISource] = js.undefined
   
   /**
     * show: when to show this action as an icon or hide it in the overflow menu: always, ifRoom or never
     */
-  var show: js.UndefOr[always | ifRoom | never] = js.native
+  var show: js.UndefOr[always | ifRoom | never] = js.undefined
   
   /**
     * showWithText: boolean, whether to show text alongside the icon or not
     */
-  var showWithText: js.UndefOr[Boolean] = js.native
+  var showWithText: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  title: required, the title of this action
     */
-  var title: String = js.native
+  var title: String
 }
 object ToolbarAndroidAction {
   

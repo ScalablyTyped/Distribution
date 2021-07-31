@@ -5,44 +5,42 @@ import typings.iobroker.iobrokerStrings.JavascriptSlashNodeDotjs
 import typings.iobroker.iobrokerStrings.`js-controller`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<iobroker.iobroker/objects.<global>.ioBroker.HostCommon> */
-@js.native
 trait PartialHostCommon extends StObject {
   
-  var address: js.UndefOr[js.Array[String]] = js.native
+  var address: js.UndefOr[js.Array[String]] = js.undefined
   
-  var cmd: js.UndefOr[String] = js.native
+  var cmd: js.UndefOr[String] = js.undefined
   
-  var custom: js.UndefOr[scala.Nothing] = js.native
+  var custom: Unit
   
-  var dontDelete: js.UndefOr[`true`] = js.native
+  var dontDelete: js.UndefOr[`true`] = js.undefined
   
-  var expert: js.UndefOr[`true`] = js.native
+  var expert: js.UndefOr[`true`] = js.undefined
   
-  var hostname: js.UndefOr[String] = js.native
+  var hostname: js.UndefOr[String] = js.undefined
   
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
-  var installedVersion: js.UndefOr[String] = js.native
+  var installedVersion: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var platform: js.UndefOr[JavascriptSlashNodeDotjs] = js.native
+  var platform: js.UndefOr[JavascriptSlashNodeDotjs] = js.undefined
   
-  var role: js.UndefOr[String] = js.native
+  var role: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[`js-controller`] = js.native
+  var `type`: js.UndefOr[`js-controller`] = js.undefined
 }
 object PartialHostCommon {
   
   @scala.inline
-  def apply(): PartialHostCommon = {
-    val __obj = js.Dynamic.literal()
+  def apply(custom: Unit): PartialHostCommon = {
+    val __obj = js.Dynamic.literal(custom = custom.asInstanceOf[js.Any])
     __obj.asInstanceOf[PartialHostCommon]
   }
   
@@ -63,6 +61,9 @@ object PartialHostCommon {
     
     @scala.inline
     def setCmdUndefined: Self = StObject.set(x, "cmd", js.undefined)
+    
+    @scala.inline
+    def setCustom(value: Unit): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDontDelete(value: `true`): Self = StObject.set(x, "dontDelete", value.asInstanceOf[js.Any])

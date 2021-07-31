@@ -2,74 +2,74 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * External repository which contains detailed report related with observedSeq in this resource
   */
-@js.native
-trait SequenceRepository extends BackboneElement {
+trait SequenceRepository
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'datasetId'.
     */
-  var _datasetId: js.UndefOr[Element] = js.native
+  var _datasetId: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'readsetId'.
     */
-  var _readsetId: js.UndefOr[Element] = js.native
+  var _readsetId: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'type'.
     */
-  var _type: js.UndefOr[Element] = js.native
+  var _type: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'url'.
     */
-  var _url: js.UndefOr[Element] = js.native
+  var _url: js.UndefOr[Element] = js.undefined
   
   /**
     * Contains extended information for property 'variantsetId'.
     */
-  var _variantsetId: js.UndefOr[Element] = js.native
+  var _variantsetId: js.UndefOr[Element] = js.undefined
   
   /**
     * Id of the dataset that used to call for dataset in repository
     */
-  var datasetId: js.UndefOr[String] = js.native
+  var datasetId: js.UndefOr[String] = js.undefined
   
   /**
     * Repository's name
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Id of the read
     */
-  var readsetId: js.UndefOr[String] = js.native
+  var readsetId: js.UndefOr[String] = js.undefined
   
   /**
     * directlink | openapi | login | oauth | other
     */
-  var `type`: code = js.native
+  var `type`: code
   
   /**
     * URI of the repository
     */
-  var url: js.UndefOr[uri] = js.native
+  var url: js.UndefOr[uri] = js.undefined
   
   /**
     * Id of the variantset that used to call for variantset in repository
     */
-  var variantsetId: js.UndefOr[String] = js.native
+  var variantsetId: js.UndefOr[String] = js.undefined
 }
 object SequenceRepository {
   

@@ -3,7 +3,6 @@ package typings.firebase.mod.default.firestore
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("firebase", "default.firestore.Timestamp")
@@ -55,6 +54,10 @@ class Timestamp protected () extends StObject {
 /* static members */
 object Timestamp {
   
+  @JSImport("firebase", "default.firestore.Timestamp")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new timestamp from the given date.
     *
@@ -62,9 +65,8 @@ object Timestamp {
     * @return A new `Timestamp` representing the same point in time as the given
     *     date.
     */
-  @JSImport("firebase", "default.firestore.Timestamp.fromDate")
-  @js.native
-  def fromDate(date: Date): typings.firebase.mod.firebase.firestore.Timestamp = js.native
+  @scala.inline
+  def fromDate(date: Date): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromDate")(date.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
   
   /**
     * Creates a new timestamp from the given number of milliseconds.
@@ -74,16 +76,14 @@ object Timestamp {
     * @return A new `Timestamp` representing the same point in time as the given
     *     number of milliseconds.
     */
-  @JSImport("firebase", "default.firestore.Timestamp.fromMillis")
-  @js.native
-  def fromMillis(milliseconds: Double): typings.firebase.mod.firebase.firestore.Timestamp = js.native
+  @scala.inline
+  def fromMillis(milliseconds: Double): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMillis")(milliseconds.asInstanceOf[js.Any]).asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
   
   /**
     * Creates a new timestamp with the current date, with millisecond precision.
     *
     * @return a new timestamp representing the current date.
     */
-  @JSImport("firebase", "default.firestore.Timestamp.now")
-  @js.native
-  def now(): typings.firebase.mod.firebase.firestore.Timestamp = js.native
+  @scala.inline
+  def now(): typings.firebase.mod.firebase.firestore.Timestamp = ^.asInstanceOf[js.Dynamic].applyDynamic("now")().asInstanceOf[typings.firebase.mod.firebase.firestore.Timestamp]
 }

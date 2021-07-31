@@ -2,18 +2,16 @@ package typings.reactSplitPane
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<react-split-pane.react-split-pane.SplitPaneState> */
-  @js.native
   trait PartialSplitPaneState extends StObject {
     
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
-    var resized: js.UndefOr[Boolean] = js.native
+    var resized: js.UndefOr[Boolean] = js.undefined
   }
   object PartialSplitPaneState {
     

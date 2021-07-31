@@ -2,55 +2,53 @@ package typings.chessboardjs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BoardConfig extends StObject {
   
-  var appearSpeed: js.UndefOr[Double | SpeedType] = js.native
+  var appearSpeed: js.UndefOr[Double | SpeedType] = js.undefined
   
-  var draggable: js.UndefOr[Boolean] = js.native
+  var draggable: js.UndefOr[Boolean] = js.undefined
   
-  var dropOffBoard: js.UndefOr[DropOffBoardType] = js.native
+  var dropOffBoard: js.UndefOr[DropOffBoardType] = js.undefined
   
-  var moveSpeed: js.UndefOr[Double | SpeedType] = js.native
+  var moveSpeed: js.UndefOr[Double | SpeedType] = js.undefined
   
-  var onChange: js.UndefOr[Callback] = js.native
+  var onChange: js.UndefOr[Callback] = js.undefined
   
-  var onDragMove: js.UndefOr[Callback] = js.native
+  var onDragMove: js.UndefOr[Callback] = js.undefined
   
-  var onDragStart: js.UndefOr[Callback] = js.native
+  var onDragStart: js.UndefOr[Callback] = js.undefined
   
-  var onDrop: js.UndefOr[Callback] = js.native
+  var onDrop: js.UndefOr[Callback] = js.undefined
   
-  var onMouseoutSquare: js.UndefOr[Callback] = js.native
+  var onMouseoutSquare: js.UndefOr[Callback] = js.undefined
   
-  var onMouseoverSquare: js.UndefOr[Callback] = js.native
+  var onMouseoverSquare: js.UndefOr[Callback] = js.undefined
   
-  var onMoveEnd: js.UndefOr[Callback] = js.native
+  var onMoveEnd: js.UndefOr[Callback] = js.undefined
   
-  var onSnapEnd: js.UndefOr[Callback] = js.native
+  var onSnapEnd: js.UndefOr[Callback] = js.undefined
   
-  var onSnapbackEnd: js.UndefOr[Callback] = js.native
+  var onSnapbackEnd: js.UndefOr[Callback] = js.undefined
   
-  var orientation: js.UndefOr[OrientationType] = js.native
+  var orientation: js.UndefOr[OrientationType] = js.undefined
   
-  var pieceTheme: js.UndefOr[String | Callback] = js.native
+  var pieceTheme: js.UndefOr[String | Callback] = js.undefined
   
-  var position: js.UndefOr[PositionType] = js.native
+  var position: js.UndefOr[PositionType] = js.undefined
   
-  var showErrors: js.UndefOr[Boolean | String | Callback] = js.native
+  var showErrors: js.UndefOr[Boolean | String | Callback] = js.undefined
   
-  var showNotation: js.UndefOr[Boolean] = js.native
+  var showNotation: js.UndefOr[Boolean] = js.undefined
   
-  var snapSpeed: js.UndefOr[Double | SpeedType] = js.native
+  var snapSpeed: js.UndefOr[Double | SpeedType] = js.undefined
   
-  var snapbackSpeed: js.UndefOr[Double | SpeedType] = js.native
+  var snapbackSpeed: js.UndefOr[Double | SpeedType] = js.undefined
   
-  var sparePieces: js.UndefOr[Boolean] = js.native
+  var sparePieces: js.UndefOr[Boolean] = js.undefined
   
-  var trashSpeed: js.UndefOr[Double | SpeedType] = js.native
+  var trashSpeed: js.UndefOr[Double | SpeedType] = js.undefined
 }
 object BoardConfig {
   

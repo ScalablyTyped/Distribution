@@ -4,15 +4,13 @@ import typings.typescript.mod.CallExpression
 import typings.typescript.mod.ObjectLiteralExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveParameter extends StObject {
   
-  var removeParameter: js.Array[CallExpression] = js.native
+  var removeParameter: js.Array[CallExpression]
   
-  var removeProperty: js.Array[ObjectLiteralExpression] = js.native
+  var removeProperty: js.Array[ObjectLiteralExpression]
 }
 object RemoveParameter {
   

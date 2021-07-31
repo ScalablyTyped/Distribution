@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.restMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -57,9 +56,8 @@ object ODataRemoteAssociationSource {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteAssociationSource.create")
-  @js.native
-  def create(model: IModel): ODataRemoteAssociationSource = js.native
+  @scala.inline
+  def create(model: IModel): ODataRemoteAssociationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ODataRemoteAssociationSource]
   
   /**
     * Creates and returns a new ODataRemoteAssociationSource instance in the SDK and on the server.
@@ -70,9 +68,8 @@ object ODataRemoteAssociationSource {
     *  8.10.0 and higher
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteAssociationSource.createIn")
-  @js.native
-  def createIn(container: AssociationBase): ODataRemoteAssociationSource = js.native
+  @scala.inline
+  def createIn(container: AssociationBase): ODataRemoteAssociationSource = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ODataRemoteAssociationSource]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/rest", "rest.ODataRemoteAssociationSource.structureTypeName")

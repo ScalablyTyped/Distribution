@@ -2,10 +2,13 @@ package typings.progressbar
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("progressbar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("progressbar", "Progressbar")
   @js.native
@@ -40,7 +43,6 @@ object mod {
     def total(total: Double): this.type = js.native
   }
   
-  @JSImport("progressbar", "create")
-  @js.native
-  def create(): Progressbar = js.native
+  @scala.inline
+  def create(): Progressbar = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Progressbar]
 }

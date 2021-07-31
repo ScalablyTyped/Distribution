@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationMetadata extends StObject {
   
   /** App Engine flexible environment is available in the given location.@OutputOnly */
-  var flexibleEnvironmentAvailable: js.UndefOr[Boolean] = js.native
+  var flexibleEnvironmentAvailable: js.UndefOr[Boolean] = js.undefined
   
   /** App Engine standard environment is available in the given location.@OutputOnly */
-  var standardEnvironmentAvailable: js.UndefOr[Boolean] = js.native
+  var standardEnvironmentAvailable: js.UndefOr[Boolean] = js.undefined
 }
 object LocationMetadata {
   

@@ -7,7 +7,6 @@ import typings.expressServeStaticCore.mod.ParamsDictionary
 import typings.expressServeStaticCore.mod.Query
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,34 +14,35 @@ object mod {
   /**
     * Node.js middleware for serving a favicon.
     */
-  @JSImport("express-debug", JSImport.Namespace)
-  @js.native
-  def apply(app: Application_): Unit = js.native
-  @JSImport("express-debug", JSImport.Namespace)
-  @js.native
-  def apply(app: Application_, settings: Depth): Unit = js.native
+  @scala.inline
+  def apply(app: Application_): Unit = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(app: Application_, settings: Depth): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("express-debug", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait CustomPanel extends StObject {
     
     @JSName("finalize")
-    var finalize_FCustomPanel: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Unit]] = js.native
+    var finalize_FCustomPanel: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Unit]] = js.undefined
     
-    var initialize: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Unit]] = js.native
+    var initialize: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Unit]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
-    var post_render: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Unit]] = js.native
+    var post_render: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Unit]] = js.undefined
     
-    var pre_render: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, _, _, Query], Unit]] = js.native
+    var pre_render: js.UndefOr[js.Function1[/* req */ Request_[ParamsDictionary, js.Any, js.Any, Query], Unit]] = js.undefined
     
-    def process(locals: js.Any): js.Any = js.native
+    def process(locals: js.Any): js.Any
     
-    var standalone: js.UndefOr[Boolean] = js.native
+    var standalone: js.UndefOr[Boolean] = js.undefined
     
-    var template: String = js.native
+    var template: String
   }
   object CustomPanel {
     
@@ -56,13 +56,13 @@ object mod {
     implicit class CustomPanelMutableBuilder[Self <: CustomPanel] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setFinalize_(value: /* req */ Request_[ParamsDictionary, _, _, Query] => Unit): Self = StObject.set(x, "finalize", js.Any.fromFunction1(value))
+      def setFinalize_(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Unit): Self = StObject.set(x, "finalize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFinalize_Undefined: Self = StObject.set(x, "finalize", js.undefined)
       
       @scala.inline
-      def setInitialize(value: /* req */ Request_[ParamsDictionary, _, _, Query] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
+      def setInitialize(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Unit): Self = StObject.set(x, "initialize", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInitializeUndefined: Self = StObject.set(x, "initialize", js.undefined)
@@ -77,13 +77,13 @@ object mod {
       def setOptionsUndefined: Self = StObject.set(x, "options", js.undefined)
       
       @scala.inline
-      def setPost_render(value: /* req */ Request_[ParamsDictionary, _, _, Query] => Unit): Self = StObject.set(x, "post_render", js.Any.fromFunction1(value))
+      def setPost_render(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Unit): Self = StObject.set(x, "post_render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPost_renderUndefined: Self = StObject.set(x, "post_render", js.undefined)
       
       @scala.inline
-      def setPre_render(value: /* req */ Request_[ParamsDictionary, _, _, Query] => Unit): Self = StObject.set(x, "pre_render", js.Any.fromFunction1(value))
+      def setPre_render(value: /* req */ Request_[ParamsDictionary, js.Any, js.Any, Query] => Unit): Self = StObject.set(x, "pre_render", js.Any.fromFunction1(value))
       
       @scala.inline
       def setPre_renderUndefined: Self = StObject.set(x, "pre_render", js.undefined)

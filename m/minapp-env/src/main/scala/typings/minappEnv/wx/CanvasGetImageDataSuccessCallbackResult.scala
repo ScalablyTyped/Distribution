@@ -2,17 +2,15 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CanvasGetImageDataSuccessCallbackResult extends StObject {
   
   /** 图像数据矩形的高度 */
-  var height: Double = js.native
+  var height: Double
   
   /** 图像数据矩形的宽度 */
-  var width: Double = js.native
+  var width: Double
 }
 object CanvasGetImageDataSuccessCallbackResult {
   

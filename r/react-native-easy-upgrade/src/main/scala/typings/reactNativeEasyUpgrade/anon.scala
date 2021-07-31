@@ -4,31 +4,29 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AllowedInMetered extends StObject {
     
-    var allowedInMetered: js.UndefOr[Boolean] = js.native
+    var allowedInMetered: js.UndefOr[Boolean] = js.undefined
     
-    var allowedInRoaming: js.UndefOr[Boolean] = js.native
+    var allowedInRoaming: js.UndefOr[Boolean] = js.undefined
     
-    var downloadDescription: js.UndefOr[String] = js.native
+    var downloadDescription: js.UndefOr[String] = js.undefined
     
-    var downloadTitle: js.UndefOr[String] = js.native
+    var downloadTitle: js.UndefOr[String] = js.undefined
     
-    var external: js.UndefOr[Boolean] = js.native
+    var external: js.UndefOr[Boolean] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var saveAsName: js.UndefOr[String] = js.native
+    var saveAsName: js.UndefOr[String] = js.undefined
     
-    var showInDownloads: js.UndefOr[Boolean] = js.native
+    var showInDownloads: js.UndefOr[Boolean] = js.undefined
     
-    var tempDownloadPath: String = js.native
+    var tempDownloadPath: String
   }
   object AllowedInMetered {
     
@@ -94,13 +92,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var trackViewUrl: String = js.native
+    var trackViewUrl: String
     
-    var version: String = js.native
+    var version: String
   }
   object Dictkey {
     
@@ -121,18 +119,17 @@ object anon {
     }
   }
   
-  @js.native
   trait HasNewVersion extends StObject {
     
-    var hasNewVersion: Boolean = js.native
+    var hasNewVersion: Boolean
     
-    var latestVersion: String = js.native
+    var latestVersion: String
     
-    var localVersion: String = js.native
+    var localVersion: String
     
-    var lookupInfo: Dictkey = js.native
+    var lookupInfo: Dictkey
     
-    var trackViewUrl: String = js.native
+    var trackViewUrl: String
   }
   object HasNewVersion {
     
@@ -169,26 +166,25 @@ object anon {
   }
   
   /* Inlined std.Partial<react-native-easy-upgrade.react-native-easy-upgrade.Options> */
-  @js.native
   trait PartialOptions extends StObject {
     
-    var downloadApkEnd: js.UndefOr[js.Function1[/* path */ String, _]] = js.native
+    var downloadApkEnd: js.UndefOr[js.Function1[/* path */ String, js.Any]] = js.undefined
     
-    var downloadApkName: js.UndefOr[String] = js.native
+    var downloadApkName: js.UndefOr[String] = js.undefined
     
-    var downloadDescription: js.UndefOr[String] = js.native
+    var downloadDescription: js.UndefOr[String] = js.undefined
     
-    var downloadDestDirectory: js.UndefOr[String] = js.native
+    var downloadDestDirectory: js.UndefOr[String] = js.undefined
     
-    var downloadTitle: js.UndefOr[String] = js.native
+    var downloadTitle: js.UndefOr[String] = js.undefined
     
-    var iOSAppId: js.UndefOr[String] = js.native
+    var iOSAppId: js.UndefOr[String] = js.undefined
     
-    var iOSAppLookupUrl: js.UndefOr[String] = js.native
+    var iOSAppLookupUrl: js.UndefOr[String] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* err */ Error, _]] = js.native
+    var onError: js.UndefOr[js.Function1[/* err */ Error, js.Any]] = js.undefined
     
-    var shouldCheckApkHasDownloaded: js.UndefOr[Boolean] = js.native
+    var shouldCheckApkHasDownloaded: js.UndefOr[Boolean] = js.undefined
   }
   object PartialOptions {
     
@@ -202,7 +198,7 @@ object anon {
     implicit class PartialOptionsMutableBuilder[Self <: PartialOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setDownloadApkEnd(value: /* path */ String => _): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
+      def setDownloadApkEnd(value: /* path */ String => js.Any): Self = StObject.set(x, "downloadApkEnd", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDownloadApkEndUndefined: Self = StObject.set(x, "downloadApkEnd", js.undefined)
@@ -244,7 +240,7 @@ object anon {
       def setIOSAppLookupUrlUndefined: Self = StObject.set(x, "iOSAppLookupUrl", js.undefined)
       
       @scala.inline
-      def setOnError(value: /* err */ Error => _): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
+      def setOnError(value: /* err */ Error => js.Any): Self = StObject.set(x, "onError", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnErrorUndefined: Self = StObject.set(x, "onError", js.undefined)
@@ -257,12 +253,11 @@ object anon {
     }
   }
   
-  @js.native
   trait VERSIONCODE extends StObject {
     
-    var VERSION_CODE: String = js.native
+    var VERSION_CODE: String
     
-    var VERSION_NAME: String = js.native
+    var VERSION_NAME: String
   }
   object VERSIONCODE {
     

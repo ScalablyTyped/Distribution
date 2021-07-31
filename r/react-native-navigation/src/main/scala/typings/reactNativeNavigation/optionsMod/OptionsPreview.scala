@@ -2,40 +2,38 @@ package typings.reactNativeNavigation.optionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptionsPreview extends StObject {
   
   /**
     * List of actions that will appear underneath the preview window.
     * They can be nested for sub actions.
     */
-  var actions: js.UndefOr[js.Array[OptionsPreviewAction]] = js.native
+  var actions: js.UndefOr[js.Array[OptionsPreviewAction]] = js.undefined
   
   /**
     * You can control if the users gesture will result in pushing
     * the preview screen into the stack.
     */
-  var commit: js.UndefOr[Boolean] = js.native
+  var commit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Height of the preview
     */
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
   /**
     * Pass a react node tag to mark a SourceRect for a specific
     * peek and pop preview element.
     */
-  var reactTag: js.UndefOr[Double] = js.native
+  var reactTag: js.UndefOr[Double] = js.undefined
   
   /**
     * You can set this property specify the width of the preview.
     * If the width is greater than the device width, it will be zoomed in.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object OptionsPreview {
   

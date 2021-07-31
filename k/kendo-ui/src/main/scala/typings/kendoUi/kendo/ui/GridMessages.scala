@@ -2,17 +2,15 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GridMessages extends StObject {
   
-  var commands: js.UndefOr[GridMessagesCommands] = js.native
+  var commands: js.UndefOr[GridMessagesCommands] = js.undefined
   
-  var expandCollapseColumnHeader: js.UndefOr[String] = js.native
+  var expandCollapseColumnHeader: js.UndefOr[String] = js.undefined
   
-  var noRecords: js.UndefOr[String] = js.native
+  var noRecords: js.UndefOr[String] = js.undefined
 }
 object GridMessages {
   

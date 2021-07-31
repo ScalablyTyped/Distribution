@@ -2,23 +2,21 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPrintOptionDetails extends StObject {
   
-  var errorText: String = js.native
+  var errorText: String
   
-  var optionId: String = js.native
+  var optionId: String
   
-  var optionType: PrintOptionType = js.native
+  var optionType: PrintOptionType
   
-  var state: PrintOptionStates = js.native
+  var state: PrintOptionStates
   
-  def trySetValue(value: js.Any): Boolean = js.native
+  def trySetValue(value: js.Any): Boolean
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object IPrintOptionDetails {
   

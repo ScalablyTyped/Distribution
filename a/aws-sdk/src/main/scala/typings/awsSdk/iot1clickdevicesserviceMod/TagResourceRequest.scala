@@ -2,16 +2,14 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TagResourceRequest extends StObject {
   
   /**
     * The ARN of the resource.
     */
-  var ResourceArn: string = js.native
+  var ResourceArn: string
   
   /**
     * A collection of key/value pairs defining the resource tags. For example, {
@@ -20,7 +18,7 @@ trait TagResourceRequest extends StObject {
     
     
     */
-  var Tags: mapOfString = js.native
+  var Tags: mapOfString
 }
 object TagResourceRequest {
   

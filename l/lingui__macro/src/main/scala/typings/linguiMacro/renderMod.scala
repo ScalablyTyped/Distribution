@@ -3,19 +3,17 @@ package typings.linguiMacro
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object renderMod {
   
-  @js.native
   trait RenderProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var render: js.UndefOr[ReactNode] = js.native
+    var render: js.UndefOr[ReactNode] = js.undefined
   }
   object RenderProps {
     

@@ -3,16 +3,15 @@ package typings.arangodb.ArangoDB
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryAstNode
-  extends /* key */ StringDictionary[js.Any] {
+  extends StObject
+     with /* key */ StringDictionary[js.Any] {
   
-  var subNodes: js.UndefOr[js.Array[QueryAstNode]] = js.native
+  var subNodes: js.UndefOr[js.Array[QueryAstNode]] = js.undefined
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object QueryAstNode {
   

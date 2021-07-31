@@ -2,41 +2,39 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApplicationRequest extends StObject {
   
   /**
     * Describes application configuration updates.
     */
-  var ApplicationConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationConfigurationUpdate] = js.native
+  var ApplicationConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.ApplicationConfigurationUpdate] = js.undefined
   
   /**
     * The name of the application to update.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * Describes application Amazon CloudWatch logging option updates. You can only update existing CloudWatch logging options with this action. To add a new CloudWatch logging option, use AddApplicationCloudWatchLoggingOption.
     */
-  var CloudWatchLoggingOptionUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptionUpdates] = js.native
+  var CloudWatchLoggingOptionUpdates: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.CloudWatchLoggingOptionUpdates] = js.undefined
   
   /**
     * The current application version ID. You can retrieve the application version ID using DescribeApplication.
     */
-  var CurrentApplicationVersionId: ApplicationVersionId = js.native
+  var CurrentApplicationVersionId: ApplicationVersionId
   
   /**
     * Describes updates to the application's starting parameters.
     */
-  var RunConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RunConfigurationUpdate] = js.native
+  var RunConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.RunConfigurationUpdate] = js.undefined
   
   /**
     * Describes updates to the service execution role.
     */
-  var ServiceExecutionRoleUpdate: js.UndefOr[RoleARN] = js.native
+  var ServiceExecutionRoleUpdate: js.UndefOr[RoleARN] = js.undefined
 }
 object UpdateApplicationRequest {
   

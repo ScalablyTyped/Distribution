@@ -7,15 +7,13 @@ import typings.rx.Rx.Observable
 import typings.rx.Rx.SchedulerStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Rx_ {
   
-  @js.native
   trait IObservable[T] extends StObject {
     
-    def safeApply($scope: IScope, callback: js.Function1[/* data */ T, Unit]): Observable[T] = js.native
+    def safeApply($scope: IScope, callback: js.Function1[/* data */ T, Unit]): Observable[T]
   }
   object IObservable {
     
@@ -26,7 +24,7 @@ object Rx_ {
     }
     
     @scala.inline
-    implicit class IObservableMutableBuilder[Self <: IObservable[_], T] (val x: Self with IObservable[T]) extends AnyVal {
+    implicit class IObservableMutableBuilder[Self <: IObservable[?], T] (val x: Self & IObservable[T]) extends AnyVal {
       
       @scala.inline
       def setSafeApply(value: (IScope, js.Function1[/* data */ T, Unit]) => Observable[T]): Self = StObject.set(x, "safeApply", js.Any.fromFunction2(value))
@@ -37,7 +35,8 @@ object Rx_ {
   
   @js.native
   trait ScopeSchedulerStatic
-    extends SchedulerStatic
+    extends StObject
+       with SchedulerStatic
        with Instantiable1[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify angular.IScope */ /* $scope */ js.Any, 
           ScopeScheduler

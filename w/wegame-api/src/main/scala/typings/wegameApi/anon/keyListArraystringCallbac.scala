@@ -2,23 +2,21 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  keyList :std.Array<string>} & wegame-api.wx.types.CallbacksWithType2<{  encryptedData :string,   cloudID :string}, {  errMsg :string,   errCode :number}> */
-@js.native
 trait keyListArraystringCallbac extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* res */ ErrCode, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* res */ ErrCode, Unit]] = js.undefined
   
   /**
     * 要获取的 key 列表
     */
-  var keyList: js.Array[String] = js.native
+  var keyList: js.Array[String]
   
-  var success: js.UndefOr[js.Function1[/* res */ CloudID, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ CloudID, Unit]] = js.undefined
 }
 object keyListArraystringCallbac {
   

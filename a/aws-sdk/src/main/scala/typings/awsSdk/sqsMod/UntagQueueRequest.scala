@@ -2,21 +2,19 @@ package typings.awsSdk.sqsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagQueueRequest extends StObject {
   
   /**
     * The URL of the queue.
     */
-  var QueueUrl: String = js.native
+  var QueueUrl: String
   
   /**
     * The list of tags to be removed from the specified queue.
     */
-  var TagKeys: TagKeyList = js.native
+  var TagKeys: TagKeyList
 }
 object UntagQueueRequest {
   

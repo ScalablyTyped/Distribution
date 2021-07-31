@@ -2,15 +2,13 @@ package typings.pubnub.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetCustom[Custom /* <: ObjectCustom */] extends StObject {
   
-  var custom: js.UndefOr[Custom] = js.native
+  var custom: js.UndefOr[Custom] = js.undefined
   
-  var id: String = js.native
+  var id: String
 }
 object SetCustom {
   
@@ -21,7 +19,7 @@ object SetCustom {
   }
   
   @scala.inline
-  implicit class SetCustomMutableBuilder[Self <: SetCustom[_], Custom /* <: ObjectCustom */] (val x: Self with SetCustom[Custom]) extends AnyVal {
+  implicit class SetCustomMutableBuilder[Self <: SetCustom[?], Custom /* <: ObjectCustom */] (val x: Self & SetCustom[Custom]) extends AnyVal {
     
     @scala.inline
     def setCustom(value: Custom): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])

@@ -13,7 +13,6 @@ import typings.openfin.utilsMod.LayoutPresetTypes
 import typings.openfin.webcontentsWebcontentsMod.ImageFormat
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object openfinStrings {
@@ -44,7 +43,9 @@ object openfinStrings {
   def application: application = "application".asInstanceOf[application]
   
   @js.native
-  sealed trait `application-closed` extends OpenFinSystemEventType
+  sealed trait `application-closed`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `application-closed`: `application-closed` = "application-closed".asInstanceOf[`application-closed`]
   
@@ -54,12 +55,16 @@ object openfinStrings {
   def `application-connected`: `application-connected` = "application-connected".asInstanceOf[`application-connected`]
   
   @js.native
-  sealed trait `application-crashed` extends OpenFinSystemEventType
+  sealed trait `application-crashed`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `application-crashed`: `application-crashed` = "application-crashed".asInstanceOf[`application-crashed`]
   
   @js.native
-  sealed trait `application-created` extends OpenFinSystemEventType
+  sealed trait `application-created`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `application-created`: `application-created` = "application-created".asInstanceOf[`application-created`]
   
@@ -84,7 +89,9 @@ object openfinStrings {
   def `application-responding`: `application-responding` = "application-responding".asInstanceOf[`application-responding`]
   
   @js.native
-  sealed trait `application-started` extends OpenFinSystemEventType
+  sealed trait `application-started`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `application-started`: `application-started` = "application-started".asInstanceOf[`application-started`]
   
@@ -99,7 +106,9 @@ object openfinStrings {
   def attached: attached = "attached".asInstanceOf[attached]
   
   @js.native
-  sealed trait `auth-requested` extends OpenFinWindowEventType
+  sealed trait `auth-requested`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `auth-requested`: `auth-requested` = "auth-requested".asInstanceOf[`auth-requested`]
   
@@ -109,32 +118,44 @@ object openfinStrings {
   def `begin-user-bounds-changing`: `begin-user-bounds-changing` = "begin-user-bounds-changing".asInstanceOf[`begin-user-bounds-changing`]
   
   @js.native
-  sealed trait blurred extends OpenFinWindowEventType
+  sealed trait blurred
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def blurred: blurred = "blurred".asInstanceOf[blurred]
   
   @js.native
-  sealed trait bmp extends ImageFormat
+  sealed trait bmp
+    extends StObject
+       with ImageFormat
   @scala.inline
   def bmp: bmp = "bmp".asInstanceOf[bmp]
   
   @js.native
-  sealed trait `bottom-left` extends AnchorType
+  sealed trait `bottom-left`
+    extends StObject
+       with AnchorType
   @scala.inline
   def `bottom-left`: `bottom-left` = "bottom-left".asInstanceOf[`bottom-left`]
   
   @js.native
-  sealed trait `bottom-right` extends AnchorType
+  sealed trait `bottom-right`
+    extends StObject
+       with AnchorType
   @scala.inline
   def `bottom-right`: `bottom-right` = "bottom-right".asInstanceOf[`bottom-right`]
   
   @js.native
-  sealed trait `bounds-changed` extends OpenFinWindowEventType
+  sealed trait `bounds-changed`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `bounds-changed`: `bounds-changed` = "bounds-changed".asInstanceOf[`bounds-changed`]
   
   @js.native
-  sealed trait `bounds-changing` extends OpenFinWindowEventType
+  sealed trait `bounds-changing`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `bounds-changing`: `bounds-changing` = "bounds-changing".asInstanceOf[`bounds-changing`]
   
@@ -164,13 +185,16 @@ object openfinStrings {
   def close: close = "close".asInstanceOf[close]
   
   @js.native
-  sealed trait `close-requested` extends OpenFinWindowEventType
+  sealed trait `close-requested`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `close-requested`: `close-requested` = "close-requested".asInstanceOf[`close-requested`]
   
   @js.native
   sealed trait closed
-    extends OpenFinApplicationEventType
+    extends StObject
+       with OpenFinApplicationEventType
        with OpenFinWindowEventType
   @scala.inline
   def closed: closed = "closed".asInstanceOf[closed]
@@ -186,7 +210,9 @@ object openfinStrings {
   def column: column = "column".asInstanceOf[column]
   
   @js.native
-  sealed trait columns extends LayoutPresetTypes
+  sealed trait columns
+    extends StObject
+       with LayoutPresetTypes
   @scala.inline
   def columns: columns = "columns".asInstanceOf[columns]
   
@@ -197,13 +223,16 @@ object openfinStrings {
   
   @js.native
   sealed trait connected
-    extends OpenFinApplicationEventType
+    extends StObject
+       with OpenFinApplicationEventType
        with OpenFinExternalApplicationEventType
   @scala.inline
   def connected: connected = "connected".asInstanceOf[connected]
   
   @js.native
-  sealed trait crashed extends OpenFinApplicationEventType
+  sealed trait crashed
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def crashed: crashed = "crashed".asInstanceOf[crashed]
   
@@ -223,7 +252,9 @@ object openfinStrings {
   def debug: debug = "debug".asInstanceOf[debug]
   
   @js.native
-  sealed trait `desktop-icon-clicked` extends OpenFinSystemEventType
+  sealed trait `desktop-icon-clicked`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `desktop-icon-clicked`: `desktop-icon-clicked` = "desktop-icon-clicked".asInstanceOf[`desktop-icon-clicked`]
   
@@ -233,12 +264,16 @@ object openfinStrings {
   def destroyed: destroyed = "destroyed".asInstanceOf[destroyed]
   
   @js.native
-  sealed trait `disabled-frame-bounds-changed` extends OpenFinWindowEventType
+  sealed trait `disabled-frame-bounds-changed`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `disabled-frame-bounds-changed`: `disabled-frame-bounds-changed` = "disabled-frame-bounds-changed".asInstanceOf[`disabled-frame-bounds-changed`]
   
   @js.native
-  sealed trait `disabled-frame-bounds-changing` extends OpenFinWindowEventType
+  sealed trait `disabled-frame-bounds-changing`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `disabled-frame-bounds-changing`: `disabled-frame-bounds-changing` = "disabled-frame-bounds-changing".asInstanceOf[`disabled-frame-bounds-changing`]
   
@@ -258,12 +293,16 @@ object openfinStrings {
   def disband: disband = "disband".asInstanceOf[disband]
   
   @js.native
-  sealed trait disconnected extends OpenFinExternalApplicationEventType
+  sealed trait disconnected
+    extends StObject
+       with OpenFinExternalApplicationEventType
   @scala.inline
   def disconnected: disconnected = "disconnected".asInstanceOf[disconnected]
   
   @js.native
-  sealed trait embedded extends OpenFinWindowEventType
+  sealed trait embedded
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def embedded: embedded = "embedded".asInstanceOf[embedded]
   
@@ -273,22 +312,30 @@ object openfinStrings {
   def `end-user-bounds-changing`: `end-user-bounds-changing` = "end-user-bounds-changing".asInstanceOf[`end-user-bounds-changing`]
   
   @js.native
-  sealed trait error extends LogLevel
+  sealed trait error
+    extends StObject
+       with LogLevel
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait `external connection` extends EntityType
+  sealed trait `external connection`
+    extends StObject
+       with EntityType
   @scala.inline
   def `external connection`: `external connection` = ("external connection").asInstanceOf[`external connection`]
   
   @js.native
-  sealed trait `external-process-exited` extends OpenFinWindowEventType
+  sealed trait `external-process-exited`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `external-process-exited`: `external-process-exited` = "external-process-exited".asInstanceOf[`external-process-exited`]
   
   @js.native
-  sealed trait `external-process-started` extends OpenFinWindowEventType
+  sealed trait `external-process-started`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `external-process-started`: `external-process-started` = "external-process-started".asInstanceOf[`external-process-started`]
   
@@ -328,7 +375,9 @@ object openfinStrings {
   def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait fatal extends LogLevel
+  sealed trait fatal
+    extends StObject
+       with LogLevel
   @scala.inline
   def fatal: fatal = "fatal".asInstanceOf[fatal]
   
@@ -348,7 +397,9 @@ object openfinStrings {
   def fdc3Dotorganization: fdc3Dotorganization = "fdc3.organization".asInstanceOf[fdc3Dotorganization]
   
   @js.native
-  sealed trait focused extends OpenFinWindowEventType
+  sealed trait focused
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def focused: focused = "focused".asInstanceOf[focused]
   
@@ -358,12 +409,16 @@ object openfinStrings {
   def frame: frame = "frame".asInstanceOf[frame]
   
   @js.native
-  sealed trait `frame-disabled` extends OpenFinWindowEventType
+  sealed trait `frame-disabled`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `frame-disabled`: `frame-disabled` = "frame-disabled".asInstanceOf[`frame-disabled`]
   
   @js.native
-  sealed trait `frame-enabled` extends OpenFinWindowEventType
+  sealed trait `frame-enabled`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `frame-enabled`: `frame-enabled` = "frame-enabled".asInstanceOf[`frame-enabled`]
   
@@ -373,17 +428,23 @@ object openfinStrings {
   def `global-hotkey`: `global-hotkey` = "global-hotkey".asInstanceOf[`global-hotkey`]
   
   @js.native
-  sealed trait grid extends LayoutPresetTypes
+  sealed trait grid
+    extends StObject
+       with LayoutPresetTypes
   @scala.inline
   def grid: grid = "grid".asInstanceOf[grid]
   
   @js.native
-  sealed trait `group-changed` extends OpenFinWindowEventType
+  sealed trait `group-changed`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `group-changed`: `group-changed` = "group-changed".asInstanceOf[`group-changed`]
   
   @js.native
-  sealed trait hidden extends OpenFinWindowEventType
+  sealed trait hidden
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def hidden: hidden = "hidden".asInstanceOf[hidden]
   
@@ -403,12 +464,16 @@ object openfinStrings {
   def hotkey: hotkey = "hotkey".asInstanceOf[hotkey]
   
   @js.native
-  sealed trait `idle-state-changed` extends OpenFinSystemEventType
+  sealed trait `idle-state-changed`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `idle-state-changed`: `idle-state-changed` = "idle-state-changed".asInstanceOf[`idle-state-changed`]
   
   @js.native
-  sealed trait iframe extends EntityType
+  sealed trait iframe
+    extends StObject
+       with EntityType
   @scala.inline
   def iframe: iframe = "iframe".asInstanceOf[iframe]
   
@@ -418,13 +483,16 @@ object openfinStrings {
   def image: image = "image".asInstanceOf[image]
   
   @js.native
-  sealed trait info extends LogLevel
+  sealed trait info
+    extends StObject
+       with LogLevel
   @scala.inline
   def info: info = "info".asInstanceOf[info]
   
   @js.native
   sealed trait initialized
-    extends OpenFinApplicationEventType
+    extends StObject
+       with OpenFinApplicationEventType
        with OpenFinWindowEventType
   @scala.inline
   def initialized: initialized = "initialized".asInstanceOf[initialized]
@@ -435,7 +503,9 @@ object openfinStrings {
   def join: join = "join".asInstanceOf[join]
   
   @js.native
-  sealed trait jpg extends ImageFormat
+  sealed trait jpg
+    extends StObject
+       with ImageFormat
   @scala.inline
   def jpg: jpg = "jpg".asInstanceOf[jpg]
   
@@ -515,12 +585,16 @@ object openfinStrings {
   def mainFrame: mainFrame = "mainFrame".asInstanceOf[mainFrame]
   
   @js.native
-  sealed trait `manifest-changed` extends OpenFinApplicationEventType
+  sealed trait `manifest-changed`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `manifest-changed`: `manifest-changed` = "manifest-changed".asInstanceOf[`manifest-changed`]
   
   @js.native
-  sealed trait maximized extends OpenFinWindowEventType
+  sealed trait maximized
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def maximized: maximized = "maximized".asInstanceOf[maximized]
   
@@ -535,17 +609,23 @@ object openfinStrings {
   def message: message = "message".asInstanceOf[message]
   
   @js.native
-  sealed trait minimized extends OpenFinWindowEventType
+  sealed trait minimized
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def minimized: minimized = "minimized".asInstanceOf[minimized]
   
   @js.native
-  sealed trait `monitor-info-changed` extends OpenFinSystemEventType
+  sealed trait `monitor-info-changed`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `monitor-info-changed`: `monitor-info-changed` = "monitor-info-changed".asInstanceOf[`monitor-info-changed`]
   
   @js.native
-  sealed trait `navigation-rejected` extends OpenFinWindowEventType
+  sealed trait `navigation-rejected`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `navigation-rejected`: `navigation-rejected` = "navigation-rejected".asInstanceOf[`navigation-rejected`]
   
@@ -570,7 +650,9 @@ object openfinStrings {
   def `normal-termination`: `normal-termination` = "normal-termination".asInstanceOf[`normal-termination`]
   
   @js.native
-  sealed trait `not-responding` extends OpenFinApplicationEventType
+  sealed trait `not-responding`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `not-responding`: `not-responding` = "not-responding".asInstanceOf[`not-responding`]
   
@@ -600,7 +682,9 @@ object openfinStrings {
   def other: other = "other".asInstanceOf[other]
   
   @js.native
-  sealed trait `out-of-memory` extends OpenFinApplicationEventType
+  sealed trait `out-of-memory`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `out-of-memory`: `out-of-memory` = "out-of-memory".asInstanceOf[`out-of-memory`]
   
@@ -620,7 +704,9 @@ object openfinStrings {
   def `platform-snapshot-applied`: `platform-snapshot-applied` = "platform-snapshot-applied".asInstanceOf[`platform-snapshot-applied`]
   
   @js.native
-  sealed trait png extends ImageFormat
+  sealed trait png
+    extends StObject
+       with ImageFormat
   @scala.inline
   def png: png = "png".asInstanceOf[png]
   
@@ -651,7 +737,8 @@ object openfinStrings {
   
   @js.native
   sealed trait registered
-    extends OpenFinGlobalHotkeyEventType
+    extends StObject
+       with OpenFinGlobalHotkeyEventType
        with nonHotkeyEvents
   @scala.inline
   def registered: registered = "registered".asInstanceOf[registered]
@@ -677,12 +764,16 @@ object openfinStrings {
   def `request-external-authorization`: `request-external-authorization` = "request-external-authorization".asInstanceOf[`request-external-authorization`]
   
   @js.native
-  sealed trait responding extends OpenFinApplicationEventType
+  sealed trait responding
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def responding: responding = "responding".asInstanceOf[responding]
   
   @js.native
-  sealed trait restored extends OpenFinWindowEventType
+  sealed trait restored
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def restored: restored = "restored".asInstanceOf[restored]
   
@@ -692,12 +783,16 @@ object openfinStrings {
   def row: row = "row".asInstanceOf[row]
   
   @js.native
-  sealed trait rows extends LayoutPresetTypes
+  sealed trait rows
+    extends StObject
+       with LayoutPresetTypes
   @scala.inline
   def rows: rows = "rows".asInstanceOf[rows]
   
   @js.native
-  sealed trait `run-requested` extends OpenFinApplicationEventType
+  sealed trait `run-requested`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `run-requested`: `run-requested` = "run-requested".asInstanceOf[`run-requested`]
   
@@ -707,7 +802,9 @@ object openfinStrings {
   def script: script = "script".asInstanceOf[script]
   
   @js.native
-  sealed trait `session-changed` extends OpenFinSystemEventType
+  sealed trait `session-changed`
+    extends StObject
+       with OpenFinSystemEventType
   @scala.inline
   def `session-changed`: `session-changed` = "session-changed".asInstanceOf[`session-changed`]
   
@@ -722,12 +819,16 @@ object openfinStrings {
   def show: show = "show".asInstanceOf[show]
   
   @js.native
-  sealed trait `show-requested` extends OpenFinWindowEventType
+  sealed trait `show-requested`
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def `show-requested`: `show-requested` = "show-requested".asInstanceOf[`show-requested`]
   
   @js.native
-  sealed trait shown extends OpenFinWindowEventType
+  sealed trait shown
+    extends StObject
+       with OpenFinWindowEventType
   @scala.inline
   def shown: shown = "shown".asInstanceOf[shown]
   
@@ -742,7 +843,9 @@ object openfinStrings {
   def source: source = "source".asInstanceOf[source]
   
   @js.native
-  sealed trait started extends OpenFinApplicationEventType
+  sealed trait started
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def started: started = "started".asInstanceOf[started]
   
@@ -772,7 +875,9 @@ object openfinStrings {
   def system: system = "system".asInstanceOf[system]
   
   @js.native
-  sealed trait tabs extends LayoutPresetTypes
+  sealed trait tabs
+    extends StObject
+       with LayoutPresetTypes
   @scala.inline
   def tabs: tabs = "tabs".asInstanceOf[tabs]
   
@@ -792,22 +897,30 @@ object openfinStrings {
   def terminated: terminated = "terminated".asInstanceOf[terminated]
   
   @js.native
-  sealed trait `top-left` extends AnchorType
+  sealed trait `top-left`
+    extends StObject
+       with AnchorType
   @scala.inline
   def `top-left`: `top-left` = "top-left".asInstanceOf[`top-left`]
   
   @js.native
-  sealed trait `top-right` extends AnchorType
+  sealed trait `top-right`
+    extends StObject
+       with AnchorType
   @scala.inline
   def `top-right`: `top-right` = "top-right".asInstanceOf[`top-right`]
   
   @js.native
-  sealed trait `tray-icon-clicked` extends OpenFinApplicationEventType
+  sealed trait `tray-icon-clicked`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `tray-icon-clicked`: `tray-icon-clicked` = "tray-icon-clicked".asInstanceOf[`tray-icon-clicked`]
   
   @js.native
-  sealed trait unknown extends EntityType
+  sealed trait unknown
+    extends StObject
+       with EntityType
   @scala.inline
   def unknown: unknown = "unknown".asInstanceOf[unknown]
   
@@ -818,7 +931,8 @@ object openfinStrings {
   
   @js.native
   sealed trait unregistered
-    extends OpenFinGlobalHotkeyEventType
+    extends StObject
+       with OpenFinGlobalHotkeyEventType
        with nonHotkeyEvents
   @scala.inline
   def unregistered: unregistered = "unregistered".asInstanceOf[unregistered]
@@ -834,12 +948,16 @@ object openfinStrings {
   def `user-movement-enabled`: `user-movement-enabled` = "user-movement-enabled".asInstanceOf[`user-movement-enabled`]
   
   @js.native
-  sealed trait verbose extends LogLevel
+  sealed trait verbose
+    extends StObject
+       with LogLevel
   @scala.inline
   def verbose: verbose = "verbose".asInstanceOf[verbose]
   
   @js.native
-  sealed trait view extends EntityType
+  sealed trait view
+    extends StObject
+       with EntityType
   @scala.inline
   def view: view = "view".asInstanceOf[view]
   
@@ -934,7 +1052,9 @@ object openfinStrings {
   def warn: warn = "warn".asInstanceOf[warn]
   
   @js.native
-  sealed trait warning extends LogLevel
+  sealed trait warning
+    extends StObject
+       with LogLevel
   @scala.inline
   def warning: warning = "warning".asInstanceOf[warning]
   
@@ -949,7 +1069,9 @@ object openfinStrings {
   def `will-resize`: `will-resize` = "will-resize".asInstanceOf[`will-resize`]
   
   @js.native
-  sealed trait window extends EntityType
+  sealed trait window
+    extends StObject
+       with EntityType
   @scala.inline
   def window: window = "window".asInstanceOf[window]
   
@@ -959,12 +1081,16 @@ object openfinStrings {
   def `window-added`: `window-added` = "window-added".asInstanceOf[`window-added`]
   
   @js.native
-  sealed trait `window-alert-requested` extends OpenFinApplicationEventType
+  sealed trait `window-alert-requested`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-alert-requested`: `window-alert-requested` = "window-alert-requested".asInstanceOf[`window-alert-requested`]
   
   @js.native
-  sealed trait `window-auth-requested` extends OpenFinApplicationEventType
+  sealed trait `window-auth-requested`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-auth-requested`: `window-auth-requested` = "window-auth-requested".asInstanceOf[`window-auth-requested`]
   
@@ -989,7 +1115,9 @@ object openfinStrings {
   def `window-bounds-changing`: `window-bounds-changing` = "window-bounds-changing".asInstanceOf[`window-bounds-changing`]
   
   @js.native
-  sealed trait `window-closed` extends OpenFinApplicationEventType
+  sealed trait `window-closed`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-closed`: `window-closed` = "window-closed".asInstanceOf[`window-closed`]
   
@@ -1004,7 +1132,9 @@ object openfinStrings {
   def `window-crashed`: `window-crashed` = "window-crashed".asInstanceOf[`window-crashed`]
   
   @js.native
-  sealed trait `window-created` extends OpenFinApplicationEventType
+  sealed trait `window-created`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-created`: `window-created` = "window-created".asInstanceOf[`window-created`]
   
@@ -1029,7 +1159,9 @@ object openfinStrings {
   def `window-embedded`: `window-embedded` = "window-embedded".asInstanceOf[`window-embedded`]
   
   @js.native
-  sealed trait `window-end-load` extends OpenFinApplicationEventType
+  sealed trait `window-end-load`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-end-load`: `window-end-load` = "window-end-load".asInstanceOf[`window-end-load`]
   
@@ -1094,7 +1226,9 @@ object openfinStrings {
   def `window-minimized`: `window-minimized` = "window-minimized".asInstanceOf[`window-minimized`]
   
   @js.native
-  sealed trait `window-navigation-rejected` extends OpenFinApplicationEventType
+  sealed trait `window-navigation-rejected`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-navigation-rejected`: `window-navigation-rejected` = "window-navigation-rejected".asInstanceOf[`window-navigation-rejected`]
   
@@ -1164,7 +1298,9 @@ object openfinStrings {
   def `window-restored`: `window-restored` = "window-restored".asInstanceOf[`window-restored`]
   
   @js.native
-  sealed trait `window-show-requested` extends OpenFinApplicationEventType
+  sealed trait `window-show-requested`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-show-requested`: `window-show-requested` = "window-show-requested".asInstanceOf[`window-show-requested`]
   
@@ -1174,7 +1310,9 @@ object openfinStrings {
   def `window-shown`: `window-shown` = "window-shown".asInstanceOf[`window-shown`]
   
   @js.native
-  sealed trait `window-start-load` extends OpenFinApplicationEventType
+  sealed trait `window-start-load`
+    extends StObject
+       with OpenFinApplicationEventType
   @scala.inline
   def `window-start-load`: `window-start-load` = "window-start-load".asInstanceOf[`window-start-load`]
   

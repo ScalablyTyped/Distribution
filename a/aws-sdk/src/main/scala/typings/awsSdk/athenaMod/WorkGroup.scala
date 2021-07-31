@@ -2,36 +2,34 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkGroup extends StObject {
   
   /**
     * The configuration of the workgroup, which includes the location in Amazon S3 where query results are stored, the encryption configuration, if any, used for query results; whether the Amazon CloudWatch Metrics are enabled for the workgroup; whether workgroup settings override client-side settings; and the data usage limits for the amount of data scanned per query or per workgroup. The workgroup settings override is specified in EnforceWorkGroupConfiguration (true/false) in the WorkGroupConfiguration. See WorkGroupConfiguration$EnforceWorkGroupConfiguration.
     */
-  var Configuration: js.UndefOr[WorkGroupConfiguration] = js.native
+  var Configuration: js.UndefOr[WorkGroupConfiguration] = js.undefined
   
   /**
     * The date and time the workgroup was created.
     */
-  var CreationTime: js.UndefOr[Date] = js.native
+  var CreationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The workgroup description.
     */
-  var Description: js.UndefOr[WorkGroupDescriptionString] = js.native
+  var Description: js.UndefOr[WorkGroupDescriptionString] = js.undefined
   
   /**
     * The workgroup name.
     */
-  var Name: WorkGroupName = js.native
+  var Name: WorkGroupName
   
   /**
     * The state of the workgroup: ENABLED or DISABLED.
     */
-  var State: js.UndefOr[WorkGroupState] = js.native
+  var State: js.UndefOr[WorkGroupState] = js.undefined
 }
 object WorkGroup {
   

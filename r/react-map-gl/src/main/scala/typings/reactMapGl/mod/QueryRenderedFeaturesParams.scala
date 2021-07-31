@@ -2,15 +2,13 @@ package typings.reactMapGl.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRenderedFeaturesParams extends StObject {
   
-  var filter: js.UndefOr[js.Array[_]] = js.native
+  var filter: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var layers: js.UndefOr[js.Array[String]] = js.native
+  var layers: js.UndefOr[js.Array[String]] = js.undefined
 }
 object QueryRenderedFeaturesParams {
   
@@ -24,7 +22,7 @@ object QueryRenderedFeaturesParams {
   implicit class QueryRenderedFeaturesParamsMutableBuilder[Self <: QueryRenderedFeaturesParams] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setFilter(value: js.Array[_]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
+    def setFilter(value: js.Array[js.Any]): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

@@ -12,7 +12,7 @@ Detect Node.JS (as opposite to browser environment). ESM modification
 | Keywords           | detect, node |
 | # releases         | 3 |
 | # dependents       | 2 |
-| # downloads        | 2006249 |
+| # downloads        | 16103317 |
 | # stars            | 0 |
 
 ## Links

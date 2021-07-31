@@ -2,19 +2,17 @@ package typings.jqueryColorpicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryColorpickerInstance extends StObject {
   
-  def close(): Unit = js.native
+  def close(): Unit
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
-  def open(): Unit = js.native
+  def open(): Unit
   
-  def setColor(color: js.Any): Unit = js.native
+  def setColor(color: js.Any): Unit
 }
 object JQueryColorpickerInstance {
   

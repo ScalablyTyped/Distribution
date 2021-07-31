@@ -4,24 +4,23 @@ import typings.antvGMath.typesMod.Point
 import typings.antvGMath.typesMod.PointTuple
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentsMod {
   
-  @JSImport("@antv/g-math/lib/segments", "angleAtSegments")
+  @JSImport("@antv/g-math/lib/segments", JSImport.Namespace)
   @js.native
-  def angleAtSegments(points: js.Array[PointTuple], t: Double): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@antv/g-math/lib/segments", "distanceAtSegment")
-  @js.native
-  def distanceAtSegment(points: js.Array[PointTuple], x: Double, y: Double): Double = js.native
+  @scala.inline
+  def angleAtSegments(points: js.Array[PointTuple], t: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("angleAtSegments")(points.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@antv/g-math/lib/segments", "lengthOfSegment")
-  @js.native
-  def lengthOfSegment(points: js.Array[PointTuple]): Double = js.native
+  @scala.inline
+  def distanceAtSegment(points: js.Array[PointTuple], x: Double, y: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("distanceAtSegment")(points.asInstanceOf[js.Any], x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@antv/g-math/lib/segments", "pointAtSegments")
-  @js.native
-  def pointAtSegments(points: js.Array[PointTuple], t: Double): Point = js.native
+  @scala.inline
+  def lengthOfSegment(points: js.Array[PointTuple]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("lengthOfSegment")(points.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def pointAtSegments(points: js.Array[PointTuple], t: Double): Point = (^.asInstanceOf[js.Dynamic].applyDynamic("pointAtSegments")(points.asInstanceOf[js.Any], t.asInstanceOf[js.Any])).asInstanceOf[Point]
 }

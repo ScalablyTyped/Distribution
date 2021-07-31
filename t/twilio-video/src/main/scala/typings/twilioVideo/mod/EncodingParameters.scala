@@ -2,15 +2,13 @@ package typings.twilioVideo.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncodingParameters extends StObject {
   
-  var maxAudioBitrate: js.UndefOr[Double | Null] = js.native
+  var maxAudioBitrate: js.UndefOr[Double | Null] = js.undefined
   
-  var maxVideoBitrate: js.UndefOr[Double | Null] = js.native
+  var maxVideoBitrate: js.UndefOr[Double | Null] = js.undefined
 }
 object EncodingParameters {
   

@@ -2,25 +2,23 @@ package typings.openseadragon.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Abort extends StObject {
   
-  var abort: js.UndefOr[js.Function0[Unit]] = js.native
+  var abort: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var ajaxHeaders: js.UndefOr[String] = js.native
+  var ajaxHeaders: js.UndefOr[String] = js.undefined
   
-  var ajaxWithCredentials: js.UndefOr[Boolean] = js.native
+  var ajaxWithCredentials: js.UndefOr[Boolean] = js.undefined
   
-  var callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var crossOriginPolicy: js.UndefOr[String | Boolean] = js.native
+  var crossOriginPolicy: js.UndefOr[String | Boolean] = js.undefined
   
-  var loadWithAjax: js.UndefOr[String] = js.native
+  var loadWithAjax: js.UndefOr[String] = js.undefined
   
-  var src: js.UndefOr[String] = js.native
+  var src: js.UndefOr[String] = js.undefined
 }
 object Abort {
   

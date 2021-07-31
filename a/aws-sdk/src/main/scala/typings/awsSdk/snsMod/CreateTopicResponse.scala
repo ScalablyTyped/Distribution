@@ -2,16 +2,14 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateTopicResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) assigned to the created topic.
     */
-  var TopicArn: js.UndefOr[topicARN] = js.native
+  var TopicArn: js.UndefOr[topicARN] = js.undefined
 }
 object CreateTopicResponse {
   

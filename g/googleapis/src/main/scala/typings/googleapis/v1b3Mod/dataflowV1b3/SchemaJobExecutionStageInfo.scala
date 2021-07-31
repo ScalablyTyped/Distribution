@@ -2,21 +2,19 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains information about how a particular google.dataflow.v1beta3.Step
   * will be executed.
   */
-@js.native
 trait SchemaJobExecutionStageInfo extends StObject {
   
   /**
     * The steps associated with the execution stage. Note that stages may have
     * several steps, and that a given step might be run by more than one stage.
     */
-  var stepName: js.UndefOr[js.Array[String]] = js.native
+  var stepName: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaJobExecutionStageInfo {
   

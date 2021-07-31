@@ -12,7 +12,7 @@ Lightweight library with experimental functions for composing asynchronous and e
 | Keywords           | React, Reactive, Events, Rx, RxJS |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 10814 |
+| # downloads        | 6586 |
 | # stars            | 0 |
 
 ## Links

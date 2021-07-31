@@ -2,21 +2,19 @@ package typings.awsSdk.groundstationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * ARN of a resource.
     */
-  var resourceArn: String = js.native
+  var resourceArn: String
   
   /**
     * Keys of a resource tag.
     */
-  var tagKeys: TagKeys = js.native
+  var tagKeys: TagKeys
 }
 object UntagResourceRequest {
   

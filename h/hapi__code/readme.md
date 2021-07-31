@@ -10,9 +10,9 @@ assertion library
 | ------------------ | :-------------: |
 | Full name          | @hapi/code |
 | Keywords           | test, expect, assertion |
-| # releases         | 9 |
+| # releases         | 8 |
 | # dependents       | 10 |
-| # downloads        | 570368 |
+| # downloads        | 650609 |
 | # stars            | 0 |
 
 ## Links

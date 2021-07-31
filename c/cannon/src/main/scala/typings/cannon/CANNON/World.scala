@@ -3,11 +3,12 @@ package typings.cannon.CANNON
 import typings.cannon.anon.Broadphaser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait World extends EventTarget {
+trait World
+  extends StObject
+     with EventTarget {
   
   def addBody(body: Body): Unit = js.native
   
@@ -82,13 +83,13 @@ trait World extends EventTarget {
   var solver: Solver = js.native
   
   def step(dy: Double): Unit = js.native
-  def step(dy: Double, timeSinceLastCalled: js.UndefOr[scala.Nothing], maxSubSteps: Double): Unit = js.native
   def step(dy: Double, timeSinceLastCalled: Double): Unit = js.native
   def step(dy: Double, timeSinceLastCalled: Double, maxSubSteps: Double): Unit = js.native
+  def step(dy: Double, timeSinceLastCalled: Unit, maxSubSteps: Double): Unit = js.native
   
   var stepnumber: Double = js.native
   
-  var subsystems: js.Array[_] = js.native
+  var subsystems: js.Array[js.Any] = js.native
   
   var time: Double = js.native
 }

@@ -2,13 +2,11 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Proxy extends StObject {
   
-  def getURL(resource: String): String = js.native
+  def getURL(resource: String): String
 }
 object Proxy {
   

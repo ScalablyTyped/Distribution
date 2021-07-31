@@ -2,21 +2,19 @@ package typings.awsSdk.autoscalingplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Datapoint extends StObject {
   
   /**
     * The time stamp for the data point in UTC format.
     */
-  var Timestamp: js.UndefOr[TimestampType] = js.native
+  var Timestamp: js.UndefOr[TimestampType] = js.undefined
   
   /**
     * The value of the data point.
     */
-  var Value: js.UndefOr[MetricScale] = js.native
+  var Value: js.UndefOr[MetricScale] = js.undefined
 }
 object Datapoint {
   

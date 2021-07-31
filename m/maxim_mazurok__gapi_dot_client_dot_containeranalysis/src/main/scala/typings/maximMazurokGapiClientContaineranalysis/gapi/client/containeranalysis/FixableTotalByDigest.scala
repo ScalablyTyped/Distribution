@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientContaineranalysis.gapi.client.containerana
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FixableTotalByDigest extends StObject {
   
   /** The number of fixable vulnerabilities associated with this resource. */
-  var fixableCount: js.UndefOr[String] = js.native
+  var fixableCount: js.UndefOr[String] = js.undefined
   
   /** The affected resource. */
-  var resource: js.UndefOr[Resource] = js.native
+  var resource: js.UndefOr[Resource] = js.undefined
   
   /** The severity for this count. SEVERITY_UNSPECIFIED indicates total across all severities. */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /** The total number of vulnerabilities associated with this resource. */
-  var totalCount: js.UndefOr[String] = js.native
+  var totalCount: js.UndefOr[String] = js.undefined
 }
 object FixableTotalByDigest {
   

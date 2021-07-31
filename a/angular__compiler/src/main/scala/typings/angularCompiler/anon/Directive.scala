@@ -5,15 +5,13 @@ import typings.angularCompiler.r3AstMod.Template
 import typings.angularCompiler.t2ApiMod.DirectiveMeta
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Directive[DirectiveT /* <: DirectiveMeta */] extends StObject {
   
-  var directive: DirectiveT = js.native
+  var directive: DirectiveT
   
-  var node: Element | Template = js.native
+  var node: Element | Template
 }
 object Directive {
   
@@ -24,7 +22,7 @@ object Directive {
   }
   
   @scala.inline
-  implicit class DirectiveMutableBuilder[Self <: Directive[_], DirectiveT /* <: DirectiveMeta */] (val x: Self with Directive[DirectiveT]) extends AnyVal {
+  implicit class DirectiveMutableBuilder[Self <: Directive[?], DirectiveT /* <: DirectiveMeta */] (val x: Self & Directive[DirectiveT]) extends AnyVal {
     
     @scala.inline
     def setDirective(value: DirectiveT): Self = StObject.set(x, "directive", value.asInstanceOf[js.Any])

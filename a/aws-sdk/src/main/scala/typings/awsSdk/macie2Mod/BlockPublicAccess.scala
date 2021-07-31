@@ -2,31 +2,29 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlockPublicAccess extends StObject {
   
   /**
     * Specifies whether Amazon S3 blocks public access control lists (ACLs) for the bucket and objects in the bucket.
     */
-  var blockPublicAcls: js.UndefOr[boolean] = js.native
+  var blockPublicAcls: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies whether Amazon S3 blocks public bucket policies for the bucket.
     */
-  var blockPublicPolicy: js.UndefOr[boolean] = js.native
+  var blockPublicPolicy: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies whether Amazon S3 ignores public ACLs for the bucket and objects in the bucket.
     */
-  var ignorePublicAcls: js.UndefOr[boolean] = js.native
+  var ignorePublicAcls: js.UndefOr[boolean] = js.undefined
   
   /**
     * Specifies whether Amazon S3 restricts public bucket policies for the bucket.
     */
-  var restrictPublicBuckets: js.UndefOr[boolean] = js.native
+  var restrictPublicBuckets: js.UndefOr[boolean] = js.undefined
 }
 object BlockPublicAccess {
   

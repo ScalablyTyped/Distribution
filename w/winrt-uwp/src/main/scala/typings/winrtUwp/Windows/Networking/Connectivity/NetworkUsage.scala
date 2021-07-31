@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Networking.Connectivity
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents network usage statistics returned by the ConnectionProfile . GetNetworkUsageAsync method. */
-@js.native
 trait NetworkUsage extends StObject {
   
   /** Indicates the number of bytes received by the connection of a specific period of time. */
-  var bytesReceived: Double = js.native
+  var bytesReceived: Double
   
   /** Indicates the number of bytes sent by a connection over a specific period of time. */
-  var bytesSent: Double = js.native
+  var bytesSent: Double
   
   /** Indicates the duration of connectivity. */
-  var connectionDuration: Double = js.native
+  var connectionDuration: Double
 }
 object NetworkUsage {
   

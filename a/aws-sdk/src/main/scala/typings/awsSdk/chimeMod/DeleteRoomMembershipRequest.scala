@@ -2,26 +2,24 @@ package typings.awsSdk.chimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRoomMembershipRequest extends StObject {
   
   /**
     * The Amazon Chime account ID.
     */
-  var AccountId: NonEmptyString = js.native
+  var AccountId: NonEmptyString
   
   /**
     * The member ID (user ID or bot ID).
     */
-  var MemberId: NonEmptyString = js.native
+  var MemberId: NonEmptyString
   
   /**
     * The room ID.
     */
-  var RoomId: NonEmptyString = js.native
+  var RoomId: NonEmptyString
 }
 object DeleteRoomMembershipRequest {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutAggregationAuthorizationRequest extends StObject {
   
   /**
     * The 12-digit account ID of the account authorized to aggregate data.
     */
-  var AuthorizedAccountId: AccountId = js.native
+  var AuthorizedAccountId: AccountId
   
   /**
     * The region authorized to collect aggregated data.
     */
-  var AuthorizedAwsRegion: AwsRegion = js.native
+  var AuthorizedAwsRegion: AwsRegion
   
   /**
     * An array of tag object.
     */
-  var Tags: js.UndefOr[TagsList] = js.native
+  var Tags: js.UndefOr[TagsList] = js.undefined
 }
 object PutAggregationAuthorizationRequest {
   

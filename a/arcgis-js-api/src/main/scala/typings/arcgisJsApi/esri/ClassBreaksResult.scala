@@ -4,39 +4,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClassBreaksResult extends Object {
+trait ClassBreaksResult
+  extends StObject
+     with Object {
   
   /**
     * An array of objects describing the class breaks generated from the [classBreaks()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#classBreaks) method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#ClassBreaksResult)
     */
-  var classBreakInfos: js.Array[ClassBreak] = js.native
+  var classBreakInfos: js.Array[ClassBreak]
   
   /**
     * The maximum value of features in the dataset.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#ClassBreaksResult)
     */
-  var maxValue: Double = js.native
+  var maxValue: Double
   
   /**
     * The minimum value of features in the dataset.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#ClassBreaksResult)
     */
-  var minValue: Double = js.native
+  var minValue: Double
   
   /**
     * The normalization total if `normalizationType` is set to `percent-of-total` when generating class breaks with [createClassBreaksRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-color.html#createClassBreaksRenderer).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-statistics-classBreaks.html#ClassBreaksResult)
     */
-  var normalizationTotal: Double = js.native
+  var normalizationTotal: Double
 }
 object ClassBreaksResult {
   

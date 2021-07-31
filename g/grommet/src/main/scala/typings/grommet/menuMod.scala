@@ -20,49 +20,47 @@ import typings.react.mod.FC
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object menuMod {
   
   @JSImport("grommet/components/Menu", "Menu")
   @js.native
-  val Menu: FC[MenuProps with (Omit[ButtonType, icon])] = js.native
+  val Menu: FC[MenuProps & (Omit[ButtonType, icon])] = js.native
   
-  @js.native
   trait MenuProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var dropAlign: js.UndefOr[Right] = js.native
+    var dropAlign: js.UndefOr[Right] = js.undefined
     
-    var dropBackground: js.UndefOr[String | ColorOpacity] = js.native
+    var dropBackground: js.UndefOr[String | ColorOpacity] = js.undefined
     
-    var dropProps: js.UndefOr[DropProps] = js.native
+    var dropProps: js.UndefOr[DropProps] = js.undefined
     
-    var dropTarget: js.UndefOr[js.Object] = js.native
+    var dropTarget: js.UndefOr[js.Object] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var icon: js.UndefOr[Boolean | ReactNode] = js.native
+    var icon: js.UndefOr[Boolean | ReactNode] = js.undefined
     
-    var items: js.Array[js.Object] = js.native
+    var items: js.Array[js.Object]
     
-    var justifyContent: js.UndefOr[JustifyContentType] = js.native
+    var justifyContent: js.UndefOr[JustifyContentType] = js.undefined
     
-    var label: js.UndefOr[String | ReactNode] = js.native
+    var label: js.UndefOr[String | ReactNode] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var messages: js.UndefOr[CloseMenu] = js.native
+    var messages: js.UndefOr[CloseMenu] = js.undefined
     
-    var open: js.UndefOr[Boolean] = js.native
+    var open: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | xlarge | String] = js.native
+    var size: js.UndefOr[small | medium | large | xlarge | String] = js.undefined
   }
   object MenuProps {
     

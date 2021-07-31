@@ -2,30 +2,26 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayTypeName
-  extends TypeName
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with TypeName {
   
-  var baseTypeName: TypeName = js.native
+  var baseTypeName: TypeName
   
-  var length: js.UndefOr[Expression] = js.native
+  var length: js.UndefOr[Expression] = js.undefined
   
   @JSName("type")
-  var type_ArrayTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName = js.native
+  var type_ArrayTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName
 }
 object ArrayTypeName {
   
   @scala.inline
-  def apply(
-    baseTypeName: TypeName,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.ArrayTypeName
-  ): ArrayTypeName = {
+  def apply(baseTypeName: TypeName): ArrayTypeName = {
     val __obj = js.Dynamic.literal(baseTypeName = baseTypeName.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ArrayTypeName")
     __obj.asInstanceOf[ArrayTypeName]
   }
   

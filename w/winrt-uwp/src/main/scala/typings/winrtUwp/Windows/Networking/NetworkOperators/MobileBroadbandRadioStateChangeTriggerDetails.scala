@@ -3,15 +3,13 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides details for a radio state change notification. */
-@js.native
 trait MobileBroadbandRadioStateChangeTriggerDetails extends StObject {
   
   /** Gets the collection of radio state change details associated with a notification. */
-  var radioStateChanges: IVectorView[MobileBroadbandRadioStateChange] = js.native
+  var radioStateChanges: IVectorView[MobileBroadbandRadioStateChange]
 }
 object MobileBroadbandRadioStateChangeTriggerDetails {
   

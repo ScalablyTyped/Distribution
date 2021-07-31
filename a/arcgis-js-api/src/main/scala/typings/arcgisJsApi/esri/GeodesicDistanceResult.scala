@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeodesicDistanceResult extends Object {
+trait GeodesicDistanceResult
+  extends StObject
+     with Object {
   
   /**
     * The azimuth (or "bearing") in degrees.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
     */
-  var azimuth: js.UndefOr[Double] = js.native
+  var azimuth: js.UndefOr[Double] = js.undefined
   
   /**
     * The distance between the two locations.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
     */
-  var distance: js.UndefOr[Double] = js.native
+  var distance: js.UndefOr[Double] = js.undefined
   
   /**
     * The azimuth in degrees in the reverse direction.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-support-geodesicUtils.html#GeodesicDistanceResult)
     */
-  var reverseAzimuth: js.UndefOr[Double] = js.native
+  var reverseAzimuth: js.UndefOr[Double] = js.undefined
 }
 object GeodesicDistanceResult {
   

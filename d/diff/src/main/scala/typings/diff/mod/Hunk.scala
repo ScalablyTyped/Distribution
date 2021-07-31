@@ -2,23 +2,21 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hunk extends StObject {
   
-  var linedelimiters: js.Array[String] = js.native
+  var linedelimiters: js.Array[String]
   
-  var lines: js.Array[String] = js.native
+  var lines: js.Array[String]
   
-  var newLines: Double = js.native
+  var newLines: Double
   
-  var newStart: Double = js.native
+  var newStart: Double
   
-  var oldLines: Double = js.native
+  var oldLines: Double
   
-  var oldStart: Double = js.native
+  var oldStart: Double
 }
 object Hunk {
   

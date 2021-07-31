@@ -8,55 +8,53 @@ import typings.typeorm.queryRunnerMod.QueryRunner
 import typings.typeorm.relationMetadataMod.RelationMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object updateEventMod {
   
-  @js.native
   trait UpdateEvent[Entity] extends StObject {
     
     /**
       * Connection used in the event.
       */
-    var connection: Connection = js.native
+    var connection: Connection
     
     /**
       * Updating entity in the database.
       */
-    var databaseEntity: Entity = js.native
+    var databaseEntity: Entity
     
     /**
       * Updating entity.
       */
-    var entity: Entity = js.native
+    var entity: Entity
     
     /**
       * EntityManager used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this entity manager instance.
       */
-    var manager: EntityManager = js.native
+    var manager: EntityManager
     
     /**
       * Metadata of the entity.
       */
-    var metadata: EntityMetadata = js.native
+    var metadata: EntityMetadata
     
     /**
       * QueryRunner used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this query runner instance.
       */
-    var queryRunner: QueryRunner = js.native
+    var queryRunner: QueryRunner
     
     /**
       * List of updated columns. In query builder has no affected
       */
-    var updatedColumns: js.Array[ColumnMetadata] = js.native
+    var updatedColumns: js.Array[ColumnMetadata]
     
     /**
       * List of updated relations. In query builder has no affected
       */
-    var updatedRelations: js.Array[RelationMetadata] = js.native
+    var updatedRelations: js.Array[RelationMetadata]
   }
   object UpdateEvent {
     
@@ -76,7 +74,7 @@ object updateEventMod {
     }
     
     @scala.inline
-    implicit class UpdateEventMutableBuilder[Self <: UpdateEvent[_], Entity] (val x: Self with UpdateEvent[Entity]) extends AnyVal {
+    implicit class UpdateEventMutableBuilder[Self <: UpdateEvent[?], Entity] (val x: Self & UpdateEvent[Entity]) extends AnyVal {
       
       @scala.inline
       def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])

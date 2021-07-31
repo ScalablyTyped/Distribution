@@ -17,7 +17,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagStyleIndexNativeMod {
@@ -128,40 +127,39 @@ object tagStyleIndexNativeMod {
     def wrap_=(x: BorderRadiusBorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrap")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ITagStyle extends StObject {
     
-    var activeText: TextStyle = js.native
+    var activeText: TextStyle
     
-    var activeWrap: ViewStyle = js.native
+    var activeWrap: ViewStyle
     
-    var close: ViewStyle = js.native
+    var close: ViewStyle
     
-    var closeAndroid: ViewStyle = js.native
+    var closeAndroid: ViewStyle
     
-    var closeIOS: ViewStyle = js.native
+    var closeIOS: ViewStyle
     
-    var closeText: TextStyle = js.native
+    var closeText: TextStyle
     
-    var closeTransform: ViewStyle = js.native
+    var closeTransform: ViewStyle
     
-    var disabledText: TextStyle = js.native
+    var disabledText: TextStyle
     
-    var disabledWrap: ViewStyle = js.native
+    var disabledWrap: ViewStyle
     
-    var normalText: TextStyle = js.native
+    var normalText: TextStyle
     
-    var normalWrap: ViewStyle = js.native
+    var normalWrap: ViewStyle
     
-    var tag: ViewStyle = js.native
+    var tag: ViewStyle
     
-    var text: TextStyle = js.native
+    var text: TextStyle
     
-    var textSmall: TextStyle = js.native
+    var textSmall: TextStyle
     
-    var wrap: ViewStyle = js.native
+    var wrap: ViewStyle
     
-    var wrapSmall: ViewStyle = js.native
+    var wrapSmall: ViewStyle
   }
   object ITagStyle {
     

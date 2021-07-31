@@ -5,7 +5,6 @@ import typings.retry.mod.OperationOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,12 +42,10 @@ object mod {
   	})();
   	```
   	*/
-  @JSImport("p-retry", JSImport.Namespace)
-  @js.native
-  def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T]): js.Promise[T] = js.native
-  @JSImport("p-retry", JSImport.Namespace)
-  @js.native
-  def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T], options: Options): js.Promise[T] = js.native
+  @scala.inline
+  def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T]): js.Promise[T] = ^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any]).asInstanceOf[js.Promise[T]]
+  @scala.inline
+  def apply[T](input: js.Function1[/* attemptCount */ Double, js.Thenable[T] | T], options: Options): js.Promise[T] = (^.asInstanceOf[js.Dynamic].apply(input.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[T]]
   
   @JSImport("p-retry", JSImport.Namespace)
   @js.native
@@ -67,13 +64,27 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("p-retry", "AbortError")
   @js.native
-  class AbortErrorCls protected () extends AbortErrorClass {
+  class AbortErrorCls protected ()
+    extends StObject
+       with AbortErrorClass {
     /**
     	Abort retrying and reject the promise.
     	@param message - Error message or custom error.
     	*/
     def this(message: String) = this()
     def this(message: Error) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    override val name_AbortErrorClass: typings.pRetry.pRetryStrings.AbortError = js.native
+    
+    /* CompleteClass */
+    override val originalError: Error = js.native
   }
   
   @scala.inline
@@ -82,19 +93,20 @@ object mod {
   @scala.inline
   def default_=(x: /* import warning: ResolveTypeQueries.resolve Couldn't resolve typeof pRetry */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("default")(x.asInstanceOf[js.Any])
   
-  @js.native
-  trait AbortErrorClass extends Error {
+  trait AbortErrorClass
+    extends StObject
+       with Error {
     
     @JSName("name")
-    val name_AbortErrorClass: typings.pRetry.pRetryStrings.AbortError = js.native
+    val name_AbortErrorClass: typings.pRetry.pRetryStrings.AbortError
     
-    val originalError: Error = js.native
+    val originalError: Error
   }
   object AbortErrorClass {
     
     @scala.inline
-    def apply(message: String, name: typings.pRetry.pRetryStrings.AbortError, originalError: Error): AbortErrorClass = {
-      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], originalError = originalError.asInstanceOf[js.Any])
+    def apply(message: String, originalError: Error): AbortErrorClass = {
+      val __obj = js.Dynamic.literal(message = message.asInstanceOf[js.Any], name = "AbortError", originalError = originalError.asInstanceOf[js.Any])
       __obj.asInstanceOf[AbortErrorClass]
     }
     
@@ -109,12 +121,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait FailedAttemptError extends Error {
+  trait FailedAttemptError
+    extends StObject
+       with Error {
     
-    val attemptNumber: Double = js.native
+    val attemptNumber: Double
     
-    val retriesLeft: Double = js.native
+    val retriesLeft: Double
   }
   object FailedAttemptError {
     
@@ -135,8 +148,9 @@ object mod {
     }
   }
   
-  @js.native
-  trait Options extends OperationOptions {
+  trait Options
+    extends StObject
+       with OperationOptions {
     
     /**
     		Callback invoked on each retry. Receives the error thrown by `input` as the first argument with properties `attemptNumber` and `retriesLeft` which indicate the current attempt number and the number of attempts left, respectively.
@@ -156,7 +170,7 @@ object mod {
     		```
     		If the `onFailedAttempt` function throws, all retries will be aborted and the original promise will reject with the thrown error.
     		*/
-    val onFailedAttempt: js.UndefOr[js.Function1[/* error */ FailedAttemptError, Unit | js.Promise[Unit]]] = js.native
+    val onFailedAttempt: js.UndefOr[js.Function1[/* error */ FailedAttemptError, Unit | js.Promise[Unit]]] = js.undefined
   }
   object Options {
     

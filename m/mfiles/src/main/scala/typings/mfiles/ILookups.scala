@@ -2,27 +2,25 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILookups extends StObject {
   
-  def Add(Index: Double, Lookup: ILookup): Unit = js.native
+  def Add(Index: Double, Lookup: ILookup): Unit
   
-  def Clone(): ILookups = js.native
+  def Clone(): ILookups
   
-  def CloneFrom(Lookups: ILookups): Unit = js.native
+  def CloneFrom(Lookups: ILookups): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetLookupByItem(Item: Double): ILookup = js.native
+  def GetLookupByItem(Item: Double): ILookup
   
-  def GetLookupIndexByItem(Item: Double): Double = js.native
+  def GetLookupIndexByItem(Item: Double): Double
   
-  def Item(Index: Double): ILookup = js.native
+  def Item(Index: Double): ILookup
   
-  def Remove(Index: Double): Unit = js.native
+  def Remove(Index: Double): Unit
 }
 object ILookups {
   

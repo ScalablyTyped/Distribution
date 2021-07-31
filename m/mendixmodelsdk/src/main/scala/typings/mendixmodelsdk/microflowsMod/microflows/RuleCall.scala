@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCall")
@@ -48,9 +47,8 @@ object RuleCall {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCall.create")
-  @js.native
-  def create(model: IModel): RuleCall = js.native
+  @scala.inline
+  def create(model: IModel): RuleCall = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[RuleCall]
   
   /**
     * Creates and returns a new RuleCall instance in the SDK and on the server.
@@ -58,9 +56,8 @@ object RuleCall {
     * of the parent RuleSplitCondition element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCall.createIn")
-  @js.native
-  def createIn(container: RuleSplitCondition): RuleCall = js.native
+  @scala.inline
+  def createIn(container: RuleSplitCondition): RuleCall = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[RuleCall]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.RuleCall.structureTypeName")

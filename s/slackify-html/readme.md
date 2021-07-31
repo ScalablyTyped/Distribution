@@ -12,7 +12,7 @@ convert simple html to slack markdown
 | Keywords           | html, parser, slack, to, html, markdown |
 | # releases         | 0 |
 | # dependents       | 3 |
-| # downloads        | 40223 |
+| # downloads        | 33215 |
 | # stars            | 0 |
 
 ## Links

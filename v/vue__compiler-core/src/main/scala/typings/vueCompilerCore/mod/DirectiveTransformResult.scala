@@ -2,17 +2,15 @@ package typings.vueCompilerCore.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DirectiveTransformResult extends StObject {
   
-  var needRuntime: js.UndefOr[Boolean | js.Symbol] = js.native
+  var needRuntime: js.UndefOr[Boolean | js.Symbol] = js.undefined
   
-  var props: js.Array[Property] = js.native
+  var props: js.Array[Property]
   
-  var ssrTagParts: js.UndefOr[js.Array[String | JSChildNode]] = js.native
+  var ssrTagParts: js.UndefOr[js.Array[String | JSChildNode]] = js.undefined
 }
 object DirectiveTransformResult {
   

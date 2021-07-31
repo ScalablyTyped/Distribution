@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssignIpv6AddressesRequest extends StObject {
   
   /**
     * The number of IPv6 addresses to assign to the network interface. Amazon EC2 automatically selects the IPv6 addresses from the subnet range. You can't use this option if specifying specific IPv6 addresses.
     */
-  var Ipv6AddressCount: js.UndefOr[Integer] = js.native
+  var Ipv6AddressCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * One or more specific IPv6 addresses to be assigned to the network interface. You can't use this option if you're specifying a number of IPv6 addresses.
     */
-  var Ipv6Addresses: js.UndefOr[Ipv6AddressList] = js.native
+  var Ipv6Addresses: js.UndefOr[Ipv6AddressList] = js.undefined
   
   /**
     * The ID of the network interface.
     */
-  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId = js.native
+  var NetworkInterfaceId: typings.awsSdk.ec2Mod.NetworkInterfaceId
 }
 object AssignIpv6AddressesRequest {
   

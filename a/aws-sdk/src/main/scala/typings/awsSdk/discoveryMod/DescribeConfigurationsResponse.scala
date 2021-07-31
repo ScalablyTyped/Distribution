@@ -2,16 +2,14 @@ package typings.awsSdk.discoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeConfigurationsResponse extends StObject {
   
   /**
     * A key in the response map. The value is an array of data.
     */
-  var configurations: js.UndefOr[DescribeConfigurationsAttributes] = js.native
+  var configurations: js.UndefOr[DescribeConfigurationsAttributes] = js.undefined
 }
 object DescribeConfigurationsResponse {
   

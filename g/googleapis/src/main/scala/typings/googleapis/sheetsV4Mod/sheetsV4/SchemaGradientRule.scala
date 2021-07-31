@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,23 +9,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * interpolation points listed. The format of a cell will vary based on its
   * contents as compared to the values of the interpolation points.
   */
-@js.native
 trait SchemaGradientRule extends StObject {
   
   /**
     * The final interpolation point.
     */
-  var maxpoint: js.UndefOr[SchemaInterpolationPoint] = js.native
+  var maxpoint: js.UndefOr[SchemaInterpolationPoint] = js.undefined
   
   /**
     * An optional midway interpolation point.
     */
-  var midpoint: js.UndefOr[SchemaInterpolationPoint] = js.native
+  var midpoint: js.UndefOr[SchemaInterpolationPoint] = js.undefined
   
   /**
     * The starting interpolation point.
     */
-  var minpoint: js.UndefOr[SchemaInterpolationPoint] = js.native
+  var minpoint: js.UndefOr[SchemaInterpolationPoint] = js.undefined
 }
 object SchemaGradientRule {
   

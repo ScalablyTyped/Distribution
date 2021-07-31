@@ -2,21 +2,19 @@ package typings.awsSdk.elbv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerState extends StObject {
   
   /**
     * The state code. The initial state of the load balancer is provisioning. After the load balancer is fully set up and ready to route traffic, its state is active. If the load balancer could not be set up, its state is failed.
     */
-  var Code: js.UndefOr[LoadBalancerStateEnum] = js.native
+  var Code: js.UndefOr[LoadBalancerStateEnum] = js.undefined
   
   /**
     * A description of the state.
     */
-  var Reason: js.UndefOr[StateReason] = js.native
+  var Reason: js.UndefOr[StateReason] = js.undefined
 }
 object LoadBalancerState {
   

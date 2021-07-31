@@ -2,16 +2,14 @@ package typings.gitlab.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  todoId :number | undefined} & gitlab.gitlab/dist/types/core/infrastructure.Sudo */
-@js.native
 trait todoIdnumberundefinedSudo extends StObject {
   
-  var sudo: js.UndefOr[String | Double] = js.native
+  var sudo: js.UndefOr[String | Double] = js.undefined
   
-  var todoId: js.UndefOr[Double] = js.native
+  var todoId: js.UndefOr[Double] = js.undefined
 }
 object todoIdnumberundefinedSudo {
   

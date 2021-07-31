@@ -3,10 +3,8 @@ package typings.wordpressComponents.anon
 import typings.wordpressComponents.selectControlMod.SelectControl.Option
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnChange[T /* <: String | js.Array[String] */] extends StObject {
   
   /**
@@ -15,11 +13,11 @@ trait OnChange[T /* <: String | js.Array[String] */] extends StObject {
     * array of the selected value. If multiple is false the value received
     * is a single value with the new selected value.
     */
-  def onChange(value: T): Unit = js.native
+  def onChange(value: T): Unit
   
-  var options: js.UndefOr[js.Array[Option]] = js.native
+  var options: js.UndefOr[js.Array[Option]] = js.undefined
   
-  var value: js.UndefOr[T] = js.native
+  var value: js.UndefOr[T] = js.undefined
 }
 object OnChange {
   
@@ -30,7 +28,7 @@ object OnChange {
   }
   
   @scala.inline
-  implicit class OnChangeMutableBuilder[Self <: OnChange[_], T /* <: String | js.Array[String] */] (val x: Self with OnChange[T]) extends AnyVal {
+  implicit class OnChangeMutableBuilder[Self <: OnChange[?], T /* <: String | js.Array[String] */] (val x: Self & OnChange[T]) extends AnyVal {
     
     @scala.inline
     def setOnChange(value: T => Unit): Self = StObject.set(x, "onChange", js.Any.fromFunction1(value))

@@ -2,96 +2,94 @@ package typings.awsSdk.daxMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cluster extends StObject {
   
   /**
     * The number of nodes in the cluster that are active (i.e., capable of serving requests).
     */
-  var ActiveNodes: js.UndefOr[IntegerOptional] = js.native
+  var ActiveNodes: js.UndefOr[IntegerOptional] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) that uniquely identifies the cluster. 
     */
-  var ClusterArn: js.UndefOr[String] = js.native
+  var ClusterArn: js.UndefOr[String] = js.undefined
   
   /**
     * The configuration endpoint for this DAX cluster, consisting of a DNS name and a port number. Client applications can specify this endpoint, rather than an individual node endpoint, and allow the DAX client software to intelligently route requests and responses to nodes in the DAX cluster.
     */
-  var ClusterDiscoveryEndpoint: js.UndefOr[Endpoint] = js.native
+  var ClusterDiscoveryEndpoint: js.UndefOr[Endpoint] = js.undefined
   
   /**
     * The name of the DAX cluster.
     */
-  var ClusterName: js.UndefOr[String] = js.native
+  var ClusterName: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the cluster.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * A valid Amazon Resource Name (ARN) that identifies an IAM role. At runtime, DAX will assume this role and use the role's permissions to access DynamoDB on your behalf.
     */
-  var IamRoleArn: js.UndefOr[String] = js.native
+  var IamRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * A list of nodes to be removed from the cluster.
     */
-  var NodeIdsToRemove: js.UndefOr[NodeIdentifierList] = js.native
+  var NodeIdsToRemove: js.UndefOr[NodeIdentifierList] = js.undefined
   
   /**
     * The node type for the nodes in the cluster. (All nodes in a DAX cluster are of the same type.)
     */
-  var NodeType: js.UndefOr[String] = js.native
+  var NodeType: js.UndefOr[String] = js.undefined
   
   /**
     * A list of nodes that are currently in the cluster.
     */
-  var Nodes: js.UndefOr[NodeList] = js.native
+  var Nodes: js.UndefOr[NodeList] = js.undefined
   
   /**
     * Describes a notification topic and its status. Notification topics are used for publishing DAX events to subscribers using Amazon Simple Notification Service (SNS).
     */
-  var NotificationConfiguration: js.UndefOr[typings.awsSdk.daxMod.NotificationConfiguration] = js.native
+  var NotificationConfiguration: js.UndefOr[typings.awsSdk.daxMod.NotificationConfiguration] = js.undefined
   
   /**
     * The parameter group being used by nodes in the cluster.
     */
-  var ParameterGroup: js.UndefOr[ParameterGroupStatus] = js.native
+  var ParameterGroup: js.UndefOr[ParameterGroupStatus] = js.undefined
   
   /**
     * A range of time when maintenance of DAX cluster software will be performed. For example: sun:01:00-sun:09:00. Cluster maintenance normally takes less than 30 minutes, and is performed automatically within the maintenance window.
     */
-  var PreferredMaintenanceWindow: js.UndefOr[String] = js.native
+  var PreferredMaintenanceWindow: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the server-side encryption status on the specified DAX cluster.
     */
-  var SSEDescription: js.UndefOr[typings.awsSdk.daxMod.SSEDescription] = js.native
+  var SSEDescription: js.UndefOr[typings.awsSdk.daxMod.SSEDescription] = js.undefined
   
   /**
     * A list of security groups, and the status of each, for the nodes in the cluster.
     */
-  var SecurityGroups: js.UndefOr[SecurityGroupMembershipList] = js.native
+  var SecurityGroups: js.UndefOr[SecurityGroupMembershipList] = js.undefined
   
   /**
     * The current status of the cluster.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The subnet group where the DAX cluster is running.
     */
-  var SubnetGroup: js.UndefOr[String] = js.native
+  var SubnetGroup: js.UndefOr[String] = js.undefined
   
   /**
     * The total number of nodes in the cluster.
     */
-  var TotalNodes: js.UndefOr[IntegerOptional] = js.native
+  var TotalNodes: js.UndefOr[IntegerOptional] = js.undefined
 }
 object Cluster {
   

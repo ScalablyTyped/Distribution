@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KeySchemaElement extends StObject {
   
   /**
     * The name of a partition key.
     */
-  var Name: NameString = js.native
+  var Name: NameString
   
   /**
     * The type of a partition key.
     */
-  var Type: ColumnTypeString = js.native
+  var Type: ColumnTypeString
 }
 object KeySchemaElement {
   

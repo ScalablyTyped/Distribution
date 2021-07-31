@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceItems extends StObject {
   
   /**
@@ -13,109 +11,109 @@ trait WorkspaceItems extends StObject {
     */
   var callerAuthorization: js.UndefOr[
     /* Provides properties that describe user authorization to a workspace. */ WorkspaceUserAuthorization
-  ] = js.native
+  ] = js.undefined
   
   /**
     * If the item is a file, this property specifies the content type of the file.
     */
-  var contentType: js.UndefOr[String] = js.native
+  var contentType: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the workspace item was created.
     */
-  var created: js.UndefOr[String] = js.native
+  var created: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the user who created the workspace item.
     */
-  var createdById: js.UndefOr[String] = js.native
+  var createdById: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the user who created the workspace item.
     */
   var createdByInformation: js.UndefOr[
     /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The file extension of a file item.
     */
-  var extension: js.UndefOr[String] = js.native
+  var `extension`: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the file in bytes.
     */
-  var fileSize: js.UndefOr[String] = js.native
+  var fileSize: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for retrieving the file.
     */
-  var fileUri: js.UndefOr[String] = js.native
+  var fileUri: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the workspace item.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     *  When **true**, the item is public.
     */
-  var isPublic: js.UndefOr[String] = js.native
+  var isPublic: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime that the item was last modified.
     */
-  var lastModified: js.UndefOr[String] = js.native
+  var lastModified: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the user who last modified the item.
     */
-  var lastModifiedById: js.UndefOr[String] = js.native
+  var lastModifiedById: js.UndefOr[String] = js.undefined
   
   /**
     * Details about the user who last modified the workspace item.
     */
   var lastModifiedByInformation: js.UndefOr[
     /* This object represents the workspace user. This property is only returned in response to user specific GET call.  */ WorkspaceUser
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the file or folder.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The number of pages in a file.
     */
-  var pageCount: js.UndefOr[String] = js.native
+  var pageCount: js.UndefOr[String] = js.undefined
   
   /**
     * The id of the parent folder, or the special value `root` for the root folder.
     */
-  var parentFolderId: js.UndefOr[String] = js.native
+  var parentFolderId: js.UndefOr[String] = js.undefined
   
   /**
     * The URI of the parent folder.
     */
-  var parentFolderUri: js.UndefOr[String] = js.native
+  var parentFolderUri: js.UndefOr[String] = js.undefined
   
   /**
     * A 64-byte, Secure Hash Algorithm 256 (SHA256) checksum that the caller computes across the entirety of the original content of a file.
     * DocuSign compares this value to its own computation. If the two values are not equal, the original content and received content are not the same and the upload is refused.
     */
-  var sha256: js.UndefOr[String] = js.native
+  var sha256: js.UndefOr[String] = js.undefined
   
   /**
     * The height of the thumbnail image.
     */
-  var thumbHeight: js.UndefOr[String] = js.native
+  var thumbHeight: js.UndefOr[String] = js.undefined
   
   /**
     * The width of the thumbnail image.
     */
-  var thumbWidth: js.UndefOr[String] = js.native
+  var thumbWidth: js.UndefOr[String] = js.undefined
   
-  var thumbnail: js.UndefOr[/* Description of a page of a document. */ Page] = js.native
+  var thumbnail: js.UndefOr[/* Description of a page of a document. */ Page] = js.undefined
   
   /**
     * The type of workspace item. Valid values are:
@@ -123,19 +121,19 @@ trait WorkspaceItems extends StObject {
     * - `file`
     * - `folder`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
   
   /**
     * An object that describes the user's workspace permissions.
     */
   var userAuthorization: js.UndefOr[
     /* Provides properties that describe user authorization to a workspace. */ WorkspaceUserAuthorization
-  ] = js.native
+  ] = js.undefined
 }
 object WorkspaceItems {
   

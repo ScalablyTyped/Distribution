@@ -3,15 +3,13 @@ package typings.smartFoxServer.SFS2X
 import typings.smartFoxServer.SFS2X.Entities.SFSUser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IUSER_VARIABLES_UPDATE extends StObject {
   
-  var changedVars: js.Array[String] = js.native
+  var changedVars: js.Array[String]
   
-  var user: SFSUser = js.native
+  var user: SFSUser
 }
 object IUSER_VARIABLES_UPDATE {
   

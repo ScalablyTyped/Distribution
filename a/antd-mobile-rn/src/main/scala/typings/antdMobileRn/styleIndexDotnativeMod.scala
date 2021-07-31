@@ -10,7 +10,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleIndexDotnativeMod {
@@ -58,20 +57,19 @@ object styleIndexDotnativeMod {
     def wrapper_=(x: BorderRadius): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("wrapper")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait IActivityIndicatorStyle extends StObject {
     
-    var container: ViewStyle = js.native
+    var container: ViewStyle
     
-    var innerContainer: ViewStyle = js.native
+    var innerContainer: ViewStyle
     
-    var spinner: ViewStyle = js.native
+    var spinner: ViewStyle
     
-    var tip: TextStyle = js.native
+    var tip: TextStyle
     
-    var toast: TextStyle = js.native
+    var toast: TextStyle
     
-    var wrapper: ViewStyle = js.native
+    var wrapper: ViewStyle
   }
   object IActivityIndicatorStyle {
     

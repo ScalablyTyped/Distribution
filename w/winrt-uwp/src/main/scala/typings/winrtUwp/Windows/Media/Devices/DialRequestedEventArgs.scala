@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Media.Devices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains information for the DialRequested event. */
-@js.native
 trait DialRequestedEventArgs extends StObject {
   
   /** Returns the contact that was dialed. */
-  var contact: js.Any = js.native
+  var contact: js.Any
   
   /** Indicates that the DialRequested event has been handled. */
-  def handled(): Unit = js.native
+  def handled(): Unit
 }
 object DialRequestedEventArgs {
   

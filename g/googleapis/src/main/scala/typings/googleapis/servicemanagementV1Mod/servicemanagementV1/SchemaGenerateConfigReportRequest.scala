@@ -3,13 +3,11 @@ package typings.googleapis.servicemanagementV1Mod.servicemanagementV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request message for GenerateConfigReport method.
   */
-@js.native
 trait SchemaGenerateConfigReportRequest extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaGenerateConfigReportRequest extends StObject {
     * google.api.servicemanagement.v1.ConfigRef,
     * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
     */
-  var newConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var newConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Service configuration against which the comparison will be done. For this
@@ -26,7 +24,7 @@ trait SchemaGenerateConfigReportRequest extends StObject {
     * google.api.servicemanagement.v1.ConfigRef,
     * google.api.servicemanagement.v1.ConfigSource, and google.api.Service
     */
-  var oldConfig: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var oldConfig: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaGenerateConfigReportRequest {
   

@@ -2,19 +2,17 @@ package typings.typescriptServices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FormattingOptions extends StObject {
   
-  var indentSpaces: Double = js.native
+  var indentSpaces: Double
   
-  var newLineCharacter: String = js.native
+  var newLineCharacter: String
   
-  var spacesPerTab: Double = js.native
+  var spacesPerTab: Double
   
-  var useTabs: Boolean = js.native
+  var useTabs: Boolean
 }
 object FormattingOptions {
   

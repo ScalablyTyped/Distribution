@@ -2,53 +2,51 @@ package typings.stripe.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mcc extends StObject {
   
   /**
     * The merchant category code for the account. MCCs are used to classify businesses
     * based on the goods or services they provide.
     */
-  var mcc: js.UndefOr[String] = js.native
+  var mcc: js.UndefOr[String] = js.undefined
   
   /**
     * The customer-facing business name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Internal-only description of the product sold or service provided by the
     * business. It’s used by Stripe for risk and underwriting purposes.
     */
-  var product_description: js.UndefOr[String] = js.native
+  var product_description: js.UndefOr[String] = js.undefined
   
   /**
     * A publicly available mailing address for sending support issues to.
     */
-  var support_address: js.UndefOr[City] = js.native
+  var support_address: js.UndefOr[City] = js.undefined
   
   /**
     * A publicly available email address for sending support issues to.
     */
-  var support_email: js.UndefOr[String] = js.native
+  var support_email: js.UndefOr[String] = js.undefined
   
   /**
     * A publicly available phone number to call with support issues.
     */
-  var support_phone: js.UndefOr[String] = js.native
+  var support_phone: js.UndefOr[String] = js.undefined
   
   /**
     * A publicly available website for handling support issues.
     */
-  var support_url: js.UndefOr[String] = js.native
+  var support_url: js.UndefOr[String] = js.undefined
   
   /**
     * The business’s publicly available website.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object Mcc {
   

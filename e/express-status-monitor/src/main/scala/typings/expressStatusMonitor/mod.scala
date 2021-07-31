@@ -7,39 +7,39 @@ import typings.expressStatusMonitor.anon.Cpu
 import typings.socketIo.mod.Server
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("express-status-monitor", JSImport.Namespace)
-  @js.native
-  def apply(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-  @JSImport("express-status-monitor", JSImport.Namespace)
-  @js.native
-  def apply(config: ExpressStatusMonitorConfig): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+  @scala.inline
+  def apply(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
+  @scala.inline
+  def apply(config: ExpressStatusMonitorConfig): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = ^.asInstanceOf[js.Dynamic].apply(config.asInstanceOf[js.Any]).asInstanceOf[RequestHandler[ParamsDictionary, js.Any, js.Any, Query]]
   
+  @JSImport("express-status-monitor", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait ExpressStatusMonitorConfig extends StObject {
     
-    var chartVisibility: js.UndefOr[Cpu] = js.native
+    var chartVisibility: js.UndefOr[Cpu] = js.undefined
     
-    var healthChecks: js.UndefOr[js.Array[HealthCheck]] = js.native
+    var healthChecks: js.UndefOr[js.Array[HealthCheck]] = js.undefined
     
-    var ignoreStartsWith: js.UndefOr[String] = js.native
+    var ignoreStartsWith: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var socketPath: js.UndefOr[String] = js.native
+    var socketPath: js.UndefOr[String] = js.undefined
     
     // References a socket.io instance
-    var spans: js.UndefOr[js.Array[RetentionSpan]] = js.native
+    var spans: js.UndefOr[js.Array[RetentionSpan]] = js.undefined
     
-    var theme: js.UndefOr[String] = js.native
+    var theme: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var websocket: js.UndefOr[Server | Null] = js.native
+    var websocket: js.UndefOr[Server | Null] = js.undefined
   }
   object ExpressStatusMonitorConfig {
     
@@ -117,16 +117,15 @@ object mod {
     }
   }
   
-  @js.native
   trait HealthCheck extends StObject {
     
-    var host: String = js.native
+    var host: String
     
-    var path: String = js.native
+    var path: String
     
-    var port: String | Double = js.native
+    var port: String | Double
     
-    var protocol: String = js.native
+    var protocol: String
   }
   object HealthCheck {
     
@@ -153,12 +152,11 @@ object mod {
     }
   }
   
-  @js.native
   trait RetentionSpan extends StObject {
     
-    var interval: Double = js.native
+    var interval: Double
     
-    var retention: Double = js.native
+    var retention: Double
   }
   object RetentionSpan {
     

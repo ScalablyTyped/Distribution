@@ -2,25 +2,23 @@ package typings.wechatMiniprogram.WechatMiniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSettingSuccessCallbackResult extends StObject {
   
   /** [AuthSetting](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/AuthSetting.html)
     *
     * 用户授权结果 */
-  var authSetting: AuthSetting = js.native
+  var authSetting: AuthSetting
   
-  var errMsg: String = js.native
+  var errMsg: String
   
   /** [SubscriptionsSetting](https://developers.weixin.qq.com/miniprogram/dev/api/open-api/setting/SubscriptionsSetting.html)
     *
     * 用户订阅消息设置，接口参数`withSubscriptions`值为`true`时才会返回。
     *
     * 最低基础库： `2.10.1` */
-  var subscriptionsSetting: SubscriptionsSetting = js.native
+  var subscriptionsSetting: SubscriptionsSetting
 }
 object GetSettingSuccessCallbackResult {
   

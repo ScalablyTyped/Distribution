@@ -2,39 +2,37 @@ package typings.waterline.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LifecycleCallbacks extends StObject {
   
   var afterCreate: js.UndefOr[
-    (js.Array[js.Function2[/* newlyCreatedRecord */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit])
-  ] = js.native
+    (js.Array[js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
   
   var afterDestroy: js.UndefOr[
-    (js.Array[js.Function2[/* destroyedInstance */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit])
-  ] = js.native
+    (js.Array[js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
   
   var afterUpdate: js.UndefOr[
-    (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
-  ] = js.native
+    (js.Array[js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
   
   var beforeCreate: js.UndefOr[
-    (js.Array[js.Function2[/* values */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
-  ] = js.native
+    (js.Array[js.Function2[/* values */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
   
   var beforeDestroy: js.UndefOr[
-    (js.Array[js.Function2[/* criteria */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
-  ] = js.native
+    (js.Array[js.Function2[/* criteria */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
   
   var beforeUpdate: js.UndefOr[
-    (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
-  ] = js.native
+    (js.Array[js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
   
   var beforeValidate: js.UndefOr[
-    (js.Array[js.Function2[/* vaues */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
-  ] = js.native
+    (js.Array[js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+  ] = js.undefined
 }
 object LifecycleCallbacks {
   
@@ -49,7 +47,7 @@ object LifecycleCallbacks {
     
     @scala.inline
     def setAfterCreate(
-      value: (js.Array[js.Function2[/* newlyCreatedRecord */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit])
+      value: (js.Array[js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit])
     ): Self = StObject.set(x, "afterCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -59,11 +57,11 @@ object LifecycleCallbacks {
     def setAfterCreateUndefined: Self = StObject.set(x, "afterCreate", js.undefined)
     
     @scala.inline
-    def setAfterCreateVarargs(value: (js.Function2[js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterCreate", js.Array(value :_*))
+    def setAfterCreateVarargs(value: (js.Function2[/* newlyCreatedRecord */ js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterCreate", js.Array(value :_*))
     
     @scala.inline
     def setAfterDestroy(
-      value: (js.Array[js.Function2[/* destroyedInstance */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit])
+      value: (js.Array[js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit])
     ): Self = StObject.set(x, "afterDestroy", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -73,11 +71,11 @@ object LifecycleCallbacks {
     def setAfterDestroyUndefined: Self = StObject.set(x, "afterDestroy", js.undefined)
     
     @scala.inline
-    def setAfterDestroyVarargs(value: (js.Function2[js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterDestroy", js.Array(value :_*))
+    def setAfterDestroyVarargs(value: (js.Function2[/* destroyedInstance */ js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterDestroy", js.Array(value :_*))
     
     @scala.inline
     def setAfterUpdate(
-      value: (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+      value: (js.Array[js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
     ): Self = StObject.set(x, "afterUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -87,11 +85,11 @@ object LifecycleCallbacks {
     def setAfterUpdateUndefined: Self = StObject.set(x, "afterUpdate", js.undefined)
     
     @scala.inline
-    def setAfterUpdateVarargs(value: (js.Function2[js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterUpdate", js.Array(value :_*))
+    def setAfterUpdateVarargs(value: (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "afterUpdate", js.Array(value :_*))
     
     @scala.inline
     def setBeforeCreate(
-      value: (js.Array[js.Function2[/* values */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+      value: (js.Array[js.Function2[/* values */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
     ): Self = StObject.set(x, "beforeCreate", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -101,11 +99,11 @@ object LifecycleCallbacks {
     def setBeforeCreateUndefined: Self = StObject.set(x, "beforeCreate", js.undefined)
     
     @scala.inline
-    def setBeforeCreateVarargs(value: (js.Function2[js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeCreate", js.Array(value :_*))
+    def setBeforeCreateVarargs(value: (js.Function2[/* values */ js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeCreate", js.Array(value :_*))
     
     @scala.inline
     def setBeforeDestroy(
-      value: (js.Array[js.Function2[/* criteria */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+      value: (js.Array[js.Function2[/* criteria */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
     ): Self = StObject.set(x, "beforeDestroy", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -115,11 +113,11 @@ object LifecycleCallbacks {
     def setBeforeDestroyUndefined: Self = StObject.set(x, "beforeDestroy", js.undefined)
     
     @scala.inline
-    def setBeforeDestroyVarargs(value: (js.Function2[js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeDestroy", js.Array(value :_*))
+    def setBeforeDestroyVarargs(value: (js.Function2[/* criteria */ js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeDestroy", js.Array(value :_*))
     
     @scala.inline
     def setBeforeUpdate(
-      value: (js.Array[js.Function2[/* valuesToUpdate */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
+      value: (js.Array[js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])
     ): Self = StObject.set(x, "beforeUpdate", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -129,11 +127,11 @@ object LifecycleCallbacks {
     def setBeforeUpdateUndefined: Self = StObject.set(x, "beforeUpdate", js.undefined)
     
     @scala.inline
-    def setBeforeUpdateVarargs(value: (js.Function2[js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeUpdate", js.Array(value :_*))
+    def setBeforeUpdateVarargs(value: (js.Function2[/* valuesToUpdate */ js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeUpdate", js.Array(value :_*))
     
     @scala.inline
     def setBeforeValidate(
-      value: (js.Array[js.Function2[/* vaues */ _, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
+      value: (js.Array[js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit]]) | (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])
     ): Self = StObject.set(x, "beforeValidate", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -143,6 +141,6 @@ object LifecycleCallbacks {
     def setBeforeValidateUndefined: Self = StObject.set(x, "beforeValidate", js.undefined)
     
     @scala.inline
-    def setBeforeValidateVarargs(value: (js.Function2[js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeValidate", js.Array(value :_*))
+    def setBeforeValidateVarargs(value: (js.Function2[/* vaues */ js.Any, /* next */ js.Function, Unit])*): Self = StObject.set(x, "beforeValidate", js.Array(value :_*))
   }
 }

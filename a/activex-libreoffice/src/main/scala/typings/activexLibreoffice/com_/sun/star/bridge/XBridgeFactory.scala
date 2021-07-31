@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** factory to create interprocess bridges. */
-@js.native
-trait XBridgeFactory extends XInterface {
+trait XBridgeFactory
+  extends StObject
+     with XInterface {
   
   /** returns the sequence of all named and unnamed UNO interprocess bridges that are instantiated at the time the call is made. */
-  val ExistingBridges: SafeArray[XBridge] = js.native
+  val ExistingBridges: SafeArray[XBridge]
   
   /**
     * tries to create a UNO interprocess bridge.
@@ -25,7 +25,7 @@ trait XBridgeFactory extends XInterface {
     * @throws BridgeExistsException There is already a bridge registered with this name. Use getBridge instead.
     * @throws IllegalArgumentException The protocol is unknown or the connection is null.
     */
-  def createBridge(sName: String, sProtocol: String, aConnection: XConnection, anInstanceProvider: XInstanceProvider): XBridge = js.native
+  def createBridge(sName: String, sProtocol: String, aConnection: XConnection, anInstanceProvider: XInstanceProvider): XBridge
   
   /**
     * tries to get a bridge by this name.
@@ -33,10 +33,10 @@ trait XBridgeFactory extends XInterface {
     * Cannot be retrieved, when the bridge got disposed before.
     * @returns An existing remote bridge or a null reference.
     */
-  def getBridge(sName: String): XBridge = js.native
+  def getBridge(sName: String): XBridge
   
   /** returns the sequence of all named and unnamed UNO interprocess bridges that are instantiated at the time the call is made. */
-  def getExistingBridges(): SafeArray[XBridge] = js.native
+  def getExistingBridges(): SafeArray[XBridge]
 }
 object XBridgeFactory {
   

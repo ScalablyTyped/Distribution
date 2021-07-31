@@ -2,7 +2,6 @@ package typings.jquerySteps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JQuerySteps {
@@ -23,63 +22,62 @@ object JQuerySteps {
   //#region "Callback Functions"
   type FunctionOnStepChanging = js.Function3[/* event */ String, /* currentIndex */ Double, /* newIndex */ Double, Boolean]
   
-  @js.native
   trait JQuerySteps extends StObject {
     
     /**
       * Adds a new step. (chainable)
       */
-    def add(step: Step): typings.jquerySteps.JQuerySteps.JQuerySteps = js.native
+    def add(step: Step): typings.jquerySteps.JQuerySteps.JQuerySteps
     
     /**
       * Removes the control functionality completely and transforms the current state to the initial HTML structure.
       */
-    def destroy(): Unit = js.native
+    def destroy(): Unit
     
     /**
       * Triggers the onFinishing and onFinished event.
       */
-    def finish(): Unit = js.native
+    def finish(): Unit
     
     /**
       * Gets the current step index.
       */
-    def getCurrentIndex(): Double = js.native
+    def getCurrentIndex(): Double
     
     /**
       * Gets the current step object.
       */
-    def getCurrentStep(): Step = js.native
+    def getCurrentStep(): Step
     
     /**
       * Gets a specific step object by index.
       */
-    def getStep(index: Double): Step = js.native
+    def getStep(index: Double): Step
     
     /**
       * Inserts a new step to a specific position. (chainable)
       */
-    def insert(index: Double, step: Step): typings.jquerySteps.JQuerySteps.JQuerySteps = js.native
+    def insert(index: Double, step: Step): typings.jquerySteps.JQuerySteps.JQuerySteps
     
     /**
       * Routes to the previous step.
       */
-    def next(): Boolean = js.native
+    def next(): Boolean
     
     /**
       * Routes to the next step.
       */
-    def previous(): Boolean = js.native
+    def previous(): Boolean
     
     /**
       * Removes a specific step by an given index.
       */
-    def remove(index: Double): Boolean = js.native
+    def remove(index: Double): Boolean
     
     /**
       * Skips a certain amount of steps. Not yet implemented!
       */
-    def skip(count: Double): Boolean = js.native
+    def skip(count: Double): Boolean
   }
   object JQuerySteps {
     
@@ -141,43 +139,42 @@ object JQuerySteps {
   
   //#endregion "Settings"
   //#region "Label Settings"
-  @js.native
   trait LabelSettings extends StObject {
     
     /**
       * Label for the cancel button. Default value is Cancel.
       */
-    var cancel: js.UndefOr[String] = js.native
+    var cancel: js.UndefOr[String] = js.undefined
     
     /**
       * This label is important for accessability reasons. Indicates which step is activated. Default value is current step:.
       */
-    var current: js.UndefOr[String] = js.native
+    var current: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the finish button. Default value is Finish.
       */
-    var finish: js.UndefOr[String] = js.native
+    var finish: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the loading animation. Default value is Loading ... .
       */
-    var loading: js.UndefOr[String] = js.native
+    var loading: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the next button. Default value is Next.
       */
-    var next: js.UndefOr[String] = js.native
+    var next: js.UndefOr[String] = js.undefined
     
     /**
       * This label is important for accessability reasons and describes the kind of navigation. Default value is Pagination.
       */
-    var pagination: js.UndefOr[String] = js.native
+    var pagination: js.UndefOr[String] = js.undefined
     
     /**
       * Label for the previous button. Default value is Previous.
       */
-    var previous: js.UndefOr[String] = js.native
+    var previous: js.UndefOr[String] = js.undefined
   }
   object LabelSettings {
     
@@ -234,160 +231,159 @@ object JQuerySteps {
     }
   }
   
-  @js.native
   trait Settings extends StObject {
     
     /**
       * The action container tag which will be used to wrap the pagination navigation. Default value is div.
       */
-    var actionContainerTag: js.UndefOr[String] = js.native
+    var actionContainerTag: js.UndefOr[String] = js.undefined
     
     //#endregion "Templates"
     //#region "Behavior"
     /**
       * Sets the focus to the first wizard instance in order to enable the key navigation from the begining if true. Default value is false.
       */
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The body tag is used to find the step content within the declared wizard area. Default value is div.
       */
-    var bodyTag: js.UndefOr[String] = js.native
+    var bodyTag: js.UndefOr[String] = js.undefined
     
     /**
       * The content container tag which will be used to wrap all step contents. Default value is div.
       */
-    var contentContainerTag: js.UndefOr[String] = js.native
+    var contentContainerTag: js.UndefOr[String] = js.undefined
     
     /**
       * The css class which will be added to the outer component wrapper. Default value is wizard.
       */
-    var cssClass: js.UndefOr[String] = js.native
+    var cssClass: js.UndefOr[String] = js.undefined
     
     /**
       * Enables all steps from the begining if true (all steps are clickable). Default value is false.
       */
-    var enableAllSteps: js.UndefOr[Boolean] = js.native
+    var enableAllSteps: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the cancel button if enabled. Default value is false.
       */
-    var enableCancelButton: js.UndefOr[Boolean] = js.native
+    var enableCancelButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables cache for async loaded or iframe embedded content. Default value is true.
       */
-    var enableContentCache: js.UndefOr[Boolean] = js.native
+    var enableContentCache: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the finish button if enabled. Default value is true.
       */
-    var enableFinishButton: js.UndefOr[Boolean] = js.native
+    var enableFinishButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables keyboard navigation if true (arrow left and arrow right). Default value is true.
       */
-    var enableKeyNavigation: js.UndefOr[Boolean] = js.native
+    var enableKeyNavigation: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables pagination (next, previous and finish button) if true. Default value is true.
       */
-    var enablePagination: js.UndefOr[Boolean] = js.native
+    var enablePagination: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prevents jumping to a previous step. Default value is false.
       */
-    var forceMoveForward: js.UndefOr[Boolean] = js.native
+    var forceMoveForward: js.UndefOr[Boolean] = js.undefined
     
     //#region "Appearance"
     /**
       * The header tag is used to find the step button text within the declared wizard area. Default value is h1.
       */
-    var headerTag: js.UndefOr[String] = js.native
+    var headerTag: js.UndefOr[String] = js.undefined
     
     //#endregion "Events"
     //#region "Labels"
-    var labels: js.UndefOr[LabelSettings] = js.native
+    var labels: js.UndefOr[LabelSettings] = js.undefined
     
     /**
       * The loading template which will be used to create the loading animation. Default value is <span class="spinner"></span> #text#.
       */
-    var loadingTemplate: js.UndefOr[String] = js.native
+    var loadingTemplate: js.UndefOr[String] = js.undefined
     
     /**
       * Fires after cancellation.
       */
-    var onCanceled: js.UndefOr[FunctionOnCancelled] = js.native
+    var onCanceled: js.UndefOr[FunctionOnCancelled] = js.undefined
     
     /**
       * Fires after async content is loaded.
       */
-    var onContentLoaded: js.UndefOr[FunctionOnContentLoaded] = js.native
+    var onContentLoaded: js.UndefOr[FunctionOnContentLoaded] = js.undefined
     
     /**
       * Fires after completion.
       */
-    var onFinished: js.UndefOr[FunctionOnFinished] = js.native
+    var onFinished: js.UndefOr[FunctionOnFinished] = js.undefined
     
     /**
       * Fires before finishing and can be used to prevent completion by returning false. Very useful for form validation.
       */
-    var onFinishing: js.UndefOr[FunctionOnFinishing] = js.native
+    var onFinishing: js.UndefOr[FunctionOnFinishing] = js.undefined
     
     /**
       * Fires when the wizard is initialized.
       */
-    var onInit: js.UndefOr[FunctionOnInit] = js.native
+    var onInit: js.UndefOr[FunctionOnInit] = js.undefined
     
     /**
       * Fires after the step has changed.
       */
-    var onStepChanged: js.UndefOr[FunctionOnStepChanged] = js.native
+    var onStepChanged: js.UndefOr[FunctionOnStepChanged] = js.undefined
     
     //#endregion "Transition Effects"
     //#region "Events"
     /**
       * Fires before the step changes and can be used to prevent step changing by returning false.
       */
-    var onStepChanging: js.UndefOr[FunctionOnStepChanging] = js.native
+    var onStepChanging: js.UndefOr[FunctionOnStepChanging] = js.undefined
     
     /**
       * Saves the current state (step position) to a cookie. By coming next time the last active step becomes activated. Default value is false.
       */
-    var saveState: js.UndefOr[Boolean] = js.native
+    var saveState: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Shows the finish button always (on each step; right beside the next button) if true. Otherwise the next button will be replaced by the finish button if the last step becomes active. Default value is false.
       */
-    var showFinishButtonAlways: js.UndefOr[Boolean] = js.native
+    var showFinishButtonAlways: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The position to start on (zero-based). Default value is 0.
       */
-    var startIndex: js.UndefOr[Double] = js.native
+    var startIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * The steps container tag which will be used to wrap the steps navigation. Default value is div.
       */
-    var stepsContainerTag: js.UndefOr[String] = js.native
+    var stepsContainerTag: js.UndefOr[String] = js.undefined
     
     /**
       * Determines whether the steps are vertically or horizontally oriented. Default value is horizontal or 0.
       * This can be horizontal (0) or vertical (1).
       */
-    var stepsOrientation: js.UndefOr[String | Double] = js.native
+    var stepsOrientation: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Suppresses pagination if a form field is focused. Default value is true.
       */
-    var suppressPaginationOnFocus: js.UndefOr[Boolean] = js.native
+    var suppressPaginationOnFocus: js.UndefOr[Boolean] = js.undefined
     
     //#endregion "Appearance"
     //#region "Templates"
     /**
       * The title template which will be used to create a step button. Default value is span class="number">#index#.</span> #title#.
       */
-    var titleTemplate: js.UndefOr[String] = js.native
+    var titleTemplate: js.UndefOr[String] = js.undefined
     
     //#endregion "Behavior"
     //#region "Transition Effects"
@@ -395,12 +391,12 @@ object JQuerySteps {
       * The animation effect which will be used for step transitions. Default value is none or 0.
       * This can be none (0), fade (1), slide (2) or slideLeft (3).
       */
-    var transitionEffect: js.UndefOr[String | Double] = js.native
+    var transitionEffect: js.UndefOr[String | Double] = js.undefined
     
     /**
       * Animation speed for step transitions (in milliseconds). Default value is 200.
       */
-    var transitionEffectSpeed: js.UndefOr[Double] = js.native
+    var transitionEffectSpeed: js.UndefOr[Double] = js.undefined
   }
   object Settings {
     
@@ -603,29 +599,28 @@ object JQuerySteps {
   
   //#endregion "Callback Functions"
   //#region "Step Object"
-  @js.native
   trait Step extends StObject {
     
     /**
       *  The step content (HTML).
       */
-    var content: js.UndefOr[String] = js.native
+    var content: js.UndefOr[String] = js.undefined
     
     /**
       * Indicates how the content will be loaded.
       * This can be html (0), iframe (1), or async (2).
       */
-    var contentMode: js.UndefOr[String | Double] = js.native
+    var contentMode: js.UndefOr[String | Double] = js.undefined
     
     /**
       * The URI that refers to the content.
       */
-    var contentUrl: js.UndefOr[String] = js.native
+    var contentUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The step title (HTML).
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object Step {
     

@@ -2,26 +2,24 @@ package typings.awsSdk.iamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoginProfile extends StObject {
   
   /**
     * The date when the password for the user was created.
     */
-  var CreateDate: dateType = js.native
+  var CreateDate: dateType
   
   /**
     * Specifies whether the user is required to set a new password on next sign-in.
     */
-  var PasswordResetRequired: js.UndefOr[booleanType] = js.native
+  var PasswordResetRequired: js.UndefOr[booleanType] = js.undefined
   
   /**
     * The name of the user, which can be used for signing in to the AWS Management Console.
     */
-  var UserName: userNameType = js.native
+  var UserName: userNameType
 }
 object LoginProfile {
   

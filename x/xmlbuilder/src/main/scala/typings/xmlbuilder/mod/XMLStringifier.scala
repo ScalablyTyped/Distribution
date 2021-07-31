@@ -2,64 +2,62 @@ package typings.xmlbuilder.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the functions used for converting values to strings.
   */
-@js.native
 trait XMLStringifier extends StObject {
   
   /**
     * Escapes special characters in attribute values.
     */
-  var attEscape: js.UndefOr[js.Function1[/* v */ String, String]] = js.native
+  var attEscape: js.UndefOr[js.Function1[/* v */ String, String]] = js.undefined
   
   /**
     * Converts attribute value to string
     */
-  var attValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var attValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts the contents of a CDATA node to string
     */
-  var cdata: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var cdata: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts the contents of a comment node to string
     */
-  var comment: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var comment: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /** 
     * When prepended to a JS object key, converts the key-value pair 
     * to an attribute. 
     */
-  var convertAttKey: js.UndefOr[String] = js.native
+  var convertAttKey: js.UndefOr[String] = js.undefined
   
   /** 
     * When prepended to a JS object key, converts its value to a CDATA 
     * node. 
     */
-  var convertCDataKey: js.UndefOr[String] = js.native
+  var convertCDataKey: js.UndefOr[String] = js.undefined
   
   /** 
     * When prepended to a JS object key, converts its value to a 
     * comment node.
     */
-  var convertCommentKey: js.UndefOr[String] = js.native
+  var convertCommentKey: js.UndefOr[String] = js.undefined
   
   /** 
     * When prepended to a JS object key, converts the key-value pair 
     * to a processing instruction node. 
     */
-  var convertPIKey: js.UndefOr[String] = js.native
+  var convertPIKey: js.UndefOr[String] = js.undefined
   
   /** 
     * When prepended to a JS object key, converts its value to a raw 
     * text node. 
     */
-  var convertRawKey: js.UndefOr[String] = js.native
+  var convertRawKey: js.UndefOr[String] = js.undefined
   
   /** 
     * When prepended to a JS object key, converts its value to a text node. 
@@ -68,87 +66,87 @@ trait XMLStringifier extends StObject {
     * nodes can be created by adding some unique text after each object 
     * key. For example: `{ '#text1': 'some text', '#text2': 'more text' };`
     */
-  var convertTextKey: js.UndefOr[String] = js.native
+  var convertTextKey: js.UndefOr[String] = js.undefined
   
   /**
     * Converts `!ATTLIST` node default value inside DocType to string
     */
-  var dtdAttDefault: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var dtdAttDefault: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts `!ATTLIST` node type inside DocType to string
     */
-  var dtdAttType: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var dtdAttType: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts `!ELEMENT` node content inside Doctype to string
     */
-  var dtdElementValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var dtdElementValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts `!ENTITY` node content inside Doctype to string
     */
-  var dtdEntityValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var dtdEntityValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts `!NOTATION` node content inside Doctype to string
     */
-  var dtdNData: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var dtdNData: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts DocType public identifier to string
     */
-  var dtdPubID: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var dtdPubID: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts DocType system identifier to string
     */
-  var dtdSysID: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var dtdSysID: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts processing instruction target to string
     */
-  var insTarget: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var insTarget: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts processing instruction value to string
     */
-  var insValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var insValue: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts an element or attribute name to string
     */
-  var name: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var name: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts the contents of a raw text node to string
     */
-  var raw: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var raw: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts the contents of a text node to string
     */
-  var text: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var text: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Escapes special characters in text.
     */
-  var textEscape: js.UndefOr[js.Function1[/* v */ String, String]] = js.native
+  var textEscape: js.UndefOr[js.Function1[/* v */ String, String]] = js.undefined
   
   /**
     * Converts XML encoding to string
     */
-  var xmlEncoding: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var xmlEncoding: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts standalone document declaration to string
     */
-  var xmlStandalone: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var xmlStandalone: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
   
   /**
     * Converts XML version to string
     */
-  var xmlVersion: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.native
+  var xmlVersion: js.UndefOr[js.Function1[/* v */ js.Any, String]] = js.undefined
 }
 object XMLStringifier {
   

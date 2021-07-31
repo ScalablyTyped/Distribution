@@ -3,15 +3,13 @@ package typings.instagramPrivateApi.anon
 import typings.instagramPrivateApi.mod.IgApiClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Buffer extends StObject {
   
-  var buffer: typings.node.Buffer = js.native
+  var buffer: typings.node.Buffer
   
-  var client: IgApiClient = js.native
+  var client: IgApiClient
 }
 object Buffer {
   

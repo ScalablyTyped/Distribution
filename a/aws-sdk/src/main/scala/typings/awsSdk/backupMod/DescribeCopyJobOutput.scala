@@ -2,16 +2,14 @@ package typings.awsSdk.backupMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeCopyJobOutput extends StObject {
   
   /**
     * Contains detailed information about a copy job.
     */
-  var CopyJob: js.UndefOr[typings.awsSdk.backupMod.CopyJob] = js.native
+  var CopyJob: js.UndefOr[typings.awsSdk.backupMod.CopyJob] = js.undefined
 }
 object DescribeCopyJobOutput {
   

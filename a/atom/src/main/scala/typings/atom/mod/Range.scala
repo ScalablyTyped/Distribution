@@ -3,7 +3,6 @@ package typings.atom.mod
 import typings.atom.anon.ReadonlyRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "Range")
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /** Construct a Range object. */
 class Range () extends StObject {
   def this(pointA: PointCompatible) = this()
-  def this(pointA: js.UndefOr[PointCompatible], pointB: PointCompatible) = this()
+  def this(pointA: Unit, pointB: PointCompatible) = this()
+  def this(pointA: PointCompatible, pointB: PointCompatible) = this()
   
   // Comparison
   /**
@@ -120,17 +120,18 @@ class Range () extends StObject {
 /* static members */
 object Range {
   
-  /** Call this with the result of Range::serialize to construct a new Range. */
-  @JSImport("atom", "Range.deserialize")
+  @JSImport("atom", "Range")
   @js.native
-  def deserialize(array: js.Object): Range = js.native
+  val ^ : js.Any = js.native
+  
+  /** Call this with the result of Range::serialize to construct a new Range. */
+  @scala.inline
+  def deserialize(array: js.Object): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("deserialize")(array.asInstanceOf[js.Any]).asInstanceOf[Range]
   
   // Construction
   /** Convert any range-compatible object to a Range. */
-  @JSImport("atom", "Range.fromObject")
-  @js.native
-  def fromObject(`object`: RangeCompatible): Range = js.native
-  @JSImport("atom", "Range.fromObject")
-  @js.native
-  def fromObject(`object`: RangeCompatible, copy: Boolean): Range = js.native
+  @scala.inline
+  def fromObject(`object`: RangeCompatible): Range = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[Range]
+  @scala.inline
+  def fromObject(`object`: RangeCompatible, copy: Boolean): Range = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], copy.asInstanceOf[js.Any])).asInstanceOf[Range]
 }

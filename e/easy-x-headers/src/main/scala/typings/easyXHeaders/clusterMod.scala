@@ -4,7 +4,6 @@ import typings.easyXHeaders.childProcessMod.ChildProcess
 import typings.easyXHeaders.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object clusterMod {
@@ -35,27 +34,21 @@ object clusterMod {
     var suicide: Boolean = js.native
   }
   
-  @JSImport("cluster", "addListener")
-  @js.native
-  def addListener(event: String, listener: js.Function): Unit = js.native
+  @scala.inline
+  def addListener(event: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cluster", "disconnect")
-  @js.native
-  def disconnect(): Unit = js.native
-  @JSImport("cluster", "disconnect")
-  @js.native
-  def disconnect(callback: js.Function): Unit = js.native
+  @scala.inline
+  def disconnect(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")().asInstanceOf[Unit]
+  @scala.inline
+  def disconnect(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disconnect")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("cluster", "emit")
-  @js.native
-  def emit(event: String, args: js.Any*): Boolean = js.native
+  @scala.inline
+  def emit(event: String, args: js.Any*): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("emit")(event.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("cluster", "fork")
-  @js.native
-  def fork(): Worker_ = js.native
-  @JSImport("cluster", "fork")
-  @js.native
-  def fork(env: js.Any): Worker_ = js.native
+  @scala.inline
+  def fork(): Worker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")().asInstanceOf[Worker_]
+  @scala.inline
+  def fork(env: js.Any): Worker_ = ^.asInstanceOf[js.Dynamic].applyDynamic("fork")(env.asInstanceOf[js.Any]).asInstanceOf[Worker_]
   
   @JSImport("cluster", "isMaster")
   @js.native
@@ -69,32 +62,25 @@ object clusterMod {
   @scala.inline
   def isWorker_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isWorker")(x.asInstanceOf[js.Any])
   
-  @JSImport("cluster", "listeners")
-  @js.native
-  def listeners(event: String): js.Array[js.Function] = js.native
+  @scala.inline
+  def listeners(event: String): js.Array[js.Function] = ^.asInstanceOf[js.Dynamic].applyDynamic("listeners")(event.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Function]]
   
-  @JSImport("cluster", "on")
-  @js.native
-  def on(event: String, listener: js.Function): js.Any = js.native
+  @scala.inline
+  def on(event: String, listener: js.Function): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("on")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("cluster", "once")
-  @js.native
-  def once(event: String, listener: js.Function): Unit = js.native
+  @scala.inline
+  def once(event: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("once")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cluster", "removeAllListeners")
-  @js.native
-  def removeAllListeners(): Unit = js.native
-  @JSImport("cluster", "removeAllListeners")
-  @js.native
-  def removeAllListeners(event: String): Unit = js.native
+  @scala.inline
+  def removeAllListeners(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")().asInstanceOf[Unit]
+  @scala.inline
+  def removeAllListeners(event: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAllListeners")(event.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("cluster", "removeListener")
-  @js.native
-  def removeListener(event: String, listener: js.Function): Unit = js.native
+  @scala.inline
+  def removeListener(event: String, listener: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeListener")(event.asInstanceOf[js.Any], listener.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("cluster", "setMaxListeners")
-  @js.native
-  def setMaxListeners(n: Double): Unit = js.native
+  @scala.inline
+  def setMaxListeners(n: Double): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setMaxListeners")(n.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("cluster", "settings")
   @js.native
@@ -102,12 +88,10 @@ object clusterMod {
   @scala.inline
   def settings_=(x: ClusterSettings): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("settings")(x.asInstanceOf[js.Any])
   
-  @JSImport("cluster", "setupMaster")
-  @js.native
-  def setupMaster(): Unit = js.native
-  @JSImport("cluster", "setupMaster")
-  @js.native
-  def setupMaster(settings: ClusterSettings): Unit = js.native
+  @scala.inline
+  def setupMaster(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupMaster")().asInstanceOf[Unit]
+  @scala.inline
+  def setupMaster(settings: ClusterSettings): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setupMaster")(settings.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("cluster", "worker")
   @js.native
@@ -121,14 +105,13 @@ object clusterMod {
   @scala.inline
   def workers_=(x: js.Array[Worker_]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("workers")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait ClusterSettings extends StObject {
     
-    var args: js.UndefOr[js.Array[String]] = js.native
+    var args: js.UndefOr[js.Array[String]] = js.undefined
     
-    var exec: js.UndefOr[String] = js.native
+    var exec: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
   }
   object ClusterSettings {
     

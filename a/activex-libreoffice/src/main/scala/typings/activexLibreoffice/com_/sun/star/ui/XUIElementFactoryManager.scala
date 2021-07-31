@@ -6,16 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a unified interface for the new-style service {@link XUIElementFactoryManager} .
   * @since LibreOffice 4.1
   */
-@js.native
 trait XUIElementFactoryManager
-  extends XUIElementFactory
+  extends StObject
+     with XUIElementFactory
      with XUIElementFactoryRegistration
 object XUIElementFactoryManager {
   

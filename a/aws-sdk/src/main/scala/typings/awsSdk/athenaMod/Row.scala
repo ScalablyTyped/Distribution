@@ -2,16 +2,14 @@ package typings.awsSdk.athenaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Row extends StObject {
   
   /**
     * The data that populates a row in a query result table.
     */
-  var Data: js.UndefOr[datumList] = js.native
+  var Data: js.UndefOr[datumList] = js.undefined
 }
 object Row {
   

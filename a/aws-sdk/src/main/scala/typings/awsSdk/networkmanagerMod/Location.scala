@@ -2,26 +2,24 @@ package typings.awsSdk.networkmanagerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Location extends StObject {
   
   /**
     * The physical address.
     */
-  var Address: js.UndefOr[String] = js.native
+  var Address: js.UndefOr[String] = js.undefined
   
   /**
     * The latitude.
     */
-  var Latitude: js.UndefOr[String] = js.native
+  var Latitude: js.UndefOr[String] = js.undefined
   
   /**
     * The longitude.
     */
-  var Longitude: js.UndefOr[String] = js.native
+  var Longitude: js.UndefOr[String] = js.undefined
 }
 object Location {
   

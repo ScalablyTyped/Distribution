@@ -5,7 +5,6 @@ import typings.node.netMod.Socket
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core", "NetworkBase")
@@ -18,7 +17,7 @@ class NetworkBase () extends StObject {
   
   val currentProvider: typings.web3Core.mod.provider = js.native
   
-  def extend(extension: Extension): js.Any = js.native
+  def extend(`extension`: Extension): js.Any = js.native
   
   def getId(): js.Promise[Double] = js.native
   def getId(callback: js.Function2[/* error */ Error, /* id */ Double, Unit]): js.Promise[Double] = js.native

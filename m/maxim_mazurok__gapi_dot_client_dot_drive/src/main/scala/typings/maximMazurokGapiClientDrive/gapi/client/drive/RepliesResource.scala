@@ -9,7 +9,6 @@ import typings.maximMazurokGapiClientDrive.anon.FileIdKey
 import typings.maximMazurokGapiClientDrive.anon.ReplyId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

@@ -2,29 +2,27 @@ package typings.bingmaps.Microsoft.Maps.SpatialDataService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoDataPrimitive extends StObject {
   
   /** The number of vertex points used to define the polygon. */
-  var NumPoints: String = js.native
+  var NumPoints: String
   
   /** A unique ID associated with this polygon primitive. */
-  var PrimitiveID: String = js.native
+  var PrimitiveID: String
   
   /**
     * A comma-delimited sequence starting with the version number of the polygon set followed by a list of compressed polygon
     * "rings" (closed paths represented by sequences of latitude and-longitude points).
     */
-  var Shape: String = js.native
+  var Shape: String
   
   /**
     * An ID identifying the data provider that supplied the data. This ID number will reference one of the sources listed in the
     * array of CopyrightSources in the Copyright property of the GeoDataResultSet object.
     */
-  var SourceID: String = js.native
+  var SourceID: String
 }
 object IGeoDataPrimitive {
   

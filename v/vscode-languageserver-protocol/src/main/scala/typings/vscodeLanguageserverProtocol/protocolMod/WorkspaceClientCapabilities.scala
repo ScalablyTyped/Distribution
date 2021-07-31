@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkspaceClientCapabilities extends StObject {
   
   /**
@@ -13,32 +11,32 @@ trait WorkspaceClientCapabilities extends StObject {
     * to the workspace by supporting the request
     * 'workspace/applyEdit'
     */
-  var applyEdit: js.UndefOr[Boolean] = js.native
+  var applyEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Capabilities specific to the `workspace/didChangeConfiguration` notification.
     */
-  var didChangeConfiguration: js.UndefOr[DidChangeConfigurationClientCapabilities] = js.native
+  var didChangeConfiguration: js.UndefOr[DidChangeConfigurationClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `workspace/didChangeWatchedFiles` notification.
     */
-  var didChangeWatchedFiles: js.UndefOr[DidChangeWatchedFilesClientCapabilities] = js.native
+  var didChangeWatchedFiles: js.UndefOr[DidChangeWatchedFilesClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `workspace/executeCommand` request.
     */
-  var executeCommand: js.UndefOr[ExecuteCommandClientCapabilities] = js.native
+  var executeCommand: js.UndefOr[ExecuteCommandClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to the `workspace/symbol` request.
     */
-  var symbol: js.UndefOr[WorkspaceSymbolClientCapabilities] = js.native
+  var symbol: js.UndefOr[WorkspaceSymbolClientCapabilities] = js.undefined
   
   /**
     * Capabilities specific to `WorkspaceEdit`s
     */
-  var workspaceEdit: js.UndefOr[WorkspaceEditClientCapabilities] = js.native
+  var workspaceEdit: js.UndefOr[WorkspaceEditClientCapabilities] = js.undefined
 }
 object WorkspaceClientCapabilities {
   

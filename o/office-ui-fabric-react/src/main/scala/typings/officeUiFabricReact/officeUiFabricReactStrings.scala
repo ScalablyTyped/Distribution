@@ -8,13 +8,14 @@ import typings.officeUiFabricReact.spinnerTypesMod.SpinnerLabelPosition
 import typings.officeUiFabricReact.stackTypesMod.Alignment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object officeUiFabricReactStrings {
   
   @js.native
-  sealed trait Components extends PageKind
+  sealed trait Components
+    extends StObject
+       with PageKind
   @scala.inline
   def Components: Components = "Components".asInstanceOf[Components]
   
@@ -29,7 +30,9 @@ object officeUiFabricReactStrings {
   def PartialIStackProps: PartialIStackProps = "PartialIStackProps".asInstanceOf[PartialIStackProps]
   
   @js.native
-  sealed trait References extends PageKind
+  sealed trait References
+    extends StObject
+       with PageKind
   @scala.inline
   def References: References = "References".asInstanceOf[References]
   
@@ -44,7 +47,9 @@ object officeUiFabricReactStrings {
   def _empty: _empty = "".asInstanceOf[_empty]
   
   @js.native
-  sealed trait a extends ColorComponent
+  sealed trait a
+    extends StObject
+       with ColorComponent
   @scala.inline
   def a: a = "a".asInstanceOf[a]
   
@@ -89,7 +94,9 @@ object officeUiFabricReactStrings {
   def alpha: alpha = "alpha".asInstanceOf[alpha]
   
   @js.native
-  sealed trait always extends ScrollbarVisibility
+  sealed trait always
+    extends StObject
+       with ScrollbarVisibility
   @scala.inline
   def always: always = "always".asInstanceOf[always]
   
@@ -104,17 +111,23 @@ object officeUiFabricReactStrings {
   def assertive: assertive = "assertive".asInstanceOf[assertive]
   
   @js.native
-  sealed trait auto extends ScrollbarVisibility
+  sealed trait auto
+    extends StObject
+       with ScrollbarVisibility
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
   @js.native
-  sealed trait b extends ColorComponent
+  sealed trait b
+    extends StObject
+       with ColorComponent
   @scala.inline
   def b: b = "b".asInstanceOf[b]
   
   @js.native
-  sealed trait baseline extends Alignment
+  sealed trait baseline
+    extends StObject
+       with Alignment
   @scala.inline
   def baseline: baseline = "baseline".asInstanceOf[baseline]
   
@@ -214,7 +227,9 @@ object officeUiFabricReactStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait bottom extends SpinnerLabelPosition
+  sealed trait bottom
+    extends StObject
+       with SpinnerLabelPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -284,7 +299,9 @@ object officeUiFabricReactStrings {
   def cardStandoutBackground: cardStandoutBackground = "cardStandoutBackground".asInstanceOf[cardStandoutBackground]
   
   @js.native
-  sealed trait center extends Alignment
+  sealed trait center
+    extends StObject
+       with Alignment
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -299,7 +316,9 @@ object officeUiFabricReactStrings {
   def circle: circle = "circle".asInstanceOf[circle]
   
   @js.native
-  sealed trait `class` extends ApiKind
+  sealed trait `class`
+    extends StObject
+       with ApiKind
   @scala.inline
   def `class`: `class` = "class".asInstanceOf[`class`]
   
@@ -374,7 +393,9 @@ object officeUiFabricReactStrings {
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait end extends Alignment
+  sealed trait end
+    extends StObject
+       with Alignment
   @scala.inline
   def end: end = "end".asInstanceOf[end]
   
@@ -384,9 +405,11 @@ object officeUiFabricReactStrings {
   def enter: enter = "enter".asInstanceOf[enter]
   
   @js.native
-  sealed trait enum extends ApiKind
+  sealed trait `enum`
+    extends StObject
+       with ApiKind
   @scala.inline
-  def enum: enum = "enum".asInstanceOf[enum]
+  def `enum`: `enum` = "enum".asInstanceOf[`enum`]
   
   @js.native
   sealed trait errorBackground extends StObject
@@ -424,7 +447,9 @@ object officeUiFabricReactStrings {
   def focusing: focusing = "focusing".asInstanceOf[focusing]
   
   @js.native
-  sealed trait g extends ColorComponent
+  sealed trait g
+    extends StObject
+       with ColorComponent
   @scala.inline
   def g: g = "g".asInstanceOf[g]
   
@@ -494,7 +519,9 @@ object officeUiFabricReactStrings {
   def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
-  sealed trait hex extends ColorComponent
+  sealed trait hex
+    extends StObject
+       with ColorComponent
   @scala.inline
   def hex: hex = "hex".asInstanceOf[hex]
   
@@ -589,7 +616,9 @@ object officeUiFabricReactStrings {
   def inputPlaceholderBackgroundChecked: inputPlaceholderBackgroundChecked = "inputPlaceholderBackgroundChecked".asInstanceOf[inputPlaceholderBackgroundChecked]
   
   @js.native
-  sealed trait interface extends ApiKind
+  sealed trait interface
+    extends StObject
+       with ApiKind
   @scala.inline
   def interface: interface = "interface".asInstanceOf[interface]
   
@@ -604,7 +633,9 @@ object officeUiFabricReactStrings {
   def large: large = "large".asInstanceOf[large]
   
   @js.native
-  sealed trait left extends SpinnerLabelPosition
+  sealed trait left
+    extends StObject
+       with SpinnerLabelPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -959,7 +990,9 @@ object officeUiFabricReactStrings {
   def purpleLight: purpleLight = "purpleLight".asInstanceOf[purpleLight]
   
   @js.native
-  sealed trait r extends ColorComponent
+  sealed trait r
+    extends StObject
+       with ColorComponent
   @scala.inline
   def r: r = "r".asInstanceOf[r]
   
@@ -1004,7 +1037,9 @@ object officeUiFabricReactStrings {
   def reset: reset = "reset".asInstanceOf[reset]
   
   @js.native
-  sealed trait right extends SpinnerLabelPosition
+  sealed trait right
+    extends StObject
+       with SpinnerLabelPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -1059,17 +1094,23 @@ object officeUiFabricReactStrings {
   def smallPlus: smallPlus = "smallPlus".asInstanceOf[smallPlus]
   
   @js.native
-  sealed trait `space-around` extends Alignment
+  sealed trait `space-around`
+    extends StObject
+       with Alignment
   @scala.inline
   def `space-around`: `space-around` = "space-around".asInstanceOf[`space-around`]
   
   @js.native
-  sealed trait `space-between` extends Alignment
+  sealed trait `space-between`
+    extends StObject
+       with Alignment
   @scala.inline
   def `space-between`: `space-between` = "space-between".asInstanceOf[`space-between`]
   
   @js.native
-  sealed trait `space-evenly` extends Alignment
+  sealed trait `space-evenly`
+    extends StObject
+       with Alignment
   @scala.inline
   def `space-evenly`: `space-evenly` = "space-evenly".asInstanceOf[`space-evenly`]
   
@@ -1084,7 +1125,9 @@ object officeUiFabricReactStrings {
   def square: square = "square".asInstanceOf[square]
   
   @js.native
-  sealed trait start extends Alignment
+  sealed trait start
+    extends StObject
+       with Alignment
   @scala.inline
   def start: start = "start".asInstanceOf[start]
   
@@ -1094,7 +1137,9 @@ object officeUiFabricReactStrings {
   def step: step = "step".asInstanceOf[step]
   
   @js.native
-  sealed trait stretch extends Alignment
+  sealed trait stretch
+    extends StObject
+       with Alignment
   @scala.inline
   def stretch: stretch = "stretch".asInstanceOf[stretch]
   
@@ -1124,7 +1169,9 @@ object officeUiFabricReactStrings {
   def switch: switch = "switch".asInstanceOf[switch]
   
   @js.native
-  sealed trait t extends ColorComponent
+  sealed trait t
+    extends StObject
+       with ColorComponent
   @scala.inline
   def t: t = "t".asInstanceOf[t]
   
@@ -1219,7 +1266,9 @@ object officeUiFabricReactStrings {
   def tiny: tiny = "tiny".asInstanceOf[tiny]
   
   @js.native
-  sealed trait top extends SpinnerLabelPosition
+  sealed trait top
+    extends StObject
+       with SpinnerLabelPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   
@@ -1239,7 +1288,9 @@ object officeUiFabricReactStrings {
   def `true`: `true` = "true".asInstanceOf[`true`]
   
   @js.native
-  sealed trait typeAlias extends ApiKind
+  sealed trait typeAlias
+    extends StObject
+       with ApiKind
   @scala.inline
   def typeAlias: typeAlias = "typeAlias".asInstanceOf[typeAlias]
   

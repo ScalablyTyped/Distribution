@@ -2,20 +2,18 @@ package typings.fabric.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Channel extends StObject {
   
   /**
     * Rgb channel (0, 1, 2 or 3)
     * @default 0
     */
-  var channel: Double = js.native
+  var channel: Double
   
   /** Mask image object */
-  var mask: js.UndefOr[typings.fabric.fabricImplMod.Image] = js.native
+  var mask: js.UndefOr[typings.fabric.fabricImplMod.Image] = js.undefined
 }
 object Channel {
   

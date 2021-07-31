@@ -3,115 +3,113 @@ package typings.phaser.Phaser.Types.GameObjects
 import typings.phaser.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONGameObject extends StObject {
   
   /**
     * The alpha value of the Game Object.
     */
-  var alpha: Double = js.native
+  var alpha: Double
   
   /**
     * Sets the Blend Mode being used by this Game Object.
     */
-  var blendMode: integer | String = js.native
+  var blendMode: integer | String
   
   /**
     * The data of this Game Object.
     */
-  var data: js.Object = js.native
+  var data: js.Object
   
   /**
     * The horizontally flipped state of the Game Object.
     */
-  var flipX: Boolean = js.native
+  var flipX: Boolean
   
   /**
     * The vertically flipped state of the Game Object.
     */
-  var flipY: Boolean = js.native
+  var flipY: Boolean
   
   /**
     * The frame key of this Game Object.
     */
-  var frameKey: String = js.native
+  var frameKey: String
   
   /**
     * The name of this Game Object.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The origin of this Game Object.
     */
-  var origin: js.Object = js.native
+  var origin: js.Object
   
   /**
     * The horizontal origin of this Game Object.
     */
   @JSName("origin.x")
-  var originDotx: Double = js.native
+  var originDotx: Double
   
   /**
     * The vertical origin of this Game Object.
     */
   @JSName("origin.y")
-  var originDoty: Double = js.native
+  var originDoty: Double
   
   /**
     * The angle of this Game Object in radians.
     */
-  var rotation: Double = js.native
+  var rotation: Double
   
   /**
     * The scale of this Game Object
     */
-  var scale: js.Object = js.native
+  var scale: js.Object
   
   /**
     * The horizontal scale of this Game Object.
     */
   @JSName("scale.x")
-  var scaleDotx: Double = js.native
+  var scaleDotx: Double
   
   /**
     * The vertical scale of this Game Object.
     */
   @JSName("scale.y")
-  var scaleDoty: Double = js.native
+  var scaleDoty: Double
   
   /**
     * The Scale Mode being used by this Game Object.
     */
-  var scaleMode: integer = js.native
+  var scaleMode: integer
   
   /**
     * The texture key of this Game Object.
     */
-  var textureKey: String = js.native
+  var textureKey: String
   
   /**
     * A textual representation of this Game Object, i.e. `sprite`.
     */
-  var `type`: String = js.native
+  var `type`: String
   
   /**
     * The visible state of the Game Object.
     */
-  var visible: Boolean = js.native
+  var visible: Boolean
   
   /**
     * The x position of this Game Object.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * The y position of this Game Object.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object JSONGameObject {
   

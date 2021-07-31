@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteClientVpnEndpointResult extends StObject {
   
   /**
     * The current state of the Client VPN endpoint.
     */
-  var Status: js.UndefOr[ClientVpnEndpointStatus] = js.native
+  var Status: js.UndefOr[ClientVpnEndpointStatus] = js.undefined
 }
 object DeleteClientVpnEndpointResult {
   

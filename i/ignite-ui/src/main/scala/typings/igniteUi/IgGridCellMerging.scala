@@ -4,45 +4,44 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgGridCellMerging
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
   
-  var cellsMerged: js.UndefOr[CellsMergedEvent] = js.native
+  var cellsMerged: js.UndefOr[CellsMergedEvent] = js.undefined
   
   /**
     * Event fired before a new merged cells group is created.
     */
-  var cellsMerging: js.UndefOr[CellsMergingEvent] = js.native
+  var cellsMerging: js.UndefOr[CellsMergingEvent] = js.undefined
   
   /**
     * A list of column settings that specifies hiding options on a per column basis.
     *
     */
-  var columnSettings: js.UndefOr[js.Array[IgGridCellMergingColumnSetting]] = js.native
+  var columnSettings: js.UndefOr[js.Array[IgGridCellMergingColumnSetting]] = js.undefined
   
   /**
     * Enables/disables feature inheritance for the child layouts. NOTE: It only applies for igHierarchicalGrid.
     */
-  var inherit: js.UndefOr[Boolean] = js.native
+  var inherit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Defines when merging should be applied.
@@ -53,13 +52,13 @@ trait IgGridCellMerging
     * "always" Merging will be applied to all columns always
     * "never" No merging will be applied
     */
-  var mergeOn: js.UndefOr[String] = js.native
+  var mergeOn: js.UndefOr[String] = js.undefined
   
   /**
     * Defines the whether the rows will be merged or not.
     *
     */
-  var mergeRows: js.UndefOr[js.Any] = js.native
+  var mergeRows: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Defines the rules merging is based on.
@@ -69,7 +68,7 @@ trait IgGridCellMerging
     * "duplicate" Duplicate values in the column will be merged together.
     * "null" Merging will be applied for each subsequent null value after a non-null value.
     */
-  var mergeStrategy: js.UndefOr[String | js.Function] = js.native
+  var mergeStrategy: js.UndefOr[String | js.Function] = js.undefined
   
   /**
     * Defines the type of merging.
@@ -79,13 +78,13 @@ trait IgGridCellMerging
     * "visual" the grid cells will be merged only visually
     * "physical" the grid cell will be merged physically throughout rowspan
     */
-  var mergeType: js.UndefOr[String] = js.native
+  var mergeType: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * Defines the rules merging is based on.
@@ -95,7 +94,7 @@ trait IgGridCellMerging
     * "duplicate" Duplicate values in the column will be merged together.
     * "null" Merging will be applied for each subsequent null value after a non-null value.
     */
-  var rowMergeStrategy: js.UndefOr[String | js.Function] = js.native
+  var rowMergeStrategy: js.UndefOr[String | js.Function] = js.undefined
 }
 object IgGridCellMerging {
   

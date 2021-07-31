@@ -2,31 +2,29 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DomainMembership extends StObject {
   
   /**
     * The identifier of the Active Directory Domain.
     */
-  var Domain: js.UndefOr[String] = js.native
+  var Domain: js.UndefOr[String] = js.undefined
   
   /**
     * The fully qualified domain name of the Active Directory Domain.
     */
-  var FQDN: js.UndefOr[String] = js.native
+  var FQDN: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the IAM role to be used when making API calls to the Directory Service.
     */
-  var IAMRoleName: js.UndefOr[String] = js.native
+  var IAMRoleName: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the DB instance's Active Directory Domain membership, such as joined, pending-join, failed etc).
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object DomainMembership {
   

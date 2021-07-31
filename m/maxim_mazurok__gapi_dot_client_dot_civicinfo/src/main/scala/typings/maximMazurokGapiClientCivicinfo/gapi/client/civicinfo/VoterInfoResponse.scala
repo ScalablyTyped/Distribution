@@ -2,35 +2,33 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VoterInfoResponse extends StObject {
   
   /** Contests that will appear on the voter's ballot. */
-  var contests: js.UndefOr[js.Array[Contest]] = js.native
+  var contests: js.UndefOr[js.Array[Contest]] = js.undefined
   
   /**
     * Locations where a voter is eligible to drop off a completed ballot. The voter must have received and completed a ballot prior to arriving at the location. The location may not have
     * ballots available on the premises. These locations could be open on or before election day as indicated in the pollingHours field.
     */
-  var dropOffLocations: js.UndefOr[js.Array[PollingLocation]] = js.native
+  var dropOffLocations: js.UndefOr[js.Array[PollingLocation]] = js.undefined
   
   /** Locations where the voter is eligible to vote early, prior to election day. */
-  var earlyVoteSites: js.UndefOr[js.Array[PollingLocation]] = js.native
+  var earlyVoteSites: js.UndefOr[js.Array[PollingLocation]] = js.undefined
   
   /** The election that was queried. */
-  var election: js.UndefOr[Election] = js.native
+  var election: js.UndefOr[Election] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "civicinfo#voterInfoResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Specifies whether voters in the precinct vote only by mailing their ballots (with the possible option of dropping off their ballots as well). */
-  var mailOnly: js.UndefOr[Boolean] = js.native
+  var mailOnly: js.UndefOr[Boolean] = js.undefined
   
   /** The normalized version of the requested address */
-  var normalizedInput: js.UndefOr[SimpleAddressType] = js.native
+  var normalizedInput: js.UndefOr[SimpleAddressType] = js.undefined
   
   /**
     * When there are multiple elections for a voter address, the otherElections field is populated in the API response and there are two possibilities: 1. If the earliest election is not
@@ -38,15 +36,15 @@ trait VoterInfoResponse extends StObject {
     * doesn?t return any polling location, contest, or election official information to ensure that an additional query is made. For user-facing applications, we recommend displaying
     * these elections to the user to disambiguate. A second API request using the electionId field should be made for the election that is relevant to the user.
     */
-  var otherElections: js.UndefOr[js.Array[Election]] = js.native
+  var otherElections: js.UndefOr[js.Array[Election]] = js.undefined
   
   /** Locations where the voter is eligible to vote on election day. */
-  var pollingLocations: js.UndefOr[js.Array[PollingLocation]] = js.native
+  var pollingLocations: js.UndefOr[js.Array[PollingLocation]] = js.undefined
   
-  var precinctId: js.UndefOr[String] = js.native
+  var precinctId: js.UndefOr[String] = js.undefined
   
   /** Local Election Information for the state that the voter votes in. For the US, there will only be one element in this array. */
-  var state: js.UndefOr[js.Array[AdministrationRegion]] = js.native
+  var state: js.UndefOr[js.Array[AdministrationRegion]] = js.undefined
 }
 object VoterInfoResponse {
   

@@ -3,41 +3,39 @@ package typings.antvG2.anon
 import typings.antvG2.mod.Styles.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Content extends StObject {
   
   /**
     * 显示的文本内容
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * x 方向的偏移量
     */
-  var offsetX: js.UndefOr[Double] = js.native
+  var offsetX: js.UndefOr[Double] = js.undefined
   
   /**
     * y 方向偏移量
     */
-  var offsetY: js.UndefOr[Double] = js.native
+  var offsetY: js.UndefOr[Double] = js.undefined
   
   /**
     * 文本的起始位置，值为原始数据值，支持 callback
     */
-  var position: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.native
+  var position: js.UndefOr[js.Any | js.Function | (js.Array[String | Double])] = js.undefined
   
   /**
     * 文本的图形样式属性
     */
-  var style: js.UndefOr[text] = js.native
+  var style: js.UndefOr[text] = js.undefined
   
   /**
     * 指定 guide 是否绘制在 canvas 最上层，默认为 false, 即绘制在最下层
     */
-  var top: js.UndefOr[Boolean] = js.native
+  var top: js.UndefOr[Boolean] = js.undefined
 }
 object Content {
   

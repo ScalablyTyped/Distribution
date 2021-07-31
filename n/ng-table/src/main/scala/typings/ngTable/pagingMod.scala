@@ -2,21 +2,19 @@ package typings.ngTable
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pagingMod {
   
-  @js.native
   trait IPageButton extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var current: js.UndefOr[Boolean] = js.native
+    var current: js.UndefOr[Boolean] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object IPageButton {
     

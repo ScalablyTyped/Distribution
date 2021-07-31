@@ -14,12 +14,12 @@ import typings.std.FormData
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait FeatureLayer
-  extends Layer
+  extends StObject
+     with Layer
      with PortalLayer
      with ScaleRangeLayer
      with RefreshableLayer
@@ -39,8 +39,8 @@ trait FeatureLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#applyEdits)
     */
-  def applyEdits(edits: FeatureLayerApplyEditsEdits): js.Promise[_] = js.native
-  def applyEdits(edits: FeatureLayerApplyEditsEdits, options: FeatureLayerApplyEditsOptions): js.Promise[_] = js.native
+  def applyEdits(edits: FeatureLayerApplyEditsEdits): js.Promise[js.Any] = js.native
+  def applyEdits(edits: FeatureLayerApplyEditsEdits, options: FeatureLayerApplyEditsOptions): js.Promise[js.Any] = js.native
   
   /**
     * Describes the layer's supported capabilities.
@@ -276,22 +276,22 @@ trait FeatureLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryAttachments)
     */
-  def queryAttachments(attachmentQuery: AttachmentQuery): js.Promise[_] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQueryProperties): js.Promise[_] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: FeatureLayerQueryAttachmentsOptions): js.Promise[_] = js.native
-  def queryAttachments(attachmentQuery: AttachmentQuery, options: FeatureLayerQueryAttachmentsOptions): js.Promise[_] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQuery): js.Promise[js.Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties): js.Promise[js.Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQueryProperties, options: FeatureLayerQueryAttachmentsOptions): js.Promise[js.Any] = js.native
+  def queryAttachments(attachmentQuery: AttachmentQuery, options: FeatureLayerQueryAttachmentsOptions): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns the [Extent](https://developers.arcgis.com/javascript/latest/api-reference/esri-geometry-Extent.html) of features that satisfy the query.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryExtent)
     */
-  def queryExtent(): js.Promise[_] = js.native
-  def queryExtent(query: js.UndefOr[scala.Nothing], options: FeatureLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties): js.Promise[_] = js.native
-  def queryExtent(query: QueryProperties, options: FeatureLayerQueryExtentOptions): js.Promise[_] = js.native
-  def queryExtent(query: Query, options: FeatureLayerQueryExtentOptions): js.Promise[_] = js.native
+  def queryExtent(): js.Promise[js.Any] = js.native
+  def queryExtent(query: Unit, options: FeatureLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties): js.Promise[js.Any] = js.native
+  def queryExtent(query: QueryProperties, options: FeatureLayerQueryExtentOptions): js.Promise[js.Any] = js.native
+  def queryExtent(query: Query, options: FeatureLayerQueryExtentOptions): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [Query](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html) against the feature service and returns the number of features that satisfy the query.
@@ -299,7 +299,7 @@ trait FeatureLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatureCount)
     */
   def queryFeatureCount(): js.Promise[Double] = js.native
-  def queryFeatureCount(query: js.UndefOr[scala.Nothing], options: FeatureLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
+  def queryFeatureCount(query: Unit, options: FeatureLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
   def queryFeatureCount(query: Query): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties): js.Promise[Double] = js.native
   def queryFeatureCount(query: QueryProperties, options: FeatureLayerQueryFeatureCountOptions): js.Promise[Double] = js.native
@@ -311,7 +311,7 @@ trait FeatureLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryFeatures)
     */
   def queryFeatures(): js.Promise[FeatureSet] = js.native
-  def queryFeatures(query: js.UndefOr[scala.Nothing], options: FeatureLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
+  def queryFeatures(query: Unit, options: FeatureLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: Query): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties): js.Promise[FeatureSet] = js.native
   def queryFeatures(query: QueryProperties, options: FeatureLayerQueryFeaturesOptions): js.Promise[FeatureSet] = js.native
@@ -323,7 +323,7 @@ trait FeatureLayer
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryObjectIds)
     */
   def queryObjectIds(): js.Promise[js.Array[Double]] = js.native
-  def queryObjectIds(query: js.UndefOr[scala.Nothing], options: FeatureLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
+  def queryObjectIds(query: Unit, options: FeatureLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: Query): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties): js.Promise[js.Array[Double]] = js.native
   def queryObjectIds(query: QueryProperties, options: FeatureLayerQueryObjectIdsOptions): js.Promise[js.Array[Double]] = js.native
@@ -334,23 +334,23 @@ trait FeatureLayer
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryRelatedFeatures)
     */
-  def queryRelatedFeatures(relationshipQuery: RelationshipQuery): js.Promise[_] = js.native
-  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties): js.Promise[_] = js.native
-  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties, options: FeatureLayerQueryRelatedFeaturesOptions): js.Promise[_] = js.native
-  def queryRelatedFeatures(relationshipQuery: RelationshipQuery, options: FeatureLayerQueryRelatedFeaturesOptions): js.Promise[_] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQuery): js.Promise[js.Any] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties): js.Promise[js.Any] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQueryProperties, options: FeatureLayerQueryRelatedFeaturesOptions): js.Promise[js.Any] = js.native
+  def queryRelatedFeatures(relationshipQuery: RelationshipQuery, options: FeatureLayerQueryRelatedFeaturesOptions): js.Promise[js.Any] = js.native
   
   /**
     * Executes a [RelationshipQuery](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-RelationshipQuery.html) against the feature service and when resolved, it returns an `object` containing key value pairs.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-FeatureLayer.html#queryRelatedFeaturesCount)
     */
-  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQuery): js.Promise[_] = js.native
-  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQueryProperties): js.Promise[_] = js.native
+  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQuery): js.Promise[js.Any] = js.native
+  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQueryProperties): js.Promise[js.Any] = js.native
   def queryRelatedFeaturesCount(
     relationshipQuery: RelationshipQueryProperties,
     options: FeatureLayerQueryRelatedFeaturesCountOptions
-  ): js.Promise[_] = js.native
-  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQuery, options: FeatureLayerQueryRelatedFeaturesCountOptions): js.Promise[_] = js.native
+  ): js.Promise[js.Any] = js.native
+  def queryRelatedFeaturesCount(relationshipQuery: RelationshipQuery, options: FeatureLayerQueryRelatedFeaturesCountOptions): js.Promise[js.Any] = js.native
   
   /**
     * Array of [relationships](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-support-Relationship.html) set up for the layer.

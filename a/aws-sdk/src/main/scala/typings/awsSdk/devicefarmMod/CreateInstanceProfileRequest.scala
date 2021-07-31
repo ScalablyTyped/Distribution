@@ -2,36 +2,34 @@ package typings.awsSdk.devicefarmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceProfileRequest extends StObject {
   
   /**
     * The description of your instance profile.
     */
-  var description: js.UndefOr[Message] = js.native
+  var description: js.UndefOr[Message] = js.undefined
   
   /**
     * An array of strings that specifies the list of app packages that should not be cleaned up from the device after a test run. The list of packages is considered only if you set packageCleanup to true.
     */
-  var excludeAppPackagesFromCleanup: js.UndefOr[PackageIds] = js.native
+  var excludeAppPackagesFromCleanup: js.UndefOr[PackageIds] = js.undefined
   
   /**
     * The name of your instance profile.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * When set to true, Device Farm removes app packages after a test run. The default value is false for private devices.
     */
-  var packageCleanup: js.UndefOr[Boolean] = js.native
+  var packageCleanup: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When set to true, Device Farm reboots the instance after a test run. The default value is true.
     */
-  var rebootAfterUse: js.UndefOr[Boolean] = js.native
+  var rebootAfterUse: js.UndefOr[Boolean] = js.undefined
 }
 object CreateInstanceProfileRequest {
   

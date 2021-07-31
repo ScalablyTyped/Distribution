@@ -10,9 +10,9 @@ Get a random item from an array
 | ------------------ | :-------------: |
 | Full name          | random-item |
 | Keywords           | random, randomize, math, array, item, element, pick, select |
-| # releases         | 3 |
-| # dependents       | 57 |
-| # downloads        | 2580502 |
+| # releases         | 4 |
+| # dependents       | 65 |
+| # downloads        | 3430801 |
 | # stars            | 6 |
 
 ## Links

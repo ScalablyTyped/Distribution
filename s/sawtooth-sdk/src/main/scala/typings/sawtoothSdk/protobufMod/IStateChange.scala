@@ -4,20 +4,18 @@ import typings.sawtoothSdk.protobufMod.StateChange.Type
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IStateChange extends StObject {
   
   /** StateChange address */
-  var address: js.UndefOr[String | Null] = js.native
+  var address: js.UndefOr[String | Null] = js.undefined
   
   /** StateChange type */
-  var `type`: js.UndefOr[Type | Null] = js.native
+  var `type`: js.UndefOr[Type | Null] = js.undefined
   
   /** StateChange value */
-  var value: js.UndefOr[Uint8Array | Null] = js.native
+  var value: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IStateChange {
   

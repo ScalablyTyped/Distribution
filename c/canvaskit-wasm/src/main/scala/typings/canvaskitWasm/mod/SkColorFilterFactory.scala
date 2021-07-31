@@ -2,10 +2,8 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SkColorFilterFactory extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait SkColorFilterFactory extends StObject {
     * @param color
     * @param mode
     */
-  def MakeBlend(color: InputColor, mode: BlendMode): SkColorFilter = js.native
+  def MakeBlend(color: InputColor, mode: BlendMode): SkColorFilter
   
   /**
     * Makes a color filter composing two color filters.
     * @param outer
     * @param inner
     */
-  def MakeCompose(outer: SkColorFilter, inner: SkColorFilter): SkColorFilter = js.native
+  def MakeCompose(outer: SkColorFilter, inner: SkColorFilter): SkColorFilter
   
   /**
     * Makes a color filter that is linearly interpolated between two other color filters.
@@ -28,23 +26,23 @@ trait SkColorFilterFactory extends StObject {
     * @param dst
     * @param src
     */
-  def MakeLerp(t: Double, dst: SkColorFilter, src: SkColorFilter): SkColorFilter = js.native
+  def MakeLerp(t: Double, dst: SkColorFilter, src: SkColorFilter): SkColorFilter
   
   /**
     * Makes a color filter that converts between linear colors and sRGB colors.
     */
-  def MakeLinearToSRGBGamma(): SkColorFilter = js.native
+  def MakeLinearToSRGBGamma(): SkColorFilter
   
   /**
     * Creates a color filter using the provided color matrix.
     * @param cMatrix
     */
-  def MakeMatrix(cMatrix: InputColorMatrix): SkColorFilter = js.native
+  def MakeMatrix(cMatrix: InputColorMatrix): SkColorFilter
   
   /**
     * Makes a color filter that converts between sRGB colors and linear colors.
     */
-  def MakeSRGBToLinearGamma(): SkColorFilter = js.native
+  def MakeSRGBToLinearGamma(): SkColorFilter
 }
 object SkColorFilterFactory {
   

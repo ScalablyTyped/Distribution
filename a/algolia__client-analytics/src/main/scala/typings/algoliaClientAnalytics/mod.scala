@@ -14,71 +14,87 @@ import typings.algoliaTransporter.mod.RequestOptions
 import typings.algoliaTransporter.mod.Transporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@algolia/client-analytics", "addABTest")
+  @JSImport("@algolia/client-analytics", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def addABTest(base: AnalyticsClient): js.Function2[
     /* abTest */ ABTest, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseAddABTestR
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("addABTest")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* abTest */ ABTest, 
+    /* requestOptions */ js.UndefOr[RequestOptions], 
+    ReadonlyPromiseAddABTestR
+  ]]
   
   @JSImport("@algolia/client-analytics", "createAnalyticsClient")
   @js.native
-  val createAnalyticsClient: CreateClient[AnalyticsClient, AnalyticsClientOptions with ClientTransporterOptions] = js.native
+  val createAnalyticsClient: CreateClient[AnalyticsClient, AnalyticsClientOptions & ClientTransporterOptions] = js.native
   
-  @JSImport("@algolia/client-analytics", "deleteABTest")
-  @js.native
+  @scala.inline
   def deleteABTest(base: AnalyticsClient): js.Function2[
     /* abTestID */ Double, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseDeleteABTe
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteABTest")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* abTestID */ Double, 
+    /* requestOptions */ js.UndefOr[RequestOptions], 
+    ReadonlyPromiseDeleteABTe
+  ]]
   
-  @JSImport("@algolia/client-analytics", "getABTest")
-  @js.native
+  @scala.inline
   def getABTest(base: AnalyticsClient): js.Function2[
     /* abTestID */ Double, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseGetABTestR
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getABTest")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* abTestID */ Double, 
+    /* requestOptions */ js.UndefOr[RequestOptions], 
+    ReadonlyPromiseGetABTestR
+  ]]
   
-  @JSImport("@algolia/client-analytics", "getABTests")
-  @js.native
+  @scala.inline
   def getABTests(base: AnalyticsClient): js.Function1[
-    /* requestOptions */ js.UndefOr[RequestOptions with GetABTestsOptions], 
+    /* requestOptions */ js.UndefOr[RequestOptions & GetABTestsOptions], 
     ReadonlyPromiseGetABTests
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("getABTests")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* requestOptions */ js.UndefOr[RequestOptions & GetABTestsOptions], 
+    ReadonlyPromiseGetABTests
+  ]]
   
-  @JSImport("@algolia/client-analytics", "stopABTest")
-  @js.native
+  @scala.inline
   def stopABTest(base: AnalyticsClient): js.Function2[
     /* abTestID */ Double, 
     /* requestOptions */ js.UndefOr[RequestOptions], 
     ReadonlyPromiseStopABTest
-  ] = js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("stopABTest")(base.asInstanceOf[js.Any]).asInstanceOf[js.Function2[
+    /* abTestID */ Double, 
+    /* requestOptions */ js.UndefOr[RequestOptions], 
+    ReadonlyPromiseStopABTest
+  ]]
   
-  @js.native
   trait ABTest extends StObject {
     
     /**
       * The ab test end date, if any.
       */
-    val endAt: String = js.native
+    val endAt: String
     
     /**
       * The ab test name.
       */
-    val name: String = js.native
+    val name: String
     
     /**
       * The ab test list of variants.
       */
-    val variants: js.Array[Variant] = js.native
+    val variants: js.Array[Variant]
   }
   object ABTest {
     
@@ -105,23 +121,22 @@ object mod {
     }
   }
   
-  @js.native
   trait AddABTestResponse extends StObject {
     
     /**
       * The ab test unique identifier.
       */
-    var abTestID: Double = js.native
+    var abTestID: Double
     
     /**
       * The index name where the ab test is attached to.
       */
-    var index: String = js.native
+    var index: String
     
     /**
       * The operation task id. May be used to perform a wait task.
       */
-    var taskID: Double = js.native
+    var taskID: Double
   }
   object AddABTestResponse {
     
@@ -145,18 +160,17 @@ object mod {
     }
   }
   
-  @js.native
   trait AnalyticsClient extends StObject {
     
     /**
       * The application id.
       */
-    val appId: String = js.native
+    val appId: String
     
     /**
       * The underlying transporter.
       */
-    val transporter: Transporter = js.native
+    val transporter: Transporter
   }
   object AnalyticsClient {
     
@@ -177,23 +191,22 @@ object mod {
     }
   }
   
-  @js.native
   trait AnalyticsClientOptions extends StObject {
     
     /**
       * The api key.
       */
-    val apiKey: String = js.native
+    val apiKey: String
     
     /**
       * The application id.
       */
-    val appId: String = js.native
+    val appId: String
     
     /**
       * The prefered region.
       */
-    val region: js.UndefOr[de | us] = js.native
+    val region: js.UndefOr[de | us] = js.undefined
   }
   object AnalyticsClientOptions {
     
@@ -220,23 +233,22 @@ object mod {
     }
   }
   
-  @js.native
   trait DeleteABTestResponse extends StObject {
     
     /**
       * The ab test unique identifier.
       */
-    var abTestID: Double = js.native
+    var abTestID: Double
     
     /**
       * The index name where the ab test was attached to.
       */
-    var index: String = js.native
+    var index: String
     
     /**
       * The operation task id. May be used to perform a wait task.
       */
-    var taskID: Double = js.native
+    var taskID: Double
   }
   object DeleteABTestResponse {
     
@@ -260,54 +272,53 @@ object mod {
     }
   }
   
-  @js.native
   trait GetABTestResponse extends StObject {
     
     /**
       * The ab test unique identifier.
       */
-    var abTestID: Double = js.native
+    var abTestID: Double
     
     /**
       * The ab test significance based on click data. Should be higher than 0.95 to be considered significant - no matter which variant is winning.
       */
-    var clickSignificance: Double = js.native
+    var clickSignificance: Double
     
     /**
       *
       * The ab test significance based on conversion data. Should be higher than 0.95 to be considered significant - no matter which variant is winning.
       */
-    var conversionSignificance: Double = js.native
+    var conversionSignificance: Double
     
     /**
       * The ab test created date, if any.
       */
-    var createdAt: String = js.native
+    var createdAt: String
     
     /**
       * The ab test end date, if any.
       */
-    var endAt: String = js.native
+    var endAt: String
     
     /**
       * The ab test name.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * The ab test status.
       */
-    var status: String = js.native
+    var status: String
     
     /**
       * The ab test updated date.
       */
-    var updatedAt: String = js.native
+    var updatedAt: String
     
     /**
       * The ab test list of variants.
       */
-    var variants: js.Array[VariantResponse] = js.native
+    var variants: js.Array[VariantResponse]
   }
   object GetABTestResponse {
     
@@ -362,18 +373,17 @@ object mod {
     }
   }
   
-  @js.native
   trait GetABTestsOptions extends StObject {
     
     /**
       *  The limit of the number of ab tests returned.
       */
-    val limit: js.UndefOr[Double] = js.native
+    val limit: js.UndefOr[Double] = js.undefined
     
     /**
       * The number of ab tests to skip from the biginning of the list.
       */
-    val offset: js.UndefOr[Double] = js.native
+    val offset: js.UndefOr[Double] = js.undefined
   }
   object GetABTestsOptions {
     
@@ -400,29 +410,28 @@ object mod {
     }
   }
   
-  @js.native
   trait GetABTestsResponse extends StObject {
     
     /**
       * The list of ab tests.
       */
-    var abtests: js.Array[GetABTestResponse] | Null = js.native
+    var abtests: js.Array[GetABTestResponse] | Null
     
     /**
       * The number of ab tests within this response.
       */
-    var count: Double = js.native
+    var count: Double
     
     /**
       * The total of ab tests.
       */
-    var total: Double = js.native
+    var total: Double
   }
   object GetABTestsResponse {
     
     @scala.inline
     def apply(count: Double, total: Double): GetABTestsResponse = {
-      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(count = count.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], abtests = null)
       __obj.asInstanceOf[GetABTestsResponse]
     }
     
@@ -446,23 +455,22 @@ object mod {
     }
   }
   
-  @js.native
   trait StopABTestResponse extends StObject {
     
     /**
       * The ab test unique identifier.
       */
-    var abTestID: Double = js.native
+    var abTestID: Double
     
     /**
       * The index name where the ab test is attached to.
       */
-    var index: String = js.native
+    var index: String
     
     /**
       * The operation task id. May be used to perform a wait task.
       */
-    var taskID: Double = js.native
+    var taskID: Double
   }
   object StopABTestResponse {
     
@@ -486,28 +494,27 @@ object mod {
     }
   }
   
-  @js.native
   trait Variant extends StObject {
     
     /**
       * The search parameters.
       */
-    val customSearchParameters: js.UndefOr[SearchOptions] = js.native
+    val customSearchParameters: js.UndefOr[SearchOptions] = js.undefined
     
     /**
       * Description of the variant. Useful when seing the results in the dashboard or via the API.
       */
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
     /**
       * The index name.
       */
-    val index: String = js.native
+    val index: String
     
     /**
       * Percentage of the traffic that should be going to the variant. The sum of the percentage should be equal to 100.
       */
-    val trafficPercentage: Double = js.native
+    val trafficPercentage: Double
   }
   object Variant {
     
@@ -540,74 +547,54 @@ object mod {
     }
   }
   
-  /* Inlined @algolia/client-analytics.@algolia/client-analytics.Variant & {  averageClickPosition :number | undefined,   clickCount :number | undefined,   clickThroughRate :number | undefined,   conversionCount :number | undefined,   conversionRate :number | undefined,   noResultCount :number | undefined,   trackedSearchCount :number | undefined,   searchCount :number | undefined,   userCount :number | undefined,   customSearchParameters :@algolia/client-search.@algolia/client-search.SearchOptions | undefined} */
-  @js.native
-  trait VariantResponse extends StObject {
+  trait VariantResponse
+    extends StObject
+       with Variant {
     
     /**
       * Average click position for the variant.
       */
-    var averageClickPosition: js.UndefOr[Double] = js.native
+    var averageClickPosition: js.UndefOr[Double] = js.undefined
     
     /**
       * Distinct click count for the variant.
       */
-    var clickCount: js.UndefOr[Double] = js.native
+    var clickCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Click through rate for the variant.
       */
-    var clickThroughRate: js.UndefOr[Double] = js.native
+    var clickThroughRate: js.UndefOr[Double] = js.undefined
     
     /**
       * Click through rate for the variant.
       */
-    var conversionCount: js.UndefOr[Double] = js.native
+    var conversionCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Distinct conversion count for the variant.
       */
-    var conversionRate: js.UndefOr[Double] = js.native
-    
-    /**
-      * The search parameters.
-      */
-    val customSearchParameters: js.UndefOr[SearchOptions] = js.native
-    
-    /**
-      * Description of the variant. Useful when seing the results in the dashboard or via the API.
-      */
-    val description: js.UndefOr[String] = js.native
-    
-    /**
-      * The index name.
-      */
-    val index: String = js.native
+    var conversionRate: js.UndefOr[Double] = js.undefined
     
     /**
       * No result count.
       */
-    var noResultCount: js.UndefOr[Double] = js.native
+    var noResultCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Search count.
       */
-    var searchCount: js.UndefOr[Double] = js.native
+    var searchCount: js.UndefOr[Double] = js.undefined
     
     /**
       * Tracked search count.
       */
-    var trackedSearchCount: js.UndefOr[Double] = js.native
-    
-    /**
-      * Percentage of the traffic that should be going to the variant. The sum of the percentage should be equal to 100.
-      */
-    val trafficPercentage: Double = js.native
+    var trackedSearchCount: js.UndefOr[Double] = js.undefined
     
     /**
       * User count.
       */
-    var userCount: js.UndefOr[Double] = js.native
+    var userCount: js.UndefOr[Double] = js.undefined
   }
   object VariantResponse {
     
@@ -651,21 +638,6 @@ object mod {
       def setConversionRateUndefined: Self = StObject.set(x, "conversionRate", js.undefined)
       
       @scala.inline
-      def setCustomSearchParameters(value: SearchOptions): Self = StObject.set(x, "customSearchParameters", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setCustomSearchParametersUndefined: Self = StObject.set(x, "customSearchParameters", js.undefined)
-      
-      @scala.inline
-      def setDescription(value: String): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setDescriptionUndefined: Self = StObject.set(x, "description", js.undefined)
-      
-      @scala.inline
-      def setIndex(value: String): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
-      
-      @scala.inline
       def setNoResultCount(value: Double): Self = StObject.set(x, "noResultCount", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -682,9 +654,6 @@ object mod {
       
       @scala.inline
       def setTrackedSearchCountUndefined: Self = StObject.set(x, "trackedSearchCount", js.undefined)
-      
-      @scala.inline
-      def setTrafficPercentage(value: Double): Self = StObject.set(x, "trafficPercentage", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setUserCount(value: Double): Self = StObject.set(x, "userCount", value.asInstanceOf[js.Any])

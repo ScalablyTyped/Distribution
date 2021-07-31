@@ -4,15 +4,15 @@
 Typings are for version 1.2
 
 ## Library description:
-Authentication Library for React
+Authentication Library for React, which makes Token based auth very easy
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | react-auth-kit |
-| Keywords           | react, auth, authentication, jwt, jsonwebtoken |
-| # releases         | 14 |
+| Keywords           | react, auth, authentication, jwt, jsonwebtoken, token |
+| # releases         | 28 |
 | # dependents       | 0 |
-| # downloads        | 920 |
+| # downloads        | 3059 |
 | # stars            | 0 |
 
 ## Links

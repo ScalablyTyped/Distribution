@@ -10,15 +10,15 @@ A react-native dropdown component for both iOS and Android.
 | ------------------ | :-------------: |
 | Full name          | react-native-modal-dropdown |
 | Keywords           | react, react-component, react-native, react-native-component, ios, android, modal, dropdown, picker, select, selector, option |
-| # releases         | 2 |
-| # dependents       | 13 |
-| # downloads        | 454769 |
+| # releases         | 3 |
+| # dependents       | 16 |
+| # downloads        | 410052 |
 | # stars            | 4 |
 
 ## Links
-- [Homepage](https://github.com/sohobloo/react-native-modal-dropdown)
-- [Bugs](https://github.com/sohobloo/react-native-modal-dropdown/issues)
-- [Repository](https://github.com/sohobloo/react-native-modal-dropdown)
+- [Homepage](https://github.com/siemiatj/react-native-modal-dropdown)
+- [Bugs](https://github.com/siemiatj/react-native-modal-dropdown/issues)
+- [Repository](https://github.com/siemiatj/react-native-modal-dropdown)
 - [Npm](https://www.npmjs.com/package/react-native-modal-dropdown)
     
 

@@ -11,8 +11,8 @@ Access the system clipboard (copy/paste)
 | Full name          | clipboardy |
 | Keywords           | clipboard, copy, paste, copy-paste, pasteboard, read, write, pbcopy, clip, xclip, xsel |
 | # releases         | 5 |
-| # dependents       | 756 |
-| # downloads        | 56879179 |
+| # dependents       | 864 |
+| # downloads        | 73393781 |
 | # stars            | 8 |
 
 ## Links

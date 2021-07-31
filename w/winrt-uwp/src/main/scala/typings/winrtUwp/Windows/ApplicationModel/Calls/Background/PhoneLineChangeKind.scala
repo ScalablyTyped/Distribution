@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.ApplicationModel.Calls.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,13 +13,19 @@ object PhoneLineChangeKind extends StObject {
   
   /** A new phone line was added. */
   @js.native
-  sealed trait added extends PhoneLineChangeKind
+  sealed trait added
+    extends StObject
+       with PhoneLineChangeKind
   
   /** A phone line has updated properties. */
   @js.native
-  sealed trait propertiesChanged extends PhoneLineChangeKind
+  sealed trait propertiesChanged
+    extends StObject
+       with PhoneLineChangeKind
   
   /** A phone line was removed. */
   @js.native
-  sealed trait removed extends PhoneLineChangeKind
+  sealed trait removed
+    extends StObject
+       with PhoneLineChangeKind
 }

@@ -6,17 +6,17 @@ import typings.react.mod.FC
 import typings.recoil.anon.Get
 import typings.recoil.anon.Reset
 import typings.recoil.anon.Set
-import typings.recoil.recoilStrings.hasError
-import typings.recoil.recoilStrings.hasValue
-import typings.recoil.recoilStrings.loading
 import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("recoil", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("recoil", "AbstractRecoilValue")
   @js.native
@@ -65,129 +65,102 @@ object mod {
     def this(newKey: NodeKey) = this()
   }
   
-  @JSImport("recoil", "atom")
-  @js.native
-  def atom[T](options: AtomOptions[T]): RecoilState[T] = js.native
+  @scala.inline
+  def atom[T](options: AtomOptions[T]): RecoilState[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("atom")(options.asInstanceOf[js.Any]).asInstanceOf[RecoilState[T]]
   
-  @JSImport("recoil", "atomFamily")
-  @js.native
-  def atomFamily[T, P /* <: SerializableParam */](options: AtomFamilyOptions[T, P]): js.Function1[/* param */ P, RecoilState[T]] = js.native
+  @scala.inline
+  def atomFamily[T, P /* <: SerializableParam */](options: AtomFamilyOptions[T, P]): js.Function1[/* param */ P, RecoilState[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("atomFamily")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param */ P, RecoilState[T]]]
   
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector(constant: js.UndefOr[scala.Nothing]): RecoilValueReadOnly[js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector(constant: String): RecoilValueReadOnly[String] = js.native
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector(constant: js.Array[SerializableParam]): RecoilValueReadOnly[js.Array[SerializableParam]] = js.native
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector(constant: js.Symbol): RecoilValueReadOnly[js.Symbol] = js.native
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector(constant: Boolean): RecoilValueReadOnly[Boolean] = js.native
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector(constant: Double): RecoilValueReadOnly[Double] = js.native
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector(constant: Null): RecoilValueReadOnly[Null] = js.native
-  @JSImport("recoil", "constSelector")
-  @js.native
-  def constSelector[T /* <: StringDictionary[SerializableParam] */](constant: T): RecoilValueReadOnly[T] = js.native
+  @scala.inline
+  def constSelector(constant: String): RecoilValueReadOnly[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[String]]
+  @scala.inline
+  def constSelector(constant: js.Array[SerializableParam]): RecoilValueReadOnly[js.Array[SerializableParam]] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[js.Array[SerializableParam]]]
+  @scala.inline
+  def constSelector(constant: js.Symbol): RecoilValueReadOnly[js.Symbol] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[js.Symbol]]
+  @scala.inline
+  def constSelector(constant: Boolean): RecoilValueReadOnly[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[Boolean]]
+  @scala.inline
+  def constSelector(constant: Double): RecoilValueReadOnly[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[Double]]
+  @scala.inline
+  def constSelector(constant: Null): RecoilValueReadOnly[Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[Null]]
+  @scala.inline
+  def constSelector(constant: Unit): RecoilValueReadOnly[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[Unit]]
+  @scala.inline
+  def constSelector[T /* <: StringDictionary[SerializableParam] */](constant: T): RecoilValueReadOnly[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("constSelector")(constant.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[T]]
   
-  @JSImport("recoil", "errorSelector")
-  @js.native
-  def errorSelector(message: String): RecoilValueReadOnly[scala.Nothing] = js.native
+  @scala.inline
+  def errorSelector(message: String): RecoilValueReadOnly[scala.Nothing] = ^.asInstanceOf[js.Dynamic].applyDynamic("errorSelector")(message.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[scala.Nothing]]
   
-  @JSImport("recoil", "isRecoilValue")
-  @js.native
-  def isRecoilValue(`val`: js.Any): /* is recoil.recoil.RecoilValue<any> */ Boolean = js.native
+  @scala.inline
+  def isRecoilValue(`val`: js.Any): /* is recoil.recoil.RecoilValue<any> */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isRecoilValue")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is recoil.recoil.RecoilValue<any> */ Boolean]
   
-  @JSImport("recoil", "noWait")
-  @js.native
-  def noWait[T](state: RecoilValue[T]): RecoilValueReadOnly[Loadable[T]] = js.native
+  @scala.inline
+  def noWait[T](state: RecoilValue[T]): RecoilValueReadOnly[Loadable[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("noWait")(state.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[Loadable[T]]]
   
-  @JSImport("recoil", "readOnlySelector")
-  @js.native
-  def readOnlySelector[T](atom: RecoilValue[T]): RecoilValueReadOnly[T] = js.native
+  @scala.inline
+  def readOnlySelector[T](atom: RecoilValue[T]): RecoilValueReadOnly[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("readOnlySelector")(atom.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[T]]
   
-  @JSImport("recoil", "selector")
-  @js.native
-  def selector[T](options: ReadOnlySelectorOptions[T]): RecoilValueReadOnly[T] = js.native
-  @JSImport("recoil", "selector")
-  @js.native
-  def selector[T](options: ReadWriteSelectorOptions[T]): RecoilState[T] = js.native
+  @scala.inline
+  def selector[T](options: ReadOnlySelectorOptions[T]): RecoilValueReadOnly[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("selector")(options.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[T]]
+  @scala.inline
+  def selector[T](options: ReadWriteSelectorOptions[T]): RecoilState[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("selector")(options.asInstanceOf[js.Any]).asInstanceOf[RecoilState[T]]
   
-  @JSImport("recoil", "selectorFamily")
-  @js.native
-  def selectorFamily[T, P /* <: SerializableParam */](options: ReadOnlySelectorFamilyOptions[T, P]): js.Function1[/* param */ P, RecoilValueReadOnly[T]] = js.native
-  @JSImport("recoil", "selectorFamily")
-  @js.native
-  def selectorFamily[T, P /* <: SerializableParam */](options: ReadWriteSelectorFamilyOptions[T, P]): js.Function1[/* param */ P, RecoilState[T]] = js.native
+  @scala.inline
+  def selectorFamily[T, P /* <: SerializableParam */](options: ReadOnlySelectorFamilyOptions[T, P]): js.Function1[/* param */ P, RecoilValueReadOnly[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorFamily")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param */ P, RecoilValueReadOnly[T]]]
+  @scala.inline
+  def selectorFamily[T, P /* <: SerializableParam */](options: ReadWriteSelectorFamilyOptions[T, P]): js.Function1[/* param */ P, RecoilState[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("selectorFamily")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* param */ P, RecoilState[T]]]
   
-  @JSImport("recoil", "useRecoilCallback")
-  @js.native
-  def useRecoilCallback[Args /* <: js.Array[_] */, Return](fn: js.Function2[/* interface */ CallbackInterface, /* args */ Args, Return]): js.Function1[/* args */ Args, Return] = js.native
-  @JSImport("recoil", "useRecoilCallback")
-  @js.native
-  def useRecoilCallback[Args /* <: js.Array[_] */, Return](fn: js.Function2[/* interface */ CallbackInterface, /* args */ Args, Return], deps: js.Array[_]): js.Function1[/* args */ Args, Return] = js.native
+  @scala.inline
+  def useRecoilCallback[Args /* <: js.Array[js.Any] */, Return](fn: js.Function2[/* interface */ CallbackInterface, /* args */ Args, Return]): js.Function1[/* args */ Args, Return] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilCallback")(fn.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* args */ Args, Return]]
+  @scala.inline
+  def useRecoilCallback[Args /* <: js.Array[js.Any] */, Return](
+    fn: js.Function2[/* interface */ CallbackInterface, /* args */ Args, Return],
+    deps: js.Array[js.Any]
+  ): js.Function1[/* args */ Args, Return] = (^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilCallback")(fn.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* args */ Args, Return]]
   
-  @JSImport("recoil", "useRecoilState")
-  @js.native
-  def useRecoilState[T](recoilState: RecoilState[T]): js.Tuple2[T, SetterOrUpdater[T]] = js.native
+  @scala.inline
+  def useRecoilState[T](recoilState: RecoilState[T]): js.Tuple2[T, SetterOrUpdater[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilState")(recoilState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[T, SetterOrUpdater[T]]]
   
-  @JSImport("recoil", "useRecoilStateLoadable")
-  @js.native
-  def useRecoilStateLoadable[T](recoilState: RecoilState[T]): js.Tuple2[Loadable[T], SetterOrUpdater[T]] = js.native
+  @scala.inline
+  def useRecoilStateLoadable[T](recoilState: RecoilState[T]): js.Tuple2[Loadable[T], SetterOrUpdater[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilStateLoadable")(recoilState.asInstanceOf[js.Any]).asInstanceOf[js.Tuple2[Loadable[T], SetterOrUpdater[T]]]
   
-  @JSImport("recoil", "useRecoilValue")
-  @js.native
-  def useRecoilValue[T](recoilValue: RecoilValue[T]): T = js.native
+  @scala.inline
+  def useRecoilValue[T](recoilValue: RecoilValue[T]): T = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilValue")(recoilValue.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("recoil", "useRecoilValueLoadable")
-  @js.native
-  def useRecoilValueLoadable[T](recoilValue: RecoilValue[T]): Loadable[T] = js.native
+  @scala.inline
+  def useRecoilValueLoadable[T](recoilValue: RecoilValue[T]): Loadable[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useRecoilValueLoadable")(recoilValue.asInstanceOf[js.Any]).asInstanceOf[Loadable[T]]
   
-  @JSImport("recoil", "useResetRecoilState")
-  @js.native
-  def useResetRecoilState(recoilState: RecoilState[_]): Resetter = js.native
+  @scala.inline
+  def useResetRecoilState(recoilState: RecoilState[js.Any]): Resetter = ^.asInstanceOf[js.Dynamic].applyDynamic("useResetRecoilState")(recoilState.asInstanceOf[js.Any]).asInstanceOf[Resetter]
   
-  @JSImport("recoil", "useSetRecoilState")
-  @js.native
-  def useSetRecoilState[T](recoilState: RecoilState[T]): SetterOrUpdater[T] = js.native
+  @scala.inline
+  def useSetRecoilState[T](recoilState: RecoilState[T]): SetterOrUpdater[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("useSetRecoilState")(recoilState.asInstanceOf[js.Any]).asInstanceOf[SetterOrUpdater[T]]
   
-  @JSImport("recoil", "waitForAll")
-  @js.native
-  def waitForAll[RecoilValues /* <: js.Array[RecoilValue[_]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = js.native
-  @JSImport("recoil", "waitForAll")
-  @js.native
-  def waitForAll_RecoilValues_StringDictionaryRecoilValueWildcard[RecoilValues /* <: StringDictionary[RecoilValue[_]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = js.native
+  @scala.inline
+  def waitForAll[RecoilValues /* <: StringDictionary[RecoilValue[js.Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAll")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
   
-  @JSImport("recoil", "waitForAny")
-  @js.native
-  def waitForAny[RecoilValues /* <: js.Array[RecoilValue[_]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = js.native
-  @JSImport("recoil", "waitForAny")
-  @js.native
-  def waitForAny_RecoilValues_StringDictionaryRecoilValueWildcard[RecoilValues /* <: StringDictionary[RecoilValue[_]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = js.native
+  @scala.inline
+  def waitForAll_RecoilValues_ArrayRecoilValueAny[RecoilValues /* <: js.Array[RecoilValue[js.Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAll")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
   
-  @JSImport("recoil", "waitForNone")
-  @js.native
-  def waitForNone[RecoilValues /* <: js.Array[RecoilValue[_]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = js.native
-  @JSImport("recoil", "waitForNone")
-  @js.native
-  def waitForNone_RecoilValues_StringDictionaryRecoilValueWildcard[RecoilValues /* <: StringDictionary[RecoilValue[_]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = js.native
+  @scala.inline
+  def waitForAny[RecoilValues /* <: StringDictionary[RecoilValue[js.Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAny")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
   
-  @js.native
+  @scala.inline
+  def waitForAny_RecoilValues_ArrayRecoilValueAny[RecoilValues /* <: js.Array[RecoilValue[js.Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForAny")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
+  
+  @scala.inline
+  def waitForNone[RecoilValues /* <: StringDictionary[RecoilValue[js.Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForNone")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
+  
+  @scala.inline
+  def waitForNone_RecoilValues_ArrayRecoilValueAny[RecoilValues /* <: js.Array[RecoilValue[js.Any]] */](param: RecoilValues): RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]] = ^.asInstanceOf[js.Dynamic].applyDynamic("waitForNone")(param.asInstanceOf[js.Any]).asInstanceOf[RecoilValueReadOnly[UnwrapRecoilValueLoadables[RecoilValues]]]
+  
   trait AtomFamilyOptions[T, P /* <: SerializableParam */] extends StObject {
     
-    var default: RecoilValue[T] | js.Promise[T] | T | (js.Function1[/* param */ P, T | RecoilValue[T] | js.Promise[T]]) = js.native
+    var default: RecoilValue[T] | js.Promise[T] | T | (js.Function1[/* param */ P, T | RecoilValue[T] | js.Promise[T]])
     
-    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.native
+    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.undefined
     
-    var key: NodeKey = js.native
+    var key: NodeKey
   }
   object AtomFamilyOptions {
     
@@ -201,7 +174,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AtomFamilyOptionsMutableBuilder[Self <: AtomFamilyOptions[_, _], T, P /* <: SerializableParam */] (val x: Self with (AtomFamilyOptions[T, P])) extends AnyVal {
+    implicit class AtomFamilyOptionsMutableBuilder[Self <: AtomFamilyOptions[?, ?], T, P /* <: SerializableParam */] (val x: Self & (AtomFamilyOptions[T, P])) extends AnyVal {
       
       @scala.inline
       def setDangerouslyAllowMutability(value: Boolean): Self = StObject.set(x, "dangerouslyAllowMutability", value.asInstanceOf[js.Any])
@@ -222,14 +195,13 @@ object mod {
     }
   }
   
-  @js.native
   trait AtomOptions[T] extends StObject {
     
-    var default: RecoilValue[T] | js.Promise[T] | T = js.native
+    var default: RecoilValue[T] | js.Promise[T] | T
     
-    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.native
+    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.undefined
     
-    var key: NodeKey = js.native
+    var key: NodeKey
   }
   object AtomOptions {
     
@@ -240,7 +212,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AtomOptionsMutableBuilder[Self <: AtomOptions[_], T] (val x: Self with AtomOptions[T]) extends AnyVal {
+    implicit class AtomOptionsMutableBuilder[Self <: AtomOptions[?], T] (val x: Self & AtomOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDangerouslyAllowMutability(value: Boolean): Self = StObject.set(x, "dangerouslyAllowMutability", value.asInstanceOf[js.Any])
@@ -259,29 +231,28 @@ object mod {
   type AtomValues = Map[NodeKey, Loadable[js.Any]]
   
   /* Inlined std.Readonly<{getPromise <T>(recoilVal : recoil.recoil.RecoilValue<T>): std.Promise<T>, getLoadable <T>(recoilVal : recoil.recoil.RecoilValue<T>): recoil.recoil.Loadable<T>, set <T>(recoilVal : recoil.recoil.RecoilState<T>, valOrUpdater : (currVal : T): T | T): void, reset (recoilVal : recoil.recoil.RecoilState<any>): void}> */
-  @js.native
   trait CallbackInterface extends StObject {
     
-    val getLoadable: js.Function1[/* recoilVal */ RecoilValue[_], Loadable[_]] = js.native
+    val getLoadable: js.Function1[/* recoilVal */ RecoilValue[js.Any], Loadable[js.Any]]
     
-    val getPromise: js.Function1[/* recoilVal */ RecoilValue[_], js.Promise[_]] = js.native
+    val getPromise: js.Function1[/* recoilVal */ RecoilValue[js.Any], js.Promise[js.Any]]
     
-    val reset: js.Function1[/* recoilVal */ RecoilState[_], Unit] = js.native
+    val reset: js.Function1[/* recoilVal */ RecoilState[js.Any], Unit]
     
     val set: js.Function2[
-        /* recoilVal */ RecoilState[_], 
-        /* valOrUpdater */ (js.Function1[/* currVal */ js.Any, _]) | js.Any, 
+        /* recoilVal */ RecoilState[js.Any], 
+        /* valOrUpdater */ (js.Function1[/* currVal */ js.Any, js.Any]) | js.Any, 
         Unit
-      ] = js.native
+      ]
   }
   object CallbackInterface {
     
     @scala.inline
     def apply(
-      getLoadable: /* recoilVal */ RecoilValue[_] => Loadable[_],
-      getPromise: /* recoilVal */ RecoilValue[_] => js.Promise[_],
-      reset: /* recoilVal */ RecoilState[_] => Unit,
-      set: (/* recoilVal */ RecoilState[_], /* valOrUpdater */ (js.Function1[/* currVal */ js.Any, _]) | js.Any) => Unit
+      getLoadable: /* recoilVal */ RecoilValue[js.Any] => Loadable[js.Any],
+      getPromise: /* recoilVal */ RecoilValue[js.Any] => js.Promise[js.Any],
+      reset: /* recoilVal */ RecoilState[js.Any] => Unit,
+      set: (/* recoilVal */ RecoilState[js.Any], /* valOrUpdater */ (js.Function1[/* currVal */ js.Any, js.Any]) | js.Any) => Unit
     ): CallbackInterface = {
       val __obj = js.Dynamic.literal(getLoadable = js.Any.fromFunction1(getLoadable), getPromise = js.Any.fromFunction1(getPromise), reset = js.Any.fromFunction1(reset), set = js.Any.fromFunction2(set))
       __obj.asInstanceOf[CallbackInterface]
@@ -291,17 +262,17 @@ object mod {
     implicit class CallbackInterfaceMutableBuilder[Self <: CallbackInterface] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setGetLoadable(value: /* recoilVal */ RecoilValue[_] => Loadable[_]): Self = StObject.set(x, "getLoadable", js.Any.fromFunction1(value))
+      def setGetLoadable(value: /* recoilVal */ RecoilValue[js.Any] => Loadable[js.Any]): Self = StObject.set(x, "getLoadable", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetPromise(value: /* recoilVal */ RecoilValue[_] => js.Promise[_]): Self = StObject.set(x, "getPromise", js.Any.fromFunction1(value))
+      def setGetPromise(value: /* recoilVal */ RecoilValue[js.Any] => js.Promise[js.Any]): Self = StObject.set(x, "getPromise", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setReset(value: /* recoilVal */ RecoilState[_] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
+      def setReset(value: /* recoilVal */ RecoilState[js.Any] => Unit): Self = StObject.set(x, "reset", js.Any.fromFunction1(value))
       
       @scala.inline
       def setSet(
-        value: (/* recoilVal */ RecoilState[_], /* valOrUpdater */ (js.Function1[/* currVal */ js.Any, _]) | js.Any) => Unit
+        value: (/* recoilVal */ RecoilState[js.Any], /* valOrUpdater */ (js.Function1[/* currVal */ js.Any, js.Any]) | js.Any) => Unit
       ): Self = StObject.set(x, "set", js.Any.fromFunction2(value))
     }
   }
@@ -319,20 +290,20 @@ object mod {
   object Loadable {
     
     @scala.inline
-    def Contents[T](contents: T, state: hasValue): typings.recoil.anon.Contents[T] = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def Contents[T](contents: T): typings.recoil.anon.Contents[T] = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "hasValue")
       __obj.asInstanceOf[typings.recoil.anon.Contents[T]]
     }
     
     @scala.inline
-    def ReadonlystatehasErrorcont(contents: Error, state: hasError): typings.recoil.anon.ReadonlystatehasErrorcont = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def ReadonlystatehasErrorcont(contents: Error): typings.recoil.anon.ReadonlystatehasErrorcont = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "hasError")
       __obj.asInstanceOf[typings.recoil.anon.ReadonlystatehasErrorcont]
     }
     
     @scala.inline
-    def State[T](contents: LoadablePromise[T], state: loading): typings.recoil.anon.State[T] = {
-      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = state.asInstanceOf[js.Any])
+    def State[T](contents: LoadablePromise[T]): typings.recoil.anon.State[T] = {
+      val __obj = js.Dynamic.literal(contents = contents.asInstanceOf[js.Any], state = "loading")
       __obj.asInstanceOf[typings.recoil.anon.State[T]]
     }
   }
@@ -343,18 +314,17 @@ object mod {
   
   type Primitive = js.UndefOr[Null | Boolean | Double | js.Symbol | String]
   
-  @js.native
   trait ReadOnlySelectorFamilyOptions[T, P /* <: SerializableParam */] extends StObject {
     
     // cacheImplementation_UNSTABLE?: () => CacheImplementation<Loadable<T>>,
     // cacheImplementationForParams_UNSTABLE?: () => CacheImplementation<
     //   RecoilValue<T>,
     // >,
-    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.native
+    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.undefined
     
-    def get(param: P): js.Function1[/* opts */ Get, js.Promise[T] | RecoilValue[T] | T] = js.native
+    def get(param: P): js.Function1[/* opts */ Get, js.Promise[T] | RecoilValue[T] | T]
     
-    var key: String = js.native
+    var key: String
   }
   object ReadOnlySelectorFamilyOptions {
     
@@ -365,7 +335,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReadOnlySelectorFamilyOptionsMutableBuilder[Self <: ReadOnlySelectorFamilyOptions[_, _], T, P /* <: SerializableParam */] (val x: Self with (ReadOnlySelectorFamilyOptions[T, P])) extends AnyVal {
+    implicit class ReadOnlySelectorFamilyOptionsMutableBuilder[Self <: ReadOnlySelectorFamilyOptions[?, ?], T, P /* <: SerializableParam */] (val x: Self & (ReadOnlySelectorFamilyOptions[T, P])) extends AnyVal {
       
       @scala.inline
       def setDangerouslyAllowMutability(value: Boolean): Self = StObject.set(x, "dangerouslyAllowMutability", value.asInstanceOf[js.Any])
@@ -381,14 +351,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ReadOnlySelectorOptions[T] extends StObject {
     
-    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.native
+    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.undefined
     
-    def get(opts: Get): js.Promise[T] | RecoilValue[T] | T = js.native
+    def get(opts: Get): js.Promise[T] | RecoilValue[T] | T
     
-    var key: String = js.native
+    var key: String
   }
   object ReadOnlySelectorOptions {
     
@@ -399,7 +368,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReadOnlySelectorOptionsMutableBuilder[Self <: ReadOnlySelectorOptions[_], T] (val x: Self with ReadOnlySelectorOptions[T]) extends AnyVal {
+    implicit class ReadOnlySelectorOptionsMutableBuilder[Self <: ReadOnlySelectorOptions[?], T] (val x: Self & ReadOnlySelectorOptions[T]) extends AnyVal {
       
       @scala.inline
       def setDangerouslyAllowMutability(value: Boolean): Self = StObject.set(x, "dangerouslyAllowMutability", value.asInstanceOf[js.Any])
@@ -415,20 +384,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ReadWriteSelectorFamilyOptions[T, P /* <: SerializableParam */] extends StObject {
     
     // cacheImplementation_UNSTABLE?: () => CacheImplementation<Loadable<T>>,
     // cacheImplementationForParams_UNSTABLE?: () => CacheImplementation<
     //   RecoilValue<T>,
     // >,
-    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.native
+    var dangerouslyAllowMutability: js.UndefOr[Boolean] = js.undefined
     
-    def get(param: P): js.Function1[/* opts */ Get, js.Promise[T] | RecoilValue[T] | T] = js.native
+    def get(param: P): js.Function1[/* opts */ Get, js.Promise[T] | RecoilValue[T] | T]
     
-    var key: String = js.native
+    var key: String
     
-    def set(param: P): js.Function2[/* opts */ Reset, /* newValue */ T | DefaultValue, Unit] = js.native
+    def set(param: P): js.Function2[/* opts */ Reset, /* newValue */ T | DefaultValue, Unit]
   }
   object ReadWriteSelectorFamilyOptions {
     
@@ -443,7 +411,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ReadWriteSelectorFamilyOptionsMutableBuilder[Self <: ReadWriteSelectorFamilyOptions[_, _], T, P /* <: SerializableParam */] (val x: Self with (ReadWriteSelectorFamilyOptions[T, P])) extends AnyVal {
+    implicit class ReadWriteSelectorFamilyOptionsMutableBuilder[Self <: ReadWriteSelectorFamilyOptions[?, ?], T, P /* <: SerializableParam */] (val x: Self & (ReadWriteSelectorFamilyOptions[T, P])) extends AnyVal {
       
       @scala.inline
       def setDangerouslyAllowMutability(value: Boolean): Self = StObject.set(x, "dangerouslyAllowMutability", value.asInstanceOf[js.Any])
@@ -463,16 +431,17 @@ object mod {
   }
   
   @js.native
-  trait ReadWriteSelectorOptions[T] extends ReadOnlySelectorOptions[T] {
+  trait ReadWriteSelectorOptions[T]
+    extends StObject
+       with ReadOnlySelectorOptions[T] {
     
     def set(opts: Reset, newValue: T): Unit = js.native
     def set(opts: Reset, newValue: DefaultValue): Unit = js.native
   }
   
-  @js.native
   trait RecoilRootProps extends StObject {
     
-    var initializeState: js.UndefOr[js.Function1[/* options */ Set, Unit]] = js.native
+    var initializeState: js.UndefOr[js.Function1[/* options */ Set, Unit]] = js.undefined
   }
   object RecoilRootProps {
     
@@ -504,12 +473,11 @@ object mod {
   type Resetter = js.Function0[Unit]
   
   /* Inlined std.Readonly<{  value :T,   upstreamState__INTERNAL_DO_NOT_USE :recoil.recoil.TreeState | undefined}> */
-  @js.native
   trait ResolvedLoadablePromiseInfo[T] extends StObject {
     
-    val upstreamState__INTERNAL_DO_NOT_USE: js.UndefOr[TreeState] = js.native
+    val upstreamState__INTERNAL_DO_NOT_USE: js.UndefOr[TreeState] = js.undefined
     
-    val value: T = js.native
+    val value: T
   }
   object ResolvedLoadablePromiseInfo {
     
@@ -520,7 +488,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class ResolvedLoadablePromiseInfoMutableBuilder[Self <: ResolvedLoadablePromiseInfo[_], T] (val x: Self with ResolvedLoadablePromiseInfo[T]) extends AnyVal {
+    implicit class ResolvedLoadablePromiseInfoMutableBuilder[Self <: ResolvedLoadablePromiseInfo[?], T] (val x: Self & ResolvedLoadablePromiseInfo[T]) extends AnyVal {
       
       @scala.inline
       def setUpstreamState__INTERNAL_DO_NOT_USE(value: TreeState): Self = StObject.set(x, "upstreamState__INTERNAL_DO_NOT_USE", value.asInstanceOf[js.Any])
@@ -548,24 +516,23 @@ object mod {
   type SetterOrUpdater[T] = js.Function1[/* valOrUpdater */ (js.Function1[/* currVal */ T, T]) | T, Unit]
   
   /* Inlined std.Readonly<{  isSnapshot :boolean,   transactionMetadata :object,   dirtyAtoms :std.Set<recoil.recoil.NodeKey>,   atomValues :recoil.recoil.AtomValues,   nonvalidatedAtoms :std.Map<recoil.recoil.NodeKey, unknown>,   nodeDeps :std.Map<recoil.recoil.NodeKey, std.Set<recoil.recoil.NodeKey>>,   nodeToNodeSubscriptions :std.Map<recoil.recoil.NodeKey, std.Set<recoil.recoil.NodeKey>>,   nodeToComponentSubscriptions :std.Map<recoil.recoil.NodeKey, std.Map<number, [string, recoil.recoil.ComponentCallback]>>}> */
-  @js.native
   trait TreeState extends StObject {
     
-    val atomValues: AtomValues = js.native
+    val atomValues: AtomValues
     
-    val dirtyAtoms: typings.std.Set[NodeKey] = js.native
+    val dirtyAtoms: typings.std.Set[NodeKey]
     
-    val isSnapshot: Boolean = js.native
+    val isSnapshot: Boolean
     
-    val nodeDeps: Map[NodeKey, typings.std.Set[NodeKey]] = js.native
+    val nodeDeps: Map[NodeKey, typings.std.Set[NodeKey]]
     
-    val nodeToComponentSubscriptions: Map[NodeKey, Map[Double, js.Tuple2[String, ComponentCallback]]] = js.native
+    val nodeToComponentSubscriptions: Map[NodeKey, Map[Double, js.Tuple2[String, ComponentCallback]]]
     
-    val nodeToNodeSubscriptions: Map[NodeKey, typings.std.Set[NodeKey]] = js.native
+    val nodeToNodeSubscriptions: Map[NodeKey, typings.std.Set[NodeKey]]
     
-    val nonvalidatedAtoms: Map[NodeKey, _] = js.native
+    val nonvalidatedAtoms: Map[NodeKey, js.Any]
     
-    val transactionMetadata: js.Object = js.native
+    val transactionMetadata: js.Object
   }
   object TreeState {
     
@@ -577,7 +544,7 @@ object mod {
       nodeDeps: Map[NodeKey, typings.std.Set[NodeKey]],
       nodeToComponentSubscriptions: Map[NodeKey, Map[Double, js.Tuple2[String, ComponentCallback]]],
       nodeToNodeSubscriptions: Map[NodeKey, typings.std.Set[NodeKey]],
-      nonvalidatedAtoms: Map[NodeKey, _],
+      nonvalidatedAtoms: Map[NodeKey, js.Any],
       transactionMetadata: js.Object
     ): TreeState = {
       val __obj = js.Dynamic.literal(atomValues = atomValues.asInstanceOf[js.Any], dirtyAtoms = dirtyAtoms.asInstanceOf[js.Any], isSnapshot = isSnapshot.asInstanceOf[js.Any], nodeDeps = nodeDeps.asInstanceOf[js.Any], nodeToComponentSubscriptions = nodeToComponentSubscriptions.asInstanceOf[js.Any], nodeToNodeSubscriptions = nodeToNodeSubscriptions.asInstanceOf[js.Any], nonvalidatedAtoms = nonvalidatedAtoms.asInstanceOf[js.Any], transactionMetadata = transactionMetadata.asInstanceOf[js.Any])
@@ -606,7 +573,7 @@ object mod {
       def setNodeToNodeSubscriptions(value: Map[NodeKey, typings.std.Set[NodeKey]]): Self = StObject.set(x, "nodeToNodeSubscriptions", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setNonvalidatedAtoms(value: Map[NodeKey, _]): Self = StObject.set(x, "nonvalidatedAtoms", value.asInstanceOf[js.Any])
+      def setNonvalidatedAtoms(value: Map[NodeKey, js.Any]): Self = StObject.set(x, "nonvalidatedAtoms", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTransactionMetadata(value: js.Object): Self = StObject.set(x, "transactionMetadata", value.asInstanceOf[js.Any])
@@ -615,7 +582,7 @@ object mod {
   
   type UnwrapRecoilValue[T] = js.Any
   
-  type UnwrapRecoilValueLoadables[T /* <: js.Array[RecoilValue[_]] | StringDictionary[RecoilValue[_]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  type UnwrapRecoilValueLoadables[T /* <: js.Array[RecoilValue[js.Any]] | StringDictionary[RecoilValue[js.Any]] */] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: recoil.recoil.Loadable<recoil.recoil.UnwrapRecoilValue<T[P]>>}
-    */ typings.recoil.recoilStrings.UnwrapRecoilValueLoadables with TopLevel[T]
+    */ typings.recoil.recoilStrings.UnwrapRecoilValueLoadables & TopLevel[T]
 }

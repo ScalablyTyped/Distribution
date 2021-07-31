@@ -2,29 +2,27 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The currently supported Android devices.
   */
-@js.native
 trait SchemaAndroidDeviceCatalog extends StObject {
   
   /**
     * The set of supported Android device models.
     */
-  var models: js.UndefOr[js.Array[SchemaAndroidModel]] = js.native
+  var models: js.UndefOr[js.Array[SchemaAndroidModel]] = js.undefined
   
   /**
     * The set of supported runtime configurations.
     */
-  var runtimeConfiguration: js.UndefOr[SchemaAndroidRuntimeConfiguration] = js.native
+  var runtimeConfiguration: js.UndefOr[SchemaAndroidRuntimeConfiguration] = js.undefined
   
   /**
     * The set of supported Android OS versions.
     */
-  var versions: js.UndefOr[js.Array[SchemaAndroidVersion]] = js.native
+  var versions: js.UndefOr[js.Array[SchemaAndroidVersion]] = js.undefined
 }
 object SchemaAndroidDeviceCatalog {
   

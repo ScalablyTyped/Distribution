@@ -1,45 +1,53 @@
 package typings.bluebirdRetry
 
-import typings.bluebird.mod.^
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T](func: js.Function1[/* param */ T, Unit]): typings.bluebird.mod.^[T] = ^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any]).asInstanceOf[typings.bluebird.mod.^[T]]
+  @scala.inline
+  def apply[T](func: js.Function1[/* param */ T, Unit], options: Options): typings.bluebird.mod.^[T] = (^.asInstanceOf[js.Dynamic].apply(func.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.bluebird.mod.^[T]]
+  
   @JSImport("bluebird-retry", JSImport.Namespace)
   @js.native
-  def apply[T](func: js.Function1[/* param */ T, Unit]): ^[T] = js.native
-  @JSImport("bluebird-retry", JSImport.Namespace)
-  @js.native
-  def apply[T](func: js.Function1[/* param */ T, Unit], options: Options): ^[T] = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("bluebird-retry", "StopError")
   @js.native
-  class StopError () extends Error
+  class StopError ()
+    extends StObject
+       with Error {
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+  }
   
-  @js.native
   trait Options extends StObject {
     
-    var args: js.UndefOr[js.Any] = js.native
+    var args: js.UndefOr[js.Any] = js.undefined
     
-    var backoff: js.UndefOr[Double] = js.native
+    var backoff: js.UndefOr[Double] = js.undefined
     
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
-    var interval: js.UndefOr[Double] = js.native
+    var interval: js.UndefOr[Double] = js.undefined
     
-    var max_interval: js.UndefOr[Double] = js.native
+    var max_interval: js.UndefOr[Double] = js.undefined
     
-    var max_tries: js.UndefOr[Double] = js.native
+    var max_tries: js.UndefOr[Double] = js.undefined
     
-    var predicate: js.UndefOr[js.Any] = js.native
+    var predicate: js.UndefOr[js.Any] = js.undefined
     
-    var throw_original: js.UndefOr[Boolean] = js.native
+    var throw_original: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

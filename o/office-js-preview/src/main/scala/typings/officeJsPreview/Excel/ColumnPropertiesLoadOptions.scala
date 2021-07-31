@@ -3,7 +3,6 @@ package typings.officeJsPreview.Excel
 import typings.officeJsPreview.anon.CellPropertiesFormatLoadOAutoIndent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * [Api set: ExcelApi 1.9]
   */
-@js.native
-trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
+trait ColumnPropertiesLoadOptions
+  extends StObject
+     with CellPropertiesLoadOptions {
   
   /**
     *
@@ -21,7 +21,7 @@ trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var columnHidden: js.UndefOr[Boolean] = js.native
+  var columnHidden: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -29,7 +29,7 @@ trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var columnIndex: js.UndefOr[Boolean] = js.native
+  var columnIndex: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -38,7 +38,7 @@ trait ColumnPropertiesLoadOptions extends CellPropertiesLoadOptions {
     * [Api set: ExcelApi 1.9]
     */
   @JSName("format")
-  var format_ColumnPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOAutoIndent] = js.native
+  var format_ColumnPropertiesLoadOptions: js.UndefOr[CellPropertiesFormatLoadOAutoIndent] = js.undefined
 }
 object ColumnPropertiesLoadOptions {
   

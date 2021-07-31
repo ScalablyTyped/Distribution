@@ -2,20 +2,18 @@ package typings.exceljs.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<exceljs.exceljs.CsvReadOptions> */
-@js.native
 trait PartialCsvReadOptions extends StObject {
   
-  var dateFormats: js.UndefOr[js.Array[String]] = js.native
+  var dateFormats: js.UndefOr[js.Array[String]] = js.undefined
   
-  var map: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, _]] = js.native
+  var map: js.UndefOr[js.Function2[/* value */ js.Any, /* index */ Double, js.Any]] = js.undefined
   
-  var parserOptions: js.UndefOr[PartialFastCsvParserOptio] = js.native
+  var parserOptions: js.UndefOr[PartialFastCsvParserOptio] = js.undefined
   
-  var sheetName: js.UndefOr[String] = js.native
+  var sheetName: js.UndefOr[String] = js.undefined
 }
 object PartialCsvReadOptions {
   
@@ -38,7 +36,7 @@ object PartialCsvReadOptions {
     def setDateFormatsVarargs(value: String*): Self = StObject.set(x, "dateFormats", js.Array(value :_*))
     
     @scala.inline
-    def setMap(value: (/* value */ js.Any, /* index */ Double) => _): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
+    def setMap(value: (/* value */ js.Any, /* index */ Double) => js.Any): Self = StObject.set(x, "map", js.Any.fromFunction2(value))
     
     @scala.inline
     def setMapUndefined: Self = StObject.set(x, "map", js.undefined)

@@ -2,21 +2,19 @@ package typings.awsSdk.wafregionalMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SqlInjectionMatchSetUpdate extends StObject {
   
   /**
     * Specify INSERT to add a SqlInjectionMatchSetUpdate to a SqlInjectionMatchSet. Use DELETE to remove a SqlInjectionMatchSetUpdate from a SqlInjectionMatchSet.
     */
-  var Action: ChangeAction = js.native
+  var Action: ChangeAction
   
   /**
     * Specifies the part of a web request that you want AWS WAF to inspect for snippets of malicious SQL code and, if you want AWS WAF to inspect a header, the name of the header.
     */
-  var SqlInjectionMatchTuple: typings.awsSdk.wafregionalMod.SqlInjectionMatchTuple = js.native
+  var SqlInjectionMatchTuple: typings.awsSdk.wafregionalMod.SqlInjectionMatchTuple
 }
 object SqlInjectionMatchSetUpdate {
   

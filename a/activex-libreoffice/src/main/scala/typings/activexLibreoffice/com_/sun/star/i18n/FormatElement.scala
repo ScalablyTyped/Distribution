@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.i18n
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,29 +10,28 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Contains raw data defined in the XML locale data files.
   * @see XLocaleData for links to DTD of XML locale data files.
   */
-@js.native
 trait FormatElement extends StObject {
   
   /** The format code, for example, "YYYY-MM-DD". */
-  var formatCode: String = js.native
+  var formatCode: String
   
   /** The index used by the number formatter, predefined values corresponding with {@link NumberFormatIndex} values. */
-  var formatIndex: Double = js.native
+  var formatIndex: Double
   
   /** A unique (within one locale) identifier. */
-  var formatKey: String = js.native
+  var formatKey: String
   
   /** A name or description that is displayed in the number formatter dialog. */
-  var formatName: String = js.native
+  var formatName: String
   
   /** Type may be one of "short", "medium", "long". */
-  var formatType: String = js.native
+  var formatType: String
   
   /** Usage category, for example, "DATE" or "FIXED_NUMBER", corresponding with {@link KNumberFormatUsage} values. */
-  var formatUsage: String = js.native
+  var formatUsage: String
   
   /** If a format code is the default code of a **formatType** group. */
-  var isDefault: Boolean = js.native
+  var isDefault: Boolean
 }
 object FormatElement {
   

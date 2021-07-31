@@ -2,16 +2,14 @@ package typings.awsSdk.iot1clickdevicesserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDeviceResponse extends StObject {
   
   /**
     * Device details.
     */
-  var DeviceDescription: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.DeviceDescription] = js.native
+  var DeviceDescription: js.UndefOr[typings.awsSdk.iot1clickdevicesserviceMod.DeviceDescription] = js.undefined
 }
 object DescribeDeviceResponse {
   

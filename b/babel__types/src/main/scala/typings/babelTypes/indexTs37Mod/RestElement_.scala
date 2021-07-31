@@ -3,31 +3,30 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.RestElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait RestElement_
-  extends LVal
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait RestElement_
+  extends StObject
      with BaseNode
+     with LVal
      with PatternLike {
   
-  var argument: LVal = js.native
+  var argument: LVal
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
+  var typeAnnotation: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
   @JSName("type")
-  var type_RestElement_ : RestElement = js.native
+  var type_RestElement_ : RestElement
 }
 object RestElement_ {
   
   @scala.inline
-  def apply(argument: LVal, `type`: RestElement): RestElement_ = {
-    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(argument: LVal): RestElement_ = {
+    val __obj = js.Dynamic.literal(argument = argument.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null, typeAnnotation = null)
+    __obj.updateDynamic("type")("RestElement")
     __obj.asInstanceOf[RestElement_]
   }
   

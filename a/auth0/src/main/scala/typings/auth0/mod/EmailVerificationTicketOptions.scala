@@ -2,15 +2,13 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailVerificationTicketOptions extends StObject {
   
-  var result_url: String = js.native
+  var result_url: String
   
-  var user_id: String = js.native
+  var user_id: String
 }
 object EmailVerificationTicketOptions {
   

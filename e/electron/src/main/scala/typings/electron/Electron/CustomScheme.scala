@@ -2,19 +2,17 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CustomScheme extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/custom-scheme
-  var privileges: js.UndefOr[Privileges] = js.native
+  var privileges: js.UndefOr[Privileges] = js.undefined
   
   /**
     * Custom schemes to be registered with options.
     */
-  var scheme: String = js.native
+  var scheme: String
 }
 object CustomScheme {
   

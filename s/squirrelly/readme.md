@@ -10,9 +10,9 @@ Lightweight, fast, and powerful JS template engine. Supports helpers, filters, t
 | ------------------ | :-------------: |
 | Full name          | squirrelly |
 | Keywords           | squirrelly, helpers, template inheritance, handlebars, ejs, template engine, typescript types |
-| # releases         | 54 |
+| # releases         | 38 |
 | # dependents       | 18 |
-| # downloads        | 205362 |
+| # downloads        | 254168 |
 | # stars            | 1 |
 
 ## Links

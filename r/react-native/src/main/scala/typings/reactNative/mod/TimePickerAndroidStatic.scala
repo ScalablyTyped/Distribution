@@ -4,16 +4,14 @@ import typings.reactNative.reactNativeStrings.dismissedAction
 import typings.reactNative.reactNativeStrings.timeSetAction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerAndroidStatic extends StObject {
   
   /**
     * The dialog has been dismissed.
     */
-  var dismissedAction: typings.reactNative.reactNativeStrings.dismissedAction = js.native
+  var dismissedAction: typings.reactNative.reactNativeStrings.dismissedAction
   
   /**
     * Opens the standard Android time picker dialog.
@@ -34,22 +32,18 @@ trait TimePickerAndroidStatic extends StObject {
     * still be resolved with action being `TimePickerAndroid.dismissedAction` and all the other keys
     * being undefined. **Always** check whether the `action` before reading the values.
     */
-  def open(options: TimePickerAndroidOpenOptions): js.Promise[TimePickerAndroidOpenReturn] = js.native
+  def open(options: TimePickerAndroidOpenOptions): js.Promise[TimePickerAndroidOpenReturn]
   
   /**
     * A time has been selected.
     */
-  var timeSetAction: typings.reactNative.reactNativeStrings.timeSetAction = js.native
+  var timeSetAction: typings.reactNative.reactNativeStrings.timeSetAction
 }
 object TimePickerAndroidStatic {
   
   @scala.inline
-  def apply(
-    dismissedAction: dismissedAction,
-    open: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn],
-    timeSetAction: timeSetAction
-  ): TimePickerAndroidStatic = {
-    val __obj = js.Dynamic.literal(dismissedAction = dismissedAction.asInstanceOf[js.Any], open = js.Any.fromFunction1(open), timeSetAction = timeSetAction.asInstanceOf[js.Any])
+  def apply(open: TimePickerAndroidOpenOptions => js.Promise[TimePickerAndroidOpenReturn]): TimePickerAndroidStatic = {
+    val __obj = js.Dynamic.literal(dismissedAction = "dismissedAction", open = js.Any.fromFunction1(open), timeSetAction = "timeSetAction")
     __obj.asInstanceOf[TimePickerAndroidStatic]
   }
   

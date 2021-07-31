@@ -9,7 +9,6 @@ import typings.tensorflowTfjsLayers.topologyConfigMod.BaseLayerSerialization
 import typings.tensorflowTfjsLayers.topologyConfigMod.LayerConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object wrappersSerializationMod {
@@ -18,12 +17,13 @@ object wrappersSerializationMod {
   @js.native
   val wrapperLayerClassNames: js.Array[WrapperLayerClassName] = js.native
   
-  @js.native
-  trait BidirectionalLayerConfig extends LayerConfig {
+  trait BidirectionalLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var layer: RecurrentLayerSerialization = js.native
+    var layer: RecurrentLayerSerialization
     
-    var merge_mode: js.UndefOr[BidirectionalMergeMode] = js.native
+    var merge_mode: js.UndefOr[BidirectionalMergeMode] = js.undefined
   }
   object BidirectionalLayerConfig {
     
@@ -49,10 +49,11 @@ object wrappersSerializationMod {
   
   type BidirectionalLayerSerialization = BaseLayerSerialization[Bidirectional, BidirectionalLayerConfig]
   
-  @js.native
-  trait TimeDistributedLayerConfig extends LayerConfig {
+  trait TimeDistributedLayerConfig
+    extends StObject
+       with LayerConfig {
     
-    var layer: LayerSerialization = js.native
+    var layer: LayerSerialization
   }
   object TimeDistributedLayerConfig {
     

@@ -4,65 +4,109 @@ import typings.asn1js.mod.Integer
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rsaprivatekeyMod {
   
   @JSImport("pkijs/src/RSAPrivateKey", JSImport.Default)
   @js.native
-  class default () extends RSAPrivateKey {
+  class default ()
+    extends StObject
+       with RSAPrivateKey {
     def this(params: js.Any) = this()
-  }
-  /* static members */
-  object default {
     
-    @JSImport("pkijs/src/RSAPrivateKey", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    @JSImport("pkijs/src/RSAPrivateKey", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/RSAPrivateKey", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
-  }
-  
-  @js.native
-  trait RSAPrivateKey extends StObject {
-    
+    /* CompleteClass */
     var coefficient: Integer = js.native
     
+    /* CompleteClass */
     var exponent1: Integer = js.native
     
+    /* CompleteClass */
     var exponent2: Integer = js.native
     
     /**
       * Convert JSON value into current object
       * @param {JsonWebKey} json
       */
-    def fromJSON(json: JsonWebKey): Unit = js.native
+    /* CompleteClass */
+    override def fromJSON(json: JsonWebKey): Unit = js.native
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
     
+    /* CompleteClass */
     var modulus: Integer = js.native
     
-    var otherPrimeInfos: js.UndefOr[js.Array[typings.pkijs.otherPrimeInfoMod.default]] = js.native
-    
+    /* CompleteClass */
     var prime1: Integer = js.native
     
+    /* CompleteClass */
     var prime2: Integer = js.native
     
+    /* CompleteClass */
     var privateExponent: Integer = js.native
     
+    /* CompleteClass */
     var publicExponent: Integer = js.native
     
-    def toJSON(): js.Any = js.native
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
     
-    def toSchema(): js.Any = js.native
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
     
+    /* CompleteClass */
     var version: Double = js.native
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("pkijs/src/RSAPrivateKey", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  }
+  
+  trait RSAPrivateKey extends StObject {
+    
+    var coefficient: Integer
+    
+    var exponent1: Integer
+    
+    var exponent2: Integer
+    
+    /**
+      * Convert JSON value into current object
+      * @param {JsonWebKey} json
+      */
+    def fromJSON(json: JsonWebKey): Unit
+    
+    def fromSchema(schema: js.Any): Unit
+    
+    var modulus: Integer
+    
+    var otherPrimeInfos: js.UndefOr[js.Array[typings.pkijs.otherPrimeInfoMod.default]] = js.undefined
+    
+    var prime1: Integer
+    
+    var prime2: Integer
+    
+    var privateExponent: Integer
+    
+    var publicExponent: Integer
+    
+    def toJSON(): js.Any
+    
+    def toSchema(): js.Any
+    
+    var version: Double
   }
   object RSAPrivateKey {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.ebsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSnapshotBlocksResponse extends StObject {
   
   /**
     * The size of the block.
     */
-  var BlockSize: js.UndefOr[typings.awsSdk.ebsMod.BlockSize] = js.native
+  var BlockSize: js.UndefOr[typings.awsSdk.ebsMod.BlockSize] = js.undefined
   
   /**
     * An array of objects containing information about the blocks.
     */
-  var Blocks: js.UndefOr[typings.awsSdk.ebsMod.Blocks] = js.native
+  var Blocks: js.UndefOr[typings.awsSdk.ebsMod.Blocks] = js.undefined
   
   /**
     * The time when the BlockToken expires.
     */
-  var ExpiryTime: js.UndefOr[TimeStamp] = js.native
+  var ExpiryTime: js.UndefOr[TimeStamp] = js.undefined
   
   /**
     * The token to use to retrieve the next page of results. This value is null when there are no more results to return.
     */
-  var NextToken: js.UndefOr[PageToken] = js.native
+  var NextToken: js.UndefOr[PageToken] = js.undefined
   
   /**
     * The size of the volume in GB.
     */
-  var VolumeSize: js.UndefOr[typings.awsSdk.ebsMod.VolumeSize] = js.native
+  var VolumeSize: js.UndefOr[typings.awsSdk.ebsMod.VolumeSize] = js.undefined
 }
 object ListSnapshotBlocksResponse {
   

@@ -2,23 +2,21 @@ package typings.awsSdk.codestarnotificationsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SubscribeRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the notification rule for which you want to create the association.
     */
-  var Arn: NotificationRuleArn = js.native
+  var Arn: NotificationRuleArn
   
   /**
     * An enumeration token that, when provided in a request, returns the next batch of the results.
     */
-  var ClientRequestToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ClientRequestToken] = js.native
+  var ClientRequestToken: js.UndefOr[typings.awsSdk.codestarnotificationsMod.ClientRequestToken] = js.undefined
   
-  var Target: typings.awsSdk.codestarnotificationsMod.Target = js.native
+  var Target: typings.awsSdk.codestarnotificationsMod.Target
 }
 object SubscribeRequest {
   

@@ -11,8 +11,8 @@ Library for performing retries on HTTP requests
 | Full name          | @adobe/node-fetch-retry |
 | Keywords           | fetch, retry, adobe, http, node-fetch |
 | # releases         | 4 |
-| # dependents       | 4 |
-| # downloads        | 31039 |
+| # dependents       | 5 |
+| # downloads        | 53531 |
 | # stars            | 0 |
 
 ## Links

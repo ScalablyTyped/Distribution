@@ -2,14 +2,15 @@ package typings.opentracing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object referenceMod {
   
   @JSImport("opentracing/lib/reference", JSImport.Default)
   @js.native
-  class default protected () extends Reference {
+  class default protected ()
+    extends StObject
+       with Reference {
     /**
       * Initialize a new Reference instance.
       *
@@ -21,26 +22,45 @@ object referenceMod {
       */
     def this(`type`: String, referencedContext: typings.opentracing.spanContextMod.default) = this()
     def this(`type`: String, referencedContext: typings.opentracing.spanMod.default) = this()
-  }
-  
-  @js.native
-  trait Reference extends StObject {
     
+    /* CompleteClass */
     var _referencedContext: typings.opentracing.spanContextMod.default = js.native
     
+    /* CompleteClass */
     var _type: String = js.native
     
     /**
       * @return {SpanContext} The SpanContext being referred to (e.g., the
       *         parent in a REFERENCE_CHILD_OF Reference).
       */
-    def referencedContext(): typings.opentracing.spanContextMod.default = js.native
+    /* CompleteClass */
+    override def referencedContext(): typings.opentracing.spanContextMod.default = js.native
     
     /**
       * @return {string} The Reference type (e.g., REFERENCE_CHILD_OF or
       *         REFERENCE_FOLLOWS_FROM).
       */
-    def `type`(): String = js.native
+    /* CompleteClass */
+    override def `type`(): String = js.native
+  }
+  
+  trait Reference extends StObject {
+    
+    var _referencedContext: typings.opentracing.spanContextMod.default
+    
+    var _type: String
+    
+    /**
+      * @return {SpanContext} The SpanContext being referred to (e.g., the
+      *         parent in a REFERENCE_CHILD_OF Reference).
+      */
+    def referencedContext(): typings.opentracing.spanContextMod.default
+    
+    /**
+      * @return {string} The Reference type (e.g., REFERENCE_CHILD_OF or
+      *         REFERENCE_FOLLOWS_FROM).
+      */
+    def `type`(): String
   }
   object Reference {
     

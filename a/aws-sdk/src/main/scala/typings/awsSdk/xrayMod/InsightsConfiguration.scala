@@ -2,21 +2,19 @@ package typings.awsSdk.xrayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InsightsConfiguration extends StObject {
   
   /**
     * Set the InsightsEnabled value to true to enable insights or false to disable insights.
     */
-  var InsightsEnabled: js.UndefOr[NullableBoolean] = js.native
+  var InsightsEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * Set the NotificationsEnabled value to true to enable insights notifications. Notifications can only be enabled on a group with InsightsEnabled set to true.
     */
-  var NotificationsEnabled: js.UndefOr[NullableBoolean] = js.native
+  var NotificationsEnabled: js.UndefOr[NullableBoolean] = js.undefined
 }
 object InsightsConfiguration {
   

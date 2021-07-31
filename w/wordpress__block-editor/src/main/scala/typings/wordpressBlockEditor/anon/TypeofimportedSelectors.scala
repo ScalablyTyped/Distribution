@@ -12,7 +12,6 @@ import typings.wordpressBlockEditor.wordpressBlockEditorNumbers.`1`
 import typings.wordpressBlocks.mod.BlockInstance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,17 +23,17 @@ trait TypeofimportedSelectors extends StObject {
   def getAdjacentBlockClientId(): String | Null = js.native
   def getAdjacentBlockClientId(startClientId: String): String | Null = js.native
   @JSName("getAdjacentBlockClientId")
-  def getAdjacentBlockClientId_1(startClientId: js.UndefOr[scala.Nothing], modifier: `-1`): String | Null = js.native
-  @JSName("getAdjacentBlockClientId")
-  def getAdjacentBlockClientId_1(startClientId: js.UndefOr[scala.Nothing], modifier: `1`): String | Null = js.native
-  @JSName("getAdjacentBlockClientId")
   def getAdjacentBlockClientId_1(startClientId: String, modifier: `-1`): String | Null = js.native
   @JSName("getAdjacentBlockClientId")
   def getAdjacentBlockClientId_1(startClientId: String, modifier: `1`): String | Null = js.native
+  @JSName("getAdjacentBlockClientId")
+  def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `-1`): String | Null = js.native
+  @JSName("getAdjacentBlockClientId")
+  def getAdjacentBlockClientId_1(startClientId: Unit, modifier: `1`): String | Null = js.native
   
-  def getBlock(clientId: String): BlockInstance[StringDictionary[_]] | Null = js.native
+  def getBlock(clientId: String): BlockInstance[StringDictionary[js.Any]] | Null = js.native
   
-  def getBlockAttributes(clientId: String): (Record[String, _]) | Null = js.native
+  def getBlockAttributes(clientId: String): (Record[String, js.Any]) | Null = js.native
   
   def getBlockCount(): Double = js.native
   def getBlockCount(rootClientId: String): Double = js.native
@@ -62,11 +61,11 @@ trait TypeofimportedSelectors extends StObject {
   
   def getBlockSelectionStart(): js.UndefOr[String] = js.native
   
-  def getBlocks(): js.Array[BlockInstance[StringDictionary[_]]] = js.native
-  def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[_]]] = js.native
+  def getBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
+  def getBlocks(rootClientId: String): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
   
-  def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[_]] | Null] = js.native
-  def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[_]] | Null] = js.native
+  def getBlocksByClientId(clientIds: String): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = js.native
+  def getBlocksByClientId(clientIds: js.Array[String]): js.Array[BlockInstance[StringDictionary[js.Any]] | Null] = js.native
   
   def getClientIdsOfDescendants(clientIds: js.Array[String]): js.Array[String] = js.native
   
@@ -84,7 +83,7 @@ trait TypeofimportedSelectors extends StObject {
   
   def getMultiSelectedBlockClientIds(): js.Array[String] = js.native
   
-  def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[_]]] = js.native
+  def getMultiSelectedBlocks(): js.Array[BlockInstance[StringDictionary[js.Any]]] = js.native
   
   def getMultiSelectedBlocksEndClientId(): String | Null = js.native
   
@@ -96,7 +95,7 @@ trait TypeofimportedSelectors extends StObject {
   def getPreviousBlockClientId(): String | Null = js.native
   def getPreviousBlockClientId(startClientId: String): String | Null = js.native
   
-  def getSelectedBlock(): BlockInstance[StringDictionary[_]] | Null = js.native
+  def getSelectedBlock(): BlockInstance[StringDictionary[js.Any]] | Null = js.native
   
   def getSelectedBlockClientId(): String | Null = js.native
   

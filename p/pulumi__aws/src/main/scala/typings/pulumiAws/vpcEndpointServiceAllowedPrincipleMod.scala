@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vpcEndpointServiceAllowedPrincipleMod {
@@ -38,6 +37,10 @@ object vpcEndpointServiceAllowedPrincipleMod {
   /* static members */
   object VpcEndpointServiceAllowedPrinciple {
     
+    @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing VpcEndpointServiceAllowedPrinciple resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -47,45 +50,39 @@ object vpcEndpointServiceAllowedPrincipleMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple.get")
-    @js.native
-    def get(name: String, id: Input[ID]): VpcEndpointServiceAllowedPrinciple = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): VpcEndpointServiceAllowedPrinciple = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: VpcEndpointServiceAllowedPrincipleState): VpcEndpointServiceAllowedPrinciple = js.native
-    @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: VpcEndpointServiceAllowedPrincipleState): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: VpcEndpointServiceAllowedPrincipleState,
       opts: CustomResourceOptions
-    ): VpcEndpointServiceAllowedPrinciple = js.native
+    ): VpcEndpointServiceAllowedPrinciple = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[VpcEndpointServiceAllowedPrinciple]
     
     /**
       * Returns true if the given object is an instance of VpcEndpointServiceAllowedPrinciple.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple", "VpcEndpointServiceAllowedPrinciple.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ec2/vpcEndpointServiceAllowedPrinciple.VpcEndpointServiceAllowedPrinciple */ Boolean]
   }
   
-  @js.native
   trait VpcEndpointServiceAllowedPrincipleArgs extends StObject {
     
     /**
       * The ARN of the principal to allow permissions.
       */
-    val principalArn: Input[String] = js.native
+    val principalArn: Input[String]
     
     /**
       * The ID of the VPC endpoint service to allow permission.
       */
-    val vpcEndpointServiceId: Input[String] = js.native
+    val vpcEndpointServiceId: Input[String]
   }
   object VpcEndpointServiceAllowedPrincipleArgs {
     
@@ -106,18 +103,17 @@ object vpcEndpointServiceAllowedPrincipleMod {
     }
   }
   
-  @js.native
   trait VpcEndpointServiceAllowedPrincipleState extends StObject {
     
     /**
       * The ARN of the principal to allow permissions.
       */
-    val principalArn: js.UndefOr[Input[String]] = js.native
+    val principalArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The ID of the VPC endpoint service to allow permission.
       */
-    val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.native
+    val vpcEndpointServiceId: js.UndefOr[Input[String]] = js.undefined
   }
   object VpcEndpointServiceAllowedPrincipleState {
     

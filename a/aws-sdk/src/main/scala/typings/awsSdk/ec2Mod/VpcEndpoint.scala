@@ -2,96 +2,94 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcEndpoint extends StObject {
   
   /**
     * The date and time that the VPC endpoint was created.
     */
-  var CreationTimestamp: js.UndefOr[MillisecondDateTime] = js.native
+  var CreationTimestamp: js.UndefOr[MillisecondDateTime] = js.undefined
   
   /**
     * (Interface endpoint) The DNS entries for the endpoint.
     */
-  var DnsEntries: js.UndefOr[DnsEntrySet] = js.native
+  var DnsEntries: js.UndefOr[DnsEntrySet] = js.undefined
   
   /**
     * (Interface endpoint) Information about the security groups that are associated with the network interface.
     */
-  var Groups: js.UndefOr[GroupIdentifierSet] = js.native
+  var Groups: js.UndefOr[GroupIdentifierSet] = js.undefined
   
   /**
     * The last error that occurred for VPC endpoint.
     */
-  var LastError: js.UndefOr[typings.awsSdk.ec2Mod.LastError] = js.native
+  var LastError: js.UndefOr[typings.awsSdk.ec2Mod.LastError] = js.undefined
   
   /**
     * (Interface endpoint) One or more network interfaces for the endpoint.
     */
-  var NetworkInterfaceIds: js.UndefOr[ValueStringList] = js.native
+  var NetworkInterfaceIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The ID of the AWS account that owns the VPC endpoint.
     */
-  var OwnerId: js.UndefOr[String] = js.native
+  var OwnerId: js.UndefOr[String] = js.undefined
   
   /**
     * The policy document associated with the endpoint, if applicable.
     */
-  var PolicyDocument: js.UndefOr[String] = js.native
+  var PolicyDocument: js.UndefOr[String] = js.undefined
   
   /**
     * (Interface endpoint) Indicates whether the VPC is associated with a private hosted zone.
     */
-  var PrivateDnsEnabled: js.UndefOr[Boolean] = js.native
+  var PrivateDnsEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the VPC endpoint is being managed by its service.
     */
-  var RequesterManaged: js.UndefOr[Boolean] = js.native
+  var RequesterManaged: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Gateway endpoint) One or more route tables associated with the endpoint.
     */
-  var RouteTableIds: js.UndefOr[ValueStringList] = js.native
+  var RouteTableIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The name of the service to which the endpoint is associated.
     */
-  var ServiceName: js.UndefOr[String] = js.native
+  var ServiceName: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the VPC endpoint.
     */
-  var State: js.UndefOr[typings.awsSdk.ec2Mod.State] = js.native
+  var State: js.UndefOr[typings.awsSdk.ec2Mod.State] = js.undefined
   
   /**
     * (Interface endpoint) One or more subnets in which the endpoint is located.
     */
-  var SubnetIds: js.UndefOr[ValueStringList] = js.native
+  var SubnetIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * Any tags assigned to the VPC endpoint.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the VPC endpoint.
     */
-  var VpcEndpointId: js.UndefOr[String] = js.native
+  var VpcEndpointId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of endpoint.
     */
-  var VpcEndpointType: js.UndefOr[typings.awsSdk.ec2Mod.VpcEndpointType] = js.native
+  var VpcEndpointType: js.UndefOr[typings.awsSdk.ec2Mod.VpcEndpointType] = js.undefined
   
   /**
     * The ID of the VPC to which the endpoint is associated.
     */
-  var VpcId: js.UndefOr[String] = js.native
+  var VpcId: js.UndefOr[String] = js.undefined
 }
 object VpcEndpoint {
   

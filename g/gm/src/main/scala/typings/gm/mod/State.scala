@@ -14,7 +14,6 @@ import typings.node.streamMod.PassThrough
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -61,9 +60,9 @@ trait State extends StObject {
   def charcoal(factor: Double): State = js.native
   
   def chop(width: Double, height: Double): State = js.native
-  def chop(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): State = js.native
   def chop(width: Double, height: Double, x: Double): State = js.native
   def chop(width: Double, height: Double, x: Double, y: Double): State = js.native
+  def chop(width: Double, height: Double, x: Unit, y: Double): State = js.native
   
   def clip(): State = js.native
   
@@ -104,19 +103,13 @@ trait State extends StObject {
   def createDirectories(): State = js.native
   
   def crop(width: Double, height: Double): State = js.native
-  def crop(
-    width: Double,
-    height: Double,
-    x: js.UndefOr[scala.Nothing],
-    y: js.UndefOr[scala.Nothing],
-    percent: Boolean
-  ): State = js.native
-  def crop(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): State = js.native
-  def crop(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double, percent: Boolean): State = js.native
   def crop(width: Double, height: Double, x: Double): State = js.native
-  def crop(width: Double, height: Double, x: Double, y: js.UndefOr[scala.Nothing], percent: Boolean): State = js.native
   def crop(width: Double, height: Double, x: Double, y: Double): State = js.native
   def crop(width: Double, height: Double, x: Double, y: Double, percent: Boolean): State = js.native
+  def crop(width: Double, height: Double, x: Double, y: Unit, percent: Boolean): State = js.native
+  def crop(width: Double, height: Double, x: Unit, y: Double): State = js.native
+  def crop(width: Double, height: Double, x: Unit, y: Double, percent: Boolean): State = js.native
+  def crop(width: Double, height: Double, x: Unit, y: Unit, percent: Boolean): State = js.native
   
   def cycle(amount: Double): State = js.native
   
@@ -179,9 +172,9 @@ trait State extends StObject {
   ): State = js.native
   
   def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double): State = js.native
-  def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double, wc: js.UndefOr[scala.Nothing], hc: Double): State = js.native
   def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double, wc: Double): State = js.native
   def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double, wc: Double, hc: Double): State = js.native
+  def drawRectangle(x0: Double, y0: Double, x1: Double, y1: Double, wc: Unit, hc: Double): State = js.native
   
   def drawText(x: Double, y: Double, text: String): State = js.native
   def drawText(x: Double, y: Double, text: String, gravity: String): State = js.native
@@ -244,9 +237,9 @@ trait State extends StObject {
   
   def geometry(geometry: String): State = js.native
   def geometry(width: Double): State = js.native
-  def geometry(width: Double, height: js.UndefOr[scala.Nothing], option: ResizeOption): State = js.native
   def geometry(width: Double, height: Double): State = js.native
   def geometry(width: Double, height: Double, option: ResizeOption): State = js.native
+  def geometry(width: Double, height: Unit, option: ResizeOption): State = js.native
   
   def gravity(direction: String): State = js.native
   def gravity(direction: GravityDirection): State = js.native
@@ -316,9 +309,9 @@ trait State extends StObject {
   def mode(mode: OperationMode): State = js.native
   
   def modulate(b: Double): State = js.native
-  def modulate(b: Double, s: js.UndefOr[scala.Nothing], h: Double): State = js.native
   def modulate(b: Double, s: Double): State = js.native
   def modulate(b: Double, s: Double, h: Double): State = js.native
+  def modulate(b: Double, s: Unit, h: Double): State = js.native
   
   def monitor(): State = js.native
   
@@ -334,9 +327,9 @@ trait State extends StObject {
   def mosaic(): State = js.native
   
   def motionBlur(radius: Double): State = js.native
-  def motionBlur(radius: Double, sigma: js.UndefOr[scala.Nothing], angle: Double): State = js.native
   def motionBlur(radius: Double, sigma: Double): State = js.native
   def motionBlur(radius: Double, sigma: Double, angle: Double): State = js.native
+  def motionBlur(radius: Double, sigma: Unit, angle: Double): State = js.native
   
   def name(): State = js.native
   
@@ -409,9 +402,9 @@ trait State extends StObject {
   def redPrimary(x: Double, y: Double): State = js.native
   
   def region(width: Double, height: Double): State = js.native
-  def region(width: Double, height: Double, x: js.UndefOr[scala.Nothing], y: Double): State = js.native
   def region(width: Double, height: Double, x: Double): State = js.native
   def region(width: Double, height: Double, x: Double, y: Double): State = js.native
+  def region(width: Double, height: Double, x: Unit, y: Double): State = js.native
   
   def remote(): State = js.native
   
@@ -428,9 +421,9 @@ trait State extends StObject {
   def resample(horizontal: Double, vertical: Double): State = js.native
   
   def resize(width: Double): State = js.native
-  def resize(width: Double, height: js.UndefOr[scala.Nothing], option: ResizeOption): State = js.native
   def resize(width: Double, height: Double): State = js.native
   def resize(width: Double, height: Double, option: ResizeOption): State = js.native
+  def resize(width: Double, height: Unit, option: ResizeOption): State = js.native
   
   def roll(horizontal: Double, vertical: Double): State = js.native
   
@@ -547,8 +540,8 @@ trait State extends StObject {
   
   def title(title: String): State = js.native
   
-  def toBuffer(callback: js.Function2[/* err */ Error | Null, /* buffer */ Buffer, _]): PassThrough = js.native
-  def toBuffer(format: String, callback: js.Function2[/* err */ Error | Null, /* buffer */ Buffer, _]): PassThrough = js.native
+  def toBuffer(callback: js.Function2[/* err */ Error | Null, /* buffer */ Buffer, js.Any]): PassThrough = js.native
+  def toBuffer(format: String, callback: js.Function2[/* err */ Error | Null, /* buffer */ Buffer, js.Any]): PassThrough = js.native
   
   def transform(color: String): State = js.native
   
@@ -565,18 +558,13 @@ trait State extends StObject {
   def units(`type`: UnitType): State = js.native
   
   def unsharp(radius: Double): State = js.native
-  def unsharp(
-    radius: Double,
-    sigma: js.UndefOr[scala.Nothing],
-    amount: js.UndefOr[scala.Nothing],
-    threshold: Double
-  ): State = js.native
-  def unsharp(radius: Double, sigma: js.UndefOr[scala.Nothing], amount: Double): State = js.native
-  def unsharp(radius: Double, sigma: js.UndefOr[scala.Nothing], amount: Double, threshold: Double): State = js.native
   def unsharp(radius: Double, sigma: Double): State = js.native
-  def unsharp(radius: Double, sigma: Double, amount: js.UndefOr[scala.Nothing], threshold: Double): State = js.native
   def unsharp(radius: Double, sigma: Double, amount: Double): State = js.native
   def unsharp(radius: Double, sigma: Double, amount: Double, threshold: Double): State = js.native
+  def unsharp(radius: Double, sigma: Double, amount: Unit, threshold: Double): State = js.native
+  def unsharp(radius: Double, sigma: Unit, amount: Double): State = js.native
+  def unsharp(radius: Double, sigma: Unit, amount: Double, threshold: Double): State = js.native
+  def unsharp(radius: Double, sigma: Unit, amount: Unit, threshold: Double): State = js.native
   
   def update(seconds: Double): State = js.native
   

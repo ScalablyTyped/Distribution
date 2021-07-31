@@ -3,15 +3,13 @@ package typings.hellosignEmbedded.mod.HelloSign
 import typings.hellosignEmbedded.anon.CcEmailAddresses
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendEventPayload extends StObject {
   
-  var signatureRequestId: String = js.native
+  var signatureRequestId: String
   
-  var signatureRequestInfo: CcEmailAddresses = js.native
+  var signatureRequestInfo: CcEmailAddresses
 }
 object SendEventPayload {
   

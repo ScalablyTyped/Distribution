@@ -3,16 +3,14 @@ package typings.hashJs
 import typings.hashJs.hashJsStrings.hex
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Utils extends StObject {
   
   @JSName("toArray")
-  def toArray_hex(msg: js.Any, enc: hex): js.Array[Double] = js.native
+  def toArray_hex(msg: js.Any, enc: hex): js.Array[Double]
   
-  def toHex(msg: js.Any): String = js.native
+  def toHex(msg: js.Any): String
 }
 object Utils {
   

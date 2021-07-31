@@ -2,29 +2,27 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON response template to list domain aliases in Directory API.
   */
-@js.native
 trait SchemaDomainAliases extends StObject {
   
   /**
     * List of domain alias objects.
     */
-  var domainAliases: js.UndefOr[js.Array[SchemaDomainAlias]] = js.native
+  var domainAliases: js.UndefOr[js.Array[SchemaDomainAlias]] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object SchemaDomainAliases {
   

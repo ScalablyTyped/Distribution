@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the MVCxClientQueryBuilder.SaveCommandExecuted event.
   */
-@js.native
-trait MVCxClientQueryBuilderSaveCommandExecutedEventArgs extends ASPxClientEventArgs {
+trait MVCxClientQueryBuilderSaveCommandExecutedEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies the Save command execution result.
     */
-  var Result: String = js.native
+  var Result: String
 }
 object MVCxClientQueryBuilderSaveCommandExecutedEventArgs {
   

@@ -3,7 +3,6 @@ package typings.playcanvas.global.pc
 import typings.playcanvas.pc.ResourceHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,6 +11,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @JSGlobal("pc.AudioHandler")
 @js.native
-class AudioHandler protected () extends ResourceHandler {
+class AudioHandler protected ()
+  extends StObject
+     with ResourceHandler {
   def this(manager: typings.playcanvas.pc.SoundManager) = this()
 }

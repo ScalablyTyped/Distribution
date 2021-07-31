@@ -2,15 +2,13 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DPlayerAPIBackend extends StObject {
   
-  def read(endpoint: js.Any, callback: js.Function0[Unit]): Unit = js.native
+  def read(endpoint: js.Any, callback: js.Function0[Unit]): Unit
   
-  def send(endpoint: js.Any, danmakuData: DPlayerDanmakuItem, callback: js.Function0[Unit]): Unit = js.native
+  def send(endpoint: js.Any, danmakuData: DPlayerDanmakuItem, callback: js.Function0[Unit]): Unit
 }
 object DPlayerAPIBackend {
   

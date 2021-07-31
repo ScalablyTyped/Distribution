@@ -3,28 +3,28 @@ package typings.wordpressComponents
 import typings.react.mod.ComponentType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withFocusReturnMod {
   
-  // prettier-ignore
-  @JSImport("@wordpress/components/higher-order/with-focus-return", JSImport.Default)
+  @JSImport("@wordpress/components/higher-order/with-focus-return", JSImport.Namespace)
   @js.native
-  def default(options: WFROptions): js.Function1[/* wrapped */ ComponentType[_], ComponentType[_]] = js.native
+  val ^ : js.Any = js.native
+  
   // prettier-ignore
-  @JSImport("@wordpress/components/higher-order/with-focus-return", JSImport.Default)
-  @js.native
-  def default[T /* <: ComponentType[_] */](wrapped: T): ComponentType[_] = js.native
+  @scala.inline
+  def default(options: WFROptions): js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* wrapped */ ComponentType[js.Any], ComponentType[js.Any]]]
+  // prettier-ignore
+  @scala.inline
+  def default[T /* <: ComponentType[js.Any] */](wrapped: T): ComponentType[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(wrapped.asInstanceOf[js.Any]).asInstanceOf[ComponentType[js.Any]]
   
   @JSImport("@wordpress/components/higher-order/with-focus-return", "Provider")
   @js.native
   val Provider: ComponentType[js.Object] = js.native
   
-  @js.native
   trait WFROptions extends StObject {
     
-    var onFocusReturn: js.UndefOr[js.Function0[Boolean | Unit]] = js.native
+    var onFocusReturn: js.UndefOr[js.Function0[Boolean | Unit]] = js.undefined
   }
   object WFROptions {
     

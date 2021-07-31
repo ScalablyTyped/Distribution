@@ -2,36 +2,34 @@ package typings.pulumiAws.outputMod.s3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketNotificationTopic extends StObject {
   
   /**
     * Specifies [event](http://docs.aws.amazon.com/AmazonS3/latest/dev/NotificationHowTo.html#notification-how-to-event-types-and-destinations) for which to send notifications.
     */
-  var events: js.Array[String] = js.native
+  var events: js.Array[String]
   
   /**
     * Specifies object key name prefix.
     */
-  var filterPrefix: js.UndefOr[String] = js.native
+  var filterPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies object key name suffix.
     */
-  var filterSuffix: js.UndefOr[String] = js.native
+  var filterSuffix: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies unique identifier for each of the notification configurations.
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Specifies Amazon SNS topic ARN.
     */
-  var topicArn: String = js.native
+  var topicArn: String
 }
 object BucketNotificationTopic {
   

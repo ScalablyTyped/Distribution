@@ -2,24 +2,22 @@ package typings.activexInfopath.InfoPath
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MailEnvelopeObject extends StObject {
   
-  var BCC: String = js.native
+  var BCC: String
   
-  var CC: String = js.native
+  var CC: String
   
   @JSName("InfoPath.MailEnvelopeObject_typekey")
-  var InfoPathDotMailEnvelopeObject_typekey: MailEnvelopeObject = js.native
+  var InfoPathDotMailEnvelopeObject_typekey: MailEnvelopeObject
   
-  var Subject: String = js.native
+  var Subject: String
   
-  var To: String = js.native
+  var To: String
   
-  var Visible: Boolean = js.native
+  var Visible: Boolean
 }
 object MailEnvelopeObject {
   

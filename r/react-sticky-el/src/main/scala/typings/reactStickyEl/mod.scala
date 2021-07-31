@@ -9,7 +9,6 @@ import typings.reactStickyEl.reactStickyElStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,8 +20,9 @@ object mod {
   
   object Sticky {
     
-    @js.native
-    trait Props[HolderProps /* <: js.Object */] extends HTMLAttributes[HTMLElement] {
+    trait Props[HolderProps /* <: js.Object */]
+      extends StObject
+         with HTMLAttributes[HTMLElement] {
       
       /**
         * Sticky state will be triggered when the bottom of the element is
@@ -30,7 +30,7 @@ object mod {
         *
         * Defaults to `0`.
         */
-      var bottomOffset: js.UndefOr[Double] = js.native
+      var bottomOffset: js.UndefOr[Double] = js.undefined
       
       /**
         * Selector to define a `boundaryElement`. It should be one of the parents
@@ -38,14 +38,14 @@ object mod {
         *
         * Defaults to `null`.
         */
-      var boundaryElement: js.UndefOr[String] = js.native
+      var boundaryElement: js.UndefOr[String] = js.undefined
       
       /**
         * Allows you to disable sticking by setting this prop to `true`.
         *
         * Defaults to `false`.
         */
-      var disabled: js.UndefOr[Boolean] = js.native
+      var disabled: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If `false` then boundaryEl should have position: relative. In this case
@@ -53,7 +53,7 @@ object mod {
         *
         * Defaults to `true`.
         */
-      var hideOnBoundaryHit: js.UndefOr[Boolean] = js.native
+      var hideOnBoundaryHit: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Anything that can be used by React.createElement. Used for holder
@@ -64,26 +64,26 @@ object mod {
         */
       var holderCmp: js.UndefOr[
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
-          ] = js.native
+          ] = js.undefined
       
       /**
         * These props will be used to create `holderElement`.
         */
-      var holderProps: js.UndefOr[HolderProps] = js.native
+      var holderProps: js.UndefOr[HolderProps] = js.undefined
       
       /**
         * 'top' or 'bottom' - to which side element should stick.
         *
         * Defaults to 'top'.
         */
-      var mode: js.UndefOr[top | bottom] = js.native
+      var mode: js.UndefOr[top | bottom] = js.undefined
       
       /**
         * This handler will be called right before changing `fixed` state.
         *
         * Defaults to `null`.
         */
-      var onFixedToggle: js.UndefOr[js.Function1[/* fixed */ Boolean, Unit]] = js.native
+      var onFixedToggle: js.UndefOr[js.Function1[/* fixed */ Boolean, Unit]] = js.undefined
       
       /**
         * If your DOM structure is mutating (you are adding/removing elements), it
@@ -93,7 +93,7 @@ object mod {
         *
         * Defaults to `0`.
         */
-      var positionRecheckInterval: js.UndefOr[Double] = js.native
+      var positionRecheckInterval: js.UndefOr[Double] = js.undefined
       
       /**
         * Selector to define a `scrollElement`. All position checks will be
@@ -106,7 +106,7 @@ object mod {
         *
         * Defaults to `window`.
         */
-      var scrollElement: js.UndefOr[String] = js.native
+      var scrollElement: js.UndefOr[String] = js.undefined
       
       /**
         * You can also specify a class name to be applied when the element becomes
@@ -114,7 +114,7 @@ object mod {
         *
         * Defaults to 'sticky'.
         */
-      var stickyClassName: js.UndefOr[String] = js.native
+      var stickyClassName: js.UndefOr[String] = js.undefined
       
       /**
         * In the event that you wish to override the style rules applied, simply
@@ -123,7 +123,7 @@ object mod {
         * Note: You likely want to avoid messing with the following attributes in
         * your stickyStyle: `left`, `top`, and `width`.
         */
-      var stickyStyle: js.UndefOr[CSSProperties] = js.native
+      var stickyStyle: js.UndefOr[CSSProperties] = js.undefined
       
       /**
         * Sticky state will be triggered when the top of the element is `topOffset`
@@ -133,7 +133,7 @@ object mod {
         *
         * Defaults to `0`.
         */
-      var topOffset: js.UndefOr[Double] = js.native
+      var topOffset: js.UndefOr[Double] = js.undefined
       
       /**
         * Anything that can be used by `React.createElement`. Used for `wrapper
@@ -144,7 +144,7 @@ object mod {
         */
       var wrapperCmp: js.UndefOr[
             /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 118 */ js.Any
-          ] = js.native
+          ] = js.undefined
     }
     object Props {
       
@@ -155,7 +155,7 @@ object mod {
       }
       
       @scala.inline
-      implicit class PropsMutableBuilder[Self <: Props[_], HolderProps /* <: js.Object */] (val x: Self with Props[HolderProps]) extends AnyVal {
+      implicit class PropsMutableBuilder[Self <: Props[?], HolderProps /* <: js.Object */] (val x: Self & Props[HolderProps]) extends AnyVal {
         
         @scala.inline
         def setBottomOffset(value: Double): Self = StObject.set(x, "bottomOffset", value.asInstanceOf[js.Any])

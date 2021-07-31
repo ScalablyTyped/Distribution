@@ -6,7 +6,6 @@ import typings.winjs.WinJS.Binding.List
 import typings.winjs.WinJS.Binding.Template
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -82,13 +81,13 @@ trait NavBarContainer extends StObject {
     * Occurs when a child NavBarCommand object's click event fires.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.index, detail.navbarcommand, detail.data.
     **/
-  def oninvoked(eventInfo: CustomEvent[_]): Unit = js.native
+  def oninvoked(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Occurs when the split button of a child NavBarCommand is opened or closed. A split button is toggled when the user navigates to another page or opens another split button.
     * @param eventInfo An object that contains information about the event. The detail property of this object contains the following sub-properties: detail.opened, detail.index, detail.navbarcommand, detail.data.
     **/
-  def onsplittoggle(eventInfo: CustomEvent[_]): Unit = js.native
+  def onsplittoggle(eventInfo: CustomEvent[js.Any]): Unit = js.native
   
   /**
     * Removes an event handler that the addEventListener method registered.

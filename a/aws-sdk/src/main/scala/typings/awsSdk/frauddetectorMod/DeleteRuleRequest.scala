@@ -2,13 +2,11 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteRuleRequest extends StObject {
   
-  var rule: Rule = js.native
+  var rule: Rule
 }
 object DeleteRuleRequest {
   

@@ -4,7 +4,6 @@ import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.asc
 import typings.coinbaseCommerceNode.coinbaseCommerceNodeStrings.desc
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,32 +12,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @link https://commerce.coinbase.com/docs/api/#pagination
   */
 /* Inlined parent std.Pick<coinbase-commerce-node.coinbase-commerce-node.PaginationRequest, 'order' | 'starting_after' | 'ending_before' | 'limit'> */
-@js.native
 trait Pagination extends StObject {
   
-  var cursor_range: js.Tuple2[String, String] = js.native
+  var cursor_range: js.Tuple2[String, String]
   
-  var ending_before: js.UndefOr[String | Null] = js.native
+  var ending_before: js.UndefOr[String | Null] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var next_uri: Null | String = js.native
+  var next_uri: Null | String
   
-  var order: js.UndefOr[asc | desc] = js.native
+  var order: js.UndefOr[asc | desc] = js.undefined
   
-  var previous_uri: Null | String = js.native
+  var previous_uri: Null | String
   
-  var starting_after: js.UndefOr[String | Null] = js.native
+  var starting_after: js.UndefOr[String | Null] = js.undefined
   
-  var total: Double = js.native
+  var total: Double
   
-  var yielded: Double = js.native
+  var yielded: Double
 }
 object Pagination {
   
   @scala.inline
   def apply(cursor_range: js.Tuple2[String, String], total: Double, yielded: Double): Pagination = {
-    val __obj = js.Dynamic.literal(cursor_range = cursor_range.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], yielded = yielded.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(cursor_range = cursor_range.asInstanceOf[js.Any], total = total.asInstanceOf[js.Any], yielded = yielded.asInstanceOf[js.Any], next_uri = null, previous_uri = null)
     __obj.asInstanceOf[Pagination]
   }
   

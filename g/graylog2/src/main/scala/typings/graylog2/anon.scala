@@ -5,7 +5,6 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -14,89 +13,44 @@ object anon {
   trait FnCall extends StObject {
     
     def apply(message: String): Unit = js.native
-    def apply(message: String, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
-    def apply(
-      message: String,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def apply(
-      message: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def apply(message: String, additionalFields: Record[String, _]): Unit = js.native
-    def apply(
-      message: String,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
+    def apply(message: String, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def apply(message: String, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def apply(message: String, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def apply(message: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def apply(message: String, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
     def apply(message: String, fullMessage: String): Unit = js.native
-    def apply(
-      message: String,
-      fullMessage: String,
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def apply(message: String, fullMessage: String, additionalFields: Record[String, _]): Unit = js.native
-    def apply(message: String, fullMessage: String, additionalFields: Record[String, _], timestamp: Double): Unit = js.native
+    def apply(message: String, fullMessage: String, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def apply(message: String, fullMessage: String, additionalFields: Record[String, js.Any]): Unit = js.native
+    def apply(message: String, fullMessage: String, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
     def apply(message: Error): Unit = js.native
-    def apply(message: Error, _underscore: js.UndefOr[scala.Nothing], additionalFields: Record[String, _]): Unit = js.native
+    def apply(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
+    def apply(message: Error, _underscore: Unit, additionalFields: Record[String, js.Any], timestamp: Double): Unit = js.native
+    def apply(message: Error, additionalFields: Unit, _underscore: Unit, timestamp: Double): Unit = js.native
+    def apply(message: Error, additionalFields: Record[String, js.Any]): Unit = js.native
+    def apply(message: Error, additionalFields: Record[String, js.Any], _underscore: Unit, timestamp: Double): Unit = js.native
+    def apply(message: Record[String, js.Any]): Unit = js.native
+    def apply(message: Record[String, js.Any], _underscore: Unit, additionalFields: Unit, timestamp: Double): Unit = js.native
+    def apply(message: Record[String, js.Any], _underscore: Unit, additionalFields: Record[String, js.Any]): Unit = js.native
     def apply(
-      message: Error,
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
-      timestamp: Double
-    ): Unit = js.native
-    def apply(
-      message: Error,
-      additionalFields: js.UndefOr[scala.Nothing],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def apply(message: Error, additionalFields: Record[String, _]): Unit = js.native
-    def apply(
-      message: Error,
-      additionalFields: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def apply(message: Record[String, _]): Unit = js.native
-    def apply(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: js.UndefOr[scala.Nothing],
-      timestamp: Double
-    ): Unit = js.native
-    def apply(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _]
-    ): Unit = js.native
-    def apply(
-      message: Record[String, _],
-      _underscore: js.UndefOr[scala.Nothing],
-      additionalFields: Record[String, _],
+      message: Record[String, js.Any],
+      _underscore: Unit,
+      additionalFields: Record[String, js.Any],
       timestamp: Double
     ): Unit = js.native
   }
   
   /* Inlined std.Readonly<graylog2.graylog2.GraylogConfig> */
-  @js.native
   trait ReadonlyGraylogConfig extends StObject {
     
-    val bufferSize: js.UndefOr[Double] = js.native
+    val bufferSize: js.UndefOr[Double] = js.undefined
     
-    val deflate: js.UndefOr[GraylogDeflate] = js.native
+    val deflate: js.UndefOr[GraylogDeflate] = js.undefined
     
-    val facility: js.UndefOr[String] = js.native
+    val facility: js.UndefOr[String] = js.undefined
     
-    val hostname: js.UndefOr[String] = js.native
+    val hostname: js.UndefOr[String] = js.undefined
     
-    val servers: js.Array[Readonlyhoststringportnum] = js.native
+    val servers: js.Array[Readonlyhoststringportnum]
   }
   object ReadonlyGraylogConfig {
     
@@ -142,12 +96,11 @@ object anon {
   }
   
   /* Inlined std.Readonly<{  host :string,   port :number}> */
-  @js.native
   trait Readonlyhoststringportnum extends StObject {
     
-    val host: String = js.native
+    val host: String
     
-    val port: Double = js.native
+    val port: Double
   }
   object Readonlyhoststringportnum {
     

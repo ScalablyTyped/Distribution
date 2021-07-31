@@ -10,9 +10,9 @@ Template rendering middleware for koa
 | ------------------ | :-------------: |
 | Full name          | koa-views |
 | Keywords           | koa, render, views, app-wide, templating, templates |
-| # releases         | 6 |
-| # dependents       | 238 |
-| # downloads        | 764068 |
+| # releases         | 8 |
+| # dependents       | 249 |
+| # downloads        | 913026 |
 | # stars            | 13 |
 
 ## Links

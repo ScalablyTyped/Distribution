@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataSourceColumn extends StObject {
   
   /** The formula of the calculated column. */
-  var formula: js.UndefOr[String] = js.native
+  var formula: js.UndefOr[String] = js.undefined
   
   /** The column reference. */
-  var reference: js.UndefOr[DataSourceColumnReference] = js.native
+  var reference: js.UndefOr[DataSourceColumnReference] = js.undefined
 }
 object DataSourceColumn {
   

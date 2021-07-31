@@ -3,7 +3,6 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rpcMessagePortMod {
@@ -14,24 +13,23 @@ object rpcMessagePortMod {
   
   type RpcMessageListener = RpcMessageDispatch
   
-  @js.native
   trait RpcMessagePort extends StObject {
     
-    def addErrorListener(listener: RpcErrorListener): Unit = js.native
+    def addErrorListener(listener: RpcErrorListener): Unit
     
-    def addMessageListener(listener: RpcMessageListener): Unit = js.native
+    def addMessageListener(listener: RpcMessageListener): Unit
     
-    def close(): js.Promise[Unit] = js.native
+    def close(): js.Promise[Unit]
     
-    def dispatchMessage[TMessage](message: TMessage): js.Promise[Unit] = js.native
+    def dispatchMessage[TMessage](message: TMessage): js.Promise[Unit]
     
-    def isOpen(): Boolean = js.native
+    def isOpen(): Boolean
     
-    def open(): js.Promise[Unit] = js.native
+    def open(): js.Promise[Unit]
     
-    def removeErrorListener(listener: RpcErrorListener): Unit = js.native
+    def removeErrorListener(listener: RpcErrorListener): Unit
     
-    def removeMessageListener(listener: RpcMessageListener): Unit = js.native
+    def removeMessageListener(listener: RpcMessageListener): Unit
   }
   object RpcMessagePort {
     

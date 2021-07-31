@@ -7,15 +7,13 @@ import typings.opentok.opentokStrings.pip
 import typings.opentok.opentokStrings.verticalPresentation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BroadcastLayoutOptions extends StObject {
   
-  var stylesheet: js.UndefOr[String] = js.native
+  var stylesheet: js.UndefOr[String] = js.undefined
   
-  var `type`: bestFit | pip | verticalPresentation | horizontalPresentation | custom = js.native
+  var `type`: bestFit | pip | verticalPresentation | horizontalPresentation | custom
 }
 object BroadcastLayoutOptions {
   

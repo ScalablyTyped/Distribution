@@ -9,42 +9,42 @@ import typings.activexLibreoffice.com_.sun.star.util.XRefreshListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * specifies service of user defined indexes within a document.
   * @see com.sun.star.text.BaseIndex
   */
-@js.native
-trait UserDefinedIndex extends BaseIndex {
+trait UserDefinedIndex
+  extends StObject
+     with BaseIndex {
   
   /** determines if embedded objects are included in the index. */
-  var CreateFromEmbeddedObjects: Boolean = js.native
+  var CreateFromEmbeddedObjects: Boolean
   
   /** determines if graphic objects are included in the index. */
-  var CreateFromGraphicObjects: Boolean = js.native
+  var CreateFromGraphicObjects: Boolean
   
   /** determines if the document index marks are included in this index. */
-  var CreateFromMarks: Boolean = js.native
+  var CreateFromMarks: Boolean
   
   /** determines if tables are included in the index. */
-  var CreateFromTables: Boolean = js.native
+  var CreateFromTables: Boolean
   
   /** determines if text frames are included in the index. */
-  var CreateFromTextFrames: Boolean = js.native
+  var CreateFromTextFrames: Boolean
   
   /** contains all index marks that are related to this index. */
-  var DocumentIndexMarks: SafeArray[XDocumentIndexMark] = js.native
+  var DocumentIndexMarks: SafeArray[XDocumentIndexMark]
   
   /**
     * contains the interface to access the paragraph style names that are included in this index.
     * @see DocumentIndexParagraphStyles
     */
-  var LevelParagraphStyles: XIndexReplace = js.native
+  var LevelParagraphStyles: XIndexReplace
   
   /** determines if the outline level of the location of the indexed object is used as index level of the index entry. */
-  var UseLevelFromSource: Boolean = js.native
+  var UseLevelFromSource: Boolean
 }
 object UserDefinedIndex {
   

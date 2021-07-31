@@ -7,18 +7,18 @@ import typings.reactNavigationRouters.typesMod.Route
 import typings.std.Extract
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined @react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.PartialState<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.NavigationState<@react-navigation/routers.@react-navigation/routers/lib/typescript/src/types.ParamListBase>> */
-@js.native
-trait PartialStateNavigationSta extends _ResetState {
+trait PartialStateNavigationSta
+  extends StObject
+     with _ResetState {
   
-  var history: js.UndefOr[js.Array[_]] = js.native
+  var history: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var index: js.UndefOr[Double] = js.native
+  var index: js.UndefOr[Double] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   var routeNames: js.UndefOr[
     js.Array[
@@ -27,7 +27,7 @@ trait PartialStateNavigationSta extends _ResetState {
         String
       ]
     ]
-  ] = js.native
+  ] = js.undefined
   
   val routes: js.Array[
     PartialRoute[
@@ -36,11 +36,11 @@ trait PartialStateNavigationSta extends _ResetState {
         js.UndefOr[js.Object]
       ]
     ]
-  ] = js.native
+  ]
   
-  val stale: js.UndefOr[`true`] = js.native
+  val stale: js.UndefOr[`true`] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object PartialStateNavigationSta {
   
@@ -63,7 +63,7 @@ object PartialStateNavigationSta {
   implicit class PartialStateNavigationStaMutableBuilder[Self <: PartialStateNavigationSta] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setHistory(value: js.Array[_]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
+    def setHistory(value: js.Array[js.Any]): Self = StObject.set(x, "history", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setHistoryUndefined: Self = StObject.set(x, "history", js.undefined)

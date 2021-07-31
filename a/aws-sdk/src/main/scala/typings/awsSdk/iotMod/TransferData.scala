@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferData extends StObject {
   
   /**
     * The date the transfer was accepted.
     */
-  var acceptDate: js.UndefOr[DateType] = js.native
+  var acceptDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The date the transfer was rejected.
     */
-  var rejectDate: js.UndefOr[DateType] = js.native
+  var rejectDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The reason why the transfer was rejected.
     */
-  var rejectReason: js.UndefOr[Message] = js.native
+  var rejectReason: js.UndefOr[Message] = js.undefined
   
   /**
     * The date the transfer took place.
     */
-  var transferDate: js.UndefOr[DateType] = js.native
+  var transferDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * The transfer message.
     */
-  var transferMessage: js.UndefOr[Message] = js.native
+  var transferMessage: js.UndefOr[Message] = js.undefined
 }
 object TransferData {
   

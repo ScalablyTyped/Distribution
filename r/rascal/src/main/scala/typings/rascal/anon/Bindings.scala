@@ -2,23 +2,21 @@ package typings.rascal.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bindings extends StObject {
   
-  var bindings: BindingKey = js.native
+  var bindings: BindingKey
   
-  var connection: Hostname = js.native
+  var connection: Hostname
   
-  var connectionStrategy: String = js.native
+  var connectionStrategy: String
   
-  var exchanges: Assert = js.native
+  var exchanges: Assert
   
-  var publicationChannelPools: RegularPool = js.native
+  var publicationChannelPools: RegularPool
   
-  var queues: AssertBoolean = js.native
+  var queues: AssertBoolean
 }
 object Bindings {
   

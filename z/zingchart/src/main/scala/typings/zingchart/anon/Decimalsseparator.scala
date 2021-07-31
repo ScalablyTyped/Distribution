@@ -2,289 +2,287 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Decimalsseparator extends StObject {
   
   /**
     * Sets the text's transparency of the scale-y (The vertical scale line on the chart). 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the rotation angle of the object/shape. -45 | 115 | ...
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * true | false | 1 | 0
     */
-  var `auto-fit`: js.UndefOr[Boolean] = js.native
+  var `auto-fit`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the number of decimals which will be displayed as scale-y values. Note this attribute does round the values to fit within the
     *  define number of decimals. 5 | 10 | ...
     */
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the separator to be used in place of the default decimal point. Any string or character can be used to replace the decimal. '
     * .' | ',' | ...
     */
-  var `decimals-separator`: js.UndefOr[String] = js.native
+  var `decimals-separator`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the scale values will be displayed in scientific notation. Particularly useful when dealing with large numbers. true
     * | false | 1 | 0
     */
-  var exponent: js.UndefOr[Boolean] = js.native
+  var exponent: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the number of decimals that will be displayed when using scientific notation. Use with the 'exponent' attribute. 5 | 10 | ...
     */
-  var `exponent-decimals`: js.UndefOr[Double] = js.native
+  var `exponent-decimals`: js.UndefOr[Double] = js.undefined
   
   /**
     * To format the appearance of the scale values. Use with the %scale-value (%v) token. '%v%' | '$%v' | '%v' | ...
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
-  var guide: js.UndefOr[Linesegmentsize] = js.native
+  var guide: js.UndefOr[Linesegmentsize] = js.undefined
   
-  var item: js.UndefOr[Borderradiustopleft] = js.native
+  var item: js.UndefOr[Borderradiustopleft] = js.undefined
   
   /**
     * To force all of the scale items to display. It is generally used with the 'max-items' attribute. true | false | 1 | 0
     */
-  var `items-overlap`: js.UndefOr[Boolean] = js.native
+  var `items-overlap`: js.UndefOr[Boolean] = js.undefined
   
-  var label: js.UndefOr[Borderradiustopleft] = js.native
+  var label: js.UndefOr[Borderradiustopleft] = js.undefined
   
   /**
     * Allows you to set custom labels that correspond to each of the ticks on a scale. If there are more ticks than labels, the default
     * values will be used for the remaining labels. ['Jan', 'Feb', 'Mar', ...] | ...
     */
-  var labels: js.UndefOr[js.Any] = js.native
+  var labels: js.UndefOr[js.Any] = js.undefined
   
   /**
     * ''horizontal' | 'h' | 'vertical' | 'v' | 'row x col' | 'x col' | 'row x' | 'float''
     */
-  var layout: js.UndefOr[String] = js.native
+  var layout: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the color of the axis line. 'none' | 'transparent' | '#f00' | '#f00 #00f' | 'red yellow' | 'rgb(100, 15, 15)' | ...
     */
-  var `line-color`: js.UndefOr[String] = js.native
+  var `line-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Can be used to create custom dashed or dotted lines when used with line-segment-size. This will control the size of the gaps betwe
     * en each line segment. 4 | '6px' | ...
     */
-  var `line-gap-size`: js.UndefOr[js.Any] = js.native
+  var `line-gap-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Can be used to create custom dashed or dotted lines when used with line-gap-size. This will control the size of the visible segmen
     * t of line. 4 | '6px' | ...
     */
-  var `line-segment-size`: js.UndefOr[js.Any] = js.native
+  var `line-segment-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the line style of the axis line. 'solid' | 'dotted' | 'dashed' | 'dashdot'
     */
-  var `line-style`: js.UndefOr[String] = js.native
+  var `line-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the width of the axis line. 4 | '6px' | ...
     */
-  var `line-width`: js.UndefOr[js.Any] = js.native
+  var `line-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Logarithmic Scales only: To set the base value, which defaults to Math.E (Euler's number, the base of natural logarithms). Math.E
     * | 10 | 2 | ...
     */
-  var `log-base`: js.UndefOr[js.Any] = js.native
+  var `log-base`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's margin/s. 10 | '5px' | '10 20' | '5px 10px 15px 20px' | ...
     */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom margin. 4 | '6px' | ...
     */
-  var `margin-bottom`: js.UndefOr[js.Any] = js.native
+  var `margin-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left margin. 4 | '6px' | ...
     */
-  var `margin-left`: js.UndefOr[js.Any] = js.native
+  var `margin-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right margin. 4 | '6px' | ...
     */
-  var `margin-right`: js.UndefOr[js.Any] = js.native
+  var `margin-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. 4 | '6px' | ...
     */
-  var `margin-top`: js.UndefOr[js.Any] = js.native
+  var `margin-top`: js.UndefOr[js.Any] = js.undefined
   
-  var markers: js.UndefOr[js.Array[Labelalignment]] = js.native
+  var markers: js.UndefOr[js.Array[Labelalignment]] = js.undefined
   
   /**
     * Sets the max number of values displaying along the bottom horizontal line. 5 | 10 | ...
     */
-  var `max-items`: js.UndefOr[Double] = js.native
+  var `max-items`: js.UndefOr[Double] = js.undefined
   
   /**
     * To set the maximum number of scale items displayed. It is generally used with the 'items-overlap'attribute. 5 | 10 | ...
     */
-  var `max-labels`: js.UndefOr[Double] = js.native
+  var `max-labels`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the maximum number of ticks to display on the y axis. 5 | 10 | ...
     */
-  var `max-ticks`: js.UndefOr[Double] = js.native
+  var `max-ticks`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the maximum value for the y axis. 'max-value': is one of the multiple ways you can set y axis values. Commonly used with time
     *  series data. Also see 'mix-value': and 'step': 4 | '6px' | ...
     */
-  var `max-value`: js.UndefOr[Double] = js.native
+  var `max-value`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the minimum value for the y axis. 'min-value': is one of the multiple ways you can set y axis values. Commonly used with time
     *  series data. Also see 'max-value': and 'step': 'auto' | 4 | '6px' | ...
     */
-  var `min-value`: js.UndefOr[Double] = js.native
+  var `min-value`: js.UndefOr[Double] = js.undefined
   
-  var `minor-guide`: js.UndefOr[LinecolorLinegapsize] = js.native
+  var `minor-guide`: js.UndefOr[LinecolorLinegapsize] = js.undefined
   
-  var `minor-tick`: js.UndefOr[LinegapsizeLinesegmentsize] = js.native
+  var `minor-tick`: js.UndefOr[LinegapsizeLinesegmentsize] = js.undefined
   
   /**
     * Sets the number of minor tick marks displayed between the major tick marks. Note that this attribute is required to style the mino
     * r tick marks and/or guides. 5 | 10 | ...
     */
-  var `minor-ticks`: js.UndefOr[Double] = js.native
+  var `minor-ticks`: js.UndefOr[Double] = js.undefined
   
   /**
     * Setting 'mirrored': true will flip/mirror the y axis values. 'scale-y': {} values will read top to bottom. true | false | 1 | 0
     */
-  var mirrored: js.UndefOr[Boolean] = js.native
+  var mirrored: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Setting 'multiplier': true will abbreviate long numbers as small digits with a short unit indicator such as K, M, B true | false |
     *  1 | 0
     */
-  var multiplier: js.UndefOr[Boolean] = js.native
+  var multiplier: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the negative symbol just outside of the formatted value. 'standard' | 'currency'
     */
-  var negation: js.UndefOr[String] = js.native
+  var negation: js.UndefOr[String] = js.undefined
   
   /**
     * Sets an offset on both sides of the plotted data. This will cause the data to appear as if it were 'squeezed' together. 4 | '6px'
     * | ...
     */
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an offset from the end of the plotted data. This will cause the data to appear as if it were 'squeezed' from the top side. 4
     * | '6px' | '5%' | 35%' | ...
     */
-  var `offset-end`: js.UndefOr[Double] = js.native
+  var `offset-end`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an offset at the start of the plotted data. This will cause the data to appear as if it were 'squeezed' from the bottom side.
     *  4 | '6px' | '5%' | 35%' | ...
     */
-  var `offset-start`: js.UndefOr[Double] = js.native
+  var `offset-start`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an x offset that will be applied to the scale-y object. 4 | '6px' | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a y offset that will be applied to the scale-y object. 4 | '6px' | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the placement of the scale object. 'default' | 'opposite'
     */
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
   /**
     * To change the scale type from linear (default) to logarithmic. 'lin' | 'log'
     */
-  var progression: js.UndefOr[String] = js.native
+  var progression: js.UndefOr[String] = js.undefined
   
   /**
     * Used on radial charts (pie, radar, gauge) to specify the starting angle of the nodes. -45 | 115 | ...
     */
-  var `ref-angle`: js.UndefOr[Double] = js.native
+  var `ref-angle`: js.UndefOr[Double] = js.undefined
   
-  var `ref-line`: js.UndefOr[LinecolorLinegapsize] = js.native
+  var `ref-line`: js.UndefOr[LinecolorLinegapsize] = js.undefined
   
   /**
     * To set the value the reference line is drawn at. 5 | 10 | ...
     */
-  var `ref-value`: js.UndefOr[Double] = js.native
+  var `ref-value`: js.UndefOr[Double] = js.undefined
   
-  var rules: js.UndefOr[js.Array[Rule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
   
   /**
     * Sets the scale of the y axis 5 | 10 | ...
     */
-  var `scale-factor`: js.UndefOr[Double] = js.native
+  var `scale-factor`: js.UndefOr[Double] = js.undefined
   
   /**
     * Setting to true will cause the values on the y axis to use an abbreviated notation with a short unit such as K,M,B, etc. true | fa
     * lse | 1 | 0
     */
-  var short: js.UndefOr[Boolean] = js.native
+  var short: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies which unit of measure to use when short is set to true. K | M | B | KB | MB | GB | TB | PB
     */
-  var `short-unit`: js.UndefOr[String] = js.native
+  var `short-unit`: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies which labels will be visible on the y axis. ['A', 'B'] | ...
     */
-  var `show-labels`: js.UndefOr[js.Any] = js.native
+  var `show-labels`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the size of the object/shape. 4 | '6px' | ...
     */
-  var size: js.UndefOr[js.Any] = js.native
+  var size: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Auto size-factor automatically scales a pie chart to allow all value-box objects to appear without clipping. 'auto'
     */
-  var `size-factor`: js.UndefOr[String] = js.native
+  var `size-factor`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the characters used to separate thousands in larger numbers. '.' | ',' | ...
     */
-  var `thousands-separator`: js.UndefOr[String] = js.native
+  var `thousands-separator`: js.UndefOr[String] = js.undefined
   
-  var tick: js.UndefOr[Shadowalpha] = js.native
+  var tick: js.UndefOr[Shadowalpha] = js.undefined
   
-  var tooltip: js.UndefOr[Fontweight] = js.native
+  var tooltip: js.UndefOr[Fontweight] = js.undefined
   
-  var transform: js.UndefOr[Uniform] = js.native
+  var transform: js.UndefOr[Uniform] = js.undefined
   
   /**
     * An alternative way to create category scale labels. Similar to a 'labels' array, the 'values' array also acts as a maximum scale v
     * alue. [1, 7, 9] | ['Jan', 'Feb', 'Mar', 'Apr'] | ['Q1', 'Q2', 'Q3', 'Q4']
     */
-  var values: js.UndefOr[js.Any] = js.native
+  var values: js.UndefOr[js.Any] = js.undefined
   
   /**
     * You can set the 'scale-y': { } to 'visible': false to hide the y axis. The y-axis will still calculate plots correctly, however yo
@@ -292,13 +290,13 @@ trait Decimalsseparator extends StObject {
     * e you can utilize 'line-color':'none'. This will remove the visibility of the x axis line and still allow you to style ticks, item
     * s, etc separately, true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * When zooming is enabled, setting zoom-snap to true snaps the zoom area to the nearest data node as a zoom area is selected. By def
     * ault, zoom-snap is set to false. true | false | 1 | 0
     */
-  var `zoom-snap`: js.UndefOr[Boolean] = js.native
+  var `zoom-snap`: js.UndefOr[Boolean] = js.undefined
 }
 object Decimalsseparator {
   

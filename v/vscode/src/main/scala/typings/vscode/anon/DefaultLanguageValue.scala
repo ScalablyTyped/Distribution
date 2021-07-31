@@ -2,31 +2,29 @@ package typings.vscode.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultLanguageValue[T] extends StObject {
   
-  var defaultLanguageValue: js.UndefOr[T] = js.native
+  var defaultLanguageValue: js.UndefOr[T] = js.undefined
   
-  var defaultValue: js.UndefOr[T] = js.native
+  var defaultValue: js.UndefOr[T] = js.undefined
   
-  var globalLanguageValue: js.UndefOr[T] = js.native
+  var globalLanguageValue: js.UndefOr[T] = js.undefined
   
-  var globalValue: js.UndefOr[T] = js.native
+  var globalValue: js.UndefOr[T] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var languageIds: js.UndefOr[js.Array[String]] = js.native
+  var languageIds: js.UndefOr[js.Array[String]] = js.undefined
   
-  var workspaceFolderLanguageValue: js.UndefOr[T] = js.native
+  var workspaceFolderLanguageValue: js.UndefOr[T] = js.undefined
   
-  var workspaceFolderValue: js.UndefOr[T] = js.native
+  var workspaceFolderValue: js.UndefOr[T] = js.undefined
   
-  var workspaceLanguageValue: js.UndefOr[T] = js.native
+  var workspaceLanguageValue: js.UndefOr[T] = js.undefined
   
-  var workspaceValue: js.UndefOr[T] = js.native
+  var workspaceValue: js.UndefOr[T] = js.undefined
 }
 object DefaultLanguageValue {
   
@@ -37,7 +35,7 @@ object DefaultLanguageValue {
   }
   
   @scala.inline
-  implicit class DefaultLanguageValueMutableBuilder[Self <: DefaultLanguageValue[_], T] (val x: Self with DefaultLanguageValue[T]) extends AnyVal {
+  implicit class DefaultLanguageValueMutableBuilder[Self <: DefaultLanguageValue[?], T] (val x: Self & DefaultLanguageValue[T]) extends AnyVal {
     
     @scala.inline
     def setDefaultLanguageValue(value: T): Self = StObject.set(x, "defaultLanguageValue", value.asInstanceOf[js.Any])

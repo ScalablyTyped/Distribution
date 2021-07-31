@@ -2,7 +2,6 @@ package typings.sharepoint.SP.UserProfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait FollowedStatus extends StObject
 object FollowedStatus extends StObject {
   
   @js.native
-  sealed trait followed extends FollowedStatus
+  sealed trait followed
+    extends StObject
+       with FollowedStatus
   
   @js.native
-  sealed trait notFollowable extends FollowedStatus
+  sealed trait notFollowable
+    extends StObject
+       with FollowedStatus
   
   @js.native
-  sealed trait notFollowed extends FollowedStatus
+  sealed trait notFollowed
+    extends StObject
+       with FollowedStatus
 }

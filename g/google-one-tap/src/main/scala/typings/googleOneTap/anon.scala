@@ -4,7 +4,6 @@ import typings.googleOneTap.mod.IdConfiguration
 import typings.googleOneTap.mod.PromptMomentNotification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -24,8 +23,8 @@ object anon {
     def prompt(momentListener: js.Function1[/* promptMomentNotification */ PromptMomentNotification, Unit]): Unit = js.native
     
     def storeCredential(): Unit = js.native
-    def storeCredential(credential: js.UndefOr[scala.Nothing], callback: js.Function0[Unit]): Unit = js.native
     def storeCredential(credential: String): Unit = js.native
     def storeCredential(credential: String, callback: js.Function0[Unit]): Unit = js.native
+    def storeCredential(credential: Unit, callback: js.Function0[Unit]): Unit = js.native
   }
 }

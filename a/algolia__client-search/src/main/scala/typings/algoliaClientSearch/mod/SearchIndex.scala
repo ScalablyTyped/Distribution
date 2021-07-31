@@ -3,26 +3,24 @@ package typings.algoliaClientSearch.mod
 import typings.algoliaTransporter.mod.Transporter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchIndex extends StObject {
   
   /**
     * The application id.
     */
-  val appId: String = js.native
+  val appId: String
   
   /**
     * The index name.
     */
-  val indexName: String = js.native
+  val indexName: String
   
   /**
     * The underlying transporter.
     */
-  val transporter: Transporter = js.native
+  val transporter: Transporter
 }
 object SearchIndex {
   

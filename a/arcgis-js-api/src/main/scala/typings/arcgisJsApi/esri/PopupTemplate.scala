@@ -2,12 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait PopupTemplate
-  extends Accessor
+  extends StObject
+     with Accessor
      with JSONSupport {
   
   /**
@@ -22,7 +22,7 @@ trait PopupTemplate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#content)
     */
-  var content: js.Array[Content_] | String | js.Function | js.Promise[_] = js.native
+  var content: js.Array[Content_] | String | js.Function | js.Promise[js.Any] = js.native
   
   /**
     * An array of objects or [ExpressionInfo[]](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-ExpressionInfo.html) that reference [Arcade](https://developers.arcgis.com/javascript/latest/guide/arcade/index.html) expressions.
@@ -78,5 +78,5 @@ trait PopupTemplate
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-PopupTemplate.html#title)
     */
-  var title: String | js.Function | js.Promise[_] = js.native
+  var title: String | js.Function | js.Promise[js.Any] = js.native
 }

@@ -2,17 +2,15 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait KmlMouseEvent extends StObject {
   
-  var featureData: KmlFeatureData = js.native
+  var featureData: KmlFeatureData
   
-  var latLng: LatLng = js.native
+  var latLng: LatLng
   
-  var pixelOffset: Size = js.native
+  var pixelOffset: Size
 }
 object KmlMouseEvent {
   

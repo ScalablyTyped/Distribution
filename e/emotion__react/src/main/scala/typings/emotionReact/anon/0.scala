@@ -2,13 +2,11 @@ package typings.emotionReact.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
-  var theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any = js.native
+  var theme: /* import warning: importer.ImportType#apply Failed type conversion: infer Theme */ js.Any
 }
 object `0` {
   

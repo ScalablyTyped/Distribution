@@ -3,7 +3,6 @@ package typings.socketclusterServer
 import typings.socketclusterServer.serverMod.Middlewares
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object socketclusterServerStrings {
@@ -114,17 +113,23 @@ object socketclusterServerStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait handshake extends Middlewares
+  sealed trait handshake
+    extends StObject
+       with Middlewares
   @scala.inline
   def handshake: handshake = "handshake".asInstanceOf[handshake]
   
   @js.native
-  sealed trait inbound extends Middlewares
+  sealed trait inbound
+    extends StObject
+       with Middlewares
   @scala.inline
   def inbound: inbound = "inbound".asInstanceOf[inbound]
   
   @js.native
-  sealed trait inboundRaw extends Middlewares
+  sealed trait inboundRaw
+    extends StObject
+       with Middlewares
   @scala.inline
   def inboundRaw: inboundRaw = "inboundRaw".asInstanceOf[inboundRaw]
   
@@ -144,7 +149,9 @@ object socketclusterServerStrings {
   def open: open = "open".asInstanceOf[open]
   
   @js.native
-  sealed trait outbound extends Middlewares
+  sealed trait outbound
+    extends StObject
+       with Middlewares
   @scala.inline
   def outbound: outbound = "outbound".asInstanceOf[outbound]
   

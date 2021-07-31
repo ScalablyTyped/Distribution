@@ -3,7 +3,6 @@ package typings.pixiJs.mod
 import typings.pixiJs.PIXI.ILoaderPlugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -60,10 +59,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Loader")
 @js.native
 class Loader ()
-  extends typings.pixiJs.PIXI.Loader {
+  extends StObject
+     with typings.pixiJs.PIXI.Loader {
   def this(baseUrl: String) = this()
-  def this(baseUrl: js.UndefOr[scala.Nothing], concurrency: Double) = this()
   def this(baseUrl: String, concurrency: Double) = this()
+  def this(baseUrl: Unit, concurrency: Double) = this()
 }
 object Loader {
   
@@ -82,9 +82,8 @@ object Loader {
     * @return {PIXI.Loader} Reference to PIXI.Loader for chaining
     */
   /* static member */
-  @JSImport("pixi.js", "Loader.registerPlugin")
-  @js.native
-  def registerPlugin(plugin: ILoaderPlugin): typings.pixiJs.PIXI.Loader = js.native
+  @scala.inline
+  def registerPlugin(plugin: ILoaderPlugin): typings.pixiJs.PIXI.Loader = ^.asInstanceOf[js.Dynamic].applyDynamic("registerPlugin")(plugin.asInstanceOf[js.Any]).asInstanceOf[typings.pixiJs.PIXI.Loader]
   
   /**
     * A premade instance of the loader that can be used to load resources.

@@ -11,7 +11,6 @@ import typings.ionicCliFramework.helpMod.CommandHelpSchemaInput
 import typings.ionicCliFramework.helpMod.CommandHelpSchemaOption
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libHelpMod {
@@ -52,11 +51,11 @@ object libHelpMod {
   
   type CommandHelpFormatterDeps = typings.ionicCliFramework.helpMod.CommandHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption]
   
-  @js.native
   trait CommandHelpSchema
-    extends typings.ionicCliFramework.helpMod.CommandHelpSchema {
+    extends StObject
+       with typings.ionicCliFramework.helpMod.CommandHelpSchema {
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object CommandHelpSchema {
     
@@ -87,13 +86,13 @@ object libHelpMod {
     }
   }
   
-  @js.native
   trait NamespaceHelpFormatterDeps
-    extends typings.ionicCliFramework.helpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
+    extends StObject
+       with typings.ionicCliFramework.helpMod.NamespaceHelpFormatterDeps[ICommand, INamespace, CommandMetadata, CommandMetadataInput, CommandMetadataOption] {
     
-    val inProject: Boolean = js.native
+    val inProject: Boolean
     
-    val version: String = js.native
+    val version: String
   }
   object NamespaceHelpFormatterDeps {
     

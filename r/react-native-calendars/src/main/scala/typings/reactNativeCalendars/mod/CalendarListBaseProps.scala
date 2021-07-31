@@ -2,61 +2,61 @@ package typings.reactNativeCalendars.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CalendarListBaseProps extends CalendarBaseProps {
+trait CalendarListBaseProps
+  extends StObject
+     with CalendarBaseProps {
   
   /**
     *  Set custom calendar heigth.
     */
-  var calendarHeight: js.UndefOr[Double] = js.native
+  var calendarHeight: js.UndefOr[Double] = js.undefined
   
   /**
     *  Set custom calendar width.
     */
-  var calendarWidth: js.UndefOr[Double] = js.native
+  var calendarWidth: js.UndefOr[Double] = js.undefined
   
   /**
     *  Max amount of months allowed to scroll to the future. Default = 50
     */
-  var futureScrollRange: js.UndefOr[Double] = js.native
+  var futureScrollRange: js.UndefOr[Double] = js.undefined
   
   /**
     *  Enable horizontal scrolling, default = false
     */
-  var horizontal: js.UndefOr[Boolean] = js.native
+  var horizontal: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Enable paging on horizontal, default = false
     */
-  var pagingEnabled: js.UndefOr[Boolean] = js.native
+  var pagingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  Max amount of months allowed to scroll to the past. Default = 50
     */
-  var pastScrollRange: js.UndefOr[Double] = js.native
+  var pastScrollRange: js.UndefOr[Double] = js.undefined
   
   /**
     *  Enable or disable scrolling of calendar list
     */
-  var scrollEnabled: js.UndefOr[Boolean] = js.native
+  var scrollEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     *  When true, the calendar list scrolls to top when the status bar is tapped. Default = true
     */
-  var scrollsToTop: js.UndefOr[Boolean] = js.native
+  var scrollsToTop: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Initially selected day
     */
-  var selected: js.UndefOr[String] = js.native
+  var selected: js.UndefOr[String] = js.undefined
   
   /**
     *  Enable or disable vertical scroll indicator. Default = false
     */
-  var showScrollIndicator: js.UndefOr[Boolean] = js.native
+  var showScrollIndicator: js.UndefOr[Boolean] = js.undefined
 }
 object CalendarListBaseProps {
   

@@ -6,11 +6,11 @@ import typings.winrt.Windows.Foundation.IAsyncOperation
 import typings.winrt.Windows.Storage.StorageFolder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FolderPicker extends IFolderPicker
+trait FolderPicker
+  extends StObject
+     with IFolderPicker
 object FolderPicker {
   
   @scala.inline

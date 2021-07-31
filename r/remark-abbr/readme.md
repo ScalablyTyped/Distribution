@@ -10,9 +10,9 @@ This [remark][remark] plugin parses custom Markdown syntax to produce (HTML) abb
 | ------------------ | :-------------: |
 | Full name          | remark-abbr |
 | Keywords           | remark |
-| # releases         | 10 |
-| # dependents       | 4 |
-| # downloads        | 96303 |
+| # releases         | 5 |
+| # dependents       | 7 |
+| # downloads        | 80364 |
 | # stars            | 0 |
 
 ## Links

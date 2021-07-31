@@ -3,27 +3,25 @@ package typings.winrtUwp.Windows.ApplicationModel.Store.Preview
 import typings.winrtUwp.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information about an in-app product, including details about available SKUs. */
-@js.native
 trait StorePreviewProductInfo extends StObject {
   
   /** Gets the description of the in-app product. */
-  var description: String = js.native
+  var description: String
   
   /** Gets the ID of the in-app product. */
-  var productId: String = js.native
+  var productId: String
   
   /** Gets the type of the in-app product. */
-  var productType: String = js.native
+  var productType: String
   
   /** Gets information about the available SKUs for the in-app product. */
-  var skuInfoList: IVectorView[StorePreviewSkuInfo] = js.native
+  var skuInfoList: IVectorView[StorePreviewSkuInfo]
   
   /** Gets the name of the in-app product that is displayed to customers. */
-  var title: String = js.native
+  var title: String
 }
 object StorePreviewProductInfo {
   

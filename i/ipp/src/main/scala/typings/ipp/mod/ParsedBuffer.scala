@@ -2,21 +2,19 @@ package typings.ipp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParsedBuffer extends StObject {
   
-  var data: String = js.native
+  var data: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var operation: PrinterOpertaion = js.native
+  var operation: PrinterOpertaion
   
-  var statusCode: StatusCode = js.native
+  var statusCode: StatusCode
   
-  var version: String = js.native
+  var version: String
 }
 object ParsedBuffer {
   

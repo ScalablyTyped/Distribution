@@ -2,20 +2,18 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options for the getAssociation mixin of the hasOne association.
   * @see HasOneGetAssociationMixin
   */
-@js.native
 trait HasOneGetAssociationMixinOptions extends StObject {
   
   /**
     * Apply a scope on the related model, or remove its default scope by passing false.
     */
-  var scope: js.UndefOr[String | Boolean] = js.native
+  var scope: js.UndefOr[String | Boolean] = js.undefined
 }
 object HasOneGetAssociationMixinOptions {
   

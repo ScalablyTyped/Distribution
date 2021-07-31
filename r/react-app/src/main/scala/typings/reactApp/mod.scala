@@ -4,10 +4,13 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-app", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-app", "Header")
   @js.native
@@ -57,16 +60,14 @@ object mod {
     def this(props: js.Object, context: js.Any) = this()
   }
   
-  @JSImport("react-app", "createApp")
-  @js.native
-  def createApp(createAppObject: CreateAppObject): Element = js.native
+  @scala.inline
+  def createApp(createAppObject: CreateAppObject): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("createApp")(createAppObject.asInstanceOf[js.Any]).asInstanceOf[Element]
   
-  @js.native
   trait ChildProps extends StObject {
     
-    def action(params: js.Any): js.Any = js.native
+    def action(params: js.Any): js.Any
     
-    var path: String = js.native
+    var path: String
   }
   object ChildProps {
     
@@ -87,18 +88,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CreateAppObject extends StObject {
     
-    var container: typings.std.Element | Null = js.native
+    var container: typings.std.Element | Null
     
-    var routes: RouteProps = js.native
+    var routes: RouteProps
   }
   object CreateAppObject {
     
     @scala.inline
     def apply(routes: RouteProps): CreateAppObject = {
-      val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(routes = routes.asInstanceOf[js.Any], container = null)
       __obj.asInstanceOf[CreateAppObject]
     }
     
@@ -116,10 +116,9 @@ object mod {
     }
   }
   
-  @js.native
   trait LayoutProps extends StObject {
     
-    var className: String = js.native
+    var className: String
   }
   object LayoutProps {
     
@@ -137,14 +136,13 @@ object mod {
     }
   }
   
-  @js.native
   trait LinkProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var to: String = js.native
+    var to: String
   }
   object LinkProps {
     
@@ -174,13 +172,12 @@ object mod {
     }
   }
   
-  @js.native
   trait RouteProps extends StObject {
     
-    var children: js.Array[ChildProps] = js.native
+    var children: js.Array[ChildProps]
     
     // takes the form of universal-router routes
-    var path: String = js.native
+    var path: String
   }
   object RouteProps {
     

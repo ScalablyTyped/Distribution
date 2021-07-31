@@ -3,65 +3,56 @@ package typings.jalaaliJs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jalaali-js", "d2g")
+  @JSImport("jalaali-js", JSImport.Namespace)
   @js.native
-  def d2g(jdn: Double): GregorianDateObject = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jalaali-js", "d2j")
-  @js.native
-  def d2j(jdn: Double): JalaaliDateObject = js.native
+  @scala.inline
+  def d2g(jdn: Double): GregorianDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("d2g")(jdn.asInstanceOf[js.Any]).asInstanceOf[GregorianDateObject]
   
-  @JSImport("jalaali-js", "g2d")
-  @js.native
-  def g2d(gy: Double, gm: Double, gd: Double): Double = js.native
+  @scala.inline
+  def d2j(jdn: Double): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("d2j")(jdn.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
   
-  @JSImport("jalaali-js", "isLeapJalaaliYear")
-  @js.native
-  def isLeapJalaaliYear(jy: Double): Boolean = js.native
+  @scala.inline
+  def g2d(gy: Double, gm: Double, gd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("g2d")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("jalaali-js", "isValidJalaaliDate")
-  @js.native
-  def isValidJalaaliDate(jy: Double, jm: Double, jd: Double): Boolean = js.native
+  @scala.inline
+  def isLeapJalaaliYear(jy: Double): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLeapJalaaliYear")(jy.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("jalaali-js", "j2d")
-  @js.native
-  def j2d(jy: Double, jm: Double, jd: Double): Double = js.native
+  @scala.inline
+  def isValidJalaaliDate(jy: Double, jm: Double, jd: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isValidJalaaliDate")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("jalaali-js", "jalCal")
-  @js.native
-  def jalCal(jy: Double): JalCalResult = js.native
+  @scala.inline
+  def j2d(jy: Double, jm: Double, jd: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("j2d")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("jalaali-js", "jalaaliMonthLength")
-  @js.native
-  def jalaaliMonthLength(jy: Double, jm: Double): Double = js.native
+  @scala.inline
+  def jalCal(jy: Double): JalCalResult = ^.asInstanceOf[js.Dynamic].applyDynamic("jalCal")(jy.asInstanceOf[js.Any]).asInstanceOf[JalCalResult]
   
-  @JSImport("jalaali-js", "toGregorian")
-  @js.native
-  def toGregorian(jy: Double, jm: Double, jd: Double): GregorianDateObject = js.native
+  @scala.inline
+  def jalaaliMonthLength(jy: Double, jm: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("jalaaliMonthLength")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("jalaali-js", "toJalaali")
-  @js.native
-  def toJalaali(date: Date): JalaaliDateObject = js.native
-  @JSImport("jalaali-js", "toJalaali")
-  @js.native
-  def toJalaali(gy: Double, gm: Double, gd: Double): JalaaliDateObject = js.native
+  @scala.inline
+  def toGregorian(jy: Double, jm: Double, jd: Double): GregorianDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toGregorian")(jy.asInstanceOf[js.Any], jm.asInstanceOf[js.Any], jd.asInstanceOf[js.Any])).asInstanceOf[GregorianDateObject]
   
-  @js.native
+  @scala.inline
+  def toJalaali(date: Date): JalaaliDateObject = ^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(date.asInstanceOf[js.Any]).asInstanceOf[JalaaliDateObject]
+  @scala.inline
+  def toJalaali(gy: Double, gm: Double, gd: Double): JalaaliDateObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toJalaali")(gy.asInstanceOf[js.Any], gm.asInstanceOf[js.Any], gd.asInstanceOf[js.Any])).asInstanceOf[JalaaliDateObject]
+  
   trait GregorianDateObject extends StObject {
     
     /** Gregorian day */
-    var gd: Double = js.native
+    var gd: Double
     
     /** Gregorian month */
-    var gm: Double = js.native
+    var gm: Double
     
     /** Gregorian year */
-    var gy: Double = js.native
+    var gy: Double
   }
   object GregorianDateObject {
     
@@ -85,17 +76,16 @@ object mod {
     }
   }
   
-  @js.native
   trait JalCalResult extends StObject {
     
     /** Gregorian year of the beginning of Jalaali year */
-    var gy: Double = js.native
+    var gy: Double
     
     /** Number of years since the last leap year (0 to 4) */
-    var leap: Double = js.native
+    var leap: Double
     
     /** The March day of Farvardin the 1st (1st day of jy) */
-    var march: Double = js.native
+    var march: Double
   }
   object JalCalResult {
     
@@ -119,17 +109,16 @@ object mod {
     }
   }
   
-  @js.native
   trait JalaaliDateObject extends StObject {
     
     /** Jalaali day */
-    var jd: Double = js.native
+    var jd: Double
     
     /** Jalaali month */
-    var jm: Double = js.native
+    var jm: Double
     
     /** Jalaali year */
-    var jy: Double = js.native
+    var jy: Double
   }
   object JalaaliDateObject {
     

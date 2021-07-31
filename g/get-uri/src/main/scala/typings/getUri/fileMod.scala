@@ -8,16 +8,18 @@ import typings.node.urlMod.UrlWithStringQuery
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fileMod {
   
-  @JSImport("get-uri/dist/file", JSImport.Default)
+  @JSImport("get-uri/dist/file", JSImport.Namespace)
   @js.native
-  def default(hasHref: UrlWithStringQuery, opts: FileOptions): js.Promise[Readable] = js.native
+  val ^ : js.Any = js.native
   
-  type FileOptions = GetUriOptions with ReadStreamOptions with Cache
+  @scala.inline
+  def default(hasUri: UrlWithStringQuery, opts: FileOptions): js.Promise[Readable] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasUri.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Readable]]
+  
+  type FileOptions = GetUriOptions & ReadStreamOptions & Cache
   
   @js.native
   trait FileReadable extends Readable {

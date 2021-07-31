@@ -11,7 +11,6 @@ import typings.react.mod.global.JSX.Element
 import typings.uifabricUtilities.irenderfunctionMod.IRenderFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object selectedPeopleListMod {
@@ -49,20 +48,21 @@ object selectedPeopleListMod {
     def defaultProps_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IExtendedPersonaProps extends IPersonaProps {
+  trait IExtendedPersonaProps
+    extends StObject
+       with IPersonaProps {
     
-    var blockRecipientRemoval: js.UndefOr[Boolean] = js.native
+    var blockRecipientRemoval: js.UndefOr[Boolean] = js.undefined
     
-    var canExpand: js.UndefOr[Boolean] = js.native
+    var canExpand: js.UndefOr[Boolean] = js.undefined
     
-    var isEditing: js.UndefOr[Boolean] = js.native
+    var isEditing: js.UndefOr[Boolean] = js.undefined
     
-    var isValid: Boolean = js.native
+    var isValid: Boolean
     
-    var key: js.UndefOr[Key] = js.native
+    var key: js.UndefOr[Key] = js.undefined
     
-    var shouldBlockSelection: js.UndefOr[Boolean] = js.native
+    var shouldBlockSelection: js.UndefOr[Boolean] = js.undefined
   }
   object IExtendedPersonaProps {
     
@@ -110,14 +110,15 @@ object selectedPeopleListMod {
     }
   }
   
-  @js.native
-  trait ISelectedPeopleItemProps extends ISelectedItemProps[IExtendedPersonaProps] {
+  trait ISelectedPeopleItemProps
+    extends StObject
+       with ISelectedItemProps[IExtendedPersonaProps] {
     
-    var onExpandItem: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExpandItem: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var renderPersonaCoin: js.UndefOr[IRenderFunction[IPersonaProps]] = js.native
+    var renderPersonaCoin: js.UndefOr[IRenderFunction[IPersonaProps]] = js.undefined
     
-    var renderPrimaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.native
+    var renderPrimaryText: js.UndefOr[IRenderFunction[IPersonaProps]] = js.undefined
   }
   object ISelectedPeopleItemProps {
     
@@ -155,22 +156,23 @@ object selectedPeopleListMod {
     }
   }
   
-  @js.native
-  trait ISelectedPeopleProps extends IBaseSelectedItemsListProps[IExtendedPersonaProps] {
+  trait ISelectedPeopleProps
+    extends StObject
+       with IBaseSelectedItemsListProps[IExtendedPersonaProps] {
     
-    var copyMenuItemText: js.UndefOr[String] = js.native
+    var copyMenuItemText: js.UndefOr[String] = js.undefined
     
-    var editMenuItemText: js.UndefOr[String] = js.native
+    var editMenuItemText: js.UndefOr[String] = js.undefined
     
-    var floatingPickerProps: js.UndefOr[IBaseFloatingPickerProps[IPersonaProps]] = js.native
+    var floatingPickerProps: js.UndefOr[IBaseFloatingPickerProps[IPersonaProps]] = js.undefined
     
-    var getEditingItemText: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, String]] = js.native
+    var getEditingItemText: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, String]] = js.undefined
     
-    var onExpandGroup: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, Unit]] = js.native
+    var onExpandGroup: js.UndefOr[js.Function1[/* item */ IExtendedPersonaProps, Unit]] = js.undefined
     
-    var onRenderFloatingPicker: js.UndefOr[ComponentType[IBaseFloatingPickerProps[IPersonaProps]]] = js.native
+    var onRenderFloatingPicker: js.UndefOr[ComponentType[IBaseFloatingPickerProps[IPersonaProps]]] = js.undefined
     
-    var removeMenuItemText: js.UndefOr[String] = js.native
+    var removeMenuItemText: js.UndefOr[String] = js.undefined
   }
   object ISelectedPeopleProps {
     

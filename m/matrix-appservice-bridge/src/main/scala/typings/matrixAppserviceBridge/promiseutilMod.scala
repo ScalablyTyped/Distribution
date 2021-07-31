@@ -2,18 +2,19 @@ package typings.matrixAppserviceBridge
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object promiseutilMod {
   
-  @JSImport("matrix-appservice-bridge/lib/utils/promiseutil", "defer")
+  @JSImport("matrix-appservice-bridge/lib/utils/promiseutil", JSImport.Namespace)
   @js.native
-  def defer[T](): Defer_[T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("matrix-appservice-bridge/lib/utils/promiseutil", "delay")
-  @js.native
-  def delay(delayMs: Double): js.Promise[_] = js.native
+  @scala.inline
+  def defer[T](): Defer_[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("defer")().asInstanceOf[Defer_[T]]
+  
+  @scala.inline
+  def delay(delayMs: Double): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(delayMs.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
   
   @js.native
   trait Defer_[T] extends StObject {

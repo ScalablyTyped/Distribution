@@ -1,8 +1,8 @@
 package typings.webix.mod
 
+import typings.webix.mod.^
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -28,4 +28,9 @@ trait EditAbility extends StObject {
   def validateEditor(): Boolean = js.native
   def validateEditor(id: String): Boolean = js.native
   def validateEditor(id: Double): Boolean = js.native
+}
+object EditAbility {
+  
+  @scala.inline
+  def apply: EditAbility = ^.asInstanceOf[js.Dynamic].selectDynamic("EditAbility").asInstanceOf[EditAbility]
 }

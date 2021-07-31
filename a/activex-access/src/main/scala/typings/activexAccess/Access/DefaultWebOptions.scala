@@ -4,44 +4,42 @@ import typings.activexOffice.Office.MsoEncoding
 import typings.activexOffice.Office.MsoTargetBrowser
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultWebOptions extends StObject {
   
   @JSName("Access.DefaultWebOptions_typekey")
-  var AccessDotDefaultWebOptions_typekey: DefaultWebOptions = js.native
+  var AccessDotDefaultWebOptions_typekey: DefaultWebOptions
   
-  var AlwaysSaveInDefaultEncoding: Boolean = js.native
+  var AlwaysSaveInDefaultEncoding: Boolean
   
-  val Application: typings.activexAccess.Access.Application = js.native
+  val Application: typings.activexAccess.Access.Application
   
-  var CheckIfOfficeIsHTMLEditor: Boolean = js.native
+  var CheckIfOfficeIsHTMLEditor: Boolean
   
-  var DownloadComponents: Boolean = js.native
+  var DownloadComponents: Boolean
   
-  var Encoding: MsoEncoding = js.native
+  var Encoding: MsoEncoding
   
-  val FolderSuffix: String = js.native
+  val FolderSuffix: String
   
-  var FollowedHyperlinkColor: AcColorIndex = js.native
+  var FollowedHyperlinkColor: AcColorIndex
   
-  var HyperlinkColor: AcColorIndex = js.native
+  var HyperlinkColor: AcColorIndex
   
-  def IsMemberSafe(dispid: Double): Boolean = js.native
+  def IsMemberSafe(dispid: Double): Boolean
   
-  var LocationOfComponents: String = js.native
+  var LocationOfComponents: String
   
-  var OrganizeInFolder: Boolean = js.native
+  var OrganizeInFolder: Boolean
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var TargetBrowser: MsoTargetBrowser = js.native
+  var TargetBrowser: MsoTargetBrowser
   
-  var UnderlineHyperlinks: Boolean = js.native
+  var UnderlineHyperlinks: Boolean
   
-  var UseLongFileNames: Boolean = js.native
+  var UseLongFileNames: Boolean
 }
 object DefaultWebOptions {
   

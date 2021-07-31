@@ -4,15 +4,13 @@ import typings.figma.figmaStrings.X
 import typings.figma.figmaStrings.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Guide extends StObject {
   
-  val axis: X | Y = js.native
+  val axis: X | Y
   
-  val offset: Double = js.native
+  val offset: Double
 }
 object Guide {
   

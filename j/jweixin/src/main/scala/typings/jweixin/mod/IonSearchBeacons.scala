@@ -2,15 +2,15 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IonSearchBeacons extends BaseParams {
+trait IonSearchBeacons
+  extends StObject
+     with BaseParams {
   
   // 回调函数，可以数组形式取得该商家注册的在周边的相关设备列表
   @JSName("complete")
-  def complete_MIonSearchBeacons(argv: js.Any): Unit = js.native
+  def complete_MIonSearchBeacons(argv: js.Any): Unit
 }
 object IonSearchBeacons {
   

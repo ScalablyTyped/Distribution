@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientTrafficdirector.gapi.client.trafficdirecto
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DynamicListener extends StObject {
   
   /** The listener state for any active listener by this name. These are listeners that are available to service data plane traffic. */
-  var activeState: js.UndefOr[DynamicListenerState] = js.native
+  var activeState: js.UndefOr[DynamicListenerState] = js.undefined
   
   /**
     * The listener state for any draining listener by this name. These are listeners that are currently undergoing draining in preparation to stop servicing data plane traffic. Note that
     * if attempting to recreate an Envoy configuration from a configuration dump, the draining listeners should generally be discarded.
     */
-  var drainingState: js.UndefOr[DynamicListenerState] = js.native
+  var drainingState: js.UndefOr[DynamicListenerState] = js.undefined
   
   /** Set if the last update failed, cleared after the next successful update. */
-  var errorState: js.UndefOr[UpdateFailureState] = js.native
+  var errorState: js.UndefOr[UpdateFailureState] = js.undefined
   
   /** The name or unique id of this listener, pulled from the DynamicListenerState config. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The listener state for any warming listener by this name. These are listeners that are currently undergoing warming in preparation to service data plane traffic. Note that if
     * attempting to recreate an Envoy configuration from a configuration dump, the warming listeners should generally be discarded.
     */
-  var warmingState: js.UndefOr[DynamicListenerState] = js.native
+  var warmingState: js.UndefOr[DynamicListenerState] = js.undefined
 }
 object DynamicListener {
   

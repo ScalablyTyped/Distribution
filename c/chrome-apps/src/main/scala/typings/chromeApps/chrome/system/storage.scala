@@ -11,7 +11,6 @@ import typings.chromeApps.chromeAppsStrings.unknown__
 import typings.std.Exclude
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -24,14 +23,13 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object storage {
   
-  @js.native
   trait StorageCapacityInfo extends StObject {
     
     /** The available capacity of the storage device, in bytes. */
-    var availableCapacity: integer = js.native
+    var availableCapacity: integer
     
     /** A copied **id** of getAvailableCapacity function parameter **id**. */
-    var id: String = js.native
+    var id: String
   }
   object StorageCapacityInfo {
     
@@ -52,21 +50,20 @@ object storage {
     }
   }
   
-  @js.native
   trait StorageUnitInfo extends StObject {
     
     /** The total amount of the storage space, in bytes. */
-    var capacity: integer = js.native
+    var capacity: integer
     
     /**
       * The transient ID that uniquely identifies the storage device.
       * This ID will be persistent within the same run of a single application.
       * It will not be a persistent identifier between different runs of an application, or between different applications.
       */
-    var id: String = js.native
+    var id: String
     
     /** The name of the storage unit. */
-    var name: String = js.native
+    var name: String
     
     /**
       * The media type of the storage unit.
@@ -82,7 +79,7 @@ object storage {
           /* keyof chrome-apps.anon.FIXED */ typings.chromeApps.chromeAppsStrings.FIXED | REMOVABLE | UNKNOWN, 
           fixed_ | removable_ | unknown__
         ]
-      ] = js.native
+      ]
   }
   object StorageUnitInfo {
     

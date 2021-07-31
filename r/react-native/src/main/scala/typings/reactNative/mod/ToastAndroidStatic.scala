@@ -2,35 +2,33 @@ package typings.reactNative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ToastAndroidStatic extends StObject {
   
-  var BOTTOM: Double = js.native
+  var BOTTOM: Double
   
-  var CENTER: Double = js.native
+  var CENTER: Double
   
-  var LONG: Double = js.native
+  var LONG: Double
   
   // Toast duration constants
-  var SHORT: Double = js.native
+  var SHORT: Double
   
   // Toast gravity constants
-  var TOP: Double = js.native
+  var TOP: Double
   
   /**
     * String message: A string with the text to toast
     * int duration: The duration of the toast.
     * May be ToastAndroid.SHORT or ToastAndroid.LONG
     */
-  def show(message: String, duration: Double): Unit = js.native
+  def show(message: String, duration: Double): Unit
   
   /** `gravity` may be ToastAndroid.TOP, ToastAndroid.BOTTOM, ToastAndroid.CENTER */
-  def showWithGravity(message: String, duration: Double, gravity: Double): Unit = js.native
+  def showWithGravity(message: String, duration: Double, gravity: Double): Unit
   
-  def showWithGravityAndOffset(message: String, duration: Double, gravity: Double, xOffset: Double, yOffset: Double): Unit = js.native
+  def showWithGravityAndOffset(message: String, duration: Double, gravity: Double, xOffset: Double, yOffset: Double): Unit
 }
 object ToastAndroidStatic {
   

@@ -2,19 +2,17 @@ package typings.forkTsCheckerWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object loggerMod {
   
-  @js.native
   trait Logger extends StObject {
     
-    def error(message: String): Unit = js.native
+    def error(message: String): Unit
     
-    def info(message: String): Unit = js.native
+    def info(message: String): Unit
     
-    def log(message: String): Unit = js.native
+    def log(message: String): Unit
   }
   object Logger {
     

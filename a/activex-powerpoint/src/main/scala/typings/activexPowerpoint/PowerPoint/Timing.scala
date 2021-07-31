@@ -3,52 +3,50 @@ package typings.activexPowerpoint.PowerPoint
 import typings.activexOffice.Office.MsoTriState
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Timing extends StObject {
   
-  var Accelerate: Double = js.native
+  var Accelerate: Double
   
-  val Application: typings.activexPowerpoint.PowerPoint.Application = js.native
+  val Application: typings.activexPowerpoint.PowerPoint.Application
   
-  var AutoReverse: MsoTriState = js.native
+  var AutoReverse: MsoTriState
   
-  var BounceEnd: MsoTriState = js.native
+  var BounceEnd: MsoTriState
   
-  var BounceEndIntensity: Double = js.native
+  var BounceEndIntensity: Double
   
-  var Decelerate: Double = js.native
+  var Decelerate: Double
   
-  var Duration: Double = js.native
+  var Duration: Double
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
   @JSName("PowerPoint.Timing_typekey")
-  var PowerPointDotTiming_typekey: Timing = js.native
+  var PowerPointDotTiming_typekey: Timing
   
-  var RepeatCount: Double = js.native
+  var RepeatCount: Double
   
-  var RepeatDuration: Double = js.native
+  var RepeatDuration: Double
   
-  var Restart: MsoAnimEffectRestart = js.native
+  var Restart: MsoAnimEffectRestart
   
-  var RewindAtEnd: MsoTriState = js.native
+  var RewindAtEnd: MsoTriState
   
-  var SmoothEnd: MsoTriState = js.native
+  var SmoothEnd: MsoTriState
   
-  var SmoothStart: MsoTriState = js.native
+  var SmoothStart: MsoTriState
   
-  var Speed: Double = js.native
+  var Speed: Double
   
-  var TriggerBookmark: String = js.native
+  var TriggerBookmark: String
   
-  var TriggerDelayTime: Double = js.native
+  var TriggerDelayTime: Double
   
-  var TriggerShape: Shape = js.native
+  var TriggerShape: Shape
   
-  var TriggerType: MsoAnimTriggerType = js.native
+  var TriggerType: MsoAnimTriggerType
 }
 object Timing {
   

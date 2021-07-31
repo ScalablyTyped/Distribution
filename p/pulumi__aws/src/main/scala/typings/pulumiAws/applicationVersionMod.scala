@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applicationVersionMod {
@@ -72,6 +71,10 @@ object applicationVersionMod {
   /* static members */
   object ApplicationVersion {
     
+    @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ApplicationVersion resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -81,66 +84,60 @@ object applicationVersionMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ApplicationVersion = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ApplicationVersion = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationVersionState): ApplicationVersion = js.native
-    @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ApplicationVersionState, opts: CustomResourceOptions): ApplicationVersion = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ApplicationVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApplicationVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationVersionState): ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ApplicationVersion]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ApplicationVersionState, opts: CustomResourceOptions): ApplicationVersion = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ApplicationVersion]
     
     /**
       * Returns true if the given object is an instance of ApplicationVersion.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/elasticbeanstalk/applicationVersion", "ApplicationVersion.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/elasticbeanstalk/applicationVersion.ApplicationVersion */ Boolean]
   }
   
-  @js.native
   trait ApplicationVersionArgs extends StObject {
     
     /**
       * Name of the Beanstalk Application the version is associated with.
       */
-    val application: Input[String | Application] = js.native
+    val application: Input[String | Application]
     
     /**
       * S3 bucket that contains the Application Version source bundle.
       */
-    val bucket: Input[String | Bucket] = js.native
+    val bucket: Input[String | Bucket]
     
     /**
       * Short description of the Application Version.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * On delete, force an Application Version to be deleted when it may be in use
       * by multiple Elastic Beanstalk Environments.
       */
-    val forceDelete: js.UndefOr[Input[Boolean]] = js.native
+    val forceDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * S3 object that is the Application Version source bundle.
       */
-    val key: Input[String] = js.native
+    val key: Input[String]
     
     /**
       * A unique name for the this Application Version.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of tags for the Elastic Beanstalk Application Version.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ApplicationVersionArgs {
     
@@ -188,49 +185,48 @@ object applicationVersionMod {
     }
   }
   
-  @js.native
   trait ApplicationVersionState extends StObject {
     
     /**
       * Name of the Beanstalk Application the version is associated with.
       */
-    val application: js.UndefOr[Input[String | Application]] = js.native
+    val application: js.UndefOr[Input[String | Application]] = js.undefined
     
     /**
       * The ARN assigned by AWS for this Elastic Beanstalk Application.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * S3 bucket that contains the Application Version source bundle.
       */
-    val bucket: js.UndefOr[Input[String | Bucket]] = js.native
+    val bucket: js.UndefOr[Input[String | Bucket]] = js.undefined
     
     /**
       * Short description of the Application Version.
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * On delete, force an Application Version to be deleted when it may be in use
       * by multiple Elastic Beanstalk Environments.
       */
-    val forceDelete: js.UndefOr[Input[Boolean]] = js.native
+    val forceDelete: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * S3 object that is the Application Version source bundle.
       */
-    val key: js.UndefOr[Input[String]] = js.native
+    val key: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A unique name for the this Application Version.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value map of tags for the Elastic Beanstalk Application Version.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ApplicationVersionState {
     

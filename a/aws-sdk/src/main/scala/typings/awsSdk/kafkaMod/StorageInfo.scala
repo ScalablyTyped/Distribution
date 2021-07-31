@@ -2,10 +2,8 @@ package typings.awsSdk.kafkaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StorageInfo extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait StorageInfo extends StObject {
     EBS volume information.
     
     */
-  var EbsStorageInfo: js.UndefOr[EBSStorageInfo] = js.native
+  var EbsStorageInfo: js.UndefOr[EBSStorageInfo] = js.undefined
 }
 object StorageInfo {
   

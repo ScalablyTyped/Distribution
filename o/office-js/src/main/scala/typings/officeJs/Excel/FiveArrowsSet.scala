@@ -3,21 +3,21 @@ package typings.officeJs.Excel
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FiveArrowsSet extends /* index */ NumberDictionary[Icon] {
+trait FiveArrowsSet
+  extends StObject
+     with /* index */ NumberDictionary[Icon] {
   
-  var greenUpArrow: Icon = js.native
+  var greenUpArrow: Icon
   
-  var redDownArrow: Icon = js.native
+  var redDownArrow: Icon
   
-  var yellowDownInclineArrow: Icon = js.native
+  var yellowDownInclineArrow: Icon
   
-  var yellowSideArrow: Icon = js.native
+  var yellowSideArrow: Icon
   
-  var yellowUpInclineArrow: Icon = js.native
+  var yellowUpInclineArrow: Icon
 }
 object FiveArrowsSet {
   

@@ -6,34 +6,32 @@ import typings.seen.mod.Painter
 import typings.seen.mod.Point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<seen.seen.Surface> */
-@js.native
 trait PartialSurface extends StObject {
   
   var constructor: js.UndefOr[
     js.Function2[/* points */ js.Array[Point], /* painter */ js.UndefOr[Painter], js.Any]
-  ] = js.native
+  ] = js.undefined
   
-  var cullBackfaces: js.UndefOr[Boolean] = js.native
+  var cullBackfaces: js.UndefOr[Boolean] = js.undefined
   
-  var dirty: js.UndefOr[Boolean | Null] = js.native
+  var dirty: js.UndefOr[Boolean | Null] = js.undefined
   
-  var fill: js.UndefOr[js.Function1[/* fill */ String | Color, this.type]] = js.native
+  var fill: js.UndefOr[js.Function1[/* fill */ String | Color, this.type]] = js.undefined
   
-  var fillMaterial: js.UndefOr[Material] = js.native
+  var fillMaterial: js.UndefOr[Material] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var painter: js.UndefOr[Painter] = js.native
+  var painter: js.UndefOr[Painter] = js.undefined
   
-  var points: js.UndefOr[js.Array[Point]] = js.native
+  var points: js.UndefOr[js.Array[Point]] = js.undefined
   
-  var stroke: js.UndefOr[js.Function1[/* stroke */ String | Color, this.type]] = js.native
+  var stroke: js.UndefOr[js.Function1[/* stroke */ String | Color, this.type]] = js.undefined
   
-  var strokeMaterial: js.UndefOr[Material] = js.native
+  var strokeMaterial: js.UndefOr[Material] = js.undefined
 }
 object PartialSurface {
   

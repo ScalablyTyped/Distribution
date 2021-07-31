@@ -3,18 +3,16 @@ package typings.uifabricUtilities
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object irendercomponentMod {
   
-  @js.native
   trait IRenderComponent[TProps] extends StObject {
     
     /**
       * JSX.Element to return in this component's render() function.
       */
-    def children(props: TProps): Element = js.native
+    def children(props: TProps): Element
   }
   object IRenderComponent {
     
@@ -25,7 +23,7 @@ object irendercomponentMod {
     }
     
     @scala.inline
-    implicit class IRenderComponentMutableBuilder[Self <: IRenderComponent[_], TProps] (val x: Self with IRenderComponent[TProps]) extends AnyVal {
+    implicit class IRenderComponentMutableBuilder[Self <: IRenderComponent[?], TProps] (val x: Self & IRenderComponent[TProps]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: TProps => Element): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

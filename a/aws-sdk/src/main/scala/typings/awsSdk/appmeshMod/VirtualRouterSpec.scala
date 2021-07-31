@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualRouterSpec extends StObject {
   
   /**
     * The listeners that the virtual router is expected to receive inbound traffic from. You can specify one listener.
     */
-  var listeners: js.UndefOr[VirtualRouterListeners] = js.native
+  var listeners: js.UndefOr[VirtualRouterListeners] = js.undefined
 }
 object VirtualRouterSpec {
   

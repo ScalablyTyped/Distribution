@@ -5,7 +5,6 @@ import typings.elasticlunr.elasticlunrStrings.AND
 import typings.elasticlunr.elasticlunrStrings.OR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "Index")
@@ -33,7 +32,7 @@ class Index[T] () extends StObject {
   
   var index: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ K in keyof T ]:? elasticlunr.elasticlunr.InvertedIndexNode}
-    */ typings.elasticlunr.elasticlunrStrings.Index with TopLevel[js.Any] = js.native
+    */ typings.elasticlunr.elasticlunrStrings.Index & TopLevel[js.Any] = js.native
   
   @JSName("mergeScores")
   def mergeScores_AND(accumScores: Null, scores: SearchScores, op: AND): SearchScores = js.native
@@ -70,12 +69,15 @@ class Index[T] () extends StObject {
   def updateDoc(doc: T): Unit = js.native
   def updateDoc(doc: T, emitEvent: Boolean): Unit = js.native
   
-  def use(plugin: js.Function1[/* repeated */ js.Any, _], args: js.Any*): Unit = js.native
+  def use(plugin: js.Function1[/* repeated */ js.Any, js.Any], args: js.Any*): Unit = js.native
 }
 object Index {
   
-  /* static member */
-  @JSImport("elasticlunr", "Index.load")
+  @JSImport("elasticlunr", "Index")
   @js.native
-  def load[T](serialisedData: SerialisedIndexData[T]): Index[T] = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def load[T](serialisedData: SerialisedIndexData[T]): Index[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[Index[T]]
 }

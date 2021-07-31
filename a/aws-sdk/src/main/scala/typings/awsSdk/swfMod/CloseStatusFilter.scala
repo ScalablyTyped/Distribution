@@ -2,16 +2,14 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloseStatusFilter extends StObject {
   
   /**
     *  The close status that must match the close status of an execution for it to meet the criteria of this filter.
     */
-  var status: CloseStatus = js.native
+  var status: CloseStatus
 }
 object CloseStatusFilter {
   

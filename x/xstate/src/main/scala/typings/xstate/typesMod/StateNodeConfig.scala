@@ -14,36 +14,36 @@ import typings.xstate.xstateStrings.parallel
 import typings.xstate.xstateStrings.shallow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] extends SimpleOrStateNodeConfig[TContext, TStateSchema, TEvent] {
+trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */]
+  extends StObject
+     with SimpleOrStateNodeConfig[TContext, TStateSchema, TEvent] {
   
   /**
     * The activities to be started upon entering the state node,
     * and stopped upon exiting the state node.
     */
-  var activities: js.UndefOr[SingleOrArray[Activity[TContext, TEvent]]] = js.native
+  var activities: js.UndefOr[SingleOrArray[Activity[TContext, TEvent]]] = js.undefined
   
   /**
     * The mapping (or array) of delays (in milliseconds) to their potential transition(s).
     * The delayed transitions are taken after the specified delay in an interpreter.
     */
-  var after: js.UndefOr[DelayedTransitions[TContext, TEvent]] = js.native
+  var after: js.UndefOr[DelayedTransitions[TContext, TEvent]] = js.undefined
   
   /**
     * An eventless transition that is always taken when this state node is active.
     * Equivalent to a transition specified as an empty `''`' string in the `on` property.
     */
-  var always: js.UndefOr[TransitionConfigOrTarget[TContext, TEvent]] = js.native
+  var always: js.UndefOr[TransitionConfigOrTarget[TContext, TEvent]] = js.undefined
   
   /**
     * The initial context (extended state) of the machine.
     *
     * Can be an object or a function that returns an object.
     */
-  var context: js.UndefOr[TContext | js.Function0[TContext]] = js.native
+  var context: js.UndefOr[TContext | js.Function0[TContext]] = js.undefined
   
   /**
     * The data sent with the "done.state._id_" event if this is a final state node.
@@ -51,108 +51,110 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* 
     * The data will be evaluated with the current `context` and placed on the `.data` property
     * of the event.
     */
-  var data: js.UndefOr[(Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])] = js.native
+  var data: js.UndefOr[(Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])] = js.undefined
   
   /**
     * The string delimiter for serializing the path to a string. The default is "."
     */
-  var delimiter: js.UndefOr[String] = js.native
+  var delimiter: js.UndefOr[String] = js.undefined
   
   /**
     * The action(s) to be executed upon entering the state node.
     */
-  var entry: js.UndefOr[Actions[TContext, TEvent]] = js.native
+  var entry: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   
   /**
     * The action(s) to be executed upon exiting the state node.
     */
-  var exit: js.UndefOr[Actions[TContext, TEvent]] = js.native
+  var exit: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   
   /**
     * Indicates whether the state node is a history state node, and what
     * type of history:
     * shallow, deep, true (shallow), false (none), undefined (none)
     */
-  var history: js.UndefOr[shallow | deep | Boolean] = js.native
+  var history: js.UndefOr[shallow | deep | Boolean] = js.undefined
   
   /**
     * The unique ID of the state node, which can be referenced as a transition target via the
     * `#id` syntax.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The initial state node key.
     */
   var initial: js.UndefOr[
     /* import warning: importer.ImportType#apply Failed type conversion: keyof TStateSchema['states'] */ js.Any
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The services to invoke upon entering this state node. These services will be stopped upon exiting this state node.
     */
   var invoke: js.UndefOr[
-    SingleOrArray[(InvokeConfig[TContext, TEvent]) | (StateMachine[_, _, _, ContextAny])]
-  ] = js.native
+    SingleOrArray[
+      (InvokeConfig[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any, ContextAny])
+    ]
+  ] = js.undefined
   
   /**
     * The relative key of the state node, which represents its location in the overall state value.
     * This is automatically determined by the configuration shape via the key where it was defined.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * The meta data associated with this state node, which will be returned in State instances.
     */
-  var meta: js.UndefOr[js.Any] = js.native
+  var meta: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The mapping of event types to their potential transition(s).
     */
-  var on: js.UndefOr[TransitionsConfig[TContext, TEvent]] = js.native
+  var on: js.UndefOr[TransitionsConfig[TContext, TEvent]] = js.undefined
   
   /**
     * The potential transition(s) to be taken upon reaching a final child state node.
     *
     * This is equivalent to defining a `[done(id)]` transition on this state node's `on` property.
     */
-  var onDone: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]])] = js.native
+  var onDone: js.UndefOr[String | (SingleOrArray[TransitionConfig[TContext, DoneEventObject]])] = js.undefined
   
   /**
     * The action(s) to be executed upon entering the state node.
     *
     * @deprecated Use `entry` instead.
     */
-  var onEntry: js.UndefOr[Actions[TContext, TEvent]] = js.native
+  var onEntry: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   
   /**
     * The action(s) to be executed upon exiting the state node.
     *
     * @deprecated Use `exit` instead.
     */
-  var onExit: js.UndefOr[Actions[TContext, TEvent]] = js.native
+  var onExit: js.UndefOr[Actions[TContext, TEvent]] = js.undefined
   
   /**
     * The order this state node appears. Corresponds to the implicit SCXML document order.
     */
-  var order: js.UndefOr[Double] = js.native
+  var order: js.UndefOr[Double] = js.undefined
   
   /**
     * @deprecated
     */
-  var parallel: js.UndefOr[Boolean] = js.native
+  var parallel: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @private
     */
-  var parent: js.UndefOr[StateNode[TContext, _, TEvent, ContextTContext[TContext]]] = js.native
+  var parent: js.UndefOr[StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]] = js.undefined
   
   /**
     * The mapping of state node keys to their state node configurations (recursive).
     */
-  var states: js.UndefOr[StatesConfig[TContext, TStateSchema, TEvent]] = js.native
+  var states: js.UndefOr[StatesConfig[TContext, TStateSchema, TEvent]] = js.undefined
   
-  var strict: js.UndefOr[Boolean] = js.native
+  var strict: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of this state node:
@@ -163,18 +165,18 @@ trait StateNodeConfig[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* 
     *  - `'history'` - history state node
     *  - `'final'` - final state node
     */
-  var `type`: js.UndefOr[atomic | compound | parallel | `final` | history] = js.native
+  var `type`: js.UndefOr[atomic | compound | parallel | `final` | history] = js.undefined
 }
 object StateNodeConfig {
   
   @scala.inline
-  def apply[TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */](): StateNodeConfig[TContext, TStateSchema, TEvent] = {
+  def apply[TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */](): StateNodeConfig[TContext, TStateSchema, TEvent] = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[StateNodeConfig[TContext, TStateSchema, TEvent]]
   }
   
   @scala.inline
-  implicit class StateNodeConfigMutableBuilder[Self <: StateNodeConfig[_, _, _], TContext, TStateSchema /* <: StateSchema[_] */, TEvent /* <: EventObject */] (val x: Self with (StateNodeConfig[TContext, TStateSchema, TEvent])) extends AnyVal {
+  implicit class StateNodeConfigMutableBuilder[Self <: StateNodeConfig[?, ?, ?], TContext, TStateSchema /* <: StateSchema[js.Any] */, TEvent /* <: EventObject */] (val x: Self & (StateNodeConfig[TContext, TStateSchema, TEvent])) extends AnyVal {
     
     @scala.inline
     def setActivities(value: SingleOrArray[Activity[TContext, TEvent]]): Self = StObject.set(x, "activities", value.asInstanceOf[js.Any])
@@ -192,7 +194,7 @@ object StateNodeConfig {
     def setAfterUndefined: Self = StObject.set(x, "after", js.undefined)
     
     @scala.inline
-    def setAfterVarargs(value: ((TransitionConfig[TContext, TEvent]) with (typings.xstate.anon.Delay[TContext, TEvent]))*): Self = StObject.set(x, "after", js.Array(value :_*))
+    def setAfterVarargs(value: ((TransitionConfig[TContext, TEvent]) & (typings.xstate.anon.Delay[TContext, TEvent]))*): Self = StObject.set(x, "after", js.Array(value :_*))
     
     @scala.inline
     def setAlways(value: TransitionConfigOrTarget[TContext, TEvent]): Self = StObject.set(x, "always", value.asInstanceOf[js.Any])
@@ -213,10 +215,10 @@ object StateNodeConfig {
     def setContextUndefined: Self = StObject.set(x, "context", js.undefined)
     
     @scala.inline
-    def setData(value: (Mapper[TContext, TEvent, _]) | (PropertyMapper[TContext, TEvent, _])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: (Mapper[TContext, TEvent, js.Any]) | (PropertyMapper[TContext, TEvent, js.Any])): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setDataFunction2(value: (TContext, TEvent) => _): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
+    def setDataFunction2(value: (TContext, TEvent) => js.Any): Self = StObject.set(x, "data", js.Any.fromFunction2(value))
     
     @scala.inline
     def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
@@ -272,7 +274,11 @@ object StateNodeConfig {
     def setInitialUndefined: Self = StObject.set(x, "initial", js.undefined)
     
     @scala.inline
-    def setInvoke(value: SingleOrArray[(InvokeConfig[TContext, TEvent]) | (StateMachine[_, _, _, ContextAny])]): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
+    def setInvoke(
+      value: SingleOrArray[
+          (InvokeConfig[TContext, TEvent]) | (StateMachine[js.Any, js.Any, js.Any, ContextAny])
+        ]
+    ): Self = StObject.set(x, "invoke", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setInvokeUndefined: Self = StObject.set(x, "invoke", js.undefined)
@@ -333,7 +339,7 @@ object StateNodeConfig {
     
     @scala.inline
     def setOnVarargs(
-      value: (((TransitionConfig[TContext, TEvent]) with typings.xstate.anon.Event[TEvent]) | ((TransitionConfig[TContext, TEvent]) with `0`) | ((TransitionConfig[TContext, TEvent]) with `1`))*
+      value: (((TransitionConfig[TContext, TEvent]) & typings.xstate.anon.Event[TEvent]) | ((TransitionConfig[TContext, TEvent]) & `0`) | ((TransitionConfig[TContext, TEvent]) & `1`))*
     ): Self = StObject.set(x, "on", js.Array(value :_*))
     
     @scala.inline
@@ -349,7 +355,7 @@ object StateNodeConfig {
     def setParallelUndefined: Self = StObject.set(x, "parallel", js.undefined)
     
     @scala.inline
-    def setParent(value: StateNode[TContext, _, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
+    def setParent(value: StateNode[TContext, js.Any, TEvent, ContextTContext[TContext]]): Self = StObject.set(x, "parent", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setParentUndefined: Self = StObject.set(x, "parent", js.undefined)

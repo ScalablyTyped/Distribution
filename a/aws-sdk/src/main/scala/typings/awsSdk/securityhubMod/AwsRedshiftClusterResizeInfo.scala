@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsRedshiftClusterResizeInfo extends StObject {
   
   /**
     * Indicates whether the resize operation can be canceled.
     */
-  var AllowCancelResize: js.UndefOr[Boolean] = js.native
+  var AllowCancelResize: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type of resize operation. Valid values: ClassicResize 
     */
-  var ResizeType: js.UndefOr[NonEmptyString] = js.native
+  var ResizeType: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsRedshiftClusterResizeInfo {
   

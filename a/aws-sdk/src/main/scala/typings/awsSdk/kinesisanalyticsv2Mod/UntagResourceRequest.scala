@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UntagResourceRequest extends StObject {
   
   /**
     * The ARN of the Kinesis Data Analytics application from which to remove the tags.
     */
-  var ResourceARN: KinesisAnalyticsARN = js.native
+  var ResourceARN: KinesisAnalyticsARN
   
   /**
     * A list of keys of tags to remove from the specified application.
     */
-  var TagKeys: typings.awsSdk.kinesisanalyticsv2Mod.TagKeys = js.native
+  var TagKeys: typings.awsSdk.kinesisanalyticsv2Mod.TagKeys
 }
 object UntagResourceRequest {
   

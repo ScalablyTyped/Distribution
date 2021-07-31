@@ -4,15 +4,15 @@
 Typings are for version 6.1.2
 
 ## Library description:
-A storybook addon to show different backgrounds for your preview
+Switch backgrounds to view components in different settings
 
 |                    |                 |
 | ------------------ | :-------------: |
 | Full name          | @storybook/addon-backgrounds |
 | Keywords           | addon, background, react, storybook |
-| # releases         | 563 |
-| # dependents       | 34 |
-| # downloads        | 10812485 |
+| # releases         | 553 |
+| # dependents       | 37 |
+| # downloads        | 18517729 |
 | # stars            | 0 |
 
 ## Links

@@ -12,7 +12,6 @@ import typings.winrtUwp.winrtUwpStrings.itemstatuschanged
 import typings.winrtUwp.winrtUwpStrings.statuschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides an API for programmatically managing the installation of apps and app updates. This API is accessible through the AppInstallManager class. */
@@ -27,59 +26,87 @@ object InstallControl {
     
     /** The license is being acquired for the app. */
     @js.native
-    sealed trait acquiringLicense extends AppInstallState
+    sealed trait acquiringLicense
+      extends StObject
+         with AppInstallState
     
     /** The app install is canceled. */
     @js.native
-    sealed trait canceled extends AppInstallState
+    sealed trait canceled
+      extends StObject
+         with AppInstallState
     
     /** The app install is complete. */
     @js.native
-    sealed trait completed extends AppInstallState
+    sealed trait completed
+      extends StObject
+         with AppInstallState
     
     /** The app is being downloaded. */
     @js.native
-    sealed trait downloading extends AppInstallState
+    sealed trait downloading
+      extends StObject
+         with AppInstallState
     
     /** The ap install encountered an error. */
     @js.native
-    sealed trait error extends AppInstallState
+    sealed trait error
+      extends StObject
+         with AppInstallState
     
     /** The app is in the process of being installed. */
     @js.native
-    sealed trait installing extends AppInstallState
+    sealed trait installing
+      extends StObject
+         with AppInstallState
     
     /** The app install was paused. */
     @js.native
-    sealed trait paused extends AppInstallState
+    sealed trait paused
+      extends StObject
+         with AppInstallState
     
     /** The app install was paused because the battery is low. */
     @js.native
-    sealed trait pausedLowBattery extends AppInstallState
+    sealed trait pausedLowBattery
+      extends StObject
+         with AppInstallState
     
     /** The app install was paused because the app package was large enough to trigger a prompt for the user to download the app over Wi-Fi. */
     @js.native
-    sealed trait pausedWiFiRecommended extends AppInstallState
+    sealed trait pausedWiFiRecommended
+      extends StObject
+         with AppInstallState
     
     /** The app install was paused because the app package was large enough to require the user to download the app over Wi-Fi. */
     @js.native
-    sealed trait pausedWiFiRequired extends AppInstallState
+    sealed trait pausedWiFiRequired
+      extends StObject
+         with AppInstallState
     
     /** The app install is pending. */
     @js.native
-    sealed trait pending extends AppInstallState
+    sealed trait pending
+      extends StObject
+         with AppInstallState
     
     /** The app is ready to download. */
     @js.native
-    sealed trait readyToDownload extends AppInstallState
+    sealed trait readyToDownload
+      extends StObject
+         with AppInstallState
     
     /** The app data is being restored. */
     @js.native
-    sealed trait restoringData extends AppInstallState
+    sealed trait restoringData
+      extends StObject
+         with AppInstallState
     
     /** The app install is starting. */
     @js.native
-    sealed trait starting extends AppInstallState
+    sealed trait starting
+      extends StObject
+         with AppInstallState
   }
   
   @js.native
@@ -91,15 +118,21 @@ object InstallControl {
     
     /** The app is being installed. */
     @js.native
-    sealed trait install extends AppInstallType
+    sealed trait install
+      extends StObject
+         with AppInstallType
     
     /** The app installation is being repaired. */
     @js.native
-    sealed trait repair extends AppInstallType
+    sealed trait repair
+      extends StObject
+         with AppInstallType
     
     /** The app is being updated. */
     @js.native
-    sealed trait update extends AppInstallType
+    sealed trait update
+      extends StObject
+         with AppInstallType
   }
   
   @js.native
@@ -111,30 +144,38 @@ object InstallControl {
     
     /** Automatic app updates are disabled by the user. */
     @js.native
-    sealed trait disabled extends AutoUpdateSetting
+    sealed trait disabled
+      extends StObject
+         with AutoUpdateSetting
     
     /** Automatic app updates are disabled by policy. */
     @js.native
-    sealed trait disabledByPolicy extends AutoUpdateSetting
+    sealed trait disabledByPolicy
+      extends StObject
+         with AutoUpdateSetting
     
     /** Automatic app updates are enabled by the user. */
     @js.native
-    sealed trait enabled extends AutoUpdateSetting
+    sealed trait enabled
+      extends StObject
+         with AutoUpdateSetting
     
     /** Automatic app updates are enabled by policy. */
     @js.native
-    sealed trait enabledByPolicy extends AutoUpdateSetting
+    sealed trait enabledByPolicy
+      extends StObject
+         with AutoUpdateSetting
   }
   
   /** Represents an app that is in the installation queue. */
   @js.native
   trait AppInstallItem extends StObject {
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, _]): Unit = js.native
+    def addEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
     @JSName("addEventListener")
-    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, _]): Unit = js.native
+    def addEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
     
     /** Cancels the installation of the current app. */
     def cancel(): Unit = js.native
@@ -157,16 +198,16 @@ object InstallControl {
     var isUserInitiated: Boolean = js.native
     
     /** Occurs when the installation of the current app has finished. */
-    def oncompleted(ev: js.Any with WinRTEvent[AppInstallItem]): Unit = js.native
+    def oncompleted(ev: js.Any & WinRTEvent[AppInstallItem]): Unit = js.native
     /** Occurs when the installation of the current app has finished. */
     @JSName("oncompleted")
-    var oncompleted_Original: TypedEventHandler[AppInstallItem, _] = js.native
+    var oncompleted_Original: TypedEventHandler[AppInstallItem, js.Any] = js.native
     
     /** Occurs when the installation status of the current app has changed. */
-    def onstatuschanged(ev: js.Any with WinRTEvent[AppInstallItem]): Unit = js.native
+    def onstatuschanged(ev: js.Any & WinRTEvent[AppInstallItem]): Unit = js.native
     /** Occurs when the installation status of the current app has changed. */
     @JSName("onstatuschanged")
-    var onstatuschanged_Original: TypedEventHandler[AppInstallItem, _] = js.native
+    var onstatuschanged_Original: TypedEventHandler[AppInstallItem, js.Any] = js.native
     
     /** Gets the package family name for the current app. */
     var packageFamilyName: String = js.native
@@ -182,11 +223,11 @@ object InstallControl {
     /** Gets the product ID for the current app. */
     var productId: String = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, _]): Unit = js.native
+    def removeEventListener_completed(`type`: completed, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
     @JSName("removeEventListener")
-    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, _]): Unit = js.native
+    def removeEventListener_statuschanged(`type`: statuschanged, listener: TypedEventHandler[AppInstallItem, js.Any]): Unit = js.native
     
     /** Restarts the installation of the current app. */
     def restart(): Unit = js.native
@@ -204,7 +245,7 @@ object InstallControl {
     /** Gets or sets the user identity associated with the app installs. */
     var acquisitionIdentity: String = js.native
     
-    def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("addEventListener")
     def addEventListener_itemcompleted(
       `type`: itemcompleted,
@@ -267,13 +308,13 @@ object InstallControl {
     def isStoreBlockedByPolicyAsync(storeClientName: String, storeClientPublisher: String): IPromiseWithIAsyncOperation[Boolean] = js.native
     
     /** Occurs when an app has finished installing. */
-    def onitemcompleted(ev: AppInstallManagerItemEventArgs with WinRTEvent[AppInstallManager]): Unit = js.native
+    def onitemcompleted(ev: AppInstallManagerItemEventArgs & WinRTEvent[AppInstallManager]): Unit = js.native
     /** Occurs when an app has finished installing. */
     @JSName("onitemcompleted")
     var onitemcompleted_Original: TypedEventHandler[AppInstallManager, AppInstallManagerItemEventArgs] = js.native
     
     /** Occurs when the status of an app in the installation queue has changed. */
-    def onitemstatuschanged(ev: AppInstallManagerItemEventArgs with WinRTEvent[AppInstallManager]): Unit = js.native
+    def onitemstatuschanged(ev: AppInstallManagerItemEventArgs & WinRTEvent[AppInstallManager]): Unit = js.native
     /** Occurs when the status of an app in the installation queue has changed. */
     @JSName("onitemstatuschanged")
     var onitemstatuschanged_Original: TypedEventHandler[AppInstallManager, AppInstallManagerItemEventArgs] = js.native
@@ -290,7 +331,7 @@ object InstallControl {
       */
     def pause(productId: String, correlationVector: String): Unit = js.native
     
-    def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+    def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
     @JSName("removeEventListener")
     def removeEventListener_itemcompleted(
       `type`: itemcompleted,
@@ -318,13 +359,13 @@ object InstallControl {
       * Searches for all available updates to apps installed on the current computer or device.
       * @return An asynchronous operation that, on successful completion, returns the collection of apps that have available updates. If you use Asynchronous programming, the result type is a read-only list/vector of AppInstallItem items. (You can use APIs of IVectorView<AppInstallItem> for C++ or JavaScript, APIs of IReadOnlyList<AppInstallItem> for .NET.)
       */
-    def searchForAllUpdatesAsync(): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    def searchForAllUpdatesAsync(): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
     /**
       * Searches for all available updates to apps installed on the current computer or device, with the option to generate telemetry data.
       * @param correlationVector A correlation vector string that can be used to generate telemetry data.
       * @return An asynchronous operation that, on successful completion, returns the collection of apps that have available updates. If you use Asynchronous programming, the result type is a read-only list/vector of AppInstallItem items. (You can use APIs of IVectorView<AppInstallItem> for C++ or JavaScript, APIs of IReadOnlyList<AppInstallItem> for .NET.)
       */
-    def searchForAllUpdatesAsync(correlationVector: String): IPromiseWithIAsyncOperation[IVectorView[_]] = js.native
+    def searchForAllUpdatesAsync(correlationVector: String): IPromiseWithIAsyncOperation[IVectorView[js.Any]] = js.native
     
     /**
       * Searches for updates for the specified app.
@@ -389,11 +430,10 @@ object InstallControl {
   }
   
   /** Provides data for the ItemCompleted and ItemStatusChanged events. */
-  @js.native
   trait AppInstallManagerItemEventArgs extends StObject {
     
     /** Gets an object that describes the app that has finished installing (for the ItemCompleted event) or whose installation status has changed (for the ItemStatusChanged event). */
-    var item: AppInstallItem = js.native
+    var item: AppInstallItem
   }
   object AppInstallManagerItemEventArgs {
     
@@ -412,23 +452,22 @@ object InstallControl {
   }
   
   /** Describes the status of an app that is in the installation queue. */
-  @js.native
   trait AppInstallStatus extends StObject {
     
     /** Gets the number of bytes that have been downloaded for the current app. */
-    var bytesDownloaded: Double = js.native
+    var bytesDownloaded: Double
     
     /** Gets the download size in bytes for the current app. */
-    var downloadSizeInBytes: Double = js.native
+    var downloadSizeInBytes: Double
     
     /** Gets the error code for an app that has encountered an installation failure. */
-    var errorCode: WinRTError = js.native
+    var errorCode: WinRTError
     
     /** Gets the installation state of the current app. */
-    var installState: AppInstallState = js.native
+    var installState: AppInstallState
     
     /** Gets the completion percentage for the installation of the current app. */
-    var percentComplete: Double = js.native
+    var percentComplete: Double
   }
   object AppInstallStatus {
     

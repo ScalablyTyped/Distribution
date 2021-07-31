@@ -3,16 +3,15 @@ package typings.reactMdl.mod
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItemProps
-  extends HTMLProps[js.Any] {
+  extends StObject
+     with HTMLProps[js.Any] {
   
-  var threeLine: js.UndefOr[Boolean] = js.native
+  var threeLine: js.UndefOr[Boolean] = js.undefined
   
-  var twoLine: js.UndefOr[Boolean] = js.native
+  var twoLine: js.UndefOr[Boolean] = js.undefined
 }
 object ListItemProps {
   

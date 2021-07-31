@@ -2,21 +2,21 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GraphExplore[T] extends Generic {
+trait GraphExplore[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var index: String | js.Array[String] = js.native
+  var index: String | js.Array[String]
   
-  var routing: js.UndefOr[String] = js.native
+  var routing: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String | js.Array[String]] = js.native
+  var `type`: js.UndefOr[String | js.Array[String]] = js.undefined
 }
 object GraphExplore {
   
@@ -27,7 +27,7 @@ object GraphExplore {
   }
   
   @scala.inline
-  implicit class GraphExploreMutableBuilder[Self <: GraphExplore[_], T] (val x: Self with GraphExplore[T]) extends AnyVal {
+  implicit class GraphExploreMutableBuilder[Self <: GraphExplore[?], T] (val x: Self & GraphExplore[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

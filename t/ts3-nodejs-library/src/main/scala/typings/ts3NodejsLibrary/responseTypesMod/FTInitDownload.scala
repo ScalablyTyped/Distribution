@@ -3,33 +3,33 @@ package typings.ts3NodejsLibrary.responseTypesMod
 import typings.ts3NodejsLibrary.teamSpeakQueryMod.TeamSpeakQuery.ResponseEntry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FTInitDownload extends ResponseEntry {
+trait FTInitDownload
+  extends StObject
+     with ResponseEntry {
   
-  var clientftfid: Double = js.native
+  var clientftfid: Double
   
   /** exists when file is downloadable */
-  var ftkey: js.UndefOr[String] = js.native
+  var ftkey: js.UndefOr[String] = js.undefined
   
   /** exists when an error occured */
-  var msg: js.UndefOr[String] = js.native
+  var msg: js.UndefOr[String] = js.undefined
   
   /** exists when file is downloadable */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** exists when file is downloadable */
-  var proto: js.UndefOr[Double] = js.native
+  var proto: js.UndefOr[Double] = js.undefined
   
   /** exists when file is downloadable */
-  var serverftfid: js.UndefOr[Double] = js.native
+  var serverftfid: js.UndefOr[Double] = js.undefined
   
-  var size: Double = js.native
+  var size: Double
   
   /** exists when an error occured */
-  var status: js.UndefOr[Double] = js.native
+  var status: js.UndefOr[Double] = js.undefined
 }
 object FTInitDownload {
   

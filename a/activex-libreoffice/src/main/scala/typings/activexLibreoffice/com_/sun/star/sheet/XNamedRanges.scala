@@ -7,7 +7,6 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sheet.NamedRanges
   * @see com.sun.star.sheet.NamedRange
   */
-@js.native
-trait XNamedRanges extends XNameAccess {
+trait XNamedRanges
+  extends StObject
+     with XNameAccess {
   
   /**
     * adds a new named range to the collection.
@@ -25,7 +25,7 @@ trait XNamedRanges extends XNameAccess {
     * @param aPosition specifies the base address for relative cell references.
     * @param nType a combination of flags that specify the type of a named range, as defined in {@link NamedRangeFlag} .  This parameter will be zero for any
     */
-  def addNewByName(aName: String, aContent: String, aPosition: CellAddress, nType: Double): Unit = js.native
+  def addNewByName(aName: String, aContent: String, aPosition: CellAddress, nType: Double): Unit
   
   /**
     * creates named cell ranges from titles in a cell range.
@@ -39,7 +39,7 @@ trait XNamedRanges extends XNameAccess {
     * @param aSource the cell range used to create the named ranges.
     * @param aBorder specifies the location of the title cells.
     */
-  def addNewFromTitles(aSource: CellRangeAddress, aBorder: Border): Unit = js.native
+  def addNewFromTitles(aSource: CellRangeAddress, aBorder: Border): Unit
   
   /**
     * writes a list of all named ranges into the document.
@@ -47,10 +47,10 @@ trait XNamedRanges extends XNameAccess {
     * The first column of the list contains the names. The second column contains the contents of the named ranges.
     * @param aOutputPosition specifies the top left cell of the output range.
     */
-  def outputList(aOutputPosition: CellAddress): Unit = js.native
+  def outputList(aOutputPosition: CellAddress): Unit
   
   /** removes a named range from the collection. */
-  def removeByName(aName: String): Unit = js.native
+  def removeByName(aName: String): Unit
 }
 object XNamedRanges {
   

@@ -2,13 +2,11 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response message for StepService.List.
   */
-@js.native
 trait SchemaListStepsResponse extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaListStepsResponse extends StObject {
     * indicates that there are more steps to read, by calling list again with
     * this value in the page_token field.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * Steps.
     */
-  var steps: js.UndefOr[js.Array[SchemaStep]] = js.native
+  var steps: js.UndefOr[js.Array[SchemaStep]] = js.undefined
 }
 object SchemaListStepsResponse {
   

@@ -2,7 +2,6 @@ package typings.vsoNodeApi.extensionManagementInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,82 +11,104 @@ sealed trait ContributionPropertyType extends StObject
 object ContributionPropertyType extends StObject {
   
   @JSBracketAccess
-  def apply(value: scala.Double): js.UndefOr[ContributionPropertyType with scala.Double] = js.native
+  def apply(value: scala.Double): js.UndefOr[ContributionPropertyType & scala.Double] = js.native
   
   /**
     * Value is an array
     */
   @js.native
-  sealed trait Array extends ContributionPropertyType
-  /* 256 */ val Array: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Array with scala.Double = js.native
+  sealed trait Array
+    extends StObject
+       with ContributionPropertyType
+  /* 256 */ val Array: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Array & scala.Double = js.native
   
   /**
     * Value is True or False
     */
   @js.native
-  sealed trait Boolean extends ContributionPropertyType
-  /* 8 */ val Boolean: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Boolean with scala.Double = js.native
+  sealed trait Boolean
+    extends StObject
+       with ContributionPropertyType
+  /* 8 */ val Boolean: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Boolean & scala.Double = js.native
   
   /**
     * Value is a DateTime object
     */
   @js.native
-  sealed trait DateTime extends ContributionPropertyType
-  /* 64 */ val DateTime: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.DateTime with scala.Double = js.native
+  sealed trait DateTime
+    extends StObject
+       with ContributionPropertyType
+  /* 64 */ val DateTime: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.DateTime & scala.Double = js.native
   
   /**
     * Value is a generic Dictionary/JObject/property bag
     */
   @js.native
-  sealed trait Dictionary extends ContributionPropertyType
-  /* 128 */ val Dictionary: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Dictionary with scala.Double = js.native
+  sealed trait Dictionary
+    extends StObject
+       with ContributionPropertyType
+  /* 128 */ val Dictionary: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Dictionary & scala.Double = js.native
   
   /**
     * Value is a double
     */
   @js.native
-  sealed trait Double extends ContributionPropertyType
-  /* 32 */ val Double: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Double with scala.Double = js.native
+  sealed trait Double
+    extends StObject
+       with ContributionPropertyType
+  /* 32 */ val Double: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Double & scala.Double = js.native
   
   /**
     * Value is a GUID
     */
   @js.native
-  sealed trait Guid extends ContributionPropertyType
-  /* 4 */ val Guid: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Guid with scala.Double = js.native
+  sealed trait Guid
+    extends StObject
+       with ContributionPropertyType
+  /* 4 */ val Guid: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Guid & scala.Double = js.native
   
   /**
     * Value is an integer
     */
   @js.native
-  sealed trait Integer extends ContributionPropertyType
-  /* 16 */ val Integer: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Integer with scala.Double = js.native
+  sealed trait Integer
+    extends StObject
+       with ContributionPropertyType
+  /* 16 */ val Integer: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Integer & scala.Double = js.native
   
   /**
     * Value is an arbitrary/custom object
     */
   @js.native
-  sealed trait Object extends ContributionPropertyType
-  /* 512 */ val Object: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Object with scala.Double = js.native
+  sealed trait Object
+    extends StObject
+       with ContributionPropertyType
+  /* 512 */ val Object: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Object & scala.Double = js.native
   
   /**
     * Value is a string
     */
   @js.native
-  sealed trait String extends ContributionPropertyType
-  /* 1 */ val String: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.String with scala.Double = js.native
+  sealed trait String
+    extends StObject
+       with ContributionPropertyType
+  /* 1 */ val String: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.String & scala.Double = js.native
   
   /**
     * Contribution type is unknown (value may be anything)
     */
   @js.native
-  sealed trait Unknown extends ContributionPropertyType
-  /* 0 */ val Unknown: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Unknown with scala.Double = js.native
+  sealed trait Unknown
+    extends StObject
+       with ContributionPropertyType
+  /* 0 */ val Unknown: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Unknown & scala.Double = js.native
   
   /**
     * Value is a Uri
     */
   @js.native
-  sealed trait Uri extends ContributionPropertyType
-  /* 2 */ val Uri: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Uri with scala.Double = js.native
+  sealed trait Uri
+    extends StObject
+       with ContributionPropertyType
+  /* 2 */ val Uri: typings.vsoNodeApi.extensionManagementInterfacesMod.ContributionPropertyType.Uri & scala.Double = js.native
 }

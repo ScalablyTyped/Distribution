@@ -2,46 +2,44 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputUpdate extends StObject {
   
   /**
     * The input ID of the application input to be updated.
     */
-  var InputId: Id = js.native
+  var InputId: Id
   
   /**
     * Describes the parallelism updates (the number of in-application streams Kinesis Data Analytics creates for the specific streaming source).
     */
-  var InputParallelismUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputParallelismUpdate] = js.native
+  var InputParallelismUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputParallelismUpdate] = js.undefined
   
   /**
     * Describes updates to an InputProcessingConfiguration.
     */
-  var InputProcessingConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputProcessingConfigurationUpdate] = js.native
+  var InputProcessingConfigurationUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputProcessingConfigurationUpdate] = js.undefined
   
   /**
     * Describes the data format on the streaming source, and how record elements on the streaming source map to columns of the in-application stream that is created.
     */
-  var InputSchemaUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputSchemaUpdate] = js.native
+  var InputSchemaUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.InputSchemaUpdate] = js.undefined
   
   /**
     * If a Kinesis Data Firehose delivery stream is the streaming source to be updated, provides an updated stream ARN.
     */
-  var KinesisFirehoseInputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.KinesisFirehoseInputUpdate] = js.native
+  var KinesisFirehoseInputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.KinesisFirehoseInputUpdate] = js.undefined
   
   /**
     * If a Kinesis data stream is the streaming source to be updated, provides an updated stream Amazon Resource Name (ARN).
     */
-  var KinesisStreamsInputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.KinesisStreamsInputUpdate] = js.native
+  var KinesisStreamsInputUpdate: js.UndefOr[typings.awsSdk.kinesisanalyticsv2Mod.KinesisStreamsInputUpdate] = js.undefined
   
   /**
     * The name prefix for in-application streams that Kinesis Data Analytics creates for the specific streaming source.
     */
-  var NamePrefixUpdate: js.UndefOr[InAppStreamName] = js.native
+  var NamePrefixUpdate: js.UndefOr[InAppStreamName] = js.undefined
 }
 object InputUpdate {
   

@@ -10,10 +10,13 @@ import typings.blueprintjsTimezone.timezonePickerMod.ITimezonePickerProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object componentsMod {
+  
+  @JSImport("@blueprintjs/timezone/lib/esm/components", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object TimezoneDisplayFormat {
     
@@ -77,10 +80,8 @@ object componentsMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@blueprintjs/timezone/lib/esm/components", "getTimezoneMetadata")
-  @js.native
-  def getTimezoneMetadata(timezone: String): ITimezoneMetadata = js.native
-  @JSImport("@blueprintjs/timezone/lib/esm/components", "getTimezoneMetadata")
-  @js.native
-  def getTimezoneMetadata(timezone: String, date: Date): ITimezoneMetadata = js.native
+  @scala.inline
+  def getTimezoneMetadata(timezone: String): ITimezoneMetadata = ^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any]).asInstanceOf[ITimezoneMetadata]
+  @scala.inline
+  def getTimezoneMetadata(timezone: String, date: Date): ITimezoneMetadata = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimezoneMetadata")(timezone.asInstanceOf[js.Any], date.asInstanceOf[js.Any])).asInstanceOf[ITimezoneMetadata]
 }

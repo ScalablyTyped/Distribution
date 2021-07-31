@@ -5,15 +5,15 @@ import typings.shellQuote.mod._ParseEntry
 import typings.shellQuote.shellQuoteStrings.glob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Comment extends _ParseEntry {
+  trait Comment
+    extends StObject
+       with _ParseEntry {
     
-    var comment: String = js.native
+    var comment: String
   }
   object Comment {
     
@@ -31,10 +31,11 @@ object anon {
     }
   }
   
-  @js.native
-  trait Op extends _ParseEntry {
+  trait Op
+    extends StObject
+       with _ParseEntry {
     
-    var op: ControlOperator = js.native
+    var op: ControlOperator
   }
   object Op {
     
@@ -52,18 +53,19 @@ object anon {
     }
   }
   
-  @js.native
-  trait Pattern extends _ParseEntry {
+  trait Pattern
+    extends StObject
+       with _ParseEntry {
     
-    var op: glob = js.native
+    var op: glob
     
-    var pattern: String = js.native
+    var pattern: String
   }
   object Pattern {
     
     @scala.inline
-    def apply(op: glob, pattern: String): Pattern = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+    def apply(pattern: String): Pattern = {
+      val __obj = js.Dynamic.literal(op = "glob", pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[Pattern]
     }
     

@@ -4,23 +4,21 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Storage.Streams.RandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ShareTarget {
   
-  @js.native
   trait IQuickLink extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var supportedDataFormats: IVector[String] = js.native
+    var supportedDataFormats: IVector[String]
     
-    var supportedFileTypes: IVector[String] = js.native
+    var supportedFileTypes: IVector[String]
     
-    var thumbnail: RandomAccessStreamReference = js.native
+    var thumbnail: RandomAccessStreamReference
     
-    var title: String = js.native
+    var title: String
   }
   object IQuickLink {
     
@@ -77,8 +75,9 @@ object ShareTarget {
     def reportSubmittedBackgroundTask(): Unit = js.native
   }
   
-  @js.native
-  trait QuickLink extends IQuickLink
+  trait QuickLink
+    extends StObject
+       with IQuickLink
   object QuickLink {
     
     @scala.inline
@@ -95,5 +94,7 @@ object ShareTarget {
   }
   
   @js.native
-  trait ShareOperation extends IShareOperation
+  trait ShareOperation
+    extends StObject
+       with IShareOperation
 }

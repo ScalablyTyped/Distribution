@@ -2,7 +2,6 @@ package typings.angularCompiler.outputAstMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -19,8 +18,8 @@ object JSDocTag {
   }
   
   @scala.inline
-  def Text(text: String): typings.angularCompiler.anon.Text = {
-    val __obj = js.Dynamic.literal(text = text.asInstanceOf[js.Any])
+  def Text(tagName: Unit, text: String): typings.angularCompiler.anon.Text = {
+    val __obj = js.Dynamic.literal(tagName = tagName.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.angularCompiler.anon.Text]
   }
 }

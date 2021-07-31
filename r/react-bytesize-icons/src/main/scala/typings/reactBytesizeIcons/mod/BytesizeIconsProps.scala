@@ -2,17 +2,17 @@ package typings.reactBytesizeIcons.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BytesizeIconsProps extends BytesizeBaseIconsProps {
+trait BytesizeIconsProps
+  extends StObject
+     with BytesizeBaseIconsProps {
   
-  var strokeLinecap: js.UndefOr[StrokeLinecap] = js.native
+  var strokeLinecap: js.UndefOr[StrokeLinecap] = js.undefined
   
-  var strokeLinejoin: js.UndefOr[StrokeLinejoin] = js.native
+  var strokeLinejoin: js.UndefOr[StrokeLinejoin] = js.undefined
   
-  var strokeWidth: js.UndefOr[String] = js.native
+  var strokeWidth: js.UndefOr[String] = js.undefined
 }
 object BytesizeIconsProps {
   

@@ -3,7 +3,6 @@ package typings.athenajs.mod
 import typings.std.HTMLAudioElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -26,13 +25,13 @@ trait _AudioManager extends StObject {
     *
     */
   def play(id: String): js.Any = js.native
-  def play(id: String, loop: js.UndefOr[scala.Nothing], volume: js.UndefOr[scala.Nothing], panning: Double): js.Any = js.native
-  def play(id: String, loop: js.UndefOr[scala.Nothing], volume: Double): js.Any = js.native
-  def play(id: String, loop: js.UndefOr[scala.Nothing], volume: Double, panning: Double): js.Any = js.native
   def play(id: String, loop: Boolean): js.Any = js.native
-  def play(id: String, loop: Boolean, volume: js.UndefOr[scala.Nothing], panning: Double): js.Any = js.native
   def play(id: String, loop: Boolean, volume: Double): js.Any = js.native
   def play(id: String, loop: Boolean, volume: Double, panning: Double): js.Any = js.native
+  def play(id: String, loop: Boolean, volume: Unit, panning: Double): js.Any = js.native
+  def play(id: String, loop: Unit, volume: Double): js.Any = js.native
+  def play(id: String, loop: Unit, volume: Double, panning: Double): js.Any = js.native
+  def play(id: String, loop: Unit, volume: Unit, panning: Double): js.Any = js.native
   
   /**
     * Stops playing the sound id

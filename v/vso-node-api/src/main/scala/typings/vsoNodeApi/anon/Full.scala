@@ -2,19 +2,17 @@ package typings.vsoNodeApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Full extends StObject {
   
-  var full: scala.Double = js.native
+  var full: scala.Double
   
-  var none: scala.Double = js.native
+  var none: scala.Double
   
-  var oneLevel: scala.Double = js.native
+  var oneLevel: scala.Double
   
-  var oneLevelPlusNestedEmptyFolders: scala.Double = js.native
+  var oneLevelPlusNestedEmptyFolders: scala.Double
 }
 object Full {
   

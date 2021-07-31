@@ -5,60 +5,59 @@ import typings.typedoc.serializersMod.DecoratorWrapper
 import typings.typedoc.serializersMod.SourceReferenceWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.Reflection */
 /* Inlined parent typedoc.typedoc/dist/lib/serialization/schema.S<typedoc.typedoc/dist/lib/models.ContainerReflection, 'groups' | 'categories'> */
-@js.native
 trait ContainerReflection
-  extends __ModelToObject[js.Any] {
+  extends StObject
+     with __ModelToObject[js.Any] {
   
   var categories: js.UndefOr[
     ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]]] | js.Array[typings.typedoc.reflectionCategoryMod.ReflectionCategory]
-  ] = js.native
+  ] = js.undefined
   
-  var children: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var children: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
   
   var comment: js.UndefOr[
     ModelToObject[js.UndefOr[typings.typedoc.commentsCommentMod.Comment]] | typings.typedoc.commentsCommentMod.Comment
-  ] = js.native
+  ] = js.undefined
   
   var decorates: js.UndefOr[
     ModelToObject[js.UndefOr[js.Array[typings.typedoc.modelsTypesMod.Type]]] | js.Array[typings.typedoc.modelsTypesMod.Type]
-  ] = js.native
+  ] = js.undefined
   
-  var decorators: js.UndefOr[ModelToObject[js.Array[DecoratorWrapper]]] = js.native
+  var decorators: js.UndefOr[ModelToObject[js.Array[DecoratorWrapper]]] = js.undefined
   
-  var flags: ReflectionFlags = js.native
+  var flags: ReflectionFlags
   
-  var getSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var getSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
   
   var groups: js.UndefOr[
     ModelToObject[js.UndefOr[js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]]] | js.Array[typings.typedoc.reflectionGroupMod.ReflectionGroup]
-  ] = js.native
+  ] = js.undefined
   
-  var id: ModelToObject[Double] | Double = js.native
+  var id: ModelToObject[Double] | Double
   
-  var indexSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var indexSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
   
-  var kind: ModelToObject[ReflectionKind] | ReflectionKind = js.native
+  var kind: ModelToObject[ReflectionKind] | ReflectionKind
   
-  var kindString: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.native
+  var kindString: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.undefined
   
-  var name: ModelToObject[String] | String = js.native
+  var name: ModelToObject[String] | String
   
-  var originalName: js.UndefOr[String] = js.native
+  var originalName: js.UndefOr[String] = js.undefined
   
-  var parameters: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var parameters: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
   
-  var setSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var setSignature: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
   
-  var signatures: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var signatures: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
   
-  var sources: js.UndefOr[ModelToObject[js.Array[SourceReferenceWrapper]]] = js.native
+  var sources: js.UndefOr[ModelToObject[js.Array[SourceReferenceWrapper]]] = js.undefined
   
-  var typeParameter: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.native
+  var typeParameter: js.UndefOr[js.Array[ModelToObject[typings.typedoc.modelsMod.Reflection]]] = js.undefined
 }
 object ContainerReflection {
   

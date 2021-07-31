@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoLocation extends StObject {
   
   /**
     * The latitude information of the remote IP address.
     */
-  var Lat: js.UndefOr[Double] = js.native
+  var Lat: js.UndefOr[Double] = js.undefined
   
   /**
     * The longitude information of the remote IP address.
     */
-  var Lon: js.UndefOr[Double] = js.native
+  var Lon: js.UndefOr[Double] = js.undefined
 }
 object GeoLocation {
   

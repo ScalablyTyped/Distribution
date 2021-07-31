@@ -2,19 +2,17 @@ package typings.mfiles
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAccessControlListComponentContainer extends StObject {
   
-  def At(AccessControlListComponentKey: IAccessControlListComponentKey): IAccessControlListComponent = js.native
+  def At(AccessControlListComponentKey: IAccessControlListComponentKey): IAccessControlListComponent
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def GetKeys(): IAccessControlListComponentKeys = js.native
+  def GetKeys(): IAccessControlListComponentKeys
   
-  def HasKey(AccessControlListComponentKey: IAccessControlListComponentKey): Boolean = js.native
+  def HasKey(AccessControlListComponentKey: IAccessControlListComponentKey): Boolean
 }
 object IAccessControlListComponentContainer {
   

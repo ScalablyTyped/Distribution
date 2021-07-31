@@ -3,21 +3,19 @@ package typings.googleapis.youtubeAnalyticsV1beta1Mod.youtubeAnalyticsV1beta1
 import typings.googleapis.anon.Kind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGroupItem extends StObject {
   
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var resource: js.UndefOr[Kind] = js.native
+  var resource: js.UndefOr[Kind] = js.undefined
 }
 object SchemaGroupItem {
   

@@ -30,15 +30,14 @@ import typings.awsSdkClientGlacierNode.uploadArchiveExceptionsUnionMod.UploadArc
 import typings.awsSdkClientGlacierNode.uploadMultipartPartExceptionsUnionMod.UploadMultipartPartExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesResourceNotFoundExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceNotFoundExceptionDetails> * / any */ @js.native
-  trait ResourceNotFoundException
-    extends AbortMultipartUploadExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ResourceNotFoundExceptionDetails> * / any */ trait ResourceNotFoundException
+    extends StObject
+       with AbortMultipartUploadExceptionsUnion
        with AbortVaultLockExceptionsUnion
        with AddTagsToVaultExceptionsUnion
        with CompleteMultipartUploadExceptionsUnion
@@ -67,13 +66,13 @@ object typesResourceNotFoundExceptionMod {
        with UploadArchiveExceptionsUnion
        with UploadMultipartPartExceptionsUnion {
     
-    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.ResourceNotFoundException = js.native
+    var name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.ResourceNotFoundException
   }
   object ResourceNotFoundException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientGlacierNode.awsSdkClientGlacierNodeStrings.ResourceNotFoundException): ResourceNotFoundException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ResourceNotFoundException = {
+      val __obj = js.Dynamic.literal(name = "ResourceNotFoundException")
       __obj.asInstanceOf[ResourceNotFoundException]
     }
     
@@ -85,23 +84,22 @@ object typesResourceNotFoundExceptionMod {
     }
   }
   
-  @js.native
   trait ResourceNotFoundExceptionDetails extends StObject {
     
     /**
       * <p>404 Not Found</p>
       */
-    var code: js.UndefOr[String] = js.native
+    var code: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Returned if the specified resource (such as a vault, upload ID, or job ID) doesn't exist.</p>
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
     
     /**
       * <p>Client</p>
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object ResourceNotFoundExceptionDetails {
     

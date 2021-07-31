@@ -2,17 +2,17 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetClientGrantsOptionsPaged extends GetClientGrantsOptions {
+trait GetClientGrantsOptionsPaged
+  extends StObject
+     with GetClientGrantsOptions {
   
   /**
     * true if a query summary must be included in the result, false otherwise
     * @default false
     */
-  var include_totals: js.UndefOr[Boolean] = js.native
+  var include_totals: js.UndefOr[Boolean] = js.undefined
 }
 object GetClientGrantsOptionsPaged {
   

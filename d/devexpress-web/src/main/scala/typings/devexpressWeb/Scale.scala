@@ -2,24 +2,22 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Defines the scaling settings.
   */
-@js.native
 trait Scale extends StObject {
   
   /**
     * Specifies the image's x-scale factor as a percent.
     */
-  var x: Double = js.native
+  var x: Double
   
   /**
     * Specifies the image's y-scale factor as a percent.
     */
-  var y: Double = js.native
+  var y: Double
 }
 object Scale {
   

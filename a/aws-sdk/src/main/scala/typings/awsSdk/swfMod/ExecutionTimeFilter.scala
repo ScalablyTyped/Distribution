@@ -2,21 +2,19 @@ package typings.awsSdk.swfMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExecutionTimeFilter extends StObject {
   
   /**
     * Specifies the latest start or close date and time to return.
     */
-  var latestDate: js.UndefOr[Timestamp] = js.native
+  var latestDate: js.UndefOr[Timestamp] = js.undefined
   
   /**
     * Specifies the oldest start or close date and time to return.
     */
-  var oldestDate: Timestamp = js.native
+  var oldestDate: Timestamp
 }
 object ExecutionTimeFilter {
   

@@ -3,47 +3,47 @@ package typings.photonui.photonui
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MouseManager extends Base {
+trait MouseManager
+  extends StObject
+     with Base {
   
-  var action: String = js.native
-  
-  // readonly
-  var btnLeft: Boolean = js.native
+  var action: String
   
   // readonly
-  var btnMiddle: Boolean = js.native
+  var btnLeft: Boolean
   
   // readonly
-  var btnRight: Boolean = js.native
+  var btnMiddle: Boolean
   
   // readonly
-  var button: String = js.native
+  var btnRight: Boolean
   
   // readonly
-  var deltaX: Double = js.native
+  var button: String
   
   // readonly
-  var deltaY: Double = js.native
-  
-  var element: HTMLElement = js.native
+  var deltaX: Double
   
   // readonly
-  var pageX: Double = js.native
+  var deltaY: Double
+  
+  var element: HTMLElement
   
   // readonly
-  var pageY: Double = js.native
-  
-  var threshold: Double = js.native
+  var pageX: Double
   
   // readonly
-  var x: Double = js.native
+  var pageY: Double
+  
+  var threshold: Double
   
   // readonly
-  var y: Double = js.native
+  var x: Double
+  
+  // readonly
+  var y: Double
 }
 object MouseManager {
   

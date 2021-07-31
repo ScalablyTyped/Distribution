@@ -2,86 +2,84 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Volume extends StObject {
   
   /**
     * Information about the volume attachments.
     */
-  var Attachments: js.UndefOr[VolumeAttachmentList] = js.native
+  var Attachments: js.UndefOr[VolumeAttachmentList] = js.undefined
   
   /**
     * The Availability Zone for the volume.
     */
-  var AvailabilityZone: js.UndefOr[String] = js.native
+  var AvailabilityZone: js.UndefOr[String] = js.undefined
   
   /**
     * The time stamp when volume creation was initiated.
     */
-  var CreateTime: js.UndefOr[DateTime] = js.native
+  var CreateTime: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Indicates whether the volume is encrypted.
     */
-  var Encrypted: js.UndefOr[Boolean] = js.native
+  var Encrypted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the volume was created using fast snapshot restore.
     */
-  var FastRestored: js.UndefOr[Boolean] = js.native
+  var FastRestored: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of I/O operations per second (IOPS) that the volume supports. For Provisioned IOPS SSD volumes, this represents the number of IOPS that are provisioned for the volume. For General Purpose SSD volumes, this represents the baseline performance of the volume and the rate at which the volume accumulates I/O credits for bursting. For more information, see Amazon EBS volume types in the Amazon Elastic Compute Cloud User Guide. Constraints: Range is 100-16,000 IOPS for gp2 volumes and 100 to 64,000 IOPS for io1 and io2 volumes, in most Regions. The maximum IOPS for io1 and io2 of 64,000 is guaranteed only on Nitro-based instances. Other instance families guarantee performance up to 32,000 IOPS. Condition: This parameter is required for requests to create io1 and io2 volumes; it is not used in requests to create gp2, st1, sc1, or standard volumes.
     */
-  var Iops: js.UndefOr[Integer] = js.native
+  var Iops: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Key Management Service (AWS KMS) customer master key (CMK) that was used to protect the volume encryption key for the volume.
     */
-  var KmsKeyId: js.UndefOr[String] = js.native
+  var KmsKeyId: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether Amazon EBS Multi-Attach is enabled.
     */
-  var MultiAttachEnabled: js.UndefOr[Boolean] = js.native
+  var MultiAttachEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the Outpost.
     */
-  var OutpostArn: js.UndefOr[String] = js.native
+  var OutpostArn: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the volume, in GiBs.
     */
-  var Size: js.UndefOr[Integer] = js.native
+  var Size: js.UndefOr[Integer] = js.undefined
   
   /**
     * The snapshot from which the volume was created, if applicable.
     */
-  var SnapshotId: js.UndefOr[String] = js.native
+  var SnapshotId: js.UndefOr[String] = js.undefined
   
   /**
     * The volume state.
     */
-  var State: js.UndefOr[VolumeState] = js.native
+  var State: js.UndefOr[VolumeState] = js.undefined
   
   /**
     * Any tags assigned to the volume.
     */
-  var Tags: js.UndefOr[TagList] = js.native
+  var Tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The ID of the volume.
     */
-  var VolumeId: js.UndefOr[String] = js.native
+  var VolumeId: js.UndefOr[String] = js.undefined
   
   /**
     * The volume type. This can be gp2 for General Purpose SSD, io1 or io2 for Provisioned IOPS SSD, st1 for Throughput Optimized HDD, sc1 for Cold HDD, or standard for Magnetic volumes.
     */
-  var VolumeType: js.UndefOr[typings.awsSdk.ec2Mod.VolumeType] = js.native
+  var VolumeType: js.UndefOr[typings.awsSdk.ec2Mod.VolumeType] = js.undefined
 }
 object Volume {
   

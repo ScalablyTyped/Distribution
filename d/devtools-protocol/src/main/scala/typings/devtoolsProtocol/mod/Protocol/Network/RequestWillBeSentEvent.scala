@@ -3,66 +3,64 @@ package typings.devtoolsProtocol.mod.Protocol.Network
 import typings.devtoolsProtocol.mod.Protocol.Page.FrameId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestWillBeSentEvent extends StObject {
   
   /**
     * URL of the document this request is loaded for.
     */
-  var documentURL: String = js.native
+  var documentURL: String
   
   /**
     * Frame identifier.
     */
-  var frameId: js.UndefOr[FrameId] = js.native
+  var frameId: js.UndefOr[FrameId] = js.undefined
   
   /**
     * Whether the request is initiated by a user gesture. Defaults to false.
     */
-  var hasUserGesture: js.UndefOr[Boolean] = js.native
+  var hasUserGesture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Request initiator.
     */
-  var initiator: Initiator = js.native
+  var initiator: Initiator
   
   /**
     * Loader identifier. Empty string if the request is fetched from worker.
     */
-  var loaderId: LoaderId = js.native
+  var loaderId: LoaderId
   
   /**
     * Redirect response data.
     */
-  var redirectResponse: js.UndefOr[Response] = js.native
+  var redirectResponse: js.UndefOr[Response] = js.undefined
   
   /**
     * Request data.
     */
-  var request: Request = js.native
+  var request: Request
   
   /**
     * Request identifier.
     */
-  var requestId: RequestId = js.native
+  var requestId: RequestId
   
   /**
     * Timestamp.
     */
-  var timestamp: MonotonicTime = js.native
+  var timestamp: MonotonicTime
   
   /**
     * Type of this resource.
     */
-  var `type`: js.UndefOr[ResourceType] = js.native
+  var `type`: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * Timestamp.
     */
-  var wallTime: TimeSinceEpoch = js.native
+  var wallTime: TimeSinceEpoch
 }
 object RequestWillBeSentEvent {
   

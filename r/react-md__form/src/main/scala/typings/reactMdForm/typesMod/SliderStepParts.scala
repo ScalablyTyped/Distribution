@@ -2,18 +2,16 @@ package typings.reactMdForm.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Required<std.Pick<@react-md/form.@react-md/form/types/slider/types.SliderStepOptions, 'min' | 'max' | 'step'>> */
-@js.native
 trait SliderStepParts extends StObject {
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
   
-  var step: Double = js.native
+  var step: Double
 }
 object SliderStepParts {
   

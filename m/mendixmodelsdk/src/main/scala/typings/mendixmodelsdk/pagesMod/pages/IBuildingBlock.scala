@@ -2,7 +2,6 @@ package typings.mendixmodelsdk.pagesMod.pages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * In version 7.7.0: introduced
   */
 @js.native
-trait IBuildingBlock extends ITemplateFormBase {
+trait IBuildingBlock
+  extends StObject
+     with ITemplateFormBase {
   
   /**
     * In version 8.4.0: added public

@@ -1,10 +1,10 @@
 package typings.fridaGum.ObjC
 
 import typings.fridaGum.AnyFunction
+import typings.fridaGum.NativePointer
 import typings.fridaGum.ObjectWrapper
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Also supports implementing a block from scratch by passing in an
   * implementation.
   */
-@js.native
-trait Block extends ObjectWrapper {
+trait Block
+  extends StObject
+     with ObjectWrapper {
   
   /**
     * Declares the signature of an externally defined block. This is needed
@@ -23,20 +24,44 @@ trait Block extends ObjectWrapper {
     *
     * @param signature Signature to use.
     */
-  def declare(signature: BlockSignature): Unit = js.native
+  def declare(signature: BlockSignature): Unit
   
   /**
     * Current implementation. You may replace it by assigning to this property.
     */
-  def implementation(args: js.Any*): js.Any = js.native
+  def implementation(args: js.Any*): js.Any
   /**
     * Current implementation. You may replace it by assigning to this property.
     */
   @JSName("implementation")
-  var implementation_Original: AnyFunction = js.native
+  var implementation_Original: AnyFunction
   
   /**
     * Signature, if available.
     */
-  var types: js.UndefOr[String] = js.native
+  var types: js.UndefOr[String] = js.undefined
+}
+object Block {
+  
+  @scala.inline
+  def apply(declare: BlockSignature => Unit, handle: NativePointer, implementation: AnyFunction): Block = {
+    val __obj = js.Dynamic.literal(declare = js.Any.fromFunction1(declare), handle = handle.asInstanceOf[js.Any], implementation = implementation.asInstanceOf[js.Any])
+    __obj.asInstanceOf[Block]
+  }
+  
+  @scala.inline
+  implicit class BlockMutableBuilder[Self <: Block] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setDeclare(value: BlockSignature => Unit): Self = StObject.set(x, "declare", js.Any.fromFunction1(value))
+    
+    @scala.inline
+    def setImplementation(value: AnyFunction): Self = StObject.set(x, "implementation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTypes(value: String): Self = StObject.set(x, "types", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setTypesUndefined: Self = StObject.set(x, "types", js.undefined)
+  }
 }

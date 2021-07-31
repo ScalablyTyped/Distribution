@@ -2,22 +2,22 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextDocumentChangeRegistrationOptions extends TextDocumentRegistrationOptions {
+trait TextDocumentChangeRegistrationOptions
+  extends StObject
+     with TextDocumentRegistrationOptions {
   
   /**
     * How documents are synced to the server.
     */
-  var syncKind: TextDocumentSyncKind = js.native
+  var syncKind: TextDocumentSyncKind
 }
 object TextDocumentChangeRegistrationOptions {
   
   @scala.inline
   def apply(syncKind: TextDocumentSyncKind): TextDocumentChangeRegistrationOptions = {
-    val __obj = js.Dynamic.literal(syncKind = syncKind.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(syncKind = syncKind.asInstanceOf[js.Any], documentSelector = null)
     __obj.asInstanceOf[TextDocumentChangeRegistrationOptions]
   }
   

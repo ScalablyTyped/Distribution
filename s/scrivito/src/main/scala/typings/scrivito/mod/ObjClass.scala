@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjClass
-  extends Instantiable1[/* arg */ js.Object, Obj] {
+  extends StObject
+     with Instantiable1[/* arg */ js.Object, Obj] {
   
   // Static methods
   def all(): js.Any = js.native

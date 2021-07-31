@@ -10,14 +10,13 @@ import typings.node.streamMod.TransformCallback
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("streaming-json-stringify", JSImport.Namespace)
   @js.native
-  val ^ : StringifyFactory = js.native
+  val ^ : js.Object & StringifyFactory = js.native
   
   @js.native
   trait Instance extends StObject {
@@ -39,18 +38,17 @@ object mod extends Shortcut {
   }
   
   /* Inlined std.Partial<streaming-json-stringify.streaming-json-stringify.Instance> & node.stream.TransformOptions */
-  @js.native
   trait Options extends StObject {
     
-    var allowHalfOpen: js.UndefOr[Boolean] = js.native
+    var allowHalfOpen: js.UndefOr[Boolean] = js.undefined
     
-    var autoDestroy: js.UndefOr[Boolean] = js.native
+    var autoDestroy: js.UndefOr[Boolean] = js.undefined
     
-    var closer: js.UndefOr[String] = js.native
+    var closer: js.UndefOr[String] = js.undefined
     
-    var decodeStrings: js.UndefOr[Boolean] = js.native
+    var decodeStrings: js.UndefOr[Boolean] = js.undefined
     
-    var defaultEncoding: js.UndefOr[BufferEncoding] = js.native
+    var defaultEncoding: js.UndefOr[BufferEncoding] = js.undefined
     
     var destroy: js.UndefOr[
         js.ThisFunction2[
@@ -59,11 +57,11 @@ object mod extends Shortcut {
           /* callback */ js.Function1[/* error */ Error | Null, Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var emitClose: js.UndefOr[Boolean] = js.native
+    var emitClose: js.UndefOr[Boolean] = js.undefined
     
-    var encoding: js.UndefOr[BufferEncoding] = js.native
+    var encoding: js.UndefOr[BufferEncoding] = js.undefined
     
     var `final`: js.UndefOr[
         js.ThisFunction1[
@@ -71,31 +69,31 @@ object mod extends Shortcut {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.native
+    var flush: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* callback */ TransformCallback, Unit]] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
     
-    var objectMode: js.UndefOr[Boolean] = js.native
+    var objectMode: js.UndefOr[Boolean] = js.undefined
     
-    var opener: js.UndefOr[String] = js.native
+    var opener: js.UndefOr[String] = js.undefined
     
-    var read: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.native
+    var read: js.UndefOr[js.ThisFunction1[/* this */ Transform, /* size */ Double, Unit]] = js.undefined
     
-    var readableHighWaterMark: js.UndefOr[Double] = js.native
+    var readableHighWaterMark: js.UndefOr[Double] = js.undefined
     
-    var readableObjectMode: js.UndefOr[Boolean] = js.native
+    var readableObjectMode: js.UndefOr[Boolean] = js.undefined
     
-    var replacer: js.UndefOr[Replacer] = js.native
+    var replacer: js.UndefOr[Replacer] = js.undefined
     
-    var seperator: js.UndefOr[String] = js.native
+    var seperator: js.UndefOr[String] = js.undefined
     
-    var space: js.UndefOr[String | Double] = js.native
+    var space: js.UndefOr[String | Double] = js.undefined
     
     var stringifier: js.UndefOr[
         js.Function3[/* value */ js.Any, /* replacer */ Replacer, /* space */ String | Double, String]
-      ] = js.native
+      ] = js.undefined
     
     var transform: js.UndefOr[
         js.ThisFunction3[
@@ -105,13 +103,13 @@ object mod extends Shortcut {
           /* callback */ TransformCallback, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var writableCorked: js.UndefOr[Double] = js.native
+    var writableCorked: js.UndefOr[Double] = js.undefined
     
-    var writableHighWaterMark: js.UndefOr[Double] = js.native
+    var writableHighWaterMark: js.UndefOr[Double] = js.undefined
     
-    var writableObjectMode: js.UndefOr[Boolean] = js.native
+    var writableObjectMode: js.UndefOr[Boolean] = js.undefined
     
     var write: js.UndefOr[
         js.ThisFunction3[
@@ -121,7 +119,7 @@ object mod extends Shortcut {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     var writev: js.UndefOr[
         js.ThisFunction2[
@@ -130,7 +128,7 @@ object mod extends Shortcut {
           /* callback */ js.Function1[/* error */ js.UndefOr[Error | Null], Unit], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Options {
     
@@ -341,15 +339,16 @@ object mod extends Shortcut {
   
   @js.native
   trait StringifyFactory
-    extends Instantiable0[Instance with Transform]
-       with Instantiable1[/* options */ Options, Instance with Transform] {
+    extends StObject
+       with Instantiable0[Instance & Transform]
+       with Instantiable1[/* options */ Options, Instance & Transform] {
     
-    def apply(): Instance with Transform = js.native
-    def apply(options: Options): Instance with Transform = js.native
+    def apply(): Instance & Transform = js.native
+    def apply(options: Options): Instance & Transform = js.native
   }
   
-  type _To = StringifyFactory
+  type _To = js.Object & StringifyFactory
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: StringifyFactory = ^
+  override def _to: js.Object & StringifyFactory = ^
 }

@@ -4,7 +4,6 @@ import typings.jquery.JQueryEventObject
 import typings.metismenu.metismenuStrings.dispose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,5 +14,5 @@ trait JQuery extends StObject {
   @JSName("metisMenu")
   def metisMenu_dispose(options: dispose): JQuery = js.native
   
-  def on(events: MetisMenuEvents, handler: js.Function1[/* eventObject */ JQueryEventObject, _]): JQuery = js.native
+  def on(events: MetisMenuEvents, handler: js.Function1[/* eventObject */ JQueryEventObject, js.Any]): JQuery = js.native
 }

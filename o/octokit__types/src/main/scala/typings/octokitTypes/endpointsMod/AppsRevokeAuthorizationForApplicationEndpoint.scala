@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppsRevokeAuthorizationForApplicationEndpoint extends StObject {
   
-  var access_token: String = js.native
+  var access_token: String
   
-  var client_id: String = js.native
+  var client_id: String
 }
 object AppsRevokeAuthorizationForApplicationEndpoint {
   

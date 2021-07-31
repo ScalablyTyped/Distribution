@@ -2,29 +2,27 @@ package typings.googleapis.healthcareV1alpha2Mod.healthcareV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies the parameters needed for de-identification of DICOM stores.
   */
-@js.native
 trait SchemaDicomConfig extends StObject {
   
   /**
     * Tag filtering profile that determines which tags to keep/remove.
     */
-  var filterProfile: js.UndefOr[String] = js.native
+  var filterProfile: js.UndefOr[String] = js.undefined
   
   /**
     * List of tags to keep. Remove all other tags.
     */
-  var keepList: js.UndefOr[SchemaTagFilterList] = js.native
+  var keepList: js.UndefOr[SchemaTagFilterList] = js.undefined
   
   /**
     * List of tags to remove. Keep all other tags.
     */
-  var removeList: js.UndefOr[SchemaTagFilterList] = js.native
+  var removeList: js.UndefOr[SchemaTagFilterList] = js.undefined
 }
 object SchemaDicomConfig {
   

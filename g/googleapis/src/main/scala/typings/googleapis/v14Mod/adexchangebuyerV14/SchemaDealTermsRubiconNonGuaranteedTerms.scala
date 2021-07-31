@@ -2,21 +2,19 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaDealTermsRubiconNonGuaranteedTerms extends StObject {
   
   /**
     * Optional price for Rubicon priority access in the auction.
     */
-  var priorityPrice: js.UndefOr[SchemaPrice] = js.native
+  var priorityPrice: js.UndefOr[SchemaPrice] = js.undefined
   
   /**
     * Optional price for Rubicon standard access in the auction.
     */
-  var standardPrice: js.UndefOr[SchemaPrice] = js.native
+  var standardPrice: js.UndefOr[SchemaPrice] = js.undefined
 }
 object SchemaDealTermsRubiconNonGuaranteedTerms {
   

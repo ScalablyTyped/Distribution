@@ -3,42 +3,40 @@ package typings.activexWord.Word
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Revision extends StObject {
   
-  def Accept(): Unit = js.native
+  def Accept(): Unit
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  val Author: String = js.native
+  val Author: String
   
-  val Cells: typings.activexWord.Word.Cells = js.native
+  val Cells: typings.activexWord.Word.Cells
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Date: VarDate = js.native
+  val Date: VarDate
   
-  val FormatDescription: String = js.native
+  val FormatDescription: String
   
-  val Index: Double = js.native
+  val Index: Double
   
-  val MovedRange: typings.activexWord.Word.Range = js.native
+  val MovedRange: typings.activexWord.Word.Range
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
-  def Reject(): Unit = js.native
+  def Reject(): Unit
   
-  val Style: typings.activexWord.Word.Style = js.native
+  val Style: typings.activexWord.Word.Style
   
-  val Type: WdRevisionType = js.native
+  val Type: WdRevisionType
   
   @JSName("Word.Revision_typekey")
-  var WordDotRevision_typekey: Revision = js.native
+  var WordDotRevision_typekey: Revision
 }
 object Revision {
   

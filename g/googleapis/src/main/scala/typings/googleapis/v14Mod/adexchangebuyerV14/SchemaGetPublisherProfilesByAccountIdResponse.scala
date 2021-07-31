@@ -2,16 +2,14 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGetPublisherProfilesByAccountIdResponse extends StObject {
   
   /**
     * Profiles for the requested publisher
     */
-  var profiles: js.UndefOr[js.Array[SchemaPublisherProfileApiProto]] = js.native
+  var profiles: js.UndefOr[js.Array[SchemaPublisherProfileApiProto]] = js.undefined
 }
 object SchemaGetPublisherProfilesByAccountIdResponse {
   

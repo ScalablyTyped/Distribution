@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object receiptFilterMod {
@@ -48,6 +47,10 @@ object receiptFilterMod {
   /* static members */
   object ReceiptFilter {
     
+    @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ReceiptFilter resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -57,45 +60,39 @@ object receiptFilterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ReceiptFilter = js.native
-    @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ReceiptFilter = js.native
-    @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReceiptFilterState): ReceiptFilter = js.native
-    @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ReceiptFilterState, opts: CustomResourceOptions): ReceiptFilter = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ReceiptFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ReceiptFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ReceiptFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReceiptFilterState): ReceiptFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ReceiptFilter]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ReceiptFilterState, opts: CustomResourceOptions): ReceiptFilter = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ReceiptFilter]
     
     /**
       * Returns true if the given object is an instance of ReceiptFilter.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ses/receiptFilter", "ReceiptFilter.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptFilter.ReceiptFilter */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ses/receiptFilter.ReceiptFilter */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ses/receiptFilter.ReceiptFilter */ Boolean]
   }
   
-  @js.native
   trait ReceiptFilterArgs extends StObject {
     
     /**
       * The IP address or address range to filter, in CIDR notation
       */
-    val cidr: Input[String] = js.native
+    val cidr: Input[String]
     
     /**
       * The name of the filter
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Block or Allow
       */
-    val policy: Input[String] = js.native
+    val policy: Input[String]
   }
   object ReceiptFilterArgs {
     
@@ -122,28 +119,27 @@ object receiptFilterMod {
     }
   }
   
-  @js.native
   trait ReceiptFilterState extends StObject {
     
     /**
       * The SES receipt filter ARN.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The IP address or address range to filter, in CIDR notation
       */
-    val cidr: js.UndefOr[Input[String]] = js.native
+    val cidr: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of the filter
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Block or Allow
       */
-    val policy: js.UndefOr[Input[String]] = js.native
+    val policy: js.UndefOr[Input[String]] = js.undefined
   }
   object ReceiptFilterState {
     

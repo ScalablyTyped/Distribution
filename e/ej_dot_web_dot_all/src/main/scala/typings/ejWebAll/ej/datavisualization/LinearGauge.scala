@@ -4,11 +4,12 @@ import typings.ejWebAll.ej.Model
 import typings.ejWebAll.ej.Widget_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait LinearGauge extends Widget_ {
+trait LinearGauge
+  extends StObject
+     with Widget_ {
   
   var defaults: Model = js.native
   
@@ -619,11 +620,15 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Clockwise extends Direction
+    sealed trait Clockwise
+      extends StObject
+         with Direction
     
     //string
     @js.native
-    sealed trait CounterClockwise extends Direction
+    sealed trait CounterClockwise
+      extends StObject
+         with Direction
   }
   
   @js.native
@@ -634,11 +639,15 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait ClientSide extends ExportingMode
+    sealed trait ClientSide
+      extends StObject
+         with ExportingMode
     
     //string
     @js.native
-    sealed trait ServerSide extends ExportingMode
+    sealed trait ServerSide
+      extends StObject
+         with ExportingMode
   }
   
   @js.native
@@ -649,11 +658,15 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait JPG extends ExportingType
+    sealed trait JPG
+      extends StObject
+         with ExportingType
     
     //string
     @js.native
-    sealed trait PNG extends ExportingType
+    sealed trait PNG
+      extends StObject
+         with ExportingType
   }
   
   @js.native
@@ -664,23 +677,33 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Bold extends FontStyle
+    sealed trait Bold
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Italic extends FontStyle
+    sealed trait Italic
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Regular extends FontStyle
+    sealed trait Regular
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Strikeout extends FontStyle
+    sealed trait Strikeout
+      extends StObject
+         with FontStyle
     
     //string
     @js.native
-    sealed trait Underline extends FontStyle
+    sealed trait Underline
+      extends StObject
+         with FontStyle
   }
   
   @js.native
@@ -691,19 +714,27 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Circle extends IndicatorTypes
+    sealed trait Circle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Rectangle extends IndicatorTypes
+    sealed trait Rectangle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait RoundedRectangle extends IndicatorTypes
+    sealed trait RoundedRectangle
+      extends StObject
+         with IndicatorTypes
     
     //string
     @js.native
-    sealed trait Text extends IndicatorTypes
+    sealed trait Text
+      extends StObject
+         with IndicatorTypes
   }
   
   @js.native
@@ -714,51 +745,75 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Circle extends MarkerType
+    sealed trait Circle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Diamond extends MarkerType
+    sealed trait Diamond
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Ellipse extends MarkerType
+    sealed trait Ellipse
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Pentagon extends MarkerType
+    sealed trait Pentagon
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Pointer extends MarkerType
+    sealed trait Pointer
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Rectangle extends MarkerType
+    sealed trait Rectangle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait RoundedRectangle extends MarkerType
+    sealed trait RoundedRectangle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Slider extends MarkerType
+    sealed trait Slider
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Star extends MarkerType
+    sealed trait Star
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Trapezoid extends MarkerType
+    sealed trait Trapezoid
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Triangle extends MarkerType
+    sealed trait Triangle
+      extends StObject
+         with MarkerType
     
     //string
     @js.native
-    sealed trait Wedge extends MarkerType
+    sealed trait Wedge
+      extends StObject
+         with MarkerType
   }
   
   @js.native
@@ -769,19 +824,27 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Bottom extends OuterCustomLabelPosition
+    sealed trait Bottom
+      extends StObject
+         with OuterCustomLabelPosition
     
     //string
     @js.native
-    sealed trait Left extends OuterCustomLabelPosition
+    sealed trait Left
+      extends StObject
+         with OuterCustomLabelPosition
     
     //string
     @js.native
-    sealed trait Right extends OuterCustomLabelPosition
+    sealed trait Right
+      extends StObject
+         with OuterCustomLabelPosition
     
     //string
     @js.native
-    sealed trait Top extends OuterCustomLabelPosition
+    sealed trait Top
+      extends StObject
+         with OuterCustomLabelPosition
   }
   
   @js.native
@@ -792,15 +855,21 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Center extends PointerPlacement
+    sealed trait Center
+      extends StObject
+         with PointerPlacement
     
     //string
     @js.native
-    sealed trait Far extends PointerPlacement
+    sealed trait Far
+      extends StObject
+         with PointerPlacement
     
     //string
     @js.native
-    sealed trait Near extends PointerPlacement
+    sealed trait Near
+      extends StObject
+         with PointerPlacement
   }
   
   @js.native
@@ -811,11 +880,15 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Major extends ScaleType
+    sealed trait Major
+      extends StObject
+         with ScaleType
     
     //string
     @js.native
-    sealed trait Minor extends ScaleType
+    sealed trait Minor
+      extends StObject
+         with ScaleType
   }
   
   @js.native
@@ -826,11 +899,15 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait FlatDark extends Themes
+    sealed trait FlatDark
+      extends StObject
+         with Themes
     
     //string
     @js.native
-    sealed trait FlatLight extends Themes
+    sealed trait FlatLight
+      extends StObject
+         with Themes
   }
   
   @js.native
@@ -841,11 +918,15 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Majorinterval extends TicksType
+    sealed trait Majorinterval
+      extends StObject
+         with TicksType
     
     //string
     @js.native
-    sealed trait Minorinterval extends TicksType
+    sealed trait Minorinterval
+      extends StObject
+         with TicksType
   }
   
   @js.native
@@ -856,32 +937,35 @@ object LinearGauge {
     
     //string
     @js.native
-    sealed trait Back extends UnitTextPlacement
+    sealed trait Back
+      extends StObject
+         with UnitTextPlacement
     
     //string
     @js.native
-    sealed trait From extends UnitTextPlacement
+    sealed trait From
+      extends StObject
+         with UnitTextPlacement
   }
   
-  @js.native
   trait DoubleClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to gauge area.id - ID of the target element.    size - Width and height of the gauge.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DoubleClickEventArgs {
     
@@ -920,56 +1004,55 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait DrawBarPointersEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value of the bar pointer.
       */
-    var PointerValue: js.UndefOr[Double] = js.native
+    var PointerValue: js.UndefOr[Double] = js.undefined
     
     /** returns the current Bar pointer element.
       */
-    var barElement: js.UndefOr[js.Any] = js.native
+    var barElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the bar pointer.
       */
-    var barPointerIndex: js.UndefOr[Double] = js.native
+    var barPointerIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object DrawBarPointersEventArgs {
     
@@ -1056,52 +1139,51 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait DrawCustomLabelEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current customLabel element.
       */
-    var customLabelElement: js.UndefOr[js.Any] = js.native
+    var customLabelElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the customLabel.
       */
-    var customLabelIndex: js.UndefOr[Double] = js.native
+    var customLabelIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the customLabel
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the customLabel style
       */
-    var style: js.UndefOr[js.Any] = js.native
+    var style: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object DrawCustomLabelEventArgs {
     
@@ -1182,52 +1264,51 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait DrawIndicatorsEventArgs extends StObject {
     
     /** returns the current Indicator element.
       */
-    var IndicatorElement: js.UndefOr[js.Any] = js.native
+    var IndicatorElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the Indicator.
       */
-    var IndicatorIndex: js.UndefOr[Double] = js.native
+    var IndicatorIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the Indicator
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the Indicator style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object DrawIndicatorsEventArgs {
     
@@ -1308,60 +1389,59 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait DrawLabelsEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the angle of the label.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current label element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the label.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the label
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the label belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the label style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the label value of the label.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object DrawLabelsEventArgs {
     
@@ -1454,60 +1534,59 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait DrawMarkerPointersEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current marker pointer element.
       */
-    var markerElement: js.UndefOr[js.Any] = js.native
+    var markerElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the marker pointer.
       */
-    var markerPointerIndex: js.UndefOr[Double] = js.native
+    var markerPointerIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the angle of the marker pointer.
       */
-    var pointerAngle: js.UndefOr[Double] = js.native
+    var pointerAngle: js.UndefOr[Double] = js.undefined
     
     /** returns the value of the marker pointer.
       */
-    var pointerValue: js.UndefOr[Double] = js.native
+    var pointerValue: js.UndefOr[Double] = js.undefined
     
     /** returns the startX and startY of the pointer
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the ticks style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object DrawMarkerPointersEventArgs {
     
@@ -1600,52 +1679,51 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait DrawRangeEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the range
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current range element.
       */
-    var rangeElement: js.UndefOr[js.Any] = js.native
+    var rangeElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the range.
       */
-    var rangeIndex: js.UndefOr[Double] = js.native
+    var rangeIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the range style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object DrawRangeEventArgs {
     
@@ -1726,60 +1804,59 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait DrawTicksEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the angle of the tick.
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the current tick element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the index of the tick.
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the ticks
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the options of the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the tick belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the ticks style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the tick value of the tick.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object DrawTicksEventArgs {
     
@@ -1872,27 +1949,26 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ExportSettings extends StObject {
     
     /** Specifies the name of the action URL
       */
-    var action: js.UndefOr[String] = js.native
+    var action: js.UndefOr[String] = js.undefined
     
     /** Specifies the downloading filename
       * @Default {LinearGauge}
       */
-    var filename: js.UndefOr[String] = js.native
+    var filename: js.UndefOr[String] = js.undefined
     
     /** Specifies the mode of exporting
       * @Default {client}
       */
-    var mode: js.UndefOr[ExportingMode | String] = js.native
+    var mode: js.UndefOr[ExportingMode | String] = js.undefined
     
     /** Specifies the format of the file to export
       * @Default {png}
       */
-    var `type`: js.UndefOr[ExportingType | String] = js.native
+    var `type`: js.UndefOr[ExportingType | String] = js.undefined
   }
   object ExportSettings {
     
@@ -1931,23 +2007,22 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait Frame extends StObject {
     
     /** Specifies the frame background image URL of linear gauge
       * @Default {null}
       */
-    var backgroundImageUrl: js.UndefOr[String] = js.native
+    var backgroundImageUrl: js.UndefOr[String] = js.undefined
     
     /** Specifies the frame InnerWidth
       * @Default {8}
       */
-    var innerWidth: js.UndefOr[Double] = js.native
+    var innerWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the frame OuterWidth
       * @Default {12}
       */
-    var outerWidth: js.UndefOr[Double] = js.native
+    var outerWidth: js.UndefOr[Double] = js.undefined
   }
   object Frame {
     
@@ -1980,32 +2055,31 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait InitEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the entire scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object InitEventArgs {
     
@@ -2056,32 +2130,31 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait LoadEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the entire scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object LoadEventArgs {
     
@@ -2132,197 +2205,196 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait Model extends StObject {
     
     /** Specifies the animationSpeed
       * @Default {500}
       */
-    var animationSpeed: js.UndefOr[Double] = js.native
+    var animationSpeed: js.UndefOr[Double] = js.undefined
     
     /** Specifies the backgroundColor for Linear gauge.
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the borderColor for Linear gauge.
       * @Default {null}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Fires, on double clicking the gauge.
       */
-    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.native
+    var doubleClick: js.UndefOr[js.Function1[/* e */ DoubleClickEventArgs, Unit]] = js.undefined
     
     /** Triggers while the bar pointer are being drawn on the gauge.
       */
-    var drawBarPointers: js.UndefOr[js.Function1[/* e */ DrawBarPointersEventArgs, Unit]] = js.native
+    var drawBarPointers: js.UndefOr[js.Function1[/* e */ DrawBarPointersEventArgs, Unit]] = js.undefined
     
     /** Triggers while the customLabel are being drawn on the gauge.
       */
-    var drawCustomLabel: js.UndefOr[js.Function1[/* e */ DrawCustomLabelEventArgs, Unit]] = js.native
+    var drawCustomLabel: js.UndefOr[js.Function1[/* e */ DrawCustomLabelEventArgs, Unit]] = js.undefined
     
     /** Triggers while the Indicator are being drawn on the gauge.
       */
-    var drawIndicators: js.UndefOr[js.Function1[/* e */ DrawIndicatorsEventArgs, Unit]] = js.native
+    var drawIndicators: js.UndefOr[js.Function1[/* e */ DrawIndicatorsEventArgs, Unit]] = js.undefined
     
     /** Triggers while the label are being drawn on the gauge.
       */
-    var drawLabels: js.UndefOr[js.Function1[/* e */ DrawLabelsEventArgs, Unit]] = js.native
+    var drawLabels: js.UndefOr[js.Function1[/* e */ DrawLabelsEventArgs, Unit]] = js.undefined
     
     /** Triggers while the marker are being drawn on the gauge.
       */
-    var drawMarkerPointers: js.UndefOr[js.Function1[/* e */ DrawMarkerPointersEventArgs, Unit]] = js.native
+    var drawMarkerPointers: js.UndefOr[js.Function1[/* e */ DrawMarkerPointersEventArgs, Unit]] = js.undefined
     
     /** Triggers while the range are being drawn on the gauge.
       */
-    var drawRange: js.UndefOr[js.Function1[/* e */ DrawRangeEventArgs, Unit]] = js.native
+    var drawRange: js.UndefOr[js.Function1[/* e */ DrawRangeEventArgs, Unit]] = js.undefined
     
     /** Triggers while the ticks are being drawn on the gauge.
       */
-    var drawTicks: js.UndefOr[js.Function1[/* e */ DrawTicksEventArgs, Unit]] = js.native
+    var drawTicks: js.UndefOr[js.Function1[/* e */ DrawTicksEventArgs, Unit]] = js.undefined
     
     /** Specifies the animate state
       * @Default {true}
       */
-    var enableAnimation: js.UndefOr[Boolean] = js.native
+    var enableAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Used to Convert the date object to  string while using the  locale settings
       * @Default {false}
       */
-    var enableGroupSeparator: js.UndefOr[Boolean] = js.native
+    var enableGroupSeparator: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the animate state for marker pointer
       * @Default {true}
       */
-    var enableMarkerPointerAnimation: js.UndefOr[Boolean] = js.native
+    var enableMarkerPointerAnimation: js.UndefOr[Boolean] = js.undefined
     
     /** Responsiveness of the linear gauge is controlled
       * @Default {false}
       */
-    var enableResize: js.UndefOr[Boolean] = js.native
+    var enableResize: js.UndefOr[Boolean] = js.undefined
     
     /** This provides options for customizing export settings
       */
-    var exportSettings: js.UndefOr[ExportSettings] = js.native
+    var exportSettings: js.UndefOr[ExportSettings] = js.undefined
     
     /** Specify frame of linear gauge
       * @Default {null}
       */
-    var frame: js.UndefOr[Frame] = js.native
+    var frame: js.UndefOr[Frame] = js.undefined
     
     /** Specifies the height of Linear gauge.
       * @Default {400}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Triggers when the gauge is initialized.
       */
-    var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.native
+    var init: js.UndefOr[js.Function1[/* e */ InitEventArgs, Unit]] = js.undefined
     
     /** Specifies the can resize state.
       * @Default {false}
       */
-    var isResponsive: js.UndefOr[Boolean] = js.native
+    var isResponsive: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the labelColor for Linear gauge.
       * @Default {null}
       */
-    var labelColor: js.UndefOr[String] = js.native
+    var labelColor: js.UndefOr[String] = js.undefined
     
     /** Triggers while the gauge start to Load.
       */
-    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.native
+    var load: js.UndefOr[js.Function1[/* e */ LoadEventArgs, Unit]] = js.undefined
     
     /** Set the  localization culture  for the Linear gauge
       * @Default {en-US}
       */
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
     /** Specifies the maximum value of Linear gauge.
       * @Default {100}
       */
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum value of Linear gauge.
       * @Default {0}
       */
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
     /** Triggers when the left mouse button is clicked.
       */
-    var mouseClick: js.UndefOr[js.Function1[/* e */ MouseClickEventArgs, Unit]] = js.native
+    var mouseClick: js.UndefOr[js.Function1[/* e */ MouseClickEventArgs, Unit]] = js.undefined
     
     /** Triggers when clicking and dragging the mouse pointer over the gauge pointer.
       */
-    var mouseClickMove: js.UndefOr[js.Function1[/* e */ MouseClickMoveEventArgs, Unit]] = js.native
+    var mouseClickMove: js.UndefOr[js.Function1[/* e */ MouseClickMoveEventArgs, Unit]] = js.undefined
     
     /** Triggers when the mouse click is released.
       */
-    var mouseClickUp: js.UndefOr[js.Function1[/* e */ MouseClickUpEventArgs, Unit]] = js.native
+    var mouseClickUp: js.UndefOr[js.Function1[/* e */ MouseClickUpEventArgs, Unit]] = js.undefined
     
     /** Specifies the orientation for Linear gauge.
       * @Default {Vertical}
       */
-    var orientation: js.UndefOr[String] = js.native
+    var orientation: js.UndefOr[String] = js.undefined
     
     /** Specify labelPosition value of Linear gauge See
       * @Default {bottom}
       */
-    var outerCustomLabelPosition: js.UndefOr[OuterCustomLabelPosition | String] = js.native
+    var outerCustomLabelPosition: js.UndefOr[OuterCustomLabelPosition | String] = js.undefined
     
     /** Specifies the pointerGradient1 for Linear gauge.
       * @Default {null}
       */
-    var pointerGradient1: js.UndefOr[js.Any] = js.native
+    var pointerGradient1: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the pointerGradient2 for Linear gauge.
       * @Default {null}
       */
-    var pointerGradient2: js.UndefOr[js.Any] = js.native
+    var pointerGradient2: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the read only state.
       * @Default {true}
       */
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
     /** Triggers while the rendering of the gauge completed.
       */
-    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.native
+    var renderComplete: js.UndefOr[js.Function1[/* e */ RenderCompleteEventArgs, Unit]] = js.undefined
     
     /** Fires, on right clicking the gauge.
       */
-    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.native
+    var rightClick: js.UndefOr[js.Function1[/* e */ RightClickEventArgs, Unit]] = js.undefined
     
     /** Specifies the scales
       * @Default {null}
       */
-    var scales: js.UndefOr[js.Array[Scale]] = js.native
+    var scales: js.UndefOr[js.Array[Scale]] = js.undefined
     
     /** Specifies the theme for Linear gauge. See LinearGauge.Themes
       * @Default {flatlight}
       */
-    var theme: js.UndefOr[Themes | String] = js.native
+    var theme: js.UndefOr[Themes | String] = js.undefined
     
     /** Specifies the tick Color for Linear gauge.
       * @Default {null}
       */
-    var tickColor: js.UndefOr[String] = js.native
+    var tickColor: js.UndefOr[String] = js.undefined
     
     /** Specify tooltip options of linear gauge
       * @Default {false}
       */
-    var tooltip: js.UndefOr[Tooltip] = js.native
+    var tooltip: js.UndefOr[Tooltip] = js.undefined
     
     /** Specifies the value of the Gauge.
       * @Default {0}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the width of Linear gauge.
       * @Default {150}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Model {
     
@@ -2586,56 +2658,55 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait MouseClickEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element* @param {Object} args.markerpointer returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var markerPointerElement: js.UndefOr[js.Any] = js.native
+    var markerPointerElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer Index
       */
-    var markerPointerIndex: js.UndefOr[Double] = js.native
+    var markerPointerIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the value of the pointer.
       */
-    var markerPointerValue: js.UndefOr[Double] = js.native
+    var markerPointerValue: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object MouseClickEventArgs {
     
@@ -2722,56 +2793,55 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait MouseClickMoveEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var element: js.UndefOr[js.Any] = js.native
+    var element: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer Index
       */
-    var index: js.UndefOr[Double] = js.native
+    var index: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the value of the pointer.
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object MouseClickMoveEventArgs {
     
@@ -2858,56 +2928,55 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait MouseClickUpEventArgs extends StObject {
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element* @param {Object} args.markerPointer returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer element.
       */
-    var markerPointerElement: js.UndefOr[js.Any] = js.native
+    var markerPointerElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the pointer Index
       */
-    var markerPointerIndex: js.UndefOr[Double] = js.native
+    var markerPointerIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the value of the pointer.
       */
-    var markerPointerValue: js.UndefOr[Double] = js.native
+    var markerPointerValue: js.UndefOr[Double] = js.undefined
     
     /** returns the gauge model
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the startX and startY of the pointer.
       */
-    var position: js.UndefOr[js.Any] = js.native
+    var position: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the scaleIndex to which the pointer belongs.
       */
-    var scaleIndex: js.UndefOr[Double] = js.native
+    var scaleIndex: js.UndefOr[Double] = js.undefined
     
     /** returns the pointer style
       */
-    var style: js.UndefOr[String] = js.native
+    var style: js.UndefOr[String] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object MouseClickUpEventArgs {
     
@@ -2994,32 +3063,31 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait RenderCompleteEventArgs extends StObject {
     
     /** returns the gauge model
       */
-    var Model: js.UndefOr[js.Any] = js.native
+    var Model: js.UndefOr[js.Any] = js.undefined
     
     /** returns the cancel option value
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** returns the context element
       */
-    var context: js.UndefOr[js.Any] = js.native
+    var context: js.UndefOr[js.Any] = js.undefined
     
     /** returns the object of the gauge.
       */
-    var `object`: js.UndefOr[js.Any] = js.native
+    var `object`: js.UndefOr[js.Any] = js.undefined
     
     /** returns the entire scale element.
       */
-    var scaleElement: js.UndefOr[js.Any] = js.native
+    var scaleElement: js.UndefOr[js.Any] = js.undefined
     
     /** returns the name of the event
       */
-    var `type`: js.UndefOr[js.Any] = js.native
+    var `type`: js.UndefOr[js.Any] = js.undefined
   }
   object RenderCompleteEventArgs {
     
@@ -3070,25 +3138,24 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait RightClickEventArgs extends StObject {
     
     /** Set this option to true to cancel the event
       */
-    var cancel: js.UndefOr[Boolean] = js.native
+    var cancel: js.UndefOr[Boolean] = js.undefined
     
     /** location - X and Y co-ordinate of the points with respect to gauge area.id - ID of the target element.    size - Width and height of the gauge.    pageX - x-coordinate of the
       * pointer, relative to the page    pageY - y-coordinate of the pointer, relative to the page
       */
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
     /** Instance of the gauge model object
       */
-    var model: js.UndefOr[js.Any] = js.native
+    var model: js.UndefOr[js.Any] = js.undefined
     
     /** Name of the event
       */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object RightClickEventArgs {
     
@@ -3127,143 +3194,142 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait Scale extends StObject {
     
     /** Specifies the backgroundColor of the Scale.
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the scaleBar Gradient of bar pointer
       * @Default {Array}
       */
-    var barPointers: js.UndefOr[js.Array[ScalesBarPointer]] = js.native
+    var barPointers: js.UndefOr[js.Array[ScalesBarPointer]] = js.undefined
     
     /** Specifies the border of the Scale.
       * @Default {null}
       */
-    var border: js.UndefOr[ScalesBorder] = js.native
+    var border: js.UndefOr[ScalesBorder] = js.undefined
     
     /** Specifies the customLabel
       * @Default {Array}
       */
-    var customLabels: js.UndefOr[js.Array[ScalesCustomLabel]] = js.native
+    var customLabels: js.UndefOr[js.Array[ScalesCustomLabel]] = js.undefined
     
     /** Specifies the scale Direction of the Scale. See
       * @Default {CounterClockwise}
       */
-    var direction: js.UndefOr[typings.ejWebAll.ej.Direction | String] = js.native
+    var direction: js.UndefOr[typings.ejWebAll.ej.Direction | String] = js.undefined
     
     /** Specifies the indicator
       * @Default {Array}
       */
-    var indicators: js.UndefOr[js.Array[ScalesIndicator]] = js.native
+    var indicators: js.UndefOr[js.Array[ScalesIndicator]] = js.undefined
     
     /** Specifies the labels.
       * @Default {Array}
       */
-    var labels: js.UndefOr[js.Array[ScalesLabel]] = js.native
+    var labels: js.UndefOr[js.Array[ScalesLabel]] = js.undefined
     
     /** Specifies the scaleBar Length.
       * @Default {290}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Specifies the majorIntervalValue of the Scale.
       * @Default {10}
       */
-    var majorIntervalValue: js.UndefOr[Double] = js.native
+    var majorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the markerPointers
       * @Default {Array}
       */
-    var markerPointers: js.UndefOr[js.Array[ScalesMarkerPointer]] = js.native
+    var markerPointers: js.UndefOr[js.Array[ScalesMarkerPointer]] = js.undefined
     
     /** Specifies the maximum of the Scale.
       * @Default {null}
       */
-    var maximum: js.UndefOr[Double] = js.native
+    var maximum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minimum of the Scale.
       * @Default {null}
       */
-    var minimum: js.UndefOr[Double] = js.native
+    var minimum: js.UndefOr[Double] = js.undefined
     
     /** Specifies the minorIntervalValue of the Scale.
       * @Default {2}
       */
-    var minorIntervalValue: js.UndefOr[Double] = js.native
+    var minorIntervalValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity of the Scale.
       * @Default {NaN}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position
       * @Default {null}
       */
-    var position: js.UndefOr[ScalesPosition] = js.native
+    var position: js.UndefOr[ScalesPosition] = js.undefined
     
     /** Specifies the ranges in the tick.
       * @Default {Array}
       */
-    var ranges: js.UndefOr[js.Array[ScalesRange]] = js.native
+    var ranges: js.UndefOr[js.Array[ScalesRange]] = js.undefined
     
     /** Specifies the shadowOffset.
       * @Default {0}
       */
-    var shadowOffset: js.UndefOr[Double] = js.native
+    var shadowOffset: js.UndefOr[Double] = js.undefined
     
     /** Specifies the showBarPointers state.
       * @Default {true}
       */
-    var showBarPointers: js.UndefOr[Boolean] = js.native
+    var showBarPointers: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showCustomLabels state.
       * @Default {false}
       */
-    var showCustomLabels: js.UndefOr[Boolean] = js.native
+    var showCustomLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showIndicators state.
       * @Default {false}
       */
-    var showIndicators: js.UndefOr[Boolean] = js.native
+    var showIndicators: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showLabels state.
       * @Default {true}
       */
-    var showLabels: js.UndefOr[Boolean] = js.native
+    var showLabels: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showMarkerPointers state.
       * @Default {true}
       */
-    var showMarkerPointers: js.UndefOr[Boolean] = js.native
+    var showMarkerPointers: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showRanges state.
       * @Default {false}
       */
-    var showRanges: js.UndefOr[Boolean] = js.native
+    var showRanges: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the showTicks state.
       * @Default {true}
       */
-    var showTicks: js.UndefOr[Boolean] = js.native
+    var showTicks: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the ticks in the scale.
       * @Default {Array}
       */
-    var ticks: js.UndefOr[js.Array[ScalesTick]] = js.native
+    var ticks: js.UndefOr[js.Array[ScalesTick]] = js.undefined
     
     /** Specifies the scaleBar type .See
       * @Default {Rectangle}
       */
-    var `type`: js.UndefOr[ScaleType | String] = js.native
+    var `type`: js.UndefOr[ScaleType | String] = js.undefined
     
     /** Specifies the scaleBar width.
       * @Default {30}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object Scale {
     
@@ -3461,43 +3527,42 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesBarPointer extends StObject {
     
     /** Specifies the backgroundColor of bar pointer
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border of bar pointer
       * @Default {null}
       */
-    var border: js.UndefOr[ScalesBarPointersBorder] = js.native
+    var border: js.UndefOr[ScalesBarPointersBorder] = js.undefined
     
     /** Specifies the distanceFromScale of bar pointer
       * @Default {0}
       */
-    var distanceFromScale: js.UndefOr[Double] = js.native
+    var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specifies the scaleBar Gradient of bar pointer
       * @Default {null}
       */
-    var gradients: js.UndefOr[js.Any] = js.native
+    var gradients: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the opacity of bar pointer
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the value of bar pointer
       * @Default {null}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Width of bar pointer
       * @Default {width=30}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesBarPointer {
     
@@ -3554,18 +3619,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesBarPointersBorder extends StObject {
     
     /** Specifies the border Color of bar pointer
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border Width of bar pointer
       * @Default {1.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesBarPointersBorder {
     
@@ -3592,18 +3656,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesBorder extends StObject {
     
     /** Specifies the border color of the Scale.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width of the Scale.
       * @Default {1.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesBorder {
     
@@ -3630,42 +3693,41 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesCustomLabel extends StObject {
     
     /** Specifies the label Color in customLabels
       * @Default {null}
       */
-    var color: js.UndefOr[Double] = js.native
+    var color: js.UndefOr[Double] = js.undefined
     
     /** Specifies the font in customLabels
       * @Default {null}
       */
-    var font: js.UndefOr[ScalesCustomLabelsFont] = js.native
+    var font: js.UndefOr[ScalesCustomLabelsFont] = js.undefined
     
     /** Specifies the opacity in customLabels
       * @Default {0}
       */
-    var opacity: js.UndefOr[String] = js.native
+    var opacity: js.UndefOr[String] = js.undefined
     
     /** Specifies the position in customLabels
       * @Default {null}
       */
-    var position: js.UndefOr[ScalesCustomLabelsPosition] = js.native
+    var position: js.UndefOr[ScalesCustomLabelsPosition] = js.undefined
     
     /** Specifies the positionType in customLabels.See CustomLabelPositionType
       * @Default {null}
       */
-    var positionType: js.UndefOr[js.Any] = js.native
+    var positionType: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the textAngle in customLabels
       * @Default {0}
       */
-    var textAngle: js.UndefOr[Double] = js.native
+    var textAngle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the label Value in customLabels
       */
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object ScalesCustomLabel {
     
@@ -3722,23 +3784,22 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesCustomLabelsFont extends StObject {
     
     /** Specifies the fontFamily in customLabels
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle in customLabels. See
       * @Default {Bold}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the font size in customLabels
       * @Default {11px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ScalesCustomLabelsFont {
     
@@ -3771,18 +3832,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesCustomLabelsPosition extends StObject {
     
     /** Specifies the position x in customLabels
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the y in customLabels
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesCustomLabelsPosition {
     
@@ -3809,58 +3869,57 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicator extends StObject {
     
     /** Specifies the backgroundColor in bar indicators
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border in bar indicators
       * @Default {null}
       */
-    var border: js.UndefOr[ScalesIndicatorsBorder] = js.native
+    var border: js.UndefOr[ScalesIndicatorsBorder] = js.undefined
     
     /** Specifies the font of bar indicators
       * @Default {null}
       */
-    var font: js.UndefOr[ScalesIndicatorsFont] = js.native
+    var font: js.UndefOr[ScalesIndicatorsFont] = js.undefined
     
     /** Specifies the indicator Height of bar indicators
       * @Default {30}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity in bar indicators
       * @Default {null}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the position in bar indicators
       * @Default {null}
       */
-    var position: js.UndefOr[ScalesIndicatorsPosition] = js.native
+    var position: js.UndefOr[ScalesIndicatorsPosition] = js.undefined
     
     /** Specifies the state ranges in bar indicators
       * @Default {Array}
       */
-    var stateRanges: js.UndefOr[js.Array[ScalesIndicatorsStateRange]] = js.native
+    var stateRanges: js.UndefOr[js.Array[ScalesIndicatorsStateRange]] = js.undefined
     
     /** Specifies the textLocation in bar indicators
       * @Default {null}
       */
-    var textLocation: js.UndefOr[ScalesIndicatorsTextLocation] = js.native
+    var textLocation: js.UndefOr[ScalesIndicatorsTextLocation] = js.undefined
     
     /** Specifies the indicator Style of font in bar indicators
       * @Default {ej.datavisualization.LinearGauge.IndicatorType.Rectangle}
       */
-    var `type`: js.UndefOr[IndicatorTypes | String] = js.native
+    var `type`: js.UndefOr[IndicatorTypes | String] = js.undefined
     
     /** Specifies the indicator Width in bar indicators
       * @Default {30}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesIndicator {
     
@@ -3938,18 +3997,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicatorsBorder extends StObject {
     
     /** Specifies the border Color in bar indicators
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border Width in bar indicators
       * @Default {1.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesIndicatorsBorder {
     
@@ -3976,23 +4034,22 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicatorsFont extends StObject {
     
     /** Specifies the fontFamily of font in bar indicators
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of font in bar indicators. See FontStyle
       * @Default {ej.datavisualization.LinearGauge.FontStyle.Bold}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the size of font in bar indicators
       * @Default {11px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ScalesIndicatorsFont {
     
@@ -4025,18 +4082,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicatorsPosition extends StObject {
     
     /** Specifies the x position in bar indicators
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the y position in bar indicators
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesIndicatorsPosition {
     
@@ -4063,37 +4119,36 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicatorsStateRange extends StObject {
     
     /** Specifies the backgroundColor in bar indicators state ranges
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the borderColor in bar indicators state ranges
       * @Default {null}
       */
-    var borderColor: js.UndefOr[String] = js.native
+    var borderColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the endValue in bar indicators state ranges
       * @Default {60}
       */
-    var endValue: js.UndefOr[Double] = js.native
+    var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the startValue in bar indicators state ranges
       * @Default {50}
       */
-    var startValue: js.UndefOr[Double] = js.native
+    var startValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the text in bar indicators state ranges
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
     /** Specifies the textColor in bar indicators state ranges
       * @Default {null}
       */
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
   }
   object ScalesIndicatorsStateRange {
     
@@ -4144,18 +4199,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesIndicatorsTextLocation extends StObject {
     
     /** Specifies the textLocation position in bar indicators
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the Y position in bar indicators
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesIndicatorsTextLocation {
     
@@ -4182,57 +4236,56 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesLabel extends StObject {
     
     /** Specifies the angle of labels.
       * @Default {0}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the DistanceFromScale of labels.
       * @Default {null}
       */
-    var distanceFromScale: js.UndefOr[ScalesLabelsDistanceFromScale] = js.native
+    var distanceFromScale: js.UndefOr[ScalesLabelsDistanceFromScale] = js.undefined
     
     /** Specifies the font of labels.
       * @Default {null}
       */
-    var font: js.UndefOr[ScalesLabelsFont] = js.native
+    var font: js.UndefOr[ScalesLabelsFont] = js.undefined
     
     /** need to includeFirstValue.
       * @Default {true}
       */
-    var includeFirstValue: js.UndefOr[Boolean] = js.native
+    var includeFirstValue: js.UndefOr[Boolean] = js.undefined
     
     /** Specifies the opacity of label.
       * @Default {0}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the label Placement of label. See
       * @Default {Near}
       */
-    var placement: js.UndefOr[PointerPlacement | String] = js.native
+    var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the textColor of font.
       * @Default {null}
       */
-    var textColor: js.UndefOr[String] = js.native
+    var textColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the label Style of label. See
       * @Default {ej.datavisualization.LinearGauge.LabelType.Major}
       */
-    var `type`: js.UndefOr[ScaleType | String] = js.native
+    var `type`: js.UndefOr[ScaleType | String] = js.undefined
     
     /** Specifies the unitText of label.
       */
-    var unitText: js.UndefOr[String] = js.native
+    var unitText: js.UndefOr[String] = js.undefined
     
     /** Specifies the unitText Position of label.See
       * @Default {Back}
       */
-    var unitTextPlacement: js.UndefOr[UnitTextPlacement | String] = js.native
+    var unitTextPlacement: js.UndefOr[UnitTextPlacement | String] = js.undefined
   }
   object ScalesLabel {
     
@@ -4307,18 +4360,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesLabelsDistanceFromScale extends StObject {
     
     /** Specifies the xDistanceFromScale of labels.
       * @Default {-10}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the yDistanceFromScale of labels.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesLabelsDistanceFromScale {
     
@@ -4345,23 +4397,22 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesLabelsFont extends StObject {
     
     /** Specifies the fontFamily of font.
       * @Default {Arial}
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /** Specifies the fontStyle of font.See FontStyle
       * @Default {ej.datavisualization.LinearGauge.FontStyle.Bold}
       */
-    var fontStyle: js.UndefOr[FontStyle | String] = js.native
+    var fontStyle: js.UndefOr[FontStyle | String] = js.undefined
     
     /** Specifies the size of font.
       * @Default {11px}
       */
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
   }
   object ScalesLabelsFont {
     
@@ -4394,58 +4445,57 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesMarkerPointer extends StObject {
     
     /** Specifies the backgroundColor of marker pointer
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border of marker pointer
       * @Default {null}
       */
-    var border: js.UndefOr[ScalesMarkerPointersBorder] = js.native
+    var border: js.UndefOr[ScalesMarkerPointersBorder] = js.undefined
     
     /** Specifies the distanceFromScale of marker pointer
       * @Default {0}
       */
-    var distanceFromScale: js.UndefOr[Double] = js.native
+    var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Gradient of marker pointer
       * @Default {null}
       */
-    var gradients: js.UndefOr[js.Any] = js.native
+    var gradients: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the pointer Length of marker pointer
       * @Default {30}
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity of marker pointer
       * @Default {1}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Placement of marker pointer See PointerPlacement
       * @Default {Far}
       */
-    var placement: js.UndefOr[PointerPlacement | String] = js.native
+    var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the marker Style of marker pointerSee
       * @Default {Triangle}
       */
-    var `type`: js.UndefOr[MarkerType | String] = js.native
+    var `type`: js.UndefOr[MarkerType | String] = js.undefined
     
     /** Specifies the value of marker pointer
       * @Default {null}
       */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
     
     /** Specifies the pointer Width of marker pointer
       * @Default {30}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesMarkerPointer {
     
@@ -4520,18 +4570,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesMarkerPointersBorder extends StObject {
     
     /** Specifies the border color of marker pointer
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border of marker pointer
       * @Default {number}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesMarkerPointersBorder {
     
@@ -4558,18 +4607,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesPosition extends StObject {
     
     /** Specifies the Horizontal position
       * @Default {50}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the vertical position
       * @Default {50}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesPosition {
     
@@ -4596,58 +4644,57 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesRange extends StObject {
     
     /** Specifies the backgroundColor in the ranges.
       * @Default {null}
       */
-    var backgroundColor: js.UndefOr[String] = js.native
+    var backgroundColor: js.UndefOr[String] = js.undefined
     
     /** Specifies the border in the ranges.
       * @Default {null}
       */
-    var border: js.UndefOr[ScalesRangesBorder] = js.native
+    var border: js.UndefOr[ScalesRangesBorder] = js.undefined
     
     /** Specifies the distanceFromScale in the ranges.
       * @Default {0}
       */
-    var distanceFromScale: js.UndefOr[Double] = js.native
+    var distanceFromScale: js.UndefOr[Double] = js.undefined
     
     /** Specifies the endValue in the ranges.
       * @Default {60}
       */
-    var endValue: js.UndefOr[Double] = js.native
+    var endValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the endWidth in the ranges.
       * @Default {10}
       */
-    var endWidth: js.UndefOr[Double] = js.native
+    var endWidth: js.UndefOr[Double] = js.undefined
     
     /** Specifies the range Gradient in the ranges.
       * @Default {null}
       */
-    var gradients: js.UndefOr[js.Any] = js.native
+    var gradients: js.UndefOr[js.Any] = js.undefined
     
     /** Specifies the opacity in the ranges.
       * @Default {null}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the range Position in the ranges. See RangePlacement
       * @Default {Center}
       */
-    var placement: js.UndefOr[PointerPlacement | String] = js.native
+    var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the startValue in the ranges.
       * @Default {20}
       */
-    var startValue: js.UndefOr[Double] = js.native
+    var startValue: js.UndefOr[Double] = js.undefined
     
     /** Specifies the startWidth in the ranges.
       * @Default {10}
       */
-    var startWidth: js.UndefOr[Double] = js.native
+    var startWidth: js.UndefOr[Double] = js.undefined
   }
   object ScalesRange {
     
@@ -4722,18 +4769,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesRangesBorder extends StObject {
     
     /** Specifies the border color in the ranges.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the border width in the ranges.
       * @Default {1.5}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesRangesBorder {
     
@@ -4760,48 +4806,47 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesTick extends StObject {
     
     /** Specifies the angle in the tick.
       * @Default {0}
       */
-    var angle: js.UndefOr[Double] = js.native
+    var angle: js.UndefOr[Double] = js.undefined
     
     /** Specifies the tick Color in the tick.
       * @Default {null}
       */
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
     /** Specifies the DistanceFromScale in the tick.
       * @Default {null}
       */
-    var distanceFromScale: js.UndefOr[ScalesTicksDistanceFromScale] = js.native
+    var distanceFromScale: js.UndefOr[ScalesTicksDistanceFromScale] = js.undefined
     
     /** Specifies the tick Height in the tick.
       * @Default {10}
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /** Specifies the opacity in the tick.
       * @Default {0}
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /** Specifies the tick Placement in the tick. See TickPlacement
       * @Default {Near}
       */
-    var placement: js.UndefOr[PointerPlacement | String] = js.native
+    var placement: js.UndefOr[PointerPlacement | String] = js.undefined
     
     /** Specifies the tick Style in the tick. See
       * @Default {MajorInterval}
       */
-    var `type`: js.UndefOr[TicksType | String] = js.native
+    var `type`: js.UndefOr[TicksType | String] = js.undefined
     
     /** Specifies the tick Width in the tick.
       * @Default {3}
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object ScalesTick {
     
@@ -4864,18 +4909,17 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait ScalesTicksDistanceFromScale extends StObject {
     
     /** Specifies the xDistanceFromScale in the tick.
       * @Default {0}
       */
-    var x: js.UndefOr[Double] = js.native
+    var x: js.UndefOr[Double] = js.undefined
     
     /** Specifies the yDistanceFromScale in the tick.
       * @Default {0}
       */
-    var y: js.UndefOr[Double] = js.native
+    var y: js.UndefOr[Double] = js.undefined
   }
   object ScalesTicksDistanceFromScale {
     
@@ -4902,23 +4946,22 @@ object LinearGauge {
     }
   }
   
-  @js.native
   trait Tooltip extends StObject {
     
     /** Specify showCustomLabelTooltip value of linear gauge
       * @Default {false}
       */
-    var showCustomLabelTooltip: js.UndefOr[Boolean] = js.native
+    var showCustomLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specify showLabelTooltip value of linear gauge
       * @Default {false}
       */
-    var showLabelTooltip: js.UndefOr[Boolean] = js.native
+    var showLabelTooltip: js.UndefOr[Boolean] = js.undefined
     
     /** Specify templateID value of linear gauge
       * @Default {false}
       */
-    var templateID: js.UndefOr[String] = js.native
+    var templateID: js.UndefOr[String] = js.undefined
   }
   object Tooltip {
     

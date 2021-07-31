@@ -2,35 +2,33 @@ package typings.googleapis.tagmanagerV2Mod.tagmanagerV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Account.
   */
-@js.native
 trait SchemaAccount extends StObject {
   
   /**
     * The Account ID uniquely identifies the GTM Account.
     */
-  var accountId: js.UndefOr[String] = js.native
+  var accountId: js.UndefOr[String] = js.undefined
   
   /**
     * The fingerprint of the GTM Account as computed at storage time. This
     * value is recomputed whenever the account is modified.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * Account display name.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * GTM Account&#39;s API relative path.
     */
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the account shares data anonymously with Google and others. This
@@ -39,12 +37,12 @@ trait SchemaAccount extends StObject {
     * combine the data with hundreds of other anonymous sites and report
     * aggregate trends in the benchmarking service.
     */
-  var shareData: js.UndefOr[Boolean] = js.native
+  var shareData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Auto generated link to the tag manager UI
     */
-  var tagManagerUrl: js.UndefOr[String] = js.native
+  var tagManagerUrl: js.UndefOr[String] = js.undefined
 }
 object SchemaAccount {
   

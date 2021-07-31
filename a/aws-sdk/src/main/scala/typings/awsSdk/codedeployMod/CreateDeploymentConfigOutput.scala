@@ -2,16 +2,14 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDeploymentConfigOutput extends StObject {
   
   /**
     * A unique deployment configuration ID.
     */
-  var deploymentConfigId: js.UndefOr[DeploymentConfigId] = js.native
+  var deploymentConfigId: js.UndefOr[DeploymentConfigId] = js.undefined
 }
 object CreateDeploymentConfigOutput {
   

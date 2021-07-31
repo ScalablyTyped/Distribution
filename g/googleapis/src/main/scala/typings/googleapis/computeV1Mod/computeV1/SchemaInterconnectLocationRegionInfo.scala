@@ -2,7 +2,6 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,24 +9,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Interconnect at a specific InterconnectLocation, and a specific Cloud
   * Region.
   */
-@js.native
 trait SchemaInterconnectLocationRegionInfo extends StObject {
   
   /**
     * Expected round-trip time in milliseconds, from this InterconnectLocation
     * to a VM in this region.
     */
-  var expectedRttMs: js.UndefOr[String] = js.native
+  var expectedRttMs: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the network presence of this location.
     */
-  var locationPresence: js.UndefOr[String] = js.native
+  var locationPresence: js.UndefOr[String] = js.undefined
   
   /**
     * URL for the region of this location.
     */
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object SchemaInterconnectLocationRegionInfo {
   

@@ -3,33 +3,31 @@ package typings.astring.anon
 import typings.node.streamMod.Stream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined astring.astring.Options & {  output :node.stream.Stream} */
-@js.native
 trait OptionsoutputStream extends StObject {
   
   /** generate comments if true (defaults to false) */
-  var comments: js.UndefOr[Boolean] = js.native
+  var comments: js.UndefOr[Boolean] = js.undefined
   
   /** custom code generator (defaults to astring.baseGenerator) */
-  var generator: js.UndefOr[js.Object] = js.native
+  var generator: js.UndefOr[js.Object] = js.undefined
   
   /** string to use for indentation (defaults to "  ") */
-  var indent: js.UndefOr[String] = js.native
+  var indent: js.UndefOr[String] = js.undefined
   
   /** string to use for line endings (defaults to "\n") */
-  var lineEnd: js.UndefOr[String] = js.native
+  var lineEnd: js.UndefOr[String] = js.undefined
   
   /** output stream to write the rendered code to (defaults to null) */
-  var output: Stream = js.native
+  var output: Stream
   
   /** source map generator (defaults to null), see https://github.com/mozilla/source-map#sourcemapgenerator */
-  var sourceMap: js.UndefOr[js.Any] = js.native
+  var sourceMap: js.UndefOr[js.Any] = js.undefined
   
   /** indent level to start from (defaults to 0) */
-  var startingIndentLevel: js.UndefOr[Double] = js.native
+  var startingIndentLevel: js.UndefOr[Double] = js.undefined
 }
 object OptionsoutputStream {
   

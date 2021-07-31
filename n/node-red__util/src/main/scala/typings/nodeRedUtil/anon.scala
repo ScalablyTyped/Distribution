@@ -2,17 +2,15 @@ package typings.nodeRedUtil
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Format extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var msg: String = js.native
+    var msg: String
   }
   object Format {
     
@@ -33,12 +31,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var store: js.UndefOr[String] = js.native
+    var store: js.UndefOr[String] = js.undefined
   }
   object Key {
     
@@ -62,10 +59,9 @@ object anon {
     }
   }
   
-  @js.native
   trait MaxLength extends StObject {
     
-    var maxLength: js.UndefOr[Double] = js.native
+    var maxLength: js.UndefOr[Double] = js.undefined
   }
   object MaxLength {
     
@@ -86,10 +82,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Msg extends StObject {
     
-    var msg: js.Any = js.native
+    var msg: js.Any
   }
   object Msg {
     

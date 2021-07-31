@@ -5,12 +5,12 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.ThisType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait ObjectConstructor
-  extends Instantiable0[Object]
+  extends StObject
+     with Instantiable0[Object]
      with Instantiable1[/* value */ js.Any, Object] {
   
   def apply(): js.Any = js.native
@@ -29,7 +29,7 @@ trait ObjectConstructor
     * @param target The target object to copy to.
     * @param source The source object from which to copy properties.
     */
-  def assign[T, U](target: T, source: U): T with U = js.native
+  def assign[T, U](target: T, source: U): T & U = js.native
   /**
     * Copy the values of all of the enumerable own properties from one or more source objects to a
     * target object. Returns the target object.
@@ -37,7 +37,7 @@ trait ObjectConstructor
     * @param source1 The first source object from which to copy properties.
     * @param source2 The second source object from which to copy properties.
     */
-  def assign[T, U, V](target: T, source1: U, source2: V): T with U with V = js.native
+  def assign[T, U, V](target: T, source1: U, source2: V): T & U & V = js.native
   /**
     * Copy the values of all of the enumerable own properties from one or more source objects to a
     * target object. Returns the target object.
@@ -46,7 +46,7 @@ trait ObjectConstructor
     * @param source2 The second source object from which to copy properties.
     * @param source3 The third source object from which to copy properties.
     */
-  def assign[T, U, V, W](target: T, source1: U, source2: V, source3: W): T with U with V with W = js.native
+  def assign[T, U, V, W](target: T, source1: U, source2: V, source3: W): T & U & V & W = js.native
   
   /**
     * Creates an object that has the specified prototype or that has null prototype.
@@ -59,15 +59,15 @@ trait ObjectConstructor
     * @param o Object to use as a prototype. May be null
     * @param properties JavaScript object that contains one or more property descriptors.
     */
-  def create(o: js.Object, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
-  def create(o: Null, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
+  def create(o: js.Object, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
+  def create(o: Null, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
   
   /**
     * Adds one or more properties to an object, and/or modifies attributes of existing properties.
     * @param o Object on which to add or modify the properties. This can be a native JavaScript object or a DOM object.
     * @param properties JavaScript object that contains one or more descriptor objects. Each descriptor object describes a data property or an accessor property.
     */
-  def defineProperties(o: js.Any, properties: PropertyDescriptorMap with ThisType[_]): js.Any = js.native
+  def defineProperties(o: js.Any, properties: PropertyDescriptorMap & ThisType[js.Any]): js.Any = js.native
   
   /**
     * Adds a property to an object, or modifies attributes of an existing property.
@@ -75,7 +75,7 @@ trait ObjectConstructor
     * @param p The property name.
     * @param attributes Descriptor for the property. It can be for a data property or an accessor property.
     */
-  def defineProperty(o: js.Any, p: java.lang.String, attributes: PropertyDescriptor with ThisType[_]): js.Any = js.native
+  def defineProperty(o: js.Any, p: java.lang.String, attributes: PropertyDescriptor & ThisType[js.Any]): js.Any = js.native
   /**
     * Adds a property to an object, or modifies attributes of an existing property.
     * @param o Object on which to add or modify the property. This can be a native JavaScript

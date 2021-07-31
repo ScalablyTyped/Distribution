@@ -2,13 +2,13 @@ package typings.openui5.global.sap.m
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("sap.m.TablePersoController")
 @js.native
 class TablePersoController protected ()
-  extends typings.openui5.sap.m.TablePersoController {
+  extends StObject
+     with typings.openui5.sap.m.TablePersoController {
   /**
     * The TablePersoController can be used to connect a table that you want to providea personalization
     * dialog for, with a persistence service such as one provided bythe unified shell.Accepts an object

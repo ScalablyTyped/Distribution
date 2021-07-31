@@ -12,7 +12,7 @@ REST client services for different Ajax libraries
 | Keywords           | feathers, feathers-plugin |
 | # releases         | 37 |
 | # dependents       | 16 |
-| # downloads        | 380763 |
+| # downloads        | 388607 |
 | # stars            | 0 |
 
 ## Links

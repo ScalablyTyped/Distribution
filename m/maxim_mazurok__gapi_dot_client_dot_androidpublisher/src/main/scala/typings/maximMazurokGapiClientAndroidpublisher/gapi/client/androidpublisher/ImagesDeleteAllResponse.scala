@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImagesDeleteAllResponse extends StObject {
   
   /** The deleted images. */
-  var deleted: js.UndefOr[js.Array[Image]] = js.native
+  var deleted: js.UndefOr[js.Array[Image]] = js.undefined
 }
 object ImagesDeleteAllResponse {
   

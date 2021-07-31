@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientAnalyticsreporting.gapi.client.analyticsre
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SearchUserActivityRequest extends StObject {
   
   /** Set of all activity types being requested. Only acvities matching these types will be returned in the response. If empty, all activies will be returned. */
-  var activityTypes: js.UndefOr[js.Array[String]] = js.native
+  var activityTypes: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Date range for which to retrieve the user activity. If a date range is not provided, the default date range is (startDate: current date - 7 days, endDate: current date - 1 day). */
-  var dateRange: js.UndefOr[DateRange] = js.native
+  var dateRange: js.UndefOr[DateRange] = js.undefined
   
   /**
     * Page size is for paging and specifies the maximum number of returned rows. Page size should be > 0. If the value is 0 or if the field isn't specified, the request returns the
     * default of 1000 rows per page.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * A continuation token to get the next page of the results. Adding this to the request will return the rows after the pageToken. The pageToken should be the value returned in the
     * nextPageToken parameter in the response to the [SearchUserActivityRequest](#SearchUserActivityRequest) request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /** Required. Unique user Id to query for. Every [SearchUserActivityRequest](#SearchUserActivityRequest) must contain this field. */
-  var user: js.UndefOr[User] = js.native
+  var user: js.UndefOr[User] = js.undefined
   
   /**
     * Required. The Analytics [view ID](https://support.google.com/analytics/answer/1009618) from which to retrieve data. Every [SearchUserActivityRequest](#SearchUserActivityRequest)
     * must contain the `viewId`.
     */
-  var viewId: js.UndefOr[String] = js.native
+  var viewId: js.UndefOr[String] = js.undefined
 }
 object SearchUserActivityRequest {
   

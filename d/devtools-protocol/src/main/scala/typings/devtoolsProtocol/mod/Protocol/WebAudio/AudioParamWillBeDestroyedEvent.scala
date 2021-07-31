@@ -2,17 +2,15 @@ package typings.devtoolsProtocol.mod.Protocol.WebAudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AudioParamWillBeDestroyedEvent extends StObject {
   
-  var contextId: GraphObjectId = js.native
+  var contextId: GraphObjectId
   
-  var nodeId: GraphObjectId = js.native
+  var nodeId: GraphObjectId
   
-  var paramId: GraphObjectId = js.native
+  var paramId: GraphObjectId
 }
 object AudioParamWillBeDestroyedEvent {
   

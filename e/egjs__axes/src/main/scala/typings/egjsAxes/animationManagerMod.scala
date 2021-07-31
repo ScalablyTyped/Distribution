@@ -8,7 +8,6 @@ import typings.egjsAxes.eventManagerMod.EventManager
 import typings.egjsAxes.interruptManagerMod.InterruptManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animationManagerMod {
@@ -63,31 +62,33 @@ object animationManagerMod {
   /* static members */
   object AnimationManager {
     
-    @JSImport("@egjs/axes/AnimationManager", "AnimationManager.getDuration")
+    @JSImport("@egjs/axes/AnimationManager", "AnimationManager")
     @js.native
-    def getDuration(duration: Double, min: Double, max: Double): Double = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDuration(duration: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDuration")(duration.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   }
   
-  @js.native
   trait AnimationParam extends StObject {
     
-    var delta: Axis = js.native
+    var delta: Axis
     
-    var depaPos: Axis = js.native
+    var depaPos: Axis
     
-    var destPos: Axis = js.native
+    var destPos: Axis
     
-    var done: js.UndefOr[js.Function0[Unit]] = js.native
+    var done: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var duration: Double = js.native
+    var duration: Double
     
-    var inputEvent: js.UndefOr[js.Any] = js.native
+    var inputEvent: js.UndefOr[js.Any] = js.undefined
     
     var setTo: js.UndefOr[
         js.Function2[/* destPos */ js.UndefOr[Axis], /* duration */ js.UndefOr[Double], DestPos]
-      ] = js.native
+      ] = js.undefined
     
-    var startTime: js.UndefOr[Double] = js.native
+    var startTime: js.UndefOr[Double] = js.undefined
   }
   object AnimationParam {
     

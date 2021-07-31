@@ -2,17 +2,15 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WalkOptionsNoVisit extends StObject {
   
-  var enter: js.UndefOr[EnterOrLeaveFn[CssNode]] = js.native
+  var enter: js.UndefOr[EnterOrLeaveFn[CssNode]] = js.undefined
   
-  var leave: js.UndefOr[EnterOrLeaveFn[CssNode]] = js.native
+  var leave: js.UndefOr[EnterOrLeaveFn[CssNode]] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
 }
 object WalkOptionsNoVisit {
   

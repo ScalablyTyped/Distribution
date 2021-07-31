@@ -2,16 +2,14 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VirtualGatewayClientPolicy extends StObject {
   
   /**
     * A reference to an object that represents a Transport Layer Security (TLS) client policy.
     */
-  var tls: js.UndefOr[VirtualGatewayClientPolicyTls] = js.native
+  var tls: js.UndefOr[VirtualGatewayClientPolicyTls] = js.undefined
 }
 object VirtualGatewayClientPolicy {
   

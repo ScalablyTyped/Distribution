@@ -7,32 +7,32 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object uploadsMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/uploads", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/uploads", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): UploadsService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/uploads", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): UploadsService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: SdkConfig): UploadsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[UploadsService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): UploadsService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[UploadsService]
+  
   trait S3Credentials extends StObject {
     
-    var accessKeyId: String = js.native
+    var accessKeyId: String
     
-    var bucket: String = js.native
+    var bucket: String
     
-    var key: String = js.native
+    var key: String
     
-    var secretAccessKey: String = js.native
+    var secretAccessKey: String
     
-    var sessionToken: String = js.native
+    var sessionToken: String
     
-    var url: String = js.native
+    var url: String
   }
   object S3Credentials {
     
@@ -72,26 +72,25 @@ object uploadsMod {
     }
   }
   
-  @js.native
   trait UploadResponse extends StObject {
     
-    var complete: Boolean = js.native
+    var complete: Boolean
     
-    var created: String = js.native
+    var created: String
     
-    var error: js.UndefOr[js.Any] = js.native
+    var error: js.UndefOr[js.Any] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var modified: String = js.native
+    var modified: String
     
-    var name: String = js.native
+    var name: String
     
-    var owner: String = js.native
+    var owner: String
     
-    var progress: Double = js.native
+    var progress: Double
     
-    var tileset: String = js.native
+    var tileset: String
   }
   object UploadResponse {
     
@@ -145,39 +144,38 @@ object uploadsMod {
     }
   }
   
-  @js.native
   trait UploadsService extends StObject {
     
     /**
       * Create an upload.
       * @param config
       */
-    def createUpload(config: MapId): MapiRequest = js.native
+    def createUpload(config: MapId): MapiRequest
     
     /**
       * Create S3 credentials.
       */
-    def createUploadCredentials(): MapiRequest = js.native
+    def createUploadCredentials(): MapiRequest
     
     /**
       * Delete an upload.
       * @param config
       */
     // implicit any
-    def deleteUpload(config: UploadId): js.Any = js.native
+    def deleteUpload(config: UploadId): js.Any
     
     /**
       * Get an upload's status.
       * @param config
       */
     // implicit any
-    def getUpload(config: UploadId): js.Any = js.native
+    def getUpload(config: UploadId): js.Any
     
     /**
       * List the statuses of all recent uploads.
       * @param config
       */
-    def listUploads(config: Reverse): MapiRequest = js.native
+    def listUploads(config: Reverse): MapiRequest
   }
   object UploadsService {
     

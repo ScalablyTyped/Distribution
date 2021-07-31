@@ -2,21 +2,19 @@ package typings.awsSdk.applicationautoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeScalingPoliciesResponse extends StObject {
   
   /**
     * The token required to get the next set of results. This value is null if there are no more results to return.
     */
-  var NextToken: js.UndefOr[XmlString] = js.native
+  var NextToken: js.UndefOr[XmlString] = js.undefined
   
   /**
     * Information about the scaling policies.
     */
-  var ScalingPolicies: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ScalingPolicies] = js.native
+  var ScalingPolicies: js.UndefOr[typings.awsSdk.applicationautoscalingMod.ScalingPolicies] = js.undefined
 }
 object DescribeScalingPoliciesResponse {
   

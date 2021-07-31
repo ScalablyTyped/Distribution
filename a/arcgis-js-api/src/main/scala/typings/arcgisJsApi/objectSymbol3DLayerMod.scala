@@ -6,14 +6,13 @@ import typings.arcgisJsApi.esri.ObjectSymbol3DLayerConstructor
 import typings.arcgisJsApi.esri.ObjectSymbol3DLayerProperties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectSymbol3DLayerMod extends Shortcut {
   
   @JSImport("esri/symbols/ObjectSymbol3DLayer", JSImport.Namespace)
   @js.native
-  val ^ : ObjectSymbol3DLayerConstructor = js.native
+  val ^ : js.Object & ObjectSymbol3DLayerConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("esri/symbols/ObjectSymbol3DLayer", JSImport.Namespace)
@@ -23,12 +22,22 @@ object objectSymbol3DLayerMod extends Shortcut {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-symbols-ObjectSymbol3DLayer.html)
     */
-  class Class () extends ObjectSymbol3DLayer {
+  class Class ()
+    extends StObject
+       with ObjectSymbol3DLayer {
     def this(properties: ObjectSymbol3DLayerProperties) = this()
+    
+    /**
+      * Converts an instance of  [this class]() to its [ArcGIS portal JSON](https://developers.arcgis.com/documentation/common-data-types/geometry-objects.htm) representation.
+      *
+      * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-JSONSupport.html#toJSON)
+      */
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
   }
   
-  type _To = ObjectSymbol3DLayerConstructor
+  type _To = js.Object & ObjectSymbol3DLayerConstructor
   
   /* This means you don't have to write `^`, but can instead just say `objectSymbol3DLayerMod.foo` */
-  override def _to: ObjectSymbol3DLayerConstructor = ^
+  override def _to: js.Object & ObjectSymbol3DLayerConstructor = ^
 }

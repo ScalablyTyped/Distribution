@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Lists the bookmarks. Is the layout for BookmarkListDef.
   */
-@js.native
 trait IBookmarkList extends StObject {
   
   /**
     * Information about the list of bookmarks
     */
-  var qItems: js.Array[IGenericBookmarkLayout] = js.native
+  var qItems: js.Array[IGenericBookmarkLayout]
 }
 object IBookmarkList {
   

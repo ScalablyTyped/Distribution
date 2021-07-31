@@ -2,13 +2,13 @@ package typings.arangodb.ArangoDB
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RemoveResult[T /* <: js.Object */] extends DocumentMetadata {
+trait RemoveResult[T /* <: js.Object */]
+  extends StObject
+     with DocumentMetadata {
   
-  var old: js.UndefOr[Document[T]] = js.native
+  var old: js.UndefOr[Document[T]] = js.undefined
 }
 object RemoveResult {
   
@@ -19,7 +19,7 @@ object RemoveResult {
   }
   
   @scala.inline
-  implicit class RemoveResultMutableBuilder[Self <: RemoveResult[_], T /* <: js.Object */] (val x: Self with RemoveResult[T]) extends AnyVal {
+  implicit class RemoveResultMutableBuilder[Self <: RemoveResult[?], T /* <: js.Object */] (val x: Self & RemoveResult[T]) extends AnyVal {
     
     @scala.inline
     def setOld(value: Document[T]): Self = StObject.set(x, "old", value.asInstanceOf[js.Any])

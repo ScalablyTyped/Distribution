@@ -2,18 +2,16 @@ package typings.awsSdkClientPinpointBrowser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCreateApplicationRequestMod {
   
-  @js.native
   trait CreateApplicationRequest extends StObject {
     
     /**
       * The display name of the application. Used in the Amazon Pinpoint console.
       */
-    var Name: js.UndefOr[String] = js.native
+    var Name: js.UndefOr[String] = js.undefined
   }
   object CreateApplicationRequest {
     

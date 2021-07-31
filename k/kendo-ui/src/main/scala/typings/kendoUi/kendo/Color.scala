@@ -2,11 +2,12 @@ package typings.kendoUi.kendo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Color extends Observable {
+trait Color
+  extends StObject
+     with Observable {
   
   def diff(): Double = js.native
   

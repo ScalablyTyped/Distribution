@@ -3,21 +3,19 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 import typings.vscodeLanguageserverTypes.mod.DocumentUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileEvent extends StObject {
   
   /**
     * The change type.
     */
-  var `type`: FileChangeType = js.native
+  var `type`: FileChangeType
   
   /**
     * The file's uri.
     */
-  var uri: DocumentUri = js.native
+  var uri: DocumentUri
 }
 object FileEvent {
   

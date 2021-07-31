@@ -2,7 +2,6 @@ package typings.googleapis.dialogflowV2Mod.dialogflowV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,13 +10,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * `WebhookResponse.fulfillment_messages` should contain only one
   * `SimpleResponse`.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponses extends StObject {
   
   /**
     * Required. The list of simple responses.
     */
-  var simpleResponses: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponse]] = js.native
+  var simpleResponses: js.UndefOr[js.Array[SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponse]] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageSimpleResponses {
   

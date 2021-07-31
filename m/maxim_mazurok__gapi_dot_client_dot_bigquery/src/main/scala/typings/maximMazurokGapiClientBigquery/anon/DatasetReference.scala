@@ -3,33 +3,31 @@ package typings.maximMazurokGapiClientBigquery.anon
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatasetReference extends StObject {
   
   /** The dataset reference. Use this property to access specific parts of the dataset's ID, such as project ID or dataset ID. */
-  var datasetReference: js.UndefOr[typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.DatasetReference] = js.native
+  var datasetReference: js.UndefOr[typings.maximMazurokGapiClientBigquery.gapi.client.bigquery.DatasetReference] = js.undefined
   
   /** A descriptive name for the dataset, if one exists. */
-  var friendlyName: js.UndefOr[String] = js.native
+  var friendlyName: js.UndefOr[String] = js.undefined
   
   /** The fully-qualified, unique, opaque ID of the dataset. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** The resource type. This property always returns the value "bigquery#dataset". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** The labels associated with this dataset. You can use these to organize and group your datasets. */
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DatasetReference with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DatasetReference & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The geographic location where the data resides. */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
 }
 object DatasetReference {
   
@@ -70,7 +68,7 @@ object DatasetReference {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DatasetReference with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.DatasetReference & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

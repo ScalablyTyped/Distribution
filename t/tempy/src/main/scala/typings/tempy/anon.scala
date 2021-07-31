@@ -9,7 +9,6 @@ import typings.tempy.mod.TaskCallback
 import typings.typeFest.basicMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -97,7 +96,6 @@ object anon {
     def task[ReturnValueType](fileContent: TypedArray, callback: TaskCallback[ReturnValueType], options: FileOptions): js.Promise[ReturnValueType] = js.native
   }
   
-  @js.native
   trait Extension extends StObject {
     
     /**
@@ -105,7 +103,7 @@ object anon {
     			Mutually exclusive with the `name` option.
     			_You usually won't need this option. Specify it only when actually needed._
     			*/
-    val extension: js.UndefOr[String] = js.native
+    val `extension`: js.UndefOr[String] = js.undefined
   }
   object Extension {
     
@@ -126,7 +124,6 @@ object anon {
     }
   }
   
-  @js.native
   trait Name extends StObject {
     
     /**
@@ -134,7 +131,7 @@ object anon {
     			Mutually exclusive with the `extension` option.
     			_You usually won't need this option. Specify it only when actually needed._
     			*/
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
   }
   object Name {
     

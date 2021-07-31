@@ -8,7 +8,6 @@ import typings.bytes.bytesStrings.pb_
 import typings.bytes.bytesStrings.tb_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,15 +15,16 @@ object mod {
   /**
     * Parse string to an integer in bytes.
     */
+  @scala.inline
+  def apply(value: String): Double = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def apply(value: Double): String = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(value: Double, options: BytesOptions): String = (^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   @JSImport("bytes", JSImport.Namespace)
   @js.native
-  def apply(value: String): Double = js.native
-  @JSImport("bytes", JSImport.Namespace)
-  @js.native
-  def apply(value: Double): String = js.native
-  @JSImport("bytes", JSImport.Namespace)
-  @js.native
-  def apply(value: Double, options: BytesOptions): String = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Format the given value in bytes into a string.
@@ -32,37 +32,32 @@ object mod {
     * If the value is negative, it is kept as such.
     * If it is a float, it is rounded.
     */
-  @JSImport("bytes", "format")
-  @js.native
-  def format(value: Double): String = js.native
-  @JSImport("bytes", "format")
-  @js.native
-  def format(value: Double, options: BytesOptions): String = js.native
+  @scala.inline
+  def format(value: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def format(value: Double, options: BytesOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("format")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
   /**
     * Parse the string value into an integer in bytes.
     *
     * If no unit is given, it is assumed the value is in bytes.
     */
-  @JSImport("bytes", "parse")
-  @js.native
-  def parse(value: String): Double = js.native
-  @JSImport("bytes", "parse")
-  @js.native
-  def parse(value: Double): Double = js.native
+  @scala.inline
+  def parse(value: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def parse(value: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(value.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
   trait BytesOptions extends StObject {
     
-    var decimalPlaces: js.UndefOr[Double] = js.native
+    var decimalPlaces: js.UndefOr[Double] = js.undefined
     
-    var fixedDecimals: js.UndefOr[Boolean] = js.native
+    var fixedDecimals: js.UndefOr[Boolean] = js.undefined
     
-    var thousandsSeparator: js.UndefOr[String] = js.native
+    var thousandsSeparator: js.UndefOr[String] = js.undefined
     
-    var unit: js.UndefOr[Unit] = js.native
+    var unit: js.UndefOr[Unit] = js.undefined
     
-    var unitSeparator: js.UndefOr[String] = js.native
+    var unitSeparator: js.UndefOr[String] = js.undefined
   }
   object BytesOptions {
     

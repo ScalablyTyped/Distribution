@@ -2,21 +2,19 @@ package typings.awsSdk.docdbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DBClusterSnapshotMessage extends StObject {
   
   /**
     * Provides a list of cluster snapshots.
     */
-  var DBClusterSnapshots: js.UndefOr[DBClusterSnapshotList] = js.native
+  var DBClusterSnapshots: js.UndefOr[DBClusterSnapshotList] = js.undefined
   
   /**
     * An optional pagination token provided by a previous request. If this parameter is specified, the response includes only records beyond the marker, up to the value specified by MaxRecords.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object DBClusterSnapshotMessage {
   

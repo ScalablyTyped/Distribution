@@ -5,17 +5,15 @@ import typings.canvasGauges.CanvasGauges.LinearGauge
 import typings.canvasGauges.CanvasGauges.RadialGauge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Window extends StObject {
   
-  var BaseGauge: typings.canvasGauges.CanvasGauges.BaseGauge = js.native
+  var BaseGauge: typings.canvasGauges.CanvasGauges.BaseGauge
   
-  var LinearGauge: typings.canvasGauges.CanvasGauges.LinearGauge = js.native
+  var LinearGauge: typings.canvasGauges.CanvasGauges.LinearGauge
   
-  var RadialGauge: typings.canvasGauges.CanvasGauges.RadialGauge = js.native
+  var RadialGauge: typings.canvasGauges.CanvasGauges.RadialGauge
 }
 object Window {
   

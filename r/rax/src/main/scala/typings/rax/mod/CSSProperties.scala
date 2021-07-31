@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.csstype.mod.Properties
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CSSProperties
-  extends Properties[String | Double]
+  extends StObject
+     with Properties[String | Double]
      with /**
   * The index signature was removed to enable closed typing for style
   * using CSSType. You're able to use type assertion or module augmentation

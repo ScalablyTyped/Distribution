@@ -6,25 +6,23 @@ import typings.typeorm.typeormStrings.uuid
 import typings.typeorm.typesColumnTypesMod.ColumnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsGenerated extends StObject {
   
-  var generationStrategy: js.UndefOr[increment | uuid | rowid] = js.native
+  var generationStrategy: js.UndefOr[increment | uuid | rowid] = js.undefined
   
-  var isArray: js.UndefOr[Boolean] = js.native
+  var isArray: js.UndefOr[Boolean] = js.undefined
   
-  var isGenerated: js.UndefOr[Boolean] = js.native
+  var isGenerated: js.UndefOr[Boolean] = js.undefined
   
-  var length: js.UndefOr[Double | String] = js.native
+  var length: js.UndefOr[Double | String] = js.undefined
   
-  var precision: js.UndefOr[Double | Null] = js.native
+  var precision: js.UndefOr[Double | Null] = js.undefined
   
-  var scale: js.UndefOr[Double] = js.native
+  var scale: js.UndefOr[Double] = js.undefined
   
-  var `type`: js.UndefOr[ColumnType] = js.native
+  var `type`: js.UndefOr[ColumnType] = js.undefined
 }
 object IsGenerated {
   

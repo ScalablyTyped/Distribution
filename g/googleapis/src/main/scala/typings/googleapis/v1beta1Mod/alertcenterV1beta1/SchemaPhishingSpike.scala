@@ -2,7 +2,6 @@ package typings.googleapis.v1beta1Mod.alertcenterV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,28 +11,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [MailPhishing](/admin-sdk/alertcenter/reference/rest/v1beta1/MailPhishing)
   * instead.&lt;/aside&gt;
   */
-@js.native
 trait SchemaPhishingSpike extends StObject {
   
   /**
     * The domain ID.
     */
-  var domainId: js.UndefOr[SchemaDomainId] = js.native
+  var domainId: js.UndefOr[SchemaDomainId] = js.undefined
   
   /**
     * If `true`, the email originated from within the organization.
     */
-  var isInternal: js.UndefOr[Boolean] = js.native
+  var isInternal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The entity whose actions triggered a Gmail phishing alert.
     */
-  var maliciousEntity: js.UndefOr[SchemaMaliciousEntity] = js.native
+  var maliciousEntity: js.UndefOr[SchemaMaliciousEntity] = js.undefined
   
   /**
     * The list of messages contained by this alert.
     */
-  var messages: js.UndefOr[js.Array[SchemaGmailMessageInfo]] = js.native
+  var messages: js.UndefOr[js.Array[SchemaGmailMessageInfo]] = js.undefined
 }
 object SchemaPhishingSpike {
   

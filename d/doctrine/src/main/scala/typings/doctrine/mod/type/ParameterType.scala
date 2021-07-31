@@ -3,24 +3,24 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParameterType extends Type_ {
+trait ParameterType
+  extends StObject
+     with Type_ {
   
-  var expression: Type_ = js.native
+  var expression: Type_
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: typings.doctrine.doctrineStrings.ParameterType = js.native
+  var `type`: typings.doctrine.doctrineStrings.ParameterType
 }
 object ParameterType {
   
   @scala.inline
-  def apply(expression: Type_, name: String, `type`: typings.doctrine.doctrineStrings.ParameterType): ParameterType = {
+  def apply(expression: Type_, name: String): ParameterType = {
     val __obj = js.Dynamic.literal(expression = expression.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ParameterType")
     __obj.asInstanceOf[ParameterType]
   }
   

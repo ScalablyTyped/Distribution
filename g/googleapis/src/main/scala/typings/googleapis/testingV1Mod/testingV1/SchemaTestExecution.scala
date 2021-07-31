@@ -2,60 +2,58 @@ package typings.googleapis.testingV1Mod.testingV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Specifies a single test to be executed in a single environment.
   */
-@js.native
 trait SchemaTestExecution extends StObject {
   
   /**
     * Output only. How the host machine(s) are configured.
     */
-  var environment: js.UndefOr[SchemaEnvironment] = js.native
+  var environment: js.UndefOr[SchemaEnvironment] = js.undefined
   
   /**
     * Output only. Unique id set by the backend.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Id of the containing TestMatrix.
     */
-  var matrixId: js.UndefOr[String] = js.native
+  var matrixId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The cloud project that owns the test execution.
     */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Indicates the current progress of the test execution (e.g.,
     * FINISHED).
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Additional details about the running test.
     */
-  var testDetails: js.UndefOr[SchemaTestDetails] = js.native
+  var testDetails: js.UndefOr[SchemaTestDetails] = js.undefined
   
   /**
     * Output only. How to run the test.
     */
-  var testSpecification: js.UndefOr[SchemaTestSpecification] = js.native
+  var testSpecification: js.UndefOr[SchemaTestSpecification] = js.undefined
   
   /**
     * Output only. The time this test execution was initially created.
     */
-  var timestamp: js.UndefOr[String] = js.native
+  var timestamp: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. Where the results for this execution are written.
     */
-  var toolResultsStep: js.UndefOr[SchemaToolResultsStep] = js.native
+  var toolResultsStep: js.UndefOr[SchemaToolResultsStep] = js.undefined
 }
 object SchemaTestExecution {
   

@@ -9,25 +9,23 @@ import typings.winrt.Windows.Networking.HostName
 import typings.winrt.Windows.Networking.HostNameSortOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait INetworkInformationStatics extends StObject {
   
-  def getConnectionProfiles(): IVectorView[ConnectionProfile] = js.native
+  def getConnectionProfiles(): IVectorView[ConnectionProfile]
   
-  def getHostNames(): IVectorView[HostName] = js.native
+  def getHostNames(): IVectorView[HostName]
   
-  def getInternetConnectionProfile(): ConnectionProfile = js.native
+  def getInternetConnectionProfile(): ConnectionProfile
   
-  def getLanIdentifiers(): IVectorView[LanIdentifier] = js.native
+  def getLanIdentifiers(): IVectorView[LanIdentifier]
   
-  def getProxyConfigurationAsync(uri: Uri): IAsyncOperation[ProxyConfiguration] = js.native
+  def getProxyConfigurationAsync(uri: Uri): IAsyncOperation[ProxyConfiguration]
   
-  def getSortedEndpointPairs(destinationList: IIterable[EndpointPair], sortOptions: HostNameSortOptions): IVectorView[EndpointPair] = js.native
+  def getSortedEndpointPairs(destinationList: IIterable[EndpointPair], sortOptions: HostNameSortOptions): IVectorView[EndpointPair]
   
-  var onnetworkstatuschanged: js.Any = js.native
+  var onnetworkstatuschanged: js.Any
 }
 object INetworkInformationStatics {
   

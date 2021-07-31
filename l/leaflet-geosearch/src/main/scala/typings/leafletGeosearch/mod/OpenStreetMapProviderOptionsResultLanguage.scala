@@ -2,13 +2,11 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenStreetMapProviderOptionsResultLanguage extends StObject {
   
-  var `accept-language`: js.UndefOr[String] = js.native
+  var `accept-language`: js.UndefOr[String] = js.undefined
 }
 object OpenStreetMapProviderOptionsResultLanguage {
   

@@ -3,25 +3,23 @@ package typings.pouchdbFind
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Ddoc extends StObject {
     
     /** Design document name (i.e. the part after '_design/', auto-generated if you don't include it */
-    var ddoc: js.UndefOr[String] = js.native
+    var ddoc: js.UndefOr[String] = js.undefined
     
     /** List of fields to index */
-    var fields: js.Array[String] = js.native
+    var fields: js.Array[String]
     
     /** Name of the index, auto-generated if you don't include it */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** Only supports 'json', and it's also the default */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object Ddoc {
     
@@ -60,10 +58,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Fields extends StObject {
     
-    var fields: js.Array[StringDictionary[String]] = js.native
+    var fields: js.Array[StringDictionary[String]]
   }
   object Fields {
     

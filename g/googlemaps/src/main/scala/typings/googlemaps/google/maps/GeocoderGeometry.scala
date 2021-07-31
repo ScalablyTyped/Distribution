@@ -2,19 +2,17 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocoderGeometry extends StObject {
   
-  var bounds: LatLngBounds = js.native
+  var bounds: LatLngBounds
   
-  var location: LatLng = js.native
+  var location: LatLng
   
-  var location_type: GeocoderLocationType = js.native
+  var location_type: GeocoderLocationType
   
-  var viewport: LatLngBounds = js.native
+  var viewport: LatLngBounds
 }
 object GeocoderGeometry {
   

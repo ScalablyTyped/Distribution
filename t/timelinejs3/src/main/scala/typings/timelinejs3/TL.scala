@@ -14,14 +14,14 @@ import typings.timelinejs3.timelinejs3Strings.zoom_in
 import typings.timelinejs3.timelinejs3Strings.zoom_out
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object TL {
   
   @js.native
   trait ITimeline
-    extends ITimelineEvents
+    extends StObject
+       with ITimelineEvents
        with Instantiable2[
           /* containerId */ String, 
           (/* data */ ITimelineConfig) | (/* data */ String), 
@@ -84,12 +84,11 @@ object TL {
     def zoomOut(): Unit = js.native
   }
   
-  @js.native
   trait ITimelineConfig extends StObject {
     
-    var eras: js.UndefOr[js.Array[ITimelineEra]] = js.native
+    var eras: js.UndefOr[js.Array[ITimelineEra]] = js.undefined
     
-    var events: js.Array[ITimelineSlideData] = js.native
+    var events: js.Array[ITimelineSlideData]
     
     /*
       * Either human or cosmological. If no scale is specified, the default is human. The cosmological scale is
@@ -97,9 +96,9 @@ object TL {
       * after Saturday, September 13 275,760 CE) For the cosmological scale, only the year is considered, but it's
       * OK to have a cosmological timeline with years between 271,821 BCE and 275,760 CE.
       */
-    var scale: js.UndefOr[human | cosmological] = js.native
+    var scale: js.UndefOr[human | cosmological] = js.undefined
     
-    var title: js.UndefOr[ITimelineSlideData] = js.native
+    var title: js.UndefOr[ITimelineSlideData] = js.undefined
   }
   object ITimelineConfig {
     
@@ -141,42 +140,41 @@ object TL {
     }
   }
   
-  @js.native
   trait ITimelineDate extends StObject {
     
-    var day: js.UndefOr[Double] = js.native
+    var day: js.UndefOr[Double] = js.undefined
     
     /*
       * A string for presenting the date. Useful if Timeline's date formatting doesn't fit your needs.
       */
-    var display_date: js.UndefOr[String] = js.native
+    var display_date: js.UndefOr[String] = js.undefined
     
     /*
       * 0-23
       */
-    var hour: js.UndefOr[Double] = js.native
+    var hour: js.UndefOr[Double] = js.undefined
     
-    var millisecond: js.UndefOr[Double] = js.native
+    var millisecond: js.UndefOr[Double] = js.undefined
     
     /*
       * 0-59
       */
-    var minute: js.UndefOr[Double] = js.native
+    var minute: js.UndefOr[Double] = js.undefined
     
     /*
       * 1-12
       */
-    var month: js.UndefOr[Double] = js.native
+    var month: js.UndefOr[Double] = js.undefined
     
     /*
       * 0-59
       */
-    var second: js.UndefOr[Double] = js.native
+    var second: js.UndefOr[Double] = js.undefined
     
     /*
       * BCE years should be negative numbers.
       */
-    var year: Double = js.native
+    var year: Double
   }
   object ITimelineDate {
     
@@ -236,17 +234,16 @@ object TL {
     }
   }
   
-  @js.native
   trait ITimelineEra extends StObject {
     
-    var end_date: ITimelineDate = js.native
+    var end_date: ITimelineDate
     
-    var start_date: ITimelineDate = js.native
+    var start_date: ITimelineDate
     
     /*
       * Not required, but recommended.
       */
-    var text: js.UndefOr[ITimelineText] = js.native
+    var text: js.UndefOr[ITimelineText] = js.undefined
   }
   object ITimelineEra {
     
@@ -297,29 +294,28 @@ object TL {
     def removeEventListener(`type`: String, fn: js.Function0[Unit], context: js.Any): ITimelineEvents = js.native
   }
   
-  @js.native
   trait ITimelineMedia extends StObject {
     
     /*
       * HTML markup is OK.
       */
-    var caption: js.UndefOr[String] = js.native
+    var caption: js.UndefOr[String] = js.undefined
     
     /*
       * HTML markup is OK.
       */
-    var credit: js.UndefOr[String] = js.native
+    var credit: js.UndefOr[String] = js.undefined
     
     /*
       * A URL for an image to use in the timenav marker for this event. If omitted, Timeline will use an icon based
       * on the type of media. Not relevant for title slides, because they do not have a marker.
       */
-    var thumbnail: js.UndefOr[String] = js.native
+    var thumbnail: js.UndefOr[String] = js.undefined
     
     /*
       * In most cases, a URL (see https://timeline.knightlab.com/docs/media-types.html for complete details).
       */
-    var url: String = js.native
+    var url: String
   }
   object ITimelineMedia {
     
@@ -355,198 +351,197 @@ object TL {
     }
   }
   
-  @js.native
   trait ITimelineOptions extends StObject {
     
     /*
       * Default: 'tl-timeline
       * Removing the tl-timeline base class will disable all default stylesheets.
       */
-    var base_class: js.UndefOr[String] = js.native
+    var base_class: js.UndefOr[String] = js.undefined
     
     /*
       * Default: false
       * If true, copious console logging will be enabled.
       */
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Default: white
       * RGB values to use for slide backgrounds. Specify as hex code, CSS named color, or a Javascript object with r, g, and b properties from 0-255.
       */
-    var default_bg_color: js.UndefOr[String] = js.native
+    var default_bg_color: js.UndefOr[String] = js.undefined
     
     /*
       * Default: true
       */
-    var dragging: js.UndefOr[Boolean] = js.native
+    var dragging: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Default: 1000
       * Animation duration (in milliseconds).
       */
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: TL.Ease.easeInOutQuint
       */
-    var ease: js.UndefOr[js.Function0[Double]] = js.native
+    var ease: js.UndefOr[js.Function0[Double]] = js.undefined
     
     /*
       * Default: null
       * Google Analytics ID.
       */
-    var ga_property_id: js.UndefOr[js.Any] = js.native
+    var ga_property_id: js.UndefOr[js.Any] = js.undefined
     
     /*
       * Default: false
       * If set to true, TimelineJS will update the browser URL each time a slide advances, so that people can link directly to specific slides.
       */
-    var hash_bookmark: js.UndefOr[Boolean] = js.native
+    var hash_bookmark: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Default: this._el.container.offsetHeight
       * The height of the timeline.
       */
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
     /*
       * The position in the zoom_sequence series used to scale the Timeline when it is first created. Takes precedence over scale_factor.
       */
-    var initial_zoom: js.UndefOr[Double] = js.native
+    var initial_zoom: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: false
       * If true, the class tl-timeline-embed is added to the outer Timeline container. Typically only used to support Timeline iframe embeds.
       */
-    var is_embed: js.UndefOr[Boolean] = js.native
+    var is_embed: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Default: 'en'
       */
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
     /*
       * Default: 30
       * The minimum marker height (in pixels).
       */
-    var marker_height_min: js.UndefOr[Double] = js.native
+    var marker_height_min: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 5
       * Top and bottom padding (in pixels) for markers.
       */
-    var marker_padding: js.UndefOr[Double] = js.native
+    var marker_padding: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 100
       * The minimum marker witdh (in pixels).
       */
-    var marker_width_min: js.UndefOr[Double] = js.native
+    var marker_width_min: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 0
       */
-    var menubar_height: js.UndefOr[Double] = js.native
+    var menubar_height: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 100
       * optimal distance (in pixels) between ticks on axis
       */
-    var optimal_tick_width: js.UndefOr[Double] = js.native
+    var optimal_tick_width: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 2
       * How many screen widths wide the timeline should be at first presentation.
       */
-    var scale_factor: js.UndefOr[Double] = js.native
+    var scale_factor: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: ''
       * Can be used to help Timeline load related resources such as CSS themes and language files. Rarely needs to be set.
       */
-    var script_path: js.UndefOr[String] = js.native
+    var script_path: js.UndefOr[String] = js.undefined
     
     /*
       * Default: '0%'
       */
-    var slide_default_fade: js.UndefOr[String] = js.native
+    var slide_default_fade: js.UndefOr[String] = js.undefined
     
     /*
       * Default: 100
       * Padding (in pixels) on the left and right of each slide.
       */
-    var slide_padding_lr: js.UndefOr[Double] = js.native
+    var slide_padding_lr: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: false
       * If true, loads timeline on last slide.
       */
-    var start_at_end: js.UndefOr[Boolean] = js.native
+    var start_at_end: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Default: 0
       * The first slide to display when the timeline is loaded.
       */
-    var start_at_slide: js.UndefOr[Double] = js.native
+    var start_at_slide: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 150
       * The height in pixels of the timeline nav. Takes precedence over timenav_height_percentage.
       */
-    var timenav_height: js.UndefOr[Double] = js.native
+    var timenav_height: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 150
       * The minimum timeline nav height (in pixels).
       */
-    var timenav_height_min: js.UndefOr[Double] = js.native
+    var timenav_height_min: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 25
       * Specify the timeline nav height as a percentage of the screen instead of in pixels.
       */
-    var timenav_height_percentage: js.UndefOr[Double] = js.native
+    var timenav_height_percentage: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 40
       * Specify the timeline nav height as a percentage of a mobile device screen.
       */
-    var timenav_mobile_height_percentage: js.UndefOr[Double] = js.native
+    var timenav_mobile_height_percentage: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: 'bottom'
       * Display the timeline nav on the top or bottom.
       */
-    var timenav_position: js.UndefOr[bottom | top] = js.native
+    var timenav_position: js.UndefOr[bottom | top] = js.undefined
     
     /*
       * Default: true
       */
-    var trackResize: js.UndefOr[Boolean] = js.native
+    var trackResize: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Default: ['back_to_start','nav_next','nav_previous','zoom_in','zoom_out']
       */
-    var track_events: js.UndefOr[js.Array[back_to_start | nav_next | nav_previous | zoom_in | zoom_out]] = js.native
+    var track_events: js.UndefOr[js.Array[back_to_start | nav_next | nav_previous | zoom_in | zoom_out]] = js.undefined
     
     /*
       * Default: false
       * Use declared suffix on dates earlier than 0.
       */
-    var use_bc: js.UndefOr[Boolean] = js.native
+    var use_bc: js.UndefOr[Boolean] = js.undefined
     
     /*
       * Default: this._el.container.offsetWidth
       * The width of the timeline.
       */
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
     
     /*
       * Default: [0.5, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89]
       * Array of values for TimeNav zoom levels. Each value is a scale_factor, which means that at any given level, the full timeline would require that many screens to display all events.
       */
-    var zoom_sequence: js.UndefOr[js.Array[Double]] = js.native
+    var zoom_sequence: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object ITimelineOptions {
     
@@ -765,10 +760,9 @@ object TL {
     }
   }
   
-  @js.native
   trait ITimelineSlide extends StObject {
     
-    var data: ITimelineSlideData = js.native
+    var data: ITimelineSlideData
   }
   object ITimelineSlide {
     
@@ -786,7 +780,6 @@ object TL {
     }
   }
   
-  @js.native
   trait ITimelineSlideData extends StObject {
     
     /*
@@ -795,42 +788,42 @@ object TL {
       * appropriate fields when you want links. Autolinking applies to the text field in a text object and the
       * caption and credit fields in a media object.
       */
-    var autolink: js.UndefOr[Boolean] = js.native
+    var autolink: js.UndefOr[Boolean] = js.undefined
     
     /*
       * A Javascript object. The object can have these properties:
       * url: the fully-qualified URL pointing to an image which will be used as the background
       * color: a CSS color, in hexadecimal (e.g. #0f9bd1) or a valid CSS color keyword.
       */
-    var background: js.UndefOr[Color] = js.native
+    var background: js.UndefOr[Color] = js.undefined
     
     /*
       * A string which will be used when Timeline displays the date for this. If used, override's display_date
       * values set on the start or end date for this event, which is useful if you want to control how the two
       * dates relate to each other.
       */
-    var display_date: js.UndefOr[String] = js.native
+    var display_date: js.UndefOr[String] = js.undefined
     
-    var end_date: js.UndefOr[ITimelineDate] = js.native
+    var end_date: js.UndefOr[ITimelineDate] = js.undefined
     
     /*
       * If present, Timeline will organize events with the same value for group to be in the same row or adjacent
       * rows, separate from events in other groups. The common value for the group will be shown as a label at the
       * left edge of the navigation.
       */
-    var group: js.UndefOr[String] = js.native
+    var group: js.UndefOr[String] = js.undefined
     
-    var media: js.UndefOr[ITimelineMedia] = js.native
+    var media: js.UndefOr[ITimelineMedia] = js.undefined
     
     /*
       * Required for events, but not for `title` slides.
       */
-    var start_date: js.UndefOr[ITimelineDate] = js.native
+    var start_date: js.UndefOr[ITimelineDate] = js.undefined
     
     /*
       * Not required, but recommended.
       */
-    var text: js.UndefOr[ITimelineText] = js.native
+    var text: js.UndefOr[ITimelineText] = js.undefined
     
     /*
       * A string value which is unique among all slides in your timeline. If not specified, TimelineJS will
@@ -838,7 +831,7 @@ object TL {
       * are used when the hash_bookmark option is used, and can also be used with the timeline.goToId() method to
       * programmatically move the timeline to a specific slide.
       */
-    var unique_id: js.UndefOr[String] = js.native
+    var unique_id: js.UndefOr[String] = js.undefined
   }
   object ITimelineSlideData {
     
@@ -907,18 +900,17 @@ object TL {
     }
   }
   
-  @js.native
   trait ITimelineText extends StObject {
     
     /*
       * HTML markup is OK. Blank is also OK.
       */
-    var headline: js.UndefOr[String] = js.native
+    var headline: js.UndefOr[String] = js.undefined
     
     /*
       * HTML markup is OK. Blank is also OK. Not used for era objects.
       */
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object ITimelineText {
     

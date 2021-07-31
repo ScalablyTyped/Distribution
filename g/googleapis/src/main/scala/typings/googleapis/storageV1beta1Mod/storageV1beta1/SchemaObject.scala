@@ -5,80 +5,78 @@ import typings.googleapis.anon.Algorithm
 import typings.googleapis.anon.Entity
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * An object.
   */
-@js.native
 trait SchemaObject extends StObject {
   
   /**
     * Access controls on the object.
     */
-  var acl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.native
+  var acl: js.UndefOr[js.Array[SchemaObjectAccessControl]] = js.undefined
   
   /**
     * The bucket containing this object.
     */
-  var bucket: js.UndefOr[String] = js.native
+  var bucket: js.UndefOr[String] = js.undefined
   
   /**
     * Cache-Control directive for the object data.
     */
-  var cacheControl: js.UndefOr[String] = js.native
+  var cacheControl: js.UndefOr[String] = js.undefined
   
   /**
     * Content-Disposition of the object data.
     */
-  var contentDisposition: js.UndefOr[String] = js.native
+  var contentDisposition: js.UndefOr[String] = js.undefined
   
   /**
     * Content-Encoding of the object data.
     */
-  var contentEncoding: js.UndefOr[String] = js.native
+  var contentEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Content-Language of the object data.
     */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the object.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * The kind of item this is. For objects, this is always storage#object.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Object media data. Provided on your behalf when uploading raw media or
     * multipart/related with an auxiliary media part.
     */
-  var media: js.UndefOr[Algorithm] = js.native
+  var media: js.UndefOr[Algorithm] = js.undefined
   
   /**
     * User-provided metadata, in key/value pairs.
     */
-  var metadata: js.UndefOr[StringDictionary[String]] = js.native
+  var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The name of this object. Required if not specified by URL parameter.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The owner of the object. This will always be the uploader of the object.
     */
-  var owner: js.UndefOr[Entity] = js.native
+  var owner: js.UndefOr[Entity] = js.undefined
   
   /**
     * The link to this object.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaObject {
   

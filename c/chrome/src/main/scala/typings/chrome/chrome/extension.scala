@@ -4,7 +4,6 @@ import typings.chrome.chrome.events.Event
 import typings.chrome.chrome.runtime.MessageSender
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -14,16 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The chrome.extension API has utilities that can be used by any extension page. It includes support for exchanging messages between an extension and its content scripts or between extensions, as described in detail in Message Passing.
   * Availability: Since Chrome 5.
   */
-object extension {
+object `extension` {
   
-  @js.native
   trait FetchProperties extends StObject {
     
     /** Optional. The type of view to get. If omitted, returns all views (including background pages and tabs). Valid values: 'tab', 'notification', 'popup'.  */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
     /** Optional. The window to restrict the search to. If omitted, returns all views.  */
-    var windowId: js.UndefOr[Double] = js.native
+    var windowId: js.UndefOr[Double] = js.undefined
   }
   object FetchProperties {
     
@@ -50,11 +48,10 @@ object extension {
     }
   }
   
-  @js.native
   trait LastError extends StObject {
     
     /** Description of the error that has taken place. */
-    var message: String = js.native
+    var message: String
   }
   object LastError {
     

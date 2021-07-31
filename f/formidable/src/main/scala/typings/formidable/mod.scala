@@ -8,7 +8,6 @@ import typings.node.streamMod.Stream
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -43,7 +42,7 @@ object mod {
     def parse(req: IncomingMessage): Unit = js.native
     def parse(
       req: IncomingMessage,
-      callback: js.Function3[/* err */ js.Any, /* fields */ Fields, /* files */ Files, _]
+      callback: js.Function3[/* err */ js.Any, /* fields */ Fields, /* files */ Files, js.Any]
     ): Unit = js.native
     
     var `type`: String = js.native
@@ -53,22 +52,21 @@ object mod {
   
   type Fields = StringDictionary[String | js.Array[String]]
   
-  @js.native
   trait File extends StObject {
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var lastModifiedDate: js.UndefOr[Date] = js.native
+    var lastModifiedDate: js.UndefOr[Date] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var size: Double = js.native
+    var size: Double
     
-    def toJSON(): js.Object = js.native
+    def toJSON(): js.Object
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object File {
     

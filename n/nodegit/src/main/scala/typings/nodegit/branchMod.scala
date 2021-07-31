@@ -9,7 +9,6 @@ import typings.nodegit.referenceMod.Reference
 import typings.nodegit.repositoryMod.Repository
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object branchMod {
@@ -20,45 +19,39 @@ object branchMod {
   /* static members */
   object Branch {
     
-    @JSImport("nodegit/branch", "Branch.create")
+    @JSImport("nodegit/branch", "Branch")
     @js.native
-    def create(repo: Repository, branchName: String, target: Commit, force: Double): js.Promise[Reference] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/branch", "Branch.createFromAnnotated")
-    @js.native
-    def createFromAnnotated(repository: Repository, branchName: String, commit: AnnotatedCommit, force: Double): Reference = js.native
+    @scala.inline
+    def create(repo: Repository, branchName: String, target: Commit, force: Double): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], branchName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
-    @JSImport("nodegit/branch", "Branch.delete")
-    @js.native
-    def delete(branch: Reference): Double = js.native
+    @scala.inline
+    def createFromAnnotated(repository: Repository, branchName: String, commit: AnnotatedCommit, force: Double): Reference = (^.asInstanceOf[js.Dynamic].applyDynamic("createFromAnnotated")(repository.asInstanceOf[js.Any], branchName.asInstanceOf[js.Any], commit.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[Reference]
     
-    @JSImport("nodegit/branch", "Branch.isHead")
-    @js.native
-    def isHead(branch: Reference): Double = js.native
+    @scala.inline
+    def delete(branch: Reference): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("delete")(branch.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("nodegit/branch", "Branch.iteratorNew")
-    @js.native
-    def iteratorNew(repo: Repository, listFlags: Double): js.Promise[_] = js.native
+    @scala.inline
+    def isHead(branch: Reference): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("isHead")(branch.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("nodegit/branch", "Branch.lookup")
-    @js.native
-    def lookup(repo: Repository, branchName: String, branchType: BRANCH): js.Promise[Reference] = js.native
+    @scala.inline
+    def iteratorNew(repo: Repository, listFlags: Double): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("iteratorNew")(repo.asInstanceOf[js.Any], listFlags.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("nodegit/branch", "Branch.move")
-    @js.native
-    def move(branch: Reference, newBranchName: String, force: Double): js.Promise[Reference] = js.native
+    @scala.inline
+    def lookup(repo: Repository, branchName: String, branchType: BRANCH): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], branchName.asInstanceOf[js.Any], branchType.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
-    @JSImport("nodegit/branch", "Branch.name")
-    @js.native
-    def name(ref: Reference): js.Promise[String] = js.native
+    @scala.inline
+    def move(branch: Reference, newBranchName: String, force: Double): js.Promise[Reference] = (^.asInstanceOf[js.Dynamic].applyDynamic("move")(branch.asInstanceOf[js.Any], newBranchName.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Reference]]
     
-    @JSImport("nodegit/branch", "Branch.setUpstream")
-    @js.native
-    def setUpstream(branch: Reference, upstreamName: String): js.Promise[Double] = js.native
+    @scala.inline
+    def name(ref: Reference): js.Promise[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("name")(ref.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
     
-    @JSImport("nodegit/branch", "Branch.upstream")
-    @js.native
-    def upstream(branch: Reference): js.Promise[Reference] = js.native
+    @scala.inline
+    def setUpstream(branch: Reference, upstreamName: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("setUpstream")(branch.asInstanceOf[js.Any], upstreamName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
+    
+    @scala.inline
+    def upstream(branch: Reference): js.Promise[Reference] = ^.asInstanceOf[js.Dynamic].applyDynamic("upstream")(branch.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Reference]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`1`

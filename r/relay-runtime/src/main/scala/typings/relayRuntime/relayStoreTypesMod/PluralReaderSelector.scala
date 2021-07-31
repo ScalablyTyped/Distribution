@@ -2,15 +2,15 @@ package typings.relayRuntime.relayStoreTypesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PluralReaderSelector extends ReaderSelector {
+trait PluralReaderSelector
+  extends StObject
+     with ReaderSelector {
   
-  val kind: String = js.native
+  val kind: String
   
-  val selectors: js.Array[SingularReaderSelector] = js.native
+  val selectors: js.Array[SingularReaderSelector]
 }
 object PluralReaderSelector {
   

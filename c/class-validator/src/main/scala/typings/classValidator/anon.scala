@@ -3,33 +3,31 @@ package typings.classValidator
 import org.scalablytyped.runtime.Instantiable1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Always extends StObject {
     
     /**
       * Indicates if validation must be performed always, no matter of validation groups used.
       */
-    var always: js.UndefOr[Boolean] = js.native
+    var always: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Constraints set by validation type.
       */
-    var constraints: js.UndefOr[js.Array[_]] = js.native
+    var constraints: js.UndefOr[js.Array[js.Any]] = js.undefined
     
     /**
       * Specifies if validated value is an array and each of its item must be validated.
       */
-    var each: js.UndefOr[Boolean] = js.native
+    var each: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Validation groups used for this validation.
       */
-    var groups: js.UndefOr[js.Array[String]] = js.native
+    var groups: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Error message used to be used on validation fail.
@@ -46,17 +44,17 @@ object anon {
           /* constraint2 */ js.UndefOr[js.Any], 
           String
         ])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Specific validation type options.
       */
-    var options: js.UndefOr[js.Any] = js.native
+    var options: js.UndefOr[js.Any] = js.undefined
     
     /**
       * Validation type. Should be one of the ValidationTypes value.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Always {
     
@@ -77,7 +75,7 @@ object anon {
       def setAlwaysUndefined: Self = StObject.set(x, "always", js.undefined)
       
       @scala.inline
-      def setConstraints(value: js.Array[_]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
+      def setConstraints(value: js.Array[js.Any]): Self = StObject.set(x, "constraints", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setConstraintsUndefined: Self = StObject.set(x, "constraints", js.undefined)
@@ -129,12 +127,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Async extends StObject {
     
-    var async: js.UndefOr[Boolean] = js.native
+    var async: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
   }
   object Async {
     
@@ -161,10 +158,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Get extends StObject {
     
-    def get(someClass: js.Any): js.Any = js.native
+    def get(someClass: js.Any): js.Any
   }
   object Get {
     
@@ -184,20 +180,20 @@ object anon {
   
   @js.native
   trait Instantiable[T]
-    extends Instantiable1[/* args (repeated) */ js.Any, T]
+    extends StObject
+       with Instantiable1[/* args (repeated) */ js.Any, T]
   
-  @js.native
   trait Target extends StObject {
     
     /**
       * Indicates if target should be exposed in ValidationError.
       */
-    var target: js.UndefOr[Boolean] = js.native
+    var target: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Indicates if validated value should be exposed in ValidationError.
       */
-    var value: js.UndefOr[Boolean] = js.native
+    var value: js.UndefOr[Boolean] = js.undefined
   }
   object Target {
     

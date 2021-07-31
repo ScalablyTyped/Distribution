@@ -6,29 +6,27 @@ import typings.materializeCss.materializeCssStrings.right
 import typings.materializeCss.materializeCssStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FloatingActionButtonOptions extends StObject {
   
   /**
     * Direction FAB menu opens
     * @default "top"
     */
-  var direction: top | right | buttom | left = js.native
+  var direction: top | right | buttom | left
   
   /**
     * true: FAB menu appears on hover, false: FAB menu appears on click
     * @default true
     */
-  var hoverEnabled: Boolean = js.native
+  var hoverEnabled: Boolean
   
   /**
     * Enable transit the FAB into a toolbar on click
     * @default false
     */
-  var toolbarEnabled: Boolean = js.native
+  var toolbarEnabled: Boolean
 }
 object FloatingActionButtonOptions {
   

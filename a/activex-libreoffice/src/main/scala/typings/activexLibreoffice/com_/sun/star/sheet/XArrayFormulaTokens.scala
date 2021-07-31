@@ -4,21 +4,19 @@ import typings.activexLibreoffice.LibreOffice.SeqEquiv
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to an array formula as token sequence. */
-@js.native
 trait XArrayFormulaTokens extends StObject {
   
   /** returns the array formula as sequence of tokens. */
-  var ArrayTokens: SafeArray[FormulaToken] = js.native
+  var ArrayTokens: SafeArray[FormulaToken]
   
   /** returns the array formula as sequence of tokens. */
-  def getArrayTokens(): SafeArray[FormulaToken] = js.native
+  def getArrayTokens(): SafeArray[FormulaToken]
   
   /** sets the array formula as sequence of tokens. */
-  def setArrayTokens(aTokens: SeqEquiv[FormulaToken]): Unit = js.native
+  def setArrayTokens(aTokens: SeqEquiv[FormulaToken]): Unit
 }
 object XArrayFormulaTokens {
   

@@ -6,28 +6,25 @@ import typings.awsSdkClientCodecommitNode.postCommentReplyExceptionsUnionMod.Pos
 import typings.awsSdkClientCodecommitNode.updateCommentExceptionsUnionMod.UpdateCommentExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesCommentDoesNotExistExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentDoesNotExistExceptionDetails> * / any */ @js.native
-  trait CommentDoesNotExistException
-    extends DeleteCommentContentExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_CommentDoesNotExistExceptionDetails> * / any */ trait CommentDoesNotExistException
+    extends StObject
+       with DeleteCommentContentExceptionsUnion
        with GetCommentExceptionsUnion
        with PostCommentReplyExceptionsUnion
        with UpdateCommentExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDoesNotExistException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDoesNotExistException
   }
   object CommentDoesNotExistException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.CommentDoesNotExistException
-    ): CommentDoesNotExistException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): CommentDoesNotExistException = {
+      val __obj = js.Dynamic.literal(name = "CommentDoesNotExistException")
       __obj.asInstanceOf[CommentDoesNotExistException]
     }
     
@@ -41,6 +38,5 @@ object typesCommentDoesNotExistExceptionMod {
     }
   }
   
-  @js.native
   trait CommentDoesNotExistExceptionDetails extends StObject
 }

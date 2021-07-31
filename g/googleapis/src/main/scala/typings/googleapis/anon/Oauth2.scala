@@ -2,13 +2,11 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Oauth2 extends StObject {
   
-  var oauth2: js.UndefOr[Scopes] = js.native
+  var oauth2: js.UndefOr[Scopes] = js.undefined
 }
 object Oauth2 {
   

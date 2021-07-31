@@ -2,29 +2,27 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Contains the font settings of the exported document.
   */
-@js.native
 trait ExportFontInfo extends StObject {
   
   /**
     * Specifies a value that specifies the GDI character set used by the current font.
     */
-  var GdiCharSet: js.Any = js.native
+  var GdiCharSet: js.Any
   
   /**
     * Specifies the name of the font used in the exported document.
     */
-  var Name: String = js.native
+  var Name: String
   
   /**
     * Specifies whether custom font settings are used in the exported document.
     */
-  var UseCustomFontInfo: Boolean = js.native
+  var UseCustomFontInfo: Boolean
 }
 object ExportFontInfo {
   

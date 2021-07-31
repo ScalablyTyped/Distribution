@@ -4,14 +4,16 @@ import typings.react.mod.ReactNode
 import typings.reactMdMenu.reactMdMenuStrings.separator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultMenuItemRendererMod {
   
-  @JSImport("@react-md/menu/types/defaultMenuItemRenderer", "defaultMenuItemRenderer")
+  @JSImport("@react-md/menu/types/defaultMenuItemRenderer", JSImport.Namespace)
   @js.native
-  def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def defaultMenuItemRenderer(item: ValidMenuItem, key: String): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("defaultMenuItemRenderer")(item.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
   type MenuItemRenderer = js.Function2[/* item */ ValidMenuItem, /* key */ String, ReactNode]
   
@@ -32,7 +34,7 @@ object defaultMenuItemRendererMod {
     }
     
     @scala.inline
-    def MenuItemSeparatorPropsrol(role: js.UndefOr[String] with separator): typings.reactMdMenu.anon.MenuItemSeparatorPropsrol = {
+    def MenuItemSeparatorPropsrol(role: js.UndefOr[String] & separator): typings.reactMdMenu.anon.MenuItemSeparatorPropsrol = {
       val __obj = js.Dynamic.literal(role = role.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.reactMdMenu.anon.MenuItemSeparatorPropsrol]
     }

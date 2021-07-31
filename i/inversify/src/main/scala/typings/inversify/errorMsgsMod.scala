@@ -2,18 +2,20 @@ package typings.inversify
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMsgsMod {
+  
+  @JSImport("inversify/dts/constants/error_msgs", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("inversify/dts/constants/error_msgs", "AMBIGUOUS_MATCH")
   @js.native
   val AMBIGUOUS_MATCH: /* "Ambiguous match found for serviceIdentifier:" */ String = js.native
   
-  @JSImport("inversify/dts/constants/error_msgs", "ARGUMENTS_LENGTH_MISMATCH")
-  @js.native
-  def ARGUMENTS_LENGTH_MISMATCH(values: js.Any*): String = js.native
+  @scala.inline
+  def ARGUMENTS_LENGTH_MISMATCH(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("ARGUMENTS_LENGTH_MISMATCH")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("inversify/dts/constants/error_msgs", "CANNOT_UNBIND")
   @js.native
@@ -23,9 +25,8 @@ object errorMsgsMod {
   @js.native
   val CIRCULAR_DEPENDENCY: /* "Circular dependency found:" */ String = js.native
   
-  @JSImport("inversify/dts/constants/error_msgs", "CIRCULAR_DEPENDENCY_IN_FACTORY")
-  @js.native
-  def CIRCULAR_DEPENDENCY_IN_FACTORY(values: js.Any*): String = js.native
+  @scala.inline
+  def CIRCULAR_DEPENDENCY_IN_FACTORY(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("CIRCULAR_DEPENDENCY_IN_FACTORY")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("inversify/dts/constants/error_msgs", "CONTAINER_OPTIONS_INVALID_AUTO_BIND_INJECTABLE")
   @js.native
@@ -103,15 +104,13 @@ object errorMsgsMod {
   @js.native
   val NULL_ARGUMENT: /* "NULL argument" */ String = js.native
   
-  @JSImport("inversify/dts/constants/error_msgs", "POST_CONSTRUCT_ERROR")
-  @js.native
-  def POST_CONSTRUCT_ERROR(values: js.Any*): String = js.native
+  @scala.inline
+  def POST_CONSTRUCT_ERROR(values: js.Any*): String = ^.asInstanceOf[js.Dynamic].applyDynamic("POST_CONSTRUCT_ERROR")(values.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("inversify/dts/constants/error_msgs", "STACK_OVERFLOW")
   @js.native
   val STACK_OVERFLOW: /* "Maximum call stack size exceeded" */ String = js.native
   
-  @JSImport("inversify/dts/constants/error_msgs", "UNDEFINED_INJECT_ANNOTATION")
-  @js.native
-  def UNDEFINED_INJECT_ANNOTATION(name: String): String = js.native
+  @scala.inline
+  def UNDEFINED_INJECT_ANNOTATION(name: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("UNDEFINED_INJECT_ANNOTATION")(name.asInstanceOf[js.Any]).asInstanceOf[String]
 }

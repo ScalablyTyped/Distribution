@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.visualRecognitionV3GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Information about something that went wrong. */
-@js.native
 trait WarningInfo extends StObject {
   
   /** Information about the error. */
-  var description: String = js.native
+  var description: String
   
   /** Codified warning string, such as `limit_reached`. */
-  var warning_id: String = js.native
+  var warning_id: String
 }
 object WarningInfo {
   

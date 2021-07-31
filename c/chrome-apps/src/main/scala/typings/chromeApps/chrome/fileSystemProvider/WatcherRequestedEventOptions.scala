@@ -4,18 +4,18 @@ import typings.chromeApps.chrome.fileSystemProvider.internal.EntryPathRequestedE
 import typings.chromeApps.chrome.integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WatcherRequestedEventOptions extends EntryPathRequestedEventOptions {
+trait WatcherRequestedEventOptions
+  extends StObject
+     with EntryPathRequestedEventOptions {
   
   /**
     * Mode of the watcher.
     * Whether observing should include all child entries recursively.
     * It can be true for directories only.
     */
-  var recursive: Boolean = js.native
+  var recursive: Boolean
 }
 object WatcherRequestedEventOptions {
   

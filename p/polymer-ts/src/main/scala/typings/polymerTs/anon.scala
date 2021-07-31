@@ -3,31 +3,29 @@ package typings.polymerTs
 import typings.polymerTs.polymerTsStrings.splice
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddedCount extends StObject {
     
-    var addedCount: Double = js.native
+    var addedCount: Double
     
-    var index: Double = js.native
+    var index: Double
     
-    var `object`: js.Array[_] = js.native
+    var `object`: js.Array[js.Any]
     
-    var removed: js.Array[_] = js.native
+    var removed: js.Array[js.Any]
     
-    var `type`: splice = js.native
+    var `type`: splice
   }
   object AddedCount {
     
     @scala.inline
-    def apply(addedCount: Double, index: Double, `object`: js.Array[_], removed: js.Array[_], `type`: splice): AddedCount = {
+    def apply(addedCount: Double, index: Double, `object`: js.Array[js.Any], removed: js.Array[js.Any]): AddedCount = {
       val __obj = js.Dynamic.literal(addedCount = addedCount.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], removed = removed.asInstanceOf[js.Any])
       __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("splice")
       __obj.asInstanceOf[AddedCount]
     }
     
@@ -41,13 +39,13 @@ object anon {
       def setIndex(value: Double): Self = StObject.set(x, "index", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setObject(value: js.Array[_]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+      def setObject(value: js.Array[js.Any]): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setObjectVarargs(value: js.Any*): Self = StObject.set(x, "object", js.Array(value :_*))
       
       @scala.inline
-      def setRemoved(value: js.Array[_]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
+      def setRemoved(value: js.Array[js.Any]): Self = StObject.set(x, "removed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setRemovedVarargs(value: js.Any*): Self = StObject.set(x, "removed", js.Array(value :_*))

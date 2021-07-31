@@ -4,13 +4,13 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoJSONLayerEditsEventUpdatedFeatures extends Object {
+trait GeoJSONLayerEditsEventUpdatedFeatures
+  extends StObject
+     with Object {
   
-  var objectId: Double = js.native
+  var objectId: Double
 }
 object GeoJSONLayerEditsEventUpdatedFeatures {
   

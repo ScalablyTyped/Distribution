@@ -2,33 +2,31 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DISABLED extends StObject {
   
-  var DISABLED: String = js.native
+  var DISABLED: String
   
-  var FOCUSED: String = js.native
+  var FOCUSED: String
   
-  var HELPER_LINE: String = js.native
+  var HELPER_LINE: String
   
-  var INVALID: String = js.native
+  var INVALID: String
   
-  var LABEL_FLOATING: String = js.native
+  var LABEL_FLOATING: String
   
-  var NO_LABEL: String = js.native
+  var NO_LABEL: String
   
-  var OUTLINED: String = js.native
+  var OUTLINED: String
   
-  var ROOT: String = js.native
+  var ROOT: String
   
-  var TEXTAREA: String = js.native
+  var TEXTAREA: String
   
-  var WITH_LEADING_ICON: String = js.native
+  var WITH_LEADING_ICON: String
   
-  var WITH_TRAILING_ICON: String = js.native
+  var WITH_TRAILING_ICON: String
 }
 object DISABLED {
   

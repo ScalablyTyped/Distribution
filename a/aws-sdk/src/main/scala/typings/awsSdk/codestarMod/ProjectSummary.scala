@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProjectSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the project.
     */
-  var projectArn: js.UndefOr[ProjectArn] = js.native
+  var projectArn: js.UndefOr[ProjectArn] = js.undefined
   
   /**
     * The ID of the project.
     */
-  var projectId: js.UndefOr[ProjectId] = js.native
+  var projectId: js.UndefOr[ProjectId] = js.undefined
 }
 object ProjectSummary {
   

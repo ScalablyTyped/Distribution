@@ -7,7 +7,6 @@ import typings.nodegit.signatureMod.Signature
 import typings.nodegit.strArrayMod.Strarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
@@ -41,12 +40,14 @@ object tagMod {
   /* static members */
   object Tag {
     
-    @JSImport("nodegit/tag", "Tag.annotationCreate")
+    @JSImport("nodegit/tag", "Tag")
     @js.native
-    def annotationCreate(repo: Repository, tagName: String, target: Object, tagger: Signature, message: String): js.Promise[Oid] = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("nodegit/tag", "Tag.create")
-    @js.native
+    @scala.inline
+    def annotationCreate(repo: Repository, tagName: String, target: Object, tagger: Signature, message: String): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("annotationCreate")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
+    
+    @scala.inline
     def create(
       repo: Repository,
       tagName: String,
@@ -54,47 +55,37 @@ object tagMod {
       tagger: Signature,
       message: String,
       force: Double
-    ): js.Promise[Oid] = js.native
+    ): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], tagger.asInstanceOf[js.Any], message.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
-    @JSImport("nodegit/tag", "Tag.createLightweight")
-    @js.native
-    def createLightweight(repo: Repository, tagName: String, target: Object, force: Double): js.Promise[Oid] = js.native
+    @scala.inline
+    def createLightweight(repo: Repository, tagName: String, target: Object, force: Double): js.Promise[Oid] = (^.asInstanceOf[js.Dynamic].applyDynamic("createLightweight")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any], target.asInstanceOf[js.Any], force.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Oid]]
     
-    @JSImport("nodegit/tag", "Tag.delete")
-    @js.native
-    def delete(repo: Repository, tagName: String): js.Promise[Double] = js.native
+    @scala.inline
+    def delete(repo: Repository, tagName: String): js.Promise[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(repo.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Double]]
     
-    @JSImport("nodegit/tag", "Tag.list")
-    @js.native
-    def list(repo: Repository): js.Promise[js.Array[_]] = js.native
+    @scala.inline
+    def list(repo: Repository): js.Promise[js.Array[js.Any]] = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(repo.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[js.Any]]]
     
-    @JSImport("nodegit/tag", "Tag.listMatch")
-    @js.native
-    def listMatch(tagNames: String, pattern: String, repo: Repository): Double = js.native
-    @JSImport("nodegit/tag", "Tag.listMatch")
-    @js.native
-    def listMatch(tagNames: js.Array[String], pattern: String, repo: Repository): Double = js.native
-    @JSImport("nodegit/tag", "Tag.listMatch")
-    @js.native
-    def listMatch(tagNames: Strarray, pattern: String, repo: Repository): Double = js.native
+    @scala.inline
+    def listMatch(tagNames: String, pattern: String, repo: Repository): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listMatch")(tagNames.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], repo.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def listMatch(tagNames: js.Array[String], pattern: String, repo: Repository): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listMatch")(tagNames.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], repo.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def listMatch(tagNames: Strarray, pattern: String, repo: Repository): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("listMatch")(tagNames.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], repo.asInstanceOf[js.Any])).asInstanceOf[Double]
     
     /**
       * Retrieves the tag pointed to by the oid
       *
       *
       */
-    @JSImport("nodegit/tag", "Tag.lookup")
-    @js.native
-    def lookup(repo: Repository, id: String): js.Promise[Tag] = js.native
-    @JSImport("nodegit/tag", "Tag.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Oid): js.Promise[Tag] = js.native
-    @JSImport("nodegit/tag", "Tag.lookup")
-    @js.native
-    def lookup(repo: Repository, id: Tag): js.Promise[Tag] = js.native
+    @scala.inline
+    def lookup(repo: Repository, id: String): js.Promise[Tag] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tag]]
+    @scala.inline
+    def lookup(repo: Repository, id: Oid): js.Promise[Tag] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tag]]
+    @scala.inline
+    def lookup(repo: Repository, id: Tag): js.Promise[Tag] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tag]]
     
-    @JSImport("nodegit/tag", "Tag.lookupPrefix")
-    @js.native
-    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Tag] = js.native
+    @scala.inline
+    def lookupPrefix(repo: Repository, id: Oid, len: Double): js.Promise[Tag] = (^.asInstanceOf[js.Dynamic].applyDynamic("lookupPrefix")(repo.asInstanceOf[js.Any], id.asInstanceOf[js.Any], len.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Tag]]
   }
 }

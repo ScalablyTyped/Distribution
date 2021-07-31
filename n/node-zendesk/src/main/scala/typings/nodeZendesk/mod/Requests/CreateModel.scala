@@ -6,40 +6,38 @@ import typings.nodeZendesk.mod.Tickets.TicketType
 import typings.nodeZendesk.mod.ZendeskID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link https://developer.zendesk.com/rest_api/docs/support/requests#create-request|Zendesk Requests Create}
   */
-@js.native
 trait CreateModel extends StObject {
   
-  var collaborators: js.UndefOr[js.Array[Collaborator | String | ZendeskID]] = js.native
+  var collaborators: js.UndefOr[js.Array[Collaborator | String | ZendeskID]] = js.undefined
   
-  var comment: typings.nodeZendesk.mod.Requests.Comments.CreateModel = js.native
+  var comment: typings.nodeZendesk.mod.Requests.Comments.CreateModel
   
   // Anonymous requests can set type, Authenticated requests cannot
-  var custom_fields: js.UndefOr[js.Array[Field] | Null] = js.native
+  var custom_fields: js.UndefOr[js.Array[Field] | Null] = js.undefined
   
-  var due_at: js.UndefOr[String | Null] = js.native
+  var due_at: js.UndefOr[String | Null] = js.undefined
   
-  var fields: js.UndefOr[js.Array[Field] | Null] = js.native
+  var fields: js.UndefOr[js.Array[Field] | Null] = js.undefined
   
-  var priority: js.UndefOr[Priority | Null] = js.native
+  var priority: js.UndefOr[Priority | Null] = js.undefined
   
-  var recipient: js.UndefOr[String | Null] = js.native
+  var recipient: js.UndefOr[String | Null] = js.undefined
   
-  var requester: js.UndefOr[RequesterAnonymous] = js.native
+  var requester: js.UndefOr[RequesterAnonymous] = js.undefined
   
   // Required for anonymous requests
-  var subject: String = js.native
+  var subject: String
   
   // Anonymous requests can set due date as long as type == task. Authenticated requests cannot
-  var ticket_form_id: js.UndefOr[Double | Null] = js.native
+  var ticket_form_id: js.UndefOr[Double | Null] = js.undefined
   
   // Anonymous requests can set priority, Authenticated requests cannot
-  var `type`: js.UndefOr[TicketType | Null] = js.native
+  var `type`: js.UndefOr[TicketType | Null] = js.undefined
 }
 object CreateModel {
   

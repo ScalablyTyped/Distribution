@@ -4,7 +4,6 @@ import typings.squareConnect.squareConnectStrings.EXCLUDE
 import typings.squareConnect.squareConnectStrings.INCLUDE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CustomerCreationSourceFilter")

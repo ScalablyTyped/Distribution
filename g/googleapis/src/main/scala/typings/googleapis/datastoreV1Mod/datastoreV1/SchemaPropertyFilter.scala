@@ -2,29 +2,27 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A filter on a specific property.
   */
-@js.native
 trait SchemaPropertyFilter extends StObject {
   
   /**
     * The operator to filter by.
     */
-  var op: js.UndefOr[String] = js.native
+  var op: js.UndefOr[String] = js.undefined
   
   /**
     * The property to filter by.
     */
-  var property: js.UndefOr[SchemaPropertyReference] = js.native
+  var property: js.UndefOr[SchemaPropertyReference] = js.undefined
   
   /**
     * The value to compare the property to.
     */
-  var value: js.UndefOr[SchemaValue] = js.native
+  var value: js.UndefOr[SchemaValue] = js.undefined
 }
 object SchemaPropertyFilter {
   

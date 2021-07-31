@@ -3,22 +3,22 @@ package typings.doctrine.mod.`type`
 import typings.doctrine.mod.Type_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RecordType extends Type_ {
+trait RecordType
+  extends StObject
+     with Type_ {
   
-  var fields: js.Array[Type_] = js.native
+  var fields: js.Array[Type_]
   
-  var `type`: typings.doctrine.doctrineStrings.RecordType = js.native
+  var `type`: typings.doctrine.doctrineStrings.RecordType
 }
 object RecordType {
   
   @scala.inline
-  def apply(fields: js.Array[Type_], `type`: typings.doctrine.doctrineStrings.RecordType): RecordType = {
+  def apply(fields: js.Array[Type_]): RecordType = {
     val __obj = js.Dynamic.literal(fields = fields.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("RecordType")
     __obj.asInstanceOf[RecordType]
   }
   

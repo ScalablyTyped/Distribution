@@ -10,7 +10,6 @@ import typings.jfs.jfsStrings.single
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,14 +17,16 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("jfs", JSImport.Namespace)
   @js.native
-  class ^[T /* <: Storable */] () extends Instance[T] {
+  class ^[T /* <: Storable */] ()
+    extends StObject
+       with Instance[T] {
     def this(name: String) = this()
-    def this(name: js.UndefOr[scala.Nothing], opts: Options) = this()
     def this(name: String, opts: Options) = this()
+    def this(name: Unit, opts: Options) = this()
   }
   @JSImport("jfs", JSImport.Namespace)
   @js.native
-  val ^ : JsonFileStore = js.native
+  val ^ : js.Object & JsonFileStore = js.native
   
   @js.native
   trait Instance[T] extends StObject {
@@ -55,18 +56,18 @@ object mod extends Shortcut {
   
   @js.native
   trait JsonFileStore
-    extends Instantiable0[Instance[Storable]]
+    extends StObject
+       with Instantiable0[Instance[Storable]]
        with Instantiable1[/* name */ String, Instance[Storable]]
-       with Instantiable2[js.UndefOr[/* name */ String], /* opts */ Options, Instance[Storable]]
+       with Instantiable2[(/* name */ String) | (/* name */ Unit), /* opts */ Options, Instance[Storable]]
   
-  @js.native
   trait Options extends StObject {
     
-    var pretty: js.UndefOr[Boolean] = js.native
+    var pretty: js.UndefOr[Boolean] = js.undefined
     
-    var saveId: js.UndefOr[Boolean | String] = js.native
+    var saveId: js.UndefOr[Boolean | String] = js.undefined
     
-    var `type`: js.UndefOr[single | memory] = js.native
+    var `type`: js.UndefOr[single | memory] = js.undefined
   }
   object Options {
     
@@ -101,8 +102,8 @@ object mod extends Shortcut {
   
   type Storable = StringDictionary[js.Any]
   
-  type _To = JsonFileStore
+  type _To = js.Object & JsonFileStore
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: JsonFileStore = ^
+  override def _to: js.Object & JsonFileStore = ^
 }

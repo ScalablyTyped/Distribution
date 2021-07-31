@@ -3,19 +3,17 @@ package typings.roll
 import typings.roll.mod.RollTransformation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Quantity extends StObject {
     
-    var quantity: Double = js.native
+    var quantity: Double
     
-    var sides: Double = js.native
+    var sides: Double
     
-    var transformations: js.Array[RollTransformation] = js.native
+    var transformations: js.Array[RollTransformation]
   }
   object Quantity {
     

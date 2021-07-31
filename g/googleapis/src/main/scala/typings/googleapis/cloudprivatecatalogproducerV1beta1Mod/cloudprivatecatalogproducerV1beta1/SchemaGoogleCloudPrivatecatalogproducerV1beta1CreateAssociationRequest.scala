@@ -2,10 +2,8 @@ package typings.googleapis.cloudprivatecatalogproducerV1beta1Mod.cloudprivatecat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest ext
     * `privatecatalogproducer.catalogTargets.associate` permission is checked
     * on the target resource.
     */
-  var association: js.UndefOr[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.native
+  var association: js.UndefOr[SchemaGoogleCloudPrivatecatalogproducerV1beta1Association] = js.undefined
 }
 object SchemaGoogleCloudPrivatecatalogproducerV1beta1CreateAssociationRequest {
   

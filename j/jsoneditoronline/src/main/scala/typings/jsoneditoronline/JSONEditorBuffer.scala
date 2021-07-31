@@ -2,17 +2,15 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorBuffer extends StObject {
   
-  def flush(): String = js.native
+  def flush(): String
   
-  def set(text: String): Unit = js.native
+  def set(text: String): Unit
   
-  var text: String = js.native
+  var text: String
 }
 object JSONEditorBuffer {
   

@@ -2,10 +2,8 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InputOrigin extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait InputOrigin extends StObject {
     * need the position in the PostCSS input (e.g., to debug the
     * previous compiler), use error.input.column.
     */
-  var column: js.UndefOr[Double] = js.native
+  var column: js.UndefOr[Double] = js.undefined
   
   /**
     * If parser's from option is set, contains the absolute path to the
@@ -26,7 +24,7 @@ trait InputOrigin extends StObject {
     * position in the Sass file. If you need the position in the PostCSS
     * input (e.g., to debug the previous compiler), use error.input.file.
     */
-  var file: js.UndefOr[String] = js.native
+  var file: js.UndefOr[String] = js.undefined
   
   /**
     * Contains the source line of the error. PostCSS will use the input
@@ -36,7 +34,7 @@ trait InputOrigin extends StObject {
     * position in the PostCSS input (e.g., to debug the previous
     * compiler), use error.input.line.
     */
-  var line: js.UndefOr[Double] = js.native
+  var line: js.UndefOr[Double] = js.undefined
   
   /**
     * Contains the source code of the broken file. PostCSS will use the
@@ -46,7 +44,7 @@ trait InputOrigin extends StObject {
     * the position in the PostCSS input (e.g., to debug the previous
     * compiler), use error.input.source.
     */
-  var source: js.UndefOr[String] = js.native
+  var source: js.UndefOr[String] = js.undefined
 }
 object InputOrigin {
   

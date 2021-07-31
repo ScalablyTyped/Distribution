@@ -2,29 +2,29 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BootstrapUploadControlEventMap extends ControlEventMap {
+trait BootstrapUploadControlEventMap
+  extends StObject
+     with ControlEventMap {
   
-  var dropZoneEnter: UploadControlDropZoneEnterEventArgs = js.native
+  var dropZoneEnter: UploadControlDropZoneEnterEventArgs
   
-  var dropZoneLeave: UploadControlDropZoneLeaveEventArgs = js.native
+  var dropZoneLeave: UploadControlDropZoneLeaveEventArgs
   
-  var fileInputCountChanged: EventArgs = js.native
+  var fileInputCountChanged: EventArgs
   
-  var fileUploadComplete: UploadControlFileUploadCompleteEventArgs = js.native
+  var fileUploadComplete: UploadControlFileUploadCompleteEventArgs
   
-  var filesUploadComplete: UploadControlFilesUploadCompleteEventArgs = js.native
+  var filesUploadComplete: UploadControlFilesUploadCompleteEventArgs
   
-  var filesUploadStart: UploadControlFilesUploadStartEventArgs = js.native
+  var filesUploadStart: UploadControlFilesUploadStartEventArgs
   
-  var textChanged: UploadControlTextChangedEventArgs = js.native
+  var textChanged: UploadControlTextChangedEventArgs
   
-  var uploadingProgressChanged: UploadControlUploadingProgressChangedEventArgs = js.native
+  var uploadingProgressChanged: UploadControlUploadingProgressChangedEventArgs
   
-  var validationErrorOccurred: UploadControlValidationErrorOccurredEventArgs = js.native
+  var validationErrorOccurred: UploadControlValidationErrorOccurredEventArgs
 }
 object BootstrapUploadControlEventMap {
   

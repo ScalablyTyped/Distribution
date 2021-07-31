@@ -2,85 +2,83 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Callouthook extends StObject {
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. For graph plot tooltip. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the rotation angle of the object/shape. For graph plot tooltip. -45 | 115 | ...
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g. "red", "blue", "yellow"), in hexadecimal notation (e.
     * g. "#FF0000", "#0000FF", "#FFFF00"), or in RGB notation (e.g. "rgb(255,0,0)", "rgb(0,0,255)", "rgb(255,255,0)"). For graph plot to
     * oltip. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the first color of a 2 color background gradient of the object. To be used with background-color-2. For graph plot tooltip. "
     * none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-1`: js.UndefOr[String] = js.native
+  var `background-color-1`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the second color of a 2 color background gradient of the object. To be used with background-color-1. For graph plot tooltip.
     * "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-2`: js.UndefOr[String] = js.native
+  var `background-color-2`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the direction/s on which the background image is being "stretched". For graph plot tooltip. "x" | "y" | "xy"
     */
-  var `background-fit`: js.UndefOr[String] = js.native
+  var `background-fit`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a background image for the object. Value can be a local file or a web image's location. For graph plot tooltip. "image.png" |
     *  ...
     */
-  var `background-image`: js.UndefOr[String] = js.native
+  var `background-image`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position of the background when the background-repeat value is no-repeat. For graph plot tooltip. "0 0" | "50 100" | "80%
     *  60%" | ...
     */
-  var `background-position`: js.UndefOr[String] = js.native
+  var `background-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the repeating mode for the background image. For graph plot tooltip. "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
-  var `background-repeat`: js.UndefOr[String] = js.native
+  var `background-repeat`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the transparency of the border. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `border-alpha`: js.UndefOr[Double] = js.native
+  var `border-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the object's bottom border style. Accepts solid, dashed, and dotted styles. For graph plot tooltip. "2px solid #f00" | ...
     */
-  var `border-bottom`: js.UndefOr[String] = js.native
+  var `border-bottom`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object. For graph plot tooltip. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(1
     * 00, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's left border style. Accepts solid, dashed, and dotted styles. For graph plot tooltip. "2px solid #f00" | ...
     */
-  var `border-left`: js.UndefOr[String] = js.native
+  var `border-left`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's border radius, for rounded corners. Larger values create rounder corners, while smaller values create sharper co
@@ -88,346 +86,346 @@ trait Callouthook extends StObject {
     * alue affecting the top-left corner, the second value affecting the top-right corner, and so on, in a clockwise direction. For grap
     * h plot tooltip. 4 | "6px" | "6px 10px 3px 5px" | "-10px" | ...
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.native
+  var `border-radius`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-left border radius, for rounded corners. Larger values create rounder corners, while smaller values creat
     * e sharper corners. A negative value will cut a corner off without rounding. For graph plot tooltip. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-right border radius, for rounded corners. Larger values create rounder corners, while smaller values crea
     * te sharper corners. A negative value will cut a corner off without rounding. For graph plot tooltip. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-left border radius, for rounded corners. Larger values create rounder corners, while smaller values create s
     * harper corners. A negative value will cut a corner off without rounding. For graph plot tooltip. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-right border radius, for rounded corners. Larger values create rounder corners, while smaller values create
     * sharper corners. A negative value will cut a corner off without rounding. For graph plot tooltip. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right border style. Accepts solid, dashed, and dotted styles. For graph plot tooltip. "2px solid #f00" | ...
     */
-  var `border-right`: js.UndefOr[String] = js.native
+  var `border-right`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's top border style. Values must include the border width, style, and color. Accepts solid, dashed, and dotted styl
     * es. For graph plot tooltip. "2px solid #f00" | ...
     */
-  var `border-top`: js.UndefOr[String] = js.native
+  var `border-top`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object. For graph plot tooltip. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether an object will have a callout arrow or not. For graph plot tooltip. true | false | 1 | 0
     */
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the length of the extension that extends beyond the tip of the callout arrow. 4 | "6px" | ...
     */
-  var `callout-extension`: js.UndefOr[js.Any] = js.native
+  var `callout-extension`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the height of the object's callout arrow. A larger value will create a taller callout arrow. For graph plot tooltip. 4 | "6px
     * " | ...
     */
-  var `callout-height`: js.UndefOr[js.Any] = js.native
+  var `callout-height`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the point of the tip of the callout arrow to a specified coordinate on the chart, with the starting point of [0,0] being the
     * top left corner of the chart. For graph plot tooltip. [200, 50] | ...
     */
-  var `callout-hook`: js.UndefOr[js.Any] = js.native
+  var `callout-hook`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the offset along the callout direction of the arrow's base. Positive and negative values can be used to offset the callout ar
     * row up, down, left, or right depending on the callout-position. For graph plot tooltip. 4 | "6px" | ...
     */
-  var `callout-offset`: js.UndefOr[js.Any] = js.native
+  var `callout-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the position for the object's callout arrow. The position is "bottom" by default. For graph plot tooltip. "top" | "right" | "
     * bottom" | "left"
     */
-  var `callout-position`: js.UndefOr[String] = js.native
+  var `callout-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the width of the object's callout arrow. A larger value will create a wider callout arrow. For graph plot tooltip. 4 | "6px"
     * | ...
     */
-  var `callout-width`: js.UndefOr[js.Any] = js.native
+  var `callout-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Cuts off extra text. Use with width. For graph plot tooltip. true | false | 1 | 0
     */
-  var `clip-text`: js.UndefOr[Boolean] = js.native
+  var `clip-text`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the text's color of the tooltip. Similar with font-color. For graph plot tooltip. "none" | "transparent" | "#f00" | "#f00 #00
     * f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
   /**
     * Allows you to set the number of decimal places displayed for each value. 2 | 3 | 10 | ...
     */
-  var decimals: js.UndefOr[Double] = js.native
+  var decimals: js.UndefOr[Double] = js.undefined
   
   /**
     * Allows you to set the decimal mark displayed for each value. "." | "," | " " | ...
     */
-  var `decimals-separator`: js.UndefOr[String] = js.native
+  var `decimals-separator`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the angle of the axis along which the linear gradient is drawn. For graph plot tooltip. -45 | 115 | ...
     */
-  var `fill-angle`: js.UndefOr[Double] = js.native
+  var `fill-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an X offset to apply to the fill. For graph plot tooltip. 4 | "6px" | ...
     */
-  var `fill-offset-x`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an Y offset to apply to the fill. For graph plot tooltip. 4 | "6px" | ...
     */
-  var `fill-offset-y`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the background gradient fill type to either linear or radial. For graph plot tooltip. "linear" | "radial"
     */
-  var `fill-type`: js.UndefOr[String] = js.native
+  var `fill-type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the rotation angle of the text of the tooltip. Similar with angle. -45 | 115 | ...
     */
-  var `font-angle`: js.UndefOr[Double] = js.native
+  var `font-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the text's color of the tooltip. Similar with color. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100,
     *  15, 15)" | ...
     */
-  var `font-color`: js.UndefOr[String] = js.native
+  var `font-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's font family of the tooltip. "Arial" | "Tahoma,Verdana" | ...
     */
-  var `font-family`: js.UndefOr[String] = js.native
+  var `font-family`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's font size of the tooltip. 4 | "6px" | ...
     */
-  var `font-size`: js.UndefOr[js.Any] = js.native
+  var `font-size`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the text's font style of the tooltip. Similar with italic. "none" | "italic" | "oblique"
     */
-  var `font-style`: js.UndefOr[String] = js.native
+  var `font-style`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the text's font weight of the tooltip. Similar with bold. "normal" | "bold"
     */
-  var `font-weight`: js.UndefOr[String] = js.native
+  var `font-weight`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a set of colors for a complex background gradient consisting of 2 or more colors. To be used with gradient-stops. For graph p
     * lot tooltip. "#f00 #0f0 #00f" | ...
     */
-  var `gradient-colors`: js.UndefOr[String] = js.native
+  var `gradient-colors`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the gradient stops for a complex background gradient consisting of 2 or more colors. To be used with gradient-colors. For gra
     * ph plot tooltip. "0.1 0.5 0.9" | ...
     */
-  var `gradient-stops`: js.UndefOr[String] = js.native
+  var `gradient-stops`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's height. For graph plot tooltip. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the item id of the map on which the object/shape is being added. "itemid" | ...
     */
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the map id of the map on which the object/shape is being added. "mapid" | ...
     */
-  var map: js.UndefOr[String] = js.native
+  var map: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's margins. For graph plot tooltip. Works with output flash. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom margin. For graph plot tooltip. Works with output flash. 4 | "6px" | ...
     */
-  var `margin-bottom`: js.UndefOr[js.Any] = js.native
+  var `margin-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left margin. For graph plot tooltip. Works with output flash. 4 | "6px" | ...
     */
-  var `margin-left`: js.UndefOr[js.Any] = js.native
+  var `margin-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right margin. For graph plot tooltip. Works with output flash. 4 | "6px" | ...
     */
-  var `margin-right`: js.UndefOr[js.Any] = js.native
+  var `margin-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. For graph plot tooltip. Works with output flash. 4 | "6px" | ...
     */
-  var `margin-top`: js.UndefOr[js.Any] = js.native
+  var `margin-top`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the maximum numbers of characters displayed in the object. The value determines how many characters will be displayed before
     * the text is cut and appended with "..." For graph plot tooltip. Works with output canvas and svg. 5 | 10 | ...
     */
-  var `max-chars`: js.UndefOr[Double] = js.native
+  var `max-chars`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the maximum width of the text box. If text is longer than the max-width value, it will overlap the box or will wrap if wrap-t
     * ext is set to true. For graph plot tooltip. Works with output canvas and svg. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var `max-width`: js.UndefOr[js.Any] = js.native
+  var `max-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an X offset to apply when positioning the object/shape. For graph plot tooltip. 4 | "6px" | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an Y offset to apply when positioning the object/shape. For graph plot tooltip. 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's padding around the text of the tooltip. 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var padding: js.UndefOr[js.Any] = js.native
+  var padding: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom padding around the text of the tooltip. 4 | "6px" | ...
     */
-  var `padding-bottom`: js.UndefOr[js.Any] = js.native
+  var `padding-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's left padding around the text of the tooltip. 4 | "6px" | ...
     */
-  var `padding-left`: js.UndefOr[js.Any] = js.native
+  var `padding-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right padding around the text of the tooltip. 4 | "6px" | ...
     */
-  var `padding-right`: js.UndefOr[js.Any] = js.native
+  var `padding-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top padding around the text of the tooltip. 4 | "6px" | ...
     */
-  var `padding-top`: js.UndefOr[js.Any] = js.native
+  var `padding-top`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Specifies where tooltips are fixed relative to their node values. Refer to the applicable chart types page for more information. O
     * ptions by Chart Type: "node:top" | "node:center" | "node:out" | ...
     */
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's position relative to it's container. Similar results can be obtained by setting marginand margin-... attributes.
     *  For graph plot tooltip.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Renders text right-to-left. Default value is false. true | false | 1 | 0
     */
   @JSName("rtl (right-to-left)")
-  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.native
+  var `rtl Leftparenthesisright-to-leftRightparenthesis`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets whether the object's shadow is visible or not. Has limited effect on HTML5 implementation. true | false | 1 | 0
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency of the shadow of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and
     * 1.0 being completely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `shadow-alpha`: js.UndefOr[Double] = js.native
+  var `shadow-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the angle of the shadow underneath the object. -45 | 115 | ...
     */
-  var `shadow-angle`: js.UndefOr[Double] = js.native
+  var `shadow-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the blur effect size for the shadow of the object. Has limited effect on HTML5 implementation. 4 | "6px" | ...
     */
-  var `shadow-blur`: js.UndefOr[js.Any] = js.native
+  var `shadow-blur`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the color of the shadow of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ..
     * .
     */
-  var `shadow-color`: js.UndefOr[String] = js.native
+  var `shadow-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the distance between the shadow and the object. 4 | "6px" | ...
     */
-  var `shadow-distance`: js.UndefOr[js.Any] = js.native
+  var `shadow-distance`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the transparency of the text. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comple
     * tely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `text-alpha`: js.UndefOr[Double] = js.native
+  var `text-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the character used to separate thousands. "," | "." | " " | ...
     */
-  var `thousands-separator`: js.UndefOr[String] = js.native
+  var `thousands-separator`: js.UndefOr[String] = js.undefined
   
   /**
     * Allows the underlying data to be 'transformed' to a new format if it was in that format originally. For example, if data is coded
     * as a date and time, and 'type':'date' is specified as an attribute of this object, '1311261385209' will display 'Wed, 19 of May 05
     * :00 PM' if '%D, %d %M %h:%i %A' is specified under the transform attribute of scale-x. {...}
     */
-  var transform: js.UndefOr[js.Any] = js.native
+  var transform: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether the text will wrap, depending on the width of the object. For graph plot tooltip. true | false | 1 | 0
     */
-  var `wrap-text`: js.UndefOr[Boolean] = js.native
+  var `wrap-text`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the z position of the object. Objects with higher z indexes will appear "above" those with lower z index values. 5 | 10 | ...
     */
-  var `z-index`: js.UndefOr[Double] = js.native
+  var `z-index`: js.UndefOr[Double] = js.undefined
 }
 object Callouthook {
   

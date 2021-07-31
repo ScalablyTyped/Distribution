@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientMonitoring.gapi.client.monitoring
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryTimeSeriesResponse extends StObject {
   
   /**
     * If there are more results than have been returned, then this field is set to a non-empty value. To see the additional results, use that value as page_token in the next call to this
     * method.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /** Query execution errors that may have caused the time series data returned to be incomplete. The available data will be available in the response. */
-  var partialErrors: js.UndefOr[js.Array[Status]] = js.native
+  var partialErrors: js.UndefOr[js.Array[Status]] = js.undefined
   
   /** The time series data. */
-  var timeSeriesData: js.UndefOr[js.Array[TimeSeriesData]] = js.native
+  var timeSeriesData: js.UndefOr[js.Array[TimeSeriesData]] = js.undefined
   
   /** The descriptor for the time series data. */
-  var timeSeriesDescriptor: js.UndefOr[TimeSeriesDescriptor] = js.native
+  var timeSeriesDescriptor: js.UndefOr[TimeSeriesDescriptor] = js.undefined
 }
 object QueryTimeSeriesResponse {
   

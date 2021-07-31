@@ -2,26 +2,24 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssociateMemberToGroupRequest extends StObject {
   
   /**
     * The group to which the member (user or group) is associated.
     */
-  var GroupId: WorkMailIdentifier = js.native
+  var GroupId: WorkMailIdentifier
   
   /**
     * The member (user or group) to associate to the group.
     */
-  var MemberId: WorkMailIdentifier = js.native
+  var MemberId: WorkMailIdentifier
   
   /**
     * The organization under which the group exists.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
 }
 object AssociateMemberToGroupRequest {
   

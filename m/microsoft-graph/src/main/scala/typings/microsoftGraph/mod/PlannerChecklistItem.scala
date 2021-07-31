@@ -2,30 +2,28 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlannerChecklistItem extends StObject {
   
   // Value is true if the item is checked and false otherwise.
-  var isChecked: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isChecked: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Read-only. User ID by which this is last modified.
-  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.native
+  var lastModifiedBy: js.UndefOr[NullableOption[IdentitySet]] = js.undefined
   
   /**
     * Read-only. Date and time at which this is last modified. The Timestamp type represents date and time information using
     * ISO 8601 format and is always in UTC time. For example, midnight UTC on Jan 1, 2014 would look like this:
     * '2014-01-01T00:00:00Z'
     */
-  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var lastModifiedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Used to set the relative order of items in the checklist. The format is defined as outlined here.
-  var orderHint: js.UndefOr[NullableOption[String]] = js.native
+  var orderHint: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Title of the checklist item
-  var title: js.UndefOr[NullableOption[String]] = js.native
+  var title: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object PlannerChecklistItem {
   

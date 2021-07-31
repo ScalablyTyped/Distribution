@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/admin/directory_v1", "admin_directory_v1.Resource$Members")
@@ -31,7 +30,7 @@ class ResourceMembers protected () extends StObject {
     */
   def delete(): GaxiosPromise[Unit] = js.native
   def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceMembersDelete): GaxiosPromise[Unit] = js.native
   def delete(params: ParamsResourceMembersDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
   def delete(
@@ -57,7 +56,7 @@ class ResourceMembers protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaMember] = js.native
   def get(callback: BodyResponseCallback[SchemaMember]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
   def get(params: ParamsResourceMembersGet): GaxiosPromise[SchemaMember] = js.native
   def get(params: ParamsResourceMembersGet, callback: BodyResponseCallback[SchemaMember]): Unit = js.native
   def get(
@@ -88,7 +87,7 @@ class ResourceMembers protected () extends StObject {
     */
   def hasMember(): GaxiosPromise[SchemaMembersHasMember] = js.native
   def hasMember(callback: BodyResponseCallback[SchemaMembersHasMember]): Unit = js.native
-  def hasMember(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMembersHasMember] = js.native
+  def hasMember(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMembersHasMember] = js.native
   def hasMember(params: ParamsResourceMembersHasmember): GaxiosPromise[SchemaMembersHasMember] = js.native
   def hasMember(params: ParamsResourceMembersHasmember, callback: BodyResponseCallback[SchemaMembersHasMember]): Unit = js.native
   def hasMember(
@@ -118,7 +117,7 @@ class ResourceMembers protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaMember] = js.native
   def insert(callback: BodyResponseCallback[SchemaMember]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
   def insert(params: ParamsResourceMembersInsert): GaxiosPromise[SchemaMember] = js.native
   def insert(params: ParamsResourceMembersInsert, callback: BodyResponseCallback[SchemaMember]): Unit = js.native
   def insert(
@@ -151,7 +150,7 @@ class ResourceMembers protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaMembers] = js.native
   def list(callback: BodyResponseCallback[SchemaMembers]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMembers] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMembers] = js.native
   def list(params: ParamsResourceMembersList): GaxiosPromise[SchemaMembers] = js.native
   def list(params: ParamsResourceMembersList, callback: BodyResponseCallback[SchemaMembers]): Unit = js.native
   def list(
@@ -183,7 +182,7 @@ class ResourceMembers protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaMember] = js.native
   def patch(callback: BodyResponseCallback[SchemaMember]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
   def patch(params: ParamsResourceMembersPatch): GaxiosPromise[SchemaMember] = js.native
   def patch(params: ParamsResourceMembersPatch, callback: BodyResponseCallback[SchemaMember]): Unit = js.native
   def patch(
@@ -214,7 +213,7 @@ class ResourceMembers protected () extends StObject {
     */
   def update(): GaxiosPromise[SchemaMember] = js.native
   def update(callback: BodyResponseCallback[SchemaMember]): Unit = js.native
-  def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
+  def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMember] = js.native
   def update(params: ParamsResourceMembersUpdate): GaxiosPromise[SchemaMember] = js.native
   def update(params: ParamsResourceMembersUpdate, callback: BodyResponseCallback[SchemaMember]): Unit = js.native
   def update(

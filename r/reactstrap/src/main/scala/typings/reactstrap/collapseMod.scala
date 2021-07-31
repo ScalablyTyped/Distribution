@@ -10,7 +10,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object collapseMod {
@@ -22,36 +21,36 @@ object collapseMod {
   
   type Collapse = Component[CollapseProps, js.Object, js.Any]
   
-  @js.native
   trait CollapseProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var delay: js.UndefOr[Hide] = js.native
+    var delay: js.UndefOr[Hide] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[HTMLElement]] = js.native
+    var innerRef: js.UndefOr[Ref[HTMLElement]] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var navbar: js.UndefOr[Boolean] = js.native
+    var navbar: js.UndefOr[Boolean] = js.undefined
     
-    var onClosed: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClosed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEntered: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEntered: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEntering: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEntering: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExited: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExited: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExiting: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExiting: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onOpened: js.UndefOr[js.Function0[Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object CollapseProps {
     
@@ -143,21 +142,22 @@ object collapseMod {
       def setOnOpenedUndefined: Self = StObject.set(x, "onOpened", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)
     }
   }
   
-  @js.native
-  trait UncontrolledCollapseProps extends CollapseProps {
+  trait UncontrolledCollapseProps
+    extends StObject
+       with CollapseProps {
     
-    var defaultOpen: js.UndefOr[Boolean] = js.native
+    var defaultOpen: js.UndefOr[Boolean] = js.undefined
     
-    var toggleEvents: js.UndefOr[js.Array[String]] = js.native
+    var toggleEvents: js.UndefOr[js.Array[String]] = js.undefined
     
-    var toggler: String = js.native
+    var toggler: String
   }
   object UncontrolledCollapseProps {
     

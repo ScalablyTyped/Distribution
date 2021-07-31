@@ -4,15 +4,13 @@ import typings.raygun.anon.PartialMessageDetails
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageBuilding extends StObject {
   
-  var details: PartialMessageDetails = js.native
+  var details: PartialMessageDetails
   
-  var occurredOn: Date = js.native
+  var occurredOn: Date
 }
 object MessageBuilding {
   

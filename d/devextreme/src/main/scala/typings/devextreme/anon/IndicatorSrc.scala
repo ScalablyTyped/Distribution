@@ -3,29 +3,27 @@ package typings.devextreme.anon
 import typings.devextreme.devextremeStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndicatorSrc extends StObject {
   
-  var enabled: js.UndefOr[Boolean | auto] = js.native
+  var enabled: js.UndefOr[Boolean | auto] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var indicatorSrc: js.UndefOr[String] = js.native
+  var indicatorSrc: js.UndefOr[String] = js.undefined
   
-  var shading: js.UndefOr[Boolean] = js.native
+  var shading: js.UndefOr[Boolean] = js.undefined
   
-  var shadingColor: js.UndefOr[String] = js.native
+  var shadingColor: js.UndefOr[String] = js.undefined
   
-  var showIndicator: js.UndefOr[Boolean] = js.native
+  var showIndicator: js.UndefOr[Boolean] = js.undefined
   
-  var showPane: js.UndefOr[Boolean] = js.native
+  var showPane: js.UndefOr[Boolean] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object IndicatorSrc {
   

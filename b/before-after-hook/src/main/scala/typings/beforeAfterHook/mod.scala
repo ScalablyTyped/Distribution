@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Instantiable0
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,7 +20,9 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("before-after-hook", "default.Collection")
     @js.native
-    class CollectionCls () extends HookCollection
+    class CollectionCls ()
+      extends StObject
+         with HookCollection
     
     /**
       * Creates a nameless hook that supports strict typings
@@ -29,7 +30,9 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("before-after-hook", "default.Singular")
     @js.native
-    class SingularCls[O, R, E] () extends HookSingular[O, R, E]
+    class SingularCls[O, R, E] ()
+      extends StObject
+         with HookSingular[O, R, E]
     
     type _To = Hook
     
@@ -45,10 +48,14 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("before-after-hook", "Collection")
   @js.native
-  class CollectionCls () extends HookCollection
+  class CollectionCls ()
+    extends StObject
+       with HookCollection
   
   @js.native
-  trait Hook extends Instantiable0[HookCollection] {
+  trait Hook
+    extends StObject
+       with Instantiable0[HookCollection] {
     
     /**
       * Creates a collection of hooks
@@ -72,7 +79,9 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("before-after-hook", "Hook.Collection")
     @js.native
-    class CollectionCls () extends HookCollection
+    class CollectionCls ()
+      extends StObject
+         with HookCollection
     
     /**
       * Creates a nameless hook that supports strict typings
@@ -80,7 +89,9 @@ object mod {
     /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
     @JSImport("before-after-hook", "Hook.Singular")
     @js.native
-    class SingularCls[O, R, E] () extends HookSingular[O, R, E]
+    class SingularCls[O, R, E] ()
+      extends StObject
+         with HookSingular[O, R, E]
     
     type _To = Hook
     
@@ -91,7 +102,9 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("before-after-hook", "Hook")
   @js.native
-  class HookCls () extends HookCollection
+  class HookCls ()
+    extends StObject
+       with HookCollection
   
   @JSImport("before-after-hook", "Singular")
   @js.native
@@ -101,12 +114,16 @@ object mod {
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("before-after-hook", "Singular")
   @js.native
-  class SingularCls[O, R, E] () extends HookSingular[O, R, E]
+  class SingularCls[O, R, E] ()
+    extends StObject
+       with HookSingular[O, R, E]
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("before-after-hook", JSImport.Default)
   @js.native
-  class defaultCls () extends HookCollection
+  class defaultCls ()
+    extends StObject
+       with HookCollection
   
   type AfterHook[O, R] = js.Function2[/* result */ R, /* options */ O, Unit]
   
@@ -122,35 +139,35 @@ object mod {
     /**
       * Invoke before and after hooks
       */
-    def apply(name: String, hookMethod: HookMethod[_, _]): js.Promise[_] = js.native
-    def apply(name: String, hookMethod: HookMethod[_, _], options: js.Any): js.Promise[_] = js.native
-    def apply(name: js.Array[String], hookMethod: HookMethod[_, _]): js.Promise[_] = js.native
-    def apply(name: js.Array[String], hookMethod: HookMethod[_, _], options: js.Any): js.Promise[_] = js.native
+    def apply(name: String, hookMethod: HookMethod[js.Any, js.Any]): js.Promise[js.Any] = js.native
+    def apply(name: String, hookMethod: HookMethod[js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
+    def apply(name: js.Array[String], hookMethod: HookMethod[js.Any, js.Any]): js.Promise[js.Any] = js.native
+    def apply(name: js.Array[String], hookMethod: HookMethod[js.Any, js.Any], options: js.Any): js.Promise[js.Any] = js.native
     
     /**
       * Add `after` hook for given `name`
       */
-    def after(name: String, afterHook: AfterHook[_, _]): Unit = js.native
+    def after(name: String, afterHook: AfterHook[js.Any, js.Any]): Unit = js.native
     
     /**
       * Add `before` hook for given `name`
       */
-    def before(name: String, beforeHook: BeforeHook[_]): Unit = js.native
+    def before(name: String, beforeHook: BeforeHook[js.Any]): Unit = js.native
     
     /**
       * Add `error` hook for given `name`
       */
-    def error(name: String, errorHook: ErrorHook[_, _]): Unit = js.native
+    def error(name: String, errorHook: ErrorHook[js.Any, js.Any]): Unit = js.native
     
     /**
       * Remove added hook for given `name`
       */
-    def remove(name: String, hook: AnyHook[_, _, _]): Unit = js.native
+    def remove(name: String, hook: AnyHook[js.Any, js.Any, js.Any]): Unit = js.native
     
     /**
       * Add `wrap` hook for given `name`
       */
-    def wrap(name: String, wrapHook: WrapHook[_, _]): Unit = js.native
+    def wrap(name: String, wrapHook: WrapHook[js.Any, js.Any]): Unit = js.native
   }
   
   type HookMethod[O, R] = js.Function1[/* options */ O, R | js.Promise[R]]

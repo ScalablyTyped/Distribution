@@ -2,13 +2,11 @@ package typings.googleapis.peopleV1Mod.peopleV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A person&#39;s relation to another person.
   */
-@js.native
 trait SchemaRelation extends StObject {
   
   /**
@@ -16,17 +14,17 @@ trait SchemaRelation extends StObject {
     * account locale or the locale specified in the Accept-Language HTTP
     * header.
     */
-  var formattedType: js.UndefOr[String] = js.native
+  var formattedType: js.UndefOr[String] = js.undefined
   
   /**
     * Metadata about the relation.
     */
-  var metadata: js.UndefOr[SchemaFieldMetadata] = js.native
+  var metadata: js.UndefOr[SchemaFieldMetadata] = js.undefined
   
   /**
     * The name of the other person this relation refers to.
     */
-  var person: js.UndefOr[String] = js.native
+  var person: js.UndefOr[String] = js.undefined
   
   /**
     * The person&#39;s relation to the other person. The type can be custom or
@@ -34,7 +32,7 @@ trait SchemaRelation extends StObject {
     * `father` * `parent` * `brother` * `sister` * `friend` * `relative` *
     * `domesticPartner` * `manager` * `assistant` * `referredBy` * `partner`
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaRelation {
   

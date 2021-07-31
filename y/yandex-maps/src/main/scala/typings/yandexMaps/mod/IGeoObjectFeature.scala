@@ -2,15 +2,13 @@ package typings.yandexMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IGeoObjectFeature extends StObject {
   
-  var geometry: js.UndefOr[IGeometry | IGeometryJson] = js.native
+  var geometry: js.UndefOr[IGeometry | IGeometryJson] = js.undefined
   
-  var properties: js.UndefOr[IDataManager | js.Object] = js.native
+  var properties: js.UndefOr[IDataManager | js.Object] = js.undefined
 }
 object IGeoObjectFeature {
   

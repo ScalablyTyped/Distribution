@@ -4,15 +4,15 @@ import typings.microsoftAjax.Sys.Component
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides a base class for all ASP.NET AJAX client behaviors.
   * @see {@link http://msdn.microsoft.com/en-us/library/bb311020(v=vs.100).aspx}
   */
-@js.native
-trait Behavior extends Component {
+trait Behavior
+  extends StObject
+     with Component {
   
   //#endregion
   //#region Properties
@@ -20,12 +20,12 @@ trait Behavior extends Component {
     * Gets the HTML Document Object Model (DOM) element that the current Sys.UI.Behavior object is associated with.
     * @return The DOM element that the current Behavior object is associated with.
     */
-  def get_element(): HTMLElement = js.native
+  def get_element(): HTMLElement
   
   /**
     * Gets or sets the name of the Sys.UI.Behavior object.
     */
-  def get_name(): String = js.native
+  def get_name(): String
   
   /*
     * Gets or sets the name of the Sys.UI.Behavior object.
@@ -33,7 +33,7 @@ trait Behavior extends Component {
     * @param value
     *           A string value to use as the name.
     */
-  def set_name(value: String): Unit = js.native
+  def set_name(value: String): Unit
 }
 object Behavior {
   

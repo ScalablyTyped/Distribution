@@ -27,24 +27,22 @@ import typings.pendoIoBrowser.pendoIoBrowserStrings.staged
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pendo {
   
-  @js.native
   trait Debugging extends StObject {
     
     // TODO
-    def getAllGuides(): js.Array[Guide] = js.native
+    def getAllGuides(): js.Array[Guide]
     
-    def getAutoGuides(): Auto = js.native
+    def getAutoGuides(): Auto
     
-    def getBadgeGuides(): js.Array[Guide] = js.native
+    def getBadgeGuides(): js.Array[Guide]
     
-    def getEventCache(): js.Array[_] = js.native
+    def getEventCache(): js.Array[js.Any]
     
-    def getLauncherGuides(): js.Array[Guide] = js.native
+    def getLauncherGuides(): js.Array[Guide]
   }
   object Debugging {
     
@@ -53,7 +51,7 @@ object pendo {
       getAllGuides: () => js.Array[Guide],
       getAutoGuides: () => Auto,
       getBadgeGuides: () => js.Array[Guide],
-      getEventCache: () => js.Array[_],
+      getEventCache: () => js.Array[js.Any],
       getLauncherGuides: () => js.Array[Guide]
     ): Debugging = {
       val __obj = js.Dynamic.literal(getAllGuides = js.Any.fromFunction0(getAllGuides), getAutoGuides = js.Any.fromFunction0(getAutoGuides), getBadgeGuides = js.Any.fromFunction0(getBadgeGuides), getEventCache = js.Any.fromFunction0(getEventCache), getLauncherGuides = js.Any.fromFunction0(getLauncherGuides))
@@ -73,21 +71,20 @@ object pendo {
       def setGetBadgeGuides(value: () => js.Array[Guide]): Self = StObject.set(x, "getBadgeGuides", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setGetEventCache(value: () => js.Array[_]): Self = StObject.set(x, "getEventCache", js.Any.fromFunction0(value))
+      def setGetEventCache(value: () => js.Array[js.Any]): Self = StObject.set(x, "getEventCache", js.Any.fromFunction0(value))
       
       @scala.inline
       def setGetLauncherGuides(value: () => js.Array[Guide]): Self = StObject.set(x, "getLauncherGuides", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait EventCallbacks extends StObject {
     
-    var guidesFailed: js.UndefOr[js.Function0[Unit]] = js.native
+    var guidesFailed: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var guidesLoaded: js.UndefOr[js.Function0[Unit]] = js.native
+    var guidesLoaded: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var ready: js.UndefOr[js.Function0[Unit]] = js.native
+    var ready: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object EventCallbacks {
     
@@ -121,72 +118,95 @@ object pendo {
   }
   
   /* Inlined {[ K in keyof pendo-io-browser.pendo.EventCallbacks ]: -? (callback : pendo-io-browser.pendo.EventCallbacks[K]): pendo-io-browser.pendo.Events} */
-  @js.native
   trait Events extends StObject {
     
-    def guidesFailed(): this.type = js.native
-    def guidesFailed(callback: js.Function0[Unit]): this.type = js.native
+    def guidesFailed(): this.type
+    def guidesFailed(callback: js.Function0[Unit]): this.type
     @JSName("guidesFailed")
-    var guidesFailed_Original: js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], this.type] = js.native
+    var guidesFailed_Original: js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], this.type]
     
-    def guidesLoaded(): this.type = js.native
-    def guidesLoaded(callback: js.Function0[Unit]): this.type = js.native
+    def guidesLoaded(): this.type
+    def guidesLoaded(callback: js.Function0[Unit]): this.type
     @JSName("guidesLoaded")
-    var guidesLoaded_Original: js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], this.type] = js.native
+    var guidesLoaded_Original: js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], this.type]
     
-    def ready(): this.type = js.native
-    def ready(callback: js.Function0[Unit]): this.type = js.native
+    def ready(): this.type
+    def ready(callback: js.Function0[Unit]): this.type
     @JSName("ready")
-    var ready_Original: js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], this.type] = js.native
+    var ready_Original: js.Function1[/* callback */ js.UndefOr[js.Function0[Unit]], this.type]
+  }
+  object Events {
+    
+    @scala.inline
+    def apply(
+      guidesFailed: /* callback */ js.UndefOr[js.Function0[Unit]] => Events,
+      guidesLoaded: /* callback */ js.UndefOr[js.Function0[Unit]] => Events,
+      ready: /* callback */ js.UndefOr[js.Function0[Unit]] => Events
+    ): Events = {
+      val __obj = js.Dynamic.literal(guidesFailed = js.Any.fromFunction1(guidesFailed), guidesLoaded = js.Any.fromFunction1(guidesLoaded), ready = js.Any.fromFunction1(ready))
+      __obj.asInstanceOf[Events]
+    }
+    
+    @scala.inline
+    implicit class EventsMutableBuilder[Self <: Events] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setGuidesFailed(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Events): Self = StObject.set(x, "guidesFailed", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setGuidesLoaded(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Events): Self = StObject.set(x, "guidesLoaded", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setReady(value: /* callback */ js.UndefOr[js.Function0[Unit]] => Events): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    }
   }
   
-  @js.native
   trait Guide extends StObject {
     
-    var attributes: Badge = js.native
+    var attributes: Badge
     
-    var audience: js.Array[_] = js.native
-    
-    // TODO
-    var audienceUiHint: Filters = js.native
-    
-    var createdAt: Double = js.native
-    
-    var createdByUser: User = js.native
-    
-    var id: String = js.native
-    
-    var isMultiStep: Boolean = js.native
-    
-    var kind: String = js.native
-    
-    var lastUpdatedAt: Double = js.native
-    
-    var lastUpdatedByUser: User = js.native
-    
-    var launchMethod: api | automatic | badge | dom | launcher = js.native
-    
-    var name: String = js.native
-    
-    var publishedAt: Double = js.native
+    var audience: js.Array[js.Any]
     
     // TODO
-    var resetAt: Double = js.native
+    var audienceUiHint: Filters
     
-    var rootVersionId: String = js.native
+    var createdAt: Double
     
-    var stableVersionId: String = js.native
+    var createdByUser: User
     
-    var state: published | staged | draft | disabled = js.native
+    var id: String
     
-    var steps: js.Array[GuideStep] = js.native
+    var isMultiStep: Boolean
+    
+    var kind: String
+    
+    var lastUpdatedAt: Double
+    
+    var lastUpdatedByUser: User
+    
+    var launchMethod: api | automatic | badge | dom | launcher
+    
+    var name: String
+    
+    var publishedAt: Double
+    
+    // TODO
+    var resetAt: Double
+    
+    var rootVersionId: String
+    
+    var stableVersionId: String
+    
+    var state: published | staged | draft | disabled
+    
+    var steps: js.Array[GuideStep]
   }
   object Guide {
     
     @scala.inline
     def apply(
       attributes: Badge,
-      audience: js.Array[_],
+      audience: js.Array[js.Any],
       audienceUiHint: Filters,
       createdAt: Double,
       createdByUser: User,
@@ -215,7 +235,7 @@ object pendo {
       def setAttributes(value: Badge): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAudience(value: js.Array[_]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
+      def setAudience(value: js.Array[js.Any]): Self = StObject.set(x, "audience", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAudienceUiHint(value: Filters): Self = StObject.set(x, "audienceUiHint", value.asInstanceOf[js.Any])
@@ -273,36 +293,35 @@ object pendo {
     }
   }
   
-  @js.native
   trait GuideStep extends StObject {
     
-    var advanceMethod: button | programatic | element = js.native
+    var advanceMethod: button | programatic | element
     
-    var attributes: AutoHeight = js.native
+    var attributes: AutoHeight
     
-    var contentType: String = js.native
+    var contentType: String
     
-    var contentUrl: js.UndefOr[String] = js.native
+    var contentUrl: js.UndefOr[String] = js.undefined
     
-    var contentUrlCss: js.UndefOr[String] = js.native
+    var contentUrlCss: js.UndefOr[String] = js.undefined
     
-    var contentUrlJs: js.UndefOr[String] = js.native
+    var contentUrlJs: js.UndefOr[String] = js.undefined
     
-    var elementPathRule: String = js.native
+    var elementPathRule: String
     
-    var guideId: String = js.native
+    var guideId: String
     
-    var id: String = js.native
+    var id: String
     
-    var lastUpdatedAt: Double = js.native
+    var lastUpdatedAt: Double
     
-    var rank: Double = js.native
+    var rank: Double
     
-    var resetAt: Double = js.native
+    var resetAt: Double
     
-    var thumbnailUrls: js.UndefOr[String] = js.native
+    var thumbnailUrls: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object GuideStep {
     
@@ -383,13 +402,12 @@ object pendo {
     }
   }
   
-  @js.native
   trait Identity extends StObject {
     
-    var account: js.UndefOr[IdentityMetadata] = js.native
+    var account: js.UndefOr[IdentityMetadata] = js.undefined
     
     /** visitor.id is required if user is logged in, otherwise an anonymous ID is generated and tracked by a cookie */
-    var visitor: js.UndefOr[IdentityMetadata] = js.native
+    var visitor: js.UndefOr[IdentityMetadata] = js.undefined
   }
   object Identity {
     
@@ -416,11 +434,11 @@ object pendo {
     }
   }
   
-  /* Inlined {  id :string | undefined} & pendo-io-browser.pendo.Metadata */
-  @js.native
-  trait IdentityMetadata extends /* key */ StringDictionary[String | Double | Boolean] {
+  trait IdentityMetadata
+    extends StObject
+       with Metadata {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object IdentityMetadata {
     
@@ -441,20 +459,21 @@ object pendo {
     }
   }
   
-  @js.native
-  trait InitOptions extends Identity {
+  trait InitOptions
+    extends StObject
+       with Identity {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var disablePersistence: js.UndefOr[Boolean] = js.native
+    var disablePersistence: js.UndefOr[Boolean] = js.undefined
     
-    var events: js.UndefOr[EventCallbacks] = js.native
+    var events: js.UndefOr[EventCallbacks] = js.undefined
     
-    var excludeAllText: js.UndefOr[Boolean] = js.native
+    var excludeAllText: js.UndefOr[Boolean] = js.undefined
     
-    var excludeTitle: js.UndefOr[Boolean] = js.native
+    var excludeTitle: js.UndefOr[Boolean] = js.undefined
     
-    var guides: js.UndefOr[Delay] = js.native
+    var guides: js.UndefOr[Delay] = js.undefined
   }
   object InitOptions {
     
@@ -527,7 +546,7 @@ object pendo {
     // Guides and Guide Center
     def findGuideByName(name: String): Guide | Unit = js.native
     
-    def flushNow(): js.Promise[_] = js.native
+    def flushNow(): js.Promise[js.Any] = js.native
     
     def getAccountId(): String = js.native
     
@@ -589,20 +608,19 @@ object pendo {
     def validateInstall(): Unit = js.native
   }
   
-  @js.native
   trait User extends StObject {
     
-    var first: String = js.native
+    var first: String
     
-    var id: String = js.native
+    var id: String
     
-    var last: String = js.native
+    var last: String
     
-    var role: Double = js.native
+    var role: Double
     
-    var userType: String = js.native
+    var userType: String
     
-    var username: String = js.native
+    var username: String
   }
   object User {
     

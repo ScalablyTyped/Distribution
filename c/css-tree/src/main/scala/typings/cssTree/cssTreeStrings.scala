@@ -3,13 +3,14 @@ package typings.cssTree
 import typings.cssTree.mod.DSNodeCombinator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cssTreeStrings {
   
   @js.native
-  sealed trait AmpersandAmpersand extends DSNodeCombinator
+  sealed trait AmpersandAmpersand
+    extends StObject
+       with DSNodeCombinator
   @scala.inline
   def AmpersandAmpersand: AmpersandAmpersand = "&&".asInstanceOf[AmpersandAmpersand]
   
@@ -214,7 +215,9 @@ object cssTreeStrings {
   def SelectorList: SelectorList = "SelectorList".asInstanceOf[SelectorList]
   
   @js.native
-  sealed trait Space extends DSNodeCombinator
+  sealed trait Space
+    extends StObject
+       with DSNodeCombinator
   @scala.inline
   def Space: Space = (" ").asInstanceOf[Space]
   
@@ -259,12 +262,16 @@ object cssTreeStrings {
   def Value: Value = "Value".asInstanceOf[Value]
   
   @js.native
-  sealed trait Verticalline extends DSNodeCombinator
+  sealed trait Verticalline
+    extends StObject
+       with DSNodeCombinator
   @scala.inline
   def Verticalline: Verticalline = "|".asInstanceOf[Verticalline]
   
   @js.native
-  sealed trait VerticallineVerticalline extends DSNodeCombinator
+  sealed trait VerticallineVerticalline
+    extends StObject
+       with DSNodeCombinator
   @scala.inline
   def VerticallineVerticalline: VerticallineVerticalline = "||".asInstanceOf[VerticallineVerticalline]
   

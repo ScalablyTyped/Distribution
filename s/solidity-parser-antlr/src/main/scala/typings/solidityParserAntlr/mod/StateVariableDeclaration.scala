@@ -2,30 +2,26 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StateVariableDeclaration
-  extends BaseASTNode
+  extends StObject
+     with BaseASTNode
      with ASTNode {
   
-  var initialValue: js.UndefOr[Expression] = js.native
+  var initialValue: js.UndefOr[Expression] = js.undefined
   
   @JSName("type")
-  var type_StateVariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration = js.native
+  var type_StateVariableDeclaration: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration
   
-  var variables: js.Array[VariableDeclaration] = js.native
+  var variables: js.Array[VariableDeclaration]
 }
 object StateVariableDeclaration {
   
   @scala.inline
-  def apply(
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.StateVariableDeclaration,
-    variables: js.Array[VariableDeclaration]
-  ): StateVariableDeclaration = {
+  def apply(variables: js.Array[VariableDeclaration]): StateVariableDeclaration = {
     val __obj = js.Dynamic.literal(variables = variables.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("StateVariableDeclaration")
     __obj.asInstanceOf[StateVariableDeclaration]
   }
   

@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddInstanceGroupsOutput extends StObject {
   
   /**
     * The Amazon Resource Name of the cluster.
     */
-  var ClusterArn: js.UndefOr[ArnType] = js.native
+  var ClusterArn: js.UndefOr[ArnType] = js.undefined
   
   /**
     * Instance group IDs of the newly created instance groups.
     */
-  var InstanceGroupIds: js.UndefOr[InstanceGroupIdsList] = js.native
+  var InstanceGroupIds: js.UndefOr[InstanceGroupIdsList] = js.undefined
   
   /**
     * The job flow ID in which the instance groups are added.
     */
-  var JobFlowId: js.UndefOr[XmlStringMaxLen256] = js.native
+  var JobFlowId: js.UndefOr[XmlStringMaxLen256] = js.undefined
 }
 object AddInstanceGroupsOutput {
   

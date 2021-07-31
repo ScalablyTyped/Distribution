@@ -3,14 +3,12 @@ package typings.phaser.anon
 import typings.phaser.spine.PowOut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSwirlEffect extends StObject {
   
   /* static member */
-  var interpolation: PowOut = js.native
+  var interpolation: PowOut
 }
 object TypeofSwirlEffect {
   

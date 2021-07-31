@@ -11,12 +11,15 @@ import typings.colorConvert.colorConvertStrings.h
 import typings.colorConvert.colorConvertStrings.r16
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object conversionsMod {
   
   object ansi16 {
+    
+    @JSImport("color-convert/conversions", "ansi16")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "ansi16.channels")
     @js.native
@@ -26,12 +29,15 @@ object conversionsMod {
     @js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.ansi16] = js.native
     
-    @JSImport("color-convert/conversions", "ansi16.rgb")
-    @js.native
-    def rgb(ansi16: ANSI16_): RGB_ = js.native
+    @scala.inline
+    def rgb(ansi16: ANSI16_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(ansi16.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object ansi256 {
+    
+    @JSImport("color-convert/conversions", "ansi256")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "ansi256.channels")
     @js.native
@@ -41,12 +47,15 @@ object conversionsMod {
     @js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.ansi256] = js.native
     
-    @JSImport("color-convert/conversions", "ansi256.rgb")
-    @js.native
-    def rgb(ansi256: ANSI256_): RGB_ = js.native
+    @scala.inline
+    def rgb(ansi256: ANSI256_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(ansi256.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object apple {
+    
+    @JSImport("color-convert/conversions", "apple")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "apple.channels")
     @js.native
@@ -56,12 +65,15 @@ object conversionsMod {
     @js.native
     val labels: js.Tuple3[r16, g16, b16] = js.native
     
-    @JSImport("color-convert/conversions", "apple.rgb")
-    @js.native
-    def rgb(apple: APPLE_): RGB_ = js.native
+    @scala.inline
+    def rgb(apple: APPLE_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(apple.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object cmyk {
+    
+    @JSImport("color-convert/conversions", "cmyk")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "cmyk.channels")
     @js.native
@@ -71,78 +83,78 @@ object conversionsMod {
     @js.native
     val labels: typings.colorConvert.colorConvertStrings.cmyk = js.native
     
-    @JSImport("color-convert/conversions", "cmyk.rgb")
-    @js.native
-    def rgb(cmyk: CMYK_): RGB_ = js.native
+    @scala.inline
+    def rgb(cmyk: CMYK_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(cmyk.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object gray {
+    
+    @JSImport("color-convert/conversions", "gray")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "gray.channels")
     @js.native
     val channels: `1` = js.native
     
-    @JSImport("color-convert/conversions", "gray.cmyk")
-    @js.native
-    def cmyk(gray: GRAY_): CMYK_ = js.native
+    @scala.inline
+    def cmyk(gray: GRAY_): CMYK_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cmyk")(gray.asInstanceOf[js.Any]).asInstanceOf[CMYK_]
     
-    @JSImport("color-convert/conversions", "gray.hex")
-    @js.native
-    def hex(gray: GRAY_): HEX_ = js.native
+    @scala.inline
+    def hex(gray: GRAY_): HEX_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(gray.asInstanceOf[js.Any]).asInstanceOf[HEX_]
     
-    @JSImport("color-convert/conversions", "gray.hsl")
-    @js.native
-    def hsl(gray: GRAY_): HSL_ = js.native
+    @scala.inline
+    def hsl(gray: GRAY_): HSL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(gray.asInstanceOf[js.Any]).asInstanceOf[HSL_]
     
-    @JSImport("color-convert/conversions", "gray.hsv")
-    @js.native
-    def hsv(gray: GRAY_): HSV_ = js.native
+    @scala.inline
+    def hsv(gray: GRAY_): HSV_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsv")(gray.asInstanceOf[js.Any]).asInstanceOf[HSV_]
     
-    @JSImport("color-convert/conversions", "gray.hwb")
-    @js.native
-    def hwb(gray: GRAY_): HWB_ = js.native
+    @scala.inline
+    def hwb(gray: GRAY_): HWB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(gray.asInstanceOf[js.Any]).asInstanceOf[HWB_]
     
-    @JSImport("color-convert/conversions", "gray.lab")
-    @js.native
-    def lab(gray: GRAY_): LAB_ = js.native
+    @scala.inline
+    def lab(gray: GRAY_): LAB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lab")(gray.asInstanceOf[js.Any]).asInstanceOf[LAB_]
     
     @JSImport("color-convert/conversions", "gray.labels")
     @js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.gray] = js.native
     
-    @JSImport("color-convert/conversions", "gray.rgb")
-    @js.native
-    def rgb(gray: GRAY_): RGB_ = js.native
+    @scala.inline
+    def rgb(gray: GRAY_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(gray.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object hcg {
+    
+    @JSImport("color-convert/conversions", "hcg")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "hcg.channels")
     @js.native
     val channels: `3` = js.native
     
-    @JSImport("color-convert/conversions", "hcg.hsl")
-    @js.native
-    def hsl(hcg: HCG_): HSL_ = js.native
+    @scala.inline
+    def hsl(hcg: HCG_): HSL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(hcg.asInstanceOf[js.Any]).asInstanceOf[HSL_]
     
-    @JSImport("color-convert/conversions", "hcg.hsv")
-    @js.native
-    def hsv(hcg: HCG_): HSV_ = js.native
+    @scala.inline
+    def hsv(hcg: HCG_): HSV_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsv")(hcg.asInstanceOf[js.Any]).asInstanceOf[HSV_]
     
-    @JSImport("color-convert/conversions", "hcg.hwb")
-    @js.native
-    def hwb(hcg: HCG_): HWB_ = js.native
+    @scala.inline
+    def hwb(hcg: HCG_): HWB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(hcg.asInstanceOf[js.Any]).asInstanceOf[HWB_]
     
     @JSImport("color-convert/conversions", "hcg.labels")
     @js.native
     val labels: js.Tuple3[h, c, g] = js.native
     
-    @JSImport("color-convert/conversions", "hcg.rgb")
-    @js.native
-    def rgb(hcg: HCG_): RGB_ = js.native
+    @scala.inline
+    def rgb(hcg: HCG_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(hcg.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object hex {
+    
+    @JSImport("color-convert/conversions", "hex")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "hex.channels")
     @js.native
@@ -152,81 +164,87 @@ object conversionsMod {
     @js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.hex] = js.native
     
-    @JSImport("color-convert/conversions", "hex.rgb")
-    @js.native
-    def rgb(hex: HEX_): RGB_ = js.native
+    @scala.inline
+    def rgb(hex: HEX_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(hex.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object hsl {
+    
+    @JSImport("color-convert/conversions", "hsl")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "hsl.channels")
     @js.native
     val channels: `3` = js.native
     
-    @JSImport("color-convert/conversions", "hsl.hcg")
-    @js.native
-    def hcg(hsl: HSL_): HCG_ = js.native
+    @scala.inline
+    def hcg(hsl: HSL_): HCG_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hcg")(hsl.asInstanceOf[js.Any]).asInstanceOf[HCG_]
     
-    @JSImport("color-convert/conversions", "hsl.hsv")
-    @js.native
-    def hsv(hsl: HSL_): HSV_ = js.native
+    @scala.inline
+    def hsv(hsl: HSL_): HSV_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsv")(hsl.asInstanceOf[js.Any]).asInstanceOf[HSV_]
     
     @JSImport("color-convert/conversions", "hsl.labels")
     @js.native
     val labels: typings.colorConvert.colorConvertStrings.hsl = js.native
     
-    @JSImport("color-convert/conversions", "hsl.rgb")
-    @js.native
-    def rgb(hsl: HSL_): RGB_ = js.native
+    @scala.inline
+    def rgb(hsl: HSL_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(hsl.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object hsv {
     
-    @JSImport("color-convert/conversions", "hsv.ansi16")
+    @JSImport("color-convert/conversions", "hsv")
     @js.native
-    def ansi16(hsv: HSV_): ANSI16_ = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def ansi16(hsv: HSV_): ANSI16_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi16")(hsv.asInstanceOf[js.Any]).asInstanceOf[ANSI16_]
     
     @JSImport("color-convert/conversions", "hsv.channels")
     @js.native
     val channels: `3` = js.native
     
-    @JSImport("color-convert/conversions", "hsv.hcg")
-    @js.native
-    def hcg(hsv: HSV_): HCG_ = js.native
+    @scala.inline
+    def hcg(hsv: HSV_): HCG_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hcg")(hsv.asInstanceOf[js.Any]).asInstanceOf[HCG_]
     
-    @JSImport("color-convert/conversions", "hsv.hsl")
-    @js.native
-    def hsl(hsv: HSV_): HSL_ = js.native
+    @scala.inline
+    def hsl(hsv: HSV_): HSL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(hsv.asInstanceOf[js.Any]).asInstanceOf[HSL_]
     
     @JSImport("color-convert/conversions", "hsv.labels")
     @js.native
     val labels: typings.colorConvert.colorConvertStrings.hsv = js.native
     
-    @JSImport("color-convert/conversions", "hsv.rgb")
-    @js.native
-    def rgb(hsv: HSV_): RGB_ = js.native
+    @scala.inline
+    def rgb(hsv: HSV_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(hsv.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object hwb {
+    
+    @JSImport("color-convert/conversions", "hwb")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "hwb.channels")
     @js.native
     val channels: `3` = js.native
     
-    @JSImport("color-convert/conversions", "hwb.hcg")
-    @js.native
-    def hcg(hwb: HWB_): HCG_ = js.native
+    @scala.inline
+    def hcg(hwb: HWB_): HCG_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hcg")(hwb.asInstanceOf[js.Any]).asInstanceOf[HCG_]
     
     @JSImport("color-convert/conversions", "hwb.labels")
     @js.native
     val labels: typings.colorConvert.colorConvertStrings.hwb = js.native
     
-    @JSImport("color-convert/conversions", "hwb.rgb")
-    @js.native
-    def rgb(hwb: HWB_): RGB_ = js.native
+    @scala.inline
+    def rgb(hwb: HWB_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(hwb.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object keyword {
+    
+    @JSImport("color-convert/conversions", "keyword")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "keyword.channels")
     @js.native
@@ -236,12 +254,15 @@ object conversionsMod {
     @js.native
     val labels: js.Array[typings.colorConvert.colorConvertStrings.keyword] = js.native
     
-    @JSImport("color-convert/conversions", "keyword.rgb")
-    @js.native
-    def rgb(keyword: KEYWORD_): RGB_ = js.native
+    @scala.inline
+    def rgb(keyword: KEYWORD_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(keyword.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   object lab {
+    
+    @JSImport("color-convert/conversions", "lab")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "lab.channels")
     @js.native
@@ -251,24 +272,25 @@ object conversionsMod {
     @js.native
     val labels: typings.colorConvert.colorConvertStrings.lab = js.native
     
-    @JSImport("color-convert/conversions", "lab.lch")
-    @js.native
-    def lch(lab: LAB_): LCH_ = js.native
+    @scala.inline
+    def lch(lab: LAB_): LCH_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lch")(lab.asInstanceOf[js.Any]).asInstanceOf[LCH_]
     
-    @JSImport("color-convert/conversions", "lab.xyz")
-    @js.native
-    def xyz(lab: LAB_): XYZ_ = js.native
+    @scala.inline
+    def xyz(lab: LAB_): XYZ_ = ^.asInstanceOf[js.Dynamic].applyDynamic("xyz")(lab.asInstanceOf[js.Any]).asInstanceOf[XYZ_]
   }
   
   object lch {
+    
+    @JSImport("color-convert/conversions", "lch")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "lch.channels")
     @js.native
     val channels: `3` = js.native
     
-    @JSImport("color-convert/conversions", "lch.lab")
-    @js.native
-    def lab(lch: LCH_): LAB_ = js.native
+    @scala.inline
+    def lab(lch: LCH_): LAB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lab")(lch.asInstanceOf[js.Any]).asInstanceOf[LAB_]
     
     @JSImport("color-convert/conversions", "lch.labels")
     @js.native
@@ -277,84 +299,77 @@ object conversionsMod {
   
   object rgb {
     
-    @JSImport("color-convert/conversions", "rgb.ansi16")
+    @JSImport("color-convert/conversions", "rgb")
     @js.native
-    def ansi16(rgb: RGB_): ANSI16_ = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("color-convert/conversions", "rgb.ansi256")
-    @js.native
-    def ansi256(rgb: RGB_): ANSI256_ = js.native
+    @scala.inline
+    def ansi16(rgb: RGB_): ANSI16_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi16")(rgb.asInstanceOf[js.Any]).asInstanceOf[ANSI16_]
     
-    @JSImport("color-convert/conversions", "rgb.apple")
-    @js.native
-    def apple(rgb: RGB_): APPLE_ = js.native
+    @scala.inline
+    def ansi256(rgb: RGB_): ANSI256_ = ^.asInstanceOf[js.Dynamic].applyDynamic("ansi256")(rgb.asInstanceOf[js.Any]).asInstanceOf[ANSI256_]
+    
+    @scala.inline
+    def apple(rgb: RGB_): APPLE_ = ^.asInstanceOf[js.Dynamic].applyDynamic("apple")(rgb.asInstanceOf[js.Any]).asInstanceOf[APPLE_]
     
     @JSImport("color-convert/conversions", "rgb.channels")
     @js.native
     val channels: `3` = js.native
     
-    @JSImport("color-convert/conversions", "rgb.cmyk")
-    @js.native
-    def cmyk(rgb: RGB_): CMYK_ = js.native
+    @scala.inline
+    def cmyk(rgb: RGB_): CMYK_ = ^.asInstanceOf[js.Dynamic].applyDynamic("cmyk")(rgb.asInstanceOf[js.Any]).asInstanceOf[CMYK_]
     
-    @JSImport("color-convert/conversions", "rgb.gray")
-    @js.native
-    def gray(rgb: RGB_): GRAY_ = js.native
+    @scala.inline
+    def gray(rgb: RGB_): GRAY_ = ^.asInstanceOf[js.Dynamic].applyDynamic("gray")(rgb.asInstanceOf[js.Any]).asInstanceOf[GRAY_]
     
-    @JSImport("color-convert/conversions", "rgb.hcg")
-    @js.native
-    def hcg(rgb: RGB_): HCG_ = js.native
+    @scala.inline
+    def hcg(rgb: RGB_): HCG_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hcg")(rgb.asInstanceOf[js.Any]).asInstanceOf[HCG_]
     
-    @JSImport("color-convert/conversions", "rgb.hex")
-    @js.native
-    def hex(rgb: RGB_): HEX_ = js.native
+    @scala.inline
+    def hex(rgb: RGB_): HEX_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hex")(rgb.asInstanceOf[js.Any]).asInstanceOf[HEX_]
     
-    @JSImport("color-convert/conversions", "rgb.hsl")
-    @js.native
-    def hsl(rgb: RGB_): HSL_ = js.native
+    @scala.inline
+    def hsl(rgb: RGB_): HSL_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsl")(rgb.asInstanceOf[js.Any]).asInstanceOf[HSL_]
     
-    @JSImport("color-convert/conversions", "rgb.hsv")
-    @js.native
-    def hsv(rgb: RGB_): HSV_ = js.native
+    @scala.inline
+    def hsv(rgb: RGB_): HSV_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hsv")(rgb.asInstanceOf[js.Any]).asInstanceOf[HSV_]
     
-    @JSImport("color-convert/conversions", "rgb.hwb")
-    @js.native
-    def hwb(rgb: RGB_): HWB_ = js.native
+    @scala.inline
+    def hwb(rgb: RGB_): HWB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("hwb")(rgb.asInstanceOf[js.Any]).asInstanceOf[HWB_]
     
-    @JSImport("color-convert/conversions", "rgb.keyword")
-    @js.native
-    def keyword(rgb: RGB_): KEYWORD_ = js.native
+    @scala.inline
+    def keyword(rgb: RGB_): KEYWORD_ = ^.asInstanceOf[js.Dynamic].applyDynamic("keyword")(rgb.asInstanceOf[js.Any]).asInstanceOf[KEYWORD_]
     
-    @JSImport("color-convert/conversions", "rgb.lab")
-    @js.native
-    def lab(rgb: RGB_): LAB_ = js.native
+    @scala.inline
+    def lab(rgb: RGB_): LAB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lab")(rgb.asInstanceOf[js.Any]).asInstanceOf[LAB_]
     
     @JSImport("color-convert/conversions", "rgb.labels")
     @js.native
     val labels: typings.colorConvert.colorConvertStrings.rgb = js.native
     
-    @JSImport("color-convert/conversions", "rgb.xyz")
-    @js.native
-    def xyz(rgb: RGB_): XYZ_ = js.native
+    @scala.inline
+    def xyz(rgb: RGB_): XYZ_ = ^.asInstanceOf[js.Dynamic].applyDynamic("xyz")(rgb.asInstanceOf[js.Any]).asInstanceOf[XYZ_]
   }
   
   object xyz {
+    
+    @JSImport("color-convert/conversions", "xyz")
+    @js.native
+    val ^ : js.Any = js.native
     
     @JSImport("color-convert/conversions", "xyz.channels")
     @js.native
     val channels: `3` = js.native
     
-    @JSImport("color-convert/conversions", "xyz.lab")
-    @js.native
-    def lab(xyz: XYZ_): LAB_ = js.native
+    @scala.inline
+    def lab(xyz: XYZ_): LAB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lab")(xyz.asInstanceOf[js.Any]).asInstanceOf[LAB_]
     
     @JSImport("color-convert/conversions", "xyz.labels")
     @js.native
     val labels: typings.colorConvert.colorConvertStrings.xyz = js.native
     
-    @JSImport("color-convert/conversions", "xyz.rgb")
-    @js.native
-    def rgb(xyz: XYZ_): RGB_ = js.native
+    @scala.inline
+    def rgb(xyz: XYZ_): RGB_ = ^.asInstanceOf[js.Dynamic].applyDynamic("rgb")(xyz.asInstanceOf[js.Any]).asInstanceOf[RGB_]
   }
   
   type ANSI16_ = Double

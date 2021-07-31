@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InitiateMultipartUploadOutput extends StObject {
   
   /**
     * The relative URI path of the multipart upload ID Amazon S3 Glacier created.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the multipart upload. This value is also included as part of the location.
     */
-  var uploadId: js.UndefOr[String] = js.native
+  var uploadId: js.UndefOr[String] = js.undefined
 }
 object InitiateMultipartUploadOutput {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.appstreamMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteUserRequest extends StObject {
   
   /**
     * The authentication type for the user. You must specify USERPOOL.
     */
-  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType = js.native
+  var AuthenticationType: typings.awsSdk.appstreamMod.AuthenticationType
   
   /**
     * The email address of the user.  Users' email addresses are case-sensitive. 
     */
-  var UserName: Username = js.native
+  var UserName: Username
 }
 object DeleteUserRequest {
   

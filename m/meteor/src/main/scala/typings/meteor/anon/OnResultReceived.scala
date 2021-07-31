@@ -5,10 +5,8 @@ import typings.meteor.EJSONableProperty
 import typings.meteor.meteorMod.globalError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OnResultReceived[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] extends StObject {
   
   var onResultReceived: js.UndefOr[
@@ -17,14 +15,14 @@ trait OnResultReceived[Result /* <: EJSONable | (js.Array[EJSONable | EJSONableP
       /* result */ js.UndefOr[Result], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
-  var returnStubValue: js.UndefOr[Boolean] = js.native
+  var returnStubValue: js.UndefOr[Boolean] = js.undefined
   
-  var throwStubExceptions: js.UndefOr[Boolean] = js.native
+  var throwStubExceptions: js.UndefOr[Boolean] = js.undefined
   
   @JSName("wait")
-  var wait_FOnResultReceived: js.UndefOr[Boolean] = js.native
+  var wait_FOnResultReceived: js.UndefOr[Boolean] = js.undefined
 }
 object OnResultReceived {
   
@@ -35,7 +33,7 @@ object OnResultReceived {
   }
   
   @scala.inline
-  implicit class OnResultReceivedMutableBuilder[Self <: OnResultReceived[_], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] (val x: Self with OnResultReceived[Result]) extends AnyVal {
+  implicit class OnResultReceivedMutableBuilder[Self <: OnResultReceived[?], Result /* <: EJSONable | (js.Array[EJSONable | EJSONableProperty]) | EJSONableProperty */] (val x: Self & OnResultReceived[Result]) extends AnyVal {
     
     @scala.inline
     def setOnResultReceived(

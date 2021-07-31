@@ -2,26 +2,24 @@ package typings.awsSdk.pollyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListSpeechSynthesisTasksInput extends StObject {
   
   /**
     * Maximum number of speech synthesis tasks returned in a List operation.
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.pollyMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.pollyMod.MaxResults] = js.undefined
   
   /**
     * The pagination token to use in the next request to continue the listing of speech synthesis tasks. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.pollyMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.pollyMod.NextToken] = js.undefined
   
   /**
     * Status of the speech synthesis tasks returned in a List operation
     */
-  var Status: js.UndefOr[TaskStatus] = js.native
+  var Status: js.UndefOr[TaskStatus] = js.undefined
 }
 object ListSpeechSynthesisTasksInput {
   

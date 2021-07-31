@@ -2,15 +2,13 @@ package typings.datatablesNet.DataTables
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AjaxDataRequestOrder extends StObject {
   
-  var column: Double = js.native
+  var column: Double
   
-  var dir: String = js.native
+  var dir: String
 }
 object AjaxDataRequestOrder {
   

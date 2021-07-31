@@ -3,25 +3,23 @@ package typings.elasticElasticsearch.anon
 import typings.elasticElasticsearch.connectionMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Aborted[TContext] extends StObject {
   
-  var aborted: Boolean = js.native
+  var aborted: Boolean
   
-  var attempts: Double = js.native
+  var attempts: Double
   
-  var connection: default = js.native
+  var connection: default
   
-  var context: TContext = js.native
+  var context: TContext
   
-  var name: String | js.Symbol = js.native
+  var name: String | js.Symbol
   
-  var request: Options = js.native
+  var request: Options
   
-  var sniff: js.UndefOr[Hosts] = js.native
+  var sniff: js.UndefOr[Hosts] = js.undefined
 }
 object Aborted {
   
@@ -39,7 +37,7 @@ object Aborted {
   }
   
   @scala.inline
-  implicit class AbortedMutableBuilder[Self <: Aborted[_], TContext] (val x: Self with Aborted[TContext]) extends AnyVal {
+  implicit class AbortedMutableBuilder[Self <: Aborted[?], TContext] (val x: Self & Aborted[TContext]) extends AnyVal {
     
     @scala.inline
     def setAborted(value: Boolean): Self = StObject.set(x, "aborted", value.asInstanceOf[js.Any])

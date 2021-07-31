@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.TypeClass
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,20 +13,21 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * The type class of this type is com::sun::star::uno::TypeClass::MODULE.
   * @since OOo 1.1.2
   */
-@js.native
-trait XModuleTypeDescription extends XTypeDescription {
+trait XModuleTypeDescription
+  extends StObject
+     with XTypeDescription {
   
   /**
     * Returns the type descriptions for the members of this module.
     * @returns a sequence containing type descriptions.
     */
-  val Members: SafeArray[XTypeDescription] = js.native
+  val Members: SafeArray[XTypeDescription]
   
   /**
     * Returns the type descriptions for the members of this module.
     * @returns a sequence containing type descriptions.
     */
-  def getMembers(): SafeArray[XTypeDescription] = js.native
+  def getMembers(): SafeArray[XTypeDescription]
 }
 object XModuleTypeDescription {
   

@@ -2,24 +2,22 @@ package typings.googleapis.dialogflowV2beta1Mod.dialogflowV2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The quick replies response message.
   */
-@js.native
 trait SchemaGoogleCloudDialogflowV2beta1IntentMessageQuickReplies extends StObject {
   
   /**
     * Optional. The collection of quick replies.
     */
-  var quickReplies: js.UndefOr[js.Array[String]] = js.native
+  var quickReplies: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. The title of the collection of quick replies.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleCloudDialogflowV2beta1IntentMessageQuickReplies {
   

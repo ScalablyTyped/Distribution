@@ -2,26 +2,24 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListRecommendationsRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the  CodeReview  object. 
     */
-  var CodeReviewArn: Arn = js.native
+  var CodeReviewArn: Arn
   
   /**
     *  The maximum number of results that are returned per call. The default is 100. 
     */
-  var MaxResults: js.UndefOr[typings.awsSdk.codegurureviewerMod.MaxResults] = js.native
+  var MaxResults: js.UndefOr[typings.awsSdk.codegurureviewerMod.MaxResults] = js.undefined
   
   /**
     *  Pagination token. 
     */
-  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.codegurureviewerMod.NextToken] = js.undefined
 }
 object ListRecommendationsRequest {
   

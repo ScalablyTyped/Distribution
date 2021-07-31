@@ -3,13 +3,11 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A source that records can be read and decoded from.
   */
-@js.native
 trait SchemaSource extends StObject {
   
   /**
@@ -21,12 +19,12 @@ trait SchemaSource extends StObject {
     * order: base_specs (later items win), spec (overrides anything in
     * base_specs).
     */
-  var baseSpecs: js.UndefOr[js.Array[StringDictionary[_]]] = js.native
+  var baseSpecs: js.UndefOr[js.Array[StringDictionary[js.Any]]] = js.undefined
   
   /**
     * The codec to use to decode data read from the source.
     */
-  var codec: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var codec: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Setting this value to true hints to the framework that the source
@@ -42,7 +40,7 @@ trait SchemaSource extends StObject {
     * supplied by the framework to the user don&#39;t have this field
     * populated.
     */
-  var doesNotNeedSplitting: js.UndefOr[Boolean] = js.native
+  var doesNotNeedSplitting: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optionally, metadata for this source can be supplied right away, avoiding
@@ -51,12 +49,12 @@ trait SchemaSource extends StObject {
     * (e.g. when filling in a DerivedSource). Source objects supplied by the
     * framework to the user don&#39;t have this field populated.
     */
-  var metadata: js.UndefOr[SchemaSourceMetadata] = js.native
+  var metadata: js.UndefOr[SchemaSourceMetadata] = js.undefined
   
   /**
     * The source to read from, plus its parameters.
     */
-  var spec: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var spec: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object SchemaSource {
   
@@ -70,7 +68,7 @@ object SchemaSource {
   implicit class SchemaSourceMutableBuilder[Self <: SchemaSource] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBaseSpecs(value: js.Array[StringDictionary[_]]): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
+    def setBaseSpecs(value: js.Array[StringDictionary[js.Any]]): Self = StObject.set(x, "baseSpecs", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setBaseSpecsUndefined: Self = StObject.set(x, "baseSpecs", js.undefined)

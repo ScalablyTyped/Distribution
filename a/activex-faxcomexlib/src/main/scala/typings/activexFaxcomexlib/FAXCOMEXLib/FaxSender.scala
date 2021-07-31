@@ -2,69 +2,67 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxSender Class */
-@js.native
 trait FaxSender extends StObject {
   
   /** Sender's billing code */
-  var BillingCode: String = js.native
+  var BillingCode: String
   
   /** City */
-  var City: String = js.native
+  var City: String
   
   /** Sender's company */
-  var Company: String = js.native
+  var Company: String
   
   /** Sender's country or region */
-  var Country: String = js.native
+  var Country: String
   
   /** Sender's department */
-  var Department: String = js.native
+  var Department: String
   
   /** Sender's e-mail address */
-  var Email: String = js.native
+  var Email: String
   
   @JSName("FAXCOMEXLib.FaxSender_typekey")
-  var FAXCOMEXLibDotFaxSender_typekey: FaxSender = js.native
+  var FAXCOMEXLibDotFaxSender_typekey: FaxSender
   
   /** Sender's fax number */
-  var FaxNumber: String = js.native
+  var FaxNumber: String
   
   /** Sender's home phone */
-  var HomePhone: String = js.native
+  var HomePhone: String
   
   /** Load default sender */
-  def LoadDefaultSender(): Unit = js.native
+  def LoadDefaultSender(): Unit
   
   /** Sender's name */
-  var Name: String = js.native
+  var Name: String
   
   /** Sender's office location */
-  var OfficeLocation: String = js.native
+  var OfficeLocation: String
   
   /** Sender's office phone */
-  var OfficePhone: String = js.native
+  var OfficePhone: String
   
   /** Save default sender */
-  def SaveDefaultSender(): Unit = js.native
+  def SaveDefaultSender(): Unit
   
   /** Sender's state */
-  var State: String = js.native
+  var State: String
   
   /** Sender's street address */
-  var StreetAddress: String = js.native
+  var StreetAddress: String
   
   /** Transmitting Station ID */
-  var TSID: String = js.native
+  var TSID: String
   
   /** Sender's title */
-  var Title: String = js.native
+  var Title: String
   
   /** Sender's zip code */
-  var ZipCode: String = js.native
+  var ZipCode: String
 }
 object FaxSender {
   

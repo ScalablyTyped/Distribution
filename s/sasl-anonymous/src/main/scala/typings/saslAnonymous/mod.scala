@@ -1,18 +1,38 @@
 package typings.saslAnonymous
 
 import org.scalablytyped.runtime.Instantiable0
+import org.scalablytyped.runtime.StringDictionary
 import typings.saslAnonymous.saslAnonymousBooleans.`true`
 import typings.saslAnonymous.saslAnonymousStrings.ANONYMOUS
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("sasl-anonymous", JSImport.Namespace)
   @js.native
-  class ^ () extends AnonymousMechanism
+  class ^ ()
+    extends StObject
+       with AnonymousMechanism {
+    
+    /* CompleteClass */
+    override def challenge(chal: String): Unit = js.native
+    
+    /* CompleteClass */
+    var clientFirst: `true` = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_AnonymousMechanism: ANONYMOUS = js.native
+    
+    /* CompleteClass */
+    override def response(cred: StringDictionary[js.Any]): String = js.native
+    /* CompleteClass */
+    override def response(cred: Credentials): String = js.native
+  }
   @JSImport("sasl-anonymous", JSImport.Namespace)
   @js.native
   val ^ : js.Any = js.native
@@ -20,7 +40,27 @@ object mod {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("sasl-anonymous", "Mechanism")
   @js.native
-  class Mechanism () extends AnonymousMechanism
+  class Mechanism ()
+    extends StObject
+       with AnonymousMechanism {
+    
+    /* CompleteClass */
+    override def challenge(chal: String): Unit = js.native
+    
+    /* CompleteClass */
+    var clientFirst: `true` = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
+    /* CompleteClass */
+    @JSName("name")
+    var name_AnonymousMechanism: ANONYMOUS = js.native
+    
+    /* CompleteClass */
+    override def response(cred: StringDictionary[js.Any]): String = js.native
+    /* CompleteClass */
+    override def response(cred: Credentials): String = js.native
+  }
   /* static member */
   @JSImport("sasl-anonymous", "Mechanism")
   @js.native
@@ -48,22 +88,22 @@ object mod {
     def name_=(x: ANONYMOUS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait AnonymousMechanism
-    extends typings.saslmechanisms.mod.Mechanism {
+    extends StObject
+       with typings.saslmechanisms.mod.Mechanism {
     
-    var clientFirst: `true` = js.native
+    var clientFirst: `true`
     
     @JSName("name")
-    var name_AnonymousMechanism: ANONYMOUS = js.native
+    var name_AnonymousMechanism: ANONYMOUS
     
-    def response(cred: Credentials): String = js.native
+    def response(cred: Credentials): String
   }
   object AnonymousMechanism {
     
     @scala.inline
-    def apply(challenge: String => Unit, clientFirst: `true`, name: ANONYMOUS, response: Credentials => String): AnonymousMechanism = {
-      val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = clientFirst.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], response = js.Any.fromFunction1(response))
+    def apply(challenge: String => Unit, response: Credentials => String): AnonymousMechanism = {
+      val __obj = js.Dynamic.literal(challenge = js.Any.fromFunction1(challenge), clientFirst = true, name = "ANONYMOUS", response = js.Any.fromFunction1(response))
       __obj.asInstanceOf[AnonymousMechanism]
     }
     
@@ -81,10 +121,9 @@ object mod {
     }
   }
   
-  @js.native
   trait Credentials extends StObject {
     
-    var trace: js.UndefOr[String] = js.native
+    var trace: js.UndefOr[String] = js.undefined
   }
   object Credentials {
     

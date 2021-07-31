@@ -5,7 +5,6 @@ import typings.ibmDb.anon.Params
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,16 +13,16 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("ibm_db", JSImport.Default)
-  @js.native
-  def default(): Database = js.native
-  @JSImport("ibm_db", JSImport.Default)
-  @js.native
-  def default(options: Options): Database = js.native
+  @scala.inline
+  def default(): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Database]
+  @scala.inline
+  def default(options: Options): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(options.asInstanceOf[js.Any]).asInstanceOf[Database]
   
   @JSImport("ibm_db", "Database")
   @js.native
-  class Database () extends Options {
+  class Database ()
+    extends StObject
+       with Options {
     def this(options: Options) = this()
     
     def beginTransaction(): js.Promise[Unit] = js.native
@@ -33,7 +32,7 @@ object mod {
     def beginTransactionSync(): Database = js.native
     
     def close(): Unit = js.native
-    def close(cb: js.Function2[/* err */ Error, /* db */ this.type, _]): Unit = js.native
+    def close(cb: js.Function2[/* err */ Error, /* db */ this.type, js.Any]): Unit = js.native
     
     def closeSync(): Boolean = js.native
     
@@ -45,112 +44,112 @@ object mod {
       schema: String,
       table: String,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: String,
       schema: String,
       table: String,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: String,
       schema: String,
       table: Null,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: String,
       schema: String,
       table: Null,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: String,
       schema: Null,
       table: String,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: String,
       schema: Null,
       table: String,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: String,
       schema: Null,
       table: Null,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: String,
       schema: Null,
       table: Null,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: String,
       table: String,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: String,
       table: String,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: String,
       table: Null,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: String,
       table: Null,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: Null,
       table: String,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: Null,
       table: String,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: Null,
       table: Null,
       column: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def columns(
       catalog: Null,
       schema: Null,
       table: Null,
       column: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     
     def commitTransaction(): js.Promise[Unit] = js.native
@@ -166,10 +165,10 @@ object mod {
     @JSName("connected")
     var connected_Database: Boolean = js.native
     
-    def describe(obj: DescribeObject, cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
+    def describe(obj: DescribeObject, cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]): Unit = js.native
     
     def endTransaction(): js.Promise[Unit] = js.native
-    def endTransaction(rollback: Boolean, cb: js.Function2[/* foo */ js.Any, /* bar */ js.Any, _]): js.Any = js.native
+    def endTransaction(rollback: Boolean, cb: js.Function2[/* foo */ js.Any, /* bar */ js.Any, js.Any]): js.Any = js.native
     
     def endTransactionSync(rollback: Boolean): Database = js.native
     
@@ -195,34 +194,42 @@ object mod {
     
     def prepareSync(sql: String): ODBCStatement = js.native
     
-    def query(query: String): js.Promise[js.Array[_]] = js.native
-    def query(query: String, cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
-    def query(query: String, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
-    def query(query: String, params: js.Array[_], cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
-    def query(query: Params): js.Promise[js.Array[_]] = js.native
-    def query(query: Params, cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
-    def query(query: Params, params: js.Array[_]): js.Promise[js.Array[_]] = js.native
+    def query(query: String): js.Promise[js.Array[js.Any]] = js.native
+    def query(query: String, cb: js.Function2[/* err */ Error, /* res */ js.Array[js.Any], Unit]): Unit = js.native
+    def query(query: String, params: js.Array[js.Any]): js.Promise[js.Array[js.Any]] = js.native
+    def query(
+      query: String,
+      params: js.Array[js.Any],
+      cb: js.Function2[/* err */ Error, /* res */ js.Array[js.Any], Unit]
+    ): Unit = js.native
+    def query(query: Params): js.Promise[js.Array[js.Any]] = js.native
+    def query(query: Params, cb: js.Function2[/* err */ Error, /* res */ js.Array[js.Any], Unit]): Unit = js.native
+    def query(query: Params, params: js.Array[js.Any]): js.Promise[js.Array[js.Any]] = js.native
     
     def queryResult(query: String): js.Promise[ODBCResult] = js.native
     def queryResult(query: String, cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]): Unit = js.native
-    def queryResult(query: String, params: js.Array[_]): js.Promise[ODBCResult] = js.native
-    def queryResult(query: String, params: js.Array[_], cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]): Unit = js.native
+    def queryResult(query: String, params: js.Array[js.Any]): js.Promise[ODBCResult] = js.native
+    def queryResult(
+      query: String,
+      params: js.Array[js.Any],
+      cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]
+    ): Unit = js.native
     def queryResult(query: Params, cb: js.Function2[/* err */ Error, /* res */ ODBCResult, Unit]): Unit = js.native
     
     def queryResultSync(query: String): ODBCResult = js.native
-    def queryResultSync(query: String, params: js.Array[_]): ODBCResult = js.native
+    def queryResultSync(query: String, params: js.Array[js.Any]): ODBCResult = js.native
     def queryResultSync(query: Params): ODBCResult = js.native
-    def queryResultSync(query: Params, params: js.Array[_]): ODBCResult = js.native
+    def queryResultSync(query: Params, params: js.Array[js.Any]): ODBCResult = js.native
     
-    def queryStream(sql: String, params: js.Array[_]): js.Any = js.native
+    def queryStream(sql: String, params: js.Array[js.Any]): js.Any = js.native
     
-    def querySync(query: String): js.Array[_] = js.native
-    def querySync(query: String, params: js.Array[_]): js.Array[_] = js.native
-    def querySync(query: Params): js.Array[_] = js.native
-    def querySync(query: Params, params: js.Array[_]): js.Array[_] = js.native
+    def querySync(query: String): js.Array[js.Any] = js.native
+    def querySync(query: String, params: js.Array[js.Any]): js.Array[js.Any] = js.native
+    def querySync(query: Params): js.Array[js.Any] = js.native
+    def querySync(query: Params, params: js.Array[js.Any]): js.Array[js.Any] = js.native
     
     @JSName("queue")
-    var queue_Database: SimpleQueue | js.Array[_] = js.native
+    var queue_Database: SimpleQueue | js.Array[js.Any] = js.native
     
     def rollbackTransaction(): js.Promise[Unit] = js.native
     def rollbackTransaction(cb: js.Function2[/* err */ Error, /* res */ js.Any, Unit]): Unit = js.native
@@ -236,112 +243,112 @@ object mod {
       schema: String,
       table: String,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: String,
       schema: String,
       table: String,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: String,
       schema: String,
       table: Null,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: String,
       schema: String,
       table: Null,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: String,
       schema: Null,
       table: String,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: String,
       schema: Null,
       table: String,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: String,
       schema: Null,
       table: Null,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: String,
       schema: Null,
       table: Null,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: String,
       table: String,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: String,
       table: String,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: String,
       table: Null,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: String,
       table: Null,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: Null,
       table: String,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: Null,
       table: String,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: Null,
       table: Null,
       `type`: String,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
     def tables(
       catalog: Null,
       schema: Null,
       table: Null,
       `type`: Null,
-      cb: js.Function2[/* error */ Error, /* res */ js.Array[_], Unit]
+      cb: js.Function2[/* error */ Error, /* res */ js.Array[js.Any], Unit]
     ): Unit = js.native
   }
   
@@ -395,76 +402,78 @@ object mod {
     
     def closeSync(): Unit = js.native
     
-    def fetchAllSync(): js.Array[_] = js.native
+    def fetchAllSync(): js.Array[js.Any] = js.native
     
     var fetchMode: Double = js.native
     
-    def fetchSync(): js.Array[_] = js.native
+    def fetchSync(): js.Array[js.Any] = js.native
     
-    def moreResultsSync(): js.Array[_] = js.native
+    def moreResultsSync(): js.Array[js.Any] = js.native
   }
   
   @JSImport("ibm_db", "ODBCStatement")
   @js.native
   class ODBCStatement () extends StObject {
     
-    def _bind(params: js.Array[_], cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def _bind(params: js.Array[js.Any], cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
-    def _bindSync(ary: js.Array[_]): Unit = js.native
+    def _bindSync(ary: js.Array[js.Any]): Unit = js.native
     
     // TODO: type of outparams is unknown
-    def _execute(cb: js.Function2[/* err */ Error, /* result */ js.Array[_], Unit]): Unit = js.native
+    def _execute(cb: js.Function2[/* err */ Error, /* result */ js.Array[js.Any], Unit]): Unit = js.native
     
-    def _executeDirect(sql: String, cb: js.Function2[/* err */ Error, /* result */ js.Array[_], Unit]): Unit = js.native
+    def _executeDirect(sql: String, cb: js.Function2[/* err */ Error, /* result */ js.Array[js.Any], Unit]): Unit = js.native
     
     // _executeDirectSync // TODO: Add missing piece
-    def _executeNonQuery(cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
+    def _executeNonQuery(cb: js.Function2[/* err */ Error, /* res */ js.Array[js.Any], Unit]): Unit = js.native
     
     def _executeSync(): ODBCResult = js.native
-    def _executeSync(params: js.Array[_]): ODBCResult = js.native
+    def _executeSync(params: js.Array[js.Any]): ODBCResult = js.native
     
     // _executeNonQuerySync // TODO: Add missing piece
     def _prepare(sql: String, cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
-    def bind(ary: js.Array[_], cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
+    def bind(ary: js.Array[js.Any], cb: js.Function1[/* err */ Error, Unit]): Unit = js.native
     
     var bindQueue: SimpleQueue = js.native
     
-    def bindSync(ary: js.Array[_]): Unit = js.native
+    def bindSync(ary: js.Array[js.Any]): Unit = js.native
     
     // TODO: type of outparams is unknown
-    def execute(cb: js.Function3[/* err */ Error, /* result */ js.Array[_], /* outparams */ js.Any, Unit]): Unit = js.native
-    def execute(params: js.Array[_]): js.Promise[Outparams] = js.native
+    def execute(cb: js.Function3[/* err */ Error, /* result */ js.Array[js.Any], /* outparams */ js.Any, Unit]): Unit = js.native
+    def execute(params: js.Array[js.Any]): js.Promise[Outparams] = js.native
     def execute(
-      params: js.Array[_],
-      cb: js.Function3[/* err */ Error, /* result */ js.Array[_], /* outparams */ js.Any, Unit]
+      params: js.Array[js.Any],
+      cb: js.Function3[/* err */ Error, /* result */ js.Array[js.Any], /* outparams */ js.Any, Unit]
     ): Unit = js.native
     
-    def executeDirect(sql: String, cb: js.Function2[/* err */ Error, /* result */ js.Array[_], Unit]): Unit = js.native
+    def executeDirect(sql: String, cb: js.Function2[/* err */ Error, /* result */ js.Array[js.Any], Unit]): Unit = js.native
     
     def executeNonQuery(): js.Promise[Unit] = js.native
-    def executeNonQuery(cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
-    def executeNonQuery(params: js.Array[_]): js.Promise[Unit] = js.native
-    def executeNonQuery(params: js.Array[_], cb: js.Function2[/* err */ Error, /* res */ js.Array[_], Unit]): Unit = js.native
+    def executeNonQuery(cb: js.Function2[/* err */ Error, /* res */ js.Array[js.Any], Unit]): Unit = js.native
+    def executeNonQuery(params: js.Array[js.Any]): js.Promise[Unit] = js.native
+    def executeNonQuery(params: js.Array[js.Any], cb: js.Function2[/* err */ Error, /* res */ js.Array[js.Any], Unit]): Unit = js.native
     
     def executeSync(): ODBCResult = js.native
-    def executeSync(params: js.Array[_]): ODBCResult = js.native
+    def executeSync(params: js.Array[js.Any]): ODBCResult = js.native
     
-    def prepare(sql: String, cb: js.Function2[/* err */ Error, /* result */ js.Array[_], Unit]): Unit = js.native
+    def prepare(sql: String, cb: js.Function2[/* err */ Error, /* result */ js.Array[js.Any], Unit]): Unit = js.native
     
     var queue: SimpleQueue = js.native
   }
   
   @JSImport("ibm_db", "Pool")
   @js.native
-  class Pool () extends PoolOptions {
+  class Pool ()
+    extends StObject
+       with PoolOptions {
     def this(options: PoolOptions) = this()
     
     var availablePool: js.Object = js.native
     
     def cleanup(connStr: String): Boolean = js.native
     
-    def close(cb: js.Function2[/* foo */ js.Any, /* bar */ js.Any, _]): Unit = js.native
+    def close(cb: js.Function2[/* foo */ js.Any, /* bar */ js.Any, js.Any]): Unit = js.native
     
     var index: Double = js.native
     
@@ -521,7 +530,7 @@ object mod {
     
     var executing: Boolean = js.native
     
-    var fifo: js.Array[_] = js.native
+    var fifo: js.Array[js.Any] = js.native
     
     def maybeNext(): Unit = js.native
     
@@ -530,70 +539,54 @@ object mod {
     def push(fn: js.Function2[/* foo */ js.Any, /* bar */ js.Any, Unit]): Unit = js.native
   }
   
-  @JSImport("ibm_db", "close")
-  @js.native
-  def close(db: Database): Unit = js.native
+  @scala.inline
+  def close(db: Database): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("close")(db.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ibm_db", "debug")
-  @js.native
-  def debug(x: Boolean): Unit = js.native
+  @scala.inline
+  def debug(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("debug")(x.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ibm_db", "getElapsedTime")
-  @js.native
-  def getElapsedTime(): String = js.native
+  @scala.inline
+  def getElapsedTime(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getElapsedTime")().asInstanceOf[String]
   
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: String): js.Promise[Database] = js.native
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: String, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = js.native
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: String, options: Options): js.Promise[Database] = js.native
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: String, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = js.native
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: ConnStr): js.Promise[Database] = js.native
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: ConnStr, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = js.native
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: ConnStr, options: Options): js.Promise[Database] = js.native
-  @JSImport("ibm_db", "open")
-  @js.native
-  def open(connStr: ConnStr, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = js.native
+  @scala.inline
+  def open(connStr: String): js.Promise[Database] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Database]]
+  @scala.inline
+  def open(connStr: String, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(connStr: String, options: Options): js.Promise[Database] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Database]]
+  @scala.inline
+  def open(connStr: String, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(connStr: ConnStr): js.Promise[Database] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Database]]
+  @scala.inline
+  def open(connStr: ConnStr, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def open(connStr: ConnStr, options: Options): js.Promise[Database] = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Database]]
+  @scala.inline
+  def open(connStr: ConnStr, options: Options, cb: js.Function2[/* err */ Error, /* db */ Database, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("open")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ibm_db", "openSync")
-  @js.native
-  def openSync(connStr: String): Database = js.native
-  @JSImport("ibm_db", "openSync")
-  @js.native
-  def openSync(connStr: String, options: Options): Database = js.native
-  @JSImport("ibm_db", "openSync")
-  @js.native
-  def openSync(connStr: ConnStr): Database = js.native
-  @JSImport("ibm_db", "openSync")
-  @js.native
-  def openSync(connStr: ConnStr, options: Options): Database = js.native
+  @scala.inline
+  def openSync(connStr: String): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any]).asInstanceOf[Database]
+  @scala.inline
+  def openSync(connStr: String, options: Options): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Database]
+  @scala.inline
+  def openSync(connStr: ConnStr): Database = ^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any]).asInstanceOf[Database]
+  @scala.inline
+  def openSync(connStr: ConnStr, options: Options): Database = (^.asInstanceOf[js.Dynamic].applyDynamic("openSync")(connStr.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Database]
   
-  @js.native
   trait ConnStr extends StObject {
     
-    var DATABASE: String = js.native
+    var DATABASE: String
     
-    var HOSTNAME: String = js.native
+    var HOSTNAME: String
     
-    var PORT: Double | String = js.native
+    var PORT: Double | String
     
-    var PROTOCOL: String = js.native
+    var PROTOCOL: String
     
-    var PWD: String = js.native
+    var PWD: String
     
-    var UID: String = js.native
+    var UID: String
   }
   object ConnStr {
     
@@ -633,18 +626,17 @@ object mod {
     }
   }
   
-  @js.native
   trait DescribeObject extends StObject {
     
-    var column: js.UndefOr[String] = js.native
+    var column: js.UndefOr[String] = js.undefined
     
-    var database: String = js.native
+    var database: String
     
-    var schema: js.UndefOr[String] = js.native
+    var schema: js.UndefOr[String] = js.undefined
     
-    var table: js.UndefOr[String] = js.native
+    var table: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object DescribeObject {
     
@@ -686,20 +678,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var connectTimeout: js.UndefOr[Double | Null] = js.native
+    var connectTimeout: js.UndefOr[Double | Null] = js.undefined
     
-    var connected: js.UndefOr[Boolean] = js.native
+    var connected: js.UndefOr[Boolean] = js.undefined
     
-    var fetchMode: js.UndefOr[Double | Null] = js.native
+    var fetchMode: js.UndefOr[Double | Null] = js.undefined
     
-    var odbc: js.UndefOr[ODBC] = js.native
+    var odbc: js.UndefOr[ODBC] = js.undefined
     
-    var queue: js.UndefOr[SimpleQueue | js.Array[_]] = js.native
+    var queue: js.UndefOr[SimpleQueue | js.Array[js.Any]] = js.undefined
     
-    var systemNaming: js.UndefOr[Boolean] = js.native
+    var systemNaming: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     
@@ -743,7 +734,7 @@ object mod {
       def setOdbcUndefined: Self = StObject.set(x, "odbc", js.undefined)
       
       @scala.inline
-      def setQueue(value: SimpleQueue | js.Array[_]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
+      def setQueue(value: SimpleQueue | js.Array[js.Any]): Self = StObject.set(x, "queue", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setQueueUndefined: Self = StObject.set(x, "queue", js.undefined)
@@ -759,18 +750,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PoolOptions extends StObject {
     
-    var autoCleanIdle: js.UndefOr[Boolean] = js.native
+    var autoCleanIdle: js.UndefOr[Boolean] = js.undefined
     
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
-    var idleTimeout: js.UndefOr[Double] = js.native
+    var idleTimeout: js.UndefOr[Double] = js.undefined
     
-    var maxPoolSize: js.UndefOr[Double] = js.native
+    var maxPoolSize: js.UndefOr[Double] = js.undefined
     
-    var systemNaming: js.UndefOr[js.Any] = js.native
+    var systemNaming: js.UndefOr[js.Any] = js.undefined
   }
   object PoolOptions {
     

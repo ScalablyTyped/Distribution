@@ -3,33 +3,31 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Artifact extends StObject {
   
   /**
     * Gets or sets alias.
     */
-  var alias: String = js.native
+  var alias: String
   
   /**
     * Gets or sets definition reference. e.g. {"project":{"id":"fed755ea-49c5-4399-acea-fd5b5aa90a6c","name":"myProject"},"definition":{"id":"1","name":"mybuildDefinition"},"connection":{"id":"1","name":"myConnection"}}
     */
-  var definitionReference: StringDictionary[ArtifactSourceReference] = js.native
+  var definitionReference: StringDictionary[ArtifactSourceReference]
   
   /**
     * Gets or sets as artifact is primary or not.
     */
-  var isPrimary: Boolean = js.native
+  var isPrimary: Boolean
   
-  var sourceId: String = js.native
+  var sourceId: String
   
   /**
     * Gets or sets type. It can have value as 'Build', 'Jenkins', 'GitHub', 'Nuget', 'Team Build (external)', 'ExternalTFSBuild', 'Git', 'TFVC', 'ExternalTfsXamlBuild'.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object Artifact {
   

@@ -2,13 +2,11 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Per-project settings for the Tool Results service.
   */
-@js.native
 trait SchemaProjectSettings extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait SchemaProjectSettings extends StObject {
     * By default, this is unset.  In update request: optional In response:
     * optional
     */
-  var defaultBucket: js.UndefOr[String] = js.native
+  var defaultBucket: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the project&#39;s settings.  Always of the form:
     * projects/{project-id}/settings  In update request: never set In response:
     * always set
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object SchemaProjectSettings {
   

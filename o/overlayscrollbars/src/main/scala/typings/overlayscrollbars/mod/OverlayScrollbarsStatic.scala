@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.NodeListOf
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -47,9 +46,9 @@ trait OverlayScrollbarsStatic extends StObject {
   def defaultOptions(): Options = js.native
   def defaultOptions(newDefaultOptions: Options): Unit = js.native
   
-  def extension(): Dictindex = js.native
-  def extension(extensionName: String): ExtensionInfo = js.native
-  def extension(
+  def `extension`(): Dictindex = js.native
+  def `extension`(extensionName: String): ExtensionInfo = js.native
+  def `extension`(
     extensionName: String,
     extensionFactory: js.ThisFunction3[
       /* this */ OverlayScrollbars, 
@@ -59,7 +58,7 @@ trait OverlayScrollbarsStatic extends StObject {
       Extension
     ]
   ): Unit = js.native
-  def extension(
+  def `extension`(
     extensionName: String,
     extensionFactory: js.ThisFunction3[
       /* this */ OverlayScrollbars, 

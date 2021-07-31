@@ -2,10 +2,8 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaTeardownTag extends StObject {
   
   /**
@@ -13,12 +11,12 @@ trait SchemaTeardownTag extends StObject {
     * successfully. If false, fire the teardown tag regardless of main tag
     * firing status.
     */
-  var stopTeardownOnFailure: js.UndefOr[Boolean] = js.native
+  var stopTeardownOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the teardown tag.
     */
-  var tagName: js.UndefOr[String] = js.native
+  var tagName: js.UndefOr[String] = js.undefined
 }
 object SchemaTeardownTag {
   

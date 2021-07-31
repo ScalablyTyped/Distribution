@@ -5,24 +5,22 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.image
 import typings.wechatMiniprogram.wechatMiniprogramStrings.video
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 返回选择的文件的本地临时文件对象数组 */
-@js.native
 trait ChooseFile extends StObject {
   
   /** 选择的文件名称 */
-  var name: String = js.native
+  var name: String
   
   /** 本地临时文件路径 (本地路径) */
-  var path: String = js.native
+  var path: String
   
   /** 本地临时文件大小，单位 B */
-  var size: Double = js.native
+  var size: Double
   
   /** 选择的文件的会话发送时间，Unix时间戳，工具暂不支持此属性 */
-  var time: Double = js.native
+  var time: Double
   
   /** 选择的文件类型
     *
@@ -30,7 +28,7 @@ trait ChooseFile extends StObject {
     * - 'video': 选择了视频文件;
     * - 'image': 选择了图片文件;
     * - 'file': 选择了除图片和视频的文件; */
-  var `type`: video | image | file = js.native
+  var `type`: video | image | file
 }
 object ChooseFile {
   

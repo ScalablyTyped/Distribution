@@ -2,17 +2,15 @@ package typings.reactNativeFirebase.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Priority extends StObject {
   
   @JSName(".priority")
-  var Dotpriority: String | Double | Null = js.native
+  var Dotpriority: String | Double | Null
   
   @JSName(".value")
-  var Dotvalue: js.Any = js.native
+  var Dotvalue: js.Any
 }
 object Priority {
   
@@ -20,6 +18,7 @@ object Priority {
   def apply(Dotvalue: js.Any): Priority = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic(".value")(Dotvalue.asInstanceOf[js.Any])
+    __obj.updateDynamic(".priority")(null)
     __obj.asInstanceOf[Priority]
   }
   

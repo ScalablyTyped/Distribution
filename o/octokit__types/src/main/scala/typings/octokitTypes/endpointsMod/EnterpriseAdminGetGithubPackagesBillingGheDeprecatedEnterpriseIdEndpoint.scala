@@ -2,17 +2,15 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint extends StObject {
   
   /**
     * The slug version of the enterprise name. You can also substitute this value with the enterprise id.
     *  @deprecated "enterprise_id" is deprecated. Use "enterprise" instead
     */
-  var enterprise_id: js.UndefOr[String] = js.native
+  var enterprise_id: js.UndefOr[String] = js.undefined
 }
 object EnterpriseAdminGetGithubPackagesBillingGheDeprecatedEnterpriseIdEndpoint {
   

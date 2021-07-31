@@ -2,21 +2,19 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterDbRevisionsMessage extends StObject {
   
   /**
     * A list of revisions.
     */
-  var ClusterDbRevisions: js.UndefOr[ClusterDbRevisionsList] = js.native
+  var ClusterDbRevisions: js.UndefOr[ClusterDbRevisionsList] = js.undefined
   
   /**
     * A string representing the starting point for the next set of revisions. If a value is returned in a response, you can retrieve the next set of revisions by providing the value in the marker parameter and retrying the command. If the marker field is empty, all revisions have already been returned.
     */
-  var Marker: js.UndefOr[String] = js.native
+  var Marker: js.UndefOr[String] = js.undefined
 }
 object ClusterDbRevisionsMessage {
   

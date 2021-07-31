@@ -7,14 +7,14 @@ import typings.activexLibreoffice.com_.sun.star.embed.XStorage
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @since LibreOffice 4.2 */
-@js.native
-trait ModuleAcceleratorConfiguration extends XAcceleratorConfiguration {
+trait ModuleAcceleratorConfiguration
+  extends StObject
+     with XAcceleratorConfiguration {
   
-  def createWithModuleIdentifier(ModuleIdentifier: String): Unit = js.native
+  def createWithModuleIdentifier(ModuleIdentifier: String): Unit
 }
 object ModuleAcceleratorConfiguration {
   
@@ -27,7 +27,7 @@ object ModuleAcceleratorConfiguration {
     getAllKeyEvents: () => SafeArray[KeyEvent],
     getCommandByKeyEvent: KeyEvent => String,
     getKeyEventsByCommand: String => SafeArray[KeyEvent],
-    getPreferredKeyEventsForCommandList: SeqEquiv[String] => SafeArray[_],
+    getPreferredKeyEventsForCommandList: SeqEquiv[String] => SafeArray[js.Any],
     hasStorage: () => Boolean,
     isModified: () => Boolean,
     isReadOnly: () => Boolean,

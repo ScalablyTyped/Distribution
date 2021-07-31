@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientGameservices.gapi.client.gameservices
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Schedule extends StObject {
   
   /** The duration for the cron job event. The duration of the event is effective after the cron job's start time. */
-  var cronJobDuration: js.UndefOr[String] = js.native
+  var cronJobDuration: js.UndefOr[String] = js.undefined
   
   /** The cron definition of the scheduled event. See https://en.wikipedia.org/wiki/Cron. Cron spec specifies the local time as defined by the realm. */
-  var cronSpec: js.UndefOr[String] = js.native
+  var cronSpec: js.UndefOr[String] = js.undefined
   
   /** The end time of the event. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** The start time of the event. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object Schedule {
   

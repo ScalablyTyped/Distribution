@@ -2,38 +2,36 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 4. Operating System
-@js.native
 trait OsData extends StObject {
   
-  var arch: String = js.native
+  var arch: String
   
-  var build: String = js.native
+  var build: String
   
-  var codename: String = js.native
+  var codename: String
   
-  var codepage: String = js.native
+  var codepage: String
   
-  var distro: String = js.native
+  var distro: String
   
-  var hostname: String = js.native
+  var hostname: String
   
-  var kernel: String = js.native
+  var kernel: String
   
-  var logofile: String = js.native
+  var logofile: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var release: String = js.native
+  var release: String
   
-  var serial: String = js.native
+  var serial: String
   
-  var servicepack: String = js.native
+  var servicepack: String
   
-  var uefi: Boolean = js.native
+  var uefi: Boolean
 }
 object OsData {
   

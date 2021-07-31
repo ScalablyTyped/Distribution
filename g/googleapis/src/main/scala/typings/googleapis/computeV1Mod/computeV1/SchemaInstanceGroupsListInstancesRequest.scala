@@ -2,10 +2,8 @@ package typings.googleapis.computeV1Mod.computeV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaInstanceGroupsListInstancesRequest extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaInstanceGroupsListInstancesRequest extends StObject {
     * options are ALL or RUNNING. If you do not specify this parameter the list
     * includes all instances regardless of their state.
     */
-  var instanceState: js.UndefOr[String] = js.native
+  var instanceState: js.UndefOr[String] = js.undefined
 }
 object SchemaInstanceGroupsListInstancesRequest {
   

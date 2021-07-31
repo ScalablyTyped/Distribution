@@ -2,111 +2,109 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alarm extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the alarm.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The arithmetic operation used when comparing the specified statistic and threshold.
     */
-  var comparisonOperator: js.UndefOr[ComparisonOperator] = js.native
+  var comparisonOperator: js.UndefOr[ComparisonOperator] = js.undefined
   
   /**
     * The contact protocols for the alarm, such as Email, SMS (text messaging), or both.
     */
-  var contactProtocols: js.UndefOr[ContactProtocolsList] = js.native
+  var contactProtocols: js.UndefOr[ContactProtocolsList] = js.undefined
   
   /**
     * The timestamp when the alarm was created.
     */
-  var createdAt: js.UndefOr[IsoDate] = js.native
+  var createdAt: js.UndefOr[IsoDate] = js.undefined
   
   /**
     * The number of data points that must not within the specified threshold to trigger the alarm.
     */
-  var datapointsToAlarm: js.UndefOr[integer] = js.native
+  var datapointsToAlarm: js.UndefOr[integer] = js.undefined
   
   /**
     * The number of periods over which data is compared to the specified threshold.
     */
-  var evaluationPeriods: js.UndefOr[integer] = js.native
+  var evaluationPeriods: js.UndefOr[integer] = js.undefined
   
   /**
     * An object that lists information about the location of the alarm.
     */
-  var location: js.UndefOr[ResourceLocation] = js.native
+  var location: js.UndefOr[ResourceLocation] = js.undefined
   
   /**
     * The name of the metric associated with the alarm.
     */
-  var metricName: js.UndefOr[MetricName] = js.native
+  var metricName: js.UndefOr[MetricName] = js.undefined
   
   /**
     * An object that lists information about the resource monitored by the alarm.
     */
-  var monitoredResourceInfo: js.UndefOr[MonitoredResourceInfo] = js.native
+  var monitoredResourceInfo: js.UndefOr[MonitoredResourceInfo] = js.undefined
   
   /**
     * The name of the alarm.
     */
-  var name: js.UndefOr[ResourceName] = js.native
+  var name: js.UndefOr[ResourceName] = js.undefined
   
   /**
     * Indicates whether the alarm is enabled.
     */
-  var notificationEnabled: js.UndefOr[Boolean] = js.native
+  var notificationEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The alarm states that trigger a notification.
     */
-  var notificationTriggers: js.UndefOr[NotificationTriggerList] = js.native
+  var notificationTriggers: js.UndefOr[NotificationTriggerList] = js.undefined
   
   /**
     * The period, in seconds, over which the statistic is applied.
     */
-  var period: js.UndefOr[MetricPeriod] = js.native
+  var period: js.UndefOr[MetricPeriod] = js.undefined
   
   /**
     * The Lightsail resource type (e.g., Alarm).
     */
-  var resourceType: js.UndefOr[ResourceType] = js.native
+  var resourceType: js.UndefOr[ResourceType] = js.undefined
   
   /**
     * The current state of the alarm. An alarm has the following possible states:    ALARM - The metric is outside of the defined threshold.    INSUFFICIENT_DATA - The alarm has just started, the metric is not available, or not enough data is available for the metric to determine the alarm state.    OK - The metric is within the defined threshold.  
     */
-  var state: js.UndefOr[AlarmState] = js.native
+  var state: js.UndefOr[AlarmState] = js.undefined
   
   /**
     * The statistic for the metric associated with the alarm. The following statistics are available:    Minimum - The lowest value observed during the specified period. Use this value to determine low volumes of activity for your application.    Maximum - The highest value observed during the specified period. Use this value to determine high volumes of activity for your application.    Sum - All values submitted for the matching metric added together. You can use this statistic to determine the total volume of a metric.    Average - The value of Sum / SampleCount during the specified period. By comparing this statistic with the Minimum and Maximum values, you can determine the full scope of a metric and how close the average use is to the Minimum and Maximum values. This comparison helps you to know when to increase or decrease your resources.    SampleCount - The count, or number, of data points used for the statistical calculation.  
     */
-  var statistic: js.UndefOr[MetricStatistic] = js.native
+  var statistic: js.UndefOr[MetricStatistic] = js.undefined
   
   /**
     * The support code. Include this code in your email to support when you have questions about your Lightsail alarm. This code enables our support team to look up your Lightsail information more easily.
     */
-  var supportCode: js.UndefOr[String] = js.native
+  var supportCode: js.UndefOr[String] = js.undefined
   
   /**
     * The value against which the specified statistic is compared.
     */
-  var threshold: js.UndefOr[double] = js.native
+  var threshold: js.UndefOr[double] = js.undefined
   
   /**
     * Specifies how the alarm handles missing data points. An alarm can treat missing data in the following ways:    breaching - Assume the missing data is not within the threshold. Missing data counts towards the number of times the metric is not within the threshold.    notBreaching - Assume the missing data is within the threshold. Missing data does not count towards the number of times the metric is not within the threshold.    ignore - Ignore the missing data. Maintains the current alarm state.    missing - Missing data is treated as missing.  
     */
-  var treatMissingData: js.UndefOr[TreatMissingData] = js.native
+  var treatMissingData: js.UndefOr[TreatMissingData] = js.undefined
   
   /**
     * The unit of the metric associated with the alarm.
     */
-  var unit: js.UndefOr[MetricUnit] = js.native
+  var unit: js.UndefOr[MetricUnit] = js.undefined
 }
 object Alarm {
   

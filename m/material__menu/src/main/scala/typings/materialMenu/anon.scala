@@ -4,23 +4,21 @@ import typings.materialMenu.typesMod.MDCMenuItemEventDetail
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ARIACHECKEDATTR extends StObject {
     
-    var ARIA_CHECKED_ATTR: String = js.native
+    var ARIA_CHECKED_ATTR: String
     
-    var ARIA_DISABLED_ATTR: String = js.native
+    var ARIA_DISABLED_ATTR: String
     
-    var CHECKBOX_SELECTOR: String = js.native
+    var CHECKBOX_SELECTOR: String
     
-    var LIST_SELECTOR: String = js.native
+    var LIST_SELECTOR: String
     
-    var SELECTED_EVENT: String = js.native
+    var SELECTED_EVENT: String
   }
   object ARIACHECKEDATTR {
     
@@ -56,10 +54,9 @@ object anon {
     }
   }
   
-  @js.native
   trait FOCUSROOTINDEX extends StObject {
     
-    var FOCUS_ROOT_INDEX: Double = js.native
+    var FOCUS_ROOT_INDEX: Double
   }
   object FOCUSROOTINDEX {
     
@@ -77,14 +74,13 @@ object anon {
     }
   }
   
-  @js.native
   trait MENUSELECTEDLISTITEM extends StObject {
     
-    var MENU_SELECTED_LIST_ITEM: String = js.native
+    var MENU_SELECTED_LIST_ITEM: String
     
-    var MENU_SELECTION_GROUP: String = js.native
+    var MENU_SELECTION_GROUP: String
     
-    var ROOT: String = js.native
+    var ROOT: String
   }
   object MENUSELECTEDLISTITEM {
     
@@ -109,34 +105,33 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/menu.@material/menu/adapter.MDCMenuAdapter> */
-  @js.native
   trait PartialMDCMenuAdapter extends StObject {
     
-    var addAttributeToElementAtIndex: js.UndefOr[js.Function3[/* index */ Double, /* attr */ String, /* value */ String, Unit]] = js.native
+    var addAttributeToElementAtIndex: js.UndefOr[js.Function3[/* index */ Double, /* attr */ String, /* value */ String, Unit]] = js.undefined
     
-    var addClassToElementAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.native
+    var addClassToElementAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.undefined
     
-    var closeSurface: js.UndefOr[js.Function1[/* skipRestoreFocus */ js.UndefOr[Boolean], Unit]] = js.native
+    var closeSurface: js.UndefOr[js.Function1[/* skipRestoreFocus */ js.UndefOr[Boolean], Unit]] = js.undefined
     
-    var elementContainsClass: js.UndefOr[js.Function2[/* element */ Element, /* className */ String, Boolean]] = js.native
+    var elementContainsClass: js.UndefOr[js.Function2[/* element */ Element, /* className */ String, Boolean]] = js.undefined
     
-    var focusItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.native
+    var focusItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Unit]] = js.undefined
     
-    var focusListRoot: js.UndefOr[js.Function0[Unit]] = js.native
+    var focusListRoot: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var getElementIndex: js.UndefOr[js.Function1[/* element */ Element, Double]] = js.native
+    var getElementIndex: js.UndefOr[js.Function1[/* element */ Element, Double]] = js.undefined
     
-    var getMenuItemCount: js.UndefOr[js.Function0[Double]] = js.native
+    var getMenuItemCount: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getSelectedSiblingOfItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.native
+    var getSelectedSiblingOfItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Double]] = js.undefined
     
-    var isSelectableItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.native
+    var isSelectableItemAtIndex: js.UndefOr[js.Function1[/* index */ Double, Boolean]] = js.undefined
     
-    var notifySelected: js.UndefOr[js.Function1[/* evtData */ MDCMenuItemEventDetail, Unit]] = js.native
+    var notifySelected: js.UndefOr[js.Function1[/* evtData */ MDCMenuItemEventDetail, Unit]] = js.undefined
     
-    var removeAttributeFromElementAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* attr */ String, Unit]] = js.native
+    var removeAttributeFromElementAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* attr */ String, Unit]] = js.undefined
     
-    var removeClassFromElementAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.native
+    var removeClassFromElementAtIndex: js.UndefOr[js.Function2[/* index */ Double, /* className */ String, Unit]] = js.undefined
   }
   object PartialMDCMenuAdapter {
     
@@ -230,16 +225,15 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/menu-surface.@material/menu-surface/types.MDCMenuDistance> */
-  @js.native
   trait PartialMDCMenuDistance extends StObject {
     
-    var bottom: js.UndefOr[Double] = js.native
+    var bottom: js.UndefOr[Double] = js.undefined
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var right: js.UndefOr[Double] = js.native
+    var right: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object PartialMDCMenuDistance {
     

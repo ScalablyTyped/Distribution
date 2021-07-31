@@ -5,22 +5,19 @@ import typings.std.HTMLElement
 import typings.vscodeNotebookRenderer.anon.OutputId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object global {
     
-    @JSGlobal("acquireNotebookRendererApi")
-    @js.native
-    def acquireNotebookRendererApi(rendererId: String): NotebookRendererApi[_] = js.native
+    @scala.inline
+    def acquireNotebookRendererApi(rendererId: String): NotebookRendererApi[js.Any] = js.Dynamic.global.applyDynamic("acquireNotebookRendererApi")(rendererId.asInstanceOf[js.Any]).asInstanceOf[NotebookRendererApi[js.Any]]
   }
   
-  @js.native
   trait Disposable extends StObject {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object Disposable {
     
@@ -38,13 +35,12 @@ object mod {
     }
   }
   
-  @js.native
   trait NotebookCellOutputMetadata extends StObject {
     
     /**
       * Additional attributes of a cell metadata.
       */
-    var custom: js.UndefOr[StringDictionary[js.Any]] = js.native
+    var custom: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   }
   object NotebookCellOutputMetadata {
     
@@ -65,12 +61,11 @@ object mod {
     }
   }
   
-  @js.native
   trait NotebookOutput extends StObject {
     
-    var data: StringDictionary[js.Any] = js.native
+    var data: StringDictionary[js.Any]
     
-    var metadata: js.UndefOr[NotebookCellOutputMetadata] = js.native
+    var metadata: js.UndefOr[NotebookCellOutputMetadata] = js.undefined
   }
   object NotebookOutput {
     
@@ -94,16 +89,15 @@ object mod {
     }
   }
   
-  @js.native
   trait NotebookOutputEventParams extends StObject {
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var mimeType: String = js.native
+    var mimeType: String
     
-    var output: NotebookOutput = js.native
+    var output: NotebookOutput
     
-    var outputId: String = js.native
+    var outputId: String
   }
   object NotebookOutputEventParams {
     
@@ -130,85 +124,127 @@ object mod {
     }
   }
   
-  @js.native
   trait NotebookRendererApi[T] extends StObject {
     
-    def getState(): js.UndefOr[T] = js.native
+    def getState(): js.UndefOr[T]
     
     /**
       * Fired when an output is rendered. The `outputId` provided is the same
       * as the one given in `NotebookOutputRenderer.render` in the extension
       * API, and `onWillDestroyOutput`.
       */
-    def onDidCreateOutput(listener: js.Function1[/* e */ NotebookOutputEventParams, _]): Disposable = js.native
+    def onDidCreateOutput(listener: js.Function1[/* e */ NotebookOutputEventParams, js.Any]): Disposable
+    def onDidCreateOutput(listener: js.Function1[/* e */ NotebookOutputEventParams, js.Any], thisArgs: js.Any): Disposable
     def onDidCreateOutput(
-      listener: js.Function1[/* e */ NotebookOutputEventParams, _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onDidCreateOutput(listener: js.Function1[/* e */ NotebookOutputEventParams, _], thisArgs: js.Any): Disposable = js.native
-    def onDidCreateOutput(
-      listener: js.Function1[/* e */ NotebookOutputEventParams, _],
+      listener: js.Function1[/* e */ NotebookOutputEventParams, js.Any],
       thisArgs: js.Any,
       disposables: js.Array[Disposable]
-    ): Disposable = js.native
+    ): Disposable
+    def onDidCreateOutput(
+      listener: js.Function1[/* e */ NotebookOutputEventParams, js.Any],
+      thisArgs: Unit,
+      disposables: js.Array[Disposable]
+    ): Disposable
     /**
       * Fired when an output is rendered. The `outputId` provided is the same
       * as the one given in `NotebookOutputRenderer.render` in the extension
       * API, and `onWillDestroyOutput`.
       */
     @JSName("onDidCreateOutput")
-    var onDidCreateOutput_Original: VSCodeEvent[NotebookOutputEventParams] = js.native
+    var onDidCreateOutput_Original: VSCodeEvent[NotebookOutputEventParams]
     
     /**
       * Called when the renderer uses `postMessage` on the NotebookCommunication
       * instance for this renderer.
       */
-    def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, _]): Disposable = js.native
+    def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, js.Any]): Disposable
+    def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: js.Any): Disposable
     def onDidReceiveMessage(
-      listener: js.Function1[/* e */ js.Any, _],
-      thisArgs: js.UndefOr[scala.Nothing],
+      listener: js.Function1[/* e */ js.Any, js.Any],
+      thisArgs: js.Any,
       disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any): Disposable = js.native
-    def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, _], thisArgs: js.Any, disposables: js.Array[Disposable]): Disposable = js.native
+    ): Disposable
+    def onDidReceiveMessage(listener: js.Function1[/* e */ js.Any, js.Any], thisArgs: Unit, disposables: js.Array[Disposable]): Disposable
     /**
       * Called when the renderer uses `postMessage` on the NotebookCommunication
       * instance for this renderer.
       */
     @JSName("onDidReceiveMessage")
-    var onDidReceiveMessage_Original: VSCodeEvent[_] = js.native
+    var onDidReceiveMessage_Original: VSCodeEvent[js.Any]
     
     /**
       * Fired before an output is destroyed, with its output ID, or undefined if
       * all cells are about to unmount.
       */
-    def onWillDestroyOutput(listener: js.Function1[/* e */ js.UndefOr[OutputId], _]): Disposable = js.native
+    def onWillDestroyOutput(listener: js.Function1[/* e */ js.UndefOr[OutputId], js.Any]): Disposable
+    def onWillDestroyOutput(listener: js.Function1[/* e */ js.UndefOr[OutputId], js.Any], thisArgs: js.Any): Disposable
     def onWillDestroyOutput(
-      listener: js.Function1[/* e */ js.UndefOr[OutputId], _],
-      thisArgs: js.UndefOr[scala.Nothing],
-      disposables: js.Array[Disposable]
-    ): Disposable = js.native
-    def onWillDestroyOutput(listener: js.Function1[/* e */ js.UndefOr[OutputId], _], thisArgs: js.Any): Disposable = js.native
-    def onWillDestroyOutput(
-      listener: js.Function1[/* e */ js.UndefOr[OutputId], _],
+      listener: js.Function1[/* e */ js.UndefOr[OutputId], js.Any],
       thisArgs: js.Any,
       disposables: js.Array[Disposable]
-    ): Disposable = js.native
+    ): Disposable
+    def onWillDestroyOutput(
+      listener: js.Function1[/* e */ js.UndefOr[OutputId], js.Any],
+      thisArgs: Unit,
+      disposables: js.Array[Disposable]
+    ): Disposable
     /**
       * Fired before an output is destroyed, with its output ID, or undefined if
       * all cells are about to unmount.
       */
     @JSName("onWillDestroyOutput")
-    var onWillDestroyOutput_Original: VSCodeEvent[js.UndefOr[OutputId]] = js.native
+    var onWillDestroyOutput_Original: VSCodeEvent[js.UndefOr[OutputId]]
     
     /**
       * Sends a message to the renderer extension code. Can be received in
       * the `onDidReceiveMessage` event in `NotebookCommunication`.
       */
-    def postMessage(msg: js.Any): Unit = js.native
+    def postMessage(msg: js.Any): Unit
     
-    def setState(value: T): Unit = js.native
+    def setState(value: T): Unit
+  }
+  object NotebookRendererApi {
+    
+    @scala.inline
+    def apply[T](
+      getState: () => js.UndefOr[T],
+      onDidCreateOutput: (/* listener */ js.Function1[NotebookOutputEventParams, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
+      onDidReceiveMessage: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
+      onWillDestroyOutput: (/* listener */ js.Function1[js.UndefOr[OutputId], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable,
+      postMessage: js.Any => Unit,
+      setState: T => Unit
+    ): NotebookRendererApi[T] = {
+      val __obj = js.Dynamic.literal(getState = js.Any.fromFunction0(getState), onDidCreateOutput = js.Any.fromFunction3(onDidCreateOutput), onDidReceiveMessage = js.Any.fromFunction3(onDidReceiveMessage), onWillDestroyOutput = js.Any.fromFunction3(onWillDestroyOutput), postMessage = js.Any.fromFunction1(postMessage), setState = js.Any.fromFunction1(setState))
+      __obj.asInstanceOf[NotebookRendererApi[T]]
+    }
+    
+    @scala.inline
+    implicit class NotebookRendererApiMutableBuilder[Self <: NotebookRendererApi[?], T] (val x: Self & NotebookRendererApi[T]) extends AnyVal {
+      
+      @scala.inline
+      def setGetState(value: () => js.UndefOr[T]): Self = StObject.set(x, "getState", js.Any.fromFunction0(value))
+      
+      @scala.inline
+      def setOnDidCreateOutput(
+        value: (/* listener */ js.Function1[NotebookOutputEventParams, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      ): Self = StObject.set(x, "onDidCreateOutput", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnDidReceiveMessage(
+        value: (/* listener */ js.Function1[js.Any, js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      ): Self = StObject.set(x, "onDidReceiveMessage", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setOnWillDestroyOutput(
+        value: (/* listener */ js.Function1[js.UndefOr[OutputId], js.Any], /* thisArgs */ js.UndefOr[js.Any], /* disposables */ js.UndefOr[js.Array[Disposable]]) => Disposable
+      ): Self = StObject.set(x, "onWillDestroyOutput", js.Any.fromFunction3(value))
+      
+      @scala.inline
+      def setPostMessage(value: js.Any => Unit): Self = StObject.set(x, "postMessage", js.Any.fromFunction1(value))
+      
+      @scala.inline
+      def setSetState(value: T => Unit): Self = StObject.set(x, "setState", js.Any.fromFunction1(value))
+    }
   }
   
   type VSCodeEvent[T] = js.Function3[

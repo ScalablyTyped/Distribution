@@ -2,7 +2,6 @@ package typings.momentStrftime2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -11,9 +10,8 @@ object mod {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("moment-strftime2", "installTo")
-  @js.native
-  def installTo(moment: js.Object): Unit = js.native
+  @scala.inline
+  def installTo(moment: js.Object): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("installTo")(moment.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("moment-strftime2", "modifiers")
   @js.native
@@ -27,115 +25,114 @@ object mod {
   @scala.inline
   def separator_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("separator")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Modifiers_ extends StObject {
     
-    var A: String = js.native
+    var A: String
     
-    var B: String = js.native
+    var B: String
     
-    var C: js.UndefOr[String] = js.native
+    var C: js.UndefOr[String] = js.undefined
     
-    var D: String = js.native
+    var D: String
     
-    var E: js.UndefOr[String] = js.native
+    var E: js.UndefOr[String] = js.undefined
     
-    var F: String = js.native
+    var F: String
     
-    var G: js.UndefOr[String] = js.native
+    var G: js.UndefOr[String] = js.undefined
     
-    var H: String = js.native
+    var H: String
     
-    var I: String = js.native
+    var I: String
     
-    var J: js.UndefOr[String] = js.native
+    var J: js.UndefOr[String] = js.undefined
     
-    var K: js.UndefOr[String] = js.native
+    var K: js.UndefOr[String] = js.undefined
     
-    var L: String = js.native
+    var L: String
     
-    var M: String = js.native
+    var M: String
     
-    var N: js.UndefOr[String] = js.native
+    var N: js.UndefOr[String] = js.undefined
     
-    var O: js.UndefOr[String] = js.native
+    var O: js.UndefOr[String] = js.undefined
     
-    var P: String = js.native
+    var P: String
     
     @JSName("%")
-    var Percentsign: String = js.native
+    var Percentsign: String
     
-    var Q: js.UndefOr[String] = js.native
+    var Q: js.UndefOr[String] = js.undefined
     
-    var R: String = js.native
+    var R: String
     
-    var S: String = js.native
+    var S: String
     
-    var T: String = js.native
+    var T: String
     
-    var U: js.UndefOr[String] = js.native
+    var U: js.UndefOr[String] = js.undefined
     
-    var V: String = js.native
+    var V: String
     
-    var W: String = js.native
+    var W: String
     
-    var X: js.UndefOr[String] = js.native
+    var X: js.UndefOr[String] = js.undefined
     
-    var Y: String = js.native
+    var Y: String
     
-    var Z: String = js.native
+    var Z: String
     
-    var a: String = js.native
+    var a: String
     
-    var b: String = js.native
+    var b: String
     
-    var c: js.UndefOr[String] = js.native
+    var c: js.UndefOr[String] = js.undefined
     
-    var d: String = js.native
+    var d: String
     
-    var e: String = js.native
+    var e: String
     
-    var f: js.UndefOr[String] = js.native
+    var f: js.UndefOr[String] = js.undefined
     
-    var g: String = js.native
+    var g: String
     
-    var h: String = js.native
+    var h: String
     
-    var i: js.UndefOr[String] = js.native
+    var i: js.UndefOr[String] = js.undefined
     
-    var j: String = js.native
+    var j: String
     
-    var k: String = js.native
+    var k: String
     
-    var l: String = js.native
+    var l: String
     
-    var m: String = js.native
+    var m: String
     
-    var n: js.UndefOr[String] = js.native
+    var n: js.UndefOr[String] = js.undefined
     
-    var o: js.UndefOr[String] = js.native
+    var o: js.UndefOr[String] = js.undefined
     
-    var p: String = js.native
+    var p: String
     
-    var q: js.UndefOr[String] = js.native
+    var q: js.UndefOr[String] = js.undefined
     
-    var r: String = js.native
+    var r: String
     
-    var s: String = js.native
+    var s: String
     
-    var t: js.UndefOr[String] = js.native
+    var t: js.UndefOr[String] = js.undefined
     
-    var u: String = js.native
+    var u: String
     
-    var v: js.UndefOr[String] = js.native
+    var v: js.UndefOr[String] = js.undefined
     
-    var w: String = js.native
+    var w: String
     
-    var x: js.UndefOr[String] = js.native
+    var x: js.UndefOr[String] = js.undefined
     
-    var y: String = js.native
+    var y: String
     
-    var z: String = js.native
+    var z: String
   }
   object Modifiers_ {
     
@@ -312,10 +309,9 @@ object mod {
   /* augmented module */
   object momentAugmentingMod {
     
-    @js.native
     trait Moment extends StObject {
       
-      def strftime(pattern: String): String = js.native
+      def strftime(pattern: String): String
     }
     object Moment {
       
@@ -336,10 +332,9 @@ object mod {
   
   object momentTimezoneAugmentingMod {
     
-    @js.native
     trait Moment extends StObject {
       
-      def strftime(pattern: String): String = js.native
+      def strftime(pattern: String): String
     }
     object Moment {
       

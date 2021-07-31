@@ -3,15 +3,13 @@ package typings.ckeditor.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attributes extends StObject {
   
-  var attributes: js.UndefOr[StringDictionary[String]] = js.native
+  var attributes: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var styles: js.UndefOr[StringDictionary[String]] = js.native
+  var styles: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object Attributes {
   

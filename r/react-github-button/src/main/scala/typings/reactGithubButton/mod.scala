@@ -7,7 +7,6 @@ import typings.reactGithubButton.reactGithubButtonStrings.stargazers
 import typings.reactGithubButton.reactGithubButtonStrings.watchers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,28 +18,27 @@ object mod {
   
   type GitHubButton = Component[ReactGitHubButtonProps, js.Object, js.Any]
   
-  @js.native
   trait ReactGitHubButtonProps extends StObject {
     
     /**
       * Your GitHub id or organization name.
       */
-    var namespace: String = js.native
+    var namespace: String
     
     /**
       * The name of your repository.
       */
-    var repo: String = js.native
+    var repo: String
     
     /**
       * The size of the button. Leave undefined for default.
       */
-    var size: js.UndefOr[large] = js.native
+    var size: js.UndefOr[large] = js.undefined
     
     /**
       * The type of information to display
       */
-    var `type`: stargazers | watchers | forks = js.native
+    var `type`: stargazers | watchers | forks
   }
   object ReactGitHubButtonProps {
     

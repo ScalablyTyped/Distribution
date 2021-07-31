@@ -2,18 +2,16 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object defining the event being created. */
-@js.native
 trait CreateEventResponse extends StObject {
   
   /** Query event data object. */
-  var data: js.UndefOr[EventData] = js.native
+  var data: js.UndefOr[EventData] = js.undefined
   
   /** The event type that was created. */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object CreateEventResponse {
   

@@ -2,17 +2,15 @@ package typings.activexLibreoffice.com_.sun.star.rendering
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RGBColor extends StObject {
   
-  var Blue: ColorComponent = js.native
+  var Blue: ColorComponent
   
-  var Green: ColorComponent = js.native
+  var Green: ColorComponent
   
-  var Red: ColorComponent = js.native
+  var Red: ColorComponent
 }
 object RGBColor {
   

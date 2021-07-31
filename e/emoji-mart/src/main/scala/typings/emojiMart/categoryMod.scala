@@ -7,7 +7,6 @@ import typings.emojiMart.sharedPropsMod.I18n
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object categoryMod {
@@ -19,26 +18,25 @@ object categoryMod {
   
   type Category = Component[Props, js.Object, js.Any]
   
-  @js.native
   trait Props extends StObject {
     
-    var emojiProps: EmojiProps = js.native
+    var emojiProps: EmojiProps
     
-    var emojis: js.UndefOr[js.Array[String | EmojiData]] = js.native
+    var emojis: js.UndefOr[js.Array[String | EmojiData]] = js.undefined
     
-    var hasStickyPosition: js.UndefOr[Boolean] = js.native
+    var hasStickyPosition: js.UndefOr[Boolean] = js.undefined
     
-    var i18n: I18n = js.native
+    var i18n: I18n
     
-    var id: CategoryName = js.native
+    var id: CategoryName
     
-    var name: String = js.native
+    var name: String
     
-    var native: Boolean = js.native
+    var native: Boolean
     
-    var perLine: Double = js.native
+    var perLine: Double
     
-    var recent: js.UndefOr[js.Array[String]] = js.native
+    var recent: js.UndefOr[js.Array[String]] = js.undefined
   }
   object Props {
     

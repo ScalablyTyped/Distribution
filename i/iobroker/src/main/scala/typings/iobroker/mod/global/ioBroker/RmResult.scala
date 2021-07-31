@@ -2,21 +2,19 @@ package typings.iobroker.mod.global.ioBroker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains the return values of rm */
-@js.native
 trait RmResult extends StObject {
   
   /** The name of the deleted file or directory */
-  var file: String = js.native
+  var file: String
   
   /** Whether the deleted object was a directory or a file */
-  var isDir: Boolean = js.native
+  var isDir: Boolean
   
   /** The parent directory of the deleted file or directory */
-  var path: String = js.native
+  var path: String
 }
 object RmResult {
   

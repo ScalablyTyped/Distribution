@@ -2,87 +2,87 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ManagedDevice extends Entity {
+trait ManagedDevice
+  extends StObject
+     with Entity {
   
   // Code that allows the Activation Lock on a device to be bypassed.
-  var activationLockBypassCode: js.UndefOr[NullableOption[String]] = js.native
+  var activationLockBypassCode: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Android security patch level
-  var androidSecurityPatchLevel: js.UndefOr[NullableOption[String]] = js.native
+  var androidSecurityPatchLevel: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The unique identifier for the Azure Active Directory device. Read only.
-  var azureADDeviceId: js.UndefOr[NullableOption[String]] = js.native
+  var azureADDeviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Whether the device is Azure Active Directory registered.
-  var azureADRegistered: js.UndefOr[NullableOption[Boolean]] = js.native
+  var azureADRegistered: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // The DateTime when device compliance grace period expires
-  var complianceGracePeriodExpirationDateTime: js.UndefOr[String] = js.native
+  var complianceGracePeriodExpirationDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * Compliance state of the device. Possible values are: unknown, compliant, noncompliant, conflict, error, inGracePeriod,
     * configManager.
     */
-  var complianceState: js.UndefOr[ComplianceState] = js.native
+  var complianceState: js.UndefOr[ComplianceState] = js.undefined
   
   // ConfigrMgr client enabled features
-  var configurationManagerClientEnabledFeatures: js.UndefOr[NullableOption[ConfigurationManagerClientEnabledFeatures]] = js.native
+  var configurationManagerClientEnabledFeatures: js.UndefOr[NullableOption[ConfigurationManagerClientEnabledFeatures]] = js.undefined
   
   // List of ComplexType deviceActionResult objects.
-  var deviceActionResults: js.UndefOr[NullableOption[js.Array[DeviceActionResult]]] = js.native
+  var deviceActionResults: js.UndefOr[NullableOption[js.Array[DeviceActionResult]]] = js.undefined
   
   // Device category
-  var deviceCategory: js.UndefOr[NullableOption[DeviceCategory]] = js.native
+  var deviceCategory: js.UndefOr[NullableOption[DeviceCategory]] = js.undefined
   
   // Device category display name
-  var deviceCategoryDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var deviceCategoryDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device compliance policy states for this device.
-  var deviceCompliancePolicyStates: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicyState]]] = js.native
+  var deviceCompliancePolicyStates: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicyState]]] = js.undefined
   
   // Device configuration states for this device.
-  var deviceConfigurationStates: js.UndefOr[NullableOption[js.Array[DeviceConfigurationState]]] = js.native
+  var deviceConfigurationStates: js.UndefOr[NullableOption[js.Array[DeviceConfigurationState]]] = js.undefined
   
   /**
     * Enrollment type of the device. Possible values are: unknown, userEnrollment, deviceEnrollmentManager,
     * appleBulkWithUser, appleBulkWithoutUser, windowsAzureADJoin, windowsBulkUserless, windowsAutoEnrollment,
     * windowsBulkAzureDomainJoin, windowsCoManagement.
     */
-  var deviceEnrollmentType: js.UndefOr[DeviceEnrollmentType] = js.native
+  var deviceEnrollmentType: js.UndefOr[DeviceEnrollmentType] = js.undefined
   
   // The device health attestation state.
-  var deviceHealthAttestationState: js.UndefOr[NullableOption[DeviceHealthAttestationState]] = js.native
+  var deviceHealthAttestationState: js.UndefOr[NullableOption[DeviceHealthAttestationState]] = js.undefined
   
   // Name of the device
-  var deviceName: js.UndefOr[NullableOption[String]] = js.native
+  var deviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Device registration state. Possible values are: notRegistered, registered, revoked, keyConflict, approvalPending,
     * certificateReset, notRegisteredPendingEnrollment, unknown.
     */
-  var deviceRegistrationState: js.UndefOr[DeviceRegistrationState] = js.native
+  var deviceRegistrationState: js.UndefOr[DeviceRegistrationState] = js.undefined
   
   // Whether the device is Exchange ActiveSync activated.
-  var easActivated: js.UndefOr[Boolean] = js.native
+  var easActivated: js.UndefOr[Boolean] = js.undefined
   
   // Exchange ActivationSync activation time of the device.
-  var easActivationDateTime: js.UndefOr[String] = js.native
+  var easActivationDateTime: js.UndefOr[String] = js.undefined
   
   // Exchange ActiveSync Id of the device.
-  var easDeviceId: js.UndefOr[NullableOption[String]] = js.native
+  var easDeviceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Email(s) for the user associated with the device
-  var emailAddress: js.UndefOr[NullableOption[String]] = js.native
+  var emailAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Enrollment time of the device.
-  var enrolledDateTime: js.UndefOr[String] = js.native
+  var enrolledDateTime: js.UndefOr[String] = js.undefined
   
   // The Access State of the device in Exchange. Possible values are: none, unknown, allowed, blocked, quarantined.
-  var exchangeAccessState: js.UndefOr[DeviceManagementExchangeAccessState] = js.native
+  var exchangeAccessState: js.UndefOr[DeviceManagementExchangeAccessState] = js.undefined
   
   /**
     * The reason for the device's access state in Exchange. Possible values are: none, unknown, exchangeGlobalRule,
@@ -90,93 +90,93 @@ trait ManagedDevice extends Entity {
     * notEnrolled, unknownLocation, mfaRequired, azureADBlockDueToAccessPolicy, compromisedPassword,
     * deviceNotKnownWithManagedApp.
     */
-  var exchangeAccessStateReason: js.UndefOr[DeviceManagementExchangeAccessStateReason] = js.native
+  var exchangeAccessStateReason: js.UndefOr[DeviceManagementExchangeAccessStateReason] = js.undefined
   
   // Last time the device contacted Exchange.
-  var exchangeLastSuccessfulSyncDateTime: js.UndefOr[String] = js.native
+  var exchangeLastSuccessfulSyncDateTime: js.UndefOr[String] = js.undefined
   
   // Free Storage in Bytes
-  var freeStorageSpaceInBytes: js.UndefOr[Double] = js.native
+  var freeStorageSpaceInBytes: js.UndefOr[Double] = js.undefined
   
   // IMEI
-  var imei: js.UndefOr[NullableOption[String]] = js.native
+  var imei: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device encryption status
-  var isEncrypted: js.UndefOr[Boolean] = js.native
+  var isEncrypted: js.UndefOr[Boolean] = js.undefined
   
   // Device supervised status
-  var isSupervised: js.UndefOr[Boolean] = js.native
+  var isSupervised: js.UndefOr[Boolean] = js.undefined
   
   // whether the device is jail broken or rooted.
-  var jailBroken: js.UndefOr[NullableOption[String]] = js.native
+  var jailBroken: js.UndefOr[NullableOption[String]] = js.undefined
   
   // The date and time that the device last completed a successful sync with Intune.
-  var lastSyncDateTime: js.UndefOr[String] = js.native
+  var lastSyncDateTime: js.UndefOr[String] = js.undefined
   
   // Automatically generated name to identify a device. Can be overwritten to a user friendly name.
-  var managedDeviceName: js.UndefOr[NullableOption[String]] = js.native
+  var managedDeviceName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Ownership of the device. Can be 'company' or 'personal'. Possible values are: unknown, company, personal.
-  var managedDeviceOwnerType: js.UndefOr[ManagedDeviceOwnerType] = js.native
+  var managedDeviceOwnerType: js.UndefOr[ManagedDeviceOwnerType] = js.undefined
   
   /**
     * Management channel of the device. Intune, EAS, etc. Possible values are: eas, mdm, easMdm, intuneClient,
     * easIntuneClient, configurationManagerClient, configurationManagerClientMdm, configurationManagerClientMdmEas, unknown,
     * jamf, googleCloudDevicePolicyController.
     */
-  var managementAgent: js.UndefOr[ManagementAgentType] = js.native
+  var managementAgent: js.UndefOr[ManagementAgentType] = js.undefined
   
   // Manufacturer of the device
-  var manufacturer: js.UndefOr[NullableOption[String]] = js.native
+  var manufacturer: js.UndefOr[NullableOption[String]] = js.undefined
   
   // MEID
-  var meid: js.UndefOr[NullableOption[String]] = js.native
+  var meid: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Model of the device
-  var model: js.UndefOr[NullableOption[String]] = js.native
+  var model: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Operating system of the device. Windows, iOS, etc.
-  var operatingSystem: js.UndefOr[NullableOption[String]] = js.native
+  var operatingSystem: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Operating system version of the device.
-  var osVersion: js.UndefOr[NullableOption[String]] = js.native
+  var osVersion: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Indicates the threat state of a device when a Mobile Threat Defense partner is in use by the account and device. Read
     * Only. Possible values are: unknown, activated, deactivated, secured, lowSeverity, mediumSeverity, highSeverity,
     * unresponsive, compromised, misconfigured.
     */
-  var partnerReportedThreatState: js.UndefOr[ManagedDevicePartnerReportedHealthState] = js.native
+  var partnerReportedThreatState: js.UndefOr[ManagedDevicePartnerReportedHealthState] = js.undefined
   
   // Phone number of the device
-  var phoneNumber: js.UndefOr[NullableOption[String]] = js.native
+  var phoneNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
   // An error string that identifies issues when creating Remote Assistance session objects.
-  var remoteAssistanceSessionErrorDetails: js.UndefOr[NullableOption[String]] = js.native
+  var remoteAssistanceSessionErrorDetails: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Url that allows a Remote Assistance session to be established with the device.
-  var remoteAssistanceSessionUrl: js.UndefOr[NullableOption[String]] = js.native
+  var remoteAssistanceSessionUrl: js.UndefOr[NullableOption[String]] = js.undefined
   
   // SerialNumber
-  var serialNumber: js.UndefOr[NullableOption[String]] = js.native
+  var serialNumber: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Subscriber Carrier
-  var subscriberCarrier: js.UndefOr[NullableOption[String]] = js.native
+  var subscriberCarrier: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Total Storage in Bytes
-  var totalStorageSpaceInBytes: js.UndefOr[Double] = js.native
+  var totalStorageSpaceInBytes: js.UndefOr[Double] = js.undefined
   
   // User display name
-  var userDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Unique Identifier for the user associated with the device
-  var userId: js.UndefOr[NullableOption[String]] = js.native
+  var userId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Device user principal name
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Wi-Fi MAC
-  var wiFiMacAddress: js.UndefOr[NullableOption[String]] = js.native
+  var wiFiMacAddress: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object ManagedDevice {
   

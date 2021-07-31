@@ -2,16 +2,14 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeApplicationSnapshotResponse extends StObject {
   
   /**
     * An object containing information about the application snapshot.
     */
-  var SnapshotDetails: typings.awsSdk.kinesisanalyticsv2Mod.SnapshotDetails = js.native
+  var SnapshotDetails: typings.awsSdk.kinesisanalyticsv2Mod.SnapshotDetails
 }
 object DescribeApplicationSnapshotResponse {
   

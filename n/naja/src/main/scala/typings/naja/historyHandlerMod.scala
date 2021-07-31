@@ -2,7 +2,6 @@ package typings.naja
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object historyHandlerMod {
@@ -16,12 +15,11 @@ object historyHandlerMod {
     var uiCache: Boolean = js.native
   }
   
-  @js.native
   trait HistoryAdapter extends StObject {
     
-    def pushState(data: js.Any, title: String, url: String): Unit = js.native
+    def pushState(data: js.Any, title: String, url: String): Unit
     
-    def replaceState(data: js.Any, title: String, url: String): Unit = js.native
+    def replaceState(data: js.Any, title: String, url: String): Unit
   }
   object HistoryAdapter {
     

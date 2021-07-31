@@ -4,11 +4,12 @@ import typings.openui5.sap.ui.core.Control
 import typings.openui5.sap.ui.core.MessageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MessageStrip extends Control {
+trait MessageStrip
+  extends StObject
+     with Control {
   
   /**
     * Attaches event handler <code>fnFunction</code> to the <code>close</code> event of this

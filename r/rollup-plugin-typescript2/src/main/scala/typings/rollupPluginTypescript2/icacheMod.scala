@@ -2,27 +2,25 @@ package typings.rollupPluginTypescript2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object icacheMod {
   
-  @js.native
   trait ICache[DataType] extends StObject {
     
-    def exists(name: String): Boolean = js.native
+    def exists(name: String): Boolean
     
-    def `match`(names: js.Array[String]): Boolean = js.native
+    def `match`(names: js.Array[String]): Boolean
     
-    def path(name: String): String = js.native
+    def path(name: String): String
     
-    def read(name: String): js.UndefOr[DataType | Null] = js.native
+    def read(name: String): js.UndefOr[DataType | Null]
     
-    def roll(): Unit = js.native
+    def roll(): Unit
     
-    def touch(name: String): Unit = js.native
+    def touch(name: String): Unit
     
-    def write(name: String, data: DataType): Unit = js.native
+    def write(name: String, data: DataType): Unit
   }
   object ICache {
     
@@ -42,7 +40,7 @@ object icacheMod {
     }
     
     @scala.inline
-    implicit class ICacheMutableBuilder[Self <: ICache[_], DataType] (val x: Self with ICache[DataType]) extends AnyVal {
+    implicit class ICacheMutableBuilder[Self <: ICache[?], DataType] (val x: Self & ICache[DataType]) extends AnyVal {
       
       @scala.inline
       def setExists(value: String => Boolean): Self = StObject.set(x, "exists", js.Any.fromFunction1(value))

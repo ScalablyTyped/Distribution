@@ -6,10 +6,13 @@ import typings.pnpapi.anon.Extensions
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("pnpapi", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -24,50 +27,37 @@ object mod {
     def std_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("std")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("pnpapi", "findPackageLocator")
-  @js.native
-  def findPackageLocator(location: String): PackageLocator | Null = js.native
+  @scala.inline
+  def findPackageLocator(location: String): PackageLocator | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("findPackageLocator")(location.asInstanceOf[js.Any]).asInstanceOf[PackageLocator | Null]
   
-  @JSImport("pnpapi", "getPackageInformation")
-  @js.native
-  def getPackageInformation(locator: PackageLocator): PackageInformation = js.native
+  @scala.inline
+  def getPackageInformation(locator: PackageLocator): PackageInformation = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageInformation")(locator.asInstanceOf[js.Any]).asInstanceOf[PackageInformation]
   
-  @JSImport("pnpapi", "resolveRequest")
-  @js.native
-  def resolveRequest(request: String): String | Null = js.native
-  @JSImport("pnpapi", "resolveRequest")
-  @js.native
-  def resolveRequest(request: String, issuer: String): String | Null = js.native
-  @JSImport("pnpapi", "resolveRequest")
-  @js.native
-  def resolveRequest(request: String, issuer: String, opts: ConsiderBuiltinsExtensions): String | Null = js.native
-  @JSImport("pnpapi", "resolveRequest")
-  @js.native
-  def resolveRequest(request: String, issuer: Null, opts: ConsiderBuiltinsExtensions): String | Null = js.native
+  @scala.inline
+  def resolveRequest(request: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def resolveRequest(request: String, issuer: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def resolveRequest(request: String, issuer: String, opts: ConsiderBuiltinsExtensions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def resolveRequest(request: String, issuer: Null, opts: ConsiderBuiltinsExtensions): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveRequest")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("pnpapi", "resolveToUnqualified")
-  @js.native
-  def resolveToUnqualified(request: String): String | Null = js.native
-  @JSImport("pnpapi", "resolveToUnqualified")
-  @js.native
-  def resolveToUnqualified(request: String, issuer: String): String | Null = js.native
-  @JSImport("pnpapi", "resolveToUnqualified")
-  @js.native
-  def resolveToUnqualified(request: String, issuer: String, opts: ConsiderBuiltins): String | Null = js.native
-  @JSImport("pnpapi", "resolveToUnqualified")
-  @js.native
-  def resolveToUnqualified(request: String, issuer: Null, opts: ConsiderBuiltins): String | Null = js.native
+  @scala.inline
+  def resolveToUnqualified(request: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def resolveToUnqualified(request: String, issuer: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def resolveToUnqualified(request: String, issuer: String, opts: ConsiderBuiltins): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def resolveToUnqualified(request: String, issuer: Null, opts: ConsiderBuiltins): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveToUnqualified")(request.asInstanceOf[js.Any], issuer.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("pnpapi", "resolveUnqualified")
-  @js.native
-  def resolveUnqualified(unqualified: String): String = js.native
-  @JSImport("pnpapi", "resolveUnqualified")
-  @js.native
-  def resolveUnqualified(unqualified: String, opts: Extensions): String = js.native
+  @scala.inline
+  def resolveUnqualified(unqualified: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUnqualified")(unqualified.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def resolveUnqualified(unqualified: String, opts: Extensions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("resolveUnqualified")(unqualified.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("pnpapi", "setup")
-  @js.native
-  def setup(): Unit = js.native
+  @scala.inline
+  def setup(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setup")().asInstanceOf[Unit]
   
   object topLevel {
     
@@ -77,23 +67,22 @@ object mod {
     
     @JSImport("pnpapi", "topLevel.name")
     @js.native
-    def name: Null = js.native
+    def name: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
     @scala.inline
-    def name_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
+    def name_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("name")(x.asInstanceOf[js.Any])
     
     @JSImport("pnpapi", "topLevel.reference")
     @js.native
-    def reference: Null = js.native
+    def reference: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any = js.native
     @scala.inline
-    def reference_=(x: Null): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reference")(x.asInstanceOf[js.Any])
+    def reference_=(x: /* is `Null`, but independent javascript fields cannot be in scala 3 */ js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("reference")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait PackageInformation extends StObject {
     
-    var packageDependencies: Map[String, String | (js.Tuple2[String, String])] = js.native
+    var packageDependencies: Map[String, String | (js.Tuple2[String, String])]
     
-    var packageLocation: String = js.native
+    var packageLocation: String
   }
   object PackageInformation {
     
@@ -134,12 +123,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait PhysicalPackageLocator extends PackageLocator {
+  trait PhysicalPackageLocator
+    extends StObject
+       with PackageLocator {
     
-    var name: String = js.native
+    var name: String
     
-    var reference: String = js.native
+    var reference: String
   }
   object PhysicalPackageLocator {
     
@@ -160,12 +150,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait TopLevelPackageLocator extends PackageLocator {
+  trait TopLevelPackageLocator
+    extends StObject
+       with PackageLocator {
     
-    var name: Null = js.native
+    var name: Null
     
-    var reference: Null = js.native
+    var reference: Null
   }
   object TopLevelPackageLocator {
     
@@ -190,10 +181,9 @@ object mod {
     
     object NodeJS {
       
-      @js.native
       trait ProcessVersions extends StObject {
         
-        var pnp: js.UndefOr[String] = js.native
+        var pnp: js.UndefOr[String] = js.undefined
       }
       object ProcessVersions {
         

@@ -3,7 +3,6 @@ package typings.payment
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -23,9 +22,8 @@ object mod {
     * * Restricts length to 4 numbers
     * * Restricts input to numbers
     */
-  @JSImport("payment", "formatCardCVC")
-  @js.native
-  def formatCardCVC(elem: HTMLInputElement): HTMLInputElement = js.native
+  @scala.inline
+  def formatCardCVC(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardCVC")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   /**
     * Formats card expiry:
@@ -33,9 +31,8 @@ object mod {
     * * Restricts input to numbers
     * * Restricts length
     */
-  @JSImport("payment", "formatCardExpiry")
-  @js.native
-  def formatCardExpiry(elem: HTMLInputElement): HTMLInputElement = js.native
+  @scala.inline
+  def formatCardExpiry(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardExpiry")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   /**
     * Formats card numbers:
@@ -45,16 +42,14 @@ object mod {
     * * Supports American Express formatting
     * * Adds a class of the card type (e.g. 'visa') to the input
     */
-  @JSImport("payment", "formatCardNumber")
-  @js.native
-  def formatCardNumber(elem: HTMLInputElement): HTMLInputElement = js.native
+  @scala.inline
+  def formatCardNumber(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("formatCardNumber")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   /**
     * General numeric input restriction.
     */
-  @JSImport("payment", "restrictNumeric")
-  @js.native
-  def restrictNumeric(elem: HTMLInputElement): HTMLInputElement = js.native
+  @scala.inline
+  def restrictNumeric(elem: HTMLInputElement): HTMLInputElement = ^.asInstanceOf[js.Dynamic].applyDynamic("restrictNumeric")(elem.asInstanceOf[js.Any]).asInstanceOf[HTMLInputElement]
   
   @js.native
   trait Fns extends StObject {
@@ -115,12 +110,11 @@ object mod {
     def validateCardNumber(cardNumber: String): Boolean = js.native
   }
   
-  @js.native
   trait MonthYear extends StObject {
     
-    var month: Double = js.native
+    var month: Double
     
-    var year: Double = js.native
+    var year: Double
   }
   object MonthYear {
     

@@ -2,7 +2,6 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait CommentSortOrder extends StObject
 object CommentSortOrder extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[CommentSortOrder with Double] = js.native
+  def apply(value: Double): js.UndefOr[CommentSortOrder & Double] = js.native
   
   @js.native
-  sealed trait Asc extends CommentSortOrder
-  /* 1 */ val Asc: typings.vsoNodeApi.workItemTrackingInterfacesMod.CommentSortOrder.Asc with Double = js.native
+  sealed trait Asc
+    extends StObject
+       with CommentSortOrder
+  /* 1 */ val Asc: typings.vsoNodeApi.workItemTrackingInterfacesMod.CommentSortOrder.Asc & Double = js.native
   
   @js.native
-  sealed trait Desc extends CommentSortOrder
-  /* 2 */ val Desc: typings.vsoNodeApi.workItemTrackingInterfacesMod.CommentSortOrder.Desc with Double = js.native
+  sealed trait Desc
+    extends StObject
+       with CommentSortOrder
+  /* 2 */ val Desc: typings.vsoNodeApi.workItemTrackingInterfacesMod.CommentSortOrder.Desc & Double = js.native
 }

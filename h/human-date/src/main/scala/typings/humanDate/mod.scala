@@ -5,82 +5,63 @@ import typings.humanDate.anon.RelativeTimeOptionsreturnAllUnits
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("human-date", "monthName")
+  @JSImport("human-date", JSImport.Namespace)
   @js.native
-  def monthName(arg: String): String = js.native
-  @JSImport("human-date", "monthName")
-  @js.native
-  def monthName(arg: Double): String = js.native
-  @JSImport("human-date", "monthName")
-  @js.native
-  def monthName(arg: Date): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("human-date", "prettyPrint")
-  @js.native
-  def prettyPrint(arg: String): String = js.native
-  @JSImport("human-date", "prettyPrint")
-  @js.native
-  def prettyPrint(arg: String, options: PrettyPrintOptions): String = js.native
-  @JSImport("human-date", "prettyPrint")
-  @js.native
-  def prettyPrint(arg: Double): String = js.native
-  @JSImport("human-date", "prettyPrint")
-  @js.native
-  def prettyPrint(arg: Double, options: PrettyPrintOptions): String = js.native
-  @JSImport("human-date", "prettyPrint")
-  @js.native
-  def prettyPrint(arg: Date): String = js.native
-  @JSImport("human-date", "prettyPrint")
-  @js.native
-  def prettyPrint(arg: Date, options: PrettyPrintOptions): String = js.native
+  @scala.inline
+  def monthName(arg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthName")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def monthName(arg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthName")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def monthName(arg: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("monthName")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: String): String = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: String, options: RelativeTimeOptionsreturn): String = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: String, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: Double): String = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: Double, options: RelativeTimeOptionsreturn): String = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: Double, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: Date): String = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: Date, options: RelativeTimeOptionsreturn): String = js.native
-  @JSImport("human-date", "relativeTime")
-  @js.native
-  def relativeTime(arg: Date, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = js.native
+  @scala.inline
+  def prettyPrint(arg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def prettyPrint(arg: String, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def prettyPrint(arg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def prettyPrint(arg: Double, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def prettyPrint(arg: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def prettyPrint(arg: Date, options: PrettyPrintOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("prettyPrint")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("human-date", "toUTC")
-  @js.native
-  def toUTC(arg: String): Date = js.native
-  @JSImport("human-date", "toUTC")
-  @js.native
-  def toUTC(arg: Double): Date = js.native
-  @JSImport("human-date", "toUTC")
-  @js.native
-  def toUTC(arg: Date): Date = js.native
+  @scala.inline
+  def relativeTime(arg: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def relativeTime(arg: String, options: RelativeTimeOptionsreturn): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def relativeTime(arg: String, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeReturns]
+  @scala.inline
+  def relativeTime(arg: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def relativeTime(arg: Double, options: RelativeTimeOptionsreturn): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def relativeTime(arg: Double, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeReturns]
+  @scala.inline
+  def relativeTime(arg: Date): String = ^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def relativeTime(arg: Date, options: RelativeTimeOptionsreturn): String = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def relativeTime(arg: Date, options: RelativeTimeOptionsreturnAllUnits): RelativeTimeReturns = (^.asInstanceOf[js.Dynamic].applyDynamic("relativeTime")(arg.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[RelativeTimeReturns]
   
-  @js.native
+  @scala.inline
+  def toUTC(arg: String): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def toUTC(arg: Double): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[Date]
+  @scala.inline
+  def toUTC(arg: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("toUTC")(arg.asInstanceOf[js.Any]).asInstanceOf[Date]
+  
   trait PrettyPrintOptions extends StObject {
     
-    var showTime: js.UndefOr[Boolean] = js.native
+    var showTime: js.UndefOr[Boolean] = js.undefined
   }
   object PrettyPrintOptions {
     
@@ -101,18 +82,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RelativeTimeOptions extends StObject {
     
-    var allUnits: js.UndefOr[Boolean] = js.native
+    var allUnits: js.UndefOr[Boolean] = js.undefined
     
-    var futureSuffix: js.UndefOr[String] = js.native
+    var futureSuffix: js.UndefOr[String] = js.undefined
     
-    var pastSuffix: js.UndefOr[String] = js.native
+    var pastSuffix: js.UndefOr[String] = js.undefined
     
-    var presentText: js.UndefOr[String] = js.native
+    var presentText: js.UndefOr[String] = js.undefined
     
-    var returnObject: js.UndefOr[Boolean] = js.native
+    var returnObject: js.UndefOr[Boolean] = js.undefined
   }
   object RelativeTimeOptions {
     
@@ -157,18 +137,17 @@ object mod {
     }
   }
   
-  @js.native
   trait RelativeTimeReturns extends StObject {
     
-    var days: Double = js.native
+    var days: Double
     
-    var hours: Double = js.native
+    var hours: Double
     
-    var past: Boolean = js.native
+    var past: Boolean
     
-    var seconds: Double = js.native
+    var seconds: Double
     
-    var years: Double = js.native
+    var years: Double
   }
   object RelativeTimeReturns {
     

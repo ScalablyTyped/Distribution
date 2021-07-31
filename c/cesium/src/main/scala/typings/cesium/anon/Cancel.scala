@@ -7,35 +7,33 @@ import typings.cesium.mod.EasingFunction
 import typings.cesium.mod.Matrix4
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Cancel extends StObject {
   
-  var cancel: js.UndefOr[FlightCancelledCallback] = js.native
+  var cancel: js.UndefOr[FlightCancelledCallback] = js.undefined
   
-  var complete: js.UndefOr[FlightCompleteCallback] = js.native
+  var complete: js.UndefOr[FlightCompleteCallback] = js.undefined
   
-  var convert: js.UndefOr[Boolean] = js.native
+  var convert: js.UndefOr[Boolean] = js.undefined
   
-  var destination: Cartesian3 | typings.cesium.mod.Rectangle = js.native
+  var destination: Cartesian3 | typings.cesium.mod.Rectangle
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easingFunction: js.UndefOr[EasingFunction] = js.native
+  var easingFunction: js.UndefOr[EasingFunction] = js.undefined
   
-  var endTransform: js.UndefOr[Matrix4] = js.native
+  var endTransform: js.UndefOr[Matrix4] = js.undefined
   
-  var flyOverLongitude: js.UndefOr[Double] = js.native
+  var flyOverLongitude: js.UndefOr[Double] = js.undefined
   
-  var flyOverLongitudeWeight: js.UndefOr[Double] = js.native
+  var flyOverLongitudeWeight: js.UndefOr[Double] = js.undefined
   
-  var maximumHeight: js.UndefOr[Double] = js.native
+  var maximumHeight: js.UndefOr[Double] = js.undefined
   
-  var orientation: js.UndefOr[Direction | Heading] = js.native
+  var orientation: js.UndefOr[Direction | Heading] = js.undefined
   
-  var pitchAdjustHeight: js.UndefOr[Double] = js.native
+  var pitchAdjustHeight: js.UndefOr[Double] = js.undefined
 }
 object Cancel {
   

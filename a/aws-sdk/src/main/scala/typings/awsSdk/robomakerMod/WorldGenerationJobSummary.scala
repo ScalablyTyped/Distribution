@@ -2,46 +2,44 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorldGenerationJobSummary extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the world generator job.
     */
-  var arn: js.UndefOr[Arn] = js.native
+  var arn: js.UndefOr[Arn] = js.undefined
   
   /**
     * The time, in milliseconds since the epoch, when the world generator job was created.
     */
-  var createdAt: js.UndefOr[CreatedAt] = js.native
+  var createdAt: js.UndefOr[CreatedAt] = js.undefined
   
   /**
     * The number of worlds that failed.
     */
-  var failedWorldCount: js.UndefOr[Integer] = js.native
+  var failedWorldCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The status of the world generator job:  Pending  The world generator job request is pending.  Running  The world generator job is running.   Completed  The world generator job completed.   Failed  The world generator job failed. See failureCode for more information.   PartialFailed  Some worlds did not generate.  Canceled  The world generator job was cancelled.  Canceling  The world generator job is being cancelled.  
     */
-  var status: js.UndefOr[WorldGenerationJobStatus] = js.native
+  var status: js.UndefOr[WorldGenerationJobStatus] = js.undefined
   
   /**
     * The number of worlds that were generated.
     */
-  var succeededWorldCount: js.UndefOr[Integer] = js.native
+  var succeededWorldCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The Amazon Resource Name (arn) of the world template.
     */
-  var template: js.UndefOr[Arn] = js.native
+  var template: js.UndefOr[Arn] = js.undefined
   
   /**
     * Information about the world count.
     */
-  var worldCount: js.UndefOr[WorldCount] = js.native
+  var worldCount: js.UndefOr[WorldCount] = js.undefined
 }
 object WorldGenerationJobSummary {
   

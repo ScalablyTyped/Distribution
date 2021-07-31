@@ -5,7 +5,6 @@ import typings.tslint.ruleMod.IOptions
 import typings.tslint.ruleMod.IRuleMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object banRuleMod {
@@ -22,12 +21,10 @@ object banRuleMod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("tslint/lib/rules/banRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(expression: String): String = js.native
-    @JSImport("tslint/lib/rules/banRule", "Rule.FAILURE_STRING_FACTORY")
-    @js.native
-    def FAILURE_STRING_FACTORY(expression: String, messageAddition: String): String = js.native
+    @scala.inline
+    def FAILURE_STRING_FACTORY(expression: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(expression.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def FAILURE_STRING_FACTORY(expression: String, messageAddition: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("FAILURE_STRING_FACTORY")(expression.asInstanceOf[js.Any], messageAddition.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("tslint/lib/rules/banRule", "Rule.metadata")
     @js.native

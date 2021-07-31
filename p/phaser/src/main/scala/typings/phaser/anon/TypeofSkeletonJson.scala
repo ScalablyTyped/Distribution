@@ -7,26 +7,24 @@ import typings.phaser.spine.SpacingMode
 import typings.phaser.spine.TransformMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSkeletonJson extends StObject {
   
   /* static member */
-  def blendModeFromString(str: String): BlendMode = js.native
+  def blendModeFromString(str: String): BlendMode
   
   /* static member */
-  def positionModeFromString(str: String): PositionMode = js.native
+  def positionModeFromString(str: String): PositionMode
   
   /* static member */
-  def rotateModeFromString(str: String): RotateMode = js.native
+  def rotateModeFromString(str: String): RotateMode
   
   /* static member */
-  def spacingModeFromString(str: String): SpacingMode = js.native
+  def spacingModeFromString(str: String): SpacingMode
   
   /* static member */
-  def transformModeFromString(str: String): TransformMode = js.native
+  def transformModeFromString(str: String): TransformMode
 }
 object TypeofSkeletonJson {
   

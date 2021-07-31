@@ -2,27 +2,25 @@ package typings.powerappsComponentFramework
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Accuracy extends StObject {
     
-    var accuracy: Double = js.native
+    var accuracy: Double
     
-    var altitude: Double = js.native
+    var altitude: Double
     
-    var altitudeAccuracy: Double = js.native
+    var altitudeAccuracy: Double
     
-    var heading: Double = js.native
+    var heading: Double
     
-    var latitude: Double = js.native
+    var latitude: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
     
-    var speed: Double = js.native
+    var speed: Double
   }
   object Accuracy {
     
@@ -66,10 +64,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Guid extends StObject {
     
-    var guid: String = js.native
+    var guid: String
   }
   object Guid {
     

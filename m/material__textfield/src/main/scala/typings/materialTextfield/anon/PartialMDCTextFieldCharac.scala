@@ -2,14 +2,12 @@ package typings.materialTextfield.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material/textfield.@material/textfield/character-counter/adapter.MDCTextFieldCharacterCounterAdapter> */
-@js.native
 trait PartialMDCTextFieldCharac extends StObject {
   
-  var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.native
+  var setContent: js.UndefOr[js.Function1[/* content */ String, Unit]] = js.undefined
 }
 object PartialMDCTextFieldCharac {
   

@@ -5,7 +5,6 @@ import typings.materialSlider.anon.SkipInitialUIUpdate
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,18 +13,20 @@ object mod {
   @js.native
   class MDCSlider protected ()
     extends typings.materialSlider.componentMod.MDCSlider {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialSlider.foundationMod.MDCSliderFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCSlider {
     
-    @JSImport("@material/slider", "MDCSlider.attachTo")
+    @JSImport("@material/slider", "MDCSlider")
     @js.native
-    def attachTo(root: Element): typings.materialSlider.componentMod.MDCSlider = js.native
-    @JSImport("@material/slider", "MDCSlider.attachTo")
-    @js.native
-    def attachTo(root: Element, options: SkipInitialUIUpdate): typings.materialSlider.componentMod.MDCSlider = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialSlider.componentMod.MDCSlider = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialSlider.componentMod.MDCSlider]
+    @scala.inline
+    def attachTo(root: Element, options: SkipInitialUIUpdate): typings.materialSlider.componentMod.MDCSlider = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[typings.materialSlider.componentMod.MDCSlider]
   }
   
   @JSImport("@material/slider", "MDCSliderFoundation")
@@ -53,11 +54,11 @@ object mod {
   object Thumb extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialSlider.typesMod.Thumb with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialSlider.typesMod.Thumb & Double] = js.native
     
-    /* 2 */ val END: typings.materialSlider.typesMod.Thumb.END with Double = js.native
+    /* 2 */ val END: typings.materialSlider.typesMod.Thumb.END & Double = js.native
     
-    /* 1 */ val START: typings.materialSlider.typesMod.Thumb.START with Double = js.native
+    /* 1 */ val START: typings.materialSlider.typesMod.Thumb.START & Double = js.native
   }
   
   @JSImport("@material/slider", "TickMark")
@@ -65,11 +66,11 @@ object mod {
   object TickMark extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[typings.materialSlider.typesMod.TickMark with Double] = js.native
+    def apply(value: Double): js.UndefOr[typings.materialSlider.typesMod.TickMark & Double] = js.native
     
-    /* 0 */ val ACTIVE: typings.materialSlider.typesMod.TickMark.ACTIVE with Double = js.native
+    /* 0 */ val ACTIVE: typings.materialSlider.typesMod.TickMark.ACTIVE & Double = js.native
     
-    /* 1 */ val INACTIVE: typings.materialSlider.typesMod.TickMark.INACTIVE with Double = js.native
+    /* 1 */ val INACTIVE: typings.materialSlider.typesMod.TickMark.INACTIVE & Double = js.native
   }
   
   object attributes {

@@ -2,26 +2,24 @@ package typings.openpgp.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkerOptions extends StObject {
   
   /**
     * number of workers to initialize
     */
-  var n: js.UndefOr[Double] = js.native
+  var n: js.UndefOr[Double] = js.undefined
   
   /**
     * relative path to the worker scripts, default: 'openpgp.worker.js'
     */
-  var path: String = js.native
+  var path: String
   
   /**
     * alternative to path parameter: web workers initialized with 'openpgp.worker.js'
     */
-  var workers: js.UndefOr[js.Array[_]] = js.native
+  var workers: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object WorkerOptions {
   
@@ -44,7 +42,7 @@ object WorkerOptions {
     def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWorkers(value: js.Array[_]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
+    def setWorkers(value: js.Array[js.Any]): Self = StObject.set(x, "workers", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setWorkersUndefined: Self = StObject.set(x, "workers", js.undefined)

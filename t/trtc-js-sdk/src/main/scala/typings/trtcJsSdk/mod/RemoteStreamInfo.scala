@@ -2,13 +2,11 @@ package typings.trtcJsSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoteStreamInfo extends StObject {
   
-  var stream: RemoteStream = js.native
+  var stream: RemoteStream
 }
 object RemoteStreamInfo {
   

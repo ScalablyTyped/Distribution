@@ -6,59 +6,77 @@ import typings.googlemaps.google.maps.MapTypeStyleElementType
 import typings.googlemaps.google.maps.MapTypeStyleFeatureType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googlemapsStrings {
   
   @js.native
-  sealed trait LineString extends DrawingMode
+  sealed trait LineString
+    extends StObject
+       with DrawingMode
   @scala.inline
   def LineString: LineString = "LineString".asInstanceOf[LineString]
   
   @js.native
-  sealed trait Point extends DrawingMode
+  sealed trait Point
+    extends StObject
+       with DrawingMode
   @scala.inline
   def Point: Point = "Point".asInstanceOf[Point]
   
   @js.native
-  sealed trait Polygon extends DrawingMode
+  sealed trait Polygon
+    extends StObject
+       with DrawingMode
   @scala.inline
   def Polygon: Polygon = "Polygon".asInstanceOf[Polygon]
   
   @js.native
-  sealed trait administrative extends MapTypeStyleFeatureType
+  sealed trait administrative
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def administrative: administrative = "administrative".asInstanceOf[administrative]
   
   @js.native
-  sealed trait administrativeDotcountry extends MapTypeStyleFeatureType
+  sealed trait administrativeDotcountry
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def administrativeDotcountry: administrativeDotcountry = "administrative.country".asInstanceOf[administrativeDotcountry]
   
   @js.native
-  sealed trait administrativeDotland_parcel extends MapTypeStyleFeatureType
+  sealed trait administrativeDotland_parcel
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def administrativeDotland_parcel: administrativeDotland_parcel = "administrative.land_parcel".asInstanceOf[administrativeDotland_parcel]
   
   @js.native
-  sealed trait administrativeDotlocality extends MapTypeStyleFeatureType
+  sealed trait administrativeDotlocality
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def administrativeDotlocality: administrativeDotlocality = "administrative.locality".asInstanceOf[administrativeDotlocality]
   
   @js.native
-  sealed trait administrativeDotneighborhood extends MapTypeStyleFeatureType
+  sealed trait administrativeDotneighborhood
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def administrativeDotneighborhood: administrativeDotneighborhood = "administrative.neighborhood".asInstanceOf[administrativeDotneighborhood]
   
   @js.native
-  sealed trait administrativeDotprovince extends MapTypeStyleFeatureType
+  sealed trait administrativeDotprovince
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def administrativeDotprovince: administrativeDotprovince = "administrative.province".asInstanceOf[administrativeDotprovince]
   
   @js.native
   sealed trait all
-    extends MapTypeStyleElementType
+    extends StObject
+       with MapTypeStyleElementType
        with MapTypeStyleFeatureType
   @scala.inline
   def all: all = "all".asInstanceOf[all]
@@ -69,7 +87,9 @@ object googlemapsStrings {
   def animation_changed: animation_changed = "animation_changed".asInstanceOf[animation_changed]
   
   @js.native
-  sealed trait auto extends GestureHandlingOptions
+  sealed trait auto
+    extends StObject
+       with GestureHandlingOptions
   @scala.inline
   def auto: auto = "auto".asInstanceOf[auto]
   
@@ -109,7 +129,9 @@ object googlemapsStrings {
   def content_changed: content_changed = "content_changed".asInstanceOf[content_changed]
   
   @js.native
-  sealed trait cooperative extends GestureHandlingOptions
+  sealed trait cooperative
+    extends StObject
+       with GestureHandlingOptions
   @scala.inline
   def cooperative: cooperative = "cooperative".asInstanceOf[cooperative]
   
@@ -154,22 +176,30 @@ object googlemapsStrings {
   def flat_changed: flat_changed = "flat_changed".asInstanceOf[flat_changed]
   
   @js.native
-  sealed trait geometry extends MapTypeStyleElementType
+  sealed trait geometry
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def geometry: geometry = "geometry".asInstanceOf[geometry]
   
   @js.native
-  sealed trait geometryDotfill extends MapTypeStyleElementType
+  sealed trait geometryDotfill
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def geometryDotfill: geometryDotfill = "geometry.fill".asInstanceOf[geometryDotfill]
   
   @js.native
-  sealed trait geometryDotstroke extends MapTypeStyleElementType
+  sealed trait geometryDotstroke
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def geometryDotstroke: geometryDotstroke = "geometry.stroke".asInstanceOf[geometryDotstroke]
   
   @js.native
-  sealed trait greedy extends GestureHandlingOptions
+  sealed trait greedy
+    extends StObject
+       with GestureHandlingOptions
   @scala.inline
   def greedy: greedy = "greedy".asInstanceOf[greedy]
   
@@ -204,52 +234,72 @@ object googlemapsStrings {
   def insert_at: insert_at = "insert_at".asInstanceOf[insert_at]
   
   @js.native
-  sealed trait labels extends MapTypeStyleElementType
+  sealed trait labels
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def labels: labels = "labels".asInstanceOf[labels]
   
   @js.native
-  sealed trait labelsDoticon extends MapTypeStyleElementType
+  sealed trait labelsDoticon
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def labelsDoticon: labelsDoticon = "labels.icon".asInstanceOf[labelsDoticon]
   
   @js.native
-  sealed trait labelsDottext extends MapTypeStyleElementType
+  sealed trait labelsDottext
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def labelsDottext: labelsDottext = "labels.text".asInstanceOf[labelsDottext]
   
   @js.native
-  sealed trait labelsDottextDotfill extends MapTypeStyleElementType
+  sealed trait labelsDottextDotfill
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def labelsDottextDotfill: labelsDottextDotfill = "labels.text.fill".asInstanceOf[labelsDottextDotfill]
   
   @js.native
-  sealed trait labelsDottextDotstroke extends MapTypeStyleElementType
+  sealed trait labelsDottextDotstroke
+    extends StObject
+       with MapTypeStyleElementType
   @scala.inline
   def labelsDottextDotstroke: labelsDottextDotstroke = "labels.text.stroke".asInstanceOf[labelsDottextDotstroke]
   
   @js.native
-  sealed trait landscape extends MapTypeStyleFeatureType
+  sealed trait landscape
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def landscape: landscape = "landscape".asInstanceOf[landscape]
   
   @js.native
-  sealed trait landscapeDotman_made extends MapTypeStyleFeatureType
+  sealed trait landscapeDotman_made
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def landscapeDotman_made: landscapeDotman_made = "landscape.man_made".asInstanceOf[landscapeDotman_made]
   
   @js.native
-  sealed trait landscapeDotnatural extends MapTypeStyleFeatureType
+  sealed trait landscapeDotnatural
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def landscapeDotnatural: landscapeDotnatural = "landscape.natural".asInstanceOf[landscapeDotnatural]
   
   @js.native
-  sealed trait landscapeDotnaturalDotlandcover extends MapTypeStyleFeatureType
+  sealed trait landscapeDotnaturalDotlandcover
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def landscapeDotnaturalDotlandcover: landscapeDotnaturalDotlandcover = "landscape.natural.landcover".asInstanceOf[landscapeDotnaturalDotlandcover]
   
   @js.native
-  sealed trait landscapeDotnaturalDotterrain extends MapTypeStyleFeatureType
+  sealed trait landscapeDotnaturalDotterrain
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def landscapeDotnaturalDotterrain: landscapeDotnaturalDotterrain = "landscape.natural.terrain".asInstanceOf[landscapeDotnaturalDotterrain]
   
@@ -284,52 +334,72 @@ object googlemapsStrings {
   def mouseup: mouseup = "mouseup".asInstanceOf[mouseup]
   
   @js.native
-  sealed trait none extends GestureHandlingOptions
+  sealed trait none
+    extends StObject
+       with GestureHandlingOptions
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait poi extends MapTypeStyleFeatureType
+  sealed trait poi
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poi: poi = "poi".asInstanceOf[poi]
   
   @js.native
-  sealed trait poiDotattraction extends MapTypeStyleFeatureType
+  sealed trait poiDotattraction
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotattraction: poiDotattraction = "poi.attraction".asInstanceOf[poiDotattraction]
   
   @js.native
-  sealed trait poiDotbusiness extends MapTypeStyleFeatureType
+  sealed trait poiDotbusiness
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotbusiness: poiDotbusiness = "poi.business".asInstanceOf[poiDotbusiness]
   
   @js.native
-  sealed trait poiDotgovernment extends MapTypeStyleFeatureType
+  sealed trait poiDotgovernment
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotgovernment: poiDotgovernment = "poi.government".asInstanceOf[poiDotgovernment]
   
   @js.native
-  sealed trait poiDotmedical extends MapTypeStyleFeatureType
+  sealed trait poiDotmedical
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotmedical: poiDotmedical = "poi.medical".asInstanceOf[poiDotmedical]
   
   @js.native
-  sealed trait poiDotpark extends MapTypeStyleFeatureType
+  sealed trait poiDotpark
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotpark: poiDotpark = "poi.park".asInstanceOf[poiDotpark]
   
   @js.native
-  sealed trait poiDotplace_of_worship extends MapTypeStyleFeatureType
+  sealed trait poiDotplace_of_worship
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotplace_of_worship: poiDotplace_of_worship = "poi.place_of_worship".asInstanceOf[poiDotplace_of_worship]
   
   @js.native
-  sealed trait poiDotschool extends MapTypeStyleFeatureType
+  sealed trait poiDotschool
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotschool: poiDotschool = "poi.school".asInstanceOf[poiDotschool]
   
   @js.native
-  sealed trait poiDotsports_complex extends MapTypeStyleFeatureType
+  sealed trait poiDotsports_complex
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def poiDotsports_complex: poiDotsports_complex = "poi.sports_complex".asInstanceOf[poiDotsports_complex]
   
@@ -364,27 +434,37 @@ object googlemapsStrings {
   def rightclick: rightclick = "rightclick".asInstanceOf[rightclick]
   
   @js.native
-  sealed trait road extends MapTypeStyleFeatureType
+  sealed trait road
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def road: road = "road".asInstanceOf[road]
   
   @js.native
-  sealed trait roadDotarterial extends MapTypeStyleFeatureType
+  sealed trait roadDotarterial
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def roadDotarterial: roadDotarterial = "road.arterial".asInstanceOf[roadDotarterial]
   
   @js.native
-  sealed trait roadDothighway extends MapTypeStyleFeatureType
+  sealed trait roadDothighway
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def roadDothighway: roadDothighway = "road.highway".asInstanceOf[roadDothighway]
   
   @js.native
-  sealed trait roadDothighwayDotcontrolled_access extends MapTypeStyleFeatureType
+  sealed trait roadDothighwayDotcontrolled_access
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def roadDothighwayDotcontrolled_access: roadDothighwayDotcontrolled_access = "road.highway.controlled_access".asInstanceOf[roadDothighwayDotcontrolled_access]
   
   @js.native
-  sealed trait roadDotlocal extends MapTypeStyleFeatureType
+  sealed trait roadDotlocal
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def roadDotlocal: roadDotlocal = "road.local".asInstanceOf[roadDotlocal]
   
@@ -414,32 +494,44 @@ object googlemapsStrings {
   def title_changed: title_changed = "title_changed".asInstanceOf[title_changed]
   
   @js.native
-  sealed trait transit extends MapTypeStyleFeatureType
+  sealed trait transit
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def transit: transit = "transit".asInstanceOf[transit]
   
   @js.native
-  sealed trait transitDotline extends MapTypeStyleFeatureType
+  sealed trait transitDotline
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def transitDotline: transitDotline = "transit.line".asInstanceOf[transitDotline]
   
   @js.native
-  sealed trait transitDotstation extends MapTypeStyleFeatureType
+  sealed trait transitDotstation
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def transitDotstation: transitDotstation = "transit.station".asInstanceOf[transitDotstation]
   
   @js.native
-  sealed trait transitDotstationDotairport extends MapTypeStyleFeatureType
+  sealed trait transitDotstationDotairport
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def transitDotstationDotairport: transitDotstationDotairport = "transit.station.airport".asInstanceOf[transitDotstationDotairport]
   
   @js.native
-  sealed trait transitDotstationDotbus extends MapTypeStyleFeatureType
+  sealed trait transitDotstationDotbus
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def transitDotstationDotbus: transitDotstationDotbus = "transit.station.bus".asInstanceOf[transitDotstationDotbus]
   
   @js.native
-  sealed trait transitDotstationDotrail extends MapTypeStyleFeatureType
+  sealed trait transitDotstationDotrail
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def transitDotstationDotrail: transitDotstationDotrail = "transit.station.rail".asInstanceOf[transitDotstationDotrail]
   
@@ -449,7 +541,9 @@ object googlemapsStrings {
   def visible_changed: visible_changed = "visible_changed".asInstanceOf[visible_changed]
   
   @js.native
-  sealed trait water extends MapTypeStyleFeatureType
+  sealed trait water
+    extends StObject
+       with MapTypeStyleFeatureType
   @scala.inline
   def water: water = "water".asInstanceOf[water]
   

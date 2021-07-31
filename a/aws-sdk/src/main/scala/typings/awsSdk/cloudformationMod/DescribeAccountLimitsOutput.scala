@@ -2,21 +2,19 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeAccountLimitsOutput extends StObject {
   
   /**
     * An account limit structure that contain a list of AWS CloudFormation account limits and their values.
     */
-  var AccountLimits: js.UndefOr[AccountLimitList] = js.native
+  var AccountLimits: js.UndefOr[AccountLimitList] = js.undefined
   
   /**
     * If the output exceeds 1 MB in size, a string that identifies the next page of limits. If no additional page exists, this value is null.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.cloudformationMod.NextToken] = js.undefined
 }
 object DescribeAccountLimitsOutput {
   

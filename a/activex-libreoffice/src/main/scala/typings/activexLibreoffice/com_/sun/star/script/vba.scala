@@ -37,7 +37,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vba {
@@ -177,20 +176,21 @@ object vba {
     * @see XVBACompatibility
     * @see XVBAScriptListener
     */
-  @js.native
-  trait VBAScriptEvent extends EventObject {
+  trait VBAScriptEvent
+    extends StObject
+       with EventObject {
     
     /**
       * Identifies the type of the event.
       * @see VBAScriptEventId
       */
-    var Identifier: Double = js.native
+    var Identifier: Double
     
     /**
       * Contains the name of the involved VBA module.
       * @see VBAScriptEventId
       */
-    var ModuleName: String = js.native
+    var ModuleName: String
   }
   object VBAScriptEvent {
     
@@ -236,20 +236,19 @@ object vba {
   
   type VBATextEventProcessor = XVBAEventProcessor
   
-  @js.native
   trait XVBACompatibility extends StObject {
     
-    var ProjectName: String = js.native
+    var ProjectName: String
     
-    var RunningVBAScripts: Double = js.native
+    var RunningVBAScripts: Double
     
-    var VBACompatibilityMode: Boolean = js.native
+    var VBACompatibilityMode: Boolean
     
-    def addVBAScriptListener(Listener: XVBAScriptListener): Unit = js.native
+    def addVBAScriptListener(Listener: XVBAScriptListener): Unit
     
-    def broadcastVBAScriptEvent(Identifier: Double, ModuleName: String): Unit = js.native
+    def broadcastVBAScriptEvent(Identifier: Double, ModuleName: String): Unit
     
-    def removeVBAScriptListener(Listener: XVBAScriptListener): Unit = js.native
+    def removeVBAScriptListener(Listener: XVBAScriptListener): Unit
   }
   object XVBACompatibility {
     
@@ -290,7 +289,6 @@ object vba {
   }
   
   /** Executes VBA event handlers. */
-  @js.native
   trait XVBAEventProcessor extends StObject {
     
     /**
@@ -299,7 +297,7 @@ object vba {
       * @param aArgs Additional arguments needed to identify some event handlers, e.g. a sheet index for spreadsheet events.
       * @returns `TRUE` , if the VBA event handler exists. `FALSE` , for all other cases.
       */
-    def hasVbaEventHandler(nEventId: Double, aArgs: SeqEquiv[_]): Boolean = js.native
+    def hasVbaEventHandler(nEventId: Double, aArgs: SeqEquiv[js.Any]): Boolean
     
     /**
       * Executes a VBA event handler.
@@ -309,14 +307,14 @@ object vba {
       * @throws com::sun::star::lang::IllegalArgumentException if the passed event identifier is not supported, or if the passed arguments do not conform to the
       * @throws com::sun::star::util::VetoException if the VBA event handler has indicated to veto the event.
       */
-    def processVbaEvent(nEventId: Double, aArgs: SeqEquiv[_]): Boolean = js.native
+    def processVbaEvent(nEventId: Double, aArgs: SeqEquiv[js.Any]): Boolean
   }
   object XVBAEventProcessor {
     
     @scala.inline
     def apply(
-      hasVbaEventHandler: (Double, SeqEquiv[_]) => Boolean,
-      processVbaEvent: (Double, SeqEquiv[_]) => Boolean
+      hasVbaEventHandler: (Double, SeqEquiv[js.Any]) => Boolean,
+      processVbaEvent: (Double, SeqEquiv[js.Any]) => Boolean
     ): XVBAEventProcessor = {
       val __obj = js.Dynamic.literal(hasVbaEventHandler = js.Any.fromFunction2(hasVbaEventHandler), processVbaEvent = js.Any.fromFunction2(processVbaEvent))
       __obj.asInstanceOf[XVBAEventProcessor]
@@ -326,15 +324,14 @@ object vba {
     implicit class XVBAEventProcessorMutableBuilder[Self <: XVBAEventProcessor] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setHasVbaEventHandler(value: (Double, SeqEquiv[_]) => Boolean): Self = StObject.set(x, "hasVbaEventHandler", js.Any.fromFunction2(value))
+      def setHasVbaEventHandler(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "hasVbaEventHandler", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setProcessVbaEvent(value: (Double, SeqEquiv[_]) => Boolean): Self = StObject.set(x, "processVbaEvent", js.Any.fromFunction2(value))
+      def setProcessVbaEvent(value: (Double, SeqEquiv[js.Any]) => Boolean): Self = StObject.set(x, "processVbaEvent", js.Any.fromFunction2(value))
     }
   }
   
   /** Converts VBA macro names to script URLs and vice versa. */
-  @js.native
   trait XVBAMacroResolver extends StObject {
     
     /**
@@ -343,7 +340,7 @@ object vba {
       * @returns The VBA macro name referring to a macro with the passed script URL.
       * @throws com::sun::star::lang::IllegalArgumentException if a macro with the passed name does not exist.
       */
-    def resolveScriptURLtoVBAMacro(aScriptURL: String): String = js.native
+    def resolveScriptURLtoVBAMacro(aScriptURL: String): String
     
     /**
       * Returns the script URL representing the passed VBA macro name.
@@ -351,7 +348,7 @@ object vba {
       * @returns The script URL referring to the passed VBA macro.
       * @throws com::sun::star::lang::IllegalArgumentException if a macro with the passed name does not exist.
       */
-    def resolveVBAMacroToScriptURL(aVBAMacroName: String): String = js.native
+    def resolveVBAMacroToScriptURL(aVBAMacroName: String): String
   }
   object XVBAMacroResolver {
     
@@ -372,16 +369,15 @@ object vba {
     }
   }
   
-  @js.native
   trait XVBAModuleInfo extends StObject {
     
-    def getModuleInfo(ModuleName: String): ModuleInfo = js.native
+    def getModuleInfo(ModuleName: String): ModuleInfo
     
-    def hasModuleInfo(ModuleName: String): Boolean = js.native
+    def hasModuleInfo(ModuleName: String): Boolean
     
-    def insertModuleInfo(ModuleName: String, ModuleInfo: ModuleInfo): Unit = js.native
+    def insertModuleInfo(ModuleName: String, ModuleInfo: ModuleInfo): Unit
     
-    def removeModuleInfo(ModuleName: String): Unit = js.native
+    def removeModuleInfo(ModuleName: String): Unit
   }
   object XVBAModuleInfo {
     
@@ -413,10 +409,11 @@ object vba {
     }
   }
   
-  @js.native
-  trait XVBAScriptListener extends XEventListener {
+  trait XVBAScriptListener
+    extends StObject
+       with XEventListener {
     
-    def notifyVBAScriptEvent(Event: VBAScriptEvent): Unit = js.native
+    def notifyVBAScriptEvent(Event: VBAScriptEvent): Unit
   }
   object XVBAScriptListener {
     

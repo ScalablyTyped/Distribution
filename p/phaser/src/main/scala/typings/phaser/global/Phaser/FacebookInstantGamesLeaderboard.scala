@@ -2,7 +2,6 @@ package typings.phaser.global.Phaser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("Phaser.FacebookInstantGamesLeaderboard")
 @js.native
 class FacebookInstantGamesLeaderboard protected ()
-  extends typings.phaser.Phaser.FacebookInstantGamesLeaderboard {
+  extends StObject
+     with typings.phaser.Phaser.FacebookInstantGamesLeaderboard {
   /**
     * 
     * @param plugin A reference to the Facebook Instant Games Plugin.

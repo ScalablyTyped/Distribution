@@ -2,31 +2,29 @@ package typings.awsSdk.storagegatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VolumeRecoveryPointInfo extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the volume target.
     */
-  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.native
+  var VolumeARN: js.UndefOr[typings.awsSdk.storagegatewayMod.VolumeARN] = js.undefined
   
   /**
     * The time the recovery point was taken.
     */
-  var VolumeRecoveryPointTime: js.UndefOr[String] = js.native
+  var VolumeRecoveryPointTime: js.UndefOr[String] = js.undefined
   
   /**
     * The size of the volume in bytes.
     */
-  var VolumeSizeInBytes: js.UndefOr[long] = js.native
+  var VolumeSizeInBytes: js.UndefOr[long] = js.undefined
   
   /**
     * The size of the data stored on the volume in bytes.  This value is not available for volumes created prior to May 13, 2015, until you store data on the volume. 
     */
-  var VolumeUsageInBytes: js.UndefOr[long] = js.native
+  var VolumeUsageInBytes: js.UndefOr[long] = js.undefined
 }
 object VolumeRecoveryPointInfo {
   

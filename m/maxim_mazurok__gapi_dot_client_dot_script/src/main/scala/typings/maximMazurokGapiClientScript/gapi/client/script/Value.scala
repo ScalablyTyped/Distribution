@@ -3,42 +3,40 @@ package typings.maximMazurokGapiClientScript.gapi.client.script
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Value extends StObject {
   
   /** Represents a boolean value. */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /** Represents raw byte values. */
-  var bytesValue: js.UndefOr[String] = js.native
+  var bytesValue: js.UndefOr[String] = js.undefined
   
   /** Represents a date in ms since the epoch. */
-  var dateValue: js.UndefOr[String] = js.native
+  var dateValue: js.UndefOr[String] = js.undefined
   
   /** Represents a repeated `Value`. */
-  var listValue: js.UndefOr[ListValue] = js.native
+  var listValue: js.UndefOr[ListValue] = js.undefined
   
   /** Represents a null value. */
-  var nullValue: js.UndefOr[String] = js.native
+  var nullValue: js.UndefOr[String] = js.undefined
   
   /** Represents a double value. */
-  var numberValue: js.UndefOr[Double] = js.native
+  var numberValue: js.UndefOr[Double] = js.undefined
   
   /** Represents a structured proto value. */
   var protoValue: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Represents a string value. */
-  var stringValue: js.UndefOr[String] = js.native
+  var stringValue: js.UndefOr[String] = js.undefined
   
   /** Represents a structured value. */
-  var structValue: js.UndefOr[Struct] = js.native
+  var structValue: js.UndefOr[Struct] = js.undefined
 }
 object Value {
   
@@ -91,7 +89,7 @@ object Value {
     def setProtoValue(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientScript.maximMazurokGapiClientScriptStrings.Value & TopLevel[js.Any]
     ): Self = StObject.set(x, "protoValue", value.asInstanceOf[js.Any])
     
     @scala.inline

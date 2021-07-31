@@ -4,21 +4,21 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitPullRequestStatus extends GitStatus {
+trait GitPullRequestStatus
+  extends StObject
+     with GitStatus {
   
   /**
     * ID of the iteration to associate status with. Minimum value is 1.
     */
-  var iterationId: Double = js.native
+  var iterationId: Double
   
   /**
     * Custom properties of the status.
     */
-  var properties: js.Any = js.native
+  var properties: js.Any
 }
 object GitPullRequestStatus {
   

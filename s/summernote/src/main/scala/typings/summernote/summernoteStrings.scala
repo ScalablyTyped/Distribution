@@ -17,7 +17,6 @@ import typings.summernote.mod.global.Summernote.toolbarStyleGroupOptions
 import typings.summernote.mod.global.Summernote.toolbarViewGroupOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object summernoteStrings {
@@ -28,18 +27,23 @@ object summernoteStrings {
   def backColor: backColor = "backColor".asInstanceOf[backColor]
   
   @js.native
-  sealed trait backcolor_ extends toolbarFontGroupOptions
+  sealed trait backcolor_
+    extends StObject
+       with toolbarFontGroupOptions
   @scala.inline
   def backcolor_ : backcolor_ = "backcolor".asInstanceOf[backcolor_]
   
   @js.native
-  sealed trait blockquote extends styleTagsOptions
+  sealed trait blockquote
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def blockquote: blockquote = "blockquote".asInstanceOf[blockquote]
   
   @js.native
   sealed trait bold
-    extends popoverAirOptionsFont
+    extends StObject
+       with popoverAirOptionsFont
        with toolbarFontGroupOptions
        with toolbarStyleGroupOptions
   @scala.inline
@@ -47,7 +51,8 @@ object summernoteStrings {
   
   @js.native
   sealed trait clear
-    extends popoverAirOptionsFont
+    extends StObject
+       with popoverAirOptionsFont
        with toolbarFontGroupOptions
        with toolbarStyleGroupOptions
   @scala.inline
@@ -60,14 +65,16 @@ object summernoteStrings {
   
   @js.native
   sealed trait codeview
-    extends miscGroupOptions
+    extends StObject
+       with miscGroupOptions
        with toolbarViewGroupOptions
   @scala.inline
   def codeview: codeview = "codeview".asInstanceOf[codeview]
   
   @js.native
   sealed trait color
-    extends toolbarFontGroupOptions
+    extends StObject
+       with toolbarFontGroupOptions
        with toolbarFontsizeGroupOptions
   @scala.inline
   def color: color = "color".asInstanceOf[color]
@@ -238,17 +245,23 @@ object summernoteStrings {
   def float: float = "float".asInstanceOf[float]
   
   @js.native
-  sealed trait floatLeft extends popoverImageOptionsFloat
+  sealed trait floatLeft
+    extends StObject
+       with popoverImageOptionsFloat
   @scala.inline
   def floatLeft: floatLeft = "floatLeft".asInstanceOf[floatLeft]
   
   @js.native
-  sealed trait floatNone extends popoverImageOptionsFloat
+  sealed trait floatNone
+    extends StObject
+       with popoverImageOptionsFloat
   @scala.inline
   def floatNone: floatNone = "floatNone".asInstanceOf[floatNone]
   
   @js.native
-  sealed trait floatRight extends popoverImageOptionsFloat
+  sealed trait floatRight
+    extends StObject
+       with popoverImageOptionsFloat
   @scala.inline
   def floatRight: floatRight = "floatRight".asInstanceOf[floatRight]
   
@@ -274,20 +287,24 @@ object summernoteStrings {
   
   @js.native
   sealed trait fontname_
-    extends toolbarFontGroupOptions
+    extends StObject
+       with toolbarFontGroupOptions
        with toolbarFontsizeGroupOptions
   @scala.inline
   def fontname_ : fontname_ = "fontname".asInstanceOf[fontname_]
   
   @js.native
   sealed trait fontsize_
-    extends toolbarFontGroupOptions
+    extends StObject
+       with toolbarFontGroupOptions
        with toolbarFontsizeGroupOptions
   @scala.inline
   def fontsize_ : fontsize_ = "fontsize".asInstanceOf[fontsize_]
   
   @js.native
-  sealed trait fontsizeunit extends toolbarFontGroupOptions
+  sealed trait fontsizeunit
+    extends StObject
+       with toolbarFontGroupOptions
   @scala.inline
   def fontsizeunit: fontsizeunit = "fontsizeunit".asInstanceOf[fontsizeunit]
   
@@ -297,7 +314,9 @@ object summernoteStrings {
   def foreColor: foreColor = "foreColor".asInstanceOf[foreColor]
   
   @js.native
-  sealed trait forecolor_ extends toolbarFontGroupOptions
+  sealed trait forecolor_
+    extends StObject
+       with toolbarFontGroupOptions
   @scala.inline
   def forecolor_ : forecolor_ = "forecolor".asInstanceOf[forecolor_]
   
@@ -338,70 +357,94 @@ object summernoteStrings {
   
   @js.native
   sealed trait fullscreen
-    extends miscGroupOptions
+    extends StObject
+       with miscGroupOptions
        with toolbarViewGroupOptions
   @scala.inline
   def fullscreen: fullscreen = "fullscreen".asInstanceOf[fullscreen]
   
   @js.native
-  sealed trait h1 extends styleTagsOptions
+  sealed trait h1
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def h1: h1 = "h1".asInstanceOf[h1]
   
   @js.native
-  sealed trait h2 extends styleTagsOptions
+  sealed trait h2
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def h2: h2 = "h2".asInstanceOf[h2]
   
   @js.native
-  sealed trait h3 extends styleTagsOptions
+  sealed trait h3
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def h3: h3 = "h3".asInstanceOf[h3]
   
   @js.native
-  sealed trait h4 extends styleTagsOptions
+  sealed trait h4
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def h4: h4 = "h4".asInstanceOf[h4]
   
   @js.native
-  sealed trait h5 extends styleTagsOptions
+  sealed trait h5
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def h5: h5 = "h5".asInstanceOf[h5]
   
   @js.native
-  sealed trait h6 extends styleTagsOptions
+  sealed trait h6
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def h6: h6 = "h6".asInstanceOf[h6]
   
   @js.native
-  sealed trait height extends toolbarParaGroupOptions
+  sealed trait height
+    extends StObject
+       with toolbarParaGroupOptions
   @scala.inline
   def height: height = "height".asInstanceOf[height]
   
   @js.native
   sealed trait help
-    extends miscGroupOptions
+    extends StObject
+       with miscGroupOptions
        with toolbarViewGroupOptions
   @scala.inline
   def help: help = "help".asInstanceOf[help]
   
   @js.native
-  sealed trait hr extends toolbarInsertGroupOptions
+  sealed trait hr
+    extends StObject
+       with toolbarInsertGroupOptions
   @scala.inline
   def hr: hr = "hr".asInstanceOf[hr]
   
   @js.native
-  sealed trait imageSize100 extends popoverImageOptionsImagesize
+  sealed trait imageSize100
+    extends StObject
+       with popoverImageOptionsImagesize
   @scala.inline
   def imageSize100: imageSize100 = "imageSize100".asInstanceOf[imageSize100]
   
   @js.native
-  sealed trait imageSize25 extends popoverImageOptionsImagesize
+  sealed trait imageSize25
+    extends StObject
+       with popoverImageOptionsImagesize
   @scala.inline
   def imageSize25: imageSize25 = "imageSize25".asInstanceOf[imageSize25]
   
   @js.native
-  sealed trait imageSize50 extends popoverImageOptionsImagesize
+  sealed trait imageSize50
+    extends StObject
+       with popoverImageOptionsImagesize
   @scala.inline
   def imageSize50: imageSize50 = "imageSize50".asInstanceOf[imageSize50]
   
@@ -457,7 +500,8 @@ object summernoteStrings {
   
   @js.native
   sealed trait italic
-    extends toolbarFontGroupOptions
+    extends StObject
+       with toolbarFontGroupOptions
        with toolbarStyleGroupOptions
   @scala.inline
   def italic: italic = "italic".asInstanceOf[italic]
@@ -484,13 +528,16 @@ object summernoteStrings {
   
   @js.native
   sealed trait link
-    extends popoverAirOptionsInsert
+    extends StObject
+       with popoverAirOptionsInsert
        with toolbarInsertGroupOptions
   @scala.inline
   def link: link = "link".asInstanceOf[link]
   
   @js.native
-  sealed trait linkDialogShow extends popoverLinkLinkOptions
+  sealed trait linkDialogShow
+    extends StObject
+       with popoverLinkLinkOptions
   @scala.inline
   def linkDialogShow: linkDialogShow = "linkDialogShow".asInstanceOf[linkDialogShow]
   
@@ -500,7 +547,9 @@ object summernoteStrings {
   def misc: misc = "misc".asInstanceOf[misc]
   
   @js.native
-  sealed trait ol extends toolbarParaGroupOptions
+  sealed trait ol
+    extends StObject
+       with toolbarParaGroupOptions
   @scala.inline
   def ol: ol = "ol".asInstanceOf[ol]
   
@@ -510,7 +559,9 @@ object summernoteStrings {
   def outdent: outdent = "outdent".asInstanceOf[outdent]
   
   @js.native
-  sealed trait p extends styleTagsOptions
+  sealed trait p
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def p: p = "p".asInstanceOf[p]
   
@@ -521,7 +572,8 @@ object summernoteStrings {
   
   @js.native
   sealed trait paragraph
-    extends popoverAirOptionsPara
+    extends StObject
+       with popoverAirOptionsPara
        with toolbarParaGroupOptions
   @scala.inline
   def paragraph: paragraph = "paragraph".asInstanceOf[paragraph]
@@ -533,28 +585,37 @@ object summernoteStrings {
   
   @js.native
   sealed trait picture
-    extends popoverAirOptionsInsert
+    extends StObject
+       with popoverAirOptionsInsert
        with toolbarInsertGroupOptions
   @scala.inline
   def picture: picture = "picture".asInstanceOf[picture]
   
   @js.native
-  sealed trait pre extends styleTagsOptions
+  sealed trait pre
+    extends StObject
+       with styleTagsOptions
   @scala.inline
   def pre: pre = "pre".asInstanceOf[pre]
   
   @js.native
-  sealed trait pt extends fontSizeUnitOptions
+  sealed trait pt
+    extends StObject
+       with fontSizeUnitOptions
   @scala.inline
   def pt: pt = "pt".asInstanceOf[pt]
   
   @js.native
-  sealed trait px extends fontSizeUnitOptions
+  sealed trait px
+    extends StObject
+       with fontSizeUnitOptions
   @scala.inline
   def px: px = "px".asInstanceOf[px]
   
   @js.native
-  sealed trait redo extends miscGroupOptions
+  sealed trait redo
+    extends StObject
+       with miscGroupOptions
   @scala.inline
   def redo: redo = "redo".asInstanceOf[redo]
   
@@ -589,59 +650,76 @@ object summernoteStrings {
   def saveRange: saveRange = "saveRange".asInstanceOf[saveRange]
   
   @js.native
-  sealed trait strikethrough extends toolbarFontGroupOptions
+  sealed trait strikethrough
+    extends StObject
+       with toolbarFontGroupOptions
   @scala.inline
   def strikethrough: strikethrough = "strikethrough".asInstanceOf[strikethrough]
   
   @js.native
   sealed trait style
-    extends toolbarParaGroupOptions
+    extends StObject
+       with toolbarParaGroupOptions
        with toolbarStyleGroupOptions
   @scala.inline
   def style: style = "style".asInstanceOf[style]
   
   @js.native
-  sealed trait subscript extends toolbarFontGroupOptions
+  sealed trait subscript
+    extends StObject
+       with toolbarFontGroupOptions
   @scala.inline
   def subscript: subscript = "subscript".asInstanceOf[subscript]
   
   @js.native
-  sealed trait superscript extends toolbarFontGroupOptions
+  sealed trait superscript
+    extends StObject
+       with toolbarFontGroupOptions
   @scala.inline
   def superscript: superscript = "superscript".asInstanceOf[superscript]
   
   @js.native
-  sealed trait table extends toolbarInsertGroupOptions
+  sealed trait table
+    extends StObject
+       with toolbarInsertGroupOptions
   @scala.inline
   def table: table = "table".asInstanceOf[table]
   
   @js.native
   sealed trait ul
-    extends popoverAirOptionsPara
+    extends StObject
+       with popoverAirOptionsPara
        with toolbarParaGroupOptions
   @scala.inline
   def ul: ul = "ul".asInstanceOf[ul]
   
   @js.native
   sealed trait underline
-    extends popoverAirOptionsFont
+    extends StObject
+       with popoverAirOptionsFont
        with toolbarFontGroupOptions
        with toolbarStyleGroupOptions
   @scala.inline
   def underline: underline = "underline".asInstanceOf[underline]
   
   @js.native
-  sealed trait undo extends miscGroupOptions
+  sealed trait undo
+    extends StObject
+       with miscGroupOptions
   @scala.inline
   def undo: undo = "undo".asInstanceOf[undo]
   
   @js.native
-  sealed trait unlink extends popoverLinkLinkOptions
+  sealed trait unlink
+    extends StObject
+       with popoverLinkLinkOptions
   @scala.inline
   def unlink: unlink = "unlink".asInstanceOf[unlink]
   
   @js.native
-  sealed trait video extends toolbarInsertGroupOptions
+  sealed trait video
+    extends StObject
+       with toolbarInsertGroupOptions
   @scala.inline
   def video: video = "video".asInstanceOf[video]
   

@@ -3,22 +3,22 @@ package typings.awsSdkClientCodecommitNode
 import typings.awsSdkClientCodecommitNode.getBlobExceptionsUnionMod.GetBlobExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBlobIdRequiredExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BlobIdRequiredExceptionDetails> * / any */ @js.native
-  trait BlobIdRequiredException extends GetBlobExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BlobIdRequiredExceptionDetails> * / any */ trait BlobIdRequiredException
+    extends StObject
+       with GetBlobExceptionsUnion {
     
-    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BlobIdRequiredException = js.native
+    var name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BlobIdRequiredException
   }
   object BlobIdRequiredException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientCodecommitNode.awsSdkClientCodecommitNodeStrings.BlobIdRequiredException): BlobIdRequiredException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BlobIdRequiredException = {
+      val __obj = js.Dynamic.literal(name = "BlobIdRequiredException")
       __obj.asInstanceOf[BlobIdRequiredException]
     }
     
@@ -32,6 +32,5 @@ object typesBlobIdRequiredExceptionMod {
     }
   }
   
-  @js.native
   trait BlobIdRequiredExceptionDetails extends StObject
 }

@@ -2,40 +2,39 @@ package typings.aliApp.my
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NotifyBLECharacteristicValueChangedOptions
-  extends BaseOptions[js.Any, js.Any] {
+  extends StObject
+     with BaseOptions[js.Any, js.Any] {
   
   /**
     * 蓝牙特征值的 uuid
     */
-  var characteristicId: String = js.native
+  var characteristicId: String
   
   /**
     * notify 的 descriptor 的 uuid （只有android 会用到，非必填，默认值00002902-0000-10008000-00805f9b34fb）
     */
-  var descriptorId: js.UndefOr[String] = js.native
+  var descriptorId: js.UndefOr[String] = js.undefined
   
   /**
     * 蓝牙设备 id，参考 device 对象
     */
-  var deviceId: String = js.native
+  var deviceId: String
   
   /**
     * 蓝牙特征值对应服务的 uuid
     */
-  var serviceId: String = js.native
+  var serviceId: String
   
   /**
     * true: 启用 notify; false: 停用 notify
     */
-  var state: Boolean = js.native
+  var state: Boolean
   
   @JSName("success")
-  def success_MNotifyBLECharacteristicValueChangedOptions(res: ErrMsgResponse): Unit = js.native
+  def success_MNotifyBLECharacteristicValueChangedOptions(res: ErrMsgResponse): Unit
 }
 object NotifyBLECharacteristicValueChangedOptions {
   

@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getReplicationGroupMod {
   
-  @JSImport("@pulumi/aws/elasticache/getReplicationGroup", "getReplicationGroup")
+  @JSImport("@pulumi/aws/elasticache/getReplicationGroup", JSImport.Namespace)
   @js.native
-  def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] = js.native
-  @JSImport("@pulumi/aws/elasticache/getReplicationGroup", "getReplicationGroup")
-  @js.native
-  def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getReplicationGroup(args: GetReplicationGroupArgs): js.Promise[GetReplicationGroupResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getReplicationGroup")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetReplicationGroupResult]]
+  @scala.inline
+  def getReplicationGroup(args: GetReplicationGroupArgs, opts: InvokeOptions): js.Promise[GetReplicationGroupResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getReplicationGroup")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetReplicationGroupResult]]
+  
   trait GetReplicationGroupArgs extends StObject {
     
     /**
       * The identifier for the replication group.
       */
-    val replicationGroupId: String = js.native
+    val replicationGroupId: String
   }
   object GetReplicationGroupArgs {
     
@@ -39,73 +39,72 @@ object getReplicationGroupMod {
     }
   }
   
-  @js.native
   trait GetReplicationGroupResult extends StObject {
     
     /**
       * A flag that enables using an AuthToken (password) when issuing Redis commands.
       */
-    val authTokenEnabled: Boolean = js.native
+    val authTokenEnabled: Boolean
     
     /**
       * A flag whether a read-only replica will be automatically promoted to read/write primary if the existing primary fails.
       */
-    val automaticFailoverEnabled: Boolean = js.native
+    val automaticFailoverEnabled: Boolean
     
     /**
       * The configuration endpoint address to allow host discovery.
       */
-    val configurationEndpointAddress: String = js.native
+    val configurationEndpointAddress: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The identifiers of all the nodes that are part of this replication group.
       */
-    val memberClusters: js.Array[String] = js.native
+    val memberClusters: js.Array[String]
     
     /**
       * The cluster node type.
       */
-    val nodeType: String = js.native
+    val nodeType: String
     
     /**
       * The number of cache clusters that the replication group has.
       */
-    val numberCacheClusters: Double = js.native
+    val numberCacheClusters: Double
     
     /**
       * The port number on which the configuration endpoint will accept connections.
       */
-    val port: Double = js.native
+    val port: Double
     
     /**
       * The endpoint of the primary node in this node group (shard).
       */
-    val primaryEndpointAddress: String = js.native
+    val primaryEndpointAddress: String
     
     /**
       * The description of the replication group.
       */
-    val replicationGroupDescription: String = js.native
+    val replicationGroupDescription: String
     
     /**
       * The identifier for the replication group.
       */
-    val replicationGroupId: String = js.native
+    val replicationGroupId: String
     
     /**
       * The number of days for which ElastiCache retains automatic cache cluster snapshots before deleting them.
       */
-    val snapshotRetentionLimit: Double = js.native
+    val snapshotRetentionLimit: Double
     
     /**
       * The daily time range (in UTC) during which ElastiCache begins taking a daily snapshot of your node group (shard).
       */
-    val snapshotWindow: String = js.native
+    val snapshotWindow: String
   }
   object GetReplicationGroupResult {
     

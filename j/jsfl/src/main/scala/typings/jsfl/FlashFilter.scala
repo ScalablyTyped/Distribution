@@ -2,49 +2,47 @@ package typings.jsfl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlashFilter extends StObject {
   
-  var angle: Double = js.native
+  var angle: Double
   
-  var blurX: Double = js.native
+  var blurX: Double
   
-  var blurY: Double = js.native
+  var blurY: Double
   
-  var brightness: Double = js.native
+  var brightness: Double
   
-  var color: js.Any = js.native
+  var color: js.Any
   
-  var contrast: Double = js.native
+  var contrast: Double
   
-  var distance: Double = js.native
+  var distance: Double
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var hideObject: Boolean = js.native
+  var hideObject: Boolean
   
-  var highlightColor: js.Any = js.native
+  var highlightColor: js.Any
   
-  var hue: Double = js.native
+  var hue: Double
   
-  var inner: Boolean = js.native
+  var inner: Boolean
   
-  var knockout: Boolean = js.native
+  var knockout: Boolean
   
-  var name: String = js.native
+  var name: String
   
-  var quality: String = js.native
+  var quality: String
   
-  var saturation: Double = js.native
+  var saturation: Double
   
-  var shadowColor: js.Any = js.native
+  var shadowColor: js.Any
   
-  var strength: Double = js.native
+  var strength: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object FlashFilter {
   

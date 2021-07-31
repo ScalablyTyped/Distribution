@@ -2,21 +2,19 @@ package typings.hammerjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TouchAction extends StObject {
   
-  def compute(): String = js.native
+  def compute(): String
   
-  def preventDefaults(input: HammerInput): Unit = js.native
+  def preventDefaults(input: HammerInput): Unit
   
-  def preventSrc(srcEvent: js.Any): Unit = js.native
+  def preventSrc(srcEvent: js.Any): Unit
   
-  def set(value: String): Unit = js.native
+  def set(value: String): Unit
   
-  def update(): Unit = js.native
+  def update(): Unit
 }
 object TouchAction {
   

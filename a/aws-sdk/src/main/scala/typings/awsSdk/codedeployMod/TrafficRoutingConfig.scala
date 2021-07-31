@@ -2,26 +2,24 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrafficRoutingConfig extends StObject {
   
   /**
     * A configuration that shifts traffic from one version of a Lambda function or ECS task set to another in two increments. The original and target Lambda function versions or ECS task sets are specified in the deployment's AppSpec file.
     */
-  var timeBasedCanary: js.UndefOr[TimeBasedCanary] = js.native
+  var timeBasedCanary: js.UndefOr[TimeBasedCanary] = js.undefined
   
   /**
     * A configuration that shifts traffic from one version of a Lambda function or ECS task set to another in equal increments, with an equal number of minutes between each increment. The original and target Lambda function versions or ECS task sets are specified in the deployment's AppSpec file.
     */
-  var timeBasedLinear: js.UndefOr[TimeBasedLinear] = js.native
+  var timeBasedLinear: js.UndefOr[TimeBasedLinear] = js.undefined
   
   /**
     * The type of traffic shifting (TimeBasedCanary or TimeBasedLinear) used by a deployment configuration.
     */
-  var `type`: js.UndefOr[TrafficRoutingType] = js.native
+  var `type`: js.UndefOr[TrafficRoutingType] = js.undefined
 }
 object TrafficRoutingConfig {
   

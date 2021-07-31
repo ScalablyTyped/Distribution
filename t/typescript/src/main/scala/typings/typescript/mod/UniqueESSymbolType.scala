@@ -2,13 +2,13 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UniqueESSymbolType extends Type {
+trait UniqueESSymbolType
+  extends StObject
+     with Type {
   
-  var escapedName: String = js.native
+  var escapedName: String
 }
 object UniqueESSymbolType {
   

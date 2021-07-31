@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.TpStateDeleteResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITpStateDeleteResponse extends StObject {
   
   /** TpStateDeleteResponse addresses */
-  var addresses: js.UndefOr[js.Array[String] | Null] = js.native
+  var addresses: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** TpStateDeleteResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object ITpStateDeleteResponse {
   

@@ -1,33 +1,30 @@
 package typings.wonderJs
 
-import org.scalablytyped.runtime.TopLevel
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("wonder.js/dist/es2015/renderer/buffer/EBufferDataType", JSImport.Namespace)
-@js.native
-object ebufferdatatypeMod extends js.Object {
-  @js.native
-  sealed trait EBufferDataType extends js.Object
+object ebufferdatatypeMod {
   
   @js.native
-  object EBufferDataType extends js.Object {
-    @js.native
-    sealed trait INDICE extends EBufferDataType
-    
-    @js.native
-    sealed trait VERTICE extends EBufferDataType
+  sealed trait EBufferDataType extends StObject
+  @JSImport("wonder.js/dist/es2015/renderer/buffer/EBufferDataType", "EBufferDataType")
+  @js.native
+  object EBufferDataType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EBufferDataType with Double] = js.native
-    /* 1 */ @js.native
-    object INDICE extends TopLevel[INDICE with Double]
+    def apply(value: Double): js.UndefOr[EBufferDataType & Double] = js.native
     
-    /* 0 */ @js.native
-    object VERTICE extends TopLevel[VERTICE with Double]
+    @js.native
+    sealed trait INDICE
+      extends StObject
+         with EBufferDataType
+    /* 1 */ val INDICE: typings.wonderJs.ebufferdatatypeMod.EBufferDataType.INDICE & Double = js.native
     
+    @js.native
+    sealed trait VERTICE
+      extends StObject
+         with EBufferDataType
+    /* 0 */ val VERTICE: typings.wonderJs.ebufferdatatypeMod.EBufferDataType.VERTICE & Double = js.native
   }
-  
 }
-

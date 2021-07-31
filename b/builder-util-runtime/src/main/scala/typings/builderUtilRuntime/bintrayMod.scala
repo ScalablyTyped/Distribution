@@ -6,7 +6,6 @@ import typings.builderUtilRuntime.httpExecutorMod.RequestHeaders
 import typings.builderUtilRuntime.publishOptionsMod.BintrayOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object bintrayMod {
@@ -14,10 +13,10 @@ object bintrayMod {
   @JSImport("builder-util-runtime/out/bintray", "BintrayClient")
   @js.native
   class BintrayClient protected () extends StObject {
-    def this(options: BintrayOptions, httpExecutor: HttpExecutor[_], cancellationToken: CancellationToken) = this()
+    def this(options: BintrayOptions, httpExecutor: HttpExecutor[js.Any], cancellationToken: CancellationToken) = this()
     def this(
       options: BintrayOptions,
-      httpExecutor: HttpExecutor[_],
+      httpExecutor: HttpExecutor[js.Any],
       cancellationToken: CancellationToken,
       apiKey: String
     ) = this()
@@ -32,9 +31,9 @@ object bintrayMod {
     
     val component: String | Null = js.native
     
-    def createVersion(version: String): js.Promise[_] = js.native
+    def createVersion(version: String): js.Promise[js.Any] = js.native
     
-    def deleteVersion(version: String): js.Promise[_] = js.native
+    def deleteVersion(version: String): js.Promise[js.Any] = js.native
     
     val distribution: String | Null = js.native
     
@@ -58,16 +57,15 @@ object bintrayMod {
     val user: String = js.native
   }
   
-  @js.native
   trait File extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var path: String = js.native
+    var path: String
     
-    var sha1: String = js.native
+    var sha1: String
     
-    var sha256: String = js.native
+    var sha256: String
   }
   object File {
     
@@ -94,13 +92,12 @@ object bintrayMod {
     }
   }
   
-  @js.native
   trait Version extends StObject {
     
     @JSName("package")
-    val _package: String = js.native
+    val _package: String
     
-    val name: String = js.native
+    val name: String
   }
   object Version {
     

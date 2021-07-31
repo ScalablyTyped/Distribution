@@ -2,14 +2,14 @@ package typings.sparkpost.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RecipientListWithRecipients extends RecipientList {
+trait RecipientListWithRecipients
+  extends StObject
+     with RecipientList {
   
   /** Array of recipient objects */
-  var recipients: js.Array[Recipient] = js.native
+  var recipients: js.Array[Recipient]
 }
 object RecipientListWithRecipients {
   

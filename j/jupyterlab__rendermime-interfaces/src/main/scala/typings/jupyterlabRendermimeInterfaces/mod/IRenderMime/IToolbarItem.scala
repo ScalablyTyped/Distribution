@@ -3,18 +3,16 @@ package typings.jupyterlabRendermimeInterfaces.mod.IRenderMime
 import typings.luminoWidgets.mod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A toolbar item.
   */
-@js.native
 trait IToolbarItem extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var widget: Widget = js.native
+  var widget: Widget
 }
 object IToolbarItem {
   

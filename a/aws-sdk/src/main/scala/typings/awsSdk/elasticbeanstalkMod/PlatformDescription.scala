@@ -2,116 +2,114 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlatformDescription extends StObject {
   
   /**
     * The custom AMIs supported by the platform version.
     */
-  var CustomAmiList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.CustomAmiList] = js.native
+  var CustomAmiList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.CustomAmiList] = js.undefined
   
   /**
     * The date when the platform version was created.
     */
-  var DateCreated: js.UndefOr[CreationDate] = js.native
+  var DateCreated: js.UndefOr[CreationDate] = js.undefined
   
   /**
     * The date when the platform version was last updated.
     */
-  var DateUpdated: js.UndefOr[UpdateDate] = js.native
+  var DateUpdated: js.UndefOr[UpdateDate] = js.undefined
   
   /**
     * The description of the platform version.
     */
-  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.native
+  var Description: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Description] = js.undefined
   
   /**
     * The frameworks supported by the platform version.
     */
-  var Frameworks: js.UndefOr[PlatformFrameworks] = js.native
+  var Frameworks: js.UndefOr[PlatformFrameworks] = js.undefined
   
   /**
     * Information about the maintainer of the platform version.
     */
-  var Maintainer: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Maintainer] = js.native
+  var Maintainer: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Maintainer] = js.undefined
   
   /**
     * The operating system used by the platform version.
     */
-  var OperatingSystemName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.OperatingSystemName] = js.native
+  var OperatingSystemName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.OperatingSystemName] = js.undefined
   
   /**
     * The version of the operating system used by the platform version.
     */
-  var OperatingSystemVersion: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.OperatingSystemVersion] = js.native
+  var OperatingSystemVersion: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.OperatingSystemVersion] = js.undefined
   
   /**
     * The ARN of the platform version.
     */
-  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.native
+  var PlatformArn: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformArn] = js.undefined
   
   /**
     * The state of the platform version's branch in its lifecycle. Possible values: Beta | Supported | Deprecated | Retired 
     */
-  var PlatformBranchLifecycleState: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformBranchLifecycleState] = js.native
+  var PlatformBranchLifecycleState: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformBranchLifecycleState] = js.undefined
   
   /**
     * The platform branch to which the platform version belongs.
     */
-  var PlatformBranchName: js.UndefOr[BranchName] = js.native
+  var PlatformBranchName: js.UndefOr[BranchName] = js.undefined
   
   /**
     * The category of the platform version.
     */
-  var PlatformCategory: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformCategory] = js.native
+  var PlatformCategory: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformCategory] = js.undefined
   
   /**
     * The state of the platform version in its lifecycle. Possible values: Recommended | null  If a null value is returned, the platform version isn't the recommended one for its branch. Each platform branch has a single recommended platform version, typically the most recent one.
     */
-  var PlatformLifecycleState: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformLifecycleState] = js.native
+  var PlatformLifecycleState: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformLifecycleState] = js.undefined
   
   /**
     * The name of the platform version.
     */
-  var PlatformName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformName] = js.native
+  var PlatformName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformName] = js.undefined
   
   /**
     * The AWS account ID of the person who created the platform version.
     */
-  var PlatformOwner: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformOwner] = js.native
+  var PlatformOwner: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformOwner] = js.undefined
   
   /**
     * The status of the platform version.
     */
-  var PlatformStatus: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformStatus] = js.native
+  var PlatformStatus: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformStatus] = js.undefined
   
   /**
     * The version of the platform version.
     */
-  var PlatformVersion: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformVersion] = js.native
+  var PlatformVersion: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.PlatformVersion] = js.undefined
   
   /**
     * The programming languages supported by the platform version.
     */
-  var ProgrammingLanguages: js.UndefOr[PlatformProgrammingLanguages] = js.native
+  var ProgrammingLanguages: js.UndefOr[PlatformProgrammingLanguages] = js.undefined
   
   /**
     * The name of the solution stack used by the platform version.
     */
-  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.native
+  var SolutionStackName: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SolutionStackName] = js.undefined
   
   /**
     * The additions supported by the platform version.
     */
-  var SupportedAddonList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SupportedAddonList] = js.native
+  var SupportedAddonList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SupportedAddonList] = js.undefined
   
   /**
     * The tiers supported by the platform version.
     */
-  var SupportedTierList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SupportedTierList] = js.native
+  var SupportedTierList: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SupportedTierList] = js.undefined
 }
 object PlatformDescription {
   

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.codedeploy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentGroupEcsService extends StObject {
   
   /**
     * The name of the ECS cluster.
     */
-  var clusterName: String = js.native
+  var clusterName: String
   
   /**
     * The name of the ECS service.
     */
-  var serviceName: String = js.native
+  var serviceName: String
 }
 object DeploymentGroupEcsService {
   

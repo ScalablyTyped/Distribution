@@ -2,41 +2,39 @@ package typings.awsSdk.codestarconnectionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Connection extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the connection. The ARN is used as the connection reference when the connection is shared between AWS services.  The ARN is never reused if the connection is deleted. 
     */
-  var ConnectionArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionArn] = js.native
+  var ConnectionArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionArn] = js.undefined
   
   /**
     * The name of the connection. Connection names must be unique in an AWS user account.
     */
-  var ConnectionName: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionName] = js.native
+  var ConnectionName: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionName] = js.undefined
   
   /**
     * The current status of the connection. 
     */
-  var ConnectionStatus: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionStatus] = js.native
+  var ConnectionStatus: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ConnectionStatus] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the host associated with the connection.
     */
-  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.native
+  var HostArn: js.UndefOr[typings.awsSdk.codestarconnectionsMod.HostArn] = js.undefined
   
   /**
     * The identifier of the external provider where your third-party code repository is configured. For Bitbucket, this is the account ID of the owner of the Bitbucket repository.
     */
-  var OwnerAccountId: js.UndefOr[AccountId] = js.native
+  var OwnerAccountId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * The name of the external provider where your third-party code repository is configured. The valid provider type is Bitbucket.
     */
-  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.native
+  var ProviderType: js.UndefOr[typings.awsSdk.codestarconnectionsMod.ProviderType] = js.undefined
 }
 object Connection {
   

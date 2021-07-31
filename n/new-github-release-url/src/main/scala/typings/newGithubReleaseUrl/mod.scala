@@ -3,7 +3,6 @@ package typings.newGithubReleaseUrl
 import typings.typeFest.mergeExclusiveMod.MergeExclusive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,40 +24,42 @@ object mod {
   open(url);
   ```
   */
+  @scala.inline
+  def apply(options: Options): String = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   @JSImport("new-github-release-url", JSImport.Namespace)
   @js.native
-  def apply(options: Options): String = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait BaseOptions extends StObject {
     
     /**
     		The description text of the release.
     		*/
-    val body: js.UndefOr[String] = js.native
+    val body: js.UndefOr[String] = js.undefined
     
     /**
     		Whether the release should be marked as a pre-release.
     		@default false
     		*/
-    val isPrerelease: js.UndefOr[Boolean] = js.native
+    val isPrerelease: js.UndefOr[Boolean] = js.undefined
     
     /**
     		The tag name of the release.
     		*/
-    val tag: js.UndefOr[String] = js.native
+    val tag: js.UndefOr[String] = js.undefined
     
     /**
     		The branch name or commit SHA to point the release's tag at, if the tag doesn't already exist.
     		Default: The default branch.
     		*/
-    val target: js.UndefOr[String] = js.native
+    val target: js.UndefOr[String] = js.undefined
     
     /**
     		The title of the release.
     		GitHub shows the `tag` name when not specified.
     		*/
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
   }
   object BaseOptions {
     
@@ -105,13 +106,14 @@ object mod {
   
   type Options = MergeExclusive[RepoUrlOptions, UserRepoOptions]
   
-  @js.native
-  trait RepoUrlOptions extends BaseOptions {
+  trait RepoUrlOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		The full URL to the repo.
     		*/
-    val repoUrl: String = js.native
+    val repoUrl: String
   }
   object RepoUrlOptions {
     
@@ -129,18 +131,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait UserRepoOptions extends BaseOptions {
+  trait UserRepoOptions
+    extends StObject
+       with BaseOptions {
     
     /**
     		GitHub repo.
     		*/
-    val repo: String = js.native
+    val repo: String
     
     /**
     		GitHub username or organization.
     		*/
-    val user: String = js.native
+    val user: String
   }
   object UserRepoOptions {
     

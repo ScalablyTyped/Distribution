@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BucketId extends StObject {
   
   /** Id of the bucket the file object is stored in. */
-  var bucketId: js.UndefOr[String] = js.native
+  var bucketId: js.UndefOr[String] = js.undefined
   
   /** Id of the file object containing the report data. */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
 }
 object BucketId {
   

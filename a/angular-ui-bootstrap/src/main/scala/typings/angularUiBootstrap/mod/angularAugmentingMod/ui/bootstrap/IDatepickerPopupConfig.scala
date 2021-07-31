@@ -3,100 +3,100 @@ package typings.angularUiBootstrap.mod.angularAugmentingMod.ui.bootstrap
 import typings.angularUiBootstrap.anon.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDatepickerPopupConfig extends IDatepickerConfig {
+trait IDatepickerPopupConfig
+  extends StObject
+     with IDatepickerConfig {
   
   /**
     * A list of alternate formats acceptable for manual entry.
     *
     * @default []
     */
-  var altInputFormats: js.UndefOr[js.Array[String]] = js.native
+  var altInputFormats: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Append the datepicker popup element to `body`, rather than inserting after `datepicker-popup`.
     *
     * @default false
     */
-  var appendToBody: js.UndefOr[Boolean] = js.native
+  var appendToBody: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text to display for the clear button.
     *
     * @default 'Clear'
     */
-  var clearText: js.UndefOr[String] = js.native
+  var clearText: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to close calendar when a date is chosen.
     *
     * @default true
     */
-  var closeOnDateSelection: js.UndefOr[Boolean] = js.native
+  var closeOnDateSelection: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The text to display for the close button.
     *
     * @default 'Done'
     */
-  var closeText: js.UndefOr[String] = js.native
+  var closeText: js.UndefOr[String] = js.undefined
   
   /**
     * The text to display for the current day button.
     *
     * @default 'Today'
     */
-  var currentText: js.UndefOr[String] = js.native
+  var currentText: js.UndefOr[String] = js.undefined
   
   /**
     * The format for displayed dates.
     *
     * @default 'yyyy-MM-dd'
     */
-  var datepickerPopup: js.UndefOr[String] = js.native
+  var datepickerPopup: js.UndefOr[String] = js.undefined
   
   /**
     * Allows overriding of default template of the popup.
     *
     * @default 'template/datepicker/popup.html'
     */
-  var datepickerPopupTemplateUrl: js.UndefOr[String] = js.native
+  var datepickerPopupTemplateUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Allows overriding of default template of the datepicker used in popup.
     *
     * @default 'template/datepicker/popup.html'
     */
-  var datepickerTemplateUrl: js.UndefOr[String] = js.native
+  var datepickerTemplateUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Allows overriding of the default format for html5 date inputs.
     */
-  var html5Types: js.UndefOr[Date] = js.native
+  var html5Types: js.UndefOr[Date] = js.undefined
   
   /**
     * Whether to focus the datepicker popup upon opening.
     *
     * @default true
     */
-  var onOpenFocus: js.UndefOr[Boolean] = js.native
+  var onOpenFocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Passing in 'auto' separated by a space before the placement will enable auto positioning, e.g: "auto bottom-left". The popup will attempt to position where it fits in the closest scrollable ancestor.
     *
     * @default 'auto bottom-left'
     */
-  var placement: js.UndefOr[String] = js.native
+  var placement: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to display a button bar underneath the datepicker.
     *
     * @default true
     */
-  var showButtonBar: js.UndefOr[Boolean] = js.native
+  var showButtonBar: js.UndefOr[Boolean] = js.undefined
 }
 object IDatepickerPopupConfig {
   

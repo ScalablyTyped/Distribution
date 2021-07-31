@@ -13,7 +13,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object overlayFSMod {
@@ -32,12 +31,15 @@ object overlayFSMod {
   /* static members */
   object default {
     
+    @JSImport("browserfs/dist/node/backend/OverlayFS", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Constructs and initializes an OverlayFS instance with the given options.
       */
-    @JSImport("browserfs/dist/node/backend/OverlayFS", "default.Create")
-    @js.native
-    def Create(opts: OverlayFSOptions, cb: BFSCallback[OverlayFS]): Unit = js.native
+    @scala.inline
+    def Create(opts: OverlayFSOptions, cb: BFSCallback[OverlayFS]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("Create")(opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     @JSImport("browserfs/dist/node/backend/OverlayFS", "default.Name")
     @js.native
@@ -47,9 +49,8 @@ object overlayFSMod {
     @js.native
     val Options: FileSystemOptions = js.native
     
-    @JSImport("browserfs/dist/node/backend/OverlayFS", "default.isAvailable")
-    @js.native
-    def isAvailable(): Boolean = js.native
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @JSImport("browserfs/dist/node/backend/OverlayFS", "UnlockedOverlayFS")
@@ -122,7 +123,7 @@ object overlayFSMod {
     /* private */ def deletePath(p: js.Any): js.Any = js.native
     
     /* InferMemberOverrides */
-    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, _]): Unit = js.native
+    override def diskSpace(p: String, cb: js.Function2[/* total */ Double, /* free */ Double, js.Any]): Unit = js.native
     
     /* InferMemberOverrides */
     override def exists(p: String, cb: js.Function1[/* exists */ Boolean, Unit]): Unit = js.native
@@ -253,9 +254,12 @@ object overlayFSMod {
   /* static members */
   object UnlockedOverlayFS {
     
-    @JSImport("browserfs/dist/node/backend/OverlayFS", "UnlockedOverlayFS.isAvailable")
+    @JSImport("browserfs/dist/node/backend/OverlayFS", "UnlockedOverlayFS")
     @js.native
-    def isAvailable(): Boolean = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def isAvailable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isAvailable")().asInstanceOf[Boolean]
   }
   
   @js.native
@@ -269,12 +273,11 @@ object overlayFSMod {
     def unwrap(): UnlockedOverlayFS = js.native
   }
   
-  @js.native
   trait OverlayFSOptions extends StObject {
     
-    var readable: FileSystem = js.native
+    var readable: FileSystem
     
-    var writable: FileSystem = js.native
+    var writable: FileSystem
   }
   object OverlayFSOptions {
     

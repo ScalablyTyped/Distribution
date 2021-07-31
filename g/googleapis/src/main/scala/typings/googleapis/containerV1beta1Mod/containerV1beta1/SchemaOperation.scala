@@ -2,31 +2,29 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This operation resource represents operations that may have happened or are
   * happening on the cluster. All fields are output only.
   */
-@js.native
 trait SchemaOperation extends StObject {
   
   /**
     * Which conditions caused the current cluster state.
     */
-  var clusterConditions: js.UndefOr[js.Array[SchemaStatusCondition]] = js.native
+  var clusterConditions: js.UndefOr[js.Array[SchemaStatusCondition]] = js.undefined
   
   /**
     * Detailed operation progress, if available.
     */
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The time the operation completed, in
     * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The name of the Google Compute Engine
@@ -34,60 +32,60 @@ trait SchemaOperation extends StObject {
     * [region](/compute/docs/regions-zones/regions-zones#available) in which
     * the cluster resides.
     */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /**
     * The server-assigned ID for the operation.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Which conditions caused the current node pool state.
     */
-  var nodepoolConditions: js.UndefOr[js.Array[SchemaStatusCondition]] = js.native
+  var nodepoolConditions: js.UndefOr[js.Array[SchemaStatusCondition]] = js.undefined
   
   /**
     * The operation type.
     */
-  var operationType: js.UndefOr[String] = js.native
+  var operationType: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] Progress information for an operation.
     */
-  var progress: js.UndefOr[SchemaOperationProgress] = js.native
+  var progress: js.UndefOr[SchemaOperationProgress] = js.undefined
   
   /**
     * Server-defined URL for the resource.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
   
   /**
     * [Output only] The time the operation started, in
     * [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * The current status of the operation.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * If an error has occurred, a textual description of the error.
     */
-  var statusMessage: js.UndefOr[String] = js.native
+  var statusMessage: js.UndefOr[String] = js.undefined
   
   /**
     * Server-defined URL for the target of the operation.
     */
-  var targetLink: js.UndefOr[String] = js.native
+  var targetLink: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the Google Compute Engine
     * [zone](/compute/docs/zones#available) in which the operation is taking
     * place. This field is deprecated, use location instead.
     */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object SchemaOperation {
   

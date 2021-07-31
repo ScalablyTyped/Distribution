@@ -2,23 +2,21 @@ package typings.qlik.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NxMeasure extends StObject {
   
-  var qAttributeDimensions: js.Array[NxAttrDimDef] = js.native
+  var qAttributeDimensions: js.Array[NxAttrDimDef]
   
-  var qAttributeExpressions: js.Array[NxAttrExprDef] = js.native
+  var qAttributeExpressions: js.Array[NxAttrExprDef]
   
-  var qCalcCond: ValueExpr = js.native
+  var qCalcCond: ValueExpr
   
-  var qDef: NxInlineMeasureDef = js.native
+  var qDef: NxInlineMeasureDef
   
-  var qLibraryId: String = js.native
+  var qLibraryId: String
   
-  var qSortBy: SortCriteria = js.native
+  var qSortBy: SortCriteria
 }
 object NxMeasure {
   

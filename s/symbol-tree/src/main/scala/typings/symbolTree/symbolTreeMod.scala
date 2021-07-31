@@ -8,7 +8,6 @@ import typings.symbolTree.symbolTreeNumbers.`4`
 import typings.symbolTree.symbolTreeNumbers.`8`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object symbolTreeMod {
@@ -20,7 +19,9 @@ object symbolTreeMod {
     *
     *        **Default:** `'SymbolTree data'`
     */
-  class ^[T /* <: js.Object */] () extends SymbolTree[T] {
+  class ^[T /* <: js.Object */] ()
+    extends StObject
+       with SymbolTree[T] {
     def this(description: String) = this()
   }
   
@@ -48,7 +49,6 @@ object symbolTreeMod {
     val PRECEDING: `2` = js.native
   }
   
-  @js.native
   trait IteratorOptions extends StObject {
     
     /**
@@ -56,7 +56,7 @@ object symbolTreeMod {
       *
       * @default false
       */
-    var reverse: js.UndefOr[Boolean] = js.native
+    var reverse: js.UndefOr[Boolean] = js.undefined
   }
   object IteratorOptions {
     
@@ -77,7 +77,6 @@ object symbolTreeMod {
     }
   }
   
-  @js.native
   trait SiblingOptions[T /* <: js.Object */] extends StObject {
     
     /**
@@ -87,14 +86,14 @@ object symbolTreeMod {
       *
       * @default null
       */
-    var root: js.UndefOr[T | Null] = js.native
+    var root: js.UndefOr[T | Null] = js.undefined
     
     /**
       * If set, ignore the children of `object`
       *
       * @default false
       */
-    var skipChildren: js.UndefOr[Boolean] = js.native
+    var skipChildren: js.UndefOr[Boolean] = js.undefined
   }
   object SiblingOptions {
     
@@ -105,7 +104,7 @@ object symbolTreeMod {
     }
     
     @scala.inline
-    implicit class SiblingOptionsMutableBuilder[Self <: SiblingOptions[_], T /* <: js.Object */] (val x: Self with SiblingOptions[T]) extends AnyVal {
+    implicit class SiblingOptionsMutableBuilder[Self <: SiblingOptions[?], T /* <: js.Object */] (val x: Self & SiblingOptions[T]) extends AnyVal {
       
       @scala.inline
       def setRoot(value: T): Self = StObject.set(x, "root", value.asInstanceOf[js.Any])
@@ -138,6 +137,7 @@ object symbolTreeMod {
     
     def ancestorsToArray(`object`: T): js.Array[T] = js.native
     def ancestorsToArray(`object`: T, options: ToArrayOptions[T]): js.Array[T] = js.native
+    def ancestorsToArray[THIS](`object`: T, options: ToArrayOptions[T] & (Filter[THIS, T])): js.Array[T] = js.native
     /**
       * Append all inclusive ancestors of the given object to an array.
       *
@@ -145,8 +145,6 @@ object symbolTreeMod {
       */
     @JSName("ancestorsToArray")
     def ancestorsToArray_THIS[THIS](`object`: T): js.Array[T] = js.native
-    @JSName("ancestorsToArray")
-    def ancestorsToArray_THIS[THIS](`object`: T, options: ToArrayOptions[T] with (Filter[THIS, T])): js.Array[T] = js.native
     
     /**
       * Insert the given object as the last child of the given reference object.
@@ -178,6 +176,7 @@ object symbolTreeMod {
     
     def childrenToArray(parent: T): js.Array[T] = js.native
     def childrenToArray(parent: T, options: ToArrayOptions[T]): js.Array[T] = js.native
+    def childrenToArray[THIS](parent: T, options: ToArrayOptions[T] & (Filter[THIS, T])): js.Array[T] = js.native
     /**
       * Append all children of the given object to an array.
       *
@@ -185,8 +184,6 @@ object symbolTreeMod {
       */
     @JSName("childrenToArray")
     def childrenToArray_THIS[THIS](parent: T): js.Array[T] = js.native
-    @JSName("childrenToArray")
-    def childrenToArray_THIS[THIS](parent: T, options: ToArrayOptions[T] with (Filter[THIS, T])): js.Array[T] = js.native
     
     /**
       * Compare the position of an object relative to another object. A bit set is returned:
@@ -371,6 +368,7 @@ object symbolTreeMod {
     
     def treeToArray(`object`: T): js.Array[T] = js.native
     def treeToArray(`object`: T, options: ToArrayOptions[T]): js.Array[T] = js.native
+    def treeToArray[THIS](`object`: T, options: ToArrayOptions[T] & (Filter[THIS, T])): js.Array[T] = js.native
     /**
       * Append all descendants of the given object to an array (in tree order).
       *
@@ -378,11 +376,8 @@ object symbolTreeMod {
       */
     @JSName("treeToArray")
     def treeToArray_THIS[THIS](`object`: T): js.Array[T] = js.native
-    @JSName("treeToArray")
-    def treeToArray_THIS[THIS](`object`: T, options: ToArrayOptions[T] with (Filter[THIS, T])): js.Array[T] = js.native
   }
   
-  @js.native
   trait ToArrayOptions[T /* <: js.Object */] extends StObject {
     
     /**
@@ -393,7 +388,7 @@ object symbolTreeMod {
       * new Array(0);
       * ```
       */
-    var array: js.UndefOr[js.Array[T]] = js.native
+    var array: js.UndefOr[js.Array[T]] = js.undefined
     
     /**
       * Function to test each object before it is added to the array.
@@ -403,10 +398,10 @@ object symbolTreeMod {
       *
       * @param object
       */
-    var filter: js.UndefOr[js.Function1[/* object */ T, _]] = js.native
+    var filter: js.UndefOr[js.Function1[/* object */ T, js.Any]] = js.undefined
     
     /** Value to use as `this` when executing `filter`. */
-    var thisArg: js.UndefOr[js.Any] = js.native
+    var thisArg: js.UndefOr[js.Any] = js.undefined
   }
   object ToArrayOptions {
     
@@ -417,7 +412,7 @@ object symbolTreeMod {
     }
     
     @scala.inline
-    implicit class ToArrayOptionsMutableBuilder[Self <: ToArrayOptions[_], T /* <: js.Object */] (val x: Self with ToArrayOptions[T]) extends AnyVal {
+    implicit class ToArrayOptionsMutableBuilder[Self <: ToArrayOptions[?], T /* <: js.Object */] (val x: Self & ToArrayOptions[T]) extends AnyVal {
       
       @scala.inline
       def setArray(value: js.Array[T]): Self = StObject.set(x, "array", value.asInstanceOf[js.Any])
@@ -429,7 +424,7 @@ object symbolTreeMod {
       def setArrayVarargs(value: T*): Self = StObject.set(x, "array", js.Array(value :_*))
       
       @scala.inline
-      def setFilter(value: /* object */ T => _): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
+      def setFilter(value: /* object */ T => js.Any): Self = StObject.set(x, "filter", js.Any.fromFunction1(value))
       
       @scala.inline
       def setFilterUndefined: Self = StObject.set(x, "filter", js.undefined)

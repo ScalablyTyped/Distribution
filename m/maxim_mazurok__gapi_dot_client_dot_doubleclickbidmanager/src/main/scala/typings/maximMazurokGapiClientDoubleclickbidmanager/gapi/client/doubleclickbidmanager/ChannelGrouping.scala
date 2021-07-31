@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDoubleclickbidmanager.gapi.client.doublecl
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChannelGrouping extends StObject {
   
   /** The name to apply to an event that does not match any of the rules in the channel grouping. */
-  var fallbackName: js.UndefOr[String] = js.native
+  var fallbackName: js.UndefOr[String] = js.undefined
   
   /** Channel Grouping name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Rules within Channel Grouping. There is a limit of 100 rules that can be set per channel grouping. */
-  var rules: js.UndefOr[js.Array[Rule]] = js.native
+  var rules: js.UndefOr[js.Array[Rule]] = js.undefined
 }
 object ChannelGrouping {
   

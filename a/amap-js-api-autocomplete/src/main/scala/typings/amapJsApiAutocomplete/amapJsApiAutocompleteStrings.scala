@@ -4,23 +4,28 @@ import typings.amapJsApiAutocomplete.AMap.Autocomplete.DataType
 import typings.amapJsApiAutocomplete.AMap.Autocomplete.SearchStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object amapJsApiAutocompleteStrings {
   
   @js.native
-  sealed trait all extends DataType
+  sealed trait all
+    extends StObject
+       with DataType
   @scala.inline
   def all: all = "all".asInstanceOf[all]
   
   @js.native
-  sealed trait bus extends DataType
+  sealed trait bus
+    extends StObject
+       with DataType
   @scala.inline
   def bus: bus = "bus".asInstanceOf[bus]
   
   @js.native
-  sealed trait busline extends DataType
+  sealed trait busline
+    extends StObject
+       with DataType
   @scala.inline
   def busline: busline = "busline".asInstanceOf[busline]
   
@@ -30,22 +35,30 @@ object amapJsApiAutocompleteStrings {
   def choose: choose = "choose".asInstanceOf[choose]
   
   @js.native
-  sealed trait complete extends SearchStatus
+  sealed trait complete
+    extends StObject
+       with SearchStatus
   @scala.inline
   def complete: complete = "complete".asInstanceOf[complete]
   
   @js.native
-  sealed trait error extends SearchStatus
+  sealed trait error
+    extends StObject
+       with SearchStatus
   @scala.inline
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait no_data extends SearchStatus
+  sealed trait no_data
+    extends StObject
+       with SearchStatus
   @scala.inline
   def no_data: no_data = "no_data".asInstanceOf[no_data]
   
   @js.native
-  sealed trait poi extends DataType
+  sealed trait poi
+    extends StObject
+       with DataType
   @scala.inline
   def poi: poi = "poi".asInstanceOf[poi]
   

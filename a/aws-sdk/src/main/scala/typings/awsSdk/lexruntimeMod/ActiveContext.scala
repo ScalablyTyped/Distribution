@@ -2,26 +2,24 @@ package typings.awsSdk.lexruntimeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActiveContext extends StObject {
   
   /**
     * The name of the context.
     */
-  var name: ActiveContextName = js.native
+  var name: ActiveContextName
   
   /**
     * State variables for the current context. You can use these values as default values for slots in subsequent events.
     */
-  var parameters: ActiveContextParametersMap = js.native
+  var parameters: ActiveContextParametersMap
   
   /**
     * The length of time or number of turns that a context remains active.
     */
-  var timeToLive: ActiveContextTimeToLive = js.native
+  var timeToLive: ActiveContextTimeToLive
 }
 object ActiveContext {
   

@@ -5,22 +5,22 @@ import typings.nodelibFsScandir.settingsMod.default
 import typings.nodelibFsScandir.typesMod.Entry
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object asyncMod {
   
-  @JSImport("@nodelib/fs.scandir/out/providers/async", "read")
+  @JSImport("@nodelib/fs.scandir/out/providers/async", JSImport.Namespace)
   @js.native
-  def read(directory: String, settings: default, callback: AsyncCallback): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@nodelib/fs.scandir/out/providers/async", "readdir")
-  @js.native
-  def readdir(directory: String, settings: default, callback: AsyncCallback): Unit = js.native
+  @scala.inline
+  def read(directory: String, settings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("read")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@nodelib/fs.scandir/out/providers/async", "readdirWithFileTypes")
-  @js.native
-  def readdirWithFileTypes(directory: String, settings: default, callback: AsyncCallback): Unit = js.native
+  @scala.inline
+  def readdir(directory: String, settings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdir")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def readdirWithFileTypes(directory: String, settings: default, callback: AsyncCallback): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("readdirWithFileTypes")(directory.asInstanceOf[js.Any], settings.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   type AsyncCallback = js.Function2[/* err */ ErrnoException, /* entries */ js.Array[Entry], Unit]
 }

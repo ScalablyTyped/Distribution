@@ -3,13 +3,13 @@ package typings.googleCloudStorage.bucketMod
 import typings.googleCloudCommon.serviceObjectMod.GetConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BucketExistsOptions extends GetConfig {
+trait BucketExistsOptions
+  extends StObject
+     with GetConfig {
   
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object BucketExistsOptions {
   

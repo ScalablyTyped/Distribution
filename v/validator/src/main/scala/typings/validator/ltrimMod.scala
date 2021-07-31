@@ -2,20 +2,21 @@ package typings.validator
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ltrimMod {
+  
+  @JSImport("validator/lib/ltrim", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Trim characters from the left-side of the input.
     *
     * @param [chars] - characters (defaults to whitespace)
     */
-  @JSImport("validator/lib/ltrim", JSImport.Default)
-  @js.native
-  def default(input: String): String = js.native
-  @JSImport("validator/lib/ltrim", JSImport.Default)
-  @js.native
-  def default(input: String, chars: String): String = js.native
+  @scala.inline
+  def default(input: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def default(input: String, chars: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(input.asInstanceOf[js.Any], chars.asInstanceOf[js.Any])).asInstanceOf[String]
 }

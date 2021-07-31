@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateWorkforceRequest extends StObject {
   
   /**
     * Use this parameter to update your OIDC Identity Provider (IdP) configuration for a workforce made using your own IdP.
     */
-  var OidcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.OidcConfig] = js.native
+  var OidcConfig: js.UndefOr[typings.awsSdk.sagemakerMod.OidcConfig] = js.undefined
   
   /**
     * A list of one to ten worker IP address ranges (CIDRs) that can be used to access tasks assigned to this workforce. Maximum: Ten CIDR values
     */
-  var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.native
+  var SourceIpConfig: js.UndefOr[typings.awsSdk.sagemakerMod.SourceIpConfig] = js.undefined
   
   /**
     * The name of the private workforce that you want to update. You can find your workforce name by using the operation.
     */
-  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName = js.native
+  var WorkforceName: typings.awsSdk.sagemakerMod.WorkforceName
 }
 object UpdateWorkforceRequest {
   

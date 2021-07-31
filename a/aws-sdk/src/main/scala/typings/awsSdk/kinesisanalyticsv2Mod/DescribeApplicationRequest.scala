@@ -2,21 +2,19 @@ package typings.awsSdk.kinesisanalyticsv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeApplicationRequest extends StObject {
   
   /**
     * The name of the application.
     */
-  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName = js.native
+  var ApplicationName: typings.awsSdk.kinesisanalyticsv2Mod.ApplicationName
   
   /**
     * Displays verbose information about a Kinesis Data Analytics application, including the application's job plan.
     */
-  var IncludeAdditionalDetails: js.UndefOr[BooleanObject] = js.native
+  var IncludeAdditionalDetails: js.UndefOr[BooleanObject] = js.undefined
 }
 object DescribeApplicationRequest {
   

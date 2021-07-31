@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ForceReply extends StObject {
   
-  var force_reply: Boolean = js.native
+  var force_reply: Boolean
   
-  var selective: js.UndefOr[Boolean] = js.native
+  var selective: js.UndefOr[Boolean] = js.undefined
 }
 object ForceReply {
   

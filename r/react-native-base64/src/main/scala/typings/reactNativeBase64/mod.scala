@@ -3,7 +3,6 @@ package typings.reactNativeBase64
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,12 +11,11 @@ object mod extends Shortcut {
   @js.native
   val ^ : Base64 = js.native
   
-  @js.native
   trait Base64 extends StObject {
     
-    def decode(input: String): String = js.native
+    def decode(input: String): String
     
-    def encode(input: String): String = js.native
+    def encode(input: String): String
   }
   object Base64 {
     

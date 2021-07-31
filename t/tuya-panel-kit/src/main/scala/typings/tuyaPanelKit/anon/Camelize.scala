@@ -2,19 +2,17 @@ package typings.tuyaPanelKit.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Camelize extends StObject {
   
-  def camelize(str: String): String = js.native
+  def camelize(str: String): String
   
-  def hexStringToBinString(str: String): String = js.native
+  def hexStringToBinString(str: String): String
   
-  def hexStringToNumber(str: String): js.Array[Double] = js.native
+  def hexStringToNumber(str: String): js.Array[Double]
   
-  def strToHexString(str: String): String = js.native
+  def strToHexString(str: String): String
 }
 object Camelize {
   

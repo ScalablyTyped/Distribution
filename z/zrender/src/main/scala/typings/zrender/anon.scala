@@ -9,29 +9,27 @@ import typings.zrender.zrender.Y2
 import typings.zrender.zrenderStrings.linear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AddColorStop extends StObject {
     
-    def addColorStop(offset: Double, color: String): Unit = js.native
+    def addColorStop(offset: Double, color: String): Unit
     
-    var colorStops: ColorStops = js.native
+    var colorStops: ColorStops
     
-    var globalCoord: GlobalCoords = js.native
+    var globalCoord: GlobalCoords
     
-    var `type`: linear = js.native
+    var `type`: linear
     
-    var x: X = js.native
+    var x: X
     
-    var x2: X2 = js.native
+    var x2: X2
     
-    var y: Y = js.native
+    var y: Y
     
-    var y2: Y2 = js.native
+    var y2: Y2
   }
   object AddColorStop {
     
@@ -40,14 +38,13 @@ object anon {
       addColorStop: (Double, String) => Unit,
       colorStops: ColorStops,
       globalCoord: GlobalCoords,
-      `type`: linear,
       x: X,
       x2: X2,
       y: Y,
       y2: Y2
     ): AddColorStop = {
       val __obj = js.Dynamic.literal(addColorStop = js.Any.fromFunction2(addColorStop), colorStops = colorStops.asInstanceOf[js.Any], globalCoord = globalCoord.asInstanceOf[js.Any], x = x.asInstanceOf[js.Any], x2 = x2.asInstanceOf[js.Any], y = y.asInstanceOf[js.Any], y2 = y2.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("linear")
       __obj.asInstanceOf[AddColorStop]
     }
     
@@ -83,12 +80,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    var color: String = js.native
+    var color: String
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object Color {
     

@@ -3,22 +3,22 @@ package typings.awsSdkBuildTypes.customizationMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ConfigCustomizationDefinition extends CustomizationDefinition {
+trait ConfigCustomizationDefinition
+  extends StObject
+     with CustomizationDefinition {
   
-  var configuration: ConfigurationDefinition = js.native
+  var configuration: ConfigurationDefinition
   
-  var `type`: Configuration = js.native
+  var `type`: Configuration
 }
 object ConfigCustomizationDefinition {
   
   @scala.inline
-  def apply(configuration: ConfigurationDefinition, `type`: Configuration): ConfigCustomizationDefinition = {
+  def apply(configuration: ConfigurationDefinition): ConfigCustomizationDefinition = {
     val __obj = js.Dynamic.literal(configuration = configuration.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("Configuration")
     __obj.asInstanceOf[ConfigCustomizationDefinition]
   }
   

@@ -4,13 +4,11 @@ import typings.reactNavigationRouters.typesMod.NavigationState
 import typings.reactNavigationRouters.typesMod.ParamListBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DataStateState[State /* <: NavigationState[ParamListBase] */] extends StObject {
   
-  var data: StateState[State] = js.native
+  var data: StateState[State]
 }
 object DataStateState {
   
@@ -21,7 +19,7 @@ object DataStateState {
   }
   
   @scala.inline
-  implicit class DataStateStateMutableBuilder[Self <: DataStateState[_], State /* <: NavigationState[ParamListBase] */] (val x: Self with DataStateState[State]) extends AnyVal {
+  implicit class DataStateStateMutableBuilder[Self <: DataStateState[?], State /* <: NavigationState[ParamListBase] */] (val x: Self & DataStateState[State]) extends AnyVal {
     
     @scala.inline
     def setData(value: StateState[State]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])

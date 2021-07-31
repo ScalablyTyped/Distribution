@@ -13,7 +13,6 @@ import typings.parse5Htmlparser2TreeAdapter.parse5Htmlparser2TreeAdapterStrings.
 import typings.parse5Htmlparser2TreeAdapter.parse5Htmlparser2TreeAdapterStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,35 +24,35 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter CommentNode interface.
     */
-  @js.native
-  trait CommentNode extends Node {
+  trait CommentNode
+    extends StObject
+       with Node {
     
     /**
       * Comment text.
       */
-    var data: String = js.native
+    var data: String
     
     /**
       * The name of the node.
       */
-    var name: comment = js.native
+    var name: comment
     
     /**
       * Same as {@link data}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
       */
-    var nodeValue: String = js.native
+    var nodeValue: String
     
     /**
       * Comment source code location info. Available if location info is enabled via ParserOptions.
       */
-    var sourceCodeLocation: js.UndefOr[Location] = js.native
+    var sourceCodeLocation: js.UndefOr[Location] = js.undefined
   }
   object CommentNode {
     
     @scala.inline
     def apply(
       data: String,
-      name: comment,
       next: Node,
       nextSibling: Node,
       nodeType: Double,
@@ -64,7 +63,7 @@ object mod extends Shortcut {
       previousSibling: Node,
       `type`: String
     ): CommentNode = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "comment", next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[CommentNode]
     }
@@ -92,24 +91,25 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter Document interface.
     */
-  @js.native
-  trait Document extends ParentNode {
+  trait Document
+    extends StObject
+       with ParentNode {
     
     /**
       * The name of the node.
       */
-    var name: root = js.native
+    var name: root
     
     /**
       * The type of the node.
       */
     @JSName("type")
-    var type_Document: root = js.native
+    var type_Document: root
     
     /**
       * [Document mode](https://dom.spec.whatwg.org/#concept-document-limited-quirks).
       */
-    var `x-mode`: DocumentMode = js.native
+    var `x-mode`: DocumentMode
   }
   object Document {
     
@@ -119,7 +119,6 @@ object mod extends Shortcut {
       children: js.Array[Node],
       firstChild: Node,
       lastChild: Node,
-      name: root,
       next: Node,
       nextSibling: Node,
       nodeType: Double,
@@ -127,11 +126,10 @@ object mod extends Shortcut {
       parentNode: ParentNode,
       prev: Node,
       previousSibling: Node,
-      `type`: root,
       `x-mode`: DocumentMode
     ): Document = {
-      val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], name = "root", next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("root")
       __obj.updateDynamic("x-mode")(`x-mode`.asInstanceOf[js.Any])
       __obj.asInstanceOf[Document]
     }
@@ -153,19 +151,20 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter DocumentFragment interface.
     */
-  @js.native
-  trait DocumentFragment extends ParentNode {
+  trait DocumentFragment
+    extends StObject
+       with ParentNode {
     
     /**
       * The name of the node.
       */
-    var name: root = js.native
+    var name: root
     
     /**
       * The type of the node.
       */
     @JSName("type")
-    var type_DocumentFragment: root = js.native
+    var type_DocumentFragment: root
   }
   object DocumentFragment {
     
@@ -175,18 +174,16 @@ object mod extends Shortcut {
       children: js.Array[Node],
       firstChild: Node,
       lastChild: Node,
-      name: root,
       next: Node,
       nextSibling: Node,
       nodeType: Double,
       parent: ParentNode,
       parentNode: ParentNode,
       prev: Node,
-      previousSibling: Node,
-      `type`: root
+      previousSibling: Node
     ): DocumentFragment = {
-      val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(childNodes = childNodes.asInstanceOf[js.Any], children = children.asInstanceOf[js.Any], firstChild = firstChild.asInstanceOf[js.Any], lastChild = lastChild.asInstanceOf[js.Any], name = "root", next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("root")
       __obj.asInstanceOf[DocumentFragment]
     }
     
@@ -204,46 +201,46 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter DocumentType interface.
     */
-  @js.native
-  trait DocumentType extends Node {
+  trait DocumentType
+    extends StObject
+       with Node {
     
     /**
       * Serialized doctype {@link name}, {@link publicId} and {@link systemId}.
       */
-    var data: String = js.native
+    var data: String
     
     /**
       * Node name.
       */
-    var name: Exclamationmarkdoctype = js.native
+    var name: Exclamationmarkdoctype
     
     /**
       * The type of the node.
       */
     @JSName("type")
-    var type_DocumentType: directive = js.native
+    var type_DocumentType: directive
     
     /**
       * Document type name.
       */
-    var `x-name`: String = js.native
+    var `x-name`: String
     
     /**
       * Document type public identifier.
       */
-    var `x-publicId`: String = js.native
+    var `x-publicId`: String
     
     /**
       * Document type system identifier.
       */
-    var `x-systemId`: String = js.native
+    var `x-systemId`: String
   }
   object DocumentType {
     
     @scala.inline
     def apply(
       data: String,
-      name: Exclamationmarkdoctype,
       next: Node,
       nextSibling: Node,
       nodeType: Double,
@@ -251,13 +248,12 @@ object mod extends Shortcut {
       parentNode: ParentNode,
       prev: Node,
       previousSibling: Node,
-      `type`: directive,
       `x-name`: String,
       `x-publicId`: String,
       `x-systemId`: String
     ): DocumentType = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "!doctype", next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("directive")
       __obj.updateDynamic("x-name")(`x-name`.asInstanceOf[js.Any])
       __obj.updateDynamic("x-publicId")(`x-publicId`.asInstanceOf[js.Any])
       __obj.updateDynamic("x-systemId")(`x-systemId`.asInstanceOf[js.Any])
@@ -290,43 +286,44 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter Element interface.
     */
-  @js.native
-  trait Element extends ParentNode {
+  trait Element
+    extends StObject
+       with ParentNode {
     
     /**
       * Element attributes.
       */
-    var attribs: StringDictionary[String] = js.native
+    var attribs: StringDictionary[String]
     
     /**
       * The name of the node. Equals to element {@link tagName}.
       */
-    var name: String = js.native
+    var name: String
     
     /**
       * Element namespace.
       */
-    var namespace: String = js.native
+    var namespace: String
     
     /**
       * Element source code location info. Available if location info is enabled via ParserOptions.
       */
-    var sourceCodeLocation: js.UndefOr[ElementLocation] = js.native
+    var sourceCodeLocation: js.UndefOr[ElementLocation] = js.undefined
     
     /**
       * Element tag name.
       */
-    var tagName: String = js.native
+    var tagName: String
     
     /**
       * Element attribute namespaces.
       */
-    var `x-attribsNamespace`: StringDictionary[String] = js.native
+    var `x-attribsNamespace`: StringDictionary[String]
     
     /**
       * Element attribute namespace-related prefixes.
       */
-    var `x-attribsPrefix`: StringDictionary[String] = js.native
+    var `x-attribsPrefix`: StringDictionary[String]
   }
   object Element {
     
@@ -390,48 +387,47 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter Node interface.
     */
-  @js.native
   trait Node extends StObject {
     
     /**
       * Next sibling.
       */
-    var next: Node = js.native
+    var next: Node
     
     /**
       * Same as {@link next}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
       */
-    var nextSibling: Node = js.native
+    var nextSibling: Node
     
     /**
       * [DOM spec](https://dom.spec.whatwg.org/#dom-node-nodetype)-compatible node {@link type}.
       */
-    var nodeType: Double = js.native
+    var nodeType: Double
     
     /**
       * Parent node.
       */
-    var parent: ParentNode = js.native
+    var parent: ParentNode
     
     /**
       * Same as {@link parent}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
       */
-    var parentNode: ParentNode = js.native
+    var parentNode: ParentNode
     
     /**
       * Previous sibling.
       */
-    var prev: Node = js.native
+    var prev: Node
     
     /**
       * Same as {@link prev}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
       */
-    var previousSibling: Node = js.native
+    var previousSibling: Node
     
     /**
       * The type of the node. E.g. {@link Document} will have `type` equal to 'root'`.
       */
-    var `type`: String = js.native
+    var `type`: String
   }
   object Node {
     
@@ -483,28 +479,29 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter ParentNode interface.
     */
-  @js.native
-  trait ParentNode extends Node {
+  trait ParentNode
+    extends StObject
+       with Node {
     
     /**
       * Same as {@link children}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
       */
-    var childNodes: js.Array[Node] = js.native
+    var childNodes: js.Array[Node]
     
     /**
       * Child nodes.
       */
-    var children: js.Array[Node] = js.native
+    var children: js.Array[Node]
     
     /**
       * First child of the node.
       */
-    var firstChild: Node = js.native
+    var firstChild: Node
     
     /**
       * Last child of the node.
       */
-    var lastChild: Node = js.native
+    var lastChild: Node
   }
   object ParentNode {
     
@@ -554,35 +551,35 @@ object mod extends Shortcut {
   /**
     * htmlparser2 tree adapter TextNode interface.
     */
-  @js.native
-  trait TextNode extends Node {
+  trait TextNode
+    extends StObject
+       with Node {
     
     /**
       * Text content.
       */
-    var data: String = js.native
+    var data: String
     
     /**
       * The name of the node.
       */
-    var name: text = js.native
+    var name: text
     
     /**
       * Same as {@link data}. [DOM spec](https://dom.spec.whatwg.org)-compatible alias.
       */
-    var nodeValue: String = js.native
+    var nodeValue: String
     
     /**
       * Comment source code location info. Available if location info is enabled via ParserOptions.
       */
-    var sourceCodeLocation: js.UndefOr[Location] = js.native
+    var sourceCodeLocation: js.UndefOr[Location] = js.undefined
   }
   object TextNode {
     
     @scala.inline
     def apply(
       data: String,
-      name: text,
       next: Node,
       nextSibling: Node,
       nodeType: Double,
@@ -593,7 +590,7 @@ object mod extends Shortcut {
       previousSibling: Node,
       `type`: String
     ): TextNode = {
-      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], name = "text", next = next.asInstanceOf[js.Any], nextSibling = nextSibling.asInstanceOf[js.Any], nodeType = nodeType.asInstanceOf[js.Any], nodeValue = nodeValue.asInstanceOf[js.Any], parent = parent.asInstanceOf[js.Any], parentNode = parentNode.asInstanceOf[js.Any], prev = prev.asInstanceOf[js.Any], previousSibling = previousSibling.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[TextNode]
     }

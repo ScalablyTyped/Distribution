@@ -3,7 +3,6 @@ package typings.activexExcel.Excel
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,31 +13,26 @@ trait Sheets[TSheet] extends StObject {
   def apply(Index: Double): TSheet = js.native
   
   def Add[T](): AddSheetResult[T] = js.native
-  def Add[T](
-    Before: js.UndefOr[scala.Nothing],
-    After: js.UndefOr[scala.Nothing],
-    Count: js.UndefOr[scala.Nothing],
-    Type: T
-  ): AddSheetResult[T] = js.native
-  def Add[T](Before: js.UndefOr[scala.Nothing], After: js.UndefOr[scala.Nothing], Count: Double): AddSheetResult[T] = js.native
-  def Add[T](Before: js.UndefOr[scala.Nothing], After: js.UndefOr[scala.Nothing], Count: Double, Type: T): AddSheetResult[T] = js.native
-  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet): AddSheetResult[T] = js.native
-  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet, Count: js.UndefOr[scala.Nothing], Type: T): AddSheetResult[T] = js.native
-  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet, Count: Double): AddSheetResult[T] = js.native
-  def Add[T](Before: js.UndefOr[scala.Nothing], After: Sheet, Count: Double, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Unit, After: Unit, Count: Double): AddSheetResult[T] = js.native
+  def Add[T](Before: Unit, After: Unit, Count: Double, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Unit, After: Unit, Count: Unit, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Unit, After: Sheet): AddSheetResult[T] = js.native
+  def Add[T](Before: Unit, After: Sheet, Count: Double): AddSheetResult[T] = js.native
+  def Add[T](Before: Unit, After: Sheet, Count: Double, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Unit, After: Sheet, Count: Unit, Type: T): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet): AddSheetResult[T] = js.native
-  def Add[T](Before: Sheet, After: js.UndefOr[scala.Nothing], Count: js.UndefOr[scala.Nothing], Type: T): AddSheetResult[T] = js.native
-  def Add[T](Before: Sheet, After: js.UndefOr[scala.Nothing], Count: Double): AddSheetResult[T] = js.native
-  def Add[T](Before: Sheet, After: js.UndefOr[scala.Nothing], Count: Double, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: Unit, Count: Double): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: Unit, Count: Double, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: Unit, Count: Unit, Type: T): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet, After: Sheet): AddSheetResult[T] = js.native
-  def Add[T](Before: Sheet, After: Sheet, Count: js.UndefOr[scala.Nothing], Type: T): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet, After: Sheet, Count: Double): AddSheetResult[T] = js.native
   def Add[T](Before: Sheet, After: Sheet, Count: Double, Type: T): AddSheetResult[T] = js.native
+  def Add[T](Before: Sheet, After: Sheet, Count: Unit, Type: T): AddSheetResult[T] = js.native
   
   val Application: typings.activexExcel.Excel.Application = js.native
   
   def Copy(): Unit = js.native
-  def Copy(Before: js.UndefOr[scala.Nothing], After: Sheet): Unit = js.native
+  def Copy(Before: Unit, After: Sheet): Unit = js.native
   def Copy(Before: Sheet): Unit = js.native
   
   val Count: Double = js.native
@@ -60,9 +54,9 @@ trait Sheets[TSheet] extends StObject {
   def Item(Index: Double): TSheet = js.native
   
   def Move(): Unit = js.native
-  def Move(Before: js.UndefOr[scala.Nothing], After: Double): Unit = js.native
-  def Move(Before: js.UndefOr[scala.Nothing], After: Sheet): Unit = js.native
   def Move(Before: Double): Unit = js.native
+  def Move(Before: Unit, After: Double): Unit = js.native
+  def Move(Before: Unit, After: Sheet): Unit = js.native
   def Move(Before: Sheet): Unit = js.native
   
   val Parent: js.Any = js.native

@@ -2,51 +2,49 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpnConnectionOptions extends StObject {
   
   /**
     * Indicates whether acceleration is enabled for the VPN connection.
     */
-  var EnableAcceleration: js.UndefOr[Boolean] = js.native
+  var EnableAcceleration: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The IPv4 CIDR on the customer gateway (on-premises) side of the VPN connection.
     */
-  var LocalIpv4NetworkCidr: js.UndefOr[String] = js.native
+  var LocalIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv6 CIDR on the customer gateway (on-premises) side of the VPN connection.
     */
-  var LocalIpv6NetworkCidr: js.UndefOr[String] = js.native
+  var LocalIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv4 CIDR on the AWS side of the VPN connection.
     */
-  var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.native
+  var RemoteIpv4NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * The IPv6 CIDR on the AWS side of the VPN connection.
     */
-  var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.native
+  var RemoteIpv6NetworkCidr: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates whether the VPN connection uses static routes only. Static routes must be used for devices that don't support BGP.
     */
-  var StaticRoutesOnly: js.UndefOr[Boolean] = js.native
+  var StaticRoutesOnly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether the VPN tunnels process IPv4 or IPv6 traffic.
     */
-  var TunnelInsideIpVersion: js.UndefOr[typings.awsSdk.ec2Mod.TunnelInsideIpVersion] = js.native
+  var TunnelInsideIpVersion: js.UndefOr[typings.awsSdk.ec2Mod.TunnelInsideIpVersion] = js.undefined
   
   /**
     * Indicates the VPN tunnel options.
     */
-  var TunnelOptions: js.UndefOr[TunnelOptionsList] = js.native
+  var TunnelOptions: js.UndefOr[TunnelOptionsList] = js.undefined
 }
 object VpnConnectionOptions {
   

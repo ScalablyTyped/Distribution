@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Devices.PointOfService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides data for the ErrorOccurred event. */
-@js.native
 trait BarcodeScannerErrorOccurredEventArgs extends StObject {
   
   /** Gets the data associated with the ErrorOccurred event. */
-  var errorData: UnifiedPosErrorData = js.native
+  var errorData: UnifiedPosErrorData
   
   /** Indicates whether it is worthwhile to make another attempt at the operation. */
-  var isRetriable: Boolean = js.native
+  var isRetriable: Boolean
   
   /** Gets any data that was successfully read. */
-  var partialInputData: BarcodeScannerReport = js.native
+  var partialInputData: BarcodeScannerReport
 }
 object BarcodeScannerErrorOccurredEventArgs {
   

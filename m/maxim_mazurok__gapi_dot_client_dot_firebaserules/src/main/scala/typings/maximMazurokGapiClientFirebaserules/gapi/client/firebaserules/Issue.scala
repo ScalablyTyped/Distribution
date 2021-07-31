@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientFirebaserules.gapi.client.firebaserules
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Issue extends StObject {
   
   /** Short error description. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** The severity of the issue. */
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
   /** Position of the issue in the `Source`. */
-  var sourcePosition: js.UndefOr[SourcePosition] = js.native
+  var sourcePosition: js.UndefOr[SourcePosition] = js.undefined
 }
 object Issue {
   

@@ -3,22 +3,22 @@ package typings.vegaTypings.transformMod
 import typings.vegaTypings.vegaTypingsStrings.filter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FilterTransform extends _Transforms {
+trait FilterTransform
+  extends StObject
+     with _Transforms {
   
-  var expr: ExprString = js.native
+  var expr: ExprString
   
-  var `type`: filter = js.native
+  var `type`: filter
 }
 object FilterTransform {
   
   @scala.inline
-  def apply(expr: ExprString, `type`: filter): FilterTransform = {
+  def apply(expr: ExprString): FilterTransform = {
     val __obj = js.Dynamic.literal(expr = expr.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("filter")
     __obj.asInstanceOf[FilterTransform]
   }
   

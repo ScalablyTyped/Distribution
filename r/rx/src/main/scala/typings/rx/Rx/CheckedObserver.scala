@@ -2,13 +2,13 @@ package typings.rx.Rx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait CheckedObserver[T] extends Observer[T] {
+trait CheckedObserver[T]
+  extends StObject
+     with Observer[T] {
   
-  def checkAccess(): Unit = js.native
+  def checkAccess(): Unit
 }
 object CheckedObserver {
   
@@ -29,7 +29,7 @@ object CheckedObserver {
   }
   
   @scala.inline
-  implicit class CheckedObserverMutableBuilder[Self <: CheckedObserver[_], T] (val x: Self with CheckedObserver[T]) extends AnyVal {
+  implicit class CheckedObserverMutableBuilder[Self <: CheckedObserver[?], T] (val x: Self & CheckedObserver[T]) extends AnyVal {
     
     @scala.inline
     def setCheckAccess(value: () => Unit): Self = StObject.set(x, "checkAccess", js.Any.fromFunction0(value))

@@ -2,7 +2,6 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,9 +12,9 @@ trait CustomXMLParts extends StObject {
   
   /** @param XML [XML=''] */
   def Add(): CustomXMLPart = js.native
-  def Add(XML: js.UndefOr[scala.Nothing], SchemaCollection: CustomXMLSchemaCollection): CustomXMLPart = js.native
   def Add(XML: String): CustomXMLPart = js.native
   def Add(XML: String, SchemaCollection: CustomXMLSchemaCollection): CustomXMLPart = js.native
+  def Add(XML: Unit, SchemaCollection: CustomXMLSchemaCollection): CustomXMLPart = js.native
   
   val Application: js.Any = js.native
   

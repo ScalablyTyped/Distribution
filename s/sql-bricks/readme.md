@@ -10,9 +10,9 @@ Transparent, Schemaless SQL Generation
 | ------------------ | :-------------: |
 | Full name          | sql-bricks |
 | Keywords           | sql, generation, generate, query, pg, postgres, sqlite, builder, select, insert, update, delete |
-| # releases         | 4 |
-| # dependents       | 13 |
-| # downloads        | 876505 |
+| # releases         | 2 |
+| # dependents       | 15 |
+| # downloads        | 883150 |
 | # stars            | 3 |
 
 ## Links

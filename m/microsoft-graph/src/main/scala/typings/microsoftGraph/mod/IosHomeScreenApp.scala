@@ -2,14 +2,14 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosHomeScreenApp extends IosHomeScreenItem {
+trait IosHomeScreenApp
+  extends StObject
+     with IosHomeScreenItem {
   
   // BundleID of app
-  var bundleID: js.UndefOr[String] = js.native
+  var bundleID: js.UndefOr[String] = js.undefined
 }
 object IosHomeScreenApp {
   

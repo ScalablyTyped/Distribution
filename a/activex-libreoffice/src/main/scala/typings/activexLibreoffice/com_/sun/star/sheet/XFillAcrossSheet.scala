@@ -4,15 +4,15 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** @deprecated Deprecated */
-@js.native
-trait XFillAcrossSheet extends XInterface {
+trait XFillAcrossSheet
+  extends StObject
+     with XInterface {
   
   /** copies data between ranges onto different sheets in the document. */
-  def fillAcrossSheets(nContentFlags: Double): Unit = js.native
+  def fillAcrossSheets(nContentFlags: Double): Unit
 }
 object XFillAcrossSheet {
   

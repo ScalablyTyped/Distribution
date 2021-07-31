@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsCloudFrontDistributionOrigins extends StObject {
   
   /**
     * A complex type that contains origins or origin groups for this distribution.
     */
-  var Items: js.UndefOr[AwsCloudFrontDistributionOriginItemList] = js.native
+  var Items: js.UndefOr[AwsCloudFrontDistributionOriginItemList] = js.undefined
 }
 object AwsCloudFrontDistributionOrigins {
   

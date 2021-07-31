@@ -8,7 +8,6 @@ import typings.typedoc.urlMappingMod.UrlMapping
 import typings.typedoc.utilsEventsMod.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
@@ -55,7 +54,7 @@ object eventsMod {
     
     var settings: js.Any = js.native
     
-    var template: js.UndefOr[TemplateDelegate[_]] = js.native
+    var template: js.UndefOr[TemplateDelegate[js.Any]] = js.native
     
     var templateName: String = js.native
     

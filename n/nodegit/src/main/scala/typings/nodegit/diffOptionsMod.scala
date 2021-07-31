@@ -4,40 +4,39 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.nodegit.strArrayMod.Strarray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object diffOptionsMod {
   
-  @js.native
   trait DiffOptions
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var contextLines: js.UndefOr[Double] = js.native
+    var contextLines: js.UndefOr[Double] = js.undefined
     
-    var flags: js.UndefOr[Double] = js.native
+    var flags: js.UndefOr[Double] = js.undefined
     
-    var idAbbrev: js.UndefOr[Double] = js.native
+    var idAbbrev: js.UndefOr[Double] = js.undefined
     
-    var ignoreSubmodules: js.UndefOr[Double] = js.native
+    var ignoreSubmodules: js.UndefOr[Double] = js.undefined
     
-    var interhunkLines: js.UndefOr[Double] = js.native
+    var interhunkLines: js.UndefOr[Double] = js.undefined
     
-    var maxSize: js.UndefOr[Double] = js.native
+    var maxSize: js.UndefOr[Double] = js.undefined
     
-    var newPrefix: js.UndefOr[String] = js.native
+    var newPrefix: js.UndefOr[String] = js.undefined
     
-    var notifyCb: js.UndefOr[js.Function] = js.native
+    var notifyCb: js.UndefOr[js.Function] = js.undefined
     
-    var oldPrefix: js.UndefOr[String] = js.native
+    var oldPrefix: js.UndefOr[String] = js.undefined
     
-    var pathspec: js.UndefOr[Strarray | String | js.Array[String]] = js.native
+    var pathspec: js.UndefOr[Strarray | String | js.Array[String]] = js.undefined
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
     
-    var progressCb: js.UndefOr[js.Any] = js.native
+    var progressCb: js.UndefOr[js.Any] = js.undefined
     
-    var version: js.UndefOr[Double] = js.native
+    var version: js.UndefOr[Double] = js.undefined
   }
   object DiffOptions {
     

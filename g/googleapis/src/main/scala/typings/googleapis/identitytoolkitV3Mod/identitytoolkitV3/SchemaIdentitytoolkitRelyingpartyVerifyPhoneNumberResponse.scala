@@ -2,34 +2,32 @@ package typings.googleapis.identitytoolkitV3Mod.identitytoolkitV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response for Identitytoolkit-VerifyPhoneNumber
   */
-@js.native
 trait SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse extends StObject {
   
-  var expiresIn: js.UndefOr[String] = js.native
+  var expiresIn: js.UndefOr[String] = js.undefined
   
-  var idToken: js.UndefOr[String] = js.native
+  var idToken: js.UndefOr[String] = js.undefined
   
-  var isNewUser: js.UndefOr[Boolean] = js.native
+  var isNewUser: js.UndefOr[Boolean] = js.undefined
   
-  var localId: js.UndefOr[String] = js.native
+  var localId: js.UndefOr[String] = js.undefined
   
-  var phoneNumber: js.UndefOr[String] = js.native
+  var phoneNumber: js.UndefOr[String] = js.undefined
   
-  var refreshToken: js.UndefOr[String] = js.native
+  var refreshToken: js.UndefOr[String] = js.undefined
   
-  var temporaryProof: js.UndefOr[String] = js.native
+  var temporaryProof: js.UndefOr[String] = js.undefined
   
-  var temporaryProofExpiresIn: js.UndefOr[String] = js.native
+  var temporaryProofExpiresIn: js.UndefOr[String] = js.undefined
   
-  var verificationProof: js.UndefOr[String] = js.native
+  var verificationProof: js.UndefOr[String] = js.undefined
   
-  var verificationProofExpiresIn: js.UndefOr[String] = js.native
+  var verificationProofExpiresIn: js.UndefOr[String] = js.undefined
 }
 object SchemaIdentitytoolkitRelyingpartyVerifyPhoneNumberResponse {
   

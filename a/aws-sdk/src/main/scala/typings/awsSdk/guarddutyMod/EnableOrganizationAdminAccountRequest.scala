@@ -2,16 +2,14 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnableOrganizationAdminAccountRequest extends StObject {
   
   /**
     * The AWS Account ID for the organization account to be enabled as a GuardDuty delegated administrator.
     */
-  var AdminAccountId: String = js.native
+  var AdminAccountId: String
 }
 object EnableOrganizationAdminAccountRequest {
   

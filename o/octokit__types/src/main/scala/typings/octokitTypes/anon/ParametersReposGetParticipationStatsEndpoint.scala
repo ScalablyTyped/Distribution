@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposGetParticipationStatsResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposGetParticipationStatsEndpoint extends StObject {
   
-  var parameters: ReposGetParticipationStatsEndpoint = js.native
+  var parameters: ReposGetParticipationStatsEndpoint
   
-  var request: ReposGetParticipationStatsRequestOptions = js.native
+  var request: ReposGetParticipationStatsRequestOptions
   
-  var response: OctokitResponse[ReposGetParticipationStatsResponseData] = js.native
+  var response: OctokitResponse[ReposGetParticipationStatsResponseData]
 }
 object ParametersReposGetParticipationStatsEndpoint {
   

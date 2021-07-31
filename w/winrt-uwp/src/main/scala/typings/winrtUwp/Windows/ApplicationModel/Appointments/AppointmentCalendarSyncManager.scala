@@ -8,16 +8,15 @@ import typings.winrtUwp.Windows.WinRTEvent
 import typings.winrtUwp.winrtUwpStrings.syncstatuschanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to sync functionality for an AppointmentCalendar object. */
 @js.native
 trait AppointmentCalendarSyncManager extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[AppointmentCalendarSyncManager, _]): Unit = js.native
+  def addEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[AppointmentCalendarSyncManager, js.Any]): Unit = js.native
   
   /** Gets the last date and time that a sync with the AppointmentCalendar server was attempted. */
   var lastAttemptedSyncTime: Date = js.native
@@ -26,14 +25,14 @@ trait AppointmentCalendarSyncManager extends StObject {
   var lastSuccessfulSyncTime: Date = js.native
   
   /** Occurs when the status of an AppointmentCalendar sync operation changes. */
-  def onsyncstatuschanged(ev: js.Any with WinRTEvent[AppointmentCalendarSyncManager]): Unit = js.native
+  def onsyncstatuschanged(ev: js.Any & WinRTEvent[AppointmentCalendarSyncManager]): Unit = js.native
   /** Occurs when the status of an AppointmentCalendar sync operation changes. */
   @JSName("onsyncstatuschanged")
-  var onsyncstatuschanged_Original: TypedEventHandler[AppointmentCalendarSyncManager, _] = js.native
+  var onsyncstatuschanged_Original: TypedEventHandler[AppointmentCalendarSyncManager, js.Any] = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[AppointmentCalendarSyncManager, _]): Unit = js.native
+  def removeEventListener_syncstatuschanged(`type`: syncstatuschanged, listener: TypedEventHandler[AppointmentCalendarSyncManager, js.Any]): Unit = js.native
   
   /** Gets the current status of the AppointmentCalendarSyncManager . */
   var status: AppointmentCalendarSyncStatus = js.native

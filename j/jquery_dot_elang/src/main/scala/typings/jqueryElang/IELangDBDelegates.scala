@@ -2,19 +2,17 @@ package typings.jqueryElang
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IELangDBDelegates extends StObject {
   
-  var insertHandler: js.Function = js.native
+  var insertHandler: js.Function
   
-  var modifyHandler: js.Function = js.native
+  var modifyHandler: js.Function
   
-  var removeHandler: js.Function = js.native
+  var removeHandler: js.Function
   
-  var selectHandler: js.Function = js.native
+  var selectHandler: js.Function
 }
 object IELangDBDelegates {
   

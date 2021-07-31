@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MinHeightProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extend
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
     */
-  var minHeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var minHeight: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object MinHeightProps {
   
@@ -25,7 +23,7 @@ object MinHeightProps {
   }
   
   @scala.inline
-  implicit class MinHeightPropsMutableBuilder[Self <: MinHeightProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (MinHeightProps[ThemeType, TVal])) extends AnyVal {
+  implicit class MinHeightPropsMutableBuilder[Self <: MinHeightProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MinHeightProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setMinHeight(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minHeight", value.asInstanceOf[js.Any])

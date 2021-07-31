@@ -2,19 +2,17 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InetChecksiteData extends StObject {
   
-  var ms: Double = js.native
+  var ms: Double
   
-  var ok: Boolean = js.native
+  var ok: Boolean
   
-  var status: Double = js.native
+  var status: Double
   
-  var url: String = js.native
+  var url: String
 }
 object InetChecksiteData {
   

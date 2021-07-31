@@ -4,7 +4,6 @@ import typings.squareConnect.squareConnectStrings.LOW_QUANTITY
 import typings.squareConnect.squareConnectStrings.NONE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("square-connect", "CatalogItemVariation")

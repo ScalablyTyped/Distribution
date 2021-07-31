@@ -6,7 +6,6 @@ import typings.std.HTMLElement
 import typings.std.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("openseadragon", "Viewer")
@@ -20,12 +19,6 @@ class Viewer protected () extends ControlDock {
   def addHandler(eventName: ViewerEventName, callback: EventHandler[ViewerEvent], userData: js.Object): Unit = js.native
   
   def addOnceHandler(eventName: ViewerEventName, callback: EventHandler[ViewerEvent]): Unit = js.native
-  def addOnceHandler(
-    eventName: ViewerEventName,
-    callback: EventHandler[ViewerEvent],
-    userData: js.UndefOr[scala.Nothing],
-    times: Double
-  ): Unit = js.native
   def addOnceHandler(eventName: ViewerEventName, callback: EventHandler[ViewerEvent], userData: js.Object): Unit = js.native
   def addOnceHandler(
     eventName: ViewerEventName,
@@ -33,18 +26,19 @@ class Viewer protected () extends ControlDock {
     userData: js.Object,
     times: Double
   ): Unit = js.native
+  def addOnceHandler(eventName: ViewerEventName, callback: EventHandler[ViewerEvent], userData: Unit, times: Double): Unit = js.native
   
   def addOverlay(element: String): Viewer = js.native
   def addOverlay(
     element: String,
-    location: js.UndefOr[scala.Nothing],
-    placement: js.UndefOr[scala.Nothing],
+    location: Unit,
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
-  def addOverlay(element: String, location: js.UndefOr[scala.Nothing], placement: Placement): Viewer = js.native
+  def addOverlay(element: String, location: Unit, placement: Placement): Viewer = js.native
   def addOverlay(
     element: String,
-    location: js.UndefOr[scala.Nothing],
+    location: Unit,
     placement: Placement,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
@@ -52,7 +46,7 @@ class Viewer protected () extends ControlDock {
   def addOverlay(
     element: String,
     location: Point,
-    placement: js.UndefOr[scala.Nothing],
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
   def addOverlay(element: String, location: Point, placement: Placement): Viewer = js.native
@@ -66,7 +60,7 @@ class Viewer protected () extends ControlDock {
   def addOverlay(
     element: String,
     location: Rect,
-    placement: js.UndefOr[scala.Nothing],
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
   def addOverlay(element: String, location: Rect, placement: Placement): Viewer = js.native
@@ -79,14 +73,14 @@ class Viewer protected () extends ControlDock {
   def addOverlay(element: js.Object): Viewer = js.native
   def addOverlay(
     element: js.Object,
-    location: js.UndefOr[scala.Nothing],
-    placement: js.UndefOr[scala.Nothing],
+    location: Unit,
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
-  def addOverlay(element: js.Object, location: js.UndefOr[scala.Nothing], placement: Placement): Viewer = js.native
+  def addOverlay(element: js.Object, location: Unit, placement: Placement): Viewer = js.native
   def addOverlay(
     element: js.Object,
-    location: js.UndefOr[scala.Nothing],
+    location: Unit,
     placement: Placement,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
@@ -94,7 +88,7 @@ class Viewer protected () extends ControlDock {
   def addOverlay(
     element: js.Object,
     location: Point,
-    placement: js.UndefOr[scala.Nothing],
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
   def addOverlay(element: js.Object, location: Point, placement: Placement): Viewer = js.native
@@ -108,7 +102,7 @@ class Viewer protected () extends ControlDock {
   def addOverlay(
     element: js.Object,
     location: Rect,
-    placement: js.UndefOr[scala.Nothing],
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
   def addOverlay(element: js.Object, location: Rect, placement: Placement): Viewer = js.native
@@ -121,14 +115,14 @@ class Viewer protected () extends ControlDock {
   def addOverlay(element: HTMLElement): Viewer = js.native
   def addOverlay(
     element: HTMLElement,
-    location: js.UndefOr[scala.Nothing],
-    placement: js.UndefOr[scala.Nothing],
+    location: Unit,
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
-  def addOverlay(element: HTMLElement, location: js.UndefOr[scala.Nothing], placement: Placement): Viewer = js.native
+  def addOverlay(element: HTMLElement, location: Unit, placement: Placement): Viewer = js.native
   def addOverlay(
     element: HTMLElement,
-    location: js.UndefOr[scala.Nothing],
+    location: Unit,
     placement: Placement,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
@@ -136,7 +130,7 @@ class Viewer protected () extends ControlDock {
   def addOverlay(
     element: HTMLElement,
     location: Point,
-    placement: js.UndefOr[scala.Nothing],
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
   def addOverlay(element: HTMLElement, location: Point, placement: Placement): Viewer = js.native
@@ -150,7 +144,7 @@ class Viewer protected () extends ControlDock {
   def addOverlay(
     element: HTMLElement,
     location: Rect,
-    placement: js.UndefOr[scala.Nothing],
+    placement: Unit,
     onDraw: js.Function3[/* element */ HTMLElement, /* location */ Location, /* placement */ Placement, Unit]
   ): Viewer = js.native
   def addOverlay(element: HTMLElement, location: Rect, placement: Placement): Viewer = js.native

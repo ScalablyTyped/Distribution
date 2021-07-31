@@ -10,9 +10,9 @@ Parses ICU Message strings into an AST via JavaScript.
 | ------------------ | :-------------: |
 | Full name          | intl-messageformat-parser |
 | Keywords           | i18n, intl, internationalization, localization, globalization, messageformat, parser, plural, icu |
-| # releases         | 102 |
-| # dependents       | 70 |
-| # downloads        | 53596024 |
+| # releases         | 124 |
+| # dependents       | 73 |
+| # downloads        | 65709586 |
 | # stars            | 0 |
 
 ## Links

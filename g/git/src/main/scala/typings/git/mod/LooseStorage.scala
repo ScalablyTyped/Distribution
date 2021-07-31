@@ -2,7 +2,6 @@ package typings.git.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("git", "LooseStorage")
@@ -20,12 +19,15 @@ class LooseStorage protected () extends StObject {
   
   def put_raw_object(content: js.Any, `type`: js.Any, callback: js.Function): Unit = js.native
   
-  def unpack_object_header_gently(buf: js.Any): js.Array[_] = js.native
+  def unpack_object_header_gently(buf: js.Any): js.Array[js.Any] = js.native
 }
 /* static members */
 object LooseStorage {
   
-  @JSImport("git", "LooseStorage.verify_header")
+  @JSImport("git", "LooseStorage")
   @js.native
-  def verify_header(`type`: js.Any, size: js.Any): Unit = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def verify_header(`type`: js.Any, size: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verify_header")(`type`.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -7,7 +7,6 @@ import typings.react.mod.ReactNode
 import typings.reactMasonryLayout.mod.ReactMasonryLayoutExport.MasonryLayoutProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -26,7 +25,6 @@ object mod {
   
   object ReactMasonryLayoutExport {
     
-    @js.native
     trait MasonryLayoutProps extends StObject {
       
       /**
@@ -34,71 +32,71 @@ object mod {
         *
         * @default ''
         */
-      var className: js.UndefOr[String] = js.native
+      var className: js.UndefOr[String] = js.undefined
       
-      var id: String = js.native
+      var id: String
       
       /**
         * The function that used to load more data
         *
         * @default () => {}
         */
-      var infiniteScroll: js.UndefOr[js.Function0[Unit]] = js.native
+      var infiniteScroll: js.UndefOr[js.Function0[Unit]] = js.undefined
       
       /**
         * By default, it will listen to the window's scroll event. If you want to listen to some div's scroll event, please set the container's id to it
         *
         * @default 'window'
         */
-      var infiniteScrollContainer: js.UndefOr[String] = js.native
+      var infiniteScrollContainer: js.UndefOr[String] = js.undefined
       
       /**
         * If you don't want to trigger infiniteScroll, set it to true
         *
         * @default false
         */
-      var infiniteScrollDisabled: js.UndefOr[Boolean] = js.native
+      var infiniteScrollDisabled: js.UndefOr[Boolean] = js.undefined
       
       /**
         * The distance to trigger infiniteScroll
         *
         * @default 200
         */
-      var infiniteScrollDistance: js.UndefOr[Double] = js.native
+      var infiniteScrollDistance: js.UndefOr[Double] = js.undefined
       
       /**
         * When no more data, please set it to true, then the infiniteScroll will not trigger
         *
         * @default false
         */
-      var infiniteScrollEnd: js.UndefOr[Boolean] = js.native
+      var infiniteScrollEnd: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Override it if you want to custom the no more data indicator
         *
         * @default <div>no more data</div>
         */
-      var infiniteScrollEndIndicator: js.UndefOr[ReactNode] = js.native
+      var infiniteScrollEndIndicator: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * When you are loading data, please set it to true, then the infiniteScroll will not trigger
         *
         * @default false
         */
-      var infiniteScrollLoading: js.UndefOr[Boolean] = js.native
+      var infiniteScrollLoading: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Override it if you want to custom the loading spinner
         *
         * @default <div>this is a loader</div>
         */
-      var infiniteScrollSpinner: js.UndefOr[ReactNode] = js.native
+      var infiniteScrollSpinner: js.UndefOr[ReactNode] = js.undefined
       
       /**
         * An attribute added to the grid items after they're positioned within the grid. If the attribute is not prefixed with data-, it will be added.
         * @default data-packed
         */
-      var packed: js.UndefOr[String] = js.native
+      var packed: js.UndefOr[String] = js.undefined
       
       /**
         * A boolean, defaulting to true, indicating that the grid items should be positioned using the top and left CSS properties.
@@ -107,7 +105,7 @@ object mod {
         *
         * @default false
         */
-      var position: js.UndefOr[Boolean] = js.native
+      var position: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An array of objects describing the grid's properties at different breakpoints.
@@ -120,14 +118,14 @@ object mod {
         * - The size without the mq property is assumed to be your smallest breakpoint, and must appear first
         * @default [ { columns: 2, gutter: 20 }, { mq: '768px', columns: 3, gutter: 20 }, { mq: '1024px', columns: 6, gutter: 20 } ]
         */
-      var sizes: js.UndefOr[js.Array[MasonryLayoutSizes]] = js.native
+      var sizes: js.UndefOr[js.Array[MasonryLayoutSizes]] = js.undefined
       
       /**
         * The inline style you want to use
         *
         * @default {}
         */
-      var style: js.UndefOr[CSSProperties] = js.native
+      var style: js.UndefOr[CSSProperties] = js.undefined
     }
     object MasonryLayoutProps {
       
@@ -226,23 +224,22 @@ object mod {
       }
     }
     
-    @js.native
     trait MasonryLayoutSizes extends StObject {
       
       /**
         * the number of vertical columns
         */
-      var columns: Double = js.native
+      var columns: Double
       
       /**
         * the space (in px) between the columns and grid items
         */
-      var gutter: Double = js.native
+      var gutter: Double
       
       /**
         * the minimum viewport width (String CSS unit: em, px, rem)
         */
-      var mq: js.UndefOr[String] = js.native
+      var mq: js.UndefOr[String] = js.undefined
     }
     object MasonryLayoutSizes {
       

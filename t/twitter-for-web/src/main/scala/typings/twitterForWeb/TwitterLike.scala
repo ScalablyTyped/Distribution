@@ -2,10 +2,8 @@ package typings.twitterForWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TwitterLike extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait TwitterLike extends StObject {
     *
     * @param callback A callback function which will be invoked when widgets.js is ready.
     */
-  def ready(callback: js.Function1[/* twttr */ Twitter, Unit]): Unit = js.native
+  def ready(callback: js.Function1[/* twttr */ Twitter, Unit]): Unit
 }
 object TwitterLike {
   

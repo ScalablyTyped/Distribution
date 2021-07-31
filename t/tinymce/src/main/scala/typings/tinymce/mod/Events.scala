@@ -4,13 +4,13 @@ import typings.std.Node
 import typings.tinymce.tinymceBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Events {
   
-  @js.native
-  trait ChangeEvent extends Event
+  trait ChangeEvent
+    extends StObject
+       with Event
   object ChangeEvent {
     
     @scala.inline
@@ -30,14 +30,15 @@ object Events {
     }
   }
   
-  @js.native
-  trait CommandEvent extends Event {
+  trait CommandEvent
+    extends StObject
+       with Event {
     
-    var command: String = js.native
+    var command: String
     
-    var ui: Boolean = js.native
+    var ui: Boolean
     
-    var value: String = js.native
+    var value: String
   }
   object CommandEvent {
     
@@ -74,14 +75,15 @@ object Events {
     }
   }
   
-  @js.native
-  trait ContentEvent extends Event {
+  trait ContentEvent
+    extends StObject
+       with Event {
     
-    var content: String = js.native
+    var content: String
     
-    var format: String = js.native
+    var format: String
     
-    var set: Boolean = js.native
+    var set: Boolean
   }
   object ContentEvent {
     
@@ -118,24 +120,23 @@ object Events {
     }
   }
   
-  @js.native
   trait Event extends StObject {
     
-    def isDefaultPrevented(): Boolean = js.native
+    def isDefaultPrevented(): Boolean
     
-    def isImmediatePropagationStopped(): Boolean = js.native
+    def isImmediatePropagationStopped(): Boolean
     
-    def isPropagationStopped(): Boolean = js.native
+    def isPropagationStopped(): Boolean
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    def stopImmediatePropagation(): Unit = js.native
+    def stopImmediatePropagation(): Unit
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var target: String = js.native
+    var target: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object Event {
     
@@ -184,10 +185,11 @@ object Events {
     }
   }
   
-  @js.native
-  trait FocusBlurEvent extends Event {
+  trait FocusBlurEvent
+    extends StObject
+       with Event {
     
-    var blurredEditor: Editor = js.native
+    var blurredEditor: Editor
   }
   object FocusBlurEvent {
     
@@ -216,14 +218,15 @@ object Events {
     }
   }
   
-  @js.native
-  trait NodeChangeEvent extends Event {
+  trait NodeChangeEvent
+    extends StObject
+       with Event {
     
-    var element: Node = js.native
+    var element: Node
     
-    var parents: js.Array[Node] = js.native
+    var parents: js.Array[Node]
     
-    var selectionChange: Boolean = js.native
+    var selectionChange: Boolean
   }
   object NodeChangeEvent {
     
@@ -263,22 +266,23 @@ object Events {
     }
   }
   
-  @js.native
-  trait ProcessEvent extends Event {
+  trait ProcessEvent
+    extends StObject
+       with Event {
     
-    var content: String = js.native
+    var content: String
     
-    var forced_root_block: String = js.native
+    var forced_root_block: String
     
-    var format: String = js.native
+    var format: String
     
-    var get: Boolean = js.native
+    var get: Boolean
     
-    var get_inner: Boolean = js.native
+    var get_inner: Boolean
     
-    var node: Node = js.native
+    var node: Node
     
-    var selection: `true` = js.native
+    var selection: `true`
   }
   object ProcessEvent {
     
@@ -294,13 +298,12 @@ object Events {
       isPropagationStopped: () => Boolean,
       node: Node,
       preventDefault: () => Unit,
-      selection: `true`,
       stopImmediatePropagation: () => Unit,
       stopPropagation: () => Unit,
       target: String,
       `type`: String
     ): ProcessEvent = {
-      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], forced_root_block = forced_root_block.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], get_inner = get_inner.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), node = node.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), selection = selection.asInstanceOf[js.Any], stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], forced_root_block = forced_root_block.asInstanceOf[js.Any], format = format.asInstanceOf[js.Any], get = get.asInstanceOf[js.Any], get_inner = get_inner.asInstanceOf[js.Any], isDefaultPrevented = js.Any.fromFunction0(isDefaultPrevented), isImmediatePropagationStopped = js.Any.fromFunction0(isImmediatePropagationStopped), isPropagationStopped = js.Any.fromFunction0(isPropagationStopped), node = node.asInstanceOf[js.Any], preventDefault = js.Any.fromFunction0(preventDefault), selection = true, stopImmediatePropagation = js.Any.fromFunction0(stopImmediatePropagation), stopPropagation = js.Any.fromFunction0(stopPropagation), target = target.asInstanceOf[js.Any])
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ProcessEvent]
     }
@@ -331,8 +334,9 @@ object Events {
     }
   }
   
-  @js.native
-  trait UndoRedoEvent extends Event
+  trait UndoRedoEvent
+    extends StObject
+       with Event
   object UndoRedoEvent {
     
     @scala.inline

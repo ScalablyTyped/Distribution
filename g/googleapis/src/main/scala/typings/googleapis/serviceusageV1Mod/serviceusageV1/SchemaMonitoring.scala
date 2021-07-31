@@ -2,7 +2,6 @@ package typings.googleapis.serviceusageV1Mod.serviceusageV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -27,7 +26,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * library.googleapis.com/book/returned_count         -
   * library.googleapis.com/book/overdue_count
   */
-@js.native
 trait SchemaMonitoring extends StObject {
   
   /**
@@ -38,7 +36,7 @@ trait SchemaMonitoring extends StObject {
     * resource type. A monitored resource and metric pair may only be used once
     * in the Monitoring configuration.
     */
-  var consumerDestinations: js.UndefOr[js.Array[SchemaMonitoringDestination]] = js.native
+  var consumerDestinations: js.UndefOr[js.Array[SchemaMonitoringDestination]] = js.undefined
   
   /**
     * Monitoring configurations for sending metrics to the producer project.
@@ -48,7 +46,7 @@ trait SchemaMonitoring extends StObject {
     * resource type. A monitored resource and metric pair may only be used once
     * in the Monitoring configuration.
     */
-  var producerDestinations: js.UndefOr[js.Array[SchemaMonitoringDestination]] = js.native
+  var producerDestinations: js.UndefOr[js.Array[SchemaMonitoringDestination]] = js.undefined
 }
 object SchemaMonitoring {
   

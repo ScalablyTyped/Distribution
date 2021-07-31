@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.Security.Credentials
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the result of a key credential retrieval. */
-@js.native
 trait KeyCredentialRetrievalResult extends StObject {
   
   /** Gets the key credential. */
-  var credential: KeyCredential = js.native
+  var credential: KeyCredential
   
   /** Gets the status of the key credential. */
-  var status: KeyCredentialStatus = js.native
+  var status: KeyCredentialStatus
 }
 object KeyCredentialRetrievalResult {
   

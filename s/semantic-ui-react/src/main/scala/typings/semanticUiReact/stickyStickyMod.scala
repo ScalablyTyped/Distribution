@@ -15,7 +15,6 @@ import typings.std.HTMLElement
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stickyStickyMod extends Shortcut {
@@ -32,9 +31,9 @@ object stickyStickyMod extends Shortcut {
   @js.native
   val default: ComponentClass[StickyProps, ComponentState] = js.native
   
-  @js.native
   trait StickyProps
-    extends StrictStickyProps
+    extends StObject
+       with StrictStickyProps
        with /* key */ StringDictionary[js.Any]
   object StickyProps {
     
@@ -45,29 +44,28 @@ object stickyStickyMod extends Shortcut {
     }
   }
   
-  @js.native
   trait StrictStickyProps extends StObject {
     
     /** A Sticky can be active. */
-    var active: js.UndefOr[Boolean] = js.native
+    var active: js.UndefOr[Boolean] = js.undefined
     
     /** An element type to render as (string or function). */
-    var as: js.UndefOr[js.Any] = js.native
+    var as: js.UndefOr[js.Any] = js.undefined
     
     /** Offset in pixels from the bottom of the screen when fixing element to viewport. */
-    var bottomOffset: js.UndefOr[Double] = js.native
+    var bottomOffset: js.UndefOr[Double] = js.undefined
     
     /** Primary content. */
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
     /** Additional classes. */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Context which sticky element should stick to. */
-    var context: js.UndefOr[Document | Window | HTMLElement | Ref[HTMLElement]] = js.native
+    var context: js.UndefOr[Document | Window | HTMLElement | Ref[HTMLElement]] = js.undefined
     
     /** Offset in pixels from the top of the screen when fixing element to viewport. */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Callback when element is bound to bottom of parent container.
@@ -77,7 +75,7 @@ object stickyStickyMod extends Shortcut {
       */
     var onBottom: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback when element is fixed to page.
@@ -87,7 +85,7 @@ object stickyStickyMod extends Shortcut {
       */
     var onStick: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback when element is bound to top of parent container.
@@ -97,7 +95,7 @@ object stickyStickyMod extends Shortcut {
       */
     var onTop: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Callback when element is unfixed from page.
@@ -107,16 +105,16 @@ object stickyStickyMod extends Shortcut {
       */
     var onUnstick: js.UndefOr[
         js.Function2[/* event */ MouseEvent[HTMLElement, NativeMouseEvent], /* data */ StickyProps, Unit]
-      ] = js.native
+      ] = js.undefined
     
     /** Whether element should be "pushed" by the viewport, attaching to the bottom of the screen when scrolling up. */
-    var pushing: js.UndefOr[Boolean] = js.native
+    var pushing: js.UndefOr[Boolean] = js.undefined
     
     /** Context which sticky should attach onscroll events. */
-    var scrollContext: js.UndefOr[Document | Window | HTMLElement | Ref[HTMLElement]] = js.native
+    var scrollContext: js.UndefOr[Document | Window | HTMLElement | Ref[HTMLElement]] = js.undefined
     
     /** Custom style for sticky element. */
-    var styleElement: js.UndefOr[CSSProperties] = js.native
+    var styleElement: js.UndefOr[CSSProperties] = js.undefined
   }
   object StrictStickyProps {
     

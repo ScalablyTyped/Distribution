@@ -3,15 +3,13 @@ package typings.officeUiFabricReact.personaTypesMod
 import typings.uifabricMergeStyles.istyleMod.IStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPersonaPresenceStyles extends StObject {
   
-  var presence: IStyle = js.native
+  var presence: IStyle
   
-  var presenceIcon: IStyle = js.native
+  var presenceIcon: IStyle
 }
 object IPersonaPresenceStyles {
   

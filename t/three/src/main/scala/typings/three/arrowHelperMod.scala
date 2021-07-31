@@ -10,7 +10,6 @@ import typings.three.object3DMod.Object3D
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object arrowHelperMod {
@@ -46,8 +45,8 @@ object arrowHelperMod {
     def setDirection(dir: Vector3): Unit = js.native
     
     def setLength(length: Double): Unit = js.native
-    def setLength(length: Double, headLength: js.UndefOr[scala.Nothing], headWidth: Double): Unit = js.native
     def setLength(length: Double, headLength: Double): Unit = js.native
     def setLength(length: Double, headLength: Double, headWidth: Double): Unit = js.native
+    def setLength(length: Double, headLength: Unit, headWidth: Double): Unit = js.native
   }
 }

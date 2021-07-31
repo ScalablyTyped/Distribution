@@ -8,14 +8,16 @@ import typings.std.HTMLSelectElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useFocusStateMod {
   
-  @JSImport("@react-md/form/types/useFocusState", "useFocusState")
+  @JSImport("@react-md/form/types/useFocusState", JSImport.Namespace)
   @js.native
-  def useFocusState(hasOnFocusOnBlur: Options): js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def useFocusState(hasOnFocusOnBlur: Options): js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler] = ^.asInstanceOf[js.Dynamic].applyDynamic("useFocusState")(hasOnFocusOnBlur.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[Boolean, FocusEventHandler, BlurEventHandler]]
   
   type BlurEventHandler = typings.react.mod.FocusEventHandler[FocusElement]
   
@@ -24,12 +26,11 @@ object useFocusStateMod {
   type FocusEventHandler = typings.react.mod.FocusEventHandler[FocusElement]
   
   /* Inlined std.Pick<react.react.HTMLAttributes<@react-md/form.@react-md/form/types/useFocusState.FocusElement>, 'onBlur' | 'onFocus'> */
-  @js.native
   trait Options extends StObject {
     
-    var onBlur: js.UndefOr[typings.react.mod.FocusEventHandler[FocusElement]] = js.native
+    var onBlur: js.UndefOr[typings.react.mod.FocusEventHandler[FocusElement]] = js.undefined
     
-    var onFocus: js.UndefOr[typings.react.mod.FocusEventHandler[FocusElement]] = js.native
+    var onFocus: js.UndefOr[typings.react.mod.FocusEventHandler[FocusElement]] = js.undefined
   }
   object Options {
     

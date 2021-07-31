@@ -2,43 +2,41 @@ package typings.wegameApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined wegame-api.wx.types.CallbacksWithType<{  openIdList :std.ReadonlyArray<string>,   errCode :number,   errMsg :string}> & {  signature :string,   nonceStr :string,   timeStamp :number,   groupId :string,   muteConfig :{  muteMicrophone :boolean | undefined,   muteEarphone :boolean | undefined} | undefined} */
-@js.native
 trait CallbacksWithTypeopenIdLi extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 小游戏内此房间/群聊的 ID。同一时刻传入相同 groupId 的用户会进入到同个实时语音房间。
     */
-  var groupId: String = js.native
+  var groupId: String
   
   /**
     * 静音设置
     */
-  var muteConfig: js.UndefOr[MuteEarphone] = js.native
+  var muteConfig: js.UndefOr[MuteEarphone] = js.undefined
   
   /**
     * 验证所需的随机字符串
     */
-  var nonceStr: String = js.native
+  var nonceStr: String
   
   /**
     * 签名，用于验证小游戏的身份
     */
-  var signature: String = js.native
+  var signature: String
   
-  var success: js.UndefOr[js.Function1[/* res */ OpenIdList, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ OpenIdList, Unit]] = js.undefined
   
   /**
     * 验证所需的时间戳
     */
-  var timeStamp: Double = js.native
+  var timeStamp: Double
 }
 object CallbacksWithTypeopenIdLi {
   

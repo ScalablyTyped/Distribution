@@ -8,50 +8,59 @@ import typings.rdfJs.mod.Term
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("rdf-dataset-ext", "addAll")
+  @JSImport("rdf-dataset-ext", JSImport.Namespace)
   @js.native
-  def addAll[Q /* <: BaseQuad */, D /* <: DatasetCore[Q, Q] */](dataset: D, iterable: Iterable[Q]): D = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("rdf-dataset-ext", "deleteMatch")
-  @js.native
-  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D): D = js.native
-  @JSImport("rdf-dataset-ext", "deleteMatch")
-  @js.native
-  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](
-    dataset: D,
-    subject: js.UndefOr[Term],
-    predicate: js.UndefOr[Term],
-    `object`: js.UndefOr[Term],
-    graph: Term
-  ): D = js.native
-  @JSImport("rdf-dataset-ext", "deleteMatch")
-  @js.native
-  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: js.UndefOr[Term], predicate: js.UndefOr[Term], `object`: Term): D = js.native
-  @JSImport("rdf-dataset-ext", "deleteMatch")
-  @js.native
-  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: js.UndefOr[Term], predicate: Term): D = js.native
-  @JSImport("rdf-dataset-ext", "deleteMatch")
-  @js.native
-  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term): D = js.native
+  @scala.inline
+  def addAll[Q /* <: BaseQuad */, D /* <: DatasetCore[Q, Q] */](dataset: D, iterable: Iterable[Q]): D = (^.asInstanceOf[js.Dynamic].applyDynamic("addAll")(dataset.asInstanceOf[js.Any], iterable.asInstanceOf[js.Any])).asInstanceOf[D]
   
-  @JSImport("rdf-dataset-ext", "equals")
-  @js.native
-  def equals_(a: DatasetCore[BaseQuad, BaseQuad], b: DatasetCore[BaseQuad, BaseQuad]): Boolean = js.native
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D): D = ^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any]).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Unit, `object`: Unit, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Unit, `object`: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Unit, `object`: Term, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term, `object`: Unit, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term, `object`: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Unit, predicate: Term, `object`: Term, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Unit, `object`: Unit, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Unit, `object`: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Unit, `object`: Term, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Unit, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any])).asInstanceOf[D]
+  @scala.inline
+  def deleteMatch[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, subject: Term, predicate: Term, `object`: Term, graph: Term): D = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteMatch")(dataset.asInstanceOf[js.Any], subject.asInstanceOf[js.Any], predicate.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], graph.asInstanceOf[js.Any])).asInstanceOf[D]
   
-  @JSImport("rdf-dataset-ext", "fromStream")
-  @js.native
-  def fromStream[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, stream: EventEmitter): js.Promise[D] = js.native
+  @scala.inline
+  def equals_(a: DatasetCore[BaseQuad, BaseQuad], b: DatasetCore[BaseQuad, BaseQuad]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("equals")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("rdf-dataset-ext", "toCanonical")
-  @js.native
-  def toCanonical(dataset: DatasetCore[BaseQuad, BaseQuad]): String = js.native
+  @scala.inline
+  def fromStream[D /* <: DatasetCore[BaseQuad, BaseQuad] */](dataset: D, stream: EventEmitter): js.Promise[D] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromStream")(dataset.asInstanceOf[js.Any], stream.asInstanceOf[js.Any])).asInstanceOf[js.Promise[D]]
   
-  @JSImport("rdf-dataset-ext", "toStream")
-  @js.native
-  def toStream[Q /* <: BaseQuad */](dataset: DatasetCore[Q, Q]): Stream[Q] = js.native
+  @scala.inline
+  def toCanonical(dataset: DatasetCore[BaseQuad, BaseQuad]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toCanonical")(dataset.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def toStream[Q /* <: BaseQuad */](dataset: DatasetCore[Q, Q]): Stream[Q] = ^.asInstanceOf[js.Dynamic].applyDynamic("toStream")(dataset.asInstanceOf[js.Any]).asInstanceOf[Stream[Q]]
 }

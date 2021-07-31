@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FixedBidStrategy extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait FixedBidStrategy extends StObject {
     * greater than or equal to billable unit of the given currency and smaller than or equal to the upper limit 1000000000. For example, 1500000 represents 1.5 standard units of the
     * currency.
     */
-  var bidAmountMicros: js.UndefOr[String] = js.native
+  var bidAmountMicros: js.UndefOr[String] = js.undefined
 }
 object FixedBidStrategy {
   

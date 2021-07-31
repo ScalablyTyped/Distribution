@@ -3,24 +3,24 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait TextToken extends TagToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait TextToken
+  extends StObject
+     with TagToken {
   
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_TextToken: text = js.native
+  var type_TextToken: text
 }
 object TextToken {
   
   @scala.inline
-  def apply(level: Double, `type`: text): TextToken = {
+  def apply(level: Double): TextToken = {
     val __obj = js.Dynamic.literal(level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("text")
     __obj.asInstanceOf[TextToken]
   }
   

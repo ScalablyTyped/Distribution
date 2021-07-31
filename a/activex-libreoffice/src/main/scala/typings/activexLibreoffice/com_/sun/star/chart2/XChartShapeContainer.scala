@@ -5,21 +5,21 @@ import typings.activexLibreoffice.com_.sun.star.drawing.XShape
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XChartShapeContainer extends XInterface {
+trait XChartShapeContainer
+  extends StObject
+     with XInterface {
   
-  val Shape: XShape = js.native
+  val Shape: XShape
   
   /** a renderer creates ChartShapes and adds it to this container */
-  def addShape(xShape: XShape): Unit = js.native
+  def addShape(xShape: XShape): Unit
   
-  def getShape(): XShape = js.native
+  def getShape(): XShape
   
   /** a renderer can remove ChartShapes from this container (e.g. if the visible range has changed) */
-  def removeShape(xShape: XShape): Unit = js.native
+  def removeShape(xShape: XShape): Unit
 }
 object XChartShapeContainer {
   

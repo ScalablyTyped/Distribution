@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VppLicensingType extends StObject {
   
   // Whether the program supports the device licensing type.
-  var supportsDeviceLicensing: js.UndefOr[Boolean] = js.native
+  var supportsDeviceLicensing: js.UndefOr[Boolean] = js.undefined
   
   // Whether the program supports the user licensing type.
-  var supportsUserLicensing: js.UndefOr[Boolean] = js.native
+  var supportsUserLicensing: js.UndefOr[Boolean] = js.undefined
 }
 object VppLicensingType {
   

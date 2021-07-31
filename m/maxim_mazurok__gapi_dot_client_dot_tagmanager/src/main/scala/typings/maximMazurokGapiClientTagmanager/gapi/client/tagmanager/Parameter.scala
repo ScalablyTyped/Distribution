@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientTagmanager.gapi.client.tagmanager
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Parameter extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait Parameter extends StObject {
     * tagmanager.accounts.containers.workspaces.triggers.create @mutable tagmanager.accounts.containers.workspaces.triggers.update @mutable
     * tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * This list parameter's parameters (keys will be ignored). @mutable tagmanager.accounts.containers.workspaces.variables.create @mutable
@@ -22,7 +20,7 @@ trait Parameter extends StObject {
     * tagmanager.accounts.containers.workspaces.triggers.update @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable
     * tagmanager.accounts.containers.workspaces.tags.update
     */
-  var list: js.UndefOr[js.Array[Parameter]] = js.native
+  var list: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /**
     * This map parameter's parameters (must have keys; keys must be unique). @mutable tagmanager.accounts.containers.workspaces.variables.create @mutable
@@ -30,7 +28,7 @@ trait Parameter extends StObject {
     * tagmanager.accounts.containers.workspaces.triggers.update @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable
     * tagmanager.accounts.containers.workspaces.tags.update
     */
-  var map: js.UndefOr[js.Array[Parameter]] = js.native
+  var map: js.UndefOr[js.Array[Parameter]] = js.undefined
   
   /**
     * The parameter type. Valid values are: - boolean: The value represents a boolean, represented as 'true' or 'false' - integer: The value represents a 64-bit signed integer value, in
@@ -41,7 +39,7 @@ trait Parameter extends StObject {
     * tagmanager.accounts.containers.workspaces.triggers.update @mutable tagmanager.accounts.containers.workspaces.tags.create @mutable
     * tagmanager.accounts.containers.workspaces.tags.update
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * A parameter's value (may contain variable references such as "{{myVariable}}") as appropriate to the specified type. @mutable
@@ -49,7 +47,7 @@ trait Parameter extends StObject {
     * tagmanager.accounts.containers.workspaces.triggers.create @mutable tagmanager.accounts.containers.workspaces.triggers.update @mutable
     * tagmanager.accounts.containers.workspaces.tags.create @mutable tagmanager.accounts.containers.workspaces.tags.update
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object Parameter {
   

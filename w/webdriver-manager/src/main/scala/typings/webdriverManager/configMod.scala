@@ -3,7 +3,6 @@ package typings.webdriverManager
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configMod {
@@ -22,17 +21,15 @@ object configMod {
       * Get the binary versions from the configuration file.
       * @returns A map of the versions defined in the configuration file.
       */
-    @JSImport("webdriver-manager/built/lib/config", "Config.binaryVersions")
-    @js.native
-    def binaryVersions(): ConfigFile = js.native
+    @scala.inline
+    def binaryVersions(): ConfigFile = ^.asInstanceOf[js.Dynamic].applyDynamic("binaryVersions")().asInstanceOf[ConfigFile]
     
     /**
       * Get the CDN urls from the configuration file.
       * @returns A map of the CDN versions defined in the configuration file.
       */
-    @JSImport("webdriver-manager/built/lib/config", "Config.cdnUrls")
-    @js.native
-    def cdnUrls(): ConfigFile = js.native
+    @scala.inline
+    def cdnUrls(): ConfigFile = ^.asInstanceOf[js.Dynamic].applyDynamic("cdnUrls")().asInstanceOf[ConfigFile]
     
     @JSImport("webdriver-manager/built/lib/config", "Config.configFile")
     @js.native
@@ -58,32 +55,26 @@ object configMod {
     @scala.inline
     def folder_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("folder")(x.asInstanceOf[js.Any])
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.getBaseDir")
-    @js.native
-    def getBaseDir(): String = js.native
+    @scala.inline
+    def getBaseDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getBaseDir")().asInstanceOf[String]
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.getConfigFile_")
-    @js.native
-    def getConfigFile_(): String = js.native
+    @scala.inline
+    def getConfigFile_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getConfigFile_")().asInstanceOf[String]
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.getPackageFile_")
-    @js.native
-    def getPackageFile_(): String = js.native
+    @scala.inline
+    def getPackageFile_(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getPackageFile_")().asInstanceOf[String]
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.getSeleniumDir")
-    @js.native
-    def getSeleniumDir(): String = js.native
+    @scala.inline
+    def getSeleniumDir(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getSeleniumDir")().asInstanceOf[String]
     
     /**
       * Get the package version.
       */
-    @JSImport("webdriver-manager/built/lib/config", "Config.getVersion")
-    @js.native
-    def getVersion(): String = js.native
+    @scala.inline
+    def getVersion(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getVersion")().asInstanceOf[String]
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.httpProxy")
-    @js.native
-    def httpProxy(): String = js.native
+    @scala.inline
+    def httpProxy(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("httpProxy")().asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/config", "Config.httpProxy_")
     @js.native
@@ -91,9 +82,8 @@ object configMod {
     @scala.inline
     def httpProxy__=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("httpProxy_")(x.asInstanceOf[js.Any])
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.httpsProxy")
-    @js.native
-    def httpsProxy(): String = js.native
+    @scala.inline
+    def httpsProxy(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("httpsProxy")().asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/config", "Config.httpsProxy_")
     @js.native
@@ -119,9 +109,8 @@ object configMod {
     @scala.inline
     def localInstall_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("localInstall")(x.asInstanceOf[js.Any])
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.noProxy")
-    @js.native
-    def noProxy(): String = js.native
+    @scala.inline
+    def noProxy(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("noProxy")().asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/config", "Config.noProxy_")
     @js.native
@@ -135,9 +124,8 @@ object configMod {
     @scala.inline
     def nodeModuleName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("nodeModuleName")(x.asInstanceOf[js.Any])
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.osArch")
-    @js.native
-    def osArch(): String = js.native
+    @scala.inline
+    def osArch(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("osArch")().asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/config", "Config.osArch_")
     @js.native
@@ -145,9 +133,8 @@ object configMod {
     @scala.inline
     def osArch__=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("osArch_")(x.asInstanceOf[js.Any])
     
-    @JSImport("webdriver-manager/built/lib/config", "Config.osType")
-    @js.native
-    def osType(): String = js.native
+    @scala.inline
+    def osType(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("osType")().asInstanceOf[String]
     
     @JSImport("webdriver-manager/built/lib/config", "Config.osType_")
     @js.native
@@ -174,22 +161,23 @@ object configMod {
     def runCommand_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("runCommand")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait ConfigFile extends /* key */ StringDictionary[String] {
+  trait ConfigFile
+    extends StObject
+       with /* key */ StringDictionary[String] {
     
-    var android: js.UndefOr[String] = js.native
+    var android: js.UndefOr[String] = js.undefined
     
-    var appium: js.UndefOr[String] = js.native
+    var appium: js.UndefOr[String] = js.undefined
     
-    var chrome: js.UndefOr[String] = js.native
+    var chrome: js.UndefOr[String] = js.undefined
     
-    var gecko: js.UndefOr[String] = js.native
+    var gecko: js.UndefOr[String] = js.undefined
     
-    var ie: js.UndefOr[String] = js.native
+    var ie: js.UndefOr[String] = js.undefined
     
-    var maxChrome: js.UndefOr[String] = js.native
+    var maxChrome: js.UndefOr[String] = js.undefined
     
-    var selenium: js.UndefOr[String] = js.native
+    var selenium: js.UndefOr[String] = js.undefined
   }
   object ConfigFile {
     

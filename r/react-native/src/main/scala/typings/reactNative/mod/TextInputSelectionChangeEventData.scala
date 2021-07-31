@@ -3,13 +3,13 @@ package typings.reactNative.mod
 import typings.reactNative.anon.End
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextInputSelectionChangeEventData extends TargetedEvent {
+trait TextInputSelectionChangeEventData
+  extends StObject
+     with TargetedEvent {
   
-  var selection: End = js.native
+  var selection: End
 }
 object TextInputSelectionChangeEventData {
   

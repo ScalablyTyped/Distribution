@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Definition of an operation or a custom query
   */
-@js.native
-trait CapabilityStatementRestOperation extends BackboneElement {
+trait CapabilityStatementRestOperation
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'name'.
     */
-  var _name: js.UndefOr[Element] = js.native
+  var _name: js.UndefOr[Element] = js.undefined
   
   /**
     * The defined operation/query
     */
-  var definition: Reference = js.native
+  var definition: Reference
   
   /**
     * Name by which the operation/query is invoked
     */
-  var name: String = js.native
+  var name: String
 }
 object CapabilityStatementRestOperation {
   

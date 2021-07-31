@@ -6,7 +6,6 @@ import typings.reactNavigationStack.vendorTypesMod.StackCardMode
 import typings.reactNavigationStack.vendorTypesMod.StackHeaderMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactNavigationStackStrings {
@@ -47,7 +46,9 @@ object reactNavigationStackStrings {
   def button: button = "button".asInstanceOf[button]
   
   @js.native
-  sealed trait card extends StackCardMode
+  sealed trait card
+    extends StObject
+       with StackCardMode
   @scala.inline
   def card: card = "card".asInstanceOf[card]
   
@@ -62,12 +63,16 @@ object reactNavigationStackStrings {
   def clip: clip = "clip".asInstanceOf[clip]
   
   @js.native
-  sealed trait didBlur extends NavigationStackEventName
+  sealed trait didBlur
+    extends StObject
+       with NavigationStackEventName
   @scala.inline
   def didBlur: didBlur = "didBlur".asInstanceOf[didBlur]
   
   @js.native
-  sealed trait didFocus extends NavigationStackEventName
+  sealed trait didFocus
+    extends StObject
+       with NavigationStackEventName
   @scala.inline
   def didFocus: didFocus = "didFocus".asInstanceOf[didFocus]
   
@@ -77,7 +82,9 @@ object reactNavigationStackStrings {
   def email: email = "email".asInstanceOf[email]
   
   @js.native
-  sealed trait float extends StackHeaderMode
+  sealed trait float
+    extends StObject
+       with StackHeaderMode
   @scala.inline
   def float: float = "float".asInstanceOf[float]
   
@@ -92,12 +99,16 @@ object reactNavigationStackStrings {
   def highQuality: highQuality = "highQuality".asInstanceOf[highQuality]
   
   @js.native
-  sealed trait horizontal extends GestureDirection
+  sealed trait horizontal
+    extends StObject
+       with GestureDirection
   @scala.inline
   def horizontal: horizontal = "horizontal".asInstanceOf[horizontal]
   
   @js.native
-  sealed trait `horizontal-inverted` extends GestureDirection
+  sealed trait `horizontal-inverted`
+    extends StObject
+       with GestureDirection
   @scala.inline
   def `horizontal-inverted`: `horizontal-inverted` = "horizontal-inverted".asInstanceOf[`horizontal-inverted`]
   
@@ -117,7 +128,9 @@ object reactNavigationStackStrings {
   def middle: middle = "middle".asInstanceOf[middle]
   
   @js.native
-  sealed trait modal extends StackCardMode
+  sealed trait modal
+    extends StObject
+       with StackCardMode
   @scala.inline
   def modal: modal = "modal".asInstanceOf[modal]
   
@@ -132,7 +145,9 @@ object reactNavigationStackStrings {
   def `no-hide-descendants`: `no-hide-descendants` = "no-hide-descendants".asInstanceOf[`no-hide-descendants`]
   
   @js.native
-  sealed trait none extends StackHeaderMode
+  sealed trait none
+    extends StObject
+       with StackHeaderMode
   @scala.inline
   def none: none = "none".asInstanceOf[none]
   
@@ -167,12 +182,9 @@ object reactNavigationStackStrings {
   def radiobutton_unchecked: radiobutton_unchecked = "radiobutton_unchecked".asInstanceOf[radiobutton_unchecked]
   
   @js.native
-  sealed trait refocus extends StObject
-  @scala.inline
-  def refocus: refocus = "refocus".asInstanceOf[refocus]
-  
-  @js.native
-  sealed trait screen extends StackHeaderMode
+  sealed trait screen
+    extends StObject
+       with StackHeaderMode
   @scala.inline
   def screen: screen = "screen".asInstanceOf[screen]
   
@@ -197,22 +209,30 @@ object reactNavigationStackStrings {
   def timing: timing = "timing".asInstanceOf[timing]
   
   @js.native
-  sealed trait vertical extends GestureDirection
+  sealed trait vertical
+    extends StObject
+       with GestureDirection
   @scala.inline
   def vertical: vertical = "vertical".asInstanceOf[vertical]
   
   @js.native
-  sealed trait `vertical-inverted` extends GestureDirection
+  sealed trait `vertical-inverted`
+    extends StObject
+       with GestureDirection
   @scala.inline
   def `vertical-inverted`: `vertical-inverted` = "vertical-inverted".asInstanceOf[`vertical-inverted`]
   
   @js.native
-  sealed trait willBlur extends NavigationStackEventName
+  sealed trait willBlur
+    extends StObject
+       with NavigationStackEventName
   @scala.inline
   def willBlur: willBlur = "willBlur".asInstanceOf[willBlur]
   
   @js.native
-  sealed trait willFocus extends NavigationStackEventName
+  sealed trait willFocus
+    extends StObject
+       with NavigationStackEventName
   @scala.inline
   def willFocus: willFocus = "willFocus".asInstanceOf[willFocus]
   

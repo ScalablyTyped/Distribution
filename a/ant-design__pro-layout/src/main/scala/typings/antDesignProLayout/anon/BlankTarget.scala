@@ -3,19 +3,17 @@ package typings.antDesignProLayout.anon
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BlankTarget extends StObject {
   
-  var blankTarget: js.UndefOr[Boolean] = js.native
+  var blankTarget: js.UndefOr[Boolean] = js.undefined
   
-  var href: String = js.native
+  var href: String
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var title: ReactNode = js.native
+  var title: ReactNode
 }
 object BlankTarget {
   

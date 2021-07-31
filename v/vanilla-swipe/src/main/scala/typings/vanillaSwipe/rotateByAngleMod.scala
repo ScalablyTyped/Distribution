@@ -3,24 +3,24 @@ package typings.vanillaSwipe
 import typings.vanillaSwipe.anon.Y
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rotateByAngleMod {
   
-  @JSImport("vanilla-swipe/lib/utils/rotateByAngle", "rotateByAngle")
+  @JSImport("vanilla-swipe/lib/utils/rotateByAngle", JSImport.Namespace)
   @js.native
-  def rotateByAngle(position: Y): Value = js.native
-  @JSImport("vanilla-swipe/lib/utils/rotateByAngle", "rotateByAngle")
-  @js.native
-  def rotateByAngle(position: Y, angle: Double): Value = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def rotateByAngle(position: Y): Value = ^.asInstanceOf[js.Dynamic].applyDynamic("rotateByAngle")(position.asInstanceOf[js.Any]).asInstanceOf[Value]
+  @scala.inline
+  def rotateByAngle(position: Y, angle: Double): Value = (^.asInstanceOf[js.Dynamic].applyDynamic("rotateByAngle")(position.asInstanceOf[js.Any], angle.asInstanceOf[js.Any])).asInstanceOf[Value]
+  
   trait Value extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object Value {
     

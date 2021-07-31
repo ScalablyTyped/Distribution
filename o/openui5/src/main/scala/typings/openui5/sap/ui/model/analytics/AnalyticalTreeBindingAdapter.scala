@@ -2,10 +2,8 @@ package typings.openui5.sap.ui.model.analytics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnalyticalTreeBindingAdapter extends StObject {
   
   /**
@@ -13,13 +11,13 @@ trait AnalyticalTreeBindingAdapter extends StObject {
     * AnalyticalBinding).
     * @returns the number of expanded levels
     */
-  def getNumberOfExpandedLevels(): Double = js.native
+  def getNumberOfExpandedLevels(): Double
   
   /**
     * Checks if the AnalyticalBinding has totaled measures available.Used for rendering sum rows.
     * @returns wether the binding has totaled measures or not
     */
-  def hasTotaledMeasures(): Boolean = js.native
+  def hasTotaledMeasures(): Boolean
   
   /**
     * Sets the number of expanded levels on the TreeBinding (commonly an AnalyticalBinding).This is NOT
@@ -28,7 +26,7 @@ trait AnalyticalTreeBindingAdapter extends StObject {
     * for the ungroup/ungroup-all feature.
     * @param iLevels the number of levels which should be expanded, minimum is 0
     */
-  def setNumberOfExpandedLevels(iLevels: Double): Unit = js.native
+  def setNumberOfExpandedLevels(iLevels: Double): Unit
 }
 object AnalyticalTreeBindingAdapter {
   

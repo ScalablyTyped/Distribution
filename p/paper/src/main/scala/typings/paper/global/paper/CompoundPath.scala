@@ -2,7 +2,6 @@ package typings.paper.global.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
@@ -19,7 +18,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("paper.CompoundPath")
 @js.native
 class CompoundPath protected ()
-  extends typings.paper.paper.CompoundPath {
+  extends StObject
+     with typings.paper.paper.CompoundPath {
   /** 
     * Creates a new compound path item from an object description and places it
     * at the top of the active layer.

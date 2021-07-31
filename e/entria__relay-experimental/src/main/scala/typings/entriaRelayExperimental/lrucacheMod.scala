@@ -3,32 +3,33 @@ package typings.entriaRelayExperimental
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lrucacheMod {
   
-  // tslint:disable-next-line:no-unnecessary-generics
-  @JSImport("@entria/relay-experimental/lib/LRUCache", "create")
+  @JSImport("@entria/relay-experimental/lib/LRUCache", JSImport.Namespace)
   @js.native
-  def create[T](capacity: Double): LRUCache[T] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  // tslint:disable-next-line:no-unnecessary-generics
+  @scala.inline
+  def create[T](capacity: Double): LRUCache[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(capacity.asInstanceOf[js.Any]).asInstanceOf[LRUCache[T]]
+  
   trait Cache[T] extends StObject {
     
-    def capacity(): Double = js.native
+    def capacity(): Double
     
-    def clear(): Unit = js.native
+    def clear(): Unit
     
-    def delete(key: String): Unit = js.native
+    def delete(key: String): Unit
     
-    def get(key: String): T | Null = js.native
+    def get(key: String): T | Null
     
-    def has(key: String): Boolean = js.native
+    def has(key: String): Boolean
     
-    def set(key: String, value: T): Unit = js.native
+    def set(key: String, value: T): Unit
     
-    def size(): Double = js.native
+    def size(): Double
   }
   object Cache {
     
@@ -47,7 +48,7 @@ object lrucacheMod {
     }
     
     @scala.inline
-    implicit class CacheMutableBuilder[Self <: Cache[_], T] (val x: Self with Cache[T]) extends AnyVal {
+    implicit class CacheMutableBuilder[Self <: Cache[?], T] (val x: Self & Cache[T]) extends AnyVal {
       
       @scala.inline
       def setCapacity(value: () => Double): Self = StObject.set(x, "capacity", js.Any.fromFunction0(value))
@@ -83,12 +84,13 @@ object lrucacheMod {
     *
     * Get does the same: if the key is present, delete and reinsert it.
     */
-  @js.native
-  trait LRUCache[T] extends Cache[T] {
+  trait LRUCache[T]
+    extends StObject
+       with Cache[T] {
     
-    var _capacity: Double = js.native
+    var _capacity: Double
     
-    var _map: Map[String, T] = js.native
+    var _map: Map[String, T]
   }
   object LRUCache {
     
@@ -109,7 +111,7 @@ object lrucacheMod {
     }
     
     @scala.inline
-    implicit class LRUCacheMutableBuilder[Self <: LRUCache[_], T] (val x: Self with LRUCache[T]) extends AnyVal {
+    implicit class LRUCacheMutableBuilder[Self <: LRUCache[?], T] (val x: Self & LRUCache[T]) extends AnyVal {
       
       @scala.inline
       def set_capacity(value: Double): Self = StObject.set(x, "_capacity", value.asInstanceOf[js.Any])

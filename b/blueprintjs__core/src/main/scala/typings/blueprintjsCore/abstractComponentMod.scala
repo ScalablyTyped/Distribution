@@ -4,7 +4,6 @@ import typings.blueprintjsCore.anon.Children
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object abstractComponentMod {
@@ -22,7 +21,7 @@ object abstractComponentMod {
     def clearTimeouts(): Unit = js.native
     
     @JSName("componentWillReceiveProps")
-    def componentWillReceiveProps_MAbstractComponent(nextProps: P with Children): Unit = js.native
+    def componentWillReceiveProps_MAbstractComponent(nextProps: P & Children): Unit = js.native
     
     @JSName("componentWillUnmount")
     def componentWillUnmount_MAbstractComponent(): Unit = js.native
@@ -46,6 +45,6 @@ object abstractComponentMod {
       * [propTypes](https://facebook.github.io/react/docs/reusable-components.html#prop-validation) feature.
       * Like propTypes, these runtime checks run only in development mode.
       */
-    /* protected */ def validateProps(_underscore: P with Children): Unit = js.native
+    /* protected */ def validateProps(_underscore: P & Children): Unit = js.native
   }
 }

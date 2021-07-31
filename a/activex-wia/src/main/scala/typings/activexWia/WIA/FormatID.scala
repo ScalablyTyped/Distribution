@@ -7,7 +7,6 @@ import typings.activexWia.activexWiaStrings.`LeftcurlybracketB96B3CB0-0728-11D3-
 import typings.activexWia.activexWiaStrings.`LeftcurlybracketB96B3CB1-0728-11D3-9D7B-0000F81EF32ERightcurlybracket`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** String versions of globally unique identifiers (GUIDs) that indicate the file format of an image. */

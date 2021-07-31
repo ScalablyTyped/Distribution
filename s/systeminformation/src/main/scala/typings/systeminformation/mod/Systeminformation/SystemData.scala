@@ -2,25 +2,23 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SystemData extends StObject {
   
-  var manufacturer: String = js.native
+  var manufacturer: String
   
-  var model: String = js.native
+  var model: String
   
-  var raspberry: js.UndefOr[RaspberryRevisionData] = js.native
+  var raspberry: js.UndefOr[RaspberryRevisionData] = js.undefined
   
-  var serial: String = js.native
+  var serial: String
   
-  var sku: String = js.native
+  var sku: String
   
-  var uuid: String = js.native
+  var uuid: String
   
-  var version: String = js.native
+  var version: String
 }
 object SystemData {
   

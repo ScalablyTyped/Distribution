@@ -2,21 +2,19 @@ package typings.awsSdk.mediapackageMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHarvestJobsResponse extends StObject {
   
   /**
     * A list of HarvestJob records.
     */
-  var HarvestJobs: js.UndefOr[listOfHarvestJob] = js.native
+  var HarvestJobs: js.UndefOr[listOfHarvestJob] = js.undefined
   
   /**
     * A token that can be used to resume pagination from the end of the collection.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
 }
 object ListHarvestJobsResponse {
   

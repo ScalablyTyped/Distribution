@@ -2,15 +2,13 @@ package typings.natural.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TfIdfTerm extends StObject {
   
-  var term: String = js.native
+  var term: String
   
-  var tfidf: Double = js.native
+  var tfidf: Double
 }
 object TfIdfTerm {
   

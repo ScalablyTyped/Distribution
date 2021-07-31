@@ -2,59 +2,57 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Describes a particular operation comprising a MapTask.
   */
-@js.native
 trait SchemaParallelInstruction extends StObject {
   
   /**
     * Additional information for Flatten instructions.
     */
-  var flatten: js.UndefOr[SchemaFlattenInstruction] = js.native
+  var flatten: js.UndefOr[SchemaFlattenInstruction] = js.undefined
   
   /**
     * User-provided name of this operation.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * System-defined name for the operation in the original workflow graph.
     */
-  var originalName: js.UndefOr[String] = js.native
+  var originalName: js.UndefOr[String] = js.undefined
   
   /**
     * Describes the outputs of the instruction.
     */
-  var outputs: js.UndefOr[js.Array[SchemaInstructionOutput]] = js.native
+  var outputs: js.UndefOr[js.Array[SchemaInstructionOutput]] = js.undefined
   
   /**
     * Additional information for ParDo instructions.
     */
-  var parDo: js.UndefOr[SchemaParDoInstruction] = js.native
+  var parDo: js.UndefOr[SchemaParDoInstruction] = js.undefined
   
   /**
     * Additional information for PartialGroupByKey instructions.
     */
-  var partialGroupByKey: js.UndefOr[SchemaPartialGroupByKeyInstruction] = js.native
+  var partialGroupByKey: js.UndefOr[SchemaPartialGroupByKeyInstruction] = js.undefined
   
   /**
     * Additional information for Read instructions.
     */
-  var read: js.UndefOr[SchemaReadInstruction] = js.native
+  var read: js.UndefOr[SchemaReadInstruction] = js.undefined
   
   /**
     * System-defined name of this operation. Unique across the workflow.
     */
-  var systemName: js.UndefOr[String] = js.native
+  var systemName: js.UndefOr[String] = js.undefined
   
   /**
     * Additional information for Write instructions.
     */
-  var write: js.UndefOr[SchemaWriteInstruction] = js.native
+  var write: js.UndefOr[SchemaWriteInstruction] = js.undefined
 }
 object SchemaParallelInstruction {
   

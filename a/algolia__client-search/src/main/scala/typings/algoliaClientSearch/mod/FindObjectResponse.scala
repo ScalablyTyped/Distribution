@@ -2,41 +2,39 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindObjectResponse[TObject] extends StObject {
   
   /**
     * The found object.
     */
-  var `object`: TObject with ObjectWithObjectID = js.native
+  var `object`: TObject & ObjectWithObjectID
   
   /**
     * The page where the object was found.
     */
-  var page: Double = js.native
+  var page: Double
   
   /**
     * The position where the object was found.
     */
-  var position: Double = js.native
+  var position: Double
 }
 object FindObjectResponse {
   
   @scala.inline
-  def apply[TObject](`object`: TObject with ObjectWithObjectID, page: Double, position: Double): FindObjectResponse[TObject] = {
+  def apply[TObject](`object`: TObject & ObjectWithObjectID, page: Double, position: Double): FindObjectResponse[TObject] = {
     val __obj = js.Dynamic.literal(page = page.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any])
     __obj.updateDynamic("object")(`object`.asInstanceOf[js.Any])
     __obj.asInstanceOf[FindObjectResponse[TObject]]
   }
   
   @scala.inline
-  implicit class FindObjectResponseMutableBuilder[Self <: FindObjectResponse[_], TObject] (val x: Self with FindObjectResponse[TObject]) extends AnyVal {
+  implicit class FindObjectResponseMutableBuilder[Self <: FindObjectResponse[?], TObject] (val x: Self & FindObjectResponse[TObject]) extends AnyVal {
     
     @scala.inline
-    def setObject(value: TObject with ObjectWithObjectID): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
+    def setObject(value: TObject & ObjectWithObjectID): Self = StObject.set(x, "object", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPage(value: Double): Self = StObject.set(x, "page", value.asInstanceOf[js.Any])

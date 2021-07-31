@@ -7,7 +7,6 @@ import typings.react.mod.Component
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object detailsRowBaseMod {
@@ -82,17 +81,19 @@ object detailsRowBaseMod {
   /* static members */
   object DetailsRowBase {
     
-    @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsRow.base", "DetailsRowBase.getDerivedStateFromProps")
+    @JSImport("office-ui-fabric-react/lib/components/DetailsList/DetailsRow.base", "DetailsRowBase")
     @js.native
-    def getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState): IDetailsRowState = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IDetailsRowBaseProps, previousState: IDetailsRowState): IDetailsRowState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], previousState.asInstanceOf[js.Any])).asInstanceOf[IDetailsRowState]
   }
   
-  @js.native
   trait IDetailsRowSelectionState extends StObject {
     
-    var isSelected: Boolean = js.native
+    var isSelected: Boolean
     
-    var isSelectionModal: Boolean = js.native
+    var isSelectionModal: Boolean
   }
   object IDetailsRowSelectionState {
     
@@ -113,14 +114,13 @@ object detailsRowBaseMod {
     }
   }
   
-  @js.native
   trait IDetailsRowState extends StObject {
     
-    var columnMeasureInfo: js.UndefOr[Column] = js.native
+    var columnMeasureInfo: js.UndefOr[Column] = js.undefined
     
-    var isDropping: js.UndefOr[Boolean] = js.native
+    var isDropping: js.UndefOr[Boolean] = js.undefined
     
-    var selectionState: IDetailsRowSelectionState = js.native
+    var selectionState: IDetailsRowSelectionState
   }
   object IDetailsRowState {
     

@@ -5,14 +5,13 @@ import typings.reactSpringShared.typesUtilMod.Arrify
 import typings.reactSpringShared.typesUtilMod.Constrain
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
   type Animatable[T] = (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: / * import warning: SimplifyRecursiveTypeAlias.enterTsTypeRef rewrittenOpt applyOrElse Simplified recursive type alias @react-spring/shared.@react-spring/shared/cjs/types.Animatable<T[P]> * / object}
-    */ typings.reactSpringShared.reactSpringSharedStrings.Animatable with TopLevel[js.Any]) | (js.Array[Double | String]) | String | Double
+    */ typings.reactSpringShared.reactSpringSharedStrings.Animatable & TopLevel[js.Any]) | (js.Array[Double | String]) | String | Double
   
   type EasingFunction = js.Function1[/* t */ Double, Double]
   
@@ -42,13 +41,12 @@ object typesMod {
     js.UndefOr[ExtrapolateType]
   ])
   
-  @js.native
   trait InterpolatorConfig[Out] extends StObject {
     
     /**
       * Custom easing to apply in interpolator.
       */
-    var easing: js.UndefOr[EasingFunction] = js.native
+    var easing: js.UndefOr[EasingFunction] = js.undefined
     
     /**
       * What happens when the spring exceeds its target value.
@@ -60,7 +58,7 @@ object typesMod {
       *
       * @default 'extend'
       */
-    var extrapolate: js.UndefOr[ExtrapolateType] = js.native
+    var extrapolate: js.UndefOr[ExtrapolateType] = js.undefined
     
     /**
       * What happens when the spring goes below its target value.
@@ -71,7 +69,7 @@ object typesMod {
       *
       * @default 'extend'
       */
-    var extrapolateLeft: js.UndefOr[ExtrapolateType] = js.native
+    var extrapolateLeft: js.UndefOr[ExtrapolateType] = js.undefined
     
     /**
       * What happens when the spring exceeds its target value.
@@ -82,17 +80,17 @@ object typesMod {
       *
       * @default 'extend'
       */
-    var extrapolateRight: js.UndefOr[ExtrapolateType] = js.native
+    var extrapolateRight: js.UndefOr[ExtrapolateType] = js.undefined
     
     /**
       * Transformation to apply to the value before interpolation.
       */
-    var map: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.native
+    var map: js.UndefOr[js.Function1[/* value */ Double, Double]] = js.undefined
     
     /**
       * Output values from the interpolation function. Should match the length of the `range` array.
       */
-    var output: js.Array[Constrain[Out, Animatable[_]]] = js.native
+    var output: js.Array[Constrain[Out, Animatable[js.Any]]]
     
     /**
       * Input ranges mapping the interpolation to the output values.
@@ -103,18 +101,18 @@ object typesMod {
       *
       * @default [0,1]
       */
-    var range: js.UndefOr[js.Array[Double]] = js.native
+    var range: js.UndefOr[js.Array[Double]] = js.undefined
   }
   object InterpolatorConfig {
     
     @scala.inline
-    def apply[Out](output: js.Array[Constrain[Out, Animatable[_]]]): InterpolatorConfig[Out] = {
+    def apply[Out](output: js.Array[Constrain[Out, Animatable[js.Any]]]): InterpolatorConfig[Out] = {
       val __obj = js.Dynamic.literal(output = output.asInstanceOf[js.Any])
       __obj.asInstanceOf[InterpolatorConfig[Out]]
     }
     
     @scala.inline
-    implicit class InterpolatorConfigMutableBuilder[Self <: InterpolatorConfig[_], Out] (val x: Self with InterpolatorConfig[Out]) extends AnyVal {
+    implicit class InterpolatorConfigMutableBuilder[Self <: InterpolatorConfig[?], Out] (val x: Self & InterpolatorConfig[Out]) extends AnyVal {
       
       @scala.inline
       def setEasing(value: /* t */ Double => Double): Self = StObject.set(x, "easing", js.Any.fromFunction1(value))
@@ -147,7 +145,7 @@ object typesMod {
       def setMapUndefined: Self = StObject.set(x, "map", js.undefined)
       
       @scala.inline
-      def setOutput(value: js.Array[Constrain[Out, Animatable[_]]]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
+      def setOutput(value: js.Array[Constrain[Out, Animatable[js.Any]]]): Self = StObject.set(x, "output", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setOutputVarargs(value: (Constrain[Out, Animatable[js.Any]])*): Self = StObject.set(x, "output", js.Array(value :_*))
@@ -167,10 +165,10 @@ object typesMod {
   trait InterpolatorFactory extends StObject {
     
     def apply[Out](config: InterpolatorConfig[Out]): js.Function1[/* input */ Double, Animatable[Out]] = js.native
-    def apply[Out](range: js.Array[Double], output: js.Array[Constrain[Out, Animatable[_]]]): js.Function1[/* input */ Double, Animatable[Out]] = js.native
+    def apply[Out](range: js.Array[Double], output: js.Array[Constrain[Out, Animatable[js.Any]]]): js.Function1[/* input */ Double, Animatable[Out]] = js.native
     def apply[Out](
       range: js.Array[Double],
-      output: js.Array[Constrain[Out, Animatable[_]]],
+      output: js.Array[Constrain[Out, Animatable[js.Any]]],
       extrapolate: ExtrapolateType
     ): js.Function1[/* input */ Double, Animatable[Out]] = js.native
     def apply[In, Out](

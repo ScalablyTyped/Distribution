@@ -2,13 +2,11 @@ package typings.googleapis.remotebuildexecutionV2Mod.remotebuildexecutionV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A worker pool resource in the Remote Build Execution API.
   */
-@js.native
 trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends StObject {
   
   /**
@@ -17,24 +15,24 @@ trait SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool extends StO
     * name should not be populated when creating a worker pool since it is
     * provided in the `poolId` field.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. State of the worker pool.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the properties, such as machine type and disk size, used for
     * creating workers in a worker pool.
     */
-  var workerConfig: js.UndefOr[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] = js.native
+  var workerConfig: js.UndefOr[SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerConfig] = js.undefined
   
   /**
     * The desired number of workers in the worker pool. Must be a value between
     * 0 and 1000.
     */
-  var workerCount: js.UndefOr[String] = js.native
+  var workerCount: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleDevtoolsRemotebuildexecutionAdminV1alphaWorkerPool {
   

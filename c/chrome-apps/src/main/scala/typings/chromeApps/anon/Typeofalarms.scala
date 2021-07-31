@@ -5,7 +5,6 @@ import typings.chromeApps.chrome.alarms.AlarmCreateInfo
 import typings.chromeApps.chrome.alarms.AlarmEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -24,9 +23,9 @@ trait Typeofalarms extends StObject {
     * @example function(boolean wasCleared) {...};
     */
   def clear(callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
-  def clear(name: js.UndefOr[scala.Nothing], callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
   def clear(name: String): Unit = js.native
   def clear(name: String, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
+  def clear(name: Unit, callback: js.Function1[/* wasCleared */ Boolean, Unit]): Unit = js.native
   
   /**
     * Clears all alarms.

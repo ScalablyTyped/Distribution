@@ -2,39 +2,37 @@ package typings.instagramPrivateApi.locationFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LocationFeedResponseCaption extends StObject {
   
-  var bit_flags: Double = js.native
+  var bit_flags: Double
   
-  var content_type: String = js.native
+  var content_type: String
   
-  var created_at: Double = js.native
+  var created_at: Double
   
-  var created_at_utc: Double = js.native
+  var created_at_utc: Double
   
-  var did_report_as_spam: Boolean = js.native
+  var did_report_as_spam: Boolean
   
-  var has_translation: js.UndefOr[Boolean] = js.native
+  var has_translation: js.UndefOr[Boolean] = js.undefined
   
-  var media_id: String = js.native
+  var media_id: String
   
-  var pk: String = js.native
+  var pk: String
   
-  var share_enabled: Boolean = js.native
+  var share_enabled: Boolean
   
-  var status: String = js.native
+  var status: String
   
-  var text: String = js.native
+  var text: String
   
-  var `type`: Double = js.native
+  var `type`: Double
   
-  var user: LocationFeedResponseUser = js.native
+  var user: LocationFeedResponseUser
   
-  var user_id: Double = js.native
+  var user_id: Double
 }
 object LocationFeedResponseCaption {
   

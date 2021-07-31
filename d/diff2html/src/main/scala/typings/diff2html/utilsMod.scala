@@ -2,20 +2,20 @@ package typings.diff2html
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("diff2html/lib/utils", "escapeForRegExp")
+  @JSImport("diff2html/lib/utils", JSImport.Namespace)
   @js.native
-  def escapeForRegExp(str: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("diff2html/lib/utils", "hashCode")
-  @js.native
-  def hashCode_(text: String): Double = js.native
+  @scala.inline
+  def escapeForRegExp(str: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("escapeForRegExp")(str.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("diff2html/lib/utils", "unifyPath")
-  @js.native
-  def unifyPath(path: String): String = js.native
+  @scala.inline
+  def hashCode_(text: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("hashCode")(text.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def unifyPath(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("unifyPath")(path.asInstanceOf[js.Any]).asInstanceOf[String]
 }

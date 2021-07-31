@@ -7,27 +7,25 @@ import typings.typeorm.onDeleteTypeMod.OnDeleteType
 import typings.typeorm.onUpdateTypeMod.OnUpdateType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
-  var columns: js.Array[ColumnMetadata] = js.native
+  var columns: js.Array[ColumnMetadata]
   
-  var deferrable: js.UndefOr[DeferrableType] = js.native
+  var deferrable: js.UndefOr[DeferrableType] = js.undefined
   
-  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata = js.native
+  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata
   
-  var namingStrategy: js.UndefOr[NamingStrategyInterface] = js.native
+  var namingStrategy: js.UndefOr[NamingStrategyInterface] = js.undefined
   
-  var onDelete: js.UndefOr[OnDeleteType] = js.native
+  var onDelete: js.UndefOr[OnDeleteType] = js.undefined
   
-  var onUpdate: js.UndefOr[OnUpdateType] = js.native
+  var onUpdate: js.UndefOr[OnUpdateType] = js.undefined
   
-  var referencedColumns: js.Array[ColumnMetadata] = js.native
+  var referencedColumns: js.Array[ColumnMetadata]
   
-  var referencedEntityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata = js.native
+  var referencedEntityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata
 }
 object Columns {
   

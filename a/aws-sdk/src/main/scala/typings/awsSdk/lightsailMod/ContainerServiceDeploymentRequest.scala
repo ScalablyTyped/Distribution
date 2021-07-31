@@ -2,21 +2,19 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContainerServiceDeploymentRequest extends StObject {
   
   /**
     * An object that describes the configuration for the containers of the deployment.
     */
-  var containers: js.UndefOr[ContainerMap] = js.native
+  var containers: js.UndefOr[ContainerMap] = js.undefined
   
   /**
     * An object that describes the endpoint of the deployment.
     */
-  var publicEndpoint: js.UndefOr[EndpointRequest] = js.native
+  var publicEndpoint: js.UndefOr[EndpointRequest] = js.undefined
 }
 object ContainerServiceDeploymentRequest {
   

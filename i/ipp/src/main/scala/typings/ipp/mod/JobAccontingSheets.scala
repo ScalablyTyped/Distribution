@@ -4,19 +4,17 @@ import typings.ipp.ippStrings.none
 import typings.ipp.ippStrings.standard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobAccontingSheets extends StObject {
   
-  var `job-accounting-output-bin`: js.UndefOr[OutputBin] = js.native
+  var `job-accounting-output-bin`: js.UndefOr[OutputBin] = js.undefined
   
-  var `job-accounting-sheets-type`: js.UndefOr[none | standard] = js.native
+  var `job-accounting-sheets-type`: js.UndefOr[none | standard] = js.undefined
   
-  var media: js.UndefOr[Media] = js.native
+  var media: js.UndefOr[Media] = js.undefined
   
-  var `media-col`: js.UndefOr[MediaInterface] = js.native
+  var `media-col`: js.UndefOr[MediaInterface] = js.undefined
 }
 object JobAccontingSheets {
   

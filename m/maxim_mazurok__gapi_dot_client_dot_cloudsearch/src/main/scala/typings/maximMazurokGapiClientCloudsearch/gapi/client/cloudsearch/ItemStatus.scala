@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItemStatus extends StObject {
   
   /** Status code. */
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
   
   /** Error details in case the item is in ERROR state. */
-  var processingErrors: js.UndefOr[js.Array[ProcessingError]] = js.native
+  var processingErrors: js.UndefOr[js.Array[ProcessingError]] = js.undefined
   
   /** Repository error reported by connector. */
-  var repositoryErrors: js.UndefOr[js.Array[RepositoryError]] = js.native
+  var repositoryErrors: js.UndefOr[js.Array[RepositoryError]] = js.undefined
 }
 object ItemStatus {
   

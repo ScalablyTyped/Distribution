@@ -2,21 +2,19 @@ package typings.awsSdk.glacierMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Grant extends StObject {
   
   /**
     * The grantee.
     */
-  var Grantee: js.UndefOr[typings.awsSdk.glacierMod.Grantee] = js.native
+  var Grantee: js.UndefOr[typings.awsSdk.glacierMod.Grantee] = js.undefined
   
   /**
     * Specifies the permission given to the grantee. 
     */
-  var Permission: js.UndefOr[typings.awsSdk.glacierMod.Permission] = js.native
+  var Permission: js.UndefOr[typings.awsSdk.glacierMod.Permission] = js.undefined
 }
 object Grant {
   

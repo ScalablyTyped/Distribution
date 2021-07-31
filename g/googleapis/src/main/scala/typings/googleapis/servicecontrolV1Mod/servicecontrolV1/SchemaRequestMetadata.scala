@@ -2,13 +2,11 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata about the request.
   */
-@js.native
 trait SchemaRequestMetadata extends StObject {
   
   /**
@@ -21,7 +19,7 @@ trait SchemaRequestMetadata extends StObject {
     * `caller_ip` will be redacted to &quot;gce-internal-ip&quot;. See
     * https://cloud.google.com/compute/docs/vpc/ for more information.
     */
-  var callerIp: js.UndefOr[String] = js.native
+  var callerIp: js.UndefOr[String] = js.undefined
   
   /**
     * The network of the caller. Set only if the network host project is part
@@ -30,7 +28,7 @@ trait SchemaRequestMetadata extends StObject {
     * a scheme-less URI full resource name. For example:
     * &quot;//compute.googleapis.com/projects/PROJECT_ID/global/networks/NETWORK_ID&quot;
     */
-  var callerNetwork: js.UndefOr[String] = js.native
+  var callerNetwork: js.UndefOr[String] = js.undefined
   
   /**
     * The user agent of the caller. This information is not authenticated and
@@ -42,7 +40,7 @@ trait SchemaRequestMetadata extends StObject {
     * (+http://code.google.com/appengine; appid: s~my-project`:     The request
     * was made from the `my-project` App Engine app. NOLINT
     */
-  var callerSuppliedUserAgent: js.UndefOr[String] = js.native
+  var callerSuppliedUserAgent: js.UndefOr[String] = js.undefined
   
   /**
     * The destination of a network activity, such as accepting a TCP
@@ -51,7 +49,7 @@ trait SchemaRequestMetadata extends StObject {
     * Peer.port and Peer.ip. These fields are optionally populated by those
     * services utilizing the IAM condition feature.
     */
-  var destinationAttributes: js.UndefOr[SchemaPeer] = js.native
+  var destinationAttributes: js.UndefOr[SchemaPeer] = js.undefined
   
   /**
     * Request attributes used in IAM condition evaluation. This field contains
@@ -60,7 +58,7 @@ trait SchemaRequestMetadata extends StObject {
     * condition evaluation, the user must also look into
     * `AuditLog.authentication_info.resource_attributes`.
     */
-  var requestAttributes: js.UndefOr[SchemaRequest] = js.native
+  var requestAttributes: js.UndefOr[SchemaRequest] = js.undefined
 }
 object SchemaRequestMetadata {
   

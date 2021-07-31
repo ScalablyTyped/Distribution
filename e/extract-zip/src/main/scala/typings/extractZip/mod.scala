@@ -3,25 +3,26 @@ package typings.extractZip
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(zipPath: String, opts: Options, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(zipPath.asInstanceOf[js.Any], opts.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   @JSImport("extract-zip", JSImport.Namespace)
   @js.native
-  def apply(zipPath: String, opts: Options, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var defaultDirMode: js.UndefOr[Double] = js.native
+    var defaultDirMode: js.UndefOr[Double] = js.undefined
     
-    var defaultFileMode: js.UndefOr[Double] = js.native
+    var defaultFileMode: js.UndefOr[Double] = js.undefined
     
-    var dir: js.UndefOr[String] = js.native
+    var dir: js.UndefOr[String] = js.undefined
     
-    var onEntry: js.UndefOr[js.Function2[/* entry */ js.Any, /* zipfile */ js.Any, Unit]] = js.native
+    var onEntry: js.UndefOr[js.Function2[/* entry */ js.Any, /* zipfile */ js.Any, Unit]] = js.undefined
   }
   object Options {
     

@@ -2,21 +2,19 @@ package typings.awsSdk.servicediscoveryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetInstancesHealthStatusResponse extends StObject {
   
   /**
     * If more than MaxResults instances match the specified criteria, you can submit another GetInstancesHealthStatus request to get the next group of results. Specify the value of NextToken from the previous response in the next request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.servicediscoveryMod.NextToken] = js.undefined
   
   /**
     * A complex type that contains the IDs and the health status of the instances that you specified in the GetInstancesHealthStatus request.
     */
-  var Status: js.UndefOr[InstanceHealthStatusMap] = js.native
+  var Status: js.UndefOr[InstanceHealthStatusMap] = js.undefined
 }
 object GetInstancesHealthStatusResponse {
   

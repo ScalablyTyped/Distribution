@@ -4,23 +4,21 @@ import typings.jquery.JQuery.Node
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HintOptions extends StObject {
   
-  var content: js.UndefOr[js.Function1[/* item */ String, htmlElement | Node]] = js.native
+  var content: js.UndefOr[js.Function1[/* item */ String, htmlElement | Node]] = js.undefined
   
-  var `match`: RegExp = js.native
+  var `match`: RegExp
   
-  var mentions: js.UndefOr[js.Array[String]] = js.native
+  var mentions: js.UndefOr[js.Array[String]] = js.undefined
   
-  def search(keyword: String, callback: js.Function1[/* plausibleItems */ js.Array[String], Unit]): Unit = js.native
+  def search(keyword: String, callback: js.Function1[/* plausibleItems */ js.Array[String], Unit]): Unit
   
-  var template: js.UndefOr[js.Function1[/* item */ String, htmlElement]] = js.native
+  var template: js.UndefOr[js.Function1[/* item */ String, htmlElement]] = js.undefined
   
-  var words: js.UndefOr[js.Array[String]] = js.native
+  var words: js.UndefOr[js.Array[String]] = js.undefined
 }
 object HintOptions {
   

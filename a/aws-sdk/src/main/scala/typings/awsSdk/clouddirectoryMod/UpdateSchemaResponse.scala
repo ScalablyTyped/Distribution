@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateSchemaResponse extends StObject {
   
   /**
     * The ARN that is associated with the updated schema. For more information, see arns.
     */
-  var SchemaArn: js.UndefOr[Arn] = js.native
+  var SchemaArn: js.UndefOr[Arn] = js.undefined
 }
 object UpdateSchemaResponse {
   

@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SeriesSankeyPointOptionsObject extends StObject {
   
   /**
     * (Highcharts) Accessibility options for a data point.
     */
-  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.native
+  var accessibility: js.UndefOr[PointAccessibilityOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Gantt) An additional, individual class name for the data
     * point's graphic representation.
     */
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The color for the individual _link_. By default, the link
@@ -25,7 +23,7 @@ trait SeriesSankeyPointOptionsObject extends StObject {
     * option also applies to the points, so when setting a specific link color,
     * consider setting the `fillOpacity` to 1.
     */
-  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.native
+  var color: js.UndefOr[ColorString | GradientColorObject | PatternObject] = js.undefined
   
   /**
     * (Highcharts, Gantt) A specific color index to use for the point, so its
@@ -34,14 +32,14 @@ trait SeriesSankeyPointOptionsObject extends StObject {
     * mode, the color by is set by the `fill` attribute, so the change in class
     * name won't have a visual effect by default.
     */
-  var colorIndex: js.UndefOr[Double] = js.native
+  var colorIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) A reserved subspace to store options and values for
     * customized functionality. Here you can add additional data for your own
     * event callbacks and formatter callbacks.
     */
-  var custom: js.UndefOr[Dictionary[_]] = js.native
+  var custom: js.UndefOr[Dictionary[js.Any]] = js.undefined
   
   /**
     * (Highcharts) Individual data label for each point. The options are the
@@ -49,64 +47,64 @@ trait SeriesSankeyPointOptionsObject extends StObject {
     */
   var dataLabels: js.UndefOr[
     DataLabelsOptions | SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject | (js.Array[SeriesOrganizationDataLabelsOptionsObject | SeriesSankeyDataLabelsOptionsObject])
-  ] = js.native
+  ] = js.undefined
   
   /**
     * (Highcharts) A description of the point to add to the screen reader
     * information about the point.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) The individual point events.
     */
-  var events: js.UndefOr[PointEventsOptionsObject] = js.native
+  var events: js.UndefOr[PointEventsOptionsObject] = js.undefined
   
   /**
     * (Highcharts) The node that the link runs from.
     */
-  var from: js.UndefOr[String] = js.native
+  var from: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) An id for the point. This can be used
     * after render time to get a pointer to the point object through
     * `chart.get()`.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The rank for this point's data label in case of collision.
     * If two data labels are about to overlap, only the one with the highest
     * `labelrank` will be drawn.
     */
-  var labelrank: js.UndefOr[Double] = js.native
+  var labelrank: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highcharts) The name of the point as shown in the legend, tooltip,
     * dataLabels, etc.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) Whether the link goes out of the system.
     */
-  var outgoing: js.UndefOr[Boolean] = js.native
+  var outgoing: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Whether the data point is selected
     * initially.
     */
-  var selected: js.UndefOr[Boolean] = js.native
+  var selected: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts) The node that the link runs to.
     */
-  var to: js.UndefOr[String] = js.native
+  var to: js.UndefOr[String] = js.undefined
   
   /**
     * (Highcharts) The weight of the link.
     */
-  var weight: js.UndefOr[Double | Null] = js.native
+  var weight: js.UndefOr[Double | Null] = js.undefined
 }
 object SeriesSankeyPointOptionsObject {
   
@@ -144,7 +142,7 @@ object SeriesSankeyPointOptionsObject {
     def setColorUndefined: Self = StObject.set(x, "color", js.undefined)
     
     @scala.inline
-    def setCustom(value: Dictionary[_]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
+    def setCustom(value: Dictionary[js.Any]): Self = StObject.set(x, "custom", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setCustomUndefined: Self = StObject.set(x, "custom", js.undefined)

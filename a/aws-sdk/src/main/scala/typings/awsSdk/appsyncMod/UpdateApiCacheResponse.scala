@@ -2,16 +2,14 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateApiCacheResponse extends StObject {
   
   /**
     * The ApiCache object.
     */
-  var apiCache: js.UndefOr[ApiCache] = js.native
+  var apiCache: js.UndefOr[ApiCache] = js.undefined
 }
 object UpdateApiCacheResponse {
   

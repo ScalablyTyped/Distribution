@@ -1,36 +1,31 @@
 package typings.shellQuote
 
 import org.scalablytyped.runtime.StringDictionary
-import typings.shellQuote.shellQuoteStrings.glob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("shell-quote", "parse")
+  @JSImport("shell-quote", JSImport.Namespace)
   @js.native
-  def parse(cmd: String): js.Array[ParseEntry] = js.native
-  @JSImport("shell-quote", "parse")
-  @js.native
-  def parse(cmd: String, env: js.UndefOr[scala.Nothing], opts: ParseOptions): js.Array[ParseEntry] = js.native
-  @JSImport("shell-quote", "parse")
-  @js.native
-  def parse(cmd: String, env: StringDictionary[js.UndefOr[String]]): js.Array[ParseEntry] = js.native
-  @JSImport("shell-quote", "parse")
-  @js.native
-  def parse(cmd: String, env: StringDictionary[js.UndefOr[String]], opts: ParseOptions): js.Array[ParseEntry] = js.native
-  @JSImport("shell-quote", "parse")
-  @js.native
-  def parse[T /* <: js.Object | String */](cmd: String, env: js.Function1[/* key */ String, js.UndefOr[T]]): js.Array[ParseEntry | T] = js.native
-  @JSImport("shell-quote", "parse")
-  @js.native
-  def parse[T /* <: js.Object | String */](cmd: String, env: js.Function1[/* key */ String, js.UndefOr[T]], opts: ParseOptions): js.Array[ParseEntry | T] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("shell-quote", "quote")
-  @js.native
-  def quote(args: js.Array[String]): String = js.native
+  @scala.inline
+  def parse(cmd: String): js.Array[ParseEntry] = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cmd.asInstanceOf[js.Any]).asInstanceOf[js.Array[ParseEntry]]
+  @scala.inline
+  def parse(cmd: String, env: StringDictionary[js.UndefOr[String]]): js.Array[ParseEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cmd.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseEntry]]
+  @scala.inline
+  def parse(cmd: String, env: StringDictionary[js.UndefOr[String]], opts: ParseOptions): js.Array[ParseEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cmd.asInstanceOf[js.Any], env.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseEntry]]
+  @scala.inline
+  def parse(cmd: String, env: Unit, opts: ParseOptions): js.Array[ParseEntry] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cmd.asInstanceOf[js.Any], env.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseEntry]]
+  @scala.inline
+  def parse[T /* <: js.Object | String */](cmd: String, env: js.Function1[/* key */ String, js.UndefOr[T]]): js.Array[ParseEntry | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cmd.asInstanceOf[js.Any], env.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseEntry | T]]
+  @scala.inline
+  def parse[T /* <: js.Object | String */](cmd: String, env: js.Function1[/* key */ String, js.UndefOr[T]], opts: ParseOptions): js.Array[ParseEntry | T] = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(cmd.asInstanceOf[js.Any], env.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Array[ParseEntry | T]]
+  
+  @scala.inline
+  def quote(args: js.Array[String]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("quote")(args.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.shellQuote.shellQuoteStrings.VerticallineVerticalline
@@ -102,13 +97,12 @@ object mod {
   */
   type ParseEntry = _ParseEntry | String
   
-  @js.native
   trait ParseOptions extends StObject {
     
     /**
       * Custom escape character, default value is `\`
       */
-    var escape: js.UndefOr[String] = js.native
+    var escape: js.UndefOr[String] = js.undefined
   }
   object ParseOptions {
     
@@ -145,8 +139,8 @@ object mod {
     }
     
     @scala.inline
-    def Pattern(op: glob, pattern: String): typings.shellQuote.anon.Pattern = {
-      val __obj = js.Dynamic.literal(op = op.asInstanceOf[js.Any], pattern = pattern.asInstanceOf[js.Any])
+    def Pattern(pattern: String): typings.shellQuote.anon.Pattern = {
+      val __obj = js.Dynamic.literal(op = "glob", pattern = pattern.asInstanceOf[js.Any])
       __obj.asInstanceOf[typings.shellQuote.anon.Pattern]
     }
   }

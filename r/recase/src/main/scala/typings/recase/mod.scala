@@ -3,21 +3,22 @@ package typings.recase
 import typings.recase.anon.Exceptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("recase", "create")
+  @JSImport("recase", JSImport.Namespace)
   @js.native
-  def create(opts: Exceptions): Recase = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def create(opts: Exceptions): Recase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(opts.asInstanceOf[js.Any]).asInstanceOf[Recase]
+  
   trait Recase extends StObject {
     
-    def camelCopy(orig: js.Any): js.Any = js.native
+    def camelCopy(orig: js.Any): js.Any
     
-    def snakeCopy(orig: js.Any): js.Any = js.native
+    def snakeCopy(orig: js.Any): js.Any
   }
   object Recase {
     

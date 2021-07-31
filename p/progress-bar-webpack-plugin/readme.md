@@ -10,9 +10,9 @@ A progress bar for Webpack.
 | ------------------ | :-------------: |
 | Full name          | progress-bar-webpack-plugin |
 | Keywords           | webpack, plugin, progress, bar |
-| # releases         | 5 |
-| # dependents       | 520 |
-| # downloads        | 6798310 |
+| # releases         | 3 |
+| # dependents       | 562 |
+| # downloads        | 6519896 |
 | # stars            | 15 |
 
 ## Links

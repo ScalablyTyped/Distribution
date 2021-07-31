@@ -7,18 +7,19 @@ import typings.kendoUi.kendo.data.Node
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TreeView extends Widget {
+trait TreeView
+  extends StObject
+     with Widget {
   
   def append(nodeData: js.Any): JQuery = js.native
-  def append(nodeData: js.Any, parentNode: js.UndefOr[scala.Nothing], success: js.Function): JQuery = js.native
+  def append(nodeData: js.Any, parentNode: Unit, success: js.Function): JQuery = js.native
   def append(nodeData: js.Any, parentNode: JQuery): JQuery = js.native
   def append(nodeData: js.Any, parentNode: JQuery, success: js.Function): JQuery = js.native
   def append(nodeData: JQuery): JQuery = js.native
-  def append(nodeData: JQuery, parentNode: js.UndefOr[scala.Nothing], success: js.Function): JQuery = js.native
+  def append(nodeData: JQuery, parentNode: Unit, success: js.Function): JQuery = js.native
   def append(nodeData: JQuery, parentNode: JQuery): JQuery = js.native
   def append(nodeData: JQuery, parentNode: JQuery, success: js.Function): JQuery = js.native
   

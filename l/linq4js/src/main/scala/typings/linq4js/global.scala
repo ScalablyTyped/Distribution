@@ -1,9 +1,9 @@
 package typings.linq4js
 
 import typings.linq4js.Linq4JS.OrderDirection
+import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -13,26 +13,52 @@ object global {
     @JSGlobal("Linq4JS.EvaluateCommand")
     @js.native
     class EvaluateCommand protected ()
-      extends typings.linq4js.Linq4JS.EvaluateCommand {
+      extends StObject
+         with typings.linq4js.Linq4JS.EvaluateCommand {
       def this(command: String, identifier: String*) = this()
+      
+      /* CompleteClass */
+      var Command: String = js.native
+      
+      /* CompleteClass */
+      var Finder: Array[RegExp] = js.native
+      
+      /* CompleteClass */
+      var SplitRegex: Array[RegExp] = js.native
     }
     
     @JSGlobal("Linq4JS.EvaluateCommandResult")
     @js.native
     class EvaluateCommandResult protected ()
-      extends typings.linq4js.Linq4JS.EvaluateCommandResult {
+      extends StObject
+         with typings.linq4js.Linq4JS.EvaluateCommandResult {
       def this(cmd: String, fn: String) = this()
+      
+      /* CompleteClass */
+      var Command: String = js.native
+      
+      /* CompleteClass */
+      var DynamicFunction: String = js.native
     }
     
     @JSGlobal("Linq4JS.GeneratedEntity")
     @js.native
     class GeneratedEntity ()
-      extends typings.linq4js.Linq4JS.GeneratedEntity
+      extends StObject
+         with typings.linq4js.Linq4JS.GeneratedEntity {
+      
+      /* CompleteClass */
+      var Id: Double = js.native
+      
+      /* CompleteClass */
+      var _GeneratedId_ : Double = js.native
+    }
     
     @JSGlobal("Linq4JS.Helper")
     @js.native
     class Helper ()
-      extends typings.linq4js.Linq4JS.Helper
+      extends StObject
+         with typings.linq4js.Linq4JS.Helper
     object Helper {
       
       @JSGlobal("Linq4JS.Helper")
@@ -46,31 +72,23 @@ object global {
       @scala.inline
       def Commands_=(x: Array[typings.linq4js.Linq4JS.EvaluateCommand]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("Commands")(x.asInstanceOf[js.Any])
       
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: T): T = js.native
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: T, noAutoReturn: js.UndefOr[scala.Nothing], noBracketReplace: Boolean): T = js.native
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean): T = js.native
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean, noBracketReplace: Boolean): T = js.native
+      @scala.inline
+      def ConvertFunction[T](testFunction: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any]).asInstanceOf[T]
+      @scala.inline
+      def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
+      def ConvertFunction[T](testFunction: T, noAutoReturn: Boolean, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
+      def ConvertFunction[T](testFunction: T, noAutoReturn: Unit, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
       /* static member */
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: String): T = js.native
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: String, noAutoReturn: js.UndefOr[scala.Nothing], noBracketReplace: Boolean): T = js.native
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean): T = js.native
-      @JSGlobal("Linq4JS.Helper.ConvertFunction")
-      @js.native
-      def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean, noBracketReplace: Boolean): T = js.native
+      @scala.inline
+      def ConvertFunction[T](testFunction: String): T = ^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any]).asInstanceOf[T]
+      @scala.inline
+      def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
+      def ConvertFunction[T](testFunction: String, noAutoReturn: Boolean, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
+      @scala.inline
+      def ConvertFunction[T](testFunction: String, noAutoReturn: Unit, noBracketReplace: Boolean): T = (^.asInstanceOf[js.Dynamic].applyDynamic("ConvertFunction")(testFunction.asInstanceOf[js.Any], noAutoReturn.asInstanceOf[js.Any], noBracketReplace.asInstanceOf[js.Any])).asInstanceOf[T]
       
       /* static member */
       @JSGlobal("Linq4JS.Helper.ConvertStringFunction")
@@ -80,32 +98,26 @@ object global {
       def ConvertStringFunction_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("ConvertStringFunction")(x.asInstanceOf[js.Any])
       
       /* static member */
-      @JSGlobal("Linq4JS.Helper.CreateArrayData")
-      @js.native
-      def CreateArrayData(array: Array[_]): Unit = js.native
-      @JSGlobal("Linq4JS.Helper.CreateArrayData")
-      @js.native
-      def CreateArrayData(array: Array[_], value: js.Any): Unit = js.native
+      @scala.inline
+      def CreateArrayData(array: Array[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any]).asInstanceOf[Unit]
+      @scala.inline
+      def CreateArrayData(array: Array[js.Any], value: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("CreateArrayData")(array.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @JSGlobal("Linq4JS.Helper.MatchCommand")
-      @js.native
-      def MatchCommand(cmd: String): typings.linq4js.Linq4JS.EvaluateCommandResult = js.native
+      @scala.inline
+      def MatchCommand(cmd: String): typings.linq4js.Linq4JS.EvaluateCommandResult = ^.asInstanceOf[js.Dynamic].applyDynamic("MatchCommand")(cmd.asInstanceOf[js.Any]).asInstanceOf[typings.linq4js.Linq4JS.EvaluateCommandResult]
       
       /* static member */
-      @JSGlobal("Linq4JS.Helper.NonEnumerable")
-      @js.native
-      def NonEnumerable(name: String, value: js.Function): Unit = js.native
+      @scala.inline
+      def NonEnumerable(name: String, value: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("NonEnumerable")(name.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
       
       /* static member */
-      @JSGlobal("Linq4JS.Helper.OrderCompareFunction")
-      @js.native
-      def OrderCompareFunction[T](valueSelector: js.Function1[/* item */ T, _], a: T, b: T, invert: Boolean): Double = js.native
+      @scala.inline
+      def OrderCompareFunction[T](valueSelector: js.Function1[/* item */ T, js.Any], a: T, b: T, invert: Boolean): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("OrderCompareFunction")(valueSelector.asInstanceOf[js.Any], a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], invert.asInstanceOf[js.Any])).asInstanceOf[Double]
       
       /* static member */
-      @JSGlobal("Linq4JS.Helper.SplitCommand")
-      @js.native
-      def SplitCommand(command: String): Array[String] = js.native
+      @scala.inline
+      def SplitCommand(command: String): Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("SplitCommand")(command.asInstanceOf[js.Any]).asInstanceOf[Array[String]]
     }
     
     @JSGlobal("Linq4JS.OrderDirection")
@@ -113,25 +125,39 @@ object global {
     object OrderDirection extends StObject {
       
       @JSBracketAccess
-      def apply(value: Double): js.UndefOr[typings.linq4js.Linq4JS.OrderDirection with Double] = js.native
+      def apply(value: Double): js.UndefOr[typings.linq4js.Linq4JS.OrderDirection & Double] = js.native
       
-      /* 0 */ val Ascending: typings.linq4js.Linq4JS.OrderDirection.Ascending with Double = js.native
+      /* 0 */ val Ascending: typings.linq4js.Linq4JS.OrderDirection.Ascending & Double = js.native
       
-      /* 1 */ val Descending: typings.linq4js.Linq4JS.OrderDirection.Descending with Double = js.native
+      /* 1 */ val Descending: typings.linq4js.Linq4JS.OrderDirection.Descending & Double = js.native
     }
     
     @JSGlobal("Linq4JS.OrderEntry")
     @js.native
     class OrderEntry protected ()
-      extends typings.linq4js.Linq4JS.OrderEntry {
-      def this(_direction: OrderDirection, _valueSelector: js.Function1[/* item */ js.Any, _]) = this()
+      extends StObject
+         with typings.linq4js.Linq4JS.OrderEntry {
+      def this(_direction: OrderDirection, _valueSelector: js.Function1[/* item */ js.Any, js.Any]) = this()
+      
+      /* CompleteClass */
+      var Direction: OrderDirection = js.native
+      
+      /* CompleteClass */
+      override def ValueSelector(item: js.Any): js.Any = js.native
     }
     
     @JSGlobal("Linq4JS.SelectEntry")
     @js.native
     class SelectEntry protected ()
-      extends typings.linq4js.Linq4JS.SelectEntry {
+      extends StObject
+         with typings.linq4js.Linq4JS.SelectEntry {
       def this(n: String, p: String) = this()
+      
+      /* CompleteClass */
+      var name: String = js.native
+      
+      /* CompleteClass */
+      var property: String = js.native
     }
   }
 }

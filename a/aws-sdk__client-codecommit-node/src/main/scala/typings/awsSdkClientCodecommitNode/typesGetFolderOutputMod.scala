@@ -8,54 +8,54 @@ import typings.awsSdkClientCodecommitNode.typesSymbolicLinkMod.UnmarshalledSymbo
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetFolderOutputMod {
   
-  @js.native
-  trait GetFolderOutput extends OutputTypesUnion {
+  trait GetFolderOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The full commit ID used as a reference for which version of the folder content is returned.</p>
       */
-    var commitId: String = js.native
+    var commitId: String
     
     /**
       * <p>The list of files that exist in the specified folder, if any.</p>
       */
-    var files: js.UndefOr[js.Array[UnmarshalledFile]] = js.native
+    var files: js.UndefOr[js.Array[UnmarshalledFile]] = js.undefined
     
     /**
       * <p>The fully-qualified path of the folder whose contents are returned.</p>
       */
-    var folderPath: String = js.native
+    var folderPath: String
     
     /**
       * <p>The list of folders that exist beneath the specified folder, if any.</p>
       */
-    var subFolders: js.UndefOr[js.Array[UnmarshalledFolder]] = js.native
+    var subFolders: js.UndefOr[js.Array[UnmarshalledFolder]] = js.undefined
     
     /**
       * <p>The list of submodules that exist in the specified folder, if any.</p>
       */
-    var subModules: js.UndefOr[js.Array[UnmarshalledSubModule]] = js.native
+    var subModules: js.UndefOr[js.Array[UnmarshalledSubModule]] = js.undefined
     
     /**
       * <p>The list of symbolic links to other files and folders that exist in the specified folder, if any.</p>
       */
-    var symbolicLinks: js.UndefOr[js.Array[UnmarshalledSymbolicLink]] = js.native
+    var symbolicLinks: js.UndefOr[js.Array[UnmarshalledSymbolicLink]] = js.undefined
     
     /**
       * <p>The full SHA-1 pointer of the tree information for the commit that contains the folder.</p>
       */
-    var treeId: js.UndefOr[String] = js.native
+    var treeId: js.UndefOr[String] = js.undefined
   }
   object GetFolderOutput {
     

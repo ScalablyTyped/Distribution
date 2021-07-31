@@ -12,7 +12,6 @@ import typings.reactNativeZeroconf.reactNativeZeroconfStrings.update
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -21,20 +20,19 @@ object mod {
   @js.native
   class default () extends Zeroconf
   
-  @js.native
   trait Service extends StObject {
     
-    var addresses: js.Array[String] = js.native
+    var addresses: js.Array[String]
     
-    var fullName: String = js.native
+    var fullName: String
     
-    var host: String = js.native
+    var host: String
     
-    var name: String = js.native
+    var name: String
     
-    var port: Double = js.native
+    var port: Double
     
-    var txt: StringDictionary[js.Any] = js.native
+    var txt: StringDictionary[js.Any]
   }
   object Service {
     
@@ -100,26 +98,26 @@ object mod {
       * Triggered when an error occurs.
       */
     @JSName("on")
-    def on_error(e: error, listener: js.Function1[/* err */ Error, _]): this.type = js.native
+    def on_error(e: error, listener: js.Function1[/* err */ Error, js.Any]): this.type = js.native
     /**
       * @param name Name of the the service.
       */
     @JSName("on")
-    def on_found(e: found, listener: js.Function1[/* name */ String, _]): this.type = js.native
+    def on_found(e: found, listener: js.Function1[/* name */ String, js.Any]): this.type = js.native
     @JSName("on")
-    def on_remove(e: remove, listener: js.Function1[/* name */ String, _]): this.type = js.native
+    def on_remove(e: remove, listener: js.Function1[/* name */ String, js.Any]): this.type = js.native
     /**
       * Triggered when a service is resolved.
       * @description Broadcast a service object once it is fully resolved.
       */
     @JSName("on")
-    def on_resolved(e: resolved, listener: js.Function1[/* service */ Service, _]): this.type = js.native
+    def on_resolved(e: resolved, listener: js.Function1[/* service */ Service, js.Any]): this.type = js.native
     @JSName("on")
-    def on_start(e: start, listener: js.Function0[_]): this.type = js.native
+    def on_start(e: start, listener: js.Function0[js.Any]): this.type = js.native
     @JSName("on")
-    def on_stop(e: stop, listener: js.Function0[_]): this.type = js.native
+    def on_stop(e: stop, listener: js.Function0[js.Any]): this.type = js.native
     @JSName("on")
-    def on_update(e: update, listener: js.Function0[_]): this.type = js.native
+    def on_update(e: update, listener: js.Function0[js.Any]): this.type = js.native
     
     /**
       * Publish a service.
@@ -136,74 +134,8 @@ object mod {
       * @param txt contains key-value pairs of additional TXT record data.
       */
     def publishService(`type`: String, protocol: String): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      port: js.UndefOr[scala.Nothing],
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      port: Double
-    ): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: js.UndefOr[scala.Nothing],
-      name: js.UndefOr[scala.Nothing],
-      port: Double,
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
-    def publishService(`type`: String, protocol: String, domain: js.UndefOr[scala.Nothing], name: String): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: js.UndefOr[scala.Nothing],
-      name: String,
-      port: js.UndefOr[scala.Nothing],
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
-    def publishService(`type`: String, protocol: String, domain: js.UndefOr[scala.Nothing], name: String, port: Double): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: js.UndefOr[scala.Nothing],
-      name: String,
-      port: Double,
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
     def publishService(`type`: String, protocol: String, domain: String): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: String,
-      name: js.UndefOr[scala.Nothing],
-      port: js.UndefOr[scala.Nothing],
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
-    def publishService(`type`: String, protocol: String, domain: String, name: js.UndefOr[scala.Nothing], port: Double): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: String,
-      name: js.UndefOr[scala.Nothing],
-      port: Double,
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
     def publishService(`type`: String, protocol: String, domain: String, name: String): Unit = js.native
-    def publishService(
-      `type`: String,
-      protocol: String,
-      domain: String,
-      name: String,
-      port: js.UndefOr[scala.Nothing],
-      txt: StringDictionary[js.Any]
-    ): Unit = js.native
     def publishService(`type`: String, protocol: String, domain: String, name: String, port: Double): Unit = js.native
     def publishService(
       `type`: String,
@@ -211,6 +143,66 @@ object mod {
       domain: String,
       name: String,
       port: Double,
+      txt: StringDictionary[js.Any]
+    ): Unit = js.native
+    def publishService(
+      `type`: String,
+      protocol: String,
+      domain: String,
+      name: String,
+      port: Unit,
+      txt: StringDictionary[js.Any]
+    ): Unit = js.native
+    def publishService(`type`: String, protocol: String, domain: String, name: Unit, port: Double): Unit = js.native
+    def publishService(
+      `type`: String,
+      protocol: String,
+      domain: String,
+      name: Unit,
+      port: Double,
+      txt: StringDictionary[js.Any]
+    ): Unit = js.native
+    def publishService(
+      `type`: String,
+      protocol: String,
+      domain: String,
+      name: Unit,
+      port: Unit,
+      txt: StringDictionary[js.Any]
+    ): Unit = js.native
+    def publishService(`type`: String, protocol: String, domain: Unit, name: String): Unit = js.native
+    def publishService(`type`: String, protocol: String, domain: Unit, name: String, port: Double): Unit = js.native
+    def publishService(
+      `type`: String,
+      protocol: String,
+      domain: Unit,
+      name: String,
+      port: Double,
+      txt: StringDictionary[js.Any]
+    ): Unit = js.native
+    def publishService(
+      `type`: String,
+      protocol: String,
+      domain: Unit,
+      name: String,
+      port: Unit,
+      txt: StringDictionary[js.Any]
+    ): Unit = js.native
+    def publishService(`type`: String, protocol: String, domain: Unit, name: Unit, port: Double): Unit = js.native
+    def publishService(
+      `type`: String,
+      protocol: String,
+      domain: Unit,
+      name: Unit,
+      port: Double,
+      txt: StringDictionary[js.Any]
+    ): Unit = js.native
+    def publishService(
+      `type`: String,
+      protocol: String,
+      domain: Unit,
+      name: Unit,
+      port: Unit,
       txt: StringDictionary[js.Any]
     ): Unit = js.native
     
@@ -235,13 +227,13 @@ object mod {
       * @param domain Default `local`
       */
     def scan(): Unit = js.native
-    def scan(`type`: js.UndefOr[scala.Nothing], protocol: js.UndefOr[scala.Nothing], domain: String): Unit = js.native
-    def scan(`type`: js.UndefOr[scala.Nothing], protocol: String): Unit = js.native
-    def scan(`type`: js.UndefOr[scala.Nothing], protocol: String, domain: String): Unit = js.native
     def scan(`type`: String): Unit = js.native
-    def scan(`type`: String, protocol: js.UndefOr[scala.Nothing], domain: String): Unit = js.native
     def scan(`type`: String, protocol: String): Unit = js.native
     def scan(`type`: String, protocol: String, domain: String): Unit = js.native
+    def scan(`type`: String, protocol: Unit, domain: String): Unit = js.native
+    def scan(`type`: Unit, protocol: String): Unit = js.native
+    def scan(`type`: Unit, protocol: String, domain: String): Unit = js.native
+    def scan(`type`: Unit, protocol: Unit, domain: String): Unit = js.native
     
     /**
       * Stop the scan.

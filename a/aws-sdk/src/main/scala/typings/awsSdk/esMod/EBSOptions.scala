@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EBSOptions extends StObject {
   
   /**
     * Specifies whether EBS-based storage is enabled.
     */
-  var EBSEnabled: js.UndefOr[Boolean] = js.native
+  var EBSEnabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Specifies the IOPD for a Provisioned IOPS EBS volume (SSD).
     */
-  var Iops: js.UndefOr[IntegerClass] = js.native
+  var Iops: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     *  Integer to specify the size of an EBS volume.
     */
-  var VolumeSize: js.UndefOr[IntegerClass] = js.native
+  var VolumeSize: js.UndefOr[IntegerClass] = js.undefined
   
   /**
     *  Specifies the volume type for EBS-based storage.
     */
-  var VolumeType: js.UndefOr[typings.awsSdk.esMod.VolumeType] = js.native
+  var VolumeType: js.UndefOr[typings.awsSdk.esMod.VolumeType] = js.undefined
 }
 object EBSOptions {
   

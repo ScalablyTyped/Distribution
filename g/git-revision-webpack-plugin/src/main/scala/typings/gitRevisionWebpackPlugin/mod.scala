@@ -3,19 +3,22 @@ package typings.gitRevisionWebpackPlugin
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("git-revision-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends GitRevisionPlugin {
+  class ^ ()
+    extends StObject
+       with GitRevisionPlugin {
     def this(options: Options) = this()
   }
   
   @js.native
-  trait GitRevisionPlugin extends Plugin {
+  trait GitRevisionPlugin
+    extends StObject
+       with Plugin {
     
     def branch(): String = js.native
     
@@ -24,20 +27,19 @@ object mod {
     def version(): String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var branch: js.UndefOr[Boolean] = js.native
+    var branch: js.UndefOr[Boolean] = js.undefined
     
-    var branchCommand: js.UndefOr[String] = js.native
+    var branchCommand: js.UndefOr[String] = js.undefined
     
-    var commithashCommand: js.UndefOr[String] = js.native
+    var commithashCommand: js.UndefOr[String] = js.undefined
     
-    var gitWorkTree: js.UndefOr[String] = js.native
+    var gitWorkTree: js.UndefOr[String] = js.undefined
     
-    var lightweightTags: js.UndefOr[Boolean] = js.native
+    var lightweightTags: js.UndefOr[Boolean] = js.undefined
     
-    var versionCommand: js.UndefOr[String] = js.native
+    var versionCommand: js.UndefOr[String] = js.undefined
   }
   object Options {
     

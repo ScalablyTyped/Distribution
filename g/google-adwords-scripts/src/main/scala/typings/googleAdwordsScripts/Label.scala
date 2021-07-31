@@ -2,36 +2,36 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Labels
-@js.native
-trait Label extends AdWordsEntity {
+trait Label
+  extends StObject
+     with AdWordsEntity {
   
-  def adGroups(): AdWordsSelector[AdGroup] = js.native
+  def adGroups(): AdWordsSelector[AdGroup]
   
-  def ads(): AdWordsSelector[Ad] = js.native
+  def ads(): AdWordsSelector[Ad]
   
-  def campaigns(): AdWordsSelector[Campaign] = js.native
+  def campaigns(): AdWordsSelector[Campaign]
   
-  def getColor(): String = js.native
+  def getColor(): String
   
-  def getDescription(): String = js.native
+  def getDescription(): String
   
-  def getId(): String = js.native
+  def getId(): String
   
-  def getName(): String = js.native
+  def getName(): String
   
-  def keywords(): AdWordsSelector[Keyword] = js.native
+  def keywords(): AdWordsSelector[Keyword]
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  def setColor(color: String): Unit = js.native
+  def setColor(color: String): Unit
   
-  def setDescription(description: String): Unit = js.native
+  def setDescription(description: String): Unit
   
-  def setName(name: String): Unit = js.native
+  def setName(name: String): Unit
 }
 object Label {
   

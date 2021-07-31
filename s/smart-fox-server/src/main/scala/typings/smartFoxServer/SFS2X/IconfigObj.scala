@@ -2,26 +2,24 @@ package typings.smartFoxServer.SFS2X
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconfigObj extends StObject {
   
   /** @type {boolean} Indicates whether the client-server messages console debug should be enabled or not. */
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
   /** @type {string} The IP address or host name of the SmartFoxServer 2X instance to connect to. */
-  var host: js.UndefOr[String] = js.native
+  var host: js.UndefOr[String] = js.undefined
   
   /** @type {number} The TCP port of the SmartFoxServer 2X instance to connect to. */
-  var port: js.UndefOr[Double] = js.native
+  var port: js.UndefOr[Double] = js.undefined
   
   /** @type {boolean} Use an encrypted SSL connection. */
-  var useSSL: js.UndefOr[Boolean] = js.native
+  var useSSL: js.UndefOr[Boolean] = js.undefined
   
   /** @type {string} The Zone of the SmartFoxServer 2X instance to join during the login process. */
-  var zone: js.UndefOr[String] = js.native
+  var zone: js.UndefOr[String] = js.undefined
 }
 object IconfigObj {
   

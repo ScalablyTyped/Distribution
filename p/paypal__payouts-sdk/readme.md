@@ -10,9 +10,9 @@ NodeJS SDK for PayPal Payouts APIs
 | ------------------ | :-------------: |
 | Full name          | @paypal/payouts-sdk |
 | Keywords           | Payouts, MassPay, MassPayouts, PayPal Payouts |
-| # releases         | 3 |
+| # releases         | 2 |
 | # dependents       | 1 |
-| # downloads        | 41570 |
+| # downloads        | 84235 |
 | # stars            | 0 |
 
 ## Links

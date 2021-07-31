@@ -8,7 +8,6 @@ import typings.reactBootstrap.reactBootstrapStrings.success
 import typings.reactBootstrap.reactBootstrapStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object formGroupMod {
@@ -22,16 +21,17 @@ object formGroupMod {
   trait FormGroup
     extends Component[FormGroupProps, js.Object, js.Any]
   
-  @js.native
-  trait FormGroupProps extends HTMLProps[FormGroup] {
+  trait FormGroupProps
+    extends StObject
+       with HTMLProps[FormGroup] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
     
-    var bsSize: js.UndefOr[Sizes] = js.native
+    var bsSize: js.UndefOr[Sizes] = js.undefined
     
-    var controlId: js.UndefOr[String] = js.native
+    var controlId: js.UndefOr[String] = js.undefined
     
-    var validationState: js.UndefOr[success | warning | error | Null] = js.native
+    var validationState: js.UndefOr[success | warning | error | Null] = js.undefined
   }
   object FormGroupProps {
     

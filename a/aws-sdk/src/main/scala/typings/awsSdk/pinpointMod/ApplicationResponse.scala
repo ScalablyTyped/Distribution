@@ -2,31 +2,29 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplicationResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the application.
     */
-  var Arn: string = js.native
+  var Arn: string
   
   /**
     * The unique identifier for the application. This identifier is displayed as the Project ID on the Amazon Pinpoint console.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The display name of the application. This name is displayed as the Project name on the Amazon Pinpoint console.
     */
-  var Name: string = js.native
+  var Name: string
   
   /**
     * A string-to-string map of key-value pairs that identifies the tags that are associated with the application. Each tag consists of a required tag key and an associated tag value.
     */
-  var tags: js.UndefOr[MapOfString] = js.native
+  var tags: js.UndefOr[MapOfString] = js.undefined
 }
 object ApplicationResponse {
   

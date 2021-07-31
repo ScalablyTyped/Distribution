@@ -3,7 +3,6 @@ package typings.natsHemera.mod
 import typings.natsHemera.anon.MaxMessages
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -11,7 +10,7 @@ trait AddDefinition extends StObject {
   
   var action: js.Function = js.native
   
-  def end(action: js.Function1[/* request */ ServerPattern, js.Promise[_]]): Unit = js.native
+  def end(action: js.Function1[/* request */ ServerPattern, js.Promise[js.Any]]): Unit = js.native
   def end(action: js.Function2[/* request */ ServerPattern, /* cb */ NodeCallback, Unit]): Unit = js.native
   
   var pattern: ServerPattern = js.native

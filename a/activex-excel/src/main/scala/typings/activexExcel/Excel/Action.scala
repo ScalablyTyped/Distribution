@@ -2,32 +2,30 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Caption: String = js.native
+  val Caption: String
   
-  val Content: String = js.native
+  val Content: String
   
-  val Coordinate: String = js.native
+  val Coordinate: String
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.Action_typekey")
-  var ExcelDotAction_typekey: Action = js.native
+  var ExcelDotAction_typekey: Action
   
-  def Execute(): Unit = js.native
+  def Execute(): Unit
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Type: XlActionType = js.native
+  val Type: XlActionType
 }
 object Action {
   

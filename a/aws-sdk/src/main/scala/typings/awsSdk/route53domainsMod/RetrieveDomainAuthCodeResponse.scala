@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RetrieveDomainAuthCodeResponse extends StObject {
   
   /**
     * The authorization code for the domain.
     */
-  var AuthCode: DomainAuthCode = js.native
+  var AuthCode: DomainAuthCode
 }
 object RetrieveDomainAuthCodeResponse {
   

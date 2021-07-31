@@ -8,7 +8,6 @@ import typings.luminoWidgets.panelMod.Panel
 import typings.luminoWidgets.widgetMod.Widget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object boxpanelMod {
@@ -61,6 +60,10 @@ object boxpanelMod {
   }
   object BoxPanel {
     
+    @JSImport("@lumino/widgets/types/boxpanel", "BoxPanel")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get the box panel size basis for the given widget.
       *
@@ -68,9 +71,8 @@ object boxpanelMod {
       *
       * @returns The box panel size basis for the widget.
       */
-    @JSImport("@lumino/widgets/types/boxpanel", "BoxPanel.getSizeBasis")
-    @js.native
-    def getSizeBasis(widget: Widget): Double = js.native
+    @scala.inline
+    def getSizeBasis(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getSizeBasis")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Get the box panel stretch factor for the given widget.
@@ -79,9 +81,8 @@ object boxpanelMod {
       *
       * @returns The box panel stretch factor for the widget.
       */
-    @JSImport("@lumino/widgets/types/boxpanel", "BoxPanel.getStretch")
-    @js.native
-    def getStretch(widget: Widget): Double = js.native
+    @scala.inline
+    def getStretch(widget: Widget): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getStretch")(widget.asInstanceOf[js.Any]).asInstanceOf[Double]
     
     /**
       * Set the box panel size basis for the given widget.
@@ -90,9 +91,8 @@ object boxpanelMod {
       *
       * @param value - The value for the size basis.
       */
-    @JSImport("@lumino/widgets/types/boxpanel", "BoxPanel.setSizeBasis")
-    @js.native
-    def setSizeBasis(widget: Widget, value: Double): Unit = js.native
+    @scala.inline
+    def setSizeBasis(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setSizeBasis")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * Set the box panel stretch factor for the given widget.
@@ -101,9 +101,8 @@ object boxpanelMod {
       *
       * @param value - The value for the stretch factor.
       */
-    @JSImport("@lumino/widgets/types/boxpanel", "BoxPanel.setStretch")
-    @js.native
-    def setStretch(widget: Widget, value: Double): Unit = js.native
+    @scala.inline
+    def setStretch(widget: Widget, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setStretch")(widget.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       * A type alias for a box panel alignment.
@@ -118,7 +117,6 @@ object boxpanelMod {
     /**
       * An options object for initializing a box panel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
@@ -126,14 +124,14 @@ object boxpanelMod {
         *
         * The default is `'start'`.
         */
-      var alignment: js.UndefOr[Alignment] = js.native
+      var alignment: js.UndefOr[Alignment] = js.undefined
       
       /**
         * The layout direction of the panel.
         *
         * The default is `'top-to-bottom'`.
         */
-      var direction: js.UndefOr[Direction] = js.native
+      var direction: js.UndefOr[Direction] = js.undefined
       
       /**
         * The box layout to use for the box panel.
@@ -142,14 +140,14 @@ object boxpanelMod {
         *
         * The default is a new `BoxLayout`.
         */
-      var layout: js.UndefOr[BoxLayout] = js.native
+      var layout: js.UndefOr[BoxLayout] = js.undefined
       
       /**
         * The spacing between items in the panel.
         *
         * The default is `4`.
         */
-      var spacing: js.UndefOr[Double] = js.native
+      var spacing: js.UndefOr[Double] = js.undefined
     }
     object IOptions {
       

@@ -2,7 +2,6 @@ package typings.sharepoint.SP.Taxonomy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,32 +11,52 @@ sealed trait ChangeOperationType extends StObject
 object ChangeOperationType extends StObject {
   
   @js.native
-  sealed trait add extends ChangeOperationType
+  sealed trait add
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait copy extends ChangeOperationType
+  sealed trait copy
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait deleteObject extends ChangeOperationType
+  sealed trait deleteObject
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait edit extends ChangeOperationType
+  sealed trait edit
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait importObject extends ChangeOperationType
+  sealed trait importObject
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait merge extends ChangeOperationType
+  sealed trait merge
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait move extends ChangeOperationType
+  sealed trait move
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait pathChange extends ChangeOperationType
+  sealed trait pathChange
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait restore extends ChangeOperationType
+  sealed trait restore
+    extends StObject
+       with ChangeOperationType
   
   @js.native
-  sealed trait unknown extends ChangeOperationType
+  sealed trait unknown
+    extends StObject
+       with ChangeOperationType
 }

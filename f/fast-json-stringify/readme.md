@@ -10,9 +10,9 @@ Stringify your JSON at max speed
 | ------------------ | :-------------: |
 | Full name          | fast-json-stringify |
 | Keywords           | json, stringify, schema, fast |
-| # releases         | 43 |
-| # dependents       | 77 |
-| # downloads        | 6599523 |
+| # releases         | 46 |
+| # dependents       | 80 |
+| # downloads        | 8046052 |
 | # stars            | 6 |
 
 ## Links

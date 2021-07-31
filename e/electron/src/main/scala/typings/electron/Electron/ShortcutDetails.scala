@@ -2,49 +2,47 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShortcutDetails extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/shortcut-details
   /**
     * The Application User Model ID. Default is empty.
     */
-  var appUserModelId: js.UndefOr[String] = js.native
+  var appUserModelId: js.UndefOr[String] = js.undefined
   
   /**
     * The arguments to be applied to `target` when launching from this shortcut.
     * Default is empty.
     */
-  var args: js.UndefOr[String] = js.native
+  var args: js.UndefOr[String] = js.undefined
   
   /**
     * The working directory. Default is empty.
     */
-  var cwd: js.UndefOr[String] = js.native
+  var cwd: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the shortcut. Default is empty.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The path to the icon, can be a DLL or EXE. `icon` and `iconIndex` have to be set
     * together. Default is empty, which uses the target's icon.
     */
-  var icon: js.UndefOr[String] = js.native
+  var icon: js.UndefOr[String] = js.undefined
   
   /**
     * The resource ID of icon when `icon` is a DLL or EXE. Default is 0.
     */
-  var iconIndex: js.UndefOr[Double] = js.native
+  var iconIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * The target to launch from this shortcut.
     */
-  var target: String = js.native
+  var target: String
 }
 object ShortcutDetails {
   

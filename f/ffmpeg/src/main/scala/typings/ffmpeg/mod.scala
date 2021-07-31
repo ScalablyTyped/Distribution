@@ -17,7 +17,6 @@ import typings.std.Error
 import typings.std.Promise
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -25,65 +24,66 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("ffmpeg", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Promise[Video] {
+  class ^ protected ()
+    extends StObject
+       with Promise[Video] {
     def this(filePath: String) = this()
     def this(filePath: String, cb: js.Function2[/* err */ Error, /* video */ Video, Unit]) = this()
   }
   @JSImport("ffmpeg", JSImport.Namespace)
   @js.native
-  val ^ : Iffmpeg = js.native
+  val ^ : js.Object & Iffmpeg = js.native
   
   /* Inlined std.Partial<{  IARL :string,   IART :string,   ICMS :string,   ICMT :string,   ICOP :string,   ICRD :string | std.Date,   ICRP :string,   IDIM :string,   IDPI :string,   IENG :string,   IGNR :string,   IKEY :string,   ILGT :string,   ILNG :string,   IMED :string,   INAM :string,   IPLT :string,   IPRD :string,   ISBJ :string,   ISFT :string,   ISHP :string,   ISRC :string,   ISRF :string,   ITCH :string}> */
-  @js.native
   trait AVIMetadata extends StObject {
     
-    var IARL: js.UndefOr[String] = js.native
+    var IARL: js.UndefOr[String] = js.undefined
     
-    var IART: js.UndefOr[String] = js.native
+    var IART: js.UndefOr[String] = js.undefined
     
-    var ICMS: js.UndefOr[String] = js.native
+    var ICMS: js.UndefOr[String] = js.undefined
     
-    var ICMT: js.UndefOr[String] = js.native
+    var ICMT: js.UndefOr[String] = js.undefined
     
-    var ICOP: js.UndefOr[String] = js.native
+    var ICOP: js.UndefOr[String] = js.undefined
     
-    var ICRD: js.UndefOr[String | Date] = js.native
+    var ICRD: js.UndefOr[String | Date] = js.undefined
     
-    var ICRP: js.UndefOr[String] = js.native
+    var ICRP: js.UndefOr[String] = js.undefined
     
-    var IDIM: js.UndefOr[String] = js.native
+    var IDIM: js.UndefOr[String] = js.undefined
     
-    var IDPI: js.UndefOr[String] = js.native
+    var IDPI: js.UndefOr[String] = js.undefined
     
-    var IENG: js.UndefOr[String] = js.native
+    var IENG: js.UndefOr[String] = js.undefined
     
-    var IGNR: js.UndefOr[String] = js.native
+    var IGNR: js.UndefOr[String] = js.undefined
     
-    var IKEY: js.UndefOr[String] = js.native
+    var IKEY: js.UndefOr[String] = js.undefined
     
-    var ILGT: js.UndefOr[String] = js.native
+    var ILGT: js.UndefOr[String] = js.undefined
     
-    var ILNG: js.UndefOr[String] = js.native
+    var ILNG: js.UndefOr[String] = js.undefined
     
-    var IMED: js.UndefOr[String] = js.native
+    var IMED: js.UndefOr[String] = js.undefined
     
-    var INAM: js.UndefOr[String] = js.native
+    var INAM: js.UndefOr[String] = js.undefined
     
-    var IPLT: js.UndefOr[String] = js.native
+    var IPLT: js.UndefOr[String] = js.undefined
     
-    var IPRD: js.UndefOr[String] = js.native
+    var IPRD: js.UndefOr[String] = js.undefined
     
-    var ISBJ: js.UndefOr[String] = js.native
+    var ISBJ: js.UndefOr[String] = js.undefined
     
-    var ISFT: js.UndefOr[String] = js.native
+    var ISFT: js.UndefOr[String] = js.undefined
     
-    var ISHP: js.UndefOr[String] = js.native
+    var ISHP: js.UndefOr[String] = js.undefined
     
-    var ISRC: js.UndefOr[String] = js.native
+    var ISRC: js.UndefOr[String] = js.undefined
     
-    var ISRF: js.UndefOr[String] = js.native
+    var ISRF: js.UndefOr[String] = js.undefined
     
-    var ITCH: js.UndefOr[String] = js.native
+    var ITCH: js.UndefOr[String] = js.undefined
   }
   object AVIMetadata {
     
@@ -243,30 +243,29 @@ object mod extends Shortcut {
   }
   
   /* Inlined std.Partial<{  duration :number,   filesize :string,   encoder :string,   width :number,   height :number,   videodatarate :number,   videocodecid :string,   audiodatarate :number,   audiosamplerate :number,   stereo :boolean,   audiocodecid :string}> */
-  @js.native
   trait FLVMetadata extends StObject {
     
-    var audiocodecid: js.UndefOr[String] = js.native
+    var audiocodecid: js.UndefOr[String] = js.undefined
     
-    var audiodatarate: js.UndefOr[Double] = js.native
+    var audiodatarate: js.UndefOr[Double] = js.undefined
     
-    var audiosamplerate: js.UndefOr[Double] = js.native
+    var audiosamplerate: js.UndefOr[Double] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var encoder: js.UndefOr[String] = js.native
+    var encoder: js.UndefOr[String] = js.undefined
     
-    var filesize: js.UndefOr[String] = js.native
+    var filesize: js.UndefOr[String] = js.undefined
     
-    var height: js.UndefOr[Double] = js.native
+    var height: js.UndefOr[Double] = js.undefined
     
-    var stereo: js.UndefOr[Boolean] = js.native
+    var stereo: js.UndefOr[Boolean] = js.undefined
     
-    var videocodecid: js.UndefOr[String] = js.native
+    var videocodecid: js.UndefOr[String] = js.undefined
     
-    var videodatarate: js.UndefOr[Double] = js.native
+    var videodatarate: js.UndefOr[Double] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object FLVMetadata {
     
@@ -348,32 +347,31 @@ object mod extends Shortcut {
   }
   
   /* Inlined std.Partial<{  start_time :string | number,   duration_time :string | number,   frame_rate :number,   size :string,   number :number,   every_n_frames :number,   every_n_seconds :number,   every_n_percentage :number,   keep_pixel_aspect_ratio :boolean,   keep_aspect_ration :boolean,   padding_color :string,   file_name :string}> */
-  @js.native
   trait FrameToJPGSettings extends StObject {
     
-    var duration_time: js.UndefOr[String | Double] = js.native
+    var duration_time: js.UndefOr[String | Double] = js.undefined
     
-    var every_n_frames: js.UndefOr[Double] = js.native
+    var every_n_frames: js.UndefOr[Double] = js.undefined
     
-    var every_n_percentage: js.UndefOr[Double] = js.native
+    var every_n_percentage: js.UndefOr[Double] = js.undefined
     
-    var every_n_seconds: js.UndefOr[Double] = js.native
+    var every_n_seconds: js.UndefOr[Double] = js.undefined
     
-    var file_name: js.UndefOr[String] = js.native
+    var file_name: js.UndefOr[String] = js.undefined
     
-    var frame_rate: js.UndefOr[Double] = js.native
+    var frame_rate: js.UndefOr[Double] = js.undefined
     
-    var keep_aspect_ration: js.UndefOr[Boolean] = js.native
+    var keep_aspect_ration: js.UndefOr[Boolean] = js.undefined
     
-    var keep_pixel_aspect_ratio: js.UndefOr[Boolean] = js.native
+    var keep_pixel_aspect_ratio: js.UndefOr[Boolean] = js.undefined
     
-    var number: js.UndefOr[Double] = js.native
+    var number: js.UndefOr[Double] = js.undefined
     
-    var padding_color: js.UndefOr[String] = js.native
+    var padding_color: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[String] = js.native
+    var size: js.UndefOr[String] = js.undefined
     
-    var start_time: js.UndefOr[String | Double] = js.native
+    var start_time: js.UndefOr[String | Double] = js.undefined
   }
   object FrameToJPGSettings {
     
@@ -462,7 +460,8 @@ object mod extends Shortcut {
   
   @js.native
   trait Iffmpeg
-    extends Instantiable1[/* filePath */ String, js.Promise[Video]]
+    extends StObject
+       with Instantiable1[/* filePath */ String, js.Promise[Video]]
        with Instantiable2[
           /* filePath */ String, 
           /* cb */ js.Function2[/* err */ Error, /* video */ Video, Unit], 
@@ -470,42 +469,41 @@ object mod extends Shortcut {
         ]
   
   /* Inlined std.Partial<{  title :string,   author :string,   album_artist :string,   album :string,   grouping :string,   composer :string,   year :string,   track :string,   comment :string,   genre :string,   copyright :string,   description :string,   synopsis :string,   show :string,   episode_id :string,   network :string,   lyrics :string}> */
-  @js.native
   trait StandardVideoMetadata extends StObject {
     
-    var album: js.UndefOr[String] = js.native
+    var album: js.UndefOr[String] = js.undefined
     
-    var album_artist: js.UndefOr[String] = js.native
+    var album_artist: js.UndefOr[String] = js.undefined
     
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var composer: js.UndefOr[String] = js.native
+    var composer: js.UndefOr[String] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
-    var episode_id: js.UndefOr[String] = js.native
+    var episode_id: js.UndefOr[String] = js.undefined
     
-    var genre: js.UndefOr[String] = js.native
+    var genre: js.UndefOr[String] = js.undefined
     
-    var grouping: js.UndefOr[String] = js.native
+    var grouping: js.UndefOr[String] = js.undefined
     
-    var lyrics: js.UndefOr[String] = js.native
+    var lyrics: js.UndefOr[String] = js.undefined
     
-    var network: js.UndefOr[String] = js.native
+    var network: js.UndefOr[String] = js.undefined
     
-    var show: js.UndefOr[String] = js.native
+    var show: js.UndefOr[String] = js.undefined
     
-    var synopsis: js.UndefOr[String] = js.native
+    var synopsis: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var track: js.UndefOr[String] = js.native
+    var track: js.UndefOr[String] = js.undefined
     
-    var year: js.UndefOr[String] = js.native
+    var year: js.UndefOr[String] = js.undefined
   }
   object StandardVideoMetadata {
     
@@ -643,30 +641,30 @@ object mod extends Shortcut {
     def addInput(argument: String): Unit = js.native
     
     def fnAddWatermark(watermarkPath: String): Unit = js.native
-    def fnAddWatermark(
-      watermarkPath: String,
-      newPilePath: js.UndefOr[scala.Nothing],
-      settings: js.UndefOr[scala.Nothing],
-      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
-    ): Unit = js.native
-    def fnAddWatermark(watermarkPath: String, newPilePath: js.UndefOr[scala.Nothing], settings: WatermarkSettings): Unit = js.native
-    def fnAddWatermark(
-      watermarkPath: String,
-      newPilePath: js.UndefOr[scala.Nothing],
-      settings: WatermarkSettings,
-      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
-    ): Unit = js.native
     def fnAddWatermark(watermarkPath: String, newPilePath: String): Unit = js.native
     def fnAddWatermark(
       watermarkPath: String,
       newPilePath: String,
-      settings: js.UndefOr[scala.Nothing],
+      settings: Unit,
       cb: js.Function2[/* err */ Error, /* file */ String, Unit]
     ): Unit = js.native
     def fnAddWatermark(watermarkPath: String, newPilePath: String, settings: WatermarkSettings): Unit = js.native
     def fnAddWatermark(
       watermarkPath: String,
       newPilePath: String,
+      settings: WatermarkSettings,
+      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
+    ): Unit = js.native
+    def fnAddWatermark(
+      watermarkPath: String,
+      newPilePath: Unit,
+      settings: Unit,
+      cb: js.Function2[/* err */ Error, /* file */ String, Unit]
+    ): Unit = js.native
+    def fnAddWatermark(watermarkPath: String, newPilePath: Unit, settings: WatermarkSettings): Unit = js.native
+    def fnAddWatermark(
+      watermarkPath: String,
+      newPilePath: Unit,
       settings: WatermarkSettings,
       cb: js.Function2[/* err */ Error, /* file */ String, Unit]
     ): Unit = js.native
@@ -682,16 +680,16 @@ object mod extends Shortcut {
     @JSName("fnAddWatermark")
     def fnAddWatermark_Promise(watermarkPath: String): js.Promise[String] = js.native
     @JSName("fnAddWatermark")
-    def fnAddWatermark_Promise(watermarkPath: String, newPilePath: js.UndefOr[scala.Nothing], settings: WatermarkSettings): js.Promise[String] = js.native
-    @JSName("fnAddWatermark")
     def fnAddWatermark_Promise(watermarkPath: String, newPilePath: String): js.Promise[String] = js.native
     @JSName("fnAddWatermark")
     def fnAddWatermark_Promise(watermarkPath: String, newPilePath: String, settings: WatermarkSettings): js.Promise[String] = js.native
+    @JSName("fnAddWatermark")
+    def fnAddWatermark_Promise(watermarkPath: String, newPilePath: Unit, settings: WatermarkSettings): js.Promise[String] = js.native
     
     def fnExtractFrameToJPG(destinationFolder: String): Unit = js.native
     def fnExtractFrameToJPG(
       destinationFolder: String,
-      settings: js.UndefOr[scala.Nothing],
+      settings: Unit,
       cb: js.Function2[/* err */ Error, /* files */ js.Array[String], Unit]
     ): Unit = js.native
     def fnExtractFrameToJPG(destinationFolder: String, settings: FrameToJPGSettings): Unit = js.native
@@ -721,7 +719,7 @@ object mod extends Shortcut {
     def fnExtractSoundToMP3(destinationFileName: String): js.Promise[String] = js.native
     def fnExtractSoundToMP3(destinationFileName: String, cb: js.Function2[/* err */ Error, /* file */ String, Unit]): Unit = js.native
     
-    var metadata: StandardVideoMetadata with AVIMetadata with FLVMetadata = js.native
+    var metadata: StandardVideoMetadata & AVIMetadata & FLVMetadata = js.native
     
     /**
       * After setting the desired parameters have to start the conversion process.
@@ -913,18 +911,17 @@ object mod extends Shortcut {
   }
   
   /* Inlined std.Partial<{  title :string,   author :string,   copyright :string,   comment :string,   rating :string}> */
-  @js.native
   trait WMVMetadata extends StObject {
     
-    var author: js.UndefOr[String] = js.native
+    var author: js.UndefOr[String] = js.undefined
     
-    var comment: js.UndefOr[String] = js.native
+    var comment: js.UndefOr[String] = js.undefined
     
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
-    var rating: js.UndefOr[String] = js.native
+    var rating: js.UndefOr[String] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
   }
   object WMVMetadata {
     
@@ -970,18 +967,17 @@ object mod extends Shortcut {
   }
   
   /* Inlined std.Partial<{  position :'NE' | 'NC' | 'NW' | 'SE' | 'SC' | 'SW' | 'C' | 'CE' | 'CW',   margin_nord :number,   margin_sud :number,   margin_east :number,   margin_west :number}> */
-  @js.native
   trait WatermarkSettings extends StObject {
     
-    var margin_east: js.UndefOr[Double] = js.native
+    var margin_east: js.UndefOr[Double] = js.undefined
     
-    var margin_nord: js.UndefOr[Double] = js.native
+    var margin_nord: js.UndefOr[Double] = js.undefined
     
-    var margin_sud: js.UndefOr[Double] = js.native
+    var margin_sud: js.UndefOr[Double] = js.undefined
     
-    var margin_west: js.UndefOr[Double] = js.native
+    var margin_west: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[NE | NC | NW | SE | SC | SW | C | CE | CW] = js.native
+    var position: js.UndefOr[NE | NC | NW | SE | SC | SW | C | CE | CW] = js.undefined
   }
   object WatermarkSettings {
     
@@ -1026,8 +1022,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = Iffmpeg
+  type _To = js.Object & Iffmpeg
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: Iffmpeg = ^
+  override def _to: js.Object & Iffmpeg = ^
 }

@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,7 +23,7 @@ object mod {
     def validate(source: ValidateSource): js.Promise[Unit] = js.native
     def validate(
       source: ValidateSource,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* errors */ ErrorList, /* fields */ FieldErrorList, Unit]
     ): js.Promise[Unit] = js.native
     def validate(source: ValidateSource, options: ValidateOption): js.Promise[Unit] = js.native
@@ -39,7 +38,6 @@ object mod {
   
   type FieldErrorList = StringDictionary[js.Array[ValidateError]]
   
-  @js.native
   trait RuleItem extends StObject {
     
     var asyncValidator: js.UndefOr[
@@ -51,37 +49,37 @@ object mod {
           /* options */ ValidateOption, 
           Unit | js.Promise[Unit]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var defaultField: js.UndefOr[RuleItem] = js.native
+    var defaultField: js.UndefOr[RuleItem] = js.undefined
     
     // Length of type 'string' and 'array'
-    var enum: js.UndefOr[js.Array[js.UndefOr[String | Double | Boolean | Null]]] = js.native
+    var `enum`: js.UndefOr[js.Array[js.UndefOr[String | Double | Boolean | Null]]] = js.undefined
     
-    var fields: js.UndefOr[Rules] = js.native
-    
-    // Range of type 'string' and 'array'
-    var len: js.UndefOr[Double] = js.native
+    var fields: js.UndefOr[Rules] = js.undefined
     
     // Range of type 'string' and 'array'
-    var max: js.UndefOr[Double] = js.native
+    var len: js.UndefOr[Double] = js.undefined
     
-    var message: js.UndefOr[String | js.Function0[String]] = js.native
+    // Range of type 'string' and 'array'
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var message: js.UndefOr[String | js.Function0[String]] = js.undefined
+    
+    var min: js.UndefOr[Double] = js.undefined
     
     // ignore when without required
-    var options: js.UndefOr[ValidateOption] = js.native
+    var options: js.UndefOr[ValidateOption] = js.undefined
     
-    var pattern: js.UndefOr[RegExp | String] = js.native
+    var pattern: js.UndefOr[RegExp | String] = js.undefined
     
     // default type is 'string'
-    var required: js.UndefOr[Boolean] = js.native
+    var required: js.UndefOr[Boolean] = js.undefined
     
     // 'object' or 'array' containing validation rules
-    var transform: js.UndefOr[js.Function1[/* value */ js.Any, _]] = js.native
+    var transform: js.UndefOr[js.Function1[/* value */ js.Any, js.Any]] = js.undefined
     
-    var `type`: js.UndefOr[RuleType] = js.native
+    var `type`: js.UndefOr[RuleType] = js.undefined
     
     var validator: js.UndefOr[
         js.Function5[
@@ -92,10 +90,10 @@ object mod {
           /* options */ ValidateOption, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
     // possible values of type 'enum'
-    var whitespace: js.UndefOr[Boolean] = js.native
+    var whitespace: js.UndefOr[Boolean] = js.undefined
   }
   object RuleItem {
     
@@ -183,7 +181,7 @@ object mod {
       def setRequiredUndefined: Self = StObject.set(x, "required", js.undefined)
       
       @scala.inline
-      def setTransform(value: /* value */ js.Any => _): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
+      def setTransform(value: /* value */ js.Any => js.Any): Self = StObject.set(x, "transform", js.Any.fromFunction1(value))
       
       @scala.inline
       def setTransformUndefined: Self = StObject.set(x, "transform", js.undefined)
@@ -220,7 +218,7 @@ object mod {
     - typings.asyncValidator.asyncValidatorStrings.float
     - typings.asyncValidator.asyncValidatorStrings.array
     - typings.asyncValidator.asyncValidatorStrings.`object`
-    - typings.asyncValidator.asyncValidatorStrings.enum
+    - typings.asyncValidator.asyncValidatorStrings.`enum`
     - typings.asyncValidator.asyncValidatorStrings.date
     - typings.asyncValidator.asyncValidatorStrings.url
     - typings.asyncValidator.asyncValidatorStrings.hex
@@ -246,7 +244,7 @@ object mod {
     def email: typings.asyncValidator.asyncValidatorStrings.email = "email".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.email]
     
     @scala.inline
-    def enum: typings.asyncValidator.asyncValidatorStrings.enum = "enum".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.enum]
+    def `enum`: typings.asyncValidator.asyncValidatorStrings.`enum` = "enum".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.`enum`]
     
     @scala.inline
     def float: typings.asyncValidator.asyncValidatorStrings.float = "float".asInstanceOf[typings.asyncValidator.asyncValidatorStrings.float]
@@ -278,12 +276,11 @@ object mod {
   
   type Rules = StringDictionary[RuleItem | js.Array[RuleItem]]
   
-  @js.native
   trait ValidateError extends StObject {
     
-    var field: String = js.native
+    var field: String
     
-    var message: String = js.native
+    var message: String
   }
   object ValidateError {
     
@@ -304,17 +301,16 @@ object mod {
     }
   }
   
-  @js.native
   trait ValidateOption extends StObject {
     
     // when the first validation rule generates an error stop processed
-    var first: js.UndefOr[Boolean] = js.native
+    var first: js.UndefOr[Boolean] = js.undefined
     
     // when the first validation rule of the specified field generates an error stop the field processed, 'true' means all fields.
-    var firstFields: js.UndefOr[Boolean | js.Array[String]] = js.native
+    var firstFields: js.UndefOr[Boolean | js.Array[String]] = js.undefined
     
     // whether to suppress internal warning
-    var suppressWarning: js.UndefOr[Boolean] = js.native
+    var suppressWarning: js.UndefOr[Boolean] = js.undefined
   }
   object ValidateOption {
     

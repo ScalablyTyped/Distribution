@@ -2,26 +2,24 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BillingInvoicesResponse extends StObject {
   
   /**
     * Reserved: TBD
     */
-  var billingInvoices: js.UndefOr[js.Array[BillingInvoice]] = js.native
+  var billingInvoices: js.UndefOr[js.Array[BillingInvoice]] = js.undefined
   
   /**
     * The URI for the next chunk of records based on the search request. It is `null` if this is the last set of results for the search.
     */
-  var nextUri: js.UndefOr[String] = js.native
+  var nextUri: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for the prior chunk of records based on the search request. It is `null` if this is the first set of results for the search.
     */
-  var previousUri: js.UndefOr[String] = js.native
+  var previousUri: js.UndefOr[String] = js.undefined
 }
 object BillingInvoicesResponse {
   

@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nodeFsStatsMod {
@@ -24,82 +23,30 @@ object nodeFsStatsMod {
       */
     def this(itemType: FileType, size: Double) = this()
     def this(itemType: FileType, size: Double, mode: Double) = this()
-    def this(itemType: FileType, size: Double, mode: js.UndefOr[scala.Nothing], atime: Date) = this()
     def this(itemType: FileType, size: Double, mode: Double, atime: Date) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: js.UndefOr[scala.Nothing],
-      atime: js.UndefOr[scala.Nothing],
-      mtime: Date
-    ) = this()
-    def this(itemType: FileType, size: Double, mode: js.UndefOr[scala.Nothing], atime: Date, mtime: Date) = this()
-    def this(itemType: FileType, size: Double, mode: Double, atime: js.UndefOr[scala.Nothing], mtime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: Date) = this()
     def this(itemType: FileType, size: Double, mode: Double, atime: Date, mtime: Date) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: js.UndefOr[scala.Nothing],
-      atime: js.UndefOr[scala.Nothing],
-      mtime: js.UndefOr[scala.Nothing],
-      ctime: Date
-    ) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: js.UndefOr[scala.Nothing],
-      atime: js.UndefOr[scala.Nothing],
-      mtime: Date,
-      ctime: Date
-    ) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: js.UndefOr[scala.Nothing],
-      atime: Date,
-      mtime: js.UndefOr[scala.Nothing],
-      ctime: Date
-    ) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: js.UndefOr[scala.Nothing],
-      atime: Date,
-      mtime: Date,
-      ctime: Date
-    ) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: Double,
-      atime: js.UndefOr[scala.Nothing],
-      mtime: js.UndefOr[scala.Nothing],
-      ctime: Date
-    ) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: Double,
-      atime: js.UndefOr[scala.Nothing],
-      mtime: Date,
-      ctime: Date
-    ) = this()
-    def this(
-      itemType: FileType,
-      size: Double,
-      mode: Double,
-      atime: Date,
-      mtime: js.UndefOr[scala.Nothing],
-      ctime: Date
-    ) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Date, mtime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: Unit, ctime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: Unit, mtime: Date, ctime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Double, atime: Date, mtime: Unit, ctime: Date) = this()
     def this(itemType: FileType, size: Double, mode: Double, atime: Date, mtime: Date, ctime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: Unit, ctime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Unit, mtime: Date, ctime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Date, mtime: Unit, ctime: Date) = this()
+    def this(itemType: FileType, size: Double, mode: Unit, atime: Date, mtime: Date, ctime: Date) = this()
   }
   /* static members */
   object default {
     
-    @JSImport("browserfs/dist/node/core/node_fs_stats", "default.fromBuffer")
+    @JSImport("browserfs/dist/node/core/node_fs_stats", JSImport.Default)
     @js.native
-    def fromBuffer(buffer: Buffer): Stats = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def fromBuffer(buffer: Buffer): Stats = ^.asInstanceOf[js.Dynamic].applyDynamic("fromBuffer")(buffer.asInstanceOf[js.Any]).asInstanceOf[Stats]
   }
   
   @js.native
@@ -109,19 +56,25 @@ object nodeFsStatsMod {
   object FileType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[FileType with Double] = js.native
+    def apply(value: Double): js.UndefOr[FileType & Double] = js.native
     
     @js.native
-    sealed trait DIRECTORY extends FileType
-    /* 16384 */ val DIRECTORY: typings.browserfs.nodeFsStatsMod.FileType.DIRECTORY with Double = js.native
+    sealed trait DIRECTORY
+      extends StObject
+         with FileType
+    /* 16384 */ val DIRECTORY: typings.browserfs.nodeFsStatsMod.FileType.DIRECTORY & Double = js.native
     
     @js.native
-    sealed trait FILE extends FileType
-    /* 32768 */ val FILE: typings.browserfs.nodeFsStatsMod.FileType.FILE with Double = js.native
+    sealed trait FILE
+      extends StObject
+         with FileType
+    /* 32768 */ val FILE: typings.browserfs.nodeFsStatsMod.FileType.FILE & Double = js.native
     
     @js.native
-    sealed trait SYMLINK extends FileType
-    /* 40960 */ val SYMLINK: typings.browserfs.nodeFsStatsMod.FileType.SYMLINK with Double = js.native
+    sealed trait SYMLINK
+      extends StObject
+         with FileType
+    /* 40960 */ val SYMLINK: typings.browserfs.nodeFsStatsMod.FileType.SYMLINK & Double = js.native
   }
   
   @js.native

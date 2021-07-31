@@ -2,21 +2,19 @@ package typings.mudder
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Carry extends StObject {
     
-    var carry: Boolean = js.native
+    var carry: Boolean
     
-    var den: Double = js.native
+    var den: Double
     
-    var rem: Double = js.native
+    var rem: Double
     
-    var res: js.Array[Double] = js.native
+    var res: js.Array[Double]
   }
   object Carry {
     

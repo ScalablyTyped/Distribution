@@ -2,50 +2,50 @@ package typings.senchaTouch.Ext.field
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFile extends IField {
+trait IFile
+  extends StObject
+     with IField {
   
   /** [Config Option] (String) */
-  var accept: js.UndefOr[String] = js.native
+  var accept: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var capture: js.UndefOr[String] = js.native
+  var capture: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of accept
     * @returns String
     */
-  var getAccept: js.UndefOr[js.Function0[String]] = js.native
+  var getAccept: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of capture
     * @returns String
     */
-  var getCapture: js.UndefOr[js.Function0[String]] = js.native
+  var getCapture: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of multiple
     * @returns Boolean
     */
-  var getMultiple: js.UndefOr[js.Function0[Boolean]] = js.native
+  var getMultiple: js.UndefOr[js.Function0[Boolean]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var multiple: js.UndefOr[Boolean] = js.native
+  var multiple: js.UndefOr[Boolean] = js.undefined
   
   /** [Method] Sets the value of accept
     * @param accept String The new value.
     */
-  var setAccept: js.UndefOr[js.Function1[/* accept */ js.UndefOr[String], Unit]] = js.native
+  var setAccept: js.UndefOr[js.Function1[/* accept */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of capture
     * @param capture String The new value.
     */
-  var setCapture: js.UndefOr[js.Function1[/* capture */ js.UndefOr[String], Unit]] = js.native
+  var setCapture: js.UndefOr[js.Function1[/* capture */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of multiple
     * @param multiple Boolean The new value.
     */
-  var setMultiple: js.UndefOr[js.Function1[/* multiple */ js.UndefOr[Boolean], Unit]] = js.native
+  var setMultiple: js.UndefOr[js.Function1[/* multiple */ js.UndefOr[Boolean], Unit]] = js.undefined
 }
 object IFile {
   

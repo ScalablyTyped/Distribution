@@ -6,23 +6,23 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.Streams.IInputStream
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDownloadOperation extends IBackgroundTransferOperation {
+trait IDownloadOperation
+  extends StObject
+     with IBackgroundTransferOperation {
   
-  def attachAsync(): IAsyncOperationWithProgress[DownloadOperation, DownloadOperation] = js.native
+  def attachAsync(): IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]
   
-  def pause(): Unit = js.native
+  def pause(): Unit
   
-  var progress: BackgroundDownloadProgress = js.native
+  var progress: BackgroundDownloadProgress
   
-  var resultFile: IStorageFile = js.native
+  var resultFile: IStorageFile
   
-  def resume(): Unit = js.native
+  def resume(): Unit
   
-  def startAsync(): IAsyncOperationWithProgress[DownloadOperation, DownloadOperation] = js.native
+  def startAsync(): IAsyncOperationWithProgress[DownloadOperation, DownloadOperation]
 }
 object IDownloadOperation {
   

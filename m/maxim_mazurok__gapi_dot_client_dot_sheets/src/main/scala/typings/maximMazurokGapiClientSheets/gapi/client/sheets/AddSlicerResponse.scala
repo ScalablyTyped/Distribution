@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddSlicerResponse extends StObject {
   
   /** The newly added slicer. */
-  var slicer: js.UndefOr[Slicer] = js.native
+  var slicer: js.UndefOr[Slicer] = js.undefined
 }
 object AddSlicerResponse {
   

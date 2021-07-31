@@ -2,7 +2,6 @@ package typings.dwt.dynamsoftEnumMod.DynamsoftEnums
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,13 +11,17 @@ sealed trait EnumColourConversionMode extends StObject
 object EnumColourConversionMode extends StObject {
   
   @JSBracketAccess
-  def apply(value: Double): js.UndefOr[EnumColourConversionMode with Double] = js.native
+  def apply(value: Double): js.UndefOr[EnumColourConversionMode & Double] = js.native
   
   @js.native
-  sealed trait CICM_GENERAL extends EnumColourConversionMode
-  /* 1 */ val CICM_GENERAL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumColourConversionMode.CICM_GENERAL with Double = js.native
+  sealed trait CICM_GENERAL
+    extends StObject
+       with EnumColourConversionMode
+  /* 1 */ val CICM_GENERAL: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumColourConversionMode.CICM_GENERAL & Double = js.native
   
   @js.native
-  sealed trait CICM_SKIP extends EnumColourConversionMode
-  /* 0 */ val CICM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumColourConversionMode.CICM_SKIP with Double = js.native
+  sealed trait CICM_SKIP
+    extends StObject
+       with EnumColourConversionMode
+  /* 0 */ val CICM_SKIP: typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumColourConversionMode.CICM_SKIP & Double = js.native
 }

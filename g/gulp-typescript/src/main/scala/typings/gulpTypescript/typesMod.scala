@@ -6,7 +6,6 @@ import typings.typescript.mod.CustomTransformers
 import typings.typescript.mod.Program
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
@@ -15,16 +14,15 @@ object typesMod {
   
   type GetCustomTransformers = String | (js.Function1[/* program */ js.UndefOr[Program], js.UndefOr[CustomTransformers]])
   
-  @js.native
   trait TsConfig extends StObject {
     
-    var compilerOptions: js.UndefOr[js.Any] = js.native
+    var compilerOptions: js.UndefOr[js.Any] = js.undefined
     
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
-    var files: js.UndefOr[js.Array[String]] = js.native
+    var files: js.UndefOr[js.Array[String]] = js.undefined
     
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
   }
   object TsConfig {
     
@@ -72,26 +70,25 @@ object typesMod {
     }
   }
   
-  @js.native
   trait VinylFile extends StObject {
     
-    var base: String = js.native
+    var base: String
     
-    var basename: String = js.native
+    var basename: String
     
-    var contents: Buffer | ReadableStream | Null = js.native
+    var contents: Buffer | ReadableStream | Null
     
-    var cwd: String = js.native
+    var cwd: String
     
-    var dirname: String = js.native
+    var dirname: String
     
-    var extname: String = js.native
+    var extname: String
     
-    var path: String = js.native
+    var path: String
     
-    var sourceMap: js.UndefOr[js.Any] = js.native
+    var sourceMap: js.UndefOr[js.Any] = js.undefined
     
-    var stem: String = js.native
+    var stem: String
   }
   object VinylFile {
     
@@ -105,7 +102,7 @@ object typesMod {
       path: String,
       stem: String
     ): VinylFile = {
-      val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], basename = basename.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], dirname = dirname.asInstanceOf[js.Any], extname = extname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(base = base.asInstanceOf[js.Any], basename = basename.asInstanceOf[js.Any], cwd = cwd.asInstanceOf[js.Any], dirname = dirname.asInstanceOf[js.Any], extname = extname.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], stem = stem.asInstanceOf[js.Any], contents = null)
       __obj.asInstanceOf[VinylFile]
     }
     

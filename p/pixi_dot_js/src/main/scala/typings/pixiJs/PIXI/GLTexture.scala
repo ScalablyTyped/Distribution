@@ -3,7 +3,6 @@ package typings.pixiJs.PIXI
 import typings.std.WebGLTexture
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,62 +10,61 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @class
   * @memberof PIXI
   */
-@js.native
 trait GLTexture extends StObject {
   
   /**
     * Texture contents dirty flag
     * @member {number} PIXI.GLTexture#dirtyId
     */
-  var dirtyId: Double = js.native
+  var dirtyId: Double
   
   /**
     * Texture style dirty flag
     * @member {number} PIXI.GLTexture#dirtyStyleId
     */
-  var dirtyStyleId: Double = js.native
+  var dirtyStyleId: Double
   
   /**
     * Height of texture that was used in texImage2D
     * @member {number} PIXI.GLTexture#height
     */
-  var height: Double = js.native
+  var height: Double
   
   /**
     * Type copied from baseTexture
     * @member {number} PIXI.GLTexture#internalFormat
     */
-  var internalFormat: Double = js.native
+  var internalFormat: Double
   
   /**
     * Whether mip levels has to be generated
     * @member {boolean} PIXI.GLTexture#mipmap
     */
-  var mipmap: Boolean = js.native
+  var mipmap: Boolean
   
   /**
     * The WebGL texture
     * @member {WebGLTexture} PIXI.GLTexture#texture
     */
-  var texture: WebGLTexture = js.native
+  var texture: WebGLTexture
   
   /**
     * Type copied from baseTexture
     * @member {number} PIXI.GLTexture#type
     */
-  var `type`: Double = js.native
+  var `type`: Double
   
   /**
     * Width of texture that was used in texImage2D
     * @member {number} PIXI.GLTexture#width
     */
-  var width: Double = js.native
+  var width: Double
   
   /**
     * WrapMode copied from baseTexture
     * @member {number} PIXI.GLTexture#wrapMode
     */
-  var wrapMode: Double = js.native
+  var wrapMode: Double
 }
 object GLTexture {
   

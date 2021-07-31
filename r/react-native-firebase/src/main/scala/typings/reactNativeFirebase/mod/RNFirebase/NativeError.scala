@@ -3,17 +3,17 @@ package typings.reactNativeFirebase.mod.RNFirebase
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait NativeError extends Error {
+trait NativeError
+  extends StObject
+     with Error {
   
-  var code: String = js.native
+  var code: String
   
-  var nativeErrorCode: js.UndefOr[String] = js.native
+  var nativeErrorCode: js.UndefOr[String] = js.undefined
   
-  var nativeErrorMessage: js.UndefOr[String] = js.native
+  var nativeErrorMessage: js.UndefOr[String] = js.undefined
 }
 object NativeError {
   

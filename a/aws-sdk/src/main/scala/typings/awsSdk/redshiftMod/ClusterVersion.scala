@@ -2,26 +2,24 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterVersion extends StObject {
   
   /**
     * The name of the cluster parameter group family for the cluster.
     */
-  var ClusterParameterGroupFamily: js.UndefOr[String] = js.native
+  var ClusterParameterGroupFamily: js.UndefOr[String] = js.undefined
   
   /**
     * The version number used by the cluster.
     */
-  var ClusterVersion: js.UndefOr[String] = js.native
+  var ClusterVersion: js.UndefOr[String] = js.undefined
   
   /**
     * The description of the cluster version.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
 }
 object ClusterVersion {
   

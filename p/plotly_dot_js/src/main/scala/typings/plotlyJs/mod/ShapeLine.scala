@@ -2,17 +2,15 @@ package typings.plotlyJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShapeLine extends StObject {
   
-  var color: String = js.native
+  var color: String
   
-  var dash: Dash = js.native
+  var dash: Dash
   
-  var width: Double = js.native
+  var width: Double
 }
 object ShapeLine {
   

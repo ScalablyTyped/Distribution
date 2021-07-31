@@ -15,21 +15,19 @@ import typings.std.HTMLInputElement
 import typings.std.HTMLTextAreaElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object alertInterfaceMod {
   
-  @js.native
   trait AlertButton extends StObject {
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var handler: js.UndefOr[js.Function1[/* value */ js.Any, Boolean | Unit | StringDictionary[_]]] = js.native
+    var handler: js.UndefOr[js.Function1[/* value */ js.Any, Boolean | Unit | StringDictionary[js.Any]]] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var text: String = js.native
+    var text: String
   }
   object AlertButton {
     
@@ -52,7 +50,7 @@ object alertInterfaceMod {
       def setCssClassVarargs(value: String*): Self = StObject.set(x, "cssClass", js.Array(value :_*))
       
       @scala.inline
-      def setHandler(value: /* value */ js.Any => Boolean | Unit | StringDictionary[_]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
+      def setHandler(value: /* value */ js.Any => Boolean | Unit | StringDictionary[js.Any]): Self = StObject.set(x, "handler", js.Any.fromFunction1(value))
       
       @scala.inline
       def setHandlerUndefined: Self = StObject.set(x, "handler", js.undefined)
@@ -68,36 +66,35 @@ object alertInterfaceMod {
     }
   }
   
-  @js.native
   trait AlertInput extends StObject {
     
-    var attributes: js.UndefOr[AlertInputAttributes | AlertTextareaAttributes] = js.native
+    var attributes: js.UndefOr[AlertInputAttributes | AlertTextareaAttributes] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var handler: js.UndefOr[js.Function1[/* input */ this.type, Unit]] = js.native
+    var handler: js.UndefOr[js.Function1[/* input */ this.type, Unit]] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
-    var max: js.UndefOr[String | Double] = js.native
+    var max: js.UndefOr[String | Double] = js.undefined
     
-    var min: js.UndefOr[String | Double] = js.native
+    var min: js.UndefOr[String | Double] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var tabindex: js.UndefOr[Double] = js.native
+    var tabindex: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[TextFieldTypes | checkbox | radio | textarea] = js.native
+    var `type`: js.UndefOr[TextFieldTypes | checkbox | radio | textarea] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object AlertInput {
     
@@ -201,36 +198,35 @@ object alertInterfaceMod {
   
   type AlertInputAttributes = InputHTMLAttributes[HTMLInputElement]
   
-  @js.native
   trait AlertOptions extends StObject {
     
-    var animated: js.UndefOr[Boolean] = js.native
+    var animated: js.UndefOr[Boolean] = js.undefined
     
-    var backdropDismiss: js.UndefOr[Boolean] = js.native
+    var backdropDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var buttons: js.UndefOr[js.Array[AlertButton | String]] = js.native
+    var buttons: js.UndefOr[js.Array[AlertButton | String]] = js.undefined
     
-    var cssClass: js.UndefOr[String | js.Array[String]] = js.native
+    var cssClass: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var enterAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var enterAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var header: js.UndefOr[String] = js.native
+    var header: js.UndefOr[String] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var inputs: js.UndefOr[js.Array[AlertInput]] = js.native
+    var inputs: js.UndefOr[js.Array[AlertInput]] = js.undefined
     
-    var keyboardClose: js.UndefOr[Boolean] = js.native
+    var keyboardClose: js.UndefOr[Boolean] = js.undefined
     
-    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.native
+    var leaveAnimation: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var message: js.UndefOr[String | IonicSafeString] = js.native
+    var message: js.UndefOr[String | IonicSafeString] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
     
-    var subHeader: js.UndefOr[String] = js.native
+    var subHeader: js.UndefOr[String] = js.undefined
     
-    var translucent: js.UndefOr[Boolean] = js.native
+    var translucent: js.UndefOr[Boolean] = js.undefined
   }
   object AlertOptions {
     

@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapFlatDataSourceOptionsMetadataCubeDimension
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,17 +15,17 @@ trait OlapFlatDataSourceOptionsMetadataCubeDimension
   /**
     * A caption for the dimension.
     */
-  var caption: js.UndefOr[String] = js.native
+  var caption: js.UndefOr[String] = js.undefined
   
   /**
     * An array of hierarchy metadata objects.
     */
-  var hierarchies: js.UndefOr[js.Array[OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie]] = js.native
+  var hierarchies: js.UndefOr[js.Array[OlapFlatDataSourceOptionsMetadataCubeDimensionHierarchie]] = js.undefined
   
   /**
     * Optional="false" A unique name for the dimension.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object OlapFlatDataSourceOptionsMetadataCubeDimension {
   

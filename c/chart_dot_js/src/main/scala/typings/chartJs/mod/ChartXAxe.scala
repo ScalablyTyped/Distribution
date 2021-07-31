@@ -4,13 +4,13 @@ import typings.chartJs.chartJsStrings.linear
 import typings.chartJs.chartJsStrings.series
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartXAxe extends CommonAxe {
+trait ChartXAxe
+  extends StObject
+     with CommonAxe {
   
-  var distribution: js.UndefOr[linear | series] = js.native
+  var distribution: js.UndefOr[linear | series] = js.undefined
 }
 object ChartXAxe {
   

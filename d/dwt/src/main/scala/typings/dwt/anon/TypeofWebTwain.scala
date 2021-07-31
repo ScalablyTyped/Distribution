@@ -2,13 +2,11 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofWebTwain extends StObject {
   
-  val Addon: TypeofAddon = js.native
+  val Addon: TypeofAddon
 }
 object TypeofWebTwain {
   

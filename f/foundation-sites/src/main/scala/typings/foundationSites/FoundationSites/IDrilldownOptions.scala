@@ -2,19 +2,17 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDrilldownOptions extends StObject {
   
-  var backButton: js.UndefOr[String] = js.native
+  var backButton: js.UndefOr[String] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var parentLink: js.UndefOr[Boolean] = js.native
+  var parentLink: js.UndefOr[Boolean] = js.undefined
   
-  var wrapper: js.UndefOr[String] = js.native
+  var wrapper: js.UndefOr[String] = js.undefined
 }
 object IDrilldownOptions {
   

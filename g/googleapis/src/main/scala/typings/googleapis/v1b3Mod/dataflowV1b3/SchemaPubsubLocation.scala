@@ -2,55 +2,53 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Identifies a pubsub location to use for transferring data into or out of a
   * streaming Dataflow job.
   */
-@js.native
 trait SchemaPubsubLocation extends StObject {
   
   /**
     * Indicates whether the pipeline allows late-arriving data.
     */
-  var dropLateData: js.UndefOr[Boolean] = js.native
+  var dropLateData: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If set, contains a pubsub label from which to extract record ids. If left
     * empty, record deduplication will be strictly best effort.
     */
-  var idLabel: js.UndefOr[String] = js.native
+  var idLabel: js.UndefOr[String] = js.undefined
   
   /**
     * A pubsub subscription, in the form of
     * &quot;pubsub.googleapis.com/subscriptions/&lt;project-id&gt;/&lt;subscription-name&gt;&quot;
     */
-  var subscription: js.UndefOr[String] = js.native
+  var subscription: js.UndefOr[String] = js.undefined
   
   /**
     * If set, contains a pubsub label from which to extract record timestamps.
     * If left empty, record timestamps will be generated upon arrival.
     */
-  var timestampLabel: js.UndefOr[String] = js.native
+  var timestampLabel: js.UndefOr[String] = js.undefined
   
   /**
     * A pubsub topic, in the form of
     * &quot;pubsub.googleapis.com/topics/&lt;project-id&gt;/&lt;topic-name&gt;&quot;
     */
-  var topic: js.UndefOr[String] = js.native
+  var topic: js.UndefOr[String] = js.undefined
   
   /**
     * If set, specifies the pubsub subscription that will be used for tracking
     * custom time timestamps for watermark estimation.
     */
-  var trackingSubscription: js.UndefOr[String] = js.native
+  var trackingSubscription: js.UndefOr[String] = js.undefined
   
   /**
     * If true, then the client has requested to get pubsub attributes.
     */
-  var withAttributes: js.UndefOr[Boolean] = js.native
+  var withAttributes: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaPubsubLocation {
   

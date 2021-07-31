@@ -2,7 +2,6 @@ package typings.winrt.Windows.Storage.FileProperties
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,8 +11,12 @@ sealed trait ThumbnailType extends StObject
 object ThumbnailType extends StObject {
   
   @js.native
-  sealed trait icon extends ThumbnailType
+  sealed trait icon
+    extends StObject
+       with ThumbnailType
   
   @js.native
-  sealed trait image extends ThumbnailType
+  sealed trait image
+    extends StObject
+       with ThumbnailType
 }

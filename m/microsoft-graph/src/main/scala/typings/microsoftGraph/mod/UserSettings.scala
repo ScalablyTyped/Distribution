@@ -2,17 +2,17 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait UserSettings extends Entity {
+trait UserSettings
+  extends StObject
+     with Entity {
   
-  var contributionToContentDiscoveryAsOrganizationDisabled: js.UndefOr[Boolean] = js.native
+  var contributionToContentDiscoveryAsOrganizationDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var contributionToContentDiscoveryDisabled: js.UndefOr[Boolean] = js.native
+  var contributionToContentDiscoveryDisabled: js.UndefOr[Boolean] = js.undefined
   
-  var shiftPreferences: js.UndefOr[NullableOption[ShiftPreferences]] = js.native
+  var shiftPreferences: js.UndefOr[NullableOption[ShiftPreferences]] = js.undefined
 }
 object UserSettings {
   

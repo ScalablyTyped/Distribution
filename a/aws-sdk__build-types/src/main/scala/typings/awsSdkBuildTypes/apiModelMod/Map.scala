@@ -3,30 +3,29 @@ package typings.awsSdkBuildTypes.apiModelMod
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Map
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with ComplexShape
      with Shape {
   
-  var flattened: js.UndefOr[scala.Boolean] = js.native
+  var flattened: js.UndefOr[scala.Boolean] = js.undefined
   
-  var key: Member = js.native
+  var key: Member
   
   @JSName("type")
-  val type_Map: map = js.native
+  val type_Map: map
   
-  var value: Member = js.native
+  var value: Member
 }
 object Map {
   
   @scala.inline
-  def apply(key: Member, `type`: map, value: Member): Map = {
+  def apply(key: Member, value: Member): Map = {
     val __obj = js.Dynamic.literal(key = key.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("map")
     __obj.asInstanceOf[Map]
   }
   

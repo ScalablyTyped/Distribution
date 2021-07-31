@@ -4,53 +4,53 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait relationshipUpdateRendererParams extends Object {
+trait relationshipUpdateRendererParams
+  extends StObject
+     with Object {
   
   /**
     * The array of colors to be used by the symbols in the uniqueValueInfos of the renderer.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
     */
-  var colors: js.Array[Color_] = js.native
+  var colors: js.Array[Color_]
   
   /**
     * A numeric field used to explore its relationship with `field2`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
     */
-  var field1: relationshipUpdateRendererParamsField1 = js.native
+  var field1: relationshipUpdateRendererParamsField1
   
   /**
     * A numeric field used to explore its relationship with `field1`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
     */
-  var field2: relationshipUpdateRendererParamsField2 = js.native
+  var field2: relationshipUpdateRendererParamsField2
   
   /**
     * Determines the orientation of the [Legend](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Legend.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
     */
-  var focus: js.UndefOr[String] = js.native
+  var focus: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates the number of classes by which to break up the values of each field.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
     */
-  var numClasses: Double = js.native
+  var numClasses: Double
   
   /**
     * The relationship renderer (generated from [createRenderer()](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#createRenderer)) to update with the other parameters provided in this method.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-smartMapping-renderers-relationship.html#updateRenderer)
     */
-  var renderer: UniqueValueRenderer = js.native
+  var renderer: UniqueValueRenderer
 }
 object relationshipUpdateRendererParams {
   

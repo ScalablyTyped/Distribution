@@ -2,15 +2,13 @@ package typings.doubleclickGpt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ChangeCorrelator extends StObject {
     
-    var changeCorrelator: Boolean = js.native
+    var changeCorrelator: Boolean
   }
   object ChangeCorrelator {
     
@@ -28,10 +26,9 @@ object anon {
     }
   }
   
-  @js.native
   trait RestrictDataProcessing extends StObject {
     
-    var restrictDataProcessing: Boolean = js.native
+    var restrictDataProcessing: Boolean
   }
   object RestrictDataProcessing {
     

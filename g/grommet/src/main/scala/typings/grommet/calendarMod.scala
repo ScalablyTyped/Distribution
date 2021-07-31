@@ -20,7 +20,6 @@ import typings.std.HTMLDivElement
 import typings.std.Omit
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object calendarMod {
@@ -30,67 +29,66 @@ object calendarMod {
   @js.native
   class Calendar protected ()
     extends Component[
-          CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+          CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
           ComponentState, 
           js.Any
         ] {
-    def this(props: CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
+    def this(props: CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement])) = this()
     def this(
-      props: CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
+      props: CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]),
       context: js.Any
     ) = this()
   }
   @JSImport("grommet/components/Calendar", "Calendar")
   @js.native
   val Calendar: ComponentClass[
-    CalendarProps with (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
+    CalendarProps & (DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement]), 
     ComponentState
   ] = js.native
   
-  @js.native
   trait CalendarProps extends StObject {
     
-    var a11yTitle: js.UndefOr[A11yTitleType] = js.native
+    var a11yTitle: js.UndefOr[A11yTitleType] = js.undefined
     
-    var alignSelf: js.UndefOr[AlignSelfType] = js.native
+    var alignSelf: js.UndefOr[AlignSelfType] = js.undefined
     
-    var animate: js.UndefOr[AnimateType] = js.native
+    var animate: js.UndefOr[AnimateType] = js.undefined
     
-    var bounds: js.UndefOr[js.Array[String]] = js.native
+    var bounds: js.UndefOr[js.Array[String]] = js.undefined
     
-    var children: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var children: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var date: js.UndefOr[String] = js.native
+    var date: js.UndefOr[String] = js.undefined
     
-    var dates: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+    var dates: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
     
-    var daysOfWeek: js.UndefOr[Boolean] = js.native
+    var daysOfWeek: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[js.Array[String | js.Array[String]]] = js.native
+    var disabled: js.UndefOr[js.Array[String | js.Array[String]]] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var firstDayOfWeek: js.UndefOr[`0` | `1`] = js.native
+    var firstDayOfWeek: js.UndefOr[`0` | `1`] = js.undefined
     
-    var gridArea: js.UndefOr[GridAreaType] = js.native
+    var gridArea: js.UndefOr[GridAreaType] = js.undefined
     
-    var header: js.UndefOr[js.Function1[/* repeated */ js.Any, _]] = js.native
+    var header: js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var margin: js.UndefOr[MarginType] = js.native
+    var margin: js.UndefOr[MarginType] = js.undefined
     
-    var onReference: js.UndefOr[js.Function1[/* reference */ String, Unit]] = js.native
+    var onReference: js.UndefOr[js.Function1[/* reference */ String, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[js.Function1[/* select */ String | js.Array[String], _]] = js.native
+    var onSelect: js.UndefOr[js.Function1[/* select */ String | js.Array[String], js.Any]] = js.undefined
     
-    var range: js.UndefOr[Boolean] = js.native
+    var range: js.UndefOr[Boolean] = js.undefined
     
-    var reference: js.UndefOr[String] = js.native
+    var reference: js.UndefOr[String] = js.undefined
     
-    var showAdjacentDays: js.UndefOr[Boolean] = js.native
+    var showAdjacentDays: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | String] = js.native
+    var size: js.UndefOr[small | medium | large | String] = js.undefined
   }
   object CalendarProps {
     
@@ -131,7 +129,7 @@ object calendarMod {
       def setBoundsVarargs(value: String*): Self = StObject.set(x, "bounds", js.Array(value :_*))
       
       @scala.inline
-      def setChildren(value: /* repeated */ js.Any => _): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
+      def setChildren(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "children", js.Any.fromFunction1(value))
       
       @scala.inline
       def setChildrenUndefined: Self = StObject.set(x, "children", js.undefined)
@@ -185,7 +183,7 @@ object calendarMod {
       def setGridAreaUndefined: Self = StObject.set(x, "gridArea", js.undefined)
       
       @scala.inline
-      def setHeader(value: /* repeated */ js.Any => _): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
+      def setHeader(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "header", js.Any.fromFunction1(value))
       
       @scala.inline
       def setHeaderUndefined: Self = StObject.set(x, "header", js.undefined)
@@ -209,7 +207,7 @@ object calendarMod {
       def setOnReferenceUndefined: Self = StObject.set(x, "onReference", js.undefined)
       
       @scala.inline
-      def setOnSelect(value: /* select */ String | js.Array[String] => _): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
+      def setOnSelect(value: /* select */ String | js.Array[String] => js.Any): Self = StObject.set(x, "onSelect", js.Any.fromFunction1(value))
       
       @scala.inline
       def setOnSelectUndefined: Self = StObject.set(x, "onSelect", js.undefined)
@@ -240,5 +238,5 @@ object calendarMod {
     }
   }
   
-  type CalendarType = CalendarProps with (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], onSelect])
+  type CalendarType = CalendarProps & (Omit[DetailedHTMLProps[HTMLAttributes[HTMLDivElement], HTMLDivElement], onSelect])
 }

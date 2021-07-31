@@ -6,51 +6,49 @@ import typings.typeorm.metadataEntityMetadataMod.EntityMetadata
 import typings.typeorm.queryRunnerQueryRunnerMod.QueryRunner
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventRemoveEventMod {
   
-  @js.native
   trait RemoveEvent[Entity] extends StObject {
     
     /**
       * Connection used in the event.
       */
-    var connection: Connection = js.native
+    var connection: Connection
     
     /**
       * Database representation of entity that is being removed.
       */
-    var databaseEntity: Entity = js.native
+    var databaseEntity: Entity
     
     /**
       * Entity that is being removed.
       * This may absent if entity is removed without being loaded (for examples by cascades).
       */
-    var entity: js.UndefOr[Entity] = js.native
+    var entity: js.UndefOr[Entity] = js.undefined
     
     /**
       * Id or ids of the entity that is being removed.
       */
-    var entityId: js.UndefOr[js.Any] = js.native
+    var entityId: js.UndefOr[js.Any] = js.undefined
     
     /**
       * EntityManager used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this entity manager instance.
       */
-    var manager: EntityManager = js.native
+    var manager: EntityManager
     
     /**
       * Metadata of the entity.
       */
-    var metadata: EntityMetadata = js.native
+    var metadata: EntityMetadata
     
     /**
       * QueryRunner used in the event transaction.
       * All database operations in the subscribed event listener should be performed using this query runner instance.
       */
-    var queryRunner: QueryRunner = js.native
+    var queryRunner: QueryRunner
   }
   object RemoveEvent {
     
@@ -67,7 +65,7 @@ object eventRemoveEventMod {
     }
     
     @scala.inline
-    implicit class RemoveEventMutableBuilder[Self <: RemoveEvent[_], Entity] (val x: Self with RemoveEvent[Entity]) extends AnyVal {
+    implicit class RemoveEventMutableBuilder[Self <: RemoveEvent[?], Entity] (val x: Self & RemoveEvent[Entity]) extends AnyVal {
       
       @scala.inline
       def setConnection(value: Connection): Self = StObject.set(x, "connection", value.asInstanceOf[js.Any])

@@ -2,17 +2,15 @@ package typings.ipfsHttpServer.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxBytes extends StObject {
   
-  var maxBytes: Double = js.native
+  var maxBytes: Double
   
-  var output: String = js.native
+  var output: String
   
-  var parse: Boolean = js.native
+  var parse: Boolean
 }
 object MaxBytes {
   

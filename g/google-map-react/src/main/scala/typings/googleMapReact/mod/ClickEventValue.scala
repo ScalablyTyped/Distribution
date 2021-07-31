@@ -2,15 +2,14 @@ package typings.googleMapReact.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClickEventValue
-  extends Point
+  extends StObject
+     with Point
      with Coords {
   
-  var event: js.Any = js.native
+  var event: js.Any
 }
 object ClickEventValue {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsLambdaLayerVersionDetails extends StObject {
   
   /**
     * The layer's compatible runtimes. Maximum number of five items. Valid values: nodejs10.x | nodejs12.x | java8 | java11 | python2.7 | python3.6 | python3.7 | python3.8 | dotnetcore1.0 | dotnetcore2.1 | go1.x | ruby2.5 | provided 
     */
-  var CompatibleRuntimes: js.UndefOr[NonEmptyStringList] = js.native
+  var CompatibleRuntimes: js.UndefOr[NonEmptyStringList] = js.undefined
   
   /**
     * Indicates when the version was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreatedDate: js.UndefOr[NonEmptyString] = js.native
+  var CreatedDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The version number.
     */
-  var Version: js.UndefOr[AwsLambdaLayerVersionNumber] = js.native
+  var Version: js.UndefOr[AwsLambdaLayerVersionNumber] = js.undefined
 }
 object AwsLambdaLayerVersionDetails {
   

@@ -3,17 +3,15 @@ package typings.awesomplete
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Label extends StObject {
     
-    var label: String | js.Any = js.native
+    var label: String | js.Any
     
-    var value: String | js.Any = js.native
+    var value: String | js.Any
   }
   object Label {
     
@@ -34,10 +32,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Replace extends StObject {
     
-    def replace(arg0: RegExp, arg1: String): Unit = js.native
+    def replace(arg0: RegExp, arg1: String): Unit
   }
   object Replace {
     
@@ -55,12 +52,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Value extends StObject {
     
-    var label: String = js.native
+    var label: String
     
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object Value {
     

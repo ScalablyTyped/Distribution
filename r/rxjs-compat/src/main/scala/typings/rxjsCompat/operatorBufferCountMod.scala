@@ -2,15 +2,16 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object operatorBufferCountMod {
   
-  @JSImport("rxjs-compat/operator/bufferCount", "bufferCount")
+  @JSImport("rxjs-compat/operator/bufferCount", JSImport.Namespace)
   @js.native
-  def bufferCount[T](bufferSize: Double): js.Any = js.native
-  @JSImport("rxjs-compat/operator/bufferCount", "bufferCount")
-  @js.native
-  def bufferCount[T](bufferSize: Double, startBufferEvery: Double): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def bufferCount[T](bufferSize: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("bufferCount")(bufferSize.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def bufferCount[T](bufferSize: Double, startBufferEvery: Double): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("bufferCount")(bufferSize.asInstanceOf[js.Any], startBufferEvery.asInstanceOf[js.Any])).asInstanceOf[js.Any]
 }

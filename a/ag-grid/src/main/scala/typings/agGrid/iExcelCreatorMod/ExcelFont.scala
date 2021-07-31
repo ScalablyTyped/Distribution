@@ -2,35 +2,33 @@ package typings.agGrid.iExcelCreatorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ExcelFont extends StObject {
   
-  var bold: Boolean = js.native
+  var bold: Boolean
   
-  var charSet: Double = js.native
+  var charSet: Double
   
-  var color: String = js.native
+  var color: String
   
-  var family: String = js.native
+  var family: String
   
-  var fontName: String = js.native
+  var fontName: String
   
-  var italic: Boolean = js.native
+  var italic: Boolean
   
-  var outline: Boolean = js.native
+  var outline: Boolean
   
-  var shadow: Boolean = js.native
+  var shadow: Boolean
   
-  var size: Double = js.native
+  var size: Double
   
-  var strikeThrough: Boolean = js.native
+  var strikeThrough: Boolean
   
-  var underline: String = js.native
+  var underline: String
   
-  var verticalAlign: String = js.native
+  var verticalAlign: String
 }
 object ExcelFont {
   

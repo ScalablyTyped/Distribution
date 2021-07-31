@@ -6,26 +6,24 @@ import typings.reactNavigation.reactNavigationStrings.fade
 import typings.reactNavigation.reactNavigationStrings.slide
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<react-native.react-native.StatusBarProps> */
-@js.native
 trait ReadonlyStatusBarProps extends StObject {
   
-  val animated: js.UndefOr[Boolean] = js.native
+  val animated: js.UndefOr[Boolean] = js.undefined
   
-  val backgroundColor: js.UndefOr[ColorValue] = js.native
+  val backgroundColor: js.UndefOr[ColorValue] = js.undefined
   
-  val barStyle: js.UndefOr[StatusBarStyle] = js.native
+  val barStyle: js.UndefOr[StatusBarStyle] = js.undefined
   
-  val hidden: js.UndefOr[Boolean] = js.native
+  val hidden: js.UndefOr[Boolean] = js.undefined
   
-  val networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.native
+  val networkActivityIndicatorVisible: js.UndefOr[Boolean] = js.undefined
   
-  val showHideTransition: js.UndefOr[fade | slide] = js.native
+  val showHideTransition: js.UndefOr[fade | slide] = js.undefined
   
-  val translucent: js.UndefOr[Boolean] = js.native
+  val translucent: js.UndefOr[Boolean] = js.undefined
 }
 object ReadonlyStatusBarProps {
   

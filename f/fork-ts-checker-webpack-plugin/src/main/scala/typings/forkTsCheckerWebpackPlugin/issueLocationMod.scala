@@ -3,34 +3,31 @@ package typings.forkTsCheckerWebpackPlugin
 import typings.forkTsCheckerWebpackPlugin.issuePositionMod.IssuePosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issueLocationMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueLocation", "compareIssueLocations")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueLocation", JSImport.Namespace)
   @js.native
-  def compareIssueLocations(): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueLocation", "compareIssueLocations")
-  @js.native
-  def compareIssueLocations(locationA: js.UndefOr[scala.Nothing], locationB: IssueLocation): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueLocation", "compareIssueLocations")
-  @js.native
-  def compareIssueLocations(locationA: IssueLocation): Double = js.native
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueLocation", "compareIssueLocations")
-  @js.native
-  def compareIssueLocations(locationA: IssueLocation, locationB: IssueLocation): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/issue/IssueLocation", "formatIssueLocation")
-  @js.native
-  def formatIssueLocation(location: IssueLocation): String = js.native
+  @scala.inline
+  def compareIssueLocations(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")().asInstanceOf[Double]
+  @scala.inline
+  def compareIssueLocations(locationA: Unit, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def compareIssueLocations(locationA: IssueLocation): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def compareIssueLocations(locationA: IssueLocation, locationB: IssueLocation): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("compareIssueLocations")(locationA.asInstanceOf[js.Any], locationB.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @js.native
+  @scala.inline
+  def formatIssueLocation(location: IssueLocation): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatIssueLocation")(location.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait IssueLocation extends StObject {
     
-    var end: IssuePosition = js.native
+    var end: IssuePosition
     
-    var start: IssuePosition = js.native
+    var start: IssuePosition
   }
   object IssueLocation {
     

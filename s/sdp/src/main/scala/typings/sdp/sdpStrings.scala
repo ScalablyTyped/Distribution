@@ -3,7 +3,6 @@ package typings.sdp
 import typings.sdp.mod.SDPDirection
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sdpStrings {
@@ -14,7 +13,9 @@ object sdpStrings {
   def host: host = "host".asInstanceOf[host]
   
   @js.native
-  sealed trait inactive extends SDPDirection
+  sealed trait inactive
+    extends StObject
+       with SDPDirection
   @scala.inline
   def inactive: inactive = "inactive".asInstanceOf[inactive]
   
@@ -24,7 +25,9 @@ object sdpStrings {
   def prflx: prflx = "prflx".asInstanceOf[prflx]
   
   @js.native
-  sealed trait recvonly extends SDPDirection
+  sealed trait recvonly
+    extends StObject
+       with SDPDirection
   @scala.inline
   def recvonly: recvonly = "recvonly".asInstanceOf[recvonly]
   
@@ -44,12 +47,16 @@ object sdpStrings {
   def rtp: rtp = "rtp".asInstanceOf[rtp]
   
   @js.native
-  sealed trait sendonly extends SDPDirection
+  sealed trait sendonly
+    extends StObject
+       with SDPDirection
   @scala.inline
   def sendonly: sendonly = "sendonly".asInstanceOf[sendonly]
   
   @js.native
-  sealed trait sendrecv extends SDPDirection
+  sealed trait sendrecv
+    extends StObject
+       with SDPDirection
   @scala.inline
   def sendrecv: sendrecv = "sendrecv".asInstanceOf[sendrecv]
   

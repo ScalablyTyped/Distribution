@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2BatchDeleteEntityTypesRequest extends StObject {
   
   /** Required. The names entity types to delete. All names must point to the same agent as `parent`. */
-  var entityTypeNames: js.UndefOr[js.Array[String]] = js.native
+  var entityTypeNames: js.UndefOr[js.Array[String]] = js.undefined
 }
 object GoogleCloudDialogflowV2BatchDeleteEntityTypesRequest {
   

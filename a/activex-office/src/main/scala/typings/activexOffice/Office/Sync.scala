@@ -3,38 +3,36 @@ package typings.activexOffice.Office
 import typings.std.VarDate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Sync extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val ErrorType: MsoSyncErrorType = js.native
+  val ErrorType: MsoSyncErrorType
   
-  def GetUpdate(): Unit = js.native
+  def GetUpdate(): Unit
   
-  val LastSyncTime: VarDate = js.native
+  val LastSyncTime: VarDate
   
   @JSName("Office.Sync_typekey")
-  var OfficeDotSync_typekey: Sync = js.native
+  var OfficeDotSync_typekey: Sync
   
-  def OpenVersion(SyncVersionType: MsoSyncVersionType): Unit = js.native
+  def OpenVersion(SyncVersionType: MsoSyncVersionType): Unit
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def PutUpdate(): Unit = js.native
+  def PutUpdate(): Unit
   
-  def ResolveConflict(SyncConflictResolution: MsoSyncConflictResolutionType): Unit = js.native
+  def ResolveConflict(SyncConflictResolution: MsoSyncConflictResolutionType): Unit
   
-  val Status: MsoSyncStatusType = js.native
+  val Status: MsoSyncStatusType
   
-  def Unsuspend(): Unit = js.native
+  def Unsuspend(): Unit
   
-  val WorkspaceLastChangedBy: String = js.native
+  val WorkspaceLastChangedBy: String
 }
 object Sync {
   

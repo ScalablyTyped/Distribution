@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Script
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,12 +15,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * all cases, scripts should call ScriptApp.getAuthorizationInfo(ScriptApp.AuthMode.FULL),
   * since no other authorization mode requires that users grant authorization.
   */
-@js.native
 trait AuthorizationInfo extends StObject {
   
-  def getAuthorizationStatus(): AuthorizationStatus = js.native
+  def getAuthorizationStatus(): AuthorizationStatus
   
-  def getAuthorizationUrl(): String = js.native
+  def getAuthorizationUrl(): String
 }
 object AuthorizationInfo {
   

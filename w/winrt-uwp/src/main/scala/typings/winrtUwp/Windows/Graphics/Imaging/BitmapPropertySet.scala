@@ -5,7 +5,6 @@ import typings.winrtUwp.Windows.Foundation.Collections.IKeyValuePair
 import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a property set of BitmapTypedValue objects. */
@@ -19,7 +18,7 @@ trait BitmapPropertySet extends StObject {
     * Returns an iterator to enumerate the items in the property set.
     * @return The iterator. The current position of the iterator is index 0, or the end of the property set if the property set is empty.
     */
-  def first(): IIterator[IKeyValuePair[_, _]] = js.native
+  def first(): IIterator[IKeyValuePair[js.Any, js.Any]] = js.native
   
   /**
     * Gets an immutable view of the property set.

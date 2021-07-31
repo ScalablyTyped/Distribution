@@ -3,17 +3,15 @@ package typings.documentdb.mod
 import typings.documentdb.anon.Condition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RequestOptions extends StObject {
   
   /** Conditions Associated with the request. */
-  var accessCondition: js.UndefOr[Condition] = js.native
+  var accessCondition: js.UndefOr[Condition] = js.undefined
   
   /** Consistency level required by the client. */
-  var consistencyLevel: js.UndefOr[String] = js.native
+  var consistencyLevel: js.UndefOr[String] = js.undefined
   
   /**
     * Allow execution across multiple partitions
@@ -21,13 +19,13 @@ trait RequestOptions extends StObject {
     * If the collection is partitioned, this must be set to True unless the query filters against a single partition key
     * or if the collection has only a single partition.
     */
-  var enableCrossPartitionQuery: js.UndefOr[Boolean] = js.native
+  var enableCrossPartitionQuery: js.UndefOr[Boolean] = js.undefined
   
   /** Specifies indexing directives (index, do not index ..etc). */
-  var indexingDirective: js.UndefOr[String] = js.native
+  var indexingDirective: js.UndefOr[String] = js.undefined
   
   /** If true, parallelize cross-partition queries */
-  var maxDegreeOfParallelism: js.UndefOr[Boolean] = js.native
+  var maxDegreeOfParallelism: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The user-specified throughput when creating document collections.
@@ -39,32 +37,32 @@ trait RequestOptions extends StObject {
     *
     * One of x-ms-offer-throughput or x-ms-offer-type must be specified. Both headers cannot be specified together.
     */
-  var offerThroughput: js.UndefOr[Double] = js.native
+  var offerThroughput: js.UndefOr[Double] = js.undefined
   
   /** Offer type when creating document collections. */
-  var offerType: js.UndefOr[String] = js.native
+  var offerType: js.UndefOr[String] = js.undefined
   
   /**
     * The partition key value for the requested document or attachment operation.
     *
     * Required for operations against documents and attachments when the collection definition includes a partition key definition.
     */
-  var partitionKey: js.UndefOr[String | js.Array[String]] = js.native
+  var partitionKey: js.UndefOr[String | js.Array[String]] = js.undefined
   
   /** If true, populate quota in response */
-  var populateQuotaInfo: js.UndefOr[Boolean] = js.native
+  var populateQuotaInfo: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates what is the post trigger to be invoked after the operation. */
-  var postTriggerInclude: js.UndefOr[String] = js.native
+  var postTriggerInclude: js.UndefOr[String] = js.undefined
   
   /** Indicates what is the pre trigger to be invoked before the operation. */
-  var preTriggerInclude: js.UndefOr[String] = js.native
+  var preTriggerInclude: js.UndefOr[String] = js.undefined
   
   /** Expiry time (in seconds) for resource token associated with permission (applicable only for requests on permissions). */
-  var resourceTokenExpirySeconds: js.UndefOr[Double] = js.native
+  var resourceTokenExpirySeconds: js.UndefOr[Double] = js.undefined
   
   /** Token for use with Session consistency. */
-  var sessionToken: js.UndefOr[String] = js.native
+  var sessionToken: js.UndefOr[String] = js.undefined
 }
 object RequestOptions {
   

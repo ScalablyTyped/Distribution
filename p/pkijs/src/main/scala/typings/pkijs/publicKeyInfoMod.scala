@@ -5,53 +5,79 @@ import typings.std.CryptoKey
 import typings.std.JsonWebKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object publicKeyInfoMod {
   
   @JSImport("pkijs/src/PublicKeyInfo", JSImport.Default)
   @js.native
-  class default () extends PublicKeyInfo {
+  class default ()
+    extends StObject
+       with PublicKeyInfo {
     def this(params: js.Any) = this()
-  }
-  /* static members */
-  object default {
     
-    @JSImport("pkijs/src/PublicKeyInfo", "default.defaultValues")
-    @js.native
-    def defaultValues(memberName: String): js.Any = js.native
-    
-    @JSImport("pkijs/src/PublicKeyInfo", "default.schema")
-    @js.native
-    def schema(): js.Any = js.native
-    @JSImport("pkijs/src/PublicKeyInfo", "default.schema")
-    @js.native
-    def schema(parameters: js.Any): js.Any = js.native
-  }
-  
-  @js.native
-  trait PublicKeyInfo extends StObject {
-    
+    /* CompleteClass */
     var algorithm: typings.pkijs.algorithmIdentifierMod.default = js.native
     
     /**
       * Convert JSON value into current object
       * @param {JsonWebKey} json
       */
-    def fromJSON(json: JsonWebKey): Unit = js.native
+    /* CompleteClass */
+    override def fromJSON(json: JsonWebKey): Unit = js.native
     
-    def fromSchema(schema: js.Any): Unit = js.native
+    /* CompleteClass */
+    override def fromSchema(schema: js.Any): Unit = js.native
     
-    def importKey(publicKey: CryptoKey): js.Thenable[Unit] = js.native
+    /* CompleteClass */
+    override def importKey(publicKey: CryptoKey): js.Thenable[Unit] = js.native
     
-    var parsedKey: js.UndefOr[typings.pkijs.ecpublickeyMod.default | typings.pkijs.rsapublickeyMod.default] = js.native
-    
+    /* CompleteClass */
     var subjectPublicKey: BitString = js.native
     
-    def toJSON(): js.Any = js.native
+    /* CompleteClass */
+    override def toJSON(): js.Any = js.native
     
-    def toSchema(): js.Any = js.native
+    /* CompleteClass */
+    override def toSchema(): js.Any = js.native
+  }
+  /* static members */
+  object default {
+    
+    @JSImport("pkijs/src/PublicKeyInfo", JSImport.Default)
+    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def defaultValues(memberName: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultValues")(memberName.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def schema(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")().asInstanceOf[js.Any]
+    @scala.inline
+    def schema(parameters: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("schema")(parameters.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  }
+  
+  trait PublicKeyInfo extends StObject {
+    
+    var algorithm: typings.pkijs.algorithmIdentifierMod.default
+    
+    /**
+      * Convert JSON value into current object
+      * @param {JsonWebKey} json
+      */
+    def fromJSON(json: JsonWebKey): Unit
+    
+    def fromSchema(schema: js.Any): Unit
+    
+    def importKey(publicKey: CryptoKey): js.Thenable[Unit]
+    
+    var parsedKey: js.UndefOr[typings.pkijs.ecpublickeyMod.default | typings.pkijs.rsapublickeyMod.default] = js.undefined
+    
+    var subjectPublicKey: BitString
+    
+    def toJSON(): js.Any
+    
+    def toSchema(): js.Any
   }
   object PublicKeyInfo {
     

@@ -2,31 +2,29 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxGetObjectOptions.
   */
-@js.native
 trait INxGetObjectOptions extends StObject {
   
   /**
     * Set of data.
     */
-  var qData: js.Any = js.native
+  var qData: js.Any
   
   /**
     * Set to true to include session objects.
     *
     * Default: false
     */
-  var qIncludeSessionObjects: Boolean = js.native
+  var qIncludeSessionObjects: Boolean
   
   /**
     * List of object types..
     */
-  var qTypes: js.Array[String] = js.native
+  var qTypes: js.Array[String]
 }
 object INxGetObjectOptions {
   

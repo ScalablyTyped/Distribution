@@ -6,17 +6,15 @@ import typings.std.RequestInit
 import typings.std.Response
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.UndefOr[`false`] = js.native
+    var error: js.UndefOr[`false`] = js.undefined
     
-    var `type`: String | js.Symbol = js.native
+    var `type`: String | js.Symbol
   }
   object Error {
     
@@ -48,10 +46,9 @@ object anon {
     def apply(input: RequestInfo, init: RequestInit): js.Promise[Response] = js.native
   }
   
-  @js.native
   trait MetaMeta[Meta] extends StObject {
     
-    var meta: Meta = js.native
+    var meta: Meta
   }
   object MetaMeta {
     
@@ -62,17 +59,16 @@ object anon {
     }
     
     @scala.inline
-    implicit class MetaMetaMutableBuilder[Self <: MetaMeta[_], Meta] (val x: Self with MetaMeta[Meta]) extends AnyVal {
+    implicit class MetaMetaMutableBuilder[Self <: MetaMeta[?], Meta] (val x: Self & MetaMeta[Meta]) extends AnyVal {
       
       @scala.inline
       def setMeta(value: Meta): Self = StObject.set(x, "meta", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait PayloadPayload[Payload] extends StObject {
     
-    var payload: Payload = js.native
+    var payload: Payload
   }
   object PayloadPayload {
     
@@ -83,7 +79,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class PayloadPayloadMutableBuilder[Self <: PayloadPayload[_], Payload] (val x: Self with PayloadPayload[Payload]) extends AnyVal {
+    implicit class PayloadPayloadMutableBuilder[Self <: PayloadPayload[?], Payload] (val x: Self & PayloadPayload[Payload]) extends AnyVal {
       
       @scala.inline
       def setPayload(value: Payload): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])

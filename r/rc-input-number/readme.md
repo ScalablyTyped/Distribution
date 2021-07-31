@@ -10,9 +10,9 @@ React input-number component
 | ------------------ | :-------------: |
 | Full name          | rc-input-number |
 | Keywords           | react, react-component, react-input-number, input-number |
-| # releases         | 35 |
-| # dependents       | 256 |
-| # downloads        | 18920226 |
+| # releases         | 33 |
+| # dependents       | 267 |
+| # downloads        | 24909212 |
 | # stars            | 1 |
 
 ## Links

@@ -3,186 +3,184 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for User object in Directory API.
   */
-@js.native
 trait SchemaUser extends StObject {
   
-  var addresses: js.UndefOr[js.Any] = js.native
+  var addresses: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Indicates if user has agreed to terms (Read-only)
     */
-  var agreedToTerms: js.UndefOr[Boolean] = js.native
+  var agreedToTerms: js.UndefOr[Boolean] = js.undefined
   
   /**
     * List of aliases (Read-only)
     */
-  var aliases: js.UndefOr[js.Array[String]] = js.native
+  var aliases: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Indicates if user is archived.
     */
-  var archived: js.UndefOr[Boolean] = js.native
+  var archived: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Boolean indicating if the user should change password in next login
     */
-  var changePasswordAtNextLogin: js.UndefOr[Boolean] = js.native
+  var changePasswordAtNextLogin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * User&#39;s G Suite account creation time. (Read-only)
     */
-  var creationTime: js.UndefOr[String] = js.native
+  var creationTime: js.UndefOr[String] = js.undefined
   
   /**
     * Custom fields of the user.
     */
-  var customSchemas: js.UndefOr[StringDictionary[SchemaUserCustomProperties]] = js.native
+  var customSchemas: js.UndefOr[StringDictionary[SchemaUserCustomProperties]] = js.undefined
   
   /**
     * CustomerId of User (Read-only)
     */
-  var customerId: js.UndefOr[String] = js.native
+  var customerId: js.UndefOr[String] = js.undefined
   
-  var deletionTime: js.UndefOr[String] = js.native
+  var deletionTime: js.UndefOr[String] = js.undefined
   
-  var emails: js.UndefOr[js.Any] = js.native
+  var emails: js.UndefOr[js.Any] = js.undefined
   
   /**
     * ETag of the resource.
     */
-  var etag: js.UndefOr[String] = js.native
+  var etag: js.UndefOr[String] = js.undefined
   
-  var externalIds: js.UndefOr[js.Any] = js.native
+  var externalIds: js.UndefOr[js.Any] = js.undefined
   
-  var gender: js.UndefOr[js.Any] = js.native
+  var gender: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Hash function name for password. Supported are MD5, SHA-1 and crypt
     */
-  var hashFunction: js.UndefOr[String] = js.native
+  var hashFunction: js.UndefOr[String] = js.undefined
   
   /**
     * Unique identifier of User (Read-only)
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var ims: js.UndefOr[js.Any] = js.native
+  var ims: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Boolean indicating if user is included in Global Address List
     */
-  var includeInGlobalAddressList: js.UndefOr[Boolean] = js.native
+  var includeInGlobalAddressList: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Boolean indicating if ip is whitelisted
     */
-  var ipWhitelisted: js.UndefOr[Boolean] = js.native
+  var ipWhitelisted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Boolean indicating if the user is admin (Read-only)
     */
-  var isAdmin: js.UndefOr[Boolean] = js.native
+  var isAdmin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Boolean indicating if the user is delegated admin (Read-only)
     */
-  var isDelegatedAdmin: js.UndefOr[Boolean] = js.native
+  var isDelegatedAdmin: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is 2-step verification enforced (Read-only)
     */
-  var isEnforcedIn2Sv: js.UndefOr[Boolean] = js.native
+  var isEnforcedIn2Sv: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is enrolled in 2-step verification (Read-only)
     */
-  var isEnrolledIn2Sv: js.UndefOr[Boolean] = js.native
+  var isEnrolledIn2Sv: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Is mailbox setup (Read-only)
     */
-  var isMailboxSetup: js.UndefOr[Boolean] = js.native
+  var isMailboxSetup: js.UndefOr[Boolean] = js.undefined
   
-  var keywords: js.UndefOr[js.Any] = js.native
+  var keywords: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Kind of resource this is.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
-  var languages: js.UndefOr[js.Any] = js.native
+  var languages: js.UndefOr[js.Any] = js.undefined
   
   /**
     * User&#39;s last login time. (Read-only)
     */
-  var lastLoginTime: js.UndefOr[String] = js.native
+  var lastLoginTime: js.UndefOr[String] = js.undefined
   
-  var locations: js.UndefOr[js.Any] = js.native
+  var locations: js.UndefOr[js.Any] = js.undefined
   
   /**
     * User&#39;s name
     */
-  var name: js.UndefOr[SchemaUserName] = js.native
+  var name: js.UndefOr[SchemaUserName] = js.undefined
   
   /**
     * List of non editable aliases (Read-only)
     */
-  var nonEditableAliases: js.UndefOr[js.Array[String]] = js.native
+  var nonEditableAliases: js.UndefOr[js.Array[String]] = js.undefined
   
-  var notes: js.UndefOr[js.Any] = js.native
+  var notes: js.UndefOr[js.Any] = js.undefined
   
   /**
     * OrgUnit of User
     */
-  var orgUnitPath: js.UndefOr[String] = js.native
+  var orgUnitPath: js.UndefOr[String] = js.undefined
   
-  var organizations: js.UndefOr[js.Any] = js.native
+  var organizations: js.UndefOr[js.Any] = js.undefined
   
   /**
     * User&#39;s password
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var phones: js.UndefOr[js.Any] = js.native
+  var phones: js.UndefOr[js.Any] = js.undefined
   
-  var posixAccounts: js.UndefOr[js.Any] = js.native
+  var posixAccounts: js.UndefOr[js.Any] = js.undefined
   
   /**
     * username of User
     */
-  var primaryEmail: js.UndefOr[String] = js.native
+  var primaryEmail: js.UndefOr[String] = js.undefined
   
-  var relations: js.UndefOr[js.Any] = js.native
+  var relations: js.UndefOr[js.Any] = js.undefined
   
-  var sshPublicKeys: js.UndefOr[js.Any] = js.native
+  var sshPublicKeys: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Indicates if user is suspended.
     */
-  var suspended: js.UndefOr[Boolean] = js.native
+  var suspended: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Suspension reason if user is suspended (Read-only)
     */
-  var suspensionReason: js.UndefOr[String] = js.native
+  var suspensionReason: js.UndefOr[String] = js.undefined
   
   /**
     * ETag of the user&#39;s photo (Read-only)
     */
-  var thumbnailPhotoEtag: js.UndefOr[String] = js.native
+  var thumbnailPhotoEtag: js.UndefOr[String] = js.undefined
   
   /**
     * Photo Url of the user (Read-only)
     */
-  var thumbnailPhotoUrl: js.UndefOr[String] = js.native
+  var thumbnailPhotoUrl: js.UndefOr[String] = js.undefined
   
-  var websites: js.UndefOr[js.Any] = js.native
+  var websites: js.UndefOr[js.Any] = js.undefined
 }
 object SchemaUser {
   

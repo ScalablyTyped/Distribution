@@ -21,30 +21,29 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-datepicker", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-datepicker", JSImport.Default)
   @js.native
   class default () extends ReactDatePicker
   
-  @JSImport("react-datepicker", "CalendarContainer")
-  @js.native
-  def CalendarContainer(className: String, children: js.Array[ReactNode], showPopperArrow: Boolean, arrowProps: js.Object): ReactNode = js.native
+  @scala.inline
+  def CalendarContainer(className: String, children: js.Array[ReactNode], showPopperArrow: Boolean, arrowProps: js.Object): ReactNode = (^.asInstanceOf[js.Dynamic].applyDynamic("CalendarContainer")(className.asInstanceOf[js.Any], children.asInstanceOf[js.Any], showPopperArrow.asInstanceOf[js.Any], arrowProps.asInstanceOf[js.Any])).asInstanceOf[ReactNode]
   
-  @JSImport("react-datepicker", "getDefaultLocale")
-  @js.native
-  def getDefaultLocale(): String = js.native
+  @scala.inline
+  def getDefaultLocale(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDefaultLocale")().asInstanceOf[String]
   
-  @JSImport("react-datepicker", "registerLocale")
-  @js.native
-  def registerLocale(localeName: String, localeData: js.Object): Unit = js.native
+  @scala.inline
+  def registerLocale(localeName: String, localeData: js.Object): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLocale")(localeName.asInstanceOf[js.Any], localeData.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("react-datepicker", "setDefaultLocale")
-  @js.native
-  def setDefaultLocale(localeName: String): Unit = js.native
+  @scala.inline
+  def setDefaultLocale(localeName: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultLocale")(localeName.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type HighlightDates = StringDictionary[js.Array[Date]]
   
@@ -175,10 +174,10 @@ object mod {
     
     def onChange(): Unit = js.native
     def onChange(date: js.Tuple2[Date, Date]): Unit = js.native
-    def onChange(date: js.Tuple2[Date, Date], event: SyntheticEvent[_, Event]): Unit = js.native
-    def onChange(date: Null, event: SyntheticEvent[_, Event]): Unit = js.native
+    def onChange(date: js.Tuple2[Date, Date], event: SyntheticEvent[js.Any, Event]): Unit = js.native
+    def onChange(date: Null, event: SyntheticEvent[js.Any, Event]): Unit = js.native
     def onChange(date: Date): Unit = js.native
-    def onChange(date: Date, event: SyntheticEvent[_, Event]): Unit = js.native
+    def onChange(date: Date, event: SyntheticEvent[js.Any, Event]): Unit = js.native
     
     var onChangeRaw: js.UndefOr[js.Function1[/* event */ FocusEvent[HTMLInputElement], Unit]] = js.native
     
@@ -199,14 +198,14 @@ object mod {
     var onMonthMouseLeave: js.UndefOr[js.Function0[Unit]] = js.native
     
     var onSelect: js.UndefOr[
-        js.Function2[/* date */ Date, /* event */ js.UndefOr[SyntheticEvent[_, Event]], Unit]
+        js.Function2[/* date */ Date, /* event */ js.UndefOr[SyntheticEvent[js.Any, Event]], Unit]
       ] = js.native
     
     var onWeekSelect: js.UndefOr[
         js.Function3[
           /* firstDayOfWeek */ Date, 
           /* weekNumber */ String | Double, 
-          /* event */ js.UndefOr[SyntheticEvent[_, Event]], 
+          /* event */ js.UndefOr[SyntheticEvent[js.Any, Event]], 
           Unit
         ]
       ] = js.native

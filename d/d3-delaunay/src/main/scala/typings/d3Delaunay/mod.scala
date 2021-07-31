@@ -17,7 +17,6 @@ import typings.std.IterableIterator
 import typings.std.Uint32Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -81,7 +80,7 @@ object mod {
       * Renders the edges of the Delaunay triangulation to the specified context.
       * The specified context must implement the context.moveTo and context.lineTo methods from the CanvasPathMethods API.
       */
-    def render(context: MoveContext with LineContext): Unit = js.native
+    def render(context: MoveContext & LineContext): Unit = js.native
     
     /**
       * Renders the convex hull of the Delaunay triangulation to an SVG path string.
@@ -91,7 +90,7 @@ object mod {
       * Renders the convex hull of the Delaunay triangulation to the specified context.
       * The specified context must implement the context.moveTo and context.lineTo methods from the CanvasPathMethods API.
       */
-    def renderHull(context: MoveContext with LineContext): Unit = js.native
+    def renderHull(context: MoveContext & LineContext): Unit = js.native
     
     /**
       * Renders the input points of the Delaunay triangulation to an SVG path string as circles with radius 2.
@@ -102,12 +101,12 @@ object mod {
       * If radius is not specified, it defaults to 2.
       * The specified context must implement the context.moveTo and context.arc methods from the CanvasPathMethods API.
       */
-    def renderPoints(context: MoveContext with ArcContext): Unit = js.native
-    def renderPoints(context: MoveContext with ArcContext, radius: Double): Unit = js.native
+    def renderPoints(context: MoveContext & ArcContext): Unit = js.native
+    def renderPoints(context: MoveContext & ArcContext, radius: Double): Unit = js.native
     /**
       * Renders the input points of the Delaunay triangulation to an SVG path string as circles with the specified radius.
       */
-    def renderPoints(context: js.UndefOr[scala.Nothing], radius: Double): String = js.native
+    def renderPoints(context: Unit, radius: Double): String = js.native
     
     /**
       * Renders triangle i of the Delaunay triangulation to an SVG path string.
@@ -117,7 +116,7 @@ object mod {
       * Renders triangle i of the Delaunay triangulation to the specified context.
       * The specified context must implement the context.moveTo, context.lineTo and context.closePath methods from the CanvasPathMethods API.
       */
-    def renderTriangle(i: Double, context: MoveContext with LineContext with ClosableContext): Unit = js.native
+    def renderTriangle(i: Double, context: MoveContext & LineContext & ClosableContext): Unit = js.native
     
     /**
       * Returns the closed polygon [[x0, y0], [x1, y1], [x2, y2], [x0, y0]] representing the triangle i.
@@ -153,51 +152,49 @@ object mod {
   /* static members */
   object Delaunay {
     
+    @JSImport("d3-delaunay", "Delaunay")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Returns the Delaunay triangulation for the given array or iterable of points where each point is an array in the form: [x, y].
       */
-    @JSImport("d3-delaunay", "Delaunay.from")
-    @js.native
-    def from(points: ArrayLike[Point]): Delaunay[Point] = js.native
-    @JSImport("d3-delaunay", "Delaunay.from")
-    @js.native
-    def from(points: Iterable[Point]): Delaunay[Point] = js.native
+    @scala.inline
+    def from(points: ArrayLike[Point]): Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunay[Point]]
+    @scala.inline
+    def from(points: Iterable[Point]): Delaunay[Point] = ^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any]).asInstanceOf[Delaunay[Point]]
     /**
       * Returns the Delaunay triangulation for the given array or iterable of points.
       * Otherwise, the getX and getY functions are invoked for each point in order, and must return the respective x- and y-coordinate for each point.
       * If that is specified, the functions getX and getY are invoked with that as this.
       * (See Array.from for reference.)
       */
-    @JSImport("d3-delaunay", "Delaunay.from")
-    @js.native
+    @scala.inline
     def from[P](
       points: ArrayLike[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]]
-    ): Delaunay[P] = js.native
-    @JSImport("d3-delaunay", "Delaunay.from")
-    @js.native
+    ): Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any])).asInstanceOf[Delaunay[P]]
+    @scala.inline
     def from[P](
       points: ArrayLike[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       that: js.Any
-    ): Delaunay[P] = js.native
-    @JSImport("d3-delaunay", "Delaunay.from")
-    @js.native
+    ): Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any], that.asInstanceOf[js.Any])).asInstanceOf[Delaunay[P]]
+    @scala.inline
     def from[P](
       points: Iterable[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]]
-    ): Delaunay[P] = js.native
-    @JSImport("d3-delaunay", "Delaunay.from")
-    @js.native
+    ): Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any])).asInstanceOf[Delaunay[P]]
+    @scala.inline
     def from[P](
       points: Iterable[P],
       getX: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       getY: GetCoordinate[P, ArrayLike[P] | Iterable[P]],
       that: js.Any
-    ): Delaunay[P] = js.native
+    ): Delaunay[P] = (^.asInstanceOf[js.Dynamic].applyDynamic("from")(points.asInstanceOf[js.Any], getX.asInstanceOf[js.Any], getY.asInstanceOf[js.Any], that.asInstanceOf[js.Any])).asInstanceOf[Delaunay[P]]
     
     /**
       * An interface for the arc() method of the CanvasPathMethods API.
@@ -227,13 +224,12 @@ object mod {
     /**
       * An interface for the closePath() method of the CanvasPathMethods API.
       */
-    @js.native
     trait ClosableContext extends StObject {
       
       /**
         * closePath() method of the CanvasPathMethods API.
         */
-      def closePath(): Unit = js.native
+      def closePath(): Unit
     }
     object ClosableContext {
       
@@ -259,13 +255,12 @@ object mod {
     /**
       * An interface for the lineTo() method of the CanvasPathMethods API.
       */
-    @js.native
     trait LineContext extends StObject {
       
       /**
         * lineTo() method of the CanvasPathMethods API.
         */
-      def lineTo(x: Double, y: Double): Unit = js.native
+      def lineTo(x: Double, y: Double): Unit
     }
     object LineContext {
       
@@ -286,13 +281,12 @@ object mod {
     /**
       * An interface for the moveTo() method of the CanvasPathMethods API.
       */
-    @js.native
     trait MoveContext extends StObject {
       
       /**
         * moveTo() method of the CanvasPathMethods API.
         */
-      def moveTo(x: Double, y: Double): Unit = js.native
+      def moveTo(x: Double, y: Double): Unit
     }
     object MoveContext {
       
@@ -323,13 +317,12 @@ object mod {
     /**
       * An interface for the rect() method of the CanvasPathMethods API.
       */
-    @js.native
     trait RectContext extends StObject {
       
       /**
         * rect() method of the CanvasPathMethods API.
         */
-      def rect(x: Double, y: Double, width: Double, height: Double): Unit = js.native
+      def rect(x: Double, y: Double, width: Double, height: Double): Unit
     }
     object RectContext {
       
@@ -399,7 +392,7 @@ object mod {
       * Renders the mesh of Voronoi cells to the specified context.
       * The specified context must implement the context.moveTo and context.lineTo methods from the CanvasPathMethods API.
       */
-    def render(context: MoveContext with LineContext): Unit = js.native
+    def render(context: MoveContext & LineContext): Unit = js.native
     
     /**
       * Renders the viewport extent to an SVG path string.
@@ -420,7 +413,7 @@ object mod {
       * Renders the cell with the specified index i to the specified context.
       * The specified context must implement the context.moveTo, context.lineTo, and context.closePath methods from the CanvasPathMethods API.
       */
-    def renderCell(i: Double, context: MoveContext with LineContext with ClosableContext): Unit = js.native
+    def renderCell(i: Double, context: MoveContext & LineContext & ClosableContext): Unit = js.native
     
     /**
       * Updates the Voronoi diagram and underlying triangulation after the points have been modified in-place — useful for Lloyd’s relaxation.

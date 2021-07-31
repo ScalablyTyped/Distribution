@@ -3,55 +3,55 @@ package typings.caniuseLite
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("caniuse-lite", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("caniuse-lite", "agents")
   @js.native
   val agents: AgentsByID = js.native
   
-  @JSImport("caniuse-lite", "feature")
-  @js.native
-  def feature(packedFeature: PackedFeature): Feature_ = js.native
+  @scala.inline
+  def feature(packedFeature: PackedFeature): Feature_ = ^.asInstanceOf[js.Dynamic].applyDynamic("feature")(packedFeature.asInstanceOf[js.Any]).asInstanceOf[Feature_]
   
-  @JSImport("caniuse-lite", "region")
-  @js.native
-  def region(packedRegion: PackedRegion): StringDictionary[UsageByVersion] = js.native
+  @scala.inline
+  def region(packedRegion: PackedRegion): StringDictionary[UsageByVersion] = ^.asInstanceOf[js.Dynamic].applyDynamic("region")(packedRegion.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[UsageByVersion]]
   
-  @js.native
   trait Agent extends StObject {
     
     /**
       * The agent's name
       */
-    var browser: String = js.native
+    var browser: String
     
     /**
       * The agents vendor prefix
       */
-    var prefix: String = js.native
+    var prefix: String
     
     /**
       * Exceptions to vendor prefix use.
       */
-    var prefix_exceptions: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.native
+    var prefix_exceptions: js.UndefOr[StringDictionary[js.UndefOr[String]]] = js.undefined
     
     /**
       * Release dates as seconds since epoch by version.
       */
-    var release_date: StringDictionary[js.UndefOr[Double]] = js.native
+    var release_date: StringDictionary[js.UndefOr[Double]]
     
     /**
       * Global agent usage by version
       */
-    var usage_global: UsageByVersion = js.native
+    var usage_global: UsageByVersion
     
     /**
       * Version matrix. See [caniuse](https://caniuse.com)
       */
-    var versions: js.Array[js.Any] = js.native
+    var versions: js.Array[js.Any]
   }
   object Agent {
     
@@ -97,7 +97,6 @@ object mod {
   }
   
   /* Inlined std.Readonly<{[id: string] : std.Readonly<caniuse-lite.caniuse-lite.Agent> | undefined}> */
-  @js.native
   trait AgentsByID extends StObject
   
   /* Rewritten from type alias, can be one of: 
@@ -112,23 +111,22 @@ object mod {
   */
   type FeatureStatus = _FeatureStatus | String
   
-  @js.native
   trait Feature_ extends StObject {
     
     /**
       * Agent support matrix for this feature.
       */
-    var stats: StatsByAgentID = js.native
+    var stats: StatsByAgentID
     
     /**
       * Specification status of the feature.
       */
-    var status: FeatureStatus = js.native
+    var status: FeatureStatus
     
     /**
       * Descriptive title of the feature.
       */
-    var title: String = js.native
+    var title: String
   }
   object Feature_ {
     
@@ -157,7 +155,6 @@ object mod {
   type PackedRegion = StringDictionary[js.Any]
   
   /* Inlined std.Readonly<{[agentID: string] : caniuse-lite.caniuse-lite.SupportStatusByVersion}> */
-  @js.native
   trait StatsByAgentID extends StObject
   
   /* Rewritten from type alias, can be one of: 
@@ -173,11 +170,9 @@ object mod {
   type SupportStatus = _SupportStatus | String
   
   /* Inlined std.Readonly<{[version: string] : caniuse-lite.caniuse-lite.SupportStatus}> */
-  @js.native
   trait SupportStatusByVersion extends StObject
   
   /* Inlined std.Readonly<{[version: string] : number | undefined}> */
-  @js.native
   trait UsageByVersion extends StObject
   
   trait _FeatureStatus extends StObject

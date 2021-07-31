@@ -5,17 +5,15 @@ import typings.vkOpenapi.vkOpenapiStrings.month
 import typings.vkOpenapi.vkOpenapiStrings.week
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecommendedOptions extends StObject {
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var max: js.UndefOr[Double] = js.native
+  var max: js.UndefOr[Double] = js.undefined
   
-  var period: js.UndefOr[day | week | month] = js.native
+  var period: js.UndefOr[day | week | month] = js.undefined
 }
 object RecommendedOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StartJobRunResponse extends StObject {
   
   /**
     * The ID assigned to this job run.
     */
-  var JobRunId: js.UndefOr[IdString] = js.native
+  var JobRunId: js.UndefOr[IdString] = js.undefined
 }
 object StartJobRunResponse {
   

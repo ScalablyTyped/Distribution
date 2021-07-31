@@ -2,21 +2,19 @@ package typings.jsoneditoronline
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONEditorOptions extends StObject {
   
-  var change: js.UndefOr[js.Function0[Unit]] = js.native
+  var change: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var history: js.UndefOr[Boolean] = js.native
+  var history: js.UndefOr[Boolean] = js.undefined
   
-  var mode: js.UndefOr[String] = js.native
+  var mode: js.UndefOr[String] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var search: js.UndefOr[Boolean] = js.native
+  var search: js.UndefOr[Boolean] = js.undefined
 }
 object JSONEditorOptions {
   

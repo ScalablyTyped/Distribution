@@ -13,7 +13,6 @@ import typings.reactNative.mod.TextStyle
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabBarStyleIndexNativeMod {
@@ -89,30 +88,29 @@ object tabBarStyleIndexNativeMod {
     def tabs_=(x: BorderColorBorderStyle): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("tabs")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait ITabBarStyle extends StObject {
     
-    var badge: ViewStyle = js.native
+    var badge: ViewStyle
     
-    var badgeText: TextStyle = js.native
+    var badgeText: TextStyle
     
-    var barIcon: ViewStyle = js.native
+    var barIcon: ViewStyle
     
-    var barItem: ViewStyle = js.native
+    var barItem: ViewStyle
     
-    var barItemSelected: ViewStyle = js.native
+    var barItemSelected: ViewStyle
     
-    var barItemTitle: TextStyle = js.native
+    var barItemTitle: TextStyle
     
-    var content: ViewStyle = js.native
+    var content: ViewStyle
     
-    var contentItem: ViewStyle = js.native
+    var contentItem: ViewStyle
     
-    var contentItemSelected: ViewStyle = js.native
+    var contentItemSelected: ViewStyle
     
-    var tabbar: ViewStyle = js.native
+    var tabbar: ViewStyle
     
-    var tabs: ViewStyle = js.native
+    var tabs: ViewStyle
   }
   object ITabBarStyle {
     

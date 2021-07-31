@@ -2,14 +2,12 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // Filter Options
-@js.native
 trait FilterOptions[T /* <: FindConstant */] extends StObject {
   
-  var filter: FilterFunction[T] | FilterObject | String = js.native
+  var filter: FilterFunction[T] | FilterObject | String
 }
 object FilterOptions {
   
@@ -20,7 +18,7 @@ object FilterOptions {
   }
   
   @scala.inline
-  implicit class FilterOptionsMutableBuilder[Self <: FilterOptions[_], T /* <: FindConstant */] (val x: Self with FilterOptions[T]) extends AnyVal {
+  implicit class FilterOptionsMutableBuilder[Self <: FilterOptions[?], T /* <: FindConstant */] (val x: Self & FilterOptions[T]) extends AnyVal {
     
     @scala.inline
     def setFilter(value: FilterFunction[T] | FilterObject | String): Self = StObject.set(x, "filter", value.asInstanceOf[js.Any])

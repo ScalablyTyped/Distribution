@@ -2,47 +2,45 @@ package typings.maximMazurokGapiClientOsconfig.gapi.client.osconfig
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchDeployment extends StObject {
   
   /** Output only. Time the patch deployment was created. Timestamp is in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. Description of the patch deployment. Length of the description is limited to 1024 characters. */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /** Optional. Duration of the patch. After the duration ends, the patch times out. */
-  var duration: js.UndefOr[String] = js.native
+  var duration: js.UndefOr[String] = js.undefined
   
   /** Required. VM instances to patch. */
-  var instanceFilter: js.UndefOr[PatchInstanceFilter] = js.native
+  var instanceFilter: js.UndefOr[PatchInstanceFilter] = js.undefined
   
   /** Output only. The last time a patch job was started by this deployment. Timestamp is in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
-  var lastExecuteTime: js.UndefOr[String] = js.native
+  var lastExecuteTime: js.UndefOr[String] = js.undefined
   
   /**
     * Unique name for the patch deployment resource in a project. The patch deployment name is in the form: `projects/{project_id}/patchDeployments/{patch_deployment_id}`. This field is
     * ignored when you create a new patch deployment.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Required. Schedule a one-time execution. */
-  var oneTimeSchedule: js.UndefOr[OneTimeSchedule] = js.native
+  var oneTimeSchedule: js.UndefOr[OneTimeSchedule] = js.undefined
   
   /** Optional. Patch configuration that is applied. */
-  var patchConfig: js.UndefOr[PatchConfig] = js.native
+  var patchConfig: js.UndefOr[PatchConfig] = js.undefined
   
   /** Required. Schedule recurring executions. */
-  var recurringSchedule: js.UndefOr[RecurringSchedule] = js.native
+  var recurringSchedule: js.UndefOr[RecurringSchedule] = js.undefined
   
   /** Optional. Rollout strategy of the patch job. */
-  var rollout: js.UndefOr[PatchRollout] = js.native
+  var rollout: js.UndefOr[PatchRollout] = js.undefined
   
   /** Output only. Time the patch deployment was last updated. Timestamp is in [RFC3339](https://www.ietf.org/rfc/rfc3339.txt) text format. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object PatchDeployment {
   

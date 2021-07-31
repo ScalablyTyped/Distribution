@@ -2,60 +2,58 @@ package typings.activexExcel.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlotArea extends StObject {
   
-  val Application: typings.activexExcel.Excel.Application = js.native
+  val Application: typings.activexExcel.Excel.Application
   
-  val Border: typings.activexExcel.Excel.Border = js.native
+  val Border: typings.activexExcel.Excel.Border
   
-  def ClearFormats(): js.Any = js.native
+  def ClearFormats(): js.Any
   
-  val Creator: XlCreator = js.native
+  val Creator: XlCreator
   
   @JSName("Excel.PlotArea_typekey")
-  var ExcelDotPlotArea_typekey: PlotArea = js.native
+  var ExcelDotPlotArea_typekey: PlotArea
   
-  val Fill: ChartFillFormat = js.native
+  val Fill: ChartFillFormat
   
-  val Format: ChartFormat = js.native
+  val Format: ChartFormat
   
-  var Height: Double = js.native
+  var Height: Double
   
-  var InsideHeight: Double = js.native
+  var InsideHeight: Double
   
-  var InsideLeft: Double = js.native
+  var InsideLeft: Double
   
-  var InsideTop: Double = js.native
+  var InsideTop: Double
   
-  var InsideWidth: Double = js.native
+  var InsideWidth: Double
   
-  val Interior: typings.activexExcel.Excel.Interior = js.native
+  val Interior: typings.activexExcel.Excel.Interior
   
-  var Left: Double = js.native
+  var Left: Double
   
-  val Name: String = js.native
+  val Name: String
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Position: XlChartElementPosition = js.native
+  var Position: XlChartElementPosition
   
-  def Select(): js.Any = js.native
+  def Select(): js.Any
   
-  var Top: Double = js.native
+  var Top: Double
   
-  var Width: Double = js.native
+  var Width: Double
   
-  val _InsideHeight: Double = js.native
+  val _InsideHeight: Double
   
-  val _InsideLeft: Double = js.native
+  val _InsideLeft: Double
   
-  val _InsideTop: Double = js.native
+  val _InsideTop: Double
   
-  val _InsideWidth: Double = js.native
+  val _InsideWidth: Double
 }
 object PlotArea {
   

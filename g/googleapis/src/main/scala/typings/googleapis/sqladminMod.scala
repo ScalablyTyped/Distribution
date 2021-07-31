@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sqladminMod {
+  
+  @JSImport("googleapis/build/src/apis/sqladmin", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object sqladminMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/sqladmin", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/sqladmin", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object sqladminMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin")
-  @js.native
-  def sqladmin(options: Options): Sqladmin = js.native
-  @JSImport("googleapis/build/src/apis/sqladmin", "sqladmin")
-  @js.native
-  def sqladmin_v1beta4(version: v1beta4): Sqladmin = js.native
+  @scala.inline
+  def sqladmin(options: Options): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(options.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
+  
+  @scala.inline
+  def sqladmin_v1beta4(version: v1beta4): Sqladmin = ^.asInstanceOf[js.Dynamic].applyDynamic("sqladmin")(version.asInstanceOf[js.Any]).asInstanceOf[Sqladmin]
 }

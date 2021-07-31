@@ -4,59 +4,57 @@ import typings.std.Date
 import typings.vsoNodeApi.vssinterfacesMod.IdentityRef
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestSuite extends StObject {
   
-  var areaUri: String = js.native
+  var areaUri: String
   
-  var children: js.Array[TestSuite] = js.native
+  var children: js.Array[TestSuite]
   
-  var defaultConfigurations: js.Array[ShallowReference] = js.native
+  var defaultConfigurations: js.Array[ShallowReference]
   
-  var defaultTesters: js.Array[ShallowReference] = js.native
+  var defaultTesters: js.Array[ShallowReference]
   
-  var id: Double = js.native
+  var id: Double
   
-  var inheritDefaultConfigurations: Boolean = js.native
+  var inheritDefaultConfigurations: Boolean
   
-  var lastError: String = js.native
+  var lastError: String
   
-  var lastPopulatedDate: Date = js.native
+  var lastPopulatedDate: Date
   
-  var lastUpdatedBy: IdentityRef = js.native
+  var lastUpdatedBy: IdentityRef
   
-  var lastUpdatedDate: Date = js.native
+  var lastUpdatedDate: Date
   
-  var name: String = js.native
+  var name: String
   
-  var parent: ShallowReference = js.native
+  var parent: ShallowReference
   
-  var plan: ShallowReference = js.native
+  var plan: ShallowReference
   
-  var project: ShallowReference = js.native
+  var project: ShallowReference
   
-  var queryString: String = js.native
+  var queryString: String
   
-  var requirementId: Double = js.native
+  var requirementId: Double
   
-  var revision: Double = js.native
+  var revision: Double
   
-  var state: String = js.native
+  var state: String
   
-  var suiteType: String = js.native
+  var suiteType: String
   
-  var suites: js.Array[ShallowReference] = js.native
+  var suites: js.Array[ShallowReference]
   
-  var testCaseCount: Double = js.native
+  var testCaseCount: Double
   
-  var testCasesUrl: String = js.native
+  var testCasesUrl: String
   
-  var text: String = js.native
+  var text: String
   
-  var url: String = js.native
+  var url: String
 }
 object TestSuite {
   

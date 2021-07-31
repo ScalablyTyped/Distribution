@@ -10,9 +10,9 @@ TypeScript typings for Managed Service for Microsoft Active Directory API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.managedidentities |
 | Keywords           | - |
-| # releases         | 2 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 54 |
+| # downloads        | 796 |
 | # stars            | 0 |
 
 ## Links

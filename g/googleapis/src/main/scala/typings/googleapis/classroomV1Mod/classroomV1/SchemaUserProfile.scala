@@ -2,39 +2,37 @@ package typings.googleapis.classroomV1Mod.classroomV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Global information for a user.
   */
-@js.native
 trait SchemaUserProfile extends StObject {
   
   /**
     * Email address of the user.  Read-only.
     */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the user.  Read-only.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Name of the user.  Read-only.
     */
-  var name: js.UndefOr[SchemaName] = js.native
+  var name: js.UndefOr[SchemaName] = js.undefined
   
   /**
     * Global permissions of the user.  Read-only.
     */
-  var permissions: js.UndefOr[js.Array[SchemaGlobalPermission]] = js.native
+  var permissions: js.UndefOr[js.Array[SchemaGlobalPermission]] = js.undefined
   
   /**
     * URL of user&#39;s profile photo.  Read-only.
     */
-  var photoUrl: js.UndefOr[String] = js.native
+  var photoUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Represents whether a G Suite for Education user&#39;s domain
@@ -42,7 +40,7 @@ trait SchemaUserProfile extends StObject {
     * user is not a member of a G Suite for Education domain, than this field
     * will always be false.  Read-only
     */
-  var verifiedTeacher: js.UndefOr[Boolean] = js.native
+  var verifiedTeacher: js.UndefOr[Boolean] = js.undefined
 }
 object SchemaUserProfile {
   

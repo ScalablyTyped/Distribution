@@ -2,38 +2,38 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IosManagedAppProtection extends TargetedManagedAppProtection {
+trait IosManagedAppProtection
+  extends StObject
+     with TargetedManagedAppProtection {
   
   /**
     * Type of encryption which should be used for data in a managed app. Possible values are: useDeviceSettings,
     * afterDeviceRestart, whenDeviceLockedExceptOpenFiles, whenDeviceLocked.
     */
-  var appDataEncryptionType: js.UndefOr[ManagedAppDataEncryptionType] = js.native
+  var appDataEncryptionType: js.UndefOr[ManagedAppDataEncryptionType] = js.undefined
   
   // List of apps to which the policy is deployed.
-  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.native
+  var apps: js.UndefOr[NullableOption[js.Array[ManagedMobileApp]]] = js.undefined
   
   /**
     * A custom browser protocol to open weblink on iOS. When this property is configured, ManagedBrowserToOpenLinksRequired
     * should be true.
     */
-  var customBrowserProtocol: js.UndefOr[NullableOption[String]] = js.native
+  var customBrowserProtocol: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Count of apps to which the current policy is deployed.
-  var deployedAppCount: js.UndefOr[Double] = js.native
+  var deployedAppCount: js.UndefOr[Double] = js.undefined
   
   // Navigation property to deployment summary of the configuration.
-  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.native
+  var deploymentSummary: js.UndefOr[NullableOption[ManagedAppPolicyDeploymentSummary]] = js.undefined
   
   // Indicates whether use of the FaceID is allowed in place of a pin if PinRequired is set to True.
-  var faceIdBlocked: js.UndefOr[Boolean] = js.native
+  var faceIdBlocked: js.UndefOr[Boolean] = js.undefined
   
   // Versions less than the specified version will block the managed app from accessing company data.
-  var minimumRequiredSdkVersion: js.UndefOr[NullableOption[String]] = js.native
+  var minimumRequiredSdkVersion: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object IosManagedAppProtection {
   

@@ -2,47 +2,45 @@ package typings.instagramPrivateApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mediaCommentsFeedResponseMod {
   
-  @js.native
   trait MediaCommentsFeedResponse extends StObject {
     
-    var can_view_more_preview_comments: Boolean = js.native
+    var can_view_more_preview_comments: Boolean
     
-    var caption: MediaCommentsFeedResponseCaption = js.native
+    var caption: MediaCommentsFeedResponseCaption
     
-    var caption_is_edited: Boolean = js.native
+    var caption_is_edited: Boolean
     
-    var comment_count: Double = js.native
+    var comment_count: Double
     
-    var comment_likes_enabled: Boolean = js.native
+    var comment_likes_enabled: Boolean
     
-    var comments: js.Array[MediaCommentsFeedResponseCommentsItem] = js.native
+    var comments: js.Array[MediaCommentsFeedResponseCommentsItem]
     
-    var has_more_comments: Boolean = js.native
+    var has_more_comments: Boolean
     
-    var has_more_headload_comments: Boolean = js.native
+    var has_more_headload_comments: Boolean
     
-    var initiate_at_top: Boolean = js.native
+    var initiate_at_top: Boolean
     
-    var insert_new_comment_to_top: Boolean = js.native
+    var insert_new_comment_to_top: Boolean
     
-    var media_header_display: String = js.native
+    var media_header_display: String
     
-    var next_max_id: String = js.native
+    var next_max_id: String
     
-    var next_min_id: String = js.native
+    var next_min_id: String
     
-    var preview_comments: js.Array[MediaCommentsFeedResponsePreviewCommentsItem] = js.native
+    var preview_comments: js.Array[MediaCommentsFeedResponsePreviewCommentsItem]
     
-    var quick_response_emojis: js.Array[MediaCommentsFeedResponseQuickResponseEmojisItem] = js.native
+    var quick_response_emojis: js.Array[MediaCommentsFeedResponseQuickResponseEmojisItem]
     
-    var status: String = js.native
+    var status: String
     
-    var threading_enabled: Boolean = js.native
+    var threading_enabled: Boolean
   }
   object MediaCommentsFeedResponse {
     
@@ -135,34 +133,33 @@ object mediaCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaCommentsFeedResponseCaption extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_translation: Boolean = js.native
+    var has_translation: Boolean
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaCommentsFeedResponseUser = js.native
+    var user: MediaCommentsFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object MediaCommentsFeedResponseCaption {
     
@@ -231,58 +228,57 @@ object mediaCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaCommentsFeedResponseCommentsItem extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var child_comment_count: Double = js.native
+    var child_comment_count: Double
     
-    var comment_index: Double = js.native
+    var comment_index: Double
     
-    var comment_like_count: Double = js.native
+    var comment_like_count: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_liked_comment: Boolean = js.native
+    var has_liked_comment: Boolean
     
-    var has_more_head_child_comments: js.UndefOr[Boolean] = js.native
+    var has_more_head_child_comments: js.UndefOr[Boolean] = js.undefined
     
-    var has_more_tail_child_comments: js.UndefOr[Boolean] = js.native
+    var has_more_tail_child_comments: js.UndefOr[Boolean] = js.undefined
     
-    var has_translation: js.UndefOr[Boolean] = js.native
+    var has_translation: js.UndefOr[Boolean] = js.undefined
     
-    var inline_composer_display_condition: String = js.native
+    var inline_composer_display_condition: String
     
-    var next_min_child_cursor: js.UndefOr[String] = js.native
+    var next_min_child_cursor: js.UndefOr[String] = js.undefined
     
-    var num_head_child_comments: js.UndefOr[Double] = js.native
+    var num_head_child_comments: js.UndefOr[Double] = js.undefined
     
-    var num_tail_child_comments: js.UndefOr[Double] = js.native
+    var num_tail_child_comments: js.UndefOr[Double] = js.undefined
     
-    var other_preview_users: js.Array[MediaCommentsFeedResponseOtherPreviewUsersItem] = js.native
+    var other_preview_users: js.Array[MediaCommentsFeedResponseOtherPreviewUsersItem]
     
-    var pk: String = js.native
+    var pk: String
     
-    var preview_child_comments: js.Array[MediaCommentsFeedResponsePreviewChildCommentsItem] = js.native
+    var preview_child_comments: js.Array[MediaCommentsFeedResponsePreviewChildCommentsItem]
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaCommentsFeedResponseUser = js.native
+    var user: MediaCommentsFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object MediaCommentsFeedResponseCommentsItem {
     
@@ -417,12 +413,11 @@ object mediaCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaCommentsFeedResponseOtherPreviewUsersItem extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
   }
   object MediaCommentsFeedResponseOtherPreviewUsersItem {
     
@@ -443,34 +438,33 @@ object mediaCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaCommentsFeedResponsePreviewChildCommentsItem extends StObject {
     
-    var comment_like_count: Double = js.native
+    var comment_like_count: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var has_liked_comment: Boolean = js.native
+    var has_liked_comment: Boolean
     
-    var media_id: String = js.native
+    var media_id: String
     
-    var parent_comment_id: String = js.native
+    var parent_comment_id: String
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaCommentsFeedResponseUser = js.native
+    var user: MediaCommentsFeedResponseUser
   }
   object MediaCommentsFeedResponsePreviewChildCommentsItem {
     
@@ -539,40 +533,39 @@ object mediaCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaCommentsFeedResponsePreviewCommentsItem extends StObject {
     
-    var bit_flags: Double = js.native
+    var bit_flags: Double
     
-    var comment_like_count: Double = js.native
+    var comment_like_count: Double
     
-    var content_type: String = js.native
+    var content_type: String
     
-    var created_at: Double = js.native
+    var created_at: Double
     
-    var created_at_utc: Double = js.native
+    var created_at_utc: Double
     
-    var did_report_as_spam: Boolean = js.native
+    var did_report_as_spam: Boolean
     
-    var has_liked_comment: Boolean = js.native
+    var has_liked_comment: Boolean
     
-    var has_translation: Boolean = js.native
+    var has_translation: Boolean
     
-    var parent_comment_id: js.UndefOr[String] = js.native
+    var parent_comment_id: js.UndefOr[String] = js.undefined
     
-    var pk: String = js.native
+    var pk: String
     
-    var share_enabled: Boolean = js.native
+    var share_enabled: Boolean
     
-    var status: String = js.native
+    var status: String
     
-    var text: String = js.native
+    var text: String
     
-    var `type`: Double = js.native
+    var `type`: Double
     
-    var user: MediaCommentsFeedResponseUser = js.native
+    var user: MediaCommentsFeedResponseUser
     
-    var user_id: Double = js.native
+    var user_id: Double
   }
   object MediaCommentsFeedResponsePreviewCommentsItem {
     
@@ -655,10 +648,9 @@ object mediaCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaCommentsFeedResponseQuickResponseEmojisItem extends StObject {
     
-    var unicode: String = js.native
+    var unicode: String
   }
   object MediaCommentsFeedResponseQuickResponseEmojisItem {
     
@@ -676,26 +668,25 @@ object mediaCommentsFeedResponseMod {
     }
   }
   
-  @js.native
   trait MediaCommentsFeedResponseUser extends StObject {
     
-    var full_name: String = js.native
+    var full_name: String
     
-    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.native
+    var has_anonymous_profile_picture: js.UndefOr[Boolean] = js.undefined
     
-    var is_private: Boolean = js.native
+    var is_private: Boolean
     
-    var is_verified: Boolean = js.native
+    var is_verified: Boolean
     
-    var latest_reel_media: js.UndefOr[Double] = js.native
+    var latest_reel_media: js.UndefOr[Double] = js.undefined
     
-    var pk: Double = js.native
+    var pk: Double
     
-    var profile_pic_id: js.UndefOr[String] = js.native
+    var profile_pic_id: js.UndefOr[String] = js.undefined
     
-    var profile_pic_url: String = js.native
+    var profile_pic_url: String
     
-    var username: String = js.native
+    var username: String
   }
   object MediaCommentsFeedResponseUser {
     

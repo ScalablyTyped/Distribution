@@ -2,29 +2,27 @@ package typings.googleapis.firebasedynamiclinksV1Mod.firebasedynamiclinksV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Response to create a short Dynamic Link.
   */
-@js.native
 trait SchemaCreateManagedShortLinkResponse extends StObject {
   
   /**
     * Short Dynamic Link value. e.g. https://abcd.app.goo.gl/wxyz
     */
-  var managedShortLink: js.UndefOr[SchemaManagedShortLink] = js.native
+  var managedShortLink: js.UndefOr[SchemaManagedShortLink] = js.undefined
   
   /**
     * Preview link to show the link flow chart. (debug info.)
     */
-  var previewLink: js.UndefOr[String] = js.native
+  var previewLink: js.UndefOr[String] = js.undefined
   
   /**
     * Information about potential warnings on link creation.
     */
-  var warning: js.UndefOr[js.Array[SchemaDynamicLinkWarning]] = js.native
+  var warning: js.UndefOr[js.Array[SchemaDynamicLinkWarning]] = js.undefined
 }
 object SchemaCreateManagedShortLinkResponse {
   

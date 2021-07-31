@@ -7,10 +7,13 @@ import typings.std.Document
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@fluentui/react-window-provider", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@fluentui/react-window-provider", "WindowContext")
   @js.native
@@ -20,11 +23,9 @@ object mod {
   @js.native
   val WindowProvider: FunctionComponent[WindowProviderProps] = js.native
   
-  @JSImport("@fluentui/react-window-provider", "useDocument")
-  @js.native
-  def useDocument(): js.UndefOr[Document] = js.native
+  @scala.inline
+  def useDocument(): js.UndefOr[Document] = ^.asInstanceOf[js.Dynamic].applyDynamic("useDocument")().asInstanceOf[js.UndefOr[Document]]
   
-  @JSImport("@fluentui/react-window-provider", "useWindow")
-  @js.native
-  def useWindow(): js.UndefOr[Window] = js.native
+  @scala.inline
+  def useWindow(): js.UndefOr[Window] = ^.asInstanceOf[js.Dynamic].applyDynamic("useWindow")().asInstanceOf[js.UndefOr[Window]]
 }

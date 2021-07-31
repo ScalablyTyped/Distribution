@@ -3,21 +3,21 @@ package typings.activexLibreoffice.com_.sun.star.xml.sax
 import typings.activexLibreoffice.`type`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** receives notification of sax document events from a {@link XFastParser} */
-@js.native
-trait XFastDocumentHandler extends XFastContextHandler {
+trait XFastDocumentHandler
+  extends StObject
+     with XFastContextHandler {
   
   /** called by the parser after the last XML element of a stream is processed. */
-  def endDocument(): Unit = js.native
+  def endDocument(): Unit
   
   /** receives an object for locating the origin of SAX document events. */
-  def setDocumentLocator(xLocator: XLocator): Unit = js.native
+  def setDocumentLocator(xLocator: XLocator): Unit
   
   /** called by the parser when parsing of an XML stream is started. */
-  def startDocument(): Unit = js.native
+  def startDocument(): Unit
 }
 object XFastDocumentHandler {
   

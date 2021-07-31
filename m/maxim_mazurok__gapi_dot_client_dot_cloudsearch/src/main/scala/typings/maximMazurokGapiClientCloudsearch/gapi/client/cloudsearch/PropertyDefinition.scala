@@ -2,60 +2,58 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PropertyDefinition extends StObject {
   
-  var booleanPropertyOptions: js.UndefOr[BooleanPropertyOptions] = js.native
+  var booleanPropertyOptions: js.UndefOr[BooleanPropertyOptions] = js.undefined
   
-  var datePropertyOptions: js.UndefOr[DatePropertyOptions] = js.native
+  var datePropertyOptions: js.UndefOr[DatePropertyOptions] = js.undefined
   
   /** Options that determine how the property is displayed in the Cloud Search results page if it is specified to be displayed in the object's display options . */
-  var displayOptions: js.UndefOr[PropertyDisplayOptions] = js.native
+  var displayOptions: js.UndefOr[PropertyDisplayOptions] = js.undefined
   
-  var doublePropertyOptions: js.UndefOr[DoublePropertyOptions] = js.native
+  var doublePropertyOptions: js.UndefOr[DoublePropertyOptions] = js.undefined
   
-  var enumPropertyOptions: js.UndefOr[EnumPropertyOptions] = js.native
+  var enumPropertyOptions: js.UndefOr[EnumPropertyOptions] = js.undefined
   
-  var htmlPropertyOptions: js.UndefOr[HtmlPropertyOptions] = js.native
+  var htmlPropertyOptions: js.UndefOr[HtmlPropertyOptions] = js.undefined
   
-  var integerPropertyOptions: js.UndefOr[IntegerPropertyOptions] = js.native
+  var integerPropertyOptions: js.UndefOr[IntegerPropertyOptions] = js.undefined
   
   /**
     * Indicates that the property can be used for generating facets. Cannot be true for properties whose type is object. IsReturnable must be true to set this option. Only supported for
     * Boolean, Enum, and Text properties.
     */
-  var isFacetable: js.UndefOr[Boolean] = js.native
+  var isFacetable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that multiple values are allowed for the property. For example, a document only has one description but can have multiple comments. Cannot be true for properties whose
     * type is a boolean. If set to false, properties that contain more than one value cause the indexing request for that item to be rejected.
     */
-  var isRepeatable: js.UndefOr[Boolean] = js.native
+  var isRepeatable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that the property identifies data that should be returned in search results via the Query API. If set to *true*, indicates that Query API users can use matching property
     * fields in results. However, storing fields requires more space allocation and uses more bandwidth for search queries, which impacts performance over large datasets. Set to *true*
     * here only if the field is needed for search results. Cannot be true for properties whose type is an object.
     */
-  var isReturnable: js.UndefOr[Boolean] = js.native
+  var isReturnable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that the property can be used for sorting. Cannot be true for properties that are repeatable. Cannot be true for properties whose type is object or user identifier.
     * IsReturnable must be true to set this option. Only supported for Boolean, Date, Double, Integer, and Timestamp properties.
     */
-  var isSortable: js.UndefOr[Boolean] = js.native
+  var isSortable: js.UndefOr[Boolean] = js.undefined
   
   /** Indicates that the property can be used for generating query suggestions. */
-  var isSuggestable: js.UndefOr[Boolean] = js.native
+  var isSuggestable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates that users can perform wildcard search for this property. Only supported for Text properties. IsReturnable must be true to set this option. In a given datasource maximum
     * of 5 properties can be marked as is_wildcard_searchable.
     */
-  var isWildcardSearchable: js.UndefOr[Boolean] = js.native
+  var isWildcardSearchable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The name of the property. Item indexing requests sent to the Indexing API should set the property name equal to this value. For example, if name is *subject_line*, then indexing
@@ -63,13 +61,13 @@ trait PropertyDefinition extends StObject {
     * as a property for an object, you cannot re-use this name for another property within that object. The name must start with a letter and can only contain letters (A-Z, a-z) or
     * numbers (0-9). The maximum length is 256 characters.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var objectPropertyOptions: js.UndefOr[ObjectPropertyOptions] = js.native
+  var objectPropertyOptions: js.UndefOr[ObjectPropertyOptions] = js.undefined
   
-  var textPropertyOptions: js.UndefOr[TextPropertyOptions] = js.native
+  var textPropertyOptions: js.UndefOr[TextPropertyOptions] = js.undefined
   
-  var timestampPropertyOptions: js.UndefOr[TimestampPropertyOptions] = js.native
+  var timestampPropertyOptions: js.UndefOr[TimestampPropertyOptions] = js.undefined
 }
 object PropertyDefinition {
   

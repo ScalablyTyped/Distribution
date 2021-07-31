@@ -2,38 +2,36 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackupConfiguration extends StObject {
   
   /** Backup retention settings. */
-  var backupRetentionSettings: js.UndefOr[BackupRetentionSettings] = js.native
+  var backupRetentionSettings: js.UndefOr[BackupRetentionSettings] = js.undefined
   
   /** (MySQL only) Whether binary log is enabled. If backup configuration is disabled, binarylog must be disabled as well. */
-  var binaryLogEnabled: js.UndefOr[Boolean] = js.native
+  var binaryLogEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Whether this configuration is enabled. */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /** This is always *sql#backupConfiguration*. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /** Location of the backup */
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
   /** Reserved for future use. */
-  var pointInTimeRecoveryEnabled: js.UndefOr[Boolean] = js.native
+  var pointInTimeRecoveryEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Reserved for future use. */
-  var replicationLogArchivingEnabled: js.UndefOr[Boolean] = js.native
+  var replicationLogArchivingEnabled: js.UndefOr[Boolean] = js.undefined
   
   /** Start time for the daily backup configuration in UTC timezone in the 24 hour format - *HH:MM*. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /** The number of days of transaction logs we retain for point in time restore, from 1-7. */
-  var transactionLogRetentionDays: js.UndefOr[Double] = js.native
+  var transactionLogRetentionDays: js.UndefOr[Double] = js.undefined
 }
 object BackupConfiguration {
   

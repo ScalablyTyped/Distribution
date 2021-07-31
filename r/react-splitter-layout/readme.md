@@ -12,7 +12,7 @@ A simple split layout for React and modern browsers
 | Keywords           | react, layout, split, splitter |
 | # releases         | 2 |
 | # dependents       | 13 |
-| # downloads        | 636093 |
+| # downloads        | 696179 |
 | # stars            | 1 |
 
 ## Links

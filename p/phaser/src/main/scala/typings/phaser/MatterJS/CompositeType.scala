@@ -2,13 +2,11 @@ package typings.phaser.MatterJS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //  --------------------------------------------------------------
 //  Types
 //  --------------------------------------------------------------
-@js.native
 trait CompositeType extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CompositeType extends StObject {
     * @type body[]
     * @default []
     */
-  var bodies: js.Array[BodyType] = js.native
+  var bodies: js.Array[BodyType]
   
   /**
     * An array of `Composite` that are _direct_ children of this composite.
@@ -31,7 +29,7 @@ trait CompositeType extends StObject {
     * @type composite[]
     * @default []
     */
-  var composites: js.Array[CompositeType] = js.native
+  var composites: js.Array[CompositeType]
   
   /**
     * An array of `Constraint` that are _direct_ children of this composite.
@@ -42,7 +40,7 @@ trait CompositeType extends StObject {
     * @type constraint[]
     * @default []
     */
-  var constraints: js.Array[ConstraintType] = js.native
+  var constraints: js.Array[ConstraintType]
   
   /**
     * An integer `Number` uniquely identifying number generated in `Composite.create` by `Common.nextId`.
@@ -50,7 +48,7 @@ trait CompositeType extends StObject {
     * @property id
     * @type number
     */
-  var id: Double = js.native
+  var id: Double
   
   /**
     * A flag that specifies whether the composite has been modified during the current step.
@@ -61,7 +59,7 @@ trait CompositeType extends StObject {
     * @type boolean
     * @default false
     */
-  var isModified: Boolean = js.native
+  var isModified: Boolean
   
   /**
     * An arbitrary `String` name to help the user identify and manage composites.
@@ -70,7 +68,7 @@ trait CompositeType extends StObject {
     * @type string
     * @default "Composite"
     */
-  var label: String = js.native
+  var label: String
   
   /**
     * The `Composite` that is the parent of this composite. It is automatically managed by the `Matter.Composite` methods.
@@ -79,7 +77,7 @@ trait CompositeType extends StObject {
     * @type composite
     * @default null
     */
-  var parent: js.UndefOr[CompositeType] = js.native
+  var parent: js.UndefOr[CompositeType] = js.undefined
   
   /**
     * An object reserved for storing plugin-specific properties.
@@ -87,7 +85,7 @@ trait CompositeType extends StObject {
     * @property plugin
     * @type {}
     */
-  var plugin: js.Any = js.native
+  var plugin: js.Any
   
   /**
     * A `String` denoting the type of object.
@@ -96,7 +94,7 @@ trait CompositeType extends StObject {
     * @type string
     * @default "composite"
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object CompositeType {
   

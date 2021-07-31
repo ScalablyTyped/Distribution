@@ -12,7 +12,7 @@ Library for streamlining application deployment or systems administration tasks
 | Keywords           | deploy, deployment, commands, devops, exec, shell, bash, ssh, tasks, parallel, sequential, remote, local, cloud, fabric |
 | # releases         | 2 |
 | # dependents       | 9 |
-| # downloads        | 51137 |
+| # downloads        | 54161 |
 | # stars            | 48 |
 
 ## Links

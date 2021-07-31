@@ -5,75 +5,68 @@ import typings.std.HTMLElement
 import typings.std.Required
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@react-md/transition/types/utils", "getClassNames")
+  @JSImport("@react-md/transition/types/utils", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getClassNames(
     classNames: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionClassNames */ js.Any,
     timeout: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionStageTimeouts */ js.Any,
     disableAppearAsEnter: Boolean
   ): Required[
-    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionStageClassNames */ _
-  ] = js.native
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionStageClassNames */ js.Any
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("getClassNames")(classNames.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any], disableAppearAsEnter.asInstanceOf[js.Any])).asInstanceOf[Required[
+    /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSSTransitionStageClassNames */ js.Any
+  ]]
   
-  @JSImport("@react-md/transition/types/utils", "getElementSizing")
-  @js.native
-  def getElementSizing(): CollapseSizing = js.native
-  @JSImport("@react-md/transition/types/utils", "getElementSizing")
-  @js.native
-  def getElementSizing(element: HTMLElement): CollapseSizing = js.native
+  @scala.inline
+  def getElementSizing(): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")().asInstanceOf[CollapseSizing]
+  @scala.inline
+  def getElementSizing(element: HTMLElement): CollapseSizing = ^.asInstanceOf[js.Dynamic].applyDynamic("getElementSizing")(element.asInstanceOf[js.Any]).asInstanceOf[CollapseSizing]
   
-  @JSImport("@react-md/transition/types/utils", "getNextStage")
-  @js.native
-  def getNextStage(stage: TransitionStage, transitionIn: Boolean): TransitionStage = js.native
+  @scala.inline
+  def getNextStage(stage: TransitionStage, transitionIn: Boolean): TransitionStage = (^.asInstanceOf[js.Dynamic].applyDynamic("getNextStage")(stage.asInstanceOf[js.Any], transitionIn.asInstanceOf[js.Any])).asInstanceOf[TransitionStage]
   
-  @JSImport("@react-md/transition/types/utils", "getTimeoutDuration")
-  @js.native
+  @scala.inline
   def getTimeoutDuration(
     timeout: Required[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionStageTimeouts */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify TransitionStageTimeouts */ js.Any
     ],
     appearing: Boolean,
     stage: TransitionStage
-  ): Double = js.native
+  ): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimeoutDuration")(timeout.asInstanceOf[js.Any], appearing.asInstanceOf[js.Any], stage.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@react-md/transition/types/utils", "isEnter")
-  @js.native
-  def isEnter(stage: TransitionStage): Boolean = js.native
+  @scala.inline
+  def isEnter(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEnter")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/transition/types/utils", "isEntered")
-  @js.native
-  def isEntered(stage: TransitionStage): Boolean = js.native
+  @scala.inline
+  def isEntered(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntered")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/transition/types/utils", "isEntering")
-  @js.native
-  def isEntering(stage: TransitionStage): Boolean = js.native
+  @scala.inline
+  def isEntering(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isEntering")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/transition/types/utils", "isExit")
-  @js.native
-  def isExit(stage: TransitionStage): Boolean = js.native
+  @scala.inline
+  def isExit(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExit")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/transition/types/utils", "isExited")
-  @js.native
-  def isExited(stage: TransitionStage): Boolean = js.native
+  @scala.inline
+  def isExited(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExited")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@react-md/transition/types/utils", "isExiting")
-  @js.native
-  def isExiting(stage: TransitionStage): Boolean = js.native
+  @scala.inline
+  def isExiting(stage: TransitionStage): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isExiting")(stage.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
   /** @private */
-  @js.native
   trait CollapseSizing extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var paddingBottom: js.UndefOr[Double] = js.native
+    var paddingBottom: js.UndefOr[Double] = js.undefined
     
-    var paddingTop: js.UndefOr[Double] = js.native
+    var paddingTop: js.UndefOr[Double] = js.undefined
   }
   object CollapseSizing {
     

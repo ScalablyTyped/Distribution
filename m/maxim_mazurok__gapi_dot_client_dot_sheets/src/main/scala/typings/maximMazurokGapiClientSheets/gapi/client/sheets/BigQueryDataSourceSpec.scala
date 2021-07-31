@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientSheets.gapi.client.sheets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BigQueryDataSourceSpec extends StObject {
   
   /** The ID of a BigQuery enabled GCP project with a billing account attached. For any queries executed against the data source, the project is charged. */
-  var projectId: js.UndefOr[String] = js.native
+  var projectId: js.UndefOr[String] = js.undefined
   
   /** A BigQueryQuerySpec. */
-  var querySpec: js.UndefOr[BigQueryQuerySpec] = js.native
+  var querySpec: js.UndefOr[BigQueryQuerySpec] = js.undefined
   
   /** A BigQueryTableSpec. */
-  var tableSpec: js.UndefOr[BigQueryTableSpec] = js.native
+  var tableSpec: js.UndefOr[BigQueryTableSpec] = js.undefined
 }
 object BigQueryDataSourceSpec {
   

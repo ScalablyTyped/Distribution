@@ -5,15 +5,14 @@ import typings.react.mod.DOMAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@blueprintjs/core/lib/esm/components", "Icon")
 @js.native
 class Icon protected ()
   extends typings.blueprintjsCore.iconMod.Icon {
-  def this(props: IIconProps with DOMAttributes[HTMLElement]) = this()
-  def this(props: IIconProps with DOMAttributes[HTMLElement], context: js.Any) = this()
+  def this(props: IIconProps & DOMAttributes[HTMLElement]) = this()
+  def this(props: IIconProps & DOMAttributes[HTMLElement], context: js.Any) = this()
 }
 /* static members */
 object Icon {

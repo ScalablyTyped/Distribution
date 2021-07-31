@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.compareComplyV1Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An effective date. */
-@js.native
 trait EffectiveDates extends StObject {
   
   /** The confidence level in the identification of the effective date. */
-  var confidence_level: js.UndefOr[String] = js.native
+  var confidence_level: js.UndefOr[String] = js.undefined
   
   /** The numeric location of the identified element in the document, represented with two integers labeled `begin` and `end`. */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /** The effective date, listed as a string. */
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
 }
 object EffectiveDates {
   

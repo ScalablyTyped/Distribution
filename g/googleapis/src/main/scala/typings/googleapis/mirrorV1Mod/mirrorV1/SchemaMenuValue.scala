@@ -2,13 +2,11 @@ package typings.googleapis.mirrorV1Mod.mirrorV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A single value that is part of a MenuItem.
   */
-@js.native
 trait SchemaMenuValue extends StObject {
   
   /**
@@ -16,12 +14,12 @@ trait SchemaMenuValue extends StObject {
     * built-in menu item, the default contextual voice command for that menu
     * item is not shown.
     */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /**
     * URL of an icon to display with the menu item.
     */
-  var iconUrl: js.UndefOr[String] = js.native
+  var iconUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The state that this value applies to. Allowed values are:   - DEFAULT -
@@ -30,7 +28,7 @@ trait SchemaMenuValue extends StObject {
     * be cancelled.  - CONFIRMED - Value shown when the menuItem has been
     * selected by the user and can no longer be cancelled.
     */
-  var state: js.UndefOr[String] = js.native
+  var state: js.UndefOr[String] = js.undefined
 }
 object SchemaMenuValue {
   

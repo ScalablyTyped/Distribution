@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.beans.PropertyValue
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Methods of this interface does not require specification of the object type, it will be detected.
   */
-@js.native
-trait XLinkCreator extends XInterface {
+trait XLinkCreator
+  extends StObject
+     with XInterface {
   
   /**
     * creates a new object based on {@link com.sun.star.document.MediaDescriptor} and initializes it as a link.
@@ -34,7 +34,7 @@ trait XLinkCreator extends XInterface {
     sEntryName: String,
     aArgs: SeqEquiv[PropertyValue],
     aObjectArgs: SeqEquiv[PropertyValue]
-  ): XInterface = js.native
+  ): XInterface
 }
 object XLinkCreator {
   

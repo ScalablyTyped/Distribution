@@ -110,21 +110,21 @@ import typings.newGithubIssueUrl.mod.Options
 import typings.typeFest.requireAtLeastOneMod.RequireAtLeastOne
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("electron-util", "aboutMenuItem")
+  @JSImport("electron-util", JSImport.Namespace)
   @js.native
-  def aboutMenuItem(): MenuItemConstructorOptions = js.native
-  @JSImport("electron-util", "aboutMenuItem")
-  @js.native
-  def aboutMenuItem(options: AboutMenuItemOptions): MenuItemConstructorOptions = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("electron-util", "activeWindow")
-  @js.native
-  def activeWindow(): BrowserWindow = js.native
+  @scala.inline
+  def aboutMenuItem(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("aboutMenuItem")().asInstanceOf[MenuItemConstructorOptions]
+  @scala.inline
+  def aboutMenuItem(options: AboutMenuItemOptions): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("aboutMenuItem")(options.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
+  
+  @scala.inline
+  def activeWindow(): BrowserWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("activeWindow")().asInstanceOf[BrowserWindow]
   
   @JSImport("electron-util", "api")
   @js.native
@@ -134,19 +134,15 @@ object mod {
   @js.native
   val appLaunchTimestamp: Double = js.native
   
-  @JSImport("electron-util", "appMenu")
-  @js.native
-  def appMenu(): MenuItemConstructorOptions = js.native
-  @JSImport("electron-util", "appMenu")
-  @js.native
-  def appMenu(menuItems: js.Array[MenuItemConstructorOptions]): MenuItemConstructorOptions = js.native
+  @scala.inline
+  def appMenu(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("appMenu")().asInstanceOf[MenuItemConstructorOptions]
+  @scala.inline
+  def appMenu(menuItems: js.Array[MenuItemConstructorOptions]): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("appMenu")(menuItems.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
   
-  @JSImport("electron-util", "centerWindow")
-  @js.native
-  def centerWindow(): Unit = js.native
-  @JSImport("electron-util", "centerWindow")
-  @js.native
-  def centerWindow(options: CenterWindowOptions): Unit = js.native
+  @scala.inline
+  def centerWindow(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerWindow")().asInstanceOf[Unit]
+  @scala.inline
+  def centerWindow(options: CenterWindowOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("centerWindow")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("electron-util", "chromeVersion")
   @js.native
@@ -156,35 +152,28 @@ object mod {
   @js.native
   val darkMode: DarkMode_ = js.native
   
-  @JSImport("electron-util", "debugInfo")
-  @js.native
-  def debugInfo(): String = js.native
+  @scala.inline
+  def debugInfo(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("debugInfo")().asInstanceOf[String]
   
-  @JSImport("electron-util", "disableZoom")
-  @js.native
-  def disableZoom(): Unit = js.native
-  @JSImport("electron-util", "disableZoom")
-  @js.native
-  def disableZoom(window: BrowserWindow): Unit = js.native
+  @scala.inline
+  def disableZoom(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableZoom")().asInstanceOf[Unit]
+  @scala.inline
+  def disableZoom(window: BrowserWindow): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("disableZoom")(window.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   @JSImport("electron-util", "electronVersion")
   @js.native
   val electronVersion: String = js.native
   
-  @JSImport("electron-util", "enforceMacOSAppLocation")
-  @js.native
-  def enforceMacOSAppLocation(): Unit = js.native
+  @scala.inline
+  def enforceMacOSAppLocation(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("enforceMacOSAppLocation")().asInstanceOf[Unit]
   
-  @JSImport("electron-util", "fixPathForAsarUnpack")
-  @js.native
-  def fixPathForAsarUnpack(path: String): String = js.native
+  @scala.inline
+  def fixPathForAsarUnpack(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("fixPathForAsarUnpack")(path.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("electron-util", "getWindowBoundsCentered")
-  @js.native
-  def getWindowBoundsCentered(): Rectangle = js.native
-  @JSImport("electron-util", "getWindowBoundsCentered")
-  @js.native
-  def getWindowBoundsCentered(options: GetWindowBoundsCenteredOptions): Rectangle = js.native
+  @scala.inline
+  def getWindowBoundsCentered(): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowBoundsCentered")().asInstanceOf[Rectangle]
+  @scala.inline
+  def getWindowBoundsCentered(options: GetWindowBoundsCenteredOptions): Rectangle = ^.asInstanceOf[js.Dynamic].applyDynamic("getWindowBoundsCentered")(options.asInstanceOf[js.Any]).asInstanceOf[Rectangle]
   
   object is {
     
@@ -252,100 +241,82 @@ object mod {
     val windowsStore: Boolean = js.native
   }
   
-  @JSImport("electron-util", "isFirstAppLaunch")
-  @js.native
-  def isFirstAppLaunch(): Boolean = js.native
+  @scala.inline
+  def isFirstAppLaunch(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFirstAppLaunch")().asInstanceOf[Boolean]
   
-  @JSImport("electron-util", "menuBarHeight")
-  @js.native
-  def menuBarHeight(): Double = js.native
+  @scala.inline
+  def menuBarHeight(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("menuBarHeight")().asInstanceOf[Double]
   
-  @JSImport("electron-util", "openNewGitHubIssue")
-  @js.native
-  def openNewGitHubIssue(options: Options): Unit = js.native
+  @scala.inline
+  def openNewGitHubIssue(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("openNewGitHubIssue")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
-  def openSystemPreferences(): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
+  @scala.inline
+  def openSystemPreferences(): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")().asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def openSystemPreferences(
-    pane: js.UndefOr[scala.Nothing],
+    pane: Unit,
     section: Advanced | Captioning | Dictation | FDE | Firewall | General | Hearing | Internet | Keyboard | Media_Descriptions | Mouse | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing | SpeakableItems | Switch | TTS
-  ): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def openSystemPreferences(
     pane: security,
     section: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
-  ): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def openSystemPreferences(
     pane: sharing,
     section: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing
-  ): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
-  def openSystemPreferences(pane: speech, section: Dictation | TTS): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def openSystemPreferences(pane: speech, section: Dictation | TTS): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
   def openSystemPreferences(
     pane: universalaccess,
     section: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
-  ): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
-  def openSystemPreferences_security(pane: security): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
-  def openSystemPreferences_sharing(pane: sharing): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
-  def openSystemPreferences_speech(pane: speech): js.Promise[Unit] = js.native
-  @JSImport("electron-util", "openSystemPreferences")
-  @js.native
-  def openSystemPreferences_universalaccess(pane: universalaccess): js.Promise[Unit] = js.native
+  ): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any], section.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("electron-util", "openUrlMenuItem")
-  @js.native
-  def openUrlMenuItem(): MenuItemConstructorOptions = js.native
-  @JSImport("electron-util", "openUrlMenuItem")
-  @js.native
-  def openUrlMenuItem(options: OpenUrlMenuItemOptions): MenuItemConstructorOptions = js.native
+  @scala.inline
+  def openSystemPreferences_security(pane: security): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("electron-util", "platform")
-  @js.native
-  def platform[Macos, Windows, Linux, Default](choices: Choices[Macos, Windows, Linux, Default]): Macos | Windows | Linux | Default = js.native
+  @scala.inline
+  def openSystemPreferences_sharing(pane: sharing): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("electron-util", "runJS")
-  @js.native
-  def runJS(code: String): js.Promise[_] = js.native
-  @JSImport("electron-util", "runJS")
-  @js.native
-  def runJS(code: String, window: BrowserWindow): js.Promise[_] = js.native
+  @scala.inline
+  def openSystemPreferences_speech(pane: speech): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("electron-util", "setContentSecurityPolicy")
-  @js.native
-  def setContentSecurityPolicy(policy: String): Unit = js.native
-  @JSImport("electron-util", "setContentSecurityPolicy")
-  @js.native
-  def setContentSecurityPolicy(policy: String, options: SetContentSecurityPolicyOptions): Unit = js.native
+  @scala.inline
+  def openSystemPreferences_universalaccess(pane: universalaccess): js.Promise[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("openSystemPreferences")(pane.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Unit]]
   
-  @JSImport("electron-util", "showAboutWindow")
-  @js.native
-  def showAboutWindow(options: ShowAboutWindowOptions): Unit = js.native
+  @scala.inline
+  def openUrlMenuItem(): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrlMenuItem")().asInstanceOf[MenuItemConstructorOptions]
+  @scala.inline
+  def openUrlMenuItem(options: OpenUrlMenuItemOptions): MenuItemConstructorOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("openUrlMenuItem")(options.asInstanceOf[js.Any]).asInstanceOf[MenuItemConstructorOptions]
+  
+  @scala.inline
+  def platform[Macos, Windows, Linux, Default](choices: Choices[Macos, Windows, Linux, Default]): Macos | Windows | Linux | Default = ^.asInstanceOf[js.Dynamic].applyDynamic("platform")(choices.asInstanceOf[js.Any]).asInstanceOf[Macos | Windows | Linux | Default]
+  
+  @scala.inline
+  def runJS(code: String): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+  @scala.inline
+  def runJS(code: String, window: BrowserWindow): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("runJS")(code.asInstanceOf[js.Any], window.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+  
+  @scala.inline
+  def setContentSecurityPolicy(policy: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def setContentSecurityPolicy(policy: String, options: SetContentSecurityPolicyOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setContentSecurityPolicy")(policy.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def showAboutWindow(options: ShowAboutWindowOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("showAboutWindow")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AboutMenuItemOptions = ShowAboutWindowOptions
   
-  @js.native
   trait CenterWindowOptions extends StObject {
     
     /**
     	Animate the change.
     	@default false
     	*/
-    val animated: js.UndefOr[Boolean] = js.native
+    val animated: js.UndefOr[Boolean] = js.undefined
     
     /**
     	Set a new window size.
@@ -355,13 +326,13 @@ object mod {
     	{width: 600, height: 400}
     	```
     	*/
-    val size: js.UndefOr[Size] = js.native
+    val size: js.UndefOr[Size] = js.undefined
     
     /**
     	The window to center.
     	Default: Current window
     	*/
-    val window: js.UndefOr[BrowserWindow] = js.native
+    val window: js.UndefOr[BrowserWindow] = js.undefined
   }
   object CenterWindowOptions {
     
@@ -396,20 +367,19 @@ object mod {
   
   type Choices[Macos, Windows, Linux, Default] = RequireAtLeastOne[_Choices[Macos, Windows, Linux, Default], macos | windows | linux]
   
-  @js.native
   trait DarkMode_ extends StObject {
     
     /**
     	Whether the macOS dark mode is enabled.
     	On Windows and Linux, it's `false`.
     	*/
-    val isEnabled: Boolean = js.native
+    val isEnabled: Boolean
     
     /**
     	The `callback` function is called when the macOS dark mode is toggled.
     	@returns A function, that when called, unsubscribes the listener. Calling it on Window and Linux works, but it just returns a no-op function.
     	*/
-    def onChange(callback: js.Function0[Unit]): js.Function0[Unit] = js.native
+    def onChange(callback: js.Function0[Unit]): js.Function0[Unit]
   }
   object DarkMode_ {
     
@@ -430,7 +400,6 @@ object mod {
     }
   }
   
-  @js.native
   trait GetWindowBoundsCenteredOptions extends StObject {
     
     /**
@@ -441,13 +410,13 @@ object mod {
     	{width: 600, height: 400}
     	```
     	*/
-    val size: js.UndefOr[Size] = js.native
+    val size: js.UndefOr[Size] = js.undefined
     
     /**
     	The window to get the bounds of.
     	Default: Current window
     	*/
-    val window: js.UndefOr[BrowserWindow] = js.native
+    val window: js.UndefOr[BrowserWindow] = js.undefined
   }
   object GetWindowBoundsCenteredOptions {
     
@@ -475,22 +444,21 @@ object mod {
   }
   
   /* Inlined parent std.Readonly<electron.electron.MenuItemConstructorOptions> */
-  @js.native
   trait OpenUrlMenuItemOptions extends StObject {
     
-    val accelerator: js.UndefOr[Accelerator] = js.native
+    val accelerator: js.UndefOr[Accelerator] = js.undefined
     
-    val acceleratorWorksWhenHidden: js.UndefOr[Boolean] = js.native
+    val acceleratorWorksWhenHidden: js.UndefOr[Boolean] = js.undefined
     
-    val after: js.UndefOr[js.Array[String]] = js.native
+    val after: js.UndefOr[js.Array[String]] = js.undefined
     
-    val afterGroupContaining: js.UndefOr[js.Array[String]] = js.native
+    val afterGroupContaining: js.UndefOr[js.Array[String]] = js.undefined
     
-    val before: js.UndefOr[js.Array[String]] = js.native
+    val before: js.UndefOr[js.Array[String]] = js.undefined
     
-    val beforeGroupContaining: js.UndefOr[js.Array[String]] = js.native
+    val beforeGroupContaining: js.UndefOr[js.Array[String]] = js.undefined
     
-    val checked: js.UndefOr[Boolean] = js.native
+    val checked: js.UndefOr[Boolean] = js.undefined
     
     val click: js.UndefOr[
         js.Function3[
@@ -499,38 +467,38 @@ object mod {
           /* event */ KeyboardEvent, 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    val enabled: js.UndefOr[Boolean] = js.native
+    val enabled: js.UndefOr[Boolean] = js.undefined
     
-    val icon: js.UndefOr[NativeImage_ | String] = js.native
+    val icon: js.UndefOr[NativeImage_ | String] = js.undefined
     
-    val id: js.UndefOr[String] = js.native
+    val id: js.UndefOr[String] = js.undefined
     
-    val label: js.UndefOr[String] = js.native
+    val label: js.UndefOr[String] = js.undefined
     
-    val registerAccelerator: js.UndefOr[Boolean] = js.native
+    val registerAccelerator: js.UndefOr[Boolean] = js.undefined
     
     val role: js.UndefOr[
         undo | redo | cut | copy | paste | pasteAndMatchStyle | delete | selectAll | reload | forceReload | toggleDevTools | resetZoom | zoomIn | zoomOut | togglefullscreen | window | minimize | close | help | about | services | hide | hideOthers | unhide | quit | startSpeaking | stopSpeaking | zoom | front | appMenu | fileMenu | editMenu | viewMenu | recentDocuments | toggleTabBar | selectNextTab | selectPreviousTab | mergeAllWindows | clearRecentDocuments | moveTabToNewWindow | windowMenu
-      ] = js.native
+      ] = js.undefined
     
-    val sublabel: js.UndefOr[String] = js.native
+    val sublabel: js.UndefOr[String] = js.undefined
     
-    val submenu: js.UndefOr[js.Array[MenuItemConstructorOptions] | Menu] = js.native
+    val submenu: js.UndefOr[js.Array[MenuItemConstructorOptions] | Menu] = js.undefined
     
-    val toolTip: js.UndefOr[String] = js.native
+    val toolTip: js.UndefOr[String] = js.undefined
     
     val `type`: js.UndefOr[
         normal | separator | typings.electronUtil.electronUtilStrings.submenu | checkbox | radio
-      ] = js.native
+      ] = js.undefined
     
     /**
     	URL to be opened when the menu item is clicked.
     	*/
-    val url: String = js.native
+    val url: String
     
-    val visible: js.UndefOr[Boolean] = js.native
+    val visible: js.UndefOr[Boolean] = js.undefined
   }
   object OpenUrlMenuItemOptions {
     
@@ -681,28 +649,27 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionalRectangle extends StObject {
     
     /**
     	The height of the rectangle (must be an integer).
     	*/
-    val height: js.UndefOr[Double] = js.native
+    val height: js.UndefOr[Double] = js.undefined
     
     /**
     	The width of the rectangle (must be an integer).
     	*/
-    val width: js.UndefOr[Double] = js.native
+    val width: js.UndefOr[Double] = js.undefined
     
     /**
     	The x coordinate of the origin of the rectangle (must be an integer).
     	*/
-    val x: js.UndefOr[Double] = js.native
+    val x: js.UndefOr[Double] = js.undefined
     
     /**
     	The y coordinate of the origin of the rectangle (must be an integer).
     	*/
-    val y: js.UndefOr[Double] = js.native
+    val y: js.UndefOr[Double] = js.undefined
   }
   object OptionalRectangle {
     
@@ -741,14 +708,13 @@ object mod {
     }
   }
   
-  @js.native
   trait SetContentSecurityPolicyOptions extends StObject {
     
     /**
     	The session to apply the policy to.
     	Default: [`electron.session.defaultSession`](https://electronjs.org/docs/api/session#sessiondefaultsession)
     	*/
-    val session: js.UndefOr[Session_] = js.native
+    val session: js.UndefOr[Session_] = js.undefined
   }
   object SetContentSecurityPolicyOptions {
     
@@ -769,25 +735,24 @@ object mod {
     }
   }
   
-  @js.native
   trait ShowAboutWindowOptions extends StObject {
     
     /**
     	The copyright text.
     	*/
-    val copyright: js.UndefOr[String] = js.native
+    val copyright: js.UndefOr[String] = js.undefined
     
     /**
     	An absolute path to the app icon.
     	Only used on Linux and Windows.
     	*/
-    val icon: js.UndefOr[String] = js.native
+    val icon: js.UndefOr[String] = js.undefined
     
     /**
     	Some additional text if needed.
     	Only used on Windows.
     	*/
-    val text: js.UndefOr[String] = js.native
+    val text: js.UndefOr[String] = js.undefined
     
     /**
     	Customizable for localization. Used in the menu item label and window title (Windows-only).
@@ -795,13 +760,13 @@ object mod {
     	Only used on Linux and Windows.
     	@default 'About'
     	*/
-    val title: js.UndefOr[String] = js.native
+    val title: js.UndefOr[String] = js.undefined
     
     /**
     	The URL to the app's website.
     	Only used on Linux.
     	*/
-    val website: js.UndefOr[String] = js.native
+    val website: js.UndefOr[String] = js.undefined
   }
   object ShowAboutWindowOptions {
     
@@ -846,16 +811,15 @@ object mod {
     }
   }
   
-  @js.native
   trait SystemPreferencesPanes extends StObject {
     
-    var security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture = js.native
+    var security: Advanced | FDE | Firewall | General | Privacy | Privacy_Accessibility | Privacy_Advertising | Privacy_AllFiles | Privacy_Assistive | Privacy_Automation | Privacy_Calendars | Privacy_Camera | Privacy_Contacts | Privacy_DesktopFolder | Privacy_Diagnostics | Privacy_DocumentsFolder | Privacy_DownloadsFolder | Privacy_LocationServices | Privacy_Microphone | Privacy_Photos | Privacy_Reminders | Privacy_ScreenCapture
     
-    var sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing = js.native
+    var sharing: Internet | Services_ARDService | Services_BluetoothSharing | Services_PersonalFileSharing | Services_PrinterSharing | Services_RemoteAppleEvent | Services_RemoteLogin | Services_ScreenSharing
     
-    var speech: Dictation | TTS = js.native
+    var speech: Dictation | TTS
     
-    var universalaccess: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch = js.native
+    var universalaccess: Captioning | Hearing | Keyboard | Media_Descriptions | Mouse | Seeing_Display | Seeing_VoiceOver | Seeing_Zoom | SpeakableItems | Switch
   }
   object SystemPreferencesPanes {
     
@@ -893,16 +857,15 @@ object mod {
     }
   }
   
-  @js.native
   trait _Choices[Macos, Windows, Linux, Default] extends StObject {
     
-    val default: js.UndefOr[Default | js.Function0[Default]] = js.native
+    val default: js.UndefOr[Default | js.Function0[Default]] = js.undefined
     
-    val linux: js.UndefOr[Linux | js.Function0[Linux]] = js.native
+    val linux: js.UndefOr[Linux | js.Function0[Linux]] = js.undefined
     
-    val macos: js.UndefOr[Macos | js.Function0[Macos]] = js.native
+    val macos: js.UndefOr[Macos | js.Function0[Macos]] = js.undefined
     
-    val windows: js.UndefOr[Windows | js.Function0[Windows]] = js.native
+    val windows: js.UndefOr[Windows | js.Function0[Windows]] = js.undefined
   }
   object _Choices {
     
@@ -913,7 +876,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class _ChoicesMutableBuilder[Self <: _Choices[_, _, _, _], Macos, Windows, Linux, Default] (val x: Self with (_Choices[Macos, Windows, Linux, Default])) extends AnyVal {
+    implicit class _ChoicesMutableBuilder[Self <: _Choices[?, ?, ?, ?], Macos, Windows, Linux, Default] (val x: Self & (_Choices[Macos, Windows, Linux, Default])) extends AnyVal {
       
       @scala.inline
       def setDefault(value: Default | js.Function0[Default]): Self = StObject.set(x, "default", value.asInstanceOf[js.Any])

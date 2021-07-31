@@ -1,11 +1,10 @@
 package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.NumberDictionary
-import typings.firefoxWebextBrowser.browser.extension.ViewType
+import typings.firefoxWebextBrowser.browser.`extension`.ViewType
 import typings.firefoxWebextBrowser.browser.tabs.Tab
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -89,67 +88,66 @@ object menus {
     def video: typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video = "video".asInstanceOf[typings.firefoxWebextBrowser.firefoxWebextBrowserStrings.video]
   }
   
-  @js.native
   trait CreateCreateProperties extends StObject {
     
     /**
       * The initial state of a checkbox or radio item: true for selected and false for unselected. Only one radio item can be selected at a time in a given group of radio items.
       */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies a command to issue for the context click. Currently supports internal commands _execute_page_action, _execute_browser_action and _execute_sidebar_action.
       */
-    var command: js.UndefOr[String] = js.native
+    var command: js.UndefOr[String] = js.undefined
     
     /** List of contexts this menu item will appear in. Defaults to ['page'] if not specified. */
-    var contexts: js.UndefOr[js.Array[ContextType]] = js.native
+    var contexts: js.UndefOr[js.Array[ContextType]] = js.undefined
     
     /**
       * Lets you restrict the item to apply only to documents whose URL matches one of the given patterns. (This applies to frames as well.) For details on the format of a pattern, see Match Patterns.
       */
-    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Whether this context menu item is enabled or disabled. Defaults to true. */
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var icons: js.UndefOr[CreateCreatePropertiesIcons] = js.native
+    var icons: js.UndefOr[CreateCreatePropertiesIcons] = js.undefined
     
     /**
       * The unique ID to assign to this item. Mandatory for event pages. Cannot be the same as another ID for this extension.
       */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /**
       * A function that will be called back when the menu item is clicked. Event pages cannot use this; instead, they should register a listener for `contextMenus.onClicked`.
       * @param info Information about the item clicked and the context where the click happened.
       * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
       */
-    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.native
+    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.undefined
     
     /** The ID of a parent menu item; this makes the item a child of a previously added item. */
-    var parentId: js.UndefOr[Double | String] = js.native
+    var parentId: js.UndefOr[Double | String] = js.undefined
     
     /**
       * Similar to documentUrlPatterns, but lets you filter based on the src attribute of img/audio/video tags and the href of anchor tags.
       */
-    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * The text to be displayed in the item; this is _required_ unless `type` is 'separator'. When the context is 'selection', you can use `%s` within the string to show the selected text. For example, if this parameter's value is "Translate '%s' to Pig Latin" and the user selects the word "cool", the context menu item for the selection is "Translate 'cool' to Pig Latin".
       */
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
     /** The type of menu item. Defaults to 'normal' if not specified. */
-    var `type`: js.UndefOr[ItemType] = js.native
+    var `type`: js.UndefOr[ItemType] = js.undefined
     
     /**
       * List of view types where the menu item will be shown. Defaults to any view, including those without a viewType.
       */
-    var viewTypes: js.UndefOr[js.Array[ViewType]] = js.native
+    var viewTypes: js.UndefOr[js.Array[ViewType]] = js.undefined
     
     /** Whether the item is visible in the menu. */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object CreateCreateProperties {
     
@@ -286,68 +284,67 @@ object menus {
   }
   
   /** Information sent when a context menu item is clicked. */
-  @js.native
   trait OnClickData extends StObject {
     
     /** The id of the bookmark where the context menu was clicked, if it was on a bookmark. */
-    var bookmarkId: String = js.native
+    var bookmarkId: String
     
     /** An integer value of button by which menu item was clicked. */
-    var button: js.UndefOr[Double] = js.native
+    var button: js.UndefOr[Double] = js.undefined
     
     /** A flag indicating the state of a checkbox or radio item after it is clicked. */
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
     /** A flag indicating whether the element is editable (text input, textarea, etc.). */
-    var editable: Boolean = js.native
+    var editable: Boolean
     
     /** The id of the frame of the element where the context menu was clicked. */
-    var frameId: js.UndefOr[Double] = js.native
+    var frameId: js.UndefOr[Double] = js.undefined
     
     /** The URL of the frame of the element where the context menu was clicked, if it was in a frame. */
-    var frameUrl: js.UndefOr[String] = js.native
+    var frameUrl: js.UndefOr[String] = js.undefined
     
     /** If the element is a link, the text of that link. */
-    var linkText: js.UndefOr[String] = js.native
+    var linkText: js.UndefOr[String] = js.undefined
     
     /** If the element is a link, the URL it points to. */
-    var linkUrl: js.UndefOr[String] = js.native
+    var linkUrl: js.UndefOr[String] = js.undefined
     
     /**
       * One of 'image', 'video', or 'audio' if the context menu was activated on one of these types of elements.
       */
-    var mediaType: js.UndefOr[String] = js.native
+    var mediaType: js.UndefOr[String] = js.undefined
     
     /** The ID of the menu item that was clicked. */
-    var menuItemId: Double | String = js.native
+    var menuItemId: Double | String
     
     /** An array of keyboard modifiers that were held while the menu item was clicked. */
-    var modifiers: js.Array[OnClickDataModifiers] = js.native
+    var modifiers: js.Array[OnClickDataModifiers]
     
     /**
       * The URL of the page where the menu item was clicked. This property is not set if the click occured in a context where there is no current page, such as in a launcher context menu.
       */
-    var pageUrl: js.UndefOr[String] = js.native
+    var pageUrl: js.UndefOr[String] = js.undefined
     
     /** The parent ID, if any, for the item clicked. */
-    var parentMenuItemId: js.UndefOr[Double | String] = js.native
+    var parentMenuItemId: js.UndefOr[Double | String] = js.undefined
     
     /** The text for the context selection, if any. */
-    var selectionText: js.UndefOr[String] = js.native
+    var selectionText: js.UndefOr[String] = js.undefined
     
     /** Will be present for elements with a 'src' URL. */
-    var srcUrl: js.UndefOr[String] = js.native
+    var srcUrl: js.UndefOr[String] = js.undefined
     
     /**
       * An identifier of the clicked element, if any. Use menus.getTargetElement in the page to find the corresponding element.
       */
-    var targetElementId: js.UndefOr[Double] = js.native
+    var targetElementId: js.UndefOr[Double] = js.undefined
     
     /** The type of view where the menu is clicked. May be unset if the menu is not associated with a view. */
-    var viewType: js.UndefOr[ViewType] = js.native
+    var viewType: js.UndefOr[ViewType] = js.undefined
     
     /** A flag indicating the state of a checkbox or radio item before it was clicked. */
-    var wasChecked: js.UndefOr[Boolean] = js.native
+    var wasChecked: js.UndefOr[Boolean] = js.undefined
   }
   object OnClickData {
     
@@ -495,34 +492,33 @@ object menus {
   /**
     * Information about the context of the menu action and the created menu items. For more information about each property, see OnClickData. The following properties are only set if the extension has host permissions for the given context: linkUrl, linkText, srcUrl, pageUrl, frameUrl, selectionText.
     */
-  @js.native
   trait OnShownInfo extends StObject {
     
     /** A list of all contexts that apply to the menu. */
-    var contexts: js.Array[ContextType] = js.native
+    var contexts: js.Array[ContextType]
     
-    var editable: Boolean = js.native
+    var editable: Boolean
     
-    var frameUrl: js.UndefOr[String] = js.native
+    var frameUrl: js.UndefOr[String] = js.undefined
     
-    var linkText: js.UndefOr[String] = js.native
+    var linkText: js.UndefOr[String] = js.undefined
     
-    var linkUrl: js.UndefOr[String] = js.native
+    var linkUrl: js.UndefOr[String] = js.undefined
     
-    var mediaType: js.UndefOr[String] = js.native
+    var mediaType: js.UndefOr[String] = js.undefined
     
     /** A list of IDs of the menu items that were shown. */
-    var menuIds: Double | js.Array[String] = js.native
+    var menuIds: Double | js.Array[String]
     
-    var pageUrl: js.UndefOr[String] = js.native
+    var pageUrl: js.UndefOr[String] = js.undefined
     
-    var selectionText: js.UndefOr[String] = js.native
+    var selectionText: js.UndefOr[String] = js.undefined
     
-    var srcUrl: js.UndefOr[String] = js.native
+    var srcUrl: js.UndefOr[String] = js.undefined
     
-    var targetElementId: js.UndefOr[Double] = js.native
+    var targetElementId: js.UndefOr[Double] = js.undefined
     
-    var viewType: js.UndefOr[ViewType] = js.native
+    var viewType: js.UndefOr[ViewType] = js.undefined
   }
   object OnShownInfo {
     
@@ -606,22 +602,21 @@ object menus {
     }
   }
   
-  @js.native
   trait OverrideContextContextOptions extends StObject {
     
     /** Required when context is 'bookmark'. Requires 'bookmark' permission. */
-    var bookmarkId: js.UndefOr[String] = js.native
+    var bookmarkId: js.UndefOr[String] = js.undefined
     
     /**
       * ContextType to override, to allow menu items from other extensions in the menu. Currently only 'bookmark' and 'tab' are supported. showDefaults cannot be used with this option.
       */
-    var context: js.UndefOr[OverrideContextContextOptionsContext] = js.native
+    var context: js.UndefOr[OverrideContextContextOptionsContext] = js.undefined
     
     /** Whether to also include default menu items in the menu. */
-    var showDefaults: js.UndefOr[Boolean] = js.native
+    var showDefaults: js.UndefOr[Boolean] = js.undefined
     
     /** Required when context is 'tab'. Requires 'tabs' permission. */
-    var tabId: js.UndefOr[Double] = js.native
+    var tabId: js.UndefOr[Double] = js.undefined
   }
   object OverrideContextContextOptions {
     
@@ -678,37 +673,36 @@ object menus {
   }
   
   /** The properties to update. Accepts the same values as the create function. */
-  @js.native
   trait UpdateUpdateProperties extends StObject {
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var contexts: js.UndefOr[js.Array[ContextType]] = js.native
+    var contexts: js.UndefOr[js.Array[ContextType]] = js.undefined
     
-    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var documentUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var enabled: js.UndefOr[Boolean] = js.native
+    var enabled: js.UndefOr[Boolean] = js.undefined
     
-    var icons: js.UndefOr[UpdateUpdatePropertiesIcons] = js.native
+    var icons: js.UndefOr[UpdateUpdatePropertiesIcons] = js.undefined
     
     /**
       * @param tab The details of the tab where the click took place. Note: this parameter only present for extensions.
       */
-    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.native
+    var onclick: js.UndefOr[js.Function2[/* info */ OnClickData, /* tab */ Tab, Unit]] = js.undefined
     
     /** Note: You cannot change an item to be a child of one of its own descendants. */
-    var parentId: js.UndefOr[Double | String] = js.native
+    var parentId: js.UndefOr[Double | String] = js.undefined
     
-    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.native
+    var targetUrlPatterns: js.UndefOr[js.Array[String]] = js.undefined
     
-    var title: js.UndefOr[String] = js.native
+    var title: js.UndefOr[String] = js.undefined
     
-    var `type`: js.UndefOr[ItemType] = js.native
+    var `type`: js.UndefOr[ItemType] = js.undefined
     
-    var viewTypes: js.UndefOr[js.Array[ViewType]] = js.native
+    var viewTypes: js.UndefOr[js.Array[ViewType]] = js.undefined
     
     /** Whether the item is visible in the menu. */
-    var visible: js.UndefOr[Boolean] = js.native
+    var visible: js.UndefOr[Boolean] = js.undefined
   }
   object UpdateUpdateProperties {
     

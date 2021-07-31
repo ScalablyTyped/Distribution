@@ -6,22 +6,22 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceActionresultsUpdate extends StandardParameters {
+trait ParamsResourceActionresultsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The hash. In the case of SHA-256, it will always be a lowercase hex
     * string exactly 64 characters long.
     */
-  var hash: js.UndefOr[String] = js.native
+  var hash: js.UndefOr[String] = js.undefined
   
   /**
     * The instance of the execution system to operate against. A server may
@@ -30,12 +30,12 @@ trait ParamsResourceActionresultsUpdate extends StandardParameters {
     * to select between them in an implementation-defined fashion, otherwise it
     * can be omitted.
     */
-  var instanceName: js.UndefOr[String] = js.native
+  var instanceName: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.native
+  var requestBody: js.UndefOr[SchemaBuildBazelRemoteExecutionV2ActionResult] = js.undefined
   
   /**
     * The priority (relative importance) of this content in the overall cache.
@@ -47,12 +47,12 @@ trait ParamsResourceActionresultsUpdate extends StandardParameters {
     * decide how these map into retention/eviction policy.
     */
   @JSName("resultsCachePolicy.priority")
-  var resultsCachePolicyDotpriority: js.UndefOr[Double] = js.native
+  var resultsCachePolicyDotpriority: js.UndefOr[Double] = js.undefined
   
   /**
     * The size of the blob, in bytes.
     */
-  var sizeBytes: js.UndefOr[String] = js.native
+  var sizeBytes: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceActionresultsUpdate {
   

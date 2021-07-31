@@ -2,21 +2,19 @@ package typings.awsSdk.sesv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactList extends StObject {
   
   /**
     * The name of the contact list.
     */
-  var ContactListName: js.UndefOr[typings.awsSdk.sesv2Mod.ContactListName] = js.native
+  var ContactListName: js.UndefOr[typings.awsSdk.sesv2Mod.ContactListName] = js.undefined
   
   /**
     * A timestamp noting the last time the contact list was updated.
     */
-  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.native
+  var LastUpdatedTimestamp: js.UndefOr[Timestamp] = js.undefined
 }
 object ContactList {
   

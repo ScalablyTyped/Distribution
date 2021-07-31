@@ -2,23 +2,21 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Stamp extends StObject {
   
   /**
     * The UTC date and time when the user adopted the signature.
     */
-  var adoptedDateTime: js.UndefOr[String] = js.native
+  var adoptedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The UTC DateTime when the item was created.
     */
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
-  var customField: js.UndefOr[String] = js.native
+  var customField: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the area in which a date stamp is placed. This parameter uses pixel positioning to draw a rectangle at the center of the stamp area.
@@ -31,26 +29,26 @@ trait Stamp extends StObject {
     * - `DateAreaWidth`: The width of the rectangle.
     * - `DateAreaHeight`: The height of the rectangle.
     */
-  var dateStampProperties: js.UndefOr[DateStampProperties] = js.native
+  var dateStampProperties: js.UndefOr[DateStampProperties] = js.undefined
   
   /**
     * When set to **true**, users may not resize the stamp.
     */
-  var disallowUserResizeStamp: js.UndefOr[String] = js.native
+  var disallowUserResizeStamp: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Optionally specify an external identifier for the user's signature.
     */
-  var externalID: js.UndefOr[String] = js.native
+  var externalID: js.UndefOr[String] = js.undefined
   
-  var imageBase64: js.UndefOr[String] = js.native
+  var imageBase64: js.UndefOr[String] = js.undefined
   
   /**
     * Specificies the type of image. Valid values are:
@@ -58,22 +56,22 @@ trait Stamp extends StObject {
     * - `signature_image`
     * - `initials_image`
     */
-  var imageType: js.UndefOr[String] = js.native
+  var imageType: js.UndefOr[String] = js.undefined
   
   /**
     * The date and time that the item was last modified.
     */
-  var lastModifiedDateTime: js.UndefOr[String] = js.native
+  var lastModifiedDateTime: js.UndefOr[String] = js.undefined
   
   /**
     * The phonetic spelling of the `signatureName`.
     */
-  var phoneticName: js.UndefOr[String] = js.native
+  var phoneticName: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the user's signature name.
     */
-  var signatureName: js.UndefOr[String] = js.native
+  var signatureName: js.UndefOr[String] = js.undefined
   
   /**
     * The format of a stamp. Valid values are:
@@ -81,22 +79,22 @@ trait Stamp extends StObject {
     * - `NameHanko`: The stamp represents only the signer's name.
     * - `NameDateHanko`: The stamp represents the signer's name and the date.
     */
-  var stampFormat: js.UndefOr[String] = js.native
+  var stampFormat: js.UndefOr[String] = js.undefined
   
   /**
     * The URI for retrieving the image of the user's stamp.
     */
-  var stampImageUri: js.UndefOr[String] = js.native
+  var stampImageUri: js.UndefOr[String] = js.undefined
   
   /**
     * The physical height of the stamp image (in millimeters) that the stamp vendor recommends for displaying the image in PDF documents.
     */
-  var stampSizeMM: js.UndefOr[String] = js.native
+  var stampSizeMM: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the item.
     */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object Stamp {
   

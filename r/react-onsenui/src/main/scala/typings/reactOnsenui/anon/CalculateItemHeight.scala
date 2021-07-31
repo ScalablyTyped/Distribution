@@ -2,19 +2,17 @@ package typings.reactOnsenui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CalculateItemHeight extends StObject {
   
-  def calculateItemHeight(rowIndex: Double): js.Any = js.native
+  def calculateItemHeight(rowIndex: Double): js.Any
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var modifier: js.UndefOr[String] = js.native
+  var modifier: js.UndefOr[String] = js.undefined
   
-  def renderRow(rowIndex: Double): js.Any = js.native
+  def renderRow(rowIndex: Double): js.Any
 }
 object CalculateItemHeight {
   

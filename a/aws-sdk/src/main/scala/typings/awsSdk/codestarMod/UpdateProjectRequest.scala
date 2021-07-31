@@ -2,26 +2,24 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateProjectRequest extends StObject {
   
   /**
     * The description of the project, if any.
     */
-  var description: js.UndefOr[ProjectDescription] = js.native
+  var description: js.UndefOr[ProjectDescription] = js.undefined
   
   /**
     * The ID of the project you want to update.
     */
-  var id: ProjectId = js.native
+  var id: ProjectId
   
   /**
     * The name of the project you want to update.
     */
-  var name: js.UndefOr[ProjectName] = js.native
+  var name: js.UndefOr[ProjectName] = js.undefined
 }
 object UpdateProjectRequest {
   

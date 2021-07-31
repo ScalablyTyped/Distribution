@@ -2,26 +2,24 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransitGatewayMulticastRegisteredGroupMembers extends StObject {
   
   /**
     * The IP address assigned to the transit gateway multicast group.
     */
-  var GroupIpAddress: js.UndefOr[String] = js.native
+  var GroupIpAddress: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the registered network interfaces.
     */
-  var RegisteredNetworkInterfaceIds: js.UndefOr[ValueStringList] = js.native
+  var RegisteredNetworkInterfaceIds: js.UndefOr[ValueStringList] = js.undefined
   
   /**
     * The ID of the transit gateway multicast domain.
     */
-  var TransitGatewayMulticastDomainId: js.UndefOr[String] = js.native
+  var TransitGatewayMulticastDomainId: js.UndefOr[String] = js.undefined
 }
 object TransitGatewayMulticastRegisteredGroupMembers {
   

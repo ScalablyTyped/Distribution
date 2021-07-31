@@ -2,15 +2,13 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListItem extends StObject {
   
-  var ContentTypeId: String = js.native
+  var ContentTypeId: String
   
-  var ID: Double = js.native
+  var ID: Double
 }
 object ListItem {
   

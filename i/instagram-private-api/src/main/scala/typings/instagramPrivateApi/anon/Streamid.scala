@@ -2,13 +2,11 @@ package typings.instagramPrivateApi.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Streamid extends StObject {
   
-  var stream_id: String = js.native
+  var stream_id: String
 }
 object Streamid {
   

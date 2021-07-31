@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSavingsPlansCoverageResponse extends StObject {
   
   /**
     * The token to retrieve the next set of results. Amazon Web Services provides the token when the response from a previous call has more results than the maximum page size.
     */
-  var NextToken: js.UndefOr[NextPageToken] = js.native
+  var NextToken: js.UndefOr[NextPageToken] = js.undefined
   
   /**
     * The amount of spend that your Savings Plans covered.
     */
-  var SavingsPlansCoverages: typings.awsSdk.costexplorerMod.SavingsPlansCoverages = js.native
+  var SavingsPlansCoverages: typings.awsSdk.costexplorerMod.SavingsPlansCoverages
 }
 object GetSavingsPlansCoverageResponse {
   

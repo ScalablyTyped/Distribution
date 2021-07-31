@@ -2,7 +2,6 @@ package typings.rxjsCompat
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scalarObservableMod {
@@ -14,14 +13,16 @@ object scalarObservableMod {
   /* static members */
   object ScalarObservable {
     
-    @JSImport("rxjs-compat/observable/ScalarObservable", "ScalarObservable.create")
+    @JSImport("rxjs-compat/observable/ScalarObservable", "ScalarObservable")
     @js.native
-    def create[T](value: T): js.Any = js.native
-    @JSImport("rxjs-compat/observable/ScalarObservable", "ScalarObservable.create")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create[T](value: T): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
     def create[T](
       value: T,
       scheduler: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify SchedulerLike */ js.Any
-    ): js.Any = js.native
+    ): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(value.asInstanceOf[js.Any], scheduler.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

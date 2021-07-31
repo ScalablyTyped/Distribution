@@ -5,48 +5,55 @@ import typings.mobxStateTree.actionMod.IMiddlewareHandler
 import typings.mobxStateTree.nodeUtilsMod.IAnyStateTreeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object createActionTrackingMiddleware2Mod {
   
-  @JSImport("mobx-state-tree/dist/middlewares/createActionTrackingMiddleware2", "createActionTrackingMiddleware2")
+  @JSImport("mobx-state-tree/dist/middlewares/createActionTrackingMiddleware2", JSImport.Namespace)
   @js.native
-  def createActionTrackingMiddleware2[TEnv](middlewareHooks: IActionTrackingMiddleware2Hooks[TEnv]): IMiddlewareHandler = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createActionTrackingMiddleware2[TEnv](middlewareHooks: IActionTrackingMiddleware2Hooks[TEnv]): IMiddlewareHandler = ^.asInstanceOf[js.Dynamic].applyDynamic("createActionTrackingMiddleware2")(middlewareHooks.asInstanceOf[js.Any]).asInstanceOf[IMiddlewareHandler]
   
   /* Inlined parent std.Readonly<mobx-state-tree.mobx-state-tree/dist/internal.IActionContext> */
-  @js.native
   trait IActionTrackingMiddleware2Call[TEnv] extends StObject {
     
-    val args: js.Array[_] = js.native
+    val args: js.Array[js.Any]
     
-    val context: IAnyStateTreeNode = js.native
+    val context: IAnyStateTreeNode
     
-    var env: js.UndefOr[TEnv] = js.native
+    var env: js.UndefOr[TEnv] = js.undefined
     
-    val id: Double = js.native
+    val id: Double
     
-    val name: String = js.native
+    val name: String
     
-    val parentActionEvent: js.UndefOr[IMiddlewareEvent] = js.native
+    val parentActionEvent: js.UndefOr[IMiddlewareEvent] = js.undefined
     
-    val parentCall: js.UndefOr[IActionTrackingMiddleware2Call[TEnv]] = js.native
+    val parentCall: js.UndefOr[IActionTrackingMiddleware2Call[TEnv]] = js.undefined
     
-    val tree: IAnyStateTreeNode = js.native
+    val tree: IAnyStateTreeNode
   }
   object IActionTrackingMiddleware2Call {
     
     @scala.inline
-    def apply[TEnv](args: js.Array[_], context: IAnyStateTreeNode, id: Double, name: String, tree: IAnyStateTreeNode): IActionTrackingMiddleware2Call[TEnv] = {
+    def apply[TEnv](
+      args: js.Array[js.Any],
+      context: IAnyStateTreeNode,
+      id: Double,
+      name: String,
+      tree: IAnyStateTreeNode
+    ): IActionTrackingMiddleware2Call[TEnv] = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any], context = context.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], tree = tree.asInstanceOf[js.Any])
       __obj.asInstanceOf[IActionTrackingMiddleware2Call[TEnv]]
     }
     
     @scala.inline
-    implicit class IActionTrackingMiddleware2CallMutableBuilder[Self <: IActionTrackingMiddleware2Call[_], TEnv] (val x: Self with IActionTrackingMiddleware2Call[TEnv]) extends AnyVal {
+    implicit class IActionTrackingMiddleware2CallMutableBuilder[Self <: IActionTrackingMiddleware2Call[?], TEnv] (val x: Self & IActionTrackingMiddleware2Call[TEnv]) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))

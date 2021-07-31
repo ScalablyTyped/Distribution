@@ -2,21 +2,19 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteResourceRequest extends StObject {
   
   /**
     * The identifier associated with the organization from which the resource is deleted.
     */
-  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId = js.native
+  var OrganizationId: typings.awsSdk.workmailMod.OrganizationId
   
   /**
     * The identifier of the resource to be deleted.
     */
-  var ResourceId: typings.awsSdk.workmailMod.ResourceId = js.native
+  var ResourceId: typings.awsSdk.workmailMod.ResourceId
 }
 object DeleteResourceRequest {
   

@@ -4,14 +4,12 @@ import typings.winrtUwp.Windows.Data.Xml.Dom.IXmlNode
 import typings.winrtUwp.Windows.Data.Xml.Dom.XmlDocument
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides support for the XSLT processor. */
 object Xsl {
   
   /** Provides the methods needed by the Xslt processor. */
-  @js.native
   trait XsltProcessor extends StObject {
     
     /**
@@ -19,14 +17,14 @@ object Xsl {
       * @param inputNode The node to process.
       * @return The resulting transformation.
       */
-    def transformToDocument(inputNode: IXmlNode): XmlDocument = js.native
+    def transformToDocument(inputNode: IXmlNode): XmlDocument
     
     /**
       * Processes a node and its children and returns the resulting string transformation.
       * @param inputNode The node to process.
       * @return The resulting transformation.
       */
-    def transformToString(inputNode: IXmlNode): String = js.native
+    def transformToString(inputNode: IXmlNode): String
   }
   object XsltProcessor {
     

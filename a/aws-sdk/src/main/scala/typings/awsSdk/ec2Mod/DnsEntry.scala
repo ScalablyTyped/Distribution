@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DnsEntry extends StObject {
   
   /**
     * The DNS name.
     */
-  var DnsName: js.UndefOr[String] = js.native
+  var DnsName: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the private hosted zone.
     */
-  var HostedZoneId: js.UndefOr[String] = js.native
+  var HostedZoneId: js.UndefOr[String] = js.undefined
 }
 object DnsEntry {
   

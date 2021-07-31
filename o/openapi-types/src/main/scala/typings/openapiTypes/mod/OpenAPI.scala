@@ -16,7 +16,6 @@ import typings.openapiTypes.mod.OpenAPIV3.ServerObject
 import typings.openapiTypes.mod.OpenAPIV3.TagObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object OpenAPI {
@@ -88,7 +87,12 @@ object OpenAPI {
       @scala.inline
       def `setX-express-openapi-additional-middleware`(
         value: js.Array[
-              js.Function3[/* request */ _, /* response */ _, /* next */ _, js.Promise[Unit] | Unit]
+              js.Function3[
+                /* request */ js.Any, 
+                /* response */ js.Any, 
+                /* next */ js.Any, 
+                js.Promise[Unit] | Unit
+              ]
             ]
       ): Self = StObject.set(x, "x-express-openapi-additional-middleware", value.asInstanceOf[js.Any])
       
@@ -96,7 +100,14 @@ object OpenAPI {
       def `setX-express-openapi-additional-middlewareUndefined`: Self = StObject.set(x, "x-express-openapi-additional-middleware", js.undefined)
       
       @scala.inline
-      def `setX-express-openapi-additional-middlewareVarargs`(value: (js.Function3[js.Any, js.Any, js.Any, js.Promise[Unit] | Unit])*): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value :_*))
+      def `setX-express-openapi-additional-middlewareVarargs`(
+        value: (js.Function3[
+              /* request */ js.Any, 
+              /* response */ js.Any, 
+              /* next */ js.Any, 
+              js.Promise[Unit] | Unit
+            ])*
+      ): Self = StObject.set(x, "x-express-openapi-additional-middleware", js.Array(value :_*))
       
       @scala.inline
       def `setX-express-openapi-validation-strict`(value: Boolean): Self = StObject.set(x, "x-express-openapi-validation-strict", value.asInstanceOf[js.Any])
@@ -247,16 +258,15 @@ object OpenAPI {
     typings.openapiTypes.mod.OpenAPIV2.Parameter | ParameterObject | ReferenceObject | typings.openapiTypes.mod.OpenAPIV2.ReferenceObject
   ]
   
-  @js.native
   trait Request extends StObject {
     
-    var body: js.UndefOr[js.Any] = js.native
+    var body: js.UndefOr[js.Any] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var params: js.UndefOr[js.Object] = js.native
+    var params: js.UndefOr[js.Object] = js.undefined
     
-    var query: js.UndefOr[js.Object] = js.native
+    var query: js.UndefOr[js.Object] = js.undefined
   }
   object Request {
     

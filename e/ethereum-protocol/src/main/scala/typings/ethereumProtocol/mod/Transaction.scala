@@ -3,33 +3,31 @@ package typings.ethereumProtocol.mod
 import typings.bignumberJs.mod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transaction extends StObject {
   
-  var blockHash: String | Null = js.native
+  var blockHash: String | Null
   
-  var blockNumber: Double | Null = js.native
+  var blockNumber: Double | Null
   
-  var from: String = js.native
+  var from: String
   
-  var gas: Double = js.native
+  var gas: Double
   
-  var gasPrice: default = js.native
+  var gasPrice: default
   
-  var hash: String = js.native
+  var hash: String
   
-  var input: String = js.native
+  var input: String
   
-  var nonce: Double = js.native
+  var nonce: Double
   
-  var to: String | Null = js.native
+  var to: String | Null
   
-  var transactionIndex: Double | Null = js.native
+  var transactionIndex: Double | Null
   
-  var value: default = js.native
+  var value: default
 }
 object Transaction {
   
@@ -43,7 +41,7 @@ object Transaction {
     nonce: Double,
     value: default
   ): Transaction = {
-    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], gas = gas.asInstanceOf[js.Any], gasPrice = gasPrice.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(from = from.asInstanceOf[js.Any], gas = gas.asInstanceOf[js.Any], gasPrice = gasPrice.asInstanceOf[js.Any], hash = hash.asInstanceOf[js.Any], input = input.asInstanceOf[js.Any], nonce = nonce.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any], blockHash = null, blockNumber = null, to = null, transactionIndex = null)
     __obj.asInstanceOf[Transaction]
   }
   

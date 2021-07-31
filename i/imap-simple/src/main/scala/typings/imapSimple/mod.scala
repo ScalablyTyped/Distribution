@@ -6,20 +6,22 @@ import typings.imap.mod.FetchOptions
 import typings.imap.mod.ImapMessageAttributes
 import typings.imap.mod.ImapMessageBodyInfo
 import typings.imap.mod.MailBoxes
-import typings.imap.mod.^
 import typings.node.eventsMod.EventEmitter
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("imap-simple", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("imap-simple", "ImapSimple")
   @js.native
   class ImapSimple protected () extends EventEmitter {
-    def this(imap: ^) = this()
+    def this(imap: typings.imap.mod.^) = this()
     
     def addBox(boxName: String): js.Promise[String] = js.native
     /** Create a mailbox, calling the provided callback with signature (err, boxName), or resolves the returned promise with boxName. */
@@ -80,7 +82,7 @@ object mod {
     /** Returns the full list of mailboxes (folders). Upon success, either the provided callback will be called with signature (err, boxes), or the returned promise will be resolved with boxes. Boxes is the exact object returned from the node-imap getBoxes() result. */
     def getBoxes(callback: js.Function2[/* err */ Error, /* boxes */ MailBoxes, Unit]): Unit = js.native
     
-    def getPartData(message: Message, part: js.Any): js.Promise[_] = js.native
+    def getPartData(message: Message, part: js.Any): js.Promise[js.Any] = js.native
     /** Downloads part data (which is either part of the message body, or an attachment). Upon success, either the provided callback will be called with signature (err, data), or the returned promise will be resolved with data. The data will be automatically decoded based on its encoding. If the encoding of the part is not supported, an error will occur. */
     def getPartData(message: Message, part: js.Any, callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
     
@@ -94,57 +96,61 @@ object mod {
     /** Open a mailbox, calling the provided callback with signature (err, boxName), or resolves the returned promise with boxName. */
     def openBox(boxName: String, callback: js.Function2[/* err */ Error, /* boxName */ String, Unit]): Unit = js.native
     
-    def search(searchCriteria: js.Array[_], fetchOptions: FetchOptions): js.Promise[js.Array[Message]] = js.native
+    def search(searchCriteria: js.Array[js.Any], fetchOptions: FetchOptions): js.Promise[js.Array[Message]] = js.native
     /** Search for and retrieve mail in the currently open mailbox. */
     def search(
-      searchCriteria: js.Array[_],
+      searchCriteria: js.Array[js.Any],
       fetchOptions: FetchOptions,
       callback: js.Function2[/* err */ Error, /* messages */ js.Array[Message], Unit]
     ): Unit = js.native
   }
   
-  @JSImport("imap-simple", "connect")
-  @js.native
-  def connect(options: ImapSimpleOptions): js.Promise[ImapSimple] = js.native
-  @JSImport("imap-simple", "connect")
-  @js.native
+  @scala.inline
+  def connect(options: ImapSimpleOptions): js.Promise[ImapSimple] = ^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any]).asInstanceOf[js.Promise[ImapSimple]]
+  @scala.inline
   def connect(
     options: ImapSimpleOptions,
     callback: js.Function2[/* err */ Error, /* connection */ ImapSimple, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("connect")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object errors {
     
     @JSImport("imap-simple", "errors.ConnectionTimeoutError")
     @js.native
-    class ConnectionTimeoutError protected () extends Error {
+    class ConnectionTimeoutError protected ()
+      extends StObject
+         with Error {
       def this(timeout: Double) = this()
+      
+      /* CompleteClass */
+      var message: String = js.native
+      
+      /* CompleteClass */
+      var name: String = js.native
       
       var timeout: Double = js.native
     }
   }
   
-  @JSImport("imap-simple", "getParts")
-  @js.native
-  def getParts(struct: js.Array[_]): js.Array[_] = js.native
+  @scala.inline
+  def getParts(struct: js.Array[js.Any]): js.Array[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getParts")(struct.asInstanceOf[js.Any]).asInstanceOf[js.Array[js.Any]]
   
-  @js.native
   trait ImapSimpleOptions extends StObject {
     
     /** Time in milliseconds to wait before giving up on a connection attempt. (Deprecated: please use options.imap.authTimeout instead) */
-    var connectTimeout: js.UndefOr[Double] = js.native
+    var connectTimeout: js.UndefOr[Double] = js.undefined
     
     /** Options to pass to node-imap constructor. */
-    var imap: Config = js.native
+    var imap: Config
     
     /** Server event emitted when a message was expunged externally. seqno is the sequence number (instead of the unique UID) of the message that was expunged. If you are caching sequence numbers, all sequence numbers higher than this value MUST be decremented by 1 in order to stay synchronized with the server and to keep correct continuity. */
-    var onexpunge: js.UndefOr[js.Function1[/* seqno */ Double, Unit]] = js.native
+    var onexpunge: js.UndefOr[js.Function1[/* seqno */ Double, Unit]] = js.undefined
     
     /** Server event emitted when new mail arrives in the currently open mailbox. */
-    var onmail: js.UndefOr[js.Function1[/* numNewMail */ Double, Unit]] = js.native
+    var onmail: js.UndefOr[js.Function1[/* numNewMail */ Double, Unit]] = js.undefined
     
     /** Server event emitted when message metadata (e.g. flags) changes externally. */
-    var onupdate: js.UndefOr[js.Function2[/* seqno */ Double, /* info */ js.Any, Unit]] = js.native
+    var onupdate: js.UndefOr[js.Function2[/* seqno */ Double, /* info */ js.Any, Unit]] = js.undefined
   }
   object ImapSimpleOptions {
     
@@ -186,14 +192,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var attributes: ImapMessageAttributes = js.native
+    var attributes: ImapMessageAttributes
     
-    var parts: js.Array[MessageBodyPart] = js.native
+    var parts: js.Array[MessageBodyPart]
     
-    var seqno: Double = js.native
+    var seqno: Double
   }
   object Message {
     
@@ -220,11 +225,12 @@ object mod {
     }
   }
   
-  @js.native
-  trait MessageBodyPart extends ImapMessageBodyInfo {
+  trait MessageBodyPart
+    extends StObject
+       with ImapMessageBodyInfo {
     
     /** string type where which=='TEXT', complex Object where which=='HEADER' */
-    var body: js.Any = js.native
+    var body: js.Any
   }
   object MessageBodyPart {
     

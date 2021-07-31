@@ -2,61 +2,59 @@ package typings.awsSdk.route53resolverMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResolverQueryLogConfig extends StObject {
   
   /**
     * The ARN for the query logging configuration.
     */
-  var Arn: js.UndefOr[typings.awsSdk.route53resolverMod.Arn] = js.native
+  var Arn: js.UndefOr[typings.awsSdk.route53resolverMod.Arn] = js.undefined
   
   /**
     * The number of VPCs that are associated with the query logging configuration.
     */
-  var AssociationCount: js.UndefOr[Count] = js.native
+  var AssociationCount: js.UndefOr[Count] = js.undefined
   
   /**
     * The date and time that the query logging configuration was created, in Unix time format and Coordinated Universal Time (UTC).
     */
-  var CreationTime: js.UndefOr[Rfc3339TimeString] = js.native
+  var CreationTime: js.UndefOr[Rfc3339TimeString] = js.undefined
   
   /**
     * A unique string that identifies the request that created the query logging configuration. The CreatorRequestId allows failed requests to be retried without the risk of executing the operation twice.
     */
-  var CreatorRequestId: js.UndefOr[typings.awsSdk.route53resolverMod.CreatorRequestId] = js.native
+  var CreatorRequestId: js.UndefOr[typings.awsSdk.route53resolverMod.CreatorRequestId] = js.undefined
   
   /**
     * The ARN of the resource that you want Resolver to send query logs: an Amazon S3 bucket, a CloudWatch Logs log group, or a Kinesis Data Firehose delivery stream.
     */
-  var DestinationArn: js.UndefOr[typings.awsSdk.route53resolverMod.DestinationArn] = js.native
+  var DestinationArn: js.UndefOr[typings.awsSdk.route53resolverMod.DestinationArn] = js.undefined
   
   /**
     * The ID for the query logging configuration.
     */
-  var Id: js.UndefOr[ResourceId] = js.native
+  var Id: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The name of the query logging configuration. 
     */
-  var Name: js.UndefOr[ResolverQueryLogConfigName] = js.native
+  var Name: js.UndefOr[ResolverQueryLogConfigName] = js.undefined
   
   /**
     * The AWS account ID for the account that created the query logging configuration. 
     */
-  var OwnerId: js.UndefOr[AccountId] = js.native
+  var OwnerId: js.UndefOr[AccountId] = js.undefined
   
   /**
     * An indication of whether the query logging configuration is shared with other AWS accounts, or was shared with the current account by another AWS account. Sharing is configured through AWS Resource Access Manager (AWS RAM).
     */
-  var ShareStatus: js.UndefOr[typings.awsSdk.route53resolverMod.ShareStatus] = js.native
+  var ShareStatus: js.UndefOr[typings.awsSdk.route53resolverMod.ShareStatus] = js.undefined
   
   /**
     * The status of the specified query logging configuration. Valid values include the following:    CREATING: Resolver is creating the query logging configuration.    CREATED: The query logging configuration was successfully created. Resolver is logging queries that originate in the specified VPC.    DELETING: Resolver is deleting this query logging configuration.    FAILED: Resolver can't deliver logs to the location that is specified in the query logging configuration. Here are two common causes:   The specified destination (for example, an Amazon S3 bucket) was deleted.   Permissions don't allow sending logs to the destination.    
     */
-  var Status: js.UndefOr[ResolverQueryLogConfigStatus] = js.native
+  var Status: js.UndefOr[ResolverQueryLogConfigStatus] = js.undefined
 }
 object ResolverQueryLogConfig {
   

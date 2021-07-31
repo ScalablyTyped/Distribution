@@ -2,16 +2,14 @@ package typings.camljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRawQuery extends StObject {
   
-  def ModifyWhere(): IRawQueryModify = js.native
+  def ModifyWhere(): IRawQueryModify
   
   /** Change Where clause */
-  def ReplaceWhere(): IFieldExpression = js.native
+  def ReplaceWhere(): IFieldExpression
 }
 object IRawQuery {
   

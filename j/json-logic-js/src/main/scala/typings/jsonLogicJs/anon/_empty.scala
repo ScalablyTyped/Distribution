@@ -3,19 +3,19 @@ package typings.jsonLogicJs.anon
 import typings.jsonLogicJs.mod._RulesLogic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait _empty extends _RulesLogic {
+trait _empty
+  extends StObject
+     with _RulesLogic {
   
   @JSName("==")
-  var EqualssignEqualssign: js.Tuple2[_, _] = js.native
+  var EqualssignEqualssign: js.Tuple2[js.Any, js.Any]
 }
 object _empty {
   
   @scala.inline
-  def apply(EqualssignEqualssign: js.Tuple2[_, _]): _empty = {
+  def apply(EqualssignEqualssign: js.Tuple2[js.Any, js.Any]): _empty = {
     val __obj = js.Dynamic.literal()
     __obj.updateDynamic("==")(EqualssignEqualssign.asInstanceOf[js.Any])
     __obj.asInstanceOf[_empty]
@@ -25,6 +25,6 @@ object _empty {
   implicit class _emptyMutableBuilder[Self <: _empty] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setEqualssignEqualssign(value: js.Tuple2[_, _]): Self = StObject.set(x, "==", value.asInstanceOf[js.Any])
+    def setEqualssignEqualssign(value: js.Tuple2[js.Any, js.Any]): Self = StObject.set(x, "==", value.asInstanceOf[js.Any])
   }
 }

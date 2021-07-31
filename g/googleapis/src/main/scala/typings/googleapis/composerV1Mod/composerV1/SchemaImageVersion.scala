@@ -2,31 +2,29 @@ package typings.googleapis.composerV1Mod.composerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ImageVersion information
   */
-@js.native
 trait SchemaImageVersion extends StObject {
   
   /**
     * The string identifier of the ImageVersion, in the form:
     * &quot;composer-x.y.z-airflow-a.b(.c)&quot;
     */
-  var imageVersionId: js.UndefOr[String] = js.native
+  var imageVersionId: js.UndefOr[String] = js.undefined
   
   /**
     * Whether this is the default ImageVersion used by Composer during
     * environment creation if no input ImageVersion is specified.
     */
-  var isDefault: js.UndefOr[Boolean] = js.native
+  var isDefault: js.UndefOr[Boolean] = js.undefined
   
   /**
     * supported python versions
     */
-  var supportedPythonVersions: js.UndefOr[js.Array[String]] = js.native
+  var supportedPythonVersions: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaImageVersion {
   

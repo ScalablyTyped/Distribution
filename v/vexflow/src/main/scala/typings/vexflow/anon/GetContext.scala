@@ -2,19 +2,17 @@ package typings.vexflow.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetContext extends StObject {
   
-  var getContext: js.Function = js.native
+  var getContext: js.Function
   
-  var getMetrics: js.Function = js.native
+  var getMetrics: js.Function
   
-  var renderToStave: js.Function = js.native
+  var renderToStave: js.Function
   
-  var setStave: js.Function = js.native
+  var setStave: js.Function
 }
 object GetContext {
   

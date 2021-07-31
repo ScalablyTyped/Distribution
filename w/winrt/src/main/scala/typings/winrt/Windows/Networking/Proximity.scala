@@ -8,7 +8,6 @@ import typings.winrt.Windows.Networking.Sockets.StreamSocket
 import typings.winrt.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Proximity {
@@ -20,13 +19,19 @@ object Proximity {
   object PeerDiscoveryTypes extends StObject {
     
     @js.native
-    sealed trait browse extends PeerDiscoveryTypes
+    sealed trait browse
+      extends StObject
+         with PeerDiscoveryTypes
     
     @js.native
-    sealed trait none extends PeerDiscoveryTypes
+    sealed trait none
+      extends StObject
+         with PeerDiscoveryTypes
     
     @js.native
-    sealed trait triggered extends PeerDiscoveryTypes
+    sealed trait triggered
+      extends StObject
+         with PeerDiscoveryTypes
   }
   
   @js.native
@@ -36,26 +41,39 @@ object Proximity {
   object TriggeredConnectState extends StObject {
     
     @js.native
-    sealed trait canceled extends TriggeredConnectState
+    sealed trait canceled
+      extends StObject
+         with TriggeredConnectState
     
     @js.native
-    sealed trait completed extends TriggeredConnectState
+    sealed trait completed
+      extends StObject
+         with TriggeredConnectState
     
     @js.native
-    sealed trait connecting extends TriggeredConnectState
+    sealed trait connecting
+      extends StObject
+         with TriggeredConnectState
     
     @js.native
-    sealed trait failed extends TriggeredConnectState
+    sealed trait failed
+      extends StObject
+         with TriggeredConnectState
     
     @js.native
-    sealed trait listening extends TriggeredConnectState
+    sealed trait listening
+      extends StObject
+         with TriggeredConnectState
     
     @js.native
-    sealed trait peerFound extends TriggeredConnectState
+    sealed trait peerFound
+      extends StObject
+         with TriggeredConnectState
   }
   
-  @js.native
-  trait ConnectionRequestedEventArgs extends IConnectionRequestedEventArgs
+  trait ConnectionRequestedEventArgs
+    extends StObject
+       with IConnectionRequestedEventArgs
   object ConnectionRequestedEventArgs {
     
     @scala.inline
@@ -69,10 +87,9 @@ object Proximity {
   
   type DeviceDepartedEventHandler = js.Function1[/* sender */ ProximityDevice, Unit]
   
-  @js.native
   trait IConnectionRequestedEventArgs extends StObject {
     
-    var peerInformation: PeerInformation = js.native
+    var peerInformation: PeerInformation
   }
   object IConnectionRequestedEventArgs {
     
@@ -119,10 +136,9 @@ object Proximity {
     var supportedDiscoveryTypes: PeerDiscoveryTypes = js.native
   }
   
-  @js.native
   trait IPeerInformation extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
   }
   object IPeerInformation {
     
@@ -169,14 +185,13 @@ object Proximity {
     def subscribeForMessage(messageType: String, messageReceivedHandler: MessageReceivedHandler): Double = js.native
   }
   
-  @js.native
   trait IProximityDeviceStatics extends StObject {
     
-    def fromId(deviceInterfaceId: String): ProximityDevice = js.native
+    def fromId(deviceInterfaceId: String): ProximityDevice
     
-    def getDefault(): ProximityDevice = js.native
+    def getDefault(): ProximityDevice
     
-    def getDeviceSelector(): String = js.native
+    def getDeviceSelector(): String
   }
   object IProximityDeviceStatics {
     
@@ -204,16 +219,15 @@ object Proximity {
     }
   }
   
-  @js.native
   trait IProximityMessage extends StObject {
     
-    var data: IBuffer = js.native
+    var data: IBuffer
     
-    var dataAsString: String = js.native
+    var dataAsString: String
     
-    var messageType: String = js.native
+    var messageType: String
     
-    var subscriptionId: Double = js.native
+    var subscriptionId: Double
   }
   object IProximityMessage {
     
@@ -240,14 +254,13 @@ object Proximity {
     }
   }
   
-  @js.native
   trait ITriggeredConnectionStateChangedEventArgs extends StObject {
     
-    var id: Double = js.native
+    var id: Double
     
-    var socket: StreamSocket = js.native
+    var socket: StreamSocket
     
-    var state: TriggeredConnectState = js.native
+    var state: TriggeredConnectState
   }
   object ITriggeredConnectionStateChangedEventArgs {
     
@@ -275,11 +288,11 @@ object Proximity {
   
   type MessageTransmittedHandler = js.Function2[/* sender */ ProximityDevice, /* messageId */ Double, Unit]
   
-  @js.native
   trait PeerFinder extends StObject
   
-  @js.native
-  trait PeerInformation extends IPeerInformation
+  trait PeerInformation
+    extends StObject
+       with IPeerInformation
   object PeerInformation {
     
     @scala.inline
@@ -290,10 +303,13 @@ object Proximity {
   }
   
   @js.native
-  trait ProximityDevice extends IProximityDevice
+  trait ProximityDevice
+    extends StObject
+       with IProximityDevice
   
-  @js.native
-  trait ProximityMessage extends IProximityMessage
+  trait ProximityMessage
+    extends StObject
+       with IProximityMessage
   object ProximityMessage {
     
     @scala.inline
@@ -303,8 +319,9 @@ object Proximity {
     }
   }
   
-  @js.native
-  trait TriggeredConnectionStateChangedEventArgs extends ITriggeredConnectionStateChangedEventArgs
+  trait TriggeredConnectionStateChangedEventArgs
+    extends StObject
+       with ITriggeredConnectionStateChangedEventArgs
   object TriggeredConnectionStateChangedEventArgs {
     
     @scala.inline

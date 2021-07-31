@@ -3,27 +3,25 @@ package typings.fhirKitClient.anon
 import typings.fhir.fhir.Provenance
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BodyProvenanceHeaders extends StObject {
   
-  var body: Provenance = js.native
+  var body: Provenance
   
-  var headers: js.UndefOr[typings.request.mod.Headers] = js.native
+  var headers: js.UndefOr[typings.request.mod.Headers] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var options: js.UndefOr[typings.request.mod.Options] = js.native
+  var options: js.UndefOr[typings.request.mod.Options] = js.undefined
   
-  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Provenance = js.native
+  var resourceType: typings.fhirKitClient.fhirKitClientStrings.Provenance
 }
 object BodyProvenanceHeaders {
   
   @scala.inline
-  def apply(body: Provenance, id: String, resourceType: typings.fhirKitClient.fhirKitClientStrings.Provenance): BodyProvenanceHeaders = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = resourceType.asInstanceOf[js.Any])
+  def apply(body: Provenance, id: String): BodyProvenanceHeaders = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], resourceType = "Provenance")
     __obj.asInstanceOf[BodyProvenanceHeaders]
   }
   

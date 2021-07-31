@@ -3,21 +3,19 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.textStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSTextStyle extends StObject {
   
-  var _class: textStyle = js.native
+  var _class: textStyle
   
-  var encodedAttributes: SketchMSAttributes = js.native
+  var encodedAttributes: SketchMSAttributes
 }
 object SketchMSTextStyle {
   
   @scala.inline
-  def apply(_class: textStyle, encodedAttributes: SketchMSAttributes): SketchMSTextStyle = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], encodedAttributes = encodedAttributes.asInstanceOf[js.Any])
+  def apply(encodedAttributes: SketchMSAttributes): SketchMSTextStyle = {
+    val __obj = js.Dynamic.literal(_class = "textStyle", encodedAttributes = encodedAttributes.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSTextStyle]
   }
   

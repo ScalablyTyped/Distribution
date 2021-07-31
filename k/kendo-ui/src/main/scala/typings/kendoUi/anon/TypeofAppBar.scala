@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.AppBar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofAppBar extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): AppBar = js.native
+  def extend(proto: js.Object): AppBar
   
   /* static member */
-  var fn: AppBar = js.native
+  var fn: AppBar
 }
 object TypeofAppBar {
   

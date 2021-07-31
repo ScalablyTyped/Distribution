@@ -7,10 +7,13 @@ import typings.modesl.modeslStrings.xml
 import typings.node.eventsMod.EventEmitter
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("modesl", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("modesl", "Connection")
   @js.native
@@ -23,9 +26,9 @@ object mod {
     def auth(cb: js.Function0[Unit]): Unit = js.native
     
     def bgapi(command: js.Any, args: js.Array[String]): Unit = js.native
-    def bgapi(command: js.Any, args: js.Array[String], jobid: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): Unit = js.native
     def bgapi(command: js.Any, args: js.Array[String], jobid: js.Any): Unit = js.native
     def bgapi(command: js.Any, args: js.Array[String], jobid: js.Any, cb: js.Function0[Unit]): Unit = js.native
+    def bgapi(command: js.Any, args: js.Array[String], jobid: Unit, cb: js.Function0[Unit]): Unit = js.native
     
     def connected(): js.Any = js.native
     
@@ -45,32 +48,22 @@ object mod {
     def events_xml(`type`: xml, events: String, cb: js.Function0[Unit]): Unit = js.native
     
     def execute(app: js.Any): js.Any = js.native
-    def execute(
-      app: js.Any,
-      arg: js.UndefOr[scala.Nothing],
-      uuid: js.UndefOr[scala.Nothing],
-      cb: js.Function0[Unit]
-    ): js.Any = js.native
-    def execute(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String): js.Any = js.native
-    def execute(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String, cb: js.Function0[Unit]): js.Any = js.native
     def execute(app: js.Any, arg: String): js.Any = js.native
-    def execute(app: js.Any, arg: String, uuid: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): js.Any = js.native
     def execute(app: js.Any, arg: String, uuid: String): js.Any = js.native
     def execute(app: js.Any, arg: String, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
+    def execute(app: js.Any, arg: String, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
+    def execute(app: js.Any, arg: Unit, uuid: String): js.Any = js.native
+    def execute(app: js.Any, arg: Unit, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
+    def execute(app: js.Any, arg: Unit, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
     
     def executeAsync(app: js.Any): js.Any = js.native
-    def executeAsync(
-      app: js.Any,
-      arg: js.UndefOr[scala.Nothing],
-      uuid: js.UndefOr[scala.Nothing],
-      cb: js.Function0[Unit]
-    ): js.Any = js.native
-    def executeAsync(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String): js.Any = js.native
-    def executeAsync(app: js.Any, arg: js.UndefOr[scala.Nothing], uuid: String, cb: js.Function0[Unit]): js.Any = js.native
     def executeAsync(app: js.Any, arg: String): js.Any = js.native
-    def executeAsync(app: js.Any, arg: String, uuid: js.UndefOr[scala.Nothing], cb: js.Function0[Unit]): js.Any = js.native
     def executeAsync(app: js.Any, arg: String, uuid: String): js.Any = js.native
     def executeAsync(app: js.Any, arg: String, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
+    def executeAsync(app: js.Any, arg: String, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
+    def executeAsync(app: js.Any, arg: Unit, uuid: String): js.Any = js.native
+    def executeAsync(app: js.Any, arg: Unit, uuid: String, cb: js.Function0[Unit]): js.Any = js.native
+    def executeAsync(app: js.Any, arg: Unit, uuid: Unit, cb: js.Function0[Unit]): js.Any = js.native
     
     def filter(header: js.Any, value: js.Any): Unit = js.native
     def filter(header: js.Any, value: js.Any, cb: js.Function0[Unit]): Unit = js.native
@@ -163,20 +156,17 @@ object mod {
     def close(callback: js.Any): Unit = js.native
   }
   
-  @JSImport("modesl", "eslSetLogLevel")
-  @js.native
-  def eslSetLogLevel(level: js.Any): Unit = js.native
+  @scala.inline
+  def eslSetLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("eslSetLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("modesl", "setLogLevel")
-  @js.native
-  def setLogLevel(level: js.Any): Unit = js.native
+  @scala.inline
+  def setLogLevel(level: js.Any): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLogLevel")(level.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @js.native
   trait Header extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var value: String = js.native
+    var value: String
   }
   object Header {
     

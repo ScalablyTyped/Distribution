@@ -2,43 +2,41 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OauthAuthorizationsUpdateAuthorizationEndpoint extends StObject {
   
   /**
     * A list of scopes to add to this authorization.
     */
-  var add_scopes: js.UndefOr[js.Array[String]] = js.native
+  var add_scopes: js.UndefOr[js.Array[String]] = js.undefined
   
-  var authorization_id: Double = js.native
+  var authorization_id: Double
   
   /**
     * A unique string to distinguish an authorization from others created for the same client ID and user.
     */
-  var fingerprint: js.UndefOr[String] = js.native
+  var fingerprint: js.UndefOr[String] = js.undefined
   
   /**
     * A note to remind you what the OAuth token is for. Tokens not associated with a specific OAuth application (i.e. personal access tokens) must have a unique note.
     */
-  var note: js.UndefOr[String] = js.native
+  var note: js.UndefOr[String] = js.undefined
   
   /**
     * A URL to remind you what app the OAuth token is for.
     */
-  var note_url: js.UndefOr[String] = js.native
+  var note_url: js.UndefOr[String] = js.undefined
   
   /**
     * A list of scopes to remove from this authorization.
     */
-  var remove_scopes: js.UndefOr[js.Array[String]] = js.native
+  var remove_scopes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Replaces the authorization scopes with these.
     */
-  var scopes: js.UndefOr[js.Array[String]] = js.native
+  var scopes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OauthAuthorizationsUpdateAuthorizationEndpoint {
   

@@ -2,14 +2,12 @@ package typings.googleapis.runV1alpha1Mod.runV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ConfigurationStatus communicates the observed state of the Configuration
   * (from the controller).
   */
-@js.native
 trait SchemaConfigurationStatus extends StObject {
   
   /**
@@ -17,21 +15,21 @@ trait SchemaConfigurationStatus extends StObject {
     * processes that bring the &quot;spec&quot; inline with the observed state
     * of the world.
     */
-  var conditions: js.UndefOr[js.Array[SchemaConfigurationCondition]] = js.native
+  var conditions: js.UndefOr[js.Array[SchemaConfigurationCondition]] = js.undefined
   
   /**
     * LatestCreatedRevisionName is the last revision that was created from this
     * Configuration. It might not be ready yet, for that use
     * LatestReadyRevisionName.
     */
-  var latestCreatedRevisionName: js.UndefOr[String] = js.native
+  var latestCreatedRevisionName: js.UndefOr[String] = js.undefined
   
   /**
     * LatestReadyRevisionName holds the name of the latest Revision stamped out
     * from this Configuration that has had its &quot;Ready&quot; condition
     * become &quot;True&quot;.
     */
-  var latestReadyRevisionName: js.UndefOr[String] = js.native
+  var latestReadyRevisionName: js.UndefOr[String] = js.undefined
   
   /**
     * ObservedGeneration is the &#39;Generation&#39; of the Configuration that
@@ -41,7 +39,7 @@ trait SchemaConfigurationStatus extends StObject {
     * observedGeneration = metadata.generation, and the Ready condition&#39;s
     * status is True or False.
     */
-  var observedGeneration: js.UndefOr[Double] = js.native
+  var observedGeneration: js.UndefOr[Double] = js.undefined
 }
 object SchemaConfigurationStatus {
   

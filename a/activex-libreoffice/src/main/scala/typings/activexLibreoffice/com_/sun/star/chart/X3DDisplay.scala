@@ -5,39 +5,39 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySet
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * gives access to 3D elements of a three-dimensional chart.
   * @see Dim3DDiagram
   */
-@js.native
-trait X3DDisplay extends XInterface {
+trait X3DDisplay
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the properties of the floor.  This is only valid for three-dimensional diagrams.
     * @see ChartArea
     */
-  val Floor: XPropertySet = js.native
+  val Floor: XPropertySet
   
   /**
     * @returns the properties of the diagram wall(s).  This specifies the properties of the two side walls of the chart scene.  Note that this property is also
     * @see ChartArea
     */
-  val Wall: XPropertySet = js.native
+  val Wall: XPropertySet
   
   /**
     * @returns the properties of the floor.  This is only valid for three-dimensional diagrams.
     * @see ChartArea
     */
-  def getFloor(): XPropertySet = js.native
+  def getFloor(): XPropertySet
   
   /**
     * @returns the properties of the diagram wall(s).  This specifies the properties of the two side walls of the chart scene.  Note that this property is also
     * @see ChartArea
     */
-  def getWall(): XPropertySet = js.native
+  def getWall(): XPropertySet
 }
 object X3DDisplay {
   

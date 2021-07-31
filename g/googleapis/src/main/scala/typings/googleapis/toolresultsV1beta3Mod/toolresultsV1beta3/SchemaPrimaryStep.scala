@@ -2,26 +2,24 @@ package typings.googleapis.toolresultsV1beta3Mod.toolresultsV1beta3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Stores rollup test status of multiple steps that were run as a group and
   * outcome of each individual step.
   */
-@js.native
 trait SchemaPrimaryStep extends StObject {
   
   /**
     * Step Id and outcome of each individual step.
     */
-  var individualOutcome: js.UndefOr[js.Array[SchemaIndividualOutcome]] = js.native
+  var individualOutcome: js.UndefOr[js.Array[SchemaIndividualOutcome]] = js.undefined
   
   /**
     * Rollup test status of multiple steps that were run with the same
     * configuration as a group.
     */
-  var rollUp: js.UndefOr[String] = js.native
+  var rollUp: js.UndefOr[String] = js.undefined
 }
 object SchemaPrimaryStep {
   

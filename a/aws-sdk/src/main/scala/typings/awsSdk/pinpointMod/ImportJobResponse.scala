@@ -2,76 +2,74 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImportJobResponse extends StObject {
   
   /**
     * The unique identifier for the application that's associated with the import job.
     */
-  var ApplicationId: string = js.native
+  var ApplicationId: string
   
   /**
     * The number of pieces that were processed successfully (completed) by the import job, as of the time of the request.
     */
-  var CompletedPieces: js.UndefOr[integer] = js.native
+  var CompletedPieces: js.UndefOr[integer] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the import job was completed.
     */
-  var CompletionDate: js.UndefOr[string] = js.native
+  var CompletionDate: js.UndefOr[string] = js.undefined
   
   /**
     * The date, in ISO 8601 format, when the import job was created.
     */
-  var CreationDate: string = js.native
+  var CreationDate: string
   
   /**
     * The resource settings that apply to the import job.
     */
-  var Definition: ImportJobResource = js.native
+  var Definition: ImportJobResource
   
   /**
     * The number of pieces that weren't processed successfully (failed) by the import job, as of the time of the request.
     */
-  var FailedPieces: js.UndefOr[integer] = js.native
+  var FailedPieces: js.UndefOr[integer] = js.undefined
   
   /**
     * An array of entries, one for each of the first 100 entries that weren't processed successfully (failed) by the import job, if any.
     */
-  var Failures: js.UndefOr[ListOfString] = js.native
+  var Failures: js.UndefOr[ListOfString] = js.undefined
   
   /**
     * The unique identifier for the import job.
     */
-  var Id: string = js.native
+  var Id: string
   
   /**
     * The status of the import job. The job status is FAILED if Amazon Pinpoint wasn't able to process one or more pieces in the job.
     */
-  var JobStatus: typings.awsSdk.pinpointMod.JobStatus = js.native
+  var JobStatus: typings.awsSdk.pinpointMod.JobStatus
   
   /**
     * The total number of endpoint definitions that weren't processed successfully (failed) by the import job, typically because an error, such as a syntax error, occurred.
     */
-  var TotalFailures: js.UndefOr[integer] = js.native
+  var TotalFailures: js.UndefOr[integer] = js.undefined
   
   /**
     * The total number of pieces that must be processed to complete the import job. Each piece consists of an approximately equal portion of the endpoint definitions that are part of the import job.
     */
-  var TotalPieces: js.UndefOr[integer] = js.native
+  var TotalPieces: js.UndefOr[integer] = js.undefined
   
   /**
     * The total number of endpoint definitions that were processed by the import job.
     */
-  var TotalProcessed: js.UndefOr[integer] = js.native
+  var TotalProcessed: js.UndefOr[integer] = js.undefined
   
   /**
     * The job type. This value is IMPORT for import jobs.
     */
-  var Type: string = js.native
+  var Type: string
 }
 object ImportJobResponse {
   

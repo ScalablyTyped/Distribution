@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.MenuOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.Menu")
 @js.native
 class Menu protected ()
-  extends typings.kendoUi.kendo.ui.Menu {
+  extends StObject
+     with typings.kendoUi.kendo.ui.Menu {
   def this(element: Element) = this()
   def this(element: Element, options: MenuOptions) = this()
 }
@@ -21,9 +21,8 @@ object Menu {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.Menu.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Menu = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.Menu = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.Menu]
   
   /* static member */
   @JSGlobal("kendo.ui.Menu.fn")

@@ -2,16 +2,14 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2TriggerContext extends StObject {
   
   /**
     * The time context for which the update can be triggered.
     */
-  var timeContext: js.UndefOr[GoogleActionsV2TriggerContextTimeContext] = js.native
+  var timeContext: js.UndefOr[GoogleActionsV2TriggerContextTimeContext] = js.undefined
 }
 object GoogleActionsV2TriggerContext {
   

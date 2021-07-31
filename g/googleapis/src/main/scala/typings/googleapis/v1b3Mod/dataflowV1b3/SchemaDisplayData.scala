@@ -2,50 +2,48 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Data provided with a pipeline or transform to provide descriptive info.
   */
-@js.native
 trait SchemaDisplayData extends StObject {
   
   /**
     * Contains value if the data is of a boolean type.
     */
-  var boolValue: js.UndefOr[Boolean] = js.native
+  var boolValue: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Contains value if the data is of duration type.
     */
-  var durationValue: js.UndefOr[String] = js.native
+  var durationValue: js.UndefOr[String] = js.undefined
   
   /**
     * Contains value if the data is of float type.
     */
-  var floatValue: js.UndefOr[Double] = js.native
+  var floatValue: js.UndefOr[Double] = js.undefined
   
   /**
     * Contains value if the data is of int64 type.
     */
-  var int64Value: js.UndefOr[String] = js.native
+  var int64Value: js.UndefOr[String] = js.undefined
   
   /**
     * Contains value if the data is of java class type.
     */
-  var javaClassValue: js.UndefOr[String] = js.native
+  var javaClassValue: js.UndefOr[String] = js.undefined
   
   /**
     * The key identifying the display data. This is intended to be used as a
     * label for the display data when viewed in a dax monitoring system.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * An optional label to display in a dax UI for the element.
     */
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
   /**
     * The namespace for the key. This is usually a class name or programming
@@ -53,7 +51,7 @@ trait SchemaDisplayData extends StObject {
     * This allows a dax monitoring system to specially handle the data and
     * perform custom rendering.
     */
-  var namespace: js.UndefOr[String] = js.native
+  var namespace: js.UndefOr[String] = js.undefined
   
   /**
     * A possible additional shorter value to display. For example a
@@ -62,22 +60,22 @@ trait SchemaDisplayData extends StObject {
     * value. short_str_value can be displayed and java_class_name_value will be
     * displayed as a tooltip.
     */
-  var shortStrValue: js.UndefOr[String] = js.native
+  var shortStrValue: js.UndefOr[String] = js.undefined
   
   /**
     * Contains value if the data is of string type.
     */
-  var strValue: js.UndefOr[String] = js.native
+  var strValue: js.UndefOr[String] = js.undefined
   
   /**
     * Contains value if the data is of timestamp type.
     */
-  var timestampValue: js.UndefOr[String] = js.native
+  var timestampValue: js.UndefOr[String] = js.undefined
   
   /**
     * An optional full URL.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaDisplayData {
   

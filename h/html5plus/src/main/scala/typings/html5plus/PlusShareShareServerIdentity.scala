@@ -2,7 +2,6 @@ package typings.html5plus
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
   */
-@js.native
 trait PlusShareShareServerIdentity extends StObject {
   
   /**
@@ -18,21 +16,21 @@ trait PlusShareShareServerIdentity extends StObject {
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var sinaweibo: js.UndefOr[String] = js.native
+  var sinaweibo: js.UndefOr[String] = js.undefined
   
   /**
     * 腾讯微博
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var tencentweibo: js.UndefOr[String] = js.native
+  var tencentweibo: js.UndefOr[String] = js.undefined
   
   /**
     * 微信
     * 
     * 参考: [http://www.html5plus.org/doc/zh_cn/share.html](http://www.html5plus.org/doc/zh_cn/share.html)
     */
-  var weixin: js.UndefOr[String] = js.native
+  var weixin: js.UndefOr[String] = js.undefined
 }
 object PlusShareShareServerIdentity {
   

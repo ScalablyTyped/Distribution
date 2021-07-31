@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SizeRange extends StObject {
   
   // The maximum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-  var maximumSize: js.UndefOr[NullableOption[Double]] = js.native
+  var maximumSize: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The minimum size (in kilobytes) that an incoming message must have in order for a condition or exception to apply.
-  var minimumSize: js.UndefOr[NullableOption[Double]] = js.native
+  var minimumSize: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object SizeRange {
   

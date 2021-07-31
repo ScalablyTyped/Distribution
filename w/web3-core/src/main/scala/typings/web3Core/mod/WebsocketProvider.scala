@@ -4,7 +4,6 @@ import typings.web3CoreHelpers.mod.WebsocketProviderBase
 import typings.web3CoreHelpers.mod.WebsocketProviderOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("web3-core", "WebsocketProvider")

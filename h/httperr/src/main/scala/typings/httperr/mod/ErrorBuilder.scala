@@ -5,13 +5,13 @@ import org.scalablytyped.runtime.Instantiable1
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Factory function for creating an Error object. */
 @js.native
 trait ErrorBuilder
-  extends /**
+  extends StObject
+     with /**
   *  Creates an Error object. The new keyword is optional.
   * @param {string | Error | Config} config - If config is a string, it will be treated as config.message.
   *                                           If config is an Error object, it will be treated as config.cause.

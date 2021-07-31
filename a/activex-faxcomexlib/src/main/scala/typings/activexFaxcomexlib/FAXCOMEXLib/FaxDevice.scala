@@ -3,75 +3,73 @@ package typings.activexFaxcomexlib.FAXCOMEXLib
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** FaxDevice Class */
-@js.native
 trait FaxDevice extends StObject {
   
   /** Answer the call */
-  def AnswerCall(): Unit = js.native
+  def AnswerCall(): Unit
   
   /** Device's Called Station ID */
-  var CSID: String = js.native
+  var CSID: String
   
   /** Description of the device */
-  var Description: String = js.native
+  var Description: String
   
   /** Device name */
-  val DeviceName: String = js.native
+  val DeviceName: String
   
   @JSName("FAXCOMEXLib.FaxDevice_typekey")
-  var FAXCOMEXLibDotFaxDevice_typekey: FaxDevice = js.native
+  var FAXCOMEXLibDotFaxDevice_typekey: FaxDevice
   
   /** Get the device level extention property */
-  def GetExtensionProperty(bstrGUID: String): SafeArray[_] = js.native
+  def GetExtensionProperty(bstrGUID: String): SafeArray[js.Any]
   
   /** Unique device ID */
-  val Id: Double = js.native
+  val Id: Double
   
   /** Is the device is turned off */
-  val PoweredOff: Boolean = js.native
+  val PoweredOff: Boolean
   
   /** Device provider */
-  val ProviderUniqueName: String = js.native
+  val ProviderUniqueName: String
   
   /** The receive mode of the device */
-  var ReceiveMode: FAX_DEVICE_RECEIVE_MODE_ENUM = js.native
+  var ReceiveMode: FAX_DEVICE_RECEIVE_MODE_ENUM
   
   /** Is the device receiving now */
-  val ReceivingNow: Boolean = js.native
+  val ReceivingNow: Boolean
   
   /** Refresh the object */
-  def Refresh(): Unit = js.native
+  def Refresh(): Unit
   
   /** Is the device ringing now */
-  val RingingNow: Boolean = js.native
+  val RingingNow: Boolean
   
   /** Number of rings before the device answers */
-  var RingsBeforeAnswer: Double = js.native
+  var RingsBeforeAnswer: Double
   
   /** Save the object */
-  def Save(): Unit = js.native
+  def Save(): Unit
   
   /** Is the device is enabled to send */
-  var SendEnabled: Boolean = js.native
+  var SendEnabled: Boolean
   
   /** Is the device sending now */
-  val SendingNow: Boolean = js.native
+  val SendingNow: Boolean
   
   /** Set the device level extention property */
-  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[_]): Unit = js.native
+  def SetExtensionProperty(bstrGUID: String, vProperty: SafeArray[js.Any]): Unit
   
   /** Device's Transmitting Station ID */
-  var TSID: String = js.native
+  var TSID: String
   
   /** Adds or removes routing method */
-  def UseRoutingMethod(bstrMethodGUID: String, bUse: Boolean): Unit = js.native
+  def UseRoutingMethod(bstrMethodGUID: String, bUse: Boolean): Unit
   
   /** Array of routing methods GUIDs */
-  val UsedRoutingMethods: SafeArray[String] = js.native
+  val UsedRoutingMethods: SafeArray[String]
 }
 object FaxDevice {
   
@@ -82,7 +80,7 @@ object FaxDevice {
     Description: String,
     DeviceName: String,
     FAXCOMEXLibDotFaxDevice_typekey: FaxDevice,
-    GetExtensionProperty: String => SafeArray[_],
+    GetExtensionProperty: String => SafeArray[js.Any],
     Id: Double,
     PoweredOff: Boolean,
     ProviderUniqueName: String,
@@ -94,7 +92,7 @@ object FaxDevice {
     Save: () => Unit,
     SendEnabled: Boolean,
     SendingNow: Boolean,
-    SetExtensionProperty: (String, SafeArray[_]) => Unit,
+    SetExtensionProperty: (String, SafeArray[js.Any]) => Unit,
     TSID: String,
     UseRoutingMethod: (String, Boolean) => Unit,
     UsedRoutingMethods: SafeArray[String]
@@ -123,7 +121,7 @@ object FaxDevice {
     def setFAXCOMEXLibDotFaxDevice_typekey(value: FaxDevice): Self = StObject.set(x, "FAXCOMEXLib.FaxDevice_typekey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setGetExtensionProperty(value: String => SafeArray[_]): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
+    def setGetExtensionProperty(value: String => SafeArray[js.Any]): Self = StObject.set(x, "GetExtensionProperty", js.Any.fromFunction1(value))
     
     @scala.inline
     def setId(value: Double): Self = StObject.set(x, "Id", value.asInstanceOf[js.Any])
@@ -159,7 +157,7 @@ object FaxDevice {
     def setSendingNow(value: Boolean): Self = StObject.set(x, "SendingNow", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setSetExtensionProperty(value: (String, SafeArray[_]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
+    def setSetExtensionProperty(value: (String, SafeArray[js.Any]) => Unit): Self = StObject.set(x, "SetExtensionProperty", js.Any.fromFunction2(value))
     
     @scala.inline
     def setTSID(value: String): Self = StObject.set(x, "TSID", value.asInstanceOf[js.Any])

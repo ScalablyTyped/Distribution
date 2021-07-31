@@ -2,76 +2,74 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSavingsPlansOfferingsRequest extends StObject {
   
   /**
     * The currencies.
     */
-  var currencies: js.UndefOr[CurrencyList] = js.native
+  var currencies: js.UndefOr[CurrencyList] = js.undefined
   
   /**
     * The descriptions.
     */
-  var descriptions: js.UndefOr[SavingsPlanDescriptionsList] = js.native
+  var descriptions: js.UndefOr[SavingsPlanDescriptionsList] = js.undefined
   
   /**
     * The durations, in seconds.
     */
-  var durations: js.UndefOr[DurationsList] = js.native
+  var durations: js.UndefOr[DurationsList] = js.undefined
   
   /**
     * The filters.
     */
-  var filters: js.UndefOr[SavingsPlanOfferingFiltersList] = js.native
+  var filters: js.UndefOr[SavingsPlanOfferingFiltersList] = js.undefined
   
   /**
     * The maximum number of results to return with a single call. To retrieve additional results, make another call with the returned token value.
     */
-  var maxResults: js.UndefOr[PageSize] = js.native
+  var maxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The IDs of the offerings.
     */
-  var offeringIds: js.UndefOr[UUIDs] = js.native
+  var offeringIds: js.UndefOr[UUIDs] = js.undefined
   
   /**
     * The specific AWS operation for the line item in the billing report.
     */
-  var operations: js.UndefOr[SavingsPlanOperationList] = js.native
+  var operations: js.UndefOr[SavingsPlanOperationList] = js.undefined
   
   /**
     * The payment options.
     */
-  var paymentOptions: js.UndefOr[SavingsPlanPaymentOptionList] = js.native
+  var paymentOptions: js.UndefOr[SavingsPlanPaymentOptionList] = js.undefined
   
   /**
     * The plan type.
     */
-  var planTypes: js.UndefOr[SavingsPlanTypeList] = js.native
+  var planTypes: js.UndefOr[SavingsPlanTypeList] = js.undefined
   
   /**
     * The product type.
     */
-  var productType: js.UndefOr[SavingsPlanProductType] = js.native
+  var productType: js.UndefOr[SavingsPlanProductType] = js.undefined
   
   /**
     * The services.
     */
-  var serviceCodes: js.UndefOr[SavingsPlanServiceCodeList] = js.native
+  var serviceCodes: js.UndefOr[SavingsPlanServiceCodeList] = js.undefined
   
   /**
     * The usage details of the line item in the billing report.
     */
-  var usageTypes: js.UndefOr[SavingsPlanUsageTypeList] = js.native
+  var usageTypes: js.UndefOr[SavingsPlanUsageTypeList] = js.undefined
 }
 object DescribeSavingsPlansOfferingsRequest {
   

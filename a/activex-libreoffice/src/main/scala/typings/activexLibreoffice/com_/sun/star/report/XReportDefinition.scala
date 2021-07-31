@@ -35,7 +35,6 @@ import typings.activexLibreoffice.com_.sun.star.util.XModifyListener
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -46,9 +45,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A report fulfills several tasks, like storing the structure of its report components and it provides the event environment for its contained elements.
   * @see XReportComponent
   */
-@js.native
 trait XReportDefinition
-  extends XReportComponent
+  extends StObject
      with XModel
      with XLoadable
      with XVisualObject
@@ -59,16 +57,17 @@ trait XReportDefinition
      with XDocumentSubStorageSupplier
      with XStyleFamiliesSupplier
      with XModifiable2
+     with XReportComponent
      with XFunctionsSupplier {
   
   /** specifies the active connection which is used to create the resulting report. */
-  var ActiveConnection: XConnection = js.native
+  var ActiveConnection: XConnection
   
   /** returns a sequence of the currently supported output formats. */
-  val AvailableMimeTypes: SafeArray[String] = js.native
+  val AvailableMimeTypes: SafeArray[String]
   
   /** Represents the title of the report in print preview. */
-  var Caption: String = js.native
+  var Caption: String
   
   /**
     * is the command which should be executed, the type of command depends on the CommandType.
@@ -79,7 +78,7 @@ trait XReportDefinition
     * switching it to `FALSE` , you can pass backend-specific SQL statements, which are not standard SQL, to your database.
     * @see com.sun.star.sdb.CommandType
     */
-  var Command: String = js.native
+  var Command: String
   
   /**
     * specifies the type of the command to be executed to retrieve a result set.
@@ -89,16 +88,16 @@ trait XReportDefinition
     * This property is only meaningful together with the {@link Command} property, thus either **both** or **none** of them are present.
     * @see com.sun.star.sdb.CommandType
     */
-  var CommandType: Double = js.native
+  var CommandType: Double
   
   /** is the name of the datasource to use, this could be a named datasource or the URL of a data access component. */
-  var DataSourceName: String = js.native
+  var DataSourceName: String
   
   /**
     * returns the detail section.
     * @see XSection
     */
-  var Detail: XSection = js.native
+  var Detail: XSection
   
   /**
     * specifies if the {@link Command} should be analyzed on the client side before sending it to the database server.
@@ -109,7 +108,7 @@ trait XReportDefinition
     * This property is usually present together with the {@link Command} and {@link CommandType} properties, and is evaluated if and only if {@link
     * CommandType} equals CommandType::COMMAND.
     */
-  var EscapeProcessing: Boolean = js.native
+  var EscapeProcessing: Boolean
   
   /**
     * makes it possible to register listeners which are called whenever a document event occurs. This is a workaround due to the fact that this interface
@@ -117,7 +116,7 @@ trait XReportDefinition
     * already defined in {@link com.sun.star.lang.XComponent} . A queryInterface call is still supported to the {@link
     * com.sun.star.document.XEventBroadcaster} interface.
     */
-  val EventBroadcaster: XEventBroadcaster = js.native
+  val EventBroadcaster: XEventBroadcaster
   
   /**
     * specifies an additional filter to optionally use.
@@ -131,74 +130,74 @@ trait XReportDefinition
     * @see com.sun.star.sdb.RowSet
     * @see ResultSet
     */
-  var Filter: String = js.native
+  var Filter: String
   
   /**
     * Specifies whether groups in a multi column report are kept together.
     * @see com.sun.star.report.GroupKeepTogether
     */
-  var GroupKeepTogether: Double = js.native
+  var GroupKeepTogether: Double
   
   /** Represents the groups of the report. */
-  var Groups: XGroups = js.native
+  var Groups: XGroups
   
   /** Represents the output format (media (mime) type) of the resulting document when executing this report. */
-  var MimeType: String = js.native
+  var MimeType: String
   
   /**
     * returns the page footer if the {@link PageFooterOn} is `TRUE` .
     * @see XSection
     * @throws com::sun::star::container::NoSuchElementException If the report has the page footer disabled.
     */
-  var PageFooter: XSection = js.native
+  var PageFooter: XSection
   
   /** Defines that the page footer is on. Default is `TRUE` . */
-  var PageFooterOn: Boolean = js.native
+  var PageFooterOn: Boolean
   
   /**
     * Represents the location of the page footer.
     * @see ReportPrintOption
     */
-  var PageFooterOption: Double = js.native
+  var PageFooterOption: Double
   
   /**
     * returns the page header if the {@link PageHeaderOn} is `TRUE` .
     * @see XSection
     * @throws com::sun::star::container::NoSuchElementException If the report has the page header disabled.
     */
-  var PageHeader: XSection = js.native
+  var PageHeader: XSection
   
   /** Defines that the page header is on. Default is `TRUE` . */
-  var PageHeaderOn: Boolean = js.native
+  var PageHeaderOn: Boolean
   
   /**
     * Represents the location of the page header.
     * @see ReportPrintOption
     */
-  var PageHeaderOption: Double = js.native
+  var PageHeaderOption: Double
   
   /**
     * returns the report footer if the {@link ReportFooterOn} is `TRUE` .
     * @see XSection
     * @throws com::sun::star::container::NullPointerException If the report has the report footer disabled.
     */
-  var ReportFooter: XSection = js.native
+  var ReportFooter: XSection
   
   /** Defines that the report footer is on. Default is `FALSE` . */
-  var ReportFooterOn: Boolean = js.native
+  var ReportFooterOn: Boolean
   
   /**
     * returns the report header if the {@link ReportHeaderOn} is `TRUE` .
     * @see XSection
     * @throws com::sun::star::container::NoSuchElementException If the report has the report header disabled.
     */
-  var ReportHeader: XSection = js.native
+  var ReportHeader: XSection
   
   /** Defines that the report header is on. Default is `FALSE` . */
-  var ReportHeaderOn: Boolean = js.native
+  var ReportHeaderOn: Boolean
   
   /** returns a sequence of the currently supported output formats. */
-  def getAvailableMimeTypes(): SafeArray[String] = js.native
+  def getAvailableMimeTypes(): SafeArray[String]
   
   /**
     * makes it possible to register listeners which are called whenever a document event occurs. This is a workaround due to the fact that this interface
@@ -206,7 +205,7 @@ trait XReportDefinition
     * already defined in {@link com.sun.star.lang.XComponent} . A queryInterface call is still supported to the {@link
     * com.sun.star.document.XEventBroadcaster} interface.
     */
-  def getEventBroadcaster(): XEventBroadcaster = js.native
+  def getEventBroadcaster(): XEventBroadcaster
 }
 object XReportDefinition {
   

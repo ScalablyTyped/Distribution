@@ -3,13 +3,11 @@ package typings.ipp.mod
 import typings.ipp.anon.Documenturi
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendURIRequest extends StObject {
   
-  var `operation-attributes-tag`: Documenturi = js.native
+  var `operation-attributes-tag`: Documenturi
 }
 object SendURIRequest {
   

@@ -3,23 +3,21 @@ package typings.wordpressBlocks.anon
 import typings.wordpressBlocks.wordpressBlocksStrings.attribute
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attribute extends StObject {
   
-  var attribute: String = js.native
+  var attribute: String
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var source: attribute = js.native
+  var source: attribute
 }
 object Attribute {
   
   @scala.inline
-  def apply(attribute: String, source: attribute): Attribute = {
-    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any])
+  def apply(attribute: String): Attribute = {
+    val __obj = js.Dynamic.literal(attribute = attribute.asInstanceOf[js.Any], source = "attribute")
     __obj.asInstanceOf[Attribute]
   }
   

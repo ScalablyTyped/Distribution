@@ -2,29 +2,27 @@ package typings.raphael.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RaphaelGlowSettings extends StObject {
   
   /** The glow color, default is `black`. */
-  var color: String = js.native
+  var color: String
   
   /** Whether the glow effect will be filled, default is `false`. */
-  var fill: Boolean = js.native
+  var fill: Boolean
   
   /** Horizontal offset, default is `0`. */
-  var offsetx: Double = js.native
+  var offsetx: Double
   
   /** Vertical offset, default is `0`. */
-  var offsety: Double = js.native
+  var offsety: Double
   
   /** Opacity of the glow effect, default is `0.5`. */
-  var opacity: Double = js.native
+  var opacity: Double
   
   /** size of the glow, default is `10`. */
-  var width: Double = js.native
+  var width: Double
 }
 object RaphaelGlowSettings {
   

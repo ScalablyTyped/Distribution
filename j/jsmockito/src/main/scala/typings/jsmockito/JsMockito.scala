@@ -3,12 +3,10 @@ package typings.jsmockito
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object JsMockito {
   
-  @js.native
   trait JsMockitoStubBuilder extends StObject {
     
     /**
@@ -17,7 +15,7 @@ object JsMockito {
       * @param func Functions to be run in order of execution.
       * @return {JsMockitoStubBuilder} Itself for method chaining
       */
-    def `then`(func: (js.Function1[/* obj */ js.Any, _])*): JsMockitoStubBuilder = js.native
+    def `then`(func: (js.Function1[/* obj */ js.Any, js.Any])*): JsMockitoStubBuilder
     
     /**
       * Provide values to be returned by the mocked function.
@@ -25,7 +23,7 @@ object JsMockito {
       * @param obj Values to be returned in order of execution.
       * @return {JsMockitoStubBuilder} Itself for method chaining
       */
-    def thenReturn(obj: js.Any*): JsMockitoStubBuilder = js.native
+    def thenReturn(obj: js.Any*): JsMockitoStubBuilder
     
     /**
       * Provide exceptions to be thrown by the mocked function.
@@ -33,13 +31,13 @@ object JsMockito {
       * @param obj Exceptions to be thrown in order of execution.
       * @return {JsMockitoStubBuilder} Itself for method chaining
       */
-    def thenThrow(obj: Error*): JsMockitoStubBuilder = js.native
+    def thenThrow(obj: Error*): JsMockitoStubBuilder
   }
   object JsMockitoStubBuilder {
     
     @scala.inline
     def apply(
-      `then`: /* repeated */ js.Function1[/* obj */ js.Any, _] => JsMockitoStubBuilder,
+      `then`: /* repeated */ js.Function1[/* obj */ js.Any, js.Any] => JsMockitoStubBuilder,
       thenReturn: /* repeated */ js.Any => JsMockitoStubBuilder,
       thenThrow: /* repeated */ Error => JsMockitoStubBuilder
     ): JsMockitoStubBuilder = {
@@ -52,7 +50,7 @@ object JsMockito {
     implicit class JsMockitoStubBuilderMutableBuilder[Self <: JsMockitoStubBuilder] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setThen(value: /* repeated */ js.Function1[/* obj */ js.Any, _] => JsMockitoStubBuilder): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
+      def setThen(value: /* repeated */ js.Function1[/* obj */ js.Any, js.Any] => JsMockitoStubBuilder): Self = StObject.set(x, "then", js.Any.fromFunction1(value))
       
       @scala.inline
       def setThenReturn(value: /* repeated */ js.Any => JsMockitoStubBuilder): Self = StObject.set(x, "thenReturn", js.Any.fromFunction1(value))
@@ -62,6 +60,5 @@ object JsMockito {
     }
   }
   
-  @js.native
   trait Verifier extends StObject
 }

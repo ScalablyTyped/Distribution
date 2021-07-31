@@ -37,162 +37,160 @@ import typings.reactNativeElements.reactNativeElementsStrings.radiobutton_unchec
 import typings.reactNativeElements.reactNativeElementsStrings.yes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-native-elements.react-native-elements.ListItemProps> */
-@js.native
 trait PartialListItemProps extends StObject {
   
-  var Component: js.UndefOr[ComponentType[js.Object]] = js.native
+  var Component: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var ViewComponent: js.UndefOr[ComponentType[js.Object]] = js.native
+  var ViewComponent: js.UndefOr[ComponentType[js.Object]] = js.undefined
   
-  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.native
+  var accessibilityActions: js.UndefOr[js.Array[AccessibilityActionInfo]] = js.undefined
   
-  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.native
+  var accessibilityComponentType: js.UndefOr[none | button | radiobutton_checked | radiobutton_unchecked] = js.undefined
   
-  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.native
+  var accessibilityElementsHidden: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityHint: js.UndefOr[String] = js.native
+  var accessibilityHint: js.UndefOr[String] = js.undefined
   
-  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.native
+  var accessibilityIgnoresInvertColors: js.UndefOr[Boolean] = js.undefined
   
-  var accessibilityLabel: js.UndefOr[String] = js.native
+  var accessibilityLabel: js.UndefOr[String] = js.undefined
   
-  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.native
+  var accessibilityLiveRegion: js.UndefOr[none | polite | assertive] = js.undefined
   
-  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.native
+  var accessibilityRole: js.UndefOr[AccessibilityRole] = js.undefined
   
-  var accessibilityState: js.UndefOr[AccessibilityState] = js.native
+  var accessibilityState: js.UndefOr[AccessibilityState] = js.undefined
   
-  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.native
+  var accessibilityTraits: js.UndefOr[AccessibilityTrait | js.Array[AccessibilityTrait]] = js.undefined
   
-  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.native
+  var accessibilityValue: js.UndefOr[AccessibilityValue] = js.undefined
   
-  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.native
+  var accessibilityViewIsModal: js.UndefOr[Boolean] = js.undefined
   
-  var accessible: js.UndefOr[Boolean] = js.native
+  var accessible: js.UndefOr[Boolean] = js.undefined
   
-  var activeOpacity: js.UndefOr[Double] = js.native
+  var activeOpacity: js.UndefOr[Double] = js.undefined
   
-  var badge: js.UndefOr[BadgeProps] = js.native
+  var badge: js.UndefOr[BadgeProps] = js.undefined
   
-  var bottomDivider: js.UndefOr[Boolean] = js.native
+  var bottomDivider: js.UndefOr[Boolean] = js.undefined
   
-  var buttonGroup: js.UndefOr[ButtonGroupProps] = js.native
+  var buttonGroup: js.UndefOr[ButtonGroupProps] = js.undefined
   
-  var checkBox: js.UndefOr[CheckBoxProps] = js.native
+  var checkBox: js.UndefOr[CheckBoxProps] = js.undefined
   
-  var checkmark: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.native
+  var checkmark: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.undefined
   
-  var chevron: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.native
+  var chevron: js.UndefOr[Boolean | PartialIconProps | ReactElement] = js.undefined
   
-  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var contentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var delayLongPress: js.UndefOr[Double] = js.native
+  var delayLongPress: js.UndefOr[Double] = js.undefined
   
-  var delayPressIn: js.UndefOr[Double] = js.native
+  var delayPressIn: js.UndefOr[Double] = js.undefined
   
-  var delayPressOut: js.UndefOr[Double] = js.native
+  var delayPressOut: js.UndefOr[Double] = js.undefined
   
-  var disabled: js.UndefOr[Boolean | Null] = js.native
+  var disabled: js.UndefOr[Boolean | Null] = js.undefined
   
-  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var disabledStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.native
+  var hasTVPreferredFocus: js.UndefOr[Boolean] = js.undefined
   
-  var hitSlop: js.UndefOr[Insets] = js.native
+  var hitSlop: js.UndefOr[Insets] = js.undefined
   
-  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.native
+  var importantForAccessibility: js.UndefOr[auto | yes | no | `no-hide-descendants`] = js.undefined
   
-  var input: js.UndefOr[InputProps] = js.native
+  var input: js.UndefOr[InputProps] = js.undefined
   
-  var leftAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.native
+  var leftAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.undefined
   
-  var leftElement: js.UndefOr[ReactElement] = js.native
+  var leftElement: js.UndefOr[ReactElement] = js.undefined
   
-  var leftIcon: js.UndefOr[PartialIconProps | ReactElement] = js.native
+  var leftIcon: js.UndefOr[PartialIconProps | ReactElement] = js.undefined
   
-  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.native
+  var onAccessibilityAction: js.UndefOr[js.Function1[/* event */ AccessibilityActionEvent, Unit]] = js.undefined
   
-  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityEscape: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onAccessibilityTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.native
+  var onBlur: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.native
+  var onFocus: js.UndefOr[js.Function1[/* e */ NativeSyntheticEvent[TargetedEvent], Unit]] = js.undefined
   
-  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onHideUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.native
+  var onLayout: js.UndefOr[js.Function1[/* event */ LayoutChangeEvent, Unit]] = js.undefined
   
-  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onLongPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMagicTap: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPress: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPressIn: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.native
+  var onPressOut: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Unit]] = js.undefined
   
-  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShowUnderlay: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var pad: js.UndefOr[Double] = js.native
+  var pad: js.UndefOr[Double] = js.undefined
   
-  var pressRetentionOffset: js.UndefOr[Insets] = js.native
+  var pressRetentionOffset: js.UndefOr[Insets] = js.undefined
   
-  var rightAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.native
+  var rightAvatar: js.UndefOr[PartialAvatarProps | ReactElement] = js.undefined
   
-  var rightContentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var rightContentContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var rightElement: js.UndefOr[ReactElement] = js.native
+  var rightElement: js.UndefOr[ReactElement] = js.undefined
   
-  var rightIcon: js.UndefOr[PartialIconProps | ReactElement] = js.native
+  var rightIcon: js.UndefOr[PartialIconProps | ReactElement] = js.undefined
   
-  var rightSubtitle: js.UndefOr[String | ReactElement] = js.native
+  var rightSubtitle: js.UndefOr[String | ReactElement] = js.undefined
   
-  var rightSubtitleProps: js.UndefOr[TextProperties] = js.native
+  var rightSubtitleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var rightSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var rightSubtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var rightTitle: js.UndefOr[String | ReactElement] = js.native
+  var rightTitle: js.UndefOr[String | ReactElement] = js.undefined
   
-  var rightTitleProps: js.UndefOr[TextProperties] = js.native
+  var rightTitleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var rightTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var rightTitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var scaleProps: js.UndefOr[ScaleProps] = js.native
+  var scaleProps: js.UndefOr[ScaleProps] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   
-  var subtitle: js.UndefOr[String | ReactElement] = js.native
+  var subtitle: js.UndefOr[String | ReactElement] = js.undefined
   
-  var subtitleProps: js.UndefOr[TextProperties] = js.native
+  var subtitleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var subtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var subtitleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var switch: js.UndefOr[SwitchProperties] = js.native
+  var switch: js.UndefOr[SwitchProperties] = js.undefined
   
-  var testID: js.UndefOr[String] = js.native
+  var testID: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String | ReactElement] = js.native
+  var title: js.UndefOr[String | ReactElement] = js.undefined
   
-  var titleProps: js.UndefOr[TextProperties] = js.native
+  var titleProps: js.UndefOr[TextProperties] = js.undefined
   
-  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var titleStyle: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
-  var topDivider: js.UndefOr[Boolean] = js.native
+  var topDivider: js.UndefOr[Boolean] = js.undefined
   
-  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.native
+  var touchSoundDisabled: js.UndefOr[Boolean | Null] = js.undefined
   
-  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.native
+  var tvParallaxProperties: js.UndefOr[TVParallaxProperties] = js.undefined
   
-  var underlayColor: js.UndefOr[ColorValue] = js.native
+  var underlayColor: js.UndefOr[ColorValue] = js.undefined
 }
 object PartialListItemProps {
   

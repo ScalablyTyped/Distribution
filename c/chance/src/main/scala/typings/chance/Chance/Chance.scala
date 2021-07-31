@@ -34,11 +34,12 @@ import typings.chance.chanceStrings.us_states_and_dc
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Chance extends Seeded {
+trait Chance
+  extends StObject
+     with Seeded {
   
   // Location
   def address(): String = js.native

@@ -3,21 +3,19 @@ package typings.stripe.anon
 import typings.stripe.mod.customerTaxIds.TaxIdType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Type extends StObject {
   
   /**
     * Type of the tax ID, one of au_abn, eu_vat, in_gst, no_vat, or nz_gst.
     */
-  var `type`: TaxIdType = js.native
+  var `type`: TaxIdType
   
   /**
     * Value of the tax ID.
     */
-  var value: String = js.native
+  var value: String
 }
 object Type {
   

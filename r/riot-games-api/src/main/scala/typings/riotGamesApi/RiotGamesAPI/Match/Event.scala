@@ -2,53 +2,51 @@ package typings.riotGamesApi.RiotGamesAPI.Match
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Event extends StObject {
   
-  var ascendedType: String = js.native
+  var ascendedType: String
   
-  var assistingParticipantIds: js.Array[Double] = js.native
+  var assistingParticipantIds: js.Array[Double]
   
-  var buildingType: String = js.native
+  var buildingType: String
   
-  var creatorId: Double = js.native
+  var creatorId: Double
   
-  var eventType: String = js.native
+  var eventType: String
   
-  var itemAfter: Double = js.native
+  var itemAfter: Double
   
-  var itemBefore: Double = js.native
+  var itemBefore: Double
   
-  var itemId: Double = js.native
+  var itemId: Double
   
-  var killerId: Double = js.native
+  var killerId: Double
   
-  var laneType: String = js.native
+  var laneType: String
   
-  var levelUpType: String = js.native
+  var levelUpType: String
   
-  var monsterType: String = js.native
+  var monsterType: String
   
-  var participantId: Double = js.native
+  var participantId: Double
   
-  var pointCaptured: String = js.native
+  var pointCaptured: String
   
-  var position: Position = js.native
+  var position: Position
   
-  var skillSlot: Double = js.native
+  var skillSlot: Double
   
-  var teamId: Double = js.native
+  var teamId: Double
   
-  var timestamp: Double = js.native
+  var timestamp: Double
   
-  var towerType: String = js.native
+  var towerType: String
   
-  var victimId: Double = js.native
+  var victimId: Double
   
-  var wardType: String = js.native
+  var wardType: String
 }
 object Event {
   

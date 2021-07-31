@@ -7,11 +7,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.Float
 import typings.officeJsPreview.officeJsPreviewStrings.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `customProperty.toJSON()`. */
-@js.native
 trait CustomPropertyData extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait CustomPropertyData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     *
@@ -30,7 +28,7 @@ trait CustomPropertyData extends StObject {
     */
   var `type`: js.UndefOr[
     DocumentPropertyType | Number | Boolean | Date | typings.officeJsPreview.officeJsPreviewStrings.String | Float
-  ] = js.native
+  ] = js.undefined
   
   /**
     *
@@ -38,7 +36,7 @@ trait CustomPropertyData extends StObject {
     *
     * [Api set: ExcelApi 1.7]
     */
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object CustomPropertyData {
   

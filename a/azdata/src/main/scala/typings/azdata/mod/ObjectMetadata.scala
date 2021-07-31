@@ -2,21 +2,19 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ObjectMetadata extends StObject {
   
-  var metadataType: MetadataType = js.native
+  var metadataType: MetadataType
   
-  var metadataTypeName: String = js.native
+  var metadataTypeName: String
   
-  var name: String = js.native
+  var name: String
   
-  var schema: String = js.native
+  var schema: String
   
-  var urn: String = js.native
+  var urn: String
 }
 object ObjectMetadata {
   

@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BorderRadiusProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait BorderRadiusProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-left-radius)
     */
-  var borderBottomLeftRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderBottomLeftRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-bottom-right-radius CSS property rounds the bottom-right corner of an element.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-bottom-right-radius)
     */
-  var borderBottomRightRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderBottomRightRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-radius CSS property rounds the corners of an element's outer border edge. You can set a single
@@ -28,21 +26,21 @@ trait BorderRadiusProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] ext
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-radius)
     */
-  var borderRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-top-left-radius CSS property rounds the top-left corner of an element.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-left-radius)
     */
-  var borderTopLeftRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderTopLeftRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
   
   /**
     * The border-top-right-radius CSS property rounds the top-right corner of an element.
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/border-top-right-radius)
     */
-  var borderTopRightRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var borderTopRightRadius: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object BorderRadiusProps {
   
@@ -53,7 +51,7 @@ object BorderRadiusProps {
   }
   
   @scala.inline
-  implicit class BorderRadiusPropsMutableBuilder[Self <: BorderRadiusProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (BorderRadiusProps[ThemeType, TVal])) extends AnyVal {
+  implicit class BorderRadiusPropsMutableBuilder[Self <: BorderRadiusProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (BorderRadiusProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setBorderBottomLeftRadius(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "borderBottomLeftRadius", value.asInstanceOf[js.Any])

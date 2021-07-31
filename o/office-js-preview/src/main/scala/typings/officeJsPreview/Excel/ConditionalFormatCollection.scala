@@ -15,7 +15,6 @@ import typings.officeJsPreview.officeJsPreviewStrings.PresetCriteria
 import typings.officeJsPreview.officeJsPreviewStrings.TopBottom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,7 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalFormatCollection extends ClientObject {
+trait ConditionalFormatCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds a new conditional format to the collection at the first/top priority.
@@ -105,7 +106,7 @@ trait ConditionalFormatCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ConditionalFormatCollection = js.native
-  def load(options: ConditionalFormatCollectionLoadOptions with CollectionLoadOptions): ConditionalFormatCollection = js.native
+  def load(options: ConditionalFormatCollectionLoadOptions & CollectionLoadOptions): ConditionalFormatCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ConditionalFormatCollection = js.native
   def load(propertyNames: String): ConditionalFormatCollection = js.native
   def load(propertyNames: js.Array[String]): ConditionalFormatCollection = js.native

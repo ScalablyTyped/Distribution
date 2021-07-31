@@ -2,7 +2,6 @@ package typings.officeJs.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -83,11 +82,7 @@ trait Location extends StObject {
     *                 type `Office.AsyncResult`. If setting the location fails, the `asyncResult.error` property will contain an error code.
     */
   def setAsync(location: String): Unit = js.native
-  def setAsync(
-    location: String,
-    options: js.UndefOr[scala.Nothing],
-    callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]
-  ): Unit = js.native
+  def setAsync(location: String, options: Unit, callback: js.Function1[/* asyncResult */ AsyncResult[Unit], Unit]): Unit = js.native
   def setAsync(location: String, options: AsyncContextOptions): Unit = js.native
   def setAsync(
     location: String,

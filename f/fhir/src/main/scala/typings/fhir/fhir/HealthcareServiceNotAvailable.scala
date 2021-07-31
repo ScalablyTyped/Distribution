@@ -2,29 +2,29 @@ package typings.fhir.fhir
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Not available during this time due to provided reason
   */
-@js.native
-trait HealthcareServiceNotAvailable extends BackboneElement {
+trait HealthcareServiceNotAvailable
+  extends StObject
+     with BackboneElement {
   
   /**
     * Contains extended information for property 'description'.
     */
-  var _description: js.UndefOr[Element] = js.native
+  var _description: js.UndefOr[Element] = js.undefined
   
   /**
     * Reason presented to the user explaining why time not available
     */
-  var description: String = js.native
+  var description: String
   
   /**
     * Service not availablefrom this date
     */
-  var during: js.UndefOr[Period] = js.native
+  var during: js.UndefOr[Period] = js.undefined
 }
 object HealthcareServiceNotAvailable {
   

@@ -2,7 +2,6 @@ package typings.ejWebAll.ej.datavisualization.Sunburst
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -13,13 +12,19 @@ object FontWeight extends StObject {
   
   //string
   @js.native
-  sealed trait Bold extends FontWeight
+  sealed trait Bold
+    extends StObject
+       with FontWeight
   
   //string
   @js.native
-  sealed trait Lighter extends FontWeight
+  sealed trait Lighter
+    extends StObject
+       with FontWeight
   
   //string
   @js.native
-  sealed trait Regular extends FontWeight
+  sealed trait Regular
+    extends StObject
+       with FontWeight
 }

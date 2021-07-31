@@ -4,29 +4,28 @@ import typings.vegaTypings.signalMod.SignalRef
 import typings.vegaTypings.vegaTypingsStrings.`bin-ordinal`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BinOrdinalScale
-  extends BaseScale
+  extends StObject
+     with BaseScale
      with Scale {
   
-  var bins: js.UndefOr[ScaleBins] = js.native
+  var bins: js.UndefOr[ScaleBins] = js.undefined
   
-  var interpolate: js.UndefOr[ScaleInterpolate] = js.native
+  var interpolate: js.UndefOr[ScaleInterpolate] = js.undefined
   
-  var range: js.UndefOr[RangeScheme | ScaleData] = js.native
+  var range: js.UndefOr[RangeScheme | ScaleData] = js.undefined
   
   @JSName("type")
-  var type_BinOrdinalScale: `bin-ordinal` = js.native
+  var type_BinOrdinalScale: `bin-ordinal`
 }
 object BinOrdinalScale {
   
   @scala.inline
-  def apply(name: String, `type`: `bin-ordinal`): BinOrdinalScale = {
+  def apply(name: String): BinOrdinalScale = {
     val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("bin-ordinal")
     __obj.asInstanceOf[BinOrdinalScale]
   }
   

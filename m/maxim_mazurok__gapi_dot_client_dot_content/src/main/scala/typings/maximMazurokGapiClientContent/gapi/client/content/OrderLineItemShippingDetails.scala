@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderLineItemShippingDetails extends StObject {
   
   /** Required. The delivery by date, in ISO 8601 format. */
-  var deliverByDate: js.UndefOr[String] = js.native
+  var deliverByDate: js.UndefOr[String] = js.undefined
   
   /** Required. Details of the shipping method. */
-  var method: js.UndefOr[OrderLineItemShippingDetailsMethod] = js.native
+  var method: js.UndefOr[OrderLineItemShippingDetailsMethod] = js.undefined
   
   /** The promised time in minutes in which the order will be ready for pickup. This only applies to buy-online-pickup-in-store same-day order. */
-  var pickupPromiseInMinutes: js.UndefOr[Double] = js.native
+  var pickupPromiseInMinutes: js.UndefOr[Double] = js.undefined
   
   /** Required. The ship by date, in ISO 8601 format. */
-  var shipByDate: js.UndefOr[String] = js.native
+  var shipByDate: js.UndefOr[String] = js.undefined
   
   /** Type of shipment. Indicates whether `deliveryDetails` or `pickupDetails` is applicable for this shipment. Acceptable values are: - "`delivery`" - "`pickup`" */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object OrderLineItemShippingDetails {
   

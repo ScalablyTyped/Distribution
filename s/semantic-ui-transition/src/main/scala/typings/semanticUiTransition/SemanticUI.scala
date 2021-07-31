@@ -85,7 +85,6 @@ import typings.semanticUiTransition.semanticUiTransitionStrings.useFailSafe
 import typings.semanticUiTransition.semanticUiTransitionStrings.verbose
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SemanticUI {
@@ -171,46 +170,48 @@ object SemanticUI {
       * Resets all conditions changes during transition
       */
     def apply(behavior: reset): JQuery = js.native
-    def apply(behavior: setting, name: allowRepeats, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: allowRepeats, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: animation, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: allowRepeats, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: animation, value: String): JQuery = js.native
-    def apply(behavior: setting, name: className, value: js.UndefOr[scala.Nothing]): ClassNameSettings = js.native
-    def apply(behavior: setting, name: debug, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: animation, value: Unit): String = js.native
+    def apply(behavior: setting, name: className, value: Unit): ClassNameSettings = js.native
+    def apply(behavior: setting, name: className, value: ClassNameSettings): JQuery = js.native
     def apply(behavior: setting, name: debug, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: displayType, value: js.UndefOr[scala.Nothing]): `false` | String = js.native
+    def apply(behavior: setting, name: debug, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: displayType, value: String): JQuery = js.native
+    def apply(behavior: setting, name: displayType, value: Unit): `false` | String = js.native
     def apply(behavior: setting, name: displayType, value: `false`): JQuery = js.native
-    def apply(behavior: setting, name: duration, value: js.UndefOr[scala.Nothing]): Double = js.native
     def apply(behavior: setting, name: duration, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: error, value: js.UndefOr[scala.Nothing]): ErrorSettings = js.native
-    def apply(behavior: setting, name: interval, value: js.UndefOr[scala.Nothing]): Double = js.native
+    def apply(behavior: setting, name: duration, value: Unit): Double = js.native
+    def apply(behavior: setting, name: error, value: Unit): ErrorSettings = js.native
+    def apply(behavior: setting, name: error, value: ErrorSettings): JQuery = js.native
     def apply(behavior: setting, name: interval, value: Double): JQuery = js.native
-    def apply(behavior: setting, name: namespace, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: interval, value: Unit): Double = js.native
     def apply(behavior: setting, name: namespace, value: String): JQuery = js.native
-    def apply(behavior: setting, name: name, value: js.UndefOr[scala.Nothing]): String = js.native
+    def apply(behavior: setting, name: namespace, value: Unit): String = js.native
     def apply(behavior: setting, name: name, value: String): JQuery = js.native
-    def apply(behavior: setting, name: onComplete, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: name, value: Unit): String = js.native
     def apply(behavior: setting, name: onComplete, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onHide, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onComplete, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onHide, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onShow, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onHide, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onShow, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: onStart, value: js.UndefOr[scala.Nothing]): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
+    def apply(behavior: setting, name: onShow, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: onStart, value: js.ThisFunction0[/* this */ JQuery, Unit]): JQuery = js.native
-    def apply(behavior: setting, name: performance, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: onStart, value: Unit): js.ThisFunction0[/* this */ JQuery, Unit] = js.native
     def apply(behavior: setting, name: performance, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: queue, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: performance, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: queue, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: reverse, value: js.UndefOr[scala.Nothing]): auto | Boolean = js.native
+    def apply(behavior: setting, name: queue, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: reverse, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: reverse, value: Unit): auto | Boolean = js.native
     def apply(behavior: setting, name: reverse, value: auto): JQuery = js.native
-    def apply(behavior: setting, name: silent, value: js.UndefOr[scala.Nothing]): Boolean = js.native
     def apply(behavior: setting, name: silent, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: useFailSafe, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: silent, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: useFailSafe, value: Boolean): JQuery = js.native
-    def apply(behavior: setting, name: verbose, value: js.UndefOr[scala.Nothing]): Boolean = js.native
+    def apply(behavior: setting, name: useFailSafe, value: Unit): Boolean = js.native
     def apply(behavior: setting, name: verbose, value: Boolean): JQuery = js.native
+    def apply(behavior: setting, name: verbose, value: Unit): Boolean = js.native
     def apply(behavior: setting, value: TransitionSettings): JQuery = js.native
     /**
       * Stop current animation and show element
@@ -233,53 +234,52 @@ object SemanticUI {
     
     object ClassNameSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'animating'
           */
-        var animating: String = js.native
+        var animating: String
         
         /**
           * @default 'disabled'
           */
-        var disabled: String = js.native
+        var disabled: String
         
         /**
           * @default 'hidden'
           */
-        var hidden: String = js.native
+        var hidden: String
         
         /**
           * @default 'in'
           */
-        var inward: String = js.native
+        var inward: String
         
         /**
           * @default 'loading'
           */
-        var loading: String = js.native
+        var loading: String
         
         /**
           * @default 'looping'
           */
-        var looping: String = js.native
+        var looping: String
         
         /**
           * @default 'out'
           */
-        var outward: String = js.native
+        var outward: String
         
         /**
           * @default 'transition'
           */
-        var transition: String = js.native
+        var transition: String
         
         /**
           * @default 'visible'
           */
-        var visible: String = js.native
+        var visible: String
       }
       object Impl {
         
@@ -331,24 +331,23 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplanimating | PickImpldisabled | PickImplhidden | PickImplinward | PickImplloading | PickImpllooping | PickImploutward | PickImpltransition | PickImplvisible) with PartialPickImplkeyofImplAnimating
+      type Param = (PickImplanimating | PickImpldisabled | PickImplhidden | PickImplinward | PickImplloading | PickImpllooping | PickImploutward | PickImpltransition | PickImplvisible) & PartialPickImplkeyofImplAnimating
     }
     type ClassNameSettings = Param
     
     object ErrorSettings {
       
-      @js.native
       trait Impl extends StObject {
         
         /**
           * @default 'The method you called is not defined'
           */
-        var method: String = js.native
+        var method: String
         
         /**
           * @default 'There is no CSS animation matching the one you specified.'
           */
-        var noAnimation: String = js.native
+        var noAnimation: String
       }
       object Impl {
         
@@ -369,20 +368,19 @@ object SemanticUI {
         }
       }
       
-      type Param = (PickImplnoAnimation | PickImplmethod) with PartialPickImplkeyofImplMethod
+      type Param = (PickImplnoAnimation | PickImplmethod) & PartialPickImplkeyofImplMethod
     }
     type ErrorSettings = typings.semanticUiTransition.SemanticUI.Transition.ErrorSettings.Param
   }
   
   object TransitionSettings {
     
-    @js.native
     trait Impl extends StObject {
       
       /**
         * If enabled will allow same animation to be queued while it is already occurring
         */
-      var allowRepeats: Boolean = js.native
+      var allowRepeats: Boolean
       
       // region Transition Settings
       /**
@@ -390,51 +388,51 @@ object SemanticUI {
         *
         * @default 'fade'
         */
-      var animation: String = js.native
+      var animation: String
       
       // endregion
       // region DOM Settings
       /**
         * Class names used to attach style to state
         */
-      var className: ClassNameSettings = js.native
+      var className: ClassNameSettings
       
       /**
         * Debug output to console
         */
-      var debug: Boolean = js.native
+      var debug: Boolean
       
       /**
         * Specify the final display type (block, inline-block etc) so that it doesn't have to be calculated.
         *
         * @default false
         */
-      var displayType: `false` | String = js.native
+      var displayType: `false` | String
       
       /**
         * Duration of the CSS transition animation
         *
         * @default 500
         */
-      var duration: Double = js.native
+      var duration: Double
       
       // endregion
       // region Debug Settings
-      var error: ErrorSettings = js.native
+      var error: ErrorSettings
       
       /**
         * Interval in MS between each elements transition
         *
         * @default 0
         */
-      var interval: Double = js.native
+      var interval: Double
       
       // endregion
       // region Debug Settings
       /**
         * Name used in log statements
         */
-      var name: String = js.native
+      var name: String
       
       // endregion
       // region Component Settings
@@ -442,61 +440,61 @@ object SemanticUI {
       /**
         * Event namespace. Makes sure module teardown does not effect other events attached to an element.
         */
-      var namespace: String = js.native
+      var namespace: String
       
       /**
         * Callback on each transition complete
         */
-      def onComplete(): Unit = js.native
+      def onComplete(): Unit
       
       /**
         * Callback on each transition that changes visibility to hidden
         */
-      def onHide(): Unit = js.native
+      def onHide(): Unit
       
       // endregion
       // region Callbacks
       /**
         * Callback on each transition that changes visibility to shown
         */
-      def onShow(): Unit = js.native
+      def onShow(): Unit
       
       /**
         * Callback on animation start, useful for queued animations
         */
-      def onStart(): Unit = js.native
+      def onStart(): Unit
       
       /**
         * Show console.table output with performance metrics
         */
-      var performance: Boolean = js.native
+      var performance: Boolean
       
       /**
         * Whether to automatically queue animation if another is occurring
         */
-      var queue: Boolean = js.native
+      var queue: Boolean
       
       /**
         * When an interval is specified, sets order of animations. auto reverses only animations that are hiding.
         *
         * @default 'auto'
         */
-      var reverse: auto | Boolean = js.native
+      var reverse: auto | Boolean
       
       /**
         * Silences all console output including error messages, regardless of other debug settings.
         */
-      var silent: Boolean = js.native
+      var silent: Boolean
       
       /**
         * If enabled a timeout will be added to ensure animationend callback occurs even if element is hidden
         */
-      var useFailSafe: Boolean = js.native
+      var useFailSafe: Boolean
       
       /**
         * Debug output includes all internal behaviors
         */
-      var verbose: Boolean = js.native
+      var verbose: Boolean
     }
     object Impl {
       
@@ -592,7 +590,7 @@ object SemanticUI {
       }
     }
     
-    type Param = (PickImplanimation | PickImplinterval | PickImplreverse | PickImpldisplayType | PickImplduration | PickImpluseFailSafe | PickImplallowRepeats | PickImplqueue | PickImplonShow | PickImplonHide | PickImplonStart | PickImplonComplete | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) with PartialPickImplkeyofImpl
+    type Param = (PickImplanimation | PickImplinterval | PickImplreverse | PickImpldisplayType | PickImplduration | PickImpluseFailSafe | PickImplallowRepeats | PickImplqueue | PickImplonShow | PickImplonHide | PickImplonStart | PickImplonComplete | PickImplclassName | PickImplerror | PickImplnamespace | PickImplname | PickImplsilent | PickImpldebug | PickImplperformance | PickImplverbose) & PartialPickImplkeyofImpl
   }
   /**
     * @see {@link http://semantic-ui.com/modules/transition.html#/settings}

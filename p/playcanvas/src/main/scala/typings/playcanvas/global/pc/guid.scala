@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,11 +10,14 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object guid {
   
+  @JSGlobal("pc.guid")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Create an RFC4122 version 4 compliant GUID.
     * @returns A new GUID.
     */
-  @JSGlobal("pc.guid.create")
-  @js.native
-  def create(): String = js.native
+  @scala.inline
+  def create(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[String]
 }

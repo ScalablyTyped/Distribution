@@ -4,15 +4,13 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NCHW
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.NHWC
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DepthToSpaceAttrs extends StObject {
   
-  var blockSize: Double = js.native
+  var blockSize: Double
   
-  var dataFormat: NHWC | NCHW = js.native
+  var dataFormat: NHWC | NCHW
 }
 object DepthToSpaceAttrs {
   

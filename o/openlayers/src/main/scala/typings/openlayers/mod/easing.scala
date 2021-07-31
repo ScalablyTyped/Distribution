@@ -2,10 +2,13 @@ package typings.openlayers.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object easing {
+  
+  @JSImport("openlayers", "easing")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Start slow and speed up.
@@ -13,9 +16,8 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @JSImport("openlayers", "easing.easeIn")
-  @js.native
-  def easeIn(t: Double): Double = js.native
+  @scala.inline
+  def easeIn(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeIn")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Start fast and slow down.
@@ -23,9 +25,8 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @JSImport("openlayers", "easing.easeOut")
-  @js.native
-  def easeOut(t: Double): Double = js.native
+  @scala.inline
+  def easeOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("easeOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Start slow, speed up, and then slow down again.
@@ -33,9 +34,8 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @JSImport("openlayers", "easing.inAndOut")
-  @js.native
-  def inAndOut(t: Double): Double = js.native
+  @scala.inline
+  def inAndOut(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("inAndOut")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Maintain a constant speed over time.
@@ -43,9 +43,8 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @JSImport("openlayers", "easing.linear")
-  @js.native
-  def linear(t: Double): Double = js.native
+  @scala.inline
+  def linear(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("linear")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
   
   /**
     * Start slow, speed up, and at the very end slow down again.  This has the
@@ -55,7 +54,6 @@ object easing {
     * @return Output between 0 and 1.
     * @api
     */
-  @JSImport("openlayers", "easing.upAndDown")
-  @js.native
-  def upAndDown(t: Double): Double = js.native
+  @scala.inline
+  def upAndDown(t: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("upAndDown")(t.asInstanceOf[js.Any]).asInstanceOf[Double]
 }

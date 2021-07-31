@@ -4,7 +4,6 @@ import typings.notyf.notyfOptionsMod.NotyfHorizontalPosition
 import typings.notyf.notyfOptionsMod.NotyfVerticalPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notyfStrings {
@@ -90,7 +89,9 @@ object notyfStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait bottom extends NotyfVerticalPosition
+  sealed trait bottom
+    extends StObject
+       with NotyfVerticalPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
@@ -116,7 +117,8 @@ object notyfStrings {
   
   @js.native
   sealed trait center
-    extends NotyfHorizontalPosition
+    extends StObject
+       with NotyfHorizontalPosition
        with NotyfVerticalPosition
   @scala.inline
   def center: center = "center".asInstanceOf[center]
@@ -502,7 +504,9 @@ object notyfStrings {
   def label: label = "label".asInstanceOf[label]
   
   @js.native
-  sealed trait left extends NotyfHorizontalPosition
+  sealed trait left
+    extends StObject
+       with NotyfHorizontalPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -677,7 +681,9 @@ object notyfStrings {
   def rect: rect = "rect".asInstanceOf[rect]
   
   @js.native
-  sealed trait right extends NotyfHorizontalPosition
+  sealed trait right
+    extends StObject
+       with NotyfHorizontalPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
@@ -847,7 +853,9 @@ object notyfStrings {
   def title: title = "title".asInstanceOf[title]
   
   @js.native
-  sealed trait top extends NotyfVerticalPosition
+  sealed trait top
+    extends StObject
+       with NotyfVerticalPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
   

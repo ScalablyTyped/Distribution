@@ -2,21 +2,19 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTrainingJobsResponse extends StObject {
   
   /**
     * If the response is truncated, Amazon SageMaker returns this token. To retrieve the next set of training jobs, use it in the subsequent request.
     */
-  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.native
+  var NextToken: js.UndefOr[typings.awsSdk.sagemakerMod.NextToken] = js.undefined
   
   /**
     * An array of TrainingJobSummary objects, each listing a training job.
     */
-  var TrainingJobSummaries: typings.awsSdk.sagemakerMod.TrainingJobSummaries = js.native
+  var TrainingJobSummaries: typings.awsSdk.sagemakerMod.TrainingJobSummaries
 }
 object ListTrainingJobsResponse {
   

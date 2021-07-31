@@ -3,13 +3,11 @@ package typings.winjs.WinJS.UI
 import typings.winjs.WinJS.Utilities.Key
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a grid layout for the ListView in which items are arranged in a horizontal grid.
   **/
-@js.native
 trait GridLayout extends StObject {
   
   //#endregion Methods
@@ -17,29 +15,29 @@ trait GridLayout extends StObject {
   /**
     * This property is no longer supported. Starting with Windows Library for JavaScript 2.0, use the .win-listview.win-container.win-backdrop CSS selector.
     **/
-  var backdropColor: String = js.native
+  var backdropColor: String
   
   /**
     * This property is no longer supported. Starting with Windows Library for JavaScript 2.0, use the .win-listview.win-container.win-backdrop CSS selector.
     **/
-  var disableBackdrop: Boolean = js.native
+  var disableBackdrop: Boolean
   
   //#endregion Constructors
   //#region Methods
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def dragLeave(): Unit = js.native
+  def dragLeave(): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def dragOver(): Unit = js.native
+  def dragOver(): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def executeAnimations(): Unit = js.native
+  def executeAnimations(): Unit
   
   /**
     * Determines the next item to receive keyboard focus.
@@ -47,43 +45,43 @@ trait GridLayout extends StObject {
     * @param pressedKey The key that was pressed.
     * @returns An object that describes the next item that should receive focus. It has these properties: index, type.
     **/
-  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any = js.native
+  def getAdjacent(currentItem: js.Any, pressedKey: Key): js.Any
   
   /**
     * Gets or sets the position of group headers.
     **/
-  var groupHeaderPosition: HeaderPosition = js.native
+  var groupHeaderPosition: HeaderPosition
   
   /**
     * This property is no longer supported. Starting with the Windows Library for JavaScript 2.0, use a CellSpanningLayout.
     **/
-  var groupInfo: js.Function = js.native
+  var groupInfo: js.Function
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param x The x-coordinate, or the horizontal position on the screen.
     * @param y The y-coordinate, or the vertical position on the screen.
     **/
-  def hitTest(x: Double, y: Double): Unit = js.native
+  def hitTest(x: Double, y: Double): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param site The rendering site for the layout.
     * @param groupsEnabled Set to true if this layout supports groups; set to false if it does not.
     **/
-  def initialize(site: ILayoutSite2, groupsEnabled: Boolean): Unit = js.native
+  def initialize(site: ILayoutSite2, groupsEnabled: Boolean): Unit
   
   /**
     * This property is no longer supported. Starting with the Windows Library for JavaScript 2.0, use a CellSpanningLayout.
     **/
-  var itemInfo: js.Function = js.native
+  var itemInfo: js.Function
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     * @param firstPixel The first pixel the range of items falls between.
     * @param lastPixel The last pixel the range of items falls between.
     **/
-  def itemsFromRange(firstPixel: Double, lastPixel: Double): Unit = js.native
+  def itemsFromRange(firstPixel: Double, lastPixel: Double): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
@@ -92,37 +90,37 @@ trait GridLayout extends StObject {
     * @param modifiedItems
     * @param modifiedGroups
     **/
-  def layout(tree: js.Any, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit = js.native
+  def layout(tree: js.Any, changedRange: js.Any, modifiedItems: js.Any, modifiedGroups: js.Any): Unit
   
   /**
     * This property is no longer supported. Starting with Windows Library for JavaScript 2.0, use the maximumRowsOrColumns property.
     **/
-  var maxRows: Double = js.native
+  var maxRows: Double
   
   /**
     * Gets or set the maximum number of rows or columns, depending on the orientation, to display before content begins to wrap.
     **/
-  var maximumRowsOrColumns: Double = js.native
+  var maximumRowsOrColumns: Double
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  var numberOfItemsPerItemsBlock: js.Any = js.native
+  var numberOfItemsPerItemsBlock: js.Any
   
   /**
     * Gets or sets the orientation of the GridLayout.
     **/
-  var orientation: Orientation = js.native
+  var orientation: Orientation
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def setupAnimations(): Unit = js.native
+  def setupAnimations(): Unit
   
   /**
     * This API supports the WinJS infrastructure and is not intended to be used directly from your code.
     **/
-  def uninitialize(): Unit = js.native
+  def uninitialize(): Unit
 }
 object GridLayout {
   

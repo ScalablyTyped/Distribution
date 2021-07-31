@@ -2,26 +2,24 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMappingRequest extends StObject {
   
   /**
     * Parameters for the mapping.
     */
-  var Location: js.UndefOr[typings.awsSdk.glueMod.Location] = js.native
+  var Location: js.UndefOr[typings.awsSdk.glueMod.Location] = js.undefined
   
   /**
     * A list of target tables.
     */
-  var Sinks: js.UndefOr[CatalogEntries] = js.native
+  var Sinks: js.UndefOr[CatalogEntries] = js.undefined
   
   /**
     * Specifies the source table.
     */
-  var Source: CatalogEntry = js.native
+  var Source: CatalogEntry
 }
 object GetMappingRequest {
   

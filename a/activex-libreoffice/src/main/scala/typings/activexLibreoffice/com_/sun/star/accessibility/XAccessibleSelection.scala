@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,8 +18,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It depends on the class implementing this interface, whether it supports single or multi selection.
   * @since OOo 1.1.2
   */
-@js.native
-trait XAccessibleSelection extends XInterface {
+trait XAccessibleSelection
+  extends StObject
+     with XInterface {
   
   /**
     * Returns the number of {@link Accessible} children that are currently selected.
@@ -29,10 +29,10 @@ trait XAccessibleSelection extends XInterface {
     * XAccessibleSelection::deselectSelectedChild().
     * @returns Returns the number of selected children of this object or 0 if no child is selected.
     */
-  val SelectedAccessibleChildCount: Double = js.native
+  val SelectedAccessibleChildCount: Double
   
   /** Clears the selection, so that no children of the object are selected. */
-  def clearAccessibleSelection(): Unit = js.native
+  def clearAccessibleSelection(): Unit
   
   /**
     * Removes the specified child from the set of this object's selected children. Note that not all applications support deselection: calls to this method
@@ -40,7 +40,7 @@ trait XAccessibleSelection extends XInterface {
     * @param nChildIndex This index refers to all children not just the selected ones. If the specified child is not selected or it can not be deselected for
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not lie in the valid range of 0 up to, but not including, the result of {
     */
-  def deselectAccessibleChild(nChildIndex: Double): Unit = js.native
+  def deselectAccessibleChild(nChildIndex: Double): Unit
   
   /**
     * Returns the specified selected {@link Accessible} child.
@@ -48,7 +48,7 @@ trait XAccessibleSelection extends XInterface {
     * @returns If the index is valid, i.e. not negative and lower than the number of selected children, then a valid reference to the corresponding {@link XAcce
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not lie in the valid range of 0 up to the result of XAccessibleRelationSe
     */
-  def getSelectedAccessibleChild(nSelectedChildIndex: Double): XAccessible = js.native
+  def getSelectedAccessibleChild(nSelectedChildIndex: Double): XAccessible
   
   /**
     * Returns the number of {@link Accessible} children that are currently selected.
@@ -57,7 +57,7 @@ trait XAccessibleSelection extends XInterface {
     * XAccessibleSelection::deselectSelectedChild().
     * @returns Returns the number of selected children of this object or 0 if no child is selected.
     */
-  def getSelectedAccessibleChildCount(): Double = js.native
+  def getSelectedAccessibleChildCount(): Double
   
   /**
     * Determines if the specified child of this object is selected.
@@ -65,7 +65,7 @@ trait XAccessibleSelection extends XInterface {
     * @returns Returns `TRUE` if the specified child is selected and `FALSE` if it is not selected.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not lie in the valid range of 0 up to the result of {@link XAccessibleCon
     */
-  def isAccessibleChildSelected(nChildIndex: Double): Boolean = js.native
+  def isAccessibleChildSelected(nChildIndex: Double): Boolean
   
   /**
     * Selects the specified {@link Accessible} child of the object.
@@ -75,7 +75,7 @@ trait XAccessibleSelection extends XInterface {
     * @param nChildIndex Index of the child which is to add to the selection. This index refers to all the children of this object.
     * @throws com::sun::star::lang::IndexOutOfBoundsException if the given index does not lie in the valid range of 0 up to the result of {@link XAccessibleCon
     */
-  def selectAccessibleChild(nChildIndex: Double): Unit = js.native
+  def selectAccessibleChild(nChildIndex: Double): Unit
   
   /**
     * Select all children.
@@ -83,7 +83,7 @@ trait XAccessibleSelection extends XInterface {
     * Causes every child of the object to be selected if the object supports multiple selections. If multiple selection is not supported then the first
     * child, if it exists, is selected and all other children are deselected.
     */
-  def selectAllAccessibleChildren(): Unit = js.native
+  def selectAllAccessibleChildren(): Unit
 }
 object XAccessibleSelection {
   

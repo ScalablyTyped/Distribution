@@ -2,38 +2,36 @@ package typings.awsSdk.budgetsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateBudgetActionRequest extends StObject {
   
-  var AccountId: typings.awsSdk.budgetsMod.AccountId = js.native
+  var AccountId: typings.awsSdk.budgetsMod.AccountId
   
   /**
     *  A system-generated universally unique identifier (UUID) for the action. 
     */
-  var ActionId: typings.awsSdk.budgetsMod.ActionId = js.native
+  var ActionId: typings.awsSdk.budgetsMod.ActionId
   
-  var ActionThreshold: js.UndefOr[typings.awsSdk.budgetsMod.ActionThreshold] = js.native
+  var ActionThreshold: js.UndefOr[typings.awsSdk.budgetsMod.ActionThreshold] = js.undefined
   
   /**
     *  This specifies if the action needs manual or automatic approval. 
     */
-  var ApprovalModel: js.UndefOr[typings.awsSdk.budgetsMod.ApprovalModel] = js.native
+  var ApprovalModel: js.UndefOr[typings.awsSdk.budgetsMod.ApprovalModel] = js.undefined
   
-  var BudgetName: typings.awsSdk.budgetsMod.BudgetName = js.native
+  var BudgetName: typings.awsSdk.budgetsMod.BudgetName
   
-  var Definition: js.UndefOr[typings.awsSdk.budgetsMod.Definition] = js.native
+  var Definition: js.UndefOr[typings.awsSdk.budgetsMod.Definition] = js.undefined
   
   /**
     *  The role passed for action execution and reversion. Roles and actions must be in the same account. 
     */
-  var ExecutionRoleArn: js.UndefOr[RoleArn] = js.native
+  var ExecutionRoleArn: js.UndefOr[RoleArn] = js.undefined
   
-  var NotificationType: js.UndefOr[typings.awsSdk.budgetsMod.NotificationType] = js.native
+  var NotificationType: js.UndefOr[typings.awsSdk.budgetsMod.NotificationType] = js.undefined
   
-  var Subscribers: js.UndefOr[typings.awsSdk.budgetsMod.Subscribers] = js.native
+  var Subscribers: js.UndefOr[typings.awsSdk.budgetsMod.Subscribers] = js.undefined
 }
 object UpdateBudgetActionRequest {
   

@@ -3,32 +3,30 @@ package typings.vscodeLanguageserverProtocol.anon
 import typings.vscodeLanguageserverTypes.mod.MarkupKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CommitCharactersSupport extends StObject {
   
   /**
     * Client supports commit characters on a completion item.
     */
-  var commitCharactersSupport: js.UndefOr[Boolean] = js.native
+  var commitCharactersSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client supports the deprecated property on a completion item.
     */
-  var deprecatedSupport: js.UndefOr[Boolean] = js.native
+  var deprecatedSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client supports the follow content formats for the documentation
     * property. The order describes the preferred format of the client.
     */
-  var documentationFormat: js.UndefOr[js.Array[MarkupKind]] = js.native
+  var documentationFormat: js.UndefOr[js.Array[MarkupKind]] = js.undefined
   
   /**
     * Client supports the preselect property on a completion item.
     */
-  var preselectSupport: js.UndefOr[Boolean] = js.native
+  var preselectSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client supports snippets as insert text.
@@ -38,7 +36,7 @@ trait CommitCharactersSupport extends StObject {
     * the end of the snippet. Placeholders with equal identifiers are linked,
     * that is typing in one will update others too.
     */
-  var snippetSupport: js.UndefOr[Boolean] = js.native
+  var snippetSupport: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Client supports the tag property on a completion item. Clients supporting
@@ -48,7 +46,7 @@ trait CommitCharactersSupport extends StObject {
     *
     * @since 3.15.0
     */
-  var tagSupport: js.UndefOr[ValueSetArray] = js.native
+  var tagSupport: js.UndefOr[ValueSetArray] = js.undefined
 }
 object CommitCharactersSupport {
   

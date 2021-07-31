@@ -2,43 +2,41 @@ package typings.moment.momentMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelativeTimeSpec extends StObject {
   
-  var M: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var M: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var MM: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var MM: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var d: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var d: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var dd: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var dd: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var future: js.UndefOr[RelativeTimeFuturePastVal] = js.native
+  var future: js.UndefOr[RelativeTimeFuturePastVal] = js.undefined
   
-  var h: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var h: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var hh: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var hh: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var m: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var m: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var mm: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var mm: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var past: js.UndefOr[RelativeTimeFuturePastVal] = js.native
+  var past: js.UndefOr[RelativeTimeFuturePastVal] = js.undefined
   
-  var s: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var s: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var ss: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var ss: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var w: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var w: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var ww: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var ww: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var y: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var y: js.UndefOr[RelativeTimeSpecVal] = js.undefined
   
-  var yy: js.UndefOr[RelativeTimeSpecVal] = js.native
+  var yy: js.UndefOr[RelativeTimeSpecVal] = js.undefined
 }
 object RelativeTimeSpec {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetLinkAttributesResponse extends StObject {
   
   /**
     * The attributes that are associated with the typed link.
     */
-  var Attributes: js.UndefOr[AttributeKeyAndValueList] = js.native
+  var Attributes: js.UndefOr[AttributeKeyAndValueList] = js.undefined
 }
 object BatchGetLinkAttributesResponse {
   

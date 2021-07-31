@@ -4,17 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.appBuilderLib.configurationMod.Configuration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataMod {
   
-  @js.native
   trait AuthorMetadata extends StObject {
     
-    val email: js.UndefOr[String] = js.native
+    val email: js.UndefOr[String] = js.undefined
     
-    val name: String = js.native
+    val name: String
   }
   object AuthorMetadata {
     
@@ -38,61 +36,60 @@ object metadataMod {
     }
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    val author: js.UndefOr[AuthorMetadata | Null] = js.native
+    val author: js.UndefOr[AuthorMetadata | Null] = js.undefined
     
     /**
       * The electron-builder configuration.
       */
-    val build: js.UndefOr[Configuration] = js.native
+    val build: js.UndefOr[Configuration] = js.undefined
     
     /** @private */
-    val dependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
     /**
       * The application description.
       */
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
     /**
       * The url to the project [homepage](https://docs.npmjs.com/files/package.json#homepage) (NuGet Package `projectUrl` (optional) or Linux Package URL (required)).
       *
       * If not specified and your project repository is public on GitHub, it will be `https://github.com/${user}/${project}` by default.
       */
-    val homepage: js.UndefOr[String | Null] = js.native
+    val homepage: js.UndefOr[String | Null] = js.undefined
     
     /**
       * *linux-only.* The [license](https://docs.npmjs.com/files/package.json#license) name.
       */
-    val license: js.UndefOr[String | Null] = js.native
+    val license: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    val main: js.UndefOr[String | Null] = js.native
+    val main: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The application name.
       * @required
       */
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
     /** @private */
-    val productName: js.UndefOr[String | Null] = js.native
+    val productName: js.UndefOr[String | Null] = js.undefined
     
     /**
       * The [repository](https://docs.npmjs.com/files/package.json#repository).
       */
-    val repository: js.UndefOr[String | RepositoryInfo | Null] = js.native
+    val repository: js.UndefOr[String | RepositoryInfo | Null] = js.undefined
     
     /** @private */
-    val shortVersion: js.UndefOr[String | Null] = js.native
+    val shortVersion: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    val shortVersionWindows: js.UndefOr[String | Null] = js.native
+    val shortVersionWindows: js.UndefOr[String | Null] = js.undefined
     
     /** @private */
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object Metadata {
     
@@ -209,10 +206,9 @@ object metadataMod {
     }
   }
   
-  @js.native
   trait RepositoryInfo extends StObject {
     
-    val url: String = js.native
+    val url: String
   }
   object RepositoryInfo {
     

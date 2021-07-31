@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for a splitter control's cancelable client events concerning manipulations with a pane.
   */
-@js.native
-trait ASPxClientSplitterPaneCancelEventArgs extends ASPxClientSplitterPaneEventArgs {
+trait ASPxClientSplitterPaneCancelEventArgs
+  extends StObject
+     with ASPxClientSplitterPaneEventArgs {
   
   /**
     * Gets or sets a value indicating whether the action which raised the event should be canceled.
     */
-  var cancel: Boolean = js.native
+  var cancel: Boolean
 }
 object ASPxClientSplitterPaneCancelEventArgs {
   

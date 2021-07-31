@@ -4,18 +4,17 @@ import org.scalablytyped.runtime.Instantiable3
 import typings.markdownIt.libMod.MarkdownIt
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object parserCoreMod {
   
   @JSImport("markdown-it/lib/parser_core", JSImport.Namespace)
   @js.native
-  class ^ () extends Core
-  
-  @js.native
-  trait Core extends StObject {
+  class ^ ()
+    extends StObject
+       with Core {
     
+    /* CompleteClass */
     var State: Instantiable3[
         /* src */ String, 
         /* md */ MarkdownIt, 
@@ -26,9 +25,28 @@ object parserCoreMod {
     /**
       * Executes core chain rules.
       */
-    def process(state: typings.markdownIt.stateCoreMod.^): Unit = js.native
+    /* CompleteClass */
+    override def process(state: typings.markdownIt.stateCoreMod.^): Unit = js.native
     
+    /* CompleteClass */
     var ruler: typings.markdownIt.rulerMod.^[RuleCore] = js.native
+  }
+  
+  trait Core extends StObject {
+    
+    var State: Instantiable3[
+        /* src */ String, 
+        /* md */ MarkdownIt, 
+        /* env */ js.Any, 
+        typings.markdownIt.stateCoreMod.^
+      ]
+    
+    /**
+      * Executes core chain rules.
+      */
+    def process(state: typings.markdownIt.stateCoreMod.^): Unit
+    
+    var ruler: typings.markdownIt.rulerMod.^[RuleCore]
   }
   object Core {
     

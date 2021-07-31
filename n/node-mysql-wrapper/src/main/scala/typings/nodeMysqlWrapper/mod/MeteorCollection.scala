@@ -7,7 +7,6 @@ import typings.nodeMysqlWrapper.anon.Fields
 import typings.nodeMysqlWrapper.anon.Reactive
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("node-mysql-wrapper", "MeteorCollection")
@@ -30,14 +29,14 @@ class MeteorCollection[T] protected () extends StObject {
   def fillOne(criteriaRawJsObject: js.Any): Unit = js.native
   
   def find(): Cursor[T] = js.native
-  def find(selector: js.UndefOr[scala.Nothing], options: Fields): Cursor[T] = js.native
   def find(selector: js.Any): Cursor[T] = js.native
   def find(selector: js.Any, options: Fields): Cursor[T] = js.native
+  def find(selector: Unit, options: Fields): Cursor[T] = js.native
   
   def findOne(): T = js.native
-  def findOne(selector: js.UndefOr[scala.Nothing], options: Reactive): T = js.native
   def findOne(selector: js.Any): T = js.native
   def findOne(selector: js.Any, options: Reactive): T = js.native
+  def findOne(selector: Unit, options: Reactive): T = js.native
   
   var rawCollection: Collection[T] = js.native
   

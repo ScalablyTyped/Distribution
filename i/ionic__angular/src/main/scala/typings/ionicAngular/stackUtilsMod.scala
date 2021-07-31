@@ -11,60 +11,62 @@ import typings.ionicCore.navInterfaceMod.NavDirection
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stackUtilsMod {
   
-  @JSImport("@ionic/angular/directives/navigation/stack-utils", "computeStackId")
+  @JSImport("@ionic/angular/directives/navigation/stack-utils", JSImport.Namespace)
   @js.native
-  def computeStackId(prefixUrl: js.Array[String], url: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@ionic/angular/directives/navigation/stack-utils", "destroyView")
-  @js.native
-  def destroyView(view: RouteView): Unit = js.native
+  @scala.inline
+  def computeStackId(prefixUrl: js.Array[String], url: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("computeStackId")(prefixUrl.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ionic/angular/directives/navigation/stack-utils", "getUrl")
-  @js.native
-  def getUrl(router: Router, activatedRoute: ActivatedRoute): String = js.native
+  @scala.inline
+  def destroyView(view: RouteView): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("destroyView")(view.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("@ionic/angular/directives/navigation/stack-utils", "insertView")
-  @js.native
-  def insertView(views: js.Array[RouteView], view: RouteView, direction: RouterDirection): js.Array[RouteView] = js.native
+  @scala.inline
+  def getUrl(router: Router, activatedRoute: ActivatedRoute): String = (^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(router.asInstanceOf[js.Any], activatedRoute.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ionic/angular/directives/navigation/stack-utils", "isTabSwitch")
-  @js.native
-  def isTabSwitch(enteringView: RouteView, leavingView: RouteView): Boolean = js.native
+  @scala.inline
+  def insertView(views: js.Array[RouteView], view: RouteView, direction: RouterDirection): js.Array[RouteView] = (^.asInstanceOf[js.Dynamic].applyDynamic("insertView")(views.asInstanceOf[js.Any], view.asInstanceOf[js.Any], direction.asInstanceOf[js.Any])).asInstanceOf[js.Array[RouteView]]
   
-  @JSImport("@ionic/angular/directives/navigation/stack-utils", "toSegments")
-  @js.native
-  def toSegments(path: String): js.Array[String] = js.native
+  @scala.inline
+  def isTabSwitch(enteringView: RouteView, leavingView: RouteView): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isTabSwitch")(enteringView.asInstanceOf[js.Any], leavingView.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def toSegments(path: String): js.Array[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("toSegments")(path.asInstanceOf[js.Any]).asInstanceOf[js.Array[String]]
+  
   trait RouteView extends StObject {
     
-    var animationBuilder: js.UndefOr[AnimationBuilder] = js.native
+    var animationBuilder: js.UndefOr[AnimationBuilder] = js.undefined
     
-    var element: HTMLElement = js.native
+    var element: HTMLElement
     
-    var id: Double = js.native
+    var id: Double
     
-    var ref: ComponentRef[_] = js.native
+    var ref: ComponentRef[js.Any]
     
-    var savedData: js.UndefOr[js.Any] = js.native
+    var savedData: js.UndefOr[js.Any] = js.undefined
     
-    var savedExtras: js.UndefOr[NavigationExtras] = js.native
+    var savedExtras: js.UndefOr[NavigationExtras] = js.undefined
     
-    var stackId: js.UndefOr[String] = js.native
+    var stackId: js.UndefOr[String] = js.undefined
     
-    def unlistenEvents(): Unit = js.native
+    def unlistenEvents(): Unit
     
-    var url: String = js.native
+    var url: String
   }
   object RouteView {
     
     @scala.inline
-    def apply(element: HTMLElement, id: Double, ref: ComponentRef[_], unlistenEvents: () => Unit, url: String): RouteView = {
+    def apply(
+      element: HTMLElement,
+      id: Double,
+      ref: ComponentRef[js.Any],
+      unlistenEvents: () => Unit,
+      url: String
+    ): RouteView = {
       val __obj = js.Dynamic.literal(element = element.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], ref = ref.asInstanceOf[js.Any], unlistenEvents = js.Any.fromFunction0(unlistenEvents), url = url.asInstanceOf[js.Any])
       __obj.asInstanceOf[RouteView]
     }
@@ -85,7 +87,7 @@ object stackUtilsMod {
       def setId(value: Double): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRef(value: ComponentRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+      def setRef(value: ComponentRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSavedData(value: js.Any): Self = StObject.set(x, "savedData", value.asInstanceOf[js.Any])
@@ -113,16 +115,15 @@ object stackUtilsMod {
     }
   }
   
-  @js.native
   trait StackEvent extends StObject {
     
-    var animation: js.UndefOr[NavDirection] = js.native
+    var animation: js.UndefOr[NavDirection] = js.undefined
     
-    var direction: RouterDirection = js.native
+    var direction: RouterDirection
     
-    var enteringView: RouteView = js.native
+    var enteringView: RouteView
     
-    var tabSwitch: Boolean = js.native
+    var tabSwitch: Boolean
   }
   object StackEvent {
     

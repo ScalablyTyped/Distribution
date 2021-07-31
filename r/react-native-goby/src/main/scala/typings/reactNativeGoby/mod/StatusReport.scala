@@ -3,37 +3,35 @@ package typings.reactNativeGoby.mod
 import typings.reactNativeGoby.mod.Goby.DeploymentStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StatusReport extends StObject {
   
   /**
     * Details of the package that was deployed (or attempted to).
     */
   @JSName("package")
-  var _package: js.UndefOr[Package] = js.native
+  var _package: js.UndefOr[Package] = js.undefined
   
   /**
     * The version of the app that was deployed (for a native app upgrade).
     */
-  var appVersion: js.UndefOr[String] = js.native
+  var appVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Deployment key used when deploying the previous package.
     */
-  var previousDeploymentKey: js.UndefOr[String] = js.native
+  var previousDeploymentKey: js.UndefOr[String] = js.undefined
   
   /**
     * The label (v#) of the package that was upgraded from.
     */
-  var previousLabelOrAppVersion: js.UndefOr[String] = js.native
+  var previousLabelOrAppVersion: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the deployment succeeded or failed.
     */
-  var status: DeploymentStatus = js.native
+  var status: DeploymentStatus
 }
 object StatusReport {
   

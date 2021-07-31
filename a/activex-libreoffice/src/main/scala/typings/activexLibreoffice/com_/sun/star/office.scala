@@ -14,23 +14,23 @@ import typings.activexLibreoffice.com_.sun.star.text.XText
 import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object office {
   
   /** @since LibreOffice 4.2 */
-  @js.native
-  trait Quickstart extends XFastPropertySet {
+  trait Quickstart
+    extends StObject
+       with XFastPropertySet {
     
     /** The first two parameters are ignored */
-    def createAndSetVeto(p1: Boolean, p2: Boolean, DisableVeto: Boolean): Unit = js.native
+    def createAndSetVeto(p1: Boolean, p2: Boolean, DisableVeto: Boolean): Unit
     
-    def createAutoStart(bQuickstart: Boolean, bAutostart: Boolean): Unit = js.native
+    def createAutoStart(bQuickstart: Boolean, bAutostart: Boolean): Unit
     
-    def createDefault(): Unit = js.native
+    def createDefault(): Unit
     
-    def createStart(bQuickstart: Boolean): Unit = js.native
+    def createStart(bQuickstart: Boolean): Unit
   }
   object Quickstart {
     
@@ -68,34 +68,34 @@ object office {
   }
   
   /** This interface gives access to an annotation inside a document. */
-  @js.native
   trait XAnnotation
-    extends XPropertySet
+    extends StObject
+       with XPropertySet
        with XComponent {
     
     /** a reference to the document content this annotation is anchored to. */
-    var Anchor: js.Any = js.native
+    var Anchor: js.Any
     
     /** stores the full name of the author who created this annotation. */
-    var Author: String = js.native
+    var Author: String
     
     /** stores the date and time this annotation was last edited. */
-    var DateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime = js.native
+    var DateTime: typings.activexLibreoffice.com_.sun.star.util.DateTime
     
     /** stores the initials of the author who created this annotation. */
-    var Initials: String = js.native
+    var Initials: String
     
     /**
       * this is an optional position that gives the user interface a hint where the annotation should be rendered. This could be an offset to the annotations
       * anchor.
       */
-    var Position: RealPoint2D = js.native
+    var Position: RealPoint2D
     
     /** this is an optional size that gives the user interface a hint how large the annotation should be rendered. */
-    var Size: RealSize2D = js.native
+    var Size: RealSize2D
     
     /** gives access to the annotations text. */
-    var TextRange: XText = js.native
+    var TextRange: XText
   }
   object XAnnotation {
     
@@ -154,17 +154,16 @@ object office {
   }
   
   /** This interface gives access to the annotation for a document content. */
-  @js.native
   trait XAnnotationAccess extends StObject {
     
     /** creates a new annotation and inserts it into the document content. */
-    def createAndInsertAnnotation(): XAnnotation = js.native
+    def createAndInsertAnnotation(): XAnnotation
     
     /** @returns a new enumeration object for this annotation container. It returns NULL if there are no objects in this container. */
-    def createAnnotationEnumeration(): XAnnotationEnumeration = js.native
+    def createAnnotationEnumeration(): XAnnotationEnumeration
     
     /** removes the annotation from this document content. */
-    def removeAnnotation(annotation: XAnnotation): Unit = js.native
+    def removeAnnotation(annotation: XAnnotation): Unit
   }
   object XAnnotationAccess {
     
@@ -193,17 +192,16 @@ object office {
   }
   
   /** An enumeration for a set of annotations. */
-  @js.native
   trait XAnnotationEnumeration extends StObject {
     
     /** tests whether this enumeration contains more elements. */
-    def hasMoreElements(): Boolean = js.native
+    def hasMoreElements(): Boolean
     
     /**
       * @returns the next element of this enumeration.
       * @throws NoSuchElementException if no more elements exist.
       */
-    def nextElement(): XAnnotation = js.native
+    def nextElement(): XAnnotation
   }
   object XAnnotationEnumeration {
     

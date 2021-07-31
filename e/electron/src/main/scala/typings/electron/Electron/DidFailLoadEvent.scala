@@ -2,11 +2,12 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait DidFailLoadEvent extends Event {
+trait DidFailLoadEvent
+  extends StObject
+     with Event {
   
   var errorCode: Double = js.native
   

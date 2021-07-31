@@ -6,7 +6,6 @@ import typings.yaml.utilMod.Type.FLOW_SEQ
 import typings.yaml.utilMod.Type.SEQ
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("yaml/types", "YAMLSeq")
@@ -34,20 +33,16 @@ class YAMLSeq () extends Collection {
   def set(key: Double, value: js.Any): Unit = js.native
   def set(key: Scalar, value: js.Any): Unit = js.native
   
-  def toJSON(arg: js.UndefOr[scala.Nothing], ctx: NodeToJsonContext): js.Array[_] = js.native
-  def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Array[_] = js.native
+  def toJSON(arg: js.Any, ctx: NodeToJsonContext): js.Array[js.Any] = js.native
+  def toJSON(arg: Unit, ctx: NodeToJsonContext): js.Array[js.Any] = js.native
   
-  def toString(
-    ctx: js.UndefOr[scala.Nothing],
-    onComment: js.UndefOr[scala.Nothing],
-    onChompKeep: js.Function0[Unit]
-  ): String = js.native
-  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit]): String = js.native
-  def toString(ctx: js.UndefOr[scala.Nothing], onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
+  def toString(ctx: Unit, onComment: js.Function0[Unit]): String = js.native
+  def toString(ctx: Unit, onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
+  def toString(ctx: Unit, onComment: Unit, onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext): String = js.native
-  def toString(ctx: StringifyContext, onComment: js.UndefOr[scala.Nothing], onChompKeep: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit]): String = js.native
   def toString(ctx: StringifyContext, onComment: js.Function0[Unit], onChompKeep: js.Function0[Unit]): String = js.native
+  def toString(ctx: StringifyContext, onComment: Unit, onChompKeep: js.Function0[Unit]): String = js.native
   
   @JSName("type")
   var type_YAMLSeq: js.UndefOr[FLOW_SEQ | SEQ] = js.native

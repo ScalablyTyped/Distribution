@@ -3,18 +3,16 @@ package typings.awsSdkClientS3Node
 import typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.Destination
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesAccessControlTranslationMod {
   
-  @js.native
   trait AccessControlTranslation extends StObject {
     
     /**
       * <p>The override value for the owner of the replica object.</p>
       */
-    var Owner: Destination | String = js.native
+    var Owner: Destination | String
   }
   object AccessControlTranslation {
     

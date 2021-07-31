@@ -3,28 +3,26 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementAndStatementStatementSizeConstraintStatement extends StObject {
   
   /**
     * The operator to use to compare the request part to the size setting. Valid values include: `EQ`, `NE`, `LE`, `LT`, `GE`, or `GT`.
     */
-  var comparisonOperator: Input[String] = js.native
+  var comparisonOperator: Input[String]
   
   /**
     * The part of a web request that you want AWS WAF to inspect. See Field to Match below for details.
     */
   var fieldToMatch: js.UndefOr[
     Input[WebAclRuleStatementAndStatementStatementSizeConstraintStatementFieldToMatch]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The size, in bytes, to compare to the request part, after any transformations. Valid values are integers between 0 and 21474836480, inclusive.
     */
-  var size: Input[Double] = js.native
+  var size: Input[Double]
   
   /**
     * Text transformations eliminate some of the unusual formatting that attackers use in web requests in an effort to bypass detection. See Text Transformation below for details.
@@ -35,7 +33,7 @@ trait WebAclRuleStatementAndStatementStatementSizeConstraintStatement extends St
         WebAclRuleStatementAndStatementStatementSizeConstraintStatementTextTransformation
       ]
     ]
-  ] = js.native
+  ]
 }
 object WebAclRuleStatementAndStatementStatementSizeConstraintStatement {
   

@@ -2,7 +2,6 @@ package typings.elasticlunr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elasticlunr", "InvertedIndex")
@@ -13,9 +12,9 @@ class InvertedIndex () extends StObject {
   def addToken(token: String, tokenInfo: TokenInfo, root: InvertedIndexNode): Unit = js.native
   
   def expandToken(token: String): js.Array[String] = js.native
-  def expandToken(token: String, memo: js.UndefOr[scala.Nothing], root: InvertedIndexNode): js.Array[String] = js.native
   def expandToken(token: String, memo: js.Array[String]): js.Array[String] = js.native
   def expandToken(token: String, memo: js.Array[String], root: InvertedIndexNode): js.Array[String] = js.native
+  def expandToken(token: String, memo: Unit, root: InvertedIndexNode): js.Array[String] = js.native
   
   def getDocFreq(token: String): Double = js.native
   
@@ -35,8 +34,11 @@ class InvertedIndex () extends StObject {
 }
 object InvertedIndex {
   
-  /* static member */
-  @JSImport("elasticlunr", "InvertedIndex.load")
+  @JSImport("elasticlunr", "InvertedIndex")
   @js.native
-  def load(serialisedData: SerialisedInvertedIndex): InvertedIndex = js.native
+  val ^ : js.Any = js.native
+  
+  /* static member */
+  @scala.inline
+  def load(serialisedData: SerialisedInvertedIndex): InvertedIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(serialisedData.asInstanceOf[js.Any]).asInstanceOf[InvertedIndex]
 }

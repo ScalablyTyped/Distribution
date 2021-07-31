@@ -10,7 +10,6 @@ import typings.tensorflowTfjsLayers.tensorflowTfjsLayersStrings.SGD
 import typings.tensorflowTfjsLayers.typesMod.BaseSerialization
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optimizerConfigMod {
@@ -19,14 +18,13 @@ object optimizerConfigMod {
   @js.native
   val optimizerClassNames: js.Array[OptimizerClassName] = js.native
   
-  @js.native
   trait AdadeltaOptimizerConfig extends StObject {
     
-    var epsilon: Double = js.native
+    var epsilon: Double
     
-    var learning_rate: Double = js.native
+    var learning_rate: Double
     
-    var rho: Double = js.native
+    var rho: Double
   }
   object AdadeltaOptimizerConfig {
     
@@ -52,12 +50,11 @@ object optimizerConfigMod {
   
   type AdadeltaSerialization = BaseSerialization[Adadelta, AdadeltaOptimizerConfig]
   
-  @js.native
   trait AdagradOptimizerConfig extends StObject {
     
-    var initial_accumulator_value: js.UndefOr[Double] = js.native
+    var initial_accumulator_value: js.UndefOr[Double] = js.undefined
     
-    var learning_rate: Double = js.native
+    var learning_rate: Double
   }
   object AdagradOptimizerConfig {
     
@@ -83,16 +80,15 @@ object optimizerConfigMod {
   
   type AdagradSerialization = BaseSerialization[Adagrad, AdagradOptimizerConfig]
   
-  @js.native
   trait AdamOptimizerConfig extends StObject {
     
-    var beta1: Double = js.native
+    var beta1: Double
     
-    var beta2: Double = js.native
+    var beta2: Double
     
-    var epsilon: js.UndefOr[Double] = js.native
+    var epsilon: js.UndefOr[Double] = js.undefined
     
-    var learning_rate: Double = js.native
+    var learning_rate: Double
   }
   object AdamOptimizerConfig {
     
@@ -124,18 +120,17 @@ object optimizerConfigMod {
   
   type AdamSerialization = BaseSerialization[Adam, AdamOptimizerConfig]
   
-  @js.native
   trait AdamaxOptimizerConfig extends StObject {
     
-    var beta1: Double = js.native
+    var beta1: Double
     
-    var beta2: Double = js.native
+    var beta2: Double
     
-    var decay: js.UndefOr[Double] = js.native
+    var decay: js.UndefOr[Double] = js.undefined
     
-    var epsilon: js.UndefOr[Double] = js.native
+    var epsilon: js.UndefOr[Double] = js.undefined
     
-    var learning_rate: Double = js.native
+    var learning_rate: Double
   }
   object AdamaxOptimizerConfig {
     
@@ -173,14 +168,13 @@ object optimizerConfigMod {
   
   type AdamaxSerialization = BaseSerialization[Adamax, AdamaxOptimizerConfig]
   
-  @js.native
   trait MomentumOptimizerConfig extends StObject {
     
-    var learning_rate: Double = js.native
+    var learning_rate: Double
     
-    var momentum: Double = js.native
+    var momentum: Double
     
-    var use_nesterov: js.UndefOr[Boolean] = js.native
+    var use_nesterov: js.UndefOr[Boolean] = js.undefined
   }
   object MomentumOptimizerConfig {
     
@@ -246,18 +240,17 @@ object optimizerConfigMod {
   
   type OptimizerSerialization = AdadeltaSerialization | AdagradSerialization | AdamSerialization | AdamaxSerialization | MomentumSerialization | RMSPropSerialization | SGDSerialization
   
-  @js.native
   trait RMSPropOptimizerConfig extends StObject {
     
-    var centered: js.UndefOr[Boolean] = js.native
+    var centered: js.UndefOr[Boolean] = js.undefined
     
-    var decay: js.UndefOr[Double] = js.native
+    var decay: js.UndefOr[Double] = js.undefined
     
-    var epsilon: js.UndefOr[Double] = js.native
+    var epsilon: js.UndefOr[Double] = js.undefined
     
-    var learning_rate: Double = js.native
+    var learning_rate: Double
     
-    var momentum: js.UndefOr[Double] = js.native
+    var momentum: js.UndefOr[Double] = js.undefined
   }
   object RMSPropOptimizerConfig {
     
@@ -301,10 +294,9 @@ object optimizerConfigMod {
   
   type RMSPropSerialization = BaseSerialization[RMSProp, RMSPropOptimizerConfig]
   
-  @js.native
   trait SGDOptimizerConfig extends StObject {
     
-    var learning_rate: Double = js.native
+    var learning_rate: Double
   }
   object SGDOptimizerConfig {
     

@@ -11,7 +11,6 @@ import typings.openfin.transportMod.Payload
 import typings.openfin.transportMod.default
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object interappbusChannelMod {
@@ -53,17 +52,17 @@ object interappbusChannelMod {
     /* protected */ def removeChannelFromProviderMap(channelId: String): Unit = js.native
   }
   
-  @js.native
   trait ChannelMessage
-    extends Message[js.Any] {
+    extends StObject
+       with Message[js.Any] {
     
-    var ackToSender: js.Any = js.native
+    var ackToSender: js.Any
     
-    var connectAction: Boolean = js.native
+    var connectAction: Boolean
     
-    var providerIdentity: ProviderIdentity = js.native
+    var providerIdentity: ProviderIdentity
     
-    var senderIdentity: Identity = js.native
+    var senderIdentity: Identity
   }
   object ChannelMessage {
     
@@ -97,10 +96,9 @@ object interappbusChannelMod {
     }
   }
   
-  @js.native
   trait ChannelPayload extends StObject {
     
-    var payload: Payload = js.native
+    var payload: Payload
   }
   object ChannelPayload {
     
@@ -118,13 +116,12 @@ object interappbusChannelMod {
     }
   }
   
-  @js.native
   trait ConnectOptions extends StObject {
     
-    var payload: js.UndefOr[js.Any] = js.native
+    var payload: js.UndefOr[js.Any] = js.undefined
     
     @JSName("wait")
-    var wait_FConnectOptions: js.UndefOr[Boolean] = js.native
+    var wait_FConnectOptions: js.UndefOr[Boolean] = js.undefined
   }
   object ConnectOptions {
     

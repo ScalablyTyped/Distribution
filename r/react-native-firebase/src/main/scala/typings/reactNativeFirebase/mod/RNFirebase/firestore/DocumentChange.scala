@@ -5,19 +5,17 @@ import typings.reactNativeFirebase.reactNativeFirebaseStrings.modified
 import typings.reactNativeFirebase.reactNativeFirebaseStrings.removed
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DocumentChange extends StObject {
   
-  val doc: DocumentSnapshot = js.native
+  val doc: DocumentSnapshot
   
-  val newIndex: Double = js.native
+  val newIndex: Double
   
-  val oldIndex: Double = js.native
+  val oldIndex: Double
   
-  val `type`: added | modified | removed = js.native
+  val `type`: added | modified | removed
 }
 object DocumentChange {
   

@@ -3,23 +3,28 @@ package typings.gitDiffParser
 import typings.gitDiffParser.mod.LineType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object gitDiffParserStrings {
   
   @js.native
-  sealed trait added extends LineType
+  sealed trait added
+    extends StObject
+       with LineType
   @scala.inline
   def added: added = "added".asInstanceOf[added]
   
   @js.native
-  sealed trait deleted extends LineType
+  sealed trait deleted
+    extends StObject
+       with LineType
   @scala.inline
   def deleted: deleted = "deleted".asInstanceOf[deleted]
   
   @js.native
-  sealed trait normal extends LineType
+  sealed trait normal
+    extends StObject
+       with LineType
   @scala.inline
   def normal: normal = "normal".asInstanceOf[normal]
 }

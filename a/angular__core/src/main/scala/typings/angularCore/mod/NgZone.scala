@@ -3,7 +3,6 @@ package typings.angularCore.mod
 import typings.angularCore.anon.EnableLongStackTrace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@angular/core", "NgZone")
@@ -23,26 +22,26 @@ class NgZone protected () extends StObject {
   /**
     * Notifies that an error has been delivered.
     */
-  val onError: EventEmitter[_] = js.native
+  val onError: EventEmitter[js.Any] = js.native
   
   /**
     * Notifies when there is no more microtasks enqueued in the current VM Turn.
     * This is a hint for Angular to do change detection, which may enqueue more microtasks.
     * For this reason this event can fire multiple times per VM Turn.
     */
-  val onMicrotaskEmpty: EventEmitter[_] = js.native
+  val onMicrotaskEmpty: EventEmitter[js.Any] = js.native
   
   /**
     * Notifies when the last `onMicrotaskEmpty` has run and there are no more microtasks, which
     * implies we are about to relinquish VM turn.
     * This event gets called just once.
     */
-  val onStable: EventEmitter[_] = js.native
+  val onStable: EventEmitter[js.Any] = js.native
   
   /**
     * Notifies when code enters Angular Zone. This gets fired first on VM Turn.
     */
-  val onUnstable: EventEmitter[_] = js.native
+  val onUnstable: EventEmitter[js.Any] = js.native
   
   /**
     * Executes the `fn` function synchronously within the Angular zone and returns value returned by
@@ -57,26 +56,18 @@ class NgZone protected () extends StObject {
     * If a synchronous error happens it will be rethrown and not reported via `onError`.
     */
   def run[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  def run[T](
-    fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: js.UndefOr[scala.Nothing],
-    applyArgs: js.Array[_]
-  ): T = js.native
   def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
-  def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
+  def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
+  def run[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
   
   /**
     * Same as `run`, except that synchronous errors are caught and forwarded via `onError` and not
     * rethrown.
     */
   def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  def runGuarded[T](
-    fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: js.UndefOr[scala.Nothing],
-    applyArgs: js.Array[_]
-  ): T = js.native
   def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
-  def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
+  def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
+  def runGuarded[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
   
   /**
     * Executes the `fn` function synchronously in Angular's parent zone and returns value returned by
@@ -106,50 +97,37 @@ class NgZone protected () extends StObject {
     * If a synchronous error happens it will be rethrown and not reported via `onError`.
     */
   def runTask[T](fn: js.Function1[/* repeated */ js.Any, T]): T = js.native
-  def runTask[T](
-    fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: js.UndefOr[scala.Nothing],
-    applyArgs: js.UndefOr[scala.Nothing],
-    name: String
-  ): T = js.native
-  def runTask[T](
-    fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: js.UndefOr[scala.Nothing],
-    applyArgs: js.Array[_]
-  ): T = js.native
-  def runTask[T](
-    fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: js.UndefOr[scala.Nothing],
-    applyArgs: js.Array[_],
-    name: String
-  ): T = js.native
   def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[js.Any]): T = js.native
   def runTask[T](
     fn: js.Function1[/* repeated */ js.Any, T],
     applyThis: js.Any,
-    applyArgs: js.UndefOr[scala.Nothing],
+    applyArgs: js.Array[js.Any],
     name: String
   ): T = js.native
-  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: js.Array[_]): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: js.Any, applyArgs: Unit, name: String): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: js.Array[js.Any]): T = js.native
   def runTask[T](
     fn: js.Function1[/* repeated */ js.Any, T],
-    applyThis: js.Any,
-    applyArgs: js.Array[_],
+    applyThis: Unit,
+    applyArgs: js.Array[js.Any],
     name: String
   ): T = js.native
+  def runTask[T](fn: js.Function1[/* repeated */ js.Any, T], applyThis: Unit, applyArgs: Unit, name: String): T = js.native
 }
 /* static members */
 object NgZone {
   
-  @JSImport("@angular/core", "NgZone.assertInAngularZone")
+  @JSImport("@angular/core", "NgZone")
   @js.native
-  def assertInAngularZone(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@angular/core", "NgZone.assertNotInAngularZone")
-  @js.native
-  def assertNotInAngularZone(): Unit = js.native
+  @scala.inline
+  def assertInAngularZone(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertInAngularZone")().asInstanceOf[Unit]
   
-  @JSImport("@angular/core", "NgZone.isInAngularZone")
-  @js.native
-  def isInAngularZone(): Boolean = js.native
+  @scala.inline
+  def assertNotInAngularZone(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("assertNotInAngularZone")().asInstanceOf[Unit]
+  
+  @scala.inline
+  def isInAngularZone(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInAngularZone")().asInstanceOf[Boolean]
 }

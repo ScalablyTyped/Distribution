@@ -2,30 +2,28 @@ package typings.googleapis.servicecontrolV1Mod.servicecontrolV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Authorization information for the operation.
   */
-@js.native
 trait SchemaAuthorizationInfo extends StObject {
   
   /**
     * Whether or not authorization for `resource` and `permission` was granted.
     */
-  var granted: js.UndefOr[Boolean] = js.native
+  var granted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The required IAM permission.
     */
-  var permission: js.UndefOr[String] = js.native
+  var permission: js.UndefOr[String] = js.undefined
   
   /**
     * The resource being accessed, as a REST-style string. For example:
     * bigquery.googleapis.com/projects/PROJECTID/datasets/DATASETID
     */
-  var resource: js.UndefOr[String] = js.native
+  var resource: js.UndefOr[String] = js.undefined
   
   /**
     * Resource attributes used in IAM condition evaluation. This field contains
@@ -33,7 +31,7 @@ trait SchemaAuthorizationInfo extends StObject {
     * whole view of the attributes used in IAM condition evaluation, the user
     * must also look into `AuditLog.request_metadata.request_attributes`.
     */
-  var resourceAttributes: js.UndefOr[SchemaResource] = js.native
+  var resourceAttributes: js.UndefOr[SchemaResource] = js.undefined
 }
 object SchemaAuthorizationInfo {
   

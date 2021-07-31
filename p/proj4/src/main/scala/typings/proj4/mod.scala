@@ -3,52 +3,43 @@ package typings.proj4
 import typings.proj4.proj4Booleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("proj4", JSImport.Namespace)
-  @js.native
-  def apply(fromProjection: String): Converter = js.native
-  @JSImport("proj4", JSImport.Namespace)
-  @js.native
-  def apply(fromProjection: String, toProjection: String): Converter = js.native
-  @JSImport("proj4", JSImport.Namespace)
-  @js.native
-  def apply(fromProjection: String, toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("proj4", JSImport.Namespace)
-  @js.native
-  def apply(fromProjection: String, toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = js.native
-  @JSImport("proj4", JSImport.Namespace)
-  @js.native
-  def apply(toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = js.native
-  @JSImport("proj4", JSImport.Namespace)
-  @js.native
-  def apply(toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = js.native
+  @scala.inline
+  def apply(fromProjection: String): Converter = ^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any]).asInstanceOf[Converter]
+  @scala.inline
+  def apply(fromProjection: String, toProjection: String): Converter = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any])).asInstanceOf[Converter]
+  @scala.inline
+  def apply(fromProjection: String, toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def apply(fromProjection: String, toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].apply(fromProjection.asInstanceOf[js.Any], toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
+  @scala.inline
+  def apply(toProjection: String, coordinates: js.Array[Double]): js.Array[Double] = (^.asInstanceOf[js.Dynamic].apply(toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
+  @scala.inline
+  def apply(toProjection: String, coordinates: InterfaceCoordinates): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].apply(toProjection.asInstanceOf[js.Any], coordinates.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
   
-  @JSImport("proj4", "Point")
+  @JSImport("proj4", JSImport.Namespace)
   @js.native
-  def Point(coordinates: String): InterfaceCoordinates = js.native
-  @JSImport("proj4", "Point")
-  @js.native
-  def Point(coordinates: TemplateCoordinates): InterfaceCoordinates = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def Point(coordinates: String): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("Point")(coordinates.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
+  @scala.inline
+  def Point(coordinates: TemplateCoordinates): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("Point")(coordinates.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
   /**
     * @deprecated v3
     */
-  @JSImport("proj4", "Point")
-  @js.native
-  def Point(x: Double, y: Double): InterfaceCoordinates = js.native
-  @JSImport("proj4", "Point")
-  @js.native
-  def Point(x: Double, y: Double, z: Double): InterfaceCoordinates = js.native
+  @scala.inline
+  def Point(x: Double, y: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
+  @scala.inline
+  def Point(x: Double, y: Double, z: Double): InterfaceCoordinates = (^.asInstanceOf[js.Dynamic].applyDynamic("Point")(x.asInstanceOf[js.Any], y.asInstanceOf[js.Any], z.asInstanceOf[js.Any])).asInstanceOf[InterfaceCoordinates]
   
-  @JSImport("proj4", "Proj")
-  @js.native
-  def Proj(srsCode: js.Any): InterfaceProjection = js.native
-  @JSImport("proj4", "Proj")
-  @js.native
-  def Proj(srsCode: js.Any, callback: js.Any): InterfaceProjection = js.native
+  @scala.inline
+  def Proj(srsCode: js.Any): InterfaceProjection = ^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any]).asInstanceOf[InterfaceProjection]
+  @scala.inline
+  def Proj(srsCode: js.Any, callback: js.Any): InterfaceProjection = (^.asInstanceOf[js.Dynamic].applyDynamic("Proj")(srsCode.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[InterfaceProjection]
   
   @JSImport("proj4", "WGS84")
   @js.native
@@ -58,30 +49,23 @@ object mod {
   @js.native
   val defaultDatum: String = js.native
   
-  @JSImport("proj4", "defs")
-  @js.native
-  def defs(name: String): ProjectionDefinition = js.native
-  @JSImport("proj4", "defs")
-  @js.native
-  def defs(name: String, projection: String): Unit = js.native
-  @JSImport("proj4", "defs")
-  @js.native
-  def defs(name: String, projection: ProjectionDefinition): Unit = js.native
-  @JSImport("proj4", "defs")
-  @js.native
-  def defs(name: js.Array[js.Array[String]]): js.Array[js.UndefOr[scala.Nothing]] = js.native
+  @scala.inline
+  def defs(name: String): ProjectionDefinition = ^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any]).asInstanceOf[ProjectionDefinition]
+  @scala.inline
+  def defs(name: String, projection: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def defs(name: String, projection: ProjectionDefinition): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any], projection.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def defs(name: js.Array[js.Array[String]]): js.Array[Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("defs")(name.asInstanceOf[js.Any]).asInstanceOf[js.Array[Unit]]
   
-  @JSImport("proj4", "mgrs")
-  @js.native
-  def mgrs(coordinates: js.Array[Double], accuracy: Double): String = js.native
+  @scala.inline
+  def mgrs(coordinates: js.Array[Double], accuracy: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("mgrs")(coordinates.asInstanceOf[js.Any], accuracy.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("proj4", "toPoint")
-  @js.native
-  def toPoint(array: js.Array[Double]): InterfaceCoordinates = js.native
+  @scala.inline
+  def toPoint(array: js.Array[Double]): InterfaceCoordinates = ^.asInstanceOf[js.Dynamic].applyDynamic("toPoint")(array.asInstanceOf[js.Any]).asInstanceOf[InterfaceCoordinates]
   
-  @JSImport("proj4", "transform")
-  @js.native
-  def transform(source: InterfaceProjection, dest: InterfaceProjection, point: TemplateCoordinates): js.Any = js.native
+  @scala.inline
+  def transform(source: InterfaceProjection, dest: InterfaceProjection, point: TemplateCoordinates): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transform")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any], point.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   @JSImport("proj4", "version")
   @js.native
@@ -97,16 +81,15 @@ object mod {
     def inverse(coordinates: InterfaceCoordinates): InterfaceCoordinates = js.native
   }
   
-  @js.native
   trait InterfaceCoordinates extends StObject {
     
-    var m: js.UndefOr[Double] = js.native
+    var m: js.UndefOr[Double] = js.undefined
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
     
-    var z: js.UndefOr[Double] = js.native
+    var z: js.UndefOr[Double] = js.undefined
   }
   object InterfaceCoordinates {
     
@@ -139,18 +122,17 @@ object mod {
     }
   }
   
-  @js.native
   trait InterfaceDatum extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var datum_type: Double = js.native
+    var datum_type: Double
     
-    var ep2: Double = js.native
+    var ep2: Double
     
-    var es: Double = js.native
+    var es: Double
   }
   object InterfaceDatum {
     
@@ -180,26 +162,25 @@ object mod {
     }
   }
   
-  @js.native
   trait InterfaceProjection extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var datum: String = js.native
+    var datum: String
     
-    var e: Double = js.native
+    var e: Double
     
-    var ep2: Double = js.native
+    var ep2: Double
     
-    var es: Double = js.native
+    var es: Double
     
-    def forward(coordinates: TemplateCoordinates): js.Array[Double] = js.native
+    def forward(coordinates: TemplateCoordinates): js.Array[Double]
     
-    def inverse(coordinates: TemplateCoordinates): js.Array[Double] = js.native
+    def inverse(coordinates: TemplateCoordinates): js.Array[Double]
     
-    var rf: Double = js.native
+    var rf: Double
     
-    var sphere: Double = js.native
+    var sphere: Double
   }
   object InterfaceProjection {
     
@@ -251,68 +232,67 @@ object mod {
     }
   }
   
-  @js.native
   trait ProjectionDefinition extends StObject {
     
-    var R_A: js.UndefOr[`true`] = js.native
+    var R_A: js.UndefOr[`true`] = js.undefined
     
-    var a: js.UndefOr[Double] = js.native
+    var a: js.UndefOr[Double] = js.undefined
     
-    var alpha: js.UndefOr[Double] = js.native
+    var alpha: js.UndefOr[Double] = js.undefined
     
-    var axis: js.UndefOr[String] = js.native
+    var axis: js.UndefOr[String] = js.undefined
     
-    var b: js.UndefOr[Double] = js.native
+    var b: js.UndefOr[Double] = js.undefined
     
-    var datum: js.UndefOr[String] = js.native
+    var datum: js.UndefOr[String] = js.undefined
     
-    var datumCode: js.UndefOr[String] = js.native
+    var datumCode: js.UndefOr[String] = js.undefined
     
-    var datumName: js.UndefOr[String] = js.native
+    var datumName: js.UndefOr[String] = js.undefined
     
-    var datum_params: js.UndefOr[String | js.Array[Double]] = js.native
+    var datum_params: js.UndefOr[String | js.Array[Double]] = js.undefined
     
-    var ellps: js.UndefOr[String] = js.native
+    var ellps: js.UndefOr[String] = js.undefined
     
-    var from_greenwich: js.UndefOr[Double] = js.native
+    var from_greenwich: js.UndefOr[Double] = js.undefined
     
-    var k0: js.UndefOr[Double] = js.native
+    var k0: js.UndefOr[Double] = js.undefined
     
-    var lat0: js.UndefOr[Double] = js.native
+    var lat0: js.UndefOr[Double] = js.undefined
     
-    var lat1: js.UndefOr[Double] = js.native
+    var lat1: js.UndefOr[Double] = js.undefined
     
-    var lat2: js.UndefOr[Double] = js.native
+    var lat2: js.UndefOr[Double] = js.undefined
     
-    var lat_ts: js.UndefOr[Double] = js.native
+    var lat_ts: js.UndefOr[Double] = js.undefined
     
-    var long0: js.UndefOr[Double] = js.native
+    var long0: js.UndefOr[Double] = js.undefined
     
-    var long1: js.UndefOr[Double] = js.native
+    var long1: js.UndefOr[Double] = js.undefined
     
-    var long2: js.UndefOr[Double] = js.native
+    var long2: js.UndefOr[Double] = js.undefined
     
-    var longc: js.UndefOr[Double] = js.native
+    var longc: js.UndefOr[Double] = js.undefined
     
-    var natGrids: js.UndefOr[String] = js.native
+    var natGrids: js.UndefOr[String] = js.undefined
     
-    var projName: js.UndefOr[String] = js.native
+    var projName: js.UndefOr[String] = js.undefined
     
-    var rf: js.UndefOr[Double] = js.native
+    var rf: js.UndefOr[Double] = js.undefined
     
-    var title: String = js.native
+    var title: String
     
-    var to_meter: js.UndefOr[Double] = js.native
+    var to_meter: js.UndefOr[Double] = js.undefined
     
-    var units: js.UndefOr[String] = js.native
+    var units: js.UndefOr[String] = js.undefined
     
-    var utmSouth: js.UndefOr[`true`] = js.native
+    var utmSouth: js.UndefOr[`true`] = js.undefined
     
-    var x0: js.UndefOr[Double] = js.native
+    var x0: js.UndefOr[Double] = js.undefined
     
-    var y0: js.UndefOr[Double] = js.native
+    var y0: js.UndefOr[Double] = js.undefined
     
-    var zone: js.UndefOr[Double] = js.native
+    var zone: js.UndefOr[Double] = js.undefined
   }
   object ProjectionDefinition {
     

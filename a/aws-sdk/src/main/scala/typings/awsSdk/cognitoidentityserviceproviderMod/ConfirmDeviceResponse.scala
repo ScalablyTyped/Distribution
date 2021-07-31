@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfirmDeviceResponse extends StObject {
   
   /**
     * Indicates whether the user confirmation is necessary to confirm the device response.
     */
-  var UserConfirmationNecessary: js.UndefOr[BooleanType] = js.native
+  var UserConfirmationNecessary: js.UndefOr[BooleanType] = js.undefined
 }
 object ConfirmDeviceResponse {
   

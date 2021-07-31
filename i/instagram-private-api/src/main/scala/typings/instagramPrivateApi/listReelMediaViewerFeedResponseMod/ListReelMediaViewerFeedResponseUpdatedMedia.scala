@@ -2,95 +2,93 @@ package typings.instagramPrivateApi.listReelMediaViewerFeedResponseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListReelMediaViewerFeedResponseUpdatedMedia extends StObject {
   
-  var can_reply: Boolean = js.native
+  var can_reply: Boolean
   
-  var can_reshare: Boolean = js.native
+  var can_reshare: Boolean
   
-  var can_viewer_save: Boolean = js.native
+  var can_viewer_save: Boolean
   
-  var caption: Null = js.native
+  var caption: Null
   
-  var caption_is_edited: Boolean = js.native
+  var caption_is_edited: Boolean
   
-  var caption_position: Double = js.native
+  var caption_position: Double
   
-  var client_cache_key: String = js.native
+  var client_cache_key: String
   
-  var code: String = js.native
+  var code: String
   
-  var creative_config: ListReelMediaViewerFeedResponseCreativeConfig = js.native
+  var creative_config: ListReelMediaViewerFeedResponseCreativeConfig
   
-  var device_timestamp: Double = js.native
+  var device_timestamp: Double
   
-  var expiring_at: Double = js.native
+  var expiring_at: Double
   
-  var fb_user_tags: ListReelMediaViewerFeedResponseFbUserTags = js.native
+  var fb_user_tags: ListReelMediaViewerFeedResponseFbUserTags
   
-  var filter_type: Double = js.native
+  var filter_type: Double
   
-  var has_shared_to_fb: Double = js.native
+  var has_shared_to_fb: Double
   
-  var id: String = js.native
+  var id: String
   
-  var image_versions2: ListReelMediaViewerFeedResponseImageVersions2 = js.native
+  var image_versions2: ListReelMediaViewerFeedResponseImageVersions2
   
-  var is_pride_media: Boolean = js.native
+  var is_pride_media: Boolean
   
-  var is_reel_media: Boolean = js.native
+  var is_reel_media: Boolean
   
-  var media_type: Double = js.native
+  var media_type: Double
   
-  var multi_author_reel_names: js.Array[_] = js.native
+  var multi_author_reel_names: js.Array[js.Any]
   
-  var organic_tracking_token: String = js.native
+  var organic_tracking_token: String
   
-  var original_height: Double = js.native
+  var original_height: Double
   
-  var original_width: Double = js.native
+  var original_width: Double
   
-  var photo_of_you: Boolean = js.native
+  var photo_of_you: Boolean
   
-  var pk: String = js.native
+  var pk: String
   
-  var reel_mentions: js.Array[ListReelMediaViewerFeedResponseReelMentionsItem] = js.native
+  var reel_mentions: js.Array[ListReelMediaViewerFeedResponseReelMentionsItem]
   
-  var show_one_tap_fb_share_tooltip: Boolean = js.native
+  var show_one_tap_fb_share_tooltip: Boolean
   
-  var story_chat_request_infos: js.Array[ListReelMediaViewerFeedResponseStoryChatRequestInfosItem] = js.native
+  var story_chat_request_infos: js.Array[ListReelMediaViewerFeedResponseStoryChatRequestInfosItem]
   
-  var story_chats: js.Array[ListReelMediaViewerFeedResponseStoryChatsItem] = js.native
+  var story_chats: js.Array[ListReelMediaViewerFeedResponseStoryChatsItem]
   
-  var story_fundraiser_donation_infos: js.Array[ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem] = js.native
+  var story_fundraiser_donation_infos: js.Array[ListReelMediaViewerFeedResponseStoryFundraiserDonationInfosItem]
   
-  var story_fundraisers: js.Array[ListReelMediaViewerFeedResponseStoryFundraisersItem] = js.native
+  var story_fundraisers: js.Array[ListReelMediaViewerFeedResponseStoryFundraisersItem]
   
-  var story_hashtags: js.Array[ListReelMediaViewerFeedResponseStoryHashtagsItem] = js.native
+  var story_hashtags: js.Array[ListReelMediaViewerFeedResponseStoryHashtagsItem]
   
-  var story_is_saved_to_archive: Boolean = js.native
+  var story_is_saved_to_archive: Boolean
   
-  var story_locations: js.Array[ListReelMediaViewerFeedResponseStoryLocationsItem] = js.native
+  var story_locations: js.Array[ListReelMediaViewerFeedResponseStoryLocationsItem]
   
-  var supports_reel_reactions: Boolean = js.native
+  var supports_reel_reactions: Boolean
   
-  var taken_at: Double = js.native
+  var taken_at: Double
   
-  var timezone_offset: Double = js.native
+  var timezone_offset: Double
   
-  var total_viewer_count: Double = js.native
+  var total_viewer_count: Double
   
-  var user: ListReelMediaViewerFeedResponseUser = js.native
+  var user: ListReelMediaViewerFeedResponseUser
   
-  var viewer_count: Double = js.native
+  var viewer_count: Double
   
-  var viewer_cursor: Null = js.native
+  var viewer_cursor: Null
   
-  var viewers: js.Array[ListReelMediaViewerFeedResponseViewersItem] = js.native
+  var viewers: js.Array[ListReelMediaViewerFeedResponseViewersItem]
 }
 object ListReelMediaViewerFeedResponseUpdatedMedia {
   
@@ -115,7 +113,7 @@ object ListReelMediaViewerFeedResponseUpdatedMedia {
     is_pride_media: Boolean,
     is_reel_media: Boolean,
     media_type: Double,
-    multi_author_reel_names: js.Array[_],
+    multi_author_reel_names: js.Array[js.Any],
     organic_tracking_token: String,
     original_height: Double,
     original_width: Double,
@@ -204,7 +202,7 @@ object ListReelMediaViewerFeedResponseUpdatedMedia {
     def setMedia_type(value: Double): Self = StObject.set(x, "media_type", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setMulti_author_reel_names(value: js.Array[_]): Self = StObject.set(x, "multi_author_reel_names", value.asInstanceOf[js.Any])
+    def setMulti_author_reel_names(value: js.Array[js.Any]): Self = StObject.set(x, "multi_author_reel_names", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMulti_author_reel_namesVarargs(value: js.Any*): Self = StObject.set(x, "multi_author_reel_names", js.Array(value :_*))

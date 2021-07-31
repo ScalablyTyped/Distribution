@@ -10,9 +10,9 @@ TypeScript typings for Cloud Functions API v1
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.cloudfunctions |
 | Keywords           | - |
-| # releases         | 9 |
+| # releases         | 10 |
 | # dependents       | 1 |
-| # downloads        | 1306 |
+| # downloads        | 1402 |
 | # stars            | 0 |
 
 ## Links

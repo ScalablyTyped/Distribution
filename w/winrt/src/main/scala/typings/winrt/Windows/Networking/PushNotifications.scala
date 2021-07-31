@@ -7,7 +7,6 @@ import typings.winrt.Windows.UI.Notifications.TileNotification
 import typings.winrt.Windows.UI.Notifications.ToastNotification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PushNotifications {
@@ -19,28 +18,35 @@ object PushNotifications {
   object PushNotificationType extends StObject {
     
     @js.native
-    sealed trait badge extends PushNotificationType
+    sealed trait badge
+      extends StObject
+         with PushNotificationType
     
     @js.native
-    sealed trait raw extends PushNotificationType
+    sealed trait raw
+      extends StObject
+         with PushNotificationType
     
     @js.native
-    sealed trait tile extends PushNotificationType
+    sealed trait tile
+      extends StObject
+         with PushNotificationType
     
     @js.native
-    sealed trait toast extends PushNotificationType
+    sealed trait toast
+      extends StObject
+         with PushNotificationType
   }
   
-  @js.native
   trait IPushNotificationChannel extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    var expirationTime: Date = js.native
+    var expirationTime: Date
     
-    var onpushnotificationreceived: js.Any = js.native
+    var onpushnotificationreceived: js.Any
     
-    var uri: String = js.native
+    var uri: String
   }
   object IPushNotificationChannel {
     
@@ -76,20 +82,19 @@ object PushNotifications {
     def createPushNotificationChannelForSecondaryTileAsync(tileId: String): IAsyncOperation[PushNotificationChannel] = js.native
   }
   
-  @js.native
   trait IPushNotificationReceivedEventArgs extends StObject {
     
-    var badgeNotification: BadgeNotification = js.native
+    var badgeNotification: BadgeNotification
     
-    var cancel: Boolean = js.native
+    var cancel: Boolean
     
-    var notificationType: PushNotificationType = js.native
+    var notificationType: PushNotificationType
     
-    var rawNotification: RawNotification = js.native
+    var rawNotification: RawNotification
     
-    var tileNotification: TileNotification = js.native
+    var tileNotification: TileNotification
     
-    var toastNotification: ToastNotification = js.native
+    var toastNotification: ToastNotification
   }
   object IPushNotificationReceivedEventArgs {
     
@@ -129,10 +134,9 @@ object PushNotifications {
     }
   }
   
-  @js.native
   trait IRawNotification extends StObject {
     
-    var content: String = js.native
+    var content: String
   }
   object IRawNotification {
     
@@ -150,8 +154,9 @@ object PushNotifications {
     }
   }
   
-  @js.native
-  trait PushNotificationChannel extends IPushNotificationChannel
+  trait PushNotificationChannel
+    extends StObject
+       with IPushNotificationChannel
   object PushNotificationChannel {
     
     @scala.inline
@@ -161,11 +166,11 @@ object PushNotifications {
     }
   }
   
-  @js.native
   trait PushNotificationChannelManager extends StObject
   
-  @js.native
-  trait PushNotificationReceivedEventArgs extends IPushNotificationReceivedEventArgs
+  trait PushNotificationReceivedEventArgs
+    extends StObject
+       with IPushNotificationReceivedEventArgs
   object PushNotificationReceivedEventArgs {
     
     @scala.inline
@@ -182,8 +187,9 @@ object PushNotifications {
     }
   }
   
-  @js.native
-  trait RawNotification extends IRawNotification
+  trait RawNotification
+    extends StObject
+       with IRawNotification
   object RawNotification {
     
     @scala.inline

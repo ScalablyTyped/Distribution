@@ -5,17 +5,15 @@ import typings.prosemirrorModel.mod.Schema
 import typings.prosemirrorView.mod.NodeView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Anchor extends StObject {
     
-    var anchor: Double = js.native
+    var anchor: Double
     
-    var head: Double = js.native
+    var head: Double
   }
   object Anchor {
     
@@ -36,16 +34,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Buttom extends StObject {
     
-    var buttom: Double = js.native
+    var buttom: Double
     
-    var left: Double = js.native
+    var left: Double
     
-    var right: Double = js.native
+    var right: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Buttom {
     
@@ -72,25 +69,24 @@ object anon {
     }
   }
   
-  @js.native
-  trait CellMinWidth[S /* <: Schema[_, _] */] extends StObject {
+  trait CellMinWidth[S /* <: Schema[js.Any, js.Any] */] extends StObject {
     
-    var View: js.UndefOr[NodeView[S]] = js.native
+    var View: js.UndefOr[NodeView[S]] = js.undefined
     
-    var cellMinWidth: js.UndefOr[Double] = js.native
+    var cellMinWidth: js.UndefOr[Double] = js.undefined
     
-    var handleWidth: js.UndefOr[Double] = js.native
+    var handleWidth: js.UndefOr[Double] = js.undefined
   }
   object CellMinWidth {
     
     @scala.inline
-    def apply[S /* <: Schema[_, _] */](): CellMinWidth[S] = {
+    def apply[S /* <: Schema[js.Any, js.Any] */](): CellMinWidth[S] = {
       val __obj = js.Dynamic.literal()
       __obj.asInstanceOf[CellMinWidth[S]]
     }
     
     @scala.inline
-    implicit class CellMinWidthMutableBuilder[Self <: CellMinWidth[_], S /* <: Schema[_, _] */] (val x: Self with CellMinWidth[S]) extends AnyVal {
+    implicit class CellMinWidthMutableBuilder[Self <: CellMinWidth[?], S /* <: Schema[js.Any, js.Any] */] (val x: Self & CellMinWidth[S]) extends AnyVal {
       
       @scala.inline
       def setCellMinWidth(value: Double): Self = StObject.set(x, "cellMinWidth", value.asInstanceOf[js.Any])
@@ -113,21 +109,25 @@ object anon {
   }
   
   /* Inlined std.Record<prosemirror-tables.prosemirror-tables.TableRoles, prosemirror-model.prosemirror-model.NodeType<any>> */
-  @js.native
   trait RecordTableRolesNodeTypea extends StObject {
     
-    var cell: NodeType[_] = js.native
+    var cell: NodeType[js.Any]
     
-    var header_cell: NodeType[_] = js.native
+    var header_cell: NodeType[js.Any]
     
-    var row: NodeType[_] = js.native
+    var row: NodeType[js.Any]
     
-    var table: NodeType[_] = js.native
+    var table: NodeType[js.Any]
   }
   object RecordTableRolesNodeTypea {
     
     @scala.inline
-    def apply(cell: NodeType[_], header_cell: NodeType[_], row: NodeType[_], table: NodeType[_]): RecordTableRolesNodeTypea = {
+    def apply(
+      cell: NodeType[js.Any],
+      header_cell: NodeType[js.Any],
+      row: NodeType[js.Any],
+      table: NodeType[js.Any]
+    ): RecordTableRolesNodeTypea = {
       val __obj = js.Dynamic.literal(cell = cell.asInstanceOf[js.Any], header_cell = header_cell.asInstanceOf[js.Any], row = row.asInstanceOf[js.Any], table = table.asInstanceOf[js.Any])
       __obj.asInstanceOf[RecordTableRolesNodeTypea]
     }
@@ -136,23 +136,22 @@ object anon {
     implicit class RecordTableRolesNodeTypeaMutableBuilder[Self <: RecordTableRolesNodeTypea] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCell(value: NodeType[_]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
+      def setCell(value: NodeType[js.Any]): Self = StObject.set(x, "cell", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setHeader_cell(value: NodeType[_]): Self = StObject.set(x, "header_cell", value.asInstanceOf[js.Any])
+      def setHeader_cell(value: NodeType[js.Any]): Self = StObject.set(x, "header_cell", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setRow(value: NodeType[_]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
+      def setRow(value: NodeType[js.Any]): Self = StObject.set(x, "row", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setTable(value: NodeType[_]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
+      def setTable(value: NodeType[js.Any]): Self = StObject.set(x, "table", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait UseDeprecatedLogic extends StObject {
     
-    var useDeprecatedLogic: js.UndefOr[Boolean] = js.native
+    var useDeprecatedLogic: js.UndefOr[Boolean] = js.undefined
   }
   object UseDeprecatedLogic {
     

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientFirestore.gapi.client.firestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleFirestoreAdminV1IndexConfigDelta extends StObject {
   
   /** Specifies how the index is changing. */
-  var changeType: js.UndefOr[String] = js.native
+  var changeType: js.UndefOr[String] = js.undefined
   
   /** The index being changed. */
-  var index: js.UndefOr[GoogleFirestoreAdminV1Index] = js.native
+  var index: js.UndefOr[GoogleFirestoreAdminV1Index] = js.undefined
 }
 object GoogleFirestoreAdminV1IndexConfigDelta {
   

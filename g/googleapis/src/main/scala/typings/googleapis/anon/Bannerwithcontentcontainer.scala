@@ -3,23 +3,21 @@ package typings.googleapis.anon
 import typings.googleapis.booksV1Mod.booksV1.SchemaVolume
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Bannerwithcontentcontainer extends StObject {
   
-  var banner_with_content_container: js.UndefOr[FillColorArgb] = js.native
+  var banner_with_content_container: js.UndefOr[FillColorArgb] = js.undefined
   
-  var subTitle: js.UndefOr[String] = js.native
+  var subTitle: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var totalVolumes: js.UndefOr[Double] = js.native
+  var totalVolumes: js.UndefOr[Double] = js.undefined
   
-  var uid: js.UndefOr[String] = js.native
+  var uid: js.UndefOr[String] = js.undefined
   
-  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.native
+  var volumes: js.UndefOr[js.Array[SchemaVolume]] = js.undefined
 }
 object Bannerwithcontentcontainer {
   

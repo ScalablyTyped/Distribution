@@ -2,21 +2,19 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListCertificatesResponse extends StObject {
   
   /**
     * The descriptions of the certificates.
     */
-  var certificates: js.UndefOr[Certificates] = js.native
+  var certificates: js.UndefOr[Certificates] = js.undefined
   
   /**
     * The marker for the next set of results, or null if there are no additional results.
     */
-  var nextMarker: js.UndefOr[Marker] = js.native
+  var nextMarker: js.UndefOr[Marker] = js.undefined
 }
 object ListCertificatesResponse {
   

@@ -5,19 +5,17 @@ import typings.react.mod.MouseEventHandler
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DialogAction extends StObject {
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var ref: js.UndefOr[String] = js.native
+  var ref: js.UndefOr[String] = js.undefined
   
-  var text: String = js.native
+  var text: String
 }
 object DialogAction {
   

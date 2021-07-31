@@ -2,7 +2,6 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,8 +14,12 @@ sealed trait Animation extends StObject
 object Animation extends StObject {
   
   @js.native
-  sealed trait BOUNCE extends Animation
+  sealed trait BOUNCE
+    extends StObject
+       with Animation
   
   @js.native
-  sealed trait DROP extends Animation
+  sealed trait DROP
+    extends StObject
+       with Animation
 }

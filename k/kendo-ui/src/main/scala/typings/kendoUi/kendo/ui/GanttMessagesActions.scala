@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttMessagesActions extends StObject {
   
-  var addChild: js.UndefOr[String] = js.native
+  var addChild: js.UndefOr[String] = js.undefined
   
-  var append: js.UndefOr[String] = js.native
+  var append: js.UndefOr[String] = js.undefined
   
-  var insertAfter: js.UndefOr[String] = js.native
+  var insertAfter: js.UndefOr[String] = js.undefined
   
-  var insertBefore: js.UndefOr[String] = js.native
+  var insertBefore: js.UndefOr[String] = js.undefined
   
-  var pdf: js.UndefOr[String] = js.native
+  var pdf: js.UndefOr[String] = js.undefined
 }
 object GanttMessagesActions {
   

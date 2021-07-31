@@ -2,31 +2,29 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopicRuleDestination extends StObject {
   
   /**
     * The topic rule destination URL.
     */
-  var arn: js.UndefOr[AwsArn] = js.native
+  var arn: js.UndefOr[AwsArn] = js.undefined
   
   /**
     * Properties of the HTTP URL.
     */
-  var httpUrlProperties: js.UndefOr[HttpUrlDestinationProperties] = js.native
+  var httpUrlProperties: js.UndefOr[HttpUrlDestinationProperties] = js.undefined
   
   /**
     * The status of the topic rule destination. Valid values are:  IN_PROGRESS  A topic rule destination was created but has not been confirmed. You can set status to IN_PROGRESS by calling UpdateTopicRuleDestination. Calling UpdateTopicRuleDestination causes a new confirmation challenge to be sent to your confirmation endpoint.  ENABLED  Confirmation was completed, and traffic to this destination is allowed. You can set status to DISABLED by calling UpdateTopicRuleDestination.  DISABLED  Confirmation was completed, and traffic to this destination is not allowed. You can set status to ENABLED by calling UpdateTopicRuleDestination.  ERROR  Confirmation could not be completed, for example if the confirmation timed out. You can call GetTopicRuleDestination for details about the error. You can set status to IN_PROGRESS by calling UpdateTopicRuleDestination. Calling UpdateTopicRuleDestination causes a new confirmation challenge to be sent to your confirmation endpoint.  
     */
-  var status: js.UndefOr[TopicRuleDestinationStatus] = js.native
+  var status: js.UndefOr[TopicRuleDestinationStatus] = js.undefined
   
   /**
     * Additional details or reason why the topic rule destination is in the current status.
     */
-  var statusReason: js.UndefOr[String] = js.native
+  var statusReason: js.UndefOr[String] = js.undefined
 }
 object TopicRuleDestination {
   

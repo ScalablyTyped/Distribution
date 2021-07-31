@@ -6,39 +6,39 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait PointCloudRendererPointSizeAlgorithm extends Object {
+trait PointCloudRendererPointSizeAlgorithm
+  extends StObject
+     with Object {
   
   /**
     * Specifies the scale factor that is applied to the size estimated by the density.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
     */
-  var scaleFactor: js.UndefOr[Double] = js.native
+  var scaleFactor: js.UndefOr[Double] = js.undefined
   
   /**
     * Point size in meters (`useRealWorldSymbolSizes = true`) or points.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
     */
-  var size: js.UndefOr[Double] = js.native
+  var size: js.UndefOr[Double] = js.undefined
   
   /**
     * `fixed-size` or `splat`.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
     */
-  var `type`: `fixed-size` | splat = js.native
+  var `type`: `fixed-size` | splat
   
   /**
     * Specifies whether `size` is in real world units or screen-space units.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-renderers-PointCloudRenderer.html#pointSizeAlgorithm)
     */
-  var useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.native
+  var useRealWorldSymbolSizes: js.UndefOr[Boolean] = js.undefined
 }
 object PointCloudRendererPointSizeAlgorithm {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMappingResponse extends StObject {
   
   /**
     * A list of mappings to the specified targets.
     */
-  var Mapping: MappingList = js.native
+  var Mapping: MappingList
 }
 object GetMappingResponse {
   

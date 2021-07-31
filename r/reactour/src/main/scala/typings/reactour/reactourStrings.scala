@@ -3,18 +3,21 @@ package typings.reactour
 import typings.reactour.mod.ReactourStepPosition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object reactourStrings {
   
   @js.native
-  sealed trait bottom extends ReactourStepPosition
+  sealed trait bottom
+    extends StObject
+       with ReactourStepPosition
   @scala.inline
   def bottom: bottom = "bottom".asInstanceOf[bottom]
   
   @js.native
-  sealed trait center extends ReactourStepPosition
+  sealed trait center
+    extends StObject
+       with ReactourStepPosition
   @scala.inline
   def center: center = "center".asInstanceOf[center]
   
@@ -29,7 +32,9 @@ object reactourStrings {
   def esc: esc = "esc".asInstanceOf[esc]
   
   @js.native
-  sealed trait left extends ReactourStepPosition
+  sealed trait left
+    extends StObject
+       with ReactourStepPosition
   @scala.inline
   def left: left = "left".asInstanceOf[left]
   
@@ -39,12 +44,16 @@ object reactourStrings {
   def nav: nav = "nav".asInstanceOf[nav]
   
   @js.native
-  sealed trait right extends ReactourStepPosition
+  sealed trait right
+    extends StObject
+       with ReactourStepPosition
   @scala.inline
   def right: right = "right".asInstanceOf[right]
   
   @js.native
-  sealed trait top extends ReactourStepPosition
+  sealed trait top
+    extends StObject
+       with ReactourStepPosition
   @scala.inline
   def top: top = "top".asInstanceOf[top]
 }

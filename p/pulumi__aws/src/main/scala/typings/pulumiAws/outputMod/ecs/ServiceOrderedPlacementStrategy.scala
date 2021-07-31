@@ -2,10 +2,8 @@ package typings.pulumiAws.outputMod.ecs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceOrderedPlacementStrategy extends StObject {
   
   /**
@@ -14,12 +12,12 @@ trait ServiceOrderedPlacementStrategy extends StObject {
     * For the `binpack` type, valid values are `memory` and `cpu`. For the `random` type, this attribute is not
     * needed. For more information, see [Placement Strategy](https://docs.aws.amazon.com/AmazonECS/latest/APIReference/API_PlacementStrategy.html).
     */
-  var field: js.UndefOr[String] = js.native
+  var field: js.UndefOr[String] = js.undefined
   
   /**
     * The type of placement strategy. Must be one of: `binpack`, `random`, or `spread`
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object ServiceOrderedPlacementStrategy {
   

@@ -2,36 +2,34 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListMLTransformsRequest extends StObject {
   
   /**
     * A TransformFilterCriteria used to filter the machine learning transforms.
     */
-  var Filter: js.UndefOr[TransformFilterCriteria] = js.native
+  var Filter: js.UndefOr[TransformFilterCriteria] = js.undefined
   
   /**
     * The maximum size of a list to return.
     */
-  var MaxResults: js.UndefOr[PageSize] = js.native
+  var MaxResults: js.UndefOr[PageSize] = js.undefined
   
   /**
     * A continuation token, if this is a continuation request.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * A TransformSortCriteria used to sort the machine learning transforms.
     */
-  var Sort: js.UndefOr[TransformSortCriteria] = js.native
+  var Sort: js.UndefOr[TransformSortCriteria] = js.undefined
   
   /**
     * Specifies to return only these tagged resources.
     */
-  var Tags: js.UndefOr[TagsMap] = js.native
+  var Tags: js.UndefOr[TagsMap] = js.undefined
 }
 object ListMLTransformsRequest {
   

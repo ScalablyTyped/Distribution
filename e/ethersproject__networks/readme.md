@@ -10,9 +10,9 @@ Network definitions for ethers.
 | ------------------ | :-------------: |
 | Full name          | @ethersproject/networks |
 | Keywords           | Ethereum, ethers |
-| # releases         | 27 |
-| # dependents       | 28 |
-| # downloads        | 662894 |
+| # releases         | 30 |
+| # dependents       | 27 |
+| # downloads        | 1598674 |
 | # stars            | 0 |
 
 ## Links

@@ -2,36 +2,34 @@ package typings.awsSdk.clouddirectoryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchCreateObject extends StObject {
   
   /**
     * The batch reference name. See Transaction Support for more information.
     */
-  var BatchReferenceName: js.UndefOr[typings.awsSdk.clouddirectoryMod.BatchReferenceName] = js.native
+  var BatchReferenceName: js.UndefOr[typings.awsSdk.clouddirectoryMod.BatchReferenceName] = js.undefined
   
   /**
     * The name of the link.
     */
-  var LinkName: js.UndefOr[typings.awsSdk.clouddirectoryMod.LinkName] = js.native
+  var LinkName: js.UndefOr[typings.awsSdk.clouddirectoryMod.LinkName] = js.undefined
   
   /**
     * An attribute map, which contains an attribute ARN as the key and attribute value as the map value.
     */
-  var ObjectAttributeList: AttributeKeyAndValueList = js.native
+  var ObjectAttributeList: AttributeKeyAndValueList
   
   /**
     * If specified, the parent reference to which this object will be attached.
     */
-  var ParentReference: js.UndefOr[ObjectReference] = js.native
+  var ParentReference: js.UndefOr[ObjectReference] = js.undefined
   
   /**
     * A list of FacetArns that will be associated with the object. For more information, see arns.
     */
-  var SchemaFacet: SchemaFacetList = js.native
+  var SchemaFacet: SchemaFacetList
 }
 object BatchCreateObject {
   

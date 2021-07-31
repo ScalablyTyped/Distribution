@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataCatalogEncryptionSettingsMod {
@@ -39,6 +38,10 @@ object dataCatalogEncryptionSettingsMod {
   /* static members */
   object DataCatalogEncryptionSettings {
     
+    @JSImport("@pulumi/aws/glue/dataCatalogEncryptionSettings", "DataCatalogEncryptionSettings")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing DataCatalogEncryptionSettings resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,47 +51,41 @@ object dataCatalogEncryptionSettingsMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/glue/dataCatalogEncryptionSettings", "DataCatalogEncryptionSettings.get")
-    @js.native
-    def get(name: String, id: Input[ID]): DataCatalogEncryptionSettings = js.native
-    @JSImport("@pulumi/aws/glue/dataCatalogEncryptionSettings", "DataCatalogEncryptionSettings.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): DataCatalogEncryptionSettings = js.native
-    @JSImport("@pulumi/aws/glue/dataCatalogEncryptionSettings", "DataCatalogEncryptionSettings.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: DataCatalogEncryptionSettingsState): DataCatalogEncryptionSettings = js.native
-    @JSImport("@pulumi/aws/glue/dataCatalogEncryptionSettings", "DataCatalogEncryptionSettings.get")
-    @js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: DataCatalogEncryptionSettingsState): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
+    @scala.inline
     def get(
       name: String,
       id: Input[ID],
       state: DataCatalogEncryptionSettingsState,
       opts: CustomResourceOptions
-    ): DataCatalogEncryptionSettings = js.native
+    ): DataCatalogEncryptionSettings = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[DataCatalogEncryptionSettings]
     
     /**
       * Returns true if the given object is an instance of DataCatalogEncryptionSettings.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/glue/dataCatalogEncryptionSettings", "DataCatalogEncryptionSettings.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/dataCatalogEncryptionSettings.DataCatalogEncryptionSettings */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/glue/dataCatalogEncryptionSettings.DataCatalogEncryptionSettings */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/glue/dataCatalogEncryptionSettings.DataCatalogEncryptionSettings */ Boolean]
   }
   
-  @js.native
   trait DataCatalogEncryptionSettingsArgs extends StObject {
     
     /**
       * The ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The security configuration to set. see Data Catalog Encryption Settings.
       */
     val dataCatalogEncryptionSettings: Input[
         typings.pulumiAws.inputMod.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings
-      ] = js.native
+      ]
   }
   object DataCatalogEncryptionSettingsArgs {
     
@@ -120,13 +117,12 @@ object dataCatalogEncryptionSettingsMod {
     }
   }
   
-  @js.native
   trait DataCatalogEncryptionSettingsState extends StObject {
     
     /**
       * The ID of the Data Catalog to set the security configuration for. If none is provided, the AWS account ID is used by default.
       */
-    val catalogId: js.UndefOr[Input[String]] = js.native
+    val catalogId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The security configuration to set. see Data Catalog Encryption Settings.
@@ -135,7 +131,7 @@ object dataCatalogEncryptionSettingsMod {
         Input[
           typings.pulumiAws.inputMod.glue.DataCatalogEncryptionSettingsDataCatalogEncryptionSettings
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object DataCatalogEncryptionSettingsState {
     

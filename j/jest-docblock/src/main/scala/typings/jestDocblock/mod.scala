@@ -4,30 +4,28 @@ import typings.jestDocblock.anon.Comments
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jest-docblock", "extract")
+  @JSImport("jest-docblock", JSImport.Namespace)
   @js.native
-  def extract(contents: String): String = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jest-docblock", "parse")
-  @js.native
-  def parse(docblock: String): Pragmas = js.native
+  @scala.inline
+  def extract(contents: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("extract")(contents.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("jest-docblock", "parseWithComments")
-  @js.native
-  def parseWithComments(docblock: String): Comments = js.native
+  @scala.inline
+  def parse(docblock: String): Pragmas = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(docblock.asInstanceOf[js.Any]).asInstanceOf[Pragmas]
   
-  @JSImport("jest-docblock", "print")
-  @js.native
-  def print(hasCommentsPragmas: typings.jestDocblock.anon.Pragmas): String = js.native
+  @scala.inline
+  def parseWithComments(docblock: String): Comments = ^.asInstanceOf[js.Dynamic].applyDynamic("parseWithComments")(docblock.asInstanceOf[js.Any]).asInstanceOf[Comments]
   
-  @JSImport("jest-docblock", "strip")
-  @js.native
-  def strip(contents: String): String = js.native
+  @scala.inline
+  def print(hasCommentsPragmas: typings.jestDocblock.anon.Pragmas): String = ^.asInstanceOf[js.Dynamic].applyDynamic("print")(hasCommentsPragmas.asInstanceOf[js.Any]).asInstanceOf[String]
+  
+  @scala.inline
+  def strip(contents: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("strip")(contents.asInstanceOf[js.Any]).asInstanceOf[String]
   
   type Pragmas = Record[String, String | js.Array[String]]
 }

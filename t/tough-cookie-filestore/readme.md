@@ -12,7 +12,7 @@ file store for tough-cookie
 | Keywords           | - |
 | # releases         | 0 |
 | # dependents       | 57 |
-| # downloads        | 135173 |
+| # downloads        | 122788 |
 | # stars            | 2 |
 
 ## Links

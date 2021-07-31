@@ -3,32 +3,30 @@ package typings.screeps
 import typings.screeps.anon.Username
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // No static is available
-@js.native
 trait Transaction extends StObject {
   
-  var amount: Double = js.native
+  var amount: Double
   
-  var description: String = js.native
+  var description: String
   
-  var from: String = js.native
+  var from: String
   
-  var order: js.UndefOr[TransactionOrder] = js.native
+  var order: js.UndefOr[TransactionOrder] = js.undefined
   
-  var recipient: js.UndefOr[Username] = js.native
+  var recipient: js.UndefOr[Username] = js.undefined
   
-  var resourceType: MarketResourceConstant = js.native
+  var resourceType: MarketResourceConstant
   
-  var sender: js.UndefOr[Username] = js.native
+  var sender: js.UndefOr[Username] = js.undefined
   
-  var time: Double = js.native
+  var time: Double
   
-  var to: String = js.native
+  var to: String
   
-  var transactionId: String = js.native
+  var transactionId: String
 }
 object Transaction {
   

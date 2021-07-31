@@ -2,46 +2,44 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateDataSourceRequest extends StObject {
   
   /**
     * The AWS account ID.
     */
-  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId = js.native
+  var AwsAccountId: typings.awsSdk.quicksightMod.AwsAccountId
   
   /**
     * The credentials that QuickSight that uses to connect to your underlying source. Currently, only credentials based on user name and password are supported.
     */
-  var Credentials: js.UndefOr[DataSourceCredentials] = js.native
+  var Credentials: js.UndefOr[DataSourceCredentials] = js.undefined
   
   /**
     * The ID of the data source. This ID is unique per AWS Region for each AWS account. 
     */
-  var DataSourceId: ResourceId = js.native
+  var DataSourceId: ResourceId
   
   /**
     * The parameters that QuickSight uses to connect to your underlying source.
     */
-  var DataSourceParameters: js.UndefOr[typings.awsSdk.quicksightMod.DataSourceParameters] = js.native
+  var DataSourceParameters: js.UndefOr[typings.awsSdk.quicksightMod.DataSourceParameters] = js.undefined
   
   /**
     * A display name for the data source.
     */
-  var Name: ResourceName = js.native
+  var Name: ResourceName
   
   /**
     * Secure Socket Layer (SSL) properties that apply when QuickSight connects to your underlying source.
     */
-  var SslProperties: js.UndefOr[typings.awsSdk.quicksightMod.SslProperties] = js.native
+  var SslProperties: js.UndefOr[typings.awsSdk.quicksightMod.SslProperties] = js.undefined
   
   /**
     * Use this parameter only when you want QuickSight to use a VPC connection when connecting to your underlying source.
     */
-  var VpcConnectionProperties: js.UndefOr[typings.awsSdk.quicksightMod.VpcConnectionProperties] = js.native
+  var VpcConnectionProperties: js.UndefOr[typings.awsSdk.quicksightMod.VpcConnectionProperties] = js.undefined
 }
 object UpdateDataSourceRequest {
   

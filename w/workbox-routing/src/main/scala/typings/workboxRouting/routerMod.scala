@@ -12,7 +12,6 @@ import typings.workboxRouting.routerMod.Router.FindMatchingRouteReturn
 import typings.workboxRouting.routerMod.Router.HandleRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object routerMod {
@@ -25,26 +24,27 @@ object routerMod {
     
     def addFetchListener(): Unit = js.native
     
-    def findMatchingRoute(options: FindMatchingRouteOptions): js.Object | FindMatchingRouteReturn[_] = js.native
+    def findMatchingRoute(options: FindMatchingRouteOptions): js.Object | FindMatchingRouteReturn[js.Any] = js.native
     
     def handleRequest(options: HandleRequestOptions): js.Promise[js.UndefOr[Response]] = js.native
     
-    def registerRoute(route: Route[_]): Unit = js.native
+    def registerRoute(route: Route[js.Any]): Unit = js.native
     
-    val routes: Map[HTTPMethod, js.Array[Route[_]]] = js.native
+    val routes: Map[HTTPMethod, js.Array[Route[js.Any]]] = js.native
     
     def setCatchHandler(handler: RouteHandler): Unit = js.native
     
     def setDefaultHandler(handler: RouteHandler): Unit = js.native
     
-    def unregisterRoute(route: Route[_]): Unit = js.native
+    def unregisterRoute(route: Route[js.Any]): Unit = js.native
   }
   object Router {
     
-    @js.native
-    trait FindMatchingRouteOptions extends HandleRequestOptions {
+    trait FindMatchingRouteOptions
+      extends StObject
+         with HandleRequestOptions {
       
-      var url: URL = js.native
+      var url: URL
     }
     object FindMatchingRouteOptions {
       
@@ -62,13 +62,12 @@ object routerMod {
       }
     }
     
-    @js.native
     trait FindMatchingRouteReturn[MatchReturn] extends StObject {
       
-      var params: js.Any = js.native
+      var params: js.Any
       
       // Exclude<MatchReturn, Falsy> | undefined; <-- TypeScript 2.8
-      var route: Route[MatchReturn] = js.native
+      var route: Route[MatchReturn]
     }
     object FindMatchingRouteReturn {
       
@@ -79,7 +78,7 @@ object routerMod {
       }
       
       @scala.inline
-      implicit class FindMatchingRouteReturnMutableBuilder[Self <: FindMatchingRouteReturn[_], MatchReturn] (val x: Self with FindMatchingRouteReturn[MatchReturn]) extends AnyVal {
+      implicit class FindMatchingRouteReturnMutableBuilder[Self <: FindMatchingRouteReturn[?], MatchReturn] (val x: Self & FindMatchingRouteReturn[MatchReturn]) extends AnyVal {
         
         @scala.inline
         def setParams(value: js.Any): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
@@ -89,14 +88,13 @@ object routerMod {
       }
     }
     
-    @js.native
     trait HandleRequestOptions extends StObject {
       
       var event: js.UndefOr[
             /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify FetchEvent */ js.Any
-          ] = js.native
+          ] = js.undefined
       
-      var request: Request = js.native
+      var request: Request
     }
     object HandleRequestOptions {
       

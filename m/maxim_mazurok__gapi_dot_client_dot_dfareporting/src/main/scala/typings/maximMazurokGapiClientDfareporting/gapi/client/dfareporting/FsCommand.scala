@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientDfareporting.gapi.client.dfareporting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FsCommand extends StObject {
   
   /** Distance from the left of the browser.Applicable when positionOption is DISTANCE_FROM_TOP_LEFT_CORNER. */
-  var left: js.UndefOr[Double] = js.native
+  var left: js.UndefOr[Double] = js.undefined
   
   /** Position in the browser where the window will open. */
-  var positionOption: js.UndefOr[String] = js.native
+  var positionOption: js.UndefOr[String] = js.undefined
   
   /** Distance from the top of the browser. Applicable when positionOption is DISTANCE_FROM_TOP_LEFT_CORNER. */
-  var top: js.UndefOr[Double] = js.native
+  var top: js.UndefOr[Double] = js.undefined
   
   /** Height of the window. */
-  var windowHeight: js.UndefOr[Double] = js.native
+  var windowHeight: js.UndefOr[Double] = js.undefined
   
   /** Width of the window. */
-  var windowWidth: js.UndefOr[Double] = js.native
+  var windowWidth: js.UndefOr[Double] = js.undefined
 }
 object FsCommand {
   

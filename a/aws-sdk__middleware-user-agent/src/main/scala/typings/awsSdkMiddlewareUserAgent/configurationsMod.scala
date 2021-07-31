@@ -2,21 +2,22 @@ package typings.awsSdkMiddlewareUserAgent
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object configurationsMod {
   
-  @JSImport("@aws-sdk/middleware-user-agent/dist/cjs/configurations", "resolveUserAgentConfig")
+  @JSImport("@aws-sdk/middleware-user-agent/dist/cjs/configurations", JSImport.Namespace)
   @js.native
-  def resolveUserAgentConfig[T](input: T with PreviouslyResolved with UserAgentInputConfig): T with UserAgentResolvedConfig = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def resolveUserAgentConfig[T](input: T & PreviouslyResolved & UserAgentInputConfig): T & UserAgentResolvedConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("resolveUserAgentConfig")(input.asInstanceOf[js.Any]).asInstanceOf[T & UserAgentResolvedConfig]
+  
   trait PreviouslyResolved extends StObject {
     
-    var defaultUserAgent: String = js.native
+    var defaultUserAgent: String
     
-    var runtime: String = js.native
+    var runtime: String
   }
   object PreviouslyResolved {
     
@@ -37,13 +38,12 @@ object configurationsMod {
     }
   }
   
-  @js.native
   trait UserAgentInputConfig extends StObject {
     
     /**
       * The custom user agent header that would be appended to default one
       */
-    var customUserAgent: js.UndefOr[String] = js.native
+    var customUserAgent: js.UndefOr[String] = js.undefined
   }
   object UserAgentInputConfig {
     
@@ -64,14 +64,13 @@ object configurationsMod {
     }
   }
   
-  @js.native
   trait UserAgentResolvedConfig extends StObject {
     
-    var customUserAgent: js.UndefOr[String] = js.native
+    var customUserAgent: js.UndefOr[String] = js.undefined
     
-    var defaultUserAgent: String = js.native
+    var defaultUserAgent: String
     
-    var runtime: String = js.native
+    var runtime: String
   }
   object UserAgentResolvedConfig {
     

@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -149,7 +148,7 @@ trait DirectConnect extends Service {
   ): Request[VirtualInterface, AWSError] = js.native
   
   @JSName("config")
-  var config_DirectConnect: ConfigBase with ClientConfiguration = js.native
+  var config_DirectConnect: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Confirms the creation of the specified hosted connection on an interconnect. Upon creation, the hosted connection is initially in the Ordering state, and remains in this state until the owner confirms creation of the hosted connection.

@@ -10,9 +10,9 @@ A distributed maintained collection of patterns that indicate that something pro
 | ------------------ | :-------------: |
 | Full name          | is-secret |
 | Keywords           | secret, validate, redact, protect, filter |
-| # releases         | 3 |
-| # dependents       | 1 |
-| # downloads        | 3893419 |
+| # releases         | 0 |
+| # dependents       | 2 |
+| # downloads        | 4862061 |
 | # stars            | 1 |
 
 ## Links

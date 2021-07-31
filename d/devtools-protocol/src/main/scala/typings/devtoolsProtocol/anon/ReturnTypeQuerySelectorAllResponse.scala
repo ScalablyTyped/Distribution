@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.DOM.QuerySelectorAllRequest
 import typings.devtoolsProtocol.mod.Protocol.DOM.QuerySelectorAllResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeQuerySelectorAllResponse extends StObject {
   
-  var paramsType: js.Array[QuerySelectorAllRequest] = js.native
+  var paramsType: js.Array[QuerySelectorAllRequest]
   
-  var returnType: QuerySelectorAllResponse = js.native
+  var returnType: QuerySelectorAllResponse
 }
 object ReturnTypeQuerySelectorAllResponse {
   

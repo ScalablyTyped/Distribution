@@ -4,56 +4,54 @@ import typings.devextreme.anon.Async
 import typings.devextreme.anon.ErrorDetails
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ODataContextOptions extends StObject {
   
   /**
     * [descr:ODataContext.Options.beforeSend]
     */
-  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, _]] = js.native
+  var beforeSend: js.UndefOr[js.Function1[/* options */ Async, js.Any]] = js.undefined
   
   /**
     * [descr:ODataContext.Options.deserializeDates]
     */
-  var deserializeDates: js.UndefOr[Boolean] = js.native
+  var deserializeDates: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:ODataContext.Options.entities]
     */
-  var entities: js.UndefOr[js.Any] = js.native
+  var entities: js.UndefOr[js.Any] = js.undefined
   
   /**
     * [descr:ODataContext.Options.errorHandler]
     */
-  var errorHandler: js.UndefOr[js.Function1[/* e */ ErrorDetails, _]] = js.native
+  var errorHandler: js.UndefOr[js.Function1[/* e */ ErrorDetails, js.Any]] = js.undefined
   
   /**
     * [descr:ODataContext.Options.filterToLower]
     */
-  var filterToLower: js.UndefOr[Boolean] = js.native
+  var filterToLower: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:ODataContext.Options.jsonp]
     */
-  var jsonp: js.UndefOr[Boolean] = js.native
+  var jsonp: js.UndefOr[Boolean] = js.undefined
   
   /**
     * [descr:ODataContext.Options.url]
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
   /**
     * [descr:ODataContext.Options.version]
     */
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
   
   /**
     * [descr:ODataContext.Options.withCredentials]
     */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object ODataContextOptions {
   
@@ -67,7 +65,7 @@ object ODataContextOptions {
   implicit class ODataContextOptionsMutableBuilder[Self <: ODataContextOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setBeforeSend(value: /* options */ Async => _): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
+    def setBeforeSend(value: /* options */ Async => js.Any): Self = StObject.set(x, "beforeSend", js.Any.fromFunction1(value))
     
     @scala.inline
     def setBeforeSendUndefined: Self = StObject.set(x, "beforeSend", js.undefined)
@@ -85,7 +83,7 @@ object ODataContextOptions {
     def setEntitiesUndefined: Self = StObject.set(x, "entities", js.undefined)
     
     @scala.inline
-    def setErrorHandler(value: /* e */ ErrorDetails => _): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
+    def setErrorHandler(value: /* e */ ErrorDetails => js.Any): Self = StObject.set(x, "errorHandler", js.Any.fromFunction1(value))
     
     @scala.inline
     def setErrorHandlerUndefined: Self = StObject.set(x, "errorHandler", js.undefined)

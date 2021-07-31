@@ -4,32 +4,32 @@ import typings.express.mod.Express
 import typings.overloadProtection.mod.ProtectionConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("kube-probe", JSImport.Namespace)
-  @js.native
-  def apply(app: Express): Unit = js.native
-  @JSImport("kube-probe", JSImport.Namespace)
-  @js.native
-  def apply(app: Express, options: Options): Unit = js.native
+  @scala.inline
+  def apply(app: Express): Unit = ^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def apply(app: Express, options: Options): Unit = (^.asInstanceOf[js.Dynamic].apply(app.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("kube-probe", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var bypassProtection: js.UndefOr[Boolean] = js.native
+    var bypassProtection: js.UndefOr[Boolean] = js.undefined
     
-    var livenessCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var livenessCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var livenessUrl: js.UndefOr[String] = js.native
+    var livenessUrl: js.UndefOr[String] = js.undefined
     
-    var protectionConfig: js.UndefOr[ProtectionConfig] = js.native
+    var protectionConfig: js.UndefOr[ProtectionConfig] = js.undefined
     
-    var readinessCallback: js.UndefOr[js.Function0[Unit]] = js.native
+    var readinessCallback: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var readinessUrl: js.UndefOr[String] = js.native
+    var readinessUrl: js.UndefOr[String] = js.undefined
   }
   object Options {
     

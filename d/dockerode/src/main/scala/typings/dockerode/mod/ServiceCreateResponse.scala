@@ -2,15 +2,13 @@ package typings.dockerode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceCreateResponse extends StObject {
   
-  var ID: String = js.native
+  var ID: String
   
-  var Warnings: js.UndefOr[js.Array[String]] = js.native
+  var Warnings: js.UndefOr[js.Array[String]] = js.undefined
 }
 object ServiceCreateResponse {
   

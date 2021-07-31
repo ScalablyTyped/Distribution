@@ -2,36 +2,34 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimestreamAction extends StObject {
   
   /**
     * The name of an Amazon Timestream database.
     */
-  var databaseName: TimestreamDatabaseName = js.native
+  var databaseName: TimestreamDatabaseName
   
   /**
     * Metadata attributes of the time series that are written in each measure record.
     */
-  var dimensions: TimestreamDimensionList = js.native
+  var dimensions: TimestreamDimensionList
   
   /**
     * The ARN of the role that grants permission to write to the Amazon Timestream database table.
     */
-  var roleArn: AwsArn = js.native
+  var roleArn: AwsArn
   
   /**
     * The name of the database table into which to write the measure records.
     */
-  var tableName: TimestreamTableName = js.native
+  var tableName: TimestreamTableName
   
   /**
     * Specifies an application-defined value to replace the default value assigned to the Timestream record's timestamp in the time column. You can use this property to specify the value and the precision of the Timestream record's timestamp. You can specify a value from the message payload or a value computed by a substitution template. If omitted, the topic rule action assigns the timestamp, in milliseconds, at the time it processed the rule. 
     */
-  var timestamp: js.UndefOr[TimestreamTimestamp] = js.native
+  var timestamp: js.UndefOr[TimestreamTimestamp] = js.undefined
 }
 object TimestreamAction {
   

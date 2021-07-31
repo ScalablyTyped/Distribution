@@ -8,19 +8,19 @@ import typings.react.mod.ReactNode
 import typings.react.mod.Ref
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait Align extends ScrollConfig {
+  trait Align
+    extends StObject
+       with ScrollConfig {
     
-    var align: js.UndefOr[ScrollAlign] = js.native
+    var align: js.UndefOr[ScrollAlign] = js.undefined
     
-    var index: Double = js.native
+    var index: Double
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object Align {
     
@@ -50,12 +50,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Children extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var ref: js.UndefOr[Ref[ListRef]] = js.native
+    var ref: js.UndefOr[Ref[ListRef]] = js.undefined
   }
   object Children {
     
@@ -88,12 +87,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Index extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var multiple: Boolean = js.native
+    var multiple: Boolean
   }
   object Index {
     
@@ -114,14 +112,15 @@ object anon {
     }
   }
   
-  @js.native
-  trait Key extends ScrollConfig {
+  trait Key
+    extends StObject
+       with ScrollConfig {
     
-    var align: js.UndefOr[ScrollAlign] = js.native
+    var align: js.UndefOr[ScrollAlign] = js.undefined
     
-    var key: typings.react.mod.Key = js.native
+    var key: typings.react.mod.Key
     
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
   }
   object Key {
     
@@ -151,10 +150,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Style extends StObject {
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object Style {
     

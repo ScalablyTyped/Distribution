@@ -2,7 +2,6 @@ package typings.winrt.Windows.Graphics.Printing.OptionDetails
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -12,11 +11,17 @@ sealed trait PrintOptionStates extends StObject
 object PrintOptionStates extends StObject {
   
   @js.native
-  sealed trait constrained extends PrintOptionStates
+  sealed trait constrained
+    extends StObject
+       with PrintOptionStates
   
   @js.native
-  sealed trait enabled extends PrintOptionStates
+  sealed trait enabled
+    extends StObject
+       with PrintOptionStates
   
   @js.native
-  sealed trait none extends PrintOptionStates
+  sealed trait none
+    extends StObject
+       with PrintOptionStates
 }

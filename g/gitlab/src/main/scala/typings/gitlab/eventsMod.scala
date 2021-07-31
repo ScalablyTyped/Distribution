@@ -24,7 +24,6 @@ import typings.gitlab.requestHelperMod.GetResponse
 import typings.gitlab.requestHelperMod.PaginatedRequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventsMod {
@@ -35,17 +34,16 @@ object eventsMod {
     def this(hasTokenJobTokenOauthTokenSudoProfileTokenProfileModeHostUrlVersionCamelizeRejectUnauthorizedRequesterRequestTimeout: BaseServiceOptions) = this()
     
     def all(): js.Promise[GetResponse] = js.native
-    def all(options: PaginatedRequestOptions with EventOptions): js.Promise[GetResponse] = js.native
+    def all(options: PaginatedRequestOptions & EventOptions): js.Promise[GetResponse] = js.native
   }
   
-  @js.native
   trait EventOptions extends StObject {
     
     var action: js.UndefOr[
         created | updated | closed | reopened | pushed | commented | merged | joined | left | destroyed | expired
-      ] = js.native
+      ] = js.undefined
     
-    var targetType: js.UndefOr[issue | milestone | merge_request | note | project | snippet | user] = js.native
+    var targetType: js.UndefOr[issue | milestone | merge_request | note | project | snippet | user] = js.undefined
   }
   object EventOptions {
     

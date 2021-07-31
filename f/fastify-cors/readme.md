@@ -10,9 +10,9 @@ Fastify CORS
 | ------------------ | :-------------: |
 | Full name          | fastify-cors |
 | Keywords           | fastify, cors, headers, access, control |
-| # releases         | 17 |
-| # dependents       | 61 |
-| # downloads        | 2938998 |
+| # releases         | 15 |
+| # dependents       | 76 |
+| # downloads        | 4053116 |
 | # stars            | 0 |
 
 ## Links

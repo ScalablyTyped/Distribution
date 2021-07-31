@@ -6,19 +6,17 @@ import typings.wxServerSdk.anon.Stats
 import typings.wxServerSdk.anon.Stats1
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Document extends StObject {
   
-  def get(): js.Promise[DataAny] = js.native
+  def get(): js.Promise[DataAny]
   
-  def remove(): js.Promise[Stats1] = js.native
+  def remove(): js.Promise[Stats1]
   
-  def set(options: CommonOption[_]): js.Promise[Id] = js.native
+  def set(options: CommonOption[js.Any]): js.Promise[Id]
   
-  def update(options: CommonOption[_]): js.Promise[Stats] = js.native
+  def update(options: CommonOption[js.Any]): js.Promise[Stats]
 }
 object Document {
   
@@ -26,8 +24,8 @@ object Document {
   def apply(
     get: () => js.Promise[DataAny],
     remove: () => js.Promise[Stats1],
-    set: CommonOption[_] => js.Promise[Id],
-    update: CommonOption[_] => js.Promise[Stats]
+    set: CommonOption[js.Any] => js.Promise[Id],
+    update: CommonOption[js.Any] => js.Promise[Stats]
   ): Document = {
     val __obj = js.Dynamic.literal(get = js.Any.fromFunction0(get), remove = js.Any.fromFunction0(remove), set = js.Any.fromFunction1(set), update = js.Any.fromFunction1(update))
     __obj.asInstanceOf[Document]
@@ -43,9 +41,9 @@ object Document {
     def setRemove(value: () => js.Promise[Stats1]): Self = StObject.set(x, "remove", js.Any.fromFunction0(value))
     
     @scala.inline
-    def setSet(value: CommonOption[_] => js.Promise[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
+    def setSet(value: CommonOption[js.Any] => js.Promise[Id]): Self = StObject.set(x, "set", js.Any.fromFunction1(value))
     
     @scala.inline
-    def setUpdate(value: CommonOption[_] => js.Promise[Stats]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
+    def setUpdate(value: CommonOption[js.Any] => js.Promise[Stats]): Self = StObject.set(x, "update", js.Any.fromFunction1(value))
   }
 }

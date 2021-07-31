@@ -2,22 +2,22 @@ package typings.postcss.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ResultOptions extends ProcessOptions {
+trait ResultOptions
+  extends StObject
+     with ProcessOptions {
   
   /**
     * The CSS node that was the source of the warning.
     */
-  var node: js.UndefOr[Node] = js.native
+  var node: js.UndefOr[Node] = js.undefined
   
   /**
     * Name of plugin that created this warning. Result#warn() will fill it
     * automatically with plugin.postcssPlugin value.
     */
-  var plugin: js.UndefOr[String] = js.native
+  var plugin: js.UndefOr[String] = js.undefined
 }
 object ResultOptions {
   

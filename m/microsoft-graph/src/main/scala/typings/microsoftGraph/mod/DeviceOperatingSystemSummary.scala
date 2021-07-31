@@ -2,29 +2,27 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceOperatingSystemSummary extends StObject {
   
   // Number of android device count.
-  var androidCount: js.UndefOr[Double] = js.native
+  var androidCount: js.UndefOr[Double] = js.undefined
   
   // Number of iOS device count.
-  var iosCount: js.UndefOr[Double] = js.native
+  var iosCount: js.UndefOr[Double] = js.undefined
   
   // Number of Mac OS X device count.
-  var macOSCount: js.UndefOr[Double] = js.native
+  var macOSCount: js.UndefOr[Double] = js.undefined
   
   // Number of unknown device count.
-  var unknownCount: js.UndefOr[Double] = js.native
+  var unknownCount: js.UndefOr[Double] = js.undefined
   
   // Number of Windows device count.
-  var windowsCount: js.UndefOr[Double] = js.native
+  var windowsCount: js.UndefOr[Double] = js.undefined
   
   // Number of Windows mobile device count.
-  var windowsMobileCount: js.UndefOr[Double] = js.native
+  var windowsMobileCount: js.UndefOr[Double] = js.undefined
 }
 object DeviceOperatingSystemSummary {
   

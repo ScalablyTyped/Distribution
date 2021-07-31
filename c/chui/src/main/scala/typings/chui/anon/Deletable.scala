@@ -2,23 +2,21 @@ package typings.chui.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Deletable extends StObject {
   
-  var callback: js.UndefOr[js.Function] = js.native
+  var callback: js.UndefOr[js.Function] = js.undefined
   
-  var deletable: js.UndefOr[Boolean] = js.native
+  var deletable: js.UndefOr[Boolean] = js.undefined
   
-  var deleteLabel: js.UndefOr[String] = js.native
+  var deleteLabel: js.UndefOr[String] = js.undefined
   
-  var doneLabel: js.UndefOr[String] = js.native
+  var doneLabel: js.UndefOr[String] = js.undefined
   
-  var editLabel: js.UndefOr[String] = js.native
+  var editLabel: js.UndefOr[String] = js.undefined
   
-  var movable: js.UndefOr[Boolean] = js.native
+  var movable: js.UndefOr[Boolean] = js.undefined
 }
 object Deletable {
   

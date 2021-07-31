@@ -3,7 +3,6 @@ package typings.openlayers.mod.olx
 import typings.openlayers.mod.Coordinate_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object animation {
@@ -17,22 +16,21 @@ object animation {
     * final argument. The callback will be called with a boolean indicating
     * whether the animation completed without being cancelled.
     */
-  @js.native
   trait AnimateOptions extends StObject {
     
-    var anchor: js.UndefOr[Coordinate_] = js.native
+    var anchor: js.UndefOr[Coordinate_] = js.undefined
     
-    var center: js.UndefOr[Coordinate_] = js.native
+    var center: js.UndefOr[Coordinate_] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.undefined
     
-    var resolution: js.UndefOr[Double] = js.native
+    var resolution: js.UndefOr[Double] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object AnimateOptions {
     
@@ -89,16 +87,15 @@ object animation {
     }
   }
   
-  @js.native
   trait BounceOptions extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.undefined
     
-    var resolution: Double = js.native
+    var resolution: Double
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object BounceOptions {
     
@@ -134,16 +131,15 @@ object animation {
     }
   }
   
-  @js.native
   trait PanOptions extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.undefined
     
-    var source: Coordinate_ = js.native
+    var source: Coordinate_
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object PanOptions {
     
@@ -179,18 +175,17 @@ object animation {
     }
   }
   
-  @js.native
   trait RotateOptions extends StObject {
     
-    var anchor: js.UndefOr[Coordinate_] = js.native
+    var anchor: js.UndefOr[Coordinate_] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.undefined
     
-    var rotation: js.UndefOr[Double] = js.native
+    var rotation: js.UndefOr[Double] = js.undefined
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object RotateOptions {
     
@@ -235,16 +230,15 @@ object animation {
     }
   }
   
-  @js.native
   trait ZoomOptions extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.native
+    var easing: js.UndefOr[js.Function1[/* t */ Double, Double]] = js.undefined
     
-    var resolution: Double = js.native
+    var resolution: Double
     
-    var start: js.UndefOr[Double] = js.native
+    var start: js.UndefOr[Double] = js.undefined
   }
   object ZoomOptions {
     

@@ -10,23 +10,25 @@ import typings.keycloakConnect.anon.Roles
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("keycloak-connect", JSImport.Namespace)
   @js.native
-  class ^ protected () extends Keycloak {
+  class ^ protected ()
+    extends StObject
+       with Keycloak {
     def this(config: Config) = this()
     def this(config: Config, keycloakConfig: String) = this()
     def this(config: Config, keycloakConfig: js.Object) = this()
   }
   
-  @js.native
-  trait BaseConfig extends Config {
+  trait BaseConfig
+    extends StObject
+       with Config {
     
-    var scope: js.UndefOr[js.Any] = js.native
+    var scope: js.UndefOr[js.Any] = js.undefined
   }
   object BaseConfig {
     
@@ -75,10 +77,11 @@ object mod {
   }
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.keycloakConnect.mod.Config because Already inherited */ @js.native
-  trait CookiesConfig extends BaseConfig {
+  - typings.keycloakConnect.mod.Config because Already inherited */ trait CookiesConfig
+    extends StObject
+       with BaseConfig {
     
-    var cookies: js.Any = js.native
+    var cookies: js.Any
   }
   object CookiesConfig {
     
@@ -96,26 +99,25 @@ object mod {
     }
   }
   
-  @js.native
   trait Grant extends StObject {
     
-    var __raw: String = js.native
+    var __raw: String
     
-    var access_token: Token = js.native
+    var access_token: Token
     
-    var expires_in: Double = js.native
+    var expires_in: Double
     
-    var id_token: Token = js.native
+    var id_token: Token
     
-    def isExpired(): Boolean = js.native
+    def isExpired(): Boolean
     
-    var refresh_token: Token = js.native
+    var refresh_token: Token
     
-    def store(request: Request_[ParamsDictionary, _, _, Query], response: Response_[_]): Unit = js.native
+    def store(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): Unit
     
-    var token_type: String = js.native
+    var token_type: String
     
-    def update(grant: Grant): Unit = js.native
+    def update(grant: Grant): Unit
   }
   object Grant {
     
@@ -127,7 +129,7 @@ object mod {
       id_token: Token,
       isExpired: () => Boolean,
       refresh_token: Token,
-      store: (Request_[ParamsDictionary, _, _, Query], Response_[_]) => Unit,
+      store: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any]) => Unit,
       token_type: String,
       update: Grant => Unit
     ): Grant = {
@@ -154,7 +156,7 @@ object mod {
       def setRefresh_token(value: Token): Self = StObject.set(x, "refresh_token", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setStore(value: (Request_[ParamsDictionary, _, _, Query], Response_[_]) => Unit): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
+      def setStore(value: (Request_[ParamsDictionary, js.Any, js.Any, Query], Response_[js.Any]) => Unit): Self = StObject.set(x, "store", js.Any.fromFunction2(value))
       
       @scala.inline
       def setToken_type(value: String): Self = StObject.set(x, "token_type", value.asInstanceOf[js.Any])
@@ -177,44 +179,51 @@ object mod {
   @js.native
   trait Keycloak extends StObject {
     
-    def accessDenied(request: Request_[ParamsDictionary, _, _, Query], response: Response_[_]): Unit = js.native
+    def accessDenied(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): Unit = js.native
     
     def accountUrl(): String = js.native
     
-    def authenticated(request: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
+    def authenticated(request: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
     
-    def deauthenticated(request: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
+    def deauthenticated(request: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
     
-    def getAccount(token: Token): js.Promise[_] = js.native
+    def getAccount(token: Token): js.Promise[js.Any] = js.native
     
-    def getGrant(request: Request_[ParamsDictionary, _, _, Query], response: Response_[_]): js.Promise[Grant] = js.native
+    def getGrant(request: Request_[ParamsDictionary, js.Any, js.Any, Query], response: Response_[js.Any]): js.Promise[Grant] = js.native
     
-    def getGrantFromCode(code: String, request: Request_[ParamsDictionary, _, _, Query], response: Response_[_]): js.Promise[Grant] = js.native
+    def getGrantFromCode(
+      code: String,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      response: Response_[js.Any]
+    ): js.Promise[Grant] = js.native
     
     def loginUrl(uuid: String, redirectUrl: String): String = js.native
     
     def logoutUrl(redirectUrl: String): String = js.native
     
-    def middleware(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def middleware(options: MiddlewareOptions): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def middleware(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def middleware(options: MiddlewareOptions): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
-    def protect(): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def protect(spec: String): RequestHandler[ParamsDictionary, _, _, Query] = js.native
-    def protect(spec: SpecHandler): RequestHandler[ParamsDictionary, _, _, Query] = js.native
+    def protect(): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def protect(spec: String): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
+    def protect(spec: SpecHandler): RequestHandler[ParamsDictionary, js.Any, js.Any, Query] = js.native
     
-    def redirectToLogin(request: Request_[ParamsDictionary, _, _, Query]): Boolean = js.native
+    def redirectToLogin(request: Request_[ParamsDictionary, js.Any, js.Any, Query]): Boolean = js.native
     
-    def storeGrant(grant: Grant, request: Request_[ParamsDictionary, _, _, Query], response: Response_[_]): Grant = js.native
+    def storeGrant(
+      grant: Grant,
+      request: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      response: Response_[js.Any]
+    ): Grant = js.native
     
     def unstoreGrant(sessionId: String): Unit = js.native
   }
   
-  @js.native
   trait MiddlewareOptions extends StObject {
     
-    var admin: js.UndefOr[String] = js.native
+    var admin: js.UndefOr[String] = js.undefined
     
-    var logout: js.UndefOr[String] = js.native
+    var logout: js.UndefOr[String] = js.undefined
   }
   object MiddlewareOptions {
     
@@ -249,10 +258,11 @@ object mod {
   ]
   
   /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-  - typings.keycloakConnect.mod.Config because Already inherited */ @js.native
-  trait StoreConfig extends BaseConfig {
+  - typings.keycloakConnect.mod.Config because Already inherited */ trait StoreConfig
+    extends StObject
+       with BaseConfig {
     
-    var store: js.Any = js.native
+    var store: js.Any
   }
   object StoreConfig {
     
@@ -270,30 +280,29 @@ object mod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
-    var clientId: String = js.native
+    var clientId: String
     
-    var content: TokenContent = js.native
+    var content: TokenContent
     
-    def hasApplicationRole(appName: String, roleName: String): Boolean = js.native
+    def hasApplicationRole(appName: String, roleName: String): Boolean
     
-    def hasPermission(resource: String, scope: String): Boolean = js.native
+    def hasPermission(resource: String, scope: String): Boolean
     
-    def hasRealmRole(roleName: String): Boolean = js.native
+    def hasRealmRole(roleName: String): Boolean
     
-    def hasRole(roleName: String): Boolean = js.native
+    def hasRole(roleName: String): Boolean
     
-    var header: js.UndefOr[js.Any] = js.native
+    var header: js.UndefOr[js.Any] = js.undefined
     
-    def isExpired(): Boolean = js.native
+    def isExpired(): Boolean
     
-    var signature: js.UndefOr[Buffer] = js.native
+    var signature: js.UndefOr[Buffer] = js.undefined
     
-    var signed: js.UndefOr[String] = js.native
+    var signed: js.UndefOr[String] = js.undefined
     
-    var token: String = js.native
+    var token: String
   }
   object Token {
     
@@ -359,16 +368,15 @@ object mod {
     }
   }
   
-  @js.native
   trait TokenContent extends StObject {
     
-    var exp: Double = js.native
+    var exp: Double
     
-    var realm_access: js.UndefOr[Roles] = js.native
+    var realm_access: js.UndefOr[Roles] = js.undefined
     
-    var resource_access: js.UndefOr[js.Any] = js.native
+    var resource_access: js.UndefOr[js.Any] = js.undefined
     
-    var sub: String = js.native
+    var sub: String
   }
   object TokenContent {
     

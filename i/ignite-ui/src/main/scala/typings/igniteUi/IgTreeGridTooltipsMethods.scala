@@ -2,18 +2,16 @@ package typings.igniteUi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgTreeGridTooltipsMethods extends StObject {
   
-  def destroy(): Unit = js.native
+  def destroy(): Unit
   
   /**
     * Returns the ID of the parent div element bounding the ruler and the tooltip container
     */
-  def id(): String = js.native
+  def id(): String
 }
 object IgTreeGridTooltipsMethods {
   

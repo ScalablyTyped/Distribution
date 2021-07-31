@@ -11,8 +11,8 @@ Create an array without duplicates
 | Full name          | array-uniq |
 | Keywords           | array, set, uniq, unique, duplicate, remove |
 | # releases         | 2 |
-| # dependents       | 151 |
-| # downloads        | 468838104 |
+| # dependents       | 166 |
+| # downloads        | 516778232 |
 | # stars            | 8 |
 
 ## Links

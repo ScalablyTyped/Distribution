@@ -3,16 +3,15 @@ package typings.hermesProfileTransformer.eventInterfacesMod
 import typings.hermesProfileTransformer.phasesMod.EventsPhase.DURATION_EVENTS_BEGIN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DurationEventBegin
-  extends DurationEvent
-     with SharedEventProperties {
+  extends StObject
+     with SharedEventProperties
+     with DurationEvent {
   
   @JSName("ph")
-  var ph_DurationEventBegin: DURATION_EVENTS_BEGIN = js.native
+  var ph_DurationEventBegin: DURATION_EVENTS_BEGIN
 }
 object DurationEventBegin {
   

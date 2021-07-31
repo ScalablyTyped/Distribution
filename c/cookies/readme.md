@@ -10,9 +10,9 @@ Cookies, optionally signed using Keygrip.
 | ------------------ | :-------------: |
 | Full name          | cookies |
 | Keywords           | - |
-| # releases         | 4 |
-| # dependents       | 400 |
-| # downloads        | 34004930 |
+| # releases         | 2 |
+| # dependents       | 431 |
+| # downloads        | 40950456 |
 | # stars            | 40 |
 
 ## Links

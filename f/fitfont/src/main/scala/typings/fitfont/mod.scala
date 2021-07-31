@@ -2,7 +2,6 @@ package typings.fitfont
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -61,33 +60,32 @@ object mod {
     def start: typings.fitfont.fitfontStrings.start = "start".asInstanceOf[typings.fitfont.fitfontStrings.start]
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * name of the generated font folder
       */
-    var font: String = js.native
+    var font: String
     
     /**
       * Horizontal alignment
       */
-    var halign: js.UndefOr[HorizontalAlign] = js.native
+    var halign: js.UndefOr[HorizontalAlign] = js.undefined
     
     /**
       * Id fo the symbol or the Element to use
       */
-    var id: String | js.Object = js.native
+    var id: String | js.Object
     
     /**
       * Letter spacing
       */
-    var letterspacing: js.UndefOr[Double] = js.native
+    var letterspacing: js.UndefOr[Double] = js.undefined
     
     /**
       * Vertical alignment
       */
-    var valign: js.UndefOr[VerticalAlign] = js.native
+    var valign: js.UndefOr[VerticalAlign] = js.undefined
   }
   object Options {
     

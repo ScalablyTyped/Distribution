@@ -3,35 +3,33 @@ package typings.reactInstantsearchCore.mod
 import typings.reactInstantsearchCore.anon.HitcountnumberisRefinedbo
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RefinementListProvided extends StObject {
   
   /** a boolean that says whether you can currently refine */
-  var canRefine: Boolean = js.native
+  var canRefine: Boolean
   
   /** a function to generate a URL for the corresponding search state */
-  def createURL(args: js.Any*): js.Any = js.native
+  def createURL(args: js.Any*): js.Any
   
   /** the refinement currently applied */
-  var currentRefinement: js.Array[String] = js.native
+  var currentRefinement: js.Array[String]
   
   /** a boolean that says if the items props contains facet values from the global search or from the search inside items. */
-  var isFromSearch: Boolean = js.native
+  var isFromSearch: Boolean
   
   /**
     * The list of items the RefinementList can display.
     * If isFromSearch is false, the hit properties like _highlightResult are undefined
     */
-  var items: js.Array[HitcountnumberisRefinedbo] = js.native
+  var items: js.Array[HitcountnumberisRefinedbo]
   
   /** a function to toggle a refinement */
-  def refine(value: js.Array[String]): js.Any = js.native
+  def refine(value: js.Array[String]): js.Any
   
   /** a function to toggle a search inside items values */
-  def searchForItems(args: js.Any*): js.Any = js.native
+  def searchForItems(args: js.Any*): js.Any
 }
 object RefinementListProvided {
   

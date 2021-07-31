@@ -4,13 +4,14 @@ import typings.videoJs.mod.videojs.ClickableComponent
 import typings.videoJs.mod.videojs.ComponentOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
 @JSImport("video.js", "default.ClickableComponent")
 @js.native
-class ClickableComponentCls protected () extends ClickableComponent {
+class ClickableComponentCls protected ()
+  extends StObject
+     with ClickableComponent {
   /**
     * Creates an instance of this class.
     *

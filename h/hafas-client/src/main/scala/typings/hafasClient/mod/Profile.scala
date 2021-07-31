@@ -2,33 +2,31 @@ package typings.hafasClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A profile is a specific customisation for each endpoint.
   * It parses data from the API differently, add additional information, or enable non-default methods.
   */
-@js.native
 trait Profile extends StObject {
   
-  var endpoint: String = js.native
+  var endpoint: String
   
-  var journeysWalkingSpeed: js.UndefOr[Boolean] = js.native
+  var journeysWalkingSpeed: js.UndefOr[Boolean] = js.undefined
   
-  var locale: String = js.native
+  var locale: String
   
-  var products: js.Array[ProductType] = js.native
+  var products: js.Array[ProductType]
   
-  var radar: js.UndefOr[Boolean] = js.native
+  var radar: js.UndefOr[Boolean] = js.undefined
   
-  var reachableFrom: js.UndefOr[Boolean] = js.native
+  var reachableFrom: js.UndefOr[Boolean] = js.undefined
   
-  var refreshJourney: js.UndefOr[Boolean] = js.native
+  var refreshJourney: js.UndefOr[Boolean] = js.undefined
   
-  var timezone: String = js.native
+  var timezone: String
   
-  var trip: js.UndefOr[Boolean] = js.native
+  var trip: js.UndefOr[Boolean] = js.undefined
 }
 object Profile {
   

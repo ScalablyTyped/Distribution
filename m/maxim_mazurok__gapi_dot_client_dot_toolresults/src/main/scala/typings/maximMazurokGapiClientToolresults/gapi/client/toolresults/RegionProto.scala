@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientToolresults.gapi.client.toolresults
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionProto extends StObject {
   
   /** The height, in pixels. Always set. */
-  var heightPx: js.UndefOr[Double] = js.native
+  var heightPx: js.UndefOr[Double] = js.undefined
   
   /** The left side of the rectangle, in pixels. Always set. */
-  var leftPx: js.UndefOr[Double] = js.native
+  var leftPx: js.UndefOr[Double] = js.undefined
   
   /** The top of the rectangle, in pixels. Always set. */
-  var topPx: js.UndefOr[Double] = js.native
+  var topPx: js.UndefOr[Double] = js.undefined
   
   /** The width, in pixels. Always set. */
-  var widthPx: js.UndefOr[Double] = js.native
+  var widthPx: js.UndefOr[Double] = js.undefined
 }
 object RegionProto {
   

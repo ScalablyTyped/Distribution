@@ -2,12 +2,10 @@ package typings.cordovarduino
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Cordovardunio {
   
-  @js.native
   trait Serial extends StObject {
     
     /**
@@ -16,7 +14,7 @@ object Cordovardunio {
       * @param successCallback Function to call on success
       * @param errorCallback   Function to call on error
       */
-    def close(successCallback: js.Function, errorCallback: js.Function): Unit = js.native
+    def close(successCallback: js.Function, errorCallback: js.Function): Unit
     
     /**
       * Open a connection.
@@ -25,7 +23,7 @@ object Cordovardunio {
       * @param successCallback Function to call on success
       * @param errorCallback   Function to call on error
       */
-    def open(opts: SerialOptions, successCallback: js.Function, errorCallback: js.Function): Unit = js.native
+    def open(opts: SerialOptions, successCallback: js.Function, errorCallback: js.Function): Unit
     
     /**
       * Read from the serial port.
@@ -33,7 +31,7 @@ object Cordovardunio {
       * @param successCallback Function to call on success
       * @param errorCallback   Function to call on error
       */
-    def read(successCallback: js.Function, errorCallback: js.Function): Unit = js.native
+    def read(successCallback: js.Function, errorCallback: js.Function): Unit
     
     /**
       * Register a callback for the driver reading incoming data from the serial device
@@ -41,7 +39,7 @@ object Cordovardunio {
       * @param successCallback Function to call on success
       * @param errorCallback   Function to call on error
       */
-    def registerReadCallback(successCallback: js.Function, errorCallback: js.Function): Unit = js.native
+    def registerReadCallback(successCallback: js.Function, errorCallback: js.Function): Unit
     
     /**
       * Request permission to interact with the serial port.
@@ -49,7 +47,7 @@ object Cordovardunio {
       * @param successCallback Function to call on success
       * @param errorCallback   Function to call on error
       */
-    def requestPermission(successCallback: js.Function, errorCallback: js.Function): Unit = js.native
+    def requestPermission(successCallback: js.Function, errorCallback: js.Function): Unit
     
     /**
       * Write to the serial port.
@@ -58,7 +56,7 @@ object Cordovardunio {
       * @param successCallback Function to call on success
       * @param errorCallback   Function to call on error
       */
-    def write(data: String, successCallback: js.Function, errorCallback: js.Function): Unit = js.native
+    def write(data: String, successCallback: js.Function, errorCallback: js.Function): Unit
   }
   object Serial {
     
@@ -98,28 +96,27 @@ object Cordovardunio {
     }
   }
   
-  @js.native
   trait SerialOptions extends StObject {
     
     /**
       * @defaultValue 9600
       */
-    var baudRate: js.UndefOr[Double] = js.native
+    var baudRate: js.UndefOr[Double] = js.undefined
     
     /**
       * @defaultValue 8
       */
-    var dataBits: js.UndefOr[Double] = js.native
+    var dataBits: js.UndefOr[Double] = js.undefined
     
     /**
       * @defaultValue 0
       */
-    var parity: js.UndefOr[Double] = js.native
+    var parity: js.UndefOr[Double] = js.undefined
     
     /**
       * @defaultValue 1
       */
-    var stopBits: js.UndefOr[Double] = js.native
+    var stopBits: js.UndefOr[Double] = js.undefined
   }
   object SerialOptions {
     

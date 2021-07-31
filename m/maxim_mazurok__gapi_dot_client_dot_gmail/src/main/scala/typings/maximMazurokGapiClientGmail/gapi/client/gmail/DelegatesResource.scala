@@ -6,7 +6,6 @@ import typings.maximMazurokGapiClientGmail.anon.DelegateEmail
 import typings.maximMazurokGapiClientGmail.anon.Xgafv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

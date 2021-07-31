@@ -3,69 +3,67 @@ package typings.kendoUi.kendo.dataviz.ui
 import typings.kendoUi.kendo.dataviz.map.Location
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
-  var beforeReset: js.UndefOr[js.Function1[/* e */ MapBeforeResetEvent, Unit]] = js.native
+  var beforeReset: js.UndefOr[js.Function1[/* e */ MapBeforeResetEvent, Unit]] = js.undefined
   
-  var center: js.UndefOr[js.Any | Location] = js.native
+  var center: js.UndefOr[js.Any | Location] = js.undefined
   
-  var click: js.UndefOr[js.Function1[/* e */ MapClickEvent, Unit]] = js.native
+  var click: js.UndefOr[js.Function1[/* e */ MapClickEvent, Unit]] = js.undefined
   
-  var controls: js.UndefOr[MapControls] = js.native
+  var controls: js.UndefOr[MapControls] = js.undefined
   
-  var layerDefaults: js.UndefOr[MapLayerDefaults] = js.native
+  var layerDefaults: js.UndefOr[MapLayerDefaults] = js.undefined
   
-  var layers: js.UndefOr[js.Array[MapLayer]] = js.native
+  var layers: js.UndefOr[js.Array[MapLayer]] = js.undefined
   
-  var markerActivate: js.UndefOr[js.Function1[/* e */ MapMarkerActivateEvent, Unit]] = js.native
+  var markerActivate: js.UndefOr[js.Function1[/* e */ MapMarkerActivateEvent, Unit]] = js.undefined
   
-  var markerClick: js.UndefOr[js.Function1[/* e */ MapMarkerClickEvent, Unit]] = js.native
+  var markerClick: js.UndefOr[js.Function1[/* e */ MapMarkerClickEvent, Unit]] = js.undefined
   
-  var markerCreated: js.UndefOr[js.Function1[/* e */ MapMarkerCreatedEvent, Unit]] = js.native
+  var markerCreated: js.UndefOr[js.Function1[/* e */ MapMarkerCreatedEvent, Unit]] = js.undefined
   
-  var markerDefaults: js.UndefOr[MapMarkerDefaults] = js.native
+  var markerDefaults: js.UndefOr[MapMarkerDefaults] = js.undefined
   
-  var markers: js.UndefOr[js.Array[MapMarker]] = js.native
+  var markers: js.UndefOr[js.Array[MapMarker]] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minSize: js.UndefOr[Double] = js.native
+  var minSize: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var pan: js.UndefOr[js.Function1[/* e */ MapPanEvent, Unit]] = js.native
+  var pan: js.UndefOr[js.Function1[/* e */ MapPanEvent, Unit]] = js.undefined
   
-  var panEnd: js.UndefOr[js.Function1[/* e */ MapPanEndEvent, Unit]] = js.native
+  var panEnd: js.UndefOr[js.Function1[/* e */ MapPanEndEvent, Unit]] = js.undefined
   
-  var pannable: js.UndefOr[Boolean] = js.native
+  var pannable: js.UndefOr[Boolean] = js.undefined
   
-  var reset: js.UndefOr[js.Function1[/* e */ MapResetEvent, Unit]] = js.native
+  var reset: js.UndefOr[js.Function1[/* e */ MapResetEvent, Unit]] = js.undefined
   
-  var shapeClick: js.UndefOr[js.Function1[/* e */ MapShapeClickEvent, Unit]] = js.native
+  var shapeClick: js.UndefOr[js.Function1[/* e */ MapShapeClickEvent, Unit]] = js.undefined
   
-  var shapeCreated: js.UndefOr[js.Function1[/* e */ MapShapeCreatedEvent, Unit]] = js.native
+  var shapeCreated: js.UndefOr[js.Function1[/* e */ MapShapeCreatedEvent, Unit]] = js.undefined
   
-  var shapeFeatureCreated: js.UndefOr[js.Function1[/* e */ MapShapeFeatureCreatedEvent, Unit]] = js.native
+  var shapeFeatureCreated: js.UndefOr[js.Function1[/* e */ MapShapeFeatureCreatedEvent, Unit]] = js.undefined
   
-  var shapeMouseEnter: js.UndefOr[js.Function1[/* e */ MapShapeMouseEnterEvent, Unit]] = js.native
+  var shapeMouseEnter: js.UndefOr[js.Function1[/* e */ MapShapeMouseEnterEvent, Unit]] = js.undefined
   
-  var shapeMouseLeave: js.UndefOr[js.Function1[/* e */ MapShapeMouseLeaveEvent, Unit]] = js.native
+  var shapeMouseLeave: js.UndefOr[js.Function1[/* e */ MapShapeMouseLeaveEvent, Unit]] = js.undefined
   
-  var wraparound: js.UndefOr[Boolean] = js.native
+  var wraparound: js.UndefOr[Boolean] = js.undefined
   
-  var zoom: js.UndefOr[Double] = js.native
+  var zoom: js.UndefOr[Double] = js.undefined
   
-  var zoomEnd: js.UndefOr[js.Function1[/* e */ MapZoomEndEvent, Unit]] = js.native
+  var zoomEnd: js.UndefOr[js.Function1[/* e */ MapZoomEndEvent, Unit]] = js.undefined
   
-  var zoomStart: js.UndefOr[js.Function1[/* e */ MapZoomStartEvent, Unit]] = js.native
+  var zoomStart: js.UndefOr[js.Function1[/* e */ MapZoomStartEvent, Unit]] = js.undefined
   
-  var zoomable: js.UndefOr[Boolean] = js.native
+  var zoomable: js.UndefOr[Boolean] = js.undefined
 }
 object MapOptions {
   

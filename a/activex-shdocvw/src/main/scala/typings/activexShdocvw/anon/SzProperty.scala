@@ -2,13 +2,11 @@ package typings.activexShdocvw.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SzProperty extends StObject {
   
-  val szProperty: String = js.native
+  val szProperty: String
 }
 object SzProperty {
   

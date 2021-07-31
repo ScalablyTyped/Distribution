@@ -4,11 +4,11 @@ import typings.senchaTouch.Ext.Array
 import typings.senchaTouch.Ext.mixin.IIdentifiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IObservable extends IIdentifiable {
+trait IObservable
+  extends StObject
+     with IIdentifiable {
   
   /** [Method] Appends an after event handler
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -24,7 +24,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Appends a before event handler
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -40,12 +40,12 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Adds the specified events to the list of events which this Observable may fire
     * @param eventNames Object/String... Either an object with event names as properties with a value of true or the first event name string if multiple event names are being passed as separate parameters.
     */
-  var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.native
+  var addEvents: js.UndefOr[js.Function1[/* eventNames */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Appends an event handler to this object
     * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -63,7 +63,7 @@ trait IObservable extends IIdentifiable {
       /* order */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -81,18 +81,18 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Config Option] (String/String[]) */
-  var bubbleEvents: js.UndefOr[js.Any] = js.native
+  var bubbleEvents: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Removes all listeners for this object  */
-  var clearListeners: js.UndefOr[js.Function0[Unit]] = js.native
+  var clearListeners: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Enables events fired by this Observable to bubble up an owner hierarchy by calling this getBubbleTarget  if present
     * @param events String/String[] The event name to bubble, or an Array of event names.
     */
-  var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.native
+  var enableBubble: js.UndefOr[js.Function1[/* events */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Fires the specified event with the passed parameters and execute a function action at the end if there are no liste
     * @param eventName String The name of the event to fire.
@@ -107,35 +107,35 @@ trait IObservable extends IIdentifiable {
       /* args */ js.UndefOr[Array], 
       /* fn */ js.UndefOr[js.Any], 
       /* scope */ js.UndefOr[js.Any], 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Fires the specified event with the passed parameters minus the event name plus the options object passed to addList
     * @param eventName String The name of the event to fire.
     * @param args Object... Variable number of parameters are passed to handlers.
     * @returns Boolean Returns false if any of the handlers return false.
     */
-  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.native
+  var fireEvent: js.UndefOr[js.Function2[/* eventName */ String, /* repeated */ js.Any, Boolean]] = js.undefined
   
   /** [Method] Returns the value of bubbleEvents
     * @returns String/String[]
     */
-  var getBubbleEvents: js.UndefOr[js.Function0[_]] = js.native
+  var getBubbleEvents: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of listeners
     * @returns Object
     */
-  var getListeners: js.UndefOr[js.Function0[_]] = js.native
+  var getListeners: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Checks to see if this object has any listeners for a specified event
     * @param eventName String The name of the event to check for
     * @returns Boolean True if the event is being listened for, else false
     */
-  var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[String], Boolean]] = js.native
+  var hasListener: js.UndefOr[js.Function1[/* eventName */ js.UndefOr[String], Boolean]] = js.undefined
   
   /** [Config Option] (Object) */
-  var listeners: js.UndefOr[js.Any] = js.native
+  var listeners: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Alias for addManagedListener
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -153,7 +153,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Alias for removeManagedListener
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -169,7 +169,7 @@ trait IObservable extends IIdentifiable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Alias for addListener
     * @param eventName String/String[]/Object The name of the event to listen for. May also be an object who's property names are event names.
@@ -187,7 +187,7 @@ trait IObservable extends IIdentifiable {
       /* order */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Alias for addAfterListener
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -203,7 +203,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Alias for addBeforeListener
     * @param eventName String/String[]/Object The name of the event to listen for.
@@ -219,7 +219,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Relays selected events from the specified Observable as if the events were fired by this
     * @param object Object The Observable whose events this object is to relay.
@@ -228,7 +228,7 @@ trait IObservable extends IIdentifiable {
     */
   var relayEvents: js.UndefOr[
     js.Function2[/* object */ js.UndefOr[js.Any], /* events */ js.UndefOr[js.Any], this.type]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes a before event handler
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -244,7 +244,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes a before event handler
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -260,7 +260,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Removes an event handler
     * @param eventName String/String[]/Object The type of event the handler was associated with.
@@ -278,7 +278,7 @@ trait IObservable extends IIdentifiable {
       /* order */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Adds listeners to any Observable object or Element which are automatically removed when this Component is destroyed
     * @param object Ext.mixin.Observable/HTMLElement The item to which to add a listener/listeners.
@@ -294,25 +294,25 @@ trait IObservable extends IIdentifiable {
       /* scope */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Resumes firing events see suspendEvents
     * @param discardQueuedEvents Boolean Pass as true to discard any queued events.
     */
-  var resumeEvents: js.UndefOr[js.Function1[/* discardQueuedEvents */ js.UndefOr[Boolean], Unit]] = js.native
+  var resumeEvents: js.UndefOr[js.Function1[/* discardQueuedEvents */ js.UndefOr[Boolean], Unit]] = js.undefined
   
   /** [Method] Sets the value of bubbleEvents
     * @param bubbleEvents String/String[] The new value.
     */
-  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], Unit]] = js.native
+  var setBubbleEvents: js.UndefOr[js.Function1[/* bubbleEvents */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of listeners
     * @param listeners Object The new value.
     */
-  var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[js.Any], Unit]] = js.native
+  var setListeners: js.UndefOr[js.Function1[/* listeners */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Suspends the firing of all events  */
-  var suspendEvents: js.UndefOr[js.Function0[Unit]] = js.native
+  var suspendEvents: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Method] Alias for removeListener
     * @param eventName String/String[]/Object The type of event the handler was associated with.
@@ -330,7 +330,7 @@ trait IObservable extends IIdentifiable {
       /* order */ js.UndefOr[String], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Alias for removeAfterListener
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -346,7 +346,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
   
   /** [Method] Alias for removeBeforeListener
     * @param eventName String/String[]/Object The name of the event the handler was associated with.
@@ -362,7 +362,7 @@ trait IObservable extends IIdentifiable {
       /* options */ js.UndefOr[js.Any], 
       Unit
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object IObservable {
   
@@ -433,7 +433,7 @@ object IObservable {
     
     @scala.inline
     def setFireAction(
-      value: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => _
+      value: (/* eventName */ js.UndefOr[String], /* args */ js.UndefOr[Array], /* fn */ js.UndefOr[js.Any], /* scope */ js.UndefOr[js.Any]) => js.Any
     ): Self = StObject.set(x, "fireAction", js.Any.fromFunction4(value))
     
     @scala.inline
@@ -446,13 +446,13 @@ object IObservable {
     def setFireEventUndefined: Self = StObject.set(x, "fireEvent", js.undefined)
     
     @scala.inline
-    def setGetBubbleEvents(value: () => _): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
+    def setGetBubbleEvents(value: () => js.Any): Self = StObject.set(x, "getBubbleEvents", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetBubbleEventsUndefined: Self = StObject.set(x, "getBubbleEvents", js.undefined)
     
     @scala.inline
-    def setGetListeners(value: () => _): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
+    def setGetListeners(value: () => js.Any): Self = StObject.set(x, "getListeners", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetListenersUndefined: Self = StObject.set(x, "getListeners", js.undefined)

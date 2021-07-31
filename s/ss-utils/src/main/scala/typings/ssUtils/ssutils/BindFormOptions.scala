@@ -3,21 +3,19 @@ package typings.ssUtils.ssutils
 import typings.std.HTMLFormElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BindFormOptions extends StObject {
   
-  var complete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var complete: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.native
+  var error: js.UndefOr[js.Function1[/* repeated */ js.Any, Unit]] = js.undefined
   
-  var onSubmitDisable: js.UndefOr[String] = js.native
+  var onSubmitDisable: js.UndefOr[String] = js.undefined
   
-  var validate: js.UndefOr[js.Function1[/* form */ HTMLFormElement, Boolean]] = js.native
+  var validate: js.UndefOr[js.Function1[/* form */ HTMLFormElement, Boolean]] = js.undefined
   
-  var validation: js.UndefOr[ValidationOptional] = js.native
+  var validation: js.UndefOr[ValidationOptional] = js.undefined
 }
 object BindFormOptions {
   

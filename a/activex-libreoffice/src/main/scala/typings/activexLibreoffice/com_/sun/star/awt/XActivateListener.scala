@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see XFocusListener
   * @see XTopWindowListener
   */
-@js.native
-trait XActivateListener extends XEventListener {
+trait XActivateListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when a window is activated.
@@ -22,7 +22,7 @@ trait XActivateListener extends XEventListener {
     * A window is activated if a child or itself got the focus.
     * @see XFocusListener.focusGained
     */
-  def windowActivated(e: EventObject): Unit = js.native
+  def windowActivated(e: EventObject): Unit
   
   /**
     * is invoked when a window is deactivated.
@@ -30,7 +30,7 @@ trait XActivateListener extends XEventListener {
     * A window is deactivated if a child or itself lost the focus.
     * @see XFocusListener.focusLost
     */
-  def windowDeactivated(e: EventObject): Unit = js.native
+  def windowDeactivated(e: EventObject): Unit
 }
 object XActivateListener {
   

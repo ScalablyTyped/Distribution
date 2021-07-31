@@ -2,13 +2,11 @@ package typings.chromeApps.chrome.runtime
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSONSchemaBasicType extends StObject {
   
-  var `type`: JSONBasicTypes = js.native
+  var `type`: JSONBasicTypes
 }
 object JSONSchemaBasicType {
   

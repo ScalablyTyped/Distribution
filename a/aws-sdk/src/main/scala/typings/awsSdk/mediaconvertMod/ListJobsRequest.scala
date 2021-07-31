@@ -2,36 +2,34 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListJobsRequest extends StObject {
   
   /**
     * Optional. Number of jobs, up to twenty, that will be returned at one time.
     */
-  var MaxResults: js.UndefOr[integerMin1Max20] = js.native
+  var MaxResults: js.UndefOr[integerMin1Max20] = js.undefined
   
   /**
     * Optional. Use this string, provided with the response to a previous request, to request the next batch of jobs.
     */
-  var NextToken: js.UndefOr[string] = js.native
+  var NextToken: js.UndefOr[string] = js.undefined
   
   /**
     * Optional. When you request lists of resources, you can specify whether they are sorted in ASCENDING or DESCENDING order. Default varies by resource.
     */
-  var Order: js.UndefOr[typings.awsSdk.mediaconvertMod.Order] = js.native
+  var Order: js.UndefOr[typings.awsSdk.mediaconvertMod.Order] = js.undefined
   
   /**
     * Optional. Provide a queue name to get back only jobs from that queue.
     */
-  var Queue: js.UndefOr[string] = js.native
+  var Queue: js.UndefOr[string] = js.undefined
   
   /**
     * Optional. A job's status can be SUBMITTED, PROGRESSING, COMPLETE, CANCELED, or ERROR.
     */
-  var Status: js.UndefOr[JobStatus] = js.native
+  var Status: js.UndefOr[JobStatus] = js.undefined
 }
 object ListJobsRequest {
   

@@ -2,19 +2,17 @@ package typings.twit.mod.Twitter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UrlEntity extends StObject {
   
-  var display_url: String = js.native
+  var display_url: String
   
-  var expanded_url: String = js.native
+  var expanded_url: String
   
-  var indices: js.Tuple2[Double, Double] = js.native
+  var indices: js.Tuple2[Double, Double]
   
-  var url: String = js.native
+  var url: String
 }
 object UrlEntity {
   

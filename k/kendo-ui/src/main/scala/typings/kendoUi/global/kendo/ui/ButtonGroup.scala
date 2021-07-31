@@ -4,13 +4,13 @@ import typings.kendoUi.kendo.ui.ButtonGroupOptions
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSGlobal("kendo.ui.ButtonGroup")
 @js.native
 class ButtonGroup protected ()
-  extends typings.kendoUi.kendo.ui.ButtonGroup {
+  extends StObject
+     with typings.kendoUi.kendo.ui.ButtonGroup {
   def this(element: Element) = this()
   def this(element: Element, options: ButtonGroupOptions) = this()
 }
@@ -21,9 +21,8 @@ object ButtonGroup {
   val ^ : js.Any = js.native
   
   /* static member */
-  @JSGlobal("kendo.ui.ButtonGroup.extend")
-  @js.native
-  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ButtonGroup = js.native
+  @scala.inline
+  def extend(proto: js.Object): typings.kendoUi.kendo.ui.ButtonGroup = ^.asInstanceOf[js.Dynamic].applyDynamic("extend")(proto.asInstanceOf[js.Any]).asInstanceOf[typings.kendoUi.kendo.ui.ButtonGroup]
   
   /* static member */
   @JSGlobal("kendo.ui.ButtonGroup.fn")

@@ -2,14 +2,12 @@ package typings.sawtoothSdk.protobufMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusNotifyPeerConnected extends StObject {
   
   /** ConsensusNotifyPeerConnected peerInfo */
-  var peerInfo: js.UndefOr[IConsensusPeerInfo | Null] = js.native
+  var peerInfo: js.UndefOr[IConsensusPeerInfo | Null] = js.undefined
 }
 object IConsensusNotifyPeerConnected {
   

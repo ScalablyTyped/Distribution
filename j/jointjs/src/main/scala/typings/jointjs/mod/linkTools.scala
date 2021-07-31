@@ -13,7 +13,6 @@ import typings.jointjs.mod.linkTools.Anchor.Options
 import typings.std.SVGElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object linkTools {
@@ -27,27 +26,27 @@ object linkTools {
   }
   object Anchor {
     
-    @js.native
     trait Options
-      extends typings.jointjs.mod.dia.ToolView.Options {
+      extends StObject
+         with typings.jointjs.mod.dia.ToolView.Options {
       
-      var anchor: js.UndefOr[AnchorCallback[AnchorJSON]] = js.native
+      var anchor: js.UndefOr[AnchorCallback[AnchorJSON]] = js.undefined
       
-      var areaPadding: js.UndefOr[Double] = js.native
+      var areaPadding: js.UndefOr[Double] = js.undefined
       
-      var customAnchorAttributes: js.UndefOr[NativeSVGAttributes] = js.native
+      var customAnchorAttributes: js.UndefOr[NativeSVGAttributes] = js.undefined
       
-      var defaultAnchorAttributes: js.UndefOr[NativeSVGAttributes] = js.native
+      var defaultAnchorAttributes: js.UndefOr[NativeSVGAttributes] = js.undefined
       
-      var redundancyRemoval: js.UndefOr[Boolean] = js.native
+      var redundancyRemoval: js.UndefOr[Boolean] = js.undefined
       
-      var resetAnchor: js.UndefOr[Boolean | AnchorJSON] = js.native
+      var resetAnchor: js.UndefOr[Boolean | AnchorJSON] = js.undefined
       
-      var restrictArea: js.UndefOr[Boolean] = js.native
+      var restrictArea: js.UndefOr[Boolean] = js.undefined
       
-      var snap: js.UndefOr[AnchorCallback[Point]] = js.native
+      var snap: js.UndefOr[AnchorCallback[Point]] = js.undefined
       
-      var snapRadius: js.UndefOr[Double] = js.native
+      var snapRadius: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -144,13 +143,13 @@ object linkTools {
   }
   object Boundary {
     
-    @js.native
     trait Options
-      extends typings.jointjs.mod.dia.ToolView.Options {
+      extends StObject
+         with typings.jointjs.mod.dia.ToolView.Options {
       
-      var padding: js.UndefOr[Double | Sides] = js.native
+      var padding: js.UndefOr[Double | Sides] = js.undefined
       
-      var useModelGeometry: js.UndefOr[Boolean] = js.native
+      var useModelGeometry: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -189,19 +188,19 @@ object linkTools {
     
     type ActionCallback = js.Function2[/* evt */ Event, /* view */ LinkView, Unit]
     
-    @js.native
     trait Options
-      extends typings.jointjs.mod.dia.ToolView.Options {
+      extends StObject
+         with typings.jointjs.mod.dia.ToolView.Options {
       
-      var action: js.UndefOr[ActionCallback] = js.native
+      var action: js.UndefOr[ActionCallback] = js.undefined
       
-      var distance: js.UndefOr[Double | String] = js.native
+      var distance: js.UndefOr[Double | String] = js.undefined
       
-      var markup: js.UndefOr[MarkupJSON] = js.native
+      var markup: js.UndefOr[MarkupJSON] = js.undefined
       
-      var offset: js.UndefOr[Double] = js.native
+      var offset: js.UndefOr[Double] = js.undefined
       
-      var rotate: js.UndefOr[Boolean] = js.native
+      var rotate: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -260,23 +259,23 @@ object linkTools {
   }
   object Segments {
     
-    @js.native
     trait Options
-      extends typings.jointjs.mod.dia.ToolView.Options {
+      extends StObject
+         with typings.jointjs.mod.dia.ToolView.Options {
       
-      var anchor: js.UndefOr[AnchorCallback[AnchorJSON]] = js.native
+      var anchor: js.UndefOr[AnchorCallback[AnchorJSON]] = js.undefined
       
-      var handleClass: js.UndefOr[js.Any] = js.native
+      var handleClass: js.UndefOr[js.Any] = js.undefined
       
-      var redundancyRemoval: js.UndefOr[Boolean] = js.native
+      var redundancyRemoval: js.UndefOr[Boolean] = js.undefined
       
-      var segmentLengthThreshold: js.UndefOr[Double] = js.native
+      var segmentLengthThreshold: js.UndefOr[Double] = js.undefined
       
-      var snapHandle: js.UndefOr[Boolean] = js.native
+      var snapHandle: js.UndefOr[Boolean] = js.undefined
       
-      var snapRadius: js.UndefOr[Double] = js.native
+      var snapRadius: js.UndefOr[Double] = js.undefined
       
-      var stopPropagation: js.UndefOr[Boolean] = js.native
+      var stopPropagation: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -367,19 +366,19 @@ object linkTools {
   }
   object Vertices {
     
-    @js.native
     trait Options
-      extends typings.jointjs.mod.dia.ToolView.Options {
+      extends StObject
+         with typings.jointjs.mod.dia.ToolView.Options {
       
-      var handleClass: js.UndefOr[js.Any] = js.native
+      var handleClass: js.UndefOr[js.Any] = js.undefined
       
-      var redundancyRemoval: js.UndefOr[Boolean] = js.native
+      var redundancyRemoval: js.UndefOr[Boolean] = js.undefined
       
-      var snapRadius: js.UndefOr[Double] = js.native
+      var snapRadius: js.UndefOr[Double] = js.undefined
       
-      var stopPropagation: js.UndefOr[Boolean] = js.native
+      var stopPropagation: js.UndefOr[Boolean] = js.undefined
       
-      var vertexAdding: js.UndefOr[Boolean] = js.native
+      var vertexAdding: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       

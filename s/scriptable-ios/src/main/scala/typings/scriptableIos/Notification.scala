@@ -14,7 +14,6 @@ import typings.scriptableIos.scriptableIosStrings.popup
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -226,12 +225,11 @@ trait Notification extends StObject {
 }
 object Notification {
   
-  @js.native
   trait Actions extends StObject {
     
-    var title: String = js.native
+    var title: String
     
-    var url: String = js.native
+    var url: String
   }
   object Actions {
     

@@ -2,21 +2,19 @@ package typings.zetapushJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbstractHandshake extends StObject {
   
-  var authType: String = js.native
+  var authType: String
   
-  var authVersion: String = js.native
+  var authVersion: String
   
-  var deploymentId: String = js.native
+  var deploymentId: String
   
-  def getHandshakeFields(client: Client): HandshakeFields = js.native
+  def getHandshakeFields(client: Client): HandshakeFields
   
-  var sandboxId: String = js.native
+  var sandboxId: String
 }
 object AbstractHandshake {
   

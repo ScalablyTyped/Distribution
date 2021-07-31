@@ -2,17 +2,15 @@ package typings.baidumapWebSdk.BMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragAndZoomToolOptions extends StObject {
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var followText: js.UndefOr[String] = js.native
+  var followText: js.UndefOr[String] = js.undefined
   
-  var zoomType: js.UndefOr[ZoomType] = js.native
+  var zoomType: js.UndefOr[ZoomType] = js.undefined
 }
 object DragAndZoomToolOptions {
   

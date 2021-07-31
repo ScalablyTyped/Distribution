@@ -10,9 +10,9 @@ Get description property from HTML markup
 | ------------------ | :-------------: |
 | Full name          | metascraper-description |
 | Keywords           | description, metascraper |
-| # releases         | 85 |
-| # dependents       | 19 |
-| # downloads        | 570614 |
+| # releases         | 105 |
+| # dependents       | 21 |
+| # downloads        | 835228 |
 | # stars            | 0 |
 
 ## Links

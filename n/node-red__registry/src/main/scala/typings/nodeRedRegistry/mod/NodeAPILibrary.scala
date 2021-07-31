@@ -2,13 +2,11 @@ package typings.nodeRedRegistry.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeAPILibrary extends StObject {
   
-  def register(`type`: String): Unit = js.native
+  def register(`type`: String): Unit
 }
 object NodeAPILibrary {
   

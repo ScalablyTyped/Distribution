@@ -2,14 +2,12 @@ package typings.semanticUiForm.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-form.SemanticUI.Form.TextSettings._Impl, 'unspecifiedField'> */
-@js.native
 trait PickImplunspecifiedField extends StObject {
   
-  var unspecifiedField: String = js.native
+  var unspecifiedField: String
 }
 object PickImplunspecifiedField {
   

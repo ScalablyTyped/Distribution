@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MultiConditionalBranch extends StObject {
   
   /**
     * The condition to evaluate for the activity path.
     */
-  var Condition: js.UndefOr[SimpleCondition] = js.native
+  var Condition: js.UndefOr[SimpleCondition] = js.undefined
   
   /**
     * The unique identifier for the next activity to perform, after completing the activity for the path.
     */
-  var NextActivity: js.UndefOr[string] = js.native
+  var NextActivity: js.UndefOr[string] = js.undefined
 }
 object MultiConditionalBranch {
   

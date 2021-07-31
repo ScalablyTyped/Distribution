@@ -6,29 +6,30 @@ import typings.reapop.themesTypesMod.Theme
 import typings.reapop.typesMod.Notification
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object notificationsSystemMod {
   
-  @JSImport("reapop/dist/components/NotificationsSystem", JSImport.Default)
+  @JSImport("reapop/dist/components/NotificationsSystem", JSImport.Namespace)
   @js.native
-  def default(props: Props): Element = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(props: Props): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(props.asInstanceOf[js.Any]).asInstanceOf[Element]
   
   type DismissNotification = js.Function1[/* id */ String, Unit]
   
-  @js.native
   trait Props extends StObject {
     
-    var components: js.UndefOr[ComponentContextType] = js.native
+    var components: js.UndefOr[ComponentContextType] = js.undefined
     
-    var dismissNotification: DismissNotification = js.native
+    var dismissNotification: DismissNotification
     
-    var notifications: js.Array[Notification] = js.native
+    var notifications: js.Array[Notification]
     
-    var smallScreenBreakpoint: js.UndefOr[Double] = js.native
+    var smallScreenBreakpoint: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[Theme] = js.native
+    var theme: js.UndefOr[Theme] = js.undefined
   }
   object Props {
     

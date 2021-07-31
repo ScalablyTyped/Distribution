@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.sdbcx.XDataDescriptorFactory
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,27 +21,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * It can be used, if there is a need to execute SQL statement more than once or if you want to format the query result fields different from the
   * underlying table definitions.
   */
-@js.native
 trait QueryDescriptor
-  extends Descriptor
+  extends StObject
+     with Descriptor
      with XDataDescriptorFactory
      with DataSettings
      with XColumnsSupplier {
   
   /** is the command of the query, this is typically a select statement. */
-  var Command: String = js.native
+  var Command: String
   
   /** should we use escape processing for the query. */
-  var EscapeProcessing: Boolean = js.native
+  var EscapeProcessing: Boolean
   
   /** is the name of the update table catalog. */
-  var UpdateCatalogName: String = js.native
+  var UpdateCatalogName: String
   
   /** is the name of the update table schema. */
-  var UpdateSchemaName: String = js.native
+  var UpdateSchemaName: String
   
   /** is the name of the table which should be updated. This is usually used for queries which relate on more than one table. */
-  var UpdateTableName: String = js.native
+  var UpdateTableName: String
 }
 object QueryDescriptor {
   

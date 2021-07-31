@@ -3,7 +3,6 @@ package typings.tensorflowModelsUniversalSentenceEncoder
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object trieMod {
@@ -29,16 +28,15 @@ object trieMod {
   
   type OutputNode = js.Tuple3[js.Array[String], Double, Double]
   
-  @js.native
   trait TrieNode extends StObject {
     
-    var children: StringDictionary[TrieNode] = js.native
+    var children: StringDictionary[TrieNode]
     
-    var end: Boolean = js.native
+    var end: Boolean
     
-    var parent: TrieNode = js.native
+    var parent: TrieNode
     
-    var word: OutputNode = js.native
+    var word: OutputNode
   }
   object TrieNode {
     

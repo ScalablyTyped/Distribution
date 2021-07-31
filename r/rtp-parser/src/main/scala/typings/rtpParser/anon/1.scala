@@ -3,19 +3,17 @@ package typings.rtpParser.anon
 import typings.rtpParser.rtpParserStrings.unassigned
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var name: unassigned = js.native
+  var name: unassigned
 }
 object `1` {
   
   @scala.inline
-  def apply(name: unassigned): `1` = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+  def apply(): `1` = {
+    val __obj = js.Dynamic.literal(name = "unassigned")
     __obj.asInstanceOf[`1`]
   }
   

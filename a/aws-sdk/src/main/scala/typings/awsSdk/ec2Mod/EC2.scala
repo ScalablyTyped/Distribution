@@ -57,7 +57,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -618,7 +617,7 @@ trait EC2 extends Service {
   ): Request[CancelSpotInstanceRequestsResult, AWSError] = js.native
   
   @JSName("config")
-  var config_EC2: ConfigBase with ClientConfiguration = js.native
+  var config_EC2: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Determines whether a product code is associated with an instance. This action can only be used by the owner of the product code. It is useful when a product code owner must verify whether another user's instance is eligible for support.

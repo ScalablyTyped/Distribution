@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/alpha", "compute_alpha.Resource$Addresses")
@@ -32,7 +31,7 @@ class ResourceAddresses protected () extends StObject {
     */
   def aggregatedList(): GaxiosPromise[SchemaAddressAggregatedList] = js.native
   def aggregatedList(callback: BodyResponseCallback[SchemaAddressAggregatedList]): Unit = js.native
-  def aggregatedList(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddressAggregatedList] = js.native
+  def aggregatedList(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAddressAggregatedList] = js.native
   def aggregatedList(params: ParamsResourceAddressesAggregatedlist): GaxiosPromise[SchemaAddressAggregatedList] = js.native
   def aggregatedList(
     params: ParamsResourceAddressesAggregatedlist,
@@ -69,7 +68,7 @@ class ResourceAddresses protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAddressesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceAddressesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -100,7 +99,7 @@ class ResourceAddresses protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAddress] = js.native
   def get(callback: BodyResponseCallback[SchemaAddress]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddress] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAddress] = js.native
   def get(params: ParamsResourceAddressesGet): GaxiosPromise[SchemaAddress] = js.native
   def get(params: ParamsResourceAddressesGet, callback: BodyResponseCallback[SchemaAddress]): Unit = js.native
   def get(
@@ -133,7 +132,7 @@ class ResourceAddresses protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceAddressesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceAddressesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -168,7 +167,7 @@ class ResourceAddresses protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaAddressList] = js.native
   def list(callback: BodyResponseCallback[SchemaAddressList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAddressList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAddressList] = js.native
   def list(params: ParamsResourceAddressesList): GaxiosPromise[SchemaAddressList] = js.native
   def list(params: ParamsResourceAddressesList, callback: BodyResponseCallback[SchemaAddressList]): Unit = js.native
   def list(
@@ -202,7 +201,7 @@ class ResourceAddresses protected () extends StObject {
     */
   def setLabels(): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def setLabels(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def setLabels(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceAddressesSetlabels): GaxiosPromise[SchemaOperation] = js.native
   def setLabels(params: ParamsResourceAddressesSetlabels, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def setLabels(
@@ -234,7 +233,7 @@ class ResourceAddresses protected () extends StObject {
     */
   def testIamPermissions(): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(callback: BodyResponseCallback[SchemaTestPermissionsResponse]): Unit = js.native
-  def testIamPermissions(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
+  def testIamPermissions(params: Unit, options: MethodOptions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(params: ParamsResourceAddressesTestiampermissions): GaxiosPromise[SchemaTestPermissionsResponse] = js.native
   def testIamPermissions(
     params: ParamsResourceAddressesTestiampermissions,

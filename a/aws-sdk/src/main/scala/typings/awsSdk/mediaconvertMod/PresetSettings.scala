@@ -2,31 +2,29 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PresetSettings extends StObject {
   
   /**
     * (AudioDescriptions) contains groups of audio encoding settings organized by audio codec. Include one instance of (AudioDescriptions) per output. (AudioDescriptions) can contain multiple groups of encoding settings.
     */
-  var AudioDescriptions: js.UndefOr[listOfAudioDescription] = js.native
+  var AudioDescriptions: js.UndefOr[listOfAudioDescription] = js.undefined
   
   /**
     * Caption settings for this preset. There can be multiple caption settings in a single output.
     */
-  var CaptionDescriptions: js.UndefOr[listOfCaptionDescriptionPreset] = js.native
+  var CaptionDescriptions: js.UndefOr[listOfCaptionDescriptionPreset] = js.undefined
   
   /**
     * Container specific settings.
     */
-  var ContainerSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ContainerSettings] = js.native
+  var ContainerSettings: js.UndefOr[typings.awsSdk.mediaconvertMod.ContainerSettings] = js.undefined
   
   /**
     * (VideoDescription) contains a group of video encoding settings. The specific video settings depend on the video codec that you choose when you specify a value for Video codec (codec). Include one instance of (VideoDescription) per output.
     */
-  var VideoDescription: js.UndefOr[typings.awsSdk.mediaconvertMod.VideoDescription] = js.native
+  var VideoDescription: js.UndefOr[typings.awsSdk.mediaconvertMod.VideoDescription] = js.undefined
 }
 object PresetSettings {
   

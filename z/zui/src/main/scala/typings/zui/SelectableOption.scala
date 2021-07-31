@@ -2,31 +2,29 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SelectableOption extends StObject {
   
-  var clickBehavior: js.UndefOr[String] = js.native
+  var clickBehavior: js.UndefOr[String] = js.undefined
   
-  var finish: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Unit]] = js.native
+  var finish: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Unit]] = js.undefined
   
-  var ignoreVal: js.UndefOr[Double] = js.native
+  var ignoreVal: js.UndefOr[Double] = js.undefined
   
-  var mouseButton: js.UndefOr[String] = js.native
+  var mouseButton: js.UndefOr[String] = js.undefined
   
-  var rangeStyle: js.UndefOr[String | js.Object] = js.native
+  var rangeStyle: js.UndefOr[String | js.Object] = js.undefined
   
-  var select: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Unit]] = js.native
+  var select: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Unit]] = js.undefined
   
-  var selector: js.UndefOr[String] = js.native
+  var selector: js.UndefOr[String] = js.undefined
   
-  var start: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Boolean]] = js.native
+  var start: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Boolean]] = js.undefined
   
-  var trigger: js.UndefOr[String] = js.native
+  var trigger: js.UndefOr[String] = js.undefined
   
-  var unselect: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Unit]] = js.native
+  var unselect: js.UndefOr[js.Function1[/* e */ js.UndefOr[SelectableEvent], Unit]] = js.undefined
 }
 object SelectableOption {
   

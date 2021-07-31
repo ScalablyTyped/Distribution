@@ -2,17 +2,15 @@ package typings.sdpTransform.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait App extends StObject {
   
-  var app: String = js.native
+  var app: String
   
-  var maxMessageSize: Double = js.native
+  var maxMessageSize: Double
   
-  var sctpmapNumber: Double | String = js.native
+  var sctpmapNumber: Double | String
 }
 object App {
   

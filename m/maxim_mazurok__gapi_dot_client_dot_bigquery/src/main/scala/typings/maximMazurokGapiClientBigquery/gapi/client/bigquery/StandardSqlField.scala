@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StandardSqlField extends StObject {
   
   /** Optional. The name of this field. Can be absent for struct fields. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Optional. The type of this parameter. Absent if not explicitly specified (e.g., CREATE FUNCTION statement can omit the return type; in this case the output parameter does not have
     * this "type" field).
     */
-  var `type`: js.UndefOr[StandardSqlDataType] = js.native
+  var `type`: js.UndefOr[StandardSqlDataType] = js.undefined
 }
 object StandardSqlField {
   

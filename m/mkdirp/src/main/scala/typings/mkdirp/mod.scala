@@ -14,7 +14,6 @@ import typings.node.fsMod.StatOptions
 import typings.node.fsMod.Stats
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -39,75 +38,64 @@ object mod {
     * `opts.stat` or `opts.mkdir`, or providing an fs option that only overrides one
     * of these.
     */
+  @scala.inline
+  def apply(dir: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def apply(dir: String, opts: Mode): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def apply(dir: String, opts: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].apply(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  
   @JSImport("mkdirp", JSImport.Namespace)
   @js.native
-  def apply(dir: String): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("mkdirp", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, opts: Mode): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("mkdirp", JSImport.Namespace)
-  @js.native
-  def apply(dir: String, opts: Options): js.Promise[js.UndefOr[String]] = js.native
+  val ^ : js.Any = js.native
   
   /**
     * Use the manual implementation (not the native one). This is the default
     * when the native implementation is not available or the stat/mkdir
     * implementation is overridden.
     */
-  @JSImport("mkdirp", "manual")
-  @js.native
-  def manual(dir: String): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("mkdirp", "manual")
-  @js.native
-  def manual(dir: String, opts: Mode): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("mkdirp", "manual")
-  @js.native
-  def manual(dir: String, opts: Options): js.Promise[js.UndefOr[String]] = js.native
+  @scala.inline
+  def manual(dir: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("manual")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def manual(dir: String, opts: Mode): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("manual")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def manual(dir: String, opts: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("manual")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
   /**
     * Use the manual implementation (not the native one). This is the default
     * when the native implementation is not available or the stat/mkdir
     * implementation is overridden.
     */
-  @JSImport("mkdirp", "manualSync")
-  @js.native
-  def manualSync(dir: String): js.UndefOr[String] = js.native
-  @JSImport("mkdirp", "manualSync")
-  @js.native
-  def manualSync(dir: String, opts: Mode): js.UndefOr[String] = js.native
-  @JSImport("mkdirp", "manualSync")
-  @js.native
-  def manualSync(dir: String, opts: OptionsSync): js.UndefOr[String] = js.native
+  @scala.inline
+  def manualSync(dir: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("manualSync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def manualSync(dir: String, opts: Mode): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("manualSync")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def manualSync(dir: String, opts: OptionsSync): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("manualSync")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   /**
     * Use the native implementation (not the manual one). This is the default
     * when the native implementation is available and stat/mkdir are not
     * overridden.
     */
-  @JSImport("mkdirp", "native")
-  @js.native
-  def native(dir: String): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("mkdirp", "native")
-  @js.native
-  def native(dir: String, opts: Mode): js.Promise[js.UndefOr[String]] = js.native
-  @JSImport("mkdirp", "native")
-  @js.native
-  def native(dir: String, opts: Options): js.Promise[js.UndefOr[String]] = js.native
+  @scala.inline
+  def native(dir: String): js.Promise[js.UndefOr[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("native")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def native(dir: String, opts: Mode): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
+  @scala.inline
+  def native(dir: String, opts: Options): js.Promise[js.UndefOr[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("native")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.UndefOr[String]]]
   
   /**
     * Use the native implementation (not the manual one). This is the default
     * when the native implementation is available and stat/mkdir are not
     * overridden.
     */
-  @JSImport("mkdirp", "nativeSync")
-  @js.native
-  def nativeSync(dir: String): js.UndefOr[String] = js.native
-  @JSImport("mkdirp", "nativeSync")
-  @js.native
-  def nativeSync(dir: String, opts: Mode): js.UndefOr[String] = js.native
-  @JSImport("mkdirp", "nativeSync")
-  @js.native
-  def nativeSync(dir: String, opts: OptionsSync): js.UndefOr[String] = js.native
+  @scala.inline
+  def nativeSync(dir: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("nativeSync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def nativeSync(dir: String, opts: Mode): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeSync")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def nativeSync(dir: String, opts: OptionsSync): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("nativeSync")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
   /**
     * Synchronously create a new directory and any necessary subdirectories at
@@ -121,22 +109,18 @@ object mod {
     * or providing an fs option that only overrides one of these.
     * @returns Returns the first directory that had to be created, or undefined if everything already exists.
     */
-  @JSImport("mkdirp", "sync")
-  @js.native
-  def sync(dir: String): js.UndefOr[String] = js.native
-  @JSImport("mkdirp", "sync")
-  @js.native
-  def sync(dir: String, opts: Mode): js.UndefOr[String] = js.native
-  @JSImport("mkdirp", "sync")
-  @js.native
-  def sync(dir: String, opts: OptionsSync): js.UndefOr[String] = js.native
+  @scala.inline
+  def sync(dir: String): js.UndefOr[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def sync(dir: String, opts: Mode): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
+  @scala.inline
+  def sync(dir: String, opts: OptionsSync): js.UndefOr[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(dir.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[String]]
   
-  @js.native
   trait FsImplementation extends StObject {
     
-    var mkdir: Typeofmkdir = js.native
+    var mkdir: Typeofmkdir
     
-    var stat: Typeofstat = js.native
+    var stat: Typeofstat
   }
   object FsImplementation {
     
@@ -157,36 +141,52 @@ object mod {
     }
   }
   
-  @js.native
   trait FsImplementationSync extends StObject {
     
-    def mkdirSync(path: PathLike): js.UndefOr[String] = js.native
-    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String = js.native
-    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit = js.native
-    def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String] = js.native
-    def mkdirSync(path: PathLike, options: typings.node.fsMod.Mode): js.UndefOr[String] = js.native
+    def mkdirSync(path: PathLike): js.UndefOr[String]
+    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecur): String
+    def mkdirSync(path: PathLike, options: MakeDirectoryOptionsrecurMode): Unit
+    def mkdirSync(path: PathLike, options: MakeDirectoryOptions): js.UndefOr[String]
+    def mkdirSync(path: PathLike, options: typings.node.fsMod.Mode): js.UndefOr[String]
     @JSName("mkdirSync")
-    var mkdirSync_Original: FnCall = js.native
+    var mkdirSync_Original: FnCall
     @JSName("mkdirSync")
-    def mkdirSync_Unit(path: PathLike): Unit = js.native
+    def mkdirSync_Unit(path: PathLike): Unit
     @JSName("mkdirSync")
-    def mkdirSync_Unit(path: PathLike, options: typings.node.fsMod.Mode): Unit = js.native
+    def mkdirSync_Unit(path: PathLike, options: typings.node.fsMod.Mode): Unit
     
-    def statSync(path: PathLike): Stats = js.native
-    def statSync(path: PathLike, options: BigIntOptions): BigIntStats = js.native
-    def statSync(path: PathLike, options: StatOptions): Stats | BigIntStats = js.native
+    def statSync(path: PathLike): Stats
+    def statSync(path: PathLike, options: BigIntOptions): BigIntStats
+    def statSync(path: PathLike, options: StatOptions): Stats | BigIntStats
     @JSName("statSync")
-    var statSync_Original: FnCallPathOptions = js.native
+    var statSync_Original: FnCallPathOptions
+  }
+  object FsImplementationSync {
+    
+    @scala.inline
+    def apply(mkdirSync: FnCall, statSync: FnCallPathOptions): FsImplementationSync = {
+      val __obj = js.Dynamic.literal(mkdirSync = mkdirSync.asInstanceOf[js.Any], statSync = statSync.asInstanceOf[js.Any])
+      __obj.asInstanceOf[FsImplementationSync]
+    }
+    
+    @scala.inline
+    implicit class FsImplementationSyncMutableBuilder[Self <: FsImplementationSync] (val x: Self) extends AnyVal {
+      
+      @scala.inline
+      def setMkdirSync(value: FnCall): Self = StObject.set(x, "mkdirSync", value.asInstanceOf[js.Any])
+      
+      @scala.inline
+      def setStatSync(value: FnCallPathOptions): Self = StObject.set(x, "statSync", value.asInstanceOf[js.Any])
+    }
   }
   
   type Mode = js.UndefOr[Double | String]
   
-  @js.native
   trait Options extends StObject {
     
-    var fs: js.UndefOr[FsImplementation] = js.native
+    var fs: js.UndefOr[FsImplementation] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
   }
   object Options {
     
@@ -213,12 +213,11 @@ object mod {
     }
   }
   
-  @js.native
   trait OptionsSync extends StObject {
     
-    var fs: js.UndefOr[FsImplementationSync] = js.native
+    var fs: js.UndefOr[FsImplementationSync] = js.undefined
     
-    var mode: js.UndefOr[Mode] = js.native
+    var mode: js.UndefOr[Mode] = js.undefined
   }
   object OptionsSync {
     

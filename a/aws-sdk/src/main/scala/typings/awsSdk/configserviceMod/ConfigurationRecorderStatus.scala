@@ -2,51 +2,49 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationRecorderStatus extends StObject {
   
   /**
     * The error code indicating that the recording failed.
     */
-  var lastErrorCode: js.UndefOr[String] = js.native
+  var lastErrorCode: js.UndefOr[String] = js.undefined
   
   /**
     * The message indicating that the recording failed due to an error.
     */
-  var lastErrorMessage: js.UndefOr[String] = js.native
+  var lastErrorMessage: js.UndefOr[String] = js.undefined
   
   /**
     * The time the recorder was last started.
     */
-  var lastStartTime: js.UndefOr[Date] = js.native
+  var lastStartTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The last (previous) status of the recorder.
     */
-  var lastStatus: js.UndefOr[RecorderStatus] = js.native
+  var lastStatus: js.UndefOr[RecorderStatus] = js.undefined
   
   /**
     * The time when the status was last changed.
     */
-  var lastStatusChangeTime: js.UndefOr[Date] = js.native
+  var lastStatusChangeTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The time the recorder was last stopped.
     */
-  var lastStopTime: js.UndefOr[Date] = js.native
+  var lastStopTime: js.UndefOr[Date] = js.undefined
   
   /**
     * The name of the configuration recorder.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies whether or not the recorder is currently recording.
     */
-  var recording: js.UndefOr[Boolean] = js.native
+  var recording: js.UndefOr[Boolean] = js.undefined
 }
 object ConfigurationRecorderStatus {
   

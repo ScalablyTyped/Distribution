@@ -2,17 +2,16 @@ package typings.reactSortableTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlatDataItem
-  extends TreeNode
+  extends StObject
+     with TreeNode
      with TreePath {
   
-  var lowerSiblingCounts: js.Array[Double] = js.native
+  var lowerSiblingCounts: js.Array[Double]
   
-  var parentNode: TreeItem = js.native
+  var parentNode: TreeItem
 }
 object FlatDataItem {
   

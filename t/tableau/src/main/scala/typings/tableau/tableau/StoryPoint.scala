@@ -2,29 +2,27 @@ package typings.tableau.tableau
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StoryPoint extends StObject {
   
   /** Gets the content of the textual description for this story point. */
-  def getCaption(): String = js.native
+  def getCaption(): String
   
   /** Gets the sheet that this story point contains. This will be null if the story point does not have a contained sheet. */
-  def getContainedSheet(): Sheet = js.native
+  def getContainedSheet(): Sheet
   
   /** Gets the zero-based index of this story point within the parent Story sheet. */
-  def getIndex(): Double = js.native
+  def getIndex(): Double
   
   /** Gets a value indicating whether the story point is the currently active point in the story. */
-  def getIsActive(): Boolean = js.native
+  def getIsActive(): Boolean
   
   /** Gets a value indicating whether the story point is updated, meaning that there are no changes from the last time the story point was “captured”. */
-  def getIsUpdated(): Boolean = js.native
+  def getIsUpdated(): Boolean
   
   /** Gets the Story object that contains the story point. */
-  def getParentStory(): Story = js.native
+  def getParentStory(): Story
 }
 object StoryPoint {
   

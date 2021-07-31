@@ -3,25 +3,25 @@ package typings.remarkable.libMod
 import typings.remarkable.remarkableStrings.htmltag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.remarkable.libMod._Token because Already inherited */ @js.native
-trait HtmlTagToken extends ContentToken {
+- typings.remarkable.libMod._Token because Already inherited */ trait HtmlTagToken
+  extends StObject
+     with ContentToken {
   
   @JSName("content")
-  var content_HtmlTagToken: String = js.native
+  var content_HtmlTagToken: String
   
   @JSName("type")
-  var type_HtmlTagToken: htmltag = js.native
+  var type_HtmlTagToken: htmltag
 }
 object HtmlTagToken {
   
   @scala.inline
-  def apply(content: String, level: Double, `type`: htmltag): HtmlTagToken = {
+  def apply(content: String, level: Double): HtmlTagToken = {
     val __obj = js.Dynamic.literal(content = content.asInstanceOf[js.Any], level = level.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("htmltag")
     __obj.asInstanceOf[HtmlTagToken]
   }
   

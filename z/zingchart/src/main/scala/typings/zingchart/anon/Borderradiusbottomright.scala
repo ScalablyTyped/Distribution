@@ -2,23 +2,21 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Borderradiusbottomright extends StObject {
   
   /**
     * If true, it is similar with setting margin:"dynamic", added with adjust-layout attributes on title and legend. true | false | 1 |
     * 0
     */
-  var `adjust-layout`: js.UndefOr[Boolean] = js.native
+  var `adjust-layout`: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and 1.0 being comp
     * letely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var alpha: js.UndefOr[Double] = js.native
+  var alpha: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the background color of the object. Colors can be entered by name (e.g. "red", "blue", "yellow"), in hexadecimal notation (e.
@@ -26,55 +24,55 @@ trait Borderradiusbottomright extends StObject {
     * t a solid background color, two colors will, by default, create a horizontal gradient. For more complex gradients, use gradient-co
     * lors and gradient-stops. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color`: js.UndefOr[String] = js.native
+  var `background-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the first color of a 2 color background gradient of the object. To be used with background-color-2. "none" | "transparent" |
     * "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-1`: js.UndefOr[String] = js.native
+  var `background-color-1`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the second color of a 2 color background gradient of the object. To be used with background-color-1. "none" | "transparent" |
     *  "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `background-color-2`: js.UndefOr[String] = js.native
+  var `background-color-2`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the direction/s on which the background image is being "stretched". "x" | "y" | "xy"
     */
-  var `background-fit`: js.UndefOr[String] = js.native
+  var `background-fit`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a background image for the object. Value can be a local file or a web image's location. "image.png" | ...
     */
-  var `background-image`: js.UndefOr[String] = js.native
+  var `background-image`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the position of the background when the background-repeat value is no-repeat. "0 0" | "50 100" | "80% 60%" | ...
     */
-  var `background-position`: js.UndefOr[String] = js.native
+  var `background-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the repeating mode for the background image. "no-repeat" | "repeat" | "repeat-x" | "repeat-y"
     */
-  var `background-repeat`: js.UndefOr[String] = js.native
+  var `background-repeat`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's bottom border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
     */
-  var `border-bottom`: js.UndefOr[String] = js.native
+  var `border-bottom`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border color of the object, applicable on closed shapes. See also line-color for closed shapes. "none" | "transparent" |
     * "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ...
     */
-  var `border-color`: js.UndefOr[String] = js.native
+  var `border-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's left border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
     */
-  var `border-left`: js.UndefOr[String] = js.native
+  var `border-left`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's border radius, for rounded corners. Larger values create rounder corners, while smaller values create sharper co
@@ -82,268 +80,268 @@ trait Borderradiusbottomright extends StObject {
     * alue affecting the top-left corner, the second value affecting the top-right corner, and so on, in a clockwise direction. A negati
     * ve value will cut a corner off without rounding. 4 | "6px" | "6px 10px 3px 5px" | "-10px" | ...
     */
-  var `border-radius`: js.UndefOr[js.Any] = js.native
+  var `border-radius`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-left border radius, for rounded corners. Larger values create rounder corners, while smaller values creat
     * e sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's bottom-right border radius, for rounded corners. Larger values create rounder corners, while smaller values crea
     * te sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-bottom-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-left border radius, for rounded corners. Larger values create rounder corners, while smaller values create s
     * harper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-left`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top-right border radius, for rounded corners. Larger values create rounder corners, while smaller values create
     * sharper corners. A negative value will cut a corner off without rounding. 4 | "6px" | "-6px" | -4 | ...
     */
-  var `border-radius-top-right`: js.UndefOr[js.Any] = js.native
+  var `border-radius-top-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's right border style. Accepts solid, dashed, and dotted styles. "2px solid #f00" | ...
     */
-  var `border-right`: js.UndefOr[String] = js.native
+  var `border-right`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's top border style. Values must include the border width, style, and color. Accepts solid, dashed, and dotted styl
     * es. "2px solid #f00" | ...
     */
-  var `border-top`: js.UndefOr[String] = js.native
+  var `border-top`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the border width of the object, applicable on closed shapes. See also line-width for closed shapes. 4 | "6px" | ...
     */
-  var `border-width`: js.UndefOr[js.Any] = js.native
+  var `border-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets whether an object will have a callout arrow or not. true | false | 1 | 0
     */
-  var callout: js.UndefOr[Boolean] = js.native
+  var callout: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the length of the extension that extends beyond the tip of the callout arrow. 4 | "6px" | ...
     */
-  var `callout-extension`: js.UndefOr[js.Any] = js.native
+  var `callout-extension`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the height of the object's callout arrow. A larger value will create a taller callout arrow. 4 | "6px" | ...
     */
-  var `callout-height`: js.UndefOr[js.Any] = js.native
+  var `callout-height`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the point of the tip of the callout arrow to a specified coordinate on the chart, with the starting point of [0,0] being the
     * top left corner of the chart. [200, 50] | ...
     */
-  var `callout-hook`: js.UndefOr[js.Any] = js.native
+  var `callout-hook`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the offset along the callout direction of the arrow's base. Positive and negative values can be used to offset the callout ar
     * row up, down, left, or right depending on the callout-position. 4 | "6px" | ...
     */
-  var `callout-offset`: js.UndefOr[js.Any] = js.native
+  var `callout-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the position for the object's callout arrow. The position is "bottom" by default. "top" | "right" | "bottom" | "left"
     */
-  var `callout-position`: js.UndefOr[String] = js.native
+  var `callout-position`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the width of the object's callout arrow. A larger value will create a wider callout arrow. 4 | "6px" | ...
     */
-  var `callout-width`: js.UndefOr[js.Any] = js.native
+  var `callout-width`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the angle of the axis along which the linear gradient is drawn. -45 | 115 | ...
     */
-  var `fill-angle`: js.UndefOr[Double] = js.native
+  var `fill-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an X offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-x`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an Y offset to apply to the fill. 4 | "6px" | ...
     */
-  var `fill-offset-y`: js.UndefOr[js.Any] = js.native
+  var `fill-offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the background gradient fill type to either linear or radial. "linear" | "radial"
     */
-  var `fill-type`: js.UndefOr[String] = js.native
+  var `fill-type`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets a set of colors for a complex background gradient consisting of 2 or more colors. To be used with gradient-stops. "#f00 #0f0
     * #00f" | ...
     */
-  var `gradient-colors`: js.UndefOr[String] = js.native
+  var `gradient-colors`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the gradient stops for a complex background gradient consisting of 2 or more colors. To be used with gradient-colors. "0.1 0.
     * 5 0.9" | ...
     */
-  var `gradient-stops`: js.UndefOr[String] = js.native
+  var `gradient-stops`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's height. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var height: js.UndefOr[js.Any] = js.native
+  var height: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the item id of the map on which the object/shape is being added. "itemid" | ...
     */
-  var item: js.UndefOr[String] = js.native
+  var item: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the map id of the map on which the object/shape is being added. "mapid" | ...
     */
-  var map: js.UndefOr[String] = js.native
+  var map: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the object's margin/s. The plotarea object also accepts "dynamic" as value for the margin attribute, in which case it analyze
     * s the scale labels and change the plotarea size accordingly in order to fit all scale labels. "dynamic" | 10 | "5px" | "10 20" | "
     * 5px 10px 15px 20px" | ...
     */
-  var margin: js.UndefOr[js.Any] = js.native
+  var margin: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. The plotarea object also accepts "dynamic" as value for the margin attribute, in which case it analy
     * zes the scale labels and change the plotarea size accordingly in order to fit all scale labels. "dynamic" | 10 | "5px" | "10 20" |
     *  "5px 10px 15px 20px" | ...
     */
-  var `margin-bottom`: js.UndefOr[js.Any] = js.native
+  var `margin-bottom`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an additional margin specifically to the bottom of the plotarea when using dynamic margins. Offset will only be set if there
     * is a scale object on the bottom of the chart. "dynamic" | 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var `margin-bottom-offset`: js.UndefOr[js.Any] = js.native
+  var `margin-bottom-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. The plotarea object also accepts "dynamic" as value for the margin attribute, in which case it analy
     * zes the scale labels and change the plotarea size accordingly in order to fit all scale labels. "dynamic" | 10 | "5px" | "10 20" |
     *  "5px 10px 15px 20px" | ...
     */
-  var `margin-left`: js.UndefOr[js.Any] = js.native
+  var `margin-left`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an additional margin specifically to the left of the plotarea when using dynamic margins. Offset will only be set if there is
     *  a scale object on the left of the chart. "dynamic" | 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var `margin-left-offset`: js.UndefOr[js.Any] = js.native
+  var `margin-left-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. The plotarea object also accepts "dynamic" as value for the margin attribute, in which case it analy
     * zes the scale labels and change the plotarea size accordingly in order to fit all scale labels. "dynamic" | 10 | "5px" | "10 20" |
     *  "5px 10px 15px 20px" | ...
     */
-  var `margin-right`: js.UndefOr[js.Any] = js.native
+  var `margin-right`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an additional margin specifically to the left of the plotarea when using dynamic margins. Offset will only be set if there is
     *  a scale object on the right of the chart. "dynamic" | 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var `margin-right-offset`: js.UndefOr[js.Any] = js.native
+  var `margin-right-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's top margin. The plotarea object also accepts "dynamic" as value for the margin attribute, in which case it analy
     * zes the scale labels and change the plotarea size accordingly in order to fit all scale labels. "dynamic" | 10 | "5px" | "10 20" |
     *  "5px 10px 15px 20px" | ...
     */
-  var `margin-top`: js.UndefOr[js.Any] = js.native
+  var `margin-top`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets an additional margin specifically to the top of the plotarea when using dynamic margins. Offset will only be set if there is
     * a scale object on the top of the chart. "dynamic" | 10 | "5px" | "10 20" | "5px 10px 15px 20px" | ...
     */
-  var `margin-top-offset`: js.UndefOr[js.Any] = js.native
+  var `margin-top-offset`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the tolerance of the mask (in number of pixels) that covers the plotarea to allow objects to overflow outside of the plotarea
     * . 4 | "6px" | ...
     */
-  var `mask-tolerance`: js.UndefOr[Double] = js.native
+  var `mask-tolerance`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets an X offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
-  var `offset-x`: js.UndefOr[js.Any] = js.native
+  var `offset-x`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets a Y offset to apply when positioning the object/shape. 4 | "6px" | ...
     */
-  var `offset-y`: js.UndefOr[js.Any] = js.native
+  var `offset-y`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the object's position relative to it's container. Similar results can be obtained by setting marginand margin-... attributes.
     */
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the object's shadow is visible or not. Has limited effect on HTML5 implementation. true | false | 1 | 0
     */
-  var shadow: js.UndefOr[Boolean] = js.native
+  var shadow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the transparency of the shadow of the object. Values must range between 0.0 and 1.0, with 0.0 being completely invisible and
     * 1.0 being completely opaque. Please note that values also require the leading 0 before the decimal. 0.3 | 0.9 | ...
     */
-  var `shadow-alpha`: js.UndefOr[Double] = js.native
+  var `shadow-alpha`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the angle of the shadow underneath the object. -45 | 115 | ...
     */
-  var `shadow-angle`: js.UndefOr[Double] = js.native
+  var `shadow-angle`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the blur effect size for the shadow of the object. Has limited effect on HTML5 implementation. 4 | "6px" | ...
     */
-  var `shadow-blur`: js.UndefOr[js.Any] = js.native
+  var `shadow-blur`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the color of the shadow of the object. "none" | "transparent" | "#f00" | "#f00 #00f" | "red yellow" | "rgb(100, 15, 15)" | ..
     * .
     */
-  var `shadow-color`: js.UndefOr[String] = js.native
+  var `shadow-color`: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the distance between the shadow and the object. 4 | "6px" | ...
     */
-  var `shadow-distance`: js.UndefOr[js.Any] = js.native
+  var `shadow-distance`: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the visibility of the object. Allows you to turn off the object without removing lines of JSON. true | false | 1 | 0
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Sets the object's width. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var width: js.UndefOr[js.Any] = js.native
+  var width: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the X position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var x: js.UndefOr[js.Any] = js.native
+  var x: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the Y position of the object. 10 | "20px" | 0.3 | "30%" | ...
     */
-  var y: js.UndefOr[js.Any] = js.native
+  var y: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Sets the z position of the object. Objects with higher z indexes will appear "above" those with lower z index values. 5 | 10 | ...
     */
-  var `z-index`: js.UndefOr[Double] = js.native
+  var `z-index`: js.UndefOr[Double] = js.undefined
 }
 object Borderradiusbottomright {
   

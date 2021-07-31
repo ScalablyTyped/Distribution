@@ -25,80 +25,78 @@ import typings.std.HTMLDivElement
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/dateInput.IDateInputProps> */
-  @js.native
   trait PartialIDateInputProps extends StObject {
     
-    var canClearSelection: js.UndefOr[Boolean] = js.native
+    var canClearSelection: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearButtonText: js.UndefOr[String] = js.native
+    var clearButtonText: js.UndefOr[String] = js.undefined
     
-    var closeOnSelection: js.UndefOr[Boolean] = js.native
+    var closeOnSelection: js.UndefOr[Boolean] = js.undefined
     
-    var dayPickerProps: js.UndefOr[DayPickerProps] = js.native
+    var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
     
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[Date] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function2[/* date */ Date, /* locale */ js.UndefOr[String], String]] = js.native
+    var formatDate: js.UndefOr[js.Function2[/* date */ Date, /* locale */ js.UndefOr[String], String]] = js.undefined
     
-    var highlightCurrentDay: js.UndefOr[Boolean] = js.native
+    var highlightCurrentDay: js.UndefOr[Boolean] = js.undefined
     
-    var initialMonth: js.UndefOr[Date] = js.native
+    var initialMonth: js.UndefOr[Date] = js.undefined
     
-    var inputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.native
+    var inputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.undefined
     
-    var invalidDateMessage: js.UndefOr[String] = js.native
+    var invalidDateMessage: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.native
+    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var modifiers: js.UndefOr[IDatePickerModifiers] = js.native
+    var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
     
-    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* errorDate */ Date, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* errorDate */ Date, Unit]] = js.undefined
     
-    var outOfRangeMessage: js.UndefOr[String] = js.native
+    var outOfRangeMessage: js.UndefOr[String] = js.undefined
     
     var parseDate: js.UndefOr[
         js.Function2[/* str */ String, /* locale */ js.UndefOr[String], Date | `false` | Null]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var popoverProps: js.UndefOr[PartialIPopoverProps with js.Object] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps & js.Object] = js.undefined
     
-    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.native
+    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined
     
-    var rightElement: js.UndefOr[Element] = js.native
+    var rightElement: js.UndefOr[Element] = js.undefined
     
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.native
+    var shortcuts: js.UndefOr[Boolean | js.Array[IDatePickerShortcut]] = js.undefined
     
-    var showActionsBar: js.UndefOr[Boolean] = js.native
+    var showActionsBar: js.UndefOr[Boolean] = js.undefined
     
-    var timePickerProps: js.UndefOr[ITimePickerProps] = js.native
+    var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
     
-    var timePrecision: js.UndefOr[TimePrecision] = js.native
+    var timePrecision: js.UndefOr[TimePrecision] = js.undefined
     
-    var todayButtonText: js.UndefOr[String] = js.native
+    var todayButtonText: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[Date | Null] = js.native
+    var value: js.UndefOr[Date | Null] = js.undefined
   }
   object PartialIDateInputProps {
     
@@ -178,7 +176,7 @@ object anon {
       def setInitialMonthUndefined: Self = StObject.set(x, "initialMonth", js.undefined)
       
       @scala.inline
-      def setInputProps(value: HTMLInputProps with IInputGroupProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
+      def setInputProps(value: HTMLInputProps & IInputGroupProps): Self = StObject.set(x, "inputProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInputPropsUndefined: Self = StObject.set(x, "inputProps", js.undefined)
@@ -250,7 +248,7 @@ object anon {
       def setPlaceholderUndefined: Self = StObject.set(x, "placeholder", js.undefined)
       
       @scala.inline
-      def setPopoverProps(value: PartialIPopoverProps with js.Object): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
+      def setPopoverProps(value: PartialIPopoverProps & js.Object): Self = StObject.set(x, "popoverProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setPopoverPropsUndefined: Self = StObject.set(x, "popoverProps", js.undefined)
@@ -312,74 +310,73 @@ object anon {
   }
   
   /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/dateRangeInput.IDateRangeInputProps> */
-  @js.native
   trait PartialIDateRangeInputPro extends StObject {
     
-    var allowSingleDayRange: js.UndefOr[Boolean] = js.native
+    var allowSingleDayRange: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var closeOnSelection: js.UndefOr[Boolean] = js.native
+    var closeOnSelection: js.UndefOr[Boolean] = js.undefined
     
-    var contiguousCalendarMonths: js.UndefOr[Boolean] = js.native
+    var contiguousCalendarMonths: js.UndefOr[Boolean] = js.undefined
     
-    var dayPickerProps: js.UndefOr[DayPickerProps] = js.native
+    var dayPickerProps: js.UndefOr[DayPickerProps] = js.undefined
     
-    var defaultValue: js.UndefOr[DateRange] = js.native
+    var defaultValue: js.UndefOr[DateRange] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var endInputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.native
+    var endInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.undefined
     
-    var formatDate: js.UndefOr[js.Function2[/* date */ Date, /* locale */ js.UndefOr[String], String]] = js.native
+    var formatDate: js.UndefOr[js.Function2[/* date */ Date, /* locale */ js.UndefOr[String], String]] = js.undefined
     
-    var highlightCurrentDay: js.UndefOr[Boolean] = js.native
+    var highlightCurrentDay: js.UndefOr[Boolean] = js.undefined
     
-    var initialMonth: js.UndefOr[Date] = js.native
+    var initialMonth: js.UndefOr[Date] = js.undefined
     
-    var invalidDateMessage: js.UndefOr[String] = js.native
+    var invalidDateMessage: js.UndefOr[String] = js.undefined
     
-    var locale: js.UndefOr[String] = js.native
+    var locale: js.UndefOr[String] = js.undefined
     
-    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.native
+    var localeUtils: js.UndefOr[TypeofLocaleUtils] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var modifiers: js.UndefOr[IDatePickerModifiers] = js.native
+    var modifiers: js.UndefOr[IDatePickerModifiers] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* selectedRange */ DateRange, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* selectedRange */ DateRange, Unit]] = js.undefined
     
-    var onError: js.UndefOr[js.Function1[/* errorRange */ DateRange, Unit]] = js.native
+    var onError: js.UndefOr[js.Function1[/* errorRange */ DateRange, Unit]] = js.undefined
     
-    var outOfRangeMessage: js.UndefOr[String] = js.native
+    var outOfRangeMessage: js.UndefOr[String] = js.undefined
     
-    var overlappingDatesMessage: js.UndefOr[String] = js.native
+    var overlappingDatesMessage: js.UndefOr[String] = js.undefined
     
     var parseDate: js.UndefOr[
         js.Function2[/* str */ String, /* locale */ js.UndefOr[String], Date | `false` | Null]
-      ] = js.native
+      ] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.native
+    var popoverProps: js.UndefOr[PartialIPopoverProps] = js.undefined
     
-    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.native
+    var reverseMonthAndYearMenus: js.UndefOr[Boolean] = js.undefined
     
-    var selectAllOnFocus: js.UndefOr[Boolean] = js.native
+    var selectAllOnFocus: js.UndefOr[Boolean] = js.undefined
     
-    var shortcuts: js.UndefOr[Boolean | js.Array[IDateRangeShortcut]] = js.native
+    var shortcuts: js.UndefOr[Boolean | js.Array[IDateRangeShortcut]] = js.undefined
     
-    var singleMonthOnly: js.UndefOr[Boolean] = js.native
+    var singleMonthOnly: js.UndefOr[Boolean] = js.undefined
     
-    var startInputProps: js.UndefOr[HTMLInputProps with IInputGroupProps] = js.native
+    var startInputProps: js.UndefOr[HTMLInputProps & IInputGroupProps] = js.undefined
     
-    var timePickerProps: js.UndefOr[ITimePickerProps] = js.native
+    var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
     
-    var timePrecision: js.UndefOr[TimePrecision] = js.native
+    var timePrecision: js.UndefOr[TimePrecision] = js.undefined
     
-    var value: js.UndefOr[DateRange] = js.native
+    var value: js.UndefOr[DateRange] = js.undefined
   }
   object PartialIDateRangeInputPro {
     
@@ -435,7 +432,7 @@ object anon {
       def setDisabledUndefined: Self = StObject.set(x, "disabled", js.undefined)
       
       @scala.inline
-      def setEndInputProps(value: HTMLInputProps with IInputGroupProps): Self = StObject.set(x, "endInputProps", value.asInstanceOf[js.Any])
+      def setEndInputProps(value: HTMLInputProps & IInputGroupProps): Self = StObject.set(x, "endInputProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setEndInputPropsUndefined: Self = StObject.set(x, "endInputProps", js.undefined)
@@ -564,7 +561,7 @@ object anon {
       def setSingleMonthOnlyUndefined: Self = StObject.set(x, "singleMonthOnly", js.undefined)
       
       @scala.inline
-      def setStartInputProps(value: HTMLInputProps with IInputGroupProps): Self = StObject.set(x, "startInputProps", value.asInstanceOf[js.Any])
+      def setStartInputProps(value: HTMLInputProps & IInputGroupProps): Self = StObject.set(x, "startInputProps", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStartInputPropsUndefined: Self = StObject.set(x, "startInputProps", js.undefined)
@@ -590,54 +587,53 @@ object anon {
   }
   
   /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core.IPopoverProps> */
-  @js.native
   trait PartialIPopoverProps extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.native
+    var backdropProps: js.UndefOr[HTMLProps[HTMLDivElement]] = js.undefined
     
-    var boundary: js.UndefOr[Boundary] = js.native
+    var boundary: js.UndefOr[Boundary] = js.undefined
     
-    var canEscapeKeyClose: js.UndefOr[Boolean] = js.native
+    var canEscapeKeyClose: js.UndefOr[Boolean] = js.undefined
     
-    var captureDismiss: js.UndefOr[Boolean] = js.native
+    var captureDismiss: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: js.UndefOr[String | Element] = js.native
+    var content: js.UndefOr[String | Element] = js.undefined
     
-    var defaultIsOpen: js.UndefOr[Boolean] = js.native
+    var defaultIsOpen: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var enforceFocus: js.UndefOr[Boolean] = js.native
+    var enforceFocus: js.UndefOr[Boolean] = js.undefined
     
-    var fill: js.UndefOr[Boolean] = js.native
+    var fill: js.UndefOr[Boolean] = js.undefined
     
-    var hasBackdrop: js.UndefOr[Boolean] = js.native
+    var hasBackdrop: js.UndefOr[Boolean] = js.undefined
     
-    var hoverCloseDelay: js.UndefOr[Double] = js.native
+    var hoverCloseDelay: js.UndefOr[Double] = js.undefined
     
-    var hoverOpenDelay: js.UndefOr[Double] = js.native
+    var hoverOpenDelay: js.UndefOr[Double] = js.undefined
     
-    var inheritDarkTheme: js.UndefOr[Boolean] = js.native
+    var inheritDarkTheme: js.UndefOr[Boolean] = js.undefined
     
-    var interactionKind: js.UndefOr[PopoverInteractionKind] = js.native
+    var interactionKind: js.UndefOr[PopoverInteractionKind] = js.undefined
     
-    var isOpen: js.UndefOr[Boolean] = js.native
+    var isOpen: js.UndefOr[Boolean] = js.undefined
     
-    var `lazy`: js.UndefOr[Boolean] = js.native
+    var `lazy`: js.UndefOr[Boolean] = js.undefined
     
-    var minimal: js.UndefOr[Boolean] = js.native
+    var minimal: js.UndefOr[Boolean] = js.undefined
     
-    var modifiers: js.UndefOr[Modifiers] = js.native
+    var modifiers: js.UndefOr[Modifiers] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* event */ SyntheticEvent[HTMLElement, Event], Unit]] = js.undefined
     
-    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosed: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onClosing: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
     var onInteraction: js.UndefOr[
         js.Function2[
@@ -645,41 +641,41 @@ object anon {
           /* e */ js.UndefOr[SyntheticEvent[HTMLElement, Event]], 
           Unit
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpened: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.native
+    var onOpening: js.UndefOr[js.Function1[/* node */ HTMLElement, Unit]] = js.undefined
     
-    var openOnTargetFocus: js.UndefOr[Boolean] = js.native
+    var openOnTargetFocus: js.UndefOr[Boolean] = js.undefined
     
-    var popoverClassName: js.UndefOr[String] = js.native
+    var popoverClassName: js.UndefOr[String] = js.undefined
     
-    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.native
+    var popoverRef: js.UndefOr[js.Function1[/* ref */ HTMLElement | Null, Unit]] = js.undefined
     
-    var portalClassName: js.UndefOr[String] = js.native
+    var portalClassName: js.UndefOr[String] = js.undefined
     
-    var portalContainer: js.UndefOr[HTMLElement] = js.native
+    var portalContainer: js.UndefOr[HTMLElement] = js.undefined
     
-    var position: js.UndefOr[PopoverPosition] = js.native
+    var position: js.UndefOr[PopoverPosition] = js.undefined
     
-    var target: js.UndefOr[String | Element] = js.native
+    var target: js.UndefOr[String | Element] = js.undefined
     
-    var targetClassName: js.UndefOr[String] = js.native
+    var targetClassName: js.UndefOr[String] = js.undefined
     
-    var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.native
+    var targetProps: js.UndefOr[HTMLAttributes[HTMLElement]] = js.undefined
     
     var targetTagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
     
-    var transitionDuration: js.UndefOr[Double] = js.native
+    var transitionDuration: js.UndefOr[Double] = js.undefined
     
-    var usePortal: js.UndefOr[Boolean] = js.native
+    var usePortal: js.UndefOr[Boolean] = js.undefined
     
     var wrapperTagName: js.UndefOr[
         /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 176 */ js.Any
-      ] = js.native
+      ] = js.undefined
   }
   object PartialIPopoverProps {
     
@@ -931,24 +927,23 @@ object anon {
   }
   
   /* Inlined std.Partial<@blueprintjs/datetime.@blueprintjs/datetime/lib/esm/shortcuts.IShortcutsProps> */
-  @js.native
   trait PartialIShortcutsProps extends StObject {
     
-    var allowSingleDayRange: js.UndefOr[Boolean] = js.native
+    var allowSingleDayRange: js.UndefOr[Boolean] = js.undefined
     
-    var maxDate: js.UndefOr[Date] = js.native
+    var maxDate: js.UndefOr[Date] = js.undefined
     
-    var minDate: js.UndefOr[Date] = js.native
+    var minDate: js.UndefOr[Date] = js.undefined
     
-    var onShortcutClick: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.native
+    var onShortcutClick: js.UndefOr[js.Function2[/* shortcut */ IDateRangeShortcut, /* index */ Double, Unit]] = js.undefined
     
-    var selectedShortcutIndex: js.UndefOr[Double] = js.native
+    var selectedShortcutIndex: js.UndefOr[Double] = js.undefined
     
-    var shortcuts: js.UndefOr[js.Array[IDateRangeShortcut] | `true`] = js.native
+    var shortcuts: js.UndefOr[js.Array[IDateRangeShortcut] | `true`] = js.undefined
     
-    var timePrecision: js.UndefOr[TimePrecision] = js.native
+    var timePrecision: js.UndefOr[TimePrecision] = js.undefined
     
-    var useSingleDateShortcuts: js.UndefOr[Boolean] = js.native
+    var useSingleDateShortcuts: js.UndefOr[Boolean] = js.undefined
   }
   object PartialIShortcutsProps {
     
@@ -1018,11 +1013,11 @@ object anon {
   trait TypeofLocaleUtils extends StObject {
     
     def formatDate(date: Date): String = js.native
-    def formatDate(date: Date, format: js.UndefOr[scala.Nothing], locale: String): String = js.native
     def formatDate(date: Date, format: String): String = js.native
     def formatDate(date: Date, format: String, locale: String): String = js.native
     def formatDate(date: Date, format: js.Array[String]): String = js.native
     def formatDate(date: Date, format: js.Array[String], locale: String): String = js.native
+    def formatDate(date: Date, format: Unit, locale: String): String = js.native
     
     def formatDay(day: Date): String = js.native
     def formatDay(day: Date, locale: String): String = js.native
@@ -1043,8 +1038,8 @@ object anon {
     def getMonths(locale: String): js.Tuple12[String, String, String, String, String, String, String, String, String, String, String, String] = js.native
     
     def parseDate(str: String): Date = js.native
-    def parseDate(str: String, format: js.UndefOr[scala.Nothing], locale: String): Date = js.native
     def parseDate(str: String, format: String): Date = js.native
     def parseDate(str: String, format: String, locale: String): Date = js.native
+    def parseDate(str: String, format: Unit, locale: String): Date = js.native
   }
 }

@@ -4,15 +4,13 @@ import typings.muiDatatables.anon.DataIndex
 import typings.muiDatatables.anon.DataIndexNumber
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MUIDataTableIsRowCheck extends StObject {
   
-  var data: js.Array[DataIndex] = js.native
+  var data: js.Array[DataIndex]
   
-  var lookup: DataIndexNumber = js.native
+  var lookup: DataIndexNumber
 }
 object MUIDataTableIsRowCheck {
   

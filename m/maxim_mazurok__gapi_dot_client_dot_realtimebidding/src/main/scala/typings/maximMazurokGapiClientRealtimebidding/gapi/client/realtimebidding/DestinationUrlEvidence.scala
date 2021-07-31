@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientRealtimebidding.gapi.client.realtimebiddin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationUrlEvidence extends StObject {
   
   /** The full landing page URL of the destination. */
-  var destinationUrl: js.UndefOr[String] = js.native
+  var destinationUrl: js.UndefOr[String] = js.undefined
 }
 object DestinationUrlEvidence {
   

@@ -22,10 +22,13 @@ import typings.reactInfiniteCalendar.reactInfiniteCalendarStrings.years
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("react-infinite-calendar", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-infinite-calendar", JSImport.Default)
   @js.native
@@ -51,40 +54,41 @@ object mod {
   object EVENT_TYPE extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[EVENT_TYPE with Double] = js.native
+    def apply(value: Double): js.UndefOr[EVENT_TYPE & Double] = js.native
     
     @js.native
-    sealed trait END extends EVENT_TYPE
-    /* 1 */ val END: typings.reactInfiniteCalendar.mod.EVENT_TYPE.END with Double = js.native
+    sealed trait END
+      extends StObject
+         with EVENT_TYPE
+    /* 1 */ val END: typings.reactInfiniteCalendar.mod.EVENT_TYPE.END & Double = js.native
     
     @js.native
-    sealed trait HOVER extends EVENT_TYPE
-    /* 0 */ val HOVER: typings.reactInfiniteCalendar.mod.EVENT_TYPE.HOVER with Double = js.native
+    sealed trait HOVER
+      extends StObject
+         with EVENT_TYPE
+    /* 0 */ val HOVER: typings.reactInfiniteCalendar.mod.EVENT_TYPE.HOVER & Double = js.native
     
     @js.native
-    sealed trait START extends EVENT_TYPE
-    /* 1 */ val START: typings.reactInfiniteCalendar.mod.EVENT_TYPE.START with Double = js.native
+    sealed trait START
+      extends StObject
+         with EVENT_TYPE
+    /* 1 */ val START: typings.reactInfiniteCalendar.mod.EVENT_TYPE.START & Double = js.native
   }
   
-  @JSImport("react-infinite-calendar", "defaultMultipleDateInterpolation")
-  @js.native
-  def defaultMultipleDateInterpolation(component: CalendarClass): CalendarClass = js.native
+  @scala.inline
+  def defaultMultipleDateInterpolation(component: CalendarClass): CalendarClass = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultMultipleDateInterpolation")(component.asInstanceOf[js.Any]).asInstanceOf[CalendarClass]
   
-  @JSImport("react-infinite-calendar", "withDateSelection")
-  @js.native
-  def withDateSelection(component: CalendarClass): CalendarClass = js.native
+  @scala.inline
+  def withDateSelection(component: CalendarClass): CalendarClass = ^.asInstanceOf[js.Dynamic].applyDynamic("withDateSelection")(component.asInstanceOf[js.Any]).asInstanceOf[CalendarClass]
   
-  @JSImport("react-infinite-calendar", "withKeyboardSupport")
-  @js.native
-  def withKeyboardSupport(component: CalendarClass): CalendarClass = js.native
+  @scala.inline
+  def withKeyboardSupport(component: CalendarClass): CalendarClass = ^.asInstanceOf[js.Dynamic].applyDynamic("withKeyboardSupport")(component.asInstanceOf[js.Any]).asInstanceOf[CalendarClass]
   
-  @JSImport("react-infinite-calendar", "withMultipleDates")
-  @js.native
-  def withMultipleDates(component: CalendarClass): CalendarClass = js.native
+  @scala.inline
+  def withMultipleDates(component: CalendarClass): CalendarClass = ^.asInstanceOf[js.Dynamic].applyDynamic("withMultipleDates")(component.asInstanceOf[js.Any]).asInstanceOf[CalendarClass]
   
-  @JSImport("react-infinite-calendar", "withRange")
-  @js.native
-  def withRange(component: CalendarClass): CalendarClass = js.native
+  @scala.inline
+  def withRange(component: CalendarClass): CalendarClass = ^.asInstanceOf[js.Dynamic].applyDynamic("withRange")(component.asInstanceOf[js.Any]).asInstanceOf[CalendarClass]
   
   type CalendarClass = ComponentClass[ReactInfiniteCalendarProps, ComponentState]
   
@@ -94,14 +98,13 @@ object mod {
   
   type RangedSelectFunction = js.Function1[/* rangedDate */ RangedSelection, Unit]
   
-  @js.native
   trait RangedSelection extends StObject {
     
-    var end: Date = js.native
+    var end: Date
     
-    var eventType: EVENT_TYPE = js.native
+    var eventType: EVENT_TYPE
     
-    var start: Date = js.native
+    var start: Date
   }
   object RangedSelection {
     
@@ -127,52 +130,51 @@ object mod {
   
   type ReactInfiniteCalendar = Component[ReactInfiniteCalendarProps, js.Object, js.Any]
   
-  @js.native
   trait ReactInfiniteCalendarProps extends StObject {
     
-    var Component: js.UndefOr[CalendarClass] = js.native
+    var Component: js.UndefOr[CalendarClass] = js.undefined
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var disabledDates: js.UndefOr[js.Array[DateType]] = js.native
+    var disabledDates: js.UndefOr[js.Array[DateType]] = js.undefined
     
-    var disabledDays: js.UndefOr[js.Array[`0` | `1` | `2` | `3` | `4` | `5` | `6`]] = js.native
+    var disabledDays: js.UndefOr[js.Array[`0` | `1` | `2` | `3` | `4` | `5` | `6`]] = js.undefined
     
-    var display: js.UndefOr[days | years] = js.native
+    var display: js.UndefOr[days | years] = js.undefined
     
-    var displayOptions: js.UndefOr[HideYearsOnSelect] = js.native
+    var displayOptions: js.UndefOr[HideYearsOnSelect] = js.undefined
     
-    var height: js.UndefOr[Double | auto] = js.native
+    var height: js.UndefOr[Double | auto] = js.undefined
     
-    var interpolateSelection: js.UndefOr[js.Function2[/* date */ Date, /* selected */ js.Array[Date], js.Array[Date]]] = js.native
+    var interpolateSelection: js.UndefOr[js.Function2[/* date */ Date, /* selected */ js.Array[Date], js.Array[Date]]] = js.undefined
     
-    var locale: js.UndefOr[Blank] = js.native
+    var locale: js.UndefOr[Blank] = js.undefined
     
-    var max: js.UndefOr[DateType] = js.native
+    var max: js.UndefOr[DateType] = js.undefined
     
-    var maxDate: js.UndefOr[DateType] = js.native
+    var maxDate: js.UndefOr[DateType] = js.undefined
     
-    var min: js.UndefOr[DateType] = js.native
+    var min: js.UndefOr[DateType] = js.undefined
     
-    var minDate: js.UndefOr[DateType] = js.native
+    var minDate: js.UndefOr[DateType] = js.undefined
     
-    var onScroll: js.UndefOr[js.Function1[/* scrollTop */ Double, Unit]] = js.native
+    var onScroll: js.UndefOr[js.Function1[/* scrollTop */ Double, Unit]] = js.undefined
     
-    var onScrollEnd: js.UndefOr[js.Function1[/* scrollTop */ Double, Unit]] = js.native
+    var onScrollEnd: js.UndefOr[js.Function1[/* scrollTop */ Double, Unit]] = js.undefined
     
-    var onSelect: js.UndefOr[DateSelectFunction | RangedSelectFunction] = js.native
+    var onSelect: js.UndefOr[DateSelectFunction | RangedSelectFunction] = js.undefined
     
-    var rowHeight: js.UndefOr[Double] = js.native
+    var rowHeight: js.UndefOr[Double] = js.undefined
     
-    var selected: js.UndefOr[DateType | `false` | End | js.Array[DateType]] = js.native
+    var selected: js.UndefOr[DateType | `false` | End | js.Array[DateType]] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var theme: js.UndefOr[AccentColor] = js.native
+    var theme: js.UndefOr[AccentColor] = js.undefined
     
-    var width: js.UndefOr[Double | auto | `100Percentsign`] = js.native
+    var width: js.UndefOr[Double | auto | `100Percentsign`] = js.undefined
   }
   object ReactInfiniteCalendarProps {
     

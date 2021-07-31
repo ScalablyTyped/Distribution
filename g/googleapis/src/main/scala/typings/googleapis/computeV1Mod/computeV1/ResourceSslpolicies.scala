@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/compute/v1", "compute_v1.Resource$Sslpolicies")
@@ -34,7 +33,7 @@ class ResourceSslpolicies protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaOperation] = js.native
   def delete(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSslpoliciesDelete): GaxiosPromise[SchemaOperation] = js.native
   def delete(params: ParamsResourceSslpoliciesDelete, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def delete(
@@ -65,7 +64,7 @@ class ResourceSslpolicies protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaSslPolicy] = js.native
   def get(callback: BodyResponseCallback[SchemaSslPolicy]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSslPolicy] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSslPolicy] = js.native
   def get(params: ParamsResourceSslpoliciesGet): GaxiosPromise[SchemaSslPolicy] = js.native
   def get(params: ParamsResourceSslpoliciesGet, callback: BodyResponseCallback[SchemaSslPolicy]): Unit = js.native
   def get(
@@ -97,7 +96,7 @@ class ResourceSslpolicies protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaOperation] = js.native
   def insert(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSslpoliciesInsert): GaxiosPromise[SchemaOperation] = js.native
   def insert(params: ParamsResourceSslpoliciesInsert, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def insert(
@@ -131,7 +130,7 @@ class ResourceSslpolicies protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaSslPoliciesList] = js.native
   def list(callback: BodyResponseCallback[SchemaSslPoliciesList]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSslPoliciesList] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSslPoliciesList] = js.native
   def list(params: ParamsResourceSslpoliciesList): GaxiosPromise[SchemaSslPoliciesList] = js.native
   def list(params: ParamsResourceSslpoliciesList, callback: BodyResponseCallback[SchemaSslPoliciesList]): Unit = js.native
   def list(
@@ -165,7 +164,7 @@ class ResourceSslpolicies protected () extends StObject {
     */
   def listAvailableFeatures(): GaxiosPromise[SchemaSslPoliciesListAvailableFeaturesResponse] = js.native
   def listAvailableFeatures(callback: BodyResponseCallback[SchemaSslPoliciesListAvailableFeaturesResponse]): Unit = js.native
-  def listAvailableFeatures(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaSslPoliciesListAvailableFeaturesResponse] = js.native
+  def listAvailableFeatures(params: Unit, options: MethodOptions): GaxiosPromise[SchemaSslPoliciesListAvailableFeaturesResponse] = js.native
   def listAvailableFeatures(params: ParamsResourceSslpoliciesListavailablefeatures): GaxiosPromise[SchemaSslPoliciesListAvailableFeaturesResponse] = js.native
   def listAvailableFeatures(
     params: ParamsResourceSslpoliciesListavailablefeatures,
@@ -201,7 +200,7 @@ class ResourceSslpolicies protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceSslpoliciesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceSslpoliciesPatch, callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
   def patch(

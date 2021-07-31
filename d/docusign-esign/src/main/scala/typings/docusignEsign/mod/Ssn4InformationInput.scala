@@ -2,10 +2,8 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ssn4InformationInput extends StObject {
   
   /**
@@ -14,17 +12,17 @@ trait Ssn4InformationInput extends StObject {
     * * `Editable`
     * * `DoNotDisplay`
     */
-  var displayLevelCode: js.UndefOr[String] = js.native
+  var displayLevelCode: js.UndefOr[String] = js.undefined
   
   /**
     * A Boolean value that specifies whether the information must be returned in the response.
     */
-  var receiveInResponse: js.UndefOr[String] = js.native
+  var receiveInResponse: js.UndefOr[String] = js.undefined
   
   /**
     * The last four digits of the recipient's Social Security Number (SSN).
     */
-  var ssn4: js.UndefOr[String] = js.native
+  var ssn4: js.UndefOr[String] = js.undefined
 }
 object Ssn4InformationInput {
   

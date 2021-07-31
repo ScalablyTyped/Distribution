@@ -2,21 +2,19 @@ package typings.awsSdk.robomakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RenderingEngine extends StObject {
   
   /**
     * The name of the rendering engine.
     */
-  var name: js.UndefOr[RenderingEngineType] = js.native
+  var name: js.UndefOr[RenderingEngineType] = js.undefined
   
   /**
     * The version of the rendering engine.
     */
-  var version: js.UndefOr[RenderingEngineVersionType] = js.native
+  var version: js.UndefOr[RenderingEngineVersionType] = js.undefined
 }
 object RenderingEngine {
   

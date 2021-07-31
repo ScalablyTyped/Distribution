@@ -2,21 +2,19 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartLegendLabels extends StObject {
   
-  var color: js.UndefOr[String] = js.native
+  var color: js.UndefOr[String] = js.undefined
   
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
-  var margin: js.UndefOr[Double | ChartLegendLabelsMargin] = js.native
+  var margin: js.UndefOr[Double | ChartLegendLabelsMargin] = js.undefined
   
-  var padding: js.UndefOr[ChartLegendLabelsPadding] = js.native
+  var padding: js.UndefOr[ChartLegendLabelsPadding] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
 }
 object ChartLegendLabels {
   

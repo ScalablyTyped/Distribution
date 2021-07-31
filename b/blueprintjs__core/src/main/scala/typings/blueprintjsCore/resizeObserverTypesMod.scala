@@ -3,29 +3,27 @@ package typings.blueprintjsCore
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizeObserverTypesMod {
   
-  @js.native
   trait IDOMRectReadOnly extends StObject {
     
-    val bottom: Double = js.native
+    val bottom: Double
     
-    val height: Double = js.native
+    val height: Double
     
-    val left: Double = js.native
+    val left: Double
     
-    val right: Double = js.native
+    val right: Double
     
-    val top: Double = js.native
+    val top: Double
     
-    val width: Double = js.native
+    val width: Double
     
-    val x: Double = js.native
+    val x: Double
     
-    val y: Double = js.native
+    val y: Double
   }
   object IDOMRectReadOnly {
     
@@ -73,14 +71,13 @@ object resizeObserverTypesMod {
     }
   }
   
-  @js.native
   trait IResizeEntry extends StObject {
     
     /** Measured dimensions of the target. */
-    val contentRect: IDOMRectReadOnly = js.native
+    val contentRect: IDOMRectReadOnly
     
     /** The resized element. */
-    val target: Element = js.native
+    val target: Element
   }
   object IResizeEntry {
     

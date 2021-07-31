@@ -7,26 +7,28 @@ import typings.abstractLeveldown.mod.AbstractLevelDOWN
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
   
   @JSImport("level-js", JSImport.Namespace)
   @js.native
-  val ^ : LevelConstructor = js.native
+  val ^ : js.Object & LevelConstructor = js.native
   
   /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
   @JSImport("level-js", JSImport.Namespace)
   @js.native
-  class Class protected () extends Level {
+  class Class protected ()
+    extends StObject
+       with Level {
     def this(location: String) = this()
     def this(location: String, options: LevelOptions) = this()
   }
   
   @js.native
   trait Level
-    extends AbstractLevelDOWN[js.Any, js.Any] {
+    extends StObject
+       with AbstractLevelDOWN[js.Any, js.Any] {
     
     def destroy(location: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
     def destroy(location: String, prefix: String, cb: js.Function1[/* err */ js.UndefOr[Error], Unit]): Unit = js.native
@@ -40,19 +42,19 @@ object mod extends Shortcut {
   
   @js.native
   trait LevelConstructor
-    extends Instantiable1[/* location */ String, Level]
+    extends StObject
+       with Instantiable1[/* location */ String, Level]
        with Instantiable2[/* location */ String, /* options */ LevelOptions, Level] {
     
     def apply(location: String): Level = js.native
     def apply(location: String, options: LevelOptions): Level = js.native
   }
   
-  @js.native
   trait LevelOptions extends StObject {
     
-    val prefix: js.UndefOr[String] = js.native
+    val prefix: js.UndefOr[String] = js.undefined
     
-    val version: js.UndefOr[String | Double] = js.native
+    val version: js.UndefOr[String | Double] = js.undefined
   }
   object LevelOptions {
     
@@ -79,8 +81,8 @@ object mod extends Shortcut {
     }
   }
   
-  type _To = LevelConstructor
+  type _To = js.Object & LevelConstructor
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: LevelConstructor = ^
+  override def _to: js.Object & LevelConstructor = ^
 }

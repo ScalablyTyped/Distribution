@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Tooltip
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofTooltip extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Tooltip = js.native
+  def extend(proto: js.Object): Tooltip
   
   /* static member */
-  var fn: Tooltip = js.native
+  var fn: Tooltip
 }
 object TypeofTooltip {
   

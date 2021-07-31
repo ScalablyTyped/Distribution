@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.view
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,42 +9,41 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * These options are only valid for a single print job. They do not change layout or formatting of the document.
   */
-@js.native
 trait PrintOptions extends StObject {
   
   /** advises the printer to collate the pages of the copies. */
-  var Collate: Boolean = js.native
+  var Collate: Boolean
   
   /** specifies the number of copies to print. */
-  var CopyCount: Double = js.native
+  var CopyCount: Double
   
   /**
     * determines the duplex mode for the print job.
     * @see DuplexMode for more information about supported values
     */
-  var DuplexMode: Double = js.native
+  var DuplexMode: Double
   
   /** if set, specifies the name of a file to print to. */
-  var FileName: String = js.native
+  var FileName: String
   
   /**
     * specifies which pages to print.
     *
     * This range is given as at the user interface. For example: "1-4;10" to print the pages 1 to 4 and 10.
     */
-  var Pages: String = js.native
+  var Pages: String
   
   /** if set, specifies name of the printer to use. */
-  var PrinterName: String = js.native
+  var PrinterName: String
   
   /**
     * advises the printer to sort the pages of the copies.
     * @deprecated DeprecatedUse Collate instead.
     */
-  var Sort: Boolean = js.native
+  var Sort: Boolean
   
   /** if set to TRUE, the corresponding {@link XPrintable.print()} request will be executed synchronous. <p>Default is the asynchronous print mode.</p> */
-  var Wait: Boolean = js.native
+  var Wait: Boolean
 }
 object PrintOptions {
   

@@ -3,26 +3,24 @@ package typings.vsoNodeApi.gitInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitPushSearchCriteria extends StObject {
   
-  var fromDate: Date = js.native
+  var fromDate: Date
   
   /**
     * Whether to include the _links field on the shallow references
     */
-  var includeLinks: Boolean = js.native
+  var includeLinks: Boolean
   
-  var includeRefUpdates: Boolean = js.native
+  var includeRefUpdates: Boolean
   
-  var pusherId: String = js.native
+  var pusherId: String
   
-  var refName: String = js.native
+  var refName: String
   
-  var toDate: Date = js.native
+  var toDate: Date
 }
 object GitPushSearchCriteria {
   

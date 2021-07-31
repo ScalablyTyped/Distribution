@@ -2,21 +2,19 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EncryptionConfig extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the KMS key.
     */
-  var KMSKeyArn: typings.awsSdk.forecastserviceMod.KMSKeyArn = js.native
+  var KMSKeyArn: typings.awsSdk.forecastserviceMod.KMSKeyArn
   
   /**
     * The ARN of the IAM role that Amazon Forecast can assume to access the AWS KMS key. Passing a role across AWS accounts is not allowed. If you pass a role that isn't in your account, you get an InvalidInputException error.
     */
-  var RoleArn: Arn = js.native
+  var RoleArn: Arn
 }
 object EncryptionConfig {
   

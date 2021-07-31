@@ -2,10 +2,8 @@ package typings.karma.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FilePattern extends StObject {
   
   /**
@@ -13,24 +11,24 @@ trait FilePattern extends StObject {
     * @description Should the files be included in the browser using <script> tag? Use false if you want to
     * load them manually, eg. using Require.js.
     */
-  var included: js.UndefOr[Boolean] = js.native
+  var included: js.UndefOr[Boolean] = js.undefined
   
   /**
     * @default false
     * @description Should the files be served from disk on each request by Karma's webserver?
     */
-  var nocache: js.UndefOr[Boolean] = js.native
+  var nocache: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The pattern to use for matching.
     */
-  var pattern: String = js.native
+  var pattern: String
   
   /**
     * @default true
     * @description Should the files be served by Karma's webserver?
     */
-  var served: js.UndefOr[Boolean] = js.native
+  var served: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Choose the type to use when including a file
@@ -39,14 +37,14 @@ trait FilePattern extends StObject {
     * The css and html types create link elements; the js, dart, and module elements create script elements.
     * The dom type includes the file content in the page, used, for example, to test components combining HTML and JS.
     */
-  var `type`: js.UndefOr[FilePatternTypes] = js.native
+  var `type`: js.UndefOr[FilePatternTypes] = js.undefined
   
   /**
     * @default true
     * @description If <code>autoWatch</code> is true all files that have set watched to true will be watched
     * for changes.
     */
-  var watched: js.UndefOr[Boolean] = js.native
+  var watched: js.UndefOr[Boolean] = js.undefined
 }
 object FilePattern {
   

@@ -3,24 +3,22 @@ package typings.amapJsApiPlaceSearch.anon
 import typings.amapJsApiPlaceSearch.amapJsApiPlaceSearchStrings.HOTEL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hotel extends StObject {
   
-  var deep_type: HOTEL = js.native
+  var deep_type: HOTEL
   
   /**
     * @deprecated 酒店类深度信息
     */
-  var hotel: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel = js.native
+  var hotel: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel
 }
 object Hotel {
   
   @scala.inline
-  def apply(deep_type: HOTEL, hotel: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel): Hotel = {
-    val __obj = js.Dynamic.literal(deep_type = deep_type.asInstanceOf[js.Any], hotel = hotel.asInstanceOf[js.Any])
+  def apply(hotel: typings.amapJsApiPlaceSearch.AMap.PlaceSearch.Hotel): Hotel = {
+    val __obj = js.Dynamic.literal(deep_type = "HOTEL", hotel = hotel.asInstanceOf[js.Any])
     __obj.asInstanceOf[Hotel]
   }
   

@@ -9,12 +9,12 @@ import typings.winrt.Windows.Foundation.IAsyncOperationWithProgress
 import typings.winrt.anon.Progress
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait GetSmsMessagesOperation
-  extends IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]
+  extends StObject
+     with IAsyncOperationWithProgress[IVectorView[ISmsMessage], Double]
      with IAsyncInfo {
   
   /* InferMemberOverrides */

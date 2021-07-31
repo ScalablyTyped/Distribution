@@ -2,26 +2,24 @@ package typings.awsSdk.amplifyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetJobRequest extends StObject {
   
   /**
     *  The unique ID for an Amplify app. 
     */
-  var appId: AppId = js.native
+  var appId: AppId
   
   /**
     *  The branch name for the job. 
     */
-  var branchName: BranchName = js.native
+  var branchName: BranchName
   
   /**
     *  The unique ID for the job. 
     */
-  var jobId: JobId = js.native
+  var jobId: JobId
 }
 object GetJobRequest {
   

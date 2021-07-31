@@ -2,49 +2,47 @@ package typings.onesignalCordovaPlugin.OneSignalCordovaPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OSNotificationPayload extends StObject {
   
-  var actionButtons: js.Array[OSActionButton] = js.native
+  var actionButtons: js.Array[OSActionButton]
   
-  var additionalData: js.UndefOr[js.Any] = js.native
+  var additionalData: js.UndefOr[js.Any] = js.undefined
   
-  var backgroundImageLayout: js.UndefOr[OSBackgroundImageLayout] = js.native
+  var backgroundImageLayout: js.UndefOr[OSBackgroundImageLayout] = js.undefined
   
-  var bigPicture: js.UndefOr[String] = js.native
+  var bigPicture: js.UndefOr[String] = js.undefined
   
-  var body: String = js.native
+  var body: String
   
-  var fromProjectNumber: js.UndefOr[String] = js.native
+  var fromProjectNumber: js.UndefOr[String] = js.undefined
   
-  var groupKey: js.UndefOr[String] = js.native
+  var groupKey: js.UndefOr[String] = js.undefined
   
-  var groupMessage: js.UndefOr[String] = js.native
+  var groupMessage: js.UndefOr[String] = js.undefined
   
-  var largeIcon: js.UndefOr[String] = js.native
+  var largeIcon: js.UndefOr[String] = js.undefined
   
-  var launchURL: js.UndefOr[String] = js.native
+  var launchURL: js.UndefOr[String] = js.undefined
   
-  var ledColor: js.UndefOr[String] = js.native
+  var ledColor: js.UndefOr[String] = js.undefined
   
-  var lockScreenVisibility: js.UndefOr[OSLockScreenVisibility] = js.native
+  var lockScreenVisibility: js.UndefOr[OSLockScreenVisibility] = js.undefined
   
-  var notificationID: String = js.native
+  var notificationID: String
   
-  var priority: js.UndefOr[Double] = js.native
+  var priority: js.UndefOr[Double] = js.undefined
   
-  var rawPayload: String = js.native
+  var rawPayload: String
   
-  var smallIcon: js.UndefOr[String] = js.native
+  var smallIcon: js.UndefOr[String] = js.undefined
   
-  var smallIconAccentColor: js.UndefOr[String] = js.native
+  var smallIconAccentColor: js.UndefOr[String] = js.undefined
   
-  var sound: String = js.native
+  var sound: String
   
-  var title: String = js.native
+  var title: String
 }
 object OSNotificationPayload {
   

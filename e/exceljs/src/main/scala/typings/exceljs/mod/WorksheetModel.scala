@@ -4,30 +4,28 @@ import typings.exceljs.anon.PartialHeaderFooter
 import typings.exceljs.anon.PartialPageSetup
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorksheetModel extends StObject {
   
-  var autoFilter: AutoFilter = js.native
+  var autoFilter: AutoFilter
   
-  var headerFooter: PartialHeaderFooter = js.native
+  var headerFooter: PartialHeaderFooter
   
-  var id: Double = js.native
+  var id: Double
   
-  var media: js.Array[Media] = js.native
+  var media: js.Array[Media]
   
-  var name: String = js.native
+  var name: String
   
-  var pageSetup: PartialPageSetup = js.native
+  var pageSetup: PartialPageSetup
   
   // dataValidations: this.dataValidations.model,
-  var properties: WorksheetProperties = js.native
+  var properties: WorksheetProperties
   
-  var rowBreaks: js.Array[RowBreak] = js.native
+  var rowBreaks: js.Array[RowBreak]
   
-  var views: js.Array[WorksheetView] = js.native
+  var views: js.Array[WorksheetView]
 }
 object WorksheetModel {
   

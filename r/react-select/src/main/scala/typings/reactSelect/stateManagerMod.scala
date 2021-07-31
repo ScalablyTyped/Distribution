@@ -17,30 +17,32 @@ import typings.std.Exclude
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stateManagerMod {
   
-  @JSImport("react-select/src/stateManager", JSImport.Default)
+  @JSImport("react-select/src/stateManager", JSImport.Namespace)
   @js.native
-  def default[T /* <: typings.reactSelect.selectMod.default[_] */](SelectComponent: T): StateManager[GetOptionType[T], T] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T /* <: typings.reactSelect.selectMod.default[js.Any] */](SelectComponent: T): StateManager[GetOptionType[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[StateManager[GetOptionType[T], T]]
   
   @JSImport("react-select/src/stateManager", "StateManager")
   @js.native
   class StateManager[OptionType /* <: OptionTypeBase */, T /* <: default[OptionType] */] protected ()
     extends Component[
-          StateProps[typings.reactSelect.selectMod.Props[OptionType]] with Props[OptionType] with typings.reactSelect.selectMod.Props[OptionType], 
+          StateProps[typings.reactSelect.selectMod.Props[OptionType]] & Props[OptionType] & typings.reactSelect.selectMod.Props[OptionType], 
           State[OptionType], 
           js.Any
         ] {
-    def this(props: StateProps[typings.reactSelect.selectMod.Props[OptionType]] with Props[OptionType] with typings.reactSelect.selectMod.Props[OptionType]) = this()
+    def this(props: StateProps[typings.reactSelect.selectMod.Props[OptionType]] & Props[OptionType] & typings.reactSelect.selectMod.Props[OptionType]) = this()
     /**
       * @deprecated
       * @see https://reactjs.org/docs/legacy-context.html
       */
     def this(
-      props: StateProps[typings.reactSelect.selectMod.Props[OptionType]] with Props[OptionType] with typings.reactSelect.selectMod.Props[OptionType],
+      props: StateProps[typings.reactSelect.selectMod.Props[OptionType]] & Props[OptionType] & typings.reactSelect.selectMod.Props[OptionType],
       context: js.Any
     ) = this()
     
@@ -76,18 +78,16 @@ object stateManagerMod {
     def defaultProps_=(x: DefaultProps[js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("react-select/src/stateManager", "manageState")
-  @js.native
-  def manageState[T /* <: default[_] */](SelectComponent: T): StateManager[GetOptionType[T], T] = js.native
+  @scala.inline
+  def manageState[T /* <: default[js.Any] */](SelectComponent: T): StateManager[GetOptionType[T], T] = ^.asInstanceOf[js.Dynamic].applyDynamic("manageState")(SelectComponent.asInstanceOf[js.Any]).asInstanceOf[StateManager[GetOptionType[T], T]]
   
-  @js.native
   trait DefaultProps[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var defaultInputValue: String = js.native
+    var defaultInputValue: String
     
-    var defaultMenuIsOpen: Boolean = js.native
+    var defaultMenuIsOpen: Boolean
     
-    var defaultValue: ValueType[OptionType] = js.native
+    var defaultValue: ValueType[OptionType]
   }
   object DefaultProps {
     
@@ -98,7 +98,7 @@ object stateManagerMod {
     }
     
     @scala.inline
-    implicit class DefaultPropsMutableBuilder[Self <: DefaultProps[_], OptionType /* <: OptionTypeBase */] (val x: Self with DefaultProps[OptionType]) extends AnyVal {
+    implicit class DefaultPropsMutableBuilder[Self <: DefaultProps[?], OptionType /* <: OptionTypeBase */] (val x: Self & DefaultProps[OptionType]) extends AnyVal {
       
       @scala.inline
       def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
@@ -122,24 +122,23 @@ object stateManagerMod {
   
   type GetOptionType[T] = js.Any
   
-  @js.native
   trait Props[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var defaultInputValue: js.UndefOr[String] = js.native
+    var defaultInputValue: js.UndefOr[String] = js.undefined
     
-    var defaultMenuIsOpen: js.UndefOr[Boolean] = js.native
+    var defaultMenuIsOpen: js.UndefOr[Boolean] = js.undefined
     
-    var defaultValue: js.UndefOr[ValueType[OptionType]] = js.native
+    var defaultValue: js.UndefOr[ValueType[OptionType]] = js.undefined
     
-    var inputValue: js.UndefOr[String] = js.native
+    var inputValue: js.UndefOr[String] = js.undefined
     
-    var menuIsOpen: js.UndefOr[Boolean] = js.native
+    var menuIsOpen: js.UndefOr[Boolean] = js.undefined
     
     var onChange: js.UndefOr[
         js.Function2[/* value */ ValueType[OptionType], /* actionMeta */ ActionMeta[OptionType], Unit]
-      ] = js.native
+      ] = js.undefined
     
-    var value: js.UndefOr[ValueType[OptionType]] = js.native
+    var value: js.UndefOr[ValueType[OptionType]] = js.undefined
   }
   object Props {
     
@@ -150,7 +149,7 @@ object stateManagerMod {
     }
     
     @scala.inline
-    implicit class PropsMutableBuilder[Self <: Props[_], OptionType /* <: OptionTypeBase */] (val x: Self with Props[OptionType]) extends AnyVal {
+    implicit class PropsMutableBuilder[Self <: Props[?], OptionType /* <: OptionTypeBase */] (val x: Self & Props[OptionType]) extends AnyVal {
       
       @scala.inline
       def setDefaultInputValue(value: String): Self = StObject.set(x, "defaultInputValue", value.asInstanceOf[js.Any])
@@ -208,14 +207,13 @@ object stateManagerMod {
     }
   }
   
-  @js.native
   trait State[OptionType /* <: OptionTypeBase */] extends StObject {
     
-    var inputValue: String = js.native
+    var inputValue: String
     
-    var menuIsOpen: Boolean = js.native
+    var menuIsOpen: Boolean
     
-    var value: ValueType[OptionType] = js.native
+    var value: ValueType[OptionType]
   }
   object State {
     
@@ -226,7 +224,7 @@ object stateManagerMod {
     }
     
     @scala.inline
-    implicit class StateMutableBuilder[Self <: State[_], OptionType /* <: OptionTypeBase */] (val x: Self with State[OptionType]) extends AnyVal {
+    implicit class StateMutableBuilder[Self <: State[?], OptionType /* <: OptionTypeBase */] (val x: Self & State[OptionType]) extends AnyVal {
       
       @scala.inline
       def setInputValue(value: String): Self = StObject.set(x, "inputValue", value.asInstanceOf[js.Any])
@@ -248,7 +246,7 @@ object stateManagerMod {
     }
   }
   
-  type StateProps[T /* <: typings.reactSelect.selectMod.Props[_] */] = Pick[
+  type StateProps[T /* <: typings.reactSelect.selectMod.Props[js.Any] */] = Pick[
     T, 
     Exclude[
       /* keyof T */ String, 

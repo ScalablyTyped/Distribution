@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A command to receive a document's content in RTF format.
   */
 @js.native
-trait GetRtfCommand extends CommandWithSimpleStateBase {
+trait GetRtfCommand
+  extends StObject
+     with CommandWithSimpleStateBase {
   
   /**
     * Executes the GetRtfCommand command with the specified parameters. true if the command has been successfully executed; false if the command execution has failed.

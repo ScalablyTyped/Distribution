@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cloudidentityMod {
+  
+  @JSImport("googleapis/build/src/apis/cloudidentity", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object cloudidentityMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/cloudidentity", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/cloudidentity", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object cloudidentityMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/cloudidentity", "cloudidentity")
-  @js.native
-  def cloudidentity(options: Options): Cloudidentity = js.native
-  @JSImport("googleapis/build/src/apis/cloudidentity", "cloudidentity")
-  @js.native
-  def cloudidentity(options: typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Options): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = js.native
-  @JSImport("googleapis/build/src/apis/cloudidentity", "cloudidentity")
-  @js.native
-  def cloudidentity_v1(version: v1): Cloudidentity = js.native
-  @JSImport("googleapis/build/src/apis/cloudidentity", "cloudidentity")
-  @js.native
-  def cloudidentity_v1beta1(version: v1beta1): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = js.native
+  @scala.inline
+  def cloudidentity(options: Options): Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(options.asInstanceOf[js.Any]).asInstanceOf[Cloudidentity]
+  @scala.inline
+  def cloudidentity(options: typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Options): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity]
+  
+  @scala.inline
+  def cloudidentity_v1(version: v1): Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(version.asInstanceOf[js.Any]).asInstanceOf[Cloudidentity]
+  
+  @scala.inline
+  def cloudidentity_v1beta1(version: v1beta1): typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity = ^.asInstanceOf[js.Dynamic].applyDynamic("cloudidentity")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.cloudidentityV1beta1Mod.cloudidentityV1beta1.Cloudidentity]
 }

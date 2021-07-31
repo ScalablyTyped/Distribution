@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.Shortcut
 import typings.node.processMod.global.NodeJS.ProcessEnv
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -56,7 +55,9 @@ object mod extends Shortcut {
     * Provides the functionality to search for a command.
     */
   @js.native
-  trait NpmWhich extends WhichBase[NpmWhichOptions] {
+  trait NpmWhich
+    extends StObject
+       with WhichBase[NpmWhichOptions] {
     
     /**
       * Searches for the specified command.
@@ -79,18 +80,17 @@ object mod extends Shortcut {
   /**
     * Provides options for the `npmwhich`-module.
     */
-  @js.native
   trait NpmWhichOptions extends StObject {
     
     /**
       * The directory to find the binary for.
       */
-    var cwd: js.UndefOr[String] = js.native
+    var cwd: js.UndefOr[String] = js.undefined
     
     /**
       * The environment to use for resolving the binary.
       */
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
   }
   object NpmWhichOptions {
     
@@ -121,7 +121,9 @@ object mod extends Shortcut {
     * Represents the static instance of `npm-which`.
     */
   @js.native
-  trait StaticWhich extends WhichBase[StaticWhichOptions] {
+  trait StaticWhich
+    extends StObject
+       with WhichBase[StaticWhichOptions] {
     
     /**
       * Initializes an `NpmWhich`-instance for the specified working-directory.
@@ -146,18 +148,17 @@ object mod extends Shortcut {
   /**
     * Provides options for the `npmwhich`-module.
     */
-  @js.native
   trait StaticWhichOptions extends StObject {
     
     /**
       * The directory to find the binary for.
       */
-    var cwd: String = js.native
+    var cwd: String
     
     /**
       * The environment to use for resolving the binary.
       */
-    var env: js.UndefOr[ProcessEnv] = js.native
+    var env: js.UndefOr[ProcessEnv] = js.undefined
   }
   object StaticWhichOptions {
     

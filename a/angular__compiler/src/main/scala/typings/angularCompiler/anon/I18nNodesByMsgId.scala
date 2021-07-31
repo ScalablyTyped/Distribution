@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.angularCompiler.i18nAstMod.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait I18nNodesByMsgId extends StObject {
   
-  var i18nNodesByMsgId: StringDictionary[js.Array[Node]] = js.native
+  var i18nNodesByMsgId: StringDictionary[js.Array[Node]]
   
-  var locale: String | Null = js.native
+  var locale: String | Null
 }
 object I18nNodesByMsgId {
   
   @scala.inline
   def apply(i18nNodesByMsgId: StringDictionary[js.Array[Node]]): I18nNodesByMsgId = {
-    val __obj = js.Dynamic.literal(i18nNodesByMsgId = i18nNodesByMsgId.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(i18nNodesByMsgId = i18nNodesByMsgId.asInstanceOf[js.Any], locale = null)
     __obj.asInstanceOf[I18nNodesByMsgId]
   }
   

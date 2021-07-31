@@ -2,18 +2,16 @@ package typings.vsoNodeApi.notificationInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperatorConstraint extends StObject {
   
-  var operator: String = js.native
+  var operator: String
   
   /**
     * Gets or sets the list of scopes that this type supports.
     */
-  var supportedScopes: js.Array[String] = js.native
+  var supportedScopes: js.Array[String]
 }
 object OperatorConstraint {
   

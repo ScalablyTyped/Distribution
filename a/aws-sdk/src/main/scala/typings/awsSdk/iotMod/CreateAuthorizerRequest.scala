@@ -2,46 +2,44 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAuthorizerRequest extends StObject {
   
   /**
     * The ARN of the authorizer's Lambda function.
     */
-  var authorizerFunctionArn: AuthorizerFunctionArn = js.native
+  var authorizerFunctionArn: AuthorizerFunctionArn
   
   /**
     * The authorizer name.
     */
-  var authorizerName: AuthorizerName = js.native
+  var authorizerName: AuthorizerName
   
   /**
     * Specifies whether AWS IoT validates the token signature in an authorization request.
     */
-  var signingDisabled: js.UndefOr[BooleanKey] = js.native
+  var signingDisabled: js.UndefOr[BooleanKey] = js.undefined
   
   /**
     * The status of the create authorizer request.
     */
-  var status: js.UndefOr[AuthorizerStatus] = js.native
+  var status: js.UndefOr[AuthorizerStatus] = js.undefined
   
   /**
     * Metadata which can be used to manage the custom authorizer.  For URI Request parameters use format: ...key1=value1&amp;key2=value2... For the CLI command-line parameter use format: &amp;&amp;tags "key1=value1&amp;key2=value2..." For the cli-input-json file use format: "tags": "key1=value1&amp;key2=value2..." 
     */
-  var tags: js.UndefOr[TagList] = js.native
+  var tags: js.UndefOr[TagList] = js.undefined
   
   /**
     * The name of the token key used to extract the token from the HTTP headers.
     */
-  var tokenKeyName: js.UndefOr[TokenKeyName] = js.native
+  var tokenKeyName: js.UndefOr[TokenKeyName] = js.undefined
   
   /**
     * The public keys used to verify the digital signature returned by your custom authentication service.
     */
-  var tokenSigningPublicKeys: js.UndefOr[PublicKeyMap] = js.native
+  var tokenSigningPublicKeys: js.UndefOr[PublicKeyMap] = js.undefined
 }
 object CreateAuthorizerRequest {
   

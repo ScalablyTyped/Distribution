@@ -2,23 +2,21 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Author extends StObject {
   
-  var author: Email = js.native
+  var author: Email
   
-  var committer: Email = js.native
+  var committer: Email
   
-  var id: String = js.native
+  var id: String
   
-  var message: String = js.native
+  var message: String
   
-  var timestamp: String = js.native
+  var timestamp: String
   
-  var tree_id: String = js.native
+  var tree_id: String
 }
 object Author {
   

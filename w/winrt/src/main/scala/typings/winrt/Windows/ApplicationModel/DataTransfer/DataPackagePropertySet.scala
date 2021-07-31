@@ -8,11 +8,11 @@ import typings.winrt.Windows.Foundation.Uri
 import typings.winrt.Windows.Storage.Streams.IRandomAccessStreamReference
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataPackagePropertySet extends IDataPackagePropertySet
+trait DataPackagePropertySet
+  extends StObject
+     with IDataPackagePropertySet
 object DataPackagePropertySet {
   
   @scala.inline

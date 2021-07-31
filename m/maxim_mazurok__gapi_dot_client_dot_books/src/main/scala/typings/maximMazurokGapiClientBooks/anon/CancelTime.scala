@@ -2,19 +2,17 @@ package typings.maximMazurokGapiClientBooks.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CancelTime extends StObject {
   
-  var cancelTime: js.UndefOr[String] = js.native
+  var cancelTime: js.UndefOr[String] = js.undefined
   
-  var currentReleaseInfo: js.UndefOr[AmountInMicros] = js.native
+  var currentReleaseInfo: js.UndefOr[AmountInMicros] = js.undefined
   
-  var nextReleaseInfo: js.UndefOr[AmountInMicros] = js.native
+  var nextReleaseInfo: js.UndefOr[AmountInMicros] = js.undefined
   
-  var seriesSubscriptionType: js.UndefOr[String] = js.native
+  var seriesSubscriptionType: js.UndefOr[String] = js.undefined
 }
 object CancelTime {
   

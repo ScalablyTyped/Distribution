@@ -34,7 +34,6 @@ import typings.std.Date
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object connectionMod {
@@ -55,7 +54,7 @@ object connectionMod {
     def create[T](records: js.Array[Record[T]]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       records: js.Array[Record[T]],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -67,7 +66,7 @@ object connectionMod {
     def create[T](records: Record[T]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](
       records: Record[T],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -80,7 +79,7 @@ object connectionMod {
     def create[T](
       `type`: String,
       records: js.Array[Record[T]],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](`type`: String, records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -94,7 +93,7 @@ object connectionMod {
     def create[T](
       `type`: String,
       records: Record[T],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def create[T](`type`: String, records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -109,7 +108,7 @@ object connectionMod {
     def del[T](
       `type`: String,
       ids: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -123,7 +122,7 @@ object connectionMod {
     def del[T](
       `type`: String,
       ids: js.Array[String],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def del[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -138,7 +137,7 @@ object connectionMod {
     def delete[T](
       `type`: String,
       ids: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -152,7 +151,7 @@ object connectionMod {
     def delete[T](
       `type`: String,
       ids: js.Array[String],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def delete[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -201,7 +200,7 @@ object connectionMod {
     def destroy[T](
       `type`: String,
       ids: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -215,7 +214,7 @@ object connectionMod {
     def destroy[T](
       `type`: String,
       ids: js.Array[String],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def destroy[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -230,7 +229,7 @@ object connectionMod {
     def insert[T](
       `type`: String,
       records: js.Array[Record[T]],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](`type`: String, records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -244,7 +243,7 @@ object connectionMod {
     def insert[T](
       `type`: String,
       records: Record[T],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def insert[T](`type`: String, records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -258,7 +257,7 @@ object connectionMod {
     def query[T](soql: String): Query[QueryResult[T]] = js.native
     def query[T](
       soql: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
     ): Query[QueryResult[T]] = js.native
     def query[T](soql: String, options: ExecuteOptions): Query[QueryResult[T]] = js.native
@@ -271,7 +270,7 @@ object connectionMod {
     def queryMore[T](locator: String): js.Promise[QueryResult[T]] = js.native
     def queryMore[T](
       locator: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
     ): js.Promise[QueryResult[T]] = js.native
     def queryMore[T](locator: String, options: ExecuteOptions): js.Promise[QueryResult[T]] = js.native
@@ -295,11 +294,7 @@ object connectionMod {
     ): js.Promise[js.Array[RecordResult]] = js.native
     
     def request[T](info: String): js.Promise[T] = js.native
-    def request[T](
-      info: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* Object */ T, Unit]
-    ): js.Promise[T] = js.native
+    def request[T](info: String, options: Unit, callback: js.Function2[/* err */ Error, /* Object */ T, Unit]): js.Promise[T] = js.native
     def request[T](info: String, options: HttpApiOptions): js.Promise[T] = js.native
     def request[T](
       info: String,
@@ -307,11 +302,7 @@ object connectionMod {
       callback: js.Function2[/* err */ Error, /* Object */ T, Unit]
     ): js.Promise[T] = js.native
     def request[T](info: RequestInfo): js.Promise[T] = js.native
-    def request[T](
-      info: RequestInfo,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* Object */ T, Unit]
-    ): js.Promise[T] = js.native
+    def request[T](info: RequestInfo, options: Unit, callback: js.Function2[/* err */ Error, /* Object */ T, Unit]): js.Promise[T] = js.native
     def request[T](info: RequestInfo, options: HttpApiOptions): js.Promise[T] = js.native
     def request[T](
       info: RequestInfo,
@@ -323,7 +314,7 @@ object connectionMod {
     def retrieve[T](
       `type`: String,
       ids: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
     ): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](`type`: String, ids: String, options: RestApiOptions): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
@@ -337,7 +328,7 @@ object connectionMod {
     def retrieve[T](
       `type`: String,
       ids: js.Array[String],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ Record[T] | js.Array[Record[T]], Unit]
     ): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
     def retrieve[T](`type`: String, ids: js.Array[String], options: RestApiOptions): js.Promise[Record[T] | js.Array[Record[T]]] = js.native
@@ -354,7 +345,7 @@ object connectionMod {
     def update[T](records: js.Array[Record[T]]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       records: js.Array[Record[T]],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -366,7 +357,7 @@ object connectionMod {
     def update[T](records: Record[T]): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](
       records: Record[T],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -379,7 +370,7 @@ object connectionMod {
     def update[T](
       `type`: String,
       records: js.Array[Record[T]],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](`type`: String, records: js.Array[Record[T]], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -393,7 +384,7 @@ object connectionMod {
     def update[T](
       `type`: String,
       records: Record[T],
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[Record[T]], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def update[T](`type`: String, records: Record[T], options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -408,7 +399,7 @@ object connectionMod {
     def upsert[T](
       records: js.Array[Record[T]],
       extIdField: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](records: js.Array[Record[T]], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -422,7 +413,7 @@ object connectionMod {
     def upsert[T](
       records: Record[T],
       extIdField: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](records: Record[T], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -437,7 +428,7 @@ object connectionMod {
       `type`: String,
       records: js.Array[Record[T]],
       extIdField: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](`type`: String, records: js.Array[Record[T]], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -453,7 +444,7 @@ object connectionMod {
       `type`: String,
       records: Record[T],
       extIdField: String,
-      options: js.UndefOr[scala.Nothing],
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ RecordResult | js.Array[RecordResult], Unit]
     ): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
     def upsert[T](`type`: String, records: Record[T], extIdField: String, options: RestApiOptions): js.Promise[RecordResult | js.Array[RecordResult]] = js.native
@@ -496,7 +487,7 @@ object connectionMod {
     var instanceUrl: String = js.native
     
     def limits(): js.Promise[LimitsInfo] = js.native
-    def limits(callback: js.Function2[/* err */ Error, /* res */ js.UndefOr[scala.Nothing], Unit]): js.Promise[LimitsInfo] = js.native
+    def limits(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[LimitsInfo] = js.native
     
     def login(user: String, password: String): js.Promise[UserInfo] = js.native
     def login(user: String, password: String, callback: js.Function2[/* err */ Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
@@ -508,43 +499,34 @@ object connectionMod {
     def loginBySoap(user: String, password: String, callback: js.Function2[/* err */ Error, /* res */ UserInfo, Unit]): js.Promise[UserInfo] = js.native
     
     def logout(): js.Promise[Unit] = js.native
-    def logout(callback: js.Function2[/* err */ Error, /* res */ js.UndefOr[scala.Nothing], Unit]): js.Promise[Unit] = js.native
+    def logout(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     def logout(revoke: Boolean): js.Promise[Unit] = js.native
-    def logout(
-      revoke: Boolean,
-      callback: js.Function2[/* err */ Error, /* res */ js.UndefOr[scala.Nothing], Unit]
-    ): js.Promise[Unit] = js.native
+    def logout(revoke: Boolean, callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     
     def logoutByOAuth2(): js.Promise[Unit] = js.native
-    def logoutByOAuth2(callback: js.Function2[/* err */ Error, /* res */ js.UndefOr[scala.Nothing], Unit]): js.Promise[Unit] = js.native
+    def logoutByOAuth2(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     def logoutByOAuth2(revoke: Boolean): js.Promise[Unit] = js.native
-    def logoutByOAuth2(
-      revoke: Boolean,
-      callback: js.Function2[/* err */ Error, /* res */ js.UndefOr[scala.Nothing], Unit]
-    ): js.Promise[Unit] = js.native
+    def logoutByOAuth2(revoke: Boolean, callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     
     def logoutBySoap(): js.Promise[Unit] = js.native
-    def logoutBySoap(callback: js.Function2[/* err */ Error, /* res */ js.UndefOr[scala.Nothing], Unit]): js.Promise[Unit] = js.native
+    def logoutBySoap(callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     def logoutBySoap(revoke: Boolean): js.Promise[Unit] = js.native
-    def logoutBySoap(
-      revoke: Boolean,
-      callback: js.Function2[/* err */ Error, /* res */ js.UndefOr[scala.Nothing], Unit]
-    ): js.Promise[Unit] = js.native
+    def logoutBySoap(revoke: Boolean, callback: js.Function2[/* err */ Error, /* res */ Unit, Unit]): js.Promise[Unit] = js.native
     
     var metadata: Metadata = js.native
     
     var oauth2: OAuth2 = js.native
     
     def queryAll[T](soql: String): Query[QueryResult[T]] = js.native
-    def queryAll[T](
-      soql: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
-    ): Query[QueryResult[T]] = js.native
     def queryAll[T](soql: String, options: js.Object): Query[QueryResult[T]] = js.native
     def queryAll[T](
       soql: String,
       options: js.Object,
+      callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
+    ): Query[QueryResult[T]] = js.native
+    def queryAll[T](
+      soql: String,
+      options: Unit,
       callback: js.Function2[/* err */ Error, /* result */ QueryResult[T], Unit]
     ): Query[QueryResult[T]] = js.native
     
@@ -590,38 +572,39 @@ object connectionMod {
   
   type ConnectionEvent = refresh
   
-  @js.native
-  trait ConnectionOptions extends PartialOAuth2Options {
+  trait ConnectionOptions
+    extends StObject
+       with PartialOAuth2Options {
     
-    var accessToken: js.UndefOr[String] = js.native
+    var accessToken: js.UndefOr[String] = js.undefined
     
-    var callOptions: js.UndefOr[js.Object] = js.native
+    var callOptions: js.UndefOr[js.Object] = js.undefined
     
-    var httpProxy: js.UndefOr[String] = js.native
+    var httpProxy: js.UndefOr[String] = js.undefined
     
-    var instanceUrl: js.UndefOr[String] = js.native
+    var instanceUrl: js.UndefOr[String] = js.undefined
     
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
-    var maxRequest: js.UndefOr[Double] = js.native
+    var maxRequest: js.UndefOr[Double] = js.undefined
     
-    var oauth2: js.UndefOr[PartialPartialOAuth2Optio] = js.native
+    var oauth2: js.UndefOr[PartialPartialOAuth2Optio] = js.undefined
     
-    var proxyUrl: js.UndefOr[String] = js.native
+    var proxyUrl: js.UndefOr[String] = js.undefined
     
     var refreshFn: js.UndefOr[
         js.Function2[/* conn */ Connection, /* callback */ Callback[UserInfo], js.Promise[UserInfo]]
-      ] = js.native
+      ] = js.undefined
     
-    var refreshToken: js.UndefOr[String] = js.native
+    var refreshToken: js.UndefOr[String] = js.undefined
     
-    var serverUrl: js.UndefOr[String] = js.native
+    var serverUrl: js.UndefOr[String] = js.undefined
     
-    var sessionId: js.UndefOr[String] = js.native
+    var sessionId: js.UndefOr[String] = js.undefined
     
-    var signedRequest: js.UndefOr[String | js.Object] = js.native
+    var signedRequest: js.UndefOr[String | js.Object] = js.undefined
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ConnectionOptions {
     
@@ -720,22 +703,21 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait ExecuteAnonymousResult extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var compileProblem: String = js.native
+    var compileProblem: String
     
-    var compiled: Boolean = js.native
+    var compiled: Boolean
     
-    var exceptionMessage: String = js.native
+    var exceptionMessage: String
     
-    var exceptionStackTrace: String = js.native
+    var exceptionStackTrace: String
     
-    var line: Double = js.native
+    var line: Double
     
-    var success: Boolean = js.native
+    var success: Boolean
   }
   object ExecuteAnonymousResult {
     
@@ -779,70 +761,70 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait IdentityInfo
-    extends // And possible other attributes.
+    extends StObject
+       with // And possible other attributes.
   /* key */ StringDictionary[js.Any] {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var addr_city: String | Null = js.native
+    var addr_city: String | Null
     
-    var addr_country: String | Null = js.native
+    var addr_country: String | Null
     
-    var addr_state: String | Null = js.native
+    var addr_state: String | Null
     
-    var addr_street: String | Null = js.native
+    var addr_street: String | Null
     
-    var addr_zip: String | Null = js.native
+    var addr_zip: String | Null
     
-    var asserted_user: Boolean = js.native
+    var asserted_user: Boolean
     
-    var display_name: String = js.native
+    var display_name: String
     
-    var email: String = js.native
+    var email: String
     
-    var email_verified: Boolean = js.native
+    var email_verified: Boolean
     
-    var first_name: String | Null = js.native
+    var first_name: String | Null
     
-    var id: String = js.native
+    var id: String
     
-    var is_app_installed: Boolean = js.native
+    var is_app_installed: Boolean
     
-    var is_lightning_login_user: Boolean = js.native
+    var is_lightning_login_user: Boolean
     
-    var language: String = js.native
+    var language: String
     
-    var last_modified_date: Date = js.native
+    var last_modified_date: Date
     
-    var last_name: String = js.native
+    var last_name: String
     
-    var locale: String = js.native
+    var locale: String
     
-    var mobile_phone: String | Null = js.native
+    var mobile_phone: String | Null
     
-    var mobile_phone_verified: Boolean = js.native
+    var mobile_phone_verified: Boolean
     
-    var nick_name: String = js.native
+    var nick_name: String
     
-    var organization_id: String = js.native
+    var organization_id: String
     
-    var photos: Picture = js.native
+    var photos: Picture
     
-    var status: Body = js.native
+    var status: Body
     
-    var timezone: String = js.native
+    var timezone: String
     
-    var urls: Customdomain = js.native
+    var urls: Customdomain
     
-    var user_id: String = js.native
+    var user_id: String
     
-    var user_type: String = js.native
+    var user_type: String
     
-    var username: String = js.native
+    var username: String
     
-    var utcOffset: Double = js.native
+    var utcOffset: Double
   }
   object IdentityInfo {
     
@@ -872,7 +854,7 @@ object connectionMod {
       username: String,
       utcOffset: Double
     ): IdentityInfo = {
-      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], asserted_user = asserted_user.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], email_verified = email_verified.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_app_installed = is_app_installed.asInstanceOf[js.Any], is_lightning_login_user = is_lightning_login_user.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], last_modified_date = last_modified_date.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mobile_phone_verified = mobile_phone_verified.asInstanceOf[js.Any], nick_name = nick_name.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], user_type = user_type.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], utcOffset = utcOffset.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(active = active.asInstanceOf[js.Any], asserted_user = asserted_user.asInstanceOf[js.Any], display_name = display_name.asInstanceOf[js.Any], email = email.asInstanceOf[js.Any], email_verified = email_verified.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], is_app_installed = is_app_installed.asInstanceOf[js.Any], is_lightning_login_user = is_lightning_login_user.asInstanceOf[js.Any], language = language.asInstanceOf[js.Any], last_modified_date = last_modified_date.asInstanceOf[js.Any], last_name = last_name.asInstanceOf[js.Any], locale = locale.asInstanceOf[js.Any], mobile_phone_verified = mobile_phone_verified.asInstanceOf[js.Any], nick_name = nick_name.asInstanceOf[js.Any], organization_id = organization_id.asInstanceOf[js.Any], photos = photos.asInstanceOf[js.Any], status = status.asInstanceOf[js.Any], timezone = timezone.asInstanceOf[js.Any], urls = urls.asInstanceOf[js.Any], user_id = user_id.asInstanceOf[js.Any], user_type = user_type.asInstanceOf[js.Any], username = username.asInstanceOf[js.Any], utcOffset = utcOffset.asInstanceOf[js.Any], addr_city = null, addr_country = null, addr_state = null, addr_street = null, addr_zip = null, first_name = null, mobile_phone = null)
       __obj.asInstanceOf[IdentityInfo]
     }
     
@@ -992,20 +974,19 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait PartialOAuth2Options extends StObject {
     
-    var authzServiceUrl: js.UndefOr[String] = js.native
+    var authzServiceUrl: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var clientSecret: js.UndefOr[String] = js.native
+    var clientSecret: js.UndefOr[String] = js.undefined
     
-    var loginUrl: js.UndefOr[String] = js.native
+    var loginUrl: js.UndefOr[String] = js.undefined
     
-    var redirectUri: js.UndefOr[String] = js.native
+    var redirectUri: js.UndefOr[String] = js.undefined
     
-    var tokenServiceUrl: js.UndefOr[String] = js.native
+    var tokenServiceUrl: js.UndefOr[String] = js.undefined
   }
   object PartialOAuth2Options {
     
@@ -1056,16 +1037,15 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait RequestInfo extends StObject {
     
-    var body: js.UndefOr[String] = js.native
+    var body: js.UndefOr[String] = js.undefined
     
-    var headers: js.UndefOr[js.Object] = js.native
+    var headers: js.UndefOr[js.Object] = js.undefined
     
-    var method: js.UndefOr[String] = js.native
+    var method: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object RequestInfo {
     
@@ -1104,14 +1084,13 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait RestApiOptions extends StObject {
     
-    var allOrNone: js.UndefOr[Boolean] = js.native
+    var allOrNone: js.UndefOr[Boolean] = js.undefined
     
-    var allowRecursive: js.UndefOr[Boolean] = js.native
+    var allowRecursive: js.UndefOr[Boolean] = js.undefined
     
-    var headers: js.UndefOr[StringDictionary[String]] = js.native
+    var headers: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object RestApiOptions {
     
@@ -1144,14 +1123,13 @@ object connectionMod {
     }
   }
   
-  @js.native
   trait UserInfo extends StObject {
     
-    var id: String = js.native
+    var id: String
     
-    var organizationId: String = js.native
+    var organizationId: String
     
-    var url: String = js.native
+    var url: String
   }
   object UserInfo {
     

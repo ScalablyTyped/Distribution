@@ -2,15 +2,13 @@ package typings.dialogflow.mod.google.longrunning
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a GetOperationRequest. */
-@js.native
 trait IGetOperationRequest extends StObject {
   
   /** GetOperationRequest name */
-  var name: js.UndefOr[String | Null] = js.native
+  var name: js.UndefOr[String | Null] = js.undefined
 }
 object IGetOperationRequest {
   

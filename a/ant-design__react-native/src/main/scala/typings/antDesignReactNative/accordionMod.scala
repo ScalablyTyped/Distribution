@@ -15,7 +15,6 @@ import typings.reactNative.mod.ViewStyle
 import typings.reactNativeCollapsible.mod.EasingMode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object accordionMod {
@@ -46,14 +45,13 @@ object accordionMod {
     def renderHeader(styles: AccordionStyle): js.Function3[/* section */ T, /* _ */ Double, /* isActive */ Boolean, Element] = js.native
   }
   
-  @js.native
   trait AccordionHeader extends StObject {
     
-    var content: ReactElement = js.native
+    var content: ReactElement
     
-    var style: StyleProp[ViewStyle] = js.native
+    var style: StyleProp[ViewStyle]
     
-    var title: String = js.native
+    var title: String
   }
   object AccordionHeader {
     
@@ -85,26 +83,25 @@ object accordionMod {
   
   /* Inlined parent @ant-design/react-native.@ant-design/react-native/lib/style.WithThemeStyles<@ant-design/react-native.@ant-design/react-native/lib/accordion/style.AccordionStyle> */
   /* Inlined parent std.Partial<react-native-collapsible.react-native-collapsible/Accordion.AccordionProps<T>> */
-  @js.native
   trait AccordionNativeProps[T] extends StObject {
     
-    var activeSections: js.UndefOr[js.Array[Double]] = js.native
+    var activeSections: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var align: js.UndefOr[top | center | bottom] = js.native
+    var align: js.UndefOr[top | center | bottom] = js.undefined
     
-    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var containerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var easing: js.UndefOr[EasingMode | js.Any] = js.native
+    var easing: js.UndefOr[EasingMode | js.Any] = js.undefined
     
-    var expandFromBottom: js.UndefOr[Boolean] = js.native
+    var expandFromBottom: js.UndefOr[Boolean] = js.undefined
     
-    var expandMultiple: js.UndefOr[Boolean] = js.native
+    var expandMultiple: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* indexes */ js.Array[Double], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* indexes */ js.Array[Double], Unit]] = js.undefined
     
     var renderContent: js.UndefOr[
         js.Function4[
@@ -114,7 +111,7 @@ object accordionMod {
           /* sections */ js.Array[T], 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     var renderFooter: js.UndefOr[
         js.Function4[
@@ -124,7 +121,7 @@ object accordionMod {
           /* sections */ js.Array[T], 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     var renderHeader: js.UndefOr[
         js.Function4[
@@ -134,7 +131,7 @@ object accordionMod {
           /* sections */ js.Array[T], 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
     var renderSectionTitle: js.UndefOr[
         js.Function4[
@@ -144,21 +141,21 @@ object accordionMod {
           /* sections */ js.Array[T], 
           ReactElement
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var sectionContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var sectionContainerStyle: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var sections: js.UndefOr[js.Array[T]] = js.native
+    var sections: js.UndefOr[js.Array[T]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var styles: js.UndefOr[PartialAccordionStyle] = js.native
+    var styles: js.UndefOr[PartialAccordionStyle] = js.undefined
     
-    var touchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.native
+    var touchableComponent: js.UndefOr[ComponentClass[js.Object, ComponentState]] = js.undefined
     
-    var touchableProps: js.UndefOr[js.Object] = js.native
+    var touchableProps: js.UndefOr[js.Object] = js.undefined
     
-    var underlayColor: js.UndefOr[String] = js.native
+    var underlayColor: js.UndefOr[String] = js.undefined
   }
   object AccordionNativeProps {
     
@@ -169,7 +166,7 @@ object accordionMod {
     }
     
     @scala.inline
-    implicit class AccordionNativePropsMutableBuilder[Self <: AccordionNativeProps[_], T] (val x: Self with AccordionNativeProps[T]) extends AnyVal {
+    implicit class AccordionNativePropsMutableBuilder[Self <: AccordionNativeProps[?], T] (val x: Self & AccordionNativeProps[T]) extends AnyVal {
       
       @scala.inline
       def setActiveSections(value: js.Array[Double]): Self = StObject.set(x, "activeSections", value.asInstanceOf[js.Any])
@@ -316,12 +313,11 @@ object accordionMod {
     }
   }
   
-  @js.native
   trait AccordionPanelProps extends StObject {
     
-    var header: js.Any = js.native
+    var header: js.Any
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
   }
   object AccordionPanelProps {
     

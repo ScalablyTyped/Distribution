@@ -4,22 +4,30 @@ import typings.webcola.anon.Groups
 import typings.webcola.linklengthsMod.LinkAccessor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object powergraphMod {
+  
+  @JSImport("webcola/dist/src/powergraph", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("webcola/dist/src/powergraph", "Configuration")
   @js.native
   class Configuration[Link] protected () extends StObject {
     def this(n: Double, edges: js.Array[Link], linkAccessor: LinkTypeAccessor[Link]) = this()
-    def this(n: Double, edges: js.Array[Link], linkAccessor: LinkTypeAccessor[Link], rootGroup: js.Array[_]) = this()
+    def this(
+      n: Double,
+      edges: js.Array[Link],
+      linkAccessor: LinkTypeAccessor[Link],
+      rootGroup: js.Array[js.Any]
+    ) = this()
     
     var R: Double = js.native
     
     def allEdges(): js.Array[PowerEdge] = js.native
     
-    def getGroupHierarchy(retargetedEdges: js.Array[PowerEdge]): js.Array[_] = js.native
+    def getGroupHierarchy(retargetedEdges: js.Array[PowerEdge]): js.Array[js.Any] = js.native
     
     def greedyMerge(): Boolean = js.native
     
@@ -41,9 +49,12 @@ object powergraphMod {
   /* static members */
   object Configuration {
     
-    @JSImport("webcola/dist/src/powergraph", "Configuration.getEdges")
+    @JSImport("webcola/dist/src/powergraph", "Configuration")
     @js.native
-    def getEdges(modules: ModuleSet, es: js.Array[PowerEdge]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getEdges(modules: ModuleSet, es: js.Array[PowerEdge]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getEdges")(modules.asInstanceOf[js.Any], es.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   @JSImport("webcola/dist/src/powergraph", "LinkSets")
@@ -74,66 +85,19 @@ object powergraphMod {
   class Module protected () extends StObject {
     def this(id: Double) = this()
     def this(id: Double, outgoing: LinkSets) = this()
-    def this(id: Double, outgoing: js.UndefOr[scala.Nothing], incoming: LinkSets) = this()
+    def this(id: Double, outgoing: Unit, incoming: LinkSets) = this()
     def this(id: Double, outgoing: LinkSets, incoming: LinkSets) = this()
-    def this(
-      id: Double,
-      outgoing: js.UndefOr[scala.Nothing],
-      incoming: js.UndefOr[scala.Nothing],
-      children: ModuleSet
-    ) = this()
-    def this(id: Double, outgoing: js.UndefOr[scala.Nothing], incoming: LinkSets, children: ModuleSet) = this()
-    def this(id: Double, outgoing: LinkSets, incoming: js.UndefOr[scala.Nothing], children: ModuleSet) = this()
+    def this(id: Double, outgoing: Unit, incoming: Unit, children: ModuleSet) = this()
+    def this(id: Double, outgoing: Unit, incoming: LinkSets, children: ModuleSet) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: Unit, children: ModuleSet) = this()
     def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: ModuleSet) = this()
-    def this(
-      id: Double,
-      outgoing: js.UndefOr[scala.Nothing],
-      incoming: js.UndefOr[scala.Nothing],
-      children: js.UndefOr[scala.Nothing],
-      definition: js.Any
-    ) = this()
-    def this(
-      id: Double,
-      outgoing: js.UndefOr[scala.Nothing],
-      incoming: js.UndefOr[scala.Nothing],
-      children: ModuleSet,
-      definition: js.Any
-    ) = this()
-    def this(
-      id: Double,
-      outgoing: js.UndefOr[scala.Nothing],
-      incoming: LinkSets,
-      children: js.UndefOr[scala.Nothing],
-      definition: js.Any
-    ) = this()
-    def this(
-      id: Double,
-      outgoing: js.UndefOr[scala.Nothing],
-      incoming: LinkSets,
-      children: ModuleSet,
-      definition: js.Any
-    ) = this()
-    def this(
-      id: Double,
-      outgoing: LinkSets,
-      incoming: js.UndefOr[scala.Nothing],
-      children: js.UndefOr[scala.Nothing],
-      definition: js.Any
-    ) = this()
-    def this(
-      id: Double,
-      outgoing: LinkSets,
-      incoming: js.UndefOr[scala.Nothing],
-      children: ModuleSet,
-      definition: js.Any
-    ) = this()
-    def this(
-      id: Double,
-      outgoing: LinkSets,
-      incoming: LinkSets,
-      children: js.UndefOr[scala.Nothing],
-      definition: js.Any
-    ) = this()
+    def this(id: Double, outgoing: Unit, incoming: Unit, children: Unit, definition: js.Any) = this()
+    def this(id: Double, outgoing: Unit, incoming: Unit, children: ModuleSet, definition: js.Any) = this()
+    def this(id: Double, outgoing: Unit, incoming: LinkSets, children: Unit, definition: js.Any) = this()
+    def this(id: Double, outgoing: Unit, incoming: LinkSets, children: ModuleSet, definition: js.Any) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: Unit, children: Unit, definition: js.Any) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: Unit, children: ModuleSet, definition: js.Any) = this()
+    def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: Unit, definition: js.Any) = this()
     def this(id: Double, outgoing: LinkSets, incoming: LinkSets, children: ModuleSet, definition: js.Any) = this()
     
     var children: ModuleSet = js.native
@@ -192,17 +156,21 @@ object powergraphMod {
     var `type`: Double = js.native
   }
   
-  @JSImport("webcola/dist/src/powergraph", "getGroups")
-  @js.native
-  def getGroups[Link](nodes: js.Array[_], links: js.Array[Link], la: LinkTypeAccessor[Link]): Groups = js.native
-  @JSImport("webcola/dist/src/powergraph", "getGroups")
-  @js.native
-  def getGroups[Link](nodes: js.Array[_], links: js.Array[Link], la: LinkTypeAccessor[Link], rootGroup: js.Array[_]): Groups = js.native
+  @scala.inline
+  def getGroups[Link](nodes: js.Array[js.Any], links: js.Array[Link], la: LinkTypeAccessor[Link]): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any])).asInstanceOf[Groups]
+  @scala.inline
+  def getGroups[Link](
+    nodes: js.Array[js.Any],
+    links: js.Array[Link],
+    la: LinkTypeAccessor[Link],
+    rootGroup: js.Array[js.Any]
+  ): Groups = (^.asInstanceOf[js.Dynamic].applyDynamic("getGroups")(nodes.asInstanceOf[js.Any], links.asInstanceOf[js.Any], la.asInstanceOf[js.Any], rootGroup.asInstanceOf[js.Any])).asInstanceOf[Groups]
   
-  @js.native
-  trait LinkTypeAccessor[Link] extends LinkAccessor[Link] {
+  trait LinkTypeAccessor[Link]
+    extends StObject
+       with LinkAccessor[Link] {
     
-    def getType(l: Link): Double = js.native
+    def getType(l: Link): Double
   }
   object LinkTypeAccessor {
     
@@ -213,7 +181,7 @@ object powergraphMod {
     }
     
     @scala.inline
-    implicit class LinkTypeAccessorMutableBuilder[Self <: LinkTypeAccessor[_], Link] (val x: Self with LinkTypeAccessor[Link]) extends AnyVal {
+    implicit class LinkTypeAccessorMutableBuilder[Self <: LinkTypeAccessor[?], Link] (val x: Self & LinkTypeAccessor[Link]) extends AnyVal {
       
       @scala.inline
       def setGetType(value: Link => Double): Self = StObject.set(x, "getType", js.Any.fromFunction1(value))

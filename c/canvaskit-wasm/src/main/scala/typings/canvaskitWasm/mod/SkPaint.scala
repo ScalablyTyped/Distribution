@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkPaint extends EmbindObject[SkPaint] {
+trait SkPaint
+  extends StObject
+     with EmbindObject[SkPaint] {
   
   /**
     * Returns a copy of this paint.

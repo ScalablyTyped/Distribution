@@ -2,26 +2,24 @@ package typings.awsSdk.emrMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceResizePolicy extends StObject {
   
   /**
     * Decommissioning timeout override for the specific list of instances to be terminated.
     */
-  var InstanceTerminationTimeout: js.UndefOr[Integer] = js.native
+  var InstanceTerminationTimeout: js.UndefOr[Integer] = js.undefined
   
   /**
     * Specific list of instances to be protected when shrinking an instance group.
     */
-  var InstancesToProtect: js.UndefOr[EC2InstanceIdsList] = js.native
+  var InstancesToProtect: js.UndefOr[EC2InstanceIdsList] = js.undefined
   
   /**
     * Specific list of instances to be terminated when shrinking an instance group.
     */
-  var InstancesToTerminate: js.UndefOr[EC2InstanceIdsList] = js.native
+  var InstancesToTerminate: js.UndefOr[EC2InstanceIdsList] = js.undefined
 }
 object InstanceResizePolicy {
   

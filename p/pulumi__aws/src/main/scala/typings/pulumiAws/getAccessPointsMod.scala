@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getAccessPointsMod {
   
-  @JSImport("@pulumi/aws/efs/getAccessPoints", "getAccessPoints")
+  @JSImport("@pulumi/aws/efs/getAccessPoints", JSImport.Namespace)
   @js.native
-  def getAccessPoints(args: GetAccessPointsArgs): js.Promise[GetAccessPointsResult] = js.native
-  @JSImport("@pulumi/aws/efs/getAccessPoints", "getAccessPoints")
-  @js.native
-  def getAccessPoints(args: GetAccessPointsArgs, opts: InvokeOptions): js.Promise[GetAccessPointsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getAccessPoints(args: GetAccessPointsArgs): js.Promise[GetAccessPointsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoints")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetAccessPointsResult]]
+  @scala.inline
+  def getAccessPoints(args: GetAccessPointsArgs, opts: InvokeOptions): js.Promise[GetAccessPointsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getAccessPoints")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetAccessPointsResult]]
+  
   trait GetAccessPointsArgs extends StObject {
     
     /**
       * EFS File System identifier.
       */
-    val fileSystemId: String = js.native
+    val fileSystemId: String
   }
   object GetAccessPointsArgs {
     
@@ -39,25 +39,24 @@ object getAccessPointsMod {
     }
   }
   
-  @js.native
   trait GetAccessPointsResult extends StObject {
     
     /**
       * Set of Amazon Resource Names (ARNs).
       */
-    val arns: js.Array[String] = js.native
+    val arns: js.Array[String]
     
-    val fileSystemId: String = js.native
+    val fileSystemId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Set of identifiers.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
   }
   object GetAccessPointsResult {
     

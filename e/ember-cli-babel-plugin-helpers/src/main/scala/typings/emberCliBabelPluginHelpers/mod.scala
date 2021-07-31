@@ -4,50 +4,44 @@ import typings.emberCliBabelPluginHelpers.anon.Babel
 import typings.emberCliBabelPluginHelpers.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("ember-cli-babel-plugin-helpers", "addPlugin")
+  @JSImport("ember-cli-babel-plugin-helpers", JSImport.Namespace)
   @js.native
-  def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig): Unit = js.native
-  @JSImport("ember-cli-babel-plugin-helpers", "addPlugin")
-  @js.native
-  def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig, options: AddPluginOptions): Unit = js.native
-  @JSImport("ember-cli-babel-plugin-helpers", "addPlugin")
-  @js.native
-  def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig): Unit = js.native
-  @JSImport("ember-cli-babel-plugin-helpers", "addPlugin")
-  @js.native
-  def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig, options: AddPluginOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ember-cli-babel-plugin-helpers", "findPlugin")
-  @js.native
-  def findPlugin(config: js.Array[BabelPluginConfig], plugin: String): js.UndefOr[BabelPluginConfig] = js.native
-  @JSImport("ember-cli-babel-plugin-helpers", "findPlugin")
-  @js.native
-  def findPlugin(config: ConfigurationTarget, plugin: String): js.UndefOr[BabelPluginConfig] = js.native
+  @scala.inline
+  def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addPlugin(config: js.Array[BabelPluginConfig], plugin: BabelPluginConfig, options: AddPluginOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def addPlugin(config: ConfigurationTarget, plugin: BabelPluginConfig, options: AddPluginOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("ember-cli-babel-plugin-helpers", "hasPlugin")
-  @js.native
-  def hasPlugin(config: js.Array[BabelPluginConfig], plugin: String): Boolean = js.native
-  @JSImport("ember-cli-babel-plugin-helpers", "hasPlugin")
-  @js.native
-  def hasPlugin(config: ConfigurationTarget, plugin: String): Boolean = js.native
+  @scala.inline
+  def findPlugin(config: js.Array[BabelPluginConfig], plugin: String): js.UndefOr[BabelPluginConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[BabelPluginConfig]]
+  @scala.inline
+  def findPlugin(config: ConfigurationTarget, plugin: String): js.UndefOr[BabelPluginConfig] = (^.asInstanceOf[js.Dynamic].applyDynamic("findPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[BabelPluginConfig]]
   
-  @js.native
+  @scala.inline
+  def hasPlugin(config: js.Array[BabelPluginConfig], plugin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def hasPlugin(config: ConfigurationTarget, plugin: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("hasPlugin")(config.asInstanceOf[js.Any], plugin.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
   trait AddPluginOptions extends StObject {
     
     /**
       * Any plugins that the given one must appear *after* in the plugins array.
       */
-    var after: js.UndefOr[js.Array[String]] = js.native
+    var after: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Any plugins that the given one must appear *before* in the plugins array.
       */
-    var before: js.UndefOr[js.Array[String]] = js.native
+    var before: js.UndefOr[js.Array[String]] = js.undefined
   }
   object AddPluginOptions {
     
@@ -84,10 +78,9 @@ object mod {
   
   type BabelPluginConfig = BabelPlugin | (js.Tuple3[BabelPlugin, js.UndefOr[js.Any], js.UndefOr[js.Any]])
   
-  @js.native
   trait ConfigurationTarget extends StObject {
     
-    var options: js.UndefOr[Babel] = js.native
+    var options: js.UndefOr[Babel] = js.undefined
   }
   object ConfigurationTarget {
     

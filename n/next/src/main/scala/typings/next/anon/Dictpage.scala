@@ -3,15 +3,14 @@ package typings.next.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictpage
-  extends /* page */ StringDictionary[js.Array[String]] {
+  extends StObject
+     with /* page */ StringDictionary[js.Array[String]] {
   
   @JSName("/_app")
-  var Slash_app: js.Array[String] = js.native
+  var Slash_app: js.Array[String]
 }
 object Dictpage {
   

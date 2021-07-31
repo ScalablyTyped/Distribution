@@ -4,21 +4,19 @@ import typings.exceljs.anon.PartialBorder
 import typings.exceljs.anon.PartialBorderDiagonal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Borders extends StObject {
   
-  var bottom: PartialBorder = js.native
+  var bottom: PartialBorder
   
-  var diagonal: PartialBorderDiagonal = js.native
+  var diagonal: PartialBorderDiagonal
   
-  var left: PartialBorder = js.native
+  var left: PartialBorder
   
-  var right: PartialBorder = js.native
+  var right: PartialBorder
   
-  var top: PartialBorder = js.native
+  var top: PartialBorder
 }
 object Borders {
   

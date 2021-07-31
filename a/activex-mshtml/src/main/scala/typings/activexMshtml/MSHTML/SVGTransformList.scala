@@ -2,34 +2,32 @@ package typings.activexMshtml.MSHTML
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGTransformList extends StObject {
   
   @JSName("MSHTML.SVGTransformList_typekey")
-  var MSHTMLDotSVGTransformList_typekey: SVGTransformList = js.native
+  var MSHTMLDotSVGTransformList_typekey: SVGTransformList
   
-  def appendItem(newItem: SVGTransform): SVGTransform = js.native
+  def appendItem(newItem: SVGTransform): SVGTransform
   
-  def clear(): Unit = js.native
+  def clear(): Unit
   
-  def consolidate(): SVGTransform = js.native
+  def consolidate(): SVGTransform
   
-  def createSVGTransformFromMatrix(newItem: SVGMatrix): SVGTransform = js.native
+  def createSVGTransformFromMatrix(newItem: SVGMatrix): SVGTransform
   
-  def getItem(index: Double): SVGTransform = js.native
+  def getItem(index: Double): SVGTransform
   
-  def initialize(newItem: SVGTransform): SVGTransform = js.native
+  def initialize(newItem: SVGTransform): SVGTransform
   
-  def insertItemBefore(newItem: SVGTransform, index: Double): SVGTransform = js.native
+  def insertItemBefore(newItem: SVGTransform, index: Double): SVGTransform
   
-  var numberOfItems: Double = js.native
+  var numberOfItems: Double
   
-  def removeItem(index: Double): SVGTransform = js.native
+  def removeItem(index: Double): SVGTransform
   
-  def replaceItem(newItem: SVGTransform, index: Double): SVGTransform = js.native
+  def replaceItem(newItem: SVGTransform, index: Double): SVGTransform
 }
 object SVGTransformList {
   

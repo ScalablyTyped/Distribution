@@ -9,9 +9,9 @@ Typings are for version 0.1.0-preview.1
 | ------------------ | :-------------: |
 | Full name          | @aws-sdk/middleware-input-default |
 | Keywords           | - |
-| # releases         | 10 |
-| # dependents       | 2 |
-| # downloads        | 463 |
+| # releases         | 8 |
+| # dependents       | 0 |
+| # downloads        | 769 |
 | # stars            | 0 |
 
 ## Links

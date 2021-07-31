@@ -4,18 +4,16 @@ import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.Active
 import typings.awsSdkClientLambdaNode.awsSdkClientLambdaNodeStrings.PassThrough
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesTracingConfigMod {
   
-  @js.native
   trait TracingConfig extends StObject {
     
     /**
       * <p>The tracing mode.</p>
       */
-    var Mode: js.UndefOr[Active | PassThrough | String] = js.native
+    var Mode: js.UndefOr[Active | PassThrough | String] = js.undefined
   }
   object TracingConfig {
     

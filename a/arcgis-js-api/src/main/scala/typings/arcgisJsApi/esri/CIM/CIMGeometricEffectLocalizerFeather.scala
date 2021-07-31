@@ -2,45 +2,44 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMGeometricEffectLocalizerFeather
-  extends CIMGeometricEffectBase
+  extends StObject
+     with CIMGeometricEffectBase
      with CIMGeometricEffectType {
   
   /**
     * The angle of the localizer feather.
     */
-  var angle: js.UndefOr[Double] = js.native
+  var angle: js.UndefOr[Double] = js.undefined
   
   /**
     * The length of the localizer feather.
     */
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
   /**
     * The localizer feather style.
     */
   var style: js.UndefOr[
     /* keyof / * import warning: ResolveTypeQueries.resolve Couldn't resolve typeof GeometricEffectLocalizerFeatherStyle * / any */ String
-  ] = js.native
+  ] = js.undefined
   
   @JSName("type")
-  var type_CIMGeometricEffectLocalizerFeather: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectLocalizerFeather = js.native
+  var type_CIMGeometricEffectLocalizerFeather: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectLocalizerFeather
   
   /**
     * The width of the localizer feather.
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object CIMGeometricEffectLocalizerFeather {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMGeometricEffectLocalizerFeather): CIMGeometricEffectLocalizerFeather = {
+  def apply(): CIMGeometricEffectLocalizerFeather = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMGeometricEffectLocalizerFeather")
     __obj.asInstanceOf[CIMGeometricEffectLocalizerFeather]
   }
   

@@ -8,11 +8,12 @@ import typings.kurentoClient.kurentoClientStrings.Recording
 import typings.kurentoClient.kurentoClientStrings.Stopped
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait RecorderEndpoint extends UriEndpoint {
+trait RecorderEndpoint
+  extends StObject
+     with UriEndpoint {
   
   def getMaxOutputBitrate(): js.Promise[Double] = js.native
   def getMaxOutputBitrate(callback: Callback[Double]): js.Promise[Double] = js.native

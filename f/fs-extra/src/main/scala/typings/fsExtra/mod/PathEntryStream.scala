@@ -2,13 +2,11 @@ package typings.fsExtra.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PathEntryStream extends StObject {
   
-  def read(): PathEntry | Null = js.native
+  def read(): PathEntry | Null
 }
 object PathEntryStream {
   

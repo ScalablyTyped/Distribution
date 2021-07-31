@@ -6,12 +6,13 @@ import typings.sharepoint.SP.JsonObjectResult
 import typings.sharepoint.SP.Web
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**Executes queries against a search server.*/
 @js.native
-trait SearchExecutor extends ClientObject {
+trait SearchExecutor
+  extends StObject
+     with ClientObject {
   
   def executeQueries(
     queryIds: js.Array[String],

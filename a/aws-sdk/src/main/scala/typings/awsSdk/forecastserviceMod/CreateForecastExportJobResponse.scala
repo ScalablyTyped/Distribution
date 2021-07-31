@@ -2,16 +2,14 @@ package typings.awsSdk.forecastserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateForecastExportJobResponse extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the export job.
     */
-  var ForecastExportJobArn: js.UndefOr[Arn] = js.native
+  var ForecastExportJobArn: js.UndefOr[Arn] = js.undefined
 }
 object CreateForecastExportJobResponse {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateMembersRequest extends StObject {
   
   /**
     * The account IDs of the member accounts to disassociate from the master account.
     */
-  var AccountIds: js.UndefOr[AccountIdList] = js.native
+  var AccountIds: js.UndefOr[AccountIdList] = js.undefined
 }
 object DisassociateMembersRequest {
   

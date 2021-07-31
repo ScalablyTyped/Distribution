@@ -2,25 +2,23 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowNetwork extends StObject {
   
-  var V: Double = js.native
+  var V: Double
   
-  def addEdge(e: FlowEdge): Unit = js.native
+  def addEdge(e: FlowEdge): Unit
   
-  def adj(v: Double): js.Array[FlowEdge] = js.native
+  def adj(v: Double): js.Array[FlowEdge]
   
-  var adjList: js.Any = js.native
+  var adjList: js.Any
   
-  def edge(v: Double, w: Double): FlowEdge | Null = js.native
+  def edge(v: Double, w: Double): FlowEdge | Null
   
-  def node(v: Double): Node = js.native
+  def node(v: Double): Node
   
-  var nodeInfo: js.Any = js.native
+  var nodeInfo: js.Any
 }
 object FlowNetwork {
   

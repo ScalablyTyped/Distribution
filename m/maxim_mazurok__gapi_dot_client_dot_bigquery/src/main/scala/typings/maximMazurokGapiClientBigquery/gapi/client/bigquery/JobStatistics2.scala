@@ -3,66 +3,64 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import typings.maximMazurokGapiClientBigquery.anon.Name
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobStatistics2 extends StObject {
   
   /** [Output-only] Billing tier for the job. */
-  var billingTier: js.UndefOr[Double] = js.native
+  var billingTier: js.UndefOr[Double] = js.undefined
   
   /** [Output-only] Whether the query result was fetched from the query cache. */
-  var cacheHit: js.UndefOr[Boolean] = js.native
+  var cacheHit: js.UndefOr[Boolean] = js.undefined
   
   /** [Output-only] [Preview] The number of row access policies affected by a DDL statement. Present only for DROP ALL ROW ACCESS POLICIES queries. */
-  var ddlAffectedRowAccessPolicyCount: js.UndefOr[String] = js.native
+  var ddlAffectedRowAccessPolicyCount: js.UndefOr[String] = js.undefined
   
   /**
     * The DDL operation performed, possibly dependent on the pre-existence of the DDL target. Possible values (new values might be added in the future): "CREATE": The query created the
     * DDL target. "SKIP": No-op. Example cases: the query is CREATE TABLE IF NOT EXISTS while the table already exists, or the query is DROP TABLE IF EXISTS while the table does not
     * exist. "REPLACE": The query replaced the DDL target. Example case: the query is CREATE OR REPLACE TABLE, and the table already exists. "DROP": The query deleted the DDL target.
     */
-  var ddlOperationPerformed: js.UndefOr[String] = js.native
+  var ddlOperationPerformed: js.UndefOr[String] = js.undefined
   
   /** The DDL target routine. Present only for CREATE/DROP FUNCTION/PROCEDURE queries. */
-  var ddlTargetRoutine: js.UndefOr[RoutineReference] = js.native
+  var ddlTargetRoutine: js.UndefOr[RoutineReference] = js.undefined
   
   /** [Output-only] [Preview] The DDL target row access policy. Present only for CREATE/DROP ROW ACCESS POLICY queries. */
-  var ddlTargetRowAccessPolicy: js.UndefOr[RowAccessPolicyReference] = js.native
+  var ddlTargetRowAccessPolicy: js.UndefOr[RowAccessPolicyReference] = js.undefined
   
   /** [Output-only] The DDL target table. Present only for CREATE/DROP TABLE/VIEW and DROP ALL ROW ACCESS POLICIES queries. */
-  var ddlTargetTable: js.UndefOr[TableReference] = js.native
+  var ddlTargetTable: js.UndefOr[TableReference] = js.undefined
   
   /** [Output-only] The original estimate of bytes processed for the job. */
-  var estimatedBytesProcessed: js.UndefOr[String] = js.native
+  var estimatedBytesProcessed: js.UndefOr[String] = js.undefined
   
   /** [Output-only, Beta] Information about create model query job progress. */
-  var modelTraining: js.UndefOr[BigQueryModelTraining] = js.native
+  var modelTraining: js.UndefOr[BigQueryModelTraining] = js.undefined
   
   /** [Output-only, Beta] Deprecated; do not use. */
-  var modelTrainingCurrentIteration: js.UndefOr[Double] = js.native
+  var modelTrainingCurrentIteration: js.UndefOr[Double] = js.undefined
   
   /** [Output-only, Beta] Deprecated; do not use. */
-  var modelTrainingExpectedTotalIteration: js.UndefOr[String] = js.native
+  var modelTrainingExpectedTotalIteration: js.UndefOr[String] = js.undefined
   
   /** [Output-only] The number of rows affected by a DML statement. Present only for DML statements INSERT, UPDATE or DELETE. */
-  var numDmlAffectedRows: js.UndefOr[String] = js.native
+  var numDmlAffectedRows: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Describes execution plan for the query. */
-  var queryPlan: js.UndefOr[js.Array[ExplainQueryStage]] = js.native
+  var queryPlan: js.UndefOr[js.Array[ExplainQueryStage]] = js.undefined
   
   /** [Output-only] Referenced routines (persistent user-defined functions and stored procedures) for the job. */
-  var referencedRoutines: js.UndefOr[js.Array[RoutineReference]] = js.native
+  var referencedRoutines: js.UndefOr[js.Array[RoutineReference]] = js.undefined
   
   /** [Output-only] Referenced tables for the job. Queries that reference more than 50 tables will not have a complete list. */
-  var referencedTables: js.UndefOr[js.Array[TableReference]] = js.native
+  var referencedTables: js.UndefOr[js.Array[TableReference]] = js.undefined
   
   /** [Output-only] Job resource usage breakdown by reservation. */
-  var reservationUsage: js.UndefOr[js.Array[Name]] = js.native
+  var reservationUsage: js.UndefOr[js.Array[Name]] = js.undefined
   
   /** [Output-only] The schema of the results. Present only for successful dry run of non-legacy SQL queries. */
-  var schema: js.UndefOr[TableSchema] = js.native
+  var schema: js.UndefOr[TableSchema] = js.undefined
   
   /**
     * The type of query statement, if valid. Possible values (new values might be added in the future): "SELECT": SELECT query. "INSERT": INSERT query; see
@@ -74,31 +72,31 @@ trait JobStatistics2 extends StObject {
     * "CREATE_TABLE": CREATE [OR REPLACE] TABLE without AS SELECT. "CREATE_TABLE_AS_SELECT": CREATE [OR REPLACE] TABLE ... AS SELECT ... . "CREATE_VIEW": CREATE [OR REPLACE] VIEW ... AS
     * SELECT ... . "DROP_FUNCTION" : DROP FUNCTION query. "DROP_PROCEDURE": DROP PROCEDURE query. "DROP_TABLE": DROP TABLE query. "DROP_VIEW": DROP VIEW query.
     */
-  var statementType: js.UndefOr[String] = js.native
+  var statementType: js.UndefOr[String] = js.undefined
   
   /** [Output-only] [Beta] Describes a timeline of job execution. */
-  var timeline: js.UndefOr[js.Array[QueryTimelineSample]] = js.native
+  var timeline: js.UndefOr[js.Array[QueryTimelineSample]] = js.undefined
   
   /** [Output-only] Total bytes billed for the job. */
-  var totalBytesBilled: js.UndefOr[String] = js.native
+  var totalBytesBilled: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Total bytes processed for the job. */
-  var totalBytesProcessed: js.UndefOr[String] = js.native
+  var totalBytesProcessed: js.UndefOr[String] = js.undefined
   
   /**
     * [Output-only] For dry-run jobs, totalBytesProcessed is an estimate and this field specifies the accuracy of the estimate. Possible values can be: UNKNOWN: accuracy of the estimate
     * is unknown. PRECISE: estimate is precise. LOWER_BOUND: estimate is lower bound of what the query would cost. UPPER_BOUND: estimate is upper bound of what the query would cost.
     */
-  var totalBytesProcessedAccuracy: js.UndefOr[String] = js.native
+  var totalBytesProcessedAccuracy: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Total number of partitions processed from all partitioned tables referenced in the job. */
-  var totalPartitionsProcessed: js.UndefOr[String] = js.native
+  var totalPartitionsProcessed: js.UndefOr[String] = js.undefined
   
   /** [Output-only] Slot-milliseconds for the job. */
-  var totalSlotMs: js.UndefOr[String] = js.native
+  var totalSlotMs: js.UndefOr[String] = js.undefined
   
   /** Standard SQL only: list of undeclared query parameters detected during a dry run validation. */
-  var undeclaredQueryParameters: js.UndefOr[js.Array[QueryParameter]] = js.native
+  var undeclaredQueryParameters: js.UndefOr[js.Array[QueryParameter]] = js.undefined
 }
 object JobStatistics2 {
   

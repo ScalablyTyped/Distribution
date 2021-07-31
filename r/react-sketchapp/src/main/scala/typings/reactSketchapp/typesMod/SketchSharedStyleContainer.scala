@@ -2,15 +2,13 @@ package typings.reactSketchapp.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchSharedStyleContainer extends StObject {
   
-  def addSharedStyleWithName_firstInstance(name: String, ins: SketchStyle): js.Any = js.native
+  def addSharedStyleWithName_firstInstance(name: String, ins: SketchStyle): js.Any
   
-  def setObjects(objects: js.Array[SketchStyle]): Unit = js.native
+  def setObjects(objects: js.Array[SketchStyle]): Unit
 }
 object SketchSharedStyleContainer {
   

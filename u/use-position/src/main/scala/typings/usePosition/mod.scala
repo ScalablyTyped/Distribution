@@ -3,19 +3,19 @@ package typings.usePosition
 import typings.usePosition.anon.Accuracy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("use-position", "usePosition")
+  @JSImport("use-position", JSImport.Namespace)
   @js.native
-  def usePosition(watch: Boolean): Accuracy = js.native
-  @JSImport("use-position", "usePosition")
-  @js.native
-  def usePosition(watch: Boolean, settings: PositionOptions): Accuracy = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def usePosition(watch: Boolean): Accuracy = ^.asInstanceOf[js.Dynamic].applyDynamic("usePosition")(watch.asInstanceOf[js.Any]).asInstanceOf[Accuracy]
+  @scala.inline
+  def usePosition(watch: Boolean, settings: PositionOptions): Accuracy = (^.asInstanceOf[js.Dynamic].applyDynamic("usePosition")(watch.asInstanceOf[js.Any], settings.asInstanceOf[js.Any])).asInstanceOf[Accuracy]
+  
   trait PositionOptions extends StObject {
     
     /**
@@ -24,21 +24,21 @@ object mod {
       *
       * @default false
       */
-    var enableHighAccuracy: Boolean = js.native
+    var enableHighAccuracy: Boolean
     
     /**
       * The maximum cached position age.
       *
       * @default Infinity
       */
-    var maximumAge: Double = js.native
+    var maximumAge: Double
     
     /**
       * The amount of time before the error callback is invoked, if 0 it will never invoke.
       *
       * @default 0
       */
-    var timeout: Double = js.native
+    var timeout: Double
   }
   object PositionOptions {
     

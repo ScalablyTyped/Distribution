@@ -2,17 +2,15 @@ package typings.firebaseMessaging
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServiceWorkerGlobalScopeEventMap extends StObject {
   
-  var notificationclick: NotificationEvent = js.native
+  var notificationclick: NotificationEvent
   
-  var push: PushEvent = js.native
+  var push: PushEvent
   
-  var pushsubscriptionchange: PushSubscriptionChangeEvent = js.native
+  var pushsubscriptionchange: PushSubscriptionChangeEvent
 }
 object ServiceWorkerGlobalScopeEventMap {
   

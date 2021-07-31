@@ -3,7 +3,6 @@ package typings.leaflet.mod
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("leaflet", "Icon")
@@ -40,10 +39,11 @@ object Icon_ {
     def imagePath_=(x: js.UndefOr[String]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("imagePath")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait DefaultIconOptions extends BaseIconOptions {
+  trait DefaultIconOptions
+    extends StObject
+       with BaseIconOptions {
     
-    var imagePath: js.UndefOr[String] = js.native
+    var imagePath: js.UndefOr[String] = js.undefined
   }
   object DefaultIconOptions {
     

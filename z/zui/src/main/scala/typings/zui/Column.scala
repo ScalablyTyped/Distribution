@@ -2,25 +2,23 @@ package typings.zui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
-  var colClass: js.UndefOr[String] = js.native
+  var colClass: js.UndefOr[String] = js.undefined
   
-  var flex: js.UndefOr[Boolean] = js.native
+  var flex: js.UndefOr[Boolean] = js.undefined
   
-  var ignore: js.UndefOr[Boolean] = js.native
+  var ignore: js.UndefOr[Boolean] = js.undefined
   
-  var sort: js.UndefOr[String] = js.native
+  var sort: js.UndefOr[String] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var text: js.UndefOr[String] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object Column {
   

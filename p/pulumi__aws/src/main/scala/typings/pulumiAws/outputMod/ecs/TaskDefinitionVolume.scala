@@ -2,32 +2,30 @@ package typings.pulumiAws.outputMod.ecs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskDefinitionVolume extends StObject {
   
   /**
     * Used to configure a docker volume
     */
-  var dockerVolumeConfiguration: js.UndefOr[TaskDefinitionVolumeDockerVolumeConfiguration] = js.native
+  var dockerVolumeConfiguration: js.UndefOr[TaskDefinitionVolumeDockerVolumeConfiguration] = js.undefined
   
   /**
     * Used to configure a EFS volume.
     */
-  var efsVolumeConfiguration: js.UndefOr[TaskDefinitionVolumeEfsVolumeConfiguration] = js.native
+  var efsVolumeConfiguration: js.UndefOr[TaskDefinitionVolumeEfsVolumeConfiguration] = js.undefined
   
   /**
     * The path on the host container instance that is presented to the container. If not set, ECS will create a nonpersistent data volume that starts empty and is deleted after the task has finished.
     */
-  var hostPath: js.UndefOr[String] = js.native
+  var hostPath: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the volume. This name is referenced in the `sourceVolume`
     * parameter of container definition in the `mountPoints` section.
     */
-  var name: String = js.native
+  var name: String
 }
 object TaskDefinitionVolume {
   

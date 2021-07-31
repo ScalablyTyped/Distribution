@@ -2,75 +2,73 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * NxAppLayout ...
   */
-@js.native
 trait INxAppLayout extends StObject {
   
   /**
     * In Qlik Sense Enterprise, this property corresponds to the app identifier (GUID).
     * In Qlik Sense Desktop, this property corresponds to the full path of the app.
     */
-  var qFileName: String = js.native
+  var qFileName: String
   
   /**
     * Is set to true if the app contains data following a script reload.
     */
-  var qHasData: Boolean = js.native
+  var qHasData: Boolean
   
   /**
     * Is set to true if a script is defined in the app.
     */
-  var qHasScript: Boolean = js.native
+  var qHasScript: Boolean
   
   /**
     * If set to true, it means that the app was opened without loading its data.
     */
-  var qIsOpenedWithoutData: Boolean = js.native
+  var qIsOpenedWithoutData: Boolean
   
   /**
     * Date and time of the last reload of the app in ISO format.
     */
-  var qLastReloadTime: String = js.native
+  var qLastReloadTime: String
   
   /**
     * Information about the locale.
     */
-  var qLocaleInfo: ILocaleInfo = js.native
+  var qLocaleInfo: ILocaleInfo
   
   /**
     * Information on publishing and permissions.
     */
-  var qMeta: INxMeta = js.native
+  var qMeta: INxMeta
   
   /**
     * Is set to true if the app has been updated since the last save.
     */
-  var qModified: Boolean = js.native
+  var qModified: Boolean
   
   /**
     * If set to true, it means that the app is read-only.
     */
-  var qReadOnly: Boolean = js.native
+  var qReadOnly: Boolean
   
   /**
     * Array of alternate states.
     */
-  var qStateNames: js.Array[String] = js.native
+  var qStateNames: js.Array[String]
   
   /**
     * App thumbnail.
     */
-  var qThumbnail: IStaticContentUrl = js.native
+  var qThumbnail: IStaticContentUrl
   
   /**
     * Title of the app.
     */
-  var qTitle: String = js.native
+  var qTitle: String
 }
 object INxAppLayout {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.timestreamwriteMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDatabaseResponse extends StObject {
   
   /**
     * The newly created Timestream database.
     */
-  var Database: js.UndefOr[typings.awsSdk.timestreamwriteMod.Database] = js.native
+  var Database: js.UndefOr[typings.awsSdk.timestreamwriteMod.Database] = js.undefined
 }
 object CreateDatabaseResponse {
   

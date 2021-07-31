@@ -2,7 +2,6 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * Note: This interface is currently only for web only.
   */
-@js.native
 trait PaymentDataRequestUpdate extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait PaymentDataRequestUpdate extends StObject {
     *
     * Note: This field is currently only for web only.
     */
-  var error: js.UndefOr[PaymentDataError] = js.native
+  var error: js.UndefOr[PaymentDataError] = js.undefined
   
   /**
     * Contains updated shipping option parameters. All fields in
@@ -32,7 +30,7 @@ trait PaymentDataRequestUpdate extends StObject {
     * options instead of a delta of any earlier version. Note: This field
     * is currently only for web only.
     */
-  var newShippingOptionParameters: js.UndefOr[ShippingOptionParameters] = js.native
+  var newShippingOptionParameters: js.UndefOr[ShippingOptionParameters] = js.undefined
   
   /**
     * Contains updated totals and line items. Only changes in totalPrice,
@@ -40,7 +38,7 @@ trait PaymentDataRequestUpdate extends StObject {
     *
     * Note: This field is currently only for web only.
     */
-  var newTransactionInfo: js.UndefOr[TransactionInfo] = js.native
+  var newTransactionInfo: js.UndefOr[TransactionInfo] = js.undefined
 }
 object PaymentDataRequestUpdate {
   

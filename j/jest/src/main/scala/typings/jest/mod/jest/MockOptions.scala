@@ -2,13 +2,11 @@ package typings.jest.mod.jest
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MockOptions extends StObject {
   
-  var virtual: js.UndefOr[Boolean] = js.native
+  var virtual: js.UndefOr[Boolean] = js.undefined
 }
 object MockOptions {
   

@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransformDataSource extends StObject {
   
   /**
     * The S3 location of the data source that is associated with a channel.
     */
-  var S3DataSource: TransformS3DataSource = js.native
+  var S3DataSource: TransformS3DataSource
 }
 object TransformDataSource {
   

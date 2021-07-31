@@ -4,15 +4,13 @@ import typings.devtoolsProtocol.mod.Protocol.Debugger.GetWasmBytecodeRequest
 import typings.devtoolsProtocol.mod.Protocol.Debugger.GetWasmBytecodeResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnTypeGetWasmBytecodeResponse extends StObject {
   
-  var paramsType: js.Array[GetWasmBytecodeRequest] = js.native
+  var paramsType: js.Array[GetWasmBytecodeRequest]
   
-  var returnType: GetWasmBytecodeResponse = js.native
+  var returnType: GetWasmBytecodeResponse
 }
 object ReturnTypeGetWasmBytecodeResponse {
   

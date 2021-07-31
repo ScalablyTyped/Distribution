@@ -2,7 +2,6 @@ package typings.playcanvas.global.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -78,7 +77,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("pc.TransformFeedback")
 @js.native
 class TransformFeedback protected ()
-  extends typings.playcanvas.pc.TransformFeedback {
+  extends StObject
+     with typings.playcanvas.pc.TransformFeedback {
   def this(inputBuffer: typings.playcanvas.pc.VertexBuffer) = this()
   def this(inputBuffer: typings.playcanvas.pc.VertexBuffer, usage: Double) = this()
 }

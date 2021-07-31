@@ -3,17 +3,15 @@ package typings.bitcoinjsLib
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait FinalScriptSig extends StObject {
     
-    var finalScriptSig: js.UndefOr[Buffer] = js.native
+    var finalScriptSig: js.UndefOr[Buffer] = js.undefined
     
-    var finalScriptWitness: js.UndefOr[Buffer] = js.native
+    var finalScriptWitness: js.UndefOr[Buffer] = js.undefined
   }
   object FinalScriptSig {
     

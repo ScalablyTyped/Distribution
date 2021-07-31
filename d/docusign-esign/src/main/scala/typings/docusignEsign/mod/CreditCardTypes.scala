@@ -2,16 +2,14 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreditCardTypes extends StObject {
   
   /**
     * An array containing supported credit card types.
     */
-  var cardTypes: js.UndefOr[js.Array[String]] = js.native
+  var cardTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CreditCardTypes {
   

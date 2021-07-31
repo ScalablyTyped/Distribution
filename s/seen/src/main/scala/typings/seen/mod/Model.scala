@@ -2,7 +2,6 @@ package typings.seen.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("seen", "Model")
@@ -19,11 +18,11 @@ class Model () extends Transformable {
       /* item */ Shape | this.type, 
       /* lightModels */ js.UndefOr[js.Array[this.type]], 
       /* matrix */ js.UndefOr[Matrix], 
-      _
+      js.Any
     ]
   ): Unit = js.native
   
-  def eachShape(f: js.Function1[/* shape */ Shape, _]): Unit = js.native
+  def eachShape(f: js.Function1[/* shape */ Shape, js.Any]): Unit = js.native
   
   def remove(args: (Shape | Model | Light)*): Unit = js.native
 }

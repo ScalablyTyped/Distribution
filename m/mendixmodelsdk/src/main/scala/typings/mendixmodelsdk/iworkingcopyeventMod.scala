@@ -6,7 +6,6 @@ import typings.mendixmodelsdk.mendixmodelsdkStrings.workingCopyData
 import typings.mendixmodelsdk.transportInterfacesMod.IWorkingCopy
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iworkingcopyeventMod {
@@ -25,19 +24,20 @@ object iworkingcopyeventMod {
     def Success: typings.mendixmodelsdk.mendixmodelsdkStrings.Success = "Success".asInstanceOf[typings.mendixmodelsdk.mendixmodelsdkStrings.Success]
   }
   
-  @js.native
-  trait IBuildResultEvent extends IWorkingCopyEvent {
+  trait IBuildResultEvent
+    extends StObject
+       with IWorkingCopyEvent {
     
-    var data: EventId = js.native
+    var data: EventId
     
-    var `type`: buildResult = js.native
+    var `type`: buildResult
   }
   object IBuildResultEvent {
     
     @scala.inline
-    def apply(data: EventId, `type`: buildResult): IBuildResultEvent = {
+    def apply(data: EventId): IBuildResultEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("buildResult")
       __obj.asInstanceOf[IBuildResultEvent]
     }
     
@@ -52,19 +52,20 @@ object iworkingcopyeventMod {
     }
   }
   
-  @js.native
-  trait IWorkingCopyDataEvent extends IWorkingCopyEvent {
+  trait IWorkingCopyDataEvent
+    extends StObject
+       with IWorkingCopyEvent {
     
-    var data: IWorkingCopy = js.native
+    var data: IWorkingCopy
     
-    var `type`: workingCopyData = js.native
+    var `type`: workingCopyData
   }
   object IWorkingCopyDataEvent {
     
     @scala.inline
-    def apply(data: IWorkingCopy, `type`: workingCopyData): IWorkingCopyDataEvent = {
+    def apply(data: IWorkingCopy): IWorkingCopyDataEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("workingCopyData")
       __obj.asInstanceOf[IWorkingCopyDataEvent]
     }
     
@@ -87,16 +88,16 @@ object iworkingcopyeventMod {
   object IWorkingCopyEvent {
     
     @scala.inline
-    def IBuildResultEvent(data: EventId, `type`: buildResult): typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent = {
+    def IBuildResultEvent(data: EventId): typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("buildResult")
       __obj.asInstanceOf[typings.mendixmodelsdk.iworkingcopyeventMod.IBuildResultEvent]
     }
     
     @scala.inline
-    def IWorkingCopyDataEvent(data: IWorkingCopy, `type`: workingCopyData): typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent = {
+    def IWorkingCopyDataEvent(data: IWorkingCopy): typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent = {
       val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any])
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("workingCopyData")
       __obj.asInstanceOf[typings.mendixmodelsdk.iworkingcopyeventMod.IWorkingCopyDataEvent]
     }
   }

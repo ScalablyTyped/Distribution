@@ -2,27 +2,27 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ShowToastArgs extends AsyncCallback[Unit] {
+trait ShowToastArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Text content.
     */
-  var content: js.UndefOr[String] = js.native
+  var content: js.UndefOr[String] = js.undefined
   
   /**
     * Displaying duration, in ms, 2000 by default.
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * toast type, showing the related icon, none by default,
     * supporting success/fail/exception/none Here. If it is exception, content is mandatory.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object ShowToastArgs {
   

@@ -2,21 +2,19 @@ package typings.awsSdk.dynamodbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListContributorInsightsOutput extends StObject {
   
   /**
     * A list of ContributorInsightsSummary.
     */
-  var ContributorInsightsSummaries: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsSummaries] = js.native
+  var ContributorInsightsSummaries: js.UndefOr[typings.awsSdk.dynamodbMod.ContributorInsightsSummaries] = js.undefined
   
   /**
     * A token to go to the next page if there is one.
     */
-  var NextToken: js.UndefOr[NextTokenString] = js.native
+  var NextToken: js.UndefOr[NextTokenString] = js.undefined
 }
 object ListContributorInsightsOutput {
   

@@ -2,7 +2,6 @@ package typings.googleapis.androidpublisherV3Mod.androidpublisherV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,86 +10,85 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * who are using Google Play for Work, and whos application is restricted to
   * the enterprise private channel
   */
-@js.native
 trait SchemaExternallyHostedApk extends StObject {
   
   /**
     * The application label.
     */
-  var applicationLabel: js.UndefOr[String] = js.native
+  var applicationLabel: js.UndefOr[String] = js.undefined
   
   /**
     * A certificate (or array of certificates if a certificate-chain is used)
     * used to signed this APK, represented as a base64 encoded byte array.
     */
-  var certificateBase64s: js.UndefOr[js.Array[String]] = js.native
+  var certificateBase64s: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The URL at which the APK is hosted. This must be an https URL.
     */
-  var externallyHostedUrl: js.UndefOr[String] = js.native
+  var externallyHostedUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The SHA1 checksum of this APK, represented as a base64 encoded byte
     * array.
     */
-  var fileSha1Base64: js.UndefOr[String] = js.native
+  var fileSha1Base64: js.UndefOr[String] = js.undefined
   
   /**
     * The SHA256 checksum of this APK, represented as a base64 encoded byte
     * array.
     */
-  var fileSha256Base64: js.UndefOr[String] = js.native
+  var fileSha256Base64: js.UndefOr[String] = js.undefined
   
   /**
     * The file size in bytes of this APK.
     */
-  var fileSize: js.UndefOr[String] = js.native
+  var fileSize: js.UndefOr[String] = js.undefined
   
   /**
     * The icon image from the APK, as a base64 encoded byte array.
     */
-  var iconBase64: js.UndefOr[String] = js.native
+  var iconBase64: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum SDK supported by this APK (optional).
     */
-  var maximumSdk: js.UndefOr[Double] = js.native
+  var maximumSdk: js.UndefOr[Double] = js.undefined
   
   /**
     * The minimum SDK targeted by this APK.
     */
-  var minimumSdk: js.UndefOr[Double] = js.native
+  var minimumSdk: js.UndefOr[Double] = js.undefined
   
   /**
     * The native code environments supported by this APK (optional).
     */
-  var nativeCodes: js.UndefOr[js.Array[String]] = js.native
+  var nativeCodes: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The package name.
     */
-  var packageName: js.UndefOr[String] = js.native
+  var packageName: js.UndefOr[String] = js.undefined
   
   /**
     * The features required by this APK (optional).
     */
-  var usesFeatures: js.UndefOr[js.Array[String]] = js.native
+  var usesFeatures: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The permissions requested by this APK.
     */
-  var usesPermissions: js.UndefOr[js.Array[SchemaExternallyHostedApkUsesPermission]] = js.native
+  var usesPermissions: js.UndefOr[js.Array[SchemaExternallyHostedApkUsesPermission]] = js.undefined
   
   /**
     * The version code of this APK.
     */
-  var versionCode: js.UndefOr[Double] = js.native
+  var versionCode: js.UndefOr[Double] = js.undefined
   
   /**
     * The version name of this APK.
     */
-  var versionName: js.UndefOr[String] = js.native
+  var versionName: js.UndefOr[String] = js.undefined
 }
 object SchemaExternallyHostedApk {
   

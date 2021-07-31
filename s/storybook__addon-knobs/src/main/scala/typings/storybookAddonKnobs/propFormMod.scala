@@ -6,7 +6,6 @@ import typings.storybookAddonKnobs.anon.OnFieldClick
 import typings.storybookAddonKnobs.knobStoreMod.KnobStoreKnob
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object propFormMod {
@@ -47,14 +46,13 @@ object propFormMod {
     def makeChangeHandler(name: String, `type`: String): js.Function1[/* value */ js.UndefOr[String], Unit] = js.native
   }
   
-  @js.native
   trait PropFormProps extends StObject {
     
-    var knobs: js.Array[KnobStoreKnob] = js.native
+    var knobs: js.Array[KnobStoreKnob]
     
-    def onFieldChange(changedKnob: KnobStoreKnob): Unit = js.native
+    def onFieldChange(changedKnob: KnobStoreKnob): Unit
     
-    def onFieldClick(knob: KnobStoreKnob): Unit = js.native
+    def onFieldClick(knob: KnobStoreKnob): Unit
   }
   object PropFormProps {
     

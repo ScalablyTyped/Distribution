@@ -3,15 +3,13 @@ package typings.winrt.anon
 import typings.winrt.Windows.Data.Json.IJsonValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `1` extends StObject {
   
-  var items: js.Array[IJsonValue] = js.native
+  var items: js.Array[IJsonValue]
   
-  var returnValue: Double = js.native
+  var returnValue: Double
 }
 object `1` {
   

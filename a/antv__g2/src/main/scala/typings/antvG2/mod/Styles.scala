@@ -14,7 +14,6 @@ import typings.antvG2.antvG2Strings.start
 import typings.antvG2.antvG2Strings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,28 +21,29 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object Styles {
   
-  @js.native
-  trait background extends common {
+  trait background
+    extends StObject
+       with common {
     
     /**
       * 图表背景透明度
       */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 图表边框粗度
       */
-    var lineWidth: js.UndefOr[Double] = js.native
+    var lineWidth: js.UndefOr[Double] = js.undefined
     
     /**
       * 图表圆角大小
       */
-    var radius: js.UndefOr[Double] = js.native
+    var radius: js.UndefOr[Double] = js.undefined
     
     /**
       * 图表边框透明度
       */
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
   }
   object background {
     
@@ -82,48 +82,47 @@ object Styles {
     }
   }
   
-  @js.native
   trait common extends StObject {
     
     /**
       * 设置用于填充绘画的颜色、渐变或模式；
       */
-    var fill: js.UndefOr[String] = js.native
+    var fill: js.UndefOr[String] = js.undefined
     
     /**
       * 设置新图像如何绘制到已有的图像上。
       */
-    var globalCompositeOperation: js.UndefOr[String] = js.native
+    var globalCompositeOperation: js.UndefOr[String] = js.undefined
     
     /**
       * 设置绘图的当前 alpha 或透明值；
       */
-    var opacity: js.UndefOr[String | Double] = js.native
+    var opacity: js.UndefOr[String | Double] = js.undefined
     
     /**
       * 设置用于阴影的模糊级别；
       */
-    var shadowBlur: js.UndefOr[String | Double] = js.native
+    var shadowBlur: js.UndefOr[String | Double] = js.undefined
     
     /**
       * 设置用于阴影的颜色；
       */
-    var shadowColor: js.UndefOr[String] = js.native
+    var shadowColor: js.UndefOr[String] = js.undefined
     
     /**
       * 设置阴影距形状的水平距离；
       */
-    var shadowOffsetX: js.UndefOr[String | Double] = js.native
+    var shadowOffsetX: js.UndefOr[String | Double] = js.undefined
     
     /**
       * 设置阴影距形状的垂直距离；
       */
-    var shadowOffsetY: js.UndefOr[String | Double] = js.native
+    var shadowOffsetY: js.UndefOr[String | Double] = js.undefined
     
     /**
       * 设置用于笔触的颜色、渐变或模式；
       */
-    var stroke: js.UndefOr[String | Double] = js.native
+    var stroke: js.UndefOr[String | Double] = js.undefined
   }
   object common {
     
@@ -186,31 +185,32 @@ object Styles {
     }
   }
   
-  @js.native
-  trait line extends common {
+  trait line
+    extends StObject
+       with common {
     
-    var arrowAngle: js.UndefOr[Double] = js.native
+    var arrowAngle: js.UndefOr[Double] = js.undefined
     
-    var arrowRadius: js.UndefOr[Double] = js.native
+    var arrowRadius: js.UndefOr[Double] = js.undefined
     
-    var endArrow: js.UndefOr[Boolean] = js.native
+    var endArrow: js.UndefOr[Boolean] = js.undefined
     
-    var lineCap: js.UndefOr[String] = js.native
+    var lineCap: js.UndefOr[String] = js.undefined
     
     /**
       * 虚线的设置
       */
-    var lineDash: js.UndefOr[js.Array[Double]] = js.native
+    var lineDash: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var lineJoin: js.UndefOr[String] = js.native
+    var lineJoin: js.UndefOr[String] = js.undefined
     
-    var lineWidth: js.UndefOr[String | Double] = js.native
+    var lineWidth: js.UndefOr[String | Double] = js.undefined
     
-    var miterLimit: js.UndefOr[String | Double] = js.native
+    var miterLimit: js.UndefOr[String | Double] = js.undefined
     
-    var startArrow: js.UndefOr[Boolean] = js.native
+    var startArrow: js.UndefOr[Boolean] = js.undefined
     
-    var strokeOpacity: js.UndefOr[String | Double] = js.native
+    var strokeOpacity: js.UndefOr[String | Double] = js.undefined
   }
   object line {
     
@@ -288,18 +288,19 @@ object Styles {
     }
   }
   
-  @js.native
-  trait path extends common {
+  trait path
+    extends StObject
+       with common {
     
     /**
       * 图表背景透明度
       */
-    var fillOpacity: js.UndefOr[Double] = js.native
+    var fillOpacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 图表边框透明度
       */
-    var strokeOpacity: js.UndefOr[Double] = js.native
+    var strokeOpacity: js.UndefOr[Double] = js.undefined
   }
   object path {
     
@@ -326,50 +327,51 @@ object Styles {
     }
   }
   
-  @js.native
-  trait text extends common {
+  trait text
+    extends StObject
+       with common {
     
-    var font: js.UndefOr[String] = js.native
+    var font: js.UndefOr[String] = js.undefined
     
     /**
       * 文本字体名称
       */
-    var fontFamily: js.UndefOr[String] = js.native
+    var fontFamily: js.UndefOr[String] = js.undefined
     
     /**
       * 文本字号大小
       */
-    var fontSize: js.UndefOr[String | Double] = js.native
+    var fontSize: js.UndefOr[String | Double] = js.undefined
     
     /**
       * 文本样式
       */
-    var fontStyle: js.UndefOr[normal | italic | oblique] = js.native
+    var fontStyle: js.UndefOr[normal | italic | oblique] = js.undefined
     
     /**
       * 文本变体
       */
-    var fontVariant: js.UndefOr[normal | `small-caps`] = js.native
+    var fontVariant: js.UndefOr[normal | `small-caps`] = js.undefined
     
     /**
       * 文本粗细
       */
-    var fontWeight: js.UndefOr[String | Double] = js.native
+    var fontWeight: js.UndefOr[String | Double] = js.undefined
     
     /**
       * 文本旋转角度
       */
-    var rotate: js.UndefOr[Double] = js.native
+    var rotate: js.UndefOr[Double] = js.undefined
     
     /**
       * 文本对齐方向
       */
-    var textAlign: js.UndefOr[center | end | left | right | start] = js.native
+    var textAlign: js.UndefOr[center | end | left | right | start] = js.undefined
     
     /**
       * 文本基准线，默认为`middle`
       */
-    var textBaseline: js.UndefOr[top | middle | bottom] = js.native
+    var textBaseline: js.UndefOr[top | middle | bottom] = js.undefined
   }
   object text {
     
@@ -438,13 +440,14 @@ object Styles {
     }
   }
   
-  @js.native
-  trait tickLine extends line {
+  trait tickLine
+    extends StObject
+       with line {
     
     /**
       * 刻度线的长度，可以为负值（表示反方向渲染）
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
   }
   object tickLine {
     

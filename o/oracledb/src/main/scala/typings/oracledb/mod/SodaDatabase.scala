@@ -4,7 +4,6 @@ import typings.node.Buffer
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -73,8 +72,8 @@ trait SodaDatabase extends StObject {
   def createDocument(content: String, options: SodaDocumentOptions): SodaDocument = js.native
   def createDocument(content: Buffer): SodaDocument = js.native
   def createDocument(content: Buffer, options: SodaDocumentOptions): SodaDocument = js.native
-  def createDocument(content: Record[String, _]): SodaDocument = js.native
-  def createDocument(content: Record[String, _], options: SodaDocumentOptions): SodaDocument = js.native
+  def createDocument(content: Record[String, js.Any]): SodaDocument = js.native
+  def createDocument(content: Record[String, js.Any], options: SodaDocumentOptions): SodaDocument = js.native
   
   /**
     * Gets an array of collection names in alphabetical order.

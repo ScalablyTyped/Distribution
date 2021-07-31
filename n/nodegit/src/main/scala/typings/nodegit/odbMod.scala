@@ -10,7 +10,6 @@ import typings.nodegit.odbObjectMod.OdbObject
 import typings.nodegit.oidMod.Oid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object odbMod {
@@ -32,9 +31,12 @@ object odbMod {
   /* static members */
   object Odb {
     
-    @JSImport("nodegit/odb", "Odb.open")
+    @JSImport("nodegit/odb", "Odb")
     @js.native
-    def open(objectsDir: String): js.Promise[Odb] = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def open(objectsDir: String): js.Promise[Odb] = ^.asInstanceOf[js.Dynamic].applyDynamic("open")(objectsDir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Odb]]
     
     /* Rewritten from type alias, can be one of: 
       - typings.nodegit.nodegitNumbers.`2`

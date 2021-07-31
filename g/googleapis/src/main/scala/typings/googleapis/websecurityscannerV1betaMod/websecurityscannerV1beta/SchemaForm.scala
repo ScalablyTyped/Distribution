@@ -2,24 +2,22 @@ package typings.googleapis.websecurityscannerV1betaMod.websecurityscannerV1beta
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ! Information about a vulnerability with an HTML.
   */
-@js.native
 trait SchemaForm extends StObject {
   
   /**
     * ! The URI where to send the form when it&#39;s submitted.
     */
-  var actionUri: js.UndefOr[String] = js.native
+  var actionUri: js.UndefOr[String] = js.undefined
   
   /**
     * ! The names of form fields related to the vulnerability.
     */
-  var fields: js.UndefOr[js.Array[String]] = js.native
+  var fields: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaForm {
   

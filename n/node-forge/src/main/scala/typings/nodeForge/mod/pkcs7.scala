@@ -8,29 +8,29 @@ import typings.nodeForge.mod.pki.Certificate
 import typings.nodeForge.mod.util.ByteBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pkcs7 {
   
-  @JSImport("node-forge", "pkcs7.createEnvelopedData")
+  @JSImport("node-forge", "pkcs7")
   @js.native
-  def createEnvelopedData(): PkcsEnvelopedData = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("node-forge", "pkcs7.createSignedData")
-  @js.native
-  def createSignedData(): PkcsSignedData = js.native
+  @scala.inline
+  def createEnvelopedData(): PkcsEnvelopedData = ^.asInstanceOf[js.Dynamic].applyDynamic("createEnvelopedData")().asInstanceOf[PkcsEnvelopedData]
   
-  @js.native
+  @scala.inline
+  def createSignedData(): PkcsSignedData = ^.asInstanceOf[js.Dynamic].applyDynamic("createSignedData")().asInstanceOf[PkcsSignedData]
+  
   trait PkcsEnvelopedData extends StObject {
     
-    def addRecipient(certificate: Certificate): Unit = js.native
+    def addRecipient(certificate: Certificate): Unit
     
-    var content: js.UndefOr[String | ByteBuffer] = js.native
+    var content: js.UndefOr[String | ByteBuffer] = js.undefined
     
-    def encrypt(): Unit = js.native
+    def encrypt(): Unit
     
-    def toAsn1(): Asn1 = js.native
+    def toAsn1(): Asn1
   }
   object PkcsEnvelopedData {
     

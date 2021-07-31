@@ -2,16 +2,14 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RunScheduledInstancesResult extends StObject {
   
   /**
     * The IDs of the newly launched instances.
     */
-  var InstanceIdSet: js.UndefOr[typings.awsSdk.ec2Mod.InstanceIdSet] = js.native
+  var InstanceIdSet: js.UndefOr[typings.awsSdk.ec2Mod.InstanceIdSet] = js.undefined
 }
 object RunScheduledInstancesResult {
   

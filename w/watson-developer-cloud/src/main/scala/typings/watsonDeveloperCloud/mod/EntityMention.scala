@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object describing a contextual entity mention. */
-@js.native
 trait EntityMention extends StObject {
   
   /** The name of the intent. */
-  var intent: String = js.native
+  var intent: String
   
   /** An array of zero-based character offsets that indicate where the entity mentions begin and end in the input text. */
-  var location: js.Array[Double] = js.native
+  var location: js.Array[Double]
   
   /** The text of the user input example. */
-  var text: String = js.native
+  var text: String
 }
 object EntityMention {
   

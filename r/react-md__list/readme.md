@@ -10,9 +10,9 @@ This package is used to create lists with the material design specs.
 | ------------------ | :-------------: |
 | Full name          | @react-md/list |
 | Keywords           | accessibility, a11y, react-md, material design, react, list, list item, component, components |
-| # releases         | 32 |
+| # releases         | 41 |
 | # dependents       | 6 |
-| # downloads        | 8126 |
+| # downloads        | 23120 |
 | # stars            | 0 |
 
 ## Links

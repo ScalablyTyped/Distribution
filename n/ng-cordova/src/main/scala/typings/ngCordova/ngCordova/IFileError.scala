@@ -3,13 +3,13 @@ package typings.ngCordova.ngCordova
 import typings.cordovaPluginFile.FileError
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IFileError extends FileError {
+trait IFileError
+  extends StObject
+     with FileError {
   
-  var message: String = js.native
+  var message: String
 }
 object IFileError {
   

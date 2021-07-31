@@ -7,7 +7,6 @@ import typings.blueprintjsDatetime.timePickerMod.ITimePickerProps
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateTimePickerMod {
@@ -17,7 +16,7 @@ object dateTimePickerMod {
   class DateTimePicker ()
     extends AbstractPureComponent2[IDateTimePickerProps, IDateTimePickerState, js.Object] {
     def this(props: IDateTimePickerProps) = this()
-    def this(props: js.UndefOr[scala.Nothing], context: js.Any) = this()
+    def this(props: Unit, context: js.Any) = this()
     def this(props: IDateTimePickerProps, context: js.Any) = this()
     
     @JSName("componentDidUpdate")
@@ -47,43 +46,44 @@ object dateTimePickerMod {
     def displayName_=(x: String): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("displayName")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait IDateTimePickerProps extends IProps {
+  trait IDateTimePickerProps
+    extends StObject
+       with IProps {
     
     /**
       * Allows the user to clear the selection by clicking the currently selected day.
       * @default true
       */
-    var canClearSelection: js.UndefOr[Boolean] = js.native
+    var canClearSelection: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Any props to be passed on to the `DatePicker` other than the `value` and `onChange` props as they come directly
       * from the `DateTimePicker` props.
       */
-    var datePickerProps: js.UndefOr[IDatePickerProps] = js.native
+    var datePickerProps: js.UndefOr[IDatePickerProps] = js.undefined
     
     /**
       * The initial date and time value that will be set.
       * This will be ignored if `value` is set.
       * @default Date.now()
       */
-    var defaultValue: js.UndefOr[Date] = js.native
+    var defaultValue: js.UndefOr[Date] = js.undefined
     
     /**
       * Callback invoked when the user changes the date or time.
       */
-    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function2[/* selectedDate */ Date, /* isUserChange */ Boolean, Unit]] = js.undefined
     
     /**
       * Any props to be passed on to the `TimePicker` other than the `value` and `onChange` props as they come directly
       * from the `DateTimePicker` props.
       */
-    var timePickerProps: js.UndefOr[ITimePickerProps] = js.native
+    var timePickerProps: js.UndefOr[ITimePickerProps] = js.undefined
     
     /**
       * The currently set date and time. If this prop is provided, the component acts in a controlled manner.
       */
-    var value: js.UndefOr[Date | Null] = js.native
+    var value: js.UndefOr[Date | Null] = js.undefined
   }
   object IDateTimePickerProps {
     
@@ -137,12 +137,11 @@ object dateTimePickerMod {
     }
   }
   
-  @js.native
   trait IDateTimePickerState extends StObject {
     
-    var dateValue: js.UndefOr[Date] = js.native
+    var dateValue: js.UndefOr[Date] = js.undefined
     
-    var timeValue: js.UndefOr[Date] = js.native
+    var timeValue: js.UndefOr[Date] = js.undefined
   }
   object IDateTimePickerState {
     

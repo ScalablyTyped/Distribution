@@ -10,9 +10,9 @@ A standalone server for programming game Screeps
 | ------------------ | :-------------: |
 | Full name          | screeps |
 | Keywords           | - |
-| # releases         | 65 |
-| # dependents       | 2 |
-| # downloads        | 16724 |
+| # releases         | 60 |
+| # dependents       | 3 |
+| # downloads        | 20484 |
 | # stars            | 0 |
 
 ## Links

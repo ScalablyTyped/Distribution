@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Column extends StObject {
   
   /**
@@ -13,21 +11,21 @@ trait Column extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#getMenuItems)
     */
-  def getMenuItems(): ButtonMenuItemConfig = js.native
+  def getMenuItems(): ButtonMenuItemConfig
   
   /**
     * The object to customize the feature table column's menu content.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#menu)
     */
-  val menu: ButtonMenu = js.native
+  val menu: ButtonMenu
   
   /**
     * Indicates whether the column is resizable.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-FeatureTable-Grid-Column.html#resizable)
     */
-  val resizable: Boolean = js.native
+  val resizable: Boolean
 }
 object Column {
   

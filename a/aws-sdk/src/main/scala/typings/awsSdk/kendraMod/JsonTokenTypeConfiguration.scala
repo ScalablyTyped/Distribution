@@ -2,21 +2,19 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JsonTokenTypeConfiguration extends StObject {
   
   /**
     * The group attribute field.
     */
-  var GroupAttributeField: String = js.native
+  var GroupAttributeField: String
   
   /**
     * The user name attribute field.
     */
-  var UserNameAttributeField: String = js.native
+  var UserNameAttributeField: String
 }
 object JsonTokenTypeConfiguration {
   

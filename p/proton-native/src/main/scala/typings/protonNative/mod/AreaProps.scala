@@ -3,53 +3,53 @@ package typings.protonNative.mod
 import typings.protonNative.anon.Buttons
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait AreaProps extends AreaBaseProps {
+trait AreaProps
+  extends StObject
+     with AreaBaseProps {
   
   /**
     * Called when releasing a key. Return `true` to signal that this event got handled (always returning true will disable any menu accelerators).
     */
-  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Boolean]] = js.native
+  var onKeyDown: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Boolean]] = js.undefined
   
   /**
     * Called when pressing a key. Return `true` to signal that this event got handled (always returning true will disable any menu accelerators).
     */
-  var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Boolean]] = js.native
+  var onKeyUp: js.UndefOr[js.Function1[/* event */ KeyboardEvent, Boolean]] = js.undefined
   
   /**
     * Whether the area can be seen.
     */
-  var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseDown: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
   /**
     * Called when the mouse enters the area.
     */
-  var onMouseEnter: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMouseEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called when the mouse leaves the area.
     */
-  var onMouseLeave: js.UndefOr[js.Function0[Unit]] = js.native
+  var onMouseLeave: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * Called when the mouse is moved over the area
     */
-  var onMouseMove: js.UndefOr[js.Function1[/* event */ Buttons, Unit]] = js.native
+  var onMouseMove: js.UndefOr[js.Function1[/* event */ Buttons, Unit]] = js.undefined
   
   /**
     * **Not working at the moment.**
     *
     * Called when releasing a mouse button over the area.
     */
-  var onMouseUp: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.native
+  var onMouseUp: js.UndefOr[js.Function1[/* event */ MouseEvent, Unit]] = js.undefined
   
   /**
     * Whether the area can be seen.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
 }
 object AreaProps {
   

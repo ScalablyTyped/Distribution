@@ -2,29 +2,29 @@ package typings.kendoUi.kendo.dataviz.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ChartSeriesHoverEvent extends ChartEvent {
+trait ChartSeriesHoverEvent
+  extends StObject
+     with ChartEvent {
   
-  var category: js.UndefOr[js.Any] = js.native
+  var category: js.UndefOr[js.Any] = js.undefined
   
-  var categoryPoints: js.UndefOr[js.Any] = js.native
+  var categoryPoints: js.UndefOr[js.Any] = js.undefined
   
-  var dataItem: js.UndefOr[js.Any] = js.native
+  var dataItem: js.UndefOr[js.Any] = js.undefined
   
-  var element: js.UndefOr[js.Any] = js.native
+  var element: js.UndefOr[js.Any] = js.undefined
   
-  var originalEvent: js.UndefOr[js.Any] = js.native
+  var originalEvent: js.UndefOr[js.Any] = js.undefined
   
-  var percentage: js.UndefOr[js.Any] = js.native
+  var percentage: js.UndefOr[js.Any] = js.undefined
   
-  var series: js.UndefOr[ChartSeriesHoverEventSeries] = js.native
+  var series: js.UndefOr[ChartSeriesHoverEventSeries] = js.undefined
   
-  var stackValue: js.UndefOr[js.Any] = js.native
+  var stackValue: js.UndefOr[js.Any] = js.undefined
   
-  var value: js.UndefOr[js.Any] = js.native
+  var value: js.UndefOr[js.Any] = js.undefined
 }
 object ChartSeriesHoverEvent {
   

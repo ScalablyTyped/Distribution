@@ -2,33 +2,31 @@ package typings.googleapis.contentV2Mod.contentV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAccountStatusDataQualityIssue extends StObject {
   
-  var country: js.UndefOr[String] = js.native
+  var country: js.UndefOr[String] = js.undefined
   
-  var destination: js.UndefOr[String] = js.native
+  var destination: js.UndefOr[String] = js.undefined
   
-  var detail: js.UndefOr[String] = js.native
+  var detail: js.UndefOr[String] = js.undefined
   
-  var displayedValue: js.UndefOr[String] = js.native
+  var displayedValue: js.UndefOr[String] = js.undefined
   
-  var exampleItems: js.UndefOr[js.Array[SchemaAccountStatusExampleItem]] = js.native
+  var exampleItems: js.UndefOr[js.Array[SchemaAccountStatusExampleItem]] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var lastChecked: js.UndefOr[String] = js.native
+  var lastChecked: js.UndefOr[String] = js.undefined
   
-  var location: js.UndefOr[String] = js.native
+  var location: js.UndefOr[String] = js.undefined
   
-  var numItems: js.UndefOr[Double] = js.native
+  var numItems: js.UndefOr[Double] = js.undefined
   
-  var severity: js.UndefOr[String] = js.native
+  var severity: js.UndefOr[String] = js.undefined
   
-  var submittedValue: js.UndefOr[String] = js.native
+  var submittedValue: js.UndefOr[String] = js.undefined
 }
 object SchemaAccountStatusDataQualityIssue {
   

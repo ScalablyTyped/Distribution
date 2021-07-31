@@ -2,17 +2,17 @@ package typings.documentdb.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Permission extends UniqueId {
+trait Permission
+  extends StObject
+     with UniqueId {
   
   /** The mode of the permission */
-  var permissionMode: PermissionMode = js.native
+  var permissionMode: PermissionMode
   
   /** The link of the resource that the permission will be applied to. */
-  var resource: String = js.native
+  var resource: String
 }
 object Permission {
   

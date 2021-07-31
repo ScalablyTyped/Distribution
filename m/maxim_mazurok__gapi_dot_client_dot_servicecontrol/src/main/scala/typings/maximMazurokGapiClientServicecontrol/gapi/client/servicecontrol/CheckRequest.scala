@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientServicecontrol.gapi.client.servicecontrol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CheckRequest extends StObject {
   
   /** Describes attributes about the operation being executed by the service. */
-  var attributes: js.UndefOr[AttributeContext] = js.native
+  var attributes: js.UndefOr[AttributeContext] = js.undefined
   
   /** Describes the resources and the policies applied to each resource. */
-  var resources: js.UndefOr[js.Array[ResourceInfo]] = js.native
+  var resources: js.UndefOr[js.Array[ResourceInfo]] = js.undefined
   
   /**
     * Specifies the version of the service configuration that should be used to process the request. Must not be empty. Set this field to 'latest' to specify using the latest
     * configuration.
     */
-  var serviceConfigId: js.UndefOr[String] = js.native
+  var serviceConfigId: js.UndefOr[String] = js.undefined
 }
 object CheckRequest {
   

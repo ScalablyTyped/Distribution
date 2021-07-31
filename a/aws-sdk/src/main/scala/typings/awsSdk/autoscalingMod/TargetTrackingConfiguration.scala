@@ -2,31 +2,29 @@ package typings.awsSdk.autoscalingMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TargetTrackingConfiguration extends StObject {
   
   /**
     * A customized metric. You must specify either a predefined metric or a customized metric.
     */
-  var CustomizedMetricSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.CustomizedMetricSpecification] = js.native
+  var CustomizedMetricSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.CustomizedMetricSpecification] = js.undefined
   
   /**
     * Indicates whether scaling in by the target tracking scaling policy is disabled. If scaling in is disabled, the target tracking scaling policy doesn't remove instances from the Auto Scaling group. Otherwise, the target tracking scaling policy can remove instances from the Auto Scaling group. The default is false.
     */
-  var DisableScaleIn: js.UndefOr[typings.awsSdk.autoscalingMod.DisableScaleIn] = js.native
+  var DisableScaleIn: js.UndefOr[typings.awsSdk.autoscalingMod.DisableScaleIn] = js.undefined
   
   /**
     * A predefined metric. You must specify either a predefined metric or a customized metric.
     */
-  var PredefinedMetricSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.PredefinedMetricSpecification] = js.native
+  var PredefinedMetricSpecification: js.UndefOr[typings.awsSdk.autoscalingMod.PredefinedMetricSpecification] = js.undefined
   
   /**
     * The target value for the metric.
     */
-  var TargetValue: MetricScale = js.native
+  var TargetValue: MetricScale
 }
 object TargetTrackingConfiguration {
   

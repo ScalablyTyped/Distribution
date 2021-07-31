@@ -3,17 +3,15 @@ package typings.ionic.anon
 import typings.ionic.definitionsMod.AssociationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Branches extends StObject {
   
-  var branches: js.Array[String] = js.native
+  var branches: js.Array[String]
   
-  var repoId: Double = js.native
+  var repoId: Double
   
-  var `type`: AssociationType = js.native
+  var `type`: AssociationType
 }
 object Branches {
   

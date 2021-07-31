@@ -5,7 +5,6 @@ import typings.three.geometryMod.Geometry
 import typings.three.textBufferGeometryMod.TextGeometryParameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object textGeometryMod {

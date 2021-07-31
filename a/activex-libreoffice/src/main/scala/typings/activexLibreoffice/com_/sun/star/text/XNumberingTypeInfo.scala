@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,29 +16,30 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.style.NumberingType
   * @version 1.0
   */
-@js.native
-trait XNumberingTypeInfo extends XInterface {
+trait XNumberingTypeInfo
+  extends StObject
+     with XInterface {
   
   /**
     * returns the numbering type values that are supported by the component.
     * @see
     */
-  val SupportedNumberingTypes: SafeArray[Double] = js.native
+  val SupportedNumberingTypes: SafeArray[Double]
   
   /** returns the corresponding identifier to a numbering type. */
-  def getNumberingIdentifier(NumberingType: Double): String = js.native
+  def getNumberingIdentifier(NumberingType: Double): String
   
   /** returns the corresponding numbering type to an identifier. */
-  def getNumberingType(NumberingIdentifier: String): Double = js.native
+  def getNumberingType(NumberingIdentifier: String): Double
   
   /**
     * returns the numbering type values that are supported by the component.
     * @see
     */
-  def getSupportedNumberingTypes(): SafeArray[Double] = js.native
+  def getSupportedNumberingTypes(): SafeArray[Double]
   
   /** determines whether an identifier is supported. */
-  def hasNumberingType(NumberingIdentifier: String): Boolean = js.native
+  def hasNumberingType(NumberingIdentifier: String): Boolean
 }
 object XNumberingTypeInfo {
   

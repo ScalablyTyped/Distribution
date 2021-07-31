@@ -4,61 +4,61 @@ import typings.std.Date
 import typings.vsoNodeApi.galleryInterfacesMod.ExtensionFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InstalledExtension extends ExtensionManifest {
+trait InstalledExtension
+  extends StObject
+     with ExtensionManifest {
   
   /**
     * The friendly extension id for this extension - unique for a given publisher.
     */
-  var extensionId: String = js.native
+  var extensionId: String
   
   /**
     * The display name of the extension.
     */
-  var extensionName: String = js.native
+  var extensionName: String
   
   /**
     * This is the set of files available from the extension.
     */
-  var files: js.Array[ExtensionFile] = js.native
+  var files: js.Array[ExtensionFile]
   
   /**
     * Extension flags relevant to contribution consumers
     */
-  var flags: ExtensionFlags = js.native
+  var flags: ExtensionFlags
   
   /**
     * Information about this particular installation of the extension
     */
-  var installState: InstalledExtensionState = js.native
+  var installState: InstalledExtensionState
   
   /**
     * This represents the date/time the extensions was last updated in the gallery. This doesnt mean this version was updated the value represents changes to any and all versions of the extension.
     */
-  var lastPublished: Date = js.native
+  var lastPublished: Date
   
   /**
     * Unique id of the publisher of this extension
     */
-  var publisherId: String = js.native
+  var publisherId: String
   
   /**
     * The display name of the publisher
     */
-  var publisherName: String = js.native
+  var publisherName: String
   
   /**
     * Unique id for this extension (the same id is used for all versions of a single extension)
     */
-  var registrationId: String = js.native
+  var registrationId: String
   
   /**
     * Version of this extension
     */
-  var version: String = js.native
+  var version: String
 }
 object InstalledExtension {
   

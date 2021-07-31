@@ -2,7 +2,6 @@ package typings.fancybox
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fancyboxStrings {
@@ -23,7 +22,9 @@ object fancyboxStrings {
   def circular: circular = "circular".asInstanceOf[circular]
   
   @js.native
-  sealed trait close extends FancyBoxInteractionTypes
+  sealed trait close
+    extends StObject
+       with FancyBoxInteractionTypes
   @scala.inline
   def close: close = "close".asInstanceOf[close]
   
@@ -63,12 +64,16 @@ object fancyboxStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait next extends FancyBoxInteractionTypes
+  sealed trait next
+    extends StObject
+       with FancyBoxInteractionTypes
   @scala.inline
   def next: next = "next".asInstanceOf[next]
   
   @js.native
-  sealed trait nextOrClose extends FancyBoxInteractionTypes
+  sealed trait nextOrClose
+    extends StObject
+       with FancyBoxInteractionTypes
   @scala.inline
   def nextOrClose: nextOrClose = "nextOrClose".asInstanceOf[nextOrClose]
   
@@ -98,7 +103,9 @@ object fancyboxStrings {
   def thumbs: thumbs = "thumbs".asInstanceOf[thumbs]
   
   @js.native
-  sealed trait toggleControls extends FancyBoxInteractionTypes
+  sealed trait toggleControls
+    extends StObject
+       with FancyBoxInteractionTypes
   @scala.inline
   def toggleControls: toggleControls = "toggleControls".asInstanceOf[toggleControls]
   
@@ -118,7 +125,9 @@ object fancyboxStrings {
   def y: y = "y".asInstanceOf[y]
   
   @js.native
-  sealed trait zoom extends FancyBoxInteractionTypes
+  sealed trait zoom
+    extends StObject
+       with FancyBoxInteractionTypes
   @scala.inline
   def zoom: zoom = "zoom".asInstanceOf[zoom]
   

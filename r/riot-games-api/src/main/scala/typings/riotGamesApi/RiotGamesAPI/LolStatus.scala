@@ -2,7 +2,6 @@ package typings.riotGamesApi.RiotGamesAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,16 +9,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object LolStatus {
   
-  @js.native
   trait Incident extends StObject {
     
-    var active: Boolean = js.native
+    var active: Boolean
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var updates: js.Array[Message] = js.native
+    var updates: js.Array[Message]
   }
   object Incident {
     
@@ -49,22 +47,21 @@ object LolStatus {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var author: String = js.native
+    var author: String
     
-    var content: String = js.native
+    var content: String
     
-    var created_at: String = js.native
+    var created_at: String
     
-    var id: Double = js.native
+    var id: Double
     
-    var severity: String = js.native
+    var severity: String
     
-    var translations: js.Array[Translation] = js.native
+    var translations: js.Array[Translation]
     
-    var updated_at: String = js.native
+    var updated_at: String
   }
   object Message {
     
@@ -111,16 +108,15 @@ object LolStatus {
     }
   }
   
-  @js.native
   trait Service extends StObject {
     
-    var incidents: js.Array[Incident] = js.native
+    var incidents: js.Array[Incident]
     
-    var name: String = js.native
+    var name: String
     
-    var slug: String = js.native
+    var slug: String
     
-    var status: String = js.native
+    var status: String
   }
   object Service {
     
@@ -150,18 +146,17 @@ object LolStatus {
     }
   }
   
-  @js.native
   trait Shard extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var locales: js.Array[String] = js.native
+    var locales: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var region_tag: String = js.native
+    var region_tag: String
     
-    var slug: String = js.native
+    var slug: String
   }
   object Shard {
     
@@ -194,20 +189,19 @@ object LolStatus {
     }
   }
   
-  @js.native
   trait ShardStatus extends StObject {
     
-    var hostname: String = js.native
+    var hostname: String
     
-    var locales: js.Array[String] = js.native
+    var locales: js.Array[String]
     
-    var name: String = js.native
+    var name: String
     
-    var region_tag: String = js.native
+    var region_tag: String
     
-    var services: js.Array[Service] = js.native
+    var services: js.Array[Service]
     
-    var slug: String = js.native
+    var slug: String
   }
   object ShardStatus {
     
@@ -253,14 +247,13 @@ object LolStatus {
     }
   }
   
-  @js.native
   trait Translation extends StObject {
     
-    var content: String = js.native
+    var content: String
     
-    var locale: String = js.native
+    var locale: String
     
-    var updated_at: String = js.native
+    var updated_at: String
   }
   object Translation {
     

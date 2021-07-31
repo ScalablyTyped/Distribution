@@ -2,37 +2,35 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2MediaObject extends StObject {
   
   /**
     * The url pointing to the media content.
     */
-  var contentUrl: js.UndefOr[String] = js.native
+  var contentUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Description of this media object.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * A small image icon displayed on the right from the title.
     * It's resized to 36x36 dp.
     */
-  var icon: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var icon: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * A large image, such as the cover of the album, etc.
     */
-  var largeImage: js.UndefOr[GoogleActionsV2UiElementsImage] = js.native
+  var largeImage: js.UndefOr[GoogleActionsV2UiElementsImage] = js.undefined
   
   /**
     * Name of this media object.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsV2MediaObject {
   

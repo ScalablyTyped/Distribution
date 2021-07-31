@@ -3,7 +3,6 @@ package typings.segmentAnalytics
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
@@ -25,11 +24,11 @@ object anon {
     def traits(newTraits: js.Object): Unit = js.native
   }
   
-  @js.native
   trait Dictintegration
-    extends /* integration */ StringDictionary[js.UndefOr[Boolean]] {
+    extends StObject
+       with /* integration */ StringDictionary[js.UndefOr[Boolean]] {
     
-    var All: js.UndefOr[Boolean] = js.native
+    var All: js.UndefOr[Boolean] = js.undefined
   }
   object Dictintegration {
     
@@ -59,12 +58,11 @@ object anon {
     def traits(newTraits: js.Object): Unit = js.native
   }
   
-  @js.native
   trait Key extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var oldKey: String = js.native
+    var oldKey: String
   }
   object Key {
     
@@ -85,10 +83,9 @@ object anon {
     }
   }
   
-  @js.native
   trait KeyString extends StObject {
     
-    var key: String = js.native
+    var key: String
   }
   object KeyString {
     

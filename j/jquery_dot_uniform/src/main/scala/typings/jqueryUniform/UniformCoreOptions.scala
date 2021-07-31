@@ -2,65 +2,63 @@ package typings.jqueryUniform
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UniformCoreOptions extends StObject {
   
-  var activeClass: js.UndefOr[String] = js.native
+  var activeClass: js.UndefOr[String] = js.undefined
   
-  var autoHide: js.UndefOr[Boolean] = js.native
+  var autoHide: js.UndefOr[Boolean] = js.undefined
   
-  var buttonClass: js.UndefOr[String] = js.native
+  var buttonClass: js.UndefOr[String] = js.undefined
   
-  var checkboxClass: js.UndefOr[String] = js.native
+  var checkboxClass: js.UndefOr[String] = js.undefined
   
-  var checkedClass: js.UndefOr[String] = js.native
+  var checkedClass: js.UndefOr[String] = js.undefined
   
-  var disabledClass: js.UndefOr[String] = js.native
+  var disabledClass: js.UndefOr[String] = js.undefined
   
-  var eventNamespace: js.UndefOr[String] = js.native
+  var eventNamespace: js.UndefOr[String] = js.undefined
   
-  var fileButtonClass: js.UndefOr[String] = js.native
+  var fileButtonClass: js.UndefOr[String] = js.undefined
   
-  var fileButtonHtml: js.UndefOr[String] = js.native
+  var fileButtonHtml: js.UndefOr[String] = js.undefined
   
-  var fileClass: js.UndefOr[String] = js.native
+  var fileClass: js.UndefOr[String] = js.undefined
   
-  var fileDefaultHtml: js.UndefOr[String] = js.native
+  var fileDefaultHtml: js.UndefOr[String] = js.undefined
   
-  var filenameClass: js.UndefOr[String] = js.native
+  var filenameClass: js.UndefOr[String] = js.undefined
   
-  var focusClass: js.UndefOr[String] = js.native
+  var focusClass: js.UndefOr[String] = js.undefined
   
-  var hoverClass: js.UndefOr[String] = js.native
+  var hoverClass: js.UndefOr[String] = js.undefined
   
-  var idPrefix: js.UndefOr[String] = js.native
+  var idPrefix: js.UndefOr[String] = js.undefined
   
-  var inputAddTypeAsClass: js.UndefOr[Boolean] = js.native
+  var inputAddTypeAsClass: js.UndefOr[Boolean] = js.undefined
   
-  var inputClass: js.UndefOr[String] = js.native
+  var inputClass: js.UndefOr[String] = js.undefined
   
-  var radioClass: js.UndefOr[String] = js.native
+  var radioClass: js.UndefOr[String] = js.undefined
   
-  var resetDefaultHtml: js.UndefOr[String] = js.native
+  var resetDefaultHtml: js.UndefOr[String] = js.undefined
   
-  var resetSelector: js.UndefOr[js.Any] = js.native
+  var resetSelector: js.UndefOr[js.Any] = js.undefined
   
-  var selectAutoWidth: js.UndefOr[Boolean] = js.native
+  var selectAutoWidth: js.UndefOr[Boolean] = js.undefined
   
-  var selectClass: js.UndefOr[String] = js.native
+  var selectClass: js.UndefOr[String] = js.undefined
   
-  var selectMultiClass: js.UndefOr[String] = js.native
+  var selectMultiClass: js.UndefOr[String] = js.undefined
   
-  var submitDefaultHtml: js.UndefOr[String] = js.native
+  var submitDefaultHtml: js.UndefOr[String] = js.undefined
   
-  var textareaClass: js.UndefOr[String] = js.native
+  var textareaClass: js.UndefOr[String] = js.undefined
   
-  var useID: js.UndefOr[Boolean] = js.native
+  var useID: js.UndefOr[Boolean] = js.undefined
   
-  var wrapperClass: js.UndefOr[String] = js.native
+  var wrapperClass: js.UndefOr[String] = js.undefined
 }
 object UniformCoreOptions {
   

@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RelatedRecordsInfoProperties extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait RelatedRecordsInfoProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-RelatedRecordsInfo.html#orderByFields)
     */
-  var orderByFields: js.UndefOr[js.Array[RelatedRecordsInfoFieldOrderProperties]] = js.native
+  var orderByFields: js.UndefOr[js.Array[RelatedRecordsInfoFieldOrderProperties]] = js.undefined
   
   /**
     * Indicates whether to display related records in the popup.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-popup-RelatedRecordsInfo.html#showRelatedRecords)
     */
-  var showRelatedRecords: js.UndefOr[Boolean] = js.native
+  var showRelatedRecords: js.UndefOr[Boolean] = js.undefined
 }
 object RelatedRecordsInfoProperties {
   

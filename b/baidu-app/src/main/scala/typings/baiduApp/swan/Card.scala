@@ -2,18 +2,16 @@ package typings.baiduApp.swan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 开放接口-----卡券
-@js.native
 trait Card extends StObject {
   
-  var cardExt: String = js.native
+  var cardExt: String
   
-  var cardId: String = js.native
+  var cardId: String
   
-  var code: js.UndefOr[String] = js.native
+  var code: js.UndefOr[String] = js.undefined
 }
 object Card {
   

@@ -2,22 +2,20 @@ package typings.googleapis.calendarV3Mod.calendarV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaFreeBusyCalendar extends StObject {
   
   /**
     * List of time ranges during which this calendar should be regarded as
     * busy.
     */
-  var busy: js.UndefOr[js.Array[SchemaTimePeriod]] = js.native
+  var busy: js.UndefOr[js.Array[SchemaTimePeriod]] = js.undefined
   
   /**
     * Optional error(s) (if computation for the calendar failed).
     */
-  var errors: js.UndefOr[js.Array[SchemaError]] = js.native
+  var errors: js.UndefOr[js.Array[SchemaError]] = js.undefined
 }
 object SchemaFreeBusyCalendar {
   

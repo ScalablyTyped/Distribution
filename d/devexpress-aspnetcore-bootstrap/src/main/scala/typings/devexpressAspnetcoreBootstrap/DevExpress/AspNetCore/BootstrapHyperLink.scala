@@ -3,11 +3,12 @@ package typings.devexpressAspnetcoreBootstrap.DevExpress.AspNetCore
 import typings.devexpressAspnetcoreBootstrap.devexpressAspnetcoreBootstrapStrings.click
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait BootstrapHyperLink extends Control {
+trait BootstrapHyperLink
+  extends StObject
+     with Control {
   
   def getBadgeIconCssClass(): String = js.native
   
@@ -24,7 +25,7 @@ trait BootstrapHyperLink extends Control {
   def getValue(): js.Any = js.native
   
   def off(
-    eventName: js.UndefOr[scala.Nothing],
+    eventName: Unit,
     callback: js.ThisFunction1[/* this */ this.type, js.UndefOr[EditClickEventArgs | EventArgs], Unit]
   ): this.type = js.native
   @JSName("off")

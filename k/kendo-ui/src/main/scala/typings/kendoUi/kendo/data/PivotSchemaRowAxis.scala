@@ -2,13 +2,11 @@ package typings.kendoUi.kendo.data
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PivotSchemaRowAxis extends StObject {
   
-  var tuples: js.Array[PivotTupleModel] = js.native
+  var tuples: js.Array[PivotTupleModel]
 }
 object PivotSchemaRowAxis {
   

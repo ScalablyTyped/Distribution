@@ -2,15 +2,13 @@ package typings.vueMarkdown.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Mdurl extends StObject {
   
-  var mdurl: Decode = js.native
+  var mdurl: Decode
   
-  var ucmicro: Any = js.native
+  var ucmicro: Any
 }
 object Mdurl {
   

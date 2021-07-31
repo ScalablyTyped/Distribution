@@ -5,16 +5,16 @@ import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import typings.activexLibreoffice.com_.sun.star.ui.dialogs.XExecutableDialog
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object cui {
   
   /** @since LibreOffice 4.1 */
-  @js.native
-  trait ColorPicker extends XExecutableDialog {
+  trait ColorPicker
+    extends StObject
+       with XExecutableDialog {
     
-    def createWithParent(Parent: XWindow): Unit = js.native
+    def createWithParent(Parent: XWindow): Unit
   }
   object ColorPicker {
     

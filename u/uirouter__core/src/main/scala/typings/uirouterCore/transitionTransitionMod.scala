@@ -22,14 +22,15 @@ import typings.uirouterCore.uirouterCoreStrings.SameAsPending
 import typings.uirouterCore.viewInterfaceMod.ViewConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transitionTransitionMod {
   
   @JSImport("@uirouter/core/lib/transition/transition", "Transition")
   @js.native
-  class Transition protected () extends IHookRegistry {
+  class Transition protected ()
+    extends StObject
+       with IHookRegistry {
     /**
       * Creates a new Transition object.
       *
@@ -222,8 +223,8 @@ object transitionTransitionMod {
       *
       * @returns an array of resolve tokens (keys)
       */
-    def getResolveTokens(): js.Array[_] = js.native
-    def getResolveTokens(pathname: String): js.Array[_] = js.native
+    def getResolveTokens(): js.Array[js.Any] = js.native
+    def getResolveTokens(pathname: String): js.Array[js.Any] = js.native
     
     /**
       * Returns true if the transition is ignored.
@@ -290,8 +291,9 @@ object transitionTransitionMod {
       * @returns a [[UIInjector]]
       */
     def injector(): UIInjector = js.native
-    def injector(state: js.UndefOr[StateOrName], pathName: String): UIInjector = js.native
+    def injector(state: Unit, pathName: String): UIInjector = js.native
     def injector(state: StateOrName): UIInjector = js.native
+    def injector(state: StateOrName, pathName: String): UIInjector = js.native
     
     def is(compare: To): Boolean = js.native
     /**
@@ -440,7 +442,7 @@ object transitionTransitionMod {
       * When the transition is successful, the promise is resolved
       * When the transition is unsuccessful, the promise is rejected with the [[Rejection]] or javascript error
       */
-    var promise: js.Promise[_] = js.native
+    var promise: js.Promise[js.Any] = js.native
     
     /**
       * Creates a new transition that is a redirection of the current one.
@@ -497,7 +499,7 @@ object transitionTransitionMod {
       *
       * @returns a promise for a successful transition.
       */
-    def run(): js.Promise[_] = js.native
+    def run(): js.Promise[js.Any] = js.native
     
     /**
       * A boolean which indicates if the transition was successful
@@ -562,9 +564,9 @@ object transitionTransitionMod {
       * @returns a list of ViewConfig objects for the given path.
       */
     def views(): js.Array[ViewConfig] = js.native
-    def views(pathname: js.UndefOr[scala.Nothing], state: StateObject): js.Array[ViewConfig] = js.native
     def views(pathname: String): js.Array[ViewConfig] = js.native
     def views(pathname: String, state: StateObject): js.Array[ViewConfig] = js.native
+    def views(pathname: Unit, state: StateObject): js.Array[ViewConfig] = js.native
   }
   /* static members */
   object Transition {

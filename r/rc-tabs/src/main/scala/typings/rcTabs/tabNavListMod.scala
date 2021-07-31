@@ -21,14 +21,13 @@ import typings.std.Element
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tabNavListMod extends Shortcut {
   
   @JSImport("rc-tabs/es/TabNavList", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[TabNavListProps with RefAttributes[HTMLDivElement]] = js.native
+  val default: ForwardRefExoticComponent[TabNavListProps & RefAttributes[HTMLDivElement]] = js.native
   
   @js.native
   trait TabNavListProps extends StObject {
@@ -73,8 +72,8 @@ object tabNavListMod extends Shortcut {
     var tabPosition: TabPosition = js.native
   }
   
-  type _To = ForwardRefExoticComponent[TabNavListProps with RefAttributes[HTMLDivElement]]
+  type _To = ForwardRefExoticComponent[TabNavListProps & RefAttributes[HTMLDivElement]]
   
   /* This means you don't have to write `default`, but can instead just say `tabNavListMod.foo` */
-  override def _to: ForwardRefExoticComponent[TabNavListProps with RefAttributes[HTMLDivElement]] = default
+  override def _to: ForwardRefExoticComponent[TabNavListProps & RefAttributes[HTMLDivElement]] = default
 }

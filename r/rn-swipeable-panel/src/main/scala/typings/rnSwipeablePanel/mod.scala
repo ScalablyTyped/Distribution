@@ -4,7 +4,6 @@ import typings.react.mod.Component
 import typings.react.mod.Props
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -37,84 +36,85 @@ object mod {
     def this(props: SwipeablePanelProps, context: js.Any) = this()
   }
   
-  @js.native
-  trait SwipeablePanelProps extends Props[SwipeablePanel] {
+  trait SwipeablePanelProps
+    extends StObject
+       with Props[SwipeablePanel] {
     
     /**
       * Set true if you want to make toucable outside of panel
       */
-    var allowTouchOutside: js.UndefOr[Boolean] = js.native
+    var allowTouchOutside: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use this prop to override bar style
       */
-    var barStyle: js.UndefOr[js.Object] = js.native
+    var barStyle: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Use this prop to override close button icon style
       */
-    var closeIconStyle: js.UndefOr[js.Object] = js.native
+    var closeIconStyle: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Set true if you want to close panel by touching outside
       */
-    var closeOnTouchOutside: js.UndefOr[Boolean] = js.native
+    var closeOnTouchOutside: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use this prop to override close button background style
       */
-    var closeRootStyle: js.UndefOr[js.Object] = js.native
+    var closeRootStyle: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Set true if you want to make full with panel
       */
-    var fullWidth: js.UndefOr[Boolean] = js.native
+    var fullWidth: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Required prop for panels actual state. Set true if you want to open panel
       */
-    var isActive: Boolean = js.native
+    var isActive: Boolean
     
     /**
       * Set true if you want to disable black background opacity
       */
-    var noBackgroundOpacity: js.UndefOr[Boolean] = js.native
+    var noBackgroundOpacity: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set true if you want to remove gray bar
       */
-    var noBar: js.UndefOr[Boolean] = js.native
+    var noBar: js.UndefOr[Boolean] = js.undefined
     
     // Event Handlers
     /**
       * Required prop to keep panel's state sync with your parent components'state. Will be fired when panel is closed. See the example project.
       */
-    def onClose(): Unit = js.native
+    def onClose(): Unit
     
     /**
       * Set true if you want to let panel open just large mode
       */
-    var onlyLarge: js.UndefOr[Boolean] = js.native
+    var onlyLarge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set true if you want to let panel open just small mode
       */
-    var onlySmall: js.UndefOr[Boolean] = js.native
+    var onlySmall: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set true if you want to open panel large by default
       */
-    var openLarge: js.UndefOr[Boolean] = js.native
+    var openLarge: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Set true if you want to show close button
       */
-    var showCloseButton: js.UndefOr[Boolean] = js.native
+    var showCloseButton: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Use this prop to override panel style
       */
-    var style: js.UndefOr[js.Object] = js.native
+    var style: js.UndefOr[js.Object] = js.undefined
   }
   object SwipeablePanelProps {
     

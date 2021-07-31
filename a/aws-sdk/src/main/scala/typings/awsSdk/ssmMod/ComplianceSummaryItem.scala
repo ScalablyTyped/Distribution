@@ -2,26 +2,24 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComplianceSummaryItem extends StObject {
   
   /**
     * The type of compliance item. For example, the compliance type can be Association, Patch, or Custom:string.
     */
-  var ComplianceType: js.UndefOr[ComplianceTypeName] = js.native
+  var ComplianceType: js.UndefOr[ComplianceTypeName] = js.undefined
   
   /**
     * A list of COMPLIANT items for the specified compliance type.
     */
-  var CompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.CompliantSummary] = js.native
+  var CompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.CompliantSummary] = js.undefined
   
   /**
     * A list of NON_COMPLIANT items for the specified compliance type.
     */
-  var NonCompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.NonCompliantSummary] = js.native
+  var NonCompliantSummary: js.UndefOr[typings.awsSdk.ssmMod.NonCompliantSummary] = js.undefined
 }
 object ComplianceSummaryItem {
   

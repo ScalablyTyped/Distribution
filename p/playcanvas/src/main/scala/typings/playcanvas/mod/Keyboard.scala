@@ -5,7 +5,6 @@ import typings.std.Element
 import typings.std.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,10 +20,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("playcanvas", "Keyboard")
 @js.native
 class Keyboard ()
-  extends typings.playcanvas.pc.Keyboard {
+  extends StObject
+     with typings.playcanvas.pc.Keyboard {
   def this(element: Element) = this()
   def this(element: Window) = this()
-  def this(element: js.UndefOr[scala.Nothing], options: PreventDefault) = this()
+  def this(element: Unit, options: PreventDefault) = this()
   def this(element: Element, options: PreventDefault) = this()
   def this(element: Window, options: PreventDefault) = this()
 }

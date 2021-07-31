@@ -2,18 +2,16 @@ package typings.winrtUwp.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a change to a Contact . */
-@js.native
 trait ContactChange extends StObject {
   
   /** Gets a value that indicates the type of change that occurred. */
-  var changeType: ContactChangeType = js.native
+  var changeType: ContactChangeType
   
   /** Gets the Contact object that changed. */
-  var contact: Contact = js.native
+  var contact: Contact
 }
 object ContactChange {
   

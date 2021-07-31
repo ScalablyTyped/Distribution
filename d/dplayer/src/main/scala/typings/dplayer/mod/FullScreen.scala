@@ -2,15 +2,13 @@ package typings.dplayer.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FullScreen extends StObject {
   
-  def cancel(`type`: FullScreenType): Unit = js.native
+  def cancel(`type`: FullScreenType): Unit
   
-  def request(`type`: FullScreenType): Unit = js.native
+  def request(`type`: FullScreenType): Unit
 }
 object FullScreen {
   

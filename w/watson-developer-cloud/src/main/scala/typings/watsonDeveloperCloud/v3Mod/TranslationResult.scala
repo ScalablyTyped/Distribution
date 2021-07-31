@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.v3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** TranslationResult. */
-@js.native
 trait TranslationResult extends StObject {
   
   /** Number of characters in the input text. */
-  var character_count: Double = js.native
+  var character_count: Double
   
   /** List of translation output in UTF-8, corresponding to the input text entries. */
-  var translations: js.Array[Translation] = js.native
+  var translations: js.Array[Translation]
   
   /** Number of words in the input text. */
-  var word_count: Double = js.native
+  var word_count: Double
 }
 object TranslationResult {
   

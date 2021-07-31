@@ -2,41 +2,31 @@ package typings.coinbaseCommerceNode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Client {
   
+  @JSImport("coinbase-commerce-node", "Client")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Setup client.
     */
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(apiKey: String): Options = js.native
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(
-    apiKey: String,
-    baseApiUrl: js.UndefOr[scala.Nothing],
-    apiVersion: js.UndefOr[scala.Nothing],
-    timeout: Double
-  ): Options = js.native
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(apiKey: String, baseApiUrl: js.UndefOr[scala.Nothing], apiVersion: String): Options = js.native
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(apiKey: String, baseApiUrl: js.UndefOr[scala.Nothing], apiVersion: String, timeout: Double): Options = js.native
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(apiKey: String, baseApiUrl: String): Options = js.native
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(apiKey: String, baseApiUrl: String, apiVersion: js.UndefOr[scala.Nothing], timeout: Double): Options = js.native
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(apiKey: String, baseApiUrl: String, apiVersion: String): Options = js.native
-  @JSImport("coinbase-commerce-node", "Client.init")
-  @js.native
-  def init(apiKey: String, baseApiUrl: String, apiVersion: String, timeout: Double): Options = js.native
+  @scala.inline
+  def init(apiKey: String): Options = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any]).asInstanceOf[Options]
+  @scala.inline
+  def init(apiKey: String, baseApiUrl: String): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], baseApiUrl.asInstanceOf[js.Any])).asInstanceOf[Options]
+  @scala.inline
+  def init(apiKey: String, baseApiUrl: String, apiVersion: String): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], baseApiUrl.asInstanceOf[js.Any], apiVersion.asInstanceOf[js.Any])).asInstanceOf[Options]
+  @scala.inline
+  def init(apiKey: String, baseApiUrl: String, apiVersion: String, timeout: Double): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], baseApiUrl.asInstanceOf[js.Any], apiVersion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Options]
+  @scala.inline
+  def init(apiKey: String, baseApiUrl: String, apiVersion: Unit, timeout: Double): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], baseApiUrl.asInstanceOf[js.Any], apiVersion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Options]
+  @scala.inline
+  def init(apiKey: String, baseApiUrl: Unit, apiVersion: String): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], baseApiUrl.asInstanceOf[js.Any], apiVersion.asInstanceOf[js.Any])).asInstanceOf[Options]
+  @scala.inline
+  def init(apiKey: String, baseApiUrl: Unit, apiVersion: String, timeout: Double): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], baseApiUrl.asInstanceOf[js.Any], apiVersion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Options]
+  @scala.inline
+  def init(apiKey: String, baseApiUrl: Unit, apiVersion: Unit, timeout: Double): Options = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(apiKey.asInstanceOf[js.Any], baseApiUrl.asInstanceOf[js.Any], apiVersion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Options]
 }

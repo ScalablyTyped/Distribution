@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArimaOrder extends StObject {
   
   /** Order of the differencing part. */
-  var d: js.UndefOr[String] = js.native
+  var d: js.UndefOr[String] = js.undefined
   
   /** Order of the autoregressive part. */
-  var p: js.UndefOr[String] = js.native
+  var p: js.UndefOr[String] = js.undefined
   
   /** Order of the moving-average part. */
-  var q: js.UndefOr[String] = js.native
+  var q: js.UndefOr[String] = js.undefined
 }
 object ArimaOrder {
   

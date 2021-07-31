@@ -2,15 +2,13 @@ package typings.bootstrapTimepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimepickerIconOptions extends StObject {
   
-  var down: js.UndefOr[String] = js.native
+  var down: js.UndefOr[String] = js.undefined
   
-  var up: js.UndefOr[String] = js.native
+  var up: js.UndefOr[String] = js.undefined
 }
 object TimepickerIconOptions {
   

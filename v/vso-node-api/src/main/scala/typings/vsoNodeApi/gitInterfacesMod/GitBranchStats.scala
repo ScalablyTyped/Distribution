@@ -2,36 +2,34 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitBranchStats extends StObject {
   
   /**
     * Number of commits ahead.
     */
-  var aheadCount: Double = js.native
+  var aheadCount: Double
   
   /**
     * Number of commits behind.
     */
-  var behindCount: Double = js.native
+  var behindCount: Double
   
   /**
     * Current commit.
     */
-  var commit: GitCommitRef = js.native
+  var commit: GitCommitRef
   
   /**
     * True if this is the result for the base version.
     */
-  var isBaseVersion: Boolean = js.native
+  var isBaseVersion: Boolean
   
   /**
     * Name of the ref.
     */
-  var name: String = js.native
+  var name: String
 }
 object GitBranchStats {
   

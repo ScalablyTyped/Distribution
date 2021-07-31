@@ -4,17 +4,17 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait XVbaMethodParameter extends XInterface {
+trait XVbaMethodParameter
+  extends StObject
+     with XInterface {
   
   /** returns the value of the parameter with the specified name. */
-  def getVbaMethodParameter(PropertyName: String): js.Any = js.native
+  def getVbaMethodParameter(PropertyName: String): js.Any
   
   /** sets the value of the parameter with the specified name. */
-  def setVbaMethodParameter(PropertyName: String, Value: js.Any): Unit = js.native
+  def setVbaMethodParameter(PropertyName: String, Value: js.Any): Unit
 }
 object XVbaMethodParameter {
   

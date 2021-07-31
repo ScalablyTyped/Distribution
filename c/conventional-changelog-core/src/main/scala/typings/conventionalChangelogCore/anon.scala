@@ -7,58 +7,56 @@ import typings.normalizePackageData.anon.Url
 import typings.normalizePackageData.mod.Person
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Readonly<std.Partial<normalize-package-data.normalize-package-data.Package>> */
-  @js.native
   trait ReadonlyPartialPackage extends StObject {
     
-    val _id: js.UndefOr[String] = js.native
+    val _id: js.UndefOr[String] = js.undefined
     
-    val author: js.UndefOr[Person] = js.native
+    val author: js.UndefOr[Person] = js.undefined
     
-    val bin: js.UndefOr[StringDictionary[String]] = js.native
+    val bin: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val bugs: js.UndefOr[Email | Url] = js.native
+    val bugs: js.UndefOr[Email | Url] = js.undefined
     
-    val bundleDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val bundleDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val contributors: js.UndefOr[js.Array[Person]] = js.native
+    val contributors: js.UndefOr[js.Array[Person]] = js.undefined
     
-    val dependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val dependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val description: js.UndefOr[String] = js.native
+    val description: js.UndefOr[String] = js.undefined
     
-    val devDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val devDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val engines: js.UndefOr[StringDictionary[String]] = js.native
+    val engines: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val files: js.UndefOr[js.Array[String]] = js.native
+    val files: js.UndefOr[js.Array[String]] = js.undefined
     
-    val homepage: js.UndefOr[String] = js.native
+    val homepage: js.UndefOr[String] = js.undefined
     
-    val keywords: js.UndefOr[js.Array[String]] = js.native
+    val keywords: js.UndefOr[js.Array[String]] = js.undefined
     
-    val license: js.UndefOr[String] = js.native
+    val license: js.UndefOr[String] = js.undefined
     
-    val maintainers: js.UndefOr[js.Array[Person]] = js.native
+    val maintainers: js.UndefOr[js.Array[Person]] = js.undefined
     
-    val man: js.UndefOr[js.Array[String]] = js.native
+    val man: js.UndefOr[js.Array[String]] = js.undefined
     
-    val name: js.UndefOr[String] = js.native
+    val name: js.UndefOr[String] = js.undefined
     
-    val optionalDependencies: js.UndefOr[StringDictionary[String]] = js.native
+    val optionalDependencies: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val readme: js.UndefOr[String] = js.native
+    val readme: js.UndefOr[String] = js.undefined
     
-    val repository: js.UndefOr[Type] = js.native
+    val repository: js.UndefOr[Type] = js.undefined
     
-    val scripts: js.UndefOr[StringDictionary[String]] = js.native
+    val scripts: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    val version: js.UndefOr[String] = js.native
+    val version: js.UndefOr[String] = js.undefined
   }
   object ReadonlyPartialPackage {
     

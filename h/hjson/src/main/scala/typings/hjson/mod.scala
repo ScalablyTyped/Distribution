@@ -9,38 +9,36 @@ import typings.hjson.hjsonStrings.std
 import typings.hjson.hjsonStrings.strings
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("hjson", "parse")
+  @JSImport("hjson", JSImport.Namespace)
   @js.native
-  def parse(text: String): js.Any = js.native
-  @JSImport("hjson", "parse")
-  @js.native
-  def parse(text: String, options: DeserializeOptions): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("hjson", "stringify")
-  @js.native
-  def stringify(value: js.Any): String = js.native
-  @JSImport("hjson", "stringify")
-  @js.native
-  def stringify(value: js.Any, options: SerializeOptions): String = js.native
+  @scala.inline
+  def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(text: String, options: DeserializeOptions): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @js.native
+  @scala.inline
+  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, options: SerializeOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
+  
   trait DeserializeOptions extends StObject {
     
     /**
       * keep white space and comments. This is useful if
       * you want to edit an hjson file and save it while preserving comments (default false)
       */
-    var keepWsc: js.UndefOr[Boolean] = js.native
+    var keepWsc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Turn off legacy support for omitting root braces (defaults true)
       */
-    var legacyRoot: js.UndefOr[Boolean] = js.native
+    var legacyRoot: js.UndefOr[Boolean] = js.undefined
   }
   object DeserializeOptions {
     
@@ -67,33 +65,32 @@ object mod {
     }
   }
   
-  @js.native
   trait SerializeOptions extends StObject {
     
     /**
       * makes braces appear on the same line as the key name. Default false.
       */
-    var bracesSameLine: js.UndefOr[Boolean] = js.native
+    var bracesSameLine: js.UndefOr[Boolean] = js.undefined
     
     /**
       * output ascii color codes
       */
-    var colors: js.UndefOr[Boolean] = js.native
+    var colors: js.UndefOr[Boolean] = js.undefined
     
     /**
       * show braces for the root object. Default true.
       */
-    var emitRootBraces: js.UndefOr[Boolean] = js.native
+    var emitRootBraces: js.UndefOr[Boolean] = js.undefined
     
     /**
       * specifies the EOL sequence (default is set by Hjson.setEndOfLine())
       */
-    var eol: js.UndefOr[String] = js.native
+    var eol: js.UndefOr[String] = js.undefined
     
     /**
       * keep white space. See parse.
       */
-    var keepWsc: js.UndefOr[Boolean] = js.native
+    var keepWsc: js.UndefOr[Boolean] = js.undefined
     
     /**
       * controls how multiline strings are displayed. (setting quotes implies "off")
@@ -101,7 +98,7 @@ object mod {
       * "no-tabs": like std but disallow tabs
       * "off": show in JSON format
       */
-    var multiline: js.UndefOr[std | `no-tabs` | off] = js.native
+    var multiline: js.UndefOr[std | `no-tabs` | off] = js.undefined
     
     /**
       * controls how strings are displayed. (setting separator implies "strings")
@@ -110,19 +107,19 @@ object mod {
       * "strings": use quotes around string values
       * "all": use quotes around keys and string values
       */
-    var quotes: js.UndefOr[min | keys | strings | all] = js.native
+    var quotes: js.UndefOr[min | keys | strings | all] = js.undefined
     
     /**
       * output a comma separator between elements. Default false
       */
-    var separator: js.UndefOr[Boolean] = js.native
+    var separator: js.UndefOr[Boolean] = js.undefined
     
     /**
       * specifies the indentation of nested structures.
       * If it is a number, it will specify the number of spaces to indent at each level.
       * If it is a string (such as '\t' or ' '), it contains the characters used to indent at each level.
       */
-    var space: js.UndefOr[Double | String] = js.native
+    var space: js.UndefOr[Double | String] = js.undefined
   }
   object SerializeOptions {
     

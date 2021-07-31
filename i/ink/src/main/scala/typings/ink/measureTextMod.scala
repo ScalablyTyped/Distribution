@@ -2,21 +2,22 @@ package typings.ink
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object measureTextMod {
   
-  @JSImport("ink/build/measure-text", JSImport.Default)
+  @JSImport("ink/build/measure-text", JSImport.Namespace)
   @js.native
-  def default(text: String): Output = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(text: String): Output = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(text.asInstanceOf[js.Any]).asInstanceOf[Output]
+  
   trait Output extends StObject {
     
-    var height: Double = js.native
+    var height: Double
     
-    var width: Double = js.native
+    var width: Double
   }
   object Output {
     

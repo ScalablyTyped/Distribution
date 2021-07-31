@@ -3,92 +3,92 @@ package typings.senchaTouch.Ext.util
 import typings.senchaTouch.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISorter extends IBase {
+trait ISorter
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var direction: js.UndefOr[String] = js.native
+  var direction: js.UndefOr[String] = js.undefined
   
   /** [Method] Returns the value of direction
     * @returns String
     */
-  var getDirection: js.UndefOr[js.Function0[String]] = js.native
+  var getDirection: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of id
     * @returns Mixed
     */
-  var getId: js.UndefOr[js.Function0[_]] = js.native
+  var getId: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of property
     * @returns String
     */
-  var getProperty: js.UndefOr[js.Function0[String]] = js.native
+  var getProperty: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of root
     * @returns String
     */
-  var getRoot: js.UndefOr[js.Function0[String]] = js.native
+  var getRoot: js.UndefOr[js.Function0[String]] = js.undefined
   
   /** [Method] Returns the value of sorterFn
     * @returns Function
     */
-  var getSorterFn: js.UndefOr[js.Function0[_]] = js.native
+  var getSorterFn: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Method] Returns the value of transform
     * @returns Function
     */
-  var getTransform: js.UndefOr[js.Function0[_]] = js.native
+  var getTransform: js.UndefOr[js.Function0[js.Any]] = js.undefined
   
   /** [Config Option] (Mixed) */
-  var id: js.UndefOr[js.Any] = js.native
+  var id: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (String) */
-  var property: js.UndefOr[String] = js.native
+  var property: js.UndefOr[String] = js.undefined
   
   /** [Config Option] (String) */
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
   
   /** [Method] Sets the value of direction
     * @param direction String The new value.
     */
-  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.native
+  var setDirection: js.UndefOr[js.Function1[/* direction */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of id
     * @param id Mixed The new value.
     */
-  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.native
+  var setId: js.UndefOr[js.Function1[/* id */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of property
     * @param property String The new value.
     */
-  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.native
+  var setProperty: js.UndefOr[js.Function1[/* property */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of root
     * @param root String The new value.
     */
-  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.native
+  var setRoot: js.UndefOr[js.Function1[/* root */ js.UndefOr[String], Unit]] = js.undefined
   
   /** [Method] Sets the value of sorterFn
     * @param sorterFn Function The new value.
     */
-  var setSorterFn: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.native
+  var setSorterFn: js.UndefOr[js.Function1[/* sorterFn */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Method] Sets the value of transform
     * @param transform Function The new value.
     */
-  var setTransform: js.UndefOr[js.Function1[/* transform */ js.UndefOr[js.Any], Unit]] = js.native
+  var setTransform: js.UndefOr[js.Function1[/* transform */ js.UndefOr[js.Any], Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var sorterFn: js.UndefOr[js.Any] = js.native
+  var sorterFn: js.UndefOr[js.Any] = js.undefined
   
   /** [Method] Toggles the direction of this Sorter  */
-  var toggle: js.UndefOr[js.Function0[Unit]] = js.native
+  var toggle: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /** [Config Option] (Function) */
-  var transform: js.UndefOr[js.Any] = js.native
+  var transform: js.UndefOr[js.Any] = js.undefined
 }
 object ISorter {
   
@@ -114,7 +114,7 @@ object ISorter {
     def setGetDirectionUndefined: Self = StObject.set(x, "getDirection", js.undefined)
     
     @scala.inline
-    def setGetId(value: () => _): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
+    def setGetId(value: () => js.Any): Self = StObject.set(x, "getId", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetIdUndefined: Self = StObject.set(x, "getId", js.undefined)
@@ -132,13 +132,13 @@ object ISorter {
     def setGetRootUndefined: Self = StObject.set(x, "getRoot", js.undefined)
     
     @scala.inline
-    def setGetSorterFn(value: () => _): Self = StObject.set(x, "getSorterFn", js.Any.fromFunction0(value))
+    def setGetSorterFn(value: () => js.Any): Self = StObject.set(x, "getSorterFn", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetSorterFnUndefined: Self = StObject.set(x, "getSorterFn", js.undefined)
     
     @scala.inline
-    def setGetTransform(value: () => _): Self = StObject.set(x, "getTransform", js.Any.fromFunction0(value))
+    def setGetTransform(value: () => js.Any): Self = StObject.set(x, "getTransform", js.Any.fromFunction0(value))
     
     @scala.inline
     def setGetTransformUndefined: Self = StObject.set(x, "getTransform", js.undefined)

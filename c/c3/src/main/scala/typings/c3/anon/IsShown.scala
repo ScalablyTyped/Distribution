@@ -2,26 +2,24 @@ package typings.c3.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsShown extends StObject {
   
   /**
     * Hides sub chart.
     */
-  def hide(): Unit = js.native
+  def hide(): Unit
   
   /**
     * Returns true if the sub chart is shown.
     */
-  def isShown(): Boolean = js.native
+  def isShown(): Boolean
   
   /**
     * Shows sub chart at the bottom of the chart.
     */
-  def show(): Unit = js.native
+  def show(): Unit
 }
 object IsShown {
   

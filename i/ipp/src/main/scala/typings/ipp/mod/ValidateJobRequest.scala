@@ -3,15 +3,13 @@ package typings.ipp.mod
 import typings.ipp.anon.Documentname
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidateJobRequest extends StObject {
   
-  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.native
+  var `job-attributes-tag`: js.UndefOr[JobTemplateAttributes] = js.undefined
   
-  var `operation-attributes-tag`: Documentname = js.native
+  var `operation-attributes-tag`: Documentname
 }
 object ValidateJobRequest {
   

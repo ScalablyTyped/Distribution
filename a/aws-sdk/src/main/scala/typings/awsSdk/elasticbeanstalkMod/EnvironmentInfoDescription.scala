@@ -2,31 +2,29 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EnvironmentInfoDescription extends StObject {
   
   /**
     * The Amazon EC2 Instance ID for this information.
     */
-  var Ec2InstanceId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Ec2InstanceId] = js.native
+  var Ec2InstanceId: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Ec2InstanceId] = js.undefined
   
   /**
     * The type of information retrieved.
     */
-  var InfoType: js.UndefOr[EnvironmentInfoType] = js.native
+  var InfoType: js.UndefOr[EnvironmentInfoType] = js.undefined
   
   /**
     * The retrieved information. Currently contains a presigned Amazon S3 URL. The files are deleted after 15 minutes. Anyone in possession of this URL can access the files before they are deleted. Make the URL available only to trusted parties.
     */
-  var Message: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Message] = js.native
+  var Message: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.Message] = js.undefined
   
   /**
     * The time stamp when this information was retrieved.
     */
-  var SampleTimestamp: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SampleTimestamp] = js.native
+  var SampleTimestamp: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.SampleTimestamp] = js.undefined
 }
 object EnvironmentInfoDescription {
   

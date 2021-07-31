@@ -2,13 +2,11 @@ package typings.kefir.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlushOnEnd extends StObject {
   
-  var flushOnEnd: Boolean = js.native
+  var flushOnEnd: Boolean
 }
 object FlushOnEnd {
   

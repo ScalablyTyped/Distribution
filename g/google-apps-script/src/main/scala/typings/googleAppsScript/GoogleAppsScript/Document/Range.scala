@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.Document
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,12 +30,11 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       }
   *     }
   */
-@js.native
 trait Range extends StObject {
   
-  def getRangeElements(): js.Array[RangeElement] = js.native
+  def getRangeElements(): js.Array[RangeElement]
   
-  /** @deprecated DO NOT USE */ def getSelectedElements(): js.Array[RangeElement] = js.native
+  /** @deprecated DO NOT USE */ def getSelectedElements(): js.Array[RangeElement]
 }
 object Range {
   

@@ -3,36 +3,34 @@ package typings.issueParser
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("issue-parser", JSImport.Namespace)
-  @js.native
-  def apply(): Parser = js.native
-  @JSImport("issue-parser", JSImport.Namespace)
-  @js.native
-  def apply(authOptions: js.UndefOr[scala.Nothing], extension: Overrides): Parser = js.native
-  @JSImport("issue-parser", JSImport.Namespace)
-  @js.native
-  def apply(authOptions: Options): Parser = js.native
-  @JSImport("issue-parser", JSImport.Namespace)
-  @js.native
-  def apply(authOptions: Options, extension: Overrides): Parser = js.native
+  @scala.inline
+  def apply(): Parser = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Parser]
+  @scala.inline
+  def apply(authOptions: Unit, `extension`: Overrides): Parser = (^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Parser]
+  @scala.inline
+  def apply(authOptions: Options): Parser = ^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any]).asInstanceOf[Parser]
+  @scala.inline
+  def apply(authOptions: Options, `extension`: Overrides): Parser = (^.asInstanceOf[js.Dynamic].apply(authOptions.asInstanceOf[js.Any], `extension`.asInstanceOf[js.Any])).asInstanceOf[Parser]
   
+  @JSImport("issue-parser", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Action extends StObject {
     
-    var action: String = js.native
+    var action: String
     
-    var issue: String = js.native
+    var issue: String
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var raw: String = js.native
+    var raw: String
     
-    var slug: js.UndefOr[String] = js.native
+    var slug: js.UndefOr[String] = js.undefined
   }
   object Action {
     
@@ -70,14 +68,13 @@ object mod {
   
   type Actions = StringDictionary[js.Array[Action]]
   
-  @js.native
   trait Mention extends StObject {
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var raw: String = js.native
+    var raw: String
     
-    var user: String = js.native
+    var user: String
   }
   object Mention {
     
@@ -110,22 +107,23 @@ object mod {
   */
   trait Options extends StObject
   
-  @js.native
-  trait Overrides extends Options {
+  trait Overrides
+    extends StObject
+       with Options {
     
-    var actions: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+    var actions: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
     
-    var delimiters: js.UndefOr[String | js.Array[String]] = js.native
+    var delimiters: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var hosts: js.UndefOr[String | js.Array[String]] = js.native
+    var hosts: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var issuePrefixes: js.UndefOr[String | js.Array[String]] = js.native
+    var issuePrefixes: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var issueURLSegments: js.UndefOr[String | js.Array[String]] = js.native
+    var issueURLSegments: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var mentionsPrefixes: js.UndefOr[String | js.Array[String]] = js.native
+    var mentionsPrefixes: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var overrides: js.UndefOr[String | js.Array[String]] = js.native
+    var overrides: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Overrides {
     
@@ -202,16 +200,15 @@ object mod {
   
   type Parser = js.Function1[/* text */ String, Result]
   
-  @js.native
   trait Reference extends StObject {
     
-    var issue: String = js.native
+    var issue: String
     
-    var prefix: js.UndefOr[String] = js.native
+    var prefix: js.UndefOr[String] = js.undefined
     
-    var raw: String = js.native
+    var raw: String
     
-    var slug: js.UndefOr[String] = js.native
+    var slug: js.UndefOr[String] = js.undefined
   }
   object Reference {
     
@@ -244,16 +241,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var actions: Actions = js.native
+    var actions: Actions
     
-    var allRefs: js.Array[Reference | Action] = js.native
+    var allRefs: js.Array[Reference | Action]
     
-    var mentions: js.Array[Mention] = js.native
+    var mentions: js.Array[Mention]
     
-    var refs: js.Array[Reference] = js.native
+    var refs: js.Array[Reference]
   }
   object Result {
     

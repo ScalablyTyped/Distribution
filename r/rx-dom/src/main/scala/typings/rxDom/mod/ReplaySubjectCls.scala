@@ -3,7 +3,6 @@ package typings.rxDom.mod
 import typings.rx.Rx.IScheduler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* This class was inferred from a value with a constructor, it was renamed because a distinct type already exists with the same name. */
@@ -18,10 +17,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 class ReplaySubjectCls[T] ()
   extends typings.rx.mod.ReplaySubjectCls[T] {
   def this(bufferSize: Double) = this()
-  def this(bufferSize: js.UndefOr[scala.Nothing], window: Double) = this()
   def this(bufferSize: Double, window: Double) = this()
-  def this(bufferSize: js.UndefOr[scala.Nothing], window: js.UndefOr[scala.Nothing], scheduler: IScheduler) = this()
-  def this(bufferSize: js.UndefOr[scala.Nothing], window: Double, scheduler: IScheduler) = this()
-  def this(bufferSize: Double, window: js.UndefOr[scala.Nothing], scheduler: IScheduler) = this()
+  def this(bufferSize: Unit, window: Double) = this()
   def this(bufferSize: Double, window: Double, scheduler: IScheduler) = this()
+  def this(bufferSize: Double, window: Unit, scheduler: IScheduler) = this()
+  def this(bufferSize: Unit, window: Double, scheduler: IScheduler) = this()
+  def this(bufferSize: Unit, window: Unit, scheduler: IScheduler) = this()
 }

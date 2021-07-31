@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.wafv2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleOverrideAction extends StObject {
   
   /**
     * Override the rule action setting to count (i.e. only count matches). Configured as an empty block `{}`.
     */
-  var count: js.UndefOr[Input[WebAclRuleOverrideActionCount]] = js.native
+  var count: js.UndefOr[Input[WebAclRuleOverrideActionCount]] = js.undefined
   
   /**
     * Don't override the rule action setting. Configured as an empty block `{}`.
     */
-  var none: js.UndefOr[Input[WebAclRuleOverrideActionNone]] = js.native
+  var none: js.UndefOr[Input[WebAclRuleOverrideActionNone]] = js.undefined
 }
 object WebAclRuleOverrideAction {
   

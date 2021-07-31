@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSegmentImportJobsResponse extends StObject {
   
-  var ImportJobsResponse: typings.awsSdk.pinpointMod.ImportJobsResponse = js.native
+  var ImportJobsResponse: typings.awsSdk.pinpointMod.ImportJobsResponse
 }
 object GetSegmentImportJobsResponse {
   

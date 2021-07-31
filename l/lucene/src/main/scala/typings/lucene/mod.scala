@@ -9,14 +9,16 @@ import typings.lucene.luceneStrings.none
 import typings.lucene.luceneStrings.right
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("lucene", "parse")
+  @JSImport("lucene", JSImport.Namespace)
   @js.native
-  def parse(query: String): AST = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def parse(query: String): AST = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(query.asInstanceOf[js.Any]).asInstanceOf[AST]
   
   @JSImport("lucene", "phrase")
   @js.native
@@ -26,9 +28,8 @@ object mod {
   @js.native
   val term: Parser = js.native
   
-  @JSImport("lucene", "toString")
-  @js.native
-  def toString_(ast: AST): String = js.native
+  @scala.inline
+  def toString_(ast: AST): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toString")(ast.asInstanceOf[js.Any]).asInstanceOf[String]
   
   /* Rewritten from type alias, can be one of: 
     - typings.lucene.mod.LeftOnlyAST
@@ -50,14 +51,15 @@ object mod {
     }
   }
   
-  @js.native
-  trait BinaryAST extends AST {
+  trait BinaryAST
+    extends StObject
+       with AST {
     
-    var left: AST | Node = js.native
+    var left: AST | Node
     
-    var operator: Operator = js.native
+    var operator: Operator
     
-    var right: AST | Node = js.native
+    var right: AST | Node
   }
   object BinaryAST {
     
@@ -81,12 +83,13 @@ object mod {
     }
   }
   
-  @js.native
-  trait LeftOnlyAST extends AST {
+  trait LeftOnlyAST
+    extends StObject
+       with AST {
     
-    var left: Node = js.native
+    var left: Node
     
-    var start: js.UndefOr[Operator] = js.native
+    var start: js.UndefOr[Operator] = js.undefined
   }
   object LeftOnlyAST {
     
@@ -124,7 +127,7 @@ object mod {
       term_max: String,
       term_min: String
     ): typings.lucene.mod.NodeRangedTerm = {
-      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], term_max = term_max.asInstanceOf[js.Any], term_min = term_min.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], term_max = term_max.asInstanceOf[js.Any], term_min = term_min.asInstanceOf[js.Any], fieldLocation = null)
       __obj.asInstanceOf[typings.lucene.mod.NodeRangedTerm]
     }
     
@@ -136,23 +139,22 @@ object mod {
       term: String,
       termLocation: Start
     ): typings.lucene.mod.NodeTerm = {
-      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], termLocation = termLocation.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], termLocation = termLocation.asInstanceOf[js.Any], boost = null, fieldLocation = null, prefix = null, similarity = null)
       __obj.asInstanceOf[typings.lucene.mod.NodeTerm]
     }
   }
   
-  @js.native
   trait NodeField extends StObject {
     
-    var field: String | LessthansignimplicitGreaterthansign = js.native
+    var field: String | LessthansignimplicitGreaterthansign
     
-    var fieldLocation: Null | End = js.native
+    var fieldLocation: Null | End
   }
   object NodeField {
     
     @scala.inline
     def apply(field: String | LessthansignimplicitGreaterthansign): NodeField = {
-      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], fieldLocation = null)
       __obj.asInstanceOf[NodeField]
     }
     
@@ -170,16 +172,16 @@ object mod {
     }
   }
   
-  @js.native
   trait NodeRangedTerm
-    extends NodeField
+    extends StObject
+       with NodeField
        with Node {
     
-    var inclusive: both | none | left | right = js.native
+    var inclusive: both | none | left | right
     
-    var term_max: String = js.native
+    var term_max: String
     
-    var term_min: String = js.native
+    var term_min: String
   }
   object NodeRangedTerm {
     
@@ -190,7 +192,7 @@ object mod {
       term_max: String,
       term_min: String
     ): NodeRangedTerm = {
-      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], term_max = term_max.asInstanceOf[js.Any], term_min = term_min.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], inclusive = inclusive.asInstanceOf[js.Any], term_max = term_max.asInstanceOf[js.Any], term_min = term_min.asInstanceOf[js.Any], fieldLocation = null)
       __obj.asInstanceOf[NodeRangedTerm]
     }
     
@@ -208,24 +210,24 @@ object mod {
     }
   }
   
-  @js.native
   trait NodeTerm
-    extends NodeField
+    extends StObject
+       with NodeField
        with Node {
     
-    var boost: Null | Double = js.native
+    var boost: Null | Double
     
-    var prefix: Null | String = js.native
+    var prefix: Null | String
     
-    var quoted: Boolean = js.native
+    var quoted: Boolean
     
-    var regex: Boolean = js.native
+    var regex: Boolean
     
-    var similarity: Null | Double = js.native
+    var similarity: Null | Double
     
-    var term: String = js.native
+    var term: String
     
-    var termLocation: Start = js.native
+    var termLocation: Start
   }
   object NodeTerm {
     
@@ -237,7 +239,7 @@ object mod {
       term: String,
       termLocation: Start
     ): NodeTerm = {
-      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], termLocation = termLocation.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(field = field.asInstanceOf[js.Any], quoted = quoted.asInstanceOf[js.Any], regex = regex.asInstanceOf[js.Any], term = term.asInstanceOf[js.Any], termLocation = termLocation.asInstanceOf[js.Any], boost = null, fieldLocation = null, prefix = null, similarity = null)
       __obj.asInstanceOf[NodeTerm]
     }
     
@@ -306,12 +308,11 @@ object mod {
     def `OR NOT`: typings.lucene.luceneStrings.`OR NOT` = ("OR NOT").asInstanceOf[typings.lucene.luceneStrings.`OR NOT`]
   }
   
-  @js.native
   trait Parser extends StObject {
     
-    def escape(str: String): String = js.native
+    def escape(str: String): String
     
-    def unescape(str: String): String = js.native
+    def unescape(str: String): String
   }
   object Parser {
     
@@ -332,14 +333,13 @@ object mod {
     }
   }
   
-  @js.native
   trait TermLocation extends StObject {
     
-    var column: Double = js.native
+    var column: Double
     
-    var line: Double = js.native
+    var line: Double
     
-    var offset: Double = js.native
+    var offset: Double
   }
   object TermLocation {
     

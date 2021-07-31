@@ -10,9 +10,9 @@ Decodes every html entity possible
 | ------------------ | :-------------: |
 | Full name          | decode-entities |
 | Keywords           | html |
-| # releases         | 9 |
+| # releases         | 0 |
 | # dependents       | 2 |
-| # downloads        | 1669 |
+| # downloads        | 1108 |
 | # stars            | 0 |
 
 ## Links

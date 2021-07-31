@@ -2,21 +2,19 @@ package typings.navermaps.naver.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NaverImageMapTypeOptions extends StObject {
   
-  var hd: js.UndefOr[String] = js.native
+  var hd: js.UndefOr[String] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var projection: js.UndefOr[Projection] = js.native
+  var projection: js.UndefOr[Projection] = js.undefined
   
-  var tileSize: js.UndefOr[Size] = js.native
+  var tileSize: js.UndefOr[Size] = js.undefined
 }
 object NaverImageMapTypeOptions {
   

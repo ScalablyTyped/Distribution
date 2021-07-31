@@ -10,9 +10,9 @@ Create your next immutable state by mutating the current one
 | ------------------ | :-------------: |
 | Full name          | immer |
 | Keywords           | immutable, mutable, copy-on-write |
-| # releases         | 86 |
-| # dependents       | 1146 |
-| # downloads        | 191198741 |
+| # releases         | 76 |
+| # dependents       | 1231 |
+| # downloads        | 215223360 |
 | # stars            | 5 |
 
 ## Links

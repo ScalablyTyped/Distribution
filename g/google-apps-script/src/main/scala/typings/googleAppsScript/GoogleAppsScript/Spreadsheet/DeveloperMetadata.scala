@@ -3,40 +3,38 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Integer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Access and modify developer metadata. To create new developer metadata use Range.addDeveloperMetadata(key), Sheet.addDeveloperMetadata(key), or Spreadsheet.addDeveloperMetadata(key).
   */
-@js.native
 trait DeveloperMetadata extends StObject {
   
-  def getId(): Integer = js.native
+  def getId(): Integer
   
-  def getKey(): String = js.native
+  def getKey(): String
   
-  def getLocation(): DeveloperMetadataLocation = js.native
+  def getLocation(): DeveloperMetadataLocation
   
-  def getValue(): String | Null = js.native
+  def getValue(): String | Null
   
-  def getVisibility(): DeveloperMetadataVisibility = js.native
+  def getVisibility(): DeveloperMetadataVisibility
   
-  def moveToColumn(column: Range): DeveloperMetadata = js.native
+  def moveToColumn(column: Range): DeveloperMetadata
   
-  def moveToRow(row: Range): DeveloperMetadata = js.native
+  def moveToRow(row: Range): DeveloperMetadata
   
-  def moveToSheet(sheet: Sheet): DeveloperMetadata = js.native
+  def moveToSheet(sheet: Sheet): DeveloperMetadata
   
-  def moveToSpreadsheet(): DeveloperMetadata = js.native
+  def moveToSpreadsheet(): DeveloperMetadata
   
-  def remove(): Unit = js.native
+  def remove(): Unit
   
-  def setKey(key: String): DeveloperMetadata = js.native
+  def setKey(key: String): DeveloperMetadata
   
-  def setValue(value: String): DeveloperMetadata = js.native
+  def setValue(value: String): DeveloperMetadata
   
-  def setVisibility(visibility: DeveloperMetadataVisibility): DeveloperMetadata = js.native
+  def setVisibility(visibility: DeveloperMetadataVisibility): DeveloperMetadata
 }
 object DeveloperMetadata {
   

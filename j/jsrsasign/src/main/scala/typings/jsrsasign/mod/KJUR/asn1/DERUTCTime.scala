@@ -5,7 +5,6 @@ import typings.jsrsasign.jsrsasign.KJUR.asn1.HexParam
 import typings.jsrsasign.jsrsasign.KJUR.asn1.StringParam
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,9 +30,54 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("jsrsasign", "KJUR.asn1.DERUTCTime")
 @js.native
 class DERUTCTime ()
-  extends typings.jsrsasign.jsrsasign.KJUR.asn1.DERUTCTime {
+  extends StObject
+     with typings.jsrsasign.jsrsasign.KJUR.asn1.DERUTCTime {
   def this(params: String) = this()
   def this(params: DateParam) = this()
   def this(params: HexParam) = this()
   def this(params: StringParam) = this()
+  
+  /**
+    * get hexadecimal string of ASN.1 TLV bytes
+    * @return hexadecimal string of ASN.1 TLV
+    */
+  /* CompleteClass */
+  override def getEncodedHex(): String = js.native
+  
+  /* CompleteClass */
+  override def getFreshValueHex(): String = js.native
+  
+  /**
+    * get hexadecimal ASN.1 TLV length(L) bytes from TLV value(V)
+    * @return hexadecimal string of ASN.1 TLV length(L)
+    */
+  /* CompleteClass */
+  override def getLengthHexFromValue(): String = js.native
+  
+  /**
+    * get hexadecimal string of ASN.1 TLV value(V) bytes
+    * @return hexadecimal string of ASN.1 TLV value(V) bytes
+    */
+  /* CompleteClass */
+  override def getValueHex(): String = js.native
+  
+  /** hexadecimal string of ASN.1 TLV length(L) */
+  /* CompleteClass */
+  var hL: String = js.native
+  
+  /** hexadecimal string of ASN.1 TLV tag(T) */
+  /* CompleteClass */
+  var hT: String = js.native
+  
+  /** hexadecimal string of ASN.1 TLV */
+  /* CompleteClass */
+  var hTLV: String = js.native
+  
+  /** hexadecimal string of ASN.1 TLV value(V) */
+  /* CompleteClass */
+  var hV: String = js.native
+  
+  /** flag whether internal data was changed */
+  /* CompleteClass */
+  var isModified: String = js.native
 }

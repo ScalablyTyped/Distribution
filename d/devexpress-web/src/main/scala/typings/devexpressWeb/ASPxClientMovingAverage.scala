@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The client-side equivalent of the MovingAverage class.
   */
-@js.native
-trait ASPxClientMovingAverage extends ASPxClientSingleLevelIndicator {
+trait ASPxClientMovingAverage
+  extends StObject
+     with ASPxClientSingleLevelIndicator {
   
   /**
     * Gets a value specifying the Envelope percent.
     */
-  var envelopePercent: Double = js.native
+  var envelopePercent: Double
   
   /**
     * Gets a value specifying whether to display a Moving Average, Envelope, or both.
     */
-  var kind: String = js.native
+  var kind: String
   
   /**
     * Gets the number of data points used to calculate the moving average.
     */
-  var pointsCount: Double = js.native
+  var pointsCount: Double
 }
 object ASPxClientMovingAverage {
   

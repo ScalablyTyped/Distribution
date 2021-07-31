@@ -2,7 +2,6 @@ package typings.elasticJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("elastic.js", "GeoShapeFilter")
@@ -10,7 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /*
   A Filter to find documents with a geo_shapes matching a specific shape.
   */
-class GeoShapeFilter () extends Filter {
+class GeoShapeFilter ()
+  extends StObject
+     with Filter {
   
   /*
     The type of ejs object.  For internal use only.

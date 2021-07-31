@@ -2,13 +2,11 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DistanceMatrixRow extends StObject {
   
-  var elements: js.Array[DistanceMatrixRowElement] = js.native
+  var elements: js.Array[DistanceMatrixRowElement]
 }
 object DistanceMatrixRow {
   

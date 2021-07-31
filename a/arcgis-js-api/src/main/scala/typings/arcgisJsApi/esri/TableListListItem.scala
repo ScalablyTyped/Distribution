@@ -2,10 +2,8 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableListListItem extends StObject {
   
   /**
@@ -13,35 +11,35 @@ trait TableListListItem extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsOpen)
     */
-  var actionsOpen: Boolean = js.native
+  var actionsOpen: Boolean
   
   /**
     * A nested 2-dimensional collection of actions that could be triggered on the item.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#actionsSections)
     */
-  var actionsSections: Collection[Collection[ActionButton | ActionToggle]] = js.native
+  var actionsSections: Collection[Collection[ActionButton | ActionToggle]]
   
   /**
     * The Error object returned if an error occurred.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#error)
     */
-  val error: Error = js.native
+  val error: Error
   
   /**
     * The layer associated with the triggered action.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#layer)
     */
-  var layer: Layer = js.native
+  var layer: Layer
   
   /**
     * The title of the table.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-TableList-ListItem.html#title)
     */
-  var title: String = js.native
+  var title: String
 }
 object TableListListItem {
   

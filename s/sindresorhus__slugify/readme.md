@@ -10,9 +10,9 @@ Slugify a string
 | ------------------ | :-------------: |
 | Full name          | @sindresorhus/slugify |
 | Keywords           | string, slugify, slug, url, url-safe, urlify, transliterate, transliteration, deburr, unicode, ascii, text, decamelize, pretty, clean, filename, id |
-| # releases         | 13 |
-| # dependents       | 158 |
-| # downloads        | 6971477 |
+| # releases         | 8 |
+| # dependents       | 192 |
+| # downloads        | 13547314 |
 | # stars            | 0 |
 
 ## Links

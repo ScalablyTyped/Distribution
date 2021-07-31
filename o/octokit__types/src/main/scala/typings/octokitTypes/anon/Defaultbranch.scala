@@ -2,57 +2,55 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Defaultbranch extends StObject {
   
-  var created_at: String = js.native
+  var created_at: String
   
-  var default_branch: String = js.native
+  var default_branch: String
   
-  var description: String = js.native
+  var description: String
   
-  var fork: Boolean = js.native
+  var fork: Boolean
   
-  var forks_count: Double = js.native
+  var forks_count: Double
   
-  var full_name: String = js.native
+  var full_name: String
   
-  var homepage: String = js.native
+  var homepage: String
   
-  var html_url: String = js.native
+  var html_url: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var language: String = js.native
+  var language: String
   
-  var master_branch: String = js.native
+  var master_branch: String
   
-  var name: String = js.native
+  var name: String
   
-  var node_id: String = js.native
+  var node_id: String
   
-  var open_issues_count: Double = js.native
+  var open_issues_count: Double
   
-  var owner: Receivedeventsurl = js.native
+  var owner: Receivedeventsurl
   
-  var `private`: Boolean = js.native
+  var `private`: Boolean
   
-  var pushed_at: String = js.native
+  var pushed_at: String
   
-  var score: Double = js.native
+  var score: Double
   
-  var size: Double = js.native
+  var size: Double
   
-  var stargazers_count: Double = js.native
+  var stargazers_count: Double
   
-  var updated_at: String = js.native
+  var updated_at: String
   
-  var url: String = js.native
+  var url: String
   
-  var watchers_count: Double = js.native
+  var watchers_count: Double
 }
 object Defaultbranch {
   

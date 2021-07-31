@@ -3,14 +3,18 @@ package typings.reactNavigationDrawer
 import typings.reactNavigation.mod.NavigationRouteConfigMap
 import typings.reactNavigationDrawer.anon.GetActionCreators
 import typings.reactNavigationDrawer.anon.InitialRouteName
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@JSImport("react-navigation-drawer/lib/typescript/src/routers/DrawerRouter", JSImport.Namespace)
-@js.native
-object drawerRouterMod extends js.Object {
-  def default(routeConfigs: NavigationRouteConfigMap[_, _, _]): GetActionCreators = js.native
-  def default(routeConfigs: NavigationRouteConfigMap[_, _, _], config: InitialRouteName): GetActionCreators = js.native
+object drawerRouterMod {
+  
+  @JSImport("react-navigation-drawer/lib/typescript/src/routers/DrawerRouter", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any]): GetActionCreators = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any]).asInstanceOf[GetActionCreators]
+  @scala.inline
+  def default(routeConfigs: NavigationRouteConfigMap[js.Any, js.Any, js.Any], config: InitialRouteName): GetActionCreators = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(routeConfigs.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[GetActionCreators]
 }
-

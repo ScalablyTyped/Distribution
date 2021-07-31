@@ -10,9 +10,9 @@ remark plugin to parse Markdown
 | ------------------ | :-------------: |
 | Full name          | remark-parse |
 | Keywords           | unified, remark, remark-plugin, plugin, markdown, mdast, abstract, syntax, tree, ast, parse |
-| # releases         | 12 |
-| # dependents       | 439 |
-| # downloads        | 144546835 |
+| # releases         | 11 |
+| # dependents       | 517 |
+| # downloads        | 197536862 |
 | # stars            | 3 |
 
 ## Links

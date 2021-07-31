@@ -2,16 +2,14 @@ package typings.awsSdk.cloudsearchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteExpressionResponse extends StObject {
   
   /**
     * The status of the expression being deleted.
     */
-  var Expression: ExpressionStatus = js.native
+  var Expression: ExpressionStatus
 }
 object DeleteExpressionResponse {
   

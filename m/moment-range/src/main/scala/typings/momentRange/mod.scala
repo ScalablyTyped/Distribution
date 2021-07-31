@@ -14,10 +14,13 @@ import typings.std.Date
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("moment-range", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("moment-range", "DateRange")
   @js.native
@@ -55,12 +58,12 @@ object mod {
     def contains(other: Date, options: `0`): Boolean = js.native
     
     def diff(): Double = js.native
-    def diff(unit: js.UndefOr[scala.Nothing], precise: Boolean): Double = js.native
+    def diff(unit: Unit, precise: Boolean): Double = js.native
     def diff(unit: Diff): Double = js.native
     def diff(unit: Diff, precise: Boolean): Double = js.native
     
     def duration(): Double = js.native
-    def duration(unit: js.UndefOr[scala.Nothing], precise: Boolean): Double = js.native
+    def duration(unit: Unit, precise: Boolean): Double = js.native
     def duration(unit: Diff): Double = js.native
     def duration(unit: Diff, precise: Boolean): Double = js.native
     
@@ -92,14 +95,15 @@ object mod {
     def toDate(): js.Tuple2[Date, Date] = js.native
   }
   
-  @JSImport("moment-range", "extendMoment")
-  @js.native
-  def extendMoment(momentClass: FnCall): MomentRangeNoneinpundefin = js.native
+  @scala.inline
+  def extendMoment(momentClass: FnCall): MomentRangeNoneinpundefin = ^.asInstanceOf[js.Dynamic].applyDynamic("extendMoment")(momentClass.asInstanceOf[js.Any]).asInstanceOf[MomentRangeNoneinpundefin]
   
   @js.native
-  trait MomentRange extends MomentRangeStaticMethods {
+  trait MomentRange
+    extends StObject
+       with MomentRangeStaticMethods {
     
-    def apply(args: js.Any*): MomentRangeStaticMethods with Moment = js.native
+    def apply(args: js.Any*): MomentRangeStaticMethods & Moment = js.native
   }
   
   @js.native
@@ -119,22 +123,21 @@ object mod {
     def rangeFromISOString(isoTimeInterval: String): DateRange = js.native
     
     def rangeFromInterval(interval: Diff): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: js.UndefOr[scala.Nothing], date: Moment): DateRange = js.native
-    def rangeFromInterval(interval: Diff, count: js.UndefOr[scala.Nothing], date: Date): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double, date: Moment): DateRange = js.native
     def rangeFromInterval(interval: Diff, count: Double, date: Date): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Unit, date: Moment): DateRange = js.native
+    def rangeFromInterval(interval: Diff, count: Unit, date: Date): DateRange = js.native
   }
   
   /* augmented module */
   object momentAugmentingMod {
     
-    @js.native
     trait Moment extends StObject {
       
-      def isRange(range: js.Any): Boolean = js.native
+      def isRange(range: js.Any): Boolean
       
-      def within(range: DateRange): Boolean = js.native
+      def within(range: DateRange): Boolean
     }
     object Moment {
       

@@ -4,15 +4,13 @@ import typings.plotlyJs.anon.PartialLayout
 import typings.plotlyJs.anon.typeinPlotTypePartialPlot
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Template extends StObject {
   
-  var data: js.UndefOr[typeinPlotTypePartialPlot] = js.native
+  var data: js.UndefOr[typeinPlotTypePartialPlot] = js.undefined
   
-  var layout: js.UndefOr[PartialLayout] = js.native
+  var layout: js.UndefOr[PartialLayout] = js.undefined
 }
 object Template {
   

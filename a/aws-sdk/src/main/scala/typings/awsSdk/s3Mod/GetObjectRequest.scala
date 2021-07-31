@@ -2,108 +2,106 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetObjectRequest extends StObject {
   
   /**
     * The bucket name containing the object.  When using this API with an access point, you must direct requests to the access point hostname. The access point hostname takes the form AccessPointName-AccountId.s3-accesspoint.Region.amazonaws.com. When using this operation with an access point through the AWS SDKs, you provide the access point ARN in place of the bucket name. For more information about access point ARNs, see Using Access Points in the Amazon Simple Storage Service Developer Guide. When using this API with Amazon S3 on Outposts, you must direct requests to the S3 on Outposts hostname. The S3 on Outposts hostname takes the form AccessPointName-AccountId.outpostID.s3-outposts.Region.amazonaws.com. When using this operation using S3 on Outposts through the AWS SDKs, you provide the Outposts bucket ARN in place of the bucket name. For more information about S3 on Outposts ARNs, see Using S3 on Outposts in the Amazon Simple Storage Service Developer Guide.
     */
-  var Bucket: BucketName = js.native
+  var Bucket: BucketName
   
   /**
     * The account id of the expected bucket owner. If the bucket is owned by a different account, the request will fail with an HTTP 403 (Access Denied) error.
     */
-  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.native
+  var ExpectedBucketOwner: js.UndefOr[AccountId] = js.undefined
   
   /**
     * Return the object only if its entity tag (ETag) is the same as the one specified, otherwise return a 412 (precondition failed).
     */
-  var IfMatch: js.UndefOr[typings.awsSdk.s3Mod.IfMatch] = js.native
+  var IfMatch: js.UndefOr[typings.awsSdk.s3Mod.IfMatch] = js.undefined
   
   /**
     * Return the object only if it has been modified since the specified time, otherwise return a 304 (not modified).
     */
-  var IfModifiedSince: js.UndefOr[typings.awsSdk.s3Mod.IfModifiedSince] = js.native
+  var IfModifiedSince: js.UndefOr[typings.awsSdk.s3Mod.IfModifiedSince] = js.undefined
   
   /**
     * Return the object only if its entity tag (ETag) is different from the one specified, otherwise return a 304 (not modified).
     */
-  var IfNoneMatch: js.UndefOr[typings.awsSdk.s3Mod.IfNoneMatch] = js.native
+  var IfNoneMatch: js.UndefOr[typings.awsSdk.s3Mod.IfNoneMatch] = js.undefined
   
   /**
     * Return the object only if it has not been modified since the specified time, otherwise return a 412 (precondition failed).
     */
-  var IfUnmodifiedSince: js.UndefOr[typings.awsSdk.s3Mod.IfUnmodifiedSince] = js.native
+  var IfUnmodifiedSince: js.UndefOr[typings.awsSdk.s3Mod.IfUnmodifiedSince] = js.undefined
   
   /**
     * Key of the object to get.
     */
-  var Key: ObjectKey = js.native
+  var Key: ObjectKey
   
   /**
     * Part number of the object being read. This is a positive integer between 1 and 10,000. Effectively performs a 'ranged' GET request for the part specified. Useful for downloading just a part of an object.
     */
-  var PartNumber: js.UndefOr[typings.awsSdk.s3Mod.PartNumber] = js.native
+  var PartNumber: js.UndefOr[typings.awsSdk.s3Mod.PartNumber] = js.undefined
   
   /**
     * Downloads the specified range bytes of an object. For more information about the HTTP Range header, see https://www.w3.org/Protocols/rfc2616/rfc2616-sec14.html#sec14.35.  Amazon S3 doesn't support retrieving multiple ranges of data per GET request. 
     */
-  var Range: js.UndefOr[typings.awsSdk.s3Mod.Range] = js.native
+  var Range: js.UndefOr[typings.awsSdk.s3Mod.Range] = js.undefined
   
-  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.native
+  var RequestPayer: js.UndefOr[typings.awsSdk.s3Mod.RequestPayer] = js.undefined
   
   /**
     * Sets the Cache-Control header of the response.
     */
-  var ResponseCacheControl: js.UndefOr[typings.awsSdk.s3Mod.ResponseCacheControl] = js.native
+  var ResponseCacheControl: js.UndefOr[typings.awsSdk.s3Mod.ResponseCacheControl] = js.undefined
   
   /**
     * Sets the Content-Disposition header of the response
     */
-  var ResponseContentDisposition: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentDisposition] = js.native
+  var ResponseContentDisposition: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentDisposition] = js.undefined
   
   /**
     * Sets the Content-Encoding header of the response.
     */
-  var ResponseContentEncoding: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentEncoding] = js.native
+  var ResponseContentEncoding: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentEncoding] = js.undefined
   
   /**
     * Sets the Content-Language header of the response.
     */
-  var ResponseContentLanguage: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentLanguage] = js.native
+  var ResponseContentLanguage: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentLanguage] = js.undefined
   
   /**
     * Sets the Content-Type header of the response.
     */
-  var ResponseContentType: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentType] = js.native
+  var ResponseContentType: js.UndefOr[typings.awsSdk.s3Mod.ResponseContentType] = js.undefined
   
   /**
     * Sets the Expires header of the response.
     */
-  var ResponseExpires: js.UndefOr[typings.awsSdk.s3Mod.ResponseExpires] = js.native
+  var ResponseExpires: js.UndefOr[typings.awsSdk.s3Mod.ResponseExpires] = js.undefined
   
   /**
     * Specifies the algorithm to use to when encrypting the object (for example, AES256).
     */
-  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.native
+  var SSECustomerAlgorithm: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerAlgorithm] = js.undefined
   
   /**
     * Specifies the customer-provided encryption key for Amazon S3 to use in encrypting data. This value is used to store the object and then it is discarded; Amazon S3 does not store the encryption key. The key must be appropriate for use with the algorithm specified in the x-amz-server-side-encryption-customer-algorithm header.
     */
-  var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.native
+  var SSECustomerKey: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKey] = js.undefined
   
   /**
     * Specifies the 128-bit MD5 digest of the encryption key according to RFC 1321. Amazon S3 uses this header for a message integrity check to ensure that the encryption key was transmitted without error.
     */
-  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.native
+  var SSECustomerKeyMD5: js.UndefOr[typings.awsSdk.s3Mod.SSECustomerKeyMD5] = js.undefined
   
   /**
     * VersionId used to reference a specific version of the object.
     */
-  var VersionId: js.UndefOr[ObjectVersionId] = js.native
+  var VersionId: js.UndefOr[ObjectVersionId] = js.undefined
 }
 object GetObjectRequest {
   

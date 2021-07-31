@@ -14,7 +14,6 @@ import typings.aliOss.anon.SourceBucketName
 import typings.aliOss.anon.Timeout
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -113,9 +112,9 @@ trait OSS extends StObject {
     * Get an object from the bucket.
     */
   def get(name: String): js.Promise[GetObjectResult] = js.native
-  def get(name: String, file: js.UndefOr[scala.Nothing], options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any): js.Promise[GetObjectResult] = js.native
   def get(name: String, file: js.Any, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
+  def get(name: String, file: Unit, options: GetObjectOptions): js.Promise[GetObjectResult] = js.native
   
   /**
     * Get object's ACL.
@@ -138,7 +137,7 @@ trait OSS extends StObject {
   /**
     * Get bucket information,include CreationDate、ExtranetEndpoint、IntranetEndpoint、Location、Name、StorageClass、 Owner、AccessControlList
     */
-  def getBucketInfo(name: String): js.Promise[_] = js.native
+  def getBucketInfo(name: String): js.Promise[js.Any] = js.native
   
   /**
     * Get the bucket object lifecycle.
@@ -149,7 +148,7 @@ trait OSS extends StObject {
   /**
     * Get bucket location
     */
-  def getBucketLocation(name: String): js.Promise[_] = js.native
+  def getBucketLocation(name: String): js.Promise[js.Any] = js.native
   
   /**
     * Get the bucket logging settings.
@@ -197,17 +196,17 @@ trait OSS extends StObject {
     * Get signatured rtmp url for publishing.
     */
   def getRtmpUrl(): String = js.native
-  def getRtmpUrl(channelId: js.UndefOr[scala.Nothing], options: GetRtmpUrlOptions): String = js.native
   def getRtmpUrl(channelId: String): String = js.native
   def getRtmpUrl(channelId: String, options: GetRtmpUrlOptions): String = js.native
+  def getRtmpUrl(channelId: Unit, options: GetRtmpUrlOptions): String = js.native
   
   /**
     * Get an object read stream.
     */
   def getStream(): js.Promise[GetStreamResult] = js.native
-  def getStream(name: js.UndefOr[scala.Nothing], options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   def getStream(name: String): js.Promise[GetStreamResult] = js.native
   def getStream(name: String, options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
+  def getStream(name: Unit, options: GetStreamOptions): js.Promise[GetStreamResult] = js.native
   
   /**
     * Head an object and get the meta info.
@@ -248,7 +247,7 @@ trait OSS extends StObject {
     * The ListParts command can be used to list all successfully uploaded parts mapped to a specific upload ID, i.e.: those not completed and not aborted.
     */
   def listParts(name: String, uploadId: String): js.Promise[ListPartsResult] = js.native
-  def listParts(name: String, uploadId: String, query: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[ListPartsResult] = js.native
+  def listParts(name: String, uploadId: String, query: Unit, options: RequestOptions): js.Promise[ListPartsResult] = js.native
   def listParts(name: String, uploadId: String, query: ListPartsQuery): js.Promise[ListPartsResult] = js.native
   def listParts(name: String, uploadId: String, query: ListPartsQuery, options: RequestOptions): js.Promise[ListPartsResult] = js.native
   
@@ -315,9 +314,9 @@ trait OSS extends StObject {
     * Update the bucket logging settings. Log file will create every one hour and name format: <prefix><bucket>-YYYY-mm-DD-HH-MM-SS-UniqueString.
     */
   def putBucketLogging(name: String): js.Promise[NormalSuccessResponse] = js.native
-  def putBucketLogging(name: String, prefix: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   def putBucketLogging(name: String, prefix: String): js.Promise[NormalSuccessResponse] = js.native
   def putBucketLogging(name: String, prefix: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
+  def putBucketLogging(name: String, prefix: Unit, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   
   // referer operations
   /**
@@ -343,9 +342,9 @@ trait OSS extends StObject {
     * Change the live channel status.
     */
   def putChannelStatus(id: String): js.Promise[NormalSuccessResponse] = js.native
-  def putChannelStatus(id: String, status: js.UndefOr[scala.Nothing], options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   def putChannelStatus(id: String, status: String): js.Promise[NormalSuccessResponse] = js.native
   def putChannelStatus(id: String, status: String, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
+  def putChannelStatus(id: String, status: Unit, options: RequestOptions): js.Promise[NormalSuccessResponse] = js.native
   
   /**
     * Set an exists object meta.

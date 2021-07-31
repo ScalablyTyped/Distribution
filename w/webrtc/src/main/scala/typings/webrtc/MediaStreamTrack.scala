@@ -3,11 +3,12 @@ package typings.webrtc
 import typings.std.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait MediaStreamTrack extends EventTarget {
+trait MediaStreamTrack
+  extends StObject
+     with EventTarget {
   
   def applyConstraints(constraints: MediaTrackConstraints): js.Promise[Unit] = js.native
   

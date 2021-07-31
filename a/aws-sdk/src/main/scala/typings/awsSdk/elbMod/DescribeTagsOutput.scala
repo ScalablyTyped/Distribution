@@ -2,16 +2,14 @@ package typings.awsSdk.elbMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTagsOutput extends StObject {
   
   /**
     * Information about the tags.
     */
-  var TagDescriptions: js.UndefOr[typings.awsSdk.elbMod.TagDescriptions] = js.native
+  var TagDescriptions: js.UndefOr[typings.awsSdk.elbMod.TagDescriptions] = js.undefined
 }
 object DescribeTagsOutput {
   

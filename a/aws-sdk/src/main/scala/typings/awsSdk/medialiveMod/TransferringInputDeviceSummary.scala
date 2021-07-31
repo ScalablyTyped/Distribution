@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransferringInputDeviceSummary extends StObject {
   
   /**
     * The unique ID of the input device.
     */
-  var Id: js.UndefOr[string] = js.native
+  var Id: js.UndefOr[string] = js.undefined
   
   /**
     * The optional message that the sender has attached to the transfer.
     */
-  var Message: js.UndefOr[string] = js.native
+  var Message: js.UndefOr[string] = js.undefined
   
   /**
     * The AWS account ID for the recipient of the input device transfer.
     */
-  var TargetCustomerId: js.UndefOr[string] = js.native
+  var TargetCustomerId: js.UndefOr[string] = js.undefined
   
   /**
     * The type (direction) of the input device transfer.
     */
-  var TransferType: js.UndefOr[InputDeviceTransferType] = js.native
+  var TransferType: js.UndefOr[InputDeviceTransferType] = js.undefined
 }
 object TransferringInputDeviceSummary {
   

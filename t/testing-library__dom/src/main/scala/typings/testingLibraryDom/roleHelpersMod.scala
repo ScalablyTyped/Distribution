@@ -5,24 +5,23 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object roleHelpersMod {
   
-  @JSImport("@testing-library/dom/types/role-helpers", "computeHeadingLevel")
+  @JSImport("@testing-library/dom/types/role-helpers", JSImport.Namespace)
   @js.native
-  def computeHeadingLevel(element: Element): js.UndefOr[Double] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@testing-library/dom/types/role-helpers", "getRoles")
-  @js.native
-  def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = js.native
+  @scala.inline
+  def computeHeadingLevel(element: Element): js.UndefOr[Double] = ^.asInstanceOf[js.Dynamic].applyDynamic("computeHeadingLevel")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Double]]
   
-  @JSImport("@testing-library/dom/types/role-helpers", "isInaccessible")
-  @js.native
-  def isInaccessible(element: Element): Boolean = js.native
+  @scala.inline
+  def getRoles(container: HTMLElement): StringDictionary[js.Array[HTMLElement]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRoles")(container.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Array[HTMLElement]]]
   
-  @JSImport("@testing-library/dom/types/role-helpers", "logRoles")
-  @js.native
-  def logRoles(container: HTMLElement): String = js.native
+  @scala.inline
+  def isInaccessible(element: Element): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInaccessible")(element.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def logRoles(container: HTMLElement): String = ^.asInstanceOf[js.Dynamic].applyDynamic("logRoles")(container.asInstanceOf[js.Any]).asInstanceOf[String]
 }

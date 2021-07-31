@@ -2,41 +2,39 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ProvisionedProductPlanSummary extends StObject {
   
   /**
     * The plan identifier.
     */
-  var PlanId: js.UndefOr[Id] = js.native
+  var PlanId: js.UndefOr[Id] = js.undefined
   
   /**
     * The name of the plan.
     */
-  var PlanName: js.UndefOr[ProvisionedProductPlanName] = js.native
+  var PlanName: js.UndefOr[ProvisionedProductPlanName] = js.undefined
   
   /**
     * The plan type.
     */
-  var PlanType: js.UndefOr[ProvisionedProductPlanType] = js.native
+  var PlanType: js.UndefOr[ProvisionedProductPlanType] = js.undefined
   
   /**
     * The product identifier.
     */
-  var ProvisionProductId: js.UndefOr[Id] = js.native
+  var ProvisionProductId: js.UndefOr[Id] = js.undefined
   
   /**
     * The user-friendly name of the provisioned product.
     */
-  var ProvisionProductName: js.UndefOr[ProvisionedProductName] = js.native
+  var ProvisionProductName: js.UndefOr[ProvisionedProductName] = js.undefined
   
   /**
     * The identifier of the provisioning artifact.
     */
-  var ProvisioningArtifactId: js.UndefOr[Id] = js.native
+  var ProvisioningArtifactId: js.UndefOr[Id] = js.undefined
 }
 object ProvisionedProductPlanSummary {
   

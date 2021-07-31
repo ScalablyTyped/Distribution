@@ -7,66 +7,65 @@ import typings.activexLibreoffice.com_.sun.star.beans.XPropertySetInfo
 import typings.activexLibreoffice.com_.sun.star.beans.XVetoableChangeListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service is a presentation that is available from a {@link PresentationDocument} via the {@link XPresentationSupplier} interface. */
-@js.native
 trait Presentation
-  extends XPresentation
+  extends StObject
+     with XPresentation
      with XPropertySet {
   
   /** enables/disables the shape animations. */
-  var AllowAnimations: Boolean = js.native
+  var AllowAnimations: Boolean
   
   /** If this string is not empty, it contains the name of a customized show that is used for the presentation. */
-  var CustomShow: String = js.native
+  var CustomShow: String
   
   /** If this string is not empty, it contains the name of the page where the presentation is started. */
-  var FirstPage: String = js.native
+  var FirstPage: String
   
   /** If this property is set to `TRUE` , the window of the presentation is always on top of all other windows. */
-  var IsAlwaysOnTop: Boolean = js.native
+  var IsAlwaysOnTop: Boolean
   
   /**
     * If this property is `TRUE` , all pages are changed automatically.
     *
     * This overrides the properties of the pages.
     */
-  var IsAutomatic: Boolean = js.native
+  var IsAutomatic: Boolean
   
   /** If this property is set to `TRUE` , the presentation is repeated endlessly. */
-  var IsEndless: Boolean = js.native
+  var IsEndless: Boolean
   
   /** If this property is set to `TRUE` , the presentation runs in full-screen mode. */
-  var IsFullScreen: Boolean = js.native
+  var IsFullScreen: Boolean
   
   /**
     * With this property, you can set the presentation to live mode.
     *
     * Implementations that have no live mode capability may ignore this property and always return false.
     */
-  var IsLivePresentation: Boolean = js.native
+  var IsLivePresentation: Boolean
   
   /** If this property is `TRUE` , the mouse is visible during the presentation. */
-  var IsMouseVisible: Boolean = js.native
+  var IsMouseVisible: Boolean
   
   /**
     * is the duration of the black screen after the presentation has finished.
     *
     * If this is set to `0` , no black screen is shown.
     */
-  var Pause: Double = js.native
+  var Pause: Double
   
   /** If this is set to `TRUE` , the Navigator is opened at the start of the presentation. */
-  var StartWithNavigator: Boolean = js.native
+  var StartWithNavigator: Boolean
   
   /**
     * If this is `TRUE` , a pen is shown during presentation.
     *
     * You can draw on the presentation with this pen.
     */
-  var UsePen: Boolean = js.native
+  var UsePen: Boolean
 }
 object Presentation {
   

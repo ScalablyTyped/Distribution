@@ -2,17 +2,15 @@ package typings.reactImage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CrossOrigin extends StObject {
     
-    var crossOrigin: js.UndefOr[String] = js.native
+    var crossOrigin: js.UndefOr[String] = js.undefined
     
-    var decode: js.UndefOr[Boolean] = js.native
+    var decode: js.UndefOr[Boolean] = js.undefined
   }
   object CrossOrigin {
     
@@ -39,14 +37,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Error extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var isLoading: Boolean = js.native
+    var isLoading: Boolean
     
-    var src: js.UndefOr[String] = js.native
+    var src: js.UndefOr[String] = js.undefined
   }
   object Error {
     

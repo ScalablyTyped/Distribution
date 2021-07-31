@@ -2,10 +2,8 @@ package typings.vscodeLanguageserverTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SymbolInformation extends StObject {
   
   /**
@@ -14,17 +12,17 @@ trait SymbolInformation extends StObject {
     * if necessary). It can't be used to re-infer a hierarchy for the document
     * symbols.
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * Indicates if this symbol is deprecated.
     */
-  var deprecated: js.UndefOr[Boolean] = js.native
+  var deprecated: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The kind of this symbol.
     */
-  var kind: SymbolKind = js.native
+  var kind: SymbolKind
   
   /**
     * The location of this symbol. The location's range is used by a tool
@@ -37,12 +35,12 @@ trait SymbolInformation extends StObject {
     * syntax tree. It can therefore not be used to re-construct a hierarchy of
     * the symbols.
     */
-  var location: Location = js.native
+  var location: Location
   
   /**
     * The name of this symbol.
     */
-  var name: String = js.native
+  var name: String
 }
 object SymbolInformation {
   
@@ -51,6 +49,10 @@ object SymbolInformation {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], location = location.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
     __obj.asInstanceOf[SymbolInformation]
   }
+  
+  @JSImport("vscode-languageserver-types", "SymbolInformation")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Creates a new symbol information literal.
@@ -61,24 +63,14 @@ object SymbolInformation {
     * @param uri The resource of the location of symbol, defaults to the current document.
     * @param containerName The name of the symbol containing the symbol.
     */
-  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
-  @js.native
-  def create(name: String, kind: SymbolKind, range: Range): SymbolInformation = js.native
-  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
-  @js.native
-  def create(
-    name: String,
-    kind: SymbolKind,
-    range: Range,
-    uri: js.UndefOr[scala.Nothing],
-    containerName: String
-  ): SymbolInformation = js.native
-  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
-  @js.native
-  def create(name: String, kind: SymbolKind, range: Range, uri: String): SymbolInformation = js.native
-  @JSImport("vscode-languageserver-types", "SymbolInformation.create")
-  @js.native
-  def create(name: String, kind: SymbolKind, range: Range, uri: String, containerName: String): SymbolInformation = js.native
+  @scala.inline
+  def create(name: String, kind: SymbolKind, range: Range): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
+  @scala.inline
+  def create(name: String, kind: SymbolKind, range: Range, uri: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
+  @scala.inline
+  def create(name: String, kind: SymbolKind, range: Range, uri: String, containerName: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
+  @scala.inline
+  def create(name: String, kind: SymbolKind, range: Range, uri: Unit, containerName: String): SymbolInformation = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], kind.asInstanceOf[js.Any], range.asInstanceOf[js.Any], uri.asInstanceOf[js.Any], containerName.asInstanceOf[js.Any])).asInstanceOf[SymbolInformation]
   
   @scala.inline
   implicit class SymbolInformationMutableBuilder[Self <: SymbolInformation] (val x: Self) extends AnyVal {

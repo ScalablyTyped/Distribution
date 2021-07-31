@@ -9,22 +9,22 @@ import typings.activexLibreoffice.com_.sun.star.util.DateTime
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is an extension to the interface {@link XSimpleFileAccess2} .
   * @since OOo 1.1.2
   */
-@js.native
-trait XSimpleFileAccess3 extends XSimpleFileAccess2 {
+trait XSimpleFileAccess3
+  extends StObject
+     with XSimpleFileAccess2 {
   
   /**
     * Checks if a file is "hidden"
     * @param FileURL URL to be checked
     * @returns true, if the given File is "hidden", false otherwise
     */
-  def isHidden(FileURL: String): Boolean = js.native
+  def isHidden(FileURL: String): Boolean
   
   /**
     * Sets the "hidden" of a file according to the boolean parameter, if the actual process has the right to do so and the used operation system supports
@@ -32,7 +32,7 @@ trait XSimpleFileAccess3 extends XSimpleFileAccess2 {
     * @param FileURL URL of the file
     * @param bHidden true; "hidden" flag will be set, false; "hidden" flag will be reset
     */
-  def setHidden(FileURL: String, bHidden: Boolean): Unit = js.native
+  def setHidden(FileURL: String, bHidden: Boolean): Unit
 }
 object XSimpleFileAccess3 {
   

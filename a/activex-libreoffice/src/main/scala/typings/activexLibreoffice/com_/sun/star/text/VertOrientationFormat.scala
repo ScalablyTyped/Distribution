@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.text
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If `VerticalOrientation == VERT_NONE` , then the value "YPos" describes the distance from the top of the context. Otherwise "YPos" is ignored.
   */
-@js.native
 trait VertOrientationFormat extends StObject {
   
   /** determines the vertical alignment of an object. The values refer to com::sun::star::VertOrientation. */
-  var VerticalOrientation: Double = js.native
+  var VerticalOrientation: Double
   
   /**
     * determines the reference position of the vertical alignment.
     * @see com.sun.star.text.RelOrientation
     */
-  var VerticalRelation: Double = js.native
+  var VerticalRelation: Double
   
   /** contains the distance from top. Only valid if the property VerticalOrientation contains the value VERT_NONE. */
-  var YPos: Double = js.native
+  var YPos: Double
 }
 object VertOrientationFormat {
   

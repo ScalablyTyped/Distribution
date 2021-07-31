@@ -2,29 +2,27 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DatafeedFormat extends StObject {
   
   /**
     * Delimiter for the separation of values in a delimiter-separated values feed. If not specified, the delimiter will be auto-detected. Ignored for non-DSV data feeds. Acceptable values
     * are: - "`pipe`" - "`tab`" - "`tilde`"
     */
-  var columnDelimiter: js.UndefOr[String] = js.native
+  var columnDelimiter: js.UndefOr[String] = js.undefined
   
   /**
     * Character encoding scheme of the data feed. If not specified, the encoding will be auto-detected. Acceptable values are: - "`latin-1`" - "`utf-16be`" - "`utf-16le`" - "`utf-8`" -
     * "`windows-1252`"
     */
-  var fileEncoding: js.UndefOr[String] = js.native
+  var fileEncoding: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies how double quotes are interpreted. If not specified, the mode will be auto-detected. Ignored for non-DSV data feeds. Acceptable values are: - "`normal character`" -
     * "`value quoting`"
     */
-  var quotingMode: js.UndefOr[String] = js.native
+  var quotingMode: js.UndefOr[String] = js.undefined
 }
 object DatafeedFormat {
   

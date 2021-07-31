@@ -5,15 +5,13 @@ import typings.simperium.simperiumNumbers.`401`
 import typings.simperium.simperiumNumbers.`500`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedAuthDetails extends StObject {
   
-  var code: `400` | `401` | `500` = js.native
+  var code: `400` | `401` | `500`
   
-  var msg: String = js.native
+  var msg: String
 }
 object FailedAuthDetails {
   

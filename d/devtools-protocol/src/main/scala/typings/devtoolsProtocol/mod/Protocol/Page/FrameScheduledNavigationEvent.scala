@@ -2,32 +2,30 @@ package typings.devtoolsProtocol.mod.Protocol.Page
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FrameScheduledNavigationEvent extends StObject {
   
   /**
     * Delay (in seconds) until the navigation is scheduled to begin. The navigation is not
     * guaranteed to start.
     */
-  var delay: Double = js.native
+  var delay: Double
   
   /**
     * Id of the frame that has scheduled a navigation.
     */
-  var frameId: FrameId = js.native
+  var frameId: FrameId
   
   /**
     * The reason for the navigation.
     */
-  var reason: ClientNavigationReason = js.native
+  var reason: ClientNavigationReason
   
   /**
     * The destination URL for the scheduled navigation.
     */
-  var url: String = js.native
+  var url: String
 }
 object FrameScheduledNavigationEvent {
   

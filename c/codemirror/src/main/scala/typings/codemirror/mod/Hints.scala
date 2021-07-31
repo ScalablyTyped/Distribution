@@ -2,17 +2,15 @@ package typings.codemirror.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hints extends StObject {
   
-  var from: Position = js.native
+  var from: Position
   
-  var list: js.Array[Hint | String] = js.native
+  var list: js.Array[Hint | String]
   
-  var to: Position = js.native
+  var to: Position
 }
 object Hints {
   

@@ -3,15 +3,13 @@ package typings.activexOutlook.anon
 import typings.activexOutlook.Outlook.OutlookBarShortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shortcut extends StObject {
   
-  val CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any = js.native
+  val CommandBar: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Office.CommandBar */ js.Any
   
-  val Shortcut: OutlookBarShortcut = js.native
+  val Shortcut: OutlookBarShortcut
 }
 object Shortcut {
   

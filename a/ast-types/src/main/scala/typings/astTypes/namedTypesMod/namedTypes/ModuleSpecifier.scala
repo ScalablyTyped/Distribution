@@ -4,17 +4,17 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ModuleSpecifier extends Node {
+trait ModuleSpecifier
+  extends StObject
+     with Node {
   
-  var id: js.UndefOr[IdentifierKind | Null] = js.native
+  var id: js.UndefOr[IdentifierKind | Null] = js.undefined
   
-  var local: js.UndefOr[IdentifierKind | Null] = js.native
+  var local: js.UndefOr[IdentifierKind | Null] = js.undefined
   
-  var name: js.UndefOr[IdentifierKind | Null] = js.native
+  var name: js.UndefOr[IdentifierKind | Null] = js.undefined
 }
 object ModuleSpecifier {
   

@@ -6,11 +6,9 @@ import typings.officeJs.officeJsStrings.PinYin
 import typings.officeJs.officeJsStrings.StrokeCount
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling `tableSort.toJSON()`. */
-@js.native
 trait TableSortData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait TableSortData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var fields: js.UndefOr[js.Array[SortField]] = js.native
+  var fields: js.UndefOr[js.Array[SortField]] = js.undefined
   
   /**
     *
@@ -27,7 +25,7 @@ trait TableSortData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
   
   /**
     *
@@ -35,7 +33,7 @@ trait TableSortData extends StObject {
     *
     * [Api set: ExcelApi 1.2]
     */
-  var method: js.UndefOr[SortMethod | PinYin | StrokeCount] = js.native
+  var method: js.UndefOr[SortMethod | PinYin | StrokeCount] = js.undefined
 }
 object TableSortData {
   

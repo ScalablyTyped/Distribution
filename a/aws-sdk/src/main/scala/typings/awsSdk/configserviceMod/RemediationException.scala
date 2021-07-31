@@ -2,36 +2,34 @@ package typings.awsSdk.configserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemediationException extends StObject {
   
   /**
     * The name of the AWS Config rule.
     */
-  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName = js.native
+  var ConfigRuleName: typings.awsSdk.configserviceMod.ConfigRuleName
   
   /**
     * The time when the remediation exception will be deleted.
     */
-  var ExpirationTime: js.UndefOr[Date] = js.native
+  var ExpirationTime: js.UndefOr[Date] = js.undefined
   
   /**
     * An explanation of an remediation exception.
     */
-  var Message: js.UndefOr[StringWithCharLimit1024] = js.native
+  var Message: js.UndefOr[StringWithCharLimit1024] = js.undefined
   
   /**
     * The ID of the resource (for example., sg-xxxxxx).
     */
-  var ResourceId: StringWithCharLimit1024 = js.native
+  var ResourceId: StringWithCharLimit1024
   
   /**
     * The type of a resource.
     */
-  var ResourceType: StringWithCharLimit256 = js.native
+  var ResourceType: StringWithCharLimit256
 }
 object RemediationException {
   

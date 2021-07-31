@@ -2,7 +2,6 @@ package typings.winrtUwp.Windows.Devices.Usb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -14,21 +13,31 @@ object UsbControlRecipient extends StObject {
   
   /** The recipient of the control transfer is the default (or the first) USB interface in the selected configuration of the device. */
   @js.native
-  sealed trait defaultInterface extends UsbControlRecipient
+  sealed trait defaultInterface
+    extends StObject
+       with UsbControlRecipient
   
   /** The recipient of the control transfer is the device. */
   @js.native
-  sealed trait device extends UsbControlRecipient
+  sealed trait device
+    extends StObject
+       with UsbControlRecipient
   
   /** The recipient of the control transfer is an endpoint. */
   @js.native
-  sealed trait endpoint extends UsbControlRecipient
+  sealed trait endpoint
+    extends StObject
+       with UsbControlRecipient
   
   /** The recipient of the control transfer is other. */
   @js.native
-  sealed trait other extends UsbControlRecipient
+  sealed trait other
+    extends StObject
+       with UsbControlRecipient
   
   /** The recipient of the control transfer is the USB interface that is specified in the request. */
   @js.native
-  sealed trait specifiedInterface extends UsbControlRecipient
+  sealed trait specifiedInterface
+    extends StObject
+       with UsbControlRecipient
 }

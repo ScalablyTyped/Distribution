@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteBatchPredictionInput extends StObject {
   
   /**
     * A user-supplied ID that uniquely identifies the BatchPrediction.
     */
-  var BatchPredictionId: EntityId = js.native
+  var BatchPredictionId: EntityId
 }
 object DeleteBatchPredictionInput {
   

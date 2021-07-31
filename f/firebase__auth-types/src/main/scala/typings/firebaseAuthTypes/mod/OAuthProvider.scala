@@ -2,12 +2,13 @@ package typings.firebaseAuthTypes.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@firebase/auth-types", "OAuthProvider")
 @js.native
-class OAuthProvider protected () extends AuthProvider {
+class OAuthProvider protected ()
+  extends StObject
+     with AuthProvider {
   def this(providerId: String) = this()
   
   def addScope(scope: String): AuthProvider = js.native
@@ -18,6 +19,9 @@ class OAuthProvider protected () extends AuthProvider {
   def credential(optionsOrIdToken: Null, accessToken: String): OAuthCredential = js.native
   def credential(optionsOrIdToken: OAuthCredentialOptions): OAuthCredential = js.native
   def credential(optionsOrIdToken: OAuthCredentialOptions, accessToken: String): OAuthCredential = js.native
+  
+  /* CompleteClass */
+  var providerId: String = js.native
   
   def setCustomParameters(customOAuthParameters: js.Object): AuthProvider = js.native
 }

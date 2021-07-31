@@ -2,69 +2,67 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Proposal extends StObject {
   
   /** Output only. Reference to the buyer that will get billed for this proposal. */
-  var billedBuyer: js.UndefOr[Buyer] = js.native
+  var billedBuyer: js.UndefOr[Buyer] = js.undefined
   
   /** Reference to the buyer on the proposal. Note: This field may be set only when creating the resource. Modifying this field while updating the resource will result in an error. */
-  var buyer: js.UndefOr[Buyer] = js.native
+  var buyer: js.UndefOr[Buyer] = js.undefined
   
   /** Contact information for the buyer. */
-  var buyerContacts: js.UndefOr[js.Array[ContactInformation]] = js.native
+  var buyerContacts: js.UndefOr[js.Array[ContactInformation]] = js.undefined
   
   /** Private data for buyer. (hidden from seller). */
-  var buyerPrivateData: js.UndefOr[PrivateData] = js.native
+  var buyerPrivateData: js.UndefOr[PrivateData] = js.undefined
   
   /** The deals associated with this proposal. For Private Auction proposals (whose deals have NonGuaranteedAuctionTerms), there will only be one deal. */
-  var deals: js.UndefOr[js.Array[Deal]] = js.native
+  var deals: js.UndefOr[js.Array[Deal]] = js.undefined
   
   /** The name for the proposal. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Output only. True if the proposal is being renegotiated. */
-  var isRenegotiating: js.UndefOr[Boolean] = js.native
+  var isRenegotiating: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. True, if the buyside inventory setup is complete for this proposal. */
-  var isSetupComplete: js.UndefOr[Boolean] = js.native
+  var isSetupComplete: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. The role of the last user that either updated the proposal or left a comment. */
-  var lastUpdaterOrCommentorRole: js.UndefOr[String] = js.native
+  var lastUpdaterOrCommentorRole: js.UndefOr[String] = js.undefined
   
   /** Output only. The notes associated with this proposal. */
-  var notes: js.UndefOr[js.Array[Note]] = js.native
+  var notes: js.UndefOr[js.Array[Note]] = js.undefined
   
   /** Output only. Indicates whether the buyer/seller created the proposal. */
-  var originatorRole: js.UndefOr[String] = js.native
+  var originatorRole: js.UndefOr[String] = js.undefined
   
   /** Output only. Private auction ID if this proposal is a private auction proposal. */
-  var privateAuctionId: js.UndefOr[String] = js.native
+  var privateAuctionId: js.UndefOr[String] = js.undefined
   
   /** Output only. The unique ID of the proposal. */
-  var proposalId: js.UndefOr[String] = js.native
+  var proposalId: js.UndefOr[String] = js.undefined
   
   /**
     * Output only. The revision number for the proposal. Each update to the proposal or the deal causes the proposal revision number to auto-increment. The buyer keeps track of the last
     * revision number they know of and pass it in when making an update. If the head revision number on the server has since incremented, then an ABORTED error is returned during the
     * update operation to let the buyer know that a subsequent update was made.
     */
-  var proposalRevision: js.UndefOr[String] = js.native
+  var proposalRevision: js.UndefOr[String] = js.undefined
   
   /** Output only. The current state of the proposal. */
-  var proposalState: js.UndefOr[String] = js.native
+  var proposalState: js.UndefOr[String] = js.undefined
   
   /** Reference to the seller on the proposal. Note: This field may be set only when creating the resource. Modifying this field while updating the resource will result in an error. */
-  var seller: js.UndefOr[Seller] = js.native
+  var seller: js.UndefOr[Seller] = js.undefined
   
   /** Output only. Contact information for the seller. */
-  var sellerContacts: js.UndefOr[js.Array[ContactInformation]] = js.native
+  var sellerContacts: js.UndefOr[js.Array[ContactInformation]] = js.undefined
   
   /** Output only. The time when the proposal was last revised. */
-  var updateTime: js.UndefOr[String] = js.native
+  var updateTime: js.UndefOr[String] = js.undefined
 }
 object Proposal {
   

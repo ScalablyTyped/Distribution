@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/translate/v2", "translate_v2.Resource$Detections")
@@ -30,7 +29,7 @@ class ResourceDetections protected () extends StObject {
     */
   def detect(): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def detect(callback: BodyResponseCallback[SchemaDetectionsListResponse]): Unit = js.native
-  def detect(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDetectionsListResponse] = js.native
+  def detect(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def detect(params: ParamsResourceDetectionsDetect): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def detect(
     params: ParamsResourceDetectionsDetect,
@@ -62,7 +61,7 @@ class ResourceDetections protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaDetectionsListResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaDetectionsListResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def list(params: ParamsResourceDetectionsList): GaxiosPromise[SchemaDetectionsListResponse] = js.native
   def list(params: ParamsResourceDetectionsList, callback: BodyResponseCallback[SchemaDetectionsListResponse]): Unit = js.native
   def list(

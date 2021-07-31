@@ -11,7 +11,7 @@ A parser and formatter for DSV (CSV and TSV) files.
 | Keywords           | dsv, csv, tsv |
 | # releases         | 0 |
 | # dependents       | 13 |
-| # downloads        | 19392 |
+| # downloads        | 22657 |
 | # stars            | 0 |
 
 ## Links

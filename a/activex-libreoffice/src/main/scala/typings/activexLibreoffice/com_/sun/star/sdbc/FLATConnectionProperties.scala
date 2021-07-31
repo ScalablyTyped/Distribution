@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.sdbc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,26 +14,27 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.sdbc.XDriverManager
   * @see com.sun.star.sdbc.FILEConnectionProperties
   */
-@js.native
-trait FLATConnectionProperties extends FILEConnectionProperties {
+trait FLATConnectionProperties
+  extends StObject
+     with FILEConnectionProperties {
   
   /** A one character delimiter to separate the decimal. */
-  var DecimalDelimiter: String = js.native
+  var DecimalDelimiter: String
   
   /** the extension of the files to be used. */
-  var Extension: String = js.native
+  var Extension: String
   
   /** A one character delimiter to separate the fields. */
-  var FieldDelimiter: String = js.native
+  var FieldDelimiter: String
   
   /** `TRUE` when the file contains a header line otherwise `FALSE` */
-  var HeaderLine: Boolean = js.native
+  var HeaderLine: Boolean
   
   /** A one character delimiter to separate the strings. */
-  var StringDelimiter: String = js.native
+  var StringDelimiter: String
   
   /** A one character delimiter to separate the thousands. */
-  var ThousandDelimiter: String = js.native
+  var ThousandDelimiter: String
 }
 object FLATConnectionProperties {
   

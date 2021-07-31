@@ -11,7 +11,6 @@ import typings.watchify.watchifyStrings.time
 import typings.watchify.watchifyStrings.update
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -38,14 +37,13 @@ object mod extends Shortcut {
     def close(): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * The amount of time in milliseconds to wait before emitting an "update" event after a change.
       * @default 100
       */
-    var delay: js.UndefOr[Double] = js.native
+    var delay: js.UndefOr[Double] = js.undefined
     
     /**
       * Ignores monitoring files for changes. If set to `true`, then ** /node_modules/ ** will be ignored.
@@ -53,8 +51,8 @@ object mod extends Shortcut {
       * Also see anymatch package: https://github.com/es128/anymatch#usage
       */
     var ignoreWatch: js.UndefOr[
-        Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ _, Boolean])])
-      ] = js.native
+        Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean])])
+      ] = js.undefined
     
     /**
       * Enables polling to monitor for changes. If set to `true`, then a polling interval of 100 ms is used.
@@ -63,7 +61,7 @@ object mod extends Shortcut {
       * This option is useful if you're watching an NFS volume
       * Also see chokidar package: https://github.com/paulmillr/chokidar#path-filtering
       */
-    var poll: js.UndefOr[Boolean | Double] = js.native
+    var poll: js.UndefOr[Boolean | Double] = js.undefined
   }
   object Options {
     
@@ -84,7 +82,7 @@ object mod extends Shortcut {
       
       @scala.inline
       def setIgnoreWatch(
-        value: Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ _, Boolean])])
+        value: Boolean | String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]) | (js.Array[String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean])])
       ): Self = StObject.set(x, "ignoreWatch", value.asInstanceOf[js.Any])
       
       @scala.inline
@@ -94,7 +92,7 @@ object mod extends Shortcut {
       def setIgnoreWatchUndefined: Self = StObject.set(x, "ignoreWatch", js.undefined)
       
       @scala.inline
-      def setIgnoreWatchVarargs(value: (String | RegExp | (js.Function1[js.Any, Boolean]))*): Self = StObject.set(x, "ignoreWatch", js.Array(value :_*))
+      def setIgnoreWatchVarargs(value: (String | RegExp | (js.Function1[/* repeated */ js.Any, Boolean]))*): Self = StObject.set(x, "ignoreWatch", js.Array(value :_*))
       
       @scala.inline
       def setPoll(value: Boolean | Double): Self = StObject.set(x, "poll", value.asInstanceOf[js.Any])
@@ -113,13 +111,15 @@ object mod extends Shortcut {
   object browserifyAugmentingMod {
     
     @js.native
-    trait BrowserifyObject extends EventEmitter {
+    trait BrowserifyObject
+      extends StObject
+         with EventEmitter {
       
       /**
         * When a bundle is generated, this event fires with the number of bytes
         */
       @JSName("on")
-      def on_bytes(event: bytes, listener: js.Function1[/* bytes */ Double, _]): this.type = js.native
+      def on_bytes(event: bytes, listener: js.Function1[/* bytes */ Double, js.Any]): this.type = js.native
       /**
         * This event fires after a bundle was created with messages of the form:
         * ```text
@@ -128,17 +128,17 @@ object mod extends Shortcut {
         * with the number of bytes in the bundle X and the time in seconds Y.
         */
       @JSName("on")
-      def on_log(event: log, listener: js.Function1[/* msg */ String, _]): this.type = js.native
+      def on_log(event: log, listener: js.Function1[/* msg */ String, js.Any]): this.type = js.native
       /**
         * When a bundle is generated, this event fires with the time it took to create the bundle in milliseconds.
         */
       @JSName("on")
-      def on_time(event: time, listener: js.Function1[/* time */ Double, _]): this.type = js.native
+      def on_time(event: time, listener: js.Function1[/* time */ Double, js.Any]): this.type = js.native
       /**
         * When the bundle changes, emit the array of bundle ids that changed.
         */
       @JSName("on")
-      def on_update(event: update, listener: js.Function1[/* ids */ js.Array[String], _]): this.type = js.native
+      def on_update(event: update, listener: js.Function1[/* ids */ js.Array[String], js.Any]): this.type = js.native
     }
   }
 }

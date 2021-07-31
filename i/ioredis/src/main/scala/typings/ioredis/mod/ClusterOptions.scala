@@ -4,39 +4,37 @@ import typings.node.NodeJS.ErrnoException
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterOptions extends StObject {
   
-  var clusterRetryStrategy: js.UndefOr[js.Function2[/* times */ Double, /* reason */ js.UndefOr[Error], Double | Null]] = js.native
+  var clusterRetryStrategy: js.UndefOr[js.Function2[/* times */ Double, /* reason */ js.UndefOr[Error], Double | Null]] = js.undefined
   
-  var dnsLookup: js.UndefOr[DNSLookupFunction] = js.native
+  var dnsLookup: js.UndefOr[DNSLookupFunction] = js.undefined
   
-  var enableOfflineQueue: js.UndefOr[Boolean] = js.native
+  var enableOfflineQueue: js.UndefOr[Boolean] = js.undefined
   
-  var enableReadyCheck: js.UndefOr[Boolean] = js.native
+  var enableReadyCheck: js.UndefOr[Boolean] = js.undefined
   
-  var lazyConnect: js.UndefOr[Boolean] = js.native
+  var lazyConnect: js.UndefOr[Boolean] = js.undefined
   
-  var maxRedirections: js.UndefOr[Double] = js.native
+  var maxRedirections: js.UndefOr[Double] = js.undefined
   
-  var natMap: js.UndefOr[NatMap] = js.native
+  var natMap: js.UndefOr[NatMap] = js.undefined
   
-  var redisOptions: js.UndefOr[RedisOptions] = js.native
+  var redisOptions: js.UndefOr[RedisOptions] = js.undefined
   
-  var retryDelayOnClusterDown: js.UndefOr[Double] = js.native
+  var retryDelayOnClusterDown: js.UndefOr[Double] = js.undefined
   
-  var retryDelayOnFailover: js.UndefOr[Double] = js.native
+  var retryDelayOnFailover: js.UndefOr[Double] = js.undefined
   
-  var retryDelayOnTryAgain: js.UndefOr[Double] = js.native
+  var retryDelayOnTryAgain: js.UndefOr[Double] = js.undefined
   
-  var scaleReads: js.UndefOr[String] = js.native
+  var scaleReads: js.UndefOr[String] = js.undefined
   
-  var slotsRefreshInterval: js.UndefOr[Double] = js.native
+  var slotsRefreshInterval: js.UndefOr[Double] = js.undefined
   
-  var slotsRefreshTimeout: js.UndefOr[Double] = js.native
+  var slotsRefreshTimeout: js.UndefOr[Double] = js.undefined
 }
 object ClusterOptions {
   

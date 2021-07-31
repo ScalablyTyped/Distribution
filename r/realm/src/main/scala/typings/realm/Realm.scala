@@ -56,7 +56,6 @@ import typings.std.Record
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -119,10 +118,10 @@ trait Realm extends StObject {
     * @param  {Realm.UpdateMode} mode? If not provided, `Realm.UpdateMode.Never` is used.
     * @returns T & Realm.Object
     */
-  def create[T](`type`: String, properties: RealmInsertionModel[T]): T with Object = js.native
-  def create[T](`type`: String, properties: RealmInsertionModel[T], mode: Never): T with Object = js.native
-  def create[T](`type`: String, properties: Partial[RealmInsertionModel[T] | T], mode: All): T with Object = js.native
-  def create[T](`type`: String, properties: Partial[RealmInsertionModel[T] | T], mode: Modified): T with Object = js.native
+  def create[T](`type`: String, properties: RealmInsertionModel[T]): T & Object = js.native
+  def create[T](`type`: String, properties: RealmInsertionModel[T], mode: Never): T & Object = js.native
+  def create[T](`type`: String, properties: Partial[RealmInsertionModel[T] | T], mode: All): T & Object = js.native
+  def create[T](`type`: String, properties: Partial[RealmInsertionModel[T] | T], mode: Modified): T & Object = js.native
   /**
     * @param  {Class} type
     * @param  {T} properties
@@ -136,13 +135,13 @@ trait Realm extends StObject {
   
   def delete(`object`: js.Any): Unit = js.native
   def delete(`object`: js.Array[Object]): Unit = js.native
-  def delete(`object`: List[_]): Unit = js.native
+  def delete(`object`: List[js.Any]): Unit = js.native
   /**
     * @param  {Realm.Object|Realm.Object[]|Realm.List<any>|Realm.Results<any>|any} object
     * @returns void
     */
   def delete(`object`: Object): Unit = js.native
-  def delete(`object`: Results[_]): Unit = js.native
+  def delete(`object`: Results[js.Any]): Unit = js.native
   
   /**
     * @returns void
@@ -160,17 +159,17 @@ trait Realm extends StObject {
   
   val isInTransaction: Boolean = js.native
   
-  def objectForPrimaryKey[T](`type`: String, key: String): js.UndefOr[T with Object] = js.native
+  def objectForPrimaryKey[T](`type`: String, key: String): js.UndefOr[T & Object] = js.native
   def objectForPrimaryKey[T](
     `type`: String,
     key: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Realm.ObjectId */ js.Any
-  ): js.UndefOr[T with Object] = js.native
+  ): js.UndefOr[T & Object] = js.native
   /**
     * @param  {string} type
     * @param  {number|string|ObjectId} key
     * @returns {T | undefined}
     */
-  def objectForPrimaryKey[T](`type`: String, key: Double): js.UndefOr[T with Object] = js.native
+  def objectForPrimaryKey[T](`type`: String, key: Double): js.UndefOr[T & Object] = js.native
   def objectForPrimaryKey[T /* <: Object */](`type`: Instantiable[T], key: String): js.UndefOr[T] = js.native
   def objectForPrimaryKey[T /* <: Object */](
     `type`: Instantiable[T],
@@ -187,7 +186,7 @@ trait Realm extends StObject {
     * @param  {string} type
     * @returns Realm.Results<T & Realm.Object>
     */
-  def objects[T](`type`: String): Results[T with Object] = js.native
+  def objects[T](`type`: String): Results[T & Object] = js.native
   /**
     * @param  {Class} type
     * @returns Realm.Results<T>
@@ -250,47 +249,46 @@ object Realm {
   /**
     * A MongoDB Realm App.
     */
-  @js.native
   trait App[FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] extends StObject {
     
     /**
       * All authenticated users.
       */
-    val allUsers: Record[String, User[FunctionsFactoryType, CustomDataType]] = js.native
+    val allUsers: Record[String, User[FunctionsFactoryType, CustomDataType]]
     
     /**
       * The last user to log in or being switched to.
       */
-    val currentUser: (User[FunctionsFactoryType, CustomDataType]) | Null = js.native
+    val currentUser: (User[FunctionsFactoryType, CustomDataType]) | Null
     
     /**
       * Perform operations related to the email/password auth provider.
       */
-    var emailPasswordAuth: EmailPasswordAuth = js.native
+    var emailPasswordAuth: EmailPasswordAuth
     
     /**
       * The id of this Realm app.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Log in a user using a specific credential
       *
       * @param credentials the credentials to use when logging in
       */
-    def logIn(credentials: Credentials[js.Object]): js.Promise[User[FunctionsFactoryType, CustomDataType]] = js.native
+    def logIn(credentials: Credentials[js.Object]): js.Promise[User[FunctionsFactoryType, CustomDataType]]
     
     /**
       * Logs out and removes a user from the app.
       *
       * @returns A promise that resolves once the user has been logged out and removed from the app.
       */
-    def removeUser(user: User[FunctionsFactoryType, CustomDataType]): js.Promise[Unit] = js.native
+    def removeUser(user: User[FunctionsFactoryType, CustomDataType]): js.Promise[Unit]
     
     /**
       * Switch current user, from an instance of `User` or the string id of the user.
       */
-    def switchUser(user: User[FunctionsFactoryType, CustomDataType]): Unit = js.native
+    def switchUser(user: User[FunctionsFactoryType, CustomDataType]): Unit
   }
   object App {
     
@@ -303,7 +301,7 @@ object Realm {
       removeUser: User[FunctionsFactoryType, CustomDataType] => js.Promise[Unit],
       switchUser: User[FunctionsFactoryType, CustomDataType] => Unit
     ): App[FunctionsFactoryType, CustomDataType] = {
-      val __obj = js.Dynamic.literal(allUsers = allUsers.asInstanceOf[js.Any], emailPasswordAuth = emailPasswordAuth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], logIn = js.Any.fromFunction1(logIn), removeUser = js.Any.fromFunction1(removeUser), switchUser = js.Any.fromFunction1(switchUser))
+      val __obj = js.Dynamic.literal(allUsers = allUsers.asInstanceOf[js.Any], emailPasswordAuth = emailPasswordAuth.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], logIn = js.Any.fromFunction1(logIn), removeUser = js.Any.fromFunction1(removeUser), switchUser = js.Any.fromFunction1(switchUser), currentUser = null)
       __obj.asInstanceOf[App[FunctionsFactoryType, CustomDataType]]
     }
     
@@ -316,42 +314,59 @@ object Realm {
       object NumericLogLevel extends StObject {
         
         @js.native
-        sealed trait All extends NumericLogLevel
+        sealed trait All
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Debug extends NumericLogLevel
+        sealed trait Debug
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Detail extends NumericLogLevel
+        sealed trait Detail
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Error extends NumericLogLevel
+        sealed trait Error
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Fatal extends NumericLogLevel
+        sealed trait Fatal
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Info extends NumericLogLevel
+        sealed trait Info
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Off extends NumericLogLevel
+        sealed trait Off
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Trace extends NumericLogLevel
+        sealed trait Trace
+          extends StObject
+             with NumericLogLevel
         
         @js.native
-        sealed trait Warn extends NumericLogLevel
+        sealed trait Warn
+          extends StObject
+             with NumericLogLevel
       }
       
       /**
         * AuthError
         */
-      @js.native
       trait AuthError extends StObject {
         
-        val code: Double = js.native
+        val code: Double
         
-        val `type`: String = js.native
+        val `type`: String
       }
       object AuthError {
         
@@ -446,12 +461,12 @@ object Realm {
         
         val url: String = js.native
         
-        val user: User[DefaultFunctionsFactory, _] = js.native
+        val user: User[DefaultFunctionsFactory, js.Any] = js.native
       }
     }
     
     @scala.inline
-    implicit class AppMutableBuilder[Self <: App[_, _], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] (val x: Self with (App[FunctionsFactoryType, CustomDataType])) extends AnyVal {
+    implicit class AppMutableBuilder[Self <: App[?, ?], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] (val x: Self & (App[FunctionsFactoryType, CustomDataType])) extends AnyVal {
       
       @scala.inline
       def setAllUsers(value: Record[String, User[FunctionsFactoryType, CustomDataType]]): Self = StObject.set(x, "allUsers", value.asInstanceOf[js.Any])
@@ -486,13 +501,19 @@ object Realm {
   object ConnectionState extends StObject {
     
     @js.native
-    sealed trait Connected extends ConnectionState
+    sealed trait Connected
+      extends StObject
+         with ConnectionState
     
     @js.native
-    sealed trait Connecting extends ConnectionState
+    sealed trait Connecting
+      extends StObject
+         with ConnectionState
     
     @js.native
-    sealed trait Disconnected extends ConnectionState
+    sealed trait Disconnected
+      extends StObject
+         with ConnectionState
   }
   
   @js.native
@@ -502,13 +523,19 @@ object Realm {
   object UpdateMode extends StObject {
     
     @js.native
-    sealed trait All extends UpdateMode
+    sealed trait All
+      extends StObject
+         with UpdateMode
     
     @js.native
-    sealed trait Modified extends UpdateMode
+    sealed trait Modified
+      extends StObject
+         with UpdateMode
     
     @js.native
-    sealed trait Never extends UpdateMode
+    sealed trait Never
+      extends StObject
+         with UpdateMode
   }
   
   @js.native
@@ -522,15 +549,21 @@ object Realm {
     
     /** Authenticated and available to communicate with services. */
     @js.native
-    sealed trait Active extends UserState
+    sealed trait Active
+      extends StObject
+         with UserState
     
     /** Logged out, but ready to be logged in. */
     @js.native
-    sealed trait LoggedOut extends UserState
+    sealed trait LoggedOut
+      extends StObject
+         with UserState
     
     /** Removed from the app entirely. */
     @js.native
-    sealed trait Removed extends UserState
+    sealed trait Removed
+      extends StObject
+         with UserState
   }
   
   @js.native
@@ -544,34 +577,37 @@ object Realm {
     
     /** A normal end-user created this user */
     @js.native
-    sealed trait Normal extends UserType
+    sealed trait Normal
+      extends StObject
+         with UserType
     
     /** The user was created by the server */
     @js.native
-    sealed trait Server extends UserType
+    sealed trait Server
+      extends StObject
+         with UserType
   }
   
   /**
     * Pass an object implementing this interface to the app constructor.
     */
-  @js.native
   trait AppConfiguration extends StObject {
     
     /**
       * This describes the local app, sent to the server when a user authenticates.
       * Specifying this will enable the server to respond differently to specific versions of specific apps.
       */
-    var app: js.UndefOr[LocalAppConfiguration] = js.native
+    var app: js.UndefOr[LocalAppConfiguration] = js.undefined
     
     /**
       * An optional URL to use as a prefix when requesting the MongoDB Realm services.
       */
-    var baseUrl: js.UndefOr[String] = js.native
+    var baseUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The Realm App ID
       */
-    var id: String = js.native
+    var id: String
   }
   object AppConfiguration {
     
@@ -606,28 +642,27 @@ object Realm {
     /**
       * The representation of an API-key stored in the service.
       */
-    @js.native
     trait ApiKey extends StObject {
       
       /**
         * The internal identifier of the key.
         */
-      var _id: String = js.native
+      var _id: String
       
       /**
         * When disabled, the key cannot authenticate.
         */
-      var disabled: Boolean = js.native
+      var disabled: Boolean
       
       /**
         * The secret part of the key.
         */
-      var key: String = js.native
+      var key: String
       
       /**
         * A name for the key.
         */
-      var name: String = js.native
+      var name: String
     }
     object ApiKey {
       
@@ -657,7 +692,6 @@ object Realm {
     /**
       * Authentication provider where users identify using an API-key.
       */
-    @js.native
     trait ApiKeyAuth extends StObject {
       
       /**
@@ -665,40 +699,40 @@ object Realm {
         *
         * @param name the name of the API key to be created.
         */
-      def create(name: String): js.Promise[ApiKey] = js.native
+      def create(name: String): js.Promise[ApiKey]
       
       /**
         * Deletes an API key associated with the current user.
         *
         * @param keyId the id of the API key to delete
         */
-      def delete(keyId: String): js.Promise[Unit] = js.native
+      def delete(keyId: String): js.Promise[Unit]
       
       /**
         * Disable an API key associated with the current user.
         *
         * @param keyId the id of the API key to disable
         */
-      def disable(keyId: String): js.Promise[Unit] = js.native
+      def disable(keyId: String): js.Promise[Unit]
       
       /**
         * Enables an API key associated with the current user.
         *
         * @param keyId the id of the API key to enable
         */
-      def enable(keyId: String): js.Promise[Unit] = js.native
+      def enable(keyId: String): js.Promise[Unit]
       
       /**
         * Fetches an API key associated with the current user.
         *
         * @param keyId the id of the API key to fetch.
         */
-      def fetch(keyId: String): js.Promise[ApiKey] = js.native
+      def fetch(keyId: String): js.Promise[ApiKey]
       
       /**
         * Fetches the API keys associated with the current user.
         */
-      def fetchAll(): js.Promise[js.Array[ApiKey]] = js.native
+      def fetchAll(): js.Promise[js.Array[ApiKey]]
     }
     object ApiKeyAuth {
       
@@ -741,7 +775,6 @@ object Realm {
     /**
       * Authentication provider where users identify using email and password.
       */
-    @js.native
     trait EmailPasswordAuth extends StObject {
       
       /**
@@ -751,7 +784,7 @@ object Realm {
         * @param password the new password.
         * @param args one or more arguments to pass to the function.
         */
-      def callResetPasswordFunction(email: String, password: String, args: js.Any*): js.Promise[Unit] = js.native
+      def callResetPasswordFunction(email: String, password: String, args: js.Any*): js.Promise[Unit]
       
       /**
         * Confirm a user by the token received.
@@ -759,7 +792,7 @@ object Realm {
         * @param token the token received.
         * @param tokenId the id of the token received.
         */
-      def confirmUser(token: String, tokenId: String): js.Promise[Unit] = js.native
+      def confirmUser(token: String, tokenId: String): js.Promise[Unit]
       
       /**
         * Register a new user.
@@ -767,14 +800,14 @@ object Realm {
         * @param email The new users email.
         * @param password the new users passsword.
         */
-      def registerUser(email: String, password: String): js.Promise[Unit] = js.native
+      def registerUser(email: String, password: String): js.Promise[Unit]
       
       /**
         * Resend the confirmation email.
         *
         * @param email the email associated to resend the confirmation to.
         */
-      def resendConfirmationEmail(email: String): js.Promise[Unit] = js.native
+      def resendConfirmationEmail(email: String): js.Promise[Unit]
       
       /**
         * Complete resetting the password
@@ -783,14 +816,14 @@ object Realm {
         * @param tokenId the id of the token received.
         * @param password the new password.
         */
-      def resetPassword(token: String, tokenId: String, password: String): js.Promise[Unit] = js.native
+      def resetPassword(token: String, tokenId: String, password: String): js.Promise[Unit]
       
       /**
         * Send an email with tokens to reset the password.
         *
         * @param email the email to send the tokens to.
         */
-      def sendResetPasswordEmail(email: String): js.Promise[Unit] = js.native
+      def sendResetPasswordEmail(email: String): js.Promise[Unit]
     }
     object EmailPasswordAuth {
       
@@ -834,14 +867,13 @@ object Realm {
   /**
     * An object with interfaces to all possible authentication providers the app might have.
     */
-  @js.native
   trait AuthProviders extends StObject {
     
     /** Authentication provider where users identify using an API-key. */
-    var apiKey: ApiKeyAuth = js.native
+    var apiKey: ApiKeyAuth
     
     /** Authentication provider where users identify using email and password. */
-    var emailPassword: EmailPasswordAuth = js.native
+    var emailPassword: EmailPasswordAuth
   }
   object AuthProviders {
     
@@ -865,7 +897,6 @@ object Realm {
   /**
     * A collection of functions as defined on the MongoDB Server.
     */
-  @js.native
   trait BaseFunctionsFactory extends StObject {
     
     /**
@@ -875,7 +906,7 @@ object Realm {
       * @param name Name of the function.
       * @param args Arguments passed to the function.
       */
-    def callFunction(name: String, args: js.Any*): js.Promise[_] = js.native
+    def callFunction(name: String, args: js.Any*): js.Promise[js.Any]
     
     /**
       * Call a remote MongoDB Realm function by its name, in a streaming mode.
@@ -884,13 +915,13 @@ object Realm {
       * @param name Name of the function.
       * @param args Arguments passed to the function.
       */
-    def callFunctionStreaming(name: String, args: js.Any*): js.Promise[AsyncIterable[Uint8Array]] = js.native
+    def callFunctionStreaming(name: String, args: js.Any*): js.Promise[AsyncIterable[Uint8Array]]
   }
   object BaseFunctionsFactory {
     
     @scala.inline
     def apply(
-      callFunction: (String, /* repeated */ js.Any) => js.Promise[_],
+      callFunction: (String, /* repeated */ js.Any) => js.Promise[js.Any],
       callFunctionStreaming: (String, /* repeated */ js.Any) => js.Promise[AsyncIterable[Uint8Array]]
     ): BaseFunctionsFactory = {
       val __obj = js.Dynamic.literal(callFunction = js.Any.fromFunction2(callFunction), callFunctionStreaming = js.Any.fromFunction2(callFunctionStreaming))
@@ -901,7 +932,7 @@ object Realm {
     implicit class BaseFunctionsFactoryMutableBuilder[Self <: BaseFunctionsFactory] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[_]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
+      def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCallFunctionStreaming(value: (String, /* repeated */ js.Any) => js.Promise[AsyncIterable[Uint8Array]]): Self = StObject.set(x, "callFunctionStreaming", js.Any.fromFunction2(value))
@@ -913,7 +944,9 @@ object Realm {
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Collection.html }
     */
   @js.native
-  trait Collection[T] extends ReadonlyArray[T] {
+  trait Collection[T]
+    extends StObject
+       with ReadonlyArray[T] {
     
     /**
       * @param  {(collection:any,changes:any)=>void} callback
@@ -979,23 +1012,22 @@ object Realm {
     /**
       * @returns An object for JSON serialization.
       */
-    def toJSON(): js.Array[_] = js.native
+    def toJSON(): js.Array[js.Any] = js.native
     
     val `type`: PropertyType = js.native
   }
   
   type CollectionChangeCallback[T] = js.Function2[/* collection */ Collection[T], /* changes */ CollectionChangeSet, Unit]
   
-  @js.native
   trait CollectionChangeSet extends StObject {
     
-    var deletions: js.Array[Double] = js.native
+    var deletions: js.Array[Double]
     
-    var insertions: js.Array[Double] = js.native
+    var insertions: js.Array[Double]
     
-    var newModifications: js.Array[Double] = js.native
+    var newModifications: js.Array[Double]
     
-    var oldModifications: js.Array[Double] = js.native
+    var oldModifications: js.Array[Double]
   }
   object CollectionChangeSet {
     
@@ -1043,32 +1075,31 @@ object Realm {
     * realm configuration
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~Configuration }
     */
-  @js.native
   trait Configuration extends StObject {
     
-    var deleteRealmIfMigrationNeeded: js.UndefOr[Boolean] = js.native
+    var deleteRealmIfMigrationNeeded: js.UndefOr[Boolean] = js.undefined
     
-    var disableFormatUpgrade: js.UndefOr[Boolean] = js.native
+    var disableFormatUpgrade: js.UndefOr[Boolean] = js.undefined
     
-    var encryptionKey: js.UndefOr[ArrayBuffer | ArrayBufferView | Int8Array] = js.native
+    var encryptionKey: js.UndefOr[ArrayBuffer | ArrayBufferView | Int8Array] = js.undefined
     
-    var fifoFilesFallbackPath: js.UndefOr[String] = js.native
+    var fifoFilesFallbackPath: js.UndefOr[String] = js.undefined
     
-    var inMemory: js.UndefOr[Boolean] = js.native
+    var inMemory: js.UndefOr[Boolean] = js.undefined
     
-    var migration: js.UndefOr[MigrationCallback] = js.native
+    var migration: js.UndefOr[MigrationCallback] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var schema: js.UndefOr[js.Array[ObjectClass | ObjectSchema]] = js.native
+    var schema: js.UndefOr[js.Array[ObjectClass | ObjectSchema]] = js.undefined
     
-    var schemaVersion: js.UndefOr[Double] = js.native
+    var schemaVersion: js.UndefOr[Double] = js.undefined
     
-    var shouldCompactOnLaunch: js.UndefOr[js.Function2[/* totalBytes */ Double, /* usedBytes */ Double, Boolean]] = js.native
+    var shouldCompactOnLaunch: js.UndefOr[js.Function2[/* totalBytes */ Double, /* usedBytes */ Double, Boolean]] = js.undefined
     
-    var sync: js.UndefOr[SyncConfiguration] = js.native
+    var sync: js.UndefOr[SyncConfiguration] = js.undefined
   }
   object Configuration {
     
@@ -1164,23 +1195,22 @@ object Realm {
   /**
     * End-users enter credentials to authenticate toward your MongoDB Realm App.
     */
-  @js.native
   trait Credentials[PayloadType /* <: js.Object */] extends StObject {
     
     /**
       * A simple object which can be passed to the server as the body of a request to authenticate.
       */
-    val payload: PayloadType = js.native
+    val payload: PayloadType
     
     /**
       * Name of the authentication provider.
       */
-    val providerName: String = js.native
+    val providerName: String
     
     /**
       * Type of the authentication provider.
       */
-    val providerType: String = js.native
+    val providerType: String
   }
   object Credentials {
     
@@ -1198,13 +1228,12 @@ object Realm {
     /**
       * Payload sent when authenticating using the [API Key Provider](https://docs.mongodb.com/realm/authentication/api-key/).
       */
-    @js.native
     trait ApiKeyPayload extends StObject {
       
       /**
         * The secret content of the API key.
         */
-      var key: String = js.native
+      var key: String
     }
     object ApiKeyPayload {
       
@@ -1225,13 +1254,12 @@ object Realm {
     /**
       * Payload sent when authenticating using the [Apple ID Provider](https://docs.mongodb.com/realm/authentication/apple/).
       */
-    @js.native
     trait ApplePayload extends StObject {
       
       /**
         * The ID token from Apple.
         */
-      var id_token: String = js.native
+      var id_token: String
     }
     object ApplePayload {
       
@@ -1250,7 +1278,7 @@ object Realm {
     }
     
     @scala.inline
-    implicit class CredentialsMutableBuilder[Self <: Credentials[_], PayloadType /* <: js.Object */] (val x: Self with Credentials[PayloadType]) extends AnyVal {
+    implicit class CredentialsMutableBuilder[Self <: Credentials[?], PayloadType /* <: js.Object */] (val x: Self & Credentials[PayloadType]) extends AnyVal {
       
       @scala.inline
       def setPayload(value: PayloadType): Self = StObject.set(x, "payload", value.asInstanceOf[js.Any])
@@ -1265,19 +1293,18 @@ object Realm {
     /**
       * Payload sent when authenticating using the [Email/Password Provider](https://docs.mongodb.com/realm/authentication/email-password/).
       */
-    @js.native
     trait EmailPasswordPayload extends StObject {
       
       /**
         * The end-users password.
         */
-      var password: String = js.native
+      var password: String
       
       /**
         * The end-users username.
         * Note: This currently has to be an email.
         */
-      var username: String = js.native
+      var username: String
     }
     object EmailPasswordPayload {
       
@@ -1301,13 +1328,12 @@ object Realm {
     /**
       * Payload sent when authenticating using the [Google Provider](https://docs.mongodb.com/realm/authentication/google/).
       */
-    @js.native
     trait FacebookPayload extends StObject {
       
       /**
         * The auth code returned from Google.
         */
-      var accessToken: String = js.native
+      var accessToken: String
     }
     object FacebookPayload {
       
@@ -1333,13 +1359,12 @@ object Realm {
     /**
       * Payload sent when authenticating using the [Google Provider](https://docs.mongodb.com/realm/authentication/google/).
       */
-    @js.native
     trait GooglePayload extends StObject {
       
       /**
         * The auth code returned from Google.
         */
-      var authCode: String = js.native
+      var authCode: String
     }
     object GooglePayload {
       
@@ -1360,13 +1385,12 @@ object Realm {
     /**
       * Payload sent when authenticating using the [Custom JWT Provider](https://docs.mongodb.com/realm/authentication/custom-jwt/).
       */
-    @js.native
     trait JWTPayload extends StObject {
       
       /**
         * The JSON Web Token signed by another service.
         */
-      var token: String = js.native
+      var token: String
     }
     object JWTPayload {
       
@@ -1389,13 +1413,12 @@ object Realm {
       * - [Google Provider](https://docs.mongodb.com/realm/authentication/google/).
       * - [Facebook Provider](https://docs.mongodb.com/realm/authentication/facebook/).
       */
-    @js.native
     trait OAuth2RedirectPayload extends StObject {
       
       /**
         * The auth code returned from Google.
         */
-      var redirectUrl: String = js.native
+      var redirectUrl: String
     }
     object OAuth2RedirectPayload {
       
@@ -1417,18 +1440,18 @@ object Realm {
   /**
     * A collection of functions as defined on the MongoDB Server.
     */
-  @js.native
   trait DefaultFunctionsFactory
-    extends BaseFunctionsFactory
+    extends StObject
+       with BaseFunctionsFactory
        with /**
     * All the functions are accessable as members on this instance.
     */
-  /* name */ StringDictionary[RealmFunction[_, js.Array[_]]]
+  /* name */ StringDictionary[RealmFunction[js.Any, js.Array[js.Any]]]
   object DefaultFunctionsFactory {
     
     @scala.inline
     def apply(
-      callFunction: (String, /* repeated */ js.Any) => js.Promise[_],
+      callFunction: (String, /* repeated */ js.Any) => js.Promise[js.Any],
       callFunctionStreaming: (String, /* repeated */ js.Any) => js.Promise[AsyncIterable[Uint8Array]]
     ): DefaultFunctionsFactory = {
       val __obj = js.Dynamic.literal(callFunction = js.Any.fromFunction2(callFunction), callFunctionStreaming = js.Any.fromFunction2(callFunctionStreaming))
@@ -1443,7 +1466,9 @@ object Realm {
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.List.html }
     */
   @js.native
-  trait List[T] extends Collection[T] {
+  trait List[T]
+    extends StObject
+       with Collection[T] {
     
     def pop(): js.UndefOr[T | Null] = js.native
     
@@ -1465,9 +1490,9 @@ object Realm {
       * @returns T
       */
     def splice(index: Double): js.Array[T] = js.native
-    def splice(index: Double, count: js.UndefOr[scala.Nothing], `object`: js.Any): js.Array[T] = js.native
     def splice(index: Double, count: Double): js.Array[T] = js.native
     def splice(index: Double, count: Double, `object`: js.Any): js.Array[T] = js.native
+    def splice(index: Double, count: Unit, `object`: js.Any): js.Array[T] = js.native
     
     def unshift(`object`: T*): Double = js.native
   }
@@ -1475,19 +1500,18 @@ object Realm {
   /**
     * This describes the local app, sent to the server when a user authenticates.
     */
-  @js.native
   trait LocalAppConfiguration extends StObject {
     
     /**
       * The name / id of the local app.
       * Note: This should be the name or a bundle id of your app, not the MongoDB Realm app.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * The version of the local app.
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object LocalAppConfiguration {
     
@@ -1523,54 +1547,53 @@ object Realm {
     * Object
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Object.html }
     */
-  @js.native
   trait Object extends StObject {
     
-    def _objectId(): String = js.native
+    def _objectId(): String
     
     /**
       * @returns void
       */
-    def addListener(callback: ObjectChangeCallback): Unit = js.native
+    def addListener(callback: ObjectChangeCallback): Unit
     
     /**
       * @returns An array of key/value pairs of the object's properties.
       */
-    def entries(): js.Array[js.Tuple2[String, _]] = js.native
+    def entries(): js.Array[js.Tuple2[String, js.Any]]
     
     /**
       * @returns boolean
       */
-    def isValid(): Boolean = js.native
+    def isValid(): Boolean
     
     /**
       * @returns An array of the names of the object's properties.
       */
-    def keys(): js.Array[String] = js.native
+    def keys(): js.Array[String]
     
     /**
       * @returns Results<T>
       */
-    def linkingObjects[T](objectType: String, property: String): Results[T with Object] = js.native
+    def linkingObjects[T](objectType: String, property: String): Results[T & Object]
     
     /**
       * @returns number
       */
-    def linkingObjectsCount(): Double = js.native
+    def linkingObjectsCount(): Double
     
     /**
       * @returns ObjectSchema
       */
-    def objectSchema(): ObjectSchema = js.native
+    def objectSchema(): ObjectSchema
     
-    def removeAllListeners(): Unit = js.native
+    def removeAllListeners(): Unit
     
-    def removeListener(callback: ObjectChangeCallback): Unit = js.native
+    def removeListener(callback: ObjectChangeCallback): Unit
     
     /**
       * @returns An object for JSON serialization.
       */
-    def toJSON(): js.Any = js.native
+    def toJSON(): js.Any
   }
   object Object {
     
@@ -1578,10 +1601,10 @@ object Realm {
     def apply(
       _objectId: () => String,
       addListener: ObjectChangeCallback => Unit,
-      entries: () => js.Array[js.Tuple2[String, _]],
+      entries: () => js.Array[js.Tuple2[String, js.Any]],
       isValid: () => Boolean,
       keys: () => js.Array[String],
-      linkingObjects: (String, String) => Results[js.Any with Object],
+      linkingObjects: (String, String) => Results[js.Any & Object],
       linkingObjectsCount: () => Double,
       objectSchema: () => ObjectSchema,
       removeAllListeners: () => Unit,
@@ -1599,7 +1622,7 @@ object Realm {
       def setAddListener(value: ObjectChangeCallback => Unit): Self = StObject.set(x, "addListener", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setEntries(value: () => js.Array[js.Tuple2[String, _]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
+      def setEntries(value: () => js.Array[js.Tuple2[String, js.Any]]): Self = StObject.set(x, "entries", js.Any.fromFunction0(value))
       
       @scala.inline
       def setIsValid(value: () => Boolean): Self = StObject.set(x, "isValid", js.Any.fromFunction0(value))
@@ -1608,7 +1631,7 @@ object Realm {
       def setKeys(value: () => js.Array[String]): Self = StObject.set(x, "keys", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setLinkingObjects(value: (String, String) => Results[js.Any with Object]): Self = StObject.set(x, "linkingObjects", js.Any.fromFunction2(value))
+      def setLinkingObjects(value: (String, String) => Results[js.Any & Object]): Self = StObject.set(x, "linkingObjects", js.Any.fromFunction2(value))
       
       @scala.inline
       def setLinkingObjectsCount(value: () => Double): Self = StObject.set(x, "linkingObjectsCount", js.Any.fromFunction0(value))
@@ -1632,12 +1655,11 @@ object Realm {
   
   type ObjectChangeCallback = js.Function2[/* object */ Object, /* changes */ ObjectChangeSet, Unit]
   
-  @js.native
   trait ObjectChangeSet extends StObject {
     
-    var changedProperties: js.Array[String] = js.native
+    var changedProperties: js.Array[String]
     
-    var deleted: Boolean = js.native
+    var deleted: Boolean
   }
   object ObjectChangeSet {
     
@@ -1665,10 +1687,9 @@ object Realm {
     * ObjectClass
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~ObjectClass }
     */
-  @js.native
   trait ObjectClass extends StObject {
     
-    var schema: ObjectSchema = js.native
+    var schema: ObjectSchema
   }
   object ObjectClass {
     
@@ -1697,16 +1718,15 @@ object Realm {
     * ObjectSchema
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~ObjectSchema }
     */
-  @js.native
   trait ObjectSchema extends StObject {
     
-    var embedded: js.UndefOr[Boolean] = js.native
+    var embedded: js.UndefOr[Boolean] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var primaryKey: js.UndefOr[String] = js.native
+    var primaryKey: js.UndefOr[String] = js.undefined
     
-    var properties: PropertiesTypes = js.native
+    var properties: PropertiesTypes
   }
   object ObjectSchema {
     
@@ -1743,22 +1763,21 @@ object Realm {
     * ObjectSchemaProperty
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~ObjectSchemaProperty }
     */
-  @js.native
   trait ObjectSchemaProperty extends StObject {
     
-    var default: js.UndefOr[js.Any] = js.native
+    var default: js.UndefOr[js.Any] = js.undefined
     
-    var indexed: js.UndefOr[Boolean] = js.native
+    var indexed: js.UndefOr[Boolean] = js.undefined
     
-    var mapTo: js.UndefOr[String] = js.native
+    var mapTo: js.UndefOr[String] = js.undefined
     
-    var objectType: js.UndefOr[String] = js.native
+    var objectType: js.UndefOr[String] = js.undefined
     
-    var optional: js.UndefOr[Boolean] = js.native
+    var optional: js.UndefOr[Boolean] = js.undefined
     
-    var property: js.UndefOr[String] = js.native
+    var property: js.UndefOr[String] = js.undefined
     
-    var `type`: PropertyType = js.native
+    var `type`: PropertyType
   }
   object ObjectSchemaProperty {
     
@@ -1817,10 +1836,9 @@ object Realm {
     * ObjectType
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.html#~ObjectType }
     */
-  @js.native
   trait ObjectType extends StObject {
     
-    var `type`: ObjectClass = js.native
+    var `type`: ObjectClass
   }
   object ObjectType {
     
@@ -1839,14 +1857,13 @@ object Realm {
     }
   }
   
-  @js.native
   trait OpenRealmBehaviorConfiguration extends StObject {
     
-    val timeOut: js.UndefOr[Double] = js.native
+    val timeOut: js.UndefOr[Double] = js.undefined
     
-    val timeOutBehavior: js.UndefOr[OpenRealmTimeOutBehavior] = js.native
+    val timeOutBehavior: js.UndefOr[OpenRealmTimeOutBehavior] = js.undefined
     
-    val `type`: OpenRealmBehaviorType = js.native
+    val `type`: OpenRealmBehaviorType
   }
   object OpenRealmBehaviorConfiguration {
     
@@ -1906,32 +1923,31 @@ object Realm {
   }
   
   /* Inlined parent std.Partial<realm.Realm.Configuration> */
-  @js.native
   trait PartialConfiguration extends StObject {
     
-    var deleteRealmIfMigrationNeeded: js.UndefOr[Boolean] = js.native
+    var deleteRealmIfMigrationNeeded: js.UndefOr[Boolean] = js.undefined
     
-    var disableFormatUpgrade: js.UndefOr[Boolean] = js.native
+    var disableFormatUpgrade: js.UndefOr[Boolean] = js.undefined
     
-    var encryptionKey: js.UndefOr[ArrayBuffer | ArrayBufferView | Int8Array] = js.native
+    var encryptionKey: js.UndefOr[ArrayBuffer | ArrayBufferView | Int8Array] = js.undefined
     
-    var fifoFilesFallbackPath: js.UndefOr[String] = js.native
+    var fifoFilesFallbackPath: js.UndefOr[String] = js.undefined
     
-    var inMemory: js.UndefOr[Boolean] = js.native
+    var inMemory: js.UndefOr[Boolean] = js.undefined
     
-    var migration: js.UndefOr[MigrationCallback] = js.native
+    var migration: js.UndefOr[MigrationCallback] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var readOnly: js.UndefOr[Boolean] = js.native
+    var readOnly: js.UndefOr[Boolean] = js.undefined
     
-    var schema: js.UndefOr[js.Array[ObjectClass | ObjectSchema]] = js.native
+    var schema: js.UndefOr[js.Array[ObjectClass | ObjectSchema]] = js.undefined
     
-    var schemaVersion: js.UndefOr[Double] = js.native
+    var schemaVersion: js.UndefOr[Double] = js.undefined
     
-    var shouldCompactOnLaunch: js.UndefOr[js.Function2[/* totalBytes */ Double, /* usedBytes */ Double, Boolean]] = js.native
+    var shouldCompactOnLaunch: js.UndefOr[js.Function2[/* totalBytes */ Double, /* usedBytes */ Double, Boolean]] = js.undefined
     
-    var sync: js.UndefOr[SyncConfiguration] = js.native
+    var sync: js.UndefOr[SyncConfiguration] = js.undefined
   }
   object PartialConfiguration {
     
@@ -2077,14 +2093,16 @@ object Realm {
   /**
     * A function which executes on the MongoDB Realm platform.
     */
-  type RealmFunction[R, A /* <: js.Array[_] */] = js.Function1[/* args */ A, js.Promise[R]]
+  type RealmFunction[R, A /* <: js.Array[js.Any] */] = js.Function1[/* args */ A, js.Promise[R]]
   
   /**
     * Results
     * @see { @link https://realm.io/docs/javascript/latest/api/Realm.Results.html }
     */
   @js.native
-  trait Results[T] extends Collection[T] {
+  trait Results[T]
+    extends StObject
+       with Collection[T] {
     
     /**
       * Bulk update objects in the collection.
@@ -2184,45 +2202,44 @@ object Realm {
       /**
         * Options to use when sending a request.
         */
-      @js.native
       trait RequestOptions extends StObject {
         
         // TODO: Add a link to its documentation.
         /**
           * A url to request from the service to retrieve the authorization header.
           */
-        var authUrl: js.UndefOr[String] = js.native
+        var authUrl: js.UndefOr[String] = js.undefined
         
         /**
           * String encoded body sent in the request.
           */
-        var body: js.UndefOr[String] = js.native
+        var body: js.UndefOr[String] = js.undefined
         
         /**
           * Cookies used when sending the request.
           */
-        var cookies: js.UndefOr[StringDictionary[String]] = js.native
+        var cookies: js.UndefOr[StringDictionary[String]] = js.undefined
         
         /**
           * Is the body a stringified JSON object? (application/json)
           */
-        var encodeBodyAsJSON: js.UndefOr[Boolean] = js.native
+        var encodeBodyAsJSON: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Should redirects be followed?
           */
-        var followRedirects: js.UndefOr[Boolean] = js.native
+        var followRedirects: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Is the body stringified form? (multipart/form-data)
           */
-        var form: js.UndefOr[Boolean] = js.native
+        var form: js.UndefOr[Boolean] = js.undefined
         
         // TODO: Determine if headers could map to a single string too
         /**
           * Headers used when sending the request.
           */
-        var headers: js.UndefOr[StringDictionary[js.Array[String]]] = js.native
+        var headers: js.UndefOr[StringDictionary[js.Array[String]]] = js.undefined
       }
       object RequestOptions {
         
@@ -2282,33 +2299,32 @@ object Realm {
       /**
         *
         */
-      @js.native
       trait Response extends StObject {
         
         /**
           * A BSON binary representation of the body.
           */
-        var body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Binary */ js.Any = js.native
+        var body: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Binary */ js.Any
         
         /**
           * The length of the content.
           */
-        var contentLength: Double = js.native
+        var contentLength: Double
         
         /**
           * The headers of the response.
           */
-        var headers: StringDictionary[js.Array[String]] = js.native
+        var headers: StringDictionary[js.Array[String]]
         
         /**
           * A text representation of the status.
           */
-        var status: String = js.native
+        var status: String
         
         /**
           * The nummeric status code.
           */
-        var statusCode: Double = js.native
+        var statusCode: Double
       }
       object Response {
         
@@ -2350,7 +2366,6 @@ object Realm {
     /**
       * The MongoDB service can be used to get database and collection objects for interacting with MongoDB data.
       */
-    @js.native
     trait MongoDB extends StObject {
       
       /**
@@ -2359,7 +2374,7 @@ object Realm {
         * @param databaseName The name of the database.
         * @returns The remote MongoDB database.
         */
-      def db(databaseName: String): MongoDBDatabase = js.native
+      def db(databaseName: String): MongoDBDatabase
     }
     object MongoDB {
       
@@ -2377,23 +2392,22 @@ object Realm {
       /**
         * A base change event containing the properties which apply across operation types.
         */
-      @js.native
       trait BaseChangeEvent[T /* <: OperationType */] extends StObject {
         
         /** The id of the change event. */
-        var _id: ChangeEventId = js.native
+        var _id: ChangeEventId
         
         /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
+        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
         
         /**
           * The identifier for the session associated with the transaction.
           * Only present if the operation is part of a multi-document transaction.
           */
-        var lsid: js.UndefOr[js.Object] = js.native
+        var lsid: js.UndefOr[js.Object] = js.undefined
         
         /** The type of operation which was performed on the document. */
-        var operationType: T = js.native
+        var operationType: T
         
         /**
           * The transaction number.
@@ -2401,7 +2415,7 @@ object Realm {
           */
         var txnNumber: js.UndefOr[
                 /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+              ] = js.undefined
       }
       object BaseChangeEvent {
         
@@ -2416,7 +2430,7 @@ object Realm {
         }
         
         @scala.inline
-        implicit class BaseChangeEventMutableBuilder[Self <: BaseChangeEvent[_], T /* <: OperationType */] (val x: Self with BaseChangeEvent[T]) extends AnyVal {
+        implicit class BaseChangeEventMutableBuilder[Self <: BaseChangeEvent[?], T /* <: OperationType */] (val x: Self & BaseChangeEvent[T]) extends AnyVal {
           
           @scala.inline
           def setClusterTime(
@@ -2460,7 +2474,7 @@ object Realm {
         - typings.realm.Realm.Services.MongoDB.DropDatabaseEvent
         - typings.realm.Realm.Services.MongoDB.InvalidateEvent
       */
-      type ChangeEvent[T /* <: Document[_] */] = _ChangeEvent[T] | InvalidateEvent
+      type ChangeEvent[T /* <: Document[js.Any] */] = _ChangeEvent[T] | InvalidateEvent
       
       /**
         * Acts as the `resumeToken` for the `resumeAfter` parameter when resuming a change stream.
@@ -2470,13 +2484,12 @@ object Realm {
       /**
         * Options passed when counting documents
         */
-      @js.native
       trait CountOptions extends StObject {
         
         /**
           * The maximum number of documents to count.
           */
-        val limit: js.UndefOr[Double] = js.native
+        val limit: js.UndefOr[Double] = js.undefined
       }
       object CountOptions {
         
@@ -2500,64 +2513,36 @@ object Realm {
       /**
         * A document got deleted from the collection.
         */
-      /* Inlined {  ns :realm.Realm.Services.MongoDB.DocumentNamespace,   documentKey :realm.Realm.Services.MongoDB.DocumentKey<T['_id']>} & realm.Realm.Services.MongoDB.BaseChangeEvent<'delete'> */
-      @js.native
-      trait DeleteEvent[T /* <: Document[_] */] extends _ChangeEvent[T] {
-        
-        /** The id of the change event. */
-        var _id: ChangeEventId = js.native
-        
-        /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
+      trait DeleteEvent[T /* <: Document[js.Any] */]
+        extends StObject
+           with BaseChangeEvent[delete]
+           with _ChangeEvent[T] {
         
         /** A document that contains the _id of the deleted document. */
         var documentKey: DocumentKey[
                 /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
-              ] = js.native
-        
-        /**
-          * The identifier for the session associated with the transaction.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var lsid: js.UndefOr[js.Object] = js.native
+              ]
         
         /** The namespace (database and collection) which the document got deleted from. */
-        var ns: DocumentNamespace = js.native
-        
-        /** The type of operation which was performed on the document. */
-        var operationType: delete = js.native
-        
-        /**
-          * The transaction number.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var txnNumber: js.UndefOr[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+        var ns: DocumentNamespace
       }
       object DeleteEvent {
         
         @scala.inline
-        def apply[T /* <: Document[_] */](
+        def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
-          ns: DocumentNamespace,
-          operationType: delete
+          ns: DocumentNamespace
         ): DeleteEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "delete")
           __obj.asInstanceOf[DeleteEvent[T]]
         }
         
         @scala.inline
-        implicit class DeleteEventMutableBuilder[Self <: DeleteEvent[_], T /* <: Document[_] */] (val x: Self with DeleteEvent[T]) extends AnyVal {
-          
-          @scala.inline
-          def setClusterTime(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
-          ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
+        implicit class DeleteEventMutableBuilder[Self <: DeleteEvent[?], T /* <: Document[js.Any] */] (val x: Self & DeleteEvent[T]) extends AnyVal {
           
           @scala.inline
           def setDocumentKey(
@@ -2567,40 +2552,19 @@ object Realm {
           ): Self = StObject.set(x, "documentKey", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
-          
-          @scala.inline
           def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setOperationType(value: delete): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumber(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-          ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
-          
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
       /**
         * Result of deleting documents
         */
-      @js.native
       trait DeleteResult extends StObject {
         
         /**
           * The number of documents that were deleted.
           */
-        val deletedCount: Double = js.native
+        val deletedCount: Double
       }
       object DeleteResult {
         
@@ -2621,13 +2585,12 @@ object Realm {
       /**
         * A document from a MongoDB collection
         */
-      @js.native
       trait Document[IdType] extends StObject {
         
         /**
           * The id of the document.
           */
-        var _id: IdType = js.native
+        var _id: IdType
       }
       object Document {
         
@@ -2638,7 +2601,7 @@ object Realm {
         }
         
         @scala.inline
-        implicit class DocumentMutableBuilder[Self <: Document[_], IdType] (val x: Self with Document[IdType]) extends AnyVal {
+        implicit class DocumentMutableBuilder[Self <: Document[?], IdType] (val x: Self & Document[IdType]) extends AnyVal {
           
           @scala.inline
           def set_id(value: IdType): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
@@ -2648,20 +2611,19 @@ object Realm {
       /**
         * A document that contains the _id of the document created or modified by the insert, replace, delete, update operations (i.e. CRUD operations). For sharded collections, also displays the full shard key for the document. The _id field is not repeated if it is already a part of the shard key.
         */
-      type DocumentKey[IdType] = Id[IdType] with (Record[String, _])
+      type DocumentKey[IdType] = Id[IdType] & (Record[String, js.Any])
       
       /**
         * The namespace of a document.
         */
-      @js.native
       trait DocumentNamespace extends StObject {
         
         // database: string;
         /** The name of the collection. */
-        var coll: String = js.native
+        var coll: String
         
         /** The name of the database. */
-        var db: String = js.native
+        var db: String
       }
       object DocumentNamespace {
         
@@ -2685,36 +2647,13 @@ object Realm {
       /**
         * Occurs when a database is dropped.
         */
-      /* Inlined {  ns :std.Omit<realm.Realm.Services.MongoDB.DocumentNamespace, 'coll'>} & realm.Realm.Services.MongoDB.BaseChangeEvent<'dropDatabase'> */
-      @js.native
       trait DropDatabaseEvent
-        extends _ChangeEvent[js.Any] {
-        
-        /** The id of the change event. */
-        var _id: ChangeEventId = js.native
-        
-        /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
-        
-        /**
-          * The identifier for the session associated with the transaction.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var lsid: js.UndefOr[js.Object] = js.native
+        extends StObject
+           with BaseChangeEvent[dropDatabase]
+           with _ChangeEvent[js.Any] {
         
         /** The namespace (specifying only the database name) of the database that got dropped. */
-        var ns: OmitDocumentNamespacecoll = js.native
-        
-        /** The type of operation which was performed on the document. */
-        var operationType: dropDatabase = js.native
-        
-        /**
-          * The transaction number.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var txnNumber: js.UndefOr[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+        var ns: OmitDocumentNamespacecoll
       }
       object DropDatabaseEvent {
         
@@ -2722,10 +2661,9 @@ object Realm {
         def apply(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
-          ns: OmitDocumentNamespacecoll,
-          operationType: dropDatabase
+          ns: OmitDocumentNamespacecoll
         ): DropDatabaseEvent = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "dropDatabase")
           __obj.asInstanceOf[DropDatabaseEvent]
         }
         
@@ -2733,68 +2671,20 @@ object Realm {
         implicit class DropDatabaseEventMutableBuilder[Self <: DropDatabaseEvent] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setClusterTime(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
-          ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
-          
-          @scala.inline
           def setNs(value: OmitDocumentNamespacecoll): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setOperationType(value: dropDatabase): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumber(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-          ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
-          
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
       /**
         * Occurs when a collection is dropped from a database.
         */
-      /* Inlined {  ns :realm.Realm.Services.MongoDB.DocumentNamespace} & realm.Realm.Services.MongoDB.BaseChangeEvent<'drop'> */
-      @js.native
       trait DropEvent
-        extends _ChangeEvent[js.Any] {
-        
-        /** The id of the change event. */
-        var _id: ChangeEventId = js.native
-        
-        /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
-        
-        /**
-          * The identifier for the session associated with the transaction.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var lsid: js.UndefOr[js.Object] = js.native
+        extends StObject
+           with BaseChangeEvent[drop]
+           with _ChangeEvent[js.Any] {
         
         /** The namespace (database and collection) of the collection that got dropped. */
-        var ns: DocumentNamespace = js.native
-        
-        /** The type of operation which was performed on the document. */
-        var operationType: drop = js.native
-        
-        /**
-          * The transaction number.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var txnNumber: js.UndefOr[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+        var ns: DocumentNamespace
       }
       object DropEvent {
         
@@ -2802,10 +2692,9 @@ object Realm {
         def apply(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
-          ns: DocumentNamespace,
-          operationType: drop
+          ns: DocumentNamespace
         ): DropEvent = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "drop")
           __obj.asInstanceOf[DropEvent]
         }
         
@@ -2813,32 +2702,7 @@ object Realm {
         implicit class DropEventMutableBuilder[Self <: DropEvent] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setClusterTime(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
-          ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
-          
-          @scala.inline
           def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setOperationType(value: drop): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumber(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-          ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
-          
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
@@ -2850,22 +2714,23 @@ object Realm {
       /**
         * Options passed when finding and modifying a signle document
         */
-      @js.native
-      trait FindOneAndModifyOptions extends FindOneOptions {
+      trait FindOneAndModifyOptions
+        extends StObject
+           with FindOneOptions {
         
         /**
           * Optional. Default: false.
           * A boolean that, if true, indicates that the action should return
           * the document in its updated form instead of its original, pre-update form.
           */
-        val returnNewDocument: js.UndefOr[Boolean] = js.native
+        val returnNewDocument: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Optional. Default: false.
           * A boolean that, if true, indicates that MongoDB should insert a new document that matches the
           * query filter when the query does not match any existing documents in the collection.
           */
-        val upsert: js.UndefOr[Boolean] = js.native
+        val upsert: js.UndefOr[Boolean] = js.undefined
       }
       object FindOneAndModifyOptions {
         
@@ -2895,19 +2760,18 @@ object Realm {
       /**
         * Options passed when finding a signle document
         */
-      @js.native
       trait FindOneOptions extends StObject {
         
         /**
           * Limits the fields to return for all matching documents.
           * See [Tutorial: Project Fields to Return from Query](https://docs.mongodb.com/manual/tutorial/project-fields-from-query-results/).
           */
-        val projection: js.UndefOr[js.Object] = js.native
+        val projection: js.UndefOr[js.Object] = js.undefined
         
         /**
           * The order in which to return matching documents.
           */
-        val sort: js.UndefOr[js.Object] = js.native
+        val sort: js.UndefOr[js.Object] = js.undefined
       }
       object FindOneOptions {
         
@@ -2937,13 +2801,14 @@ object Realm {
       /**
         * Options passed when finding a multiple documents
         */
-      @js.native
-      trait FindOptions extends FindOneOptions {
+      trait FindOptions
+        extends StObject
+           with FindOneOptions {
         
         /**
           * The maximum number of documents to return.
           */
-        val limit: js.UndefOr[Double] = js.native
+        val limit: js.UndefOr[Double] = js.undefined
       }
       object FindOptions {
         
@@ -2967,68 +2832,40 @@ object Realm {
       /**
         * A document got inserted into the collection.
         */
-      /* Inlined {  ns :realm.Realm.Services.MongoDB.DocumentNamespace,   documentKey :realm.Realm.Services.MongoDB.DocumentKey<T['_id']>,   fullDocument :T} & realm.Realm.Services.MongoDB.BaseChangeEvent<'insert'> */
-      @js.native
-      trait InsertEvent[T /* <: Document[_] */] extends _ChangeEvent[T] {
-        
-        /** The id of the change event. */
-        var _id: ChangeEventId = js.native
-        
-        /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
+      trait InsertEvent[T /* <: Document[js.Any] */]
+        extends StObject
+           with BaseChangeEvent[insert]
+           with _ChangeEvent[T] {
         
         /** A document that contains the _id of the inserted document. */
         var documentKey: DocumentKey[
                 /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
-              ] = js.native
+              ]
         
         /** The new document created by the operation */
-        var fullDocument: T = js.native
-        
-        /**
-          * The identifier for the session associated with the transaction.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var lsid: js.UndefOr[js.Object] = js.native
+        var fullDocument: T
         
         /** The namespace (database and collection) of the document got inserted into. */
-        var ns: DocumentNamespace = js.native
-        
-        /** The type of operation which was performed on the document. */
-        var operationType: insert = js.native
-        
-        /**
-          * The transaction number.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var txnNumber: js.UndefOr[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+        var ns: DocumentNamespace
       }
       object InsertEvent {
         
         @scala.inline
-        def apply[T /* <: Document[_] */](
+        def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
           fullDocument: T,
-          ns: DocumentNamespace,
-          operationType: insert
+          ns: DocumentNamespace
         ): InsertEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "insert")
           __obj.asInstanceOf[InsertEvent[T]]
         }
         
         @scala.inline
-        implicit class InsertEventMutableBuilder[Self <: InsertEvent[_], T /* <: Document[_] */] (val x: Self with InsertEvent[T]) extends AnyVal {
-          
-          @scala.inline
-          def setClusterTime(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
-          ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
+        implicit class InsertEventMutableBuilder[Self <: InsertEvent[?], T /* <: Document[js.Any] */] (val x: Self & InsertEvent[T]) extends AnyVal {
           
           @scala.inline
           def setDocumentKey(
@@ -3041,40 +2878,19 @@ object Realm {
           def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
-          
-          @scala.inline
           def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setOperationType(value: insert): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumber(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-          ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
-          
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
       /**
         * Result of inserting many documents
         */
-      @js.native
       trait InsertManyResult[IdType] extends StObject {
         
         /**
           * The ids of the inserted documents
           */
-        val insertedIds: js.Array[IdType] = js.native
+        val insertedIds: js.Array[IdType]
       }
       object InsertManyResult {
         
@@ -3085,7 +2901,7 @@ object Realm {
         }
         
         @scala.inline
-        implicit class InsertManyResultMutableBuilder[Self <: InsertManyResult[_], IdType] (val x: Self with InsertManyResult[IdType]) extends AnyVal {
+        implicit class InsertManyResultMutableBuilder[Self <: InsertManyResult[?], IdType] (val x: Self & InsertManyResult[IdType]) extends AnyVal {
           
           @scala.inline
           def setInsertedIds(value: js.Array[IdType]): Self = StObject.set(x, "insertedIds", value.asInstanceOf[js.Any])
@@ -3098,13 +2914,12 @@ object Realm {
       /**
         * Result of inserting one document
         */
-      @js.native
       trait InsertOneResult[IdType] extends StObject {
         
         /**
           * The id of the inserted document
           */
-        val insertedId: IdType = js.native
+        val insertedId: IdType
       }
       object InsertOneResult {
         
@@ -3115,7 +2930,7 @@ object Realm {
         }
         
         @scala.inline
-        implicit class InsertOneResultMutableBuilder[Self <: InsertOneResult[_], IdType] (val x: Self with InsertOneResult[IdType]) extends AnyVal {
+        implicit class InsertOneResultMutableBuilder[Self <: InsertOneResult[?], IdType] (val x: Self & InsertOneResult[IdType]) extends AnyVal {
           
           @scala.inline
           def setInsertedId(value: IdType): Self = StObject.set(x, "insertedId", value.asInstanceOf[js.Any])
@@ -3131,7 +2946,7 @@ object Realm {
         * A remote collection of documents in a MongoDB database.
         */
       @js.native
-      trait MongoDBCollection[T /* <: Document[_] */] extends StObject {
+      trait MongoDBCollection[T /* <: Document[js.Any] */] extends StObject {
         
         // TODO: Verify pipeline and return type
         /**
@@ -3140,13 +2955,13 @@ object Realm {
           * @param pipeline An array of aggregation pipeline stages.
           * @returns The result.
           */
-        def aggregate(pipeline: js.Array[AggregatePipelineStage]): js.Promise[_] = js.native
+        def aggregate(pipeline: js.Array[AggregatePipelineStage]): js.Promise[js.Any] = js.native
         
         /**
           * Counts the number of documents in this collection matching the provided filter.
           */
         def count(): js.Promise[Double] = js.native
-        def count(filter: js.UndefOr[scala.Nothing], options: CountOptions): js.Promise[Double] = js.native
+        def count(filter: Unit, options: CountOptions): js.Promise[Double] = js.native
         def count(filter: Filter): js.Promise[Double] = js.native
         def count(filter: Filter, options: CountOptions): js.Promise[Double] = js.native
         
@@ -3174,7 +2989,7 @@ object Realm {
           * @returns The documents.
           */
         def find(): js.Promise[js.Array[T]] = js.native
-        def find(filter: js.UndefOr[scala.Nothing], options: FindOptions): js.Promise[js.Array[T]] = js.native
+        def find(filter: Unit, options: FindOptions): js.Promise[js.Array[T]] = js.native
         def find(filter: Filter): js.Promise[js.Array[T]] = js.native
         def find(filter: Filter, options: FindOptions): js.Promise[js.Array[T]] = js.native
         
@@ -3186,7 +3001,7 @@ object Realm {
           * @returns The document.
           */
         def findOne(): js.Promise[T | Null] = js.native
-        def findOne(filter: js.UndefOr[scala.Nothing], options: FindOneOptions): js.Promise[T | Null] = js.native
+        def findOne(filter: Unit, options: FindOneOptions): js.Promise[T | Null] = js.native
         def findOne(filter: Filter): js.Promise[T | Null] = js.native
         def findOne(filter: Filter, options: FindOneOptions): js.Promise[T | Null] = js.native
         
@@ -3297,8 +3112,8 @@ object Realm {
           *
           * @see https://docs.mongodb.com/manual/reference/change-events/
           */
-        def watch(): AsyncGenerator[ChangeEvent[T], _, _] = js.native
-        def watch(options: js.Object): AsyncGenerator[ChangeEvent[T], _, _] = js.native
+        def watch(): AsyncGenerator[ChangeEvent[T], js.Any, js.Any] = js.native
+        def watch(options: js.Object): AsyncGenerator[ChangeEvent[T], js.Any, js.Any] = js.native
         /**
           * Creates an asynchronous change stream to monitor this collection for changes.
           *
@@ -3310,7 +3125,7 @@ object Realm {
           *
           * @see https://docs.mongodb.com/manual/reference/change-events/
           */
-        def watch(options: typings.realm.anon.Filter): AsyncGenerator[ChangeEvent[T], _, _] = js.native
+        def watch(options: typings.realm.anon.Filter): AsyncGenerator[ChangeEvent[T], js.Any, js.Any] = js.native
         /**
           * Creates an asynchronous change stream to monitor this collection for changes.
           *
@@ -3322,7 +3137,7 @@ object Realm {
           *
           * @see https://docs.mongodb.com/manual/reference/change-events/
           */
-        def watch(options: Ids[T]): AsyncGenerator[ChangeEvent[T], _, _] = js.native
+        def watch(options: Ids[T]): AsyncGenerator[ChangeEvent[T], js.Any, js.Any] = js.native
       }
       
       @scala.inline
@@ -3335,7 +3150,7 @@ object Realm {
       /**
         * A new document with an optional _id defined.
         */
-      type NewDocument[T /* <: Document[_] */] = (Omit[T, _id]) with (Partial[Pick[T, _id]])
+      type NewDocument[T /* <: Document[js.Any] */] = (Omit[T, _id]) & (Partial[Pick[T, _id]])
       
       /**
         * An operation performed on a document.
@@ -3381,39 +3196,16 @@ object Realm {
       /**
         * Occurs when a collection is renamed.
         */
-      /* Inlined {  ns :realm.Realm.Services.MongoDB.DocumentNamespace,   to :realm.Realm.Services.MongoDB.DocumentNamespace} & realm.Realm.Services.MongoDB.BaseChangeEvent<'rename'> */
-      @js.native
       trait RenameEvent
-        extends _ChangeEvent[js.Any] {
-        
-        /** The id of the change event. */
-        var _id: ChangeEventId = js.native
-        
-        /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
-        
-        /**
-          * The identifier for the session associated with the transaction.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var lsid: js.UndefOr[js.Object] = js.native
+        extends StObject
+           with BaseChangeEvent[rename]
+           with _ChangeEvent[js.Any] {
         
         /** The original namespace (database and collection) that got renamed. */
-        var ns: DocumentNamespace = js.native
-        
-        /** The type of operation which was performed on the document. */
-        var operationType: rename = js.native
+        var ns: DocumentNamespace
         
         /** The namespace (database and collection) going forward. */
-        var to: DocumentNamespace = js.native
-        
-        /**
-          * The transaction number.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var txnNumber: js.UndefOr[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+        var to: DocumentNamespace
       }
       object RenameEvent {
         
@@ -3422,10 +3214,9 @@ object Realm {
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: DocumentNamespace,
-          operationType: rename,
           to: DocumentNamespace
         ): RenameEvent = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "rename", to = to.asInstanceOf[js.Any])
           __obj.asInstanceOf[RenameEvent]
         }
         
@@ -3433,103 +3224,50 @@ object Realm {
         implicit class RenameEventMutableBuilder[Self <: RenameEvent] (val x: Self) extends AnyVal {
           
           @scala.inline
-          def setClusterTime(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
-          ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
-          
-          @scala.inline
           def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setOperationType(value: rename): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
-          
-          @scala.inline
           def setTo(value: DocumentNamespace): Self = StObject.set(x, "to", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumber(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-          ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
-          
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
       /**
         * A document got replaced in the collection.
         */
-      /* Inlined {  ns :realm.Realm.Services.MongoDB.DocumentNamespace,   documentKey :realm.Realm.Services.MongoDB.DocumentKey<T['_id']>,   fullDocument :T} & realm.Realm.Services.MongoDB.BaseChangeEvent<'replace'> */
-      @js.native
-      trait ReplaceEvent[T /* <: Document[_] */] extends _ChangeEvent[T] {
-        
-        /** The id of the change event. */
-        var _id: ChangeEventId = js.native
-        
-        /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
+      trait ReplaceEvent[T /* <: Document[js.Any] */]
+        extends StObject
+           with BaseChangeEvent[replace]
+           with _ChangeEvent[T] {
         
         /** A document that contains the _id of the replaced document. */
         var documentKey: DocumentKey[
                 /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
-              ] = js.native
+              ]
         
         /** The document after the insert of the replacement document. */
-        var fullDocument: T = js.native
-        
-        /**
-          * The identifier for the session associated with the transaction.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var lsid: js.UndefOr[js.Object] = js.native
+        var fullDocument: T
         
         /** The namespace (database and collection) of the document got replaced within. */
-        var ns: DocumentNamespace = js.native
-        
-        /** The type of operation which was performed on the document. */
-        var operationType: replace = js.native
-        
-        /**
-          * The transaction number.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var txnNumber: js.UndefOr[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+        var ns: DocumentNamespace
       }
       object ReplaceEvent {
         
         @scala.inline
-        def apply[T /* <: Document[_] */](
+        def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
           fullDocument: T,
-          ns: DocumentNamespace,
-          operationType: replace
+          ns: DocumentNamespace
         ): ReplaceEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "replace")
           __obj.asInstanceOf[ReplaceEvent[T]]
         }
         
         @scala.inline
-        implicit class ReplaceEventMutableBuilder[Self <: ReplaceEvent[_], T /* <: Document[_] */] (val x: Self with ReplaceEvent[T]) extends AnyVal {
-          
-          @scala.inline
-          def setClusterTime(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
-          ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
+        implicit class ReplaceEventMutableBuilder[Self <: ReplaceEvent[?], T /* <: Document[js.Any] */] (val x: Self & ReplaceEvent[T]) extends AnyVal {
           
           @scala.inline
           def setDocumentKey(
@@ -3542,27 +3280,7 @@ object Realm {
           def setFullDocument(value: T): Self = StObject.set(x, "fullDocument", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
-          
-          @scala.inline
           def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setOperationType(value: replace): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumber(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-          ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
-          
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
@@ -3574,19 +3292,18 @@ object Realm {
       /**
         * A detailed description of an update performed on a document.
         */
-      @js.native
       trait UpdateDescription extends StObject {
         
         /** Names of fields that got removed. */
-        var removedFields: js.Array[String] = js.native
+        var removedFields: js.Array[String]
         
         /** Names of fields that got updated. */
-        var updatedFields: Record[String, _] = js.native
+        var updatedFields: Record[String, js.Any]
       }
       object UpdateDescription {
         
         @scala.inline
-        def apply(removedFields: js.Array[String], updatedFields: Record[String, _]): UpdateDescription = {
+        def apply(removedFields: js.Array[String], updatedFields: Record[String, js.Any]): UpdateDescription = {
           val __obj = js.Dynamic.literal(removedFields = removedFields.asInstanceOf[js.Any], updatedFields = updatedFields.asInstanceOf[js.Any])
           __obj.asInstanceOf[UpdateDescription]
         }
@@ -3601,80 +3318,52 @@ object Realm {
           def setRemovedFieldsVarargs(value: String*): Self = StObject.set(x, "removedFields", js.Array(value :_*))
           
           @scala.inline
-          def setUpdatedFields(value: Record[String, _]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
+          def setUpdatedFields(value: Record[String, js.Any]): Self = StObject.set(x, "updatedFields", value.asInstanceOf[js.Any])
         }
       }
       
       /**
         * A document got updated in the collection.
         */
-      /* Inlined {  ns :realm.Realm.Services.MongoDB.DocumentNamespace,   documentKey :realm.Realm.Services.MongoDB.DocumentKey<T['_id']>,   updateDescription :realm.Realm.Services.MongoDB.UpdateDescription,   fullDocument :T | undefined} & realm.Realm.Services.MongoDB.BaseChangeEvent<'update'> */
-      @js.native
-      trait UpdateEvent[T /* <: Document[_] */] extends _ChangeEvent[T] {
-        
-        /** The id of the change event. */
-        var _id: ChangeEventId = js.native
-        
-        /** The timestamp from the oplog entry associated with the event. */
-        var clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any = js.native
+      trait UpdateEvent[T /* <: Document[js.Any] */]
+        extends StObject
+           with BaseChangeEvent[update]
+           with _ChangeEvent[T] {
         
         /** A document that contains the _id of the updated document. */
         var documentKey: DocumentKey[
                 /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
-              ] = js.native
+              ]
         
         /**
           * For change streams opened with the `fullDocument: updateLookup` option, this will represents the most current majority-committed version of the document modified by the update operation.
           */
-        var fullDocument: js.UndefOr[T] = js.native
-        
-        /**
-          * The identifier for the session associated with the transaction.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var lsid: js.UndefOr[js.Object] = js.native
+        var fullDocument: js.UndefOr[T] = js.undefined
         
         /** The namespace (database and collection) of the updated document. */
-        var ns: DocumentNamespace = js.native
-        
-        /** The type of operation which was performed on the document. */
-        var operationType: update = js.native
-        
-        /**
-          * The transaction number.
-          * Only present if the operation is part of a multi-document transaction.
-          */
-        var txnNumber: js.UndefOr[
-                /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-              ] = js.native
+        var ns: DocumentNamespace
         
         /** A document describing the fields that were updated or removed. */
-        var updateDescription: UpdateDescription = js.native
+        var updateDescription: UpdateDescription
       }
       object UpdateEvent {
         
         @scala.inline
-        def apply[T /* <: Document[_] */](
+        def apply[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
           ns: DocumentNamespace,
-          operationType: update,
           updateDescription: UpdateDescription
         ): UpdateEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], updateDescription = updateDescription.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "update", updateDescription = updateDescription.asInstanceOf[js.Any])
           __obj.asInstanceOf[UpdateEvent[T]]
         }
         
         @scala.inline
-        implicit class UpdateEventMutableBuilder[Self <: UpdateEvent[_], T /* <: Document[_] */] (val x: Self with UpdateEvent[T]) extends AnyVal {
-          
-          @scala.inline
-          def setClusterTime(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any
-          ): Self = StObject.set(x, "clusterTime", value.asInstanceOf[js.Any])
+        implicit class UpdateEventMutableBuilder[Self <: UpdateEvent[?], T /* <: Document[js.Any] */] (val x: Self & UpdateEvent[T]) extends AnyVal {
           
           @scala.inline
           def setDocumentKey(
@@ -3690,43 +3379,22 @@ object Realm {
           def setFullDocumentUndefined: Self = StObject.set(x, "fullDocument", js.undefined)
           
           @scala.inline
-          def setLsid(value: js.Object): Self = StObject.set(x, "lsid", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setLsidUndefined: Self = StObject.set(x, "lsid", js.undefined)
-          
-          @scala.inline
           def setNs(value: DocumentNamespace): Self = StObject.set(x, "ns", value.asInstanceOf[js.Any])
           
           @scala.inline
-          def setOperationType(value: update): Self = StObject.set(x, "operationType", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumber(
-            value: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Long */ js.Any
-          ): Self = StObject.set(x, "txnNumber", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def setTxnNumberUndefined: Self = StObject.set(x, "txnNumber", js.undefined)
-          
-          @scala.inline
           def setUpdateDescription(value: UpdateDescription): Self = StObject.set(x, "updateDescription", value.asInstanceOf[js.Any])
-          
-          @scala.inline
-          def set_id(value: ChangeEventId): Self = StObject.set(x, "_id", value.asInstanceOf[js.Any])
         }
       }
       
       /**
         * Options passed when updating documents
         */
-      @js.native
       trait UpdateOptions extends StObject {
         
         /**
           * When true, creates a new document if no document matches the query.
           */
-        val upsert: js.UndefOr[Boolean] = js.native
+        val upsert: js.UndefOr[Boolean] = js.undefined
       }
       object UpdateOptions {
         
@@ -3750,25 +3418,24 @@ object Realm {
       /**
         * Result of updating documents
         */
-      @js.native
       trait UpdateResult[IdType] extends StObject {
         
         /**
           * The number of documents that matched the filter.
           */
-        val matchedCount: Double = js.native
+        val matchedCount: Double
         
         /**
           * The number of documents matched by the query.
           */
-        val modifiedCount: Double = js.native
+        val modifiedCount: Double
         
         /**
           * The identifier of the inserted document if an upsert took place.
           *
           * See [[RemoteUpdateOptions.upsert]].
           */
-        val upsertedId: js.UndefOr[IdType] = js.native
+        val upsertedId: js.UndefOr[IdType] = js.undefined
       }
       object UpdateResult {
         
@@ -3779,7 +3446,7 @@ object Realm {
         }
         
         @scala.inline
-        implicit class UpdateResultMutableBuilder[Self <: UpdateResult[_], IdType] (val x: Self with UpdateResult[IdType]) extends AnyVal {
+        implicit class UpdateResultMutableBuilder[Self <: UpdateResult[?], IdType] (val x: Self & UpdateResult[IdType]) extends AnyVal {
           
           @scala.inline
           def setMatchedCount(value: Double): Self = StObject.set(x, "matchedCount", value.asInstanceOf[js.Any])
@@ -3795,20 +3462,19 @@ object Realm {
         }
       }
       
-      trait _ChangeEvent[T /* <: Document[_] */] extends StObject
+      trait _ChangeEvent[T /* <: Document[js.Any] */] extends StObject
       object _ChangeEvent {
         
         @scala.inline
-        def DeleteEvent[T /* <: Document[_] */](
+        def DeleteEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
-          ns: DocumentNamespace,
-          operationType: delete
+          ns: DocumentNamespace
         ): typings.realm.Realm.Services.MongoDB.DeleteEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "delete")
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.DeleteEvent[T]]
         }
         
@@ -3816,10 +3482,9 @@ object Realm {
         def DropDatabaseEvent(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
-          ns: OmitDocumentNamespacecoll,
-          operationType: dropDatabase
+          ns: OmitDocumentNamespacecoll
         ): typings.realm.Realm.Services.MongoDB.DropDatabaseEvent = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "dropDatabase")
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.DropDatabaseEvent]
         }
         
@@ -3827,25 +3492,23 @@ object Realm {
         def DropEvent(
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
-          ns: DocumentNamespace,
-          operationType: drop
+          ns: DocumentNamespace
         ): typings.realm.Realm.Services.MongoDB.DropEvent = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "drop")
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.DropEvent]
         }
         
         @scala.inline
-        def InsertEvent[T /* <: Document[_] */](
+        def InsertEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
           fullDocument: T,
-          ns: DocumentNamespace,
-          operationType: insert
+          ns: DocumentNamespace
         ): typings.realm.Realm.Services.MongoDB.InsertEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "insert")
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.InsertEvent[T]]
         }
         
@@ -3854,40 +3517,37 @@ object Realm {
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           ns: DocumentNamespace,
-          operationType: rename,
           to: DocumentNamespace
         ): typings.realm.Realm.Services.MongoDB.RenameEvent = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], to = to.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "rename", to = to.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.RenameEvent]
         }
         
         @scala.inline
-        def ReplaceEvent[T /* <: Document[_] */](
+        def ReplaceEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
           fullDocument: T,
-          ns: DocumentNamespace,
-          operationType: replace
+          ns: DocumentNamespace
         ): typings.realm.Realm.Services.MongoDB.ReplaceEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], fullDocument = fullDocument.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "replace")
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.ReplaceEvent[T]]
         }
         
         @scala.inline
-        def UpdateEvent[T /* <: Document[_] */](
+        def UpdateEvent[T /* <: Document[js.Any] */](
           _id: ChangeEventId,
           clusterTime: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Timestamp */ js.Any,
           documentKey: DocumentKey[
                   /* import warning: importer.ImportType#apply Failed type conversion: T['_id'] */ js.Any
                 ],
           ns: DocumentNamespace,
-          operationType: update,
           updateDescription: UpdateDescription
         ): typings.realm.Realm.Services.MongoDB.UpdateEvent[T] = {
-          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = operationType.asInstanceOf[js.Any], updateDescription = updateDescription.asInstanceOf[js.Any])
+          val __obj = js.Dynamic.literal(_id = _id.asInstanceOf[js.Any], clusterTime = clusterTime.asInstanceOf[js.Any], documentKey = documentKey.asInstanceOf[js.Any], ns = ns.asInstanceOf[js.Any], operationType = "update", updateDescription = updateDescription.asInstanceOf[js.Any])
           __obj.asInstanceOf[typings.realm.Realm.Services.MongoDB.UpdateEvent[T]]
         }
       }
@@ -3896,7 +3556,6 @@ object Realm {
     /**
       * The MongoDB service can be used to get database and collection objects for interacting with MongoDB data.
       */
-    @js.native
     trait MongoDBDatabase extends StObject {
       
       /**
@@ -3905,7 +3564,7 @@ object Realm {
         * @param name The name of the collection.
         * @returns The remote MongoDB collection.
         */
-      def collection[T /* <: Document[_] */](name: String): MongoDBCollection[T] = js.native
+      def collection[T /* <: Document[js.Any] */](name: String): MongoDBCollection[T]
     }
     object MongoDBDatabase {
       
@@ -3926,20 +3585,19 @@ object Realm {
     /**
       * Use the Push service to enable sending push messages to this user via Firebase Cloud Messaging (FCM).
       */
-    @js.native
     trait Push extends StObject {
       
       /**
         * Deregister this device with the user, to disable sending messages to this device.
         */
-      def deregister(): js.Promise[Unit] = js.native
+      def deregister(): js.Promise[Unit]
       
       /**
         * Register this device with the user.
         *
         * @param token A Firebase Cloud Messaging (FCM) token, retrieved via the firebase SDK.
         */
-      def register(token: String): js.Promise[Unit] = js.native
+      def register(token: String): js.Promise[Unit]
     }
     object Push {
       
@@ -3985,28 +3643,27 @@ object Realm {
     */
   type SortDescriptor = js.Array[String] | (js.Tuple2[String, Boolean])
   
-  @js.native
   trait SyncConfiguration extends StObject {
     
-    var _sessionStopPolicy: js.UndefOr[SessionStopPolicy] = js.native
+    var _sessionStopPolicy: js.UndefOr[SessionStopPolicy] = js.undefined
     
-    var customHttpHeaders: js.UndefOr[StringDictionary[String]] = js.native
+    var customHttpHeaders: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var error: js.UndefOr[ErrorCallback] = js.native
+    var error: js.UndefOr[ErrorCallback] = js.undefined
     
-    var existingRealmFileBehavior: js.UndefOr[OpenRealmBehaviorConfiguration] = js.native
+    var existingRealmFileBehavior: js.UndefOr[OpenRealmBehaviorConfiguration] = js.undefined
     
-    var newRealmFileBehavior: js.UndefOr[OpenRealmBehaviorConfiguration] = js.native
+    var newRealmFileBehavior: js.UndefOr[OpenRealmBehaviorConfiguration] = js.undefined
     
-    var partitionValue: String | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectId */ js.Any) | Null = js.native
+    var partitionValue: String | Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ObjectId */ js.Any) | Null
     
-    var user: User[DefaultFunctionsFactory, _] = js.native
+    var user: User[DefaultFunctionsFactory, js.Any]
   }
   object SyncConfiguration {
     
     @scala.inline
-    def apply(user: User[DefaultFunctionsFactory, _]): SyncConfiguration = {
-      val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any])
+    def apply(user: User[DefaultFunctionsFactory, js.Any]): SyncConfiguration = {
+      val __obj = js.Dynamic.literal(user = user.asInstanceOf[js.Any], partitionValue = null)
       __obj.asInstanceOf[SyncConfiguration]
     }
     
@@ -4046,7 +3703,7 @@ object Realm {
       def setPartitionValueNull: Self = StObject.set(x, "partitionValue", null)
       
       @scala.inline
-      def setUser(value: User[DefaultFunctionsFactory, _]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
+      def setUser(value: User[DefaultFunctionsFactory, js.Any]): Self = StObject.set(x, "user", value.asInstanceOf[js.Any])
       
       @scala.inline
       def set_sessionStopPolicy(value: SessionStopPolicy): Self = StObject.set(x, "_sessionStopPolicy", value.asInstanceOf[js.Any])
@@ -4056,18 +3713,17 @@ object Realm {
     }
   }
   
-  @js.native
   trait SyncError extends StObject {
     
-    var category: js.UndefOr[String] = js.native
+    var category: js.UndefOr[String] = js.undefined
     
-    var code: Double = js.native
+    var code: Double
     
-    var isFatal: Boolean = js.native
+    var isFatal: Boolean
     
-    var message: String = js.native
+    var message: String
     
-    var name: String = js.native
+    var name: String
   }
   object SyncError {
     
@@ -4103,18 +3759,17 @@ object Realm {
   /**
     * Representation of an authenticated user of an app.
     */
-  @js.native
   trait User[FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] extends StObject {
     
     /**
       * The access token used when requesting a new access token.
       */
-    val accessToken: String | Null = js.native
+    val accessToken: String | Null
     
     /**
       * Perform operations related to the API-key auth provider.
       */
-    val apiKeys: ApiKeyAuth = js.native
+    val apiKeys: ApiKeyAuth
     
     /**
       * Call a remote MongoDB Realm function by its name.
@@ -4135,7 +3790,7 @@ object Realm {
       * @param name Name of the function.
       * @param args Arguments passed to the function.
       */
-    def callFunction(name: String, args: js.Any*): js.Promise[_] = js.native
+    def callFunction(name: String, args: js.Any*): js.Promise[js.Any]
     
     /**
       * You can store arbitrary data about your application users in a MongoDB collection and configure MongoDB Realm to automatically expose each user’s data in a field of their user object.
@@ -4143,46 +3798,46 @@ object Realm {
       *
       * If this value has not been configured, it will be empty.
       */
-    val customData: CustomDataType = js.native
+    val customData: CustomDataType
     
     /**
       * The id of the device.
       */
-    val deviceId: String | Null = js.native
+    val deviceId: String | Null
     
     /**
       * Use this to call functions defined by the MongoDB Realm app, as this user.
       */
-    val functions: FunctionsFactoryType with BaseFunctionsFactory = js.native
+    val functions: FunctionsFactoryType & BaseFunctionsFactory
     
     /**
       * The automatically-generated internal ID of the user.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The identities of the user at any of the app's authentication providers.
       */
-    val identities: js.Array[UserIdentity] = js.native
+    val identities: js.Array[UserIdentity]
     
     /**
       * The logged in state of the user.
       */
-    val isLoggedIn: Boolean = js.native
+    val isLoggedIn: Boolean
     
     /**
       * Link the user with an identity represented by another set of credentials.
       *
       * @param credentials The credentials to use when linking.
       */
-    def linkCredentials(credentials: Credentials[js.Object]): js.Promise[Unit] = js.native
+    def linkCredentials(credentials: Credentials[js.Object]): js.Promise[Unit]
     
     /**
       * Log out the user.
       *
       * @returns A promise that resolves once the user has been logged out of the app.
       */
-    def logOut(): js.Promise[Unit] = js.native
+    def logOut(): js.Promise[Unit]
     
     /**
       * Returns a connection to the MongoDB service.
@@ -4193,50 +3848,50 @@ object Realm {
       *                       .collection('widgets')
       *                       .find({color: 'blue'});
       */
-    def mongoClient(serviceName: String): MongoDB = js.native
+    def mongoClient(serviceName: String): MongoDB
     
     /**
       * A profile containing additional information about the user.
       */
-    val profile: UserProfile = js.native
+    val profile: UserProfile
     
     /**
       * The provider type for the user.
       */
-    val providerType: String = js.native
+    val providerType: String
     
     /**
       * Use the Push service to enable sending push messages to this user via Firebase Cloud Messaging (FCM).
       *
       * @returns An service client with methods to register and deregister the device on the user.
       */
-    def push(serviceName: String): Push = js.native
+    def push(serviceName: String): Push
     
     /**
       * Refresh the access token and derive custom data from it.
       *
       * @returns The newly fetched custom data.
       */
-    def refreshCustomData(): js.Promise[CustomDataType] = js.native
+    def refreshCustomData(): js.Promise[CustomDataType]
     
     /**
       * The refresh token used when requesting a new access token.
       */
-    val refreshToken: String | Null = js.native
+    val refreshToken: String | Null
     
     /**
       * The state of the user.
       */
-    val state: UserState = js.native
+    val state: UserState
   }
   object User {
     
     @scala.inline
     def apply[FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */](
       apiKeys: ApiKeyAuth,
-      callFunction: (String, /* repeated */ js.Any) => js.Promise[_],
+      callFunction: (String, /* repeated */ js.Any) => js.Promise[js.Any],
       customData: CustomDataType,
-      functions: FunctionsFactoryType with BaseFunctionsFactory,
+      functions: FunctionsFactoryType & BaseFunctionsFactory,
       id: String,
       identities: js.Array[UserIdentity],
       isLoggedIn: Boolean,
@@ -4249,12 +3904,12 @@ object Realm {
       refreshCustomData: () => js.Promise[CustomDataType],
       state: UserState
     ): User[FunctionsFactoryType, CustomDataType] = {
-      val __obj = js.Dynamic.literal(apiKeys = apiKeys.asInstanceOf[js.Any], callFunction = js.Any.fromFunction2(callFunction), customData = customData.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any], isLoggedIn = isLoggedIn.asInstanceOf[js.Any], linkCredentials = js.Any.fromFunction1(linkCredentials), logOut = js.Any.fromFunction0(logOut), mongoClient = js.Any.fromFunction1(mongoClient), profile = profile.asInstanceOf[js.Any], providerType = providerType.asInstanceOf[js.Any], push = js.Any.fromFunction1(push), refreshCustomData = js.Any.fromFunction0(refreshCustomData), state = state.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(apiKeys = apiKeys.asInstanceOf[js.Any], callFunction = js.Any.fromFunction2(callFunction), customData = customData.asInstanceOf[js.Any], functions = functions.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], identities = identities.asInstanceOf[js.Any], isLoggedIn = isLoggedIn.asInstanceOf[js.Any], linkCredentials = js.Any.fromFunction1(linkCredentials), logOut = js.Any.fromFunction0(logOut), mongoClient = js.Any.fromFunction1(mongoClient), profile = profile.asInstanceOf[js.Any], providerType = providerType.asInstanceOf[js.Any], push = js.Any.fromFunction1(push), refreshCustomData = js.Any.fromFunction0(refreshCustomData), state = state.asInstanceOf[js.Any], accessToken = null, deviceId = null, refreshToken = null)
       __obj.asInstanceOf[User[FunctionsFactoryType, CustomDataType]]
     }
     
     @scala.inline
-    implicit class UserMutableBuilder[Self <: User[_, _], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] (val x: Self with (User[FunctionsFactoryType, CustomDataType])) extends AnyVal {
+    implicit class UserMutableBuilder[Self <: User[?, ?], FunctionsFactoryType /* <: js.Object */, CustomDataType /* <: js.Object */] (val x: Self & (User[FunctionsFactoryType, CustomDataType])) extends AnyVal {
       
       @scala.inline
       def setAccessToken(value: String): Self = StObject.set(x, "accessToken", value.asInstanceOf[js.Any])
@@ -4266,7 +3921,7 @@ object Realm {
       def setApiKeys(value: ApiKeyAuth): Self = StObject.set(x, "apiKeys", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[_]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
+      def setCallFunction(value: (String, /* repeated */ js.Any) => js.Promise[js.Any]): Self = StObject.set(x, "callFunction", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCustomData(value: CustomDataType): Self = StObject.set(x, "customData", value.asInstanceOf[js.Any])
@@ -4278,7 +3933,7 @@ object Realm {
       def setDeviceIdNull: Self = StObject.set(x, "deviceId", null)
       
       @scala.inline
-      def setFunctions(value: FunctionsFactoryType with BaseFunctionsFactory): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
+      def setFunctions(value: FunctionsFactoryType & BaseFunctionsFactory): Self = StObject.set(x, "functions", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setId(value: String): Self = StObject.set(x, "id", value.asInstanceOf[js.Any])
@@ -4328,18 +3983,17 @@ object Realm {
   /**
     * A user's identity with a particular authentication provider.
     */
-  @js.native
   trait UserIdentity extends StObject {
     
     /**
       * The type of the provider associated with the identity.
       */
-    var providerType: String = js.native
+    var providerType: String
     
     /**
       * The id of the user.
       */
-    var userId: String = js.native
+    var userId: String
   }
   object UserIdentity {
     
@@ -4365,61 +4019,60 @@ object Realm {
   /**
     * An extended profile with detailed information about the user.
     */
-  @js.native
   trait UserProfile extends StObject {
     
     // TODO: Determine if this is free-text or actually an enum type.
     /**
       * The users birthday.
       */
-    var birthday: js.UndefOr[String] = js.native
+    var birthday: js.UndefOr[String] = js.undefined
     
     /**
       * The users email address.
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * The users first name.
       */
-    var firstName: js.UndefOr[String] = js.native
+    var firstName: js.UndefOr[String] = js.undefined
     
     /**
       * The users gender.
       */
-    var gender: js.UndefOr[String] = js.native
+    var gender: js.UndefOr[String] = js.undefined
     
     /**
       * The users last name.
       */
-    var lastName: js.UndefOr[String] = js.native
+    var lastName: js.UndefOr[String] = js.undefined
     
     /**
       * The maximal age of the user.
       */
-    var maxAge: js.UndefOr[String] = js.native
+    var maxAge: js.UndefOr[String] = js.undefined
     
     // TODO: Determine the format.
     /**
       * The minimal age of the user.
       */
-    var minAge: js.UndefOr[String] = js.native
+    var minAge: js.UndefOr[String] = js.undefined
     
     /**
       * The commonly displayed name of the user.
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * A URL referencing a picture associated with the user.
       */
-    var pictureUrl: js.UndefOr[String] = js.native
+    var pictureUrl: js.UndefOr[String] = js.undefined
     
     /**
       * The type of user
       * // TODO: Determine the meaning of the different possibilities.
       */
-    var `type`: UserType = js.native
+    var `type`: UserType
   }
   object UserProfile {
     

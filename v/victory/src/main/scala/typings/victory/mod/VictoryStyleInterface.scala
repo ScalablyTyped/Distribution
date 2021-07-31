@@ -2,17 +2,15 @@ package typings.victory.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VictoryStyleInterface extends StObject {
   
-  var data: js.UndefOr[VictoryStyleObject] = js.native
+  var data: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var labels: js.UndefOr[VictoryStyleObject] = js.native
+  var labels: js.UndefOr[VictoryStyleObject] = js.undefined
   
-  var parent: js.UndefOr[VictoryStyleObject] = js.native
+  var parent: js.UndefOr[VictoryStyleObject] = js.undefined
 }
 object VictoryStyleInterface {
   

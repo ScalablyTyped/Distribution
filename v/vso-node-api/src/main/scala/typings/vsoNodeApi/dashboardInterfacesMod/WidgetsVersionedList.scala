@@ -2,15 +2,13 @@ package typings.vsoNodeApi.dashboardInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetsVersionedList extends StObject {
   
-  var eTag: js.Array[String] = js.native
+  var eTag: js.Array[String]
   
-  var widgets: js.Array[Widget] = js.native
+  var widgets: js.Array[Widget]
 }
 object WidgetsVersionedList {
   

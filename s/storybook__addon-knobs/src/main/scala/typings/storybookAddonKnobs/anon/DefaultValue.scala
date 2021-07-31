@@ -4,45 +4,44 @@ import typings.storybookAddonKnobs.buttonMod.ButtonTypeOnClickProp
 import typings.storybookAddonKnobs.storybookAddonKnobsBooleans.`true`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultValue extends StObject {
   
-  var callback: ButtonTypeOnClickProp with js.UndefOr[js.Function0[_]] = js.native
+  var callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]]
   
-  var defaultValue: js.UndefOr[js.Any] = js.native
+  var defaultValue: js.UndefOr[js.Any] = js.undefined
   
-  var disableDebounce: js.UndefOr[Boolean] = js.native
+  var disableDebounce: js.UndefOr[Boolean] = js.undefined
   
-  var disableForceUpdate: js.UndefOr[Boolean] = js.native
+  var disableForceUpdate: js.UndefOr[Boolean] = js.undefined
   
-  var groupId: js.UndefOr[String] = js.native
+  var groupId: js.UndefOr[String] = js.undefined
   
-  var hideLabel: `true` with js.UndefOr[Boolean] = js.native
+  var hideLabel: `true` & js.UndefOr[Boolean]
   
-  var label: String = js.native
+  var label: String
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: js.Any = js.native
+  var `type`: js.Any
   
-  var used: js.UndefOr[Boolean] = js.native
+  var used: js.UndefOr[Boolean] = js.undefined
   
-  var value: js.UndefOr[scala.Nothing] = js.native
+  var value: Unit
 }
 object DefaultValue {
   
   @scala.inline
   def apply(
-    callback: ButtonTypeOnClickProp with js.UndefOr[js.Function0[_]],
-    hideLabel: `true` with js.UndefOr[Boolean],
+    callback: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]],
+    hideLabel: `true` & js.UndefOr[Boolean],
     label: String,
     name: String,
-    `type`: js.Any
+    `type`: js.Any,
+    value: Unit
   ): DefaultValue = {
-    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], hideLabel = hideLabel.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], hideLabel = hideLabel.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[DefaultValue]
   }
@@ -51,7 +50,7 @@ object DefaultValue {
   implicit class DefaultValueMutableBuilder[Self <: DefaultValue] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCallback(value: ButtonTypeOnClickProp with js.UndefOr[js.Function0[_]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
+    def setCallback(value: ButtonTypeOnClickProp & js.UndefOr[js.Function0[js.Any]]): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDefaultValue(value: js.Any): Self = StObject.set(x, "defaultValue", value.asInstanceOf[js.Any])
@@ -78,7 +77,7 @@ object DefaultValue {
     def setGroupIdUndefined: Self = StObject.set(x, "groupId", js.undefined)
     
     @scala.inline
-    def setHideLabel(value: `true` with js.UndefOr[Boolean]): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
+    def setHideLabel(value: `true` & js.UndefOr[Boolean]): Self = StObject.set(x, "hideLabel", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLabel(value: String): Self = StObject.set(x, "label", value.asInstanceOf[js.Any])
@@ -94,5 +93,8 @@ object DefaultValue {
     
     @scala.inline
     def setUsedUndefined: Self = StObject.set(x, "used", js.undefined)
+    
+    @scala.inline
+    def setValue(value: Unit): Self = StObject.set(x, "value", value.asInstanceOf[js.Any])
   }
 }

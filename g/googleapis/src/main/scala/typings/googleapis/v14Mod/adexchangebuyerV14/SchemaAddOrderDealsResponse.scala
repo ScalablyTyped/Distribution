@@ -2,21 +2,19 @@ package typings.googleapis.v14Mod.adexchangebuyerV14
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaAddOrderDealsResponse extends StObject {
   
   /**
     * List of deals added (in the same proposal as passed in the request)
     */
-  var deals: js.UndefOr[js.Array[SchemaMarketplaceDeal]] = js.native
+  var deals: js.UndefOr[js.Array[SchemaMarketplaceDeal]] = js.undefined
   
   /**
     * The updated revision number for the proposal.
     */
-  var proposalRevisionNumber: js.UndefOr[String] = js.native
+  var proposalRevisionNumber: js.UndefOr[String] = js.undefined
 }
 object SchemaAddOrderDealsResponse {
   

@@ -2,26 +2,24 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserContext extends StObject {
   
   /**
     * The domain associated with the user.
     */
-  var DomainId: js.UndefOr[String] = js.native
+  var DomainId: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the user's profile.
     */
-  var UserProfileArn: js.UndefOr[String] = js.native
+  var UserProfileArn: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the user's profile.
     */
-  var UserProfileName: js.UndefOr[String] = js.native
+  var UserProfileName: js.UndefOr[String] = js.undefined
 }
 object UserContext {
   

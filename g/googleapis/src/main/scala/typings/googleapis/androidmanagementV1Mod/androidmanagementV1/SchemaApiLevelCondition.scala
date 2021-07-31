@@ -2,7 +2,6 @@ package typings.googleapis.androidmanagementV1Mod.androidmanagementV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,7 +9,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * level on the device doesn&#39;t meet a minimum requirement. There can only
   * be one rule with this type of condition per policy.
   */
-@js.native
 trait SchemaApiLevelCondition extends StObject {
   
   /**
@@ -18,7 +16,7 @@ trait SchemaApiLevelCondition extends StObject {
     * doesn&#39;t meet the minimum requirement, this condition is satisfied.
     * Must be greater than zero.
     */
-  var minApiLevel: js.UndefOr[Double] = js.native
+  var minApiLevel: js.UndefOr[Double] = js.undefined
 }
 object SchemaApiLevelCondition {
   

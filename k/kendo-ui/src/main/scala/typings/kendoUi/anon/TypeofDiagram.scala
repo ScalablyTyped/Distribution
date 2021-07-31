@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.dataviz.ui.Diagram
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofDiagram extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Diagram = js.native
+  def extend(proto: js.Object): Diagram
   
   /* static member */
-  var fn: Diagram = js.native
+  var fn: Diagram
 }
 object TypeofDiagram {
   

@@ -2,19 +2,17 @@ package typings.googleCloudStorage.fileMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CopyOptions extends StObject {
   
-  var destinationKmsKeyName: js.UndefOr[String] = js.native
+  var destinationKmsKeyName: js.UndefOr[String] = js.undefined
   
-  var predefinedAcl: js.UndefOr[String] = js.native
+  var predefinedAcl: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
-  var userProject: js.UndefOr[String] = js.native
+  var userProject: js.UndefOr[String] = js.undefined
 }
 object CopyOptions {
   

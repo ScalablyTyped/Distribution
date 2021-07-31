@@ -11,8 +11,8 @@ A tiny script for generating attractive random colors
 | Full name          | randomcolor |
 | Keywords           | attractive, random, color, generator |
 | # releases         | 4 |
-| # dependents       | 172 |
-| # downloads        | 2670949 |
+| # dependents       | 182 |
+| # downloads        | 2955302 |
 | # stars            | 14 |
 
 ## Links

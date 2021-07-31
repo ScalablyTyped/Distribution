@@ -17,10 +17,13 @@ import typings.ethersprojectWordlists.mod.Wordlist
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@ethersproject/wallet", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@ethersproject/wallet", "Wallet")
   @js.native
@@ -37,19 +40,31 @@ object mod {
     
     def _mnemonic(): Mnemonic = js.native
     
+    /* CompleteClass */
+    override def _signTypedData(
+      domain: TypedDataDomain,
+      types: Record[String, js.Array[TypedDataField]],
+      value: Record[String, js.Any]
+    ): js.Promise[String] = js.native
+    
     def _signingKey(): SigningKey = js.native
     
+    /* CompleteClass */
+    override val address: String = js.native
+    
     def encrypt(password: String): js.Promise[String] = js.native
-    def encrypt(password: String, options: js.UndefOr[scala.Nothing], progressCallback: ProgressCallback): js.Promise[String] = js.native
     def encrypt(password: String, options: js.Any): js.Promise[String] = js.native
     def encrypt(password: String, options: js.Any, progressCallback: ProgressCallback): js.Promise[String] = js.native
+    def encrypt(password: String, options: Unit, progressCallback: ProgressCallback): js.Promise[String] = js.native
     def encrypt(password: Bytes): js.Promise[String] = js.native
-    def encrypt(password: Bytes, options: js.UndefOr[scala.Nothing], progressCallback: ProgressCallback): js.Promise[String] = js.native
     def encrypt(password: Bytes, options: js.Any): js.Promise[String] = js.native
     def encrypt(password: Bytes, options: js.Any, progressCallback: ProgressCallback): js.Promise[String] = js.native
+    def encrypt(password: Bytes, options: Unit, progressCallback: ProgressCallback): js.Promise[String] = js.native
     
     def mnemonic: Mnemonic = js.native
     
+    /* CompleteClass */
+    override val privateKey: String = js.native
     @JSName("privateKey")
     def privateKey_MWallet: String = js.native
     
@@ -63,63 +78,52 @@ object mod {
   /* static members */
   object Wallet {
     
+    @JSImport("@ethersproject/wallet", "Wallet")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       *  Static methods to create Wallet instances.
       */
-    @JSImport("@ethersproject/wallet", "Wallet.createRandom")
-    @js.native
-    def createRandom(): Wallet = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.createRandom")
-    @js.native
-    def createRandom(options: js.Any): Wallet = js.native
+    @scala.inline
+    def createRandom(): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")().asInstanceOf[Wallet]
+    @scala.inline
+    def createRandom(options: js.Any): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("createRandom")(options.asInstanceOf[js.Any]).asInstanceOf[Wallet]
     
-    @JSImport("@ethersproject/wallet", "Wallet.fromEncryptedJson")
-    @js.native
-    def fromEncryptedJson(json: String, password: String): js.Promise[Wallet] = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.fromEncryptedJson")
-    @js.native
-    def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[Wallet] = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.fromEncryptedJson")
-    @js.native
-    def fromEncryptedJson(json: String, password: Bytes): js.Promise[Wallet] = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.fromEncryptedJson")
-    @js.native
-    def fromEncryptedJson(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[Wallet] = js.native
+    @scala.inline
+    def fromEncryptedJson(json: String, password: String): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    @scala.inline
+    def fromEncryptedJson(json: String, password: String, progressCallback: ProgressCallback): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    @scala.inline
+    def fromEncryptedJson(json: String, password: Bytes): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
+    @scala.inline
+    def fromEncryptedJson(json: String, password: Bytes, progressCallback: ProgressCallback): js.Promise[Wallet] = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJson")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any], progressCallback.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Wallet]]
     
-    @JSImport("@ethersproject/wallet", "Wallet.fromEncryptedJsonSync")
-    @js.native
-    def fromEncryptedJsonSync(json: String, password: String): Wallet = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.fromEncryptedJsonSync")
-    @js.native
-    def fromEncryptedJsonSync(json: String, password: Bytes): Wallet = js.native
+    @scala.inline
+    def fromEncryptedJsonSync(json: String, password: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    @scala.inline
+    def fromEncryptedJsonSync(json: String, password: Bytes): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromEncryptedJsonSync")(json.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[Wallet]
     
-    @JSImport("@ethersproject/wallet", "Wallet.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String): Wallet = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, path: js.UndefOr[scala.Nothing], wordlist: Wordlist): Wallet = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, path: String): Wallet = js.native
-    @JSImport("@ethersproject/wallet", "Wallet.fromMnemonic")
-    @js.native
-    def fromMnemonic(mnemonic: String, path: String, wordlist: Wordlist): Wallet = js.native
+    @scala.inline
+    def fromMnemonic(mnemonic: String): Wallet = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any]).asInstanceOf[Wallet]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, path: String): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, path: String, wordlist: Wordlist): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Wallet]
+    @scala.inline
+    def fromMnemonic(mnemonic: String, path: Unit, wordlist: Wordlist): Wallet = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMnemonic")(mnemonic.asInstanceOf[js.Any], path.asInstanceOf[js.Any], wordlist.asInstanceOf[js.Any])).asInstanceOf[Wallet]
   }
   
-  @JSImport("@ethersproject/wallet", "verifyMessage")
-  @js.native
-  def verifyMessage(message: String, signature: SignatureLike): String = js.native
-  @JSImport("@ethersproject/wallet", "verifyMessage")
-  @js.native
-  def verifyMessage(message: Bytes, signature: SignatureLike): String = js.native
+  @scala.inline
+  def verifyMessage(message: String, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(message.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def verifyMessage(message: Bytes, signature: SignatureLike): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyMessage")(message.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("@ethersproject/wallet", "verifyTypedData")
-  @js.native
+  @scala.inline
   def verifyTypedData(
     domain: TypedDataDomain,
     types: Record[String, js.Array[TypedDataField]],
-    value: Record[String, _],
+    value: Record[String, js.Any],
     signature: SignatureLike
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyTypedData")(domain.asInstanceOf[js.Any], types.asInstanceOf[js.Any], value.asInstanceOf[js.Any], signature.asInstanceOf[js.Any])).asInstanceOf[String]
 }

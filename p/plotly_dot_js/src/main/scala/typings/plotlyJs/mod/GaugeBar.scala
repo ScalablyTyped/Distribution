@@ -3,17 +3,15 @@ package typings.plotlyJs.mod
 import typings.plotlyJs.anon.PartialGaugeLine
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GaugeBar extends StObject {
   
-  var color: Color = js.native
+  var color: Color
   
-  var line: PartialGaugeLine = js.native
+  var line: PartialGaugeLine
   
-  var thickness: Double = js.native
+  var thickness: Double
 }
 object GaugeBar {
   

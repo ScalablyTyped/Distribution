@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.lex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SlotTypeEnumerationValue extends StObject {
   
   /**
     * Additional values related to the slot type value. Each item must be less than or equal to 140 characters in length.
     */
-  var synonyms: js.UndefOr[js.Array[String]] = js.native
+  var synonyms: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The value of the slot type. Must be less than or equal to 140 characters in length.
     */
-  var value: String = js.native
+  var value: String
 }
 object SlotTypeEnumerationValue {
   

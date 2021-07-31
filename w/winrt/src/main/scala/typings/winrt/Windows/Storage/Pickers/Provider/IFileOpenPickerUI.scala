@@ -4,31 +4,29 @@ import typings.winrt.Windows.Foundation.Collections.IVectorView
 import typings.winrt.Windows.Storage.IStorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileOpenPickerUI extends StObject {
   
-  def addFile(id: String, file: IStorageFile): AddFileResult = js.native
+  def addFile(id: String, file: IStorageFile): AddFileResult
   
-  var allowedFileTypes: IVectorView[String] = js.native
+  var allowedFileTypes: IVectorView[String]
   
-  def canAddFile(file: IStorageFile): Boolean = js.native
+  def canAddFile(file: IStorageFile): Boolean
   
-  def containsFile(id: String): Boolean = js.native
+  def containsFile(id: String): Boolean
   
-  var onclosing: js.Any = js.native
+  var onclosing: js.Any
   
-  var onfileremoved: js.Any = js.native
+  var onfileremoved: js.Any
   
-  def removeFile(id: String): Unit = js.native
+  def removeFile(id: String): Unit
   
-  var selectionMode: FileSelectionMode = js.native
+  var selectionMode: FileSelectionMode
   
-  var settingsIdentifier: String = js.native
+  var settingsIdentifier: String
   
-  var title: String = js.native
+  var title: String
 }
 object IFileOpenPickerUI {
   

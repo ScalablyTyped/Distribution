@@ -2,7 +2,6 @@ package typings.pixiJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -144,14 +143,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSImport("pixi.js", "Filter")
 @js.native
 class Filter ()
-  extends typings.pixiJs.PIXI.Filter {
+  extends StObject
+     with typings.pixiJs.PIXI.Filter {
   def this(vertexSrc: String) = this()
-  def this(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String) = this()
   def this(vertexSrc: String, fragmentSrc: String) = this()
-  def this(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
-  def this(vertexSrc: js.UndefOr[scala.Nothing], fragmentSrc: String, uniforms: js.Any) = this()
-  def this(vertexSrc: String, fragmentSrc: js.UndefOr[scala.Nothing], uniforms: js.Any) = this()
+  def this(vertexSrc: Unit, fragmentSrc: String) = this()
   def this(vertexSrc: String, fragmentSrc: String, uniforms: js.Any) = this()
+  def this(vertexSrc: String, fragmentSrc: Unit, uniforms: js.Any) = this()
+  def this(vertexSrc: Unit, fragmentSrc: String, uniforms: js.Any) = this()
+  def this(vertexSrc: Unit, fragmentSrc: Unit, uniforms: js.Any) = this()
+  
+  /**
+    * Program that the shader uses
+    *
+    * @member {PIXI.Program} PIXI.Shader#program
+    */
+  /* CompleteClass */
+  var program: typings.pixiJs.PIXI.Program = js.native
+  
+  /**
+    * Shader uniform values, shortcut for `uniformGroup.uniforms`
+    * @readonly
+    * @member {object}
+    */
+  /* CompleteClass */
+  override val uniforms: js.Any = js.native
 }
 object Filter {
   

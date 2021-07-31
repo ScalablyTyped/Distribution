@@ -119,7 +119,6 @@ import typings.std.Partial
 import typings.std.Pick
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object columnMod {
@@ -140,17 +139,17 @@ object columnMod {
   /* Inlined {None <TAsComponent extends react.react.ElementType<any> = react.react.ElementType<any>>(props : {  as :TAsComponent | undefined,   touch :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   mobile :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   tablet :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   desktop :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   widescreen :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   fullhd :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined} & rbx.rbx/base/helpers.HelpersPropsOverrides & std.Pick<rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}, 'hidden' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly'> & rbx.rbx/grid/columns/column.ColumnBreakpointOptions & std.Pick<react.react.ComponentProps<TAsComponent>, std.Exclude<keyof react.react.ComponentProps<TAsComponent>, 'hidden' | 'overlay' | 'size' | 'italic' | 'relative' | 'tooltip' | 'touch' | 'as' | 'mobile' | 'tablet' | 'desktop' | 'widescreen' | 'fullhd' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly' | 'narrow' | 'offset'>> & react.react.RefAttributes<TAsComponent extends 'symbol' | 'object' | 'big' | 'link' | 'small' | 'sub' | 'sup' | 'track' | 'progress' | 'a' | 'abbr' | 'address' | 'area' | 'article' | 'aside' | 'audio' | 'b' | 'base' | 'bdi' | 'bdo' | 'blockquote' | 'body' | 'br' | 'button' | 'canvas' | 'caption' | 'cite' | 'code' | 'col' | 'colgroup' | 'data' | 'datalist' | 'dd' | 'del' | 'details' | 'dfn' | 'dialog' | 'div' | 'dl' | 'dt' | 'em' | 'embed' | 'fieldset' | 'figcaption' | 'figure' | 'footer' | 'form' | 'h1' | 'h2' | 'h3' | 'h4' | 'h5' | 'h6' | 'head' | 'header' | 'hgroup' | 'hr' | 'html' | 'i' | 'iframe' | 'img' | 'input' | 'ins' | 'kbd' | 'label' | 'legend' | 'li' | 'main' | 'map' | 'mark' | 'menu' | 'meta' | 'meter' | 'nav' | 'noscript' | 'ol' | 'optgroup' | 'option' | 'output' | 'p' | 'param' | 'picture' | 'pre' | 'q' | 'rp' | 'rt' | 'ruby' | 's' | 'samp' | 'script' | 'section' | 'select' | 'source' | 'span' | 'strong' | 'style' | 'summary' | 'table' | 'tbody' | 'td' | 'template' | 'textarea' | 'tfoot' | 'th' | 'thead' | 'time' | 'title' | 'tr' | 'u' | 'ul' | 'var' | 'video' | 'wbr' | 'circle' | 'clipPath' | 'defs' | 'desc' | 'ellipse' | 'feBlend' | 'feColorMatrix' | 'feComponentTransfer' | 'feComposite' | 'feConvolveMatrix' | 'feDiffuseLighting' | 'feDisplacementMap' | 'feDistantLight' | 'feFlood' | 'feFuncA' | 'feFuncB' | 'feFuncG' | 'feFuncR' | 'feGaussianBlur' | 'feImage' | 'feMerge' | 'feMergeNode' | 'feMorphology' | 'feOffset' | 'fePointLight' | 'feSpecularLighting' | 'feSpotLight' | 'feTile' | 'feTurbulence' | 'filter' | 'foreignObject' | 'g' | 'image' | 'line' | 'linearGradient' | 'marker' | 'mask' | 'metadata' | 'path' | 'pattern' | 'polygon' | 'polyline' | 'radialGradient' | 'rect' | 'stop' | 'svg' | 'switch' | 'text' | 'textPath' | 'tspan' | 'use' | 'view' | 'menuitem' | 'keygen' | 'noindex' | 'webview' | 'animate' | 'animateMotion' | 'animateTransform' | 'feDropShadow' | 'mpath' ? rbx.rbx/base/exotic.FromReactType<TAsComponent> : TAsComponent>): react.react.<global>.JSX.Element | null,   defaultProps :{  as :react.react.ElementType<any>} & std.Partial<rbx.rbx/base/helpers.HelpersPropsOverrides & std.Pick<rbx.rbx/base/helpers/badge.BadgeHelpersProps & rbx.rbx/base/helpers/float.FloatHelpersProps & rbx.rbx/base/helpers/overflow.OverflowHelpersProps & rbx.rbx/base/helpers/overlay.OverlayHelpersProps & rbx.rbx/base/helpers/tooltip.TooltipHelpersProps & rbx.rbx/base/helpers/typography.TypographyHelpersProps & rbx.rbx/base/helpers/visibility.VisibilityHelpersProps & rbx.rbx/base/helpers/other.OtherHelpersProps & rbx.rbx/base/helpers/responsive.ResponsiveHelpersProps & {  className :string | undefined}, 'hidden' | 'overlay' | 'italic' | 'relative' | 'tooltip' | 'className' | 'badge' | 'badgeColor' | 'badgeOutlined' | 'badgeRounded' | 'badgeSize' | 'clearfix' | 'pull' | 'marginless' | 'paddingless' | 'radiusless' | 'shadowless' | 'unselectable' | 'clipped' | 'responsive' | 'textAlign' | 'textSize' | 'tooltipActive' | 'tooltipColor' | 'tooltipMultiline' | 'tooltipPosition' | 'tooltipResponsive' | 'backgroundColor' | 'textColor' | 'textTransform' | 'textWeight' | 'invisible' | 'srOnly'> & {  touch :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   mobile :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   tablet :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   desktop :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   widescreen :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined,   fullhd :rbx.rbx/grid/columns/column.ColumnBreakpointOptions | undefined} & rbx.rbx/grid/columns/column.ColumnBreakpointOptions & std.Pick<any, string | number | symbol>>,   displayName :string,   propTypes :react.react.WeakValidationMap<{[x: string] : any, [x: number] : any}>,   Group :rbx.rbx/base/exotic.ForwardRefAsExoticComponent<rbx.rbx/grid/columns/column-group.ColumnGroupProps, react.react.ElementType<any>>} & std.Pick<react.react.ForwardRefExoticComponent<react.react.ElementType<any>>, 'displayName' | '$$typeof'> */
   object Column {
     
-    @JSImport("rbx/grid/columns/column", "Column")
-    @js.native
-    def apply[TAsComponent /* <: ElementType[_] */](
-      props: Desktop[TAsComponent] with HelpersPropsOverrides with PickBadgeHelpersPropsFloa with ColumnBreakpointOptions with (Pick[
+    @scala.inline
+    def apply[TAsComponent /* <: ElementType[js.Any] */](
+      props: Desktop[TAsComponent] & HelpersPropsOverrides & PickBadgeHelpersPropsFloa & ColumnBreakpointOptions & (Pick[
           ComponentProps[TAsComponent], 
           Exclude[
             /* keyof react.react.ComponentProps<TAsComponent> */ String, 
             hidden | overlay | size | italic | relative | tooltip | touch | as | mobile | tablet | desktop | widescreen | fullhd | className | badge | badgeColor | badgeOutlined | badgeRounded | badgeSize | clearfix | pull | marginless | paddingless | radiusless | shadowless | unselectable | clipped | responsive | textAlign | textSize | tooltipActive | tooltipColor | tooltipMultiline | tooltipPosition | tooltipResponsive | backgroundColor | textColor | textTransform | textWeight | invisible | srOnly | narrow | offset
           ]
-        ]) with (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
-    ): Element | Null = js.native
+        ]) & (RefAttributes[TAsComponent | FromReactType[TAsComponent]])
+    ): Element | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[Element | Null]
+    
     @JSImport("rbx/grid/columns/column", "Column")
     @js.native
     val ^ : js.Any = js.native
@@ -163,13 +162,13 @@ object columnMod {
     
     @JSImport("rbx/grid/columns/column", "Column.defaultProps")
     @js.native
-    def defaultProps: AsElementType with (Partial[
-        HelpersPropsOverrides with PickBadgeHelpersPropsFloa with Fullhd with ColumnBreakpointOptions with (Pick[_, String | Double | js.Symbol])
+    def defaultProps: AsElementType & (Partial[
+        HelpersPropsOverrides & PickBadgeHelpersPropsFloa & Fullhd & ColumnBreakpointOptions & (Pick[js.Any, String | Double | js.Symbol])
       ]) = js.native
     @scala.inline
     def defaultProps_=(
-      x: AsElementType with (Partial[
-          HelpersPropsOverrides with PickBadgeHelpersPropsFloa with Fullhd with ColumnBreakpointOptions with (Pick[_, String | Double | js.Symbol])
+      x: AsElementType & (Partial[
+          HelpersPropsOverrides & PickBadgeHelpersPropsFloa & Fullhd & ColumnBreakpointOptions & (Pick[js.Any, String | Double | js.Symbol])
         ])
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
@@ -190,18 +189,17 @@ object columnMod {
     object propTypes
   }
   
-  @js.native
   trait ColumnBreakpointOptions extends StObject {
     
-    var narrow: js.UndefOr[Boolean] = js.native
+    var narrow: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[
         `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-      ] = js.native
+      ] = js.undefined
     
     var size: js.UndefOr[
         `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-      ] = js.native
+      ] = js.undefined
   }
   object ColumnBreakpointOptions {
     
@@ -238,30 +236,29 @@ object columnMod {
     }
   }
   
-  @js.native
   trait ColumnModifierProps extends StObject {
     
-    var desktop: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var desktop: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var mobile: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var mobile: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var narrow: js.UndefOr[Boolean] = js.native
+    var narrow: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[
         `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-      ] = js.native
+      ] = js.undefined
     
     var size: js.UndefOr[
         `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-      ] = js.native
+      ] = js.undefined
     
-    var tablet: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var tablet: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var touch: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var touch: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   }
   object ColumnModifierProps {
     
@@ -334,104 +331,103 @@ object columnMod {
     }
   }
   
-  @js.native
   trait ColumnProps extends StObject {
     
     var backgroundColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var badge: js.UndefOr[Double | String] = js.native
+    var badge: js.UndefOr[Double | String] = js.undefined
     
     var badgeColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var badgeOutlined: js.UndefOr[Boolean] = js.native
+    var badgeOutlined: js.UndefOr[Boolean] = js.undefined
     
-    var badgeRounded: js.UndefOr[Boolean] = js.native
+    var badgeRounded: js.UndefOr[Boolean] = js.undefined
     
-    var badgeSize: js.UndefOr[small | medium | large] = js.native
+    var badgeSize: js.UndefOr[small | medium | large] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var clearfix: js.UndefOr[Boolean] = js.native
+    var clearfix: js.UndefOr[Boolean] = js.undefined
     
-    var clipped: js.UndefOr[Boolean] = js.native
+    var clipped: js.UndefOr[Boolean] = js.undefined
     
-    var desktop: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var desktop: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var fullhd: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var hidden: js.UndefOr[Boolean] = js.native
+    var hidden: js.UndefOr[Boolean] = js.undefined
     
-    var invisible: js.UndefOr[Boolean] = js.native
+    var invisible: js.UndefOr[Boolean] = js.undefined
     
-    var italic: js.UndefOr[Boolean] = js.native
+    var italic: js.UndefOr[Boolean] = js.undefined
     
-    var marginless: js.UndefOr[Boolean] = js.native
+    var marginless: js.UndefOr[Boolean] = js.undefined
     
-    var mobile: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var mobile: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var narrow: js.UndefOr[Boolean] = js.native
+    var narrow: js.UndefOr[Boolean] = js.undefined
     
     var offset: js.UndefOr[
         `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-      ] = js.native
+      ] = js.undefined
     
-    var overlay: js.UndefOr[Boolean] = js.native
+    var overlay: js.UndefOr[Boolean] = js.undefined
     
-    var paddingless: js.UndefOr[Boolean] = js.native
+    var paddingless: js.UndefOr[Boolean] = js.undefined
     
-    var pull: js.UndefOr[left | right] = js.native
+    var pull: js.UndefOr[left | right] = js.undefined
     
-    var radiusless: js.UndefOr[Boolean] = js.native
+    var radiusless: js.UndefOr[Boolean] = js.undefined
     
-    var relative: js.UndefOr[Boolean] = js.native
+    var relative: js.UndefOr[Boolean] = js.undefined
     
-    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.native
+    var responsive: js.UndefOr[BinVariablesbreakpointsLi] = js.undefined
     
-    var shadowless: js.UndefOr[Boolean] = js.native
+    var shadowless: js.UndefOr[Boolean] = js.undefined
     
     var size: js.UndefOr[
         `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
-      ] = js.native
+      ] = js.undefined
     
-    var srOnly: js.UndefOr[Boolean] = js.native
+    var srOnly: js.UndefOr[Boolean] = js.undefined
     
-    var tablet: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var tablet: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var textAlign: js.UndefOr[centered | justified | left | right] = js.native
+    var textAlign: js.UndefOr[centered | justified | left | right] = js.undefined
     
     var textColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link | `black-bis` | `black-ter` | `grey-darker` | `grey-dark` | grey | `grey-light` | `grey-lighter` | `white-ter` | `white-bis`
-      ] = js.native
+      ] = js.undefined
     
-    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.native
+    var textSize: js.UndefOr[`1` | `2` | `3` | `4` | `5` | `6` | `7`] = js.undefined
     
-    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.native
+    var textTransform: js.UndefOr[capitalized | lowercase | uppercase] = js.undefined
     
-    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.native
+    var textWeight: js.UndefOr[light | medium | normal | semibold | bold] = js.undefined
     
-    var tooltip: js.UndefOr[Double | String] = js.native
+    var tooltip: js.UndefOr[Double | String] = js.undefined
     
-    var tooltipActive: js.UndefOr[Boolean] = js.native
+    var tooltipActive: js.UndefOr[Boolean] = js.undefined
     
     var tooltipColor: js.UndefOr[
         primary | success | info | warning | danger | light | dark | white | black | link
-      ] = js.native
+      ] = js.undefined
     
-    var tooltipMultiline: js.UndefOr[Boolean] = js.native
+    var tooltipMultiline: js.UndefOr[Boolean] = js.undefined
     
-    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.native
+    var tooltipPosition: js.UndefOr[top | right | bottom | left] = js.undefined
     
-    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.native
+    var tooltipResponsive: js.UndefOr[KinVariablesbreakpointsto] = js.undefined
     
-    var touch: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var touch: js.UndefOr[ColumnBreakpointOptions] = js.undefined
     
-    var unselectable: js.UndefOr[Boolean] = js.native
+    var unselectable: js.UndefOr[Boolean] = js.undefined
     
-    var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.native
+    var widescreen: js.UndefOr[ColumnBreakpointOptions] = js.undefined
   }
   object ColumnProps {
     
@@ -707,10 +703,9 @@ object columnMod {
   }
   
   /* Inlined rbx.rbx/types.Prefer<rbx.rbx/grid/columns/column.ColumnVariablesOverrides, rbx.rbx/grid/columns/column.ColumnVariablesDefaults> */
-  @js.native
   trait ColumnVariables extends StObject {
     
-    var sizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full = js.native
+    var sizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
   }
   object ColumnVariables {
     
@@ -732,10 +727,9 @@ object columnMod {
     }
   }
   
-  @js.native
   trait ColumnVariablesDefaults extends StObject {
     
-    var sizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full = js.native
+    var sizes: `0` | `1` | `2` | `3` | `4` | `5` | `6` | `7` | `8` | `9` | `10` | `11` | `12` | `one-third` | `two-thirds` | `one-quarter` | half | `three-quarters` | `one-fifth` | `two-fifths` | `three-fifths` | `four-fifths` | full
   }
   object ColumnVariablesDefaults {
     
@@ -757,6 +751,5 @@ object columnMod {
     }
   }
   
-  @js.native
   trait ColumnVariablesOverrides extends StObject
 }

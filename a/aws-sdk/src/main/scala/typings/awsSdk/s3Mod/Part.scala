@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Part extends StObject {
   
   /**
     * Entity tag returned when the part was uploaded.
     */
-  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.native
+  var ETag: js.UndefOr[typings.awsSdk.s3Mod.ETag] = js.undefined
   
   /**
     * Date and time at which the part was uploaded.
     */
-  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.native
+  var LastModified: js.UndefOr[typings.awsSdk.s3Mod.LastModified] = js.undefined
   
   /**
     * Part number identifying the part. This is a positive integer between 1 and 10,000.
     */
-  var PartNumber: js.UndefOr[typings.awsSdk.s3Mod.PartNumber] = js.native
+  var PartNumber: js.UndefOr[typings.awsSdk.s3Mod.PartNumber] = js.undefined
   
   /**
     * Size in bytes of the uploaded part data.
     */
-  var Size: js.UndefOr[typings.awsSdk.s3Mod.Size] = js.native
+  var Size: js.UndefOr[typings.awsSdk.s3Mod.Size] = js.undefined
 }
 object Part {
   

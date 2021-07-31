@@ -2,21 +2,19 @@ package typings.awsSdk.guarddutyMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DestinationProperties extends StObject {
   
   /**
     * The ARN of the resource to publish to.
     */
-  var DestinationArn: js.UndefOr[String] = js.native
+  var DestinationArn: js.UndefOr[String] = js.undefined
   
   /**
     * The ARN of the KMS key to use for encryption.
     */
-  var KmsKeyArn: js.UndefOr[String] = js.native
+  var KmsKeyArn: js.UndefOr[String] = js.undefined
 }
 object DestinationProperties {
   

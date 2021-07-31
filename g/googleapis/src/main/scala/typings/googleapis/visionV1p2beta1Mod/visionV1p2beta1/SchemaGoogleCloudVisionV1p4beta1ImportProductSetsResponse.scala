@@ -2,7 +2,6 @@ package typings.googleapis.visionV1p2beta1Mod.visionV1p2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,13 +9,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * returned by the google.longrunning.Operations.GetOperation method in the
   * returned google.longrunning.Operation.response field.
   */
-@js.native
 trait SchemaGoogleCloudVisionV1p4beta1ImportProductSetsResponse extends StObject {
   
   /**
     * The list of reference_images that are imported successfully.
     */
-  var referenceImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1ReferenceImage]] = js.native
+  var referenceImages: js.UndefOr[js.Array[SchemaGoogleCloudVisionV1p4beta1ReferenceImage]] = js.undefined
   
   /**
     * The rpc status for each ImportProductSet request, including both
@@ -24,7 +22,7 @@ trait SchemaGoogleCloudVisionV1p4beta1ImportProductSetsResponse extends StObject
     * lines in the csv file, and statuses[i] stores the success or failure
     * status of processing the i-th line of the csv, starting from line 0.
     */
-  var statuses: js.UndefOr[js.Array[SchemaStatus]] = js.native
+  var statuses: js.UndefOr[js.Array[SchemaStatus]] = js.undefined
 }
 object SchemaGoogleCloudVisionV1p4beta1ImportProductSetsResponse {
   

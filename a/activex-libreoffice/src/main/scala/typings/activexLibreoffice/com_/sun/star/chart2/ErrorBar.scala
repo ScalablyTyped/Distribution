@@ -15,28 +15,27 @@ import typings.activexLibreoffice.com_.sun.star.util.Color
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ErrorBar
-  extends XDataSink
+  extends StObject
      with LineProperties
+     with XDataSink
      with XDataSource {
   
   /** @see com.sun.star.chart.ErrorBarStyle */
-  var ErrorBarStyle: Double = js.native
+  var ErrorBarStyle: Double
   
-  var NegativeError: Double = js.native
+  var NegativeError: Double
   
-  var PositiveError: Double = js.native
+  var PositiveError: Double
   
-  var ShowNegativeError: Boolean = js.native
+  var ShowNegativeError: Boolean
   
-  var ShowPositiveError: Boolean = js.native
+  var ShowPositiveError: Boolean
   
   /** The weight for the standard deviation. */
-  var Weight: Double = js.native
+  var Weight: Double
 }
 object ErrorBar {
   

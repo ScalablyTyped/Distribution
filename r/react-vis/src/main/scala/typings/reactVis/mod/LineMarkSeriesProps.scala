@@ -5,24 +5,24 @@ import typings.reactVis.reactVisStrings.dashed
 import typings.reactVis.reactVisStrings.solid
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait LineMarkSeriesProps extends AbstractSeriesProps[LineMarkSeriesPoint] {
+trait LineMarkSeriesProps
+  extends StObject
+     with AbstractSeriesProps[LineMarkSeriesPoint] {
   
-  var curve: js.UndefOr[String | (js.Function1[/* x */ js.Any, _])] = js.native
+  var curve: js.UndefOr[String | (js.Function1[/* x */ js.Any, js.Any])] = js.undefined
   
   // default: null
-  var getNull: js.UndefOr[RVGetNull[LineMarkSeriesPoint]] = js.native
+  var getNull: js.UndefOr[RVGetNull[LineMarkSeriesPoint]] = js.undefined
   
-  var lineStyle: js.UndefOr[CSSProperties] = js.native
-  
-  // default: {}
-  var markStyle: js.UndefOr[CSSProperties] = js.native
+  var lineStyle: js.UndefOr[CSSProperties] = js.undefined
   
   // default: {}
-  var strokeStyle: js.UndefOr[dashed | solid] = js.native
+  var markStyle: js.UndefOr[CSSProperties] = js.undefined
+  
+  // default: {}
+  var strokeStyle: js.UndefOr[dashed | solid] = js.undefined
 }
 object LineMarkSeriesProps {
   
@@ -36,10 +36,10 @@ object LineMarkSeriesProps {
   implicit class LineMarkSeriesPropsMutableBuilder[Self <: LineMarkSeriesProps] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setCurve(value: String | (js.Function1[/* x */ js.Any, _])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
+    def setCurve(value: String | (js.Function1[/* x */ js.Any, js.Any])): Self = StObject.set(x, "curve", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setCurveFunction1(value: /* x */ js.Any => _): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
+    def setCurveFunction1(value: /* x */ js.Any => js.Any): Self = StObject.set(x, "curve", js.Any.fromFunction1(value))
     
     @scala.inline
     def setCurveUndefined: Self = StObject.set(x, "curve", js.undefined)

@@ -2,17 +2,15 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   // Optional. Height of the image, in pixels. Read-only.
-  var height: js.UndefOr[NullableOption[Double]] = js.native
+  var height: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // Optional. Width of the image, in pixels. Read-only.
-  var width: js.UndefOr[NullableOption[Double]] = js.native
+  var width: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object Image {
   

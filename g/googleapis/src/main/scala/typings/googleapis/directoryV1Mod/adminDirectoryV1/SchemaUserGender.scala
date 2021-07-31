@@ -2,10 +2,8 @@ package typings.googleapis.directoryV1Mod.adminDirectoryV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaUserGender extends StObject {
   
   /**
@@ -13,17 +11,17 @@ trait SchemaUserGender extends StObject {
     * to the profile owner by humans, for example &quot;he/him/his&quot; or
     * &quot;they/them/their&quot;.
     */
-  var addressMeAs: js.UndefOr[String] = js.native
+  var addressMeAs: js.UndefOr[String] = js.undefined
   
   /**
     * Custom gender.
     */
-  var customGender: js.UndefOr[String] = js.native
+  var customGender: js.UndefOr[String] = js.undefined
   
   /**
     * Gender.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaUserGender {
   

@@ -4,20 +4,18 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object AjaxFileJQuery {
   
-  @js.native
   trait IAjaxFileJQueryExtension extends StObject {
     
-    def ajaxWithFile(jqueryOption: IJQueryOption): JQueryDeferred[_] = js.native
+    def ajaxWithFile(jqueryOption: IJQueryOption): JQueryDeferred[js.Any]
   }
   object IAjaxFileJQueryExtension {
     
     @scala.inline
-    def apply(ajaxWithFile: IJQueryOption => JQueryDeferred[_]): IAjaxFileJQueryExtension = {
+    def apply(ajaxWithFile: IJQueryOption => JQueryDeferred[js.Any]): IAjaxFileJQueryExtension = {
       val __obj = js.Dynamic.literal(ajaxWithFile = js.Any.fromFunction1(ajaxWithFile))
       __obj.asInstanceOf[IAjaxFileJQueryExtension]
     }
@@ -26,36 +24,35 @@ object AjaxFileJQuery {
     implicit class IAjaxFileJQueryExtensionMutableBuilder[Self <: IAjaxFileJQueryExtension] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAjaxWithFile(value: IJQueryOption => JQueryDeferred[_]): Self = StObject.set(x, "ajaxWithFile", js.Any.fromFunction1(value))
+      def setAjaxWithFile(value: IJQueryOption => JQueryDeferred[js.Any]): Self = StObject.set(x, "ajaxWithFile", js.Any.fromFunction1(value))
     }
   }
   
-  @js.native
   trait IJQueryOption extends StObject {
     
-    var complete: js.UndefOr[js.Function2[/* jqXHR */ IJQueryXHR, /* textStatus */ String, _]] = js.native
+    var complete: js.UndefOr[js.Function2[/* jqXHR */ IJQueryXHR, /* textStatus */ String, js.Any]] = js.undefined
     
-    var data: js.UndefOr[js.Any] = js.native
+    var data: js.UndefOr[js.Any] = js.undefined
     
-    var dataType: js.UndefOr[String] = js.native
+    var dataType: js.UndefOr[String] = js.undefined
     
     var error: js.UndefOr[
-        js.Function3[/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String, _]
-      ] = js.native
+        js.Function3[/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String, js.Any]
+      ] = js.undefined
     
-    var files: js.UndefOr[js.Array[IFileData]] = js.native
+    var files: js.UndefOr[js.Array[IFileData]] = js.undefined
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
     var success: js.UndefOr[
-        js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR, _]
-      ] = js.native
+        js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR, js.Any]
+      ] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IJQueryOption {
     
@@ -69,7 +66,7 @@ object AjaxFileJQuery {
     implicit class IJQueryOptionMutableBuilder[Self <: IJQueryOption] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComplete(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String) => _): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
+      def setComplete(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String) => js.Any): Self = StObject.set(x, "complete", js.Any.fromFunction2(value))
       
       @scala.inline
       def setCompleteUndefined: Self = StObject.set(x, "complete", js.undefined)
@@ -87,7 +84,7 @@ object AjaxFileJQuery {
       def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
       
       @scala.inline
-      def setError(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String) => _): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
+      def setError(value: (/* jqXHR */ IJQueryXHR, /* textStatus */ String, /* errorThrown */ String) => js.Any): Self = StObject.set(x, "error", js.Any.fromFunction3(value))
       
       @scala.inline
       def setErrorUndefined: Self = StObject.set(x, "error", js.undefined)
@@ -108,7 +105,7 @@ object AjaxFileJQuery {
       def setGlobalUndefined: Self = StObject.set(x, "global", js.undefined)
       
       @scala.inline
-      def setSuccess(value: (/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR) => _): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
+      def setSuccess(value: (/* data */ js.Any, /* textStatus */ String, /* jqXHR */ IJQueryXHR) => js.Any): Self = StObject.set(x, "success", js.Any.fromFunction3(value))
       
       @scala.inline
       def setSuccessUndefined: Self = StObject.set(x, "success", js.undefined)
@@ -139,14 +136,14 @@ object AjaxFileJQuery {
     def abort(): Unit = js.native
     def abort(statusText: String): Unit = js.native
     
-    var beforeSend: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* settings */ JQueryAjaxSettings, _]] = js.native
+    var beforeSend: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* settings */ JQueryAjaxSettings, js.Any]] = js.native
     
-    var complete: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* textStatus */ String, _]] = js.native
+    var complete: js.UndefOr[js.Function2[/* jqXHR */ this.type, /* textStatus */ String, js.Any]] = js.native
     
-    var dataFilter: js.UndefOr[js.Function2[/* data */ js.Any, /* ty */ js.Any, _]] = js.native
+    var dataFilter: js.UndefOr[js.Function2[/* data */ js.Any, /* ty */ js.Any, js.Any]] = js.native
     
     var error: js.UndefOr[
-        js.Function3[/* jqXHR */ this.type, /* textStatus */ String, /* errorThrown */ String, _]
+        js.Function3[/* jqXHR */ this.type, /* textStatus */ String, /* errorThrown */ String, js.Any]
       ] = js.native
     
     def getAllResponseHeaders(): String = js.native
@@ -168,7 +165,7 @@ object AjaxFileJQuery {
     var statusText: String = js.native
     
     var success: js.UndefOr[
-        js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ this.type, _]
+        js.Function3[/* data */ js.Any, /* textStatus */ String, /* jqXHR */ this.type, js.Any]
       ] = js.native
   }
 }

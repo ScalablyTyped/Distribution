@@ -16,7 +16,6 @@ import typings.meteor.anon.`0`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -27,12 +26,10 @@ object mod {
     @js.native
     val ^ : js.Any = js.native
     
-    @JSImport("meteor/accounts-base", "Accounts.addEmail")
-    @js.native
-    def addEmail(userId: String, newEmail: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.addEmail")
-    @js.native
-    def addEmail(userId: String, newEmail: String, verified: Boolean): Unit = js.native
+    @scala.inline
+    def addEmail(userId: String, newEmail: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEmail")(userId.asInstanceOf[js.Any], newEmail.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def addEmail(userId: String, newEmail: String, verified: Boolean): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("addEmail")(userId.asInstanceOf[js.Any], newEmail.asInstanceOf[js.Any], verified.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *
@@ -61,20 +58,17 @@ object mod {
       * logged in, or with the error on error.
       *
       * */
-    @JSImport("meteor/accounts-base", "Accounts.callLoginMethod")
-    @js.native
-    def callLoginMethod(options: LoginMethodOptions): Unit = js.native
+    @scala.inline
+    def callLoginMethod(options: LoginMethodOptions): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("callLoginMethod")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.changePassword")
-    @js.native
-    def changePassword(oldPassword: String, newPassword: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.changePassword")
-    @js.native
+    @scala.inline
+    def changePassword(oldPassword: String, newPassword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changePassword")(oldPassword.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def changePassword(
       oldPassword: String,
       newPassword: String,
       callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("changePassword")(oldPassword.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     /**
       *
@@ -84,23 +78,19 @@ object mod {
       * properties `digest` and `algorithm` (in which case we bcrypt
       * `password.digest`).
       */
-    @JSImport("meteor/accounts-base", "Accounts._checkPassword")
-    @js.native
-    def checkPassword(user: User, password: Password): typings.meteor.anon.Error = js.native
+    @scala.inline
+    def checkPassword(user: User, password: Password): typings.meteor.anon.Error = (^.asInstanceOf[js.Dynamic].applyDynamic("_checkPassword")(user.asInstanceOf[js.Any], password.asInstanceOf[js.Any])).asInstanceOf[typings.meteor.anon.Error]
     
-    @JSImport("meteor/accounts-base", "Accounts.config")
-    @js.native
-    def config(options: AmbiguousErrorMessages): Unit = js.native
+    @scala.inline
+    def config(options: AmbiguousErrorMessages): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.createUser")
-    @js.native
-    def createUser(options: Email): String = js.native
-    @JSImport("meteor/accounts-base", "Accounts.createUser")
-    @js.native
+    @scala.inline
+    def createUser(options: Email): String = ^.asInstanceOf[js.Dynamic].applyDynamic("createUser")(options.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
     def createUser(
       options: Email,
       callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): String = js.native
+    ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("createUser")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[String]
     
     @JSImport("meteor/accounts-base", "Accounts.emailTemplates")
     @js.native
@@ -108,88 +98,68 @@ object mod {
     @scala.inline
     def emailTemplates_=(x: typings.meteor.mod.EmailTemplates): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("emailTemplates")(x.asInstanceOf[js.Any])
     
-    @JSImport("meteor/accounts-base", "Accounts.findUserByEmail")
-    @js.native
-    def findUserByEmail(email: String): js.UndefOr[User | Null] = js.native
+    @scala.inline
+    def findUserByEmail(email: String): js.UndefOr[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByEmail")(email.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[User | Null]]
     
-    @JSImport("meteor/accounts-base", "Accounts.findUserByUsername")
-    @js.native
-    def findUserByUsername(username: String): js.UndefOr[User | Null] = js.native
+    @scala.inline
+    def findUserByUsername(username: String): js.UndefOr[User | Null] = ^.asInstanceOf[js.Dynamic].applyDynamic("findUserByUsername")(username.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[User | Null]]
     
-    @JSImport("meteor/accounts-base", "Accounts.forgotPassword")
-    @js.native
-    def forgotPassword(options: `0`): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.forgotPassword")
-    @js.native
+    @scala.inline
+    def forgotPassword(options: `0`): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("forgotPassword")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
     def forgotPassword(
       options: `0`,
       callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("forgotPassword")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts._hashPassword")
-    @js.native
-    def hashPassword(password: String): Algorithm = js.native
+    @scala.inline
+    def hashPassword(password: String): Algorithm = ^.asInstanceOf[js.Dynamic].applyDynamic("_hashPassword")(password.asInstanceOf[js.Any]).asInstanceOf[Algorithm]
     
-    @JSImport("meteor/accounts-base", "Accounts.loggingIn")
-    @js.native
-    def loggingIn(): Boolean = js.native
+    @scala.inline
+    def loggingIn(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loggingIn")().asInstanceOf[Boolean]
     
-    @JSImport("meteor/accounts-base", "Accounts.loginServicesConfigured")
-    @js.native
-    def loginServicesConfigured(): Boolean = js.native
+    @scala.inline
+    def loginServicesConfigured(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("loginServicesConfigured")().asInstanceOf[Boolean]
     
-    @JSImport("meteor/accounts-base", "Accounts.logout")
-    @js.native
-    def logout(): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.logout")
-    @js.native
+    @scala.inline
+    def logout(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")().asInstanceOf[Unit]
+    @scala.inline
     def logout(
       callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logout")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.logoutOtherClients")
-    @js.native
-    def logoutOtherClients(): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.logoutOtherClients")
-    @js.native
+    @scala.inline
+    def logoutOtherClients(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logoutOtherClients")().asInstanceOf[Unit]
+    @scala.inline
     def logoutOtherClients(
       callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = js.native
+    ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("logoutOtherClients")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.onCreateUser")
-    @js.native
-    def onCreateUser(func: js.Function2[/* options */ Profile, /* user */ User, Unit]): Unit = js.native
+    @scala.inline
+    def onCreateUser(func: js.Function2[/* options */ Profile, /* user */ User, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onCreateUser")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.onEmailVerificationLink")
-    @js.native
-    def onEmailVerificationLink(callback: js.Function): Unit = js.native
+    @scala.inline
+    def onEmailVerificationLink(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEmailVerificationLink")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.onEnrollmentLink")
-    @js.native
-    def onEnrollmentLink(callback: js.Function): Unit = js.native
+    @scala.inline
+    def onEnrollmentLink(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onEnrollmentLink")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.onLogin")
-    @js.native
-    def onLogin(func: js.Function): Stop = js.native
+    @scala.inline
+    def onLogin(func: js.Function): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("onLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Stop]
     
-    @JSImport("meteor/accounts-base", "Accounts.onLoginFailure")
-    @js.native
-    def onLoginFailure(func: js.Function): Stop = js.native
+    @scala.inline
+    def onLoginFailure(func: js.Function): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("onLoginFailure")(func.asInstanceOf[js.Any]).asInstanceOf[Stop]
     
-    @JSImport("meteor/accounts-base", "Accounts.onLogout")
-    @js.native
-    def onLogout(func: js.Function): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.onLogout")
-    @js.native
-    def onLogout(func: js.Function1[/* options */ Connection, Unit]): Unit = js.native
+    @scala.inline
+    def onLogout(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def onLogout(func: js.Function1[/* options */ Connection, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onLogout")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.onPageLoadLogin")
-    @js.native
-    def onPageLoadLogin(func: js.Function): Unit = js.native
+    @scala.inline
+    def onPageLoadLogin(func: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onPageLoadLogin")(func.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.onResetPasswordLink")
-    @js.native
-    def onResetPasswordLink(callback: js.Function): Unit = js.native
+    @scala.inline
+    def onResetPasswordLink(callback: js.Function): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("onResetPasswordLink")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       *
@@ -206,62 +176,52 @@ object mod {
       * - `undefined`, meaning don't handle;
       * - a login method result object
       **/
-    @JSImport("meteor/accounts-base", "Accounts.registerLoginHandler")
-    @js.native
-    def registerLoginHandler(name: String, handler: js.Function1[/* options */ js.Any, js.UndefOr[js.Object]]): Unit = js.native
+    @scala.inline
+    def registerLoginHandler(name: String, handler: js.Function1[/* options */ js.Any, js.UndefOr[js.Object]]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLoginHandler")(name.asInstanceOf[js.Any], handler.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.removeEmail")
-    @js.native
-    def removeEmail(userId: String, email: String): Unit = js.native
+    @scala.inline
+    def removeEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("removeEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.resetPassword")
-    @js.native
-    def resetPassword(token: String, newPassword: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.resetPassword")
-    @js.native
+    @scala.inline
+    def resetPassword(token: String, newPassword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(token.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
     def resetPassword(
       token: String,
       newPassword: String,
       callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("resetPassword")(token.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.sendEnrollmentEmail")
-    @js.native
-    def sendEnrollmentEmail(userId: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.sendEnrollmentEmail")
-    @js.native
-    def sendEnrollmentEmail(userId: String, email: String): Unit = js.native
+    @scala.inline
+    def sendEnrollmentEmail(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def sendEnrollmentEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendEnrollmentEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.sendResetPasswordEmail")
-    @js.native
-    def sendResetPasswordEmail(userId: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.sendResetPasswordEmail")
-    @js.native
-    def sendResetPasswordEmail(userId: String, email: String): Unit = js.native
+    @scala.inline
+    def sendResetPasswordEmail(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def sendResetPasswordEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendResetPasswordEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.sendVerificationEmail")
-    @js.native
-    def sendVerificationEmail(userId: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.sendVerificationEmail")
-    @js.native
-    def sendVerificationEmail(userId: String, email: String): Unit = js.native
+    @scala.inline
+    def sendVerificationEmail(userId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def sendVerificationEmail(userId: String, email: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("sendVerificationEmail")(userId.asInstanceOf[js.Any], email.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.setPassword")
-    @js.native
-    def setPassword(userId: String, newPassword: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.setPassword")
-    @js.native
-    def setPassword(userId: String, newPassword: String, options: Logout): Unit = js.native
+    @scala.inline
+    def setPassword(userId: String, newPassword: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any])).asInstanceOf[Unit]
+    @scala.inline
+    def setPassword(userId: String, newPassword: String, options: Logout): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setPassword")(userId.asInstanceOf[js.Any], newPassword.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("meteor/accounts-base", "Accounts.setUsername")
-    @js.native
-    def setUsername(userId: String, newUsername: String): Unit = js.native
+    @scala.inline
+    def setUsername(userId: String, newUsername: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setUsername")(userId.asInstanceOf[js.Any], newUsername.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
     object ui {
       
-      @JSImport("meteor/accounts-base", "Accounts.ui.config")
+      @JSImport("meteor/accounts-base", "Accounts.ui")
       @js.native
-      def config(options: ForceApprovalPrompt): Unit = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def config(options: ForceApprovalPrompt): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
     }
     
     @JSImport("meteor/accounts-base", "Accounts.urls")
@@ -270,48 +230,41 @@ object mod {
     @scala.inline
     def urls_=(x: typings.meteor.mod.URLS): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("urls")(x.asInstanceOf[js.Any])
     
-    @JSImport("meteor/accounts-base", "Accounts.user")
-    @js.native
-    def user(): User | Null = js.native
+    @scala.inline
+    def user(): User | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("user")().asInstanceOf[User | Null]
     
-    @JSImport("meteor/accounts-base", "Accounts.userId")
-    @js.native
-    def userId(): String | Null = js.native
+    @scala.inline
+    def userId(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("userId")().asInstanceOf[String | Null]
     
-    @JSImport("meteor/accounts-base", "Accounts.validateLoginAttempt")
-    @js.native
-    def validateLoginAttempt(func: js.Function): Stop = js.native
+    @scala.inline
+    def validateLoginAttempt(func: js.Function): Stop = ^.asInstanceOf[js.Dynamic].applyDynamic("validateLoginAttempt")(func.asInstanceOf[js.Any]).asInstanceOf[Stop]
     
-    @JSImport("meteor/accounts-base", "Accounts.validateNewUser")
-    @js.native
-    def validateNewUser(func: js.Function): Boolean = js.native
+    @scala.inline
+    def validateNewUser(func: js.Function): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("validateNewUser")(func.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("meteor/accounts-base", "Accounts.verifyEmail")
-    @js.native
-    def verifyEmail(token: String): Unit = js.native
-    @JSImport("meteor/accounts-base", "Accounts.verifyEmail")
-    @js.native
+    @scala.inline
+    def verifyEmail(token: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("verifyEmail")(token.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
     def verifyEmail(
       token: String,
       callback: js.Function1[/* error */ js.UndefOr[Error | typings.meteor.Meteor.Error | TypedError], Unit]
-    ): Unit = js.native
+    ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("verifyEmail")(token.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @js.native
     trait IValidateLoginAttemptCbOpts extends StObject {
       
-      var allowed: Boolean = js.native
+      var allowed: Boolean
       
-      var connection: typings.meteor.Meteor.Connection = js.native
+      var connection: typings.meteor.Meteor.Connection
       
-      var error: typings.meteor.Meteor.Error = js.native
+      var error: typings.meteor.Meteor.Error
       
-      var methodArguments: js.Array[_] = js.native
+      var methodArguments: js.Array[js.Any]
       
-      var methodName: String = js.native
+      var methodName: String
       
-      var `type`: String = js.native
+      var `type`: String
       
-      var user: User = js.native
+      var user: User
     }
     object IValidateLoginAttemptCbOpts {
       
@@ -320,7 +273,7 @@ object mod {
         allowed: Boolean,
         connection: typings.meteor.Meteor.Connection,
         error: typings.meteor.Meteor.Error,
-        methodArguments: js.Array[_],
+        methodArguments: js.Array[js.Any],
         methodName: String,
         `type`: String,
         user: User
@@ -343,7 +296,7 @@ object mod {
         def setError(value: typings.meteor.Meteor.Error): Self = StObject.set(x, "error", value.asInstanceOf[js.Any])
         
         @scala.inline
-        def setMethodArguments(value: js.Array[_]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+        def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMethodArgumentsVarargs(value: js.Any*): Self = StObject.set(x, "methodArguments", js.Array(value :_*))
@@ -359,31 +312,30 @@ object mod {
       }
     }
     
-    @js.native
     trait LoginMethodOptions extends StObject {
       
       /**
         * The arguments for the method
         */
-      var methodArguments: js.UndefOr[js.Array[_]] = js.native
+      var methodArguments: js.UndefOr[js.Array[js.Any]] = js.undefined
       
       /**
         * The method to call (default 'login')
         */
-      var methodName: js.UndefOr[String] = js.native
+      var methodName: js.UndefOr[String] = js.undefined
       
       /**
         * Will be called with no arguments once the user is fully
         * logged in, or with the error on error.
         */
-      var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.native
+      var userCallback: js.UndefOr[js.Function1[/* err */ js.UndefOr[js.Any], Unit]] = js.undefined
       
       /**
         * If provided, will be called with the result of the
         * method. If it throws, the client will not be logged in (and
         * its error will be passed to the callback).
         */
-      var validateResult: js.UndefOr[js.Function] = js.native
+      var validateResult: js.UndefOr[js.Function] = js.undefined
     }
     object LoginMethodOptions {
       
@@ -397,7 +349,7 @@ object mod {
       implicit class LoginMethodOptionsMutableBuilder[Self <: LoginMethodOptions] (val x: Self) extends AnyVal {
         
         @scala.inline
-        def setMethodArguments(value: js.Array[_]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
+        def setMethodArguments(value: js.Array[js.Any]): Self = StObject.set(x, "methodArguments", value.asInstanceOf[js.Any])
         
         @scala.inline
         def setMethodArgumentsUndefined: Self = StObject.set(x, "methodArguments", js.undefined)
@@ -428,16 +380,15 @@ object mod {
     type Password = String | Digest
   }
   
-  @js.native
   trait EmailFields extends StObject {
     
-    var from: js.UndefOr[js.Function1[/* user */ User, String]] = js.native
+    var from: js.UndefOr[js.Function1[/* user */ User, String]] = js.undefined
     
-    var html: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.native
+    var html: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.undefined
     
-    var subject: js.UndefOr[js.Function1[/* user */ User, String]] = js.native
+    var subject: js.UndefOr[js.Function1[/* user */ User, String]] = js.undefined
     
-    var text: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.native
+    var text: js.UndefOr[js.Function2[/* user */ User, /* url */ String, String]] = js.undefined
   }
   object EmailFields {
     
@@ -476,20 +427,19 @@ object mod {
     }
   }
   
-  @js.native
   trait EmailTemplates extends StObject {
     
-    var enrollAccount: typings.meteor.mod.EmailFields = js.native
+    var enrollAccount: typings.meteor.mod.EmailFields
     
-    var from: String = js.native
+    var from: String
     
-    var headers: js.UndefOr[typings.meteor.mod.Header] = js.native
+    var headers: js.UndefOr[typings.meteor.mod.Header] = js.undefined
     
-    var resetPassword: typings.meteor.mod.EmailFields = js.native
+    var resetPassword: typings.meteor.mod.EmailFields
     
-    var siteName: String = js.native
+    var siteName: String
     
-    var verifyEmail: typings.meteor.mod.EmailFields = js.native
+    var verifyEmail: typings.meteor.mod.EmailFields
   }
   object EmailTemplates {
     
@@ -533,14 +483,13 @@ object mod {
   
   type Header = StringDictionary[String]
   
-  @js.native
   trait URLS extends StObject {
     
-    def enrollAccount(token: String): String = js.native
+    def enrollAccount(token: String): String
     
-    def resetPassword(token: String): String = js.native
+    def resetPassword(token: String): String
     
-    def verifyEmail(token: String): String = js.native
+    def verifyEmail(token: String): String
   }
   object URLS {
     

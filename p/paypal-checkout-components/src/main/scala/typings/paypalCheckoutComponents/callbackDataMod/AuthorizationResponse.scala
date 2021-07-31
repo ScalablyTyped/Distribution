@@ -2,26 +2,24 @@ package typings.paypalCheckoutComponents.callbackDataMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuthorizationResponse extends StObject {
   
   /**
     * Additional PayPal account details.
     */
-  var details: AuthorizationResponseDetails = js.native
+  var details: AuthorizationResponseDetails
   
   /**
     * The payment method nonce.
     */
-  var nonce: String = js.native
+  var nonce: String
   
   /**
     * The payment method type, always `PayPalAccount`.
     */
-  var `type`: String = js.native
+  var `type`: String
 }
 object AuthorizationResponse {
   

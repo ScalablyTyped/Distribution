@@ -2,19 +2,17 @@ package typings.googleapis.cloudfunctionsV1Mod.cloudfunctionsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for the `CallFunction` method.
   */
-@js.native
 trait SchemaCallFunctionRequest extends StObject {
   
   /**
     * Input to be passed to the function.
     */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
 }
 object SchemaCallFunctionRequest {
   

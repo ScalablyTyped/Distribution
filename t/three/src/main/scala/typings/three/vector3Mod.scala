@@ -14,29 +14,50 @@ import typings.three.threeBooleans.`true`
 import typings.three.vector2Mod.Vector
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object vector3Mod {
   
   @JSImport("three/src/math/Vector3", "Vector3")
   @js.native
-  class Vector3 () extends Vector {
+  class Vector3 ()
+    extends StObject
+       with Vector {
     def this(x: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double) = this()
     def this(x: Double, y: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: js.UndefOr[scala.Nothing], z: Double) = this()
-    def this(x: js.UndefOr[scala.Nothing], y: Double, z: Double) = this()
-    def this(x: Double, y: js.UndefOr[scala.Nothing], z: Double) = this()
+    def this(x: Unit, y: Double) = this()
     def this(x: Double, y: Double, z: Double) = this()
+    def this(x: Double, y: Unit, z: Double) = this()
+    def this(x: Unit, y: Double, z: Double) = this()
+    def this(x: Unit, y: Unit, z: Double) = this()
     
+    /**
+    	 * NOTE: The second argument is deprecated.
+    	 *
+    	 * add(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def add(v: Vector): this.type = js.native
     /**
     	 * Adds v to this vector.
     	 */
     def add(v: Vector3): this.type = js.native
     
+    /**
+    	 * Adds the scalar value s to this vector's values.
+    	 */
+    /* CompleteClass */
+    override def addScalar(scalar: Double): this.type = js.native
+    
+    /* CompleteClass */
+    override def addScaledVector(vector: Vector, scale: Double): this.type = js.native
     def addScaledVector(v: Vector3, s: Double): this.type = js.native
     
+    /**
+    	 * addVectors(a:T, b:T):T;
+    	 */
+    /* CompleteClass */
+    override def addVectors(a: Vector, b: Vector): this.type = js.native
     /**
     	 * Sets this vector to a + b.
     	 */
@@ -64,6 +85,11 @@ object vector3Mod {
     
     def clampScalar(min: Double, max: Double): this.type = js.native
     
+    /**
+    	 * copy(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def copy(v: Vector): this.type = js.native
     /**
     	 * Copies value of v to this vector.
     	 */
@@ -99,10 +125,26 @@ object vector3Mod {
     def divide(v: Vector3): this.type = js.native
     
     /**
+    	 * divideScalar(s:number):T;
+    	 */
+    /* CompleteClass */
+    override def divideScalar(s: Double): this.type = js.native
+    
+    /**
+    	 * dot(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def dot(v: Vector): Double = js.native
+    /**
     	 * Computes dot product of this vector and v.
     	 */
     def dot(v: Vector3): Double = js.native
     
+    /**
+    	 * equals(v:T):boolean;
+    	 */
+    /* CompleteClass */
+    override def equals(v: Vector): Boolean = js.native
     /**
     	 * Checks for strict equality of this vector and v.
     	 */
@@ -128,7 +170,16 @@ object vector3Mod {
     def fromBufferAttribute(attribute: BufferAttribute, index: Double): this.type = js.native
     def fromBufferAttribute(attribute: InterleavedBufferAttribute, index: Double): this.type = js.native
     
+    /* CompleteClass */
+    override def getComponent(index: Double): Double = js.native
+    
     val isVector3: `true` = js.native
+    
+    /**
+    	 * length():number;
+    	 */
+    /* CompleteClass */
+    override def length(): Double = js.native
     
     /**
     	 * Computes Manhattan length of this vector.
@@ -138,6 +189,17 @@ object vector3Mod {
     	 */
     def lengthManhattan(): Double = js.native
     
+    /**
+    	 * lengthSq():number;
+    	 */
+    /* CompleteClass */
+    override def lengthSq(): Double = js.native
+    
+    /**
+    	 * lerp(v:T, alpha:number):T;
+    	 */
+    /* CompleteClass */
+    override def lerp(v: Vector, alpha: Double): this.type = js.native
     def lerp(v: Vector3, alpha: Double): this.type = js.native
     
     def lerpVectors(v1: Vector3, v2: Vector3, alpha: Double): this.type = js.native
@@ -168,7 +230,25 @@ object vector3Mod {
     
     def multiply(v: Vector3): this.type = js.native
     
+    /**
+    	 * multiplyScalar(s:number):T;
+    	 */
+    /* CompleteClass */
+    override def multiplyScalar(s: Double): this.type = js.native
+    
     def multiplyVectors(a: Vector3, b: Vector3): this.type = js.native
+    
+    /**
+    	 * negate():T;
+    	 */
+    /* CompleteClass */
+    override def negate(): this.type = js.native
+    
+    /**
+    	 * normalize():T;
+    	 */
+    /* CompleteClass */
+    override def normalize(): this.type = js.native
     
     def project(camera: Camera): this.type = js.native
     
@@ -187,10 +267,15 @@ object vector3Mod {
     
     def roundToZero(): this.type = js.native
     
+    /* CompleteClass */
+    override def set(args: Double*): this.type = js.native
     /**
     	 * Sets value of this vector.
     	 */
     def set(x: Double, y: Double, z: Double): this.type = js.native
+    
+    /* CompleteClass */
+    override def setComponent(index: Double, value: Double): this.type = js.native
     
     def setFromCylindrical(s: Cylindrical): this.type = js.native
     
@@ -207,6 +292,15 @@ object vector3Mod {
     def setFromSpherical(s: Spherical): this.type = js.native
     
     def setFromSphericalCoords(r: Double, phi: Double, theta: Double): this.type = js.native
+    
+    /**
+    	 * setLength(l:number):T;
+    	 */
+    /* CompleteClass */
+    override def setLength(l: Double): this.type = js.native
+    
+    /* CompleteClass */
+    override def setScalar(scalar: Double): this.type = js.native
     
     /**
     	 * Sets x value of this vector.
@@ -227,9 +321,19 @@ object vector3Mod {
     	 * Subtracts v from this vector.
     	 */
     def sub(a: Vector3): this.type = js.native
+    /**
+    	 * sub(v:T):T;
+    	 */
+    /* CompleteClass */
+    override def sub(v: Vector): this.type = js.native
     
     def subScalar(s: Double): this.type = js.native
     
+    /**
+    	 * subVectors(a:T, b:T):T;
+    	 */
+    /* CompleteClass */
+    override def subVectors(a: Vector, b: Vector): this.type = js.native
     /**
     	 * Sets this vector to a - b.
     	 */
@@ -242,9 +346,9 @@ object vector3Mod {
     	 * @return The created or provided array.
     	 */
     def toArray(): js.Array[Double] = js.native
-    def toArray(array: js.UndefOr[scala.Nothing], offset: Double): js.Array[Double] = js.native
     def toArray(array: js.Array[Double]): js.Array[Double] = js.native
     def toArray(array: js.Array[Double], offset: Double): js.Array[Double] = js.native
+    def toArray(array: Unit, offset: Double): js.Array[Double] = js.native
     /**
     	 * Copies x, y and z into the provided array-like.
     	 * @param array array-like to store the vector to.

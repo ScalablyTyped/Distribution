@@ -10,9 +10,9 @@ upload ui component for react
 | ------------------ | :-------------: |
 | Full name          | rc-upload |
 | Keywords           | react, react-component, react-upload, upload |
-| # releases         | 33 |
-| # dependents       | 258 |
-| # downloads        | 16662499 |
+| # releases         | 37 |
+| # dependents       | 275 |
+| # downloads        | 21601642 |
 | # stars            | 3 |
 
 ## Links

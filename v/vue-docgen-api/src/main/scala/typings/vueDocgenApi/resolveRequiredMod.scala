@@ -4,24 +4,24 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.babelTypes.mod.File_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resolveRequiredMod {
   
-  @JSImport("vue-docgen-api/dist/utils/resolveRequired", JSImport.Default)
+  @JSImport("vue-docgen-api/dist/utils/resolveRequired", JSImport.Namespace)
   @js.native
-  def default(ast: File_): ImportedVariableSet = js.native
-  @JSImport("vue-docgen-api/dist/utils/resolveRequired", JSImport.Default)
-  @js.native
-  def default(ast: File_, varNameFilter: js.Array[String]): ImportedVariableSet = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(ast: File_): ImportedVariableSet = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any]).asInstanceOf[ImportedVariableSet]
+  @scala.inline
+  def default(ast: File_, varNameFilter: js.Array[String]): ImportedVariableSet = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(ast.asInstanceOf[js.Any], varNameFilter.asInstanceOf[js.Any])).asInstanceOf[ImportedVariableSet]
+  
   trait ImportedVariable extends StObject {
     
-    var exportName: String = js.native
+    var exportName: String
     
-    var filePath: js.Array[String] = js.native
+    var filePath: js.Array[String]
   }
   object ImportedVariable {
     

@@ -2,19 +2,19 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterPutSettings[T] extends Generic {
+trait ClusterPutSettings[T]
+  extends StObject
+     with Generic {
   
-  var body: T = js.native
+  var body: T
   
-  var flat_settings: js.UndefOr[Boolean] = js.native
+  var flat_settings: js.UndefOr[Boolean] = js.undefined
   
-  var master_timeout: js.UndefOr[String] = js.native
+  var master_timeout: js.UndefOr[String] = js.undefined
   
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object ClusterPutSettings {
   
@@ -25,7 +25,7 @@ object ClusterPutSettings {
   }
   
   @scala.inline
-  implicit class ClusterPutSettingsMutableBuilder[Self <: ClusterPutSettings[_], T] (val x: Self with ClusterPutSettings[T]) extends AnyVal {
+  implicit class ClusterPutSettingsMutableBuilder[Self <: ClusterPutSettings[?], T] (val x: Self & ClusterPutSettings[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

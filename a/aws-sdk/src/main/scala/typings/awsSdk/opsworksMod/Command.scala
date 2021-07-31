@@ -2,61 +2,59 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Command extends StObject {
   
   /**
     * Date and time when the command was acknowledged.
     */
-  var AcknowledgedAt: js.UndefOr[DateTime] = js.native
+  var AcknowledgedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The command ID.
     */
-  var CommandId: js.UndefOr[String] = js.native
+  var CommandId: js.UndefOr[String] = js.undefined
   
   /**
     * Date when the command completed.
     */
-  var CompletedAt: js.UndefOr[DateTime] = js.native
+  var CompletedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * Date and time when the command was run.
     */
-  var CreatedAt: js.UndefOr[DateTime] = js.native
+  var CreatedAt: js.UndefOr[DateTime] = js.undefined
   
   /**
     * The command deployment ID.
     */
-  var DeploymentId: js.UndefOr[String] = js.native
+  var DeploymentId: js.UndefOr[String] = js.undefined
   
   /**
     * The command exit code.
     */
-  var ExitCode: js.UndefOr[Integer] = js.native
+  var ExitCode: js.UndefOr[Integer] = js.undefined
   
   /**
     * The ID of the instance where the command was executed.
     */
-  var InstanceId: js.UndefOr[String] = js.native
+  var InstanceId: js.UndefOr[String] = js.undefined
   
   /**
     * The URL of the command log.
     */
-  var LogUrl: js.UndefOr[String] = js.native
+  var LogUrl: js.UndefOr[String] = js.undefined
   
   /**
     * The command status:   failed   successful   skipped   pending  
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
   
   /**
     * The command type:    configure     deploy     execute_recipes     install_dependencies     restart     rollback     setup     start     stop     undeploy     update_custom_cookbooks     update_dependencies   
     */
-  var Type: js.UndefOr[String] = js.native
+  var Type: js.UndefOr[String] = js.undefined
 }
 object Command {
   

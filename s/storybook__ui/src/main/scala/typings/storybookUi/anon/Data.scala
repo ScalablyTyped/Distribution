@@ -5,27 +5,25 @@ import typings.storybookApi.storiesMod.StoriesHash
 import typings.storybookUi.sidebarTypesMod.Highlight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Data extends StObject {
   
-  var data: StoriesHash = js.native
+  var data: StoriesHash
   
-  var highlightedRef: MutableRefObject[Highlight] = js.native
+  var highlightedRef: MutableRefObject[Highlight]
   
-  var isBrowsing: Boolean = js.native
+  var isBrowsing: Boolean
   
-  var isMain: Boolean = js.native
+  var isMain: Boolean
   
-  def onSelectStoryId(storyId: String): Unit = js.native
+  def onSelectStoryId(storyId: String): Unit
   
-  var refId: String = js.native
+  var refId: String
   
-  var selectedStoryId: String | Null = js.native
+  var selectedStoryId: String | Null
   
-  def setHighlightedItemId(itemId: String): Unit = js.native
+  def setHighlightedItemId(itemId: String): Unit
 }
 object Data {
   
@@ -39,7 +37,7 @@ object Data {
     refId: String,
     setHighlightedItemId: String => Unit
   ): Data = {
-    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], highlightedRef = highlightedRef.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], onSelectStoryId = js.Any.fromFunction1(onSelectStoryId), refId = refId.asInstanceOf[js.Any], setHighlightedItemId = js.Any.fromFunction1(setHighlightedItemId))
+    val __obj = js.Dynamic.literal(data = data.asInstanceOf[js.Any], highlightedRef = highlightedRef.asInstanceOf[js.Any], isBrowsing = isBrowsing.asInstanceOf[js.Any], isMain = isMain.asInstanceOf[js.Any], onSelectStoryId = js.Any.fromFunction1(onSelectStoryId), refId = refId.asInstanceOf[js.Any], setHighlightedItemId = js.Any.fromFunction1(setHighlightedItemId), selectedStoryId = null)
     __obj.asInstanceOf[Data]
   }
   

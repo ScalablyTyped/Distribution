@@ -6,25 +6,23 @@ import typings.awsSdk.elbMod.Instances
 import typings.awsSdk.serviceMod.WaiterConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-sdk.aws-sdk/clients/elb.DescribeEndPointStateInput & {  $waiter :aws-sdk.aws-sdk/lib/service.WaiterConfiguration | undefined} */
-@js.native
 trait DescribeEndPointStateInpu extends StObject {
   
   @JSName("$waiter")
-  var $waiter: js.UndefOr[WaiterConfiguration] = js.native
+  var $waiter: js.UndefOr[WaiterConfiguration] = js.undefined
   
   /**
     * The IDs of the instances.
     */
-  var Instances: js.UndefOr[typings.awsSdk.elbMod.Instances] = js.native
+  var Instances: js.UndefOr[typings.awsSdk.elbMod.Instances] = js.undefined
   
   /**
     * The name of the load balancer.
     */
-  var LoadBalancerName: AccessPointName = js.native
+  var LoadBalancerName: AccessPointName
 }
 object DescribeEndPointStateInpu {
   

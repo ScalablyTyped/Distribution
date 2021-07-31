@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/bigtableadmin/v2", "bigtableadmin_v2.Resource$Projects$Instances$Appprofiles")
@@ -33,7 +32,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaAppProfile] = js.native
   def create(callback: BodyResponseCallback[SchemaAppProfile]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppProfile] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppProfile] = js.native
   def create(params: ParamsResourceProjectsInstancesAppprofilesCreate): GaxiosPromise[SchemaAppProfile] = js.native
   def create(
     params: ParamsResourceProjectsInstancesAppprofilesCreate,
@@ -66,7 +65,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceProjectsInstancesAppprofilesDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(
     params: ParamsResourceProjectsInstancesAppprofilesDelete,
@@ -98,7 +97,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaAppProfile] = js.native
   def get(callback: BodyResponseCallback[SchemaAppProfile]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaAppProfile] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaAppProfile] = js.native
   def get(params: ParamsResourceProjectsInstancesAppprofilesGet): GaxiosPromise[SchemaAppProfile] = js.native
   def get(
     params: ParamsResourceProjectsInstancesAppprofilesGet,
@@ -132,7 +131,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListAppProfilesResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListAppProfilesResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListAppProfilesResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListAppProfilesResponse] = js.native
   def list(params: ParamsResourceProjectsInstancesAppprofilesList): GaxiosPromise[SchemaListAppProfilesResponse] = js.native
   def list(
     params: ParamsResourceProjectsInstancesAppprofilesList,
@@ -167,7 +166,7 @@ class ResourceProjectsInstancesAppprofiles protected () extends StObject {
     */
   def patch(): GaxiosPromise[SchemaOperation] = js.native
   def patch(callback: BodyResponseCallback[SchemaOperation]): Unit = js.native
-  def patch(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
+  def patch(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOperation] = js.native
   def patch(params: ParamsResourceProjectsInstancesAppprofilesPatch): GaxiosPromise[SchemaOperation] = js.native
   def patch(
     params: ParamsResourceProjectsInstancesAppprofilesPatch,

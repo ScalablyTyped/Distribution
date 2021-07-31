@@ -3,7 +3,6 @@ package typings.registryUrl
 import typings.registryUrl.anon.Call
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -24,12 +23,10 @@ object mod {
   	//=> 'https://custom-registry.com/'
   	```
   	*/
-  @JSImport("registry-url", JSImport.Namespace)
-  @js.native
-  def apply(): String = js.native
-  @JSImport("registry-url", JSImport.Namespace)
-  @js.native
-  def apply(scope: String): String = js.native
+  @scala.inline
+  def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+  @scala.inline
+  def apply(scope: String): String = ^.asInstanceOf[js.Dynamic].apply(scope.asInstanceOf[js.Any]).asInstanceOf[String]
   
   @JSImport("registry-url", JSImport.Namespace)
   @js.native
@@ -54,12 +51,10 @@ object mod {
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function registryUrl(scope?: string): string;
   // export = registryUrl;
-  @JSImport("registry-url", "default")
-  @js.native
-  def default(): String = js.native
-  @JSImport("registry-url", "default")
-  @js.native
-  def default(scope: String): String = js.native
+  @scala.inline
+  def default(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[String]
+  @scala.inline
+  def default(scope: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(scope.asInstanceOf[js.Any]).asInstanceOf[String]
   // TODO: Remove this for the next major release, refactor the whole definition to:
   // declare function registryUrl(scope?: string): string;
   // export = registryUrl;

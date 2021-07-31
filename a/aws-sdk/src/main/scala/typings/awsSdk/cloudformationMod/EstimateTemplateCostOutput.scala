@@ -2,16 +2,14 @@ package typings.awsSdk.cloudformationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EstimateTemplateCostOutput extends StObject {
   
   /**
     * An AWS Simple Monthly Calculator URL with a query string that describes the resources required to run the template.
     */
-  var Url: js.UndefOr[typings.awsSdk.cloudformationMod.Url] = js.native
+  var Url: js.UndefOr[typings.awsSdk.cloudformationMod.Url] = js.undefined
 }
 object EstimateTemplateCostOutput {
   

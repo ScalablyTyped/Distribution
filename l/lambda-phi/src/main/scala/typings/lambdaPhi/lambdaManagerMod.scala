@@ -4,14 +4,112 @@ import typings.lambdaPhi.apiGatewayMod.ApiGateway
 import typings.lambdaPhi.lambdaConfigMod.LambdaConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object lambdaManagerMod {
   
   @JSImport("lambda-phi/lib/lambda-manager", JSImport.Default)
   @js.native
-  class default () extends LambdaManager
+  class default ()
+    extends StObject
+       with LambdaManager {
+    
+    /* CompleteClass */
+    var _apiGateway: js.Any = js.native
+    
+    /* CompleteClass */
+    var _callback: js.Any = js.native
+    
+    /* CompleteClass */
+    var _context: js.Any = js.native
+    
+    /* CompleteClass */
+    var _event: js.Any = js.native
+    
+    /* CompleteClass */
+    var _lambdaModels: js.Any = js.native
+    
+    /* CompleteClass */
+    var _lambdas: js.Any = js.native
+    
+    /* CompleteClass */
+    var _rawHandler: js.Any = js.native
+    
+    /* CompleteClass */
+    override def addCallbackProperty(target: js.Any, property: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def addContextProperty(target: js.Any, property: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def addEventContextProperty(target: js.Any, property: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def addEventProperty(target: js.Any, property: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def addHandlerMethod(target: js.Any, method: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def addPostConstructorMethod(target: js.Any, method: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def addPreLambdaCallbackMethod(target: js.Any, method: String): Unit = js.native
+    
+    /* CompleteClass */
+    override def addPreLambdaTimeoutMethod(target: js.Any, method: String, miliSecondsBeforeTimeout: Double): Unit = js.native
+    
+    /* CompleteClass */
+    var apiGateway: ApiGateway = js.native
+    
+    /* CompleteClass */
+    var callback: js.Any = js.native
+    
+    /* CompleteClass */
+    var context: js.Any = js.native
+    
+    /* CompleteClass */
+    var event: js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def executeHandler(lambda: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def executePostConstructor(lambda: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def executePreLambdaCallback(lambda: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def getEvent(lambda: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def getEventContext(): js.Any = js.native
+    
+    /* CompleteClass */
+    override def getLambdaByName(name: String): typings.lambdaPhi.lambdaModelMod.default = js.native
+    
+    /* CompleteClass */
+    override def processLambdas(): Unit = js.native
+    
+    /* CompleteClass */
+    var rawHandler: js.Any = js.native
+    
+    /* CompleteClass */
+    override def setLambda(target: js.Any, lambdaConfig: LambdaConfig): Unit = js.native
+    
+    /* CompleteClass */
+    override def setLambdaPath(target: js.Any, path: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    /* private */ override def setLambdaProperties(lambda: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    /* private */ override def setPreLambdaTimeoutMethod(lambda: js.Any): js.Any = js.native
+    
+    /* CompleteClass */
+    override def upsertLambdaModel(target: js.Any): typings.lambdaPhi.lambdaModelMod.default = js.native
+  }
   /* static members */
   object default {
     
@@ -26,72 +124,71 @@ object lambdaManagerMod {
     def instance_=(x: LambdaManager): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("instance")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait LambdaManager extends StObject {
     
-    var _apiGateway: js.Any = js.native
+    var _apiGateway: js.Any
     
-    var _callback: js.Any = js.native
+    var _callback: js.Any
     
-    var _context: js.Any = js.native
+    var _context: js.Any
     
-    var _event: js.Any = js.native
+    var _event: js.Any
     
-    var _lambdaModels: js.Any = js.native
+    var _lambdaModels: js.Any
     
-    var _lambdas: js.Any = js.native
+    var _lambdas: js.Any
     
-    var _rawHandler: js.Any = js.native
+    var _rawHandler: js.Any
     
-    def addCallbackProperty(target: js.Any, property: js.Any): Unit = js.native
+    def addCallbackProperty(target: js.Any, property: js.Any): Unit
     
-    def addContextProperty(target: js.Any, property: js.Any): Unit = js.native
+    def addContextProperty(target: js.Any, property: js.Any): Unit
     
-    def addEventContextProperty(target: js.Any, property: js.Any): Unit = js.native
+    def addEventContextProperty(target: js.Any, property: js.Any): Unit
     
-    def addEventProperty(target: js.Any, property: js.Any): Unit = js.native
+    def addEventProperty(target: js.Any, property: js.Any): Unit
     
-    def addHandlerMethod(target: js.Any, method: js.Any): Unit = js.native
+    def addHandlerMethod(target: js.Any, method: js.Any): Unit
     
-    def addPostConstructorMethod(target: js.Any, method: js.Any): Unit = js.native
+    def addPostConstructorMethod(target: js.Any, method: js.Any): Unit
     
-    def addPreLambdaCallbackMethod(target: js.Any, method: String): Unit = js.native
+    def addPreLambdaCallbackMethod(target: js.Any, method: String): Unit
     
-    def addPreLambdaTimeoutMethod(target: js.Any, method: String, miliSecondsBeforeTimeout: Double): Unit = js.native
+    def addPreLambdaTimeoutMethod(target: js.Any, method: String, miliSecondsBeforeTimeout: Double): Unit
     
-    var apiGateway: ApiGateway = js.native
+    var apiGateway: ApiGateway
     
-    var callback: js.Any = js.native
+    var callback: js.Any
     
-    var context: js.Any = js.native
+    var context: js.Any
     
-    var event: js.Any = js.native
+    var event: js.Any
     
-    /* private */ def executeHandler(lambda: js.Any): js.Any = js.native
+    /* private */ def executeHandler(lambda: js.Any): js.Any
     
-    /* private */ def executePostConstructor(lambda: js.Any): js.Any = js.native
+    /* private */ def executePostConstructor(lambda: js.Any): js.Any
     
-    /* private */ def executePreLambdaCallback(lambda: js.Any): js.Any = js.native
+    /* private */ def executePreLambdaCallback(lambda: js.Any): js.Any
     
-    /* private */ def getEvent(lambda: js.Any): js.Any = js.native
+    /* private */ def getEvent(lambda: js.Any): js.Any
     
-    /* private */ def getEventContext(): js.Any = js.native
+    /* private */ def getEventContext(): js.Any
     
-    def getLambdaByName(name: String): typings.lambdaPhi.lambdaModelMod.default = js.native
+    def getLambdaByName(name: String): typings.lambdaPhi.lambdaModelMod.default
     
-    def processLambdas(): Unit = js.native
+    def processLambdas(): Unit
     
-    var rawHandler: js.Any = js.native
+    var rawHandler: js.Any
     
-    def setLambda(target: js.Any, lambdaConfig: LambdaConfig): Unit = js.native
+    def setLambda(target: js.Any, lambdaConfig: LambdaConfig): Unit
     
-    def setLambdaPath(target: js.Any, path: js.Any): Unit = js.native
+    def setLambdaPath(target: js.Any, path: js.Any): Unit
     
-    /* private */ def setLambdaProperties(lambda: js.Any): js.Any = js.native
+    /* private */ def setLambdaProperties(lambda: js.Any): js.Any
     
-    /* private */ def setPreLambdaTimeoutMethod(lambda: js.Any): js.Any = js.native
+    /* private */ def setPreLambdaTimeoutMethod(lambda: js.Any): js.Any
     
-    def upsertLambdaModel(target: js.Any): typings.lambdaPhi.lambdaModelMod.default = js.native
+    def upsertLambdaModel(target: js.Any): typings.lambdaPhi.lambdaModelMod.default
   }
   object LambdaManager {
     

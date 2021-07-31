@@ -3,15 +3,13 @@ package typings.recase
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Exceptions extends StObject {
     
-    var exceptions: js.UndefOr[StringDictionary[String]] = js.native
+    var exceptions: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object Exceptions {
     

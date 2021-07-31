@@ -18,305 +18,234 @@ import typings.std.EventTarget
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "approxEqual")
+  @JSImport("@blueprintjs/core/lib/esm/common/utils", JSImport.Namespace)
   @js.native
-  def approxEqual(a: Double, b: Double): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "approxEqual")
-  @js.native
-  def approxEqual(a: Double, b: Double, tolerance: Double): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "arrayLengthCompare")
-  @js.native
-  def arrayLengthCompare(): Double = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "arrayLengthCompare")
-  @js.native
-  def arrayLengthCompare(a: js.UndefOr[scala.Nothing], b: js.Array[_]): Double = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "arrayLengthCompare")
-  @js.native
-  def arrayLengthCompare(a: js.Array[_]): Double = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "arrayLengthCompare")
-  @js.native
-  def arrayLengthCompare(a: js.Array[_], b: js.Array[_]): Double = js.native
+  @scala.inline
+  def approxEqual(a: Double, b: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approxEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def approxEqual(a: Double, b: Double, tolerance: Double): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("approxEqual")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any], tolerance.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "arraysEqual")
-  @js.native
-  def arraysEqual(arrA: js.Array[_], arrB: js.Array[_]): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "arraysEqual")
-  @js.native
+  @scala.inline
+  def arrayLengthCompare(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")().asInstanceOf[Double]
+  @scala.inline
+  def arrayLengthCompare(a: js.Array[js.Any]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def arrayLengthCompare(a: js.Array[js.Any], b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def arrayLengthCompare(a: Unit, b: js.Array[js.Any]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("arrayLengthCompare")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Double]
+  
+  @scala.inline
+  def arraysEqual(arrA: js.Array[js.Any], arrB: js.Array[js.Any]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
   def arraysEqual(
-    arrA: js.Array[_],
-    arrB: js.Array[_],
+    arrA: js.Array[js.Any],
+    arrB: js.Array[js.Any],
     compare: js.Function2[/* a */ js.Any, /* b */ js.Any, Boolean]
-  ): Boolean = js.native
+  ): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("arraysEqual")(arrA.asInstanceOf[js.Any], arrB.asInstanceOf[js.Any], compare.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "clamp")
-  @js.native
-  def clamp(`val`: Double, min: Double, max: Double): Double = js.native
+  @scala.inline
+  def clamp(`val`: Double, min: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(`val`.asInstanceOf[js.Any], min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "countDecimalPlaces")
-  @js.native
-  def countDecimalPlaces(num: Double): Double = js.native
+  @scala.inline
+  def countDecimalPlaces(num: Double): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("countDecimalPlaces")(num.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "createReactRef")
-  @js.native
-  def createReactRef[T](): RefObject[T] = js.native
+  @scala.inline
+  def createReactRef[T](): RefObject[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createReactRef")().asInstanceOf[RefObject[T]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "deepCompareKeys")
-  @js.native
-  def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "deepCompareKeys")
-  @js.native
-  def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = js.native
+  @scala.inline
+  def deepCompareKeys(objA: js.Any, objB: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def deepCompareKeys(objA: js.Any, objB: js.Any, keys: js.Array[String | Double | js.Symbol]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("deepCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "elementIsOrContains")
-  @js.native
-  def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = js.native
+  @scala.inline
+  def elementIsOrContains(element: HTMLElement, testElement: HTMLElement): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("elementIsOrContains")(element.asInstanceOf[js.Any], testElement.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "ensureElement")
-  @js.native
-  def ensureElement(): js.UndefOr[ReactElement] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "ensureElement")
-  @js.native
+  @scala.inline
+  def ensureElement(): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")().asInstanceOf[js.UndefOr[ReactElement]]
+  @scala.inline
   def ensureElement(
-    child: js.UndefOr[ReactNode],
+    child: Unit,
     tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
-  ): js.UndefOr[ReactElement] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "ensureElement")
-  @js.native
-  def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = js.native
+  ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
+  @scala.inline
+  def ensureElement(child: ReactNode): js.UndefOr[ReactElement] = ^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[ReactElement]]
+  @scala.inline
+  def ensureElement(
+    child: ReactNode,
+    tagName: /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 175 */ js.Any
+  ): js.UndefOr[ReactElement] = (^.asInstanceOf[js.Dynamic].applyDynamic("ensureElement")(child.asInstanceOf[js.Any], tagName.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[ReactElement]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: js.UndefOr[scala.Nothing], keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: js.UndefOr[scala.Nothing], objB: T): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: js.UndefOr[scala.Nothing], objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDeepUnequalKeyValues")
-  @js.native
-  def getDeepUnequalKeyValues[T /* <: js.Object */](
-    objA: js.UndefOr[scala.Nothing],
-    objB: js.UndefOr[scala.Nothing],
-    keys: js.Array[/* keyof T */ String]
-  ): js.Array[Key[T]] = js.native
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")().asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T): js.Array[Key[T]] = ^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any]).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: T, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: T, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
+  @scala.inline
+  def getDeepUnequalKeyValues[T /* <: js.Object */](objA: Unit, objB: Unit, keys: js.Array[/* keyof T */ String]): js.Array[Key[T]] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeepUnequalKeyValues")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[js.Array[Key[T]]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDisplayName")
-  @js.native
-  def getDisplayName(ComponentClass: INamed): String = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getDisplayName")
-  @js.native
-  def getDisplayName(ComponentClass: ComponentType[js.Object]): String = js.native
+  @scala.inline
+  def getDisplayName(ComponentClass: INamed): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def getDisplayName(ComponentClass: ComponentType[js.Object]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayName")(ComponentClass.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getRef")
-  @js.native
-  def getRef[T](): T | Null = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getRef")
-  @js.native
-  def getRef[T](ref: T): T | Null = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "getRef")
-  @js.native
-  def getRef[T](ref: IRefObject[T]): T | Null = js.native
+  @scala.inline
+  def getRef[T](): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")().asInstanceOf[T | Null]
+  @scala.inline
+  def getRef[T](ref: T): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
+  @scala.inline
+  def getRef[T](ref: IRefObject[T]): T | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getRef")(ref.asInstanceOf[js.Any]).asInstanceOf[T | Null]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "isElementOfType")
-  @js.native
-  def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isElementOfType[P](element: js.Any, ComponentType: ComponentType[P]): /* is react.react.ReactElement */ Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isElementOfType")(element.asInstanceOf[js.Any], ComponentType.asInstanceOf[js.Any])).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "isFunction")
-  @js.native
-  def isFunction(value: js.Any): /* is std.Function */ Boolean = js.native
+  @scala.inline
+  def isFunction(value: js.Any): /* is std.Function */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isFunction")(value.asInstanceOf[js.Any]).asInstanceOf[/* is std.Function */ Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "isNodeEnv")
-  @js.native
-  def isNodeEnv(env: String): Boolean = js.native
+  @scala.inline
+  def isNodeEnv(env: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNodeEnv")(env.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "isReactElement")
-  @js.native
-  def isReactElement[T](child: ReactNode): /* is react.react.ReactElement */ Boolean = js.native
+  @scala.inline
+  def isReactElement[T](child: ReactNode): /* is react.react.ReactElement */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactElement")(child.asInstanceOf[js.Any]).asInstanceOf[/* is react.react.ReactElement */ Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "isReactNodeEmpty")
-  @js.native
-  def isReactNodeEmpty(): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "isReactNodeEmpty")
-  @js.native
-  def isReactNodeEmpty(node: js.UndefOr[ReactNode], skipArray: Boolean): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "isReactNodeEmpty")
-  @js.native
-  def isReactNodeEmpty(node: ReactNode): Boolean = js.native
+  @scala.inline
+  def isReactNodeEmpty(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")().asInstanceOf[Boolean]
+  @scala.inline
+  def isReactNodeEmpty(node: Unit, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def isReactNodeEmpty(node: ReactNode): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any]).asInstanceOf[Boolean]
+  @scala.inline
+  def isReactNodeEmpty(node: ReactNode, skipArray: Boolean): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isReactNodeEmpty")(node.asInstanceOf[js.Any], skipArray.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[R](): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[A, R](func: js.UndefOr[scala.Nothing], arg1: A): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[A, R](func: js.Function1[/* arg1 */ A, R], arg1: A): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[A, B, R](func: js.UndefOr[scala.Nothing], arg1: A, arg2: B): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[A, B, R](func: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[A, B, C, R](func: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[A, B, C, R](func: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
-  def safeInvoke[A, B, C, D, R](func: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C, arg4: D): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvoke")
-  @js.native
+  @scala.inline
+  def safeInvoke[R](): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")().asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[R](func: js.Function0[R]): js.UndefOr[R] = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[A, R](func: js.Function1[/* arg1 */ A, R], arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[A, R](func: Unit, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[A, B, R](func: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[A, B, R](func: Unit, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[A, B, C, R](func: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[A, B, C, R](func: Unit, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvoke[A, B, C, D, R](
     func: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
     arg1: A,
     arg2: B,
     arg3: C,
     arg4: D
-  ): js.UndefOr[R] = js.native
+  ): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
+  def safeInvoke[A, B, C, D, R](func: Unit, arg1: A, arg2: B, arg3: C, arg4: D): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvoke")(func.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: T, key: K): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: T, key: K): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: js.UndefOr[scala.Nothing], key: K): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, R](obj: Unit, key: K): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (a : A): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: T, key: K, arg1: A): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: T, key: K, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (a : A): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, R](obj: Unit, key: K, arg1: A): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (a : A, b : B): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: T, key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: T, key: K, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (a : A, b : B): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, R](obj: Unit, key: K, arg1: A, arg2: B): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (a : A, b : B, c : C): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: T, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeMember")
-  @js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: T, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
+  @scala.inline
   def safeInvokeMember[T /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ k in K ]:? (a : A, b : B, c : C): R}
-    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember with TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: js.UndefOr[scala.Nothing], key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = js.native
+    */ typings.blueprintjsCore.blueprintjsCoreStrings.safeInvokeMember & TopLevel[js.Any] */, K /* <: /* keyof T */ String */, A, B, C, R](obj: Unit, key: K, arg1: A, arg2: B, arg3: C): js.UndefOr[R] = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeMember")(obj.asInstanceOf[js.Any], key.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[R]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[R](): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[R](funcOrValue: R): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, R](funcOrValue: R, arg1: A): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, R](funcOrValue: js.Function1[/* arg1 */ A, R], arg1: A): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, R](funcOrValue: R, arg1: A, arg2: B): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A, arg2: B): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, R](funcOrValue: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, C, R](funcOrValue: R, arg1: A, arg2: B, arg3: C): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, C, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, C, R](funcOrValue: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, C, D, R](funcOrValue: R, arg1: A, arg2: B, arg3: C, arg4: D): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
-  def safeInvokeOrValue[A, B, C, D, R](funcOrValue: js.UndefOr[scala.Nothing], arg1: A, arg2: B, arg3: C, arg4: D): R = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "safeInvokeOrValue")
-  @js.native
+  @scala.inline
+  def safeInvokeOrValue[R](): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")().asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[R](funcOrValue: R): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[R](funcOrValue: js.Function0[R]): R = ^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any]).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, R](funcOrValue: R, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, R](funcOrValue: js.Function1[/* arg1 */ A, R], arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, R](funcOrValue: Unit, arg1: A): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, R](funcOrValue: R, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, R](funcOrValue: js.Function2[/* arg1 */ A, /* arg2 */ B, R], arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, R](funcOrValue: Unit, arg1: A, arg2: B): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, C, R](funcOrValue: R, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, C, R](funcOrValue: js.Function3[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, R], arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, C, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, C, D, R](funcOrValue: R, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
   def safeInvokeOrValue[A, B, C, D, R](
     funcOrValue: js.Function4[/* arg1 */ A, /* arg2 */ B, /* arg3 */ C, /* arg4 */ D, R],
     arg1: A,
     arg2: B,
     arg3: C,
     arg4: D
-  ): R = js.native
+  ): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
+  @scala.inline
+  def safeInvokeOrValue[A, B, C, D, R](funcOrValue: Unit, arg1: A, arg2: B, arg3: C, arg4: D): R = (^.asInstanceOf[js.Dynamic].applyDynamic("safeInvokeOrValue")(funcOrValue.asInstanceOf[js.Any], arg1.asInstanceOf[js.Any], arg2.asInstanceOf[js.Any], arg3.asInstanceOf[js.Any], arg4.asInstanceOf[js.Any])).asInstanceOf[R]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "shallowCompareKeys")
-  @js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "shallowCompareKeys")
-  @js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "shallowCompareKeys")
-  @js.native
-  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = js.native
+  @scala.inline
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyAllowlist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  @scala.inline
+  def shallowCompareKeys[T /* <: js.Object */](objA: T, objB: T, keys: IKeyDenylist[T]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("shallowCompareKeys")(objA.asInstanceOf[js.Any], objB.asInstanceOf[js.Any], keys.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "throttle")
-  @js.native
-  def throttle[T /* <: js.Function */](method: T): T = js.native
+  @scala.inline
+  def throttle[T /* <: js.Function */](method: T): T = ^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(method.asInstanceOf[js.Any]).asInstanceOf[T]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "throttleEvent")
-  @js.native
-  def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = js.native
+  @scala.inline
+  def throttleEvent(target: EventTarget, eventName: String, newEventName: String): js.Function1[/* event */ Event, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleEvent")(target.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], newEventName.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event */ Event, Unit]]
   
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "throttleReactEventCallback")
-  @js.native
-  def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, _]): js.Function1[/* event2 */ E, Unit] = js.native
-  @JSImport("@blueprintjs/core/lib/esm/common/utils", "throttleReactEventCallback")
-  @js.native
+  @scala.inline
+  def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any]): js.Function1[/* event2 */ E, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
+  @scala.inline
   def throttleReactEventCallback[E /* <: SyntheticEvent[Element, Event] */](
-    callback: js.Function2[/* event */ E, /* repeated */ js.Any, _],
+    callback: js.Function2[/* event */ E, /* repeated */ js.Any, js.Any],
     options: IThrottledReactEventOptions
-  ): js.Function1[/* event2 */ E, Unit] = js.native
+  ): js.Function1[/* event2 */ E, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("throttleReactEventCallback")(callback.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* event2 */ E, Unit]]
 }

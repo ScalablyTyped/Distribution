@@ -2,20 +2,20 @@ package typings.ltx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object isMod {
   
-  @JSImport("ltx/lib/is", "isElement")
+  @JSImport("ltx/lib/is", JSImport.Namespace)
   @js.native
-  def isElement(el: js.Any): /* is ltx.ltx/lib/Element.Element */ Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ltx/lib/is", "isNode")
-  @js.native
-  def isNode(el: js.Any): /* is ltx.ltx/lib/Element.Node */ Boolean = js.native
+  @scala.inline
+  def isElement(el: js.Any): /* is ltx.ltx/lib/Element.Element */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isElement")(el.asInstanceOf[js.Any]).asInstanceOf[/* is ltx.ltx/lib/Element.Element */ Boolean]
   
-  @JSImport("ltx/lib/is", "isText")
-  @js.native
-  def isText(el: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isNode(el: js.Any): /* is ltx.ltx/lib/Element.Node */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNode")(el.asInstanceOf[js.Any]).asInstanceOf[/* is ltx.ltx/lib/Element.Node */ Boolean]
+  
+  @scala.inline
+  def isText(el: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isText")(el.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
 }

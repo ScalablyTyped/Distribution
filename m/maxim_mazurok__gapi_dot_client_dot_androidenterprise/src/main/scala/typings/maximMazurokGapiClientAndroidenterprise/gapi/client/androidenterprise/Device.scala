@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidenterprise.gapi.client.androidenter
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Device extends StObject {
   
   /** The Google Play Services Android ID for the device encoded as a lowercase hex string. For example, "123456789abcdef0". */
-  var androidId: js.UndefOr[String] = js.native
+  var androidId: js.UndefOr[String] = js.undefined
   
   /**
     * Identifies the extent to which the device is controlled by a managed Google Play EMM in various deployment configurations. Possible values include: - "managedDevice", a device that
@@ -17,13 +15,13 @@ trait Device extends StObject {
     * separate, personal profile that is unavailable to the DPC. - "containerApp", no longer used (deprecated). - "unmanagedProfile", a device that has been allowed (by the domain's
     * admin, using the Admin Console to enable the privilege) to use managed Google Play, but the profile is itself not owned by a DPC.
     */
-  var managementType: js.UndefOr[String] = js.native
+  var managementType: js.UndefOr[String] = js.undefined
   
   /** The policy enforced on the device. */
-  var policy: js.UndefOr[Policy] = js.native
+  var policy: js.UndefOr[Policy] = js.undefined
   
   /** The device report updated with the latest app states. */
-  var report: js.UndefOr[DeviceReport] = js.native
+  var report: js.UndefOr[DeviceReport] = js.undefined
 }
 object Device {
   

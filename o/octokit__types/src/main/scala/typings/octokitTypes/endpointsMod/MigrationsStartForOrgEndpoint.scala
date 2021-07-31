@@ -2,29 +2,27 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MigrationsStartForOrgEndpoint extends StObject {
   
   /**
     * Indicates whether attachments should be excluded from the migration (to reduce migration archive file size).
     */
-  var exclude_attachments: js.UndefOr[Boolean] = js.native
+  var exclude_attachments: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether repositories should be locked (to prevent manipulation) while migrating data.
     */
-  var lock_repositories: js.UndefOr[Boolean] = js.native
+  var lock_repositories: js.UndefOr[Boolean] = js.undefined
   
   @JSName("org")
-  var org_ : String = js.native
+  var org_ : String
   
   /**
     * A list of arrays indicating which repositories should be migrated.
     */
-  var repositories: js.Array[String] = js.native
+  var repositories: js.Array[String]
 }
 object MigrationsStartForOrgEndpoint {
   

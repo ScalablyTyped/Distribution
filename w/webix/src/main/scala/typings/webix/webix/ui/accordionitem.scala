@@ -4,11 +4,12 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webix.webix.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait accordionitem extends baseview {
+trait accordionitem
+  extends StObject
+     with baseview {
   
   @JSName("$scope")
   var $scope: js.Any = js.native
@@ -18,7 +19,7 @@ trait accordionitem extends baseview {
   
   def blockEvent(): Unit = js.native
   
-  def callEvent(name: String, params: js.Array[_]): Boolean = js.native
+  def callEvent(name: String, params: js.Array[js.Any]): Boolean = js.native
   
   def collapse(): Unit = js.native
   

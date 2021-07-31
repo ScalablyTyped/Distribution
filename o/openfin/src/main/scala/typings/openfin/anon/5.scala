@@ -3,15 +3,13 @@ package typings.openfin.anon
 import typings.openfin.shapesMod.RGB
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `5` extends StObject {
   
-  var newVal: js.UndefOr[RGB] = js.native
+  var newVal: js.UndefOr[RGB] = js.undefined
   
-  var oldVal: js.UndefOr[RGB] = js.native
+  var oldVal: js.UndefOr[RGB] = js.undefined
 }
 object `5` {
   

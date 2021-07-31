@@ -13,7 +13,6 @@ import typings.agGrid.gridSerializerMod.GridSerializingSession
 import typings.agGrid.valueServiceMod.ValueService
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object csvCreatorMod {
@@ -27,8 +26,8 @@ object csvCreatorMod {
     def createSerializingSession(): S = js.native
     def createSerializingSession(params: P): S = js.native
     
-    def export(): String = js.native
-    def export(userParams: P): String = js.native
+    def `export`(): String = js.native
+    def `export`(userParams: P): String = js.native
     
     def getData(params: P): String = js.native
     
@@ -100,14 +99,13 @@ object csvCreatorMod {
     var suppressQuotes: js.Any = js.native
   }
   
-  @js.native
   trait BaseCreatorBeans extends StObject {
     
-    var downloader: Downloader = js.native
+    var downloader: Downloader
     
-    var gridOptionsWrapper: GridOptionsWrapper = js.native
+    var gridOptionsWrapper: GridOptionsWrapper
     
-    var gridSerializer: GridSerializer = js.native
+    var gridSerializer: GridSerializer
   }
   object BaseCreatorBeans {
     

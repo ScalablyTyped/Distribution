@@ -2,31 +2,29 @@ package typings.jsGraphAlgorithms.JsGraphs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FlowEdge extends StObject {
   
-  def addResidualFlowTo(x: Double, deltaFlow: Double): Unit = js.native
+  def addResidualFlowTo(x: Double, deltaFlow: Double): Unit
   
-  var capacity: js.Any = js.native
+  var capacity: js.Any
   
-  var flow: js.Any = js.native
+  var flow: js.Any
   
-  def from(): Double = js.native
+  def from(): Double
   
-  var label: js.UndefOr[String] = js.native
+  var label: js.UndefOr[String] = js.undefined
   
-  def other(x: Double): Double = js.native
+  def other(x: Double): Double
   
-  def residualCapacityTo(x: Double): Double = js.native
+  def residualCapacityTo(x: Double): Double
   
-  def to(): Double = js.native
+  def to(): Double
   
-  var v: js.Any = js.native
+  var v: js.Any
   
-  var w: js.Any = js.native
+  var w: js.Any
 }
 object FlowEdge {
   

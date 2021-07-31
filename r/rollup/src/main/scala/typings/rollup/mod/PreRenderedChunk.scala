@@ -4,27 +4,25 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.rollup.rollupStrings.chunk
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreRenderedChunk extends StObject {
   
-  var exports: js.Array[String] = js.native
+  var exports: js.Array[String]
   
-  var facadeModuleId: String | Null = js.native
+  var facadeModuleId: String | Null
   
-  var isDynamicEntry: Boolean = js.native
+  var isDynamicEntry: Boolean
   
-  var isEntry: Boolean = js.native
+  var isEntry: Boolean
   
-  var isImplicitEntry: Boolean = js.native
+  var isImplicitEntry: Boolean
   
-  var modules: StringDictionary[RenderedModule] = js.native
+  var modules: StringDictionary[RenderedModule]
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: chunk = js.native
+  var `type`: chunk
 }
 object PreRenderedChunk {
   
@@ -35,11 +33,10 @@ object PreRenderedChunk {
     isEntry: Boolean,
     isImplicitEntry: Boolean,
     modules: StringDictionary[RenderedModule],
-    name: String,
-    `type`: chunk
+    name: String
   ): PreRenderedChunk = {
-    val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(exports = exports.asInstanceOf[js.Any], isDynamicEntry = isDynamicEntry.asInstanceOf[js.Any], isEntry = isEntry.asInstanceOf[js.Any], isImplicitEntry = isImplicitEntry.asInstanceOf[js.Any], modules = modules.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any], facadeModuleId = null)
+    __obj.updateDynamic("type")("chunk")
     __obj.asInstanceOf[PreRenderedChunk]
   }
   

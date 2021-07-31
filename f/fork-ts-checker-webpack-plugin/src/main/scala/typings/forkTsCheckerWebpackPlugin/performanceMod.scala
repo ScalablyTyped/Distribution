@@ -2,14 +2,16 @@ package typings.forkTsCheckerWebpackPlugin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object performanceMod {
   
-  @JSImport("fork-ts-checker-webpack-plugin/lib/profile/Performance", "createPerformance")
+  @JSImport("fork-ts-checker-webpack-plugin/lib/profile/Performance", JSImport.Namespace)
   @js.native
-  def createPerformance(): Performance = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createPerformance(): Performance = ^.asInstanceOf[js.Dynamic].applyDynamic("createPerformance")().asInstanceOf[Performance]
   
   @js.native
   trait Performance extends StObject {
@@ -25,9 +27,9 @@ object performanceMod {
     def markStart(name: String): Unit = js.native
     
     def measure(name: String): Unit = js.native
-    def measure(name: String, startMark: js.UndefOr[scala.Nothing], endMark: String): Unit = js.native
     def measure(name: String, startMark: String): Unit = js.native
     def measure(name: String, startMark: String, endMark: String): Unit = js.native
+    def measure(name: String, startMark: Unit, endMark: String): Unit = js.native
     
     def print(): Unit = js.native
   }

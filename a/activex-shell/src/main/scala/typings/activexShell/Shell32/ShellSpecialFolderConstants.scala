@@ -40,7 +40,6 @@ import typings.activexShell.activexShellNumbers.`8`
 import typings.activexShell.activexShellNumbers.`9`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Constants for Special Folders for open/Explore */

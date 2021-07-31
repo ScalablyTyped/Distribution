@@ -2,7 +2,6 @@ package typings.naverWhale.whale
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 ////////////////////
@@ -14,16 +13,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 object i18n {
   
-  @js.native
   trait DetectedLanguage extends StObject {
     
     /** An ISO language code such as 'en' or 'fr'.
       * For a complete list of languages supported by this method, see  [kLanguageInfoTable]{@link https://src.chromium.org/viewvc/chrome/trunk/src/third_party/cld/languages/internal/languages.cc}.
       * For an unknown language, 'und' will be returned, which means that [percentage] of the text is unknown to CLD */
-    var language: String = js.native
+    var language: String
     
     /** The percentage of the detected language */
-    var percentage: Double = js.native
+    var percentage: Double
   }
   object DetectedLanguage {
     
@@ -44,14 +42,13 @@ object i18n {
     }
   }
   
-  @js.native
   trait LanguageDetectionResult extends StObject {
     
     /** CLD detected language reliability */
-    var isReliable: Boolean = js.native
+    var isReliable: Boolean
     
     /** Array of detectedLanguage */
-    var languages: js.Array[typings.chrome.chrome.i18n.DetectedLanguage] = js.native
+    var languages: js.Array[typings.chrome.chrome.i18n.DetectedLanguage]
   }
   object LanguageDetectionResult {
     

@@ -3,27 +3,25 @@ package typings.athenajs.mod
 import typings.std.ArrayBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapOptions extends StObject {
   
-  var buffer: js.UndefOr[ArrayBuffer] = js.native
+  var buffer: js.UndefOr[ArrayBuffer] = js.undefined
   
-  var height: Double = js.native
+  var height: Double
   
-  var src: String = js.native
+  var src: String
   
-  var tileHeight: Double = js.native
+  var tileHeight: Double
   
-  var tileWidth: Double = js.native
+  var tileWidth: Double
   
-  var viewportH: js.UndefOr[Double] = js.native
+  var viewportH: js.UndefOr[Double] = js.undefined
   
-  var viewportW: js.UndefOr[Double] = js.native
+  var viewportW: js.UndefOr[Double] = js.undefined
   
-  var width: Double = js.native
+  var width: Double
 }
 object MapOptions {
   

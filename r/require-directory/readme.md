@@ -11,8 +11,8 @@ Recursively iterates over specified directory, require()'ing each file, and retu
 | Full name          | require-directory |
 | Keywords           | require, directory, library, recursive |
 | # releases         | 0 |
-| # dependents       | 357 |
-| # downloads        | 553475320 |
+| # dependents       | 402 |
+| # downloads        | 691088696 |
 | # stars            | 35 |
 
 ## Links

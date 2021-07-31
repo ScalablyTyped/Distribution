@@ -1,7 +1,5 @@
 package typings.nodePgMigrate
 
-import typings.nodePgMigrate.anon.ReverseCreateFunctionFn
-import typings.nodePgMigrate.anon.ReverseRenameFunctionFn
 import typings.nodePgMigrate.generalTypesMod.DropOptions
 import typings.nodePgMigrate.generalTypesMod.Name
 import typings.nodePgMigrate.generalTypesMod.Value
@@ -17,17 +15,27 @@ import typings.nodePgMigrate.nodePgMigrateStrings.VARIADIC
 import typings.nodePgMigrate.nodePgMigrateStrings.VOLATILE
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object functionsTypesMod {
   
-  type CreateFunction = CreateFunctionFn with ReverseCreateFunctionFn
+  @js.native
+  trait CreateFunction extends CreateFunctionFn {
+    
+    def reverse(
+      functionName: Name,
+      functionParams: js.Array[FunctionParam],
+      functionOptions: FunctionOptions & DropOptions,
+      definition: Value
+    ): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: CreateFunctionFn = js.native
+  }
   
   type CreateFunctionFn = js.Function4[
     /* functionName */ Name, 
     /* functionParams */ js.Array[FunctionParam], 
-    /* functionOptions */ FunctionOptions with DropOptions, 
+    /* functionOptions */ FunctionOptions & DropOptions, 
     /* definition */ Value, 
     String | js.Array[String]
   ]
@@ -39,22 +47,21 @@ object functionsTypesMod {
     String | js.Array[String]
   ]
   
-  @js.native
   trait FunctionOptions extends StObject {
     
-    var behavior: js.UndefOr[IMMUTABLE | STABLE | VOLATILE] = js.native
+    var behavior: js.UndefOr[IMMUTABLE | STABLE | VOLATILE] = js.undefined
     
-    var language: String = js.native
+    var language: String
     
-    var onNull: js.UndefOr[Boolean] = js.native
+    var onNull: js.UndefOr[Boolean] = js.undefined
     
-    var parallel: js.UndefOr[UNSAFE | RESTRICTED | SAFE] = js.native
+    var parallel: js.UndefOr[UNSAFE | RESTRICTED | SAFE] = js.undefined
     
-    var replace: js.UndefOr[Boolean] = js.native
+    var replace: js.UndefOr[Boolean] = js.undefined
     
-    var returns: js.UndefOr[String] = js.native
+    var returns: js.UndefOr[String] = js.undefined
     
-    var window: js.UndefOr[Boolean] = js.native
+    var window: js.UndefOr[Boolean] = js.undefined
   }
   object FunctionOptions {
     
@@ -110,16 +117,15 @@ object functionsTypesMod {
   
   type FunctionParam = String | FunctionParamType
   
-  @js.native
   trait FunctionParamType extends StObject {
     
-    var default: js.UndefOr[Value] = js.native
+    var default: js.UndefOr[Value] = js.undefined
     
-    var mode: js.UndefOr[IN | OUT | INOUT | VARIADIC] = js.native
+    var mode: js.UndefOr[IN | OUT | INOUT | VARIADIC] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object FunctionParamType {
     
@@ -164,7 +170,13 @@ object functionsTypesMod {
     }
   }
   
-  type RenameFunction = RenameFunctionFn with ReverseRenameFunctionFn
+  @js.native
+  trait RenameFunction extends RenameFunctionFn {
+    
+    def reverse(oldFunctionName: Name, functionParams: js.Array[FunctionParam], newFunctionName: Name): String | js.Array[String] = js.native
+    @JSName("reverse")
+    var reverse_Original: RenameFunctionFn = js.native
+  }
   
   type RenameFunctionFn = js.Function3[
     /* oldFunctionName */ Name, 

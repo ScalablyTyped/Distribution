@@ -2,51 +2,49 @@ package typings.awsSdk.lightsailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheSettings extends StObject {
   
   /**
     * The HTTP methods that are processed and forwarded to the distribution's origin. You can specify the following options:    GET,HEAD - The distribution forwards the GET and HEAD methods.    GET,HEAD,OPTIONS - The distribution forwards the GET, HEAD, and OPTIONS methods.    GET,HEAD,OPTIONS,PUT,PATCH,POST,DELETE - The distribution forwards the GET, HEAD, OPTIONS, PUT, PATCH, POST, and DELETE methods.   If you specify the third option, you might need to restrict access to your distribution's origin so users can't perform operations that you don't want them to. For example, you might not want users to have permission to delete objects from your origin.
     */
-  var allowedHTTPMethods: js.UndefOr[NonEmptyString] = js.native
+  var allowedHTTPMethods: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The HTTP method responses that are cached by your distribution. You can specify the following options:    GET,HEAD - The distribution caches responses to the GET and HEAD methods.    GET,HEAD,OPTIONS - The distribution caches responses to the GET, HEAD, and OPTIONS methods.  
     */
-  var cachedHTTPMethods: js.UndefOr[NonEmptyString] = js.native
+  var cachedHTTPMethods: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The default amount of time that objects stay in the distribution's cache before the distribution forwards another request to the origin to determine whether the content has been updated.  The value specified applies only when the origin does not add HTTP headers such as Cache-Control max-age, Cache-Control s-maxage, and Expires to objects. 
     */
-  var defaultTTL: js.UndefOr[long] = js.native
+  var defaultTTL: js.UndefOr[long] = js.undefined
   
   /**
     * An object that describes the cookies that are forwarded to the origin. Your content is cached based on the cookies that are forwarded.
     */
-  var forwardedCookies: js.UndefOr[CookieObject] = js.native
+  var forwardedCookies: js.UndefOr[CookieObject] = js.undefined
   
   /**
     * An object that describes the headers that are forwarded to the origin. Your content is cached based on the headers that are forwarded.
     */
-  var forwardedHeaders: js.UndefOr[HeaderObject] = js.native
+  var forwardedHeaders: js.UndefOr[HeaderObject] = js.undefined
   
   /**
     * An object that describes the query strings that are forwarded to the origin. Your content is cached based on the query strings that are forwarded.
     */
-  var forwardedQueryStrings: js.UndefOr[QueryStringObject] = js.native
+  var forwardedQueryStrings: js.UndefOr[QueryStringObject] = js.undefined
   
   /**
     * The maximum amount of time that objects stay in the distribution's cache before the distribution forwards another request to the origin to determine whether the object has been updated. The value specified applies only when the origin adds HTTP headers such as Cache-Control max-age, Cache-Control s-maxage, and Expires to objects.
     */
-  var maximumTTL: js.UndefOr[long] = js.native
+  var maximumTTL: js.UndefOr[long] = js.undefined
   
   /**
     * The minimum amount of time that objects stay in the distribution's cache before the distribution forwards another request to the origin to determine whether the object has been updated. A value of 0 must be specified for minimumTTL if the distribution is configured to forward all headers to the origin.
     */
-  var minimumTTL: js.UndefOr[long] = js.native
+  var minimumTTL: js.UndefOr[long] = js.undefined
 }
 object CacheSettings {
   

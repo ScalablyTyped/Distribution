@@ -2,17 +2,15 @@ package typings.bingmaps.Microsoft.Maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IEntityCollectionChangedEventArgs extends StObject {
   
   /** The entity collection the event was triggered from. */
-  var collection: EntityCollection = js.native
+  var collection: EntityCollection
   
   /** The IPrimitive object that the event occurred for. */
-  var data: IPrimitive = js.native
+  var data: IPrimitive
 }
 object IEntityCollectionChangedEventArgs {
   

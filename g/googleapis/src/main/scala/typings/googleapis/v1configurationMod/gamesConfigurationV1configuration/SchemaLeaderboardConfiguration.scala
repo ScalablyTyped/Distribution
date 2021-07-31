@@ -2,57 +2,55 @@ package typings.googleapis.v1configurationMod.gamesConfigurationV1configuration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * This is a JSON template for an leaderboard configuration resource.
   */
-@js.native
 trait SchemaLeaderboardConfiguration extends StObject {
   
   /**
     * The draft data of the leaderboard.
     */
-  var draft: js.UndefOr[SchemaLeaderboardConfigurationDetail] = js.native
+  var draft: js.UndefOr[SchemaLeaderboardConfigurationDetail] = js.undefined
   
   /**
     * The ID of the leaderboard.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Uniquely identifies the type of this resource. Value is always the fixed
     * string gamesConfiguration#leaderboardConfiguration.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * The read-only published data of the leaderboard.
     */
-  var published: js.UndefOr[SchemaLeaderboardConfigurationDetail] = js.native
+  var published: js.UndefOr[SchemaLeaderboardConfigurationDetail] = js.undefined
   
   /**
     * Maximum score that can be posted to this leaderboard.
     */
-  var scoreMax: js.UndefOr[String] = js.native
+  var scoreMax: js.UndefOr[String] = js.undefined
   
   /**
     * Minimum score that can be posted to this leaderboard.
     */
-  var scoreMin: js.UndefOr[String] = js.native
+  var scoreMin: js.UndefOr[String] = js.undefined
   
   /**
     * The type of the leaderboard. Possible values are:   -
     * &quot;LARGER_IS_BETTER&quot; - Larger scores posted are ranked higher.  -
     * &quot;SMALLER_IS_BETTER&quot; - Smaller scores posted are ranked higher.
     */
-  var scoreOrder: js.UndefOr[String] = js.native
+  var scoreOrder: js.UndefOr[String] = js.undefined
   
   /**
     * The token for this resource.
     */
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
 }
 object SchemaLeaderboardConfiguration {
   

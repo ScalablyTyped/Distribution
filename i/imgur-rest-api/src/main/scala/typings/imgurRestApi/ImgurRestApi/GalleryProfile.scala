@@ -2,19 +2,17 @@ package typings.imgurRestApi.ImgurRestApi
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GalleryProfile extends StObject {
   
-  var total_gallery_comments: Double = js.native
+  var total_gallery_comments: Double
   
-  var total_gallery_favorites: Double = js.native
+  var total_gallery_favorites: Double
   
-  var total_gallery_submissions: Double = js.native
+  var total_gallery_submissions: Double
   
-  var trophies: js.Array[Trophy] = js.native
+  var trophies: js.Array[Trophy]
 }
 object GalleryProfile {
   

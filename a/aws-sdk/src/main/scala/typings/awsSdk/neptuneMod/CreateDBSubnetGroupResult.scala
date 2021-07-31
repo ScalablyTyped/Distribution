@@ -2,13 +2,11 @@ package typings.awsSdk.neptuneMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateDBSubnetGroupResult extends StObject {
   
-  var DBSubnetGroup: js.UndefOr[typings.awsSdk.neptuneMod.DBSubnetGroup] = js.native
+  var DBSubnetGroup: js.UndefOr[typings.awsSdk.neptuneMod.DBSubnetGroup] = js.undefined
 }
 object CreateDBSubnetGroupResult {
   

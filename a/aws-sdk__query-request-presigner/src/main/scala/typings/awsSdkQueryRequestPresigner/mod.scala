@@ -5,25 +5,26 @@ import typings.awsSdkTypes.cryptoMod.HashConstructor
 import typings.awsSdkTypes.httpMod.HttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@aws-sdk/query-request-presigner", "presignRequestQuery")
+  @JSImport("@aws-sdk/query-request-presigner", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def presignRequestQuery(
     request: HttpRequest,
     hasCredentialsSha256SigningNameSigningRegionEndpointExpireTime: PresignOption
-  ): js.Promise[HttpRequest] = js.native
+  ): js.Promise[HttpRequest] = (^.asInstanceOf[js.Dynamic].applyDynamic("presignRequestQuery")(request.asInstanceOf[js.Any], hasCredentialsSha256SigningNameSigningRegionEndpointExpireTime.asInstanceOf[js.Any])).asInstanceOf[js.Promise[HttpRequest]]
   
-  @js.native
   trait PresignOption extends StObject {
     
     /**
       * credentials used to sign the request.
       */
-    var credentials: Credentials = js.native
+    var credentials: Credentials
     
     /**
       * Use endpoint other than that in request
@@ -31,26 +32,26 @@ object mod {
       */
     var endpoint: js.UndefOr[
         /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify HttpEndpoint */ js.Any
-      ] = js.native
+      ] = js.undefined
     
     /**
       * The time span in second that the presigned url lives
       * @default 3600
       */
-    var expireTime: js.UndefOr[Double] = js.native
+    var expireTime: js.UndefOr[Double] = js.undefined
     
-    var sha256: HashConstructor = js.native
+    var sha256: HashConstructor
     
     /**
       * The service name used to sign the request
       */
-    var signingName: String = js.native
+    var signingName: String
     
     /**
       * The region that signer used to sign. Usally the same as
       * that in request hostname
       */
-    var signingRegion: String = js.native
+    var signingRegion: String
   }
   object PresignOption {
     

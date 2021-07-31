@@ -2,19 +2,17 @@ package typings.yui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Y {
   
-  @js.native
   trait IConfig extends StObject {
     
-    var optional: js.Array[String] = js.native
+    var optional: js.Array[String]
     
-    var requires: js.Array[String] = js.native
+    var requires: js.Array[String]
     
-    var use: js.Array[String] = js.native
+    var use: js.Array[String]
   }
   object IConfig {
     

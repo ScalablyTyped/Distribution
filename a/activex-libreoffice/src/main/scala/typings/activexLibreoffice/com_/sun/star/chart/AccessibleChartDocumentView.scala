@@ -13,7 +13,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.Locale
 import typings.activexLibreoffice.com_.sun.star.util.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -25,9 +24,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * the structure of the accessibility representation tree as simple as possible and provide as much relevant information as possible.
   * @since OOo 1.1.2
   */
-@js.native
 trait AccessibleChartDocumentView
-  extends XAccessible
+  extends StObject
+     with XAccessible
      with XAccessibleContext
      with XAccessibleComponent
 object AccessibleChartDocumentView {

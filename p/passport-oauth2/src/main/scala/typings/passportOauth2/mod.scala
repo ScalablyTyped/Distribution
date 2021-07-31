@@ -11,7 +11,6 @@ import typings.passportOauth2.passportOauth2Booleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,17 +24,25 @@ object mod {
   
   @JSImport("passport-oauth2", "AuthorizationError")
   @js.native
-  class AuthorizationError protected () extends Error {
-    def this(message: js.UndefOr[scala.Nothing], code: String) = this()
+  class AuthorizationError protected ()
+    extends StObject
+       with Error {
     def this(message: String, code: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String, uri: String) = this()
+    def this(message: Unit, code: String) = this()
     def this(message: String, code: String, uri: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String, uri: String, status: Double) = this()
-    def this(message: String, code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
+    def this(message: Unit, code: String, uri: String) = this()
     def this(message: String, code: String, uri: String, status: Double) = this()
+    def this(message: String, code: String, uri: Unit, status: Double) = this()
+    def this(message: Unit, code: String, uri: String, status: Double) = this()
+    def this(message: Unit, code: String, uri: Unit, status: Double) = this()
     
     var code: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var status: Double = js.native
     
@@ -44,8 +51,16 @@ object mod {
   
   @JSImport("passport-oauth2", "InternalOAuthError")
   @js.native
-  class InternalOAuthError protected () extends Error {
+  class InternalOAuthError protected ()
+    extends StObject
+       with Error {
     def this(message: String, err: js.Any) = this()
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var oauthError: js.Any = js.native
   }
@@ -64,31 +79,38 @@ object mod {
   
   @JSImport("passport-oauth2", "TokenError")
   @js.native
-  class TokenError protected () extends Error {
-    def this(message: js.UndefOr[scala.Nothing], code: String) = this()
+  class TokenError protected ()
+    extends StObject
+       with Error {
     def this(message: String, code: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String, uri: String) = this()
+    def this(message: Unit, code: String) = this()
     def this(message: String, code: String, uri: String) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
-    def this(message: js.UndefOr[scala.Nothing], code: String, uri: String, status: Double) = this()
-    def this(message: String, code: String, uri: js.UndefOr[scala.Nothing], status: Double) = this()
+    def this(message: Unit, code: String, uri: String) = this()
     def this(message: String, code: String, uri: String, status: Double) = this()
+    def this(message: String, code: String, uri: Unit, status: Double) = this()
+    def this(message: Unit, code: String, uri: String, status: Double) = this()
+    def this(message: Unit, code: String, uri: Unit, status: Double) = this()
     
     var code: String = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
     
     var status: Double = js.native
     
     var uri: js.UndefOr[String] = js.native
   }
   
-  @js.native
   trait Metadata extends StObject {
     
-    var authorizationURL: String = js.native
+    var authorizationURL: String
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var tokenURL: String = js.native
+    var tokenURL: String
   }
   object Metadata {
     
@@ -122,8 +144,8 @@ object mod {
       */
     var _oauth2: OAuth2 = js.native
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query]): Unit = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Any): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): Unit = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Any): Unit = js.native
     
     def authorizationParams(options: js.Any): js.Object = js.native
     
@@ -142,12 +164,20 @@ object mod {
   @js.native
   trait StateStore extends StObject {
     
-    def store(req: Request_[ParamsDictionary, _, _, Query], callback: StateStoreStoreCallback): Unit = js.native
-    def store(req: Request_[ParamsDictionary, _, _, Query], meta: Metadata, callback: StateStoreStoreCallback): Unit = js.native
+    def store(req: Request_[ParamsDictionary, js.Any, js.Any, Query], callback: StateStoreStoreCallback): Unit = js.native
+    def store(
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      meta: Metadata,
+      callback: StateStoreStoreCallback
+    ): Unit = js.native
     
-    def verify(req: Request_[ParamsDictionary, _, _, Query], state: String, callback: StateStoreVerifyCallback): Unit = js.native
     def verify(
-      req: Request_[ParamsDictionary, _, _, Query],
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
+      state: String,
+      callback: StateStoreVerifyCallback
+    ): Unit = js.native
+    def verify(
+      req: Request_[ParamsDictionary, js.Any, js.Any, Query],
       state: String,
       meta: Metadata,
       callback: StateStoreVerifyCallback
@@ -158,10 +188,11 @@ object mod {
   
   type StateStoreVerifyCallback = js.Function3[/* err */ Error, /* ok */ Boolean, /* state */ js.Any, Unit]
   
-  @js.native
-  trait StrategyOptions extends StrategyOptionsBase {
+  trait StrategyOptions
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: js.UndefOr[`false`] = js.native
+    var passReqToCallback: js.UndefOr[`false`] = js.undefined
   }
   object StrategyOptions {
     
@@ -182,36 +213,35 @@ object mod {
     }
   }
   
-  @js.native
   trait StrategyOptionsBase extends StObject {
     
-    var authorizationURL: String = js.native
+    var authorizationURL: String
     
-    var callbackURL: js.UndefOr[String] = js.native
+    var callbackURL: js.UndefOr[String] = js.undefined
     
-    var clientID: String = js.native
+    var clientID: String
     
-    var clientSecret: String = js.native
+    var clientSecret: String
     
-    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.native
+    var customHeaders: js.UndefOr[OutgoingHttpHeaders] = js.undefined
     
-    var pkce: js.UndefOr[Boolean] = js.native
+    var pkce: js.UndefOr[Boolean] = js.undefined
     
-    var proxy: js.UndefOr[js.Any] = js.native
+    var proxy: js.UndefOr[js.Any] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var scopeSeparator: js.UndefOr[String] = js.native
+    var scopeSeparator: js.UndefOr[String] = js.undefined
     
-    var sessionKey: js.UndefOr[String] = js.native
+    var sessionKey: js.UndefOr[String] = js.undefined
     
-    var skipUserProfile: js.UndefOr[js.Any] = js.native
+    var skipUserProfile: js.UndefOr[js.Any] = js.undefined
     
-    var state: js.UndefOr[js.Any] = js.native
+    var state: js.UndefOr[js.Any] = js.undefined
     
-    var store: js.UndefOr[StateStore] = js.native
+    var store: js.UndefOr[StateStore] = js.undefined
     
-    var tokenURL: String = js.native
+    var tokenURL: String
   }
   object StrategyOptionsBase {
     
@@ -301,22 +331,17 @@ object mod {
     }
   }
   
-  @js.native
-  trait StrategyOptionsWithRequest extends StrategyOptionsBase {
+  trait StrategyOptionsWithRequest
+    extends StObject
+       with StrategyOptionsBase {
     
-    var passReqToCallback: `true` = js.native
+    var passReqToCallback: `true`
   }
   object StrategyOptionsWithRequest {
     
     @scala.inline
-    def apply(
-      authorizationURL: String,
-      clientID: String,
-      clientSecret: String,
-      passReqToCallback: `true`,
-      tokenURL: String
-    ): StrategyOptionsWithRequest = {
-      val __obj = js.Dynamic.literal(authorizationURL = authorizationURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = passReqToCallback.asInstanceOf[js.Any], tokenURL = tokenURL.asInstanceOf[js.Any])
+    def apply(authorizationURL: String, clientID: String, clientSecret: String, tokenURL: String): StrategyOptionsWithRequest = {
+      val __obj = js.Dynamic.literal(authorizationURL = authorizationURL.asInstanceOf[js.Any], clientID = clientID.asInstanceOf[js.Any], clientSecret = clientSecret.asInstanceOf[js.Any], passReqToCallback = true, tokenURL = tokenURL.asInstanceOf[js.Any])
       __obj.asInstanceOf[StrategyOptionsWithRequest]
     }
     

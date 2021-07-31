@@ -2,35 +2,33 @@ package typings.googleapis.dlpV2Mod.dlpV2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The rule that specifies conditions when findings of infoTypes specified in
   * `InspectionRuleSet` are removed from results.
   */
-@js.native
 trait SchemaGooglePrivacyDlpV2ExclusionRule extends StObject {
   
   /**
     * Dictionary which defines the rule.
     */
-  var dictionary: js.UndefOr[SchemaGooglePrivacyDlpV2Dictionary] = js.native
+  var dictionary: js.UndefOr[SchemaGooglePrivacyDlpV2Dictionary] = js.undefined
   
   /**
     * Set of infoTypes for which findings would affect this rule.
     */
-  var excludeInfoTypes: js.UndefOr[SchemaGooglePrivacyDlpV2ExcludeInfoTypes] = js.native
+  var excludeInfoTypes: js.UndefOr[SchemaGooglePrivacyDlpV2ExcludeInfoTypes] = js.undefined
   
   /**
     * How the rule is applied, see MatchingType documentation for details.
     */
-  var matchingType: js.UndefOr[String] = js.native
+  var matchingType: js.UndefOr[String] = js.undefined
   
   /**
     * Regular expression which defines the rule.
     */
-  var regex: js.UndefOr[SchemaGooglePrivacyDlpV2Regex] = js.native
+  var regex: js.UndefOr[SchemaGooglePrivacyDlpV2Regex] = js.undefined
 }
 object SchemaGooglePrivacyDlpV2ExclusionRule {
   

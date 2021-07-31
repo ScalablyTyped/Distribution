@@ -23,7 +23,6 @@ import typings.phaser.Phaser.Time.Clock
 import typings.phaser.Phaser.Tweens.TweenManager
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -31,98 +30,97 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 
   * You can also define the optional methods {@link Phaser.Types.Scenes.SceneInitCallback init()}, {@link Phaser.Types.Scenes.ScenePreloadCallback preload()}, and {@link Phaser.Types.Scenes.SceneCreateCallback create()}.
   */
-@js.native
 trait Scene extends StObject {
   
   /**
     * A scene level Game Object Factory.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var add: GameObjectFactory = js.native
+  var add: GameObjectFactory
   
   /**
     * A reference to the global Animation Manager.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var anims: AnimationManager = js.native
+  var anims: AnimationManager
   
   /**
     * A reference to the global Cache.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var cache: CacheManager = js.native
+  var cache: CacheManager
   
   /**
     * A scene level Camera System.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var cameras: CameraManager = js.native
+  var cameras: CameraManager
   
   /**
     * A scene level Game Object Display List.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var children: DisplayList = js.native
+  var children: DisplayList
   
   /**
     * A scene level Data Manager Plugin.
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var data: DataManager = js.native
+  var data: DataManager
   
   /**
     * A scene level Event Emitter.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var events: EventEmitter = js.native
+  var events: EventEmitter
   
   /**
     * A scene level Facebook Instant Games Plugin.
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
-  var facebook: FacebookInstantGamesPlugin = js.native
+  var facebook: FacebookInstantGamesPlugin
   
   /**
     * A reference to the Phaser.Game instance.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var game: Game = js.native
+  var game: Game
   
   /**
     * A scene level Input Manager Plugin.
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var input: InputPlugin = js.native
+  var input: InputPlugin
   
   /**
     * A scene level Lights Manager Plugin.
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var lights: LightsManager = js.native
+  var lights: LightsManager
   
   /**
     * A scene level Loader Plugin.
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var load: LoaderPlugin = js.native
+  var load: LoaderPlugin
   
   /**
     * A scene level Game Object Creator.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var make: GameObjectCreator = js.native
+  var make: GameObjectCreator
   
   /**
     * A scene level Matter Physics Plugin.
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
-  var matter: MatterPhysics = js.native
+  var matter: MatterPhysics
   
   /**
     * A scene level Arcade Physics Plugin.
     * This property will only be available if defined in the Scene Injection Map, the plugin is installed and configured.
     */
-  var physics: ArcadePhysics = js.native
+  var physics: ArcadePhysics
   
   /**
     * A reference to the Plugin Manager.
@@ -130,54 +128,54 @@ trait Scene extends StObject {
     * The Plugin Manager is a global system that allows plugins to register themselves with it, and can then install
     * those plugins into Scenes as required.
     */
-  var plugins: PluginManager = js.native
+  var plugins: PluginManager
   
   /**
     * A reference to the game level Data Manager.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var registry: DataManager = js.native
+  var registry: DataManager
   
   /**
     * A reference to the global Scale Manager.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var scale: ScaleManager = js.native
+  var scale: ScaleManager
   
   /**
     * A reference to the Scene Manager Plugin.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var scene: ScenePlugin = js.native
+  var scene: ScenePlugin
   
   /**
     * A reference to the Sound Manager.
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var sound: BaseSoundManager = js.native
+  var sound: BaseSoundManager
   
   /**
     * The Scene Systems. You must never overwrite this property, or all hell will break lose.
     */
-  var sys: Systems = js.native
+  var sys: Systems
   
   /**
     * A reference to the Texture Manager.
     * This property will only be available if defined in the Scene Injection Map.
     */
-  var textures: TextureManager = js.native
+  var textures: TextureManager
   
   /**
     * A scene level Time and Clock Plugin.
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var time: Clock = js.native
+  var time: Clock
   
   /**
     * A scene level Tween Manager Plugin.
     * This property will only be available if defined in the Scene Injection Map and the plugin is installed.
     */
-  var tweens: TweenManager = js.native
+  var tweens: TweenManager
   
   /**
     * Should be overridden by your own Scenes.
@@ -185,7 +183,7 @@ trait Scene extends StObject {
     * @param time The current time. Either a High Resolution Timer value if it comes from Request Animation Frame, or Date.now if using SetTimeout.
     * @param delta The delta time in ms since the last frame. This is a smoothed and capped value based on the FPS rate.
     */
-  def update(time: Double, delta: Double): Unit = js.native
+  def update(time: Double, delta: Double): Unit
 }
 object Scene {
   

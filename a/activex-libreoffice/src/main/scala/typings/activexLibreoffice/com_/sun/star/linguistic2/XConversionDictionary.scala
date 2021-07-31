@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,23 +19,24 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.HangulHanjaConversionDictionary
   * @since OOo 1.1.2
   */
-@js.native
-trait XConversionDictionary extends XInterface {
+trait XConversionDictionary
+  extends StObject
+     with XInterface {
   
   /**
     * @returns the conversion type supported by the dictionary.
     * @see com.sun.star.linguistic2.ConversionDictionaryType
     */
-  val ConversionType: Double = js.native
+  val ConversionType: Double
   
   /**
     * @returns the language supported by the dictionary.
     * @see com.sun.star.lang.Locale
     */
-  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  val Locale: typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /** @returns the name of the dictionary. */
-  val Name: String = js.native
+  val Name: String
   
   /**
     * is used to add a conversion pair to the dictionary.
@@ -45,22 +45,22 @@ trait XConversionDictionary extends XInterface {
     * @throws com::sun::star::lang::IllegalArgumentException if the arguments are invalid. For example if the specifications defined by the service implementin
     * @throws com::sun::star::container::ElementExistException if such an entry already exists.
     */
-  def addEntry(aLeftText: String, aRightText: String): Unit = js.native
+  def addEntry(aLeftText: String, aRightText: String): Unit
   
   /** removes all entries from the dictionary. */
-  def clear(): Unit = js.native
+  def clear(): Unit
   
   /**
     * @param eDirection specifies if all left or all right parts of the entries should be returned.
     * @returns a list of all left or right parts of the dictionaries entries.
     */
-  def getConversionEntries(eDirection: ConversionDirection): SafeArray[String] = js.native
+  def getConversionEntries(eDirection: ConversionDirection): SafeArray[String]
   
   /**
     * @returns the conversion type supported by the dictionary.
     * @see com.sun.star.linguistic2.ConversionDictionaryType
     */
-  def getConversionType(): Double = js.native
+  def getConversionType(): Double
   
   /**
     * searches for entries or conversions that match the given text.
@@ -80,26 +80,26 @@ trait XConversionDictionary extends XInterface {
     nLength: Double,
     eDirection: ConversionDirection,
     nTextConversionOptions: Double
-  ): SafeArray[String] = js.native
+  ): SafeArray[String]
   
   /**
     * @returns the language supported by the dictionary.
     * @see com.sun.star.lang.Locale
     */
-  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale = js.native
+  def getLocale(): typings.activexLibreoffice.com_.sun.star.lang.Locale
   
   /**
     * returns the maximum number of characters used as left or right text in entries.
     * @param eDirection specifies if the left text or the right text of entries will be used.
     * @see com.sun.star.linguistic2.ConversionDirection
     */
-  def getMaxCharCount(eDirection: ConversionDirection): Double = js.native
+  def getMaxCharCount(eDirection: ConversionDirection): Double
   
   /** @returns the name of the dictionary. */
-  def getName(): String = js.native
+  def getName(): String
   
   /** @returns `TRUE` if the dictionary is active, `FALSE` otherwise. */
-  def isActive(): Boolean = js.native
+  def isActive(): Boolean
   
   /**
     * removes a conversion pair from the dictionary.
@@ -107,13 +107,13 @@ trait XConversionDictionary extends XInterface {
     * @param aRightText the right text of the pair to be removed.
     * @throws com::sun::star::container::NoSuchElementException if there is no such entry.
     */
-  def removeEntry(aLeftText: String, aRightText: String): Unit = js.native
+  def removeEntry(aLeftText: String, aRightText: String): Unit
   
   /**
     * specifies whether the dictionary should be used or not .
     * @param bActivate `TRUE` if the dictionary should be used, `FALSE` otherwise.
     */
-  def setActive(bActivate: Boolean): Unit = js.native
+  def setActive(bActivate: Boolean): Unit
 }
 object XConversionDictionary {
   

@@ -2,23 +2,21 @@ package typings.chromeApps.WebView
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FindOptions extends StObject {
   
   /**
     * Flag to find matches in reverse order.
     * @default false
     */
-  var backward: js.UndefOr[Boolean] = js.native
+  var backward: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Flag to match with case-sensitivity.
     * @default false
     */
-  var matchCase: js.UndefOr[Boolean] = js.native
+  var matchCase: js.UndefOr[Boolean] = js.undefined
 }
 object FindOptions {
   

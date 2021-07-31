@@ -4,26 +4,26 @@ import typings.mapboxMapboxSdk.mapiRequestMod.MapiRequest
 import typings.mapboxMapboxSdk.mod.SdkConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokensMod {
   
-  @JSImport("@mapbox/mapbox-sdk/services/tokens", JSImport.Default)
+  @JSImport("@mapbox/mapbox-sdk/services/tokens", JSImport.Namespace)
   @js.native
-  def default(config: SdkConfig): TokensService = js.native
-  @JSImport("@mapbox/mapbox-sdk/services/tokens", JSImport.Default)
-  @js.native
-  def default(config: typings.mapboxMapboxSdk.mod.default): TokensService = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(config: SdkConfig): TokensService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TokensService]
+  @scala.inline
+  def default(config: typings.mapboxMapboxSdk.mod.default): TokensService = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(config.asInstanceOf[js.Any]).asInstanceOf[TokensService]
+  
   trait CreateTokenRequest extends StObject {
     
-    var note: js.UndefOr[String] = js.native
+    var note: js.UndefOr[String] = js.undefined
     
-    var resources: js.UndefOr[js.Array[String]] = js.native
+    var resources: js.UndefOr[js.Array[String]] = js.undefined
     
-    var scopes: js.UndefOr[js.Array[String]] = js.native
+    var scopes: js.UndefOr[js.Array[String]] = js.undefined
   }
   object CreateTokenRequest {
     
@@ -62,14 +62,13 @@ object tokensMod {
     }
   }
   
-  @js.native
   trait Scope extends StObject {
     
-    var description: String = js.native
+    var description: String
     
-    var id: String = js.native
+    var id: String
     
-    var public: Boolean = js.native
+    var public: Boolean
   }
   object Scope {
     
@@ -93,12 +92,11 @@ object tokensMod {
     }
   }
   
-  @js.native
   trait TemporaryTokenRequest extends StObject {
     
-    var expires: String = js.native
+    var expires: String
     
-    var scopes: js.Array[String] = js.native
+    var scopes: js.Array[String]
   }
   object TemporaryTokenRequest {
     
@@ -122,53 +120,52 @@ object tokensMod {
     }
   }
   
-  @js.native
   trait Token extends StObject {
     
     /**
       * if the token is a default token
       */
-    var default: Boolean = js.native
+    var default: Boolean
     
     /**
       * the client for the token, always 'api'
       */
-    var client: String = js.native
+    var client: String
     
     /**
       * date and time the token was created
       */
-    var created: String = js.native
+    var created: String
     
     /**
       * the identifier for the token
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * date and time the token was last modified
       */
-    var modified: String = js.native
+    var modified: String
     
     /**
       * human friendly description of the token
       */
-    var note: String = js.native
+    var note: String
     
     /**
       * array of scopes granted to the token
       */
-    var scopes: js.Array[String] = js.native
+    var scopes: js.Array[String]
     
     /**
       * the token itself
       */
-    var token: String = js.native
+    var token: String
     
     /**
       * the type of token
       */
-    var usage: String = js.native
+    var usage: String
   }
   object Token {
     
@@ -223,12 +220,11 @@ object tokensMod {
     }
   }
   
-  @js.native
   trait TokenDetail extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var token: Token = js.native
+    var token: Token
   }
   object TokenDetail {
     
@@ -249,47 +245,46 @@ object tokensMod {
     }
   }
   
-  @js.native
   trait TokensService extends StObject {
     
     /**
       * Create a new temporary access token.
       * @param request
       */
-    def createTemporaryToken(request: TemporaryTokenRequest): MapiRequest = js.native
+    def createTemporaryToken(request: TemporaryTokenRequest): MapiRequest
     
     /**
       * Create a new access token.
       * @param request
       */
-    def createToken(request: CreateTokenRequest): MapiRequest = js.native
+    def createToken(request: CreateTokenRequest): MapiRequest
     
     /**
       * Delete an access token.
       * @param request
       */
-    def deleteToken(request: UpdateDeleteTokenRequest): MapiRequest = js.native
+    def deleteToken(request: UpdateDeleteTokenRequest): MapiRequest
     
     /**
       * Get data about the client's access token.
       */
-    def getToken(): MapiRequest = js.native
+    def getToken(): MapiRequest
     
     /**
       * List your available scopes. Each item is a metadata object about the scope, not just the string scope.
       */
-    def listScopes(): MapiRequest = js.native
+    def listScopes(): MapiRequest
     
     /**
       * List your access tokens.
       */
-    def listTokens(): MapiRequest = js.native
+    def listTokens(): MapiRequest
     
     /**
       * Update an access token.
       * @param request
       */
-    def updateToken(request: UpdateDeleteTokenRequest): MapiRequest = js.native
+    def updateToken(request: UpdateDeleteTokenRequest): MapiRequest
   }
   object TokensService {
     
@@ -333,10 +328,11 @@ object tokensMod {
     }
   }
   
-  @js.native
-  trait UpdateDeleteTokenRequest extends CreateTokenRequest {
+  trait UpdateDeleteTokenRequest
+    extends StObject
+       with CreateTokenRequest {
     
-    var tokenId: String = js.native
+    var tokenId: String
   }
   object UpdateDeleteTokenRequest {
     

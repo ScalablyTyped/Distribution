@@ -2,7 +2,6 @@ package typings.xrm.Xrm.Controls
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,9 +9,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * @see {@link UiElement}
   */
-@js.native
 trait Control
-  extends UiLabelElement
+  extends StObject
+     with UiLabelElement
      with UiCanGetVisibleElement {
   
   /**
@@ -32,7 +31,7 @@ trait Control
     * * customcontrol: <namespace>.<name> (A custom control for mobile phone and tablet clients).
     * * customsubgrid: <namespace>.<name> (A custom dataset control for mobile phone and tablet clients).
     */
-  def getControlType(): ControlType | String = js.native
+  def getControlType(): ControlType | String
   
   /**
     * Gets the name of the control on the form.
@@ -48,13 +47,13 @@ trait Control
     *              business process flow. These controls have a unique name like the following:
     *              header_process_<attribute name>.
     */
-  def getName(): String = js.native
+  def getName(): String
   
   /**
     * Gets a reference to the Section parent of the control.
     * @returns The parent Section.
     */
-  def getParent(): Section = js.native
+  def getParent(): Section
 }
 object Control {
   

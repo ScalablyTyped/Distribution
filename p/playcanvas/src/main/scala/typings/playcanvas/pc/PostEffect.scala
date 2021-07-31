@@ -2,7 +2,6 @@ package typings.playcanvas.pc
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,18 +12,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @property needsDepthBuffer - The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false).
   * @param graphicsDevice - The graphics device of the application.
   */
-@js.native
 trait PostEffect extends StObject {
   
   /**
     * The graphics device of the application. [read only].
     */
-  var device: GraphicsDevice = js.native
+  var device: GraphicsDevice
   
   /**
     * The property that should to be set to `true` (by the custom post effect) if a depth map is necessary (default is false).
     */
-  var needsDepthBuffer: Boolean = js.native
+  var needsDepthBuffer: Boolean
   
   /**
     * Render the post effect using the specified inputTarget
@@ -33,17 +31,17 @@ trait PostEffect extends StObject {
     * @param outputTarget - The output render target. If null then this will be the screen.
     * @param rect - (Optional) The rect of the current camera. If not specified then it will default to [0,0,1,1].
     */
-  def render(inputTarget: RenderTarget, outputTarget: RenderTarget, rect: Vec4): Unit = js.native
+  def render(inputTarget: RenderTarget, outputTarget: RenderTarget, rect: Vec4): Unit
   
   /**
     * The shader definition for the fullscreen quad. Needs to be set by the custom post effect (default is null). Used when calling {@link pc.drawFullscreenQuad}.
     */
-  var shader: Shader | Null = js.native
+  var shader: Shader | Null
   
   /**
     * The vertex buffer for the fullscreen quad. Used when calling {@link pc.drawFullscreenQuad}. [read only].
     */
-  var vertexBuffer: VertexBuffer = js.native
+  var vertexBuffer: VertexBuffer
 }
 object PostEffect {
   
@@ -54,7 +52,7 @@ object PostEffect {
     render: (RenderTarget, RenderTarget, Vec4) => Unit,
     vertexBuffer: VertexBuffer
   ): PostEffect = {
-    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], needsDepthBuffer = needsDepthBuffer.asInstanceOf[js.Any], render = js.Any.fromFunction3(render), vertexBuffer = vertexBuffer.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(device = device.asInstanceOf[js.Any], needsDepthBuffer = needsDepthBuffer.asInstanceOf[js.Any], render = js.Any.fromFunction3(render), vertexBuffer = vertexBuffer.asInstanceOf[js.Any], shader = null)
     __obj.asInstanceOf[PostEffect]
   }
   

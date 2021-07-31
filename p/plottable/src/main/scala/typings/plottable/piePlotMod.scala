@@ -13,7 +13,6 @@ import typings.plottable.plotMod.Plot
 import typings.plottable.scaleMod.Scale
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object piePlotMod {
@@ -201,15 +200,15 @@ object piePlotMod {
     @scala.inline
     def _SECTOR_VALUE_KEY_=(x: js.Any): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("_SECTOR_VALUE_KEY")(x.asInstanceOf[js.Any])
     
-    @JSImport("plottable/build/src/plots/piePlot", "Pie._isValidData")
-    @js.native
-    def _isValidData(value: js.Any): Boolean = js.native
+    @scala.inline
+    def _isValidData(value: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("_isValidData")(value.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
   
-  @js.native
-  trait IPiePlotEntity extends IPlotEntity {
+  trait IPiePlotEntity
+    extends StObject
+       with IPlotEntity {
     
-    var strokeSelection: SimpleSelection[_] = js.native
+    var strokeSelection: SimpleSelection[js.Any]
   }
   object IPiePlotEntity {
     
@@ -222,8 +221,8 @@ object piePlotMod {
       datum: js.Any,
       index: Double,
       position: Point,
-      selection: SimpleSelection[_],
-      strokeSelection: SimpleSelection[_]
+      selection: SimpleSelection[js.Any],
+      strokeSelection: SimpleSelection[js.Any]
     ): IPiePlotEntity = {
       val __obj = js.Dynamic.literal(bounds = bounds.asInstanceOf[js.Any], component = component.asInstanceOf[js.Any], dataset = dataset.asInstanceOf[js.Any], datasetIndex = datasetIndex.asInstanceOf[js.Any], datum = datum.asInstanceOf[js.Any], index = index.asInstanceOf[js.Any], position = position.asInstanceOf[js.Any], selection = selection.asInstanceOf[js.Any], strokeSelection = strokeSelection.asInstanceOf[js.Any])
       __obj.asInstanceOf[IPiePlotEntity]
@@ -233,7 +232,7 @@ object piePlotMod {
     implicit class IPiePlotEntityMutableBuilder[Self <: IPiePlotEntity] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setStrokeSelection(value: SimpleSelection[_]): Self = StObject.set(x, "strokeSelection", value.asInstanceOf[js.Any])
+      def setStrokeSelection(value: SimpleSelection[js.Any]): Self = StObject.set(x, "strokeSelection", value.asInstanceOf[js.Any])
     }
   }
 }

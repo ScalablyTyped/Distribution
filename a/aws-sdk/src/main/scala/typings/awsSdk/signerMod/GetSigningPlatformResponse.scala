@@ -2,51 +2,49 @@ package typings.awsSdk.signerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSigningPlatformResponse extends StObject {
   
   /**
     * The category type of the target signing platform.
     */
-  var category: js.UndefOr[Category] = js.native
+  var category: js.UndefOr[Category] = js.undefined
   
   /**
     * The display name of the target signing platform.
     */
-  var displayName: js.UndefOr[DisplayName] = js.native
+  var displayName: js.UndefOr[DisplayName] = js.undefined
   
   /**
     * The maximum size (in MB) of the payload that can be signed by the target platform.
     */
-  var maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.native
+  var maxSizeInMB: js.UndefOr[MaxSizeInMB] = js.undefined
   
   /**
     * A list of partner entities that use the target signing platform.
     */
-  var partner: js.UndefOr[String] = js.native
+  var partner: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the target signing platform.
     */
-  var platformId: js.UndefOr[PlatformId] = js.native
+  var platformId: js.UndefOr[PlatformId] = js.undefined
   
   /**
     * A list of configurations applied to the target platform at signing.
     */
-  var signingConfiguration: js.UndefOr[SigningConfiguration] = js.native
+  var signingConfiguration: js.UndefOr[SigningConfiguration] = js.undefined
   
   /**
     * The format of the target platform's signing image.
     */
-  var signingImageFormat: js.UndefOr[SigningImageFormat] = js.native
+  var signingImageFormat: js.UndefOr[SigningImageFormat] = js.undefined
   
   /**
     * The validation template that is used by the target signing platform.
     */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
 }
 object GetSigningPlatformResponse {
   

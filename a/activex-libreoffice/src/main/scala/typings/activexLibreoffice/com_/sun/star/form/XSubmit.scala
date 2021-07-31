@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.awt.XControl
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,22 +15,23 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * See the [HTML specification]{@link url="http://www.w3.org/TR/1999/REC-html401-19991224/interact/forms.html#h-17.13"} to learn about submitting forms.
   */
-@js.native
-trait XSubmit extends XInterface {
+trait XSubmit
+  extends StObject
+     with XInterface {
   
   /**
     * adds the specified listener to receive the "approveSubmit" event.
     * @param aListener the listener to add.
     * @see com.sun.star.form.XSubmitListener
     */
-  def addSubmitListener(aListener: XSubmitListener): Unit = js.native
+  def addSubmitListener(aListener: XSubmitListener): Unit
   
   /**
     * removes the specified listener.
     * @param aListener the listener to remove.
     * @see com.sun.star.form.XSubmitListener
     */
-  def removeSubmitListener(aListener: XSubmitListener): Unit = js.native
+  def removeSubmitListener(aListener: XSubmitListener): Unit
   
   /**
     * submits the component's data to a specified target.
@@ -39,7 +39,7 @@ trait XSubmit extends XInterface {
     * @param aMouseEvt the event which triggered the submit, if it was a mouse event
     * @see com.sun.star.awt.MouseEvent
     */
-  def submit(aControl: XControl, aMouseEvt: MouseEvent): Unit = js.native
+  def submit(aControl: XControl, aMouseEvt: MouseEvent): Unit
 }
 object XSubmit {
   

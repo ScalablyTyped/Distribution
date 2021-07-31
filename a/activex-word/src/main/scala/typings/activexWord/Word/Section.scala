@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Section extends StObject {
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  var Borders: typings.activexWord.Word.Borders = js.native
+  var Borders: typings.activexWord.Word.Borders
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val Footers: HeadersFooters = js.native
+  val Footers: HeadersFooters
   
-  val Headers: HeadersFooters = js.native
+  val Headers: HeadersFooters
   
-  val Index: Double = js.native
+  val Index: Double
   
-  var PageSetup: typings.activexWord.Word.PageSetup = js.native
+  var PageSetup: typings.activexWord.Word.PageSetup
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var ProtectedForForms: Boolean = js.native
+  var ProtectedForForms: Boolean
   
-  val Range: typings.activexWord.Word.Range = js.native
+  val Range: typings.activexWord.Word.Range
   
   @JSName("Word.Section_typekey")
-  var WordDotSection_typekey: Section = js.native
+  var WordDotSection_typekey: Section
 }
 object Section {
   

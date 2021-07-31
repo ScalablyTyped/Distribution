@@ -6,15 +6,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameContainer
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to a library system. */
-@js.native
-trait XLibraryContainer extends XNameAccess {
+trait XLibraryContainer
+  extends StObject
+     with XNameAccess {
   
   /** Creates a new library */
-  def createLibrary(Name: String): XNameContainer = js.native
+  def createLibrary(Name: String): XNameContainer
   
   /**
     * Creates a link to an "external" library that then can be accessed using this library manager. The format of the StorageURL is a matter of the
@@ -22,16 +22,16 @@ trait XLibraryContainer extends XNameAccess {
     * XNameAccess. If ReadOnly is false (and the referenced storage allows write access) the returned interface also can be a {@link
     * com.sun.star.container.XNameContainer} .
     */
-  def createLibraryLink(Name: String, StorageURL: String, ReadOnly: Boolean): XNameAccess = js.native
+  def createLibraryLink(Name: String, StorageURL: String, ReadOnly: Boolean): XNameAccess
   
   /** returns true if the accessed library is already loaded from the storage, otherwise false. */
-  def isLibraryLoaded(Name: String): Boolean = js.native
+  def isLibraryLoaded(Name: String): Boolean
   
   /** Causes the accessed library to be loaded from its storage if it hasn't already been loaded. */
-  def loadLibrary(Name: String): Unit = js.native
+  def loadLibrary(Name: String): Unit
   
   /** removes the library item with the specified name. If the accessed library item is a link only the link is removed, not the target library. */
-  def removeLibrary(Name: String): Unit = js.native
+  def removeLibrary(Name: String): Unit
 }
 object XLibraryContainer {
   

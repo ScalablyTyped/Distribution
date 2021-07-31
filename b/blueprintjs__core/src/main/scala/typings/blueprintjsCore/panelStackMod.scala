@@ -7,7 +7,6 @@ import typings.blueprintjsCore.panelPropsMod.IPanel
 import typings.blueprintjsCore.propsMod.IProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object panelStackMod {
@@ -31,8 +30,9 @@ object panelStackMod {
     var renderPanels: js.Any = js.native
   }
   
-  @js.native
-  trait IPanelStackProps extends IProps {
+  trait IPanelStackProps
+    extends StObject
+       with IProps {
     
     /**
       * The initial panel to show on mount. This panel cannot be removed from the
@@ -40,19 +40,19 @@ object panelStackMod {
       * This prop is only used in uncontrolled mode and is thus mutually
       * exclusive with the `stack` prop.
       */
-    var initialPanel: js.UndefOr[IPanel[_]] = js.native
+    var initialPanel: js.UndefOr[IPanel[js.Any]] = js.undefined
     
     /**
       * Callback invoked when the user presses the back button or a panel invokes
       * the `closePanel()` injected prop method.
       */
-    var onClose: js.UndefOr[js.Function1[/* removedPanel */ IPanel[js.Object], Unit]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* removedPanel */ IPanel[js.Object], Unit]] = js.undefined
     
     /**
       * Callback invoked when a panel invokes the `openPanel(panel)` injected
       * prop method.
       */
-    var onOpen: js.UndefOr[js.Function1[/* addedPanel */ IPanel[js.Object], Unit]] = js.native
+    var onOpen: js.UndefOr[js.Function1[/* addedPanel */ IPanel[js.Object], Unit]] = js.undefined
     
     /**
       * If false, PanelStack will render all panels in the stack to the DOM, allowing their
@@ -60,19 +60,19 @@ object panelStackMod {
       * Panels other than the currently active one will be invisible.
       * @default true
       */
-    var renderActivePanelOnly: js.UndefOr[Boolean] = js.native
+    var renderActivePanelOnly: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Whether to show the header with the "back" button in each panel.
       * @default true
       */
-    var showPanelHeader: js.UndefOr[Boolean] = js.native
+    var showPanelHeader: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The full stack of panels in controlled mode. The last panel in the stack
       * will be displayed.
       */
-    var stack: js.UndefOr[js.Array[IPanel[_]]] = js.native
+    var stack: js.UndefOr[js.Array[IPanel[js.Any]]] = js.undefined
   }
   object IPanelStackProps {
     
@@ -86,7 +86,7 @@ object panelStackMod {
     implicit class IPanelStackPropsMutableBuilder[Self <: IPanelStackProps] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setInitialPanel(value: IPanel[_]): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
+      def setInitialPanel(value: IPanel[js.Any]): Self = StObject.set(x, "initialPanel", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setInitialPanelUndefined: Self = StObject.set(x, "initialPanel", js.undefined)
@@ -116,7 +116,7 @@ object panelStackMod {
       def setShowPanelHeaderUndefined: Self = StObject.set(x, "showPanelHeader", js.undefined)
       
       @scala.inline
-      def setStack(value: js.Array[IPanel[_]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
+      def setStack(value: js.Array[IPanel[js.Any]]): Self = StObject.set(x, "stack", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setStackUndefined: Self = StObject.set(x, "stack", js.undefined)
@@ -126,14 +126,13 @@ object panelStackMod {
     }
   }
   
-  @js.native
   trait IPanelStackState extends StObject {
     
     /** Whether the stack is currently animating the push or pop of a panel. */
-    var direction: push | pop = js.native
+    var direction: push | pop
     
     /** The current stack of panels. The first panel in the stack will be displayed. */
-    var stack: js.Array[IPanel[js.Object]] = js.native
+    var stack: js.Array[IPanel[js.Object]]
   }
   object IPanelStackState {
     

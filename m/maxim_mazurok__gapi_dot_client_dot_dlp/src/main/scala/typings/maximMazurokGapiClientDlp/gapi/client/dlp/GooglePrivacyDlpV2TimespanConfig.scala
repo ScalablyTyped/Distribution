@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2TimespanConfig extends StObject {
   
   /**
     * When the job is started by a JobTrigger we will automatically figure out a valid start_time to avoid scanning files that have not been modified since the last time the JobTrigger
     * executed. This will be based on the time of the execution of the last run of the JobTrigger.
     */
-  var enableAutoPopulationOfTimespanConfig: js.UndefOr[Boolean] = js.native
+  var enableAutoPopulationOfTimespanConfig: js.UndefOr[Boolean] = js.undefined
   
   /** Exclude files, tables, or rows newer than this value. If not set, no upper time limit is applied. */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Exclude files, tables, or rows older than this value. If not set, no lower time limit is applied. */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * Specification of the field containing the timestamp of scanned items. Used for data sources like Datastore and BigQuery. For BigQuery: If this value is not specified and the table
@@ -27,7 +25,7 @@ trait GooglePrivacyDlpV2TimespanConfig extends StObject {
     * If this value is specified, then entities are filtered based on the given start and end times. If an entity does not contain the provided timestamp property or contains empty or
     * invalid values, then it is included. Valid data types of the provided timestamp property are: `TIMESTAMP`.
     */
-  var timestampField: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.native
+  var timestampField: js.UndefOr[GooglePrivacyDlpV2FieldId] = js.undefined
 }
 object GooglePrivacyDlpV2TimespanConfig {
   

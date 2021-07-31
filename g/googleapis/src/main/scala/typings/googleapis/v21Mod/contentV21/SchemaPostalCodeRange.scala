@@ -2,10 +2,8 @@ package typings.googleapis.v21Mod.contentV21
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaPostalCodeRange extends StObject {
   
   /**
@@ -13,7 +11,7 @@ trait SchemaPostalCodeRange extends StObject {
     * lower bound of the range defining the area. Examples values:
     * &quot;94108&quot;, &quot;9410*&quot;, &quot;9*&quot;. Required.
     */
-  var postalCodeRangeBegin: js.UndefOr[String] = js.native
+  var postalCodeRangeBegin: js.UndefOr[String] = js.undefined
   
   /**
     * A postal code or a pattern of the form prefix* denoting the inclusive
@@ -24,7 +22,7 @@ trait SchemaPostalCodeRange extends StObject {
     * length. Optional: if not set, then the area is defined as being all the
     * postal codes matching postalCodeRangeBegin.
     */
-  var postalCodeRangeEnd: js.UndefOr[String] = js.native
+  var postalCodeRangeEnd: js.UndefOr[String] = js.undefined
 }
 object SchemaPostalCodeRange {
   

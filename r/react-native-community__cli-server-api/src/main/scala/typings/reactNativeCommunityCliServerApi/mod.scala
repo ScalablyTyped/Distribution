@@ -13,14 +13,16 @@ import typings.reactNativeCommunityCliServerApi.eventsSocketServerMod.MessageSoc
 import typings.reactNativeCommunityCliServerApi.openStackFrameInEditorMiddlewareMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@react-native-community/cli-server-api/build", "createDevServerMiddleware")
+  @JSImport("@react-native-community/cli-server-api/build", JSImport.Namespace)
   @js.native
-  def createDevServerMiddleware(options: MiddlewareOptions): AttachToServer = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def createDevServerMiddleware(options: MiddlewareOptions): AttachToServer = ^.asInstanceOf[js.Dynamic].applyDynamic("createDevServerMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[AttachToServer]
   
   object debuggerProxyServer {
     
@@ -35,9 +37,8 @@ object mod {
     def attachToServer_=(x: js.Function2[/* server */ Server, /* path */ String, IsDebuggerConnected]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attachToServer")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@react-native-community/cli-server-api/build", "devToolsMiddleware")
-  @js.native
-  def devToolsMiddleware(options: LaunchDevToolsOptions, isDebuggerConnected: js.Function0[Boolean]): js.Function2[/* _req */ IncomingMessage, /* res */ ServerResponse, Unit] = js.native
+  @scala.inline
+  def devToolsMiddleware(options: LaunchDevToolsOptions, isDebuggerConnected: js.Function0[Boolean]): js.Function2[/* _req */ IncomingMessage, /* res */ ServerResponse, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("devToolsMiddleware")(options.asInstanceOf[js.Any], isDebuggerConnected.asInstanceOf[js.Any])).asInstanceOf[js.Function2[/* _req */ IncomingMessage, /* res */ ServerResponse, Unit]]
   
   object eventsSocketServer {
     
@@ -64,9 +65,8 @@ object mod {
     ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("attachToServer")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@react-native-community/cli-server-api/build", "indexPageMiddleware")
-  @js.native
-  def indexPageMiddleware(req: IncomingMessage, res: ServerResponse, next: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  @scala.inline
+  def indexPageMiddleware(req: IncomingMessage, res: ServerResponse, next: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("indexPageMiddleware")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object messageSocketServer {
     
@@ -97,38 +97,32 @@ object mod {
     def parseMessage_=(x: js.Function2[/* data */ String, /* binary */ js.Any, js.Any]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("parseMessage")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@react-native-community/cli-server-api/build", "openStackFrameInEditorMiddleware")
-  @js.native
-  def openStackFrameInEditorMiddleware(options: Options): typings.connect.mod.Server = js.native
+  @scala.inline
+  def openStackFrameInEditorMiddleware(options: Options): typings.connect.mod.Server = ^.asInstanceOf[js.Dynamic].applyDynamic("openStackFrameInEditorMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[typings.connect.mod.Server]
   
   @JSImport("@react-native-community/cli-server-api/build", "openURLMiddleware")
   @js.native
   val openURLMiddleware: typings.connect.mod.Server = js.native
   
-  @JSImport("@react-native-community/cli-server-api/build", "rawBodyMiddleware")
-  @js.native
-  def rawBodyMiddleware(req: IncomingMessage, _res: ServerResponse, next: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  @scala.inline
+  def rawBodyMiddleware(req: IncomingMessage, _res: ServerResponse, next: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("rawBodyMiddleware")(req.asInstanceOf[js.Any], _res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-native-community/cli-server-api/build", "securityHeadersMiddleware")
-  @js.native
-  def securityHeadersMiddleware(req: IncomingMessage, res: ServerResponse, next: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = js.native
+  @scala.inline
+  def securityHeadersMiddleware(req: IncomingMessage, res: ServerResponse, next: js.Function1[/* err */ js.UndefOr[js.Any], Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("securityHeadersMiddleware")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], next.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-native-community/cli-server-api/build", "statusPageMiddleware")
-  @js.native
-  def statusPageMiddleware(_req: IncomingMessage, res: ServerResponse): Unit = js.native
+  @scala.inline
+  def statusPageMiddleware(_req: IncomingMessage, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("statusPageMiddleware")(_req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("@react-native-community/cli-server-api/build", "systraceProfileMiddleware")
-  @js.native
-  def systraceProfileMiddleware(req: IncomingMessagerawBodystr, res: ServerResponse): Unit = js.native
+  @scala.inline
+  def systraceProfileMiddleware(req: IncomingMessagerawBodystr, res: ServerResponse): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("systraceProfileMiddleware")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @js.native
   trait MiddlewareOptions extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var port: Double = js.native
+    var port: Double
     
-    var watchFolders: js.Array[String] = js.native
+    var watchFolders: js.Array[String]
   }
   object MiddlewareOptions {
     

@@ -6,28 +6,26 @@ import typings.openfin.windowOptionMod.Api
 import typings.openfin.windowOptionMod.ContentNavigation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<openfin.openfin/_v2/api/view/view.ViewOptions> */
-@js.native
 trait PartialViewOptions extends StObject {
   
-  var api: js.UndefOr[Api] = js.native
+  var api: js.UndefOr[Api] = js.undefined
   
-  var autoResize: js.UndefOr[AutoResizeOptions] = js.native
+  var autoResize: js.UndefOr[AutoResizeOptions] = js.undefined
   
-  var backgroundColor: js.UndefOr[String] = js.native
+  var backgroundColor: js.UndefOr[String] = js.undefined
   
-  var contentNavigation: js.UndefOr[ContentNavigation] = js.native
+  var contentNavigation: js.UndefOr[ContentNavigation] = js.undefined
   
-  var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.native
+  var contextMenuSettings: js.UndefOr[ContextMenuSettings] = js.undefined
   
-  var customContext: js.UndefOr[js.Any] = js.native
+  var customContext: js.UndefOr[js.Any] = js.undefined
   
-  var customData: js.UndefOr[js.Any] = js.native
+  var customData: js.UndefOr[js.Any] = js.undefined
   
-  var experimental: js.UndefOr[js.Any] = js.native
+  var experimental: js.UndefOr[js.Any] = js.undefined
 }
 object PartialViewOptions {
   

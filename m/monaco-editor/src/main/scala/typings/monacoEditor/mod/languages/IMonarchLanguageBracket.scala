@@ -2,26 +2,24 @@ package typings.monacoEditor.mod.languages
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMonarchLanguageBracket extends StObject {
   
   /**
     * closing bracket
     */
-  var close: String = js.native
+  var close: String
   
   /**
     * open bracket
     */
-  var open: String = js.native
+  var open: String
   
   /**
     * token class
     */
-  var token: String = js.native
+  var token: String
 }
 object IMonarchLanguageBracket {
   

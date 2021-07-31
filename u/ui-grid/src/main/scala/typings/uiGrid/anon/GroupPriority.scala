@@ -2,16 +2,14 @@ package typings.uiGrid.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GroupPriority extends StObject {
   
   /**
     * number, starts at 0, if less than 0 or undefined then we're aggregating in this column
     */
-  var groupPriority: Double = js.native
+  var groupPriority: Double
 }
 object GroupPriority {
   

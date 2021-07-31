@@ -13,7 +13,6 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.ol.sourceSourceMod.AttributionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sourceVectorMod {
@@ -39,28 +38,27 @@ object sourceVectorMod {
   
   type LoadingStrategy = js.Function2[/* p0 */ Extent, /* p1 */ Double, js.Array[Extent]]
   
-  @js.native
   trait Options extends StObject {
     
-    var attributions: js.UndefOr[AttributionLike] = js.native
+    var attributions: js.UndefOr[AttributionLike] = js.undefined
     
     var features: js.UndefOr[
         js.Array[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]] | typings.ol.collectionMod.default[typings.ol.olFeatureMod.default[typings.ol.geometryMod.default]]
-      ] = js.native
+      ] = js.undefined
     
-    var format: js.UndefOr[typings.ol.featureMod.default] = js.native
+    var format: js.UndefOr[typings.ol.featureMod.default] = js.undefined
     
-    var loader: js.UndefOr[FeatureLoader] = js.native
+    var loader: js.UndefOr[FeatureLoader] = js.undefined
     
-    var overlaps: js.UndefOr[Boolean] = js.native
+    var overlaps: js.UndefOr[Boolean] = js.undefined
     
-    var strategy: js.UndefOr[LoadingStrategy] = js.native
+    var strategy: js.UndefOr[LoadingStrategy] = js.undefined
     
-    var url: js.UndefOr[String | FeatureUrlFunction] = js.native
+    var url: js.UndefOr[String | FeatureUrlFunction] = js.undefined
     
-    var useSpatialIndex: js.UndefOr[Boolean] = js.native
+    var useSpatialIndex: js.UndefOr[Boolean] = js.undefined
     
-    var wrapX: js.UndefOr[Boolean] = js.native
+    var wrapX: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

@@ -2,21 +2,19 @@ package typings.paypalRestSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SDKError extends StObject {
   
-  var httpStatusCode: Double = js.native
+  var httpStatusCode: Double
   
-  var message: String = js.native
+  var message: String
   
-  var response: PayPalError = js.native
+  var response: PayPalError
   
-  var response_stringified: js.UndefOr[String] = js.native
+  var response_stringified: js.UndefOr[String] = js.undefined
   
-  var stack: String = js.native
+  var stack: String
 }
 object SDKError {
   

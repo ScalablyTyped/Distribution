@@ -5,7 +5,6 @@ import typings.reactSketchapp.propsMod.NumberProp
 import typings.reactSketchapp.propsMod.PathProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useMod {
@@ -17,15 +16,16 @@ object useMod {
   
   type Use = Component[UseProps, js.Object, js.Any]
   
-  @js.native
-  trait UseProps extends PathProps {
+  trait UseProps
+    extends StObject
+       with PathProps {
     
     // Just for reusing `Symbol`
-    var height: js.UndefOr[NumberProp] = js.native
+    var height: js.UndefOr[NumberProp] = js.undefined
     
-    var href: String = js.native
+    var href: String
     
-    var width: js.UndefOr[NumberProp] = js.native
+    var width: js.UndefOr[NumberProp] = js.undefined
   }
   object UseProps {
     

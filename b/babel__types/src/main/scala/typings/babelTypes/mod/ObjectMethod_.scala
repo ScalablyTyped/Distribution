@@ -6,14 +6,13 @@ import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.mod._Node because Already inherited */ @js.native
-trait ObjectMethod_
-  extends BlockParent
+- typings.babelTypes.mod._Node because Already inherited */ trait ObjectMethod_
+  extends StObject
      with BaseNode
+     with BlockParent
      with Function
      with FunctionParent
      with Method
@@ -21,28 +20,28 @@ trait ObjectMethod_
      with Scopable
      with UserWhitespacable {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var body: BlockStatement_ = js.native
+  var body: BlockStatement_
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var decorators: js.Array[Decorator_] | Null = js.native
+  var decorators: js.Array[Decorator_] | Null
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_ = js.native
+  var key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_
   
-  var kind: method | get | set = js.native
+  var kind: method | get | set
   
-  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_] = js.native
+  var params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   
-  var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null = js.native
+  var returnType: TypeAnnotation_ | TSTypeAnnotation_ | Noop_ | Null
   
-  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null = js.native
+  var typeParameters: TypeParameterDeclaration_ | TSTypeParameterDeclaration_ | Noop_ | Null
   
   @JSName("type")
-  var type_ObjectMethod_ : ObjectMethod = js.native
+  var type_ObjectMethod_ : ObjectMethod
 }
 object ObjectMethod_ {
   
@@ -54,11 +53,10 @@ object ObjectMethod_ {
     generator: Boolean,
     key: Expression | Identifier_ | StringLiteral_ | NumericLiteral_,
     kind: method | get | set,
-    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_],
-    `type`: ObjectMethod
+    params: js.Array[Identifier_ | Pattern | RestElement_ | TSParameterProperty_]
   ): ObjectMethod_ = {
-    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], decorators = null, end = null, innerComments = null, leadingComments = null, loc = null, returnType = null, start = null, trailingComments = null, typeParameters = null)
+    __obj.updateDynamic("type")("ObjectMethod")
     __obj.asInstanceOf[ObjectMethod_]
   }
   

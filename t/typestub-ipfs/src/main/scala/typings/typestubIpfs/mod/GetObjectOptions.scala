@@ -1,36 +1,28 @@
 package typings.typestubIpfs.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetObjectOptions extends js.Object {
-  var enc: js.UndefOr[js.Any] = js.native
+trait GetObjectOptions extends StObject {
+  
+  var enc: js.UndefOr[js.Any] = js.undefined
 }
-
 object GetObjectOptions {
+  
   @scala.inline
   def apply(): GetObjectOptions = {
     val __obj = js.Dynamic.literal()
     __obj.asInstanceOf[GetObjectOptions]
   }
-  @scala.inline
-  implicit class GetObjectOptionsOps[Self <: GetObjectOptions] (val x: Self) extends AnyVal {
-    @scala.inline
-    def duplicate: Self = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x)).asInstanceOf[Self]
-    @scala.inline
-    def combineWith[Other <: js.Any](other: Other): Self with Other = (js.Dynamic.global.Object.assign(js.Dynamic.literal(), x, other.asInstanceOf[js.Any])).asInstanceOf[Self with Other]
-    @scala.inline
-    def set(key: String, value: js.Any): Self = {
-        x.asInstanceOf[js.Dynamic].updateDynamic(key)(value)
-        x
-    }
-    @scala.inline
-    def setEnc(value: js.Any): Self = this.set("enc", value.asInstanceOf[js.Any])
-    @scala.inline
-    def deleteEnc: Self = this.set("enc", js.undefined)
-  }
   
+  @scala.inline
+  implicit class GetObjectOptionsMutableBuilder[Self <: GetObjectOptions] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setEnc(value: js.Any): Self = StObject.set(x, "enc", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEncUndefined: Self = StObject.set(x, "enc", js.undefined)
+  }
 }
-

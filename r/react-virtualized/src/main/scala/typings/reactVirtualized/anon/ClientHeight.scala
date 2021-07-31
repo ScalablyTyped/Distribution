@@ -2,17 +2,15 @@ package typings.reactVirtualized.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientHeight extends StObject {
   
-  var clientHeight: Double = js.native
+  var clientHeight: Double
   
-  var scrollHeight: Double = js.native
+  var scrollHeight: Double
   
-  var scrollTop: Double = js.native
+  var scrollTop: Double
 }
 object ClientHeight {
   

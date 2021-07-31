@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegionInstanceGroupManagersSetTemplateRequest extends StObject {
   
   /** URL of the InstanceTemplate resource from which all new instances will be created. */
-  var instanceTemplate: js.UndefOr[String] = js.native
+  var instanceTemplate: js.UndefOr[String] = js.undefined
 }
 object RegionInstanceGroupManagersSetTemplateRequest {
   

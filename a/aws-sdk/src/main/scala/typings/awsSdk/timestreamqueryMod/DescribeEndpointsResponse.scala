@@ -2,16 +2,14 @@ package typings.awsSdk.timestreamqueryMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeEndpointsResponse extends StObject {
   
   /**
     * An Endpoints object is returned when a DescribeEndpoints request is made.
     */
-  var Endpoints: typings.awsSdk.timestreamqueryMod.Endpoints = js.native
+  var Endpoints: typings.awsSdk.timestreamqueryMod.Endpoints
 }
 object DescribeEndpointsResponse {
   

@@ -2,29 +2,27 @@ package typings.jestTestResult.typesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FailedAssertion extends StObject {
   
-  var actual: js.UndefOr[js.Any] = js.native
+  var actual: js.UndefOr[js.Any] = js.undefined
   
-  var error: js.UndefOr[js.Any] = js.native
+  var error: js.UndefOr[js.Any] = js.undefined
   
-  var expected: js.UndefOr[js.Any] = js.native
+  var expected: js.UndefOr[js.Any] = js.undefined
   
-  var isNot: js.UndefOr[Boolean] = js.native
+  var isNot: js.UndefOr[Boolean] = js.undefined
   
-  var matcherName: js.UndefOr[String] = js.native
+  var matcherName: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var pass: js.UndefOr[Boolean] = js.native
+  var pass: js.UndefOr[Boolean] = js.undefined
   
-  var passed: js.UndefOr[Boolean] = js.native
+  var passed: js.UndefOr[Boolean] = js.undefined
   
-  var stack: js.UndefOr[String] = js.native
+  var stack: js.UndefOr[String] = js.undefined
 }
 object FailedAssertion {
   

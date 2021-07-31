@@ -2,36 +2,34 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceDetail extends StObject {
   
   /**
     * The ARN of the resource.
     */
-  var ARN: js.UndefOr[ResourceDetailARN] = js.native
+  var ARN: js.UndefOr[ResourceDetailARN] = js.undefined
   
   /**
     * The creation time of the resource.
     */
-  var CreatedTime: js.UndefOr[ResourceDetailCreatedTime] = js.native
+  var CreatedTime: js.UndefOr[ResourceDetailCreatedTime] = js.undefined
   
   /**
     * The description of the resource.
     */
-  var Description: js.UndefOr[ResourceDetailDescription] = js.native
+  var Description: js.UndefOr[ResourceDetailDescription] = js.undefined
   
   /**
     * The identifier of the resource.
     */
-  var Id: js.UndefOr[ResourceDetailId] = js.native
+  var Id: js.UndefOr[ResourceDetailId] = js.undefined
   
   /**
     * The name of the resource.
     */
-  var Name: js.UndefOr[ResourceDetailName] = js.native
+  var Name: js.UndefOr[ResourceDetailName] = js.undefined
 }
 object ResourceDetail {
   

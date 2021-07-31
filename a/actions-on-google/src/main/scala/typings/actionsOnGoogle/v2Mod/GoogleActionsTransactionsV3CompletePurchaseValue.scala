@@ -2,28 +2,26 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsTransactionsV3CompletePurchaseValue extends StObject {
   
   /**
     * A unique order identifier for the transaction. This identifier corresponds
     * to the Google provided order ID.
     */
-  var orderId: js.UndefOr[String] = js.native
+  var orderId: js.UndefOr[String] = js.undefined
   
   /**
     * Status of current purchase.
     */
-  var purchaseStatus: js.UndefOr[GoogleActionsTransactionsV3CompletePurchaseValuePurchaseStatus] = js.native
+  var purchaseStatus: js.UndefOr[GoogleActionsTransactionsV3CompletePurchaseValuePurchaseStatus] = js.undefined
   
   /**
     * A opaque token that uniquely identifies a purchase for a given item and
     * user pair.
     */
-  var purchaseToken: js.UndefOr[String] = js.native
+  var purchaseToken: js.UndefOr[String] = js.undefined
 }
 object GoogleActionsTransactionsV3CompletePurchaseValue {
   

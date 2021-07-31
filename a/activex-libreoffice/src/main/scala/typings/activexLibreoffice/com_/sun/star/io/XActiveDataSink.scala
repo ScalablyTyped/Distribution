@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,21 +11,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If you want to allow control from outside, also implement the {@link XActiveDataControl} interface.
   */
-@js.native
-trait XActiveDataSink extends XInterface {
+trait XActiveDataSink
+  extends StObject
+     with XInterface {
   
   /** @returns the plugged stream. */
-  var InputStream: XInputStream = js.native
+  var InputStream: XInputStream
   
   /** @returns the plugged stream. */
-  def getInputStream(): XInputStream = js.native
+  def getInputStream(): XInputStream
   
   /**
     * plugs the input stream.
     *
     * If {@link XConnectable} is also implemented, this method should query **aStream** for an {@link XConnectable} and connect both.
     */
-  def setInputStream(aStream: XInputStream): Unit = js.native
+  def setInputStream(aStream: XInputStream): Unit
 }
 object XActiveDataSink {
   

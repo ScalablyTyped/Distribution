@@ -3,25 +3,25 @@ package typings.pulumiAws
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getUserPoolsMod {
   
-  @JSImport("@pulumi/aws/cognito/getUserPools", "getUserPools")
+  @JSImport("@pulumi/aws/cognito/getUserPools", JSImport.Namespace)
   @js.native
-  def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = js.native
-  @JSImport("@pulumi/aws/cognito/getUserPools", "getUserPools")
-  @js.native
-  def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getUserPools(args: GetUserPoolsArgs): js.Promise[GetUserPoolsResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetUserPoolsResult]]
+  @scala.inline
+  def getUserPools(args: GetUserPoolsArgs, opts: InvokeOptions): js.Promise[GetUserPoolsResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getUserPools")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetUserPoolsResult]]
+  
   trait GetUserPoolsArgs extends StObject {
     
     /**
       * Name of the cognito user pools. Name is not a unique attribute for cognito user pool, so multiple pools might be returned with given name.
       */
-    val name: String = js.native
+    val name: String
   }
   object GetUserPoolsArgs {
     
@@ -39,22 +39,21 @@ object getUserPoolsMod {
     }
   }
   
-  @js.native
   trait GetUserPoolsResult extends StObject {
     
-    val arns: js.Array[String] = js.native
+    val arns: js.Array[String]
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The list of cognito user pool ids.
       */
-    val ids: js.Array[String] = js.native
+    val ids: js.Array[String]
     
-    val name: String = js.native
+    val name: String
   }
   object GetUserPoolsResult {
     

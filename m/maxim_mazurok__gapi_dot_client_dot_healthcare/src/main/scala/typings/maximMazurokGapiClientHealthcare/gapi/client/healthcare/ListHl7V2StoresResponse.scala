@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListHl7V2StoresResponse extends StObject {
   
   /** The returned HL7v2 stores. Won't be more HL7v2 stores than the value of page_size in the request. */
-  var hl7V2Stores: js.UndefOr[js.Array[Hl7V2Store]] = js.native
+  var hl7V2Stores: js.UndefOr[js.Array[Hl7V2Store]] = js.undefined
   
   /** Token to retrieve the next page of results or empty if there are no more results in the list. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object ListHl7V2StoresResponse {
   

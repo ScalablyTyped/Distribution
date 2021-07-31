@@ -2,19 +2,17 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Section State
   */
-@js.native
 trait ISectionState extends StObject {
   
   //The currently active section
-  var currentSection: js.Any = js.native
+  var currentSection: js.Any
   
-  var showSearchResults: Boolean = js.native
+  var showSearchResults: Boolean
 }
 object ISectionState {
   

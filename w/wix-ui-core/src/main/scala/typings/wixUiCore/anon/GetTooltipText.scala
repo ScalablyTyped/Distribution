@@ -1,0 +1,63 @@
+package typings.wixUiCore.anon
+
+import org.scalablytyped.runtime.StObject
+import scala.scalajs.js
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
+
+trait GetTooltipText extends StObject {
+  
+  /** clicks outside the tooltip target */
+  def clickOutside(): js.Promise[Unit]
+  
+  /** returns true if trigger element exists on the DOM */
+  def exists(): js.Promise[Boolean]
+  
+  /** returns tooltips content value in string */
+  def getTooltipText(): js.Promise[js.Any]
+  
+  /** mouse over the target element */
+  def mouseEnter(): js.Promise[Unit]
+  
+  /** mouse leaves the target element */
+  def mouseLeave(): js.Promise[Unit]
+  
+  /** returns true if tooltip element exists on the DOM */
+  def tooltipExists(): js.Promise[Boolean]
+}
+object GetTooltipText {
+  
+  @scala.inline
+  def apply(
+    clickOutside: () => js.Promise[Unit],
+    exists: () => js.Promise[Boolean],
+    getTooltipText: () => js.Promise[js.Any],
+    mouseEnter: () => js.Promise[Unit],
+    mouseLeave: () => js.Promise[Unit],
+    tooltipExists: () => js.Promise[Boolean]
+  ): GetTooltipText = {
+    val __obj = js.Dynamic.literal(clickOutside = js.Any.fromFunction0(clickOutside), exists = js.Any.fromFunction0(exists), getTooltipText = js.Any.fromFunction0(getTooltipText), mouseEnter = js.Any.fromFunction0(mouseEnter), mouseLeave = js.Any.fromFunction0(mouseLeave), tooltipExists = js.Any.fromFunction0(tooltipExists))
+    __obj.asInstanceOf[GetTooltipText]
+  }
+  
+  @scala.inline
+  implicit class GetTooltipTextMutableBuilder[Self <: GetTooltipText] (val x: Self) extends AnyVal {
+    
+    @scala.inline
+    def setClickOutside(value: () => js.Promise[Unit]): Self = StObject.set(x, "clickOutside", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "exists", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setGetTooltipText(value: () => js.Promise[js.Any]): Self = StObject.set(x, "getTooltipText", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setMouseEnter(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseEnter", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setMouseLeave(value: () => js.Promise[Unit]): Self = StObject.set(x, "mouseLeave", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setTooltipExists(value: () => js.Promise[Boolean]): Self = StObject.set(x, "tooltipExists", js.Any.fromFunction0(value))
+  }
+}

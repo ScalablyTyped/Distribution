@@ -2,15 +2,13 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Uuid extends StObject {
   
-  var name: String = js.native
+  var name: String
   
-  var uuid: String = js.native
+  var uuid: String
 }
 object Uuid {
   

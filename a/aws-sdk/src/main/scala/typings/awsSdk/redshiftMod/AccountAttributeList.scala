@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AccountAttributeList extends StObject {
   
   /**
     * A list of attributes assigned to an account.
     */
-  var AccountAttributes: js.UndefOr[AttributeList] = js.native
+  var AccountAttributes: js.UndefOr[AttributeList] = js.undefined
 }
 object AccountAttributeList {
   

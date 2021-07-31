@@ -3,29 +3,37 @@ package typings.compressJs
 import typings.std.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("compress.js", JSImport.Namespace)
   @js.native
-  class ^ () extends Compress
+  class ^ ()
+    extends StObject
+       with Compress {
+    
+    /* CompleteClass */
+    override def attach(el: String, options: CompressOptions): js.Promise[js.Array[CompressResult]] = js.native
+    
+    /* CompleteClass */
+    override def compress(files: js.Array[File], options: CompressOptions): js.Promise[js.Array[CompressResult]] = js.native
+  }
+  @JSImport("compress.js", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /* static member */
-  @JSImport("compress.js", "convertBase64ToFile")
-  @js.native
-  def convertBase64ToFile(base64: String): File = js.native
-  @JSImport("compress.js", "convertBase64ToFile")
-  @js.native
-  def convertBase64ToFile(base64: String, mime: String): File = js.native
+  @scala.inline
+  def convertBase64ToFile(base64: String): File = ^.asInstanceOf[js.Dynamic].applyDynamic("convertBase64ToFile")(base64.asInstanceOf[js.Any]).asInstanceOf[File]
+  @scala.inline
+  def convertBase64ToFile(base64: String, mime: String): File = (^.asInstanceOf[js.Dynamic].applyDynamic("convertBase64ToFile")(base64.asInstanceOf[js.Any], mime.asInstanceOf[js.Any])).asInstanceOf[File]
   
-  @js.native
   trait Compress extends StObject {
     
-    def attach(el: String, options: CompressOptions): js.Promise[js.Array[CompressResult]] = js.native
+    def attach(el: String, options: CompressOptions): js.Promise[js.Array[CompressResult]]
     
-    def compress(files: js.Array[File], options: CompressOptions): js.Promise[js.Array[CompressResult]] = js.native
+    def compress(files: js.Array[File], options: CompressOptions): js.Promise[js.Array[CompressResult]]
   }
   object Compress {
     
@@ -49,18 +57,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CompressOptions extends StObject {
     
-    var maxHeight: js.UndefOr[Double] = js.native
+    var maxHeight: js.UndefOr[Double] = js.undefined
     
-    var maxWidth: js.UndefOr[Double] = js.native
+    var maxWidth: js.UndefOr[Double] = js.undefined
     
-    var quality: js.UndefOr[Double] = js.native
+    var quality: js.UndefOr[Double] = js.undefined
     
-    var resize: js.UndefOr[Boolean] = js.native
+    var resize: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object CompressOptions {
     
@@ -105,36 +112,35 @@ object mod {
     }
   }
   
-  @js.native
   trait CompressResult extends StObject {
     
-    var alt: String = js.native
+    var alt: String
     
-    var data: String = js.native
+    var data: String
     
-    var elapsedTimeInSeconds: Double = js.native
+    var elapsedTimeInSeconds: Double
     
-    var endHeightInPx: Double = js.native
+    var endHeightInPx: Double
     
-    var endSizeInMb: Double = js.native
+    var endSizeInMb: Double
     
-    var endWidthInPx: Double = js.native
+    var endWidthInPx: Double
     
-    var ext: String = js.native
+    var ext: String
     
-    var initialHeightInPx: Double = js.native
+    var initialHeightInPx: Double
     
-    var initialSizeInMb: Double = js.native
+    var initialSizeInMb: Double
     
-    var initialWidthInPx: Double = js.native
+    var initialWidthInPx: Double
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var prefix: String = js.native
+    var prefix: String
     
-    var quality: Double = js.native
+    var quality: Double
     
-    var sizeReducedInPercent: Double = js.native
+    var sizeReducedInPercent: Double
   }
   object CompressResult {
     

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Resources extends StObject {
   
   /** List of resources IDs. For example, "Patient/1234". */
-  var resources: js.UndefOr[js.Array[String]] = js.native
+  var resources: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Resources {
   

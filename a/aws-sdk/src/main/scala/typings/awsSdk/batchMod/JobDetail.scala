@@ -2,111 +2,109 @@ package typings.awsSdk.batchMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JobDetail extends StObject {
   
   /**
     * The array properties of the job, if it is an array job.
     */
-  var arrayProperties: js.UndefOr[ArrayPropertiesDetail] = js.native
+  var arrayProperties: js.UndefOr[ArrayPropertiesDetail] = js.undefined
   
   /**
     * A list of job attempts associated with this job.
     */
-  var attempts: js.UndefOr[AttemptDetails] = js.native
+  var attempts: js.UndefOr[AttemptDetails] = js.undefined
   
   /**
     * An object representing the details of the container that is associated with the job.
     */
-  var container: js.UndefOr[ContainerDetail] = js.native
+  var container: js.UndefOr[ContainerDetail] = js.undefined
   
   /**
     * The Unix timestamp (in milliseconds) for when the job was created. For non-array jobs and parent array jobs, this is when the job entered the SUBMITTED state (at the time SubmitJob was called). For array child jobs, this is when the child job was spawned by its parent and entered the PENDING state.
     */
-  var createdAt: js.UndefOr[Long] = js.native
+  var createdAt: js.UndefOr[Long] = js.undefined
   
   /**
     * A list of job IDs on which this job depends.
     */
-  var dependsOn: js.UndefOr[JobDependencyList] = js.native
+  var dependsOn: js.UndefOr[JobDependencyList] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the job.
     */
-  var jobArn: js.UndefOr[String] = js.native
+  var jobArn: js.UndefOr[String] = js.undefined
   
   /**
     * The job definition that is used by this job.
     */
-  var jobDefinition: String = js.native
+  var jobDefinition: String
   
   /**
     * The ID for the job.
     */
-  var jobId: String = js.native
+  var jobId: String
   
   /**
     * The name of the job.
     */
-  var jobName: String = js.native
+  var jobName: String
   
   /**
     * The Amazon Resource Name (ARN) of the job queue with which the job is associated.
     */
-  var jobQueue: String = js.native
+  var jobQueue: String
   
   /**
     * An object representing the details of a node that is associated with a multi-node parallel job.
     */
-  var nodeDetails: js.UndefOr[NodeDetails] = js.native
+  var nodeDetails: js.UndefOr[NodeDetails] = js.undefined
   
   /**
     * An object representing the node properties of a multi-node parallel job.
     */
-  var nodeProperties: js.UndefOr[NodeProperties] = js.native
+  var nodeProperties: js.UndefOr[NodeProperties] = js.undefined
   
   /**
     * Additional parameters passed to the job that replace parameter substitution placeholders or override any corresponding parameter defaults from the job definition.
     */
-  var parameters: js.UndefOr[ParametersMap] = js.native
+  var parameters: js.UndefOr[ParametersMap] = js.undefined
   
   /**
     * The retry strategy to use for this job if an attempt fails.
     */
-  var retryStrategy: js.UndefOr[RetryStrategy] = js.native
+  var retryStrategy: js.UndefOr[RetryStrategy] = js.undefined
   
   /**
     * The Unix timestamp (in milliseconds) for when the job was started (when the job transitioned from the STARTING state to the RUNNING state). This parameter is not provided for child jobs of array jobs or multi-node parallel jobs.
     */
-  var startedAt: Long = js.native
+  var startedAt: Long
   
   /**
     * The current status for the job.  If your jobs do not progress to STARTING, see Jobs Stuck in RUNNABLE Status in the troubleshooting section of the AWS Batch User Guide. 
     */
-  var status: JobStatus = js.native
+  var status: JobStatus
   
   /**
     * A short, human-readable string to provide additional details about the current status of the job.
     */
-  var statusReason: js.UndefOr[String] = js.native
+  var statusReason: js.UndefOr[String] = js.undefined
   
   /**
     * The Unix timestamp (in milliseconds) for when the job was stopped (when the job transitioned from the RUNNING state to a terminal state, such as SUCCEEDED or FAILED).
     */
-  var stoppedAt: js.UndefOr[Long] = js.native
+  var stoppedAt: js.UndefOr[Long] = js.undefined
   
   /**
     * The tags applied to the job.
     */
-  var tags: js.UndefOr[TagrisTagsMap] = js.native
+  var tags: js.UndefOr[TagrisTagsMap] = js.undefined
   
   /**
     * The timeout configuration for the job.
     */
-  var timeout: js.UndefOr[JobTimeout] = js.native
+  var timeout: js.UndefOr[JobTimeout] = js.undefined
 }
 object JobDetail {
   

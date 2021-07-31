@@ -4,17 +4,18 @@ import typings.promiseMemoize.anon.Clear
 import typings.promiseMemoize.promiseMemoizeStrings.json
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] */](fn: T): T & Clear = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[T & Clear]
+  @scala.inline
+  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[js.Any]] */](fn: T, options: Options): T & Clear = (^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Clear]
+  
   @JSImport("promise-memoize", JSImport.Namespace)
   @js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[_]] */](fn: T): T with Clear = js.native
-  @JSImport("promise-memoize", JSImport.Namespace)
-  @js.native
-  def apply[T /* <: js.Function1[/* repeated */ js.Any, js.Thenable[_]] */](fn: T, options: Options): T with Clear = js.native
+  val ^ : js.Any = js.native
   
   /* Rewritten from type alias, can be one of: 
     - typings.promiseMemoize.promiseMemoizeStrings.simple
@@ -25,14 +26,13 @@ object mod {
   */
   type KeyResolver = _KeyResolver | (js.Function1[/* args */ js.Array[js.Any], js.Any]) | (js.Array[json | (js.Function1[/* arg */ js.Any, js.Any])])
   
-  @js.native
   trait Options extends StObject {
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var maxErrorAge: js.UndefOr[Double] = js.native
+    var maxErrorAge: js.UndefOr[Double] = js.undefined
     
-    var resolve: js.UndefOr[KeyResolver] = js.native
+    var resolve: js.UndefOr[KeyResolver] = js.undefined
   }
   object Options {
     

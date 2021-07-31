@@ -2,32 +2,30 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Columns extends StObject {
   
-  def Add(Name: String): Column = js.native
+  def Add(Name: String): Column
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  val Count: Double = js.native
+  val Count: Double
   
-  def Item(Index: js.Any): Column = js.native
+  def Item(Index: js.Any): Column
   
   @JSName("Outlook.Columns_typekey")
-  var OutlookDotColumns_typekey: Columns = js.native
+  var OutlookDotColumns_typekey: Columns
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  def Remove(Index: js.Any): Unit = js.native
+  def Remove(Index: js.Any): Unit
   
-  def RemoveAll(): Unit = js.native
+  def RemoveAll(): Unit
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
 }
 object Columns {
   

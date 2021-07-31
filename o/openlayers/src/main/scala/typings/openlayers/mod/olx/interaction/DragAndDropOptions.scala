@@ -7,19 +7,17 @@ import typings.openlayers.mod.source.Vector
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DragAndDropOptions extends StObject {
   
-  var formatConstructors: js.UndefOr[js.Array[Instantiable0[Feature]]] = js.native
+  var formatConstructors: js.UndefOr[js.Array[Instantiable0[Feature]]] = js.undefined
   
-  var projection: ProjectionLike = js.native
+  var projection: ProjectionLike
   
-  var source: js.UndefOr[Vector] = js.native
+  var source: js.UndefOr[Vector] = js.undefined
   
-  var target: js.UndefOr[Element] = js.native
+  var target: js.UndefOr[Element] = js.undefined
 }
 object DragAndDropOptions {
   

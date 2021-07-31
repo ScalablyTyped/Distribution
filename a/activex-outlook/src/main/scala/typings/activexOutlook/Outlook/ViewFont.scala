@@ -2,38 +2,36 @@ package typings.activexOutlook.Outlook
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ViewFont extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  var Bold: Boolean = js.native
+  var Bold: Boolean
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Color: OlColor = js.native
+  var Color: OlColor
   
-  var ExtendedColor: OlCategoryColor = js.native
+  var ExtendedColor: OlCategoryColor
   
-  var Italic: Boolean = js.native
+  var Italic: Boolean
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.ViewFont_typekey")
-  var OutlookDotViewFont_typekey: ViewFont = js.native
+  var OutlookDotViewFont_typekey: ViewFont
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var Size: Double = js.native
+  var Size: Double
   
-  var Strikethrough: Boolean = js.native
+  var Strikethrough: Boolean
   
-  var Underline: Boolean = js.native
+  var Underline: Boolean
 }
 object ViewFont {
   

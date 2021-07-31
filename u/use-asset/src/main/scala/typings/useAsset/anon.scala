@@ -2,25 +2,23 @@ package typings.useAsset
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Clear[T] extends StObject {
     
-    def clear(args: js.Any*): Unit = js.native
+    def clear(args: js.Any*): Unit
     
-    def peek(args: js.Any*): Unit | T = js.native
+    def peek(args: js.Any*): Unit | T
     
-    def preload(args: js.Any*): Unit = js.native
+    def preload(args: js.Any*): Unit
     
     /**
       * @throws Suspense Promise if asset is not yet ready
       * @throws Error if the promise rejected for some reason
       */
-    def read(args: js.Any*): T = js.native
+    def read(args: js.Any*): T
   }
   object Clear {
     
@@ -36,7 +34,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ClearMutableBuilder[Self <: Clear[_], T] (val x: Self with Clear[T]) extends AnyVal {
+    implicit class ClearMutableBuilder[Self <: Clear[?], T] (val x: Self & Clear[T]) extends AnyVal {
       
       @scala.inline
       def setClear(value: /* repeated */ js.Any => Unit): Self = StObject.set(x, "clear", js.Any.fromFunction1(value))

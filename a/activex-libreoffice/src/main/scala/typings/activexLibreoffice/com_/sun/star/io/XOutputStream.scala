@@ -5,7 +5,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -14,8 +13,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * See the [streaming document]{@link url="http://udk.openoffice.org/common/man/concept/streams.html"} for further information on chaining and piping
   * streams.
   */
-@js.native
-trait XOutputStream extends XInterface {
+trait XOutputStream
+  extends StObject
+     with XInterface {
   
   /**
     * gets called to indicate that all data has been written.
@@ -23,7 +23,7 @@ trait XOutputStream extends XInterface {
     * If this method has not yet been called, no attached {@link XInputStream} receives an EOF signal. No further bytes may be written after this method has
     * been called.
     */
-  def closeOutput(): Unit = js.native
+  def closeOutput(): Unit
   
   /**
     * flushes out of the stream any data that may exist in buffers.
@@ -31,10 +31,10 @@ trait XOutputStream extends XInterface {
     * The semantics of this method are rather vague. See {@link com.sun.star.io.XAsyncOutputMonitor.waitForCompletion()} for a similar method with very
     * specific semantics, that is useful in certain scenarios.
     */
-  def flush(): Unit = js.native
+  def flush(): Unit
   
   /** writes the whole sequence to the stream. (blocking call) */
-  def writeBytes(aData: SeqEquiv[Double]): Unit = js.native
+  def writeBytes(aData: SeqEquiv[Double]): Unit
 }
 object XOutputStream {
   

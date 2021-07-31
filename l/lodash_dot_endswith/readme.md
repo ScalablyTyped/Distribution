@@ -11,8 +11,8 @@ The lodash method `_.endsWith` exported as a module.
 | Full name          | lodash.endswith |
 | Keywords           | lodash-modularized, endswith |
 | # releases         | 0 |
-| # dependents       | 47 |
-| # downloads        | 9364233 |
+| # dependents       | 49 |
+| # downloads        | 9488720 |
 | # stars            | 0 |
 
 ## Links

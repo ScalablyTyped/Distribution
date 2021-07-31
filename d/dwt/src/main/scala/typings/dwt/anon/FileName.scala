@@ -2,51 +2,49 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileName extends StObject {
   
   /**
     * Specify the name(s) (pattern) of the uploaded files.
     * Example: "uploadedFile<%06d>.jpg"
     */
-  var fileName: js.UndefOr[String] = js.native
+  var fileName: js.UndefOr[String] = js.undefined
   
   /**
     * Custom form fields.
     * Example: {"UploadedBy": "Dynamsoft"}
     */
-  var formFields: js.UndefOr[js.Any] = js.native
+  var formFields: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Custom headers in the form.
     * Example: {md5: ""}
     */
-  var headers: js.UndefOr[js.Any] = js.native
+  var headers: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The maximum size of a file to be uploaded (in bytes).
     */
-  var maxSizeLimit: js.UndefOr[Double] = js.native
+  var maxSizeLimit: js.UndefOr[Double] = js.undefined
   
   /**
     * Specify the names for the files in the form.
     * Example: "RemoteName<%06d>"
     */
-  var remoteName: js.UndefOr[String] = js.native
+  var remoteName: js.UndefOr[String] = js.undefined
   
   /**
     * Specify how many threads (<=4) are to be used. Only valid when {useUploader} is true.
     */
-  var threads: js.UndefOr[Double] = js.native
+  var threads: js.UndefOr[Double] = js.undefined
   
   /**
     * Target of the request.
     * Example: "http://dynamsoft.com/receivepost.aspx"
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object FileName {
   

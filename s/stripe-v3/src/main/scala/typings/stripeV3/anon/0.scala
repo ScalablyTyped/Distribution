@@ -4,22 +4,20 @@ import typings.stripeV3.stripe.BillingDetails
 import typings.stripeV3.stripe.elements.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `0` extends StObject {
   
   /**
     * The billing_details associated with the card.
     */
-  var billing_details: js.UndefOr[BillingDetails] = js.native
+  var billing_details: js.UndefOr[BillingDetails] = js.undefined
   
   /*
     * Uses the provided card or cardNumber Element to create a
     * PaymentMethod to use for confirmation.
     */
-  var card: Element | Token = js.native
+  var card: Element | Token
 }
 object `0` {
   

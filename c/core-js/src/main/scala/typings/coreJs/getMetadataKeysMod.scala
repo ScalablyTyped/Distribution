@@ -2,7 +2,6 @@ package typings.coreJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getMetadataKeysMod {
@@ -24,13 +23,14 @@ object getMetadataKeysMod {
     * ```
     */
   /* was `typeof core.Reflect.getMetadataKeys` */
+  @scala.inline
+  def apply(target: Object): Array[js.Any] = ^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any]).asInstanceOf[Array[js.Any]]
+  @scala.inline
+  def apply(target: Object, targetKey: java.lang.String): Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
+  @scala.inline
+  def apply(target: Object, targetKey: js.Symbol): Array[js.Any] = (^.asInstanceOf[js.Dynamic].apply(target.asInstanceOf[js.Any], targetKey.asInstanceOf[js.Any])).asInstanceOf[Array[js.Any]]
+  
   @JSImport("core-js/library/fn/reflect/es7/get-metadata-keys", JSImport.Namespace)
   @js.native
-  def apply(target: Object): Array[_] = js.native
-  @JSImport("core-js/library/fn/reflect/es7/get-metadata-keys", JSImport.Namespace)
-  @js.native
-  def apply(target: Object, targetKey: java.lang.String): Array[_] = js.native
-  @JSImport("core-js/library/fn/reflect/es7/get-metadata-keys", JSImport.Namespace)
-  @js.native
-  def apply(target: Object, targetKey: js.Symbol): Array[_] = js.native
+  val ^ : js.Any = js.native
 }

@@ -2,7 +2,6 @@ package typings.firefoxWebextBrowser.browser
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,17 +14,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 object commands {
   
   /* commands types */
-  @js.native
   trait Command extends StObject {
     
     /** The Extension Command description */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** The name of the Extension Command */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /** The shortcut active for this command, or blank if not active. */
-    var shortcut: js.UndefOr[String] = js.native
+    var shortcut: js.UndefOr[String] = js.undefined
   }
   object Command {
     
@@ -59,16 +57,15 @@ object commands {
   }
   
   /** The new description for the command. */
-  @js.native
   trait UpdateDetail extends StObject {
     
     /** The new description for the command. */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /** The name of the command. */
-    var name: String = js.native
+    var name: String
     
-    var shortcut: js.UndefOr[String] = js.native
+    var shortcut: js.UndefOr[String] = js.undefined
   }
   object UpdateDetail {
     

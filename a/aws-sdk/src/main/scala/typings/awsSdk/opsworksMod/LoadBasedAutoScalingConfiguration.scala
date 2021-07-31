@@ -2,31 +2,29 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBasedAutoScalingConfiguration extends StObject {
   
   /**
     * An AutoScalingThresholds object that describes the downscaling configuration, which defines how and when AWS OpsWorks Stacks reduces the number of instances.
     */
-  var DownScaling: js.UndefOr[AutoScalingThresholds] = js.native
+  var DownScaling: js.UndefOr[AutoScalingThresholds] = js.undefined
   
   /**
     * Whether load-based auto scaling is enabled for the layer.
     */
-  var Enable: js.UndefOr[Boolean] = js.native
+  var Enable: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The layer ID.
     */
-  var LayerId: js.UndefOr[String] = js.native
+  var LayerId: js.UndefOr[String] = js.undefined
   
   /**
     * An AutoScalingThresholds object that describes the upscaling configuration, which defines how and when AWS OpsWorks Stacks increases the number of instances.
     */
-  var UpScaling: js.UndefOr[AutoScalingThresholds] = js.native
+  var UpScaling: js.UndefOr[AutoScalingThresholds] = js.undefined
 }
 object LoadBasedAutoScalingConfiguration {
   

@@ -3,23 +3,21 @@ package typings.reactNativeJoi.mod
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Rules[P /* <: js.Object */] extends StObject {
   
-  var description: js.UndefOr[String | (js.Function1[/* params */ P, String])] = js.native
+  var description: js.UndefOr[String | (js.Function1[/* params */ P, String])] = js.undefined
   
-  var name: String = js.native
+  var name: String
   
   var params: js.UndefOr[
     ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules with TopLevel[js.Any])
-  ] = js.native
+    */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[js.Any])
+  ] = js.undefined
   
-  var setup: js.UndefOr[js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]] = js.native
+  var setup: js.UndefOr[js.ThisFunction1[/* this */ ExtensionBoundSchema, /* params */ P, Schema | Unit]] = js.undefined
   
   var validate: js.UndefOr[
     js.ThisFunction4[
@@ -28,9 +26,9 @@ trait Rules[P /* <: js.Object */] extends StObject {
       /* value */ js.Any, 
       /* state */ State, 
       /* options */ ValidationOptions, 
-      _
+      js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Rules {
   
@@ -41,7 +39,7 @@ object Rules {
   }
   
   @scala.inline
-  implicit class RulesMutableBuilder[Self <: Rules[_], P /* <: js.Object */] (val x: Self with Rules[P]) extends AnyVal {
+  implicit class RulesMutableBuilder[Self <: Rules[?], P /* <: js.Object */] (val x: Self & Rules[P]) extends AnyVal {
     
     @scala.inline
     def setDescription(value: String | (js.Function1[/* params */ P, String])): Self = StObject.set(x, "description", value.asInstanceOf[js.Any])
@@ -59,7 +57,7 @@ object Rules {
     def setParams(
       value: ObjectSchema | (/* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ key in keyof P ]: react-native-joi.react-native-joi.SchemaLike}
-      */ typings.reactNativeJoi.reactNativeJoiStrings.Rules with TopLevel[js.Any])
+      */ typings.reactNativeJoi.reactNativeJoiStrings.Rules & TopLevel[js.Any])
     ): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -79,7 +77,7 @@ object Rules {
           /* value */ js.Any, 
           /* state */ State, 
           /* options */ ValidationOptions, 
-          _
+          js.Any
         ]
     ): Self = StObject.set(x, "validate", value.asInstanceOf[js.Any])
     

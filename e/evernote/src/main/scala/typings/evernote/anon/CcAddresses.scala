@@ -2,23 +2,21 @@ package typings.evernote.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CcAddresses extends StObject {
   
-  var ccAddresses: js.UndefOr[js.Array[String]] = js.native
+  var ccAddresses: js.UndefOr[js.Array[String]] = js.undefined
   
-  var guid: js.UndefOr[String] = js.native
+  var guid: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var note: js.UndefOr[typings.evernote.mod.Types.Note] = js.native
+  var note: js.UndefOr[typings.evernote.mod.Types.Note] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var toAddresses: js.UndefOr[js.Array[String]] = js.native
+  var toAddresses: js.UndefOr[js.Array[String]] = js.undefined
 }
 object CcAddresses {
   

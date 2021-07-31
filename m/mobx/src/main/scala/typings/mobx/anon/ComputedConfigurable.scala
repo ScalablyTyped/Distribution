@@ -6,35 +6,33 @@ import typings.mobx.mobxStrings.observed
 import typings.mobx.mobxStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComputedConfigurable extends StObject {
   
-  var computedConfigurable: js.UndefOr[Boolean] = js.native
+  var computedConfigurable: js.UndefOr[Boolean] = js.undefined
   
-  var computedRequiresReaction: js.UndefOr[Boolean] = js.native
+  var computedRequiresReaction: js.UndefOr[Boolean] = js.undefined
   
-  var disableErrorBoundaries: js.UndefOr[Boolean] = js.native
+  var disableErrorBoundaries: js.UndefOr[Boolean] = js.undefined
   
-  var enforceActions: js.UndefOr[Boolean | strict | never | always | observed] = js.native
+  var enforceActions: js.UndefOr[Boolean | strict | never | always | observed] = js.undefined
   
-  var isolateGlobalState: js.UndefOr[Boolean] = js.native
+  var isolateGlobalState: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Experimental)
     * Warn if observables are accessed outside a reactive context
     */
-  var observableRequiresReaction: js.UndefOr[Boolean] = js.native
+  var observableRequiresReaction: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Experimental)
     * Warn if you try to create to derivation / reactive context without accessing any observable.
     */
-  var reactionRequiresObservable: js.UndefOr[Boolean] = js.native
+  var reactionRequiresObservable: js.UndefOr[Boolean] = js.undefined
   
-  var reactionScheduler: js.UndefOr[js.Function1[/* f */ js.Function0[Unit], Unit]] = js.native
+  var reactionScheduler: js.UndefOr[js.Function1[/* f */ js.Function0[Unit], Unit]] = js.undefined
 }
 object ComputedConfigurable {
   

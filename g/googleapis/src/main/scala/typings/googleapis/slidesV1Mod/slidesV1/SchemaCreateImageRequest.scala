@@ -2,13 +2,11 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates an image.
   */
-@js.native
 trait SchemaCreateImageRequest extends StObject {
   
   /**
@@ -22,7 +20,7 @@ trait SchemaCreateImageRequest extends StObject {
     * specify a transform, the image will be placed at the top left corner of
     * the page.
     */
-  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.native
+  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.undefined
   
   /**
     * A user-supplied object ID.  If you specify an ID, it must be unique among
@@ -33,7 +31,7 @@ trait SchemaCreateImageRequest extends StObject {
     * must not be less than 5 or greater than 50.  If you don&#39;t specify an
     * ID, a unique one is generated.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The image URL.  The image is fetched once at insertion time and a copy is
@@ -43,7 +41,7 @@ trait SchemaCreateImageRequest extends StObject {
     * itself is saved with the image, and exposed via the Image.source_url
     * field.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateImageRequest {
   

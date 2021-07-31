@@ -11,8 +11,8 @@ WebSocket endpoints for Express applications
 | Full name          | express-ws |
 | Keywords           | express, ws, websocket |
 | # releases         | 0 |
-| # dependents       | 229 |
-| # downloads        | 1992413 |
+| # dependents       | 247 |
+| # downloads        | 2385409 |
 | # stars            | 29 |
 
 ## Links

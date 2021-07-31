@@ -5,7 +5,6 @@ import typings.std.Date
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -34,9 +33,9 @@ trait ObloUtilStatic extends StObject {
   def showDate(date: Date): String = js.native
   
   def showJSON(json: js.Any): String = js.native
-  def showJSON(json: js.Any, indentStr: js.UndefOr[scala.Nothing], maxDepth: Double): String = js.native
   def showJSON(json: js.Any, indentStr: String): String = js.native
   def showJSON(json: js.Any, indentStr: String, maxDepth: Double): String = js.native
+  def showJSON(json: js.Any, indentStr: Unit, maxDepth: Double): String = js.native
   
   def showTime(date: Date): String = js.native
   

@@ -2,21 +2,19 @@ package typings.octokitPluginRestEndpointMethods.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAlertsForRepo extends StObject {
   
-  var getAlert: `668` = js.native
+  var getAlert: `668`
   
-  var listAlertsForRepo: `669` = js.native
+  var listAlertsForRepo: `669`
   
-  var listRecentAnalyses: `670` = js.native
+  var listRecentAnalyses: `670`
   
-  var updateAlert: `671` = js.native
+  var updateAlert: `671`
   
-  var uploadSarif: `672` = js.native
+  var uploadSarif: `672`
 }
 object ListAlertsForRepo {
   

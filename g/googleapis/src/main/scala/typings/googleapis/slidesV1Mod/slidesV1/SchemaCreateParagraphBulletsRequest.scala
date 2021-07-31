@@ -2,7 +2,6 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,32 +14,31 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * with a matching preset, the paragraphs being updated are added to that
   * preceding list.
   */
-@js.native
 trait SchemaCreateParagraphBulletsRequest extends StObject {
   
   /**
     * The kinds of bullet glyphs to be used. Defaults to the
     * `BULLET_DISC_CIRCLE_SQUARE` preset.
     */
-  var bulletPreset: js.UndefOr[String] = js.native
+  var bulletPreset: js.UndefOr[String] = js.undefined
   
   /**
     * The optional table cell location if the text to be modified is in a table
     * cell. If present, the object_id must refer to a table.
     */
-  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.native
+  var cellLocation: js.UndefOr[SchemaTableCellLocation] = js.undefined
   
   /**
     * The object ID of the shape or table containing the text to add bullets
     * to.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The range of text to apply the bullet presets to, based on TextElement
     * indexes.
     */
-  var textRange: js.UndefOr[SchemaRange] = js.native
+  var textRange: js.UndefOr[SchemaRange] = js.undefined
 }
 object SchemaCreateParagraphBulletsRequest {
   

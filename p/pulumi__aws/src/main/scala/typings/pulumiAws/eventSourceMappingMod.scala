@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object eventSourceMappingMod {
@@ -109,6 +108,10 @@ object eventSourceMappingMod {
   /* static members */
   object EventSourceMapping {
     
+    @JSImport("@pulumi/aws/lambda/eventSourceMapping", "EventSourceMapping")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing EventSourceMapping resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -118,70 +121,64 @@ object eventSourceMappingMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/lambda/eventSourceMapping", "EventSourceMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID]): EventSourceMapping = js.native
-    @JSImport("@pulumi/aws/lambda/eventSourceMapping", "EventSourceMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): EventSourceMapping = js.native
-    @JSImport("@pulumi/aws/lambda/eventSourceMapping", "EventSourceMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventSourceMappingState): EventSourceMapping = js.native
-    @JSImport("@pulumi/aws/lambda/eventSourceMapping", "EventSourceMapping.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: EventSourceMappingState, opts: CustomResourceOptions): EventSourceMapping = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): EventSourceMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[EventSourceMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): EventSourceMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSourceMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventSourceMappingState): EventSourceMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[EventSourceMapping]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: EventSourceMappingState, opts: CustomResourceOptions): EventSourceMapping = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[EventSourceMapping]
     
     /**
       * Returns true if the given object is an instance of EventSourceMapping.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/lambda/eventSourceMapping", "EventSourceMapping.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/eventSourceMapping.EventSourceMapping */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/lambda/eventSourceMapping.EventSourceMapping */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/lambda/eventSourceMapping.EventSourceMapping */ Boolean]
   }
   
-  @js.native
   trait EventSourceMappingArgs extends StObject {
     
     /**
       * The largest number of records that Lambda will retrieve from your event source at the time of invocation. Defaults to `100` for DynamoDB and Kinesis, `10` for SQS.
       */
-    val batchSize: js.UndefOr[Input[Double]] = js.native
+    val batchSize: js.UndefOr[Input[Double]] = js.undefined
     
-    val bisectBatchOnFunctionError: js.UndefOr[Input[Boolean]] = js.native
+    val bisectBatchOnFunctionError: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val destinationConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.EventSourceMappingDestinationConfig]] = js.native
+    val destinationConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.EventSourceMappingDestinationConfig]] = js.undefined
     
     /**
       * Determines if the mapping will be enabled on creation. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The event source ARN - can be a Kinesis stream, DynamoDB stream, or SQS queue.
       */
-    val eventSourceArn: Input[String] = js.native
+    val eventSourceArn: Input[String]
     
     /**
       * The name or the ARN of the Lambda function that will be subscribing to events.
       */
-    val functionName: Input[String] = js.native
+    val functionName: Input[String]
     
     /**
       * The maximum amount of time to gather records before invoking the function, in seconds.  Records will continue to buffer until either `maximumBatchingWindowInSeconds` expires or `batchSize` has been met. Defaults to as soon as records are available in the stream. If the batch it reads from the stream only has one record in it, Lambda only sends one record to the function.
       */
-    val maximumBatchingWindowInSeconds: js.UndefOr[Input[Double]] = js.native
+    val maximumBatchingWindowInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
-    val maximumRecordAgeInSeconds: js.UndefOr[Input[Double]] = js.native
+    val maximumRecordAgeInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
-    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.native
+    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.undefined
     
-    val parallelizationFactor: js.UndefOr[Input[Double]] = js.native
+    val parallelizationFactor: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The position in the stream where AWS Lambda should start reading. Must be one of `AT_TIMESTAMP` (Kinesis only), `LATEST` or `TRIM_HORIZON` if getting events from Kinesis or DynamoDB. Must not be provided if getting events from SQS. More information about these positions can be found in the [AWS DynamoDB Streams API Reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html) and [AWS Kinesis API Reference](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html#Kinesis-GetShardIterator-request-ShardIteratorType).
       */
-    val startingPosition: js.UndefOr[Input[String]] = js.native
+    val startingPosition: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of the data record which to start reading when using `startingPosition` set to `AT_TIMESTAMP`. If a record with this exact timestamp does not exist, the next later record is chosen. If the timestamp is older than the current trim horizon, the oldest available record is chosen.
@@ -191,7 +188,7 @@ object eventSourceMappingMod {
       * * `bisectBatchOnFunctionError`: - (Optional) If the function returns an error, split the batch in two and retry. Only available for stream sources (DynamoDB and Kinesis). Defaults to `false`.
       * * `destinationConfig`: - (Optional) An Amazon SQS queue or Amazon SNS topic destination for failed records. Only available for stream sources (DynamoDB and Kinesis). Detailed below.
       */
-    val startingPositionTimestamp: js.UndefOr[Input[String]] = js.native
+    val startingPositionTimestamp: js.UndefOr[Input[String]] = js.undefined
   }
   object EventSourceMappingArgs {
     
@@ -272,63 +269,62 @@ object eventSourceMappingMod {
     }
   }
   
-  @js.native
   trait EventSourceMappingState extends StObject {
     
     /**
       * The largest number of records that Lambda will retrieve from your event source at the time of invocation. Defaults to `100` for DynamoDB and Kinesis, `10` for SQS.
       */
-    val batchSize: js.UndefOr[Input[Double]] = js.native
+    val batchSize: js.UndefOr[Input[Double]] = js.undefined
     
-    val bisectBatchOnFunctionError: js.UndefOr[Input[Boolean]] = js.native
+    val bisectBatchOnFunctionError: js.UndefOr[Input[Boolean]] = js.undefined
     
-    val destinationConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.EventSourceMappingDestinationConfig]] = js.native
+    val destinationConfig: js.UndefOr[Input[typings.pulumiAws.inputMod.lambda.EventSourceMappingDestinationConfig]] = js.undefined
     
     /**
       * Determines if the mapping will be enabled on creation. Defaults to `true`.
       */
-    val enabled: js.UndefOr[Input[Boolean]] = js.native
+    val enabled: js.UndefOr[Input[Boolean]] = js.undefined
     
     /**
       * The event source ARN - can be a Kinesis stream, DynamoDB stream, or SQS queue.
       */
-    val eventSourceArn: js.UndefOr[Input[String]] = js.native
+    val eventSourceArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The the ARN of the Lambda function the event source mapping is sending events to. (Note: this is a computed value that differs from `functionName` above.)
       */
-    val functionArn: js.UndefOr[Input[String]] = js.native
+    val functionArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name or the ARN of the Lambda function that will be subscribing to events.
       */
-    val functionName: js.UndefOr[Input[String]] = js.native
+    val functionName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The date this resource was last modified.
       */
-    val lastModified: js.UndefOr[Input[String]] = js.native
+    val lastModified: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The result of the last AWS Lambda invocation of your Lambda function.
       */
-    val lastProcessingResult: js.UndefOr[Input[String]] = js.native
+    val lastProcessingResult: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The maximum amount of time to gather records before invoking the function, in seconds.  Records will continue to buffer until either `maximumBatchingWindowInSeconds` expires or `batchSize` has been met. Defaults to as soon as records are available in the stream. If the batch it reads from the stream only has one record in it, Lambda only sends one record to the function.
       */
-    val maximumBatchingWindowInSeconds: js.UndefOr[Input[Double]] = js.native
+    val maximumBatchingWindowInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
-    val maximumRecordAgeInSeconds: js.UndefOr[Input[Double]] = js.native
+    val maximumRecordAgeInSeconds: js.UndefOr[Input[Double]] = js.undefined
     
-    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.native
+    val maximumRetryAttempts: js.UndefOr[Input[Double]] = js.undefined
     
-    val parallelizationFactor: js.UndefOr[Input[Double]] = js.native
+    val parallelizationFactor: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The position in the stream where AWS Lambda should start reading. Must be one of `AT_TIMESTAMP` (Kinesis only), `LATEST` or `TRIM_HORIZON` if getting events from Kinesis or DynamoDB. Must not be provided if getting events from SQS. More information about these positions can be found in the [AWS DynamoDB Streams API Reference](https://docs.aws.amazon.com/amazondynamodb/latest/APIReference/API_streams_GetShardIterator.html) and [AWS Kinesis API Reference](https://docs.aws.amazon.com/kinesis/latest/APIReference/API_GetShardIterator.html#Kinesis-GetShardIterator-request-ShardIteratorType).
       */
-    val startingPosition: js.UndefOr[Input[String]] = js.native
+    val startingPosition: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A timestamp in [RFC3339 format](https://tools.ietf.org/html/rfc3339#section-5.8) of the data record which to start reading when using `startingPosition` set to `AT_TIMESTAMP`. If a record with this exact timestamp does not exist, the next later record is chosen. If the timestamp is older than the current trim horizon, the oldest available record is chosen.
@@ -338,22 +334,22 @@ object eventSourceMappingMod {
       * * `bisectBatchOnFunctionError`: - (Optional) If the function returns an error, split the batch in two and retry. Only available for stream sources (DynamoDB and Kinesis). Defaults to `false`.
       * * `destinationConfig`: - (Optional) An Amazon SQS queue or Amazon SNS topic destination for failed records. Only available for stream sources (DynamoDB and Kinesis). Detailed below.
       */
-    val startingPositionTimestamp: js.UndefOr[Input[String]] = js.native
+    val startingPositionTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The state of the event source mapping.
       */
-    val state: js.UndefOr[Input[String]] = js.native
+    val state: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The reason the event source mapping is in its current state.
       */
-    val stateTransitionReason: js.UndefOr[Input[String]] = js.native
+    val stateTransitionReason: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The UUID of the created event source mapping.
       */
-    val uuid: js.UndefOr[Input[String]] = js.native
+    val uuid: js.UndefOr[Input[String]] = js.undefined
   }
   object EventSourceMappingState {
     

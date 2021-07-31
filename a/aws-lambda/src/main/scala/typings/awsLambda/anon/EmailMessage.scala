@@ -2,17 +2,15 @@ package typings.awsLambda.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EmailMessage extends StObject {
   
-  var emailMessage: String = js.native
+  var emailMessage: String
   
-  var emailSubject: String = js.native
+  var emailSubject: String
   
-  var smsMessage: String = js.native
+  var smsMessage: String
 }
 object EmailMessage {
   

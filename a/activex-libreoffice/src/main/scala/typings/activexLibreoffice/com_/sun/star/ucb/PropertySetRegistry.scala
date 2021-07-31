@@ -5,14 +5,13 @@ import typings.activexLibreoffice.com_.sun.star.container.XNameAccess
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This service contains the interfaces to implement by objects returned by XPropertySetRegistryFactory::createRegistry(). */
-@js.native
 trait PropertySetRegistry
-  extends XNameAccess
+  extends StObject
      with XPropertySetRegistry
+     with XNameAccess
 object PropertySetRegistry {
   
   @scala.inline

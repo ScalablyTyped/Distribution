@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeModelInput extends StObject {
   
   /**
     * The name of the model.
     */
-  var ModelName: typings.awsSdk.sagemakerMod.ModelName = js.native
+  var ModelName: typings.awsSdk.sagemakerMod.ModelName
 }
 object DescribeModelInput {
   

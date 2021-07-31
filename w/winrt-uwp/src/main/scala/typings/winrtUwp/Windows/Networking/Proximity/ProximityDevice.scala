@@ -8,14 +8,13 @@ import typings.winrtUwp.winrtUwpStrings.devicearrived
 import typings.winrtUwp.winrtUwpStrings.devicedeparted
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Enables you to publish messages to proximate devices or subscribe to messages from proximate devices. */
 @js.native
 trait ProximityDevice extends StObject {
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_devicearrived(`type`: devicearrived, listener: DeviceArrivedEventHandler): Unit = js.native
   @JSName("addEventListener")
@@ -88,7 +87,7 @@ trait ProximityDevice extends StObject {
     */
   def publishUriMessage(message: Uri, messageTransmittedHandler: MessageTransmittedHandler): Double = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_devicearrived(`type`: devicearrived, listener: DeviceArrivedEventHandler): Unit = js.native
   @JSName("removeEventListener")

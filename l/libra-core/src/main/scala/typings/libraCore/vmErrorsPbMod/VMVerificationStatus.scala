@@ -11,7 +11,6 @@ import typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus")
@@ -57,28 +56,32 @@ object VMVerificationStatus {
   object StatusKind extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[StatusKind with Double] = js.native
+    def apply(value: Double): js.UndefOr[StatusKind & Double] = js.native
     
     @js.native
-    sealed trait DEPENDENCY extends StatusKind
-    /* 2 */ val DEPENDENCY: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.DEPENDENCY with Double = js.native
+    sealed trait DEPENDENCY
+      extends StObject
+         with StatusKind
+    /* 2 */ val DEPENDENCY: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.DEPENDENCY & Double = js.native
     
     @js.native
-    sealed trait MODULE extends StatusKind
-    /* 1 */ val MODULE: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.MODULE with Double = js.native
+    sealed trait MODULE
+      extends StObject
+         with StatusKind
+    /* 1 */ val MODULE: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.MODULE & Double = js.native
     
     @js.native
-    sealed trait SCRIPT extends StatusKind
-    /* 0 */ val SCRIPT: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.SCRIPT with Double = js.native
+    sealed trait SCRIPT
+      extends StObject
+         with StatusKind
+    /* 0 */ val SCRIPT: typings.libraCore.vmErrorsPbMod.VMVerificationStatus.StatusKind.SCRIPT & Double = js.native
   }
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): VMVerificationStatus = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): VMVerificationStatus = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[VMVerificationStatus]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: VMVerificationStatus, reader: BinaryReader): VMVerificationStatus = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: VMVerificationStatus, reader: BinaryReader): VMVerificationStatus = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[VMVerificationStatus]
   
   @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus.extensions")
   @js.native
@@ -93,26 +96,23 @@ object VMVerificationStatus {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: VMVerificationStatus, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: VMVerificationStatus, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("libra-core/lib/@/generated/vm_errors_pb", "VMVerificationStatus.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: VMVerificationStatus): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: VMVerificationStatus): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var dependencyId: js.UndefOr[typings.libraCore.languageStoragePbMod.ModuleId.AsObject] = js.native
+    var dependencyId: js.UndefOr[typings.libraCore.languageStoragePbMod.ModuleId.AsObject] = js.undefined
     
-    var errorKind: VMVerificationErrorKind = js.native
+    var errorKind: VMVerificationErrorKind
     
-    var message: String = js.native
+    var message: String
     
-    var moduleIdx: Double = js.native
+    var moduleIdx: Double
     
-    var statusKind: StatusKind = js.native
+    var statusKind: StatusKind
   }
   object AsObject {
     

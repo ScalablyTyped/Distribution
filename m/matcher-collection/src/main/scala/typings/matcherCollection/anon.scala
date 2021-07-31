@@ -3,19 +3,17 @@ package typings.matcherCollection
 import typings.minimatch.mod.IMinimatch
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Match extends StObject {
     
-    def `match`(value: String): Boolean = js.native
+    def `match`(value: String): Boolean
     
-    var matchers: js.Array[IMinimatch] = js.native
+    var matchers: js.Array[IMinimatch]
     
-    def mayContain(value: String): Boolean = js.native
+    def mayContain(value: String): Boolean
   }
   object Match {
     

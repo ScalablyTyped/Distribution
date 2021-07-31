@@ -2,30 +2,25 @@ package typings.handlebars.hbs.AST
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BooleanLiteral extends Node {
+trait BooleanLiteral
+  extends StObject
+     with Node {
   
-  var original: Boolean = js.native
+  var original: Boolean
   
   @JSName("type")
-  var type_BooleanLiteral: typings.handlebars.handlebarsStrings.BooleanLiteral = js.native
+  var type_BooleanLiteral: typings.handlebars.handlebarsStrings.BooleanLiteral
   
-  var value: Boolean = js.native
+  var value: Boolean
 }
 object BooleanLiteral {
   
   @scala.inline
-  def apply(
-    loc: SourceLocation,
-    original: Boolean,
-    `type`: typings.handlebars.handlebarsStrings.BooleanLiteral,
-    value: Boolean
-  ): BooleanLiteral = {
+  def apply(loc: SourceLocation, original: Boolean, value: Boolean): BooleanLiteral = {
     val __obj = js.Dynamic.literal(loc = loc.asInstanceOf[js.Any], original = original.asInstanceOf[js.Any], value = value.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("BooleanLiteral")
     __obj.asInstanceOf[BooleanLiteral]
   }
   

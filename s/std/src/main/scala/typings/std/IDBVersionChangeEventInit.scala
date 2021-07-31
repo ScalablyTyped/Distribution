@@ -2,15 +2,15 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDBVersionChangeEventInit extends EventInit {
+trait IDBVersionChangeEventInit
+  extends StObject
+     with EventInit {
   
-  var newVersion: js.UndefOr[Double | Null] = js.native
+  var newVersion: js.UndefOr[Double | Null] = js.undefined
   
-  var oldVersion: js.UndefOr[Double] = js.native
+  var oldVersion: js.UndefOr[Double] = js.undefined
 }
 object IDBVersionChangeEventInit {
   

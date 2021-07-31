@@ -2,39 +2,37 @@ package typings.amapJsSdk.AMap
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IndoorMap extends StObject {
   
-  def getOpacity(): Double = js.native
+  def getOpacity(): Double
   
-  def getSelectedBuilding(): String = js.native
+  def getSelectedBuilding(): String
   
-  def getSelectedBuildingId(): String = js.native
+  def getSelectedBuildingId(): String
   
-  def hide(): Unit = js.native
+  def hide(): Unit
   
-  def hideFloorBar(): Unit = js.native
+  def hideFloorBar(): Unit
   
-  def hideLabels(): Unit = js.native
+  def hideLabels(): Unit
   
-  def setMap(map: Map): Unit = js.native
+  def setMap(map: Map): Unit
   
-  def setOpacity(alpha: Double): Unit = js.native
+  def setOpacity(alpha: Double): Unit
   
-  def setzIndex(): Unit = js.native
+  def setzIndex(): Unit
   
-  def show(): Unit = js.native
+  def show(): Unit
   
-  def showFloor(floor: Double, noMove: Boolean): Unit = js.native
+  def showFloor(floor: Double, noMove: Boolean): Unit
   
-  def showFloorBar(): Unit = js.native
+  def showFloorBar(): Unit
   
-  def showIndoorMap(indoorid: String, floor: Double, shopid: String): Unit = js.native
+  def showIndoorMap(indoorid: String, floor: Double, shopid: String): Unit
   
-  def showLabels(): Unit = js.native
+  def showLabels(): Unit
 }
 object IndoorMap {
   

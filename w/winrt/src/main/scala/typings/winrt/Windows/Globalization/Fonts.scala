@@ -5,23 +5,21 @@ import typings.winrt.Windows.UI.Text.FontStyle
 import typings.winrt.Windows.UI.Text.FontWeight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Fonts {
   
-  @js.native
   trait ILanguageFont extends StObject {
     
-    var fontFamily: String = js.native
+    var fontFamily: String
     
-    var fontStretch: FontStretch = js.native
+    var fontStretch: FontStretch
     
-    var fontStyle: FontStyle = js.native
+    var fontStyle: FontStyle
     
-    var fontWeight: FontWeight = js.native
+    var fontWeight: FontWeight
     
-    var scaleFactor: Double = js.native
+    var scaleFactor: Double
   }
   object ILanguageFont {
     
@@ -57,30 +55,29 @@ object Fonts {
     }
   }
   
-  @js.native
   trait ILanguageFontGroup extends StObject {
     
-    var documentAlternate1Font: LanguageFont = js.native
+    var documentAlternate1Font: LanguageFont
     
-    var documentAlternate2Font: LanguageFont = js.native
+    var documentAlternate2Font: LanguageFont
     
-    var documentHeadingFont: LanguageFont = js.native
+    var documentHeadingFont: LanguageFont
     
-    var fixedWidthTextFont: LanguageFont = js.native
+    var fixedWidthTextFont: LanguageFont
     
-    var modernDocumentFont: LanguageFont = js.native
+    var modernDocumentFont: LanguageFont
     
-    var traditionalDocumentFont: LanguageFont = js.native
+    var traditionalDocumentFont: LanguageFont
     
-    var uICaptionFont: LanguageFont = js.native
+    var uICaptionFont: LanguageFont
     
-    var uIHeadingFont: LanguageFont = js.native
+    var uIHeadingFont: LanguageFont
     
-    var uINotificationHeadingFont: LanguageFont = js.native
+    var uINotificationHeadingFont: LanguageFont
     
-    var uITextFont: LanguageFont = js.native
+    var uITextFont: LanguageFont
     
-    var uITitleFont: LanguageFont = js.native
+    var uITitleFont: LanguageFont
   }
   object ILanguageFontGroup {
     
@@ -140,10 +137,9 @@ object Fonts {
     }
   }
   
-  @js.native
   trait ILanguageFontGroupFactory extends StObject {
     
-    def createLanguageFontGroup(languageTag: String): LanguageFontGroup = js.native
+    def createLanguageFontGroup(languageTag: String): LanguageFontGroup
   }
   object ILanguageFontGroupFactory {
     
@@ -161,8 +157,9 @@ object Fonts {
     }
   }
   
-  @js.native
-  trait LanguageFont extends ILanguageFont
+  trait LanguageFont
+    extends StObject
+       with ILanguageFont
   object LanguageFont {
     
     @scala.inline
@@ -178,8 +175,9 @@ object Fonts {
     }
   }
   
-  @js.native
-  trait LanguageFontGroup extends ILanguageFontGroup
+  trait LanguageFontGroup
+    extends StObject
+       with ILanguageFontGroup
   object LanguageFontGroup {
     
     @scala.inline

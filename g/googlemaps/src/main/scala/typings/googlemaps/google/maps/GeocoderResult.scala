@@ -2,25 +2,23 @@ package typings.googlemaps.google.maps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeocoderResult extends StObject {
   
-  var address_components: js.Array[GeocoderAddressComponent] = js.native
+  var address_components: js.Array[GeocoderAddressComponent]
   
-  var formatted_address: String = js.native
+  var formatted_address: String
   
-  var geometry: GeocoderGeometry = js.native
+  var geometry: GeocoderGeometry
   
-  var partial_match: Boolean = js.native
+  var partial_match: Boolean
   
-  var place_id: String = js.native
+  var place_id: String
   
-  var postcode_localities: js.Array[String] = js.native
+  var postcode_localities: js.Array[String]
   
-  var types: js.Array[String] = js.native
+  var types: js.Array[String]
 }
 object GeocoderResult {
   

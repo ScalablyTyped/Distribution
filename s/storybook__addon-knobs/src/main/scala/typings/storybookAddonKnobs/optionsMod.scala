@@ -12,7 +12,6 @@ import typings.storybookAddonKnobs.typesTypesMod.KnobControlConfig
 import typings.storybookAddonKnobs.typesTypesMod.KnobControlProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object optionsMod {
@@ -20,12 +19,11 @@ object optionsMod {
   /* Inlined react.react.FunctionComponent<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types/Options.OptionsTypeProps<any>> & {  serialize :{None <T>(value : T): T},   deserialize :{None <T>(value : T): T}} */
   object default {
     
-    @JSImport("@storybook/addon-knobs/dist/components/types/Options", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[OptionsTypeProps[_]]): ReactElement | Null = js.native
-    @JSImport("@storybook/addon-knobs/dist/components/types/Options", JSImport.Default)
-    @js.native
-    def apply(props: PropsWithChildren[OptionsTypeProps[_]], context: js.Any): ReactElement | Null = js.native
+    @scala.inline
+    def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]]): ReactElement | Null = ^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any]).asInstanceOf[ReactElement | Null]
+    @scala.inline
+    def apply(props: PropsWithChildren[OptionsTypeProps[js.Any]], context: js.Any): ReactElement | Null = (^.asInstanceOf[js.Dynamic].apply(props.asInstanceOf[js.Any], context.asInstanceOf[js.Any])).asInstanceOf[ReactElement | Null]
+    
     @JSImport("@storybook/addon-knobs/dist/components/types/Options", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native
@@ -67,10 +65,9 @@ object optionsMod {
     def serialize_=(x: FnCall): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("serialize")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait OptionsKnobOptions extends StObject {
     
-    var display: OptionsKnobOptionsDisplay = js.native
+    var display: OptionsKnobOptionsDisplay
   }
   object OptionsKnobOptions {
     
@@ -118,12 +115,13 @@ object optionsMod {
     def select: typings.storybookAddonKnobs.storybookAddonKnobsStrings.select = "select".asInstanceOf[typings.storybookAddonKnobs.storybookAddonKnobsStrings.select]
   }
   
-  @js.native
-  trait OptionsTypeKnob[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] extends KnobControlConfig[T] {
+  trait OptionsTypeKnob[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */]
+    extends StObject
+       with KnobControlConfig[T] {
     
-    var options: OptionsTypeOptionsProp[T] = js.native
+    var options: OptionsTypeOptionsProp[T]
     
-    var optionsObj: OptionsKnobOptions = js.native
+    var optionsObj: OptionsKnobOptions
   }
   object OptionsTypeKnob {
     
@@ -134,7 +132,7 @@ object optionsMod {
     }
     
     @scala.inline
-    implicit class OptionsTypeKnobMutableBuilder[Self <: OptionsTypeKnob[_], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self with OptionsTypeKnob[T]) extends AnyVal {
+    implicit class OptionsTypeKnobMutableBuilder[Self <: OptionsTypeKnob[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self & OptionsTypeKnob[T]) extends AnyVal {
       
       @scala.inline
       def setOptions(value: OptionsTypeOptionsProp[T]): Self = StObject.set(x, "options", value.asInstanceOf[js.Any])
@@ -150,13 +148,14 @@ object optionsMod {
   
   type OptionsTypeOptionsProp[T] = StringDictionary[T]
   
-  @js.native
-  trait OptionsTypeProps[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] extends KnobControlProps[T] {
+  trait OptionsTypeProps[T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */]
+    extends StObject
+       with KnobControlProps[T] {
     
-    var display: OptionsKnobOptionsDisplay = js.native
+    var display: OptionsKnobOptionsDisplay
     
     @JSName("knob")
-    var knob_OptionsTypeProps: OptionsTypeKnob[T] = js.native
+    var knob_OptionsTypeProps: OptionsTypeKnob[T]
   }
   object OptionsTypeProps {
     
@@ -167,7 +166,7 @@ object optionsMod {
     }
     
     @scala.inline
-    implicit class OptionsTypePropsMutableBuilder[Self <: OptionsTypeProps[_], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self with OptionsTypeProps[T]) extends AnyVal {
+    implicit class OptionsTypePropsMutableBuilder[Self <: OptionsTypeProps[?], T /* <: OptionsTypeKnobValue[OptionsTypeKnobSingleValue] */] (val x: Self & OptionsTypeProps[T]) extends AnyVal {
       
       @scala.inline
       def setDisplay(value: OptionsKnobOptionsDisplay): Self = StObject.set(x, "display", value.asInstanceOf[js.Any])

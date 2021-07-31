@@ -2,19 +2,17 @@ package typings.sharepoint.CUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListEnumerator[T] extends StObject {
   
-  def get_current(): T = js.native
+  def get_current(): T
   
-  def moveNext(): Boolean = js.native
+  def moveNext(): Boolean
   
-  def movePrevious(): Boolean = js.native
+  def movePrevious(): Boolean
   
-  def reset(): scala.Unit = js.native
+  def reset(): scala.Unit
 }
 object ListEnumerator {
   
@@ -30,7 +28,7 @@ object ListEnumerator {
   }
   
   @scala.inline
-  implicit class ListEnumeratorMutableBuilder[Self <: ListEnumerator[_], T] (val x: Self with ListEnumerator[T]) extends AnyVal {
+  implicit class ListEnumeratorMutableBuilder[Self <: ListEnumerator[?], T] (val x: Self & ListEnumerator[T]) extends AnyVal {
     
     @scala.inline
     def setGet_current(value: () => T): Self = StObject.set(x, "get_current", js.Any.fromFunction0(value))

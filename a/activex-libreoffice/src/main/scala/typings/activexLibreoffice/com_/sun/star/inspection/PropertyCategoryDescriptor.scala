@@ -2,7 +2,6 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,11 +11,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see LineDescriptor.Category
   * @since OOo 2.0.3
   */
-@js.native
 trait PropertyCategoryDescriptor extends StObject {
   
   /** provides a help URL to be associated with a category */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /**
     * contains the programmatic name of the category.
@@ -24,10 +22,10 @@ trait PropertyCategoryDescriptor extends StObject {
     * This programmatic name is used internally: {@link XPropertyHandler.describePropertyLine()} sets a programmatic category name at {@link
     * LineDescriptor.Category} , and an object inspector uses this to find the proper {@link PropertyCategoryDescriptor} .
     */
-  var ProgrammaticName: String = js.native
+  var ProgrammaticName: String
   
   /** provides a human-readable name (which can be presented at the UI) for a category. */
-  var UIName: String = js.native
+  var UIName: String
 }
 object PropertyCategoryDescriptor {
   

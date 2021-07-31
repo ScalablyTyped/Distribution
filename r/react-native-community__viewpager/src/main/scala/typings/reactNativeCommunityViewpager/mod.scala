@@ -20,7 +20,6 @@ import typings.reactNativeCommunityViewpager.reactNativeCommunityViewpagerString
 import typings.reactNativeCommunityViewpager.reactNativeCommunityViewpagerStrings.vertical
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -29,10 +28,9 @@ object mod {
   @js.native
   class default () extends ViewPager
   
-  @js.native
   trait PageScrollStateChangedEvent extends StObject {
     
-    var pageScrollState: idle | dragging | settling = js.native
+    var pageScrollState: idle | dragging | settling
   }
   object PageScrollStateChangedEvent {
     
@@ -70,12 +68,11 @@ object mod {
   
   type ViewPagerComponent = Component[ViewPagerProps, js.Object, js.Any]
   
-  @js.native
   trait ViewPagerOnPageScrollEventData extends StObject {
     
-    var offset: Double = js.native
+    var offset: Double
     
-    var position: Double = js.native
+    var position: Double
   }
   object ViewPagerOnPageScrollEventData {
     
@@ -96,10 +93,9 @@ object mod {
     }
   }
   
-  @js.native
   trait ViewPagerOnPageSelectedEventData extends StObject {
     
-    var position: Double = js.native
+    var position: Double
   }
   object ViewPagerOnPageSelectedEventData {
     
@@ -117,23 +113,22 @@ object mod {
     }
   }
   
-  @js.native
   trait ViewPagerProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
     /**
       * Index of initial page that should be selected. Use `setPage` method to
       * update the page, and `onPageSelected` to monitor page changes
       */
-    var initialPage: js.UndefOr[Double] = js.native
+    var initialPage: js.UndefOr[Double] = js.undefined
     
     /**
       * Determines whether the keyboard gets dismissed in response to a drag.
       *   - 'none' (the default), drags do not dismiss the keyboard.
       *   - 'on-drag', the keyboard is dismissed when a drag begins.
       */
-    var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.native
+    var keyboardDismissMode: js.UndefOr[none | `on-drag`] = js.undefined
     
     /**
       * If a parent `View` wants to prevent a child `View` from becoming responder
@@ -144,7 +139,7 @@ object mod {
       *
       * See http://facebook.github.io/react-native/docs/view.html#onMoveShouldsetrespondercapture
       */
-    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.native
+    var onMoveShouldSetResponderCapture: js.UndefOr[js.Function1[/* event */ GestureResponderEvent, Boolean]] = js.undefined
     
     /**
       * Executed when transitioning between pages (ether because of animation for
@@ -157,7 +152,7 @@ object mod {
       */
     var onPageScroll: js.UndefOr[
         js.Function1[/* event */ NativeSyntheticEvent[ViewPagerOnPageScrollEventData], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Function called when the page scrolling state has changed.
@@ -169,7 +164,7 @@ object mod {
       */
     var onPageScrollStateChanged: js.UndefOr[
         js.Function1[/* event */ NativeSyntheticEvent[PageScrollStateChangedEvent], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * This callback will be called once ViewPager finish navigating to selected page
@@ -179,35 +174,35 @@ object mod {
       */
     var onPageSelected: js.UndefOr[
         js.Function1[/* event */ NativeSyntheticEvent[ViewPagerOnPageSelectedEventData], Unit]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * iOS only
       */
-    var orientation: js.UndefOr[horizontal | vertical] = js.native
+    var orientation: js.UndefOr[horizontal | vertical] = js.undefined
     
     /**
       * Android only
       */
-    var overScrollMode: js.UndefOr[auto | always | never] = js.native
+    var overScrollMode: js.UndefOr[auto | always | never] = js.undefined
     
     /**
       * Blank space to show between pages. This is only visible while scrolling, pages are still
       * edge-to-edge.
       */
-    var pageMargin: js.UndefOr[Double] = js.native
+    var pageMargin: js.UndefOr[Double] = js.undefined
     
     /**
       * When false, the content does not scroll.
       * The default value is true.
       */
-    var scrollEnabled: js.UndefOr[Boolean] = js.native
+    var scrollEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var showPageIndicator: js.UndefOr[Boolean] = js.native
+    var showPageIndicator: js.UndefOr[Boolean] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
     
-    var transitionStyle: js.UndefOr[scroll | curl] = js.native
+    var transitionStyle: js.UndefOr[scroll | curl] = js.undefined
   }
   object ViewPagerProps {
     

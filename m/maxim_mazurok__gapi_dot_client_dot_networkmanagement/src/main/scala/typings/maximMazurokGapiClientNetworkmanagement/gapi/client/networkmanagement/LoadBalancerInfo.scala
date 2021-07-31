@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientNetworkmanagement.gapi.client.networkmanag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadBalancerInfo extends StObject {
   
   /** Type of load balancer's backend configuration. */
-  var backendType: js.UndefOr[String] = js.native
+  var backendType: js.UndefOr[String] = js.undefined
   
   /** Backend configuration URI. */
-  var backendUri: js.UndefOr[String] = js.native
+  var backendUri: js.UndefOr[String] = js.undefined
   
   /** Information for the loadbalancer backends. */
-  var backends: js.UndefOr[js.Array[LoadBalancerBackend]] = js.native
+  var backends: js.UndefOr[js.Array[LoadBalancerBackend]] = js.undefined
   
   /** URI of the health check for the load balancer. */
-  var healthCheckUri: js.UndefOr[String] = js.native
+  var healthCheckUri: js.UndefOr[String] = js.undefined
   
   /** Type of the load balancer. */
-  var loadBalancerType: js.UndefOr[String] = js.native
+  var loadBalancerType: js.UndefOr[String] = js.undefined
 }
 object LoadBalancerInfo {
   

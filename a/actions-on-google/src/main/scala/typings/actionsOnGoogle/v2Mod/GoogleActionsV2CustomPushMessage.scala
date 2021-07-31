@@ -2,27 +2,25 @@ package typings.actionsOnGoogle.v2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleActionsV2CustomPushMessage extends StObject {
   
   /**
     * An order update updating orders placed through transaction APIs.
     */
-  var orderUpdate: js.UndefOr[GoogleActionsV2OrdersOrderUpdate] = js.native
+  var orderUpdate: js.UndefOr[GoogleActionsV2OrdersOrderUpdate] = js.undefined
   
   /**
     * The specified target for the push request.
     */
-  var target: js.UndefOr[GoogleActionsV2CustomPushMessageTarget] = js.native
+  var target: js.UndefOr[GoogleActionsV2CustomPushMessageTarget] = js.undefined
   
   /**
     * If specified, displays a notification to the user with specified title
     * and text.
     */
-  var userNotification: js.UndefOr[GoogleActionsV2UserNotification] = js.native
+  var userNotification: js.UndefOr[GoogleActionsV2UserNotification] = js.undefined
 }
 object GoogleActionsV2CustomPushMessage {
   

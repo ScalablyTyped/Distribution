@@ -2,7 +2,6 @@ package typings.matterJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("matter-js", "Runner")
@@ -43,34 +42,34 @@ class Runner () extends StObject {
 /* static members */
 object Runner {
   
+  @JSImport("matter-js", "Runner")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new Runner. The options parameter is an object that specifies any properties you wish to override the defaults.
     * @method create
     * @param {} options
     */
-  @JSImport("matter-js", "Runner.create")
-  @js.native
-  def create(): Runner = js.native
-  @JSImport("matter-js", "Runner.create")
-  @js.native
-  def create(options: IRunnerOptions): Runner = js.native
+  @scala.inline
+  def create(): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[Runner]
+  @scala.inline
+  def create(options: IRunnerOptions): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(options.asInstanceOf[js.Any]).asInstanceOf[Runner]
   
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
-  @JSImport("matter-js", "Runner.run")
-  @js.native
-  def run(engine: Engine): Runner = js.native
+  @scala.inline
+  def run(engine: Engine): Runner = ^.asInstanceOf[js.Dynamic].applyDynamic("run")(engine.asInstanceOf[js.Any]).asInstanceOf[Runner]
   /**
     * Continuously ticks a `Matter.Engine` by calling `Runner.tick` on the `requestAnimationFrame` event.
     * @method run
     * @param {engine} engine
     */
-  @JSImport("matter-js", "Runner.run")
-  @js.native
-  def run(runner: Runner, engine: Engine): Runner = js.native
+  @scala.inline
+  def run(runner: Runner, engine: Engine): Runner = (^.asInstanceOf[js.Dynamic].applyDynamic("run")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Runner]
   
   /**
     * Alias for `Runner.run`.
@@ -78,9 +77,8 @@ object Runner {
     * @param {runner} runner
     * @param {engine} engine
     */
-  @JSImport("matter-js", "Runner.start")
-  @js.native
-  def start(runner: Runner, engine: Engine): Unit = js.native
+  @scala.inline
+  def start(runner: Runner, engine: Engine): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("start")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Ends execution of `Runner.run` on the given `runner`, by canceling the animation frame request event loop.
@@ -88,9 +86,8 @@ object Runner {
     * @method stop
     * @param {runner} runner
     */
-  @JSImport("matter-js", "Runner.stop")
-  @js.native
-  def stop(runner: Runner): Unit = js.native
+  @scala.inline
+  def stop(runner: Runner): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stop")(runner.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A game loop utility that updates the engine and renderer by one step (a 'tick').
@@ -102,7 +99,6 @@ object Runner {
     * @param {engine} engine
     * @param {number} time
     */
-  @JSImport("matter-js", "Runner.tick")
-  @js.native
-  def tick(runner: Runner, engine: Engine, time: Double): Unit = js.native
+  @scala.inline
+  def tick(runner: Runner, engine: Engine, time: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("tick")(runner.asInstanceOf[js.Any], engine.asInstanceOf[js.Any], time.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,93 +2,91 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Browseris extends StObject {
   
-  var armProcessor: Boolean = js.native
+  var armProcessor: Boolean
   
-  var chrome: Boolean = js.native
+  var chrome: Boolean
   
-  var chrome7up: Boolean = js.native
+  var chrome7up: Boolean
   
-  var chrome8up: Boolean = js.native
+  var chrome8up: Boolean
   
-  var chrome9up: Boolean = js.native
+  var chrome9up: Boolean
   
-  var firefox: Boolean = js.native
+  var firefox: Boolean
   
-  var firefox36up: Boolean = js.native
+  var firefox36up: Boolean
   
-  var firefox3up: Boolean = js.native
+  var firefox3up: Boolean
   
-  var firefox4up: Boolean = js.native
+  var firefox4up: Boolean
   
-  var ie: Boolean = js.native
+  var ie: Boolean
   
-  var ie55up: Boolean = js.native
+  var ie55up: Boolean
   
-  var ie5up: Boolean = js.native
+  var ie5up: Boolean
   
-  var ie7down: Boolean = js.native
+  var ie7down: Boolean
   
-  var ie8down: Boolean = js.native
+  var ie8down: Boolean
   
-  var ie8standard: Boolean = js.native
+  var ie8standard: Boolean
   
-  var ie8standardUp: Boolean = js.native
+  var ie8standardUp: Boolean
   
-  var ie9down: Boolean = js.native
+  var ie9down: Boolean
   
-  var ie9standardUp: Boolean = js.native
+  var ie9standardUp: Boolean
   
-  var iever: Boolean = js.native
+  var iever: Boolean
   
-  var ipad: Boolean = js.native
+  var ipad: Boolean
   
-  var isTouch: Boolean = js.native
+  var isTouch: Boolean
   
-  var mac: Boolean = js.native
+  var mac: Boolean
   
-  var major: Boolean = js.native
+  var major: Boolean
   
-  var msTouch: Boolean = js.native
+  var msTouch: Boolean
   
-  var nav: Boolean = js.native
+  var nav: Boolean
   
-  var nav6: Boolean = js.native
+  var nav6: Boolean
   
-  var nav6up: Boolean = js.native
+  var nav6up: Boolean
   
-  var nav7up: Boolean = js.native
+  var nav7up: Boolean
   
-  var osver: Boolean = js.native
+  var osver: Boolean
   
-  var safari: Boolean = js.native
+  var safari: Boolean
   
-  var safari125up: Boolean = js.native
+  var safari125up: Boolean
   
-  var safari3up: Boolean = js.native
+  var safari3up: Boolean
   
-  var verIEFull: Boolean = js.native
+  var verIEFull: Boolean
   
-  var w3c: Boolean = js.native
+  var w3c: Boolean
   
-  var webKit: Boolean = js.native
+  var webKit: Boolean
   
-  var win: Boolean = js.native
+  var win: Boolean
   
-  var win32: Boolean = js.native
+  var win32: Boolean
   
-  var win64bit: Boolean = js.native
+  var win64bit: Boolean
   
-  var win8AppHost: Boolean = js.native
+  var win8AppHost: Boolean
   
-  var windowsphone: Boolean = js.native
+  var windowsphone: Boolean
   
-  var winnt: Boolean = js.native
+  var winnt: Boolean
 }
 object Browseris {
   

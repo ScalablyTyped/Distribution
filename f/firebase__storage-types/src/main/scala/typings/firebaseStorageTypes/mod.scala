@@ -11,7 +11,6 @@ import typings.std.Storage
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -36,24 +35,25 @@ object mod {
     def setMaxUploadRetryTime(time: Double): Unit = js.native
   }
   
-  @js.native
-  trait FullMetadata extends UploadMetadata {
+  trait FullMetadata
+    extends StObject
+       with UploadMetadata {
     
-    var bucket: String = js.native
+    var bucket: String
     
-    var fullPath: String = js.native
+    var fullPath: String
     
-    var generation: String = js.native
+    var generation: String
     
-    var metageneration: String = js.native
+    var metageneration: String
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var timeCreated: String = js.native
+    var timeCreated: String
     
-    var updated: String = js.native
+    var updated: String
   }
   object FullMetadata {
     
@@ -101,12 +101,11 @@ object mod {
     }
   }
   
-  @js.native
   trait ListOptions extends StObject {
     
-    var maxResults: js.UndefOr[Double | Null] = js.native
+    var maxResults: js.UndefOr[Double | Null] = js.undefined
     
-    var pageToken: js.UndefOr[String | Null] = js.native
+    var pageToken: js.UndefOr[String | Null] = js.undefined
   }
   object ListOptions {
     
@@ -139,20 +138,19 @@ object mod {
     }
   }
   
-  @js.native
   trait ListResult extends StObject {
     
-    var items: js.Array[Reference] = js.native
+    var items: js.Array[Reference]
     
-    var nextPageToken: String | Null = js.native
+    var nextPageToken: String | Null
     
-    var prefixes: js.Array[Reference] = js.native
+    var prefixes: js.Array[Reference]
   }
   object ListResult {
     
     @scala.inline
     def apply(items: js.Array[Reference], prefixes: js.Array[Reference]): ListResult = {
-      val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(items = items.asInstanceOf[js.Any], prefixes = prefixes.asInstanceOf[js.Any], nextPageToken = null)
       __obj.asInstanceOf[ListResult]
     }
     
@@ -211,7 +209,7 @@ object mod {
     def put(data: Uint8Array, metadata: UploadMetadata): UploadTask = js.native
     
     def putString(data: String): UploadTask = js.native
-    def putString(data: String, format: js.UndefOr[scala.Nothing], metadata: UploadMetadata): UploadTask = js.native
+    def putString(data: String, format: Unit, metadata: UploadMetadata): UploadTask = js.native
     def putString(data: String, format: StringFormat): UploadTask = js.native
     def putString(data: String, format: StringFormat, metadata: UploadMetadata): UploadTask = js.native
     
@@ -222,20 +220,19 @@ object mod {
     def updateMetadata(metadata: SettableMetadata): js.Promise[FullMetadata] = js.native
   }
   
-  @js.native
   trait SettableMetadata extends StObject {
     
-    var cacheControl: js.UndefOr[String | Null] = js.native
+    var cacheControl: js.UndefOr[String | Null] = js.undefined
     
-    var contentDisposition: js.UndefOr[String | Null] = js.native
+    var contentDisposition: js.UndefOr[String | Null] = js.undefined
     
-    var contentEncoding: js.UndefOr[String | Null] = js.native
+    var contentEncoding: js.UndefOr[String | Null] = js.undefined
     
-    var contentLanguage: js.UndefOr[String | Null] = js.native
+    var contentLanguage: js.UndefOr[String | Null] = js.undefined
     
-    var contentType: js.UndefOr[String | Null] = js.native
+    var contentType: js.UndefOr[String | Null] = js.undefined
     
-    var customMetadata: js.UndefOr[StringDictionary[String] | Null] = js.native
+    var customMetadata: js.UndefOr[StringDictionary[String] | Null] = js.undefined
   }
   object SettableMetadata {
     
@@ -310,10 +307,11 @@ object mod {
   
   type TaskState = String
   
-  @js.native
-  trait UploadMetadata extends SettableMetadata {
+  trait UploadMetadata
+    extends StObject
+       with SettableMetadata {
     
-    var md5Hash: js.UndefOr[String | Null] = js.native
+    var md5Hash: js.UndefOr[String | Null] = js.undefined
   }
   object UploadMetadata {
     
@@ -342,71 +340,65 @@ object mod {
     
     def cancel(): Boolean = js.native
     
-    def `catch`(onRejected: js.Function1[/* a */ Error, _]): js.Promise[_] = js.native
+    def `catch`(onRejected: js.Function1[/* a */ Error, js.Any]): js.Promise[js.Any] = js.native
     
     def on(event: TaskEvent): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any]): js.Function = js.native
     def on(
       event: TaskEvent,
-      nextOrObserver: js.UndefOr[scala.Nothing],
-      error: js.UndefOr[scala.Nothing],
-      complete: Unsubscribe
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
+      error: js.Function1[/* a */ Error, js.Any]
     ): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: js.UndefOr[scala.Nothing], error: js.Function1[/* a */ Error, _]): js.Function = js.native
     def on(
       event: TaskEvent,
-      nextOrObserver: js.UndefOr[scala.Nothing],
-      error: js.Function1[/* a */ Error, _],
-      complete: Unsubscribe
-    ): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: js.UndefOr[scala.Nothing], error: Null, complete: Unsubscribe): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _]): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
-      error: js.UndefOr[scala.Nothing],
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
+      error: js.Function1[/* a */ Error, js.Any],
       complete: Unsubscribe
     ): js.Function = js.native
     def on(
       event: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
-      error: js.Function1[/* a */ Error, _]
-    ): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
-      error: js.Function1[/* a */ Error, _],
-      complete: Unsubscribe
-    ): js.Function = js.native
-    def on(
-      event: TaskEvent,
-      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, _],
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
       error: Null,
       complete: Unsubscribe
     ): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: Null, error: js.UndefOr[scala.Nothing], complete: Unsubscribe): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: Null, error: js.Function1[/* a */ Error, _]): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
+      error: Unit,
+      complete: Unsubscribe
+    ): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Null, error: js.Function1[/* a */ Error, js.Any]): js.Function = js.native
     def on(
       event: TaskEvent,
       nextOrObserver: Null,
-      error: js.Function1[/* a */ Error, _],
+      error: js.Function1[/* a */ Error, js.Any],
       complete: Unsubscribe
     ): js.Function = js.native
     def on(event: TaskEvent, nextOrObserver: Null, error: Null, complete: Unsubscribe): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Null, error: Unit, complete: Unsubscribe): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Unit, error: js.Function1[/* a */ Error, js.Any]): js.Function = js.native
+    def on(
+      event: TaskEvent,
+      nextOrObserver: Unit,
+      error: js.Function1[/* a */ Error, js.Any],
+      complete: Unsubscribe
+    ): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Unit, error: Null, complete: Unsubscribe): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: Unit, error: Unit, complete: Unsubscribe): js.Function = js.native
     def on(event: TaskEvent, nextOrObserver: PartialObserverUploadTask): js.Function = js.native
     def on(
       event: TaskEvent,
       nextOrObserver: PartialObserverUploadTask,
-      error: js.UndefOr[scala.Nothing],
-      complete: Unsubscribe
+      error: js.Function1[/* a */ Error, js.Any]
     ): js.Function = js.native
-    def on(event: TaskEvent, nextOrObserver: PartialObserverUploadTask, error: js.Function1[/* a */ Error, _]): js.Function = js.native
     def on(
       event: TaskEvent,
       nextOrObserver: PartialObserverUploadTask,
-      error: js.Function1[/* a */ Error, _],
+      error: js.Function1[/* a */ Error, js.Any],
       complete: Unsubscribe
     ): js.Function = js.native
     def on(event: TaskEvent, nextOrObserver: PartialObserverUploadTask, error: Null, complete: Unsubscribe): js.Function = js.native
+    def on(event: TaskEvent, nextOrObserver: PartialObserverUploadTask, error: Unit, complete: Unsubscribe): js.Function = js.native
     
     def pause(): Boolean = js.native
     
@@ -414,30 +406,29 @@ object mod {
     
     var snapshot: UploadTaskSnapshot = js.native
     
-    def `then`(): js.Promise[_] = js.native
-    def `then`(onFulfilled: js.UndefOr[scala.Nothing], onRejected: js.Function1[/* a */ Error, _]): js.Promise[_] = js.native
-    def `then`(onFulfilled: js.Function1[/* a */ UploadTaskSnapshot, _]): js.Promise[_] = js.native
+    def `then`(): js.Promise[js.Any] = js.native
+    def `then`(onFulfilled: js.Function1[/* a */ UploadTaskSnapshot, js.Any]): js.Promise[js.Any] = js.native
     def `then`(
-      onFulfilled: js.Function1[/* a */ UploadTaskSnapshot, _],
-      onRejected: js.Function1[/* a */ Error, _]
-    ): js.Promise[_] = js.native
-    def `then`(onFulfilled: Null, onRejected: js.Function1[/* a */ Error, _]): js.Promise[_] = js.native
+      onFulfilled: js.Function1[/* a */ UploadTaskSnapshot, js.Any],
+      onRejected: js.Function1[/* a */ Error, js.Any]
+    ): js.Promise[js.Any] = js.native
+    def `then`(onFulfilled: Null, onRejected: js.Function1[/* a */ Error, js.Any]): js.Promise[js.Any] = js.native
+    def `then`(onFulfilled: Unit, onRejected: js.Function1[/* a */ Error, js.Any]): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait UploadTaskSnapshot extends StObject {
     
-    var bytesTransferred: Double = js.native
+    var bytesTransferred: Double
     
-    var metadata: FullMetadata = js.native
+    var metadata: FullMetadata
     
-    var ref: Reference = js.native
+    var ref: Reference
     
-    var state: TaskState = js.native
+    var state: TaskState
     
-    var task: UploadTask = js.native
+    var task: UploadTask
     
-    var totalBytes: Double = js.native
+    var totalBytes: Double
   }
   object UploadTaskSnapshot {
     
@@ -479,10 +470,9 @@ object mod {
   
   object firebaseComponentAugmentingMod {
     
-    @js.native
     trait NameServiceMapping extends StObject {
       
-      var storage: FirebaseStorage = js.native
+      var storage: FirebaseStorage
     }
     object NameServiceMapping {
       

@@ -7,18 +7,16 @@ import typings.cadesplugin.CADESCommon.ValuesOf
 import typings.cadesplugin.CAPICOM.Signers
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent cadesplugin.CADES_Common.Async<cadesplugin.CAdESCOM.SignedXML> */
-@js.native
 trait SignedXMLAsync extends StObject {
   
   val Content: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val DigestMethod: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val Sign: (// tslint:disable-line ban-types
   js.Promise[
@@ -27,29 +25,29 @@ trait SignedXMLAsync extends StObject {
     ]
   ]) | (PromisifiedFunction[
     js.Function2[/* signer */ js.UndefOr[CPSigner], /* XPath */ js.UndefOr[String], String]
-  ]) = js.native
+  ])
   
   val SignatureMethod: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[String]]) | PromisifiedFunction[String] = js.native
+  js.Promise[Unpacked[String]]) | PromisifiedFunction[String]
   
   val SignatureType: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]] = js.native
+  js.Promise[Unpacked[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]]) | PromisifiedFunction[ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]]
   
   val Signers: (// tslint:disable-line ban-types
-  js.Promise[Unpacked[typings.cadesplugin.CAPICOM.Signers]]) | PromisifiedFunction[typings.cadesplugin.CAPICOM.Signers] = js.native
+  js.Promise[Unpacked[typings.cadesplugin.CAPICOM.Signers]]) | PromisifiedFunction[typings.cadesplugin.CAPICOM.Signers]
   
   val Verify: (// tslint:disable-line ban-types
   js.Promise[
     Unpacked[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]]
-  ]) | (PromisifiedFunction[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]]) = js.native
+  ]) | (PromisifiedFunction[js.Function2[/* SignedMessage */ String, /* XPath */ js.UndefOr[String], Unit]])
   
-  def propset_Content(content: String): js.Promise[Unit] = js.native
+  def propset_Content(content: String): js.Promise[Unit]
   
-  def propset_DigestMethod(digestMethod: String): js.Promise[Unit] = js.native
+  def propset_DigestMethod(digestMethod: String): js.Promise[Unit]
   
-  def propset_SignatureMethod(signatureMethod: String): js.Promise[Unit] = js.native
+  def propset_SignatureMethod(signatureMethod: String): js.Promise[Unit]
   
-  def propset_SignatureType(signatureType: ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]): js.Promise[Unit] = js.native
+  def propset_SignatureType(signatureType: ValuesOf[CADESCOM_XML_SIGNATURE_TYPE]): js.Promise[Unit]
 }
 object SignedXMLAsync {
   
@@ -99,7 +97,7 @@ object SignedXMLAsync {
     def setContentFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Content", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -112,7 +110,7 @@ object SignedXMLAsync {
     def setDigestMethodFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "DigestMethod", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -143,7 +141,7 @@ object SignedXMLAsync {
     def setSignFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Sign", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -159,7 +157,7 @@ object SignedXMLAsync {
     def setSignatureMethodFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SignatureMethod", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -172,7 +170,7 @@ object SignedXMLAsync {
     def setSignatureTypeFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "SignatureType", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -185,7 +183,7 @@ object SignedXMLAsync {
     def setSignersFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Signers", js.Any.fromFunction1(value))
     
     @scala.inline
@@ -200,7 +198,7 @@ object SignedXMLAsync {
     def setVerifyFunction1(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof any ]: cadesplugin.CADES_Common.Unpacked<any[K]>}
-      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction with TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
+      */ /* args */ typings.cadesplugin.cadespluginStrings.PromisifiedFunction & TopLevel[js.Any] => js.Promise[Unpacked[js.Any]]
     ): Self = StObject.set(x, "Verify", js.Any.fromFunction1(value))
     
     @scala.inline

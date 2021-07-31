@@ -2,21 +2,19 @@ package typings.awsSdk.workspacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateConnectionAliasPermissionRequest extends StObject {
   
   /**
     * The identifier of the connection alias that you want to update permissions for.
     */
-  var AliasId: ConnectionAliasId = js.native
+  var AliasId: ConnectionAliasId
   
   /**
     * Indicates whether to share or unshare the connection alias with the specified AWS account.
     */
-  var ConnectionAliasPermission: typings.awsSdk.workspacesMod.ConnectionAliasPermission = js.native
+  var ConnectionAliasPermission: typings.awsSdk.workspacesMod.ConnectionAliasPermission
 }
 object UpdateConnectionAliasPermissionRequest {
   

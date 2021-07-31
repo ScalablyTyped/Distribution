@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BulkEditAssignedInventorySourcesResponse extends StObject {
   
   /** The list of assigned inventory sources that have been successfully created. This list will be absent if empty. */
-  var assignedInventorySources: js.UndefOr[js.Array[AssignedInventorySource]] = js.native
+  var assignedInventorySources: js.UndefOr[js.Array[AssignedInventorySource]] = js.undefined
 }
 object BulkEditAssignedInventorySourcesResponse {
   

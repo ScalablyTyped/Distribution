@@ -5,7 +5,6 @@ import typings.remarkable.remarkableStrings.full
 import typings.remarkable.remarkableStrings.remarkable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("remarkable/lib", JSImport.Namespace)
@@ -13,7 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Markdown parser, done right.
   */
-class ^ () extends Remarkable {
+class ^ ()
+  extends StObject
+     with Remarkable {
   def this(options: Options) = this()
   /**
     * Remarkable offers some "presets" as a convenience to quickly enable/disable

@@ -5,12 +5,14 @@ import typings.std.Error
 import typings.std.IterableIterator
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fiberMod {
   
-  @JSImport("posterus/fiber", "fiber")
+  @JSImport("posterus/fiber", JSImport.Namespace)
   @js.native
-  def fiber(iterator: IterableIterator[_]): Future[_, Error] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def fiber(iterator: IterableIterator[js.Any]): Future[js.Any, Error] = ^.asInstanceOf[js.Dynamic].applyDynamic("fiber")(iterator.asInstanceOf[js.Any]).asInstanceOf[Future[js.Any, Error]]
 }

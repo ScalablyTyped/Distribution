@@ -2,15 +2,15 @@ package typings.react.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DelHTMLAttributes[T] extends HTMLAttributes[T] {
+trait DelHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var cite: js.UndefOr[String] = js.native
+  var cite: js.UndefOr[String] = js.undefined
   
-  var dateTime: js.UndefOr[String] = js.native
+  var dateTime: js.UndefOr[String] = js.undefined
 }
 object DelHTMLAttributes {
   
@@ -21,7 +21,7 @@ object DelHTMLAttributes {
   }
   
   @scala.inline
-  implicit class DelHTMLAttributesMutableBuilder[Self <: DelHTMLAttributes[_], T] (val x: Self with DelHTMLAttributes[T]) extends AnyVal {
+  implicit class DelHTMLAttributesMutableBuilder[Self <: DelHTMLAttributes[?], T] (val x: Self & DelHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setCite(value: String): Self = StObject.set(x, "cite", value.asInstanceOf[js.Any])

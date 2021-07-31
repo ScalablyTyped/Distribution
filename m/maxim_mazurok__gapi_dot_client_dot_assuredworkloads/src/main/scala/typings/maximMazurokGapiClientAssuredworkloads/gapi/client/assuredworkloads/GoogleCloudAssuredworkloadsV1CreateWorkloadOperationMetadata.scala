@@ -2,23 +2,21 @@ package typings.maximMazurokGapiClientAssuredworkloads.gapi.client.assuredworklo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudAssuredworkloadsV1CreateWorkloadOperationMetadata extends StObject {
   
   /** Optional. Compliance controls that should be applied to the resources managed by the workload. */
-  var complianceRegime: js.UndefOr[String] = js.native
+  var complianceRegime: js.UndefOr[String] = js.undefined
   
   /** Optional. Time when the operation was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Optional. The display name of the workload. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Optional. The parent of the workload. */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudAssuredworkloadsV1CreateWorkloadOperationMetadata {
   

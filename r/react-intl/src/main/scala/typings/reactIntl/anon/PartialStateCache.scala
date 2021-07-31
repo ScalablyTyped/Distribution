@@ -5,18 +5,16 @@ import typings.reactIntl.providerMod.OptionalIntlConfig
 import typings.reactIntl.typesMod.IntlShape
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<react-intl.react-intl/lib/src/components/provider.State> */
-@js.native
 trait PartialStateCache extends StObject {
   
-  var cache: js.UndefOr[IntlCache] = js.native
+  var cache: js.UndefOr[IntlCache] = js.undefined
   
-  var intl: js.UndefOr[IntlShape] = js.native
+  var intl: js.UndefOr[IntlShape] = js.undefined
   
-  var prevConfig: js.UndefOr[OptionalIntlConfig] = js.native
+  var prevConfig: js.UndefOr[OptionalIntlConfig] = js.undefined
 }
 object PartialStateCache {
   

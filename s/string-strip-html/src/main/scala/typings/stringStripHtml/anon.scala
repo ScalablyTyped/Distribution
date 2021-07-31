@@ -2,12 +2,10 @@ package typings.stringStripHtml
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait LimitLinebreaksCount extends StObject {
     
     /**
@@ -16,7 +14,7 @@ object anon {
       *
       * Default: 1
       */
-    var limitLinebreaksCount: Double = js.native
+    var limitLinebreaksCount: Double
     
     /**
       * If set to true, if to-be-added string (3rd element in the range array) contains only whitespace (trim()s to empty string),
@@ -25,14 +23,14 @@ object anon {
       *
       * Default: false
       */
-    var limitToBeAddedWhitespace: Boolean = js.native
+    var limitToBeAddedWhitespace: Boolean
     
     /**
       * Default mode, 1 is concatenate clashing values, but alternative mode 2 is newer value overwrites older.
       *
       * Default: 1
       */
-    var mergeType: Double = js.native
+    var mergeType: Double
   }
   object LimitLinebreaksCount {
     

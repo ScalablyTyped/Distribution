@@ -4,7 +4,6 @@ import typings.bluebird.mod.^
 import typings.projectOxford.mod.PersonGroupResponses.TrainingStatus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("project-oxford", "PersonGroup")

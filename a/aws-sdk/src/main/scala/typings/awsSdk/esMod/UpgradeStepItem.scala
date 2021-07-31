@@ -2,31 +2,29 @@ package typings.awsSdk.esMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpgradeStepItem extends StObject {
   
   /**
     * A list of strings containing detailed information about the errors encountered in a particular step.
     */
-  var Issues: js.UndefOr[typings.awsSdk.esMod.Issues] = js.native
+  var Issues: js.UndefOr[typings.awsSdk.esMod.Issues] = js.undefined
   
   /**
     * The Floating point value representing progress percentage of a particular step.
     */
-  var ProgressPercent: js.UndefOr[Double] = js.native
+  var ProgressPercent: js.UndefOr[Double] = js.undefined
   
   /**
     *  Represents one of 3 steps that an Upgrade or Upgrade Eligibility Check does through:  PreUpgradeCheck Snapshot Upgrade  
     */
-  var UpgradeStep: js.UndefOr[typings.awsSdk.esMod.UpgradeStep] = js.native
+  var UpgradeStep: js.UndefOr[typings.awsSdk.esMod.UpgradeStep] = js.undefined
   
   /**
     *  The status of a particular step during an upgrade. The status can take one of the following values:  In Progress Succeeded Succeeded with Issues Failed  
     */
-  var UpgradeStepStatus: js.UndefOr[UpgradeStatus] = js.native
+  var UpgradeStepStatus: js.UndefOr[UpgradeStatus] = js.undefined
 }
 object UpgradeStepItem {
   

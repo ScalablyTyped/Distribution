@@ -2,61 +2,59 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait QueryRequest extends StObject {
   
   /**
     * Enables filtered searches based on document attributes. You can only provide one attribute filter; however, the AndAllFilters, NotFilter, and OrAllFilters parameters contain a list of other filters. The AttributeFilter parameter enables you to create a set of filtering rules that a document must satisfy to be included in the query results.
     */
-  var AttributeFilter: js.UndefOr[typings.awsSdk.kendraMod.AttributeFilter] = js.native
+  var AttributeFilter: js.UndefOr[typings.awsSdk.kendraMod.AttributeFilter] = js.undefined
   
   /**
     * An array of documents attributes. Amazon Kendra returns a count for each attribute key specified. You can use this information to help narrow the search for your user.
     */
-  var Facets: js.UndefOr[FacetList] = js.native
+  var Facets: js.UndefOr[FacetList] = js.undefined
   
   /**
     * The unique identifier of the index to search. The identifier is returned in the response from the operation.
     */
-  var IndexId: typings.awsSdk.kendraMod.IndexId = js.native
+  var IndexId: typings.awsSdk.kendraMod.IndexId
   
   /**
     * Query results are returned in pages the size of the PageSize parameter. By default, Amazon Kendra returns the first page of results. Use this parameter to get result pages after the first one.
     */
-  var PageNumber: js.UndefOr[Integer] = js.native
+  var PageNumber: js.UndefOr[Integer] = js.undefined
   
   /**
     * Sets the number of results that are returned in each page of results. The default page size is 10. The maximum number of results returned is 100. If you ask for more than 100 results, only 100 are returned.
     */
-  var PageSize: js.UndefOr[Integer] = js.native
+  var PageSize: js.UndefOr[Integer] = js.undefined
   
   /**
     * Sets the type of query. Only results for the specified query type are returned.
     */
-  var QueryResultTypeFilter: js.UndefOr[QueryResultType] = js.native
+  var QueryResultTypeFilter: js.UndefOr[QueryResultType] = js.undefined
   
   /**
     * The text to search for.
     */
-  var QueryText: typings.awsSdk.kendraMod.QueryText = js.native
+  var QueryText: typings.awsSdk.kendraMod.QueryText
   
   /**
     * An array of document attributes to include in the response. No other document attributes are included in the response. By default all document attributes are included in the response. 
     */
-  var RequestedDocumentAttributes: js.UndefOr[DocumentAttributeKeyList] = js.native
+  var RequestedDocumentAttributes: js.UndefOr[DocumentAttributeKeyList] = js.undefined
   
   /**
     * Provides information that determines how the results of the query are sorted. You can set the field that Amazon Kendra should sort the results on, and specify whether the results should be sorted in ascending or descending order. In the case of ties in sorting the results, the results are sorted by relevance. If you don't provide sorting configuration, the results are sorted by the relevance that Amazon Kendra determines for the result.
     */
-  var SortingConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SortingConfiguration] = js.native
+  var SortingConfiguration: js.UndefOr[typings.awsSdk.kendraMod.SortingConfiguration] = js.undefined
   
   /**
     * The user context token.
     */
-  var UserContext: js.UndefOr[typings.awsSdk.kendraMod.UserContext] = js.native
+  var UserContext: js.UndefOr[typings.awsSdk.kendraMod.UserContext] = js.undefined
 }
 object QueryRequest {
   

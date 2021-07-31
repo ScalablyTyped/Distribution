@@ -12,7 +12,7 @@ Mendix Model SDK
 | Keywords           | - |
 | # releases         | 293 |
 | # dependents       | 5 |
-| # downloads        | 103184 |
+| # downloads        | 113459 |
 | # stars            | 1 |
 
 ## Links

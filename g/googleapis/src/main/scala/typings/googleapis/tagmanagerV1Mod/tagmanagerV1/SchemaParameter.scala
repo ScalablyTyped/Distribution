@@ -2,31 +2,29 @@ package typings.googleapis.tagmanagerV1Mod.tagmanagerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a Google Tag Manager Parameter.
   */
-@js.native
 trait SchemaParameter extends StObject {
   
   /**
     * The named key that uniquely identifies a parameter. Required for
     * top-level parameters, as well as map values. Ignored for list values.
     */
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
   /**
     * This list parameter&#39;s parameters (keys will be ignored).
     */
-  var list: js.UndefOr[js.Array[SchemaParameter]] = js.native
+  var list: js.UndefOr[js.Array[SchemaParameter]] = js.undefined
   
   /**
     * This map parameter&#39;s parameters (must have keys; keys must be
     * unique).
     */
-  var map: js.UndefOr[js.Array[SchemaParameter]] = js.native
+  var map: js.UndefOr[js.Array[SchemaParameter]] = js.undefined
   
   /**
     * The parameter type. Valid values are:  - boolean: The value represents a
@@ -37,13 +35,13 @@ trait SchemaParameter extends StObject {
     * variable references (even variable references that might return
     * non-string types)
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
   /**
     * A parameter&#39;s value (may contain variable references such as
     * &quot;{{myVariable}}&quot;) as appropriate to the specified type.
     */
-  var value: js.UndefOr[String] = js.native
+  var value: js.UndefOr[String] = js.undefined
 }
 object SchemaParameter {
   

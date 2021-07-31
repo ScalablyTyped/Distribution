@@ -13,23 +13,21 @@ import typings.plotlyJs.plotlyJsStrings.line
 import typings.plotlyJs.plotlyJsStrings.point
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MapboxSymbol extends StObject {
   
-  var icon: String = js.native
+  var icon: String
   
-  var iconsize: Double = js.native
+  var iconsize: Double
   
-  var placement: point | line | `line-center` = js.native
+  var placement: point | line | `line-center`
   
-  var text: String = js.native
+  var text: String
   
-  var textfont: PartialFont = js.native
+  var textfont: PartialFont
   
-  var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`) = js.native
+  var textposition: (`top left`) | (`top center`) | (`top right`) | (`middle center`) | (`bottom left`) | (`bottom center`) | (`bottom right`)
 }
 object MapboxSymbol {
   

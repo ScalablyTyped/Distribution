@@ -11,8 +11,8 @@ async loops that never RangeError
 | Full name          | looper |
 | Keywords           | - |
 | # releases         | 0 |
-| # dependents       | 14 |
-| # downloads        | 3157024 |
+| # dependents       | 19 |
+| # downloads        | 3090257 |
 | # stars            | 0 |
 
 ## Links

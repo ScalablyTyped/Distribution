@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientVision.gapi.client.vision
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudVisionV1p3beta1OutputConfig extends StObject {
   
   /**
@@ -13,10 +11,10 @@ trait GoogleCloudVisionV1p3beta1OutputConfig extends StObject {
     * one pdf file with 100 pages, 100 response protos will be generated. If `batch_size` = 20, then 5 json files each containing 20 response protos will be written under the prefix
     * `gcs_destination`.`uri`. Currently, batch_size only applies to GcsDestination, with potential future support for other output configurations.
     */
-  var batchSize: js.UndefOr[Double] = js.native
+  var batchSize: js.UndefOr[Double] = js.undefined
   
   /** The Google Cloud Storage location to write the output(s) to. */
-  var gcsDestination: js.UndefOr[GoogleCloudVisionV1p3beta1GcsDestination] = js.native
+  var gcsDestination: js.UndefOr[GoogleCloudVisionV1p3beta1GcsDestination] = js.undefined
 }
 object GoogleCloudVisionV1p3beta1OutputConfig {
   

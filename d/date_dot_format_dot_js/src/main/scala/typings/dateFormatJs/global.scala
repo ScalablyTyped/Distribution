@@ -2,7 +2,6 @@ package typings.dateFormatJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -18,30 +17,23 @@ object global {
     */
   object dateFormat {
     
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(): String = js.native
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(date: js.UndefOr[scala.Nothing], mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(date: js.UndefOr[scala.Nothing], mask: String): String = js.native
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(date: js.UndefOr[scala.Nothing], mask: String, utc: Boolean): String = js.native
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(date: js.Any): String = js.native
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(date: js.Any, mask: js.UndefOr[scala.Nothing], utc: Boolean): String = js.native
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(date: js.Any, mask: String): String = js.native
-    @JSGlobal("dateFormat")
-    @js.native
-    def apply(date: js.Any, mask: String, utc: Boolean): String = js.native
+    @scala.inline
+    def apply(): String = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[String]
+    @scala.inline
+    def apply(date: js.Any): String = ^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def apply(date: js.Any, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(date: js.Any, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(date: js.Any, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(date: Unit, mask: String): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(date: Unit, mask: String, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+    @scala.inline
+    def apply(date: Unit, mask: Unit, utc: Boolean): String = (^.asInstanceOf[js.Dynamic].apply(date.asInstanceOf[js.Any], mask.asInstanceOf[js.Any], utc.asInstanceOf[js.Any])).asInstanceOf[String]
+    
     @JSGlobal("dateFormat")
     @js.native
     val ^ : js.Any = js.native

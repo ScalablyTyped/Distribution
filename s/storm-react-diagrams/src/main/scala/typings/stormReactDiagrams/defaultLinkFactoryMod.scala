@@ -6,7 +6,6 @@ import typings.stormReactDiagrams.defaultLinkModelMod.DefaultLinkModel
 import typings.stormReactDiagrams.defaultLinkWidgetMod.DefaultLinkWidget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultLinkFactoryMod {

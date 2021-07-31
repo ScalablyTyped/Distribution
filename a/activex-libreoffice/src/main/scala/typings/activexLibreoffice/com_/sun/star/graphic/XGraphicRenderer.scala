@@ -4,19 +4,19 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** This interfaces exposes just one method to render a {@link XGraphic} container */
-@js.native
-trait XGraphicRenderer extends XInterface {
+trait XGraphicRenderer
+  extends StObject
+     with XInterface {
   
   /**
     * Renders the {@link XGraphic} container
     * @param Graphic The graphic container to be rendered
     * @see XGraphic
     */
-  def render(Graphic: XGraphic): Unit = js.native
+  def render(Graphic: XGraphic): Unit
 }
 object XGraphicRenderer {
   

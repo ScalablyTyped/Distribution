@@ -2,15 +2,13 @@ package typings.fastclick
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FastClickOptions extends StObject {
   
-  var tapDelay: js.UndefOr[Double] = js.native
+  var tapDelay: js.UndefOr[Double] = js.undefined
   
-  var touchBoundary: js.UndefOr[Double] = js.native
+  var touchBoundary: js.UndefOr[Double] = js.undefined
 }
 object FastClickOptions {
   

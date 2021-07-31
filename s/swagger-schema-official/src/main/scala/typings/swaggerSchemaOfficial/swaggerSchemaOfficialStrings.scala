@@ -4,7 +4,6 @@ import typings.swaggerSchemaOfficial.mod.ParameterCollectionFormat
 import typings.swaggerSchemaOfficial.mod.ParameterType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object swaggerSchemaOfficialStrings {
@@ -30,7 +29,9 @@ object swaggerSchemaOfficialStrings {
   def application: application = "application".asInstanceOf[application]
   
   @js.native
-  sealed trait array extends ParameterType
+  sealed trait array
+    extends StObject
+       with ParameterType
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
@@ -50,7 +51,9 @@ object swaggerSchemaOfficialStrings {
   def body: body = "body".asInstanceOf[body]
   
   @js.native
-  sealed trait boolean extends ParameterType
+  sealed trait boolean
+    extends StObject
+       with ParameterType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -60,7 +63,9 @@ object swaggerSchemaOfficialStrings {
   def byte: byte = "byte".asInstanceOf[byte]
   
   @js.native
-  sealed trait csv extends ParameterCollectionFormat
+  sealed trait csv
+    extends StObject
+       with ParameterCollectionFormat
   @scala.inline
   def csv: csv = "csv".asInstanceOf[csv]
   
@@ -80,7 +85,9 @@ object swaggerSchemaOfficialStrings {
   def double: double = "double".asInstanceOf[double]
   
   @js.native
-  sealed trait file extends ParameterType
+  sealed trait file
+    extends StObject
+       with ParameterType
   @scala.inline
   def file: file = "file".asInstanceOf[file]
   
@@ -115,17 +122,23 @@ object swaggerSchemaOfficialStrings {
   def int64: int64 = "int64".asInstanceOf[int64]
   
   @js.native
-  sealed trait integer extends ParameterType
+  sealed trait integer
+    extends StObject
+       with ParameterType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait multi extends ParameterCollectionFormat
+  sealed trait multi
+    extends StObject
+       with ParameterCollectionFormat
   @scala.inline
   def multi: multi = "multi".asInstanceOf[multi]
   
   @js.native
-  sealed trait number extends ParameterType
+  sealed trait number
+    extends StObject
+       with ParameterType
   @scala.inline
   def number: number = "number".asInstanceOf[number]
   
@@ -135,7 +148,9 @@ object swaggerSchemaOfficialStrings {
   def oauth2: oauth2 = "oauth2".asInstanceOf[oauth2]
   
   @js.native
-  sealed trait `object` extends ParameterType
+  sealed trait `object`
+    extends StObject
+       with ParameterType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
@@ -150,7 +165,9 @@ object swaggerSchemaOfficialStrings {
   def path: path = "path".asInstanceOf[path]
   
   @js.native
-  sealed trait pipes extends ParameterCollectionFormat
+  sealed trait pipes
+    extends StObject
+       with ParameterCollectionFormat
   @scala.inline
   def pipes: pipes = "pipes".asInstanceOf[pipes]
   
@@ -160,17 +177,23 @@ object swaggerSchemaOfficialStrings {
   def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait ssv extends ParameterCollectionFormat
+  sealed trait ssv
+    extends StObject
+       with ParameterCollectionFormat
   @scala.inline
   def ssv: ssv = "ssv".asInstanceOf[ssv]
   
   @js.native
-  sealed trait string extends ParameterType
+  sealed trait string
+    extends StObject
+       with ParameterType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
   
   @js.native
-  sealed trait tsv extends ParameterCollectionFormat
+  sealed trait tsv
+    extends StObject
+       with ParameterCollectionFormat
   @scala.inline
   def tsv: tsv = "tsv".asInstanceOf[tsv]
 }

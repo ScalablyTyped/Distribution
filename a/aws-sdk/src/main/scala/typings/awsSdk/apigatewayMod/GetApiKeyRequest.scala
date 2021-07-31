@@ -2,21 +2,19 @@ package typings.awsSdk.apigatewayMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetApiKeyRequest extends StObject {
   
   /**
     * [Required] The identifier of the ApiKey resource.
     */
-  var apiKey: String = js.native
+  var apiKey: String
   
   /**
     * A boolean flag to specify whether (true) or not (false) the result contains the key value.
     */
-  var includeValue: js.UndefOr[NullableBoolean] = js.native
+  var includeValue: js.UndefOr[NullableBoolean] = js.undefined
 }
 object GetApiKeyRequest {
   

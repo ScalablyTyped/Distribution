@@ -3,7 +3,6 @@ package typings.cloudeventsSdk
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationErrorMod {
@@ -18,7 +17,9 @@ object validationErrorMod {
     */
   @JSImport("cloudevents-sdk/lib/bindings/http/validation/validation_error", JSImport.Namespace)
   @js.native
-  class ^ protected () extends ValidationError {
+  class ^ protected ()
+    extends StObject
+       with ValidationError {
     /**
       * Constructs a new {ValidationError} with the message
       * and array of additional errors.
@@ -27,6 +28,15 @@ object validationErrorMod {
       */
     def this(message: String) = this()
     def this(message: String, errors: js.Array[typings.ajv.mod.ErrorObject | String]) = this()
+    
+    /* CompleteClass */
+    var errors: js.Array[typings.ajv.mod.ErrorObject | String] = js.native
+    
+    /* CompleteClass */
+    var message: String = js.native
+    
+    /* CompleteClass */
+    var name: String = js.native
   }
   
   type ErrorObject = typings.ajv.mod.ErrorObject
@@ -39,10 +49,11 @@ object validationErrorMod {
     * A Error class that will be thrown when a CloudEvent
     * cannot be properly validated against a specification.
     */
-  @js.native
-  trait ValidationError extends Error {
+  trait ValidationError
+    extends StObject
+       with Error {
     
-    var errors: js.Array[typings.ajv.mod.ErrorObject | String] = js.native
+    var errors: js.Array[typings.ajv.mod.ErrorObject | String]
   }
   object ValidationError {
     

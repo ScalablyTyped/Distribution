@@ -2,21 +2,19 @@ package typings.awsSdk.connectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisassociateLambdaFunctionRequest extends StObject {
   
   /**
     * The Amazon Resource Name (ARN) of the Lambda function being disassociated.
     */
-  var FunctionArn: typings.awsSdk.connectMod.FunctionArn = js.native
+  var FunctionArn: typings.awsSdk.connectMod.FunctionArn
   
   /**
     * The identifier of the Amazon Connect instance..
     */
-  var InstanceId: typings.awsSdk.connectMod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.connectMod.InstanceId
 }
 object DisassociateLambdaFunctionRequest {
   

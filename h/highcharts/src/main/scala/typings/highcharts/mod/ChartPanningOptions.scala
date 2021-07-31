@@ -2,22 +2,20 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartPanningOptions extends StObject {
   
   /**
     * (Highcharts, Highstock, Gantt) Enable or disable chart panning.
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Gantt) Decides in what dimensions the user can
     * pan the chart. Can be one of `x`, `y`, or `xy`.
     */
-  var `type`: js.UndefOr[OptionsTypeValue] = js.native
+  var `type`: js.UndefOr[OptionsTypeValue] = js.undefined
 }
 object ChartPanningOptions {
   

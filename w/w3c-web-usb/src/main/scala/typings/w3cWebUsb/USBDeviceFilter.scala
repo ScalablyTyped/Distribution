@@ -2,23 +2,21 @@ package typings.w3cWebUsb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait USBDeviceFilter extends StObject {
   
-  var classCode: js.UndefOr[Double] = js.native
+  var classCode: js.UndefOr[Double] = js.undefined
   
-  var productId: js.UndefOr[Double] = js.native
+  var productId: js.UndefOr[Double] = js.undefined
   
-  var protocolCode: js.UndefOr[Double] = js.native
+  var protocolCode: js.UndefOr[Double] = js.undefined
   
-  var serialNumber: js.UndefOr[String] = js.native
+  var serialNumber: js.UndefOr[String] = js.undefined
   
-  var subclassCode: js.UndefOr[Double] = js.native
+  var subclassCode: js.UndefOr[Double] = js.undefined
   
-  var vendorId: js.UndefOr[Double] = js.native
+  var vendorId: js.UndefOr[Double] = js.undefined
 }
 object USBDeviceFilter {
   

@@ -7,14 +7,15 @@ import typings.node.NodeJS.ErrnoException
 import typings.node.NodeJS.Timer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object storageMod {
   
   @JSImport("enhanced-resolve/lib/Storage", JSImport.Default)
   @js.native
-  class default protected () extends Storage {
+  class default protected ()
+    extends StObject
+       with Storage {
     def this(duration: Double) = this()
   }
   
@@ -25,7 +26,7 @@ object storageMod {
     
     var count: Double = js.native
     
-    var data: Dictionary[_] = js.native
+    var data: Dictionary[js.Any] = js.native
     
     var duration: Double = js.native
     
@@ -49,9 +50,13 @@ object storageMod {
     
     var passive: Boolean = js.native
     
-    def provide(name: String, provider: CommonFileSystemMethod, callback: js.Function1[/* repeated */ js.Any, _]): js.Any = js.native
+    def provide(
+      name: String,
+      provider: CommonFileSystemMethod,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Any = js.native
     
-    def provideSync(name: String, provider: js.Function1[/* name */ String, _]): js.Any = js.native
+    def provideSync(name: String, provider: js.Function1[/* name */ String, js.Any]): js.Any = js.native
     
     def purge(): Unit = js.native
     def purge(what: String): Unit = js.native

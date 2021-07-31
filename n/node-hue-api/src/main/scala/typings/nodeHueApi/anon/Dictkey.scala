@@ -3,13 +3,13 @@ package typings.nodeHueApi.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Dictkey extends /* key */ StringDictionary[Double | String] {
+trait Dictkey
+  extends StObject
+     with /* key */ StringDictionary[Double | String] {
   
-  var lastupdated: String = js.native
+  var lastupdated: String
 }
 object Dictkey {
   

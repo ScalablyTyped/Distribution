@@ -4,15 +4,15 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait I18NLanMap extends /* lanKey */ StringDictionary[Record[String, String]] {
+trait I18NLanMap
+  extends StObject
+     with /* lanKey */ StringDictionary[Record[String, String]] {
   
-  var en: Record[String, String] = js.native
+  var en: Record[String, String]
   
-  var zh: Record[String, String] = js.native
+  var zh: Record[String, String]
 }
 object I18NLanMap {
   

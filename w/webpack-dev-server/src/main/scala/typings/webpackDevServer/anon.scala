@@ -4,23 +4,21 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.webpackDevServer.webpackDevServerStrings.ws
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Client extends StObject {
     
-    var client: js.Object = js.native
+    var client: js.Object
     
-    var server: ws = js.native
+    var server: ws
   }
   object Client {
     
     @scala.inline
-    def apply(client: js.Object, server: ws): Client = {
-      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
+    def apply(client: js.Object): Client = {
+      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], server = "ws")
       __obj.asInstanceOf[Client]
     }
     
@@ -35,12 +33,11 @@ object anon {
     }
   }
   
-  @js.native
   trait ClientServer extends StObject {
     
-    var client: js.Object = js.native
+    var client: js.Object
     
-    var server: js.Object = js.native
+    var server: js.Object
   }
   object ClientServer {
     
@@ -61,11 +58,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Dictkey
-    extends /* key */ StringDictionary[js.Array[String]] {
+    extends StObject
+       with /* key */ StringDictionary[js.Array[String]] {
     
-    var force: Boolean = js.native
+    var force: Boolean
   }
   object Dictkey {
     
@@ -83,12 +80,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Errors extends StObject {
     
-    var errors: js.UndefOr[Boolean] = js.native
+    var errors: js.UndefOr[Boolean] = js.undefined
     
-    var warnings: js.UndefOr[Boolean] = js.native
+    var warnings: js.UndefOr[Boolean] = js.undefined
   }
   object Errors {
     
@@ -115,10 +111,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Port extends StObject {
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
   }
   object Port {
     
@@ -139,18 +134,17 @@ object anon {
     }
   }
   
-  @js.native
   trait Server extends StObject {
     
-    var client: ws = js.native
+    var client: ws
     
-    var server: js.Object = js.native
+    var server: js.Object
   }
   object Server {
     
     @scala.inline
-    def apply(client: ws, server: js.Object): Server = {
-      val __obj = js.Dynamic.literal(client = client.asInstanceOf[js.Any], server = server.asInstanceOf[js.Any])
+    def apply(server: js.Object): Server = {
+      val __obj = js.Dynamic.literal(client = "ws", server = server.asInstanceOf[js.Any])
       __obj.asInstanceOf[Server]
     }
     
@@ -165,10 +159,9 @@ object anon {
     }
   }
   
-  @js.native
   trait TypeMap extends StObject {
     
-    var typeMap: js.UndefOr[Dictkey] = js.native
+    var typeMap: js.UndefOr[Dictkey] = js.undefined
   }
   object TypeMap {
     

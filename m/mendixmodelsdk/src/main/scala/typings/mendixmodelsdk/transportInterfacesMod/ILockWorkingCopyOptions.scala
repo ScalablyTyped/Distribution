@@ -2,31 +2,29 @@ package typings.mendixmodelsdk.transportInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ILockWorkingCopyOptions extends StObject {
   
   /**
     * The duration in seconds after which the lock will expire. Only applicable for lock type "edit".
     */
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
   /**
     * Locks the working copy, regardless if it is locked by another user. Only applicable for lock type "edit".
     */
-  var force: js.UndefOr[Boolean] = js.native
+  var force: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The lock ID to use. Only applicable for lock type "edit".
     */
-  var lockId: js.UndefOr[String] = js.native
+  var lockId: js.UndefOr[String] = js.undefined
   
   /**
     * The lock type, which indicates the purpose for which the working copy is locked.
     */
-  var lockType: LockType = js.native
+  var lockType: LockType
 }
 object ILockWorkingCopyOptions {
   

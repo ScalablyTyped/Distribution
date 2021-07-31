@@ -2,17 +2,15 @@ package typings.reactNativeSquareInAppPayments.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CardDetails extends StObject {
   
   /** Non-confidential details about the entered card, such as the brand and last four digits of the card number. */
-  var card: Card = js.native
+  var card: Card
   
   /** A one-time-use payment token that can be used with the Square Connect APIs to charge the card or save the card information. */
-  var nonce: String = js.native
+  var nonce: String
 }
 object CardDetails {
   

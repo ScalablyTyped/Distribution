@@ -10,13 +10,13 @@ Utility package providing information about automation protocols
 | ------------------ | :-------------: |
 | Full name          | @wdio/protocols |
 | Keywords           | webdriver, wdio |
-| # releases         | 29 |
-| # dependents       | 3 |
-| # downloads        | 15923156 |
+| # releases         | 35 |
+| # dependents       | 4 |
+| # downloads        | 20565858 |
 | # stars            | 0 |
 
 ## Links
-- [Homepage](https://github.com/webdriverio/webdriverio/tree/master/packages/wdio-protocols)
+- [Homepage](https://github.com/webdriverio/webdriverio/tree/main/packages/wdio-protocols)
 - [Bugs](https://github.com/webdriverio/webdriverio/issues)
 - [Repository](https://github.com/webdriverio/webdriverio)
 - [Npm](https://www.npmjs.com/package/%40wdio%2Fprotocols)

@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateInstanceExportTaskRequest extends StObject {
   
   /**
     * A description for the conversion task or the resource being exported. The maximum length is 255 characters.
     */
-  var Description: js.UndefOr[String] = js.native
+  var Description: js.UndefOr[String] = js.undefined
   
   /**
     * The format and location for an instance export task.
     */
-  var ExportToS3Task: ExportToS3TaskSpecification = js.native
+  var ExportToS3Task: ExportToS3TaskSpecification
   
   /**
     * The ID of the instance.
     */
-  var InstanceId: typings.awsSdk.ec2Mod.InstanceId = js.native
+  var InstanceId: typings.awsSdk.ec2Mod.InstanceId
   
   /**
     * The tags to apply to the instance export task during creation.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
   
   /**
     * The target virtualization environment.
     */
-  var TargetEnvironment: ExportEnvironment = js.native
+  var TargetEnvironment: ExportEnvironment
 }
 object CreateInstanceExportTaskRequest {
   

@@ -3,22 +3,20 @@ package typings.angularFormly.AngularFormly
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * see http://docs.angular-formly.com/docs/formlyvalidationmessages#addtemplateoptionvaluemessage
   */
-@js.native
 trait IValidationMessages extends StObject {
   
-  def addStringMessage(name: String, string: String): Unit = js.native
+  def addStringMessage(name: String, string: String): Unit
   
-  def addTemplateOptionValueMessage(name: String, prop: String, prefix: String, suffix: String, alternate: String): Unit = js.native
+  def addTemplateOptionValueMessage(name: String, prop: String, prefix: String, suffix: String, alternate: String): Unit
   
   var messages: StringDictionary[
     js.Function3[/* $viewValue */ js.Any, /* $modelValue */ js.Any, /* scope */ ITemplateScope, String]
-  ] = js.native
+  ]
 }
 object IValidationMessages {
   

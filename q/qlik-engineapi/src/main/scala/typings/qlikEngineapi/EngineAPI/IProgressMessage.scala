@@ -2,24 +2,22 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * ProgressMessage...
   */
-@js.native
 trait IProgressMessage extends StObject {
   
   /**
     * Code number to the corresponding localized message string.
     */
-  var qMessageCode: Double = js.native
+  var qMessageCode: Double
   
   /**
     * Parameters to be inserted in the localized message string.
     */
-  var qMessageParameters: js.Array[String] = js.native
+  var qMessageParameters: js.Array[String]
 }
 object IProgressMessage {
   

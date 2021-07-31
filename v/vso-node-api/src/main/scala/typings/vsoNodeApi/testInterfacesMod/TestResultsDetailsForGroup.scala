@@ -3,17 +3,15 @@ package typings.vsoNodeApi.testInterfacesMod
 import org.scalablytyped.runtime.NumberDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TestResultsDetailsForGroup extends StObject {
   
-  var groupByValue: js.Any = js.native
+  var groupByValue: js.Any
   
-  var results: js.Array[TestCaseResult] = js.native
+  var results: js.Array[TestCaseResult]
   
-  var resultsCountByOutcome: NumberDictionary[AggregatedResultsByOutcome] = js.native
+  var resultsCountByOutcome: NumberDictionary[AggregatedResultsByOutcome]
 }
 object TestResultsDetailsForGroup {
   

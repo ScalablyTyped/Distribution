@@ -5,17 +5,15 @@ import typings.forkTsCheckerWebpackPlugin.issueMatchMod.IssueMatch
 import typings.forkTsCheckerWebpackPlugin.issuePredicateMod.IssuePredicate
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object issueOptionsMod {
   
-  @js.native
   trait IssueOptions extends StObject {
     
-    var exclude: js.UndefOr[IssuePredicateOption] = js.native
+    var exclude: js.UndefOr[IssuePredicateOption] = js.undefined
     
-    var include: js.UndefOr[IssuePredicateOption] = js.native
+    var include: js.UndefOr[IssuePredicateOption] = js.undefined
   }
   object IssueOptions {
     

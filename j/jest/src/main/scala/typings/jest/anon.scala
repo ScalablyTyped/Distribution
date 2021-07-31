@@ -24,17 +24,15 @@ import typings.std.Required
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
-  trait `1`[T /* <: js.Array[_] */] extends StObject {
+  trait `1`[T /* <: js.Array[js.Any] */] extends StObject {
     
     var `1`: js.Array[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
-      ] = js.native
+      ]
     
     var `10`: js.Tuple10[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
@@ -47,25 +45,25 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[8] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[9] */ js.Any
-      ] = js.native
+      ]
     
     var `2`: js.Tuple2[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any
-      ] = js.native
+      ]
     
     var `3`: js.Tuple3[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any
-      ] = js.native
+      ]
     
     var `4`: js.Tuple4[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[1] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any
-      ] = js.native
+      ]
     
     var `5`: js.Tuple5[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
@@ -73,7 +71,7 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: T[2] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any
-      ] = js.native
+      ]
     
     var `6`: js.Tuple6[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
@@ -82,7 +80,7 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: T[3] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any
-      ] = js.native
+      ]
     
     var `7`: js.Tuple7[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
@@ -92,7 +90,7 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: T[4] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any
-      ] = js.native
+      ]
     
     var `8`: js.Tuple8[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
@@ -103,7 +101,7 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: T[5] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any
-      ] = js.native
+      ]
     
     var `9`: js.Tuple9[
         /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any, 
@@ -115,14 +113,14 @@ object anon {
         /* import warning: importer.ImportType#apply Failed type conversion: T[6] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any, 
         /* import warning: importer.ImportType#apply Failed type conversion: T[8] */ js.Any
-      ] = js.native
+      ]
     
-    var fallback: js.Array[_] = js.native
+    var fallback: js.Array[js.Any]
   }
   object `1` {
     
     @scala.inline
-    def apply[T /* <: js.Array[_] */](
+    def apply[T /* <: js.Array[js.Any] */](
       `1`: js.Array[
           /* import warning: importer.ImportType#apply Failed type conversion: T[0] */ js.Any
         ],
@@ -198,7 +196,7 @@ object anon {
           /* import warning: importer.ImportType#apply Failed type conversion: T[7] */ js.Any, 
           /* import warning: importer.ImportType#apply Failed type conversion: T[8] */ js.Any
         ],
-      fallback: js.Array[_]
+      fallback: js.Array[js.Any]
     ): `1`[T] = {
       val __obj = js.Dynamic.literal(fallback = fallback.asInstanceOf[js.Any])
       __obj.updateDynamic("1")(`1`.asInstanceOf[js.Any])
@@ -215,7 +213,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class `1MutableBuilder`[Self <: `1`[_], T /* <: js.Array[_] */] (val x: Self with `1`[T]) extends AnyVal {
+    implicit class `1MutableBuilder`[Self <: `1`[?], T /* <: js.Array[js.Any] */] (val x: Self & `1`[T]) extends AnyVal {
       
       @scala.inline
       def set1(
@@ -336,7 +334,7 @@ object anon {
       ): Self = StObject.set(x, "9", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setFallback(value: js.Array[_]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
+      def setFallback(value: js.Array[js.Any]): Self = StObject.set(x, "fallback", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setFallbackVarargs(value: js.Any*): Self = StObject.set(x, "fallback", js.Array(value :_*))
@@ -344,18 +342,16 @@ object anon {
   }
   
   /* Inlined jest.jest.jest.AndNot<{}> */
-  @js.native
   trait AndNot extends StObject
   
-  @js.native
   trait Args extends StObject {
     
-    var args: js.Array[_] = js.native
+    var args: js.Array[js.Any]
   }
   object Args {
     
     @scala.inline
-    def apply(args: js.Array[_]): Args = {
+    def apply(args: js.Array[js.Any]): Args = {
       val __obj = js.Dynamic.literal(args = args.asInstanceOf[js.Any])
       __obj.asInstanceOf[Args]
     }
@@ -364,7 +360,7 @@ object anon {
     implicit class ArgsMutableBuilder[Self <: Args] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setArgs(value: js.Array[_]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
+      def setArgs(value: js.Array[js.Any]): Self = StObject.set(x, "args", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setArgsVarargs(value: js.Any*): Self = StObject.set(x, "args", js.Array(value :_*))
@@ -413,28 +409,13 @@ object anon {
     def matcherErrorMessage(hint: String, generic: String, specific: String): String = js.native
     
     def matcherHint(matcherName: String): String = js.native
-    def matcherHint(
-      matcherName: String,
-      received: js.UndefOr[scala.Nothing],
-      expected: js.UndefOr[scala.Nothing],
-      options: MatcherHintOptions
-    ): String = js.native
-    def matcherHint(matcherName: String, received: js.UndefOr[scala.Nothing], expected: String): String = js.native
-    def matcherHint(
-      matcherName: String,
-      received: js.UndefOr[scala.Nothing],
-      expected: String,
-      options: MatcherHintOptions
-    ): String = js.native
     def matcherHint(matcherName: String, received: String): String = js.native
-    def matcherHint(
-      matcherName: String,
-      received: String,
-      expected: js.UndefOr[scala.Nothing],
-      options: MatcherHintOptions
-    ): String = js.native
     def matcherHint(matcherName: String, received: String, expected: String): String = js.native
     def matcherHint(matcherName: String, received: String, expected: String, options: MatcherHintOptions): String = js.native
+    def matcherHint(matcherName: String, received: String, expected: Unit, options: MatcherHintOptions): String = js.native
+    def matcherHint(matcherName: String, received: Unit, expected: String): String = js.native
+    def matcherHint(matcherName: String, received: Unit, expected: String, options: MatcherHintOptions): String = js.native
+    def matcherHint(matcherName: String, received: Unit, expected: Unit, options: MatcherHintOptions): String = js.native
     
     def pluralize(word: String, count: Double): String = js.native
     
@@ -453,20 +434,19 @@ object anon {
   }
   
   /* Inlined jest.jest.jest.JestMatchersShape<{}, {}> */
-  @js.native
   trait JestMatchersShape extends StObject {
     
     /**
       * Unwraps the reason of a rejected promise so any other matcher can be chained.
       * If the promise is fulfilled the assertion fails.
       */
-    var rejects: AndNot = js.native
+    var rejects: AndNot
     
     /**
       * Use resolves to unwrap the value of a fulfilled promise so any other
       * matcher can be chained. If the promise is rejected the assertion fails.
       */
-    var resolves: AndNot = js.native
+    var resolves: AndNot
   }
   object JestMatchersShape {
     
@@ -487,10 +467,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Message extends StObject {
     
-    var message: String = js.native
+    var message: String
   }
   object Message {
     
@@ -508,10 +487,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Not[T] extends StObject {
     
-    var not: T = js.native
+    var not: T
   }
   object Not {
     
@@ -522,27 +500,26 @@ object anon {
     }
     
     @scala.inline
-    implicit class NotMutableBuilder[Self <: Not[_], T] (val x: Self with Not[T]) extends AnyVal {
+    implicit class NotMutableBuilder[Self <: Not[?], T] (val x: Self & Not[T]) extends AnyVal {
       
       @scala.inline
       def setNot(value: T): Self = StObject.set(x, "not", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Rejects[TPromise /* <: js.Object */] extends StObject {
     
     /**
       * Unwraps the reason of a rejected promise so any other matcher can be chained.
       * If the promise is fulfilled the assertion fails.
       */
-    var rejects: typings.jest.mod.jest.AndNot[TPromise] = js.native
+    var rejects: typings.jest.mod.jest.AndNot[TPromise]
     
     /**
       * Use resolves to unwrap the value of a fulfilled promise so any other
       * matcher can be chained. If the promise is rejected the assertion fails.
       */
-    var resolves: typings.jest.mod.jest.AndNot[TPromise] = js.native
+    var resolves: typings.jest.mod.jest.AndNot[TPromise]
   }
   object Rejects {
     
@@ -553,7 +530,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class RejectsMutableBuilder[Self <: Rejects[_], TPromise /* <: js.Object */] (val x: Self with Rejects[TPromise]) extends AnyVal {
+    implicit class RejectsMutableBuilder[Self <: Rejects[?], TPromise /* <: js.Object */] (val x: Self & Rejects[TPromise]) extends AnyVal {
       
       @scala.inline
       def setRejects(value: typings.jest.mod.jest.AndNot[TPromise]): Self = StObject.set(x, "rejects", value.asInstanceOf[js.Any])
@@ -630,9 +607,9 @@ object anon {
       * Mocks a module with an auto-mocked version when it is being required.
       */
     def doMock(moduleName: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
-    def doMock(moduleName: String, factory: js.UndefOr[scala.Nothing], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
-    def doMock(moduleName: String, factory: js.Function0[_]): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
-    def doMock(moduleName: String, factory: js.Function0[_], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+    def doMock(moduleName: String, factory: js.Function0[js.Any]): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+    def doMock(moduleName: String, factory: js.Function0[js.Any], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+    def doMock(moduleName: String, factory: Unit, options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
     
     /**
       * Indicates that the module system should never return a mocked version
@@ -648,13 +625,13 @@ object anon {
     /**
       * Creates a mock function. Optionally takes a mock implementation.
       */
-    def fn(): Mock_[_, _] = js.native
-    def fn[T, Y /* <: js.Array[_] */](implementation: js.Function1[/* args */ Y, T]): Mock_[T, Y] = js.native
+    def fn(): Mock_[js.Any, js.Any] = js.native
+    def fn[T, Y /* <: js.Array[js.Any] */](implementation: js.Function1[/* args */ Y, T]): Mock_[T, Y] = js.native
     /**
       * Creates a mock function. Optionally takes a mock implementation.
       */
     @JSName("fn")
-    def fn_TY_ArrayWildcard[T, Y /* <: js.Array[_] */](): Mock_[T, Y] = js.native
+    def fn_TY_ArrayAny[T, Y /* <: js.Array[js.Any] */](): Mock_[T, Y] = js.native
     
     /**
       * (renamed to `createMockFromModule` in Jest 26.0.0+)
@@ -693,9 +670,9 @@ object anon {
       * Mocks a module with an auto-mocked version when it is being required.
       */
     def mock(moduleName: String): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
-    def mock(moduleName: String, factory: js.UndefOr[scala.Nothing], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
-    def mock(moduleName: String, factory: js.Function0[_]): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
-    def mock(moduleName: String, factory: js.Function0[_], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+    def mock(moduleName: String, factory: js.Function0[js.Any]): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+    def mock(moduleName: String, factory: js.Function0[js.Any], options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
+    def mock(moduleName: String, factory: Unit, options: MockOptions): /* import warning: importer.ImportType#apply Failed type conversion: typeof jest */ js.Any = js.native
     
     /**
       * Returns the actual module instead of a mock, bypassing all checks on

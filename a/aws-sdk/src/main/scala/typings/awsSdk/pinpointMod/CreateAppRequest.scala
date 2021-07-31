@@ -2,13 +2,11 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateAppRequest extends StObject {
   
-  var CreateApplicationRequest: typings.awsSdk.pinpointMod.CreateApplicationRequest = js.native
+  var CreateApplicationRequest: typings.awsSdk.pinpointMod.CreateApplicationRequest
 }
 object CreateAppRequest {
   

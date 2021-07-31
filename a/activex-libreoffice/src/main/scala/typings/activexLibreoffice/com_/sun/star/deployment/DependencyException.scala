@@ -6,7 +6,6 @@ import typings.activexLibreoffice.com_.sun.star.xml.dom.XElement
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,8 +14,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * This exception is intended to be used with an {@link com.sun.star.task.XInteractionHandler} .
   * @since OOo 2.0.4
   */
-@js.native
-trait DependencyException extends Exception {
+trait DependencyException
+  extends StObject
+     with Exception {
   
   /**
     * a sequence of dependencies represented by XML elements.
@@ -28,7 +28,7 @@ trait DependencyException extends Exception {
     *
     * The sequence must not be empty, and none of the elements may be `NULL` .
     */
-  var UnsatisfiedDependencies: SafeArray[XElement] = js.native
+  var UnsatisfiedDependencies: SafeArray[XElement]
 }
 object DependencyException {
   

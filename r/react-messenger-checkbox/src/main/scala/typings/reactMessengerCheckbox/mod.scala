@@ -10,7 +10,6 @@ import typings.reactMessengerCheckbox.reactMessengerCheckboxStrings.standard
 import typings.reactMessengerCheckbox.reactMessengerCheckboxStrings.xlarge
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -28,38 +27,37 @@ object mod {
     */
   type MessengerCheckbox = Component[ReactMessengerProps, js.Object, js.Any]
   
-  @js.native
   trait ReactMessengerProps extends StObject {
     
-    var allowLogin: js.UndefOr[Boolean] = js.native
+    var allowLogin: js.UndefOr[Boolean] = js.undefined
     
-    var appId: String = js.native
+    var appId: String
     
-    var autoLogAppEvents: js.UndefOr[Boolean] = js.native
+    var autoLogAppEvents: js.UndefOr[Boolean] = js.undefined
     
-    var centerAlign: js.UndefOr[Boolean] = js.native
+    var centerAlign: js.UndefOr[Boolean] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var onEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.native
+    var onEvent: js.UndefOr[js.Function1[/* event */ js.Any, Unit]] = js.undefined
     
-    var origin: String = js.native
+    var origin: String
     
-    var pageId: String = js.native
+    var pageId: String
     
-    var prechecked: js.UndefOr[Boolean] = js.native
+    var prechecked: js.UndefOr[Boolean] = js.undefined
     
-    var size: js.UndefOr[small | medium | large | standard | xlarge] = js.native
+    var size: js.UndefOr[small | medium | large | standard | xlarge] = js.undefined
     
-    var skin: js.UndefOr[light | dark] = js.native
+    var skin: js.UndefOr[light | dark] = js.undefined
     
-    var userRef: String = js.native
+    var userRef: String
     
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
     
-    var xfbml: js.UndefOr[Boolean] = js.native
+    var xfbml: js.UndefOr[Boolean] = js.undefined
   }
   object ReactMessengerProps {
     

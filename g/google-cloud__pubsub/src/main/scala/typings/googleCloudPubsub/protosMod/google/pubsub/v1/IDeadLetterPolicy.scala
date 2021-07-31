@@ -2,18 +2,16 @@ package typings.googleCloudPubsub.protosMod.google.pubsub.v1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Properties of a DeadLetterPolicy. */
-@js.native
 trait IDeadLetterPolicy extends StObject {
   
   /** DeadLetterPolicy deadLetterTopic */
-  var deadLetterTopic: js.UndefOr[String | Null] = js.native
+  var deadLetterTopic: js.UndefOr[String | Null] = js.undefined
   
   /** DeadLetterPolicy maxDeliveryAttempts */
-  var maxDeliveryAttempts: js.UndefOr[Double | Null] = js.native
+  var maxDeliveryAttempts: js.UndefOr[Double | Null] = js.undefined
 }
 object IDeadLetterPolicy {
   

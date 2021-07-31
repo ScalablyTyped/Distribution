@@ -3,15 +3,13 @@ package typings.devtoolsProtocol.anon
 import typings.devtoolsProtocol.mod.Protocol.Page.DeleteCookieRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `142` extends StObject {
   
-  var paramsType: js.Array[DeleteCookieRequest] = js.native
+  var paramsType: js.Array[DeleteCookieRequest]
   
-  var returnType: Unit = js.native
+  var returnType: Unit
 }
 object `142` {
   

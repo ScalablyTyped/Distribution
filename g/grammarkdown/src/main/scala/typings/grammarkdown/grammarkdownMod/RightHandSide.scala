@@ -2,33 +2,39 @@ package typings.grammarkdown.grammarkdownMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("grammarkdown/dist/grammarkdown", "RightHandSide")
 @js.native
 class RightHandSide ()
-  extends Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.RightHandSide] {
+  extends StObject
+     with Node2[typings.grammarkdown.grammarkdownMod.SyntaxKind.RightHandSide] {
   def this(constraints: Constraints) = this()
-  def this(constraints: js.UndefOr[scala.Nothing], head: SymbolSpan) = this()
+  def this(constraints: Unit, head: SymbolSpan) = this()
   def this(constraints: Constraints, head: SymbolSpan) = this()
-  def this(constraints: js.UndefOr[scala.Nothing], head: js.UndefOr[scala.Nothing], reference: LinkReference) = this()
-  def this(constraints: js.UndefOr[scala.Nothing], head: SymbolSpan, reference: LinkReference) = this()
-  def this(constraints: Constraints, head: js.UndefOr[scala.Nothing], reference: LinkReference) = this()
+  def this(constraints: Unit, head: Unit, reference: LinkReference) = this()
+  def this(constraints: Unit, head: SymbolSpan, reference: LinkReference) = this()
+  def this(constraints: Constraints, head: Unit, reference: LinkReference) = this()
   def this(constraints: Constraints, head: SymbolSpan, reference: LinkReference) = this()
   
   val constraints: js.UndefOr[Constraints] = js.native
   
+  /* CompleteClass */
+  var end: Double = js.native
+  
   val head: js.UndefOr[SymbolSpan] = js.native
+  
+  /* CompleteClass */
+  var pos: Double = js.native
   
   val reference: js.UndefOr[LinkReference] = js.native
   
   def update(): RightHandSide = js.native
-  def update(constraints: js.UndefOr[scala.Nothing], head: js.UndefOr[scala.Nothing], reference: LinkReference): RightHandSide = js.native
-  def update(constraints: js.UndefOr[scala.Nothing], head: SymbolSpan): RightHandSide = js.native
-  def update(constraints: js.UndefOr[scala.Nothing], head: SymbolSpan, reference: LinkReference): RightHandSide = js.native
+  def update(constraints: Unit, head: Unit, reference: LinkReference): RightHandSide = js.native
+  def update(constraints: Unit, head: SymbolSpan): RightHandSide = js.native
+  def update(constraints: Unit, head: SymbolSpan, reference: LinkReference): RightHandSide = js.native
   def update(constraints: Constraints): RightHandSide = js.native
-  def update(constraints: Constraints, head: js.UndefOr[scala.Nothing], reference: LinkReference): RightHandSide = js.native
+  def update(constraints: Constraints, head: Unit, reference: LinkReference): RightHandSide = js.native
   def update(constraints: Constraints, head: SymbolSpan): RightHandSide = js.native
   def update(constraints: Constraints, head: SymbolSpan, reference: LinkReference): RightHandSide = js.native
 }

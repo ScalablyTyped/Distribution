@@ -2,26 +2,24 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WavSettings extends StObject {
   
   /**
     * Bits per sample.
     */
-  var BitDepth: js.UndefOr[double] = js.native
+  var BitDepth: js.UndefOr[double] = js.undefined
   
   /**
     * The audio coding mode for the WAV audio. The mode determines the number of channels in the audio.
     */
-  var CodingMode: js.UndefOr[WavCodingMode] = js.native
+  var CodingMode: js.UndefOr[WavCodingMode] = js.undefined
   
   /**
     * Sample rate in Hz.
     */
-  var SampleRate: js.UndefOr[double] = js.native
+  var SampleRate: js.UndefOr[double] = js.undefined
 }
 object WavSettings {
   

@@ -2,34 +2,32 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Container for the dynamic properties of an attribute expression.
   */
-@js.native
 trait IContinuousDataOptions extends StObject {
   
   /**
     * End value.
     */
-  var qEnd: Double = js.native
+  var qEnd: Double
   
   /**
     * Maximum number of ticks.
     */
-  var qMaxNbrTicks: Double = js.native
+  var qMaxNbrTicks: Double
   
   /**
     * Number of bins for binning.
     */
-  var qNbrPoints: Double = js.native
+  var qNbrPoints: Double
   
   /**
     * Start value.
     */
-  var qStart: Double = js.native
+  var qStart: Double
 }
 object IContinuousDataOptions {
   

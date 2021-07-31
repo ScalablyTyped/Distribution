@@ -3,7 +3,6 @@ package typings.inquirer.mod
 import typings.inquirer.anon.IsFinal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,8 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @template T
   * The type of the answers.
   */
-@js.native
-trait InputQuestionOptions[T /* <: Answers */] extends Question[T] {
+trait InputQuestionOptions[T /* <: Answers */]
+  extends StObject
+     with Question[T] {
   
   /**
     * Transforms the value to display to the user.
@@ -32,7 +32,7 @@ trait InputQuestionOptions[T /* <: Answers */] extends Question[T] {
     */
   var transformer: js.UndefOr[
     js.Function3[/* input */ js.Any, /* answers */ T, /* flags */ IsFinal, String | js.Promise[String]]
-  ] = js.native
+  ] = js.undefined
 }
 object InputQuestionOptions {
   
@@ -43,7 +43,7 @@ object InputQuestionOptions {
   }
   
   @scala.inline
-  implicit class InputQuestionOptionsMutableBuilder[Self <: InputQuestionOptions[_], T /* <: Answers */] (val x: Self with InputQuestionOptions[T]) extends AnyVal {
+  implicit class InputQuestionOptionsMutableBuilder[Self <: InputQuestionOptions[?], T /* <: Answers */] (val x: Self & InputQuestionOptions[T]) extends AnyVal {
     
     @scala.inline
     def setTransformer(value: (/* input */ js.Any, /* answers */ T, /* flags */ IsFinal) => String | js.Promise[String]): Self = StObject.set(x, "transformer", js.Any.fromFunction3(value))

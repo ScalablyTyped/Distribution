@@ -2,29 +2,29 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientReportDesigner.CustomizeParameterLookUpSource and ASPxClientWebDocumentViewer.CustomizeParameterLookUpSource events.
   */
-@js.native
-trait ASPxClientCustomizeParameterLookUpSourceEventArgs extends ASPxClientEventArgs {
+trait ASPxClientCustomizeParameterLookUpSourceEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Specifies the data source that provides look-up values for the parameter editor.
     */
-  var dataSource: js.Any = js.native
+  var dataSource: js.Any
   
   /**
     * Provides access to the collection of look-up parameter values.
     */
-  var items: js.Array[ASPxDesignerElementEditorItem] = js.native
+  var items: js.Array[ASPxDesignerElementEditorItem]
   
   /**
     * Provides access to an object that stores information about a parameter.
     */
-  var parameter: ASPxDesignerElementParameterDescriptor = js.native
+  var parameter: ASPxDesignerElementParameterDescriptor
 }
 object ASPxClientCustomizeParameterLookUpSourceEventArgs {
   

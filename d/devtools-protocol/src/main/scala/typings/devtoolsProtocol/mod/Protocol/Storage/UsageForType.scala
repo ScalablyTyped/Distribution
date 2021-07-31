@@ -2,21 +2,19 @@ package typings.devtoolsProtocol.mod.Protocol.Storage
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UsageForType extends StObject {
   
   /**
     * Name of storage type.
     */
-  var storageType: StorageType = js.native
+  var storageType: StorageType
   
   /**
     * Storage usage (bytes).
     */
-  var usage: Double = js.native
+  var usage: Double
 }
 object UsageForType {
   

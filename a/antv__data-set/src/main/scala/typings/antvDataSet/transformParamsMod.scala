@@ -3,128 +3,126 @@ package typings.antvDataSet
 import typings.antvDataSet.treemapMod.Options
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object transformParamsMod {
   
-  @js.native
   trait TransformsParams extends StObject {
     
-    var adjacency: Options = js.native
+    var adjacency: Options
     
-    var aggregate: typings.antvDataSet.aggregateMod.Options = js.native
+    var aggregate: typings.antvDataSet.aggregateMod.Options
     
-    var arc: typings.antvDataSet.arcMod.Options = js.native
+    var arc: typings.antvDataSet.arcMod.Options
     
     @JSName("bin.dot")
-    var binDotdot: typings.antvDataSet.histogramMod.Options = js.native
+    var binDotdot: typings.antvDataSet.histogramMod.Options
     
     @JSName("bin.hex")
-    var binDothex: typings.antvDataSet.hexagonMod.Options = js.native
+    var binDothex: typings.antvDataSet.hexagonMod.Options
     
     @JSName("bin.hexagon")
-    var binDothexagon: typings.antvDataSet.hexagonMod.Options = js.native
+    var binDothexagon: typings.antvDataSet.hexagonMod.Options
     
     @JSName("bin.histogram")
-    var binDothistogram: typings.antvDataSet.histogramMod.Options = js.native
+    var binDothistogram: typings.antvDataSet.histogramMod.Options
     
     @JSName("bin.quantile")
-    var binDotquantile: typings.antvDataSet.quantileMod.Options = js.native
+    var binDotquantile: typings.antvDataSet.quantileMod.Options
     
     @JSName("bin.rect")
-    var binDotrect: typings.antvDataSet.rectangleMod.Options = js.native
+    var binDotrect: typings.antvDataSet.rectangleMod.Options
     
     @JSName("bin.rectangle")
-    var binDotrectangle: typings.antvDataSet.rectangleMod.Options = js.native
+    var binDotrectangle: typings.antvDataSet.rectangleMod.Options
     
     @JSName("diagram.arc")
-    var diagramDotarc: typings.antvDataSet.arcMod.Options = js.native
+    var diagramDotarc: typings.antvDataSet.arcMod.Options
     
     @JSName("diagram.sankey")
-    var diagramDotsankey: typings.antvDataSet.sankeyMod.Options = js.native
+    var diagramDotsankey: typings.antvDataSet.sankeyMod.Options
     
     @JSName("diagram.voronoi")
-    var diagramDotvoronoi: typings.antvDataSet.voronoiMod.Options = js.native
+    var diagramDotvoronoi: typings.antvDataSet.voronoiMod.Options
     
-    var `fill-rows`: typings.antvDataSet.fillRowsMod.Options = js.native
+    var `fill-rows`: typings.antvDataSet.fillRowsMod.Options
     
-    var fillRows: typings.antvDataSet.fillRowsMod.Options = js.native
+    var fillRows: typings.antvDataSet.fillRowsMod.Options
     
-    var filter: typings.antvDataSet.filterMod.Options = js.native
+    var filter: typings.antvDataSet.filterMod.Options
     
-    var fold: typings.antvDataSet.foldMod.Options = js.native
+    var fold: typings.antvDataSet.foldMod.Options
     
     @JSName("geo.centroid")
-    var geoDotcentroid: typings.antvDataSet.centroidMod.Options = js.native
+    var geoDotcentroid: typings.antvDataSet.centroidMod.Options
     
     @JSName("geo.projection")
-    var geoDotprojection: typings.antvDataSet.projectionMod.Options = js.native
+    var geoDotprojection: typings.antvDataSet.projectionMod.Options
     
     @JSName("geo.region")
-    var geoDotregion: typings.antvDataSet.regionMod.Options = js.native
+    var geoDotregion: typings.antvDataSet.regionMod.Options
     
-    var group: typings.antvDataSet.transformPartitionMod.Options = js.native
+    var group: typings.antvDataSet.transformPartitionMod.Options
     
-    var groups: typings.antvDataSet.transformPartitionMod.Options = js.native
+    var groups: typings.antvDataSet.transformPartitionMod.Options
     
-    var hexbin: typings.antvDataSet.hexagonMod.Options = js.native
+    var hexbin: typings.antvDataSet.hexagonMod.Options
     
     @JSName("hierarchy.partition")
-    var hierarchyDotpartition: Options = js.native
+    var hierarchyDotpartition: Options
     
     @JSName("hierarchy.treemap")
-    var hierarchyDottreemap: Options = js.native
+    var hierarchyDottreemap: Options
     
-    var impute: typings.antvDataSet.imputeMod.Options = js.native
+    var impute: typings.antvDataSet.imputeMod.Options
     
     @JSName("kernel-smooth.density")
-    var `kernel-smoothDotdensity`: typings.antvDataSet.densityMod.Options = js.native
+    var `kernel-smoothDotdensity`: typings.antvDataSet.densityMod.Options
     
     @JSName("kernel-smooth.regression")
-    var `kernel-smoothDotregression`: typings.antvDataSet.regressionMod.Options = js.native
+    var `kernel-smoothDotregression`: typings.antvDataSet.regressionMod.Options
     
     @JSName("kernel.density")
-    var kernelDotdensity: typings.antvDataSet.densityMod.Options = js.native
+    var kernelDotdensity: typings.antvDataSet.densityMod.Options
     
     @JSName("kernel.regression")
-    var kernelDotregression: typings.antvDataSet.regressionMod.Options = js.native
+    var kernelDotregression: typings.antvDataSet.regressionMod.Options
     
-    var map: typings.antvDataSet.mapMod.Options = js.native
+    var map: typings.antvDataSet.mapMod.Options
     
-    var partition: typings.antvDataSet.transformPartitionMod.Options = js.native
+    var partition: typings.antvDataSet.transformPartitionMod.Options
     
-    var percent: typings.antvDataSet.percentMod.Options = js.native
+    var percent: typings.antvDataSet.percentMod.Options
     
-    var pick: typings.antvDataSet.pickMod.Options = js.native
+    var pick: typings.antvDataSet.pickMod.Options
     
-    var proportion: typings.antvDataSet.proportionMod.Options = js.native
+    var proportion: typings.antvDataSet.proportionMod.Options
     
-    var regression: typings.antvDataSet.transformRegressionMod.Options = js.native
+    var regression: typings.antvDataSet.transformRegressionMod.Options
     
-    var rename: typings.antvDataSet.renameMod.Options = js.native
+    var rename: typings.antvDataSet.renameMod.Options
     
-    var `rename-fields`: typings.antvDataSet.renameMod.Options = js.native
+    var `rename-fields`: typings.antvDataSet.renameMod.Options
     
-    var sankey: typings.antvDataSet.sankeyMod.Options = js.native
+    var sankey: typings.antvDataSet.sankeyMod.Options
     
-    var sort: typings.antvDataSet.sortMod.Options = js.native
+    var sort: typings.antvDataSet.sortMod.Options
     
-    var `sort-by`: typings.antvDataSet.sortByMod.Options = js.native
+    var `sort-by`: typings.antvDataSet.sortByMod.Options
     
-    var sortBy: typings.antvDataSet.sortByMod.Options = js.native
+    var sortBy: typings.antvDataSet.sortByMod.Options
     
-    var subset: typings.antvDataSet.subsetMod.Options = js.native
+    var subset: typings.antvDataSet.subsetMod.Options
     
-    var summary: typings.antvDataSet.aggregateMod.Options = js.native
+    var summary: typings.antvDataSet.aggregateMod.Options
     
-    var `tag-cloud`: typings.antvDataSet.transformTagCloudMod.Options = js.native
+    var `tag-cloud`: typings.antvDataSet.transformTagCloudMod.Options
     
-    var treemap: Options = js.native
+    var treemap: Options
     
-    var voronoi: typings.antvDataSet.voronoiMod.Options = js.native
+    var voronoi: typings.antvDataSet.voronoiMod.Options
     
-    var `word-cloud`: typings.antvDataSet.transformTagCloudMod.Options = js.native
+    var `word-cloud`: typings.antvDataSet.transformTagCloudMod.Options
   }
   object TransformsParams {
     

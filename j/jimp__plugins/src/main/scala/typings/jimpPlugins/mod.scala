@@ -24,14 +24,16 @@ import typings.jimpPluginThreshold.mod.Threshold
 import typings.std.ReturnType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@jimp/plugins", JSImport.Default)
+  @JSImport("@jimp/plugins", JSImport.Namespace)
   @js.native
-  def default(): Plugins = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(): Plugins = ^.asInstanceOf[js.Dynamic].applyDynamic("default")().asInstanceOf[Plugins]
   
   type BlitRet = ReturnType[js.Function0[Blit]]
   

@@ -2,16 +2,14 @@ package typings.reactNavigationRouters.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `2`[Params /* <: js.UndefOr[js.Object] */] extends StObject {
   
   /**
     * Params for this route
     */
-  var params: js.UndefOr[Params] = js.native
+  var params: js.UndefOr[Params] = js.undefined
 }
 object `2` {
   
@@ -22,7 +20,7 @@ object `2` {
   }
   
   @scala.inline
-  implicit class `2MutableBuilder`[Self <: `2`[_], Params /* <: js.UndefOr[js.Object] */] (val x: Self with `2`[Params]) extends AnyVal {
+  implicit class `2MutableBuilder`[Self <: `2`[?], Params /* <: js.UndefOr[js.Object] */] (val x: Self & `2`[Params]) extends AnyVal {
     
     @scala.inline
     def setParams(value: Params): Self = StObject.set(x, "params", value.asInstanceOf[js.Any])

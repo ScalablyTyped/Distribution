@@ -10,33 +10,31 @@ import typings.serverlessTencentScf.anon.Stage
 import typings.serverlessTencentScf.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object triggerMod {
   
-  @js.native
   trait APIGatewayEvent extends StObject {
     
-    var body: js.UndefOr[String | Null] = js.native
+    var body: js.UndefOr[String | Null] = js.undefined
     
-    var headerParameters: StringDictionary[String] | Null = js.native
+    var headerParameters: StringDictionary[String] | Null
     
-    var headers: StringDictionary[String] = js.native
+    var headers: StringDictionary[String]
     
-    var httpMethod: String = js.native
+    var httpMethod: String
     
-    var path: String = js.native
+    var path: String
     
-    var pathParameters: StringDictionary[String] | Null = js.native
+    var pathParameters: StringDictionary[String] | Null
     
-    var queryString: StringDictionary[String] | Null = js.native
+    var queryString: StringDictionary[String] | Null
     
-    var queryStringParameters: StringDictionary[String] | Null = js.native
+    var queryStringParameters: StringDictionary[String] | Null
     
-    var requestContext: APIGatewayRequestContext = js.native
+    var requestContext: APIGatewayRequestContext
     
-    var stageVariables: Stage = js.native
+    var stageVariables: Stage
   }
   object APIGatewayEvent {
     
@@ -48,7 +46,7 @@ object triggerMod {
       requestContext: APIGatewayRequestContext,
       stageVariables: Stage
     ): APIGatewayEvent = {
-      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], stageVariables = stageVariables.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(headers = headers.asInstanceOf[js.Any], httpMethod = httpMethod.asInstanceOf[js.Any], path = path.asInstanceOf[js.Any], requestContext = requestContext.asInstanceOf[js.Any], stageVariables = stageVariables.asInstanceOf[js.Any], headerParameters = null, pathParameters = null, queryString = null, queryStringParameters = null)
       __obj.asInstanceOf[APIGatewayEvent]
     }
     
@@ -107,22 +105,21 @@ object triggerMod {
   
   type APIGatewayHandler[T] = Handler[APIGatewayEvent, T]
   
-  @js.native
   trait APIGatewayRequestContext extends StObject {
     
-    var httpMethod: String = js.native
+    var httpMethod: String
     
-    var identity: SecretId = js.native
+    var identity: SecretId
     
-    var path: String = js.native
+    var path: String
     
-    var requestId: js.UndefOr[String] = js.native
+    var requestId: js.UndefOr[String] = js.undefined
     
-    var serviceId: String = js.native
+    var serviceId: String
     
-    var sourceIp: String = js.native
+    var sourceIp: String
     
-    var stage: String = js.native
+    var stage: String
   }
   object APIGatewayRequestContext {
     
@@ -168,10 +165,9 @@ object triggerMod {
     }
   }
   
-  @js.native
   trait CKafkaEvent extends StObject {
     
-    var Records: js.Array[CKafkaEventRecord] = js.native
+    var Records: js.Array[CKafkaEventRecord]
   }
   object CKafkaEvent {
     
@@ -192,10 +188,9 @@ object triggerMod {
     }
   }
   
-  @js.native
   trait CKafkaEventRecord extends StObject {
     
-    var Ckafka: MsgKey = js.native
+    var Ckafka: MsgKey
   }
   object CKafkaEventRecord {
     
@@ -215,10 +210,9 @@ object triggerMod {
   
   type CKafkaHandler[T] = Handler[CKafkaEvent, T]
   
-  @js.native
   trait CMQTopicEvent extends StObject {
     
-    var Records: js.Array[CMQTopicEventRecord] = js.native
+    var Records: js.Array[CMQTopicEventRecord]
   }
   object CMQTopicEvent {
     
@@ -239,10 +233,9 @@ object triggerMod {
     }
   }
   
-  @js.native
   trait CMQTopicEventRecord extends StObject {
     
-    var CMQ: MsgBody = js.native
+    var CMQ: MsgBody
   }
   object CMQTopicEventRecord {
     
@@ -262,10 +255,9 @@ object triggerMod {
   
   type CMQTopicHandler[T] = Handler[CMQTopicEvent, T]
   
-  @js.native
   trait COSEvent extends StObject {
     
-    var Records: js.Array[COSEventRecord] = js.native
+    var Records: js.Array[COSEventRecord]
   }
   object COSEvent {
     
@@ -286,12 +278,11 @@ object triggerMod {
     }
   }
   
-  @js.native
   trait COSEventRecord extends StObject {
     
-    var cos: CosBucket = js.native
+    var cos: CosBucket
     
-    var event: EventName = js.native
+    var event: EventName
   }
   object COSEventRecord {
     
@@ -314,16 +305,15 @@ object triggerMod {
   
   type COSHandler[T] = Handler[COSEvent, T]
   
-  @js.native
   trait TimerEvent extends StObject {
     
-    var Message: String = js.native
+    var Message: String
     
-    var Time: String = js.native
+    var Time: String
     
-    var TriggerName: String = js.native
+    var TriggerName: String
     
-    var Type: String = js.native
+    var Type: String
   }
   object TimerEvent {
     

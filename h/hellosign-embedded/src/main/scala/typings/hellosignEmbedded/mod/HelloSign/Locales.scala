@@ -16,60 +16,43 @@ import typings.hellosignEmbedded.hellosignEmbeddedStrings.sv_SE
 import typings.hellosignEmbedded.hellosignEmbeddedStrings.zh_CN
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Locales extends StObject {
   
-  var CS_CZ: cs_CZ = js.native
+  var CS_CZ: cs_CZ
   
-  var DA_DK: da_DK = js.native
+  var DA_DK: da_DK
   
-  var DE_DE: de_DE = js.native
+  var DE_DE: de_DE
   
-  var EN_US: en_US = js.native
+  var EN_US: en_US
   
-  var ES_ES: es_ES = js.native
+  var ES_ES: es_ES
   
-  var ES_MX: es_MX = js.native
+  var ES_MX: es_MX
   
-  var FR_FR: fr_FR = js.native
+  var FR_FR: fr_FR
   
-  var IT_IT: it_IT = js.native
+  var IT_IT: it_IT
   
-  var JA_JP: ja_JP = js.native
+  var JA_JP: ja_JP
   
-  var NL_NL: nl_NL = js.native
+  var NL_NL: nl_NL
   
-  var PL_PL: pl_PL = js.native
+  var PL_PL: pl_PL
   
-  var PT_BR: pt_BR = js.native
+  var PT_BR: pt_BR
   
-  var SV_SE: sv_SE = js.native
+  var SV_SE: sv_SE
   
-  var ZH_CN: zh_CN = js.native
+  var ZH_CN: zh_CN
 }
 object Locales {
   
   @scala.inline
-  def apply(
-    CS_CZ: cs_CZ,
-    DA_DK: da_DK,
-    DE_DE: de_DE,
-    EN_US: en_US,
-    ES_ES: es_ES,
-    ES_MX: es_MX,
-    FR_FR: fr_FR,
-    IT_IT: it_IT,
-    JA_JP: ja_JP,
-    NL_NL: nl_NL,
-    PL_PL: pl_PL,
-    PT_BR: pt_BR,
-    SV_SE: sv_SE,
-    ZH_CN: zh_CN
-  ): Locales = {
-    val __obj = js.Dynamic.literal(CS_CZ = CS_CZ.asInstanceOf[js.Any], DA_DK = DA_DK.asInstanceOf[js.Any], DE_DE = DE_DE.asInstanceOf[js.Any], EN_US = EN_US.asInstanceOf[js.Any], ES_ES = ES_ES.asInstanceOf[js.Any], ES_MX = ES_MX.asInstanceOf[js.Any], FR_FR = FR_FR.asInstanceOf[js.Any], IT_IT = IT_IT.asInstanceOf[js.Any], JA_JP = JA_JP.asInstanceOf[js.Any], NL_NL = NL_NL.asInstanceOf[js.Any], PL_PL = PL_PL.asInstanceOf[js.Any], PT_BR = PT_BR.asInstanceOf[js.Any], SV_SE = SV_SE.asInstanceOf[js.Any], ZH_CN = ZH_CN.asInstanceOf[js.Any])
+  def apply(): Locales = {
+    val __obj = js.Dynamic.literal(CS_CZ = "cs_CZ", DA_DK = "da_DK", DE_DE = "de_DE", EN_US = "en_US", ES_ES = "es_ES", ES_MX = "es_MX", FR_FR = "fr_FR", IT_IT = "it_IT", JA_JP = "ja_JP", NL_NL = "nl_NL", PL_PL = "pl_PL", PT_BR = "pt_BR", SV_SE = "sv_SE", ZH_CN = "zh_CN")
     __obj.asInstanceOf[Locales]
   }
   

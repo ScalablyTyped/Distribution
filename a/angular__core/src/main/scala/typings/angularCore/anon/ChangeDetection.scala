@@ -6,41 +6,47 @@ import typings.angularCore.mod.ChangeDetectionStrategy
 import typings.angularCore.mod.ComponentDefFeature
 import typings.angularCore.mod.ComponentTemplate
 import typings.angularCore.mod.ContentQueriesFunction
+import typings.angularCore.mod.CssSelector
+import typings.angularCore.mod.DirectiveTypeList
 import typings.angularCore.mod.DirectiveTypesOrFactory
 import typings.angularCore.mod.HostBindingsFunction
+import typings.angularCore.mod.PipeType
+import typings.angularCore.mod.PipeTypeList
 import typings.angularCore.mod.PipeTypesOrFactory
 import typings.angularCore.mod.SchemaMetadata
 import typings.angularCore.mod.TAttributes
+import typings.angularCore.mod.TConstants
 import typings.angularCore.mod.TConstantsOrFactory
 import typings.angularCore.mod.Type
 import typings.angularCore.mod.ViewEncapsulation
 import typings.angularCore.mod.ViewQueriesFunction
+import typings.angularCore.mod.ɵAttributeMarker
+import typings.angularCore.mod.ɵComponentType
 import typings.angularCore.mod.ɵCssSelectorList
+import typings.angularCore.mod.ɵDirectiveType
 import typings.angularCore.mod.ɵRenderFlags
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeDetection[T] extends StObject {
   
   /**
     * The strategy that the default change detector uses to detect changes.
     * When set, takes effect the next time change detection is triggered.
     */
-  var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.native
+  var changeDetection: js.UndefOr[ChangeDetectionStrategy] = js.undefined
   
   /**
     * Constants for the nodes in the component's view.
     * Includes attribute arrays, local definition arrays etc.
     */
-  var consts: js.UndefOr[TConstantsOrFactory] = js.native
+  var consts: js.UndefOr[TConstantsOrFactory] = js.undefined
   
   /**
     * Function to create instances of content queries associated with a given directive.
     */
-  var contentQueries: js.UndefOr[ContentQueriesFunction[T]] = js.native
+  var contentQueries: js.UndefOr[ContentQueriesFunction[T]] = js.undefined
   
   /**
     * Defines arbitrary developer-defined data to be stored on a renderer instance.
@@ -48,7 +54,7 @@ trait ChangeDetection[T] extends StObject {
     *
     * see: animation
     */
-  var data: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var data: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * The number of nodes, local refs, and pipes in this component template.
@@ -56,7 +62,7 @@ trait ChangeDetection[T] extends StObject {
     * Used to calculate the length of this component's LView array, so we
     * can pre-fill the array and set the binding start index.
     */
-  var decls: Double = js.native
+  var decls: Double
   
   /**
     * Registry of directives and components that may be found in this component's view.
@@ -64,26 +70,26 @@ trait ChangeDetection[T] extends StObject {
     * The property is either an array of `DirectiveDef`s or a function which returns the array of
     * `DirectiveDef`s. The function is necessary to be able to support forward declarations.
     */
-  var directives: js.UndefOr[DirectiveTypesOrFactory | Null] = js.native
+  var directives: js.UndefOr[DirectiveTypesOrFactory | Null] = js.undefined
   
   /**
     * Defines template and style encapsulation options available for Component's {@link Component}.
     */
-  var encapsulation: js.UndefOr[ViewEncapsulation] = js.native
+  var encapsulation: js.UndefOr[ViewEncapsulation] = js.undefined
   
   /**
     * Defines the name that can be used in the template to assign this directive to a variable.
     *
     * See: {@link Directive.exportAs}
     */
-  var exportAs: js.UndefOr[js.Array[String]] = js.native
+  var exportAs: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A list of optional features to apply.
     *
     * See: {@link NgOnChangesFeature}, {@link ProvidersFeature}
     */
-  var features: js.UndefOr[js.Array[ComponentDefFeature]] = js.native
+  var features: js.UndefOr[js.Array[ComponentDefFeature]] = js.undefined
   
   /**
     * Assign static attribute values to a host element.
@@ -115,12 +121,12 @@ trait ChangeDetection[T] extends StObject {
     * the entries. The marker values themselves are set via entries found in the
     * [AttributeMarker] enum.
     */
-  var hostAttrs: js.UndefOr[TAttributes] = js.native
+  var hostAttrs: js.UndefOr[TAttributes] = js.undefined
   
   /**
     * Function executed by the parent template to allow child directive to apply host bindings.
     */
-  var hostBindings: js.UndefOr[HostBindingsFunction[T]] = js.native
+  var hostBindings: js.UndefOr[HostBindingsFunction[T]] = js.undefined
   
   /**
     * The number of bindings in this directive `hostBindings` (including pure fn bindings).
@@ -128,7 +134,7 @@ trait ChangeDetection[T] extends StObject {
     * Used to calculate the length of the component's LView array, so we
     * can pre-fill the array and set the host binding start index.
     */
-  var hostVars: js.UndefOr[Double] = js.native
+  var hostVars: js.UndefOr[Double] = js.undefined
   
   /**
     * A map of input names.
@@ -176,13 +182,13 @@ trait ChangeDetection[T] extends StObject {
   var inputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string | [string, string]}
-    */ typings.angularCore.angularCoreStrings.ChangeDetection with TopLevel[js.Any]
-  ] = js.native
+    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * An array of `ngContent[selector]` values that were found in the template.
     */
-  var ngContentSelectors: js.UndefOr[js.Array[String]] = js.native
+  var ngContentSelectors: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A map of output names.
@@ -197,8 +203,8 @@ trait ChangeDetection[T] extends StObject {
   var outputs: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]:? string}
-    */ typings.angularCore.angularCoreStrings.ChangeDetection with TopLevel[js.Any]
-  ] = js.native
+    */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * Registry of pipes that may be found in this component's view.
@@ -206,20 +212,20 @@ trait ChangeDetection[T] extends StObject {
     * The property is either an array of `PipeDefs`s or a function which returns the array of
     * `PipeDefs`s. The function is necessary to be able to support forward declarations.
     */
-  var pipes: js.UndefOr[PipeTypesOrFactory | Null] = js.native
+  var pipes: js.UndefOr[PipeTypesOrFactory | Null] = js.undefined
   
   /**
     * The set of schemas that declare elements to be allowed in the component's template.
     */
-  var schemas: js.UndefOr[js.Array[SchemaMetadata] | Null] = js.native
+  var schemas: js.UndefOr[js.Array[SchemaMetadata] | Null] = js.undefined
   
   /** The selectors that will be used to match nodes to this component. */
-  var selectors: js.UndefOr[ɵCssSelectorList] = js.native
+  var selectors: js.UndefOr[ɵCssSelectorList] = js.undefined
   
   /**
     * A set of styles that the component needs to be present for component to render correctly.
     */
-  var styles: js.UndefOr[js.Array[String]] = js.native
+  var styles: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Template function use for rendering DOM.
@@ -250,7 +256,7 @@ trait ChangeDetection[T] extends StObject {
     * - `elementStyle`
     *
     */
-  def template[U /* <: T */](rf: ɵRenderFlags, ctx: T | U): Unit = js.native
+  def template[U /* <: T */](rf: ɵRenderFlags, ctx: T | U): Unit
   /**
     * Template function use for rendering DOM.
     *
@@ -281,12 +287,12 @@ trait ChangeDetection[T] extends StObject {
     *
     */
   @JSName("template")
-  var template_Original: ComponentTemplate[T] = js.native
+  var template_Original: ComponentTemplate[T]
   
   /**
     * Directive type, needed to configure the injector.
     */
-  var `type`: Type[T] = js.native
+  var `type`: Type[T]
   
   /**
     * The number of bindings in this component template (including pure fn bindings).
@@ -294,7 +300,7 @@ trait ChangeDetection[T] extends StObject {
     * Used to calculate the length of this component's LView array, so we
     * can pre-fill the array and set the host binding start index.
     */
-  var vars: Double = js.native
+  var vars: Double
   
   /**
     * Additional set of instructions specific to view query processing. This could be seen as a
@@ -304,5 +310,203 @@ trait ChangeDetection[T] extends StObject {
     * execution is different as compared to all other instructions (after change detection hooks but
     * before view hooks).
     */
-  var viewQuery: js.UndefOr[ViewQueriesFunction[T] | Null] = js.native
+  var viewQuery: js.UndefOr[ViewQueriesFunction[T] | Null] = js.undefined
+}
+object ChangeDetection {
+  
+  @scala.inline
+  def apply[T](decls: Double, template: (/* rf */ ɵRenderFlags, T) => Unit, `type`: Type[T], vars: Double): ChangeDetection[T] = {
+    val __obj = js.Dynamic.literal(decls = decls.asInstanceOf[js.Any], template = js.Any.fromFunction2(template), vars = vars.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.asInstanceOf[ChangeDetection[T]]
+  }
+  
+  @scala.inline
+  implicit class ChangeDetectionMutableBuilder[Self <: ChangeDetection[?], T] (val x: Self & ChangeDetection[T]) extends AnyVal {
+    
+    @scala.inline
+    def setChangeDetection(value: ChangeDetectionStrategy): Self = StObject.set(x, "changeDetection", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setChangeDetectionUndefined: Self = StObject.set(x, "changeDetection", js.undefined)
+    
+    @scala.inline
+    def setConsts(value: TConstantsOrFactory): Self = StObject.set(x, "consts", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setConstsFunction0(value: () => TConstants): Self = StObject.set(x, "consts", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setConstsUndefined: Self = StObject.set(x, "consts", js.undefined)
+    
+    @scala.inline
+    def setConstsVarargs(value: (TAttributes | String)*): Self = StObject.set(x, "consts", js.Array(value :_*))
+    
+    @scala.inline
+    def setContentQueries(value: (/* rf */ ɵRenderFlags, T, /* directiveIndex */ Double) => Unit): Self = StObject.set(x, "contentQueries", js.Any.fromFunction3(value))
+    
+    @scala.inline
+    def setContentQueriesUndefined: Self = StObject.set(x, "contentQueries", js.undefined)
+    
+    @scala.inline
+    def setData(value: StringDictionary[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDataUndefined: Self = StObject.set(x, "data", js.undefined)
+    
+    @scala.inline
+    def setDecls(value: Double): Self = StObject.set(x, "decls", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDirectives(value: DirectiveTypesOrFactory): Self = StObject.set(x, "directives", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setDirectivesFunction0(value: () => DirectiveTypeList): Self = StObject.set(x, "directives", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setDirectivesNull: Self = StObject.set(x, "directives", null)
+    
+    @scala.inline
+    def setDirectivesUndefined: Self = StObject.set(x, "directives", js.undefined)
+    
+    @scala.inline
+    def setDirectivesVarargs(value: (ɵDirectiveType[js.Any] | ɵComponentType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "directives", js.Array(value :_*))
+    
+    @scala.inline
+    def setEncapsulation(value: ViewEncapsulation): Self = StObject.set(x, "encapsulation", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setEncapsulationUndefined: Self = StObject.set(x, "encapsulation", js.undefined)
+    
+    @scala.inline
+    def setExportAs(value: js.Array[String]): Self = StObject.set(x, "exportAs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setExportAsUndefined: Self = StObject.set(x, "exportAs", js.undefined)
+    
+    @scala.inline
+    def setExportAsVarargs(value: String*): Self = StObject.set(x, "exportAs", js.Array(value :_*))
+    
+    @scala.inline
+    def setFeatures(value: js.Array[ComponentDefFeature]): Self = StObject.set(x, "features", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setFeaturesUndefined: Self = StObject.set(x, "features", js.undefined)
+    
+    @scala.inline
+    def setFeaturesVarargs(value: ComponentDefFeature*): Self = StObject.set(x, "features", js.Array(value :_*))
+    
+    @scala.inline
+    def setHostAttrs(value: TAttributes): Self = StObject.set(x, "hostAttrs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHostAttrsUndefined: Self = StObject.set(x, "hostAttrs", js.undefined)
+    
+    @scala.inline
+    def setHostAttrsVarargs(value: (String | ɵAttributeMarker | CssSelector)*): Self = StObject.set(x, "hostAttrs", js.Array(value :_*))
+    
+    @scala.inline
+    def setHostBindings(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "hostBindings", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setHostBindingsUndefined: Self = StObject.set(x, "hostBindings", js.undefined)
+    
+    @scala.inline
+    def setHostVars(value: Double): Self = StObject.set(x, "hostVars", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setHostVarsUndefined: Self = StObject.set(x, "hostVars", js.undefined)
+    
+    @scala.inline
+    def setInputs(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof T ]:? string | [string, string]}
+      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+    ): Self = StObject.set(x, "inputs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setInputsUndefined: Self = StObject.set(x, "inputs", js.undefined)
+    
+    @scala.inline
+    def setNgContentSelectors(value: js.Array[String]): Self = StObject.set(x, "ngContentSelectors", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setNgContentSelectorsUndefined: Self = StObject.set(x, "ngContentSelectors", js.undefined)
+    
+    @scala.inline
+    def setNgContentSelectorsVarargs(value: String*): Self = StObject.set(x, "ngContentSelectors", js.Array(value :_*))
+    
+    @scala.inline
+    def setOutputs(
+      value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+    {[ P in keyof T ]:? string}
+      */ typings.angularCore.angularCoreStrings.ChangeDetection & TopLevel[js.Any]
+    ): Self = StObject.set(x, "outputs", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setOutputsUndefined: Self = StObject.set(x, "outputs", js.undefined)
+    
+    @scala.inline
+    def setPipes(value: PipeTypesOrFactory): Self = StObject.set(x, "pipes", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setPipesFunction0(value: () => PipeTypeList): Self = StObject.set(x, "pipes", js.Any.fromFunction0(value))
+    
+    @scala.inline
+    def setPipesNull: Self = StObject.set(x, "pipes", null)
+    
+    @scala.inline
+    def setPipesUndefined: Self = StObject.set(x, "pipes", js.undefined)
+    
+    @scala.inline
+    def setPipesVarargs(value: (PipeType[js.Any] | Type[js.Any])*): Self = StObject.set(x, "pipes", js.Array(value :_*))
+    
+    @scala.inline
+    def setSchemas(value: js.Array[SchemaMetadata]): Self = StObject.set(x, "schemas", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSchemasNull: Self = StObject.set(x, "schemas", null)
+    
+    @scala.inline
+    def setSchemasUndefined: Self = StObject.set(x, "schemas", js.undefined)
+    
+    @scala.inline
+    def setSchemasVarargs(value: SchemaMetadata*): Self = StObject.set(x, "schemas", js.Array(value :_*))
+    
+    @scala.inline
+    def setSelectors(value: ɵCssSelectorList): Self = StObject.set(x, "selectors", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setSelectorsUndefined: Self = StObject.set(x, "selectors", js.undefined)
+    
+    @scala.inline
+    def setSelectorsVarargs(value: CssSelector*): Self = StObject.set(x, "selectors", js.Array(value :_*))
+    
+    @scala.inline
+    def setStyles(value: js.Array[String]): Self = StObject.set(x, "styles", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setStylesUndefined: Self = StObject.set(x, "styles", js.undefined)
+    
+    @scala.inline
+    def setStylesVarargs(value: String*): Self = StObject.set(x, "styles", js.Array(value :_*))
+    
+    @scala.inline
+    def setTemplate(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "template", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setType(value: Type[T]): Self = StObject.set(x, "type", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setVars(value: Double): Self = StObject.set(x, "vars", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setViewQuery(value: (/* rf */ ɵRenderFlags, T) => Unit): Self = StObject.set(x, "viewQuery", js.Any.fromFunction2(value))
+    
+    @scala.inline
+    def setViewQueryNull: Self = StObject.set(x, "viewQuery", null)
+    
+    @scala.inline
+    def setViewQueryUndefined: Self = StObject.set(x, "viewQuery", js.undefined)
+  }
 }

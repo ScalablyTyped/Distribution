@@ -1,5 +1,6 @@
 package typings.parameter.mod
 
+import typings.parameter.parameterStrings.`enum`
 import typings.parameter.parameterStrings.`object`
 import typings.parameter.parameterStrings.array
 import typings.parameter.parameterStrings.arrayQuestionmark
@@ -11,7 +12,6 @@ import typings.parameter.parameterStrings.datetimeQuestionmark
 import typings.parameter.parameterStrings.datetime_
 import typings.parameter.parameterStrings.email
 import typings.parameter.parameterStrings.emailQuestionmark
-import typings.parameter.parameterStrings.enum
 import typings.parameter.parameterStrings.enumQuestionmark
 import typings.parameter.parameterStrings.id
 import typings.parameter.parameterStrings.idQuestionmark
@@ -30,7 +30,6 @@ import typings.parameter.parameterStrings.url
 import typings.parameter.parameterStrings.urlQuestionmark
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 trait _ParameterRuleItem extends StObject
@@ -67,7 +66,7 @@ object _ParameterRuleItem {
   }
   
   @scala.inline
-  def ParameterRuleEnum(`type`: enum | enumQuestionmark, values: js.Array[_]): typings.parameter.mod.ParameterRuleEnum = {
+  def ParameterRuleEnum(`type`: `enum` | enumQuestionmark, values: js.Array[js.Any]): typings.parameter.mod.ParameterRuleEnum = {
     val __obj = js.Dynamic.literal(values = values.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.parameter.mod.ParameterRuleEnum]

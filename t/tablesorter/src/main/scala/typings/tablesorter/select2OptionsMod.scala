@@ -8,14 +8,13 @@ import typings.tablesorter.defaultValueOptionsMod.DefaultValueOptions
 import typings.tablesorter.strictOptionsMod.StrictOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object select2OptionsMod {
   
-  @js.native
   trait Select2Options
-    extends Options[DataFormat | GroupedDataFormat, js.Any]
+    extends StObject
+       with Options[DataFormat | GroupedDataFormat, js.Any]
        with ControlOptions
        with StrictOptions
        with DefaultValueOptions[String]

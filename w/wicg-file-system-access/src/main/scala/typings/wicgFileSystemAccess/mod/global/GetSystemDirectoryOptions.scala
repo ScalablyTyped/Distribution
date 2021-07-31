@@ -3,20 +3,18 @@ package typings.wicgFileSystemAccess.mod.global
 import typings.wicgFileSystemAccess.wicgFileSystemAccessStrings.sandbox
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetSystemDirectoryOptions extends StObject {
   
-  var `type`: sandbox = js.native
+  var `type`: sandbox
 }
 object GetSystemDirectoryOptions {
   
   @scala.inline
-  def apply(`type`: sandbox): GetSystemDirectoryOptions = {
+  def apply(): GetSystemDirectoryOptions = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("sandbox")
     __obj.asInstanceOf[GetSystemDirectoryOptions]
   }
   

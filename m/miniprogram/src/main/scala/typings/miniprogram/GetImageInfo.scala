@@ -3,13 +3,13 @@ package typings.miniprogram
 import typings.miniprogram.anon.Height
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GetImageInfo extends AsyncCallback[Height] {
+trait GetImageInfo
+  extends StObject
+     with AsyncCallback[Height] {
   
-  var src: String = js.native
+  var src: String
 }
 object GetImageInfo {
   

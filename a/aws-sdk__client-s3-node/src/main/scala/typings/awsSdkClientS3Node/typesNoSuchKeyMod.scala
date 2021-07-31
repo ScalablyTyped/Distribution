@@ -2,22 +2,20 @@ package typings.awsSdkClientS3Node
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesNoSuchKeyMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NoSuchKeyDetails> * / any */ @js.native
-  trait NoSuchKey extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_NoSuchKeyDetails> * / any */ trait NoSuchKey extends StObject {
     
-    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.NoSuchKey = js.native
+    var name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.NoSuchKey
   }
   object NoSuchKey {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientS3Node.awsSdkClientS3NodeStrings.NoSuchKey): NoSuchKey = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): NoSuchKey = {
+      val __obj = js.Dynamic.literal(name = "NoSuchKey")
       __obj.asInstanceOf[NoSuchKey]
     }
     
@@ -29,6 +27,5 @@ object typesNoSuchKeyMod {
     }
   }
   
-  @js.native
   trait NoSuchKeyDetails extends StObject
 }

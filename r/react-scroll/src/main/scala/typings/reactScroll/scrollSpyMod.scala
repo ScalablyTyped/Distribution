@@ -3,7 +3,6 @@ package typings.reactScroll
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object scrollSpyMod extends Shortcut {
@@ -12,32 +11,31 @@ object scrollSpyMod extends Shortcut {
   @js.native
   val default: ScrollSpy = js.native
   
-  @js.native
   trait ScrollSpy extends StObject {
     
-    def addSpyHandler(handler: js.Any, scrollSpyContainer: js.Any): Unit = js.native
+    def addSpyHandler(handler: js.Any, scrollSpyContainer: js.Any): Unit
     
-    def addStateHandler(handler: js.Any): Unit = js.native
+    def addStateHandler(handler: js.Any): Unit
     
-    def currentPositionY(scrollSpyContainer: js.Any): Double = js.native
+    def currentPositionY(scrollSpyContainer: js.Any): Double
     
-    def isMounted(scrollSpyContainer: js.Any): Boolean = js.native
+    def isMounted(scrollSpyContainer: js.Any): Boolean
     
-    def mount(scrollSpyContainer: js.Any): Unit = js.native
+    def mount(scrollSpyContainer: js.Any): Unit
     
-    def scrollHandler(scrollSpyContainer: js.Any): Unit = js.native
+    def scrollHandler(scrollSpyContainer: js.Any): Unit
     
-    var scrollSpyContainers: js.Array[_] = js.native
+    var scrollSpyContainers: js.Array[js.Any]
     
-    var spyCallbacks: js.Array[_] = js.native
+    var spyCallbacks: js.Array[js.Any]
     
-    var spySetState: js.Array[_] = js.native
+    var spySetState: js.Array[js.Any]
     
-    def unmount(stateHandler: js.Any, spyHandler: js.Any): Unit = js.native
+    def unmount(stateHandler: js.Any, spyHandler: js.Any): Unit
     
-    def update(): Unit = js.native
+    def update(): Unit
     
-    def updateStates(): Unit = js.native
+    def updateStates(): Unit
   }
   object ScrollSpy {
     
@@ -49,9 +47,9 @@ object scrollSpyMod extends Shortcut {
       isMounted: js.Any => Boolean,
       mount: js.Any => Unit,
       scrollHandler: js.Any => Unit,
-      scrollSpyContainers: js.Array[_],
-      spyCallbacks: js.Array[_],
-      spySetState: js.Array[_],
+      scrollSpyContainers: js.Array[js.Any],
+      spyCallbacks: js.Array[js.Any],
+      spySetState: js.Array[js.Any],
       unmount: (js.Any, js.Any) => Unit,
       update: () => Unit,
       updateStates: () => Unit
@@ -82,19 +80,19 @@ object scrollSpyMod extends Shortcut {
       def setScrollHandler(value: js.Any => Unit): Self = StObject.set(x, "scrollHandler", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setScrollSpyContainers(value: js.Array[_]): Self = StObject.set(x, "scrollSpyContainers", value.asInstanceOf[js.Any])
+      def setScrollSpyContainers(value: js.Array[js.Any]): Self = StObject.set(x, "scrollSpyContainers", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setScrollSpyContainersVarargs(value: js.Any*): Self = StObject.set(x, "scrollSpyContainers", js.Array(value :_*))
       
       @scala.inline
-      def setSpyCallbacks(value: js.Array[_]): Self = StObject.set(x, "spyCallbacks", value.asInstanceOf[js.Any])
+      def setSpyCallbacks(value: js.Array[js.Any]): Self = StObject.set(x, "spyCallbacks", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSpyCallbacksVarargs(value: js.Any*): Self = StObject.set(x, "spyCallbacks", js.Array(value :_*))
       
       @scala.inline
-      def setSpySetState(value: js.Array[_]): Self = StObject.set(x, "spySetState", value.asInstanceOf[js.Any])
+      def setSpySetState(value: js.Array[js.Any]): Self = StObject.set(x, "spySetState", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setSpySetStateVarargs(value: js.Any*): Self = StObject.set(x, "spySetState", js.Array(value :_*))

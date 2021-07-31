@@ -2,15 +2,15 @@ package typings.pulumiCloud.serviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SharedVolume extends Volume {
+trait SharedVolume
+  extends StObject
+     with Volume {
   
-  var kind: typings.pulumiCloud.pulumiCloudStrings.SharedVolume = js.native
+  var kind: typings.pulumiCloud.pulumiCloudStrings.SharedVolume
   
-  var name: String = js.native
+  var name: String
 }
 object SharedVolume {
   

@@ -7,7 +7,6 @@ import typings.std.HTMLImageElement
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object imageBaseMod {
@@ -15,8 +14,8 @@ object imageBaseMod {
   @JSImport("ol/ImageBase", JSImport.Default)
   @js.native
   abstract class default protected () extends ImageBase {
-    def this(extent: Extent, resolution: js.UndefOr[scala.Nothing], pixelRatio: Double, state: ImageState) = this()
     def this(extent: Extent, resolution: Double, pixelRatio: Double, state: ImageState) = this()
+    def this(extent: Extent, resolution: Unit, pixelRatio: Double, state: ImageState) = this()
   }
   
   @js.native

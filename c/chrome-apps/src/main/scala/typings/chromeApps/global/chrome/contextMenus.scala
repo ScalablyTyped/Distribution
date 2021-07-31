@@ -22,7 +22,6 @@ import typings.chromeApps.chromeAppsStrings.separator_
 import typings.chromeApps.chromeAppsStrings.video_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -48,6 +47,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Google Chrome automatically collapses them into a single parent menu.
   */
 object contextMenus {
+  
+  @JSGlobal("chrome.contextMenus")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * @since Chrome 38.
@@ -184,63 +187,51 @@ object contextMenus {
     * Creates a new context menu item. Note that if an error occurs during creation, you may not find out until the creation callback fires (the details will be in chrome.runtime.lastError).
     * @param callback Called when the item has been created in the browser. If there were any problems creating the item, details will be available in chrome.runtime.lastError.
     */
-  @JSGlobal("chrome.contextMenus.create")
-  @js.native
-  def create(createProperties: CreateProperties): Unit = js.native
-  @JSGlobal("chrome.contextMenus.create")
-  @js.native
-  def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def create(createProperties: CreateProperties): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def create(createProperties: CreateProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(createProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Fired when a context menu item is clicked. */
   @JSGlobal("chrome.contextMenus.onClicked")
   @js.native
   val onClicked: MenuClickedEvent = js.native
   
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: String): Unit = js.native
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: String, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def remove(menuItemId: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(menuItemId: String, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Removes a context menu item.
     * @param menuItemId The ID of the context menu item to remove.
     * @param callback Called when the context menu has been removed.
     */
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: integer): Unit = js.native
-  @JSGlobal("chrome.contextMenus.remove")
-  @js.native
-  def remove(menuItemId: integer, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def remove(menuItemId: integer): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def remove(menuItemId: integer, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("remove")(menuItemId.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Removes all context menu items added by this app.
     * @param callback Called when removal is complete.
     */
-  @JSGlobal("chrome.contextMenus.removeAll")
-  @js.native
-  def removeAll(): Unit = js.native
-  @JSGlobal("chrome.contextMenus.removeAll")
-  @js.native
-  def removeAll(callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def removeAll(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")().asInstanceOf[Unit]
+  @scala.inline
+  def removeAll(callback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("removeAll")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: String, updateProperties: UpdateProperties): Unit = js.native
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: String, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def update(id: String, updateProperties: UpdateProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: String, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Updates a previously created context menu item.
     * @param id The ID of the item to update.
     * @param updateProperties The properties to update. Accepts the same values as the create function.
     * @param callback Called when the context menu has been updated.
     */
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: integer, updateProperties: UpdateProperties): Unit = js.native
-  @JSGlobal("chrome.contextMenus.update")
-  @js.native
-  def update(id: integer, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def update(id: integer, updateProperties: UpdateProperties): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(id: integer, updateProperties: UpdateProperties, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(id.asInstanceOf[js.Any], updateProperties.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientConnectOptions extends StObject {
   
   /**
     * Indicates whether client connect options are enabled. The default is false (not enabled).
     */
-  var Enabled: js.UndefOr[Boolean] = js.native
+  var Enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the AWS Lambda function used for connection authorization.
     */
-  var LambdaFunctionArn: js.UndefOr[String] = js.native
+  var LambdaFunctionArn: js.UndefOr[String] = js.undefined
 }
 object ClientConnectOptions {
   

@@ -8,7 +8,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -28,17 +27,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.linguistic2.Hyphenator
   * @see com.sun.star.linguistic2.Thesaurus
   */
-@js.native
-trait XLinguServiceManager extends XInterface {
+trait XLinguServiceManager
+  extends StObject
+     with XInterface {
   
   /** @returns the {@link com.sun.star.linguistic2.XHyphenator} interface to be used for hyphenation. */
-  val Hyphenator: XHyphenator = js.native
+  val Hyphenator: XHyphenator
   
   /** @returns the {@link com.sun.star.linguistic2.XSpellChecker} interface to be used for spell checking. */
-  val SpellChecker: XSpellChecker = js.native
+  val SpellChecker: XSpellChecker
   
   /** @returns the {@link com.sun.star.linguistic2.XThesaurus} interface to be used for thesaurus functionality. */
-  val Thesaurus: XThesaurus = js.native
+  val Thesaurus: XThesaurus
   
   /**
     * adds a listener to the list of event listeners.
@@ -48,14 +48,14 @@ trait XLinguServiceManager extends XInterface {
     * @param xListener the listener to be added.
     * @returns `TRUE` if the listener was successfully added, `FALSE` otherwise.
     */
-  def addLinguServiceManagerListener(xListener: XEventListener): Boolean = js.native
+  def addLinguServiceManagerListener(xListener: XEventListener): Boolean
   
   /**
     * @param aServiceName the name of the service requesting the list of available implementations.
     * @param aLocale the language used to query the list of available implementations.
     * @returns the list of implementation names of the available services.
     */
-  def getAvailableServices(aServiceName: String, aLocale: Locale): SafeArray[String] = js.native
+  def getAvailableServices(aServiceName: String, aLocale: Locale): SafeArray[String]
   
   /**
     * queries the list of service implementations to be used for a given service and language.
@@ -63,23 +63,23 @@ trait XLinguServiceManager extends XInterface {
     * @param aLocale the language to get queried.
     * @returns the list of implementation names of the services to be used.
     */
-  def getConfiguredServices(aServiceName: String, aLocale: Locale): SafeArray[String] = js.native
+  def getConfiguredServices(aServiceName: String, aLocale: Locale): SafeArray[String]
   
   /** @returns the {@link com.sun.star.linguistic2.XHyphenator} interface to be used for hyphenation. */
-  def getHyphenator(): XHyphenator = js.native
+  def getHyphenator(): XHyphenator
   
   /** @returns the {@link com.sun.star.linguistic2.XSpellChecker} interface to be used for spell checking. */
-  def getSpellChecker(): XSpellChecker = js.native
+  def getSpellChecker(): XSpellChecker
   
   /** @returns the {@link com.sun.star.linguistic2.XThesaurus} interface to be used for thesaurus functionality. */
-  def getThesaurus(): XThesaurus = js.native
+  def getThesaurus(): XThesaurus
   
   /**
     * removes a listener from the list of event listeners.
     * @param xListener the listener to be removed.
     * @returns `TRUE` if the listener was successfully removed, `FALSE` otherwise.
     */
-  def removeLinguServiceManagerListener(xListener: XEventListener): Boolean = js.native
+  def removeLinguServiceManagerListener(xListener: XEventListener): Boolean
   
   /**
     * sets the list of service implementations to be used for a given service and language.
@@ -87,7 +87,7 @@ trait XLinguServiceManager extends XInterface {
     * @param aLocale the language to set the list.
     * @param aServiceImplNames the name of the service to set the list.
     */
-  def setConfiguredServices(aServiceName: String, aLocale: Locale, aServiceImplNames: SeqEquiv[String]): Unit = js.native
+  def setConfiguredServices(aServiceName: String, aLocale: Locale, aServiceImplNames: SeqEquiv[String]): Unit
 }
 object XLinguServiceManager {
   

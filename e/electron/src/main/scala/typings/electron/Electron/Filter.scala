@@ -2,17 +2,15 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Filter extends StObject {
   
   /**
     * Array of URL patterns that will be used to filter out the requests that do not
     * match the URL patterns.
     */
-  var urls: js.Array[String] = js.native
+  var urls: js.Array[String]
 }
 object Filter {
   

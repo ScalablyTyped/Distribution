@@ -4,32 +4,32 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GeoJSONLayerApplyEditsEdits extends Object {
+trait GeoJSONLayerApplyEditsEdits
+  extends StObject
+     with Object {
   
   /**
     * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be added.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#applyEdits)
     */
-  var addFeatures: js.UndefOr[js.Array[Graphic] | Collection[Graphic]] = js.native
+  var addFeatures: js.UndefOr[js.Array[Graphic] | Collection[Graphic]] = js.undefined
   
   /**
     * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features, or objects to be deleted.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#applyEdits)
     */
-  var deleteFeatures: js.UndefOr[(js.Array[_ | Graphic]) | Collection[Graphic]] = js.native
+  var deleteFeatures: js.UndefOr[(js.Array[js.Any | Graphic]) | Collection[Graphic]] = js.undefined
   
   /**
     * An array or a [collection](https://developers.arcgis.com/javascript/latest/api-reference/esri-core-Collection.html) of features to be updated.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-layers-GeoJSONLayer.html#applyEdits)
     */
-  var updateFeatures: js.UndefOr[js.Array[Graphic] | Collection[Graphic]] = js.native
+  var updateFeatures: js.UndefOr[js.Array[Graphic] | Collection[Graphic]] = js.undefined
 }
 object GeoJSONLayerApplyEditsEdits {
   
@@ -56,7 +56,7 @@ object GeoJSONLayerApplyEditsEdits {
     def setAddFeaturesVarargs(value: Graphic*): Self = StObject.set(x, "addFeatures", js.Array(value :_*))
     
     @scala.inline
-    def setDeleteFeatures(value: (js.Array[_ | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
+    def setDeleteFeatures(value: (js.Array[js.Any | Graphic]) | Collection[Graphic]): Self = StObject.set(x, "deleteFeatures", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDeleteFeaturesUndefined: Self = StObject.set(x, "deleteFeatures", js.undefined)

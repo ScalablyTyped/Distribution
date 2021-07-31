@@ -2,26 +2,24 @@ package typings.awsSdk.migrationhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Task extends StObject {
   
   /**
     * Indication of the percentage completion of the task.
     */
-  var ProgressPercent: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressPercent] = js.native
+  var ProgressPercent: js.UndefOr[typings.awsSdk.migrationhubMod.ProgressPercent] = js.undefined
   
   /**
     * Status of the task - Not Started, In-Progress, Complete.
     */
-  var Status: typings.awsSdk.migrationhubMod.Status = js.native
+  var Status: typings.awsSdk.migrationhubMod.Status
   
   /**
     * Details of task status as notified by a migration tool. A tool might use this field to provide clarifying information about the status that is unique to that tool or that explains an error state.
     */
-  var StatusDetail: js.UndefOr[typings.awsSdk.migrationhubMod.StatusDetail] = js.native
+  var StatusDetail: js.UndefOr[typings.awsSdk.migrationhubMod.StatusDetail] = js.undefined
 }
 object Task {
   

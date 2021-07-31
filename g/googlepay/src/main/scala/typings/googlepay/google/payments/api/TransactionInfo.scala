@@ -2,13 +2,11 @@ package typings.googlepay.google.payments.api
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Detailed information about the transaction.
   */
-@js.native
 trait TransactionInfo extends StObject {
   
   /**
@@ -20,7 +18,7 @@ trait TransactionInfo extends StObject {
     *
     * @default "DEFAULT"
     */
-  var checkoutOption: js.UndefOr[CheckoutOption] = js.native
+  var checkoutOption: js.UndefOr[CheckoutOption] = js.undefined
   
   /**
     * ISO 3166-1 alpha-2 country code for the country where the transaction
@@ -31,20 +29,20 @@ trait TransactionInfo extends StObject {
     * may need to provide extra information to you or your processor in
     * order to complete a transaction).
     */
-  var countryCode: js.UndefOr[String] = js.native
+  var countryCode: js.UndefOr[String] = js.undefined
   
   /**
     * ISO 4217 alphabetic currency code of the transaction.
     *
     * This is a required field.
     */
-  var currencyCode: String = js.native
+  var currencyCode: String
   
   /**
     * This can be used to display a high level breakdown of the total
     * price. e.g. 'subtotal', 'discount'.
     */
-  var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.native
+  var displayItems: js.UndefOr[js.Array[DisplayItem]] = js.undefined
   
   /**
     * Total price of this transaction.
@@ -59,7 +57,7 @@ trait TransactionInfo extends StObject {
     * [[TotalPriceStatus|`ESTIMATED`]] or
     * [[TotalPriceStatus|`FINAL`]].
     */
-  var totalPrice: String = js.native
+  var totalPrice: String
   
   /**
     * Total price label of this transaction.
@@ -71,7 +69,7 @@ trait TransactionInfo extends StObject {
     * information. Otherwise the cart modal dialog will not be rendered
     * even if transactionInfo.displayItems is set.
     */
-  var totalPriceLabel: js.UndefOr[String] = js.native
+  var totalPriceLabel: js.UndefOr[String] = js.undefined
   
   /**
     * Status of this transaction's total price.
@@ -82,7 +80,7 @@ trait TransactionInfo extends StObject {
     * [[TotalPriceStatus|`FINAL`]] and that
     * the total price to be specified and final.
     */
-  var totalPriceStatus: TotalPriceStatus = js.native
+  var totalPriceStatus: TotalPriceStatus
   
   /**
     * Correlation ID to refer to this transaction.
@@ -91,7 +89,7 @@ trait TransactionInfo extends StObject {
     * for referring to this transaction later on (e.g. for debugging issues
     * when communicating with Google).
     */
-  var transactionId: js.UndefOr[String] = js.native
+  var transactionId: js.UndefOr[String] = js.undefined
   
   /**
     * Transaction note.
@@ -106,7 +104,7 @@ trait TransactionInfo extends StObject {
     *   reservation details. The maximum length allowed for this field
     *   is 80.
     */
-  var transactionNote: js.UndefOr[String] = js.native
+  var transactionNote: js.UndefOr[String] = js.undefined
 }
 object TransactionInfo {
   

@@ -3,33 +3,31 @@ package typings.thrift.mod
 import typings.node.httpMod.RequestOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectOptions extends StObject {
   
-  var connect_timeout: js.UndefOr[Double] = js.native
+  var connect_timeout: js.UndefOr[Double] = js.undefined
   
-  var debug: js.UndefOr[Boolean] = js.native
+  var debug: js.UndefOr[Boolean] = js.undefined
   
-  var headers: js.UndefOr[HttpHeaders] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
-  var https: js.UndefOr[Boolean] = js.native
+  var https: js.UndefOr[Boolean] = js.undefined
   
-  var max_attempts: js.UndefOr[Double] = js.native
+  var max_attempts: js.UndefOr[Double] = js.undefined
   
-  var nodeOptions: js.UndefOr[RequestOptions | typings.node.httpsMod.RequestOptions] = js.native
+  var nodeOptions: js.UndefOr[RequestOptions | typings.node.httpsMod.RequestOptions] = js.undefined
   
-  var path: js.UndefOr[String] = js.native
+  var path: js.UndefOr[String] = js.undefined
   
-  var protocol: js.UndefOr[TProtocolConstructor] = js.native
+  var protocol: js.UndefOr[TProtocolConstructor] = js.undefined
   
-  var retry_max_delay: js.UndefOr[Double] = js.native
+  var retry_max_delay: js.UndefOr[Double] = js.undefined
   
-  var timeout: js.UndefOr[Double] = js.native
+  var timeout: js.UndefOr[Double] = js.undefined
   
-  var transport: js.UndefOr[TTransportConstructor] = js.native
+  var transport: js.UndefOr[TTransportConstructor] = js.undefined
 }
 object ConnectOptions {
   

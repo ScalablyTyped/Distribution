@@ -2,35 +2,35 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DataPolicyOperation extends Entity {
+trait DataPolicyOperation
+  extends StObject
+     with Entity {
   
   /**
     * Represents when the request for this data policy operation was completed, in UTC time, using the ISO 8601 format. For
     * example, midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'. Null until the operation completes.
     */
-  var completedDateTime: js.UndefOr[NullableOption[String]] = js.native
+  var completedDateTime: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Specifies the progress of an operation.
-  var progress: js.UndefOr[Double] = js.native
+  var progress: js.UndefOr[Double] = js.undefined
   
   // Possible values are: notStarted, running, complete, failed, unknownFutureValue.
-  var status: js.UndefOr[NullableOption[DataPolicyOperationStatus]] = js.native
+  var status: js.UndefOr[NullableOption[DataPolicyOperationStatus]] = js.undefined
   
   // The URL location to where data is being exported for export requests.
-  var storageLocation: js.UndefOr[NullableOption[String]] = js.native
+  var storageLocation: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Represents when the request for this data operation was submitted, in UTC time, using the ISO 8601 format. For example,
     * midnight UTC on Jan 1, 2014 would look like this: '2014-01-01T00:00:00Z'
     */
-  var submittedDateTime: js.UndefOr[String] = js.native
+  var submittedDateTime: js.UndefOr[String] = js.undefined
   
   // The id for the user on whom the operation is performed.
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object DataPolicyOperation {
   

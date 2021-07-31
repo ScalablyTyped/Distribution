@@ -2,20 +2,18 @@ package typings.googleapis.resellerV1Mod.resellerV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for subscription seats.
   */
-@js.native
 trait SchemaSeats extends StObject {
   
   /**
     * Identifies the resource as a subscription seat setting. Value:
     * subscriptions#seats
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * Read-only field containing the current number of users that are assigned
@@ -23,7 +21,7 @@ trait SchemaSeats extends StObject {
     * equivalent to the numerical count of users returned by the Enterprise
     * License Manager API method: listForProductAndSku
     */
-  var licensedNumberOfSeats: js.UndefOr[Double] = js.native
+  var licensedNumberOfSeats: js.UndefOr[Double] = js.undefined
   
   /**
     * This is a required property and is exclusive to subscriptions with
@@ -33,7 +31,7 @@ trait SchemaSeats extends StObject {
     * minimum quantity is the current number of users in the customer account.
     * Note: G Suite subscriptions automatically assign a license to every user.
     */
-  var maximumNumberOfSeats: js.UndefOr[Double] = js.native
+  var maximumNumberOfSeats: js.UndefOr[Double] = js.undefined
   
   /**
     * This is a required property and is exclusive to subscriptions with
@@ -45,7 +43,7 @@ trait SchemaSeats extends StObject {
     * assigned. Note: G Suite subscriptions automatically assign a license to
     * every user.
     */
-  var numberOfSeats: js.UndefOr[Double] = js.native
+  var numberOfSeats: js.UndefOr[Double] = js.undefined
 }
 object SchemaSeats {
   

@@ -10,9 +10,9 @@ Seedable random number generator supporting many common distributions.
 | ------------------ | :-------------: |
 | Full name          | random |
 | Keywords           | random, number, generator, rng, prng, stats, d3-random, seedrandom, distribution, pseudorandom, uniform, normal, gaussian, lognormal, poisson, exponential, irwinhall, bates |
-| # releases         | 5 |
-| # dependents       | 60 |
-| # downloads        | 423953 |
+| # releases         | 4 |
+| # dependents       | 74 |
+| # downloads        | 764652 |
 | # stars            | 0 |
 
 ## Links

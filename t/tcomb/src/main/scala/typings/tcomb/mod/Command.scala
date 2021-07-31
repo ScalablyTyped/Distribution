@@ -3,7 +3,6 @@ package typings.tcomb.mod
 import typings.tcomb.anon.From
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -32,7 +31,7 @@ object Command {
   }
   
   @scala.inline
-  def PushCommand($push: js.Array[_]): typings.tcomb.mod.PushCommand = {
+  def PushCommand($push: js.Array[js.Any]): typings.tcomb.mod.PushCommand = {
     val __obj = js.Dynamic.literal($push = $push.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.PushCommand]
   }
@@ -50,7 +49,7 @@ object Command {
   }
   
   @scala.inline
-  def SpliceCommand($splice: js.Array[js.Array[_]]): typings.tcomb.mod.SpliceCommand = {
+  def SpliceCommand($splice: js.Array[js.Array[js.Any]]): typings.tcomb.mod.SpliceCommand = {
     val __obj = js.Dynamic.literal($splice = $splice.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.SpliceCommand]
   }
@@ -62,7 +61,7 @@ object Command {
   }
   
   @scala.inline
-  def UnshiftCommand($unshift: js.Array[_]): typings.tcomb.mod.UnshiftCommand = {
+  def UnshiftCommand($unshift: js.Array[js.Any]): typings.tcomb.mod.UnshiftCommand = {
     val __obj = js.Dynamic.literal($unshift = $unshift.asInstanceOf[js.Any])
     __obj.asInstanceOf[typings.tcomb.mod.UnshiftCommand]
   }

@@ -6,56 +6,56 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceScoresGet extends StandardParameters {
+trait ParamsResourceScoresGet
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * The types of ranks to return. If the parameter is omitted, no ranks will
     * be returned.
     */
-  var includeRankType: js.UndefOr[String] = js.native
+  var includeRankType: js.UndefOr[String] = js.undefined
   
   /**
     * The preferred language to use for strings returned by this method.
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the leaderboard. Can be set to 'ALL' to retrieve data for all
     * leaderboards for this application.
     */
-  var leaderboardId: js.UndefOr[String] = js.native
+  var leaderboardId: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum number of leaderboard scores to return in the response. For
     * any response, the actual number of leaderboard scores returned may be
     * less than the specified maxResults.
     */
-  var maxResults: js.UndefOr[Double] = js.native
+  var maxResults: js.UndefOr[Double] = js.undefined
   
   /**
     * The token returned by the previous request.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A player ID. A value of me may be used in place of the authenticated
     * player's ID.
     */
-  var playerId: js.UndefOr[String] = js.native
+  var playerId: js.UndefOr[String] = js.undefined
   
   /**
     * The time span for the scores and ranks you're requesting.
     */
-  var timeSpan: js.UndefOr[String] = js.native
+  var timeSpan: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceScoresGet {
   

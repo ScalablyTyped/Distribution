@@ -3,17 +3,17 @@ package typings.ibmMobilefirst.WL
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Response extends ResponseBase {
+trait Response
+  extends StObject
+     with ResponseBase {
   
-  def getAllHeaders(): Headers = js.native
+  def getAllHeaders(): Headers
   
-  def getHeader(name: js.Any): String = js.native
+  def getHeader(name: js.Any): String
   
-  def getHeaderNames(): js.Array[String] = js.native
+  def getHeaderNames(): js.Array[String]
 }
 object Response {
   

@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientDataproc.gapi.client.dataproc
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OrderedJob extends StObject {
   
   /** Optional. Job is a Hadoop job. */
-  var hadoopJob: js.UndefOr[HadoopJob] = js.native
+  var hadoopJob: js.UndefOr[HadoopJob] = js.undefined
   
   /** Optional. Job is a Hive job. */
-  var hiveJob: js.UndefOr[HiveJob] = js.native
+  var hiveJob: js.UndefOr[HiveJob] = js.undefined
   
   /**
     * Optional. The labels to associate with this job.Label keys must be between 1 and 63 characters long, and must conform to the following regular expression: \p{Ll}\p{Lo}{0,62}Label
@@ -23,39 +21,39 @@ trait OrderedJob extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.OrderedJob with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.OrderedJob & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Optional. Job is a Pig job. */
-  var pigJob: js.UndefOr[PigJob] = js.native
+  var pigJob: js.UndefOr[PigJob] = js.undefined
   
   /** Optional. The optional list of prerequisite job step_ids. If not specified, the job will start at the beginning of workflow. */
-  var prerequisiteStepIds: js.UndefOr[js.Array[String]] = js.native
+  var prerequisiteStepIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Optional. Job is a Presto job. */
-  var prestoJob: js.UndefOr[PrestoJob] = js.native
+  var prestoJob: js.UndefOr[PrestoJob] = js.undefined
   
   /** Optional. Job is a PySpark job. */
-  var pysparkJob: js.UndefOr[PySparkJob] = js.native
+  var pysparkJob: js.UndefOr[PySparkJob] = js.undefined
   
   /** Optional. Job scheduling configuration. */
-  var scheduling: js.UndefOr[JobScheduling] = js.native
+  var scheduling: js.UndefOr[JobScheduling] = js.undefined
   
   /** Optional. Job is a Spark job. */
-  var sparkJob: js.UndefOr[SparkJob] = js.native
+  var sparkJob: js.UndefOr[SparkJob] = js.undefined
   
   /** Optional. Job is a SparkR job. */
-  var sparkRJob: js.UndefOr[SparkRJob] = js.native
+  var sparkRJob: js.UndefOr[SparkRJob] = js.undefined
   
   /** Optional. Job is a SparkSql job. */
-  var sparkSqlJob: js.UndefOr[SparkSqlJob] = js.native
+  var sparkSqlJob: js.UndefOr[SparkSqlJob] = js.undefined
   
   /**
     * Required. The step id. The id must be unique among all jobs within the template.The step id is used as prefix for job id, as job goog-dataproc-workflow-step-id label, and in
     * prerequisiteStepIds field from other steps.The id must contain only letters (a-z, A-Z), numbers (0-9), underscores (_), and hyphens (-). Cannot begin or end with underscore or
     * hyphen. Must consist of between 3 and 50 characters.
     */
-  var stepId: js.UndefOr[String] = js.native
+  var stepId: js.UndefOr[String] = js.undefined
 }
 object OrderedJob {
   
@@ -84,7 +82,7 @@ object OrderedJob {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.OrderedJob with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientDataproc.maximMazurokGapiClientDataprocStrings.OrderedJob & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

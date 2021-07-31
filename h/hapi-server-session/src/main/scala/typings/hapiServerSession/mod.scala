@@ -7,7 +7,6 @@ import typings.hapiHapi.mod.ServerStateCookieOptions
 import typings.node.cryptoMod.BinaryLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -20,24 +19,23 @@ object mod extends Shortcut {
   @js.native
   val plugin: Plugin[Options] = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var algorithm: js.UndefOr[String] = js.native
+    var algorithm: js.UndefOr[String] = js.undefined
     
-    var cache: js.UndefOr[CachePolicyOptions[_]] = js.native
+    var cache: js.UndefOr[CachePolicyOptions[js.Any]] = js.undefined
     
-    var cookie: js.UndefOr[ServerStateCookieOptions] = js.native
+    var cookie: js.UndefOr[ServerStateCookieOptions] = js.undefined
     
-    var expiresIn: js.UndefOr[Double] = js.native
+    var expiresIn: js.UndefOr[Double] = js.undefined
     
-    var key: js.UndefOr[BinaryLike] = js.native
+    var key: js.UndefOr[BinaryLike] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var vhost: js.UndefOr[String | js.Array[String]] = js.native
+    var vhost: js.UndefOr[String | js.Array[String]] = js.undefined
   }
   object Options {
     
@@ -57,7 +55,7 @@ object mod extends Shortcut {
       def setAlgorithmUndefined: Self = StObject.set(x, "algorithm", js.undefined)
       
       @scala.inline
-      def setCache(value: CachePolicyOptions[_]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
+      def setCache(value: CachePolicyOptions[js.Any]): Self = StObject.set(x, "cache", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCacheUndefined: Self = StObject.set(x, "cache", js.undefined)
@@ -111,10 +109,9 @@ object mod extends Shortcut {
   /* augmented module */
   object hapiHapiAugmentingMod {
     
-    @js.native
     trait Request extends StObject {
       
-      var session: js.Any = js.native
+      var session: js.Any
     }
     object Request {
       

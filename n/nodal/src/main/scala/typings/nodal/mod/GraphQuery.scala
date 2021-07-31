@@ -4,7 +4,6 @@ import typings.nodal.anon.Joins
 import typings.nodal.anon.TypeofModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("nodal", "GraphQuery")
@@ -40,38 +39,35 @@ class GraphQuery protected () extends StObject {
 /* static members */
 object GraphQuery {
   
+  @JSImport("nodal", "GraphQuery")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Format a parsed syntax tree in a way that the Composer expects
     */
-  @JSImport("nodal", "GraphQuery.formatTree")
-  @js.native
-  def formatTree(tree: js.Array[_], max: Double, joins: js.Any): js.Array[_] = js.native
-  @JSImport("nodal", "GraphQuery.formatTree")
-  @js.native
-  def formatTree(tree: js.Array[_], max: Double, joins: js.Any, parents: js.Any): js.Array[_] = js.native
+  @scala.inline
+  def formatTree(tree: js.Array[js.Any], max: Double, joins: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTree")(tree.asInstanceOf[js.Any], max.asInstanceOf[js.Any], joins.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
+  @scala.inline
+  def formatTree(tree: js.Array[js.Any], max: Double, joins: js.Any, parents: js.Any): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatTree")(tree.asInstanceOf[js.Any], max.asInstanceOf[js.Any], joins.asInstanceOf[js.Any], parents.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
   /**
     * Fully parse a GraphQL query, get necessary joins to make in SQL
     */
-  @JSImport("nodal", "GraphQuery.parse")
-  @js.native
-  def parse(str: String, max: Double): Joins = js.native
+  @scala.inline
+  def parse(str: String, max: Double): Joins = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(str.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Joins]
   
   /**
     * Parse syntax tree of a GraphQL query
     */
-  @JSImport("nodal", "GraphQuery.parseSyntaxTree")
-  @js.native
-  def parseSyntaxTree(str: String): js.Any = js.native
-  @JSImport("nodal", "GraphQuery.parseSyntaxTree")
-  @js.native
-  def parseSyntaxTree(str: String, state: js.UndefOr[scala.Nothing], arr: js.Array[_]): js.Any = js.native
-  @JSImport("nodal", "GraphQuery.parseSyntaxTree")
-  @js.native
-  def parseSyntaxTree(str: String, state: String): js.Any = js.native
-  @JSImport("nodal", "GraphQuery.parseSyntaxTree")
-  @js.native
-  def parseSyntaxTree(str: String, state: String, arr: js.Array[_]): js.Any = js.native
+  @scala.inline
+  def parseSyntaxTree(str: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parseSyntaxTree(str: String, state: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseSyntaxTree(str: String, state: String, arr: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def parseSyntaxTree(str: String, state: Unit, arr: js.Array[js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parseSyntaxTree")(str.asInstanceOf[js.Any], state.asInstanceOf[js.Any], arr.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
   /**
     * Create and execute a GraphQuery object
@@ -79,7 +75,6 @@ object GraphQuery {
     * @param {Number} maxDepth The maximum depth of graph to traverse
     * @param {Function} callback The function to execute upon completion
     */
-  @JSImport("nodal", "GraphQuery.query")
-  @js.native
-  def query(str: String, maxDepth: Double, callback: js.Function): Boolean = js.native
+  @scala.inline
+  def query(str: String, maxDepth: Double, callback: js.Function): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("query")(str.asInstanceOf[js.Any], maxDepth.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Boolean]
 }

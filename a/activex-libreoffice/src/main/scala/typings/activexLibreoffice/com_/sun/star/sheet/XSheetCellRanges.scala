@@ -7,27 +7,27 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides methods to access cell ranges in a collection via index and other helper methods.
   * @see com.sun.star.sheet.SheetCellRanges
   */
-@js.native
-trait XSheetCellRanges extends XIndexAccess {
+trait XSheetCellRanges
+  extends StObject
+     with XIndexAccess {
   
   /**
     * returns the collection of all used cells.
     * @see com.sun.star.sheet.Cells
     */
-  val Cells: XEnumerationAccess = js.native
+  val Cells: XEnumerationAccess
   
   /**
     * creates a sequence with addresses of all contained cell ranges.
     * @returns a sequence with the addresses of all cell ranges.
     */
-  val RangeAddresses: SafeArray[CellRangeAddress] = js.native
+  val RangeAddresses: SafeArray[CellRangeAddress]
   
   /**
     * creates a string with addresses of all contained cell ranges.
@@ -35,19 +35,19 @@ trait XSheetCellRanges extends XIndexAccess {
     * The range addresses are separated with semicolons. For instance the string could have the form "Sheet1.A1:C3;Sheet2.D5:F8".
     * @returns a string containing the addresses of all cell ranges.
     */
-  val RangeAddressesAsString: String = js.native
+  val RangeAddressesAsString: String
   
   /**
     * returns the collection of all used cells.
     * @see com.sun.star.sheet.Cells
     */
-  def getCells(): XEnumerationAccess = js.native
+  def getCells(): XEnumerationAccess
   
   /**
     * creates a sequence with addresses of all contained cell ranges.
     * @returns a sequence with the addresses of all cell ranges.
     */
-  def getRangeAddresses(): SafeArray[CellRangeAddress] = js.native
+  def getRangeAddresses(): SafeArray[CellRangeAddress]
   
   /**
     * creates a string with addresses of all contained cell ranges.
@@ -55,7 +55,7 @@ trait XSheetCellRanges extends XIndexAccess {
     * The range addresses are separated with semicolons. For instance the string could have the form "Sheet1.A1:C3;Sheet2.D5:F8".
     * @returns a string containing the addresses of all cell ranges.
     */
-  def getRangeAddressesAsString(): String = js.native
+  def getRangeAddressesAsString(): String
 }
 object XSheetCellRanges {
   

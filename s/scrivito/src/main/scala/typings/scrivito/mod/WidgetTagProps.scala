@@ -4,15 +4,14 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.react.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WidgetTagProps
-  extends HTMLAttributes[js.Any]
+  extends StObject
+     with HTMLAttributes[js.Any]
      with /* key */ StringDictionary[js.Any] {
   
-  var tag: String = js.native
+  var tag: String
 }
 object WidgetTagProps {
   

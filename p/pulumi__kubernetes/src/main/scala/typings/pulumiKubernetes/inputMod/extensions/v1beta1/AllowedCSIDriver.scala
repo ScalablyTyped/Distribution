@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.extensions.v1beta1
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * AllowedCSIDriver represents a single inline CSI Driver that is allowed to be used.
   */
-@js.native
 trait AllowedCSIDriver extends StObject {
   
   /**
     * Name is the registered name of the CSI driver
     */
-  var name: Input[String] = js.native
+  var name: Input[String]
 }
 object AllowedCSIDriver {
   

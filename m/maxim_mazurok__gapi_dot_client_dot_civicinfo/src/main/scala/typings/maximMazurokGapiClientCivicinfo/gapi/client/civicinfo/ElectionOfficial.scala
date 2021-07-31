@@ -2,26 +2,24 @@ package typings.maximMazurokGapiClientCivicinfo.gapi.client.civicinfo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ElectionOfficial extends StObject {
   
   /** The email address of the election official. */
-  var emailAddress: js.UndefOr[String] = js.native
+  var emailAddress: js.UndefOr[String] = js.undefined
   
   /** The fax number of the election official. */
-  var faxNumber: js.UndefOr[String] = js.native
+  var faxNumber: js.UndefOr[String] = js.undefined
   
   /** The full name of the election official. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The office phone number of the election official. */
-  var officePhoneNumber: js.UndefOr[String] = js.native
+  var officePhoneNumber: js.UndefOr[String] = js.undefined
   
   /** The title of the election official. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object ElectionOfficial {
   

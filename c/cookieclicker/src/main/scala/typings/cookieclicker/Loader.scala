@@ -8,81 +8,79 @@ import typings.std.HTMLImageElement
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Loader extends StObject {
   
   /**
     * Loads assets
     * @param assets The iterable of strings to get asset names from
     */
-  def Load(assets: js.Array[String]): Unit = js.native
+  def Load(assets: js.Array[String]): Unit
   
   /**
     * Replaces an asset if the original asset exists
     * @param old The name of the old asset
     * @param newer The name of the new asset, isn't prefixed by `this.prefix` if it has `http` in the name
     */
-  def Replace(old: String, newer: String): Unit = js.native
+  def Replace(old: String, newer: String): Unit
   
-  var assets: js.Array[js.UndefOr[scala.Nothing]] with (Record[String, HTMLImageElement]) = js.native
+  var assets: js.Array[Unit] & (Record[String, HTMLImageElement])
   
   /**
     * Names of the assets that have been loaded
     */
-  var assetsLoaded: js.Array[String] = js.native
+  var assetsLoaded: js.Array[String]
   
   /**
     * Names of the assets that are currently loading
     */
-  var assetsLoading: js.Array[String] = js.native
+  var assetsLoading: js.Array[String]
   
   /**
     * Total amount of assets, both loading and loaded
     */
-  var assetsN: Double = js.native
+  var assetsN: Double
   
   /**
     * An empty 8x8 canvas element, used in the `Pic` constructor
     */
-  var blank: HTMLCanvasElementwidth8he = js.native
+  var blank: HTMLCanvasElementwidth8he
   
   /**
     * The prefix to all assets
     */
-  var domain: String = js.native
+  var domain: String
   
   /**
     * A pseudoboolean, is true when all assets are loaded for the first time
     */
-  var doneLoading: PseudoBoolean = js.native
+  var doneLoading: PseudoBoolean
   
   /**
     * Returns the progress of loading all assets
     */
-  def getProgress(): Double = js.native
+  def getProgress(): Double
   
   /**
     * A callback to when all assets is loaded
     */
-  var loaded: PseudoNull | js.Function0[Unit] = js.native
+  var loaded: PseudoNull | js.Function0[Unit]
   
   /**
     * The amount of loading assets
     */
-  var loadingN: Double = js.native
+  var loadingN: Double
   
   /**
     * An internal callback function
     */
-  def onLoad(e: Event): Unit = js.native
+  def onLoad(e: Event): Unit
   
   /**
     * Unused @deprecated
     */
-  def onLoadReplace(): Unit = js.native
+  def onLoadReplace(): Unit
 }
 object Loader {
   
@@ -90,7 +88,7 @@ object Loader {
   def apply(
     Load: js.Array[String] => Unit,
     Replace: (String, String) => Unit,
-    assets: js.Array[js.UndefOr[scala.Nothing]] with (Record[String, HTMLImageElement]),
+    assets: js.Array[Unit] & (Record[String, HTMLImageElement]),
     assetsLoaded: js.Array[String],
     assetsLoading: js.Array[String],
     assetsN: Double,
@@ -111,7 +109,7 @@ object Loader {
   implicit class LoaderMutableBuilder[Self <: Loader] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setAssets(value: js.Array[js.UndefOr[scala.Nothing]] with (Record[String, HTMLImageElement])): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
+    def setAssets(value: js.Array[Unit] & (Record[String, HTMLImageElement])): Self = StObject.set(x, "assets", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setAssetsLoaded(value: js.Array[String]): Self = StObject.set(x, "assetsLoaded", value.asInstanceOf[js.Any])

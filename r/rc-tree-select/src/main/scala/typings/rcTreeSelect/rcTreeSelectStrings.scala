@@ -4,7 +4,6 @@ import typings.rcTreeSelect.interfaceMod.SelectSource
 import typings.rcTreeSelect.useKeyValueMappingMod._SkipType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rcTreeSelectStrings {
@@ -45,12 +44,16 @@ object rcTreeSelectStrings {
   def both: both = "both".asInstanceOf[both]
   
   @js.native
-  sealed trait checkbox extends _SkipType
+  sealed trait checkbox
+    extends StObject
+       with _SkipType
   @scala.inline
   def checkbox: checkbox = "checkbox".asInstanceOf[checkbox]
   
   @js.native
-  sealed trait clear extends SelectSource
+  sealed trait clear
+    extends StObject
+       with SelectSource
   @scala.inline
   def clear: clear = "clear".asInstanceOf[clear]
   
@@ -110,7 +113,9 @@ object rcTreeSelectStrings {
   def `inline`: `inline` = "inline".asInstanceOf[`inline`]
   
   @js.native
-  sealed trait input extends SelectSource
+  sealed trait input
+    extends StObject
+       with SelectSource
   @scala.inline
   def input: input = "input".asInstanceOf[input]
   
@@ -160,7 +165,9 @@ object rcTreeSelectStrings {
   def off: off = "off".asInstanceOf[off]
   
   @js.native
-  sealed trait option extends SelectSource
+  sealed trait option
+    extends StObject
+       with SelectSource
   @scala.inline
   def option: option = "option".asInstanceOf[option]
   
@@ -200,12 +207,16 @@ object rcTreeSelectStrings {
   def `removals text`: `removals text` = ("removals text").asInstanceOf[`removals text`]
   
   @js.native
-  sealed trait select extends _SkipType
+  sealed trait select
+    extends StObject
+       with _SkipType
   @scala.inline
   def select: select = "select".asInstanceOf[select]
   
   @js.native
-  sealed trait selection extends SelectSource
+  sealed trait selection
+    extends StObject
+       with SelectSource
   @scala.inline
   def selection: selection = "selection".asInstanceOf[selection]
   

@@ -2,15 +2,13 @@ package typings.nodeMailjet.mod.SMS
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Client extends StObject {
   
-  def get(action: String): GetResource = js.native
+  def get(action: String): GetResource
   
-  def post(action: String): PostResource = js.native
+  def post(action: String): PostResource
 }
 object Client {
   

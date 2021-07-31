@@ -2,19 +2,17 @@ package typings.googleapis.v1alpha1Mod.cloudbuildV1alpha1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for build operations.
   */
-@js.native
 trait SchemaBuildOperationMetadata extends StObject {
   
   /**
     * The build that the operation is tracking.
     */
-  var build: js.UndefOr[SchemaBuild] = js.native
+  var build: js.UndefOr[SchemaBuild] = js.undefined
 }
 object SchemaBuildOperationMetadata {
   

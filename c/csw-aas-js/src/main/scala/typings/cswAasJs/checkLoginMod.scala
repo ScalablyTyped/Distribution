@@ -4,21 +4,22 @@ import typings.react.mod.ReactNode
 import typings.react.mod.global.JSX.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkLoginMod {
   
-  @JSImport("csw-aas-js/dist/components/authentication/CheckLogin", JSImport.Default)
+  @JSImport("csw-aas-js/dist/components/authentication/CheckLogin", JSImport.Namespace)
   @js.native
-  def default(hasChildrenError: CheckLoginProps): Element = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(hasChildrenError: CheckLoginProps): Element = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(hasChildrenError.asInstanceOf[js.Any]).asInstanceOf[Element]
+  
   trait CheckLoginProps extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var error: ReactNode = js.native
+    var error: ReactNode
   }
   object CheckLoginProps {
     

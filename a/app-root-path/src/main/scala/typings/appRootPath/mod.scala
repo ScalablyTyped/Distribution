@@ -3,7 +3,6 @@ package typings.appRootPath
 import org.scalablytyped.runtime.Shortcut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -12,34 +11,33 @@ object mod extends Shortcut {
   @js.native
   val ^ : RootPath = js.native
   
-  @js.native
   trait RootPath extends StObject {
     
     /**
       * Application root directory absolute path
       * @type {string}
       */
-    var path: String = js.native
+    var path: String
     
     /**
       * Resolve module by relative addressing from root
       * @param {string} pathToModule
       * @returns {*}
       */
-    def require(pathToModule: String): js.Any = js.native
+    def require(pathToModule: String): js.Any
     
     /**
       * Resolves relative path from root to absolute path
       * @param {string} pathToModule
       * @returns {string}
       */
-    def resolve(pathToModule: String): String = js.native
+    def resolve(pathToModule: String): String
     
     /**
       * Explicitly set root path
       * @param {string} explicitlySetPath
       */
-    def setPath(explicitlySetPath: String): Unit = js.native
+    def setPath(explicitlySetPath: String): Unit
   }
   object RootPath {
     

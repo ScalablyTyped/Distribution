@@ -2,26 +2,24 @@ package typings.devtoolsProtocol.mod.Protocol.Profiler
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreciseCoverageDeltaUpdateEvent extends StObject {
   
   /**
     * Identifier for distinguishing coverage events.
     */
-  var occassion: String = js.native
+  var occassion: String
   
   /**
     * Coverage data for the current isolate.
     */
-  var result: js.Array[ScriptCoverage] = js.native
+  var result: js.Array[ScriptCoverage]
   
   /**
     * Monotonically increasing time (in seconds) when the coverage update was taken in the backend.
     */
-  var timestamp: Double = js.native
+  var timestamp: Double
 }
 object PreciseCoverageDeltaUpdateEvent {
   

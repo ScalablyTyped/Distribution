@@ -2,12 +2,14 @@ package typings.uifabricUtilities
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object hoistStaticsMod {
   
-  @JSImport("@uifabric/utilities/lib/hoistStatics", "hoistStatics")
+  @JSImport("@uifabric/utilities/lib/hoistStatics", JSImport.Namespace)
   @js.native
-  def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def hoistStatics[TSource /* <: js.Object */, TDest](source: TSource, dest: TDest): TDest = (^.asInstanceOf[js.Dynamic].applyDynamic("hoistStatics")(source.asInstanceOf[js.Any], dest.asInstanceOf[js.Any])).asInstanceOf[TDest]
 }

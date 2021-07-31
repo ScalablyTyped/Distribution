@@ -2,59 +2,57 @@ package typings.electron.Electron
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Product extends StObject {
   
   // Docs: https://electronjs.org/docs/api/structures/product
   /**
     * The total size of the content, in bytes.
     */
-  var contentLengths: js.Array[Double] = js.native
+  var contentLengths: js.Array[Double]
   
   /**
     * A string that identifies the version of the content.
     */
-  var contentVersion: String = js.native
+  var contentVersion: String
   
   /**
     * 3 character code presenting a product's currency based on the ISO 4217 standard.
     */
-  var currencyCode: String = js.native
+  var currencyCode: String
   
   /**
     * The locale formatted price of the product.
     */
-  var formattedPrice: String = js.native
+  var formattedPrice: String
   
   /**
     * A Boolean value that indicates whether the App Store has downloadable content
     * for this product. `true` if at least one file has been associated with the
     * product.
     */
-  var isDownloadable: Boolean = js.native
+  var isDownloadable: Boolean
   
   /**
     * A description of the product.
     */
-  var localizedDescription: String = js.native
+  var localizedDescription: String
   
   /**
     * The name of the product.
     */
-  var localizedTitle: String = js.native
+  var localizedTitle: String
   
   /**
     * The cost of the product in the local currency.
     */
-  var price: Double = js.native
+  var price: Double
   
   /**
     * The string that identifies the product to the Apple App Store.
     */
-  var productIdentifier: String = js.native
+  var productIdentifier: String
 }
 object Product {
   

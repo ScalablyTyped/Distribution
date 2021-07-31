@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ReposRemoveStatusCheckContextsResponseD
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersReposRemoveStatusCheckContextsEndpoint extends StObject {
   
-  var parameters: ReposRemoveStatusCheckContextsEndpoint = js.native
+  var parameters: ReposRemoveStatusCheckContextsEndpoint
   
-  var request: ReposRemoveStatusCheckContextsRequestOptions = js.native
+  var request: ReposRemoveStatusCheckContextsRequestOptions
   
-  var response: OctokitResponse[ReposRemoveStatusCheckContextsResponseData] = js.native
+  var response: OctokitResponse[ReposRemoveStatusCheckContextsResponseData]
 }
 object ParametersReposRemoveStatusCheckContextsEndpoint {
   

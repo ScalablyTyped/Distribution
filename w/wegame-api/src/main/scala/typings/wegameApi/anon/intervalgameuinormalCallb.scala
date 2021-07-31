@@ -5,16 +5,14 @@ import typings.wegameApi.wegameApiStrings.normal
 import typings.wegameApi.wegameApiStrings.ui
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  interval :'game' | 'ui' | 'normal'} & wegame-api.wx.types.Callbacks */
-@js.native
 trait intervalgameuinormalCallb extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 开始监听设备方向的变化。默认值normal，
@@ -22,9 +20,9 @@ trait intervalgameuinormalCallb extends StObject {
     * ui - 适用于更新 UI 的回调频率，在 60ms/次 左右
     * normal - 普通的回调频率，在 200ms/次 左右
     */
-  var interval: game | ui | normal = js.native
+  var interval: game | ui | normal
   
-  var success: js.UndefOr[js.Function0[Unit]] = js.native
+  var success: js.UndefOr[js.Function0[Unit]] = js.undefined
 }
 object intervalgameuinormalCallb {
   

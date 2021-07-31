@@ -2,17 +2,15 @@ package typings.squareConnect
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait AccessToken extends StObject {
     
-    var accessToken: String = js.native
+    var accessToken: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object AccessToken {
     
@@ -34,14 +32,13 @@ object anon {
     }
   }
   
-  @js.native
   trait In extends StObject {
     
-    var in: String = js.native
+    var in: String
     
-    var name: String = js.native
+    var name: String
     
-    var `type`: String = js.native
+    var `type`: String
   }
   object In {
     
@@ -66,12 +63,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Oauth2 extends StObject {
     
-    var oauth2: AccessToken = js.native
+    var oauth2: AccessToken
     
-    var oauth2ClientSecret: In = js.native
+    var oauth2ClientSecret: In
   }
   object Oauth2 {
     

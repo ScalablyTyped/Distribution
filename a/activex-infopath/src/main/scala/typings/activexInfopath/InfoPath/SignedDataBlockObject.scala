@@ -3,30 +3,28 @@ package typings.activexInfopath.InfoPath
 import typings.activexMsxml2.MSXML2.IXMLDOMNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SignedDataBlockObject extends StObject {
   
-  val Caption: String = js.native
+  val Caption: String
   
   @JSName("InfoPath.SignedDataBlockObject_typekey")
-  var InfoPathDotSignedDataBlockObject_typekey: SignedDataBlockObject = js.native
+  var InfoPathDotSignedDataBlockObject_typekey: SignedDataBlockObject
   
-  val Name: String = js.native
+  val Name: String
   
-  def Sign(): Unit = js.native
+  def Sign(): Unit
   
-  val SignatureContainer: IXMLDOMNode = js.native
+  val SignatureContainer: IXMLDOMNode
   
-  val SignatureRelation: XdSignatureRelation = js.native
+  val SignatureRelation: XdSignatureRelation
   
-  val Signatures: SignaturesCollection = js.native
+  val Signatures: SignaturesCollection
   
-  val XPath: String = js.native
+  val XPath: String
   
-  val XPathNamespaceDeclarations: String = js.native
+  val XPathNamespaceDeclarations: String
 }
 object SignedDataBlockObject {
   

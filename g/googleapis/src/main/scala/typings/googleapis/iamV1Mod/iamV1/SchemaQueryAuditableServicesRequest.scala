@@ -2,13 +2,11 @@ package typings.googleapis.iamV1Mod.iamV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A request to get the list of auditable services for a resource.
   */
-@js.native
 trait SchemaQueryAuditableServicesRequest extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait SchemaQueryAuditableServicesRequest extends StObject {
     * For example, a Cloud Platform project with id `my-project` will be named
     * `//cloudresourcemanager.googleapis.com/projects/my-project`.
     */
-  var fullResourceName: js.UndefOr[String] = js.native
+  var fullResourceName: js.UndefOr[String] = js.undefined
 }
 object SchemaQueryAuditableServicesRequest {
   

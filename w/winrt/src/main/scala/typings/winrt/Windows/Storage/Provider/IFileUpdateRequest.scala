@@ -4,21 +4,19 @@ import typings.winrt.Windows.Storage.IStorageFile
 import typings.winrt.Windows.Storage.StorageFile
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IFileUpdateRequest extends StObject {
   
-  var contentId: String = js.native
+  var contentId: String
   
-  var file: StorageFile = js.native
+  var file: StorageFile
   
-  def getDeferral(): FileUpdateRequestDeferral = js.native
+  def getDeferral(): FileUpdateRequestDeferral
   
-  var status: FileUpdateStatus = js.native
+  var status: FileUpdateStatus
   
-  def updateLocalFile(value: IStorageFile): Unit = js.native
+  def updateLocalFile(value: IStorageFile): Unit
 }
 object IFileUpdateRequest {
   

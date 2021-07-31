@@ -2,15 +2,13 @@ package typings.sparqljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Ordering extends StObject {
   
-  var descending: js.UndefOr[Boolean] = js.native
+  var descending: js.UndefOr[Boolean] = js.undefined
   
-  var expression: Expression = js.native
+  var expression: Expression
 }
 object Ordering {
   

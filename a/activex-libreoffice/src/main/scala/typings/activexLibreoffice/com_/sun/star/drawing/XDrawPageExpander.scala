@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -12,14 +11,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @deprecated Deprecated
   * @see XDrawPageSummarizer
   */
-@js.native
-trait XDrawPageExpander extends XInterface {
+trait XDrawPageExpander
+  extends StObject
+     with XInterface {
   
   /**
     * creates a collection of {@link DrawPages} from the summary inside the given {@link DrawPage} and adds them to the same model as the source {@link
     * DrawPage} .
     */
-  def expand(xPage: XDrawPage): XDrawPages = js.native
+  def expand(xPage: XDrawPage): XDrawPages
 }
 object XDrawPageExpander {
   

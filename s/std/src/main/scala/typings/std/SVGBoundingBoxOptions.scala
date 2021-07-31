@@ -2,19 +2,17 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGBoundingBoxOptions extends StObject {
   
-  var clipped: js.UndefOr[scala.Boolean] = js.native
+  var clipped: js.UndefOr[scala.Boolean] = js.undefined
   
-  var fill: js.UndefOr[scala.Boolean] = js.native
+  var fill: js.UndefOr[scala.Boolean] = js.undefined
   
-  var markers: js.UndefOr[scala.Boolean] = js.native
+  var markers: js.UndefOr[scala.Boolean] = js.undefined
   
-  var stroke: js.UndefOr[scala.Boolean] = js.native
+  var stroke: js.UndefOr[scala.Boolean] = js.undefined
 }
 object SVGBoundingBoxOptions {
   

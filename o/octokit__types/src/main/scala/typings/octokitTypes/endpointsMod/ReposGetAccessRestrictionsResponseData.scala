@@ -5,25 +5,23 @@ import typings.octokitTypes.anon.Events
 import typings.octokitTypes.anon.Membersurl
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposGetAccessRestrictionsResponseData extends StObject {
   
-  var apps: js.Array[Events] = js.native
+  var apps: js.Array[Events]
   
-  var apps_url: String = js.native
+  var apps_url: String
   
-  var teams: js.Array[Membersurl] = js.native
+  var teams: js.Array[Membersurl]
   
-  var teams_url: String = js.native
+  var teams_url: String
   
-  var url: String = js.native
+  var url: String
   
-  var users: js.Array[Avatarurl] = js.native
+  var users: js.Array[Avatarurl]
   
-  var users_url: String = js.native
+  var users_url: String
 }
 object ReposGetAccessRestrictionsResponseData {
   

@@ -2,36 +2,34 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrencyFeatureSetPrice extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var currencySymbol: js.UndefOr[String] = js.native
+  var currencySymbol: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var envelopeFee: js.UndefOr[String] = js.native
+  var envelopeFee: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var fixedFee: js.UndefOr[String] = js.native
+  var fixedFee: js.UndefOr[String] = js.undefined
   
   /**
     * Reserved for DocuSign.
     */
-  var seatFee: js.UndefOr[String] = js.native
+  var seatFee: js.UndefOr[String] = js.undefined
 }
 object CurrencyFeatureSetPrice {
   

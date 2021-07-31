@@ -14,10 +14,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.imperial
 import typings.arcgisJsApi.arcgisJsApiStrings.metric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AreaMeasurement3DViewModelProperties extends StObject {
   
   /**
@@ -27,7 +25,7 @@ trait AreaMeasurement3DViewModelProperties extends StObject {
     */
   var unit: js.UndefOr[
     metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-  ] = js.native
+  ] = js.undefined
   
   /**
     * List of available units and unit systems (imperial, metric) for displaying the area values.
@@ -38,14 +36,14 @@ trait AreaMeasurement3DViewModelProperties extends StObject {
     js.Array[
       metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
     ]
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The view from which the widget will operate.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-AreaMeasurement3D-AreaMeasurement3DViewModel.html#view)
     */
-  var view: js.UndefOr[SceneViewProperties] = js.native
+  var view: js.UndefOr[SceneViewProperties] = js.undefined
 }
 object AreaMeasurement3DViewModelProperties {
   

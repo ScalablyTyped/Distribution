@@ -7,7 +7,6 @@ import typings.std.Element
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -16,15 +15,18 @@ object mod {
   @js.native
   class MDCDialog protected ()
     extends typings.materialDialog.componentMod.MDCDialog {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialDialog.foundationMod.MDCDialogFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCDialog {
     
-    @JSImport("@material/dialog", "MDCDialog.attachTo")
+    @JSImport("@material/dialog", "MDCDialog")
     @js.native
-    def attachTo(root: Element): typings.materialDialog.componentMod.MDCDialog = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialDialog.componentMod.MDCDialog = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialDialog.componentMod.MDCDialog]
   }
   
   @JSImport("@material/dialog", "MDCDialogFoundation")
@@ -196,22 +198,21 @@ object mod {
   
   object util {
     
-    @JSImport("@material/dialog", "util.areTopsMisaligned")
+    @JSImport("@material/dialog", "util")
     @js.native
-    def areTopsMisaligned(els: js.Array[HTMLElement]): Boolean = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@material/dialog", "util.createFocusTrapInstance")
-    @js.native
-    def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory): FocusTrap = js.native
-    @JSImport("@material/dialog", "util.createFocusTrapInstance")
-    @js.native
-    def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory, initialFocusEl: HTMLElement): FocusTrap = js.native
+    @scala.inline
+    def areTopsMisaligned(els: js.Array[HTMLElement]): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("areTopsMisaligned")(els.asInstanceOf[js.Any]).asInstanceOf[Boolean]
     
-    @JSImport("@material/dialog", "util.isScrollable")
-    @js.native
-    def isScrollable(): Boolean = js.native
-    @JSImport("@material/dialog", "util.isScrollable")
-    @js.native
-    def isScrollable(el: HTMLElement): Boolean = js.native
+    @scala.inline
+    def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+    @scala.inline
+    def createFocusTrapInstance(surfaceEl: HTMLElement, focusTrapFactory: MDCDialogFocusTrapFactory, initialFocusEl: HTMLElement): FocusTrap = (^.asInstanceOf[js.Dynamic].applyDynamic("createFocusTrapInstance")(surfaceEl.asInstanceOf[js.Any], focusTrapFactory.asInstanceOf[js.Any], initialFocusEl.asInstanceOf[js.Any])).asInstanceOf[FocusTrap]
+    
+    @scala.inline
+    def isScrollable(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")().asInstanceOf[Boolean]
+    @scala.inline
+    def isScrollable(el: HTMLElement): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isScrollable")(el.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   }
 }

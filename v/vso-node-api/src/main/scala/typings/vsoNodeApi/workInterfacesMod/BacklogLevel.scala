@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BacklogLevel extends StObject {
   
   /**
     * Reference name of the corresponding WIT category
     */
-  var categoryReferenceName: String = js.native
+  var categoryReferenceName: String
   
   /**
     * Plural name for the backlog level
     */
-  var pluralName: String = js.native
+  var pluralName: String
   
   /**
     * Collection of work item states that are included in the plan. The server will filter to only these work item types.
     */
-  var workItemStates: js.Array[String] = js.native
+  var workItemStates: js.Array[String]
   
   /**
     * Collection of valid workitem type names for the given backlog level
     */
-  var workItemTypes: js.Array[String] = js.native
+  var workItemTypes: js.Array[String]
 }
 object BacklogLevel {
   

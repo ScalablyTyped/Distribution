@@ -10,10 +10,11 @@ import typings.needle.needleStrings.xml
 import typings.node.Buffer
 import typings.node.httpMod.Agent
 import typings.node.httpMod.IncomingMessage
+import typings.node.netMod.Socket
+import typings.node.tlsMod.SecureContextOptions
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -25,183 +26,136 @@ object mod {
     * @param method Designates an HTTP verb for the request.
     * @param data May be null when issuing an HTTP DELETE request, but you need to explicity pass it.
     */
-  @JSImport("needle", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     method: typings.needle.mod.core.NeedleHttpVerbs,
     url: String,
     data: typings.needle.mod.core.BodyData
-  ): js.Promise[typings.needle.mod.core.NeedleResponse] = js.native
-  @JSImport("needle", JSImport.Namespace)
-  @js.native
+  ): js.Promise[typings.needle.mod.core.NeedleResponse] = (^.asInstanceOf[js.Dynamic].apply(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.needle.mod.core.NeedleResponse]]
+  @scala.inline
   def apply(
     method: typings.needle.mod.core.NeedleHttpVerbs,
     url: String,
     data: typings.needle.mod.core.BodyData,
     options: typings.needle.mod.core.NeedleOptions
-  ): js.Promise[typings.needle.mod.core.NeedleResponse] = js.native
+  ): js.Promise[typings.needle.mod.core.NeedleResponse] = (^.asInstanceOf[js.Dynamic].apply(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.needle.mod.core.NeedleResponse]]
   /**
     * Calling needle() directly returns a Promise.
     *
     * Since needle 2.0
     * @param method Designates an HTTP verb for the request.
     */
-  @JSImport("needle", JSImport.Namespace)
-  @js.native
-  def apply(method: NeedleReadonlyHttpVerbs, url: String): js.Promise[typings.needle.mod.core.NeedleResponse] = js.native
-  @JSImport("needle", JSImport.Namespace)
-  @js.native
-  def apply(method: NeedleReadonlyHttpVerbs, url: String, options: typings.needle.mod.core.NeedleOptions): js.Promise[typings.needle.mod.core.NeedleResponse] = js.native
+  @scala.inline
+  def apply(method: NeedleReadonlyHttpVerbs, url: String): js.Promise[typings.needle.mod.core.NeedleResponse] = (^.asInstanceOf[js.Dynamic].apply(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.needle.mod.core.NeedleResponse]]
+  @scala.inline
+  def apply(method: NeedleReadonlyHttpVerbs, url: String, options: typings.needle.mod.core.NeedleOptions): js.Promise[typings.needle.mod.core.NeedleResponse] = (^.asInstanceOf[js.Dynamic].apply(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[typings.needle.mod.core.NeedleResponse]]
   
-  @JSImport("needle", "defaults")
+  @JSImport("needle", JSImport.Namespace)
   @js.native
-  def defaults(options: NeedleOptions): NeedleOptions = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def defaults(options: NeedleOptions): NeedleOptions = ^.asInstanceOf[js.Dynamic].applyDynamic("defaults")(options.asInstanceOf[js.Any]).asInstanceOf[NeedleOptions]
   
   /**
     * Issues an HTTP DELETE request.
     */
-  @JSImport("needle", "delete")
-  @js.native
-  def delete(url: String, data: BodyData): ReadableStream = js.native
-  @JSImport("needle", "delete")
-  @js.native
-  def delete(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "delete")
-  @js.native
-  def delete(url: String, data: BodyData, options: js.UndefOr[scala.Nothing], callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "delete")
-  @js.native
-  def delete(url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "delete")
-  @js.native
-  def delete(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  @scala.inline
+  def delete(url: String, data: BodyData): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def delete(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def delete(url: String, data: BodyData, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def delete(url: String, data: BodyData, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def delete(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   /**
     * Issues an HTTP DELETE request.
     */
-  @JSImport("needle", "deleteFunc")
-  @js.native
-  def deleteFunc(url: String, data: BodyData): ReadableStream = js.native
-  @JSImport("needle", "deleteFunc")
-  @js.native
-  def deleteFunc(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "deleteFunc")
-  @js.native
-  def deleteFunc(url: String, data: BodyData, options: js.UndefOr[scala.Nothing], callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "deleteFunc")
-  @js.native
-  def deleteFunc(url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "deleteFunc")
-  @js.native
-  def deleteFunc(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  @scala.inline
+  def deleteFunc(url: String, data: BodyData): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFunc")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def deleteFunc(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFunc")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def deleteFunc(url: String, data: BodyData, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFunc")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def deleteFunc(url: String, data: BodyData, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFunc")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def deleteFunc(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("deleteFunc")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("needle", "get")
-  @js.native
-  def get(url: String): ReadableStream = js.native
-  @JSImport("needle", "get")
-  @js.native
-  def get(url: String, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "get")
-  @js.native
-  def get(url: String, options: js.UndefOr[scala.Nothing], callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "get")
-  @js.native
-  def get(url: String, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "get")
-  @js.native
-  def get(url: String, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  @scala.inline
+  def get(url: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def get(url: String, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def get(url: String, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def get(url: String, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def get(url: String, options: NeedleOptions, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("needle", "head")
-  @js.native
-  def head(url: String): ReadableStream = js.native
-  @JSImport("needle", "head")
-  @js.native
-  def head(url: String, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "head")
-  @js.native
-  def head(url: String, options: js.UndefOr[scala.Nothing], callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "head")
-  @js.native
-  def head(url: String, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "head")
-  @js.native
-  def head(url: String, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  @scala.inline
+  def head(url: String): ReadableStream = ^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any]).asInstanceOf[ReadableStream]
+  @scala.inline
+  def head(url: String, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def head(url: String, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def head(url: String, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def head(url: String, options: NeedleOptions, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("head")(url.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("needle", "patch")
-  @js.native
-  def patch(url: String, data: BodyData): ReadableStream = js.native
-  @JSImport("needle", "patch")
-  @js.native
-  def patch(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "patch")
-  @js.native
-  def patch(url: String, data: BodyData, options: js.UndefOr[scala.Nothing], callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "patch")
-  @js.native
-  def patch(url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "patch")
-  @js.native
-  def patch(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  @scala.inline
+  def patch(url: String, data: BodyData): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def patch(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def patch(url: String, data: BodyData, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def patch(url: String, data: BodyData, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def patch(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("patch")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("needle", "post")
-  @js.native
-  def post(url: String, data: BodyData): ReadableStream = js.native
-  @JSImport("needle", "post")
-  @js.native
-  def post(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "post")
-  @js.native
-  def post(url: String, data: BodyData, options: js.UndefOr[scala.Nothing], callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "post")
-  @js.native
-  def post(url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "post")
-  @js.native
-  def post(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  @scala.inline
+  def post(url: String, data: BodyData): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def post(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def post(url: String, data: BodyData, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def post(url: String, data: BodyData, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def post(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("post")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("needle", "put")
-  @js.native
-  def put(url: String, data: BodyData): ReadableStream = js.native
-  @JSImport("needle", "put")
-  @js.native
-  def put(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "put")
-  @js.native
-  def put(url: String, data: BodyData, options: js.UndefOr[scala.Nothing], callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "put")
-  @js.native
-  def put(url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "put")
-  @js.native
-  def put(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = js.native
+  @scala.inline
+  def put(url: String, data: BodyData): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def put(url: String, data: BodyData, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def put(url: String, data: BodyData, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def put(url: String, data: BodyData, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def put(url: String, data: BodyData, options: NeedleOptions, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
-  @JSImport("needle", "request")
-  @js.native
-  def request(method: NeedleHttpVerbs, url: String, data: BodyData): ReadableStream = js.native
-  @JSImport("needle", "request")
-  @js.native
-  def request(method: NeedleHttpVerbs, url: String, data: BodyData, callback: NeedleCallback): ReadableStream = js.native
-  @JSImport("needle", "request")
-  @js.native
-  def request(
-    method: NeedleHttpVerbs,
-    url: String,
-    data: BodyData,
-    options: js.UndefOr[scala.Nothing],
-    callback: NeedleCallback
-  ): ReadableStream = js.native
-  @JSImport("needle", "request")
-  @js.native
-  def request(method: NeedleHttpVerbs, url: String, data: BodyData, options: NeedleOptions): ReadableStream = js.native
-  @JSImport("needle", "request")
-  @js.native
+  @scala.inline
+  def request(method: NeedleHttpVerbs, url: String, data: BodyData): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def request(method: NeedleHttpVerbs, url: String, data: BodyData, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def request(method: NeedleHttpVerbs, url: String, data: BodyData, options: Unit, callback: NeedleCallback): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
+  def request(method: NeedleHttpVerbs, url: String, data: BodyData, options: NeedleOptions): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
+  @scala.inline
   def request(
     method: NeedleHttpVerbs,
     url: String,
     data: BodyData,
     options: NeedleOptions,
     callback: NeedleCallback
-  ): ReadableStream = js.native
+  ): ReadableStream = (^.asInstanceOf[js.Dynamic].applyDynamic("request")(method.asInstanceOf[js.Any], url.asInstanceOf[js.Any], data.asInstanceOf[js.Any], options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[ReadableStream]
   
   type BodyData = typings.needle.mod.core.BodyData
   
@@ -260,7 +214,175 @@ object mod {
       def put: typings.needle.needleStrings.put = "put".asInstanceOf[typings.needle.needleStrings.put]
     }
     
-    type NeedleOptions = RequestOptions with ResponseOptions with RedirectOptions with typings.node.httpsMod.RequestOptions
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.node.httpMod.ClientRequestArgs because var conflicts: agent, auth, headers, localAddress, timeout. Inlined port, protocol, method, defaultPort, setHost, _defaultAgent, hostname, maxHeaderSize, host, socketPath, createConnection, path, family
+    - typings.node.httpsMod.RequestOptions because var conflicts: agent, auth, headers, localAddress, timeout. Inlined servername, rejectUnauthorized */ trait NeedleOptions
+      extends StObject
+         with RequestOptions
+         with ResponseOptions
+         with RedirectOptions
+         with SecureContextOptions {
+      
+      var _defaultAgent: js.UndefOr[Agent] = js.undefined
+      
+      // https://github.com/nodejs/node/blob/master/lib/_http_client.js#L278
+      var createConnection: js.UndefOr[
+            js.Function2[
+              /* options */ this.type, 
+              /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit], 
+              Socket
+            ]
+          ] = js.undefined
+      
+      var defaultPort: js.UndefOr[Double | String] = js.undefined
+      
+      var family: js.UndefOr[Double] = js.undefined
+      
+      var host: js.UndefOr[String | Null] = js.undefined
+      
+      var hostname: js.UndefOr[String | Null] = js.undefined
+      
+      /**
+        * @default 8192
+        */
+      var maxHeaderSize: js.UndefOr[Double] = js.undefined
+      
+      var method: js.UndefOr[String] = js.undefined
+      
+      var path: js.UndefOr[String | Null] = js.undefined
+      
+      var port: js.UndefOr[Double | String | Null] = js.undefined
+      
+      var protocol: js.UndefOr[String | Null] = js.undefined
+      
+      var rejectUnauthorized: js.UndefOr[Boolean] = js.undefined
+      
+      // Defaults to true
+      var servername: js.UndefOr[String] = js.undefined
+      
+      var setHost: js.UndefOr[Boolean] = js.undefined
+      
+      var socketPath: js.UndefOr[String] = js.undefined
+    }
+    object NeedleOptions {
+      
+      @scala.inline
+      def apply(): typings.needle.mod.core.NeedleOptions = {
+        val __obj = js.Dynamic.literal()
+        __obj.asInstanceOf[typings.needle.mod.core.NeedleOptions]
+      }
+      
+      @scala.inline
+      implicit class NeedleOptionsMutableBuilder[Self <: typings.needle.mod.core.NeedleOptions] (val x: Self) extends AnyVal {
+        
+        @scala.inline
+        def setCreateConnection(
+          value: (typings.needle.mod.core.NeedleOptions, /* oncreate */ js.Function2[/* err */ Error, /* socket */ Socket, Unit]) => Socket
+        ): Self = StObject.set(x, "createConnection", js.Any.fromFunction2(value))
+        
+        @scala.inline
+        def setCreateConnectionUndefined: Self = StObject.set(x, "createConnection", js.undefined)
+        
+        @scala.inline
+        def setDefaultPort(value: Double | String): Self = StObject.set(x, "defaultPort", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setDefaultPortUndefined: Self = StObject.set(x, "defaultPort", js.undefined)
+        
+        @scala.inline
+        def setFamily(value: Double): Self = StObject.set(x, "family", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setFamilyUndefined: Self = StObject.set(x, "family", js.undefined)
+        
+        @scala.inline
+        def setHost(value: String): Self = StObject.set(x, "host", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setHostNull: Self = StObject.set(x, "host", null)
+        
+        @scala.inline
+        def setHostUndefined: Self = StObject.set(x, "host", js.undefined)
+        
+        @scala.inline
+        def setHostname(value: String): Self = StObject.set(x, "hostname", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setHostnameNull: Self = StObject.set(x, "hostname", null)
+        
+        @scala.inline
+        def setHostnameUndefined: Self = StObject.set(x, "hostname", js.undefined)
+        
+        @scala.inline
+        def setMaxHeaderSize(value: Double): Self = StObject.set(x, "maxHeaderSize", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setMaxHeaderSizeUndefined: Self = StObject.set(x, "maxHeaderSize", js.undefined)
+        
+        @scala.inline
+        def setMethod(value: String): Self = StObject.set(x, "method", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setMethodUndefined: Self = StObject.set(x, "method", js.undefined)
+        
+        @scala.inline
+        def setPath(value: String): Self = StObject.set(x, "path", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setPathNull: Self = StObject.set(x, "path", null)
+        
+        @scala.inline
+        def setPathUndefined: Self = StObject.set(x, "path", js.undefined)
+        
+        @scala.inline
+        def setPort(value: Double | String): Self = StObject.set(x, "port", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setPortNull: Self = StObject.set(x, "port", null)
+        
+        @scala.inline
+        def setPortUndefined: Self = StObject.set(x, "port", js.undefined)
+        
+        @scala.inline
+        def setProtocol(value: String): Self = StObject.set(x, "protocol", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setProtocolNull: Self = StObject.set(x, "protocol", null)
+        
+        @scala.inline
+        def setProtocolUndefined: Self = StObject.set(x, "protocol", js.undefined)
+        
+        @scala.inline
+        def setRejectUnauthorized(value: Boolean): Self = StObject.set(x, "rejectUnauthorized", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setRejectUnauthorizedUndefined: Self = StObject.set(x, "rejectUnauthorized", js.undefined)
+        
+        @scala.inline
+        def setServername(value: String): Self = StObject.set(x, "servername", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setServernameUndefined: Self = StObject.set(x, "servername", js.undefined)
+        
+        @scala.inline
+        def setSetHost(value: Boolean): Self = StObject.set(x, "setHost", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSetHostUndefined: Self = StObject.set(x, "setHost", js.undefined)
+        
+        @scala.inline
+        def setSocketPath(value: String): Self = StObject.set(x, "socketPath", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def setSocketPathUndefined: Self = StObject.set(x, "socketPath", js.undefined)
+        
+        @scala.inline
+        def set_defaultAgent(value: Agent): Self = StObject.set(x, "_defaultAgent", value.asInstanceOf[js.Any])
+        
+        @scala.inline
+        def set_defaultAgentUndefined: Self = StObject.set(x, "_defaultAgent", js.undefined)
+      }
+    }
     
     /* Rewritten from type alias, can be one of: 
       - typings.needle.needleStrings.delete
@@ -312,7 +434,6 @@ object mod {
     
     type ReadableStream = typings.node.NodeJS.ReadableStream
     
-    @js.native
     trait RedirectOptions extends StObject {
       
       /**
@@ -320,40 +441,40 @@ object mod {
         * as the original request.
         * false by default.
         */
-      var follow_if_same_host: js.UndefOr[Boolean] = js.native
+      var follow_if_same_host: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Unless true, Needle will not follow redirects that point to same location (as set in the response header) as the original request URL. false by default.
         */
-      var follow_if_same_location: js.UndefOr[Boolean] = js.native
+      var follow_if_same_location: js.UndefOr[Boolean] = js.undefined
       
       /**
         * When true, Needle will only follow redirects that point to the same protocol
         * as the original request.
         * false by default.
         */
-      var follow_if_same_protocol: js.UndefOr[Boolean] = js.native
+      var follow_if_same_protocol: js.UndefOr[Boolean] = js.undefined
       
       /**
         * If enabled, resends the request using the original verb
         * instead of being rewritten to get with no data.
         * false by default.
         */
-      var follow_keep_method: js.UndefOr[Boolean] = js.native
+      var follow_keep_method: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sends the cookies received in the set-cookie header
         * as part of the following request.
         * false by default.
         */
-      var follow_set_cookie: js.UndefOr[Boolean] = js.native
+      var follow_set_cookie: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets the 'Referer' header to the requested URI
         * when following a redirect.
         * false by default.
         */
-      var follow_set_referer: js.UndefOr[Boolean] = js.native
+      var follow_set_referer: js.UndefOr[Boolean] = js.undefined
     }
     object RedirectOptions {
       
@@ -404,40 +525,39 @@ object mod {
       }
     }
     
-    @js.native
     trait RequestOptions extends StObject {
       
       /**
         * Sets 'Accept' HTTP header. Defaults to &#x2a;&#x2f;&#x2a;.
         */
-      var accept: js.UndefOr[String] = js.native
+      var accept: js.UndefOr[String] = js.undefined
       
       /**
         * Uses an http.Agent of your choice, instead of the global, default one.
         * Useful for tweaking the behaviour at the connection level, such as when doing tunneling.
         */
-      var agent: js.UndefOr[Agent | Boolean] = js.native
+      var agent: js.UndefOr[Agent | Boolean] = js.undefined
       
       /**
         * Determines what to do with provided username/password.
         * Options are auto, digest or basic (default).
         * auto will detect the type of authentication depending on the response headers.
         */
-      var auth: js.UndefOr[auto | digest | basic] = js.native
+      var auth: js.UndefOr[auto | digest | basic] = js.undefined
       
       /**
         * If true, sets 'Accept-Encoding' header to 'gzip,deflate',
         * and inflates content if zipped.
         * Defaults to false.
         */
-      var compressed: js.UndefOr[Boolean] = js.native
+      var compressed: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Sets 'Connection' HTTP header.
         * Not set by default, unless running Node < 0.11.4
         * in which case it defaults to close.
         */
-      var connection: js.UndefOr[String] = js.native
+      var connection: js.UndefOr[String] = js.undefined
       
       /**
         * Sets the 'Content-Type' header.
@@ -447,75 +567,75 @@ object mod {
         * That is, of course, unless the option is passed,
         * either here or through options.headers.
         */
-      var content_type: js.UndefOr[String] = js.native
+      var content_type: js.UndefOr[String] = js.undefined
       
       // These properties are overwritten by those in the 'headers' field
       /**
         * Builds and sets a Cookie header from a { key: 'value' } object.
         */
-      var cookies: js.UndefOr[Cookies] = js.native
+      var cookies: js.UndefOr[Cookies] = js.undefined
       
       /**
         * Alias for follow_max
         */
-      var follow: js.UndefOr[Double] = js.native
+      var follow: js.UndefOr[Double] = js.undefined
       
       /**
         * Number of redirects to follow. Defaults to 0.
         */
-      var follow_max: js.UndefOr[Double] = js.native
+      var follow_max: js.UndefOr[Double] = js.undefined
       
       /**
         * Object containing custom HTTP headers for request.
         */
-      var headers: js.UndefOr[js.Object] = js.native
+      var headers: js.UndefOr[js.Object] = js.undefined
       
       /**
         * When true, sets content type to application/json and sends request body as JSON string,
         * instead of a query string.
         */
-      var json: js.UndefOr[Boolean] = js.native
+      var json: js.UndefOr[Boolean] = js.undefined
       
       /**
         * IP address. Passed to http/https request. Local interface from which the request should be emitted.
         */
-      var localAddress: js.UndefOr[String] = js.native
+      var localAddress: js.UndefOr[String] = js.undefined
       
       /**
         * Enables multipart/form-data encoding. Defaults to false.
         * Use it when uploading files.
         */
-      var multipart: js.UndefOr[Boolean] = js.native
+      var multipart: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Returns error if connection takes longer than X milisecs to establish.
         * Defaults to 10000 (10 secs). 0 means no timeout.
         */
-      var open_timeout: js.UndefOr[Double] = js.native
+      var open_timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * For HTTP basic auth. Requires username to be passed, but is optional.
         */
-      var password: js.UndefOr[String] = js.native
+      var password: js.UndefOr[String] = js.undefined
       
       /**
         * Forwards request through HTTP(s) proxy.
         * Eg. proxy: 'http://user:pass@proxy.server.com:3128'.
         * For more advanced proxying/tunneling use a custom agent.
         */
-      var proxy: js.UndefOr[String] = js.native
+      var proxy: js.UndefOr[String] = js.undefined
       
       /**
         * Returns error if data transfer takes longer than X milisecs,
         * after connection is established. Defaults to 0 (no timeout).
         */
-      var read_timeout: js.UndefOr[Double] = js.native
+      var read_timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * Returns error if no response headers are received in X milisecs,
         * counting from when the connection is opened. Defaults to `0` (no response timeout).
         */
-      var response_timeout: js.UndefOr[Double] = js.native
+      var response_timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * When sending streams, this lets manually set the Content-Length header
@@ -526,30 +646,30 @@ object mod {
         * or leave unset for the default behavior,
         * which is no Content-Length header for stream payloads.
         */
-      var stream_length: js.UndefOr[Double] = js.native
+      var stream_length: js.UndefOr[Double] = js.undefined
       
       /**
         * Alias for open_timeout
         */
-      var timeout: js.UndefOr[Double] = js.native
+      var timeout: js.UndefOr[Double] = js.undefined
       
       /**
         * Anonymous function taking request (or redirect location if following redirects) URI as an argument and modifying it given logic.
         * It has to return a valid URI string for successful request.
         */
-      var uri_modifier: js.UndefOr[js.Function1[/* uri */ String, String]] = js.native
+      var uri_modifier: js.UndefOr[js.Function1[/* uri */ String, String]] = js.undefined
       
       /**
         * Sets the 'User-Agent' HTTP header.
         * Defaults to Needle/{version} (Node.js {node_version}).
         */
-      var user_agent: js.UndefOr[String] = js.native
+      var user_agent: js.UndefOr[String] = js.undefined
       
       // Overwritten if present in the URI
       /**
         * For HTTP basic auth.
         */
-      var username: js.UndefOr[String] = js.native
+      var username: js.UndefOr[String] = js.undefined
     }
     object RequestOptions {
       
@@ -702,37 +822,36 @@ object mod {
       }
     }
     
-    @js.native
     trait ResponseOptions extends StObject {
       
       /**
         * Alias for decode_response
         */
-      var decode: js.UndefOr[Boolean] = js.native
+      var decode: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to decode the text responses to UTF-8,
         * if Content-Type header shows a different charset. Defaults to true.
         */
-      var decode_response: js.UndefOr[Boolean] = js.native
+      var decode_response: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Dump response output to file.
         * This occurs after parsing and charset decoding is done.
         */
-      var output: js.UndefOr[String] = js.native
+      var output: js.UndefOr[String] = js.undefined
       
       /**
         * Alias for parse_response
         */
-      var parse: js.UndefOr[Boolean | json | xml] = js.native
+      var parse: js.UndefOr[Boolean | json | xml] = js.undefined
       
       /**
         * Whether to parse response’s Set-Cookie header.
         * Defaults to true.
         * If parsed, response cookies will be available at resp.cookies.
         */
-      var parse_cookies: js.UndefOr[Boolean] = js.native
+      var parse_cookies: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Whether to parse XML or JSON response bodies automagically.
@@ -740,7 +859,7 @@ object mod {
         * You can also set this to 'xml' or 'json' in which case Needle
         * will only parse the response if the content type matches.
         */
-      var parse_response: js.UndefOr[Boolean | json | xml] = js.native
+      var parse_response: js.UndefOr[Boolean | json | xml] = js.undefined
     }
     object ResponseOptions {
       

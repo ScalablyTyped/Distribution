@@ -5,33 +5,31 @@ import typings.hummusRecipe.hummusRecipeStrings.grey
 import typings.hummusRecipe.hummusRecipeStrings.rgb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RecipeOptions extends StObject {
   
-  var author: js.UndefOr[String] = js.native
+  var author: js.UndefOr[String] = js.undefined
   
-  var colorspace: js.UndefOr[rgb | cmyk | grey] = js.native
+  var colorspace: js.UndefOr[rgb | cmyk | grey] = js.undefined
   
-  var fontSrcPath: js.UndefOr[String | js.Array[String]] = js.native
+  var fontSrcPath: js.UndefOr[String | js.Array[String]] = js.undefined
   
-  var keywords: js.UndefOr[js.Array[String]] = js.native
+  var keywords: js.UndefOr[js.Array[String]] = js.undefined
   
-  var ownerPassword: js.UndefOr[String] = js.native
+  var ownerPassword: js.UndefOr[String] = js.undefined
   
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
-  var subject: js.UndefOr[String] = js.native
+  var subject: js.UndefOr[String] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var userPassword: js.UndefOr[String] = js.native
+  var userPassword: js.UndefOr[String] = js.undefined
   
-  var userProtectionFlag: js.UndefOr[String] = js.native
+  var userProtectionFlag: js.UndefOr[String] = js.undefined
   
-  var version: js.UndefOr[Double] = js.native
+  var version: js.UndefOr[Double] = js.undefined
 }
 object RecipeOptions {
   

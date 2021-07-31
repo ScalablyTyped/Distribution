@@ -3,19 +3,17 @@ package typings.sentryUtils
 import typings.sentryTypes.integrationMod.Integration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait GlobalEventProcessors extends StObject {
     
-    var globalEventProcessors: js.Any = js.native
+    var globalEventProcessors: js.Any
     
-    var hub: js.Any = js.native
+    var hub: js.Any
     
-    var logger: js.Any = js.native
+    var logger: js.Any
   }
   object GlobalEventProcessors {
     
@@ -39,16 +37,15 @@ object anon {
     }
   }
   
-  @js.native
   trait Host extends StObject {
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var protocol: js.UndefOr[String] = js.native
+    var protocol: js.UndefOr[String] = js.undefined
     
-    var relative: js.UndefOr[String] = js.native
+    var relative: js.UndefOr[String] = js.undefined
   }
   object Host {
     
@@ -87,10 +84,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
   }
   object Id {
     
@@ -111,10 +107,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Integrations extends StObject {
     
-    var Integrations: js.UndefOr[js.Array[Integration]] = js.native
+    var Integrations: js.UndefOr[js.Array[Integration]] = js.undefined
   }
   object Integrations {
     

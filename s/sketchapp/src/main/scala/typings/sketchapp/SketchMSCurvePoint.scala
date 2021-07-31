@@ -3,33 +3,30 @@ package typings.sketchapp
 import typings.sketchapp.sketchappStrings.curvePoint
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SketchMSCurvePoint extends StObject {
   
-  var _class: curvePoint = js.native
+  var _class: curvePoint
   
-  var cornerRadius: Double = js.native
+  var cornerRadius: Double
   
-  var curveFrom: SketchMSPointString = js.native
+  var curveFrom: SketchMSPointString
   
-  var curveMode: SketchMSCurveMode = js.native
+  var curveMode: SketchMSCurveMode
   
-  var curveTo: SketchMSPointString = js.native
+  var curveTo: SketchMSPointString
   
-  var hasCurveFrom: Boolean = js.native
+  var hasCurveFrom: Boolean
   
-  var hasCurveTo: Boolean = js.native
+  var hasCurveTo: Boolean
   
-  var point: SketchMSPointString = js.native
+  var point: SketchMSPointString
 }
 object SketchMSCurvePoint {
   
   @scala.inline
   def apply(
-    _class: curvePoint,
     cornerRadius: Double,
     curveFrom: SketchMSPointString,
     curveMode: SketchMSCurveMode,
@@ -38,7 +35,7 @@ object SketchMSCurvePoint {
     hasCurveTo: Boolean,
     point: SketchMSPointString
   ): SketchMSCurvePoint = {
-    val __obj = js.Dynamic.literal(_class = _class.asInstanceOf[js.Any], cornerRadius = cornerRadius.asInstanceOf[js.Any], curveFrom = curveFrom.asInstanceOf[js.Any], curveMode = curveMode.asInstanceOf[js.Any], curveTo = curveTo.asInstanceOf[js.Any], hasCurveFrom = hasCurveFrom.asInstanceOf[js.Any], hasCurveTo = hasCurveTo.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(_class = "curvePoint", cornerRadius = cornerRadius.asInstanceOf[js.Any], curveFrom = curveFrom.asInstanceOf[js.Any], curveMode = curveMode.asInstanceOf[js.Any], curveTo = curveTo.asInstanceOf[js.Any], hasCurveFrom = hasCurveFrom.asInstanceOf[js.Any], hasCurveTo = hasCurveTo.asInstanceOf[js.Any], point = point.asInstanceOf[js.Any])
     __obj.asInstanceOf[SketchMSCurvePoint]
   }
   

@@ -10,7 +10,6 @@ import typings.wordpressCustomizeBrowser.themeControlMod.ThemeControl
 import typings.wordpressCustomizeBrowser.wordpressCustomizeBrowserBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object themesSectionMod {
@@ -57,7 +56,7 @@ object themesSectionMod {
     
     def loadMore(): Unit = js.native
     
-    def loadThemePreview(themeId: String): Promise[_, _, _] = js.native
+    def loadThemePreview(themeId: String): Promise[js.Any, js.Any, js.Any] = js.native
     
     def loadThemes(): Unit = js.native
     

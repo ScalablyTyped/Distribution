@@ -2,51 +2,49 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationResourceSpecification extends StObject {
   
   /**
     * Channel class, e.g. 'STANDARD'
     */
-  var ChannelClass: js.UndefOr[typings.awsSdk.medialiveMod.ChannelClass] = js.native
+  var ChannelClass: js.UndefOr[typings.awsSdk.medialiveMod.ChannelClass] = js.undefined
   
   /**
     * Codec, e.g. 'AVC'
     */
-  var Codec: js.UndefOr[ReservationCodec] = js.native
+  var Codec: js.UndefOr[ReservationCodec] = js.undefined
   
   /**
     * Maximum bitrate, e.g. 'MAX_20_MBPS'
     */
-  var MaximumBitrate: js.UndefOr[ReservationMaximumBitrate] = js.native
+  var MaximumBitrate: js.UndefOr[ReservationMaximumBitrate] = js.undefined
   
   /**
     * Maximum framerate, e.g. 'MAX_30_FPS' (Outputs only)
     */
-  var MaximumFramerate: js.UndefOr[ReservationMaximumFramerate] = js.native
+  var MaximumFramerate: js.UndefOr[ReservationMaximumFramerate] = js.undefined
   
   /**
     * Resolution, e.g. 'HD'
     */
-  var Resolution: js.UndefOr[ReservationResolution] = js.native
+  var Resolution: js.UndefOr[ReservationResolution] = js.undefined
   
   /**
     * Resource type, 'INPUT', 'OUTPUT', 'MULTIPLEX', or 'CHANNEL'
     */
-  var ResourceType: js.UndefOr[ReservationResourceType] = js.native
+  var ResourceType: js.UndefOr[ReservationResourceType] = js.undefined
   
   /**
     * Special feature, e.g. 'AUDIO_NORMALIZATION' (Channels only)
     */
-  var SpecialFeature: js.UndefOr[ReservationSpecialFeature] = js.native
+  var SpecialFeature: js.UndefOr[ReservationSpecialFeature] = js.undefined
   
   /**
     * Video quality, e.g. 'STANDARD' (Outputs only)
     */
-  var VideoQuality: js.UndefOr[ReservationVideoQuality] = js.native
+  var VideoQuality: js.UndefOr[ReservationVideoQuality] = js.undefined
 }
 object ReservationResourceSpecification {
   

@@ -2,25 +2,23 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * DataTable...
   */
-@js.native
 trait IDataTable extends StObject {
   
   /**
     * Name of the table.
     */
-  var qName: String = js.native
+  var qName: String
   
   /**
     * Type of the table.
     * For examples: Table, View
     */
-  var qType: String = js.native
+  var qType: String
 }
 object IDataTable {
   

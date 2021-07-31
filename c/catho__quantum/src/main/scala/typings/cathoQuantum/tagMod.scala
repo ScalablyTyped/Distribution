@@ -16,7 +16,6 @@ import typings.react.mod.NativeMouseEvent
 import typings.std.HTMLButtonElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tagMod {
@@ -28,24 +27,23 @@ object tagMod {
   
   type Tag = Component[TagProps, js.Object, js.Any]
   
-  @js.native
   trait TagProps extends StObject {
     
-    var bold: js.UndefOr[Boolean] = js.native
+    var bold: js.UndefOr[Boolean] = js.undefined
     
-    var inverted: js.UndefOr[Boolean] = js.native
+    var inverted: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.native
+    var onClose: js.UndefOr[MouseEventHandler[HTMLButtonElement]] = js.undefined
     
-    var size: js.UndefOr[small | medium | large] = js.native
+    var size: js.UndefOr[small | medium | large] = js.undefined
     
-    var skin: js.UndefOr[neutral | primary | success | warning | error] = js.native
+    var skin: js.UndefOr[neutral | primary | success | warning | error] = js.undefined
     
-    var stroked: js.UndefOr[Boolean] = js.native
+    var stroked: js.UndefOr[Boolean] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
     
-    var theme: js.UndefOr[ColorsComponentsSpacing] = js.native
+    var theme: js.UndefOr[ColorsComponentsSpacing] = js.undefined
   }
   object TagProps {
     

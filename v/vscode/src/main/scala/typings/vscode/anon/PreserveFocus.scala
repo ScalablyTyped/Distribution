@@ -3,15 +3,13 @@ package typings.vscode.anon
 import typings.vscode.mod.ViewColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PreserveFocus extends StObject {
   
-  var preserveFocus: js.UndefOr[Boolean] = js.native
+  var preserveFocus: js.UndefOr[Boolean] = js.undefined
   
-  var viewColumn: ViewColumn = js.native
+  var viewColumn: ViewColumn
 }
 object PreserveFocus {
   

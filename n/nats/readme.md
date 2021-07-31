@@ -10,9 +10,9 @@ Node.js client for NATS, a lightweight, high-performance cloud native messaging 
 | ------------------ | :-------------: |
 | Full name          | nats |
 | Keywords           | nats, messaging, pubsub, publish, subscribe, queue, distributed, queueing |
-| # releases         | 76 |
-| # dependents       | 233 |
-| # downloads        | 3247253 |
+| # releases         | 78 |
+| # dependents       | 241 |
+| # downloads        | 3257290 |
 | # stars            | 9 |
 
 ## Links

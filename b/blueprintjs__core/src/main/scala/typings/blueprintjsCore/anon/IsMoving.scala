@@ -2,13 +2,11 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IsMoving extends StObject {
   
-  var isMoving: Boolean = js.native
+  var isMoving: Boolean
 }
 object IsMoving {
   

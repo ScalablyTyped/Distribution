@@ -2,15 +2,13 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateStorageDataAttributes extends StObject {
   
-  var extension: js.UndefOr[BaseAttributesExtensionObject] = js.native
+  var `extension`: js.UndefOr[BaseAttributesExtensionObject] = js.undefined
   
-  var name: String = js.native
+  var name: String
 }
 object CreateStorageDataAttributes {
   

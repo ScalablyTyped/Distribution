@@ -5,7 +5,6 @@ import typings.sinon.anon.PartialSinonSandboxConfig
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,12 +28,12 @@ trait SinonApi extends StObject {
   /**
     * Creates a basic fake, with no behavior
     */
-  def fake(): SinonSpy[js.Array[_], _] = js.native
+  def fake(): SinonSpy[js.Array[js.Any], js.Any] = js.native
   /**
     * Wraps an existing Function to record all interactions, while leaving it up to the func to provide the behavior.
     * This is useful when complex behavior not covered by the sinon.fake.* methods is required or when wrapping an existing function or method.
     */
-  def fake(fn: js.Function): SinonSpy[js.Array[_], _] = js.native
+  def fake(fn: js.Function): SinonSpy[js.Array[js.Any], js.Any] = js.native
   
   var fakeServer: SinonFakeServerStatic = js.native
   
@@ -68,5 +67,5 @@ trait SinonApi extends StObject {
   @JSName("match")
   var match_Original: SinonMatch = js.native
   
-  def spyCall(args: js.Any*): SinonSpyCall[js.Array[_], _] = js.native
+  def spyCall(args: js.Any*): SinonSpyCall[js.Array[js.Any], js.Any] = js.native
 }

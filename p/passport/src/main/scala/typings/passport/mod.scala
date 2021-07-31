@@ -16,7 +16,6 @@ import typings.passport.anon.Value
 import typings.passport.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -29,50 +28,51 @@ object mod extends Shortcut {
   @JSImport("passport", "Authenticator")
   @js.native
   class AuthenticatorCls ()
-    extends Authenticator[Handler, js.Any, js.Any, AuthenticateOptions]
+    extends StObject
+       with Authenticator[Handler, js.Any, js.Any, AuthenticateOptions]
   
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("passport", "Passport")
   @js.native
   class Passport ()
-    extends Authenticator[Handler, js.Any, js.Any, AuthenticateOptions]
+    extends StObject
+       with Authenticator[Handler, js.Any, js.Any, AuthenticateOptions]
   
-  @js.native
   trait AuthenticateOptions extends StObject {
     
-    var assignProperty: js.UndefOr[String] = js.native
+    var assignProperty: js.UndefOr[String] = js.undefined
     
-    var authInfo: js.UndefOr[Boolean] = js.native
+    var authInfo: js.UndefOr[Boolean] = js.undefined
     
-    var failWithError: js.UndefOr[Boolean] = js.native
+    var failWithError: js.UndefOr[Boolean] = js.undefined
     
-    var failureFlash: js.UndefOr[String | Boolean] = js.native
+    var failureFlash: js.UndefOr[String | Boolean] = js.undefined
     
-    var failureMessage: js.UndefOr[Boolean | String] = js.native
+    var failureMessage: js.UndefOr[Boolean | String] = js.undefined
     
-    var failureRedirect: js.UndefOr[String] = js.native
+    var failureRedirect: js.UndefOr[String] = js.undefined
     
-    var passReqToCallback: js.UndefOr[Boolean] = js.native
+    var passReqToCallback: js.UndefOr[Boolean] = js.undefined
     
-    var pauseStream: js.UndefOr[Boolean] = js.native
+    var pauseStream: js.UndefOr[Boolean] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String | js.Array[String]] = js.native
+    var scope: js.UndefOr[String | js.Array[String]] = js.undefined
     
-    var session: js.UndefOr[Boolean] = js.native
+    var session: js.UndefOr[Boolean] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var successFlash: js.UndefOr[String | Boolean] = js.native
+    var successFlash: js.UndefOr[String | Boolean] = js.undefined
     
-    var successMessage: js.UndefOr[Boolean | String] = js.native
+    var successMessage: js.UndefOr[Boolean | String] = js.undefined
     
-    var successRedirect: js.UndefOr[String] = js.native
+    var successRedirect: js.UndefOr[String] = js.undefined
     
-    var successReturnToOrRedirect: js.UndefOr[String] = js.native
+    var successReturnToOrRedirect: js.UndefOr[String] = js.undefined
     
-    var userProperty: js.UndefOr[String] = js.native
+    var userProperty: js.UndefOr[String] = js.undefined
   }
   object AuthenticateOptions {
     
@@ -196,33 +196,41 @@ object mod extends Shortcut {
   trait Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthorizeOptions] extends StObject {
     
     def authenticate(strategy: String): AuthenticateRet = js.native
-    def authenticate(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authenticate(strategy: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthenticateRet = js.native
     def authenticate(strategy: String, options: AuthenticateOptions): AuthenticateRet = js.native
-    def authenticate(strategy: String, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authenticate(
+      strategy: String,
+      options: AuthenticateOptions,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): AuthenticateRet = js.native
     def authenticate(strategy: js.Array[String]): AuthenticateRet = js.native
-    def authenticate(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authenticate(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthenticateRet = js.native
     def authenticate(strategy: js.Array[String], options: AuthenticateOptions): AuthenticateRet = js.native
     def authenticate(
       strategy: js.Array[String],
       options: AuthenticateOptions,
-      callback: js.Function1[/* repeated */ js.Any, _]
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
     ): AuthenticateRet = js.native
     def authenticate(strategy: Strategy): AuthenticateRet = js.native
-    def authenticate(strategy: Strategy, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authenticate(strategy: Strategy, callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthenticateRet = js.native
     def authenticate(strategy: Strategy, options: AuthenticateOptions): AuthenticateRet = js.native
-    def authenticate(strategy: Strategy, options: AuthenticateOptions, callback: js.Function1[/* repeated */ js.Any, _]): AuthenticateRet = js.native
+    def authenticate(
+      strategy: Strategy,
+      options: AuthenticateOptions,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): AuthenticateRet = js.native
     
     def authorize(strategy: String): AuthorizeRet = js.native
-    def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, _]): AuthorizeRet = js.native
+    def authorize(strategy: String, callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthorizeRet = js.native
     def authorize(strategy: String, options: AuthorizeOptions): AuthorizeRet = js.native
-    def authorize(strategy: String, options: AuthorizeOptions, callback: js.Function1[/* repeated */ js.Any, _]): AuthorizeRet = js.native
+    def authorize(strategy: String, options: AuthorizeOptions, callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthorizeRet = js.native
     def authorize(strategy: js.Array[String]): AuthorizeRet = js.native
-    def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, _]): AuthorizeRet = js.native
+    def authorize(strategy: js.Array[String], callback: js.Function1[/* repeated */ js.Any, js.Any]): AuthorizeRet = js.native
     def authorize(strategy: js.Array[String], options: AuthorizeOptions): AuthorizeRet = js.native
     def authorize(
       strategy: js.Array[String],
       options: AuthorizeOptions,
-      callback: js.Function1[/* repeated */ js.Any, _]
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
     ): AuthorizeRet = js.native
     
     def deserializeUser[TUser, TID](
@@ -289,19 +297,19 @@ object mod extends Shortcut {
     def authenticate(
       passport: Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthenticateOptions],
       name: String,
-      options: js.UndefOr[scala.Nothing],
-      callback: js.Function1[/* repeated */ js.Any, _]
-    ): js.Function1[/* repeated */ js.Any, AuthenticateRet] = js.native
-    def authenticate(
-      passport: Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthenticateOptions],
-      name: String,
       options: js.Any
     ): js.Function1[/* repeated */ js.Any, AuthenticateRet] = js.native
     def authenticate(
       passport: Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthenticateOptions],
       name: String,
       options: js.Any,
-      callback: js.Function1[/* repeated */ js.Any, _]
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
+    ): js.Function1[/* repeated */ js.Any, AuthenticateRet] = js.native
+    def authenticate(
+      passport: Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthenticateOptions],
+      name: String,
+      options: Unit,
+      callback: js.Function1[/* repeated */ js.Any, js.Any]
     ): js.Function1[/* repeated */ js.Any, AuthenticateRet] = js.native
     
     var authorize: js.UndefOr[
@@ -309,8 +317,8 @@ object mod extends Shortcut {
           /* passport */ Authenticator[InitializeRet, AuthenticateRet, AuthorizeRet, AuthenticateOptions], 
           /* name */ String, 
           /* options */ js.UndefOr[js.Any], 
-          /* callback */ js.UndefOr[js.Function1[/* repeated */ js.Any, _]], 
-          js.Function1[/* repeated */ _, AuthorizeRet]
+          /* callback */ js.UndefOr[js.Function1[/* repeated */ js.Any, js.Any]], 
+          js.Function1[/* repeated */ js.Any, AuthorizeRet]
         ]
       ] = js.native
     
@@ -323,7 +331,8 @@ object mod extends Shortcut {
   
   @js.native
   trait PassportStatic
-    extends Authenticator[Handler, js.Any, js.Any, AuthenticateOptions] {
+    extends StObject
+       with Authenticator[Handler, js.Any, js.Any, AuthenticateOptions] {
     
     var Authenticator: Instantiable = js.native
     
@@ -332,22 +341,21 @@ object mod extends Shortcut {
     var Strategy: `0` = js.native
   }
   
-  @js.native
   trait Profile extends StObject {
     
-    var displayName: String = js.native
+    var displayName: String
     
-    var emails: js.UndefOr[js.Array[Type]] = js.native
+    var emails: js.UndefOr[js.Array[Type]] = js.undefined
     
-    var id: String = js.native
+    var id: String
     
-    var name: js.UndefOr[FamilyName] = js.native
+    var name: js.UndefOr[FamilyName] = js.undefined
     
-    var photos: js.UndefOr[js.Array[Value]] = js.native
+    var photos: js.UndefOr[js.Array[Value]] = js.undefined
     
-    var provider: String = js.native
+    var provider: String
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object Profile {
     
@@ -404,15 +412,15 @@ object mod extends Shortcut {
   @js.native
   trait Strategy extends StObject {
     
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query]): js.Any = js.native
-    def authenticate(req: Request_[ParamsDictionary, _, _, Query], options: js.Any): js.Any = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query]): js.Any = js.native
+    def authenticate(req: Request_[ParamsDictionary, js.Any, js.Any, Query], options: js.Any): js.Any = js.native
     
     var name: js.UndefOr[String] = js.native
   }
   
   type StrategyCreated[T, O] = /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof O ]: O[P]}
-    */ typings.passport.passportStrings.StrategyCreated with TopLevel[O]
+    */ typings.passport.passportStrings.StrategyCreated & TopLevel[O]
   
   @js.native
   trait StrategyCreatedStatic extends StObject {
@@ -433,11 +441,11 @@ object mod extends Shortcut {
       * Strategies should call this function to fail an authentication attempt.
       */
     def fail(): Unit = js.native
-    def fail(challenge: js.UndefOr[scala.Nothing], status: Double): Unit = js.native
     def fail(challenge: String): Unit = js.native
     def fail(challenge: String, status: Double): Unit = js.native
     def fail(challenge: Double): Unit = js.native
     def fail(challenge: Double, status: Double): Unit = js.native
+    def fail(challenge: Unit, status: Double): Unit = js.native
     
     /**
       * Pass without making a success or fail decision.
@@ -481,7 +489,6 @@ object mod extends Shortcut {
     object Express {
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait AuthInfo extends StObject
       
       @js.native
@@ -508,7 +515,6 @@ object mod extends Shortcut {
       }
       
       // tslint:disable-next-line:no-empty-interface
-      @js.native
       trait User extends StObject
     }
   }

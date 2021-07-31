@@ -2,45 +2,43 @@ package typings.pulumiAws.outputMod.emr
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClusterCoreInstanceFleet extends StObject {
   
   /**
     * The ID of the EMR Cluster
     */
-  var id: String = js.native
+  var id: String
   
   /**
     * Configuration block for instance fleet
     */
-  var instanceTypeConfigs: js.UndefOr[js.Array[ClusterCoreInstanceFleetInstanceTypeConfig]] = js.native
+  var instanceTypeConfigs: js.UndefOr[js.Array[ClusterCoreInstanceFleetInstanceTypeConfig]] = js.undefined
   
   /**
     * Configuration block for launch specification
     */
-  var launchSpecifications: js.UndefOr[ClusterCoreInstanceFleetLaunchSpecifications] = js.native
+  var launchSpecifications: js.UndefOr[ClusterCoreInstanceFleetLaunchSpecifications] = js.undefined
   
   /**
     * Friendly name given to the instance fleet.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var provisionedOnDemandCapacity: Double = js.native
+  var provisionedOnDemandCapacity: Double
   
-  var provisionedSpotCapacity: Double = js.native
+  var provisionedSpotCapacity: Double
   
   /**
     * The target capacity of On-Demand units for the instance fleet, which determines how many On-Demand instances to provision.
     */
-  var targetOnDemandCapacity: js.UndefOr[Double] = js.native
+  var targetOnDemandCapacity: js.UndefOr[Double] = js.undefined
   
   /**
     * The target capacity of Spot units for the instance fleet, which determines how many Spot instances to provision.
     */
-  var targetSpotCapacity: js.UndefOr[Double] = js.native
+  var targetSpotCapacity: js.UndefOr[Double] = js.undefined
 }
 object ClusterCoreInstanceFleet {
   

@@ -38,7 +38,6 @@ import typings.stripe.mod.subscriptions.ISubscriptionCustCreationOptions
 import typings.stripe.mod.subscriptions.ISubscriptionUpdateOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("stripe", "resources.Customers")

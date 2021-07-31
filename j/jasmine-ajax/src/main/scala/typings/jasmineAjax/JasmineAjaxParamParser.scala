@@ -3,15 +3,13 @@ package typings.jasmineAjax
 import typings.std.XMLHttpRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JasmineAjaxParamParser extends StObject {
   
-  def parse(paramString: String): js.Any = js.native
+  def parse(paramString: String): js.Any
   
-  def test(xhr: XMLHttpRequest): Boolean = js.native
+  def test(xhr: XMLHttpRequest): Boolean
 }
 object JasmineAjaxParamParser {
   

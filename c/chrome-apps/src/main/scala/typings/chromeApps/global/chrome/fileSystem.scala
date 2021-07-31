@@ -19,7 +19,6 @@ import typings.filesystem.FileEntry
 import typings.filesystem.FileSystem
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // #endregion
@@ -39,6 +38,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *   {'fileSystem': ['write', 'retainEntries', 'directory']}
   */
 object fileSystem {
+  
+  @JSGlobal("chrome.fileSystem")
+  @js.native
+  val ^ : js.Any = js.native
   
   /** @enum */
   object ChildChangeType {
@@ -119,53 +122,45 @@ object fileSystem {
   }
   
   /** Ask the user to choose a file or directory. */
-  @JSGlobal("chrome.fileSystem.chooseEntry")
-  @js.native
+  @scala.inline
   def chooseEntry(
     callback: FileEntryCallback[ChooseFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
-  ): Unit = js.native
-  @JSGlobal("chrome.fileSystem.chooseEntry")
-  @js.native
+  ): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("chooseEntry")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
   def chooseEntry(
     options: ChooseDirectoryEntryOptions,
     callback: FileEntryCallback[ChooseDirectoryEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseEntry")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /** Ask the user to choose a file or directory. */
-  @JSGlobal("chrome.fileSystem.chooseEntry")
-  @js.native
+  @scala.inline
   def chooseEntry(
     options: ChooseEntryOptionsBase,
     callback: FileEntryCallback[ChooseEntryOptionsBase, FileEntry | DirectoryEntry | js.Array[FileEntry]]
-  ): Unit = js.native
-  @JSGlobal("chrome.fileSystem.chooseEntry")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseEntry")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def chooseEntry(
     options: ChooseFileEntryOptions,
     callback: FileEntryCallback[ChooseFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
-  ): Unit = js.native
-  @JSGlobal("chrome.fileSystem.chooseEntry")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseEntry")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def chooseEntry(
     options: ChooseMultipleFilesEntryOptions,
     callback: FileEntryCallback[ChooseMultipleFilesEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
-  ): Unit = js.native
-  @JSGlobal("chrome.fileSystem.chooseEntry")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseEntry")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def chooseEntry(
     options: ChooseSaveFileEntryOptions,
     callback: FileEntryCallback[ChooseSaveFileEntryOptions, FileEntry | DirectoryEntry | js.Array[FileEntry]]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("chooseEntry")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.fileSystem.getDisplayPath")
-  @js.native
-  def getDisplayPath(entry: DirectoryEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getDisplayPath(entry: DirectoryEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayPath")(entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Get the display path of an Entry object.
     * The display path is based on the full path of the file or directory on the local file system, but may be made more readable for display purposes.
     */
-  @JSGlobal("chrome.fileSystem.getDisplayPath")
-  @js.native
-  def getDisplayPath(entry: FileEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = js.native
+  @scala.inline
+  def getDisplayPath(entry: FileEntry, callback: js.Function1[/* displayPath */ String, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getDisplayPath")(entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * @requires(Kiosk) Chrome OS Kiosk mode only
@@ -175,36 +170,30 @@ object fileSystem {
     * In case of an error, volumes will be undefined, and chrome.runtime.lastError will be set.
     * @since Chrome 44.
     */
-  @JSGlobal("chrome.fileSystem.getVolumeList")
-  @js.native
-  def getVolumeList(callback: js.Function1[/* volumes */ js.Array[Volume], Unit]): Unit = js.native
+  @scala.inline
+  def getVolumeList(callback: js.Function1[/* volumes */ js.Array[Volume], Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getVolumeList")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.fileSystem.getWritableEntry")
-  @js.native
-  def getWritableEntry(entry: DirectoryEntry, callback: js.Function1[/* entry */ DirectoryEntry, Unit]): Unit = js.native
+  @scala.inline
+  def getWritableEntry(entry: DirectoryEntry, callback: js.Function1[/* entry */ DirectoryEntry, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getWritableEntry")(entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /**
     * Get a writable Entry from another Entry. This call will fail with a runtime error if the application does not have the 'write' permission under 'fileSystem'.
     * If entry is a DirectoryEntry, this call will fail if the application does not have the 'directory' permission under 'fileSystem'.
     */
-  @JSGlobal("chrome.fileSystem.getWritableEntry")
-  @js.native
-  def getWritableEntry(entry: FileEntry, callback: js.Function1[/* entry */ FileEntry, Unit]): Unit = js.native
+  @scala.inline
+  def getWritableEntry(entry: FileEntry, callback: js.Function1[/* entry */ FileEntry, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("getWritableEntry")(entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Returns whether the app has permission to restore the entry with the given id.
     * @since Chrome 29.
     **/
-  @JSGlobal("chrome.fileSystem.isRestorable")
-  @js.native
-  def isRestorable(id: String, callback: js.Function1[/* isRestorable */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isRestorable(id: String, callback: js.Function1[/* isRestorable */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isRestorable")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.fileSystem.isWritableEntry")
-  @js.native
-  def isWritableEntry(entry: DirectoryEntry, callback: js.Function1[/* isWritable */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isWritableEntry(entry: DirectoryEntry, callback: js.Function1[/* isWritable */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isWritableEntry")(entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   /** Gets whether this Entry is writable or not. */
-  @JSGlobal("chrome.fileSystem.isWritableEntry")
-  @js.native
-  def isWritableEntry(entry: FileEntry, callback: js.Function1[/* isWritable */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def isWritableEntry(entry: FileEntry, callback: js.Function1[/* isWritable */ Boolean, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("isWritableEntry")(entry.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Called when a list of available volumes is changed.
@@ -224,18 +213,15 @@ object fileSystem {
     * In case of an error, fileSystem will be undefined, and chrome.runtime.lastError will be set.
     * @since Chrome 44.
     */
-  @JSGlobal("chrome.fileSystem.requestFileSystem")
-  @js.native
-  def requestFileSystem(options: Volume, callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = js.native
+  @scala.inline
+  def requestFileSystem(options: Volume, callback: js.Function1[/* fileSystem */ FileSystem, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("requestFileSystem")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /** Returns the file entry with the given id if it can be restored. This call will fail with a runtime error otherwise. */
-  @JSGlobal("chrome.fileSystem.restoreEntry")
-  @js.native
-  def restoreEntry(id: String, callback: js.Function1[/* entry */ FileEntry, Unit]): Unit = js.native
+  @scala.inline
+  def restoreEntry(id: String, callback: js.Function1[/* entry */ FileEntry, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("restoreEntry")(id.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSGlobal("chrome.fileSystem.retainEntry")
-  @js.native
-  def retainEntry(entry: DirectoryEntry): String = js.native
+  @scala.inline
+  def retainEntry(entry: DirectoryEntry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("retainEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[String]
   /**
     * Returns an id that can be passed to restoreEntry to regain access to a given file entry.
     * Only the 500 most recently used entries are retained, where calls to retainEntry and restoreEntry count as use.
@@ -243,7 +229,6 @@ object fileSystem {
     * Otherwise, entries are retained only while the app is running and across restarts.
     * @since Chrome 29.
     * */
-  @JSGlobal("chrome.fileSystem.retainEntry")
-  @js.native
-  def retainEntry(entry: FileEntry): String = js.native
+  @scala.inline
+  def retainEntry(entry: FileEntry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("retainEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[String]
 }

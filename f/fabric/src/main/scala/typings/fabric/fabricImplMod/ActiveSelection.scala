@@ -2,7 +2,6 @@ package typings.fabric.fabricImplMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("fabric/fabric-impl", "ActiveSelection")
@@ -14,8 +13,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 class ActiveSelection () extends Group {
   def this(objects: js.Array[Object]) = this()
-  def this(objects: js.UndefOr[scala.Nothing], options: IObjectOptions) = this()
   def this(objects: js.Array[Object], options: IObjectOptions) = this()
+  def this(objects: Unit, options: IObjectOptions) = this()
   
   /**
     * Constructor
@@ -36,13 +35,16 @@ class ActiveSelection () extends Group {
 /* static members */
 object ActiveSelection {
   
+  @JSImport("fabric/fabric-impl", "ActiveSelection")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Returns {@link fabric.ActiveSelection} instance from an object representation
     * @memberOf fabric.ActiveSelection
     * @param object Object to create a group from
     * @param [callback] Callback to invoke when an ActiveSelection instance is created
     */
-  @JSImport("fabric/fabric-impl", "ActiveSelection.fromObject")
-  @js.native
-  def fromObject(`object`: js.Any, callback: js.Function): Unit = js.native
+  @scala.inline
+  def fromObject(`object`: js.Any, callback: js.Function): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

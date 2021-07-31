@@ -3,27 +3,25 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReleaseTaskAttachment extends StObject {
   
-  var _links: js.Any = js.native
+  var _links: js.Any
   
-  var createdOn: Date = js.native
+  var createdOn: Date
   
-  var modifiedBy: String = js.native
+  var modifiedBy: String
   
-  var modifiedOn: Date = js.native
+  var modifiedOn: Date
   
-  var name: String = js.native
+  var name: String
   
-  var recordId: String = js.native
+  var recordId: String
   
-  var timelineId: String = js.native
+  var timelineId: String
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object ReleaseTaskAttachment {
   

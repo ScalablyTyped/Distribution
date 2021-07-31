@@ -4,27 +4,25 @@ import typings.ipp.mod.CharacterSet
 import typings.ipp.mod.JobHoldUntil
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Jobholduntil extends StObject {
   
-  var `attributes-charset`: js.UndefOr[CharacterSet] = js.native
+  var `attributes-charset`: js.UndefOr[CharacterSet] = js.undefined
   
-  var `attributes-natural-language`: js.UndefOr[String] = js.native
+  var `attributes-natural-language`: js.UndefOr[String] = js.undefined
   
-  var `job-hold-until`: js.UndefOr[JobHoldUntil] = js.native
+  var `job-hold-until`: js.UndefOr[JobHoldUntil] = js.undefined
   
-  var `job-id`: js.UndefOr[Double] = js.native
+  var `job-id`: js.UndefOr[Double] = js.undefined
   
-  var `job-uri`: js.UndefOr[String] = js.native
+  var `job-uri`: js.UndefOr[String] = js.undefined
   
-  var message: js.UndefOr[String] = js.native
+  var message: js.UndefOr[String] = js.undefined
   
-  var `printer-uri`: js.UndefOr[String] = js.native
+  var `printer-uri`: js.UndefOr[String] = js.undefined
   
-  var `requesting-user-name`: String = js.native
+  var `requesting-user-name`: String
 }
 object Jobholduntil {
   

@@ -3,53 +3,52 @@ package typings.reactNativeDocumentPicker
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object DocumentPicker {
     
-    @JSImport("react-native-document-picker", "DocumentPicker.show")
+    @JSImport("react-native-document-picker", "DocumentPicker")
     @js.native
-    def show(options: Options, callback: js.Function2[/* error */ Error, /* result */ Result, Unit]): Unit = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def show(options: Options, callback: js.Function2[/* error */ Error, /* result */ Result, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("show")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   }
   
   object DocumentPickerUtil {
     
-    @JSImport("react-native-document-picker", "DocumentPickerUtil.allFiles")
+    @JSImport("react-native-document-picker", "DocumentPickerUtil")
     @js.native
-    def allFiles(): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("react-native-document-picker", "DocumentPickerUtil.audio")
-    @js.native
-    def audio(): String = js.native
+    @scala.inline
+    def allFiles(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("allFiles")().asInstanceOf[String]
     
-    @JSImport("react-native-document-picker", "DocumentPickerUtil.images")
-    @js.native
-    def images(): String = js.native
+    @scala.inline
+    def audio(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("audio")().asInstanceOf[String]
     
-    @JSImport("react-native-document-picker", "DocumentPickerUtil.pdf")
-    @js.native
-    def pdf(): String = js.native
+    @scala.inline
+    def images(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("images")().asInstanceOf[String]
     
-    @JSImport("react-native-document-picker", "DocumentPickerUtil.plainText")
-    @js.native
-    def plainText(): String = js.native
+    @scala.inline
+    def pdf(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pdf")().asInstanceOf[String]
     
-    @JSImport("react-native-document-picker", "DocumentPickerUtil.video")
-    @js.native
-    def video(): String = js.native
+    @scala.inline
+    def plainText(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("plainText")().asInstanceOf[String]
+    
+    @scala.inline
+    def video(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("video")().asInstanceOf[String]
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var filetype: js.Array[String] = js.native
+    var filetype: js.Array[String]
     
-    var left: js.UndefOr[Double] = js.native
+    var left: js.UndefOr[Double] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -82,16 +81,15 @@ object mod {
     }
   }
   
-  @js.native
   trait Result extends StObject {
     
-    var fileName: String = js.native
+    var fileName: String
     
-    var fileSize: Double = js.native
+    var fileSize: Double
     
-    var `type`: String = js.native
+    var `type`: String
     
-    var uri: String = js.native
+    var uri: String
   }
   object Result {
     

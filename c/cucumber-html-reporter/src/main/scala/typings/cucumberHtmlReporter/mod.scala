@@ -3,46 +3,46 @@ package typings.cucumberHtmlReporter
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("cucumber-html-reporter", "generate")
+  @JSImport("cucumber-html-reporter", JSImport.Namespace)
   @js.native
-  def generate(options: Options): Unit = js.native
-  @JSImport("cucumber-html-reporter", "generate")
-  @js.native
-  def generate(options: Options, callback: js.Function0[Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def generate(options: Options): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def generate(options: Options, callback: js.Function0[Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("generate")(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait Options extends StObject {
     
-    var columnLayout: js.UndefOr[Double] = js.native
+    var columnLayout: js.UndefOr[Double] = js.undefined
     
-    var ignoreBadJsonFile: js.UndefOr[Boolean] = js.native
+    var ignoreBadJsonFile: js.UndefOr[Boolean] = js.undefined
     
-    var jsonDir: js.UndefOr[String] = js.native
+    var jsonDir: js.UndefOr[String] = js.undefined
     
-    var jsonFile: String = js.native
+    var jsonFile: String
     
-    var launchReport: Boolean = js.native
+    var launchReport: Boolean
     
-    var metadata: js.UndefOr[StringDictionary[String]] = js.native
+    var metadata: js.UndefOr[StringDictionary[String]] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var noInlineScreenshots: js.UndefOr[Boolean] = js.native
+    var noInlineScreenshots: js.UndefOr[Boolean] = js.undefined
     
-    var output: String = js.native
+    var output: String
     
-    var reportSuiteAsScenarios: Boolean = js.native
+    var reportSuiteAsScenarios: Boolean
     
-    var screenshotsDirectory: js.UndefOr[String] = js.native
+    var screenshotsDirectory: js.UndefOr[String] = js.undefined
     
-    var storeScreenshots: js.UndefOr[Boolean] = js.native
+    var storeScreenshots: js.UndefOr[Boolean] = js.undefined
     
-    var theme: String = js.native
+    var theme: String
   }
   object Options {
     

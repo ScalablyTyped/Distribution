@@ -3,24 +3,22 @@ package typings.awsSdkClientDynamodbBrowser
 import typings.awsSdkClientDynamodbBrowser.updateGlobalTableExceptionsUnionMod.UpdateGlobalTableExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesReplicaAlreadyExistsExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ReplicaAlreadyExistsExceptionDetails> * / any */ @js.native
-  trait ReplicaAlreadyExistsException extends UpdateGlobalTableExceptionsUnion {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_ReplicaAlreadyExistsExceptionDetails> * / any */ trait ReplicaAlreadyExistsException
+    extends StObject
+       with UpdateGlobalTableExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ReplicaAlreadyExistsException = js.native
+    var name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ReplicaAlreadyExistsException
   }
   object ReplicaAlreadyExistsException {
     
     @scala.inline
-    def apply(
-      name: typings.awsSdkClientDynamodbBrowser.awsSdkClientDynamodbBrowserStrings.ReplicaAlreadyExistsException
-    ): ReplicaAlreadyExistsException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): ReplicaAlreadyExistsException = {
+      val __obj = js.Dynamic.literal(name = "ReplicaAlreadyExistsException")
       __obj.asInstanceOf[ReplicaAlreadyExistsException]
     }
     
@@ -34,13 +32,12 @@ object typesReplicaAlreadyExistsExceptionMod {
     }
   }
   
-  @js.native
   trait ReplicaAlreadyExistsExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object ReplicaAlreadyExistsExceptionDetails {
     

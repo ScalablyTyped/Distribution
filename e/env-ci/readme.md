@@ -10,9 +10,9 @@ Get environment variables exposed by CI services
 | ------------------ | :-------------: |
 | Full name          | env-ci |
 | Keywords           | appveyor, bamboo, bitbucket, bitrise, buddy, buildkite, ci, circle, cirrus, codebuild, codefresh, codeship, drone, environment, git, github, gitlab, jenkins, puppet, sail, scrutinizer, semaphore, shippable, teamcity, travis, variable, vsts, wercker |
-| # releases         | 22 |
-| # dependents       | 71 |
-| # downloads        | 37763900 |
+| # releases         | 17 |
+| # dependents       | 76 |
+| # downloads        | 46997151 |
 | # stars            | 0 |
 
 ## Links

@@ -2,51 +2,49 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IconCollections extends StObject {
   
-  var fiveArrows: FiveArrowsSet = js.native
+  var fiveArrows: FiveArrowsSet
   
-  var fiveArrowsGray: FiveArrowsGraySet = js.native
+  var fiveArrowsGray: FiveArrowsGraySet
   
-  var fiveBoxes: FiveBoxesSet = js.native
+  var fiveBoxes: FiveBoxesSet
   
-  var fiveQuarters: FiveQuartersSet = js.native
+  var fiveQuarters: FiveQuartersSet
   
-  var fiveRating: FiveRatingSet = js.native
+  var fiveRating: FiveRatingSet
   
-  var fourArrows: FourArrowsSet = js.native
+  var fourArrows: FourArrowsSet
   
-  var fourArrowsGray: FourArrowsGraySet = js.native
+  var fourArrowsGray: FourArrowsGraySet
   
-  var fourRating: FourRatingSet = js.native
+  var fourRating: FourRatingSet
   
-  var fourRedToBlack: FourRedToBlackSet = js.native
+  var fourRedToBlack: FourRedToBlackSet
   
-  var fourTrafficLights: FourTrafficLightsSet = js.native
+  var fourTrafficLights: FourTrafficLightsSet
   
-  var threeArrows: ThreeArrowsSet = js.native
+  var threeArrows: ThreeArrowsSet
   
-  var threeArrowsGray: ThreeArrowsGraySet = js.native
+  var threeArrowsGray: ThreeArrowsGraySet
   
-  var threeFlags: ThreeFlagsSet = js.native
+  var threeFlags: ThreeFlagsSet
   
-  var threeSigns: ThreeSignsSet = js.native
+  var threeSigns: ThreeSignsSet
   
-  var threeStars: ThreeStarsSet = js.native
+  var threeStars: ThreeStarsSet
   
-  var threeSymbols: ThreeSymbolsSet = js.native
+  var threeSymbols: ThreeSymbolsSet
   
-  var threeSymbols2: ThreeSymbols2Set = js.native
+  var threeSymbols2: ThreeSymbols2Set
   
-  var threeTrafficLights1: ThreeTrafficLights1Set = js.native
+  var threeTrafficLights1: ThreeTrafficLights1Set
   
-  var threeTrafficLights2: ThreeTrafficLights2Set = js.native
+  var threeTrafficLights2: ThreeTrafficLights2Set
   
-  var threeTriangles: ThreeTrianglesSet = js.native
+  var threeTriangles: ThreeTrianglesSet
 }
 object IconCollections {
   

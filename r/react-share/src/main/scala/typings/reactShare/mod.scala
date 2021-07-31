@@ -20,7 +20,6 @@ import typings.reactShare.reactShareStrings.windowCenter
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -197,82 +196,81 @@ object mod {
   @js.native
   val WorkplaceShareButton: StatelessComponent[CommonShareButtonPropsquo] = js.native
   
-  @js.native
   trait CommonShareButtonProps extends StObject {
     
     /**
       * An object to pass any additional properties, such as `aria-*` attributes.
       */
-    var additionalProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.native
+    var additionalProps: js.UndefOr[HTMLAttributes[HTMLDivElement]] = js.undefined
     
     /**
       *  Takes a function that returns a Promise to be fulfilled before calling
       * `onClick`. If you do not return promise, `onClick` is called immediately.
       */
-    var beforeOnClick: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.native
+    var beforeOnClick: js.UndefOr[js.Function0[js.Promise[Unit] | Unit]] = js.undefined
     
     /**
       * A class name to add to the others added by react-share (SocialMediaShareButton, ...).
       */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Disables click action and adds `disabled` class */
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Style when button is disabled
       * @default { opacity: 0.6 }
       */
-    var disabledStyle: js.UndefOr[StyleHTMLAttributes[HTMLDivElement]] = js.native
+    var disabledStyle: js.UndefOr[StyleHTMLAttributes[HTMLDivElement]] = js.undefined
     
     /**
       * Click callback handler.
       */
-    var onClick: js.UndefOr[js.Function1[/* link */ String, Unit]] = js.native
+    var onClick: js.UndefOr[js.Function1[/* link */ String, Unit]] = js.undefined
     
     /**
       * Takes a function to be called after closing share dialog.
       */
-    var onShareWindowClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onShareWindowClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /**
       * If false, does not open a new window and call the onClick callback instead.
       * @default true
       */
-    var openWindow: js.UndefOr[Boolean] = js.native
+    var openWindow: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The HTML role of the div.
       * @default "button"
       */
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
     /**
       * Extra style for the button.
       */
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Indicates that its element can be focused, and where it participates in sequential keyboard
       * navigation.
       * @default "0"
       */
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * URL of the shared page
       */
-    var url: String = js.native
+    var url: String
     
-    var windowHeight: js.UndefOr[Double] = js.native
+    var windowHeight: js.UndefOr[Double] = js.undefined
     
     /**
       * Whether to center the share box respectively to the screen or to the window.
       * @default "windowCenter"
       */
-    var windowPosition: js.UndefOr[windowCenter | screenCenter] = js.native
+    var windowPosition: js.UndefOr[windowCenter | screenCenter] = js.undefined
     
-    var windowWidth: js.UndefOr[Double] = js.native
+    var windowWidth: js.UndefOr[Double] = js.undefined
   }
   object CommonShareButtonProps {
     
@@ -374,26 +372,25 @@ object mod {
     }
   }
   
-  @js.native
   trait IconComponentProps extends StObject {
     
     /** Allow rounded corners if using rect icons */
-    var borderRadius: js.UndefOr[Double] = js.native
+    var borderRadius: js.UndefOr[Double] = js.undefined
     
     /** Customize background style, e.g. fill */
-    var iconBgStyle: js.UndefOr[CSSProperties] = js.native
+    var iconBgStyle: js.UndefOr[CSSProperties] = js.undefined
     
     /**
       * Customize logo's fill color
       * @default 'white'
       */
-    var logoFillColor: js.UndefOr[String] = js.native
+    var logoFillColor: js.UndefOr[String] = js.undefined
     
     /** Whether to show round or rect icons */
-    var round: js.UndefOr[Boolean] = js.native
+    var round: js.UndefOr[Boolean] = js.undefined
     
     /** Icon size in pixels */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
   }
   object IconComponentProps {
     
@@ -438,17 +435,16 @@ object mod {
     }
   }
   
-  @js.native
   trait ShareCountComponentProps extends StObject {
     
     /** Supply a function as the child to render anything but the count */
-    var children: js.UndefOr[js.Function1[/* shareCount */ Double, ReactNode]] = js.native
+    var children: js.UndefOr[js.Function1[/* shareCount */ Double, ReactNode]] = js.undefined
     
     /** Classes to apply (if any) */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** The URL you are sharing */
-    var url: String = js.native
+    var url: String
   }
   object ShareCountComponentProps {
     

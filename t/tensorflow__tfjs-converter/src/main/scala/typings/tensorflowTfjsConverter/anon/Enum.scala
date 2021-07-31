@@ -2,21 +2,20 @@ package typings.tensorflowTfjsConverter.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Enum extends StObject {
   
-  var enum: js.Array[String] = js.native
+  var `enum`: js.Array[String]
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object Enum {
   
   @scala.inline
-  def apply(enum: js.Array[String], `type`: String): Enum = {
-    val __obj = js.Dynamic.literal(enum = enum.asInstanceOf[js.Any])
+  def apply(`enum`: js.Array[String], `type`: String): Enum = {
+    val __obj = js.Dynamic.literal()
+    __obj.updateDynamic("enum")(`enum`.asInstanceOf[js.Any])
     __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
     __obj.asInstanceOf[Enum]
   }

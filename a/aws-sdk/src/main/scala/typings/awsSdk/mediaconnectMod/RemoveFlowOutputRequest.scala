@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RemoveFlowOutputRequest extends StObject {
   
   /**
     * The flow that you want to remove an output from.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
   /**
     * The ARN of the output that you want to remove.
     */
-  var OutputArn: string = js.native
+  var OutputArn: string
 }
 object RemoveFlowOutputRequest {
   

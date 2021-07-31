@@ -3,7 +3,6 @@ package typings.uifabricStyling
 import typings.uifabricStyling.colorClassNamesMod.IColorClassNames
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object classNamesMod {

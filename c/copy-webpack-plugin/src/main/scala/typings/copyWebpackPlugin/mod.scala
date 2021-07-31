@@ -10,7 +10,6 @@ import typings.node.Buffer
 import typings.std.Plugin
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -18,24 +17,26 @@ object mod extends Shortcut {
   /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
   @JSImport("copy-webpack-plugin", JSImport.Namespace)
   @js.native
-  class ^ () extends Plugin {
+  class ^ ()
+    extends StObject
+       with Plugin {
     def this(options: CopyPluginOptions) = this()
   }
   @JSImport("copy-webpack-plugin", JSImport.Namespace)
   @js.native
-  val ^ : CopyPlugin = js.native
+  val ^ : js.Object & CopyPlugin = js.native
   
   @js.native
   trait CopyPlugin
-    extends Instantiable0[Plugin]
+    extends StObject
+       with Instantiable0[Plugin]
        with Instantiable1[/* options */ CopyPluginOptions, Plugin]
   
-  @js.native
   trait CopyPluginOptions extends StObject {
     
-    var options: js.UndefOr[Options] = js.native
+    var options: js.UndefOr[Options] = js.undefined
     
-    var patterns: js.Array[StringPattern | ObjectPattern] = js.native
+    var patterns: js.Array[StringPattern | ObjectPattern]
   }
   object CopyPluginOptions {
     
@@ -62,26 +63,25 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait ObjectPattern extends StObject {
     
     /**
       * Enable/disable and configure caching. Default path to cache directory: node_modules/.cache/copy-webpack-plugin.
       * @default false
       */
-    var cacheTransform: js.UndefOr[Boolean | String | js.Object] = js.native
+    var cacheTransform: js.UndefOr[Boolean | String | js.Object] = js.undefined
     
     /**
       * A path that determines how to interpret the `from` path.
       * {@link https://webpack.js.org/plugins/copy-webpack-plugin/#context}
       * @default options.context | compiler.options.context
       */
-    var context: js.UndefOr[String] = js.native
+    var context: js.UndefOr[String] = js.undefined
     
     /**
       * Allows to filter copied assets.
       */
-    var filter: js.UndefOr[js.Function1[/* resourcePath */ String, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* resourcePath */ String, Boolean]] = js.undefined
     
     /**
       * Removes all directory references and only copies file names. (default: `false`)
@@ -89,33 +89,33 @@ object mod extends Shortcut {
       * {@link https://webpack.js.org/plugins/copy-webpack-plugin/#flatten}
       * @default false
       */
-    var flatten: js.UndefOr[Boolean] = js.native
+    var flatten: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Overwrites files already in `compilation.assets` (usually added by other plugins.
       * {@link https://webpack.js.org/plugins/copy-webpack-plugin/#force}
       * @default false
       */
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
     
     /**
       * File source path or glob
       * {@link https://webpack.js.org/plugins/copy-webpack-plugin/#from}
       * @default undefined
       */
-    var from: String = js.native
+    var from: String
     
     /**
       * Allows to configure the glob pattern matching library used by the plugin.
       * {@link https://webpack.js.org/plugins/copy-webpack-plugin/#globoptions}
       */
-    var globOptions: js.UndefOr[js.Object] = js.native
+    var globOptions: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Doesn't generate an error on missing file(s);
       * @default false
       */
-    var noErrorOnMissing: js.UndefOr[Boolean] = js.native
+    var noErrorOnMissing: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Path or webpack file-loader patterns. defaults:
@@ -124,7 +124,7 @@ object mod extends Shortcut {
       * {@link https://webpack.js.org/plugins/copy-webpack-plugin/#to}
       * @default compiler.options.output
       */
-    var to: js.UndefOr[String] = js.native
+    var to: js.UndefOr[String] = js.undefined
     
     /**
       * How to interpret `to`. default: undefined
@@ -133,7 +133,7 @@ object mod extends Shortcut {
       * `template` - if 'to' contains a template pattern.
       * @default undefined
       */
-    var toType: js.UndefOr[file | dir | template] = js.native
+    var toType: js.UndefOr[file | dir | template] = js.undefined
     
     /**
       * Function that modifies file contents before writing to webpack. (default: `(content, path) => content`)
@@ -146,7 +146,7 @@ object mod extends Shortcut {
           /* absoluteFrom */ String, 
           String | Buffer | (js.Promise[String | Buffer])
         ]
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Allows to modify the writing path.
@@ -155,7 +155,7 @@ object mod extends Shortcut {
       */
     var transformPath: js.UndefOr[
         js.Function2[/* targetPath */ String, /* absolutePath */ String, String | js.Promise[String]]
-      ] = js.native
+      ] = js.undefined
   }
   object ObjectPattern {
     
@@ -241,14 +241,13 @@ object mod extends Shortcut {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
       * Limits the number of simultaneous requests to fs
       * @default 100
       */
-    var concurrency: js.UndefOr[Double] = js.native
+    var concurrency: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -271,8 +270,8 @@ object mod extends Shortcut {
   
   type StringPattern = String
   
-  type _To = CopyPlugin
+  type _To = js.Object & CopyPlugin
   
   /* This means you don't have to write `^`, but can instead just say `mod.foo` */
-  override def _to: CopyPlugin = ^
+  override def _to: js.Object & CopyPlugin = ^
 }

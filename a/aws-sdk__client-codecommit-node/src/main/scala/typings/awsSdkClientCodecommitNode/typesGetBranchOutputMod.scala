@@ -5,24 +5,24 @@ import typings.awsSdkClientCodecommitNode.typesBranchInfoMod.UnmarshalledBranchI
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetBranchOutputMod {
   
-  @js.native
-  trait GetBranchOutput extends OutputTypesUnion {
+  trait GetBranchOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>The name of the branch.</p>
       */
-    var branch: js.UndefOr[UnmarshalledBranchInfo] = js.native
+    var branch: js.UndefOr[UnmarshalledBranchInfo] = js.undefined
   }
   object GetBranchOutput {
     

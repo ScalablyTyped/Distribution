@@ -4,21 +4,19 @@ import typings.instagramPrivateApi.instagramPrivateApiStrings.photo_
 import typings.instagramPrivateApi.instagramPrivateApiStrings.video_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object directThreadBroadcastReelOptionsMod {
   
-  @js.native
   trait DirectThreadBroadcastReelOptions extends StObject {
     
-    var mediaId: String = js.native
+    var mediaId: String
     
-    var mediaType: js.UndefOr[photo_ | video_] = js.native
+    var mediaType: js.UndefOr[photo_ | video_] = js.undefined
     
-    var reelId: js.UndefOr[String] = js.native
+    var reelId: js.UndefOr[String] = js.undefined
     
-    var text: js.UndefOr[String] = js.native
+    var text: js.UndefOr[String] = js.undefined
   }
   object DirectThreadBroadcastReelOptions {
     

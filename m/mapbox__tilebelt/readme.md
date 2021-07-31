@@ -10,9 +10,9 @@ simple tile utilities
 | ------------------ | :-------------: |
 | Full name          | @mapbox/tilebelt |
 | Keywords           | tile, map, geojson |
-| # releases         | 0 |
-| # dependents       | 19 |
-| # downloads        | 91735 |
+| # releases         | 2 |
+| # dependents       | 22 |
+| # downloads        | 139525 |
 | # stars            | 0 |
 
 ## Links

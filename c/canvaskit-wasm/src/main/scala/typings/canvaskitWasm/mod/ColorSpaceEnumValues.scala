@@ -2,18 +2,16 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ColorSpaceEnumValues extends StObject {
   
-  val ADOBE_RGB: ColorSpace = js.native
+  val ADOBE_RGB: ColorSpace
   
-  val DISPLAY_P3: ColorSpace = js.native
+  val DISPLAY_P3: ColorSpace
   
   // not a typical enum, but effectively like one.
-  val SRGB: ColorSpace = js.native
+  val SRGB: ColorSpace
 }
 object ColorSpaceEnumValues {
   

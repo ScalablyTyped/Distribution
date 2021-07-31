@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.EdgeRight
 import typings.officeJs.officeJsStrings.EdgeTop
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.6]
   */
 @js.native
-trait ConditionalRangeBorderCollection extends ClientObject {
+trait ConditionalRangeBorderCollection
+  extends StObject
+     with ClientObject {
   
   /**
     *
@@ -94,7 +95,7 @@ trait ConditionalRangeBorderCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ConditionalRangeBorderCollection = js.native
-  def load(options: ConditionalRangeBorderCollectionLoadOptions with CollectionLoadOptions): ConditionalRangeBorderCollection = js.native
+  def load(options: ConditionalRangeBorderCollectionLoadOptions & CollectionLoadOptions): ConditionalRangeBorderCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ConditionalRangeBorderCollection = js.native
   def load(propertyNames: String): ConditionalRangeBorderCollection = js.native
   def load(propertyNames: js.Array[String]): ConditionalRangeBorderCollection = js.native

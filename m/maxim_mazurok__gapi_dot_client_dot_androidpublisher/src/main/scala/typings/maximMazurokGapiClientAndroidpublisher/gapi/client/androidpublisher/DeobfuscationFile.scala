@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAndroidpublisher.gapi.client.androidpublis
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeobfuscationFile extends StObject {
   
   /** The type of the deobfuscation file. */
-  var symbolType: js.UndefOr[String] = js.native
+  var symbolType: js.UndefOr[String] = js.undefined
 }
 object DeobfuscationFile {
   

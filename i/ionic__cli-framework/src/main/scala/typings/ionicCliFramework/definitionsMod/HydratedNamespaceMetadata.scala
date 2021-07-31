@@ -2,26 +2,24 @@ package typings.ionicCliFramework.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Required<std.Readonly<@ionic/cli-framework.@ionic/cli-framework/definitions.NamespaceMetadata>> */
-@js.native
 trait HydratedNamespaceMetadata[C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] extends StObject {
   
-  val aliases: js.Array[String] = js.native
+  val aliases: js.Array[String]
   
-  var description: String = js.native
+  var description: String
   
-  var footnotes: js.Array[Footnote] = js.native
+  var footnotes: js.Array[Footnote]
   
-  var groups: js.Array[String] = js.native
+  var groups: js.Array[String]
   
-  var name: String = js.native
+  var name: String
   
-  val namespace: N = js.native
+  val namespace: N
   
-  var summary: String = js.native
+  var summary: String
 }
 object HydratedNamespaceMetadata {
   
@@ -40,7 +38,7 @@ object HydratedNamespaceMetadata {
   }
   
   @scala.inline
-  implicit class HydratedNamespaceMetadataMutableBuilder[Self <: HydratedNamespaceMetadata[_, _, _, _, _], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self with (HydratedNamespaceMetadata[C, N, M, I, O])) extends AnyVal {
+  implicit class HydratedNamespaceMetadataMutableBuilder[Self <: HydratedNamespaceMetadata[?, ?, ?, ?, ?], C /* <: ICommand[C, N, M, I, O] */, N /* <: INamespace[C, N, M, I, O] */, M /* <: CommandMetadata[I, O] */, I /* <: CommandMetadataInput */, O /* <: CommandMetadataOption */] (val x: Self & (HydratedNamespaceMetadata[C, N, M, I, O])) extends AnyVal {
     
     @scala.inline
     def setAliases(value: js.Array[String]): Self = StObject.set(x, "aliases", value.asInstanceOf[js.Any])

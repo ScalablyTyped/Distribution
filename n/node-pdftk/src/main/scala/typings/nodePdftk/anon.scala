@@ -3,66 +3,64 @@ package typings.nodePdftk
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   /* Inlined std.Partial<std.Record<node-pdftk.node-pdftk.Letter, string | node.Buffer>> */
-  @js.native
   trait PartialRecordLetterstring extends StObject {
     
-    var A: js.UndefOr[String | Buffer] = js.native
+    var A: js.UndefOr[String | Buffer] = js.undefined
     
-    var B: js.UndefOr[String | Buffer] = js.native
+    var B: js.UndefOr[String | Buffer] = js.undefined
     
-    var C: js.UndefOr[String | Buffer] = js.native
+    var C: js.UndefOr[String | Buffer] = js.undefined
     
-    var D: js.UndefOr[String | Buffer] = js.native
+    var D: js.UndefOr[String | Buffer] = js.undefined
     
-    var E: js.UndefOr[String | Buffer] = js.native
+    var E: js.UndefOr[String | Buffer] = js.undefined
     
-    var F: js.UndefOr[String | Buffer] = js.native
+    var F: js.UndefOr[String | Buffer] = js.undefined
     
-    var G: js.UndefOr[String | Buffer] = js.native
+    var G: js.UndefOr[String | Buffer] = js.undefined
     
-    var H: js.UndefOr[String | Buffer] = js.native
+    var H: js.UndefOr[String | Buffer] = js.undefined
     
-    var I: js.UndefOr[String | Buffer] = js.native
+    var I: js.UndefOr[String | Buffer] = js.undefined
     
-    var J: js.UndefOr[String | Buffer] = js.native
+    var J: js.UndefOr[String | Buffer] = js.undefined
     
-    var K: js.UndefOr[String | Buffer] = js.native
+    var K: js.UndefOr[String | Buffer] = js.undefined
     
-    var L: js.UndefOr[String | Buffer] = js.native
+    var L: js.UndefOr[String | Buffer] = js.undefined
     
-    var M: js.UndefOr[String | Buffer] = js.native
+    var M: js.UndefOr[String | Buffer] = js.undefined
     
-    var N: js.UndefOr[String | Buffer] = js.native
+    var N: js.UndefOr[String | Buffer] = js.undefined
     
-    var O: js.UndefOr[String | Buffer] = js.native
+    var O: js.UndefOr[String | Buffer] = js.undefined
     
-    var P: js.UndefOr[String | Buffer] = js.native
+    var P: js.UndefOr[String | Buffer] = js.undefined
     
-    var Q: js.UndefOr[String | Buffer] = js.native
+    var Q: js.UndefOr[String | Buffer] = js.undefined
     
-    var R: js.UndefOr[String | Buffer] = js.native
+    var R: js.UndefOr[String | Buffer] = js.undefined
     
-    var S: js.UndefOr[String | Buffer] = js.native
+    var S: js.UndefOr[String | Buffer] = js.undefined
     
-    var T: js.UndefOr[String | Buffer] = js.native
+    var T: js.UndefOr[String | Buffer] = js.undefined
     
-    var U: js.UndefOr[String | Buffer] = js.native
+    var U: js.UndefOr[String | Buffer] = js.undefined
     
-    var V: js.UndefOr[String | Buffer] = js.native
+    var V: js.UndefOr[String | Buffer] = js.undefined
     
-    var W: js.UndefOr[String | Buffer] = js.native
+    var W: js.UndefOr[String | Buffer] = js.undefined
     
-    var X: js.UndefOr[String | Buffer] = js.native
+    var X: js.UndefOr[String | Buffer] = js.undefined
     
-    var Y: js.UndefOr[String | Buffer] = js.native
+    var Y: js.UndefOr[String | Buffer] = js.undefined
     
-    var Z: js.UndefOr[String | Buffer] = js.native
+    var Z: js.UndefOr[String | Buffer] = js.undefined
   }
   object PartialRecordLetterstring {
     

@@ -6,11 +6,9 @@ import typings.officeJsPreview.officeJsPreviewStrings.AutomaticExceptTables
 import typings.officeJsPreview.officeJsPreviewStrings.Manual
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface for updating data on the Application object, for use in `application.set({ ... })`. */
-@js.native
 trait ApplicationUpdateData extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait ApplicationUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.1 for get, 1.8 for set]
     */
-  var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.native
+  var calculationMode: js.UndefOr[CalculationMode | Automatic | AutomaticExceptTables | Manual] = js.undefined
   
   /**
     *
@@ -29,7 +27,7 @@ trait ApplicationUpdateData extends StObject {
     *
     * [Api set: ExcelApi 1.9]
     */
-  var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.native
+  var iterativeCalculation: js.UndefOr[IterativeCalculationUpdateData] = js.undefined
 }
 object ApplicationUpdateData {
   

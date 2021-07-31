@@ -2,25 +2,23 @@ package typings.googleapis.replicapoolV1beta1Mod.replicapoolV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Compute Engine Instance tag, identical to the tags on the corresponding
   * Compute Engine Instance resource.
   */
-@js.native
 trait SchemaTag extends StObject {
   
   /**
     * The fingerprint of the tag. Required for updating the list of tags.
     */
-  var fingerPrint: js.UndefOr[String] = js.native
+  var fingerPrint: js.UndefOr[String] = js.undefined
   
   /**
     * Items contained in this tag.
     */
-  var items: js.UndefOr[js.Array[String]] = js.native
+  var items: js.UndefOr[js.Array[String]] = js.undefined
 }
 object SchemaTag {
   

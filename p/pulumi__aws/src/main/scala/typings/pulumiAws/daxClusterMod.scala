@@ -10,7 +10,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object daxClusterMod {
@@ -139,6 +138,10 @@ object daxClusterMod {
   /* static members */
   object Cluster {
     
+    @JSImport("@pulumi/aws/dax/cluster", "Cluster")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Cluster resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -148,54 +151,48 @@ object daxClusterMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/dax/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Cluster = js.native
-    @JSImport("@pulumi/aws/dax/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Cluster = js.native
-    @JSImport("@pulumi/aws/dax/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState): Cluster = js.native
-    @JSImport("@pulumi/aws/dax/cluster", "Cluster.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Cluster]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ClusterState, opts: CustomResourceOptions): Cluster = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Cluster]
     
     /**
       * Returns true if the given object is an instance of Cluster.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/dax/cluster", "Cluster.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dax/cluster.Cluster */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/dax/cluster.Cluster */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/dax/cluster.Cluster */ Boolean]
   }
   
-  @js.native
   trait ClusterArgs extends StObject {
     
     /**
       * List of Availability Zones in which the
       * nodes will be created
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Group identifier. DAX converts this name to
       * lowercase
       */
-    val clusterName: Input[String] = js.native
+    val clusterName: Input[String]
     
     /**
       * Description for the cluster
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid Amazon Resource Name (ARN) that identifies
       * an IAM role. At runtime, DAX will assume this role and use the role's
       * permissions to access DynamoDB on your behalf
       */
-    val iamRoleArn: Input[String] = js.native
+    val iamRoleArn: Input[String]
     
     /**
       * Specifies the weekly time range for when
@@ -203,55 +200,55 @@ object daxClusterMod {
       * (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
       * `sun:05:00-sun:09:00`
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compute and memory capacity of the nodes. See
       * [Nodes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.cluster.html#DAX.concepts.nodes) for supported node types
       */
-    val nodeType: Input[String] = js.native
+    val nodeType: Input[String]
     
     /**
       * An Amazon Resource Name (ARN) of an
       * SNS topic to send DAX notifications to. Example:
       * `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
       */
-    val notificationTopicArn: js.UndefOr[Input[String]] = js.native
+    val notificationTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the parameter group to associate
       * with this DAX cluster
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The number of nodes in the DAX cluster. A
       * replication factor of 1 will create a single-node cluster, without any read
       * replicas
       */
-    val replicationFactor: Input[Double] = js.native
+    val replicationFactor: Input[Double]
     
     /**
       * One or more VPC security groups associated
       * with the cluster
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Encrypt at rest options
       */
-    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dax.ClusterServerSideEncryption]] = js.native
+    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dax.ClusterServerSideEncryption]] = js.undefined
     
     /**
       * Name of the subnet group to be used for the
       * cluster
       */
-    val subnetGroupName: js.UndefOr[Input[String]] = js.native
+    val subnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterArgs {
     
@@ -343,48 +340,47 @@ object daxClusterMod {
     }
   }
   
-  @js.native
   trait ClusterState extends StObject {
     
     /**
       * The ARN of the DAX cluster
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of Availability Zones in which the
       * nodes will be created
       */
-    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val availabilityZones: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * The DNS name of the DAX cluster without the port appended
       */
-    val clusterAddress: js.UndefOr[Input[String]] = js.native
+    val clusterAddress: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Group identifier. DAX converts this name to
       * lowercase
       */
-    val clusterName: js.UndefOr[Input[String]] = js.native
+    val clusterName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The configuration endpoint for this DAX cluster,
       * consisting of a DNS name and a port number
       */
-    val configurationEndpoint: js.UndefOr[Input[String]] = js.native
+    val configurationEndpoint: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Description for the cluster
       */
-    val description: js.UndefOr[Input[String]] = js.native
+    val description: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A valid Amazon Resource Name (ARN) that identifies
       * an IAM role. At runtime, DAX will assume this role and use the role's
       * permissions to access DynamoDB on your behalf
       */
-    val iamRoleArn: js.UndefOr[Input[String]] = js.native
+    val iamRoleArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Specifies the weekly time range for when
@@ -392,67 +388,67 @@ object daxClusterMod {
       * (24H Clock UTC). The minimum maintenance window is a 60 minute period. Example:
       * `sun:05:00-sun:09:00`
       */
-    val maintenanceWindow: js.UndefOr[Input[String]] = js.native
+    val maintenanceWindow: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The compute and memory capacity of the nodes. See
       * [Nodes](http://docs.aws.amazon.com/amazondynamodb/latest/developerguide/DAX.concepts.cluster.html#DAX.concepts.nodes) for supported node types
       */
-    val nodeType: js.UndefOr[Input[String]] = js.native
+    val nodeType: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * List of node objects including `id`, `address`, `port` and
       * `availabilityZone`. Referenceable e.g. as
       * `${aws_dax_cluster.test.nodes.0.address}`
       */
-    val nodes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dax.ClusterNode]]]] = js.native
+    val nodes: js.UndefOr[Input[js.Array[Input[typings.pulumiAws.inputMod.dax.ClusterNode]]]] = js.undefined
     
     /**
       * An Amazon Resource Name (ARN) of an
       * SNS topic to send DAX notifications to. Example:
       * `arn:aws:sns:us-east-1:012345678999:my_sns_topic`
       */
-    val notificationTopicArn: js.UndefOr[Input[String]] = js.native
+    val notificationTopicArn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Name of the parameter group to associate
       * with this DAX cluster
       */
-    val parameterGroupName: js.UndefOr[Input[String]] = js.native
+    val parameterGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The port used by the configuration endpoint
       */
-    val port: js.UndefOr[Input[Double]] = js.native
+    val port: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * The number of nodes in the DAX cluster. A
       * replication factor of 1 will create a single-node cluster, without any read
       * replicas
       */
-    val replicationFactor: js.UndefOr[Input[Double]] = js.native
+    val replicationFactor: js.UndefOr[Input[Double]] = js.undefined
     
     /**
       * One or more VPC security groups associated
       * with the cluster
       */
-    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.native
+    val securityGroupIds: js.UndefOr[Input[js.Array[Input[String]]]] = js.undefined
     
     /**
       * Encrypt at rest options
       */
-    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dax.ClusterServerSideEncryption]] = js.native
+    val serverSideEncryption: js.UndefOr[Input[typings.pulumiAws.inputMod.dax.ClusterServerSideEncryption]] = js.undefined
     
     /**
       * Name of the subnet group to be used for the
       * cluster
       */
-    val subnetGroupName: js.UndefOr[Input[String]] = js.native
+    val subnetGroupName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A map of tags to assign to the resource
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object ClusterState {
     

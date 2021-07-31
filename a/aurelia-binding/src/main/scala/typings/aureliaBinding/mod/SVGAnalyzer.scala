@@ -2,13 +2,11 @@ package typings.aureliaBinding.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SVGAnalyzer extends StObject {
   
-  def isStandardSvgAttribute(nodeName: String, attributeName: String): Boolean = js.native
+  def isStandardSvgAttribute(nodeName: String, attributeName: String): Boolean
 }
 object SVGAnalyzer {
   

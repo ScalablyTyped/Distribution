@@ -5,12 +5,14 @@ import typings.reactNavigationCore.anon.Location
 import typings.reactNavigationCore.anon.Serializable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkSerializableMod {
   
-  @JSImport("@react-navigation/core/lib/typescript/src/checkSerializable", JSImport.Default)
+  @JSImport("@react-navigation/core/lib/typescript/src/checkSerializable", JSImport.Namespace)
   @js.native
-  def default(o: StringDictionary[js.Any]): Serializable | Location = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(o: StringDictionary[js.Any]): Serializable | Location = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(o.asInstanceOf[js.Any]).asInstanceOf[Serializable | Location]
 }

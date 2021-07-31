@@ -2,15 +2,13 @@ package typings.spectrogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Enable extends StObject {
     
-    var enable: js.UndefOr[Boolean] = js.native
+    var enable: js.UndefOr[Boolean] = js.undefined
   }
   object Enable {
     
@@ -31,12 +29,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Height extends StObject {
     
-    var height: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var height: js.UndefOr[Double | js.Function0[Double]] = js.undefined
     
-    var width: js.UndefOr[Double | js.Function0[Double]] = js.native
+    var width: js.UndefOr[Double | js.Function0[Double]] = js.undefined
   }
   object Height {
     

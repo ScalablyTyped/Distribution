@@ -5,10 +5,13 @@ import typings.phaser.Phaser.Types.Create.Palette
 import typings.std.HTMLCanvasElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Create {
+  
+  @JSImport("phaser", "Create")
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Generates a texture based on the given Create configuration object.
@@ -42,9 +45,8 @@ object Create {
     * The default palette is Arne16, but you can specify your own using the `palette` property.
     * @param config The Generate Texture Configuration object.
     */
-  @JSImport("phaser", "Create.GenerateTexture")
-  @js.native
-  def GenerateTexture(config: GenerateTextureConfig): HTMLCanvasElement = js.native
+  @scala.inline
+  def GenerateTexture(config: GenerateTextureConfig): HTMLCanvasElement = ^.asInstanceOf[js.Dynamic].applyDynamic("GenerateTexture")(config.asInstanceOf[js.Any]).asInstanceOf[HTMLCanvasElement]
   
   object Palettes {
     

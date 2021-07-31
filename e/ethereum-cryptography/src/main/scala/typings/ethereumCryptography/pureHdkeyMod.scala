@@ -5,7 +5,6 @@ import typings.ethereumCryptography.anon.Xpub
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pureHdkeyMod {
@@ -26,23 +25,18 @@ object pureHdkeyMod {
     @scala.inline
     def HARDENED_OFFSET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HARDENED_OFFSET")(x.asInstanceOf[js.Any])
     
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKey.fromExtendedKey")
-    @js.native
-    def fromExtendedKey(base58key: String): HDKeyT = js.native
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKey.fromExtendedKey")
-    @js.native
-    def fromExtendedKey(base58key: String, versions: Versions): HDKeyT = js.native
+    @scala.inline
+    def fromExtendedKey(base58key: String): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
+    @scala.inline
+    def fromExtendedKey(base58key: String, versions: Versions): HDKeyT = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[HDKeyT]
     
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKey.fromJSON")
-    @js.native
-    def fromJSON(json: Xpriv): HDKeyT = js.native
+    @scala.inline
+    def fromJSON(json: Xpriv): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
     
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKey.fromMasterSeed")
-    @js.native
-    def fromMasterSeed(seed: Buffer): HDKeyT = js.native
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKey.fromMasterSeed")
-    @js.native
-    def fromMasterSeed(seed: Buffer, versions: Versions): HDKeyT = js.native
+    @scala.inline
+    def fromMasterSeed(seed: Buffer): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
+    @scala.inline
+    def fromMasterSeed(seed: Buffer, versions: Versions): HDKeyT = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[HDKeyT]
   }
   
   @JSImport("ethereum-cryptography/pure/hdkey", "HDKeyT")
@@ -98,31 +92,25 @@ object pureHdkeyMod {
     @scala.inline
     def HARDENED_OFFSET_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("HARDENED_OFFSET")(x.asInstanceOf[js.Any])
     
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKeyT.fromExtendedKey")
-    @js.native
-    def fromExtendedKey(base58key: String): HDKeyT = js.native
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKeyT.fromExtendedKey")
-    @js.native
-    def fromExtendedKey(base58key: String, versions: Versions): HDKeyT = js.native
+    @scala.inline
+    def fromExtendedKey(base58key: String): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
+    @scala.inline
+    def fromExtendedKey(base58key: String, versions: Versions): HDKeyT = (^.asInstanceOf[js.Dynamic].applyDynamic("fromExtendedKey")(base58key.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[HDKeyT]
     
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKeyT.fromJSON")
-    @js.native
-    def fromJSON(json: Xpriv): HDKeyT = js.native
+    @scala.inline
+    def fromJSON(json: Xpriv): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromJSON")(json.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
     
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKeyT.fromMasterSeed")
-    @js.native
-    def fromMasterSeed(seed: Buffer): HDKeyT = js.native
-    @JSImport("ethereum-cryptography/pure/hdkey", "HDKeyT.fromMasterSeed")
-    @js.native
-    def fromMasterSeed(seed: Buffer, versions: Versions): HDKeyT = js.native
+    @scala.inline
+    def fromMasterSeed(seed: Buffer): HDKeyT = ^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any]).asInstanceOf[HDKeyT]
+    @scala.inline
+    def fromMasterSeed(seed: Buffer, versions: Versions): HDKeyT = (^.asInstanceOf[js.Dynamic].applyDynamic("fromMasterSeed")(seed.asInstanceOf[js.Any], versions.asInstanceOf[js.Any])).asInstanceOf[HDKeyT]
   }
   
-  @js.native
   trait Versions extends StObject {
     
-    var `private`: Double = js.native
+    var `private`: Double
     
-    var public: Double = js.native
+    var public: Double
   }
   object Versions {
     

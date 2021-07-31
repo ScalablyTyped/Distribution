@@ -1,6 +1,5 @@
 package typings.antd
 
-import org.scalablytyped.runtime.Shortcut
 import typings.rcNotification.notificationMod.NotificationInstance
 import typings.react.mod.CSSProperties
 import typings.react.mod.Key
@@ -9,53 +8,52 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-object messageMod extends Shortcut {
+object messageMod {
+  
+  @JSImport("antd/lib/message", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("antd/lib/message", JSImport.Default)
   @js.native
   val default: MessageApi = js.native
   
-  @JSImport("antd/lib/message", "attachTypeApi")
-  @js.native
-  def attachTypeApi(originalApi: js.Any, `type`: String): Unit = js.native
+  @scala.inline
+  def attachTypeApi(originalApi: js.Any, `type`: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("attachTypeApi")(originalApi.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("antd/lib/message", "getInstance")
-  @js.native
-  def getInstance(): NotificationInstance | Null = js.native
+  @scala.inline
+  def getInstance(): NotificationInstance | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")().asInstanceOf[NotificationInstance | Null]
   
-  @JSImport("antd/lib/message", "getKeyThenIncreaseKey")
-  @js.native
-  def getKeyThenIncreaseKey(): Double = js.native
+  @scala.inline
+  def getKeyThenIncreaseKey(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getKeyThenIncreaseKey")().asInstanceOf[Double]
   
-  @js.native
   trait ArgsProps extends StObject {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var content: ReactNode = js.native
+    var content: ReactNode
     
-    var duration: Double | Null = js.native
+    var duration: Double | Null
     
-    var icon: js.UndefOr[ReactNode] = js.native
+    var icon: js.UndefOr[ReactNode] = js.undefined
     
-    var key: js.UndefOr[String | Double] = js.native
+    var key: js.UndefOr[String | Double] = js.undefined
     
-    var onClose: js.UndefOr[js.Function0[Unit]] = js.native
+    var onClose: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: NoticeType = js.native
+    var `type`: NoticeType
   }
   object ArgsProps {
     
     @scala.inline
     def apply(`type`: NoticeType): ArgsProps = {
-      val __obj = js.Dynamic.literal()
+      val __obj = js.Dynamic.literal(duration = null)
       __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
       __obj.asInstanceOf[ArgsProps]
     }
@@ -122,22 +120,21 @@ object messageMod extends Shortcut {
   
   type ConfigOnClose = js.Function0[Unit]
   
-  @js.native
   trait ConfigOptions extends StObject {
     
-    var duration: js.UndefOr[Double] = js.native
+    var duration: js.UndefOr[Double] = js.undefined
     
-    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.native
+    var getContainer: js.UndefOr[js.Function0[HTMLElement]] = js.undefined
     
-    var maxCount: js.UndefOr[Double] = js.native
+    var maxCount: js.UndefOr[Double] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var rtl: js.UndefOr[Boolean] = js.native
+    var rtl: js.UndefOr[Boolean] = js.undefined
     
-    var top: js.UndefOr[Double] = js.native
+    var top: js.UndefOr[Double] = js.undefined
     
-    var transitionName: js.UndefOr[String] = js.native
+    var transitionName: js.UndefOr[String] = js.undefined
   }
   object ConfigOptions {
     
@@ -197,7 +194,9 @@ object messageMod extends Shortcut {
   type JointContent = ConfigContent | ArgsProps
   
   @js.native
-  trait MessageApi extends MessageInstance {
+  trait MessageApi
+    extends StObject
+       with MessageInstance {
     
     def config(options: ConfigOptions): Unit = js.native
     
@@ -207,34 +206,40 @@ object messageMod extends Shortcut {
     def useMessage(): js.Tuple2[MessageInstance, ReactElement] = js.native
     
     def warn(content: JointContent): MessageType = js.native
-    def warn(content: JointContent, duration: js.UndefOr[ConfigDuration], onClose: ConfigOnClose): MessageType = js.native
+    def warn(content: JointContent, duration: Unit, onClose: ConfigOnClose): MessageType = js.native
     def warn(content: JointContent, duration: ConfigDuration): MessageType = js.native
+    def warn(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
   }
   
   @js.native
   trait MessageInstance extends StObject {
     
     def error(content: JointContent): MessageType = js.native
-    def error(content: JointContent, duration: js.UndefOr[ConfigDuration], onClose: ConfigOnClose): MessageType = js.native
+    def error(content: JointContent, duration: Unit, onClose: ConfigOnClose): MessageType = js.native
     def error(content: JointContent, duration: ConfigDuration): MessageType = js.native
+    def error(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
     
     def info(content: JointContent): MessageType = js.native
-    def info(content: JointContent, duration: js.UndefOr[ConfigDuration], onClose: ConfigOnClose): MessageType = js.native
+    def info(content: JointContent, duration: Unit, onClose: ConfigOnClose): MessageType = js.native
     def info(content: JointContent, duration: ConfigDuration): MessageType = js.native
+    def info(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
     
     def loading(content: JointContent): MessageType = js.native
-    def loading(content: JointContent, duration: js.UndefOr[ConfigDuration], onClose: ConfigOnClose): MessageType = js.native
+    def loading(content: JointContent, duration: Unit, onClose: ConfigOnClose): MessageType = js.native
     def loading(content: JointContent, duration: ConfigDuration): MessageType = js.native
+    def loading(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
     
     def open(args: ArgsProps): MessageType = js.native
     
     def success(content: JointContent): MessageType = js.native
-    def success(content: JointContent, duration: js.UndefOr[ConfigDuration], onClose: ConfigOnClose): MessageType = js.native
+    def success(content: JointContent, duration: Unit, onClose: ConfigOnClose): MessageType = js.native
     def success(content: JointContent, duration: ConfigDuration): MessageType = js.native
+    def success(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
     
     def warning(content: JointContent): MessageType = js.native
-    def warning(content: JointContent, duration: js.UndefOr[ConfigDuration], onClose: ConfigOnClose): MessageType = js.native
+    def warning(content: JointContent, duration: Unit, onClose: ConfigOnClose): MessageType = js.native
     def warning(content: JointContent, duration: ConfigDuration): MessageType = js.native
+    def warning(content: JointContent, duration: ConfigDuration, onClose: ConfigOnClose): MessageType = js.native
   }
   
   @js.native
@@ -274,9 +279,4 @@ object messageMod extends Shortcut {
   }
   
   type ThenableArgument = js.Function1[/* val */ js.Any, Unit]
-  
-  type _To = MessageApi
-  
-  /* This means you don't have to write `default`, but can instead just say `messageMod.foo` */
-  override def _to: MessageApi = default
 }

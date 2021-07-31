@@ -10,9 +10,9 @@ Encode and decode rfc2047 (MIME encoded words)
 | ------------------ | :-------------: |
 | Full name          | rfc2047 |
 | Keywords           | rfc2047, mime, email, header, subject, utf-8, non-ascii, iconv |
-| # releases         | 0 |
-| # dependents       | 4 |
-| # downloads        | 184772 |
+| # releases         | 3 |
+| # dependents       | 3 |
+| # downloads        | 193031 |
 | # stars            | 0 |
 
 ## Links

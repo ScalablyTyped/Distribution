@@ -3,19 +3,17 @@ package typings.pixiJs.anon
 import typings.pixiJs.PIXI.ALPHA_MODES
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBitmap extends StObject {
   
-  var alphaMode: js.UndefOr[ALPHA_MODES] = js.native
+  var alphaMode: js.UndefOr[ALPHA_MODES] = js.undefined
   
-  var autoLoad: js.UndefOr[Boolean] = js.native
+  var autoLoad: js.UndefOr[Boolean] = js.undefined
   
-  var createBitmap: js.UndefOr[Boolean] = js.native
+  var createBitmap: js.UndefOr[Boolean] = js.undefined
   
-  var crossorigin: js.UndefOr[Boolean] = js.native
+  var crossorigin: js.UndefOr[Boolean] = js.undefined
 }
 object CreateBitmap {
   

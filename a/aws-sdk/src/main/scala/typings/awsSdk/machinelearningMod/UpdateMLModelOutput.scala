@@ -2,16 +2,14 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateMLModelOutput extends StObject {
   
   /**
     * The ID assigned to the MLModel during creation. This value should be identical to the value of the MLModelID in the request.
     */
-  var MLModelId: js.UndefOr[EntityId] = js.native
+  var MLModelId: js.UndefOr[EntityId] = js.undefined
 }
 object UpdateMLModelOutput {
   

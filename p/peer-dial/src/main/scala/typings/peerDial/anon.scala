@@ -2,15 +2,13 @@ package typings.peerDial
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Icon extends StObject {
     
-    var icon: js.Object = js.native
+    var icon: js.Object
   }
   object Icon {
     

@@ -2,50 +2,48 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TemplateSummary extends StObject {
   
   /**
     * Reserved for DocuSign.
     */
-  var applied: js.UndefOr[String] = js.native
+  var applied: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the document ID number that the tab is placed on. This must refer to an existing document's id attribute.
     */
-  var documentId: js.UndefOr[String] = js.native
+  var documentId: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the document.
     */
-  var documentName: js.UndefOr[String] = js.native
+  var documentName: js.UndefOr[String] = js.undefined
   
   /**
     * This object describes errors that occur. It is only valid for responses and ignored in requests.
     */
   var errorDetails: js.UndefOr[
     /* This object describes errors that occur. It is only valid for responses and ignored in requests. */ ErrorDetails
-  ] = js.native
+  ] = js.undefined
   
   /**
     * The name of the template.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
   
-  var templateMatch: js.UndefOr[TemplateMatch] = js.native
+  var templateMatch: js.UndefOr[TemplateMatch] = js.undefined
   
   /**
     * A URI containing the user ID.
     */
-  var uri: js.UndefOr[String] = js.native
+  var uri: js.UndefOr[String] = js.undefined
 }
 object TemplateSummary {
   

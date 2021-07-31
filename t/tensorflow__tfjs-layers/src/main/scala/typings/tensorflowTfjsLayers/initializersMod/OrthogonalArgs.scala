@@ -2,16 +2,16 @@ package typings.tensorflowTfjsLayers.initializersMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OrthogonalArgs extends SeedOnlyInitializerArgs {
+trait OrthogonalArgs
+  extends StObject
+     with SeedOnlyInitializerArgs {
   
   /**
     * Multiplicative factor to apply to the orthogonal matrix. Defaults to 1.
     */
-  var gain: js.UndefOr[Double] = js.native
+  var gain: js.UndefOr[Double] = js.undefined
 }
 object OrthogonalArgs {
   

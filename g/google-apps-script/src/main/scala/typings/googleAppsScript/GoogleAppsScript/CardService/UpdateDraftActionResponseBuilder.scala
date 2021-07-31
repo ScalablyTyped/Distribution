@@ -2,18 +2,16 @@ package typings.googleAppsScript.GoogleAppsScript.CardService
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A builder for UpdateDraftActionResponse objects.
   */
-@js.native
 trait UpdateDraftActionResponseBuilder extends StObject {
   
-  def build(): UpdateDraftActionResponse = js.native
+  def build(): UpdateDraftActionResponse
   
-  def setUpdateDraftBodyAction(updateDraftBodyAction: UpdateDraftBodyAction): UpdateDraftActionResponseBuilder = js.native
+  def setUpdateDraftBodyAction(updateDraftBodyAction: UpdateDraftBodyAction): UpdateDraftActionResponseBuilder
 }
 object UpdateDraftActionResponseBuilder {
   

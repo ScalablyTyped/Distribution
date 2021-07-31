@@ -5,7 +5,6 @@ import typings.node.NodeJS.ReadWriteStream
 import typings.strongLogTransformer.anon.PartialOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -14,16 +13,15 @@ object mod extends Shortcut {
   @js.native
   val ^ : StrongLogTransformer = js.native
   
-  @js.native
   trait Options extends StObject {
     
-    var format: String = js.native
+    var format: String
     
-    var mergeMultiline: Boolean = js.native
+    var mergeMultiline: Boolean
     
-    var tag: String = js.native
+    var tag: String
     
-    var timeStamp: Boolean = js.native
+    var timeStamp: Boolean
   }
   object Options {
     

@@ -2,32 +2,31 @@ package typings.cssTree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AttributeSelector
-  extends CssNodeCommon
+  extends StObject
+     with CssNodeCommon
      with CssNode
      with CssNodePlain {
   
-  var flags: String | Null = js.native
+  var flags: String | Null
   
-  var matcher: String | Null = js.native
+  var matcher: String | Null
   
-  var name: Identifier = js.native
+  var name: Identifier
   
   @JSName("type")
-  var type_AttributeSelector: typings.cssTree.cssTreeStrings.AttributeSelector = js.native
+  var type_AttributeSelector: typings.cssTree.cssTreeStrings.AttributeSelector
   
-  var value: StringNode | Identifier | Null = js.native
+  var value: StringNode | Identifier | Null
 }
 object AttributeSelector {
   
   @scala.inline
-  def apply(name: Identifier, `type`: typings.cssTree.cssTreeStrings.AttributeSelector): AttributeSelector = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: Identifier): AttributeSelector = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], flags = null, matcher = null, value = null)
+    __obj.updateDynamic("type")("AttributeSelector")
     __obj.asInstanceOf[AttributeSelector]
   }
   

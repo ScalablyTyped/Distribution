@@ -3,16 +3,14 @@ package typings.algoliaClientSearch.mod
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTopUserIDsResponse extends StObject {
   
   /**
     * Mapping of cluster names to top users.
     */
-  var topUsers: Record[String, js.Array[UserIDResponse]] = js.native
+  var topUsers: Record[String, js.Array[UserIDResponse]]
 }
 object GetTopUserIDsResponse {
   

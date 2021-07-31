@@ -2,13 +2,11 @@ package typings.activexExcel.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Pctinfo extends StObject {
   
-  var pctinfo: Double = js.native
+  var pctinfo: Double
 }
 object Pctinfo {
   

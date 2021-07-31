@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/script/v1", "script_v1.Resource$Projects$Versions")
@@ -32,7 +31,7 @@ class ResourceProjectsVersions protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaVersion] = js.native
   def create(callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
   def create(params: ParamsResourceProjectsVersionsCreate): GaxiosPromise[SchemaVersion] = js.native
   def create(params: ParamsResourceProjectsVersionsCreate, callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
   def create(
@@ -62,7 +61,7 @@ class ResourceProjectsVersions protected () extends StObject {
     */
   def get(): GaxiosPromise[SchemaVersion] = js.native
   def get(callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
-  def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
+  def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaVersion] = js.native
   def get(params: ParamsResourceProjectsVersionsGet): GaxiosPromise[SchemaVersion] = js.native
   def get(params: ParamsResourceProjectsVersionsGet, callback: BodyResponseCallback[SchemaVersion]): Unit = js.native
   def get(
@@ -93,7 +92,7 @@ class ResourceProjectsVersions protected () extends StObject {
     */
   def list(): GaxiosPromise[SchemaListVersionsResponse] = js.native
   def list(callback: BodyResponseCallback[SchemaListVersionsResponse]): Unit = js.native
-  def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListVersionsResponse] = js.native
+  def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListVersionsResponse] = js.native
   def list(params: ParamsResourceProjectsVersionsList): GaxiosPromise[SchemaListVersionsResponse] = js.native
   def list(
     params: ParamsResourceProjectsVersionsList,

@@ -3,11 +3,12 @@ package typings.typescript.mod
 import typings.typescript.anon.Assignable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Program extends ScriptReferenceHost {
+trait Program
+  extends StObject
+     with ScriptReferenceHost {
   
   /**
     * Emits the JavaScript and declaration files.  If targetSourceFile is not specified, then
@@ -20,162 +21,140 @@ trait Program extends ScriptReferenceHost {
     * will be invoked when writing the JavaScript and declaration files.
     */
   def emit(): EmitResult = js.native
+  def emit(targetSourceFile: Unit, writeFile: Unit, cancellationToken: Unit, emitOnlyDtsFiles: Boolean): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: js.UndefOr[scala.Nothing],
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
-    customTransformers: CustomTransformers
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: js.UndefOr[scala.Nothing],
-    emitOnlyDtsFiles: Boolean
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
+    writeFile: Unit,
+    cancellationToken: Unit,
     emitOnlyDtsFiles: Boolean,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: CancellationToken
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: CancellationToken,
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
+    writeFile: Unit,
+    cancellationToken: Unit,
+    emitOnlyDtsFiles: Unit,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
+  def emit(targetSourceFile: Unit, writeFile: Unit, cancellationToken: CancellationToken): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
+    writeFile: Unit,
     cancellationToken: CancellationToken,
     emitOnlyDtsFiles: Boolean
   ): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
+    writeFile: Unit,
     cancellationToken: CancellationToken,
     emitOnlyDtsFiles: Boolean,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
-  def emit(targetSourceFile: js.UndefOr[scala.Nothing], writeFile: WriteFileCallback): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: WriteFileCallback,
-    cancellationToken: js.UndefOr[scala.Nothing],
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
+    writeFile: Unit,
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: Unit,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
+  def emit(targetSourceFile: Unit, writeFile: WriteFileCallback): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
     writeFile: WriteFileCallback,
-    cancellationToken: js.UndefOr[scala.Nothing],
+    cancellationToken: Unit,
     emitOnlyDtsFiles: Boolean
   ): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
     writeFile: WriteFileCallback,
-    cancellationToken: js.UndefOr[scala.Nothing],
+    cancellationToken: Unit,
     emitOnlyDtsFiles: Boolean,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
     writeFile: WriteFileCallback,
-    cancellationToken: CancellationToken
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
-    writeFile: WriteFileCallback,
-    cancellationToken: CancellationToken,
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    cancellationToken: Unit,
+    emitOnlyDtsFiles: Unit,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
+  def emit(targetSourceFile: Unit, writeFile: WriteFileCallback, cancellationToken: CancellationToken): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
     writeFile: WriteFileCallback,
     cancellationToken: CancellationToken,
     emitOnlyDtsFiles: Boolean
   ): EmitResult = js.native
   def emit(
-    targetSourceFile: js.UndefOr[scala.Nothing],
+    targetSourceFile: Unit,
     writeFile: WriteFileCallback,
     cancellationToken: CancellationToken,
     emitOnlyDtsFiles: Boolean,
+    customTransformers: CustomTransformers
+  ): EmitResult = js.native
+  def emit(
+    targetSourceFile: Unit,
+    writeFile: WriteFileCallback,
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: Unit,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
   def emit(targetSourceFile: SourceFile): EmitResult = js.native
+  def emit(targetSourceFile: SourceFile, writeFile: Unit, cancellationToken: Unit, emitOnlyDtsFiles: Boolean): EmitResult = js.native
   def emit(
     targetSourceFile: SourceFile,
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: js.UndefOr[scala.Nothing],
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
-    customTransformers: CustomTransformers
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: SourceFile,
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: js.UndefOr[scala.Nothing],
-    emitOnlyDtsFiles: Boolean
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: SourceFile,
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: js.UndefOr[scala.Nothing],
+    writeFile: Unit,
+    cancellationToken: Unit,
     emitOnlyDtsFiles: Boolean,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
   def emit(
     targetSourceFile: SourceFile,
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: CancellationToken
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: SourceFile,
-    writeFile: js.UndefOr[scala.Nothing],
-    cancellationToken: CancellationToken,
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
+    writeFile: Unit,
+    cancellationToken: Unit,
+    emitOnlyDtsFiles: Unit,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
+  def emit(targetSourceFile: SourceFile, writeFile: Unit, cancellationToken: CancellationToken): EmitResult = js.native
   def emit(
     targetSourceFile: SourceFile,
-    writeFile: js.UndefOr[scala.Nothing],
+    writeFile: Unit,
     cancellationToken: CancellationToken,
     emitOnlyDtsFiles: Boolean
   ): EmitResult = js.native
   def emit(
     targetSourceFile: SourceFile,
-    writeFile: js.UndefOr[scala.Nothing],
+    writeFile: Unit,
     cancellationToken: CancellationToken,
     emitOnlyDtsFiles: Boolean,
+    customTransformers: CustomTransformers
+  ): EmitResult = js.native
+  def emit(
+    targetSourceFile: SourceFile,
+    writeFile: Unit,
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: Unit,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
   def emit(targetSourceFile: SourceFile, writeFile: WriteFileCallback): EmitResult = js.native
   def emit(
     targetSourceFile: SourceFile,
     writeFile: WriteFileCallback,
-    cancellationToken: js.UndefOr[scala.Nothing],
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
-    customTransformers: CustomTransformers
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: SourceFile,
-    writeFile: WriteFileCallback,
-    cancellationToken: js.UndefOr[scala.Nothing],
+    cancellationToken: Unit,
     emitOnlyDtsFiles: Boolean
   ): EmitResult = js.native
   def emit(
     targetSourceFile: SourceFile,
     writeFile: WriteFileCallback,
-    cancellationToken: js.UndefOr[scala.Nothing],
+    cancellationToken: Unit,
     emitOnlyDtsFiles: Boolean,
+    customTransformers: CustomTransformers
+  ): EmitResult = js.native
+  def emit(
+    targetSourceFile: SourceFile,
+    writeFile: WriteFileCallback,
+    cancellationToken: Unit,
+    emitOnlyDtsFiles: Unit,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
   def emit(targetSourceFile: SourceFile, writeFile: WriteFileCallback, cancellationToken: CancellationToken): EmitResult = js.native
@@ -183,13 +162,6 @@ trait Program extends ScriptReferenceHost {
     targetSourceFile: SourceFile,
     writeFile: WriteFileCallback,
     cancellationToken: CancellationToken,
-    emitOnlyDtsFiles: js.UndefOr[scala.Nothing],
-    customTransformers: CustomTransformers
-  ): EmitResult = js.native
-  def emit(
-    targetSourceFile: SourceFile,
-    writeFile: WriteFileCallback,
-    cancellationToken: CancellationToken,
     emitOnlyDtsFiles: Boolean
   ): EmitResult = js.native
   def emit(
@@ -199,11 +171,18 @@ trait Program extends ScriptReferenceHost {
     emitOnlyDtsFiles: Boolean,
     customTransformers: CustomTransformers
   ): EmitResult = js.native
+  def emit(
+    targetSourceFile: SourceFile,
+    writeFile: WriteFileCallback,
+    cancellationToken: CancellationToken,
+    emitOnlyDtsFiles: Unit,
+    customTransformers: CustomTransformers
+  ): EmitResult = js.native
   
   def getConfigFileParsingDiagnostics(): js.Array[Diagnostic] = js.native
   
   def getDeclarationDiagnostics(): js.Array[DiagnosticWithLocation] = js.native
-  def getDeclarationDiagnostics(sourceFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
+  def getDeclarationDiagnostics(sourceFile: Unit, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
   def getDeclarationDiagnostics(sourceFile: SourceFile): js.Array[DiagnosticWithLocation] = js.native
   def getDeclarationDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
   
@@ -232,7 +211,7 @@ trait Program extends ScriptReferenceHost {
   
   /** The first time this is called, it will return global diagnostics (no location). */
   def getSemanticDiagnostics(): js.Array[Diagnostic] = js.native
-  def getSemanticDiagnostics(sourceFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
+  def getSemanticDiagnostics(sourceFile: Unit, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   def getSemanticDiagnostics(sourceFile: SourceFile): js.Array[Diagnostic] = js.native
   def getSemanticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[Diagnostic] = js.native
   
@@ -244,7 +223,7 @@ trait Program extends ScriptReferenceHost {
   def getSymbolCount(): Double = js.native
   
   def getSyntacticDiagnostics(): js.Array[DiagnosticWithLocation] = js.native
-  def getSyntacticDiagnostics(sourceFile: js.UndefOr[scala.Nothing], cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
+  def getSyntacticDiagnostics(sourceFile: Unit, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
   def getSyntacticDiagnostics(sourceFile: SourceFile): js.Array[DiagnosticWithLocation] = js.native
   def getSyntacticDiagnostics(sourceFile: SourceFile, cancellationToken: CancellationToken): js.Array[DiagnosticWithLocation] = js.native
   

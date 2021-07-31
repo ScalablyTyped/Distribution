@@ -2,21 +2,21 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DecorationInstanceRenderOptions extends ThemableDecorationInstanceRenderOptions {
+trait DecorationInstanceRenderOptions
+  extends StObject
+     with ThemableDecorationInstanceRenderOptions {
   
   /**
     * Overwrite options for dark themes.
     */
-  var dark: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.native
+  var dark: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.undefined
   
   /**
     * Overwrite options for light themes.
     */
-  var light: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.native
+  var light: js.UndefOr[ThemableDecorationInstanceRenderOptions] = js.undefined
 }
 object DecorationInstanceRenderOptions {
   

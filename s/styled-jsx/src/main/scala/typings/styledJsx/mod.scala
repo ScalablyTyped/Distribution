@@ -3,18 +3,18 @@ package typings.styledJsx
 import typings.react.mod.HTMLAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
 object mod {
   
-  @js.native
-  trait StyleHTMLAttributes[T] extends HTMLAttributes[T] {
+  trait StyleHTMLAttributes[T]
+    extends StObject
+       with HTMLAttributes[T] {
     
-    var global: js.UndefOr[Boolean] = js.native
+    var global: js.UndefOr[Boolean] = js.undefined
     
-    var jsx: js.UndefOr[Boolean] = js.native
+    var jsx: js.UndefOr[Boolean] = js.undefined
   }
   object StyleHTMLAttributes {
     
@@ -25,7 +25,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[_], T] (val x: Self with StyleHTMLAttributes[T]) extends AnyVal {
+    implicit class StyleHTMLAttributesMutableBuilder[Self <: StyleHTMLAttributes[?], T] (val x: Self & StyleHTMLAttributes[T]) extends AnyVal {
       
       @scala.inline
       def setGlobal(value: Boolean): Self = StObject.set(x, "global", value.asInstanceOf[js.Any])

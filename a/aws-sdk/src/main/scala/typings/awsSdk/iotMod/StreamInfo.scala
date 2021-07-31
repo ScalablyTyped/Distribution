@@ -2,51 +2,49 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StreamInfo extends StObject {
   
   /**
     * The date when the stream was created.
     */
-  var createdAt: js.UndefOr[DateType] = js.native
+  var createdAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * The description of the stream.
     */
-  var description: js.UndefOr[StreamDescription] = js.native
+  var description: js.UndefOr[StreamDescription] = js.undefined
   
   /**
     * The files to stream.
     */
-  var files: js.UndefOr[StreamFiles] = js.native
+  var files: js.UndefOr[StreamFiles] = js.undefined
   
   /**
     * The date when the stream was last updated.
     */
-  var lastUpdatedAt: js.UndefOr[DateType] = js.native
+  var lastUpdatedAt: js.UndefOr[DateType] = js.undefined
   
   /**
     * An IAM role AWS IoT assumes to access your S3 files.
     */
-  var roleArn: js.UndefOr[RoleArn] = js.native
+  var roleArn: js.UndefOr[RoleArn] = js.undefined
   
   /**
     * The stream ARN.
     */
-  var streamArn: js.UndefOr[StreamArn] = js.native
+  var streamArn: js.UndefOr[StreamArn] = js.undefined
   
   /**
     * The stream ID.
     */
-  var streamId: js.UndefOr[StreamId] = js.native
+  var streamId: js.UndefOr[StreamId] = js.undefined
   
   /**
     * The stream version.
     */
-  var streamVersion: js.UndefOr[StreamVersion] = js.native
+  var streamVersion: js.UndefOr[StreamVersion] = js.undefined
 }
 object StreamInfo {
   

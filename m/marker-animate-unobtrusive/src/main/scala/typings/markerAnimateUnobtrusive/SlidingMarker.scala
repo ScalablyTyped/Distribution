@@ -6,11 +6,12 @@ import typings.googlemaps.google.maps.Marker
 import typings.markerAnimateUnobtrusive.jQuery.easing.IEasingType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SlidingMarker extends Marker {
+trait SlidingMarker
+  extends StObject
+     with Marker {
   
   def getAnimationPosition(): LatLng = js.native
   

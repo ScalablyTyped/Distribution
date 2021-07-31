@@ -3,24 +3,22 @@ package typings.winrtUwp.Windows.Devices.Sensors
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a gyrometer reading. */
-@js.native
 trait GyrometerReading extends StObject {
   
   /** Gets the angular velocity, in degrees per second, about the x-axis. */
-  var angularVelocityX: Double = js.native
+  var angularVelocityX: Double
   
   /** Gets the angular velocity, in degrees per second, about the y-axis. */
-  var angularVelocityY: Double = js.native
+  var angularVelocityY: Double
   
   /** Gets the angular velocity, in degrees per second, about the z-axis. */
-  var angularVelocityZ: Double = js.native
+  var angularVelocityZ: Double
   
   /** Gets the time at which the sensor reported the reading. */
-  var timestamp: Date = js.native
+  var timestamp: Date
 }
 object GyrometerReading {
   

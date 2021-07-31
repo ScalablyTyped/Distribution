@@ -6,7 +6,6 @@ import typings.keycloakJs.mod.KeycloakResponseMode
 import typings.keycloakJs.mod.KeycloakResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object keycloakJsStrings {
@@ -27,17 +26,23 @@ object keycloakJsStrings {
   def cancelled: cancelled = "cancelled".asInstanceOf[cancelled]
   
   @js.native
-  sealed trait `check-sso` extends KeycloakOnLoad
+  sealed trait `check-sso`
+    extends StObject
+       with KeycloakOnLoad
   @scala.inline
   def `check-sso`: `check-sso` = "check-sso".asInstanceOf[`check-sso`]
   
   @js.native
-  sealed trait code extends KeycloakResponseType
+  sealed trait code
+    extends StObject
+       with KeycloakResponseType
   @scala.inline
   def code: code = "code".asInstanceOf[code]
   
   @js.native
-  sealed trait `code id_token token` extends KeycloakResponseType
+  sealed trait `code id_token token`
+    extends StObject
+       with KeycloakResponseType
   @scala.inline
   def `code id_token token`: `code id_token token` = ("code id_token token").asInstanceOf[`code id_token token`]
   
@@ -57,22 +62,30 @@ object keycloakJsStrings {
   def error: error = "error".asInstanceOf[error]
   
   @js.native
-  sealed trait fragment extends KeycloakResponseMode
+  sealed trait fragment
+    extends StObject
+       with KeycloakResponseMode
   @scala.inline
   def fragment: fragment = "fragment".asInstanceOf[fragment]
   
   @js.native
-  sealed trait hybrid extends KeycloakFlow
+  sealed trait hybrid
+    extends StObject
+       with KeycloakFlow
   @scala.inline
   def hybrid: hybrid = "hybrid".asInstanceOf[hybrid]
   
   @js.native
-  sealed trait `id_token token` extends KeycloakResponseType
+  sealed trait `id_token token`
+    extends StObject
+       with KeycloakResponseType
   @scala.inline
   def `id_token token`: `id_token token` = ("id_token token").asInstanceOf[`id_token token`]
   
   @js.native
-  sealed trait `implicit` extends KeycloakFlow
+  sealed trait `implicit`
+    extends StObject
+       with KeycloakFlow
   @scala.inline
   def `implicit`: `implicit` = "implicit".asInstanceOf[`implicit`]
   
@@ -82,7 +95,9 @@ object keycloakJsStrings {
   def login: login = "login".asInstanceOf[login]
   
   @js.native
-  sealed trait `login-required` extends KeycloakOnLoad
+  sealed trait `login-required`
+    extends StObject
+       with KeycloakOnLoad
   @scala.inline
   def `login-required`: `login-required` = "login-required".asInstanceOf[`login-required`]
   
@@ -92,12 +107,16 @@ object keycloakJsStrings {
   def none: none = "none".asInstanceOf[none]
   
   @js.native
-  sealed trait query extends KeycloakResponseMode
+  sealed trait query
+    extends StObject
+       with KeycloakResponseMode
   @scala.inline
   def query: query = "query".asInstanceOf[query]
   
   @js.native
-  sealed trait standard extends KeycloakFlow
+  sealed trait standard
+    extends StObject
+       with KeycloakFlow
   @scala.inline
   def standard: standard = "standard".asInstanceOf[standard]
   

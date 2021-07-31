@@ -26,136 +26,134 @@ import typings.std.FocusEvent
 import typings.std.KeyboardEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonTextarea extends StObject {
   
   /**
     * If `true`, the element height will increase based on the value.
     */
-  var autoGrow: js.UndefOr[Boolean] = js.native
+  var autoGrow: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Indicates whether and how the text value should be automatically capitalized as it is entered/edited by the user.
     */
-  var autocapitalize: js.UndefOr[String] = js.native
+  var autocapitalize: js.UndefOr[String] = js.undefined
   
   /**
     * This Boolean attribute lets you specify that a form control should have input focus when the page loads.
     */
-  var autofocus: js.UndefOr[Boolean] = js.native
+  var autofocus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the value will be cleared after focus upon edit. Defaults to `true` when `type` is `"password"`, `false` for all other types.
     */
-  var clearOnEdit: js.UndefOr[Boolean] = js.native
+  var clearOnEdit: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The color to use from your application's color palette. Default options are: `"primary"`, `"secondary"`, `"tertiary"`, `"success"`, `"warning"`, `"danger"`, `"light"`, `"medium"`, and `"dark"`. For more information on colors, see [theming](/docs/theming/basics).
     */
-  var color: js.UndefOr[Color] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
   /**
     * The visible width of the text control, in average character widths. If it is specified, it must be a positive integer.
     */
-  var cols: js.UndefOr[Double] = js.native
+  var cols: js.UndefOr[Double] = js.undefined
   
   /**
     * Set the amount of time, in milliseconds, to wait to trigger the `ionChange` event after each keystroke. This also impacts form bindings such as `ngModel` or `v-model`.
     */
-  var debounce: js.UndefOr[Double] = js.native
+  var debounce: js.UndefOr[Double] = js.undefined
   
   /**
     * If `true`, the user cannot interact with the textarea.
     */
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A hint to the browser for which enter key to display. Possible values: `"enter"`, `"done"`, `"go"`, `"next"`, `"previous"`, `"search"`, and `"send"`.
     */
-  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.native
+  var enterkeyhint: js.UndefOr[enter | done | go | next | previous | search | send] = js.undefined
   
   /**
     * A hint to the browser for which keyboard to display. Possible values: `"none"`, `"text"`, `"tel"`, `"url"`, `"email"`, `"numeric"`, `"decimal"`, and `"search"`.
     */
-  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.native
+  var inputmode: js.UndefOr[none | text | tel | url | email | numeric | decimal | search] = js.undefined
   
   /**
     * If the value of the type attribute is `text`, `email`, `search`, `password`, `tel`, or `url`, this attribute specifies the maximum number of characters that the user can enter.
     */
-  var maxlength: js.UndefOr[Double] = js.native
+  var maxlength: js.UndefOr[Double] = js.undefined
   
   /**
     * If the value of the type attribute is `text`, `email`, `search`, `password`, `tel`, or `url`, this attribute specifies the minimum number of characters that the user can enter.
     */
-  var minlength: js.UndefOr[Double] = js.native
+  var minlength: js.UndefOr[Double] = js.undefined
   
   /**
     * The mode determines which platform styles to use.
     */
-  var mode: js.UndefOr[ios | md] = js.native
+  var mode: js.UndefOr[ios | md] = js.undefined
   
   /**
     * The name of the control, which is submitted with the form data.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Emitted when the input loses focus.
     */
-  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[FocusEvent], Unit]] = js.native
+  var onIonBlur: js.UndefOr[js.Function1[/* event */ CustomEvent[FocusEvent], Unit]] = js.undefined
   
   /**
     * Emitted when the input value has changed.
     */
-  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[TextareaChangeEventDetail], Unit]] = js.native
+  var onIonChange: js.UndefOr[js.Function1[/* event */ CustomEvent[TextareaChangeEventDetail], Unit]] = js.undefined
   
   /**
     * Emitted when the input has focus.
     */
-  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[FocusEvent], Unit]] = js.native
+  var onIonFocus: js.UndefOr[js.Function1[/* event */ CustomEvent[FocusEvent], Unit]] = js.undefined
   
   /**
     * Emitted when a keyboard input occurred.
     */
-  var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.native
+  var onIonInput: js.UndefOr[js.Function1[/* event */ CustomEvent[KeyboardEvent], Unit]] = js.undefined
   
   /**
     * Instructional text that shows before the input has a value.
     */
-  var placeholder: js.UndefOr[String | Null] = js.native
+  var placeholder: js.UndefOr[String | Null] = js.undefined
   
   /**
     * If `true`, the user cannot modify the value.
     */
-  var readonly: js.UndefOr[Boolean] = js.native
+  var readonly: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If `true`, the user must fill in a value before submitting a form.
     */
-  var required: js.UndefOr[Boolean] = js.native
+  var required: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The number of visible text lines for the control.
     */
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
   /**
     * If `true`, the element will have its spelling and grammar checked.
     */
-  var spellcheck: js.UndefOr[Boolean] = js.native
+  var spellcheck: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The value of the textarea.
     */
-  var value: js.UndefOr[String | Null] = js.native
+  var value: js.UndefOr[String | Null] = js.undefined
   
   /**
     * Indicates how the control wraps text.
     */
-  var wrap: js.UndefOr[hard | soft | off] = js.native
+  var wrap: js.UndefOr[hard | soft | off] = js.undefined
 }
 object IonTextarea {
   

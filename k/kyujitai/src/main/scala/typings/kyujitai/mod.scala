@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,24 +13,25 @@ object mod {
     */
   @JSImport("kyujitai", JSImport.Namespace)
   @js.native
-  class ^ () extends Kyujitai {
+  class ^ ()
+    extends StObject
+       with Kyujitai {
     def this(callback: InitializeCallback) = this()
     def this(options: Options) = this()
-    def this(options: js.UndefOr[scala.Nothing], callback: InitializeCallback) = this()
+    def this(options: Unit, callback: InitializeCallback) = this()
     def this(options: Options, callback: InitializeCallback) = this()
   }
   
   /** unused */
   type DecodeOptions = StringDictionary[js.Any]
   
-  @js.native
   trait EncodeOptions extends StObject {
     
     /**
       * `true` if you want to allow IVS for the encoded string
       * @default false
       */
-    var IVD: js.UndefOr[Boolean] = js.native
+    var IVD: js.UndefOr[Boolean] = js.undefined
   }
   object EncodeOptions {
     
@@ -78,7 +78,6 @@ object mod {
     def encode(str: String, options: EncodeOptions): String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -86,9 +85,9 @@ object mod {
       * Valid only in browser.
       * Default is the same directory to the ivs.js file.
       */
-    var ivd: js.UndefOr[String] = js.native
+    var ivd: js.UndefOr[String] = js.undefined
     
-    var kyujitai: js.UndefOr[String] = js.native
+    var kyujitai: js.UndefOr[String] = js.undefined
   }
   object Options {
     

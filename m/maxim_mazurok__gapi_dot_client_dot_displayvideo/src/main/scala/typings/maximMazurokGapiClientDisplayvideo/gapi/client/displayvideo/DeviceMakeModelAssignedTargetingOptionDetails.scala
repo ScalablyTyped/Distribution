@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeviceMakeModelAssignedTargetingOptionDetails extends StObject {
   
   /** Output only. The display name of the device make and model. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** Indicates if this option is being negatively targeted. */
-  var negative: js.UndefOr[Boolean] = js.native
+  var negative: js.UndefOr[Boolean] = js.undefined
   
   /** Required. The targeting_option_id field when targeting_type is `TARGETING_TYPE_DEVICE_MAKE_MODEL`. */
-  var targetingOptionId: js.UndefOr[String] = js.native
+  var targetingOptionId: js.UndefOr[String] = js.undefined
 }
 object DeviceMakeModelAssignedTargetingOptionDetails {
   

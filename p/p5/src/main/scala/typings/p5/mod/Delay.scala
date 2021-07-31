@@ -3,11 +3,12 @@ package typings.p5.mod
 import typings.std.DelayNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait Delay extends Effect {
+trait Delay
+  extends StObject
+     with Effect {
   
   /**
     *   Set the delay (echo) time, in seconds. Usually
@@ -71,18 +72,13 @@ trait Delay extends Effect {
     *   delay.
     */
   def process(Signal: js.Object): Unit = js.native
-  def process(
-    Signal: js.Object,
-    delayTime: js.UndefOr[scala.Nothing],
-    feedback: js.UndefOr[scala.Nothing],
-    lowPass: Double
-  ): Unit = js.native
-  def process(Signal: js.Object, delayTime: js.UndefOr[scala.Nothing], feedback: Double): Unit = js.native
-  def process(Signal: js.Object, delayTime: js.UndefOr[scala.Nothing], feedback: Double, lowPass: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double): Unit = js.native
-  def process(Signal: js.Object, delayTime: Double, feedback: js.UndefOr[scala.Nothing], lowPass: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double, feedback: Double): Unit = js.native
   def process(Signal: js.Object, delayTime: Double, feedback: Double, lowPass: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Double, feedback: Unit, lowPass: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Unit, feedback: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Unit, feedback: Double, lowPass: Double): Unit = js.native
+  def process(Signal: js.Object, delayTime: Unit, feedback: Unit, lowPass: Double): Unit = js.native
   
   /**
     *   The p5.Delay is built with two  Web Audio Delay

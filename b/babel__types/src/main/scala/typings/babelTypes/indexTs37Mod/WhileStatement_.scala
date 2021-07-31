@@ -3,32 +3,31 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.WhileStatement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.babelTypes.indexTs37Mod._Node because Already inherited */ @js.native
-trait WhileStatement_
-  extends BlockParent
+- typings.babelTypes.indexTs37Mod._Node because Already inherited */ trait WhileStatement_
+  extends StObject
      with BaseNode
+     with BlockParent
      with Loop
      with Scopable
      with Statement
      with While {
   
-  var body: Statement = js.native
+  var body: Statement
   
-  var test: Expression = js.native
+  var test: Expression
   
   @JSName("type")
-  var type_WhileStatement_ : WhileStatement = js.native
+  var type_WhileStatement_ : WhileStatement
 }
 object WhileStatement_ {
   
   @scala.inline
-  def apply(body: Statement, test: Expression, `type`: WhileStatement): WhileStatement_ = {
-    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(body: Statement, test: Expression): WhileStatement_ = {
+    val __obj = js.Dynamic.literal(body = body.asInstanceOf[js.Any], test = test.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, trailingComments = null)
+    __obj.updateDynamic("type")("WhileStatement")
     __obj.asInstanceOf[WhileStatement_]
   }
   

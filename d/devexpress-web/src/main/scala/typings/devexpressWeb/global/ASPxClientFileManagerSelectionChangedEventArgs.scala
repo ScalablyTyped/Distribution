@@ -2,7 +2,6 @@ package typings.devexpressWeb.global
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,7 +10,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @JSGlobal("ASPxClientFileManagerSelectionChangedEventArgs")
 @js.native
 class ASPxClientFileManagerSelectionChangedEventArgs protected ()
-  extends typings.devexpressWeb.ASPxClientFileManagerSelectionChangedEventArgs {
+  extends StObject
+     with typings.devexpressWeb.ASPxClientFileManagerSelectionChangedEventArgs {
   /**
     * Initializes a new instance of the ASPxClientFileManagerSelectionChangedEventArgs class.
     * @param item A ASPxClientFileManagerItem object that is an item, manipulations on which forced the event to be raised.
@@ -25,4 +25,28 @@ class ASPxClientFileManagerSelectionChangedEventArgs protected ()
     fullName: String,
     isSelected: Boolean
   ) = this()
+  
+  /**
+    * Gets the full name of the file currently being processed.
+    */
+  /* CompleteClass */
+  var fullName: String = js.native
+  
+  /**
+    * Gets whether the item has been selected.
+    */
+  /* CompleteClass */
+  var isSelected: Boolean = js.native
+  
+  /**
+    * Gets the file manager item object related to the event.
+    */
+  /* CompleteClass */
+  var item: typings.devexpressWeb.ASPxClientFileManagerItem = js.native
+  
+  /**
+    * Gets the name of the currently processed file.
+    */
+  /* CompleteClass */
+  var name: String = js.native
 }

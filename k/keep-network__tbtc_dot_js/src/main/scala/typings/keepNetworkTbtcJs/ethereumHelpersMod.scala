@@ -7,73 +7,62 @@ import typings.keepNetworkTbtcJs.commonTypesMod.Web3
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object ethereumHelpersMod {
   
   object EthereumHelpers {
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.bytesToRaw")
+    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers")
     @js.native
-    def bytesToRaw(bytesString: String): String = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.getDeployedContract")
-    @js.native
-    def getDeployedContract(artifact: Artifact, web3: Web3, networkId: String): Contract = js.native
+    @scala.inline
+    def bytesToRaw(bytesString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("bytesToRaw")(bytesString.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.getEvent")
-    @js.native
-    def getEvent(sourceContract: Contract, eventName: String): js.Promise[_] = js.native
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.getEvent")
-    @js.native
-    def getEvent(sourceContract: Contract, eventName: String, filter: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def getDeployedContract(artifact: Artifact, web3: Web3, networkId: String): Contract = (^.asInstanceOf[js.Dynamic].applyDynamic("getDeployedContract")(artifact.asInstanceOf[js.Any], web3.asInstanceOf[js.Any], networkId.asInstanceOf[js.Any])).asInstanceOf[Contract]
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.getExistingEvent")
-    @js.native
-    def getExistingEvent(source: Contract, eventName: String): js.Promise[_] = js.native
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.getExistingEvent")
-    @js.native
-    def getExistingEvent(source: Contract, eventName: String, filter: js.Any): js.Promise[_] = js.native
+    @scala.inline
+    def getEvent(sourceContract: Contract, eventName: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEvent")(sourceContract.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def getEvent(sourceContract: Contract, eventName: String, filter: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getEvent")(sourceContract.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.isMainnet")
-    @js.native
-    def isMainnet(web3: Web3): js.Promise[Boolean] = js.native
+    @scala.inline
+    def getExistingEvent(source: Contract, eventName: String): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExistingEvent")(source.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def getExistingEvent(source: Contract, eventName: String, filter: js.Any): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("getExistingEvent")(source.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any], filter.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.readEventFromTransaction")
-    @js.native
-    def readEventFromTransaction(web3: Web3, transaction: js.Any, sourceContract: Contract, eventName: String): StringDictionary[String] = js.native
+    @scala.inline
+    def isMainnet(web3: Web3): js.Promise[Boolean] = ^.asInstanceOf[js.Dynamic].applyDynamic("isMainnet")(web3.asInstanceOf[js.Any]).asInstanceOf[js.Promise[Boolean]]
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.sendSafely")
-    @js.native
-    def sendSafely(boundContractMethod: ContractCall): js.Promise[_] = js.native
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.sendSafely")
-    @js.native
-    def sendSafely(boundContractMethod: ContractCall, sendParams: js.UndefOr[scala.Nothing], forceSend: Boolean): js.Promise[_] = js.native
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.sendSafely")
-    @js.native
-    def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions): js.Promise[_] = js.native
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.sendSafely")
-    @js.native
-    def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions, forceSend: Boolean): js.Promise[_] = js.native
+    @scala.inline
+    def readEventFromTransaction(web3: Web3, transaction: js.Any, sourceContract: Contract, eventName: String): StringDictionary[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("readEventFromTransaction")(web3.asInstanceOf[js.Any], transaction.asInstanceOf[js.Any], sourceContract.asInstanceOf[js.Any], eventName.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[String]]
     
-    @JSImport("@keep-network/tbtc.js/src/EthereumHelpers", "EthereumHelpers.sendSafelyRetryable")
-    @js.native
+    @scala.inline
+    def sendSafely(boundContractMethod: ContractCall): js.Promise[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def sendSafely(boundContractMethod: ContractCall, sendParams: Unit, forceSend: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any], forceSend.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    @scala.inline
+    def sendSafely(boundContractMethod: ContractCall, sendParams: ContractCallOptions, forceSend: Boolean): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafely")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any], forceSend.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
+    
+    @scala.inline
     def sendSafelyRetryable(
       boundContractMethod: ContractCall,
       sendParams: ContractCallOptions,
       forceSend: Boolean,
       totalAttempts: Double
-    ): js.Promise[_] = js.native
+    ): js.Promise[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("sendSafelyRetryable")(boundContractMethod.asInstanceOf[js.Any], sendParams.asInstanceOf[js.Any], forceSend.asInstanceOf[js.Any], totalAttempts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Any]]
     
-    @js.native
     trait Artifact extends StObject {
       
-      var abi: js.Any = js.native
+      var abi: js.Any
       
-      var contractName: String = js.native
+      var contractName: String
       
-      var networks: StringDictionary[Address] = js.native
+      var networks: StringDictionary[Address]
     }
     object Artifact {
       
@@ -105,25 +94,24 @@ object ethereumHelpersMod {
       def estimateGas(options: ContractCallOptions): js.Promise[Double] = js.native
       def estimateGas(options: ContractCallOptions, callback: js.Function2[/* err */ Error, /* gas */ Double, Unit]): js.Promise[Double] = js.native
       
-      def send(options: ContractCallOptions): js.Promise[_] = js.native
+      def send(options: ContractCallOptions): js.Promise[js.Any] = js.native
       def send(
         options: ContractCallOptions,
         callback: js.Function2[/* err */ Error, /* transactionHash */ String, Unit]
-      ): js.Promise[_] = js.native
+      ): js.Promise[js.Any] = js.native
     }
     
-    @js.native
     trait ContractCallOptions extends StObject {
       
-      var from: js.UndefOr[String] = js.native
+      var from: js.UndefOr[String] = js.undefined
       
-      var gas: js.UndefOr[Double] = js.native
+      var gas: js.UndefOr[Double] = js.undefined
       
-      var gasPrice: js.UndefOr[String] = js.native
+      var gasPrice: js.UndefOr[String] = js.undefined
       
       var value: js.UndefOr[
             Double | String | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any)
-          ] = js.native
+          ] = js.undefined
     }
     object ContractCallOptions {
       

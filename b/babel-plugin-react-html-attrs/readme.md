@@ -11,8 +11,8 @@ Babel plugin which transforms HTML and SVG attributes on JSX host elements into 
 | Full name          | babel-plugin-react-html-attrs |
 | Keywords           | - |
 | # releases         | 7 |
-| # dependents       | 43 |
-| # downloads        | 520234 |
+| # dependents       | 40 |
+| # downloads        | 454896 |
 | # stars            | 7 |
 
 ## Links

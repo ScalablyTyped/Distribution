@@ -2,15 +2,13 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserAgentBrandVersion extends StObject {
   
-  var brand: String = js.native
+  var brand: String
   
-  var version: String = js.native
+  var version: String
 }
 object UserAgentBrandVersion {
   

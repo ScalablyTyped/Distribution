@@ -5,21 +5,22 @@ import typings.readPackageTree.readPackageTreeBooleans.`true`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("read-package-tree", JSImport.Namespace)
-  @js.native
-  def apply(root: String, cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]): Unit = js.native
-  @JSImport("read-package-tree", JSImport.Namespace)
-  @js.native
+  @scala.inline
+  def apply(root: String, cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]): Unit = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def apply(
     root: String,
     filterWith: js.Function2[/* node */ Node, /* kidName */ String, js.UndefOr[Unit | Boolean]],
     cb: js.Function2[/* er */ Error | Null, /* data */ Node, Unit]
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(root.asInstanceOf[js.Any], filterWith.asInstanceOf[js.Any], cb.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @JSImport("read-package-tree", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("read-package-tree", "Link")
   @js.native

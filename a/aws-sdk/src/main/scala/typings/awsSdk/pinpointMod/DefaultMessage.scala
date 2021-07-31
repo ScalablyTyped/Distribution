@@ -2,21 +2,19 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DefaultMessage extends StObject {
   
   /**
     * The default body of the message.
     */
-  var Body: js.UndefOr[string] = js.native
+  var Body: js.UndefOr[string] = js.undefined
   
   /**
     * The default message variables to use in the message. You can override these default variables with individual address variables.
     */
-  var Substitutions: js.UndefOr[MapOfListOfString] = js.native
+  var Substitutions: js.UndefOr[MapOfListOfString] = js.undefined
 }
 object DefaultMessage {
   

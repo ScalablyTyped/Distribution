@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Overlay
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetShowGridOverlaysRequest extends StObject {
   
   /**
     * An array of node identifiers and descriptors for the highlight appearance.
     */
-  var gridNodeHighlightConfigs: js.Array[GridNodeHighlightConfig] = js.native
+  var gridNodeHighlightConfigs: js.Array[GridNodeHighlightConfig]
 }
 object SetShowGridOverlaysRequest {
   

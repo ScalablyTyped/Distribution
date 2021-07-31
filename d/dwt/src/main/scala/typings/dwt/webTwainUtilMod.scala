@@ -4,23 +4,21 @@ import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTImageType
 import typings.dwt.dynamsoftEnumMod.DynamsoftEnums.EnumDWTLanguage
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object webTwainUtilMod {
   
-  @js.native
   trait Authorization extends StObject {
     
     /**
       * Details of the authorization.
       */
-    var Detail: js.Any = js.native
+    var Detail: js.Any
     
     /**
       * The domain bound in the product key.
       */
-    var Domain: String = js.native
+    var Domain: String
   }
   object Authorization {
     

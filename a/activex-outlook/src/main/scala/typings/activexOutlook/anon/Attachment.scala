@@ -2,13 +2,11 @@ package typings.activexOutlook.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Attachment extends StObject {
   
-  val Attachment: typings.activexOutlook.Outlook.Attachment = js.native
+  val Attachment: typings.activexOutlook.Outlook.Attachment
 }
 object Attachment {
   

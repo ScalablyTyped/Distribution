@@ -5,123 +5,124 @@ import typings.std.Error
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("license-checker", "init")
+  @JSImport("license-checker", JSImport.Namespace)
   @js.native
-  def init(opts: InitOpts, callback: js.Function2[/* err */ Error, /* ret */ ModuleInfos, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def init(opts: InitOpts, callback: js.Function2[/* err */ Error, /* ret */ ModuleInfos, Unit]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("init")(opts.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait InitOpts extends StObject {
     
     /**
       * Colorize output
       */
-    var color: js.UndefOr[Boolean] = js.native
+    var color: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Output in csv format
       */
-    var csv: js.UndefOr[Boolean] = js.native
+    var csv: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Prefix column for component in csv format.
       */
-    var csvComponentPrefix: js.UndefOr[String] = js.native
+    var csvComponentPrefix: js.UndefOr[String] = js.undefined
     
     /**
       * Specify the columns for CSV format
       * or add the specified items for JSON format
       */
-    var customFormat: js.UndefOr[Record[String, _]] = js.native
+    var customFormat: js.UndefOr[Record[String, js.Any]] = js.undefined
     
     /**
       * To add a custom Format file in JSON
       */
-    var customPath: js.UndefOr[String | ModuleInfo] = js.native
+    var customPath: js.UndefOr[String | ModuleInfo] = js.undefined
     
     /**
       * Only show development dependencies
       */
-    var development: js.UndefOr[Boolean] = js.native
+    var development: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Look for direct dependencies only
       */
-    var direct: js.UndefOr[Boolean] = js.native
+    var direct: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Exclude modules which licenses are in the comma-separated list from the output
       */
-    var exclude: js.UndefOr[js.Array[String]] = js.native
+    var exclude: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Restrict output to the packages (package@version) not in the semicolon-separated list
       */
-    var excludePackages: js.UndefOr[String] = js.native
+    var excludePackages: js.UndefOr[String] = js.undefined
     
     /**
       * Restrict output to not include any package marked as private
       */
-    var excludePrivatePackages: js.UndefOr[Boolean] = js.native
+    var excludePrivatePackages: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fail (exit with code 1) on the first occurrence of the licenses of the semicolon-separated list
       */
-    var failOn: js.UndefOr[String] = js.native
+    var failOn: js.UndefOr[String] = js.undefined
     
     /**
       * Output in json format
       */
-    var json: js.UndefOr[Boolean] = js.native
+    var json: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Fail (exit with code 1) on the first occurrence of the licenses not in the semicolon-separated list
       */
-    var onlyAllow: js.UndefOr[String] = js.native
+    var onlyAllow: js.UndefOr[String] = js.undefined
     
     /**
       * Only list packages with unknown or guessed licenses
       */
-    var onlyunknown: js.UndefOr[Boolean] = js.native
+    var onlyunknown: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Write the data to a specific file.
       */
-    var out: js.UndefOr[String] = js.native
+    var out: js.UndefOr[String] = js.undefined
     
     /**
       * Restrict output to the packages (package@version) in the semicolon-separated list
       */
-    var packages: js.UndefOr[String] = js.native
+    var packages: js.UndefOr[String] = js.undefined
     
     /**
       * Only show production dependencies
       */
-    var production: js.UndefOr[Boolean] = js.native
+    var production: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Output the location of the license files as relative paths
       */
-    var relativeLicensePath: js.UndefOr[Boolean] = js.native
+    var relativeLicensePath: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Path to start checking dependencies from
       */
-    var start: String = js.native
+    var start: String
     
     /**
       * Output a summary of the license usage
       */
-    var summary: js.UndefOr[Boolean] = js.native
+    var summary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Report guessed licenses as unknown licenses
       */
-    var unknown: js.UndefOr[Boolean] = js.native
+    var unknown: js.UndefOr[Boolean] = js.undefined
   }
   object InitOpts {
     
@@ -153,7 +154,7 @@ object mod {
       def setCsvUndefined: Self = StObject.set(x, "csv", js.undefined)
       
       @scala.inline
-      def setCustomFormat(value: Record[String, _]): Self = StObject.set(x, "customFormat", value.asInstanceOf[js.Any])
+      def setCustomFormat(value: Record[String, js.Any]): Self = StObject.set(x, "customFormat", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setCustomFormatUndefined: Self = StObject.set(x, "customFormat", js.undefined)
@@ -262,83 +263,82 @@ object mod {
     }
   }
   
-  @js.native
   trait ModuleInfo extends StObject {
     
     /**
       * Copyright statements
       */
-    var copyright: js.UndefOr[String] = js.native
+    var copyright: js.UndefOr[String] = js.undefined
     
     /**
       * Module description
       */
-    var description: js.UndefOr[String] = js.native
+    var description: js.UndefOr[String] = js.undefined
     
     /**
       * Publisher e-mail
       */
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
     /**
       * Path to license file, if available
       */
-    var licenseFile: js.UndefOr[String] = js.native
+    var licenseFile: js.UndefOr[String] = js.undefined
     
     /**
       * Whether the license is modified
       */
-    var licenseModified: js.UndefOr[String] = js.native
+    var licenseModified: js.UndefOr[String] = js.undefined
     
     /**
       * Contents of the license
       */
-    var licenseText: js.UndefOr[String] = js.native
+    var licenseText: js.UndefOr[String] = js.undefined
     
     /**
       * Array of licenses
       */
-    var licenses: js.UndefOr[String | js.Array[String]] = js.native
+    var licenses: js.UndefOr[String | js.Array[String]] = js.undefined
     
     /**
       * Module name
       */
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
     /**
       * Path of NOTICE file
       */
-    var noticeFile: js.UndefOr[String] = js.native
+    var noticeFile: js.UndefOr[String] = js.undefined
     
     /**
       * Path to module
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * Private module
       */
-    var `private`: js.UndefOr[Boolean] = js.native
+    var `private`: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Publisher name
       */
-    var publisher: js.UndefOr[String] = js.native
+    var publisher: js.UndefOr[String] = js.undefined
     
     /**
       * Repository URL
       */
-    var repository: js.UndefOr[String] = js.native
+    var repository: js.UndefOr[String] = js.undefined
     
     /**
       * Publisher URL
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
     
     /**
       * Module version
       */
-    var version: js.UndefOr[String] = js.native
+    var version: js.UndefOr[String] = js.undefined
   }
   object ModuleInfo {
     

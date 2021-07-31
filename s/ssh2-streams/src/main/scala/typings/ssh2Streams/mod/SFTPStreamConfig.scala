@@ -2,26 +2,24 @@ package typings.ssh2Streams.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFTPStreamConfig extends StObject {
   
   /**
     * Set this to a function that receives a single string argument to get detailed (local) debug information.
     */
-  var debug: js.UndefOr[js.Function1[/* information */ String, _]] = js.native
+  var debug: js.UndefOr[js.Function1[/* information */ String, js.Any]] = js.undefined
   
   /**
     * This is the highWaterMark to use for the stream.
     */
-  var highWaterMark: js.UndefOr[Double] = js.native
+  var highWaterMark: js.UndefOr[Double] = js.undefined
   
   /**
     * Set to true to create an instance in server mode.
     */
-  var server: js.UndefOr[Boolean] = js.native
+  var server: js.UndefOr[Boolean] = js.undefined
 }
 object SFTPStreamConfig {
   
@@ -35,7 +33,7 @@ object SFTPStreamConfig {
   implicit class SFTPStreamConfigMutableBuilder[Self <: SFTPStreamConfig] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setDebug(value: /* information */ String => _): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
+    def setDebug(value: /* information */ String => js.Any): Self = StObject.set(x, "debug", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDebugUndefined: Self = StObject.set(x, "debug", js.undefined)

@@ -2,18 +2,18 @@ package typings.vscodeLanguageserverProtocol.protocolMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait RenameOptions extends WorkDoneProgressOptions {
+trait RenameOptions
+  extends StObject
+     with WorkDoneProgressOptions {
   
   /**
     * Renames should be checked and tested before being executed.
     *
     * @since version 3.12.0
     */
-  var prepareProvider: js.UndefOr[Boolean] = js.native
+  var prepareProvider: js.UndefOr[Boolean] = js.undefined
 }
 object RenameOptions {
   

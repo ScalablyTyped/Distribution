@@ -2,10 +2,8 @@ package typings.zingchart.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Hook extends StObject {
   
   /**
@@ -14,31 +12,31 @@ trait Hook extends StObject {
     * thin the 1st set of values in the series. Note that 0 refers to the first value or set of values, with 1 being the second value or
     *  set of values, and so on. "node:index=4" | "node:plot=0,index=1" | ...
     */
-  var hook: js.UndefOr[String] = js.native
+  var hook: js.UndefOr[String] = js.undefined
   
   /**
     * Sets an x-offset for the arrow's end point. Can be used to make adjustments to an arrow's end x ordinate or hook point. 10 | 56 |
     * ...
     */
-  var `offset-x`: js.UndefOr[Double] = js.native
+  var `offset-x`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets a y-offset for the arrow's end point. Can be used to make adjustments to an arrow's end y ordinate or hook point. 10 | 56 | .
     * ..
     */
-  var `offset-y`: js.UndefOr[Double] = js.native
+  var `offset-y`: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the x ordinate for an arrow's end point. Ordinates are counted in pixels, starting from the top-left corner of the chart. 100
     *  | 450 | ...
     */
-  var x: js.UndefOr[Double] = js.native
+  var x: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the y ordinate for an arrow's end point. Ordinates are counted in pixels, starting from the top-left corner of the chart. 100
     *  | 450 | ...
     */
-  var y: js.UndefOr[Double] = js.native
+  var y: js.UndefOr[Double] = js.undefined
 }
 object Hook {
   

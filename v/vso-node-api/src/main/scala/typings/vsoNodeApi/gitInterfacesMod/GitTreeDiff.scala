@@ -2,31 +2,29 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitTreeDiff extends StObject {
   
   /**
     * ObjectId of the base tree of this diff.
     */
-  var baseTreeId: String = js.native
+  var baseTreeId: String
   
   /**
     * List of tree entries that differ between the base and target tree.  Renames and object type changes are returned as a delete for the old object and add for the new object.  If a continuation token is returned in the response header, some tree entries are yet to be processed and may yeild more diff entries. If the continuation token is not returned all the diff entries have been included in this response.
     */
-  var diffEntries: js.Array[GitTreeDiffEntry] = js.native
+  var diffEntries: js.Array[GitTreeDiffEntry]
   
   /**
     * ObjectId of the target tree of this diff.
     */
-  var targetTreeId: String = js.native
+  var targetTreeId: String
   
   /**
     * REST Url to this resource.
     */
-  var url: String = js.native
+  var url: String
 }
 object GitTreeDiff {
   

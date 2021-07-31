@@ -2,21 +2,19 @@ package typings.reactBootstrapTypeahead.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TokenContext extends StObject {
   
-  var active: Boolean = js.native
+  var active: Boolean
   
-  def onBlur(e: js.Any): Unit = js.native
+  def onBlur(e: js.Any): Unit
   
-  def onClick(e: js.Any): Unit = js.native
+  def onClick(e: js.Any): Unit
   
-  def onFocus(e: js.Any): Unit = js.native
+  def onFocus(e: js.Any): Unit
   
-  def onKeyDown(e: js.Any): Unit = js.native
+  def onKeyDown(e: js.Any): Unit
 }
 object TokenContext {
   

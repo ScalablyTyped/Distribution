@@ -2,30 +2,28 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReposMergeEndpoint extends StObject {
   
   /**
     * The name of the base branch that the head will be merged into.
     */
-  var base: String = js.native
+  var base: String
   
   /**
     * Commit message to use for the merge commit. If omitted, a default message will be used.
     */
-  var commit_message: js.UndefOr[String] = js.native
+  var commit_message: js.UndefOr[String] = js.undefined
   
   /**
     * The head to merge. This can be a branch name or a commit SHA1.
     */
-  var head: String = js.native
+  var head: String
   
-  var owner: String = js.native
+  var owner: String
   
-  var repo: String = js.native
+  var repo: String
 }
 object ReposMergeEndpoint {
   

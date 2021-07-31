@@ -3,21 +3,19 @@ package typings.reactDates.anon
 import typings.moment.mod.Moment
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EndDate extends StObject {
   
-  var endDate: Moment | Null = js.native
+  var endDate: Moment | Null
   
-  var startDate: Moment | Null = js.native
+  var startDate: Moment | Null
 }
 object EndDate {
   
   @scala.inline
   def apply(): EndDate = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(endDate = null, startDate = null)
     __obj.asInstanceOf[EndDate]
   }
   

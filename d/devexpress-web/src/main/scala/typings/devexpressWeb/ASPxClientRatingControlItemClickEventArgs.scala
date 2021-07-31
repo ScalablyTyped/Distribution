@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientRatingControl.ItemClick event.
   */
-@js.native
-trait ASPxClientRatingControlItemClickEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientRatingControlItemClickEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Gets the index of the item related to the event.
     */
-  var index: Double = js.native
+  var index: Double
 }
 object ASPxClientRatingControlItemClickEventArgs {
   

@@ -5,10 +5,8 @@ import typings.uiGrid.mod.selection.rowSelectionChangedBatchHandler
 import typings.uiGrid.mod.selection.rowSelectionChangedHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RowSelectionChanged[TEntity] extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait RowSelectionChanged[TEntity] extends StObject {
     * @param {ng.IScope} scope grid scope
     * @param {rowSelectionChangedHandler} handler callback
     */
-  def rowSelectionChanged(scope: IScope, handler: rowSelectionChangedHandler[TEntity]): Unit = js.native
+  def rowSelectionChanged(scope: IScope, handler: rowSelectionChangedHandler[TEntity]): Unit
   
   /**
     * is raised after the row.isSelected state is changed in bulk,
@@ -25,7 +23,7 @@ trait RowSelectionChanged[TEntity] extends StObject {
     * @param {ng.IScope} scope grid scope
     * @param {rowSelectionChangedBatchHandler} handler callback
     */
-  def rowSelectionChangedBatch(scope: IScope, handler: rowSelectionChangedBatchHandler[TEntity]): Unit = js.native
+  def rowSelectionChangedBatch(scope: IScope, handler: rowSelectionChangedBatchHandler[TEntity]): Unit
 }
 object RowSelectionChanged {
   
@@ -39,7 +37,7 @@ object RowSelectionChanged {
   }
   
   @scala.inline
-  implicit class RowSelectionChangedMutableBuilder[Self <: RowSelectionChanged[_], TEntity] (val x: Self with RowSelectionChanged[TEntity]) extends AnyVal {
+  implicit class RowSelectionChangedMutableBuilder[Self <: RowSelectionChanged[?], TEntity] (val x: Self & RowSelectionChanged[TEntity]) extends AnyVal {
     
     @scala.inline
     def setRowSelectionChanged(value: (IScope, rowSelectionChangedHandler[TEntity]) => Unit): Self = StObject.set(x, "rowSelectionChanged", js.Any.fromFunction2(value))

@@ -2,21 +2,19 @@ package typings.steamClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CMsgClientLogonResponse extends StObject {
   
   /**
     * The logon was successful if equal to EResult.OK
     */
-  var eresult: EResult = js.native
+  var eresult: EResult
   
   /**
     * "loginkey" to be used with WebAPI's AuthenticateUser."
     */
-  var webapi_authenticate_user_nonce: String = js.native
+  var webapi_authenticate_user_nonce: String
 }
 object CMsgClientLogonResponse {
   

@@ -2,7 +2,6 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,13 +28,9 @@ trait XMLMapping extends StObject {
     * @param Office.CustomXMLPart [Source=0]
     */
   def SetMapping(XPath: String): Boolean = js.native
-  def SetMapping(
-    XPath: String,
-    PrefixMapping: js.UndefOr[scala.Nothing],
-    Source: typings.activexOffice.Office.CustomXMLPart
-  ): Boolean = js.native
   def SetMapping(XPath: String, PrefixMapping: String): Boolean = js.native
   def SetMapping(XPath: String, PrefixMapping: String, Source: typings.activexOffice.Office.CustomXMLPart): Boolean = js.native
+  def SetMapping(XPath: String, PrefixMapping: Unit, Source: typings.activexOffice.Office.CustomXMLPart): Boolean = js.native
   
   def SetMappingByNode(Node: typings.activexOffice.Office.CustomXMLNode): Boolean = js.native
   

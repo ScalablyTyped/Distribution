@@ -4,17 +4,15 @@ import typings.slackNode.slackNodeStrings.icon_emoji
 import typings.slackNode.slackNodeStrings.icon_url
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Key extends StObject {
     
-    var key: icon_url | icon_emoji = js.native
+    var key: icon_url | icon_emoji
     
-    var `val`: String = js.native
+    var `val`: String
   }
   object Key {
     

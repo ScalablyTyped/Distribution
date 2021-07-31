@@ -3,21 +3,19 @@ package typings.winrtUwp.Windows.Security.Authentication.Web.Provider
 import typings.winrtUwp.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents the client view for a web account. Use this to control what information about an account from a provider is available to the client. */
-@js.native
 trait WebAccountClientView extends StObject {
   
   /** Gets the account pairwise Id. */
-  var accountPairwiseId: String = js.native
+  var accountPairwiseId: String
   
   /** Gets the app callback Uri. */
-  var applicationCallbackUri: Uri = js.native
+  var applicationCallbackUri: Uri
   
   /** Gets the type of web account client view. */
-  var `type`: WebAccountClientViewType = js.native
+  var `type`: WebAccountClientViewType
 }
 object WebAccountClientView {
   

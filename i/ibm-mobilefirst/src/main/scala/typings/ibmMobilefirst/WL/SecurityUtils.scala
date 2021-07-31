@@ -2,23 +2,21 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object SecurityUtils {
   
-  @js.native
   trait DecryptOptions extends StObject {
     
-    var ct: String = js.native
+    var ct: String
     
-    var key: String = js.native
+    var key: String
     
-    var lv: String = js.native
+    var lv: String
     
-    var src: String = js.native
+    var src: String
     
-    var v: String = js.native
+    var v: String
   }
   object DecryptOptions {
     
@@ -48,12 +46,11 @@ object SecurityUtils {
     }
   }
   
-  @js.native
   trait EncryptOptions extends StObject {
     
-    var key: String = js.native
+    var key: String
     
-    var text: String = js.native
+    var text: String
   }
   object EncryptOptions {
     
@@ -74,14 +71,13 @@ object SecurityUtils {
     }
   }
   
-  @js.native
   trait KeygenOptions extends StObject {
     
-    var iterations: Double = js.native
+    var iterations: Double
     
-    var password: String = js.native
+    var password: String
     
-    var salt: String = js.native
+    var salt: String
   }
   object KeygenOptions {
     

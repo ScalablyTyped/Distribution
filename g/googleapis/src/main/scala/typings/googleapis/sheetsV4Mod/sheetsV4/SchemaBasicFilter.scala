@@ -3,31 +3,29 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The default filter associated with a sheet.
   */
-@js.native
 trait SchemaBasicFilter extends StObject {
   
   /**
     * The criteria for showing/hiding values per column. The map&#39;s key is
     * the column index, and the value is the criteria for that column.
     */
-  var criteria: js.UndefOr[StringDictionary[SchemaFilterCriteria]] = js.native
+  var criteria: js.UndefOr[StringDictionary[SchemaFilterCriteria]] = js.undefined
   
   /**
     * The range the filter covers.
     */
-  var range: js.UndefOr[SchemaGridRange] = js.native
+  var range: js.UndefOr[SchemaGridRange] = js.undefined
   
   /**
     * The sort order per column. Later specifications are used when values are
     * equal in the earlier specifications.
     */
-  var sortSpecs: js.UndefOr[js.Array[SchemaSortSpec]] = js.native
+  var sortSpecs: js.UndefOr[js.Array[SchemaSortSpec]] = js.undefined
 }
 object SchemaBasicFilter {
   

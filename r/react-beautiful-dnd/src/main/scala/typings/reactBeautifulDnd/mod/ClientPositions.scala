@@ -2,22 +2,20 @@ package typings.reactBeautifulDnd.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClientPositions extends StObject {
   
   // the current center of the item
-  var borderBoxCenter: Position = js.native
+  var borderBoxCenter: Position
   
   // how far the item has moved from its original position
-  var offset: Position = js.native
+  var offset: Position
   
   // where the user initially selected
   // This point is not used to calculate the impact of a dragging item
   // It is used to calculate the offset from the initial selection point
-  var selection: Position = js.native
+  var selection: Position
 }
 object ClientPositions {
   

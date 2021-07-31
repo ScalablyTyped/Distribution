@@ -5,23 +5,21 @@ import typings.wechatMiniprogram.wechatMiniprogramStrings.low
 import typings.wechatMiniprogram.wechatMiniprogramStrings.medium
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompressVideoOption extends StObject {
   
   /** 码率，单位 kbps */
-  var bitrate: Double = js.native
+  var bitrate: Double
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[CompressVideoCompleteCallback] = js.native
+  var complete: js.UndefOr[CompressVideoCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[CompressVideoFailCallback] = js.native
+  var fail: js.UndefOr[CompressVideoFailCallback] = js.undefined
   
   /** 帧率 */
-  var fps: Double = js.native
+  var fps: Double
   
   /** 压缩质量
     *
@@ -29,16 +27,16 @@ trait CompressVideoOption extends StObject {
     * - 'low': 低;
     * - 'medium': 中;
     * - 'high': 高; */
-  var quality: low | medium | high = js.native
+  var quality: low | medium | high
   
   /** 相对于原视频的分辨率比例，取值范围(0, 1] */
-  var resolution: Double = js.native
+  var resolution: Double
   
   /** 视频文件路径，可以是临时文件路径也可以是永久文件路径 */
-  var src: String = js.native
+  var src: String
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[CompressVideoSuccessCallback] = js.native
+  var success: js.UndefOr[CompressVideoSuccessCallback] = js.undefined
 }
 object CompressVideoOption {
   

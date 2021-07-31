@@ -2,15 +2,13 @@ package typings.vis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimelineItemsAlwaysDraggableOption extends StObject {
   
-  var item: js.UndefOr[Boolean] = js.native
+  var item: js.UndefOr[Boolean] = js.undefined
   
-  var range: js.UndefOr[Boolean] = js.native
+  var range: js.UndefOr[Boolean] = js.undefined
 }
 object TimelineItemsAlwaysDraggableOption {
   

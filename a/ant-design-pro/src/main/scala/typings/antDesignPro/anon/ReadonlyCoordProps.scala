@@ -7,36 +7,34 @@ import typings.react.mod.LegacyRef
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Readonly<bizcharts.bizcharts.CoordProps> */
-@js.native
 trait ReadonlyCoordProps extends StObject {
   
-  val children: js.UndefOr[ReactNode] = js.native
+  val children: js.UndefOr[ReactNode] = js.undefined
   
-  val endAngle: js.UndefOr[Double] = js.native
+  val endAngle: js.UndefOr[Double] = js.undefined
   
-  val innerRadius: js.UndefOr[Double] = js.native
+  val innerRadius: js.UndefOr[Double] = js.undefined
   
-  val key: js.UndefOr[typings.react.mod.Key] = js.native
+  val key: js.UndefOr[typings.react.mod.Key] = js.undefined
   
-  val radius: js.UndefOr[Double] = js.native
+  val radius: js.UndefOr[Double] = js.undefined
   
-  val ref: js.UndefOr[LegacyRef[_]] = js.native
+  val ref: js.UndefOr[LegacyRef[js.Any]] = js.undefined
   
-  val reflect: js.UndefOr[x | y] = js.native
+  val reflect: js.UndefOr[x | y] = js.undefined
   
-  val rotate: js.UndefOr[Double] = js.native
+  val rotate: js.UndefOr[Double] = js.undefined
   
-  val scale: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+  val scale: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   
-  val startAngle: js.UndefOr[Double] = js.native
+  val startAngle: js.UndefOr[Double] = js.undefined
   
-  val transpose: js.UndefOr[Boolean] = js.native
+  val transpose: js.UndefOr[Boolean] = js.undefined
   
-  val `type`: js.UndefOr[CoordType] = js.native
+  val `type`: js.UndefOr[CoordType] = js.undefined
 }
 object ReadonlyCoordProps {
   
@@ -80,10 +78,10 @@ object ReadonlyCoordProps {
     def setRadiusUndefined: Self = StObject.set(x, "radius", js.undefined)
     
     @scala.inline
-    def setRef(value: LegacyRef[_]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
+    def setRef(value: LegacyRef[js.Any]): Self = StObject.set(x, "ref", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
+    def setRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "ref", js.Any.fromFunction1(value))
     
     @scala.inline
     def setRefNull: Self = StObject.set(x, "ref", null)

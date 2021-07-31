@@ -2,13 +2,11 @@ package typings.googleapis.docsV1Mod.docsV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A suggested change to the DocumentStyle.
   */
-@js.native
 trait SchemaSuggestedDocumentStyle extends StObject {
   
   /**
@@ -16,13 +14,13 @@ trait SchemaSuggestedDocumentStyle extends StObject {
     * This can be used along with the document_style_suggestion_state to see
     * which fields have changed and their new values.
     */
-  var documentStyle: js.UndefOr[SchemaDocumentStyle] = js.native
+  var documentStyle: js.UndefOr[SchemaDocumentStyle] = js.undefined
   
   /**
     * A mask that indicates which of the fields on the base DocumentStyle have
     * been changed in this suggestion.
     */
-  var documentStyleSuggestionState: js.UndefOr[SchemaDocumentStyleSuggestionState] = js.native
+  var documentStyleSuggestionState: js.UndefOr[SchemaDocumentStyleSuggestionState] = js.undefined
 }
 object SchemaSuggestedDocumentStyle {
   

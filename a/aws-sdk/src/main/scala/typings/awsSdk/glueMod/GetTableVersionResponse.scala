@@ -2,16 +2,14 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetTableVersionResponse extends StObject {
   
   /**
     * The requested table version.
     */
-  var TableVersion: js.UndefOr[typings.awsSdk.glueMod.TableVersion] = js.native
+  var TableVersion: js.UndefOr[typings.awsSdk.glueMod.TableVersion] = js.undefined
 }
 object GetTableVersionResponse {
   

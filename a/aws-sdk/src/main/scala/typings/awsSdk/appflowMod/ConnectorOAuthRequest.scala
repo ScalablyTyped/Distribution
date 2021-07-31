@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConnectorOAuthRequest extends StObject {
   
   /**
     *  The code provided by the connector when it has been authenticated via the connected app. 
     */
-  var authCode: js.UndefOr[AuthCode] = js.native
+  var authCode: js.UndefOr[AuthCode] = js.undefined
   
   /**
     *  The URL to which the authentication server redirects the browser after authorization has been granted. 
     */
-  var redirectUri: js.UndefOr[RedirectUri] = js.native
+  var redirectUri: js.UndefOr[RedirectUri] = js.undefined
 }
 object ConnectorOAuthRequest {
   

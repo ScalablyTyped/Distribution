@@ -4,49 +4,47 @@ import typings.react.mod.CSSProperties
 import typings.reactJoyride.anon.ArrowColor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Styles extends StObject {
   
-  var beacon: js.UndefOr[CSSProperties] = js.native
+  var beacon: js.UndefOr[CSSProperties] = js.undefined
   
-  var beaconInner: js.UndefOr[CSSProperties] = js.native
+  var beaconInner: js.UndefOr[CSSProperties] = js.undefined
   
-  var beaconOuter: js.UndefOr[CSSProperties] = js.native
+  var beaconOuter: js.UndefOr[CSSProperties] = js.undefined
   
-  var buttonBack: js.UndefOr[CSSProperties] = js.native
+  var buttonBack: js.UndefOr[CSSProperties] = js.undefined
   
-  var buttonClose: js.UndefOr[CSSProperties] = js.native
+  var buttonClose: js.UndefOr[CSSProperties] = js.undefined
   
-  var buttonNext: js.UndefOr[CSSProperties] = js.native
+  var buttonNext: js.UndefOr[CSSProperties] = js.undefined
   
-  var buttonSkip: js.UndefOr[CSSProperties] = js.native
+  var buttonSkip: js.UndefOr[CSSProperties] = js.undefined
   
-  var options: js.UndefOr[ArrowColor] = js.native
+  var options: js.UndefOr[ArrowColor] = js.undefined
   
-  var overlay: js.UndefOr[CSSProperties] = js.native
+  var overlay: js.UndefOr[CSSProperties] = js.undefined
   
-  var overlayLegacy: js.UndefOr[CSSProperties] = js.native
+  var overlayLegacy: js.UndefOr[CSSProperties] = js.undefined
   
-  var overlayLegacyCenter: js.UndefOr[CSSProperties] = js.native
+  var overlayLegacyCenter: js.UndefOr[CSSProperties] = js.undefined
   
-  var spotlight: js.UndefOr[CSSProperties] = js.native
+  var spotlight: js.UndefOr[CSSProperties] = js.undefined
   
-  var spotlightLegacy: js.UndefOr[CSSProperties] = js.native
+  var spotlightLegacy: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltip: js.UndefOr[CSSProperties] = js.native
+  var tooltip: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipContainer: js.UndefOr[CSSProperties] = js.native
+  var tooltipContainer: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipContent: js.UndefOr[CSSProperties] = js.native
+  var tooltipContent: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipFooter: js.UndefOr[CSSProperties] = js.native
+  var tooltipFooter: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipFooterSpacer: js.UndefOr[CSSProperties] = js.native
+  var tooltipFooterSpacer: js.UndefOr[CSSProperties] = js.undefined
   
-  var tooltipTitle: js.UndefOr[CSSProperties] = js.native
+  var tooltipTitle: js.UndefOr[CSSProperties] = js.undefined
 }
 object Styles {
   

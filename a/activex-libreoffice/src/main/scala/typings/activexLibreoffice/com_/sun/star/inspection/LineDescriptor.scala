@@ -3,7 +3,6 @@ package typings.activexLibreoffice.com_.sun.star.inspection
 import typings.activexLibreoffice.com_.sun.star.graphic.XGraphic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,7 +16,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see PropertyLineElement
   * @since OOo 2.0.3
   */
-@js.native
 trait LineDescriptor extends StObject {
   
   /**
@@ -31,16 +29,16 @@ trait LineDescriptor extends StObject {
     * categories.
     * @see XObjectInspectorModel.describeCategories
     */
-  var Category: String = js.native
+  var Category: String
   
   /**
     * denotes the control which should be used to represent the property at the UI.
     * @see XPropertyControlFactory
     */
-  var Control: XPropertyControl = js.native
+  var Control: XPropertyControl
   
   /** denotes the human-readable display name used to present a property to the user */
-  var DisplayName: String = js.native
+  var DisplayName: String
   
   /**
     * determines whether a button exists which can be used for a more complex, interactive property value input.
@@ -51,7 +49,7 @@ trait LineDescriptor extends StObject {
     * @see PrimaryButtonImageURL
     * @see PrimaryButtonImage
     */
-  var HasPrimaryButton: Boolean = js.native
+  var HasPrimaryButton: Boolean
   
   /**
     * determines whether a secondary button exists which can be used for a more complex, interactive property value input.
@@ -60,10 +58,10 @@ trait LineDescriptor extends StObject {
     * @see XPropertyHandler.onInteractivePropertySelection
     * @see HasSecondaryButton
     */
-  var HasSecondaryButton: Boolean = js.native
+  var HasSecondaryButton: Boolean
   
   /** specifies the URL to the help topic to be associated with the property */
-  var HelpURL: String = js.native
+  var HelpURL: String
   
   /**
     * describes the indent level for the property
@@ -73,7 +71,7 @@ trait LineDescriptor extends StObject {
     *
     * Normally, XPropertyHandlers will set this to `0` when describing the UI for a normal property.
     */
-  var IndentLevel: Double = js.native
+  var IndentLevel: Double
   
   /**
     * describes a unique id to associate with the primary button
@@ -83,7 +81,7 @@ trait LineDescriptor extends StObject {
     *
     * If a primary button exists for a property's UI representation ( {@link HasPrimaryButton} ), it gets the ID specified herein.
     */
-  var PrimaryButtonId: String = js.native
+  var PrimaryButtonId: String
   
   /**
     * describes a graphics to display at the primary button, if any.
@@ -92,7 +90,7 @@ trait LineDescriptor extends StObject {
     * @see HasPrimaryButton
     * @see PrimaryButtonImageURL
     */
-  var PrimaryButtonImage: XGraphic = js.native
+  var PrimaryButtonImage: XGraphic
   
   /**
     * describes the URL of an image to display on the primary button, if any.
@@ -105,7 +103,7 @@ trait LineDescriptor extends StObject {
     * `PrimaryButtonImageURL` empty, and use the {@link PrimaryButtonImage} property.
     * @see PrimaryButtonImage
     */
-  var PrimaryButtonImageURL: String = js.native
+  var PrimaryButtonImageURL: String
   
   /**
     * describes a unique id to associate with the primary button
@@ -113,7 +111,7 @@ trait LineDescriptor extends StObject {
     * If a secondary button exists for a property's UI representation ( {@link HasSecondaryButton} ), it gets the ID specified herein.
     * @see PrimaryButtonId
     */
-  var SecondaryButtonId: String = js.native
+  var SecondaryButtonId: String
   
   /**
     * describes a graphics to display at the secondary button, if any.
@@ -122,7 +120,7 @@ trait LineDescriptor extends StObject {
     * @see HasSecondaryButton
     * @see SecondaryButtonImageURL
     */
-  var SecondaryButtonImage: XGraphic = js.native
+  var SecondaryButtonImage: XGraphic
   
   /**
     * describes the URL of an image to display on the secondary button, if any.
@@ -135,7 +133,7 @@ trait LineDescriptor extends StObject {
     * `SecondaryButtonImageURL` empty, and use the {@link SecondaryButtonImage} property.
     * @see SecondaryButtonImage
     */
-  var SecondaryButtonImageURL: String = js.native
+  var SecondaryButtonImageURL: String
 }
 object LineDescriptor {
   

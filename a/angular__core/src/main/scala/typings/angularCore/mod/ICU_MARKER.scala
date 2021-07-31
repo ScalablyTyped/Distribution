@@ -3,19 +3,17 @@ package typings.angularCore.mod
 import typings.angularCore.angularCoreStrings.ICU
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ICU_MARKER extends StObject {
   
-  var marker: ICU = js.native
+  var marker: ICU
 }
 object ICU_MARKER {
   
   @scala.inline
-  def apply(marker: ICU): ICU_MARKER = {
-    val __obj = js.Dynamic.literal(marker = marker.asInstanceOf[js.Any])
+  def apply(): ICU_MARKER = {
+    val __obj = js.Dynamic.literal(marker = "ICU")
     __obj.asInstanceOf[ICU_MARKER]
   }
   

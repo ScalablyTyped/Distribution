@@ -7,7 +7,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object segmentedIosMod {
@@ -33,10 +32,11 @@ object segmentedIosMod {
   trait SegmentedControl
     extends Component[SegmentedControlProps, js.Any, js.Any]
   
-  @js.native
-  trait SegmentedControlProps extends SegmentedControlPropsType {
+  trait SegmentedControlProps
+    extends StObject
+       with SegmentedControlPropsType {
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object SegmentedControlProps {
     

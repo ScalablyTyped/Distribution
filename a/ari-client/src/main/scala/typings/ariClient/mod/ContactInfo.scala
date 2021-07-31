@@ -2,31 +2,29 @@ package typings.ariClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ContactInfo extends StObject {
   
   /**
     * The Address of Record this contact belongs to.
     */
-  var aor: String = js.native
+  var aor: String
   
   /**
     * The current status of the contact.
     */
-  var contact_status: String = js.native
+  var contact_status: String
   
   /**
     * Current round trip time, in microseconds, for the contact.
     */
-  var roundtrip_usec: js.UndefOr[String] = js.native
+  var roundtrip_usec: js.UndefOr[String] = js.undefined
   
   /**
     * The location of the contact.
     */
-  var uri: String = js.native
+  var uri: String
 }
 object ContactInfo {
   

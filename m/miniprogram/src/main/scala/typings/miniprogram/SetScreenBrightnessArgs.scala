@@ -2,16 +2,16 @@ package typings.miniprogram
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SetScreenBrightnessArgs extends AsyncCallback[Unit] {
+trait SetScreenBrightnessArgs
+  extends StObject
+     with AsyncCallback[Unit] {
   
   /**
     * Screen brightness for the setting, range 0-1.
     */
-  var brightness: Double = js.native
+  var brightness: Double
 }
 object SetScreenBrightnessArgs {
   

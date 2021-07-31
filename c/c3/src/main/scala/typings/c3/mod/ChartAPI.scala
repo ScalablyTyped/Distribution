@@ -14,7 +14,6 @@ import typings.c3.anon.Labels
 import typings.c3.anon.Names
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -103,8 +102,9 @@ trait ChartAPI extends StObject {
     * @param options Options object.
     */
   def hide(): Unit = js.native
-  def hide(targetIds: js.UndefOr[ArrayOrString], options: ShowHideOptions): Unit = js.native
+  def hide(targetIds: Unit, options: ShowHideOptions): Unit = js.native
   def hide(targetIds: ArrayOrString): Unit = js.native
+  def hide(targetIds: ArrayOrString, options: ShowHideOptions): Unit = js.native
   
   var internal: ChartInternal = js.native
   
@@ -151,13 +151,13 @@ trait ChartAPI extends StObject {
     * @param resetOther If this argument is set true, the data points that are not specified by ids, indices will be unselected.
     */
   def select(): Unit = js.native
-  def select(ids: js.UndefOr[scala.Nothing], indices: js.UndefOr[scala.Nothing], resetOther: Boolean): Unit = js.native
-  def select(ids: js.UndefOr[scala.Nothing], indices: js.Array[Double]): Unit = js.native
-  def select(ids: js.UndefOr[scala.Nothing], indices: js.Array[Double], resetOther: Boolean): Unit = js.native
   def select(ids: js.Array[String]): Unit = js.native
-  def select(ids: js.Array[String], indices: js.UndefOr[scala.Nothing], resetOther: Boolean): Unit = js.native
   def select(ids: js.Array[String], indices: js.Array[Double]): Unit = js.native
   def select(ids: js.Array[String], indices: js.Array[Double], resetOther: Boolean): Unit = js.native
+  def select(ids: js.Array[String], indices: Unit, resetOther: Boolean): Unit = js.native
+  def select(ids: Unit, indices: js.Array[Double]): Unit = js.native
+  def select(ids: Unit, indices: js.Array[Double], resetOther: Boolean): Unit = js.native
+  def select(ids: Unit, indices: Unit, resetOther: Boolean): Unit = js.native
   
   /**
     * Get selected data points. By this API, you can get selected data points information. To use this API, `data.selection.enabled` needs to be `true`.
@@ -172,8 +172,9 @@ trait ChartAPI extends StObject {
     * @param options Options object.
     */
   def show(): Unit = js.native
-  def show(targetIds: js.UndefOr[ArrayOrString], options: ShowHideOptions): Unit = js.native
+  def show(targetIds: Unit, options: ShowHideOptions): Unit = js.native
   def show(targetIds: ArrayOrString): Unit = js.native
+  def show(targetIds: ArrayOrString, options: ShowHideOptions): Unit = js.native
   
   var subchart: IsShown = js.native
   
@@ -183,8 +184,9 @@ trait ChartAPI extends StObject {
     * @param options Options object.
     */
   def toggle(): Unit = js.native
-  def toggle(targetIds: js.UndefOr[ArrayOrString], options: ShowHideOptions): Unit = js.native
+  def toggle(targetIds: Unit, options: ShowHideOptions): Unit = js.native
   def toggle(targetIds: ArrayOrString): Unit = js.native
+  def toggle(targetIds: ArrayOrString, options: ShowHideOptions): Unit = js.native
   
   def tooltip(): Unit = js.native
   @JSName("tooltip")
@@ -213,9 +215,9 @@ trait ChartAPI extends StObject {
     * @param indices Specify indices to be unselected. If this argument is not given, all data points will be the candidate.
     */
   def unselect(): Unit = js.native
-  def unselect(ids: js.UndefOr[scala.Nothing], indices: js.Array[Double]): Unit = js.native
   def unselect(ids: js.Array[String]): Unit = js.native
   def unselect(ids: js.Array[String], indices: js.Array[Double]): Unit = js.native
+  def unselect(ids: Unit, indices: js.Array[Double]): Unit = js.native
   
   /**
     * Unzoom to the original domain.

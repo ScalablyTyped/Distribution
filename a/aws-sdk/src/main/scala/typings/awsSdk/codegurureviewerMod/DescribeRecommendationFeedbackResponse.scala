@@ -2,16 +2,14 @@ package typings.awsSdk.codegurureviewerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeRecommendationFeedbackResponse extends StObject {
   
   /**
     *  The recommendation feedback given by the user. 
     */
-  var RecommendationFeedback: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationFeedback] = js.native
+  var RecommendationFeedback: js.UndefOr[typings.awsSdk.codegurureviewerMod.RecommendationFeedback] = js.undefined
 }
 object DescribeRecommendationFeedbackResponse {
   

@@ -2,17 +2,15 @@ package typings.openfin.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Title extends StObject {
   
-  var identity: typings.openfin.shapesIdentityMod.Identity = js.native
+  var identity: typings.openfin.shapesIdentityMod.Identity
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: String = js.native
+  var url: String
 }
 object Title {
   

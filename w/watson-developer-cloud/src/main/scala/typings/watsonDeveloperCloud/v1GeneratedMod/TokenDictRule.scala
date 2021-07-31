@@ -2,24 +2,22 @@ package typings.watsonDeveloperCloud.v1GeneratedMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An object defining a single tokenizaion rule. */
-@js.native
 trait TokenDictRule extends StObject {
   
   /** The part of speech that the `text` string belongs to. For example `noun`. Custom parts of speech can be specified. */
-  var part_of_speech: String = js.native
+  var part_of_speech: String
   
   /** Array of tokens that represent the content of the `text` field in an alternate character set. */
-  var readings: js.UndefOr[js.Array[String]] = js.native
+  var readings: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The string to tokenize. */
-  var text: String = js.native
+  var text: String
   
   /** Array of tokens that the `text` field is split into when found. */
-  var tokens: js.Array[String] = js.native
+  var tokens: js.Array[String]
 }
 object TokenDictRule {
   

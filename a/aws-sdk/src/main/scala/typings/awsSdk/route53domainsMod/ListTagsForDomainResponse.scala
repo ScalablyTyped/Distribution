@@ -2,16 +2,14 @@ package typings.awsSdk.route53domainsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListTagsForDomainResponse extends StObject {
   
   /**
     * A list of the tags that are associated with the specified domain.
     */
-  var TagList: typings.awsSdk.route53domainsMod.TagList = js.native
+  var TagList: typings.awsSdk.route53domainsMod.TagList
 }
 object ListTagsForDomainResponse {
   

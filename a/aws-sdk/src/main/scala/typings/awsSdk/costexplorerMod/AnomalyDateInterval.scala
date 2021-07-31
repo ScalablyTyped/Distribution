@@ -2,21 +2,19 @@ package typings.awsSdk.costexplorerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnomalyDateInterval extends StObject {
   
   /**
     *  The last date an anomaly was observed. 
     */
-  var EndDate: js.UndefOr[YearMonthDay] = js.native
+  var EndDate: js.UndefOr[YearMonthDay] = js.undefined
   
   /**
     *  The first date an anomaly was observed. 
     */
-  var StartDate: YearMonthDay = js.native
+  var StartDate: YearMonthDay
 }
 object AnomalyDateInterval {
   

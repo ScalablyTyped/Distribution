@@ -8,30 +8,29 @@ import typings.awsSdkTypes.responseMod.MetadataBearer
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesGetObjectAclOutputMod {
   
-  @js.native
   trait GetObjectAclOutput
-    extends MetadataBearer
+    extends StObject
+       with MetadataBearer
        with _OutputTypesUnion {
     
     /**
       * <p>A list of grants.</p>
       */
-    var Grants: js.UndefOr[js.Array[UnmarshalledGrant]] = js.native
+    var Grants: js.UndefOr[js.Array[UnmarshalledGrant]] = js.undefined
     
     /**
       * _Owner shape
       */
-    var Owner: js.UndefOr[UnmarshalledOwner] = js.native
+    var Owner: js.UndefOr[UnmarshalledOwner] = js.undefined
     
     /**
       * <p>If present, indicates that the requester was successfully charged for the request.</p>
       */
-    var RequestCharged: js.UndefOr[requester_ | String] = js.native
+    var RequestCharged: js.UndefOr[requester_ | String] = js.undefined
   }
   object GetObjectAclOutput {
     

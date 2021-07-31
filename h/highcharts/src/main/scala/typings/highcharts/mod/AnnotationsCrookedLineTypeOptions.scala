@@ -2,30 +2,28 @@ package typings.highcharts.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AnnotationsCrookedLineTypeOptions extends StObject {
   
   /**
     * (Highstock) Line options.
     */
-  var line: js.UndefOr[AnnotationsCrookedLineTypeLineOptions] = js.native
+  var line: js.UndefOr[AnnotationsCrookedLineTypeLineOptions] = js.undefined
   
-  var points: js.UndefOr[js.Array[AnnotationsCrookedLineTypePointsOptions]] = js.native
+  var points: js.UndefOr[js.Array[AnnotationsCrookedLineTypePointsOptions]] = js.undefined
   
   /**
     * (Highstock) This number defines which xAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
-  var xAxis: js.UndefOr[Double] = js.native
+  var xAxis: js.UndefOr[Double] = js.undefined
   
   /**
     * (Highstock) This number defines which yAxis the point is connected to. It
     * refers to either the axis id or the index of the axis in the xAxis array.
     */
-  var yAxis: js.UndefOr[Double] = js.native
+  var yAxis: js.UndefOr[Double] = js.undefined
 }
 object AnnotationsCrookedLineTypeOptions {
   

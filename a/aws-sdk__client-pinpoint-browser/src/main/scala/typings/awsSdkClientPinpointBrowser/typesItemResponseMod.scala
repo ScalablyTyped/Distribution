@@ -8,12 +8,10 @@ import typings.awsSdkClientPinpointBrowser.typesEventItemResponseMod.Unmarshalle
 import typings.std.Iterable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesItemResponseMod {
   
-  @js.native
   trait ItemResponse extends StObject {
     
     /**
@@ -21,14 +19,14 @@ object typesItemResponseMod {
       */
     var EndpointItemResponse: js.UndefOr[
         typings.awsSdkClientPinpointBrowser.typesEndpointItemResponseMod.EndpointItemResponse
-      ] = js.native
+      ] = js.undefined
     
     /**
       * A multipart response object that contains a key and value for each event ID in the request. In each object, the event ID is the key, and an EventItemResponse object is the value.
       */
     var EventsItemResponse: js.UndefOr[
         StringDictionary[EventItemResponse] | (Iterable[js.Tuple2[String, EventItemResponse]])
-      ] = js.native
+      ] = js.undefined
   }
   object ItemResponse {
     
@@ -55,20 +53,21 @@ object typesItemResponseMod {
     }
   }
   
-  @js.native
-  trait UnmarshalledItemResponse extends ItemResponse {
+  trait UnmarshalledItemResponse
+    extends StObject
+       with ItemResponse {
     
     /**
       * The response received after the endpoint was accepted.
       */
     @JSName("EndpointItemResponse")
-    var EndpointItemResponse_UnmarshalledItemResponse: js.UndefOr[UnmarshalledEndpointItemResponse] = js.native
+    var EndpointItemResponse_UnmarshalledItemResponse: js.UndefOr[UnmarshalledEndpointItemResponse] = js.undefined
     
     /**
       * A multipart response object that contains a key and value for each event ID in the request. In each object, the event ID is the key, and an EventItemResponse object is the value.
       */
     @JSName("EventsItemResponse")
-    var EventsItemResponse_UnmarshalledItemResponse: js.UndefOr[StringDictionary[UnmarshalledEventItemResponse]] = js.native
+    var EventsItemResponse_UnmarshalledItemResponse: js.UndefOr[StringDictionary[UnmarshalledEventItemResponse]] = js.undefined
   }
   object UnmarshalledItemResponse {
     

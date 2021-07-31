@@ -2,19 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientButton.Click event.
   */
-@js.native
-trait ASPxClientButtonClickEventArgs extends ASPxClientProcessingModeEventArgs {
+trait ASPxClientButtonClickEventArgs
+  extends StObject
+     with ASPxClientProcessingModeEventArgs {
   
   /**
     * Specifies whether both the event's default action and the event's bubbling upon the hierarchy of event handlers should be canceled.
     */
-  var cancelEventAndBubble: Boolean = js.native
+  var cancelEventAndBubble: Boolean
 }
 object ASPxClientButtonClickEventArgs {
   

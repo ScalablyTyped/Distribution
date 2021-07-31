@@ -7,10 +7,13 @@ import typings.electronNotifications.electronNotificationsStrings.clicked
 import typings.electronNotifications.electronNotificationsStrings.swipedRight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("electron-notifications", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("electron-notifications", "NotificationWindow")
   @js.native
@@ -32,24 +35,21 @@ object mod {
     def on_swipedRight(event: swipedRight, listener: js.Function): this.type = js.native
   }
   
-  @JSImport("electron-notifications", "notify")
-  @js.native
-  def notify_(title: String): NotificationWindow = js.native
-  @JSImport("electron-notifications", "notify")
-  @js.native
-  def notify_(title: String, data: NotifierOptions): NotificationWindow = js.native
+  @scala.inline
+  def notify_(title: String): NotificationWindow = ^.asInstanceOf[js.Dynamic].applyDynamic("notify")(title.asInstanceOf[js.Any]).asInstanceOf[NotificationWindow]
+  @scala.inline
+  def notify_(title: String, data: NotifierOptions): NotificationWindow = (^.asInstanceOf[js.Dynamic].applyDynamic("notify")(title.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[NotificationWindow]
   
-  @js.native
   trait NotifierOptions extends StObject {
     
     /** One or two buttons to display on the right of the notification. */
-    var buttons: js.UndefOr[js.Array[String]] = js.native
+    var buttons: js.UndefOr[js.Array[String]] = js.undefined
     
     /** The absolute URL of a icon displayed to the left of the text. */
-    var icon: js.UndefOr[String] = js.native
+    var icon: js.UndefOr[String] = js.undefined
     
     /** A message to display under the title. */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object NotifierOptions {
     

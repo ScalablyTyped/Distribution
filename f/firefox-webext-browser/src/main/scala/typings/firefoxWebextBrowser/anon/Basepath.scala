@@ -3,15 +3,13 @@ package typings.firefoxWebextBrowser.anon
 import typings.firefoxWebextBrowser.browser.manifest.ExtensionURL
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Basepath extends StObject {
   
-  var base_path: ExtensionURL = js.native
+  var base_path: ExtensionURL
   
-  var paths: js.UndefOr[js.Array[String]] = js.native
+  var paths: js.UndefOr[js.Array[String]] = js.undefined
 }
 object Basepath {
   

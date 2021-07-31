@@ -16,7 +16,6 @@ import typings.detox.mod.global.Detox_.Matchers
 import typings.detox.mod.global.Detox_.WaitFor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -112,14 +111,9 @@ object mod extends Shortcut {
           * await element(by.id('scrollView')).scroll(100, 'up');
           */
         def scroll(pixels: Double, direction: Direction): js.Promise[Actions[R]] = js.native
-        def scroll(
-          pixels: Double,
-          direction: Direction,
-          startPositionX: js.UndefOr[scala.Nothing],
-          startPositionY: Double
-        ): js.Promise[Actions[R]] = js.native
         def scroll(pixels: Double, direction: Direction, startPositionX: Double): js.Promise[Actions[R]] = js.native
         def scroll(pixels: Double, direction: Direction, startPositionX: Double, startPositionY: Double): js.Promise[Actions[R]] = js.native
+        def scroll(pixels: Double, direction: Direction, startPositionX: Unit, startPositionY: Double): js.Promise[Actions[R]] = js.native
         
         /**
           * Scroll to edge.
@@ -165,7 +159,7 @@ object mod extends Shortcut {
           * await element(by.id('scrollView')).swipe('down', 'fast', 0.5);
           */
         def swipe(direction: Direction): js.Promise[Actions[R]] = js.native
-        def swipe(direction: Direction, speed: js.UndefOr[scala.Nothing], percentage: Double): js.Promise[Actions[R]] = js.native
+        def swipe(direction: Direction, speed: Unit, percentage: Double): js.Promise[Actions[R]] = js.native
         def swipe(direction: Direction, speed: Speed): js.Promise[Actions[R]] = js.native
         def swipe(direction: Direction, speed: Speed, percentage: Double): js.Promise[Actions[R]] = js.native
         
@@ -212,10 +206,9 @@ object mod extends Shortcut {
       
       type CameraPermission = PermissionState
       
-      @js.native
       trait CircusTestEventListenerBase extends StObject {
         
-        def handleTestEvent(event: js.Any, state: js.Any): js.Promise[Unit] = js.native
+        def handleTestEvent(event: js.Any, state: js.Any): js.Promise[Unit]
       }
       object CircusTestEventListenerBase {
         
@@ -272,15 +265,19 @@ object mod extends Shortcut {
         def init(config: js.Any, options: DetoxInitOptions): js.Promise[Unit] = js.native
       }
       
-      type DetoxAny = Element with Actions[_] with WaitFor
-      
       @js.native
+      trait DetoxAny
+        extends StObject
+           with Element
+           with Actions[js.Any]
+           with WaitFor
+      
       trait DetoxCircus extends StObject {
         
         /**
           * A get function that Enables access to this instance (single in each worker's scope)
           */
-        def getEnv(): AddEventsListener = js.native
+        def getEnv(): AddEventsListener
       }
       object DetoxCircus {
         
@@ -300,7 +297,9 @@ object mod extends Shortcut {
       
       // Detox exports all methods from detox global and all of the global constants.
       @js.native
-      trait DetoxExport extends Detox {
+      trait DetoxExport
+        extends StObject
+           with Detox {
         
         def by(by: Matchers): Matchers = js.native
         @JSName("by")
@@ -326,24 +325,23 @@ object mod extends Shortcut {
         var waitFor_Original: WaitFor = js.native
       }
       
-      @js.native
       trait DetoxInitOptions extends StObject {
         
         /**
           * Detox exports device, expect, element, by and waitFor as globals by default, if you want to control their initialization manually, set init detox with initGlobals set to false.
           * This is useful when during E2E tests you also need to run regular expectations in node. jest Expect for instance, will not be overriden by Detox when this option is used.
           */
-        var initGlobals: js.UndefOr[Boolean] = js.native
+        var initGlobals: js.UndefOr[Boolean] = js.undefined
         
         /**
           * By default await detox.init(config); will launch the installed app. If you wish to control when your app is launched, add {launchApp: false} param to your init.
           */
-        var launchApp: js.UndefOr[Boolean] = js.native
+        var launchApp: js.UndefOr[Boolean] = js.undefined
         
         /**
           * By default await detox.init(config); will uninstall and install the app. If you wish to reuse the existing app for a faster run, add {reuse: true} param to your init.
           */
-        var reuse: js.UndefOr[Boolean] = js.native
+        var reuse: js.UndefOr[Boolean] = js.undefined
       }
       object DetoxInitOptions {
         
@@ -585,53 +583,52 @@ object mod extends Shortcut {
         def unmatchFinger(): js.Promise[Unit] = js.native
       }
       
-      @js.native
       trait DeviceLanchAppConfig extends StObject {
         
         /**
           * Launch into a fresh installation
           * A flag that enables relaunching into a fresh installation of the app (it will uninstall and install the binary again), default is false.
           */
-        var delete: js.UndefOr[Boolean] = js.native
+        var delete: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Launch config for specifying the native language and locale
           */
-        var languageAndLocale: js.UndefOr[LanguageAndLocale] = js.native
+        var languageAndLocale: js.UndefOr[LanguageAndLocale] = js.undefined
         
         /**
           * Detox can start the app with additional launch arguments
           * The added launchArgs will be passed through the launch command to the device and be accessible via [[NSProcessInfo processInfo] arguments]
           */
-        var launchArgs: js.UndefOr[js.Any] = js.native
+        var launchArgs: js.UndefOr[js.Any] = js.undefined
         
         /**
           * Restart the app
           * Terminate the app and launch it again. If set to false, the simulator will try to bring app from background, if the app isn't running, it will launch a new instance. default is false
           */
-        var newInstance: js.UndefOr[Boolean] = js.native
+        var newInstance: js.UndefOr[Boolean] = js.undefined
         
         /**
           * Set runtime permissions
           * Grant or deny runtime permissions for your application.
           */
-        var permissions: js.UndefOr[DevicePermissions] = js.native
+        var permissions: js.UndefOr[DevicePermissions] = js.undefined
         
         /**
           * Launch from URL
           * Mock opening the app from URL to test your app's deep link handling mechanism.
           */
-        var url: js.UndefOr[js.Any] = js.native
+        var url: js.UndefOr[js.Any] = js.undefined
         
         /**
           * Launch with user activity
           */
-        var userActivity: js.UndefOr[js.Any] = js.native
+        var userActivity: js.UndefOr[js.Any] = js.undefined
         
         /**
           * Launch with user notifications
           */
-        var userNotification: js.UndefOr[js.Any] = js.native
+        var userNotification: js.UndefOr[js.Any] = js.undefined
       }
       object DeviceLanchAppConfig {
         
@@ -697,38 +694,37 @@ object mod extends Shortcut {
       /**
         *  Source for string definitions is https://github.com/wix/AppleSimulatorUtils
         */
-      @js.native
       trait DevicePermissions extends StObject {
         
-        var calendar: js.UndefOr[CalendarPermission] = js.native
+        var calendar: js.UndefOr[CalendarPermission] = js.undefined
         
-        var camera: js.UndefOr[CameraPermission] = js.native
+        var camera: js.UndefOr[CameraPermission] = js.undefined
         
-        var contacts: js.UndefOr[ContactsPermission] = js.native
+        var contacts: js.UndefOr[ContactsPermission] = js.undefined
         
-        var faceid: js.UndefOr[FaceIDPermission] = js.native
+        var faceid: js.UndefOr[FaceIDPermission] = js.undefined
         
-        var health: js.UndefOr[HealthPermission] = js.native
+        var health: js.UndefOr[HealthPermission] = js.undefined
         
-        var homekit: js.UndefOr[HomekitPermission] = js.native
+        var homekit: js.UndefOr[HomekitPermission] = js.undefined
         
-        var location: js.UndefOr[LocationPermission] = js.native
+        var location: js.UndefOr[LocationPermission] = js.undefined
         
-        var medialibrary: js.UndefOr[MediaLibraryPermission] = js.native
+        var medialibrary: js.UndefOr[MediaLibraryPermission] = js.undefined
         
-        var microphone: js.UndefOr[MicrophonePermission] = js.native
+        var microphone: js.UndefOr[MicrophonePermission] = js.undefined
         
-        var motion: js.UndefOr[MotionPermission] = js.native
+        var motion: js.UndefOr[MotionPermission] = js.undefined
         
-        var notifications: js.UndefOr[NotificationsPermission] = js.native
+        var notifications: js.UndefOr[NotificationsPermission] = js.undefined
         
-        var photos: js.UndefOr[PhotosPermission] = js.native
+        var photos: js.UndefOr[PhotosPermission] = js.undefined
         
-        var reminders: js.UndefOr[RemindersPermission] = js.native
+        var reminders: js.UndefOr[RemindersPermission] = js.undefined
         
-        var siri: js.UndefOr[SiriPermission] = js.native
+        var siri: js.UndefOr[SiriPermission] = js.undefined
         
-        var speech: js.UndefOr[SpeechPermission] = js.native
+        var speech: js.UndefOr[SpeechPermission] = js.undefined
       }
       object DevicePermissions {
         
@@ -955,12 +951,11 @@ object mod extends Shortcut {
       
       type HomekitPermission = PermissionState
       
-      @js.native
       trait LanguageAndLocale extends StObject {
         
-        var language: js.UndefOr[String] = js.native
+        var language: js.UndefOr[String] = js.undefined
         
-        var locale: js.UndefOr[String] = js.native
+        var locale: js.UndefOr[String] = js.undefined
       }
       object LanguageAndLocale {
         

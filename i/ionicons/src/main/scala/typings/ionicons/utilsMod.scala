@@ -5,207 +5,99 @@ import typings.ionicons.iconMod.Icon
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object utilsMod {
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "addIcons")
+  @JSImport("ionicons/dist/types/components/icon/utils", JSImport.Namespace)
   @js.native
-  def addIcons(icons: StringDictionary[String]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "getIconMap")
-  @js.native
-  def getIconMap(): Map[String, String] = js.native
+  @scala.inline
+  def addIcons(icons: StringDictionary[String]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addIcons")(icons.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: js.UndefOr[scala.Nothing],
-    mode: js.UndefOr[scala.Nothing],
-    ios: js.UndefOr[scala.Nothing],
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: js.UndefOr[scala.Nothing],
-    mode: js.UndefOr[scala.Nothing],
-    ios: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: js.UndefOr[scala.Nothing],
-    mode: js.UndefOr[scala.Nothing],
-    ios: String,
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: js.UndefOr[scala.Nothing], icon: js.UndefOr[scala.Nothing], mode: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: js.UndefOr[scala.Nothing],
-    mode: String,
-    ios: js.UndefOr[scala.Nothing],
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: js.UndefOr[scala.Nothing], icon: js.UndefOr[scala.Nothing], mode: String, ios: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: js.UndefOr[scala.Nothing],
-    mode: String,
-    ios: String,
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: js.UndefOr[scala.Nothing], icon: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: String,
-    mode: js.UndefOr[scala.Nothing],
-    ios: js.UndefOr[scala.Nothing],
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: js.UndefOr[scala.Nothing], icon: String, mode: js.UndefOr[scala.Nothing], ios: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: String,
-    mode: js.UndefOr[scala.Nothing],
-    ios: String,
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: js.UndefOr[scala.Nothing], icon: String, mode: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: js.UndefOr[scala.Nothing],
-    icon: String,
-    mode: String,
-    ios: js.UndefOr[scala.Nothing],
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: js.UndefOr[scala.Nothing], icon: String, mode: String, ios: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: js.UndefOr[scala.Nothing], icon: String, mode: String, ios: String, md: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: String,
-    icon: js.UndefOr[scala.Nothing],
-    mode: js.UndefOr[scala.Nothing],
-    ios: js.UndefOr[scala.Nothing],
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: js.UndefOr[scala.Nothing], mode: js.UndefOr[scala.Nothing], ios: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: String,
-    icon: js.UndefOr[scala.Nothing],
-    mode: js.UndefOr[scala.Nothing],
-    ios: String,
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: js.UndefOr[scala.Nothing], mode: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: String,
-    icon: js.UndefOr[scala.Nothing],
-    mode: String,
-    ios: js.UndefOr[scala.Nothing],
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: js.UndefOr[scala.Nothing], mode: String, ios: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: js.UndefOr[scala.Nothing], mode: String, ios: String, md: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(
-    iconName: String,
-    icon: String,
-    mode: js.UndefOr[scala.Nothing],
-    ios: js.UndefOr[scala.Nothing],
-    md: String
-  ): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: String, mode: js.UndefOr[scala.Nothing], ios: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: String, mode: js.UndefOr[scala.Nothing], ios: String, md: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: String, mode: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: String, mode: String, ios: js.UndefOr[scala.Nothing], md: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: String, mode: String, ios: String): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getName")
-  @js.native
-  def getName(iconName: String, icon: String, mode: String, ios: String, md: String): String | Null = js.native
+  @scala.inline
+  def getIconMap(): Map[String, String] = ^.asInstanceOf[js.Dynamic].applyDynamic("getIconMap")().asInstanceOf[Map[String, String]]
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "getSrc")
-  @js.native
-  def getSrc(): String | Null = js.native
-  @JSImport("ionicons/dist/types/components/icon/utils", "getSrc")
-  @js.native
-  def getSrc(src: String): String | Null = js.native
+  @scala.inline
+  def getName(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")().asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any]).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String, mode: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String, mode: String, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String, mode: String, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String, mode: String, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String, mode: Unit, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String, mode: Unit, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: String, mode: Unit, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: Unit, mode: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: Unit, mode: String, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: Unit, mode: String, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: Unit, mode: String, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: Unit, mode: Unit, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: Unit, mode: Unit, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: String, icon: Unit, mode: Unit, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String, mode: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String, mode: String, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String, mode: String, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String, mode: String, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String, mode: Unit, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String, mode: Unit, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: String, mode: Unit, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: Unit, mode: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: Unit, mode: String, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: Unit, mode: String, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: Unit, mode: String, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: Unit, mode: Unit, ios: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: Unit, mode: Unit, ios: String, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
+  @scala.inline
+  def getName(iconName: Unit, icon: Unit, mode: Unit, ios: Unit, md: String): String | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getName")(iconName.asInstanceOf[js.Any], icon.asInstanceOf[js.Any], mode.asInstanceOf[js.Any], ios.asInstanceOf[js.Any], md.asInstanceOf[js.Any])).asInstanceOf[String | Null]
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "getUrl")
-  @js.native
-  def getUrl(i: Icon): String | Null = js.native
+  @scala.inline
+  def getSrc(): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSrc")().asInstanceOf[String | Null]
+  @scala.inline
+  def getSrc(src: String): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getSrc")(src.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "isSrc")
-  @js.native
-  def isSrc(str: String): Boolean = js.native
+  @scala.inline
+  def getUrl(i: Icon): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getUrl")(i.asInstanceOf[js.Any]).asInstanceOf[String | Null]
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "isStr")
-  @js.native
-  def isStr(`val`: js.Any): /* is string */ Boolean = js.native
+  @scala.inline
+  def isSrc(str: String): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isSrc")(str.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("ionicons/dist/types/components/icon/utils", "toLower")
-  @js.native
-  def toLower(`val`: String): String = js.native
+  @scala.inline
+  def isStr(`val`: js.Any): /* is string */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isStr")(`val`.asInstanceOf[js.Any]).asInstanceOf[/* is string */ Boolean]
+  
+  @scala.inline
+  def toLower(`val`: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLower")(`val`.asInstanceOf[js.Any]).asInstanceOf[String]
 }

@@ -2,66 +2,65 @@ package typings.extjs.Ext.layout.component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object field {
   
-  @js.native
   trait Field extends StObject
   
   type IComboBox = ITrigger
   
-  @js.native
-  trait IField extends IAuto {
+  trait IField
+    extends StObject
+       with IAuto {
     
     /** [Method] Called before any calculation cycles to reset DOM values and prepare for calculation
       * @param ownerContext Object
       */
     @JSName("beginLayoutCycle")
-    var beginLayoutCycle_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+    var beginLayoutCycle_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Method] Called before any calculation cycles to prepare for layout
       * @param ownerContext Object
       */
     @JSName("beginLayout")
-    var beginLayout_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.native
+    var beginLayout_IField: js.UndefOr[js.Function1[/* ownerContext */ js.UndefOr[js.Any], Unit]] = js.undefined
     
     /** [Property] (Object) */
-    var elementId: js.UndefOr[js.Any] = js.native
+    var elementId: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var errorStrategies: js.UndefOr[js.Any] = js.native
+    var errorStrategies: js.UndefOr[js.Any] = js.undefined
     
     /** [Method] Return the set of strategy functions from the errorStrategies collection that is appropriate for the field s msgTarge  */
-    var getErrorStrategy: js.UndefOr[js.Function0[Unit]] = js.native
+    var getErrorStrategy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Method] Return the set of strategy functions from the labelStrategies collection that is appropriate for the field s labelAli  */
-    var getLabelStrategy: js.UndefOr[js.Function0[Unit]] = js.native
+    var getLabelStrategy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** [Property] (Object) */
-    var labelStrategies: js.UndefOr[js.Any] = js.native
+    var labelStrategies: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var left: js.UndefOr[js.Any] = js.native
+    var left: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var qtip: js.UndefOr[js.Any] = js.native
+    var qtip: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var right: js.UndefOr[js.Any] = js.native
+    var right: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var side: js.UndefOr[js.Any] = js.native
+    var side: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var title: js.UndefOr[js.Any] = js.native
+    var title: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var top: js.UndefOr[js.Any] = js.native
+    var top: js.UndefOr[js.Any] = js.undefined
     
     /** [Property] (Object) */
-    var under: js.UndefOr[js.Any] = js.native
+    var under: js.UndefOr[js.Any] = js.undefined
   }
   object IField {
     
@@ -160,8 +159,9 @@ object field {
     }
   }
   
-  @js.native
-  trait IFieldContainer extends IField
+  trait IFieldContainer
+    extends StObject
+       with IField
   object IFieldContainer {
     
     @scala.inline
@@ -171,12 +171,13 @@ object field {
     }
   }
   
-  @js.native
-  trait IHtmlEditor extends IFieldContainer {
+  trait IHtmlEditor
+    extends StObject
+       with IFieldContainer {
     
     /** [Method] This method is called after all layouts are complete and their calculations flushed to the DOM  */
     @JSName("finishedLayout")
-    var finishedLayout_IHtmlEditor: js.UndefOr[js.Function0[Unit]] = js.native
+    var finishedLayout_IHtmlEditor: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object IHtmlEditor {
     
@@ -197,8 +198,9 @@ object field {
     }
   }
   
-  @js.native
-  trait ISlider extends IField
+  trait ISlider
+    extends StObject
+       with IField
   object ISlider {
     
     @scala.inline
@@ -208,8 +210,9 @@ object field {
     }
   }
   
-  @js.native
-  trait IText extends IField
+  trait IText
+    extends StObject
+       with IField
   object IText {
     
     @scala.inline
@@ -219,8 +222,9 @@ object field {
     }
   }
   
-  @js.native
-  trait ITextArea extends IText
+  trait ITextArea
+    extends StObject
+       with IText
   object ITextArea {
     
     @scala.inline
@@ -230,8 +234,9 @@ object field {
     }
   }
   
-  @js.native
-  trait ITrigger extends IField
+  trait ITrigger
+    extends StObject
+       with IField
   object ITrigger {
     
     @scala.inline

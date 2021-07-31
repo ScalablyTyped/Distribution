@@ -4,70 +4,68 @@ import typings.foundation.anon.Bottom
 import typings.foundation.anon.Button
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/joyride.html#optional-javascript-configuration
-@js.native
 trait JoyrideOptions extends StObject {
   
-  var cookie_domain: js.UndefOr[Boolean] = js.native
+  var cookie_domain: js.UndefOr[Boolean] = js.undefined
   
-  var cookie_expires: js.UndefOr[Double] = js.native
+  var cookie_expires: js.UndefOr[Double] = js.undefined
   
-  var cookie_monster: js.UndefOr[Boolean] = js.native
+  var cookie_monster: js.UndefOr[Boolean] = js.undefined
   
-  var cookie_name: js.UndefOr[String] = js.native
+  var cookie_name: js.UndefOr[String] = js.undefined
   
-  var expose: js.UndefOr[Boolean] = js.native
+  var expose: js.UndefOr[Boolean] = js.undefined
   
-  var expose_add_class: js.UndefOr[String] = js.native
+  var expose_add_class: js.UndefOr[String] = js.undefined
   
-  var exposed: js.UndefOr[js.Array[String]] = js.native
+  var exposed: js.UndefOr[js.Array[String]] = js.undefined
   
-  var keyboard: js.UndefOr[Boolean] = js.native
+  var keyboard: js.UndefOr[Boolean] = js.undefined
   
-  var modal: js.UndefOr[Boolean] = js.native
+  var modal: js.UndefOr[Boolean] = js.undefined
   
-  var next_button: js.UndefOr[Boolean] = js.native
+  var next_button: js.UndefOr[Boolean] = js.undefined
   
-  var nub_position: js.UndefOr[String] = js.native
+  var nub_position: js.UndefOr[String] = js.undefined
   
-  var pause_after: js.UndefOr[js.Array[Double]] = js.native
+  var pause_after: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var post_expose_callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var post_expose_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var post_ride_callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var post_ride_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var post_step_callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var post_step_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var pre_ride_callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var pre_ride_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var pre_step_callback: js.UndefOr[js.Function0[Unit]] = js.native
+  var pre_step_callback: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var prev_button: js.UndefOr[Boolean] = js.native
+  var prev_button: js.UndefOr[Boolean] = js.undefined
   
-  var scroll_animation: js.UndefOr[String] = js.native
+  var scroll_animation: js.UndefOr[String] = js.undefined
   
-  var scroll_speed: js.UndefOr[Double] = js.native
+  var scroll_speed: js.UndefOr[Double] = js.undefined
   
-  var start_offset: js.UndefOr[Double] = js.native
+  var start_offset: js.UndefOr[Double] = js.undefined
   
-  var start_timer_on_click: js.UndefOr[Boolean] = js.native
+  var start_timer_on_click: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[Button] = js.native
+  var template: js.UndefOr[Button] = js.undefined
   
-  var timer: js.UndefOr[Double] = js.native
+  var timer: js.UndefOr[Double] = js.undefined
   
-  var tip_animation: js.UndefOr[String] = js.native
+  var tip_animation: js.UndefOr[String] = js.undefined
   
-  var tip_animation_fade_speed: js.UndefOr[Double] = js.native
+  var tip_animation_fade_speed: js.UndefOr[Double] = js.undefined
   
-  var tip_container: js.UndefOr[String] = js.native
+  var tip_container: js.UndefOr[String] = js.undefined
   
-  var tip_location: js.UndefOr[String] = js.native
+  var tip_location: js.UndefOr[String] = js.undefined
   
-  var tip_location_patterns: js.UndefOr[Bottom] = js.native
+  var tip_location_patterns: js.UndefOr[Bottom] = js.undefined
 }
 object JoyrideOptions {
   

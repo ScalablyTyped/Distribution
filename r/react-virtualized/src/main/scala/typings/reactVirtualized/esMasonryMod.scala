@@ -14,10 +14,13 @@ import typings.reactVirtualized.esCellMeasurerMod.MeasuredCellParent
 import typings.reactVirtualized.mod.IndexRange
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esMasonryMod {
+  
+  @JSImport("react-virtualized/dist/es/Masonry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("react-virtualized/dist/es/Masonry", "DEFAULT_SCROLLING_RESET_TIME_INTERVAL")
   @js.native
@@ -54,29 +57,26 @@ object esMasonryMod {
     @scala.inline
     def defaultProps_=(x: KeyMapper): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
     
-    @JSImport("react-virtualized/dist/es/Masonry", "Masonry.getDerivedStateFromProps")
-    @js.native
-    def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = js.native
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: MasonryProps, prevState: MasonryState): MasonryState | Null = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[MasonryState | Null]
   }
   
-  @JSImport("react-virtualized/dist/es/Masonry", "createCellPositioner")
-  @js.native
-  def createCellPositioner(params: createCellPositionerParams): Positioner = js.native
+  @scala.inline
+  def createCellPositioner(params: createCellPositionerParams): Positioner = ^.asInstanceOf[js.Dynamic].applyDynamic("createCellPositioner")(params.asInstanceOf[js.Any]).asInstanceOf[Positioner]
   
   type CellRenderer = js.Function1[/* props */ MasonryCellProps, ReactNode]
   
-  @js.native
   trait MasonryCellProps extends StObject {
     
-    var index: Double = js.native
+    var index: Double
     
-    var isScrolling: Boolean = js.native
+    var isScrolling: Boolean
     
-    var key: Key = js.native
+    var key: Key
     
-    var parent: MeasuredCellParent = js.native
+    var parent: MeasuredCellParent
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
   }
   object MasonryCellProps {
     
@@ -109,9 +109,9 @@ object esMasonryMod {
     }
   }
   
-  @js.native
   trait MasonryProps
-    extends /**
+    extends StObject
+       with /**
     * PLEASE NOTE
     * The [key: string]: any; line is here on purpose
     * This is due to the need of force re-render of PureComponent
@@ -120,39 +120,39 @@ object esMasonryMod {
     */
   /* key */ StringDictionary[js.Any] {
     
-    var autoHeight: Boolean = js.native
+    var autoHeight: Boolean
     
-    var cellCount: Double = js.native
+    var cellCount: Double
     
-    var cellMeasurerCache: CellMeasurerCacheInterface = js.native
+    var cellMeasurerCache: CellMeasurerCacheInterface
     
-    var cellPositioner: Positioner = js.native
+    var cellPositioner: Positioner
     
-    var cellRenderer: CellRenderer = js.native
+    var cellRenderer: CellRenderer
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var keyMapper: js.UndefOr[typings.reactVirtualized.esCellMeasurerMod.KeyMapper] = js.native
+    var keyMapper: js.UndefOr[typings.reactVirtualized.esCellMeasurerMod.KeyMapper] = js.undefined
     
-    var onCellsRendered: js.UndefOr[OnCellsRenderedCallback] = js.native
+    var onCellsRendered: js.UndefOr[OnCellsRenderedCallback] = js.undefined
     
-    var onScroll: js.UndefOr[OnScrollCallback] = js.native
+    var onScroll: js.UndefOr[OnScrollCallback] = js.undefined
     
-    var overscanByPixels: js.UndefOr[Double] = js.native
+    var overscanByPixels: js.UndefOr[Double] = js.undefined
     
-    var role: js.UndefOr[String] = js.native
+    var role: js.UndefOr[String] = js.undefined
     
-    var scrollingResetTimeInterval: js.UndefOr[Double] = js.native
+    var scrollingResetTimeInterval: js.UndefOr[Double] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double | Null] = js.native
+    var tabIndex: js.UndefOr[Double | Null] = js.undefined
     
-    var width: Double = js.native
+    var width: Double
   }
   object MasonryProps {
     
@@ -259,12 +259,11 @@ object esMasonryMod {
     }
   }
   
-  @js.native
   trait MasonryState extends StObject {
     
-    var isScrolling: Boolean = js.native
+    var isScrolling: Boolean
     
-    var scrollTop: Double = js.native
+    var scrollTop: Double
   }
   object MasonryState {
     
@@ -289,12 +288,11 @@ object esMasonryMod {
   
   type OnScrollCallback = js.Function1[/* params */ ClientHeight, Unit]
   
-  @js.native
   trait Position extends StObject {
     
-    var left: Double = js.native
+    var left: Double
     
-    var top: Double = js.native
+    var top: Double
   }
   object Position {
     
@@ -315,18 +313,17 @@ object esMasonryMod {
     }
   }
   
-  type Positioner = (js.Function1[/* index */ Double, Position]) with Reset
+  type Positioner = (js.Function1[/* index */ Double, Position]) & Reset
   
-  @js.native
   trait createCellPositionerParams extends StObject {
     
-    var cellMeasurerCache: CellMeasurerCacheInterface = js.native
+    var cellMeasurerCache: CellMeasurerCacheInterface
     
-    var columnCount: Double = js.native
+    var columnCount: Double
     
-    var columnWidth: Double = js.native
+    var columnWidth: Double
     
-    var spacer: js.UndefOr[Double] = js.native
+    var spacer: js.UndefOr[Double] = js.undefined
   }
   object createCellPositionerParams {
     
@@ -362,14 +359,13 @@ object esMasonryMod {
   
   type noop = js.Function0[Unit]
   
-  @js.native
   trait resetParams extends StObject {
     
-    var columnCount: Double = js.native
+    var columnCount: Double
     
-    var columnWidth: Double = js.native
+    var columnWidth: Double
     
-    var spacer: js.UndefOr[Double] = js.native
+    var spacer: js.UndefOr[Double] = js.undefined
   }
   object resetParams {
     

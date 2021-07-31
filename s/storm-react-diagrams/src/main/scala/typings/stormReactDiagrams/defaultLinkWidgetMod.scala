@@ -15,7 +15,6 @@ import typings.stormReactDiagrams.pathFindingMod.default
 import typings.stormReactDiagrams.pointModelMod.PointModel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object defaultLinkWidgetMod {
@@ -74,20 +73,21 @@ object defaultLinkWidgetMod {
     def defaultProps_=(x: DefaultLinkProps): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("defaultProps")(x.asInstanceOf[js.Any])
   }
   
-  @js.native
-  trait DefaultLinkProps extends BaseWidgetProps {
+  trait DefaultLinkProps
+    extends StObject
+       with BaseWidgetProps {
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var diagramEngine: DiagramEngine = js.native
+    var diagramEngine: DiagramEngine
     
-    var link: DefaultLinkModel = js.native
+    var link: DefaultLinkModel
     
-    var pointAdded: js.UndefOr[js.Function2[/* point */ PointModel, /* event */ MouseEvent, _]] = js.native
+    var pointAdded: js.UndefOr[js.Function2[/* point */ PointModel, /* event */ MouseEvent, js.Any]] = js.undefined
     
-    var smooth: js.UndefOr[Boolean] = js.native
+    var smooth: js.UndefOr[Boolean] = js.undefined
     
-    var width: js.UndefOr[Double] = js.native
+    var width: js.UndefOr[Double] = js.undefined
   }
   object DefaultLinkProps {
     
@@ -113,7 +113,7 @@ object defaultLinkWidgetMod {
       def setLink(value: DefaultLinkModel): Self = StObject.set(x, "link", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setPointAdded(value: (/* point */ PointModel, /* event */ MouseEvent) => _): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
+      def setPointAdded(value: (/* point */ PointModel, /* event */ MouseEvent) => js.Any): Self = StObject.set(x, "pointAdded", js.Any.fromFunction2(value))
       
       @scala.inline
       def setPointAddedUndefined: Self = StObject.set(x, "pointAdded", js.undefined)
@@ -132,10 +132,9 @@ object defaultLinkWidgetMod {
     }
   }
   
-  @js.native
   trait DefaultLinkState extends StObject {
     
-    var selected: Boolean = js.native
+    var selected: Boolean
   }
   object DefaultLinkState {
     

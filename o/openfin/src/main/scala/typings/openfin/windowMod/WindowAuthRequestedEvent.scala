@@ -4,13 +4,13 @@ import typings.openfin.anon.Host
 import typings.openfin.eventsBaseMod.WindowEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait WindowAuthRequestedEvent[Topic, Type] extends WindowEvent[Topic, Type] {
+trait WindowAuthRequestedEvent[Topic, Type]
+  extends StObject
+     with WindowEvent[Topic, Type] {
   
-  var authInfo: Host = js.native
+  var authInfo: Host
 }
 object WindowAuthRequestedEvent {
   
@@ -22,7 +22,7 @@ object WindowAuthRequestedEvent {
   }
   
   @scala.inline
-  implicit class WindowAuthRequestedEventMutableBuilder[Self <: WindowAuthRequestedEvent[_, _], Topic, Type] (val x: Self with (WindowAuthRequestedEvent[Topic, Type])) extends AnyVal {
+  implicit class WindowAuthRequestedEventMutableBuilder[Self <: WindowAuthRequestedEvent[?, ?], Topic, Type] (val x: Self & (WindowAuthRequestedEvent[Topic, Type])) extends AnyVal {
     
     @scala.inline
     def setAuthInfo(value: Host): Self = StObject.set(x, "authInfo", value.asInstanceOf[js.Any])

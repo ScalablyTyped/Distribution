@@ -4,29 +4,29 @@ import typings.std.AsyncIterator
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("callback-to-async-iterator", JSImport.Default)
+  @JSImport("callback-to-async-iterator", JSImport.Namespace)
   @js.native
-  def default[T, R](listener: js.Function1[/* callback */ js.Function1[/* message */ T, Unit], js.Promise[R]]): AsyncIterator[T, _, js.UndefOr[scala.Nothing]] = js.native
-  @JSImport("callback-to-async-iterator", JSImport.Default)
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T, R](listener: js.Function1[/* callback */ js.Function1[/* message */ T, Unit], js.Promise[R]]): AsyncIterator[T, js.Any, Unit] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(listener.asInstanceOf[js.Any]).asInstanceOf[AsyncIterator[T, js.Any, Unit]]
+  @scala.inline
   def default[T, R](
     listener: js.Function1[/* callback */ js.Function1[/* message */ T, Unit], js.Promise[R]],
     options: AsyncifyOptions[T, R]
-  ): AsyncIterator[T, _, js.UndefOr[scala.Nothing]] = js.native
+  ): AsyncIterator[T, js.Any, Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(listener.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[AsyncIterator[T, js.Any, Unit]]
   
-  @js.native
   trait AsyncifyOptions[T, R] extends StObject {
     
-    var buffering: js.UndefOr[Boolean] = js.native
+    var buffering: js.UndefOr[Boolean] = js.undefined
     
-    var onClose: js.UndefOr[js.Function1[/* arg */ R, Unit | T]] = js.native
+    var onClose: js.UndefOr[js.Function1[/* arg */ R, Unit | T]] = js.undefined
     
-    var onError: js.UndefOr[js.Function0[Error]] = js.native
+    var onError: js.UndefOr[js.Function0[Error]] = js.undefined
   }
   object AsyncifyOptions {
     
@@ -37,7 +37,7 @@ object mod {
     }
     
     @scala.inline
-    implicit class AsyncifyOptionsMutableBuilder[Self <: AsyncifyOptions[_, _], T, R] (val x: Self with (AsyncifyOptions[T, R])) extends AnyVal {
+    implicit class AsyncifyOptionsMutableBuilder[Self <: AsyncifyOptions[?, ?], T, R] (val x: Self & (AsyncifyOptions[T, R])) extends AnyVal {
       
       @scala.inline
       def setBuffering(value: Boolean): Self = StObject.set(x, "buffering", value.asInstanceOf[js.Any])

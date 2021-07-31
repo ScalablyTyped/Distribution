@@ -2,57 +2,55 @@ package typings.preact.jsxCsstypeMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Viewport[TLength] extends StObject {
   
-  var OOrientation: js.UndefOr[ViewportOrientationProperty] = js.native
+  var OOrientation: js.UndefOr[ViewportOrientationProperty] = js.undefined
   
-  var height: js.UndefOr[ViewportHeightProperty[TLength]] = js.native
+  var height: js.UndefOr[ViewportHeightProperty[TLength]] = js.undefined
   
-  var maxHeight: js.UndefOr[ViewportMaxHeightProperty[TLength]] = js.native
+  var maxHeight: js.UndefOr[ViewportMaxHeightProperty[TLength]] = js.undefined
   
-  var maxWidth: js.UndefOr[ViewportMaxWidthProperty[TLength]] = js.native
+  var maxWidth: js.UndefOr[ViewportMaxWidthProperty[TLength]] = js.undefined
   
-  var maxZoom: js.UndefOr[ViewportMaxZoomProperty] = js.native
+  var maxZoom: js.UndefOr[ViewportMaxZoomProperty] = js.undefined
   
-  var minHeight: js.UndefOr[ViewportMinHeightProperty[TLength]] = js.native
+  var minHeight: js.UndefOr[ViewportMinHeightProperty[TLength]] = js.undefined
   
-  var minWidth: js.UndefOr[ViewportMinWidthProperty[TLength]] = js.native
+  var minWidth: js.UndefOr[ViewportMinWidthProperty[TLength]] = js.undefined
   
-  var minZoom: js.UndefOr[ViewportMinZoomProperty] = js.native
+  var minZoom: js.UndefOr[ViewportMinZoomProperty] = js.undefined
   
-  var msHeight: js.UndefOr[ViewportHeightProperty[TLength]] = js.native
+  var msHeight: js.UndefOr[ViewportHeightProperty[TLength]] = js.undefined
   
-  var msMaxHeight: js.UndefOr[ViewportMaxHeightProperty[TLength]] = js.native
+  var msMaxHeight: js.UndefOr[ViewportMaxHeightProperty[TLength]] = js.undefined
   
-  var msMaxWidth: js.UndefOr[ViewportMaxWidthProperty[TLength]] = js.native
+  var msMaxWidth: js.UndefOr[ViewportMaxWidthProperty[TLength]] = js.undefined
   
-  var msMaxZoom: js.UndefOr[ViewportMaxZoomProperty] = js.native
+  var msMaxZoom: js.UndefOr[ViewportMaxZoomProperty] = js.undefined
   
-  var msMinHeight: js.UndefOr[ViewportMinHeightProperty[TLength]] = js.native
+  var msMinHeight: js.UndefOr[ViewportMinHeightProperty[TLength]] = js.undefined
   
-  var msMinWidth: js.UndefOr[ViewportMinWidthProperty[TLength]] = js.native
+  var msMinWidth: js.UndefOr[ViewportMinWidthProperty[TLength]] = js.undefined
   
-  var msMinZoom: js.UndefOr[ViewportMinZoomProperty] = js.native
+  var msMinZoom: js.UndefOr[ViewportMinZoomProperty] = js.undefined
   
-  var msOrientation: js.UndefOr[ViewportOrientationProperty] = js.native
+  var msOrientation: js.UndefOr[ViewportOrientationProperty] = js.undefined
   
-  var msUserZoom: js.UndefOr[ViewportUserZoomProperty] = js.native
+  var msUserZoom: js.UndefOr[ViewportUserZoomProperty] = js.undefined
   
-  var msWidth: js.UndefOr[ViewportWidthProperty[TLength]] = js.native
+  var msWidth: js.UndefOr[ViewportWidthProperty[TLength]] = js.undefined
   
-  var msZoom: js.UndefOr[ViewportZoomProperty] = js.native
+  var msZoom: js.UndefOr[ViewportZoomProperty] = js.undefined
   
-  var orientation: js.UndefOr[ViewportOrientationProperty] = js.native
+  var orientation: js.UndefOr[ViewportOrientationProperty] = js.undefined
   
-  var userZoom: js.UndefOr[ViewportUserZoomProperty] = js.native
+  var userZoom: js.UndefOr[ViewportUserZoomProperty] = js.undefined
   
-  var width: js.UndefOr[ViewportWidthProperty[TLength]] = js.native
+  var width: js.UndefOr[ViewportWidthProperty[TLength]] = js.undefined
   
-  var zoom: js.UndefOr[ViewportZoomProperty] = js.native
+  var zoom: js.UndefOr[ViewportZoomProperty] = js.undefined
 }
 object Viewport {
   
@@ -63,7 +61,7 @@ object Viewport {
   }
   
   @scala.inline
-  implicit class ViewportMutableBuilder[Self <: Viewport[_], TLength] (val x: Self with Viewport[TLength]) extends AnyVal {
+  implicit class ViewportMutableBuilder[Self <: Viewport[?], TLength] (val x: Self & Viewport[TLength]) extends AnyVal {
     
     @scala.inline
     def setHeight(value: ViewportHeightProperty[TLength]): Self = StObject.set(x, "height", value.asInstanceOf[js.Any])

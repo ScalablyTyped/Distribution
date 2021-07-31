@@ -8,11 +8,12 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TileLayer extends Layer {
+trait TileLayer
+  extends StObject
+     with Layer {
   
   /**
     * 获取当前图层所有切片号
@@ -33,15 +34,14 @@ trait TileLayer extends Layer {
 }
 object TileLayer {
   
-  @js.native
   trait EventMap extends StObject {
     
-    var complete: Event_[typings.amapJsApi.amapJsApiStrings.complete, js.UndefOr[scala.Nothing]] = js.native
+    var complete: Event_[typings.amapJsApi.amapJsApiStrings.complete, Unit]
   }
   object EventMap {
     
     @scala.inline
-    def apply(complete: Event_[complete, js.UndefOr[scala.Nothing]]): EventMap = {
+    def apply(complete: Event_[complete, Unit]): EventMap = {
       val __obj = js.Dynamic.literal(complete = complete.asInstanceOf[js.Any])
       __obj.asInstanceOf[EventMap]
     }
@@ -50,20 +50,20 @@ object TileLayer {
     implicit class EventMapMutableBuilder[Self <: EventMap] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setComplete(value: Event_[complete, js.UndefOr[scala.Nothing]]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
+      def setComplete(value: Event_[complete, Unit]): Self = StObject.set(x, "complete", value.asInstanceOf[js.Any])
     }
   }
   
   object Flexible {
     
-    @js.native
     trait Options
-      extends typings.amapJsApi.AMap.TileLayer.Options {
+      extends StObject
+         with typings.amapJsApi.AMap.TileLayer.Options {
       
       /**
         * 内存中缓存的切片的数量上限
         */
-      var cacheSize: js.UndefOr[Double] = js.native
+      var cacheSize: js.UndefOr[Double] = js.undefined
       
       /**
         * 创建切片回调
@@ -82,12 +82,12 @@ object TileLayer {
               /* fail */ js.Function0[Unit], 
               Unit
             ]
-          ] = js.native
+          ] = js.undefined
       
       /**
         * 是否显示
         */
-      var visible: js.UndefOr[Boolean] = js.native
+      var visible: js.UndefOr[Boolean] = js.undefined
     }
     object Options {
       
@@ -124,51 +124,51 @@ object TileLayer {
   }
   type Flexible = TileLayer
   
-  @js.native
   trait Options
-    extends typings.amapJsApi.AMap.Layer.Options {
+    extends StObject
+       with typings.amapJsApi.AMap.Layer.Options {
     
     /**
       * 是否在高清屏下进行清晰度适配
       */
-    var detectRetina: js.UndefOr[Boolean] = js.native
+    var detectRetina: js.UndefOr[Boolean] = js.undefined
     
     /**
       * 取图错误时的代替地址
       */
-    var errorUrl: js.UndefOr[String] = js.native
+    var errorUrl: js.UndefOr[String] = js.undefined
     
     /**
       * 获取图块取图地址
       */
     var getTileUrl: js.UndefOr[
         String | (js.Function3[/* x */ Double, /* y */ Double, /* level */ Double, String])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * 图层的透明度
       */
-    var opacity: js.UndefOr[Double] = js.native
+    var opacity: js.UndefOr[Double] = js.undefined
     
     /**
       * 切片大小
       */
-    var tileSize: js.UndefOr[Double] = js.native
+    var tileSize: js.UndefOr[Double] = js.undefined
     
     /**
       * 切片取图地址(自1.3版本起，该属性与getTileUrl属性合并)
       */
-    var tileUrl: js.UndefOr[String] = js.native
+    var tileUrl: js.UndefOr[String] = js.undefined
     
     /**
       * 图层叠加的顺序值
       */
-    var zIndex: js.UndefOr[Double] = js.native
+    var zIndex: js.UndefOr[Double] = js.undefined
     
     /**
       * 支持的缩放级别范围
       */
-    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.native
+    var zooms: js.UndefOr[js.Tuple2[Double, Double]] = js.undefined
   }
   object Options {
     
@@ -246,19 +246,19 @@ object TileLayer {
   
   object Traffic {
     
-    @js.native
     trait Options
-      extends typings.amapJsApi.AMap.TileLayer.Options {
+      extends StObject
+         with typings.amapJsApi.AMap.TileLayer.Options {
       
       /**
         * 是否设置可以自动刷新实时路况信息
         */
-      var autoRefresh: js.UndefOr[Boolean] = js.native
+      var autoRefresh: js.UndefOr[Boolean] = js.undefined
       
       /**
         * 设置刷新间隔时长
         */
-      var interval: js.UndefOr[Double] = js.native
+      var interval: js.UndefOr[Double] = js.undefined
     }
     object Options {
       
@@ -288,7 +288,9 @@ object TileLayer {
   type Traffic = TileLayer
   
   @js.native
-  trait WMS extends TileLayer {
+  trait WMS
+    extends StObject
+       with TileLayer {
     
     /**
       * 返回OGC标准的WMS getMap接口的参数
@@ -314,24 +316,24 @@ object TileLayer {
   }
   object WMS {
     
-    @js.native
     trait Options
-      extends typings.amapJsApi.AMap.TileLayer.Flexible.Options {
+      extends StObject
+         with typings.amapJsApi.AMap.TileLayer.Flexible.Options {
       
       /**
         * 地图级别切换时，不同级别的图片是否进行混合
         */
-      var blend: js.UndefOr[Boolean] = js.native
+      var blend: js.UndefOr[Boolean] = js.undefined
       
       /**
         * OGC标准的WMS地图服务的GetMap接口的参数
         */
-      var params: Params = js.native
+      var params: Params
       
       /**
         * wms服务的url地址
         */
-      var url: String = js.native
+      var url: String
     }
     object Options {
       
@@ -358,26 +360,25 @@ object TileLayer {
       }
     }
     
-    @js.native
     trait Params extends StObject {
       
-      var BGCOLOR: js.UndefOr[String] = js.native
+      var BGCOLOR: js.UndefOr[String] = js.undefined
       
-      var ELEVATION: js.UndefOr[String] = js.native
+      var ELEVATION: js.UndefOr[String] = js.undefined
       
-      var EXCEPTIONS: js.UndefOr[String] = js.native
+      var EXCEPTIONS: js.UndefOr[String] = js.undefined
       
-      var FORMAT: js.UndefOr[String] = js.native
+      var FORMAT: js.UndefOr[String] = js.undefined
       
-      var LAYERS: js.UndefOr[String] = js.native
+      var LAYERS: js.UndefOr[String] = js.undefined
       
-      var STYLES: js.UndefOr[String] = js.native
+      var STYLES: js.UndefOr[String] = js.undefined
       
-      var TIME: js.UndefOr[String] = js.native
+      var TIME: js.UndefOr[String] = js.undefined
       
-      var TRANSPARENT: js.UndefOr[TRUE | FALSE] = js.native
+      var TRANSPARENT: js.UndefOr[TRUE | FALSE] = js.undefined
       
-      var VERSION: js.UndefOr[String] = js.native
+      var VERSION: js.UndefOr[String] = js.undefined
     }
     object Params {
       
@@ -448,7 +449,9 @@ object TileLayer {
   }
   
   @js.native
-  trait WMTS extends TileLayer {
+  trait WMTS
+    extends StObject
+       with TileLayer {
     
     /**
       * 返回OGC标准的WMTS getTile接口的参数
@@ -474,24 +477,24 @@ object TileLayer {
   }
   object WMTS {
     
-    @js.native
     trait Options
-      extends typings.amapJsApi.AMap.TileLayer.Flexible.Options {
+      extends StObject
+         with typings.amapJsApi.AMap.TileLayer.Flexible.Options {
       
       /**
         * 地图级别切换时，不同级别的图片是否进行混合
         */
-      var blend: js.UndefOr[Boolean] = js.native
+      var blend: js.UndefOr[Boolean] = js.undefined
       
       /**
         * OGC标准的WMTS地图服务的GetTile接口的参数
         */
-      var params: typings.amapJsApi.AMap.TileLayer.WMTS.Params = js.native
+      var params: typings.amapJsApi.AMap.TileLayer.WMTS.Params
       
       /**
         * wmts服务的url地址
         */
-      var url: String = js.native
+      var url: String
     }
     object Options {
       
@@ -518,16 +521,15 @@ object TileLayer {
       }
     }
     
-    @js.native
     trait Params extends StObject {
       
-      var Format: js.UndefOr[String] = js.native
+      var Format: js.UndefOr[String] = js.undefined
       
-      var Layer: js.UndefOr[String] = js.native
+      var Layer: js.UndefOr[String] = js.undefined
       
-      var Style: js.UndefOr[String] = js.native
+      var Style: js.UndefOr[String] = js.undefined
       
-      var Version: js.UndefOr[String] = js.native
+      var Version: js.UndefOr[String] = js.undefined
     }
     object Params {
       

@@ -2,21 +2,19 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArrayCollisionMatrix extends StObject {
   
-  def get(i: Double, j: Double): Double = js.native
+  def get(i: Double, j: Double): Double
   
-  var matrix: js.Array[Mat3] = js.native
+  var matrix: js.Array[Mat3]
   
-  def reset(): Unit = js.native
+  def reset(): Unit
   
-  def set(i: Double, j: Double, value: Double): Unit = js.native
+  def set(i: Double, j: Double, value: Double): Unit
   
-  def setNumObjects(n: Double): Unit = js.native
+  def setNumObjects(n: Double): Unit
 }
 object ArrayCollisionMatrix {
   

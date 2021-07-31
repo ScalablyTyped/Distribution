@@ -2,29 +2,27 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchCharRange...
   */
-@js.native
 trait ISearchCharRange extends StObject {
   
   /**
     * Length of the match in the search result.
     */
-  var qCharCount: Double = js.native
+  var qCharCount: Double
   
   /**
     * Starting position of the match in the search result, starting from 0.
     */
-  var qCharPos: Double = js.native
+  var qCharPos: Double
   
   /**
     * Position of the term in the list of search terms, starting from 0.
     */
-  var qTerm: Double = js.native
+  var qTerm: Double
 }
 object ISearchCharRange {
   

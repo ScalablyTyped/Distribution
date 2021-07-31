@@ -2,16 +2,14 @@ package typings.three.webXRMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XRHitTestResult extends StObject {
   
   // When anchor system is enabled
-  var createAnchor: js.UndefOr[js.Function1[/* pose */ XRRigidTransform, js.Promise[XRAnchor]]] = js.native
+  var createAnchor: js.UndefOr[js.Function1[/* pose */ XRRigidTransform, js.Promise[XRAnchor]]] = js.undefined
   
-  def getPose(baseSpace: XRSpace): js.UndefOr[XRPose | Null] = js.native
+  def getPose(baseSpace: XRSpace): js.UndefOr[XRPose | Null]
 }
 object XRHitTestResult {
   

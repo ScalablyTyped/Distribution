@@ -33,7 +33,6 @@ import typings.std.RegExp
 import typings.std.Symbol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object global {
@@ -44,24 +43,20 @@ object global {
     * @param action Function that contains the code to teardown your specs.
     * @param timeout Custom timeout for an async afterAll
     */
-  @JSGlobal("afterAll")
-  @js.native
-  def afterAll(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.native
-  @JSGlobal("afterAll")
-  @js.native
-  def afterAll(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = js.native
+  @scala.inline
+  def afterAll(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.Dynamic.global.applyDynamic("afterAll")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterAll(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("afterAll")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Run some shared teardown after each of the specs in the describe in which it is called.
     * @param action Function that contains the code to teardown your specs.
     * @param timeout Custom timeout for an async afterEach.
     */
-  @JSGlobal("afterEach")
-  @js.native
-  def afterEach(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.native
-  @JSGlobal("afterEach")
-  @js.native
-  def afterEach(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = js.native
+  @scala.inline
+  def afterEach(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def afterEach(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("afterEach")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Run some shared setup once before all of the specs in the describe are run.
@@ -69,59 +64,50 @@ object global {
     * @param action Function that contains the code to setup your specs.
     * @param timeout Custom timeout for an async beforeAll.
     */
-  @JSGlobal("beforeAll")
-  @js.native
-  def beforeAll(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.native
-  @JSGlobal("beforeAll")
-  @js.native
-  def beforeAll(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = js.native
+  @scala.inline
+  def beforeAll(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.Dynamic.global.applyDynamic("beforeAll")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeAll(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("beforeAll")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Run some shared setup before each of the specs in the describe in which it is called.
     * @param action Function that contains the code to setup your specs.
     * @param timeout Custom timeout for an async beforeEach.
     */
-  @JSGlobal("beforeEach")
-  @js.native
-  def beforeEach(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.native
-  @JSGlobal("beforeEach")
-  @js.native
-  def beforeEach(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = js.native
+  @scala.inline
+  def beforeEach(action: typings.jasmine.jasmine.ImplementationCallback): Unit = js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def beforeEach(action: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("beforeEach")(action.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create a group of specs (often called a suite).
     * @param description Textual description of the group
     * @param specDefinitions Function for Jasmine to invoke that will define inner suites a specs
     */
-  @JSGlobal("describe")
-  @js.native
-  def describe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def describe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("describe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Create an expectation for a spec.
     */
-  @JSGlobal("expect")
-  @js.native
-  def expect(): NothingMatcher = js.native
+  @scala.inline
+  def expect(): NothingMatcher = js.Dynamic.global.applyDynamic("expect")().asInstanceOf[NothingMatcher]
   /**
     * Create an expectation for a spec.
     * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual
     */
-  @JSGlobal("expect")
-  @js.native
-  def expect[T](actual: ArrayLike[T]): ArrayLikeMatchers[T] = js.native
+  @scala.inline
+  def expect[T](actual: ArrayLike[T]): ArrayLikeMatchers[T] = js.Dynamic.global.applyDynamic("expect")(actual.asInstanceOf[js.Any]).asInstanceOf[ArrayLikeMatchers[T]]
   /**
     * Create an expectation for a spec.
     * @checkReturnValue see https://tsetse.info/check-return-value
     * @param spy
     */
-  @JSGlobal("expect")
-  @js.native
-  def expect[T /* <: Func */](spy: T): FunctionMatchers[T] = js.native
-  @JSGlobal("expect")
-  @js.native
-  def expect[T /* <: Func */](spy: Spy[T]): FunctionMatchers[T] = js.native
+  @scala.inline
+  def expect[T /* <: Func */](spy: T): FunctionMatchers[T] = js.Dynamic.global.applyDynamic("expect")(spy.asInstanceOf[js.Any]).asInstanceOf[FunctionMatchers[T]]
+  @scala.inline
+  def expect[T /* <: Func */](spy: Spy[T]): FunctionMatchers[T] = js.Dynamic.global.applyDynamic("expect")(spy.asInstanceOf[js.Any]).asInstanceOf[FunctionMatchers[T]]
   
   /**
     * Create an asynchronous expectation for a spec. Note that the matchers
@@ -131,41 +117,35 @@ object global {
     * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual Actual computed value to test expectations against.
     */
-  @JSGlobal("expectAsync")
-  @js.native
-  def expectAsync[T, U](actual: T): AsyncMatchers[T, U] = js.native
-  @JSGlobal("expectAsync")
-  @js.native
-  def expectAsync[T, U](actual: js.Thenable[T]): AsyncMatchers[T, U] = js.native
+  @scala.inline
+  def expectAsync[T, U](actual: T): AsyncMatchers[T, U] = js.Dynamic.global.applyDynamic("expectAsync")(actual.asInstanceOf[js.Any]).asInstanceOf[AsyncMatchers[T, U]]
+  @scala.inline
+  def expectAsync[T, U](actual: js.Thenable[T]): AsyncMatchers[T, U] = js.Dynamic.global.applyDynamic("expectAsync")(actual.asInstanceOf[js.Any]).asInstanceOf[AsyncMatchers[T, U]]
   
   /**
     * Create an expectation for a spec.
     * @checkReturnValue see https://tsetse.info/check-return-value
     * @param actual Actual computed value to test expectations against.
     */
-  @JSGlobal("expect")
-  @js.native
-  def expect_T_Matchers[T](actual: T): Matchers[T] = js.native
+  @scala.inline
+  def expect_T_Matchers[T](actual: T): Matchers[T] = js.Dynamic.global.applyDynamic("expect")(actual.asInstanceOf[js.Any]).asInstanceOf[Matchers[T]]
   
   /**
     * Explicitly mark a spec as failed.
     * @param e Reason for the failure
     */
-  @JSGlobal("fail")
-  @js.native
-  def fail(): Unit = js.native
-  @JSGlobal("fail")
-  @js.native
-  def fail(e: js.Any): Unit = js.native
+  @scala.inline
+  def fail(): Unit = js.Dynamic.global.applyDynamic("fail")().asInstanceOf[Unit]
+  @scala.inline
+  def fail(e: js.Any): Unit = js.Dynamic.global.applyDynamic("fail")(e.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * A focused `describe`. If suites or specs are focused, only those that are focused will be executed.
     * @param description Textual description of the group
     * @param specDefinitions Function for Jasmine to invoke that will define inner suites a specs
     */
-  @JSGlobal("fdescribe")
-  @js.native
-  def fdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def fdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("fdescribe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * A focused `it`. If suites or specs are focused, only those that are focused will be executed.
@@ -173,19 +153,14 @@ object global {
     * @param assertion Function that contains the code of your test. If not provided the test will be pending.
     * @param timeout Custom timeout for an async spec.
     */
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String): Unit = js.native
-  @JSGlobal("fit")
-  @js.native
-  def fit(
-    expectation: String,
-    assertion: js.UndefOr[typings.jasmine.jasmine.ImplementationCallback],
-    timeout: Double
-  ): Unit = js.native
-  @JSGlobal("fit")
-  @js.native
-  def fit(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback): Unit = js.native
+  @scala.inline
+  def fit(expectation: String): Unit = js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def fit(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("fit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Define a single spec. A spec should contain one or more expectations that test the state of the code.
@@ -194,19 +169,14 @@ object global {
     * @param assertion Function that contains the code of your test. If not provided the test will be pending.
     * @param timeout Custom timeout for an async spec.
     */
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String): Unit = js.native
-  @JSGlobal("it")
-  @js.native
-  def it(
-    expectation: String,
-    assertion: js.UndefOr[typings.jasmine.jasmine.ImplementationCallback],
-    timeout: Double
-  ): Unit = js.native
-  @JSGlobal("it")
-  @js.native
-  def it(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback): Unit = js.native
+  @scala.inline
+  def it(expectation: String): Unit = js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def it(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("it")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   object jasmine {
     
@@ -223,9 +193,8 @@ object global {
     @scala.inline
     def DEFAULT_TIMEOUT_INTERVAL_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("DEFAULT_TIMEOUT_INTERVAL")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("jasmine.DiffBuilder")
-    @js.native
-    def DiffBuilder(): typings.jasmine.jasmine.DiffBuilder = js.native
+    @scala.inline
+    def DiffBuilder(): typings.jasmine.jasmine.DiffBuilder = ^.asInstanceOf[js.Dynamic].applyDynamic("DiffBuilder")().asInstanceOf[typings.jasmine.jasmine.DiffBuilder]
     
     @JSGlobal("jasmine.HtmlReporter")
     @js.native
@@ -270,13 +239,11 @@ object global {
     @scala.inline
     def MAX_PRETTY_PRINT_DEPTH_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("MAX_PRETTY_PRINT_DEPTH")(x.asInstanceOf[js.Any])
     
-    @JSGlobal("jasmine.addAsyncMatchers")
-    @js.native
-    def addAsyncMatchers(matchers: CustomAsyncMatcherFactories): Unit = js.native
+    @scala.inline
+    def addAsyncMatchers(matchers: CustomAsyncMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addAsyncMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("jasmine.addCustomEqualityTester")
-    @js.native
-    def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = js.native
+    @scala.inline
+    def addCustomEqualityTester(equalityTester: CustomEqualityTester): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomEqualityTester")(equalityTester.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * Add a custom object formatter for the current scope of specs.
@@ -284,119 +251,97 @@ object global {
       * @since 3.6.0
       * @see https://jasmine.github.io/tutorials/custom_object_formatters
       */
-    @JSGlobal("jasmine.addCustomObjectFormatter")
-    @js.native
-    def addCustomObjectFormatter(formatter: CustomObjectFormatter): Unit = js.native
+    @scala.inline
+    def addCustomObjectFormatter(formatter: CustomObjectFormatter): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addCustomObjectFormatter")(formatter.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("jasmine.addMatchers")
-    @js.native
-    def addMatchers(matchers: CustomMatcherFactories): Unit = js.native
+    @scala.inline
+    def addMatchers(matchers: CustomMatcherFactories): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("addMatchers")(matchers.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
     /**
       * That will succeed if the actual value being compared is an instance of the specified class/constructor.
       */
-    @JSGlobal("jasmine.any")
-    @js.native
-    def any(aclass: Constructor): AsymmetricMatcher[_] = js.native
-    @JSGlobal("jasmine.any")
-    @js.native
-    def any(aclass: Symbol): AsymmetricMatcher[_] = js.native
+    @scala.inline
+    def any(aclass: Constructor): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[js.Any]]
+    @scala.inline
+    def any(aclass: Symbol): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("any")(aclass.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[js.Any]]
     
     /**
       * That will succeed if the actual value being compared is not `null` and not `undefined`.
       */
-    @JSGlobal("jasmine.anything")
-    @js.native
-    def anything(): AsymmetricMatcher[_] = js.native
+    @scala.inline
+    def anything(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("anything")().asInstanceOf[AsymmetricMatcher[js.Any]]
     
-    @JSGlobal("jasmine.arrayContaining")
-    @js.native
-    def arrayContaining[T](sample: typings.jasmine.jasmine.ArrayLike[T]): ArrayContaining[T] = js.native
+    @scala.inline
+    def arrayContaining[T](sample: typings.jasmine.jasmine.ArrayLike[T]): ArrayContaining[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining[T]]
     
-    @JSGlobal("jasmine.arrayWithExactContents")
-    @js.native
-    def arrayWithExactContents[T](sample: typings.jasmine.jasmine.ArrayLike[T]): ArrayContaining[T] = js.native
+    @scala.inline
+    def arrayWithExactContents[T](sample: typings.jasmine.jasmine.ArrayLike[T]): ArrayContaining[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("arrayWithExactContents")(sample.asInstanceOf[js.Any]).asInstanceOf[ArrayContaining[T]]
     
-    @JSGlobal("jasmine.clock")
-    @js.native
-    def clock(): Clock = js.native
+    @scala.inline
+    def clock(): Clock = ^.asInstanceOf[js.Dynamic].applyDynamic("clock")().asInstanceOf[Clock]
     
-    @JSGlobal("jasmine.createSpy")
-    @js.native
-    def createSpy[Fn /* <: Func */](): Spy[Fn] = js.native
-    @JSGlobal("jasmine.createSpy")
-    @js.native
-    def createSpy[Fn /* <: Func */](name: js.UndefOr[scala.Nothing], originalFn: Fn): Spy[Fn] = js.native
-    @JSGlobal("jasmine.createSpy")
-    @js.native
-    def createSpy[Fn /* <: Func */](name: String): Spy[Fn] = js.native
-    @JSGlobal("jasmine.createSpy")
-    @js.native
-    def createSpy[Fn /* <: Func */](name: String, originalFn: Fn): Spy[Fn] = js.native
+    @scala.inline
+    def createSpy[Fn /* <: Func */](): Spy[Fn] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")().asInstanceOf[Spy[Fn]]
+    @scala.inline
+    def createSpy[Fn /* <: Func */](name: String): Spy[Fn] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any]).asInstanceOf[Spy[Fn]]
+    @scala.inline
+    def createSpy[Fn /* <: Func */](name: String, originalFn: Fn): Spy[Fn] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy[Fn]]
+    @scala.inline
+    def createSpy[Fn /* <: Func */](name: Unit, originalFn: Fn): Spy[Fn] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpy")(name.asInstanceOf[js.Any], originalFn.asInstanceOf[js.Any])).asInstanceOf[Spy[Fn]]
     
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj(baseName: String, methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]]): js.Any = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj(
-      baseName: String,
-      methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]],
-      propertyNames: SpyObjPropertyNames[js.UndefOr[scala.Nothing]]
-    ): js.Any = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj(methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]]): js.Any = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj(
-      methodNames: SpyObjMethodNames[js.UndefOr[scala.Nothing]],
-      propertyNames: SpyObjPropertyNames[js.UndefOr[scala.Nothing]]
-    ): js.Any = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj_T_SpyObj[T](baseName: String, methodNames: SpyObjMethodNames[T]): SpyObj[T] = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj_T_SpyObj[T](baseName: String, methodNames: SpyObjMethodNames[T], propertyNames: SpyObjPropertyNames[T]): SpyObj[T] = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj_T_SpyObj[T](methodNames: SpyObjMethodNames[T]): SpyObj[T] = js.native
-    @JSGlobal("jasmine.createSpyObj")
-    @js.native
-    def createSpyObj_T_SpyObj[T](methodNames: SpyObjMethodNames[T], propertyNames: SpyObjPropertyNames[T]): SpyObj[T] = js.native
+    @scala.inline
+    def createSpyObj(baseName: String, methodNames: SpyObjMethodNames[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def createSpyObj(baseName: String, methodNames: SpyObjMethodNames[Unit], propertyNames: SpyObjPropertyNames[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def createSpyObj(methodNames: SpyObjMethodNames[Unit]): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+    @scala.inline
+    def createSpyObj(methodNames: SpyObjMethodNames[Unit], propertyNames: SpyObjPropertyNames[Unit]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def createSpyObj_T_SpyObj[T](baseName: String, methodNames: SpyObjMethodNames[T]): SpyObj[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any])).asInstanceOf[SpyObj[T]]
+    @scala.inline
+    def createSpyObj_T_SpyObj[T](baseName: String, methodNames: SpyObjMethodNames[T], propertyNames: SpyObjPropertyNames[T]): SpyObj[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(baseName.asInstanceOf[js.Any], methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[SpyObj[T]]
+    @scala.inline
+    def createSpyObj_T_SpyObj[T](methodNames: SpyObjMethodNames[T]): SpyObj[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any]).asInstanceOf[SpyObj[T]]
+    @scala.inline
+    def createSpyObj_T_SpyObj[T](methodNames: SpyObjMethodNames[T], propertyNames: SpyObjPropertyNames[T]): SpyObj[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("createSpyObj")(methodNames.asInstanceOf[js.Any], propertyNames.asInstanceOf[js.Any])).asInstanceOf[SpyObj[T]]
     
     /**
       * That will succeed if the actual value being compared is empty.
       * @since 3.1.0
       */
-    @JSGlobal("jasmine.empty")
-    @js.native
-    def empty(): AsymmetricMatcher[_] = js.native
+    @scala.inline
+    def empty(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("empty")().asInstanceOf[AsymmetricMatcher[js.Any]]
     
     object errors {
       
       @JSGlobal("jasmine.errors.ExpectationFailed")
       @js.native
       class ExpectationFailed ()
-        extends typings.jasmine.jasmine.errors.ExpectationFailed
+        extends StObject
+           with typings.jasmine.jasmine.errors.ExpectationFailed {
+        
+        /* CompleteClass */
+        var message: String = js.native
+        
+        /* CompleteClass */
+        var name: String = js.native
+      }
     }
     
     /**
       * That will succeed if the actual value being compared is  `null`, `undefined`, `0`, `false` or anything falsey.
       * @since 3.1.0
       */
-    @JSGlobal("jasmine.falsy")
-    @js.native
-    def falsy(): AsymmetricMatcher[_] = js.native
+    @scala.inline
+    def falsy(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("falsy")().asInstanceOf[AsymmetricMatcher[js.Any]]
     
-    @JSGlobal("jasmine.formatErrorMsg")
-    @js.native
-    def formatErrorMsg(domain: String, usage: String): js.Function1[/* msg */ String, String] = js.native
+    @scala.inline
+    def formatErrorMsg(domain: String, usage: String): js.Function1[/* msg */ String, String] = (^.asInstanceOf[js.Dynamic].applyDynamic("formatErrorMsg")(domain.asInstanceOf[js.Any], usage.asInstanceOf[js.Any])).asInstanceOf[js.Function1[/* msg */ String, String]]
     
-    @JSGlobal("jasmine.getEnv")
-    @js.native
-    def getEnv(): Env = js.native
+    @scala.inline
+    def getEnv(): Env = ^.asInstanceOf[js.Dynamic].applyDynamic("getEnv")().asInstanceOf[Env]
     
     @JSGlobal("jasmine.matchersUtil")
     @js.native
@@ -408,40 +353,33 @@ object global {
       * That will succeed if the actual value being compared is not empty.
       * @since 3.1.0
       */
-    @JSGlobal("jasmine.notEmpty")
-    @js.native
-    def notEmpty(): AsymmetricMatcher[_] = js.native
+    @scala.inline
+    def notEmpty(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("notEmpty")().asInstanceOf[AsymmetricMatcher[js.Any]]
     
-    @JSGlobal("jasmine.objectContaining")
-    @js.native
+    @scala.inline
     def objectContaining[T](
       sample: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ K in keyof T ]:? jasmine.jasmine.ExpectedRecursive<T[K]>}
-      */ objectContaining_ with TopLevel[T]
-    ): ObjectContaining[T] = js.native
+      */ objectContaining_ & TopLevel[T]
+    ): ObjectContaining[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("objectContaining")(sample.asInstanceOf[js.Any]).asInstanceOf[ObjectContaining[T]]
     
-    @JSGlobal("jasmine.pp")
-    @js.native
-    def pp(value: js.Any): String = js.native
+    @scala.inline
+    def pp(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pp")(value.asInstanceOf[js.Any]).asInstanceOf[String]
     
-    @JSGlobal("jasmine.setDefaultSpyStrategy")
-    @js.native
-    def setDefaultSpyStrategy[Fn /* <: Func */](and: SpyAnd[Fn]): Unit = js.native
+    @scala.inline
+    def setDefaultSpyStrategy[Fn /* <: Func */](and: SpyAnd[Fn]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaultSpyStrategy")(and.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSGlobal("jasmine.stringMatching")
-    @js.native
-    def stringMatching(str: String): AsymmetricMatcher[String] = js.native
-    @JSGlobal("jasmine.stringMatching")
-    @js.native
-    def stringMatching(str: RegExp): AsymmetricMatcher[String] = js.native
+    @scala.inline
+    def stringMatching(str: String): AsymmetricMatcher[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[String]]
+    @scala.inline
+    def stringMatching(str: RegExp): AsymmetricMatcher[String] = ^.asInstanceOf[js.Dynamic].applyDynamic("stringMatching")(str.asInstanceOf[js.Any]).asInstanceOf[AsymmetricMatcher[String]]
     
     /**
       * That will succeed if the actual value being compared is `true` or anything truthy.
       * @since 3.1.0
       */
-    @JSGlobal("jasmine.truthy")
-    @js.native
-    def truthy(): AsymmetricMatcher[_] = js.native
+    @scala.inline
+    def truthy(): AsymmetricMatcher[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("truthy")().asInstanceOf[AsymmetricMatcher[js.Any]]
   }
   
   /**
@@ -449,53 +387,48 @@ object global {
     * If you call the function pending anywhere in the spec body, no matter the expectations, the spec will be marked pending.
     * @param reason Reason the spec is pending.
     */
-  @JSGlobal("pending")
-  @js.native
-  def pending(): Unit = js.native
-  @JSGlobal("pending")
-  @js.native
-  def pending(reason: String): Unit = js.native
+  @scala.inline
+  def pending(): Unit = js.Dynamic.global.applyDynamic("pending")().asInstanceOf[Unit]
+  @scala.inline
+  def pending(reason: String): Unit = js.Dynamic.global.applyDynamic("pending")(reason.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSGlobal("runs")
-  @js.native
-  def runs(asyncMethod: js.Function): Unit = js.native
+  @scala.inline
+  def runs(asyncMethod: js.Function): Unit = js.Dynamic.global.applyDynamic("runs")(asyncMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   /**
     * Sets a user-defined property that will be provided to reporters as
     * part of the properties field of SpecResult.
     * @since 3.6.0
     */
-  @JSGlobal("setSpecProperty")
-  @js.native
-  def setSpecProperty(key: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def setSpecProperty(key: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("setSpecProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Sets a user-defined property that will be provided to reporters as
     * part of the properties field of SuiteResult.
     * @since 3.6.0
     */
-  @JSGlobal("setSuiteProperty")
-  @js.native
-  def setSuiteProperty(key: String, value: js.Any): Unit = js.native
+  @scala.inline
+  def setSuiteProperty(key: String, value: js.Any): Unit = (js.Dynamic.global.applyDynamic("setSuiteProperty")(key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * Install a spy onto an existing object.
     * @param object The object upon which to install the `Spy`.
     * @param method The name of the method to replace with a `Spy`.
     */
-  @JSGlobal("spyOn")
-  @js.native
+  @scala.inline
   def spyOn[T, K /* <: /* keyof T */ String */](`object`: T, method: K): Spy[
-    (js.Function1[/* args */ _, _]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
-  ] = js.native
+    (js.Function1[/* args */ js.Any, js.Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
+  ] = (js.Dynamic.global.applyDynamic("spyOn")(`object`.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[Spy[
+    (js.Function1[/* args */ js.Any, js.Any]) | (/* import warning: importer.ImportType#apply Failed type conversion: T[K] */ js.Any)
+  ]]
   
   /**
     * Installs spies on all writable and configurable properties of an object.
     * @param object The object upon which to install the `Spy`s.
     */
-  @JSGlobal("spyOnAllFunctions")
-  @js.native
-  def spyOnAllFunctions[T](`object`: T): SpyObj[T] = js.native
+  @scala.inline
+  def spyOnAllFunctions[T](`object`: T): SpyObj[T] = js.Dynamic.global.applyDynamic("spyOnAllFunctions")(`object`.asInstanceOf[js.Any]).asInstanceOf[SpyObj[T]]
   
   /**
     * Install a spy on a property installed with `Object.defineProperty` onto an existing object.
@@ -503,44 +436,36 @@ object global {
     * @param property The name of the property to replace with a `Spy`.
     * @param accessType The access type (get|set) of the property to `Spy` on.
     */
-  @JSGlobal("spyOnProperty")
-  @js.native
-  def spyOnProperty[T](`object`: T, property: /* keyof T */ String): Spy[Func] = js.native
-  @JSGlobal("spyOnProperty")
-  @js.native
-  def spyOnProperty_get[T](`object`: T, property: /* keyof T */ String, accessType: get): Spy[Func] = js.native
-  @JSGlobal("spyOnProperty")
-  @js.native
-  def spyOnProperty_set[T](`object`: T, property: /* keyof T */ String, accessType: set): Spy[Func] = js.native
+  @scala.inline
+  def spyOnProperty[T](`object`: T, property: /* keyof T */ String): Spy[Func] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any])).asInstanceOf[Spy[Func]]
   
-  @JSGlobal("waits")
-  @js.native
-  def waits(): Unit = js.native
-  @JSGlobal("waits")
-  @js.native
-  def waits(timeout: Double): Unit = js.native
+  @scala.inline
+  def spyOnProperty_get[T](`object`: T, property: /* keyof T */ String, accessType: get): Spy[Func] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[Spy[Func]]
   
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean]): Unit = js.native
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: js.UndefOr[scala.Nothing], timeout: Double): Unit = js.native
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String): Unit = js.native
-  @JSGlobal("waitsFor")
-  @js.native
-  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String, timeout: Double): Unit = js.native
+  @scala.inline
+  def spyOnProperty_set[T](`object`: T, property: /* keyof T */ String, accessType: set): Spy[Func] = (js.Dynamic.global.applyDynamic("spyOnProperty")(`object`.asInstanceOf[js.Any], property.asInstanceOf[js.Any], accessType.asInstanceOf[js.Any])).asInstanceOf[Spy[Func]]
+  
+  @scala.inline
+  def waits(): Unit = js.Dynamic.global.applyDynamic("waits")().asInstanceOf[Unit]
+  @scala.inline
+  def waits(timeout: Double): Unit = js.Dynamic.global.applyDynamic("waits")(timeout.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean]): Unit = js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: String, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def waitsFor(latchMethod: js.Function0[Boolean], failureMessage: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("waitsFor")(latchMethod.asInstanceOf[js.Any], failureMessage.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * A temporarily disabled `describe`. Specs within an xdescribe will be marked pending and not executed.
     * @param description Textual description of the group
     * @param specDefinitions Function for Jasmine to invoke that will define inner suites a specs
     */
-  @JSGlobal("xdescribe")
-  @js.native
-  def xdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def xdescribe(description: String, specDefinitions: js.Function0[Unit]): Unit = (js.Dynamic.global.applyDynamic("xdescribe")(description.asInstanceOf[js.Any], specDefinitions.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /**
     * A temporarily disabled `it`. The spec will report as pending and will not be executed.
@@ -548,17 +473,12 @@ object global {
     * @param assertion Function that contains the code of your test. If not provided the test will be pending.
     * @param timeout Custom timeout for an async spec.
     */
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String): Unit = js.native
-  @JSGlobal("xit")
-  @js.native
-  def xit(
-    expectation: String,
-    assertion: js.UndefOr[typings.jasmine.jasmine.ImplementationCallback],
-    timeout: Double
-  ): Unit = js.native
-  @JSGlobal("xit")
-  @js.native
-  def xit(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback): Unit = js.native
+  @scala.inline
+  def xit(expectation: String): Unit = js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: Unit, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def xit(expectation: String, assertion: typings.jasmine.jasmine.ImplementationCallback, timeout: Double): Unit = (js.Dynamic.global.applyDynamic("xit")(expectation.asInstanceOf[js.Any], assertion.asInstanceOf[js.Any], timeout.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

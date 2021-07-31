@@ -2,17 +2,15 @@ package typings.requirejs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // todo: not sure what to do with this guy
-@js.native
 trait RequireModule extends StObject {
   
   /**
     *
     **/
-  def config(): js.Object = js.native
+  def config(): js.Object
 }
 object RequireModule {
   

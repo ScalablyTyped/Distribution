@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.Instantiable2
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object fastTextEncoding {
@@ -38,10 +37,9 @@ object fastTextEncoding {
   /**
     * Options for TextDecoder constructor.
     */
-  @js.native
   trait TextDecoderOptions extends StObject {
     
-    var fatal: Boolean = js.native
+    var fatal: Boolean
   }
   object TextDecoderOptions {
     
@@ -79,10 +77,9 @@ object fastTextEncoding {
   /**
     * Options for `TextDecoder.decode` and `TextEncoder.encode`.
     */
-  @js.native
   trait TextEncodingOptions extends StObject {
     
-    var stream: Boolean = js.native
+    var stream: Boolean
   }
   object TextEncodingOptions {
     

@@ -4,14 +4,13 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object errorMod {
   
-  @js.native
   trait ExtendedError
-    extends Error
+    extends StObject
+       with Error
        with /* key */ StringDictionary[js.Any]
   object ExtendedError {
     

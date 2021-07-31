@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.ActivityGetRepoSubscriptionResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersActivityGetRepoSubscriptionEndpoint extends StObject {
   
-  var parameters: ActivityGetRepoSubscriptionEndpoint = js.native
+  var parameters: ActivityGetRepoSubscriptionEndpoint
   
-  var request: ActivityGetRepoSubscriptionRequestOptions = js.native
+  var request: ActivityGetRepoSubscriptionRequestOptions
   
-  var response: OctokitResponse[ActivityGetRepoSubscriptionResponseData] = js.native
+  var response: OctokitResponse[ActivityGetRepoSubscriptionResponseData]
 }
 object ParametersActivityGetRepoSubscriptionEndpoint {
   

@@ -3,38 +3,38 @@ package typings.bpmnModdle.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BaseElement extends TypeDerived {
+trait BaseElement
+  extends StObject
+     with TypeDerived {
   
   /**
     * Attributes that aren't defined by the BPMN Spec such
     * as Camunda properties
     */
   @JSName("$attrs")
-  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var $attrs: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * Documentation for the element
     */
-  var documentation: js.UndefOr[js.Array[Documentation]] = js.native
+  var documentation: js.UndefOr[js.Array[Documentation]] = js.undefined
   
   /**
     * Reference to the extension definitions for this element
     */
-  var extensionDefinitions: js.UndefOr[js.Array[ExtensionDefinition]] = js.native
+  var extensionDefinitions: js.UndefOr[js.Array[ExtensionDefinition]] = js.undefined
   
   /**
     * Extension Elements
     */
-  var extensionElements: js.UndefOr[ExtensionElements] = js.native
+  var extensionElements: js.UndefOr[ExtensionElements] = js.undefined
   
   /**
     * Is the primary Id of the element
     */
-  var id: String = js.native
+  var id: String
 }
 object BaseElement {
   

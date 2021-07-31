@@ -3,20 +3,18 @@ package typings.maximMazurokGapiClientCalendar.anon
 import typings.maximMazurokGapiClientCalendar.gapi.client.calendar.EventReminder
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Overrides extends StObject {
   
   /**
     * If the event doesn't use the default reminders, this lists the reminders specific to the event, or, if not set, indicates that no reminders are set for this event. The maximum
     * number of override reminders is 5.
     */
-  var overrides: js.UndefOr[js.Array[EventReminder]] = js.native
+  var overrides: js.UndefOr[js.Array[EventReminder]] = js.undefined
   
   /** Whether the default reminders of the calendar apply to the event. */
-  var useDefault: js.UndefOr[Boolean] = js.native
+  var useDefault: js.UndefOr[Boolean] = js.undefined
 }
 object Overrides {
   

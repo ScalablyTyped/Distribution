@@ -2,56 +2,54 @@ package typings.awsSdk.iotMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeDomainConfigurationResponse extends StObject {
   
   /**
     * An object that specifies the authorization service for a domain.
     */
-  var authorizerConfig: js.UndefOr[AuthorizerConfig] = js.native
+  var authorizerConfig: js.UndefOr[AuthorizerConfig] = js.undefined
   
   /**
     * The ARN of the domain configuration.
     */
-  var domainConfigurationArn: js.UndefOr[DomainConfigurationArn] = js.native
+  var domainConfigurationArn: js.UndefOr[DomainConfigurationArn] = js.undefined
   
   /**
     * The name of the domain configuration.
     */
-  var domainConfigurationName: js.UndefOr[ReservedDomainConfigurationName] = js.native
+  var domainConfigurationName: js.UndefOr[ReservedDomainConfigurationName] = js.undefined
   
   /**
     * A Boolean value that specifies the current state of the domain configuration.
     */
-  var domainConfigurationStatus: js.UndefOr[DomainConfigurationStatus] = js.native
+  var domainConfigurationStatus: js.UndefOr[DomainConfigurationStatus] = js.undefined
   
   /**
     * The name of the domain.
     */
-  var domainName: js.UndefOr[DomainName] = js.native
+  var domainName: js.UndefOr[DomainName] = js.undefined
   
   /**
     * The type of the domain.
     */
-  var domainType: js.UndefOr[DomainType] = js.native
+  var domainType: js.UndefOr[DomainType] = js.undefined
   
   /**
     * The date and time the domain configuration's status was last changed.
     */
-  var lastStatusChangeDate: js.UndefOr[DateType] = js.native
+  var lastStatusChangeDate: js.UndefOr[DateType] = js.undefined
   
   /**
     * A list containing summary information about the server certificate included in the domain configuration.
     */
-  var serverCertificates: js.UndefOr[ServerCertificates] = js.native
+  var serverCertificates: js.UndefOr[ServerCertificates] = js.undefined
   
   /**
     * The type of service delivered by the endpoint.
     */
-  var serviceType: js.UndefOr[ServiceType] = js.native
+  var serviceType: js.UndefOr[ServiceType] = js.undefined
 }
 object DescribeDomainConfigurationResponse {
   

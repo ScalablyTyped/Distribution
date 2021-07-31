@@ -4,7 +4,6 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.reactNative.anon.EaseInEaseOut
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -30,9 +29,9 @@ trait LayoutAnimationStatic extends StObject {
   
   /** Helper for creating a config for configureNext. */
   def create(duration: Double): LayoutAnimationConfig = js.native
-  def create(duration: Double, `type`: js.UndefOr[scala.Nothing], creationProp: String): LayoutAnimationConfig = js.native
   def create(duration: Double, `type`: String): LayoutAnimationConfig = js.native
   def create(duration: Double, `type`: String, creationProp: String): LayoutAnimationConfig = js.native
+  def create(duration: Double, `type`: Unit, creationProp: String): LayoutAnimationConfig = js.native
   
   def easeInEaseOut(): Unit = js.native
   def easeInEaseOut(onAnimationDidEnd: js.Function0[Unit]): Unit = js.native

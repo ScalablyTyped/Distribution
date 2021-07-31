@@ -6,43 +6,43 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceOnboardingListcategoryvolumes extends StandardParameters {
+trait ParamsResourceOnboardingListcategoryvolumes
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * List of category ids requested.
     */
-  var categoryId: js.UndefOr[js.Array[String]] = js.native
+  var categoryId: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * ISO-639-1 language and ISO-3166-1 country code. Default is en-US if
     * unset.
     */
-  var locale: js.UndefOr[String] = js.native
+  var locale: js.UndefOr[String] = js.undefined
   
   /**
     * The maximum allowed maturity rating of returned volumes. Books with a
     * higher maturity rating are filtered out.
     */
-  var maxAllowedMaturityRating: js.UndefOr[String] = js.native
+  var maxAllowedMaturityRating: js.UndefOr[String] = js.undefined
   
   /**
     * Number of maximum results per page to be included in the response.
     */
-  var pageSize: js.UndefOr[Double] = js.native
+  var pageSize: js.UndefOr[Double] = js.undefined
   
   /**
     * The value of the nextToken from the previous page.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceOnboardingListcategoryvolumes {
   

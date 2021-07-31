@@ -5,17 +5,15 @@ import typings.jointjs.mod.attributes.SVGAttributes
 import typings.jointjs.mod.attributes.SVGRectAttributes
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextBlockSelectors extends StObject {
   
-  var body: js.UndefOr[SVGRectAttributes] = js.native
+  var body: js.UndefOr[SVGRectAttributes] = js.undefined
   
-  var label: js.UndefOr[Style] = js.native
+  var label: js.UndefOr[Style] = js.undefined
   
-  var root: js.UndefOr[SVGAttributes] = js.native
+  var root: js.UndefOr[SVGAttributes] = js.undefined
 }
 object TextBlockSelectors {
   

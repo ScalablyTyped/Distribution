@@ -6,11 +6,12 @@ import typings.arcgisJsApi.arcgisJsApiStrings.asc_
 import typings.arcgisJsApi.arcgisJsApiStrings.desc_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait FeatureTable extends Widget_ {
+trait FeatureTable
+  extends StObject
+     with Widget_ {
   
   /**
     * Indicates whether to display the `Attachments` field in the table.

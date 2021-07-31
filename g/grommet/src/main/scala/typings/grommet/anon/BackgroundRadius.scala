@@ -2,15 +2,13 @@ package typings.grommet.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BackgroundRadius extends StObject {
   
-  var background: js.UndefOr[`3`] = js.native
+  var background: js.UndefOr[`3`] = js.undefined
   
-  var radius: js.UndefOr[String] = js.native
+  var radius: js.UndefOr[String] = js.undefined
 }
 object BackgroundRadius {
   

@@ -2,7 +2,6 @@ package typings.sequelize.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //
@@ -14,7 +13,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 /**
   * Options used for Instance.increment method
   */
-@js.native
 trait InstanceIncrementDecrementOptions extends StObject {
   
   /**
@@ -22,22 +20,22 @@ trait InstanceIncrementDecrementOptions extends StObject {
     *
     * Defaults to 1
     */
-  var by: js.UndefOr[Double] = js.native
+  var by: js.UndefOr[Double] = js.undefined
   
   /**
     * A function that gets executed while running the query to log the sql.
     */
-  var logging: js.UndefOr[Boolean | js.Function] = js.native
+  var logging: js.UndefOr[Boolean | js.Function] = js.undefined
   
   /**
     * Transaction to run query under
     */
-  var transaction: js.UndefOr[Transaction] = js.native
+  var transaction: js.UndefOr[Transaction] = js.undefined
   
   /**
     * A hash of attributes to describe your search. See above for examples.
     */
-  var where: js.UndefOr[AnyWhereOptions | (js.Array[col | and | or | String])] = js.native
+  var where: js.UndefOr[AnyWhereOptions | (js.Array[col | and | or | String])] = js.undefined
 }
 object InstanceIncrementDecrementOptions {
   

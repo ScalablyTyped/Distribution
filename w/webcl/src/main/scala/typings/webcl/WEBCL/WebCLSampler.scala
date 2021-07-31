@@ -2,16 +2,14 @@ package typings.webcl.WEBCL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // 3.7
-@js.native
 trait WebCLSampler extends StObject {
   
-  def getInfo(name: SamplerInfo): js.Any = js.native
+  def getInfo(name: SamplerInfo): js.Any
   
-  def release(): Unit = js.native
+  def release(): Unit
 }
 object WebCLSampler {
   

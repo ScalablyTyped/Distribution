@@ -2,25 +2,23 @@ package typings.googleapis.datastoreV1Mod.datastoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The result of fetching an entity from Datastore.
   */
-@js.native
 trait SchemaEntityResult extends StObject {
   
   /**
     * A cursor that points to the position after the result entity. Set only
     * when the `EntityResult` is part of a `QueryResultBatch` message.
     */
-  var cursor: js.UndefOr[String] = js.native
+  var cursor: js.UndefOr[String] = js.undefined
   
   /**
     * The resulting entity.
     */
-  var entity: js.UndefOr[SchemaEntity] = js.native
+  var entity: js.UndefOr[SchemaEntity] = js.undefined
   
   /**
     * The version of the entity, a strictly positive number that monotonically
@@ -29,7 +27,7 @@ trait SchemaEntityResult extends StObject {
     * version of the snapshot that was used to look up the entity, and it is
     * always set except for eventually consistent reads.
     */
-  var version: js.UndefOr[String] = js.native
+  var version: js.UndefOr[String] = js.undefined
 }
 object SchemaEntityResult {
   

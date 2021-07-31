@@ -12,28 +12,27 @@ import typings.astTypes.kindsMod.TSTypeParameterInstantiationKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent ast-types.ast-types/types.Omit<ast-types.ast-types/gen/namedTypes.namedTypes.TSType, 'type'> */
 /* Inlined parent ast-types.ast-types/gen/namedTypes.namedTypes.TSHasOptionalTypeParameterInstantiation */
-@js.native
 trait TSExpressionWithTypeArguments
-  extends ASTNode
+  extends StObject
+     with ASTNode
      with NodeKind
      with PrintableKind
      with TSHasOptionalTypeParameterInstantiationKind
      with TSTypeKind {
   
-  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.native
+  var comments: js.UndefOr[js.Array[CommentKind] | Null] = js.undefined
   
-  var expression: IdentifierKind | TSQualifiedNameKind = js.native
+  var expression: IdentifierKind | TSQualifiedNameKind
   
-  var loc: js.UndefOr[SourceLocationKind | Null] = js.native
+  var loc: js.UndefOr[SourceLocationKind | Null] = js.undefined
   
-  var `type`: typings.astTypes.astTypesStrings.TSExpressionWithTypeArguments = js.native
+  var `type`: typings.astTypes.astTypesStrings.TSExpressionWithTypeArguments
   
-  var typeParameters: js.UndefOr[TSTypeParameterInstantiationKind | Null] = js.native
+  var typeParameters: js.UndefOr[TSTypeParameterInstantiationKind | Null] = js.undefined
 }
 object TSExpressionWithTypeArguments {
   

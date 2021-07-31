@@ -11,7 +11,6 @@ import typings.officeJs.officeJsStrings.Elbow
 import typings.officeJs.officeJsStrings.Straight
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -21,7 +20,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * [Api set: ExcelApi 1.9]
   */
 @js.native
-trait ShapeCollection extends ClientObject {
+trait ShapeCollection
+  extends StObject
+     with ClientObject {
   
   /**
     * Adds a geometric shape to the worksheet. Returns a Shape object that represents the new shape.
@@ -128,7 +129,7 @@ trait ShapeCollection extends ClientObject {
     * @param options Provides options for which properties of the object to load.
     */
   def load(): ShapeCollection = js.native
-  def load(options: ShapeCollectionLoadOptions with CollectionLoadOptions): ShapeCollection = js.native
+  def load(options: ShapeCollectionLoadOptions & CollectionLoadOptions): ShapeCollection = js.native
   def load(propertyNamesAndPaths: LoadOption): ShapeCollection = js.native
   def load(propertyNames: String): ShapeCollection = js.native
   def load(propertyNames: js.Array[String]): ShapeCollection = js.native

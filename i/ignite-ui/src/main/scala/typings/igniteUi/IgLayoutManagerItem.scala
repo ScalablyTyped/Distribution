@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgLayoutManagerItem
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,39 +16,39 @@ trait IgLayoutManagerItem
     * Column index of the item in the grid
     *
     */
-  var colIndex: js.UndefOr[Double] = js.native
+  var colIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * ColSpan of the item
     *
     */
-  var colSpan: js.UndefOr[Double] = js.native
+  var colSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets individual item height, either in px or percentage
     *                         string The default height can be set in pixels (px), %, em and other units.
     *
     */
-  var height: js.UndefOr[String] = js.native
+  var height: js.UndefOr[String] = js.undefined
   
   /**
     * Row index of the item in the grid
     *
     */
-  var rowIndex: js.UndefOr[Double] = js.native
+  var rowIndex: js.UndefOr[Double] = js.undefined
   
   /**
     * RowSpan of the item
     *
     */
-  var rowSpan: js.UndefOr[Double] = js.native
+  var rowSpan: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets/Sets individual item width, either in px or percentage
     *                         string The default width can be set in pixels (px), %, em and other units.
     *
     */
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object IgLayoutManagerItem {
   

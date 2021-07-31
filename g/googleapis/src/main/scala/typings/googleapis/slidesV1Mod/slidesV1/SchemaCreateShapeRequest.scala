@@ -2,19 +2,17 @@ package typings.googleapis.slidesV1Mod.slidesV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Creates a new shape.
   */
-@js.native
 trait SchemaCreateShapeRequest extends StObject {
   
   /**
     * The element properties for the shape.
     */
-  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.native
+  var elementProperties: js.UndefOr[SchemaPageElementProperties] = js.undefined
   
   /**
     * A user-supplied object ID.  If you specify an ID, it must be unique among
@@ -25,12 +23,12 @@ trait SchemaCreateShapeRequest extends StObject {
     * must not be less than 5 or greater than 50. If empty, a unique identifier
     * will be generated.
     */
-  var objectId: js.UndefOr[String] = js.native
+  var objectId: js.UndefOr[String] = js.undefined
   
   /**
     * The shape type.
     */
-  var shapeType: js.UndefOr[String] = js.native
+  var shapeType: js.UndefOr[String] = js.undefined
 }
 object SchemaCreateShapeRequest {
   

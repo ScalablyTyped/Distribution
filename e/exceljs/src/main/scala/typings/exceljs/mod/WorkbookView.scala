@@ -2,25 +2,23 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookView extends StObject {
   
-  var activeTab: Double = js.native
+  var activeTab: Double
   
-  var firstSheet: Double = js.native
+  var firstSheet: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var visibility: String = js.native
+  var visibility: String
   
-  var width: Double = js.native
+  var width: Double
   
-  var x: Double = js.native
+  var x: Double
   
-  var y: Double = js.native
+  var y: Double
 }
 object WorkbookView {
   

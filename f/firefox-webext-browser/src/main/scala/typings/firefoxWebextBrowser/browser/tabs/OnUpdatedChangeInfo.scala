@@ -2,54 +2,52 @@ package typings.firefoxWebextBrowser.browser.tabs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Lists the changes to the state of the tab that was updated. */
-@js.native
 trait OnUpdatedChangeInfo extends StObject {
   
   /** The tab's new attention state. */
-  var attention: js.UndefOr[Boolean] = js.native
+  var attention: js.UndefOr[Boolean] = js.undefined
   
   /** The tab's new audible state. */
-  var audible: js.UndefOr[Boolean] = js.native
+  var audible: js.UndefOr[Boolean] = js.undefined
   
   /** True while the tab is not loaded with content. */
-  var discarded: js.UndefOr[Boolean] = js.native
+  var discarded: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The tab's new favicon URL. This property is only present if the extension's manifest includes the `"tabs"` permission.
     */
-  var favIconUrl: js.UndefOr[String] = js.native
+  var favIconUrl: js.UndefOr[String] = js.undefined
   
   /** The tab's new hidden state. */
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
   /** Whether the document in the tab can be rendered in reader mode. */
-  var isArticle: js.UndefOr[Boolean] = js.native
+  var isArticle: js.UndefOr[Boolean] = js.undefined
   
   /** The tab's new muted state and the reason for the change. */
-  var mutedInfo: js.UndefOr[MutedInfo] = js.native
+  var mutedInfo: js.UndefOr[MutedInfo] = js.undefined
   
   /** The tab's new pinned state. */
-  var pinned: js.UndefOr[Boolean] = js.native
+  var pinned: js.UndefOr[Boolean] = js.undefined
   
   /** The tab's new sharing state for screen, microphone and camera. */
-  var sharingState: js.UndefOr[SharingState] = js.native
+  var sharingState: js.UndefOr[SharingState] = js.undefined
   
   /** The status of the tab. Can be either _loading_ or _complete_. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
   
   /**
     * The title of the tab if it has changed. This property is only present if the extension's manifest includes the `"tabs"` permission.
     */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
   /**
     * The tab's URL if it has changed. This property is only present if the extension's manifest includes the `"tabs"` permission.
     */
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
 }
 object OnUpdatedChangeInfo {
   

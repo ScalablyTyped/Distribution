@@ -2,21 +2,19 @@ package typings.awsSdk.lambdaMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AddLayerVersionPermissionResponse extends StObject {
   
   /**
     * A unique identifier for the current revision of the policy.
     */
-  var RevisionId: js.UndefOr[String] = js.native
+  var RevisionId: js.UndefOr[String] = js.undefined
   
   /**
     * The permission statement.
     */
-  var Statement: js.UndefOr[String] = js.native
+  var Statement: js.UndefOr[String] = js.undefined
 }
 object AddLayerVersionPermissionResponse {
   

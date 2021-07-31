@@ -2,17 +2,17 @@ package typings.qlikVisualizationextensions.ExtensionAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ICustomNumber extends ICustomControl {
+trait ICustomNumber
+  extends StObject
+     with ICustomControl {
   
-  var defaultValue: Double = js.native
+  var defaultValue: Double
   
-  var max: Double = js.native
+  var max: Double
   
-  var min: Double = js.native
+  var min: Double
 }
 object ICustomNumber {
   

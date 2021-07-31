@@ -2,16 +2,16 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GitPullRequestChange extends GitChange {
+trait GitPullRequestChange
+  extends StObject
+     with GitChange {
   
   /**
     * ID used to track files through multiple changes.
     */
-  var changeTrackingId: Double = js.native
+  var changeTrackingId: Double
 }
 object GitPullRequestChange {
   

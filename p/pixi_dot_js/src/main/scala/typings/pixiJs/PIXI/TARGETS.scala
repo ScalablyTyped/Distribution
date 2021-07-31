@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -29,29 +28,47 @@ sealed trait TARGETS extends StObject
 object TARGETS extends StObject {
   
   @js.native
-  sealed trait TEXTURE_2D extends TARGETS
+  sealed trait TEXTURE_2D
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_2D_ARRAY extends TARGETS
+  sealed trait TEXTURE_2D_ARRAY
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_CUBE_MAP extends TARGETS
+  sealed trait TEXTURE_CUBE_MAP
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_X extends TARGETS
+  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_X
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Y extends TARGETS
+  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Y
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Z extends TARGETS
+  sealed trait TEXTURE_CUBE_MAP_NEGATIVE_Z
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_CUBE_MAP_POSITIVE_X extends TARGETS
+  sealed trait TEXTURE_CUBE_MAP_POSITIVE_X
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Y extends TARGETS
+  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Y
+    extends StObject
+       with TARGETS
   
   @js.native
-  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Z extends TARGETS
+  sealed trait TEXTURE_CUBE_MAP_POSITIVE_Z
+    extends StObject
+       with TARGETS
 }

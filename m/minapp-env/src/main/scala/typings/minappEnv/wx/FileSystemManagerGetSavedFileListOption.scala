@@ -2,20 +2,18 @@ package typings.minappEnv.wx
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileSystemManagerGetSavedFileListOption extends StObject {
   
   /** 接口调用结束的回调函数（调用成功、失败都会执行） */
-  var complete: js.UndefOr[FileSystemManagerGetSavedFileListCompleteCallback] = js.native
+  var complete: js.UndefOr[FileSystemManagerGetSavedFileListCompleteCallback] = js.undefined
   
   /** 接口调用失败的回调函数 */
-  var fail: js.UndefOr[FileSystemManagerGetSavedFileListFailCallback] = js.native
+  var fail: js.UndefOr[FileSystemManagerGetSavedFileListFailCallback] = js.undefined
   
   /** 接口调用成功的回调函数 */
-  var success: js.UndefOr[FileSystemManagerGetSavedFileListSuccessCallback] = js.native
+  var success: js.UndefOr[FileSystemManagerGetSavedFileListSuccessCallback] = js.undefined
 }
 object FileSystemManagerGetSavedFileListOption {
   

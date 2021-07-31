@@ -3,17 +3,15 @@ package typings.inboxsdk.mod.Conversations
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MessageAttachmentIconDescriptorBase extends StObject {
   
-  var iconClass: js.UndefOr[String] = js.native
+  var iconClass: js.UndefOr[String] = js.undefined
   
-  var onClick: js.UndefOr[js.Function0[Unit]] = js.native
+  var onClick: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var tooltip: String | HTMLElement = js.native
+  var tooltip: String | HTMLElement
 }
 object MessageAttachmentIconDescriptorBase {
   

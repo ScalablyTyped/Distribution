@@ -2,14 +2,16 @@ package typings.ionic
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object libIonitronMod {
   
-  @JSImport("ionic/lib/ionitron", "getIonitronString")
+  @JSImport("ionic/lib/ionitron", JSImport.Namespace)
   @js.native
-  def getIonitronString(quote: String): String = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getIonitronString(quote: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getIonitronString")(quote.asInstanceOf[js.Any]).asInstanceOf[String]
   
   object ionitronStatements {
     

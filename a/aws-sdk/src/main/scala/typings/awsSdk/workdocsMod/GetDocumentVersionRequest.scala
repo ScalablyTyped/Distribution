@@ -2,36 +2,34 @@ package typings.awsSdk.workdocsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetDocumentVersionRequest extends StObject {
   
   /**
     * Amazon WorkDocs authentication token. Not required when using AWS administrator credentials to access the API.
     */
-  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.native
+  var AuthenticationToken: js.UndefOr[AuthenticationHeaderType] = js.undefined
   
   /**
     * The ID of the document.
     */
-  var DocumentId: ResourceIdType = js.native
+  var DocumentId: ResourceIdType
   
   /**
     * A comma-separated list of values. Specify "SOURCE" to include a URL for the source document.
     */
-  var Fields: js.UndefOr[FieldNamesType] = js.native
+  var Fields: js.UndefOr[FieldNamesType] = js.undefined
   
   /**
     * Set this to TRUE to include custom metadata in the response.
     */
-  var IncludeCustomMetadata: js.UndefOr[BooleanType] = js.native
+  var IncludeCustomMetadata: js.UndefOr[BooleanType] = js.undefined
   
   /**
     * The version ID of the document.
     */
-  var VersionId: DocumentVersionIdType = js.native
+  var VersionId: DocumentVersionIdType
 }
 object GetDocumentVersionRequest {
   

@@ -2,21 +2,19 @@ package typings.i18next.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Modules extends StObject {
   
-  var backend: js.UndefOr[BackendModule[js.Object]] = js.native
+  var backend: js.UndefOr[BackendModule[js.Object]] = js.undefined
   
-  var external: js.Array[ThirdPartyModule] = js.native
+  var external: js.Array[ThirdPartyModule]
   
-  var i18nFormat: js.UndefOr[I18nFormatModule] = js.native
+  var i18nFormat: js.UndefOr[I18nFormatModule] = js.undefined
   
-  var languageDetector: js.UndefOr[LanguageDetectorModule | LanguageDetectorAsyncModule] = js.native
+  var languageDetector: js.UndefOr[LanguageDetectorModule | LanguageDetectorAsyncModule] = js.undefined
   
-  var logger: js.UndefOr[LoggerModule] = js.native
+  var logger: js.UndefOr[LoggerModule] = js.undefined
 }
 object Modules {
   

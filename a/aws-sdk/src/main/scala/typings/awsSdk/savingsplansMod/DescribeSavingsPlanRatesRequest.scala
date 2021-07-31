@@ -2,31 +2,29 @@ package typings.awsSdk.savingsplansMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeSavingsPlanRatesRequest extends StObject {
   
   /**
     * The filters.
     */
-  var filters: js.UndefOr[SavingsPlanRateFilterList] = js.native
+  var filters: js.UndefOr[SavingsPlanRateFilterList] = js.undefined
   
   /**
     * The maximum number of results to return with a single call. To retrieve additional results, make another call with the returned token value.
     */
-  var maxResults: js.UndefOr[MaxResults] = js.native
+  var maxResults: js.UndefOr[MaxResults] = js.undefined
   
   /**
     * The token for the next page of results.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * The ID of the Savings Plan.
     */
-  var savingsPlanId: SavingsPlanId = js.native
+  var savingsPlanId: SavingsPlanId
 }
 object DescribeSavingsPlanRatesRequest {
   

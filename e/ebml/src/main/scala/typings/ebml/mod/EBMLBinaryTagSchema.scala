@@ -2,14 +2,14 @@ package typings.ebml.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.ebml.mod.EBMLTagSchema because Already inherited */ @js.native
-trait EBMLBinaryTagSchema extends EBMLTagSchemaBase {
+- typings.ebml.mod.EBMLTagSchema because Already inherited */ trait EBMLBinaryTagSchema
+  extends StObject
+     with EBMLTagSchemaBase {
   
-  var bytesize: js.UndefOr[Double] = js.native
+  var bytesize: js.UndefOr[Double] = js.undefined
 }
 object EBMLBinaryTagSchema {
   

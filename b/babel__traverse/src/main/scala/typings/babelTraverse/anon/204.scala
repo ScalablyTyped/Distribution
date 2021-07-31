@@ -3,20 +3,18 @@ package typings.babelTraverse.anon
 import typings.babelTraverse.babelTraverseStrings.TupleExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `204` extends StObject {
   
-  var `type`: TupleExpression = js.native
+  var `type`: TupleExpression
 }
 object `204` {
   
   @scala.inline
-  def apply(`type`: TupleExpression): `204` = {
+  def apply(): `204` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("TupleExpression")
     __obj.asInstanceOf[`204`]
   }
   

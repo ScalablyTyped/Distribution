@@ -2,16 +2,14 @@ package typings.awsSdk.cognitoidentityserviceproviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UserPoolPolicyType extends StObject {
   
   /**
     * The password policy.
     */
-  var PasswordPolicy: js.UndefOr[PasswordPolicyType] = js.native
+  var PasswordPolicy: js.UndefOr[PasswordPolicyType] = js.undefined
 }
 object UserPoolPolicyType {
   

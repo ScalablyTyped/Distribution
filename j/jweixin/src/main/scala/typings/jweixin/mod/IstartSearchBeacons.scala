@@ -2,20 +2,20 @@ package typings.jweixin.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /*=============================地理位置================================*/
 /*=============================摇一摇周边================================*/
-@js.native
-trait IstartSearchBeacons extends BaseParams {
+trait IstartSearchBeacons
+  extends StObject
+     with BaseParams {
   
   // 摇周边的业务ticket, 系统自动添加在摇出来的页面链接后面
   // 开启查找完成后的回调函数
   @JSName("complete")
-  def complete_MIstartSearchBeacons(argv: js.Any): Unit = js.native
+  def complete_MIstartSearchBeacons(argv: js.Any): Unit
   
-  var ticket: String = js.native
+  var ticket: String
 }
 object IstartSearchBeacons {
   

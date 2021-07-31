@@ -2,25 +2,23 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MerchantFunding extends StObject {
   
-  var accountNumber: js.UndefOr[String] = js.native
+  var accountNumber: js.UndefOr[String] = js.undefined
   
-  var accountNumberLast4: js.UndefOr[String] = js.native
+  var accountNumberLast4: js.UndefOr[String] = js.undefined
   
-  var descriptor: js.UndefOr[String] = js.native
+  var descriptor: js.UndefOr[String] = js.undefined
   
-  var destination: String = js.native
+  var destination: String
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var mobilePhone: js.UndefOr[String] = js.native
+  var mobilePhone: js.UndefOr[String] = js.undefined
   
-  var routingNumber: js.UndefOr[String] = js.native
+  var routingNumber: js.UndefOr[String] = js.undefined
 }
 object MerchantFunding {
   

@@ -2,20 +2,18 @@ package typings.gijgo.Types
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //Grid
-@js.native
 trait GridPager extends StObject {
   
-  var leftControls: js.UndefOr[js.Array[_]] = js.native
+  var leftControls: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var limit: js.UndefOr[Double] = js.native
+  var limit: js.UndefOr[Double] = js.undefined
   
-  var rightControls: js.UndefOr[js.Array[_]] = js.native
+  var rightControls: js.UndefOr[js.Array[js.Any]] = js.undefined
   
-  var sizes: js.UndefOr[js.Array[Double]] = js.native
+  var sizes: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object GridPager {
   
@@ -29,7 +27,7 @@ object GridPager {
   implicit class GridPagerMutableBuilder[Self <: GridPager] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setLeftControls(value: js.Array[_]): Self = StObject.set(x, "leftControls", value.asInstanceOf[js.Any])
+    def setLeftControls(value: js.Array[js.Any]): Self = StObject.set(x, "leftControls", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setLeftControlsUndefined: Self = StObject.set(x, "leftControls", js.undefined)
@@ -44,7 +42,7 @@ object GridPager {
     def setLimitUndefined: Self = StObject.set(x, "limit", js.undefined)
     
     @scala.inline
-    def setRightControls(value: js.Array[_]): Self = StObject.set(x, "rightControls", value.asInstanceOf[js.Any])
+    def setRightControls(value: js.Array[js.Any]): Self = StObject.set(x, "rightControls", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setRightControlsUndefined: Self = StObject.set(x, "rightControls", js.undefined)

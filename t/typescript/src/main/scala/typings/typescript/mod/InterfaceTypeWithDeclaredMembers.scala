@@ -2,21 +2,21 @@ package typings.typescript.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait InterfaceTypeWithDeclaredMembers extends InterfaceType {
+trait InterfaceTypeWithDeclaredMembers
+  extends StObject
+     with InterfaceType {
   
-  var declaredCallSignatures: js.Array[Signature] = js.native
+  var declaredCallSignatures: js.Array[Signature]
   
-  var declaredConstructSignatures: js.Array[Signature] = js.native
+  var declaredConstructSignatures: js.Array[Signature]
   
-  var declaredNumberIndexInfo: js.UndefOr[IndexInfo] = js.native
+  var declaredNumberIndexInfo: js.UndefOr[IndexInfo] = js.undefined
   
-  var declaredProperties: js.Array[Symbol] = js.native
+  var declaredProperties: js.Array[Symbol]
   
-  var declaredStringIndexInfo: js.UndefOr[IndexInfo] = js.native
+  var declaredStringIndexInfo: js.UndefOr[IndexInfo] = js.undefined
 }
 object InterfaceTypeWithDeclaredMembers {
   

@@ -2,10 +2,8 @@ package typings.relayRuntime.normalizationNodeMod
 
 import org.scalablytyped.runtime.StringDictionary
 import typings.relayRuntime.anon.FragmentName
-import typings.relayRuntime.relayRuntimeStrings.Defer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 
@@ -40,8 +38,9 @@ object NormalizationSelection {
   }
   
   @scala.inline
-  def NormalizationDefer(kind: Defer, label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationDefer = {
-    val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+  def NormalizationDefer(label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationDefer = {
+    val __obj = js.Dynamic.literal(kind = "Defer", label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(null)
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationDefer]
   }
   
@@ -102,6 +101,7 @@ object NormalizationSelection {
   @scala.inline
   def NormalizationStream(kind: String, label: String, selections: js.Array[NormalizationSelection]): typings.relayRuntime.normalizationNodeMod.NormalizationStream = {
     val __obj = js.Dynamic.literal(kind = kind.asInstanceOf[js.Any], label = label.asInstanceOf[js.Any], selections = selections.asInstanceOf[js.Any])
+    __obj.updateDynamic("if")(null)
     __obj.asInstanceOf[typings.relayRuntime.normalizationNodeMod.NormalizationStream]
   }
   

@@ -15,7 +15,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object stepsMod {
@@ -54,40 +53,39 @@ object stepsMod {
     def onStepClick(next: Double): Unit = js.native
   }
   
-  @js.native
   trait StepsProps extends StObject {
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var current: js.UndefOr[Double] = js.native
+    var current: js.UndefOr[Double] = js.undefined
     
-    var direction: js.UndefOr[horizontal | vertical] = js.native
+    var direction: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var iconPrefix: js.UndefOr[String] = js.native
+    var iconPrefix: js.UndefOr[String] = js.undefined
     
-    var icons: js.UndefOr[Icons] = js.native
+    var icons: js.UndefOr[Icons] = js.undefined
     
-    var initial: js.UndefOr[Double] = js.native
+    var initial: js.UndefOr[Double] = js.undefined
     
-    var labelPlacement: js.UndefOr[horizontal | vertical] = js.native
+    var labelPlacement: js.UndefOr[horizontal | vertical] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* current */ Double, Unit]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var progressDot: js.UndefOr[ProgressDotRender | Boolean] = js.native
+    var progressDot: js.UndefOr[ProgressDotRender | Boolean] = js.undefined
     
-    var size: js.UndefOr[typings.rcSteps.rcStepsStrings.default | small] = js.native
+    var size: js.UndefOr[typings.rcSteps.rcStepsStrings.default | small] = js.undefined
     
-    var status: js.UndefOr[Status] = js.native
+    var status: js.UndefOr[Status] = js.undefined
     
-    var stepIcon: js.UndefOr[StepIconRender] = js.native
+    var stepIcon: js.UndefOr[StepIconRender] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var `type`: js.UndefOr[typings.rcSteps.rcStepsStrings.default | navigation] = js.native
+    var `type`: js.UndefOr[typings.rcSteps.rcStepsStrings.default | navigation] = js.undefined
   }
   object StepsProps {
     

@@ -2,45 +2,43 @@ package typings.systeminformation.mod.Systeminformation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DockerContainerData extends StObject {
   
-  var command: String = js.native
+  var command: String
   
-  var created: Double = js.native
+  var created: Double
   
-  var createdAt: String = js.native
+  var createdAt: String
   
-  var driver: String = js.native
+  var driver: String
   
-  var finished: Double = js.native
+  var finished: Double
   
-  var finishedAt: String = js.native
+  var finishedAt: String
   
-  var id: String = js.native
+  var id: String
   
-  var image: String = js.native
+  var image: String
   
-  var imageID: String = js.native
+  var imageID: String
   
-  var mounts: js.Array[DockerContainerMountData] = js.native
+  var mounts: js.Array[DockerContainerMountData]
   
-  var name: String = js.native
+  var name: String
   
-  var platform: String = js.native
+  var platform: String
   
-  var ports: js.Array[Double] = js.native
+  var ports: js.Array[Double]
   
-  var restartCount: Double = js.native
+  var restartCount: Double
   
-  var started: Double = js.native
+  var started: Double
   
-  var startedAt: String = js.native
+  var startedAt: String
   
-  var state: String = js.native
+  var state: String
 }
 object DockerContainerData {
   

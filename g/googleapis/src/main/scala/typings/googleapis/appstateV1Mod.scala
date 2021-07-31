@@ -13,7 +13,6 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appstateV1Mod {
@@ -68,7 +67,7 @@ object appstateV1Mod {
         */
       def clear(): GaxiosPromise[SchemaWriteResult] = js.native
       def clear(callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
-      def clear(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWriteResult] = js.native
+      def clear(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWriteResult] = js.native
       def clear(params: ParamsResourceStatesClear): GaxiosPromise[SchemaWriteResult] = js.native
       def clear(params: ParamsResourceStatesClear, callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
       def clear(
@@ -103,7 +102,7 @@ object appstateV1Mod {
         */
       def delete(): GaxiosPromise[Unit] = js.native
       def delete(callback: BodyResponseCallback[Unit]): Unit = js.native
-      def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+      def delete(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
       def delete(params: ParamsResourceStatesDelete): GaxiosPromise[Unit] = js.native
       def delete(params: ParamsResourceStatesDelete, callback: BodyResponseCallback[Unit]): Unit = js.native
       def delete(
@@ -129,7 +128,7 @@ object appstateV1Mod {
         */
       def get(): GaxiosPromise[SchemaGetResponse] = js.native
       def get(callback: BodyResponseCallback[SchemaGetResponse]): Unit = js.native
-      def get(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaGetResponse] = js.native
+      def get(params: Unit, options: MethodOptions): GaxiosPromise[SchemaGetResponse] = js.native
       def get(params: ParamsResourceStatesGet): GaxiosPromise[SchemaGetResponse] = js.native
       def get(params: ParamsResourceStatesGet, callback: BodyResponseCallback[SchemaGetResponse]): Unit = js.native
       def get(
@@ -158,7 +157,7 @@ object appstateV1Mod {
         */
       def list(): GaxiosPromise[SchemaListResponse] = js.native
       def list(callback: BodyResponseCallback[SchemaListResponse]): Unit = js.native
-      def list(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaListResponse] = js.native
+      def list(params: Unit, options: MethodOptions): GaxiosPromise[SchemaListResponse] = js.native
       def list(params: ParamsResourceStatesList): GaxiosPromise[SchemaListResponse] = js.native
       def list(params: ParamsResourceStatesList, callback: BodyResponseCallback[SchemaListResponse]): Unit = js.native
       def list(
@@ -191,7 +190,7 @@ object appstateV1Mod {
         */
       def update(): GaxiosPromise[SchemaWriteResult] = js.native
       def update(callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
-      def update(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaWriteResult] = js.native
+      def update(params: Unit, options: MethodOptions): GaxiosPromise[SchemaWriteResult] = js.native
       def update(params: ParamsResourceStatesUpdate): GaxiosPromise[SchemaWriteResult] = js.native
       def update(params: ParamsResourceStatesUpdate, callback: BodyResponseCallback[SchemaWriteResult]): Unit = js.native
       def update(
@@ -207,16 +206,17 @@ object appstateV1Mod {
       ): Unit = js.native
     }
     
-    @js.native
-    trait Options extends GlobalOptions {
+    trait Options
+      extends StObject
+         with GlobalOptions {
       
-      var version: v1 = js.native
+      var version: v1
     }
     object Options {
       
       @scala.inline
-      def apply(version: v1): Options = {
-        val __obj = js.Dynamic.literal(version = version.asInstanceOf[js.Any])
+      def apply(): Options = {
+        val __obj = js.Dynamic.literal(version = "v1")
         __obj.asInstanceOf[Options]
       }
       
@@ -228,24 +228,25 @@ object appstateV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceStatesClear extends StandardParameters {
+    trait ParamsResourceStatesClear
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The version of the data to be cleared. Version strings are returned by
         * the server.
         */
-      var currentDataVersion: js.UndefOr[String] = js.native
+      var currentDataVersion: js.UndefOr[String] = js.undefined
       
       /**
         * The key for the data to be retrieved.
         */
-      var stateKey: js.UndefOr[Double] = js.native
+      var stateKey: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceStatesClear {
       
@@ -278,18 +279,19 @@ object appstateV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceStatesDelete extends StandardParameters {
+    trait ParamsResourceStatesDelete
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The key for the data to be retrieved.
         */
-      var stateKey: js.UndefOr[Double] = js.native
+      var stateKey: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceStatesDelete {
       
@@ -316,18 +318,19 @@ object appstateV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceStatesGet extends StandardParameters {
+    trait ParamsResourceStatesGet
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The key for the data to be retrieved.
         */
-      var stateKey: js.UndefOr[Double] = js.native
+      var stateKey: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceStatesGet {
       
@@ -354,18 +357,19 @@ object appstateV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceStatesList extends StandardParameters {
+    trait ParamsResourceStatesList
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * Whether to include the full data in addition to the version number
         */
-      var includeData: js.UndefOr[Boolean] = js.native
+      var includeData: js.UndefOr[Boolean] = js.undefined
     }
     object ParamsResourceStatesList {
       
@@ -392,13 +396,14 @@ object appstateV1Mod {
       }
     }
     
-    @js.native
-    trait ParamsResourceStatesUpdate extends StandardParameters {
+    trait ParamsResourceStatesUpdate
+      extends StObject
+         with StandardParameters {
       
       /**
         * Auth client or API Key for the request
         */
-      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+      var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
       
       /**
         * The version of the app state your application is attempting to update. If
@@ -406,17 +411,17 @@ object appstateV1Mod {
         * conflict error. If there is no data stored on the server for this key,
         * the update will succeed irrespective of the value of this parameter.
         */
-      var currentStateVersion: js.UndefOr[String] = js.native
+      var currentStateVersion: js.UndefOr[String] = js.undefined
       
       /**
         * Request body metadata
         */
-      var requestBody: js.UndefOr[SchemaUpdateRequest] = js.native
+      var requestBody: js.UndefOr[SchemaUpdateRequest] = js.undefined
       
       /**
         * The key for the data to be retrieved.
         */
-      var stateKey: js.UndefOr[Double] = js.native
+      var stateKey: js.UndefOr[Double] = js.undefined
     }
     object ParamsResourceStatesUpdate {
       
@@ -458,29 +463,28 @@ object appstateV1Mod {
     /**
       * This is a JSON template for an app state resource.
       */
-    @js.native
     trait SchemaGetResponse extends StObject {
       
       /**
         * The current app state version.
         */
-      var currentStateVersion: js.UndefOr[String] = js.native
+      var currentStateVersion: js.UndefOr[String] = js.undefined
       
       /**
         * The requested data.
         */
-      var data: js.UndefOr[String] = js.native
+      var data: js.UndefOr[String] = js.undefined
       
       /**
         * Uniquely identifies the type of this resource. Value is always the fixed
         * string appstate#getResponse.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * The key for the data.
         */
-      var stateKey: js.UndefOr[Double] = js.native
+      var stateKey: js.UndefOr[Double] = js.undefined
     }
     object SchemaGetResponse {
       
@@ -522,24 +526,23 @@ object appstateV1Mod {
     /**
       * This is a JSON template to convert a list-response for app state.
       */
-    @js.native
     trait SchemaListResponse extends StObject {
       
       /**
         * The app state data.
         */
-      var items: js.UndefOr[js.Array[SchemaGetResponse]] = js.native
+      var items: js.UndefOr[js.Array[SchemaGetResponse]] = js.undefined
       
       /**
         * Uniquely identifies the type of this resource. Value is always the fixed
         * string appstate#listResponse.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * The maximum number of keys allowed for this user.
         */
-      var maximumKeyCount: js.UndefOr[Double] = js.native
+      var maximumKeyCount: js.UndefOr[Double] = js.undefined
     }
     object SchemaListResponse {
       
@@ -578,19 +581,18 @@ object appstateV1Mod {
     /**
       * This is a JSON template for a requests which update app state
       */
-    @js.native
     trait SchemaUpdateRequest extends StObject {
       
       /**
         * The new app state data that your application is trying to update with.
         */
-      var data: js.UndefOr[String] = js.native
+      var data: js.UndefOr[String] = js.undefined
       
       /**
         * Uniquely identifies the type of this resource. Value is always the fixed
         * string appstate#updateRequest.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object SchemaUpdateRequest {
       
@@ -620,24 +622,23 @@ object appstateV1Mod {
     /**
       * This is a JSON template for an app state write result.
       */
-    @js.native
     trait SchemaWriteResult extends StObject {
       
       /**
         * The version of the data for this key on the server.
         */
-      var currentStateVersion: js.UndefOr[String] = js.native
+      var currentStateVersion: js.UndefOr[String] = js.undefined
       
       /**
         * Uniquely identifies the type of this resource. Value is always the fixed
         * string appstate#writeResult.
         */
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
       /**
         * The written key.
         */
-      var stateKey: js.UndefOr[Double] = js.native
+      var stateKey: js.UndefOr[Double] = js.undefined
     }
     object SchemaWriteResult {
       
@@ -670,46 +671,45 @@ object appstateV1Mod {
       }
     }
     
-    @js.native
     trait StandardParameters extends StObject {
       
       /**
         * Data format for the response.
         */
-      var alt: js.UndefOr[String] = js.native
+      var alt: js.UndefOr[String] = js.undefined
       
       /**
         * Selector specifying which fields to include in a partial response.
         */
-      var fields: js.UndefOr[String] = js.native
+      var fields: js.UndefOr[String] = js.undefined
       
       /**
         * API key. Your API key identifies your project and provides you with API
         * access, quota, and reports. Required unless you provide an OAuth 2.0
         * token.
         */
-      var key: js.UndefOr[String] = js.native
+      var key: js.UndefOr[String] = js.undefined
       
       /**
         * OAuth 2.0 token for the current user.
         */
-      var oauth_token: js.UndefOr[String] = js.native
+      var oauth_token: js.UndefOr[String] = js.undefined
       
       /**
         * Returns response with indentations and line breaks.
         */
-      var prettyPrint: js.UndefOr[Boolean] = js.native
+      var prettyPrint: js.UndefOr[Boolean] = js.undefined
       
       /**
         * An opaque string that represents a user for quota purposes. Must not
         * exceed 40 characters.
         */
-      var quotaUser: js.UndefOr[String] = js.native
+      var quotaUser: js.UndefOr[String] = js.undefined
       
       /**
         * Deprecated. Please use quotaUser instead.
         */
-      var userIp: js.UndefOr[String] = js.native
+      var userIp: js.UndefOr[String] = js.undefined
     }
     object StandardParameters {
       

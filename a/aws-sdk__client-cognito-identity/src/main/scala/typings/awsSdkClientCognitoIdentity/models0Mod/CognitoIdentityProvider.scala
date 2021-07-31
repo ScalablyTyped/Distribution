@@ -2,22 +2,20 @@ package typings.awsSdkClientCognitoIdentity.models0Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CognitoIdentityProvider extends StObject {
   
   /**
     * <p>The client ID for the Amazon Cognito user pool.</p>
     */
-  var ClientId: js.UndefOr[String] = js.native
+  var ClientId: js.UndefOr[String] = js.undefined
   
   /**
     * <p>The provider name for an Amazon Cognito user pool. For example,
     *             <code>cognito-idp.us-east-1.amazonaws.com/us-east-1_123456789</code>.</p>
     */
-  var ProviderName: js.UndefOr[String] = js.native
+  var ProviderName: js.UndefOr[String] = js.undefined
   
   /**
     * <p>TRUE if server-side token validation is enabled for the identity provider’s
@@ -29,7 +27,7 @@ trait CognitoIdentityProvider extends StObject {
     *          <p>If the user is signed out or deleted, the identity pool will return a 400 Not
     *          Authorized error.</p>
     */
-  var ServerSideTokenCheck: js.UndefOr[Boolean] = js.native
+  var ServerSideTokenCheck: js.UndefOr[Boolean] = js.undefined
 }
 object CognitoIdentityProvider {
   
@@ -39,9 +37,12 @@ object CognitoIdentityProvider {
     __obj.asInstanceOf[CognitoIdentityProvider]
   }
   
-  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "CognitoIdentityProvider.filterSensitiveLog")
+  @JSImport("@aws-sdk/client-cognito-identity/types/models/models_0", "CognitoIdentityProvider")
   @js.native
-  def filterSensitiveLog(obj: CognitoIdentityProvider): js.Any = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def filterSensitiveLog(obj: CognitoIdentityProvider): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("filterSensitiveLog")(obj.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
   @scala.inline
   implicit class CognitoIdentityProviderMutableBuilder[Self <: CognitoIdentityProvider] (val x: Self) extends AnyVal {

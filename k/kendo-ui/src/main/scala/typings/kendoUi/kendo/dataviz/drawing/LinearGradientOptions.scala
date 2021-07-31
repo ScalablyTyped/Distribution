@@ -2,15 +2,13 @@ package typings.kendoUi.kendo.dataviz.drawing
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LinearGradientOptions extends StObject {
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var stops: js.UndefOr[js.Any] = js.native
+  var stops: js.UndefOr[js.Any] = js.undefined
 }
 object LinearGradientOptions {
   

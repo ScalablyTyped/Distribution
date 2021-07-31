@@ -3,16 +3,14 @@ package typings.ionicCore.componentsMod.LocalJSX
 import typings.ionicCore.pickerInterfaceMod.PickerColumn
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IonPickerColumn extends StObject {
   
   /**
     * Picker column data
     */
-  var col: PickerColumn = js.native
+  var col: PickerColumn
 }
 object IonPickerColumn {
   

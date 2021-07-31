@@ -2,34 +2,32 @@ package typings.maximMazurokGapiClientAppengine.gapi.client.appengine
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OperationMetadataV1 extends StObject {
   
-  var createVersionMetadata: js.UndefOr[CreateVersionMetadataV1] = js.native
+  var createVersionMetadata: js.UndefOr[CreateVersionMetadataV1] = js.undefined
   
   /** Time that this operation completed.@OutputOnly */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /** Ephemeral message that may change every time the operation is polled. @OutputOnly */
-  var ephemeralMessage: js.UndefOr[String] = js.native
+  var ephemeralMessage: js.UndefOr[String] = js.undefined
   
   /** Time that this operation was created.@OutputOnly */
-  var insertTime: js.UndefOr[String] = js.native
+  var insertTime: js.UndefOr[String] = js.undefined
   
   /** API method that initiated this operation. Example: google.appengine.v1.Versions.CreateVersion.@OutputOnly */
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
   /** Name of the resource that this operation is acting on. Example: apps/myapp/services/default.@OutputOnly */
-  var target: js.UndefOr[String] = js.native
+  var target: js.UndefOr[String] = js.undefined
   
   /** User who requested this operation.@OutputOnly */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
   /** Durable messages that persist on every operation poll. @OutputOnly */
-  var warning: js.UndefOr[js.Array[String]] = js.native
+  var warning: js.UndefOr[js.Array[String]] = js.undefined
 }
 object OperationMetadataV1 {
   

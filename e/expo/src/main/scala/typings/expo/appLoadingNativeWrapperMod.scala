@@ -3,7 +3,6 @@ package typings.expo
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object appLoadingNativeWrapperMod {
@@ -22,10 +21,9 @@ object appLoadingNativeWrapperMod {
     def componentWillUnmount_MAppLoading(): Unit = js.native
   }
   
-  @js.native
   trait Props extends StObject {
     
-    var autoHideSplash: js.UndefOr[Boolean] = js.native
+    var autoHideSplash: js.UndefOr[Boolean] = js.undefined
   }
   object Props {
     

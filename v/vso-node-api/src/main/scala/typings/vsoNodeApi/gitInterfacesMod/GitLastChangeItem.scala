@@ -2,21 +2,19 @@ package typings.vsoNodeApi.gitInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GitLastChangeItem extends StObject {
   
   /**
     * Gets or sets the commit Id this item was modified most recently for the provided version.
     */
-  var commitId: String = js.native
+  var commitId: String
   
   /**
     * Gets or sets the path of the item.
     */
-  var path: String = js.native
+  var path: String
 }
 object GitLastChangeItem {
   

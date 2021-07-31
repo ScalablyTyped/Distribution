@@ -24,7 +24,6 @@ import typings.tuyaPanelKit.typesMod.EventListenerCallback
 import typings.tuyaPanelKit.typesMod.EventMapCore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined tuya-panel-kit.tuya-panel-kit/@react-navigation/native.NavigationProp<ParamList, RouteName, tuya-panel-kit.tuya-panel-kit/@react-navigation/native.StackNavigationState<ParamList>, tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationOptions, tuya-panel-kit.tuya-panel-kit/@react-navigation/stack/types.StackNavigationEventMap> & tuya-panel-kit.tuya-panel-kit/@react-navigation/native.StackActionHelpers<ParamList> */
@@ -42,7 +41,7 @@ trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* k
     * Turns out if we use an empty string, it doesn't show up in intelliSense.
     */
   @JSName("")
-  var _empty: js.UndefOr[A[ParamList]] with (js.UndefOr[BC[ParamList, RouteName]]) = js.native
+  var _empty: js.UndefOr[A[ParamList]] & (js.UndefOr[BC[ParamList, RouteName]]) = js.native
   
   /**
     * Subscribe to events from the parent navigator.
@@ -55,10 +54,7 @@ trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* k
     String
   ] */](
     `type`: EventName,
-    callback: EventListenerCallback[
-      StackNavigationEventMap with EventMapCore[StackNavigationState[ParamList]], 
-      EventName
-    ]
+    callback: EventListenerCallback[StackNavigationEventMap & EventMapCore[StackNavigationState[ParamList]], EventName]
   ): js.Function0[Unit] = js.native
   
   /**
@@ -153,10 +149,7 @@ trait StackNavigationProp[ParamList /* <: ParamListBase */, RouteName /* <: /* k
     String
   ] */](
     `type`: EventName,
-    callback: EventListenerCallback[
-      StackNavigationEventMap with EventMapCore[StackNavigationState[ParamList]], 
-      EventName
-    ]
+    callback: EventListenerCallback[StackNavigationEventMap & EventMapCore[StackNavigationState[ParamList]], EventName]
   ): Unit = js.native
   
   /**

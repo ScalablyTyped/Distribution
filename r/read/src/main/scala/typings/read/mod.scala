@@ -2,38 +2,39 @@ package typings.read
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("read", JSImport.Namespace)
-  @js.native
+  @scala.inline
   def apply(
     options: Options,
-    callback: js.Function3[/* error */ js.Any, /* result */ String, /* isDefault */ Boolean, _]
-  ): Unit = js.native
+    callback: js.Function3[/* error */ js.Any, /* result */ String, /* isDefault */ Boolean, js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], callback.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
+  @JSImport("read", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Options extends StObject {
     
-    var default: js.UndefOr[String] = js.native
+    var default: js.UndefOr[String] = js.undefined
     
-    var edit: js.UndefOr[Boolean] = js.native
+    var edit: js.UndefOr[Boolean] = js.undefined
     
-    var input: js.UndefOr[js.Any] = js.native
+    var input: js.UndefOr[js.Any] = js.undefined
     
-    var output: js.UndefOr[js.Any] = js.native
+    var output: js.UndefOr[js.Any] = js.undefined
     
-    var prompt: js.UndefOr[String] = js.native
+    var prompt: js.UndefOr[String] = js.undefined
     
-    var replace: js.UndefOr[String] = js.native
+    var replace: js.UndefOr[String] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var terminal: js.UndefOr[Boolean] = js.native
+    var terminal: js.UndefOr[Boolean] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

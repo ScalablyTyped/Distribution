@@ -2,17 +2,15 @@ package typings.mqttPacket.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IPacket extends StObject {
   
-  var cmd: PacketCmd = js.native
+  var cmd: PacketCmd
   
-  var length: js.UndefOr[Double] = js.native
+  var length: js.UndefOr[Double] = js.undefined
   
-  var messageId: js.UndefOr[Double] = js.native
+  var messageId: js.UndefOr[Double] = js.undefined
 }
 object IPacket {
   

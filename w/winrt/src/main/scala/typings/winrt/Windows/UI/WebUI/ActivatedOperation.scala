@@ -2,11 +2,11 @@ package typings.winrt.Windows.UI.WebUI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ActivatedOperation extends IActivatedOperation
+trait ActivatedOperation
+  extends StObject
+     with IActivatedOperation
 object ActivatedOperation {
   
   @scala.inline

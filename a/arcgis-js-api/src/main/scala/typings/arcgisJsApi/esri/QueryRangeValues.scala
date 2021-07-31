@@ -4,25 +4,25 @@ import typings.std.Object
 import typings.std.PropertyKey
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait QueryRangeValues extends Object {
+trait QueryRangeValues
+  extends StObject
+     with Object {
   
   /**
     * The range id.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#rangeValues)
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * Single value or value range.
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-tasks-support-Query.html#rangeValues)
     */
-  var values: Double | js.Array[Double] = js.native
+  var values: Double | js.Array[Double]
 }
 object QueryRangeValues {
   

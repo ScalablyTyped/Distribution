@@ -2,19 +2,17 @@ package typings.projectOxford.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object PersonGroupResponses {
   
-  @js.native
   trait PersonGroup extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var personGroupId: String = js.native
+    var personGroupId: String
     
-    var userData: String = js.native
+    var userData: String
   }
   object PersonGroup {
     
@@ -38,16 +36,15 @@ object PersonGroupResponses {
     }
   }
   
-  @js.native
   trait TrainingStatus extends StObject {
     
-    var endTime: String = js.native
+    var endTime: String
     
-    var personGroupId: String = js.native
+    var personGroupId: String
     
-    var startTime: String = js.native
+    var startTime: String
     
-    var status: String = js.native
+    var status: String
   }
   object TrainingStatus {
     

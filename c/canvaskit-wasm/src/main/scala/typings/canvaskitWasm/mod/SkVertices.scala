@@ -2,11 +2,12 @@ package typings.canvaskitWasm.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait SkVertices extends EmbindObject[SkVertices] {
+trait SkVertices
+  extends StObject
+     with EmbindObject[SkVertices] {
   
   /**
     * Return the bounding area for the vertices.

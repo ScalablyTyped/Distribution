@@ -2,19 +2,17 @@ package typings.popcorn
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Footnote extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  var target: String = js.native
+  var target: String
   
-  var text: String = js.native
+  var text: String
 }
 object Footnote {
   

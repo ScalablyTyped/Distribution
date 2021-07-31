@@ -3,28 +3,28 @@ package typings.googlemaps.google.maps
 import typings.googlemaps.google.maps.MaxZoomStatus.OK
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * @see {@link MaxZoomResult}
   * @see {@link MaxZoomResultError}
   */
-@js.native
-trait MaxZoomResultOk extends MaxZoomResult {
+trait MaxZoomResultOk
+  extends StObject
+     with MaxZoomResult {
   
   /**
     * Status of the request.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/max-zoom#MaxZoomResult.status Maps JavaScript API}
     * @see {@link MaxZoomResultError#status}
     */
-  var status: OK = js.native
+  var status: OK
   
   /**
     * The maximum zoom level found at the given {@link LatLng}.
     * @see {@link https://developers.google.com/maps/documentation/javascript/reference/max-zoom#MaxZoomResult.zoom Maps JavaScript API}
     */
-  var zoom: Double = js.native
+  var zoom: Double
 }
 object MaxZoomResultOk {
   

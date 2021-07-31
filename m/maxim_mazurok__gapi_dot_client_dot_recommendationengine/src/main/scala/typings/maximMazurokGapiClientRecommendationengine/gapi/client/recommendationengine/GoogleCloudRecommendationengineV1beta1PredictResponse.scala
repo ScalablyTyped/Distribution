@@ -3,36 +3,34 @@ package typings.maximMazurokGapiClientRecommendationengine.gapi.client.recommend
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudRecommendationengineV1beta1PredictResponse extends StObject {
   
   /** True if the dryRun property was set in the request. */
-  var dryRun: js.UndefOr[Boolean] = js.native
+  var dryRun: js.UndefOr[Boolean] = js.undefined
   
   /** IDs of items in the request that were missing from the catalog. */
-  var itemsMissingInCatalog: js.UndefOr[js.Array[String]] = js.native
+  var itemsMissingInCatalog: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Additional domain specific prediction response metadata. */
   var metadata: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: any}
-    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse & TopLevel[js.Any]
+  ] = js.undefined
   
   /** If empty, the list is complete. If nonempty, the token to pass to the next request's PredictRequest.page_token. */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
   
   /**
     * A unique recommendation token. This should be included in the user event logs resulting from this recommendation, which enables accurate attribution of recommendation model
     * performance.
     */
-  var recommendationToken: js.UndefOr[String] = js.native
+  var recommendationToken: js.UndefOr[String] = js.undefined
   
   /** A list of recommended items. The order represents the ranking (from the most relevant item to the least). */
-  var results: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult]] = js.native
+  var results: js.UndefOr[js.Array[GoogleCloudRecommendationengineV1beta1PredictResponsePredictionResult]] = js.undefined
 }
 object GoogleCloudRecommendationengineV1beta1PredictResponse {
   
@@ -64,7 +62,7 @@ object GoogleCloudRecommendationengineV1beta1PredictResponse {
     def setMetadata(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: any}
-      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientRecommendationengine.maximMazurokGapiClientRecommendationengineStrings.GoogleCloudRecommendationengineV1beta1PredictResponse & TopLevel[js.Any]
     ): Self = StObject.set(x, "metadata", value.asInstanceOf[js.Any])
     
     @scala.inline

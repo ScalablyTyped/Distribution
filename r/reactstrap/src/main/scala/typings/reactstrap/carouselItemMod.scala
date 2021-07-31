@@ -8,7 +8,6 @@ import typings.reactstrap.mod.CSSModule
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object carouselItemMod {
@@ -20,30 +19,30 @@ object carouselItemMod {
   
   type CarouselItem = Component[CarouselItemProps, js.Object, js.Any]
   
-  @js.native
   trait CarouselItemProps
-    extends HTMLAttributes[HTMLElement]
+    extends StObject
+       with HTMLAttributes[HTMLElement]
        with /* key */ StringDictionary[js.Any] {
     
-    var cssModule: js.UndefOr[CSSModule] = js.native
+    var cssModule: js.UndefOr[CSSModule] = js.undefined
     
-    var in: js.UndefOr[Boolean] = js.native
+    var in: js.UndefOr[Boolean] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEnter: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEntered: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEntered: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onEntering: js.UndefOr[js.Function0[Unit]] = js.native
+    var onEntering: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExit: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExit: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExited: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExited: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var onExiting: js.UndefOr[js.Function0[Unit]] = js.native
+    var onExiting: js.UndefOr[js.Function0[Unit]] = js.undefined
     
-    var slide: js.UndefOr[Boolean] = js.native
+    var slide: js.UndefOr[Boolean] = js.undefined
     
-    var tag: js.UndefOr[ElementType[_]] = js.native
+    var tag: js.UndefOr[ElementType[js.Any]] = js.undefined
   }
   object CarouselItemProps {
     
@@ -111,7 +110,7 @@ object carouselItemMod {
       def setSlideUndefined: Self = StObject.set(x, "slide", js.undefined)
       
       @scala.inline
-      def setTag(value: ElementType[_]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
+      def setTag(value: ElementType[js.Any]): Self = StObject.set(x, "tag", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setTagUndefined: Self = StObject.set(x, "tag", js.undefined)

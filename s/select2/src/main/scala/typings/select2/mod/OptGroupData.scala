@@ -3,25 +3,23 @@ package typings.select2.mod
 import typings.std.HTMLOptGroupElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OptGroupData extends StObject {
   
-  var children: js.Array[OptionData] = js.native
+  var children: js.Array[OptionData]
   
-  var disabled: Boolean = js.native
+  var disabled: Boolean
   
-  var element: HTMLOptGroupElement = js.native
+  var element: HTMLOptGroupElement
   
-  var loading: js.UndefOr[scala.Nothing] = js.native
+  var loading: Unit
   
-  var selected: Boolean = js.native
+  var selected: Boolean
   
-  var text: String = js.native
+  var text: String
   
-  var title: String = js.native
+  var title: String
 }
 object OptGroupData {
   
@@ -30,11 +28,12 @@ object OptGroupData {
     children: js.Array[OptionData],
     disabled: Boolean,
     element: HTMLOptGroupElement,
+    loading: Unit,
     selected: Boolean,
     text: String,
     title: String
   ): OptGroupData = {
-    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(children = children.asInstanceOf[js.Any], disabled = disabled.asInstanceOf[js.Any], element = element.asInstanceOf[js.Any], loading = loading.asInstanceOf[js.Any], selected = selected.asInstanceOf[js.Any], text = text.asInstanceOf[js.Any], title = title.asInstanceOf[js.Any])
     __obj.asInstanceOf[OptGroupData]
   }
   
@@ -52,6 +51,9 @@ object OptGroupData {
     
     @scala.inline
     def setElement(value: HTMLOptGroupElement): Self = StObject.set(x, "element", value.asInstanceOf[js.Any])
+    
+    @scala.inline
+    def setLoading(value: Unit): Self = StObject.set(x, "loading", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setSelected(value: Boolean): Self = StObject.set(x, "selected", value.asInstanceOf[js.Any])

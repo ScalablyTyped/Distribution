@@ -2,21 +2,21 @@ package typings.azdata.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SplitViewLayout extends FlexLayout {
+trait SplitViewLayout
+  extends StObject
+     with FlexLayout {
   
   /**
     * Orientation of the views inside split
     */
-  var orientation: String = js.native
+  var orientation: String
   
   /**
     * SplitView height
     */
-  var splitViewHeight: Double | String = js.native
+  var splitViewHeight: Double | String
 }
 object SplitViewLayout {
   

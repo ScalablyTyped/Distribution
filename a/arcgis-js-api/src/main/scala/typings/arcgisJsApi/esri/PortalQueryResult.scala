@@ -2,11 +2,12 @@ package typings.arcgisJsApi.esri
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait PortalQueryResult extends Accessor {
+trait PortalQueryResult
+  extends StObject
+     with Accessor {
   
   /**
     * The query parameters for the next set of results.
@@ -27,7 +28,7 @@ trait PortalQueryResult extends Accessor {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-portal-PortalQueryResult.html#results)
     */
-  var results: js.Array[_] = js.native
+  var results: js.Array[js.Any] = js.native
   
   /**
     * The total number of results.

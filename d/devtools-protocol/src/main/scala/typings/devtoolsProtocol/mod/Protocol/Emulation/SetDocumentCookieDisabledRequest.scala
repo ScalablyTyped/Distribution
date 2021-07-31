@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.Emulation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetDocumentCookieDisabledRequest extends StObject {
   
   /**
     * Whether document.coookie API should be disabled.
     */
-  var disabled: Boolean = js.native
+  var disabled: Boolean
 }
 object SetDocumentCookieDisabledRequest {
   

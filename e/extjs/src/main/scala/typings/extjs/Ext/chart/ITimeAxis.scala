@@ -4,23 +4,23 @@ import typings.extjs.Ext.Array
 import typings.extjs.Ext.chart.axis.INumeric
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ITimeAxis extends INumeric {
+trait ITimeAxis
+  extends StObject
+     with INumeric {
   
   /** [Config Option] (String/Boolean) */
-  var dateFormat: js.UndefOr[js.Any] = js.native
+  var dateFormat: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Date) */
-  var fromDate: js.UndefOr[js.Any] = js.native
+  var fromDate: js.UndefOr[js.Any] = js.undefined
   
   /** [Config Option] (Array) */
-  var step: js.UndefOr[Array] = js.native
+  var step: js.UndefOr[Array] = js.undefined
   
   /** [Config Option] (Date) */
-  var toDate: js.UndefOr[js.Any] = js.native
+  var toDate: js.UndefOr[js.Any] = js.undefined
 }
 object ITimeAxis {
   

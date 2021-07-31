@@ -2,21 +2,19 @@ package typings.bootstrapColorpicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait A extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var h: Double = js.native
+    var h: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object A {
     

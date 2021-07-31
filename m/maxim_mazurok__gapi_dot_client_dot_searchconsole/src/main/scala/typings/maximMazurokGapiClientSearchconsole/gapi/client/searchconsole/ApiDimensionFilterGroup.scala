@@ -2,15 +2,13 @@ package typings.maximMazurokGapiClientSearchconsole.gapi.client.searchconsole
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApiDimensionFilterGroup extends StObject {
   
-  var filters: js.UndefOr[js.Array[ApiDimensionFilter]] = js.native
+  var filters: js.UndefOr[js.Array[ApiDimensionFilter]] = js.undefined
   
-  var groupType: js.UndefOr[String] = js.native
+  var groupType: js.UndefOr[String] = js.undefined
 }
 object ApiDimensionFilterGroup {
   

@@ -2,16 +2,14 @@ package typings.activexMsforms.MSForms
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReturnInteger extends StObject {
   
   @JSName("MSForms.ReturnInteger_typekey")
-  var MSFormsDotReturnInteger_typekey: ReturnInteger = js.native
+  var MSFormsDotReturnInteger_typekey: ReturnInteger
   
-  var Value: Double = js.native
+  var Value: Double
 }
 object ReturnInteger {
   

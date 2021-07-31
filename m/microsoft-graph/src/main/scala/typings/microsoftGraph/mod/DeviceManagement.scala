@@ -2,116 +2,116 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait DeviceManagement extends Entity {
+trait DeviceManagement
+  extends StObject
+     with Entity {
   
   // Apple push notification certificate.
-  var applePushNotificationCertificate: js.UndefOr[NullableOption[ApplePushNotificationCertificate]] = js.native
+  var applePushNotificationCertificate: js.UndefOr[NullableOption[ApplePushNotificationCertificate]] = js.undefined
   
   // The list of Compliance Management Partners configured by the tenant.
-  var complianceManagementPartners: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartner]]] = js.native
+  var complianceManagementPartners: js.UndefOr[NullableOption[js.Array[ComplianceManagementPartner]]] = js.undefined
   
   /**
     * The Exchange on premises conditional access settings. On premises conditional access will require devices to be both
     * enrolled and compliant for mail access
     */
-  var conditionalAccessSettings: js.UndefOr[NullableOption[OnPremisesConditionalAccessSettings]] = js.native
+  var conditionalAccessSettings: js.UndefOr[NullableOption[OnPremisesConditionalAccessSettings]] = js.undefined
   
   // The list of detected apps associated with a device.
-  var detectedApps: js.UndefOr[NullableOption[js.Array[DetectedApp]]] = js.native
+  var detectedApps: js.UndefOr[NullableOption[js.Array[DetectedApp]]] = js.undefined
   
   // The list of device categories with the tenant.
-  var deviceCategories: js.UndefOr[NullableOption[js.Array[DeviceCategory]]] = js.native
+  var deviceCategories: js.UndefOr[NullableOption[js.Array[DeviceCategory]]] = js.undefined
   
   // The device compliance policies.
-  var deviceCompliancePolicies: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicy]]] = js.native
+  var deviceCompliancePolicies: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicy]]] = js.undefined
   
   // The device compliance state summary for this account.
-  var deviceCompliancePolicyDeviceStateSummary: js.UndefOr[NullableOption[DeviceCompliancePolicyDeviceStateSummary]] = js.native
+  var deviceCompliancePolicyDeviceStateSummary: js.UndefOr[NullableOption[DeviceCompliancePolicyDeviceStateSummary]] = js.undefined
   
   // The summary states of compliance policy settings for this account.
-  var deviceCompliancePolicySettingStateSummaries: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicySettingStateSummary]]] = js.native
+  var deviceCompliancePolicySettingStateSummaries: js.UndefOr[NullableOption[js.Array[DeviceCompliancePolicySettingStateSummary]]] = js.undefined
   
   // The device configuration device state summary for this account.
-  var deviceConfigurationDeviceStateSummaries: js.UndefOr[NullableOption[DeviceConfigurationDeviceStateSummary]] = js.native
+  var deviceConfigurationDeviceStateSummaries: js.UndefOr[NullableOption[DeviceConfigurationDeviceStateSummary]] = js.undefined
   
   // The device configurations.
-  var deviceConfigurations: js.UndefOr[NullableOption[js.Array[DeviceConfiguration]]] = js.native
+  var deviceConfigurations: js.UndefOr[NullableOption[js.Array[DeviceConfiguration]]] = js.undefined
   
   // The list of device enrollment configurations
-  var deviceEnrollmentConfigurations: js.UndefOr[NullableOption[js.Array[DeviceEnrollmentConfiguration]]] = js.native
+  var deviceEnrollmentConfigurations: js.UndefOr[NullableOption[js.Array[DeviceEnrollmentConfiguration]]] = js.undefined
   
   // The list of Device Management Partners configured by the tenant.
-  var deviceManagementPartners: js.UndefOr[NullableOption[js.Array[DeviceManagementPartner]]] = js.native
+  var deviceManagementPartners: js.UndefOr[NullableOption[js.Array[DeviceManagementPartner]]] = js.undefined
   
   // The list of Exchange Connectors configured by the tenant.
-  var exchangeConnectors: js.UndefOr[NullableOption[js.Array[DeviceManagementExchangeConnector]]] = js.native
+  var exchangeConnectors: js.UndefOr[NullableOption[js.Array[DeviceManagementExchangeConnector]]] = js.undefined
   
   // Intune Account Id for given tenant
-  var intuneAccountId: js.UndefOr[String] = js.native
+  var intuneAccountId: js.UndefOr[String] = js.undefined
   
   /**
     * intuneBrand contains data which is used in customizing the appearance of the Company Portal applications as well as the
     * end user web portal.
     */
-  var intuneBrand: js.UndefOr[NullableOption[IntuneBrand]] = js.native
+  var intuneBrand: js.UndefOr[NullableOption[IntuneBrand]] = js.undefined
   
   // The IOS software update installation statuses for this account.
-  var iosUpdateStatuses: js.UndefOr[NullableOption[js.Array[IosUpdateDeviceStatus]]] = js.native
+  var iosUpdateStatuses: js.UndefOr[NullableOption[js.Array[IosUpdateDeviceStatus]]] = js.undefined
   
   // Device overview
-  var managedDeviceOverview: js.UndefOr[NullableOption[ManagedDeviceOverview]] = js.native
+  var managedDeviceOverview: js.UndefOr[NullableOption[ManagedDeviceOverview]] = js.undefined
   
   // The list of managed devices.
-  var managedDevices: js.UndefOr[NullableOption[js.Array[ManagedDevice]]] = js.native
+  var managedDevices: js.UndefOr[NullableOption[js.Array[ManagedDevice]]] = js.undefined
   
   // The list of Mobile threat Defense connectors configured by the tenant.
-  var mobileThreatDefenseConnectors: js.UndefOr[NullableOption[js.Array[MobileThreatDefenseConnector]]] = js.native
+  var mobileThreatDefenseConnectors: js.UndefOr[NullableOption[js.Array[MobileThreatDefenseConnector]]] = js.undefined
   
   // The Notification Message Templates.
-  var notificationMessageTemplates: js.UndefOr[NullableOption[js.Array[NotificationMessageTemplate]]] = js.native
+  var notificationMessageTemplates: js.UndefOr[NullableOption[js.Array[NotificationMessageTemplate]]] = js.undefined
   
   // The remote assist partners.
-  var remoteAssistancePartners: js.UndefOr[NullableOption[js.Array[RemoteAssistancePartner]]] = js.native
+  var remoteAssistancePartners: js.UndefOr[NullableOption[js.Array[RemoteAssistancePartner]]] = js.undefined
   
   // The Resource Operations.
-  var resourceOperations: js.UndefOr[NullableOption[js.Array[ResourceOperation]]] = js.native
+  var resourceOperations: js.UndefOr[NullableOption[js.Array[ResourceOperation]]] = js.undefined
   
   // The Role Assignments.
-  var roleAssignments: js.UndefOr[NullableOption[js.Array[DeviceAndAppManagementRoleAssignment]]] = js.native
+  var roleAssignments: js.UndefOr[NullableOption[js.Array[DeviceAndAppManagementRoleAssignment]]] = js.undefined
   
   // The Role Definitions.
-  var roleDefinitions: js.UndefOr[NullableOption[js.Array[RoleDefinition]]] = js.native
+  var roleDefinitions: js.UndefOr[NullableOption[js.Array[RoleDefinition]]] = js.undefined
   
   // Account level settings.
-  var settings: js.UndefOr[NullableOption[DeviceManagementSettings]] = js.native
+  var settings: js.UndefOr[NullableOption[DeviceManagementSettings]] = js.undefined
   
   // The software update status summary.
-  var softwareUpdateStatusSummary: js.UndefOr[NullableOption[SoftwareUpdateStatusSummary]] = js.native
+  var softwareUpdateStatusSummary: js.UndefOr[NullableOption[SoftwareUpdateStatusSummary]] = js.undefined
   
   /**
     * Tenant mobile device management subscription state. The possible values are: pending, active, warning, disabled,
     * deleted, blocked, lockedOut.
     */
-  var subscriptionState: js.UndefOr[DeviceManagementSubscriptionState] = js.native
+  var subscriptionState: js.UndefOr[DeviceManagementSubscriptionState] = js.undefined
   
   // The telecom expense management partners.
-  var telecomExpenseManagementPartners: js.UndefOr[NullableOption[js.Array[TelecomExpenseManagementPartner]]] = js.native
+  var telecomExpenseManagementPartners: js.UndefOr[NullableOption[js.Array[TelecomExpenseManagementPartner]]] = js.undefined
   
   // The terms and conditions associated with device management of the company.
-  var termsAndConditions: js.UndefOr[NullableOption[js.Array[TermsAndConditions]]] = js.native
+  var termsAndConditions: js.UndefOr[NullableOption[js.Array[TermsAndConditions]]] = js.undefined
   
   // The list of troubleshooting events for the tenant.
-  var troubleshootingEvents: js.UndefOr[NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]] = js.native
+  var troubleshootingEvents: js.UndefOr[NullableOption[js.Array[DeviceManagementTroubleshootingEvent]]] = js.undefined
   
   // The windows information protection app learning summaries.
-  var windowsInformationProtectionAppLearningSummaries: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionAppLearningSummary]]] = js.native
+  var windowsInformationProtectionAppLearningSummaries: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionAppLearningSummary]]] = js.undefined
   
   // The windows information protection network learning summaries.
-  var windowsInformationProtectionNetworkLearningSummaries: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionNetworkLearningSummary]]] = js.native
+  var windowsInformationProtectionNetworkLearningSummaries: js.UndefOr[NullableOption[js.Array[WindowsInformationProtectionNetworkLearningSummary]]] = js.undefined
 }
 object DeviceManagement {
   

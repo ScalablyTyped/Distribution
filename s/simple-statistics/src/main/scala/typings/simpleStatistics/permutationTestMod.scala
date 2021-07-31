@@ -2,21 +2,20 @@ package typings.simpleStatistics
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object permutationTestMod {
   
-  @JSImport("simple-statistics/src/permutation_test", JSImport.Default)
+  @JSImport("simple-statistics/src/permutation_test", JSImport.Namespace)
   @js.native
-  def default(sampleX: js.Array[Double], sampleY: js.Array[Double]): Double = js.native
-  @JSImport("simple-statistics/src/permutation_test", JSImport.Default)
-  @js.native
-  def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: js.UndefOr[scala.Nothing], k: Double): Double = js.native
-  @JSImport("simple-statistics/src/permutation_test", JSImport.Default)
-  @js.native
-  def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String): Double = js.native
-  @JSImport("simple-statistics/src/permutation_test", JSImport.Default)
-  @js.native
-  def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String, k: Double): Double = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(sampleX: js.Array[Double], sampleY: js.Array[Double]): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: String, k: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def default(sampleX: js.Array[Double], sampleY: js.Array[Double], string: Unit, k: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(sampleX.asInstanceOf[js.Any], sampleY.asInstanceOf[js.Any], string.asInstanceOf[js.Any], k.asInstanceOf[js.Any])).asInstanceOf[Double]
 }

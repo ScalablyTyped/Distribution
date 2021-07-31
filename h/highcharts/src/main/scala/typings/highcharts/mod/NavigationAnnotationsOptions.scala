@@ -3,10 +3,8 @@ package typings.highcharts.mod
 import typings.highcharts.anon.PartialAnimationOptionsOb
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NavigationAnnotationsOptions extends StObject {
   
   /**
@@ -19,7 +17,7 @@ trait NavigationAnnotationsOptions extends StObject {
     *
     * - `defer`: The animation delay time in milliseconds.
     */
-  var animation: js.UndefOr[Boolean | NavigationAnnotationsAnimationOptions | PartialAnimationOptionsOb] = js.native
+  var animation: js.UndefOr[Boolean | NavigationAnnotationsAnimationOptions | PartialAnimationOptionsOb] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotation's control
@@ -27,65 +25,65 @@ trait NavigationAnnotationsOptions extends StObject {
     * object. Options from the controlPointOptions can be overwritten by
     * options in a specific control point.
     */
-  var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.native
+  var controlPointOptions: js.UndefOr[AnnotationControlPointOptionsObject] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Allow an annotation to be
     * draggable by a user. Possible values are `'x'`, `'xy'`, `'y'` and `''`
     * (disabled).
     */
-  var draggable: js.UndefOr[AnnotationDraggableValue] = js.native
+  var draggable: js.UndefOr[AnnotationDraggableValue] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Events available in annotations.
     */
-  var events: js.UndefOr[NavigationAnnotationsEventsOptions] = js.native
+  var events: js.UndefOr[NavigationAnnotationsEventsOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Sets an ID for an annotation.
     * Can be user later when removing an annotation in
     * Chart.removeAnnotation(id) method.
     */
-  var id: js.UndefOr[Double | String] = js.native
+  var id: js.UndefOr[Double | String] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotation's labels.
     * Each label inherits options from the labelOptions object. An option from
     * the labelOptions can be overwritten by config for a specific label.
     */
-  var labelOptions: js.UndefOr[NavigationAnnotationsLabelOptions] = js.native
+  var labelOptions: js.UndefOr[NavigationAnnotationsLabelOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array of labels for the
     * annotation. For options that apply to multiple labels, they can be added
     * to the labelOptions.
     */
-  var labels: js.UndefOr[js.Array[NavigationAnnotationsLabelsOptions]] = js.native
+  var labels: js.UndefOr[js.Array[NavigationAnnotationsLabelsOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Options for annotation's shapes.
     * Each shape inherits options from the shapeOptions object. An option from
     * the shapeOptions can be overwritten by config for a specific shape.
     */
-  var shapeOptions: js.UndefOr[NavigationAnnotationsShapeOptions] = js.native
+  var shapeOptions: js.UndefOr[NavigationAnnotationsShapeOptions] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) An array of shapes for the
     * annotation. For options that apply to multiple shapes, then can be added
     * to the shapeOptions.
     */
-  var shapes: js.UndefOr[js.Array[NavigationAnnotationsShapesOptions]] = js.native
+  var shapes: js.UndefOr[js.Array[NavigationAnnotationsShapesOptions]] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) Whether the annotation is
     * visible.
     */
-  var visible: js.UndefOr[Boolean] = js.native
+  var visible: js.UndefOr[Boolean] = js.undefined
   
   /**
     * (Highcharts, Highstock, Highmaps, Gantt) The Z index of the annotation.
     */
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object NavigationAnnotationsOptions {
   

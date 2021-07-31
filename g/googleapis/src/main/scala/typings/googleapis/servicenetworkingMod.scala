@@ -13,10 +13,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicenetworkingMod {
+  
+  @JSImport("googleapis/build/src/apis/servicenetworking", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -101,9 +104,12 @@ object servicenetworkingMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/servicenetworking", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/servicenetworking", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -147,16 +153,14 @@ object servicenetworkingMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/servicenetworking", "servicenetworking")
-  @js.native
-  def servicenetworking(options: Options): Servicenetworking = js.native
-  @JSImport("googleapis/build/src/apis/servicenetworking", "servicenetworking")
-  @js.native
-  def servicenetworking(options: typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Options): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = js.native
-  @JSImport("googleapis/build/src/apis/servicenetworking", "servicenetworking")
-  @js.native
-  def servicenetworking_v1(version: v1): Servicenetworking = js.native
-  @JSImport("googleapis/build/src/apis/servicenetworking", "servicenetworking")
-  @js.native
-  def servicenetworking_v1beta(version: v1beta): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = js.native
+  @scala.inline
+  def servicenetworking(options: Options): Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(options.asInstanceOf[js.Any]).asInstanceOf[Servicenetworking]
+  @scala.inline
+  def servicenetworking(options: typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Options): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(options.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking]
+  
+  @scala.inline
+  def servicenetworking_v1(version: v1): Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(version.asInstanceOf[js.Any]).asInstanceOf[Servicenetworking]
+  
+  @scala.inline
+  def servicenetworking_v1beta(version: v1beta): typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking = ^.asInstanceOf[js.Dynamic].applyDynamic("servicenetworking")(version.asInstanceOf[js.Any]).asInstanceOf[typings.googleapis.servicenetworkingV1betaMod.servicenetworkingV1beta.Servicenetworking]
 }

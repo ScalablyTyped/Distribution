@@ -11,7 +11,6 @@ import typings.mendixmodelsdk.structuresMod.aliases.Container
 import typings.mendixmodelsdk.textsMod.texts.Text
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -55,9 +54,8 @@ object ValidationRule {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValidationRule.create")
-  @js.native
-  def create(model: IModel): ValidationRule = js.native
+  @scala.inline
+  def create(model: IModel): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   /**
     * Creates and returns a new ValidationRule instance in the SDK and on the server.
@@ -65,9 +63,8 @@ object ValidationRule {
     * of the parent Entity element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValidationRule.createIn")
-  @js.native
-  def createIn(container: Entity): ValidationRule = js.native
+  @scala.inline
+  def createIn(container: Entity): ValidationRule = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[ValidationRule]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/domainmodels", "domainmodels.ValidationRule.structureTypeName")

@@ -5,7 +5,6 @@ import org.scalablytyped.runtime.TopLevel
 import typings.reactSketchapp.reactSketchappNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object StyleSheet {
@@ -23,28 +22,25 @@ object StyleSheet {
   /**
     * Create an optimized `StyleSheet` reference from a style object.
     */
-  @JSImport("react-sketchapp", "StyleSheet.create")
-  @js.native
+  @scala.inline
   def create[T /* <: StringDictionary[Style | TextStyle] */](t: T): /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in keyof T ]: react-sketchapp.react-sketchapp.StyleReference}
-    */ typings.reactSketchapp.reactSketchappStrings.create with TopLevel[js.Any] = js.native
+    */ typings.reactSketchapp.reactSketchappStrings.create & TopLevel[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(t.asInstanceOf[js.Any]).asInstanceOf[/* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  {[ P in keyof T ]: react-sketchapp.react-sketchapp.StyleReference}
+    */ typings.reactSketchapp.reactSketchappStrings.create & TopLevel[js.Any]]
   
   /**
     * Flatten an array of style objects into one aggregated object, or look up the definition for a
     * registered stylesheet.
     */
-  @JSImport("react-sketchapp", "StyleSheet.flatten")
-  @js.native
-  def flatten(): Style | TextStyle = js.native
-  @JSImport("react-sketchapp", "StyleSheet.flatten")
-  @js.native
-  def flatten(input: js.Array[Style | TextStyle | StyleReference]): Style | TextStyle = js.native
-  @JSImport("react-sketchapp", "StyleSheet.flatten")
-  @js.native
-  def flatten(input: Style): Style | TextStyle = js.native
-  @JSImport("react-sketchapp", "StyleSheet.flatten")
-  @js.native
-  def flatten(input: StyleReference): Style | TextStyle = js.native
+  @scala.inline
+  def flatten(): Style | TextStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")().asInstanceOf[Style | TextStyle]
+  @scala.inline
+  def flatten(input: js.Array[Style | TextStyle | StyleReference]): Style | TextStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[Style | TextStyle]
+  @scala.inline
+  def flatten(input: Style): Style | TextStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[Style | TextStyle]
+  @scala.inline
+  def flatten(input: StyleReference): Style | TextStyle = ^.asInstanceOf[js.Dynamic].applyDynamic("flatten")(input.asInstanceOf[js.Any]).asInstanceOf[Style | TextStyle]
   
   @JSImport("react-sketchapp", "StyleSheet.hairlineWidth")
   @js.native
@@ -57,10 +53,8 @@ object StyleSheet {
   /**
     * resolve one style
     */
-  @JSImport("react-sketchapp", "StyleSheet.resolve")
-  @js.native
-  def resolve(style: Style): typings.reactSketchapp.anon.Style = js.native
-  @JSImport("react-sketchapp", "StyleSheet.resolve")
-  @js.native
-  def resolve(style: TextStyle): typings.reactSketchapp.anon.Style = js.native
+  @scala.inline
+  def resolve(style: Style): typings.reactSketchapp.anon.Style = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(style.asInstanceOf[js.Any]).asInstanceOf[typings.reactSketchapp.anon.Style]
+  @scala.inline
+  def resolve(style: TextStyle): typings.reactSketchapp.anon.Style = ^.asInstanceOf[js.Dynamic].applyDynamic("resolve")(style.asInstanceOf[js.Any]).asInstanceOf[typings.reactSketchapp.anon.Style]
 }

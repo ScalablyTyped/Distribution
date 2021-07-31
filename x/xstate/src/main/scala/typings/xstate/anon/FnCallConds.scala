@@ -5,7 +5,6 @@ import typings.xstate.typesMod.ChooseConditon
 import typings.xstate.typesMod.EventObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

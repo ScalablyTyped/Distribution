@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientMemcache.gapi.client.memcache
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NodeConfig extends StObject {
   
   /** Required. Number of cpus per Memcached node. */
-  var cpuCount: js.UndefOr[Double] = js.native
+  var cpuCount: js.UndefOr[Double] = js.undefined
   
   /** Required. Memory size in MiB for each Memcached node. */
-  var memorySizeMb: js.UndefOr[Double] = js.native
+  var memorySizeMb: js.UndefOr[Double] = js.undefined
 }
 object NodeConfig {
   

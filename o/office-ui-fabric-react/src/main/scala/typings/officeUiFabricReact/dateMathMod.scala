@@ -7,111 +7,93 @@ import typings.std.Date
 import typings.std.Number
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dateMathMod {
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "addDays")
+  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", JSImport.Namespace)
   @js.native
-  def addDays(date: Date, days: Double): Date = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "addMonths")
-  @js.native
-  def addMonths(date: Date, months: Double): Date = js.native
+  @scala.inline
+  def addDays(date: Date, days: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addDays")(date.asInstanceOf[js.Any], days.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "addWeeks")
-  @js.native
-  def addWeeks(date: Date, weeks: Double): Date = js.native
+  @scala.inline
+  def addMonths(date: Date, months: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addMonths")(date.asInstanceOf[js.Any], months.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "addYears")
-  @js.native
-  def addYears(date: Date, years: Double): Date = js.native
+  @scala.inline
+  def addWeeks(date: Date, weeks: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addWeeks")(date.asInstanceOf[js.Any], weeks.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "compareDatePart")
-  @js.native
-  def compareDatePart(date1: Date, date2: Date): Number = js.native
+  @scala.inline
+  def addYears(date: Date, years: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("addYears")(date.asInstanceOf[js.Any], years.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "compareDates")
-  @js.native
-  def compareDates(date1: Date, date2: Date): Boolean = js.native
+  @scala.inline
+  def compareDatePart(date1: Date, date2: Date): Number = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDatePart")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Number]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getDatePartHashValue")
-  @js.native
-  def getDatePartHashValue(date: Date): Double = js.native
+  @scala.inline
+  def compareDates(date1: Date, date2: Date): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("compareDates")(date1.asInstanceOf[js.Any], date2.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getDateRangeArray")
-  @js.native
-  def getDateRangeArray(date: Date, dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek): js.Array[Date] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getDateRangeArray")
-  @js.native
-  def getDateRangeArray(
-    date: Date,
-    dateRangeType: DateRangeType,
-    firstDayOfWeek: DayOfWeek,
-    workWeekDays: js.UndefOr[scala.Nothing],
-    daysToSelectInDayView: Double
-  ): js.Array[Date] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getDateRangeArray")
-  @js.native
+  @scala.inline
+  def getDatePartHashValue(date: Date): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDatePartHashValue")(date.asInstanceOf[js.Any]).asInstanceOf[Double]
+  
+  @scala.inline
+  def getDateRangeArray(date: Date, dateRangeType: DateRangeType, firstDayOfWeek: DayOfWeek): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
   def getDateRangeArray(
     date: Date,
     dateRangeType: DateRangeType,
     firstDayOfWeek: DayOfWeek,
     workWeekDays: js.Array[DayOfWeek]
-  ): js.Array[Date] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getDateRangeArray")
-  @js.native
+  ): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
   def getDateRangeArray(
     date: Date,
     dateRangeType: DateRangeType,
     firstDayOfWeek: DayOfWeek,
     workWeekDays: js.Array[DayOfWeek],
     daysToSelectInDayView: Double
-  ): js.Array[Date] = js.native
+  ): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], daysToSelectInDayView.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
+  @scala.inline
+  def getDateRangeArray(
+    date: Date,
+    dateRangeType: DateRangeType,
+    firstDayOfWeek: DayOfWeek,
+    workWeekDays: Unit,
+    daysToSelectInDayView: Double
+  ): js.Array[Date] = (^.asInstanceOf[js.Dynamic].applyDynamic("getDateRangeArray")(date.asInstanceOf[js.Any], dateRangeType.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], workWeekDays.asInstanceOf[js.Any], daysToSelectInDayView.asInstanceOf[js.Any])).asInstanceOf[js.Array[Date]]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getEndDateOfWeek")
-  @js.native
-  def getEndDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = js.native
+  @scala.inline
+  def getEndDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getEndDateOfWeek")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getMonthEnd")
-  @js.native
-  def getMonthEnd(date: Date): Date = js.native
+  @scala.inline
+  def getMonthEnd(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthEnd")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getMonthStart")
-  @js.native
-  def getMonthStart(date: Date): Date = js.native
+  @scala.inline
+  def getMonthStart(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getMonthStart")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getStartDateOfWeek")
-  @js.native
-  def getStartDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = js.native
+  @scala.inline
+  def getStartDateOfWeek(date: Date, firstDayOfWeek: DayOfWeek): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("getStartDateOfWeek")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any])).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getWeekNumber")
-  @js.native
-  def getWeekNumber(date: Date, firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear): Double = js.native
+  @scala.inline
+  def getWeekNumber(date: Date, firstDayOfWeek: DayOfWeek, firstWeekOfYear: FirstWeekOfYear): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekNumber")(date.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getWeekNumbersInMonth")
-  @js.native
+  @scala.inline
   def getWeekNumbersInMonth(
     weeksInMonth: Double,
     firstDayOfWeek: DayOfWeek,
     firstWeekOfYear: FirstWeekOfYear,
     navigatedDate: Date
-  ): js.Array[Double] = js.native
+  ): js.Array[Double] = (^.asInstanceOf[js.Dynamic].applyDynamic("getWeekNumbersInMonth")(weeksInMonth.asInstanceOf[js.Any], firstDayOfWeek.asInstanceOf[js.Any], firstWeekOfYear.asInstanceOf[js.Any], navigatedDate.asInstanceOf[js.Any])).asInstanceOf[js.Array[Double]]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getYearEnd")
-  @js.native
-  def getYearEnd(date: Date): Date = js.native
+  @scala.inline
+  def getYearEnd(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearEnd")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "getYearStart")
-  @js.native
-  def getYearStart(date: Date): Date = js.native
+  @scala.inline
+  def getYearStart(date: Date): Date = ^.asInstanceOf[js.Dynamic].applyDynamic("getYearStart")(date.asInstanceOf[js.Any]).asInstanceOf[Date]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "isInDateRangeArray")
-  @js.native
-  def isInDateRangeArray(date: Date, dateRange: js.Array[Date]): Boolean = js.native
+  @scala.inline
+  def isInDateRangeArray(date: Date, dateRange: js.Array[Date]): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isInDateRangeArray")(date.asInstanceOf[js.Any], dateRange.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/dateMath/DateMath", "setMonth")
-  @js.native
-  def setMonth(date: Date, month: Double): Date = js.native
+  @scala.inline
+  def setMonth(date: Date, month: Double): Date = (^.asInstanceOf[js.Dynamic].applyDynamic("setMonth")(date.asInstanceOf[js.Any], month.asInstanceOf[js.Any])).asInstanceOf[Date]
 }

@@ -2,25 +2,34 @@ package typings.discourseSso
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("discourse-sso", JSImport.Namespace)
   @js.native
-  class ^ protected () extends DiscourseSSO {
+  class ^ protected ()
+    extends StObject
+       with DiscourseSSO {
     def this(ssoSecret: String) = this()
+    
+    /* CompleteClass */
+    override def buildLoginString(params: UserParams): String = js.native
+    
+    /* CompleteClass */
+    override def getNonce(payload: String): String = js.native
+    
+    /* CompleteClass */
+    override def validate(payload: String, sig: String): Boolean = js.native
   }
   
-  @js.native
   trait DiscourseSSO extends StObject {
     
-    def buildLoginString(params: UserParams): String = js.native
+    def buildLoginString(params: UserParams): String
     
-    def getNonce(payload: String): String = js.native
+    def getNonce(payload: String): String
     
-    def validate(payload: String, sig: String): Boolean = js.native
+    def validate(payload: String, sig: String): Boolean
   }
   object DiscourseSSO {
     
@@ -48,28 +57,27 @@ object mod {
     }
   }
   
-  @js.native
   trait UserParams extends StObject {
     
-    var add_groups: js.UndefOr[js.Array[String]] = js.native
+    var add_groups: js.UndefOr[js.Array[String]] = js.undefined
     
-    var admin: js.UndefOr[Boolean] = js.native
+    var admin: js.UndefOr[Boolean] = js.undefined
     
-    var avatar_url: js.UndefOr[String] = js.native
+    var avatar_url: js.UndefOr[String] = js.undefined
     
-    var email: String = js.native
+    var email: String
     
-    var external_id: String = js.native
+    var external_id: String
     
-    var moderator: js.UndefOr[Boolean] = js.native
+    var moderator: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var nonce: String = js.native
+    var nonce: String
     
-    var remove_groups: js.UndefOr[js.Array[String]] = js.native
+    var remove_groups: js.UndefOr[js.Array[String]] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object UserParams {
     

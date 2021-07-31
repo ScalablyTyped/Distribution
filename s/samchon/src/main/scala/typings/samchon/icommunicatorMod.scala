@@ -4,18 +4,18 @@ import typings.samchon.invokeMod.Invoke
 import typings.samchon.iprotocolMod.IProtocol
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object icommunicatorMod {
   
-  @js.native
-  trait ICommunicator extends IProtocol {
+  trait ICommunicator
+    extends StObject
+       with IProtocol {
     
     /**
       * Close connection.
       */
-    def close(): Unit = js.native
+    def close(): Unit
     
     /**
       * Test connection.
@@ -26,12 +26,12 @@ object icommunicatorMod {
       *
       * @return true if connected, otherwise false.
       */
-    def isConnected(): Boolean = js.native
+    def isConnected(): Boolean
     
     /**
       * Callback function for connection closed.
       */
-    var onClose: js.Function = js.native
+    var onClose: js.Function
   }
   object ICommunicator {
     

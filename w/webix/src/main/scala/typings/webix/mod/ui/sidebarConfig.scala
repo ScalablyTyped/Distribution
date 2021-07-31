@@ -6,121 +6,119 @@ import typings.webix.mod.EventHash
 import typings.webix.mod.WebixCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait sidebarConfig extends StObject {
   
-  var activeTitle: js.UndefOr[Boolean] = js.native
+  var activeTitle: js.UndefOr[Boolean] = js.undefined
   
-  var animate: js.UndefOr[js.Any] = js.native
+  var animate: js.UndefOr[js.Any] = js.undefined
   
-  var borderless: js.UndefOr[Boolean] = js.native
+  var borderless: js.UndefOr[Boolean] = js.undefined
   
-  var click: js.UndefOr[String | WebixCallback] = js.native
+  var click: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var clipboard: js.UndefOr[Boolean | String] = js.native
+  var clipboard: js.UndefOr[Boolean | String] = js.undefined
   
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var collapsedWidth: js.UndefOr[Double] = js.native
+  var collapsedWidth: js.UndefOr[Double] = js.undefined
   
-  var container: js.UndefOr[String | HTMLElement] = js.native
+  var container: js.UndefOr[String | HTMLElement] = js.undefined
   
-  var css: js.UndefOr[js.Any] = js.native
+  var css: js.UndefOr[js.Any] = js.undefined
   
-  var data: js.UndefOr[String | js.Array[_]] = js.native
+  var data: js.UndefOr[String | js.Array[js.Any]] = js.undefined
   
-  var dataFeed: js.UndefOr[String | WebixCallback] = js.native
+  var dataFeed: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var datathrottle: js.UndefOr[Double] = js.native
+  var datathrottle: js.UndefOr[Double] = js.undefined
   
-  var datatype: js.UndefOr[String] = js.native
+  var datatype: js.UndefOr[String] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var drag: js.UndefOr[Boolean | String] = js.native
+  var drag: js.UndefOr[Boolean | String] = js.undefined
   
-  var dragscroll: js.UndefOr[Boolean | String] = js.native
+  var dragscroll: js.UndefOr[Boolean | String] = js.undefined
   
-  var filterMode: js.UndefOr[js.Any] = js.native
+  var filterMode: js.UndefOr[js.Any] = js.undefined
   
-  var gravity: js.UndefOr[Double] = js.native
+  var gravity: js.UndefOr[Double] = js.undefined
   
-  var height: js.UndefOr[Double] = js.native
+  var height: js.UndefOr[Double] = js.undefined
   
-  var hidden: js.UndefOr[Boolean] = js.native
+  var hidden: js.UndefOr[Boolean] = js.undefined
   
-  var id: js.UndefOr[String | Double] = js.native
+  var id: js.UndefOr[String | Double] = js.undefined
   
-  var item: js.UndefOr[js.Any] = js.native
+  var item: js.UndefOr[js.Any] = js.undefined
   
-  var keyPressTimeout: js.UndefOr[Double] = js.native
+  var keyPressTimeout: js.UndefOr[Double] = js.undefined
   
-  var maxHeight: js.UndefOr[Double] = js.native
+  var maxHeight: js.UndefOr[Double] = js.undefined
   
-  var maxWidth: js.UndefOr[Double] = js.native
+  var maxWidth: js.UndefOr[Double] = js.undefined
   
-  var minHeight: js.UndefOr[Double] = js.native
+  var minHeight: js.UndefOr[Double] = js.undefined
   
-  var minWidth: js.UndefOr[Double] = js.native
+  var minWidth: js.UndefOr[Double] = js.undefined
   
-  var mouseEventDelay: js.UndefOr[Double] = js.native
+  var mouseEventDelay: js.UndefOr[Double] = js.undefined
   
-  var multipleOpen: js.UndefOr[Boolean] = js.native
+  var multipleOpen: js.UndefOr[Boolean] = js.undefined
   
-  var multiselect: js.UndefOr[String | Boolean] = js.native
+  var multiselect: js.UndefOr[String | Boolean] = js.undefined
   
-  var navigation: js.UndefOr[Boolean] = js.native
+  var navigation: js.UndefOr[Boolean] = js.undefined
   
-  var on: js.UndefOr[EventHash] = js.native
+  var on: js.UndefOr[EventHash] = js.undefined
   
-  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onClick: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var onContext: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
-  var onDblClick: js.UndefOr[WebixCallback] = js.native
+  var onDblClick: js.UndefOr[WebixCallback] = js.undefined
   
-  var onMouseMove: js.UndefOr[WebixCallback] = js.native
+  var onMouseMove: js.UndefOr[WebixCallback] = js.undefined
   
-  var pager: js.UndefOr[js.Any] = js.native
+  var pager: js.UndefOr[js.Any] = js.undefined
   
-  var position: js.UndefOr[String] = js.native
+  var position: js.UndefOr[String] = js.undefined
   
-  var ready: js.UndefOr[WebixCallback] = js.native
+  var ready: js.UndefOr[WebixCallback] = js.undefined
   
-  var removeMissed: js.UndefOr[Boolean] = js.native
+  var removeMissed: js.UndefOr[Boolean] = js.undefined
   
-  var rules: js.UndefOr[js.Any] = js.native
+  var rules: js.UndefOr[js.Any] = js.undefined
   
-  var save: js.UndefOr[js.Any] = js.native
+  var save: js.UndefOr[js.Any] = js.undefined
   
-  var scheme: js.UndefOr[js.Any] = js.native
+  var scheme: js.UndefOr[js.Any] = js.undefined
   
-  var scroll: js.UndefOr[Boolean | String] = js.native
+  var scroll: js.UndefOr[Boolean | String] = js.undefined
   
-  var scrollSpeed: js.UndefOr[String] = js.native
+  var scrollSpeed: js.UndefOr[String] = js.undefined
   
-  var select: js.UndefOr[Boolean | String] = js.native
+  var select: js.UndefOr[Boolean | String] = js.undefined
   
-  var template: js.UndefOr[String | WebixCallback] = js.native
+  var template: js.UndefOr[String | WebixCallback] = js.undefined
   
-  var templateCopy: js.UndefOr[WebixCallback] = js.native
+  var templateCopy: js.UndefOr[WebixCallback] = js.undefined
   
-  var threeState: js.UndefOr[Boolean] = js.native
+  var threeState: js.UndefOr[Boolean] = js.undefined
   
-  var titleHeight: js.UndefOr[Double] = js.native
+  var titleHeight: js.UndefOr[Double] = js.undefined
   
-  var tooltip: js.UndefOr[js.Any] = js.native
+  var tooltip: js.UndefOr[js.Any] = js.undefined
   
-  var `type`: js.UndefOr[js.Any] = js.native
+  var `type`: js.UndefOr[js.Any] = js.undefined
   
-  var url: js.UndefOr[js.Any] = js.native
+  var url: js.UndefOr[js.Any] = js.undefined
   
-  var view: js.UndefOr[String] = js.native
+  var view: js.UndefOr[String] = js.undefined
   
-  var width: js.UndefOr[Double] = js.native
+  var width: js.UndefOr[Double] = js.undefined
 }
 object sidebarConfig {
   
@@ -153,9 +151,6 @@ object sidebarConfig {
     
     @scala.inline
     def setClick(value: String | WebixCallback): Self = StObject.set(x, "click", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setClickFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "click", js.Any.fromFunction1(value))
     
     @scala.inline
     def setClickUndefined: Self = StObject.set(x, "click", js.undefined)
@@ -191,13 +186,10 @@ object sidebarConfig {
     def setCssUndefined: Self = StObject.set(x, "css", js.undefined)
     
     @scala.inline
-    def setData(value: String | js.Array[_]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
+    def setData(value: String | js.Array[js.Any]): Self = StObject.set(x, "data", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setDataFeed(value: String | WebixCallback): Self = StObject.set(x, "dataFeed", value.asInstanceOf[js.Any])
-    
-    @scala.inline
-    def setDataFeedFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "dataFeed", js.Any.fromFunction1(value))
     
     @scala.inline
     def setDataFeedUndefined: Self = StObject.set(x, "dataFeed", js.undefined)
@@ -344,13 +336,13 @@ object sidebarConfig {
     def setOnContextUndefined: Self = StObject.set(x, "onContext", js.undefined)
     
     @scala.inline
-    def setOnDblClick(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onDblClick", js.Any.fromFunction1(value))
+    def setOnDblClick(value: WebixCallback): Self = StObject.set(x, "onDblClick", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnDblClickUndefined: Self = StObject.set(x, "onDblClick", js.undefined)
     
     @scala.inline
-    def setOnMouseMove(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "onMouseMove", js.Any.fromFunction1(value))
+    def setOnMouseMove(value: WebixCallback): Self = StObject.set(x, "onMouseMove", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setOnMouseMoveUndefined: Self = StObject.set(x, "onMouseMove", js.undefined)
@@ -371,7 +363,7 @@ object sidebarConfig {
     def setPositionUndefined: Self = StObject.set(x, "position", js.undefined)
     
     @scala.inline
-    def setReady(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "ready", js.Any.fromFunction1(value))
+    def setReady(value: WebixCallback): Self = StObject.set(x, "ready", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setReadyUndefined: Self = StObject.set(x, "ready", js.undefined)
@@ -422,13 +414,10 @@ object sidebarConfig {
     def setTemplate(value: String | WebixCallback): Self = StObject.set(x, "template", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setTemplateCopy(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "templateCopy", js.Any.fromFunction1(value))
+    def setTemplateCopy(value: WebixCallback): Self = StObject.set(x, "templateCopy", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setTemplateCopyUndefined: Self = StObject.set(x, "templateCopy", js.undefined)
-    
-    @scala.inline
-    def setTemplateFunction1(value: /* repeated */ js.Any => js.Any): Self = StObject.set(x, "template", js.Any.fromFunction1(value))
     
     @scala.inline
     def setTemplateUndefined: Self = StObject.set(x, "template", js.undefined)

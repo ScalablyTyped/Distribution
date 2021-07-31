@@ -2,26 +2,24 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LowLevelStyleFunctionArguments[N, S] extends StObject {
   
-  var alias: js.UndefOr[String] = js.native
+  var alias: js.UndefOr[String] = js.undefined
   
-  var cssProperty: js.UndefOr[String] = js.native
+  var cssProperty: js.UndefOr[String] = js.undefined
   
-  var key: js.UndefOr[String] = js.native
+  var key: js.UndefOr[String] = js.undefined
   
-  var prop: String = js.native
+  var prop: String
   
   // new v5 api
-  var properties: js.UndefOr[js.Array[String]] = js.native
+  var properties: js.UndefOr[js.Array[String]] = js.undefined
   
-  var scale: js.UndefOr[S] = js.native
+  var scale: js.UndefOr[S] = js.undefined
   
-  var transformValue: js.UndefOr[js.Function2[/* n */ N, /* scale */ js.UndefOr[S], _]] = js.native
+  var transformValue: js.UndefOr[js.Function2[/* n */ N, /* scale */ js.UndefOr[S], js.Any]] = js.undefined
 }
 object LowLevelStyleFunctionArguments {
   
@@ -32,7 +30,7 @@ object LowLevelStyleFunctionArguments {
   }
   
   @scala.inline
-  implicit class LowLevelStyleFunctionArgumentsMutableBuilder[Self <: LowLevelStyleFunctionArguments[_, _], N, S] (val x: Self with (LowLevelStyleFunctionArguments[N, S])) extends AnyVal {
+  implicit class LowLevelStyleFunctionArgumentsMutableBuilder[Self <: LowLevelStyleFunctionArguments[?, ?], N, S] (val x: Self & (LowLevelStyleFunctionArguments[N, S])) extends AnyVal {
     
     @scala.inline
     def setAlias(value: String): Self = StObject.set(x, "alias", value.asInstanceOf[js.Any])
@@ -71,7 +69,7 @@ object LowLevelStyleFunctionArguments {
     def setScaleUndefined: Self = StObject.set(x, "scale", js.undefined)
     
     @scala.inline
-    def setTransformValue(value: (/* n */ N, /* scale */ js.UndefOr[S]) => _): Self = StObject.set(x, "transformValue", js.Any.fromFunction2(value))
+    def setTransformValue(value: (/* n */ N, /* scale */ js.UndefOr[S]) => js.Any): Self = StObject.set(x, "transformValue", js.Any.fromFunction2(value))
     
     @scala.inline
     def setTransformValueUndefined: Self = StObject.set(x, "transformValue", js.undefined)

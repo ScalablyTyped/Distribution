@@ -6,25 +6,27 @@ import typings.dotenv.mod.DotenvParseOutput
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("dotenv-safe", "config")
+  @JSImport("dotenv-safe", JSImport.Namespace)
   @js.native
-  def config(): DotenvSafeConfigOutput = js.native
-  @JSImport("dotenv-safe", "config")
-  @js.native
-  def config(options: DotenvSafeOptions): DotenvSafeConfigOutput = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
-  trait DotenvSafeConfigOutput extends DotenvConfigOutput {
+  @scala.inline
+  def config(): DotenvSafeConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")().asInstanceOf[DotenvSafeConfigOutput]
+  @scala.inline
+  def config(options: DotenvSafeOptions): DotenvSafeConfigOutput = ^.asInstanceOf[js.Dynamic].applyDynamic("config")(options.asInstanceOf[js.Any]).asInstanceOf[DotenvSafeConfigOutput]
+  
+  trait DotenvSafeConfigOutput
+    extends StObject
+       with DotenvConfigOutput {
     
     /**
       * key-value pairs required by .env.example
       */
-    var required: DotenvParseOutput = js.native
+    var required: DotenvParseOutput
   }
   object DotenvSafeConfigOutput {
     
@@ -42,26 +44,27 @@ object mod {
     }
   }
   
-  @js.native
-  trait DotenvSafeOptions extends DotenvConfigOptions {
+  trait DotenvSafeOptions
+    extends StObject
+       with DotenvConfigOptions {
     
     /**
       * Enabling this option will not throw an error after loading.
       * @default false
       */
-    var allowEmptyValues: js.UndefOr[Boolean] = js.native
+    var allowEmptyValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Path to example environment file. (Option 1)
       * @default ".env.example"
       */
-    var example: js.UndefOr[String] = js.native
+    var example: js.UndefOr[String] = js.undefined
     
     /**
       * Path to example environment file. (Option 2 -- example takes precedence)
       * @default ".env.example"
       */
-    var sample: js.UndefOr[String] = js.native
+    var sample: js.UndefOr[String] = js.undefined
   }
   object DotenvSafeOptions {
     
@@ -94,18 +97,19 @@ object mod {
     }
   }
   
-  @js.native
-  trait MissingEnvVarsError extends Error {
+  trait MissingEnvVarsError
+    extends StObject
+       with Error {
     
     /**
       * Variables which existing in the sample file, but not in the loaded file.
       */
-    var missing: js.Array[String] = js.native
+    var missing: js.Array[String]
     
     /**
       * Path to example environment file.
       */
-    var sample: String = js.native
+    var sample: String
   }
   object MissingEnvVarsError {
     

@@ -2,13 +2,13 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MlDeleteTrainedModel extends Generic {
+trait MlDeleteTrainedModel
+  extends StObject
+     with Generic {
   
-  var model_id: String = js.native
+  var model_id: String
 }
 object MlDeleteTrainedModel {
   

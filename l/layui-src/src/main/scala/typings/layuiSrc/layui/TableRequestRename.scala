@@ -2,15 +2,13 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TableRequestRename extends StObject {
   
-  var limitName: String = js.native
+  var limitName: String
   
-  var pageName: String = js.native
+  var pageName: String
 }
 object TableRequestRename {
   

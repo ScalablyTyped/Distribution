@@ -4,21 +4,21 @@ import typings.react.mod.ReactNode
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OverlayProps extends OverlayTypeaheadProps {
+trait OverlayProps
+  extends StObject
+     with OverlayTypeaheadProps {
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var container: HTMLElement = js.native
+  var container: HTMLElement
   
-  var referenceElement: js.UndefOr[HTMLElement] = js.native
+  var referenceElement: js.UndefOr[HTMLElement] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
 }
 object OverlayProps {
   

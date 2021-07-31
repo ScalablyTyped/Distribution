@@ -2,21 +2,21 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextSnapshotLine extends ITextSnapshotLine {
+trait TextSnapshotLine
+  extends StObject
+     with ITextSnapshotLine {
   
-  var _end: js.Any = js.native
+  var _end: js.Any
   
-  var _lineBreak: js.Any = js.native
+  var _lineBreak: js.Any
   
-  var _lineNumber: js.Any = js.native
+  var _lineNumber: js.Any
   
-  var _snapshot: js.Any = js.native
+  var _snapshot: js.Any
   
-  var _start: js.Any = js.native
+  var _start: js.Any
 }
 object TextSnapshotLine {
   

@@ -9,7 +9,6 @@ import typings.reactNative.mod.StyleProp
 import typings.reactNative.mod.ViewStyle
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object radioItemMod {
@@ -27,14 +26,14 @@ object radioItemMod {
     var radio: typings.antDesignReactNative.radioRadioMod.default | Null = js.native
   }
   
-  @js.native
   trait RadioItemNativeProps
-    extends RadioItemPropsType
+    extends StObject
+       with RadioItemPropsType
        with WithThemeStyles[RadioStyle] {
     
-    var radioStyle: js.UndefOr[StyleProp[ImageStyle]] = js.native
+    var radioStyle: js.UndefOr[StyleProp[ImageStyle]] = js.undefined
     
-    var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+    var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
   }
   object RadioItemNativeProps {
     

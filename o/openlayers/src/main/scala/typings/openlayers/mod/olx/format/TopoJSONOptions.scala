@@ -3,13 +3,11 @@ package typings.openlayers.mod.olx.format
 import typings.openlayers.mod.ProjectionLike
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TopoJSONOptions extends StObject {
   
-  var defaultDataProjection: ProjectionLike = js.native
+  var defaultDataProjection: ProjectionLike
 }
 object TopoJSONOptions {
   

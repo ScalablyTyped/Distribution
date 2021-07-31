@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,8 +19,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.form.control.GridControl
   * @see com.sun.star.form.component.GridControl
   */
-@js.native
-trait XGridFieldDataSupplier extends XInterface {
+trait XGridFieldDataSupplier
+  extends StObject
+     with XInterface {
   
   /**
     * retrieves the actual column data for the given row
@@ -29,7 +29,7 @@ trait XGridFieldDataSupplier extends XInterface {
     * If a column does not support the requested type, `NULL` is returned at the respective position.
     * @see XGridFieldDataSupplier.queryFieldDataType
     */
-  def queryFieldData(nRow: Double, xType: `type`): SafeArray[_] = js.native
+  def queryFieldData(nRow: Double, xType: `type`): SafeArray[js.Any]
   
   /**
     * checks whether or not the content of the grid's columns can be retrieved in the requested format.
@@ -41,14 +41,14 @@ trait XGridFieldDataSupplier extends XInterface {
     * @see DataAwareControlModel
     * @see XGridFieldDataSupplier.queryFieldData
     */
-  def queryFieldDataType(xType: `type`): SafeArray[Boolean] = js.native
+  def queryFieldDataType(xType: `type`): SafeArray[Boolean]
 }
 object XGridFieldDataSupplier {
   
   @scala.inline
   def apply(
     acquire: () => Unit,
-    queryFieldData: (Double, `type`) => SafeArray[_],
+    queryFieldData: (Double, `type`) => SafeArray[js.Any],
     queryFieldDataType: `type` => SafeArray[Boolean],
     queryInterface: `type` => js.Any,
     release: () => Unit
@@ -61,7 +61,7 @@ object XGridFieldDataSupplier {
   implicit class XGridFieldDataSupplierMutableBuilder[Self <: XGridFieldDataSupplier] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setQueryFieldData(value: (Double, `type`) => SafeArray[_]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
+    def setQueryFieldData(value: (Double, `type`) => SafeArray[js.Any]): Self = StObject.set(x, "queryFieldData", js.Any.fromFunction2(value))
     
     @scala.inline
     def setQueryFieldDataType(value: `type` => SafeArray[Boolean]): Self = StObject.set(x, "queryFieldDataType", js.Any.fromFunction1(value))

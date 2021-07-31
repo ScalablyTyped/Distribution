@@ -2,17 +2,15 @@ package typings.countryList
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Code extends StObject {
     
-    var code: String = js.native
+    var code: String
     
-    var name: String = js.native
+    var name: String
   }
   object Code {
     

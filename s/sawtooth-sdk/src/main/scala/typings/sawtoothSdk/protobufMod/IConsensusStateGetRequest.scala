@@ -3,17 +3,15 @@ package typings.sawtoothSdk.protobufMod
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusStateGetRequest extends StObject {
   
   /** ConsensusStateGetRequest addresses */
-  var addresses: js.UndefOr[js.Array[String] | Null] = js.native
+  var addresses: js.UndefOr[js.Array[String] | Null] = js.undefined
   
   /** ConsensusStateGetRequest blockId */
-  var blockId: js.UndefOr[Uint8Array | Null] = js.native
+  var blockId: js.UndefOr[Uint8Array | Null] = js.undefined
 }
 object IConsensusStateGetRequest {
   

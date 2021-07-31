@@ -10,36 +10,34 @@ import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestEntriesRequest
 import typings.devtoolsProtocol.mod.Protocol.CacheStorage.RequestEntriesResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CacheStorageApi extends StObject {
   
   /**
     * Deletes a cache.
     */
-  def deleteCache(params: DeleteCacheRequest): js.Promise[Unit] = js.native
+  def deleteCache(params: DeleteCacheRequest): js.Promise[Unit]
   
   /**
     * Deletes a cache entry.
     */
-  def deleteEntry(params: DeleteEntryRequest): js.Promise[Unit] = js.native
+  def deleteEntry(params: DeleteEntryRequest): js.Promise[Unit]
   
   /**
     * Requests cache names.
     */
-  def requestCacheNames(params: RequestCacheNamesRequest): js.Promise[RequestCacheNamesResponse] = js.native
+  def requestCacheNames(params: RequestCacheNamesRequest): js.Promise[RequestCacheNamesResponse]
   
   /**
     * Fetches cache entry.
     */
-  def requestCachedResponse(params: RequestCachedResponseRequest): js.Promise[RequestCachedResponseResponse] = js.native
+  def requestCachedResponse(params: RequestCachedResponseRequest): js.Promise[RequestCachedResponseResponse]
   
   /**
     * Requests data from cache.
     */
-  def requestEntries(params: RequestEntriesRequest): js.Promise[RequestEntriesResponse] = js.native
+  def requestEntries(params: RequestEntriesRequest): js.Promise[RequestEntriesResponse]
 }
 object CacheStorageApi {
   

@@ -3,14 +3,12 @@ package typings.googleapis.dataprocV1Mod.dataprocV1
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * A Cloud Dataproc job for running Apache Hive (https://hive.apache.org/)
   * queries on YARN.
   */
-@js.native
 trait SchemaHiveJob extends StObject {
   
   /**
@@ -18,13 +16,13 @@ trait SchemaHiveJob extends StObject {
     * default value is false. Setting to true can be useful when executing
     * independent parallel queries.
     */
-  var continueOnFailure: js.UndefOr[Boolean] = js.native
+  var continueOnFailure: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Optional. HCFS URIs of jar files to add to the CLASSPATH of the Hive
     * server and Hadoop MapReduce (MR) tasks. Can contain Hive SerDes and UDFs.
     */
-  var jarFileUris: js.UndefOr[js.Array[String]] = js.native
+  var jarFileUris: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * Optional. A mapping of property names and values, used to configure Hive.
@@ -32,23 +30,23 @@ trait SchemaHiveJob extends StObject {
     * overwritten. Can include properties set in /etc/hadoop/conf/ *-site.xml,
     * /etc/hive/conf/hive-site.xml, and classes in user code.
     */
-  var properties: js.UndefOr[StringDictionary[String]] = js.native
+  var properties: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * The HCFS URI of the script that contains Hive queries.
     */
-  var queryFileUri: js.UndefOr[String] = js.native
+  var queryFileUri: js.UndefOr[String] = js.undefined
   
   /**
     * A list of queries.
     */
-  var queryList: js.UndefOr[SchemaQueryList] = js.native
+  var queryList: js.UndefOr[SchemaQueryList] = js.undefined
   
   /**
     * Optional. Mapping of query variable names to values (equivalent to the
     * Hive command: SET name=&quot;value&quot;;).
     */
-  var scriptVariables: js.UndefOr[StringDictionary[String]] = js.native
+  var scriptVariables: js.UndefOr[StringDictionary[String]] = js.undefined
 }
 object SchemaHiveJob {
   

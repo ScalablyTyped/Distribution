@@ -13,55 +13,53 @@ import typings.react.mod.RefAttributes
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object checkboxCheckboxMod extends Shortcut {
   
   @JSImport("antd/lib/checkbox/Checkbox", JSImport.Default)
   @js.native
-  val default: ForwardRefExoticComponent[CheckboxProps with RefAttributes[_]] = js.native
+  val default: ForwardRefExoticComponent[CheckboxProps & RefAttributes[js.Any]] = js.native
   
-  @js.native
   trait AbstractCheckboxProps[T] extends StObject {
     
-    var autoFocus: js.UndefOr[Boolean] = js.native
+    var autoFocus: js.UndefOr[Boolean] = js.undefined
     
-    var checked: js.UndefOr[Boolean] = js.native
+    var checked: js.UndefOr[Boolean] = js.undefined
     
-    var children: js.UndefOr[ReactNode] = js.native
+    var children: js.UndefOr[ReactNode] = js.undefined
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var defaultChecked: js.UndefOr[Boolean] = js.native
+    var defaultChecked: js.UndefOr[Boolean] = js.undefined
     
-    var disabled: js.UndefOr[Boolean] = js.native
+    var disabled: js.UndefOr[Boolean] = js.undefined
     
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* e */ T, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* e */ T, Unit]] = js.undefined
     
-    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onClick: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+    var onKeyDown: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
     
-    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.native
+    var onKeyPress: js.UndefOr[KeyboardEventHandler[HTMLElement]] = js.undefined
     
-    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onMouseEnter: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.native
+    var onMouseLeave: js.UndefOr[MouseEventHandler[HTMLElement]] = js.undefined
     
-    var prefixCls: js.UndefOr[String] = js.native
+    var prefixCls: js.UndefOr[String] = js.undefined
     
-    var style: js.UndefOr[CSSProperties] = js.native
+    var style: js.UndefOr[CSSProperties] = js.undefined
     
-    var tabIndex: js.UndefOr[Double] = js.native
+    var tabIndex: js.UndefOr[Double] = js.undefined
     
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[js.Any] = js.native
+    var value: js.UndefOr[js.Any] = js.undefined
   }
   object AbstractCheckboxProps {
     
@@ -72,7 +70,7 @@ object checkboxCheckboxMod extends Shortcut {
     }
     
     @scala.inline
-    implicit class AbstractCheckboxPropsMutableBuilder[Self <: AbstractCheckboxProps[_], T] (val x: Self with AbstractCheckboxProps[T]) extends AnyVal {
+    implicit class AbstractCheckboxPropsMutableBuilder[Self <: AbstractCheckboxProps[?], T] (val x: Self & AbstractCheckboxProps[T]) extends AnyVal {
       
       @scala.inline
       def setAutoFocus(value: Boolean): Self = StObject.set(x, "autoFocus", value.asInstanceOf[js.Any])
@@ -190,16 +188,15 @@ object checkboxCheckboxMod extends Shortcut {
     }
   }
   
-  @js.native
   trait CheckboxChangeEvent extends StObject {
     
-    var nativeEvent: typings.std.MouseEvent = js.native
+    var nativeEvent: typings.std.MouseEvent
     
-    def preventDefault(): Unit = js.native
+    def preventDefault(): Unit
     
-    def stopPropagation(): Unit = js.native
+    def stopPropagation(): Unit
     
-    var target: CheckboxChangeEventTarget = js.native
+    var target: CheckboxChangeEventTarget
   }
   object CheckboxChangeEvent {
     
@@ -231,11 +228,12 @@ object checkboxCheckboxMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CheckboxChangeEventTarget extends CheckboxProps {
+  trait CheckboxChangeEventTarget
+    extends StObject
+       with CheckboxProps {
     
     @JSName("checked")
-    var checked_CheckboxChangeEventTarget: Boolean = js.native
+    var checked_CheckboxChangeEventTarget: Boolean
   }
   object CheckboxChangeEventTarget {
     
@@ -253,10 +251,11 @@ object checkboxCheckboxMod extends Shortcut {
     }
   }
   
-  @js.native
-  trait CheckboxProps extends AbstractCheckboxProps[CheckboxChangeEvent] {
+  trait CheckboxProps
+    extends StObject
+       with AbstractCheckboxProps[CheckboxChangeEvent] {
     
-    var indeterminate: js.UndefOr[Boolean] = js.native
+    var indeterminate: js.UndefOr[Boolean] = js.undefined
   }
   object CheckboxProps {
     
@@ -277,8 +276,8 @@ object checkboxCheckboxMod extends Shortcut {
     }
   }
   
-  type _To = ForwardRefExoticComponent[CheckboxProps with RefAttributes[_]]
+  type _To = ForwardRefExoticComponent[CheckboxProps & RefAttributes[js.Any]]
   
   /* This means you don't have to write `default`, but can instead just say `checkboxCheckboxMod.foo` */
-  override def _to: ForwardRefExoticComponent[CheckboxProps with RefAttributes[_]] = default
+  override def _to: ForwardRefExoticComponent[CheckboxProps & RefAttributes[js.Any]] = default
 }

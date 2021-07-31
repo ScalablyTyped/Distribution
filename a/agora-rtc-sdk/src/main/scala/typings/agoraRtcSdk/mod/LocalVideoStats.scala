@@ -2,7 +2,6 @@ package typings.agoraRtcSdk.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,20 +9,19 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *
   * If {@link getLocalVideoStats} is called successfully, the {@link LocalVideoStatsMap} interface provides the UID and {@link LocalVideoStats} of the local user.
   */
-@js.native
 trait LocalVideoStats extends StObject {
   
   /** Frame rate of the captured video, in fps. */
-  val CaptureFrameRate: js.UndefOr[String] = js.native
+  val CaptureFrameRate: js.UndefOr[String] = js.undefined
   
   /** Height (pixels) of the captured video. */
-  val CaptureResolutionHeight: js.UndefOr[String] = js.native
+  val CaptureResolutionHeight: js.UndefOr[String] = js.undefined
   
   /** Width (pixels) of the captured video. */
-  val CaptureResolutionWidth: js.UndefOr[String] = js.native
+  val CaptureResolutionWidth: js.UndefOr[String] = js.undefined
   
   /** Delay from capturing to encoding the local video, in ms. */
-  val EncodeDelay: js.UndefOr[String] = js.native
+  val EncodeDelay: js.UndefOr[String] = js.undefined
   
   /**
     * Whether the video is muted or not.
@@ -31,28 +29,28 @@ trait LocalVideoStats extends StObject {
     * - "1": Muted.
     * - "0": Unmuted.
     */
-  val MuteState: js.UndefOr[String] = js.native
+  val MuteState: js.UndefOr[String] = js.undefined
   
   /** Bitrate of the sent video, in Kbps. */
-  val SendBitrate: js.UndefOr[String] = js.native
+  val SendBitrate: js.UndefOr[String] = js.undefined
   
   /** Frame rate of the sent video, in fps. */
-  val SendFrameRate: js.UndefOr[String] = js.native
+  val SendFrameRate: js.UndefOr[String] = js.undefined
   
   /** Height of the sent video, in pixels. */
-  val SendResolutionHeight: js.UndefOr[String] = js.native
+  val SendResolutionHeight: js.UndefOr[String] = js.undefined
   
   /** Width of the sent video, in pixels. */
-  val SendResolutionWidth: js.UndefOr[String] = js.native
+  val SendResolutionWidth: js.UndefOr[String] = js.undefined
   
   /** Bitrate of the local video set in [[setVideoProfile]]. */
-  val TargetSendBitrate: js.UndefOr[String] = js.native
+  val TargetSendBitrate: js.UndefOr[String] = js.undefined
   
   /** Total duration of the published video, in seconds. */
-  val TotalDuration: js.UndefOr[String] = js.native
+  val TotalDuration: js.UndefOr[String] = js.undefined
   
   /** Total freeze time of the encoded video, in seconds. */
-  val TotalFreezeTime: js.UndefOr[String] = js.native
+  val TotalFreezeTime: js.UndefOr[String] = js.undefined
 }
 object LocalVideoStats {
   

@@ -2,38 +2,37 @@ package typings.arcgisJsApi.esri.CIM
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CIMMarkerPlacementAtMeasuredUnits
-  extends CIMMarkerStrokePlacement
+  extends StObject
+     with CIMMarkerStrokePlacement
      with CIMMarkerPlacementType {
   
   /**
     * The interval of measured units used to place markers.
     */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /**
     * A value indicating whether markers should be placed at extremities.
     */
-  var placeAtExtremities: js.UndefOr[Boolean] = js.native
+  var placeAtExtremities: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The rate of markers to skip.
     */
-  var skipMarkerRate: js.UndefOr[Double] = js.native
+  var skipMarkerRate: js.UndefOr[Double] = js.undefined
   
   @JSName("type")
-  var type_CIMMarkerPlacementAtMeasuredUnits: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtMeasuredUnits = js.native
+  var type_CIMMarkerPlacementAtMeasuredUnits: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtMeasuredUnits
 }
 object CIMMarkerPlacementAtMeasuredUnits {
   
   @scala.inline
-  def apply(`type`: typings.arcgisJsApi.arcgisJsApiStrings.CIMMarkerPlacementAtMeasuredUnits): CIMMarkerPlacementAtMeasuredUnits = {
+  def apply(): CIMMarkerPlacementAtMeasuredUnits = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("CIMMarkerPlacementAtMeasuredUnits")
     __obj.asInstanceOf[CIMMarkerPlacementAtMeasuredUnits]
   }
   

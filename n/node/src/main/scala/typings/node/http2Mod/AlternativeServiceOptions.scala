@@ -3,13 +3,11 @@ package typings.node.http2Mod
 import typings.node.urlMod.URL_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AlternativeServiceOptions extends StObject {
   
-  var origin: Double | String | URL_ = js.native
+  var origin: Double | String | URL_
 }
 object AlternativeServiceOptions {
   

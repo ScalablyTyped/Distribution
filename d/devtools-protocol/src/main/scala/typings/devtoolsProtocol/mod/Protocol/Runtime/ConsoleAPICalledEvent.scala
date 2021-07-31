@@ -20,45 +20,43 @@ import typings.devtoolsProtocol.devtoolsProtocolStrings.trace
 import typings.devtoolsProtocol.devtoolsProtocolStrings.warning
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConsoleAPICalledEvent extends StObject {
   
   /**
     * Call arguments.
     */
-  var args: js.Array[RemoteObject] = js.native
+  var args: js.Array[RemoteObject]
   
   /**
     * Console context descriptor for calls on non-default console context (not console.*):
     * 'anonymous#unique-logger-id' for call on unnamed context, 'name#unique-logger-id' for call
     * on named context.
     */
-  var context: js.UndefOr[String] = js.native
+  var context: js.UndefOr[String] = js.undefined
   
   /**
     * Identifier of the context where the call was made.
     */
-  var executionContextId: ExecutionContextId = js.native
+  var executionContextId: ExecutionContextId
   
   /**
     * Stack trace captured when the call was made. The async stack chain is automatically reported for
     * the following call types: `assert`, `error`, `trace`, `warning`. For other types the async call
     * chain can be retrieved using `Debugger.getStackTrace` and `stackTrace.parentId` field.
     */
-  var stackTrace: js.UndefOr[StackTrace] = js.native
+  var stackTrace: js.UndefOr[StackTrace] = js.undefined
   
   /**
     * Call timestamp.
     */
-  var timestamp: Timestamp = js.native
+  var timestamp: Timestamp
   
   /**
     * Type of the call. (ConsoleAPICalledEventType enum)
     */
-  var `type`: log | debug | info | error | warning | dir | dirxml | table | trace | clear | startGroup | startGroupCollapsed | endGroup | assert | profile | profileEnd | count | timeEnd = js.native
+  var `type`: log | debug | info | error | warning | dir | dirxml | table | trace | clear | startGroup | startGroupCollapsed | endGroup | assert | profile | profileEnd | count | timeEnd
 }
 object ConsoleAPICalledEvent {
   

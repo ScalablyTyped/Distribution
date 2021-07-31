@@ -2,21 +2,19 @@ package typings.algoliaClientSearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetLogsOptions extends StObject {
   
   /**
     * The length size.
     */
-  val length: Double = js.native
+  val length: Double
   
   /**
     * The offset.
     */
-  val offset: Double = js.native
+  val offset: Double
 }
 object GetLogsOptions {
   

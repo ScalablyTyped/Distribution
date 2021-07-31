@@ -2,15 +2,13 @@ package typings.ngGrid.ngGrid
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IRenderedRange extends StObject {
   
-  var bottomRow: Double = js.native
+  var bottomRow: Double
   
-  var topRow: Double = js.native
+  var topRow: Double
 }
 object IRenderedRange {
   

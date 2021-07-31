@@ -3,7 +3,6 @@ package typings.jsDataAngular
 import typings.angular.mod.IScope
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -26,7 +25,7 @@ object mod {
       cb: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
           /* items */ js.Array[
-            T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
+            T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
           ], 
           Unit
         ]
@@ -40,7 +39,7 @@ object mod {
       expr: String,
       cb: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
           Unit
         ]
     ): js.Function = js.native
@@ -52,16 +51,15 @@ object mod {
       expr: String,
       cb: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
           Unit
         ]
     ): js.Function = js.native
   }
   
-  @js.native
   trait DSProvider extends StObject {
     
-    var defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any = js.native
+    var defaults: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSConfiguration */ js.Any
   }
   object DSProvider {
     
@@ -98,7 +96,7 @@ object mod {
       cb: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
           /* items */ js.Array[
-            T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
+            T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any)
           ], 
           Unit
         ]
@@ -111,7 +109,7 @@ object mod {
       expr: String,
       cb: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
           Unit
         ]
     ): js.Function = js.native
@@ -122,7 +120,7 @@ object mod {
       expr: String,
       cb: js.Function2[
           /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSError */ /* err */ js.Any, 
-          /* item */ T with (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
+          /* item */ T & (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify DSInstanceShorthands<T> */ js.Any), 
           Unit
         ]
     ): js.Function = js.native

@@ -2,19 +2,17 @@ package typings.googleapis.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AuctionType extends StObject {
   
-  var auctionType: js.UndefOr[js.Array[String]] = js.native
+  var auctionType: js.UndefOr[js.Array[String]] = js.undefined
   
-  var contextType: js.UndefOr[String] = js.native
+  var contextType: js.UndefOr[String] = js.undefined
   
-  var geoCriteriaId: js.UndefOr[js.Array[Double]] = js.native
+  var geoCriteriaId: js.UndefOr[js.Array[Double]] = js.undefined
   
-  var platform: js.UndefOr[js.Array[String]] = js.native
+  var platform: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AuctionType {
   

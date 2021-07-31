@@ -2,7 +2,6 @@ package typings.googleAppsScript.GoogleAppsScript.DataStudio
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -15,18 +14,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   *       .setHelpText("Whether or not https should be used.")
   *       .setAllowOverride(true);
   */
-@js.native
 trait Checkbox extends StObject {
   
-  def setAllowOverride(allowOverride: Boolean): Checkbox = js.native
+  def setAllowOverride(allowOverride: Boolean): Checkbox
   
-  def setHelpText(helpText: String): Checkbox = js.native
+  def setHelpText(helpText: String): Checkbox
   
-  def setId(id: String): Checkbox = js.native
+  def setId(id: String): Checkbox
   
-  def setIsDynamic(isDynamic: Boolean): Checkbox = js.native
+  def setIsDynamic(isDynamic: Boolean): Checkbox
   
-  def setName(name: String): Checkbox = js.native
+  def setName(name: String): Checkbox
 }
 object Checkbox {
   

@@ -2,21 +2,19 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ASPxDesignerParameterType extends StObject {
   
-  var defaultVal: js.Any = js.native
+  var defaultVal: js.Any
   
-  var displayValue: String = js.native
+  var displayValue: String
   
-  var specifics: String = js.native
+  var specifics: String
   
-  var value: String = js.native
+  var value: String
   
-  def valueConverter(`val`: js.Any): js.Any = js.native
+  def valueConverter(`val`: js.Any): js.Any
 }
 object ASPxDesignerParameterType {
   

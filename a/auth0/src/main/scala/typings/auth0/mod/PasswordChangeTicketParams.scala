@@ -2,27 +2,25 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordChangeTicketParams extends StObject {
   
-  var connection_id: js.UndefOr[String] = js.native
+  var connection_id: js.UndefOr[String] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var includeEmailInRedirect: js.UndefOr[Boolean] = js.native
+  var includeEmailInRedirect: js.UndefOr[Boolean] = js.undefined
   
-  var mark_email_as_verified: js.UndefOr[Boolean] = js.native
+  var mark_email_as_verified: js.UndefOr[Boolean] = js.undefined
   
-  var new_password: js.UndefOr[String] = js.native
+  var new_password: js.UndefOr[String] = js.undefined
   
-  var result_url: js.UndefOr[String] = js.native
+  var result_url: js.UndefOr[String] = js.undefined
   
-  var ttl_sec: js.UndefOr[Double] = js.native
+  var ttl_sec: js.UndefOr[Double] = js.undefined
   
-  var user_id: js.UndefOr[String] = js.native
+  var user_id: js.UndefOr[String] = js.undefined
 }
 object PasswordChangeTicketParams {
   

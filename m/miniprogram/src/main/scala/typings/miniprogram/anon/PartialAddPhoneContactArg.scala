@@ -3,80 +3,78 @@ package typings.miniprogram.anon
 import typings.miniprogram.AsyncCallbackFailObject
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<miniprogram.AddPhoneContactArgs> */
-@js.native
 trait PartialAddPhoneContactArg extends StObject {
   
-  var addressCity: js.UndefOr[String] = js.native
+  var addressCity: js.UndefOr[String] = js.undefined
   
-  var addressCountry: js.UndefOr[String] = js.native
+  var addressCountry: js.UndefOr[String] = js.undefined
   
-  var addressPostalCode: js.UndefOr[String] = js.native
+  var addressPostalCode: js.UndefOr[String] = js.undefined
   
-  var addressState: js.UndefOr[String] = js.native
+  var addressState: js.UndefOr[String] = js.undefined
   
-  var addressStreet: js.UndefOr[String] = js.native
+  var addressStreet: js.UndefOr[String] = js.undefined
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
-  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.native
+  var fail: js.UndefOr[js.Function1[/* err */ AsyncCallbackFailObject, Unit]] = js.undefined
   
-  var firstName: js.UndefOr[String] = js.native
+  var firstName: js.UndefOr[String] = js.undefined
   
-  var homeAddressCity: js.UndefOr[String] = js.native
+  var homeAddressCity: js.UndefOr[String] = js.undefined
   
-  var homeAddressCountry: js.UndefOr[String] = js.native
+  var homeAddressCountry: js.UndefOr[String] = js.undefined
   
-  var homeAddressPostalCode: js.UndefOr[String] = js.native
+  var homeAddressPostalCode: js.UndefOr[String] = js.undefined
   
-  var homeAddressState: js.UndefOr[String] = js.native
+  var homeAddressState: js.UndefOr[String] = js.undefined
   
-  var homeAddressStreet: js.UndefOr[String] = js.native
+  var homeAddressStreet: js.UndefOr[String] = js.undefined
   
-  var homeFaxNumber: js.UndefOr[String] = js.native
+  var homeFaxNumber: js.UndefOr[String] = js.undefined
   
-  var homePhoneNumber: js.UndefOr[String] = js.native
+  var homePhoneNumber: js.UndefOr[String] = js.undefined
   
-  var hostNumber: js.UndefOr[String] = js.native
+  var hostNumber: js.UndefOr[String] = js.undefined
   
-  var lastName: js.UndefOr[String] = js.native
+  var lastName: js.UndefOr[String] = js.undefined
   
-  var middleName: js.UndefOr[String] = js.native
+  var middleName: js.UndefOr[String] = js.undefined
   
-  var mobilePhoneNumber: js.UndefOr[String] = js.native
+  var mobilePhoneNumber: js.UndefOr[String] = js.undefined
   
-  var nickName: js.UndefOr[String] = js.native
+  var nickName: js.UndefOr[String] = js.undefined
   
-  var organization: js.UndefOr[String] = js.native
+  var organization: js.UndefOr[String] = js.undefined
   
-  var photoFilePath: js.UndefOr[String] = js.native
+  var photoFilePath: js.UndefOr[String] = js.undefined
   
-  var remark: js.UndefOr[String] = js.native
+  var remark: js.UndefOr[String] = js.undefined
   
-  var success: js.UndefOr[js.Function1[/* res */ Success, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ Success, Unit]] = js.undefined
   
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var workAddressCity: js.UndefOr[String] = js.native
+  var workAddressCity: js.UndefOr[String] = js.undefined
   
-  var workAddressCountry: js.UndefOr[String] = js.native
+  var workAddressCountry: js.UndefOr[String] = js.undefined
   
-  var workAddressPostalCode: js.UndefOr[String] = js.native
+  var workAddressPostalCode: js.UndefOr[String] = js.undefined
   
-  var workAddressState: js.UndefOr[String] = js.native
+  var workAddressState: js.UndefOr[String] = js.undefined
   
-  var workAddressStreet: js.UndefOr[String] = js.native
+  var workAddressStreet: js.UndefOr[String] = js.undefined
   
-  var workFaxNumber: js.UndefOr[String] = js.native
+  var workFaxNumber: js.UndefOr[String] = js.undefined
   
-  var workPhoneNumber: js.UndefOr[String] = js.native
+  var workPhoneNumber: js.UndefOr[String] = js.undefined
 }
 object PartialAddPhoneContactArg {
   

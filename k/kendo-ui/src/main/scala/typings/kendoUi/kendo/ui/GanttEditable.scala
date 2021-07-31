@@ -2,35 +2,33 @@ package typings.kendoUi.kendo.ui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GanttEditable extends StObject {
   
-  var confirmation: js.UndefOr[Boolean] = js.native
+  var confirmation: js.UndefOr[Boolean] = js.undefined
   
-  var create: js.UndefOr[Boolean] = js.native
+  var create: js.UndefOr[Boolean] = js.undefined
   
-  var dependencyCreate: js.UndefOr[Boolean] = js.native
+  var dependencyCreate: js.UndefOr[Boolean] = js.undefined
   
-  var dependencyDestroy: js.UndefOr[Boolean] = js.native
+  var dependencyDestroy: js.UndefOr[Boolean] = js.undefined
   
-  var destroy: js.UndefOr[Boolean] = js.native
+  var destroy: js.UndefOr[Boolean] = js.undefined
   
-  var dragPercentComplete: js.UndefOr[Boolean] = js.native
+  var dragPercentComplete: js.UndefOr[Boolean] = js.undefined
   
-  var move: js.UndefOr[Boolean] = js.native
+  var move: js.UndefOr[Boolean] = js.undefined
   
-  var plannedTasks: js.UndefOr[Boolean] = js.native
+  var plannedTasks: js.UndefOr[Boolean] = js.undefined
   
-  var reorder: js.UndefOr[Boolean] = js.native
+  var reorder: js.UndefOr[Boolean] = js.undefined
   
-  var resize: js.UndefOr[Boolean] = js.native
+  var resize: js.UndefOr[Boolean] = js.undefined
   
-  var template: js.UndefOr[String | js.Function] = js.native
+  var template: js.UndefOr[String | js.Function] = js.undefined
   
-  var update: js.UndefOr[Boolean] = js.native
+  var update: js.UndefOr[Boolean] = js.undefined
 }
 object GanttEditable {
   

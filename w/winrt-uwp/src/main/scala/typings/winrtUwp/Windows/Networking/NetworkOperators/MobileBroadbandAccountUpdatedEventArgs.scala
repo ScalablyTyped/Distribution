@@ -2,21 +2,19 @@ package typings.winrtUwp.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides information for the AccountUpdated event. */
-@js.native
 trait MobileBroadbandAccountUpdatedEventArgs extends StObject {
   
   /** Gets a value indicating whether the device information has changed for the account. */
-  var hasDeviceInformationChanged: Boolean = js.native
+  var hasDeviceInformationChanged: Boolean
   
   /** Gets a value that indicates if the CurrentNetwork was updated for the account. */
-  var hasNetworkChanged: Boolean = js.native
+  var hasNetworkChanged: Boolean
   
   /** Gets the network account Id of the updated account. */
-  var networkAccountId: String = js.native
+  var networkAccountId: String
 }
 object MobileBroadbandAccountUpdatedEventArgs {
   

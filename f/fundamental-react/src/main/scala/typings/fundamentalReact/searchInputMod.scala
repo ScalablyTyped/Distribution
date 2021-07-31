@@ -8,7 +8,6 @@ import typings.react.mod.Component
 import typings.std.HTMLInputElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object searchInputMod {
@@ -33,41 +32,41 @@ object searchInputMod {
   
   type SearchInput = Component[SearchInputProps, js.Object, js.Any]
   
-  @js.native
   trait SearchInputProps
-    extends /* x */ StringDictionary[js.Any] {
+    extends StObject
+       with /* x */ StringDictionary[js.Any] {
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var compact: js.UndefOr[Boolean] = js.native
+    var compact: js.UndefOr[Boolean] = js.undefined
     
-    var disableStyles: js.UndefOr[Boolean] = js.native
+    var disableStyles: js.UndefOr[Boolean] = js.undefined
     
-    var inShellbar: js.UndefOr[Boolean] = js.native
+    var inShellbar: js.UndefOr[Boolean] = js.undefined
     
-    var inputGroupAddonProps: js.UndefOr[js.Any] = js.native
+    var inputGroupAddonProps: js.UndefOr[js.Any] = js.undefined
     
-    var inputGroupProps: js.UndefOr[js.Any] = js.native
+    var inputGroupProps: js.UndefOr[js.Any] = js.undefined
     
-    var inputProps: js.UndefOr[js.Any] = js.native
+    var inputProps: js.UndefOr[js.Any] = js.undefined
     
-    var listProps: js.UndefOr[js.Any] = js.native
+    var listProps: js.UndefOr[js.Any] = js.undefined
     
-    var noSearchBtn: js.UndefOr[Boolean] = js.native
+    var noSearchBtn: js.UndefOr[Boolean] = js.undefined
     
-    var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* event */ ChangeEvent[HTMLInputElement], Unit]] = js.undefined
     
-    var onEnter: js.UndefOr[js.Function1[/* value */ js.UndefOr[String | Double | js.Array[String]], Unit]] = js.native
+    var onEnter: js.UndefOr[js.Function1[/* value */ js.UndefOr[String | Double | js.Array[String]], Unit]] = js.undefined
     
-    var placeholder: js.UndefOr[String] = js.native
+    var placeholder: js.UndefOr[String] = js.undefined
     
-    var popoverProps: js.UndefOr[js.Any] = js.native
+    var popoverProps: js.UndefOr[js.Any] = js.undefined
     
-    var searchBtnProps: js.UndefOr[js.Any] = js.native
+    var searchBtnProps: js.UndefOr[js.Any] = js.undefined
     
-    var searchList: js.UndefOr[js.Array[Callback]] = js.native
+    var searchList: js.UndefOr[js.Array[Callback]] = js.undefined
     
-    var validationState: js.UndefOr[Text] = js.native
+    var validationState: js.UndefOr[Text] = js.undefined
   }
   object SearchInputProps {
     

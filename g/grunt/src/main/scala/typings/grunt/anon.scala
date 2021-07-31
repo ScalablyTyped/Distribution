@@ -2,23 +2,21 @@ package typings.grunt
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Custom extends StObject {
     
-    var custom: js.UndefOr[js.Any] = js.native
+    var custom: js.UndefOr[js.Any] = js.undefined
     
-    var cwd: js.UndefOr[java.lang.String] = js.native
+    var cwd: js.UndefOr[java.lang.String] = js.undefined
     
-    var detached: js.UndefOr[Boolean] = js.native
+    var detached: js.UndefOr[Boolean] = js.undefined
     
-    var env: js.UndefOr[js.Any] = js.native
+    var env: js.UndefOr[js.Any] = js.undefined
     
-    var stdio: js.UndefOr[js.Any] = js.native
+    var stdio: js.UndefOr[js.Any] = js.undefined
   }
   object Custom {
     
@@ -63,10 +61,9 @@ object anon {
     }
   }
   
-  @js.native
   trait Force extends StObject {
     
-    var force: js.UndefOr[Boolean] = js.native
+    var force: js.UndefOr[Boolean] = js.undefined
   }
   object Force {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.elasticbeanstalkMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ApplyEnvironmentManagedActionResult extends StObject {
   
   /**
     * A description of the managed action.
     */
-  var ActionDescription: js.UndefOr[String] = js.native
+  var ActionDescription: js.UndefOr[String] = js.undefined
   
   /**
     * The action ID of the managed action.
     */
-  var ActionId: js.UndefOr[String] = js.native
+  var ActionId: js.UndefOr[String] = js.undefined
   
   /**
     * The type of managed action.
     */
-  var ActionType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ActionType] = js.native
+  var ActionType: js.UndefOr[typings.awsSdk.elasticbeanstalkMod.ActionType] = js.undefined
   
   /**
     * The status of the managed action.
     */
-  var Status: js.UndefOr[String] = js.native
+  var Status: js.UndefOr[String] = js.undefined
 }
 object ApplyEnvironmentManagedActionResult {
   

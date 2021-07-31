@@ -2,29 +2,27 @@ package typings.foundationSites.FoundationSites
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IDropdownOptions extends StObject {
   
-  var autoFocus: js.UndefOr[Boolean] = js.native
+  var autoFocus: js.UndefOr[Boolean] = js.undefined
   
-  var closeOnClick: js.UndefOr[Boolean] = js.native
+  var closeOnClick: js.UndefOr[Boolean] = js.undefined
   
-  var hOffset: js.UndefOr[Double] = js.native
+  var hOffset: js.UndefOr[Double] = js.undefined
   
-  var hover: js.UndefOr[Boolean] = js.native
+  var hover: js.UndefOr[Boolean] = js.undefined
   
-  var hoverDelay: js.UndefOr[Double] = js.native
+  var hoverDelay: js.UndefOr[Double] = js.undefined
   
-  var hoverPane: js.UndefOr[Boolean] = js.native
+  var hoverPane: js.UndefOr[Boolean] = js.undefined
   
-  var positionClass: js.UndefOr[String] = js.native
+  var positionClass: js.UndefOr[String] = js.undefined
   
-  var trapFocus: js.UndefOr[Boolean] = js.native
+  var trapFocus: js.UndefOr[Boolean] = js.undefined
   
-  var vOffset: js.UndefOr[Double] = js.native
+  var vOffset: js.UndefOr[Double] = js.undefined
 }
 object IDropdownOptions {
   

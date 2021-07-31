@@ -4,7 +4,6 @@ import typings.typeorm.commonObjectLiteralMod.ObjectLiteral
 import typings.typeorm.queryBuilderBracketsMod.Brackets
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object queryBuilderWhereExpressionMod {
@@ -40,7 +39,7 @@ object queryBuilderWhereExpressionMod {
       * for example [{ firstId: 1, secondId: 2 }, { firstId: 2, secondId: 3 }, ...]
       */
     def andWhereInIds(ids: js.Any): this.type = js.native
-    def andWhereInIds(ids: js.Array[_]): this.type = js.native
+    def andWhereInIds(ids: js.Array[js.Any]): this.type = js.native
     
     /**
       * Adds new OR WHERE condition in the query builder.
@@ -70,7 +69,7 @@ object queryBuilderWhereExpressionMod {
       * for example [{ firstId: 1, secondId: 2 }, { firstId: 2, secondId: 3 }, ...]
       */
     def orWhereInIds(ids: js.Any): this.type = js.native
-    def orWhereInIds(ids: js.Array[_]): this.type = js.native
+    def orWhereInIds(ids: js.Array[js.Any]): this.type = js.native
     
     /**
       * Sets WHERE condition in the query builder.
@@ -122,6 +121,6 @@ object queryBuilderWhereExpressionMod {
       * for example [{ firstId: 1, secondId: 2 }, { firstId: 2, secondId: 3 }, ...]
       */
     def whereInIds(ids: js.Any): this.type = js.native
-    def whereInIds(ids: js.Array[_]): this.type = js.native
+    def whereInIds(ids: js.Array[js.Any]): this.type = js.native
   }
 }

@@ -4,21 +4,19 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.frctlFractal.anon.Format
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CliThemeConfig extends StObject {
   
-  var delimiter: js.UndefOr[Format] = js.native
+  var delimiter: js.UndefOr[Format] = js.undefined
   
   @JSName("delimiter.format")
-  var delimiterDotformat: js.UndefOr[js.Function1[/* str */ String, String]] = js.native
+  var delimiterDotformat: js.UndefOr[js.Function1[/* str */ String, String]] = js.undefined
   
   @JSName("delimiter.text")
-  var delimiterDottext: js.UndefOr[String] = js.native
+  var delimiterDottext: js.UndefOr[String] = js.undefined
   
-  var styles: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var styles: js.UndefOr[StringDictionary[js.Any]] = js.undefined
 }
 object CliThemeConfig {
   

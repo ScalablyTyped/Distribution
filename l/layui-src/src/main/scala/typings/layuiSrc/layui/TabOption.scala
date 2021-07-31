@@ -2,18 +2,16 @@ package typings.layuiSrc.layui
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TabOption extends StObject {
   
-  var content: String = js.native
+  var content: String
   
-  var id: String = js.native
+  var id: String
   
   // 三个参数layui中都是选填，但开发时应该都填，此处都设置必填
-  var title: String = js.native
+  var title: String
 }
 object TabOption {
   

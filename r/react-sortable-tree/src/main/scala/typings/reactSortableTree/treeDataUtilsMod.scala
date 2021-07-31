@@ -20,102 +20,85 @@ import typings.reactSortableTree.mod.TreeItem
 import typings.reactSortableTree.mod.TreeNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object treeDataUtilsMod {
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "addNodeUnderParent")
+  @JSImport("react-sortable-tree/utils/tree-data-utils", JSImport.Namespace)
   @js.native
-  def addNodeUnderParent(data: FullTreenewNodeTreeItempa): FullTree with TreeIndex = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "changeNodeAtPath")
-  @js.native
-  def changeNodeAtPath(data: FullTreeTreePathnewNodeFu): js.Array[TreeItem] = js.native
+  @scala.inline
+  def addNodeUnderParent(data: FullTreenewNodeTreeItempa): FullTree & TreeIndex = ^.asInstanceOf[js.Dynamic].applyDynamic("addNodeUnderParent")(data.asInstanceOf[js.Any]).asInstanceOf[FullTree & TreeIndex]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "find")
-  @js.native
-  def find(data: FullTreegetNodeKeyGetNodeExpandAllMatchPaths): matchesArrayNodeDataFullT = js.native
+  @scala.inline
+  def changeNodeAtPath(data: FullTreeTreePathnewNodeFu): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("changeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getDepth")
-  @js.native
-  def getDepth(node: TreeItem): Double = js.native
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getDepth")
-  @js.native
-  def getDepth(node: TreeItem, depth: Double): Double = js.native
+  @scala.inline
+  def find(data: FullTreegetNodeKeyGetNodeExpandAllMatchPaths): matchesArrayNodeDataFullT = ^.asInstanceOf[js.Dynamic].applyDynamic("find")(data.asInstanceOf[js.Any]).asInstanceOf[matchesArrayNodeDataFullT]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getDescendantCount")
-  @js.native
-  def getDescendantCount(data: TreeNodeignoreCollapsedbo): Double = js.native
+  @scala.inline
+  def getDepth(node: TreeItem): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDepth")(node.asInstanceOf[js.Any]).asInstanceOf[Double]
+  @scala.inline
+  def getDepth(node: TreeItem, depth: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getDepth")(node.asInstanceOf[js.Any], depth.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getFlatDataFromTree")
-  @js.native
-  def getFlatDataFromTree(data: FullTreegetNodeKeyGetNode): js.Array[FlatDataItem] = js.native
+  @scala.inline
+  def getDescendantCount(data: TreeNodeignoreCollapsedbo): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getDescendantCount")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getNodeAtPath")
-  @js.native
-  def getNodeAtPath(data: FullTreeTreePathgetNodeKe): (TreeNode with TreeIndex) | Null = js.native
+  @scala.inline
+  def getFlatDataFromTree(data: FullTreegetNodeKeyGetNode): js.Array[FlatDataItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFlatDataFromTree")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[FlatDataItem]]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getTreeFromFlatData")
-  @js.native
-  def getTreeFromFlatData[T, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */, I /* <: String | Double */](data: FlatData[T, I, K, P]): js.Array[TreeItem] = js.native
+  @scala.inline
+  def getNodeAtPath(data: FullTreeTreePathgetNodeKe): (TreeNode & TreeIndex) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[(TreeNode & TreeIndex) | Null]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getVisibleNodeCount")
-  @js.native
-  def getVisibleNodeCount(data: FullTree): Double = js.native
+  @scala.inline
+  def getTreeFromFlatData[T, K /* <: /* keyof T */ String */, P /* <: /* keyof T */ String */, I /* <: String | Double */](data: FlatData[T, I, K, P]): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("getTreeFromFlatData")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "getVisibleNodeInfoAtIndex")
-  @js.native
-  def getVisibleNodeInfoAtIndex(data: FullTreeindexnumbergetNod): TreeNodeTreePathlowerSibl | Null = js.native
+  @scala.inline
+  def getVisibleNodeCount(data: FullTree): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeCount")(data.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "insertNode")
-  @js.native
-  def insertNode(data: FullTreedepthnumbernewNod): FullTreeTreeIndexTreePath = js.native
+  @scala.inline
+  def getVisibleNodeInfoAtIndex(data: FullTreeindexnumbergetNod): TreeNodeTreePathlowerSibl | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("getVisibleNodeInfoAtIndex")(data.asInstanceOf[js.Any]).asInstanceOf[TreeNodeTreePathlowerSibl | Null]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "isDescendant")
-  @js.native
-  def isDescendant(older: TreeItem, younger: TreeItem): Boolean = js.native
+  @scala.inline
+  def insertNode(data: FullTreedepthnumbernewNod): FullTreeTreeIndexTreePath = ^.asInstanceOf[js.Dynamic].applyDynamic("insertNode")(data.asInstanceOf[js.Any]).asInstanceOf[FullTreeTreeIndexTreePath]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "map")
-  @js.native
-  def map(data: WalkAndMapFunctionParameters): js.Array[TreeItem] = js.native
+  @scala.inline
+  def isDescendant(older: TreeItem, younger: TreeItem): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("isDescendant")(older.asInstanceOf[js.Any], younger.asInstanceOf[js.Any])).asInstanceOf[Boolean]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "removeNode")
-  @js.native
-  def removeNode(data: FullTreeTreePathgetNodeKe): (FullTree with TreeNode with TreeIndex) | Null = js.native
+  @scala.inline
+  def map(data: WalkAndMapFunctionParameters): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("map")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "removeNodeAtPath")
-  @js.native
-  def removeNodeAtPath(data: FullTreeTreePathgetNodeKe): js.Array[TreeItem] = js.native
+  @scala.inline
+  def removeNode(data: FullTreeTreePathgetNodeKe): (FullTree & TreeNode & TreeIndex) | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNode")(data.asInstanceOf[js.Any]).asInstanceOf[(FullTree & TreeNode & TreeIndex) | Null]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "toggleExpandedForAll")
-  @js.native
-  def toggleExpandedForAll(data: FullTreeexpandedbooleanun): js.Array[TreeItem] = js.native
+  @scala.inline
+  def removeNodeAtPath(data: FullTreeTreePathgetNodeKe): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("removeNodeAtPath")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  @JSImport("react-sortable-tree/utils/tree-data-utils", "walk")
-  @js.native
-  def walk(data: WalkAndMapFunctionParameters): Unit = js.native
+  @scala.inline
+  def toggleExpandedForAll(data: FullTreeexpandedbooleanun): js.Array[TreeItem] = ^.asInstanceOf[js.Dynamic].applyDynamic("toggleExpandedForAll")(data.asInstanceOf[js.Any]).asInstanceOf[js.Array[TreeItem]]
   
-  type GetNodeKeyFunction = js.Function1[/* data */ TreeIndex with TreeNode, String | Double]
+  @scala.inline
+  def walk(data: WalkAndMapFunctionParameters): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("walk")(data.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  /* Inlined react-sortable-tree.react-sortable-tree.FullTree & {  getNodeKey :react-sortable-tree.react-sortable-tree/utils/tree-data-utils.GetNodeKeyFunction,   callback :std.Function,   ignoreCollapsed :boolean | undefined} */
-  @js.native
-  trait WalkAndMapFunctionParameters extends StObject {
+  type GetNodeKeyFunction = js.Function1[/* data */ TreeIndex & TreeNode, String | Double]
+  
+  trait WalkAndMapFunctionParameters
+    extends StObject
+       with FullTree {
     
-    var callback: js.Function = js.native
+    var callback: js.Function
     
-    var getNodeKey: GetNodeKeyFunction = js.native
+    var getNodeKey: GetNodeKeyFunction
     
-    var ignoreCollapsed: js.UndefOr[Boolean] = js.native
-    
-    var treeData: js.Array[TreeItem] = js.native
+    var ignoreCollapsed: js.UndefOr[Boolean] = js.undefined
   }
   object WalkAndMapFunctionParameters {
     
     @scala.inline
     def apply(
       callback: js.Function,
-      getNodeKey: /* data */ TreeIndex with TreeNode => String | Double,
+      getNodeKey: /* data */ TreeIndex & TreeNode => String | Double,
       treeData: js.Array[TreeItem]
     ): WalkAndMapFunctionParameters = {
       val __obj = js.Dynamic.literal(callback = callback.asInstanceOf[js.Any], getNodeKey = js.Any.fromFunction1(getNodeKey), treeData = treeData.asInstanceOf[js.Any])
@@ -129,19 +112,13 @@ object treeDataUtilsMod {
       def setCallback(value: js.Function): Self = StObject.set(x, "callback", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setGetNodeKey(value: /* data */ TreeIndex with TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
+      def setGetNodeKey(value: /* data */ TreeIndex & TreeNode => String | Double): Self = StObject.set(x, "getNodeKey", js.Any.fromFunction1(value))
       
       @scala.inline
       def setIgnoreCollapsed(value: Boolean): Self = StObject.set(x, "ignoreCollapsed", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setIgnoreCollapsedUndefined: Self = StObject.set(x, "ignoreCollapsed", js.undefined)
-      
-      @scala.inline
-      def setTreeData(value: js.Array[TreeItem]): Self = StObject.set(x, "treeData", value.asInstanceOf[js.Any])
-      
-      @scala.inline
-      def setTreeDataVarargs(value: TreeItem*): Self = StObject.set(x, "treeData", js.Array(value :_*))
     }
   }
 }

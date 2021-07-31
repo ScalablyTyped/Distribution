@@ -9,7 +9,6 @@ import typings.std.HTMLCanvasElement
 import typings.std.HTMLImageElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object styleMod {
@@ -40,7 +39,7 @@ object styleMod {
     extends typings.ol.iconImageMod.default {
     def this(
       image: HTMLCanvasElement,
-      src: js.UndefOr[scala.Nothing],
+      src: String,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -48,15 +47,7 @@ object styleMod {
     ) = this()
     def this(
       image: HTMLCanvasElement,
-      src: String,
-      size: Size,
-      crossOrigin: String,
-      imageState: ImageState,
-      color: Color
-    ) = this()
-    def this(
-      image: HTMLImageElement,
-      src: js.UndefOr[scala.Nothing],
+      src: Unit,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,
@@ -65,6 +56,14 @@ object styleMod {
     def this(
       image: HTMLImageElement,
       src: String,
+      size: Size,
+      crossOrigin: String,
+      imageState: ImageState,
+      color: Color
+    ) = this()
+    def this(
+      image: HTMLImageElement,
+      src: Unit,
       size: Size,
       crossOrigin: String,
       imageState: ImageState,

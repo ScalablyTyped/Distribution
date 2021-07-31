@@ -3,23 +3,22 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.ThisExpression
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ThisExpression_
-  extends Node
+  extends StObject
+     with Node
      with Expression {
   
   @JSName("type")
-  var type_ThisExpression_ : ThisExpression = js.native
+  var type_ThisExpression_ : ThisExpression
 }
 object ThisExpression_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, `type`: ThisExpression): ThisExpression_ = {
+  def apply(end: Double, loc: SourceLocation, start: Double): ThisExpression_ = {
     val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ThisExpression")
     __obj.asInstanceOf[ThisExpression_]
   }
   

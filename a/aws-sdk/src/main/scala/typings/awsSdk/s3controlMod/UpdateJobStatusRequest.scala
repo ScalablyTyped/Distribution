@@ -2,31 +2,29 @@ package typings.awsSdk.s3controlMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateJobStatusRequest extends StObject {
   
   /**
     * 
     */
-  var AccountId: typings.awsSdk.s3controlMod.AccountId = js.native
+  var AccountId: typings.awsSdk.s3controlMod.AccountId
   
   /**
     * The ID of the job whose status you want to update.
     */
-  var JobId: typings.awsSdk.s3controlMod.JobId = js.native
+  var JobId: typings.awsSdk.s3controlMod.JobId
   
   /**
     * The status that you want to move the specified job to.
     */
-  var RequestedJobStatus: typings.awsSdk.s3controlMod.RequestedJobStatus = js.native
+  var RequestedJobStatus: typings.awsSdk.s3controlMod.RequestedJobStatus
   
   /**
     * A description of the reason why you want to change the specified job's status. This field can be any string up to the maximum length.
     */
-  var StatusUpdateReason: js.UndefOr[JobStatusUpdateReason] = js.native
+  var StatusUpdateReason: js.UndefOr[JobStatusUpdateReason] = js.undefined
 }
 object UpdateJobStatusRequest {
   

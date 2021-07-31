@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.Devices.Enumeration
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The result of the unpairing action. */
@@ -12,16 +11,16 @@ object DeviceUnpairingResultStatus extends StObject {
   
   @JSBracketAccess
   def apply(value: Double): js.UndefOr[
-    typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus with Double
+    typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus & Double
   ] = js.native
   
-  /* 3 */ val accessDenied: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.accessDenied with Double = js.native
+  /* 3 */ val accessDenied: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.accessDenied & Double = js.native
   
-  /* 1 */ val alreadyUnpaired: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.alreadyUnpaired with Double = js.native
+  /* 1 */ val alreadyUnpaired: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.alreadyUnpaired & Double = js.native
   
-  /* 4 */ val failed: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.failed with Double = js.native
+  /* 4 */ val failed: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.failed & Double = js.native
   
-  /* 2 */ val operationAlreadyInProgress: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.operationAlreadyInProgress with Double = js.native
+  /* 2 */ val operationAlreadyInProgress: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.operationAlreadyInProgress & Double = js.native
   
-  /* 0 */ val unpaired: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.unpaired with Double = js.native
+  /* 0 */ val unpaired: typings.winrtUwp.Windows.Devices.Enumeration.DeviceUnpairingResultStatus.unpaired & Double = js.native
 }

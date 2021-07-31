@@ -5,15 +5,13 @@ import typings.ckeditor.CKEDITOR.htmlParser.element
 import typings.ckeditor.CKEDITOR.plugins.pastefromword.lists.numbering
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pastefromword {
   
-  @js.native
   trait lists extends StObject {
     
-    var numbering: numbering = js.native
+    var numbering: numbering
   }
   object lists {
     
@@ -30,12 +28,11 @@ object pastefromword {
       def setNumbering(value: numbering): Self = StObject.set(x, "numbering", value.asInstanceOf[js.Any])
     }
     
-    @js.native
     trait numbering extends StObject {
       
-      def getStyle(marker: String): String = js.native
+      def getStyle(marker: String): String
       
-      def toNumber(marker: String, markerType: String): Double = js.native
+      def toNumber(marker: String, markerType: String): Double
     }
     object numbering {
       

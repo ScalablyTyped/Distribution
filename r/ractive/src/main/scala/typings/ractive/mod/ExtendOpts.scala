@@ -3,35 +3,35 @@ package typings.ractive.mod
 import typings.ractive.anon.Optional
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ExtendOpts[T /* <: Ractive[T] */] extends BaseInitOpts[T] {
+trait ExtendOpts[T /* <: Ractive[T] */]
+  extends StObject
+     with BaseInitOpts[T] {
   
   /** A list of attributes to be reserved by a component. Any additional attributes are collected into the extra-attributes partial. */
-  var attributes: js.UndefOr[js.Array[String] | Optional] = js.native
+  var attributes: js.UndefOr[js.Array[String] | Optional] = js.undefined
   
   /** The css to add to the page when the first instance of this component is rendered. */
-  var css: js.UndefOr[String | CssFn] = js.native
+  var css: js.UndefOr[String | CssFn] = js.undefined
   
   /** Default data to be supplied to any css functions. */
-  var cssData: js.UndefOr[ValueMap] = js.native
+  var cssData: js.UndefOr[ValueMap] = js.undefined
   
   /** The id to use when transforming css to be scoped. Defaults to a random guid. */
-  var cssId: js.UndefOr[String] = js.native
+  var cssId: js.UndefOr[String] = js.undefined
   
   /** A function supplying the default data for instances of this component. */
-  var data: js.UndefOr[DataFn[T]] = js.native
+  var data: js.UndefOr[DataFn[T]] = js.undefined
   
   /** Whether or not data and plugins can be pulled from parent instances. Defaults to false. */
-  var isolated: js.UndefOr[Boolean] = js.native
+  var isolated: js.UndefOr[Boolean] = js.undefined
   
   /** If true, css selectors will not be scoped using the cssId of this component. */
-  var noCssTransform: js.UndefOr[Boolean] = js.native
+  var noCssTransform: js.UndefOr[Boolean] = js.undefined
   
   /** An array of plugins to apply to the component. */
-  var use: js.UndefOr[js.Array[PluginExtend]] = js.native
+  var use: js.UndefOr[js.Array[PluginExtend]] = js.undefined
 }
 object ExtendOpts {
   
@@ -42,7 +42,7 @@ object ExtendOpts {
   }
   
   @scala.inline
-  implicit class ExtendOptsMutableBuilder[Self <: ExtendOpts[_], T /* <: Ractive[T] */] (val x: Self with ExtendOpts[T]) extends AnyVal {
+  implicit class ExtendOptsMutableBuilder[Self <: ExtendOpts[?], T /* <: Ractive[T] */] (val x: Self & ExtendOpts[T]) extends AnyVal {
     
     @scala.inline
     def setAttributes(value: js.Array[String] | Optional): Self = StObject.set(x, "attributes", value.asInstanceOf[js.Any])

@@ -9,82 +9,69 @@ import typings.std.Array
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("forms", "create")
+  @JSImport("forms", JSImport.Namespace)
   @js.native
-  def create(fields: FormFields): Form = js.native
-  @JSImport("forms", "create")
-  @js.native
-  def create(fields: FormFields, options: ValidatePastFirstError): Form = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def create(fields: FormFields): Form = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(fields.asInstanceOf[js.Any]).asInstanceOf[Form]
+  @scala.inline
+  def create(fields: FormFields, options: ValidatePastFirstError): Form = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(fields.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Form]
   
   object fields {
     
-    @JSImport("forms", "fields.array")
+    @JSImport("forms", "fields")
     @js.native
-    def array(): Field = js.native
-    @JSImport("forms", "fields.array")
-    @js.native
-    def array(params: FieldParameters): Field = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("forms", "fields.boolean")
-    @js.native
-    def boolean(): Field = js.native
-    @JSImport("forms", "fields.boolean")
-    @js.native
-    def boolean(params: FieldParameters): Field = js.native
+    @scala.inline
+    def array(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("array")().asInstanceOf[Field]
+    @scala.inline
+    def array(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("array")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
     
-    @JSImport("forms", "fields.date")
-    @js.native
-    def date(): Field = js.native
-    @JSImport("forms", "fields.date")
-    @js.native
-    def date(params: FieldParameters): Field = js.native
+    @scala.inline
+    def boolean(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")().asInstanceOf[Field]
+    @scala.inline
+    def boolean(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("boolean")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
     
-    @JSImport("forms", "fields.email")
-    @js.native
-    def email(): Field = js.native
-    @JSImport("forms", "fields.email")
-    @js.native
-    def email(params: FieldParameters): Field = js.native
+    @scala.inline
+    def date(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[Field]
+    @scala.inline
+    def date(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
     
-    @JSImport("forms", "fields.number")
-    @js.native
-    def number(): Field = js.native
-    @JSImport("forms", "fields.number")
-    @js.native
-    def number(params: FieldParameters): Field = js.native
+    @scala.inline
+    def email(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[Field]
+    @scala.inline
+    def email(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
     
-    @JSImport("forms", "fields.password")
-    @js.native
-    def password(): Field = js.native
-    @JSImport("forms", "fields.password")
-    @js.native
-    def password(params: FieldParameters): Field = js.native
+    @scala.inline
+    def number(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[Field]
+    @scala.inline
+    def number(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
     
-    @JSImport("forms", "fields.string")
-    @js.native
-    def string(): Field = js.native
-    @JSImport("forms", "fields.string")
-    @js.native
-    def string(params: FieldParameters): Field = js.native
+    @scala.inline
+    def password(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("password")().asInstanceOf[Field]
+    @scala.inline
+    def password(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
     
-    @JSImport("forms", "fields.tel")
-    @js.native
-    def tel(): Field = js.native
-    @JSImport("forms", "fields.tel")
-    @js.native
-    def tel(params: FieldParameters): Field = js.native
+    @scala.inline
+    def string(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("string")().asInstanceOf[Field]
+    @scala.inline
+    def string(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("string")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
     
-    @JSImport("forms", "fields.url")
-    @js.native
-    def url(): Field = js.native
-    @JSImport("forms", "fields.url")
-    @js.native
-    def url(params: FieldParameters): Field = js.native
+    @scala.inline
+    def tel(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")().asInstanceOf[Field]
+    @scala.inline
+    def tel(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
+    
+    @scala.inline
+    def url(): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[Field]
+    @scala.inline
+    def url(params: FieldParameters): Field = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(params.asInstanceOf[js.Any]).asInstanceOf[Field]
   }
   
   object render {
@@ -108,243 +95,187 @@ object mod {
   
   object validators {
     
-    @JSImport("forms", "validators.alphanumeric")
+    @JSImport("forms", "validators")
     @js.native
-    def alphanumeric(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.alphanumeric")
-    @js.native
-    def alphanumeric(errorMessage: String): ValidatorFunction = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("forms", "validators.color")
-    @js.native
-    def color(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.color")
-    @js.native
-    def color(errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def alphanumeric(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("alphanumeric")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def alphanumeric(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("alphanumeric")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.date")
-    @js.native
-    def date(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.date")
-    @js.native
-    def date(errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def color(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("color")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def color(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.digits")
-    @js.native
-    def digits(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.digits")
-    @js.native
-    def digits(errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def date(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def date(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.email")
-    @js.native
-    def email(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.email")
-    @js.native
-    def email(errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def digits(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("digits")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def digits(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("digits")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.integer")
-    @js.native
-    def integer(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.integer")
-    @js.native
-    def integer(errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def email(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def email(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.matchField")
-    @js.native
-    def matchField(matchedField: String): ValidatorFunction = js.native
-    @JSImport("forms", "validators.matchField")
-    @js.native
-    def matchField(matchedField: String, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def integer(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def integer(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("integer")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.matchValue")
-    @js.native
-    def matchValue(valueGetter: js.Function0[_]): ValidatorFunction = js.native
-    @JSImport("forms", "validators.matchValue")
-    @js.native
-    def matchValue(valueGetter: js.Function0[_], errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def matchField(matchedField: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("matchField")(matchedField.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def matchField(matchedField: String, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("matchField")(matchedField.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.max")
-    @js.native
-    def max(value: Double): ValidatorFunction = js.native
-    @JSImport("forms", "validators.max")
-    @js.native
-    def max(value: Double, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def matchValue(valueGetter: js.Function0[js.Any]): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("matchValue")(valueGetter.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def matchValue(valueGetter: js.Function0[js.Any], errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("matchValue")(valueGetter.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.maxlength")
-    @js.native
-    def maxlength(value: Double): ValidatorFunction = js.native
-    @JSImport("forms", "validators.maxlength")
-    @js.native
-    def maxlength(value: Double, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def max(value: Double): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("max")(value.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def max(value: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("max")(value.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.min")
-    @js.native
-    def min(value: Double): ValidatorFunction = js.native
-    @JSImport("forms", "validators.min")
-    @js.native
-    def min(value: Double, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def maxlength(value: Double): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("maxlength")(value.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def maxlength(value: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("maxlength")(value.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.minlength")
-    @js.native
-    def minlength(value: Double): ValidatorFunction = js.native
-    @JSImport("forms", "validators.minlength")
-    @js.native
-    def minlength(value: Double, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def min(value: Double): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("min")(value.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def min(value: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("min")(value.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.range")
-    @js.native
-    def range(min: Double, max: Double): ValidatorFunction = js.native
-    @JSImport("forms", "validators.range")
-    @js.native
-    def range(min: Double, max: Double, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def minlength(value: Double): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("minlength")(value.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def minlength(value: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("minlength")(value.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.rangelength")
-    @js.native
-    def rangelength(min: Double, max: Double): ValidatorFunction = js.native
-    @JSImport("forms", "validators.rangelength")
-    @js.native
-    def rangelength(min: Double, max: Double, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def range(min: Double, max: Double): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def range(min: Double, max: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.regexp")
-    @js.native
-    def regexp(regexp: RegExp): ValidatorFunction = js.native
-    @JSImport("forms", "validators.regexp")
-    @js.native
-    def regexp(regexp: RegExp, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def rangelength(min: Double, max: Double): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("rangelength")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def rangelength(min: Double, max: Double, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("rangelength")(min.asInstanceOf[js.Any], max.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.required")
-    @js.native
-    def required(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.required")
-    @js.native
-    def required(errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def regexp(regexp: RegExp): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def regexp(regexp: RegExp, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("regexp")(regexp.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.requiresFieldIfEmpty")
-    @js.native
-    def requiresFieldIfEmpty(alternateField: String): ValidatorFunction = js.native
-    @JSImport("forms", "validators.requiresFieldIfEmpty")
-    @js.native
-    def requiresFieldIfEmpty(alternateField: String, errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def required(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("required")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def required(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("required")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
     
-    @JSImport("forms", "validators.url")
-    @js.native
-    def url(): ValidatorFunction = js.native
-    @JSImport("forms", "validators.url")
-    @js.native
-    def url(errorMessage: String): ValidatorFunction = js.native
+    @scala.inline
+    def requiresFieldIfEmpty(alternateField: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("requiresFieldIfEmpty")(alternateField.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def requiresFieldIfEmpty(alternateField: String, errorMessage: String): ValidatorFunction = (^.asInstanceOf[js.Dynamic].applyDynamic("requiresFieldIfEmpty")(alternateField.asInstanceOf[js.Any], errorMessage.asInstanceOf[js.Any])).asInstanceOf[ValidatorFunction]
+    
+    @scala.inline
+    def url(): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("url")().asInstanceOf[ValidatorFunction]
+    @scala.inline
+    def url(errorMessage: String): ValidatorFunction = ^.asInstanceOf[js.Dynamic].applyDynamic("url")(errorMessage.asInstanceOf[js.Any]).asInstanceOf[ValidatorFunction]
   }
   
   object widgets {
     
-    @JSImport("forms", "widgets.checkbox")
+    @JSImport("forms", "widgets")
     @js.native
-    def checkbox(): Widget = js.native
-    @JSImport("forms", "widgets.checkbox")
-    @js.native
-    def checkbox(params: WidgetParameters): Widget = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("forms", "widgets.color")
-    @js.native
-    def color(): Widget = js.native
-    @JSImport("forms", "widgets.color")
-    @js.native
-    def color(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def checkbox(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")().asInstanceOf[Widget]
+    @scala.inline
+    def checkbox(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("checkbox")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.date")
-    @js.native
-    def date(): Widget = js.native
-    @JSImport("forms", "widgets.date")
-    @js.native
-    def date(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def color(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("color")().asInstanceOf[Widget]
+    @scala.inline
+    def color(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("color")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.email")
-    @js.native
-    def email(): Widget = js.native
-    @JSImport("forms", "widgets.email")
-    @js.native
-    def email(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def date(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("date")().asInstanceOf[Widget]
+    @scala.inline
+    def date(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("date")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.hidden")
-    @js.native
-    def hidden(): Widget = js.native
-    @JSImport("forms", "widgets.hidden")
-    @js.native
-    def hidden(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def email(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("email")().asInstanceOf[Widget]
+    @scala.inline
+    def email(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("email")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.label")
-    @js.native
-    def label(): Widget = js.native
-    @JSImport("forms", "widgets.label")
-    @js.native
-    def label(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def hidden(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")().asInstanceOf[Widget]
+    @scala.inline
+    def hidden(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("hidden")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.multipleCheckbox")
-    @js.native
-    def multipleCheckbox(): Widget = js.native
-    @JSImport("forms", "widgets.multipleCheckbox")
-    @js.native
-    def multipleCheckbox(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def label(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("label")().asInstanceOf[Widget]
+    @scala.inline
+    def label(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("label")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.multipleRadio")
-    @js.native
-    def multipleRadio(): Widget = js.native
-    @JSImport("forms", "widgets.multipleRadio")
-    @js.native
-    def multipleRadio(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def multipleCheckbox(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("multipleCheckbox")().asInstanceOf[Widget]
+    @scala.inline
+    def multipleCheckbox(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("multipleCheckbox")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.multipleSelect")
-    @js.native
-    def multipleSelect(): Widget = js.native
-    @JSImport("forms", "widgets.multipleSelect")
-    @js.native
-    def multipleSelect(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def multipleRadio(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("multipleRadio")().asInstanceOf[Widget]
+    @scala.inline
+    def multipleRadio(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("multipleRadio")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.number")
-    @js.native
-    def number(): Widget = js.native
-    @JSImport("forms", "widgets.number")
-    @js.native
-    def number(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def multipleSelect(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("multipleSelect")().asInstanceOf[Widget]
+    @scala.inline
+    def multipleSelect(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("multipleSelect")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.password")
-    @js.native
-    def password(): Widget = js.native
-    @JSImport("forms", "widgets.password")
-    @js.native
-    def password(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def number(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("number")().asInstanceOf[Widget]
+    @scala.inline
+    def number(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("number")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.select")
-    @js.native
-    def select(): Widget = js.native
-    @JSImport("forms", "widgets.select")
-    @js.native
-    def select(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def password(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("password")().asInstanceOf[Widget]
+    @scala.inline
+    def password(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("password")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.tel")
-    @js.native
-    def tel(): Widget = js.native
-    @JSImport("forms", "widgets.tel")
-    @js.native
-    def tel(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def select(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("select")().asInstanceOf[Widget]
+    @scala.inline
+    def select(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("select")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.text")
-    @js.native
-    def text(): Widget = js.native
-    @JSImport("forms", "widgets.text")
-    @js.native
-    def text(params: WidgetParameters): Widget = js.native
+    @scala.inline
+    def tel(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")().asInstanceOf[Widget]
+    @scala.inline
+    def tel(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("tel")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
     
-    @JSImport("forms", "widgets.textarea")
-    @js.native
-    def textarea(): Widget = js.native
-    @JSImport("forms", "widgets.textarea")
-    @js.native
-    def textarea(params: WidgetParametersrowsnumbe): Widget = js.native
+    @scala.inline
+    def text(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("text")().asInstanceOf[Widget]
+    @scala.inline
+    def text(params: WidgetParameters): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("text")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
+    
+    @scala.inline
+    def textarea(): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("textarea")().asInstanceOf[Widget]
+    @scala.inline
+    def textarea(params: WidgetParametersrowsnumbe): Widget = ^.asInstanceOf[js.Dynamic].applyDynamic("textarea")(params.asInstanceOf[js.Any]).asInstanceOf[Widget]
   }
   
   @js.native
-  trait Field extends FieldParameters {
+  trait Field
+    extends StObject
+       with FieldParameters {
     
     /** Returns a new bound field object. Calls parse on the data and stores in the bound field's data attribute, stores the raw value in the value attribute. */
     def bind(rawData: js.Any): FieldBound = js.native
@@ -372,9 +303,9 @@ object mod {
       * which returns a HTML representation of the field label, error message and widget wrapped in a div.
       */
     def toHTML(): String = js.native
-    def toHTML(name: js.UndefOr[scala.Nothing], iterator: FieldIterator): String = js.native
     def toHTML(name: String): String = js.native
     def toHTML(name: String, iterator: FieldIterator): String = js.native
+    def toHTML(name: Unit, iterator: FieldIterator): String = js.native
     
     /** A widget object to use when rendering the field. */
     @JSName("widget")
@@ -383,10 +314,13 @@ object mod {
   
   @js.native
   trait FieldArrayChoice
-    extends Array[js.Tuple2[String, String | FieldArrayChoice]]
+    extends StObject
+       with Array[js.Tuple2[String, String | FieldArrayChoice]]
   
   @js.native
-  trait FieldBound extends Field {
+  trait FieldBound
+    extends StObject
+       with Field {
     
     /** The request data coerced to the correct format for this field. */
     var data: js.Any = js.native
@@ -406,8 +340,9 @@ object mod {
   
   type FieldIterator = js.Function2[/* name */ String, /* field */ FieldBound, String]
   
-  @js.native
-  trait FieldObjectChoice extends /* key */ StringDictionary[String | FieldObjectChoice]
+  trait FieldObjectChoice
+    extends StObject
+       with /* key */ StringDictionary[String | FieldObjectChoice]
   object FieldObjectChoice {
     
     @scala.inline
@@ -417,44 +352,43 @@ object mod {
     }
   }
   
-  @js.native
   trait FieldParameters extends StObject {
     
     /** A list of options, used for multiple choice fields. */
-    var choices: js.UndefOr[FieldObjectChoice | FieldArrayChoice] = js.native
+    var choices: js.UndefOr[FieldObjectChoice | FieldArrayChoice] = js.undefined
     
     /** A list of CSS classes for label and field wrapper. */
-    var cssClasses: js.UndefOr[typings.forms.anon.Field] = js.native
+    var cssClasses: js.UndefOr[typings.forms.anon.Field] = js.undefined
     
     /** If true, the error message will be displayed after the field, rather than before. */
-    var errorAfterField: js.UndefOr[Boolean] = js.native
+    var errorAfterField: js.UndefOr[Boolean] = js.undefined
     
     /** For widgets with a fieldset (multipleRadio and multipleCheckbox), set classes for the fieldset. */
-    var fieldsetClasses: js.UndefOr[js.Array[String]] = js.native
+    var fieldsetClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /** If true, errors won't be rendered automatically. */
-    var hideError: js.UndefOr[Boolean] = js.native
+    var hideError: js.UndefOr[Boolean] = js.undefined
     
     /** An optional id to override the default. */
-    var id: js.UndefOr[String] = js.native
+    var id: js.UndefOr[String] = js.undefined
     
     /** Optional label text which overrides the default. */
-    var label: js.UndefOr[String] = js.native
+    var label: js.UndefOr[String] = js.undefined
     
     /** If true, the label text will be displayed after the field, rather than before. */
-    var labelAfterField: js.UndefOr[Boolean] = js.native
+    var labelAfterField: js.UndefOr[Boolean] = js.undefined
     
     /** For widgets with a fieldset (multipleRadio and multipleCheckbox), set classes for the fieldset's legend. */
-    var legendClasses: js.UndefOr[js.Array[String]] = js.native
+    var legendClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Boolean describing whether the field is mandatory. */
-    var required: js.UndefOr[Boolean | ValidatorFunction] = js.native
+    var required: js.UndefOr[Boolean | ValidatorFunction] = js.undefined
     
     /** An array of functions which validate the field data. */
-    var validators: js.UndefOr[js.Array[ValidatorFunction]] = js.native
+    var validators: js.UndefOr[js.Array[ValidatorFunction]] = js.undefined
     
     /** A widget object to use when rendering the field. */
-    var widget: js.UndefOr[Widget] = js.native
+    var widget: js.UndefOr[Widget] = js.undefined
   }
   object FieldParameters {
     
@@ -577,7 +511,9 @@ object mod {
   }
   
   @js.native
-  trait FormBound extends Form {
+  trait FormBound
+    extends StObject
+       with Form {
     
     /** Object containing all the parsed data keyed by field name. */
     var data: js.Any = js.native
@@ -589,8 +525,9 @@ object mod {
     def validate(callback: js.Function2[/* err */ String, /* form */ this.type, Unit]): Unit = js.native
   }
   
-  @js.native
-  trait FormFields extends /* key */ StringDictionary[Field | FormFields]
+  trait FormFields
+    extends StObject
+       with /* key */ StringDictionary[Field | FormFields]
   object FormFields {
     
     @scala.inline
@@ -612,7 +549,9 @@ object mod {
   ]
   
   @js.native
-  trait Widget extends WidgetParameters {
+  trait Widget
+    extends StObject
+       with WidgetParameters {
     
     def formatValue(value: js.Any): js.Any = js.native
     
@@ -621,17 +560,16 @@ object mod {
     def toHTML(name: String, field: Field): String = js.native
   }
   
-  @js.native
   trait WidgetParameters extends StObject {
     
     /** Custom classes to add to the rendered widget. */
-    var classes: js.UndefOr[js.Array[String]] = js.native
+    var classes: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Custom classes to add to the choices label when applicable (multipleRadio and multipleCheckbox) */
-    var labelClasses: js.UndefOr[js.Array[String]] = js.native
+    var labelClasses: js.UndefOr[js.Array[String]] = js.undefined
     
     /** A string representing the widget type, e.g. 'text' or 'checkbox' */
-    var `type`: js.UndefOr[String] = js.native
+    var `type`: js.UndefOr[String] = js.undefined
   }
   object WidgetParameters {
     

@@ -3,22 +3,20 @@ package typings.nano.mod
 import typings.nano.anon.Rev
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // -------------------------------------
 // Document scope request and response
 // -------------------------------------
-@js.native
 trait DocumentResponseRowMeta extends StObject {
   
-  var error: js.UndefOr[String] = js.native
+  var error: js.UndefOr[String] = js.undefined
   
-  var id: String = js.native
+  var id: String
   
-  var key: String = js.native
+  var key: String
   
-  var value: Rev = js.native
+  var value: Rev
 }
 object DocumentResponseRowMeta {
   

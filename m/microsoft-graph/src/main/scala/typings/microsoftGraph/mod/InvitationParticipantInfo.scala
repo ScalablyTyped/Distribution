@@ -2,20 +2,18 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InvitationParticipantInfo extends StObject {
   
   // The identitySet associated with this invitation.
-  var identity: js.UndefOr[IdentitySet] = js.native
+  var identity: js.UndefOr[IdentitySet] = js.undefined
   
   /**
     * Optional. The call which the target identity is currently a part of. This call will be dropped once the participant is
     * added.
     */
-  var replacesCallId: js.UndefOr[NullableOption[String]] = js.native
+  var replacesCallId: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object InvitationParticipantInfo {
   

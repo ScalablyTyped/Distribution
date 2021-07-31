@@ -9,7 +9,6 @@ import typings.mendixmodelsdk.microflowsMod.StructureVersionInfo
 import typings.mendixmodelsdk.structuresMod.aliases.Container
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase")
@@ -36,9 +35,8 @@ object NoCase {
     * After creation, assign or add this instance to a property that accepts this kind of objects.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase.create")
-  @js.native
-  def create(model: IModel): NoCase = js.native
+  @scala.inline
+  def create(model: IModel): NoCase = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(model.asInstanceOf[js.Any]).asInstanceOf[NoCase]
   
   /**
     * Creates and returns a new NoCase instance in the SDK and on the server.
@@ -46,9 +44,8 @@ object NoCase {
     * of the parent SequenceFlow element passed as argument.
     */
   /* static member */
-  @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase.createIn")
-  @js.native
-  def createIn(container: SequenceFlow): NoCase = js.native
+  @scala.inline
+  def createIn(container: SequenceFlow): NoCase = ^.asInstanceOf[js.Dynamic].applyDynamic("createIn")(container.asInstanceOf[js.Any]).asInstanceOf[NoCase]
   
   /* static member */
   @JSImport("mendixmodelsdk/dist/gen/microflows", "microflows.NoCase.structureTypeName")

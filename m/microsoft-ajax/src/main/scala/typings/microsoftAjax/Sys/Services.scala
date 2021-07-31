@@ -2,7 +2,6 @@ package typings.microsoftAjax.Sys
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 //#endregion
@@ -174,20 +173,17 @@ object Services {
     * Profile group properties are accessed as subproperties of the related group, as shown in the following ECMAScript (JavaScript) example:
     * @see {@link http://msdn.microsoft.com/en-us/library/bb310801(v=vs.100).aspx}
     */
-  @js.native
   trait ProfileGroup extends StObject
   
   /**
     * Provides the client proxy class for the profile service.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb383800(v=vs.100).aspx}
     */
-  @js.native
   trait ProfileService extends StObject
   
   /**
     * Provides the client proxy class for the role service.
     * @see {@link http://msdn.microsoft.com/en-us/library/bb513880(v=vs.100).aspx}
     */
-  @js.native
   trait RoleService extends StObject
 }

@@ -30,21 +30,19 @@ import typings.std.Error
 import typings.std.PromiseConstructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait `0` extends StObject {
     
-    var replaceOne: `true` = js.native
+    var replaceOne: `true`
   }
   object `0` {
     
     @scala.inline
-    def apply(replaceOne: `true`): `0` = {
-      val __obj = js.Dynamic.literal(replaceOne = replaceOne.asInstanceOf[js.Any])
+    def apply(): `0` = {
+      val __obj = js.Dynamic.literal(replaceOne = true)
       __obj.asInstanceOf[`0`]
     }
     
@@ -56,14 +54,13 @@ object anon {
     }
   }
   
-  @js.native
   trait Close extends StObject {
     
-    def close(): Unit = js.native
+    def close(): Unit
     
-    def pause(): Unit = js.native
+    def pause(): Unit
     
-    def resume(): Unit = js.native
+    def resume(): Unit
   }
   object Close {
     
@@ -87,17 +84,16 @@ object anon {
     }
   }
   
-  @js.native
   trait Collection extends StObject {
     
-    var collection: ICollection[_] = js.native
+    var collection: ICollection[js.Any]
     
-    var monkInstance: IMonkManager = js.native
+    var monkInstance: IMonkManager
   }
   object Collection {
     
     @scala.inline
-    def apply(collection: ICollection[_], monkInstance: IMonkManager): Collection = {
+    def apply(collection: ICollection[js.Any], monkInstance: IMonkManager): Collection = {
       val __obj = js.Dynamic.literal(collection = collection.asInstanceOf[js.Any], monkInstance = monkInstance.asInstanceOf[js.Any])
       __obj.asInstanceOf[Collection]
     }
@@ -106,17 +102,16 @@ object anon {
     implicit class CollectionMutableBuilder[Self <: Collection] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setCollection(value: ICollection[_]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
+      def setCollection(value: ICollection[js.Any]): Self = StObject.set(x, "collection", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setMonkInstance(value: IMonkManager): Self = StObject.set(x, "monkInstance", value.asInstanceOf[js.Any])
     }
   }
   
-  @js.native
   trait Id extends StObject {
     
-    var _id: IObjectID = js.native
+    var _id: IObjectID
   }
   object Id {
     
@@ -135,72 +130,71 @@ object anon {
   }
   
   /* Inlined mongodb.mongodb.MongoClientOptions & {  collectionOptions :monk.monk.CollectionOptions | undefined} */
-  @js.native
   trait MongoClientOptionscollect extends StObject {
     
     /**
       * Default: 15; Cutoff latency point in MS for MongoS proxy selection
       */
-    var acceptableLatencyMS: js.UndefOr[Double] = js.native
+    var acceptableLatencyMS: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the application that created this MongoClient instance.
       */
-    var appname: js.UndefOr[String] = js.native
+    var appname: js.UndefOr[String] = js.undefined
     
     /**
       * Authentication credentials
       */
-    var auth: js.UndefOr[Password] = js.native
+    var auth: js.UndefOr[Password] = js.undefined
     
     /**
       * Mechanism for authentication: DEFAULT, GSSAPI, PLAIN, MONGODB-X509, 'MONGODB-CR', SCRAM-SHA-1 or SCRAM-SHA-256
       */
     var authMechanism: js.UndefOr[
         DEFAULT | GSSAPI | PLAIN | `MONGODB-X509` | `MONGODB-CR` | `SCRAM-SHA-1` | `SCRAM-SHA-256` | String
-      ] = js.native
+      ] = js.undefined
     
     /**
       * If the database authentication is dependent on another databaseName.
       */
-    var authSource: js.UndefOr[String] = js.native
+    var authSource: js.UndefOr[String] = js.undefined
     
     /**
       * Reconnect on error.
       * @default true
       */
-    var autoReconnect: js.UndefOr[Boolean] = js.native
+    var autoReconnect: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Sets a cap on how many operations the driver will buffer up before giving up on getting a
       * working connection, default is -1 which is unlimited.
       */
-    var bufferMaxEntries: js.UndefOr[Double] = js.native
+    var bufferMaxEntries: js.UndefOr[Double] = js.undefined
     
     /**
       * Default: true; Server identity checking during SSL
       */
     var checkServerIdentity: js.UndefOr[
         Boolean | (js.Function2[/* host */ String, /* cert */ PeerCertificate, js.UndefOr[Error]])
-      ] = js.native
+      ] = js.undefined
     
     /**
       * Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info.
       */
-    var ciphers: js.UndefOr[String] = js.native
+    var ciphers: js.UndefOr[String] = js.undefined
     
-    var collectionOptions: js.UndefOr[CollectionOptions] = js.native
+    var collectionOptions: js.UndefOr[CollectionOptions] = js.undefined
     
     /** Type of compression to use */
-    var compression: js.UndefOr[Compressors] = js.native
+    var compression: js.UndefOr[Compressors] = js.undefined
     
     /**
       * TCP Connection timeout setting.
       * @default 10000
       */
-    var connectTimeoutMS: js.UndefOr[Double] = js.native
+    var connectTimeoutMS: js.UndefOr[Double] = js.undefined
     
-    var connectWithNoPrimary: js.UndefOr[Boolean] = js.native
+    var connectWithNoPrimary: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default false
@@ -214,12 +208,12 @@ object anon {
     /**
       * Default: false;
       */
-    var domainsEnabled: js.UndefOr[Boolean] = js.native
+    var domainsEnabled: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Passed directly through to tls.createSecureContext. See https://nodejs.org/dist/latest-v9.x/docs/api/tls.html#tls_tls_createsecurecontext_options for more info.
       */
-    var ecdhCurve: js.UndefOr[String] = js.native
+    var ecdhCurve: js.UndefOr[String] = js.undefined
     
     /**
       * Version of IP stack. Can be 4, 6 or null.
@@ -228,23 +222,23 @@ object anon {
       * If null, will attempt to connect with IPv6, and will fall back to IPv4 on failure
       * refer to http://mongodb.github.io/node-mongodb-native/3.6/api/MongoClient.html
       */
-    var family: js.UndefOr[`4` | `6` | Null] = js.native
+    var family: js.UndefOr[`4` | `6` | Null] = js.undefined
     
     /**
       * Default: false; Force server to create _id fields instead of client.
       */
-    var forceServerObjectId: js.UndefOr[Boolean] = js.native
+    var forceServerObjectId: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specify a file sync write concern
       * @default false
       */
-    var fsync: js.UndefOr[Boolean] = js.native
+    var fsync: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: true; Turn on high availability monitoring.
       */
-    var ha: js.UndefOr[Boolean] = js.native
+    var ha: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The High availability period for replicaset inquiry
@@ -259,62 +253,62 @@ object anon {
     /**
       * Default: 10000; The High availability period for replicaset inquiry
       */
-    var haInterval: js.UndefOr[Double] = js.native
+    var haInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * **Only applies to the unified topology**
       * The frequency with which topology updates are scheduled
       * @default 10000
       */
-    var heartbeatFrequencyMS: js.UndefOr[Double] = js.native
+    var heartbeatFrequencyMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Specify if the BSON serializer should ignore undefined fields.
       */
-    var ignoreUndefined: js.UndefOr[Boolean] = js.native
+    var ignoreUndefined: js.UndefOr[Boolean] = js.undefined
     
     /**
       * requests acknowledgement from MongoDB that the write operation has
       * been written to the journal
       * @default false
       */
-    var j: js.UndefOr[Boolean] = js.native
+    var j: js.UndefOr[Boolean] = js.undefined
     
     /**
       * TCP KeepAlive enabled on the socket.
       * @default true
       */
-    var keepAlive: js.UndefOr[Boolean] = js.native
+    var keepAlive: js.UndefOr[Boolean] = js.undefined
     
     /**
       * TCP KeepAlive initial delay before sending first keep-alive packet when idle.
       * @default 30000
       */
-    var keepAliveInitialDelay: js.UndefOr[Double] = js.native
+    var keepAliveInitialDelay: js.UndefOr[Double] = js.undefined
     
     /**
       * **Only applies to the unified topology**
       * The size of the latency window for selecting among multiple suitable servers
       * @default 15
       */
-    var localThresholdMS: js.UndefOr[Double] = js.native
+    var localThresholdMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom logger object
       */
-    var logger: js.UndefOr[js.Object | log] = js.native
+    var logger: js.UndefOr[js.Object | log] = js.undefined
     
     /**
       * The logging level (error/warn/info/debug)
       */
-    var loggerLevel: js.UndefOr[String] = js.native
+    var loggerLevel: js.UndefOr[String] = js.undefined
     
     /**
       * **Only applies to the unified topology**
       * The maximum amount of time a connection should remain idle in the connection pool before being marked idle.
       * @default Infinity
       */
-    var maxIdleTimeMS: js.UndefOr[Double] = js.native
+    var maxIdleTimeMS: js.UndefOr[Double] = js.undefined
     
     /**
       *  **Only applies to the unified topology**
@@ -322,92 +316,92 @@ object anon {
       * This includes in use and available connections
       * @default 10
       */
-    var maxPoolSize: js.UndefOr[Double] = js.native
+    var maxPoolSize: js.UndefOr[Double] = js.undefined
     
     /**
       * The max staleness to secondary reads (values under 10 seconds cannot be guaranteed);
       */
-    var maxStalenessSeconds: js.UndefOr[Double] = js.native
+    var maxStalenessSeconds: js.UndefOr[Double] = js.undefined
     
     /**
       * **Only applies to the unified topology**
       * The minimum number of connections that MUST exist at any moment in a single connection pool.
       * @default 0
       */
-    var minPoolSize: js.UndefOr[Double] = js.native
+    var minPoolSize: js.UndefOr[Double] = js.undefined
     
     /**
       * If present, the connection pool will be initialized with minSize connections, and will never dip below minSize connections
       */
-    var minSize: js.UndefOr[Double] = js.native
+    var minSize: js.UndefOr[Double] = js.undefined
     
     /**
       * Enable command monitoring for this client
       * @default false
       */
-    var monitorCommands: js.UndefOr[Boolean] = js.native
+    var monitorCommands: js.UndefOr[Boolean] = js.undefined
     
     /**
       * @default true
       */
-    var monitoring: js.UndefOr[Boolean] = js.native
+    var monitoring: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: false; Use c++ bson parser.
       */
-    var native_parser: js.UndefOr[Boolean] = js.native
+    var native_parser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * TCP Socket NoDelay option.
       * @default true
       */
-    var noDelay: js.UndefOr[Boolean] = js.native
+    var noDelay: js.UndefOr[Boolean] = js.undefined
     
     /**
       * number of retries for a tailable cursor
       * @default 5
       */
-    var numberOfRetries: js.UndefOr[Double] = js.native
+    var numberOfRetries: js.UndefOr[Double] = js.undefined
     
     /**
       * Custom primary key factory to generate _id values (see Custom primary keys).
       */
-    var pkFactory: js.UndefOr[js.Object] = js.native
+    var pkFactory: js.UndefOr[js.Object] = js.undefined
     
     /**
       * Default:5; Number of connections for each server instance; set to 5 as default for legacy reasons.
       */
-    var poolSize: js.UndefOr[Double] = js.native
+    var poolSize: js.UndefOr[Double] = js.undefined
     
     /**
       * ES6 compatible promise constructor
       */
-    var promiseLibrary: js.UndefOr[PromiseConstructor] = js.native
+    var promiseLibrary: js.UndefOr[PromiseConstructor] = js.undefined
     
     /**
       * Default: false; Promotes Binary BSON values to native Node Buffers
       */
-    var promoteBuffers: js.UndefOr[Boolean] = js.native
+    var promoteBuffers: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: true; Promotes Long values to number if they fit inside the 53 bits resolution.
       */
-    var promoteLongs: js.UndefOr[Boolean] = js.native
+    var promoteLongs: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Default: true; Promotes BSON values to native types where possible, set to false to only receive wrapper types.
       */
-    var promoteValues: js.UndefOr[Boolean] = js.native
+    var promoteValues: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Return document results as raw BSON buffers.
       */
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
     
     /**
       * https://docs.mongodb.com/manual/reference/read-concern/#read-concern
       */
-    var readConcern: js.UndefOr[ReadConcern | String] = js.native
+    var readConcern: js.UndefOr[ReadConcern | String] = js.undefined
     
     /**
       * the prefered read preference. use 'ReadPreference' class.
@@ -415,16 +409,16 @@ object anon {
     /** The ReadPreference mode as listed here: http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html */
     /** The ReadPreference mode as listed here: http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html */
     /** The ReadPreference mode as listed here: http://mongodb.github.io/node-mongodb-native/3.1/api/MongoClient.html */
-    var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.native
+    var readPreference: js.UndefOr[ReadPreferenceOrMode] = js.undefined
     
     /** An object representing read preference tags, see: http://mongodb.github.io/node-mongodb-native/3.1/api/ReadPreference.html */
-    var readPreferenceTags: js.UndefOr[js.Array[String]] = js.native
+    var readPreferenceTags: js.UndefOr[js.Array[String]] = js.undefined
     
     /**
       * Will wait # milliseconds between retries
       * @default 1000
       */
-    var reconnectInterval: js.UndefOr[Double] = js.native
+    var reconnectInterval: js.UndefOr[Double] = js.undefined
     
     /**
       * If you're connected to a single server or mongos proxy (as opposed to a replica set),
@@ -433,147 +427,147 @@ object anon {
       * reconnectFailed event.
       * @default 30
       */
-    var reconnectTries: js.UndefOr[Double] = js.native
+    var reconnectTries: js.UndefOr[Double] = js.undefined
     
     /**
       * The name of the replicaset to connect to.
       */
-    var replicaSet: js.UndefOr[String] = js.native
+    var replicaSet: js.UndefOr[String] = js.undefined
     
     /**
       * Default: 15 ; Range of servers to pick when using NEAREST (lowest ping ms + the latency fence, ex: range of 1 to (1 + 15) ms)
       */
-    var secondaryAcceptableLatencyMS: js.UndefOr[Double] = js.native
+    var secondaryAcceptableLatencyMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Serialize functions on any object.
       */
-    var serializeFunctions: js.UndefOr[Boolean] = js.native
+    var serializeFunctions: js.UndefOr[Boolean] = js.undefined
     
     /**
       * With `useUnifiedTopology`, the MongoDB driver will try to find a server to send any given operation to
       * and keep retrying for `serverSelectionTimeoutMS` milliseconds.
       * Default: 30000
       */
-    var serverSelectionTimeoutMS: js.UndefOr[Double] = js.native
+    var serverSelectionTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /**
       * String containing the server name requested via TLS SNI.
       */
-    var servername: js.UndefOr[String] = js.native
+    var servername: js.UndefOr[String] = js.undefined
     
-    var session: js.UndefOr[ClientSession] = js.native
+    var session: js.UndefOr[ClientSession] = js.undefined
     
     /**
       * Socket Options
       */
-    var socketOptions: js.UndefOr[SocketOptions] = js.native
+    var socketOptions: js.UndefOr[SocketOptions] = js.undefined
     
     /**
       * TCP Socket timeout setting.
       * @default 360000
       */
-    var socketTimeoutMS: js.UndefOr[Double] = js.native
+    var socketTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /**
       * Use ssl connection (needs to have a mongod server with ssl support)
       */
-    var ssl: js.UndefOr[Boolean] = js.native
+    var ssl: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Array of valid certificates either as Buffers or Strings
       */
-    var sslCA: js.UndefOr[js.Array[Buffer | String]] = js.native
+    var sslCA: js.UndefOr[js.Array[Buffer | String]] = js.undefined
     
     /**
       * SSL Certificate revocation list binary buffer
       */
-    var sslCRL: js.UndefOr[js.Array[Buffer | String]] = js.native
+    var sslCRL: js.UndefOr[js.Array[Buffer | String]] = js.undefined
     
     /**
       * SSL Certificate binary buffer
       */
-    var sslCert: js.UndefOr[Buffer | String] = js.native
+    var sslCert: js.UndefOr[Buffer | String] = js.undefined
     
     /**
       * SSL Key file binary buffer
       */
-    var sslKey: js.UndefOr[Buffer | String] = js.native
+    var sslKey: js.UndefOr[Buffer | String] = js.undefined
     
     /**
       * SSL Certificate pass phrase
       */
-    var sslPass: js.UndefOr[Buffer | String] = js.native
+    var sslPass: js.UndefOr[Buffer | String] = js.undefined
     
     /**
       * Default: true; Validate mongod server certificate against ca (mongod server >=2.4 with ssl support required)
       */
-    var sslValidate: js.UndefOr[Boolean] = js.native
+    var sslValidate: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enable TLS connections
       * @default false
       */
-    var tls: js.UndefOr[Boolean] = js.native
+    var tls: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies whether or not the driver should error when the server’s TLS certificate is invalid
       */
-    var tlsAllowInvalidCertificates: js.UndefOr[Boolean] = js.native
+    var tlsAllowInvalidCertificates: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Specifies whether or not the driver should error when there is a mismatch between the server’s hostname
       * and the hostname specified by the TLS certificate
       */
-    var tlsAllowInvalidHostnames: js.UndefOr[Boolean] = js.native
+    var tlsAllowInvalidHostnames: js.UndefOr[Boolean] = js.undefined
     
     /**
       * path to file with either a single or bundle of certificate authorities
       * to be considered trusted when making a TLS connection
       */
-    var tlsCAFile: js.UndefOr[String] = js.native
+    var tlsCAFile: js.UndefOr[String] = js.undefined
     
     /**
       * path to the client certificate file or the client private key file;
       * in the case that they both are needed, the files should be concatenated
       */
-    var tlsCertificateKeyFile: js.UndefOr[String] = js.native
+    var tlsCertificateKeyFile: js.UndefOr[String] = js.undefined
     
     /**
       * The password to decrypt the client private key to be used for TLS connections
       */
-    var tlsCertificateKeyFilePassword: js.UndefOr[String] = js.native
+    var tlsCertificateKeyFilePassword: js.UndefOr[String] = js.undefined
     
     /**
       * Relax TLS constraints, disabling validation
       * @default false
       */
-    var tlsInsecure: js.UndefOr[Boolean] = js.native
+    var tlsInsecure: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Determines whether or not to use the new url parser. Enables the new, spec-compliant
       * url parser shipped in the core driver. This url parser fixes a number of problems with
       * the original parser, and aims to outright replace that parser in the near future.
       */
-    var useNewUrlParser: js.UndefOr[Boolean] = js.native
+    var useNewUrlParser: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Enables the new unified topology layer
       */
-    var useUnifiedTopology: js.UndefOr[Boolean] = js.native
+    var useUnifiedTopology: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Validate MongoClient passed in options for correctness.
       * Default: false
       */
-    var validateOptions: js.UndefOr[js.Object | Boolean] = js.native
+    var validateOptions: js.UndefOr[js.Object | Boolean] = js.undefined
     
     /**
       * requests acknowledgement that the write operation has
       * propagated to a specified number of mongod hosts
       * @default 1
       */
-    var w: js.UndefOr[Double | majority | String] = js.native
+    var w: js.UndefOr[Double | majority | String] = js.undefined
     
     /**
       * **Only applies to the unified topology**
@@ -581,12 +575,12 @@ object anon {
       * The default is 0 which means there is no limit.
       * @default 0
       */
-    var waitQueueTimeoutMS: js.UndefOr[Double] = js.native
+    var waitQueueTimeoutMS: js.UndefOr[Double] = js.undefined
     
     /**
       * a time limit, in milliseconds, for the write concern
       */
-    var wtimeout: js.UndefOr[Double] = js.native
+    var wtimeout: js.UndefOr[Double] = js.undefined
   }
   object MongoClientOptionscollect {
     
@@ -1089,16 +1083,15 @@ object anon {
     }
   }
   
-  @js.native
   trait RawCursor extends StObject {
     
-    var rawCursor: `true` = js.native
+    var rawCursor: `true`
   }
   object RawCursor {
     
     @scala.inline
-    def apply(rawCursor: `true`): RawCursor = {
-      val __obj = js.Dynamic.literal(rawCursor = rawCursor.asInstanceOf[js.Any])
+    def apply(): RawCursor = {
+      val __obj = js.Dynamic.literal(rawCursor = true)
       __obj.asInstanceOf[RawCursor]
     }
     
@@ -1110,10 +1103,9 @@ object anon {
     }
   }
   
-  @js.native
   trait ReplaceOne extends StObject {
     
-    var replaceOne: js.UndefOr[`false`] = js.native
+    var replaceOne: js.UndefOr[`false`] = js.undefined
   }
   object ReplaceOne {
     

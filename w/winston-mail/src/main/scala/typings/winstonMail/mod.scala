@@ -6,7 +6,6 @@ import typings.winstonMail.anon.Ciphers
 import typings.winstonMail.anon.Level
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -14,7 +13,9 @@ object mod {
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
   - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify winston.TransportInstance * / any */ @JSImport("winston-mail", "Mail")
   @js.native
-  class Mail protected () extends Transport {
+  class Mail protected ()
+    extends StObject
+       with Transport {
     def this(options: MailTransportOptions) = this()
     
     def filter(obj: Level): Boolean = js.native
@@ -38,46 +39,45 @@ object mod {
     var unique: Boolean = js.native
   }
   
-  @js.native
   trait MailTransportOptions extends StObject {
     
-    var authentication: js.UndefOr[js.Array[String]] = js.native
+    var authentication: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[js.Function1[/* obj */ Level, Boolean]] = js.native
+    var filter: js.UndefOr[js.Function1[/* obj */ Level, Boolean]] = js.undefined
     
-    var formatter: js.UndefOr[js.Function1[/* obj */ Level, String]] = js.native
+    var formatter: js.UndefOr[js.Function1[/* obj */ Level, String]] = js.undefined
     
-    var from: js.UndefOr[String] = js.native
+    var from: js.UndefOr[String] = js.undefined
     
-    var handleExceptions: js.UndefOr[Boolean] = js.native
+    var handleExceptions: js.UndefOr[Boolean] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var html: js.UndefOr[Boolean] = js.native
+    var html: js.UndefOr[Boolean] = js.undefined
     
-    var level: js.UndefOr[String] = js.native
+    var level: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
-    var port: js.UndefOr[Double] = js.native
+    var port: js.UndefOr[Double] = js.undefined
     
-    var silent: js.UndefOr[Boolean] = js.native
+    var silent: js.UndefOr[Boolean] = js.undefined
     
-    var ssl: js.UndefOr[Boolean | Ca] = js.native
+    var ssl: js.UndefOr[Boolean | Ca] = js.undefined
     
-    var subject: js.UndefOr[String] = js.native
+    var subject: js.UndefOr[String] = js.undefined
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tls: js.UndefOr[Boolean | Ciphers] = js.native
+    var tls: js.UndefOr[Boolean | Ciphers] = js.undefined
     
-    var to: String = js.native
+    var to: String
     
-    var unique: js.UndefOr[Boolean] = js.native
+    var unique: js.UndefOr[Boolean] = js.undefined
     
-    var username: js.UndefOr[String] = js.native
+    var username: js.UndefOr[String] = js.undefined
   }
   object MailTransportOptions {
     
@@ -209,10 +209,9 @@ object mod {
   /* augmented module */
   object winstonAugmentingMod {
     
-    @js.native
     trait Transports extends StObject {
       
-      var Mail: typings.winstonMail.mod.Mail = js.native
+      var Mail: typings.winstonMail.mod.Mail
     }
     object Transports {
       

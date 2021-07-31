@@ -9,15 +9,13 @@ import typings.wampy.wampyStrings.single
 import typings.wampy.wampyStrings.wildcard
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RegisterAdvancedOptions extends StObject {
   
-  var invoke: js.UndefOr[single | roundrobin | random | first | last] = js.native
+  var invoke: js.UndefOr[single | roundrobin | random | first | last] = js.undefined
   
-  var `match`: js.UndefOr[prefix | wildcard] = js.native
+  var `match`: js.UndefOr[prefix | wildcard] = js.undefined
 }
 object RegisterAdvancedOptions {
   

@@ -3,14 +3,12 @@ package typings.semanticUiEmbed.anon
 import typings.semanticUiEmbed.semanticUiEmbedStrings.auto
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<semantic-ui-embed.SemanticUI.EmbedSettings._Impl, 'autoplay'> */
-@js.native
 trait PickImplautoplay extends StObject {
   
-  var autoplay: auto | Boolean = js.native
+  var autoplay: auto | Boolean
 }
 object PickImplautoplay {
   

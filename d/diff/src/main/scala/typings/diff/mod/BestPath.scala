@@ -2,15 +2,13 @@ package typings.diff.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BestPath extends StObject {
   
-  var componenets: js.Array[Change] = js.native
+  var componenets: js.Array[Change]
   
-  var newPos: Double = js.native
+  var newPos: Double
 }
 object BestPath {
   

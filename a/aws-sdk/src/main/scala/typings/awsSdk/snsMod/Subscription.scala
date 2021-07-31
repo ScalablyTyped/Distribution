@@ -2,36 +2,34 @@ package typings.awsSdk.snsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Subscription extends StObject {
   
   /**
     * The subscription's endpoint (format depends on the protocol).
     */
-  var Endpoint: js.UndefOr[endpoint] = js.native
+  var Endpoint: js.UndefOr[endpoint] = js.undefined
   
   /**
     * The subscription's owner.
     */
-  var Owner: js.UndefOr[account] = js.native
+  var Owner: js.UndefOr[account] = js.undefined
   
   /**
     * The subscription's protocol.
     */
-  var Protocol: js.UndefOr[protocol] = js.native
+  var Protocol: js.UndefOr[protocol] = js.undefined
   
   /**
     * The subscription's ARN.
     */
-  var SubscriptionArn: js.UndefOr[subscriptionARN] = js.native
+  var SubscriptionArn: js.UndefOr[subscriptionARN] = js.undefined
   
   /**
     * The ARN of the subscription's topic.
     */
-  var TopicArn: js.UndefOr[topicARN] = js.native
+  var TopicArn: js.UndefOr[topicARN] = js.undefined
 }
 object Subscription {
   

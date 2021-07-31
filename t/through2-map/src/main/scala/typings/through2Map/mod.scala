@@ -4,81 +4,65 @@ import typings.node.streamMod.DuplexOptions
 import typings.through2.mod.Through2Constructor
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("through2-map", JSImport.Namespace)
-  @js.native
-  def apply(): Through2Constructor = js.native
-  @JSImport("through2-map", JSImport.Namespace)
-  @js.native
-  def apply(fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", JSImport.Namespace)
-  @js.native
-  def apply(options: js.UndefOr[scala.Nothing], fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", JSImport.Namespace)
-  @js.native
-  def apply(options: Through2MapOptions): Through2Constructor = js.native
-  @JSImport("through2-map", JSImport.Namespace)
-  @js.native
-  def apply(options: Through2MapOptions, fn: MapCallback): Through2Constructor = js.native
+  @scala.inline
+  def apply(): Through2Constructor = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Through2Constructor]
+  @scala.inline
+  def apply(fn: MapCallback): Through2Constructor = ^.asInstanceOf[js.Dynamic].apply(fn.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def apply(options: Unit, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def apply(options: Through2MapOptions): Through2Constructor = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def apply(options: Through2MapOptions, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
   
-  @JSImport("through2-map", "ctor")
+  @JSImport("through2-map", JSImport.Namespace)
   @js.native
-  def ctor(): Through2Constructor = js.native
-  @JSImport("through2-map", "ctor")
-  @js.native
-  def ctor(fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", "ctor")
-  @js.native
-  def ctor(options: js.UndefOr[scala.Nothing], fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", "ctor")
-  @js.native
-  def ctor(options: Through2MapOptions): Through2Constructor = js.native
-  @JSImport("through2-map", "ctor")
-  @js.native
-  def ctor(options: Through2MapOptions, fn: MapCallback): Through2Constructor = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("through2-map", "obj")
-  @js.native
-  def obj(): Through2Constructor = js.native
-  @JSImport("through2-map", "obj")
-  @js.native
-  def obj(fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", "obj")
-  @js.native
-  def obj(options: js.UndefOr[scala.Nothing], fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", "obj")
-  @js.native
-  def obj(options: Through2MapOptions): Through2Constructor = js.native
-  @JSImport("through2-map", "obj")
-  @js.native
-  def obj(options: Through2MapOptions, fn: MapCallback): Through2Constructor = js.native
+  @scala.inline
+  def ctor(): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")().asInstanceOf[Through2Constructor]
+  @scala.inline
+  def ctor(fn: MapCallback): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(fn.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def ctor(options: Unit, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def ctor(options: Through2MapOptions): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(options.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def ctor(options: Through2MapOptions, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("ctor")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
   
-  @JSImport("through2-map", "objCtor")
-  @js.native
-  def objCtor(): Through2Constructor = js.native
-  @JSImport("through2-map", "objCtor")
-  @js.native
-  def objCtor(fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", "objCtor")
-  @js.native
-  def objCtor(options: js.UndefOr[scala.Nothing], fn: MapCallback): Through2Constructor = js.native
-  @JSImport("through2-map", "objCtor")
-  @js.native
-  def objCtor(options: Through2MapOptions): Through2Constructor = js.native
-  @JSImport("through2-map", "objCtor")
-  @js.native
-  def objCtor(options: Through2MapOptions, fn: MapCallback): Through2Constructor = js.native
+  @scala.inline
+  def obj(): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")().asInstanceOf[Through2Constructor]
+  @scala.inline
+  def obj(fn: MapCallback): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(fn.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def obj(options: Unit, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def obj(options: Through2MapOptions): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("obj")(options.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def obj(options: Through2MapOptions, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("obj")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  
+  @scala.inline
+  def objCtor(): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("objCtor")().asInstanceOf[Through2Constructor]
+  @scala.inline
+  def objCtor(fn: MapCallback): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("objCtor")(fn.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def objCtor(options: Unit, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("objCtor")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def objCtor(options: Through2MapOptions): Through2Constructor = ^.asInstanceOf[js.Dynamic].applyDynamic("objCtor")(options.asInstanceOf[js.Any]).asInstanceOf[Through2Constructor]
+  @scala.inline
+  def objCtor(options: Through2MapOptions, fn: MapCallback): Through2Constructor = (^.asInstanceOf[js.Dynamic].applyDynamic("objCtor")(options.asInstanceOf[js.Any], fn.asInstanceOf[js.Any])).asInstanceOf[Through2Constructor]
   
   type MapCallback = js.Function2[/* chunk */ js.Any, /* index */ Double, Unit]
   
-  @js.native
-  trait Through2MapOptions extends DuplexOptions {
+  trait Through2MapOptions
+    extends StObject
+       with DuplexOptions {
     
-    var wantStrings: js.UndefOr[Boolean] = js.native
+    var wantStrings: js.UndefOr[Boolean] = js.undefined
   }
   object Through2MapOptions {
     

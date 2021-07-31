@@ -2,50 +2,48 @@ package typings.googleapis.firestoreV1beta1Mod.firestoreV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Metadata for ExportDocuments operations.
   */
-@js.native
 trait SchemaGoogleFirestoreAdminV1beta1ExportDocumentsMetadata extends StObject {
   
   /**
     * Which collection ids are being exported.
     */
-  var collectionIds: js.UndefOr[js.Array[String]] = js.native
+  var collectionIds: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * The time the operation ended, either successfully or otherwise. Unset if
     * the operation is still active.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * The state of the export operation.
     */
-  var operationState: js.UndefOr[String] = js.native
+  var operationState: js.UndefOr[String] = js.undefined
   
   /**
     * Where the entities are being exported to.
     */
-  var outputUriPrefix: js.UndefOr[String] = js.native
+  var outputUriPrefix: js.UndefOr[String] = js.undefined
   
   /**
     * An estimate of the number of bytes processed.
     */
-  var progressBytes: js.UndefOr[SchemaGoogleFirestoreAdminV1beta1Progress] = js.native
+  var progressBytes: js.UndefOr[SchemaGoogleFirestoreAdminV1beta1Progress] = js.undefined
   
   /**
     * An estimate of the number of documents processed.
     */
-  var progressDocuments: js.UndefOr[SchemaGoogleFirestoreAdminV1beta1Progress] = js.native
+  var progressDocuments: js.UndefOr[SchemaGoogleFirestoreAdminV1beta1Progress] = js.undefined
   
   /**
     * The time that work began on the operation.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
 }
 object SchemaGoogleFirestoreAdminV1beta1ExportDocumentsMetadata {
   

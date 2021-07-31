@@ -2,16 +2,14 @@ package typings.aureliaTemplating.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ComponentAttached extends StObject {
   
   /**
     * Implement this hook if you want to perform custom logic when the component is attached to the DOM (in document).
     */
-  def attached(): Unit = js.native
+  def attached(): Unit
 }
 object ComponentAttached {
   

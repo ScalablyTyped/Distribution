@@ -2,18 +2,16 @@ package typings.dwt.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CropBar extends StObject {
   
-  var cropBar: js.UndefOr[Boolean] = js.native
+  var cropBar: js.UndefOr[Boolean] = js.undefined
   
   // Example [[1, 1], [3, 2], [4, 3], [5, 4], [7, 5], [16, 9]],
-  var cropMask: js.UndefOr[Boolean] = js.native
+  var cropMask: js.UndefOr[Boolean] = js.undefined
   
-  var ratios: js.UndefOr[js.Any] = js.native
+  var ratios: js.UndefOr[js.Any] = js.undefined
 }
 object CropBar {
   

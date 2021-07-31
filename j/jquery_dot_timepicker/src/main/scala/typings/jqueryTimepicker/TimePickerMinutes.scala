@@ -2,20 +2,18 @@ package typings.jqueryTimepicker
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerMinutes extends StObject {
   
   /** last displayed minute */
-  var ends: js.UndefOr[Double] = js.native
+  var ends: js.UndefOr[Double] = js.undefined
   
   /** interval of displayed minutes */
-  var interval: js.UndefOr[Double] = js.native
+  var interval: js.UndefOr[Double] = js.undefined
   
   /** first displayed minute */
-  var starts: js.UndefOr[Double] = js.native
+  var starts: js.UndefOr[Double] = js.undefined
 }
 object TimePickerMinutes {
   

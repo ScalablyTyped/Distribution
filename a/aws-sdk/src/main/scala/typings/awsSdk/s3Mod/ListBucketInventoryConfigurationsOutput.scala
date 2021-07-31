@@ -2,31 +2,29 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListBucketInventoryConfigurationsOutput extends StObject {
   
   /**
     * If sent in the request, the marker that is used as a starting point for this inventory configuration list response.
     */
-  var ContinuationToken: js.UndefOr[Token] = js.native
+  var ContinuationToken: js.UndefOr[Token] = js.undefined
   
   /**
     * The list of inventory configurations for a bucket.
     */
-  var InventoryConfigurationList: js.UndefOr[typings.awsSdk.s3Mod.InventoryConfigurationList] = js.native
+  var InventoryConfigurationList: js.UndefOr[typings.awsSdk.s3Mod.InventoryConfigurationList] = js.undefined
   
   /**
     * Tells whether the returned list of inventory configurations is complete. A value of true indicates that the list is not complete and the NextContinuationToken is provided for a subsequent request.
     */
-  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.native
+  var IsTruncated: js.UndefOr[typings.awsSdk.s3Mod.IsTruncated] = js.undefined
   
   /**
     * The marker used to continue this inventory configuration listing. Use the NextContinuationToken from this response to continue the listing in a subsequent request. The continuation token is an opaque value that Amazon S3 understands.
     */
-  var NextContinuationToken: js.UndefOr[NextToken] = js.native
+  var NextContinuationToken: js.UndefOr[NextToken] = js.undefined
 }
 object ListBucketInventoryConfigurationsOutput {
   

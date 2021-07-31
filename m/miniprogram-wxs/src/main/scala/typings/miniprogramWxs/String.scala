@@ -4,12 +4,12 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.miniprogramWxs.Intl.CollatorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
 trait String
-  extends /* index */ NumberDictionary[java.lang.String] {
+  extends StObject
+     with /* index */ NumberDictionary[java.lang.String] {
   
   /**
     * Returns the character at the specified index.
@@ -53,9 +53,9 @@ trait String
     * @param that String to compare to target string
     */
   def localeCompare(that: java.lang.String): Double = js.native
-  def localeCompare(that: java.lang.String, locales: js.UndefOr[scala.Nothing], options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: java.lang.String): Double = js.native
   def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): Double = js.native
+  def localeCompare(that: java.lang.String, locales: Unit, options: CollatorOptions): Double = js.native
   def localeCompare(that: java.lang.String, locales: Array[java.lang.String]): Double = js.native
   def localeCompare(that: java.lang.String, locales: Array[java.lang.String], options: CollatorOptions): Double = js.native
   
@@ -101,9 +101,9 @@ trait String
     * If this value is not specified, the substring continues to the end of stringObj.
     */
   def slice(): java.lang.String = js.native
-  def slice(start: js.UndefOr[scala.Nothing], end: Double): java.lang.String = js.native
   def slice(start: Double): java.lang.String = js.native
   def slice(start: Double, end: Double): java.lang.String = js.native
+  def slice(start: Unit, end: Double): java.lang.String = js.native
   
   /**
     * Split a string into substrings using the specified separator and return them as an array.

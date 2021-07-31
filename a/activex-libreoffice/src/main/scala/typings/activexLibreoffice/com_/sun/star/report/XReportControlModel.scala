@@ -20,12 +20,11 @@ import typings.activexLibreoffice.com_.sun.star.util.XCloneable
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XReportControlModel
-  extends XReportComponent
+  extends StObject
+     with XReportComponent
      with XReportControlFormat
      with XContainer
      with XIndexContainer {
@@ -34,7 +33,7 @@ trait XReportControlModel
     * Describes the print expression of the report control model. If the expression evaluates to true than the report control model will be printed
     * otherwise not.
     */
-  var ConditionalPrintExpression: String = js.native
+  var ConditionalPrintExpression: String
   
   /**
     * Specifies which content should be shown.
@@ -47,16 +46,16 @@ trait XReportControlModel
     * @see http://wiki.openoffice.org/wiki/SUN_Report_Builder#Syntax
     * @see http://wiki.openoffice.org/wiki/Base/Reports/Functions
     */
-  var DataField: String = js.native
+  var DataField: String
   
   /** Specifies that the element gets printed when the group changes. The default value is `TRUE` . */
-  var PrintWhenGroupChange: Boolean = js.native
+  var PrintWhenGroupChange: Boolean
   
   /**
     * Creates a format condition.
     * @returns report component
     */
-  def createFormatCondition(): XFormatCondition = js.native
+  def createFormatCondition(): XFormatCondition
 }
 object XReportControlModel {
   

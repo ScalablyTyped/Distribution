@@ -2,138 +2,136 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BuildBatch extends StObject {
   
   /**
     * The ARN of the batch build.
     */
-  var arn: js.UndefOr[NonEmptyString] = js.native
+  var arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * A BuildArtifacts object the defines the build artifacts for this batch build.
     */
-  var artifacts: js.UndefOr[BuildArtifacts] = js.native
+  var artifacts: js.UndefOr[BuildArtifacts] = js.undefined
   
-  var buildBatchConfig: js.UndefOr[ProjectBuildBatchConfig] = js.native
+  var buildBatchConfig: js.UndefOr[ProjectBuildBatchConfig] = js.undefined
   
   /**
     * The number of the batch build. For each project, the buildBatchNumber of its first batch build is 1. The buildBatchNumber of each subsequent batch build is incremented by 1. If a batch build is deleted, the buildBatchNumber of other batch builds does not change.
     */
-  var buildBatchNumber: js.UndefOr[WrapperLong] = js.native
+  var buildBatchNumber: js.UndefOr[WrapperLong] = js.undefined
   
   /**
     * The status of the batch build.
     */
-  var buildBatchStatus: js.UndefOr[StatusType] = js.native
+  var buildBatchStatus: js.UndefOr[StatusType] = js.undefined
   
   /**
     * An array of BuildGroup objects that define the build groups for the batch build.
     */
-  var buildGroups: js.UndefOr[BuildGroups] = js.native
+  var buildGroups: js.UndefOr[BuildGroups] = js.undefined
   
   /**
     * Specifies the maximum amount of time, in minutes, that the build in a batch must be completed in.
     */
-  var buildTimeoutInMinutes: js.UndefOr[WrapperInt] = js.native
+  var buildTimeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined
   
-  var cache: js.UndefOr[ProjectCache] = js.native
+  var cache: js.UndefOr[ProjectCache] = js.undefined
   
   /**
     * Indicates if the batch build is complete.
     */
-  var complete: js.UndefOr[Boolean] = js.native
+  var complete: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The current phase of the batch build.
     */
-  var currentPhase: js.UndefOr[String] = js.native
+  var currentPhase: js.UndefOr[String] = js.undefined
   
   /**
     * The AWS Key Management Service (AWS KMS) customer master key (CMK) to be used for encrypting the batch build output artifacts.  You can use a cross-account KMS key to encrypt the build output artifacts if your service role has permission to that key.   You can specify either the Amazon Resource Name (ARN) of the CMK or, if available, the CMK's alias (using the format alias/&lt;alias-name&gt;).
     */
-  var encryptionKey: js.UndefOr[NonEmptyString] = js.native
+  var encryptionKey: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The date and time that the batch build ended.
     */
-  var endTime: js.UndefOr[Timestamp] = js.native
+  var endTime: js.UndefOr[Timestamp] = js.undefined
   
-  var environment: js.UndefOr[ProjectEnvironment] = js.native
+  var environment: js.UndefOr[ProjectEnvironment] = js.undefined
   
   /**
     * An array of ProjectFileSystemLocation objects for the batch build project. A ProjectFileSystemLocation object specifies the identifier, location, mountOptions, mountPoint, and type of a file system created using Amazon Elastic File System. 
     */
-  var fileSystemLocations: js.UndefOr[ProjectFileSystemLocations] = js.native
+  var fileSystemLocations: js.UndefOr[ProjectFileSystemLocations] = js.undefined
   
   /**
     * The identifier of the batch build.
     */
-  var id: js.UndefOr[NonEmptyString] = js.native
+  var id: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The entity that started the batch build. Valid values include:   If AWS CodePipeline started the build, the pipeline's name (for example, codepipeline/my-demo-pipeline).   If an AWS Identity and Access Management (IAM) user started the build, the user's name.   If the Jenkins plugin for AWS CodeBuild started the build, the string CodeBuild-Jenkins-Plugin.  
     */
-  var initiator: js.UndefOr[String] = js.native
+  var initiator: js.UndefOr[String] = js.undefined
   
-  var logConfig: js.UndefOr[LogsConfig] = js.native
+  var logConfig: js.UndefOr[LogsConfig] = js.undefined
   
   /**
     * An array of BuildBatchPhase objects the specify the phases of the batch build.
     */
-  var phases: js.UndefOr[BuildBatchPhases] = js.native
+  var phases: js.UndefOr[BuildBatchPhases] = js.undefined
   
   /**
     * The name of the batch build project.
     */
-  var projectName: js.UndefOr[NonEmptyString] = js.native
+  var projectName: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * Specifies the amount of time, in minutes, that the batch build is allowed to be queued before it times out.
     */
-  var queuedTimeoutInMinutes: js.UndefOr[WrapperInt] = js.native
+  var queuedTimeoutInMinutes: js.UndefOr[WrapperInt] = js.undefined
   
   /**
     * The identifier of the resolved version of this batch build's source code.   For AWS CodeCommit, GitHub, GitHub Enterprise, and BitBucket, the commit ID.   For AWS CodePipeline, the source revision provided by AWS CodePipeline.   For Amazon Simple Storage Service (Amazon S3), this does not apply.  
     */
-  var resolvedSourceVersion: js.UndefOr[NonEmptyString] = js.native
+  var resolvedSourceVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * An array of BuildArtifacts objects the define the build artifacts for this batch build.
     */
-  var secondaryArtifacts: js.UndefOr[BuildArtifactsList] = js.native
+  var secondaryArtifacts: js.UndefOr[BuildArtifactsList] = js.undefined
   
   /**
     * An array of ProjectSourceVersion objects. Each ProjectSourceVersion must be one of:    For AWS CodeCommit: the commit ID, branch, or Git tag to use.   For GitHub: the commit ID, pull request ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a pull request ID is specified, it must use the format pr/pull-request-ID (for example, pr/25). If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Bitbucket: the commit ID, branch name, or tag name that corresponds to the version of the source code you want to build. If a branch name is specified, the branch's HEAD commit ID is used. If not specified, the default branch's HEAD commit ID is used.   For Amazon Simple Storage Service (Amazon S3): the version ID of the object that represents the build input ZIP file to use.  
     */
-  var secondarySourceVersions: js.UndefOr[ProjectSecondarySourceVersions] = js.native
+  var secondarySourceVersions: js.UndefOr[ProjectSecondarySourceVersions] = js.undefined
   
   /**
     * An array of ProjectSource objects that define the sources for the batch build.
     */
-  var secondarySources: js.UndefOr[ProjectSources] = js.native
+  var secondarySources: js.UndefOr[ProjectSources] = js.undefined
   
   /**
     * The name of a service role used for builds in the batch.
     */
-  var serviceRole: js.UndefOr[NonEmptyString] = js.native
+  var serviceRole: js.UndefOr[NonEmptyString] = js.undefined
   
-  var source: js.UndefOr[ProjectSource] = js.native
+  var source: js.UndefOr[ProjectSource] = js.undefined
   
   /**
     * The identifier of the version of the source code to be built.
     */
-  var sourceVersion: js.UndefOr[NonEmptyString] = js.native
+  var sourceVersion: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The date and time that the batch build started.
     */
-  var startTime: js.UndefOr[Timestamp] = js.native
+  var startTime: js.UndefOr[Timestamp] = js.undefined
   
-  var vpcConfig: js.UndefOr[VpcConfig] = js.native
+  var vpcConfig: js.UndefOr[VpcConfig] = js.undefined
 }
 object BuildBatch {
   

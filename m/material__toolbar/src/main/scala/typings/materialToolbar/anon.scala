@@ -6,21 +6,19 @@ import typings.materialToolbar.materialToolbarStrings.scroll
 import typings.materialToolbar.typesMod.MDCToolbarEventDetail
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CHANGEEVENT extends StObject {
     
-    var CHANGE_EVENT: String = js.native
+    var CHANGE_EVENT: String
     
-    var FIRST_ROW_SELECTOR: String = js.native
+    var FIRST_ROW_SELECTOR: String
     
-    var ICON_SELECTOR: String = js.native
+    var ICON_SELECTOR: String
     
-    var TITLE_SELECTOR: String = js.native
+    var TITLE_SELECTOR: String
   }
   object CHANGEEVENT {
     
@@ -47,22 +45,21 @@ object anon {
     }
   }
   
-  @js.native
   trait FIXED extends StObject {
     
-    var FIXED: String = js.native
+    var FIXED: String
     
-    var FIXED_AT_LAST_ROW: String = js.native
+    var FIXED_AT_LAST_ROW: String
     
-    var FIXED_LASTROW: String = js.native
+    var FIXED_LASTROW: String
     
-    var FLEXIBLE_DEFAULT_BEHAVIOR: String = js.native
+    var FLEXIBLE_DEFAULT_BEHAVIOR: String
     
-    var FLEXIBLE_MAX: String = js.native
+    var FLEXIBLE_MAX: String
     
-    var FLEXIBLE_MIN: String = js.native
+    var FLEXIBLE_MIN: String
     
-    var TOOLBAR_ROW_FLEXIBLE: String = js.native
+    var TOOLBAR_ROW_FLEXIBLE: String
   }
   object FIXED {
     
@@ -106,19 +103,18 @@ object anon {
     }
   }
   
-  @js.native
   trait MAXTITLESIZE extends StObject {
     
-    var MAX_TITLE_SIZE: Double = js.native
+    var MAX_TITLE_SIZE: Double
     
     /** The ratio of max scrollTop that we should listen to to row height. */
-    var MIN_TITLE_SIZE: Double = js.native
+    var MIN_TITLE_SIZE: Double
     
-    var TOOLBAR_MOBILE_BREAKPOINT: Double = js.native
+    var TOOLBAR_MOBILE_BREAKPOINT: Double
     
-    var TOOLBAR_ROW_HEIGHT: Double = js.native
+    var TOOLBAR_ROW_HEIGHT: Double
     
-    var TOOLBAR_ROW_MOBILE_HEIGHT: Double = js.native
+    var TOOLBAR_ROW_MOBILE_HEIGHT: Double
   }
   object MAXTITLESIZE {
     
@@ -155,40 +151,39 @@ object anon {
   }
   
   /* Inlined std.Partial<@material/toolbar.@material/toolbar/adapter.MDCToolbarAdapter> */
-  @js.native
   trait PartialMDCToolbarAdapter extends StObject {
     
-    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var addClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var deregisterResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var deregisterScrollHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[scroll], Unit]] = js.native
+    var deregisterScrollHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[scroll], Unit]] = js.undefined
     
-    var getFirstRowElementOffsetHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getFirstRowElementOffsetHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getOffsetHeight: js.UndefOr[js.Function0[Double]] = js.native
+    var getOffsetHeight: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getViewportScrollY: js.UndefOr[js.Function0[Double]] = js.native
+    var getViewportScrollY: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var getViewportWidth: js.UndefOr[js.Function0[Double]] = js.native
+    var getViewportWidth: js.UndefOr[js.Function0[Double]] = js.undefined
     
-    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.native
+    var hasClass: js.UndefOr[js.Function1[/* className */ String, Boolean]] = js.undefined
     
-    var notifyChange: js.UndefOr[js.Function1[/* evtData */ MDCToolbarEventDetail, Unit]] = js.native
+    var notifyChange: js.UndefOr[js.Function1[/* evtData */ MDCToolbarEventDetail, Unit]] = js.undefined
     
-    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.native
+    var registerResizeHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[resize], Unit]] = js.undefined
     
-    var registerScrollHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[scroll], Unit]] = js.native
+    var registerScrollHandler: js.UndefOr[js.Function1[/* handler */ SpecificEventListener[scroll], Unit]] = js.undefined
     
-    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.native
+    var removeClass: js.UndefOr[js.Function1[/* className */ String, Unit]] = js.undefined
     
-    var setStyle: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.native
+    var setStyle: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.undefined
     
-    var setStyleForFixedAdjustElement: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.native
+    var setStyleForFixedAdjustElement: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.undefined
     
-    var setStyleForFlexibleRowElement: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.native
+    var setStyleForFlexibleRowElement: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.undefined
     
-    var setStyleForTitleElement: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.native
+    var setStyleForTitleElement: js.UndefOr[js.Function2[/* property */ String, /* value */ String, Unit]] = js.undefined
   }
   object PartialMDCToolbarAdapter {
     

@@ -2,36 +2,34 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreatePlacementGroupRequest extends StObject {
   
   /**
     * Checks whether you have the required permissions for the action, without actually making the request, and provides an error response. If you have the required permissions, the error response is DryRunOperation. Otherwise, it is UnauthorizedOperation.
     */
-  var DryRun: js.UndefOr[Boolean] = js.native
+  var DryRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * A name for the placement group. Must be unique within the scope of your account for the Region. Constraints: Up to 255 ASCII characters
     */
-  var GroupName: js.UndefOr[String] = js.native
+  var GroupName: js.UndefOr[String] = js.undefined
   
   /**
     * The number of partitions. Valid only when Strategy is set to partition.
     */
-  var PartitionCount: js.UndefOr[Integer] = js.native
+  var PartitionCount: js.UndefOr[Integer] = js.undefined
   
   /**
     * The placement strategy.
     */
-  var Strategy: js.UndefOr[PlacementStrategy] = js.native
+  var Strategy: js.UndefOr[PlacementStrategy] = js.undefined
   
   /**
     * The tags to apply to the new placement group.
     */
-  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.native
+  var TagSpecifications: js.UndefOr[TagSpecificationList] = js.undefined
 }
 object CreatePlacementGroupRequest {
   

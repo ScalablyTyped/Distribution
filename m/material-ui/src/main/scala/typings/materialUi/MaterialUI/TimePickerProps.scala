@@ -14,99 +14,97 @@ import typings.react.mod.ReactNode
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimePickerProps extends StObject {
   
   // <TextField/> is element that get the 'other' properties
-  var autoOk: js.UndefOr[Boolean] = js.native
+  var autoOk: js.UndefOr[Boolean] = js.undefined
   
-  var cancelLabel: js.UndefOr[ReactNode] = js.native
+  var cancelLabel: js.UndefOr[ReactNode] = js.undefined
   
   // From <TextField />
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var defaultTime: js.UndefOr[Date] = js.native
+  var defaultTime: js.UndefOr[Date] = js.undefined
   
-  var defaultValue: js.UndefOr[String | Double] = js.native
+  var defaultValue: js.UndefOr[String | Double] = js.undefined
   
-  var dialogBodyStyle: js.UndefOr[CSSProperties] = js.native
+  var dialogBodyStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var dialogStyle: js.UndefOr[CSSProperties] = js.native
+  var dialogStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var disabled: js.UndefOr[Boolean] = js.native
+  var disabled: js.UndefOr[Boolean] = js.undefined
   
-  var errorStyle: js.UndefOr[CSSProperties] = js.native
+  var errorStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var errorText: js.UndefOr[ReactNode] = js.native
+  var errorText: js.UndefOr[ReactNode] = js.undefined
   
-  var floatingLabelFixed: js.UndefOr[Boolean] = js.native
+  var floatingLabelFixed: js.UndefOr[Boolean] = js.undefined
   
-  var floatingLabelFocusStyle: js.UndefOr[CSSProperties] = js.native
+  var floatingLabelFocusStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var floatingLabelStyle: js.UndefOr[CSSProperties] = js.native
+  var floatingLabelStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var floatingLabelText: js.UndefOr[ReactNode] = js.native
+  var floatingLabelText: js.UndefOr[ReactNode] = js.undefined
   
-  var format: js.UndefOr[ampm | `24hr`] = js.native
+  var format: js.UndefOr[ampm | `24hr`] = js.undefined
   
-  var fullWidth: js.UndefOr[Boolean] = js.native
+  var fullWidth: js.UndefOr[Boolean] = js.undefined
   
-  var hintStyle: js.UndefOr[CSSProperties] = js.native
+  var hintStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var hintText: js.UndefOr[ReactNode] = js.native
+  var hintText: js.UndefOr[ReactNode] = js.undefined
   
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
-  var inputStyle: js.UndefOr[CSSProperties] = js.native
+  var inputStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var minutesStep: js.UndefOr[Double] = js.native
+  var minutesStep: js.UndefOr[Double] = js.undefined
   
-  var multiLine: js.UndefOr[Boolean] = js.native
+  var multiLine: js.UndefOr[Boolean] = js.undefined
   
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
-  var okLabel: js.UndefOr[ReactNode] = js.native
+  var okLabel: js.UndefOr[ReactNode] = js.undefined
   
-  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onBlur: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function2[/* e */ js.Any, /* time */ Date, Unit]] = js.native
+  var onChange: js.UndefOr[js.Function2[/* e */ js.Any, /* time */ Date, Unit]] = js.undefined
   
-  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.native
+  var onClick: js.UndefOr[MouseEventHandler[js.Object]] = js.undefined
   
-  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.native
+  var onDismiss: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.native
+  var onFocus: js.UndefOr[FocusEventHandler[js.Object]] = js.undefined
   
-  var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.native
+  var onKeyDown: js.UndefOr[KeyboardEventHandler[js.Object]] = js.undefined
   
-  var onShow: js.UndefOr[js.Function0[Unit]] = js.native
+  var onShow: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var pedantic: js.UndefOr[Boolean] = js.native
+  var pedantic: js.UndefOr[Boolean] = js.undefined
   
-  var rows: js.UndefOr[Double] = js.native
+  var rows: js.UndefOr[Double] = js.undefined
   
-  var rowsMax: js.UndefOr[Double] = js.native
+  var rowsMax: js.UndefOr[Double] = js.undefined
   
-  var style: js.UndefOr[CSSProperties] = js.native
+  var style: js.UndefOr[CSSProperties] = js.undefined
   
-  var textFieldStyle: js.UndefOr[CSSProperties] = js.native
+  var textFieldStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var textareaStyle: js.UndefOr[CSSProperties] = js.native
+  var textareaStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
   
-  var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineDisabledStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var underlineFocusStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineFocusStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var underlineShow: js.UndefOr[Boolean] = js.native
+  var underlineShow: js.UndefOr[Boolean] = js.undefined
   
-  var underlineStyle: js.UndefOr[CSSProperties] = js.native
+  var underlineStyle: js.UndefOr[CSSProperties] = js.undefined
   
-  var value: js.UndefOr[Date] = js.native
+  var value: js.UndefOr[Date] = js.undefined
 }
 object TimePickerProps {
   

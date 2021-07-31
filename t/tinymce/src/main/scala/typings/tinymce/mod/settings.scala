@@ -2,27 +2,25 @@ package typings.tinymce.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object settings {
   
-  @js.native
   trait Menu extends StObject {
     
-    var edit: js.UndefOr[MenuItem] = js.native
+    var edit: js.UndefOr[MenuItem] = js.undefined
     
-    var file: js.UndefOr[MenuItem] = js.native
+    var file: js.UndefOr[MenuItem] = js.undefined
     
-    var format: js.UndefOr[MenuItem] = js.native
+    var format: js.UndefOr[MenuItem] = js.undefined
     
-    var insert: js.UndefOr[MenuItem] = js.native
+    var insert: js.UndefOr[MenuItem] = js.undefined
     
-    var table: js.UndefOr[MenuItem] = js.native
+    var table: js.UndefOr[MenuItem] = js.undefined
     
-    var tools: js.UndefOr[MenuItem] = js.native
+    var tools: js.UndefOr[MenuItem] = js.undefined
     
-    var view: js.UndefOr[MenuItem] = js.native
+    var view: js.UndefOr[MenuItem] = js.undefined
   }
   object Menu {
     
@@ -79,12 +77,11 @@ object settings {
     }
   }
   
-  @js.native
   trait MenuItem extends StObject {
     
-    var items: String = js.native
+    var items: String
     
-    var title: String = js.native
+    var title: String
   }
   object MenuItem {
     

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/plusDomains/v1", "plusDomains_v1.Resource$Media")
@@ -36,7 +35,7 @@ class ResourceMedia protected () extends StObject {
     */
   def insert(): GaxiosPromise[SchemaMedia] = js.native
   def insert(callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
-  def insert(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaMedia] = js.native
+  def insert(params: Unit, options: MethodOptions): GaxiosPromise[SchemaMedia] = js.native
   def insert(params: ParamsResourceMediaInsert): GaxiosPromise[SchemaMedia] = js.native
   def insert(params: ParamsResourceMediaInsert, callback: BodyResponseCallback[SchemaMedia]): Unit = js.native
   def insert(

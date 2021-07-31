@@ -2,7 +2,6 @@ package typings.winrtUwp.global.Windows.ApplicationModel.Background
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a trigger that launches a background task for processing changes to the contacts store. */
@@ -10,4 +9,5 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 @js.native
 /** Initializes a new instance of the ContactStoreNotificationTrigger class. */
 class ContactStoreNotificationTrigger ()
-  extends typings.winrtUwp.Windows.ApplicationModel.Background.ContactStoreNotificationTrigger
+  extends StObject
+     with typings.winrtUwp.Windows.ApplicationModel.Background.ContactStoreNotificationTrigger

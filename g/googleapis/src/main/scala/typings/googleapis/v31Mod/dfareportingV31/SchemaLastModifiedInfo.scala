@@ -2,19 +2,17 @@ package typings.googleapis.v31Mod.dfareportingV31
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Modification timestamp.
   */
-@js.native
 trait SchemaLastModifiedInfo extends StObject {
   
   /**
     * Timestamp of the last change in milliseconds since epoch.
     */
-  var time: js.UndefOr[String] = js.native
+  var time: js.UndefOr[String] = js.undefined
 }
 object SchemaLastModifiedInfo {
   

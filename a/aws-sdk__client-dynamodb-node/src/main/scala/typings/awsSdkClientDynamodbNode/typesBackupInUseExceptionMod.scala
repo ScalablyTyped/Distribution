@@ -5,25 +5,24 @@ import typings.awsSdkClientDynamodbNode.deleteBackupExceptionsUnionMod.DeleteBac
 import typings.awsSdkClientDynamodbNode.restoreTableFromBackupExceptionsUnionMod.RestoreTableFromBackupExceptionsUnion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesBackupInUseExceptionMod {
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BackupInUseExceptionDetails> * / any */ @js.native
-  trait BackupInUseException
-    extends CreateBackupExceptionsUnion
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify __ServiceException__<_BackupInUseExceptionDetails> * / any */ trait BackupInUseException
+    extends StObject
+       with CreateBackupExceptionsUnion
        with DeleteBackupExceptionsUnion
        with RestoreTableFromBackupExceptionsUnion {
     
-    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.BackupInUseException = js.native
+    var name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.BackupInUseException
   }
   object BackupInUseException {
     
     @scala.inline
-    def apply(name: typings.awsSdkClientDynamodbNode.awsSdkClientDynamodbNodeStrings.BackupInUseException): BackupInUseException = {
-      val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    def apply(): BackupInUseException = {
+      val __obj = js.Dynamic.literal(name = "BackupInUseException")
       __obj.asInstanceOf[BackupInUseException]
     }
     
@@ -35,13 +34,12 @@ object typesBackupInUseExceptionMod {
     }
   }
   
-  @js.native
   trait BackupInUseExceptionDetails extends StObject {
     
     /**
       * _ErrorMessage shape
       */
-    var message: js.UndefOr[String] = js.native
+    var message: js.UndefOr[String] = js.undefined
   }
   object BackupInUseExceptionDetails {
     

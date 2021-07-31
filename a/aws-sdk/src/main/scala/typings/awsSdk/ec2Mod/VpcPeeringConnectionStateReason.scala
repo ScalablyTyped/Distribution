@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VpcPeeringConnectionStateReason extends StObject {
   
   /**
     * The status of the VPC peering connection.
     */
-  var Code: js.UndefOr[VpcPeeringConnectionStateReasonCode] = js.native
+  var Code: js.UndefOr[VpcPeeringConnectionStateReasonCode] = js.undefined
   
   /**
     * A message that provides more information about the status, if applicable.
     */
-  var Message: js.UndefOr[String] = js.native
+  var Message: js.UndefOr[String] = js.undefined
 }
 object VpcPeeringConnectionStateReason {
   

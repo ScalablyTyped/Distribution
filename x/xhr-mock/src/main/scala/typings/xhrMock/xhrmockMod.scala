@@ -9,7 +9,6 @@ import typings.xhrMock.typesMod.Mock
 import typings.xhrMock.typesMod.MockFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object xhrmockMod {
@@ -23,7 +22,9 @@ object xhrmockMod {
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
     @JSImport("xhr-mock/lib/XHRMock", "default.RealXMLHttpRequest")
     @js.native
-    class RealXMLHttpRequest () extends XMLHttpRequest
+    class RealXMLHttpRequest ()
+      extends StObject
+         with XMLHttpRequest
     
     type _To = XHRMock
     

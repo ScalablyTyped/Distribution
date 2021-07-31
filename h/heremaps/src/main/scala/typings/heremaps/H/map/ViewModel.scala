@@ -7,7 +7,6 @@ import typings.heremaps.H.util.Event
 import typings.heremaps.H.util.EventTarget
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -16,7 +15,8 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   */
 @js.native
 trait ViewModel
-  extends EventTarget
+  extends StObject
+     with EventTarget
      with IControl {
   
   def addOnDisposeCallback(callback: js.Function0[Unit], opt_scope: js.Object): Unit = js.native
@@ -64,20 +64,19 @@ object ViewModel {
   /**
     * {@link https://developer.here.com/documentation/maps/api_reference/H.map.ViewModel.html#.ILookAtData}
     */
-  @js.native
   trait ILookAtData extends StObject {
     
-    var bounds: js.UndefOr[AbstractGeometry] = js.native
+    var bounds: js.UndefOr[AbstractGeometry] = js.undefined
     
-    var heading: js.UndefOr[Double] = js.native
+    var heading: js.UndefOr[Double] = js.undefined
     
-    var incline: js.UndefOr[Double] = js.native
+    var incline: js.UndefOr[Double] = js.undefined
     
-    var position: js.UndefOr[IPoint] = js.native
+    var position: js.UndefOr[IPoint] = js.undefined
     
-    var tilt: js.UndefOr[Double] = js.native
+    var tilt: js.UndefOr[Double] = js.undefined
     
-    var zoom: js.UndefOr[Double] = js.native
+    var zoom: js.UndefOr[Double] = js.undefined
   }
   object ILookAtData {
     
@@ -136,8 +135,9 @@ object ViewModel {
     * @property type {string} - Name of the dispatched event
     * @property defaultPrevented {boolean} - Indicates if preventDefault was called on the current event
     */
-  @js.native
-  trait UpdateEvent extends Event
+  trait UpdateEvent
+    extends StObject
+       with Event
   object UpdateEvent {
     
     @scala.inline

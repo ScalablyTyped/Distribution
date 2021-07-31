@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StObject {
   
   /**
@@ -15,10 +13,10 @@ trait TextAlignProps[ThemeType /* <: Theme[TLengthStyledSystem] */] extends StOb
     */
   var textAlign: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any, 
       ThemeType
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object TextAlignProps {
   
@@ -29,12 +27,12 @@ object TextAlignProps {
   }
   
   @scala.inline
-  implicit class TextAlignPropsMutableBuilder[Self <: TextAlignProps[_], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self with TextAlignProps[ThemeType]) extends AnyVal {
+  implicit class TextAlignPropsMutableBuilder[Self <: TextAlignProps[?], ThemeType /* <: Theme[TLengthStyledSystem] */] (val x: Self & TextAlignProps[ThemeType]) extends AnyVal {
     
     @scala.inline
     def setTextAlign(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ _, 
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any, 
           ThemeType
         ]
     ): Self = StObject.set(x, "textAlign", value.asInstanceOf[js.Any])
@@ -46,6 +44,8 @@ object TextAlignProps {
     def setTextAlignUndefined: Self = StObject.set(x, "textAlign", js.undefined)
     
     @scala.inline
-    def setTextAlignVarargs(value: (js.Any | Null)*): Self = StObject.set(x, "textAlign", js.Array(value :_*))
+    def setTextAlignVarargs(
+      value: ((/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.TextAlign */ js.Any) | Null)*
+    ): Self = StObject.set(x, "textAlign", js.Array(value :_*))
   }
 }

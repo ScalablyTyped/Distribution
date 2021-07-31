@@ -3,16 +3,14 @@ package typings.zipkin.mod
 import typings.zipkin.mod.model.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The Logger (or transport) is what the Recorder uses to send spans to Zipkin.
   * @see https://github.com/openzipkin/zipkin-js/#transports Official transport implementations
   */
-@js.native
 trait Logger extends StObject {
   
-  def logSpan(span: Span): Unit = js.native
+  def logSpan(span: Span): Unit
 }
 object Logger {
   

@@ -3,21 +3,19 @@ package typings.minappEnv.DB
 import typings.minappEnv.ICloudConfig
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Database extends StObject {
   
-  val Geo: typings.minappEnv.DB.Geo = js.native
+  val Geo: typings.minappEnv.DB.Geo
   
-  def collection(collectionName: String): CollectionReference = js.native
+  def collection(collectionName: String): CollectionReference
   
-  val command: DatabaseCommand = js.native
+  val command: DatabaseCommand
   
-  val config: ICloudConfig = js.native
+  val config: ICloudConfig
   
-  def serverDate(): ServerDate = js.native
+  def serverDate(): ServerDate
 }
 object Database {
   

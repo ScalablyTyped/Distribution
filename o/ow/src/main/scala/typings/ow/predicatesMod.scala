@@ -21,24 +21,25 @@ import typings.std.Uint8ClampedArray
 import typings.typeFest.basicMod.TypedArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object predicatesMod {
   
-  @JSImport("ow/dist/source/predicates", JSImport.Default)
+  @JSImport("ow/dist/source/predicates", JSImport.Namespace)
   @js.native
-  def default[T](`object`: T): T with Predicates = js.native
-  @JSImport("ow/dist/source/predicates", JSImport.Default)
-  @js.native
-  def default[T](`object`: T, options: PredicateOptions): T with Predicates = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default[T](`object`: T): T & Predicates = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any]).asInstanceOf[T & Predicates]
+  @scala.inline
+  def default[T](`object`: T, options: PredicateOptions): T & Predicates = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(`object`.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[T & Predicates]
   
   @JSImport("ow/dist/source/predicates", "AnyPredicate")
   @js.native
   class AnyPredicate[T] protected ()
     extends typings.ow.anyMod.AnyPredicate[T] {
-    def this(predicates: js.Array[BasePredicate[_]]) = this()
-    def this(predicates: js.Array[BasePredicate[_]], options: PredicateOptions) = this()
+    def this(predicates: js.Array[BasePredicate[js.Any]]) = this()
+    def this(predicates: js.Array[BasePredicate[js.Any]], options: PredicateOptions) = this()
   }
   
   @JSImport("ow/dist/source/predicates", "ArrayBufferPredicate")
@@ -180,7 +181,7 @@ object predicatesMod {
   @js.native
   trait Predicates extends StObject {
     
-    def any(predicate: BasePredicate[_]*): typings.ow.anyMod.AnyPredicate[_] = js.native
+    def any(predicate: BasePredicate[js.Any]*): typings.ow.anyMod.AnyPredicate[js.Any] = js.native
     /**
       Test that the value matches at least one of the given predicates.
       */
@@ -249,7 +250,7 @@ object predicatesMod {
     /**
       Test the value to be an array.
       */
-    val array: typings.ow.arrayMod.ArrayPredicate[_] = js.native
+    val array: typings.ow.arrayMod.ArrayPredicate[js.Any] = js.native
     
     /**
       Test the value to be a ArrayBuffer.
@@ -314,12 +315,12 @@ object predicatesMod {
     /**
       Test the value to be Iterable.
       */
-    val iterable: Predicate[Iterable[_]] = js.native
+    val iterable: Predicate[Iterable[js.Any]] = js.native
     
     /**
       Test the value to be a Map.
       */
-    val map: typings.ow.mapMod.MapPredicate[_, _] = js.native
+    val map: typings.ow.mapMod.MapPredicate[js.Any, js.Any] = js.native
     
     /**
       Test the value to be not a number.
@@ -349,7 +350,7 @@ object predicatesMod {
     /**
       Test the value to be a Promise.
       */
-    val promise: Predicate[js.Promise[_]] = js.native
+    val promise: Predicate[js.Promise[js.Any]] = js.native
     
     /**
       Test the value to be a RegExp.
@@ -359,7 +360,7 @@ object predicatesMod {
     /**
       Test the value to be a Set.
       */
-    val set: typings.ow.setMod.SetPredicate[_] = js.native
+    val set: typings.ow.setMod.SetPredicate[js.Any] = js.native
     
     /**
       Test the value to be a SharedArrayBuffer.
@@ -404,7 +405,7 @@ object predicatesMod {
     /**
       Test the value to be undefined.
       */
-    val undefined: Predicate[js.UndefOr[scala.Nothing]] = js.native
+    val undefined: Predicate[Unit] = js.native
     
     /**
       Test the value to be a WeakMap.

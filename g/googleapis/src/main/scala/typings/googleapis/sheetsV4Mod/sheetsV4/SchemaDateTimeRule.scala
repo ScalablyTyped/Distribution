@@ -2,7 +2,6 @@ package typings.googleapis.sheetsV4Mod.sheetsV4
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -19,13 +18,12 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * 2017-Feb     |   $83,475.32 |     | 2017-Mar     |   $94,385.05 |     ...
   * +--------------+--------------+
   */
-@js.native
 trait SchemaDateTimeRule extends StObject {
   
   /**
     * The type of date-time grouping to apply.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDateTimeRule {
   

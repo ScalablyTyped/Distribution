@@ -8,27 +8,25 @@ import typings.tuyaPanelKit.tuyaPanelKitStrings.center
 import typings.tuyaPanelKit.tuyaPanelKitStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CollapsibleProps extends StObject {
   
-  var align: js.UndefOr[top | center | bottom] = js.native
+  var align: js.UndefOr[top | center | bottom] = js.undefined
   
-  var children: js.UndefOr[ReactNode] = js.native
+  var children: js.UndefOr[ReactNode] = js.undefined
   
-  var collapsed: js.UndefOr[Boolean] = js.native
+  var collapsed: js.UndefOr[Boolean] = js.undefined
   
-  var collapsedHeight: js.UndefOr[Double] = js.native
+  var collapsedHeight: js.UndefOr[Double] = js.undefined
   
-  var duration: js.UndefOr[Double] = js.native
+  var duration: js.UndefOr[Double] = js.undefined
   
-  var easing: js.UndefOr[String | js.Function0[Unit]] = js.native
+  var easing: js.UndefOr[String | js.Function0[Unit]] = js.undefined
   
-  var onChange: js.UndefOr[js.Function0[Unit]] = js.native
+  var onChange: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var style: js.UndefOr[StyleProp[ViewStyle]] = js.native
+  var style: js.UndefOr[StyleProp[ViewStyle]] = js.undefined
 }
 object CollapsibleProps {
   

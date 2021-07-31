@@ -4,10 +4,13 @@ import typings.react.mod.DependencyList
 import typings.react.mod.EffectCallback
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useImmediateUpdateEffectMod {
+  
+  @JSImport("@restart/hooks/cjs/useImmediateUpdateEffect", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * An _immediate_ effect that runs an effect callback when its dependency array
@@ -25,7 +28,6 @@ object useImmediateUpdateEffectMod {
     *
     * @category effects
     */
-  @JSImport("@restart/hooks/cjs/useImmediateUpdateEffect", JSImport.Default)
-  @js.native
-  def default(effect: EffectCallback, deps: DependencyList): Unit = js.native
+  @scala.inline
+  def default(effect: EffectCallback, deps: DependencyList): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(effect.asInstanceOf[js.Any], deps.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

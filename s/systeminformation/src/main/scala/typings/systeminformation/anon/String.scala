@@ -2,15 +2,13 @@ package typings.systeminformation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait String extends StObject {
   
-  var string: java.lang.String = js.native
+  var string: java.lang.String
   
-  var value: Double = js.native
+  var value: Double
 }
 object String {
   

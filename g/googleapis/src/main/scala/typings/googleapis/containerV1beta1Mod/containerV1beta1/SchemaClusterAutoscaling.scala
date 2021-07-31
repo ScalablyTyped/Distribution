@@ -2,7 +2,6 @@ package typings.googleapis.containerV1beta1Mod.containerV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Cluster Autoscaler to automatically adjust the size of the cluster and
   * create/delete node pools based on the current needs.
   */
-@js.native
 trait SchemaClusterAutoscaling extends StObject {
   
   /**
     * Enables automatic node pool creation and deletion.
     */
-  var enableNodeAutoprovisioning: js.UndefOr[Boolean] = js.native
+  var enableNodeAutoprovisioning: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Contains global constraints regarding minimum and maximum amount of
     * resources in the cluster.
     */
-  var resourceLimits: js.UndefOr[js.Array[SchemaResourceLimit]] = js.native
+  var resourceLimits: js.UndefOr[js.Array[SchemaResourceLimit]] = js.undefined
 }
 object SchemaClusterAutoscaling {
   

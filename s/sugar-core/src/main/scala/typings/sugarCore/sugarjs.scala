@@ -22,14 +22,17 @@ import typings.sugarCore.sugarCoreStrings.NFKD
 import typings.sugarCore.sugarjs.Array.Chainable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sugarjs {
   
   object Array {
     
-    type Chainable[T, RawValue] = (ChainableBase[T, RawValue]) with typings.sugarCore.sugarjs.Object.ChainableBase[RawValue]
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.sugarCore.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined  */ @js.native
+    trait Chainable[T, RawValue]
+      extends StObject
+         with ChainableBase[T, RawValue]
     
     @js.native
     trait ChainableBase[T, RawValue] extends StObject {
@@ -46,13 +49,13 @@ object sugarjs {
       ): SugarDefaultChainable[Boolean] = js.native
       
       def fill(value: T): SugarDefaultChainable[this.type] = js.native
-      def fill(value: T, start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[this.type] = js.native
       def fill(value: T, start: Double): SugarDefaultChainable[this.type] = js.native
       def fill(value: T, start: Double, end: Double): SugarDefaultChainable[this.type] = js.native
+      def fill(value: T, start: Unit, end: Double): SugarDefaultChainable[this.type] = js.native
       
-      def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _]): SugarDefaultChainable[js.Array[T]] = js.native
+      def filter(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any]): SugarDefaultChainable[js.Array[T]] = js.native
       def filter(
-        callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], _],
+        callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], js.Any],
         thisArg: js.Any
       ): SugarDefaultChainable[js.Array[T]] = js.native
       
@@ -163,9 +166,9 @@ object sugarjs {
       def shift(): SugarDefaultChainable[js.UndefOr[T]] = js.native
       
       def slice(): SugarDefaultChainable[js.Array[T]] = js.native
-      def slice(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[js.Array[T]] = js.native
       def slice(start: Double): SugarDefaultChainable[js.Array[T]] = js.native
       def slice(start: Double, end: Double): SugarDefaultChainable[js.Array[T]] = js.native
+      def slice(start: Unit, end: Double): SugarDefaultChainable[js.Array[T]] = js.native
       
       def some(callbackfn: js.Function3[/* value */ T, /* index */ Double, /* array */ js.Array[T], Boolean]): SugarDefaultChainable[Boolean] = js.native
       def some(
@@ -185,7 +188,11 @@ object sugarjs {
   
   object Date {
     
-    type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugarCore.sugarjs.Object.ChainableBase[RawValue]
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.sugarCore.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined  */ @js.native
+    trait Chainable[RawValue]
+      extends StObject
+         with ChainableBase[RawValue]
     
     @js.native
     trait ChainableBase[RawValue] extends StObject {
@@ -231,25 +238,25 @@ object sugarjs {
       def setDate(date: Double): SugarDefaultChainable[Double] = js.native
       
       def setFullYear(year: Double): SugarDefaultChainable[Double] = js.native
-      def setFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): SugarDefaultChainable[Double] = js.native
       def setFullYear(year: Double, month: Double): SugarDefaultChainable[Double] = js.native
       def setFullYear(year: Double, month: Double, date: Double): SugarDefaultChainable[Double] = js.native
+      def setFullYear(year: Double, month: Unit, date: Double): SugarDefaultChainable[Double] = js.native
       
       def setHours(hours: Double): SugarDefaultChainable[Double] = js.native
-      def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
-      def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): SugarDefaultChainable[Double] = js.native
-      def setHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
       def setHours(hours: Double, min: Double): SugarDefaultChainable[Double] = js.native
-      def setHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
       def setHours(hours: Double, min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
       def setHours(hours: Double, min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setHours(hours: Double, min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setHours(hours: Double, min: Unit, sec: Double): SugarDefaultChainable[Double] = js.native
+      def setHours(hours: Double, min: Unit, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setHours(hours: Double, min: Unit, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
       
       def setMilliseconds(ms: Double): SugarDefaultChainable[Double] = js.native
       
       def setMinutes(min: Double): SugarDefaultChainable[Double] = js.native
-      def setMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
       def setMinutes(min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
       def setMinutes(min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setMinutes(min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
       
       def setMonth(month: Double): SugarDefaultChainable[Double] = js.native
       def setMonth(month: Double, date: Double): SugarDefaultChainable[Double] = js.native
@@ -262,25 +269,25 @@ object sugarjs {
       def setUTCDate(date: Double): SugarDefaultChainable[Double] = js.native
       
       def setUTCFullYear(year: Double): SugarDefaultChainable[Double] = js.native
-      def setUTCFullYear(year: Double, month: js.UndefOr[scala.Nothing], date: Double): SugarDefaultChainable[Double] = js.native
       def setUTCFullYear(year: Double, month: Double): SugarDefaultChainable[Double] = js.native
       def setUTCFullYear(year: Double, month: Double, date: Double): SugarDefaultChainable[Double] = js.native
+      def setUTCFullYear(year: Double, month: Unit, date: Double): SugarDefaultChainable[Double] = js.native
       
       def setUTCHours(hours: Double): SugarDefaultChainable[Double] = js.native
-      def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
-      def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double): SugarDefaultChainable[Double] = js.native
-      def setUTCHours(hours: Double, min: js.UndefOr[scala.Nothing], sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
       def setUTCHours(hours: Double, min: Double): SugarDefaultChainable[Double] = js.native
-      def setUTCHours(hours: Double, min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
       def setUTCHours(hours: Double, min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
       def setUTCHours(hours: Double, min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setUTCHours(hours: Double, min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setUTCHours(hours: Double, min: Unit, sec: Double): SugarDefaultChainable[Double] = js.native
+      def setUTCHours(hours: Double, min: Unit, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setUTCHours(hours: Double, min: Unit, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
       
       def setUTCMilliseconds(ms: Double): SugarDefaultChainable[Double] = js.native
       
       def setUTCMinutes(min: Double): SugarDefaultChainable[Double] = js.native
-      def setUTCMinutes(min: Double, sec: js.UndefOr[scala.Nothing], ms: Double): SugarDefaultChainable[Double] = js.native
       def setUTCMinutes(min: Double, sec: Double): SugarDefaultChainable[Double] = js.native
       def setUTCMinutes(min: Double, sec: Double, ms: Double): SugarDefaultChainable[Double] = js.native
+      def setUTCMinutes(min: Double, sec: Unit, ms: Double): SugarDefaultChainable[Double] = js.native
       
       def setUTCMonth(month: Double): SugarDefaultChainable[Double] = js.native
       def setUTCMonth(month: Double, date: Double): SugarDefaultChainable[Double] = js.native
@@ -296,24 +303,24 @@ object sugarjs {
       def toJSON(key: js.Any): SugarDefaultChainable[String] = js.native
       
       def toLocaleDateString(): SugarDefaultChainable[String] = js.native
-      def toLocaleDateString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleDateString(locales: String): SugarDefaultChainable[String] = js.native
       def toLocaleDateString(locales: String, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleDateString(locales: js.Array[String]): SugarDefaultChainable[String] = js.native
       def toLocaleDateString(locales: js.Array[String], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
+      def toLocaleDateString(locales: Unit, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       
-      def toLocaleString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: String): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: String, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: js.Array[String]): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: js.Array[String], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
+      def toLocaleString(locales: Unit, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       
       def toLocaleTimeString(): SugarDefaultChainable[String] = js.native
-      def toLocaleTimeString(locales: js.UndefOr[scala.Nothing], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleTimeString(locales: String): SugarDefaultChainable[String] = js.native
       def toLocaleTimeString(locales: String, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleTimeString(locales: js.Array[String]): SugarDefaultChainable[String] = js.native
       def toLocaleTimeString(locales: js.Array[String], options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
+      def toLocaleTimeString(locales: Unit, options: DateTimeFormatOptions): SugarDefaultChainable[String] = js.native
       
       def toTimeString(): SugarDefaultChainable[String] = js.native
       
@@ -321,22 +328,21 @@ object sugarjs {
     }
   }
   
-  @js.native
   trait ExtendOptions extends StObject {
     
-    var enhance: js.UndefOr[Boolean] = js.native
+    var enhance: js.UndefOr[Boolean] = js.undefined
     
-    var enhanceArray: js.UndefOr[Boolean] = js.native
+    var enhanceArray: js.UndefOr[Boolean] = js.undefined
     
-    var enhanceString: js.UndefOr[Boolean] = js.native
+    var enhanceString: js.UndefOr[Boolean] = js.undefined
     
-    var except: js.UndefOr[js.Array[String | NativeConstructor]] = js.native
+    var except: js.UndefOr[js.Array[String | NativeConstructor]] = js.undefined
     
-    var methods: js.UndefOr[js.Array[String]] = js.native
+    var methods: js.UndefOr[js.Array[String]] = js.undefined
     
-    var namespaces: js.UndefOr[js.Array[NativeConstructor]] = js.native
+    var namespaces: js.UndefOr[js.Array[NativeConstructor]] = js.undefined
     
-    var objectPrototype: js.UndefOr[Boolean] = js.native
+    var objectPrototype: js.UndefOr[Boolean] = js.undefined
   }
   object ExtendOptions {
     
@@ -404,19 +410,23 @@ object sugarjs {
   
   object Function {
     
-    type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugarCore.sugarjs.Object.ChainableBase[RawValue]
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.sugarCore.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined  */ @js.native
+    trait Chainable[RawValue]
+      extends StObject
+         with ChainableBase[RawValue]
     
     @js.native
     trait ChainableBase[RawValue] extends StObject {
       
       @JSName("apply")
-      def apply(thisArg: js.Any): SugarDefaultChainable[_] = js.native
+      def apply(thisArg: js.Any): SugarDefaultChainable[js.Any] = js.native
       @JSName("apply")
-      def apply(thisArg: js.Any, argArray: js.Any): SugarDefaultChainable[_] = js.native
+      def apply(thisArg: js.Any, argArray: js.Any): SugarDefaultChainable[js.Any] = js.native
       
-      def bind(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[_] = js.native
+      def bind(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[js.Any] = js.native
       
-      def call(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[_] = js.native
+      def call(thisArg: js.Any, argArray: js.Any*): SugarDefaultChainable[js.Any] = js.native
       
       var raw: RawValue = js.native
     }
@@ -426,7 +436,11 @@ object sugarjs {
   
   object Number {
     
-    type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugarCore.sugarjs.Object.ChainableBase[RawValue]
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.sugarCore.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined  */ @js.native
+    trait Chainable[RawValue]
+      extends StObject
+         with ChainableBase[RawValue]
     
     @js.native
     trait ChainableBase[RawValue] extends StObject {
@@ -439,11 +453,11 @@ object sugarjs {
       def toFixed(): SugarDefaultChainable[String] = js.native
       def toFixed(fractionDigits: Double): SugarDefaultChainable[String] = js.native
       
-      def toLocaleString(locales: js.UndefOr[scala.Nothing], options: NumberFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: String): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: String, options: NumberFormatOptions): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: js.Array[String]): SugarDefaultChainable[String] = js.native
       def toLocaleString(locales: js.Array[String], options: NumberFormatOptions): SugarDefaultChainable[String] = js.native
+      def toLocaleString(locales: Unit, options: NumberFormatOptions): SugarDefaultChainable[String] = js.native
       
       def toPrecision(): SugarDefaultChainable[String] = js.native
       def toPrecision(precision: Double): SugarDefaultChainable[String] = js.native
@@ -454,10 +468,9 @@ object sugarjs {
     
     type Chainable[RawValue] = ChainableBase[RawValue]
     
-    @js.native
     trait ChainableBase[RawValue] extends StObject {
       
-      var raw: RawValue = js.native
+      var raw: RawValue
     }
     object ChainableBase {
       
@@ -468,7 +481,7 @@ object sugarjs {
       }
       
       @scala.inline
-      implicit class ChainableBaseMutableBuilder[Self <: ChainableBase[_], RawValue] (val x: Self with ChainableBase[RawValue]) extends AnyVal {
+      implicit class ChainableBaseMutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
         
         @scala.inline
         def setRaw(value: RawValue): Self = StObject.set(x, "raw", value.asInstanceOf[js.Any])
@@ -478,16 +491,30 @@ object sugarjs {
   
   object RegExp {
     
-    type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugarCore.sugarjs.Object.ChainableBase[RawValue]
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.sugarCore.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined  */ trait Chainable[RawValue]
+      extends StObject
+         with ChainableBase[RawValue]
+    object Chainable {
+      
+      @scala.inline
+      def apply[RawValue](
+        exec: String => SugarDefaultChainable[RegExpExecArray | Null],
+        raw: RawValue,
+        test: String => SugarDefaultChainable[Boolean]
+      ): Chainable[RawValue] = {
+        val __obj = js.Dynamic.literal(exec = js.Any.fromFunction1(exec), raw = raw.asInstanceOf[js.Any], test = js.Any.fromFunction1(test))
+        __obj.asInstanceOf[Chainable[RawValue]]
+      }
+    }
     
-    @js.native
     trait ChainableBase[RawValue] extends StObject {
       
-      def exec(string: String): SugarDefaultChainable[RegExpExecArray | Null] = js.native
+      def exec(string: String): SugarDefaultChainable[RegExpExecArray | Null]
       
-      var raw: RawValue = js.native
+      var raw: RawValue
       
-      def test(string: String): SugarDefaultChainable[Boolean] = js.native
+      def test(string: String): SugarDefaultChainable[Boolean]
     }
     object ChainableBase {
       
@@ -502,7 +529,7 @@ object sugarjs {
       }
       
       @scala.inline
-      implicit class ChainableBaseMutableBuilder[Self <: ChainableBase[_], RawValue] (val x: Self with ChainableBase[RawValue]) extends AnyVal {
+      implicit class ChainableBaseMutableBuilder[Self <: ChainableBase[?], RawValue] (val x: Self & ChainableBase[RawValue]) extends AnyVal {
         
         @scala.inline
         def setExec(value: String => SugarDefaultChainable[RegExpExecArray | Null]): Self = StObject.set(x, "exec", js.Any.fromFunction1(value))
@@ -518,7 +545,11 @@ object sugarjs {
   
   object String {
     
-    type Chainable[RawValue] = ChainableBase[RawValue] with typings.sugarCore.sugarjs.Object.ChainableBase[RawValue]
+    /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
+    - typings.sugarCore.sugarjs.Object.ChainableBase because var conflicts: raw. Inlined  */ @js.native
+    trait Chainable[RawValue]
+      extends StObject
+         with ChainableBase[RawValue]
     
     @js.native
     trait ChainableBase[RawValue] extends StObject {
@@ -563,11 +594,11 @@ object sugarjs {
       def link(url: java.lang.String): SugarDefaultChainable[java.lang.String] = js.native
       
       def localeCompare(that: java.lang.String): SugarDefaultChainable[Double] = js.native
-      def localeCompare(that: java.lang.String, locales: js.UndefOr[scala.Nothing], options: CollatorOptions): SugarDefaultChainable[Double] = js.native
       def localeCompare(that: java.lang.String, locales: java.lang.String): SugarDefaultChainable[Double] = js.native
       def localeCompare(that: java.lang.String, locales: java.lang.String, options: CollatorOptions): SugarDefaultChainable[Double] = js.native
       def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String]): SugarDefaultChainable[Double] = js.native
       def localeCompare(that: java.lang.String, locales: js.Array[java.lang.String], options: CollatorOptions): SugarDefaultChainable[Double] = js.native
+      def localeCompare(that: java.lang.String, locales: Unit, options: CollatorOptions): SugarDefaultChainable[Double] = js.native
       
       def `match`(regexp: java.lang.String): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
       def `match`(regexp: RegExp): SugarDefaultChainable[RegExpMatchArray | Null] = js.native
@@ -602,9 +633,9 @@ object sugarjs {
       def search(regexp: RegExp): SugarDefaultChainable[Double] = js.native
       
       def slice(): SugarDefaultChainable[java.lang.String] = js.native
-      def slice(start: js.UndefOr[scala.Nothing], end: Double): SugarDefaultChainable[java.lang.String] = js.native
       def slice(start: Double): SugarDefaultChainable[java.lang.String] = js.native
       def slice(start: Double, end: Double): SugarDefaultChainable[java.lang.String] = js.native
+      def slice(start: Unit, end: Double): SugarDefaultChainable[java.lang.String] = js.native
       
       def small(): SugarDefaultChainable[java.lang.String] = js.native
       
@@ -666,12 +697,12 @@ object sugarjs {
     def extend(opts: ExtendOptions): Sugar = js.native
   }
   
-  type SugarDefaultChainable[RawValue] = (Chainable[_, RawValue]) with typings.sugarCore.sugarjs.Date.Chainable[RawValue] with typings.sugarCore.sugarjs.Function.Chainable[RawValue] with typings.sugarCore.sugarjs.Number.Chainable[RawValue] with typings.sugarCore.sugarjs.Object.Chainable[RawValue] with typings.sugarCore.sugarjs.RegExp.Chainable[RawValue] with typings.sugarCore.sugarjs.String.Chainable[RawValue]
+  type SugarDefaultChainable[RawValue] = (Chainable[js.Any, RawValue]) & typings.sugarCore.sugarjs.Date.Chainable[RawValue] & typings.sugarCore.sugarjs.Function.Chainable[RawValue] & typings.sugarCore.sugarjs.Number.Chainable[RawValue] & typings.sugarCore.sugarjs.Object.Chainable[RawValue] & typings.sugarCore.sugarjs.RegExp.Chainable[RawValue] & typings.sugarCore.sugarjs.String.Chainable[RawValue]
   
   @js.native
   trait SugarNamespace extends StObject {
     
-    def alias(toName: String, fn: js.UndefOr[scala.Nothing]): this.type = js.native
+    def alias(toName: String, fn: Unit): this.type = js.native
     def alias(toName: String, from: String): this.type = js.native
     def alias(toName: String, from: js.Function): this.type = js.native
     

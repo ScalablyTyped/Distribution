@@ -5,30 +5,29 @@ import typings.postcssSelectorParser.postcssSelectorParserBooleans.`true`
 import typings.postcssSelectorParser.postcssSelectorParserStrings.`class`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Namespace[Value /* <: js.UndefOr[String] */]
-  extends Base[Value, js.UndefOr[Container[String, Node]]] {
+  extends StObject
+     with Base[Value, js.UndefOr[Container[String, Node]]] {
   
   /**
     *  namespace prefix.
     */
-  var namespace: String | `true` = js.native
+  var namespace: String | `true`
   
   /**
     * A string representing the namespace suitable for output.
     */
-  val namespaceString: String = js.native
+  val namespaceString: String
   
   /** alias for namespace */
-  var ns: String | `true` = js.native
+  var ns: String | `true`
   
   /**
     * If a namespace exists, prefix the value provided with it, separated by |.
     */
-  def qualifiedName(value: String): String = js.native
+  def qualifiedName(value: String): String
 }
 object Namespace {
   
@@ -61,7 +60,7 @@ object Namespace {
   }
   
   @scala.inline
-  implicit class NamespaceMutableBuilder[Self <: Namespace[_], Value /* <: js.UndefOr[String] */] (val x: Self with Namespace[Value]) extends AnyVal {
+  implicit class NamespaceMutableBuilder[Self <: Namespace[?], Value /* <: js.UndefOr[String] */] (val x: Self & Namespace[Value]) extends AnyVal {
     
     @scala.inline
     def setNamespace(value: String | `true`): Self = StObject.set(x, "namespace", value.asInstanceOf[js.Any])

@@ -12,31 +12,29 @@ import typings.nodeRedEditorClient.nodeRedEditorClientStrings.top
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoClose extends StObject {
   
-  var autoClose: js.UndefOr[Boolean] = js.native
+  var autoClose: js.UndefOr[Boolean] = js.undefined
   
-  var content: String | (js.Function1[/* res */ PopoverInstance, Unit]) = js.native
+  var content: String | (js.Function1[/* res */ PopoverInstance, Unit])
   
-  var delay: js.UndefOr[Hide] = js.native
+  var delay: js.UndefOr[Hide] = js.undefined
   
-  var direction: js.UndefOr[right | left | bottom | top] = js.native
+  var direction: js.UndefOr[right | left | bottom | top] = js.undefined
   
-  var interactive: js.UndefOr[Boolean] = js.native
+  var interactive: js.UndefOr[Boolean] = js.undefined
   
-  var size: js.UndefOr[String] = js.native
+  var size: js.UndefOr[String] = js.undefined
   
-  var target: JQuery[HTMLElement] = js.native
+  var target: JQuery[HTMLElement]
   
-  var tooltip: js.UndefOr[Boolean] = js.native
+  var tooltip: js.UndefOr[Boolean] = js.undefined
   
-  var trigger: js.UndefOr[hover | click | modal] = js.native
+  var trigger: js.UndefOr[hover | click | modal] = js.undefined
   
-  var width: js.UndefOr[String] = js.native
+  var width: js.UndefOr[String] = js.undefined
 }
 object AutoClose {
   

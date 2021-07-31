@@ -2,21 +2,19 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ValidationWarning extends StObject {
   
   /**
     * The identifier of the object that contains the validation warning.
     */
-  var id: js.UndefOr[typings.awsSdk.datapipelineMod.id] = js.native
+  var id: js.UndefOr[typings.awsSdk.datapipelineMod.id] = js.undefined
   
   /**
     * A description of the validation warning.
     */
-  var warnings: js.UndefOr[validationMessages] = js.native
+  var warnings: js.UndefOr[validationMessages] = js.undefined
 }
 object ValidationWarning {
   

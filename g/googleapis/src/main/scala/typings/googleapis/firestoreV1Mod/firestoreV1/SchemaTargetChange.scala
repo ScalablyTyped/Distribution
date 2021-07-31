@@ -2,19 +2,17 @@ package typings.googleapis.firestoreV1Mod.firestoreV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Targets being watched have changed.
   */
-@js.native
 trait SchemaTargetChange extends StObject {
   
   /**
     * The error that resulted in this change, if applicable.
     */
-  var cause: js.UndefOr[SchemaStatus] = js.native
+  var cause: js.UndefOr[SchemaStatus] = js.undefined
   
   /**
     * The consistent `read_time` for the given `target_ids` (omitted when the
@@ -25,18 +23,18 @@ trait SchemaTargetChange extends StObject {
     * NO_CHANGE and REMOVE messages are not).  For a given stream, `read_time`
     * is guaranteed to be monotonically increasing.
     */
-  var readTime: js.UndefOr[String] = js.native
+  var readTime: js.UndefOr[String] = js.undefined
   
   /**
     * A token that can be used to resume the stream for the given `target_ids`,
     * or all targets if `target_ids` is empty.  Not set on every target change.
     */
-  var resumeToken: js.UndefOr[String] = js.native
+  var resumeToken: js.UndefOr[String] = js.undefined
   
   /**
     * The type of change that occurred.
     */
-  var targetChangeType: js.UndefOr[String] = js.native
+  var targetChangeType: js.UndefOr[String] = js.undefined
   
   /**
     * The target IDs of targets that have changed.  If empty, the change
@@ -46,7 +44,7 @@ trait SchemaTargetChange extends StObject {
     * added targets.  For other states, the order of the target IDs is not
     * defined.
     */
-  var targetIds: js.UndefOr[js.Array[Double]] = js.native
+  var targetIds: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object SchemaTargetChange {
   

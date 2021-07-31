@@ -2,16 +2,14 @@ package typings.foundation.Foundation
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // http://foundation.zurb.com/docs/components/offcanvas.html#optional-javascript-configuration
-@js.native
 trait OffCanvasOptions extends StObject {
   
-  var close_on_click: js.UndefOr[Boolean] = js.native
+  var close_on_click: js.UndefOr[Boolean] = js.undefined
   
-  var open_method: js.UndefOr[String] = js.native
+  var open_method: js.UndefOr[String] = js.undefined
 }
 object OffCanvasOptions {
   

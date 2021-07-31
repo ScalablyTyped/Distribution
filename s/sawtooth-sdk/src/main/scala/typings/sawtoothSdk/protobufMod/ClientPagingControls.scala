@@ -7,7 +7,6 @@ import typings.protobufjs.mod.Writer
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls")
@@ -16,7 +15,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Constructs a new ClientPagingControls.
   * @param [properties] Properties to set
   */
-class ClientPagingControls () extends IClientPagingControls {
+class ClientPagingControls ()
+  extends StObject
+     with IClientPagingControls {
   def this(properties: IClientPagingControls) = this()
   
   /** ClientPagingControls limit. */
@@ -36,17 +37,19 @@ class ClientPagingControls () extends IClientPagingControls {
 /* static members */
 object ClientPagingControls {
   
+  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Creates a new ClientPagingControls instance using the specified properties.
     * @param [properties] Properties to set
     * @returns ClientPagingControls instance
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.create")
-  @js.native
-  def create(): ClientPagingControls = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.create")
-  @js.native
-  def create(properties: IClientPagingControls): ClientPagingControls = js.native
+  @scala.inline
+  def create(): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("create")().asInstanceOf[ClientPagingControls]
+  @scala.inline
+  def create(properties: IClientPagingControls): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(properties.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   
   /**
     * Decodes a ClientPagingControls message from the specified reader or buffer.
@@ -56,18 +59,14 @@ object ClientPagingControls {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.decode")
-  @js.native
-  def decode(reader: Reader): ClientPagingControls = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.decode")
-  @js.native
-  def decode(reader: Reader, length: Double): ClientPagingControls = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.decode")
-  @js.native
-  def decode(reader: Uint8Array): ClientPagingControls = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.decode")
-  @js.native
-  def decode(reader: Uint8Array, length: Double): ClientPagingControls = js.native
+  @scala.inline
+  def decode(reader: Reader): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
+  @scala.inline
+  def decode(reader: Reader, length: Double): ClientPagingControls = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientPagingControls]
+  @scala.inline
+  def decode(reader: Uint8Array): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
+  @scala.inline
+  def decode(reader: Uint8Array, length: Double): ClientPagingControls = (^.asInstanceOf[js.Dynamic].applyDynamic("decode")(reader.asInstanceOf[js.Any], length.asInstanceOf[js.Any])).asInstanceOf[ClientPagingControls]
   
   /**
     * Decodes a ClientPagingControls message from the specified reader or buffer, length delimited.
@@ -76,12 +75,10 @@ object ClientPagingControls {
     * @throws {Error} If the payload is not a reader or valid buffer
     * @throws {$protobuf.util.ProtocolError} If required fields are missing
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Reader): ClientPagingControls = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.decodeDelimited")
-  @js.native
-  def decodeDelimited(reader: Uint8Array): ClientPagingControls = js.native
+  @scala.inline
+  def decodeDelimited(reader: Reader): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
+  @scala.inline
+  def decodeDelimited(reader: Uint8Array): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("decodeDelimited")(reader.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   
   /**
     * Encodes the specified ClientPagingControls message. Does not implicitly {@link ClientPagingControls.verify|verify} messages.
@@ -89,12 +86,10 @@ object ClientPagingControls {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.encode")
-  @js.native
-  def encode(message: IClientPagingControls): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.encode")
-  @js.native
-  def encode(message: IClientPagingControls, writer: Writer): Writer = js.native
+  @scala.inline
+  def encode(message: IClientPagingControls): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encode(message: IClientPagingControls, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encode")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Encodes the specified ClientPagingControls message, length delimited. Does not implicitly {@link ClientPagingControls.verify|verify} messages.
@@ -102,21 +97,18 @@ object ClientPagingControls {
     * @param [writer] Writer to encode to
     * @returns Writer
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientPagingControls): Writer = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.encodeDelimited")
-  @js.native
-  def encodeDelimited(message: IClientPagingControls, writer: Writer): Writer = js.native
+  @scala.inline
+  def encodeDelimited(message: IClientPagingControls): Writer = ^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any]).asInstanceOf[Writer]
+  @scala.inline
+  def encodeDelimited(message: IClientPagingControls, writer: Writer): Writer = (^.asInstanceOf[js.Dynamic].applyDynamic("encodeDelimited")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Writer]
   
   /**
     * Creates a ClientPagingControls message from a plain object. Also converts values to their respective internal types.
     * @param object Plain object
     * @returns ClientPagingControls
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.fromObject")
-  @js.native
-  def fromObject(`object`: StringDictionary[js.Any]): ClientPagingControls = js.native
+  @scala.inline
+  def fromObject(`object`: StringDictionary[js.Any]): ClientPagingControls = ^.asInstanceOf[js.Dynamic].applyDynamic("fromObject")(`object`.asInstanceOf[js.Any]).asInstanceOf[ClientPagingControls]
   
   /**
     * Creates a plain object from a ClientPagingControls message. Also converts values to other types if specified.
@@ -124,19 +116,16 @@ object ClientPagingControls {
     * @param [options] Conversion options
     * @returns Plain object
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.toObject")
-  @js.native
-  def toObject(message: ClientPagingControls): StringDictionary[js.Any] = js.native
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.toObject")
-  @js.native
-  def toObject(message: ClientPagingControls, options: IConversionOptions): StringDictionary[js.Any] = js.native
+  @scala.inline
+  def toObject(message: ClientPagingControls): StringDictionary[js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any]).asInstanceOf[StringDictionary[js.Any]]
+  @scala.inline
+  def toObject(message: ClientPagingControls, options: IConversionOptions): StringDictionary[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(message.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[StringDictionary[js.Any]]
   
   /**
     * Verifies a ClientPagingControls message.
     * @param message Plain object to verify
     * @returns `null` if valid, otherwise the reason why it is not
     */
-  @JSImport("sawtooth-sdk/protobuf", "ClientPagingControls.verify")
-  @js.native
-  def verify(message: StringDictionary[js.Any]): String | Null = js.native
+  @scala.inline
+  def verify(message: StringDictionary[js.Any]): String | Null = ^.asInstanceOf[js.Dynamic].applyDynamic("verify")(message.asInstanceOf[js.Any]).asInstanceOf[String | Null]
 }

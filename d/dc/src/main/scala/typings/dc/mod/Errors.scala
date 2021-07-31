@@ -2,17 +2,15 @@ package typings.dc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Errors extends StObject {
   
-  def BadArgumentException(): Unit = js.native
+  def BadArgumentException(): Unit
   
-  def Exception(msg: String): Unit = js.native
+  def Exception(msg: String): Unit
   
-  def InvalidStateException(): Unit = js.native
+  def InvalidStateException(): Unit
 }
 object Errors {
   

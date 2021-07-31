@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetMLTaskRunsResponse extends StObject {
   
   /**
     * A pagination token, if more results are available.
     */
-  var NextToken: js.UndefOr[PaginationToken] = js.native
+  var NextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * A list of task runs that are associated with the transform.
     */
-  var TaskRuns: js.UndefOr[TaskRunList] = js.native
+  var TaskRuns: js.UndefOr[TaskRunList] = js.undefined
 }
 object GetMLTaskRunsResponse {
   

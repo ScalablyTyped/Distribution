@@ -5,36 +5,36 @@ import typings.leaflet.mod.LatLngTuple
 import typings.leaflet.mod.Point_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.leaflet.mod.GridLayerOptions because var conflicts: attribution, pane. Inlined maxZoom, tileSize, updateWhenIdle, bounds, minZoom, noWrap, updateWhenZooming, className, zIndex, opacity, keepBuffer, updateInterval */ @js.native
-trait GridLayerProps extends MapLayerProps {
+- typings.leaflet.mod.GridLayerOptions because var conflicts: attribution, pane. Inlined maxZoom, tileSize, updateWhenIdle, bounds, minZoom, noWrap, updateWhenZooming, className, zIndex, opacity, keepBuffer, updateInterval */ trait GridLayerProps
+  extends StObject
+     with MapLayerProps {
   
-  var bounds: js.UndefOr[LatLngBoundsExpression] = js.native
+  var bounds: js.UndefOr[LatLngBoundsExpression] = js.undefined
   
-  var className: js.UndefOr[String] = js.native
+  var className: js.UndefOr[String] = js.undefined
   
-  var keepBuffer: js.UndefOr[Double] = js.native
+  var keepBuffer: js.UndefOr[Double] = js.undefined
   
-  var maxZoom: js.UndefOr[Double] = js.native
+  var maxZoom: js.UndefOr[Double] = js.undefined
   
-  var minZoom: js.UndefOr[Double] = js.native
+  var minZoom: js.UndefOr[Double] = js.undefined
   
-  var noWrap: js.UndefOr[Boolean] = js.native
+  var noWrap: js.UndefOr[Boolean] = js.undefined
   
-  var opacity: js.UndefOr[Double] = js.native
+  var opacity: js.UndefOr[Double] = js.undefined
   
-  var tileSize: js.UndefOr[Double | Point_] = js.native
+  var tileSize: js.UndefOr[Double | Point_] = js.undefined
   
-  var updateInterval: js.UndefOr[Double] = js.native
+  var updateInterval: js.UndefOr[Double] = js.undefined
   
-  var updateWhenIdle: js.UndefOr[Boolean] = js.native
+  var updateWhenIdle: js.UndefOr[Boolean] = js.undefined
   
-  var updateWhenZooming: js.UndefOr[Boolean] = js.native
+  var updateWhenZooming: js.UndefOr[Boolean] = js.undefined
   
-  var zIndex: js.UndefOr[Double] = js.native
+  var zIndex: js.UndefOr[Double] = js.undefined
 }
 object GridLayerProps {
   

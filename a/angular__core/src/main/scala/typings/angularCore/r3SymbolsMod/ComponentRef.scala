@@ -2,7 +2,6 @@ package typings.angularCore.r3SymbolsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -23,7 +22,7 @@ trait ComponentRef[C] extends StObject {
   /**
     * The type of this component (as created by a `ComponentFactory` class).
     */
-  def componentType: Type[_] = js.native
+  def componentType: Type[js.Any] = js.native
   
   /**
     * Destroys the component instance and all of the data structures associated with it.
@@ -49,7 +48,7 @@ trait ComponentRef[C] extends StObject {
   /**
     * The host or anchor [element](guide/glossary#element) for this component instance.
     */
-  def location: ElementRef[_] = js.native
+  def location: ElementRef[js.Any] = js.native
   
   /**
     * A lifecycle hook that provides additional developer-defined cleanup

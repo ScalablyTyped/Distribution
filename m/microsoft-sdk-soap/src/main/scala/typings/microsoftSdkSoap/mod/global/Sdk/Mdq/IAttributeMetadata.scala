@@ -39,99 +39,97 @@ import typings.microsoftSdkSoap.microsoftSdkSoapStrings.VirtualType
 import typings.microsoftSdkSoap.microsoftSdkSoapStrings.`StateType    StatusType`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IAttributeMetadata extends StObject {
   
-  var AttributeOf: String = js.native
+  var AttributeOf: String
   
-  var AttributeType: Customer | DateTime | Decimal | Double | EntityName | Integer | Lookup | typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManagedProperty | Memo | Money | Owner | PartyList | Picklist | State | Status | Uniqueidentifier | Virtual = js.native
+  var AttributeType: Customer | DateTime | Decimal | Double | EntityName | Integer | Lookup | typings.microsoftSdkSoap.microsoftSdkSoapStrings.ManagedProperty | Memo | Money | Owner | PartyList | Picklist | State | Status | Uniqueidentifier | Virtual
   
-  var AttributeTypeName: BigIntType | BooleanType | CalendarRulesType | CustomerType | DateTimeType | DecimalType | DoubleType | EntityNameType | ImageType | IntegerType | LookupType | ManagedPropertyType | MemoType | MoneyType | OwnerType | PartyListType | PicklistType | (`StateType    StatusType`) | StringType | UniqueidentifierType | VirtualType = js.native
+  var AttributeTypeName: BigIntType | BooleanType | CalendarRulesType | CustomerType | DateTimeType | DecimalType | DoubleType | EntityNameType | ImageType | IntegerType | LookupType | ManagedPropertyType | MemoType | MoneyType | OwnerType | PartyListType | PicklistType | (`StateType    StatusType`) | StringType | UniqueidentifierType | VirtualType
   
-  var CalculationOf: js.Any = js.native
+  var CalculationOf: js.Any
   
-  var CanBeSecuredForCreate: Boolean = js.native
+  var CanBeSecuredForCreate: Boolean
   
-  var CanBeSecuredForRead: Boolean = js.native
+  var CanBeSecuredForRead: Boolean
   
-  var CanBeSecuredForUpdate: Boolean = js.native
+  var CanBeSecuredForUpdate: Boolean
   
-  var CanModifyAdditionalSettings: ManagedProperty[Boolean] = js.native
+  var CanModifyAdditionalSettings: ManagedProperty[Boolean]
   
-  var ColumnNumber: scala.Double = js.native
+  var ColumnNumber: scala.Double
   
-  var DefaultFormValue: js.Any = js.native
+  var DefaultFormValue: js.Any
   
-  var DefaultValue: js.Any = js.native
+  var DefaultValue: js.Any
   
-  var DeprecatedVersion: js.Any = js.native
+  var DeprecatedVersion: js.Any
   
-  var Description: Label = js.native
+  var Description: Label
   
-  var DisplayName: Label = js.native
+  var DisplayName: Label
   
-  var EntityLogicalName: String = js.native
+  var EntityLogicalName: String
   
-  var Format: js.Any = js.native
+  var Format: js.Any
   
-  var FormatName: String = js.native
+  var FormatName: String
   
-  var ImeMode: js.Any = js.native
+  var ImeMode: js.Any
   
-  var IntroducedVersion: js.Any = js.native
+  var IntroducedVersion: js.Any
   
-  var IsAuditEnabled: Boolean = js.native
+  var IsAuditEnabled: Boolean
   
-  var IsCustomAttribute: Boolean = js.native
+  var IsCustomAttribute: Boolean
   
-  var IsCustomizable: ManagedProperty[Boolean] = js.native
+  var IsCustomizable: ManagedProperty[Boolean]
   
-  var IsManaged: Boolean = js.native
+  var IsManaged: Boolean
   
-  var IsPrimaryId: Boolean = js.native
+  var IsPrimaryId: Boolean
   
-  var IsPrimaryName: Boolean = js.native
+  var IsPrimaryName: Boolean
   
-  var IsRenameable: ManagedProperty[Boolean] = js.native
+  var IsRenameable: ManagedProperty[Boolean]
   
-  var IsSecured: Boolean = js.native
+  var IsSecured: Boolean
   
-  var IsValidForAdvancedFind: ManagedProperty[Boolean] = js.native
+  var IsValidForAdvancedFind: ManagedProperty[Boolean]
   
-  var IsValidForCreate: Boolean = js.native
+  var IsValidForCreate: Boolean
   
-  var IsValidForRead: Boolean = js.native
+  var IsValidForRead: Boolean
   
-  var IsValidForUpdate: Boolean = js.native
+  var IsValidForUpdate: Boolean
   
-  var LinkedAttributeId: String = js.native
+  var LinkedAttributeId: String
   
-  var LogicalName: String = js.native
+  var LogicalName: String
   
-  var MaxLength: scala.Double = js.native
+  var MaxLength: scala.Double
   
-  var MaxValue: js.Any = js.native
+  var MaxValue: js.Any
   
-  var MetadataId: String = js.native
+  var MetadataId: String
   
-  var MinValue: scala.Double = js.native
+  var MinValue: scala.Double
   
-  var OptionSet: js.Any = js.native
+  var OptionSet: js.Any
   
-  var Precision: js.Any = js.native
+  var Precision: js.Any
   
-  var PrecisionSource: js.Any = js.native
+  var PrecisionSource: js.Any
   
-  var RequiredLevel: ManagedProperty[String] = js.native
+  var RequiredLevel: ManagedProperty[String]
   
-  var SchemaName: String = js.native
+  var SchemaName: String
   
-  var Targets: js.Array[String] = js.native
+  var Targets: js.Array[String]
   
-  var YomiOf: js.Any = js.native
+  var YomiOf: js.Any
 }
 object IAttributeMetadata {
   

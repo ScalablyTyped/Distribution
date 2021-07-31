@@ -6,10 +6,8 @@ import typings.uiGrid.mod.edit.beginCellEditHandler
 import typings.uiGrid.mod.edit.cancelCellEditHandler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AfterCellEdit[TEntity] extends StObject {
   
   /**
@@ -17,21 +15,21 @@ trait AfterCellEdit[TEntity] extends StObject {
     * @param scope The grid scope
     * @param {afterCellEditHandler} handler Callback
     */
-  def afterCellEdit(scope: IScope, handler: afterCellEditHandler[TEntity]): Unit = js.native
+  def afterCellEdit(scope: IScope, handler: afterCellEditHandler[TEntity]): Unit
   
   /**
     * raised when cell editing starts on a cell
     * @param scope The grid scope
     * @param {beginCellEditHandler} handler Callback
     */
-  def beginCellEdit(scope: IScope, handler: beginCellEditHandler[TEntity]): Unit = js.native
+  def beginCellEdit(scope: IScope, handler: beginCellEditHandler[TEntity]): Unit
   
   /**
     * raised when cell editing is cancelled on a cell
     * @param scope The grid scope
     * @param {cancelCellEditHandler} handler Callback
     */
-  def cancelCellEdit(scope: IScope, handler: cancelCellEditHandler[TEntity]): Unit = js.native
+  def cancelCellEdit(scope: IScope, handler: cancelCellEditHandler[TEntity]): Unit
 }
 object AfterCellEdit {
   
@@ -46,7 +44,7 @@ object AfterCellEdit {
   }
   
   @scala.inline
-  implicit class AfterCellEditMutableBuilder[Self <: AfterCellEdit[_], TEntity] (val x: Self with AfterCellEdit[TEntity]) extends AnyVal {
+  implicit class AfterCellEditMutableBuilder[Self <: AfterCellEdit[?], TEntity] (val x: Self & AfterCellEdit[TEntity]) extends AnyVal {
     
     @scala.inline
     def setAfterCellEdit(value: (IScope, afterCellEditHandler[TEntity]) => Unit): Self = StObject.set(x, "afterCellEdit", js.Any.fromFunction2(value))

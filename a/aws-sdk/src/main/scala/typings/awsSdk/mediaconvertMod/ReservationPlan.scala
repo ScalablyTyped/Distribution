@@ -2,41 +2,39 @@ package typings.awsSdk.mediaconvertMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReservationPlan extends StObject {
   
   /**
     * The length of the term of your reserved queue pricing plan commitment.
     */
-  var Commitment: js.UndefOr[typings.awsSdk.mediaconvertMod.Commitment] = js.native
+  var Commitment: js.UndefOr[typings.awsSdk.mediaconvertMod.Commitment] = js.undefined
   
   /**
     * The timestamp in epoch seconds for when the current pricing plan term for this reserved queue expires.
     */
-  var ExpiresAt: js.UndefOr[timestampUnix] = js.native
+  var ExpiresAt: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * The timestamp in epoch seconds for when you set up the current pricing plan for this reserved queue.
     */
-  var PurchasedAt: js.UndefOr[timestampUnix] = js.native
+  var PurchasedAt: js.UndefOr[timestampUnix] = js.undefined
   
   /**
     * Specifies whether the term of your reserved queue pricing plan is automatically extended (AUTO_RENEW) or expires (EXPIRE) at the end of the term.
     */
-  var RenewalType: js.UndefOr[typings.awsSdk.mediaconvertMod.RenewalType] = js.native
+  var RenewalType: js.UndefOr[typings.awsSdk.mediaconvertMod.RenewalType] = js.undefined
   
   /**
     * Specifies the number of reserved transcode slots (RTS) for this queue. The number of RTS determines how many jobs the queue can process in parallel; each RTS can process one job at a time. When you increase this number, you extend your existing commitment with a new 12-month commitment for a larger number of RTS. The new commitment begins when you purchase the additional capacity. You can't decrease the number of RTS in your reserved queue.
     */
-  var ReservedSlots: js.UndefOr[integer] = js.native
+  var ReservedSlots: js.UndefOr[integer] = js.undefined
   
   /**
     * Specifies whether the pricing plan for your reserved queue is ACTIVE or EXPIRED.
     */
-  var Status: js.UndefOr[ReservationPlanStatus] = js.native
+  var Status: js.UndefOr[ReservationPlanStatus] = js.undefined
 }
 object ReservationPlan {
   

@@ -3,10 +3,10 @@ package typings.pgQueryStream
 import typings.node.NodeJS.WritableStream
 import typings.node.anon.End
 import typings.node.streamMod.Readable
+import typings.pg.mod.Connection
 import typings.pg.mod.Submittable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,17 +15,19 @@ object mod {
   @js.native
   class ^ protected () extends QueryStream {
     def this(text: String) = this()
-    def this(text: String, values: js.Array[_]) = this()
-    def this(text: String, values: js.UndefOr[scala.Nothing], options: Options) = this()
-    def this(text: String, values: js.Array[_], options: Options) = this()
+    def this(text: String, values: js.Array[js.Any]) = this()
+    def this(text: String, values: js.Array[js.Any], options: Options) = this()
+    def this(text: String, values: Unit, options: Options) = this()
+    
+    /* CompleteClass */
+    override def submit(connection: Connection): Unit = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var batchSize: js.UndefOr[Double] = js.native
+    var batchSize: js.UndefOr[Double] = js.undefined
     
-    var highWaterMark: js.UndefOr[Double] = js.native
+    var highWaterMark: js.UndefOr[Double] = js.undefined
   }
   object Options {
     
@@ -66,6 +68,6 @@ object mod {
     
     var text: String = js.native
     
-    var values: js.UndefOr[js.Array[_]] = js.native
+    var values: js.UndefOr[js.Array[js.Any]] = js.native
   }
 }

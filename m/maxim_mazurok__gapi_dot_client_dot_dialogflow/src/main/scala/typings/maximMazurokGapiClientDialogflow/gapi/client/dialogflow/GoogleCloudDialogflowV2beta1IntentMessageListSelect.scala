@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientDialogflow.gapi.client.dialogflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDialogflowV2beta1IntentMessageListSelect extends StObject {
   
   /** Required. List items. */
-  var items: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageListSelectItem]] = js.native
+  var items: js.UndefOr[js.Array[GoogleCloudDialogflowV2beta1IntentMessageListSelectItem]] = js.undefined
   
   /** Optional. Subtitle of the list. */
-  var subtitle: js.UndefOr[String] = js.native
+  var subtitle: js.UndefOr[String] = js.undefined
   
   /** Optional. The overall title of the list. */
-  var title: js.UndefOr[String] = js.native
+  var title: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDialogflowV2beta1IntentMessageListSelect {
   

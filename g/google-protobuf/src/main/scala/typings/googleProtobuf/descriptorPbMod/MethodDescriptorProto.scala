@@ -9,7 +9,6 @@ import typings.googleProtobuf.mod.Message
 import typings.std.Uint8Array
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodDescriptorProto")
@@ -72,13 +71,11 @@ object MethodDescriptorProto {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodDescriptorProto.deserializeBinary")
-  @js.native
-  def deserializeBinary(bytes: Uint8Array): MethodDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinary(bytes: Uint8Array): MethodDescriptorProto = ^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinary")(bytes.asInstanceOf[js.Any]).asInstanceOf[MethodDescriptorProto]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodDescriptorProto.deserializeBinaryFromReader")
-  @js.native
-  def deserializeBinaryFromReader(message: MethodDescriptorProto, reader: BinaryReader): MethodDescriptorProto = js.native
+  @scala.inline
+  def deserializeBinaryFromReader(message: MethodDescriptorProto, reader: BinaryReader): MethodDescriptorProto = (^.asInstanceOf[js.Dynamic].applyDynamic("deserializeBinaryFromReader")(message.asInstanceOf[js.Any], reader.asInstanceOf[js.Any])).asInstanceOf[MethodDescriptorProto]
   
   @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodDescriptorProto.extensions")
   @js.native
@@ -93,28 +90,25 @@ object MethodDescriptorProto {
   @scala.inline
   def extensions_=(x: NumberDictionary[ExtensionFieldInfo[Message]]): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("extensions")(x.asInstanceOf[js.Any])
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodDescriptorProto.serializeBinaryToWriter")
-  @js.native
-  def serializeBinaryToWriter(message: MethodDescriptorProto, writer: BinaryWriter): Unit = js.native
+  @scala.inline
+  def serializeBinaryToWriter(message: MethodDescriptorProto, writer: BinaryWriter): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("serializeBinaryToWriter")(message.asInstanceOf[js.Any], writer.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("google-protobuf/google/protobuf/descriptor_pb", "MethodDescriptorProto.toObject")
-  @js.native
-  def toObject(includeInstance: Boolean, msg: MethodDescriptorProto): AsObject = js.native
+  @scala.inline
+  def toObject(includeInstance: Boolean, msg: MethodDescriptorProto): AsObject = (^.asInstanceOf[js.Dynamic].applyDynamic("toObject")(includeInstance.asInstanceOf[js.Any], msg.asInstanceOf[js.Any])).asInstanceOf[AsObject]
   
-  @js.native
   trait AsObject extends StObject {
     
-    var clientStreaming: js.UndefOr[Boolean] = js.native
+    var clientStreaming: js.UndefOr[Boolean] = js.undefined
     
-    var inputType: js.UndefOr[String] = js.native
+    var inputType: js.UndefOr[String] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.MethodOptions.AsObject] = js.native
+    var options: js.UndefOr[typings.googleProtobuf.descriptorPbMod.MethodOptions.AsObject] = js.undefined
     
-    var outputType: js.UndefOr[String] = js.native
+    var outputType: js.UndefOr[String] = js.undefined
     
-    var serverStreaming: js.UndefOr[Boolean] = js.native
+    var serverStreaming: js.UndefOr[Boolean] = js.undefined
   }
   object AsObject {
     

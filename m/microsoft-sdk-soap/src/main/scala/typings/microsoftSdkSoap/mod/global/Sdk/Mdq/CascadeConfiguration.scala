@@ -2,25 +2,23 @@ package typings.microsoftSdkSoap.mod.global.Sdk.Mdq
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CascadeConfiguration extends StObject {
   
-  var Assign: CascadeType = js.native
+  var Assign: CascadeType
   
-  var Delete: CascadeType = js.native
+  var Delete: CascadeType
   
-  var ExtensionData: CascadeType = js.native
+  var ExtensionData: CascadeType
   
-  var Merge: CascadeType = js.native
+  var Merge: CascadeType
   
-  var Reparent: CascadeType = js.native
+  var Reparent: CascadeType
   
-  var Share: CascadeType = js.native
+  var Share: CascadeType
   
-  var Unshare: CascadeType = js.native
+  var Unshare: CascadeType
 }
 object CascadeConfiguration {
   

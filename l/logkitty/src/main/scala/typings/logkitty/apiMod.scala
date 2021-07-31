@@ -18,10 +18,13 @@ import typings.std.Error
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object apiMod {
+  
+  @JSImport("logkitty/build/api", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object AndroidPriority {
     
@@ -77,42 +80,38 @@ object apiMod {
     @scala.inline
     def WARN_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("WARN")(x.asInstanceOf[js.Any])
     
-    @JSImport("logkitty/build/api", "AndroidPriority.fromLetter")
-    @js.native
-    def fromLetter(letter: String): Double = js.native
+    @scala.inline
+    def fromLetter(letter: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLetter")(letter.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_DEBUG(name: DEBUG): Double = js.native
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_ERROR(name: ERROR): Double = js.native
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_FATAL(name: FATAL): Double = js.native
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_INFO(name: INFO): Double = js.native
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_SILENT(name: SILENT): Double = js.native
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_UNKNOWN(name: UNKNOWN): Double = js.native
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_VERBOSE(name: VERBOSE): Double = js.native
-    @JSImport("logkitty/build/api", "AndroidPriority.fromName")
-    @js.native
-    def fromName_WARN(name: WARN): Double = js.native
+    @scala.inline
+    def fromName_DEBUG(name: DEBUG): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/api", "AndroidPriority.toLetter")
-    @js.native
-    def toLetter(code: Double): String = js.native
+    @scala.inline
+    def fromName_ERROR(name: ERROR): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/api", "AndroidPriority.toName")
-    @js.native
-    def toName(code: Double): UNKNOWN | VERBOSE | DEBUG | INFO | WARN | ERROR | FATAL | SILENT = js.native
+    @scala.inline
+    def fromName_FATAL(name: FATAL): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def fromName_INFO(name: INFO): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def fromName_SILENT(name: SILENT): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def fromName_UNKNOWN(name: UNKNOWN): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def fromName_VERBOSE(name: VERBOSE): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def fromName_WARN(name: WARN): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def toLetter(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLetter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def toName(code: Double): UNKNOWN | VERBOSE | DEBUG | INFO | WARN | ERROR | FATAL | SILENT = ^.asInstanceOf[js.Dynamic].applyDynamic("toName")(code.asInstanceOf[js.Any]).asInstanceOf[UNKNOWN | VERBOSE | DEBUG | INFO | WARN | ERROR | FATAL | SILENT]
   }
   
   object IosPriority {
@@ -145,62 +144,50 @@ object apiMod {
     @scala.inline
     def INFO_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("INFO")(x.asInstanceOf[js.Any])
     
-    @JSImport("logkitty/build/api", "IosPriority.fromLetter")
-    @js.native
-    def fromLetter(letter: String): Double = js.native
+    @scala.inline
+    def fromLetter(letter: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromLetter")(letter.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/api", "IosPriority.fromName")
-    @js.native
-    def fromName_DEBUG(name: DEBUG): Double = js.native
-    @JSImport("logkitty/build/api", "IosPriority.fromName")
-    @js.native
-    def fromName_DEFAULT(name: DEFAULT): Double = js.native
-    @JSImport("logkitty/build/api", "IosPriority.fromName")
-    @js.native
-    def fromName_ERROR(name: ERROR): Double = js.native
-    @JSImport("logkitty/build/api", "IosPriority.fromName")
-    @js.native
-    def fromName_INFO(name: INFO): Double = js.native
+    @scala.inline
+    def fromName_DEBUG(name: DEBUG): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/api", "IosPriority.toLetter")
-    @js.native
-    def toLetter(code: Double): String = js.native
+    @scala.inline
+    def fromName_DEFAULT(name: DEFAULT): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
     
-    @JSImport("logkitty/build/api", "IosPriority.toName")
-    @js.native
-    def toName(code: Double): DEBUG | INFO | ERROR | DEFAULT = js.native
+    @scala.inline
+    def fromName_ERROR(name: ERROR): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def fromName_INFO(name: INFO): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("fromName")(name.asInstanceOf[js.Any]).asInstanceOf[Double]
+    
+    @scala.inline
+    def toLetter(code: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("toLetter")(code.asInstanceOf[js.Any]).asInstanceOf[String]
+    
+    @scala.inline
+    def toName(code: Double): DEBUG | INFO | ERROR | DEFAULT = ^.asInstanceOf[js.Dynamic].applyDynamic("toName")(code.asInstanceOf[js.Any]).asInstanceOf[DEBUG | INFO | ERROR | DEFAULT]
   }
   
-  @JSImport("logkitty/build/api", "formatEntry")
-  @js.native
-  def formatEntry(entry: Entry): String = js.native
+  @scala.inline
+  def formatEntry(entry: Entry): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatEntry")(entry.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("logkitty/build/api", "formatError")
-  @js.native
-  def formatError(error: CodeError): String = js.native
-  @JSImport("logkitty/build/api", "formatError")
-  @js.native
-  def formatError(error: Error): String = js.native
+  @scala.inline
+  def formatError(error: CodeError): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def formatError(error: Error): String = ^.asInstanceOf[js.Dynamic].applyDynamic("formatError")(error.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("logkitty/build/api", "logkitty")
-  @js.native
-  def logkitty(options: LogkittyOptions): EventEmitter = js.native
+  @scala.inline
+  def logkitty(options: LogkittyOptions): EventEmitter = ^.asInstanceOf[js.Dynamic].applyDynamic("logkitty")(options.asInstanceOf[js.Any]).asInstanceOf[EventEmitter]
   
-  @JSImport("logkitty/build/api", "makeAppFilter")
-  @js.native
-  def makeAppFilter(appIdentifier: String): FilterCreator = js.native
+  @scala.inline
+  def makeAppFilter(appIdentifier: String): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeAppFilter")(appIdentifier.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
   
-  @JSImport("logkitty/build/api", "makeCustomFilter")
-  @js.native
-  def makeCustomFilter(patterns: String*): FilterCreator = js.native
+  @scala.inline
+  def makeCustomFilter(patterns: String*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeCustomFilter")(patterns.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
   
-  @JSImport("logkitty/build/api", "makeMatchFilter")
-  @js.native
-  def makeMatchFilter(regexes: RegExp*): FilterCreator = js.native
+  @scala.inline
+  def makeMatchFilter(regexes: RegExp*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeMatchFilter")(regexes.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
   
-  @JSImport("logkitty/build/api", "makeTagsFilter")
-  @js.native
-  def makeTagsFilter(tags: String*): FilterCreator = js.native
+  @scala.inline
+  def makeTagsFilter(tags: String*): FilterCreator = ^.asInstanceOf[js.Dynamic].applyDynamic("makeTagsFilter")(tags.asInstanceOf[js.Any]).asInstanceOf[FilterCreator]
   
   type FilterCreator = js.Function3[
     /* platform */ Platform, 
@@ -209,16 +196,15 @@ object apiMod {
     IFilter
   ]
   
-  @js.native
   trait LogkittyOptions extends StObject {
     
-    var adbPath: js.UndefOr[String] = js.native
+    var adbPath: js.UndefOr[String] = js.undefined
     
-    var filter: js.UndefOr[FilterCreator] = js.native
+    var filter: js.UndefOr[FilterCreator] = js.undefined
     
-    var platform: Platform = js.native
+    var platform: Platform
     
-    var priority: js.UndefOr[Double] = js.native
+    var priority: js.UndefOr[Double] = js.undefined
   }
   object LogkittyOptions {
     

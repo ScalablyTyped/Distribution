@@ -2,28 +2,26 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@material-ui/core.@material-ui/core/styles/withStyles.ClassNameMap<@material-ui/core.@material-ui/core/MobileStepper/MobileStepper.MobileStepperClassKey>> */
-@js.native
 trait PartialClassNameMapMobile extends StObject {
   
-  var dot: js.UndefOr[String] = js.native
+  var dot: js.UndefOr[String] = js.undefined
   
-  var dotActive: js.UndefOr[String] = js.native
+  var dotActive: js.UndefOr[String] = js.undefined
   
-  var dots: js.UndefOr[String] = js.native
+  var dots: js.UndefOr[String] = js.undefined
   
-  var positionBottom: js.UndefOr[String] = js.native
+  var positionBottom: js.UndefOr[String] = js.undefined
   
-  var positionStatic: js.UndefOr[String] = js.native
+  var positionStatic: js.UndefOr[String] = js.undefined
   
-  var positionTop: js.UndefOr[String] = js.native
+  var positionTop: js.UndefOr[String] = js.undefined
   
-  var progress: js.UndefOr[String] = js.native
+  var progress: js.UndefOr[String] = js.undefined
   
-  var root: js.UndefOr[String] = js.native
+  var root: js.UndefOr[String] = js.undefined
 }
 object PartialClassNameMapMobile {
   

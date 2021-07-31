@@ -2,19 +2,17 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IContactField extends StObject {
   
-  var category: ContactFieldCategory = js.native
+  var category: ContactFieldCategory
   
-  var name: String = js.native
+  var name: String
   
-  var `type`: ContactFieldType = js.native
+  var `type`: ContactFieldType
   
-  var value: String = js.native
+  var value: String
 }
 object IContactField {
   

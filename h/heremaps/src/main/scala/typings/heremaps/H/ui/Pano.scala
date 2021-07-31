@@ -3,7 +3,6 @@ package typings.heremaps.H.ui
 import typings.heremaps.H.service.MapType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Pano {
@@ -12,12 +11,11 @@ object Pano {
     * @property alignment {H.ui.LayoutAlignment=} - the layout alignment which should be applied to this control, default is H.ui.LayoutAlignment.RIGHT_BOTTOM
     * @property mapTypes {H.service.MapTypes} - The map types to use
     */
-  @js.native
   trait Options extends StObject {
     
-    var alignment: js.UndefOr[LayoutAlignment] = js.native
+    var alignment: js.UndefOr[LayoutAlignment] = js.undefined
     
-    var mapTypes: MapType = js.native
+    var mapTypes: MapType
   }
   object Options {
     

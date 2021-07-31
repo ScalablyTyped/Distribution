@@ -9,7 +9,6 @@ import typings.react.mod.TouchEvent
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resizerMod {
@@ -74,18 +73,17 @@ object resizerMod {
     Unit
   ]
   
-  @js.native
   trait Props extends StObject {
     
-    var children: ReactNode = js.native
+    var children: ReactNode
     
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
-    var direction: Direction = js.native
+    var direction: Direction
     
-    var onResizeStart: OnStartCallback = js.native
+    var onResizeStart: OnStartCallback
     
-    var replaceStyles: js.UndefOr[CSSProperties] = js.native
+    var replaceStyles: js.UndefOr[CSSProperties] = js.undefined
   }
   object Props {
     

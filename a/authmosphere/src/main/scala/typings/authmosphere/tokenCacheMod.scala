@@ -8,7 +8,6 @@ import typings.authmosphere.tokenMod.Token
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object tokenCacheMod {
@@ -50,7 +49,7 @@ object tokenCacheMod {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    def get(tokenName: String): js.Promise[Token[Record[String, _]]] = js.native
+    def get(tokenName: String): js.Promise[Token[Record[String, js.Any]]] = js.native
     
     /**
       * Checks whether a valid token for the given name is present.
@@ -85,7 +84,7 @@ object tokenCacheMod {
       * @param tokenName
       * @returns {Promise<Token>}
       */
-    def refreshToken(tokenName: String): js.Promise[Token[Record[String, _]]] = js.native
+    def refreshToken(tokenName: String): js.Promise[Token[Record[String, js.Any]]] = js.native
     
     /**
       * The resolveAccessTokenFactory function, creates a function,

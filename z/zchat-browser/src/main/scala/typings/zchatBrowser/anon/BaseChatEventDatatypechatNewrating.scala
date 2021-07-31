@@ -4,31 +4,31 @@ import typings.zchatBrowser.mod.ChatEvent.ChatEventData
 import typings.zchatBrowser.zchatBrowserStrings.chatDotrating
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined zchat-browser.zchat-browser.ChatEvent.BaseChatEventData & {  type :'chat.rating',   rating :string | undefined,   new_rating :string | undefined} */
-@js.native
-trait BaseChatEventDatatypechatNewrating extends ChatEventData {
+trait BaseChatEventDatatypechatNewrating
+  extends StObject
+     with ChatEventData {
   
-  var display_name: String = js.native
+  var display_name: String
   
-  var new_rating: js.UndefOr[String] = js.native
+  var new_rating: js.UndefOr[String] = js.undefined
   
-  var nick: String = js.native
+  var nick: String
   
-  var rating: js.UndefOr[String] = js.native
+  var rating: js.UndefOr[String] = js.undefined
   
-  var time_stamp: Double = js.native
+  var time_stamp: Double
   
-  var `type`: chatDotrating = js.native
+  var `type`: chatDotrating
 }
 object BaseChatEventDatatypechatNewrating {
   
   @scala.inline
-  def apply(display_name: String, nick: String, time_stamp: Double, `type`: chatDotrating): BaseChatEventDatatypechatNewrating = {
+  def apply(display_name: String, nick: String, time_stamp: Double): BaseChatEventDatatypechatNewrating = {
     val __obj = js.Dynamic.literal(display_name = display_name.asInstanceOf[js.Any], nick = nick.asInstanceOf[js.Any], time_stamp = time_stamp.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("chat.rating")
     __obj.asInstanceOf[BaseChatEventDatatypechatNewrating]
   }
   

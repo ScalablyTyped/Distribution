@@ -3,13 +3,11 @@ package typings.ssUtils
 import typings.ssUtils.ssutils.Static
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryStatic extends StObject {
   
-  var ss: Static = js.native
+  var ss: Static
 }
 object JQueryStatic {
   

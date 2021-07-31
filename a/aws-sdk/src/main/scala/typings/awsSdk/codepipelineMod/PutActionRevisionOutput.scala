@@ -2,21 +2,19 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PutActionRevisionOutput extends StObject {
   
   /**
     * Indicates whether the artifact revision was previously used in an execution of the specified pipeline.
     */
-  var newRevision: js.UndefOr[Boolean] = js.native
+  var newRevision: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The ID of the current workflow state of the pipeline.
     */
-  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.native
+  var pipelineExecutionId: js.UndefOr[PipelineExecutionId] = js.undefined
 }
 object PutActionRevisionOutput {
   

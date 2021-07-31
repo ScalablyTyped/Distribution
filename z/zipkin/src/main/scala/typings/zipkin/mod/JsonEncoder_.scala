@@ -3,14 +3,12 @@ package typings.zipkin.mod
 import typings.zipkin.mod.model.Span
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Used by the HttpLogger transport to convert spans to JSON */
-@js.native
 trait JsonEncoder_ extends StObject {
   
-  def encode(span: Span): String = js.native
+  def encode(span: Span): String
 }
 object JsonEncoder_ {
   

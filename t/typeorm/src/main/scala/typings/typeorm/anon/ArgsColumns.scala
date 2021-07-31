@@ -4,19 +4,17 @@ import typings.typeorm.columnMetadataMod.ColumnMetadata
 import typings.typeorm.indexMetadataArgsMod.IndexMetadataArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ArgsColumns extends StObject {
   
-  var args: js.UndefOr[IndexMetadataArgs] = js.native
+  var args: js.UndefOr[IndexMetadataArgs] = js.undefined
   
-  var columns: js.UndefOr[js.Array[ColumnMetadata]] = js.native
+  var columns: js.UndefOr[js.Array[ColumnMetadata]] = js.undefined
   
-  var embeddedMetadata: js.UndefOr[typings.typeorm.embeddedMetadataMod.EmbeddedMetadata] = js.native
+  var embeddedMetadata: js.UndefOr[typings.typeorm.embeddedMetadataMod.EmbeddedMetadata] = js.undefined
   
-  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata = js.native
+  var entityMetadata: typings.typeorm.entityMetadataMod.EntityMetadata
 }
 object ArgsColumns {
   

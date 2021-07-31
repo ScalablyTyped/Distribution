@@ -6,38 +6,37 @@ import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.output
 import typings.awsSdkBuildTypes.awsSdkBuildTypesStrings.structure
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Structure
-  extends ShapeDef
+  extends StObject
+     with ShapeDef
      with ComplexShape
      with Shape {
   
-  var error: js.UndefOr[Error] = js.native
+  var error: js.UndefOr[Error] = js.undefined
   
-  var exception: js.UndefOr[scala.Boolean] = js.native
+  var exception: js.UndefOr[scala.Boolean] = js.undefined
   
-  var fault: js.UndefOr[scala.Boolean] = js.native
+  var fault: js.UndefOr[scala.Boolean] = js.undefined
   
-  var members: StringDictionary[StructureMember] = js.native
+  var members: StringDictionary[StructureMember]
   
-  var payload: js.UndefOr[java.lang.String] = js.native
+  var payload: js.UndefOr[java.lang.String] = js.undefined
   
-  var required: js.UndefOr[js.Array[java.lang.String]] = js.native
+  var required: js.UndefOr[js.Array[java.lang.String]] = js.undefined
   
-  var topLevel: js.UndefOr[input | output] = js.native
+  var topLevel: js.UndefOr[input | output] = js.undefined
   
   @JSName("type")
-  val type_Structure: structure = js.native
+  val type_Structure: structure
 }
 object Structure {
   
   @scala.inline
-  def apply(members: StringDictionary[StructureMember], `type`: structure): Structure = {
+  def apply(members: StringDictionary[StructureMember]): Structure = {
     val __obj = js.Dynamic.literal(members = members.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("structure")
     __obj.asInstanceOf[Structure]
   }
   

@@ -2,36 +2,34 @@ package typings.googleapis.manufacturersV1Mod.manufacturersV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Product data.
   */
-@js.native
 trait SchemaProduct extends StObject {
   
   /**
     * Attributes of the product uploaded to the Manufacturer Center. Manually
     * edited attributes are taken into account.
     */
-  var attributes: js.UndefOr[SchemaAttributes] = js.native
+  var attributes: js.UndefOr[SchemaAttributes] = js.undefined
   
   /**
     * The content language of the product as a two-letter ISO 639-1 language
     * code (for example, en).
     */
-  var contentLanguage: js.UndefOr[String] = js.native
+  var contentLanguage: js.UndefOr[String] = js.undefined
   
   /**
     * The status of the destinations.
     */
-  var destinationStatuses: js.UndefOr[js.Array[SchemaDestinationStatus]] = js.native
+  var destinationStatuses: js.UndefOr[js.Array[SchemaDestinationStatus]] = js.undefined
   
   /**
     * A server-generated list of issues associated with the product.
     */
-  var issues: js.UndefOr[js.Array[SchemaIssue]] = js.native
+  var issues: js.UndefOr[js.Array[SchemaIssue]] = js.undefined
   
   /**
     * Name in the format `{target_country}:{content_language}:{product_id}`.
@@ -42,25 +40,25 @@ trait SchemaProduct extends StObject {
     * more information, see
     * https://support.google.com/manufacturers/answer/6124116#id.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * Parent ID in the format `accounts/{account_id}`.  `account_id` - The ID
     * of the Manufacturer Center account.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * The ID of the product. For more information, see
     * https://support.google.com/manufacturers/answer/6124116#id.
     */
-  var productId: js.UndefOr[String] = js.native
+  var productId: js.UndefOr[String] = js.undefined
   
   /**
     * The target country of the product as a CLDR territory code (for example,
     * US).
     */
-  var targetCountry: js.UndefOr[String] = js.native
+  var targetCountry: js.UndefOr[String] = js.undefined
 }
 object SchemaProduct {
   

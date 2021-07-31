@@ -2,17 +2,17 @@ package typings.rax.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TableHTMLAttributes[T] extends HTMLAttributes[T] {
+trait TableHTMLAttributes[T]
+  extends StObject
+     with HTMLAttributes[T] {
   
-  var cellPadding: js.UndefOr[Double | String] = js.native
+  var cellPadding: js.UndefOr[Double | String] = js.undefined
   
-  var cellSpacing: js.UndefOr[Double | String] = js.native
+  var cellSpacing: js.UndefOr[Double | String] = js.undefined
   
-  var summary: js.UndefOr[String] = js.native
+  var summary: js.UndefOr[String] = js.undefined
 }
 object TableHTMLAttributes {
   
@@ -23,7 +23,7 @@ object TableHTMLAttributes {
   }
   
   @scala.inline
-  implicit class TableHTMLAttributesMutableBuilder[Self <: TableHTMLAttributes[_], T] (val x: Self with TableHTMLAttributes[T]) extends AnyVal {
+  implicit class TableHTMLAttributesMutableBuilder[Self <: TableHTMLAttributes[?], T] (val x: Self & TableHTMLAttributes[T]) extends AnyVal {
     
     @scala.inline
     def setCellPadding(value: Double | String): Self = StObject.set(x, "cellPadding", value.asInstanceOf[js.Any])

@@ -4,17 +4,15 @@ import typings.leafletGeosearch.leafletGeosearchNumbers.`0`
 import typings.leafletGeosearch.leafletGeosearchNumbers.`1`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OpenStreetMapProviderOptionsOther extends StObject {
   
-  var debug: js.UndefOr[`0` | `1`] = js.native
+  var debug: js.UndefOr[`0` | `1`] = js.undefined
   
-  var dedupe: js.UndefOr[`0` | `1`] = js.native
+  var dedupe: js.UndefOr[`0` | `1`] = js.undefined
   
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
 }
 object OpenStreetMapProviderOptionsOther {
   

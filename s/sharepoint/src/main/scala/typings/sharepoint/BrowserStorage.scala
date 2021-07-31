@@ -2,25 +2,23 @@ package typings.sharepoint
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Available only in SharePoint Online*/
 object BrowserStorage {
   
   /** Available only in SharePoint Online*/
-  @js.native
   trait CachedStorage extends StObject {
     
-    def clead(): Unit = js.native
+    def clead(): Unit
     
-    def getItem(key: String): String = js.native
+    def getItem(key: String): String
     
-    var length: Double = js.native
+    var length: Double
     
-    def removeItem(key: String): Unit = js.native
+    def removeItem(key: String): Unit
     
-    def setItem(key: String, value: String): Unit = js.native
+    def setItem(key: String, value: String): Unit
   }
   object CachedStorage {
     

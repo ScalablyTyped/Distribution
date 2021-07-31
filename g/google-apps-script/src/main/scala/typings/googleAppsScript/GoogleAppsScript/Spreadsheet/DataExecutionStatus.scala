@@ -3,24 +3,22 @@ package typings.googleAppsScript.GoogleAppsScript.Spreadsheet
 import typings.googleAppsScript.GoogleAppsScript.Base.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The data execution status.
   */
-@js.native
 trait DataExecutionStatus extends StObject {
   
-  def getErrorCode(): DataExecutionErrorCode = js.native
+  def getErrorCode(): DataExecutionErrorCode
   
-  def getErrorMessage(): String = js.native
+  def getErrorMessage(): String
   
-  def getExecutionState(): DataExecutionState = js.native
+  def getExecutionState(): DataExecutionState
   
-  def getLastRefreshedTime(): Date | Null = js.native
+  def getLastRefreshedTime(): Date | Null
   
-  def isTruncated(): Boolean = js.native
+  def isTruncated(): Boolean
 }
 object DataExecutionStatus {
   

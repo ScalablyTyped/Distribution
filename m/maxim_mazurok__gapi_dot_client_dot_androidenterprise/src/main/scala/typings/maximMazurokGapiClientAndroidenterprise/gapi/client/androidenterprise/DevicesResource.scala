@@ -8,7 +8,6 @@ import typings.maximMazurokGapiClientAndroidenterprise.anon.DeviceId
 import typings.maximMazurokGapiClientAndroidenterprise.anon.EnterpriseId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native

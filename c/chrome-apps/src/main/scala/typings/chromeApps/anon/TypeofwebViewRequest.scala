@@ -37,10 +37,8 @@ import typings.chromeApps.chrome.webViewRequest.SetRequestHeader
 import typings.chromeApps.chrome.webViewRequest.SetRequestHeaderParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofwebViewRequest extends StObject {
   
   /**
@@ -50,7 +48,7 @@ trait TypeofwebViewRequest extends StObject {
   var AddRequestCookie: Instantiable1[
     /* parameters */ AddCookie[RequestCookie], 
     typings.chromeApps.chrome.webViewRequest.AddRequestCookie
-  ] = js.native
+  ]
   
   /**
     * Adds a cookie to the response or overrides a cookie, in case another cookie of the same name exists already.
@@ -59,7 +57,7 @@ trait TypeofwebViewRequest extends StObject {
   var AddResponseCookie: Instantiable1[
     /* parameters */ AddCookie[ResponseCookie], 
     typings.chromeApps.chrome.webViewRequest.AddResponseCookie
-  ] = js.native
+  ]
   
   /**
     * Adds the response header to the response of this web request.
@@ -70,10 +68,10 @@ trait TypeofwebViewRequest extends StObject {
   var AddResponseHeader: Instantiable1[
     /* parameters */ AddResponseHeaderParams, 
     typings.chromeApps.chrome.webViewRequest.AddResponseHeader
-  ] = js.native
+  ]
   
   /** Declarative event action that cancels a network request. */
-  var CancelRequest: Instantiable0[typings.chromeApps.chrome.webViewRequest.CancelRequest] = js.native
+  var CancelRequest: Instantiable0[typings.chromeApps.chrome.webViewRequest.CancelRequest]
   
   /**
     * Edits one or more cookies of request.
@@ -82,7 +80,7 @@ trait TypeofwebViewRequest extends StObject {
   var EditRequestCookie: Instantiable1[
     /* parameters */ EditCookieParams[RequestCookie, RequestCookie], 
     typings.chromeApps.chrome.webViewRequest.EditRequestCookie
-  ] = js.native
+  ]
   
   /**
     * Edits one or more cookies of response.
@@ -91,7 +89,7 @@ trait TypeofwebViewRequest extends StObject {
   var EditResponseCookie: Instantiable1[
     /* parameter */ EditCookieParams[FilterResponseCookie, ResponseCookie], 
     typings.chromeApps.chrome.webViewRequest.EditResponseCookie
-  ] = js.native
+  ]
   
   /**
     * Masks all rules that match the specified criteria.
@@ -99,7 +97,7 @@ trait TypeofwebViewRequest extends StObject {
   var IgnoreRules: Instantiable1[
     /* parameters */ IgnoreRulesParams, 
     typings.chromeApps.chrome.webViewRequest.IgnoreRules
-  ] = js.native
+  ]
   
   /**
     * Redirects a request by applying a regular expression on the URL.
@@ -109,19 +107,19 @@ trait TypeofwebViewRequest extends StObject {
   var RedirectByRegEx: Instantiable1[
     /* parameters */ RedirectByRegExParams, 
     typings.chromeApps.chrome.webViewRequest.RedirectByRegEx
-  ] = js.native
+  ]
   
   /** Declarative event action that redirects a network request.  */
   var RedirectRequest: Instantiable1[
     /* parameters */ RedirectRequestParams, 
     typings.chromeApps.chrome.webViewRequest.RedirectRequest
-  ] = js.native
+  ]
   
   /** Declarative event action that redirects a network request to an empty document. */
-  var RedirectToEmptyDocument: Instantiable0[typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument] = js.native
+  var RedirectToEmptyDocument: Instantiable0[typings.chromeApps.chrome.webViewRequest.RedirectToEmptyDocument]
   
   /** Declarative event action that redirects a network request to a transparent image. */
-  var RedirectToTransparentImage: Instantiable0[typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage] = js.native
+  var RedirectToTransparentImage: Instantiable0[typings.chromeApps.chrome.webViewRequest.RedirectToTransparentImage]
   
   /**
     * Removes one or more cookies of request.
@@ -130,7 +128,7 @@ trait TypeofwebViewRequest extends StObject {
   var RemoveRequestCookie: Instantiable1[
     /* parameters */ RemoveCookieParams[RequestCookie], 
     typings.chromeApps.chrome.webViewRequest.RemoveRequestCookie
-  ] = js.native
+  ]
   
   /**
     * Removes the request header of the specified name.
@@ -141,7 +139,7 @@ trait TypeofwebViewRequest extends StObject {
   var RemoveRequestHeader: Instantiable1[
     /* parameters */ RemoveRequestHeaderParams, 
     typings.chromeApps.chrome.webViewRequest.RemoveRequestHeader
-  ] = js.native
+  ]
   
   /**
     * Removes one or more cookies of response.
@@ -150,7 +148,7 @@ trait TypeofwebViewRequest extends StObject {
   var RemoveResponseCookie: Instantiable1[
     /* parameters */ RemoveCookieParams[FilterResponseCookie], 
     typings.chromeApps.chrome.webViewRequest.RemoveResponseCookie
-  ] = js.native
+  ]
   
   /**
     * Removes all response headers of the specified names and values.
@@ -158,7 +156,7 @@ trait TypeofwebViewRequest extends StObject {
   var RemoveResponseHeader: Instantiable1[
     /* parameters */ RemoveResponseHeaderParams, 
     typings.chromeApps.chrome.webViewRequest.RemoveResponseHeader
-  ] = js.native
+  ]
   
   /**
     * @description Matches network events by various criteria.
@@ -166,7 +164,7 @@ trait TypeofwebViewRequest extends StObject {
   var RequestMatcher: Instantiable1[
     /* parameters */ js.UndefOr[RequestMatcherFields], 
     typings.chromeApps.chrome.webViewRequest.RequestMatcher
-  ] = js.native
+  ]
   
   /**
     * Triggers the webviewWebRequest.*OnMessageEvent* event which are used in webviews.
@@ -174,7 +172,7 @@ trait TypeofwebViewRequest extends StObject {
   var SendMessageToExtension: Instantiable1[
     /* parameters */ SendMessageParams, 
     typings.chromeApps.chrome.webViewRequest.SendMessageToExtension
-  ] = js.native
+  ]
   
   /**
     * Sets the request header of the specified name to the specified value.
@@ -185,7 +183,7 @@ trait TypeofwebViewRequest extends StObject {
   var SetRequestHeader: Instantiable1[
     /* parameters */ SetRequestHeaderParams, 
     typings.chromeApps.chrome.webViewRequest.SetRequestHeader
-  ] = js.native
+  ]
 }
 object TypeofwebViewRequest {
   

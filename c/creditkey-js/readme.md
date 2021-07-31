@@ -10,9 +10,9 @@ Credit Key Javascript SDK
 | ------------------ | :-------------: |
 | Full name          | creditkey-js |
 | Keywords           | - |
-| # releases         | 71 |
+| # releases         | 43 |
 | # dependents       | 0 |
-| # downloads        | 24640 |
+| # downloads        | 38349 |
 | # stars            | 0 |
 
 ## Links

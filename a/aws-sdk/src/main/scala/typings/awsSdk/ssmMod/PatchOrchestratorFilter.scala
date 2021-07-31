@@ -2,21 +2,19 @@ package typings.awsSdk.ssmMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PatchOrchestratorFilter extends StObject {
   
   /**
     * The key for the filter.
     */
-  var Key: js.UndefOr[PatchOrchestratorFilterKey] = js.native
+  var Key: js.UndefOr[PatchOrchestratorFilterKey] = js.undefined
   
   /**
     * The value for the filter.
     */
-  var Values: js.UndefOr[PatchOrchestratorFilterValues] = js.native
+  var Values: js.UndefOr[PatchOrchestratorFilterValues] = js.undefined
 }
 object PatchOrchestratorFilter {
   

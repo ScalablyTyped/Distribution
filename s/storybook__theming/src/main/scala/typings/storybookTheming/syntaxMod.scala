@@ -5,10 +5,13 @@ import typings.storybookTheming.anon.Colors
 import typings.storybookTheming.anon.Languagejsontokenboolean
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object syntaxMod {
+  
+  @JSImport("@storybook/theming/dist/modules/syntax", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object chromeDark {
     
@@ -468,9 +471,8 @@ object syntaxMod {
     def TREENODE_PADDING_LEFT_=(x: Double): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TREENODE_PADDING_LEFT")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@storybook/theming/dist/modules/syntax", "create")
-  @js.native
-  def create(hasColorsMono: Colors): Languagejsontokenboolean = js.native
+  @scala.inline
+  def create(hasColorsMono: Colors): Languagejsontokenboolean = ^.asInstanceOf[js.Dynamic].applyDynamic("create")(hasColorsMono.asInstanceOf[js.Any]).asInstanceOf[Languagejsontokenboolean]
   
   type ColorsHash = StringDictionary[String]
 }

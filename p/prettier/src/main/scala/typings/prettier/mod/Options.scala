@@ -19,62 +19,60 @@ import typings.prettier.prettierStrings.preserve
 import typings.prettier.prettierStrings.strict
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Partial<prettier.prettier.RequiredOptions> */
-@js.native
 trait Options extends StObject {
   
-  var arrowParens: js.UndefOr[avoid | always] = js.native
+  var arrowParens: js.UndefOr[avoid | always] = js.undefined
   
-  var bracketSpacing: js.UndefOr[Boolean] = js.native
+  var bracketSpacing: js.UndefOr[Boolean] = js.undefined
   
-  var embeddedInHtml: js.UndefOr[Boolean] = js.native
+  var embeddedInHtml: js.UndefOr[Boolean] = js.undefined
   
-  var embeddedLanguageFormatting: js.UndefOr[auto | off] = js.native
+  var embeddedLanguageFormatting: js.UndefOr[auto | off] = js.undefined
   
-  var endOfLine: js.UndefOr[auto | lf | crlf | cr] = js.native
+  var endOfLine: js.UndefOr[auto | lf | crlf | cr] = js.undefined
   
-  var filepath: js.UndefOr[String] = js.native
+  var filepath: js.UndefOr[String] = js.undefined
   
-  var htmlWhitespaceSensitivity: js.UndefOr[css | strict | ignore] = js.native
+  var htmlWhitespaceSensitivity: js.UndefOr[css | strict | ignore] = js.undefined
   
-  var insertPragma: js.UndefOr[Boolean] = js.native
+  var insertPragma: js.UndefOr[Boolean] = js.undefined
   
-  var jsxBracketSameLine: js.UndefOr[Boolean] = js.native
+  var jsxBracketSameLine: js.UndefOr[Boolean] = js.undefined
   
-  var jsxSingleQuote: js.UndefOr[Boolean] = js.native
+  var jsxSingleQuote: js.UndefOr[Boolean] = js.undefined
   
-  var parentParser: js.UndefOr[String] = js.native
+  var parentParser: js.UndefOr[String] = js.undefined
   
-  var parser: js.UndefOr[(LiteralUnion[BuiltInParserName, String]) | CustomParser] = js.native
+  var parser: js.UndefOr[(LiteralUnion[BuiltInParserName, String]) | CustomParser] = js.undefined
   
-  var plugins: js.UndefOr[js.Array[String | Plugin[_]]] = js.native
+  var plugins: js.UndefOr[js.Array[String | Plugin[js.Any]]] = js.undefined
   
-  var printWidth: js.UndefOr[Double] = js.native
+  var printWidth: js.UndefOr[Double] = js.undefined
   
-  var proseWrap: js.UndefOr[always | never | preserve] = js.native
+  var proseWrap: js.UndefOr[always | never | preserve] = js.undefined
   
-  var quoteProps: js.UndefOr[`as-needed` | consistent | preserve] = js.native
+  var quoteProps: js.UndefOr[`as-needed` | consistent | preserve] = js.undefined
   
-  var rangeEnd: js.UndefOr[Double] = js.native
+  var rangeEnd: js.UndefOr[Double] = js.undefined
   
-  var rangeStart: js.UndefOr[Double] = js.native
+  var rangeStart: js.UndefOr[Double] = js.undefined
   
-  var requirePragma: js.UndefOr[Boolean] = js.native
+  var requirePragma: js.UndefOr[Boolean] = js.undefined
   
-  var semi: js.UndefOr[Boolean] = js.native
+  var semi: js.UndefOr[Boolean] = js.undefined
   
-  var singleQuote: js.UndefOr[Boolean] = js.native
+  var singleQuote: js.UndefOr[Boolean] = js.undefined
   
-  var tabWidth: js.UndefOr[Double] = js.native
+  var tabWidth: js.UndefOr[Double] = js.undefined
   
-  var trailingComma: js.UndefOr[none | es5 | all] = js.native
+  var trailingComma: js.UndefOr[none | es5 | all] = js.undefined
   
-  var useTabs: js.UndefOr[Boolean] = js.native
+  var useTabs: js.UndefOr[Boolean] = js.undefined
   
-  var vueIndentScriptAndStyle: js.UndefOr[Boolean] = js.native
+  var vueIndentScriptAndStyle: js.UndefOr[Boolean] = js.undefined
 }
 object Options {
   
@@ -163,7 +161,7 @@ object Options {
     def setParserUndefined: Self = StObject.set(x, "parser", js.undefined)
     
     @scala.inline
-    def setPlugins(value: js.Array[String | Plugin[_]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
+    def setPlugins(value: js.Array[String | Plugin[js.Any]]): Self = StObject.set(x, "plugins", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPluginsUndefined: Self = StObject.set(x, "plugins", js.undefined)

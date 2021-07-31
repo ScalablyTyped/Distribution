@@ -11,7 +11,7 @@ wrap express request/response with node domains
 | Keywords           | domain, express, middleware |
 | # releases         | 0 |
 | # dependents       | 21 |
-| # downloads        | 268245 |
+| # downloads        | 249882 |
 | # stars            | 11 |
 
 ## Links

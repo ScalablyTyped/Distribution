@@ -6,7 +6,6 @@ import typings.std.RegExp
 import typings.vinyl.mod.File
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -68,12 +67,11 @@ object mod extends Shortcut {
     def apply(condition: RegExp, stream: ReadWriteStream, elseStream: ReadWriteStream): ReadWriteStream = js.native
   }
   
-  @js.native
   trait StatFilterCondition extends StObject {
     
-    var isDirectory: js.UndefOr[Boolean] = js.native
+    var isDirectory: js.UndefOr[Boolean] = js.undefined
     
-    var isFile: js.UndefOr[Boolean] = js.native
+    var isFile: js.UndefOr[Boolean] = js.undefined
   }
   object StatFilterCondition {
     

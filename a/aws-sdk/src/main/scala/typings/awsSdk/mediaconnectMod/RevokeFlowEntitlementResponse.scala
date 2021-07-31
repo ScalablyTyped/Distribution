@@ -2,21 +2,19 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RevokeFlowEntitlementResponse extends StObject {
   
   /**
     * The ARN of the entitlement that was revoked.
     */
-  var EntitlementArn: js.UndefOr[string] = js.native
+  var EntitlementArn: js.UndefOr[string] = js.undefined
   
   /**
     * The ARN of the flow that the entitlement was revoked from.
     */
-  var FlowArn: js.UndefOr[string] = js.native
+  var FlowArn: js.UndefOr[string] = js.undefined
 }
 object RevokeFlowEntitlementResponse {
   

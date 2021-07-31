@@ -4,75 +4,75 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** gives access to the value and settings of a scroll bar and makes it possible to register adjustment event listeners. */
-@js.native
-trait XScrollBar extends XInterface {
+trait XScrollBar
+  extends StObject
+     with XInterface {
   
   /** returns the currently set increment for a block move. */
-  var BlockIncrement: Double = js.native
+  var BlockIncrement: Double
   
   /** returns the currently set increment for a single line move. */
-  var LineIncrement: Double = js.native
+  var LineIncrement: Double
   
   /** returns the currently set maximum scroll value of the scroll bar. */
-  var Maximum: Double = js.native
+  var Maximum: Double
   
   /** returns the currently set {@link ScrollBarOrientation} of the scroll bar. */
-  var Orientation: Double = js.native
+  var Orientation: Double
   
   /** returns the current scroll value of the scroll bar. */
-  var Value: Double = js.native
+  var Value: Double
   
   /** returns the currently visible size of the scroll bar. */
-  var VisibleSize: Double = js.native
+  var VisibleSize: Double
   
   /** registers an adjustment event listener. */
-  def addAdjustmentListener(l: XAdjustmentListener): Unit = js.native
+  def addAdjustmentListener(l: XAdjustmentListener): Unit
   
   /** returns the currently set increment for a block move. */
-  def getBlockIncrement(): Double = js.native
+  def getBlockIncrement(): Double
   
   /** returns the currently set increment for a single line move. */
-  def getLineIncrement(): Double = js.native
+  def getLineIncrement(): Double
   
   /** returns the currently set maximum scroll value of the scroll bar. */
-  def getMaximum(): Double = js.native
+  def getMaximum(): Double
   
   /** returns the currently set {@link ScrollBarOrientation} of the scroll bar. */
-  def getOrientation(): Double = js.native
+  def getOrientation(): Double
   
   /** returns the current scroll value of the scroll bar. */
-  def getValue(): Double = js.native
+  def getValue(): Double
   
   /** returns the currently visible size of the scroll bar. */
-  def getVisibleSize(): Double = js.native
+  def getVisibleSize(): Double
   
   /** unregisters an adjustment event listener. */
-  def removeAdjustmentListener(l: XAdjustmentListener): Unit = js.native
+  def removeAdjustmentListener(l: XAdjustmentListener): Unit
   
   /** sets the increment for a block move. */
-  def setBlockIncrement(n: Double): Unit = js.native
+  def setBlockIncrement(n: Double): Unit
   
   /** sets the increment for a single line move. */
-  def setLineIncrement(n: Double): Unit = js.native
+  def setLineIncrement(n: Double): Unit
   
   /** sets the maximum scroll value of the scroll bar. */
-  def setMaximum(n: Double): Unit = js.native
+  def setMaximum(n: Double): Unit
   
   /** sets the {@link ScrollBarOrientation} of the scroll bar. */
-  def setOrientation(n: Double): Unit = js.native
+  def setOrientation(n: Double): Unit
   
   /** sets the scroll value of the scroll bar. */
-  def setValue(n: Double): Unit = js.native
+  def setValue(n: Double): Unit
   
   /** sets the scroll value, visible area and maximum scroll value of the scroll bar. */
-  def setValues(nValue: Double, nVisible: Double, nMax: Double): Unit = js.native
+  def setValues(nValue: Double, nVisible: Double, nMax: Double): Unit
   
   /** sets the visible size of the scroll bar. */
-  def setVisibleSize(n: Double): Unit = js.native
+  def setVisibleSize(n: Double): Unit
 }
 object XScrollBar {
   

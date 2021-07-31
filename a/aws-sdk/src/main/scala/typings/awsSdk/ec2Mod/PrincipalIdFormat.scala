@@ -2,21 +2,19 @@ package typings.awsSdk.ec2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PrincipalIdFormat extends StObject {
   
   /**
     * PrincipalIdFormatARN description
     */
-  var Arn: js.UndefOr[String] = js.native
+  var Arn: js.UndefOr[String] = js.undefined
   
   /**
     * PrincipalIdFormatStatuses description
     */
-  var Statuses: js.UndefOr[IdFormatList] = js.native
+  var Statuses: js.UndefOr[IdFormatList] = js.undefined
 }
 object PrincipalIdFormat {
   

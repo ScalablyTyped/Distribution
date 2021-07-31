@@ -4,7 +4,6 @@ import typings.reveal.anon.H
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -87,13 +86,13 @@ trait RevealStatic extends StObject {
   
   // Navigation
   def slide(indexh: Double): Unit = js.native
-  def slide(indexh: Double, indexv: js.UndefOr[scala.Nothing], f: js.UndefOr[scala.Nothing], o: Double): Unit = js.native
-  def slide(indexh: Double, indexv: js.UndefOr[scala.Nothing], f: Double): Unit = js.native
-  def slide(indexh: Double, indexv: js.UndefOr[scala.Nothing], f: Double, o: Double): Unit = js.native
   def slide(indexh: Double, indexv: Double): Unit = js.native
-  def slide(indexh: Double, indexv: Double, f: js.UndefOr[scala.Nothing], o: Double): Unit = js.native
   def slide(indexh: Double, indexv: Double, f: Double): Unit = js.native
   def slide(indexh: Double, indexv: Double, f: Double, o: Double): Unit = js.native
+  def slide(indexh: Double, indexv: Double, f: Unit, o: Double): Unit = js.native
+  def slide(indexh: Double, indexv: Unit, f: Double): Unit = js.native
+  def slide(indexh: Double, indexv: Unit, f: Double, o: Double): Unit = js.native
+  def slide(indexh: Double, indexv: Unit, f: Unit, o: Double): Unit = js.native
   
   // update slides after dynamic changes
   def sync(): Unit = js.native

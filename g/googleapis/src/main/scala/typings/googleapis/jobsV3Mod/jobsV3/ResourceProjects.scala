@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v3", "jobs_v3.Resource$Projects")
@@ -40,7 +39,7 @@ class ResourceProjects protected () extends StObject {
     */
   def complete(): GaxiosPromise[SchemaCompleteQueryResponse] = js.native
   def complete(callback: BodyResponseCallback[SchemaCompleteQueryResponse]): Unit = js.native
-  def complete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaCompleteQueryResponse] = js.native
+  def complete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaCompleteQueryResponse] = js.native
   def complete(params: ParamsResourceProjectsComplete): GaxiosPromise[SchemaCompleteQueryResponse] = js.native
   def complete(
     params: ParamsResourceProjectsComplete,

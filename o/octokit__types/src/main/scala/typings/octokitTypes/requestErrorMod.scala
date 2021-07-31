@@ -3,21 +3,19 @@ package typings.octokitTypes
 import typings.octokitTypes.anon.Code
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object requestErrorMod {
   
-  @js.native
   trait RequestError extends StObject {
     
-    var documentation_url: String = js.native
+    var documentation_url: String
     
-    var errors: js.UndefOr[js.Array[Code]] = js.native
+    var errors: js.UndefOr[js.Array[Code]] = js.undefined
     
-    var name: String = js.native
+    var name: String
     
-    var status: Double = js.native
+    var status: Double
   }
   object RequestError {
     

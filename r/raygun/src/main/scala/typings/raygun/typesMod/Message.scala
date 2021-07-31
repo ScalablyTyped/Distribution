@@ -3,15 +3,13 @@ package typings.raygun.typesMod
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
-  var details: MessageDetails = js.native
+  var details: MessageDetails
   
-  var occurredOn: Date = js.native
+  var occurredOn: Date
 }
 object Message {
   

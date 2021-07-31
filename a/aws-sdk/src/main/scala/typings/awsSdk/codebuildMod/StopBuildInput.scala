@@ -2,16 +2,14 @@ package typings.awsSdk.codebuildMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StopBuildInput extends StObject {
   
   /**
     * The ID of the build.
     */
-  var id: NonEmptyString = js.native
+  var id: NonEmptyString
 }
 object StopBuildInput {
   

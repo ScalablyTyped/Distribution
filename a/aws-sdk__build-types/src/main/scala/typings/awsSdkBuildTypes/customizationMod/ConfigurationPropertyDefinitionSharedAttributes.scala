@@ -2,10 +2,8 @@ package typings.awsSdkBuildTypes.customizationMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ConfigurationPropertyDefinitionSharedAttributes extends StObject {
   
   /**
@@ -13,14 +11,14 @@ trait ConfigurationPropertyDefinitionSharedAttributes extends StObject {
     * property. Should be in standard JSDoc format and expect to be indented by
     * 4 spaces.
     */
-  var documentation: String = js.native
+  var documentation: String
   
   /**
     * Packages that must be imported to use this configuration property.
     * Packages will be imported using the `import * as ${snake_case_package_name} from 'package-name';`
     * syntax.
     */
-  var imports: js.UndefOr[js.Array[Import]] = js.native
+  var imports: js.UndefOr[js.Array[Import]] = js.undefined
   
   /**
     * Will be used as the `InputType` type parameter to the generated
@@ -31,7 +29,7 @@ trait ConfigurationPropertyDefinitionSharedAttributes extends StObject {
     * If an imported type is used, it must be referred to as a property of the
     * imported package.
     */
-  var inputType: String = js.native
+  var inputType: String
   
   /**
     * Whether this property represents internal state about an SDK client that
@@ -41,7 +39,7 @@ trait ConfigurationPropertyDefinitionSharedAttributes extends StObject {
     * interface but will appear in the client's resolved configuration
     * interface.
     */
-  var internal: js.UndefOr[Boolean] = js.native
+  var internal: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The type to which this property will be normalized. It should only be
@@ -53,7 +51,7 @@ trait ConfigurationPropertyDefinitionSharedAttributes extends StObject {
     * If an imported type is used, it must be referred to as a property of the
     * imported package.
     */
-  var resolvedType: js.UndefOr[String] = js.native
+  var resolvedType: js.UndefOr[String] = js.undefined
 }
 object ConfigurationPropertyDefinitionSharedAttributes {
   

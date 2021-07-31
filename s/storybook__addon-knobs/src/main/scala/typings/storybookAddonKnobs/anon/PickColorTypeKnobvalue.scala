@@ -3,14 +3,12 @@ package typings.storybookAddonKnobs.anon
 import typings.storybookAddonKnobs.colorMod.ColorTypeKnobValue
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Pick<@storybook/addon-knobs.@storybook/addon-knobs/dist/components/types.ColorTypeKnob, 'value'> */
-@js.native
 trait PickColorTypeKnobvalue extends StObject {
   
-  var value: ColorTypeKnobValue = js.native
+  var value: ColorTypeKnobValue
 }
 object PickColorTypeKnobvalue {
   

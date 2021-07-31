@@ -2,21 +2,19 @@ package typings.reactNativeChartsWrapper.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Digits extends StObject {
   
-  var digits: js.UndefOr[Double] = js.native
+  var digits: js.UndefOr[Double] = js.undefined
   
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
-  var markerColor: js.UndefOr[typings.reactNativeChartsWrapper.mod.Color] = js.native
+  var markerColor: js.UndefOr[typings.reactNativeChartsWrapper.mod.Color] = js.undefined
   
-  var textColor: js.UndefOr[typings.reactNativeChartsWrapper.mod.Color] = js.native
+  var textColor: js.UndefOr[typings.reactNativeChartsWrapper.mod.Color] = js.undefined
   
-  var textSize: js.UndefOr[Double] = js.native
+  var textSize: js.UndefOr[Double] = js.undefined
 }
 object Digits {
   

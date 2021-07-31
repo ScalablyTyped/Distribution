@@ -2,15 +2,13 @@ package typings.tensorflowTfjsCore.kernelNamesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MaxAttrs extends StObject {
   
-  var keepDims: Boolean = js.native
+  var keepDims: Boolean
   
-  var reductionIndices: Double | js.Array[Double] = js.native
+  var reductionIndices: Double | js.Array[Double]
 }
 object MaxAttrs {
   

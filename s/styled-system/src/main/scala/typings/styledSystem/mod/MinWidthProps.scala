@@ -2,10 +2,8 @@ package typings.styledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MinWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends StObject {
   
   /**
@@ -14,7 +12,7 @@ trait MinWidthProps[ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] extends
     *
     * [MDN reference](https://developer.mozilla.org/en-US/docs/Web/CSS/min-width)
     */
-  var minWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.native
+  var minWidth: js.UndefOr[ResponsiveValue[TVal, ThemeType]] = js.undefined
 }
 object MinWidthProps {
   
@@ -25,7 +23,7 @@ object MinWidthProps {
   }
   
   @scala.inline
-  implicit class MinWidthPropsMutableBuilder[Self <: MinWidthProps[_, _], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self with (MinWidthProps[ThemeType, TVal])) extends AnyVal {
+  implicit class MinWidthPropsMutableBuilder[Self <: MinWidthProps[?, ?], ThemeType /* <: Theme[TLengthStyledSystem] */, TVal] (val x: Self & (MinWidthProps[ThemeType, TVal])) extends AnyVal {
     
     @scala.inline
     def setMinWidth(value: ResponsiveValue[TVal, ThemeType]): Self = StObject.set(x, "minWidth", value.asInstanceOf[js.Any])

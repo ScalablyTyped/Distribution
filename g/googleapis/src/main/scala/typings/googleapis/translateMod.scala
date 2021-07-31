@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object translateMod {
+  
+  @JSImport("googleapis/build/src/apis/translate", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -68,9 +71,12 @@ object translateMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/translate", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/translate", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -114,10 +120,9 @@ object translateMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/translate", "translate")
-  @js.native
-  def translate(options: Options): Translate = js.native
-  @JSImport("googleapis/build/src/apis/translate", "translate")
-  @js.native
-  def translate_v2(version: v2): Translate = js.native
+  @scala.inline
+  def translate(options: Options): Translate = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(options.asInstanceOf[js.Any]).asInstanceOf[Translate]
+  
+  @scala.inline
+  def translate_v2(version: v2): Translate = ^.asInstanceOf[js.Dynamic].applyDynamic("translate")(version.asInstanceOf[js.Any]).asInstanceOf[Translate]
 }

@@ -4,22 +4,20 @@ import typings.react.mod.MouseEvent
 import typings.react.mod.NativeMouseEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderMouseEventHandlerParams extends StObject {
   
-  var columnData: js.Any = js.native
+  var columnData: js.Any
   
-  var dataKey: String = js.native
+  var dataKey: String
   
-  var event: MouseEvent[_, NativeMouseEvent] = js.native
+  var event: MouseEvent[js.Any, NativeMouseEvent]
 }
 object HeaderMouseEventHandlerParams {
   
   @scala.inline
-  def apply(columnData: js.Any, dataKey: String, event: MouseEvent[_, NativeMouseEvent]): HeaderMouseEventHandlerParams = {
+  def apply(columnData: js.Any, dataKey: String, event: MouseEvent[js.Any, NativeMouseEvent]): HeaderMouseEventHandlerParams = {
     val __obj = js.Dynamic.literal(columnData = columnData.asInstanceOf[js.Any], dataKey = dataKey.asInstanceOf[js.Any], event = event.asInstanceOf[js.Any])
     __obj.asInstanceOf[HeaderMouseEventHandlerParams]
   }
@@ -34,6 +32,6 @@ object HeaderMouseEventHandlerParams {
     def setDataKey(value: String): Self = StObject.set(x, "dataKey", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setEvent(value: MouseEvent[_, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
+    def setEvent(value: MouseEvent[js.Any, NativeMouseEvent]): Self = StObject.set(x, "event", value.asInstanceOf[js.Any])
   }
 }

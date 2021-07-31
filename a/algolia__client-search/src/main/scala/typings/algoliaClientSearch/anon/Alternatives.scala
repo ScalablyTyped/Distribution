@@ -2,16 +2,14 @@ package typings.algoliaClientSearch.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Alternatives extends StObject {
   
   /**
     * The explain query match alternatives.
     */
-  var alternatives: js.Array[Length] = js.native
+  var alternatives: js.Array[Length]
 }
 object Alternatives {
   

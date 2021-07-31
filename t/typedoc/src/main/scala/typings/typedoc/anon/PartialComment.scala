@@ -5,20 +5,18 @@ import typings.typedoc.schemaMod._ModelToObject
 import typings.typedoc.tagMod.CommentTag
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<typedoc.typedoc/dist/lib/serialization/schema.Comment> */
-@js.native
 trait PartialComment extends StObject {
   
-  var returns: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.native
+  var returns: js.UndefOr[ModelToObject[js.UndefOr[String]] | String] = js.undefined
   
-  var shortText: js.UndefOr[ModelToObject[String] | String] = js.native
+  var shortText: js.UndefOr[ModelToObject[String] | String] = js.undefined
   
-  var tags: js.UndefOr[ModelToObject[js.UndefOr[js.Array[CommentTag]]] | js.Array[CommentTag]] = js.native
+  var tags: js.UndefOr[ModelToObject[js.UndefOr[js.Array[CommentTag]]] | js.Array[CommentTag]] = js.undefined
   
-  var text: js.UndefOr[ModelToObject[String] | String] = js.native
+  var text: js.UndefOr[ModelToObject[String] | String] = js.undefined
 }
 object PartialComment {
   

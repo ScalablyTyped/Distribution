@@ -16,7 +16,6 @@ import typings.esfxTypeModel.distMod._IsSubsetOf
 import typings.esfxTypeModel.distMod._OneRest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object esfxTypeModelBooleans {
@@ -25,9 +24,10 @@ object esfxTypeModelBooleans {
   - typings.esfxTypeModel.distMod.SameType because Already inherited
   - typings.esfxTypeModel.distMod.IsSubtypeOf because Already inherited */ @js.native
   sealed trait `false`
-    extends IsNever[js.Any]
+    extends StObject
        with And[js.Any, js.Any]
        with IsAny[js.Any]
+       with IsNever[js.Any]
        with IsUnknown[js.Any]
        with Not[js.Any]
        with Or[js.Any, js.Any]
@@ -46,9 +46,10 @@ object esfxTypeModelBooleans {
   - typings.esfxTypeModel.distMod.SameType because Already inherited
   - typings.esfxTypeModel.distMod.IsSubtypeOf because Already inherited */ @js.native
   sealed trait `true`
-    extends IsNever[js.Any]
+    extends StObject
        with And[js.Any, js.Any]
        with IsAny[js.Any]
+       with IsNever[js.Any]
        with IsUnknown[js.Any]
        with Not[js.Any]
        with Or[js.Any, js.Any]

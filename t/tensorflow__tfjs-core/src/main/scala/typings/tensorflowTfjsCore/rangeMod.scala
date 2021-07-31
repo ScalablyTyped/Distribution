@@ -5,27 +5,26 @@ import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.float32
 import typings.tensorflowTfjsCore.tensorflowTfjsCoreStrings.int32
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rangeMod {
   
-  @JSImport("@tensorflow/tfjs-core/dist/ops/range", "range")
+  @JSImport("@tensorflow/tfjs-core/dist/ops/range", JSImport.Namespace)
   @js.native
-  def range(start: Double, stop: Double): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/range", "range")
-  @js.native
-  def range(start: Double, stop: Double, step: Double): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/range", "range")
-  @js.native
-  def range_float32(start: Double, stop: Double, step: js.UndefOr[scala.Nothing], dtype: float32): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/range", "range")
-  @js.native
-  def range_float32(start: Double, stop: Double, step: Double, dtype: float32): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/range", "range")
-  @js.native
-  def range_int32(start: Double, stop: Double, step: js.UndefOr[scala.Nothing], dtype: int32): Tensor1D = js.native
-  @JSImport("@tensorflow/tfjs-core/dist/ops/range", "range")
-  @js.native
-  def range_int32(start: Double, stop: Double, step: Double, dtype: int32): Tensor1D = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def range(start: Double, stop: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  @scala.inline
+  def range(start: Double, stop: Double, step: Double): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  
+  @scala.inline
+  def range_float32(start: Double, stop: Double, step: Double, dtype: float32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  @scala.inline
+  def range_float32(start: Double, stop: Double, step: Unit, dtype: float32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  
+  @scala.inline
+  def range_int32(start: Double, stop: Double, step: Double, dtype: int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
+  @scala.inline
+  def range_int32(start: Double, stop: Double, step: Unit, dtype: int32): Tensor1D = (^.asInstanceOf[js.Dynamic].applyDynamic("range")(start.asInstanceOf[js.Any], stop.asInstanceOf[js.Any], step.asInstanceOf[js.Any], dtype.asInstanceOf[js.Any])).asInstanceOf[Tensor1D]
 }

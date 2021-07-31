@@ -6,10 +6,13 @@ import typings.classValidator.validationMetadataMod.ValidationMetadata
 import typings.classValidator.validationSchemaMod.ValidationSchema
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataStorageMod {
+  
+  @JSImport("class-validator/types/metadata/MetadataStorage", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("class-validator/types/metadata/MetadataStorage", "MetadataStorage")
   @js.native
@@ -53,7 +56,6 @@ object metadataStorageMod {
     var validationMetadatas: js.Any = js.native
   }
   
-  @JSImport("class-validator/types/metadata/MetadataStorage", "getMetadataStorage")
-  @js.native
-  def getMetadataStorage(): MetadataStorage = js.native
+  @scala.inline
+  def getMetadataStorage(): MetadataStorage = ^.asInstanceOf[js.Dynamic].applyDynamic("getMetadataStorage")().asInstanceOf[MetadataStorage]
 }

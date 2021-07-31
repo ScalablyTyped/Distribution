@@ -7,7 +7,6 @@ import typings.ol.projMod.ProjectionLike
 import typings.ol.projMod.TransformFunction
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geometryMod {
@@ -81,9 +80,9 @@ object geometryMod {
       * coordinates in place.
       */
     def scale(sx: Double): Unit = js.native
-    def scale(sx: Double, opt_sy: js.UndefOr[scala.Nothing], opt_anchor: Coordinate): Unit = js.native
     def scale(sx: Double, opt_sy: Double): Unit = js.native
     def scale(sx: Double, opt_sy: Double, opt_anchor: Coordinate): Unit = js.native
+    def scale(sx: Double, opt_sy: Unit, opt_anchor: Coordinate): Unit = js.native
     
     var simplifiedGeometryMaxMinSquaredTolerance: Double = js.native
     

@@ -2,52 +2,43 @@ package typings.html5History
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("html5-history", "getCurrentIndex")
+  @JSImport("html5-history", JSImport.Namespace)
   @js.native
-  def getCurrentIndex(): Double = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("html5-history", "getHash")
-  @js.native
-  def getHash(doc: js.Any): js.Any = js.native
+  @scala.inline
+  def getCurrentIndex(): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("getCurrentIndex")().asInstanceOf[Double]
   
-  @JSImport("html5-history", "getState")
-  @js.native
-  def getState(): js.Any = js.native
-  @JSImport("html5-history", "getState")
-  @js.native
-  def getState(friendly: js.UndefOr[scala.Nothing], create: js.Any): js.Any = js.native
-  @JSImport("html5-history", "getState")
-  @js.native
-  def getState(friendly: js.Any): js.Any = js.native
-  @JSImport("html5-history", "getState")
-  @js.native
-  def getState(friendly: js.Any, create: js.Any): js.Any = js.native
+  @scala.inline
+  def getHash(doc: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getHash")(doc.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("html5-history", "getStateByIndex")
-  @js.native
-  def getStateByIndex(index: Double): js.Any = js.native
+  @scala.inline
+  def getState(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")().asInstanceOf[js.Any]
+  @scala.inline
+  def getState(friendly: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getState")(friendly.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def getState(friendly: js.Any, create: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(friendly.asInstanceOf[js.Any], create.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+  @scala.inline
+  def getState(friendly: Unit, create: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("getState")(friendly.asInstanceOf[js.Any], create.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("html5-history", "init")
-  @js.native
-  def init(): Boolean = js.native
-  @JSImport("html5-history", "init")
-  @js.native
-  def init(options: js.Any): Boolean = js.native
+  @scala.inline
+  def getStateByIndex(index: Double): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("getStateByIndex")(index.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("html5-history", "normalizeHash")
-  @js.native
-  def normalizeHash(hash: js.Any): js.Any = js.native
+  @scala.inline
+  def init(): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")().asInstanceOf[Boolean]
+  @scala.inline
+  def init(options: js.Any): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("init")(options.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @JSImport("html5-history", "setHash")
-  @js.native
-  def setHash(hash: js.Any, queue: js.Any): Boolean = js.native
+  @scala.inline
+  def normalizeHash(hash: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("normalizeHash")(hash.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("html5-history", "unescapeHash")
-  @js.native
-  def unescapeHash(hash: js.Any): js.Any = js.native
+  @scala.inline
+  def setHash(hash: js.Any, queue: js.Any): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("setHash")(hash.asInstanceOf[js.Any], queue.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+  
+  @scala.inline
+  def unescapeHash(hash: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("unescapeHash")(hash.asInstanceOf[js.Any]).asInstanceOf[js.Any]
 }

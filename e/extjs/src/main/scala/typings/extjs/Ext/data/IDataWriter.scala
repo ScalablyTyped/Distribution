@@ -3,14 +3,14 @@ package typings.extjs.Ext.data
 import typings.extjs.Ext.IBase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDataWriter extends IBase {
+trait IDataWriter
+  extends StObject
+     with IBase {
   
   /** [Config Option] (String) */
-  var dateFormat: js.UndefOr[String] = js.native
+  var dateFormat: js.UndefOr[String] = js.undefined
   
   /** [Method] Formats the data for each record before sending it to the server
     * @param record Ext.data.Model The record that we are writing to the server.
@@ -18,23 +18,23 @@ trait IDataWriter extends IBase {
     * @returns Object An object literal of name/value keys to be written to the server. By default this method returns the data property on the record.
     */
   var getRecordData: js.UndefOr[
-    js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], _]
-  ] = js.native
+    js.Function2[/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation], js.Any]
+  ] = js.undefined
   
   /** [Config Option] (String) */
-  var nameProperty: js.UndefOr[String] = js.native
+  var nameProperty: js.UndefOr[String] = js.undefined
   
   /** [Method] Prepares a Proxy s Ext data Request object
     * @param request Ext.data.Request The request object
     * @returns Ext.data.Request The modified request object
     */
-  var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.native
+  var write: js.UndefOr[js.Function1[/* request */ js.UndefOr[IRequest], IRequest]] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var writeAllFields: js.UndefOr[Boolean] = js.native
+  var writeAllFields: js.UndefOr[Boolean] = js.undefined
   
   /** [Config Option] (Boolean) */
-  var writeRecordId: js.UndefOr[Boolean] = js.native
+  var writeRecordId: js.UndefOr[Boolean] = js.undefined
 }
 object IDataWriter {
   
@@ -54,7 +54,7 @@ object IDataWriter {
     def setDateFormatUndefined: Self = StObject.set(x, "dateFormat", js.undefined)
     
     @scala.inline
-    def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => _): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
+    def setGetRecordData(value: (/* record */ js.UndefOr[IModel], /* operation */ js.UndefOr[IOperation]) => js.Any): Self = StObject.set(x, "getRecordData", js.Any.fromFunction2(value))
     
     @scala.inline
     def setGetRecordDataUndefined: Self = StObject.set(x, "getRecordData", js.undefined)

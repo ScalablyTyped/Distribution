@@ -5,57 +5,40 @@ import typings.framebus.typesMod.FramebusSubscriberArg
 import typings.std.MessageEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dispatchMod {
   
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
+  @JSImport("framebus/dist/lib/dispatch", JSImport.Namespace)
   @js.native
-  def dispatch(origin: String, event: String): Unit = js.native
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
-  @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def dispatch(origin: String, event: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dispatch(origin: String, event: String, data: Unit, reply: Unit, e: MessageEvent[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dispatch(origin: String, event: String, data: Unit, reply: FramebusSubscribeHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def dispatch(
     origin: String,
     event: String,
-    data: js.UndefOr[scala.Nothing],
-    reply: js.UndefOr[scala.Nothing],
-    e: MessageEvent[_]
-  ): Unit = js.native
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
-  @js.native
-  def dispatch(origin: String, event: String, data: js.UndefOr[scala.Nothing], reply: FramebusSubscribeHandler): Unit = js.native
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
-  @js.native
-  def dispatch(
-    origin: String,
-    event: String,
-    data: js.UndefOr[scala.Nothing],
+    data: Unit,
     reply: FramebusSubscribeHandler,
-    e: MessageEvent[_]
-  ): Unit = js.native
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
-  @js.native
-  def dispatch(origin: String, event: String, data: FramebusSubscriberArg): Unit = js.native
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
-  @js.native
-  def dispatch(
-    origin: String,
-    event: String,
-    data: FramebusSubscriberArg,
-    reply: js.UndefOr[scala.Nothing],
-    e: MessageEvent[_]
-  ): Unit = js.native
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
-  @js.native
-  def dispatch(origin: String, event: String, data: FramebusSubscriberArg, reply: FramebusSubscribeHandler): Unit = js.native
-  @JSImport("framebus/dist/lib/dispatch", "dispatch")
-  @js.native
+    e: MessageEvent[js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dispatch(origin: String, event: String, data: FramebusSubscriberArg): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dispatch(origin: String, event: String, data: FramebusSubscriberArg, reply: Unit, e: MessageEvent[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def dispatch(origin: String, event: String, data: FramebusSubscriberArg, reply: FramebusSubscribeHandler): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def dispatch(
     origin: String,
     event: String,
     data: FramebusSubscriberArg,
     reply: FramebusSubscribeHandler,
-    e: MessageEvent[_]
-  ): Unit = js.native
+    e: MessageEvent[js.Any]
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("dispatch")(origin.asInstanceOf[js.Any], event.asInstanceOf[js.Any], data.asInstanceOf[js.Any], reply.asInstanceOf[js.Any], e.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

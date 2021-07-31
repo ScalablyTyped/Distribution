@@ -3,17 +3,15 @@ package typings.maximMazurokGapiClientHealthcare.gapi.client.healthcare
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Message extends StObject {
   
   /** Output only. The datetime when the message was created. Set by the server. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Raw message bytes. */
-  var data: js.UndefOr[String] = js.native
+  var data: js.UndefOr[String] = js.undefined
   
   /**
     * User-supplied key-value pairs used to organize HL7v2 stores. Label keys must be between 1 and 63 characters long, have a UTF-8 encoding of maximum 128 bytes, and must conform to the
@@ -23,26 +21,26 @@ trait Message extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message & TopLevel[js.Any]
+  ] = js.undefined
   
   /** The message type for this message. MSH-9.1. */
-  var messageType: js.UndefOr[String] = js.native
+  var messageType: js.UndefOr[String] = js.undefined
   
   /** Resource name of the Message, of the form `projects/{project_id}/datasets/{dataset_id}/hl7V2Stores/{hl7_v2_store_id}/messages/{message_id}`. Assigned by the server. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** Output only. The parsed version of the raw message data. */
-  var parsedData: js.UndefOr[ParsedData] = js.native
+  var parsedData: js.UndefOr[ParsedData] = js.undefined
   
   /** All patient IDs listed in the PID-2, PID-3, and PID-4 segments of this message. */
-  var patientIds: js.UndefOr[js.Array[PatientId]] = js.native
+  var patientIds: js.UndefOr[js.Array[PatientId]] = js.undefined
   
   /** The hospital that this message came from. MSH-4. */
-  var sendFacility: js.UndefOr[String] = js.native
+  var sendFacility: js.UndefOr[String] = js.undefined
   
   /** The datetime the sending application sent this message. MSH-7. */
-  var sendTime: js.UndefOr[String] = js.native
+  var sendTime: js.UndefOr[String] = js.undefined
 }
 object Message {
   
@@ -71,7 +69,7 @@ object Message {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientHealthcare.maximMazurokGapiClientHealthcareStrings.Message & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline

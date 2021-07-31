@@ -5,29 +5,27 @@ import typings.yandexMaps.yandexMapsStrings.masstransit
 import typings.yandexMaps.yandexMapsStrings.pedestrian
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMultiRouteParams extends StObject {
   
-  var avoidTrafficJams: js.UndefOr[Boolean] = js.native
+  var avoidTrafficJams: js.UndefOr[Boolean] = js.undefined
   
-  var boundedBy: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.native
+  var boundedBy: js.UndefOr[js.Array[js.Array[Double]] | Null] = js.undefined
   
-  var requestSendInterval: js.UndefOr[String | Double] = js.native
+  var requestSendInterval: js.UndefOr[String | Double] = js.undefined
   
-  var results: js.UndefOr[Double] = js.native
+  var results: js.UndefOr[Double] = js.undefined
   
-  var reverseGeocoding: js.UndefOr[Boolean] = js.native
+  var reverseGeocoding: js.UndefOr[Boolean] = js.undefined
   
-  var routingMode: js.UndefOr[auto | masstransit | pedestrian] = js.native
+  var routingMode: js.UndefOr[auto | masstransit | pedestrian] = js.undefined
   
-  var searchCoordOrder: js.UndefOr[String] = js.native
+  var searchCoordOrder: js.UndefOr[String] = js.undefined
   
-  var strictBounds: js.UndefOr[Boolean] = js.native
+  var strictBounds: js.UndefOr[Boolean] = js.undefined
   
-  var viaIndexes: js.UndefOr[js.Array[Double]] = js.native
+  var viaIndexes: js.UndefOr[js.Array[Double]] = js.undefined
 }
 object IMultiRouteParams {
   

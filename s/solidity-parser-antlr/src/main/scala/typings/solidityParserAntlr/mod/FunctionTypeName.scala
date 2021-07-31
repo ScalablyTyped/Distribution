@@ -2,25 +2,24 @@ package typings.solidityParserAntlr.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-/* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
-- typings.solidityParserAntlr.mod.ASTNode because Already inherited */ @js.native
 trait FunctionTypeName
-  extends TypeName
-     with BaseASTNode {
+  extends StObject
+     with BaseASTNode
+     with ASTNode
+     with TypeName {
   
-  var parameterTypes: js.Array[TypeName] = js.native
+  var parameterTypes: js.Array[TypeName]
   
-  var returnTypes: js.Array[TypeName] = js.native
+  var returnTypes: js.Array[TypeName]
   
-  var stateMutability: String = js.native
+  var stateMutability: String
   
   @JSName("type")
-  var type_FunctionTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName = js.native
+  var type_FunctionTypeName: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName
   
-  var visibility: String = js.native
+  var visibility: String
 }
 object FunctionTypeName {
   
@@ -29,11 +28,10 @@ object FunctionTypeName {
     parameterTypes: js.Array[TypeName],
     returnTypes: js.Array[TypeName],
     stateMutability: String,
-    `type`: typings.solidityParserAntlr.solidityParserAntlrStrings.FunctionTypeName,
     visibility: String
   ): FunctionTypeName = {
     val __obj = js.Dynamic.literal(parameterTypes = parameterTypes.asInstanceOf[js.Any], returnTypes = returnTypes.asInstanceOf[js.Any], stateMutability = stateMutability.asInstanceOf[js.Any], visibility = visibility.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("FunctionTypeName")
     __obj.asInstanceOf[FunctionTypeName]
   }
   

@@ -2,18 +2,16 @@ package typings.materialUiCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<{  duration :number | string,   easing :string,   delay :number | string}> */
-@js.native
 trait Partialdurationnumberstri extends StObject {
   
-  var delay: js.UndefOr[Double | String] = js.native
+  var delay: js.UndefOr[Double | String] = js.undefined
   
-  var duration: js.UndefOr[Double | String] = js.native
+  var duration: js.UndefOr[Double | String] = js.undefined
   
-  var easing: js.UndefOr[String] = js.native
+  var easing: js.UndefOr[String] = js.undefined
 }
 object Partialdurationnumberstri {
   

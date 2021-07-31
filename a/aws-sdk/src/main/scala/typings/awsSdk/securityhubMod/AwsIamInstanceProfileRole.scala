@@ -2,41 +2,39 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AwsIamInstanceProfileRole extends StObject {
   
   /**
     * The ARN of the role.
     */
-  var Arn: js.UndefOr[NonEmptyString] = js.native
+  var Arn: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The policy that grants an entity permission to assume the role.
     */
-  var AssumeRolePolicyDocument: js.UndefOr[AwsIamRoleAssumeRolePolicyDocument] = js.native
+  var AssumeRolePolicyDocument: js.UndefOr[AwsIamRoleAssumeRolePolicyDocument] = js.undefined
   
   /**
     * Indicates when the role was created. Uses the date-time format specified in RFC 3339 section 5.6, Internet Date/Time Format. The value cannot contain spaces. For example, 2020-03-22T13:22:13.933Z.
     */
-  var CreateDate: js.UndefOr[NonEmptyString] = js.native
+  var CreateDate: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The path to the role.
     */
-  var Path: js.UndefOr[NonEmptyString] = js.native
+  var Path: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The identifier of the role.
     */
-  var RoleId: js.UndefOr[NonEmptyString] = js.native
+  var RoleId: js.UndefOr[NonEmptyString] = js.undefined
   
   /**
     * The name of the role.
     */
-  var RoleName: js.UndefOr[NonEmptyString] = js.native
+  var RoleName: js.UndefOr[NonEmptyString] = js.undefined
 }
 object AwsIamInstanceProfileRole {
   

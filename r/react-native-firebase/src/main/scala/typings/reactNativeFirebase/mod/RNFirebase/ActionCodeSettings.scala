@@ -4,19 +4,17 @@ import typings.reactNativeFirebase.anon.BundleId
 import typings.reactNativeFirebase.anon.InstallApp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionCodeSettings extends StObject {
   
-  var android: InstallApp = js.native
+  var android: InstallApp
   
-  var handleCodeInApp: js.UndefOr[Boolean] = js.native
+  var handleCodeInApp: js.UndefOr[Boolean] = js.undefined
   
-  var iOS: BundleId = js.native
+  var iOS: BundleId
   
-  var url: String = js.native
+  var url: String
 }
 object ActionCodeSettings {
   

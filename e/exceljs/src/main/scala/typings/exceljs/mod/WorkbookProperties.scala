@@ -2,16 +2,14 @@ package typings.exceljs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkbookProperties extends StObject {
   
   /**
   	 * Set workbook dates to 1904 date system
   	 */
-  var date1904: Boolean = js.native
+  var date1904: Boolean
 }
 object WorkbookProperties {
   

@@ -2,15 +2,13 @@ package typings.rabbitJs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait CorrelationId extends StObject {
     
-    var correlationId: Double = js.native
+    var correlationId: Double
   }
   object CorrelationId {
     

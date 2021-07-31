@@ -12,23 +12,24 @@ import typings.relayRuntime.relayRuntimeTypesMod.DisposeFn
 import typings.relayRuntime.relayRuntimeTypesMod.OperationType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object useLoadMoreFunctionMod {
   
-  @JSImport("react-relay/lib/relay-experimental/useLoadMoreFunction", "getConnectionState")
+  @JSImport("react-relay/lib/relay-experimental/useLoadMoreFunction", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def getConnectionState(
     direction: Direction,
     fragmentNode: ReaderFragment,
     fragmentData: js.Any,
     connectionPathInFragmentData: js.Array[String | Double]
-  ): Cursor = js.native
+  ): Cursor = (^.asInstanceOf[js.Dynamic].applyDynamic("getConnectionState")(direction.asInstanceOf[js.Any], fragmentNode.asInstanceOf[js.Any], fragmentData.asInstanceOf[js.Any], connectionPathInFragmentData.asInstanceOf[js.Any])).asInstanceOf[Cursor]
   
-  @JSImport("react-relay/lib/relay-experimental/useLoadMoreFunction", "useLoadMoreFunction")
-  @js.native
-  def useLoadMoreFunction[TQuery /* <: OperationType */](args: UseLoadMoreFunctionArgs): js.Tuple3[LoadMoreFn[TQuery], Boolean, DisposeFn] = js.native
+  @scala.inline
+  def useLoadMoreFunction[TQuery /* <: OperationType */](args: UseLoadMoreFunctionArgs): js.Tuple3[LoadMoreFn[TQuery], Boolean, DisposeFn] = ^.asInstanceOf[js.Dynamic].applyDynamic("useLoadMoreFunction")(args.asInstanceOf[js.Any]).asInstanceOf[js.Tuple3[LoadMoreFn[TQuery], Boolean, DisposeFn]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.reactRelay.reactRelayStrings.forward
@@ -46,32 +47,31 @@ object useLoadMoreFunctionMod {
   
   type LoadMoreFn[TQuery /* <: OperationType */] = js.Function2[/* count */ Double, /* options */ js.UndefOr[OnComplete[TQuery]], Disposable]
   
-  @js.native
   trait UseLoadMoreFunctionArgs extends StObject {
     
-    var componentDisplayName: String = js.native
+    var componentDisplayName: String
     
-    var connectionPathInFragmentData: js.Array[String | Double] = js.native
+    var connectionPathInFragmentData: js.Array[String | Double]
     
-    var direction: Direction = js.native
+    var direction: Direction
     
-    var fragmentData: js.Any = js.native
+    var fragmentData: js.Any
     
-    var fragmentIdentifier: String = js.native
+    var fragmentIdentifier: String
     
-    var fragmentNode: ReaderFragment = js.native
+    var fragmentNode: ReaderFragment
     
-    var fragmentRef: js.Any = js.native
+    var fragmentRef: js.Any
     
-    var identifierField: js.UndefOr[String | Null] = js.native
+    var identifierField: js.UndefOr[String | Null] = js.undefined
     
-    var observer: Observer[GraphQLResponse] = js.native
+    var observer: Observer[GraphQLResponse]
     
-    def onReset(): Unit = js.native
+    def onReset(): Unit
     
-    var paginationMetadata: ReaderPaginationMetadata = js.native
+    var paginationMetadata: ReaderPaginationMetadata
     
-    var paginationRequest: ConcreteRequest = js.native
+    var paginationRequest: ConcreteRequest
   }
   object UseLoadMoreFunctionArgs {
     

@@ -4,15 +4,15 @@ import typings.breeze.breeze.core.EnumSymbol
 import typings.breeze.breeze.core.IEnum
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait FetchStrategy extends IEnum {
+trait FetchStrategy
+  extends StObject
+     with IEnum {
   
-  var FromLocalCache: FetchStrategySymbol = js.native
+  var FromLocalCache: FetchStrategySymbol
   
-  var FromServer: FetchStrategySymbol = js.native
+  var FromServer: FetchStrategySymbol
 }
 object FetchStrategy {
   

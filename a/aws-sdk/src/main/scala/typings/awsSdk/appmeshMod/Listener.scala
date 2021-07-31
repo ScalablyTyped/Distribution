@@ -2,41 +2,39 @@ package typings.awsSdk.appmeshMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Listener extends StObject {
   
   /**
     * The connection pool information for the listener.
     */
-  var connectionPool: js.UndefOr[VirtualNodeConnectionPool] = js.native
+  var connectionPool: js.UndefOr[VirtualNodeConnectionPool] = js.undefined
   
   /**
     * The health check information for the listener.
     */
-  var healthCheck: js.UndefOr[HealthCheckPolicy] = js.native
+  var healthCheck: js.UndefOr[HealthCheckPolicy] = js.undefined
   
   /**
     * The outlier detection information for the listener.
     */
-  var outlierDetection: js.UndefOr[OutlierDetection] = js.native
+  var outlierDetection: js.UndefOr[OutlierDetection] = js.undefined
   
   /**
     * The port mapping information for the listener.
     */
-  var portMapping: PortMapping = js.native
+  var portMapping: PortMapping
   
   /**
     * An object that represents timeouts for different protocols.
     */
-  var timeout: js.UndefOr[ListenerTimeout] = js.native
+  var timeout: js.UndefOr[ListenerTimeout] = js.undefined
   
   /**
     * A reference to an object that represents the Transport Layer Security (TLS) properties for a listener.
     */
-  var tls: js.UndefOr[ListenerTls] = js.native
+  var tls: js.UndefOr[ListenerTls] = js.undefined
 }
 object Listener {
   

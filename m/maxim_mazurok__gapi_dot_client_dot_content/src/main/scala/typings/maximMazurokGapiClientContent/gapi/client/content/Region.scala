@@ -2,32 +2,30 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Region extends StObject {
   
   /** The display name of the region. */
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   /** A list of geotargets that defines the region area. */
-  var geotargetArea: js.UndefOr[RegionGeoTargetArea] = js.native
+  var geotargetArea: js.UndefOr[RegionGeoTargetArea] = js.undefined
   
   /** Output only. Immutable. Merchant that owns the region. */
-  var merchantId: js.UndefOr[String] = js.native
+  var merchantId: js.UndefOr[String] = js.undefined
   
   /** A list of postal codes that defines the region area. */
-  var postalCodeArea: js.UndefOr[RegionPostalCodeArea] = js.native
+  var postalCodeArea: js.UndefOr[RegionPostalCodeArea] = js.undefined
   
   /** Output only. Immutable. The ID uniquely identifying each region. */
-  var regionId: js.UndefOr[String] = js.native
+  var regionId: js.UndefOr[String] = js.undefined
   
   /** Output only. Indicates if the region is eligible to use in the Regional Inventory configuration. */
-  var regionalInventoryEligible: js.UndefOr[Boolean] = js.native
+  var regionalInventoryEligible: js.UndefOr[Boolean] = js.undefined
   
   /** Output only. Indicates if the region is eligible to use in the Shipping Services configuration. */
-  var shippingEligible: js.UndefOr[Boolean] = js.native
+  var shippingEligible: js.UndefOr[Boolean] = js.undefined
 }
 object Region {
   

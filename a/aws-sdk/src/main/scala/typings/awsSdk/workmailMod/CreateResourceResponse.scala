@@ -2,16 +2,14 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateResourceResponse extends StObject {
   
   /**
     * The identifier of the new resource.
     */
-  var ResourceId: js.UndefOr[typings.awsSdk.workmailMod.ResourceId] = js.native
+  var ResourceId: js.UndefOr[typings.awsSdk.workmailMod.ResourceId] = js.undefined
 }
 object CreateResourceResponse {
   

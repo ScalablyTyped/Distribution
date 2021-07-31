@@ -4,30 +4,30 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** allows locking the input on components. */
-@js.native
-trait XBoundControl extends XInterface {
+trait XBoundControl
+  extends StObject
+     with XInterface {
   
   /**
     * determines whether the input is currently locked or not.
     * @returns `TRUE` when it is currently locked, otherwise `FALSE` .
     */
-  var Lock: Boolean = js.native
+  var Lock: Boolean
   
   /**
     * determines whether the input is currently locked or not.
     * @returns `TRUE` when it is currently locked, otherwise `FALSE` .
     */
-  def getLock(): Boolean = js.native
+  def getLock(): Boolean
   
   /**
     * is used for altering the current lock state of the component.
     * @param bLock the new lock state.
     */
-  def setLock(bLock: Boolean): Unit = js.native
+  def setLock(bLock: Boolean): Unit
 }
 object XBoundControl {
   

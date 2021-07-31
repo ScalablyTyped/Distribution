@@ -2,185 +2,183 @@ package typings.std
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GlobalEventHandlersEventMap extends StObject {
   
-  var abort: UIEvent = js.native
+  var abort: UIEvent
   
-  var animationcancel: AnimationEvent = js.native
+  var animationcancel: AnimationEvent
   
-  var animationend: AnimationEvent = js.native
+  var animationend: AnimationEvent
   
-  var animationiteration: AnimationEvent = js.native
+  var animationiteration: AnimationEvent
   
-  var animationstart: AnimationEvent = js.native
+  var animationstart: AnimationEvent
   
-  var auxclick: MouseEvent = js.native
+  var auxclick: MouseEvent
   
-  var blur: FocusEvent = js.native
+  var blur: FocusEvent
   
-  var cancel: Event = js.native
+  var cancel: Event
   
-  var canplay: Event = js.native
+  var canplay: Event
   
-  var canplaythrough: Event = js.native
+  var canplaythrough: Event
   
-  var change: Event = js.native
+  var change: Event
   
-  var click: MouseEvent = js.native
+  var click: MouseEvent
   
-  var close: Event = js.native
+  var close: Event
   
-  var contextmenu: MouseEvent = js.native
+  var contextmenu: MouseEvent
   
-  var cuechange: Event = js.native
+  var cuechange: Event
   
-  var dblclick: MouseEvent = js.native
+  var dblclick: MouseEvent
   
-  var drag: DragEvent = js.native
+  var drag: DragEvent
   
-  var dragend: DragEvent = js.native
+  var dragend: DragEvent
   
-  var dragenter: DragEvent = js.native
+  var dragenter: DragEvent
   
-  var dragexit: Event = js.native
+  var dragexit: Event
   
-  var dragleave: DragEvent = js.native
+  var dragleave: DragEvent
   
-  var dragover: DragEvent = js.native
+  var dragover: DragEvent
   
-  var dragstart: DragEvent = js.native
+  var dragstart: DragEvent
   
-  var drop: DragEvent = js.native
+  var drop: DragEvent
   
-  var durationchange: Event = js.native
+  var durationchange: Event
   
-  var emptied: Event = js.native
+  var emptied: Event
   
-  var ended: Event = js.native
+  var ended: Event
   
-  var error: ErrorEvent = js.native
+  var error: ErrorEvent
   
-  var focus: FocusEvent = js.native
+  var focus: FocusEvent
   
-  var focusin: FocusEvent = js.native
+  var focusin: FocusEvent
   
-  var focusout: FocusEvent = js.native
+  var focusout: FocusEvent
   
-  var gotpointercapture: PointerEvent = js.native
+  var gotpointercapture: PointerEvent
   
-  var input: Event = js.native
+  var input: Event
   
-  var invalid: Event = js.native
+  var invalid: Event
   
-  var keydown: KeyboardEvent = js.native
+  var keydown: KeyboardEvent
   
-  var keypress: KeyboardEvent = js.native
+  var keypress: KeyboardEvent
   
-  var keyup: KeyboardEvent = js.native
+  var keyup: KeyboardEvent
   
-  var load: Event = js.native
+  var load: Event
   
-  var loadeddata: Event = js.native
+  var loadeddata: Event
   
-  var loadedmetadata: Event = js.native
+  var loadedmetadata: Event
   
-  var loadstart: Event = js.native
+  var loadstart: Event
   
-  var lostpointercapture: PointerEvent = js.native
+  var lostpointercapture: PointerEvent
   
-  var mousedown: MouseEvent = js.native
+  var mousedown: MouseEvent
   
-  var mouseenter: MouseEvent = js.native
+  var mouseenter: MouseEvent
   
-  var mouseleave: MouseEvent = js.native
+  var mouseleave: MouseEvent
   
-  var mousemove: MouseEvent = js.native
+  var mousemove: MouseEvent
   
-  var mouseout: MouseEvent = js.native
+  var mouseout: MouseEvent
   
-  var mouseover: MouseEvent = js.native
+  var mouseover: MouseEvent
   
-  var mouseup: MouseEvent = js.native
+  var mouseup: MouseEvent
   
-  var pause: Event = js.native
+  var pause: Event
   
-  var play: Event = js.native
+  var play: Event
   
-  var playing: Event = js.native
+  var playing: Event
   
-  var pointercancel: PointerEvent = js.native
+  var pointercancel: PointerEvent
   
-  var pointerdown: PointerEvent = js.native
+  var pointerdown: PointerEvent
   
-  var pointerenter: PointerEvent = js.native
+  var pointerenter: PointerEvent
   
-  var pointerleave: PointerEvent = js.native
+  var pointerleave: PointerEvent
   
-  var pointermove: PointerEvent = js.native
+  var pointermove: PointerEvent
   
-  var pointerout: PointerEvent = js.native
+  var pointerout: PointerEvent
   
-  var pointerover: PointerEvent = js.native
+  var pointerover: PointerEvent
   
-  var pointerup: PointerEvent = js.native
+  var pointerup: PointerEvent
   
-  var progress: ProgressEvent[EventTarget] = js.native
+  var progress: ProgressEvent[EventTarget]
   
-  var ratechange: Event = js.native
+  var ratechange: Event
   
-  var reset: Event = js.native
+  var reset: Event
   
-  var resize: UIEvent = js.native
+  var resize: UIEvent
   
-  var scroll: Event = js.native
+  var scroll: Event
   
-  var securitypolicyviolation: SecurityPolicyViolationEvent = js.native
+  var securitypolicyviolation: SecurityPolicyViolationEvent
   
-  var seeked: Event = js.native
+  var seeked: Event
   
-  var seeking: Event = js.native
+  var seeking: Event
   
-  var select: Event = js.native
+  var select: Event
   
-  var selectionchange: Event = js.native
+  var selectionchange: Event
   
-  var selectstart: Event = js.native
+  var selectstart: Event
   
-  var stalled: Event = js.native
+  var stalled: Event
   
-  var submit: Event = js.native
+  var submit: Event
   
-  var suspend: Event = js.native
+  var suspend: Event
   
-  var timeupdate: Event = js.native
+  var timeupdate: Event
   
-  var toggle: Event = js.native
+  var toggle: Event
   
-  var touchcancel: TouchEvent = js.native
+  var touchcancel: TouchEvent
   
-  var touchend: TouchEvent = js.native
+  var touchend: TouchEvent
   
-  var touchmove: TouchEvent = js.native
+  var touchmove: TouchEvent
   
-  var touchstart: TouchEvent = js.native
+  var touchstart: TouchEvent
   
-  var transitioncancel: TransitionEvent = js.native
+  var transitioncancel: TransitionEvent
   
-  var transitionend: TransitionEvent = js.native
+  var transitionend: TransitionEvent
   
-  var transitionrun: TransitionEvent = js.native
+  var transitionrun: TransitionEvent
   
-  var transitionstart: TransitionEvent = js.native
+  var transitionstart: TransitionEvent
   
-  var volumechange: Event = js.native
+  var volumechange: Event
   
-  var waiting: Event = js.native
+  var waiting: Event
   
-  var wheel: WheelEvent = js.native
+  var wheel: WheelEvent
 }
 object GlobalEventHandlersEventMap {
   

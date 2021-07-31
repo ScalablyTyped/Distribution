@@ -11,10 +11,13 @@ import typings.officeUiFabricReact.officeUiFabricReactStrings.r
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object colorsMod {
+  
+  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "HEX_REGEX")
   @js.native
@@ -64,101 +67,78 @@ object colorsMod {
   @js.native
   val RGBA_REGEX: RegExp = js.native
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "clamp")
-  @js.native
-  def clamp(value: Double, max: Double): Double = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "clamp")
-  @js.native
-  def clamp(value: Double, max: Double, min: Double): Double = js.native
+  @scala.inline
+  def clamp(value: Double, max: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any])).asInstanceOf[Double]
+  @scala.inline
+  def clamp(value: Double, max: Double, min: Double): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("clamp")(value.asInstanceOf[js.Any], max.asInstanceOf[js.Any], min.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "correctHSV")
-  @js.native
-  def correctHSV(color: IHSV): IHSV = js.native
+  @scala.inline
+  def correctHSV(color: IHSV): IHSV = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHSV")(color.asInstanceOf[js.Any]).asInstanceOf[IHSV]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "correctHex")
-  @js.native
-  def correctHex(hex: String): String = js.native
+  @scala.inline
+  def correctHex(hex: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("correctHex")(hex.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "correctRGB")
-  @js.native
-  def correctRGB(color: IRGB): IRGB = js.native
+  @scala.inline
+  def correctRGB(color: IRGB): IRGB = ^.asInstanceOf[js.Dynamic].applyDynamic("correctRGB")(color.asInstanceOf[js.Any]).asInstanceOf[IRGB]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "cssColor")
-  @js.native
-  def cssColor(): js.UndefOr[IRGB] = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "cssColor")
-  @js.native
-  def cssColor(color: String): js.UndefOr[IRGB] = js.native
+  @scala.inline
+  def cssColor(): js.UndefOr[IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")().asInstanceOf[js.UndefOr[IRGB]]
+  @scala.inline
+  def cssColor(color: String): js.UndefOr[IRGB] = ^.asInstanceOf[js.Dynamic].applyDynamic("cssColor")(color.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IRGB]]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "getColorFromHSV")
-  @js.native
-  def getColorFromHSV(hsv: IHSV): IColor = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "getColorFromHSV")
-  @js.native
-  def getColorFromHSV(hsv: IHSV, a: Double): IColor = js.native
+  @scala.inline
+  def getColorFromHSV(hsv: IHSV): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any]).asInstanceOf[IColor]
+  @scala.inline
+  def getColorFromHSV(hsv: IHSV, a: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromHSV")(hsv.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[IColor]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "getColorFromRGBA")
-  @js.native
-  def getColorFromRGBA(rgba: IRGB): IColor = js.native
+  @scala.inline
+  def getColorFromRGBA(rgba: IRGB): IColor = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromRGBA")(rgba.asInstanceOf[js.Any]).asInstanceOf[IColor]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "getColorFromString")
-  @js.native
-  def getColorFromString(inputColor: String): js.UndefOr[IColor] = js.native
+  @scala.inline
+  def getColorFromString(inputColor: String): js.UndefOr[IColor] = ^.asInstanceOf[js.Dynamic].applyDynamic("getColorFromString")(inputColor.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[IColor]]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "getFullColorString")
-  @js.native
-  def getFullColorString(color: IColor): String = js.native
+  @scala.inline
+  def getFullColorString(color: IColor): String = ^.asInstanceOf[js.Dynamic].applyDynamic("getFullColorString")(color.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "hsl2hsv")
-  @js.native
-  def hsl2hsv(h: Double, s: Double, l: Double): IHSV = js.native
+  @scala.inline
+  def hsl2hsv(h: Double, s: Double, l: Double): IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2hsv")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IHSV]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "hsl2rgb")
-  @js.native
-  def hsl2rgb(h: Double, s: Double, l: Double): IRGB = js.native
+  @scala.inline
+  def hsl2rgb(h: Double, s: Double, l: Double): IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsl2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], l.asInstanceOf[js.Any])).asInstanceOf[IRGB]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "hsv2hex")
-  @js.native
-  def hsv2hex(h: Double, s: Double, v: Double): String = js.native
+  @scala.inline
+  def hsv2hex(h: Double, s: Double, v: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hex")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "hsv2hsl")
-  @js.native
-  def hsv2hsl(h: Double, s: Double, v: Double): IHSL = js.native
+  @scala.inline
+  def hsv2hsl(h: Double, s: Double, v: Double): IHSL = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2hsl")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[IHSL]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "hsv2rgb")
-  @js.native
-  def hsv2rgb(h: Double, s: Double, v: Double): IRGB = js.native
+  @scala.inline
+  def hsv2rgb(h: Double, s: Double, v: Double): IRGB = (^.asInstanceOf[js.Dynamic].applyDynamic("hsv2rgb")(h.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[IRGB]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "rgb2hex")
-  @js.native
-  def rgb2hex(r: Double, g: Double, b: Double): String = js.native
+  @scala.inline
+  def rgb2hex(r: Double, g: Double, b: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hex")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "rgb2hsv")
-  @js.native
-  def rgb2hsv(r: Double, g: Double, b: Double): IHSV = js.native
+  @scala.inline
+  def rgb2hsv(r: Double, g: Double, b: Double): IHSV = (^.asInstanceOf[js.Dynamic].applyDynamic("rgb2hsv")(r.asInstanceOf[js.Any], g.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[IHSV]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "updateA")
-  @js.native
-  def updateA(color: IColor, a: Double): IColor = js.native
+  @scala.inline
+  def updateA(color: IColor, a: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateA")(color.asInstanceOf[js.Any], a.asInstanceOf[js.Any])).asInstanceOf[IColor]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "updateH")
-  @js.native
-  def updateH(color: IColor, h: Double): IColor = js.native
+  @scala.inline
+  def updateH(color: IColor, h: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateH")(color.asInstanceOf[js.Any], h.asInstanceOf[js.Any])).asInstanceOf[IColor]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "updateRGB")
-  @js.native
-  def updateRGB_a(color: IColor, component: a, value: Double): IColor = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "updateRGB")
-  @js.native
-  def updateRGB_b(color: IColor, component: b, value: Double): IColor = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "updateRGB")
-  @js.native
-  def updateRGB_g(color: IColor, component: g, value: Double): IColor = js.native
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "updateRGB")
-  @js.native
-  def updateRGB_r(color: IColor, component: r, value: Double): IColor = js.native
+  @scala.inline
+  def updateRGB_a(color: IColor, component: a, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
   
-  @JSImport("office-ui-fabric-react/lib/utilities/color/colors", "updateSV")
-  @js.native
-  def updateSV(color: IColor, s: Double, v: Double): IColor = js.native
+  @scala.inline
+  def updateRGB_b(color: IColor, component: b, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
+  
+  @scala.inline
+  def updateRGB_g(color: IColor, component: g, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
+  
+  @scala.inline
+  def updateRGB_r(color: IColor, component: r, value: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateRGB")(color.asInstanceOf[js.Any], component.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[IColor]
+  
+  @scala.inline
+  def updateSV(color: IColor, s: Double, v: Double): IColor = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSV")(color.asInstanceOf[js.Any], s.asInstanceOf[js.Any], v.asInstanceOf[js.Any])).asInstanceOf[IColor]
 }

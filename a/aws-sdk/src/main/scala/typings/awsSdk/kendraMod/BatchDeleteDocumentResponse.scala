@@ -2,16 +2,14 @@ package typings.awsSdk.kendraMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchDeleteDocumentResponse extends StObject {
   
   /**
     * A list of documents that could not be removed from the index. Each entry contains an error message that indicates why the document couldn't be removed from the index.
     */
-  var FailedDocuments: js.UndefOr[BatchDeleteDocumentResponseFailedDocuments] = js.native
+  var FailedDocuments: js.UndefOr[BatchDeleteDocumentResponseFailedDocuments] = js.undefined
 }
 object BatchDeleteDocumentResponse {
   

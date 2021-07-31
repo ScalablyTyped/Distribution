@@ -7,23 +7,21 @@ import typings.vexflow.anon.Firstx
 import typings.vexflow.anon.Leftshiftpx
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait StaveHairpin extends StObject {
   
-  def draw(): Boolean = js.native
+  def draw(): Boolean
   
-  def renderHairpin(params: Firstx): Unit = js.native
+  def renderHairpin(params: Firstx): Unit
   
-  def setContext(context: IRenderContext): StaveHairpin = js.native
+  def setContext(context: IRenderContext): StaveHairpin
   
-  def setNotes(notes: Firstnote): StaveHairpin = js.native
+  def setNotes(notes: Firstnote): StaveHairpin
   
-  def setPosition(position: Position): StaveHairpin = js.native
+  def setPosition(position: Position): StaveHairpin
   
-  def setRenderOptions(options: Leftshiftpx): StaveHairpin = js.native
+  def setRenderOptions(options: Leftshiftpx): StaveHairpin
 }
 object StaveHairpin {
   
@@ -38,6 +36,23 @@ object StaveHairpin {
   ): StaveHairpin = {
     val __obj = js.Dynamic.literal(draw = js.Any.fromFunction0(draw), renderHairpin = js.Any.fromFunction1(renderHairpin), setContext = js.Any.fromFunction1(setContext), setNotes = js.Any.fromFunction1(setNotes), setPosition = js.Any.fromFunction1(setPosition), setRenderOptions = js.Any.fromFunction1(setRenderOptions))
     __obj.asInstanceOf[StaveHairpin]
+  }
+  
+  @js.native
+  sealed trait `type` extends StObject
+  @JSGlobal("Vex.Flow.StaveHairpin.type")
+  @js.native
+  object `type` extends StObject {
+    
+    @js.native
+    sealed trait CRESC
+      extends StObject
+         with `type`
+    
+    @js.native
+    sealed trait DECRESC
+      extends StObject
+         with `type`
   }
   
   @scala.inline
@@ -60,18 +75,5 @@ object StaveHairpin {
     
     @scala.inline
     def setSetRenderOptions(value: Leftshiftpx => StaveHairpin): Self = StObject.set(x, "setRenderOptions", js.Any.fromFunction1(value))
-  }
-  
-  @js.native
-  sealed trait `type` extends StObject
-  @JSGlobal("Vex.Flow.StaveHairpin.type")
-  @js.native
-  object `type` extends StObject {
-    
-    @js.native
-    sealed trait CRESC extends `type`
-    
-    @js.native
-    sealed trait DECRESC extends `type`
   }
 }

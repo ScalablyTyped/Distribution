@@ -6,23 +6,83 @@ import typings.ldapjsClient.ldapjsClientStrings.delete
 import typings.ldapjsClient.ldapjsClientStrings.replace
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   @JSImport("ldapjs-client", JSImport.Namespace)
   @js.native
-  class ^ protected () extends LdapClient {
+  class ^ protected ()
+    extends StObject
+       with LdapClient {
     def this(options: ClientOptions) = this()
+    
+    /**
+      * Adds an entry to the LDAP server.
+      */
+    /* CompleteClass */
+    override def add(dn: String, entry: js.Object): js.Promise[js.Any] = js.native
+    
+    /**
+      * Performs a simple authentication against the server.
+      */
+    /* CompleteClass */
+    override def bind(dn: String, password: String): js.Promise[js.Any] = js.native
+    
+    /**
+      * Deletes an entry from the LDAP server.
+      */
+    /* CompleteClass */
+    override def del(dn: String): js.Promise[js.Any] = js.native
+    
+    /**
+      * Disconnect from the LDAP server and do not allow reconnection.
+      *
+      * If the client is instantiated with proper reconnection options, it's
+      * possible to initiate new requests after a call to unbind since the client
+      * will attempt to reconnect in order to fulfill the request.
+      *
+      * Calling destroy will prevent any further reconnection from occurring.
+      */
+    /* CompleteClass */
+    override def destroy(): js.Promise[Unit] = js.native
+    
+    /**
+      * Performs an LDAP modify against the server.
+      *
+      * @param dn the DN of the entry to modify.
+      * @param change update to perform (can be [Change]).
+      */
+    /* CompleteClass */
+    override def modify(dn: String, change: Change): js.Promise[js.Any] = js.native
+    
+    /**
+      * Performs an LDAP modifyDN against the server.
+      */
+    /* CompleteClass */
+    override def modifyDN(dn: String, newName: String): js.Promise[js.Any] = js.native
+    
+    /**
+      * Performs an LDAP search against the server.
+      *
+      * Note that the defaults for options are a 'base' search.
+      */
+    /* CompleteClass */
+    override def search(base: String, options: SearchOptions): js.Promise[js.Array[js.Any]] = js.native
+    
+    /**
+      * Unbinds this client from the LDAP server.
+      *
+      */
+    /* CompleteClass */
+    override def unbind(): js.Promise[js.Any] = js.native
   }
   
-  @js.native
   trait Change extends StObject {
     
-    var modification: StringDictionary[js.Any] = js.native
+    var modification: StringDictionary[js.Any]
     
-    var operation: add | delete | replace = js.native
+    var operation: add | delete | replace
   }
   object Change {
     
@@ -43,14 +103,13 @@ object mod {
     }
   }
   
-  @js.native
   trait ClientOptions extends StObject {
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
     
-    var tlsOptions: js.UndefOr[js.Object] = js.native
+    var tlsOptions: js.UndefOr[js.Object] = js.undefined
     
-    var url: String = js.native
+    var url: String
   }
   object ClientOptions {
     
@@ -80,23 +139,22 @@ object mod {
     }
   }
   
-  @js.native
   trait LdapClient extends StObject {
     
     /**
       * Adds an entry to the LDAP server.
       */
-    def add(dn: String, entry: js.Object): js.Promise[_] = js.native
+    def add(dn: String, entry: js.Object): js.Promise[js.Any]
     
     /**
       * Performs a simple authentication against the server.
       */
-    def bind(dn: String, password: String): js.Promise[_] = js.native
+    def bind(dn: String, password: String): js.Promise[js.Any]
     
     /**
       * Deletes an entry from the LDAP server.
       */
-    def del(dn: String): js.Promise[_] = js.native
+    def del(dn: String): js.Promise[js.Any]
     
     /**
       * Disconnect from the LDAP server and do not allow reconnection.
@@ -107,7 +165,7 @@ object mod {
       *
       * Calling destroy will prevent any further reconnection from occurring.
       */
-    def destroy(): js.Promise[Unit] = js.native
+    def destroy(): js.Promise[Unit]
     
     /**
       * Performs an LDAP modify against the server.
@@ -115,38 +173,38 @@ object mod {
       * @param dn the DN of the entry to modify.
       * @param change update to perform (can be [Change]).
       */
-    def modify(dn: String, change: Change): js.Promise[_] = js.native
+    def modify(dn: String, change: Change): js.Promise[js.Any]
     
     /**
       * Performs an LDAP modifyDN against the server.
       */
-    def modifyDN(dn: String, newName: String): js.Promise[_] = js.native
+    def modifyDN(dn: String, newName: String): js.Promise[js.Any]
     
     /**
       * Performs an LDAP search against the server.
       *
       * Note that the defaults for options are a 'base' search.
       */
-    def search(base: String, options: SearchOptions): js.Promise[js.Array[_]] = js.native
+    def search(base: String, options: SearchOptions): js.Promise[js.Array[js.Any]]
     
     /**
       * Unbinds this client from the LDAP server.
       *
       */
-    def unbind(): js.Promise[_] = js.native
+    def unbind(): js.Promise[js.Any]
   }
   object LdapClient {
     
     @scala.inline
     def apply(
-      add: (String, js.Object) => js.Promise[_],
-      bind: (String, String) => js.Promise[_],
-      del: String => js.Promise[_],
+      add: (String, js.Object) => js.Promise[js.Any],
+      bind: (String, String) => js.Promise[js.Any],
+      del: String => js.Promise[js.Any],
       destroy: () => js.Promise[Unit],
-      modify: (String, Change) => js.Promise[_],
-      modifyDN: (String, String) => js.Promise[_],
-      search: (String, SearchOptions) => js.Promise[js.Array[_]],
-      unbind: () => js.Promise[_]
+      modify: (String, Change) => js.Promise[js.Any],
+      modifyDN: (String, String) => js.Promise[js.Any],
+      search: (String, SearchOptions) => js.Promise[js.Array[js.Any]],
+      unbind: () => js.Promise[js.Any]
     ): LdapClient = {
       val __obj = js.Dynamic.literal(add = js.Any.fromFunction2(add), bind = js.Any.fromFunction2(bind), del = js.Any.fromFunction1(del), destroy = js.Any.fromFunction0(destroy), modify = js.Any.fromFunction2(modify), modifyDN = js.Any.fromFunction2(modifyDN), search = js.Any.fromFunction2(search), unbind = js.Any.fromFunction0(unbind))
       __obj.asInstanceOf[LdapClient]
@@ -156,45 +214,44 @@ object mod {
     implicit class LdapClientMutableBuilder[Self <: LdapClient] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdd(value: (String, js.Object) => js.Promise[_]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
+      def setAdd(value: (String, js.Object) => js.Promise[js.Any]): Self = StObject.set(x, "add", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setBind(value: (String, String) => js.Promise[_]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
+      def setBind(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "bind", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setDel(value: String => js.Promise[_]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
+      def setDel(value: String => js.Promise[js.Any]): Self = StObject.set(x, "del", js.Any.fromFunction1(value))
       
       @scala.inline
       def setDestroy(value: () => js.Promise[Unit]): Self = StObject.set(x, "destroy", js.Any.fromFunction0(value))
       
       @scala.inline
-      def setModify(value: (String, Change) => js.Promise[_]): Self = StObject.set(x, "modify", js.Any.fromFunction2(value))
+      def setModify(value: (String, Change) => js.Promise[js.Any]): Self = StObject.set(x, "modify", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setModifyDN(value: (String, String) => js.Promise[_]): Self = StObject.set(x, "modifyDN", js.Any.fromFunction2(value))
+      def setModifyDN(value: (String, String) => js.Promise[js.Any]): Self = StObject.set(x, "modifyDN", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setSearch(value: (String, SearchOptions) => js.Promise[js.Array[_]]): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
+      def setSearch(value: (String, SearchOptions) => js.Promise[js.Array[js.Any]]): Self = StObject.set(x, "search", js.Any.fromFunction2(value))
       
       @scala.inline
-      def setUnbind(value: () => js.Promise[_]): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
+      def setUnbind(value: () => js.Promise[js.Any]): Self = StObject.set(x, "unbind", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait SearchOptions extends StObject {
     
-    var attributes: js.UndefOr[js.Array[String]] = js.native
+    var attributes: js.UndefOr[js.Array[String]] = js.undefined
     
-    var filter: js.UndefOr[String] = js.native
+    var filter: js.UndefOr[String] = js.undefined
     
-    var scope: js.UndefOr[String] = js.native
+    var scope: js.UndefOr[String] = js.undefined
     
-    var sizeLimit: js.UndefOr[Double] = js.native
+    var sizeLimit: js.UndefOr[Double] = js.undefined
     
-    var timeLimit: js.UndefOr[Double] = js.native
+    var timeLimit: js.UndefOr[Double] = js.undefined
     
-    var typesOnly: js.UndefOr[Boolean] = js.native
+    var typesOnly: js.UndefOr[Boolean] = js.undefined
   }
   object SearchOptions {
     

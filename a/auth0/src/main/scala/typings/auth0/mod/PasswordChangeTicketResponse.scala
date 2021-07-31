@@ -2,13 +2,11 @@ package typings.auth0.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PasswordChangeTicketResponse extends StObject {
   
-  var ticket: String = js.native
+  var ticket: String
 }
 object PasswordChangeTicketResponse {
   

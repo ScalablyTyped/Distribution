@@ -4,17 +4,15 @@ import typings.smartFoxServer.SFS2X.Entities.MMOItem
 import typings.smartFoxServer.SFS2X.Entities.MMORoom
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IMMOITEM_VARIABLES_UPDATE extends StObject {
   
-  var changedVars: js.Array[String] = js.native
+  var changedVars: js.Array[String]
   
-  var mmoItem: MMOItem = js.native
+  var mmoItem: MMOItem
   
-  var room: MMORoom = js.native
+  var room: MMORoom
 }
 object IMMOITEM_VARIABLES_UPDATE {
   

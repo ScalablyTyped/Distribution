@@ -2,7 +2,6 @@ package typings.googleapis.fitnessV1Mod.fitnessV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -20,21 +19,20 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * updated versions of the same application/device can still be considered to
   * belong to the same data stream.
   */
-@js.native
 trait SchemaDataSource extends StObject {
   
   /**
     * Information about an application which feeds sensor data into the
     * platform.
     */
-  var application: js.UndefOr[SchemaApplication] = js.native
+  var application: js.UndefOr[SchemaApplication] = js.undefined
   
   /**
     * DO NOT POPULATE THIS FIELD. It is never populated in responses from the
     * platform, and is ignored in queries. It will be removed in a future
     * version entirely.
     */
-  var dataQualityStandard: js.UndefOr[js.Array[String]] = js.native
+  var dataQualityStandard: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * A unique identifier for the data stream produced by this data source. The
@@ -61,7 +59,7 @@ trait SchemaDataSource extends StObject {
     * Android client that did not create the data source. Only the data source
     * creator will see the developer project number in clear and normal form.
     */
-  var dataStreamId: js.UndefOr[String] = js.native
+  var dataStreamId: js.UndefOr[String] = js.undefined
   
   /**
     * The stream name uniquely identifies this particular data source among
@@ -70,30 +68,30 @@ trait SchemaDataSource extends StObject {
     * application exposes two streams for the same data type, or when a device
     * has two equivalent sensors.
     */
-  var dataStreamName: js.UndefOr[String] = js.native
+  var dataStreamName: js.UndefOr[String] = js.undefined
   
   /**
     * The data type defines the schema for a stream of data being collected by,
     * inserted into, or queried from the Fitness API.
     */
-  var dataType: js.UndefOr[SchemaDataType] = js.native
+  var dataType: js.UndefOr[SchemaDataType] = js.undefined
   
   /**
     * Representation of an integrated device (such as a phone or a wearable)
     * that can hold sensors.
     */
-  var device: js.UndefOr[SchemaDevice] = js.native
+  var device: js.UndefOr[SchemaDevice] = js.undefined
   
   /**
     * An end-user visible name for this data source.
     */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /**
     * A constant describing the type of this data source. Indicates whether
     * this data source produces raw or derived data.
     */
-  var `type`: js.UndefOr[String] = js.native
+  var `type`: js.UndefOr[String] = js.undefined
 }
 object SchemaDataSource {
   

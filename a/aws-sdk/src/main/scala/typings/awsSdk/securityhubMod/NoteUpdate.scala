@@ -2,21 +2,19 @@ package typings.awsSdk.securityhubMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait NoteUpdate extends StObject {
   
   /**
     * The updated note text.
     */
-  var Text: NonEmptyString = js.native
+  var Text: NonEmptyString
   
   /**
     * The principal that updated the note.
     */
-  var UpdatedBy: NonEmptyString = js.native
+  var UpdatedBy: NonEmptyString
 }
 object NoteUpdate {
   

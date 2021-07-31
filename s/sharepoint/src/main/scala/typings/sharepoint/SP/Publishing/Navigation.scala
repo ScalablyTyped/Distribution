@@ -11,7 +11,6 @@ import typings.sharepoint.SP.Taxonomy.TermSet
 import typings.sharepoint.SP.Taxonomy.TermStore
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Navigation {
@@ -23,13 +22,19 @@ object Navigation {
   object NavigationLinkType extends StObject {
     
     @js.native
-    sealed trait friendlyUrl extends NavigationLinkType
+    sealed trait friendlyUrl
+      extends StObject
+         with NavigationLinkType
     
     @js.native
-    sealed trait root extends NavigationLinkType
+    sealed trait root
+      extends StObject
+         with NavigationLinkType
     
     @js.native
-    sealed trait simpleLink extends NavigationLinkType
+    sealed trait simpleLink
+      extends StObject
+         with NavigationLinkType
   }
   
   @js.native
@@ -39,20 +44,30 @@ object Navigation {
   object StandardNavigationSource extends StObject {
     
     @js.native
-    sealed trait inheritFromParentWeb extends StandardNavigationSource
+    sealed trait inheritFromParentWeb
+      extends StObject
+         with StandardNavigationSource
     
     @js.native
-    sealed trait portalProvider extends StandardNavigationSource
+    sealed trait portalProvider
+      extends StObject
+         with StandardNavigationSource
     
     @js.native
-    sealed trait taxonomyProvider extends StandardNavigationSource
+    sealed trait taxonomyProvider
+      extends StObject
+         with StandardNavigationSource
     
     @js.native
-    sealed trait unknown extends StandardNavigationSource
+    sealed trait unknown
+      extends StObject
+         with StandardNavigationSource
   }
   
   @js.native
-  trait NavigationTerm extends NavigationTermSetItem {
+  trait NavigationTerm
+    extends StObject
+       with NavigationTermSetItem {
     
     def deleteObject(): Unit = js.native
     
@@ -120,7 +135,9 @@ object Navigation {
   type NavigationTermCollection = ClientObjectCollection[NavigationTerm]
   
   @js.native
-  trait NavigationTermProviderNameCollection extends ClientObjectCollection[String] {
+  trait NavigationTermProviderNameCollection
+    extends StObject
+       with ClientObjectCollection[String] {
     
     def Add(item: String): Unit = js.native
     
@@ -130,7 +147,9 @@ object Navigation {
   }
   
   @js.native
-  trait NavigationTermSet extends NavigationTermSetItem {
+  trait NavigationTermSet
+    extends StObject
+       with NavigationTermSetItem {
     
     def findTermForUrl(url: String): NavigationTerm = js.native
     
@@ -156,7 +175,9 @@ object Navigation {
   }
   
   @js.native
-  trait NavigationTermSetItem extends ClientObject {
+  trait NavigationTermSetItem
+    extends StObject
+       with ClientObject {
     
     def createTerm(termName: String, linkType: NavigationLinkType, termId: Guid): Term = js.native
     
@@ -186,7 +207,9 @@ object Navigation {
   }
   
   @js.native
-  trait NavigationTermSetView extends ClientObject {
+  trait NavigationTermSetView
+    extends StObject
+       with ClientObject {
     
     def getCopy(): NavigationTermSetView = js.native
     
@@ -216,7 +239,9 @@ object Navigation {
   }
   
   @js.native
-  trait StandardNavigationSettings extends ClientObject {
+  trait StandardNavigationSettings
+    extends StObject
+       with ClientObject {
     
     def get_source(): StandardNavigationSource = js.native
     
@@ -231,11 +256,12 @@ object Navigation {
     def set_termStoreId(value: Guid): Guid = js.native
   }
   
-  @js.native
   trait TaxonomyNavigation extends StObject
   
   @js.native
-  trait WebNavigationSettings extends ClientObject {
+  trait WebNavigationSettings
+    extends StObject
+       with ClientObject {
     
     def get_addNewPagesToNavigation(): Boolean = js.native
     

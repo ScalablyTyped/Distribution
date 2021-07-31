@@ -2,27 +2,25 @@ package typings.materializeCss.M
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: RemoveDifficultInheritance.summarizeChanges 
-- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentBase<ToastOptions> * / any */ @js.native
-trait Toast extends StObject {
+- Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ComponentBase<ToastOptions> * / any */ trait Toast extends StObject {
   
   /**
     * remove a specific toast
     */
-  def dismiss(): Unit = js.native
+  def dismiss(): Unit
   
   /**
     * Describes the current pan state of the Toast.
     */
-  var panning: Boolean = js.native
+  var panning: Boolean
   
   /**
     * The remaining amount of time in ms that the toast will stay before dismissal.
     */
-  var timeRemaining: Double = js.native
+  var timeRemaining: Double
 }
 object Toast {
   

@@ -2,10 +2,8 @@ package typings.googleCloudFirestore.FirebaseFirestore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GeoPoint extends StObject {
   
   /**
@@ -14,11 +12,11 @@ trait GeoPoint extends StObject {
     * @param other The `GeoPoint` to compare against.
     * @return true if this `GeoPoint` is equal to the provided one.
     */
-  def isEqual(other: GeoPoint): Boolean = js.native
+  def isEqual(other: GeoPoint): Boolean
   
-  val latitude: Double = js.native
+  val latitude: Double
   
-  val longitude: Double = js.native
+  val longitude: Double
 }
 object GeoPoint {
   

@@ -2,38 +2,36 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeetingTimeSuggestion extends StObject {
   
   // An array that shows the availability status of each attendee for this meeting suggestion.
-  var attendeeAvailability: js.UndefOr[NullableOption[js.Array[AttendeeAvailability]]] = js.native
+  var attendeeAvailability: js.UndefOr[NullableOption[js.Array[AttendeeAvailability]]] = js.undefined
   
   // A percentage that represents the likelhood of all the attendees attending.
-  var confidence: js.UndefOr[NullableOption[Double]] = js.native
+  var confidence: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // An array that specifies the name and geographic location of each meeting location for this meeting suggestion.
-  var locations: js.UndefOr[NullableOption[js.Array[Location]]] = js.native
+  var locations: js.UndefOr[NullableOption[js.Array[Location]]] = js.undefined
   
   // A time period suggested for the meeting.
-  var meetingTimeSlot: js.UndefOr[NullableOption[TimeSlot]] = js.native
+  var meetingTimeSlot: js.UndefOr[NullableOption[TimeSlot]] = js.undefined
   
   /**
     * Order of meeting time suggestions sorted by their computed confidence value from high to low, then by chronology if
     * there are suggestions with the same confidence.
     */
-  var order: js.UndefOr[NullableOption[Double]] = js.native
+  var order: js.UndefOr[NullableOption[Double]] = js.undefined
   
   /**
     * Availability of the meeting organizer for this meeting suggestion. The possible values are: free, tentative, busy, oof,
     * workingElsewhere, unknown.
     */
-  var organizerAvailability: js.UndefOr[NullableOption[FreeBusyStatus]] = js.native
+  var organizerAvailability: js.UndefOr[NullableOption[FreeBusyStatus]] = js.undefined
   
   // Reason for suggesting the meeting time.
-  var suggestionReason: js.UndefOr[NullableOption[String]] = js.native
+  var suggestionReason: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object MeetingTimeSuggestion {
   

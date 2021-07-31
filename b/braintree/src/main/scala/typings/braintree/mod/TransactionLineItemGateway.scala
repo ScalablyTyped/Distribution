@@ -2,13 +2,11 @@ package typings.braintree.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TransactionLineItemGateway extends StObject {
   
-  def findAll(transactionId: String): js.Promise[js.Array[TransactionLineItem]] = js.native
+  def findAll(transactionId: String): js.Promise[js.Array[TransactionLineItem]]
 }
 object TransactionLineItemGateway {
   

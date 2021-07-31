@@ -15,7 +15,6 @@ import typings.webgme.webgmeStrings.integer
 import typings.webgme.webgmeStrings.string
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object GmeCommon {
@@ -42,17 +41,18 @@ object GmeCommon {
   
   type DataObject = Node
   
-  @js.native
-  trait DefAssetObject extends DefObject {
+  trait DefAssetObject
+    extends StObject
+       with DefObject {
     
-    var `type`: asset = js.native
+    var `type`: asset
   }
   object DefAssetObject {
     
     @scala.inline
-    def apply(`type`: asset): DefAssetObject = {
+    def apply(): DefAssetObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("asset")
       __obj.asInstanceOf[DefAssetObject]
     }
     
@@ -64,17 +64,18 @@ object GmeCommon {
     }
   }
   
-  @js.native
-  trait DefBoolObject extends DefObject {
+  trait DefBoolObject
+    extends StObject
+       with DefObject {
     
-    var `type`: boolean = js.native
+    var `type`: boolean
   }
   object DefBoolObject {
     
     @scala.inline
-    def apply(`type`: boolean): DefBoolObject = {
+    def apply(): DefBoolObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[DefBoolObject]
     }
     
@@ -86,23 +87,24 @@ object GmeCommon {
     }
   }
   
-  @js.native
-  trait DefFloatObject extends DefObject {
+  trait DefFloatObject
+    extends StObject
+       with DefObject {
     
-    var enum: js.UndefOr[js.Array[Double]] = js.native
+    var `enum`: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var `type`: float = js.native
+    var `type`: float
   }
   object DefFloatObject {
     
     @scala.inline
-    def apply(`type`: float): DefFloatObject = {
+    def apply(): DefFloatObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("float")
       __obj.asInstanceOf[DefFloatObject]
     }
     
@@ -135,23 +137,24 @@ object GmeCommon {
     }
   }
   
-  @js.native
-  trait DefIntegerObject extends DefObject {
+  trait DefIntegerObject
+    extends StObject
+       with DefObject {
     
-    var enum: js.UndefOr[js.Array[Double]] = js.native
+    var `enum`: js.UndefOr[js.Array[Double]] = js.undefined
     
-    var max: js.UndefOr[Double] = js.native
+    var max: js.UndefOr[Double] = js.undefined
     
-    var min: js.UndefOr[Double] = js.native
+    var min: js.UndefOr[Double] = js.undefined
     
-    var `type`: integer = js.native
+    var `type`: integer
   }
   object DefIntegerObject {
     
     @scala.inline
-    def apply(`type`: integer): DefIntegerObject = {
+    def apply(): DefIntegerObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[DefIntegerObject]
     }
     
@@ -195,56 +198,57 @@ object GmeCommon {
   object DefObject {
     
     @scala.inline
-    def DefAssetObject(`type`: asset): typings.webgme.GmeCommon.DefAssetObject = {
+    def DefAssetObject(): typings.webgme.GmeCommon.DefAssetObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("asset")
       __obj.asInstanceOf[typings.webgme.GmeCommon.DefAssetObject]
     }
     
     @scala.inline
-    def DefBoolObject(`type`: boolean): typings.webgme.GmeCommon.DefBoolObject = {
+    def DefBoolObject(): typings.webgme.GmeCommon.DefBoolObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("boolean")
       __obj.asInstanceOf[typings.webgme.GmeCommon.DefBoolObject]
     }
     
     @scala.inline
-    def DefFloatObject(`type`: float): typings.webgme.GmeCommon.DefFloatObject = {
+    def DefFloatObject(): typings.webgme.GmeCommon.DefFloatObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("float")
       __obj.asInstanceOf[typings.webgme.GmeCommon.DefFloatObject]
     }
     
     @scala.inline
-    def DefIntegerObject(`type`: integer): typings.webgme.GmeCommon.DefIntegerObject = {
+    def DefIntegerObject(): typings.webgme.GmeCommon.DefIntegerObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("integer")
       __obj.asInstanceOf[typings.webgme.GmeCommon.DefIntegerObject]
     }
     
     @scala.inline
-    def DefStringObject(`type`: string): typings.webgme.GmeCommon.DefStringObject = {
+    def DefStringObject(): typings.webgme.GmeCommon.DefStringObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[typings.webgme.GmeCommon.DefStringObject]
     }
   }
   
-  @js.native
-  trait DefStringObject extends DefObject {
+  trait DefStringObject
+    extends StObject
+       with DefObject {
     
-    var enum: js.UndefOr[js.Array[String]] = js.native
+    var `enum`: js.UndefOr[js.Array[String]] = js.undefined
     
-    var regex: js.UndefOr[String] = js.native
+    var regex: js.UndefOr[String] = js.undefined
     
-    var `type`: string = js.native
+    var `type`: string
   }
   object DefStringObject {
     
     @scala.inline
-    def apply(`type`: string): DefStringObject = {
+    def apply(): DefStringObject = {
       val __obj = js.Dynamic.literal()
-      __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+      __obj.updateDynamic("type")("string")
       __obj.asInstanceOf[DefStringObject]
     }
     
@@ -292,10 +296,9 @@ object GmeCommon {
   
   type MemberId = Path
   
-  @js.native
   trait Message extends StObject {
     
-    var msg: String = js.native
+    var msg: String
   }
   object Message {
     
@@ -313,14 +316,13 @@ object GmeCommon {
     }
   }
   
-  @js.native
   trait MetaCardRule extends StObject {
     
-    var items: js.Array[Path] = js.native
+    var items: js.Array[Path]
     
-    var maxItems: js.Array[Double] = js.native
+    var maxItems: js.Array[Double]
     
-    var minItems: js.Array[Double] = js.native
+    var minItems: js.Array[Double]
   }
   object MetaCardRule {
     
@@ -353,16 +355,15 @@ object GmeCommon {
     }
   }
   
-  @js.native
   trait MetaInfo extends StObject {
     
-    var owner: Node = js.native
+    var owner: Node
     
-    var ownerPath: Path = js.native
+    var ownerPath: Path
     
-    var target: Node = js.native
+    var target: Node
     
-    var targetPath: Path = js.native
+    var targetPath: Path
   }
   object MetaInfo {
     
@@ -389,18 +390,17 @@ object GmeCommon {
     }
   }
   
-  @js.native
   trait MetaRules extends StObject {
     
-    var aspects: Filter = js.native
+    var aspects: Filter
     
-    var attributes: Level = js.native
+    var attributes: Level
     
-    var children: MetaCardRule = js.native
+    var children: MetaCardRule
     
-    var constraints: Dictionary[typings.webgme.Core.Constraint] = js.native
+    var constraints: Dictionary[typings.webgme.Core.Constraint]
     
-    var pointers: Ptr = js.native
+    var pointers: Ptr
   }
   object MetaRules {
     
@@ -452,12 +452,11 @@ object GmeCommon {
   
   type Payload = String | Buffer | js.Array[Buffer]
   
-  @js.native
   trait Pointer extends StObject {
     
-    var from: NodeId = js.native
+    var from: NodeId
     
-    var to: NodeId = js.native
+    var to: NodeId
   }
   object Pointer {
     
@@ -482,12 +481,11 @@ object GmeCommon {
   
   type ProjectStart = String | CommitHash | (js.Array[CommitHash | String])
   
-  @js.native
   trait Promisable extends StObject {
     
-    def `catch`(callback: CatchCallback): Promisable = js.native
+    def `catch`(callback: CatchCallback): Promisable
     
-    def `then`(callback: ThenCallback): Promisable = js.native
+    def `then`(callback: ThenCallback): Promisable
   }
   object Promisable {
     
@@ -510,12 +508,11 @@ object GmeCommon {
     }
   }
   
-  @js.native
   trait RegObj extends StObject {
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object RegObj {
     

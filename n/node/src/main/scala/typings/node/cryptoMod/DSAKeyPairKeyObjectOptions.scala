@@ -2,21 +2,19 @@ package typings.node.cryptoMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DSAKeyPairKeyObjectOptions extends StObject {
   
   /**
     * Size of q in bits
     */
-  var divisorLength: Double = js.native
+  var divisorLength: Double
   
   /**
     * Key size in bits
     */
-  var modulusLength: Double = js.native
+  var modulusLength: Double
 }
 object DSAKeyPairKeyObjectOptions {
   

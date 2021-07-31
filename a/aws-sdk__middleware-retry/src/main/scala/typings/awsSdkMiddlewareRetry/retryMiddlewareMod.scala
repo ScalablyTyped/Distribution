@@ -8,20 +8,27 @@ import typings.awsSdkTypes.middlewareMod.Pluggable
 import typings.awsSdkTypes.responseMod.MetadataBearer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object retryMiddlewareMod {
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/retryMiddleware", "getRetryPlugin")
+  @JSImport("@aws-sdk/middleware-retry/dist/cjs/retryMiddleware", JSImport.Namespace)
   @js.native
-  def getRetryPlugin(options: RetryResolvedConfig): Pluggable[_, _] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("@aws-sdk/middleware-retry/dist/cjs/retryMiddleware", "retryMiddleware")
-  @js.native
-  def retryMiddleware(options: RetryResolvedConfig): js.Function1[/* next */ FinalizeHandler[_, MetadataBearer], FinalizeHandler[_, MetadataBearer]] = js.native
+  @scala.inline
+  def getRetryPlugin(options: RetryResolvedConfig): Pluggable[js.Any, js.Any] = ^.asInstanceOf[js.Dynamic].applyDynamic("getRetryPlugin")(options.asInstanceOf[js.Any]).asInstanceOf[Pluggable[js.Any, js.Any]]
+  
+  @scala.inline
+  def retryMiddleware(options: RetryResolvedConfig): js.Function1[
+    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
+    FinalizeHandler[js.Any, MetadataBearer]
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("retryMiddleware")(options.asInstanceOf[js.Any]).asInstanceOf[js.Function1[
+    /* next */ FinalizeHandler[js.Any, MetadataBearer], 
+    FinalizeHandler[js.Any, MetadataBearer]
+  ]]
   
   @JSImport("@aws-sdk/middleware-retry/dist/cjs/retryMiddleware", "retryMiddlewareOptions")
   @js.native
-  val retryMiddlewareOptions: FinalizeRequestHandlerOptions with AbsoluteLocation = js.native
+  val retryMiddlewareOptions: FinalizeRequestHandlerOptions & AbsoluteLocation = js.native
 }

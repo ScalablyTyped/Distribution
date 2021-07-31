@@ -15,13 +15,14 @@ import typings.std.CSSStyleSheet
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
   @js.native
-  trait TypeofGridStackDD extends Instantiable1[/* grid */ GridStack, GridStackDD] {
+  trait TypeofGridStackDD
+    extends StObject
+       with Instantiable1[/* grid */ GridStack, GridStackDD] {
     
     /** get the current registered plugin to use */
     def get(): /* import warning: importer.ImportType#apply Failed type conversion: typeof GridStackDD */ js.Any = js.native
@@ -33,7 +34,9 @@ object anon {
   }
   
   @js.native
-  trait TypeofUtils extends Instantiable0[Utils] {
+  trait TypeofUtils
+    extends StObject
+       with Instantiable0[Utils] {
     
     /** inserts a CSS rule */
     def addCSSRule(sheet: CSSStyleSheet, selector: String, rules: String): Unit = js.native
@@ -73,7 +76,7 @@ object anon {
       * @param width width of the grid. If undefined the width will be calculated automatically (optional).
       **/
     def sort(nodes: js.Array[GridStackNode]): js.Array[GridStackNode] = js.native
-    def sort(nodes: js.Array[GridStackNode], dir: js.UndefOr[scala.Nothing], column: Double): js.Array[GridStackNode] = js.native
+    def sort(nodes: js.Array[GridStackNode], dir: Unit, column: Double): js.Array[GridStackNode] = js.native
     @JSName("sort")
     def sort_1(nodes: js.Array[GridStackNode], dir: `-1`): js.Array[GridStackNode] = js.native
     @JSName("sort")

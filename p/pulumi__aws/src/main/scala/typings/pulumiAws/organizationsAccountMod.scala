@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object organizationsAccountMod {
@@ -70,6 +69,10 @@ object organizationsAccountMod {
   /* static members */
   object Account {
     
+    @JSImport("@pulumi/aws/organizations/account", "Account")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing Account resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -79,60 +82,54 @@ object organizationsAccountMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/organizations/account", "Account.get")
-    @js.native
-    def get(name: String, id: Input[ID]): Account = js.native
-    @JSImport("@pulumi/aws/organizations/account", "Account.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): Account = js.native
-    @JSImport("@pulumi/aws/organizations/account", "Account.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountState): Account = js.native
-    @JSImport("@pulumi/aws/organizations/account", "Account.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): Account = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[Account]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Account]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountState): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[Account]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: AccountState, opts: CustomResourceOptions): Account = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[Account]
     
     /**
       * Returns true if the given object is an instance of Account.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/organizations/account", "Account.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/organizations/account.Account */ Boolean]
   }
   
-  @js.native
   trait AccountArgs extends StObject {
     
     /**
       * The email address of the owner to assign to the new member account. This email address must not already be associated with another AWS account.
       */
-    val email: Input[String] = js.native
+    val email: Input[String]
     
     /**
       * If set to `ALLOW`, the new account enables IAM users to access account billing information if they have the required permissions. If set to `DENY`, then only the root user of the new account can access account billing information.
       */
-    val iamUserAccessToBilling: js.UndefOr[Input[String]] = js.native
+    val iamUserAccessToBilling: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name for the member account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Parent Organizational Unit ID or Root ID for the account. Defaults to the Organization default Root ID. A configuration must be present for this argument to perform drift detection.
       */
-    val parentId: js.UndefOr[Input[String]] = js.native
+    val parentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of an IAM role that Organizations automatically preconfigures in the new member account. This role trusts the master account, allowing users in the master account to assume the role, as permitted by the master account administrator. The role has administrator permissions in the new member account. The Organizations API provides no method for reading this information after account creation, so this provider cannot perform drift detection on its value and will always show a difference for a configured value after import unless [`ignoreChanges`](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) is used.
       */
-    val roleName: js.UndefOr[Input[String]] = js.native
+    val roleName: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AccountArgs {
     
@@ -180,49 +177,48 @@ object organizationsAccountMod {
     }
   }
   
-  @js.native
   trait AccountState extends StObject {
     
     /**
       * The ARN for this account.
       */
-    val arn: js.UndefOr[Input[String]] = js.native
+    val arn: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The email address of the owner to assign to the new member account. This email address must not already be associated with another AWS account.
       */
-    val email: js.UndefOr[Input[String]] = js.native
+    val email: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * If set to `ALLOW`, the new account enables IAM users to access account billing information if they have the required permissions. If set to `DENY`, then only the root user of the new account can access account billing information.
       */
-    val iamUserAccessToBilling: js.UndefOr[Input[String]] = js.native
+    val iamUserAccessToBilling: js.UndefOr[Input[String]] = js.undefined
     
-    val joinedMethod: js.UndefOr[Input[String]] = js.native
+    val joinedMethod: js.UndefOr[Input[String]] = js.undefined
     
-    val joinedTimestamp: js.UndefOr[Input[String]] = js.native
+    val joinedTimestamp: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * A friendly name for the member account.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Parent Organizational Unit ID or Root ID for the account. Defaults to the Organization default Root ID. A configuration must be present for this argument to perform drift detection.
       */
-    val parentId: js.UndefOr[Input[String]] = js.native
+    val parentId: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * The name of an IAM role that Organizations automatically preconfigures in the new member account. This role trusts the master account, allowing users in the master account to assume the role, as permitted by the master account administrator. The role has administrator permissions in the new member account. The Organizations API provides no method for reading this information after account creation, so this provider cannot perform drift detection on its value and will always show a difference for a configured value after import unless [`ignoreChanges`](https://www.pulumi.com/docs/intro/concepts/programming-model/#ignorechanges) is used.
       */
-    val roleName: js.UndefOr[Input[String]] = js.native
+    val roleName: js.UndefOr[Input[String]] = js.undefined
     
-    val status: js.UndefOr[Input[String]] = js.native
+    val status: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Key-value mapping of resource tags.
       */
-    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.native
+    val tags: js.UndefOr[Input[StringDictionary[Input[String]]]] = js.undefined
   }
   object AccountState {
     

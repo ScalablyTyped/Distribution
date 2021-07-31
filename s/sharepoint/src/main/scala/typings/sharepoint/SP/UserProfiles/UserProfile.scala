@@ -4,7 +4,6 @@ import typings.sharepoint.SP.ClientObject
 import typings.sharepoint.SP.Site
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Represents a client-side user profile for a person.
@@ -12,7 +11,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   However, it does not contain the user properties that the server-side UserProfile object contains.
   To access user properties from client-side code, use PeopleManager */
 @js.native
-trait UserProfile extends ClientObject {
+trait UserProfile
+  extends StObject
+     with ClientObject {
   
   /** This member is reserved for internal use and is not intended to be used directly from your code.
     Use the createPersonalSiteEnque method to create a personal site. */

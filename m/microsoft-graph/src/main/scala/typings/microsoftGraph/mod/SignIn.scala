@@ -2,55 +2,55 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait SignIn extends Entity {
+trait SignIn
+  extends StObject
+     with Entity {
   
   // App name displayed in the Azure Portal.
-  var appDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var appDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Unique GUID representing the app ID in the Azure Active Directory.
-  var appId: js.UndefOr[NullableOption[String]] = js.native
+  var appId: js.UndefOr[NullableOption[String]] = js.undefined
   
-  var appliedConditionalAccessPolicies: js.UndefOr[NullableOption[js.Array[AppliedConditionalAccessPolicy]]] = js.native
+  var appliedConditionalAccessPolicies: js.UndefOr[NullableOption[js.Array[AppliedConditionalAccessPolicy]]] = js.undefined
   
   /**
     * Identifies the legacy client used for sign-in activity. Includes Browser, Exchange Active Sync, modern clients, IMAP,
     * MAPI, SMTP, and POP.
     */
-  var clientAppUsed: js.UndefOr[NullableOption[String]] = js.native
+  var clientAppUsed: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Reports status of an activated conditional access policy. Possible values are: success, failure, notApplied, and
     * unknownFutureValue.
     */
-  var conditionalAccessStatus: js.UndefOr[NullableOption[ConditionalAccessStatus]] = js.native
+  var conditionalAccessStatus: js.UndefOr[NullableOption[ConditionalAccessStatus]] = js.undefined
   
   // The request ID sent from the client when the sign-in is initiated; used to troubleshoot sign-in activity.
-  var correlationId: js.UndefOr[NullableOption[String]] = js.native
+  var correlationId: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Date and time (UTC) the sign-in was initiated. Example: midnight on Jan 1, 2014 is reported as '2014-01-01T00:00:00Z'.
-  var createdDateTime: js.UndefOr[String] = js.native
+  var createdDateTime: js.UndefOr[String] = js.undefined
   
   // Device information from where the sign-in occurred; includes device ID, operating system, and browser.
-  var deviceDetail: js.UndefOr[NullableOption[DeviceDetail]] = js.native
+  var deviceDetail: js.UndefOr[NullableOption[DeviceDetail]] = js.undefined
   
   // IP address of the client used to sign in.
-  var ipAddress: js.UndefOr[NullableOption[String]] = js.native
+  var ipAddress: js.UndefOr[NullableOption[String]] = js.undefined
   
   // Indicates if a sign-in is interactive or not.
-  var isInteractive: js.UndefOr[NullableOption[Boolean]] = js.native
+  var isInteractive: js.UndefOr[NullableOption[Boolean]] = js.undefined
   
   // Provides the city, state, and country code where the sign-in originated.
-  var location: js.UndefOr[NullableOption[SignInLocation]] = js.native
+  var location: js.UndefOr[NullableOption[SignInLocation]] = js.undefined
   
   // Name of the resource the user signed into.
-  var resourceDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var resourceDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // ID of the resource that the user signed into.
-  var resourceId: js.UndefOr[NullableOption[String]] = js.native
+  var resourceId: js.UndefOr[NullableOption[String]] = js.undefined
   
   /**
     * Provides the 'reason' behind a specific state of a risky user, sign-in or a risk event. The possible values are: none,
@@ -60,53 +60,53 @@ trait SignIn extends Entity {
     * or sign-in so far. Note: Details for this property require an Azure AD Premium P2 license. Other licenses return the
     * value hidden.
     */
-  var riskDetail: js.UndefOr[NullableOption[RiskDetail]] = js.native
+  var riskDetail: js.UndefOr[NullableOption[RiskDetail]] = js.undefined
   
   /**
     * Risk event types associated with the sign-in. The possible values are: unlikelyTravel, anonymizedIPAddress,
     * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
     * investigationsThreatIntelligence, generic, and unknownFutureValue.
     */
-  var riskEventTypes: js.UndefOr[NullableOption[js.Array[RiskEventType]]] = js.native
+  var riskEventTypes: js.UndefOr[NullableOption[js.Array[RiskEventType]]] = js.undefined
   
   /**
     * The list of risk event types associated with the sign-in. Possible values: unlikelyTravel, anonymizedIPAddress,
     * maliciousIPAddress, unfamiliarFeatures, malwareInfectedIPAddress, suspiciousIPAddress, leakedCredentials,
     * investigationsThreatIntelligence, generic, or unknownFutureValue.
     */
-  var riskEventTypes_v2: js.UndefOr[NullableOption[js.Array[String]]] = js.native
+  var riskEventTypes_v2: js.UndefOr[NullableOption[js.Array[String]]] = js.undefined
   
   /**
     * Aggregated risk level. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
     * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
     * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
     */
-  var riskLevelAggregated: js.UndefOr[NullableOption[RiskLevel]] = js.native
+  var riskLevelAggregated: js.UndefOr[NullableOption[RiskLevel]] = js.undefined
   
   /**
     * Risk level during sign-in. The possible values are: none, low, medium, high, hidden, and unknownFutureValue. The value
     * hidden means the user or sign-in was not enabled for Azure AD Identity Protection. Note: Details for this property are
     * only available for Azure AD Premium P2 customers. All other customers will be returned hidden.
     */
-  var riskLevelDuringSignIn: js.UndefOr[NullableOption[RiskLevel]] = js.native
+  var riskLevelDuringSignIn: js.UndefOr[NullableOption[RiskLevel]] = js.undefined
   
   /**
     * Reports status of the risky user, sign-in, or a risk event. The possible values are: none, confirmedSafe, remediated,
     * dismissed, atRisk, confirmedCompromised, unknownFutureValue.
     */
-  var riskState: js.UndefOr[NullableOption[RiskState]] = js.native
+  var riskState: js.UndefOr[NullableOption[RiskState]] = js.undefined
   
   // Sign-in status. Possible values include Success and Failure.
-  var status: js.UndefOr[NullableOption[SignInStatus]] = js.native
+  var status: js.UndefOr[NullableOption[SignInStatus]] = js.undefined
   
   // Display name of the user that initiated the sign-in.
-  var userDisplayName: js.UndefOr[NullableOption[String]] = js.native
+  var userDisplayName: js.UndefOr[NullableOption[String]] = js.undefined
   
   // ID of the user that initiated the sign-in.
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
   
   // User principal name of the user that initiated the sign-in.
-  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.native
+  var userPrincipalName: js.UndefOr[NullableOption[String]] = js.undefined
 }
 object SignIn {
   

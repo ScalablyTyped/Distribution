@@ -5,30 +5,30 @@ import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** provides a bitmap in the Microsoft DIB format. */
-@js.native
-trait XBitmap extends XInterface {
+trait XBitmap
+  extends StObject
+     with XInterface {
   
   /** returns the device independent bitmap. */
-  val DIB: SafeArray[Double] = js.native
+  val DIB: SafeArray[Double]
   
   /** returns the transparency mask of the device independent bitmap. */
-  val MaskDIB: SafeArray[Double] = js.native
+  val MaskDIB: SafeArray[Double]
   
   /** returns the size of the bitmap in pixel. */
-  val Size: typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  val Size: typings.activexLibreoffice.com_.sun.star.awt.Size
   
   /** returns the device independent bitmap. */
-  def getDIB(): SafeArray[Double] = js.native
+  def getDIB(): SafeArray[Double]
   
   /** returns the transparency mask of the device independent bitmap. */
-  def getMaskDIB(): SafeArray[Double] = js.native
+  def getMaskDIB(): SafeArray[Double]
   
   /** returns the size of the bitmap in pixel. */
-  def getSize(): typings.activexLibreoffice.com_.sun.star.awt.Size = js.native
+  def getSize(): typings.activexLibreoffice.com_.sun.star.awt.Size
 }
 object XBitmap {
   

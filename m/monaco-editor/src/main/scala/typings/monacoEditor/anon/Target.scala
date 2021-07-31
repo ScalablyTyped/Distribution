@@ -3,15 +3,13 @@ package typings.monacoEditor.anon
 import typings.monacoEditor.mod.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Target extends StObject {
   
-  var target: Uri = js.native
+  var target: Uri
   
-  var value: String = js.native
+  var value: String
 }
 object Target {
   

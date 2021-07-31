@@ -18,7 +18,6 @@ import typings.actionsOnGoogle.v2Mod.GoogleActionsV2RichResponse
 import typings.actionsOnGoogle.v2Mod.GoogleActionsV2SimpleResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dialogflowConvMod {
@@ -105,7 +104,7 @@ object dialogflowConvMod {
       * @public
       */
     def followup(event: String): this.type = js.native
-    def followup(event: String, parameters: js.UndefOr[scala.Nothing], lang: String): this.type = js.native
+    def followup(event: String, parameters: Unit, lang: String): this.type = js.native
     def followup(event: String, parameters: Parameters): this.type = js.native
     def followup(event: String, parameters: Parameters, lang: String): this.type = js.native
     
@@ -181,11 +180,12 @@ object dialogflowConvMod {
     var version: Double = js.native
   }
   
-  @js.native
-  trait DialogflowConversationOptions[TConvData, TUserStorage] extends ConversationBaseOptions[TConvData, TUserStorage] {
+  trait DialogflowConversationOptions[TConvData, TUserStorage]
+    extends StObject
+       with ConversationBaseOptions[TConvData, TUserStorage] {
     
     /** @public */
-    var body: js.UndefOr[GoogleCloudDialogflowV2WebhookRequest | DialogflowV1WebhookRequest] = js.native
+    var body: js.UndefOr[GoogleCloudDialogflowV2WebhookRequest | DialogflowV1WebhookRequest] = js.undefined
   }
   object DialogflowConversationOptions {
     
@@ -196,7 +196,7 @@ object dialogflowConvMod {
     }
     
     @scala.inline
-    implicit class DialogflowConversationOptionsMutableBuilder[Self <: DialogflowConversationOptions[_, _], TConvData, TUserStorage] (val x: Self with (DialogflowConversationOptions[TConvData, TUserStorage])) extends AnyVal {
+    implicit class DialogflowConversationOptionsMutableBuilder[Self <: DialogflowConversationOptions[?, ?], TConvData, TUserStorage] (val x: Self & (DialogflowConversationOptions[TConvData, TUserStorage])) extends AnyVal {
       
       @scala.inline
       def setBody(value: GoogleCloudDialogflowV2WebhookRequest | DialogflowV1WebhookRequest): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])
@@ -206,22 +206,21 @@ object dialogflowConvMod {
     }
   }
   
-  @js.native
   trait GoogleAssistantResponse extends StObject {
     
-    var expectUserResponse: js.UndefOr[Boolean] = js.native
+    var expectUserResponse: js.UndefOr[Boolean] = js.undefined
     
-    var isSsml: js.UndefOr[Boolean] = js.native
+    var isSsml: js.UndefOr[Boolean] = js.undefined
     
-    var noInputPrompts: js.UndefOr[js.Array[GoogleActionsV2SimpleResponse]] = js.native
+    var noInputPrompts: js.UndefOr[js.Array[GoogleActionsV2SimpleResponse]] = js.undefined
     
-    var richResponse: js.UndefOr[GoogleActionsV2RichResponse] = js.native
+    var richResponse: js.UndefOr[GoogleActionsV2RichResponse] = js.undefined
     
-    var speechBiasingHints: js.UndefOr[js.Array[String]] = js.native
+    var speechBiasingHints: js.UndefOr[js.Array[String]] = js.undefined
     
-    var systemIntent: js.UndefOr[SystemIntent] = js.native
+    var systemIntent: js.UndefOr[SystemIntent] = js.undefined
     
-    var userStorage: js.UndefOr[String] = js.native
+    var userStorage: js.UndefOr[String] = js.undefined
   }
   object GoogleAssistantResponse {
     
@@ -284,10 +283,9 @@ object dialogflowConvMod {
     }
   }
   
-  @js.native
   trait PayloadGoogle extends StObject {
     
-    var google: GoogleAssistantResponse = js.native
+    var google: GoogleAssistantResponse
   }
   object PayloadGoogle {
     
@@ -305,12 +303,11 @@ object dialogflowConvMod {
     }
   }
   
-  @js.native
   trait SystemIntent extends StObject {
     
-    var data: ProtoAnystringJsonObject = js.native
+    var data: ProtoAnystringJsonObject
     
-    var intent: String = js.native
+    var intent: String
   }
   object SystemIntent {
     

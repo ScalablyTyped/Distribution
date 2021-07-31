@@ -15,10 +15,13 @@ import typings.nodePgMigrate.tablesTypesMod.ColumnDefinitions
 import typings.pg.mod.QueryResult
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object migrationMod {
+  
+  @JSImport("node-pg-migrate/dist/migration", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @js.native
   sealed trait FilenameFormat extends StObject
@@ -27,20 +30,26 @@ object migrationMod {
   object FilenameFormat extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[FilenameFormat with String] = js.native
+    def apply(value: String): js.UndefOr[FilenameFormat & String] = js.native
     
     @js.native
-    sealed trait timestamp extends FilenameFormat
-    /* "timestamp" */ val timestamp: typings.nodePgMigrate.migrationMod.FilenameFormat.timestamp with String = js.native
+    sealed trait timestamp
+      extends StObject
+         with FilenameFormat
+    /* "timestamp" */ val timestamp: typings.nodePgMigrate.migrationMod.FilenameFormat.timestamp & String = js.native
     
     @js.native
-    sealed trait utc extends FilenameFormat
-    /* "utc" */ val utc: typings.nodePgMigrate.migrationMod.FilenameFormat.utc with String = js.native
+    sealed trait utc
+      extends StObject
+         with FilenameFormat
+    /* "utc" */ val utc: typings.nodePgMigrate.migrationMod.FilenameFormat.utc & String = js.native
   }
   
   @JSImport("node-pg-migrate/dist/migration", "Migration")
   @js.native
-  class Migration protected () extends RunMigration {
+  class Migration protected ()
+    extends StObject
+       with RunMigration {
     def this(db: DBConnection, migrationPath: String, hasUpDown: MigrationBuilderActions, options: RunnerOption) = this()
     def this(
       db: DBConnection,
@@ -54,7 +63,7 @@ object migrationMod {
       migrationPath: String,
       hasUpDown: MigrationBuilderActions,
       options: RunnerOption,
-      typeShorthands: js.UndefOr[scala.Nothing],
+      typeShorthands: Unit,
       logger: Logger
     ) = this()
     def this(
@@ -66,14 +75,14 @@ object migrationMod {
       logger: Logger
     ) = this()
     
-    def _apply(action: MigrationAction, pgm: default): js.Promise[_] = js.native
+    def _apply(action: MigrationAction, pgm: default): js.Promise[js.Any] = js.native
     
     def _getAction(direction: MigrationDirection): MigrationAction = js.native
     
     def _getMarkAsRun(action: MigrationAction): String = js.native
     
     @JSName("apply")
-    def apply(direction: MigrationDirection): js.Promise[_] = js.native
+    def apply(direction: MigrationDirection): js.Promise[js.Any] = js.native
     
     val db: DBConnection = js.native
     
@@ -81,9 +90,18 @@ object migrationMod {
     
     val logger: Logger = js.native
     
-    def markAsRun(direction: MigrationDirection): js.Promise[QueryResult[_]] = js.native
+    def markAsRun(direction: MigrationDirection): js.Promise[QueryResult[js.Any]] = js.native
+    
+    /* CompleteClass */
+    override val name: String = js.native
     
     val options: RunnerOption = js.native
+    
+    /* CompleteClass */
+    override val path: String = js.native
+    
+    /* CompleteClass */
+    override val timestamp: Double = js.native
     
     val typeShorthands: js.UndefOr[ColumnDefinitions] = js.native
     
@@ -92,147 +110,130 @@ object migrationMod {
   /* static members */
   object Migration {
     
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
+    @JSImport("node-pg-migrate/dist/migration", "Migration")
     @js.native
-    def create(name: String, directory: String): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def create(name: String, directory: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create(name: String, directory: String, _language: Unit, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
     def create(
       name: String,
       directory: String,
-      _language: js.UndefOr[scala.Nothing],
-      _ignorePattern: js.UndefOr[scala.Nothing],
-      _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create(name: String, directory: String, _language: js.UndefOr[scala.Nothing], _ignorePattern: String): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create(
-      name: String,
-      directory: String,
-      _language: js.UndefOr[scala.Nothing],
+      _language: Unit,
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create(name: String, directory: String, _language: CreateOptions): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
     def create(
       name: String,
       directory: String,
-      _language: CreateOptions,
-      _ignorePattern: js.UndefOr[scala.Nothing],
+      _language: Unit,
+      _ignorePattern: Unit,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create(name: String, directory: String, _language: CreateOptions, _ignorePattern: String): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create(name: String, directory: String, _language: CreateOptions): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create(name: String, directory: String, _language: CreateOptions, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
     def create(
       name: String,
       directory: String,
       _language: CreateOptions,
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_js(name: String, directory: String, _language: js_): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_js(
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create(
       name: String,
       directory: String,
-      _language: js_,
-      _ignorePattern: js.UndefOr[scala.Nothing],
+      _language: CreateOptions,
+      _ignorePattern: Unit,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_js(name: String, directory: String, _language: js_, _ignorePattern: String): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    
+    @scala.inline
+    def create_js(name: String, directory: String, _language: js_): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create_js(name: String, directory: String, _language: js_, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
     def create_js(
       name: String,
       directory: String,
       _language: js_,
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_sql(name: String, directory: String, _language: sql): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_sql(
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create_js(
       name: String,
       directory: String,
-      _language: sql,
-      _ignorePattern: js.UndefOr[scala.Nothing],
+      _language: js_,
+      _ignorePattern: Unit,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_sql(name: String, directory: String, _language: sql, _ignorePattern: String): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    
+    @scala.inline
+    def create_sql(name: String, directory: String, _language: sql): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create_sql(name: String, directory: String, _language: sql, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
     def create_sql(
       name: String,
       directory: String,
       _language: sql,
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_ts(name: String, directory: String, _language: ts): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_ts(
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create_sql(
       name: String,
       directory: String,
-      _language: ts,
-      _ignorePattern: js.UndefOr[scala.Nothing],
+      _language: sql,
+      _ignorePattern: Unit,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
-    def create_ts(name: String, directory: String, _language: ts, _ignorePattern: String): js.Promise[String] = js.native
-    @JSImport("node-pg-migrate/dist/migration", "Migration.create")
-    @js.native
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    
+    @scala.inline
+    def create_ts(name: String, directory: String, _language: ts): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create_ts(name: String, directory: String, _language: ts, _ignorePattern: String): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
     def create_ts(
       name: String,
       directory: String,
       _language: ts,
       _ignorePattern: String,
       _filenameFormat: FilenameFormat
-    ): js.Promise[String] = js.native
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+    @scala.inline
+    def create_ts(
+      name: String,
+      directory: String,
+      _language: ts,
+      _ignorePattern: Unit,
+      _filenameFormat: FilenameFormat
+    ): js.Promise[String] = (^.asInstanceOf[js.Dynamic].applyDynamic("create")(name.asInstanceOf[js.Any], directory.asInstanceOf[js.Any], _language.asInstanceOf[js.Any], _ignorePattern.asInstanceOf[js.Any], _filenameFormat.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
   }
   
-  @JSImport("node-pg-migrate/dist/migration", "getTimestamp")
-  @js.native
-  def getTimestamp(logger: Logger, filename: String): Double = js.native
+  @scala.inline
+  def getTimestamp(logger: Logger, filename: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("getTimestamp")(logger.asInstanceOf[js.Any], filename.asInstanceOf[js.Any])).asInstanceOf[Double]
   
-  @JSImport("node-pg-migrate/dist/migration", "loadMigrationFiles")
-  @js.native
-  def loadMigrationFiles(dir: String): js.Promise[js.Array[String]] = js.native
-  @JSImport("node-pg-migrate/dist/migration", "loadMigrationFiles")
-  @js.native
-  def loadMigrationFiles(dir: String, ignorePattern: String): js.Promise[js.Array[String]] = js.native
+  @scala.inline
+  def loadMigrationFiles(dir: String): js.Promise[js.Array[String]] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadMigrationFiles")(dir.asInstanceOf[js.Any]).asInstanceOf[js.Promise[js.Array[String]]]
+  @scala.inline
+  def loadMigrationFiles(dir: String, ignorePattern: String): js.Promise[js.Array[String]] = (^.asInstanceOf[js.Dynamic].applyDynamic("loadMigrationFiles")(dir.asInstanceOf[js.Any], ignorePattern.asInstanceOf[js.Any])).asInstanceOf[js.Promise[js.Array[String]]]
   
-  type CreateOptions = typings.nodePgMigrate.anon.FilenameFormat with (CreateOptionsTemplate | CreateOptionsDefault)
+  type CreateOptions = typings.nodePgMigrate.anon.FilenameFormat & (CreateOptionsTemplate | CreateOptionsDefault)
   
-  @js.native
   trait CreateOptionsDefault extends StObject {
     
-    var ignorePattern: js.UndefOr[String] = js.native
+    var ignorePattern: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[js_ | ts | sql] = js.native
+    var language: js.UndefOr[js_ | ts | sql] = js.undefined
   }
   object CreateOptionsDefault {
     
@@ -259,10 +260,9 @@ object migrationMod {
     }
   }
   
-  @js.native
   trait CreateOptionsTemplate extends StObject {
     
-    var templateFileName: String = js.native
+    var templateFileName: String
   }
   object CreateOptionsTemplate {
     
@@ -280,14 +280,13 @@ object migrationMod {
     }
   }
   
-  @js.native
   trait RunMigration extends StObject {
     
-    val name: String = js.native
+    val name: String
     
-    val path: String = js.native
+    val path: String
     
-    val timestamp: Double = js.native
+    val timestamp: Double
   }
   object RunMigration {
     

@@ -2,31 +2,29 @@ package typings.awsSdk.datapipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskObject extends StObject {
   
   /**
     * The ID of the pipeline task attempt object. AWS Data Pipeline uses this value to track how many times a task is attempted.
     */
-  var attemptId: js.UndefOr[id] = js.native
+  var attemptId: js.UndefOr[id] = js.undefined
   
   /**
     * Connection information for the location where the task runner will publish the output of the task.
     */
-  var objects: js.UndefOr[PipelineObjectMap] = js.native
+  var objects: js.UndefOr[PipelineObjectMap] = js.undefined
   
   /**
     * The ID of the pipeline that provided the task.
     */
-  var pipelineId: js.UndefOr[id] = js.native
+  var pipelineId: js.UndefOr[id] = js.undefined
   
   /**
     * An internal identifier for the task. This ID is passed to the SetTaskStatus and ReportTaskProgress actions.
     */
-  var taskId: js.UndefOr[typings.awsSdk.datapipelineMod.taskId] = js.native
+  var taskId: js.UndefOr[typings.awsSdk.datapipelineMod.taskId] = js.undefined
 }
 object TaskObject {
   

@@ -2,119 +2,117 @@ package typings.antDesignProLayout.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Appsettingcontentwidth extends StObject {
   
   @JSName("app.setting.content-width")
-  var `appDotsettingDotcontent-width`: String = js.native
+  var `appDotsettingDotcontent-width`: String
   
   @JSName("app.setting.content-width.fixed")
-  var `appDotsettingDotcontent-widthDotfixed`: String = js.native
+  var `appDotsettingDotcontent-widthDotfixed`: String
   
   @JSName("app.setting.content-width.fluid")
-  var `appDotsettingDotcontent-widthDotfluid`: String = js.native
+  var `appDotsettingDotcontent-widthDotfluid`: String
   
   @JSName("app.setting.copy")
-  var appDotsettingDotcopy: String = js.native
+  var appDotsettingDotcopy: String
   
   @JSName("app.setting.copyinfo")
-  var appDotsettingDotcopyinfo: String = js.native
+  var appDotsettingDotcopyinfo: String
   
   @JSName("app.setting.fixedheader")
-  var appDotsettingDotfixedheader: String = js.native
+  var appDotsettingDotfixedheader: String
   
   @JSName("app.setting.fixedsidebar")
-  var appDotsettingDotfixedsidebar: String = js.native
+  var appDotsettingDotfixedsidebar: String
   
   @JSName("app.setting.fixedsidebar.hint")
-  var appDotsettingDotfixedsidebarDothint: String = js.native
+  var appDotsettingDotfixedsidebarDothint: String
   
   @JSName("app.setting.hideheader")
-  var appDotsettingDothideheader: String = js.native
+  var appDotsettingDothideheader: String
   
   @JSName("app.setting.hideheader.hint")
-  var appDotsettingDothideheaderDothint: String = js.native
+  var appDotsettingDothideheaderDothint: String
   
   @JSName("app.setting.loading")
-  var appDotsettingDotloading: String = js.native
+  var appDotsettingDotloading: String
   
   @JSName("app.setting.mixmenu")
-  var appDotsettingDotmixmenu: String = js.native
+  var appDotsettingDotmixmenu: String
   
   @JSName("app.setting.navigationmode")
-  var appDotsettingDotnavigationmode: String = js.native
+  var appDotsettingDotnavigationmode: String
   
   @JSName("app.setting.othersettings")
-  var appDotsettingDotothersettings: String = js.native
+  var appDotsettingDotothersettings: String
   
   @JSName("app.setting.pagestyle")
-  var appDotsettingDotpagestyle: String = js.native
+  var appDotsettingDotpagestyle: String
   
   @JSName("app.setting.pagestyle.dark")
-  var appDotsettingDotpagestyleDotdark: String = js.native
+  var appDotsettingDotpagestyleDotdark: String
   
   @JSName("app.setting.pagestyle.light")
-  var appDotsettingDotpagestyleDotlight: String = js.native
+  var appDotsettingDotpagestyleDotlight: String
   
   @JSName("app.setting.production.hint")
-  var appDotsettingDotproductionDothint: String = js.native
+  var appDotsettingDotproductionDothint: String
   
   @JSName("app.setting.regionalsettings")
-  var appDotsettingDotregionalsettings: String = js.native
+  var appDotsettingDotregionalsettings: String
   
   @JSName("app.setting.regionalsettings.footer")
-  var appDotsettingDotregionalsettingsDotfooter: String = js.native
+  var appDotsettingDotregionalsettingsDotfooter: String
   
   @JSName("app.setting.regionalsettings.header")
-  var appDotsettingDotregionalsettingsDotheader: String = js.native
+  var appDotsettingDotregionalsettingsDotheader: String
   
   @JSName("app.setting.regionalsettings.menu")
-  var appDotsettingDotregionalsettingsDotmenu: String = js.native
+  var appDotsettingDotregionalsettingsDotmenu: String
   
   @JSName("app.setting.regionalsettings.menuHeader")
-  var appDotsettingDotregionalsettingsDotmenuHeader: String = js.native
+  var appDotsettingDotregionalsettingsDotmenuHeader: String
   
   @JSName("app.setting.sidemenu")
-  var appDotsettingDotsidemenu: String = js.native
+  var appDotsettingDotsidemenu: String
   
   @JSName("app.setting.splitMenus")
-  var appDotsettingDotsplitMenus: String = js.native
+  var appDotsettingDotsplitMenus: String
   
   @JSName("app.setting.themecolor")
-  var appDotsettingDotthemecolor: String = js.native
+  var appDotsettingDotthemecolor: String
   
   @JSName("app.setting.themecolor.cyan")
-  var appDotsettingDotthemecolorDotcyan: String = js.native
+  var appDotsettingDotthemecolorDotcyan: String
   
   @JSName("app.setting.themecolor.daybreak")
-  var appDotsettingDotthemecolorDotdaybreak: String = js.native
+  var appDotsettingDotthemecolorDotdaybreak: String
   
   @JSName("app.setting.themecolor.dust")
-  var appDotsettingDotthemecolorDotdust: String = js.native
+  var appDotsettingDotthemecolorDotdust: String
   
   @JSName("app.setting.themecolor.geekblue")
-  var appDotsettingDotthemecolorDotgeekblue: String = js.native
+  var appDotsettingDotthemecolorDotgeekblue: String
   
   @JSName("app.setting.themecolor.green")
-  var appDotsettingDotthemecolorDotgreen: String = js.native
+  var appDotsettingDotthemecolorDotgreen: String
   
   @JSName("app.setting.themecolor.purple")
-  var appDotsettingDotthemecolorDotpurple: String = js.native
+  var appDotsettingDotthemecolorDotpurple: String
   
   @JSName("app.setting.themecolor.sunset")
-  var appDotsettingDotthemecolorDotsunset: String = js.native
+  var appDotsettingDotthemecolorDotsunset: String
   
   @JSName("app.setting.themecolor.volcano")
-  var appDotsettingDotthemecolorDotvolcano: String = js.native
+  var appDotsettingDotthemecolorDotvolcano: String
   
   @JSName("app.setting.topmenu")
-  var appDotsettingDottopmenu: String = js.native
+  var appDotsettingDottopmenu: String
   
   @JSName("app.setting.weakmode")
-  var appDotsettingDotweakmode: String = js.native
+  var appDotsettingDotweakmode: String
 }
 object Appsettingcontentwidth {
   

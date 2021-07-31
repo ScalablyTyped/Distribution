@@ -2,17 +2,15 @@ package typings.xelib.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Vector extends StObject {
   
-  var X: js.UndefOr[Double] = js.native
+  var X: js.UndefOr[Double] = js.undefined
   
-  var Y: js.UndefOr[Double] = js.native
+  var Y: js.UndefOr[Double] = js.undefined
   
-  var Z: js.UndefOr[Double] = js.native
+  var Z: js.UndefOr[Double] = js.undefined
 }
 object Vector {
   

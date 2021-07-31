@@ -2,20 +2,18 @@ package typings.blueprintjsCore.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<@blueprintjs/core.@blueprintjs/core/lib/esm/components/tag-input/tagInput.ITagInputState> */
-@js.native
 trait PartialITagInputState extends StObject {
   
-  var activeIndex: js.UndefOr[Double] = js.native
+  var activeIndex: js.UndefOr[Double] = js.undefined
   
-  var inputValue: js.UndefOr[String] = js.native
+  var inputValue: js.UndefOr[String] = js.undefined
   
-  var isInputFocused: js.UndefOr[Boolean] = js.native
+  var isInputFocused: js.UndefOr[Boolean] = js.undefined
   
-  var prevInputValueProp: js.UndefOr[String] = js.native
+  var prevInputValueProp: js.UndefOr[String] = js.undefined
 }
 object PartialITagInputState {
   

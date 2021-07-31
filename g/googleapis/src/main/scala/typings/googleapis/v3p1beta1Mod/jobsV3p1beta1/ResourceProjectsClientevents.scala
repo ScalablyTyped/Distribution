@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/jobs/v3p1beta1", "jobs_v3p1beta1.Resource$Projects$Clientevents")
@@ -36,7 +35,7 @@ class ResourceProjectsClientevents protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaClientEvent] = js.native
   def create(callback: BodyResponseCallback[SchemaClientEvent]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaClientEvent] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaClientEvent] = js.native
   def create(params: ParamsResourceProjectsClienteventsCreate): GaxiosPromise[SchemaClientEvent] = js.native
   def create(
     params: ParamsResourceProjectsClienteventsCreate,

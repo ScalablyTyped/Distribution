@@ -7,7 +7,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("@pulumi/aws", "apigateway.UsagePlanKey")
@@ -27,6 +26,10 @@ class UsagePlanKey protected ()
 /* static members */
 object UsagePlanKey {
   
+  @JSImport("@pulumi/aws", "apigateway.UsagePlanKey")
+  @js.native
+  val ^ : js.Any = js.native
+  
   /**
     * Get an existing UsagePlanKey resource's state with the given name, ID, and optional extra
     * properties used to qualify the lookup.
@@ -36,24 +39,19 @@ object UsagePlanKey {
     * @param state Any extra arguments used during the lookup.
     * @param opts Optional settings to control the behavior of the CustomResource.
     */
-  @JSImport("@pulumi/aws", "apigateway.UsagePlanKey.get")
-  @js.native
-  def get(name: String, id: Input[ID]): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = js.native
-  @JSImport("@pulumi/aws", "apigateway.UsagePlanKey.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = js.native
-  @JSImport("@pulumi/aws", "apigateway.UsagePlanKey.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: UsagePlanKeyState): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = js.native
-  @JSImport("@pulumi/aws", "apigateway.UsagePlanKey.get")
-  @js.native
-  def get(name: String, id: Input[ID], state: UsagePlanKeyState, opts: CustomResourceOptions): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = js.native
+  @scala.inline
+  def get(name: String, id: Input[ID]): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.usagePlanKeyMod.UsagePlanKey]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.usagePlanKeyMod.UsagePlanKey]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: UsagePlanKeyState): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.usagePlanKeyMod.UsagePlanKey]
+  @scala.inline
+  def get(name: String, id: Input[ID], state: UsagePlanKeyState, opts: CustomResourceOptions): typings.pulumiAws.usagePlanKeyMod.UsagePlanKey = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[typings.pulumiAws.usagePlanKeyMod.UsagePlanKey]
   
   /**
     * Returns true if the given object is an instance of UsagePlanKey.  This is designed to work even
     * when multiple copies of the Pulumi SDK have been loaded into the same process.
     */
-  @JSImport("@pulumi/aws", "apigateway.UsagePlanKey.isInstance")
-  @js.native
-  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean = js.native
+  @scala.inline
+  def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/apigateway/usagePlanKey.UsagePlanKey */ Boolean]
 }

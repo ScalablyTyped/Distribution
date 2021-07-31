@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientVault.gapi.client.vault
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Export extends StObject {
   
   /** Output only. Export sink for cloud storage files. */
-  var cloudStorageSink: js.UndefOr[CloudStorageSink] = js.native
+  var cloudStorageSink: js.UndefOr[CloudStorageSink] = js.undefined
   
   /** Output only. The time when the export was created. */
-  var createTime: js.UndefOr[String] = js.native
+  var createTime: js.UndefOr[String] = js.undefined
   
   /** Advanced options of the export. */
-  var exportOptions: js.UndefOr[ExportOptions] = js.native
+  var exportOptions: js.UndefOr[ExportOptions] = js.undefined
   
   /** Output only. The generated export ID. */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /** Output only. The matter ID. */
-  var matterId: js.UndefOr[String] = js.native
+  var matterId: js.UndefOr[String] = js.undefined
   
   /** The export name. */
-  var name: js.UndefOr[String] = js.native
+  var name: js.UndefOr[String] = js.undefined
   
   /** The search query being exported. */
-  var query: js.UndefOr[Query] = js.native
+  var query: js.UndefOr[Query] = js.undefined
   
   /** Output only. The requester of the export. */
-  var requester: js.UndefOr[UserInfo] = js.native
+  var requester: js.UndefOr[UserInfo] = js.undefined
   
   /** Output only. Export statistics. */
-  var stats: js.UndefOr[ExportStats] = js.native
+  var stats: js.UndefOr[ExportStats] = js.undefined
   
   /** Output only. The export status. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object Export {
   

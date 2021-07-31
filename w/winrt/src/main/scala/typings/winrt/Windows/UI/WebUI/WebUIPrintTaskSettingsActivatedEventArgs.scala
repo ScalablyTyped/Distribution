@@ -7,12 +7,11 @@ import typings.winrt.Windows.ApplicationModel.Activation.SplashScreen
 import typings.winrt.Windows.Devices.Printers.Extensions.PrintTaskConfiguration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebUIPrintTaskSettingsActivatedEventArgs
-  extends IPrintTaskSettingsActivatedEventArgs
+  extends StObject
+     with IPrintTaskSettingsActivatedEventArgs
      with IActivatedEventArgsDeferral
 object WebUIPrintTaskSettingsActivatedEventArgs {
   

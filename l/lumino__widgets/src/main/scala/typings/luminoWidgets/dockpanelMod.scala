@@ -14,7 +14,6 @@ import typings.std.Event
 import typings.std.HTMLDivElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dockpanelMod {
@@ -311,11 +310,46 @@ object dockpanelMod {
     /**
       * Construct a new overlay.
       */
-    class Overlay () extends IOverlay {
+    class Overlay ()
+      extends StObject
+         with IOverlay {
       
       var _hidden: js.Any = js.native
       
       var _timer: js.Any = js.native
+      
+      /**
+        * Hide the overlay node.
+        *
+        * @param delay - The delay (in ms) before hiding the overlay.
+        *   A delay value <= 0 should hide the overlay immediately.
+        *
+        * #### Notes
+        * This is called whenever the overlay node should been hidden.
+        */
+      /* CompleteClass */
+      override def hide(delay: Double): Unit = js.native
+      
+      /**
+        * The DOM node for the overlay.
+        */
+      /* CompleteClass */
+      override val node: HTMLDivElement = js.native
+      
+      /**
+        * Show the overlay using the given overlay geometry.
+        *
+        * @param geo - The desired geometry for the overlay.
+        *
+        * #### Notes
+        * The given geometry values assume the node will use absolute
+        * positioning.
+        *
+        * This is called on every mouse move event during a drag in order
+        * to update the position of the overlay. It should be efficient.
+        */
+      /* CompleteClass */
+      override def show(geo: IOverlayGeometry): Unit = js.native
     }
     
     /**
@@ -324,7 +358,25 @@ object dockpanelMod {
     @JSImport("@lumino/widgets/types/dockpanel", "DockPanel.Renderer")
     @js.native
     class Renderer ()
-      extends typings.luminoWidgets.docklayoutMod.DockLayout.IRenderer
+      extends StObject
+         with typings.luminoWidgets.docklayoutMod.DockLayout.IRenderer {
+      
+      /**
+        * Create a new handle node for use with a dock layout.
+        *
+        * @returns A new handle node for a dock layout.
+        */
+      /* CompleteClass */
+      override def createHandle(): HTMLDivElement = js.native
+      
+      /**
+        * Create a new tab bar for use with a dock layout.
+        *
+        * @returns A new tab bar for a dock layout.
+        */
+      /* CompleteClass */
+      override def createTabBar(): TabBar[Widget] = js.native
+    }
     
     /**
       * The default `Renderer` instance.
@@ -341,28 +393,27 @@ object dockpanelMod {
     /**
       * The sizes of the edge drop zones, in pixels.
       */
-    @js.native
     trait IEdges extends StObject {
       
       /**
         * The size of the bottom edge drop zone.
         */
-      var bottom: Double = js.native
+      var bottom: Double
       
       /**
         * The size of the left edge drop zone.
         */
-      var left: Double = js.native
+      var left: Double
       
       /**
         * The size of the right edge drop zone.
         */
-      var right: Double = js.native
+      var right: Double
       
       /**
         * The size of the top edge drop zone.
         */
-      var top: Double = js.native
+      var top: Double
     }
     object IEdges {
       
@@ -397,49 +448,48 @@ object dockpanelMod {
     /**
       * An options object for creating a dock panel.
       */
-    @js.native
     trait IOptions extends StObject {
       
       /**
         * The sizes of the edge drop zones, in pixels.
         * If not given, default values will be used.
         */
-      var edges: js.UndefOr[IEdges] = js.native
+      var edges: js.UndefOr[IEdges] = js.undefined
       
       /**
         * The mode for the dock panel.
         *
         * The deafult is `'multiple-document'`.
         */
-      var mode: js.UndefOr[Mode] = js.native
+      var mode: js.UndefOr[Mode] = js.undefined
       
       /**
         * The overlay to use with the dock panel.
         *
         * The default is a new `Overlay` instance.
         */
-      var overlay: js.UndefOr[IOverlay] = js.native
+      var overlay: js.UndefOr[IOverlay] = js.undefined
       
       /**
         * The renderer to use for the dock panel.
         *
         * The default is a shared renderer instance.
         */
-      var renderer: js.UndefOr[IRenderer] = js.native
+      var renderer: js.UndefOr[IRenderer] = js.undefined
       
       /**
         * The spacing between the items in the panel.
         *
         * The default is `4`.
         */
-      var spacing: js.UndefOr[Double] = js.native
+      var spacing: js.UndefOr[Double] = js.undefined
       
       /**
         * Allow tabs to be draggable / movable by user.
         *
         * The default is `'true'`.
         */
-      var tabsMovable: js.UndefOr[Boolean] = js.native
+      var tabsMovable: js.UndefOr[Boolean] = js.undefined
     }
     object IOptions {
       
@@ -493,7 +543,6 @@ object dockpanelMod {
     /**
       * An object which manages the overlay node for a dock panel.
       */
-    @js.native
     trait IOverlay extends StObject {
       
       /**
@@ -505,12 +554,12 @@ object dockpanelMod {
         * #### Notes
         * This is called whenever the overlay node should been hidden.
         */
-      def hide(delay: Double): Unit = js.native
+      def hide(delay: Double): Unit
       
       /**
         * The DOM node for the overlay.
         */
-      val node: HTMLDivElement = js.native
+      val node: HTMLDivElement
       
       /**
         * Show the overlay using the given overlay geometry.
@@ -524,7 +573,7 @@ object dockpanelMod {
         * This is called on every mouse move event during a drag in order
         * to update the position of the overlay. It should be efficient.
         */
-      def show(geo: IOverlayGeometry): Unit = js.native
+      def show(geo: IOverlayGeometry): Unit
     }
     object IOverlay {
       
@@ -551,28 +600,27 @@ object dockpanelMod {
     /**
       * An object which holds the geometry for overlay positioning.
       */
-    @js.native
     trait IOverlayGeometry extends StObject {
       
       /**
         * The distance between the overlay and parent bottom edges.
         */
-      var bottom: Double = js.native
+      var bottom: Double
       
       /**
         * The distance between the overlay and parent left edges.
         */
-      var left: Double = js.native
+      var left: Double
       
       /**
         * The distance between the overlay and parent right edges.
         */
-      var right: Double = js.native
+      var right: Double
       
       /**
         * The distance between the overlay and parent top edges.
         */
-      var top: Double = js.native
+      var top: Double
     }
     object IOverlayGeometry {
       

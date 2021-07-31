@@ -3,18 +3,16 @@ package typings.awsLambda.anon
 import typings.awsLambda.cloudfrontMod.CloudFrontResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined aws-lambda.aws-lambda/common/cloudfront.CloudFrontEvent & { readonly request :std.Pick<aws-lambda.aws-lambda/common/cloudfront.CloudFrontRequest, std.Exclude<keyof aws-lambda.aws-lambda/common/cloudfront.CloudFrontRequest, 'body'>>,   response :aws-lambda.aws-lambda/common/cloudfront.CloudFrontResponse} */
-@js.native
 trait CloudFrontEventreadonlyre extends StObject {
   
-  var config: DistributionDomainName = js.native
+  var config: DistributionDomainName
   
-  val request: PickCloudFrontRequestExcl = js.native
+  val request: PickCloudFrontRequestExcl
   
-  var response: CloudFrontResponse = js.native
+  var response: CloudFrontResponse
 }
 object CloudFrontEventreadonlyre {
   

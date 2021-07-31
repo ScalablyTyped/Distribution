@@ -2,21 +2,19 @@ package typings.awsSdk.opsworksMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstanceIdentity extends StObject {
   
   /**
     * A JSON document that contains the metadata.
     */
-  var Document: js.UndefOr[String] = js.native
+  var Document: js.UndefOr[String] = js.undefined
   
   /**
     * A signature that can be used to verify the document's accuracy and authenticity.
     */
-  var Signature: js.UndefOr[String] = js.native
+  var Signature: js.UndefOr[String] = js.undefined
 }
 object InstanceIdentity {
   

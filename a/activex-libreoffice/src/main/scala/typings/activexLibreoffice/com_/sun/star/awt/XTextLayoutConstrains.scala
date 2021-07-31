@@ -4,18 +4,18 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** specifies the layout constraints for a text field. */
-@js.native
-trait XTextLayoutConstrains extends XInterface {
+trait XTextLayoutConstrains
+  extends StObject
+     with XInterface {
   
   /** returns the ideal number of columns and lines for displaying this text. */
-  def getColumnsAndLines(nCols: js.Array[Double], nLines: js.Array[Double]): Unit = js.native
+  def getColumnsAndLines(nCols: js.Array[Double], nLines: js.Array[Double]): Unit
   
   /** returns the minimum size for a given number of columns and lines. */
-  def getMinimumSize(nCols: Double, nLines: Double): Size = js.native
+  def getMinimumSize(nCols: Double, nLines: Double): Size
 }
 object XTextLayoutConstrains {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDataflow.gapi.client.dataflow
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SourceSplitOptions extends StObject {
   
   /** The source should be split into a set of bundles where the estimated size of each is approximately this many bytes. */
-  var desiredBundleSizeBytes: js.UndefOr[String] = js.native
+  var desiredBundleSizeBytes: js.UndefOr[String] = js.undefined
   
   /** DEPRECATED in favor of desired_bundle_size_bytes. */
-  var desiredShardSizeBytes: js.UndefOr[String] = js.native
+  var desiredShardSizeBytes: js.UndefOr[String] = js.undefined
 }
 object SourceSplitOptions {
   

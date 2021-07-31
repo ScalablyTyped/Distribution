@@ -2,26 +2,24 @@ package typings.awsSdk.appsyncMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateApiKeyRequest extends StObject {
   
   /**
     * The ID for your GraphQL API.
     */
-  var apiId: String = js.native
+  var apiId: String
   
   /**
     * A description of the purpose of the API key.
     */
-  var description: js.UndefOr[String] = js.native
+  var description: js.UndefOr[String] = js.undefined
   
   /**
     * The time from creation time after which the API key expires. The date is represented as seconds since the epoch, rounded down to the nearest hour. The default value for this parameter is 7 days from creation time. For more information, see .
     */
-  var expires: js.UndefOr[Long] = js.native
+  var expires: js.UndefOr[Long] = js.undefined
 }
 object CreateApiKeyRequest {
   

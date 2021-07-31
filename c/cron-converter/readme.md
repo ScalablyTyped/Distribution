@@ -11,8 +11,8 @@ Cron string converter
 | Full name          | cron-converter |
 | Keywords           | cron, cronjob, crontab, schedule, parser |
 | # releases         | 2 |
-| # dependents       | 6 |
-| # downloads        | 299986 |
+| # dependents       | 7 |
+| # downloads        | 486924 |
 | # stars            | 0 |
 
 ## Links

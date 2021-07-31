@@ -2,15 +2,14 @@ package typings.riotjsDomBindings.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TextExpressionData
-  extends BaseExpressionData
+  extends StObject
+     with BaseExpressionData
      with _ExpressionData {
   
-  var childNodeIndex: Double = js.native
+  var childNodeIndex: Double
 }
 object TextExpressionData {
   

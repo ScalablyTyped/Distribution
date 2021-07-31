@@ -4,27 +4,26 @@ import typings.estree.mod.BaseNode
 import typings.estree.mod.Literal
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JSXAttribute
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var name: JSXIdentifier | JSXNamespacedName = js.native
+  var name: JSXIdentifier | JSXNamespacedName
   
   @JSName("type")
-  var type_JSXAttribute: typings.estreeJsx.estreeJsxStrings.JSXAttribute = js.native
+  var type_JSXAttribute: typings.estreeJsx.estreeJsxStrings.JSXAttribute
   
-  var value: Literal | JSXExpressionContainer | JSXElement | JSXFragment | Null = js.native
+  var value: Literal | JSXExpressionContainer | JSXElement | JSXFragment | Null
 }
 object JSXAttribute {
   
   @scala.inline
-  def apply(name: JSXIdentifier | JSXNamespacedName, `type`: typings.estreeJsx.estreeJsxStrings.JSXAttribute): JSXAttribute = {
-    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(name: JSXIdentifier | JSXNamespacedName): JSXAttribute = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any], value = null)
+    __obj.updateDynamic("type")("JSXAttribute")
     __obj.asInstanceOf[JSXAttribute]
   }
   

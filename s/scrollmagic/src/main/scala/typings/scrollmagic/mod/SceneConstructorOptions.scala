@@ -2,23 +2,21 @@ package typings.scrollmagic.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SceneConstructorOptions extends StObject {
   
-  var duration: js.UndefOr[(js.Function0[Double | String]) | Double | String] = js.native
+  var duration: js.UndefOr[(js.Function0[Double | String]) | Double | String] = js.undefined
   
-  var loglevel: js.UndefOr[LogLevel] = js.native
+  var loglevel: js.UndefOr[LogLevel] = js.undefined
   
-  var offset: js.UndefOr[Double] = js.native
+  var offset: js.UndefOr[Double] = js.undefined
   
-  var reverse: js.UndefOr[Boolean] = js.native
+  var reverse: js.UndefOr[Boolean] = js.undefined
   
-  var triggerElement: js.UndefOr[ElementOrSelector | Null] = js.native
+  var triggerElement: js.UndefOr[ElementOrSelector | Null] = js.undefined
   
-  var triggerHook: js.UndefOr[TriggerHook] = js.native
+  var triggerHook: js.UndefOr[TriggerHook] = js.undefined
 }
 object SceneConstructorOptions {
   

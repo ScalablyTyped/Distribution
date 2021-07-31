@@ -2,34 +2,32 @@ package typings.ts3NodejsLibrary.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined std.Partial<ts3-nodejs-library.ts3-nodejs-library/lib/types/ResponseTypes.ServerEntry> */
-@js.native
 trait PartialServerEntry extends StObject {
   
-  var virtualserverAutostart: js.UndefOr[Double] = js.native
+  var virtualserverAutostart: js.UndefOr[Double] = js.undefined
   
-  var virtualserverClientsonline: js.UndefOr[Double] = js.native
+  var virtualserverClientsonline: js.UndefOr[Double] = js.undefined
   
-  var virtualserverId: js.UndefOr[String] = js.native
+  var virtualserverId: js.UndefOr[String] = js.undefined
   
-  var virtualserverMachineId: js.UndefOr[String] = js.native
+  var virtualserverMachineId: js.UndefOr[String] = js.undefined
   
-  var virtualserverMaxclients: js.UndefOr[Double] = js.native
+  var virtualserverMaxclients: js.UndefOr[Double] = js.undefined
   
-  var virtualserverName: js.UndefOr[String] = js.native
+  var virtualserverName: js.UndefOr[String] = js.undefined
   
-  var virtualserverPort: js.UndefOr[Double] = js.native
+  var virtualserverPort: js.UndefOr[Double] = js.undefined
   
-  var virtualserverQueryclientsonline: js.UndefOr[Double] = js.native
+  var virtualserverQueryclientsonline: js.UndefOr[Double] = js.undefined
   
-  var virtualserverStatus: js.UndefOr[String] = js.native
+  var virtualserverStatus: js.UndefOr[String] = js.undefined
   
-  var virtualserverUniqueIdentifier: js.UndefOr[String] = js.native
+  var virtualserverUniqueIdentifier: js.UndefOr[String] = js.undefined
   
-  var virtualserverUptime: js.UndefOr[Double] = js.native
+  var virtualserverUptime: js.UndefOr[Double] = js.undefined
 }
 object PartialServerEntry {
   

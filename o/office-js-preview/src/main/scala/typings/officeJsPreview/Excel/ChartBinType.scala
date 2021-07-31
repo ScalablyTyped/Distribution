@@ -2,7 +2,6 @@ package typings.officeJsPreview.Excel
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -18,14 +17,22 @@ sealed trait ChartBinType extends StObject
 object ChartBinType extends StObject {
   
   @js.native
-  sealed trait auto extends ChartBinType
+  sealed trait auto
+    extends StObject
+       with ChartBinType
   
   @js.native
-  sealed trait binCount extends ChartBinType
+  sealed trait binCount
+    extends StObject
+       with ChartBinType
   
   @js.native
-  sealed trait binWidth extends ChartBinType
+  sealed trait binWidth
+    extends StObject
+       with ChartBinType
   
   @js.native
-  sealed trait category extends ChartBinType
+  sealed trait category
+    extends StObject
+       with ChartBinType
 }

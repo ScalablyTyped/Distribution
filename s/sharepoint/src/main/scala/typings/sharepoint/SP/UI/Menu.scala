@@ -3,10 +3,8 @@ package typings.sharepoint.SP.UI
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Menu extends StObject {
   
   def addMenuItem(
@@ -17,9 +15,9 @@ trait Menu extends StObject {
     sequenceNumber: Double,
     description: String,
     id: String
-  ): HTMLElement = js.native
+  ): HTMLElement
   
-  def addSeparator(): Unit = js.native
+  def addSeparator(): Unit
   
   def addSubMenu(
     text: String,
@@ -28,11 +26,11 @@ trait Menu extends StObject {
     sequenceNumber: Double,
     description: String,
     id: String
-  ): Menu = js.native
+  ): Menu
   
-  def hideIcons(): Unit = js.native
+  def hideIcons(): Unit
   
-  def show(relativeElement: HTMLElement, forceRefresh: Boolean, flipTopLevelMenu: Boolean, yOffset: Double): Unit = js.native
+  def show(relativeElement: HTMLElement, forceRefresh: Boolean, flipTopLevelMenu: Boolean, yOffset: Double): Unit
   
   def showFilterMenu(
     relativeElement: HTMLElement,
@@ -41,9 +39,9 @@ trait Menu extends StObject {
     yOffset: Double,
     fShowClose: Boolean,
     fShowCheckBoxes: Boolean
-  ): Unit = js.native
+  ): Unit
   
-  def showIcons(): Unit = js.native
+  def showIcons(): Unit
 }
 object Menu {
   

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientAnalytics.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait EventConditions extends StObject {
   
   /** List of event conditions. */
-  var eventConditions: js.UndefOr[js.Array[ComparisonType]] = js.native
+  var eventConditions: js.UndefOr[js.Array[ComparisonType]] = js.undefined
   
   /** Determines if the event value should be used as the value for this goal. */
-  var useEventValue: js.UndefOr[Boolean] = js.native
+  var useEventValue: js.UndefOr[Boolean] = js.undefined
 }
 object EventConditions {
   

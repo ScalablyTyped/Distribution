@@ -2,61 +2,59 @@ package typings.pulumiAws.outputMod.wafv2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclRuleStatementOrStatementStatement extends StObject {
   
   /**
     * A logical rule statement used to combine other rule statements with AND logic. See AND Statement below for details.
     */
-  var andStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementAndStatement] = js.native
+  var andStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementAndStatement] = js.undefined
   
   /**
     * A rule statement that defines a string match search for AWS WAF to apply to web requests. See Byte Match Statement below for details.
     */
-  var byteMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementByteMatchStatement] = js.native
+  var byteMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementByteMatchStatement] = js.undefined
   
   /**
     * A rule statement used to identify web requests based on country of origin. See GEO Match Statement below for details.
     */
-  var geoMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementGeoMatchStatement] = js.native
+  var geoMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementGeoMatchStatement] = js.undefined
   
   /**
     * A rule statement used to detect web requests coming from particular IP addresses or address ranges. See IP Set Reference Statement below for details.
     */
-  var ipSetReferenceStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementIpSetReferenceStatement] = js.native
+  var ipSetReferenceStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementIpSetReferenceStatement] = js.undefined
   
   /**
     * A logical rule statement used to negate the results of another rule statement. See NOT Statement below for details.
     */
-  var notStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementNotStatement] = js.native
+  var notStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementNotStatement] = js.undefined
   
   /**
     * A logical rule statement used to combine other rule statements with OR logic. See OR Statement below for details.
     */
-  var orStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementOrStatement] = js.native
+  var orStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementOrStatement] = js.undefined
   
   /**
     * A rule statement used to search web request components for matches with regular expressions. See Regex Pattern Set Reference Statement below for details.
     */
-  var regexPatternSetReferenceStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStatement] = js.native
+  var regexPatternSetReferenceStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementRegexPatternSetReferenceStatement] = js.undefined
   
   /**
     * A rule statement that compares a number of bytes against the size of a request component, using a comparison operator, such as greater than (>) or less than (<). See Size Constraint Statement below for more details.
     */
-  var sizeConstraintStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementSizeConstraintStatement] = js.native
+  var sizeConstraintStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementSizeConstraintStatement] = js.undefined
   
   /**
     * An SQL injection match condition identifies the part of web requests, such as the URI or the query string, that you want AWS WAF to inspect. See SQL Injection Match Statement below for details.
     */
-  var sqliMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementSqliMatchStatement] = js.native
+  var sqliMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementSqliMatchStatement] = js.undefined
   
   /**
     * A rule statement that defines a cross-site scripting (XSS) match search for AWS WAF to apply to web requests. See XSS Match Statement below for details.
     */
-  var xssMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementXssMatchStatement] = js.native
+  var xssMatchStatement: js.UndefOr[WebAclRuleStatementOrStatementStatementXssMatchStatement] = js.undefined
 }
 object WebAclRuleStatementOrStatementStatement {
   

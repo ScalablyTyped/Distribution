@@ -3,21 +3,19 @@ package typings.pulumiAws.inputMod.wafregional
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WebAclLoggingConfiguration extends StObject {
   
   /**
     * Amazon Resource Name (ARN) of Kinesis Firehose Delivery Stream
     */
-  var logDestination: Input[String] = js.native
+  var logDestination: Input[String]
   
   /**
     * Configuration block containing parts of the request that you want redacted from the logs. Detailed below.
     */
-  var redactedFields: js.UndefOr[Input[WebAclLoggingConfigurationRedactedFields]] = js.native
+  var redactedFields: js.UndefOr[Input[WebAclLoggingConfigurationRedactedFields]] = js.undefined
 }
 object WebAclLoggingConfiguration {
   

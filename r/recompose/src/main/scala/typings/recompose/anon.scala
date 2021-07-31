@@ -3,15 +3,13 @@ package typings.recompose
 import typings.react.mod.ReactElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Children[TInner] extends StObject {
     
-    def children(props: TInner): ReactElement = js.native
+    def children(props: TInner): ReactElement
   }
   object Children {
     
@@ -22,7 +20,7 @@ object anon {
     }
     
     @scala.inline
-    implicit class ChildrenMutableBuilder[Self <: Children[_], TInner] (val x: Self with Children[TInner]) extends AnyVal {
+    implicit class ChildrenMutableBuilder[Self <: Children[?], TInner] (val x: Self & Children[TInner]) extends AnyVal {
       
       @scala.inline
       def setChildren(value: TInner => ReactElement): Self = StObject.set(x, "children", js.Any.fromFunction1(value))

@@ -2,21 +2,19 @@ package typings.awsSdk.macie2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3JobDefinition extends StObject {
   
   /**
     * An array of objects, one for each AWS account that owns buckets to analyze. Each object specifies the account ID for an account and one or more buckets to analyze for the account.
     */
-  var bucketDefinitions: js.UndefOr[listOfS3BucketDefinitionForJob] = js.native
+  var bucketDefinitions: js.UndefOr[listOfS3BucketDefinitionForJob] = js.undefined
   
   /**
     * The property- and tag-based conditions that determine which objects to include or exclude from the analysis.
     */
-  var scoping: js.UndefOr[Scoping] = js.native
+  var scoping: js.UndefOr[Scoping] = js.undefined
 }
 object S3JobDefinition {
   

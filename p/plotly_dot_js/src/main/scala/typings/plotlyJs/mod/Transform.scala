@@ -8,33 +8,31 @@ import typings.plotlyJs.plotlyJsStrings.groupby
 import typings.plotlyJs.plotlyJsStrings.sort
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Transform extends StObject {
   
-  var aggregations: js.Array[TransformAggregation] = js.native
+  var aggregations: js.Array[TransformAggregation]
   
-  var enabled: Boolean = js.native
+  var enabled: Boolean
   
-  var groups: String | (js.Array[Double | String]) = js.native
+  var groups: String | (js.Array[Double | String])
   
-  var nameformat: String = js.native
+  var nameformat: String
   
-  var operation: String = js.native
+  var operation: String
   
-  var order: ascending | descending = js.native
+  var order: ascending | descending
   
-  var preservegaps: Boolean = js.native
+  var preservegaps: Boolean
   
-  var styles: js.Array[TransformStyle] = js.native
+  var styles: js.Array[TransformStyle]
   
-  var target: Double | String | (js.Array[Double | String]) = js.native
+  var target: Double | String | (js.Array[Double | String])
   
-  var `type`: aggregate | filter | groupby | sort = js.native
+  var `type`: aggregate | filter | groupby | sort
   
-  var value: js.Any = js.native
+  var value: js.Any
 }
 object Transform {
   

@@ -2,7 +2,6 @@ package typings.ol
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object objectEventTypeMod {
@@ -12,9 +11,9 @@ object objectEventTypeMod {
   object default extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[ObjectEventType with String] = js.native
+    def apply(value: String): js.UndefOr[ObjectEventType & String] = js.native
     
-    /* "propertychange" */ val PROPERTYCHANGE: typings.ol.objectEventTypeMod.ObjectEventType.PROPERTYCHANGE with String = js.native
+    /* "propertychange" */ val PROPERTYCHANGE: typings.ol.objectEventTypeMod.ObjectEventType.PROPERTYCHANGE & String = js.native
   }
   
   @js.native
@@ -24,6 +23,8 @@ object objectEventTypeMod {
   object ObjectEventType extends StObject {
     
     @js.native
-    sealed trait PROPERTYCHANGE extends ObjectEventType
+    sealed trait PROPERTYCHANGE
+      extends StObject
+         with ObjectEventType
   }
 }

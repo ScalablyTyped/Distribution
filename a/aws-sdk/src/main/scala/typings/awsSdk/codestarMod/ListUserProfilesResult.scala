@@ -2,21 +2,19 @@ package typings.awsSdk.codestarMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListUserProfilesResult extends StObject {
   
   /**
     * The continuation token to use when requesting the next set of results, if there are more results to be returned.
     */
-  var nextToken: js.UndefOr[PaginationToken] = js.native
+  var nextToken: js.UndefOr[PaginationToken] = js.undefined
   
   /**
     * All the user profiles configured in AWS CodeStar for an AWS account.
     */
-  var userProfiles: UserProfilesList = js.native
+  var userProfiles: UserProfilesList
 }
 object ListUserProfilesResult {
   

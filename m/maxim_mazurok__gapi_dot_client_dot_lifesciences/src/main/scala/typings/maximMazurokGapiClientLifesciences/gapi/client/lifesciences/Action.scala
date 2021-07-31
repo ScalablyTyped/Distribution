@@ -3,54 +3,52 @@ package typings.maximMazurokGapiClientLifesciences.gapi.client.lifesciences
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Action extends StObject {
   
   /**
     * By default, after an action fails, no further actions are run. This flag indicates that this action must be run even if the pipeline has already failed. This is useful for actions
     * that copy output files off of the VM or for debugging. Note that no actions will be run if image prefetching fails.
     */
-  var alwaysRun: js.UndefOr[Boolean] = js.native
+  var alwaysRun: js.UndefOr[Boolean] = js.undefined
   
   /**
     * If specified, overrides the `CMD` specified in the container. If the container also has an `ENTRYPOINT` the values are used as entrypoint arguments. Otherwise, they are used as a
     * command and arguments to run inside the container.
     */
-  var commands: js.UndefOr[js.Array[String]] = js.native
+  var commands: js.UndefOr[js.Array[String]] = js.undefined
   
   /**
     * An optional name for the container. The container hostname will be set to this name, making it useful for inter-container communication. The name must contain only upper and
     * lowercase alphanumeric characters and hyphens and cannot start with a hyphen.
     */
-  var containerName: js.UndefOr[String] = js.native
+  var containerName: js.UndefOr[String] = js.undefined
   
   /**
     * If the specified image is hosted on a private registry other than Google Container Registry, the credentials required to pull the image must be specified here as an encrypted
     * secret. The secret must decrypt to a JSON-encoded dictionary containing both `username` and `password` keys.
     */
-  var credentials: js.UndefOr[Secret] = js.native
+  var credentials: js.UndefOr[Secret] = js.undefined
   
   /**
     * All container images are typically downloaded before any actions are executed. This helps prevent typos in URIs or issues like lack of disk space from wasting large amounts of
     * compute resources. If set, this flag prevents the worker from downloading the image until just before the action is executed.
     */
-  var disableImagePrefetch: js.UndefOr[Boolean] = js.native
+  var disableImagePrefetch: js.UndefOr[Boolean] = js.undefined
   
   /** A small portion of the container's standard error stream is typically captured and returned inside the `ContainerStoppedEvent`. Setting this flag disables this functionality. */
-  var disableStandardErrorCapture: js.UndefOr[Boolean] = js.native
+  var disableStandardErrorCapture: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Enable access to the FUSE device for this action. Filesystems can then be mounted into disks shared with other actions. The other actions do not need the `enable_fuse` flag to
     * access the mounted filesystem. This has the effect of causing the container to be executed with `CAP_SYS_ADMIN` and exposes `/dev/fuse` to the container, so use it only for
     * containers you trust.
     */
-  var enableFuse: js.UndefOr[Boolean] = js.native
+  var enableFuse: js.UndefOr[Boolean] = js.undefined
   
   /** If specified, overrides the `ENTRYPOINT` specified in the container. */
-  var entrypoint: js.UndefOr[String] = js.native
+  var entrypoint: js.UndefOr[String] = js.undefined
   
   /**
     * The environment to pass into the container. This environment is merged with values specified in the google.cloud.lifesciences.v2beta.Pipeline message, overwriting any duplicate
@@ -62,11 +60,11 @@ trait Action extends StObject {
   var environment: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Normally, a non-zero exit status causes the pipeline to fail. This flag allows execution of other actions to continue instead. */
-  var ignoreExitStatus: js.UndefOr[Boolean] = js.native
+  var ignoreExitStatus: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Required. The URI to pull the container image from. Note that all images referenced by actions in the pipeline are pulled before the first action runs. If multiple actions reference
@@ -75,7 +73,7 @@ trait Action extends StObject {
     * required in any of these cases. If the specified image is not public, the service account specified for the Virtual Machine must have access to pull the images from GCR, or
     * appropriate credentials must be specified in the google.cloud.lifesciences.v2beta.Action.credentials field.
     */
-  var imageUri: js.UndefOr[String] = js.native
+  var imageUri: js.UndefOr[String] = js.undefined
   
   /**
     * Labels to associate with the action. This field is provided to assist workflow engine authors in identifying actions (for example, to indicate what sort of action they perform, such
@@ -84,8 +82,8 @@ trait Action extends StObject {
   var labels: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: string}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+  ] = js.undefined
   
   /**
     * A list of mounts to make available to the action. In addition to the values specified here, every action has a special virtual disk mounted under `/google` that contains log files
@@ -93,13 +91,13 @@ trait Action extends StObject {
     * run as part of the pipeline execution. - /google/logs/action/∗/stdout The complete contents of each individual action's standard output. - /google/logs/action/∗/stderr The complete
     * contents of each individual action's standard error output.
     */
-  var mounts: js.UndefOr[js.Array[Mount]] = js.native
+  var mounts: js.UndefOr[js.Array[Mount]] = js.undefined
   
   /**
     * An optional identifier for a PID namespace to run the action inside. Multiple actions should use the same string to share a namespace. If unspecified, a separate isolated namespace
     * is used.
     */
-  var pidNamespace: js.UndefOr[String] = js.native
+  var pidNamespace: js.UndefOr[String] = js.undefined
   
   /**
     * A map of containers to host port mappings for this container. If the container already specifies exposed ports, use the `PUBLISH_EXPOSED_PORTS` flag instead. The host port number
@@ -108,23 +106,23 @@ trait Action extends StObject {
   var portMappings: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Exposes all ports specified by `EXPOSE` statements in the container. To discover the host side port numbers, consult the `ACTION_STARTED` event in the operation metadata. */
-  var publishExposedPorts: js.UndefOr[Boolean] = js.native
+  var publishExposedPorts: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This flag allows an action to continue running in the background while executing subsequent actions. This is useful to provide services to other actions (or to provide debugging
     * support tools like SSH servers).
     */
-  var runInBackground: js.UndefOr[Boolean] = js.native
+  var runInBackground: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The maximum amount of time to give the action to complete. If the action fails to complete before the timeout, it will be terminated and the exit status will be non-zero. The
     * pipeline will continue or terminate based on the rules defined by the `ALWAYS_RUN` and `IGNORE_EXIT_STATUS` flags.
     */
-  var timeout: js.UndefOr[String] = js.native
+  var timeout: js.UndefOr[String] = js.undefined
 }
 object Action {
   
@@ -192,7 +190,7 @@ object Action {
     def setEnvironment(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
     ): Self = StObject.set(x, "environment", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -214,7 +212,7 @@ object Action {
     def setLabels(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: string}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
     ): Self = StObject.set(x, "labels", value.asInstanceOf[js.Any])
     
     @scala.inline
@@ -239,7 +237,7 @@ object Action {
     def setPortMappings(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientLifesciences.maximMazurokGapiClientLifesciencesStrings.Action & TopLevel[js.Any]
     ): Self = StObject.set(x, "portMappings", value.asInstanceOf[js.Any])
     
     @scala.inline

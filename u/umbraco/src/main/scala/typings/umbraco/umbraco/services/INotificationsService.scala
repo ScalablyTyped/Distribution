@@ -2,7 +2,6 @@ package typings.umbraco.umbraco.services
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -22,7 +21,6 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Section navigation and search, and maintain their state for the entire application lifetime
   *
   */
-@js.native
 trait INotificationsService extends StObject {
   
   /**
@@ -42,9 +40,9 @@ trait INotificationsService extends StObject {
     * @param {Boolean} item.sticky if set to true, the notification will not auto-close
     * @returns {Object} args notification object
     */
-  def add(item: INotificationItem): INotification = js.native
+  def add(item: INotificationItem): INotification
   
-  def addView(view: String, args: js.Any*): Unit = js.native
+  def addView(view: String, args: js.Any*): Unit
   
   /**
     * @ngdoc property
@@ -56,7 +54,7 @@ trait INotificationsService extends StObject {
     *
     * @returns {string} returns an array
     */
-  var current: js.Array[String] = js.native
+  var current: js.Array[String]
   
   /**
     * @ngdoc method
@@ -71,7 +69,7 @@ trait INotificationsService extends StObject {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def error(headline: String, message: String): INotification = js.native
+  def error(headline: String, message: String): INotification
   
   /**
     * @ngdoc method
@@ -81,9 +79,9 @@ trait INotificationsService extends StObject {
     * @description
     * Method to return all notifications from the notifcations collection
     */
-  def getCurrent(): js.Array[INotification] = js.native
+  def getCurrent(): js.Array[INotification]
   
-  def hasView(view: String): Boolean = js.native
+  def hasView(view: String): Boolean
   
   /**
     * @ngdoc method
@@ -99,7 +97,7 @@ trait INotificationsService extends StObject {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def info(headline: String, message: String): INotification = js.native
+  def info(headline: String, message: String): INotification
   
   /**
     * @ngdoc method
@@ -111,7 +109,7 @@ trait INotificationsService extends StObject {
     *
     * @param {Int} index index where the notication should be removed from
     */
-  def remove(index: Double): Unit = js.native
+  def remove(index: Double): Unit
   
   /**
     * @ngdoc method
@@ -121,7 +119,7 @@ trait INotificationsService extends StObject {
     * @description
     * Removes all notifications from the notifcations collection
     */
-  def removeAll(): Unit = js.native
+  def removeAll(): Unit
   
   /**
     * @ngdoc method
@@ -133,7 +131,7 @@ trait INotificationsService extends StObject {
     *
     * @returns {Object} args notification object
     */
-  def showNotification(args: INotificationArgs): INotification = js.native
+  def showNotification(args: INotificationArgs): INotification
   
   /**
     * @ngdoc method
@@ -148,7 +146,7 @@ trait INotificationsService extends StObject {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def success(headline: String, message: String): INotification = js.native
+  def success(headline: String, message: String): INotification
   
   /**
     * @ngdoc method
@@ -164,7 +162,7 @@ trait INotificationsService extends StObject {
     * @param {String} message longer text for the notication, trimmed after 200 characters, which can then be exanded
     * @returns {Object} notification object
     */
-  def warning(headline: String, message: String): INotification = js.native
+  def warning(headline: String, message: String): INotification
 }
 object INotificationsService {
   

@@ -3,13 +3,11 @@ package typings.astTypes.anon
 import typings.astTypes.kindsMod.EnumDefaultedMemberKind
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MembersArray extends StObject {
   
-  var members: js.Array[EnumDefaultedMemberKind] = js.native
+  var members: js.Array[EnumDefaultedMemberKind]
 }
 object MembersArray {
   

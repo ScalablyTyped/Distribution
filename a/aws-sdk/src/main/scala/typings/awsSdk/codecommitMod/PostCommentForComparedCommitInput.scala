@@ -2,41 +2,39 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PostCommentForComparedCommitInput extends StObject {
   
   /**
     * To establish the directionality of the comparison, the full commit ID of the after commit.
     */
-  var afterCommitId: CommitId = js.native
+  var afterCommitId: CommitId
   
   /**
     * To establish the directionality of the comparison, the full commit ID of the before commit. Required for commenting on any commit unless that commit is the initial commit.
     */
-  var beforeCommitId: js.UndefOr[CommitId] = js.native
+  var beforeCommitId: js.UndefOr[CommitId] = js.undefined
   
   /**
     * A unique, client-generated idempotency token that, when provided in a request, ensures the request cannot be repeated with a changed parameter. If a request is received with the same parameters and a token is included, the request returns information about the initial request that used that token.
     */
-  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.native
+  var clientRequestToken: js.UndefOr[ClientRequestToken] = js.undefined
   
   /**
     * The content of the comment you want to make.
     */
-  var content: Content = js.native
+  var content: Content
   
   /**
     * The location of the comparison where you want to comment.
     */
-  var location: js.UndefOr[Location] = js.native
+  var location: js.UndefOr[Location] = js.undefined
   
   /**
     * The name of the repository where you want to post a comment on the comparison between commits.
     */
-  var repositoryName: RepositoryName = js.native
+  var repositoryName: RepositoryName
 }
 object PostCommentForComparedCommitInput {
   

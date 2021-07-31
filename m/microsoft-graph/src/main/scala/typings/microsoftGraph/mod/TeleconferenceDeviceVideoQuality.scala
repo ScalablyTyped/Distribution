@@ -2,23 +2,23 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TeleconferenceDeviceVideoQuality extends TeleconferenceDeviceMediaQuality {
+trait TeleconferenceDeviceVideoQuality
+  extends StObject
+     with TeleconferenceDeviceMediaQuality {
   
   // The average inbound stream video bit rate per second.
-  var averageInboundBitRate: js.UndefOr[NullableOption[Double]] = js.native
+  var averageInboundBitRate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The average inbound stream video frame rate per second.
-  var averageInboundFrameRate: js.UndefOr[NullableOption[Double]] = js.native
+  var averageInboundFrameRate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The average outbound stream video bit rate per second.
-  var averageOutboundBitRate: js.UndefOr[NullableOption[Double]] = js.native
+  var averageOutboundBitRate: js.UndefOr[NullableOption[Double]] = js.undefined
   
   // The average outbound stream video frame rate per second.
-  var averageOutboundFrameRate: js.UndefOr[NullableOption[Double]] = js.native
+  var averageOutboundFrameRate: js.UndefOr[NullableOption[Double]] = js.undefined
 }
 object TeleconferenceDeviceVideoQuality {
   

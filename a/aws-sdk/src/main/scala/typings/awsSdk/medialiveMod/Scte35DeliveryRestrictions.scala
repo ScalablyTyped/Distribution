@@ -2,31 +2,29 @@ package typings.awsSdk.medialiveMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Scte35DeliveryRestrictions extends StObject {
   
   /**
     * Corresponds to SCTE-35 archive_allowed_flag.
     */
-  var ArchiveAllowedFlag: Scte35ArchiveAllowedFlag = js.native
+  var ArchiveAllowedFlag: Scte35ArchiveAllowedFlag
   
   /**
     * Corresponds to SCTE-35 device_restrictions parameter.
     */
-  var DeviceRestrictions: Scte35DeviceRestrictions = js.native
+  var DeviceRestrictions: Scte35DeviceRestrictions
   
   /**
     * Corresponds to SCTE-35 no_regional_blackout_flag parameter.
     */
-  var NoRegionalBlackoutFlag: Scte35NoRegionalBlackoutFlag = js.native
+  var NoRegionalBlackoutFlag: Scte35NoRegionalBlackoutFlag
   
   /**
     * Corresponds to SCTE-35 web_delivery_allowed_flag parameter.
     */
-  var WebDeliveryAllowedFlag: Scte35WebDeliveryAllowedFlag = js.native
+  var WebDeliveryAllowedFlag: Scte35WebDeliveryAllowedFlag
 }
 object Scte35DeliveryRestrictions {
   

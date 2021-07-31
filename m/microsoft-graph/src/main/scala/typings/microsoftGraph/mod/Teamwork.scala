@@ -2,13 +2,13 @@ package typings.microsoftGraph.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait Teamwork extends Entity {
+trait Teamwork
+  extends StObject
+     with Entity {
   
-  var workforceIntegrations: js.UndefOr[NullableOption[js.Array[WorkforceIntegration]]] = js.native
+  var workforceIntegrations: js.UndefOr[NullableOption[js.Array[WorkforceIntegration]]] = js.undefined
 }
 object Teamwork {
   

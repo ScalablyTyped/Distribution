@@ -2,23 +2,21 @@ package typings.gapiCalendar.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisplayName extends StObject {
   
   // The organizer's name, if available.
-  var displayName: js.UndefOr[String] = js.native
+  var displayName: js.UndefOr[String] = js.undefined
   
   // The organizer's email address, if available.
-  var email: js.UndefOr[String] = js.native
+  var email: js.UndefOr[String] = js.undefined
   
   // The organizer's Profile ID, if available.
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   // Whether the organizer corresponds to the calendar on which this copy of the event appears. Read-only. The default is False.
-  var self: js.UndefOr[Boolean] = js.native
+  var self: js.UndefOr[Boolean] = js.undefined
 }
 object DisplayName {
   

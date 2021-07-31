@@ -3,15 +3,25 @@ package typings.carbonComponents
 import typings.std.WeakMap
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object sideNavMod {
   
   @JSImport("carbon-components/components/ui-shell/side-nav", JSImport.Default)
   @js.native
-  class default protected () extends SideNav {
+  class default protected ()
+    extends StObject
+       with SideNav {
     def this(element: js.Any, options: js.Any) = this()
+    
+    /* CompleteClass */
+    override def _handleClick(evt: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def changeState(state: js.Any): Unit = js.native
+    
+    /* CompleteClass */
+    override def isNavExpanded(): js.Any = js.native
   }
   object default {
     
@@ -111,14 +121,13 @@ object sideNavMod {
   }
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped any */ @js.native
-  trait SideNav extends StObject {
+  - Dropped any */ trait SideNav extends StObject {
     
-    def _handleClick(evt: js.Any): Unit = js.native
+    def _handleClick(evt: js.Any): Unit
     
-    def changeState(state: js.Any): Unit = js.native
+    def changeState(state: js.Any): Unit
     
-    def isNavExpanded(): js.Any = js.native
+    def isNavExpanded(): js.Any
   }
   object SideNav {
     

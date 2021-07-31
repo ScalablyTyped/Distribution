@@ -2,22 +2,20 @@ package typings.mathjax.MathJax
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OutputJax extends StObject {
   
   /*This registers the MIME-type for the element jax associated with this output jax so that MathJax knows to call
     * this jax when it wants to display an element jax of that type. Several output jax may register for the same
     * input jax, in which case the first one to register will be the default one for that type.
     */
-  def Register(mimetype: String): Unit = js.native
+  def Register(mimetype: String): Unit
   
   /*Removes the output associated with the given element jax. The routine can use jax.SourceElement() to locate
     * the <script> tag associated with the element jax.
     */
-  def Remove(jax: js.Any): Unit = js.native
+  def Remove(jax: js.Any): Unit
   
   /*This is the main routine called by MathJax when an element jax is to be converted to output. The default
     * Translate() method throws an error indicating that Translate() hasn’t been defined, so when the jax.js file
@@ -29,28 +27,28 @@ trait OutputJax extends StObject {
     * maintain information about its processing state, but see preTranslate() above for naming conventions for
     * properties that are added.
     */
-  def Translate(script: js.Any, state: js.Any): ElementJax = js.native
+  def Translate(script: js.Any, state: js.Any): ElementJax
   
-  def Zoom(jax: js.Any, span: js.Any, math: js.Any, Mw: Double, Mh: Double): ZoomStruct = js.native
+  def Zoom(jax: js.Any, span: js.Any, math: js.Any, Mw: Double, Mh: Double): ZoomStruct
   
   /*The directory where the jax files are stored (e.g., "[MathJax]/jax/output/HTML-CSS");*/
-  var directory: String = js.native
+  var directory: String
   
   /*The directory where the fonts are stored (e.g., "[MathJax]/fonts")*/
-  var fontDir: String = js.native
+  var fontDir: String
   
   /*This is called by the event-handling code (MathEvents) to get the element jax associated with the DOM element
     * that caused an event to occur. The output jax will have attached event handlers to some DOM element that is
     * part of its output, and the MathEvents code uses this routine to map back to the jax associated with that
     * output.
     */
-  def getJaxFromMath(math: js.Any): ElementJax = js.native
+  def getJaxFromMath(math: js.Any): ElementJax
   
   /*The name of the jax.*/
-  var id: String = js.native
+  var id: String
   
   /*The directory where MathJax images are found (e.g. "[MathJax]/images")*/
-  var imageDir: String = js.native
+  var imageDir: String
   
   /*This routines is called by MathJax.Hub when the translation of math elements is complete, and can be used by
     * the output processor to finalize any actions that it needs to complete. (For example, making the mathematics
@@ -60,7 +58,7 @@ trait OutputJax extends StObject {
     * state variable to store its own state information (see preProcess() above for caveats about naming
     * properties).
     */
-  def postTranslate(state: js.Any): Unit = js.native
+  def postTranslate(state: js.Any): Unit
   
   /*This is called by MathJax.Hub to ask the output processor to prepare to process math scripts. Its default
     * action is to start loading the jax’s jax.js file, and redefine itself to simply return the callback for the
@@ -69,7 +67,7 @@ trait OutputJax extends StObject {
     * Once the jax.js file has loaded, this method is replaced by the jax’s preTranslate() method, so that subsequent
     * calls to preProcess() will perform the appropriate translation.
     */
-  def preProcess(state: js.Any): Unit = js.native
+  def preProcess(state: js.Any): Unit
   
   /*This routine replaces preProcess() above when the jax’s jax.js file is loaded. It is called by MathJax.Hub to
     * ask the output processor to prepare to process math scripts. (For example, the HTML-CSS output jax uses this
@@ -82,10 +80,10 @@ trait OutputJax extends StObject {
     * state.HTMLCSSlast to keep track of the last equation it processed, or could add state.HTMLCSS = {...} to
     * create an object of its own within the state variable.
     */
-  def preTranslate(state: js.Any): Unit = js.native
+  def preTranslate(state: js.Any): Unit
   
   /*The version number of the jax.*/
-  var version: String = js.native
+  var version: String
 }
 object OutputJax {
   

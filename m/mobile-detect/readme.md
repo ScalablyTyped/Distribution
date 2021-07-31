@@ -10,9 +10,9 @@ Device detection (phone, tablet, desktop, mobile grade, os, versions)
 | ------------------ | :-------------: |
 | Full name          | mobile-detect |
 | Keywords           | useragent, mobile, phone, tablet, detect, device, browser, version, mobilegrade, sniff |
-| # releases         | 3 |
-| # dependents       | 207 |
-| # downloads        | 7797403 |
+| # releases         | 2 |
+| # dependents       | 247 |
+| # downloads        | 8441159 |
 | # stars            | 57 |
 
 ## Links

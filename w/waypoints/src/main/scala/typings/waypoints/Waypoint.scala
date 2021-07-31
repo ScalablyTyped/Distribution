@@ -3,36 +3,34 @@ package typings.waypoints
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Waypoint extends StObject {
   
   // properties
-  var adapter: WaypointAdapter = js.native
+  var adapter: WaypointAdapter
   
-  var context: WaypointContext = js.native
+  var context: WaypointContext
   
   // Instance Methods
-  def destroy(): Waypoint = js.native
+  def destroy(): Waypoint
   
-  def disable(): Waypoint = js.native
+  def disable(): Waypoint
   
-  var element: HTMLElement = js.native
+  var element: HTMLElement
   
-  def enable(): Waypoint = js.native
+  def enable(): Waypoint
   
-  var group: WaypointGroup = js.native
+  var group: WaypointGroup
   
-  def next(): Waypoint | String = js.native
+  def next(): Waypoint | String
   
-  var options: WaypointOptions = js.native
+  var options: WaypointOptions
   
   // actually `null` not string
-  def previous(): Waypoint | String = js.native
+  def previous(): Waypoint | String
   
-  var triggerPoint: Double = js.native
+  var triggerPoint: Double
 }
 object Waypoint {
   

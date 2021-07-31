@@ -2,16 +2,14 @@ package typings.awsSdk.gameliftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateAliasOutput extends StObject {
   
   /**
     * The updated alias resource.
     */
-  var Alias: js.UndefOr[typings.awsSdk.gameliftMod.Alias] = js.native
+  var Alias: js.UndefOr[typings.awsSdk.gameliftMod.Alias] = js.undefined
 }
 object UpdateAliasOutput {
   

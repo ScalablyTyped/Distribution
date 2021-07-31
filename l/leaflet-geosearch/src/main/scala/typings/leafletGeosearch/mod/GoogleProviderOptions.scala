@@ -2,19 +2,17 @@ package typings.leafletGeosearch.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleProviderOptions extends StObject {
   
-  var bounds: js.UndefOr[String] = js.native
+  var bounds: js.UndefOr[String] = js.undefined
   
-  var key: String = js.native
+  var key: String
   
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
-  var region: js.UndefOr[String] = js.native
+  var region: js.UndefOr[String] = js.undefined
 }
 object GoogleProviderOptions {
   

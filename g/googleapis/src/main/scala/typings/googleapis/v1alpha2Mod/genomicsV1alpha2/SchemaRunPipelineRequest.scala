@@ -2,7 +2,6 @@ package typings.googleapis.v1alpha2Mod.genomicsV1alpha2
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,23 +12,22 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * specify both `pipelineId` and `ephemeralPipeline`. `pipelineArgs` must be
   * specified.
   */
-@js.native
 trait SchemaRunPipelineRequest extends StObject {
   
   /**
     * A new pipeline object to run once and then delete.
     */
-  var ephemeralPipeline: js.UndefOr[SchemaPipeline] = js.native
+  var ephemeralPipeline: js.UndefOr[SchemaPipeline] = js.undefined
   
   /**
     * The arguments to use when running this pipeline.
     */
-  var pipelineArgs: js.UndefOr[SchemaRunPipelineArgs] = js.native
+  var pipelineArgs: js.UndefOr[SchemaRunPipelineArgs] = js.undefined
   
   /**
     * The already created pipeline to run.
     */
-  var pipelineId: js.UndefOr[String] = js.native
+  var pipelineId: js.UndefOr[String] = js.undefined
 }
 object SchemaRunPipelineRequest {
   

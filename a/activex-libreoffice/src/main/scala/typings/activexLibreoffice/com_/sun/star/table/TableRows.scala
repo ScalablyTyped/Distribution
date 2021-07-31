@@ -5,16 +5,15 @@ import typings.activexLibreoffice.com_.sun.star.container.XEnumeration
 import typings.activexLibreoffice.com_.sun.star.container.XEnumerationAccess
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * represents a collection of all rows of a table or spreadsheet.
   * @see com.sun.star.table.TableRow
   */
-@js.native
 trait TableRows
-  extends XTableRows
+  extends StObject
+     with XTableRows
      with XEnumerationAccess
 object TableRows {
   

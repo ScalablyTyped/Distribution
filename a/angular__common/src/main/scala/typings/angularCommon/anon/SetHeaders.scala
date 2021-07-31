@@ -9,31 +9,29 @@ import typings.angularCommon.httpHttpMod.HttpHeaders
 import typings.angularCommon.httpHttpMod.HttpParams
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SetHeaders[V] extends StObject {
   
-  var body: js.UndefOr[V | Null] = js.native
+  var body: js.UndefOr[V | Null] = js.undefined
   
-  var headers: js.UndefOr[HttpHeaders] = js.native
+  var headers: js.UndefOr[HttpHeaders] = js.undefined
   
-  var method: js.UndefOr[String] = js.native
+  var method: js.UndefOr[String] = js.undefined
   
-  var params: js.UndefOr[HttpParams] = js.native
+  var params: js.UndefOr[HttpParams] = js.undefined
   
-  var reportProgress: js.UndefOr[Boolean] = js.native
+  var reportProgress: js.UndefOr[Boolean] = js.undefined
   
-  var responseType: js.UndefOr[arraybuffer | blob | json | text] = js.native
+  var responseType: js.UndefOr[arraybuffer | blob | json | text] = js.undefined
   
-  var setHeaders: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.native
+  var setHeaders: js.UndefOr[StringDictionary[String | js.Array[String]]] = js.undefined
   
-  var setParams: js.UndefOr[StringDictionary[String]] = js.native
+  var setParams: js.UndefOr[StringDictionary[String]] = js.undefined
   
-  var url: js.UndefOr[String] = js.native
+  var url: js.UndefOr[String] = js.undefined
   
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object SetHeaders {
   
@@ -44,7 +42,7 @@ object SetHeaders {
   }
   
   @scala.inline
-  implicit class SetHeadersMutableBuilder[Self <: SetHeaders[_], V] (val x: Self with SetHeaders[V]) extends AnyVal {
+  implicit class SetHeadersMutableBuilder[Self <: SetHeaders[?], V] (val x: Self & SetHeaders[V]) extends AnyVal {
     
     @scala.inline
     def setBody(value: V): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

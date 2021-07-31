@@ -10,9 +10,9 @@ Capture preview image from a video file
 | ------------------ | :-------------: |
 | Full name          | poster-image |
 | Keywords           | js, capture, frame, poster, screenshot, video, video poster |
-| # releases         | 2 |
+| # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 1925 |
+| # downloads        | 1327 |
 | # stars            | 1 |
 
 ## Links

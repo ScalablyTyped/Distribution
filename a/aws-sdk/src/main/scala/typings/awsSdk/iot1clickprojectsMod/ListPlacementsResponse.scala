@@ -2,21 +2,19 @@ package typings.awsSdk.iot1clickprojectsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListPlacementsResponse extends StObject {
   
   /**
     * The token used to retrieve the next set of results - will be effectively empty if there are no further results.
     */
-  var nextToken: js.UndefOr[NextToken] = js.native
+  var nextToken: js.UndefOr[NextToken] = js.undefined
   
   /**
     * An object listing the requested placements.
     */
-  var placements: PlacementSummaryList = js.native
+  var placements: PlacementSummaryList
 }
 object ListPlacementsResponse {
   

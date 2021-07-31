@@ -4,12 +4,11 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.std.Event
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IgMap
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -17,22 +16,22 @@ trait IgMap
   /**
     * Sets or gets the automatic height to add when automatically adding margins to the map.
     */
-  var autoMarginHeight: js.UndefOr[Double] = js.native
+  var autoMarginHeight: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets or gets the automatic width to add when automatically adding margins to the map.
     */
-  var autoMarginWidth: js.UndefOr[Double] = js.native
+  var autoMarginWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * Background content object
     */
-  var backgroundContent: js.UndefOr[IgMapBackgroundContent] = js.native
+  var backgroundContent: js.UndefOr[IgMapBackgroundContent] = js.undefined
   
   /**
     * Event fired when the control is displayed on a non HTML5 compliant browser
     */
-  var browserNotSupported: js.UndefOr[BrowserNotSupportedEvent] = js.native
+  var browserNotSupported: js.UndefOr[BrowserNotSupportedEvent] = js.undefined
   
   /**
     * Gets or sets the template to use for circle markers on the map.
@@ -40,14 +39,14 @@ trait IgMap
     * series with a marker type of circle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var circleMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var circleMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the cross hair point (in world coordinates)
     * Either or both of the crosshair point's X and Y may be set to double.NaN, in which
     * case the relevant crosshair line is hidden.
     */
-  var crosshairPoint: js.UndefOr[IgMapCrosshairPoint] = js.native
+  var crosshairPoint: js.UndefOr[IgMapCrosshairPoint] = js.undefined
   
   /**
     * Gets or sets the current Map's crosshair visibility override.
@@ -56,22 +55,22 @@ trait IgMap
     * "visible" Crosshair should be visible.
     * "collapsed" Crosshair should not be visible.
     */
-  var crosshairVisibility: js.UndefOr[String] = js.native
+  var crosshairVisibility: js.UndefOr[String] = js.undefined
   
   /**
     * Can be any valid data source accepted by $.ig.DataSource, or an instance of an $.ig.DataSource itself
     */
-  var dataSource: js.UndefOr[js.Any] = js.native
+  var dataSource: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Explicitly set data source type (such as "json"). Please refer to the documentation of $.ig.DataSource and its type property.
     */
-  var dataSourceType: js.UndefOr[String] = js.native
+  var dataSourceType: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies a remote URL accepted by $.ig.DataSource in order to request data from it
     */
-  var dataSourceUrl: js.UndefOr[String] = js.native
+  var dataSourceUrl: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the DefaultInteraction property. The default interaction state defines the map's response to mouse events.
@@ -81,7 +80,7 @@ trait IgMap
     * "dragZoom" User gesture will start a drag rectangle to zoom the map.
     * "dragPan" User gesture will start a pan action to move the map's window.
     */
-  var defaultInteraction: js.UndefOr[String] = js.native
+  var defaultInteraction: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the template to use for diamond markers on the map.
@@ -89,7 +88,7 @@ trait IgMap
     * series with a marker type of diamond.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var diamondMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var diamondMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the current Map's DragModifier property.
@@ -100,7 +99,7 @@ trait IgMap
     * "control" The modifier is set to control key.
     * "shift" The modifier is set to shift key.
     */
-  var dragModifier: js.UndefOr[String] = js.native
+  var dragModifier: js.UndefOr[String] = js.undefined
   
   /**
     * Occurs just after the current Map's grid area rectangle is changed.
@@ -116,12 +115,12 @@ trait IgMap
     * Use ui.oldTop to get old top value.
     * Use ui.oldWidth to get old top value.
     */
-  var gridAreaRectChanged: js.UndefOr[GridAreaRectChangedEvent] = js.native
+  var gridAreaRectChanged: js.UndefOr[GridAreaRectChangedEvent] = js.undefined
   
   /**
     * The height of the map. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var height: js.UndefOr[String | Double] = js.native
+  var height: js.UndefOr[String | Double] = js.undefined
   
   /**
     * Gets or sets the template to use for hexagon markers on the map.
@@ -129,7 +128,7 @@ trait IgMap
     * series with a marker type of hexagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var hexagonMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var hexagonMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the template to use for hexagram markers on the map.
@@ -137,24 +136,24 @@ trait IgMap
     * series with a marker type of hexagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var hexagramMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var hexagramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Set/Get the locale language setting for the widget.
     *
     */
-  var language: js.UndefOr[String] = js.native
+  var language: js.UndefOr[String] = js.undefined
   
   /**
     * Set/Get the locale setting for the widget.
     *
     */
-  var locale: js.UndefOr[js.Any] = js.native
+  var locale: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The background image uri use in the overview detail pane.
     */
-  var overviewPlusDetailPaneBackgroundImageUri: js.UndefOr[String] = js.native
+  var overviewPlusDetailPaneBackgroundImageUri: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the current Map's PanModifier property.
@@ -165,7 +164,7 @@ trait IgMap
     * "control" The modifier is set to control key.
     * "shift" The modifier is set to shift key.
     */
-  var panModifier: js.UndefOr[String] = js.native
+  var panModifier: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the template to use for pentagon markers on the map.
@@ -173,7 +172,7 @@ trait IgMap
     * series with a marker type of pentagon.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pentagonMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var pentagonMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the template to use for pentragram markers on the map.
@@ -181,17 +180,17 @@ trait IgMap
     * series with a marker type of pentagram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pentagramMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var pentagramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the brush used as the background for the current Map object's plot area.
     */
-  var plotAreaBackground: js.UndefOr[String] = js.native
+  var plotAreaBackground: js.UndefOr[String] = js.undefined
   
   /**
     * Sets whether the series viewer should prefer selecting higher resolution tiles over lower resolution tiles when performing tile zooming. Setting this to true will lower performance but increase quality.
     */
-  var preferHigherResolutionTiles: js.UndefOr[Boolean] = js.native
+  var preferHigherResolutionTiles: js.UndefOr[Boolean] = js.undefined
   
   /**
     * Gets or sets the preview rectangle.
@@ -199,7 +198,7 @@ trait IgMap
     * strokePath is hidden.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var previewRect: js.UndefOr[js.Any] = js.native
+  var previewRect: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the template to use for pyramid markers on the map.
@@ -207,30 +206,30 @@ trait IgMap
     * series with a marker type of pyramid.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var pyramidMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var pyramidMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Raised when the map's processing for an update has completed.
     * Function takes arguments evt and ui.
     * Use ui.map to get reference to map object.
     */
-  var refreshCompleted: js.UndefOr[RefreshCompletedEvent] = js.native
+  var refreshCompleted: js.UndefOr[RefreshCompletedEvent] = js.undefined
   
   /**
     * Set/Get the regional setting for the widget.
     *
     */
-  var regional: js.UndefOr[String | js.Object] = js.native
+  var regional: js.UndefOr[String | js.Object] = js.undefined
   
   /**
     * See $.ig.DataSource. Specifies the name of the property in which data records are held if the response is wrapped.
     */
-  var responseDataKey: js.UndefOr[String] = js.native
+  var responseDataKey: js.UndefOr[String] = js.undefined
   
   /**
     * An array of series objects
     */
-  var series: js.UndefOr[js.Array[IgMapSeries]] = js.native
+  var series: js.UndefOr[js.Array[IgMapSeries]] = js.undefined
   
   /**
     * Occurs when the cursors are moved over a series in this map.
@@ -243,7 +242,7 @@ trait IgMap
     * Use ui.positionX to get mouse X position.
     * Use ui.positionY to get mouse Y position.
     */
-  var seriesCursorMouseMove: js.UndefOr[SeriesCursorMouseMoveEvent] = js.native
+  var seriesCursorMouseMove: js.UndefOr[SeriesCursorMouseMoveEvent] = js.undefined
   
   /**
     * Occurs when the left mouse pointer enters an element of this map.
@@ -256,7 +255,7 @@ trait IgMap
     * Use ui.positionX to get mouse X position.
     * Use ui.positionY to get mouse Y position.
     */
-  var seriesMouseEnter: js.UndefOr[SeriesMouseEnterEvent] = js.native
+  var seriesMouseEnter: js.UndefOr[SeriesMouseEnterEvent] = js.undefined
   
   /**
     * Occurs when the left mouse pointer leaves an element of this map.
@@ -269,7 +268,7 @@ trait IgMap
     * Use ui.positionX to get mouse X position.
     * Use ui.positionY to get mouse Y position.
     */
-  var seriesMouseLeave: js.UndefOr[SeriesMouseLeaveEvent] = js.native
+  var seriesMouseLeave: js.UndefOr[SeriesMouseLeaveEvent] = js.undefined
   
   /**
     * Occurs when the left mouse button is pressed while the mouse pointer is over an element of this map.
@@ -282,7 +281,7 @@ trait IgMap
     * Use ui.positionX to get mouse X position.
     * Use ui.positionY to get mouse Y position.
     */
-  var seriesMouseLeftButtonDown: js.UndefOr[SeriesMouseLeftButtonDownEvent] = js.native
+  var seriesMouseLeftButtonDown: js.UndefOr[SeriesMouseLeftButtonDownEvent] = js.undefined
   
   /**
     * Occurs when the left mouse button is released while the mouse pointer is over an element of this map.
@@ -295,7 +294,7 @@ trait IgMap
     * Use ui.positionX to get mouse X position.
     * Use ui.positionY to get mouse Y position.
     */
-  var seriesMouseLeftButtonUp: js.UndefOr[SeriesMouseLeftButtonUpEvent] = js.native
+  var seriesMouseLeftButtonUp: js.UndefOr[SeriesMouseLeftButtonUpEvent] = js.undefined
   
   /**
     * Occurs when the left mouse pointer moves while over an element of this map.
@@ -308,7 +307,7 @@ trait IgMap
     * Use ui.positionX to get mouse X position.
     * Use ui.positionY to get mouse Y position.
     */
-  var seriesMouseMove: js.UndefOr[SeriesMouseMoveEvent] = js.native
+  var seriesMouseMove: js.UndefOr[SeriesMouseMoveEvent] = js.undefined
   
   /**
     * Gets or sets the template to use for square markers on the map.
@@ -316,7 +315,7 @@ trait IgMap
     * series with a marker type of square.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var squareMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var squareMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets or sets the template to use for tetragram markers on the map.
@@ -324,12 +323,12 @@ trait IgMap
     * series with a marker type of tetragram.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var tetragramMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var tetragramMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * The swatch used to style this widget
     */
-  var theme: js.UndefOr[String] = js.native
+  var theme: js.UndefOr[String] = js.undefined
   
   /**
     * Event fired after a tooltip is hidden
@@ -341,7 +340,7 @@ trait IgMap
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipHidden: js.UndefOr[TooltipHiddenEvent] = js.native
+  var tooltipHidden: js.UndefOr[TooltipHiddenEvent] = js.undefined
   
   /**
     * Event fired when the mouse has left a series and the tooltip is about to hide
@@ -353,7 +352,7 @@ trait IgMap
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipHiding: js.UndefOr[TooltipHidingEvent] = js.native
+  var tooltipHiding: js.UndefOr[TooltipHidingEvent] = js.undefined
   
   /**
     * Event fired when the mouse has hovered on a series and the tooltip is about to show
@@ -365,7 +364,7 @@ trait IgMap
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipShowing: js.UndefOr[TooltipShowingEvent] = js.native
+  var tooltipShowing: js.UndefOr[TooltipShowingEvent] = js.undefined
   
   /**
     * Event fired after a tooltip is shown
@@ -377,7 +376,7 @@ trait IgMap
     * Use ui.actualItemBrush to get item brush.
     * Use ui.actualSeriesBrush to get series brush.
     */
-  var tooltipShown: js.UndefOr[TooltipShownEvent] = js.native
+  var tooltipShown: js.UndefOr[TooltipShownEvent] = js.undefined
   
   /**
     * Gets or sets the template to use for triangle markers on the map.
@@ -385,7 +384,7 @@ trait IgMap
     * series with a marker type of triangle.
     * The provided object should have properties called render and optionally measure. See definition for option: legendItemBadgeTemplate
     */
-  var triangleMarkerTemplate: js.UndefOr[js.Any] = js.native
+  var triangleMarkerTemplate: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Event fired when the status of an ongoing Triangulation has changed.
@@ -394,36 +393,36 @@ trait IgMap
     * Use ui.series to get reference to current series object.
     * Use ui.currentStatus to get current status.
     */
-  var triangulationStatusChanged: js.UndefOr[TriangulationStatusChangedEvent] = js.native
+  var triangulationStatusChanged: js.UndefOr[TriangulationStatusChangedEvent] = js.undefined
   
   /**
     * Sets whether the series viewer should use cached tiles during zooms rather than the default live content.
     */
-  var useTiledZooming: js.UndefOr[Boolean] = js.native
+  var useTiledZooming: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The width of the map. It can be set as a number in pixels, string (px) or percentage (%).
     */
-  var width: js.UndefOr[String | Double] = js.native
+  var width: js.UndefOr[String | Double] = js.undefined
   
   /**
     * A number between 0 and 1 determining the position of the horizontal scroll.
     * This property is effectively a shortcut to the X position of the WindowRect property.
     */
-  var windowPositionHorizontal: js.UndefOr[Double] = js.native
+  var windowPositionHorizontal: js.UndefOr[Double] = js.undefined
   
   /**
     * A number between 0 and 1 determining the position of the vertical scroll.
     * This property is effectively a shortcut to the Y position of the WindowRect property.
     */
-  var windowPositionVertical: js.UndefOr[Double] = js.native
+  var windowPositionVertical: js.UndefOr[Double] = js.undefined
   
   /**
     * A rectangle representing the portion of the map currently in view.
     * A rectangle at X=0, Y=0 with a Height and Width of 1 implies the entire plotting area is in view.  A Height and Width of .5 would imply that the view is halfway zoomed in.
     * The provided object should have numeric properties called left, top, width and height.
     */
-  var windowRect: js.UndefOr[js.Any] = js.native
+  var windowRect: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Occurs just after the current Map's window rectangle is changed.
@@ -438,14 +437,14 @@ trait IgMap
     * Use ui.oldTop to get old top value.
     * Use ui.oldWidth to get old top value.
     */
-  var windowRectChanged: js.UndefOr[WindowRectChangedEvent] = js.native
+  var windowRectChanged: js.UndefOr[WindowRectChangedEvent] = js.undefined
   
   /**
     * Sets or gets the minimum width that the window rect is allowed to reach before being clamped.
     * Decrease this value if you want to allow for further zooming into the viewer.
     * If this value is lowered too much it can cause graphical corruption due to floating point arithmetic inaccuracy.
     */
-  var windowRectMinWidth: js.UndefOr[Double] = js.native
+  var windowRectMinWidth: js.UndefOr[Double] = js.undefined
   
   /**
     * The response to user panning and zooming: whether to update the view immediately while the user action is happening, or to defer the update to after the user action is complete.  The user action will be an action such as a mouse drag which causes panning and/or zooming to occur.
@@ -455,22 +454,22 @@ trait IgMap
     * "deferred" Defer the view update until after the user action is complete.
     * "immediate" Update the view immediately while the user action is happening.
     */
-  var windowResponse: js.UndefOr[String] = js.native
+  var windowResponse: js.UndefOr[String] = js.undefined
   
   /**
     * Gets or sets the current Map's zoom scale.
     */
-  var windowScale: js.UndefOr[Double] = js.native
+  var windowScale: js.UndefOr[Double] = js.undefined
   
   /**
     * Sets the maximum number of zoom tiles that the series viewer should cache while in tiled zooming mode.
     */
-  var zoomTileCacheSize: js.UndefOr[Double] = js.native
+  var zoomTileCacheSize: js.UndefOr[Double] = js.undefined
   
   /**
     * Gets or sets the current Map's zoomability.
     */
-  var zoomable: js.UndefOr[Boolean] = js.native
+  var zoomable: js.UndefOr[Boolean] = js.undefined
 }
 object IgMap {
   

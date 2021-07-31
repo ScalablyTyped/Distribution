@@ -6,51 +6,51 @@ import typings.winrt.Windows.Foundation.Collections.IVector
 import typings.winrt.Windows.Foundation.Uri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ISyndicationFeed extends ISyndicationNode {
+trait ISyndicationFeed
+  extends StObject
+     with ISyndicationNode {
   
-  var authors: IVector[SyndicationPerson] = js.native
+  var authors: IVector[SyndicationPerson]
   
-  var categories: IVector[SyndicationCategory] = js.native
+  var categories: IVector[SyndicationCategory]
   
-  var contributors: IVector[SyndicationPerson] = js.native
+  var contributors: IVector[SyndicationPerson]
   
-  var firstUri: Uri = js.native
+  var firstUri: Uri
   
-  var generator: SyndicationGenerator = js.native
+  var generator: SyndicationGenerator
   
-  var iconUri: Uri = js.native
+  var iconUri: Uri
   
-  var id: String = js.native
+  var id: String
   
-  var imageUri: Uri = js.native
+  var imageUri: Uri
   
-  var items: IVector[SyndicationItem] = js.native
+  var items: IVector[SyndicationItem]
   
-  var lastUpdatedTime: Date = js.native
+  var lastUpdatedTime: Date
   
-  var lastUri: Uri = js.native
+  var lastUri: Uri
   
-  var links: IVector[SyndicationLink] = js.native
+  var links: IVector[SyndicationLink]
   
-  def load(feed: String): Unit = js.native
+  def load(feed: String): Unit
   
-  def loadFromXml(feedDocument: XmlDocument): Unit = js.native
+  def loadFromXml(feedDocument: XmlDocument): Unit
   
-  var nextUri: Uri = js.native
+  var nextUri: Uri
   
-  var previousUri: Uri = js.native
+  var previousUri: Uri
   
-  var rights: ISyndicationText = js.native
+  var rights: ISyndicationText
   
-  var sourceFormat: SyndicationFormat = js.native
+  var sourceFormat: SyndicationFormat
   
-  var subtitle: ISyndicationText = js.native
+  var subtitle: ISyndicationText
   
-  var title: ISyndicationText = js.native
+  var title: ISyndicationText
 }
 object ISyndicationFeed {
   

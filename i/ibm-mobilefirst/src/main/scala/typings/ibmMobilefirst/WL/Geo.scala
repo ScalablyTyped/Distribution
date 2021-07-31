@@ -2,15 +2,15 @@ package typings.ibmMobilefirst.WL
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Geo {
   
-  @js.native
-  trait Circle extends Coordinate {
+  trait Circle
+    extends StObject
+       with Coordinate {
     
-    var radius: Double = js.native
+    var radius: Double
   }
   object Circle {
     
@@ -28,12 +28,11 @@ object Geo {
     }
   }
   
-  @js.native
   trait Coordinate extends StObject {
     
-    var latitute: Double = js.native
+    var latitute: Double
     
-    var longitude: Double = js.native
+    var longitude: Double
   }
   object Coordinate {
     
@@ -54,10 +53,9 @@ object Geo {
     }
   }
   
-  @js.native
   trait DistanceOptions extends StObject {
     
-    var bufferZoneWidth: Double = js.native
+    var bufferZoneWidth: Double
   }
   object DistanceOptions {
     
@@ -75,13 +73,12 @@ object Geo {
     }
   }
   
-  @js.native
   trait InsideOutsideOptions extends StObject {
     
     /**
       * confidenceLevel can be 'low', 'medium', 'high'
       */
-    var confidenceLevel: String = js.native
+    var confidenceLevel: String
   }
   object InsideOutsideOptions {
     

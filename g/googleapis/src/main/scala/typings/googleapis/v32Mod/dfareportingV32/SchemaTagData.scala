@@ -2,41 +2,39 @@ package typings.googleapis.v32Mod.dfareportingV32
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Placement Tag Data
   */
-@js.native
 trait SchemaTagData extends StObject {
   
   /**
     * Ad associated with this placement tag. Applicable only when format is
     * PLACEMENT_TAG_TRACKING.
     */
-  var adId: js.UndefOr[String] = js.native
+  var adId: js.UndefOr[String] = js.undefined
   
   /**
     * Tag string to record a click.
     */
-  var clickTag: js.UndefOr[String] = js.native
+  var clickTag: js.UndefOr[String] = js.undefined
   
   /**
     * Creative associated with this placement tag. Applicable only when format
     * is PLACEMENT_TAG_TRACKING.
     */
-  var creativeId: js.UndefOr[String] = js.native
+  var creativeId: js.UndefOr[String] = js.undefined
   
   /**
     * TagData tag format of this tag.
     */
-  var format: js.UndefOr[String] = js.native
+  var format: js.UndefOr[String] = js.undefined
   
   /**
     * Tag string for serving an ad.
     */
-  var impressionTag: js.UndefOr[String] = js.native
+  var impressionTag: js.UndefOr[String] = js.undefined
 }
 object SchemaTagData {
   

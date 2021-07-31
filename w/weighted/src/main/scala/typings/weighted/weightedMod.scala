@@ -3,26 +3,25 @@ package typings.weighted
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object weightedMod {
   
-  @JSImport("weighted/lib/weighted", JSImport.Namespace)
-  @js.native
-  def apply(obj: StringDictionary[Double]): String = js.native
-  @JSImport("weighted/lib/weighted", JSImport.Namespace)
-  @js.native
-  def apply(obj: StringDictionary[Double], rand: RandomFunc): String = js.native
+  @scala.inline
+  def apply(obj: StringDictionary[Double]): String = ^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def apply(obj: StringDictionary[Double], rand: RandomFunc): String = (^.asInstanceOf[js.Dynamic].apply(obj.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[String]
   /**
     * Weighted returns a Function additionally available as `weighted.select`
     */
+  @scala.inline
+  def apply[T](set: js.Array[T], weights: js.Array[Double]): T = (^.asInstanceOf[js.Dynamic].apply(set.asInstanceOf[js.Any], weights.asInstanceOf[js.Any])).asInstanceOf[T]
+  @scala.inline
+  def apply[T](set: js.Array[T], weights: js.Array[Double], rand: RandomFunc): T = (^.asInstanceOf[js.Dynamic].apply(set.asInstanceOf[js.Any], weights.asInstanceOf[js.Any], rand.asInstanceOf[js.Any])).asInstanceOf[T]
+  
   @JSImport("weighted/lib/weighted", JSImport.Namespace)
   @js.native
-  def apply[T](set: js.Array[T], weights: js.Array[Double]): T = js.native
-  @JSImport("weighted/lib/weighted", JSImport.Namespace)
-  @js.native
-  def apply[T](set: js.Array[T], weights: js.Array[Double], rand: RandomFunc): T = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("weighted/lib/weighted", "select")
   @js.native

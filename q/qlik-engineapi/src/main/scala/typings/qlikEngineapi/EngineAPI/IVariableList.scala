@@ -2,16 +2,14 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * VariableListObject...
   */
-@js.native
 trait IVariableList extends StObject {
   
-  var qItems: js.Array[INxVariableListItem] = js.native
+  var qItems: js.Array[INxVariableListItem]
 }
 object IVariableList {
   

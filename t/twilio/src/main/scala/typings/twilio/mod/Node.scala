@@ -2,12 +2,13 @@ package typings.twilio.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("twilio", "Node")
 @js.native
-class Node () extends NodeOptions {
+class Node ()
+  extends StObject
+     with NodeOptions {
   def this(config: NodeOptions) = this()
   
   def body(): Node = js.native
@@ -102,6 +103,9 @@ class Node () extends NodeOptions {
   @JSName("leave")
   var leave_Original: TwimlMethod = js.native
   
+  /* CompleteClass */
+  var legalNodes: js.Array[String] = js.native
+  
   def media(): Node = js.native
   def media(arg1: String): Node = js.native
   def media(arg1: String, arg2: js.Any): Node = js.native
@@ -123,6 +127,9 @@ class Node () extends NodeOptions {
   def message(arg1: TwimlCallback, arg2: js.Any): Node = js.native
   @JSName("message")
   var message_Original: TwimlMethod = js.native
+  
+  /* CompleteClass */
+  var name: String = js.native
   
   def number(): Node = js.native
   def number(arg1: String): Node = js.native

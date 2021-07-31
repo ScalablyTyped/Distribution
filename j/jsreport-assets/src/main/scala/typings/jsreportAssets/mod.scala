@@ -3,28 +3,28 @@ package typings.jsreportAssets
 import typings.jsreportCore.mod.ExtensionDefinition
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jsreport-assets", JSImport.Namespace)
-  @js.native
-  def apply(): ExtensionDefinition = js.native
-  @JSImport("jsreport-assets", JSImport.Namespace)
-  @js.native
-  def apply(cfg: Configuration): ExtensionDefinition = js.native
+  @scala.inline
+  def apply(): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[ExtensionDefinition]
+  @scala.inline
+  def apply(cfg: Configuration): ExtensionDefinition = ^.asInstanceOf[js.Dynamic].apply(cfg.asInstanceOf[js.Any]).asInstanceOf[ExtensionDefinition]
   
+  @JSImport("jsreport-assets", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
   trait Configuration extends StObject {
     
-    var allowedFiles: js.UndefOr[String] = js.native
+    var allowedFiles: js.UndefOr[String] = js.undefined
     
-    var publicAccessEnabled: js.UndefOr[Boolean] = js.native
+    var publicAccessEnabled: js.UndefOr[Boolean] = js.undefined
     
-    var rootUrlForLinks: js.UndefOr[String] = js.native
+    var rootUrlForLinks: js.UndefOr[String] = js.undefined
     
-    var searchOnDiskIfNotFoundInStore: js.UndefOr[Boolean] = js.native
+    var searchOnDiskIfNotFoundInStore: js.UndefOr[Boolean] = js.undefined
   }
   object Configuration {
     

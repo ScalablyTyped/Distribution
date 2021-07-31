@@ -9,7 +9,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object groupPolicyAttachmentMod {
@@ -40,6 +39,10 @@ object groupPolicyAttachmentMod {
   /* static members */
   object GroupPolicyAttachment {
     
+    @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing GroupPolicyAttachment resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -49,40 +52,34 @@ object groupPolicyAttachmentMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID]): GroupPolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): GroupPolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupPolicyAttachmentState): GroupPolicyAttachment = js.native
-    @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: GroupPolicyAttachmentState, opts: CustomResourceOptions): GroupPolicyAttachment = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): GroupPolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[GroupPolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): GroupPolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupPolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupPolicyAttachmentState): GroupPolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[GroupPolicyAttachment]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: GroupPolicyAttachmentState, opts: CustomResourceOptions): GroupPolicyAttachment = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[GroupPolicyAttachment]
     
     /**
       * Returns true if the given object is an instance of GroupPolicyAttachment.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/iam/groupPolicyAttachment", "GroupPolicyAttachment.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicyAttachment.GroupPolicyAttachment */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/iam/groupPolicyAttachment.GroupPolicyAttachment */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/iam/groupPolicyAttachment.GroupPolicyAttachment */ Boolean]
   }
   
-  @js.native
   trait GroupPolicyAttachmentArgs extends StObject {
     
     /**
       * The group the policy should be applied to
       */
-    val group: Input[String | Group] = js.native
+    val group: Input[String | Group]
     
     /**
       * The ARN of the policy you want to apply
       */
-    val policyArn: Input[ARN] = js.native
+    val policyArn: Input[ARN]
   }
   object GroupPolicyAttachmentArgs {
     
@@ -97,18 +94,17 @@ object groupPolicyAttachmentMod {
     }
   }
   
-  @js.native
   trait GroupPolicyAttachmentState extends StObject {
     
     /**
       * The group the policy should be applied to
       */
-    val group: js.UndefOr[Input[String | Group]] = js.native
+    val group: js.UndefOr[Input[String | Group]] = js.undefined
     
     /**
       * The ARN of the policy you want to apply
       */
-    val policyArn: js.UndefOr[Input[ARN]] = js.native
+    val policyArn: js.UndefOr[Input[ARN]] = js.undefined
   }
   object GroupPolicyAttachmentState {
     

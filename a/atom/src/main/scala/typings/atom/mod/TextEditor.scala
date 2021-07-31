@@ -19,7 +19,6 @@ import typings.atom.atomBooleans.`false`
 import typings.std.RegExp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("atom", "TextEditor")
@@ -507,7 +506,7 @@ class TextEditor () extends StObject {
   
   /* For each selection, replace the selected text with the given text. */
   def insertText(text: String): Range | `false` = js.native
-  def insertText(text: String, options: TextInsertionOptions with ReadonlyEditOptions): Range | `false` = js.native
+  def insertText(text: String, options: TextInsertionOptions & ReadonlyEditOptions): Range | `false` = js.native
   
   /** Determine if the given row is entirely a comment. */
   def isBufferRowCommented(bufferRow: Double): Boolean = js.native
@@ -806,7 +805,7 @@ class TextEditor () extends StObject {
     *  selection text.
     */
   def pasteText(): Unit = js.native
-  def pasteText(options: TextInsertionOptions with ReadonlyEditOptions): Unit = js.native
+  def pasteText(options: TextInsertionOptions & ReadonlyEditOptions): Unit = js.native
   
   /** Redo the last change. */
   def redo(): Unit = js.native
@@ -1137,7 +1136,7 @@ class TextEditor () extends StObject {
   
   /** Set the text in the given Range in buffer coordinates. */
   def setTextInBufferRange(range: RangeCompatible, text: String): Range = js.native
-  def setTextInBufferRange(range: RangeCompatible, text: String, options: TextEditOptions with ReadonlyEditOptions): Range = js.native
+  def setTextInBufferRange(range: RangeCompatible, text: String, options: TextEditOptions & ReadonlyEditOptions): Range = js.native
   
   /**
     *  Get the syntactic tree {ScopeDescriptor} for the given position in buffer

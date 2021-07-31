@@ -3,25 +3,23 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BaseDeploymentInput extends StObject {
   
-  var condition: String = js.native
+  var condition: String
   
   /**
     * Gets or sets the job cancel timeout in minutes for deployment which are cancelled by user for this release environment
     */
-  var jobCancelTimeoutInMinutes: Double = js.native
+  var jobCancelTimeoutInMinutes: Double
   
-  var overrideInputs: StringDictionary[String] = js.native
+  var overrideInputs: StringDictionary[String]
   
   /**
     * Gets or sets the job execution timeout in minutes for deployment which are queued against this release environment
     */
-  var timeoutInMinutes: Double = js.native
+  var timeoutInMinutes: Double
 }
 object BaseDeploymentInput {
   

@@ -6,29 +6,29 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceUsersSessionsList extends StandardParameters {
+trait ParamsResourceUsersSessionsList
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * An RFC3339 timestamp. Only sessions ending between the start and end
     * times will be included in the response.
     */
-  var endTime: js.UndefOr[String] = js.native
+  var endTime: js.UndefOr[String] = js.undefined
   
   /**
     * If true, deleted sessions will be returned. When set to true, sessions
     * returned in this response will only have an ID and will not have any
     * other fields.
     */
-  var includeDeleted: js.UndefOr[Boolean] = js.native
+  var includeDeleted: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The continuation token, which is used for incremental syncing. To get the
@@ -39,19 +39,19 @@ trait ParamsResourceUsersSessionsList extends StandardParameters {
     * specified. If none of start time, end time, and the page token is
     * specified, sessions modified in the last 30 days are returned.
     */
-  var pageToken: js.UndefOr[String] = js.native
+  var pageToken: js.UndefOr[String] = js.undefined
   
   /**
     * An RFC3339 timestamp. Only sessions ending between the start and end
     * times will be included in the response.
     */
-  var startTime: js.UndefOr[String] = js.native
+  var startTime: js.UndefOr[String] = js.undefined
   
   /**
     * List sessions for the person identified. Use me to indicate the
     * authenticated user. Only me is supported at this time.
     */
-  var userId: js.UndefOr[String] = js.native
+  var userId: js.UndefOr[String] = js.undefined
 }
 object ParamsResourceUsersSessionsList {
   

@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/classroom/v1", "classroom_v1.Resource$Registrations")
@@ -50,7 +49,7 @@ class ResourceRegistrations protected () extends StObject {
     */
   def create(): GaxiosPromise[SchemaRegistration] = js.native
   def create(callback: BodyResponseCallback[SchemaRegistration]): Unit = js.native
-  def create(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaRegistration] = js.native
+  def create(params: Unit, options: MethodOptions): GaxiosPromise[SchemaRegistration] = js.native
   def create(params: ParamsResourceRegistrationsCreate): GaxiosPromise[SchemaRegistration] = js.native
   def create(params: ParamsResourceRegistrationsCreate, callback: BodyResponseCallback[SchemaRegistration]): Unit = js.native
   def create(
@@ -80,7 +79,7 @@ class ResourceRegistrations protected () extends StObject {
     */
   def delete(): GaxiosPromise[SchemaEmpty] = js.native
   def delete(callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
-  def delete(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
+  def delete(params: Unit, options: MethodOptions): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceRegistrationsDelete): GaxiosPromise[SchemaEmpty] = js.native
   def delete(params: ParamsResourceRegistrationsDelete, callback: BodyResponseCallback[SchemaEmpty]): Unit = js.native
   def delete(

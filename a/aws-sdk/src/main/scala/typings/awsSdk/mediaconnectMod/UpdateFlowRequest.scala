@@ -2,18 +2,16 @@ package typings.awsSdk.mediaconnectMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateFlowRequest extends StObject {
   
   /**
     * The flow that you want to update.
     */
-  var FlowArn: string = js.native
+  var FlowArn: string
   
-  var SourceFailoverConfig: js.UndefOr[UpdateFailoverConfig] = js.native
+  var SourceFailoverConfig: js.UndefOr[UpdateFailoverConfig] = js.undefined
 }
 object UpdateFlowRequest {
   

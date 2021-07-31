@@ -3,43 +3,41 @@ package typings.leafletRoutingMachine.mod.Routing_
 import typings.leaflet.mod.CircleMarkerOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ItineraryOptions extends StObject {
   
-  var alternativeClassName: js.UndefOr[String] = js.native
+  var alternativeClassName: js.UndefOr[String] = js.undefined
   
-  var collapseBtn: js.UndefOr[js.Function1[/* itinerary */ Itinerary_, Unit]] = js.native
+  var collapseBtn: js.UndefOr[js.Function1[/* itinerary */ Itinerary_, Unit]] = js.undefined
   
-  var collapseBtnClass: js.UndefOr[String] = js.native
+  var collapseBtnClass: js.UndefOr[String] = js.undefined
   
-  var collapsible: js.UndefOr[Boolean] = js.native
+  var collapsible: js.UndefOr[Boolean] = js.undefined
   
-  var containerClassName: js.UndefOr[String] = js.native
+  var containerClassName: js.UndefOr[String] = js.undefined
   
-  var distanceTemplate: js.UndefOr[String] = js.native
+  var distanceTemplate: js.UndefOr[String] = js.undefined
   
-  var formatter: js.UndefOr[Formatter_] = js.native
+  var formatter: js.UndefOr[Formatter_] = js.undefined
   
-  var itineraryBuilder: js.UndefOr[ItineraryBuilder_] = js.native
+  var itineraryBuilder: js.UndefOr[ItineraryBuilder_] = js.undefined
   
-  var itineraryClassName: js.UndefOr[String] = js.native
+  var itineraryClassName: js.UndefOr[String] = js.undefined
   
-  var itineraryFormatter: js.UndefOr[ItineraryBuilder_] = js.native
+  var itineraryFormatter: js.UndefOr[ItineraryBuilder_] = js.undefined
   
-  var minimizedClassName: js.UndefOr[String] = js.native
+  var minimizedClassName: js.UndefOr[String] = js.undefined
   
-  var pointMarkerStyle: js.UndefOr[CircleMarkerOptions] = js.native
+  var pointMarkerStyle: js.UndefOr[CircleMarkerOptions] = js.undefined
   
-  var show: js.UndefOr[Boolean] = js.native
+  var show: js.UndefOr[Boolean] = js.undefined
   
-  var summaryTemplate: js.UndefOr[String] = js.native
+  var summaryTemplate: js.UndefOr[String] = js.undefined
   
-  var timeTemplate: js.UndefOr[String] = js.native
+  var timeTemplate: js.UndefOr[String] = js.undefined
   
-  var totalDistanceRoundingSensitivity: js.UndefOr[Double] = js.native
+  var totalDistanceRoundingSensitivity: js.UndefOr[Double] = js.undefined
 }
 object ItineraryOptions {
   

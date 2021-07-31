@@ -3,27 +3,27 @@ package typings.babelTypes.ts36Mod
 import typings.babelTypes.babelTypesStrings.TypeParameterDeclaration
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TypeParameter_ extends Node {
+trait TypeParameter_
+  extends StObject
+     with Node {
   
-  var default: Flow | Null = js.native
+  var default: Flow | Null
   
-  var bound: TypeAnnotation_ | Null = js.native
+  var bound: TypeAnnotation_ | Null
   
-  var name: String | Null = js.native
+  var name: String | Null
   
   @JSName("type")
-  var type_TypeParameter_ : TypeParameterDeclaration = js.native
+  var type_TypeParameter_ : TypeParameterDeclaration
 }
 object TypeParameter_ {
   
   @scala.inline
-  def apply(end: Double, loc: SourceLocation, start: Double, `type`: TypeParameterDeclaration): TypeParameter_ = {
-    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(end: Double, loc: SourceLocation, start: Double): TypeParameter_ = {
+    val __obj = js.Dynamic.literal(end = end.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], bound = null, default = null, name = null)
+    __obj.updateDynamic("type")("TypeParameterDeclaration")
     __obj.asInstanceOf[TypeParameter_]
   }
   

@@ -2,17 +2,15 @@ package typings.serverless.awsProviderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Quota extends StObject {
   
-  var limit: js.UndefOr[Double | String] = js.native
+  var limit: js.UndefOr[Double | String] = js.undefined
   
-  var offset: js.UndefOr[Double | String] = js.native
+  var offset: js.UndefOr[Double | String] = js.undefined
   
-  var period: js.UndefOr[String] = js.native
+  var period: js.UndefOr[String] = js.undefined
 }
 object Quota {
   

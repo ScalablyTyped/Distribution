@@ -3,7 +3,6 @@ package typings.makeDir
 import typings.makeDir.anon.Typeoffs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -32,26 +31,25 @@ object mod {
   	})();
   	```
   	*/
+  @scala.inline
+  def apply(path: String): js.Promise[String] = ^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any]).asInstanceOf[js.Promise[String]]
+  @scala.inline
+  def apply(path: String, options: Options): js.Promise[String] = (^.asInstanceOf[js.Dynamic].apply(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[String]]
+  
   @JSImport("make-dir", JSImport.Namespace)
   @js.native
-  def apply(path: String): js.Promise[String] = js.native
-  @JSImport("make-dir", JSImport.Namespace)
-  @js.native
-  def apply(path: String, options: Options): js.Promise[String] = js.native
+  val ^ : js.Any = js.native
   
   /**
   	Synchronously make a directory and its parents if needed - Think `mkdir -p`.
   	@param path - Directory to create.
   	@returns The path to the created directory.
   	*/
-  @JSImport("make-dir", "sync")
-  @js.native
-  def sync(path: String): String = js.native
-  @JSImport("make-dir", "sync")
-  @js.native
-  def sync(path: String, options: Options): String = js.native
+  @scala.inline
+  def sync(path: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def sync(path: String, options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("sync")(path.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait Options extends StObject {
     
     /**
@@ -59,13 +57,13 @@ object mod {
     		Using a custom `fs` implementation will block the use of the native `recursive` option if `fs.mkdir` or `fs.mkdirSync` is not the native function.
     		@default require('fs')
     		*/
-    val fs: js.UndefOr[Typeoffs] = js.native
+    val fs: js.UndefOr[Typeoffs] = js.undefined
     
     /**
     		Directory [permissions](https://x-team.com/blog/file-system-permissions-umask-node-js/).
     		@default 0o777
     		*/
-    val mode: js.UndefOr[Double] = js.native
+    val mode: js.UndefOr[Double] = js.undefined
   }
   object Options {
     

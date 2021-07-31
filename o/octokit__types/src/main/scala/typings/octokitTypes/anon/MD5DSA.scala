@@ -2,19 +2,17 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MD5DSA extends StObject {
   
-  var MD5_DSA: String = js.native
+  var MD5_DSA: String
   
-  var MD5_RSA: String = js.native
+  var MD5_RSA: String
   
-  var SHA256_DSA: String = js.native
+  var SHA256_DSA: String
   
-  var SHA256_RSA: String = js.native
+  var SHA256_RSA: String
 }
 object MD5DSA {
   

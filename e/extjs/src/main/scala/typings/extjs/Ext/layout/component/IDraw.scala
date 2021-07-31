@@ -2,11 +2,11 @@ package typings.extjs.Ext.layout.component
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IDraw extends IAuto
+trait IDraw
+  extends StObject
+     with IAuto
 object IDraw {
   
   @scala.inline

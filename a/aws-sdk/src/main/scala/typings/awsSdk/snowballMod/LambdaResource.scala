@@ -2,21 +2,19 @@ package typings.awsSdk.snowballMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LambdaResource extends StObject {
   
   /**
     * The array of ARNs for S3Resource objects to trigger the LambdaResource objects associated with this job.
     */
-  var EventTriggers: js.UndefOr[EventTriggerDefinitionList] = js.native
+  var EventTriggers: js.UndefOr[EventTriggerDefinitionList] = js.undefined
   
   /**
     * An Amazon Resource Name (ARN) that represents an AWS Lambda function to be triggered by PUT object actions on the associated local Amazon S3 resource.
     */
-  var LambdaArn: js.UndefOr[ResourceARN] = js.native
+  var LambdaArn: js.UndefOr[ResourceARN] = js.undefined
 }
 object LambdaResource {
   

@@ -3,13 +3,13 @@ package typings.winrt.Windows.ApplicationModel.Activation
 import typings.winrt.Windows.ApplicationModel.Contacts.Provider.ContactPickerUI
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait IContactPickerActivatedEventArgs extends IActivatedEventArgs {
+trait IContactPickerActivatedEventArgs
+  extends StObject
+     with IActivatedEventArgs {
   
-  var contactPickerUI: ContactPickerUI = js.native
+  var contactPickerUI: ContactPickerUI
 }
 object IContactPickerActivatedEventArgs {
   

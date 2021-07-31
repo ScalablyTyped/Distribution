@@ -4,39 +4,37 @@ import typings.winrtUwp.Windows.Foundation.Collections.IMapView
 import typings.winrtUwp.Windows.Storage.Streams.IBuffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Contains data from the recently swiped card. */
-@js.native
 trait MagneticStripeReaderReport extends StObject {
   
   /** Gets the additional security or encryption information for the recently swiped card. */
-  var additionalSecurityInformation: IBuffer = js.native
+  var additionalSecurityInformation: IBuffer
   
   /** Gets the card authentication information for the recently swiped card. */
-  var cardAuthenticationData: IBuffer = js.native
+  var cardAuthenticationData: IBuffer
   
   /** Gets the length of the raw CardAuthenticationData before it is encrypted. */
-  var cardAuthenticationDataLength: Double = js.native
+  var cardAuthenticationDataLength: Double
   
   /** Gets the card type identifier for the recently swiped card. */
-  var cardType: Double = js.native
+  var cardType: Double
   
   /** Gets a dictionary of properties for the recently swiped card. */
-  var properties: IMapView[String, String] = js.native
+  var properties: IMapView[String, String]
   
   /** Gets the track data for Track 1. */
-  var track1: MagneticStripeReaderTrackData = js.native
+  var track1: MagneticStripeReaderTrackData
   
   /** Gets the track data for Track 2. */
-  var track2: MagneticStripeReaderTrackData = js.native
+  var track2: MagneticStripeReaderTrackData
   
   /** Gets the track data for Track 3. */
-  var track3: MagneticStripeReaderTrackData = js.native
+  var track3: MagneticStripeReaderTrackData
   
   /** Gets the track data for Track 4. */
-  var track4: MagneticStripeReaderTrackData = js.native
+  var track4: MagneticStripeReaderTrackData
 }
 object MagneticStripeReaderReport {
   

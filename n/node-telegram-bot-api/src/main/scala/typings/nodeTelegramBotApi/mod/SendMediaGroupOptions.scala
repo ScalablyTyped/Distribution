@@ -2,15 +2,13 @@ package typings.nodeTelegramBotApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SendMediaGroupOptions extends StObject {
   
-  var disable_notification: js.UndefOr[Boolean] = js.native
+  var disable_notification: js.UndefOr[Boolean] = js.undefined
   
-  var reply_to_message_id: js.UndefOr[Double] = js.native
+  var reply_to_message_id: js.UndefOr[Double] = js.undefined
 }
 object SendMediaGroupOptions {
   

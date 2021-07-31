@@ -2,17 +2,15 @@ package typings.typescriptServices.TypeScript.Services.Formatting
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RuleOperationContext extends StObject {
   
-  def InContext(context: FormattingContext): Boolean = js.native
+  def InContext(context: FormattingContext): Boolean
   
-  def IsAny(): Boolean = js.native
+  def IsAny(): Boolean
   
-  var customContextChecks: js.Any = js.native
+  var customContextChecks: js.Any
 }
 object RuleOperationContext {
   

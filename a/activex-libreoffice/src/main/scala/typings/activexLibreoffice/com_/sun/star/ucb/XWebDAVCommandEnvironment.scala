@@ -6,12 +6,12 @@ import typings.activexLibreoffice.com_.sun.star.task.XInteractionHandler
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** A command environment that can be used to deal with WebDAV/HTTP specific commands. */
-@js.native
-trait XWebDAVCommandEnvironment extends XCommandEnvironment {
+trait XWebDAVCommandEnvironment
+  extends StObject
+     with XCommandEnvironment {
   
   /**
     * This method gets called while assembling an WebDAV/HTTP request. The returned headername-headervalue pairs will be appended to the list of request
@@ -20,7 +20,7 @@ trait XWebDAVCommandEnvironment extends XCommandEnvironment {
     * @param eMethod The WebDAV/HTTP method ("GET","PUT","MKCOL",...) as defined in WebDAVHTTPMethod.
     * @returns A sequence of header name, header value pairs. The header names must be the plain names and contain no trailing ":".
     */
-  def getUserRequestHeaders(aURI: String, eMethod: WebDAVHTTPMethod): SafeArray[StringPair] = js.native
+  def getUserRequestHeaders(aURI: String, eMethod: WebDAVHTTPMethod): SafeArray[StringPair]
 }
 object XWebDAVCommandEnvironment {
   

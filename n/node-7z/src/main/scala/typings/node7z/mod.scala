@@ -17,10 +17,13 @@ import typings.std.Error
 import typings.std.Map
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("node-7z", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   /**
     * Add files to an archive
@@ -28,18 +31,14 @@ object mod {
     * @param source Source files to add to the archive
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "add")
-  @js.native
-  def add(archive: String, source: String): ZipStream = js.native
-  @JSImport("node-7z", "add")
-  @js.native
-  def add(archive: String, source: String, options: SevenZipOptions): ZipStream = js.native
-  @JSImport("node-7z", "add")
-  @js.native
-  def add(archive: String, source: js.Array[String]): ZipStream = js.native
-  @JSImport("node-7z", "add")
-  @js.native
-  def add(archive: String, source: js.Array[String], options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def add(archive: String, source: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def add(archive: String, source: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def add(archive: String, source: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def add(archive: String, source: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("add")(archive.asInstanceOf[js.Any], source.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Delete files from an archive
@@ -47,18 +46,14 @@ object mod {
     * @param output Target files to remove from the archive
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "delete")
-  @js.native
-  def delete(archive: String, target: String): ZipStream = js.native
-  @JSImport("node-7z", "delete")
-  @js.native
-  def delete(archive: String, target: String, options: SevenZipOptions): ZipStream = js.native
-  @JSImport("node-7z", "delete")
-  @js.native
-  def delete(archive: String, target: js.Array[String]): ZipStream = js.native
-  @JSImport("node-7z", "delete")
-  @js.native
-  def delete(archive: String, target: js.Array[String], options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def delete(archive: String, target: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def delete(archive: String, target: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def delete(archive: String, target: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def delete(archive: String, target: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("delete")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Extracts files from an archive to the current directory or to the output directory. This command copies all extracted files to one directory.
@@ -66,12 +61,10 @@ object mod {
     * @param output Output directory
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "extract")
-  @js.native
-  def extract(archive: String, output: String): ZipStream = js.native
-  @JSImport("node-7z", "extract")
-  @js.native
-  def extract(archive: String, output: String, options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def extract(archive: String, output: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def extract(archive: String, output: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extract")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Extracts files from an archive to the current directory or to the output directory.
@@ -79,51 +72,42 @@ object mod {
     * @param output Output directory
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "extractFull")
-  @js.native
-  def extractFull(archive: String, output: String): ZipStream = js.native
-  @JSImport("node-7z", "extractFull")
-  @js.native
-  def extractFull(archive: String, output: String, options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def extractFull(archive: String, output: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFull")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def extractFull(archive: String, output: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("extractFull")(archive.asInstanceOf[js.Any], output.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Calculate hash values for files
     * @param target Target files to calculate the hash of
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "hash")
-  @js.native
-  def hash(target: String): ZipStream = js.native
-  @JSImport("node-7z", "hash")
-  @js.native
-  def hash(target: String, options: SevenZipOptions): ZipStream = js.native
-  @JSImport("node-7z", "hash")
-  @js.native
-  def hash(target: js.Array[String]): ZipStream = js.native
-  @JSImport("node-7z", "hash")
-  @js.native
-  def hash(target: js.Array[String], options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def hash(target: String): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
+  @scala.inline
+  def hash(target: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def hash(target: js.Array[String]): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
+  @scala.inline
+  def hash(target: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("hash")(target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Lists contents of archive
     * @param archive Archive to list the contents from
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "list")
-  @js.native
-  def list(archive: String): ZipStream = js.native
-  @JSImport("node-7z", "list")
-  @js.native
-  def list(archive: String, options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def list(archive: String): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("list")(archive.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
+  @scala.inline
+  def list(archive: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("list")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Registers the child process given by the $childProcess option.
     * Must be deferred with the $defer option during creation.
     * @param stream ZipStream to register listeners on
     */
-  @JSImport("node-7z", "listen")
-  @js.native
-  def listen(stream: ZipStream): ZipStream = js.native
+  @scala.inline
+  def listen(stream: ZipStream): ZipStream = ^.asInstanceOf[js.Dynamic].applyDynamic("listen")(stream.asInstanceOf[js.Any]).asInstanceOf[ZipStream]
   
   /**
     * Rename files in an archive
@@ -131,21 +115,18 @@ object mod {
     * @param target Pairs of target names and new names to rename to
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "rename")
-  @js.native
-  def rename(archive: String, target: js.Array[js.Array[String]]): ZipStream = js.native
-  @JSImport("node-7z", "rename")
-  @js.native
-  def rename(archive: String, target: js.Array[js.Array[String]], options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def rename(archive: String, target: js.Array[js.Array[String]]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def rename(archive: String, target: js.Array[js.Array[String]], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("rename")(archive.asInstanceOf[js.Any], target.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Tests archive files
     * @param archive Archive to test
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "test")
-  @js.native
-  def test(archive: String, options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def test(archive: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("test")(archive.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   /**
     * Update older files in the archive and add files that are not already in the archiv
@@ -153,148 +134,143 @@ object mod {
     * @param source Source files to update from the file-system to the archive
     * @param options Seven Zip Options
     */
-  @JSImport("node-7z", "update")
-  @js.native
-  def update(archive: String, files: String): ZipStream = js.native
-  @JSImport("node-7z", "update")
-  @js.native
-  def update(archive: String, files: String, options: SevenZipOptions): ZipStream = js.native
-  @JSImport("node-7z", "update")
-  @js.native
-  def update(archive: String, files: js.Array[String]): ZipStream = js.native
-  @JSImport("node-7z", "update")
-  @js.native
-  def update(archive: String, files: js.Array[String], options: SevenZipOptions): ZipStream = js.native
+  @scala.inline
+  def update(archive: String, files: String): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def update(archive: String, files: String, options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def update(archive: String, files: js.Array[String]): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
+  @scala.inline
+  def update(archive: String, files: js.Array[String], options: SevenZipOptions): ZipStream = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(archive.asInstanceOf[js.Any], files.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[ZipStream]
   
   // NOTE - The names are not wrong, some are spelt wrong in the source
-  @js.native
   trait CommandLineSwitches extends StObject {
     
     /** Extract file as alternate stream, if there is ':' character in name (-snc) */
-    var alternateStreamExtract: js.UndefOr[Boolean] = js.native
+    var alternateStreamExtract: js.UndefOr[Boolean] = js.undefined
     
     /** Replace ':' character to '_' character in paths of alternate streams (-snr) */
-    var alternateStreamReplace: js.UndefOr[Boolean] = js.native
+    var alternateStreamReplace: js.UndefOr[Boolean] = js.undefined
     
     /** Store NTFS alternate Streams (-sns) */
-    var alternateStreamStore: js.UndefOr[Boolean] = js.native
+    var alternateStreamStore: js.UndefOr[Boolean] = js.undefined
     
     /** Set Archive name mode (-sa) */
-    var archiveNameMode: js.UndefOr[String] = js.native
+    var archiveNameMode: js.UndefOr[String] = js.undefined
     
     /** Type of archive (-t) */
-    var archiveType: js.UndefOr[String] = js.native
+    var archiveType: js.UndefOr[String] = js.undefined
     
     /** Set Sensitive Case mode (-ssc) */
-    var caseSensitive: js.UndefOr[Boolean] = js.native
+    var caseSensitive: js.UndefOr[Boolean] = js.undefined
     
     /** Set CPU thread affinity mask (hexadecimal number). (-stm) */
-    var cpuAffinity: js.UndefOr[String] = js.native
+    var cpuAffinity: js.UndefOr[String] = js.undefined
     
     /** Delete files after compression (-sdel) */
-    var deleteFilesAfter: js.UndefOr[Boolean] = js.native
+    var deleteFilesAfter: js.UndefOr[Boolean] = js.undefined
     
     /** Exclude archive filenames (-ax) */
-    var excludeArchive: js.UndefOr[js.Array[String]] = js.native
+    var excludeArchive: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Exclude archive type (-stx) */
-    var excludeArchiveType: js.UndefOr[String] = js.native
+    var excludeArchiveType: js.UndefOr[String] = js.undefined
     
     /** Exclude filenames (-x) */
-    var exlude: js.UndefOr[js.Array[String]] = js.native
+    var exlude: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Read data from StdIn (-si) */
-    var fromStdin: js.UndefOr[String] = js.native
+    var fromStdin: js.UndefOr[String] = js.undefined
     
     /** Usefully qualified file paths (-spf) */
-    var fullyQualifiedPaths: js.UndefOr[Boolean] = js.native
+    var fullyQualifiedPaths: js.UndefOr[Boolean] = js.undefined
     
     /** Store hard links as links (WIM and TAR formats only) (-snh) */
-    var hardlinks: js.UndefOr[Boolean] = js.native
+    var hardlinks: js.UndefOr[Boolean] = js.undefined
     
     /** Set hash function (-scrc) */
-    var hashMethod: js.UndefOr[String] = js.native
+    var hashMethod: js.UndefOr[String] = js.undefined
     
     /** Include filenames (-i) */
-    var include: js.UndefOr[js.Array[String]] = js.native
+    var include: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Include archive filenames (-ai) */
-    var includeArchive: js.UndefOr[js.Array[String]] = js.native
+    var includeArchive: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Set Large Pages mode (-spl) */
-    var largePages: js.UndefOr[Boolean] = js.native
+    var largePages: js.UndefOr[Boolean] = js.undefined
     
     /** Set archive timestamp from the most recently modified file (-stl) */
-    var latestTimeStamp: js.UndefOr[Boolean] = js.native
+    var latestTimeStamp: js.UndefOr[Boolean] = js.undefined
     
     /** Set charset for list files (-scs) */
-    var listFileCharset: js.UndefOr[String] = js.native
+    var listFileCharset: js.UndefOr[String] = js.undefined
     
     /** Set output log level (-bb) */
-    var logLevel: js.UndefOr[String] = js.native
+    var logLevel: js.UndefOr[String] = js.undefined
     
     /** Set Compression Method (-m) */
-    var method: js.UndefOr[js.Array[String]] = js.native
+    var method: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Creates multi-block xz archives by default. Block size can be specified with [Size]{m|g} */
-    var multiBlockSize: js.UndefOr[String] = js.native
+    var multiBlockSize: js.UndefOr[String] = js.undefined
     
     /** Stop archive creating, if 7-Zip can't open some input file.(-sse) */
-    var noArchiveOnFail: js.UndefOr[Boolean] = js.native
+    var noArchiveOnFail: js.UndefOr[Boolean] = js.undefined
     
     /** Eliminate duplication of root folder for extract command (-spe) */
-    var noRootDuplication: js.UndefOr[Boolean] = js.native
+    var noRootDuplication: js.UndefOr[Boolean] = js.undefined
     
     /** Disable wildcard matching for file names (-spd) */
-    var noWildcards: js.UndefOr[Boolean] = js.native
+    var noWildcards: js.UndefOr[Boolean] = js.undefined
     
     /** Store NT security (-sni) */
-    var ntSecurity: js.UndefOr[Boolean] = js.native
+    var ntSecurity: js.UndefOr[Boolean] = js.undefined
     
     /** Compress files open for writing (-ssw) */
-    var openFiles: js.UndefOr[Boolean] = js.native
+    var openFiles: js.UndefOr[Boolean] = js.undefined
     
     /** Set Output directory (-o) */
-    var outputDir: js.UndefOr[String] = js.native
+    var outputDir: js.UndefOr[String] = js.undefined
     
     /** Set output stream for output/error/progress (-bs) */
-    var outputStreams: js.UndefOr[js.Array[String]] = js.native
+    var outputStreams: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Set Password (-p) */
-    var password: js.UndefOr[String] = js.native
+    var password: js.UndefOr[String] = js.undefined
     
     /** Recurse subdirectories. For -r0 usage use $raw (-r) */
-    var recursive: js.UndefOr[Boolean] = js.native
+    var recursive: js.UndefOr[Boolean] = js.undefined
     
     /** Create SFX archive (-sfx) */
-    var sfx: js.UndefOr[String] = js.native
+    var sfx: js.UndefOr[String] = js.undefined
     
     /** Sort files by type while adding to solid 7z archive (-mqs) */
-    var sortByType: js.UndefOr[Boolean] = js.native
+    var sortByType: js.UndefOr[Boolean] = js.undefined
     
     /** Store symbolic links as links (WIM and TAR formats only) (-snl) */
-    var symlinks: js.UndefOr[Boolean] = js.native
+    var symlinks: js.UndefOr[Boolean] = js.undefined
     
     /** Show technical information (-slt) */
-    var techInfo: js.UndefOr[Boolean] = js.native
+    var techInfo: js.UndefOr[Boolean] = js.undefined
     
     /** Show execution time statistics (-bt) */
-    var timeStats: js.UndefOr[Boolean] = js.native
+    var timeStats: js.UndefOr[Boolean] = js.undefined
     
     /** Write data to stdout (-so) */
-    var toStdout: js.UndefOr[Boolean] = js.native
+    var toStdout: js.UndefOr[Boolean] = js.undefined
     
     /** Update options (-u) */
-    var updateOptions: js.UndefOr[String] = js.native
+    var updateOptions: js.UndefOr[String] = js.undefined
     
     /** Create Volumes (v) */
-    var volumes: js.UndefOr[js.Array[String]] = js.native
+    var volumes: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Set Working directory (-w) */
-    var workingDir: js.UndefOr[String] = js.native
+    var workingDir: js.UndefOr[String] = js.undefined
     
     /** Assume Yes on all queries (-y) */
-    var yes: js.UndefOr[Boolean] = js.native
+    var yes: js.UndefOr[Boolean] = js.undefined
   }
   object CommandLineSwitches {
     
@@ -582,20 +558,19 @@ object mod {
     }
   }
   
-  @js.native
   trait Data extends StObject {
     
-    var attributes: js.UndefOr[String] = js.native
+    var attributes: js.UndefOr[String] = js.undefined
     
-    var file: String = js.native
+    var file: String
     
-    var hash: js.UndefOr[String] = js.native
+    var hash: js.UndefOr[String] = js.undefined
     
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
-    var sizeCompressed: js.UndefOr[Double] = js.native
+    var sizeCompressed: js.UndefOr[Double] = js.undefined
     
-    var status: String = js.native
+    var status: String
   }
   object Data {
     
@@ -640,39 +615,38 @@ object mod {
     }
   }
   
-  @js.native
   trait Node7zOptions extends StObject {
     
     /** Path to an other 7-Zip binary. Default: 7z */
     @JSName("$bin")
-    var $bin: js.UndefOr[String] = js.native
+    var $bin: js.UndefOr[String] = js.undefined
     
     /** Some commands accepts more specific targets. See https://github.com/quentinrossetti/node-7z#extract for an example. */
     @JSName("$cherryPick")
-    var $cherryPick: js.UndefOr[js.Array[String]] = js.native
+    var $cherryPick: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Attach an external child process to be parsed */
     @JSName("$childProcess")
-    var $childProcess: js.UndefOr[ChildProcess] = js.native
+    var $childProcess: js.UndefOr[ChildProcess] = js.undefined
     
     /** Create the stream but do not spawn child process */
     @JSName("$defer")
-    var $defer: js.UndefOr[Boolean] = js.native
+    var $defer: js.UndefOr[Boolean] = js.undefined
     
     /**
       * Progress percentage gets fired. Shortcut for { outputStreams: ['b1'] }
       * Use if you want access to the progress event. Has an impact on performances.
       */
     @JSName("$progress")
-    var $progress: js.UndefOr[Boolean] = js.native
+    var $progress: js.UndefOr[Boolean] = js.undefined
     
     /** Pass raw arguments to the child_process.spawn() command */
     @JSName("$raw")
-    var $raw: js.UndefOr[js.Array[String]] = js.native
+    var $raw: js.UndefOr[js.Array[String]] = js.undefined
     
     /** Pass options to the child_process.spawn() command */
     @JSName("$spawnOptions")
-    var $spawnOptions: js.UndefOr[js.Object] = js.native
+    var $spawnOptions: js.UndefOr[js.Object] = js.undefined
   }
   object Node7zOptions {
     
@@ -735,14 +709,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Progress extends StObject {
     
-    var file: js.UndefOr[String] = js.native
+    var file: js.UndefOr[String] = js.undefined
     
-    var fileCount: Double = js.native
+    var fileCount: Double
     
-    var percent: Double = js.native
+    var percent: Double
   }
   object Progress {
     
@@ -769,7 +742,18 @@ object mod {
     }
   }
   
-  type SevenZipOptions = Node7zOptions with CommandLineSwitches
+  trait SevenZipOptions
+    extends StObject
+       with Node7zOptions
+       with CommandLineSwitches
+  object SevenZipOptions {
+    
+    @scala.inline
+    def apply(): SevenZipOptions = {
+      val __obj = js.Dynamic.literal()
+      __obj.asInstanceOf[SevenZipOptions]
+    }
+  }
   
   // Based off Readable from Streams, node-7z uses Readable but Typescript couldn't extend for Data and Progress typings
   @js.native

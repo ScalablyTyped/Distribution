@@ -12,7 +12,7 @@ Feature Flag module for Angular JS apps
 | Keywords           | angular, feature flag, feature switch |
 | # releases         | 0 |
 | # dependents       | 0 |
-| # downloads        | 161509 |
+| # downloads        | 163919 |
 | # stars            | 0 |
 
 ## Links

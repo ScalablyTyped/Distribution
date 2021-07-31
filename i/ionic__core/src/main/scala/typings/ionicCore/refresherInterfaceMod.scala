@@ -2,15 +2,13 @@ package typings.ionicCore
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object refresherInterfaceMod {
   
-  @js.native
   trait RefresherEventDetail extends StObject {
     
-    def complete(): Unit = js.native
+    def complete(): Unit
   }
   object RefresherEventDetail {
     

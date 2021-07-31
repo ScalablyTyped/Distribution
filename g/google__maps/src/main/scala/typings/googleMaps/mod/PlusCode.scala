@@ -2,17 +2,15 @@ package typings.googleMaps.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlusCode extends StObject {
   
   /** is a 6 character or longer local code with an explicit location (CWC8+R9, Mountain View, CA, USA). */
-  var compound_code: String = js.native
+  var compound_code: String
   
   /** is a 4 character area code and 6 character or longer local code (849VCWC8+R9). */
-  var global_code: String = js.native
+  var global_code: String
 }
 object PlusCode {
   

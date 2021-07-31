@@ -2,34 +2,29 @@ package typings.cesium.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Simon1994PlanetaryPositions {
   
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeMoonPositionInEarthInertialFrame")
+  @JSImport("cesium", "Simon1994PlanetaryPositions")
   @js.native
-  def computeMoonPositionInEarthInertialFrame(): Cartesian3 = js.native
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeMoonPositionInEarthInertialFrame")
-  @js.native
-  def computeMoonPositionInEarthInertialFrame(julianDate: js.UndefOr[scala.Nothing], result: Cartesian3): Cartesian3 = js.native
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeMoonPositionInEarthInertialFrame")
-  @js.native
-  def computeMoonPositionInEarthInertialFrame(julianDate: JulianDate): Cartesian3 = js.native
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeMoonPositionInEarthInertialFrame")
-  @js.native
-  def computeMoonPositionInEarthInertialFrame(julianDate: JulianDate, result: Cartesian3): Cartesian3 = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeSunPositionInEarthInertialFrame")
-  @js.native
-  def computeSunPositionInEarthInertialFrame(): Cartesian3 = js.native
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeSunPositionInEarthInertialFrame")
-  @js.native
-  def computeSunPositionInEarthInertialFrame(julianDate: js.UndefOr[scala.Nothing], result: Cartesian3): Cartesian3 = js.native
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeSunPositionInEarthInertialFrame")
-  @js.native
-  def computeSunPositionInEarthInertialFrame(julianDate: JulianDate): Cartesian3 = js.native
-  @JSImport("cesium", "Simon1994PlanetaryPositions.computeSunPositionInEarthInertialFrame")
-  @js.native
-  def computeSunPositionInEarthInertialFrame(julianDate: JulianDate, result: Cartesian3): Cartesian3 = js.native
+  @scala.inline
+  def computeMoonPositionInEarthInertialFrame(): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMoonPositionInEarthInertialFrame")().asInstanceOf[Cartesian3]
+  @scala.inline
+  def computeMoonPositionInEarthInertialFrame(julianDate: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMoonPositionInEarthInertialFrame")(julianDate.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def computeMoonPositionInEarthInertialFrame(julianDate: JulianDate): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("computeMoonPositionInEarthInertialFrame")(julianDate.asInstanceOf[js.Any]).asInstanceOf[Cartesian3]
+  @scala.inline
+  def computeMoonPositionInEarthInertialFrame(julianDate: JulianDate, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("computeMoonPositionInEarthInertialFrame")(julianDate.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  
+  @scala.inline
+  def computeSunPositionInEarthInertialFrame(): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("computeSunPositionInEarthInertialFrame")().asInstanceOf[Cartesian3]
+  @scala.inline
+  def computeSunPositionInEarthInertialFrame(julianDate: Unit, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSunPositionInEarthInertialFrame")(julianDate.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
+  @scala.inline
+  def computeSunPositionInEarthInertialFrame(julianDate: JulianDate): Cartesian3 = ^.asInstanceOf[js.Dynamic].applyDynamic("computeSunPositionInEarthInertialFrame")(julianDate.asInstanceOf[js.Any]).asInstanceOf[Cartesian3]
+  @scala.inline
+  def computeSunPositionInEarthInertialFrame(julianDate: JulianDate, result: Cartesian3): Cartesian3 = (^.asInstanceOf[js.Dynamic].applyDynamic("computeSunPositionInEarthInertialFrame")(julianDate.asInstanceOf[js.Any], result.asInstanceOf[js.Any])).asInstanceOf[Cartesian3]
 }

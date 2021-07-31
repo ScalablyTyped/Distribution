@@ -2,16 +2,14 @@ package typings.awsSdk.workmailMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ListAccessControlRulesResponse extends StObject {
   
   /**
     * The access control rules.
     */
-  var Rules: js.UndefOr[AccessControlRulesList] = js.native
+  var Rules: js.UndefOr[AccessControlRulesList] = js.undefined
 }
 object ListAccessControlRulesResponse {
   

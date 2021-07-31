@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientContent.gapi.client.content
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ShippingsettingsGetSupportedHolidaysResponse extends StObject {
   
   /** A list of holidays applicable for delivery guarantees. May be empty. */
-  var holidays: js.UndefOr[js.Array[HolidaysHoliday]] = js.native
+  var holidays: js.UndefOr[js.Array[HolidaysHoliday]] = js.undefined
   
   /** Identifies what kind of resource this is. Value: the fixed string "content#shippingsettingsGetSupportedHolidaysResponse". */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object ShippingsettingsGetSupportedHolidaysResponse {
   

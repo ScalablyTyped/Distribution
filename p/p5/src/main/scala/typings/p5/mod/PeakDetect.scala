@@ -2,7 +2,6 @@ package typings.p5.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -17,8 +16,8 @@ trait PeakDetect extends StObject {
     *   @param [val] Optional value to pass into the
     *   function when a peak is detected.
     */
-  def onPeak(callback: js.Function1[/* repeated */ js.Any, _]): Unit = js.native
-  def onPeak(callback: js.Function1[/* repeated */ js.Any, _], `val`: js.Object): Unit = js.native
+  def onPeak(callback: js.Function1[/* repeated */ js.Any, js.Any]): Unit = js.native
+  def onPeak(callback: js.Function1[/* repeated */ js.Any, js.Any], `val`: js.Object): Unit = js.native
   
   /**
     *   The update method is run in the draw loop. Accepts

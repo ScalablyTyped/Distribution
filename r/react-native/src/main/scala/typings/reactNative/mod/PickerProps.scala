@@ -4,7 +4,6 @@ import typings.reactNative.reactNativeStrings.dialog
 import typings.reactNative.reactNativeStrings.dropdown
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* import warning: transforms.RemoveMultipleInheritance#findNewParents newComments Dropped parents 
@@ -17,15 +16,16 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
 - typings.reactNative.mod.ViewPropsIOS because Already inherited
 - typings.reactNative.mod.ViewPropsAndroid because Already inherited
 - typings.reactNative.mod.ViewProps because Already inherited
-- typings.reactNative.mod.PickerPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined enabled, mode, prompt */ @js.native
-trait PickerProps extends PickerPropsIOS {
+- typings.reactNative.mod.PickerPropsAndroid because var conflicts: accessibilityActions, accessibilityComponentType, accessibilityElementsHidden, accessibilityHint, accessibilityIgnoresInvertColors, accessibilityLabel, accessibilityLiveRegion, accessibilityRole, accessibilityState, accessibilityTraits, accessibilityValue, accessibilityViewIsModal, accessible, collapsable, focusable, hasTVPreferredFocus, hitSlop, importantForAccessibility, isTVSelectable, nativeID, needsOffscreenAlphaCompositing, onAccessibilityAction, onAccessibilityEscape, onAccessibilityTap, onLayout, onMagicTap, onMoveShouldSetResponder, onMoveShouldSetResponderCapture, onResponderEnd, onResponderGrant, onResponderMove, onResponderReject, onResponderRelease, onResponderStart, onResponderTerminate, onResponderTerminationRequest, onStartShouldSetResponder, onStartShouldSetResponderCapture, onTouchCancel, onTouchEnd, onTouchEndCapture, onTouchMove, onTouchStart, pointerEvents, removeClippedSubviews, renderToHardwareTextureAndroid, shouldRasterizeIOS, style, testID, tvParallaxMagnification, tvParallaxProperties, tvParallaxShiftDistanceX, tvParallaxShiftDistanceY, tvParallaxTiltAngle. Inlined enabled, mode, prompt */ trait PickerProps
+  extends StObject
+     with PickerPropsIOS {
   
   /**
     * If set to false, the picker will be disabled, i.e. the user will not be able to make a
     * selection.
     * @platform android
     */
-  var enabled: js.UndefOr[Boolean] = js.native
+  var enabled: js.UndefOr[Boolean] = js.undefined
   
   /**
     * On Android, specifies how to display the selection items when the user taps on the picker:
@@ -35,7 +35,7 @@ trait PickerProps extends PickerPropsIOS {
     *
     * @platform android
     */
-  var mode: js.UndefOr[dialog | dropdown] = js.native
+  var mode: js.UndefOr[dialog | dropdown] = js.undefined
   
   /**
     * Callback for when an item is selected. This is called with the
@@ -43,27 +43,27 @@ trait PickerProps extends PickerPropsIOS {
     * - itemValue: the value prop of the item that was selected
     * - itemPosition: the index of the selected item in this picker
     */
-  var onValueChange: js.UndefOr[js.Function2[/* itemValue */ js.Any, /* itemPosition */ Double, Unit]] = js.native
+  var onValueChange: js.UndefOr[js.Function2[/* itemValue */ js.Any, /* itemPosition */ Double, Unit]] = js.undefined
   
   /**
     * Prompt string for this picker, used on Android in dialog mode as the title of the dialog.
     * @platform android
     */
-  var prompt: js.UndefOr[String] = js.native
+  var prompt: js.UndefOr[String] = js.undefined
   
   /**
     * Value matching value of one of the items.
     * Can be a string or an integer.
     */
-  var selectedValue: js.UndefOr[js.Any] = js.native
+  var selectedValue: js.UndefOr[js.Any] = js.undefined
   
   @JSName("style")
-  var style_PickerProps: js.UndefOr[StyleProp[TextStyle]] = js.native
+  var style_PickerProps: js.UndefOr[StyleProp[TextStyle]] = js.undefined
   
   /**
     * Used to locate this view in end-to-end tests.
     */
-  var testId: js.UndefOr[String] = js.native
+  var testId: js.UndefOr[String] = js.undefined
 }
 object PickerProps {
   

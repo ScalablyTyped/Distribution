@@ -10,183 +10,138 @@ import typings.node.Buffer
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("jdenticon", "configure")
+  @JSImport("jdenticon", JSImport.Namespace)
   @js.native
-  def configure(): JdenticonConfig = js.native
-  @JSImport("jdenticon", "configure")
-  @js.native
-  def configure(newConfig: JdenticonConfig): JdenticonConfig = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("jdenticon", "drawIcon")
-  @js.native
-  def drawIcon(ctx: JdenticonCompatibleCanvasRenderingContext2D, hashOrValue: js.Any, size: Double): Unit = js.native
-  @JSImport("jdenticon", "drawIcon")
-  @js.native
+  @scala.inline
+  def configure(): JdenticonConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")().asInstanceOf[JdenticonConfig]
+  @scala.inline
+  def configure(newConfig: JdenticonConfig): JdenticonConfig = ^.asInstanceOf[js.Dynamic].applyDynamic("configure")(newConfig.asInstanceOf[js.Any]).asInstanceOf[JdenticonConfig]
+  
+  @scala.inline
+  def drawIcon(ctx: JdenticonCompatibleCanvasRenderingContext2D, hashOrValue: js.Any, size: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawIcon")(ctx.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawIcon(
     ctx: JdenticonCompatibleCanvasRenderingContext2D,
     hashOrValue: js.Any,
     size: Double,
     config: Double
-  ): Unit = js.native
-  @JSImport("jdenticon", "drawIcon")
-  @js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawIcon")(ctx.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
   def drawIcon(
     ctx: JdenticonCompatibleCanvasRenderingContext2D,
     hashOrValue: js.Any,
     size: Double,
     config: JdenticonConfig
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("drawIcon")(ctx.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jdenticon", "toPng")
-  @js.native
-  def toPng(hashOrValue: js.Any, size: Double): Buffer = js.native
-  @JSImport("jdenticon", "toPng")
-  @js.native
-  def toPng(hashOrValue: js.Any, size: Double, config: Double): Buffer = js.native
-  @JSImport("jdenticon", "toPng")
-  @js.native
-  def toPng(hashOrValue: js.Any, size: Double, config: JdenticonConfig): Buffer = js.native
+  @scala.inline
+  def toPng(hashOrValue: js.Any, size: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def toPng(hashOrValue: js.Any, size: Double, config: Double): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Buffer]
+  @scala.inline
+  def toPng(hashOrValue: js.Any, size: Double, config: JdenticonConfig): Buffer = (^.asInstanceOf[js.Dynamic].applyDynamic("toPng")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Buffer]
   
-  @JSImport("jdenticon", "toSvg")
-  @js.native
-  def toSvg(hashOrValue: js.Any, size: Double): String = js.native
-  @JSImport("jdenticon", "toSvg")
-  @js.native
-  def toSvg(hashOrValue: js.Any, size: Double, config: Double): String = js.native
-  @JSImport("jdenticon", "toSvg")
-  @js.native
-  def toSvg(hashOrValue: js.Any, size: Double, config: JdenticonConfig): String = js.native
+  @scala.inline
+  def toSvg(hashOrValue: js.Any, size: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toSvg(hashOrValue: js.Any, size: Double, config: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def toSvg(hashOrValue: js.Any, size: Double, config: JdenticonConfig): String = (^.asInstanceOf[js.Dynamic].applyDynamic("toSvg")(hashOrValue.asInstanceOf[js.Any], size.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: String): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: String, hashOrValue: js.Any): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: Element): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
-  @JSImport("jdenticon", "update")
-  @js.native
-  def update(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+  @scala.inline
+  def update(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def update(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("update")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: String): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: Element): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateCanvas")
-  @js.native
-  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+  @scala.inline
+  def updateCanvas(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateCanvas(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateCanvas")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: String): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: String, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: String, hashOrValue: js.Any): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: Element): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.UndefOr[scala.Nothing], config: JdenticonConfig): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = js.native
-  @JSImport("jdenticon", "updateSvg")
-  @js.native
-  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = js.native
+  @scala.inline
+  def updateSvg(elementOrSelector: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: String, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: String, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: String, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: Element): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: Element, hashOrValue: js.Any, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def updateSvg(elementOrSelector: Element, hashOrValue: Unit, config: JdenticonConfig): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("updateSvg")(elementOrSelector.asInstanceOf[js.Any], hashOrValue.asInstanceOf[js.Any], config.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   @JSImport("jdenticon", "version")
   @js.native
   val version: String = js.native
   
-  @js.native
   trait JdenticonCompatibleCanvas extends StObject {
     
     @JSName("getContext")
-    def getContext_2d(contextId: `2d`): JdenticonCompatibleCanvasRenderingContext2D | Null = js.native
+    def getContext_2d(contextId: `2d`): JdenticonCompatibleCanvasRenderingContext2D | Null
     
     // HTMLCanvasElement
-    val height: Double = js.native
+    val height: Double
     
-    val width: Double = js.native
+    val width: Double
   }
   object JdenticonCompatibleCanvas {
     
@@ -252,7 +207,6 @@ object mod {
     def translate(x: Double, y: Double): Unit = js.native
   }
   
-  @js.native
   trait JdenticonConfig extends StObject {
     
     /**
@@ -264,23 +218,23 @@ object mod {
       *  * `"#rrggbb"`
       *  * `"#rrggbbaa"`
       */
-    var backColor: js.UndefOr[String] = js.native
+    var backColor: js.UndefOr[String] = js.undefined
     
     /**
       * Limits the possible hues in generated icons. The hues are specified as an array of hues in degrees. If the
       * option is omitted or an empty array is specified, all hues are allowed.
       */
-    var hues: js.UndefOr[js.Array[Double]] = js.native
+    var hues: js.UndefOr[js.Array[Double]] = js.undefined
     
     /**
       * Specifies the lightness of the generated icon.
       */
-    var lightness: js.UndefOr[Color] = js.native
+    var lightness: js.UndefOr[Color] = js.undefined
     
     /**
       * Specifies the padding surrounding the icon in percents in the range [0.0, 0.5).
       */
-    var padding: js.UndefOr[Double] = js.native
+    var padding: js.UndefOr[Double] = js.undefined
     
     /**
       * Specifies when icons will be rendered.
@@ -298,7 +252,7 @@ object mod {
       * @remarks
       * This option has no effect in Node environments.
       */
-    var replaceMode: js.UndefOr[never | once | observe] = js.native
+    var replaceMode: js.UndefOr[never | once | observe] = js.undefined
     
     /**
       * Specifies the saturation of the generated icon.
@@ -306,7 +260,7 @@ object mod {
       * For backward compatibility a single number can be specified instead of a `{ color, grayscale }`
       * object. This single number refers to the saturation of colored shapes.
       */
-    var saturation: js.UndefOr[Grayscale | Double] = js.native
+    var saturation: js.UndefOr[Grayscale | Double] = js.undefined
   }
   object JdenticonConfig {
     
@@ -362,7 +316,6 @@ object mod {
   
   object global {
     
-    @js.native
     trait Window extends StObject {
       
       /**
@@ -370,7 +323,7 @@ object mod {
         * 
         * See also {@link jdenticon.config} for Node usage.
         */
-      var jdenticon_config: js.UndefOr[JdenticonConfig] = js.native
+      var jdenticon_config: js.UndefOr[JdenticonConfig] = js.undefined
     }
     object Window {
       

@@ -4,33 +4,31 @@ import typings.azdata.mod.IConnectionProfile
 import typings.vscode.Thenable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ISession extends StObject {
   
   /**
     * Is change of kernels supported for this session?
     */
-  var canChangeKernels: Boolean = js.native
+  var canChangeKernels: Boolean
   
-  def changeKernel(kernelInfo: IKernelSpec): Thenable[IKernel] = js.native
+  def changeKernel(kernelInfo: IKernelSpec): Thenable[IKernel]
   
-  def configureConnection(connection: IConnectionProfile): Thenable[Unit] = js.native
+  def configureConnection(connection: IConnectionProfile): Thenable[Unit]
   
-  def configureKernel(kernelInfo: IKernelSpec): Thenable[Unit] = js.native
+  def configureKernel(kernelInfo: IKernelSpec): Thenable[Unit]
   
   /**
     * Tracks whether the default kernel failed to load
     * This could be for a reason such as the kernel name not being recognized as a valid kernel;
     */
-  var defaultKernelLoaded: js.UndefOr[Boolean] = js.native
+  var defaultKernelLoaded: js.UndefOr[Boolean] = js.undefined
   
   /*
     * Unique id of the session.
     */
-  val id: String = js.native
+  val id: String
   
   /**
     * The kernel.
@@ -38,27 +36,27 @@ trait ISession extends StObject {
     * #### Notes
     * This is a read-only property, and can be altered by [changeKernel].
     */
-  val kernel: IKernel = js.native
+  val kernel: IKernel
   
   /**
     * The current name associated with the session.
     */
-  val name: String = js.native
+  val name: String
   
   /**
     * The current path associated with the session.
     */
-  val path: String = js.native
+  val path: String
   
   /**
     * The status indicates if the kernel is healthy, dead, starting, etc.
     */
-  val status: KernelStatus = js.native
+  val status: KernelStatus
   
   /**
     * The type of the session.
     */
-  val `type`: String = js.native
+  val `type`: String
 }
 object ISession {
   

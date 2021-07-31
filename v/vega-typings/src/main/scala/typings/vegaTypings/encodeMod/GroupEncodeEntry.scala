@@ -3,17 +3,17 @@ package typings.vegaTypings.encodeMod
 import typings.vegaTypings.anon.Test
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GroupEncodeEntry extends RectEncodeEntry {
+trait GroupEncodeEntry
+  extends StObject
+     with RectEncodeEntry {
   
-  var clip: js.UndefOr[ProductionRule[BooleanValueRef]] = js.native
+  var clip: js.UndefOr[ProductionRule[BooleanValueRef]] = js.undefined
   
-  var strokeForeground: js.UndefOr[ProductionRule[BooleanValueRef]] = js.native
+  var strokeForeground: js.UndefOr[ProductionRule[BooleanValueRef]] = js.undefined
   
-  var strokeOffset: js.UndefOr[ProductionRule[NumericValueRef]] = js.native
+  var strokeOffset: js.UndefOr[ProductionRule[NumericValueRef]] = js.undefined
 }
 object GroupEncodeEntry {
   
@@ -33,7 +33,7 @@ object GroupEncodeEntry {
     def setClipUndefined: Self = StObject.set(x, "clip", js.undefined)
     
     @scala.inline
-    def setClipVarargs(value: (Test with BooleanValueRef)*): Self = StObject.set(x, "clip", js.Array(value :_*))
+    def setClipVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "clip", js.Array(value :_*))
     
     @scala.inline
     def setStrokeForeground(value: ProductionRule[BooleanValueRef]): Self = StObject.set(x, "strokeForeground", value.asInstanceOf[js.Any])
@@ -42,7 +42,7 @@ object GroupEncodeEntry {
     def setStrokeForegroundUndefined: Self = StObject.set(x, "strokeForeground", js.undefined)
     
     @scala.inline
-    def setStrokeForegroundVarargs(value: (Test with BooleanValueRef)*): Self = StObject.set(x, "strokeForeground", js.Array(value :_*))
+    def setStrokeForegroundVarargs(value: (Test & BooleanValueRef)*): Self = StObject.set(x, "strokeForeground", js.Array(value :_*))
     
     @scala.inline
     def setStrokeOffset(value: ProductionRule[NumericValueRef]): Self = StObject.set(x, "strokeOffset", value.asInstanceOf[js.Any])
@@ -51,6 +51,6 @@ object GroupEncodeEntry {
     def setStrokeOffsetUndefined: Self = StObject.set(x, "strokeOffset", js.undefined)
     
     @scala.inline
-    def setStrokeOffsetVarargs(value: (Test with NumericValueRef)*): Self = StObject.set(x, "strokeOffset", js.Array(value :_*))
+    def setStrokeOffsetVarargs(value: (Test & NumericValueRef)*): Self = StObject.set(x, "strokeOffset", js.Array(value :_*))
   }
 }

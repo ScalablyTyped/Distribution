@@ -2,21 +2,19 @@ package typings.awsSdk.rekognitionMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Image extends StObject {
   
   /**
     * Blob of image bytes up to 5 MBs.
     */
-  var Bytes: js.UndefOr[ImageBlob] = js.native
+  var Bytes: js.UndefOr[ImageBlob] = js.undefined
   
   /**
     * Identifies an S3 object as the image source.
     */
-  var S3Object: js.UndefOr[typings.awsSdk.rekognitionMod.S3Object] = js.native
+  var S3Object: js.UndefOr[typings.awsSdk.rekognitionMod.S3Object] = js.undefined
 }
 object Image {
   

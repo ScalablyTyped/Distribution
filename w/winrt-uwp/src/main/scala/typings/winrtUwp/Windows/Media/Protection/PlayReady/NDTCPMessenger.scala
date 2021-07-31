@@ -3,11 +3,9 @@ package typings.winrtUwp.Windows.Media.Protection.PlayReady
 import typings.winrtUwp.Windows.Foundation.IPromiseWithIAsyncOperation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Sends PlayReady-ND messages and challenges using the TCP network protocol. */
-@js.native
 trait NDTCPMessenger extends StObject {
   
   /**
@@ -16,7 +14,7 @@ trait NDTCPMessenger extends StObject {
     * @param challengeDataBytes The data for the challenge message.
     * @return The result of the license fetch request.
     */
-  def sendLicenseFetchRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  def sendLicenseFetchRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult]
   
   /**
     * Sends the specified data in an asynchronous proximity detection response message.
@@ -31,7 +29,7 @@ trait NDTCPMessenger extends StObject {
     transmitterChannelBytes: js.Array[Double],
     sessionIDBytes: js.Array[Double],
     responseDataBytes: js.Array[Double]
-  ): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  ): IPromiseWithIAsyncOperation[INDSendResult]
   
   /**
     * Sends the specified data in an asynchronous proximity detection start message.
@@ -46,7 +44,7 @@ trait NDTCPMessenger extends StObject {
     transmitterChannelBytes: js.Array[Double],
     sessionIDBytes: js.Array[Double],
     challengeDataBytes: js.Array[Double]
-  ): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  ): IPromiseWithIAsyncOperation[INDSendResult]
   
   /**
     * Sends the specified data in an asynchronous registration request message.
@@ -54,7 +52,7 @@ trait NDTCPMessenger extends StObject {
     * @param challengeDataBytes The data for the challenge message.
     * @return The result of the registration request.
     */
-  def sendRegistrationRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult] = js.native
+  def sendRegistrationRequestAsync(sessionIDBytes: js.Array[Double], challengeDataBytes: js.Array[Double]): IPromiseWithIAsyncOperation[INDSendResult]
 }
 object NDTCPMessenger {
   

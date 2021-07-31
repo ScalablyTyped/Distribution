@@ -7,48 +7,47 @@ import typings.babelTypes.babelTypesStrings.method
 import typings.babelTypes.babelTypesStrings.set
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ClassMethod_
-  extends Node
+  extends StObject
+     with Node
      with BlockParent
      with Function
      with FunctionParent
      with Method
      with Scopable {
   
-  var async: Boolean = js.native
+  var async: Boolean
   
-  var body: BlockStatement_ = js.native
+  var body: BlockStatement_
   
-  var computed: Boolean = js.native
+  var computed: Boolean
   
-  var decorators: js.UndefOr[js.Array[Decorator_]] = js.native
+  var decorators: js.UndefOr[js.Array[Decorator_]] = js.undefined
   
-  var expression: Boolean = js.native
+  var expression: Boolean
   
-  var generator: Boolean = js.native
+  var generator: Boolean
   
-  var id: Identifier_ = js.native
+  var id: Identifier_
   
-  var key: Expression = js.native
+  var key: Expression
   
-  var kind: constructor | method | get | set = js.native
+  var kind: constructor | method | get | set
   
-  var params: js.Array[LVal] = js.native
+  var params: js.Array[LVal]
   
-  var returnType: js.UndefOr[TypeAnnotation_] = js.native
+  var returnType: js.UndefOr[TypeAnnotation_] = js.undefined
   
-  var static: Boolean = js.native
+  var static: Boolean
   
-  var typeParameters: js.UndefOr[TypeParameterDeclaration_] = js.native
+  var typeParameters: js.UndefOr[TypeParameterDeclaration_] = js.undefined
   
   @JSName("type")
-  var type_ClassMethod_ : ClassMethod = js.native
+  var type_ClassMethod_ : ClassMethod
   
-  var value: js.UndefOr[FunctionExpression_] = js.native
+  var value: js.UndefOr[FunctionExpression_] = js.undefined
 }
 object ClassMethod_ {
   
@@ -66,11 +65,10 @@ object ClassMethod_ {
     loc: SourceLocation,
     params: js.Array[LVal],
     start: Double,
-    static: Boolean,
-    `type`: ClassMethod
+    static: Boolean
   ): ClassMethod_ = {
     val __obj = js.Dynamic.literal(async = async.asInstanceOf[js.Any], body = body.asInstanceOf[js.Any], computed = computed.asInstanceOf[js.Any], end = end.asInstanceOf[js.Any], expression = expression.asInstanceOf[js.Any], generator = generator.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], key = key.asInstanceOf[js.Any], kind = kind.asInstanceOf[js.Any], loc = loc.asInstanceOf[js.Any], params = params.asInstanceOf[js.Any], start = start.asInstanceOf[js.Any], static = static.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("ClassMethod")
     __obj.asInstanceOf[ClassMethod_]
   }
   

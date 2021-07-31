@@ -2,26 +2,26 @@ package typings.blessed.mod.Widgets
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait BigTextOptions extends BoxOptions {
+trait BigTextOptions
+  extends StObject
+     with BoxOptions {
   
   /**
     * foreground character. (default: ' ')
     */
-  var fch: js.UndefOr[String] = js.native
+  var fch: js.UndefOr[String] = js.undefined
   
   /**
     * bdf->json font file to use (see ttystudio for instructions on compiling BDFs to JSON).
     */
-  var font: js.UndefOr[String] = js.native
+  var font: js.UndefOr[String] = js.undefined
   
   /**
     * bdf->json bold font file to use (see ttystudio for instructions on compiling BDFs to JSON).
     */
-  var fontBold: js.UndefOr[String] = js.native
+  var fontBold: js.UndefOr[String] = js.undefined
 }
 object BigTextOptions {
   

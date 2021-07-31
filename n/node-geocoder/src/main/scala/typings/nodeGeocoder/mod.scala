@@ -13,14 +13,16 @@ import typings.nodeGeocoder.nodeGeocoderStrings.request
 import typings.nodeGeocoder.nodeGeocoderStrings.smartyStreet
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @scala.inline
+  def apply(options: Options): Geocoder = ^.asInstanceOf[js.Dynamic].apply(options.asInstanceOf[js.Any]).asInstanceOf[Geocoder]
+  
   @JSImport("node-geocoder", JSImport.Namespace)
   @js.native
-  def apply(options: Options): Geocoder = js.native
+  val ^ : js.Any = js.native
   
   @JSImport("node-geocoder", "Geocoder")
   @js.native
@@ -41,20 +43,19 @@ object mod {
     def reverse(loc: Location, cb: js.Function2[/* err */ js.Any, /* data */ js.Array[Entry], Unit]): js.Promise[js.Array[Entry]] = js.native
   }
   
-  @js.native
   trait AgolOptions extends StObject {
     
-    var client_id: js.UndefOr[String] = js.native
+    var client_id: js.UndefOr[String] = js.undefined
     
-    var client_secret: js.UndefOr[String] = js.native
+    var client_secret: js.UndefOr[String] = js.undefined
     
-    var provider: agol = js.native
+    var provider: agol
   }
   object AgolOptions {
     
     @scala.inline
-    def apply(provider: agol): AgolOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def apply(): AgolOptions = {
+      val __obj = js.Dynamic.literal(provider = "agol")
       __obj.asInstanceOf[AgolOptions]
     }
     
@@ -78,18 +79,17 @@ object mod {
     }
   }
   
-  @js.native
   trait BaseOptions extends StObject {
     
-    var formatter: js.UndefOr[js.Any] = js.native
+    var formatter: js.UndefOr[js.Any] = js.undefined
     
-    var formatterPattern: js.UndefOr[String] = js.native
+    var formatterPattern: js.UndefOr[String] = js.undefined
     
-    var httpAdapter: js.UndefOr[https | http | request] = js.native
+    var httpAdapter: js.UndefOr[https | http | request] = js.undefined
     
-    var provider: String = js.native
+    var provider: String
     
-    var timeout: js.UndefOr[Double] = js.native
+    var timeout: js.UndefOr[Double] = js.undefined
   }
   object BaseOptions {
     
@@ -131,12 +131,11 @@ object mod {
     }
   }
   
-  @js.native
   trait BatchResult extends StObject {
     
-    var error: js.Any = js.native
+    var error: js.Any
     
-    var value: js.Array[Entry] = js.native
+    var value: js.Array[Entry]
   }
   object BatchResult {
     
@@ -160,42 +159,41 @@ object mod {
     }
   }
   
-  @js.native
   trait Entry extends StObject {
     
-    var administrativeLevels: js.UndefOr[Level1long] = js.native
+    var administrativeLevels: js.UndefOr[Level1long] = js.undefined
     
-    var building: js.UndefOr[String] = js.native
+    var building: js.UndefOr[String] = js.undefined
     
-    var city: js.UndefOr[String] = js.native
+    var city: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var countryCode: js.UndefOr[String] = js.native
+    var countryCode: js.UndefOr[String] = js.undefined
     
-    var county: js.UndefOr[String] = js.native
+    var county: js.UndefOr[String] = js.undefined
     
-    var district: js.UndefOr[String] = js.native
+    var district: js.UndefOr[String] = js.undefined
     
-    var extra: js.UndefOr[Confidence] = js.native
+    var extra: js.UndefOr[Confidence] = js.undefined
     
-    var formattedAddress: js.UndefOr[String] = js.native
+    var formattedAddress: js.UndefOr[String] = js.undefined
     
-    var latitude: js.UndefOr[Double] = js.native
+    var latitude: js.UndefOr[Double] = js.undefined
     
-    var longitude: js.UndefOr[Double] = js.native
+    var longitude: js.UndefOr[Double] = js.undefined
     
-    var provider: js.UndefOr[String] = js.native
+    var provider: js.UndefOr[String] = js.undefined
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
     
-    var stateCode: js.UndefOr[String] = js.native
+    var stateCode: js.UndefOr[String] = js.undefined
     
-    var streetName: js.UndefOr[String] = js.native
+    var streetName: js.UndefOr[String] = js.undefined
     
-    var streetNumber: js.UndefOr[String] = js.native
+    var streetNumber: js.UndefOr[String] = js.undefined
     
-    var zipcode: js.UndefOr[String] = js.native
+    var zipcode: js.UndefOr[String] = js.undefined
   }
   object Entry {
     
@@ -312,16 +310,15 @@ object mod {
     }
   }
   
-  @js.native
   trait GenericOptions extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var host: js.UndefOr[String] = js.native
+    var host: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var provider: Providers = js.native
+    var provider: Providers
   }
   object GenericOptions {
     
@@ -357,28 +354,27 @@ object mod {
     }
   }
   
-  @js.native
   trait GoogleOptions extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var channel: js.UndefOr[String] = js.native
+    var channel: js.UndefOr[String] = js.undefined
     
-    var clientId: js.UndefOr[String] = js.native
+    var clientId: js.UndefOr[String] = js.undefined
     
-    var excludePartialMatches: js.UndefOr[Boolean] = js.native
+    var excludePartialMatches: js.UndefOr[Boolean] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var provider: google = js.native
+    var provider: google
     
-    var region: js.UndefOr[String] = js.native
+    var region: js.UndefOr[String] = js.undefined
   }
   object GoogleOptions {
     
     @scala.inline
-    def apply(provider: google): GoogleOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def apply(): GoogleOptions = {
+      val __obj = js.Dynamic.literal(provider = "google")
       __obj.asInstanceOf[GoogleOptions]
     }
     
@@ -426,30 +422,29 @@ object mod {
     }
   }
   
-  @js.native
   trait HereOptions extends StObject {
     
-    var appCode: String = js.native
+    var appCode: String
     
-    var appId: String = js.native
+    var appId: String
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var politicalView: js.UndefOr[String] = js.native
+    var politicalView: js.UndefOr[String] = js.undefined
     
-    var production: js.UndefOr[Boolean] = js.native
+    var production: js.UndefOr[Boolean] = js.undefined
     
-    var provider: here = js.native
+    var provider: here
     
-    var state: js.UndefOr[String] = js.native
+    var state: js.UndefOr[String] = js.undefined
   }
   object HereOptions {
     
     @scala.inline
-    def apply(appCode: String, appId: String, provider: here): HereOptions = {
-      val __obj = js.Dynamic.literal(appCode = appCode.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    def apply(appCode: String, appId: String): HereOptions = {
+      val __obj = js.Dynamic.literal(appCode = appCode.asInstanceOf[js.Any], appId = appId.asInstanceOf[js.Any], provider = "here")
       __obj.asInstanceOf[HereOptions]
     }
     
@@ -497,12 +492,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Location extends StObject {
     
-    var lat: Double = js.native
+    var lat: Double
     
-    var lon: Double = js.native
+    var lon: Double
   }
   object Location {
     
@@ -523,22 +517,21 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenDataFranceOptions extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var provider: opendatafrance = js.native
+    var provider: opendatafrance
   }
   object OpenDataFranceOptions {
     
     @scala.inline
-    def apply(provider: opendatafrance): OpenDataFranceOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def apply(): OpenDataFranceOptions = {
+      val __obj = js.Dynamic.literal(provider = "opendatafrance")
       __obj.asInstanceOf[OpenDataFranceOptions]
     }
     
@@ -568,24 +561,23 @@ object mod {
     }
   }
   
-  @js.native
   trait OpenStreetMapOptions extends StObject {
     
-    var apiKey: js.UndefOr[String] = js.native
+    var apiKey: js.UndefOr[String] = js.undefined
     
-    var email: js.UndefOr[String] = js.native
+    var email: js.UndefOr[String] = js.undefined
     
-    var language: js.UndefOr[String] = js.native
+    var language: js.UndefOr[String] = js.undefined
     
-    var osmServer: js.UndefOr[String] = js.native
+    var osmServer: js.UndefOr[String] = js.undefined
     
-    var provider: openstreetmap = js.native
+    var provider: openstreetmap
   }
   object OpenStreetMapOptions {
     
     @scala.inline
-    def apply(provider: openstreetmap): OpenStreetMapOptions = {
-      val __obj = js.Dynamic.literal(provider = provider.asInstanceOf[js.Any])
+    def apply(): OpenStreetMapOptions = {
+      val __obj = js.Dynamic.literal(provider = "openstreetmap")
       __obj.asInstanceOf[OpenStreetMapOptions]
     }
     
@@ -621,7 +613,7 @@ object mod {
     }
   }
   
-  type Options = BaseOptions with (GenericOptions | HereOptions | OpenStreetMapOptions | OpenDataFranceOptions | AgolOptions | SmartyStreetsOptions | GoogleOptions)
+  type Options = BaseOptions & (GenericOptions | HereOptions | OpenStreetMapOptions | OpenDataFranceOptions | AgolOptions | SmartyStreetsOptions | GoogleOptions)
   
   /* Rewritten from type alias, can be one of: 
     - typings.nodeGeocoder.nodeGeocoderStrings.freegeoip
@@ -677,20 +669,19 @@ object mod {
     def yandex: typings.nodeGeocoder.nodeGeocoderStrings.yandex = "yandex".asInstanceOf[typings.nodeGeocoder.nodeGeocoderStrings.yandex]
   }
   
-  @js.native
   trait Query extends StObject {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
     
-    var country: js.UndefOr[String] = js.native
+    var country: js.UndefOr[String] = js.undefined
     
-    var countryCode: js.UndefOr[String] = js.native
+    var countryCode: js.UndefOr[String] = js.undefined
     
-    var limit: js.UndefOr[Double] = js.native
+    var limit: js.UndefOr[Double] = js.undefined
     
-    var minConfidence: js.UndefOr[Double] = js.native
+    var minConfidence: js.UndefOr[Double] = js.undefined
     
-    var zipcode: js.UndefOr[String] = js.native
+    var zipcode: js.UndefOr[String] = js.undefined
   }
   object Query {
     
@@ -741,20 +732,19 @@ object mod {
     }
   }
   
-  @js.native
   trait SmartyStreetsOptions extends StObject {
     
-    var auth_id: String = js.native
+    var auth_id: String
     
-    var auth_token: String = js.native
+    var auth_token: String
     
-    var provider: smartyStreet = js.native
+    var provider: smartyStreet
   }
   object SmartyStreetsOptions {
     
     @scala.inline
-    def apply(auth_id: String, auth_token: String, provider: smartyStreet): SmartyStreetsOptions = {
-      val __obj = js.Dynamic.literal(auth_id = auth_id.asInstanceOf[js.Any], auth_token = auth_token.asInstanceOf[js.Any], provider = provider.asInstanceOf[js.Any])
+    def apply(auth_id: String, auth_token: String): SmartyStreetsOptions = {
+      val __obj = js.Dynamic.literal(auth_id = auth_id.asInstanceOf[js.Any], auth_token = auth_token.asInstanceOf[js.Any], provider = "smartyStreet")
       __obj.asInstanceOf[SmartyStreetsOptions]
     }
     

@@ -2,7 +2,6 @@ package typings.jsan
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -18,12 +17,10 @@ object mod {
     /* reviver */ js.UndefOr[js.Function2[/* key */ String, /* value */ js.Any, js.Any]], 
     js.Any
   ] = js.native
-  @JSImport("jsan", "parse")
-  @js.native
-  def parse(text: String): js.Any = js.native
-  @JSImport("jsan", "parse")
-  @js.native
-  def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, _]): js.Any = js.native
+  @scala.inline
+  def parse(text: String): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any]).asInstanceOf[js.Any]
+  @scala.inline
+  def parse(text: String, reviver: js.Function2[/* key */ String, /* value */ js.Any, js.Any]): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(text.asInstanceOf[js.Any], reviver.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   @scala.inline
   def parse_=(
     x: js.Function2[
@@ -44,111 +41,83 @@ object mod {
     /* _options */ js.UndefOr[Options | Boolean], 
     String
   ] = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(value: js.Any): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
+  @scala.inline
+  def stringify(value: js.Any): String = ^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
   def stringify(
     value: js.Any,
-    replacer: js.UndefOr[scala.Nothing],
-    space: js.UndefOr[scala.Nothing],
-    _options: Boolean
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null]
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     value: js.Any,
-    replacer: js.UndefOr[scala.Nothing],
-    space: js.UndefOr[scala.Nothing],
-    _options: Options
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String, _options: Boolean): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: String, _options: Options): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double, _options: Boolean): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(value: js.Any, replacer: js.UndefOr[scala.Nothing], space: Double, _options: Options): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null]
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
-    space: js.UndefOr[scala.Nothing],
-    _options: Boolean
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
-    space: js.UndefOr[scala.Nothing],
-    _options: Options
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
-  def stringify(
-    value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
     space: String
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
     space: String,
     _options: Boolean
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
     space: String,
     _options: Options
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
     space: Double
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
     space: Double,
     _options: Boolean
-  ): String = js.native
-  @JSImport("jsan", "stringify")
-  @js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
   def stringify(
     value: js.Any,
-    replacer: js.Function2[/* key */ String, /* value */ js.Any, _ | (js.Array[Double | String]) | Null],
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
     space: Double,
     _options: Options
-  ): String = js.native
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    value: js.Any,
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    space: Unit,
+    _options: Boolean
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(
+    value: js.Any,
+    replacer: js.Function2[/* key */ String, /* value */ js.Any, js.Any | (js.Array[Double | String]) | Null],
+    space: Unit,
+    _options: Options
+  ): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: String): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: String, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: String, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Double): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Double, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Double, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Unit, _options: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def stringify(value: js.Any, replacer: Unit, space: Unit, _options: Options): String = (^.asInstanceOf[js.Dynamic].applyDynamic("stringify")(value.asInstanceOf[js.Any], replacer.asInstanceOf[js.Any], space.asInstanceOf[js.Any], _options.asInstanceOf[js.Any])).asInstanceOf[String]
   @scala.inline
   def stringify_=(
     x: js.Function4[
@@ -162,30 +131,29 @@ object mod {
     ]
   ): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("stringify")(x.asInstanceOf[js.Any])
   
-  @js.native
   trait Options extends StObject {
     
-    var date: js.UndefOr[Boolean] = js.native
+    var date: js.UndefOr[Boolean] = js.undefined
     
-    var error: js.UndefOr[Boolean] = js.native
+    var error: js.UndefOr[Boolean] = js.undefined
     
-    var function: js.UndefOr[Boolean] = js.native
+    var function: js.UndefOr[Boolean] = js.undefined
     
-    var infinity: js.UndefOr[Boolean] = js.native
+    var infinity: js.UndefOr[Boolean] = js.undefined
     
-    var map: js.UndefOr[Boolean] = js.native
+    var map: js.UndefOr[Boolean] = js.undefined
     
-    var nan: js.UndefOr[Boolean] = js.native
+    var nan: js.UndefOr[Boolean] = js.undefined
     
-    var refs: js.UndefOr[Boolean] = js.native
+    var refs: js.UndefOr[Boolean] = js.undefined
     
-    var regex: js.UndefOr[Boolean] = js.native
+    var regex: js.UndefOr[Boolean] = js.undefined
     
-    var set: js.UndefOr[Boolean] = js.native
+    var set: js.UndefOr[Boolean] = js.undefined
     
-    var symbol: js.UndefOr[Boolean] = js.native
+    var symbol: js.UndefOr[Boolean] = js.undefined
     
-    var undefined: js.UndefOr[Boolean] = js.native
+    var undefined: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

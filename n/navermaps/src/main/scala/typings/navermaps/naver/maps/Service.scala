@@ -5,7 +5,6 @@ import typings.navermaps.anon.Items
 import typings.navermaps.anon.Total
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Service {
@@ -17,10 +16,14 @@ object Service {
   object CoordType extends StObject {
     
     @js.native
-    sealed trait LATLNG extends CoordType
+    sealed trait LATLNG
+      extends StObject
+         with CoordType
     
     @js.native
-    sealed trait TM128 extends CoordType
+    sealed trait TM128
+      extends StObject
+         with CoordType
   }
   
   @js.native
@@ -30,10 +33,14 @@ object Service {
   object Encoding extends StObject {
     
     @js.native
-    sealed trait EUC_KR extends Encoding
+    sealed trait EUC_KR
+      extends StObject
+         with Encoding
     
     @js.native
-    sealed trait UTF_8 extends Encoding
+    sealed trait UTF_8
+      extends StObject
+         with Encoding
   }
   
   @js.native
@@ -43,18 +50,21 @@ object Service {
   object Status extends StObject {
     
     @js.native
-    sealed trait ERROR extends Status
+    sealed trait ERROR
+      extends StObject
+         with Status
     
     @js.native
-    sealed trait OK extends Status
+    sealed trait OK
+      extends StObject
+         with Status
   }
   
-  @js.native
   trait AddressItem extends StObject {
     
-    var addrdetail: Country = js.native
+    var addrdetail: Country
     
-    var address: String = js.native
+    var address: String
   }
   object AddressItem {
     
@@ -75,10 +85,9 @@ object Service {
     }
   }
   
-  @js.native
   trait GeocodeResponse extends StObject {
     
-    var result: Items = js.native
+    var result: Items
   }
   object GeocodeResponse {
     
@@ -96,10 +105,11 @@ object Service {
     }
   }
   
-  @js.native
-  trait GeocodeServiceOptions extends ServiceOptions {
+  trait GeocodeServiceOptions
+    extends StObject
+       with ServiceOptions {
     
-    var address: js.UndefOr[String] = js.native
+    var address: js.UndefOr[String] = js.undefined
   }
   object GeocodeServiceOptions {
     
@@ -120,10 +130,9 @@ object Service {
     }
   }
   
-  @js.native
   trait ReverseGeocodeResponse extends StObject {
     
-    var result: Total = js.native
+    var result: Total
   }
   object ReverseGeocodeResponse {
     
@@ -141,10 +150,11 @@ object Service {
     }
   }
   
-  @js.native
-  trait ReverseServiceOptions extends ServiceOptions {
+  trait ReverseServiceOptions
+    extends StObject
+       with ServiceOptions {
     
-    var location: js.UndefOr[Coord | CoordLiteral] = js.native
+    var location: js.UndefOr[Coord | CoordLiteral] = js.undefined
   }
   object ReverseServiceOptions {
     
@@ -165,12 +175,11 @@ object Service {
     }
   }
   
-  @js.native
   trait ServiceOptions extends StObject {
     
-    var coordType: js.UndefOr[js.Any] = js.native
+    var coordType: js.UndefOr[js.Any] = js.undefined
     
-    var encoding: js.UndefOr[js.Any] = js.native
+    var encoding: js.UndefOr[js.Any] = js.undefined
   }
   object ServiceOptions {
     

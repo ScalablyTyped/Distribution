@@ -3,7 +3,6 @@ package typings.winrt.Windows.ApplicationModel.Contacts
 import typings.winrt.Windows.Foundation.Collections.IVectorView
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Provider {
@@ -15,17 +14,24 @@ object Provider {
   object AddContactResult extends StObject {
     
     @js.native
-    sealed trait added extends AddContactResult
+    sealed trait added
+      extends StObject
+         with AddContactResult
     
     @js.native
-    sealed trait alreadyAdded extends AddContactResult
+    sealed trait alreadyAdded
+      extends StObject
+         with AddContactResult
     
     @js.native
-    sealed trait unavailable extends AddContactResult
+    sealed trait unavailable
+      extends StObject
+         with AddContactResult
   }
   
-  @js.native
-  trait ContactPickerUI extends IContactPickerUI
+  trait ContactPickerUI
+    extends StObject
+       with IContactPickerUI
   object ContactPickerUI {
     
     @scala.inline
@@ -42,8 +48,9 @@ object Provider {
     }
   }
   
-  @js.native
-  trait ContactRemovedEventArgs extends IContactRemovedEventArgs
+  trait ContactRemovedEventArgs
+    extends StObject
+       with IContactRemovedEventArgs
   object ContactRemovedEventArgs {
     
     @scala.inline
@@ -53,20 +60,19 @@ object Provider {
     }
   }
   
-  @js.native
   trait IContactPickerUI extends StObject {
     
-    def addContact(id: String, contact: Contact): AddContactResult = js.native
+    def addContact(id: String, contact: Contact): AddContactResult
     
-    def containsContact(id: String): Boolean = js.native
+    def containsContact(id: String): Boolean
     
-    var desiredFields: IVectorView[String] = js.native
+    var desiredFields: IVectorView[String]
     
-    var oncontactremoved: js.Any = js.native
+    var oncontactremoved: js.Any
     
-    def removeContact(id: String): Unit = js.native
+    def removeContact(id: String): Unit
     
-    var selectionMode: ContactSelectionMode = js.native
+    var selectionMode: ContactSelectionMode
   }
   object IContactPickerUI {
     
@@ -106,10 +112,9 @@ object Provider {
     }
   }
   
-  @js.native
   trait IContactRemovedEventArgs extends StObject {
     
-    var id: String = js.native
+    var id: String
   }
   object IContactRemovedEventArgs {
     

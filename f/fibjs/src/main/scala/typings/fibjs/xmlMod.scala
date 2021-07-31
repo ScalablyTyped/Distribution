@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 
   */
 object xmlMod {
+  
+  @JSImport("xml", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("xml", "ATTRIBUTE_NODE")
   @js.native
@@ -34,7 +37,9 @@ object xmlMod {
   
   @JSImport("xml", "Document")
   @js.native
-  class Document () extends ClassXmlDocument
+  class Document ()
+    extends StObject
+       with ClassXmlDocument
   
   @JSImport("xml", "ELEMENT_NODE")
   @js.native
@@ -48,20 +53,15 @@ object xmlMod {
   @js.native
   val TEXT_NODE: /* 3 */ Double = js.native
   
-  @JSImport("xml", "parse")
-  @js.native
-  def parse(source: String): ClassXmlDocument = js.native
-  @JSImport("xml", "parse")
-  @js.native
-  def parse(source: String, `type`: String): ClassXmlDocument = js.native
-  @JSImport("xml", "parse")
-  @js.native
-  def parse(source: ClassBuffer): ClassXmlDocument = js.native
-  @JSImport("xml", "parse")
-  @js.native
-  def parse(source: ClassBuffer, `type`: String): ClassXmlDocument = js.native
+  @scala.inline
+  def parse(source: String): ClassXmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ClassXmlDocument]
+  @scala.inline
+  def parse(source: String, `type`: String): ClassXmlDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ClassXmlDocument]
+  @scala.inline
+  def parse(source: ClassBuffer): ClassXmlDocument = ^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any]).asInstanceOf[ClassXmlDocument]
+  @scala.inline
+  def parse(source: ClassBuffer, `type`: String): ClassXmlDocument = (^.asInstanceOf[js.Dynamic].applyDynamic("parse")(source.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[ClassXmlDocument]
   
-  @JSImport("xml", "serialize")
-  @js.native
-  def serialize(node: ClassXmlNode): String = js.native
+  @scala.inline
+  def serialize(node: ClassXmlNode): String = ^.asInstanceOf[js.Dynamic].applyDynamic("serialize")(node.asInstanceOf[js.Any]).asInstanceOf[String]
 }

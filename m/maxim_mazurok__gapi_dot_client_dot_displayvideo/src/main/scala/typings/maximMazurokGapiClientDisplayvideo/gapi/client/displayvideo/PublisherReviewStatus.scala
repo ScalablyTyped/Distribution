@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDisplayvideo.gapi.client.displayvideo
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PublisherReviewStatus extends StObject {
   
   /** The publisher reviewing the creative. */
-  var publisherName: js.UndefOr[String] = js.native
+  var publisherName: js.UndefOr[String] = js.undefined
   
   /** Status of the publisher review. */
-  var status: js.UndefOr[String] = js.native
+  var status: js.UndefOr[String] = js.undefined
 }
 object PublisherReviewStatus {
   

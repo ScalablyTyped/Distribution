@@ -12,36 +12,34 @@ import typings.chrome.chrome.webNavigation.WebNavigationSourceEvent
 import typings.chrome.chrome.webNavigation.WebNavigationTransitionalEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofwebNavigation extends StObject {
   
   def getAllFrames(
     details: GetAllFrameDetails,
     callback: js.Function1[/* details */ js.Array[GetAllFrameResultDetails] | Null, Unit]
-  ): Unit = js.native
+  ): Unit
   
-  def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit = js.native
+  def getFrame(details: GetFrameDetails, callback: js.Function1[/* details */ GetFrameResultDetails | Null, Unit]): Unit
   
-  var onBeforeNavigate: WebNavigationParentedEvent = js.native
+  var onBeforeNavigate: WebNavigationParentedEvent
   
-  var onCommitted: WebNavigationTransitionalEvent = js.native
+  var onCommitted: WebNavigationTransitionalEvent
   
-  var onCompleted: WebNavigationFramedEvent = js.native
+  var onCompleted: WebNavigationFramedEvent
   
-  var onCreatedNavigationTarget: WebNavigationSourceEvent = js.native
+  var onCreatedNavigationTarget: WebNavigationSourceEvent
   
-  var onDOMContentLoaded: WebNavigationFramedEvent = js.native
+  var onDOMContentLoaded: WebNavigationFramedEvent
   
-  var onErrorOccurred: WebNavigationFramedErrorEvent = js.native
+  var onErrorOccurred: WebNavigationFramedErrorEvent
   
-  var onHistoryStateUpdated: WebNavigationTransitionalEvent = js.native
+  var onHistoryStateUpdated: WebNavigationTransitionalEvent
   
-  var onReferenceFragmentUpdated: WebNavigationTransitionalEvent = js.native
+  var onReferenceFragmentUpdated: WebNavigationTransitionalEvent
   
-  var onTabReplaced: WebNavigationReplacementEvent = js.native
+  var onTabReplaced: WebNavigationReplacementEvent
 }
 object TypeofwebNavigation {
   

@@ -3,65 +3,63 @@ package typings.winrt.Windows.UI.Text
 import typings.winrt.Windows.UI.Color
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ITextCharacterFormat extends StObject {
   
-  var allCaps: FormatEffect = js.native
+  var allCaps: FormatEffect
   
-  var backgroundColor: Color = js.native
+  var backgroundColor: Color
   
-  var bold: FormatEffect = js.native
+  var bold: FormatEffect
   
-  var fontStretch: FontStretch = js.native
+  var fontStretch: FontStretch
   
-  var fontStyle: FontStyle = js.native
+  var fontStyle: FontStyle
   
-  var foregroundColor: Color = js.native
+  var foregroundColor: Color
   
-  def getClone(): ITextCharacterFormat = js.native
+  def getClone(): ITextCharacterFormat
   
-  var hidden: FormatEffect = js.native
+  var hidden: FormatEffect
   
-  def isEqual(format: ITextCharacterFormat): Boolean = js.native
+  def isEqual(format: ITextCharacterFormat): Boolean
   
-  var italic: FormatEffect = js.native
+  var italic: FormatEffect
   
-  var kerning: Double = js.native
+  var kerning: Double
   
-  var languageTag: String = js.native
+  var languageTag: String
   
-  var linkType: LinkType = js.native
+  var linkType: LinkType
   
-  var name: String = js.native
+  var name: String
   
-  var outline: FormatEffect = js.native
+  var outline: FormatEffect
   
-  var position: Double = js.native
+  var position: Double
   
-  var protectedText: FormatEffect = js.native
+  var protectedText: FormatEffect
   
-  def setClone(value: ITextCharacterFormat): Unit = js.native
+  def setClone(value: ITextCharacterFormat): Unit
   
-  var size: Double = js.native
+  var size: Double
   
-  var smallCaps: FormatEffect = js.native
+  var smallCaps: FormatEffect
   
-  var spacing: Double = js.native
+  var spacing: Double
   
-  var strikethrough: FormatEffect = js.native
+  var strikethrough: FormatEffect
   
-  var subscript: FormatEffect = js.native
+  var subscript: FormatEffect
   
-  var superscript: FormatEffect = js.native
+  var superscript: FormatEffect
   
-  var textScript: TextScript = js.native
+  var textScript: TextScript
   
-  var underline: UnderlineType = js.native
+  var underline: UnderlineType
   
-  var weight: Double = js.native
+  var weight: Double
 }
 object ITextCharacterFormat {
   

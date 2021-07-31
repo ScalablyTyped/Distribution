@@ -6,7 +6,6 @@ import typings.ol.pluggableMapMod.FrameState
 import typings.std.UIEvent
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mapBrowserEventMod {
@@ -25,14 +24,14 @@ object mapBrowserEventMod {
       `type`: String,
       map: typings.ol.pluggableMapMod.default,
       originalEvent: EVENT,
-      opt_dragging: js.UndefOr[scala.Nothing],
+      opt_dragging: Boolean,
       opt_frameState: FrameState
     ) = this()
     def this(
       `type`: String,
       map: typings.ol.pluggableMapMod.default,
       originalEvent: EVENT,
-      opt_dragging: Boolean,
+      opt_dragging: Unit,
       opt_frameState: FrameState
     ) = this()
   }

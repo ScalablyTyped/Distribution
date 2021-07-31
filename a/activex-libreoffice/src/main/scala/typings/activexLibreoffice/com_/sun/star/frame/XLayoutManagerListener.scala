@@ -5,7 +5,6 @@ import typings.activexLibreoffice.com_.sun.star.lang.EventObject
 import typings.activexLibreoffice.com_.sun.star.lang.XEventListener
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -17,8 +16,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @see com.sun.star.frame.LayoutManagerEvents
   * @since OOo 2.0
   */
-@js.native
-trait XLayoutManagerListener extends XEventListener {
+trait XLayoutManagerListener
+  extends StObject
+     with XEventListener {
   
   /**
     * is invoked when a layout manager has made a certain operation.
@@ -26,7 +26,7 @@ trait XLayoutManagerListener extends XEventListener {
     * @param eLayoutEvent identifies the layout event that has occurred.
     * @param aInfo provides additional information about the event. The type of info depends on the event.
     */
-  def layoutEvent(aSource: EventObject, eLayoutEvent: Double, aInfo: js.Any): Unit = js.native
+  def layoutEvent(aSource: EventObject, eLayoutEvent: Double, aInfo: js.Any): Unit
 }
 object XLayoutManagerListener {
   

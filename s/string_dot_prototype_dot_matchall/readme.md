@@ -10,9 +10,9 @@ Spec-compliant polyfill for String.prototype.matchAll ESnext proposal.
 | ------------------ | :-------------: |
 | Full name          | string.prototype.matchall |
 | Keywords           | String.prototype.matchAll, matchAll, match, regex, regexp, regular, expression, matches |
-| # releases         | 6 |
-| # dependents       | 55 |
-| # downloads        | 126152348 |
+| # releases         | 5 |
+| # dependents       | 91 |
+| # downloads        | 228990061 |
 | # stars            | 0 |
 
 ## Links

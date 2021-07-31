@@ -3,19 +3,17 @@ package typings.cookieJs
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Options extends StObject {
   
-  var domain: String = js.native
+  var domain: String
   
-  var expires: Double | String | Date = js.native
+  var expires: Double | String | Date
   
-  var path: String = js.native
+  var path: String
   
-  var secure: Boolean = js.native
+  var secure: Boolean
 }
 object Options {
   

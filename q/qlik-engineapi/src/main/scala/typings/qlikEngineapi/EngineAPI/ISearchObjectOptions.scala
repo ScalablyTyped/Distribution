@@ -2,19 +2,17 @@ package typings.qlikEngineapi.EngineAPI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * SearchObjectOptions...
   */
-@js.native
 trait ISearchObjectOptions extends StObject {
   
   /**
     * This array is either empty or contains qProperty.
     */
-  var qAttributes: js.Array[String] = js.native
+  var qAttributes: js.Array[String]
   
   /* add new member  */
   /**
@@ -25,7 +23,7 @@ trait ISearchObjectOptions extends StObject {
     *
     * Note: Only affects the computation of the ranges. It does not impact the encoding of the text.
     */
-  var qCharEncoding: String = js.native
+  var qCharEncoding: String
 }
 object ISearchObjectOptions {
   

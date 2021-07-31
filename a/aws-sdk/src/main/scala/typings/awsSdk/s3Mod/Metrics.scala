@@ -2,21 +2,19 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Metrics extends StObject {
   
   /**
     *  A container specifying the time threshold for emitting the s3:Replication:OperationMissedThreshold event. 
     */
-  var EventThreshold: js.UndefOr[ReplicationTimeValue] = js.native
+  var EventThreshold: js.UndefOr[ReplicationTimeValue] = js.undefined
   
   /**
     *  Specifies whether the replication metrics are enabled. 
     */
-  var Status: MetricsStatus = js.native
+  var Status: MetricsStatus
 }
 object Metrics {
   

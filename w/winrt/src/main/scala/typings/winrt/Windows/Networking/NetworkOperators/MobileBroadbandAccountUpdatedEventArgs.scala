@@ -2,11 +2,11 @@ package typings.winrt.Windows.Networking.NetworkOperators
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait MobileBroadbandAccountUpdatedEventArgs extends IMobileBroadbandAccountUpdatedEventArgs
+trait MobileBroadbandAccountUpdatedEventArgs
+  extends StObject
+     with IMobileBroadbandAccountUpdatedEventArgs
 object MobileBroadbandAccountUpdatedEventArgs {
   
   @scala.inline

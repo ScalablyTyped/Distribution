@@ -6,20 +6,18 @@ import typings.meteorAstronomy.MeteorAstronomy.SaveAndValidateOptions
 import typings.std.Partial
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait Cast extends StObject {
     
-    var cast: js.UndefOr[Boolean] = js.native
+    var cast: js.UndefOr[Boolean] = js.undefined
     
     @JSName("clone")
-    var clone_FCast: js.UndefOr[Boolean] = js.native
+    var clone_FCast: js.UndefOr[Boolean] = js.undefined
     
-    var merge: js.UndefOr[Boolean] = js.native
+    var merge: js.UndefOr[Boolean] = js.undefined
   }
   object Cast {
     
@@ -93,17 +91,16 @@ object anon {
     def validate(options: SaveAndValidateOptions[/* keyof T */ String], callback: SaveAndValidateCallback): Unit = js.native
   }
   
-  @js.native
   trait GetIdentifier extends StObject {
     
-    def getIdentifier(identifier: js.Any): String = js.native
+    def getIdentifier(identifier: js.Any): String
     
-    def getValues(): js.Array[_] = js.native
+    def getValues(): js.Array[js.Any]
   }
   object GetIdentifier {
     
     @scala.inline
-    def apply(getIdentifier: js.Any => String, getValues: () => js.Array[_]): GetIdentifier = {
+    def apply(getIdentifier: js.Any => String, getValues: () => js.Array[js.Any]): GetIdentifier = {
       val __obj = js.Dynamic.literal(getIdentifier = js.Any.fromFunction1(getIdentifier), getValues = js.Any.fromFunction0(getValues))
       __obj.asInstanceOf[GetIdentifier]
     }
@@ -115,18 +112,17 @@ object anon {
       def setGetIdentifier(value: js.Any => String): Self = StObject.set(x, "getIdentifier", js.Any.fromFunction1(value))
       
       @scala.inline
-      def setGetValues(value: () => js.Array[_]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
+      def setGetValues(value: () => js.Array[js.Any]): Self = StObject.set(x, "getValues", js.Any.fromFunction0(value))
     }
   }
   
-  @js.native
   trait Insert extends StObject {
     
-    var insert: Boolean = js.native
+    var insert: Boolean
     
-    var remove: Boolean = js.native
+    var remove: Boolean
     
-    var update: Boolean = js.native
+    var update: Boolean
   }
   object Insert {
     
@@ -150,12 +146,11 @@ object anon {
     }
   }
   
-  @js.native
   trait Old extends StObject {
     
-    var old: js.UndefOr[Boolean] = js.native
+    var old: js.UndefOr[Boolean] = js.undefined
     
-    var raw: js.UndefOr[Boolean] = js.native
+    var raw: js.UndefOr[Boolean] = js.undefined
   }
   object Old {
     

@@ -2,21 +2,20 @@ package typings.forgeApis.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateFolderDataAttributes extends StObject {
   
-  var extension: BaseAttributesExtensionObject = js.native
+  var `extension`: BaseAttributesExtensionObject
   
-  var name: String = js.native
+  var name: String
 }
 object CreateFolderDataAttributes {
   
   @scala.inline
-  def apply(extension: BaseAttributesExtensionObject, name: String): CreateFolderDataAttributes = {
-    val __obj = js.Dynamic.literal(extension = extension.asInstanceOf[js.Any], name = name.asInstanceOf[js.Any])
+  def apply(`extension`: BaseAttributesExtensionObject, name: String): CreateFolderDataAttributes = {
+    val __obj = js.Dynamic.literal(name = name.asInstanceOf[js.Any])
+    __obj.updateDynamic("extension")(`extension`.asInstanceOf[js.Any])
     __obj.asInstanceOf[CreateFolderDataAttributes]
   }
   

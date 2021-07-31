@@ -6,7 +6,6 @@ import typings.materialChips.anon.PartialMDCChipTrailingAct
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,7 +14,7 @@ object mod {
   @js.native
   class MDCChip protected ()
     extends typings.materialChips.chipIndexMod.MDCChip {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialChips.chipFoundationMod.MDCChipFoundation,
@@ -25,9 +24,12 @@ object mod {
   /* static members */
   object MDCChip {
     
-    @JSImport("@material/chips", "MDCChip.attachTo")
+    @JSImport("@material/chips", "MDCChip")
     @js.native
-    def attachTo(root: Element): typings.materialChips.chipComponentMod.MDCChip = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialChips.chipComponentMod.MDCChip = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.chipComponentMod.MDCChip]
   }
   
   @JSImport("@material/chips", "MDCChipFoundation")
@@ -41,15 +43,18 @@ object mod {
   @js.native
   class MDCChipSet protected ()
     extends typings.materialChips.indexMod.MDCChipSet {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(root: Element, foundation: typings.materialChips.foundationMod.MDCChipSetFoundation, args: js.Any*) = this()
   }
   /* static members */
   object MDCChipSet {
     
-    @JSImport("@material/chips", "MDCChipSet.attachTo")
+    @JSImport("@material/chips", "MDCChipSet")
     @js.native
-    def attachTo(root: Element): typings.materialChips.componentMod.MDCChipSet = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialChips.componentMod.MDCChipSet = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.componentMod.MDCChipSet]
   }
   
   @JSImport("@material/chips", "MDCChipSetFoundation")
@@ -63,7 +68,7 @@ object mod {
   @js.native
   class MDCChipTrailingAction protected ()
     extends typings.materialChips.trailingactionIndexMod.MDCChipTrailingAction {
-    def this(root: Element, foundation: js.UndefOr[scala.Nothing], args: js.Any*) = this()
+    def this(root: Element, foundation: Unit, args: js.Any*) = this()
     def this(
       root: Element,
       foundation: typings.materialChips.trailingactionFoundationMod.MDCChipTrailingActionFoundation,
@@ -73,9 +78,12 @@ object mod {
   /* static members */
   object MDCChipTrailingAction {
     
-    @JSImport("@material/chips", "MDCChipTrailingAction.attachTo")
+    @JSImport("@material/chips", "MDCChipTrailingAction")
     @js.native
-    def attachTo(root: Element): typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def attachTo(root: Element): typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction = ^.asInstanceOf[js.Dynamic].applyDynamic("attachTo")(root.asInstanceOf[js.Any]).asInstanceOf[typings.materialChips.trailingactionComponentMod.MDCChipTrailingAction]
   }
   
   @JSImport("@material/chips", "MDCChipTrailingActionFoundation")

@@ -2,11 +2,11 @@ package typings.arcgisRestApi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait OldCircularArc extends JsonCurve {
+trait OldCircularArc
+  extends StObject
+     with JsonCurve {
   
   var a: js.Tuple4[
     Position, 
@@ -16,7 +16,7 @@ trait OldCircularArc extends JsonCurve {
   Double, 
     // minor
   Double
-  ] = js.native
+  ]
 }
 object OldCircularArc {
   

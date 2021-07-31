@@ -2,15 +2,13 @@ package typings.googlemaps.google.maps.places
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PlaceAspectRating extends StObject {
   
-  var rating: Double = js.native
+  var rating: Double
   
-  var `type`: String = js.native
+  var `type`: String
 }
 object PlaceAspectRating {
   

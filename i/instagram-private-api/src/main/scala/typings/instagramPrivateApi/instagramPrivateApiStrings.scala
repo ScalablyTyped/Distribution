@@ -6,7 +6,6 @@ import typings.instagramPrivateApi.graphqlRequestOptionsMod._InsightsSurface
 import typings.instagramPrivateApi.timelineFeedTypesMod.TimelineFeedReason
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object instagramPrivateApiStrings {
@@ -102,27 +101,37 @@ object instagramPrivateApiStrings {
   def IMPRESSION_COUNT: IMPRESSION_COUNT = "IMPRESSION_COUNT".asInstanceOf[IMPRESSION_COUNT]
   
   @js.native
-  sealed trait IgInsightsAccountInsightsSurfaceQuery extends _InsightsFriendlyName
+  sealed trait IgInsightsAccountInsightsSurfaceQuery
+    extends StObject
+       with _InsightsFriendlyName
   @scala.inline
   def IgInsightsAccountInsightsSurfaceQuery: IgInsightsAccountInsightsSurfaceQuery = "IgInsightsAccountInsightsSurfaceQuery".asInstanceOf[IgInsightsAccountInsightsSurfaceQuery]
   
   @js.native
-  sealed trait IgInsightsAccountInsightsWithTabsQuery extends _InsightsFriendlyName
+  sealed trait IgInsightsAccountInsightsWithTabsQuery
+    extends StObject
+       with _InsightsFriendlyName
   @scala.inline
   def IgInsightsAccountInsightsWithTabsQuery: IgInsightsAccountInsightsWithTabsQuery = "IgInsightsAccountInsightsWithTabsQuery".asInstanceOf[IgInsightsAccountInsightsWithTabsQuery]
   
   @js.native
-  sealed trait IgInsightsPostGridSurfaceQuery extends _InsightsFriendlyName
+  sealed trait IgInsightsPostGridSurfaceQuery
+    extends StObject
+       with _InsightsFriendlyName
   @scala.inline
   def IgInsightsPostGridSurfaceQuery: IgInsightsPostGridSurfaceQuery = "IgInsightsPostGridSurfaceQuery".asInstanceOf[IgInsightsPostGridSurfaceQuery]
   
   @js.native
-  sealed trait IgInsightsPostInsightsQuery extends _InsightsFriendlyName
+  sealed trait IgInsightsPostInsightsQuery
+    extends StObject
+       with _InsightsFriendlyName
   @scala.inline
   def IgInsightsPostInsightsQuery: IgInsightsPostInsightsQuery = "IgInsightsPostInsightsQuery".asInstanceOf[IgInsightsPostInsightsQuery]
   
   @js.native
-  sealed trait IgInsightsStoryInsightsAppQuery extends _InsightsFriendlyName
+  sealed trait IgInsightsStoryInsightsAppQuery
+    extends StObject
+       with _InsightsFriendlyName
   @scala.inline
   def IgInsightsStoryInsightsAppQuery: IgInsightsStoryInsightsAppQuery = "IgInsightsStoryInsightsAppQuery".asInstanceOf[IgInsightsStoryInsightsAppQuery]
   
@@ -217,7 +226,9 @@ object instagramPrivateApiStrings {
   def VIDEO: VIDEO = "VIDEO".asInstanceOf[VIDEO]
   
   @js.native
-  sealed trait account extends _InsightsSurface
+  sealed trait account
+    extends StObject
+       with _InsightsSurface
   @scala.inline
   def account: account = "account".asInstanceOf[account]
   
@@ -247,17 +258,23 @@ object instagramPrivateApiStrings {
   def cold_start: cold_start = "cold_start".asInstanceOf[cold_start]
   
   @js.native
-  sealed trait cold_start_fetch extends TimelineFeedReason
+  sealed trait cold_start_fetch
+    extends StObject
+       with TimelineFeedReason
   @scala.inline
   def cold_start_fetch: cold_start_fetch = "cold_start_fetch".asInstanceOf[cold_start_fetch]
   
   @js.native
-  sealed trait comment_likers extends _IgAppModule
+  sealed trait comment_likers
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def comment_likers: comment_likers = "comment_likers".asInstanceOf[comment_likers]
   
   @js.native
-  sealed trait comment_owner extends _IgAppModule
+  sealed trait comment_owner
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def comment_owner: comment_owner = "comment_owner".asInstanceOf[comment_owner]
   
@@ -277,7 +294,9 @@ object instagramPrivateApiStrings {
   def date_followed_latest: date_followed_latest = "date_followed_latest".asInstanceOf[date_followed_latest]
   
   @js.native
-  sealed trait explore_people extends _IgAppModule
+  sealed trait explore_people
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def explore_people: explore_people = "explore_people".asInstanceOf[explore_people]
   
@@ -287,27 +306,37 @@ object instagramPrivateApiStrings {
   def fail: fail = "fail".asInstanceOf[fail]
   
   @js.native
-  sealed trait feed_contextual_hashtag extends _IgAppModule
+  sealed trait feed_contextual_hashtag
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def feed_contextual_hashtag: feed_contextual_hashtag = "feed_contextual_hashtag".asInstanceOf[feed_contextual_hashtag]
   
   @js.native
-  sealed trait feed_contextual_location extends _IgAppModule
+  sealed trait feed_contextual_location
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def feed_contextual_location: feed_contextual_location = "feed_contextual_location".asInstanceOf[feed_contextual_location]
   
   @js.native
-  sealed trait feed_contextual_newsfeed_multi_media_liked extends _IgAppModule
+  sealed trait feed_contextual_newsfeed_multi_media_liked
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def feed_contextual_newsfeed_multi_media_liked: feed_contextual_newsfeed_multi_media_liked = "feed_contextual_newsfeed_multi_media_liked".asInstanceOf[feed_contextual_newsfeed_multi_media_liked]
   
   @js.native
-  sealed trait feed_contextual_post extends _IgAppModule
+  sealed trait feed_contextual_post
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def feed_contextual_post: feed_contextual_post = "feed_contextual_post".asInstanceOf[feed_contextual_post]
   
   @js.native
-  sealed trait feed_timeline extends _IgAppModule
+  sealed trait feed_timeline
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def feed_timeline: feed_timeline = "feed_timeline".asInstanceOf[feed_timeline]
   
@@ -317,17 +346,23 @@ object instagramPrivateApiStrings {
   def feedback_required: feedback_required = "feedback_required".asInstanceOf[feedback_required]
   
   @js.native
-  sealed trait find_friends_contacts extends _IgAppModule
+  sealed trait find_friends_contacts
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def find_friends_contacts: find_friends_contacts = "find_friends_contacts".asInstanceOf[find_friends_contacts]
   
   @js.native
-  sealed trait followers extends _IgAppModule
+  sealed trait followers
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def followers: followers = "followers".asInstanceOf[followers]
   
   @js.native
-  sealed trait following extends _IgAppModule
+  sealed trait following
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def following: following = "following".asInstanceOf[following]
   
@@ -337,7 +372,9 @@ object instagramPrivateApiStrings {
   def hashtags: hashtags = "hashtags".asInstanceOf[hashtags]
   
   @js.native
-  sealed trait igtv_feed_timeline extends _IgAppModule
+  sealed trait igtv_feed_timeline
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def igtv_feed_timeline: igtv_feed_timeline = "igtv_feed_timeline".asInstanceOf[igtv_feed_timeline]
   
@@ -347,17 +384,23 @@ object instagramPrivateApiStrings {
   def like: like = "like".asInstanceOf[like]
   
   @js.native
-  sealed trait likers_likers_media_view_profile extends _IgAppModule
+  sealed trait likers_likers_media_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def likers_likers_media_view_profile: likers_likers_media_view_profile = "likers_likers_media_view_profile".asInstanceOf[likers_likers_media_view_profile]
   
   @js.native
-  sealed trait likers_likers_photo_view_profile extends _IgAppModule
+  sealed trait likers_likers_photo_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def likers_likers_photo_view_profile: likers_likers_photo_view_profile = "likers_likers_photo_view_profile".asInstanceOf[likers_likers_photo_view_profile]
   
   @js.native
-  sealed trait likers_likers_video_view_profile extends _IgAppModule
+  sealed trait likers_likers_video_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def likers_likers_video_view_profile: likers_likers_video_view_profile = "likers_likers_video_view_profile".asInstanceOf[likers_likers_video_view_profile]
   
@@ -367,7 +410,9 @@ object instagramPrivateApiStrings {
   def login_required: login_required = "login_required".asInstanceOf[login_required]
   
   @js.native
-  sealed trait media_view_profile extends _IgAppModule
+  sealed trait media_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def media_view_profile: media_view_profile = "media_view_profile".asInstanceOf[media_view_profile]
   
@@ -387,7 +432,9 @@ object instagramPrivateApiStrings {
   def music: music = "music".asInstanceOf[music]
   
   @js.native
-  sealed trait newsfeed extends _IgAppModule
+  sealed trait newsfeed
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def newsfeed: newsfeed = "newsfeed".asInstanceOf[newsfeed]
   
@@ -397,7 +444,9 @@ object instagramPrivateApiStrings {
   def once: once = "once".asInstanceOf[once]
   
   @js.native
-  sealed trait pagination extends TimelineFeedReason
+  sealed trait pagination
+    extends StObject
+       with TimelineFeedReason
   @scala.inline
   def pagination: pagination = "pagination".asInstanceOf[pagination]
   
@@ -407,7 +456,9 @@ object instagramPrivateApiStrings {
   def photo_ : photo_ = "photo".asInstanceOf[photo_]
   
   @js.native
-  sealed trait photo_view_profile extends _IgAppModule
+  sealed trait photo_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def photo_view_profile: photo_view_profile = "photo_view_profile".asInstanceOf[photo_view_profile]
   
@@ -422,17 +473,23 @@ object instagramPrivateApiStrings {
   def polling_sticker: polling_sticker = "polling_sticker".asInstanceOf[polling_sticker]
   
   @js.native
-  sealed trait post extends _InsightsSurface
+  sealed trait post
+    extends StObject
+       with _InsightsSurface
   @scala.inline
   def post: post = "post".asInstanceOf[post]
   
   @js.native
-  sealed trait profile extends _IgAppModule
+  sealed trait profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def profile: profile = "profile".asInstanceOf[profile]
   
   @js.native
-  sealed trait pull_to_refresh extends TimelineFeedReason
+  sealed trait pull_to_refresh
+    extends StObject
+       with TimelineFeedReason
   @scala.inline
   def pull_to_refresh: pull_to_refresh = "pull_to_refresh".asInstanceOf[pull_to_refresh]
   
@@ -467,52 +524,72 @@ object instagramPrivateApiStrings {
   def reshare: reshare = "reshare".asInstanceOf[reshare]
   
   @js.native
-  sealed trait self_followers extends _IgAppModule
+  sealed trait self_followers
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def self_followers: self_followers = "self_followers".asInstanceOf[self_followers]
   
   @js.native
-  sealed trait self_following extends _IgAppModule
+  sealed trait self_following
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def self_following: self_following = "self_following".asInstanceOf[self_following]
   
   @js.native
-  sealed trait self_likers_self_likers_media_view_profile extends _IgAppModule
+  sealed trait self_likers_self_likers_media_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def self_likers_self_likers_media_view_profile: self_likers_self_likers_media_view_profile = "self_likers_self_likers_media_view_profile".asInstanceOf[self_likers_self_likers_media_view_profile]
   
   @js.native
-  sealed trait self_likers_self_likers_photo_view_profile extends _IgAppModule
+  sealed trait self_likers_self_likers_photo_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def self_likers_self_likers_photo_view_profile: self_likers_self_likers_photo_view_profile = "self_likers_self_likers_photo_view_profile".asInstanceOf[self_likers_self_likers_photo_view_profile]
   
   @js.native
-  sealed trait self_likers_self_likers_video_view_profile extends _IgAppModule
+  sealed trait self_likers_self_likers_video_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def self_likers_self_likers_video_view_profile: self_likers_self_likers_video_view_profile = "self_likers_self_likers_video_view_profile".asInstanceOf[self_likers_self_likers_video_view_profile]
   
   @js.native
-  sealed trait story extends _InsightsSurface
+  sealed trait story
+    extends StObject
+       with _InsightsSurface
   @scala.inline
   def story: story = "story".asInstanceOf[story]
   
   @js.native
-  sealed trait story_camera_music_overlay_post_capture extends _IgAppModule
+  sealed trait story_camera_music_overlay_post_capture
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def story_camera_music_overlay_post_capture: story_camera_music_overlay_post_capture = "story_camera_music_overlay_post_capture".asInstanceOf[story_camera_music_overlay_post_capture]
   
   @js.native
-  sealed trait story_camera_music_overlay_pre_capture extends _IgAppModule
+  sealed trait story_camera_music_overlay_pre_capture
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def story_camera_music_overlay_pre_capture: story_camera_music_overlay_pre_capture = "story_camera_music_overlay_pre_capture".asInstanceOf[story_camera_music_overlay_pre_capture]
   
   @js.native
-  sealed trait story_viewer_default extends _IgAppModule
+  sealed trait story_viewer_default
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def story_viewer_default: story_viewer_default = "story_viewer_default".asInstanceOf[story_viewer_default]
   
   @js.native
-  sealed trait story_viewer_profile extends _IgAppModule
+  sealed trait story_viewer_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def story_viewer_profile: story_viewer_profile = "story_viewer_profile".asInstanceOf[story_viewer_profile]
   
@@ -542,12 +619,16 @@ object instagramPrivateApiStrings {
   def video_ : video_ = "video".asInstanceOf[video_]
   
   @js.native
-  sealed trait video_view_profile extends _IgAppModule
+  sealed trait video_view_profile
+    extends StObject
+       with _IgAppModule
   @scala.inline
   def video_view_profile: video_view_profile = "video_view_profile".asInstanceOf[video_view_profile]
   
   @js.native
-  sealed trait warm_start_fetch extends TimelineFeedReason
+  sealed trait warm_start_fetch
+    extends StObject
+       with TimelineFeedReason
   @scala.inline
   def warm_start_fetch: warm_start_fetch = "warm_start_fetch".asInstanceOf[warm_start_fetch]
 }

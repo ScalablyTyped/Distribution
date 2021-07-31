@@ -3,61 +3,58 @@ package typings.xmltojson
 import typings.std.Document
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("xmltojson", "grokType")
+  @JSImport("xmltojson", JSImport.Namespace)
   @js.native
-  def grokType(sValue: js.Any): js.Any = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("xmltojson", "parseString")
-  @js.native
-  def parseString(xmlString: String, opt: Options): js.Object = js.native
+  @scala.inline
+  def grokType(sValue: js.Any): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("grokType")(sValue.asInstanceOf[js.Any]).asInstanceOf[js.Any]
   
-  @JSImport("xmltojson", "parseXml")
-  @js.native
-  def parseXml(oXMLParent: Document, opt: Options): js.Object = js.native
+  @scala.inline
+  def parseString(xmlString: String, opt: Options): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseString")(xmlString.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("xmltojson", "stringToXml")
-  @js.native
-  def stringToXml(xmlString: String): Document = js.native
+  @scala.inline
+  def parseXml(oXMLParent: Document, opt: Options): js.Object = (^.asInstanceOf[js.Dynamic].applyDynamic("parseXml")(oXMLParent.asInstanceOf[js.Any], opt.asInstanceOf[js.Any])).asInstanceOf[js.Object]
   
-  @JSImport("xmltojson", "xmlToString")
-  @js.native
-  def xmlToString(xmlDoc: Document): String = js.native
+  @scala.inline
+  def stringToXml(xmlString: String): Document = ^.asInstanceOf[js.Dynamic].applyDynamic("stringToXml")(xmlString.asInstanceOf[js.Any]).asInstanceOf[Document]
   
-  @js.native
+  @scala.inline
+  def xmlToString(xmlDoc: Document): String = ^.asInstanceOf[js.Dynamic].applyDynamic("xmlToString")(xmlDoc.asInstanceOf[js.Any]).asInstanceOf[String]
+  
   trait Options extends StObject {
     
-    var attrKey: js.UndefOr[String] = js.native
+    var attrKey: js.UndefOr[String] = js.undefined
     
-    var attrsAsObject: js.UndefOr[Boolean] = js.native
+    var attrsAsObject: js.UndefOr[Boolean] = js.undefined
     
-    var cdataKey: js.UndefOr[String] = js.native
+    var cdataKey: js.UndefOr[String] = js.undefined
     
-    var childrenAsArray: js.UndefOr[Boolean] = js.native
+    var childrenAsArray: js.UndefOr[Boolean] = js.undefined
     
-    var grokAttr: js.UndefOr[Boolean] = js.native
+    var grokAttr: js.UndefOr[Boolean] = js.undefined
     
-    var grokText: js.UndefOr[Boolean] = js.native
+    var grokText: js.UndefOr[Boolean] = js.undefined
     
-    var mergeCDATA: js.UndefOr[Boolean] = js.native
+    var mergeCDATA: js.UndefOr[Boolean] = js.undefined
     
-    var namespaceKey: js.UndefOr[String] = js.native
+    var namespaceKey: js.UndefOr[String] = js.undefined
     
-    var normalize: js.UndefOr[Boolean] = js.native
+    var normalize: js.UndefOr[Boolean] = js.undefined
     
-    var stripAttrPrefix: js.UndefOr[Boolean] = js.native
+    var stripAttrPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var stripElemPrefix: js.UndefOr[Boolean] = js.native
+    var stripElemPrefix: js.UndefOr[Boolean] = js.undefined
     
-    var textKey: js.UndefOr[String] = js.native
+    var textKey: js.UndefOr[String] = js.undefined
     
-    var valueKey: js.UndefOr[String] = js.native
+    var valueKey: js.UndefOr[String] = js.undefined
     
-    var xmlns: js.UndefOr[Boolean] = js.native
+    var xmlns: js.UndefOr[Boolean] = js.undefined
   }
   object Options {
     

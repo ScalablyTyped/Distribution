@@ -3,32 +3,30 @@ package typings.pulumiAws.inputMod.appmesh
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RouteSpecGrpcRouteMatch extends StObject {
   
   /**
     * The data to match from the gRPC request.
     */
-  var metadatas: js.UndefOr[Input[js.Array[Input[RouteSpecGrpcRouteMatchMetadata]]]] = js.native
+  var metadatas: js.UndefOr[Input[js.Array[Input[RouteSpecGrpcRouteMatchMetadata]]]] = js.undefined
   
   /**
     * The method name to match from the request. If you specify a name, you must also specify a `serviceName`.
     */
-  var methodName: js.UndefOr[Input[String]] = js.native
+  var methodName: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The value sent by the client must begin with the specified characters. Must be between 1 and 255 characters in length.
     * This parameter must always start with /, which by itself matches all requests to the virtual router service name.
     */
-  var prefix: js.UndefOr[Input[String]] = js.native
+  var prefix: js.UndefOr[Input[String]] = js.undefined
   
   /**
     * The fully qualified domain name for the service to match from the request.
     */
-  var serviceName: js.UndefOr[Input[String]] = js.native
+  var serviceName: js.UndefOr[Input[String]] = js.undefined
 }
 object RouteSpecGrpcRouteMatch {
   

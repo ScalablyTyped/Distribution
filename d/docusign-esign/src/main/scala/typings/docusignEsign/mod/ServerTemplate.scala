@@ -2,18 +2,16 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ServerTemplate extends StObject {
   
-  var sequence: js.UndefOr[String] = js.native
+  var sequence: js.UndefOr[String] = js.undefined
   
   /**
     * The unique identifier of the template. If this is not provided, DocuSign will generate a value.
     */
-  var templateId: js.UndefOr[String] = js.native
+  var templateId: js.UndefOr[String] = js.undefined
 }
 object ServerTemplate {
   

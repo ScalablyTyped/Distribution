@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/gamesManagement/v1management", "gamesManagement_v1management.Resource$Scores")
@@ -32,7 +31,7 @@ class ResourceScores protected () extends StObject {
     */
   def reset(): GaxiosPromise[SchemaPlayerScoreResetResponse] = js.native
   def reset(callback: BodyResponseCallback[SchemaPlayerScoreResetResponse]): Unit = js.native
-  def reset(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerScoreResetResponse] = js.native
+  def reset(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayerScoreResetResponse] = js.native
   def reset(params: ParamsResourceScoresReset): GaxiosPromise[SchemaPlayerScoreResetResponse] = js.native
   def reset(params: ParamsResourceScoresReset, callback: BodyResponseCallback[SchemaPlayerScoreResetResponse]): Unit = js.native
   def reset(
@@ -62,7 +61,7 @@ class ResourceScores protected () extends StObject {
     */
   def resetAll(): GaxiosPromise[SchemaPlayerScoreResetAllResponse] = js.native
   def resetAll(callback: BodyResponseCallback[SchemaPlayerScoreResetAllResponse]): Unit = js.native
-  def resetAll(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaPlayerScoreResetAllResponse] = js.native
+  def resetAll(params: Unit, options: MethodOptions): GaxiosPromise[SchemaPlayerScoreResetAllResponse] = js.native
   def resetAll(params: ParamsResourceScoresResetall): GaxiosPromise[SchemaPlayerScoreResetAllResponse] = js.native
   def resetAll(
     params: ParamsResourceScoresResetall,
@@ -94,7 +93,7 @@ class ResourceScores protected () extends StObject {
     */
   def resetAllForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetAllForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def resetAllForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def resetAllForAllPlayers(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetAllForAllPlayers(params: ParamsResourceScoresResetallforallplayers): GaxiosPromise[Unit] = js.native
   def resetAllForAllPlayers(params: ParamsResourceScoresResetallforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetAllForAllPlayers(
@@ -125,7 +124,7 @@ class ResourceScores protected () extends StObject {
     */
   def resetForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def resetForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def resetForAllPlayers(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceScoresResetforallplayers): GaxiosPromise[Unit] = js.native
   def resetForAllPlayers(params: ParamsResourceScoresResetforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetForAllPlayers(
@@ -156,7 +155,7 @@ class ResourceScores protected () extends StObject {
     */
   def resetMultipleForAllPlayers(): GaxiosPromise[Unit] = js.native
   def resetMultipleForAllPlayers(callback: BodyResponseCallback[Unit]): Unit = js.native
-  def resetMultipleForAllPlayers(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[Unit] = js.native
+  def resetMultipleForAllPlayers(params: Unit, options: MethodOptions): GaxiosPromise[Unit] = js.native
   def resetMultipleForAllPlayers(params: ParamsResourceScoresResetmultipleforallplayers): GaxiosPromise[Unit] = js.native
   def resetMultipleForAllPlayers(params: ParamsResourceScoresResetmultipleforallplayers, callback: BodyResponseCallback[Unit]): Unit = js.native
   def resetMultipleForAllPlayers(

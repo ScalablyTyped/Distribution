@@ -8,7 +8,6 @@ import typings.pulumiPulumi.resourceMod.CustomResourceOptions
 import typings.pulumiPulumi.resourceMod.ID
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object resourceDataSyncMod {
@@ -39,6 +38,10 @@ object resourceDataSyncMod {
   /* static members */
   object ResourceDataSync {
     
+    @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync")
+    @js.native
+    val ^ : js.Any = js.native
+    
     /**
       * Get an existing ResourceDataSync resource's state with the given name, ID, and optional extra
       * properties used to qualify the lookup.
@@ -48,40 +51,34 @@ object resourceDataSyncMod {
       * @param state Any extra arguments used during the lookup.
       * @param opts Optional settings to control the behavior of the CustomResource.
       */
-    @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync.get")
-    @js.native
-    def get(name: String, id: Input[ID]): ResourceDataSync = js.native
-    @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: js.UndefOr[scala.Nothing], opts: CustomResourceOptions): ResourceDataSync = js.native
-    @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceDataSyncState): ResourceDataSync = js.native
-    @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync.get")
-    @js.native
-    def get(name: String, id: Input[ID], state: ResourceDataSyncState, opts: CustomResourceOptions): ResourceDataSync = js.native
+    @scala.inline
+    def get(name: String, id: Input[ID]): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: Unit, opts: CustomResourceOptions): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceDataSyncState): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
+    @scala.inline
+    def get(name: String, id: Input[ID], state: ResourceDataSyncState, opts: CustomResourceOptions): ResourceDataSync = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(name.asInstanceOf[js.Any], id.asInstanceOf[js.Any], state.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[ResourceDataSync]
     
     /**
       * Returns true if the given object is an instance of ResourceDataSync.  This is designed to work even
       * when multiple copies of the Pulumi SDK have been loaded into the same process.
       */
-    @JSImport("@pulumi/aws/ssm/resourceDataSync", "ResourceDataSync.isInstance")
-    @js.native
-    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ Boolean = js.native
+    @scala.inline
+    def isInstance(obj: js.Any): /* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isInstance")(obj.asInstanceOf[js.Any]).asInstanceOf[/* is @pulumi/aws.@pulumi/aws/ssm/resourceDataSync.ResourceDataSync */ Boolean]
   }
   
-  @js.native
   trait ResourceDataSyncArgs extends StObject {
     
     /**
       * Name for the configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon S3 configuration details for the sync.
       */
-    val s3Destination: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination] = js.native
+    val s3Destination: Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]
   }
   object ResourceDataSyncArgs {
     
@@ -105,18 +102,17 @@ object resourceDataSyncMod {
     }
   }
   
-  @js.native
   trait ResourceDataSyncState extends StObject {
     
     /**
       * Name for the configuration.
       */
-    val name: js.UndefOr[Input[String]] = js.native
+    val name: js.UndefOr[Input[String]] = js.undefined
     
     /**
       * Amazon S3 configuration details for the sync.
       */
-    val s3Destination: js.UndefOr[Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]] = js.native
+    val s3Destination: js.UndefOr[Input[typings.pulumiAws.inputMod.ssm.ResourceDataSyncS3Destination]] = js.undefined
   }
   object ResourceDataSyncState {
     

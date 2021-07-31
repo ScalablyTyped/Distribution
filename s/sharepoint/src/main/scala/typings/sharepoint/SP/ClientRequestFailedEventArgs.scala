@@ -3,25 +3,25 @@ package typings.sharepoint.SP
 import typings.microsoftAjax.Sys.EventArgs
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClientRequestFailedEventArgs extends ClientRequestEventArgs {
+trait ClientRequestFailedEventArgs
+  extends StObject
+     with ClientRequestEventArgs {
   
-  def get_errorCode(): Double = js.native
+  def get_errorCode(): Double
   
-  def get_errorDetails(): js.Any = js.native
+  def get_errorDetails(): js.Any
   
-  def get_errorTraceCorrelationId(): String = js.native
+  def get_errorTraceCorrelationId(): String
   
-  def get_errorTypeName(): String = js.native
+  def get_errorTypeName(): String
   
-  def get_errorValue(): String = js.native
+  def get_errorValue(): String
   
-  def get_message(): String = js.native
+  def get_message(): String
   
-  def get_stackTrace(): String = js.native
+  def get_stackTrace(): String
 }
 object ClientRequestFailedEventArgs {
   

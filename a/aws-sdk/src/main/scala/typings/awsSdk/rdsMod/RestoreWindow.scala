@@ -2,21 +2,19 @@ package typings.awsSdk.rdsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait RestoreWindow extends StObject {
   
   /**
     * The earliest time you can restore an instance to.
     */
-  var EarliestTime: js.UndefOr[TStamp] = js.native
+  var EarliestTime: js.UndefOr[TStamp] = js.undefined
   
   /**
     * The latest time you can restore an instance to.
     */
-  var LatestTime: js.UndefOr[TStamp] = js.native
+  var LatestTime: js.UndefOr[TStamp] = js.undefined
 }
 object RestoreWindow {
   

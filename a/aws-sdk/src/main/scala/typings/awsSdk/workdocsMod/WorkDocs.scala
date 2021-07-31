@@ -6,7 +6,6 @@ import typings.awsSdk.requestMod.Request
 import typings.awsSdk.serviceMod.Service
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -55,7 +54,7 @@ trait WorkDocs extends Service {
   ): Request[AddResourcePermissionsResponse, AWSError] = js.native
   
   @JSName("config")
-  var config_WorkDocs: ConfigBase with ClientConfiguration = js.native
+  var config_WorkDocs: ConfigBase & ClientConfiguration = js.native
   
   /**
     * Adds a new comment to the specified document version.

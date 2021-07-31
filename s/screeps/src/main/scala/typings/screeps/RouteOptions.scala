@@ -2,16 +2,14 @@ package typings.screeps
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * The options that can be accepted by `findRoute()` and friends.
   */
-@js.native
 trait RouteOptions extends StObject {
   
-  def routeCallback(roomName: String, fromRoomName: String): js.Any = js.native
+  def routeCallback(roomName: String, fromRoomName: String): js.Any
 }
 object RouteOptions {
   

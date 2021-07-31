@@ -2,21 +2,19 @@ package typings.watsonDeveloperCloud.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** The pagination data for the returned objects. */
-@js.native
 trait LogPagination extends StObject {
   
   /** Reserved for future use. */
-  var matched: js.UndefOr[Double] = js.native
+  var matched: js.UndefOr[Double] = js.undefined
   
   /** A token identifying the next page of results. */
-  var next_cursor: js.UndefOr[String] = js.native
+  var next_cursor: js.UndefOr[String] = js.undefined
   
   /** The URL that will return the next page of results, if any. */
-  var next_url: js.UndefOr[String] = js.native
+  var next_url: js.UndefOr[String] = js.undefined
 }
 object LogPagination {
   

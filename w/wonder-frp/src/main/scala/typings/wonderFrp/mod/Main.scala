@@ -1,18 +1,23 @@
 package typings.wonderFrp.mod
 
+import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
-import scala.scalajs.js.annotation._
+import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("wonder-frp/dist/commonjs", "Main")
 @js.native
 class Main ()
   extends typings.wonderFrp.mainMod.Main
-
 /* static members */
-@JSImport("wonder-frp/dist/commonjs", "Main")
-@js.native
-object Main extends js.Object {
-  var isTest: Boolean = js.native
+object Main {
+  
+  @JSImport("wonder-frp/dist/commonjs", "Main")
+  @js.native
+  val ^ : js.Any = js.native
+  
+  @JSImport("wonder-frp/dist/commonjs", "Main.isTest")
+  @js.native
+  def isTest: Boolean = js.native
+  @scala.inline
+  def isTest_=(x: Boolean): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("isTest")(x.asInstanceOf[js.Any])
 }
-

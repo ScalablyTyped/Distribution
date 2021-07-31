@@ -4,29 +4,29 @@ import typings.awsSdkClientCodecommitNode.outputTypesUnionMod.OutputTypesUnion
 import typings.awsSdkTypes.responseMod.ResponseMetadata
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesListPullRequestsOutputMod {
   
-  @js.native
-  trait ListPullRequestsOutput extends OutputTypesUnion {
+  trait ListPullRequestsOutput
+    extends StObject
+       with OutputTypesUnion {
     
     /**
       * Metadata about the response received, including the HTTP status code, HTTP headers, and any request identifiers recognized by the SDK.
       */
     @JSName("$metadata")
-    var $metadata: ResponseMetadata = js.native
+    var $metadata: ResponseMetadata
     
     /**
       * <p>An enumeration token that when provided in a request, returns the next batch of the results.</p>
       */
-    var nextToken: js.UndefOr[String] = js.native
+    var nextToken: js.UndefOr[String] = js.undefined
     
     /**
       * <p>The system-generated IDs of the pull requests.</p>
       */
-    var pullRequestIds: js.Array[String] = js.native
+    var pullRequestIds: js.Array[String]
   }
   object ListPullRequestsOutput {
     

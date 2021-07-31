@@ -2,20 +2,18 @@ package typings.typedGraphql.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 // language/lexer.js
-@js.native
 trait Token extends StObject {
   
-  var end: Double = js.native
+  var end: Double
   
-  var kind: Double = js.native
+  var kind: Double
   
-  var start: Double = js.native
+  var start: Double
   
-  var value: String = js.native
+  var value: String
 }
 object Token {
   

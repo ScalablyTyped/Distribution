@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.Slider
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofSlider extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): Slider = js.native
+  def extend(proto: js.Object): Slider
   
   /* static member */
-  var fn: Slider = js.native
+  var fn: Slider
 }
 object TypeofSlider {
   

@@ -2,7 +2,6 @@ package typings.pixiJs.PIXI
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -25,8 +24,12 @@ sealed trait SCALE_MODES extends StObject
 object SCALE_MODES extends StObject {
   
   @js.native
-  sealed trait LINEAR extends SCALE_MODES
+  sealed trait LINEAR
+    extends StObject
+       with SCALE_MODES
   
   @js.native
-  sealed trait NEAREST extends SCALE_MODES
+  sealed trait NEAREST
+    extends StObject
+       with SCALE_MODES
 }

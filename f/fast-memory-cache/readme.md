@@ -12,7 +12,7 @@ Simple in-memory cache implementation
 | Keywords           | memory, cache |
 | # releases         | 0 |
 | # dependents       | 1 |
-| # downloads        | 13508 |
+| # downloads        | 13570 |
 | # stars            | 1 |
 
 ## Links

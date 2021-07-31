@@ -5,11 +5,12 @@ import typings.three.mod.Object3D
 import typings.three.vector3Mod.Vector3
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
-trait TypeofObject3D extends Instantiable0[Object3D] {
+trait TypeofObject3D
+  extends StObject
+     with Instantiable0[Object3D] {
   
   var DefaultMatrixAutoUpdate: Boolean = js.native
   

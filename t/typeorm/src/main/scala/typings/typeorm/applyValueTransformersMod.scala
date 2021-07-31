@@ -3,7 +3,6 @@ package typings.typeorm
 import typings.typeorm.valueTransformerMod.ValueTransformer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applyValueTransformersMod {
@@ -14,18 +13,18 @@ object applyValueTransformersMod {
   /* static members */
   object ApplyValueTransformers {
     
-    @JSImport("typeorm/browser/util/ApplyValueTransformers", "ApplyValueTransformers.transformFrom")
+    @JSImport("typeorm/browser/util/ApplyValueTransformers", "ApplyValueTransformers")
     @js.native
-    def transformFrom(transformer: js.Array[ValueTransformer], databaseValue: js.Any): js.Any = js.native
-    @JSImport("typeorm/browser/util/ApplyValueTransformers", "ApplyValueTransformers.transformFrom")
-    @js.native
-    def transformFrom(transformer: ValueTransformer, databaseValue: js.Any): js.Any = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("typeorm/browser/util/ApplyValueTransformers", "ApplyValueTransformers.transformTo")
-    @js.native
-    def transformTo(transformer: js.Array[ValueTransformer], entityValue: js.Any): js.Any = js.native
-    @JSImport("typeorm/browser/util/ApplyValueTransformers", "ApplyValueTransformers.transformTo")
-    @js.native
-    def transformTo(transformer: ValueTransformer, entityValue: js.Any): js.Any = js.native
+    @scala.inline
+    def transformFrom(transformer: js.Array[ValueTransformer], databaseValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFrom")(transformer.asInstanceOf[js.Any], databaseValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def transformFrom(transformer: ValueTransformer, databaseValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformFrom")(transformer.asInstanceOf[js.Any], databaseValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    
+    @scala.inline
+    def transformTo(transformer: js.Array[ValueTransformer], entityValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformTo")(transformer.asInstanceOf[js.Any], entityValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
+    @scala.inline
+    def transformTo(transformer: ValueTransformer, entityValue: js.Any): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("transformTo")(transformer.asInstanceOf[js.Any], entityValue.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   }
 }

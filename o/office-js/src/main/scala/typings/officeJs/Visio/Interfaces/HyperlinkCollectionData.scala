@@ -2,14 +2,12 @@ package typings.officeJs.Visio.Interfaces
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** An interface describing the data returned by calling "hyperlinkCollection.toJSON()". */
-@js.native
 trait HyperlinkCollectionData extends StObject {
   
-  var items: js.UndefOr[js.Array[HyperlinkData]] = js.native
+  var items: js.UndefOr[js.Array[HyperlinkData]] = js.undefined
 }
 object HyperlinkCollectionData {
   

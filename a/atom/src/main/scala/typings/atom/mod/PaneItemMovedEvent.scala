@@ -2,20 +2,18 @@ package typings.atom.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PaneItemMovedEvent extends StObject {
   
   /** The removed pane item. */
-  var item: js.Object = js.native
+  var item: js.Object
   
   /** A number indicating where the item is now located. */
-  var newIndex: Double = js.native
+  var newIndex: Double
   
   /** A number indicating where the item was located. */
-  var oldIndex: Double = js.native
+  var oldIndex: Double
 }
 object PaneItemMovedEvent {
   

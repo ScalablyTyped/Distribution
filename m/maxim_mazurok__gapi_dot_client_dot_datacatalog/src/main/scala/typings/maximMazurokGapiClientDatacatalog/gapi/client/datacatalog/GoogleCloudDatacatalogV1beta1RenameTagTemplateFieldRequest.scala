@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientDatacatalog.gapi.client.datacatalog
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest extends StObject {
   
   /** Required. The new ID of this tag template field. For example, `my_new_field`. */
-  var newTagTemplateFieldId: js.UndefOr[String] = js.native
+  var newTagTemplateFieldId: js.UndefOr[String] = js.undefined
 }
 object GoogleCloudDatacatalogV1beta1RenameTagTemplateFieldRequest {
   

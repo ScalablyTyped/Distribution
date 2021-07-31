@@ -3,17 +3,15 @@ package typings.kendoUi.anon
 import typings.kendoUi.kendo.ui.ProgressBar
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TypeofProgressBar extends StObject {
   
   /* static member */
-  def extend(proto: js.Object): ProgressBar = js.native
+  def extend(proto: js.Object): ProgressBar
   
   /* static member */
-  var fn: ProgressBar = js.native
+  var fn: ProgressBar
 }
 object TypeofProgressBar {
   

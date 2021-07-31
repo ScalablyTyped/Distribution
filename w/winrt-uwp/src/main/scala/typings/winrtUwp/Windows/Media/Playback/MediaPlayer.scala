@@ -22,7 +22,6 @@ import typings.winrtUwp.winrtUwpStrings.seekcompleted
 import typings.winrtUwp.winrtUwpStrings.volumechanged
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** Provides access to media playback functionality such as play, pause, fast-forward, rewind, and volume. */
@@ -37,19 +36,19 @@ trait MediaPlayer extends StObject {
     */
   def addAudioEffect(activatableClassId: String, effectOptional: Boolean, configuration: IPropertySet): Unit = js.native
   
-  def addEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def addEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_bufferingended(`type`: bufferingended, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def addEventListener_bufferingended(`type`: bufferingended, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_bufferingstarted(`type`: bufferingstarted, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def addEventListener_bufferingstarted(`type`: bufferingstarted, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_currentstatechanged(`type`: currentstatechanged, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def addEventListener_currentstatechanged(`type`: currentstatechanged, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mediaended(`type`: mediaended, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def addEventListener_mediaended(`type`: mediaended, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mediafailed(`type`: mediafailed, listener: TypedEventHandler[MediaPlayer, MediaPlayerFailedEventArgs]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_mediaopened(`type`: mediaopened, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def addEventListener_mediaopened(`type`: mediaopened, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("addEventListener")
   def addEventListener_mediaplayerratechanged(
     `type`: mediaplayerratechanged,
@@ -61,9 +60,9 @@ trait MediaPlayer extends StObject {
     listener: TypedEventHandler[MediaPlayer, PlaybackMediaMarkerReachedEventArgs]
   ): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_seekcompleted(`type`: seekcompleted, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def addEventListener_seekcompleted(`type`: seekcompleted, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("addEventListener")
-  def addEventListener_volumechanged(`type`: volumechanged, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def addEventListener_volumechanged(`type`: volumechanged, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   
   /** Gets or sets the type of audio that is currently being played. */
   var audioCategory: MediaPlayerAudioCategory = js.native
@@ -99,64 +98,64 @@ trait MediaPlayer extends StObject {
   var naturalDuration: Double = js.native
   
   /** Occurs when buffering has finished. */
-  def onbufferingended(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onbufferingended(ev: js.Any & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when buffering has finished. */
   @JSName("onbufferingended")
-  var onbufferingended_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  var onbufferingended_Original: TypedEventHandler[MediaPlayer, js.Any] = js.native
   
   /** Occurs when buffering has started. */
-  def onbufferingstarted(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onbufferingstarted(ev: js.Any & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when buffering has started. */
   @JSName("onbufferingstarted")
-  var onbufferingstarted_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  var onbufferingstarted_Original: TypedEventHandler[MediaPlayer, js.Any] = js.native
   
   /** Occurs when the state of the media player has changed. */
-  def oncurrentstatechanged(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  def oncurrentstatechanged(ev: js.Any & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when the state of the media player has changed. */
   @JSName("oncurrentstatechanged")
-  var oncurrentstatechanged_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  var oncurrentstatechanged_Original: TypedEventHandler[MediaPlayer, js.Any] = js.native
   
   /** Occurs when the media has finished playback. */
-  def onmediaended(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onmediaended(ev: js.Any & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when the media has finished playback. */
   @JSName("onmediaended")
-  var onmediaended_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  var onmediaended_Original: TypedEventHandler[MediaPlayer, js.Any] = js.native
   
   /** Occurs when an error is encountered. */
-  def onmediafailed(ev: MediaPlayerFailedEventArgs with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onmediafailed(ev: MediaPlayerFailedEventArgs & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when an error is encountered. */
   @JSName("onmediafailed")
   var onmediafailed_Original: TypedEventHandler[MediaPlayer, MediaPlayerFailedEventArgs] = js.native
   
   /** Occurs when the media is opened. */
-  def onmediaopened(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onmediaopened(ev: js.Any & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when the media is opened. */
   @JSName("onmediaopened")
-  var onmediaopened_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  var onmediaopened_Original: TypedEventHandler[MediaPlayer, js.Any] = js.native
   
   /** Occurs when the media playback rate has changed. */
-  def onmediaplayerratechanged(ev: MediaPlayerRateChangedEventArgs with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onmediaplayerratechanged(ev: MediaPlayerRateChangedEventArgs & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when the media playback rate has changed. */
   @JSName("onmediaplayerratechanged")
   var onmediaplayerratechanged_Original: TypedEventHandler[MediaPlayer, MediaPlayerRateChangedEventArgs] = js.native
   
   /** Occurs when a media marker has been reached during playback. */
-  def onplaybackmediamarkerreached(ev: PlaybackMediaMarkerReachedEventArgs with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onplaybackmediamarkerreached(ev: PlaybackMediaMarkerReachedEventArgs & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when a media marker has been reached during playback. */
   @JSName("onplaybackmediamarkerreached")
   var onplaybackmediamarkerreached_Original: TypedEventHandler[MediaPlayer, PlaybackMediaMarkerReachedEventArgs] = js.native
   
   /** Occurs when a seek operation has finished. */
-  def onseekcompleted(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onseekcompleted(ev: js.Any & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when a seek operation has finished. */
   @JSName("onseekcompleted")
-  var onseekcompleted_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  var onseekcompleted_Original: TypedEventHandler[MediaPlayer, js.Any] = js.native
   
   /** Occurs when the volume of the audio has changed. */
-  def onvolumechanged(ev: js.Any with WinRTEvent[MediaPlayer]): Unit = js.native
+  def onvolumechanged(ev: js.Any & WinRTEvent[MediaPlayer]): Unit = js.native
   /** Occurs when the volume of the audio has changed. */
   @JSName("onvolumechanged")
-  var onvolumechanged_Original: TypedEventHandler[MediaPlayer, _] = js.native
+  var onvolumechanged_Original: TypedEventHandler[MediaPlayer, js.Any] = js.native
   
   /** Pauses media playback. */
   def pause(): Unit = js.native
@@ -179,19 +178,19 @@ trait MediaPlayer extends StObject {
   /** Removes all effects from the playback stream of the MediaPlayer . */
   def removeAllEffects(): Unit = js.native
   
-  def removeEventListener(`type`: String, listener: EventHandler[_]): Unit = js.native
+  def removeEventListener(`type`: String, listener: EventHandler[js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_bufferingended(`type`: bufferingended, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def removeEventListener_bufferingended(`type`: bufferingended, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_bufferingstarted(`type`: bufferingstarted, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def removeEventListener_bufferingstarted(`type`: bufferingstarted, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_currentstatechanged(`type`: currentstatechanged, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def removeEventListener_currentstatechanged(`type`: currentstatechanged, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mediaended(`type`: mediaended, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def removeEventListener_mediaended(`type`: mediaended, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mediafailed(`type`: mediafailed, listener: TypedEventHandler[MediaPlayer, MediaPlayerFailedEventArgs]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_mediaopened(`type`: mediaopened, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def removeEventListener_mediaopened(`type`: mediaopened, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("removeEventListener")
   def removeEventListener_mediaplayerratechanged(
     `type`: mediaplayerratechanged,
@@ -203,9 +202,9 @@ trait MediaPlayer extends StObject {
     listener: TypedEventHandler[MediaPlayer, PlaybackMediaMarkerReachedEventArgs]
   ): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_seekcompleted(`type`: seekcompleted, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def removeEventListener_seekcompleted(`type`: seekcompleted, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   @JSName("removeEventListener")
-  def removeEventListener_volumechanged(`type`: volumechanged, listener: TypedEventHandler[MediaPlayer, _]): Unit = js.native
+  def removeEventListener_volumechanged(`type`: volumechanged, listener: TypedEventHandler[MediaPlayer, js.Any]): Unit = js.native
   
   /**
     * Set the media source to a file.

@@ -3,33 +3,42 @@ package typings.allureJsCommons
 import typings.allureJsCommons.mod.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object allureJsCommonsStrings {
   
   @js.native
-  sealed trait broken extends Status
+  sealed trait broken
+    extends StObject
+       with Status
   @scala.inline
   def broken: broken = "broken".asInstanceOf[broken]
   
   @js.native
-  sealed trait failed extends Status
+  sealed trait failed
+    extends StObject
+       with Status
   @scala.inline
   def failed: failed = "failed".asInstanceOf[failed]
   
   @js.native
-  sealed trait passed extends Status
+  sealed trait passed
+    extends StObject
+       with Status
   @scala.inline
   def passed: passed = "passed".asInstanceOf[passed]
   
   @js.native
-  sealed trait pending extends Status
+  sealed trait pending
+    extends StObject
+       with Status
   @scala.inline
   def pending: pending = "pending".asInstanceOf[pending]
   
   @js.native
-  sealed trait skipped extends Status
+  sealed trait skipped
+    extends StObject
+       with Status
   @scala.inline
   def skipped: skipped = "skipped".asInstanceOf[skipped]
 }

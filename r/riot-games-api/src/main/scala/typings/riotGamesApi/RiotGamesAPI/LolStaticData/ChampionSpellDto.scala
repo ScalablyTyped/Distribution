@@ -2,53 +2,51 @@ package typings.riotGamesApi.RiotGamesAPI.LolStaticData
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChampionSpellDto extends StObject {
   
-  var altimages: js.Array[ImageDto] = js.native
+  var altimages: js.Array[ImageDto]
   
-  var cooldown: js.Array[Double] = js.native
+  var cooldown: js.Array[Double]
   
-  var cooldownBurn: String = js.native
+  var cooldownBurn: String
   
-  var cost: js.Array[Double] = js.native
+  var cost: js.Array[Double]
   
-  var costBurn: String = js.native
+  var costBurn: String
   
-  var costType: String = js.native
+  var costType: String
   
-  var description: String = js.native
+  var description: String
   
-  var effect: js.Array[js.Array[Double]] = js.native
+  var effect: js.Array[js.Array[Double]]
   
-  var effectBurn: js.Array[String] = js.native
+  var effectBurn: js.Array[String]
   
-  var image: ImageDto = js.native
+  var image: ImageDto
   
-  var key: String = js.native
+  var key: String
   
-  var leveltip: LevelTipDto = js.native
+  var leveltip: LevelTipDto
   
-  var maxrank: Double = js.native
+  var maxrank: Double
   
-  var name: String = js.native
+  var name: String
   
-  var range: js.Array[Double] | String = js.native
+  var range: js.Array[Double] | String
   
-  var rangeBurn: String = js.native
+  var rangeBurn: String
   
-  var resource: String = js.native
+  var resource: String
   
-  var sanitizedDescription: String = js.native
+  var sanitizedDescription: String
   
-  var sanitizedTooltip: String = js.native
+  var sanitizedTooltip: String
   
-  var tooltip: String = js.native
+  var tooltip: String
   
-  var vars: js.Array[SpellVarsDto] = js.native
+  var vars: js.Array[SpellVarsDto]
 }
 object ChampionSpellDto {
   

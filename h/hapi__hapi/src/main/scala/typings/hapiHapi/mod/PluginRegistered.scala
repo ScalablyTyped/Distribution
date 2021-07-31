@@ -2,26 +2,24 @@ package typings.hapiHapi.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PluginRegistered extends StObject {
   
   /**
     * the plugin name.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * options used to register the plugin.
     */
-  var options: js.Object = js.native
+  var options: js.Object
   
   /**
     * the plugin version.
     */
-  var version: String = js.native
+  var version: String
 }
 object PluginRegistered {
   

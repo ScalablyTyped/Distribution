@@ -4,15 +4,16 @@ import typings.callsites.mod.CallSite
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCallsiteMod {
   
-  @JSImport("@jest/source-map/build/getCallsite", JSImport.Default)
+  @JSImport("@jest/source-map/build/getCallsite", JSImport.Namespace)
   @js.native
-  def default(level: Double): CallSite = js.native
-  @JSImport("@jest/source-map/build/getCallsite", JSImport.Default)
-  @js.native
-  def default(level: Double, sourceMaps: Record[String, String]): CallSite = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def default(level: Double): CallSite = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(level.asInstanceOf[js.Any]).asInstanceOf[CallSite]
+  @scala.inline
+  def default(level: Double, sourceMaps: Record[String, String]): CallSite = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(level.asInstanceOf[js.Any], sourceMaps.asInstanceOf[js.Any])).asInstanceOf[CallSite]
 }

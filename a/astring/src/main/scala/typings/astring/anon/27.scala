@@ -3,20 +3,18 @@ package typings.astring.anon
 import typings.astring.astringStrings.MetaProperty
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait `27` extends StObject {
   
-  var `type`: MetaProperty = js.native
+  var `type`: MetaProperty
 }
 object `27` {
   
   @scala.inline
-  def apply(`type`: MetaProperty): `27` = {
+  def apply(): `27` = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("MetaProperty")
     __obj.asInstanceOf[`27`]
   }
   

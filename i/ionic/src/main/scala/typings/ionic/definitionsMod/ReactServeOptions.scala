@@ -2,17 +2,17 @@ package typings.ionic.definitionsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ReactServeOptions extends ServeOptions {
+trait ReactServeOptions
+  extends StObject
+     with ServeOptions {
   
-  var ci: js.UndefOr[Boolean] = js.native
+  var ci: js.UndefOr[Boolean] = js.undefined
   
-  var https: js.UndefOr[Boolean] = js.native
+  var https: js.UndefOr[Boolean] = js.undefined
   
-  var reactEditor: js.UndefOr[String] = js.native
+  var reactEditor: js.UndefOr[String] = js.undefined
 }
 object ReactServeOptions {
   

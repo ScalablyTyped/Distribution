@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AppContext extends StObject {
   
   /** The app types this restriction applies to. */
-  var appTypes: js.UndefOr[js.Array[String]] = js.native
+  var appTypes: js.UndefOr[js.Array[String]] = js.undefined
 }
 object AppContext {
   

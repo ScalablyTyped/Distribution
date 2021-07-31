@@ -12,51 +12,74 @@ import typings.std.Partial
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object withStylesMod {
   
-  @JSImport("@material-ui/core/styles/withStyles", JSImport.Default)
+  @JSImport("@material-ui/core/styles/withStyles", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
-  @JSImport("@material-ui/core/styles/withStyles", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
+  @scala.inline
   def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey]): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
-  @JSImport("@material-ui/core/styles/withStyles", JSImport.Default)
-  @js.native
+  ] = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any]).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
+  @scala.inline
   def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRulesCallback[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
-  @JSImport("@material-ui/core/styles/withStyles", JSImport.Default)
-  @js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
+  @scala.inline
   def default[ClassKey /* <: String */, Options /* <: WithStylesOptions[ClassKey] */](style: StyleRules[ClassKey], options: Options): PropInjector[
     WithStyles[
       ClassKey, 
       /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
     ], 
     StyledComponentProps[ClassKey]
-  ] = js.native
+  ] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(style.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[PropInjector[
+    WithStyles[
+      ClassKey, 
+      /* import warning: importer.ImportType#apply Failed type conversion: Options['withTheme'] */ js.Any
+    ], 
+    StyledComponentProps[ClassKey]
+  ]]
   
-  @js.native
   trait CSSProperties
-    extends Properties[Double | String]
+    extends StObject
+       with Properties[Double | String]
        with // Allow pseudo selectors and media queries
   /* k */ StringDictionary[
           js.UndefOr[
@@ -78,12 +101,11 @@ object withStylesMod {
   
   type StyleRulesCallback[ClassKey /* <: String */] = js.Function1[/* theme */ Theme, StyleRules[ClassKey]]
   
-  @js.native
   trait StyledComponentProps[ClassKey /* <: String */] extends StObject {
     
-    var classes: js.UndefOr[Partial[ClassNameMap[ClassKey]]] = js.native
+    var classes: js.UndefOr[Partial[ClassNameMap[ClassKey]]] = js.undefined
     
-    var innerRef: js.UndefOr[Ref[_] | RefObject[_]] = js.native
+    var innerRef: js.UndefOr[Ref[js.Any] | RefObject[js.Any]] = js.undefined
   }
   object StyledComponentProps {
     
@@ -94,7 +116,7 @@ object withStylesMod {
     }
     
     @scala.inline
-    implicit class StyledComponentPropsMutableBuilder[Self <: StyledComponentProps[_], ClassKey /* <: String */] (val x: Self with StyledComponentProps[ClassKey]) extends AnyVal {
+    implicit class StyledComponentPropsMutableBuilder[Self <: StyledComponentProps[?], ClassKey /* <: String */] (val x: Self & StyledComponentProps[ClassKey]) extends AnyVal {
       
       @scala.inline
       def setClasses(value: Partial[ClassNameMap[ClassKey]]): Self = StObject.set(x, "classes", value.asInstanceOf[js.Any])
@@ -103,10 +125,10 @@ object withStylesMod {
       def setClassesUndefined: Self = StObject.set(x, "classes", js.undefined)
       
       @scala.inline
-      def setInnerRef(value: Ref[_] | RefObject[_]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
+      def setInnerRef(value: Ref[js.Any] | RefObject[js.Any]): Self = StObject.set(x, "innerRef", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setInnerRefFunction1(value: /* instance */ _ | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
+      def setInnerRefFunction1(value: /* instance */ js.Any | Null => Unit): Self = StObject.set(x, "innerRef", js.Any.fromFunction1(value))
       
       @scala.inline
       def setInnerRefNull: Self = StObject.set(x, "innerRef", null)
@@ -116,14 +138,13 @@ object withStylesMod {
     }
   }
   
-  @js.native
   trait StylesCreator extends StObject {
     
-    def create(theme: Theme, name: String): StyleRules[String] = js.native
+    def create(theme: Theme, name: String): StyleRules[String]
     
-    var options: Index = js.native
+    var options: Index
     
-    var themingEnabled: Boolean = js.native
+    var themingEnabled: Boolean
   }
   object StylesCreator {
     
@@ -147,17 +168,16 @@ object withStylesMod {
     }
   }
   
-  type WithStyles[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */, IncludeTheme /* <: js.UndefOr[Boolean] */] = (js.Object | typings.materialUiCore.anon.Theme) with Classes[T]
+  type WithStyles[T /* <: String | StyleRules[String] | StyleRulesCallback[String] */, IncludeTheme /* <: js.UndefOr[Boolean] */] = (js.Object | typings.materialUiCore.anon.Theme) & Classes[T]
   
   /* import warning: RemoveDifficultInheritance.summarizeChanges 
-  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSS.CreateStyleSheetOptions<ClassKey> * / any */ @js.native
-  trait WithStylesOptions[ClassKey /* <: String */] extends StObject {
+  - Dropped / * import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify JSS.CreateStyleSheetOptions<ClassKey> * / any */ trait WithStylesOptions[ClassKey /* <: String */] extends StObject {
     
-    var flip: js.UndefOr[Boolean] = js.native
+    var flip: js.UndefOr[Boolean] = js.undefined
     
-    var name: js.UndefOr[String] = js.native
+    var name: js.UndefOr[String] = js.undefined
     
-    var withTheme: js.UndefOr[Boolean] = js.native
+    var withTheme: js.UndefOr[Boolean] = js.undefined
   }
   object WithStylesOptions {
     
@@ -168,7 +188,7 @@ object withStylesMod {
     }
     
     @scala.inline
-    implicit class WithStylesOptionsMutableBuilder[Self <: WithStylesOptions[_], ClassKey /* <: String */] (val x: Self with WithStylesOptions[ClassKey]) extends AnyVal {
+    implicit class WithStylesOptionsMutableBuilder[Self <: WithStylesOptions[?], ClassKey /* <: String */] (val x: Self & WithStylesOptions[ClassKey]) extends AnyVal {
       
       @scala.inline
       def setFlip(value: Boolean): Self = StObject.set(x, "flip", value.asInstanceOf[js.Any])

@@ -4,33 +4,31 @@ import typings.node.Buffer
 import typings.tokenizerToken.mod.IGetToken
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object typesMod {
   
-  @js.native
   trait IFileInfo extends StObject {
     
     /**
       * MIME-type of file
       */
-    var mimeType: js.UndefOr[String] = js.native
+    var mimeType: js.UndefOr[String] = js.undefined
     
     /**
       * File path
       */
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
     /**
       * File size in bytes
       */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /**
       * File URL
       */
-    var url: js.UndefOr[String] = js.native
+    var url: js.UndefOr[String] = js.undefined
   }
   object IFileInfo {
     
@@ -69,30 +67,29 @@ object typesMod {
     }
   }
   
-  @js.native
   trait IReadChunkOptions extends StObject {
     
     /**
       * Number of bytes to read.
       */
-    var length: js.UndefOr[Double] = js.native
+    var length: js.UndefOr[Double] = js.undefined
     
     /**
       * If set, will not throw an EOF error if not all of the requested data could be read
       */
-    var mayBeLess: js.UndefOr[Boolean] = js.native
+    var mayBeLess: js.UndefOr[Boolean] = js.undefined
     
     /**
       * The offset in the buffer to start writing at; default is 0
       */
-    var offset: js.UndefOr[Double] = js.native
+    var offset: js.UndefOr[Double] = js.undefined
     
     /**
       * Position where to begin reading from the file.
       * Default it is `tokenizer.position`.
       * Position may not be less then `tokenizer.position`.
       */
-    var position: js.UndefOr[Double] = js.native
+    var position: js.UndefOr[Double] = js.undefined
   }
   object IReadChunkOptions {
     
@@ -174,10 +171,10 @@ object typesMod {
       * @param maybeless - If set, will not throw an EOF error if the less then the requested length could be read.
       */
     def peekToken[T](token: IGetToken[T]): js.Promise[T] = js.native
-    def peekToken[T](token: IGetToken[T], position: js.UndefOr[scala.Nothing], maybeless: Boolean): js.Promise[T] = js.native
     def peekToken[T](token: IGetToken[T], position: Double): js.Promise[T] = js.native
     def peekToken[T](token: IGetToken[T], position: Double, maybeless: Boolean): js.Promise[T] = js.native
     def peekToken[T](token: IGetToken[T], position: Null, maybeless: Boolean): js.Promise[T] = js.native
+    def peekToken[T](token: IGetToken[T], position: Unit, maybeless: Boolean): js.Promise[T] = js.native
     
     /**
       * Offset in bytes (= number of bytes read) since beginning of file or stream

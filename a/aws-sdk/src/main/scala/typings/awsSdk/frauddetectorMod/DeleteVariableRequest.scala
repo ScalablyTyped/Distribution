@@ -2,16 +2,14 @@ package typings.awsSdk.frauddetectorMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteVariableRequest extends StObject {
   
   /**
     * The name of the variable to delete.
     */
-  var name: String = js.native
+  var name: String
 }
 object DeleteVariableRequest {
   

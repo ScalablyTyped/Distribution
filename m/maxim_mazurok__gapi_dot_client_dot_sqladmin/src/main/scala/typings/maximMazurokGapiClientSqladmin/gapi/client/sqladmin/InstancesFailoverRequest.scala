@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientSqladmin.gapi.client.sqladmin
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait InstancesFailoverRequest extends StObject {
   
   /** Failover Context. */
-  var failoverContext: js.UndefOr[FailoverContext] = js.native
+  var failoverContext: js.UndefOr[FailoverContext] = js.undefined
 }
 object InstancesFailoverRequest {
   

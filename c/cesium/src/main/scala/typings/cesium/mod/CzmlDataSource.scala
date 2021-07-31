@@ -3,7 +3,6 @@ package typings.cesium.mod
 import typings.cesium.anon.SourceUri
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("cesium", "CzmlDataSource")
@@ -31,29 +30,22 @@ object CzmlDataSource {
   @js.native
   val ^ : js.Any = js.native
   
-  @JSImport("cesium", "CzmlDataSource.load")
-  @js.native
-  def load(czml: String): js.Promise[CzmlDataSource] = js.native
-  @JSImport("cesium", "CzmlDataSource.load")
-  @js.native
-  def load(czml: String, options: SourceUri): js.Promise[CzmlDataSource] = js.native
-  @JSImport("cesium", "CzmlDataSource.load")
-  @js.native
-  def load(czml: js.Object): js.Promise[CzmlDataSource] = js.native
-  @JSImport("cesium", "CzmlDataSource.load")
-  @js.native
-  def load(czml: js.Object, options: SourceUri): js.Promise[CzmlDataSource] = js.native
+  @scala.inline
+  def load(czml: String): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
+  @scala.inline
+  def load(czml: String, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
+  @scala.inline
+  def load(czml: js.Object): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
+  @scala.inline
+  def load(czml: js.Object, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
   /* static member */
-  @JSImport("cesium", "CzmlDataSource.load")
-  @js.native
-  def load(czml: Resource): js.Promise[CzmlDataSource] = js.native
-  @JSImport("cesium", "CzmlDataSource.load")
-  @js.native
-  def load(czml: Resource, options: SourceUri): js.Promise[CzmlDataSource] = js.native
+  @scala.inline
+  def load(czml: Resource): js.Promise[CzmlDataSource] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any]).asInstanceOf[js.Promise[CzmlDataSource]]
+  @scala.inline
+  def load(czml: Resource, options: SourceUri): js.Promise[CzmlDataSource] = (^.asInstanceOf[js.Dynamic].applyDynamic("load")(czml.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[CzmlDataSource]]
   
   /* static member */
-  @JSImport("cesium", "CzmlDataSource.processMaterialPacketData")
-  @js.native
+  @scala.inline
   def processMaterialPacketData(
     `object`: js.Object,
     propertyName: String,
@@ -61,24 +53,22 @@ object CzmlDataSource {
     interval: TimeInterval,
     sourceUri: String,
     entityCollection: EntityCollection
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processMaterialPacketData")(`object`.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], packetData.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], sourceUri.asInstanceOf[js.Any], entityCollection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("cesium", "CzmlDataSource.processPacketData")
-  @js.native
+  @scala.inline
   def processPacketData(
-    `type`: js.Function0[_],
+    `type`: js.Function0[js.Any],
     `object`: js.Object,
     propertyName: String,
     packetData: js.Object,
     interval: TimeInterval,
     sourceUri: String,
     entityCollection: EntityCollection
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processPacketData")(`type`.asInstanceOf[js.Any], `object`.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], packetData.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], sourceUri.asInstanceOf[js.Any], entityCollection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
-  @JSImport("cesium", "CzmlDataSource.processPositionPacketData")
-  @js.native
+  @scala.inline
   def processPositionPacketData(
     `object`: js.Object,
     propertyName: String,
@@ -86,7 +76,7 @@ object CzmlDataSource {
     interval: TimeInterval,
     sourceUri: String,
     entityCollection: EntityCollection
-  ): Unit = js.native
+  ): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("processPositionPacketData")(`object`.asInstanceOf[js.Any], propertyName.asInstanceOf[js.Any], packetData.asInstanceOf[js.Any], interval.asInstanceOf[js.Any], sourceUri.asInstanceOf[js.Any], entityCollection.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
   /* static member */
   @JSImport("cesium", "CzmlDataSource.updaters")

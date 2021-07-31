@@ -11,47 +11,47 @@ import typings.arcgisRestApi.arcgisRestApiStrings.right
 import typings.arcgisRestApi.arcgisRestApiStrings.top
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait TextSymbol extends MarkerSymbol {
+trait TextSymbol
+  extends StObject
+     with MarkerSymbol {
   
-  var backgroundColor: js.UndefOr[Color] = js.native
-  
-  // <size>;
-  var borderLineColor: js.UndefOr[Color] = js.native
-  
-  var borderLineSize: js.UndefOr[Double] = js.native
-  
-  var color: js.UndefOr[Color] = js.native
-  
-  var font: js.UndefOr[Font] = js.native
+  var backgroundColor: js.UndefOr[Color] = js.undefined
   
   // <size>;
-  var haloColor: js.UndefOr[Color] = js.native
+  var borderLineColor: js.UndefOr[Color] = js.undefined
   
-  var haloSize: js.UndefOr[Double] = js.native
+  var borderLineSize: js.UndefOr[Double] = js.undefined
   
-  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.native
+  var color: js.UndefOr[Color] = js.undefined
   
-  var kerning: js.UndefOr[Boolean] = js.native
+  var font: js.UndefOr[Font] = js.undefined
   
-  var rightToLeft: js.UndefOr[Boolean] = js.native
+  // <size>;
+  var haloColor: js.UndefOr[Color] = js.undefined
   
-  var text: js.UndefOr[String] = js.native
+  var haloSize: js.UndefOr[Double] = js.undefined
+  
+  var horizontalAlignment: js.UndefOr[left | right | center | justify] = js.undefined
+  
+  var kerning: js.UndefOr[Boolean] = js.undefined
+  
+  var rightToLeft: js.UndefOr[Boolean] = js.undefined
+  
+  var text: js.UndefOr[String] = js.undefined
   
   @JSName("type")
-  var type_TextSymbol: esriTS = js.native
+  var type_TextSymbol: esriTS
   
-  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.native
+  var verticalAlignment: js.UndefOr[baseline | top | middle | bottom] = js.undefined
 }
 object TextSymbol {
   
   @scala.inline
-  def apply(`type`: esriTS): TextSymbol = {
+  def apply(): TextSymbol = {
     val __obj = js.Dynamic.literal()
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+    __obj.updateDynamic("type")("esriTS")
     __obj.asInstanceOf[TextSymbol]
   }
   

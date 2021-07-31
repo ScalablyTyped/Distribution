@@ -2,16 +2,14 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribeTransformJobRequest extends StObject {
   
   /**
     * The name of the transform job that you want to view details of.
     */
-  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName = js.native
+  var TransformJobName: typings.awsSdk.sagemakerMod.TransformJobName
 }
 object DescribeTransformJobRequest {
   

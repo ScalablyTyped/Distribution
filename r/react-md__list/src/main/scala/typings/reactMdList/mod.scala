@@ -17,24 +17,30 @@ import typings.reactMdList.listSubheaderMod.ListSubheaderProps
 import typings.std.HTMLLIElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
+  @JSImport("@react-md/list", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
+  
   @JSImport("@react-md/list", "List")
   @js.native
-  val List: ForwardRefExoticComponent[ListProps with RefAttributes[ListElement]] = js.native
+  val List: ForwardRefExoticComponent[ListProps & RefAttributes[ListElement]] = js.native
   
   @JSImport("@react-md/list", "ListItem")
   @js.native
-  val ListItem: ForwardRefExoticComponent[ListItemProps with RefAttributes[HTMLLIElement]] = js.native
+  val ListItem: ForwardRefExoticComponent[ListItemProps & RefAttributes[HTMLLIElement]] = js.native
   
   object ListItemAddon {
     
+    @scala.inline
+    def apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/list", "ListItemAddon")
     @js.native
-    def apply(hasClassNameChildrenAddonAddonAfterTypePositionForceAddonWrapProps: ListItemAddonProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -87,11 +93,14 @@ object mod {
   
   object ListItemChildren {
     
+    @scala.inline
+    def apply(
+      hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren: ListItemChildrenProps
+    ): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapPropChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/list", "ListItemChildren")
     @js.native
-    def apply(
-      hasTextClassNameSecondaryTextClassNameTextChildrenPrimaryTextSecondaryTextLeftAddonLeftAddonTypeLeftAddonPositionRightAddonRightAddonTypeRightAddonPositionForceAddonWrapChildren: ListItemChildrenProps
-    ): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -185,18 +194,21 @@ object mod {
   @JSImport("@react-md/list", "ListItemLink")
   @js.native
   val ListItemLink: ForwardRefExoticComponent[
-    (ListItemLinkProps with (RefAttributes[
+    (ListItemLinkProps & (RefAttributes[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
-    ])) | (ListItemLinkWithComponentProps with (RefAttributes[
+    ])) | (ListItemLinkWithComponentProps & (RefAttributes[
       /* import warning: LimitUnionLength.leaveTypeRef Was union type with length 178 */ js.Any
     ]))
   ] = js.native
   
   object ListItemText {
     
+    @scala.inline
+    def apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = ^.asInstanceOf[js.Dynamic].apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren.asInstanceOf[js.Any]).asInstanceOf[ReactElement]
+    
     @JSImport("@react-md/list", "ListItemText")
     @js.native
-    def apply(hasClassNameSecondaryTextClassNameSecondaryTextChildren: ListItemTextProps): ReactElement = js.native
+    val ^ : js.Any = js.native
     
     object propTypes {
       
@@ -233,13 +245,12 @@ object mod {
   
   @JSImport("@react-md/list", "ListSubheader")
   @js.native
-  val ListSubheader: ForwardRefExoticComponent[ListSubheaderProps with RefAttributes[HTMLLIElement]] = js.native
+  val ListSubheader: ForwardRefExoticComponent[ListSubheaderProps & RefAttributes[HTMLLIElement]] = js.native
   
   @JSImport("@react-md/list", "SimpleListItem")
   @js.native
-  val SimpleListItem: ForwardRefExoticComponent[SimpleListItemProps with RefAttributes[HTMLLIElement]] = js.native
+  val SimpleListItem: ForwardRefExoticComponent[SimpleListItemProps & RefAttributes[HTMLLIElement]] = js.native
   
-  @JSImport("@react-md/list", "getListItemHeight")
-  @js.native
-  def getListItemHeight(hasHeightLeftAddonLeftAddonTypeRightAddonRightAddonTypeSecondaryText: SimpleListItemProps): ListItemHeight = js.native
+  @scala.inline
+  def getListItemHeight(hasHeightLeftAddonLeftAddonTypeRightAddonRightAddonTypeSecondaryText: SimpleListItemProps): ListItemHeight = ^.asInstanceOf[js.Dynamic].applyDynamic("getListItemHeight")(hasHeightLeftAddonLeftAddonTypeRightAddonRightAddonTypeSecondaryText.asInstanceOf[js.Any]).asInstanceOf[ListItemHeight]
 }

@@ -2,17 +2,15 @@ package typings.maximMazurokGapiClientDlp.gapi.client.dlp
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GooglePrivacyDlpV2UpdateStoredInfoTypeRequest extends StObject {
   
   /** Updated configuration for the storedInfoType. If not provided, a new version of the storedInfoType will be created with the existing configuration. */
-  var config: js.UndefOr[GooglePrivacyDlpV2StoredInfoTypeConfig] = js.native
+  var config: js.UndefOr[GooglePrivacyDlpV2StoredInfoTypeConfig] = js.undefined
   
   /** Mask to control which fields get updated. */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object GooglePrivacyDlpV2UpdateStoredInfoTypeRequest {
   

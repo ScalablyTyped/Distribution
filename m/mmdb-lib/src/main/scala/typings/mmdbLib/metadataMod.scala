@@ -4,45 +4,45 @@ import typings.node.Buffer
 import typings.std.Date
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object metadataMod {
   
-  @JSImport("mmdb-lib/lib/metadata", "isLegacyFormat")
+  @JSImport("mmdb-lib/lib/metadata", JSImport.Namespace)
   @js.native
-  def isLegacyFormat(db: Buffer): Boolean = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("mmdb-lib/lib/metadata", "parseMetadata")
-  @js.native
-  def parseMetadata(db: Buffer): Metadata = js.native
+  @scala.inline
+  def isLegacyFormat(db: Buffer): Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isLegacyFormat")(db.asInstanceOf[js.Any]).asInstanceOf[Boolean]
   
-  @js.native
+  @scala.inline
+  def parseMetadata(db: Buffer): Metadata = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMetadata")(db.asInstanceOf[js.Any]).asInstanceOf[Metadata]
+  
   trait Metadata extends StObject {
     
-    val binaryFormatMajorVersion: Double = js.native
+    val binaryFormatMajorVersion: Double
     
-    val binaryFormatMinorVersion: Double = js.native
+    val binaryFormatMinorVersion: Double
     
-    val buildEpoch: Date = js.native
+    val buildEpoch: Date
     
-    val databaseType: String = js.native
+    val databaseType: String
     
-    val description: String = js.native
+    val description: String
     
-    val ipVersion: Double = js.native
+    val ipVersion: Double
     
-    val languages: js.Array[String] = js.native
+    val languages: js.Array[String]
     
-    val nodeByteSize: Double = js.native
+    val nodeByteSize: Double
     
-    val nodeCount: Double = js.native
+    val nodeCount: Double
     
-    val recordSize: Double = js.native
+    val recordSize: Double
     
-    val searchTreeSize: Double = js.native
+    val searchTreeSize: Double
     
-    val treeDepth: Double = js.native
+    val treeDepth: Double
   }
   object Metadata {
     

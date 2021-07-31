@@ -2,21 +2,19 @@ package typings.vsoNodeApi.buildInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dependency extends StObject {
   
   /**
     * The event. The dependency is satisfied when the referenced object emits this event.
     */
-  var event: String = js.native
+  var event: String
   
   /**
     * The scope. This names the object referenced by the dependency.
     */
-  var scope: String = js.native
+  var scope: String
 }
 object Dependency {
   

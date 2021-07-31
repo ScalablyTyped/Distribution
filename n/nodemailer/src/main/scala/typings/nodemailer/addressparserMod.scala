@@ -4,14 +4,12 @@ import typings.nodemailer.anon.Flatten
 import typings.nodemailer.anon.`0`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object addressparserMod {
   
-  @JSImport("nodemailer/lib/addressparser", JSImport.Namespace)
-  @js.native
-  def apply(address: String): js.Array[AddressOrGroup] = js.native
+  @scala.inline
+  def apply(address: String): js.Array[AddressOrGroup] = ^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any]).asInstanceOf[js.Array[AddressOrGroup]]
   /**
     * Parses structured e-mail addresses from an address field
     *
@@ -25,19 +23,22 @@ object addressparserMod {
     *
     * @return An array of address objects
     */
-  @JSImport("nodemailer/lib/addressparser", JSImport.Namespace)
-  @js.native
-  def apply(address: String, options: Flatten): js.Array[Address] = js.native
-  @JSImport("nodemailer/lib/addressparser", JSImport.Namespace)
-  @js.native
-  def apply(address: String, options: `0`): js.Array[AddressOrGroup] = js.native
+  @scala.inline
+  def apply(address: String, options: Flatten): js.Array[Address] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[Address]]
+  @scala.inline
+  def apply(address: String, options: `0`): js.Array[AddressOrGroup] = (^.asInstanceOf[js.Dynamic].apply(address.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Array[AddressOrGroup]]
   
+  @JSImport("nodemailer/lib/addressparser", JSImport.Namespace)
   @js.native
-  trait Address extends AddressOrGroup {
+  val ^ : js.Any = js.native
+  
+  trait Address
+    extends StObject
+       with AddressOrGroup {
     
-    var address: String = js.native
+    var address: String
     
-    var name: String = js.native
+    var name: String
   }
   object Address {
     
@@ -78,12 +79,13 @@ object addressparserMod {
     }
   }
   
-  @js.native
-  trait Group extends AddressOrGroup {
+  trait Group
+    extends StObject
+       with AddressOrGroup {
     
-    var group: js.Array[AddressOrGroup] = js.native
+    var group: js.Array[AddressOrGroup]
     
-    var name: String = js.native
+    var name: String
   }
   object Group {
     

@@ -4,16 +4,15 @@ import typings.loglevel.mod.LogLevelDesc
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
-    @JSImport("@wdio/logger", JSImport.Default)
-    @js.native
-    def apply(name: String): typings.loglevel.mod.Logger = js.native
+    @scala.inline
+    def apply(name: String): typings.loglevel.mod.Logger = ^.asInstanceOf[js.Dynamic].apply(name.asInstanceOf[js.Any]).asInstanceOf[typings.loglevel.mod.Logger]
+    
     @JSImport("@wdio/logger", JSImport.Default)
     @js.native
     val ^ : js.Any = js.native

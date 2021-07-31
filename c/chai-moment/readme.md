@@ -11,8 +11,8 @@ date assertions for chai, powered by moment
 | Full name          | chai-moment |
 | Keywords           | chai, moment, test, assertions |
 | # releases         | 0 |
-| # dependents       | 11 |
-| # downloads        | 502883 |
+| # dependents       | 12 |
+| # downloads        | 598092 |
 | # stars            | 0 |
 
 ## Links

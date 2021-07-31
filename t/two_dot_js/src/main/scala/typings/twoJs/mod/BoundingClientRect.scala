@@ -2,24 +2,22 @@ package typings.twoJs.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined parent std.Record<'top' | 'left' | 'right' | 'bottom' | 'width' | 'height', number> */
-@js.native
 trait BoundingClientRect extends StObject {
   
-  var bottom: Double = js.native
+  var bottom: Double
   
-  var height: Double = js.native
+  var height: Double
   
-  var left: Double = js.native
+  var left: Double
   
-  var right: Double = js.native
+  var right: Double
   
-  var top: Double = js.native
+  var top: Double
   
-  var width: Double = js.native
+  var width: Double
 }
 object BoundingClientRect {
   

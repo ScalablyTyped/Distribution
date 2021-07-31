@@ -6,10 +6,13 @@ import typings.tensorflowTfjsConverter.mod.GraphModel
 import typings.tensorflowTfjsCore.distTensorMod.Tensor2D
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
+  
+  @JSImport("@tensorflow-models/universal-sentence-encoder", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("@tensorflow-models/universal-sentence-encoder", "Tokenizer")
   @js.native
@@ -42,13 +45,11 @@ object mod {
     var tokenizer: js.Any = js.native
   }
   
-  @JSImport("@tensorflow-models/universal-sentence-encoder", "load")
-  @js.native
-  def load(): js.Promise[UniversalSentenceEncoder] = js.native
+  @scala.inline
+  def load(): js.Promise[UniversalSentenceEncoder] = ^.asInstanceOf[js.Dynamic].applyDynamic("load")().asInstanceOf[js.Promise[UniversalSentenceEncoder]]
   
-  @JSImport("@tensorflow-models/universal-sentence-encoder", "loadQnA")
-  @js.native
-  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = js.native
+  @scala.inline
+  def loadQnA(): js.Promise[UniversalSentenceEncoderQnA] = ^.asInstanceOf[js.Dynamic].applyDynamic("loadQnA")().asInstanceOf[js.Promise[UniversalSentenceEncoderQnA]]
   
   @JSImport("@tensorflow-models/universal-sentence-encoder", "version")
   @js.native

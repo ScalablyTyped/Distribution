@@ -13,23 +13,22 @@ import typings.testingLibraryDom.testingLibraryDomStrings.text_
 import typings.testingLibraryDom.testingLibraryDomStrings.title_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object suggestionsMod {
   
-  @JSImport("@testing-library/dom/types/suggestions", "getSuggestedQuery")
+  @JSImport("@testing-library/dom/types/suggestions", JSImport.Namespace)
   @js.native
-  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/dom/types/suggestions", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: js.UndefOr[scala.Nothing], method: Method): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/dom/types/suggestions", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = js.native
-  @JSImport("@testing-library/dom/types/suggestions", "getSuggestedQuery")
-  @js.native
-  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement): js.UndefOr[Suggestion] = ^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any]).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Unit, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Variant): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
+  @scala.inline
+  def getSuggestedQuery(element: HTMLElement, variant: Variant, method: Method): js.UndefOr[Suggestion] = (^.asInstanceOf[js.Dynamic].applyDynamic("getSuggestedQuery")(element.asInstanceOf[js.Any], variant.asInstanceOf[js.Any], method.asInstanceOf[js.Any])).asInstanceOf[js.UndefOr[Suggestion]]
   
   /* Rewritten from type alias, can be one of: 
     - typings.testingLibraryDom.testingLibraryDomStrings.Role
@@ -105,18 +104,17 @@ object suggestionsMod {
   
   type QueryOptions = StringDictionary[RegExp | Boolean]
   
-  @js.native
   trait Suggestion extends StObject {
     
-    var queryArgs: QueryArgs = js.native
+    var queryArgs: QueryArgs
     
-    var queryMethod: String = js.native
+    var queryMethod: String
     
-    var queryName: String = js.native
+    var queryName: String
     
-    var variant: String = js.native
+    var variant: String
     
-    var warning: js.UndefOr[String] = js.native
+    var warning: js.UndefOr[String] = js.undefined
   }
   object Suggestion {
     

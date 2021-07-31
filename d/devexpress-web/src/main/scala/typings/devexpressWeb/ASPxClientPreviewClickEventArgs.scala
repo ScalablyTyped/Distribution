@@ -2,14 +2,15 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientWebDocumentViewer.PreviewClick and ASPxClientReportDesigner.PreviewClick events.
   */
 @js.native
-trait ASPxClientPreviewClickEventArgs extends ASPxClientEventArgs {
+trait ASPxClientPreviewClickEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Provides information on a visual brick representing content of a report control that has been clicked.

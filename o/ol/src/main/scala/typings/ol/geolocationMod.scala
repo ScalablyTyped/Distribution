@@ -17,7 +17,6 @@ import typings.ol.projMod.ProjectionLike
 import typings.std.PositionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object geolocationMod {
@@ -174,14 +173,13 @@ object geolocationMod {
     var message: String = js.native
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var projection: js.UndefOr[ProjectionLike] = js.native
+    var projection: js.UndefOr[ProjectionLike] = js.undefined
     
-    var tracking: js.UndefOr[Boolean] = js.native
+    var tracking: js.UndefOr[Boolean] = js.undefined
     
-    var trackingOptions: js.UndefOr[PositionOptions] = js.native
+    var trackingOptions: js.UndefOr[PositionOptions] = js.undefined
   }
   object Options {
     

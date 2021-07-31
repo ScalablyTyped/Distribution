@@ -10,7 +10,6 @@ import typings.vmap.vmapStrings.linear
 import typings.vmap.vmapStrings.nonlinear
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -20,30 +19,49 @@ object mod {
     */
   @JSImport("vmap", JSImport.Namespace)
   @js.native
-  class ^ protected () extends VMAP {
+  class ^ protected ()
+    extends StObject
+       with VMAP {
     def this(xml: Document) = this()
-  }
-  
-  /**
-    * VMAP parser
-    */
-  @js.native
-  trait VMAP extends StObject {
     
     /**
       * An array of VMAPAdBreak objects
       */
+    /* CompleteClass */
     var adBreaks: js.Array[VMAPAdBreak] = js.native
     
     /**
       * An array of VMAPExtension objects
       */
+    /* CompleteClass */
     var extensions: js.Array[VMAPExtension] = js.native
     
     /**
       * The VMAP version (should be 1.0)
       */
+    /* CompleteClass */
     var version: String = js.native
+  }
+  
+  /**
+    * VMAP parser
+    */
+  trait VMAP extends StObject {
+    
+    /**
+      * An array of VMAPAdBreak objects
+      */
+    var adBreaks: js.Array[VMAPAdBreak]
+    
+    /**
+      * An array of VMAPExtension objects
+      */
+    var extensions: js.Array[VMAPExtension]
+    
+    /**
+      * The VMAP version (should be 1.0)
+      */
+    var version: String
   }
   object VMAP {
     
@@ -124,38 +142,37 @@ object mod {
   /**
     * Provides the player with either an inline ad response or a reference to an ad response
     */
-  @js.native
   trait VMAPAdSource extends StObject {
     
     /**
       * Contains a URI to the VAST
       */
-    var adTagURI: String = js.native
+    var adTagURI: String
     
     /**
       * Indicates whether a VAST ad pod or multple buffet of ads can be served into an ad break
       */
-    var allowMultipleAds: Boolean = js.native
+    var allowMultipleAds: Boolean
     
     /**
       * Contains custom ad data
       */
-    var customData: js.Any = js.native
+    var customData: js.Any
     
     /**
       * Indicates whether the video player should honor the redirects within an ad response
       */
-    var followRedirects: Boolean = js.native
+    var followRedirects: Boolean
     
     /**
       * Ad identifier for the ad source
       */
-    var id: String = js.native
+    var id: String
     
     /**
       * Contains an embedded VAST response
       */
-    var vastAdData: Element = js.native
+    var vastAdData: Element
   }
   object VMAPAdSource {
     
@@ -198,23 +215,22 @@ object mod {
   /**
     * Provides information about VMAP extension
     */
-  @js.native
   trait VMAPExtension extends StObject {
     
     /**
       * Object containing all this extension attributes and their name as the key
       */
-    var attribute: js.Any = js.native
+    var attribute: js.Any
     
     /**
       * Object containing all this extension children and their name as the key
       */
-    var children: js.Any = js.native
+    var children: js.Any
     
     /**
       * Object parsed from CDATA or as a fallback all of the text nodes of this extension concatenated
       */
-    var value: js.Any = js.native
+    var value: js.Any
   }
   object VMAPExtension {
     
@@ -241,18 +257,17 @@ object mod {
   /**
     * Provides information about a VMAP tracking event
     */
-  @js.native
   trait VMAPTrackingEvent extends StObject {
     
     /**
       * The name of the event to track for the element. Can be one of breakStart, breakEnd or error
       */
-    var event: breakStart | breakEnd | error = js.native
+    var event: breakStart | breakEnd | error
     
     /**
       * The URI of the tracker
       */
-    var uri: String = js.native
+    var uri: String
   }
   object VMAPTrackingEvent {
     

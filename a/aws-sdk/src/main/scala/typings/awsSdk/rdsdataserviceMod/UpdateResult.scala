@@ -2,16 +2,14 @@ package typings.awsSdk.rdsdataserviceMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateResult extends StObject {
   
   /**
     * Values for fields generated during the request.
     */
-  var generatedFields: js.UndefOr[FieldList] = js.native
+  var generatedFields: js.UndefOr[FieldList] = js.undefined
 }
 object UpdateResult {
   

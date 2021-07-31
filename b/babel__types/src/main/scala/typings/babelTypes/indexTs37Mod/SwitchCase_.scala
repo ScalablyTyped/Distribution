@@ -3,27 +3,26 @@ package typings.babelTypes.indexTs37Mod
 import typings.babelTypes.babelTypesStrings.SwitchCase
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SwitchCase_
-  extends BaseNode
+  extends StObject
+     with BaseNode
      with _Node {
   
-  var consequent: js.Array[Statement] = js.native
+  var consequent: js.Array[Statement]
   
-  var test: Expression | Null = js.native
+  var test: Expression | Null
   
   @JSName("type")
-  var type_SwitchCase_ : SwitchCase = js.native
+  var type_SwitchCase_ : SwitchCase
 }
 object SwitchCase_ {
   
   @scala.inline
-  def apply(consequent: js.Array[Statement], `type`: SwitchCase): SwitchCase_ = {
-    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any])
-    __obj.updateDynamic("type")(`type`.asInstanceOf[js.Any])
+  def apply(consequent: js.Array[Statement]): SwitchCase_ = {
+    val __obj = js.Dynamic.literal(consequent = consequent.asInstanceOf[js.Any], end = null, innerComments = null, leadingComments = null, loc = null, start = null, test = null, trailingComments = null)
+    __obj.updateDynamic("type")("SwitchCase")
     __obj.asInstanceOf[SwitchCase_]
   }
   

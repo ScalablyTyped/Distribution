@@ -5,7 +5,6 @@ import typings.react.mod.ReactNode
 import typings.reactNativeWindows.popupPropsMod.IPopupProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object popupMod {
@@ -19,17 +18,19 @@ object popupMod {
   /* static members */
   object Popup {
     
-    @JSImport("react-native-windows/Libraries/Components/Popup/Popup", "Popup.getDerivedStateFromProps")
+    @JSImport("react-native-windows/Libraries/Components/Popup/Popup", "Popup")
     @js.native
-    def getDerivedStateFromProps(nextProps: IPopupProps, prevState: IPopupTargetState): IPopupTargetState = js.native
+    val ^ : js.Any = js.native
+    
+    @scala.inline
+    def getDerivedStateFromProps(nextProps: IPopupProps, prevState: IPopupTargetState): IPopupTargetState = (^.asInstanceOf[js.Dynamic].applyDynamic("getDerivedStateFromProps")(nextProps.asInstanceOf[js.Any], prevState.asInstanceOf[js.Any])).asInstanceOf[IPopupTargetState]
   }
   
-  @js.native
   trait IPopupTargetState extends StObject {
     
-    var target: js.UndefOr[Double | Null] = js.native
+    var target: js.UndefOr[Double | Null] = js.undefined
     
-    var targetRef: js.UndefOr[ReactNode] = js.native
+    var targetRef: js.UndefOr[ReactNode] = js.undefined
   }
   object IPopupTargetState {
     

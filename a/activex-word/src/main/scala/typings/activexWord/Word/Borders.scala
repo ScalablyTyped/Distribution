@@ -3,72 +3,70 @@ package typings.activexWord.Word
 import typings.activexWord.activexWordNumbers.`9999999`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Borders extends StObject {
   
-  var AlwaysInFront: Boolean = js.native
+  var AlwaysInFront: Boolean
   
-  val Application: typings.activexWord.Word.Application = js.native
+  val Application: typings.activexWord.Word.Application
   
-  def ApplyPageBordersToAllSections(): Unit = js.native
+  def ApplyPageBordersToAllSections(): Unit
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  var DistanceFrom: WdBorderDistanceFrom = js.native
+  var DistanceFrom: WdBorderDistanceFrom
   
-  var DistanceFromBottom: Double = js.native
+  var DistanceFromBottom: Double
   
-  var DistanceFromLeft: Double = js.native
+  var DistanceFromLeft: Double
   
-  var DistanceFromRight: Double = js.native
+  var DistanceFromRight: Double
   
-  var DistanceFromTop: Double = js.native
+  var DistanceFromTop: Double
   
-  var Enable: Boolean | `9999999` | WdLineStyle = js.native
+  var Enable: Boolean | `9999999` | WdLineStyle
   
-  var EnableFirstPageInSection: Boolean = js.native
+  var EnableFirstPageInSection: Boolean
   
-  var EnableOtherPagesInSection: Boolean = js.native
+  var EnableOtherPagesInSection: Boolean
   
-  val HasHorizontal: Boolean = js.native
+  val HasHorizontal: Boolean
   
-  val HasVertical: Boolean = js.native
+  val HasVertical: Boolean
   
-  var InsideColor: WdColor = js.native
+  var InsideColor: WdColor
   
-  var InsideColorIndex: WdColorIndex = js.native
+  var InsideColorIndex: WdColorIndex
   
-  var InsideLineStyle: WdLineStyle = js.native
+  var InsideLineStyle: WdLineStyle
   
-  var InsideLineWidth: WdLineWidth = js.native
+  var InsideLineWidth: WdLineWidth
   
-  def Item(Index: WdBorderType): Border = js.native
+  def Item(Index: WdBorderType): Border
   
-  var JoinBorders: Boolean = js.native
+  var JoinBorders: Boolean
   
-  var OutsideColor: WdColor = js.native
+  var OutsideColor: WdColor
   
-  var OutsideColorIndex: WdColorIndex = js.native
+  var OutsideColorIndex: WdColorIndex
   
-  var OutsideLineStyle: WdLineStyle = js.native
+  var OutsideLineStyle: WdLineStyle
   
-  var OutsideLineWidth: WdLineWidth = js.native
+  var OutsideLineWidth: WdLineWidth
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var Shadow: Boolean = js.native
+  var Shadow: Boolean
   
-  var SurroundFooter: Boolean = js.native
+  var SurroundFooter: Boolean
   
-  var SurroundHeader: Boolean = js.native
+  var SurroundHeader: Boolean
   
   @JSName("Word.Borders_typekey")
-  var WordDotBorders_typekey: Borders = js.native
+  var WordDotBorders_typekey: Borders
 }
 object Borders {
   

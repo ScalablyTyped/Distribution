@@ -2,13 +2,11 @@ package typings.kiiCloudSdk.KiiCloud
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Represents a server side code execution result in KiiCloud.
   */
-@js.native
 trait KiiServerCodeExecResult extends StObject {
   
   /**
@@ -16,14 +14,14 @@ trait KiiServerCodeExecResult extends StObject {
     *
     * @return calculated number of executed steps
     */
-  def getExecutedSteps(): Double = js.native
+  def getExecutedSteps(): Double
   
   /**
     * Get Object returned by server code entry.
     *
     * @return returned by server code entry.
     */
-  def getReturnedValue(): js.Any = js.native
+  def getReturnedValue(): js.Any
 }
 object KiiServerCodeExecResult {
   

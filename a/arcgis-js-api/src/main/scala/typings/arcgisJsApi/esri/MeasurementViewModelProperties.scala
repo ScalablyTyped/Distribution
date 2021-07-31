@@ -25,10 +25,8 @@ import typings.arcgisJsApi.arcgisJsApiStrings.miles_
 import typings.arcgisJsApi.arcgisJsApiStrings.yards
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait MeasurementViewModelProperties extends StObject {
   
   /**
@@ -36,7 +34,7 @@ trait MeasurementViewModelProperties extends StObject {
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement-MeasurementViewModel.html#activeTool)
     */
-  var activeTool: js.UndefOr[area | distance | `direct-line`] = js.native
+  var activeTool: js.UndefOr[area | distance | `direct-line`] = js.undefined
   
   /**
     * View model of the active measurement widget.
@@ -45,7 +43,7 @@ trait MeasurementViewModelProperties extends StObject {
     */
   var activeViewModel: js.UndefOr[
     AreaMeasurement2DViewModel | AreaMeasurement3DViewModelProperties | DirectLineMeasurement3DViewModelProperties | DistanceMeasurement2DViewModelProperties
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the area values.
@@ -54,7 +52,7 @@ trait MeasurementViewModelProperties extends StObject {
     */
   var areaUnit: js.UndefOr[
     metric | imperial | `square-inches` | `square-feet` | `square-us-feet` | `square-yards` | `square-miles` | `square-meters` | `square-kilometers` | acres | ares | hectares
-  ] = js.native
+  ] = js.undefined
   
   /**
     * Unit system (imperial, metric) or specific unit used for displaying the distance values.
@@ -63,14 +61,14 @@ trait MeasurementViewModelProperties extends StObject {
     */
   var linearUnit: js.UndefOr[
     metric | imperial | inches | feet_ | `us-feet` | yards | miles_ | `nautical-miles` | meters_ | kilometers_
-  ] = js.native
+  ] = js.undefined
   
   /**
     * A reference to the [MapView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-MapView.html) or [SceneView](https://developers.arcgis.com/javascript/latest/api-reference/esri-views-SceneView.html).
     *
     * [Read more...](https://developers.arcgis.com/javascript/latest/api-reference/esri-widgets-Measurement-MeasurementViewModel.html#view)
     */
-  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.native
+  var view: js.UndefOr[MapViewProperties | SceneViewProperties] = js.undefined
 }
 object MeasurementViewModelProperties {
   

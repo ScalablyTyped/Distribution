@@ -2,26 +2,24 @@ package typings.googleapis.sourcerepoV1Mod.sourcerepoV1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Request for UpdateRepo.
   */
-@js.native
 trait SchemaUpdateRepoRequest extends StObject {
   
   /**
     * The new configuration for the repository.
     */
-  var repo: js.UndefOr[SchemaRepo] = js.native
+  var repo: js.UndefOr[SchemaRepo] = js.undefined
   
   /**
     * A FieldMask specifying which fields of the repo to modify. Only the
     * fields in the mask will be modified. If no mask is provided, this request
     * is no-op.
     */
-  var updateMask: js.UndefOr[String] = js.native
+  var updateMask: js.UndefOr[String] = js.undefined
 }
 object SchemaUpdateRepoRequest {
   

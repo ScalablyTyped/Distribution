@@ -108,218 +108,216 @@ import typings.googleAppsScript.GoogleAppsScript.YoutubePartner.Schema.Whitelist
 import typings.googleAppsScript.GoogleAppsScript.YoutubePartner.Schema.WhitelistListResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait YoutubePartner extends StObject {
   
-  var AssetLabels: js.UndefOr[AssetLabelsCollection] = js.native
+  var AssetLabels: js.UndefOr[AssetLabelsCollection] = js.undefined
   
-  var AssetMatchPolicy: js.UndefOr[AssetMatchPolicyCollection] = js.native
+  var AssetMatchPolicy: js.UndefOr[AssetMatchPolicyCollection] = js.undefined
   
-  var AssetRelationships: js.UndefOr[AssetRelationshipsCollection] = js.native
+  var AssetRelationships: js.UndefOr[AssetRelationshipsCollection] = js.undefined
   
-  var AssetSearch: js.UndefOr[AssetSearchCollection] = js.native
+  var AssetSearch: js.UndefOr[AssetSearchCollection] = js.undefined
   
-  var AssetShares: js.UndefOr[AssetSharesCollection] = js.native
+  var AssetShares: js.UndefOr[AssetSharesCollection] = js.undefined
   
-  var Assets: js.UndefOr[AssetsCollection] = js.native
+  var Assets: js.UndefOr[AssetsCollection] = js.undefined
   
-  var Campaigns: js.UndefOr[CampaignsCollection] = js.native
+  var Campaigns: js.UndefOr[CampaignsCollection] = js.undefined
   
-  var ClaimHistory: js.UndefOr[ClaimHistoryCollection] = js.native
+  var ClaimHistory: js.UndefOr[ClaimHistoryCollection] = js.undefined
   
-  var ClaimSearch: js.UndefOr[ClaimSearchCollection] = js.native
+  var ClaimSearch: js.UndefOr[ClaimSearchCollection] = js.undefined
   
-  var Claims: js.UndefOr[ClaimsCollection] = js.native
+  var Claims: js.UndefOr[ClaimsCollection] = js.undefined
   
-  var ContentOwnerAdvertisingOptions: js.UndefOr[ContentOwnerAdvertisingOptionsCollection] = js.native
+  var ContentOwnerAdvertisingOptions: js.UndefOr[ContentOwnerAdvertisingOptionsCollection] = js.undefined
   
-  var ContentOwners: js.UndefOr[ContentOwnersCollection] = js.native
+  var ContentOwners: js.UndefOr[ContentOwnersCollection] = js.undefined
   
-  var LiveCuepoints: js.UndefOr[LiveCuepointsCollection] = js.native
+  var LiveCuepoints: js.UndefOr[LiveCuepointsCollection] = js.undefined
   
-  var MetadataHistory: js.UndefOr[MetadataHistoryCollection] = js.native
+  var MetadataHistory: js.UndefOr[MetadataHistoryCollection] = js.undefined
   
-  var Orders: js.UndefOr[OrdersCollection] = js.native
+  var Orders: js.UndefOr[OrdersCollection] = js.undefined
   
-  var Ownership: js.UndefOr[OwnershipCollection] = js.native
+  var Ownership: js.UndefOr[OwnershipCollection] = js.undefined
   
-  var OwnershipHistory: js.UndefOr[OwnershipHistoryCollection] = js.native
+  var OwnershipHistory: js.UndefOr[OwnershipHistoryCollection] = js.undefined
   
-  var Package: js.UndefOr[PackageCollection] = js.native
+  var Package: js.UndefOr[PackageCollection] = js.undefined
   
-  var Policies: js.UndefOr[PoliciesCollection] = js.native
+  var Policies: js.UndefOr[PoliciesCollection] = js.undefined
   
-  var Publishers: js.UndefOr[PublishersCollection] = js.native
+  var Publishers: js.UndefOr[PublishersCollection] = js.undefined
   
-  var ReferenceConflicts: js.UndefOr[ReferenceConflictsCollection] = js.native
+  var ReferenceConflicts: js.UndefOr[ReferenceConflictsCollection] = js.undefined
   
-  var References: js.UndefOr[ReferencesCollection] = js.native
+  var References: js.UndefOr[ReferencesCollection] = js.undefined
   
-  var SpreadsheetTemplate: js.UndefOr[SpreadsheetTemplateCollection] = js.native
+  var SpreadsheetTemplate: js.UndefOr[SpreadsheetTemplateCollection] = js.undefined
   
-  var Uploader: js.UndefOr[UploaderCollection] = js.native
+  var Uploader: js.UndefOr[UploaderCollection] = js.undefined
   
-  var Validator: js.UndefOr[ValidatorCollection] = js.native
+  var Validator: js.UndefOr[ValidatorCollection] = js.undefined
   
-  var VideoAdvertisingOptions: js.UndefOr[VideoAdvertisingOptionsCollection] = js.native
+  var VideoAdvertisingOptions: js.UndefOr[VideoAdvertisingOptionsCollection] = js.undefined
   
-  var Whitelists: js.UndefOr[WhitelistsCollection] = js.native
+  var Whitelists: js.UndefOr[WhitelistsCollection] = js.undefined
   
   // Create a new instance of AdBreak
-  def newAdBreak(): AdBreak = js.native
+  def newAdBreak(): AdBreak
   
   // Create a new instance of AdSlot
-  def newAdSlot(): AdSlot = js.native
+  def newAdSlot(): AdSlot
   
   // Create a new instance of AllowedAdvertisingOptions
-  def newAllowedAdvertisingOptions(): AllowedAdvertisingOptions = js.native
+  def newAllowedAdvertisingOptions(): AllowedAdvertisingOptions
   
   // Create a new instance of Asset
-  def newAsset(): Asset = js.native
+  def newAsset(): Asset
   
   // Create a new instance of AssetLabel
-  def newAssetLabel(): AssetLabel = js.native
+  def newAssetLabel(): AssetLabel
   
   // Create a new instance of AssetMatchPolicy
-  def newAssetMatchPolicy(): AssetMatchPolicy = js.native
+  def newAssetMatchPolicy(): AssetMatchPolicy
   
   // Create a new instance of AssetRelationship
-  def newAssetRelationship(): AssetRelationship = js.native
+  def newAssetRelationship(): AssetRelationship
   
   // Create a new instance of Campaign
-  def newCampaign(): Campaign = js.native
+  def newCampaign(): Campaign
   
   // Create a new instance of CampaignData
-  def newCampaignData(): CampaignData = js.native
+  def newCampaignData(): CampaignData
   
   // Create a new instance of CampaignSource
-  def newCampaignSource(): CampaignSource = js.native
+  def newCampaignSource(): CampaignSource
   
   // Create a new instance of CampaignTargetLink
-  def newCampaignTargetLink(): CampaignTargetLink = js.native
+  def newCampaignTargetLink(): CampaignTargetLink
   
   // Create a new instance of Claim
-  def newClaim(): Claim = js.native
+  def newClaim(): Claim
   
   // Create a new instance of ClaimMatchInfo
-  def newClaimMatchInfo(): ClaimMatchInfo = js.native
+  def newClaimMatchInfo(): ClaimMatchInfo
   
   // Create a new instance of ClaimMatchInfoLongestMatch
-  def newClaimMatchInfoLongestMatch(): ClaimMatchInfoLongestMatch = js.native
+  def newClaimMatchInfoLongestMatch(): ClaimMatchInfoLongestMatch
   
   // Create a new instance of ClaimMatchInfoTotalMatch
-  def newClaimMatchInfoTotalMatch(): ClaimMatchInfoTotalMatch = js.native
+  def newClaimMatchInfoTotalMatch(): ClaimMatchInfoTotalMatch
   
   // Create a new instance of ClaimOrigin
-  def newClaimOrigin(): ClaimOrigin = js.native
+  def newClaimOrigin(): ClaimOrigin
   
   // Create a new instance of ClaimedVideoDefaults
-  def newClaimedVideoDefaults(): ClaimedVideoDefaults = js.native
+  def newClaimedVideoDefaults(): ClaimedVideoDefaults
   
   // Create a new instance of Conditions
-  def newConditions(): Conditions = js.native
+  def newConditions(): Conditions
   
   // Create a new instance of ConflictingOwnership
-  def newConflictingOwnership(): ConflictingOwnership = js.native
+  def newConflictingOwnership(): ConflictingOwnership
   
   // Create a new instance of ContentOwnerAdvertisingOption
-  def newContentOwnerAdvertisingOption(): ContentOwnerAdvertisingOption = js.native
+  def newContentOwnerAdvertisingOption(): ContentOwnerAdvertisingOption
   
   // Create a new instance of CuepointSettings
-  def newCuepointSettings(): CuepointSettings = js.native
+  def newCuepointSettings(): CuepointSettings
   
   // Create a new instance of Date
-  def newDate(): Date = js.native
+  def newDate(): Date
   
   // Create a new instance of DateRange
-  def newDateRange(): DateRange = js.native
+  def newDateRange(): DateRange
   
   // Create a new instance of ExcludedInterval
-  def newExcludedInterval(): ExcludedInterval = js.native
+  def newExcludedInterval(): ExcludedInterval
   
   // Create a new instance of IntervalCondition
-  def newIntervalCondition(): IntervalCondition = js.native
+  def newIntervalCondition(): IntervalCondition
   
   // Create a new instance of LiveCuepoint
-  def newLiveCuepoint(): LiveCuepoint = js.native
+  def newLiveCuepoint(): LiveCuepoint
   
   // Create a new instance of MatchSegment
-  def newMatchSegment(): MatchSegment = js.native
+  def newMatchSegment(): MatchSegment
   
   // Create a new instance of Metadata
-  def newMetadata(): Metadata = js.native
+  def newMetadata(): Metadata
   
   // Create a new instance of Order
-  def newOrder(): Order = js.native
+  def newOrder(): Order
   
   // Create a new instance of Origination
-  def newOrigination(): Origination = js.native
+  def newOrigination(): Origination
   
   // Create a new instance of OwnershipConflicts
-  def newOwnershipConflicts(): OwnershipConflicts = js.native
+  def newOwnershipConflicts(): OwnershipConflicts
   
   // Create a new instance of Package
-  def newPackage(): Package = js.native
+  def newPackage(): Package
   
   // Create a new instance of Policy
-  def newPolicy(): Policy = js.native
+  def newPolicy(): Policy
   
   // Create a new instance of PolicyRule
-  def newPolicyRule(): PolicyRule = js.native
+  def newPolicyRule(): PolicyRule
   
   // Create a new instance of PromotedContent
-  def newPromotedContent(): PromotedContent = js.native
+  def newPromotedContent(): PromotedContent
   
   // Create a new instance of Rating
-  def newRating(): Rating = js.native
+  def newRating(): Rating
   
   // Create a new instance of Reference
-  def newReference(): Reference = js.native
+  def newReference(): Reference
   
   // Create a new instance of Requirements
-  def newRequirements(): Requirements = js.native
+  def newRequirements(): Requirements
   
   // Create a new instance of RightsOwnership
-  def newRightsOwnership(): RightsOwnership = js.native
+  def newRightsOwnership(): RightsOwnership
   
   // Create a new instance of Segment
-  def newSegment(): Segment = js.native
+  def newSegment(): Segment
   
   // Create a new instance of ShowDetails
-  def newShowDetails(): ShowDetails = js.native
+  def newShowDetails(): ShowDetails
   
   // Create a new instance of StateCompleted
-  def newStateCompleted(): StateCompleted = js.native
+  def newStateCompleted(): StateCompleted
   
   // Create a new instance of StatusReport
-  def newStatusReport(): StatusReport = js.native
+  def newStatusReport(): StatusReport
   
   // Create a new instance of TerritoryCondition
-  def newTerritoryCondition(): TerritoryCondition = js.native
+  def newTerritoryCondition(): TerritoryCondition
   
   // Create a new instance of TerritoryConflicts
-  def newTerritoryConflicts(): TerritoryConflicts = js.native
+  def newTerritoryConflicts(): TerritoryConflicts
   
   // Create a new instance of TerritoryOwners
-  def newTerritoryOwners(): TerritoryOwners = js.native
+  def newTerritoryOwners(): TerritoryOwners
   
   // Create a new instance of ValidateAsyncRequest
-  def newValidateAsyncRequest(): ValidateAsyncRequest = js.native
+  def newValidateAsyncRequest(): ValidateAsyncRequest
   
   // Create a new instance of ValidateRequest
-  def newValidateRequest(): ValidateRequest = js.native
+  def newValidateRequest(): ValidateRequest
   
   // Create a new instance of ValidateStatusRequest
-  def newValidateStatusRequest(): ValidateStatusRequest = js.native
+  def newValidateStatusRequest(): ValidateStatusRequest
   
   // Create a new instance of VideoAdvertisingOption
-  def newVideoAdvertisingOption(): VideoAdvertisingOption = js.native
+  def newVideoAdvertisingOption(): VideoAdvertisingOption
   
   // Create a new instance of Whitelist
-  def newWhitelist(): Whitelist = js.native
+  def newWhitelist(): Whitelist
 }
 object YoutubePartner {
   
@@ -878,14 +876,13 @@ object YoutubePartner {
   
   object Schema {
     
-    @js.native
     trait AdBreak extends StObject {
       
-      var midrollSeconds: js.UndefOr[Double] = js.native
+      var midrollSeconds: js.UndefOr[Double] = js.undefined
       
-      var position: js.UndefOr[String] = js.native
+      var position: js.UndefOr[String] = js.undefined
       
-      var slot: js.UndefOr[js.Array[AdSlot]] = js.native
+      var slot: js.UndefOr[js.Array[AdSlot]] = js.undefined
     }
     object AdBreak {
       
@@ -921,12 +918,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AdSlot extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AdSlot {
       
@@ -953,16 +949,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AllowedAdvertisingOptions extends StObject {
       
-      var adsOnEmbeds: js.UndefOr[Boolean] = js.native
+      var adsOnEmbeds: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var licAdFormats: js.UndefOr[js.Array[String]] = js.native
+      var licAdFormats: js.UndefOr[js.Array[String]] = js.undefined
       
-      var ugcAdFormats: js.UndefOr[js.Array[String]] = js.native
+      var ugcAdFormats: js.UndefOr[js.Array[String]] = js.undefined
     }
     object AllowedAdvertisingOptions {
       
@@ -1007,42 +1002,41 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Asset extends StObject {
       
-      var aliasId: js.UndefOr[js.Array[String]] = js.native
+      var aliasId: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var label: js.UndefOr[js.Array[String]] = js.native
+      var label: js.UndefOr[js.Array[String]] = js.undefined
       
-      var matchPolicy: js.UndefOr[AssetMatchPolicy] = js.native
+      var matchPolicy: js.UndefOr[AssetMatchPolicy] = js.undefined
       
-      var matchPolicyEffective: js.UndefOr[AssetMatchPolicy] = js.native
+      var matchPolicyEffective: js.UndefOr[AssetMatchPolicy] = js.undefined
       
-      var matchPolicyMine: js.UndefOr[AssetMatchPolicy] = js.native
+      var matchPolicyMine: js.UndefOr[AssetMatchPolicy] = js.undefined
       
-      var metadata: js.UndefOr[Metadata] = js.native
+      var metadata: js.UndefOr[Metadata] = js.undefined
       
-      var metadataEffective: js.UndefOr[Metadata] = js.native
+      var metadataEffective: js.UndefOr[Metadata] = js.undefined
       
-      var metadataMine: js.UndefOr[Metadata] = js.native
+      var metadataMine: js.UndefOr[Metadata] = js.undefined
       
-      var ownership: js.UndefOr[RightsOwnership] = js.native
+      var ownership: js.UndefOr[RightsOwnership] = js.undefined
       
-      var ownershipConflicts: js.UndefOr[OwnershipConflicts] = js.native
+      var ownershipConflicts: js.UndefOr[OwnershipConflicts] = js.undefined
       
-      var ownershipEffective: js.UndefOr[RightsOwnership] = js.native
+      var ownershipEffective: js.UndefOr[RightsOwnership] = js.undefined
       
-      var ownershipMine: js.UndefOr[RightsOwnership] = js.native
+      var ownershipMine: js.UndefOr[RightsOwnership] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var timeCreated: js.UndefOr[String] = js.native
+      var timeCreated: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object Asset {
       
@@ -1165,12 +1159,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetLabel extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var labelName: js.UndefOr[String] = js.native
+      var labelName: js.UndefOr[String] = js.undefined
     }
     object AssetLabel {
       
@@ -1197,12 +1190,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetLabelListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[AssetLabel]] = js.native
+      var items: js.UndefOr[js.Array[AssetLabel]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AssetLabelListResponse {
       
@@ -1232,12 +1224,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Asset]] = js.native
+      var items: js.UndefOr[js.Array[Asset]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object AssetListResponse {
       
@@ -1267,14 +1258,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetMatchPolicy extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var policyId: js.UndefOr[String] = js.native
+      var policyId: js.UndefOr[String] = js.undefined
       
-      var rules: js.UndefOr[js.Array[PolicyRule]] = js.native
+      var rules: js.UndefOr[js.Array[PolicyRule]] = js.undefined
     }
     object AssetMatchPolicy {
       
@@ -1310,16 +1300,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetRelationship extends StObject {
       
-      var childAssetId: js.UndefOr[String] = js.native
+      var childAssetId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var parentAssetId: js.UndefOr[String] = js.native
+      var parentAssetId: js.UndefOr[String] = js.undefined
     }
     object AssetRelationship {
       
@@ -1358,16 +1347,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetRelationshipListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[AssetRelationship]] = js.native
+      var items: js.UndefOr[js.Array[AssetRelationship]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
     }
     object AssetRelationshipListResponse {
       
@@ -1409,16 +1397,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetSearchResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[AssetSnippet]] = js.native
+      var items: js.UndefOr[js.Array[AssetSnippet]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
     }
     object AssetSearchResponse {
       
@@ -1460,14 +1447,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetShare extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var shareId: js.UndefOr[String] = js.native
+      var shareId: js.UndefOr[String] = js.undefined
       
-      var viewId: js.UndefOr[String] = js.native
+      var viewId: js.UndefOr[String] = js.undefined
     }
     object AssetShare {
       
@@ -1500,16 +1486,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetShareListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[AssetShare]] = js.native
+      var items: js.UndefOr[js.Array[AssetShare]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
     }
     object AssetShareListResponse {
       
@@ -1551,24 +1536,23 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait AssetSnippet extends StObject {
       
-      var customId: js.UndefOr[String] = js.native
+      var customId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isrc: js.UndefOr[String] = js.native
+      var isrc: js.UndefOr[String] = js.undefined
       
-      var iswc: js.UndefOr[String] = js.native
+      var iswc: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var timeCreated: js.UndefOr[String] = js.native
+      var timeCreated: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object AssetSnippet {
       
@@ -1631,20 +1615,19 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Campaign extends StObject {
       
-      var campaignData: js.UndefOr[CampaignData] = js.native
+      var campaignData: js.UndefOr[CampaignData] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var timeCreated: js.UndefOr[String] = js.native
+      var timeCreated: js.UndefOr[String] = js.undefined
       
-      var timeLastModified: js.UndefOr[String] = js.native
+      var timeLastModified: js.UndefOr[String] = js.undefined
     }
     object Campaign {
       
@@ -1695,18 +1678,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait CampaignData extends StObject {
       
-      var campaignSource: js.UndefOr[CampaignSource] = js.native
+      var campaignSource: js.UndefOr[CampaignSource] = js.undefined
       
-      var expireTime: js.UndefOr[String] = js.native
+      var expireTime: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var promotedContent: js.UndefOr[js.Array[PromotedContent]] = js.native
+      var promotedContent: js.UndefOr[js.Array[PromotedContent]] = js.undefined
       
-      var startTime: js.UndefOr[String] = js.native
+      var startTime: js.UndefOr[String] = js.undefined
     }
     object CampaignData {
       
@@ -1754,12 +1736,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait CampaignList extends StObject {
       
-      var items: js.UndefOr[js.Array[Campaign]] = js.native
+      var items: js.UndefOr[js.Array[Campaign]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object CampaignList {
       
@@ -1789,12 +1770,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait CampaignSource extends StObject {
       
-      var sourceType: js.UndefOr[String] = js.native
+      var sourceType: js.UndefOr[String] = js.undefined
       
-      var sourceValue: js.UndefOr[js.Array[String]] = js.native
+      var sourceValue: js.UndefOr[js.Array[String]] = js.undefined
     }
     object CampaignSource {
       
@@ -1824,12 +1804,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait CampaignTargetLink extends StObject {
       
-      var targetId: js.UndefOr[String] = js.native
+      var targetId: js.UndefOr[String] = js.undefined
       
-      var targetType: js.UndefOr[String] = js.native
+      var targetType: js.UndefOr[String] = js.undefined
     }
     object CampaignTargetLink {
       
@@ -1856,34 +1835,33 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Claim extends StObject {
       
-      var appliedPolicy: js.UndefOr[Policy] = js.native
+      var appliedPolicy: js.UndefOr[Policy] = js.undefined
       
-      var assetId: js.UndefOr[String] = js.native
+      var assetId: js.UndefOr[String] = js.undefined
       
-      var blockOutsideOwnership: js.UndefOr[Boolean] = js.native
+      var blockOutsideOwnership: js.UndefOr[Boolean] = js.undefined
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isPartnerUploaded: js.UndefOr[Boolean] = js.native
+      var isPartnerUploaded: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var matchInfo: js.UndefOr[ClaimMatchInfo] = js.native
+      var matchInfo: js.UndefOr[ClaimMatchInfo] = js.undefined
       
-      var origin: js.UndefOr[ClaimOrigin] = js.native
+      var origin: js.UndefOr[ClaimOrigin] = js.undefined
       
-      var policy: js.UndefOr[Policy] = js.native
+      var policy: js.UndefOr[Policy] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var timeCreated: js.UndefOr[String] = js.native
+      var timeCreated: js.UndefOr[String] = js.undefined
       
-      var videoId: js.UndefOr[String] = js.native
+      var videoId: js.UndefOr[String] = js.undefined
     }
     object Claim {
       
@@ -1976,20 +1954,19 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimEvent extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var reason: js.UndefOr[String] = js.native
+      var reason: js.UndefOr[String] = js.undefined
       
-      var source: js.UndefOr[ClaimEventSource] = js.native
+      var source: js.UndefOr[ClaimEventSource] = js.undefined
       
-      var time: js.UndefOr[String] = js.native
+      var time: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var typeDetails: js.UndefOr[ClaimEventTypeDetails] = js.native
+      var typeDetails: js.UndefOr[ClaimEventTypeDetails] = js.undefined
     }
     object ClaimEvent {
       
@@ -2040,14 +2017,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimEventSource extends StObject {
       
-      var contentOwnerId: js.UndefOr[String] = js.native
+      var contentOwnerId: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var userEmail: js.UndefOr[String] = js.native
+      var userEmail: js.UndefOr[String] = js.undefined
     }
     object ClaimEventSource {
       
@@ -2080,16 +2056,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimEventTypeDetails extends StObject {
       
-      var appealExplanation: js.UndefOr[String] = js.native
+      var appealExplanation: js.UndefOr[String] = js.undefined
       
-      var disputeNotes: js.UndefOr[String] = js.native
+      var disputeNotes: js.UndefOr[String] = js.undefined
       
-      var disputeReason: js.UndefOr[String] = js.native
+      var disputeReason: js.UndefOr[String] = js.undefined
       
-      var updateStatus: js.UndefOr[String] = js.native
+      var updateStatus: js.UndefOr[String] = js.undefined
     }
     object ClaimEventTypeDetails {
       
@@ -2128,16 +2103,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimHistory extends StObject {
       
-      var event: js.UndefOr[js.Array[ClaimEvent]] = js.native
+      var event: js.UndefOr[js.Array[ClaimEvent]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var uploaderChannelId: js.UndefOr[String] = js.native
+      var uploaderChannelId: js.UndefOr[String] = js.undefined
     }
     object ClaimHistory {
       
@@ -2179,18 +2153,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Claim]] = js.native
+      var items: js.UndefOr[js.Array[Claim]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
       
-      var previousPageToken: js.UndefOr[String] = js.native
+      var previousPageToken: js.UndefOr[String] = js.undefined
     }
     object ClaimListResponse {
       
@@ -2238,16 +2211,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimMatchInfo extends StObject {
       
-      var longestMatch: js.UndefOr[ClaimMatchInfoLongestMatch] = js.native
+      var longestMatch: js.UndefOr[ClaimMatchInfoLongestMatch] = js.undefined
       
-      var matchSegments: js.UndefOr[js.Array[MatchSegment]] = js.native
+      var matchSegments: js.UndefOr[js.Array[MatchSegment]] = js.undefined
       
-      var referenceId: js.UndefOr[String] = js.native
+      var referenceId: js.UndefOr[String] = js.undefined
       
-      var totalMatch: js.UndefOr[ClaimMatchInfoTotalMatch] = js.native
+      var totalMatch: js.UndefOr[ClaimMatchInfoTotalMatch] = js.undefined
     }
     object ClaimMatchInfo {
       
@@ -2289,14 +2261,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimMatchInfoLongestMatch extends StObject {
       
-      var durationSecs: js.UndefOr[String] = js.native
+      var durationSecs: js.UndefOr[String] = js.undefined
       
-      var referenceOffset: js.UndefOr[String] = js.native
+      var referenceOffset: js.UndefOr[String] = js.undefined
       
-      var userVideoOffset: js.UndefOr[String] = js.native
+      var userVideoOffset: js.UndefOr[String] = js.undefined
     }
     object ClaimMatchInfoLongestMatch {
       
@@ -2329,12 +2300,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimMatchInfoTotalMatch extends StObject {
       
-      var referenceDurationSecs: js.UndefOr[String] = js.native
+      var referenceDurationSecs: js.UndefOr[String] = js.undefined
       
-      var userVideoDurationSecs: js.UndefOr[String] = js.native
+      var userVideoDurationSecs: js.UndefOr[String] = js.undefined
     }
     object ClaimMatchInfoTotalMatch {
       
@@ -2361,10 +2331,9 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimOrigin extends StObject {
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
     }
     object ClaimOrigin {
       
@@ -2385,18 +2354,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimSearchResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[ClaimSnippet]] = js.native
+      var items: js.UndefOr[js.Array[ClaimSnippet]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
       
-      var previousPageToken: js.UndefOr[String] = js.native
+      var previousPageToken: js.UndefOr[String] = js.undefined
     }
     object ClaimSearchResponse {
       
@@ -2444,34 +2412,33 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimSnippet extends StObject {
       
-      var assetId: js.UndefOr[String] = js.native
+      var assetId: js.UndefOr[String] = js.undefined
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var isPartnerUploaded: js.UndefOr[Boolean] = js.native
+      var isPartnerUploaded: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var origin: js.UndefOr[ClaimSnippetOrigin] = js.native
+      var origin: js.UndefOr[ClaimSnippetOrigin] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var thirdPartyClaim: js.UndefOr[Boolean] = js.native
+      var thirdPartyClaim: js.UndefOr[Boolean] = js.undefined
       
-      var timeCreated: js.UndefOr[String] = js.native
+      var timeCreated: js.UndefOr[String] = js.undefined
       
-      var timeStatusLastModified: js.UndefOr[String] = js.native
+      var timeStatusLastModified: js.UndefOr[String] = js.undefined
       
-      var videoId: js.UndefOr[String] = js.native
+      var videoId: js.UndefOr[String] = js.undefined
       
-      var videoTitle: js.UndefOr[String] = js.native
+      var videoTitle: js.UndefOr[String] = js.undefined
       
-      var videoViews: js.UndefOr[String] = js.native
+      var videoViews: js.UndefOr[String] = js.undefined
     }
     object ClaimSnippet {
       
@@ -2564,10 +2531,9 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimSnippetOrigin extends StObject {
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
     }
     object ClaimSnippetOrigin {
       
@@ -2588,16 +2554,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ClaimedVideoDefaults extends StObject {
       
-      var autoGeneratedBreaks: js.UndefOr[Boolean] = js.native
+      var autoGeneratedBreaks: js.UndefOr[Boolean] = js.undefined
       
-      var channelOverride: js.UndefOr[Boolean] = js.native
+      var channelOverride: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var newVideoDefaults: js.UndefOr[js.Array[String]] = js.native
+      var newVideoDefaults: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ClaimedVideoDefaults {
       
@@ -2639,20 +2604,19 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Conditions extends StObject {
       
-      var contentMatchType: js.UndefOr[js.Array[String]] = js.native
+      var contentMatchType: js.UndefOr[js.Array[String]] = js.undefined
       
-      var matchDuration: js.UndefOr[js.Array[IntervalCondition]] = js.native
+      var matchDuration: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
       
-      var matchPercent: js.UndefOr[js.Array[IntervalCondition]] = js.native
+      var matchPercent: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
       
-      var referenceDuration: js.UndefOr[js.Array[IntervalCondition]] = js.native
+      var referenceDuration: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
       
-      var referencePercent: js.UndefOr[js.Array[IntervalCondition]] = js.native
+      var referencePercent: js.UndefOr[js.Array[IntervalCondition]] = js.undefined
       
-      var requiredTerritories: js.UndefOr[TerritoryCondition] = js.native
+      var requiredTerritories: js.UndefOr[TerritoryCondition] = js.undefined
     }
     object Conditions {
       
@@ -2718,12 +2682,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ConflictingOwnership extends StObject {
       
-      var owner: js.UndefOr[String] = js.native
+      var owner: js.UndefOr[String] = js.undefined
       
-      var ratio: js.UndefOr[Double] = js.native
+      var ratio: js.UndefOr[Double] = js.undefined
     }
     object ConflictingOwnership {
       
@@ -2750,22 +2713,21 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ContentOwner extends StObject {
       
-      var conflictNotificationEmail: js.UndefOr[String] = js.native
+      var conflictNotificationEmail: js.UndefOr[String] = js.undefined
       
-      var displayName: js.UndefOr[String] = js.native
+      var displayName: js.UndefOr[String] = js.undefined
       
-      var disputeNotificationEmails: js.UndefOr[js.Array[String]] = js.native
+      var disputeNotificationEmails: js.UndefOr[js.Array[String]] = js.undefined
       
-      var fingerprintReportNotificationEmails: js.UndefOr[js.Array[String]] = js.native
+      var fingerprintReportNotificationEmails: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var primaryNotificationEmails: js.UndefOr[js.Array[String]] = js.native
+      var primaryNotificationEmails: js.UndefOr[js.Array[String]] = js.undefined
     }
     object ContentOwner {
       
@@ -2831,16 +2793,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ContentOwnerAdvertisingOption extends StObject {
       
-      var allowedOptions: js.UndefOr[AllowedAdvertisingOptions] = js.native
+      var allowedOptions: js.UndefOr[AllowedAdvertisingOptions] = js.undefined
       
-      var claimedVideoOptions: js.UndefOr[ClaimedVideoDefaults] = js.native
+      var claimedVideoOptions: js.UndefOr[ClaimedVideoDefaults] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ContentOwnerAdvertisingOption {
       
@@ -2879,12 +2840,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ContentOwnerListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[ContentOwner]] = js.native
+      var items: js.UndefOr[js.Array[ContentOwner]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object ContentOwnerListResponse {
       
@@ -2914,12 +2874,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait CountriesRestriction extends StObject {
       
-      var adFormats: js.UndefOr[js.Array[String]] = js.native
+      var adFormats: js.UndefOr[js.Array[String]] = js.undefined
       
-      var territories: js.UndefOr[js.Array[String]] = js.native
+      var territories: js.UndefOr[js.Array[String]] = js.undefined
     }
     object CountriesRestriction {
       
@@ -2952,16 +2911,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait CuepointSettings extends StObject {
       
-      var cueType: js.UndefOr[String] = js.native
+      var cueType: js.UndefOr[String] = js.undefined
       
-      var durationSecs: js.UndefOr[Double] = js.native
+      var durationSecs: js.UndefOr[Double] = js.undefined
       
-      var offsetTimeMs: js.UndefOr[String] = js.native
+      var offsetTimeMs: js.UndefOr[String] = js.undefined
       
-      var walltime: js.UndefOr[String] = js.native
+      var walltime: js.UndefOr[String] = js.undefined
     }
     object CuepointSettings {
       
@@ -3000,14 +2958,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Date extends StObject {
       
-      var day: js.UndefOr[Double] = js.native
+      var day: js.UndefOr[Double] = js.undefined
       
-      var month: js.UndefOr[Double] = js.native
+      var month: js.UndefOr[Double] = js.undefined
       
-      var year: js.UndefOr[Double] = js.native
+      var year: js.UndefOr[Double] = js.undefined
     }
     object Date {
       
@@ -3040,14 +2997,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait DateRange extends StObject {
       
-      var end: js.UndefOr[Date] = js.native
+      var end: js.UndefOr[Date] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var start: js.UndefOr[Date] = js.native
+      var start: js.UndefOr[Date] = js.undefined
     }
     object DateRange {
       
@@ -3080,16 +3036,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ExcludedInterval extends StObject {
       
-      var high: js.UndefOr[Double] = js.native
+      var high: js.UndefOr[Double] = js.undefined
       
-      var low: js.UndefOr[Double] = js.native
+      var low: js.UndefOr[Double] = js.undefined
       
-      var origin: js.UndefOr[String] = js.native
+      var origin: js.UndefOr[String] = js.undefined
       
-      var timeCreated: js.UndefOr[String] = js.native
+      var timeCreated: js.UndefOr[String] = js.undefined
     }
     object ExcludedInterval {
       
@@ -3128,12 +3083,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait IntervalCondition extends StObject {
       
-      var high: js.UndefOr[Double] = js.native
+      var high: js.UndefOr[Double] = js.undefined
       
-      var low: js.UndefOr[Double] = js.native
+      var low: js.UndefOr[Double] = js.undefined
     }
     object IntervalCondition {
       
@@ -3160,16 +3114,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait LiveCuepoint extends StObject {
       
-      var broadcastId: js.UndefOr[String] = js.native
+      var broadcastId: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var settings: js.UndefOr[CuepointSettings] = js.native
+      var settings: js.UndefOr[CuepointSettings] = js.undefined
     }
     object LiveCuepoint {
       
@@ -3208,14 +3161,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait MatchSegment extends StObject {
       
-      var channel: js.UndefOr[String] = js.native
+      var channel: js.UndefOr[String] = js.undefined
       
-      var reference_segment: js.UndefOr[Segment] = js.native
+      var reference_segment: js.UndefOr[Segment] = js.undefined
       
-      var video_segment: js.UndefOr[Segment] = js.native
+      var video_segment: js.UndefOr[Segment] = js.undefined
     }
     object MatchSegment {
       
@@ -3248,86 +3200,85 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Metadata extends StObject {
       
-      var actor: js.UndefOr[js.Array[String]] = js.native
+      var actor: js.UndefOr[js.Array[String]] = js.undefined
       
-      var album: js.UndefOr[String] = js.native
+      var album: js.UndefOr[String] = js.undefined
       
-      var artist: js.UndefOr[js.Array[String]] = js.native
+      var artist: js.UndefOr[js.Array[String]] = js.undefined
       
-      var broadcaster: js.UndefOr[js.Array[String]] = js.native
+      var broadcaster: js.UndefOr[js.Array[String]] = js.undefined
       
-      var category: js.UndefOr[String] = js.native
+      var category: js.UndefOr[String] = js.undefined
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var copyrightDate: js.UndefOr[Date] = js.native
+      var copyrightDate: js.UndefOr[Date] = js.undefined
       
-      var customId: js.UndefOr[String] = js.native
+      var customId: js.UndefOr[String] = js.undefined
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var director: js.UndefOr[js.Array[String]] = js.native
+      var director: js.UndefOr[js.Array[String]] = js.undefined
       
-      var eidr: js.UndefOr[String] = js.native
+      var eidr: js.UndefOr[String] = js.undefined
       
-      var endYear: js.UndefOr[Double] = js.native
+      var endYear: js.UndefOr[Double] = js.undefined
       
-      var episodeNumber: js.UndefOr[String] = js.native
+      var episodeNumber: js.UndefOr[String] = js.undefined
       
-      var episodesAreUntitled: js.UndefOr[Boolean] = js.native
+      var episodesAreUntitled: js.UndefOr[Boolean] = js.undefined
       
-      var genre: js.UndefOr[js.Array[String]] = js.native
+      var genre: js.UndefOr[js.Array[String]] = js.undefined
       
-      var grid: js.UndefOr[String] = js.native
+      var grid: js.UndefOr[String] = js.undefined
       
-      var hfa: js.UndefOr[String] = js.native
+      var hfa: js.UndefOr[String] = js.undefined
       
-      var infoUrl: js.UndefOr[String] = js.native
+      var infoUrl: js.UndefOr[String] = js.undefined
       
-      var isan: js.UndefOr[String] = js.native
+      var isan: js.UndefOr[String] = js.undefined
       
-      var isrc: js.UndefOr[String] = js.native
+      var isrc: js.UndefOr[String] = js.undefined
       
-      var iswc: js.UndefOr[String] = js.native
+      var iswc: js.UndefOr[String] = js.undefined
       
-      var keyword: js.UndefOr[js.Array[String]] = js.native
+      var keyword: js.UndefOr[js.Array[String]] = js.undefined
       
-      var label: js.UndefOr[String] = js.native
+      var label: js.UndefOr[String] = js.undefined
       
-      var notes: js.UndefOr[String] = js.native
+      var notes: js.UndefOr[String] = js.undefined
       
-      var originalReleaseMedium: js.UndefOr[String] = js.native
+      var originalReleaseMedium: js.UndefOr[String] = js.undefined
       
-      var producer: js.UndefOr[js.Array[String]] = js.native
+      var producer: js.UndefOr[js.Array[String]] = js.undefined
       
-      var ratings: js.UndefOr[js.Array[Rating]] = js.native
+      var ratings: js.UndefOr[js.Array[Rating]] = js.undefined
       
-      var releaseDate: js.UndefOr[Date] = js.native
+      var releaseDate: js.UndefOr[Date] = js.undefined
       
-      var seasonNumber: js.UndefOr[String] = js.native
+      var seasonNumber: js.UndefOr[String] = js.undefined
       
-      var showCustomId: js.UndefOr[String] = js.native
+      var showCustomId: js.UndefOr[String] = js.undefined
       
-      var showTitle: js.UndefOr[String] = js.native
+      var showTitle: js.UndefOr[String] = js.undefined
       
-      var spokenLanguage: js.UndefOr[String] = js.native
+      var spokenLanguage: js.UndefOr[String] = js.undefined
       
-      var startYear: js.UndefOr[Double] = js.native
+      var startYear: js.UndefOr[Double] = js.undefined
       
-      var subtitledLanguage: js.UndefOr[js.Array[String]] = js.native
+      var subtitledLanguage: js.UndefOr[js.Array[String]] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
       
-      var tmsId: js.UndefOr[String] = js.native
+      var tmsId: js.UndefOr[String] = js.undefined
       
-      var totalEpisodesExpected: js.UndefOr[Double] = js.native
+      var totalEpisodesExpected: js.UndefOr[Double] = js.undefined
       
-      var upc: js.UndefOr[String] = js.native
+      var upc: js.UndefOr[String] = js.undefined
       
-      var writer: js.UndefOr[js.Array[String]] = js.native
+      var writer: js.UndefOr[js.Array[String]] = js.undefined
     }
     object Metadata {
       
@@ -3606,16 +3557,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait MetadataHistory extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var metadata: js.UndefOr[Metadata] = js.native
+      var metadata: js.UndefOr[Metadata] = js.undefined
       
-      var origination: js.UndefOr[Origination] = js.native
+      var origination: js.UndefOr[Origination] = js.undefined
       
-      var timeProvided: js.UndefOr[String] = js.native
+      var timeProvided: js.UndefOr[String] = js.undefined
     }
     object MetadataHistory {
       
@@ -3654,12 +3604,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait MetadataHistoryListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[MetadataHistory]] = js.native
+      var items: js.UndefOr[js.Array[MetadataHistory]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object MetadataHistoryListResponse {
       
@@ -3689,48 +3638,47 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Order extends StObject {
       
-      var availGroupId: js.UndefOr[String] = js.native
+      var availGroupId: js.UndefOr[String] = js.undefined
       
-      var channelId: js.UndefOr[String] = js.native
+      var channelId: js.UndefOr[String] = js.undefined
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var country: js.UndefOr[String] = js.native
+      var country: js.UndefOr[String] = js.undefined
       
-      var customId: js.UndefOr[String] = js.native
+      var customId: js.UndefOr[String] = js.undefined
       
-      var dvdReleaseDate: js.UndefOr[Date] = js.native
+      var dvdReleaseDate: js.UndefOr[Date] = js.undefined
       
-      var estDates: js.UndefOr[DateRange] = js.native
+      var estDates: js.UndefOr[DateRange] = js.undefined
       
-      var events: js.UndefOr[js.Array[StateCompleted]] = js.native
+      var events: js.UndefOr[js.Array[StateCompleted]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var movie: js.UndefOr[String] = js.native
+      var movie: js.UndefOr[String] = js.undefined
       
-      var originalReleaseDate: js.UndefOr[Date] = js.native
+      var originalReleaseDate: js.UndefOr[Date] = js.undefined
       
-      var priority: js.UndefOr[String] = js.native
+      var priority: js.UndefOr[String] = js.undefined
       
-      var productionHouse: js.UndefOr[String] = js.native
+      var productionHouse: js.UndefOr[String] = js.undefined
       
-      var purchaseOrder: js.UndefOr[String] = js.native
+      var purchaseOrder: js.UndefOr[String] = js.undefined
       
-      var requirements: js.UndefOr[Requirements] = js.native
+      var requirements: js.UndefOr[Requirements] = js.undefined
       
-      var show: js.UndefOr[ShowDetails] = js.native
+      var show: js.UndefOr[ShowDetails] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var videoId: js.UndefOr[String] = js.native
+      var videoId: js.UndefOr[String] = js.undefined
       
-      var vodDates: js.UndefOr[DateRange] = js.native
+      var vodDates: js.UndefOr[DateRange] = js.undefined
     }
     object Order {
       
@@ -3868,18 +3816,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait OrderListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Order]] = js.native
+      var items: js.UndefOr[js.Array[Order]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
       
-      var previousPageToken: js.UndefOr[String] = js.native
+      var previousPageToken: js.UndefOr[String] = js.undefined
     }
     object OrderListResponse {
       
@@ -3927,12 +3874,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Origination extends StObject {
       
-      var owner: js.UndefOr[String] = js.native
+      var owner: js.UndefOr[String] = js.undefined
       
-      var source: js.UndefOr[String] = js.native
+      var source: js.UndefOr[String] = js.undefined
     }
     object Origination {
       
@@ -3959,18 +3905,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait OwnershipConflicts extends StObject {
       
-      var general: js.UndefOr[js.Array[TerritoryConflicts]] = js.native
+      var general: js.UndefOr[js.Array[TerritoryConflicts]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mechanical: js.UndefOr[js.Array[TerritoryConflicts]] = js.native
+      var mechanical: js.UndefOr[js.Array[TerritoryConflicts]] = js.undefined
       
-      var performance: js.UndefOr[js.Array[TerritoryConflicts]] = js.native
+      var performance: js.UndefOr[js.Array[TerritoryConflicts]] = js.undefined
       
-      var synchronization: js.UndefOr[js.Array[TerritoryConflicts]] = js.native
+      var synchronization: js.UndefOr[js.Array[TerritoryConflicts]] = js.undefined
     }
     object OwnershipConflicts {
       
@@ -4027,12 +3972,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait OwnershipHistoryListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[RightsOwnershipHistory]] = js.native
+      var items: js.UndefOr[js.Array[RightsOwnershipHistory]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object OwnershipHistoryListResponse {
       
@@ -4062,30 +4006,29 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Package extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var customIds: js.UndefOr[js.Array[String]] = js.native
+      var customIds: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var statusReports: js.UndefOr[js.Array[StatusReport]] = js.native
+      var statusReports: js.UndefOr[js.Array[StatusReport]] = js.undefined
       
-      var timeCreated: js.UndefOr[String] = js.native
+      var timeCreated: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
       
-      var uploaderName: js.UndefOr[String] = js.native
+      var uploaderName: js.UndefOr[String] = js.undefined
     }
     object Package {
       
@@ -4172,16 +4115,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait PackageInsertResponse extends StObject {
       
-      var errors: js.UndefOr[js.Array[ValidateError]] = js.native
+      var errors: js.UndefOr[js.Array[ValidateError]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var resource: js.UndefOr[Package] = js.native
+      var resource: js.UndefOr[Package] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object PackageInsertResponse {
       
@@ -4223,14 +4165,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait PageInfo extends StObject {
       
-      var resultsPerPage: js.UndefOr[Double] = js.native
+      var resultsPerPage: js.UndefOr[Double] = js.undefined
       
-      var startIndex: js.UndefOr[Double] = js.native
+      var startIndex: js.UndefOr[Double] = js.undefined
       
-      var totalResults: js.UndefOr[Double] = js.native
+      var totalResults: js.UndefOr[Double] = js.undefined
     }
     object PageInfo {
       
@@ -4263,20 +4204,19 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Policy extends StObject {
       
-      var description: js.UndefOr[String] = js.native
+      var description: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
       
-      var rules: js.UndefOr[js.Array[PolicyRule]] = js.native
+      var rules: js.UndefOr[js.Array[PolicyRule]] = js.undefined
       
-      var timeUpdated: js.UndefOr[String] = js.native
+      var timeUpdated: js.UndefOr[String] = js.undefined
     }
     object Policy {
       
@@ -4330,12 +4270,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait PolicyList extends StObject {
       
-      var items: js.UndefOr[js.Array[Policy]] = js.native
+      var items: js.UndefOr[js.Array[Policy]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object PolicyList {
       
@@ -4365,14 +4304,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait PolicyRule extends StObject {
       
-      var action: js.UndefOr[String] = js.native
+      var action: js.UndefOr[String] = js.undefined
       
-      var conditions: js.UndefOr[Conditions] = js.native
+      var conditions: js.UndefOr[Conditions] = js.undefined
       
-      var subaction: js.UndefOr[js.Array[String]] = js.native
+      var subaction: js.UndefOr[js.Array[String]] = js.undefined
     }
     object PolicyRule {
       
@@ -4408,10 +4346,9 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait PromotedContent extends StObject {
       
-      var link: js.UndefOr[js.Array[CampaignTargetLink]] = js.native
+      var link: js.UndefOr[js.Array[CampaignTargetLink]] = js.undefined
     }
     object PromotedContent {
       
@@ -4435,18 +4372,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Publisher extends StObject {
       
-      var caeNumber: js.UndefOr[String] = js.native
+      var caeNumber: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var ipiNumber: js.UndefOr[String] = js.native
+      var ipiNumber: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var name: js.UndefOr[String] = js.native
+      var name: js.UndefOr[String] = js.undefined
     }
     object Publisher {
       
@@ -4491,16 +4427,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait PublisherList extends StObject {
       
-      var items: js.UndefOr[js.Array[Publisher]] = js.native
+      var items: js.UndefOr[js.Array[Publisher]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
     }
     object PublisherList {
       
@@ -4542,12 +4477,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Rating extends StObject {
       
-      var rating: js.UndefOr[String] = js.native
+      var rating: js.UndefOr[String] = js.undefined
       
-      var ratingSystem: js.UndefOr[String] = js.native
+      var ratingSystem: js.UndefOr[String] = js.undefined
     }
     object Rating {
       
@@ -4574,43 +4508,42 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Reference extends StObject {
       
-      var assetId: js.UndefOr[String] = js.native
+      var assetId: js.UndefOr[String] = js.undefined
       
-      var audioswapEnabled: js.UndefOr[Boolean] = js.native
+      var audioswapEnabled: js.UndefOr[Boolean] = js.undefined
       
-      var claimId: js.UndefOr[String] = js.native
+      var claimId: js.UndefOr[String] = js.undefined
       
-      var contentType: js.UndefOr[String] = js.native
+      var contentType: js.UndefOr[String] = js.undefined
       
-      var duplicateLeader: js.UndefOr[String] = js.native
+      var duplicateLeader: js.UndefOr[String] = js.undefined
       
-      var excludedIntervals: js.UndefOr[js.Array[ExcludedInterval]] = js.native
+      var excludedIntervals: js.UndefOr[js.Array[ExcludedInterval]] = js.undefined
       
-      var fpDirect: js.UndefOr[Boolean] = js.native
+      var fpDirect: js.UndefOr[Boolean] = js.undefined
       
       @JSName("hashCode")
-      var hashCode_FReference: js.UndefOr[String] = js.native
+      var hashCode_FReference: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var ignoreFpMatch: js.UndefOr[Boolean] = js.native
+      var ignoreFpMatch: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var length: js.UndefOr[Double] = js.native
+      var length: js.UndefOr[Double] = js.undefined
       
-      var origination: js.UndefOr[Origination] = js.native
+      var origination: js.UndefOr[Origination] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var statusReason: js.UndefOr[String] = js.native
+      var statusReason: js.UndefOr[String] = js.undefined
       
-      var urgent: js.UndefOr[Boolean] = js.native
+      var urgent: js.UndefOr[Boolean] = js.undefined
       
-      var videoId: js.UndefOr[String] = js.native
+      var videoId: js.UndefOr[String] = js.undefined
     }
     object Reference {
       
@@ -4730,22 +4663,21 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ReferenceConflict extends StObject {
       
-      var conflictingReferenceId: js.UndefOr[String] = js.native
+      var conflictingReferenceId: js.UndefOr[String] = js.undefined
       
-      var expiryTime: js.UndefOr[String] = js.native
+      var expiryTime: js.UndefOr[String] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var matches: js.UndefOr[js.Array[ReferenceConflictMatch]] = js.native
+      var matches: js.UndefOr[js.Array[ReferenceConflictMatch]] = js.undefined
       
-      var originalReferenceId: js.UndefOr[String] = js.native
+      var originalReferenceId: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object ReferenceConflict {
       
@@ -4805,16 +4737,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ReferenceConflictListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[ReferenceConflict]] = js.native
+      var items: js.UndefOr[js.Array[ReferenceConflict]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
     }
     object ReferenceConflictListResponse {
       
@@ -4856,16 +4787,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ReferenceConflictMatch extends StObject {
       
-      var conflicting_reference_offset_ms: js.UndefOr[String] = js.native
+      var conflicting_reference_offset_ms: js.UndefOr[String] = js.undefined
       
-      var length_ms: js.UndefOr[String] = js.native
+      var length_ms: js.UndefOr[String] = js.undefined
       
-      var original_reference_offset_ms: js.UndefOr[String] = js.native
+      var original_reference_offset_ms: js.UndefOr[String] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object ReferenceConflictMatch {
       
@@ -4904,16 +4834,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ReferenceListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Reference]] = js.native
+      var items: js.UndefOr[js.Array[Reference]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
     }
     object ReferenceListResponse {
       
@@ -4955,20 +4884,19 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Requirements extends StObject {
       
-      var caption: js.UndefOr[Boolean] = js.native
+      var caption: js.UndefOr[Boolean] = js.undefined
       
-      var hdTranscode: js.UndefOr[Boolean] = js.native
+      var hdTranscode: js.UndefOr[Boolean] = js.undefined
       
-      var posterArt: js.UndefOr[Boolean] = js.native
+      var posterArt: js.UndefOr[Boolean] = js.undefined
       
-      var spotlightArt: js.UndefOr[Boolean] = js.native
+      var spotlightArt: js.UndefOr[Boolean] = js.undefined
       
-      var spotlightReview: js.UndefOr[Boolean] = js.native
+      var spotlightReview: js.UndefOr[Boolean] = js.undefined
       
-      var trailer: js.UndefOr[Boolean] = js.native
+      var trailer: js.UndefOr[Boolean] = js.undefined
     }
     object Requirements {
       
@@ -5019,18 +4947,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait RightsOwnership extends StObject {
       
-      var general: js.UndefOr[js.Array[TerritoryOwners]] = js.native
+      var general: js.UndefOr[js.Array[TerritoryOwners]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var mechanical: js.UndefOr[js.Array[TerritoryOwners]] = js.native
+      var mechanical: js.UndefOr[js.Array[TerritoryOwners]] = js.undefined
       
-      var performance: js.UndefOr[js.Array[TerritoryOwners]] = js.native
+      var performance: js.UndefOr[js.Array[TerritoryOwners]] = js.undefined
       
-      var synchronization: js.UndefOr[js.Array[TerritoryOwners]] = js.native
+      var synchronization: js.UndefOr[js.Array[TerritoryOwners]] = js.undefined
     }
     object RightsOwnership {
       
@@ -5087,16 +5014,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait RightsOwnershipHistory extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var origination: js.UndefOr[Origination] = js.native
+      var origination: js.UndefOr[Origination] = js.undefined
       
-      var ownership: js.UndefOr[RightsOwnership] = js.native
+      var ownership: js.UndefOr[RightsOwnership] = js.undefined
       
-      var timeProvided: js.UndefOr[String] = js.native
+      var timeProvided: js.UndefOr[String] = js.undefined
     }
     object RightsOwnershipHistory {
       
@@ -5135,14 +5061,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Segment extends StObject {
       
-      var duration: js.UndefOr[String] = js.native
+      var duration: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var start: js.UndefOr[String] = js.native
+      var start: js.UndefOr[String] = js.undefined
     }
     object Segment {
       
@@ -5175,16 +5100,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ShowDetails extends StObject {
       
-      var episodeNumber: js.UndefOr[String] = js.native
+      var episodeNumber: js.UndefOr[String] = js.undefined
       
-      var episodeTitle: js.UndefOr[String] = js.native
+      var episodeTitle: js.UndefOr[String] = js.undefined
       
-      var seasonNumber: js.UndefOr[String] = js.native
+      var seasonNumber: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object ShowDetails {
       
@@ -5223,18 +5147,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait SpreadsheetTemplate extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var templateContent: js.UndefOr[String] = js.native
+      var templateContent: js.UndefOr[String] = js.undefined
       
-      var templateName: js.UndefOr[String] = js.native
+      var templateName: js.UndefOr[String] = js.undefined
       
-      var templateType: js.UndefOr[String] = js.native
+      var templateType: js.UndefOr[String] = js.undefined
     }
     object SpreadsheetTemplate {
       
@@ -5279,14 +5202,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait SpreadsheetTemplateListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[SpreadsheetTemplate]] = js.native
+      var items: js.UndefOr[js.Array[SpreadsheetTemplate]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object SpreadsheetTemplateListResponse {
       
@@ -5322,12 +5244,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait StateCompleted extends StObject {
       
-      var state: js.UndefOr[String] = js.native
+      var state: js.UndefOr[String] = js.undefined
       
-      var timeCompleted: js.UndefOr[String] = js.native
+      var timeCompleted: js.UndefOr[String] = js.undefined
     }
     object StateCompleted {
       
@@ -5354,12 +5275,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait StatusReport extends StObject {
       
-      var statusContent: js.UndefOr[String] = js.native
+      var statusContent: js.UndefOr[String] = js.undefined
       
-      var statusFileName: js.UndefOr[String] = js.native
+      var statusFileName: js.UndefOr[String] = js.undefined
     }
     object StatusReport {
       
@@ -5386,12 +5306,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait TerritoryCondition extends StObject {
       
-      var territories: js.UndefOr[js.Array[String]] = js.native
+      var territories: js.UndefOr[js.Array[String]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object TerritoryCondition {
       
@@ -5421,12 +5340,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait TerritoryConflicts extends StObject {
       
-      var conflictingOwnership: js.UndefOr[js.Array[ConflictingOwnership]] = js.native
+      var conflictingOwnership: js.UndefOr[js.Array[ConflictingOwnership]] = js.undefined
       
-      var territory: js.UndefOr[String] = js.native
+      var territory: js.UndefOr[String] = js.undefined
     }
     object TerritoryConflicts {
       
@@ -5456,18 +5374,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait TerritoryOwners extends StObject {
       
-      var owner: js.UndefOr[String] = js.native
+      var owner: js.UndefOr[String] = js.undefined
       
-      var publisher: js.UndefOr[String] = js.native
+      var publisher: js.UndefOr[String] = js.undefined
       
-      var ratio: js.UndefOr[Double] = js.native
+      var ratio: js.UndefOr[Double] = js.undefined
       
-      var territories: js.UndefOr[js.Array[String]] = js.native
+      var territories: js.UndefOr[js.Array[String]] = js.undefined
       
-      var `type`: js.UndefOr[String] = js.native
+      var `type`: js.UndefOr[String] = js.undefined
     }
     object TerritoryOwners {
       
@@ -5515,12 +5432,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Uploader extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var uploaderName: js.UndefOr[String] = js.native
+      var uploaderName: js.UndefOr[String] = js.undefined
     }
     object Uploader {
       
@@ -5547,12 +5463,11 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait UploaderListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Uploader]] = js.native
+      var items: js.UndefOr[js.Array[Uploader]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object UploaderListResponse {
       
@@ -5582,14 +5497,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ValidateAsyncRequest extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var uploaderName: js.UndefOr[String] = js.native
+      var uploaderName: js.UndefOr[String] = js.undefined
     }
     object ValidateAsyncRequest {
       
@@ -5622,14 +5536,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ValidateAsyncResponse extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
       
-      var validationId: js.UndefOr[String] = js.native
+      var validationId: js.UndefOr[String] = js.undefined
     }
     object ValidateAsyncResponse {
       
@@ -5662,20 +5575,19 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ValidateError extends StObject {
       
-      var columnName: js.UndefOr[String] = js.native
+      var columnName: js.UndefOr[String] = js.undefined
       
-      var columnNumber: js.UndefOr[Double] = js.native
+      var columnNumber: js.UndefOr[Double] = js.undefined
       
-      var lineNumber: js.UndefOr[Double] = js.native
+      var lineNumber: js.UndefOr[Double] = js.undefined
       
-      var message: js.UndefOr[String] = js.native
+      var message: js.UndefOr[String] = js.undefined
       
-      var messageCode: js.UndefOr[Double] = js.native
+      var messageCode: js.UndefOr[Double] = js.undefined
       
-      var severity: js.UndefOr[String] = js.native
+      var severity: js.UndefOr[String] = js.undefined
     }
     object ValidateError {
       
@@ -5726,16 +5638,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ValidateRequest extends StObject {
       
-      var content: js.UndefOr[String] = js.native
+      var content: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
-      var uploaderName: js.UndefOr[String] = js.native
+      var uploaderName: js.UndefOr[String] = js.undefined
     }
     object ValidateRequest {
       
@@ -5774,14 +5685,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ValidateResponse extends StObject {
       
-      var errors: js.UndefOr[js.Array[ValidateError]] = js.native
+      var errors: js.UndefOr[js.Array[ValidateError]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object ValidateResponse {
       
@@ -5817,14 +5727,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ValidateStatusRequest extends StObject {
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var locale: js.UndefOr[String] = js.native
+      var locale: js.UndefOr[String] = js.undefined
       
-      var validationId: js.UndefOr[String] = js.native
+      var validationId: js.UndefOr[String] = js.undefined
     }
     object ValidateStatusRequest {
       
@@ -5857,16 +5766,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait ValidateStatusResponse extends StObject {
       
-      var errors: js.UndefOr[js.Array[ValidateError]] = js.native
+      var errors: js.UndefOr[js.Array[ValidateError]] = js.undefined
       
-      var isMetadataOnly: js.UndefOr[Boolean] = js.native
+      var isMetadataOnly: js.UndefOr[Boolean] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var status: js.UndefOr[String] = js.native
+      var status: js.UndefOr[String] = js.undefined
     }
     object ValidateStatusResponse {
       
@@ -5908,26 +5816,25 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait VideoAdvertisingOption extends StObject {
       
-      var adBreaks: js.UndefOr[js.Array[AdBreak]] = js.native
+      var adBreaks: js.UndefOr[js.Array[AdBreak]] = js.undefined
       
-      var adFormats: js.UndefOr[js.Array[String]] = js.native
+      var adFormats: js.UndefOr[js.Array[String]] = js.undefined
       
-      var autoGeneratedBreaks: js.UndefOr[Boolean] = js.native
+      var autoGeneratedBreaks: js.UndefOr[Boolean] = js.undefined
       
-      var breakPosition: js.UndefOr[js.Array[String]] = js.native
+      var breakPosition: js.UndefOr[js.Array[String]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var tpAdServerVideoId: js.UndefOr[String] = js.native
+      var tpAdServerVideoId: js.UndefOr[String] = js.undefined
       
-      var tpTargetingUrl: js.UndefOr[String] = js.native
+      var tpTargetingUrl: js.UndefOr[String] = js.undefined
       
-      var tpUrlParameters: js.UndefOr[String] = js.native
+      var tpUrlParameters: js.UndefOr[String] = js.undefined
     }
     object VideoAdvertisingOption {
       
@@ -6005,18 +5912,17 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait VideoAdvertisingOptionGetEnabledAdsResponse extends StObject {
       
-      var adBreaks: js.UndefOr[js.Array[AdBreak]] = js.native
+      var adBreaks: js.UndefOr[js.Array[AdBreak]] = js.undefined
       
-      var adsOnEmbeds: js.UndefOr[Boolean] = js.native
+      var adsOnEmbeds: js.UndefOr[Boolean] = js.undefined
       
-      var countriesRestriction: js.UndefOr[js.Array[CountriesRestriction]] = js.native
+      var countriesRestriction: js.UndefOr[js.Array[CountriesRestriction]] = js.undefined
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
     }
     object VideoAdvertisingOptionGetEnabledAdsResponse {
       
@@ -6067,14 +5973,13 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait Whitelist extends StObject {
       
-      var id: js.UndefOr[String] = js.native
+      var id: js.UndefOr[String] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var title: js.UndefOr[String] = js.native
+      var title: js.UndefOr[String] = js.undefined
     }
     object Whitelist {
       
@@ -6107,16 +6012,15 @@ object YoutubePartner {
       }
     }
     
-    @js.native
     trait WhitelistListResponse extends StObject {
       
-      var items: js.UndefOr[js.Array[Whitelist]] = js.native
+      var items: js.UndefOr[js.Array[Whitelist]] = js.undefined
       
-      var kind: js.UndefOr[String] = js.native
+      var kind: js.UndefOr[String] = js.undefined
       
-      var nextPageToken: js.UndefOr[String] = js.native
+      var nextPageToken: js.UndefOr[String] = js.undefined
       
-      var pageInfo: js.UndefOr[PageInfo] = js.native
+      var pageInfo: js.UndefOr[PageInfo] = js.undefined
     }
     object WhitelistListResponse {
       

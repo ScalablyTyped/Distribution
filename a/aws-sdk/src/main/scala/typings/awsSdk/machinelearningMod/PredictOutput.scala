@@ -2,13 +2,11 @@ package typings.awsSdk.machinelearningMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PredictOutput extends StObject {
   
-  var Prediction: js.UndefOr[typings.awsSdk.machinelearningMod.Prediction] = js.native
+  var Prediction: js.UndefOr[typings.awsSdk.machinelearningMod.Prediction] = js.undefined
 }
 object PredictOutput {
   

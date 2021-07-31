@@ -2,16 +2,14 @@ package typings.awsSdk.quicksightMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait S3Parameters extends StObject {
   
   /**
     * Location of the Amazon S3 manifest file. This is NULL if the manifest file was uploaded in the console.
     */
-  var ManifestFileLocation: typings.awsSdk.quicksightMod.ManifestFileLocation = js.native
+  var ManifestFileLocation: typings.awsSdk.quicksightMod.ManifestFileLocation
 }
 object S3Parameters {
   

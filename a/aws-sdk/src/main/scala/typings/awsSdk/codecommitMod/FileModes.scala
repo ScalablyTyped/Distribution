@@ -2,26 +2,24 @@ package typings.awsSdk.codecommitMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait FileModes extends StObject {
   
   /**
     * The file mode of a file in the base of a merge or pull request.
     */
-  var base: js.UndefOr[FileModeTypeEnum] = js.native
+  var base: js.UndefOr[FileModeTypeEnum] = js.undefined
   
   /**
     * The file mode of a file in the destination of a merge or pull request.
     */
-  var destination: js.UndefOr[FileModeTypeEnum] = js.native
+  var destination: js.UndefOr[FileModeTypeEnum] = js.undefined
   
   /**
     * The file mode of a file in the source of a merge or pull request.
     */
-  var source: js.UndefOr[FileModeTypeEnum] = js.native
+  var source: js.UndefOr[FileModeTypeEnum] = js.undefined
 }
 object FileModes {
   

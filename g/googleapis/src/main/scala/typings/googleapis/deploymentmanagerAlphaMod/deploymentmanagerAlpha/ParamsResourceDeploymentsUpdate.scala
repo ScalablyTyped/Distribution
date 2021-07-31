@@ -6,31 +6,31 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceDeploymentsUpdate extends StandardParameters {
+trait ParamsResourceDeploymentsUpdate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Sets the policy to use for creating new resources.
     */
-  var createPolicy: js.UndefOr[String] = js.native
+  var createPolicy: js.UndefOr[String] = js.undefined
   
   /**
     * Sets the policy to use for deleting resources.
     */
-  var deletePolicy: js.UndefOr[String] = js.native
+  var deletePolicy: js.UndefOr[String] = js.undefined
   
   /**
     * The name of the deployment for this request.
     */
-  var deployment: js.UndefOr[String] = js.native
+  var deployment: js.UndefOr[String] = js.undefined
   
   /**
     * If set to true, updates the deployment and creates and updates the
@@ -44,17 +44,17 @@ trait ParamsResourceDeploymentsUpdate extends StandardParameters {
     * deployment will still exist after you cancel the preview and you must
     * separately delete this deployment if you want to remove it.
     */
-  var preview: js.UndefOr[Boolean] = js.native
+  var preview: js.UndefOr[Boolean] = js.undefined
   
   /**
     * The project ID for this request.
     */
-  var project: js.UndefOr[String] = js.native
+  var project: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaDeployment] = js.native
+  var requestBody: js.UndefOr[SchemaDeployment] = js.undefined
 }
 object ParamsResourceDeploymentsUpdate {
   

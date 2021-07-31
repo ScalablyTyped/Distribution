@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.HTMLProps
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object breadcrumbMod {
@@ -34,10 +33,11 @@ object breadcrumbMod {
   trait Breadcrumb
     extends Component[BreadcrumbProps, js.Object, js.Any]
   
-  @js.native
-  trait BreadcrumbProps extends HTMLProps[Breadcrumb] {
+  trait BreadcrumbProps
+    extends StObject
+       with HTMLProps[Breadcrumb] {
     
-    var bsClass: js.UndefOr[String] = js.native
+    var bsClass: js.UndefOr[String] = js.undefined
   }
   object BreadcrumbProps {
     

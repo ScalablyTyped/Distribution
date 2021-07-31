@@ -44,7 +44,6 @@ import typings.reduxSagaCore.reduxSagaCoreStrings.RACE
 import typings.reduxSagaCore.reduxSagaCoreStrings.SELECT
 import typings.reduxSagaCore.reduxSagaCoreStrings.SET_CONTEXT
 import typings.reduxSagaCore.reduxSagaCoreStrings.TAKE
-import typings.reduxSagaCore.reduxSagaCoreStrings.apply
 import typings.reduxSagaCore.reduxSagaCoreStrings.call_
 import typings.reduxSagaCore.reduxSagaCoreStrings.cps_
 import typings.reduxSagaCore.reduxSagaCoreStrings.fork_
@@ -54,200 +53,177 @@ import typings.reduxSagaCore.typesMod.TakeableChannel
 import typings.std.Parameters
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("@redux-saga/core/effects/effects", "actionChannel")
+  @JSImport("@redux-saga/core/effects/effects", JSImport.Namespace)
   @js.native
+  val ^ : js.Any = js.native
+  
+  @scala.inline
   def actionChannel(
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
-  ): ActionChannelEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "actionChannel")
-  @js.native
+  ): ActionChannelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("actionChannel")(pattern.asInstanceOf[js.Any]).asInstanceOf[ActionChannelEffect]
+  @scala.inline
   def actionChannel(
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any,
     buffer: Buffer
-  ): ActionChannelEffect = js.native
+  ): ActionChannelEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("actionChannel")(pattern.asInstanceOf[js.Any], buffer.asInstanceOf[js.Any])).asInstanceOf[ActionChannelEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "all")
-  @js.native
-  def all[T](effects: js.Array[T]): AllEffect[T] = js.native
-  @JSImport("@redux-saga/core/effects/effects", "all")
-  @js.native
-  def all[T](effects: StringDictionary[T]): AllEffect[T] = js.native
+  @scala.inline
+  def all[T](effects: js.Array[T]): AllEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(effects.asInstanceOf[js.Any]).asInstanceOf[AllEffect[T]]
+  @scala.inline
+  def all[T](effects: StringDictionary[T]): AllEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("all")(effects.asInstanceOf[js.Any]).asInstanceOf[AllEffect[T]]
   
-  @JSImport("@redux-saga/core/effects/effects", "apply")
-  @js.native
-  def apply[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](ctx: Ctx, fn: Fn, args: Parameters[Fn]): CallEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "apply")
-  @js.native
-  def apply_Ctx_IntersectionapplyTopLevelAnyName_String[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
+  @scala.inline
+  def apply[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ apply with TopLevel[js.Any] */, Name /* <: String */](
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.apply & TopLevel[js.Any] */, Name /* <: String */](
     ctx: Ctx,
     fnName: Name,
     args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): CallEffect = js.native
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(ctx.asInstanceOf[js.Any], fnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "call")
-  @js.native
-  def call[Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  @scala.inline
+  def apply_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](ctx: Ctx, fn: Fn, args: Parameters[Fn]): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("apply")(ctx.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  
+  @scala.inline
+  def call[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): CallEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "call")
-  @js.native
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  @scala.inline
   def call[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ call_ with TopLevel[js.Any] */, Name /* <: String */](
+    */ call_ & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): CallEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "call")
-  @js.native
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  @scala.inline
   def call[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ call_ with TopLevel[js.Any] */, Name /* <: String */](
+    */ call_ & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): CallEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "call")
-  @js.native
-  def call[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  @scala.inline
+  def call[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
     ctxAndFn: ContextFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): CallEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "call")
-  @js.native
-  def call_CtxFn_ThisFunction1CtxAnyWildcard[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
+  
+  @scala.inline
+  def call_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): CallEffect = js.native
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("call")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "cancel")
-  @js.native
-  def cancel(): CancelEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "cancel")
-  @js.native
+  @scala.inline
+  def cancel(): CancelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")().asInstanceOf[CancelEffect]
+  @scala.inline
   def cancel(
     task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
-  ): CancelEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "cancel")
-  @js.native
+  ): CancelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(task.asInstanceOf[js.Any]).asInstanceOf[CancelEffect]
+  @scala.inline
   def cancel(
     tasks: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
     ]
-  ): CancelEffect = js.native
+  ): CancelEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancel")(tasks.asInstanceOf[js.Any]).asInstanceOf[CancelEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "cancelled")
-  @js.native
-  def cancelled(): CancelledEffect = js.native
+  @scala.inline
+  def cancelled(): CancelledEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cancelled")().asInstanceOf[CancelledEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "cps")
-  @js.native
-  def cps[Fn /* <: js.Function1[/* cb */ CpsCallback[_], _] */](fn: Fn): CpsEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "cps")
-  @js.native
-  def cps[Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  @scala.inline
+  def cps[Fn /* <: js.Function1[/* cb */ CpsCallback[js.Any], js.Any] */](fn: Fn): CpsEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("cps")(fn.asInstanceOf[js.Any]).asInstanceOf[CpsEffect]
+  @scala.inline
+  def cps[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
-  ): CpsEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "cps")
-  @js.native
+  ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
+  @scala.inline
   def cps[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): void}
-    */ cps_ with TopLevel[js.Any] */, Name /* <: String */](
+    */ cps_ & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: Fn[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: CpsFunctionParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): CpsEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "cps")
-  @js.native
+  ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
+  @scala.inline
   def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
-  ): CpsEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "cps")
-  @js.native
+  ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
+  @scala.inline
   def cps[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, Unit] */](
     ctxAndFn: ContextCtx[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Fn> is not an array type */ args: CpsFunctionParameters[Fn]
-  ): CpsEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "cps")
-  @js.native
+  ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
+  
+  @scala.inline
   def cps_Ctx_Intersectioncps_TopLevelAnyName_String[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): void}
-    */ cps_ with TopLevel[js.Any] */, Name /* <: String */](
+    */ cps_ & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type CpsFunctionParameters<Ctx[Name]> is not an array type */ args: CpsFunctionParameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): CpsEffect = js.native
+  ): CpsEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("cps")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CpsEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "debounce")
-  @js.native
-  def debounce[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, _]): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "debounce")
-  @js.native
+  @scala.inline
+  def debounce[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def debounce[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
     ms: Double,
     pattern: P,
     worker: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      _
+      js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "debounce")
-  @js.native
-  def debounce[A /* <: Action[_] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def debounce[A /* <: Action[js.Any] */](
     ms: Double,
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, _]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "debounce")
-  @js.native
-  def debounce[T, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    worker: js.Function1[/* action */ A, js.Any]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def debounce[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     ms: Double,
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "debounce")
-  @js.native
-  def debounce[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def debounce[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     ms: Double,
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
       Fn
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "debounce")
-  @js.native
-  def debounce[A /* <: Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def debounce[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     ms: Double,
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
-  ): ForkEffect = js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("debounce")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "delay")
-  @js.native
-  def delay[T](ms: Double): CallEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "delay")
-  @js.native
-  def delay[T](ms: Double, `val`: T): CallEffect = js.native
+  @scala.inline
+  def delay[T](ms: Double): CallEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any]).asInstanceOf[CallEffect]
+  @scala.inline
+  def delay[T](ms: Double, `val`: T): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("delay")(ms.asInstanceOf[js.Any], `val`.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
   object effectTypes {
     
@@ -347,379 +323,322 @@ object mod {
     def TAKE_=(x: TAKE): Unit = ^.asInstanceOf[js.Dynamic].updateDynamic("TAKE")(x.asInstanceOf[js.Any])
   }
   
-  @JSImport("@redux-saga/core/effects/effects", "flush")
-  @js.native
-  def flush[T](channel: FlushableChannel[T]): FlushEffect[T] = js.native
+  @scala.inline
+  def flush[T](channel: FlushableChannel[T]): FlushEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("flush")(channel.asInstanceOf[js.Any]).asInstanceOf[FlushEffect[T]]
   
-  @JSImport("@redux-saga/core/effects/effects", "fork")
-  @js.native
-  def fork[Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  @scala.inline
+  def fork[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "fork")
-  @js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def fork[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ fork_ with TopLevel[js.Any] */, Name /* <: String */](
+    */ fork_ & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "fork")
-  @js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def fork[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ fork_ with TopLevel[js.Any] */, Name /* <: String */](
+    */ fork_ & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "fork")
-  @js.native
-  def fork[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def fork[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
     ctxAndFn: ContextFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "fork")
-  @js.native
-  def fork_CtxFn_ThisFunction1CtxAnyWildcard[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  
+  @scala.inline
+  def fork_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): ForkEffect = js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("fork")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "getContext")
-  @js.native
-  def getContext(prop: String): GetContextEffect = js.native
+  @scala.inline
+  def getContext(prop: String): GetContextEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("getContext")(prop.asInstanceOf[js.Any]).asInstanceOf[GetContextEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "join")
-  @js.native
+  @scala.inline
   def join(
     task: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
-  ): JoinEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "join")
-  @js.native
+  ): JoinEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(task.asInstanceOf[js.Any]).asInstanceOf[JoinEffect]
+  @scala.inline
   def join(
     tasks: js.Array[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Task */ js.Any
     ]
-  ): JoinEffect = js.native
+  ): JoinEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("join")(tasks.asInstanceOf[js.Any]).asInstanceOf[JoinEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "put")
-  @js.native
-  def put[A /* <: Action[_] */](action: A): PutEffect[A] = js.native
-  @JSImport("@redux-saga/core/effects/effects", "put")
-  @js.native
-  def put[T](channel: PuttableChannel[T], action: T): ChannelPutEffect[T] = js.native
-  @JSImport("@redux-saga/core/effects/effects", "put")
-  @js.native
+  @scala.inline
+  def put[A /* <: Action[js.Any] */](action: A): PutEffect[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("put")(action.asInstanceOf[js.Any]).asInstanceOf[PutEffect[A]]
+  @scala.inline
+  def put[T](channel: PuttableChannel[T], action: T): ChannelPutEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(channel.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[ChannelPutEffect[T]]
+  @scala.inline
   def put[T](
     channel: PuttableChannel[T],
     action: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify END */ js.Any
-  ): ChannelPutEffect[T] = js.native
+  ): ChannelPutEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("put")(channel.asInstanceOf[js.Any], action.asInstanceOf[js.Any])).asInstanceOf[ChannelPutEffect[T]]
   
-  @JSImport("@redux-saga/core/effects/effects", "putResolve")
-  @js.native
-  def putResolve[A /* <: Action[_] */](action: A): PutEffect[A] = js.native
+  @scala.inline
+  def putResolve[A /* <: Action[js.Any] */](action: A): PutEffect[A] = ^.asInstanceOf[js.Dynamic].applyDynamic("putResolve")(action.asInstanceOf[js.Any]).asInstanceOf[PutEffect[A]]
   
-  @JSImport("@redux-saga/core/effects/effects", "race")
-  @js.native
-  def race[T](effects: js.Array[T]): RaceEffect[T] = js.native
-  @JSImport("@redux-saga/core/effects/effects", "race")
-  @js.native
-  def race[T](effects: StringDictionary[T]): RaceEffect[T] = js.native
+  @scala.inline
+  def race[T](effects: js.Array[T]): RaceEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(effects.asInstanceOf[js.Any]).asInstanceOf[RaceEffect[T]]
+  @scala.inline
+  def race[T](effects: StringDictionary[T]): RaceEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("race")(effects.asInstanceOf[js.Any]).asInstanceOf[RaceEffect[T]]
   
-  @JSImport("@redux-saga/core/effects/effects", "retry")
-  @js.native
-  def retry[Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  @scala.inline
+  def retry[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     maxTries: Double,
     delayLength: Double,
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): CallEffect = js.native
+  ): CallEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("retry")(maxTries.asInstanceOf[js.Any], delayLength.asInstanceOf[js.Any], fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[CallEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "select")
-  @js.native
-  def select(): SelectEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "select")
-  @js.native
-  def select[Fn /* <: js.Function2[/* state */ js.Any, /* repeated */ js.Any, _] */](
+  @scala.inline
+  def select(): SelectEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("select")().asInstanceOf[SelectEffect]
+  @scala.inline
+  def select[Fn /* <: js.Function2[/* state */ js.Any, /* repeated */ js.Any, js.Any] */](
     selector: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Tail<Parameters<Fn>> is not an array type */ args: Tail[Parameters[Fn]]
-  ): SelectEffect = js.native
+  ): SelectEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("select")(selector.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[SelectEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "setContext")
-  @js.native
-  def setContext[C /* <: js.Object */](props: C): SetContextEffect[C] = js.native
+  @scala.inline
+  def setContext[C /* <: js.Object */](props: C): SetContextEffect[C] = ^.asInstanceOf[js.Dynamic].applyDynamic("setContext")(props.asInstanceOf[js.Any]).asInstanceOf[SetContextEffect[C]]
   
-  @JSImport("@redux-saga/core/effects/effects", "spawn")
-  @js.native
-  def spawn[Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  @scala.inline
+  def spawn[Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     fn: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "spawn")
-  @js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(fn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def spawn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn with TopLevel[js.Any] */, Name /* <: String */](
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: js.Tuple2[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "spawn")
-  @js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def spawn[Ctx /* <: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in Name ]: (this : Ctx, args : ...any): any}
-    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn with TopLevel[js.Any] */, Name /* <: String */](
+    */ typings.reduxSagaCore.reduxSagaCoreStrings.spawn & TopLevel[js.Any] */, Name /* <: String */](
     ctxAndFnName: Context[Ctx, Name],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Ctx[Name]> is not an array type */ args: Parameters[
       /* import warning: importer.ImportType#apply Failed type conversion: Ctx[Name] */ js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "spawn")
-  @js.native
-  def spawn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFnName.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def spawn[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
     ctxAndFn: ContextFn[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "spawn")
-  @js.native
-  def spawn_CtxFn_ThisFunction1CtxAnyWildcard[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  
+  @scala.inline
+  def spawn_CtxFn_ThisFunction1CtxAnyAny[Ctx, Fn /* <: js.ThisFunction1[/* this */ Ctx, /* repeated */ js.Any, js.Any] */](
     ctxAndFn: js.Tuple2[Ctx, Fn],
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type Parameters<Fn> is not an array type */ args: Parameters[Fn]
-  ): ForkEffect = js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("spawn")(ctxAndFn.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "take")
-  @js.native
-  def take(): TakeEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "take")
-  @js.native
+  @scala.inline
+  def take(): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")().asInstanceOf[TakeEffect]
+  @scala.inline
   def take(
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
-  ): TakeEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "take")
-  @js.native
-  def take[T](channel: TakeableChannel[T]): ChannelTakeEffect[T] = js.native
-  @JSImport("@redux-saga/core/effects/effects", "take")
-  @js.native
+  ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
+  @scala.inline
+  def take[T](channel: TakeableChannel[T]): ChannelTakeEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(channel.asInstanceOf[js.Any]).asInstanceOf[ChannelTakeEffect[T]]
+  @scala.inline
   def take[T](
     channel: TakeableChannel[T],
     multicastPattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ js.Any
-  ): ChannelTakeEffect[T] = js.native
+  ): ChannelTakeEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("take")(channel.asInstanceOf[js.Any], multicastPattern.asInstanceOf[js.Any])).asInstanceOf[ChannelTakeEffect[T]]
   
-  @JSImport("@redux-saga/core/effects/effects", "takeEvery")
-  @js.native
-  def takeEvery[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, _]): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeEvery")
-  @js.native
+  @scala.inline
+  def takeEvery[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def takeEvery[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
     pattern: P,
     worker: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      _
+      js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeEvery")
-  @js.native
-  def takeEvery[A /* <: Action[_] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeEvery[A /* <: Action[js.Any] */](
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, _]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeEvery")
-  @js.native
-  def takeEvery[T, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    worker: js.Function1[/* action */ A, js.Any]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeEvery[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeEvery")
-  @js.native
-  def takeEvery[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeEvery[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
       Fn
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeEvery")
-  @js.native
-  def takeEvery[A /* <: Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeEvery[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
-  ): ForkEffect = js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeEvery")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "takeLatest")
-  @js.native
-  def takeLatest[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, _]): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLatest")
-  @js.native
+  @scala.inline
+  def takeLatest[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def takeLatest[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
     pattern: P,
     worker: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      _
+      js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLatest")
-  @js.native
-  def takeLatest[A /* <: Action[_] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLatest[A /* <: Action[js.Any] */](
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, _]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLatest")
-  @js.native
-  def takeLatest[T, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    worker: js.Function1[/* action */ A, js.Any]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLatest[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLatest")
-  @js.native
-  def takeLatest[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLatest[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
       Fn
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLatest")
-  @js.native
-  def takeLatest[A /* <: Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLatest[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
-  ): ForkEffect = js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLatest")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "takeLeading")
-  @js.native
-  def takeLeading[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, _]): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLeading")
-  @js.native
+  @scala.inline
+  def takeLeading[T](channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def takeLeading[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
     pattern: P,
     worker: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      _
+      js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLeading")
-  @js.native
-  def takeLeading[A /* <: Action[_] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLeading[A /* <: Action[js.Any] */](
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, _]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLeading")
-  @js.native
-  def takeLeading[T, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    worker: js.Function1[/* action */ A, js.Any]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLeading[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLeading")
-  @js.native
-  def takeLeading[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLeading[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
       Fn
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeLeading")
-  @js.native
-  def takeLeading[A /* <: Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def takeLeading[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
-  ): ForkEffect = js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("takeLeading")(pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "takeMaybe")
-  @js.native
-  def takeMaybe(): TakeEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeMaybe")
-  @js.native
+  @scala.inline
+  def takeMaybe(): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")().asInstanceOf[TakeEffect]
+  @scala.inline
   def takeMaybe(
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any
-  ): TakeEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeMaybe")
-  @js.native
-  def takeMaybe[T](channel: TakeableChannel[T]): ChannelTakeEffect[T] = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeMaybe")
-  @js.native
+  ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
+  @scala.inline
+  def takeMaybe[T](channel: TakeableChannel[T]): ChannelTakeEffect[T] = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(channel.asInstanceOf[js.Any]).asInstanceOf[ChannelTakeEffect[T]]
+  @scala.inline
   def takeMaybe[T](
     channel: TakeableChannel[T],
     multicastPattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify Pattern<T> */ js.Any
-  ): ChannelTakeEffect[T] = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeMaybe")
-  @js.native
-  def takeMaybe_A_ActionWildcard[A /* <: Action[_] */](): TakeEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "takeMaybe")
-  @js.native
-  def takeMaybe_A_ActionWildcard[A /* <: Action[_] */](
-    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any
-  ): TakeEffect = js.native
+  ): ChannelTakeEffect[T] = (^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(channel.asInstanceOf[js.Any], multicastPattern.asInstanceOf[js.Any])).asInstanceOf[ChannelTakeEffect[T]]
   
-  @JSImport("@redux-saga/core/effects/effects", "take")
-  @js.native
-  def take_A_ActionWildcard[A /* <: Action[_] */](): TakeEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "take")
-  @js.native
-  def take_A_ActionWildcard[A /* <: Action[_] */](
+  @scala.inline
+  def takeMaybe_A_ActionAny[A /* <: Action[js.Any] */](): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")().asInstanceOf[TakeEffect]
+  @scala.inline
+  def takeMaybe_A_ActionAny[A /* <: Action[js.Any] */](
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any
-  ): TakeEffect = js.native
+  ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("takeMaybe")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
   
-  @JSImport("@redux-saga/core/effects/effects", "throttle")
-  @js.native
-  def throttle[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, _]): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "throttle")
-  @js.native
+  @scala.inline
+  def take_A_ActionAny[A /* <: Action[js.Any] */](): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")().asInstanceOf[TakeEffect]
+  @scala.inline
+  def take_A_ActionAny[A /* <: Action[js.Any] */](
+    pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any
+  ): TakeEffect = ^.asInstanceOf[js.Dynamic].applyDynamic("take")(pattern.asInstanceOf[js.Any]).asInstanceOf[TakeEffect]
+  
+  @scala.inline
+  def throttle[T](ms: Double, channel: TakeableChannel[T], worker: js.Function1[/* item */ T, js.Any]): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
   def throttle[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */](
     ms: Double,
     pattern: P,
     worker: js.Function1[
       /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ /* action */ js.Any, 
-      _
+      js.Any
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "throttle")
-  @js.native
-  def throttle[A /* <: Action[_] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def throttle[A /* <: Action[js.Any] */](
     ms: Double,
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
-    worker: js.Function1[/* action */ A, _]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "throttle")
-  @js.native
-  def throttle[T, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+    worker: js.Function1[/* action */ A, js.Any]
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def throttle[T, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     ms: Double,
     channel: TakeableChannel[T],
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<T, Fn> is not an array type */ args: HelperWorkerParameters[T, Fn]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "throttle")
-  @js.native
-  def throttle[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], channel.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def throttle[P /* <: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern */ js.Any */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     ms: Double,
     pattern: P,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<ActionMatchingPattern<P>, Fn> is not an array type */ args: HelperWorkerParameters[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ _, 
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionMatchingPattern<P> */ js.Any, 
       Fn
     ]
-  ): ForkEffect = js.native
-  @JSImport("@redux-saga/core/effects/effects", "throttle")
-  @js.native
-  def throttle[A /* <: Action[_] */, Fn /* <: js.Function1[/* repeated */ js.Any, _] */](
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
+  @scala.inline
+  def throttle[A /* <: Action[js.Any] */, Fn /* <: js.Function1[/* repeated */ js.Any, js.Any] */](
     ms: Double,
     pattern: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify ActionPattern<A> */ js.Any,
     worker: Fn,
     /* import warning: parser.TsParser#functionParam Dropping repeated marker of param args because its type HelperWorkerParameters<A, Fn> is not an array type */ args: HelperWorkerParameters[A, Fn]
-  ): ForkEffect = js.native
+  ): ForkEffect = (^.asInstanceOf[js.Dynamic].applyDynamic("throttle")(ms.asInstanceOf[js.Any], pattern.asInstanceOf[js.Any], worker.asInstanceOf[js.Any], args.asInstanceOf[js.Any])).asInstanceOf[ForkEffect]
 }

@@ -2,21 +2,19 @@ package typings.pulumiAws.outputMod.glue
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SecurityConfigurationEncryptionConfigurationCloudwatchEncryption extends StObject {
   
   /**
     * Encryption mode to use for CloudWatch data. Valid values: `DISABLED`, `SSE-KMS`. Default value: `DISABLED`.
     */
-  var cloudwatchEncryptionMode: js.UndefOr[String] = js.native
+  var cloudwatchEncryptionMode: js.UndefOr[String] = js.undefined
   
   /**
     * Amazon Resource Name (ARN) of the KMS key to be used to encrypt the data.
     */
-  var kmsKeyArn: js.UndefOr[String] = js.native
+  var kmsKeyArn: js.UndefOr[String] = js.undefined
 }
 object SecurityConfigurationEncryptionConfigurationCloudwatchEncryption {
   

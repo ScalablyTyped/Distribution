@@ -29,150 +29,130 @@ import typings.numbro.numbroStrings.time
 import typings.numbro.numbroStrings.trillion
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
   object default {
     
+    @scala.inline
+    def apply(): Numbro = ^.asInstanceOf[js.Dynamic].apply().asInstanceOf[Numbro]
+    @scala.inline
+    def apply(value: js.Any): Numbro = ^.asInstanceOf[js.Dynamic].apply(value.asInstanceOf[js.Any]).asInstanceOf[Numbro]
+    
     @JSImport("numbro", JSImport.Default)
     @js.native
-    def apply(): Numbro = js.native
-    @JSImport("numbro", JSImport.Default)
-    @js.native
-    def apply(value: js.Any): Numbro = js.native
+    val ^ : js.Any = js.native
     
-    @JSImport("numbro", "default.defaultCurrencyFormat")
-    @js.native
-    def defaultCurrencyFormat(newFormat: String): js.Object = js.native
+    @scala.inline
+    def defaultCurrencyFormat(newFormat: String): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultCurrencyFormat")(newFormat.asInstanceOf[js.Any]).asInstanceOf[js.Object]
     
-    @JSImport("numbro", "default.defaultFormat")
-    @js.native
-    def defaultFormat(): js.Object = js.native
+    @scala.inline
+    def defaultFormat(): js.Object = ^.asInstanceOf[js.Dynamic].applyDynamic("defaultFormat")().asInstanceOf[js.Object]
     
-    @JSImport("numbro", "default.isNumbro")
-    @js.native
-    def isNumbro(value: js.Any): /* is numbro.numbro.numbro.Numbro */ Boolean = js.native
+    @scala.inline
+    def isNumbro(value: js.Any): /* is numbro.numbro.numbro.Numbro */ Boolean = ^.asInstanceOf[js.Dynamic].applyDynamic("isNumbro")(value.asInstanceOf[js.Any]).asInstanceOf[/* is numbro.numbro.numbro.Numbro */ Boolean]
     
-    @JSImport("numbro", "default.language")
-    @js.native
-    def language(): String = js.native
+    @scala.inline
+    def language(): String = ^.asInstanceOf[js.Dynamic].applyDynamic("language")().asInstanceOf[String]
     
-    @JSImport("numbro", "default.languageData")
-    @js.native
-    def languageData(): NumbroLanguage = js.native
-    @JSImport("numbro", "default.languageData")
-    @js.native
-    def languageData(tag: String): NumbroLanguage = js.native
+    @scala.inline
+    def languageData(): NumbroLanguage = ^.asInstanceOf[js.Dynamic].applyDynamic("languageData")().asInstanceOf[NumbroLanguage]
+    @scala.inline
+    def languageData(tag: String): NumbroLanguage = ^.asInstanceOf[js.Dynamic].applyDynamic("languageData")(tag.asInstanceOf[js.Any]).asInstanceOf[NumbroLanguage]
     
-    @JSImport("numbro", "default.languages")
-    @js.native
-    def languages(): StringDictionary[NumbroLanguage] = js.native
+    @scala.inline
+    def languages(): StringDictionary[NumbroLanguage] = ^.asInstanceOf[js.Dynamic].applyDynamic("languages")().asInstanceOf[StringDictionary[NumbroLanguage]]
     
-    @JSImport("numbro", "default.loadLanguagesInNode")
-    @js.native
-    def loadLanguagesInNode(): Unit = js.native
+    @scala.inline
+    def loadLanguagesInNode(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("loadLanguagesInNode")().asInstanceOf[Unit]
     
-    @JSImport("numbro", "default.registerLanguage")
-    @js.native
-    def registerLanguage(tag: NumbroLanguage): String = js.native
-    @JSImport("numbro", "default.registerLanguage")
-    @js.native
-    def registerLanguage(tag: NumbroLanguage, useLanguage: Boolean): String = js.native
+    @scala.inline
+    def registerLanguage(tag: NumbroLanguage): String = ^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(tag.asInstanceOf[js.Any]).asInstanceOf[String]
+    @scala.inline
+    def registerLanguage(tag: NumbroLanguage, useLanguage: Boolean): String = (^.asInstanceOf[js.Dynamic].applyDynamic("registerLanguage")(tag.asInstanceOf[js.Any], useLanguage.asInstanceOf[js.Any])).asInstanceOf[String]
     
-    @JSImport("numbro", "default.setDefaults")
-    @js.native
-    def setDefaults(format: String): Unit = js.native
-    @JSImport("numbro", "default.setDefaults")
-    @js.native
-    def setDefaults(format: Format): Unit = js.native
+    @scala.inline
+    def setDefaults(format: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(format.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setDefaults(format: Format): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setDefaults")(format.asInstanceOf[js.Any]).asInstanceOf[Unit]
     
-    @JSImport("numbro", "default.setLanguage")
-    @js.native
-    def setLanguage(tag: String): Unit = js.native
-    @JSImport("numbro", "default.setLanguage")
-    @js.native
-    def setLanguage(tag: String, fallbackTag: String): Unit = js.native
+    @scala.inline
+    def setLanguage(tag: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(tag.asInstanceOf[js.Any]).asInstanceOf[Unit]
+    @scala.inline
+    def setLanguage(tag: String, fallbackTag: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("setLanguage")(tag.asInstanceOf[js.Any], fallbackTag.asInstanceOf[js.Any])).asInstanceOf[Unit]
     
-    @JSImport("numbro", "default.unformat")
-    @js.native
-    def unformat(input: String): Double = js.native
-    @JSImport("numbro", "default.unformat")
-    @js.native
-    def unformat(input: String, format: String): Double = js.native
-    @JSImport("numbro", "default.unformat")
-    @js.native
-    def unformat(input: String, format: Format): Double = js.native
+    @scala.inline
+    def unformat(input: String): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any]).asInstanceOf[Double]
+    @scala.inline
+    def unformat(input: String, format: String): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
+    @scala.inline
+    def unformat(input: String, format: Format): Double = (^.asInstanceOf[js.Dynamic].applyDynamic("unformat")(input.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Double]
     
-    @JSImport("numbro", "default.validate")
-    @js.native
-    def validate(value: String, format: String): Boolean = js.native
-    @JSImport("numbro", "default.validate")
-    @js.native
-    def validate(value: String, format: Format): Boolean = js.native
+    @scala.inline
+    def validate(value: String, format: String): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Boolean]
+    @scala.inline
+    def validate(value: String, format: Format): Boolean = (^.asInstanceOf[js.Dynamic].applyDynamic("validate")(value.asInstanceOf[js.Any], format.asInstanceOf[js.Any])).asInstanceOf[Boolean]
     
     @JSImport("numbro", "default.version")
     @js.native
     val version: String = js.native
     
-    @JSImport("numbro", "default.zeroFormat")
-    @js.native
-    def zeroFormat(newFormat: String): Unit = js.native
+    @scala.inline
+    def zeroFormat(newFormat: String): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("zeroFormat")(newFormat.asInstanceOf[js.Any]).asInstanceOf[Unit]
   }
   
   object numbro {
     
-    @js.native
     trait Format extends StObject {
       
-      var abbreviations: js.UndefOr[Billion] = js.native
+      var abbreviations: js.UndefOr[Billion] = js.undefined
       
-      var average: js.UndefOr[Boolean] = js.native
+      var average: js.UndefOr[Boolean] = js.undefined
       
-      var base: js.UndefOr[decimal | binary | general] = js.native
+      var base: js.UndefOr[decimal | binary | general] = js.undefined
       
-      var characteristic: js.UndefOr[Double] = js.native
+      var characteristic: js.UndefOr[Double] = js.undefined
       
-      var currencyPosition: js.UndefOr[prefix | infix | postfix] = js.native
+      var currencyPosition: js.UndefOr[prefix | infix | postfix] = js.undefined
       
-      var currencySymbol: js.UndefOr[String] = js.native
+      var currencySymbol: js.UndefOr[String] = js.undefined
       
-      var exponential: js.UndefOr[Boolean] = js.native
+      var exponential: js.UndefOr[Boolean] = js.undefined
       
-      var forceAverage: js.UndefOr[trillion | billion | million | thousand] = js.native
+      var forceAverage: js.UndefOr[trillion | billion | million | thousand] = js.undefined
       
-      var forceSign: js.UndefOr[Boolean] = js.native
+      var forceSign: js.UndefOr[Boolean] = js.undefined
       
-      var mantissa: js.UndefOr[Double] = js.native
+      var mantissa: js.UndefOr[Double] = js.undefined
       
-      var negative: js.UndefOr[sign | parenthesis] = js.native
+      var negative: js.UndefOr[sign | parenthesis] = js.undefined
       
-      var optionalCharacteristic: js.UndefOr[Boolean] = js.native
+      var optionalCharacteristic: js.UndefOr[Boolean] = js.undefined
       
-      var optionalMantissa: js.UndefOr[Boolean] = js.native
+      var optionalMantissa: js.UndefOr[Boolean] = js.undefined
       
-      var output: js.UndefOr[currency | percent | byte | time | ordinal | number] = js.native
+      var output: js.UndefOr[currency | percent | byte | time | ordinal | number] = js.undefined
       
-      var postfix: js.UndefOr[String] = js.native
+      var postfix: js.UndefOr[String] = js.undefined
       
-      var prefix: js.UndefOr[String] = js.native
+      var prefix: js.UndefOr[String] = js.undefined
       
-      var prefixSymbol: js.UndefOr[Boolean] = js.native
+      var prefixSymbol: js.UndefOr[Boolean] = js.undefined
       
-      var roundingFunction: js.UndefOr[js.Function1[/* num */ Double, Double]] = js.native
+      var roundingFunction: js.UndefOr[js.Function1[/* num */ Double, Double]] = js.undefined
       
-      var spaceSeparated: js.UndefOr[Boolean] = js.native
+      var spaceSeparated: js.UndefOr[Boolean] = js.undefined
       
-      var spaceSeparatedAbbreviation: js.UndefOr[Boolean] = js.native
+      var spaceSeparatedAbbreviation: js.UndefOr[Boolean] = js.undefined
       
-      var spaceSeparatedCurrency: js.UndefOr[Boolean] = js.native
+      var spaceSeparatedCurrency: js.UndefOr[Boolean] = js.undefined
       
-      var thousandSeparated: js.UndefOr[Boolean] = js.native
+      var thousandSeparated: js.UndefOr[Boolean] = js.undefined
       
-      var totalLength: js.UndefOr[Double] = js.native
+      var totalLength: js.UndefOr[Double] = js.undefined
       
-      var trimMantissa: js.UndefOr[Boolean] = js.native
+      var trimMantissa: js.UndefOr[Boolean] = js.undefined
     }
     object Format {
       
@@ -367,34 +347,33 @@ object mod {
       def value(): Double = js.native
     }
     
-    @js.native
     trait NumbroLanguage extends StObject {
       
-      var abbreviations: Million = js.native
+      var abbreviations: Million
       
-      var byteFormat: js.UndefOr[Format] = js.native
+      var byteFormat: js.UndefOr[Format] = js.undefined
       
-      var currency: Code = js.native
+      var currency: Code
       
-      var currencyFormat: js.UndefOr[Format] = js.native
+      var currencyFormat: js.UndefOr[Format] = js.undefined
       
-      var defaults: js.UndefOr[Format] = js.native
+      var defaults: js.UndefOr[Format] = js.undefined
       
-      var delimiters: Decimal = js.native
+      var delimiters: Decimal
       
-      var formats: FourDigits = js.native
+      var formats: FourDigits
       
-      var languageTag: String = js.native
+      var languageTag: String
       
-      def ordinal(num: Double): String = js.native
+      def ordinal(num: Double): String
       
-      var ordinalFormat: js.UndefOr[Format] = js.native
+      var ordinalFormat: js.UndefOr[Format] = js.undefined
       
-      var percentageFormat: js.UndefOr[Format] = js.native
+      var percentageFormat: js.UndefOr[Format] = js.undefined
       
-      var spaceSeparated: js.UndefOr[Boolean] = js.native
+      var spaceSeparated: js.UndefOr[Boolean] = js.undefined
       
-      var timeDefaults: js.UndefOr[Format] = js.native
+      var timeDefaults: js.UndefOr[Format] = js.undefined
     }
     object NumbroLanguage {
       

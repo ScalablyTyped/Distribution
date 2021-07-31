@@ -8,7 +8,6 @@ import typings.winrt.Windows.Storage.Streams.IOutputStream
 import typings.winrt.Windows.Storage.Streams.InputStreamOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Compression {
@@ -20,28 +19,41 @@ object Compression {
   object CompressAlgorithm extends StObject {
     
     @js.native
-    sealed trait invalidAlgorithm extends CompressAlgorithm
+    sealed trait invalidAlgorithm
+      extends StObject
+         with CompressAlgorithm
     
     @js.native
-    sealed trait lzms extends CompressAlgorithm
+    sealed trait lzms
+      extends StObject
+         with CompressAlgorithm
     
     @js.native
-    sealed trait mszip extends CompressAlgorithm
+    sealed trait mszip
+      extends StObject
+         with CompressAlgorithm
     
     @js.native
-    sealed trait nullAlgorithm extends CompressAlgorithm
+    sealed trait nullAlgorithm
+      extends StObject
+         with CompressAlgorithm
     
     @js.native
-    sealed trait xpress extends CompressAlgorithm
+    sealed trait xpress
+      extends StObject
+         with CompressAlgorithm
     
     @js.native
-    sealed trait xpressHuff extends CompressAlgorithm
+    sealed trait xpressHuff
+      extends StObject
+         with CompressAlgorithm
   }
   
-  @js.native
-  trait Compressor extends ICompressor {
+  trait Compressor
+    extends StObject
+       with ICompressor {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object Compressor {
     
@@ -66,10 +78,11 @@ object Compression {
     }
   }
   
-  @js.native
-  trait Decompressor extends IDecompressor {
+  trait Decompressor
+    extends StObject
+       with IDecompressor {
     
-    def dispose(): Unit = js.native
+    def dispose(): Unit
   }
   object Decompressor {
     
@@ -92,12 +105,13 @@ object Compression {
     }
   }
   
-  @js.native
-  trait ICompressor extends IOutputStream {
+  trait ICompressor
+    extends StObject
+       with IOutputStream {
     
-    def detachStream(): IOutputStream = js.native
+    def detachStream(): IOutputStream
     
-    def finishAsync(): IAsyncOperation[Boolean] = js.native
+    def finishAsync(): IAsyncOperation[Boolean]
   }
   object ICompressor {
     
@@ -124,12 +138,11 @@ object Compression {
     }
   }
   
-  @js.native
   trait ICompressorFactory extends StObject {
     
-    def createCompressor(underlyingStream: IOutputStream): Compressor = js.native
+    def createCompressor(underlyingStream: IOutputStream): Compressor
     
-    def createCompressorEx(underlyingStream: IOutputStream, algorithm: CompressAlgorithm, blockSize: Double): Compressor = js.native
+    def createCompressorEx(underlyingStream: IOutputStream, algorithm: CompressAlgorithm, blockSize: Double): Compressor
   }
   object ICompressorFactory {
     
@@ -153,10 +166,11 @@ object Compression {
     }
   }
   
-  @js.native
-  trait IDecompressor extends IInputStream {
+  trait IDecompressor
+    extends StObject
+       with IInputStream {
     
-    def detachStream(): IInputStream = js.native
+    def detachStream(): IInputStream
   }
   object IDecompressor {
     
@@ -178,10 +192,9 @@ object Compression {
     }
   }
   
-  @js.native
   trait IDecompressorFactory extends StObject {
     
-    def createDecompressor(underlyingStream: IInputStream): Decompressor = js.native
+    def createDecompressor(underlyingStream: IInputStream): Decompressor
   }
   object IDecompressorFactory {
     

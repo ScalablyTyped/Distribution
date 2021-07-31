@@ -2,18 +2,16 @@ package typings.reactNative
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AbortSignal extends StObject {
   
   /**
     * Returns `true` if this `AbortSignal`'s `AbortController` has signaled to abort, and `false` otherwise.
     */
-  val aborted: Boolean = js.native
+  val aborted: Boolean
   
-  def onabort(event: AbortEvent): Unit = js.native
+  def onabort(event: AbortEvent): Unit
 }
 object AbortSignal {
   

@@ -6,28 +6,28 @@ import typings.googleAuthLibrary.mod.OAuth2Client
 import typings.googleAuthLibrary.mod.UserRefreshClient
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ParamsResourceProjectsRegionsAutoscalingpoliciesCreate extends StandardParameters {
+trait ParamsResourceProjectsRegionsAutoscalingpoliciesCreate
+  extends StObject
+     with StandardParameters {
   
   /**
     * Auth client or API Key for the request
     */
-  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.native
+  var auth: js.UndefOr[String | OAuth2Client | JWT | Compute | UserRefreshClient] = js.undefined
   
   /**
     * Required. The "resource name" of the region, as described in
     * https://cloud.google.com/apis/design/resource_names of the form
     * projects/{project_id}/regions/{region}.
     */
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
   /**
     * Request body metadata
     */
-  var requestBody: js.UndefOr[SchemaAutoscalingPolicy] = js.native
+  var requestBody: js.UndefOr[SchemaAutoscalingPolicy] = js.undefined
 }
 object ParamsResourceProjectsRegionsAutoscalingpoliciesCreate {
   

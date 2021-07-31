@@ -3,24 +3,23 @@ package typings.knockout.mod
 import typings.std.Node
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object memoization {
   
-  @JSImport("knockout", "memoization.memoize")
+  @JSImport("knockout", "memoization")
   @js.native
-  def memoize(callback: js.Function1[/* val */ js.Any, Unit]): js.Array[Node] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("knockout", "memoization.parseMemoText")
-  @js.native
-  def parseMemoText(memoText: String): String = js.native
+  @scala.inline
+  def memoize(callback: js.Function1[/* val */ js.Any, Unit]): js.Array[Node] = ^.asInstanceOf[js.Dynamic].applyDynamic("memoize")(callback.asInstanceOf[js.Any]).asInstanceOf[js.Array[Node]]
   
-  @JSImport("knockout", "memoization.unmemoize")
-  @js.native
-  def unmemoize(memoId: String, callbackParams: js.Array[_]): Unit = js.native
+  @scala.inline
+  def parseMemoText(memoText: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("parseMemoText")(memoText.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("knockout", "memoization.unmemoizeDomNodeAndDescendants")
-  @js.native
-  def unmemoizeDomNodeAndDescendants(domNode: Node, extraCallbackParamsArray: js.Array[_]): Unit = js.native
+  @scala.inline
+  def unmemoize(memoId: String, callbackParams: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmemoize")(memoId.asInstanceOf[js.Any], callbackParams.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
+  @scala.inline
+  def unmemoizeDomNodeAndDescendants(domNode: Node, extraCallbackParamsArray: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("unmemoizeDomNodeAndDescendants")(domNode.asInstanceOf[js.Any], extraCallbackParamsArray.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

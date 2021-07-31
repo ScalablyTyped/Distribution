@@ -6,21 +6,21 @@ import typings.activexLibreoffice.com_.sun.star.table.CellRangeAddress
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * provides functions to manage a collection of database ranges.
   * @see com.sun.star.sheet.DatabaseRanges
   */
-@js.native
-trait XDatabaseRanges extends XNameAccess {
+trait XDatabaseRanges
+  extends StObject
+     with XNameAccess {
   
   /** adds a new database range to the collection. */
-  def addNewByName(aName: String, aRange: CellRangeAddress): Unit = js.native
+  def addNewByName(aName: String, aRange: CellRangeAddress): Unit
   
   /** removes a database range from the collection. */
-  def removeByName(aName: String): Unit = js.native
+  def removeByName(aName: String): Unit
 }
 object XDatabaseRanges {
   

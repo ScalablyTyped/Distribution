@@ -7,31 +7,31 @@ import typings.awsLambda.codepipelineCloudwatchMod.CodePipelineCloudWatchEvent
 import typings.awsLambda.handlerMod.Handler
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object codepipelineCloudwatchStageMod {
   
-  @js.native
-  trait CodePipelineCloudWatchStageEvent extends CodePipelineCloudWatchEvent {
+  trait CodePipelineCloudWatchStageEvent
+    extends StObject
+       with CodePipelineCloudWatchEvent {
     
-    var account: String = js.native
+    var account: String
     
-    var detail: Stage = js.native
+    var detail: Stage
     
-    var `detail-type`: `CodePipeline Stage Execution State Change` = js.native
+    var `detail-type`: `CodePipeline Stage Execution State Change`
     
-    var id: String = js.native
+    var id: String
     
-    var region: String = js.native
+    var region: String
     
-    var resources: js.Array[String] = js.native
+    var resources: js.Array[String]
     
-    var source: awsDotcodepipeline = js.native
+    var source: awsDotcodepipeline
     
-    var time: String = js.native
+    var time: String
     
-    var version: String = js.native
+    var version: String
   }
   object CodePipelineCloudWatchStageEvent {
     
@@ -39,16 +39,14 @@ object codepipelineCloudwatchStageMod {
     def apply(
       account: String,
       detail: Stage,
-      `detail-type`: `CodePipeline Stage Execution State Change`,
       id: String,
       region: String,
       resources: js.Array[String],
-      source: awsDotcodepipeline,
       time: String,
       version: String
     ): CodePipelineCloudWatchStageEvent = {
-      val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
-      __obj.updateDynamic("detail-type")(`detail-type`.asInstanceOf[js.Any])
+      val __obj = js.Dynamic.literal(account = account.asInstanceOf[js.Any], detail = detail.asInstanceOf[js.Any], id = id.asInstanceOf[js.Any], region = region.asInstanceOf[js.Any], resources = resources.asInstanceOf[js.Any], source = "aws.codepipeline", time = time.asInstanceOf[js.Any], version = version.asInstanceOf[js.Any])
+      __obj.updateDynamic("detail-type")("CodePipeline Stage Execution State Change")
       __obj.asInstanceOf[CodePipelineCloudWatchStageEvent]
     }
     

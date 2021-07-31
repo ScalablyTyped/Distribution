@@ -3,17 +3,15 @@ package typings.baiduApp.anon
 import typings.baiduApp.baiduAppStrings.ok
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  characteristic :{  characteristicId :string,   serviceId :string,   value :std.ArrayBuffer}} & baidu-app.swan.ErrMsgResponse */
-@js.native
 trait characteristiccharacteris extends StObject {
   
-  var characteristic: CharacteristicId = js.native
+  var characteristic: CharacteristicId
   
   /** 成功：ok，错误：详细信息 */
-  var errMsg: ok | String = js.native
+  var errMsg: ok | String
 }
 object characteristiccharacteris {
   

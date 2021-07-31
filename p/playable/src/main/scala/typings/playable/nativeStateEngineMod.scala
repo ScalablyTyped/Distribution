@@ -6,14 +6,15 @@ import typings.playable.eventEmitterTypesMod.IEventEmitter
 import typings.std.HTMLVideoElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object nativeStateEngineMod {
   
   @JSImport("playable/dist/src/modules/playback-engine/output/native/state-engine", JSImport.Default)
   @js.native
-  class default protected () extends StateEngine {
+  class default protected ()
+    extends StObject
+       with StateEngine {
     def this(eventEmitter: IEventEmitter, video: HTMLVideoElement) = this()
   }
   

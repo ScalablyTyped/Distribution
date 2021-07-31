@@ -2,16 +2,14 @@ package typings.devtoolsProtocol.mod.Protocol.LayerTree
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LoadSnapshotRequest extends StObject {
   
   /**
     * An array of tiles composing the snapshot.
     */
-  var tiles: js.Array[PictureTile] = js.native
+  var tiles: js.Array[PictureTile]
 }
 object LoadSnapshotRequest {
   

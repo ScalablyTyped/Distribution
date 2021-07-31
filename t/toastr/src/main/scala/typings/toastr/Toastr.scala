@@ -5,7 +5,6 @@ import typings.std.HTMLElement
 import typings.toastr.anon.Force
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
@@ -15,7 +14,7 @@ trait Toastr extends StObject {
     * Clear toasts
     */
   def clear(): Unit = js.native
-  def clear(toast: js.UndefOr[scala.Nothing], clearOptions: Force): Unit = js.native
+  def clear(toast: Unit, clearOptions: Force): Unit = js.native
   def clear(toast: JQuery[HTMLElement]): Unit = js.native
   def clear(toast: JQuery[HTMLElement], clearOptions: Force): Unit = js.native
   
@@ -23,9 +22,9 @@ trait Toastr extends StObject {
     * Create an error toast
     */
   def error(message: String): JQuery[HTMLElement] = js.native
-  def error(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def error(message: String, title: String): JQuery[HTMLElement] = js.native
   def error(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def error(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create an error toast
     */
@@ -46,9 +45,9 @@ trait Toastr extends StObject {
     * Create an info toast
     */
   def info(message: String): JQuery[HTMLElement] = js.native
-  def info(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def info(message: String, title: String): JQuery[HTMLElement] = js.native
   def info(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def info(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create an info toast
     */
@@ -80,9 +79,9 @@ trait Toastr extends StObject {
     * Create a success toast
     */
   def success(message: String): JQuery[HTMLElement] = js.native
-  def success(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def success(message: String, title: String): JQuery[HTMLElement] = js.native
   def success(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def success(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create a success toast
     */
@@ -98,9 +97,9 @@ trait Toastr extends StObject {
     * Create a warning toast
     */
   def warning(message: String): JQuery[HTMLElement] = js.native
-  def warning(message: String, title: js.UndefOr[scala.Nothing], overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   def warning(message: String, title: String): JQuery[HTMLElement] = js.native
   def warning(message: String, title: String, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
+  def warning(message: String, title: Unit, overrides: ToastrOptions): JQuery[HTMLElement] = js.native
   /**
     * Create a warning toast
     */

@@ -4,21 +4,21 @@ import typings.activexLibreoffice.`type`
 import typings.std.SafeArray
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** makes it possible to access contents through an implicit (unique) ID. */
-@js.native
-trait XImplicitIDAccess extends XElementAccess {
+trait XImplicitIDAccess
+  extends StObject
+     with XElementAccess {
   
   /** @returns a sequence with all existing implicit IDs. */
-  val ImplicitIDs: SafeArray[String] = js.native
+  val ImplicitIDs: SafeArray[String]
   
   /** @returns the element with the specified implicit ID. */
-  def getByImplicitID(ID: String): js.Any = js.native
+  def getByImplicitID(ID: String): js.Any
   
   /** @returns a sequence with all existing implicit IDs. */
-  def getImplicitIDs(): SafeArray[String] = js.native
+  def getImplicitIDs(): SafeArray[String]
 }
 object XImplicitIDAccess {
   

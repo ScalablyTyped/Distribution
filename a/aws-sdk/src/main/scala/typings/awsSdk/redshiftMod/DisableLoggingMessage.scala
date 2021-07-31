@@ -2,16 +2,14 @@ package typings.awsSdk.redshiftMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DisableLoggingMessage extends StObject {
   
   /**
     * The identifier of the cluster on which logging is to be stopped. Example: examplecluster 
     */
-  var ClusterIdentifier: String = js.native
+  var ClusterIdentifier: String
 }
 object DisableLoggingMessage {
   

@@ -13,7 +13,6 @@ import typings.std.Date
 import typings.std.Record
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("braintree", "Transaction")
@@ -50,7 +49,7 @@ class Transaction () extends StObject {
   
   var currencyIsoCode: String = js.native
   
-  var customFields: js.UndefOr[Record[String, _]] = js.native
+  var customFields: js.UndefOr[Record[String, js.Any]] = js.native
   
   var customer: CustomFields = js.native
   

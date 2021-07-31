@@ -2,46 +2,44 @@ package typings.awsSdk.iotsitewiseMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AssetModelSummary extends StObject {
   
   /**
     * The ARN of the asset model, which has the following format.  arn:${Partition}:iotsitewise:${Region}:${Account}:asset-model/${AssetModelId} 
     */
-  var arn: ARN = js.native
+  var arn: ARN
   
   /**
     * The date the asset model was created, in Unix epoch time.
     */
-  var creationDate: Timestamp = js.native
+  var creationDate: Timestamp
   
   /**
     * The asset model description.
     */
-  var description: Description = js.native
+  var description: Description
   
   /**
     * The ID of the asset model (used with AWS IoT SiteWise APIs).
     */
-  var id: ID = js.native
+  var id: ID
   
   /**
     * The date the asset model was last updated, in Unix epoch time.
     */
-  var lastUpdateDate: Timestamp = js.native
+  var lastUpdateDate: Timestamp
   
   /**
     * The name of the asset model.
     */
-  var name: Name = js.native
+  var name: Name
   
   /**
     * The current status of the asset model.
     */
-  var status: AssetModelStatus = js.native
+  var status: AssetModelStatus
 }
 object AssetModelSummary {
   

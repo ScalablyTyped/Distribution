@@ -3,19 +3,17 @@ package typings.pulumiKubernetes.inputMod.apps.v1beta2
 import typings.pulumiPulumi.outputMod.Input
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * RollingUpdateStatefulSetStrategy is used to communicate parameter for RollingUpdateStatefulSetStrategyType.
   */
-@js.native
 trait RollingUpdateStatefulSetStrategy extends StObject {
   
   /**
     * Partition indicates the ordinal at which the StatefulSet should be partitioned. Default value is 0.
     */
-  var partition: js.UndefOr[Input[Double]] = js.native
+  var partition: js.UndefOr[Input[Double]] = js.undefined
 }
 object RollingUpdateStatefulSetStrategy {
   

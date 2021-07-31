@@ -3,16 +3,15 @@ package typings.reactNativeGoogleAnalyticsBridge
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object dataLayerEventMod {
   
-  @js.native
   trait DataLayerEvent
-    extends /* key */ StringDictionary[js.Any] {
+    extends StObject
+       with /* key */ StringDictionary[js.Any] {
     
-    var event: String = js.native
+    var event: String
   }
   object DataLayerEvent {
     

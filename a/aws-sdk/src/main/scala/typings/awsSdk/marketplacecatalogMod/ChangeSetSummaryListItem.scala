@@ -2,51 +2,49 @@ package typings.awsSdk.marketplacecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChangeSetSummaryListItem extends StObject {
   
   /**
     * The ARN associated with the unique identifier for the change set referenced in this request.
     */
-  var ChangeSetArn: js.UndefOr[ARN] = js.native
+  var ChangeSetArn: js.UndefOr[ARN] = js.undefined
   
   /**
     * The unique identifier for a change set.
     */
-  var ChangeSetId: js.UndefOr[ResourceId] = js.native
+  var ChangeSetId: js.UndefOr[ResourceId] = js.undefined
   
   /**
     * The non-unique name for the change set.
     */
-  var ChangeSetName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetName] = js.native
+  var ChangeSetName: js.UndefOr[typings.awsSdk.marketplacecatalogMod.ChangeSetName] = js.undefined
   
   /**
     * The time, in ISO 8601 format (2018-02-27T13:45:22Z), when the change set was finished.
     */
-  var EndTime: js.UndefOr[DateTimeISO8601] = js.native
+  var EndTime: js.UndefOr[DateTimeISO8601] = js.undefined
   
   /**
     * This object is a list of entity IDs (string) that are a part of a change set. The entity ID list is a maximum of 20 entities. It must contain at least one entity.
     */
-  var EntityIdList: js.UndefOr[ResourceIdList] = js.native
+  var EntityIdList: js.UndefOr[ResourceIdList] = js.undefined
   
   /**
     * Returned if the change set is in FAILED status. Can be either CLIENT_ERROR, which means that there are issues with the request (see the ErrorDetailList of DescribeChangeSet), or SERVER_FAULT, which means that there is a problem in the system, and you should retry your request.
     */
-  var FailureCode: js.UndefOr[typings.awsSdk.marketplacecatalogMod.FailureCode] = js.native
+  var FailureCode: js.UndefOr[typings.awsSdk.marketplacecatalogMod.FailureCode] = js.undefined
   
   /**
     * The time, in ISO 8601 format (2018-02-27T13:45:22Z), when the change set was started.
     */
-  var StartTime: js.UndefOr[DateTimeISO8601] = js.native
+  var StartTime: js.UndefOr[DateTimeISO8601] = js.undefined
   
   /**
     * The current status of the change set.
     */
-  var Status: js.UndefOr[ChangeStatus] = js.native
+  var Status: js.UndefOr[ChangeStatus] = js.undefined
 }
 object ChangeSetSummaryListItem {
   

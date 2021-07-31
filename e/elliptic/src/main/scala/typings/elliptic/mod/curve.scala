@@ -11,7 +11,6 @@ import typings.elliptic.mod.curve.short.ShortPoint
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object curve {
@@ -67,7 +66,7 @@ object curve {
       
       def dblp(k: Double): BasePoint = js.native
       
-      def encode(enc: js.UndefOr[scala.Nothing], compact: Boolean): js.Array[Double] = js.native
+      def encode(enc: Unit, compact: Boolean): js.Array[Double] = js.native
       
       def encodeCompressed(): js.Array[Double] = js.native
       @JSName("encodeCompressed")
@@ -105,22 +104,21 @@ object curve {
       def validate(): Boolean = js.native
     }
     
-    @js.native
     trait BaseCurveOptions extends StObject {
       
-      var g: js.UndefOr[BasePoint] = js.native
+      var g: js.UndefOr[BasePoint] = js.undefined
       
-      var gRed: js.UndefOr[js.Any] = js.native
+      var gRed: js.UndefOr[js.Any] = js.undefined
       
       var n: js.UndefOr[
             Double | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Buffer
-          ] = js.native
+          ] = js.undefined
       
-      var p: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) = js.native
+      var p: Double | String | js.Array[Double] | Buffer | (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any)
       
       var prime: js.UndefOr[
             (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | String
-          ] = js.native
+          ] = js.undefined
     }
     object BaseCurveOptions {
       
@@ -173,16 +171,15 @@ object curve {
       }
     }
     
-    @js.native
     trait PrecomputedValues extends StObject {
       
       // ?
-      var beta: js.Any = js.native
+      var beta: js.Any
       
-      var doubles: js.Any = js.native
+      var doubles: js.Any
       
       // ?
-      var naf: js.Any = js.native
+      var naf: js.Any
     }
     object PrecomputedValues {
       
@@ -223,8 +220,9 @@ object curve {
     var dd: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
     
     def point(x: BNInput, y: BNInput): EdwardsPoint = js.native
-    def point(x: BNInput, y: BNInput, z: js.UndefOr[BNInput], t: BNInput): EdwardsPoint = js.native
+    def point(x: BNInput, y: BNInput, z: Unit, t: BNInput): EdwardsPoint = js.native
     def point(x: BNInput, y: BNInput, z: BNInput): EdwardsPoint = js.native
+    def point(x: BNInput, y: BNInput, z: BNInput, t: BNInput): EdwardsPoint = js.native
     
     def pointFromJSON(obj: js.Array[BNInput]): EdwardsPoint = js.native
     
@@ -256,14 +254,15 @@ object curve {
       var z: /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any = js.native
     }
     
-    @js.native
-    trait EdwardsConf extends BaseCurveOptions {
+    trait EdwardsConf
+      extends StObject
+         with BaseCurveOptions {
       
-      var a: BNInput = js.native
+      var a: BNInput
       
-      var c: BNInput = js.native
+      var c: BNInput
       
-      var d: BNInput = js.native
+      var d: BNInput
     }
     object EdwardsConf {
       
@@ -338,16 +337,17 @@ object curve {
       var y: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify BN */ js.Any) | Null = js.native
     }
     
-    @js.native
-    trait ShortConf extends BaseCurveOptions {
+    trait ShortConf
+      extends StObject
+         with BaseCurveOptions {
       
-      var a: BNInput = js.native
+      var a: BNInput
       
-      var b: BNInput = js.native
+      var b: BNInput
       
-      var beta: js.UndefOr[BNInput] = js.native
+      var beta: js.UndefOr[BNInput] = js.undefined
       
-      var lambda: js.UndefOr[BNInput] = js.native
+      var lambda: js.UndefOr[BNInput] = js.undefined
     }
     object ShortConf {
       

@@ -3,7 +3,6 @@ package typings.reactStars
 import typings.react.mod.Component
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -15,38 +14,37 @@ object mod {
   
   type ReactStars = Component[ReactStarsProps, js.Object, js.Any]
   
-  @js.native
   trait ReactStarsProps extends StObject {
     
     /** Which character you want to use as a star */
-    var char: js.UndefOr[String] = js.native
+    var char: js.UndefOr[String] = js.undefined
     
     /** Name of parent class */
-    var className: js.UndefOr[String] = js.native
+    var className: js.UndefOr[String] = js.undefined
     
     /** Color of inactive star (this supports any CSS valid value) */
-    var color1: js.UndefOr[String] = js.native
+    var color1: js.UndefOr[String] = js.undefined
     
     /** Color of selected or active star */
-    var color2: js.UndefOr[String] = js.native
+    var color2: js.UndefOr[String] = js.undefined
     
     /** How many total stars you want */
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
     /** Should you be able to select rating or just see rating (for reusability) */
-    var edit: js.UndefOr[Boolean] = js.native
+    var edit: js.UndefOr[Boolean] = js.undefined
     
     /** Should component use half stars, if not the decimal part will be dropped otherwise normal algebra rools will apply to round to half stars */
-    var half: js.UndefOr[Boolean] = js.native
+    var half: js.UndefOr[Boolean] = js.undefined
     
     /** Will be invoked any time the rating is changed */
-    var onChange: js.UndefOr[js.Function1[/* new_rating */ Double, Unit]] = js.native
+    var onChange: js.UndefOr[js.Function1[/* new_rating */ Double, Unit]] = js.undefined
     
     /** Size of stars (in px) */
-    var size: js.UndefOr[Double] = js.native
+    var size: js.UndefOr[Double] = js.undefined
     
     /** Set rating value */
-    var value: js.UndefOr[Double] = js.native
+    var value: js.UndefOr[Double] = js.undefined
   }
   object ReactStarsProps {
     

@@ -2,17 +2,15 @@ package typings.vsoNodeApi.releaseInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentApprovalCompletedEvent extends StObject {
   
-  var approval: ReleaseApproval = js.native
+  var approval: ReleaseApproval
   
-  var project: ProjectReference = js.native
+  var project: ProjectReference
   
-  var release: Release = js.native
+  var release: Release
 }
 object DeploymentApprovalCompletedEvent {
   

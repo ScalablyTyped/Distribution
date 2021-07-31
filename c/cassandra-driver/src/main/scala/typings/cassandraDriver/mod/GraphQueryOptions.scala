@@ -3,21 +3,21 @@ package typings.cassandraDriver.mod
 import typings.cassandraDriver.typesMod.types.consistencies
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait GraphQueryOptions extends QueryOptions {
+trait GraphQueryOptions
+  extends StObject
+     with QueryOptions {
   
-  var graphLanguage: js.UndefOr[String] = js.native
+  var graphLanguage: js.UndefOr[String] = js.undefined
   
-  var graphName: js.UndefOr[String] = js.native
+  var graphName: js.UndefOr[String] = js.undefined
   
-  var graphReadConsistency: js.UndefOr[consistencies] = js.native
+  var graphReadConsistency: js.UndefOr[consistencies] = js.undefined
   
-  var graphSource: js.UndefOr[String] = js.native
+  var graphSource: js.UndefOr[String] = js.undefined
   
-  var graphWriteConsistency: js.UndefOr[consistencies] = js.native
+  var graphWriteConsistency: js.UndefOr[consistencies] = js.undefined
 }
 object GraphQueryOptions {
   

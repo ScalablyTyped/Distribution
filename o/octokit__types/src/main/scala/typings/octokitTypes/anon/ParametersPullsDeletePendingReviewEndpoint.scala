@@ -6,17 +6,15 @@ import typings.octokitTypes.endpointsMod.PullsDeletePendingReviewResponseData
 import typings.octokitTypes.octokitResponseMod.OctokitResponse
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ParametersPullsDeletePendingReviewEndpoint extends StObject {
   
-  var parameters: PullsDeletePendingReviewEndpoint = js.native
+  var parameters: PullsDeletePendingReviewEndpoint
   
-  var request: PullsDeletePendingReviewRequestOptions = js.native
+  var request: PullsDeletePendingReviewRequestOptions
   
-  var response: OctokitResponse[PullsDeletePendingReviewResponseData] = js.native
+  var response: OctokitResponse[PullsDeletePendingReviewResponseData]
 }
 object ParametersPullsDeletePendingReviewEndpoint {
   

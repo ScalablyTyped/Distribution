@@ -3,14 +3,12 @@ package typings.sawtoothSdk.protobufMod
 import typings.sawtoothSdk.protobufMod.ConsensusCheckBlocksResponse.Status
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait IConsensusCheckBlocksResponse extends StObject {
   
   /** ConsensusCheckBlocksResponse status */
-  var status: js.UndefOr[Status | Null] = js.native
+  var status: js.UndefOr[Status | Null] = js.undefined
 }
 object IConsensusCheckBlocksResponse {
   

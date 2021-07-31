@@ -2,46 +2,44 @@ package typings.awsSdk.codedeployMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CloudFormationTarget extends StObject {
   
   /**
     * The unique ID of an AWS CloudFormation blue/green deployment.
     */
-  var deploymentId: js.UndefOr[DeploymentId] = js.native
+  var deploymentId: js.UndefOr[DeploymentId] = js.undefined
   
   /**
     *  The date and time when the target application was updated by an AWS CloudFormation blue/green deployment. 
     */
-  var lastUpdatedAt: js.UndefOr[Time] = js.native
+  var lastUpdatedAt: js.UndefOr[Time] = js.undefined
   
   /**
     *  The lifecycle events of the AWS CloudFormation blue/green deployment to this target application. 
     */
-  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.native
+  var lifecycleEvents: js.UndefOr[LifecycleEventList] = js.undefined
   
   /**
     * The resource type for the AWS CloudFormation blue/green deployment.
     */
-  var resourceType: js.UndefOr[CloudFormationResourceType] = js.native
+  var resourceType: js.UndefOr[CloudFormationResourceType] = js.undefined
   
   /**
     *  The status of an AWS CloudFormation blue/green deployment's target application. 
     */
-  var status: js.UndefOr[TargetStatus] = js.native
+  var status: js.UndefOr[TargetStatus] = js.undefined
   
   /**
     *  The unique ID of a deployment target that has a type of CloudFormationTarget. 
     */
-  var targetId: js.UndefOr[TargetId] = js.native
+  var targetId: js.UndefOr[TargetId] = js.undefined
   
   /**
     * The percentage of production traffic that the target version of an AWS CloudFormation blue/green deployment receives.
     */
-  var targetVersionWeight: js.UndefOr[TrafficWeight] = js.native
+  var targetVersionWeight: js.UndefOr[TrafficWeight] = js.undefined
 }
 object CloudFormationTarget {
   

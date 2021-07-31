@@ -4,22 +4,20 @@ import org.scalablytyped.runtime.NumberDictionary
 import typings.agGrid.rowNodeMod.RowNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object iViewportDatasourceMod {
   
-  @js.native
   trait IViewportDatasource extends StObject {
     
     /** Gets called once when viewPort is no longer used. If you need to do any cleanup, do it here. */
-    var destroy: js.UndefOr[js.Function0[Unit]] = js.native
+    var destroy: js.UndefOr[js.Function0[Unit]] = js.undefined
     
     /** Gets called exactly once before viewPort is used. Passes methods to be used to tell viewPort of data loads / changes. */
-    def init(params: IViewportDatasourceParams): Unit = js.native
+    def init(params: IViewportDatasourceParams): Unit
     
     /** Tell the viewport what the scroll position of the grid is, so it knows what rows it has to get */
-    def setViewportRange(firstRow: Double, lastRow: Double): Unit = js.native
+    def setViewportRange(firstRow: Double, lastRow: Double): Unit
   }
   object IViewportDatasource {
     
@@ -46,17 +44,16 @@ object iViewportDatasourceMod {
     }
   }
   
-  @js.native
   trait IViewportDatasourceParams extends StObject {
     
     /** datasource calls this when it wants a row node - typically used when it wants to update the row node */
-    def getRow(rowIndex: Double): RowNode = js.native
+    def getRow(rowIndex: Double): RowNode
     
     /** datasource calls this method when the total row count changes. This in turn sets the height of the grids vertical scroll. */
-    def setRowCount(count: Double): Unit = js.native
+    def setRowCount(count: Double): Unit
     
     /** datasource calls this when new data arrives. The grid then updates the provided rows. The rows are mapped [rowIndex]=>rowData].*/
-    def setRowData(rowData: NumberDictionary[js.Any]): Unit = js.native
+    def setRowData(rowData: NumberDictionary[js.Any]): Unit
   }
   object IViewportDatasourceParams {
     

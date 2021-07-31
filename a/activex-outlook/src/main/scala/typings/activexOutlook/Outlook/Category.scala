@@ -3,36 +3,34 @@ package typings.activexOutlook.Outlook
 import typings.activexStdole.stdole.OLE_COLOR
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Category extends StObject {
   
-  val Application: typings.activexOutlook.Outlook.Application = js.native
+  val Application: typings.activexOutlook.Outlook.Application
   
-  val CategoryBorderColor: OLE_COLOR = js.native
+  val CategoryBorderColor: OLE_COLOR
   
-  val CategoryGradientBottomColor: OLE_COLOR = js.native
+  val CategoryGradientBottomColor: OLE_COLOR
   
-  val CategoryGradientTopColor: OLE_COLOR = js.native
+  val CategoryGradientTopColor: OLE_COLOR
   
-  val CategoryID: String = js.native
+  val CategoryID: String
   
-  val Class: OlObjectClass = js.native
+  val Class: OlObjectClass
   
-  var Color: OlCategoryColor = js.native
+  var Color: OlCategoryColor
   
-  var Name: String = js.native
+  var Name: String
   
   @JSName("Outlook.Category_typekey")
-  var OutlookDotCategory_typekey: Category = js.native
+  var OutlookDotCategory_typekey: Category
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  val Session: NameSpace = js.native
+  val Session: NameSpace
   
-  var ShortcutKey: OlCategoryShortcutKey = js.native
+  var ShortcutKey: OlCategoryShortcutKey
 }
 object Category {
   

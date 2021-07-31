@@ -3,17 +3,15 @@ package typings.overwatchApi.mod
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait owl extends StObject {
   
-  def getLiveMatch(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  def getLiveMatch(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit
   
-  def getSchedule(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  def getSchedule(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit
   
-  def getStandings(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit = js.native
+  def getStandings(callback: js.Function2[/* err */ Error, /* data */ js.Any, Unit]): Unit
 }
 object owl {
   

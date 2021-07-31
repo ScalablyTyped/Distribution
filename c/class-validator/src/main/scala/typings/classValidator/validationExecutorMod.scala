@@ -7,7 +7,6 @@ import typings.classValidator.validatorMod.Validator
 import typings.classValidator.validatorOptionsMod.ValidatorOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object validationExecutorMod {
@@ -18,7 +17,7 @@ object validationExecutorMod {
     def this(validator: Validator) = this()
     def this(validator: Validator, validatorOptions: ValidatorOptions) = this()
     
-    var awaitingPromises: js.Array[js.Promise[_]] = js.native
+    var awaitingPromises: js.Array[js.Promise[js.Any]] = js.native
     
     var conditionalValidations: js.Any = js.native
     

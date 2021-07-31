@@ -2,31 +2,29 @@ package typings.vsoNodeApi.workItemTrackingInterfacesMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait WorkItemComments extends StObject {
   
   /**
     * Comments collection.
     */
-  var comments: js.Array[WorkItemComment] = js.native
+  var comments: js.Array[WorkItemComment]
   
   /**
     * The count of comments.
     */
-  var count: Double = js.native
+  var count: Double
   
   /**
     * Count of comments from the revision.
     */
-  var fromRevisionCount: Double = js.native
+  var fromRevisionCount: Double
   
   /**
     * Total count of comments.
     */
-  var totalCount: Double = js.native
+  var totalCount: Double
 }
 object WorkItemComments {
   

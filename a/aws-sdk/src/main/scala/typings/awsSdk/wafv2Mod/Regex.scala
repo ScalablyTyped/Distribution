@@ -2,16 +2,14 @@ package typings.awsSdk.wafv2Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Regex extends StObject {
   
   /**
     * The string representing the regular expression.
     */
-  var RegexString: js.UndefOr[RegexPatternString] = js.native
+  var RegexString: js.UndefOr[RegexPatternString] = js.undefined
 }
 object Regex {
   

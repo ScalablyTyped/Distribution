@@ -2,34 +2,32 @@ package typings.activexWord.Word
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChartCharacters extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  var Caption: String = js.native
+  var Caption: String
   
-  val Count: Double = js.native
+  val Count: Double
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  def Delete(): js.Any = js.native
+  def Delete(): js.Any
   
-  val Font: ChartFont = js.native
+  val Font: ChartFont
   
-  def Insert(String: String): js.Any = js.native
+  def Insert(String: String): js.Any
   
-  val Parent: js.Any = js.native
+  val Parent: js.Any
   
-  var PhoneticCharacters: String = js.native
+  var PhoneticCharacters: String
   
-  var Text: String = js.native
+  var Text: String
   
   @JSName("Word.ChartCharacters_typekey")
-  var WordDotChartCharacters_typekey: ChartCharacters = js.native
+  var WordDotChartCharacters_typekey: ChartCharacters
 }
 object ChartCharacters {
   

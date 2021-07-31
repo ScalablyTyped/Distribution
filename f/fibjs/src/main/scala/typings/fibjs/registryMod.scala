@@ -2,7 +2,6 @@ package typings.fibjs
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** module Or Internal Object */
@@ -11,6 +10,10 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * @detail 引用方式：,```JavaScript,var registry = require('registry');,var value = registry.get(registry.CLASSES_ROOT, "\node1\node2\value");,```
   */
 object registryMod {
+  
+  @JSImport("registry", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("registry", "CLASSES_ROOT")
   @js.native
@@ -48,38 +51,28 @@ object registryMod {
   @js.native
   val USERS: /* 3 */ Double = js.native
   
-  @JSImport("registry", "del")
-  @js.native
-  def del(root: Double, key: String): Unit = js.native
+  @scala.inline
+  def del(root: Double, key: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("del")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[Unit]
   
-  @JSImport("registry", "get")
-  @js.native
-  def get(root: Double, key: String): js.Any = js.native
+  @scala.inline
+  def get(root: Double, key: String): js.Any = (^.asInstanceOf[js.Dynamic].applyDynamic("get")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Any]
   
-  @JSImport("registry", "listSubKey")
-  @js.native
-  def listSubKey(root: Double, key: String): js.Array[_] = js.native
+  @scala.inline
+  def listSubKey(root: Double, key: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("listSubKey")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("registry", "listValue")
-  @js.native
-  def listValue(root: Double, key: String): js.Array[_] = js.native
+  @scala.inline
+  def listValue(root: Double, key: String): js.Array[js.Any] = (^.asInstanceOf[js.Dynamic].applyDynamic("listValue")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any])).asInstanceOf[js.Array[js.Any]]
   
-  @JSImport("registry", "set")
-  @js.native
-  def set(root: Double, key: String, value: String): Unit = js.native
-  @JSImport("registry", "set")
-  @js.native
-  def set(root: Double, key: String, value: String, `type`: Double): Unit = js.native
-  @JSImport("registry", "set")
-  @js.native
-  def set(root: Double, key: String, value: js.Array[_]): Unit = js.native
-  @JSImport("registry", "set")
-  @js.native
-  def set(root: Double, key: String, value: Double): Unit = js.native
-  @JSImport("registry", "set")
-  @js.native
-  def set(root: Double, key: String, value: Double, `type`: Double): Unit = js.native
-  @JSImport("registry", "set")
-  @js.native
-  def set(root: Double, key: String, value: ClassBuffer): Unit = js.native
+  @scala.inline
+  def set(root: Double, key: String, value: String): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(root: Double, key: String, value: String, `type`: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(root: Double, key: String, value: js.Array[js.Any]): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(root: Double, key: String, value: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(root: Double, key: String, value: Double, `type`: Double): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any], `type`.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  @scala.inline
+  def set(root: Double, key: String, value: ClassBuffer): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("set")(root.asInstanceOf[js.Any], key.asInstanceOf[js.Any], value.asInstanceOf[js.Any])).asInstanceOf[Unit]
 }

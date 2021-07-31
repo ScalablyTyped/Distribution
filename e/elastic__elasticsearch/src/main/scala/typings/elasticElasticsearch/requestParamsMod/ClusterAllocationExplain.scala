@@ -2,17 +2,17 @@ package typings.elasticElasticsearch.requestParamsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait ClusterAllocationExplain[T] extends Generic {
+trait ClusterAllocationExplain[T]
+  extends StObject
+     with Generic {
   
-  var body: js.UndefOr[T] = js.native
+  var body: js.UndefOr[T] = js.undefined
   
-  var include_disk_info: js.UndefOr[Boolean] = js.native
+  var include_disk_info: js.UndefOr[Boolean] = js.undefined
   
-  var include_yes_decisions: js.UndefOr[Boolean] = js.native
+  var include_yes_decisions: js.UndefOr[Boolean] = js.undefined
 }
 object ClusterAllocationExplain {
   
@@ -23,7 +23,7 @@ object ClusterAllocationExplain {
   }
   
   @scala.inline
-  implicit class ClusterAllocationExplainMutableBuilder[Self <: ClusterAllocationExplain[_], T] (val x: Self with ClusterAllocationExplain[T]) extends AnyVal {
+  implicit class ClusterAllocationExplainMutableBuilder[Self <: ClusterAllocationExplain[?], T] (val x: Self & ClusterAllocationExplain[T]) extends AnyVal {
     
     @scala.inline
     def setBody(value: T): Self = StObject.set(x, "body", value.asInstanceOf[js.Any])

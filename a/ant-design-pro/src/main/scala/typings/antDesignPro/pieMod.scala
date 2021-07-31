@@ -5,7 +5,6 @@ import typings.react.mod.Component
 import typings.react.mod.ReactNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object pieMod {
@@ -15,34 +14,33 @@ object pieMod {
   class default ()
     extends Component[IPieProps, js.Any, js.Any]
   
-  @js.native
   trait IPieProps extends StObject {
     
-    var animate: js.UndefOr[Boolean] = js.native
+    var animate: js.UndefOr[Boolean] = js.undefined
     
-    var color: js.UndefOr[String] = js.native
+    var color: js.UndefOr[String] = js.undefined
     
-    var colors: js.UndefOr[js.Array[String]] = js.native
+    var colors: js.UndefOr[js.Array[String]] = js.undefined
     
-    var data: js.UndefOr[js.Array[X]] = js.native
+    var data: js.UndefOr[js.Array[X]] = js.undefined
     
-    var hasLegend: js.UndefOr[Boolean] = js.native
+    var hasLegend: js.UndefOr[Boolean] = js.undefined
     
-    var height: Double = js.native
+    var height: Double
     
-    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.native
+    var padding: js.UndefOr[js.Tuple4[Double, Double, Double, Double]] = js.undefined
     
-    var percent: js.UndefOr[Double] = js.native
+    var percent: js.UndefOr[Double] = js.undefined
     
-    var subTitle: js.UndefOr[ReactNode] = js.native
+    var subTitle: js.UndefOr[ReactNode] = js.undefined
     
-    var title: js.UndefOr[ReactNode] = js.native
+    var title: js.UndefOr[ReactNode] = js.undefined
     
-    var tooltip: js.UndefOr[Boolean] = js.native
+    var tooltip: js.UndefOr[Boolean] = js.undefined
     
-    var total: js.UndefOr[ReactNode | Double | (js.Function0[ReactNode | Double])] = js.native
+    var total: js.UndefOr[ReactNode | Double | (js.Function0[ReactNode | Double])] = js.undefined
     
-    var valueFormat: js.UndefOr[js.Function1[/* value */ String, String | ReactNode]] = js.native
+    var valueFormat: js.UndefOr[js.Function1[/* value */ String, String | ReactNode]] = js.undefined
   }
   object IPieProps {
     

@@ -3,16 +3,14 @@ package typings.devtoolsProtocol.mod.Protocol.DOM
 import typings.devtoolsProtocol.mod.Protocol.Runtime.RemoteObjectId
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GetFileInfoRequest extends StObject {
   
   /**
     * JavaScript object id of the node wrapper.
     */
-  var objectId: RemoteObjectId = js.native
+  var objectId: RemoteObjectId
 }
 object GetFileInfoRequest {
   

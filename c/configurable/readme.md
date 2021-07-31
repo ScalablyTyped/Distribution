@@ -12,7 +12,7 @@ Configuration mixin
 | Keywords           | configuration |
 | # releases         | 0 |
 | # dependents       | 19 |
-| # downloads        | 288748 |
+| # downloads        | 307589 |
 | # stars            | 0 |
 
 ## Links

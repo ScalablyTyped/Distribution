@@ -3,26 +3,26 @@ package typings.axiosCancel
 import typings.axios.mod.AxiosStatic
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("axios-cancel", JSImport.Default)
+  @JSImport("axios-cancel", JSImport.Namespace)
   @js.native
-  def default(axiosStatic: AxiosStatic): Unit = js.native
-  @JSImport("axios-cancel", JSImport.Default)
-  @js.native
-  def default(axiosStatic: AxiosStatic, options: AxiosCancelOptions): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(axiosStatic: AxiosStatic): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("default")(axiosStatic.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  @scala.inline
+  def default(axiosStatic: AxiosStatic, options: AxiosCancelOptions): Unit = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(axiosStatic.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[Unit]
+  
   trait AxiosCancelOptions extends StObject {
     
     /**
       * Enables logging
       * default: false
       */
-    var debug: Boolean = js.native
+    var debug: Boolean
   }
   object AxiosCancelOptions {
     
@@ -43,10 +43,9 @@ object mod {
   /* augmented module */
   object axiosAugmentingMod {
     
-    @js.native
     trait AxiosRequestConfig extends StObject {
       
-      var requestId: js.UndefOr[String] = js.native
+      var requestId: js.UndefOr[String] = js.undefined
     }
     object AxiosRequestConfig {
       
@@ -67,12 +66,11 @@ object mod {
       }
     }
     
-    @js.native
     trait AxiosStatic extends StObject {
       
-      def cancel(requestId: String): Unit = js.native
+      def cancel(requestId: String): Unit
       
-      def cancelAll(): Unit = js.native
+      def cancelAll(): Unit
     }
     object AxiosStatic {
       

@@ -2,24 +2,22 @@ package typings.htmlToText
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait ForceWrapOnLimit extends StObject {
     
     /**
       * defines whether to break long words on the limit if true.
       */
-    var forceWrapOnLimit: Boolean = js.native
+    var forceWrapOnLimit: Boolean
     
     /**
       * an array containing the characters that may be wrapped on.
       * These are used in order.
       */
-    var wrapCharacters: js.Array[String] = js.native
+    var wrapCharacters: js.Array[String]
   }
   object ForceWrapOnLimit {
     
@@ -43,12 +41,11 @@ object anon {
     }
   }
   
-  @js.native
   trait IsAttributeValue extends StObject {
     
-    var isAttributeValue: Boolean = js.native
+    var isAttributeValue: Boolean
     
-    var strict: Boolean = js.native
+    var strict: Boolean
   }
   object IsAttributeValue {
     

@@ -10,9 +10,9 @@ This package is used to create accessible dialogs and modals.
 | ------------------ | :-------------: |
 | Full name          | @react-md/dialog |
 | Keywords           | accessibility, a11y, react-md, material design, react, dialog, modal, component, components |
-| # releases         | 32 |
+| # releases         | 39 |
 | # dependents       | 3 |
-| # downloads        | 7087 |
+| # downloads        | 18572 |
 | # stars            | 0 |
 
 ## Links

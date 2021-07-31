@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TimestampPropertyOptions extends StObject {
   
   /** If set, describes how the timestamp should be used as a search operator. */
-  var operatorOptions: js.UndefOr[TimestampOperatorOptions] = js.native
+  var operatorOptions: js.UndefOr[TimestampOperatorOptions] = js.undefined
 }
 object TimestampPropertyOptions {
   

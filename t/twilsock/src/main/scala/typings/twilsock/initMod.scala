@@ -5,7 +5,6 @@ import typings.twilsock.initregistrationMod.InitRegistration
 import typings.twilsock.protocolMod.Protocol.MessageType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object initMod {
@@ -24,14 +23,14 @@ object initMod {
       token: String,
       continuationToken: String,
       metadata: js.Object,
-      registrations: js.UndefOr[scala.Nothing],
+      registrations: js.Array[InitRegistration],
       tweaks: js.Object
     ) = this()
     def this(
       token: String,
       continuationToken: String,
       metadata: js.Object,
-      registrations: js.Array[InitRegistration],
+      registrations: Unit,
       tweaks: js.Object
     ) = this()
     

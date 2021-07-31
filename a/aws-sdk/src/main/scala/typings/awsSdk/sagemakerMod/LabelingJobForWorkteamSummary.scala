@@ -2,41 +2,39 @@ package typings.awsSdk.sagemakerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LabelingJobForWorkteamSummary extends StObject {
   
   /**
     * The date and time that the labeling job was created.
     */
-  var CreationTime: Timestamp = js.native
+  var CreationTime: Timestamp
   
   /**
     * A unique identifier for a labeling job. You can use this to refer to a specific labeling job.
     */
-  var JobReferenceCode: typings.awsSdk.sagemakerMod.JobReferenceCode = js.native
+  var JobReferenceCode: typings.awsSdk.sagemakerMod.JobReferenceCode
   
   /**
     * Provides information about the progress of a labeling job.
     */
-  var LabelCounters: js.UndefOr[LabelCountersForWorkteam] = js.native
+  var LabelCounters: js.UndefOr[LabelCountersForWorkteam] = js.undefined
   
   /**
     * The name of the labeling job that the work team is assigned to.
     */
-  var LabelingJobName: js.UndefOr[typings.awsSdk.sagemakerMod.LabelingJobName] = js.native
+  var LabelingJobName: js.UndefOr[typings.awsSdk.sagemakerMod.LabelingJobName] = js.undefined
   
   /**
     * The configured number of workers per data object.
     */
-  var NumberOfHumanWorkersPerDataObject: js.UndefOr[typings.awsSdk.sagemakerMod.NumberOfHumanWorkersPerDataObject] = js.native
+  var NumberOfHumanWorkersPerDataObject: js.UndefOr[typings.awsSdk.sagemakerMod.NumberOfHumanWorkersPerDataObject] = js.undefined
   
   /**
     * 
     */
-  var WorkRequesterAccountId: AccountId = js.native
+  var WorkRequesterAccountId: AccountId
 }
 object LabelingJobForWorkteamSummary {
   

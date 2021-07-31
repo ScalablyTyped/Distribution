@@ -3,14 +3,13 @@ package typings.reactInstantsearchCore.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Dictkey
-  extends /* widgetId */ StringDictionary[js.Any] {
+  extends StObject
+     with /* widgetId */ StringDictionary[js.Any] {
   
-  var aroundLatLng: Boolean = js.native
+  var aroundLatLng: Boolean
 }
 object Dictkey {
   

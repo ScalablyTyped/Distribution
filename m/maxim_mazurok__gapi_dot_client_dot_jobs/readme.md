@@ -10,9 +10,9 @@ TypeScript typings for Cloud Talent Solution API v4
 | ------------------ | :-------------: |
 | Full name          | @maxim_mazurok/gapi.client.jobs |
 | Keywords           | - |
-| # releases         | 7 |
+| # releases         | 6 |
 | # dependents       | 1 |
-| # downloads        | 631 |
+| # downloads        | 846 |
 | # stars            | 0 |
 
 ## Links

@@ -4,27 +4,27 @@ import org.scalablytyped.runtime.StringDictionary
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object rdsGetInstanceMod {
   
-  @JSImport("@pulumi/aws/rds/getInstance", "getInstance")
+  @JSImport("@pulumi/aws/rds/getInstance", JSImport.Namespace)
   @js.native
-  def getInstance(args: GetInstanceArgs): js.Promise[GetInstanceResult] = js.native
-  @JSImport("@pulumi/aws/rds/getInstance", "getInstance")
-  @js.native
-  def getInstance(args: GetInstanceArgs, opts: InvokeOptions): js.Promise[GetInstanceResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getInstance(args: GetInstanceArgs): js.Promise[GetInstanceResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetInstanceResult]]
+  @scala.inline
+  def getInstance(args: GetInstanceArgs, opts: InvokeOptions): js.Promise[GetInstanceResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getInstance")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetInstanceResult]]
+  
   trait GetInstanceArgs extends StObject {
     
     /**
       * The name of the RDS instance
       */
-    val dbInstanceIdentifier: String = js.native
+    val dbInstanceIdentifier: String
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetInstanceArgs {
     
@@ -48,202 +48,201 @@ object rdsGetInstanceMod {
     }
   }
   
-  @js.native
   trait GetInstanceResult extends StObject {
     
     /**
       * The hostname of the RDS instance. See also `endpoint` and `port`.
       */
-    val address: String = js.native
+    val address: String
     
     /**
       * Specifies the allocated storage size specified in gigabytes.
       */
-    val allocatedStorage: Double = js.native
+    val allocatedStorage: Double
     
     /**
       * Indicates that minor version patches are applied automatically.
       */
-    val autoMinorVersionUpgrade: Boolean = js.native
+    val autoMinorVersionUpgrade: Boolean
     
     /**
       * Specifies the name of the Availability Zone the DB instance is located in.
       */
-    val availabilityZone: String = js.native
+    val availabilityZone: String
     
     /**
       * Specifies the number of days for which automatic DB snapshots are retained.
       */
-    val backupRetentionPeriod: Double = js.native
+    val backupRetentionPeriod: Double
     
     /**
       * Specifies the identifier of the CA certificate for the DB instance.
       */
-    val caCertIdentifier: String = js.native
+    val caCertIdentifier: String
     
     /**
       * If the DB instance is a member of a DB cluster, contains the name of the DB cluster that the DB instance is a member of.
       */
-    val dbClusterIdentifier: String = js.native
+    val dbClusterIdentifier: String
     
     /**
       * The Amazon Resource Name (ARN) for the DB instance.
       */
-    val dbInstanceArn: String = js.native
+    val dbInstanceArn: String
     
     /**
       * Contains the name of the compute and memory capacity class of the DB instance.
       */
-    val dbInstanceClass: String = js.native
+    val dbInstanceClass: String
     
-    val dbInstanceIdentifier: String = js.native
+    val dbInstanceIdentifier: String
     
     /**
       * Specifies the port that the DB instance listens on.
       */
-    val dbInstancePort: Double = js.native
+    val dbInstancePort: Double
     
     /**
       * Contains the name of the initial database of this instance that was provided at create time, if one was specified when the DB instance was created. This same name is returned for the life of the DB instance.
       */
-    val dbName: String = js.native
+    val dbName: String
     
     /**
       * Provides the list of DB parameter groups applied to this DB instance.
       */
-    val dbParameterGroups: js.Array[String] = js.native
+    val dbParameterGroups: js.Array[String]
     
     /**
       * Provides List of DB security groups associated to this DB instance.
       */
-    val dbSecurityGroups: js.Array[String] = js.native
+    val dbSecurityGroups: js.Array[String]
     
     /**
       * Specifies the name of the subnet group associated with the DB instance.
       */
-    val dbSubnetGroup: String = js.native
+    val dbSubnetGroup: String
     
     /**
       * List of log types to export to cloudwatch.
       */
-    val enabledCloudwatchLogsExports: js.Array[String] = js.native
+    val enabledCloudwatchLogsExports: js.Array[String]
     
     /**
       * The connection endpoint in `address:port` format.
       */
-    val endpoint: String = js.native
+    val endpoint: String
     
     /**
       * Provides the name of the database engine to be used for this DB instance.
       */
-    val engine: String = js.native
+    val engine: String
     
     /**
       * Indicates the database engine version.
       */
-    val engineVersion: String = js.native
+    val engineVersion: String
     
     /**
       * The canonical hosted zone ID of the DB instance (to be used in a Route 53 Alias record).
       */
-    val hostedZoneId: String = js.native
+    val hostedZoneId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * Specifies the Provisioned IOPS (I/O operations per second) value.
       */
-    val iops: Double = js.native
+    val iops: Double
     
     /**
       * If StorageEncrypted is true, the KMS key identifier for the encrypted DB instance.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
     /**
       * License model information for this DB instance.
       */
-    val licenseModel: String = js.native
+    val licenseModel: String
     
     /**
       * Contains the master username for the DB instance.
       */
-    val masterUsername: String = js.native
+    val masterUsername: String
     
     /**
       * The interval, in seconds, between points when Enhanced Monitoring metrics are collected for the DB instance.
       */
-    val monitoringInterval: Double = js.native
+    val monitoringInterval: Double
     
     /**
       * The ARN for the IAM role that permits RDS to send Enhanced Monitoring metrics to CloudWatch Logs.
       */
-    val monitoringRoleArn: String = js.native
+    val monitoringRoleArn: String
     
     /**
       * Specifies if the DB instance is a Multi-AZ deployment.
       */
-    val multiAz: Boolean = js.native
+    val multiAz: Boolean
     
     /**
       * Provides the list of option group memberships for this DB instance.
       */
-    val optionGroupMemberships: js.Array[String] = js.native
+    val optionGroupMemberships: js.Array[String]
     
     /**
       * The database port.
       */
-    val port: Double = js.native
+    val port: Double
     
     /**
       * Specifies the daily time range during which automated backups are created.
       */
-    val preferredBackupWindow: String = js.native
+    val preferredBackupWindow: String
     
     /**
       * Specifies the weekly time range during which system maintenance can occur in UTC.
       */
-    val preferredMaintenanceWindow: String = js.native
+    val preferredMaintenanceWindow: String
     
     /**
       * Specifies the accessibility options for the DB instance.
       */
-    val publiclyAccessible: Boolean = js.native
+    val publiclyAccessible: Boolean
     
     /**
       * The identifier of the source DB that this is a replica of.
       */
-    val replicateSourceDb: String = js.native
+    val replicateSourceDb: String
     
     /**
       * The RDS Resource ID of this instance.
       */
-    val resourceId: String = js.native
+    val resourceId: String
     
     /**
       * Specifies whether the DB instance is encrypted.
       */
-    val storageEncrypted: Boolean = js.native
+    val storageEncrypted: Boolean
     
     /**
       * Specifies the storage type associated with DB instance.
       */
-    val storageType: String = js.native
+    val storageType: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * The time zone of the DB instance.
       */
-    val timezone: String = js.native
+    val timezone: String
     
     /**
       * Provides a list of VPC security group elements that the DB instance belongs to.
       */
-    val vpcSecurityGroups: js.Array[String] = js.native
+    val vpcSecurityGroups: js.Array[String]
   }
   object GetInstanceResult {
     

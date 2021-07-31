@@ -4,33 +4,42 @@ import typings.googleapisCommon.schemaMod.HttpMethod
 import typings.googleapisCommon.schemaMod.SchemaType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleapisCommonStrings {
   
   @js.native
-  sealed trait GET extends HttpMethod
+  sealed trait GET
+    extends StObject
+       with HttpMethod
   @scala.inline
   def GET: GET = "GET".asInstanceOf[GET]
   
   @js.native
-  sealed trait PATCH extends HttpMethod
+  sealed trait PATCH
+    extends StObject
+       with HttpMethod
   @scala.inline
   def PATCH: PATCH = "PATCH".asInstanceOf[PATCH]
   
   @js.native
-  sealed trait PUT extends HttpMethod
+  sealed trait PUT
+    extends StObject
+       with HttpMethod
   @scala.inline
   def PUT: PUT = "PUT".asInstanceOf[PUT]
   
   @js.native
-  sealed trait array extends SchemaType
+  sealed trait array
+    extends StObject
+       with SchemaType
   @scala.inline
   def array: array = "array".asInstanceOf[array]
   
   @js.native
-  sealed trait boolean extends SchemaType
+  sealed trait boolean
+    extends StObject
+       with SchemaType
   @scala.inline
   def boolean: boolean = "boolean".asInstanceOf[boolean]
   
@@ -40,17 +49,23 @@ object googleapisCommonStrings {
   def int32: int32 = "int32".asInstanceOf[int32]
   
   @js.native
-  sealed trait integer extends SchemaType
+  sealed trait integer
+    extends StObject
+       with SchemaType
   @scala.inline
   def integer: integer = "integer".asInstanceOf[integer]
   
   @js.native
-  sealed trait `object` extends SchemaType
+  sealed trait `object`
+    extends StObject
+       with SchemaType
   @scala.inline
   def `object`: `object` = "object".asInstanceOf[`object`]
   
   @js.native
-  sealed trait string extends SchemaType
+  sealed trait string
+    extends StObject
+       with SchemaType
   @scala.inline
   def string: string = "string".asInstanceOf[string]
 }

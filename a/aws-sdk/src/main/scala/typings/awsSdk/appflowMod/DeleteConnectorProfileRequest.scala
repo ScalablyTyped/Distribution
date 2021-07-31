@@ -2,21 +2,19 @@ package typings.awsSdk.appflowMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeleteConnectorProfileRequest extends StObject {
   
   /**
     *  The name of the connector profile. The name is unique for each ConnectorProfile in your account. 
     */
-  var connectorProfileName: ConnectorProfileName = js.native
+  var connectorProfileName: ConnectorProfileName
   
   /**
     *  Indicates whether Amazon AppFlow should delete the profile, even if it is currently in use in one or more flows. 
     */
-  var forceDelete: js.UndefOr[Boolean] = js.native
+  var forceDelete: js.UndefOr[Boolean] = js.undefined
 }
 object DeleteConnectorProfileRequest {
   

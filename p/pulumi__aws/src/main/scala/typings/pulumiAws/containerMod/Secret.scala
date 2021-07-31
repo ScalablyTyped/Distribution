@@ -2,16 +2,14 @@ package typings.pulumiAws.containerMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Secret extends StObject {
   
   /**
     * The name of the secret.
     */
-  var name: String = js.native
+  var name: String
   
   /**
     * The secret to expose to the container. The supported values are either the full ARN of the
@@ -22,7 +20,7 @@ trait Secret extends StObject {
     * task you are launching, then you can use either the full ARN or name of the parameter. If the
     * parameter exists in a different Region, then the full ARN must be specified.
     */
-  var valueFrom: String = js.native
+  var valueFrom: String
 }
 object Secret {
   

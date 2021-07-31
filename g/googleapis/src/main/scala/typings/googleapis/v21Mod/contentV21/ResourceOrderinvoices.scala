@@ -6,7 +6,6 @@ import typings.googleapisCommon.apiMod.BodyResponseCallback
 import typings.googleapisCommon.apiMod.MethodOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @JSImport("googleapis/build/src/apis/content/v2.1", "content_v2_1.Resource$Orderinvoices")
@@ -33,7 +32,7 @@ class ResourceOrderinvoices protected () extends StObject {
     */
   def createchargeinvoice(): GaxiosPromise[SchemaOrderinvoicesCreateChargeInvoiceResponse] = js.native
   def createchargeinvoice(callback: BodyResponseCallback[SchemaOrderinvoicesCreateChargeInvoiceResponse]): Unit = js.native
-  def createchargeinvoice(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderinvoicesCreateChargeInvoiceResponse] = js.native
+  def createchargeinvoice(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderinvoicesCreateChargeInvoiceResponse] = js.native
   def createchargeinvoice(params: ParamsResourceOrderinvoicesCreatechargeinvoice): GaxiosPromise[SchemaOrderinvoicesCreateChargeInvoiceResponse] = js.native
   def createchargeinvoice(
     params: ParamsResourceOrderinvoicesCreatechargeinvoice,
@@ -71,7 +70,7 @@ class ResourceOrderinvoices protected () extends StObject {
     */
   def createrefundinvoice(): GaxiosPromise[SchemaOrderinvoicesCreateRefundInvoiceResponse] = js.native
   def createrefundinvoice(callback: BodyResponseCallback[SchemaOrderinvoicesCreateRefundInvoiceResponse]): Unit = js.native
-  def createrefundinvoice(params: js.UndefOr[scala.Nothing], options: MethodOptions): GaxiosPromise[SchemaOrderinvoicesCreateRefundInvoiceResponse] = js.native
+  def createrefundinvoice(params: Unit, options: MethodOptions): GaxiosPromise[SchemaOrderinvoicesCreateRefundInvoiceResponse] = js.native
   def createrefundinvoice(params: ParamsResourceOrderinvoicesCreaterefundinvoice): GaxiosPromise[SchemaOrderinvoicesCreateRefundInvoiceResponse] = js.native
   def createrefundinvoice(
     params: ParamsResourceOrderinvoicesCreaterefundinvoice,

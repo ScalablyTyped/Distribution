@@ -3,29 +3,27 @@ package typings.vsoNodeApi.releaseInterfacesMod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeploymentApprovalPendingEvent extends StObject {
   
-  var approval: ReleaseApproval = js.native
+  var approval: ReleaseApproval
   
-  var approvalOptions: ApprovalOptions = js.native
+  var approvalOptions: ApprovalOptions
   
-  var completedApprovals: js.Array[ReleaseApproval] = js.native
+  var completedApprovals: js.Array[ReleaseApproval]
   
-  var data: StringDictionary[js.Any] = js.native
+  var data: StringDictionary[js.Any]
   
-  var deployment: Deployment = js.native
+  var deployment: Deployment
   
-  var isMultipleRankApproval: Boolean = js.native
+  var isMultipleRankApproval: Boolean
   
-  var pendingApprovals: js.Array[ReleaseApproval] = js.native
+  var pendingApprovals: js.Array[ReleaseApproval]
   
-  var project: ProjectReference = js.native
+  var project: ProjectReference
   
-  var release: Release = js.native
+  var release: Release
 }
 object DeploymentApprovalPendingEvent {
   

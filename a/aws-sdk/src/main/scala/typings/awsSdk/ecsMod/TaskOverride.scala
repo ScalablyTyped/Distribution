@@ -2,41 +2,39 @@ package typings.awsSdk.ecsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TaskOverride extends StObject {
   
   /**
     * One or more container overrides sent to a task.
     */
-  var containerOverrides: js.UndefOr[ContainerOverrides] = js.native
+  var containerOverrides: js.UndefOr[ContainerOverrides] = js.undefined
   
   /**
     * The cpu override for the task.
     */
-  var cpu: js.UndefOr[String] = js.native
+  var cpu: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the task execution IAM role override for the task.
     */
-  var executionRoleArn: js.UndefOr[String] = js.native
+  var executionRoleArn: js.UndefOr[String] = js.undefined
   
   /**
     * The Elastic Inference accelerator override for the task.
     */
-  var inferenceAcceleratorOverrides: js.UndefOr[InferenceAcceleratorOverrides] = js.native
+  var inferenceAcceleratorOverrides: js.UndefOr[InferenceAcceleratorOverrides] = js.undefined
   
   /**
     * The memory override for the task.
     */
-  var memory: js.UndefOr[String] = js.native
+  var memory: js.UndefOr[String] = js.undefined
   
   /**
     * The Amazon Resource Name (ARN) of the IAM role that containers in this task can assume. All containers in this task are granted the permissions that are specified in this role.
     */
-  var taskRoleArn: js.UndefOr[String] = js.native
+  var taskRoleArn: js.UndefOr[String] = js.undefined
 }
 object TaskOverride {
   

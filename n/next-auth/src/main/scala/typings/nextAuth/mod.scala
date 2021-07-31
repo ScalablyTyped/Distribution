@@ -26,59 +26,59 @@ import typings.std.ReturnType
 import typings.typeorm.connectionConnectionOptionsMod.ConnectionOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("next-auth", JSImport.Default)
+  @JSImport("next-auth", JSImport.Namespace)
   @js.native
-  def default(req: NextApiRequest, res: NextApiResponse[_]): js.Promise[Unit] = js.native
-  @JSImport("next-auth", JSImport.Default)
-  @js.native
-  def default(req: NextApiRequest, res: NextApiResponse[_], options: InitOptions): js.Promise[Unit] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def default(req: NextApiRequest, res: NextApiResponse[js.Any]): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  @scala.inline
+  def default(req: NextApiRequest, res: NextApiResponse[js.Any], options: InitOptions): js.Promise[Unit] = (^.asInstanceOf[js.Dynamic].applyDynamic("default")(req.asInstanceOf[js.Any], res.asInstanceOf[js.Any], options.asInstanceOf[js.Any])).asInstanceOf[js.Promise[Unit]]
+  
   trait AppOptions extends StObject {
     
-    var action: providers | session | csrf | signin | signout | callback | `verify-request` | error = js.native
+    var action: providers | session | csrf | signin | signout | callback | `verify-request` | error
     
-    var adapter: Adapter[_, _, _, _] = js.native
+    var adapter: Adapter[js.Any, js.Any, js.Any, js.Any]
     
-    var basePath: String = js.native
+    var basePath: String
     
-    var baseUrl: String = js.native
+    var baseUrl: String
     
-    var callbackUrl: String = js.native
+    var callbackUrl: String
     
-    var callbacks: Callbacks = js.native
+    var callbacks: Callbacks
     
-    var cookies: Cookies = js.native
+    var cookies: Cookies
     
-    var csrfToken: String = js.native
+    var csrfToken: String
     
-    var debug: Boolean = js.native
+    var debug: Boolean
     
-    var events: Events = js.native
+    var events: Events
     
-    var jwt: JWTOptions = js.native
+    var jwt: JWTOptions
     
-    var pages: PageOptions = js.native
+    var pages: PageOptions
     
-    var provider: js.UndefOr[String] = js.native
+    var provider: js.UndefOr[String] = js.undefined
     
-    var providers: StringDictionary[SessionProvider] = js.native
+    var providers: StringDictionary[SessionProvider]
     
-    var secret: String = js.native
+    var secret: String
     
-    var session: Session = js.native
+    var session: Session
   }
   object AppOptions {
     
     @scala.inline
     def apply(
       action: providers | session | csrf | signin | signout | callback | `verify-request` | error,
-      adapter: Adapter[_, _, _, _],
+      adapter: Adapter[js.Any, js.Any, js.Any, js.Any],
       basePath: String,
       baseUrl: String,
       callbackUrl: String,
@@ -104,7 +104,7 @@ object mod {
       def setAction(value: providers | session | csrf | signin | signout | callback | `verify-request` | error): Self = StObject.set(x, "action", value.asInstanceOf[js.Any])
       
       @scala.inline
-      def setAdapter(value: Adapter[_, _, _, _]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      def setAdapter(value: Adapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setBasePath(value: String): Self = StObject.set(x, "basePath", value.asInstanceOf[js.Any])
@@ -154,7 +154,6 @@ object mod {
   }
   
   // TODO: Improve callback typings
-  @js.native
   trait Callbacks extends StObject {
     
     var jwt: js.UndefOr[
@@ -166,13 +165,13 @@ object mod {
           /* isNewUser */ Boolean, 
           js.Promise[GenericObject]
         ]
-      ] = js.native
+      ] = js.undefined
     
-    var redirect: js.UndefOr[js.Function2[/* url */ String, /* baseUrl */ String, js.Promise[String]]] = js.native
+    var redirect: js.UndefOr[js.Function2[/* url */ String, /* baseUrl */ String, js.Promise[String]]] = js.undefined
     
     var session: js.UndefOr[
         js.Function2[/* session */ SessionBase, /* user */ User, js.Promise[GenericObject]]
-      ] = js.native
+      ] = js.undefined
     
     var signIn: js.UndefOr[
         js.Function3[
@@ -181,7 +180,7 @@ object mod {
           /* profile */ GenericObject, 
           js.Promise[Boolean]
         ]
-      ] = js.native
+      ] = js.undefined
   }
   object Callbacks {
     
@@ -224,12 +223,11 @@ object mod {
     }
   }
   
-  @js.native
   trait Cookie extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var options: js.UndefOr[CookieOptions] = js.native
+    var options: js.UndefOr[CookieOptions] = js.undefined
   }
   object Cookie {
     
@@ -253,18 +251,17 @@ object mod {
     }
   }
   
-  @js.native
   trait CookieOptions extends StObject {
     
-    var httpOnly: js.UndefOr[Boolean] = js.native
+    var httpOnly: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var path: js.UndefOr[String] = js.native
+    var path: js.UndefOr[String] = js.undefined
     
-    var sameSite: js.UndefOr[`true` | strict | lax | none] = js.native
+    var sameSite: js.UndefOr[`true` | strict | lax | none] = js.undefined
     
-    var secure: js.UndefOr[Boolean] = js.native
+    var secure: js.UndefOr[Boolean] = js.undefined
   }
   object CookieOptions {
     
@@ -311,22 +308,21 @@ object mod {
   
   type Cookies = StringDictionary[Cookie]
   
-  @js.native
   trait Events extends StObject {
     
-    var createUser: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.native
+    var createUser: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.undefined
     
-    var error: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.native
+    var error: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.undefined
     
-    var linkAccount: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.native
+    var linkAccount: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.undefined
     
-    var session: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.native
+    var session: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.undefined
     
-    var signIn: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.native
+    var signIn: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.undefined
     
-    var signOut: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.native
+    var signOut: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.undefined
     
-    var updateUser: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.native
+    var updateUser: js.UndefOr[js.Function1[/* message */ js.Any, js.Promise[Unit]]] = js.undefined
   }
   object Events {
     
@@ -383,32 +379,31 @@ object mod {
     }
   }
   
-  @js.native
   trait InitOptions extends StObject {
     
-    var adapter: js.UndefOr[Adapter[_, _, _, _]] = js.native
+    var adapter: js.UndefOr[Adapter[js.Any, js.Any, js.Any, js.Any]] = js.undefined
     
-    var callbacks: js.UndefOr[Callbacks] = js.native
+    var callbacks: js.UndefOr[Callbacks] = js.undefined
     
-    var cookies: js.UndefOr[Cookies] = js.native
+    var cookies: js.UndefOr[Cookies] = js.undefined
     
-    var database: js.UndefOr[String | ConnectionOptions] = js.native
+    var database: js.UndefOr[String | ConnectionOptions] = js.undefined
     
-    var debug: js.UndefOr[Boolean] = js.native
+    var debug: js.UndefOr[Boolean] = js.undefined
     
-    var events: js.UndefOr[Events] = js.native
+    var events: js.UndefOr[Events] = js.undefined
     
-    var jwt: js.UndefOr[JWTOptions] = js.native
+    var jwt: js.UndefOr[JWTOptions] = js.undefined
     
-    var pages: js.UndefOr[PageOptions] = js.native
+    var pages: js.UndefOr[PageOptions] = js.undefined
     
-    var providers: js.Array[ReturnType[PossibleProviders]] = js.native
+    var providers: js.Array[ReturnType[PossibleProviders]]
     
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
     
-    var session: js.UndefOr[Session] = js.native
+    var session: js.UndefOr[Session] = js.undefined
     
-    var useSecureCookies: js.UndefOr[Boolean] = js.native
+    var useSecureCookies: js.UndefOr[Boolean] = js.undefined
   }
   object InitOptions {
     
@@ -422,7 +417,7 @@ object mod {
     implicit class InitOptionsMutableBuilder[Self <: InitOptions] (val x: Self) extends AnyVal {
       
       @scala.inline
-      def setAdapter(value: Adapter[_, _, _, _]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
+      def setAdapter(value: Adapter[js.Any, js.Any, js.Any, js.Any]): Self = StObject.set(x, "adapter", value.asInstanceOf[js.Any])
       
       @scala.inline
       def setAdapterUndefined: Self = StObject.set(x, "adapter", js.undefined)
@@ -495,18 +490,17 @@ object mod {
     }
   }
   
-  @js.native
   trait JWTOptions extends StObject {
     
-    var decode: js.UndefOr[js.Function1[/* options */ JWTDecodeParams, js.Promise[String]]] = js.native
+    var decode: js.UndefOr[js.Function1[/* options */ JWTDecodeParams, js.Promise[String]]] = js.undefined
     
-    var encode: js.UndefOr[js.Function1[/* options */ JWTEncodeParams, js.Promise[String]]] = js.native
+    var encode: js.UndefOr[js.Function1[/* options */ JWTEncodeParams, js.Promise[String]]] = js.undefined
     
-    var encryption: js.UndefOr[Boolean] = js.native
+    var encryption: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var secret: js.UndefOr[String] = js.native
+    var secret: js.UndefOr[String] = js.undefined
   }
   object JWTOptions {
     
@@ -551,18 +545,17 @@ object mod {
     }
   }
   
-  @js.native
   trait PageOptions extends StObject {
     
-    var error: js.UndefOr[String] = js.native
+    var error: js.UndefOr[String] = js.undefined
     
-    var newUser: js.UndefOr[String | Null] = js.native
+    var newUser: js.UndefOr[String | Null] = js.undefined
     
-    var signIn: js.UndefOr[String] = js.native
+    var signIn: js.UndefOr[String] = js.undefined
     
-    var signOut: js.UndefOr[String] = js.native
+    var signOut: js.UndefOr[String] = js.undefined
     
-    var verifyRequest: js.UndefOr[String] = js.native
+    var verifyRequest: js.UndefOr[String] = js.undefined
   }
   object PageOptions {
     
@@ -610,14 +603,13 @@ object mod {
     }
   }
   
-  @js.native
   trait Session extends StObject {
     
-    var jwt: js.UndefOr[Boolean] = js.native
+    var jwt: js.UndefOr[Boolean] = js.undefined
     
-    var maxAge: js.UndefOr[Double] = js.native
+    var maxAge: js.UndefOr[Double] = js.undefined
     
-    var updateAge: js.UndefOr[Double] = js.native
+    var updateAge: js.UndefOr[Double] = js.undefined
   }
   object Session {
     
@@ -650,14 +642,13 @@ object mod {
     }
   }
   
-  @js.native
   trait User extends StObject {
     
-    var email: js.UndefOr[String | Null] = js.native
+    var email: js.UndefOr[String | Null] = js.undefined
     
-    var image: js.UndefOr[String | Null] = js.native
+    var image: js.UndefOr[String | Null] = js.undefined
     
-    var name: js.UndefOr[String | Null] = js.native
+    var name: js.UndefOr[String | Null] = js.undefined
   }
   object User {
     

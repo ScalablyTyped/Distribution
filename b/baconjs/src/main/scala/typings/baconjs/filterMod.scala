@@ -8,16 +8,17 @@ import typings.baconjs.replyMod.Reply
 import typings.baconjs.typesMod.EventSink
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object filterMod {
   
-  @JSImport("baconjs/types/filter", "filter")
+  @JSImport("baconjs/types/filter", JSImport.Namespace)
   @js.native
-  def filter[V](src: default[V], f: PredicateOrProperty[V]): default[V] = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("baconjs/types/filter", "filterT")
-  @js.native
-  def filterT[V](f: Predicate[V]): js.Function2[/* e */ Event[V], /* sink */ EventSink[V], Reply] = js.native
+  @scala.inline
+  def filter[V](src: default[V], f: PredicateOrProperty[V]): default[V] = (^.asInstanceOf[js.Dynamic].applyDynamic("filter")(src.asInstanceOf[js.Any], f.asInstanceOf[js.Any])).asInstanceOf[default[V]]
+  
+  @scala.inline
+  def filterT[V](f: Predicate[V]): js.Function2[/* e */ Event[V], /* sink */ EventSink[V], Reply] = ^.asInstanceOf[js.Dynamic].applyDynamic("filterT")(f.asInstanceOf[js.Any]).asInstanceOf[js.Function2[/* e */ Event[V], /* sink */ EventSink[V], Reply]]
 }

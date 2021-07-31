@@ -2,17 +2,15 @@ package typings.xstyledSystem.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OverflowProps extends StObject {
   
   val overflow: js.UndefOr[
     ResponsiveValue[
-      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _
+      /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object OverflowProps {
   
@@ -28,7 +26,7 @@ object OverflowProps {
     @scala.inline
     def setOverflow(
       value: ResponsiveValue[
-          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ _
+          /* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any
         ]
     ): Self = StObject.set(x, "overflow", value.asInstanceOf[js.Any])
     
@@ -36,6 +34,8 @@ object OverflowProps {
     def setOverflowUndefined: Self = StObject.set(x, "overflow", js.undefined)
     
     @scala.inline
-    def setOverflowVarargs(value: js.Any*): Self = StObject.set(x, "overflow", js.Array(value :_*))
+    def setOverflowVarargs(
+      value: (/* import warning: transforms.QualifyReferences#resolveTypeRef many Couldn't qualify CSS.Property.Overflow */ js.Any)*
+    ): Self = StObject.set(x, "overflow", js.Array(value :_*))
   }
 }

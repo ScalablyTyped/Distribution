@@ -2,16 +2,14 @@ package typings.gapiYoutube.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ResourceIdChannelIdString extends StObject {
   
   /**
     * The resourceId object contains information that identifies the resource that the user subscribed to.
     */
-  var resourceId: ChannelIdString = js.native
+  var resourceId: ChannelIdString
 }
 object ResourceIdChannelIdString {
   

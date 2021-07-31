@@ -2,41 +2,39 @@ package typings.awsSdk.pinpointMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SegmentDemographics extends StObject {
   
   /**
     * The app version criteria for the segment.
     */
-  var AppVersion: js.UndefOr[SetDimension] = js.native
+  var AppVersion: js.UndefOr[SetDimension] = js.undefined
   
   /**
     * The channel criteria for the segment.
     */
-  var Channel: js.UndefOr[SetDimension] = js.native
+  var Channel: js.UndefOr[SetDimension] = js.undefined
   
   /**
     * The device type criteria for the segment.
     */
-  var DeviceType: js.UndefOr[SetDimension] = js.native
+  var DeviceType: js.UndefOr[SetDimension] = js.undefined
   
   /**
     * The device make criteria for the segment.
     */
-  var Make: js.UndefOr[SetDimension] = js.native
+  var Make: js.UndefOr[SetDimension] = js.undefined
   
   /**
     * The device model criteria for the segment.
     */
-  var Model: js.UndefOr[SetDimension] = js.native
+  var Model: js.UndefOr[SetDimension] = js.undefined
   
   /**
     * The device platform criteria for the segment.
     */
-  var Platform: js.UndefOr[SetDimension] = js.native
+  var Platform: js.UndefOr[SetDimension] = js.undefined
 }
 object SegmentDemographics {
   

@@ -2,19 +2,17 @@ package typings.swag
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object anon {
   
-  @js.native
   trait TypeofHandlebars extends StObject {
     
-    val AST: js.Any = js.native
+    val AST: js.Any
     
-    val Utils: js.Any = js.native
+    val Utils: js.Any
     
-    val VM: js.Any = js.native
+    val VM: js.Any
   }
   object TypeofHandlebars {
     

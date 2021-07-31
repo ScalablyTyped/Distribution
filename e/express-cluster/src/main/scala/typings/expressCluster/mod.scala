@@ -5,7 +5,6 @@ import typings.node.NodeJS.WritableStream
 import typings.node.clusterMod.Worker_
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod extends Shortcut {
@@ -21,18 +20,17 @@ object mod extends Shortcut {
     def apply(fn: WorkerFunction, config: Config): Unit = js.native
   }
   
-  @js.native
   trait Config extends StObject {
     
-    var count: js.UndefOr[Double] = js.native
+    var count: js.UndefOr[Double] = js.undefined
     
-    var outputStream: js.UndefOr[WritableStream] = js.native
+    var outputStream: js.UndefOr[WritableStream] = js.undefined
     
-    var respawn: js.UndefOr[Boolean] = js.native
+    var respawn: js.UndefOr[Boolean] = js.undefined
     
-    var verbose: js.UndefOr[Boolean] = js.native
+    var verbose: js.UndefOr[Boolean] = js.undefined
     
-    var workerListener: js.UndefOr[js.Function0[Unit]] = js.native
+    var workerListener: js.UndefOr[js.Function0[Unit]] = js.undefined
   }
   object Config {
     

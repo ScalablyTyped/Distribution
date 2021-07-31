@@ -4,23 +4,21 @@ import typings.maximMazurokGapiClientAdsensehost.anon.Background
 import typings.maximMazurokGapiClientAdsensehost.anon.Family
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AdStyle extends StObject {
   
   /** The colors included in the style. These are represented as six hexadecimal characters, similar to HTML color codes, but without the leading hash. */
-  var colors: js.UndefOr[Background] = js.native
+  var colors: js.UndefOr[Background] = js.undefined
   
   /** The style of the corners in the ad (deprecated: never populated, ignored). */
-  var corners: js.UndefOr[String] = js.native
+  var corners: js.UndefOr[String] = js.undefined
   
   /** The font which is included in the style. */
-  var font: js.UndefOr[Family] = js.native
+  var font: js.UndefOr[Family] = js.undefined
   
   /** Kind this is, in this case adsensehost#adStyle. */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
 }
 object AdStyle {
   

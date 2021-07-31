@@ -5,60 +5,49 @@ import typings.geoipLite.geoipLiteStrings.`1`
 import typings.std.Error
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
   
-  @JSImport("geoip-lite", "clear")
+  @JSImport("geoip-lite", JSImport.Namespace)
   @js.native
-  def clear(): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("geoip-lite", "cmp")
-  @js.native
-  def cmp(a: CmpArgs, b: CmpArgs): Null | Lookup_ = js.native
+  @scala.inline
+  def clear(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("clear")().asInstanceOf[Unit]
   
-  @JSImport("geoip-lite", "lookup")
-  @js.native
-  def lookup(ip: String): Null | Lookup_ = js.native
-  @JSImport("geoip-lite", "lookup")
-  @js.native
-  def lookup(ip: Double): Null | Lookup_ = js.native
+  @scala.inline
+  def cmp(a: CmpArgs, b: CmpArgs): Null | Lookup_ = (^.asInstanceOf[js.Dynamic].applyDynamic("cmp")(a.asInstanceOf[js.Any], b.asInstanceOf[js.Any])).asInstanceOf[Null | Lookup_]
   
-  @JSImport("geoip-lite", "pretty")
-  @js.native
-  def pretty(ip: String): String = js.native
-  @JSImport("geoip-lite", "pretty")
-  @js.native
-  def pretty(ip: js.Array[String | Double]): String = js.native
-  @JSImport("geoip-lite", "pretty")
-  @js.native
-  def pretty(ip: Double): String = js.native
+  @scala.inline
+  def lookup(ip: String): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
+  @scala.inline
+  def lookup(ip: Double): Null | Lookup_ = ^.asInstanceOf[js.Dynamic].applyDynamic("lookup")(ip.asInstanceOf[js.Any]).asInstanceOf[Null | Lookup_]
   
-  @JSImport("geoip-lite", "reloadData")
-  @js.native
-  def reloadData(): Unit = js.native
-  @JSImport("geoip-lite", "reloadData")
-  @js.native
-  def reloadData(cb: AsyncCallback): Unit = js.native
+  @scala.inline
+  def pretty(ip: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def pretty(ip: js.Array[String | Double]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def pretty(ip: Double): String = ^.asInstanceOf[js.Dynamic].applyDynamic("pretty")(ip.asInstanceOf[js.Any]).asInstanceOf[String]
   
-  @JSImport("geoip-lite", "reloadDataSync")
-  @js.native
-  def reloadDataSync(): Unit = js.native
+  @scala.inline
+  def reloadData(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadData")().asInstanceOf[Unit]
+  @scala.inline
+  def reloadData(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadData")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("geoip-lite", "startWatchingDataUpdate")
-  @js.native
-  def startWatchingDataUpdate(): Unit = js.native
-  @JSImport("geoip-lite", "startWatchingDataUpdate")
-  @js.native
-  def startWatchingDataUpdate(cb: AsyncCallback): Unit = js.native
+  @scala.inline
+  def reloadDataSync(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("reloadDataSync")().asInstanceOf[Unit]
   
-  @JSImport("geoip-lite", "stopWatchingDataUpdate")
-  @js.native
-  def stopWatchingDataUpdate(): Unit = js.native
-  @JSImport("geoip-lite", "stopWatchingDataUpdate")
-  @js.native
-  def stopWatchingDataUpdate(cb: AsyncCallback): Unit = js.native
+  @scala.inline
+  def startWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")().asInstanceOf[Unit]
+  @scala.inline
+  def startWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("startWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def stopWatchingDataUpdate(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")().asInstanceOf[Unit]
+  @scala.inline
+  def stopWatchingDataUpdate(cb: AsyncCallback): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("stopWatchingDataUpdate")(cb.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
   type AsyncCallback = js.Function1[/* err */ js.UndefOr[Error], Unit]
   
@@ -72,29 +61,28 @@ object mod {
   */
   type CmpResult = _CmpResult | Null
   
-  @js.native
   trait Lookup_ extends StObject {
     
     /** The approximate accuracy radius (km), around the latitude and longitude */
-    var area: Double = js.native
+    var area: Double
     
     /** This is the full city name */
-    var city: String = js.native
+    var city: String
     
     /** 2 letter ISO-3166-1 country code https://www.iban.com/country-codes */
-    var country: String = js.native
+    var country: String
     
     /** 1 if the country is a member state of the European Union, 0 otherwise. */
-    var eu: `1` | `0` = js.native
+    var eu: `1` | `0`
     
     /** The latitude and longitude of the city */
-    var ll: js.Tuple2[Double, Double] = js.native
+    var ll: js.Tuple2[Double, Double]
     
     /** Metro code */
-    var metro: Double = js.native
+    var metro: Double
     
     /** [ <low bound of IP block>, <high bound of IP block> ] */
-    var range: js.Tuple2[Double, Double] = js.native
+    var range: js.Tuple2[Double, Double]
     
     /**
       * Up to 3 alphanumeric variable length characters as ISO 3166-2 code
@@ -102,10 +90,10 @@ object mod {
       * For the United Kingdom this could be ENG as a country like “England
       * FIPS 10-4 subcountry code
       */
-    var region: String = js.native
+    var region: String
     
     /** "Country/Zone" Timezone from IANA Time Zone Database */
-    var timezone: String = js.native
+    var timezone: String
   }
   object Lookup_ {
     

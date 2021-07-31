@@ -2,15 +2,13 @@ package typings.octokitTypes.endpointsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ChecksSetSuitesPreferencesParamsAutoTriggerChecks extends StObject {
   
-  var app_id: Double = js.native
+  var app_id: Double
   
-  var setting: Boolean = js.native
+  var setting: Boolean
 }
 object ChecksSetSuitesPreferencesParamsAutoTriggerChecks {
   

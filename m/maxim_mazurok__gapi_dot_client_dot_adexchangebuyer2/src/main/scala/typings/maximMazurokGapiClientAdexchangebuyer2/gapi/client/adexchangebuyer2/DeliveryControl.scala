@@ -2,20 +2,18 @@ package typings.maximMazurokGapiClientAdexchangebuyer2.gapi.client.adexchangebuy
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DeliveryControl extends StObject {
   
   /** Output only. Specified the creative blocking levels to be applied. */
-  var creativeBlockingLevel: js.UndefOr[String] = js.native
+  var creativeBlockingLevel: js.UndefOr[String] = js.undefined
   
   /** Output only. Specifies how the impression delivery will be paced. */
-  var deliveryRateType: js.UndefOr[String] = js.native
+  var deliveryRateType: js.UndefOr[String] = js.undefined
   
   /** Output only. Specifies any frequency caps. */
-  var frequencyCaps: js.UndefOr[js.Array[FrequencyCap]] = js.native
+  var frequencyCaps: js.UndefOr[js.Array[FrequencyCap]] = js.undefined
 }
 object DeliveryControl {
   

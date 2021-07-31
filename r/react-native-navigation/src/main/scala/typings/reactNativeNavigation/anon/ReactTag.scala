@@ -2,19 +2,17 @@ package typings.reactNativeNavigation.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ReactTag extends StObject {
   
-  var reactTag: Double | Null = js.native
+  var reactTag: Double | Null
 }
 object ReactTag {
   
   @scala.inline
   def apply(): ReactTag = {
-    val __obj = js.Dynamic.literal()
+    val __obj = js.Dynamic.literal(reactTag = null)
     __obj.asInstanceOf[ReactTag]
   }
   

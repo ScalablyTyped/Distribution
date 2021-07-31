@@ -2,13 +2,11 @@ package typings.braintreeWeb.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Client extends StObject {
   
-  var client: typings.braintreeWeb.clientMod.Client = js.native
+  var client: typings.braintreeWeb.clientMod.Client
 }
 object Client {
   

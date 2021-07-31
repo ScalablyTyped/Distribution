@@ -2,40 +2,35 @@ package typings.instabugReactnative.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object Replies {
   
-  @JSImport("instabug-reactnative", "Replies.getUnreadRepliesCount")
+  @JSImport("instabug-reactnative", "Replies")
   @js.native
-  def getUnreadRepliesCount(messageCountCallback: js.Function1[/* count */ Double, Unit]): Unit = js.native
+  val ^ : js.Any = js.native
   
-  @JSImport("instabug-reactnative", "Replies.hasChats")
-  @js.native
-  def hasChats(callback: js.Function1[/* previousChats */ Boolean, Unit]): Unit = js.native
+  @scala.inline
+  def getUnreadRepliesCount(messageCountCallback: js.Function1[/* count */ Double, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("getUnreadRepliesCount")(messageCountCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "Replies.setEnabled")
-  @js.native
-  def setEnabled(isEnabled: Boolean): Unit = js.native
+  @scala.inline
+  def hasChats(callback: js.Function1[/* previousChats */ Boolean, Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("hasChats")(callback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "Replies.setInAppNotificationSound")
-  @js.native
-  def setInAppNotificationSound(shouldPlaySound: Boolean): Unit = js.native
+  @scala.inline
+  def setEnabled(isEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setEnabled")(isEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "Replies.setInAppNotificationsEnabled")
-  @js.native
-  def setInAppNotificationsEnabled(inAppNotificationsEnabled: Boolean): Unit = js.native
+  @scala.inline
+  def setInAppNotificationSound(shouldPlaySound: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInAppNotificationSound")(shouldPlaySound.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "Replies.setOnNewReplyReceivedCallback")
-  @js.native
-  def setOnNewReplyReceivedCallback(onNewReplyReceivedCallback: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setInAppNotificationsEnabled(inAppNotificationsEnabled: Boolean): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setInAppNotificationsEnabled")(inAppNotificationsEnabled.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "Replies.setOnNewReplyReceivedHandler")
-  @js.native
-  def setOnNewReplyReceivedHandler(onNewReplyReceivedHandler: js.Function0[Unit]): Unit = js.native
+  @scala.inline
+  def setOnNewReplyReceivedCallback(onNewReplyReceivedCallback: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnNewReplyReceivedCallback")(onNewReplyReceivedCallback.asInstanceOf[js.Any]).asInstanceOf[Unit]
   
-  @JSImport("instabug-reactnative", "Replies.show")
-  @js.native
-  def show(): Unit = js.native
+  @scala.inline
+  def setOnNewReplyReceivedHandler(onNewReplyReceivedHandler: js.Function0[Unit]): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("setOnNewReplyReceivedHandler")(onNewReplyReceivedHandler.asInstanceOf[js.Any]).asInstanceOf[Unit]
+  
+  @scala.inline
+  def show(): Unit = ^.asInstanceOf[js.Dynamic].applyDynamic("show")().asInstanceOf[Unit]
 }

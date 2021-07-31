@@ -2,25 +2,23 @@ package typings.vueCompilerSfc.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SFCDescriptor extends StObject {
   
-  var customBlocks: js.Array[SFCBlock] = js.native
+  var customBlocks: js.Array[SFCBlock]
   
-  var filename: String = js.native
+  var filename: String
   
-  var script: SFCScriptBlock | Null = js.native
+  var script: SFCScriptBlock | Null
   
-  var scriptSetup: SFCScriptBlock | Null = js.native
+  var scriptSetup: SFCScriptBlock | Null
   
-  var source: String = js.native
+  var source: String
   
-  var styles: js.Array[SFCStyleBlock] = js.native
+  var styles: js.Array[SFCStyleBlock]
   
-  var template: SFCTemplateBlock | Null = js.native
+  var template: SFCTemplateBlock | Null
 }
 object SFCDescriptor {
   
@@ -31,7 +29,7 @@ object SFCDescriptor {
     source: String,
     styles: js.Array[SFCStyleBlock]
   ): SFCDescriptor = {
-    val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any])
+    val __obj = js.Dynamic.literal(customBlocks = customBlocks.asInstanceOf[js.Any], filename = filename.asInstanceOf[js.Any], source = source.asInstanceOf[js.Any], styles = styles.asInstanceOf[js.Any], script = null, scriptSetup = null, template = null)
     __obj.asInstanceOf[SFCDescriptor]
   }
   

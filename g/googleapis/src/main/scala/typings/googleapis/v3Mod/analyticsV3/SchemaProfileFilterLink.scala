@@ -2,34 +2,32 @@ package typings.googleapis.v3Mod.analyticsV3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * JSON template for an Analytics profile filter link.
   */
-@js.native
 trait SchemaProfileFilterLink extends StObject {
   
   /**
     * Filter for this link.
     */
-  var filterRef: js.UndefOr[SchemaFilterRef] = js.native
+  var filterRef: js.UndefOr[SchemaFilterRef] = js.undefined
   
   /**
     * Profile filter link ID.
     */
-  var id: js.UndefOr[String] = js.native
+  var id: js.UndefOr[String] = js.undefined
   
   /**
     * Resource type for Analytics filter.
     */
-  var kind: js.UndefOr[String] = js.native
+  var kind: js.UndefOr[String] = js.undefined
   
   /**
     * View (Profile) for this link.
     */
-  var profileRef: js.UndefOr[SchemaProfileRef] = js.native
+  var profileRef: js.UndefOr[SchemaProfileRef] = js.undefined
   
   /**
     * The rank of this profile filter link relative to the other filters linked
@@ -44,12 +42,12 @@ trait SchemaProfileFilterLink extends StObject {
     * link is inserted/updated/deleted all profile filter links will be
     * renumbered starting at 1.
     */
-  var rank: js.UndefOr[Double] = js.native
+  var rank: js.UndefOr[Double] = js.undefined
   
   /**
     * Link for this profile filter link.
     */
-  var selfLink: js.UndefOr[String] = js.native
+  var selfLink: js.UndefOr[String] = js.undefined
 }
 object SchemaProfileFilterLink {
   

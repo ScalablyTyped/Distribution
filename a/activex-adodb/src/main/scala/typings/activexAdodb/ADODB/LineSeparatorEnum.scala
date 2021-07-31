@@ -5,7 +5,6 @@ import typings.activexAdodb.activexAdodbNumbers.`10`
 import typings.activexAdodb.activexAdodbNumbers.`13`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Rewritten from type alias, can be one of: 

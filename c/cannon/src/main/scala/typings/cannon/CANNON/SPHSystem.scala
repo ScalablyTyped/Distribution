@@ -2,43 +2,41 @@ package typings.cannon.CANNON
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SPHSystem extends StObject {
   
-  def add(particle: Particle): Unit = js.native
+  def add(particle: Particle): Unit
   
-  var densities: js.Array[Double] = js.native
+  var densities: js.Array[Double]
   
-  var density: Double = js.native
+  var density: Double
   
-  var eps: Double = js.native
+  var eps: Double
   
-  def getNeighbors(particle: Particle, neighbors: js.Array[Particle]): Unit = js.native
+  def getNeighbors(particle: Particle, neighbors: js.Array[Particle]): Unit
   
-  def gradw(rVec: Vec3, resultVec: Vec3): Unit = js.native
+  def gradw(rVec: Vec3, resultVec: Vec3): Unit
   
-  def nablaw(r: Double): Double = js.native
+  def nablaw(r: Double): Double
   
-  var neighbors: js.Array[Double] = js.native
+  var neighbors: js.Array[Double]
   
-  var particles: js.Array[Particle] = js.native
+  var particles: js.Array[Particle]
   
-  var pressures: js.Array[Double] = js.native
+  var pressures: js.Array[Double]
   
-  def remove(particle: Particle): Unit = js.native
+  def remove(particle: Particle): Unit
   
-  var smoothingRadius: Double = js.native
+  var smoothingRadius: Double
   
-  var speedOfSound: Double = js.native
+  var speedOfSound: Double
   
-  def update(): Unit = js.native
+  def update(): Unit
   
-  var viscosity: Double = js.native
+  var viscosity: Double
   
-  def w(r: Double): Double = js.native
+  def w(r: Double): Double
 }
 object SPHSystem {
   

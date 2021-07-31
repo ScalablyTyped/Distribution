@@ -2,10 +2,8 @@ package typings.maximMazurokGapiClientCompute.gapi.client.compute
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait AutoscalingPolicyCpuUtilization extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait AutoscalingPolicyCpuUtilization extends StObject {
     * If the average CPU is above the target utilization, the autoscaler scales up until it reaches the maximum number of instances you specified or until the average utilization reaches
     * the target utilization.
     */
-  var utilizationTarget: js.UndefOr[Double] = js.native
+  var utilizationTarget: js.UndefOr[Double] = js.undefined
 }
 object AutoscalingPolicyCpuUtilization {
   

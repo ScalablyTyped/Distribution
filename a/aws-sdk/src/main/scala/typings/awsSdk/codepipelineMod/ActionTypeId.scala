@@ -2,31 +2,29 @@ package typings.awsSdk.codepipelineMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ActionTypeId extends StObject {
   
   /**
     * A category defines what kind of action can be taken in the stage, and constrains the provider type for the action. Valid categories are limited to one of the following values.    Source   Build   Test   Deploy   Invoke   Approval  
     */
-  var category: ActionCategory = js.native
+  var category: ActionCategory
   
   /**
     * The creator of the action being called. There are three valid values for the Owner field in the action category section within your pipeline structure: AWS, ThirdParty, and Custom. For more information, see Valid Action Types and Providers in CodePipeline.
     */
-  var owner: ActionOwner = js.native
+  var owner: ActionOwner
   
   /**
     * The provider of the service being called by the action. Valid providers are determined by the action category. For example, an action in the Deploy category type might have a provider of AWS CodeDeploy, which would be specified as CodeDeploy. For more information, see Valid Action Types and Providers in CodePipeline.
     */
-  var provider: ActionProvider = js.native
+  var provider: ActionProvider
   
   /**
     * A string that describes the action version.
     */
-  var version: Version = js.native
+  var version: Version
 }
 object ActionTypeId {
   

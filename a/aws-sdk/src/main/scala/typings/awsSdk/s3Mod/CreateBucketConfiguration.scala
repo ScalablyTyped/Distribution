@@ -2,16 +2,14 @@ package typings.awsSdk.s3Mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CreateBucketConfiguration extends StObject {
   
   /**
     * Specifies the Region where the bucket will be created. If you don't specify a Region, the bucket is created in the US East (N. Virginia) Region (us-east-1).
     */
-  var LocationConstraint: js.UndefOr[BucketLocationConstraint] = js.native
+  var LocationConstraint: js.UndefOr[BucketLocationConstraint] = js.undefined
 }
 object CreateBucketConfiguration {
   

@@ -6,7 +6,6 @@ import typings.leaflet.mod.TileLayerOptions
 import typings.std.HTMLElement
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* augmented module */
@@ -14,27 +13,30 @@ object mod {
   
   object gridLayer {
     
-    @JSImport("leaflet", "gridLayer.googleMutant")
+    @JSImport("leaflet", "gridLayer")
     @js.native
-    def googleMutant(): GoogleMutant_ = js.native
-    @JSImport("leaflet", "gridLayer.googleMutant")
-    @js.native
-    def googleMutant(options: GoogleMutantOptions): GoogleMutant_ = js.native
+    val ^ : js.Any = js.native
     
-    @js.native
-    trait GoogleMutantOptions extends TileLayerOptions {
+    @scala.inline
+    def googleMutant(): GoogleMutant_ = ^.asInstanceOf[js.Dynamic].applyDynamic("googleMutant")().asInstanceOf[GoogleMutant_]
+    @scala.inline
+    def googleMutant(options: GoogleMutantOptions): GoogleMutant_ = ^.asInstanceOf[js.Dynamic].applyDynamic("googleMutant")(options.asInstanceOf[js.Any]).asInstanceOf[GoogleMutant_]
+    
+    trait GoogleMutantOptions
+      extends StObject
+         with TileLayerOptions {
       
-      var continuousWorld: js.UndefOr[Boolean] = js.native
+      var continuousWorld: js.UndefOr[Boolean] = js.undefined
       
       /**
         * Google's map styles.
         */
-      var styles: js.UndefOr[js.Array[GoogleMutantStyle]] = js.native
+      var styles: js.UndefOr[js.Array[GoogleMutantStyle]] = js.undefined
       
       /**
         * Google's map type. 'hybrid' is not really supported.
         */
-      var `type`: js.UndefOr[GoogleMutantType] = js.native
+      var `type`: js.UndefOr[GoogleMutantType] = js.undefined
     }
     object GoogleMutantOptions {
       
@@ -75,23 +77,22 @@ object mod {
       *
       * https://developers.google.com/maps/documentation/javascript/style-reference
       */
-    @js.native
     trait GoogleMutantStyle extends StObject {
       
       /**
         * https://developers.google.com/maps/documentation/javascript/style-reference#style-elements
         */
-      var elementType: js.UndefOr[String] = js.native
+      var elementType: js.UndefOr[String] = js.undefined
       
       /**
         * https://developers.google.com/maps/documentation/javascript/style-reference#style-features
         */
-      var featureType: js.UndefOr[String] = js.native
+      var featureType: js.UndefOr[String] = js.undefined
       
       /**
         * https://developers.google.com/maps/documentation/javascript/style-reference#stylers
         */
-      var stylers: js.UndefOr[js.Array[GoogleMutantStyler]] = js.native
+      var stylers: js.UndefOr[js.Array[GoogleMutantStyler]] = js.undefined
     }
     object GoogleMutantStyle {
       
@@ -127,24 +128,23 @@ object mod {
       }
     }
     
-    @js.native
     trait GoogleMutantStyler extends StObject {
       
-      var color: js.UndefOr[String] = js.native
+      var color: js.UndefOr[String] = js.undefined
       
-      var gamma: js.UndefOr[Double] = js.native
+      var gamma: js.UndefOr[Double] = js.undefined
       
-      var hue: js.UndefOr[String] = js.native
+      var hue: js.UndefOr[String] = js.undefined
       
-      var invert_lightness: js.UndefOr[Boolean] = js.native
+      var invert_lightness: js.UndefOr[Boolean] = js.undefined
       
-      var lightness: js.UndefOr[Double] = js.native
+      var lightness: js.UndefOr[Double] = js.undefined
       
-      var saturation: js.UndefOr[Double] = js.native
+      var saturation: js.UndefOr[Double] = js.undefined
       
-      var visibility: js.UndefOr[String] = js.native
+      var visibility: js.UndefOr[String] = js.undefined
       
-      var weight: js.UndefOr[Double] = js.native
+      var weight: js.UndefOr[Double] = js.undefined
     }
     object GoogleMutantStyler {
       

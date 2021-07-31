@@ -5,15 +5,13 @@ import typings.agoraRtcSdk.agoraRtcSdkStrings.OPUS
 import typings.agoraRtcSdk.agoraRtcSdkStrings.VP8
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Audio extends StObject {
   
-  var audio: js.Array[OPUS] = js.native
+  var audio: js.Array[OPUS]
   
-  var video: js.Array[VP8 | H264] = js.native
+  var video: js.Array[VP8 | H264]
 }
 object Audio {
   

@@ -4,66 +4,64 @@ import typings.phaser.integer
 import typings.std.XMLHttpRequestResponseType
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait XHRSettingsObject extends StObject {
   
   /**
     * Should the XHR request use async or not?
     */
-  var async: js.UndefOr[Boolean] = js.native
+  var async: js.UndefOr[Boolean] = js.undefined
   
   /**
     * This value is used to populate the XHR `setRequestHeader` and is undefined by default.
     */
-  var header: js.UndefOr[String] = js.native
+  var header: js.UndefOr[String] = js.undefined
   
   /**
     * This value is used to populate the XHR `setRequestHeader` and is undefined by default.
     */
-  var headerValue: js.UndefOr[String] = js.native
+  var headerValue: js.UndefOr[String] = js.undefined
   
   /**
     * This value is used to populate the XHR `setRequestHeader` and is undefined by default.
     */
-  var headers: js.UndefOr[js.Object] = js.native
+  var headers: js.UndefOr[js.Object] = js.undefined
   
   /**
     * Provide a custom mime-type to use instead of the default.
     */
-  var overrideMimeType: js.UndefOr[String] = js.native
+  var overrideMimeType: js.UndefOr[String] = js.undefined
   
   /**
     * Optional password for the XHR request.
     */
-  var password: js.UndefOr[String] = js.native
+  var password: js.UndefOr[String] = js.undefined
   
   /**
     * This value is used to populate the XHR `setRequestHeader` and is undefined by default.
     */
-  var requestedWith: js.UndefOr[String] = js.native
+  var requestedWith: js.UndefOr[String] = js.undefined
   
   /**
     * The response type of the XHR request, i.e. `blob`, `text`, etc.
     */
-  var responseType: XMLHttpRequestResponseType = js.native
+  var responseType: XMLHttpRequestResponseType
   
   /**
     * Optional XHR timeout value.
     */
-  var timeout: js.UndefOr[integer] = js.native
+  var timeout: js.UndefOr[integer] = js.undefined
   
   /**
     * Optional username for the XHR request.
     */
-  var user: js.UndefOr[String] = js.native
+  var user: js.UndefOr[String] = js.undefined
   
   /**
     * The withCredentials property indicates whether or not cross-site Access-Control requests should be made using credentials such as cookies, authorization headers or TLS client certificates. Setting withCredentials has no effect on same-site requests.
     */
-  var withCredentials: js.UndefOr[Boolean] = js.native
+  var withCredentials: js.UndefOr[Boolean] = js.undefined
 }
 object XHRSettingsObject {
   

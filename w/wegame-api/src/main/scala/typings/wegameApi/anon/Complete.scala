@@ -3,42 +3,40 @@ package typings.wegameApi.anon
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Complete extends StObject {
   
-  var complete: js.UndefOr[js.Function0[Unit]] = js.native
+  var complete: js.UndefOr[js.Function0[Unit]] = js.undefined
   
-  var fail: js.UndefOr[js.Function0[Unit]] = js.native
+  var fail: js.UndefOr[js.Function0[Unit]] = js.undefined
   
   /**
     * 要上传文件资源的路径
     */
-  var filePath: String = js.native
+  var filePath: String
   
   /**
     * HTTP 请求中其他额外的 form data
     */
-  var formData: js.UndefOr[StringDictionary[js.Any]] = js.native
+  var formData: js.UndefOr[StringDictionary[js.Any]] = js.undefined
   
   /**
     * HTTP 请求 Header，Header 中不能设置 Referer
     */
-  var header: js.UndefOr[StringDictionary[String]] = js.native
+  var header: js.UndefOr[StringDictionary[String]] = js.undefined
   
   /**
     * 文件对应的 key，开发者在服务端可以通过这个 key 获取文件的二进制内容
     */
-  var name: String = js.native
+  var name: String
   
-  var success: js.UndefOr[js.Function1[/* res */ DataStatusCode, Unit]] = js.native
+  var success: js.UndefOr[js.Function1[/* res */ DataStatusCode, Unit]] = js.undefined
   
   /**
     * 开发者服务器地址
     */
-  var url: String = js.native
+  var url: String
 }
 object Complete {
   

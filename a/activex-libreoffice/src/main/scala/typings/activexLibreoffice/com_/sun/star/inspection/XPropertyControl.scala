@@ -4,14 +4,12 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.awt.XWindow
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * defines the interface for a single control in an {@link ObjectInspector}
   * @since OOo 2.0.3
   */
-@js.native
 trait XPropertyControl extends StObject {
   
   /**
@@ -20,10 +18,10 @@ trait XPropertyControl extends StObject {
     * The property control should actively notify its state changes to the context. In particular, changes in the focus and the value of the control must be
     * notified.
     */
-  var ControlContext: XPropertyControlContext = js.native
+  var ControlContext: XPropertyControlContext
   
   /** denotes the type of the control, as one of the {@link PropertyControlType} constants */
-  var ControlType: Double = js.native
+  var ControlType: Double
   
   /**
     * denotes the window which is the real UI representation of the property control.
@@ -32,7 +30,7 @@ trait XPropertyControl extends StObject {
     *
     * This Window must not be `NULL` , else the whole control is not usable.
     */
-  var ControlWindow: XWindow = js.native
+  var ControlWindow: XWindow
   
   /**
     * denotes the current content of the control.
@@ -40,13 +38,13 @@ trait XPropertyControl extends StObject {
     * At every point in time, this value is either `VOID` , or of the type described by {@link ValueType} .
     * @throws com::sun::star::beans::IllegalTypeException if an attempt is made to set a value which is not `VOID` and whose type does not equal {@link ValueType} .
     */
-  var Value: js.Any = js.native
+  var Value: js.Any
   
   /**
     * denotes the value type of the control.
     * @see Value
     */
-  var ValueType: `type` = js.native
+  var ValueType: `type`
   
   /**
     * determines whether the control content is currently modified
@@ -58,7 +56,7 @@ trait XPropertyControl extends StObject {
     * @see ControlContext
     * @see XPropertyControlContext.valueChanged
     */
-  def isModified(): Boolean = js.native
+  def isModified(): Boolean
   
   /**
     * notifies the context in which the control lives of the current control value, if this value is currently modified
@@ -66,7 +64,7 @@ trait XPropertyControl extends StObject {
     * @see ControlContext
     * @see XPropertyControlListener.valueChanged
     */
-  def notifyModifiedValue(): Unit = js.native
+  def notifyModifiedValue(): Unit
 }
 object XPropertyControl {
   

@@ -2,27 +2,25 @@ package typings.pulumiAws.outputMod.lex
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BotClarificationPromptMessage extends StObject {
   
   /**
     * The text of the message.
     */
-  var content: String = js.native
+  var content: String
   
   /**
     * The content type of the message string.
     */
-  var contentType: String = js.native
+  var contentType: String
   
   /**
     * Identifies the message group that the message belongs to. When a group
     * is assigned to a message, Amazon Lex returns one message from each group in the response.
     */
-  var groupNumber: js.UndefOr[Double] = js.native
+  var groupNumber: js.UndefOr[Double] = js.undefined
 }
 object BotClarificationPromptMessage {
   

@@ -2,19 +2,17 @@ package typings.jaegerClient.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TracingOptions extends StObject {
   
-  var logger: js.UndefOr[Logger] = js.native
+  var logger: js.UndefOr[Logger] = js.undefined
   
-  var metrics: js.UndefOr[PrometheusMetricsFactory] = js.native
+  var metrics: js.UndefOr[PrometheusMetricsFactory] = js.undefined
   
-  var reporter: js.UndefOr[Reporter] = js.native
+  var reporter: js.UndefOr[Reporter] = js.undefined
   
-  var tags: js.UndefOr[js.Any] = js.native
+  var tags: js.UndefOr[js.Any] = js.undefined
 }
 object TracingOptions {
   

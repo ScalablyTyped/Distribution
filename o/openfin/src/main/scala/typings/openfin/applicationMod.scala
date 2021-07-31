@@ -17,7 +17,6 @@ import typings.openfin.viewViewMod.View
 import typings.openfin.windowWindowMod.Window
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object applicationMod {
@@ -68,7 +67,7 @@ object applicationMod {
       * @return {Promise.<any>}
       * @tutorial Application.getManifest
       */
-    def getManifest(): js.Promise[_] = js.native
+    def getManifest(): js.Promise[js.Any] = js.native
     
     /**
       * Retrieves UUID of the application that launches this application. Invokes the error callback
@@ -322,20 +321,19 @@ object applicationMod {
     var url: String = js.native
   }
   
-  @js.native
   trait ApplicationInfo extends StObject {
     
-    var initialOptions: ApplicationOption = js.native
+    var initialOptions: ApplicationOption
     
-    var launchMode: String = js.native
+    var launchMode: String
     
-    var manifest: js.Object = js.native
+    var manifest: js.Object
     
-    var manifestUrl: String = js.native
+    var manifestUrl: String
     
-    var parentUuid: js.UndefOr[String] = js.native
+    var parentUuid: js.UndefOr[String] = js.undefined
     
-    var runtime: Version = js.native
+    var runtime: Version
   }
   object ApplicationInfo {
     
@@ -461,10 +459,9 @@ object applicationMod {
     def wrapSync(identity: Identity): Application = js.native
   }
   
-  @js.native
   trait LogInfo extends StObject {
     
-    var logId: String = js.native
+    var logId: String
   }
   object LogInfo {
     
@@ -482,12 +479,11 @@ object applicationMod {
     }
   }
   
-  @js.native
   trait ManifestInfo extends StObject {
     
-    var manifestUrl: String = js.native
+    var manifestUrl: String
     
-    var uuid: String = js.native
+    var uuid: String
   }
   object ManifestInfo {
     
@@ -508,12 +504,11 @@ object applicationMod {
     }
   }
   
-  @js.native
   trait RvmLaunchOptions extends StObject {
     
-    var noUi: js.UndefOr[Boolean] = js.native
+    var noUi: js.UndefOr[Boolean] = js.undefined
     
-    var userAppConfigArgs: js.UndefOr[js.Object] = js.native
+    var userAppConfigArgs: js.UndefOr[js.Object] = js.undefined
   }
   object RvmLaunchOptions {
     
@@ -540,14 +535,13 @@ object applicationMod {
     }
   }
   
-  @js.native
   trait ShortCutConfig extends StObject {
     
-    var desktop: js.UndefOr[Boolean] = js.native
+    var desktop: js.UndefOr[Boolean] = js.undefined
     
-    var startMenu: js.UndefOr[Boolean] = js.native
+    var startMenu: js.UndefOr[Boolean] = js.undefined
     
-    var systemStartup: js.UndefOr[Boolean] = js.native
+    var systemStartup: js.UndefOr[Boolean] = js.undefined
   }
   object ShortCutConfig {
     
@@ -590,16 +584,15 @@ object applicationMod {
     var monitorInfo: MonitorInfo = js.native
   }
   
-  @js.native
   trait TrayInfo extends StObject {
     
-    var bounds: Bounds = js.native
+    var bounds: Bounds
     
-    var monitorInfo: MonitorInfo = js.native
+    var monitorInfo: MonitorInfo
     
-    var x: Double = js.native
+    var x: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object TrayInfo {
     

@@ -3,10 +3,13 @@ package typings.knockout.mod
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object expressionRewriting {
+  
+  @JSImport("knockout", "expressionRewriting")
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("knockout", "expressionRewriting._twoWayBindings")
   @js.native
@@ -16,31 +19,25 @@ object expressionRewriting {
   @js.native
   val bindingRewriteValidators: js.Array[js.Any] = js.native
   
-  @JSImport("knockout", "expressionRewriting.parseObjectLiteral")
-  @js.native
-  def parseObjectLiteral(objectLiteralString: String): js.Array[KeyValue] = js.native
+  @scala.inline
+  def parseObjectLiteral(objectLiteralString: String): js.Array[KeyValue] = ^.asInstanceOf[js.Dynamic].applyDynamic("parseObjectLiteral")(objectLiteralString.asInstanceOf[js.Any]).asInstanceOf[js.Array[KeyValue]]
   
-  @JSImport("knockout", "expressionRewriting.preProcessBindings")
-  @js.native
-  def preProcessBindings(bindingsString: String): String = js.native
-  @JSImport("knockout", "expressionRewriting.preProcessBindings")
-  @js.native
-  def preProcessBindings(bindingsString: String, bindingOptions: BindingOptions): String = js.native
-  @JSImport("knockout", "expressionRewriting.preProcessBindings")
-  @js.native
-  def preProcessBindings(keyValueArray: js.Array[KeyValue]): String = js.native
-  @JSImport("knockout", "expressionRewriting.preProcessBindings")
-  @js.native
-  def preProcessBindings(keyValueArray: js.Array[KeyValue], bindingOptions: BindingOptions): String = js.native
+  @scala.inline
+  def preProcessBindings(bindingsString: String): String = ^.asInstanceOf[js.Dynamic].applyDynamic("preProcessBindings")(bindingsString.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def preProcessBindings(bindingsString: String, bindingOptions: BindingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("preProcessBindings")(bindingsString.asInstanceOf[js.Any], bindingOptions.asInstanceOf[js.Any])).asInstanceOf[String]
+  @scala.inline
+  def preProcessBindings(keyValueArray: js.Array[KeyValue]): String = ^.asInstanceOf[js.Dynamic].applyDynamic("preProcessBindings")(keyValueArray.asInstanceOf[js.Any]).asInstanceOf[String]
+  @scala.inline
+  def preProcessBindings(keyValueArray: js.Array[KeyValue], bindingOptions: BindingOptions): String = (^.asInstanceOf[js.Dynamic].applyDynamic("preProcessBindings")(keyValueArray.asInstanceOf[js.Any], bindingOptions.asInstanceOf[js.Any])).asInstanceOf[String]
   
-  @js.native
   trait KeyValue extends StObject {
     
-    var key: js.UndefOr[String] = js.native
+    var key: js.UndefOr[String] = js.undefined
     
-    var unknown: js.UndefOr[String] = js.native
+    var unknown: js.UndefOr[String] = js.undefined
     
-    var value: js.UndefOr[String] = js.native
+    var value: js.UndefOr[String] = js.undefined
   }
   object KeyValue {
     

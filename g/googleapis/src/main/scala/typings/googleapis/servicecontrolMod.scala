@@ -12,10 +12,13 @@ import typings.googleapisCommon.apiMod.GoogleConfigurable
 import typings.googleapisCommon.mod.AuthPlus
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object servicecontrolMod {
+  
+  @JSImport("googleapis/build/src/apis/servicecontrol", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   object VERSIONS {
     
@@ -76,9 +79,12 @@ object servicecontrolMod {
     /* static members */
     object DefaultTransporter {
       
-      @JSImport("googleapis/build/src/apis/servicecontrol", "auth.DefaultTransporter.constructor")
+      @JSImport("googleapis/build/src/apis/servicecontrol", "auth.DefaultTransporter")
       @js.native
-      def constructor(): js.Any = js.native
+      val ^ : js.Any = js.native
+      
+      @scala.inline
+      def constructor(): js.Any = ^.asInstanceOf[js.Dynamic].applyDynamic("constructor")().asInstanceOf[js.Any]
     }
     
     /* This class was inferred from a value with a constructor. In rare cases (like HTMLElement in the DOM) it might not work as you expect. */
@@ -122,10 +128,9 @@ object servicecontrolMod {
     override def _to: AuthPlus = ^
   }
   
-  @JSImport("googleapis/build/src/apis/servicecontrol", "servicecontrol")
-  @js.native
-  def servicecontrol(options: Options): Servicecontrol = js.native
-  @JSImport("googleapis/build/src/apis/servicecontrol", "servicecontrol")
-  @js.native
-  def servicecontrol_v1(version: v1): Servicecontrol = js.native
+  @scala.inline
+  def servicecontrol(options: Options): Servicecontrol = ^.asInstanceOf[js.Dynamic].applyDynamic("servicecontrol")(options.asInstanceOf[js.Any]).asInstanceOf[Servicecontrol]
+  
+  @scala.inline
+  def servicecontrol_v1(version: v1): Servicecontrol = ^.asInstanceOf[js.Dynamic].applyDynamic("servicecontrol")(version.asInstanceOf[js.Any]).asInstanceOf[Servicecontrol]
 }

@@ -4,7 +4,6 @@ import typings.supportsColor.mod.supportsColor.SupportsColor
 import typings.supportsColor.supportsColorBooleans.`false`
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object mod {
@@ -19,16 +18,15 @@ object mod {
   
   object supportsColor {
     
-    @js.native
     trait Level extends StObject {
       
-      var has16m: Boolean = js.native
+      var has16m: Boolean
       
-      var has256: Boolean = js.native
+      var has256: Boolean
       
-      var hasBasic: Boolean = js.native
+      var hasBasic: Boolean
       
-      var level: Double = js.native
+      var level: Double
     }
     object Level {
       
@@ -55,6 +53,6 @@ object mod {
       }
     }
     
-    type SupportsColor = `false` with Level
+    type SupportsColor = `false` & Level
   }
 }

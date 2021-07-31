@@ -5,43 +5,41 @@ import typings.devtoolsProtocol.mod.Protocol.Log.EntryAddedEvent
 import typings.devtoolsProtocol.mod.Protocol.Log.StartViolationsReportRequest
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait LogApi extends StObject {
   
   /**
     * Clears the log.
     */
-  def clear(): js.Promise[Unit] = js.native
+  def clear(): js.Promise[Unit]
   
   /**
     * Disables log domain, prevents further log entries from being reported to the client.
     */
-  def disable(): js.Promise[Unit] = js.native
+  def disable(): js.Promise[Unit]
   
   /**
     * Enables log domain, sends the entries collected so far to the client by means of the
     * `entryAdded` notification.
     */
-  def enable(): js.Promise[Unit] = js.native
+  def enable(): js.Promise[Unit]
   
   /**
     * Issued when new message was logged.
     */
   @JSName("on")
-  def on_entryAdded(event: entryAdded, listener: js.Function1[/* params */ EntryAddedEvent, Unit]): Unit = js.native
+  def on_entryAdded(event: entryAdded, listener: js.Function1[/* params */ EntryAddedEvent, Unit]): Unit
   
   /**
     * start violation reporting.
     */
-  def startViolationsReport(params: StartViolationsReportRequest): js.Promise[Unit] = js.native
+  def startViolationsReport(params: StartViolationsReportRequest): js.Promise[Unit]
   
   /**
     * Stop violation reporting.
     */
-  def stopViolationsReport(): js.Promise[Unit] = js.native
+  def stopViolationsReport(): js.Promise[Unit]
 }
 object LogApi {
   

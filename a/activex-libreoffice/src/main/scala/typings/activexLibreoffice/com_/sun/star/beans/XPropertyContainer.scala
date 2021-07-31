@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,8 +12,9 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * Some scripting engines cannot access properties directly when the property set is changed. Please use {@link XPropertySet.getPropertyValue()} etc. in
   * this case.
   */
-@js.native
-trait XPropertyContainer extends XInterface {
+trait XPropertyContainer
+  extends StObject
+     with XInterface {
   
   /**
     * adds a property to the object.
@@ -24,14 +24,14 @@ trait XPropertyContainer extends XInterface {
     * @throws PropertyExistException if a property with the same name already exists.
     * @throws IllegalTypeException if the specified type is not allowed.
     */
-  def addProperty(Name: String, Attributes: Double, DefaultValue: js.Any): Unit = js.native
+  def addProperty(Name: String, Attributes: Double, DefaultValue: js.Any): Unit
   
   /**
     * removes a property from the object.
     * @param Name specified the name of the property.
     * @throws UnknownPropertyException if the property does not exist.
     */
-  def removeProperty(Name: String): Unit = js.native
+  def removeProperty(Name: String): Unit
 }
 object XPropertyContainer {
   

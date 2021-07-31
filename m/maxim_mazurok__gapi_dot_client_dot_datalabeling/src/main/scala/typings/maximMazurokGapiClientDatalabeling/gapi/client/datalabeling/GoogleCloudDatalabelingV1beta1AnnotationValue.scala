@@ -2,41 +2,39 @@ package typings.maximMazurokGapiClientDatalabeling.gapi.client.datalabeling
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait GoogleCloudDatalabelingV1beta1AnnotationValue extends StObject {
   
   /** Annotation value for image bounding box, oriented bounding box and polygon cases. */
-  var imageBoundingPolyAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation] = js.native
+  var imageBoundingPolyAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageBoundingPolyAnnotation] = js.undefined
   
   /** Annotation value for image classification case. */
-  var imageClassificationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation] = js.native
+  var imageClassificationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageClassificationAnnotation] = js.undefined
   
   /**
     * Annotation value for image polyline cases. Polyline here is different from BoundingPoly. It is formed by line segments connected to each other but not closed form(Bounding Poly).
     * The line segments can cross each other.
     */
-  var imagePolylineAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation] = js.native
+  var imagePolylineAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImagePolylineAnnotation] = js.undefined
   
   /** Annotation value for image segmentation. */
-  var imageSegmentationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation] = js.native
+  var imageSegmentationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1ImageSegmentationAnnotation] = js.undefined
   
   /** Annotation value for text classification case. */
-  var textClassificationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1TextClassificationAnnotation] = js.native
+  var textClassificationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1TextClassificationAnnotation] = js.undefined
   
   /** Annotation value for text entity extraction case. */
-  var textEntityExtractionAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation] = js.native
+  var textEntityExtractionAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1TextEntityExtractionAnnotation] = js.undefined
   
   /** Annotation value for video classification case. */
-  var videoClassificationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation] = js.native
+  var videoClassificationAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoClassificationAnnotation] = js.undefined
   
   /** Annotation value for video event case. */
-  var videoEventAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoEventAnnotation] = js.native
+  var videoEventAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoEventAnnotation] = js.undefined
   
   /** Annotation value for video object detection and tracking case. */
-  var videoObjectTrackingAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation] = js.native
+  var videoObjectTrackingAnnotation: js.UndefOr[GoogleCloudDatalabelingV1beta1VideoObjectTrackingAnnotation] = js.undefined
 }
 object GoogleCloudDatalabelingV1beta1AnnotationValue {
   

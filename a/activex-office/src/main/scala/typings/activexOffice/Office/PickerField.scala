@@ -2,24 +2,22 @@ package typings.activexOffice.Office
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PickerField extends StObject {
   
-  val Application: js.Any = js.native
+  val Application: js.Any
   
-  val Creator: Double = js.native
+  val Creator: Double
   
-  val IsHidden: Boolean = js.native
+  val IsHidden: Boolean
   
-  val Name: String = js.native
+  val Name: String
   
   @JSName("Office.PickerField_typekey")
-  var OfficeDotPickerField_typekey: PickerField = js.native
+  var OfficeDotPickerField_typekey: PickerField
   
-  val Type: MsoPickerField = js.native
+  val Type: MsoPickerField
 }
 object PickerField {
   

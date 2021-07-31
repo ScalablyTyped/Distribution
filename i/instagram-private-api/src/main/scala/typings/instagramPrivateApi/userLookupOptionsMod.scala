@@ -3,21 +3,19 @@ package typings.instagramPrivateApi
 import typings.instagramPrivateApi.anon.Countrycode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object userLookupOptionsMod {
   
-  @js.native
   trait UserLookupOptions extends StObject {
     
-    var countryCodes: js.UndefOr[js.Array[Countrycode]] = js.native
+    var countryCodes: js.UndefOr[js.Array[Countrycode]] = js.undefined
     
-    var directlySignIn: js.UndefOr[Boolean] = js.native
+    var directlySignIn: js.UndefOr[Boolean] = js.undefined
     
-    var query: String = js.native
+    var query: String
     
-    var waterfallId: js.UndefOr[String] = js.native
+    var waterfallId: js.UndefOr[String] = js.undefined
   }
   object UserLookupOptions {
     

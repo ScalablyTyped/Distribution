@@ -5,44 +5,42 @@ import typings.pulumiAws.inputMod.ec2.GetCoipPoolFilter
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getCoipPoolMod {
   
-  @JSImport("@pulumi/aws/ec2/getCoipPool", "getCoipPool")
+  @JSImport("@pulumi/aws/ec2/getCoipPool", JSImport.Namespace)
   @js.native
-  def getCoipPool(): js.Promise[GetCoipPoolResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getCoipPool", "getCoipPool")
-  @js.native
-  def getCoipPool(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetCoipPoolResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getCoipPool", "getCoipPool")
-  @js.native
-  def getCoipPool(args: GetCoipPoolArgs): js.Promise[GetCoipPoolResult] = js.native
-  @JSImport("@pulumi/aws/ec2/getCoipPool", "getCoipPool")
-  @js.native
-  def getCoipPool(args: GetCoipPoolArgs, opts: InvokeOptions): js.Promise[GetCoipPoolResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getCoipPool(): js.Promise[GetCoipPoolResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")().asInstanceOf[js.Promise[GetCoipPoolResult]]
+  @scala.inline
+  def getCoipPool(args: Unit, opts: InvokeOptions): js.Promise[GetCoipPoolResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCoipPoolResult]]
+  @scala.inline
+  def getCoipPool(args: GetCoipPoolArgs): js.Promise[GetCoipPoolResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetCoipPoolResult]]
+  @scala.inline
+  def getCoipPool(args: GetCoipPoolArgs, opts: InvokeOptions): js.Promise[GetCoipPoolResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getCoipPool")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetCoipPoolResult]]
+  
   trait GetCoipPoolArgs extends StObject {
     
-    val filters: js.UndefOr[js.Array[GetCoipPoolFilter]] = js.native
+    val filters: js.UndefOr[js.Array[GetCoipPoolFilter]] = js.undefined
     
     /**
       * Local Gateway Route Table Id assigned to desired COIP Pool
       */
-    val localGatewayRouteTableId: js.UndefOr[String] = js.native
+    val localGatewayRouteTableId: js.UndefOr[String] = js.undefined
     
     /**
       * The id of the specific COIP Pool to retrieve.
       */
-    val poolId: js.UndefOr[String] = js.native
+    val poolId: js.UndefOr[String] = js.undefined
     
     /**
       * A mapping of tags, each pair of which must exactly match
       * a pair on the desired COIP Pool.
       */
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetCoipPoolArgs {
     
@@ -84,26 +82,25 @@ object getCoipPoolMod {
     }
   }
   
-  @js.native
   trait GetCoipPoolResult extends StObject {
     
-    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetCoipPoolFilter]] = js.native
+    val filters: js.UndefOr[js.Array[typings.pulumiAws.outputMod.ec2.GetCoipPoolFilter]] = js.undefined
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
-    val localGatewayRouteTableId: String = js.native
+    val localGatewayRouteTableId: String
     
     /**
       * Set of CIDR blocks in pool
       */
-    val poolCidrs: js.Array[String] = js.native
+    val poolCidrs: js.Array[String]
     
-    val poolId: String = js.native
+    val poolId: String
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
   }
   object GetCoipPoolResult {
     

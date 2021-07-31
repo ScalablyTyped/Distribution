@@ -6,40 +6,38 @@ import typings.nextAuth.utilsMod.NextApiRequest
 import typings.node.Buffer
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /* Inlined {  req :next-auth.next-auth/_utils.NextApiRequest,   secureCookie :boolean | undefined,   cookieName :string | undefined,   raw :string | undefined} & next-auth.next-auth/jwt.JWTDecodeParams */
-@js.native
 trait reqNextApiRequestsecureCo extends StObject {
   
-  var cookieName: js.UndefOr[String] = js.native
+  var cookieName: js.UndefOr[String] = js.undefined
   
-  var decryptionKey: js.UndefOr[String] = js.native
+  var decryptionKey: js.UndefOr[String] = js.undefined
   
-  var decryptionOptions: js.UndefOr[DecryptOptions] = js.native
+  var decryptionOptions: js.UndefOr[DecryptOptions] = js.undefined
   
-  var encryption: js.UndefOr[Boolean] = js.native
+  var encryption: js.UndefOr[Boolean] = js.undefined
   
-  var encryptionKey: js.UndefOr[String] = js.native
+  var encryptionKey: js.UndefOr[String] = js.undefined
   
-  var maxAge: js.UndefOr[Double] = js.native
+  var maxAge: js.UndefOr[Double] = js.undefined
   
-  var raw: js.UndefOr[String] = js.native
+  var raw: js.UndefOr[String] = js.undefined
   
-  var req: NextApiRequest = js.native
+  var req: NextApiRequest
   
-  var secret: String | Buffer = js.native
+  var secret: String | Buffer
   
-  var secureCookie: js.UndefOr[Boolean] = js.native
+  var secureCookie: js.UndefOr[Boolean] = js.undefined
   
-  var signingKey: js.UndefOr[String] = js.native
+  var signingKey: js.UndefOr[String] = js.undefined
   
-  var token: js.UndefOr[String] = js.native
+  var token: js.UndefOr[String] = js.undefined
   
-  var verificationKey: js.UndefOr[String] = js.native
+  var verificationKey: js.UndefOr[String] = js.undefined
   
-  var verificationOptions: js.UndefOr[VerifyOptions] = js.native
+  var verificationOptions: js.UndefOr[VerifyOptions] = js.undefined
 }
 object reqNextApiRequestsecureCo {
   

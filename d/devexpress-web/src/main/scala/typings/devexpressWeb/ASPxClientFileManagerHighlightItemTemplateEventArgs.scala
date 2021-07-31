@@ -2,34 +2,34 @@ package typings.devexpressWeb
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Provides data for the ASPxClientFileManager.HighlightItemTemplate event.
   */
-@js.native
-trait ASPxClientFileManagerHighlightItemTemplateEventArgs extends ASPxClientEventArgs {
+trait ASPxClientFileManagerHighlightItemTemplateEventArgs
+  extends StObject
+     with ASPxClientEventArgs {
   
   /**
     * Gets a string that is a filter value specified by the filter box.
     */
-  var filterValue: String = js.native
+  var filterValue: String
   
   /**
     * Get the name of the cascading style sheet (CSS) class associated with an item in the highlighted state.
     */
-  var highlightCssClassName: String = js.native
+  var highlightCssClassName: String
   
   /**
     * Gets the name of the item currently being processed.
     */
-  var itemName: String = js.native
+  var itemName: String
   
   /**
     * Gets an element containing the item template.
     */
-  var templateElement: String = js.native
+  var templateElement: String
 }
 object ASPxClientFileManagerHighlightItemTemplateEventArgs {
   

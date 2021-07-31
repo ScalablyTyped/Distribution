@@ -2,7 +2,6 @@ package typings.googleapis.v2beta1Mod.adexchangebuyer2V2beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -10,19 +9,18 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * mobile applications. Different placement targeting types will be logically
   * OR&#39;ed.
   */
-@js.native
 trait SchemaPlacementTargeting extends StObject {
   
   /**
     * Mobile application targeting information in a deal. This doesn&#39;t
     * apply to Auction Packages.
     */
-  var mobileApplicationTargeting: js.UndefOr[SchemaMobileApplicationTargeting] = js.native
+  var mobileApplicationTargeting: js.UndefOr[SchemaMobileApplicationTargeting] = js.undefined
   
   /**
     * URLs to be included/excluded.
     */
-  var urlTargeting: js.UndefOr[SchemaUrlTargeting] = js.native
+  var urlTargeting: js.UndefOr[SchemaUrlTargeting] = js.undefined
 }
 object SchemaPlacementTargeting {
   

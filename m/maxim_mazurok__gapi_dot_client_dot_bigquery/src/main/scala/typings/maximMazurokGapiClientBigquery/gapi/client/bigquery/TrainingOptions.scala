@@ -3,23 +3,21 @@ package typings.maximMazurokGapiClientBigquery.gapi.client.bigquery
 import org.scalablytyped.runtime.TopLevel
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait TrainingOptions extends StObject {
   
   /** Whether to enable auto ARIMA or not. */
-  var autoArima: js.UndefOr[Boolean] = js.native
+  var autoArima: js.UndefOr[Boolean] = js.undefined
   
   /** The max value of non-seasonal p and q. */
-  var autoArimaMaxOrder: js.UndefOr[String] = js.native
+  var autoArimaMaxOrder: js.UndefOr[String] = js.undefined
   
   /** Batch size for dnn models. */
-  var batchSize: js.UndefOr[String] = js.native
+  var batchSize: js.UndefOr[String] = js.undefined
   
   /** The data frequency of a time series. */
-  var dataFrequency: js.UndefOr[String] = js.native
+  var dataFrequency: js.UndefOr[String] = js.undefined
   
   /**
     * The column to split data with. This column won't be used as a feature. 1. When data_split_method is CUSTOM, the corresponding column should be boolean. The rows with true value tag
@@ -27,131 +25,131 @@ trait TrainingOptions extends StObject {
     * used as training data, and the rest are eval data. It respects the order in Orderable data types:
     * https://cloud.google.com/bigquery/docs/reference/standard-sql/data-types#data-type-properties
     */
-  var dataSplitColumn: js.UndefOr[String] = js.native
+  var dataSplitColumn: js.UndefOr[String] = js.undefined
   
   /**
     * The fraction of evaluation data over the whole input data. The rest of data will be used as training data. The format should be double. Accurate to two decimal places. Default value
     * is 0.2.
     */
-  var dataSplitEvalFraction: js.UndefOr[Double] = js.native
+  var dataSplitEvalFraction: js.UndefOr[Double] = js.undefined
   
   /** The data split type for training and evaluation, e.g. RANDOM. */
-  var dataSplitMethod: js.UndefOr[String] = js.native
+  var dataSplitMethod: js.UndefOr[String] = js.undefined
   
   /** Distance type for clustering models. */
-  var distanceType: js.UndefOr[String] = js.native
+  var distanceType: js.UndefOr[String] = js.undefined
   
   /** Dropout probability for dnn models. */
-  var dropout: js.UndefOr[Double] = js.native
+  var dropout: js.UndefOr[Double] = js.undefined
   
   /** Whether to stop early when the loss doesn't improve significantly any more (compared to min_relative_progress). Used only for iterative training algorithms. */
-  var earlyStop: js.UndefOr[Boolean] = js.native
+  var earlyStop: js.UndefOr[Boolean] = js.undefined
   
   /** Feedback type that specifies which algorithm to run for matrix factorization. */
-  var feedbackType: js.UndefOr[String] = js.native
+  var feedbackType: js.UndefOr[String] = js.undefined
   
   /** Hidden units for dnn models. */
-  var hiddenUnits: js.UndefOr[js.Array[String]] = js.native
+  var hiddenUnits: js.UndefOr[js.Array[String]] = js.undefined
   
   /** The geographical region based on which the holidays are considered in time series modeling. If a valid value is specified, then holiday effects modeling is enabled. */
-  var holidayRegion: js.UndefOr[String] = js.native
+  var holidayRegion: js.UndefOr[String] = js.undefined
   
   /** The number of periods ahead that need to be forecasted. */
-  var horizon: js.UndefOr[String] = js.native
+  var horizon: js.UndefOr[String] = js.undefined
   
   /** Include drift when fitting an ARIMA model. */
-  var includeDrift: js.UndefOr[Boolean] = js.native
+  var includeDrift: js.UndefOr[Boolean] = js.undefined
   
   /** Specifies the initial learning rate for the line search learn rate strategy. */
-  var initialLearnRate: js.UndefOr[Double] = js.native
+  var initialLearnRate: js.UndefOr[Double] = js.undefined
   
   /** Name of input label columns in training data. */
-  var inputLabelColumns: js.UndefOr[js.Array[String]] = js.native
+  var inputLabelColumns: js.UndefOr[js.Array[String]] = js.undefined
   
   /** Item column specified for matrix factorization models. */
-  var itemColumn: js.UndefOr[String] = js.native
+  var itemColumn: js.UndefOr[String] = js.undefined
   
   /** The column used to provide the initial centroids for kmeans algorithm when kmeans_initialization_method is CUSTOM. */
-  var kmeansInitializationColumn: js.UndefOr[String] = js.native
+  var kmeansInitializationColumn: js.UndefOr[String] = js.undefined
   
   /** The method used to initialize the centroids for kmeans algorithm. */
-  var kmeansInitializationMethod: js.UndefOr[String] = js.native
+  var kmeansInitializationMethod: js.UndefOr[String] = js.undefined
   
   /** L1 regularization coefficient. */
-  var l1Regularization: js.UndefOr[Double] = js.native
+  var l1Regularization: js.UndefOr[Double] = js.undefined
   
   /** L2 regularization coefficient. */
-  var l2Regularization: js.UndefOr[Double] = js.native
+  var l2Regularization: js.UndefOr[Double] = js.undefined
   
   /** Weights associated with each label class, for rebalancing the training data. Only applicable for classification models. */
   var labelClassWeights: js.UndefOr[
     /* import warning: importer.ImportType#apply c Unsupported type mapping: 
   {[ P in string ]: number}
-    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.TrainingOptions with TopLevel[js.Any]
-  ] = js.native
+    */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.TrainingOptions & TopLevel[js.Any]
+  ] = js.undefined
   
   /** Learning rate in training. Used only for iterative training algorithms. */
-  var learnRate: js.UndefOr[Double] = js.native
+  var learnRate: js.UndefOr[Double] = js.undefined
   
   /** The strategy to determine learn rate for the current iteration. */
-  var learnRateStrategy: js.UndefOr[String] = js.native
+  var learnRateStrategy: js.UndefOr[String] = js.undefined
   
   /** Type of loss function used during training run. */
-  var lossType: js.UndefOr[String] = js.native
+  var lossType: js.UndefOr[String] = js.undefined
   
   /** The maximum number of iterations in training. Used only for iterative training algorithms. */
-  var maxIterations: js.UndefOr[String] = js.native
+  var maxIterations: js.UndefOr[String] = js.undefined
   
   /** Maximum depth of a tree for boosted tree models. */
-  var maxTreeDepth: js.UndefOr[String] = js.native
+  var maxTreeDepth: js.UndefOr[String] = js.undefined
   
   /** When early_stop is true, stops training when accuracy improvement is less than 'min_relative_progress'. Used only for iterative training algorithms. */
-  var minRelativeProgress: js.UndefOr[Double] = js.native
+  var minRelativeProgress: js.UndefOr[Double] = js.undefined
   
   /** Minimum split loss for boosted tree models. */
-  var minSplitLoss: js.UndefOr[Double] = js.native
+  var minSplitLoss: js.UndefOr[Double] = js.undefined
   
   /** [Beta] Google Cloud Storage URI from which the model was imported. Only applicable for imported models. */
-  var modelUri: js.UndefOr[String] = js.native
+  var modelUri: js.UndefOr[String] = js.undefined
   
   /** A specification of the non-seasonal part of the ARIMA model: the three components (p, d, q) are the AR order, the degree of differencing, and the MA order. */
-  var nonSeasonalOrder: js.UndefOr[ArimaOrder] = js.native
+  var nonSeasonalOrder: js.UndefOr[ArimaOrder] = js.undefined
   
   /** Number of clusters for clustering models. */
-  var numClusters: js.UndefOr[String] = js.native
+  var numClusters: js.UndefOr[String] = js.undefined
   
   /** Num factors specified for matrix factorization models. */
-  var numFactors: js.UndefOr[String] = js.native
+  var numFactors: js.UndefOr[String] = js.undefined
   
   /** Optimization strategy for training linear regression models. */
-  var optimizationStrategy: js.UndefOr[String] = js.native
+  var optimizationStrategy: js.UndefOr[String] = js.undefined
   
   /**
     * Whether to preserve the input structs in output feature names. Suppose there is a struct A with field b. When false (default), the output feature name is A_b. When true, the output
     * feature name is A.b.
     */
-  var preserveInputStructs: js.UndefOr[Boolean] = js.native
+  var preserveInputStructs: js.UndefOr[Boolean] = js.undefined
   
   /** Subsample fraction of the training data to grow tree to prevent overfitting for boosted tree models. */
-  var subsample: js.UndefOr[Double] = js.native
+  var subsample: js.UndefOr[Double] = js.undefined
   
   /** Column to be designated as time series data for ARIMA model. */
-  var timeSeriesDataColumn: js.UndefOr[String] = js.native
+  var timeSeriesDataColumn: js.UndefOr[String] = js.undefined
   
   /** The id column that will be used to indicate different time series to forecast in parallel. */
-  var timeSeriesIdColumn: js.UndefOr[String] = js.native
+  var timeSeriesIdColumn: js.UndefOr[String] = js.undefined
   
   /** Column to be designated as time series timestamp for ARIMA model. */
-  var timeSeriesTimestampColumn: js.UndefOr[String] = js.native
+  var timeSeriesTimestampColumn: js.UndefOr[String] = js.undefined
   
   /** User column specified for matrix factorization models. */
-  var userColumn: js.UndefOr[String] = js.native
+  var userColumn: js.UndefOr[String] = js.undefined
   
   /** Hyperparameter for matrix factoration when implicit feedback type is specified. */
-  var walsAlpha: js.UndefOr[Double] = js.native
+  var walsAlpha: js.UndefOr[Double] = js.undefined
   
   /** Whether to train a model from the last checkpoint. */
-  var warmStart: js.UndefOr[Boolean] = js.native
+  var warmStart: js.UndefOr[Boolean] = js.undefined
 }
 object TrainingOptions {
   
@@ -306,7 +304,7 @@ object TrainingOptions {
     def setLabelClassWeights(
       value: /* import warning: importer.ImportType#apply c Unsupported type mapping: 
     {[ P in string ]: number}
-      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.TrainingOptions with TopLevel[js.Any]
+      */ typings.maximMazurokGapiClientBigquery.maximMazurokGapiClientBigqueryStrings.TrainingOptions & TopLevel[js.Any]
     ): Self = StObject.set(x, "labelClassWeights", value.asInstanceOf[js.Any])
     
     @scala.inline

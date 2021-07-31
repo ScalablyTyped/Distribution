@@ -7,27 +7,25 @@ import typings.jqueryColorpicker.anon.Cmyk
 import typings.jqueryColorpicker.anon.Instantiable
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait JQueryColorpickerStatic extends StObject {
   
-  var Color: Instantiable = js.native
+  var Color: Instantiable
   
-  var limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]] = js.native
+  var limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]]
   
-  var parsers: StringDictionary[js.Function1[/* color */ js.Any, _]] = js.native
+  var parsers: StringDictionary[js.Function1[/* color */ js.Any, js.Any]]
   
-  var parts: StringDictionary[js.Function1[/* inst */ js.Any, _]] = js.native
+  var parts: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]]
   
-  var partslists: StringDictionary[js.Array[String]] = js.native
+  var partslists: StringDictionary[js.Array[String]]
   
-  var regional: StringDictionary[String] = js.native
+  var regional: StringDictionary[String]
   
-  var swatches: StringDictionary[StringDictionary[RGB]] = js.native
+  var swatches: StringDictionary[StringDictionary[RGB]]
   
-  var writers: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, _]] = js.native
+  var writers: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]
 }
 object JQueryColorpickerStatic {
   
@@ -35,27 +33,26 @@ object JQueryColorpickerStatic {
   def apply(
     Color: Instantiable,
     limits: StringDictionary[js.Function1[/* color */ js.Any, Unit]],
-    parsers: StringDictionary[js.Function1[/* color */ js.Any, _]],
-    parts: StringDictionary[js.Function1[/* inst */ js.Any, _]],
+    parsers: StringDictionary[js.Function1[/* color */ js.Any, js.Any]],
+    parts: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]],
     partslists: StringDictionary[js.Array[String]],
     regional: StringDictionary[String],
     swatches: StringDictionary[StringDictionary[RGB]],
-    writers: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, _]]
+    writers: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]
   ): JQueryColorpickerStatic = {
     val __obj = js.Dynamic.literal(Color = Color.asInstanceOf[js.Any], limits = limits.asInstanceOf[js.Any], parsers = parsers.asInstanceOf[js.Any], parts = parts.asInstanceOf[js.Any], partslists = partslists.asInstanceOf[js.Any], regional = regional.asInstanceOf[js.Any], swatches = swatches.asInstanceOf[js.Any], writers = writers.asInstanceOf[js.Any])
     __obj.asInstanceOf[JQueryColorpickerStatic]
   }
   
-  @js.native
   trait CMYK extends StObject {
     
-    var c: Double = js.native
+    var c: Double
     
-    var k: Double = js.native
+    var k: Double
     
-    var m: Double = js.native
+    var m: Double
     
-    var y: Double = js.native
+    var y: Double
   }
   object CMYK {
     
@@ -82,54 +79,53 @@ object JQueryColorpickerStatic {
     }
   }
   
-  @js.native
   trait Color extends StObject {
     
-    def copy(): Color = js.native
+    def copy(): Color
     
-    def distance(color: Color): Double = js.native
+    def distance(color: Color): Double
     
-    def equals(color: Color): Boolean = js.native
+    def equals(color: Color): Boolean
     
-    def getAlpha(): Double = js.native
+    def getAlpha(): Double
     
-    def getCMYK(): CMYK = js.native
+    def getCMYK(): CMYK
     
-    def getChannels(): A = js.native
+    def getChannels(): A
     
-    def getHSL(): HSL = js.native
+    def getHSL(): HSL
     
-    def getHSV(): HSV = js.native
+    def getHSV(): HSV
     
-    def getLAB(): LAB = js.native
+    def getLAB(): LAB
     
-    def getRGB(): RGB = js.native
+    def getRGB(): RGB
     
-    def getSpaces(): Cmyk = js.native
+    def getSpaces(): Cmyk
     
-    def limit(steps: Double): Unit = js.native
+    def limit(steps: Double): Unit
     
-    def normalize(): Color = js.native
+    def normalize(): Color
     
-    var set: Boolean = js.native
+    var set: Boolean
     
-    def setAlpha(a: Double): Color = js.native
+    def setAlpha(a: Double): Color
     
-    def setCMYK(c: Double, m: Double, y: Double, k: Double): Color = js.native
+    def setCMYK(c: Double, m: Double, y: Double, k: Double): Color
     
-    def setHSL(h: Double, s: Double, l: Double): Color = js.native
+    def setHSL(h: Double, s: Double, l: Double): Color
     
-    def setHSV(h: Double, s: Double, v: Double): Color = js.native
+    def setHSV(h: Double, s: Double, v: Double): Color
     
-    def setLAB(l: Double, a: Double, b: Double): Color = js.native
+    def setLAB(l: Double, a: Double, b: Double): Color
     
-    def setRGB(r: Double, g: Double, b: Double): Color = js.native
+    def setRGB(r: Double, g: Double, b: Double): Color
     
-    def setSpaces(new_spaces: js.Any): Color = js.native
+    def setSpaces(new_spaces: js.Any): Color
     
-    def toCSS(): String = js.native
+    def toCSS(): String
     
-    def toHEX(): String = js.native
+    def toHEX(): String
   }
   object Color {
     
@@ -238,14 +234,13 @@ object JQueryColorpickerStatic {
     }
   }
   
-  @js.native
   trait HSL extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var l: Double = js.native
+    var l: Double
     
-    var s: Double = js.native
+    var s: Double
   }
   object HSL {
     
@@ -269,14 +264,13 @@ object JQueryColorpickerStatic {
     }
   }
   
-  @js.native
   trait HSV extends StObject {
     
-    var h: Double = js.native
+    var h: Double
     
-    var s: Double = js.native
+    var s: Double
     
-    var v: Double = js.native
+    var v: Double
   }
   object HSV {
     
@@ -310,10 +304,10 @@ object JQueryColorpickerStatic {
     def setLimits(value: StringDictionary[js.Function1[/* color */ js.Any, Unit]]): Self = StObject.set(x, "limits", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParsers(value: StringDictionary[js.Function1[/* color */ js.Any, _]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
+    def setParsers(value: StringDictionary[js.Function1[/* color */ js.Any, js.Any]]): Self = StObject.set(x, "parsers", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setParts(value: StringDictionary[js.Function1[/* inst */ js.Any, _]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
+    def setParts(value: StringDictionary[js.Function1[/* inst */ js.Any, js.Any]]): Self = StObject.set(x, "parts", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setPartslists(value: StringDictionary[js.Array[String]]): Self = StObject.set(x, "partslists", value.asInstanceOf[js.Any])
@@ -325,17 +319,16 @@ object JQueryColorpickerStatic {
     def setSwatches(value: StringDictionary[StringDictionary[RGB]]): Self = StObject.set(x, "swatches", value.asInstanceOf[js.Any])
     
     @scala.inline
-    def setWriters(value: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, _]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
+    def setWriters(value: StringDictionary[js.Function2[/* color */ js.Any, /* that */ js.Any, js.Any]]): Self = StObject.set(x, "writers", value.asInstanceOf[js.Any])
   }
   
-  @js.native
   trait LAB extends StObject {
     
-    var a: Double = js.native
+    var a: Double
     
-    var b: Double = js.native
+    var b: Double
     
-    var l: Double = js.native
+    var l: Double
   }
   object LAB {
     
@@ -359,14 +352,13 @@ object JQueryColorpickerStatic {
     }
   }
   
-  @js.native
   trait RGB extends StObject {
     
-    var b: Double = js.native
+    var b: Double
     
-    var g: Double = js.native
+    var g: Double
     
-    var r: Double = js.native
+    var r: Double
   }
   object RGB {
     

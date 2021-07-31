@@ -3,12 +3,11 @@ package typings.igniteUi
 import org.scalablytyped.runtime.StringDictionary
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait OlapResultTupleOptions
-  extends /**
+  extends StObject
+     with /**
   * Option for JSONPDataSourceSettings
   */
 /* optionName */ StringDictionary[js.Any] {
@@ -16,7 +15,7 @@ trait OlapResultTupleOptions
   /**
     * Optional="false" array of $.ig.OlapResultAxisMember objects which form the tuple object.
     */
-  var members: js.UndefOr[js.Array[_]] = js.native
+  var members: js.UndefOr[js.Array[js.Any]] = js.undefined
 }
 object OlapResultTupleOptions {
   
@@ -30,7 +29,7 @@ object OlapResultTupleOptions {
   implicit class OlapResultTupleOptionsMutableBuilder[Self <: OlapResultTupleOptions] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setMembers(value: js.Array[_]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
+    def setMembers(value: js.Array[js.Any]): Self = StObject.set(x, "members", value.asInstanceOf[js.Any])
     
     @scala.inline
     def setMembersUndefined: Self = StObject.set(x, "members", js.undefined)

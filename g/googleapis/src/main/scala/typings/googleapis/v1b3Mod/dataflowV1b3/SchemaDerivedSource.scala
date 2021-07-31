@@ -2,7 +2,6 @@ package typings.googleapis.v1b3Mod.dataflowV1b3
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -11,18 +10,17 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * active task using WorkItemStatus.dynamic_source_split), relative to the
   * source being split.
   */
-@js.native
 trait SchemaDerivedSource extends StObject {
   
   /**
     * What source to base the produced source on (if any).
     */
-  var derivationMode: js.UndefOr[String] = js.native
+  var derivationMode: js.UndefOr[String] = js.undefined
   
   /**
     * Specification of the source.
     */
-  var source: js.UndefOr[SchemaSource] = js.native
+  var source: js.UndefOr[SchemaSource] = js.undefined
 }
 object SchemaDerivedSource {
   

@@ -5,13 +5,11 @@ import typings.antvG2.anon.DrawShape
 import typings.antvG2.anon.ParsePath
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Shape extends StObject {
   
-  var getLinearValue: js.UndefOr[js.Function1[/* percent */ js.Any, _]] = js.native
+  var getLinearValue: js.UndefOr[js.Function1[/* percent */ js.Any, js.Any]] = js.undefined
   
   var registerShape: js.UndefOr[
     js.Function3[
@@ -20,7 +18,7 @@ trait Shape extends StObject {
       /* config */ Draw | DrawShape, 
       ParsePath
     ]
-  ] = js.native
+  ] = js.undefined
 }
 object Shape {
   
@@ -32,7 +30,7 @@ object Shape {
   implicit class ShapeMutableBuilder[Self <: Shape] (val x: Self) extends AnyVal {
     
     @scala.inline
-    def setGetLinearValue(value: /* percent */ js.Any => _): Self = StObject.set(x, "getLinearValue", js.Any.fromFunction1(value))
+    def setGetLinearValue(value: /* percent */ js.Any => js.Any): Self = StObject.set(x, "getLinearValue", js.Any.fromFunction1(value))
     
     @scala.inline
     def setGetLinearValueUndefined: Self = StObject.set(x, "getLinearValue", js.undefined)

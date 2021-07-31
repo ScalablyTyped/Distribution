@@ -3,26 +3,24 @@ package typings.igniteUi
 import typings.std.Element
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait HeaderCellRenderedEventUIParam extends StObject {
   
   /**
     * Gets the column key.
     */
-  var columnKey: js.UndefOr[String] = js.native
+  var columnKey: js.UndefOr[String] = js.undefined
   
   /**
     * Gets a reference to the grid.
     */
-  var owner: js.UndefOr[js.Any] = js.native
+  var owner: js.UndefOr[js.Any] = js.undefined
   
   /**
     * Gets a reference to header cell DOM element.
     */
-  var th: js.UndefOr[Element] = js.native
+  var th: js.UndefOr[Element] = js.undefined
 }
 object HeaderCellRenderedEventUIParam {
   

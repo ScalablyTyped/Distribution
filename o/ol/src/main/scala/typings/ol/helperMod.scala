@@ -14,10 +14,13 @@ import typings.std.WebGLTexture
 import typings.std.WebGLUniformLocation
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object helperMod {
+  
+  @JSImport("ol/webgl/Helper", JSImport.Namespace)
+  @js.native
+  val ^ : js.Any = js.native
   
   @JSImport("ol/webgl/Helper", JSImport.Default)
   @js.native
@@ -32,23 +35,31 @@ object helperMod {
   object AttributeType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[AttributeType with Double] = js.native
+    def apply(value: Double): js.UndefOr[AttributeType & Double] = js.native
     
     @js.native
-    sealed trait FLOAT extends AttributeType
-    /* 5126 */ val FLOAT: typings.ol.helperMod.AttributeType.FLOAT with Double = js.native
+    sealed trait FLOAT
+      extends StObject
+         with AttributeType
+    /* 5126 */ val FLOAT: typings.ol.helperMod.AttributeType.FLOAT & Double = js.native
     
     @js.native
-    sealed trait UNSIGNED_BYTE extends AttributeType
-    /* 5121 */ val UNSIGNED_BYTE: typings.ol.helperMod.AttributeType.UNSIGNED_BYTE with Double = js.native
+    sealed trait UNSIGNED_BYTE
+      extends StObject
+         with AttributeType
+    /* 5121 */ val UNSIGNED_BYTE: typings.ol.helperMod.AttributeType.UNSIGNED_BYTE & Double = js.native
     
     @js.native
-    sealed trait UNSIGNED_INT extends AttributeType
-    /* 5125 */ val UNSIGNED_INT: typings.ol.helperMod.AttributeType.UNSIGNED_INT with Double = js.native
+    sealed trait UNSIGNED_INT
+      extends StObject
+         with AttributeType
+    /* 5125 */ val UNSIGNED_INT: typings.ol.helperMod.AttributeType.UNSIGNED_INT & Double = js.native
     
     @js.native
-    sealed trait UNSIGNED_SHORT extends AttributeType
-    /* 5123 */ val UNSIGNED_SHORT: typings.ol.helperMod.AttributeType.UNSIGNED_SHORT with Double = js.native
+    sealed trait UNSIGNED_SHORT
+      extends StObject
+         with AttributeType
+    /* 5123 */ val UNSIGNED_SHORT: typings.ol.helperMod.AttributeType.UNSIGNED_SHORT & Double = js.native
   }
   
   @js.native
@@ -58,31 +69,43 @@ object helperMod {
   object DefaultUniform extends StObject {
     
     @JSBracketAccess
-    def apply(value: String): js.UndefOr[DefaultUniform with String] = js.native
+    def apply(value: String): js.UndefOr[DefaultUniform & String] = js.native
     
     @js.native
-    sealed trait OFFSET_ROTATION_MATRIX extends DefaultUniform
-    /* "u_offsetRotateMatrix" */ val OFFSET_ROTATION_MATRIX: typings.ol.helperMod.DefaultUniform.OFFSET_ROTATION_MATRIX with String = js.native
+    sealed trait OFFSET_ROTATION_MATRIX
+      extends StObject
+         with DefaultUniform
+    /* "u_offsetRotateMatrix" */ val OFFSET_ROTATION_MATRIX: typings.ol.helperMod.DefaultUniform.OFFSET_ROTATION_MATRIX & String = js.native
     
     @js.native
-    sealed trait OFFSET_SCALE_MATRIX extends DefaultUniform
-    /* "u_offsetScaleMatrix" */ val OFFSET_SCALE_MATRIX: typings.ol.helperMod.DefaultUniform.OFFSET_SCALE_MATRIX with String = js.native
+    sealed trait OFFSET_SCALE_MATRIX
+      extends StObject
+         with DefaultUniform
+    /* "u_offsetScaleMatrix" */ val OFFSET_SCALE_MATRIX: typings.ol.helperMod.DefaultUniform.OFFSET_SCALE_MATRIX & String = js.native
     
     @js.native
-    sealed trait PROJECTION_MATRIX extends DefaultUniform
-    /* "u_projectionMatrix" */ val PROJECTION_MATRIX: typings.ol.helperMod.DefaultUniform.PROJECTION_MATRIX with String = js.native
+    sealed trait PROJECTION_MATRIX
+      extends StObject
+         with DefaultUniform
+    /* "u_projectionMatrix" */ val PROJECTION_MATRIX: typings.ol.helperMod.DefaultUniform.PROJECTION_MATRIX & String = js.native
     
     @js.native
-    sealed trait RESOLUTION extends DefaultUniform
-    /* "u_resolution" */ val RESOLUTION: typings.ol.helperMod.DefaultUniform.RESOLUTION with String = js.native
+    sealed trait RESOLUTION
+      extends StObject
+         with DefaultUniform
+    /* "u_resolution" */ val RESOLUTION: typings.ol.helperMod.DefaultUniform.RESOLUTION & String = js.native
     
     @js.native
-    sealed trait TIME extends DefaultUniform
-    /* "u_time" */ val TIME: typings.ol.helperMod.DefaultUniform.TIME with String = js.native
+    sealed trait TIME
+      extends StObject
+         with DefaultUniform
+    /* "u_time" */ val TIME: typings.ol.helperMod.DefaultUniform.TIME & String = js.native
     
     @js.native
-    sealed trait ZOOM extends DefaultUniform
-    /* "u_zoom" */ val ZOOM: typings.ol.helperMod.DefaultUniform.ZOOM with String = js.native
+    sealed trait ZOOM
+      extends StObject
+         with DefaultUniform
+    /* "u_zoom" */ val ZOOM: typings.ol.helperMod.DefaultUniform.ZOOM & String = js.native
   }
   
   @js.native
@@ -92,29 +115,31 @@ object helperMod {
   object ShaderType extends StObject {
     
     @JSBracketAccess
-    def apply(value: Double): js.UndefOr[ShaderType with Double] = js.native
+    def apply(value: Double): js.UndefOr[ShaderType & Double] = js.native
     
     @js.native
-    sealed trait FRAGMENT_SHADER extends ShaderType
-    /* 35632 */ val FRAGMENT_SHADER: typings.ol.helperMod.ShaderType.FRAGMENT_SHADER with Double = js.native
+    sealed trait FRAGMENT_SHADER
+      extends StObject
+         with ShaderType
+    /* 35632 */ val FRAGMENT_SHADER: typings.ol.helperMod.ShaderType.FRAGMENT_SHADER & Double = js.native
     
     @js.native
-    sealed trait VERTEX_SHADER extends ShaderType
-    /* 35633 */ val VERTEX_SHADER: typings.ol.helperMod.ShaderType.VERTEX_SHADER with Double = js.native
+    sealed trait VERTEX_SHADER
+      extends StObject
+         with ShaderType
+    /* 35633 */ val VERTEX_SHADER: typings.ol.helperMod.ShaderType.VERTEX_SHADER & Double = js.native
   }
   
-  @JSImport("ol/webgl/Helper", "computeAttributesStride")
-  @js.native
-  def computeAttributesStride(attributes: js.Array[AttributeDescription]): Double = js.native
+  @scala.inline
+  def computeAttributesStride(attributes: js.Array[AttributeDescription]): Double = ^.asInstanceOf[js.Dynamic].applyDynamic("computeAttributesStride")(attributes.asInstanceOf[js.Any]).asInstanceOf[Double]
   
-  @js.native
   trait AttributeDescription extends StObject {
     
-    var name: String = js.native
+    var name: String
     
-    var size: Double = js.native
+    var size: Double
     
-    var `type`: js.UndefOr[AttributeType] = js.native
+    var `type`: js.UndefOr[AttributeType] = js.undefined
   }
   object AttributeDescription {
     
@@ -141,12 +166,11 @@ object helperMod {
     }
   }
   
-  @js.native
   trait BufferCacheEntry extends StObject {
     
-    var buffer: typings.ol.bufferMod.default = js.native
+    var buffer: typings.ol.bufferMod.default
     
-    var webGlBuffer: WebGLBuffer = js.native
+    var webGlBuffer: WebGLBuffer
   }
   object BufferCacheEntry {
     
@@ -167,12 +191,11 @@ object helperMod {
     }
   }
   
-  @js.native
   trait Options extends StObject {
     
-    var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.native
+    var postProcesses: js.UndefOr[js.Array[PostProcessesOptions]] = js.undefined
     
-    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.native
+    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
   }
   object Options {
     
@@ -202,16 +225,15 @@ object helperMod {
     }
   }
   
-  @js.native
   trait PostProcessesOptions extends StObject {
     
-    var fragmentShader: js.UndefOr[String] = js.native
+    var fragmentShader: js.UndefOr[String] = js.undefined
     
-    var scaleRatio: js.UndefOr[Double] = js.native
+    var scaleRatio: js.UndefOr[Double] = js.undefined
     
-    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.native
+    var uniforms: js.UndefOr[StringDictionary[UniformValue]] = js.undefined
     
-    var vertexShader: js.UndefOr[String] = js.native
+    var vertexShader: js.UndefOr[String] = js.undefined
   }
   object PostProcessesOptions {
     
@@ -280,7 +302,7 @@ object helperMod {
       * Note: wrap parameters are set to clamp to edge, min filter is set to linear.
       */
     def createTexture(size: js.Array[Double]): WebGLTexture = js.native
-    def createTexture(size: js.Array[Double], opt_data: js.UndefOr[scala.Nothing], opt_texture: WebGLTexture): WebGLTexture = js.native
+    def createTexture(size: js.Array[Double], opt_data: Unit, opt_texture: WebGLTexture): WebGLTexture = js.native
     def createTexture(size: js.Array[Double], opt_data: HTMLCanvasElement): WebGLTexture = js.native
     def createTexture(size: js.Array[Double], opt_data: HTMLCanvasElement, opt_texture: WebGLTexture): WebGLTexture = js.native
     def createTexture(size: js.Array[Double], opt_data: HTMLImageElement): WebGLTexture = js.native

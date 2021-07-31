@@ -2,13 +2,11 @@ package typings.vscode.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
   * Additional information about the opening custom document.
   */
-@js.native
 trait CustomDocumentOpenContext extends StObject {
   
   /**
@@ -17,7 +15,7 @@ trait CustomDocumentOpenContext extends StObject {
     * If this is provided, your extension should restore the editor from the backup instead of reading the file
     * from the user's workspace.
     */
-  val backupId: js.UndefOr[String] = js.native
+  val backupId: js.UndefOr[String] = js.undefined
 }
 object CustomDocumentOpenContext {
   

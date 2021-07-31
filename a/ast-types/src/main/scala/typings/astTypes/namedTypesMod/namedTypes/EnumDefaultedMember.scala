@@ -4,15 +4,15 @@ import typings.astTypes.kindsMod.IdentifierKind
 import typings.astTypes.typesMod.Type
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
-trait EnumDefaultedMember extends ASTNode {
+trait EnumDefaultedMember
+  extends StObject
+     with ASTNode {
   
-  var id: IdentifierKind = js.native
+  var id: IdentifierKind
   
-  var `type`: typings.astTypes.astTypesStrings.EnumDefaultedMember = js.native
+  var `type`: typings.astTypes.astTypesStrings.EnumDefaultedMember
 }
 object EnumDefaultedMember {
   

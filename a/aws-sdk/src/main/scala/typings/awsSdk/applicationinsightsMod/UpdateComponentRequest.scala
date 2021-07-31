@@ -2,31 +2,29 @@ package typings.awsSdk.applicationinsightsMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait UpdateComponentRequest extends StObject {
   
   /**
     * The name of the component.
     */
-  var ComponentName: typings.awsSdk.applicationinsightsMod.ComponentName = js.native
+  var ComponentName: typings.awsSdk.applicationinsightsMod.ComponentName
   
   /**
     * The new name of the component.
     */
-  var NewComponentName: js.UndefOr[typings.awsSdk.applicationinsightsMod.NewComponentName] = js.native
+  var NewComponentName: js.UndefOr[typings.awsSdk.applicationinsightsMod.NewComponentName] = js.undefined
   
   /**
     * The name of the resource group.
     */
-  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName = js.native
+  var ResourceGroupName: typings.awsSdk.applicationinsightsMod.ResourceGroupName
   
   /**
     * The list of resource ARNs that belong to the component.
     */
-  var ResourceList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceList] = js.native
+  var ResourceList: js.UndefOr[typings.awsSdk.applicationinsightsMod.ResourceList] = js.undefined
 }
 object UpdateComponentRequest {
   

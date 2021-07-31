@@ -2,21 +2,19 @@ package typings.awsSdk.imagebuilderMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait ImageTestsConfiguration extends StObject {
   
   /**
     * Defines if tests should be executed when building this image.
     */
-  var imageTestsEnabled: js.UndefOr[NullableBoolean] = js.native
+  var imageTestsEnabled: js.UndefOr[NullableBoolean] = js.undefined
   
   /**
     * The maximum time in minutes that tests are permitted to run.
     */
-  var timeoutMinutes: js.UndefOr[ImageTestsTimeoutMinutes] = js.native
+  var timeoutMinutes: js.UndefOr[ImageTestsTimeoutMinutes] = js.undefined
 }
 object ImageTestsConfiguration {
   

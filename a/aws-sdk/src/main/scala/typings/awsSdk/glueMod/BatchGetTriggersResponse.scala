@@ -2,21 +2,19 @@ package typings.awsSdk.glueMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait BatchGetTriggersResponse extends StObject {
   
   /**
     * A list of trigger definitions.
     */
-  var Triggers: js.UndefOr[TriggerList] = js.native
+  var Triggers: js.UndefOr[TriggerList] = js.undefined
   
   /**
     * A list of names of triggers not found.
     */
-  var TriggersNotFound: js.UndefOr[TriggerNameList] = js.native
+  var TriggersNotFound: js.UndefOr[TriggerNameList] = js.undefined
 }
 object BatchGetTriggersResponse {
   

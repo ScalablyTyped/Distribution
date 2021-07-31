@@ -2,17 +2,15 @@ package typings.seatsio.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Own extends StObject {
   
-  var own: String = js.native
+  var own: String
   
-  var parent: js.UndefOr[String] = js.native
+  var parent: js.UndefOr[String] = js.undefined
   
-  var section: js.UndefOr[String] = js.native
+  var section: js.UndefOr[String] = js.undefined
 }
 object Own {
   

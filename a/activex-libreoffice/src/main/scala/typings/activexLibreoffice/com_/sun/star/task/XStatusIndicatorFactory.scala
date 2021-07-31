@@ -4,7 +4,6 @@ import typings.activexLibreoffice.`type`
 import typings.activexLibreoffice.com_.sun.star.uno.XInterface
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /**
@@ -13,14 +12,15 @@ import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, J
   * A possible factory is the {@link com.sun.star.frame.Frame} service.
   * @see com.sun.star.frame.Frame
   */
-@js.native
-trait XStatusIndicatorFactory extends XInterface {
+trait XStatusIndicatorFactory
+  extends StObject
+     with XInterface {
   
   /**
     * create a new status indicator instance
     * @returns the new indicator
     */
-  def createStatusIndicator(): XStatusIndicator = js.native
+  def createStatusIndicator(): XStatusIndicator
 }
 object XStatusIndicatorFactory {
   

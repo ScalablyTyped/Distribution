@@ -2,24 +2,22 @@ package typings.paper.paper
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 /** 
   * The GradientStop object.
   */
-@js.native
 trait GradientStop extends StObject {
   
   /** 
     * The color of the gradient stop.
     */
-  var color: Color = js.native
+  var color: Color
   
   /** 
     * The ramp-point of the gradient stop as a value between `0` and `1`.
     */
-  var offset: Double = js.native
+  var offset: Double
 }
 object GradientStop {
   

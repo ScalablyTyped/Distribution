@@ -3,15 +3,13 @@ package typings.vueTemplateCompiler.mod
 import typings.vue.vnodeMod.VNode
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CompiledResultFunctions extends StObject {
   
-  def render(): VNode = js.native
+  def render(): VNode
   
-  var staticRenderFns: js.Array[js.Function0[VNode]] = js.native
+  var staticRenderFns: js.Array[js.Function0[VNode]]
 }
 object CompiledResultFunctions {
   

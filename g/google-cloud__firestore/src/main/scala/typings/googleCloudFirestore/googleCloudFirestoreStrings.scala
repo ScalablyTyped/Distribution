@@ -5,58 +5,77 @@ import typings.googleCloudFirestore.FirebaseFirestore.OrderByDirection
 import typings.googleCloudFirestore.FirebaseFirestore.WhereFilterOp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object googleCloudFirestoreStrings {
   
   @js.native
-  sealed trait EqualssignEqualssign extends WhereFilterOp
+  sealed trait EqualssignEqualssign
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def EqualssignEqualssign: EqualssignEqualssign = "==".asInstanceOf[EqualssignEqualssign]
   
   @js.native
-  sealed trait ExclamationmarkEqualssign extends WhereFilterOp
+  sealed trait ExclamationmarkEqualssign
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def ExclamationmarkEqualssign: ExclamationmarkEqualssign = "!=".asInstanceOf[ExclamationmarkEqualssign]
   
   @js.native
-  sealed trait Greaterthansign extends WhereFilterOp
+  sealed trait Greaterthansign
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def Greaterthansign: Greaterthansign = ">".asInstanceOf[Greaterthansign]
   
   @js.native
-  sealed trait GreaterthansignEqualssign extends WhereFilterOp
+  sealed trait GreaterthansignEqualssign
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def GreaterthansignEqualssign: GreaterthansignEqualssign = ">=".asInstanceOf[GreaterthansignEqualssign]
   
   @js.native
-  sealed trait Lessthansign extends WhereFilterOp
+  sealed trait Lessthansign
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def Lessthansign: Lessthansign = "<".asInstanceOf[Lessthansign]
   
   @js.native
-  sealed trait LessthansignEqualssign extends WhereFilterOp
+  sealed trait LessthansignEqualssign
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def LessthansignEqualssign: LessthansignEqualssign = "<=".asInstanceOf[LessthansignEqualssign]
   
   @js.native
-  sealed trait added extends DocumentChangeType
+  sealed trait added
+    extends StObject
+       with DocumentChangeType
   @scala.inline
   def added: added = "added".asInstanceOf[added]
   
   @js.native
-  sealed trait `array-contains` extends WhereFilterOp
+  sealed trait `array-contains`
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def `array-contains`: `array-contains` = "array-contains".asInstanceOf[`array-contains`]
   
   @js.native
-  sealed trait `array-contains-any` extends WhereFilterOp
+  sealed trait `array-contains-any`
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def `array-contains-any`: `array-contains-any` = "array-contains-any".asInstanceOf[`array-contains-any`]
   
   @js.native
-  sealed trait asc extends OrderByDirection
+  sealed trait asc
+    extends StObject
+       with OrderByDirection
   @scala.inline
   def asc: asc = "asc".asInstanceOf[asc]
   
@@ -71,27 +90,37 @@ object googleCloudFirestoreStrings {
   def delete: delete = "delete".asInstanceOf[delete]
   
   @js.native
-  sealed trait desc extends OrderByDirection
+  sealed trait desc
+    extends StObject
+       with OrderByDirection
   @scala.inline
   def desc: desc = "desc".asInstanceOf[desc]
   
   @js.native
-  sealed trait in extends WhereFilterOp
+  sealed trait in
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def in: in = "in".asInstanceOf[in]
   
   @js.native
-  sealed trait modified extends DocumentChangeType
+  sealed trait modified
+    extends StObject
+       with DocumentChangeType
   @scala.inline
   def modified: modified = "modified".asInstanceOf[modified]
   
   @js.native
-  sealed trait `not-in` extends WhereFilterOp
+  sealed trait `not-in`
+    extends StObject
+       with WhereFilterOp
   @scala.inline
   def `not-in`: `not-in` = "not-in".asInstanceOf[`not-in`]
   
   @js.native
-  sealed trait removed extends DocumentChangeType
+  sealed trait removed
+    extends StObject
+       with DocumentChangeType
   @scala.inline
   def removed: removed = "removed".asInstanceOf[removed]
   

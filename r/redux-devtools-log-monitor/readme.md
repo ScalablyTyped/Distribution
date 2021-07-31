@@ -10,9 +10,9 @@ The default tree view monitor for Redux DevTools
 | ------------------ | :-------------: |
 | Full name          | redux-devtools-log-monitor |
 | Keywords           | redux, devtools, flux, react, hot reloading, time travel, live edit |
-| # releases         | 2 |
-| # dependents       | 104 |
-| # downloads        | 2472452 |
+| # releases         | 4 |
+| # dependents       | 106 |
+| # downloads        | 2460726 |
 | # stars            | 3 |
 
 ## Links

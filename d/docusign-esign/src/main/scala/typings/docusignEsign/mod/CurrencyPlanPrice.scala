@@ -2,42 +2,40 @@ package typings.docusignEsign.mod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait CurrencyPlanPrice extends StObject {
   
   /**
     * Specifies the ISO currency code for the account.
     */
-  var currencyCode: js.UndefOr[String] = js.native
+  var currencyCode: js.UndefOr[String] = js.undefined
   
   /**
     * Specifies the currency symbol for the account.
     */
-  var currencySymbol: js.UndefOr[String] = js.native
+  var currencySymbol: js.UndefOr[String] = js.undefined
   
   /**
     * The per-seat price associated with the plan.
     *
     * Example: `"456.0000"`
     */
-  var perSeatPrice: js.UndefOr[String] = js.native
+  var perSeatPrice: js.UndefOr[String] = js.undefined
   
   /**
     * The support incident fee charged for each support incident.
     *
     * Example: `"$0.00"`
     */
-  var supportIncidentFee: js.UndefOr[String] = js.native
+  var supportIncidentFee: js.UndefOr[String] = js.undefined
   
   /**
     * The support plan fee charged for this plan.
     *
     * Example: `"$0.00"`
     */
-  var supportPlanFee: js.UndefOr[String] = js.native
+  var supportPlanFee: js.UndefOr[String] = js.undefined
   
   /**
     * A simple type enumeration of the language used. The supported languages, with the language value shown in parenthesis, are: Arabic (ar), Bahasa Indonesia (id),
@@ -47,7 +45,7 @@ trait CurrencyPlanPrice extends StObject {
     * Romanian (ro),Russian (ru), Serbian (sr), Slovak (sk), Slovenian (sl), Spanish (es),Spanish Latin America (es_MX), Swedish (sv), Thai (th), Turkish (tr),
     * Ukrainian (uk) and Vietnamese (vi).
     */
-  var supportedCardTypes: js.UndefOr[CreditCardTypes] = js.native
+  var supportedCardTypes: js.UndefOr[CreditCardTypes] = js.undefined
 }
 object CurrencyPlanPrice {
   

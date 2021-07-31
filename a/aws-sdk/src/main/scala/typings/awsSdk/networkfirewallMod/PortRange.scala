@@ -2,21 +2,19 @@ package typings.awsSdk.networkfirewallMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait PortRange extends StObject {
   
   /**
     * The lower limit of the port range. This must be less than or equal to the ToPort specification. 
     */
-  var FromPort: PortRangeBound = js.native
+  var FromPort: PortRangeBound
   
   /**
     * The upper limit of the port range. This must be greater than or equal to the FromPort specification. 
     */
-  var ToPort: PortRangeBound = js.native
+  var ToPort: PortRangeBound
 }
 object PortRange {
   

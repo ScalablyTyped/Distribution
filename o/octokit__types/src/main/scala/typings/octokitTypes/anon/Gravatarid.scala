@@ -2,21 +2,19 @@ package typings.octokitTypes.anon
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait Gravatarid extends StObject {
   
-  var avatar_url: String = js.native
+  var avatar_url: String
   
-  var gravatar_id: String = js.native
+  var gravatar_id: String
   
-  var id: Double = js.native
+  var id: Double
   
-  var login: String = js.native
+  var login: String
   
-  var url: String = js.native
+  var url: String
 }
 object Gravatarid {
   

@@ -2,14 +2,12 @@ package typings.maximMazurokGapiClientCloudsearch.gapi.client.cloudsearch
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SuggestResponse extends StObject {
   
   /** List of suggestions. */
-  var suggestResults: js.UndefOr[js.Array[SuggestResult]] = js.native
+  var suggestResults: js.UndefOr[js.Array[SuggestResult]] = js.undefined
 }
 object SuggestResponse {
   

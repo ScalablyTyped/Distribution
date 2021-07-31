@@ -2,16 +2,14 @@ package typings.awsSdk.servicecatalogMod
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait DescribePortfolioShareStatusInput extends StObject {
   
   /**
     * The token for the portfolio share operation. This token is returned either by CreatePortfolioShare or by DeletePortfolioShare.
     */
-  var PortfolioShareToken: Id = js.native
+  var PortfolioShareToken: Id
 }
 object DescribePortfolioShareStatusInput {
   

@@ -5,38 +5,36 @@ import typings.pulumiAws.outputMod.efs.GetFileSystemLifecyclePolicy
 import typings.pulumiPulumi.invokeMod.InvokeOptions
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 object getFileSystemMod {
   
-  @JSImport("@pulumi/aws/efs/getFileSystem", "getFileSystem")
+  @JSImport("@pulumi/aws/efs/getFileSystem", JSImport.Namespace)
   @js.native
-  def getFileSystem(): js.Promise[GetFileSystemResult] = js.native
-  @JSImport("@pulumi/aws/efs/getFileSystem", "getFileSystem")
-  @js.native
-  def getFileSystem(args: js.UndefOr[scala.Nothing], opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
-  @JSImport("@pulumi/aws/efs/getFileSystem", "getFileSystem")
-  @js.native
-  def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = js.native
-  @JSImport("@pulumi/aws/efs/getFileSystem", "getFileSystem")
-  @js.native
-  def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = js.native
+  val ^ : js.Any = js.native
   
-  @js.native
+  @scala.inline
+  def getFileSystem(): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")().asInstanceOf[js.Promise[GetFileSystemResult]]
+  @scala.inline
+  def getFileSystem(args: Unit, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
+  @scala.inline
+  def getFileSystem(args: GetFileSystemArgs): js.Promise[GetFileSystemResult] = ^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any]).asInstanceOf[js.Promise[GetFileSystemResult]]
+  @scala.inline
+  def getFileSystem(args: GetFileSystemArgs, opts: InvokeOptions): js.Promise[GetFileSystemResult] = (^.asInstanceOf[js.Dynamic].applyDynamic("getFileSystem")(args.asInstanceOf[js.Any], opts.asInstanceOf[js.Any])).asInstanceOf[js.Promise[GetFileSystemResult]]
+  
   trait GetFileSystemArgs extends StObject {
     
     /**
       * Restricts the list to the file system with this creation token.
       */
-    val creationToken: js.UndefOr[String] = js.native
+    val creationToken: js.UndefOr[String] = js.undefined
     
     /**
       * The ID that identifies the file system (e.g. fs-ccfc0d65).
       */
-    val fileSystemId: js.UndefOr[String] = js.native
+    val fileSystemId: js.UndefOr[String] = js.undefined
     
-    val tags: js.UndefOr[StringDictionary[String]] = js.native
+    val tags: js.UndefOr[StringDictionary[String]] = js.undefined
   }
   object GetFileSystemArgs {
     
@@ -69,65 +67,64 @@ object getFileSystemMod {
     }
   }
   
-  @js.native
   trait GetFileSystemResult extends StObject {
     
     /**
       * Amazon Resource Name of the file system.
       */
-    val arn: String = js.native
+    val arn: String
     
-    val creationToken: String = js.native
+    val creationToken: String
     
     /**
       * The DNS name for the filesystem per [documented convention](http://docs.aws.amazon.com/efs/latest/ug/mounting-fs-mount-cmd-dns-name.html).
       */
-    val dnsName: String = js.native
+    val dnsName: String
     
     /**
       * Whether EFS is encrypted.
       */
-    val encrypted: Boolean = js.native
+    val encrypted: Boolean
     
-    val fileSystemId: String = js.native
+    val fileSystemId: String
     
     /**
       * The provider-assigned unique ID for this managed resource.
       */
-    val id: String = js.native
+    val id: String
     
     /**
       * The ARN for the KMS encryption key.
       */
-    val kmsKeyId: String = js.native
+    val kmsKeyId: String
     
     /**
       * A file system [lifecycle policy](https://docs.aws.amazon.com/efs/latest/ug/API_LifecyclePolicy.html) object.
       */
-    val lifecyclePolicy: GetFileSystemLifecyclePolicy = js.native
+    val lifecyclePolicy: GetFileSystemLifecyclePolicy
     
     /**
       * The file system performance mode.
       */
-    val performanceMode: String = js.native
+    val performanceMode: String
     
     /**
       * The throughput, measured in MiB/s, that you want to provision for the file system.
       * * `tags` -A map of tags to assign to the file system.
       */
-    val provisionedThroughputInMibps: Double = js.native
+    val provisionedThroughputInMibps: Double
     
     /**
       * The current byte count used by the file system.
       */
-    val sizeInBytes: Double = js.native
+    val sizeInBytes: Double
     
-    val tags: StringDictionary[String] = js.native
+    val tags: StringDictionary[String]
     
     /**
       * Throughput mode for the file system.
       */
-    val throughputMode: String = js.native
+    val throughputMode: String
   }
   object GetFileSystemResult {
     

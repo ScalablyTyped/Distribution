@@ -2,25 +2,23 @@ package typings.googleAdwordsScripts
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait VideoCampaignTargeting extends StObject {
   
-  def adSchedules(): AdWordsSelector[AdSchedule] = js.native
+  def adSchedules(): AdWordsSelector[AdSchedule]
   
-  def excludedContentLabels(): AdWordsSelector[ExcludedContentLabel] = js.native
+  def excludedContentLabels(): AdWordsSelector[ExcludedContentLabel]
   
-  def excludedLocations(): AdWordsSelector[ExcludedLocation] = js.native
+  def excludedLocations(): AdWordsSelector[ExcludedLocation]
   
-  def languages(): AdWordsSelector[Language] = js.native
+  def languages(): AdWordsSelector[Language]
   
-  def platforms(): AdWordsSelector[Platform] = js.native
+  def platforms(): AdWordsSelector[Platform]
   
-  def targetedLocations(): AdWordsSelector[TargetedLocation] = js.native
+  def targetedLocations(): AdWordsSelector[TargetedLocation]
   
-  def targetedProximities(): AdWordsSelector[TargetedProximity] = js.native
+  def targetedProximities(): AdWordsSelector[TargetedProximity]
 }
 object VideoCampaignTargeting {
   

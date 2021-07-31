@@ -2,21 +2,19 @@ package typings.googleapis.firebasehostingV1beta1Mod.firebasehostingV1beta1
 
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
-@js.native
 trait SchemaListDomainsResponse extends StObject {
   
   /**
     * The list of domains, if any exist.
     */
-  var domains: js.UndefOr[js.Array[SchemaDomain]] = js.native
+  var domains: js.UndefOr[js.Array[SchemaDomain]] = js.undefined
   
   /**
     * The pagination token, if more results exist.
     */
-  var nextPageToken: js.UndefOr[String] = js.native
+  var nextPageToken: js.UndefOr[String] = js.undefined
 }
 object SchemaListDomainsResponse {
   

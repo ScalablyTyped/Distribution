@@ -13,7 +13,6 @@ import typings.maximMazurokGapiClientCompute.anon.RequestIdTargetHttpsProxy
 import typings.maximMazurokGapiClientCompute.anon.ResourceTargetHttpsProxyUserIp
 import org.scalablytyped.runtime.StObject
 import scala.scalajs.js
-import scala.scalajs.js.`|`
 import scala.scalajs.js.annotation.{JSGlobalScope, JSGlobal, JSImport, JSName, JSBracketAccess}
 
 @js.native
